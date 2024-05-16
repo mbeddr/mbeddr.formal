@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:98d3bb28-1ea3-4ba1-948d-f2fe642f21b2(_010_features._070_assurance_cases_linked_to_artifacts_models)" content="header">
+  <persistence version="9" />
+  <languages>
+    <devkit ref="58430e3c-3d97-455c-a27e-8eeba7f8513e(fasten.safety.gsn.artefacts)" />
+  </languages>
+  <imports />
+</model>
+

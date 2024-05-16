@@ -4,8 +4,9 @@
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -131,11 +132,6 @@
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
       <concept id="2133624044437898907" name="jetbrains.mps.core.xml.structure.XmlDoctypeDeclaration" flags="ng" index="29q25o">
         <property id="2133624044437898910" name="doctypeName" index="29q25t" />
@@ -171,6 +167,18 @@
       <concept id="6786756355279841993" name="jetbrains.mps.core.xml.structure.XmlDocument" flags="ng" index="3rIKKV">
         <child id="6666499814681299055" name="rootElement" index="2pNm8H" />
         <child id="6666499814681299060" name="prolog" index="2pNm8Q" />
+      </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -210,8 +218,12 @@
       <node concept="Xl_RD" id="1uIpCUufwut" role="33vP2m">
         <property role="Xl_RC" value="tutorial" />
       </node>
-      <node concept="NWlO9" id="1uIpCUufwN6" role="lGtFl">
-        <property role="NWlVz" value="The directory in the FASTEN installation where the tutorial is located." />
+      <node concept="z59LJ" id="1y75PbzycUw" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycUu" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycUv" role="1dT_Ay">
+            <property role="1dT_AB" value="The directory in the FASTEN installation where the tutorial is located." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1uIpCUufw_g" role="jymVt" />
@@ -773,8 +785,12 @@
       <node concept="Xl_RD" id="7Y21hZBa7gB" role="33vP2m">
         <property role="Xl_RC" value="tutorial-safety" />
       </node>
-      <node concept="NWlO9" id="7Y21hZBa7gC" role="lGtFl">
-        <property role="NWlVz" value="The directory in the FASTEN installation where the safety-tutorial is located." />
+      <node concept="z59LJ" id="1y75PbzycUz" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycUx" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycUy" role="1dT_Ay">
+            <property role="1dT_AB" value="The directory in the FASTEN installation where the safety-tutorial is located." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7Y21hZBa7gD" role="jymVt" />

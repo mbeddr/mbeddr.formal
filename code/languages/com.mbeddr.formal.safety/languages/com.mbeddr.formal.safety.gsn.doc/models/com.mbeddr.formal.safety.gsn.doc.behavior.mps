@@ -169,43 +169,6 @@
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
     </language>
   </registry>
-  <node concept="13h7C7" id="3d5AacfxFe9">
-    <ref role="13h7C2" to="wvti:4KIvh_tvCfy" resolve="TemplateWord_old" />
-    <node concept="13hLZK" id="3d5AacfxFea" role="13h7CW">
-      <node concept="3clFbS" id="3d5AacfxFeb" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="3d5AacfxFek" role="13h7CS">
-      <property role="TrG5h" value="toTextString" />
-      <ref role="13i0hy" to="tbr6:3Q5enzfMT4t" resolve="toTextString" />
-      <node concept="3Tm1VV" id="3d5AacfxFel" role="1B3o_S" />
-      <node concept="3clFbS" id="3d5AacfxFeq" role="3clF47">
-        <node concept="3clFbF" id="3d5AacfxFvz" role="3cqZAp">
-          <node concept="3cpWs3" id="3d5AacfxHw$" role="3clFbG">
-            <node concept="Xl_RD" id="3d5AacfxHFF" role="3uHU7w">
-              <property role="Xl_RC" value=" }" />
-            </node>
-            <node concept="3cpWs3" id="3d5AacfxGgr" role="3uHU7B">
-              <node concept="Xl_RD" id="3d5AacfxFvy" role="3uHU7B">
-                <property role="Xl_RC" value="{ " />
-              </node>
-              <node concept="2OqwBi" id="3d5AacfxGR$" role="3uHU7w">
-                <node concept="2OqwBi" id="3d5AacfxGtV" role="2Oq$k0">
-                  <node concept="13iPFW" id="3d5AacfxGgN" role="2Oq$k0" />
-                  <node concept="3TrEf2" id="3d5AacfxGCz" role="2OqNvi">
-                    <ref role="3Tt5mk" to="wvti:3GRi4m$qYoV" resolve="text_old" />
-                  </node>
-                </node>
-                <node concept="2qgKlT" id="3d5AacfxH4h" role="2OqNvi">
-                  <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="3d5AacfxFer" role="3clF45" />
-    </node>
-  </node>
   <node concept="13h7C7" id="4ziKDEnle8g">
     <property role="3GE5qa" value="connections" />
     <ref role="13h7C2" to="wvti:5Ac1Q93JDnH" resolve="SupportedByConnectionWord" />

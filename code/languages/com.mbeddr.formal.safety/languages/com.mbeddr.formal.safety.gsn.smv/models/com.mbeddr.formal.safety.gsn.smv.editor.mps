@@ -236,18 +236,6 @@
       <node concept="2iRfu4" id="5r2fDr4oXpt" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="4i__4Gxs2vn">
-    <ref role="1XX52x" to="bsp8:4i__4Gxs2uL" resolve="ComponentInterfaceRef" />
-    <node concept="1iCGBv" id="4i__4Gxs2vp" role="2wV5jI">
-      <ref role="1NtTu8" to="bsp8:4i__4Gxs2vk" resolve="componentInterface" />
-      <node concept="1sVBvm" id="4i__4Gxs2vr" role="1sWHZn">
-        <node concept="3F0A7n" id="4i__4Gxs2v_" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="PKFIW" id="3Ngc4zVfNmk">
     <property role="3GE5qa" value="gsn.dsl.smv.spec" />
     <property role="TrG5h" value="SmvSpecGoalTextArea" />
@@ -918,10 +906,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="22mcaB" id="4MR8i$4iWiq">
-    <ref role="aqKnT" to="bsp8:4i__4Gxs2uL" resolve="ComponentInterfaceRef" />
-    <node concept="22hDWj" id="7KmK1hXsUxm" role="22hAXT" />
   </node>
 </model>
 

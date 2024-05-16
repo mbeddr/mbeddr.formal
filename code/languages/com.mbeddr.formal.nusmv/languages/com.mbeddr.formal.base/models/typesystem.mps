@@ -18,6 +18,7 @@
     <import index="iihn" ref="r:1ca0ad9f-f283-47a0-9785-0fcac08d0fee(com.mbeddr.formal.base.prefixed_names_utils)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tpd5" ref="r:00000000-0000-4000-0000-011c895902b5(jetbrains.mps.lang.typesystem.dependencies)" />
+    <import index="agne" ref="r:2538c08a-32a3-4d93-89c3-b508268173db(com.mpsbasics.project.utils.project_finder)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -274,9 +275,9 @@
               <node concept="3uibUv" id="1noKC0JQumn" role="1tU5fm">
                 <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
               </node>
-              <node concept="2YIFZM" id="1noKC0JQ_pB" role="33vP2m">
-                <ref role="37wK5l" to="2y64:1fyC0RHInUp" resolve="getMPSProjectForNode" />
-                <ref role="1Pybhc" to="2y64:1fyC0RHIfK6" resolve="ProjectHelper" />
+              <node concept="2YIFZM" id="2u7UHDCh3mr" role="33vP2m">
+                <ref role="37wK5l" to="agne:1fyC0RHInUp" resolve="getMPSProjectForNode" />
+                <ref role="1Pybhc" to="agne:1fyC0RHIfK6" resolve="ProjectHelper" />
                 <node concept="1YBJjd" id="1noKC0JQ_yS" role="37wK5m">
                   <ref role="1YBMHb" node="3f8ZVRYfNzK" resolve="containerForEntitiesWithPrefixedNames" />
                 </node>

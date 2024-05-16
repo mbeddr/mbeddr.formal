@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:00435d79-77fb-49f0-87b5-fa7239ab0856(_100_examples._020_adas_students_lab._030_safe_emergency_break)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
+      <concept id="2925021647566955739" name="com.mbeddr.formal.safety.stamp.structure.ActionsForHazopKeyword" flags="ng" index="3f6qtF">
+        <child id="2925021647566955740" name="actions" index="3f6qtG" />
+      </concept>
+      <concept id="2925021647566797644" name="com.mbeddr.formal.safety.stamp.structure.HazopKeywordDefinition" flags="ng" index="3f73zW" />
+      <concept id="2004523000582373898" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControlAnalysis" flags="ng" index="1E0nO6">
+        <reference id="2004523000582447869" name="functionalControlStructure" index="1E05RL" />
+        <child id="2925021647566797672" name="hazopKeywords" index="3f73zo" />
+        <child id="2004523000582374978" name="unsafeController" index="1E0n_e" />
+      </concept>
+      <concept id="2004523000582373920" name="com.mbeddr.formal.safety.stamp.structure.UnsafeController" flags="ng" index="1E0nOG">
+        <reference id="2004523000582373921" name="controller" index="1E0nOH" />
+        <child id="2004523000582373924" name="unsafeActions" index="1E0nOC" />
+      </concept>
+      <concept id="2004523000582373923" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControllerAction" flags="ng" index="1E0nOJ">
+        <reference id="2004523000582375039" name="action" index="1E0n_N" />
+        <child id="2925021647566955780" name="actionsForHazopKeyword" index="3f6qqO" />
+      </concept>
+      <concept id="2004523000582413322" name="com.mbeddr.formal.safety.stamp.structure.TextualActionDescription" flags="ng" index="1E0uc6">
+        <child id="2004523000582413323" name="text" index="1E0uc7" />
+      </concept>
+      <concept id="2036977205576040320" name="com.mbeddr.formal.safety.stamp.structure.NotApplicableAction" flags="ng" index="3XErhT" />
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="3302592670537174430" name="com.mbeddr.formal.safety.hara.structure.HazardRefWord" flags="ng" index="oY6sn">
+        <reference id="3302592670537516121" name="hazard" index="oTUVg" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1E0nO6" id="4GKPLBASuiH">
+    <property role="TrG5h" value="_104_eb_unsafe_control_actions" />
+    <ref role="1E05RL" node="2fZol$t_0Lh" resolve="_103_eb_control_structure" />
+    <node concept="1E0nOG" id="3XLpsf2_BRS" role="1E0n_e">
+      <ref role="1E0nOH" node="3XLpsf2__c9" resolve="EB Control Unit" />
+      <node concept="1E0nOJ" id="3XLpsf2_BRT" role="1E0nOC">
+        <ref role="1E0n_N" node="3XLpsf2_ALD" resolve="warning" />
+        <node concept="3f6qtF" id="6vZMoXu3Mj_" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BRY" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_12" />
+            <node concept="19SGf9" id="3XLpsf2_BS0" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BS1" role="19SJt6">
+                <property role="19SUeA" value="unnecessary warnings &#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BS4" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BS5" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjB" role="3f6qqO">
+          <node concept="3XErhT" id="3XLpsf2_BSm" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjD" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BS9" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_13" />
+            <node concept="19SGf9" id="3XLpsf2_BSb" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BSc" role="19SJt6">
+                <property role="19SUeA" value="Warning too late&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BSf" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BSg" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjF" role="3f6qqO">
+          <node concept="3XErhT" id="3XLpsf2_BSk" role="3f6qtG" />
+        </node>
+      </node>
+      <node concept="1E0nOJ" id="3XLpsf2_BTk" role="1E0nOC">
+        <ref role="1E0n_N" node="3XLpsf2_A_5" resolve="control break" />
+        <node concept="3f6qtF" id="6vZMoXu3MjG" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BTI" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_22" />
+            <node concept="19SGf9" id="3XLpsf2_BTK" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BTL" role="19SJt6">
+                <property role="19SUeA" value="Unnecessary breaking may result in an rear-end collision&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BTO" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BTP" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjH" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BTz" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_21" />
+            <node concept="19SGf9" id="3XLpsf2_BT_" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BTA" role="19SJt6">
+                <property role="19SUeA" value="system does not fullfill its function and that leads to a crash&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BTD" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BTE" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjI" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BTU" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_23" />
+            <node concept="19SGf9" id="3XLpsf2_BTW" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BTX" role="19SJt6">
+                <property role="19SUeA" value="system does not fullfill its function if it brakes too late and that leads to a crash&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BU1" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BU0" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjJ" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BU7" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_24" />
+            <node concept="19SGf9" id="3XLpsf2_BU9" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BUa" role="19SJt6">
+                <property role="19SUeA" value="if applied too long, stopping may cause an rear-end collsion." />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BUe" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BUd" role="19SJt6">
+                <property role="19SUeA" value="&#10;If it is stopped too soon, the car crashed into the obstacle " />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BUl" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BUk" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="3XLpsf2_BUs" role="1E0n_e">
+      <ref role="1E0nOH" node="3XLpsf2__Nb" resolve="Communication Unit" />
+      <node concept="1E0nOJ" id="3XLpsf2_BUt" role="1E0nOC">
+        <ref role="1E0n_N" node="3XLpsf2_ASJ" resolve="warning message" />
+        <node concept="3f6qtF" id="6vZMoXu3MjK" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BVe" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_32" />
+            <node concept="19SGf9" id="3XLpsf2_BVg" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BVh" role="19SJt6">
+                <property role="19SUeA" value="unnecessary warnings &#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BVl" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BVk" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjL" role="3f6qqO">
+          <node concept="3XErhT" id="3XLpsf2_BVc" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjM" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BVG" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_33" />
+            <node concept="19SGf9" id="3XLpsf2_BVI" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BVJ" role="19SJt6">
+                <property role="19SUeA" value="Warning too late&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BVE" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BVD" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjN" role="3f6qqO">
+          <node concept="3XErhT" id="3XLpsf2_BW2" role="3f6qtG" />
+        </node>
+      </node>
+      <node concept="1E0nOJ" id="3XLpsf2_BV8" role="1E0nOC">
+        <ref role="1E0n_N" node="3XLpsf2_ASi" resolve="vibrate" />
+        <node concept="3f6qtF" id="6vZMoXu3MjO" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BVr" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_42" />
+            <node concept="19SGf9" id="3XLpsf2_BVt" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BVu" role="19SJt6">
+                <property role="19SUeA" value="unnecessary warnings &#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BVy" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BVz" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjP" role="3f6qqO">
+          <node concept="3XErhT" id="3XLpsf2_BVB" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjQ" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BVQ" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_43" />
+            <node concept="19SGf9" id="3XLpsf2_BVS" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BVT" role="19SJt6">
+                <property role="19SUeA" value="Warning too late&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BVX" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BVY" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjR" role="3f6qqO">
+          <node concept="3XErhT" id="3XLpsf2_BW4" role="3f6qtG" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="3XLpsf2_BW6" role="1E0n_e">
+      <ref role="1E0nOH" node="3XLpsf2__qB" resolve="Laser Sensor" />
+      <node concept="1E0nOJ" id="3XLpsf2_BW7" role="1E0nOC">
+        <ref role="1E0n_N" node="3XLpsf2_A8a" resolve="provides distance to obstacle" />
+        <node concept="3f6qtF" id="6vZMoXu3MjS" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BYr" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_52" />
+            <node concept="19SGf9" id="3XLpsf2_BYt" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BYu" role="19SJt6">
+                <property role="19SUeA" value="If sensor data is wrong, the system cannot react properly&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BYx" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BYB" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_BYA" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BYJ" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_BYI" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BYT" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_BYS" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BZ5" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_BZ4" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BZj" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_BZi" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BZk" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjT" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BYg" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_51" />
+            <node concept="19SGf9" id="3XLpsf2_BYi" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BYj" role="19SJt6">
+                <property role="19SUeA" value="system cannot detect obstacle. Crash avoidance can't be provided " />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BYm" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BYn" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjU" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_BZy" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_53" />
+            <node concept="19SGf9" id="3XLpsf2_BZ$" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_BZ_" role="19SJt6">
+                <property role="19SUeA" value="Too soon not possible. Too late: the system cannot react properly&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_BZD" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BZE" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_BZF" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BZG" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_BZH" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BZI" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_BZJ" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BZK" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_BZL" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BZM" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_BZN" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_BZO" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjV" role="3f6qqO">
+          <node concept="3XErhT" id="3XLpsf2_C03" role="3f6qtG" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="3XLpsf2_BXa" role="1E0n_e">
+      <ref role="1E0nOH" node="3XLpsf2__qv" resolve="Ultrasound Snsor" />
+      <node concept="1E0nOJ" id="3XLpsf2_BXb" role="1E0nOC">
+        <ref role="1E0n_N" node="3XLpsf2_A2L" resolve="provides distance to obstacle" />
+        <node concept="3f6qtF" id="6vZMoXu3MjW" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_C0I" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_62" />
+            <node concept="19SGf9" id="3XLpsf2_C0K" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_C0L" role="19SJt6">
+                <property role="19SUeA" value="If sensor data is wrong, the system cannot react properly&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_C0Z" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C0Y" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C0X" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C0W" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C0V" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C0U" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C0T" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C0S" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C0R" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C0Q" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C0P" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C0O" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjX" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_C0C" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_61" />
+            <node concept="19SGf9" id="3XLpsf2_C0E" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_C0F" role="19SJt6">
+                <property role="19SUeA" value="system cannot detect obstacle. Crash avoidance can't be provided " />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_C1g" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C1f" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjY" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_C07" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_63" />
+            <node concept="19SGf9" id="3XLpsf2_C09" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_C0a" role="19SJt6">
+                <property role="19SUeA" value="Too soon not possible. Too late: the system cannot react properly&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_C0e" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C0f" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C0g" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C0h" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C0i" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C0j" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C0k" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C0l" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C0m" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C0n" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C0o" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C0p" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MjZ" role="3f6qqO">
+          <node concept="3XErhT" id="3XLpsf2_C05" role="3f6qtG" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="3XLpsf2_C1m" role="1E0n_e">
+      <ref role="1E0nOH" node="3XLpsf2__$n" resolve="Speed Sensor" />
+      <node concept="1E0nOJ" id="3XLpsf2_C1n" role="1E0nOC">
+        <ref role="1E0n_N" node="3XLpsf2_Ap7" resolve="provides current speed" />
+        <node concept="3f6qtF" id="6vZMoXu3Mk0" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_C3L" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_72" />
+            <node concept="19SGf9" id="3XLpsf2_C40" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_C41" role="19SJt6">
+                <property role="19SUeA" value="If sensor data is wrong, the system cannot react properly&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_C3Y" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C3X" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C3W" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C3V" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C3U" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C3T" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C3S" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C3R" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C3Q" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C3P" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C3O" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C3N" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mk1" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_C3A" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_71" />
+            <node concept="19SGf9" id="3XLpsf2_C3C" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_C3D" role="19SJt6">
+                <property role="19SUeA" value="system can't interpret the distance data " />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_C3G" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C3H" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mk2" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_C4k" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_73" />
+            <node concept="19SGf9" id="3XLpsf2_C4m" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_C4n" role="19SJt6">
+                <property role="19SUeA" value="Too soon not possible. Too late: the system cannot react properly&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_C4r" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C4s" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C4t" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9z" resolve="Unnecessary warning - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C4u" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C4v" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYdV" resolve="Warning issued too late - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C4w" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C4x" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9h" resolve="Braking initiated too late - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C4y" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C4z" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9J" resolve="Unnecessary braking - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C4$" role="19SJt6" />
+              <node concept="oY6sn" id="3XLpsf2_C4_" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C4A" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mk3" role="3f6qqO">
+          <node concept="3XErhT" id="3XLpsf2_C4P" role="3f6qtG" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="3XLpsf2_C4R" role="1E0n_e">
+      <ref role="1E0nOH" node="3XLpsf2__$d" resolve="Gas Pedal" />
+      <node concept="1E0nOJ" id="3XLpsf2_C4S" role="1E0nOC">
+        <ref role="1E0n_N" node="3XLpsf2_Av3" resolve="manual driver input" />
+        <node concept="3f6qtF" id="6vZMoXu3Mk4" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_C7T" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_82" />
+            <node concept="19SGf9" id="3XLpsf2_C7V" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_C7W" role="19SJt6">
+                <property role="19SUeA" value="if the system falsely detects a driver input, it deactivates even it shouldn't&#10;" />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_C7Z" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9p" resolve="Car crashes into obstacle - ASIL B" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C80" role="19SJt6">
+                <property role="19SUeA" value="&#10;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mk5" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_C7I" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_81" />
+            <node concept="19SGf9" id="3XLpsf2_C7K" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_C7L" role="19SJt6">
+                <property role="19SUeA" value="driver override cannot be detected. This may lead the following vehicle to crash into the vehicle. " />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_C7O" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C7P" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mk6" role="3f6qqO">
+          <node concept="1E0uc6" id="3XLpsf2_C84" role="3f6qtG">
+            <property role="TrG5h" value="UCA_EB_83" />
+            <node concept="19SGf9" id="3XLpsf2_C86" role="1E0uc7">
+              <node concept="19SUe$" id="3XLpsf2_C87" role="19SJt6">
+                <property role="19SUeA" value="Too soon not possible. Too late may lead the following vehicle to crash into the vehicle. " />
+              </node>
+              <node concept="oY6sn" id="3XLpsf2_C8b" role="19SJt6">
+                <ref role="oTUVg" node="3XLpsf2__9X" resolve="Strong breaking leads to rear end collision - ASIL A" />
+              </node>
+              <node concept="19SUe$" id="3XLpsf2_C8a" role="19SJt6">
+                <property role="19SUeA" value="" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mk7" role="3f6qqO">
+          <node concept="3XErhT" id="3XLpsf2_C8h" role="3f6qtG" />
+        </node>
+      </node>
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mj$" role="3f73zo">
+      <property role="TrG5h" value="Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3MjA" role="3f73zo">
+      <property role="TrG5h" value="Not Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3MjC" role="3f73zo">
+      <property role="TrG5h" value="Too Soon/Late, Out of Sequence" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3MjE" role="3f73zo">
+      <property role="TrG5h" value="Stopped too Soon, Applied too Long" />
+    </node>
+  </node>
+</model>
+

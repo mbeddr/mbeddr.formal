@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="ca32bc98-ea47-4b42-82e1-76bebf8a4e7d" name="com.mbeddr.formal.safety.gsn.xml_gen">
+      <concept id="7991555605679066221" name="com.mbeddr.formal.safety.gsn.xml_gen.structure.GenerateGoalStructure2XML" flags="ng" index="pFZ$m" />
+    </language>
+  </registry>
+  <node concept="pFZ$m" id="3SfdbygP7uM" />
+</model>
+

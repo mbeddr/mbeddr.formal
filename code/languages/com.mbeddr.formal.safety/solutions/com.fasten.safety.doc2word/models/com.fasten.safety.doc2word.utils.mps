@@ -19,6 +19,7 @@
     <import index="oqcp" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
+    <import index="mryx" ref="r:da23d8da-3a75-4f33-96d8-7b3d3c2b2ccd(com.mpsbasics.editor.utils.screenshooter)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -170,9 +171,9 @@
             <node concept="3uibUv" id="2avYeLoQj18" role="1tU5fm">
               <ref role="3uigEE" to="jan3:~BufferedImage" resolve="BufferedImage" />
             </node>
-            <node concept="2YIFZM" id="2avYeLoQj2l" role="33vP2m">
-              <ref role="37wK5l" to="ztk3:1yFmGPnLcLt" resolve="createImage" />
-              <ref role="1Pybhc" to="ztk3:1yFmGPnLcL9" resolve="PNGCellEditorScreenshooter" />
+            <node concept="2YIFZM" id="2u7UHDC8hJ9" role="33vP2m">
+              <ref role="37wK5l" to="mryx:1yFmGPnLcLt" resolve="createImage" />
+              <ref role="1Pybhc" to="mryx:1yFmGPnLcL9" resolve="PNGCellEditorScreenshooter" />
               <node concept="37vLTw" id="2avYeLoQj2m" role="37wK5m">
                 <ref role="3cqZAo" node="2w5Gq4UvCAw" resolve="aNode" />
               </node>
@@ -250,7 +251,7 @@
                 <ref role="3cqZAo" node="2w5Gq4UvDQ_" resolve="imagePart" />
               </node>
               <node concept="liA8E" id="2w5Gq4UvE0u" role="2OqNvi">
-                <ref role="37wK5l" to="s1v1:~BinaryPartAbstractImage.createImageInline(java.lang.String,java.lang.String,int,int,boolean)" resolve="createImageInline" />
+                <ref role="37wK5l" to="s1v1:~BinaryPartAbstractImage.createImageInline(java.lang.String,java.lang.String,long,int,boolean)" resolve="createImageInline" />
                 <node concept="37vLTw" id="38aFq1iXoBK" role="37wK5m">
                   <ref role="3cqZAo" node="38aFq1iXmVq" resolve="imageOriginHint" />
                 </node>

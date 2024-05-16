@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._040_safety_models)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="c6d7e8a3-3d80-479a-8799-a11fe1902b1c" name="com.fasten.safety.hiphops">
+      <concept id="1433630071281486525" name="com.fasten.safety.hiphops.structure.LogicalTypeFailureModesBase" flags="ng" index="1hU4L9">
+        <child id="2183730226556973211" name="failureModes" index="Du1I9" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea">
+      <concept id="4663111736253860896" name="com.fasten.safety.fmea.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
+      <concept id="3491732495478440804" name="com.fasten.safety.fmea.structure.FailureModeDefinitionBase" flags="ng" index="1jQQdg">
+        <child id="4663111736253767864" name="description" index="2VUHfi" />
+      </concept>
+      <concept id="8413234032528120653" name="com.fasten.safety.fmea.structure.DesignFMEARoot" flags="ng" index="1POhia">
+        <child id="8413234032528120724" name="dfmeas" index="1POhhj" />
+      </concept>
+    </language>
+    <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="2406721343443672946" name="com.mbeddr.formal.nusmv.ext.structure.TypedefType" flags="ng" index="1savGX">
+        <reference id="2406721343443672947" name="typedef" index="1savGW" />
+      </concept>
+    </language>
+    <language id="521724dc-29ef-4d5a-9c15-25f6b680b809" name="com.fasten.safety.hiphops.arch">
+      <concept id="2183730226556973206" name="com.fasten.safety.hiphops.arch.structure.LogicalTypeFailureModes" flags="ng" index="Du1I4">
+        <child id="6957002747779324063" name="tpe" index="3agqmW" />
+      </concept>
+    </language>
+    <language id="1110e3ef-a98e-444f-9748-1d61fe61c7f7" name="com.fasten.safety.fmea.arch">
+      <concept id="4663111736253767846" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModesDefinition" flags="ng" index="2VUHfc">
+        <reference id="4663111736253767852" name="interface" index="2VUHf6" />
+        <child id="4663111736253793712" name="failureModes" index="2VUBrq" />
+      </concept>
+      <concept id="4663111736253767856" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModeDefinition" flags="ng" index="2VUHfq" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1POhia" id="1TeaL8RdKfy">
+    <property role="TrG5h" value="_210_failure_modes" />
+    <property role="3GE5qa" value="_20_hiphops" />
+    <node concept="Du1I4" id="62cfieENIh2" role="1POhhj">
+      <node concept="2VUHfq" id="62cfieENIji" role="Du1I9">
+        <property role="TrG5h" value="speed too low" />
+        <node concept="19SGf9" id="62cfieENIjm" role="2VUHfi">
+          <node concept="19SUe$" id="62cfieENIjn" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="2VUHfq" id="62cfieENIjB" role="Du1I9">
+        <property role="TrG5h" value="speed too high" />
+        <node concept="19SGf9" id="62cfieENIjF" role="2VUHfi">
+          <node concept="19SUe$" id="62cfieENIjG" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="1savGX" id="62cfieENIia" role="3agqmW">
+        <ref role="1savGW" node="62cfieENpwe" resolve="speed_t" />
+      </node>
+    </node>
+    <node concept="2VURXa" id="62cfieEOvFI" role="1POhhj" />
+    <node concept="Du1I4" id="62cfieEOvEB" role="1POhhj">
+      <node concept="2VUHfq" id="62cfieEOvEC" role="Du1I9">
+        <property role="TrG5h" value="speed innacurate" />
+        <node concept="19SGf9" id="62cfieEOvED" role="2VUHfi">
+          <node concept="19SUe$" id="62cfieEOvEE" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="1savGX" id="3bh1RFvziCY" role="3agqmW">
+        <ref role="1savGW" node="3bh1RFvziBC" resolve="plausibilizedSpeed_t" />
+      </node>
+    </node>
+    <node concept="2VURXa" id="3bh1RFvziE1" role="1POhhj" />
+    <node concept="Du1I4" id="3bh1RFvziD4" role="1POhhj">
+      <node concept="2VUHfq" id="3bh1RFvziD5" role="Du1I9">
+        <property role="TrG5h" value="brake force innacurate" />
+        <node concept="19SGf9" id="3bh1RFvziD6" role="2VUHfi">
+          <node concept="19SUe$" id="3bh1RFvziD7" role="19SJt6" />
+        </node>
+      </node>
+      <node concept="1savGX" id="3bh1RFvziEX" role="3agqmW">
+        <ref role="1savGW" node="3bh1RFvziA4" resolve="brake_cmd_t" />
+      </node>
+    </node>
+    <node concept="2VURXa" id="5g1NREKNQJV" role="1POhhj" />
+    <node concept="2VUHfc" id="5g1NREKNQIM" role="1POhhj">
+      <ref role="2VUHf6" node="1TeaL8RdujJ" resolve="DeviceSensorsPlausibilization" />
+      <node concept="2VUHfq" id="5g1NREKNQIO" role="2VUBrq">
+        <property role="TrG5h" value="innacurate_computation" />
+        <node concept="19SGf9" id="5g1NREKNQIQ" role="2VUHfi">
+          <node concept="19SUe$" id="5g1NREKNQIR" role="19SJt6">
+            <property role="19SUeA" value="plausibilization mechanism broken" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2VURXa" id="1TeaL8RdXqm" role="1POhhj" />
+  </node>
+</model>
+

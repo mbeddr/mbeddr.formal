@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:00435d79-77fb-49f0-87b5-fa7239ab0856(_100_examples._020_adas_students_lab._030_safe_emergency_break)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl">
+        <child id="7127433683365164021" name="subRequirements" index="1VMWzp" />
+      </concept>
+      <concept id="3226630706269625197" name="com.mbeddr.formal.req.base.structure.EmptyRequirement" flags="ng" index="0lH3_" />
+      <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
+        <child id="3226630706270140651" name="text" index="0nzdz" />
+      </concept>
+      <concept id="467505803006179844" name="com.mbeddr.formal.req.base.structure.RequirementTrace" flags="ng" index="0Sh09">
+        <child id="7993788941569402916" name="reqRefs" index="hnKMk" />
+      </concept>
+      <concept id="7993788941569402923" name="com.mbeddr.formal.req.base.structure.RequirementRef" flags="ng" index="hnKMr">
+        <reference id="7993788941569402924" name="req" index="hnKMs" />
+      </concept>
+      <concept id="4908298719893728799" name="com.mbeddr.formal.req.base.structure.EmptySpec" flags="ng" index="1QQeAL" />
+      <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
+        <child id="4908298719893728789" name="spec" index="1QQeAV" />
+      </concept>
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706270020326" name="createdBy" index="0ke_I" />
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="4908298719893728774" name="specs" index="1QQeAC" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
+    <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
+      <concept id="7998766141987822488" name="com.mbeddr.formal.safety.req.structure.TechnicalSafetyReqKind" flags="ng" index="DA$zP" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1QQeGf" id="4j8iycQYhGR">
+    <property role="TrG5h" value="_302_eb_tsr" />
+    <node concept="0lhDl" id="2l0tHRMMe1M" role="1QQeBF">
+      <property role="0lsPA" value="TSR01_EB" />
+      <property role="0ke_I" value="Jonas &amp; Moritz" />
+      <node concept="1QQeAY" id="54T4ifBJ_ET" role="1QQeAC">
+        <node concept="0nzK2" id="54T4ifBJ_EV" role="1QQeAV">
+          <node concept="19SGf9" id="54T4ifBJ_EX" role="0nzdz">
+            <node concept="19SUe$" id="54T4ifBJ_EY" role="19SJt6">
+              <property role="19SUeA" value="The system shall consider the relation of the speed of the vehicle and the distance to an object. &#10;Smaller distance at high speeds are more likely to cause a collision than at low speeds.&#10;Therefore, the system relies on the time-to-collision TTC." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="2l0tHRMMe1O" role="1QQeG9">
+        <node concept="19SUe$" id="2l0tHRMMe1P" role="19SJt6">
+          <property role="19SUeA" value="Functionality of EB " />
+          <node concept="0Sh09" id="2l0tHRMMe2p" role="lGtFl">
+            <node concept="hnKMr" id="55oVyA0r_uM" role="hnKMk">
+              <ref role="hnKMs" node="4tgWazNvnb3" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DA$zP" id="2l0tHRMMe1W" role="0nOlf" />
+    </node>
+    <node concept="0lhDl" id="2l0tHRMMe38" role="1QQeBF">
+      <property role="0lsPA" value="TSR02_EB" />
+      <property role="0ke_I" value="Jonas&amp;Moritz" />
+      <node concept="0lhDl" id="2l0tHRMMe3x" role="1VMWzp">
+        <property role="0lsPA" value="TSR02_01_EB" />
+        <property role="0ke_I" value="Jonas&amp;Moritz" />
+        <node concept="0lhDl" id="5L9QjI21i2p" role="1VMWzp">
+          <property role="0lsPA" value="TSR02_01_01_EB" />
+          <property role="0ke_I" value="Jonas&amp;Moritz" />
+          <node concept="1QQeAY" id="5L9QjI21i2z" role="1QQeAC">
+            <node concept="0nzK2" id="5L9QjI21i2_" role="1QQeAV">
+              <node concept="19SGf9" id="5L9QjI21i2B" role="0nzdz">
+                <node concept="19SUe$" id="5L9QjI21i2C" role="19SJt6">
+                  <property role="19SUeA" value="The system evaluates the distances provided by all (properly working) sensors and uses the lowest value (closest distance) for computation." />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="19SGf9" id="5L9QjI21i2r" role="1QQeG9">
+            <node concept="19SUe$" id="5L9QjI21i2s" role="19SJt6">
+              <property role="19SUeA" value="Sensor voter" />
+            </node>
+          </node>
+          <node concept="DA$zP" id="54T4ifBJ_Ff" role="0nOlf" />
+        </node>
+        <node concept="1QQeAY" id="2l0tHRMMe3R" role="1QQeAC">
+          <node concept="0nzK2" id="2l0tHRMMe3T" role="1QQeAV">
+            <node concept="19SGf9" id="2l0tHRMMe3V" role="0nzdz">
+              <node concept="19SUe$" id="2l0tHRMMe3W" role="19SJt6">
+                <property role="19SUeA" value="With more than one sensor the system can handle a single point of failure&#10;A voter picks the majority of the data output." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1QQeAL" id="5L9QjI21i27" role="1QQeAC" />
+        <node concept="DA$zP" id="2l0tHRMMe4J" role="0nOlf" />
+        <node concept="19SGf9" id="2l0tHRMMe3z" role="1QQeG9">
+          <node concept="19SUe$" id="2l0tHRMMe3$" role="19SJt6">
+            <property role="19SUeA" value="Redundant sensors" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="2l0tHRMMe3D" role="1VMWzp">
+        <property role="0lsPA" value="TSR02_02_EB" />
+        <property role="0ke_I" value="Jonas&amp;Moritz" />
+        <node concept="0lhDl" id="2l0tHRMMe55" role="1VMWzp">
+          <property role="0lsPA" value="TSR02_02_01_EB" />
+          <property role="0ke_I" value="Jonas&amp;Moritz" />
+          <node concept="1QQeAY" id="2l0tHRMMe5q" role="1QQeAC">
+            <node concept="0nzK2" id="2l0tHRMMe5s" role="1QQeAV">
+              <node concept="19SGf9" id="2l0tHRMMe5u" role="0nzdz">
+                <node concept="19SUe$" id="2l0tHRMMe5v" role="19SJt6">
+                  <property role="19SUeA" value="A monitor Channel of the brake system detects, if the system does not brake in the case it should" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="DA$zP" id="2l0tHRMMe5l" role="0nOlf" />
+          <node concept="19SGf9" id="2l0tHRMMe57" role="1QQeG9">
+            <node concept="19SUe$" id="2l0tHRMMe58" role="19SJt6">
+              <property role="19SUeA" value="Monitor Channel of Brake system" />
+            </node>
+          </node>
+        </node>
+        <node concept="1QQeAY" id="2l0tHRMMe4s" role="1QQeAC">
+          <node concept="0nzK2" id="2l0tHRMMe4u" role="1QQeAV">
+            <node concept="19SGf9" id="2l0tHRMMe4w" role="0nzdz">
+              <node concept="19SUe$" id="2l0tHRMMe4x" role="19SJt6">
+                <property role="19SUeA" value="Faults of actors must be detected" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="DA$zP" id="2l0tHRMMe4M" role="0nOlf" />
+        <node concept="19SGf9" id="2l0tHRMMe3F" role="1QQeG9">
+          <node concept="19SUe$" id="2l0tHRMMe3G" role="19SJt6">
+            <property role="19SUeA" value="Detection of failures" />
+          </node>
+        </node>
+      </node>
+      <node concept="DA$zP" id="2l0tHRMMe3u" role="0nOlf" />
+      <node concept="19SGf9" id="2l0tHRMMe3a" role="1QQeG9">
+        <node concept="19SUe$" id="2l0tHRMMe3b" role="19SJt6">
+          <property role="19SUeA" value="HW and SW should function correctly " />
+          <node concept="0Sh09" id="2l0tHRMMeer" role="lGtFl">
+            <node concept="hnKMr" id="55oVyA0r_uO" role="hnKMk">
+              <ref role="hnKMs" node="4j8iycQYmv5" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="2NJwv_HFGO2" role="1QQeBF">
+      <property role="0lsPA" value="TSR03_EB" />
+      <property role="0ke_I" value="Jonas&amp;Moritz" />
+      <node concept="1QQeAY" id="2NJwv_HFGO_" role="1QQeAC">
+        <node concept="0nzK2" id="2NJwv_HFGOB" role="1QQeAV">
+          <node concept="19SGf9" id="2NJwv_HFGOD" role="0nzdz">
+            <node concept="19SUe$" id="2NJwv_HFGOE" role="19SJt6">
+              <property role="19SUeA" value="The driver can change the state of the EB system when the driver&#10;- deactivates the system using the throttle during the warning period&#10;- reacts on the warning and initiates braking himself&#10;- changes the lane to avoid a collision&#10;- powers off the engine by pushing the switch-off button or rotating the key&#10;In all other situations the system should not permit the driver to change or control the system state." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="2NJwv_HFGO4" role="1QQeG9">
+        <node concept="19SUe$" id="2NJwv_HFGO5" role="19SJt6">
+          <property role="19SUeA" value="Driver control actions " />
+          <node concept="0Sh09" id="3OFTjxLQyiL" role="lGtFl">
+            <node concept="hnKMr" id="55oVyA0r_uQ" role="hnKMk">
+              <ref role="hnKMs" node="4tgWazNvnb3" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DA$zP" id="2NJwv_HFK1x" role="0nOlf" />
+    </node>
+    <node concept="0lH3_" id="2l0tHRMMe78" role="1QQeBF" />
+    <node concept="0lhDl" id="2NJwv_HFK2a" role="1QQeBF">
+      <property role="0lsPA" value="TSR04_EB" />
+      <property role="0ke_I" value="Jonas&amp;Marcel" />
+      <node concept="0lhDl" id="3OFTjxLQzSy" role="1VMWzp">
+        <property role="0ke_I" value="Jonas&amp;Moritz" />
+        <property role="0lsPA" value="TSR04_01_EB" />
+        <node concept="1QQeAY" id="3OFTjxLQzST" role="1QQeAC">
+          <node concept="0nzK2" id="3OFTjxLQzSV" role="1QQeAV">
+            <node concept="19SGf9" id="3OFTjxLQzSX" role="0nzdz">
+              <node concept="19SUe$" id="3OFTjxLQzSY" role="19SJt6">
+                <property role="19SUeA" value="If EB has an error, the display shows a warning message." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="19SGf9" id="3OFTjxLQzS$" role="1QQeG9">
+          <node concept="19SUe$" id="3OFTjxLQzS_" role="19SJt6">
+            <property role="19SUeA" value="Error status" />
+          </node>
+        </node>
+        <node concept="DA$zP" id="3OFTjxLQzX2" role="0nOlf" />
+      </node>
+      <node concept="0lhDl" id="3OFTjxLQzSE" role="1VMWzp">
+        <property role="0ke_I" value="Jonas&amp;Moritz" />
+        <property role="0lsPA" value="TSR04_02_EB" />
+        <node concept="1QQeAY" id="3OFTjxLQzT7" role="1QQeAC">
+          <node concept="0nzK2" id="3OFTjxLQzT9" role="1QQeAV">
+            <node concept="19SGf9" id="3OFTjxLQzTb" role="0nzdz">
+              <node concept="19SUe$" id="3OFTjxLQzTc" role="19SJt6">
+                <property role="19SUeA" value="&#10;The system must warn the driver before an imminent collision. " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="19SGf9" id="3OFTjxLQzSG" role="1QQeG9">
+          <node concept="19SUe$" id="3OFTjxLQzSH" role="19SJt6">
+            <property role="19SUeA" value="Collision Warning  " />
+          </node>
+        </node>
+        <node concept="DA$zP" id="3OFTjxLQzX7" role="0nOlf" />
+      </node>
+      <node concept="1QQeAY" id="2NJwv_HFK2Y" role="1QQeAC">
+        <node concept="0nzK2" id="2NJwv_HFK30" role="1QQeAV">
+          <node concept="19SGf9" id="2NJwv_HFK32" role="0nzdz">
+            <node concept="19SUe$" id="2NJwv_HFK33" role="19SJt6">
+              <property role="19SUeA" value="The driver has to get continous EB system feedback through interface devices. " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="2NJwv_HFK2c" role="1QQeG9">
+        <node concept="19SUe$" id="2NJwv_HFK2d" role="19SJt6">
+          <property role="19SUeA" value="System-Driver communication " />
+          <node concept="0Sh09" id="3OFTjxLQyiN" role="lGtFl">
+            <node concept="hnKMr" id="55oVyA0r_uS" role="hnKMk">
+              <ref role="hnKMs" node="4WLVkAsg6H2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DA$zP" id="2NJwv_HFK2T" role="0nOlf" />
+    </node>
+  </node>
+</model>
+

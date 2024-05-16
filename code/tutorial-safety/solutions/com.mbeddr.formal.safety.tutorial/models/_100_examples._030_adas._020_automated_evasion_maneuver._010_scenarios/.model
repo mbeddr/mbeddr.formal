@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:541259e0-6152-4850-9705-78b0875c4fd8(_100_examples._030_adas._020_automated_evasion_maneuver._010_scenarios)" content="header">
+  <persistence version="9" />
+  <languages>
+    <use id="3460ac43-6f59-4f61-b134-9fa2f799c2d3" name="com.mbeddr.formal.req.scenarios" version="0" />
+    <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
+  </languages>
+  <imports />
+</model>
+
