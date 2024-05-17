@@ -109,6 +109,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1212008292747" name="jetbrains.mps.lang.smodel.structure.Model_GetLongNameOperation" flags="nn" index="LkI2h" />
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -230,6 +233,19 @@
                 </node>
                 <node concept="2GrUjf" id="y1G8y6axzc" role="37wK5m">
                   <ref role="2Gs0qQ" node="y1G8y67FB2" resolve="mc" />
+                </node>
+                <node concept="2OqwBi" id="4VhhwF2suqu" role="37wK5m">
+                  <node concept="2JrnkZ" id="4VhhwF2suin" role="2Oq$k0">
+                    <node concept="2OqwBi" id="4VhhwF2strp" role="2JrQYb">
+                      <node concept="1YBJjd" id="4VhhwF2stgG" role="2Oq$k0">
+                        <ref role="1YBMHb" node="y1G8y66jB2" resolve="modelChecksContainer" />
+                      </node>
+                      <node concept="I4A8Y" id="4VhhwF2stWi" role="2OqNvi" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4VhhwF2suBK" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                  </node>
                 </node>
               </node>
             </node>
