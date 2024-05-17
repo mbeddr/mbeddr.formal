@@ -291,6 +291,7 @@
         <child id="3454709602159778495" name="parameterValues" index="1xbcaF" />
       </concept>
       <concept id="621570459751009499" name="de.itemis.mps.editor.diagram.structure.EdgeEditor_CanSplit" flags="ig" index="KXoZh" />
+      <concept id="5112292084089908370" name="de.itemis.mps.editor.diagram.structure.EditorContextExpression" flags="ng" index="UMIS2" />
       <concept id="6237710625713195816" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramNode" flags="ng" index="2ZK4vF">
         <child id="7464726264117682823" name="shape" index="2xQQDV" />
         <child id="5725606875425244480" name="deleteHandler" index="1idfhu" />
@@ -556,6 +557,7 @@
             <property role="3clFbU" value="true" />
           </node>
           <node concept="1Pxb5l" id="5TwIvQFvwDz" role="1xbcaF" />
+          <node concept="UMIS2" id="4VhhwF2mkMy" role="1xbcaF" />
         </node>
       </node>
       <node concept="KXoZh" id="2ccN23odQq4" role="KYgL9">
@@ -665,6 +667,7 @@
             <property role="3clFbU" value="true" />
           </node>
           <node concept="1Pxb5l" id="5TwIvQFvwsy" role="1xbcaF" />
+          <node concept="UMIS2" id="4VhhwF2mkCN" role="1xbcaF" />
         </node>
       </node>
       <node concept="KXoZh" id="35$gPpxbZZC" role="KYgL9">
