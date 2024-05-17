@@ -235,22 +235,7 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="y1G8y66_QY" role="3cqZAp">
-          <node concept="3cpWsn" id="y1G8y66_QZ" role="3cpWs9">
-            <property role="TrG5h" value="myProject" />
-            <node concept="3uibUv" id="y1G8y66_Oo" role="1tU5fm">
-              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
-            </node>
-            <node concept="2YIFZM" id="2u7UHDCh3mq" role="33vP2m">
-              <ref role="37wK5l" to="agne:1fyC0RHInUp" resolve="getMPSProjectForNode" />
-              <ref role="1Pybhc" to="agne:1fyC0RHIfK6" resolve="ProjectHelper" />
-              <node concept="37vLTw" id="y1G8y67ZRS" role="37wK5m">
-                <ref role="3cqZAo" node="y1G8y68boG" resolve="node" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="y1G8y68aRD" role="3cqZAp" />
+        <node concept="3clFbH" id="4VhhwF2tqvR" role="3cqZAp" />
         <node concept="3clFbF" id="y1G8y67uut" role="3cqZAp">
           <node concept="3cmrfG" id="y1G8y67uus" role="3clFbG">
             <property role="3cmrfH" value="1" />
