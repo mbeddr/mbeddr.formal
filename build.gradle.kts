@@ -15,7 +15,7 @@ plugins {
     id("de.itemis.mps.gradle.common") version "1.20.+"
 }
 
-val jbrVers = "17.0.6-b653.34"
+val jbrVers = "17.0.6-b469.82"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -41,7 +41,7 @@ val bugfix = "1"
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
-val mpsVersion = "$major.$minor" + appendOpt(bugfix, ".")
+val mpsVersion = "2022.3" + appendOpt(bugfix, ".")
 
 // Dependency versions
 val platformVersion = "$major.$minor.+"
@@ -175,13 +175,26 @@ tasks {
         destination = file("code/languages/com.mbeddr.formal.nusmv/.mps/libraries.xml")
     }
 
+	// "com.fasten.safety.rcp.pluginSolution" makes use of the mbeddr actionsfilter plugin.
+	// The "actionsfilter" plugin and dependencies must be copied to "MPS\plugins" folder in order to load properly.
+	val copy_mbeddr_actionsfilter by registering(Copy::class) {
+		dependsOn(resolveLanguageLibs)
+		description="Installs 'com.mbeddr.mpsutil.actionsfilter' plugin and its dependencies into 'MPS\\plugins' directory."
+		from("$dependenciesDir/com.mbeddr.platform")
+		include("com.mbeddr.mpsutil.actionsfilter/",
+            "de.itemis.mps.editor.widgets/",
+            "de.slisson.mps.hacks/",
+            "de.itemis.mps.tooltips/")
+		into("$mpsHomeDir/plugins")
+	}
+
     val setup by registering {
         dependsOn(generateLibrariesXml)
         description = "Set up MPS project libraries. Libraries are read in from projectlibraries.properties file."
     }
 
     val build_allScripts by registering(BuildLanguages::class) {
-        dependsOn(resolveMps, resolveLanguageLibs)
+        dependsOn(resolveMps, resolveLanguageLibs, copy_mbeddr_actionsfilter)
         script = "$buildDir/scripts/build_all_scripts.xml"
     }
 

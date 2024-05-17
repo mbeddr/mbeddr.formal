@@ -127,12 +127,6 @@
     <property role="TrG5h" value="ModelCheckConceptFunction" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
-  <node concept="1TIwiD" id="y1G8y66EiD">
-    <property role="EcuMT" value="612965124711031977" />
-    <property role="TrG5h" value="ProjectExpression" />
-    <property role="34LRSv" value="project" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-  </node>
   <node concept="1TIwiD" id="y1G8y66PGV">
     <property role="EcuMT" value="612965124711078715" />
     <property role="TrG5h" value="ConceptFunctionParameter_node" />

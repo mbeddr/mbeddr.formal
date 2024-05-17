@@ -5,6 +5,7 @@
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <use id="ca32bc98-ea47-4b42-82e1-76bebf8a4e7d" name="com.mbeddr.formal.safety.gsn.xml_gen" version="0" />
+    <use id="ece26728-2885-4b26-9f61-67d2821fc361" name="com.mpsbasics.pdfexporter" version="0" />
     <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
   </languages>
   <imports />
@@ -23,6 +24,22 @@
     <language id="e4dd8dcd-fbfe-4e69-bcdd-b4371f25f476" name="com.fasten.base.git">
       <concept id="9053345654769769563" name="com.fasten.base.git.structure.GitCommitHashWord" flags="ng" index="1SKMQN" />
       <concept id="9053345654770096926" name="com.fasten.base.git.structure.GitBranchWord" flags="ng" index="1SLyFQ" />
+    </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+      </concept>
+    </language>
+    <language id="ece26728-2885-4b26-9f61-67d2821fc361" name="com.mpsbasics.pdfexporter">
+      <concept id="2385126976340186078" name="com.mpsbasics.pdfexporter.structure.EmptyPage" flags="ng" index="TVfY7" />
+      <concept id="2385126976340136793" name="com.mpsbasics.pdfexporter.structure.RootNodesRef" flags="ng" index="TVjW0">
+        <reference id="2385126976340138510" name="rootNode" index="TVjpn" />
+      </concept>
+      <concept id="2385126976339379921" name="com.mpsbasics.pdfexporter.structure.PdfExportConfiguration" flags="ng" index="TWaE8">
+        <child id="2385126976340183148" name="pages" index="TVegP" />
+        <child id="2848503513110145633" name="location" index="1fTw2V" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -2953,6 +2970,29 @@
   </node>
   <node concept="pFZ$m" id="6VBHnHRib32">
     <property role="3GE5qa" value="config" />
+  </node>
+  <node concept="TWaE8" id="24pF5$oXQin">
+    <property role="TrG5h" value="pdf_export" />
+    <node concept="TVjW0" id="24pF5$oXQio" role="TVegP">
+      <ref role="TVjpn" node="3GRi4m$r5TO" resolve="_010_simple_pattern_baselang" />
+    </node>
+    <node concept="TVfY7" id="24pF5$oXQit" role="TVegP" />
+    <node concept="TVjW0" id="3GMd7ba95hG" role="TVegP">
+      <ref role="TVjpn" node="1qrXfdH0LFq" resolve="_100_away_goal_010_definition" />
+    </node>
+    <node concept="TVjW0" id="3GMd7ba95hN" role="TVegP">
+      <ref role="TVjpn" node="1qrXfdGXjNu" resolve="_100_away_goal_020_reference" />
+    </node>
+    <node concept="TVfY7" id="3GMd7ba95iq" role="TVegP" />
+    <node concept="TVjW0" id="24pF5$oXQi_" role="TVegP">
+      <ref role="TVjpn" node="7lPNUDMt_br" resolve="_120_all_entities" />
+    </node>
+    <node concept="TVjW0" id="24pF5$oXQiJ" role="TVegP">
+      <ref role="TVjpn" node="3f8ZVRYfHaZ" resolve="_200_goal_structure_fixed_prefix" />
+    </node>
+    <node concept="9PVaO" id="6v3euY37IJt" role="1fTw2V">
+      <property role="3N1Lgt" value="temp" />
+    </node>
   </node>
 </model>
 

@@ -30,6 +30,7 @@
     <import index="p8va" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:com.mxgraph.swing(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="nf7v" ref="r:323f2e16-a77b-4958-b026-25202f82daa5(com.mbeddr.formal.safety.gsn.util)" />
+    <import index="mryx" ref="r:da23d8da-3a75-4f33-96d8-7b3d3c2b2ccd(com.mpsbasics.editor.utils.screenshooter)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -424,9 +425,9 @@
           <node concept="1QHqEC" id="71GfFl7hLPo" role="1QHqEI">
             <node concept="3clFbS" id="71GfFl7hLPq" role="1bW5cS">
               <node concept="3clFbF" id="696iakqHGD" role="3cqZAp">
-                <node concept="2YIFZM" id="696iakqJQ1" role="3clFbG">
-                  <ref role="37wK5l" to="ztk3:696iakqcN1" resolve="takeScreenshotAndSaveIntoFile" />
-                  <ref role="1Pybhc" to="ztk3:1yFmGPnLcL9" resolve="PNGCellEditorScreenshooter" />
+                <node concept="2YIFZM" id="2u7UHDC8hJ2" role="3clFbG">
+                  <ref role="37wK5l" to="mryx:696iakqcN1" resolve="takeScreenshotAndSaveIntoFile" />
+                  <ref role="1Pybhc" to="mryx:1yFmGPnLcL9" resolve="PNGCellEditorScreenshooter" />
                   <node concept="2Sf5sV" id="696iakqJQL" role="37wK5m" />
                 </node>
               </node>
@@ -1964,9 +1965,9 @@
           <node concept="1QHqEC" id="5FTX57fM9Rl" role="1QHqEI">
             <node concept="3clFbS" id="5FTX57fM9Rm" role="1bW5cS">
               <node concept="3clFbF" id="5FTX57fM9Rn" role="3cqZAp">
-                <node concept="2YIFZM" id="5FTX57fMa3C" role="3clFbG">
-                  <ref role="37wK5l" to="ztk3:xCk$O6ov8n" resolve="takeScreenshotAndSaveIntoFile" />
-                  <ref role="1Pybhc" to="ztk3:5FTX57fKCMo" resolve="SVGCellEditorScreehshooter" />
+                <node concept="2YIFZM" id="2u7UHDC8hJa" role="3clFbG">
+                  <ref role="37wK5l" to="mryx:xCk$O6ov8n" resolve="takeScreenshotAndSaveIntoFile" />
+                  <ref role="1Pybhc" to="mryx:5FTX57fKCMo" resolve="SVGCellEditorScreehshooter" />
                   <node concept="2Sf5sV" id="5FTX57fMa3D" role="37wK5m" />
                 </node>
               </node>

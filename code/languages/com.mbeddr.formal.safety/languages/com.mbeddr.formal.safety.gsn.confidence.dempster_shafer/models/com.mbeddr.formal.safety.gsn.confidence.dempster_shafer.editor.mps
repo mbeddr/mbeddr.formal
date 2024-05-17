@@ -17,6 +17,7 @@
     <import index="6oah" ref="r:c3ace323-0a57-4f8d-b471-fad629604601(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
     <import index="49qe" ref="r:20bb7136-9452-4bac-8213-62deb5681702(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -47,6 +48,9 @@
       </concept>
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
+      </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ng" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1223386653097" name="jetbrains.mps.lang.editor.structure.StrikeOutStyleSheet" flags="ln" index="3nxI2P" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
@@ -680,6 +684,10 @@
       <node concept="3F0A7n" id="48_A4oY40jH" role="3EZMnx">
         <ref role="1NtTu8" to="6oah:48_A4oY40ig" resolve="weight" />
       </node>
+      <node concept="3F0ifn" id="7NA168q7KUR" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+      </node>
       <node concept="l2Vlx" id="48_A4oY40jz" role="2iSdaV" />
     </node>
   </node>
@@ -1155,6 +1163,10 @@
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="7NA168q7JV4" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+      </node>
       <node concept="2iRfu4" id="18nEFuhW21M" role="2iSdaV" />
     </node>
   </node>
@@ -1183,6 +1195,10 @@
           </node>
         </node>
       </node>
+      <node concept="3F0ifn" id="7NA168q7K9N" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+      </node>
       <node concept="2iRfu4" id="18nEFuhW4xq" role="2iSdaV" />
     </node>
   </node>
@@ -1197,6 +1213,10 @@
       </node>
       <node concept="3F0A7n" id="18nEFui9ga3" role="3EZMnx">
         <ref role="1NtTu8" to="6oah:18nEFui9dM5" resolve="argtype" />
+      </node>
+      <node concept="3F0ifn" id="7NA168q7JBo" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
       </node>
       <node concept="l2Vlx" id="18nEFui9g9F" role="2iSdaV" />
     </node>

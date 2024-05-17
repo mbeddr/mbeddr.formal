@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="1e9opmpfxkK">
+    <property role="TrG5h" value="extract_from_G1.2.1.2" />
+    <property role="3GE5qa" value="1_nominal_operation.1_2_SDV_design" />
+    <node concept="2vn7WC" id="1e9opmpdFCA" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHei" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJ6" role="19SJt6">
+          <property role="19SUeA" value="The use cases sufficiently inform the&#10;operational concept " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFCC" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHej" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJ7" role="19SJt6">
+          <property role="19SUeA" value="The operational concept covers the full&#10;lifecycle of Self-Driving Vehicle design,&#10;development, testing, manufacturing,&#10;operations, maintenance, and decommissioning." />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFCE" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.2.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHek" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJ8" role="19SJt6">
+          <property role="19SUeA" value="System architecture is defined " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFCG" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.2.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHel" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJ9" role="19SJt6">
+          <property role="19SUeA" value="Concept of operations " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFCI" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.2.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHem" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJa" role="19SJt6">
+          <property role="19SUeA" value="Strategy for system safety defined " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFCK" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.2.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHen" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJb" role="19SJt6">
+          <property role="19SUeA" value="Justification report on suitability of&#10;redundancy in architecture " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFCM" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.2.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHeo" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJc" role="19SJt6">
+          <property role="19SUeA" value="Traceability between system architecture&#10;and operational concept " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFCO" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.2.1.6" />
+      <node concept="19SGf9" id="1e9opmpdHep" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJd" role="19SJt6">
+          <property role="19SUeA" value="Coverage analysis of operational concept&#10;to all Self-Driving Enterprise lifecycle&#10;stages " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFCQ" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHeq" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJe" role="19SJt6">
+          <property role="19SUeA" value="Coverage gaps in the operational concept&#10;refine use case definition " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFCS" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.2.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHer" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJf" role="19SJt6">
+          <property role="19SUeA" value="Coverage report of use case to operational&#10;concept " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFCU" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.2.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHes" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJg" role="19SJt6">
+          <property role="19SUeA" value="Traceability of system architecture to&#10;operational concept " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFCW" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.2.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHet" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJh" role="19SJt6">
+          <property role="19SUeA" value="Traceability between use case and operational&#10;concept " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFCY" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.2.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHeu" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJJi" role="19SJt6">
+          <property role="19SUeA" value="Verification review of operational concept" />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFCD" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFCA" resolve="G1.2.1.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFCC" resolve="G1.2.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFCF" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFCE" resolve="Sn1.2.1.2.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdFCC" resolve="G1.2.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFCH" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFCC" resolve="G1.2.1.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFCG" resolve="Sn1.2.1.2.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFCJ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFCC" resolve="G1.2.1.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFCI" resolve="Sn1.2.1.2.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFCL" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFCC" resolve="G1.2.1.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFCK" resolve="Sn1.2.1.2.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFCN" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFCM" resolve="Sn1.2.1.2.1.5" />
+      <ref role="3VeSjP" node="1e9opmpdFCC" resolve="G1.2.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFCP" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFCO" resolve="Sn1.2.1.2.1.6" />
+      <ref role="3VeSjP" node="1e9opmpdFCC" resolve="G1.2.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFCR" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFCA" resolve="G1.2.1.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFCQ" resolve="G1.2.1.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFCT" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFCS" resolve="Sn1.2.1.2.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdFCQ" resolve="G1.2.1.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFCV" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFCU" resolve="Sn1.2.1.2.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdFCQ" resolve="G1.2.1.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFCX" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFCQ" resolve="G1.2.1.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFCW" resolve="Sn1.2.1.2.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFCZ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFCQ" resolve="G1.2.1.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFCY" resolve="Sn1.2.1.2.2.4" />
+    </node>
+  </node>
+</model>
+

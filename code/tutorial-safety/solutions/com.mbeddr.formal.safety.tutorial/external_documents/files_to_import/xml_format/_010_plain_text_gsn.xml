@@ -1,0 +1,112 @@
+<goal_structure name="_010_plain_text_gsn">
+  <goal>
+    <name>G01</name>
+    <node_id>8954016816614991919</node_id>
+    <description>The system is 
+sufficiently safe to operate</description>
+    <attributes></attributes>
+  </goal>
+  <strategy>
+    <name>S01</name>
+    <node_id>8954016816614991952</node_id>
+    <description>Argument over hazards.</description>
+    <attributes></attributes>
+  </strategy>
+  <goal>
+    <name>G02</name>
+    <node_id>8954016816614992000</node_id>
+    <description>Hazard H01 has 
+been mitigated</description>
+    <attributes></attributes>
+    <undeveloped>true</undeveloped>
+  </goal>
+  <goal>
+    <name>G03</name>
+    <node_id>3804072175782963270</node_id>
+    <description>Hazard H02 has
+been mitigated</description>
+    <attributes>
+      <attribute>
+        <name>color</name>
+        <value>color ccccff (rgb)</value>
+      </attribute>
+    </attributes>
+  </goal>
+  <context>
+    <name>C01</name>
+    <node_id>2623107343594064426</node_id>
+    <description>Environment 
+description.</description>
+    <attributes>
+      <attribute>
+        <name>color</name>
+        <value>color ccffff (rgb)</value>
+      </attribute>
+    </attributes>
+  </context>
+  <justification>
+    <name>J01</name>
+    <node_id>2623107343594065251</node_id>
+    <description>Widely used top 
+level strategy</description>
+    <attributes>
+      <attribute>
+        <name>color</name>
+        <value>color ccffcc (rgb)</value>
+      </attribute>
+    </attributes>
+  </justification>
+  <solution>
+    <name>Sol01</name>
+    <node_id>2623107343594066031</node_id>
+    <description>Testing results.</description>
+    <attributes></attributes>
+  </solution>
+  <assumption>
+    <name>AS01</name>
+    <node_id>2623107343594066592</node_id>
+    <description>Operators have
+adequate training.</description>
+    <attributes>
+      <attribute>
+        <name>color</name>
+        <value>color ccccff (rgb)</value>
+      </attribute>
+    </attributes>
+  </assumption>
+  <supported_by>
+    <source_node_id>8954016816614991919</source_node_id>
+    <target_node_id>8954016816614991952</target_node_id>
+    <attributes></attributes>
+  </supported_by>
+  <supported_by>
+    <source_node_id>8954016816614991952</source_node_id>
+    <target_node_id>8954016816614992000</target_node_id>
+    <attributes></attributes>
+  </supported_by>
+  <supported_by>
+    <source_node_id>8954016816614991952</source_node_id>
+    <target_node_id>3804072175782963270</target_node_id>
+    <attributes></attributes>
+  </supported_by>
+  <in_context_of>
+    <source_node_id>8954016816614991919</source_node_id>
+    <target_node_id>2623107343594064426</target_node_id>
+    <attributes></attributes>
+  </in_context_of>
+  <in_context_of>
+    <source_node_id>8954016816614991952</source_node_id>
+    <target_node_id>2623107343594065251</target_node_id>
+    <attributes></attributes>
+  </in_context_of>
+  <supported_by>
+    <source_node_id>3804072175782963270</source_node_id>
+    <target_node_id>2623107343594066031</target_node_id>
+    <attributes></attributes>
+  </supported_by>
+  <in_context_of>
+    <source_node_id>8954016816614991919</source_node_id>
+    <target_node_id>2623107343594066592</target_node_id>
+    <attributes></attributes>
+  </in_context_of>
+</goal_structure>

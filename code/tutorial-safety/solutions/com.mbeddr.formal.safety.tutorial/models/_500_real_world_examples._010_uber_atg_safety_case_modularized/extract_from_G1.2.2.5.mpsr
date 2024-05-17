@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="1e9opmpfBuy">
+    <property role="TrG5h" value="extract_from_G1.2.2.5" />
+    <property role="3GE5qa" value="1_nominal_operation.1_2_SDV_design" />
+    <node concept="2vn7WC" id="1e9opmpdFTw" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.5" />
+      <node concept="19SGf9" id="1e9opmpdHmJ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRz" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control provides acceptable functional&#10;performance in the defined ODD " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFTy" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.5.1" />
+      <node concept="19SGf9" id="1e9opmpdHmK" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJR$" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control design and performance&#10;is documented " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFT$" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHmL" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJR_" role="19SJt6">
+          <property role="19SUeA" value="Self-Driving Enterprise functions allocated&#10;to Vehicle Control " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFTA" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHmM" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRA" role="19SJt6">
+          <property role="19SUeA" value="Non-functional requirements of Vehicle&#10;Control are documented " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFTC" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHmN" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRB" role="19SJt6">
+          <property role="19SUeA" value="Overall Vehicle Control strategy defined" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFTE" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHmO" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRC" role="19SJt6">
+          <property role="19SUeA" value="Functional architecture of Vehicle Control" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFTG" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHmP" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRD" role="19SJt6">
+          <property role="19SUeA" value="Physical architecture of Vehicle Control" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFTI" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.1.6" />
+      <node concept="19SGf9" id="1e9opmpdHmQ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRE" role="19SJt6">
+          <property role="19SUeA" value="Performance specification " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFTK" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.1.7" />
+      <node concept="19SGf9" id="1e9opmpdHmR" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRF" role="19SJt6">
+          <property role="19SUeA" value="Traceability of OD characterization to&#10;Vehicle Control " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFTM" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.1.8" />
+      <node concept="19SGf9" id="1e9opmpdHmS" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRG" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control safety requirements " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFTO" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.5.1.9" />
+      <node concept="19SGf9" id="1e9opmpdHmT" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRH" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control systems provide sufficient&#10;redundancy " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFTQ" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.1.9.1" />
+      <node concept="19SGf9" id="1e9opmpdHmU" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRI" role="19SJt6">
+          <property role="19SUeA" value="Overall Vehicle Control strategy defined" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFTS" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.1.9.2" />
+      <node concept="19SGf9" id="1e9opmpdHmV" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRJ" role="19SJt6">
+          <property role="19SUeA" value="Functional architecture of Vehicle Control" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFTU" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.1.9.3" />
+      <node concept="19SGf9" id="1e9opmpdHmW" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRK" role="19SJt6">
+          <property role="19SUeA" value="Physical architecture of Vehicle Control" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFTW" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.5.2" />
+      <node concept="19SGf9" id="1e9opmpdHmX" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRL" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control performance is suitable&#10;for the ODD " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFTY" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.5.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHmY" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRM" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control is valid (possible to&#10;execute) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFU0" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHmZ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRN" role="19SJt6">
+          <property role="19SUeA" value="Trajectory validation diagnostic coverage" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFU2" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHn0" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRO" role="19SJt6">
+          <property role="19SUeA" value="Trajectory validation fault injection&#10;test results " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFU4" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHn1" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRP" role="19SJt6">
+          <property role="19SUeA" value="Trajectory validation test plan " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFU6" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHn2" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRQ" role="19SJt6">
+          <property role="19SUeA" value="Peer review of test plan " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFU8" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHn3" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRR" role="19SJt6">
+          <property role="19SUeA" value="Controllability testing results " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUa" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.1.6" />
+      <node concept="19SGf9" id="1e9opmpdHn4" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRS" role="19SJt6">
+          <property role="19SUeA" value="Documentation of vehicle control limits&#10;/ ODD " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUc" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.1.7" />
+      <node concept="19SGf9" id="1e9opmpdHn5" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRT" role="19SJt6">
+          <property role="19SUeA" value="Justification vehicle control maintains&#10;defined limits " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUe" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.1.8" />
+      <node concept="19SGf9" id="1e9opmpdHn6" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRU" role="19SJt6">
+          <property role="19SUeA" value="Justification vehicle control limits&#10;are appropriate for ODD " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFUg" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.5.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHn7" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRV" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control commands meet interface&#10;contracts " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUi" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHn8" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRW" role="19SJt6">
+          <property role="19SUeA" value="Requirements for vehicle control limits&#10;for ODD " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUk" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHn9" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRX" role="19SJt6">
+          <property role="19SUeA" value="Fault injection testing of control command&#10;interface " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUm" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHna" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRY" role="19SJt6">
+          <property role="19SUeA" value="Justification vehicle control maintains&#10;defined limits " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUo" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHnb" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJRZ" role="19SJt6">
+          <property role="19SUeA" value="Justification vehicle control limits&#10;are appropriate for ODD " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFUq" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.5.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHnc" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJS0" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control is sufficiently accurate" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUs" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHnd" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJS1" role="19SJt6">
+          <property role="19SUeA" value="Controllability requirements " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUu" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHne" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJS2" role="19SJt6">
+          <property role="19SUeA" value="Justification controllability requirements&#10;are appropriate for ODD " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUw" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.3.3" />
+      <node concept="19SGf9" id="1e9opmpdHnf" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJS3" role="19SJt6">
+          <property role="19SUeA" value="Controllability testing results " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUy" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.3.4" />
+      <node concept="19SGf9" id="1e9opmpdHng" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJS4" role="19SJt6">
+          <property role="19SUeA" value="Controllability test plan " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFU$" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.3.5" />
+      <node concept="19SGf9" id="1e9opmpdHnh" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJS5" role="19SJt6">
+          <property role="19SUeA" value="Peer review of controllability test plan" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFUA" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.5.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHni" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJS6" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control is sufficiently precise" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUC" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.4.1" />
+      <node concept="19SGf9" id="1e9opmpdHnj" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJS7" role="19SJt6">
+          <property role="19SUeA" value="Controllability requirements " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUE" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.4.2" />
+      <node concept="19SGf9" id="1e9opmpdHnk" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJS8" role="19SJt6">
+          <property role="19SUeA" value="Justification controllability requirements&#10;are appropriate for ODD " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUG" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.4.3" />
+      <node concept="19SGf9" id="1e9opmpdHnl" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJS9" role="19SJt6">
+          <property role="19SUeA" value="Controllability testing results " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUI" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.4.4" />
+      <node concept="19SGf9" id="1e9opmpdHnm" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSa" role="19SJt6">
+          <property role="19SUeA" value="Controllability test plan " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUK" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.4.5" />
+      <node concept="19SGf9" id="1e9opmpdHnn" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSb" role="19SJt6">
+          <property role="19SUeA" value="Peer review of controllability test plan" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFUM" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.5.2.5" />
+      <node concept="19SGf9" id="1e9opmpdHno" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSc" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control system latency is appropriate&#10;for the ODD " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUO" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.5.1" />
+      <node concept="19SGf9" id="1e9opmpdHnp" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSd" role="19SJt6">
+          <property role="19SUeA" value="Latency test results " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUQ" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.5.2" />
+      <node concept="19SGf9" id="1e9opmpdHnq" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSe" role="19SJt6">
+          <property role="19SUeA" value="Latency coverage to ODD " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUS" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.5.3" />
+      <node concept="19SGf9" id="1e9opmpdHnr" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSf" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control latency test plan " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUU" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.5.4" />
+      <node concept="19SGf9" id="1e9opmpdHns" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSg" role="19SJt6">
+          <property role="19SUeA" value="Peer review and approval of test plan" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFUW" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.5.2.6" />
+      <node concept="19SGf9" id="1e9opmpdHnt" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSh" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control testing and validation&#10;is appropriate for the ODD " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFUY" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.6.1" />
+      <node concept="19SGf9" id="1e9opmpdHnu" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSi" role="19SJt6">
+          <property role="19SUeA" value="Traceability of ODD elements to vehicle&#10;control requirements " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFV0" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.6.2" />
+      <node concept="19SGf9" id="1e9opmpdHnv" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSj" role="19SJt6">
+          <property role="19SUeA" value="Vehicle control validation plan " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFV2" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.5.2.6.3" />
+      <node concept="19SGf9" id="1e9opmpdHnw" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSk" role="19SJt6">
+          <property role="19SUeA" value="Justification validation plan coverage&#10;to ODD is sufficient " />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTz" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFTy" resolve="G1.2.2.5.1" />
+      <ref role="3VeSjP" node="1e9opmpdFTw" resolve="G1.2.2.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFT_" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFT$" resolve="Sn1.2.2.5.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdFTy" resolve="G1.2.2.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTB" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFTA" resolve="Sn1.2.2.5.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdFTy" resolve="G1.2.2.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTD" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFTy" resolve="G1.2.2.5.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFTC" resolve="Sn1.2.2.5.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTF" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFTy" resolve="G1.2.2.5.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFTE" resolve="Sn1.2.2.5.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTH" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFTG" resolve="Sn1.2.2.5.1.5" />
+      <ref role="3VeSjP" node="1e9opmpdFTy" resolve="G1.2.2.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTJ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFTy" resolve="G1.2.2.5.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFTI" resolve="Sn1.2.2.5.1.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTL" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFTK" resolve="Sn1.2.2.5.1.7" />
+      <ref role="3VeSjP" node="1e9opmpdFTy" resolve="G1.2.2.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTN" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFTM" resolve="Sn1.2.2.5.1.8" />
+      <ref role="3VeSjP" node="1e9opmpdFTy" resolve="G1.2.2.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTP" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFTy" resolve="G1.2.2.5.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFTO" resolve="G1.2.2.5.1.9" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTR" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFTQ" resolve="Sn1.2.2.5.1.9.1" />
+      <ref role="3VeSjP" node="1e9opmpdFTO" resolve="G1.2.2.5.1.9" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTT" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFTO" resolve="G1.2.2.5.1.9" />
+      <ref role="3VeSjQ" node="1e9opmpdFTS" resolve="Sn1.2.2.5.1.9.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTV" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFTU" resolve="Sn1.2.2.5.1.9.3" />
+      <ref role="3VeSjP" node="1e9opmpdFTO" resolve="G1.2.2.5.1.9" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTX" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFTW" resolve="G1.2.2.5.2" />
+      <ref role="3VeSjP" node="1e9opmpdFTw" resolve="G1.2.2.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFTZ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFTW" resolve="G1.2.2.5.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFTY" resolve="G1.2.2.5.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFU1" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFU0" resolve="Sn1.2.2.5.2.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdFTY" resolve="G1.2.2.5.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFU3" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFU2" resolve="Sn1.2.2.5.2.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdFTY" resolve="G1.2.2.5.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFU5" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFTY" resolve="G1.2.2.5.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFU4" resolve="Sn1.2.2.5.2.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFU7" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFU6" resolve="Sn1.2.2.5.2.1.4" />
+      <ref role="3VeSjP" node="1e9opmpdFTY" resolve="G1.2.2.5.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFU9" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFTY" resolve="G1.2.2.5.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFU8" resolve="Sn1.2.2.5.2.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUb" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFTY" resolve="G1.2.2.5.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFUa" resolve="Sn1.2.2.5.2.1.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUd" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFTY" resolve="G1.2.2.5.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFUc" resolve="Sn1.2.2.5.2.1.7" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUf" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUe" resolve="Sn1.2.2.5.2.1.8" />
+      <ref role="3VeSjP" node="1e9opmpdFTY" resolve="G1.2.2.5.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUh" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUg" resolve="G1.2.2.5.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdFTW" resolve="G1.2.2.5.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUj" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFUg" resolve="G1.2.2.5.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFUi" resolve="Sn1.2.2.5.2.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUl" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUk" resolve="Sn1.2.2.5.2.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdFUg" resolve="G1.2.2.5.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUn" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUm" resolve="Sn1.2.2.5.2.2.3" />
+      <ref role="3VeSjP" node="1e9opmpdFUg" resolve="G1.2.2.5.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUp" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFUg" resolve="G1.2.2.5.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFUo" resolve="Sn1.2.2.5.2.2.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUr" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFTW" resolve="G1.2.2.5.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFUq" resolve="G1.2.2.5.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUt" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUs" resolve="Sn1.2.2.5.2.3.1" />
+      <ref role="3VeSjP" node="1e9opmpdFUq" resolve="G1.2.2.5.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUv" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFUq" resolve="G1.2.2.5.2.3" />
+      <ref role="3VeSjQ" node="1e9opmpdFUu" resolve="Sn1.2.2.5.2.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUx" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFUq" resolve="G1.2.2.5.2.3" />
+      <ref role="3VeSjQ" node="1e9opmpdFUw" resolve="Sn1.2.2.5.2.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUz" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUy" resolve="Sn1.2.2.5.2.3.4" />
+      <ref role="3VeSjP" node="1e9opmpdFUq" resolve="G1.2.2.5.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFU_" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFUq" resolve="G1.2.2.5.2.3" />
+      <ref role="3VeSjQ" node="1e9opmpdFU$" resolve="Sn1.2.2.5.2.3.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUB" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUA" resolve="G1.2.2.5.2.4" />
+      <ref role="3VeSjP" node="1e9opmpdFTW" resolve="G1.2.2.5.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUD" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUC" resolve="Sn1.2.2.5.2.4.1" />
+      <ref role="3VeSjP" node="1e9opmpdFUA" resolve="G1.2.2.5.2.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUF" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUE" resolve="Sn1.2.2.5.2.4.2" />
+      <ref role="3VeSjP" node="1e9opmpdFUA" resolve="G1.2.2.5.2.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUH" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUG" resolve="Sn1.2.2.5.2.4.3" />
+      <ref role="3VeSjP" node="1e9opmpdFUA" resolve="G1.2.2.5.2.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUJ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFUA" resolve="G1.2.2.5.2.4" />
+      <ref role="3VeSjQ" node="1e9opmpdFUI" resolve="Sn1.2.2.5.2.4.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUL" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUK" resolve="Sn1.2.2.5.2.4.5" />
+      <ref role="3VeSjP" node="1e9opmpdFUA" resolve="G1.2.2.5.2.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUN" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUM" resolve="G1.2.2.5.2.5" />
+      <ref role="3VeSjP" node="1e9opmpdFTW" resolve="G1.2.2.5.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUP" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUO" resolve="Sn1.2.2.5.2.5.1" />
+      <ref role="3VeSjP" node="1e9opmpdFUM" resolve="G1.2.2.5.2.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUR" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFUQ" resolve="Sn1.2.2.5.2.5.2" />
+      <ref role="3VeSjP" node="1e9opmpdFUM" resolve="G1.2.2.5.2.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUT" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFUM" resolve="G1.2.2.5.2.5" />
+      <ref role="3VeSjQ" node="1e9opmpdFUS" resolve="Sn1.2.2.5.2.5.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUV" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFUM" resolve="G1.2.2.5.2.5" />
+      <ref role="3VeSjQ" node="1e9opmpdFUU" resolve="Sn1.2.2.5.2.5.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUX" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFTW" resolve="G1.2.2.5.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFUW" resolve="G1.2.2.5.2.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFUZ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFUW" resolve="G1.2.2.5.2.6" />
+      <ref role="3VeSjQ" node="1e9opmpdFUY" resolve="Sn1.2.2.5.2.6.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFV1" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFUW" resolve="G1.2.2.5.2.6" />
+      <ref role="3VeSjQ" node="1e9opmpdFV0" resolve="Sn1.2.2.5.2.6.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFV3" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFV2" resolve="Sn1.2.2.5.2.6.3" />
+      <ref role="3VeSjP" node="1e9opmpdFUW" resolve="G1.2.2.5.2.6" />
+    </node>
+  </node>
+</model>
+

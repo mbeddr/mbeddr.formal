@@ -5,7 +5,8 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports />
   <registry>
@@ -68,10 +69,17 @@
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
       </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -113,9 +121,6 @@
       <node concept="3Tm1VV" id="407WgdX3EJA" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="407WgdX3Evd" role="1B3o_S" />
-    <node concept="NWlO9" id="407WgdX3ER2" role="lGtFl">
-      <property role="NWlVz" value="Keywords of the Promela language." />
-    </node>
     <node concept="Wx3nA" id="407WgdX3EVp" role="jymVt">
       <property role="TrG5h" value="promelaCIntegration" />
       <property role="3TUv4t" value="false" />
@@ -399,6 +404,13 @@
       <node concept="37vLTG" id="407WgdX3LTw" role="3clF46">
         <property role="TrG5h" value="str" />
         <node concept="17QB3L" id="407WgdX3LTv" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="1y75PbzycZH" role="lGtFl">
+      <node concept="TZ5HA" id="1y75PbzycZF" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75PbzycZG" role="1dT_Ay">
+          <property role="1dT_AB" value="Keywords of the Promela language." />
+        </node>
       </node>
     </node>
   </node>

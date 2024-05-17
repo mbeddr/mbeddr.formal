@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="1e9opmpfBBo">
+    <property role="TrG5h" value="extract_from_G1.2.2.6" />
+    <property role="3GE5qa" value="1_nominal_operation.1_2_SDV_design" />
+    <node concept="2vn7WC" id="1e9opmpdFV4" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.6" />
+      <node concept="19SGf9" id="1e9opmpdHnx" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSl" role="19SJt6">
+          <property role="19SUeA" value="System notifications provide acceptable&#10;functional performance in the defined&#10;ODD " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFV6" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.6.1" />
+      <node concept="19SGf9" id="1e9opmpdHny" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSm" role="19SJt6">
+          <property role="19SUeA" value="Notifications communicate a clear message&#10;or status " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFV8" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHnz" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSn" role="19SJt6">
+          <property role="19SUeA" value="Notification strategy / overview / architecture" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVa" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHn$" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSo" role="19SJt6">
+          <property role="19SUeA" value="Onboard visual notifications " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVc" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHn_" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSp" role="19SJt6">
+          <property role="19SUeA" value="Onboard audible notifications " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVe" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHnA" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSq" role="19SJt6">
+          <property role="19SUeA" value="Offboard visual notifications " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVg" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHnB" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSr" role="19SJt6">
+          <property role="19SUeA" value="Offboard audible notifications " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVi" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.1.6" />
+      <node concept="19SGf9" id="1e9opmpdHnC" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSs" role="19SJt6">
+          <property role="19SUeA" value="Mapping of all human safety notifications&#10;to self-driving system API " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFVk" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.6.2" />
+      <node concept="19SGf9" id="1e9opmpdHnD" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSt" role="19SJt6">
+          <property role="19SUeA" value="Notifications are suitably robust " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVm" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHnE" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSu" role="19SJt6">
+          <property role="19SUeA" value="Functional Safety methods for safety&#10;related notifications " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVo" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHnF" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSv" role="19SJt6">
+          <property role="19SUeA" value="Visual and audible notification methods&#10;for autonomy state changes " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVq" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHnG" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSw" role="19SJt6">
+          <property role="19SUeA" value="Functional testing of notification system" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVs" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHnH" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSx" role="19SJt6">
+          <property role="19SUeA" value="Stress testing of notification system" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFVu" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.6.3" />
+      <node concept="19SGf9" id="1e9opmpdHnI" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSy" role="19SJt6">
+          <property role="19SUeA" value="Notifications are suitable for the ODD" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVw" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHnJ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSz" role="19SJt6">
+          <property role="19SUeA" value="Notifications analyzed for ambient lighting" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVy" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHnK" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJS$" role="19SJt6">
+          <property role="19SUeA" value="Notifications analyzed for ambient sound" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFV$" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.2.6.4" />
+      <node concept="19SGf9" id="1e9opmpdHnL" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJS_" role="19SJt6">
+          <property role="19SUeA" value="Notifications are suitbly effective " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVA" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.4.1" />
+      <node concept="19SGf9" id="1e9opmpdHnM" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSA" role="19SJt6">
+          <property role="19SUeA" value="Anomaly resolution process " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVC" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.4.2" />
+      <node concept="19SGf9" id="1e9opmpdHnN" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSB" role="19SJt6">
+          <property role="19SUeA" value="Reported / observed anomalies " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFVE" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.2.6.4.3" />
+      <node concept="19SGf9" id="1e9opmpdHnO" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJSC" role="19SJt6">
+          <property role="19SUeA" value="Notifications analyzed for geographic&#10;and demographic comprehension " />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFV7" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFV4" resolve="G1.2.2.6" />
+      <ref role="3VeSjQ" node="1e9opmpdFV6" resolve="G1.2.2.6.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFV9" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFV6" resolve="G1.2.2.6.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFV8" resolve="Sn1.2.2.6.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVb" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFVa" resolve="Sn1.2.2.6.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdFV6" resolve="G1.2.2.6.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVd" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFVc" resolve="Sn1.2.2.6.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdFV6" resolve="G1.2.2.6.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVf" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFV6" resolve="G1.2.2.6.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFVe" resolve="Sn1.2.2.6.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVh" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFV6" resolve="G1.2.2.6.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFVg" resolve="Sn1.2.2.6.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVj" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFV6" resolve="G1.2.2.6.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFVi" resolve="Sn1.2.2.6.1.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVl" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFV4" resolve="G1.2.2.6" />
+      <ref role="3VeSjQ" node="1e9opmpdFVk" resolve="G1.2.2.6.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVn" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFVk" resolve="G1.2.2.6.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFVm" resolve="Sn1.2.2.6.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVp" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFVo" resolve="Sn1.2.2.6.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdFVk" resolve="G1.2.2.6.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVr" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFVq" resolve="Sn1.2.2.6.2.3" />
+      <ref role="3VeSjP" node="1e9opmpdFVk" resolve="G1.2.2.6.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVt" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFVs" resolve="Sn1.2.2.6.2.4" />
+      <ref role="3VeSjP" node="1e9opmpdFVk" resolve="G1.2.2.6.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVv" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFVu" resolve="G1.2.2.6.3" />
+      <ref role="3VeSjP" node="1e9opmpdFV4" resolve="G1.2.2.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVx" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFVu" resolve="G1.2.2.6.3" />
+      <ref role="3VeSjQ" node="1e9opmpdFVw" resolve="Sn1.2.2.6.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVz" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFVy" resolve="Sn1.2.2.6.3.2" />
+      <ref role="3VeSjP" node="1e9opmpdFVu" resolve="G1.2.2.6.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFV_" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFV4" resolve="G1.2.2.6" />
+      <ref role="3VeSjQ" node="1e9opmpdFV$" resolve="G1.2.2.6.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVB" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFV$" resolve="G1.2.2.6.4" />
+      <ref role="3VeSjQ" node="1e9opmpdFVA" resolve="Sn1.2.2.6.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVD" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFVC" resolve="Sn1.2.2.6.4.2" />
+      <ref role="3VeSjP" node="1e9opmpdFV$" resolve="G1.2.2.6.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFVF" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFV$" resolve="G1.2.2.6.4" />
+      <ref role="3VeSjQ" node="1e9opmpdFVE" resolve="Sn1.2.2.6.4.3" />
+    </node>
+  </node>
+</model>
+

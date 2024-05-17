@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:430ed0bb-2a65-4f5b-a20f-e9037ef3e5fd(_100_examples._030_adas._020_automated_evasion_maneuver._020_requirements)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="u9yl" ref="r:5420edf2-2eb2-443a-8588-2a7bd3924a5e(_100_examples._030_adas._020_automated_evasion_maneuver._000_hara)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
+      <concept id="2808252663735239587" name="com.mbeddr.formal.safety.stamp.structure.ReferenceableActionDescriptionRef" flags="ng" index="rwM_8">
+        <reference id="2808252663735239588" name="action" index="rwM_f" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl">
+        <child id="7127433683365164021" name="subRequirements" index="1VMWzp" />
+      </concept>
+      <concept id="3226630706269625197" name="com.mbeddr.formal.req.base.structure.EmptyRequirement" flags="ng" index="0lH3_" />
+      <concept id="675797132014971920" name="com.mbeddr.formal.req.base.structure.RefinementAttribute" flags="ng" index="KAwnT">
+        <child id="675797132015040231" name="referencedRequirements" index="KALWe" />
+      </concept>
+      <concept id="675797132014971924" name="com.mbeddr.formal.req.base.structure.AbstractRequirementRef" flags="ng" index="KAwnX">
+        <reference id="675797132014971925" name="req" index="KAwnW" />
+      </concept>
+      <concept id="4908298719893728799" name="com.mbeddr.formal.req.base.structure.EmptySpec" flags="ng" index="1QQeAL" />
+      <concept id="4908298719893728634" name="com.mbeddr.formal.req.base.structure.Functional" flags="ng" index="1QQeFk" />
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706270020326" name="createdBy" index="0ke_I" />
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="6025137760892668610" name="attributes" index="2FklKs" />
+        <child id="4908298719893728774" name="specs" index="1QQeAC" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
+    <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
+      <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.FunctionalSafetyReqKind" flags="ng" index="2iDXIW">
+        <child id="7998766141987827641" name="hazards" index="DABNk" />
+      </concept>
+      <concept id="4640341350605492417" name="com.mbeddr.formal.safety.req.structure.UCARefinementAttribute" flags="ng" index="J05Ou">
+        <child id="2808252663735239662" name="ucas" index="rwM$5" />
+      </concept>
+    </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
+        <reference id="7998766141987827622" name="hazard" index="DABNb" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1QQeGf" id="5tEenuYOMf0">
+    <property role="TrG5h" value="_010_FSR_activation" />
+    <node concept="0lhDl" id="41_NtXJuH5h" role="1QQeBF">
+      <property role="0lsPA" value="FR_CEM_ACTIVATION_CONDITION" />
+      <property role="0ke_I" value="dan" />
+      <node concept="19SGf9" id="41_NtXJuH5i" role="1QQeG9">
+        <node concept="19SUe$" id="41_NtXJuH5j" role="19SJt6">
+          <property role="19SUeA" value="Convenience evasion manneuver (CEM) shall activate timely when traveling on highway." />
+        </node>
+      </node>
+      <node concept="1QQeFk" id="41_NtXJuH6r" role="0nOlf" />
+      <node concept="KAwnT" id="41_NtXJuHas" role="2FklKs">
+        <node concept="KAwnX" id="41_NtXJuHav" role="KALWe">
+          <ref role="KAwnW" node="_wUu$TZD60" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="5tEenuYOMf2" role="1QQeBF">
+      <property role="0lsPA" value="FSR_CEM_ACTIVATION_UNINTENDED" />
+      <property role="0ke_I" value="dan" />
+      <node concept="19SGf9" id="5tEenuYOMf4" role="1QQeG9">
+        <node concept="19SUe$" id="_wUu$TYcYe" role="19SJt6">
+          <property role="19SUeA" value="Convenience evasion manneuver (CEM) shall not activate when not intended" />
+        </node>
+      </node>
+      <node concept="2iDXIW" id="_wUu$TYcY7" role="0nOlf">
+        <node concept="DABN8" id="_wUu$TYcY9" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
+        </node>
+        <node concept="DABN8" id="_wUu$TYcYb" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
+        </node>
+        <node concept="DABN8" id="_wUu$TYcYt" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="_wUu$TYcYh" role="1QQeBF">
+      <property role="0lsPA" value="FSR_CEM_ACTIVATION_UNINTENDED_01" />
+      <property role="0ke_I" value="dan" />
+      <node concept="2iDXIW" id="_wUu$TYcYq" role="0nOlf">
+        <node concept="DABN8" id="41_NtXJpd36" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$U7zXF" resolve="Collision with another vehicle" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="_wUu$TYcYj" role="1QQeG9">
+        <node concept="19SUe$" id="_wUu$TYcYy" role="19SJt6">
+          <property role="19SUeA" value="CEM shall not activate when ADAS is deactivated" />
+        </node>
+      </node>
+      <node concept="KAwnT" id="41_NtXJu_57" role="2FklKs">
+        <node concept="KAwnX" id="41_NtXJu_5a" role="KALWe">
+          <ref role="KAwnW" node="5tEenuYOMf2" />
+        </node>
+      </node>
+      <node concept="J05Ou" id="2rSUIGXvl7a" role="2FklKs">
+        <node concept="rwM_8" id="2rSUIGXvl7m" role="rwM$5">
+          <ref role="rwM_f" to="u9yl:41_NtXJu_8P" resolve="UCA_DRIVER_ACTIVATE_01" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="_wUu$TYcYz" role="1QQeBF">
+      <property role="0lsPA" value="FSR_CEM_ACTIVATION_UNINTENDED_02" />
+      <property role="0ke_I" value="dan" />
+      <node concept="0lhDl" id="_wUu$TYcYE" role="1VMWzp">
+        <property role="0lsPA" value="FSR_CEM_ACTIVATION_UNINTENDED_ODD_01" />
+        <property role="0ke_I" value="dan" />
+        <node concept="2iDXIW" id="_wUu$TYcYI" role="0nOlf">
+          <node concept="DABN8" id="_wUu$TYcYK" role="DABNk">
+            <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
+          </node>
+        </node>
+        <node concept="19SGf9" id="_wUu$TYcYG" role="1QQeG9">
+          <node concept="19SUe$" id="_wUu$TYcYH" role="19SJt6">
+            <property role="19SUeA" value="CEM shall not activate when Ego is driving at very high speed" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="_wUu$TY_g8" role="1VMWzp">
+        <property role="0lsPA" value="FSR_CEM_ACTIVATION_UNINTENDED_ODD_02" />
+        <property role="0ke_I" value="dan" />
+        <node concept="2iDXIW" id="_wUu$TY_gc" role="0nOlf">
+          <node concept="DABN8" id="_wUu$TY_ge" role="DABNk">
+            <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
+          </node>
+          <node concept="DABN8" id="_wUu$TY_gg" role="DABNk">
+            <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
+          </node>
+          <node concept="DABN8" id="_wUu$TY_gj" role="DABNk">
+            <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
+          </node>
+        </node>
+        <node concept="19SGf9" id="_wUu$TY_ga" role="1QQeG9">
+          <node concept="19SUe$" id="_wUu$TY_gb" role="19SJt6">
+            <property role="19SUeA" value="CEM shall not activate when perception performance is too low" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="41_NtXJpd2C" role="1VMWzp">
+        <property role="0lsPA" value="FSR_CEM_ACTIVATION_UNINTENDED_ODD_03" />
+        <property role="0ke_I" value="dan" />
+        <node concept="2iDXIW" id="41_NtXJpd2E" role="0nOlf">
+          <node concept="DABN8" id="41_NtXJpd2F" role="DABNk">
+            <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
+          </node>
+          <node concept="DABN8" id="41_NtXJpd2G" role="DABNk">
+            <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
+          </node>
+          <node concept="DABN8" id="41_NtXJpd2H" role="DABNk">
+            <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
+          </node>
+        </node>
+        <node concept="19SGf9" id="41_NtXJpd2I" role="1QQeG9">
+          <node concept="19SUe$" id="41_NtXJpd2J" role="19SJt6">
+            <property role="19SUeA" value="CEM shall not activate when road layout does not allow it" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeAL" id="_wUu$TYcYD" role="1QQeAC" />
+      <node concept="2iDXIW" id="_wUu$TYcYB" role="0nOlf">
+        <node concept="DABN8" id="41_NtXJpd38" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$U7zXF" resolve="Collision with another vehicle" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="_wUu$TYcY_" role="1QQeG9">
+        <node concept="19SUe$" id="_wUu$TYcYA" role="19SJt6">
+          <property role="19SUeA" value="CEM shall not activate when the ODD does not allow a safe maneuver" />
+        </node>
+      </node>
+      <node concept="KAwnT" id="41_NtXJu_6J" role="2FklKs">
+        <node concept="KAwnX" id="41_NtXJu_6M" role="KALWe">
+          <ref role="KAwnW" node="5tEenuYOMf2" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="_wUu$TY_gq" role="1QQeBF">
+      <property role="0lsPA" value="FSR_CEM_ACTIVATION_UNINTENDED_03" />
+      <property role="0ke_I" value="dan" />
+      <node concept="2iDXIW" id="_wUu$TY_gu" role="0nOlf">
+        <node concept="DABN8" id="_wUu$TZDcV" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
+        </node>
+        <node concept="DABN8" id="_wUu$TZDcY" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
+        </node>
+        <node concept="DABN8" id="_wUu$TZDcN" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
+        </node>
+        <node concept="DABN8" id="_wUu$TZDcP" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYGOc" resolve="Collision at high speed with VRU" />
+        </node>
+        <node concept="DABN8" id="_wUu$TZDcS" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYGOm" resolve="Collision at low speed with VRU" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="_wUu$TY_gs" role="1QQeG9">
+        <node concept="19SUe$" id="41_NtXJu_dr" role="19SJt6">
+          <property role="19SUeA" value="CEM shall not activate when the road conditions do not allow sufficient safety margins." />
+        </node>
+      </node>
+      <node concept="KAwnT" id="41_NtXJu_7L" role="2FklKs">
+        <node concept="KAwnX" id="41_NtXJu_7O" role="KALWe">
+          <ref role="KAwnW" node="5tEenuYOMf2" />
+        </node>
+        <node concept="KAwnX" id="41_NtXJu_eK" role="KALWe">
+          <ref role="KAwnW" node="_wUu$TZD65" />
+        </node>
+        <node concept="KAwnX" id="41_NtXJu_eS" role="KALWe">
+          <ref role="KAwnW" node="41_NtXJpd2C" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="41_NtXJvtUH" role="1QQeBF">
+      <property role="0lsPA" value="FSR_CEM_ACTIVATION_UNINTENDED_04" />
+      <property role="0ke_I" value="dan" />
+      <node concept="2iDXIW" id="41_NtXJvtUI" role="0nOlf">
+        <node concept="DABN8" id="41_NtXJvtUJ" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYbEE" resolve="Collision with another vehicle" />
+        </node>
+        <node concept="DABN8" id="41_NtXJvtUK" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYbEK" resolve="Collision with another vehicle" />
+        </node>
+        <node concept="DABN8" id="41_NtXJvtUL" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYbF9" resolve="Collision with another vehicle" />
+        </node>
+        <node concept="DABN8" id="41_NtXJvtUM" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYGOc" resolve="Collision at high speed with VRU" />
+        </node>
+        <node concept="DABN8" id="41_NtXJvtUN" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$TYGOm" resolve="Collision at low speed with VRU" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="41_NtXJvtUO" role="1QQeG9">
+        <node concept="19SUe$" id="41_NtXJvtUP" role="19SJt6">
+          <property role="19SUeA" value="CEM shall not activate when another higher priority function is performed." />
+        </node>
+      </node>
+      <node concept="KAwnT" id="41_NtXJvtUQ" role="2FklKs">
+        <node concept="KAwnX" id="41_NtXJvtUR" role="KALWe">
+          <ref role="KAwnW" node="5tEenuYOMf2" />
+        </node>
+        <node concept="KAwnX" id="41_NtXJvtUS" role="KALWe">
+          <ref role="KAwnW" node="_wUu$TZD65" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="41_NtXJu_5m" role="1QQeBF" />
+  </node>
+</model>
+

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:541259e0-6152-4850-9705-78b0875c4fd8(_100_examples._030_adas._020_automated_evasion_maneuver._010_scenarios)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="3460ac43-6f59-4f61-b134-9fa2f799c2d3" name="com.mbeddr.formal.req.scenarios">
+      <concept id="4640341350605631187" name="com.mbeddr.formal.req.scenarios.structure.ActorRef" flags="ng" index="J0Acc">
+        <reference id="4640341350605631188" name="actor" index="J0Acb" />
+      </concept>
+      <concept id="4640341350605606226" name="com.mbeddr.formal.req.scenarios.structure.ScenarioDefinition" flags="ng" index="J0C2d">
+        <child id="4640341350605631184" name="involvedActors" index="J0Acf" />
+        <child id="4640341350605608866" name="description" index="J0DDX" />
+        <child id="4640341350605850295" name="context" index="J3GHC" />
+      </concept>
+      <concept id="4640341350605606225" name="com.mbeddr.formal.req.scenarios.structure.ScenariosCatalogue" flags="ng" index="J0C2e">
+        <child id="4640341350605608936" name="scenarios" index="J0DCR" />
+      </concept>
+      <concept id="4640341350605608869" name="com.mbeddr.formal.req.scenarios.structure.EmptyLine" flags="ng" index="J0DDU" />
+      <concept id="4640341350605886171" name="com.mbeddr.formal.req.scenarios.structure.ActorRefWord" flags="ng" index="J3_W4">
+        <child id="4640341350605886176" name="actorRef" index="J3_WZ" />
+      </concept>
+      <concept id="4640341350605850299" name="com.mbeddr.formal.req.scenarios.structure.ContextRef" flags="ng" index="J3GH$">
+        <reference id="4640341350605850300" name="context" index="J3GHz" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="815900398743272760" name="com.mbeddr.formal.req.base.structure.Image" flags="ng" index="3OoTgI">
+        <property id="815900398743502458" name="scale" index="3OpxtG" />
+        <child id="815900398743284144" name="imageFile" index="3OoW2A" />
+      </concept>
+    </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+      </concept>
+      <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="J0C2e" id="41_NtXJqlOd">
+    <property role="TrG5h" value="_030_cem_highway_scenarios" />
+    <node concept="J0C2d" id="41_NtXJqTaU" role="J0DCR">
+      <property role="TrG5h" value="SCN_CEM_HW_01" />
+      <node concept="19SGf9" id="41_NtXJqTaW" role="J0DDX">
+        <node concept="19SUe$" id="41_NtXJr1pC" role="19SJt6" />
+        <node concept="J3_W4" id="41_NtXJr1pA" role="19SJt6">
+          <node concept="J0Acc" id="41_NtXJr1pG" role="J3_WZ">
+            <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="41_NtXJr1pB" role="19SJt6">
+          <property role="19SUeA" value=" (red car) drives on empty highway, in straight line.&#10;Note: this is arguably the simplest scenario, if EGO stays in lane nothing bad will happen&#10;&#10;" />
+        </node>
+        <node concept="3OoTgI" id="41_NtXJr1pI" role="19SJt6">
+          <property role="3OpxtG" value="50" />
+          <node concept="3NXOOs" id="41_NtXJr1pQ" role="3OoW2A">
+            <property role="3N1Lgt" value="images/scn_hw_01.PNG" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="41_NtXJr1pJ" role="19SJt6" />
+      </node>
+      <node concept="J0Acc" id="41_NtXJqTbn" role="J0Acf">
+        <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
+      </node>
+      <node concept="J3GH$" id="41_NtXJqTbp" role="J3GHC">
+        <ref role="J3GHz" node="41_NtXJqg0w" resolve="Highway Straight Line" />
+      </node>
+    </node>
+    <node concept="J0DDU" id="41_NtXJr1_c" role="J0DCR" />
+    <node concept="J0C2d" id="41_NtXJriry" role="J0DCR">
+      <property role="TrG5h" value="SCN_CEM_HW_02" />
+      <node concept="19SGf9" id="41_NtXJrirz" role="J0DDX">
+        <node concept="19SUe$" id="41_NtXJrir$" role="19SJt6" />
+        <node concept="J3_W4" id="41_NtXJrir_" role="19SJt6">
+          <node concept="J0Acc" id="41_NtXJrirA" role="J3_WZ">
+            <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="41_NtXJrirB" role="19SJt6">
+          <property role="19SUeA" value=" drives on highway on the rightmost lane, obstacle is on the left of EGO, parallel to the obstacle &#10;there is an emergency packed car (broken) - " />
+        </node>
+        <node concept="J3_W4" id="41_NtXJrirC" role="19SJt6">
+          <node concept="J0Acc" id="41_NtXJrirD" role="J3_WZ">
+            <ref role="J0Acb" node="41_NtXJr1_A" resolve="Stationary Vehicle" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="41_NtXJrirE" role="19SJt6">
+          <property role="19SUeA" value="&#10;Variation: people might walk around the parked car.&#10;&#10;" />
+        </node>
+        <node concept="3OoTgI" id="41_NtXJrirF" role="19SJt6">
+          <property role="3OpxtG" value="50" />
+          <node concept="3NXOOs" id="41_NtXJrirG" role="3OoW2A">
+            <property role="3N1Lgt" value="images/scn_hw_02.PNG" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="41_NtXJrirH" role="19SJt6" />
+      </node>
+      <node concept="J0Acc" id="41_NtXJrirI" role="J0Acf">
+        <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
+      </node>
+      <node concept="J0Acc" id="41_NtXJrirJ" role="J0Acf">
+        <ref role="J0Acb" node="41_NtXJr1_A" resolve="Stationary Vehicle" />
+      </node>
+      <node concept="J3GH$" id="41_NtXJrirK" role="J3GHC">
+        <ref role="J3GHz" node="41_NtXJqg0w" resolve="Highway Straight Line" />
+      </node>
+    </node>
+    <node concept="J0C2d" id="41_NtXJrisY" role="J0DCR">
+      <property role="TrG5h" value="SCN_CEM_HW_03" />
+      <node concept="19SGf9" id="41_NtXJrisZ" role="J0DDX">
+        <node concept="19SUe$" id="41_NtXJrit0" role="19SJt6" />
+        <node concept="J3_W4" id="41_NtXJrit1" role="19SJt6">
+          <node concept="J0Acc" id="41_NtXJrit2" role="J3_WZ">
+            <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="41_NtXJrit3" role="19SJt6">
+          <property role="19SUeA" value=" is driving on the middle-lane, the obstacle (red dot) is on right side of ego, on the left &#10;lane Ego is taken over by a " />
+        </node>
+        <node concept="J3_W4" id="41_NtXJriuH" role="19SJt6">
+          <node concept="J0Acc" id="41_NtXJriuS" role="J3_WZ">
+            <ref role="J0Acb" node="41_NtXJqfu1" resolve="Long Vehicle" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="41_NtXJriuI" role="19SJt6">
+          <property role="19SUeA" value="&#10;Variation: the truck is changing the lane as well (from right to left)&#10;&#10;" />
+        </node>
+        <node concept="3OoTgI" id="41_NtXJrit7" role="19SJt6">
+          <property role="3OpxtG" value="50" />
+          <node concept="3NXOOs" id="41_NtXJrit8" role="3OoW2A">
+            <property role="3N1Lgt" value="images/scn_hw_03.PNG" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="41_NtXJrit9" role="19SJt6" />
+      </node>
+      <node concept="J0Acc" id="41_NtXJrita" role="J0Acf">
+        <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
+      </node>
+      <node concept="J0Acc" id="41_NtXJriuU" role="J0Acf">
+        <ref role="J0Acb" node="41_NtXJqfu1" resolve="Long Vehicle" />
+      </node>
+      <node concept="J3GH$" id="41_NtXJritc" role="J3GHC">
+        <ref role="J3GHz" node="41_NtXJqg0w" resolve="Highway Straight Line" />
+      </node>
+    </node>
+    <node concept="J0C2d" id="41_NtXJriuY" role="J0DCR">
+      <property role="TrG5h" value="SCN_CEM_HW_04" />
+      <node concept="19SGf9" id="41_NtXJriuZ" role="J0DDX">
+        <node concept="19SUe$" id="41_NtXJriv0" role="19SJt6" />
+        <node concept="J3_W4" id="41_NtXJriv1" role="19SJt6">
+          <node concept="J0Acc" id="41_NtXJriv2" role="J3_WZ">
+            <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="41_NtXJriv3" role="19SJt6">
+          <property role="19SUeA" value=" is driving on the middle-lane, the obstacle (red dot) is on left side, &#10;on the right lane there is a big (wide) truck&#10;&#10;Variation: a) the truck is changing the lane as well (from right to left)&#10;&#9;    b) the obstacle is located at different positions such that Ego has less space&#10;&#10;&#10;" />
+        </node>
+        <node concept="3OoTgI" id="41_NtXJriv7" role="19SJt6">
+          <property role="3OpxtG" value="30" />
+          <node concept="3NXOOs" id="41_NtXJriv8" role="3OoW2A">
+            <property role="3N1Lgt" value="images/scn_hw_04.PNG" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="41_NtXJriv9" role="19SJt6" />
+      </node>
+      <node concept="J0Acc" id="41_NtXJriva" role="J0Acf">
+        <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
+      </node>
+      <node concept="J0Acc" id="41_NtXJrivb" role="J0Acf">
+        <ref role="J0Acb" node="41_NtXJqfu1" resolve="Long Vehicle" />
+      </node>
+      <node concept="J3GH$" id="41_NtXJrivc" role="J3GHC">
+        <ref role="J3GHz" node="41_NtXJqg0w" resolve="Highway Straight Line" />
+      </node>
+    </node>
+    <node concept="J0C2d" id="41_NtXJriwe" role="J0DCR">
+      <property role="TrG5h" value="SCN_CEM_HW_05" />
+      <node concept="19SGf9" id="41_NtXJriwf" role="J0DDX">
+        <node concept="19SUe$" id="41_NtXJriwg" role="19SJt6" />
+        <node concept="J3_W4" id="41_NtXJriwh" role="19SJt6">
+          <node concept="J0Acc" id="41_NtXJriwi" role="J3_WZ">
+            <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="41_NtXJriwj" role="19SJt6">
+          <property role="19SUeA" value=" is driving on highway with curves, on the right lane, object is on the left, &#10;on the right there is another vehicle driving towards the interior of the curve&#10;Variation: the blue vehicle takes over Ego and joins its lane at the point where obstacle is located&#10;&#10;" />
+        </node>
+        <node concept="3OoTgI" id="41_NtXJriwk" role="19SJt6">
+          <property role="3OpxtG" value="30" />
+          <node concept="3NXOOs" id="41_NtXJriwl" role="3OoW2A">
+            <property role="3N1Lgt" value="images/scn_hw_05.PNG" />
+          </node>
+        </node>
+        <node concept="19SUe$" id="41_NtXJriwm" role="19SJt6" />
+      </node>
+      <node concept="J0Acc" id="41_NtXJriwn" role="J0Acf">
+        <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
+      </node>
+      <node concept="J0Acc" id="41_NtXJriwo" role="J0Acf">
+        <ref role="J0Acb" node="41_NtXJqfu1" resolve="Long Vehicle" />
+      </node>
+      <node concept="J3GH$" id="41_NtXJrixD" role="J3GHC">
+        <ref role="J3GHz" node="41_NtXJrixt" resolve="Highway with Curve" />
+      </node>
+    </node>
+    <node concept="J0DDU" id="41_NtXJr1$e" role="J0DCR" />
+  </node>
+</model>
+

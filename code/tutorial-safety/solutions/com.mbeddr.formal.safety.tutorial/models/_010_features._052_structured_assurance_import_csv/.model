@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:a96ac242-3a3d-4234-b2ec-69f62786c183(_010_features._052_structured_assurance_import_csv)" content="header">
+  <persistence version="9" />
+  <languages>
+    <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
+    <devkit ref="7466bc49-e775-4df7-a9f3-e383173b2eee(fasten.safety.gsn.ext)" />
+  </languages>
+  <imports />
+</model>
+

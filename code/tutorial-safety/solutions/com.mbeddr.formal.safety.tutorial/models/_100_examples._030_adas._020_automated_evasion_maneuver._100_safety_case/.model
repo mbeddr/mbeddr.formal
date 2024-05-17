@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:71969134-b79e-493c-83c4-b334a6985db2(_100_examples._030_adas._020_automated_evasion_maneuver._100_safety_case)" content="header">
+  <persistence version="9" />
+  <languages>
+    <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
+    <devkit ref="3970a543-1808-4b9f-a378-71f15d96d819(fasten.safety.hara)" />
+    <devkit ref="7466bc49-e775-4df7-a9f3-e383173b2eee(fasten.safety.gsn.ext)" />
+    <devkit ref="5e597493-feae-41d8-b052-3b0a41743991(fasten.safety.gsn.patterns)" />
+  </languages>
+  <imports>
+    <import index="u9yl" ref="r:5420edf2-2eb2-443a-8588-2a7bd3924a5e(_100_examples._030_adas._020_automated_evasion_maneuver._000_hara)" />
+    <import index="rd3y" ref="r:430ed0bb-2a65-4f5b-a20f-e9037ef3e5fd(_100_examples._030_adas._020_automated_evasion_maneuver._020_requirements)" />
+  </imports>
+</model>
+

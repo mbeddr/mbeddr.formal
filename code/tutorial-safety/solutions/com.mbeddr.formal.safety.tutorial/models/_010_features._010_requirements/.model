@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:03da4936-751b-48d2-80dc-ab1f2a2cdd5b(_010_features._010_requirements)" content="header">
+  <persistence version="9" />
+  <languages>
+    <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
+    <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
+    <devkit ref="34367ce7-2993-4c7e-896e-c299a2abf50d(fasten.requirements.formal)" />
+  </languages>
+  <imports />
+</model>
+
