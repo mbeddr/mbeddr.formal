@@ -424,7 +424,9 @@
                   </node>
                   <node concept="liA8E" id="y1G8y68Dl3" role="2OqNvi">
                     <ref role="37wK5l" to="t6h5:~Method.invoke(java.lang.Object,java.lang.Object...)" resolve="invoke" />
-                    <node concept="10Nm6u" id="y1G8y68Dl4" role="37wK5m" />
+                    <node concept="37vLTw" id="4VhhwF2svJr" role="37wK5m">
+                      <ref role="3cqZAo" node="4VhhwF2suGK" resolve="repo" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -468,6 +470,12 @@
         <property role="TrG5h" value="mc" />
         <node concept="3Tqbb2" id="y1G8y6aeYx" role="1tU5fm">
           <ref role="ehGHo" to="9br2:1vid6hjrqXf" resolve="ModelCheck" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4VhhwF2suGK" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="4VhhwF2svua" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>
