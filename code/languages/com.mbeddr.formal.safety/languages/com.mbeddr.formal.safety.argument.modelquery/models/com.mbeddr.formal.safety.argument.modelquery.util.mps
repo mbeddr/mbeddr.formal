@@ -110,6 +110,9 @@
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
@@ -382,6 +385,9 @@
                     <ref role="37wK5l" to="wyt6:~Class.getMethod(java.lang.String,java.lang.Class...)" resolve="getMethod" />
                     <node concept="37vLTw" id="y1G8y68BB1" role="37wK5m">
                       <ref role="3cqZAo" node="y1G8y68BAY" resolve="methodName" />
+                    </node>
+                    <node concept="3VsKOn" id="4VhhwF2sZdU" role="37wK5m">
+                      <ref role="3VsUkX" to="lui2:~SRepository" resolve="SRepository" />
                     </node>
                   </node>
                 </node>
