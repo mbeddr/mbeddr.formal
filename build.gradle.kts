@@ -38,7 +38,7 @@ logger.info("Repository username: {}", nexusUsername)
 val major = "2022"
 val minor = "2"
 
-val mpsVersion ="2022.2.2"
+val mpsVersion ="2022.2.3"
 
 // Dependency versions
 val platformVersion = "$major.$minor.+"
