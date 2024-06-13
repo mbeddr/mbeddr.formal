@@ -7243,7 +7243,7 @@
           <property role="36xRFa" value="10.0" />
           <property role="36xR_Q" value="10.0" />
           <property role="36xRNd" value="20.0" />
-          <property role="36xRuY" value="3biyEnOlw4v/NONE" />
+          <property role="36xRuY" value="3biyEnOlw4F/PREFER_NODES" />
           <property role="36x9An" value="1.0" />
           <property role="36x9Le" value="0.0" />
           <property role="36x91m" value="0.0" />
@@ -7273,14 +7273,14 @@
           <property role="36x7Qz" value="40.0" />
           <property role="36xo9k" value="10.0" />
           <property role="36xorZ" value="40.0" />
-          <property role="36xp_h" value="10.0" />
+          <property role="36xp_h" value="5.0" />
           <property role="36xpmX" value="1" />
           <property role="36xqNs" value="true" />
           <property role="36xq2V" value="2.0" />
           <property role="36xqsf" value="0.2" />
           <property role="36xr9p" value="7" />
           <property role="31dVPH" value="1.414" />
-          <property role="36KEwQ" value="150.0" />
+          <property role="36KEwQ" value="15.0" />
           <property role="36KE85" value="qwNnoEIHRM/HIERARCHICAL_NODE" />
           <property role="31dWPW" value="1.0" />
           <property role="36xsye" value="4" />
