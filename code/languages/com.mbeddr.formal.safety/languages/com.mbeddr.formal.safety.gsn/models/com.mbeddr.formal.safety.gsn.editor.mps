@@ -625,10 +625,12 @@
         <property id="3662141892379204315" name="maxNodePromotionIterations" index="36x51Y" />
         <property id="3662141892379206070" name="mergeHierarchyCrossingEdges" index="36x6Gj" />
         <property id="3662141892379207456" name="msdFreedom" index="36x6Q5" />
+        <property id="3662141892379213488" name="nodePlacementStrategy" index="36x7gl" />
         <property id="3662141892379211526" name="nodeNodeBetweenLayersSpacing" index="36x7Qz" />
         <property id="3662141892379155187" name="crossingCounterPortInfluence" index="36x91m" />
         <property id="3662141892379153202" name="correctionFactorForWrapping" index="36x9An" />
         <property id="3662141892379154155" name="crossingCounterNodeInfluence" index="36x9Le" />
+        <property id="3662141892379160447" name="direction" index="36xanq" />
         <property id="3662141892379162028" name="multiEdgeDistancePenalty" index="36xbW9" />
         <property id="3662141892379167712" name="edgeNodeBetweenLayersSpacing" index="36xc55" />
         <property id="3662141892379166982" name="edgeLabelSpacing" index="36xcez" />
@@ -646,6 +648,7 @@
         <property id="3662141892379225514" name="sloppySplineLayerSpacingFactor" index="36xqsf" />
         <property id="3662141892379223673" name="separateConnectedComponents" index="36xqNs" />
         <property id="3662141892379228412" name="thoroughness" index="36xr9p" />
+        <property id="3662141892379226684" name="spacingBaseValue" index="36xryp" />
         <property id="3662141892379230763" name="upperBoundOnWidthMinWidthLayerer" index="36xsye" />
         <property id="3662141892379231963" name="upperLayerEstimationScalingFactorMinWidthLayerer" index="36xsLY" />
         <property id="3662141892379238267" name="verticalSpacingBetweenLabelAndPort" index="36xtnu" />
@@ -655,6 +658,7 @@
         <property id="3662141892379145171" name="commentNodeSpacing" index="36xR_Q" />
         <property id="3662141892379144303" name="commentCommentSpacing" index="36xRFa" />
         <property id="3662141892379145832" name="componentsSpacing" index="36xRNd" />
+        <property id="2064429317495021368" name="subdiagramDirection" index="3p_KMY" />
         <child id="3662141892379210077" name="nodeLabelPadding" index="36x7JS" />
         <child id="3662141892379152132" name="contentAlignment" index="36x8mx" />
         <child id="3662141892379217652" name="padding" index="36xohh" />
@@ -2912,17 +2916,17 @@
           <property role="36xQCC" value="1.6" />
           <property role="36xRFa" value="10.0" />
           <property role="36xR_Q" value="10.0" />
-          <property role="36xRNd" value="20.0" />
+          <property role="36xRNd" value="40.0" />
           <property role="36xRuY" value="3biyEnOlw4v/NONE" />
           <property role="36x9An" value="1.0" />
           <property role="36x9Le" value="0.0" />
           <property role="36x91m" value="0.0" />
           <property role="36xbW9" value="2.0" />
-          <property role="36xcDA" value="10.0" />
+          <property role="36xcDA" value="40.0" />
           <property role="36xcez" value="2.0" />
-          <property role="36xc55" value="10.0" />
-          <property role="36xdF$" value="10.0" />
-          <property role="36xddO" value="10.0" />
+          <property role="36xc55" value="20.0" />
+          <property role="36xdF$" value="30.0" />
+          <property role="36xddO" value="20.0" />
           <property role="36xdqO" value="1.0" />
           <property role="36xfKE" value="40" />
           <property role="36xfqn" value="3biyEnOlBXf/TWO_SIDED" />
@@ -2940,9 +2944,9 @@
           <property role="36x51Y" value="0" />
           <property role="36x6Gj" value="true" />
           <property role="36x6Q5" value="1" />
-          <property role="36x7Qz" value="20.0" />
+          <property role="36x7Qz" value="40.0" />
           <property role="36xo9k" value="10.0" />
-          <property role="36xorZ" value="20.0" />
+          <property role="36xorZ" value="40.0" />
           <property role="36xp_h" value="10.0" />
           <property role="36xpmX" value="1" />
           <property role="36xqNs" value="true" />
@@ -2951,11 +2955,15 @@
           <property role="36xr9p" value="7" />
           <property role="31dVPH" value="1.414" />
           <property role="36KEwQ" value="150.0" />
-          <property role="36KE85" value="qwNnoEIHRM/HIERARCHICAL_NODE" />
+          <property role="36KE85" value="qwNnoEIHRQ/ROOT_NODE" />
           <property role="31dWPW" value="1.0" />
           <property role="36xsye" value="4" />
           <property role="36xsLY" value="2" />
           <property role="36xtnu" value="1.0" />
+          <property role="36xryp" value="40.0" />
+          <property role="36x7gl" value="3biyEnOlKd8/NETWORK_SIMPLEX" />
+          <property role="3p_KMY" value="6Bd7VwqYQBY/DOWN" />
+          <property role="36xanq" value="6Bd7VwqYQBY/DOWN" />
           <node concept="36xZl7" id="5RDzpIVUtj2" role="36xZ2x">
             <property role="36xZl6" value="0.0" />
             <property role="36xZl1" value="0.0" />
