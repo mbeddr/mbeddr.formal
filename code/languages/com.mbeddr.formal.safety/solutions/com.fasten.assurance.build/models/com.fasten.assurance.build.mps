@@ -7263,6 +7263,21 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="6odNb$oaYkm" role="1l3spd">
+      <property role="TrG5h" value="dependencies.mpsqa" />
+      <node concept="398BVA" id="6odNb$oaYkn" role="398pKh">
+        <ref role="398BVh" node="6hyv0iVPmt9" resolve="mbeddr.formal.home" />
+        <node concept="2Ry0Ak" id="6odNb$oaYko" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="6odNb$oaYkp" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+            <node concept="2Ry0Ak" id="6odNb$oaYkq" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.allInOne" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2kB4xC" id="6hyv0iVPmti" role="1l3spd">
       <property role="TrG5h" value="version" />
       <node concept="aVJcg" id="6hyv0iVPmtC" role="aVJcv">
@@ -7571,6 +7586,12 @@
         <ref role="398BVh" node="6hyv0iVPmta" resolve="mps.home" />
       </node>
     </node>
+    <node concept="2sgV4H" id="6odNb$oaYlk" role="1l3spa">
+      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
+      <node concept="398BVA" id="6odNb$oaYll" role="2JcizS">
+        <ref role="398BVh" node="6odNb$oaYkm" resolve="dependencies.mpsqa" />
+      </node>
+    </node>
     <node concept="2sgV4H" id="6hyv0iVPmto" role="1l3spa">
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="6hyv0iVPmtW" role="2JcizS">
@@ -7826,6 +7847,9 @@
             </node>
           </node>
           <node concept="398223" id="6hyv0iVPmv3" role="39821P">
+            <node concept="3ygNvl" id="6odNb$oaYpX" role="39821P">
+              <ref role="3ygNvj" to="2tou:7C9PHv6FBIN" />
+            </node>
             <node concept="3ygNvl" id="hxRFPVRfSc" role="39821P">
               <ref role="3ygNvj" to="90a9:7szUFELHiFQ" resolve="de.itemis.mps.editor.widgets" />
             </node>
