@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="04d81d12-7048-4552-9a53-86a271c0f094" name="com.mbeddr.formal.safety.argument.visualisation" version="0" />
-    <devkit ref="b0b37262-7857-4c92-8e0e-0467c9bc45a6(fasten.safety.gsn.doc)" />
   </languages>
   <imports>
     <import index="ps0r" ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" />
