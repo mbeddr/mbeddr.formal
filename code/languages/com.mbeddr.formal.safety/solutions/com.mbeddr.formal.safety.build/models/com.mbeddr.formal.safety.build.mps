@@ -10,6 +10,7 @@
     <import index="al5i" ref="r:742f344d-4dc4-4862-992c-4bc94b094870(com.mbeddr.mpsutil.dev.build)" />
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
+    <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.base.build)" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -328,6 +329,12 @@
         <ref role="398BVh" node="42jqVeFkUtk" resolve="mps.home" />
       </node>
     </node>
+    <node concept="2sgV4H" id="6odNb$o7gZm" role="1l3spa">
+      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
+      <node concept="398BVA" id="6odNb$o7gZn" role="2JcizS">
+        <ref role="398BVh" node="6odNb$o7gGe" resolve="dependencies.mpsqa" />
+      </node>
+    </node>
     <node concept="10PD9b" id="42jqVeFkUtc" role="10PD9s" />
     <node concept="3b7kt6" id="42jqVeFkUtd" role="10PD9s" />
     <node concept="398rNT" id="42jqVeFkUG2" role="1l3spd">
@@ -438,6 +445,21 @@
             <property role="2Ry0Am" value="dependencies" />
             <node concept="2Ry0Ak" id="3jaLROLwoki" role="2Ry0An">
               <property role="2Ry0Am" value="com.mbeddr.platform" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="398rNT" id="6odNb$o7gGe" role="1l3spd">
+      <property role="TrG5h" value="dependencies.mpsqa" />
+      <node concept="398BVA" id="6odNb$o7gGf" role="398pKh">
+        <ref role="398BVh" node="42jqVeFkUG2" resolve="mbeddr.formal.home" />
+        <node concept="2Ry0Ak" id="6odNb$o7gGg" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="6odNb$o7gGh" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+            <node concept="2Ry0Ak" id="6odNb$o7gGi" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.allInOne" />
             </node>
           </node>
         </node>
@@ -966,6 +988,9 @@
       </node>
       <node concept="m$_yC" id="1FlxJGBMvDn" role="m$_yJ">
         <ref role="m$_y1" to="al5i:33r_JpZ6k_l" resolve="com.mbeddr.platform.build" />
+      </node>
+      <node concept="m$_yC" id="6odNb$oaXKo" role="m$_yJ">
+        <ref role="m$_y1" to="2tou:32O483pJLpG" resolve="org.mpsqa.base.build" />
       </node>
     </node>
     <node concept="2G$12M" id="7he_lUumA35" role="3989C9">
@@ -13432,6 +13457,11 @@
             <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6odNb$o7hDz" role="3bR37C">
+          <node concept="3bR9La" id="6odNb$o7hD$" role="1SiIV1">
+            <ref role="3bR37D" to="2tou:32O483pJL16" resolve="org.mpsqa.base.build" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -13513,6 +13543,21 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="jPgKPEIpnE" role="1l3spd">
+      <property role="TrG5h" value="dependencies.mpsqa" />
+      <node concept="398BVA" id="jPgKPEIpnF" role="398pKh">
+        <ref role="398BVh" node="3GDqItDloIT" resolve="mbeddr.formal.home" />
+        <node concept="2Ry0Ak" id="jPgKPEIpnG" role="iGT6I">
+          <property role="2Ry0Am" value="build" />
+          <node concept="2Ry0Ak" id="jPgKPEIq7N" role="2Ry0An">
+            <property role="2Ry0Am" value="dependencies" />
+            <node concept="2Ry0Ak" id="jPgKPEIqnE" role="2Ry0An">
+              <property role="2Ry0Am" value="org.mpsqa.allInOne" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="55IIr" id="3GDqItDlhW8" role="auvoZ" />
     <node concept="1l3spV" id="3GDqItDlhW9" role="1l3spN">
       <node concept="L2wRC" id="5Xjjs0Nf4uX" role="39821P">
@@ -13528,6 +13573,12 @@
       <ref role="1l3spb" to="ffeo:3IKDaVZmzS6" resolve="mps" />
       <node concept="398BVA" id="3GDqItDloJd" role="2JcizS">
         <ref role="398BVh" node="3GDqItDlo_0" resolve="mps.home" />
+      </node>
+    </node>
+    <node concept="2sgV4H" id="jPgKPEIk2n" role="1l3spa">
+      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
+      <node concept="398BVA" id="jPgKPEIqv_" role="2JcizS">
+        <ref role="398BVh" node="jPgKPEIpnE" resolve="dependencies.mpsqa" />
       </node>
     </node>
     <node concept="1E1JtA" id="5Xjjs0Nf2r4" role="3989C9">
@@ -13599,6 +13650,11 @@
           </node>
         </node>
       </node>
+      <node concept="1SiIV0" id="6odNb$o7d3O" role="3bR37C">
+        <node concept="3bR9La" id="6odNb$o7d3P" role="1SiIV1">
+          <ref role="3bR37D" to="2tou:32O483pJL16" resolve="org.mpsqa.base.build" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="gYMUULBCgK" role="3989C9">
       <property role="BnDLt" value="true" />
@@ -13619,11 +13675,6 @@
       <node concept="1SiIV0" id="gYMUULBChE" role="3bR37C">
         <node concept="3bR9La" id="gYMUULBChF" role="1SiIV1">
           <ref role="3bR37D" to="90a9:PE3B26VOkn" resolve="de.itemis.mps.extensions.build" />
-        </node>
-      </node>
-      <node concept="1SiIV0" id="gYMUULBChG" role="3bR37C">
-        <node concept="3bR9La" id="gYMUULBChH" role="1SiIV1">
-          <ref role="3bR37D" node="5Xjjs0Nf2r4" resolve="com.mbeddr.formal.safety.build" />
         </node>
       </node>
       <node concept="1SiIV0" id="gYMUULBChI" role="3bR37C">
@@ -13656,6 +13707,11 @@
           <node concept="3qWCbU" id="gYMUULBChZ" role="3LXTna">
             <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
           </node>
+        </node>
+      </node>
+      <node concept="1SiIV0" id="6odNb$o7d41" role="3bR37C">
+        <node concept="3bR9La" id="6odNb$o7d42" role="1SiIV1">
+          <ref role="3bR37D" to="2tou:32O483pJL16" resolve="org.mpsqa.base.build" />
         </node>
       </node>
     </node>
