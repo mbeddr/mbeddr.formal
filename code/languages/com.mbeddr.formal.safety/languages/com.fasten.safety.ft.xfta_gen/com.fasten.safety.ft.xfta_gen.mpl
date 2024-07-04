@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
@@ -14,12 +14,12 @@
   <generators>
     <generator alias="main" namespace="com.fasten.safety.ft.xfta_gen#01" uuid="0940b90d-aea1-4339-be5b-c8084d7ead33">
       <models>
-        <modelRoot contentPath="${module}/generator" type="default">
+        <modelRoot type="default" contentPath="${module}/generator">
           <sourceRoot location="templates" />
         </modelRoot>
       </models>
       <facets>
-        <facet type="java">
+        <facet type="java" compile="mps" classes="mps" ext="no">
           <classes generated="true" path="${module}/generator/classes_gen" />
         </facet>
       </facets>
@@ -29,6 +29,8 @@
       </dependencies>
       <languageVersions>
         <language slang="l:990507d3-3527-4c54-bfe9-0ca3c9c6247a:com.dslfoundry.plaintextgen" version="0" />
+        <language slang="l:189537ea-2a28-44c9-91aa-a8e68b3e1e1b:com.mbeddr.mpsutil.blutil.genutil" version="0" />
+        <language slang="l:b67a6ca0-735e-4903-b238-4b525bddf96a:com.mbeddr.mpsutil.genutil" version="0" />
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
         <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
         <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />

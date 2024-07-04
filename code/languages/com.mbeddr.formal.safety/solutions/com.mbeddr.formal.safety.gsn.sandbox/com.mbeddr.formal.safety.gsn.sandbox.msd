@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
@@ -98,8 +98,6 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="e1b41d7d-269e-4a91-a7d8-91bd657028d7(com.fasten.safety.doc2word)" version="0" />
-    <module reference="4dc47fba-0f4f-4162-820b-d2e1e306482d(com.fasten.safety.ft.pluginSolution)" version="0" />
-    <module reference="54912f5b-43b5-48a6-b710-8bbe3bcf9649(com.fasten.safety.ft.xfta.pluginSolution)" version="0" />
     <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
     <module reference="0deccdfd-196b-4d8c-895e-0d6cb8014dfd(com.mbeddr.formal.req.base)" version="0" />
     <module reference="e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)" version="0" />

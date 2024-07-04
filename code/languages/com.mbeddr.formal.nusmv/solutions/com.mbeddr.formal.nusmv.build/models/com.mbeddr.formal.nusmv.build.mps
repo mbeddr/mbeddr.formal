@@ -540,6 +540,12 @@
       <node concept="m$_yC" id="5QnufgcHT4z" role="m$_yJ">
         <ref role="m$_y1" to="90a9:3$A0JaN5ezp" resolve="MPS.ThirdParty" />
       </node>
+      <node concept="m$_yC" id="12q9egNdx5j" role="m$_yJ">
+        <ref role="m$_y1" to="al5i:64SK4bcJmGP" resolve="com.mbeddr.mpsutil.plantuml" />
+      </node>
+      <node concept="m$_yC" id="12q9egNdyoh" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:3$A0JaN5ezp" resolve="MPS.ThirdParty" />
+      </node>
       <node concept="3_J27D" id="42jqVeFkUva" role="m_cZH">
         <node concept="3Mxwew" id="42jqVeFkUvb" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.formal.nusmv" />
@@ -758,6 +764,11 @@
         <node concept="1SiIV0" id="4ziKDEng_E7" role="3bR37C">
           <node concept="3bR9La" id="4ziKDEng_E8" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6oMDOnZlbo6" role="3bR37C">
+          <node concept="3bR9La" id="6oMDOnZlbo7" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
           </node>
         </node>
       </node>
@@ -5892,7 +5903,7 @@
               <ref role="3_I8Xa" to="ffeo:2d0qgmCdg0g" resolve="make" />
             </node>
             <node concept="3_I8Xc" id="6Kf5KB6_shL" role="39821P">
-              <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="git4idea" />
+              <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="vcs-git" />
             </node>
             <node concept="3_I8Xc" id="6Kf5KB6_sIG" role="39821P">
               <ref role="3_I8Xa" to="ffeo:RJsmGEig2V" resolve="mps-vcs" />

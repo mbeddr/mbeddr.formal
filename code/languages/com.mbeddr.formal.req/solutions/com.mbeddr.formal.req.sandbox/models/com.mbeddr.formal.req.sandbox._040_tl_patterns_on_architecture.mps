@@ -2,6 +2,7 @@
 <model ref="r:88239449-6f0b-4955-b529-b414205ae87b(com.mbeddr.formal.req.sandbox._040_tl_patterns_on_architecture)">
   <persistence version="9" />
   <languages>
+    <use id="0054a0d7-50ff-4b4f-beff-7e9b376d56a1" name="com.mbeddr.formal.req.tl_patterns.arch" version="0" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
