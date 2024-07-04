@@ -413,6 +413,12 @@ if (projectToCheck != null) {
             }
         }
 
+		File("$buildDir/dependencies/org.mpsqa.allInOne").listFiles().forEach {
+            if (it.isDirectory) {
+                result.add(Plugin(it.name, it.absolutePath))
+            }
+        }
+		
         File("$buildDir/artifacts/com.mbeddr.formal.languages").listFiles().forEach {
             if (it.isDirectory) {
                 result.add(Plugin(it.name, it.absolutePath))
