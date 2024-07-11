@@ -1,7 +1,12 @@
 
 name: FASTEN_CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+      - 'maintenance/*'
+  pull_request:
 
 env:
   MPS_VER: "2022.2"
@@ -137,7 +142,9 @@ jobs:
     #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
     - name: Build and Publish FASTEN Assurance to Github Maven Packages
       uses: gradle/gradle-build-action@v2.4.2
-      with: 
+      # Only publish on push (to maintenance or master)
+      if: github.event_name == 'push'
+      with:
         arguments: publishFASTENSafetyLanguagesPublicationToGitHubPackagesRepository -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
