@@ -87,16 +87,7 @@ jobs:
         fail_on_failure: true
         report_paths: 'build/**/TEST*.xml'
         github_token: ${{ secrets.GITHUB_TOKEN }}
-    #- name: Publish to Github Maven
-    #  uses: gradle/gradle-build-action@v2.4.2
-    #  with: 
-    #    arguments: publishNuSMVLanguagesPublicationToGitHubPackagesRepository -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-    #    wrapper-cache-enabled: true
-    #    dependencies-cache-enabled: true
-    #    dependencies-cache-key: gradle/dependency-locks/**
-    #    dependencies-cache-exact: true
-    #    configuration-cache-enabled: true
-    #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+
     - name: Get Current Time
       id: time
       uses: nanzm/get-time-action@v1.1
@@ -112,40 +103,28 @@ jobs:
         name: fasten-distribution-win-2021.3-${{ steps.time.outputs.time }}
         path: build/distributions/fasten-2021.3-SNAPSHOT-Win-2021.3-SNAPSHOT.zip
 
+  publish:
+    # Only publish on push (to maintenance or master)
+    if: github.event_name == 'push'
 
-  build_fasten_assurance_package:
     runs-on: ubuntu-latest
-    env:
-      DISPLAY: ':99'
-
     steps:
     - uses: actions/checkout@v2
 
-    - name: Setup headless environment
-      run: |
-        Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-       
     - name: Set up JDK 17
       uses: actions/setup-java@v1
       with:
         java-version: 17  
         
-    #- name: Build FASTEN Assurance Distribution
-    #  uses: gradle/gradle-build-action@v2.4.2
-    #  with: 
-    #    arguments: package_assurance -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-    #    wrapper-cache-enabled: true
-    #    dependencies-cache-enabled: true
-    #    dependencies-cache-key: gradle/dependency-locks/**
-    #    dependencies-cache-exact: true
-    #    configuration-cache-enabled: true
-    #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
-    - name: Build and Publish FASTEN Assurance to Github Maven Packages
+    - name: Publish
       uses: gradle/gradle-build-action@v2.4.2
-      # Only publish on push (to maintenance or master)
-      if: github.event_name == 'push'
       with:
-        arguments: publishFASTENSafetyLanguagesPublicationToGitHubPackagesRepository -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+        arguments: >
+          publish
+          -Pgpr.user=${{github.actor}}
+          -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+          -Partifacts.itemis.cloud.user=${{secrets.ARTIFACTS_ITEMIS_CLOUD_USER}}
+          -Partifacts.itemis.cloud.pw=${{secrets.ARTIFACTS_ITEMIS_CLOUD_PW}}
         wrapper-cache-enabled: true
         dependencies-cache-enabled: true
         dependencies-cache-key: gradle/dependency-locks/**
