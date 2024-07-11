@@ -23,9 +23,6 @@ env:
 jobs:
   build_fasten_distribution_and_perform_checks:
     runs-on: ubuntu-latest
-    env:
-      DISPLAY: ':99'
-
     steps:
     - uses: actions/checkout@v4
 
@@ -33,10 +30,6 @@ jobs:
       run: |
         echo "$(pwd)/rcp_resources/external_tools" >> "$GITHUB_PATH"
         
-    - name: Setup headless environment
-      run: |
-        Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-       
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
@@ -60,7 +53,7 @@ jobs:
 
     - name: Run Tests
       run: |
-        ./gradlew run_all_tests -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+        xvfb-run ./gradlew run_all_tests -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
 
     - name: Publish Test Report
       uses: mikepenz/action-junit-report@v2
