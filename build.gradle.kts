@@ -4,15 +4,15 @@ import de.itemis.mps.gradle.modelcheck.ModelCheckPluginExtensions
 import de.itemis.mps.gradle.modelcheck.ModelcheckMpsProjectPlugin
 import java.util.Date
 
-//will pull the groovy classes/types from nexus to the classpath
 plugins {
     base
     `maven-publish`
     id("co.riiid.gradle") version "0.4.2"
 
-    // Version must match buildscript mps-gradle-plugin dependency above
-    id("download-jbr") version "1.17.+"
-    id("de.itemis.mps.gradle.common") version "1.20.+"
+    val mpsGradlePluginVersion = "1.28.0.+"
+
+    id("download-jbr") version mpsGradlePluginVersion
+    id("de.itemis.mps.gradle.common") version mpsGradlePluginVersion
 }
 
 val jbrVers = "17.0.6-b469.82"
