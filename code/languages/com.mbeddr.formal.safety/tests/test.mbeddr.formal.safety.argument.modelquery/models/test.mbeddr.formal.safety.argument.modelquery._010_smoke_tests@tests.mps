@@ -21,6 +21,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="9br2" ref="r:70aadfb3-8246-45ac-bcd1-b345c7f7cfe4(com.mbeddr.formal.safety.argument.modelquery.structure)" />
     <import index="oq0u" ref="r:e0fdabfa-18f0-4762-8817-0e7b1735bd5d(com.mbeddr.formal.safety.argument.modelquery.util)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
@@ -73,6 +74,9 @@
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
@@ -129,6 +133,20 @@
       <property role="TrG5h" value="_010_argument_over_hazards" />
       <node concept="3cqZAl" id="y1G8y6aagj" role="3clF45" />
       <node concept="3clFbS" id="y1G8y6aagk" role="3clF47">
+        <node concept="3cpWs8" id="4VhhwF2sIhH" role="3cqZAp">
+          <node concept="3cpWsn" id="4VhhwF2sIhI" role="3cpWs9">
+            <property role="TrG5h" value="repository" />
+            <node concept="3uibUv" id="4VhhwF2sIdP" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="4VhhwF2sIhJ" role="33vP2m">
+              <node concept="1jxXqW" id="4VhhwF2sIhK" role="2Oq$k0" />
+              <node concept="liA8E" id="4VhhwF2sIhL" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="y1G8y6aagr" role="3cqZAp">
           <node concept="3cpWsn" id="y1G8y6aagu" role="3cpWs9">
             <property role="TrG5h" value="m" />
@@ -143,11 +161,8 @@
                 </node>
               </node>
               <node concept="2yCiCJ" id="y1G8y6aaxM" role="2OqNvi">
-                <node concept="2OqwBi" id="y1G8y6aaGU" role="Vysub">
-                  <node concept="1jxXqW" id="y1G8y6aay7" role="2Oq$k0" />
-                  <node concept="liA8E" id="y1G8y6aaYQ" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
-                  </node>
+                <node concept="37vLTw" id="4VhhwF2sIhM" role="Vysub">
+                  <ref role="3cqZAo" node="4VhhwF2sIhI" resolve="repository" />
                 </node>
               </node>
             </node>
@@ -206,6 +221,9 @@
               </node>
               <node concept="37vLTw" id="y1G8y6aHXn" role="37wK5m">
                 <ref role="3cqZAo" node="y1G8y6aHzH" resolve="mc" />
+              </node>
+              <node concept="37vLTw" id="4VhhwF2sIp9" role="37wK5m">
+                <ref role="3cqZAo" node="4VhhwF2sIhI" resolve="repository" />
               </node>
             </node>
           </node>

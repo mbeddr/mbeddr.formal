@@ -16,7 +16,7 @@ on:
         required: false
 
 env:
-  MPS_VER: "2022.2"
+  MPS_VER: "2022.3"
   GITHUB_ACTOR: ${{ github.actor }}
   GITHUB_TOKEN: ${{ secrets.FASTEN_GITHUB_PKG_REGISTRY }}
 
@@ -29,7 +29,7 @@ jobs:
     - name: Set up Gradle
       run: |
         echo "$(pwd)/rcp_resources/external_tools" >> "$GITHUB_PATH"
-        
+
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
@@ -81,7 +81,7 @@ jobs:
       uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
-        java-version: 17  
+        java-version: 17
 
     - name: Set up Gradle
       uses: gradle/actions/setup-gradle@v3

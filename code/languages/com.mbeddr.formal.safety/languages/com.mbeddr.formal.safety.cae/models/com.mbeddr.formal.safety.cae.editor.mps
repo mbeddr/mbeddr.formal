@@ -196,6 +196,7 @@
         <reference id="7464726264117677938" name="shape" index="2xQOue" />
         <child id="3454709602159778495" name="parameterValues" index="1xbcaF" />
       </concept>
+      <concept id="5112292084089908370" name="de.itemis.mps.editor.diagram.structure.EditorContextExpression" flags="ng" index="UMIS2" />
       <concept id="6237710625713195816" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramNode" flags="ng" index="2ZK4vF">
         <child id="7464726264117682823" name="shape" index="2xQQDV" />
         <child id="5725606875425244480" name="deleteHandler" index="1idfhu" />
@@ -974,6 +975,7 @@
             <property role="3clFbU" value="true" />
           </node>
           <node concept="1Pxb5l" id="5TwIvQFvwlD" role="1xbcaF" />
+          <node concept="UMIS2" id="4VhhwF2mjL1" role="1xbcaF" />
         </node>
         <node concept="23hSZX" id="2ccN23odQpV" role="ljJml">
           <node concept="2OqwBi" id="2ccN23odQpW" role="23hSWE">

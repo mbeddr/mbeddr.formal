@@ -393,9 +393,7 @@
       <concept id="5662204344885760731" name="de.slisson.mps.tables.structure.IStylable" flags="ng" index="1g0I81">
         <child id="5662204344887343006" name="style" index="1geGt4" />
       </concept>
-      <concept id="5662204344885763446" name="de.slisson.mps.tables.structure.TableStyle" flags="ng" index="1g0IQG">
-        <reference id="1186406756722" name="styleClass" index="VmB1A" />
-      </concept>
+      <concept id="5662204344885763446" name="de.slisson.mps.tables.structure.TableStyle" flags="ng" index="1g0IQG" />
       <concept id="6466068411884348300" name="de.slisson.mps.tables.structure.EditorCellHeader" flags="ng" index="1A0rlU">
         <child id="6466068411884348445" name="editorCell" index="1A0rbF" />
       </concept>
@@ -1474,9 +1472,7 @@
         </node>
         <node concept="2reCKS" id="2ynKV3BzAkL" role="2reCL6">
           <ref role="2reCK$" to="bewr:2ynKV3BzAk4" resolve="actionsForHazopKeyword" />
-          <node concept="1g0IQG" id="2ynKV3BDdey" role="1geGt4">
-            <ref role="VmB1A" node="3x7uzC8qOMR" resolve="uca_style" />
-          </node>
+          <node concept="1g0IQG" id="2ynKV3BDdey" role="1geGt4" />
           <node concept="3NQdyq" id="2ynKV3BEOPp" role="3NQet$">
             <node concept="3clFbS" id="2ynKV3BEOPq" role="2VODD2">
               <node concept="3clFbF" id="2ynKV3BE9YX" role="3cqZAp">
@@ -2432,7 +2428,6 @@
             </node>
           </node>
           <node concept="1g0IQG" id="2ynKV3BHdxT" role="1geGt4">
-            <ref role="VmB1A" node="3x7uzC8qOMR" resolve="uca_style" />
             <node concept="30gYXW" id="6vZMoXu0faS" role="3F10Kt">
               <property role="Vb096" value="fLJRk5A/lightGray" />
             </node>
