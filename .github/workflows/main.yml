@@ -7,6 +7,13 @@ on:
       - master
       - 'maintenance/*'
   pull_request:
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Whether to publish the build result to Maven repositories
+        type: boolean
+        default: false
+        required: false
 
 env:
   MPS_VER: "2022.2"
@@ -16,139 +23,73 @@ env:
 jobs:
   build_fasten_distribution_and_perform_checks:
     runs-on: ubuntu-latest
-    env:
-      DISPLAY: ':99'
-
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Set up Gradle
       run: |
-        echo "$(pwd)/rcp_resources/external_tools" >> $GITHUB_PATH
+        echo "$(pwd)/rcp_resources/external_tools" >> "$GITHUB_PATH"
         
-    - name: Setup headless environment
-      run: |
-        Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-       
     - name: Set up JDK 17
-      uses: actions/setup-java@v1
+      uses: actions/setup-java@v4
       with:
-        java-version: 17  
-      
-    - name: Resolve MPS
-      uses: gradle/gradle-build-action@v2.4.2
-      with:
-        arguments: resolveMps -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+        distribution: 'temurin'
+        java-version: 17
+
+    - name: Set up Gradle
+      uses: gradle/actions/setup-gradle@v3
 
     - name: Build FASTEN
-      uses: gradle/gradle-build-action@v2.4.2
-      with: 
-        arguments: package_fasten_safety_distribution_win -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-        wrapper-cache-enabled: true
-        dependencies-cache-enabled: true
-        dependencies-cache-key: gradle/dependency-locks/**
-        dependencies-cache-exact: true
-        configuration-cache-enabled: true
-        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+      run: |
+        ./gradlew package_fasten_safety_distribution_win -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
 
-    - name: Check Consistency of the FASTEN-NuSMV Tutorial 
-      uses: gradle/gradle-build-action@v2.4.2
-      with:
-        arguments: -PcheckProject=nusmv -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-        wrapper-cache-enabled: true
-        dependencies-cache-enabled: true
-        dependencies-cache-key: gradle/dependency-locks/**
-        configuration-cache-enabled: true
-        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+    - name: Check Consistency of the FASTEN-NuSMV Tutorial
+      run: |
+        ./gradlew -PcheckProject=nusmv -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
 
     - name: Check Consistency of the FASTEN-Safety Tutorial
-      uses: gradle/gradle-build-action@v2.4.2
-      with:
-        arguments: -PcheckProject=safety -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-        wrapper-cache-enabled: true
-        dependencies-cache-enabled: true
-        dependencies-cache-key: gradle/dependency-locks/**
-        configuration-cache-enabled: true
-        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
-        
+      run: |
+        ./gradlew -PcheckProject=safety -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+
     - name: Run Tests
-      uses: gradle/gradle-build-action@v2.4.2
-      with: 
-        arguments: run_all_tests -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-        wrapper-cache-enabled: true
-        dependencies-cache-enabled: true
-        dependencies-cache-key: gradle/dependency-locks/**
-        configuration-cache-enabled: true    
-        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+      run: |
+        xvfb-run ./gradlew run_all_tests -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
 
     - name: Publish Test Report
-      uses: mikepenz/action-junit-report@v2
+      uses: mikepenz/action-junit-report@v4
       with:
         fail_on_failure: true
+        require_tests: true
         report_paths: 'build/**/TEST*.xml'
         github_token: ${{ secrets.GITHUB_TOKEN }}
-    #- name: Publish to Github Maven
-    #  uses: gradle/gradle-build-action@v2.4.2
-    #  with: 
-    #    arguments: publishNuSMVLanguagesPublicationToGitHubPackagesRepository -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-    #    wrapper-cache-enabled: true
-    #    dependencies-cache-enabled: true
-    #    dependencies-cache-key: gradle/dependency-locks/**
-    #    dependencies-cache-exact: true
-    #    configuration-cache-enabled: true
-    #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
-    - name: Get Current Time
-      id: time
-      uses: nanzm/get-time-action@v1.1
-      with:
-        timeZone: 2
-        format: 'YYYY-MM-DD-HH-mm'
-    #- name: Debug Directory Layout
-    #  run: |
-    #    ls -alR build/artifacts/com.mbeddr.formal.safetyDistribution    
-    - name: Archive distribution
-      uses: actions/upload-artifact@v2
-      with:
-        name: fasten-distribution-win-2021.3-${{ steps.time.outputs.time }}
-        path: build/distributions/fasten-2021.3-SNAPSHOT-Win-2021.3-SNAPSHOT.zip
 
+    - name: Upload distribution
+      uses: actions/upload-artifact@v4
+      with:
+        name: fasten-distribution
+        path: build/distributions/fasten-*.zip
 
-  build_fasten_assurance_package:
+  publish:
+    # Only publish on push (to maintenance or master) or on dispatch if requested
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish == 'true')
+
     runs-on: ubuntu-latest
-    env:
-      DISPLAY: ':99'
-
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
-    - name: Setup headless environment
-      run: |
-        Xvfb :99 -screen 0 1024x768x24 > /dev/null 2>&1 &
-       
     - name: Set up JDK 17
-      uses: actions/setup-java@v1
+      uses: actions/setup-java@v4
       with:
+        distribution: 'temurin'
         java-version: 17  
-        
-    #- name: Build FASTEN Assurance Distribution
-    #  uses: gradle/gradle-build-action@v2.4.2
-    #  with: 
-    #    arguments: package_assurance -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-    #    wrapper-cache-enabled: true
-    #    dependencies-cache-enabled: true
-    #    dependencies-cache-key: gradle/dependency-locks/**
-    #    dependencies-cache-exact: true
-    #    configuration-cache-enabled: true
-    #    gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
-    - name: Build and Publish FASTEN Assurance to Github Maven Packages
-      uses: gradle/gradle-build-action@v2.4.2
-      # Only publish on push (to maintenance or master)
-      if: github.event_name == 'push'
-      with:
-        arguments: publishFASTENSafetyLanguagesPublicationToGitHubPackagesRepository -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-        wrapper-cache-enabled: true
-        dependencies-cache-enabled: true
-        dependencies-cache-key: gradle/dependency-locks/**
-        dependencies-cache-exact: true
-        configuration-cache-enabled: true
-        gradle-executable: /home/runner/work/mbeddr.formal/mbeddr.formal/gradlew
+
+    - name: Set up Gradle
+      uses: gradle/actions/setup-gradle@v3
+
+    - name: Publish
+      run: |
+        ./gradlew publish \
+          -Pgpr.user=${{ github.actor }} \
+          -Pgpr.token=${{ secrets.GITHUB_TOKEN }} \
+          -Partifacts.itemis.cloud.user=${{ secrets.ARTIFACTS_ITEMIS_CLOUD_USER }} \
+          -Partifacts.itemis.cloud.pw=${{ secrets.ARTIFACTS_ITEMIS_CLOUD_PW }}
