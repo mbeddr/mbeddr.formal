@@ -34,29 +34,36 @@ jobs:
     - name: Set up Gradle
       uses: gradle/actions/setup-gradle@v3
 
-    - name: Build FASTEN
+    - name: Build
       run: |
-        ./gradlew package_fasten_safety_distribution_win -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+        xvfb-run ./gradlew package_fasten_safety_distribution_win build_all_languages check \
+          -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
 
-    - name: Check Consistency of the FASTEN-NuSMV Tutorial
-      run: |
-        ./gradlew -PcheckProject=nusmv -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-
-    - name: Check Consistency of the FASTEN-Safety Tutorial
-      run: |
-        ./gradlew -PcheckProject=safety -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-
-    - name: Run Tests
-      run: |
-        xvfb-run ./gradlew run_all_tests -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-
-    - name: Publish Test Report
+    - name: Publish test report
       uses: mikepenz/action-junit-report@v4
+      if: ${{ !cancelled() }}
       with:
         fail_on_failure: true
         require_tests: true
         report_paths: 'build/**/TEST*.xml'
         github_token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Run migrations
+      run: |
+        ./gradlew migrate remigrate -x build_all_languages \
+          -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+
+    - name: Check for dirty files
+      run: |
+        if [[ -n $(git status --porcelain | head --lines=1) ]]
+        then
+          echo "Dirty files detected after build/migration, run './gradlew migrate remigrate' and/or update .gitignore to fix:"
+          git status
+          echo "::group::git diff"
+          git diff
+          echo "::endgroup::"
+          exit 1
+        fi
 
     - name: Upload distribution
       uses: actions/upload-artifact@v4
