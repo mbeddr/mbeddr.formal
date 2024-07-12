@@ -408,6 +408,8 @@ tasks {
         pluginRoots.from(pluginRootsForMigration)
 
         maxHeapSize = "4G"
+
+        excludeModuleMigration("de.itemis.mps.editor.diagram", 0)
     }
 }
 
