@@ -114,6 +114,7 @@
     </echoxml>
     <jar destfile="${build.layout}/com.fasten.assurance.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.fasten.assurance.build" />
+      <fileset dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build" includes="icons/**, resources/**" />
       <fileset dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.fasten.assurance.build.jar" />
     </jar>
