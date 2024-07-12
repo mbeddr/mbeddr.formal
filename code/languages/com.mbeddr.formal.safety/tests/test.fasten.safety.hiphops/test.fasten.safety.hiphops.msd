@@ -9,6 +9,7 @@
     <facet type="java" languageLevel="JAVA_8">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet type="tests" />
   </facets>
   <sourcePath />
   <dependencies>
@@ -69,6 +70,7 @@
     <module reference="bf72618c-958a-47f5-9aac-3eff98d79ffd(com.mbeddr.formal.nusmv.source)" version="0" />
     <module reference="c7a315e6-1d93-4186-85bc-2dfafd1ccc21(com.mbeddr.mpsutil.common)" version="0" />
     <module reference="c6420b75-4569-420d-aaf7-9bc590ad7b2a(com.mbeddr.mpsutil.comparator)" version="0" />
+    <module reference="8ca79d43-eb45-4791-bdd4-0d6130ff895b(de.itemis.mps.editor.diagram.layout)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
     <module reference="555c2c92-d935-4aeb-8601-ca48a9d254b1(test.fasten.safety.hiphops)" version="0" />

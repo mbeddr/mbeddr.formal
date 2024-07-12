@@ -61,7 +61,7 @@
     <property role="TrG5h" value="GoalStructureTreeMapConfig" />
     <property role="34LRSv" value="goal structure tree map" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="41Pak$lKKGB" role="1TKVEi">
       <property role="IQ2ns" value="4644663984576989991" />
       <property role="20kJfa" value="goal" />

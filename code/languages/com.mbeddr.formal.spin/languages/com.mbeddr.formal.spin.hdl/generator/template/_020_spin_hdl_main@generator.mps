@@ -398,7 +398,6 @@
         <child id="1167945861827" name="conditionFunction" index="3IZSJc" />
       </concept>
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
-        <property id="7430509679011668804" name="counterVarName" index="1qytDF" />
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
       <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
@@ -1203,7 +1202,6 @@
                     </node>
                   </node>
                   <node concept="1WS0z7" id="1ZejHLm3eKS" role="lGtFl">
-                    <property role="1qytDF" value="" />
                     <node concept="3JmXsc" id="1ZejHLm3eKV" role="3Jn$fo">
                       <node concept="3clFbS" id="1ZejHLm3eKW" role="2VODD2">
                         <node concept="3clFbF" id="1ZejHLm3eL2" role="3cqZAp">
@@ -3373,7 +3371,6 @@
               </node>
               <node concept="raruj" id="5SGsxw7Nm08" role="lGtFl" />
               <node concept="1WS0z7" id="5SGsxw7Nm0a" role="lGtFl">
-                <property role="1qytDF" value="" />
                 <node concept="3JmXsc" id="5SGsxw7Nm0d" role="3Jn$fo">
                   <node concept="3clFbS" id="5SGsxw7Nm0e" role="2VODD2">
                     <node concept="3clFbF" id="5SGsxw7Nm0k" role="3cqZAp">
