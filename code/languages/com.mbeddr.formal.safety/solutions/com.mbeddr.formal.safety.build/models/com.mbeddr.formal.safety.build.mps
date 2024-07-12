@@ -55,7 +55,6 @@
         <property id="927724900262398947" name="heapSize" index="2_GNG2" />
         <property id="927724900262033861" name="generateDebugInfo" index="2_Ic$$" />
         <property id="6998860900671147996" name="javaLevel" index="TZNOO" />
-        <property id="1476884141929960215" name="compilerOptions" index="1amA5q" />
       </concept>
       <concept id="2750015747481074431" name="jetbrains.mps.build.structure.BuildLayout_Files" flags="ng" index="2HvfSZ">
         <child id="2750015747481074432" name="path" index="2HvfZ0" />
@@ -3037,7 +3036,6 @@
       <property role="2_GNG2" value="6096" />
       <property role="TZNOO" value="1.8" />
       <property role="2_Ic$$" value="true" />
-      <property role="1amA5q" value="-verbose" />
     </node>
     <node concept="1wNqPr" id="3gmMi5swRKS" role="3989C9">
       <property role="1wNuhe" value="true" />
