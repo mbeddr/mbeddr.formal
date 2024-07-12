@@ -15,11 +15,6 @@ on:
         default: false
         required: false
 
-env:
-  MPS_VER: "2022.2"
-  GITHUB_ACTOR: ${{ github.actor }}
-  GITHUB_TOKEN: ${{ secrets.FASTEN_GITHUB_PKG_REGISTRY }}
-
 jobs:
   build_fasten_distribution_and_perform_checks:
     runs-on: ubuntu-latest
