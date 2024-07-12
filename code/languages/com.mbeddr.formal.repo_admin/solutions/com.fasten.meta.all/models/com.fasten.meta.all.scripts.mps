@@ -80,6 +80,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -172,9 +175,16 @@
               <ref role="3uigEE" to="guwi:~File" resolve="File" />
             </node>
             <node concept="2OqwBi" id="6r0uA12M7iU" role="33vP2m">
-              <node concept="o6qdh" id="7CemyS3gvCp" role="2Oq$k0" />
+              <node concept="1eOMI4" id="4ZH1aVCB51t" role="2Oq$k0">
+                <node concept="10QFUN" id="4ZH1aVCB51s" role="1eOMHV">
+                  <node concept="o6qdh" id="4ZH1aVCB51r" role="10QFUP" />
+                  <node concept="3uibUv" id="4ZH1aVCB5iB" role="10QFUM">
+                    <ref role="3uigEE" to="z1c3:~FileBasedProject" resolve="FileBasedProject" />
+                  </node>
+                </node>
+              </node>
               <node concept="liA8E" id="6r0uA12M7iW" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getProjectFile()" resolve="getProjectFile" />
+                <ref role="37wK5l" to="z1c3:~FileBasedProject.getProjectFile()" resolve="getProjectFile" />
               </node>
             </node>
           </node>
