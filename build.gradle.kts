@@ -164,14 +164,6 @@ tasks {
         into(dependenciesDir)
     }
 
-    val generateLibrariesXml by registering(GenerateLibrariesXml::class) {
-        dependsOn(resolveLanguageLibs)
-        description = "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
-        defaults = rootProject.file("projectlibraries.properties")
-        setOverrides(rootProject.file("projectlibraries.overrides.properties"))
-        destination = file("code/languages/com.mbeddr.formal.nusmv/.mps/libraries.xml")
-    }
-
     // "com.fasten.safety.rcp.pluginSolution" makes use of the mbeddr actionsfilter plugin.
     // The "actionsfilter" plugin and dependencies must be copied to "MPS\plugins" folder in order to load properly.
     val copy_mbeddr_actionsfilter by registering {
@@ -193,7 +185,7 @@ tasks {
     }
 
     val setup by registering {
-        dependsOn(generateLibrariesXml, resolveMps, copy_mbeddr_actionsfilter)
+        dependsOn(resolveMps, copy_mbeddr_actionsfilter)
         description = "Set up MPS project libraries. Libraries are read in from projectlibraries.properties file."
     }
 
@@ -375,10 +367,10 @@ tasks {
     // Tutorials could be migrated but would need a slightly different setup.
 
     val projectsToMigrate = listOf(
-        "com.mbeddr.formal.cprover",
-        "com.mbeddr.formal.nusmv",
-        "com.mbeddr.formal.repo_admin",
         "com.mpsbasics",
+        "com.mbeddr.formal.nusmv",
+        "com.mbeddr.formal.cprover",
+        "com.mbeddr.formal.repo_admin",
         "com.mbeddr.formal.req",
         "com.mbeddr.formal.spin",
         "com.mbeddr.formal.safety",

@@ -10,11 +10,11 @@
             </Library>
           </value>
         </entry>
-        <entry key='mpsbasics'>
+        <entry key='nusmv'>
           <value>
             <Library>
-              <option name='name' value='mpsbasics' />
-              <option name='path' value='$PROJECT_DIR$/../com.mpsbasics' />
+              <option name='name' value='nusmv' />
+              <option name='path' value='$PROJECT_DIR$/../com.mbeddr.formal.nusmv' />
             </Library>
           </value>
         </entry>
