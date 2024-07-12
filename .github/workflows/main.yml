@@ -1,5 +1,4 @@
-
-name: FASTEN_CI
+name: CI
 
 on:
   push:
@@ -16,7 +15,7 @@ on:
         required: false
 
 jobs:
-  build_fasten_distribution_and_perform_checks:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
