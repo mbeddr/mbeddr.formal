@@ -14,6 +14,7 @@
   <dependencies>
     <dependency reexport="false">676b5323-9c6d-4b8d-a4fc-5d159c3d8aed(com.mbeddr.formal.safety.gsn.patterns.lib)</dependency>
     <dependency reexport="false">d873c9ba-1199-4310-897d-5fa1a905f179(com.mbeddr.formal.safety.users_guide)</dependency>
+    <dependency reexport="false">04d81d12-7048-4552-9a53-86a271c0f094(com.mbeddr.formal.safety.argument.visualisation)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:3b22dedc-d6cf-4626-9445-6e9909b3e04a:com.fasten.base.arch.msc" version="0" />
@@ -58,6 +59,7 @@
     <language slang="l:b9f682be-3e03-4c97-ba0a-ac14cf89f12a:com.mbeddr.formal.req.tl_patterns.nusmv" version="0" />
     <language slang="l:8a4ef392-f4b4-43e7-afb5-b071dce8043d:com.mbeddr.formal.safety.argument.process" version="0" />
     <language slang="l:fdecb1e5-875e-41ef-a5fd-4b18f747f204:com.mbeddr.formal.safety.argument.process.artefacts" version="0" />
+    <language slang="l:04d81d12-7048-4552-9a53-86a271c0f094:com.mbeddr.formal.safety.argument.visualisation" version="0" />
     <language slang="l:eb32334c-372a-488f-ba9b-e549a59115e9:com.mbeddr.formal.safety.cae" version="0" />
     <language slang="l:d8195c35-9fa4-406e-b16a-8f62c605380b:com.mbeddr.formal.safety.cae.ext" version="0" />
     <language slang="l:402c6c59-bdb3-47fc-8dfa-74ab35e75274:com.mbeddr.formal.safety.cae.external_evidence" version="0" />
@@ -101,12 +103,18 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
+    <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="e1b41d7d-269e-4a91-a7d8-91bd657028d7(com.fasten.safety.doc2word)" version="0" />
     <module reference="4dc47fba-0f4f-4162-820b-d2e1e306482d(com.fasten.safety.ft.pluginSolution)" version="0" />
     <module reference="54912f5b-43b5-48a6-b710-8bbe3bcf9649(com.fasten.safety.ft.xfta.pluginSolution)" version="0" />
+    <module reference="04d81d12-7048-4552-9a53-86a271c0f094(com.mbeddr.formal.safety.argument.visualisation)" version="0" />
     <module reference="676b5323-9c6d-4b8d-a4fc-5d159c3d8aed(com.mbeddr.formal.safety.gsn.patterns.lib)" version="0" />
     <module reference="7a642ffb-bd05-4e8c-b81a-08fde9a204ba(com.mbeddr.formal.safety.tutorial)" version="0" />
     <module reference="d873c9ba-1199-4310-897d-5fa1a905f179(com.mbeddr.formal.safety.users_guide)" version="0" />
+    <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
   </dependencyVersions>
 </solution>
 

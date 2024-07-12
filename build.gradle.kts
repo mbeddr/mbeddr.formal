@@ -4,15 +4,15 @@ import de.itemis.mps.gradle.modelcheck.ModelCheckPluginExtensions
 import de.itemis.mps.gradle.modelcheck.ModelcheckMpsProjectPlugin
 import java.util.Date
 
-//will pull the groovy classes/types from nexus to the classpath
 plugins {
     base
     `maven-publish`
     id("co.riiid.gradle") version "0.4.2"
 
-    // Version must match buildscript mps-gradle-plugin dependency above
-    id("download-jbr") version "1.17.+"
-    id("de.itemis.mps.gradle.common") version "1.20.+"
+    val mpsGradlePluginVersion = "1.28.0.+"
+
+    id("download-jbr") version mpsGradlePluginVersion
+    id("de.itemis.mps.gradle.common") version mpsGradlePluginVersion
 }
 
 val jbrVers = "17.0.6-b469.82"
@@ -109,7 +109,8 @@ repositories {
 }
 
 val skipResolveMps = project.hasProperty("mpsHomeDir")
-val mpsHomeDir = rootProject.file(project.findProperty("mpsHomeDir") ?: "$buildDir/mps")
+val mpsHomeDir = rootProject.file(project.findProperty("mpsHomeDir")
+    ?: layout.buildDirectory.dir("mps").get().asFile.path)
 
 val resolveMps = if (skipResolveMps) {
     tasks.register("resolveMps") {
@@ -131,9 +132,9 @@ val resolveMps = if (skipResolveMps) {
 // tools needed for compiler support in ant calls
 val buildScriptClasspath = project.configurations["antLib"]
 
-val artifactsDir = file("$buildDir/artifacts")
-val dependenciesDir = file("$buildDir/dependencies")
-val jdkDir = file("$buildDir/jdkDir")
+val artifactsDir = layout.buildDirectory.dir("artifacts").get()
+val dependenciesDir = layout.buildDirectory.dir("dependencies").get()
+val jdkDir = layout.buildDirectory.dir("jdkDir").get()
 
 
 // ___________________ utilities ___________________
@@ -141,7 +142,7 @@ val jdkDir = file("$buildDir/jdkDir")
 val defaultScriptArgs = mapOf(
         "mps.home" to mpsHomeDir,
         "mbeddr.formal.home" to rootDir,
-        "build.dir" to buildDir,
+        "build.dir" to layout.buildDirectory.get(),
         "version" to version,
         "build.date" to Date(),
         //incremental build support
@@ -193,51 +194,55 @@ tasks {
         description = "Set up MPS project libraries. Libraries are read in from projectlibraries.properties file."
     }
 
+    fun scriptFile(name: String): Provider<RegularFile> = layout.buildDirectory.file("scripts/$name")
+
     val build_allScripts by registering(BuildLanguages::class) {
         dependsOn(resolveMps, resolveLanguageLibs, copy_mbeddr_actionsfilter)
-        script = "$buildDir/scripts/build_all_scripts.xml"
+        script = scriptFile("build_all_scripts.xml")
     }
 
     val build_formal_languages by registering(BuildLanguages::class) {
         dependsOn(build_allScripts)
-        script = "$buildDir/scripts/build-formal-languages.xml"
+        script = scriptFile("build-formal-languages.xml")
     }
 
     val build_fasten_safety_distribution by registering(BuildLanguages::class) {
         dependsOn(build_formal_languages)
-        script = "$buildDir/scripts/build-fasten-safe-distribution.xml"
+        script = scriptFile("build-fasten-safe-distribution.xml")
     }
 
     val run_smv_tests by registering(TestLanguages::class) {
         description = "Will execute all tests from command line"
-        script = "$buildDir/scripts/build-nusmv-tests.xml"
+        script = scriptFile("scripts/build-nusmv-tests.xml")
         doLast {
             ant.withGroovyBuilder {
                 "taskdef"("name" to "junitreport",
                         "classname" to "org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator",
                         "classpath" to configurations["antLib"].asPath)
+                val reportDir = layout.buildDirectory.dir("junitreport_smv").get()
                 "junitreport" {
-                    "fileset"("dir" to buildDir.toString(), "includes" to "**/TEST*.xml")
-                    "report"("format" to "frames", "todir" to "$buildDir/junitreport_smv")
+                    "fileset"("dir" to layout.buildDirectory.get(), "includes" to "**/TEST*.xml")
+                    "report"("format" to "frames", "todir" to reportDir)
                 }
-                "echo"("JUnit report placed into $buildDir/junitreport_smv/index.html")
+                "echo"("JUnit report placed into $reportDir/index.html")
             }
         }
     }
 
     val run_safety_tests by registering(TestLanguages::class) {
         description = "Will execute all tests from command line"
-        script = "$buildDir/scripts/build-safety-tests.xml"
+        script = scriptFile("build-safety-tests.xml")
         doLast {
             ant.withGroovyBuilder {
                 "taskdef"("name" to "junitreport",
                         "classname" to "org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator",
                         "classpath" to configurations["antLib"].asPath)
+                val reportDir = layout.buildDirectory.dir("junitreport_safety").get()
                 "junitreport" {
-                    "fileset"("dir" to buildDir.toString(), "includes" to "**/TEST*.xml")
-                    "report"("format" to "frames", "todir" to "$buildDir/junitreport")
+                    "fileset"("dir" to layout.buildDirectory.get(), "includes" to "**/TEST*.xml")
+                    "report"("format" to "frames", "todir" to reportDir)
                 }
-                "echo"("JUnit report placed into $buildDir/junitreport/index.html")
+                "echo"("JUnit report placed into $reportDir/index.html")
             }
         }
     }
@@ -245,17 +250,18 @@ tasks {
     val run_all_tests by registering(TestLanguages::class) {
         dependsOn(configureJava)
         description = "Will execute all tests from command line"
-        script = "$buildDir/scripts/build-all-tests.xml"
+        script = scriptFile("build-all-tests.xml")
         doLast {
             ant.withGroovyBuilder {
                 "taskdef"("name" to "junitreport",
                         "classname" to "org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator",
                         "classpath" to configurations["antLib"].asPath)
+                val reportDir = layout.buildDirectory.dir("junitreport").get()
                 "junitreport" {
-                    "fileset"("dir" to buildDir.toString(), "includes" to "**/TEST*.xml")
-                    "report"("format" to "frames", "todir" to "$buildDir/junitreport")
+                    "fileset"("dir" to layout.buildDirectory.get(), "includes" to "**/TEST*.xml")
+                    "report"("format" to "frames", "todir" to reportDir)
                 }
-                "echo"("JUnit report placed into $buildDir/junitreport/index.html")
+                "echo"("JUnit report placed into $reportDir/index.html")
             }
         }
     }
@@ -273,7 +279,7 @@ tasks {
 
     val build_assurance_languages by registering(BuildLanguages::class) {
         dependsOn(build_allScripts)
-        script = "$buildDir/scripts/build-assurance-languages.xml"
+        script = scriptFile("build-assurance-languages.xml")
     }
 
     val package_assurance by registering(Zip::class) {
@@ -403,20 +409,27 @@ enum class ProjectToCheck(val projectDirectory: String, val module: String) {
     NUSMV("tutorial", "com.mbeddr.formal.nusmv.tutorial")
 }
 
-val projectToCheck = (project.findProperty("checkProject") as String?)?.let { ProjectToCheck.valueOf(it.toUpperCase()) }
+val projectToCheck = (project.findProperty("checkProject") as String?)?.let { ProjectToCheck.valueOf(it.uppercase()) }
 
 if (projectToCheck != null) {
     apply<ModelcheckMpsProjectPlugin>()
 
     val pluginsProvider = provider {
         val result = mutableListOf<de.itemis.mps.gradle.Plugin>()
-        File("$buildDir/dependencies/com.mbeddr.platform").listFiles().forEach {
+
+        layout.buildDirectory.dir("dependencies/com.mbeddr.platform").get().asFile.listFiles()!!.forEach {
             if (it.isDirectory) {
                 result.add(Plugin(it.name, it.absolutePath))
             }
         }
 
-        File("$buildDir/artifacts/com.mbeddr.formal.languages").listFiles().forEach {
+		layout.buildDirectory.dir("dependencies/org.mpsqa.allInOne").get().asFile.listFiles()!!.forEach {
+            if (it.isDirectory) {
+                result.add(Plugin(it.name, it.absolutePath))
+            }
+        }
+		
+        layout.buildDirectory.dir("artifacts/com.mbeddr.formal.languages").get().asFile.listFiles()!!.forEach {
             if (it.isDirectory) {
                 result.add(Plugin(it.name, it.absolutePath))
             }
@@ -427,12 +440,12 @@ if (projectToCheck != null) {
 
 
     configure<ModelCheckPluginExtensions> {
-        mpsLocation = File("$buildDir/mps")
+        mpsLocation = mpsHomeDir
         macros = listOf(Macro("mbeddr.formal.home", "$projectDir"))
         pluginsProperty.set(pluginsProvider)
         projectLocation = File("$projectDir/code/${projectToCheck.projectDirectory}/")
         mpsConfig = configurations["mps"]
-        junitFile = File("$buildDir/TEST-${projectToCheck.name.toLowerCase()}-modelcheckresult.xml")
+        junitFile = layout.buildDirectory.file("TEST-${projectToCheck.name.lowercase()}-modelcheckresult.xml").get().asFile
         errorNoFail = true
         debug = false
         maxHeap = "3G"
