@@ -1189,6 +1189,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="4euqtkrlyTp" role="3bR31x">
+          <node concept="3LXTmp" id="4euqtkrlyTq" role="3rtmxm">
+            <node concept="3qWCbU" id="4euqtkrlyTr" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="4euqtkrlyTs" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="4euqtkrlyTt" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="4euqtkrlyTu" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.docx4j.diffx.lib" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2MrvZqtDizQ" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -1243,6 +1259,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="4euqtkrlyTw" role="3bR31x">
+          <node concept="3LXTmp" id="4euqtkrlyTx" role="3rtmxm">
+            <node concept="3qWCbU" id="4euqtkrlyTy" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="4euqtkrlyTz" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="4euqtkrlyT$" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="4euqtkrlyT_" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.docx4j.testutils" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="1E1JtA" id="5jdn85oHU1h" role="3989C9">
@@ -1285,6 +1317,22 @@
           </node>
           <node concept="3qWCbU" id="7ZEfF1UiyKK" role="3LXTna">
             <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+          </node>
+        </node>
+      </node>
+      <node concept="3rtmxn" id="4euqtkrlyTB" role="3bR31x">
+        <node concept="3LXTmp" id="4euqtkrlyTC" role="3rtmxm">
+          <node concept="3qWCbU" id="4euqtkrlyTD" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="4euqtkrlyTE" role="3LXTmr">
+            <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+            <node concept="2Ry0Ak" id="4euqtkrlyTF" role="iGT6I">
+              <property role="2Ry0Am" value="solutions" />
+              <node concept="2Ry0Ak" id="4euqtkrlyTG" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mpsbasics.build" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
