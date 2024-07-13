@@ -41,7 +41,6 @@
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
     <fileset dir="${artifacts.mps}/lib">
       <include name="util.jar" />
-      <include name="3rd-party-rt.jar" />
     </fileset>
   </path>
   
@@ -114,6 +113,7 @@
     </echoxml>
     <jar destfile="${build.layout}/com.fasten.assurance.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.fasten.assurance.build" />
+      <fileset dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build" includes="icons/**, resources/**" />
       <fileset dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.fasten.assurance.build.jar" />
     </jar>
@@ -172,7 +172,6 @@
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.javadoc.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk8.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.references.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
@@ -258,6 +257,7 @@
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xmx1024m" />
+        <arg value="--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" />
       </jvmargs>
       <macro name="mbeddr.formal.home" path="${mbeddr.formal.home}" />
       <macro name="mps.home" path="${mps.home}" />

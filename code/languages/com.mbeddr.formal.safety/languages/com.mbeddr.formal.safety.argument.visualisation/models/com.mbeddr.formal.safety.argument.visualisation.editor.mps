@@ -519,7 +519,7 @@
                       <property role="373rjd" value="true" />
                       <ref role="37wK5l" node="5Dw7oA61kp6" resolve="TreeMapComponent" />
                       <node concept="37vLTw" id="1oXm7QRM5rc" role="37wK5m">
-                        <ref role="3cqZAo" node="1oXm7QRM5r6" resolve="project" />
+                        <ref role="3cqZAo" node="1oXm7QRM5r6" resolve="proj" />
                       </node>
                       <node concept="2OqwBi" id="2Cw9bCdFUYk" role="37wK5m">
                         <node concept="pncrf" id="2Cw9bCdFUuB" role="2Oq$k0" />
@@ -528,7 +528,7 @@
                         </node>
                       </node>
                       <node concept="37vLTw" id="1oXm7QRM5hr" role="37wK5m">
-                        <ref role="3cqZAo" node="1oXm7QRM5hi" resolve="dimension" />
+                        <ref role="3cqZAo" node="1oXm7QRM5hi" resolve="dim" />
                       </node>
                       <node concept="2OqwBi" id="1wp5V2xkMwL" role="37wK5m">
                         <node concept="pncrf" id="1wp5V2xkMeo" role="2Oq$k0" />
@@ -673,7 +673,7 @@
           <node concept="1rXfSq" id="41Pak$lSb1N" role="3clFbG">
             <ref role="37wK5l" node="5Dw7oA60FKt" resolve="refresh" />
             <node concept="37vLTw" id="41Pak$lSeMI" role="37wK5m">
-              <ref role="3cqZAo" node="41Pak$lSbQB" resolve="goals" />
+              <ref role="3cqZAo" node="41Pak$lSbQB" resolve="gseb" />
             </node>
           </node>
         </node>
@@ -774,7 +774,7 @@
                 <node concept="1rXfSq" id="2Cw9bCdF27n" role="3clFbG">
                   <ref role="37wK5l" node="2Cw9bCdF27g" resolve="buildTreeRecurssively" />
                   <node concept="37vLTw" id="2Cw9bCdF27j" role="37wK5m">
-                    <ref role="3cqZAo" node="5Dw7oA60GlN" resolve="goals" />
+                    <ref role="3cqZAo" node="5Dw7oA60GlN" resolve="rootGseb" />
                   </node>
                   <node concept="37vLTw" id="2Cw9bCdF27k" role="37wK5m">
                     <ref role="3cqZAo" node="5Dw7oA61uHH" resolve="builder" />
@@ -1230,7 +1230,7 @@
                         </node>
                       </node>
                       <node concept="2AHcQZ" id="1wp5V2xbhpj" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Override" />
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
                   </node>
@@ -1256,7 +1256,7 @@
                   <ref role="3cqZAo" node="5Dw7oA61GDS" resolve="jTreeMap" />
                 </node>
                 <node concept="Rm8GO" id="5Dw7oA66r6C" role="37wK5m">
-                  <ref role="1Px2BO" to="tlox:~HSBTreeMapColorProvider$ColorDistributionTypes" resolve="ColorDistributionTypes" />
+                  <ref role="1Px2BO" to="tlox:~HSBTreeMapColorProvider$ColorDistributionTypes" resolve="HSBTreeMapColorProvider.ColorDistributionTypes" />
                   <ref role="Rm8GQ" to="tlox:~HSBTreeMapColorProvider$ColorDistributionTypes.Log" resolve="Log" />
                 </node>
                 <node concept="10M0yZ" id="5Dw7oA66r6E" role="37wK5m">
@@ -1407,7 +1407,7 @@
                     <node concept="2OqwBi" id="1wp5V2xlEmn" role="2Oq$k0">
                       <node concept="Xjq3P" id="1wp5V2xlEmo" role="2Oq$k0" />
                       <node concept="2OwXpG" id="1wp5V2xlEmp" role="2OqNvi">
-                        <ref role="2Oxat5" node="1wp5V2xkWzs" resolve="builder" />
+                        <ref role="2Oxat5" node="1wp5V2xkWzs" resolve="builderReference" />
                       </node>
                     </node>
                     <node concept="2qgKlT" id="1wp5V2xlEmq" role="2OqNvi">
@@ -1520,7 +1520,7 @@
                     <property role="3cmrfH" value="0" />
                   </node>
                   <node concept="37vLTw" id="2dSiT1hNGPg" role="AHHXb">
-                    <ref role="3cqZAo" node="2dSiT1hNDvp" resolve="clazz" />
+                    <ref role="3cqZAo" node="2dSiT1hNDvp" resolve="argTypes" />
                   </node>
                 </node>
               </node>
@@ -1535,7 +1535,7 @@
                     <property role="3cmrfH" value="1" />
                   </node>
                   <node concept="37vLTw" id="1wp5V2xneR$" role="AHHXb">
-                    <ref role="3cqZAo" node="2dSiT1hNDvp" resolve="clazz" />
+                    <ref role="3cqZAo" node="2dSiT1hNDvp" resolve="argTypes" />
                   </node>
                 </node>
               </node>
@@ -1550,7 +1550,7 @@
                     <property role="3cmrfH" value="2" />
                   </node>
                   <node concept="37vLTw" id="1wp5V2xnfo7" role="AHHXb">
-                    <ref role="3cqZAo" node="2dSiT1hNDvp" resolve="clazz" />
+                    <ref role="3cqZAo" node="2dSiT1hNDvp" resolve="argTypes" />
                   </node>
                 </node>
               </node>
@@ -1565,7 +1565,7 @@
                     <property role="3cmrfH" value="3" />
                   </node>
                   <node concept="37vLTw" id="1wp5V2xngE3" role="AHHXb">
-                    <ref role="3cqZAo" node="2dSiT1hNDvp" resolve="clazz" />
+                    <ref role="3cqZAo" node="2dSiT1hNDvp" resolve="argTypes" />
                   </node>
                 </node>
               </node>
@@ -1706,7 +1706,7 @@
               <node concept="3cpWsn" id="1wp5V2xpwqN" role="3cpWs9">
                 <property role="TrG5h" value="builderInstance" />
                 <node concept="3uibUv" id="1wp5V2xpwqL" role="1tU5fm">
-                  <ref role="3uigEE" to="wyt6:~Object" />
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2OqwBi" id="1wp5V2xpwqO" role="33vP2m">
                   <node concept="37vLTw" id="1wp5V2xpwqP" role="2Oq$k0">
@@ -2159,7 +2159,7 @@
             </node>
             <node concept="2ShNRf" id="3ErxEYab1Qj" role="37vLTx">
               <node concept="HV5vD" id="3ErxEYab1Ql" role="2ShVmc">
-                <ref role="HV5vE" node="3ErxEYaaf_T" resolve="HandleClickMouse" />
+                <ref role="HV5vE" node="3ErxEYaaf_T" resolve="TreeMapPopupMenu.HandleClickMouse" />
               </node>
             </node>
           </node>
@@ -2429,11 +2429,11 @@
                       <property role="3TUv4t" value="true" />
                       <property role="TrG5h" value="action" />
                       <node concept="3uibUv" id="3ErxEYabdG2" role="1tU5fm">
-                        <ref role="3uigEE" node="3ErxEYaatkI" resolve="ZoomAction" />
+                        <ref role="3uigEE" node="3ErxEYaatkI" resolve="TreeMapPopupMenu.ZoomAction" />
                       </node>
                       <node concept="2ShNRf" id="3ErxEYabf_Z" role="33vP2m">
                         <node concept="1pGfFk" id="3ErxEYabfAg" role="2ShVmc">
-                          <ref role="37wK5l" node="3ErxEYaa$M8" resolve="ZoomAction" />
+                          <ref role="37wK5l" node="3ErxEYaa$M8" resolve="TreeMapPopupMenu.ZoomAction" />
                           <node concept="37vLTw" id="3ErxEYabfAh" role="37wK5m">
                             <ref role="3cqZAo" node="3ErxEYaae8h" resolve="jTreeMap" />
                           </node>
@@ -2867,11 +2867,11 @@
                       <property role="3TUv4t" value="true" />
                       <property role="TrG5h" value="action" />
                       <node concept="3uibUv" id="3ErxEYabuwt" role="1tU5fm">
-                        <ref role="3uigEE" node="3ErxEYaatkI" resolve="ZoomAction" />
+                        <ref role="3uigEE" node="3ErxEYaatkI" resolve="TreeMapPopupMenu.ZoomAction" />
                       </node>
                       <node concept="2ShNRf" id="3ErxEYabwqo" role="33vP2m">
                         <node concept="1pGfFk" id="3ErxEYabwqD" role="2ShVmc">
-                          <ref role="37wK5l" node="3ErxEYaa$M8" resolve="ZoomAction" />
+                          <ref role="37wK5l" node="3ErxEYaa$M8" resolve="TreeMapPopupMenu.ZoomAction" />
                           <node concept="37vLTw" id="3ErxEYabwqE" role="37wK5m">
                             <ref role="3cqZAo" node="3ErxEYaae8h" resolve="jTreeMap" />
                           </node>

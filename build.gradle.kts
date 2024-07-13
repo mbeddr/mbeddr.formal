@@ -1,7 +1,7 @@
 import de.itemis.mps.gradle.*
-import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
-import de.itemis.mps.gradle.modelcheck.ModelCheckPluginExtensions
-import de.itemis.mps.gradle.modelcheck.ModelcheckMpsProjectPlugin
+import de.itemis.mps.gradle.tasks.MpsCheck
+import de.itemis.mps.gradle.tasks.MpsMigrate
+import de.itemis.mps.gradle.tasks.Remigrate
 import java.util.Date
 
 plugins {
@@ -37,7 +37,7 @@ logger.info("Repository username: {}", nexusUsername)
 // Project versions
 val major = "2022"
 val minor = "3"
-val bugfix = "1"
+val bugfix = "2"
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
@@ -153,7 +153,6 @@ val defaultScriptArgs = mapOf(
 
 tasks {
     val configureJava by registering {
-        val downloadJbr = named("downloadJbr", DownloadJbrForPlatform::class)
         dependsOn(downloadJbr)
         doLast {
             project.extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D${it.key}=${it.value}" }
@@ -168,36 +167,35 @@ tasks {
         into(dependenciesDir)
     }
 
-    val generateLibrariesXml by registering(GenerateLibrariesXml::class) {
-        dependsOn(resolveLanguageLibs)
-        description = "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
-        defaults = rootProject.file("projectlibraries.properties")
-        setOverrides(rootProject.file("projectlibraries.overrides.properties"))
-        destination = file("code/languages/com.mbeddr.formal.nusmv/.mps/libraries.xml")
+    // "com.fasten.safety.rcp.pluginSolution" makes use of the mbeddr actionsfilter plugin.
+    // The "actionsfilter" plugin and dependencies must be copied to "MPS\plugins" folder in order to load properly.
+    val copy_mbeddr_actionsfilter by registering {
+        dependsOn(resolveLanguageLibs, resolveMps)
+        description="Installs 'com.mbeddr.mpsutil.actionsfilter' plugin and its dependencies into 'MPS\\plugins' directory."
+
+        // Using `Project#copy` method instead of using Copy task type in order to keep Gradle happy about multiple
+        // tasks using the same output.
+        doLast {
+            copy {
+                from("$dependenciesDir/com.mbeddr.platform")
+                include("com.mbeddr.mpsutil.actionsfilter/",
+                    "de.itemis.mps.editor.widgets/",
+                    "de.slisson.mps.hacks/",
+                    "de.itemis.mps.tooltips/")
+                into("$mpsHomeDir/plugins")
+            }
+        }
     }
 
-	// "com.fasten.safety.rcp.pluginSolution" makes use of the mbeddr actionsfilter plugin.
-	// The "actionsfilter" plugin and dependencies must be copied to "MPS\plugins" folder in order to load properly.
-	val copy_mbeddr_actionsfilter by registering(Copy::class) {
-		dependsOn(resolveLanguageLibs)
-		description="Installs 'com.mbeddr.mpsutil.actionsfilter' plugin and its dependencies into 'MPS\\plugins' directory."
-		from("$dependenciesDir/com.mbeddr.platform")
-		include("com.mbeddr.mpsutil.actionsfilter/",
-            "de.itemis.mps.editor.widgets/",
-            "de.slisson.mps.hacks/",
-            "de.itemis.mps.tooltips/")
-		into("$mpsHomeDir/plugins")
-	}
-
     val setup by registering {
-        dependsOn(generateLibrariesXml)
+        dependsOn(resolveMps, copy_mbeddr_actionsfilter)
         description = "Set up MPS project libraries. Libraries are read in from projectlibraries.properties file."
     }
 
     fun scriptFile(name: String): Provider<RegularFile> = layout.buildDirectory.file("scripts/$name")
 
     val build_allScripts by registering(BuildLanguages::class) {
-        dependsOn(resolveMps, resolveLanguageLibs, copy_mbeddr_actionsfilter)
+        dependsOn(resolveMps, resolveLanguageLibs)
         script = scriptFile("build_all_scripts.xml")
     }
 
@@ -266,8 +264,37 @@ tasks {
         }
     }
 
+    withType<MpsCheck>().configureEach {
+        dependsOn(downloadJbr, resolveMps, resolveLanguageLibs)
+        javaLauncher = downloadJbr.flatMap { it.javaLauncher }
+
+        mpsHome = mpsHomeDir
+        folderMacros.put("mbeddr.formal.home", layout.projectDirectory)
+        pluginRoots.addAll(
+            layout.buildDirectory.map { buildDir ->
+                listOf(
+                    "dependencies/com.mbeddr.platform",
+                    "dependencies/org.mpsqa.allInOne",
+                    "artifacts/com.mbeddr.formal.languages").map { buildDir.dir(it) }
+            })
+
+        ignoreFailures = true
+        maxHeapSize = "3G"
+    }
+
+    val checkSafetyTutorial by registering(MpsCheck::class) {
+        projectLocation = file("code/tutorial-safety")
+        modules = listOf("com.mbeddr.formal.safety.tutorial")
+    }
+
+    val checkNusmvTutorial by registering(MpsCheck::class) {
+        projectLocation = file("code/tutorial")
+        modules = listOf("com.mbeddr.formal.nusmv.tutorial")
+    }
+
     check {
         dependsOn(run_all_tests)
+        dependsOn(withType<MpsCheck>())
     }
 
     val package_formal by registering(Zip::class) {
@@ -322,6 +349,10 @@ tasks {
         from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
     }
 
+    val build_all_languages by registering {
+        dependsOn(build_assurance_languages, build_formal_languages)
+    }
+
     assemble { dependsOn(package_formal, package_assurance) }
 
     val cleanMps by registering(Delete::class) {
@@ -330,6 +361,59 @@ tasks {
 
     //clean { dependsOn(cleanMps) }
     val rebuild by registering { dependsOn(clean, build_formal_languages) }
+
+    // Some projects are not migrated because they (or languages contained in them) are not built by Gradle:
+    // - com.fasten.symo
+    // - com.mbeddr.formal.smt
+    // - com.mbeddr.formal.prism
+    //
+    // Tutorials could be migrated but would need a slightly different setup.
+
+    val projectsToMigrate = listOf(
+        "com.mpsbasics",
+        "com.mbeddr.formal.nusmv",
+        "com.mbeddr.formal.cprover",
+        "com.mbeddr.formal.repo_admin",
+        "com.mbeddr.formal.req",
+        "com.mbeddr.formal.spin",
+        "com.mbeddr.formal.safety",
+    ).map { layout.projectDirectory.dir("code/languages/$it") }
+
+    val pluginRootsForMigration = listOf(mpsHomeDir.resolve("plugins"), dependenciesDir.asFile)
+
+    val migrate by registering(MpsMigrate::class) {
+        dependsOn(resolveMps, downloadJbr, build_all_languages)
+
+        javaLauncher = downloadJbr.flatMap { it.javaLauncher }
+        mpsHome = mpsHomeDir
+        folderMacros.put("mbeddr.formal.home", layout.projectDirectory)
+        projectDirectories.from(projectsToMigrate)
+        pluginRoots.from(pluginRootsForMigration)
+
+        haltOnPrecheckFailure = true
+        haltOnDependencyError = true
+
+        maxHeapSize = "4G"
+    }
+
+    val remigrate by registering(Remigrate::class) {
+        dependsOn(resolveMps, downloadJbr)
+        mustRunAfter(migrate)
+
+        // Technically we don't need to _depend_ on build_all_languages because we can opt to rerun only migrations that
+        // come from MPS.
+        mustRunAfter(build_all_languages)
+
+        javaLauncher = downloadJbr.flatMap { it.javaLauncher }
+        mpsHome = mpsHomeDir
+        folderMacros.put("mbeddr.formal.home", layout.projectDirectory)
+        projectDirectories.from(projectsToMigrate)
+        pluginRoots.from(pluginRootsForMigration)
+
+        maxHeapSize = "4G"
+
+        excludeModuleMigration("de.itemis.mps.editor.diagram", 0)
+    }
 }
 
 publishing {
@@ -404,55 +488,4 @@ publishing {
     }
 }
 
-enum class ProjectToCheck(val projectDirectory: String, val module: String) {
-    SAFETY("tutorial-safety", "com.mbeddr.formal.safety.tutorial"),
-    NUSMV("tutorial", "com.mbeddr.formal.nusmv.tutorial")
-}
-
-val projectToCheck = (project.findProperty("checkProject") as String?)?.let { ProjectToCheck.valueOf(it.uppercase()) }
-
-if (projectToCheck != null) {
-    apply<ModelcheckMpsProjectPlugin>()
-
-    val pluginsProvider = provider {
-        val result = mutableListOf<de.itemis.mps.gradle.Plugin>()
-
-        layout.buildDirectory.dir("dependencies/com.mbeddr.platform").get().asFile.listFiles()!!.forEach {
-            if (it.isDirectory) {
-                result.add(Plugin(it.name, it.absolutePath))
-            }
-        }
-
-		layout.buildDirectory.dir("dependencies/org.mpsqa.allInOne").get().asFile.listFiles()!!.forEach {
-            if (it.isDirectory) {
-                result.add(Plugin(it.name, it.absolutePath))
-            }
-        }
-		
-        layout.buildDirectory.dir("artifacts/com.mbeddr.formal.languages").get().asFile.listFiles()!!.forEach {
-            if (it.isDirectory) {
-                result.add(Plugin(it.name, it.absolutePath))
-            }
-        }
-
-        result
-    }
-
-
-    configure<ModelCheckPluginExtensions> {
-        mpsLocation = mpsHomeDir
-        macros = listOf(Macro("mbeddr.formal.home", "$projectDir"))
-        pluginsProperty.set(pluginsProvider)
-        projectLocation = File("$projectDir/code/${projectToCheck.projectDirectory}/")
-        mpsConfig = configurations["mps"]
-        junitFile = layout.buildDirectory.file("TEST-${projectToCheck.name.lowercase()}-modelcheckresult.xml").get().asFile
-        errorNoFail = true
-        debug = false
-        maxHeap = "3G"
-        modules = listOf(projectToCheck.module)
-    }
-
-    defaultTasks("checkmodels")
-} else {
-    defaultTasks("build_formal_languages")
-}
+defaultTasks("build_formal_languages")

@@ -35,7 +35,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.operatorspanel.rt/com.mbeddr.formal.base.operatorspanel.rt.msd" folder="lang.base" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.pluginSolution/com.mbeddr.formal.base.pluginSolution.msd" folder="lang.base" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.tooling/com.mbeddr.formal.base.tooling.msd" folder="lang.base" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.build/com.mbeddr.formal.nusmv.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.cbd.pluginSolution/com.mbeddr.formal.nusmv.cbd.pluginSolution.msd" folder="lang.nusmv" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.importer.rt/com.mbeddr.formal.nusmv.importer.rt.msd" folder="lang.nusmv" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.pluginSolution/com.mbeddr.formal.nusmv.pluginSolution.msd" folder="lang.nusmv" />
