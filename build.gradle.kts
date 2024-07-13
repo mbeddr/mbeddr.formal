@@ -211,7 +211,7 @@ tasks {
 
     val run_smv_tests by registering(TestLanguages::class) {
         description = "Will execute all tests from command line"
-        script = scriptFile("scripts/build-nusmv-tests.xml")
+        script = scriptFile("build-nusmv-tests.xml")
         doLast {
             ant.withGroovyBuilder {
                 "taskdef"("name" to "junitreport",
