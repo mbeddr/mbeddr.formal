@@ -1642,6 +1642,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="4on3blxbBkw" role="3bR31x">
+          <node concept="3LXTmp" id="4on3blxbBkx" role="3rtmxm">
+            <node concept="3qWCbU" id="4on3blxbBky" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="4on3blxbBkz" role="3LXTmr">
+              <ref role="398BVh" node="1FMyjUPkmcT" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="4on3blxbBk$" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="4on3blxbBk_" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.mbeddr.formal.safety.argument.modelquery" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4ziKDEngCOU" role="2G$12L">
         <property role="BnDLt" value="true" />

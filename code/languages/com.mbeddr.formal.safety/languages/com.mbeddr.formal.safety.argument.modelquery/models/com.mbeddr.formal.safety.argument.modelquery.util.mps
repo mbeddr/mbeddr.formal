@@ -422,7 +422,7 @@
               <node concept="3cpWsn" id="4VhhwF2taB7" role="3cpWs9">
                 <property role="TrG5h" value="modelCheckerObject" />
                 <node concept="3uibUv" id="4VhhwF2taB5" role="1tU5fm">
-                  <ref role="3uigEE" to="wyt6:~Object" />
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
                 </node>
                 <node concept="2OqwBi" id="4VhhwF2taB8" role="33vP2m">
                   <node concept="37vLTw" id="4VhhwF2taB9" role="2Oq$k0">
