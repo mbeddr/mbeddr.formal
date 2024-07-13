@@ -41,7 +41,7 @@ val bugfix = "2"
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
-val mpsVersion = "2022.3" + appendOpt(bugfix, ".")
+val mpsVersion = "$major.$minor" + appendOpt(bugfix, ".")
 
 // Dependency versions
 val platformVersion = "$major.$minor.+"
