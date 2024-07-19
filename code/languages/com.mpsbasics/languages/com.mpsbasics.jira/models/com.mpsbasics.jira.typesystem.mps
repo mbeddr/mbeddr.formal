@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:2de85704-f3f8-47de-9e14-de40b19ce266(com.fasten.jira.typesystem)">
+<model ref="r:2de85704-f3f8-47de-9e14-de40b19ce266(com.mpsbasics.jira.typesystem)">
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />

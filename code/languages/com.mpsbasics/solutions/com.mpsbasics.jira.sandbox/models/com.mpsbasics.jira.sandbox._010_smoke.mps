@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:156c641b-146a-49ee-b593-8ed79b0ab7e9(com.fasten.jira.sandbox._010_smoke)">
+<model ref="r:156c641b-146a-49ee-b593-8ed79b0ab7e9(com.mpsbasics.jira.sandbox._010_smoke)">
   <persistence version="9" />
   <languages>
     <use id="fde86f49-830f-414f-9c22-2a9e300eaba6" name="com.fasten.jira" version="0" />

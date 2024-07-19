@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:ef331a9f-2425-4554-9779-2b3345f23956(com.fasten.jira.intentions)">
+<model ref="r:ef331a9f-2425-4554-9779-2b3345f23956(com.mpsbasics.jira.intentions)">
   <persistence version="9" />
   <languages>
     <use id="d7a92d38-f7db-40d0-8431-763b0c3c9f20" name="jetbrains.mps.lang.intentions" version="1" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="paqs" ref="r:5c2bb03b-9bf4-467b-9ef7-66c18cc4ad25(com.fasten.jira.pluginSolution.util)" />
-    <import index="lagk" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.jira.rest.client.api.domain(com.fasten.jira.pluginSolution/)" />
-    <import index="cxdr" ref="r:10e9be3d-5ae8-41d9-9554-78e944872df2(com.fasten.jira.structure)" implicit="true" />
-    <import index="ikro" ref="r:682b51a7-b000-4248-88aa-fc401fd6be0b(com.fasten.jira.behavior)" implicit="true" />
+    <import index="paqs" ref="r:5c2bb03b-9bf4-467b-9ef7-66c18cc4ad25(com.mpsbasics.jira.pluginSolution.util)" />
+    <import index="lagk" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.jira.rest.client.api.domain(com.mpsbasics.jira.pluginSolution/)" />
+    <import index="cxdr" ref="r:10e9be3d-5ae8-41d9-9554-78e944872df2(com.mpsbasics.jira.structure)" implicit="true" />
+    <import index="ikro" ref="r:682b51a7-b000-4248-88aa-fc401fd6be0b(com.mpsbasics.jira.behavior)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -272,7 +272,7 @@
           <node concept="3uVAMA" id="2H3CssndPb7" role="1zxBo5">
             <node concept="3clFbS" id="2H3CssndPba" role="1zc67A">
               <node concept="2xdQw9" id="2H3CssndPCk" role="3cqZAp">
-                <property role="2xdLsb" value="h1akgim/info" />
+                <property role="2xdLsb" value="gZ5fh_4/error" />
                 <node concept="3cpWs3" id="2H3CssndQLD" role="9lYJi">
                   <node concept="2OqwBi" id="2H3CssndR7s" role="3uHU7w">
                     <node concept="2Sf5sV" id="2H3CssndQTB" role="2Oq$k0" />
