@@ -5191,7 +5191,7 @@
         </node>
         <node concept="1SiIV0" id="2wSfKqy9lX4" role="3bR37C">
           <node concept="3bR9La" id="2wSfKqy9lX5" role="1SiIV1">
-            <ref role="3bR37D" node="2wSfKqy9jAQ" />
+            <ref role="3bR37D" node="2wSfKqy9jAQ" resolve="com.mpsbasics.jira" />
           </node>
         </node>
       </node>

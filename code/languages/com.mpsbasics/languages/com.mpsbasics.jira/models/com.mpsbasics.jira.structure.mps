@@ -47,7 +47,7 @@
     <property role="TrG5h" value="JiraIssueReference" />
     <property role="34LRSv" value="jira issue" />
     <property role="R4oN_" value="reference to a jira issue" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="fofa_o6D25" role="1TKVEl">
       <property role="IQ2nx" value="277038075108561029" />
       <property role="TrG5h" value="issueUrl" />
@@ -69,7 +69,7 @@
     <property role="TrG5h" value="JiraAccessConfig" />
     <property role="34LRSv" value="jira access config" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2H3Cssn2fDw" role="1TKVEl">
       <property role="IQ2nx" value="3117513243527543392" />
       <property role="TrG5h" value="username" />
@@ -94,7 +94,7 @@
     <property role="TrG5h" value="JiraIssuesContainer" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="jira issues" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2H3Cssn8BCd" role="1TKVEi">
       <property role="IQ2ns" value="3117513243529214477" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
