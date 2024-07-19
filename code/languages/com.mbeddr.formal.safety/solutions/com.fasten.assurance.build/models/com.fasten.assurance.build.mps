@@ -2522,6 +2522,22 @@
             <ref role="3bR37D" node="2wSfKqy9jAQ" resolve="com.mpsbasics.jira" />
           </node>
         </node>
+        <node concept="3rtmxn" id="2bBfLTGrYGA" role="3bR31x">
+          <node concept="3LXTmp" id="2bBfLTGrYGB" role="3rtmxm">
+            <node concept="3qWCbU" id="2bBfLTGrYGC" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="2bBfLTGrYGD" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="2bBfLTGrYGE" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2bBfLTGrYGF" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.jira.pluginSolution" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2wSfKqy9jAQ" role="2G$12L">
         <property role="BnDLt" value="true" />
