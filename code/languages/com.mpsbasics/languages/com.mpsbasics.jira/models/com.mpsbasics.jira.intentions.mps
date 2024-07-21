@@ -13,15 +13,6 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
-    <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
-      <concept id="1238852151516" name="jetbrains.mps.baseLanguage.tuples.structure.IndexedTupleType" flags="in" index="1LlUBW">
-        <child id="1238852204892" name="componentType" index="1Lm7xW" />
-      </concept>
-      <concept id="1238857743184" name="jetbrains.mps.baseLanguage.tuples.structure.IndexedTupleMemberAccessExpression" flags="nn" index="1LFfDK">
-        <child id="1238857764950" name="tuple" index="1LFl5Q" />
-        <child id="1238857834412" name="index" index="1LF_Uc" />
-      </concept>
-    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -40,16 +31,12 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="4952749571008284462" name="jetbrains.mps.baseLanguage.structure.CatchVariable" flags="ng" index="XOnhg" />
-      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
-        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -61,6 +48,7 @@
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
+        <child id="1206060520071" name="elsifClauses" index="3eNLev" />
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
@@ -73,9 +61,12 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
+        <child id="1206060619838" name="condition" index="3eO9$A" />
+        <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
-        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
@@ -134,7 +125,6 @@
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
-      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
     </language>
   </registry>
   <node concept="2S6QgY" id="2H3CssncRd$">
@@ -174,74 +164,11 @@
             </node>
             <node concept="3clFbJ" id="4XyMOOGB9Hm" role="3cqZAp">
               <node concept="3clFbS" id="4XyMOOGB9Ho" role="3clFbx">
-                <node concept="3cpWs8" id="4XyMOOGBuc3" role="3cqZAp">
-                  <node concept="3cpWsn" id="4XyMOOGBuc4" role="3cpWs9">
-                    <property role="TrG5h" value="usernameAndToken" />
-                    <node concept="1LlUBW" id="4XyMOOGBu0V" role="1tU5fm">
-                      <node concept="17QB3L" id="4XyMOOGBu11" role="1Lm7xW" />
-                      <node concept="17QB3L" id="4XyMOOGBu10" role="1Lm7xW" />
-                    </node>
-                    <node concept="2OqwBi" id="4XyMOOGBuc5" role="33vP2m">
-                      <node concept="2OqwBi" id="4XyMOOGBuc6" role="2Oq$k0">
-                        <node concept="37vLTw" id="4XyMOOGBuc7" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4XyMOOGB99F" resolve="configs" />
-                        </node>
-                        <node concept="1uHKPH" id="4XyMOOGBuc8" role="2OqNvi" />
-                      </node>
-                      <node concept="2qgKlT" id="4XyMOOGBuc9" role="2OqNvi">
-                        <ref role="37wK5l" to="ikro:4XyMOOGAMFg" resolve="getUsernameAndToken" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3cpWs8" id="4XyMOOGCHMC" role="3cqZAp">
-                  <node concept="3cpWsn" id="4XyMOOGCHMD" role="3cpWs9">
-                    <property role="TrG5h" value="updateIssue" />
-                    <node concept="3uibUv" id="4XyMOOGCHHj" role="1tU5fm">
-                      <ref role="3uigEE" to="lagk:~Issue" resolve="Issue" />
-                    </node>
-                    <node concept="2YIFZM" id="4XyMOOGCHME" role="33vP2m">
-                      <ref role="37wK5l" to="paqs:2H3Cssnd0x8" resolve="updateIssue" />
-                      <ref role="1Pybhc" to="paqs:7nUkRRPV194" resolve="JiraUpdaterUtils" />
-                      <node concept="2OqwBi" id="4XyMOOGCHMF" role="37wK5m">
-                        <node concept="2Sf5sV" id="4XyMOOGCHMG" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="4XyMOOGCHMH" role="2OqNvi">
-                          <ref role="37wK5l" to="ikro:2H3CssndvKB" resolve="jiraServerUrl" />
-                        </node>
-                      </node>
-                      <node concept="2OqwBi" id="4XyMOOGCHMI" role="37wK5m">
-                        <node concept="2Sf5sV" id="4XyMOOGCHMJ" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="4XyMOOGCHMK" role="2OqNvi">
-                          <ref role="37wK5l" to="ikro:2H3CssndyvP" resolve="jiraTicketId" />
-                        </node>
-                      </node>
-                      <node concept="1LFfDK" id="4XyMOOGCHML" role="37wK5m">
-                        <node concept="3cmrfG" id="4XyMOOGCHMM" role="1LF_Uc">
-                          <property role="3cmrfH" value="0" />
-                        </node>
-                        <node concept="37vLTw" id="4XyMOOGCHMN" role="1LFl5Q">
-                          <ref role="3cqZAo" node="4XyMOOGBuc4" resolve="usernameAndToken" />
-                        </node>
-                      </node>
-                      <node concept="1LFfDK" id="4XyMOOGCHMO" role="37wK5m">
-                        <node concept="3cmrfG" id="4XyMOOGCHMP" role="1LF_Uc">
-                          <property role="3cmrfH" value="1" />
-                        </node>
-                        <node concept="37vLTw" id="4XyMOOGCHMQ" role="1LFl5Q">
-                          <ref role="3cqZAo" node="4XyMOOGBuc4" resolve="usernameAndToken" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
                 <node concept="3clFbF" id="4XyMOOGCI80" role="3cqZAp">
                   <node concept="2OqwBi" id="4XyMOOGCIjI" role="3clFbG">
                     <node concept="2Sf5sV" id="4XyMOOGCI7Z" role="2Oq$k0" />
                     <node concept="2qgKlT" id="4XyMOOGDmMu" role="2OqNvi">
                       <ref role="37wK5l" to="ikro:4XyMOOGCIY2" resolve="updateIssue" />
-                      <node concept="37vLTw" id="4XyMOOGDmPU" role="37wK5m">
-                        <ref role="3cqZAo" node="4XyMOOGCHMD" resolve="updateIssue" />
-                      </node>
                     </node>
                   </node>
                 </node>
@@ -257,12 +184,33 @@
                   <node concept="34oBXx" id="4XyMOOGBkJG" role="2OqNvi" />
                 </node>
               </node>
-              <node concept="9aQIb" id="4XyMOOGBx0o" role="9aQIa">
-                <node concept="3clFbS" id="4XyMOOGBx0p" role="9aQI4">
-                  <node concept="2xdQw9" id="4XyMOOGBy6z" role="3cqZAp">
+              <node concept="3eNFk2" id="3h2IzuazNCg" role="3eNLev">
+                <node concept="3clFbS" id="3h2IzuazNCh" role="3eOfB_">
+                  <node concept="2xdQw9" id="3h2IzuazNCi" role="3cqZAp">
                     <property role="2xdLsb" value="gZ5fh_4/error" />
-                    <node concept="Xl_RD" id="4XyMOOGBy6_" role="9lYJi">
-                      <property role="Xl_RC" value="no Jira access config was found" />
+                    <node concept="Xl_RD" id="3h2IzuazNCj" role="9lYJi">
+                      <property role="Xl_RC" value="No Jira access config was found" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbC" id="3h2IzuazQWt" role="3eO9$A">
+                  <node concept="3cmrfG" id="3h2IzuazR0_" role="3uHU7w">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                  <node concept="2OqwBi" id="3h2IzuazNJv" role="3uHU7B">
+                    <node concept="37vLTw" id="3h2IzuazNJw" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4XyMOOGB99F" resolve="configs" />
+                    </node>
+                    <node concept="34oBXx" id="3h2IzuazNJx" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+              <node concept="9aQIb" id="3h2IzuazR76" role="9aQIa">
+                <node concept="3clFbS" id="3h2IzuazR77" role="9aQI4">
+                  <node concept="2xdQw9" id="3h2IzuazReC" role="3cqZAp">
+                    <property role="2xdLsb" value="gZ5fh_4/error" />
+                    <node concept="Xl_RD" id="3h2IzuazReD" role="9lYJi">
+                      <property role="Xl_RC" value="Multiple Jira access config are accessible from this model. Only one is allowed." />
                     </node>
                   </node>
                 </node>
@@ -281,7 +229,7 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="2H3CssndPCm" role="3uHU7B">
-                    <property role="Xl_RC" value="exception while updating issue " />
+                    <property role="Xl_RC" value="Exception while updating issue " />
                   </node>
                 </node>
                 <node concept="37vLTw" id="2H3CssndREQ" role="9lYJj">
