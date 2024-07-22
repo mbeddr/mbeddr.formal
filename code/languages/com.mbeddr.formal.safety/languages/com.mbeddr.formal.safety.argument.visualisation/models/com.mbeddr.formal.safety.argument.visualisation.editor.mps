@@ -1976,7 +1976,7 @@
             </node>
             <node concept="3clFbF" id="2Cw9bCdDZxT" role="3cqZAp">
               <node concept="1rXfSq" id="2Cw9bCdDZxU" role="3clFbG">
-                <ref role="37wK5l" node="2Cw9bCdEbGN" resolve="doCollectSubgoals" />
+                <ref role="37wK5l" node="3h2IzuaIAIK" resolve="doCollectDownstreamEntities" />
                 <node concept="2GrUjf" id="2Cw9bCdDZxV" role="37wK5m">
                   <ref role="2Gs0qQ" node="2Cw9bCdDZxK" resolve="g" />
                 </node>
@@ -2004,6 +2004,111 @@
       <node concept="3Tm6S6" id="2Cw9bCdDZxX" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="2Cw9bCdDZdo" role="jymVt" />
+    <node concept="2YIFZL" id="3h2IzuaIAIt" role="jymVt">
+      <property role="TrG5h" value="collectDownstreamEntities" />
+      <node concept="3clFbS" id="3h2IzuaIAIu" role="3clF47">
+        <node concept="3cpWs8" id="3h2IzuaIAIv" role="3cqZAp">
+          <node concept="3cpWsn" id="3h2IzuaIAIw" role="3cpWs9">
+            <property role="TrG5h" value="downstreamEntitiesBases" />
+            <node concept="2I9FWS" id="3h2IzuaIAIx" role="1tU5fm">
+              <ref role="2I9WkF" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+            </node>
+            <node concept="2ShNRf" id="3h2IzuaIAIy" role="33vP2m">
+              <node concept="2T8Vx0" id="3h2IzuaIAIz" role="2ShVmc">
+                <node concept="2I9FWS" id="3h2IzuaIAI$" role="2T96Bj">
+                  <ref role="2I9WkF" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3h2IzuaIAI_" role="3cqZAp">
+          <node concept="1rXfSq" id="3h2IzuaIAIA" role="3clFbG">
+            <ref role="37wK5l" node="3h2IzuaIAIK" resolve="doCollectDownstreamEntities" />
+            <node concept="37vLTw" id="3h2IzuaIAIB" role="37wK5m">
+              <ref role="3cqZAo" node="3h2IzuaIAIF" resolve="gseb" />
+            </node>
+            <node concept="37vLTw" id="3h2IzuaIAIC" role="37wK5m">
+              <ref role="3cqZAo" node="3h2IzuaIAIw" resolve="downstreamEntitiesBases" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3h2IzuaIAID" role="3cqZAp">
+          <node concept="37vLTw" id="3h2IzuaIAIE" role="3clFbG">
+            <ref role="3cqZAo" node="3h2IzuaIAIw" resolve="downstreamEntitiesBases" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3h2IzuaIAIF" role="3clF46">
+        <property role="TrG5h" value="gseb" />
+        <node concept="3Tqbb2" id="3h2IzuaIAIG" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3h2IzuaIAIH" role="1B3o_S" />
+      <node concept="2I9FWS" id="3h2IzuaIAII" role="3clF45">
+        <ref role="2I9WkF" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="3h2IzuaIAIJ" role="jymVt" />
+    <node concept="2YIFZL" id="3h2IzuaIAIK" role="jymVt">
+      <property role="TrG5h" value="doCollectDownstreamEntities" />
+      <node concept="3clFbS" id="3h2IzuaIAIL" role="3clF47">
+        <node concept="2Gpval" id="3h2IzuaIAIM" role="3cqZAp">
+          <node concept="2GrKxI" id="3h2IzuaIAIN" role="2Gsz3X">
+            <property role="TrG5h" value="g" />
+          </node>
+          <node concept="2OqwBi" id="3h2IzuaIMnC" role="2GsD0m">
+            <node concept="37vLTw" id="3h2IzuaILAu" role="2Oq$k0">
+              <ref role="3cqZAo" node="3h2IzuaIAJ0" resolve="gseb" />
+            </node>
+            <node concept="2qgKlT" id="3h2IzuaINgL" role="2OqNvi">
+              <ref role="37wK5l" to="89jy:2E1OJq6Z1vw" resolve="getNeighbouringOutboundElements" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="3h2IzuaIAIQ" role="2LFqv$">
+            <node concept="3clFbF" id="3h2IzuaIAIR" role="3cqZAp">
+              <node concept="2OqwBi" id="3h2IzuaIAIS" role="3clFbG">
+                <node concept="37vLTw" id="3h2IzuaIAIT" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3h2IzuaIAJ2" resolve="downstreamEntities" />
+                </node>
+                <node concept="TSZUe" id="3h2IzuaIAIU" role="2OqNvi">
+                  <node concept="2GrUjf" id="3h2IzuaIAIV" role="25WWJ7">
+                    <ref role="2Gs0qQ" node="3h2IzuaIAIN" resolve="g" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3h2IzuaIAIW" role="3cqZAp">
+              <node concept="1rXfSq" id="3h2IzuaIAIX" role="3clFbG">
+                <ref role="37wK5l" node="3h2IzuaIAIK" resolve="doCollectDownstreamEntities" />
+                <node concept="2GrUjf" id="3h2IzuaIAIY" role="37wK5m">
+                  <ref role="2Gs0qQ" node="3h2IzuaIAIN" resolve="g" />
+                </node>
+                <node concept="37vLTw" id="3h2IzuaIAIZ" role="37wK5m">
+                  <ref role="3cqZAo" node="3h2IzuaIAJ2" resolve="downstreamEntities" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="3h2IzuaIAJ0" role="3clF46">
+        <property role="TrG5h" value="gseb" />
+        <node concept="3Tqbb2" id="3h2IzuaIAJ1" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="3h2IzuaIAJ2" role="3clF46">
+        <property role="TrG5h" value="downstreamEntities" />
+        <node concept="2I9FWS" id="3h2IzuaIAJ3" role="1tU5fm">
+          <ref role="2I9WkF" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="3h2IzuaIAJ4" role="3clF45" />
+      <node concept="3Tm6S6" id="3h2IzuaIAJ5" role="1B3o_S" />
+    </node>
+    <node concept="2tJIrI" id="3h2IzuaIAAA" role="jymVt" />
     <node concept="3Tm1VV" id="41Pak$lUZVw" role="1B3o_S" />
   </node>
   <node concept="312cEu" id="3ErxEYaa5hb">

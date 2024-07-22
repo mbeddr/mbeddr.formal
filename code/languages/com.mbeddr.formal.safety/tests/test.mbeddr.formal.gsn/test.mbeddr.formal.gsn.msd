@@ -55,6 +55,7 @@
     <language slang="l:450c81f1-1811-41ac-a9c8-8fda59f778ca:com.mbeddr.formal.nusmv.tabular" version="0" />
     <language slang="l:cac6875e-14fd-4552-a69e-b3168e27e2ff:com.mbeddr.formal.nusmv.tests" version="0" />
     <language slang="l:0da073b7-14da-42e6-8db1-df42c803e079:com.mbeddr.formal.nusmv.verification_cases" version="0" />
+    <language slang="l:04d81d12-7048-4552-9a53-86a271c0f094:com.mbeddr.formal.safety.argument.visualisation" version="0" />
     <language slang="l:eb32334c-372a-488f-ba9b-e549a59115e9:com.mbeddr.formal.safety.cae" version="0" />
     <language slang="l:402c6c59-bdb3-47fc-8dfa-74ab35e75274:com.mbeddr.formal.safety.cae.external_evidence" version="0" />
     <language slang="l:e8a04d94-4307-4f88-95a2-25f7c4f39437:com.mbeddr.formal.safety.gsn" version="3" />
