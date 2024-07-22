@@ -201,7 +201,7 @@
               <node concept="2OqwBi" id="3h2IzuaPoRW" role="2Oq$k0">
                 <node concept="2OqwBi" id="3h2IzuaPoRX" role="2Oq$k0">
                   <node concept="37vLTw" id="3h2IzuaPoRY" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3h2IzuaJ0zU" resolve="jir" />
+                    <ref role="3cqZAo" node="3h2IzuaJ0zU" resolve="jira" />
                   </node>
                   <node concept="3TrcHB" id="3h2IzuaPoRZ" role="2OqNvi">
                     <ref role="3TsBF5" to="cxdr:2H3CssncMQH" resolve="issueState" />

@@ -1976,7 +1976,7 @@
             </node>
             <node concept="3clFbF" id="2Cw9bCdDZxT" role="3cqZAp">
               <node concept="1rXfSq" id="2Cw9bCdDZxU" role="3clFbG">
-                <ref role="37wK5l" node="3h2IzuaIAIK" resolve="doCollectSubgoals" />
+                <ref role="37wK5l" node="3h2IzuaIAIK" resolve="doCollectDownstreamEntities" />
                 <node concept="2GrUjf" id="2Cw9bCdDZxV" role="37wK5m">
                   <ref role="2Gs0qQ" node="2Cw9bCdDZxK" resolve="g" />
                 </node>
@@ -2024,18 +2024,18 @@
         </node>
         <node concept="3clFbF" id="3h2IzuaIAI_" role="3cqZAp">
           <node concept="1rXfSq" id="3h2IzuaIAIA" role="3clFbG">
-            <ref role="37wK5l" node="3h2IzuaIAIK" />
+            <ref role="37wK5l" node="3h2IzuaIAIK" resolve="doCollectDownstreamEntities" />
             <node concept="37vLTw" id="3h2IzuaIAIB" role="37wK5m">
               <ref role="3cqZAo" node="3h2IzuaIAIF" resolve="gseb" />
             </node>
             <node concept="37vLTw" id="3h2IzuaIAIC" role="37wK5m">
-              <ref role="3cqZAo" node="3h2IzuaIAIw" resolve="subGoals" />
+              <ref role="3cqZAo" node="3h2IzuaIAIw" resolve="downstreamEntitiesBases" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="3h2IzuaIAID" role="3cqZAp">
           <node concept="37vLTw" id="3h2IzuaIAIE" role="3clFbG">
-            <ref role="3cqZAo" node="3h2IzuaIAIw" resolve="subGoals" />
+            <ref role="3cqZAo" node="3h2IzuaIAIw" resolve="downstreamEntitiesBases" />
           </node>
         </node>
       </node>
@@ -2070,7 +2070,7 @@
             <node concept="3clFbF" id="3h2IzuaIAIR" role="3cqZAp">
               <node concept="2OqwBi" id="3h2IzuaIAIS" role="3clFbG">
                 <node concept="37vLTw" id="3h2IzuaIAIT" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3h2IzuaIAJ2" resolve="subGoals" />
+                  <ref role="3cqZAo" node="3h2IzuaIAJ2" resolve="downstreamEntities" />
                 </node>
                 <node concept="TSZUe" id="3h2IzuaIAIU" role="2OqNvi">
                   <node concept="2GrUjf" id="3h2IzuaIAIV" role="25WWJ7">
@@ -2081,12 +2081,12 @@
             </node>
             <node concept="3clFbF" id="3h2IzuaIAIW" role="3cqZAp">
               <node concept="1rXfSq" id="3h2IzuaIAIX" role="3clFbG">
-                <ref role="37wK5l" node="3h2IzuaIAIK" resolve="doCollectSubgoals" />
+                <ref role="37wK5l" node="3h2IzuaIAIK" resolve="doCollectDownstreamEntities" />
                 <node concept="2GrUjf" id="3h2IzuaIAIY" role="37wK5m">
                   <ref role="2Gs0qQ" node="3h2IzuaIAIN" resolve="g" />
                 </node>
                 <node concept="37vLTw" id="3h2IzuaIAIZ" role="37wK5m">
-                  <ref role="3cqZAo" node="3h2IzuaIAJ2" resolve="subGoals" />
+                  <ref role="3cqZAo" node="3h2IzuaIAJ2" resolve="downstreamEntities" />
                 </node>
               </node>
             </node>
