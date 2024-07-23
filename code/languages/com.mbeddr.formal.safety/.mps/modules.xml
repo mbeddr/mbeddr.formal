@@ -26,10 +26,12 @@
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hazop/com.fasten.safety.hazop.mpl" folder="hara.hazop" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops.arch/com.fasten.safety.hiphops.arch.mpl" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops/com.fasten.safety.hiphops.mpl" folder="fmea_hiphops" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.jira_integration/com.mbeddr.formal.safety.argument.jira_integration.mpl" folder="gsn._030_process" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.modelquery/com.mbeddr.formal.safety.argument.modelquery.mpl" folder="gsn._050_modelquery" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.process.artefacts/com.mbeddr.formal.safety.argument.process.artefacts.mpl" folder="gsn._030_process" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.process/com.mbeddr.formal.safety.argument.process.mpl" folder="gsn._030_process" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.runtime/com.mbeddr.formal.safety.argument.runtime.mpl" folder="gsn._060_runtime" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.visualisation/com.mbeddr.formal.safety.argument.visualisation.mpl" folder="gsn._070_visualisation" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae.ext/com.mbeddr.formal.safety.cae.ext.mpl" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae.external_evidence/com.mbeddr.formal.safety.cae.external_evidence.mpl" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae/com.mbeddr.formal.safety.cae.mpl" folder="gsn._010_base" />
@@ -88,7 +90,8 @@
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn.patterns/test.mbeddr.formal.gsn.patterns.msd" folder="gsn._100_checkable_patterns.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.gsn/test.mbeddr.formal.gsn.msd" folder="gsn._010_base.tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.safety.argument.modelquery/test.mbeddr.formal.safety.argument.modelquery.msd" folder="gsn._050_modelquery.tests" />
-      <modulePath path="${mbeddr.formal.home}/code/languages/repo_admin/solutions/com.fasten.meta.linters/com.fasten.meta.linters.msd" folder="" />
+      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.repo_admin/solutions/com.fasten.meta.architecture/com.fasten.meta.architecture.msd" folder="_000_meta" />
+      <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.repo_admin/solutions/com.fasten.meta.linters/com.fasten.meta.linters.msd" folder="_000_meta" />
     </projectModules>
   </component>
 </project>
