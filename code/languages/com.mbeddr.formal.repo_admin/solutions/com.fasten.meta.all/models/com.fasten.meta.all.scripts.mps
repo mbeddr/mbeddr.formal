@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:97bd750b-38bb-47d6-9bbf-706835092f3f(com.fasten.meta.all.scripts)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
@@ -169,15 +170,6 @@
     <property role="TrG5h" value="update_fasten_all" />
     <node concept="2HLcI0" id="FwxqrAs_6x" role="1MOzCr">
       <node concept="3clFbS" id="FwxqrAs_6z" role="3RSQip">
-        <node concept="3cpWs8" id="1KGfoQNhGpZ" role="3cqZAp">
-          <node concept="3cpWsn" id="1KGfoQNhGq0" role="3cpWs9">
-            <property role="TrG5h" value="project" />
-            <node concept="3uibUv" id="1KGfoQNhCpr" role="1tU5fm">
-              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
-            </node>
-            <node concept="o6qdh" id="1KGfoQNhGq1" role="33vP2m" />
-          </node>
-        </node>
         <node concept="3cpWs8" id="6r0uA12M7iR" role="3cqZAp">
           <node concept="3cpWsn" id="6r0uA12M7iS" role="3cpWs9">
             <property role="TrG5h" value="projectDir" />
@@ -185,18 +177,16 @@
               <ref role="3uigEE" to="guwi:~File" resolve="File" />
             </node>
             <node concept="2OqwBi" id="6r0uA12M7iU" role="33vP2m">
-              <node concept="1eOMI4" id="1KGfoQNhGUC" role="2Oq$k0">
-                <node concept="10QFUN" id="1KGfoQNhGUB" role="1eOMHV">
-                  <node concept="37vLTw" id="1KGfoQNhGUA" role="10QFUP">
-                    <ref role="3cqZAo" node="1KGfoQNhGq0" resolve="project" />
-                  </node>
-                  <node concept="3uibUv" id="1KGfoQNhHqS" role="10QFUM">
-                    <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
+              <node concept="liA8E" id="6r0uA12M7iW" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~FileBasedProject.getProjectFile()" resolve="getProjectFile" />
+              </node>
+              <node concept="1eOMI4" id="4ZH1aVCB51t" role="2Oq$k0">
+                <node concept="10QFUN" id="4ZH1aVCB51s" role="1eOMHV">
+                  <node concept="o6qdh" id="4ZH1aVCB51r" role="10QFUP" />
+                  <node concept="3uibUv" id="4ZH1aVCB5iB" role="10QFUM">
+                    <ref role="3uigEE" to="z1c3:~FileBasedProject" resolve="FileBasedProject" />
                   </node>
                 </node>
-              </node>
-              <node concept="liA8E" id="6r0uA12M7iW" role="2OqNvi">
-                <ref role="37wK5l" to="z1c4:~MPSProject.getProjectFile()" resolve="getProjectFile" />
               </node>
             </node>
           </node>
