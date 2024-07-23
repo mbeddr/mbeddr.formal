@@ -15,6 +15,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="8oaq" ref="79c13063-8a7d-4070-aaba-966b36d6e0c4/java:org.apache.commons.io(org.mpsqa.base.lib/)" />
     <import index="btm1" ref="79c13063-8a7d-4070-aaba-966b36d6e0c4/java:org.apache.commons.lang3(org.mpsqa.base.lib/)" />
+    <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -80,6 +81,9 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -165,6 +169,15 @@
     <property role="TrG5h" value="update_fasten_all" />
     <node concept="2HLcI0" id="FwxqrAs_6x" role="1MOzCr">
       <node concept="3clFbS" id="FwxqrAs_6z" role="3RSQip">
+        <node concept="3cpWs8" id="1KGfoQNhGpZ" role="3cqZAp">
+          <node concept="3cpWsn" id="1KGfoQNhGq0" role="3cpWs9">
+            <property role="TrG5h" value="project" />
+            <node concept="3uibUv" id="1KGfoQNhCpr" role="1tU5fm">
+              <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+            </node>
+            <node concept="o6qdh" id="1KGfoQNhGq1" role="33vP2m" />
+          </node>
+        </node>
         <node concept="3cpWs8" id="6r0uA12M7iR" role="3cqZAp">
           <node concept="3cpWsn" id="6r0uA12M7iS" role="3cpWs9">
             <property role="TrG5h" value="projectDir" />
@@ -172,9 +185,18 @@
               <ref role="3uigEE" to="guwi:~File" resolve="File" />
             </node>
             <node concept="2OqwBi" id="6r0uA12M7iU" role="33vP2m">
-              <node concept="o6qdh" id="7CemyS3gvCp" role="2Oq$k0" />
+              <node concept="1eOMI4" id="1KGfoQNhGUC" role="2Oq$k0">
+                <node concept="10QFUN" id="1KGfoQNhGUB" role="1eOMHV">
+                  <node concept="37vLTw" id="1KGfoQNhGUA" role="10QFUP">
+                    <ref role="3cqZAo" node="1KGfoQNhGq0" resolve="project" />
+                  </node>
+                  <node concept="3uibUv" id="1KGfoQNhHqS" role="10QFUM">
+                    <ref role="3uigEE" to="z1c4:~MPSProject" resolve="MPSProject" />
+                  </node>
+                </node>
+              </node>
               <node concept="liA8E" id="6r0uA12M7iW" role="2OqNvi">
-                <ref role="37wK5l" to="z1c3:~Project.getProjectFile()" resolve="getProjectFile" />
+                <ref role="37wK5l" to="z1c4:~MPSProject.getProjectFile()" resolve="getProjectFile" />
               </node>
             </node>
           </node>
