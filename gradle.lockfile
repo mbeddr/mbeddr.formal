@@ -3,7 +3,7 @@
 # This file is expected to be part of source control.
 com.jetbrains.jdk:jbr_jcef:17.0.6-b469.82=jbrLinux,jbrMac,jbrWin
 com.jetbrains:mps:2022.2.3=mps
-com.mbeddr:platform:2022.2.24680.31f448c=languageLibs
+com.mbeddr:platform:2022.2.24728.df8a71a=languageLibs
 junit:junit:4.12=antLib
 org.apache.ant:ant-junit:1.10.6=antLib
 org.apache.ant:ant-launcher:1.10.6=antLib
