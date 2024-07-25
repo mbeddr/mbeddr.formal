@@ -344,7 +344,7 @@
             </node>
             <node concept="2OqwBi" id="7Wk6knBdGxK" role="33vP2m">
               <node concept="37vLTw" id="7Wk6knBdENn" role="2Oq$k0">
-                <ref role="3cqZAo" node="3h2IzuaQ4xH" resolve="parentGoal" />
+                <ref role="3cqZAo" node="3h2IzuaQ4xH" resolve="parentEntity" />
               </node>
               <node concept="2qgKlT" id="7Wk6knBdHld" role="2OqNvi">
                 <ref role="37wK5l" to="89jy:2E1OJq6Z1vw" resolve="getNeighbouringOutboundElements" />
@@ -368,7 +368,7 @@
                     <ref role="37wK5l" to="t49a:~TreeMapNodeBuilder.buildBranch(java.lang.String,net.sf.jtreemap.swing.TreeMapNode)" resolve="buildBranch" />
                     <node concept="2OqwBi" id="3h2IzuaQ4y5" role="37wK5m">
                       <node concept="37vLTw" id="3h2IzuaQ4y6" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3h2IzuaQ4xH" resolve="parentGoal" />
+                        <ref role="3cqZAo" node="3h2IzuaQ4xH" resolve="parentEntity" />
                       </node>
                       <node concept="3TrcHB" id="3h2IzuaQ4y7" role="2OqNvi">
                         <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -386,7 +386,7 @@
                 <property role="TrG5h" value="subGoal" />
               </node>
               <node concept="37vLTw" id="3h2IzuaQ4yb" role="2GsD0m">
-                <ref role="3cqZAo" node="3h2IzuaQ4xT" resolve="neighbouringGoals" />
+                <ref role="3cqZAo" node="3h2IzuaQ4xT" resolve="neighbouringDownstreamEntities" />
               </node>
               <node concept="3clFbS" id="3h2IzuaQ4yc" role="2LFqv$">
                 <node concept="3clFbF" id="3h2IzuaQ4yd" role="3cqZAp">
@@ -411,7 +411,7 @@
           </node>
           <node concept="2OqwBi" id="3h2IzuaQ4yj" role="3clFbw">
             <node concept="37vLTw" id="3h2IzuaQ4yk" role="2Oq$k0">
-              <ref role="3cqZAo" node="3h2IzuaQ4xT" resolve="neighbouringGoals" />
+              <ref role="3cqZAo" node="3h2IzuaQ4xT" resolve="neighbouringDownstreamEntities" />
             </node>
             <node concept="3GX2aA" id="3h2IzuaQ4yl" role="2OqNvi" />
           </node>
@@ -423,7 +423,7 @@
                   <node concept="17QB3L" id="3h2IzuaQ4yq" role="1tU5fm" />
                   <node concept="2OqwBi" id="3h2IzuaQ4yr" role="33vP2m">
                     <node concept="37vLTw" id="3h2IzuaQ4ys" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3h2IzuaQ4xH" resolve="parentGoal" />
+                      <ref role="3cqZAo" node="3h2IzuaQ4xH" resolve="parentEntity" />
                     </node>
                     <node concept="3TrcHB" id="3h2IzuaQ4yt" role="2OqNvi">
                       <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -438,7 +438,7 @@
                   <node concept="1rXfSq" id="3h2IzuaQ4yx" role="33vP2m">
                     <ref role="37wK5l" node="3h2IzuaQ4yR" resolve="computePercent" />
                     <node concept="37vLTw" id="3h2IzuaQ4yy" role="37wK5m">
-                      <ref role="3cqZAo" node="3h2IzuaQ4xH" resolve="parentGoal" />
+                      <ref role="3cqZAo" node="3h2IzuaQ4xH" resolve="parentEntity" />
                     </node>
                   </node>
                 </node>
@@ -487,7 +487,7 @@
                       <ref role="3cqZAo" node="3h2IzuaQ4y$" resolve="leaf" />
                     </node>
                     <node concept="37vLTw" id="3h2IzuaQ4yO" role="37wK5m">
-                      <ref role="3cqZAo" node="3h2IzuaQ4xH" resolve="parentGoal" />
+                      <ref role="3cqZAo" node="3h2IzuaQ4xH" resolve="parentEntity" />
                     </node>
                   </node>
                 </node>
