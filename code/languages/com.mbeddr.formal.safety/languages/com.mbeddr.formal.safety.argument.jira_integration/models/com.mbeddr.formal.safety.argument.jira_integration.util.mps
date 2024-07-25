@@ -189,7 +189,6 @@
   </registry>
   <node concept="312cEu" id="1wp5V2xiScY">
     <property role="TrG5h" value="ElementsWithOpenJiraIssues" />
-    <property role="1sVAO0" value="true" />
     <node concept="2tJIrI" id="1wp5V2xiT7c" role="jymVt" />
     <node concept="3Tm1VV" id="1wp5V2xiScZ" role="1B3o_S" />
     <node concept="3clFb_" id="3h2IzuaIZW2" role="jymVt">
