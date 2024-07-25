@@ -409,7 +409,7 @@
               <property role="373rjd" value="true" />
               <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
               <node concept="Xl_RD" id="UvPwwlcbUz" role="37wK5m">
-                <property role="Xl_RC" value="Unable to determine the project on which linters shall be ran." />
+                <property role="Xl_RC" value="Unable to determine the active project." />
               </node>
             </node>
           </node>

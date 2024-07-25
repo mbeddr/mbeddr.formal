@@ -168,6 +168,10 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
+      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
@@ -264,6 +268,10 @@
     <node concept="3aamgX" id="4sMKqP$Ud6T" role="3acgRq">
       <ref role="30HIoZ" to="o3hv:4_pH3zvgMKD" resolve="LocalVarRef" />
       <node concept="1Koe21" id="4sMKqP$UhAL" role="1lVwrX">
+        <node concept="15s5l7" id="12q9egO0REQ" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;constraints (cannot be ancestor)&quot;;FLAVOUR_MESSAGE=&quot;Node '(instance of StatementsList)' cannot be ancestor of node '(instance of AssignmentStatement)'&quot;;FLAVOUR_RULE_ID=&quot;[r:5ce1e331-1070-4748-97f8-60e8b98fef9d(com.mbeddr.formal.spin.constraints)/7611646782271009668]&quot;;" />
+          <property role="huDt6" value="Node '(instance of StatementsList)' cannot be ancestor of node '(instance of AssignmentStatement)'" />
+        </node>
         <node concept="2mr7gt" id="4sMKqP$UhM3" role="1Koe22">
           <property role="TrG5h" value="pm" />
           <node concept="2mpP7Z" id="4sMKqP$UhM9" role="2mr7gi">

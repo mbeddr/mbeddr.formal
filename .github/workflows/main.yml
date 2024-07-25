@@ -23,7 +23,7 @@ jobs:
     - name: Set up Gradle
       run: |
         echo "$(pwd)/rcp_resources/external_tools" >> "$GITHUB_PATH"
-        
+
     - name: Set up JDK 17
       uses: actions/setup-java@v4
       with:
@@ -67,8 +67,8 @@ jobs:
     - name: Upload distribution
       uses: actions/upload-artifact@v4
       with:
-        name: fasten-distribution
-        path: build/distributions/fasten-*.zip
+        name: fasten-distribution-win-2022.3-${{ steps.time.outputs.time }}
+        path: build/distributions/fasten-2022.3-SNAPSHOT-Win-2022.3-SNAPSHOT.zip
 
   publish:
     # Only publish on push (to maintenance or master) or on dispatch if requested
@@ -82,7 +82,7 @@ jobs:
       uses: actions/setup-java@v4
       with:
         distribution: 'temurin'
-        java-version: 17  
+        java-version: 17
 
     - name: Set up Gradle
       uses: gradle/actions/setup-gradle@v3

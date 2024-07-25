@@ -570,6 +570,7 @@
       <concept id="5878290447138443303" name="de.itemis.mps.editor.diagram.structure.ContentAlignment" flags="ng" index="POr8z">
         <property id="5878290447138443694" name="alignment" index="POreE" />
       </concept>
+      <concept id="5112292084089908370" name="de.itemis.mps.editor.diagram.structure.EditorContextExpression" flags="ng" index="UMIS2" />
       <concept id="6237710625713195816" name="de.itemis.mps.editor.diagram.structure.CellModel_DiagramNode" flags="ng" index="2ZK4vF">
         <child id="7464726264117682823" name="shape" index="2xQQDV" />
         <child id="5725606875425244480" name="deleteHandler" index="1idfhu" />
@@ -1237,6 +1238,7 @@
           </node>
           <node concept="3clFbT" id="6XKrTzkwvJ1" role="1xbcaF" />
           <node concept="1Pxb5l" id="3x6hjiFTZPN" role="1xbcaF" />
+          <node concept="UMIS2" id="4VhhwF2gGSN" role="1xbcaF" />
         </node>
       </node>
       <node concept="KXoZh" id="2ccN23oaUMV" role="KYgL9">
@@ -1304,6 +1306,7 @@
             <property role="3clFbU" value="true" />
           </node>
           <node concept="1Pxb5l" id="3x6hjiFSF_k" role="1xbcaF" />
+          <node concept="UMIS2" id="4VhhwF2mjZG" role="1xbcaF" />
         </node>
       </node>
       <node concept="KXoZh" id="2ccN23odQq4" role="KYgL9">
@@ -1685,12 +1688,26 @@
             </node>
             <node concept="2xDIQ0" id="6RMm_$5Lrnu" role="37wK5m" />
             <node concept="2xDkLB" id="6RMm_$5Lro$" role="37wK5m" />
+            <node concept="2OqwBi" id="4VhhwF2gHc$" role="37wK5m">
+              <node concept="1xnly_" id="4VhhwF2gH66" role="2Oq$k0">
+                <ref role="1xnlzC" node="4VhhwF2gGW3" resolve="editorContext" />
+              </node>
+              <node concept="liA8E" id="4VhhwF2gHId" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="2x7zL7" id="2zzTeYjGOdZ" role="2x7_pA">
       <node concept="3clFbS" id="2zzTeYjGOe0" role="2VODD2" />
+    </node>
+    <node concept="1xmO9C" id="4VhhwF2gGW3" role="1xmOgE">
+      <property role="TrG5h" value="editorContext" />
+      <node concept="3uibUv" id="4VhhwF2gH5a" role="1xmOb1">
+        <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+      </node>
     </node>
   </node>
   <node concept="2xDbr0" id="7TjUbLQ8uDG">

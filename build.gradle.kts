@@ -36,20 +36,31 @@ logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
 val major = "2022"
-val minor = "2"
+val minor = "3"
+val bugfix = "2"
 
-val mpsVersion ="2022.2.3"
+fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
+
+val mpsVersion = "$major.$minor" + appendOpt(bugfix, ".")
 
 // Dependency versions
 val platformVersion = "$major.$minor.+"
+
+// We now publish only from GitHub but there are older releases from TeamCity with higher build numbers due to TeamCity
+// build sequence being higher. In order for GitHub build to appear later, we bump the GitHub run number to be greater
+// than the build number from TeamCity.
+//
+// We do it only on 2022.3 so that the hack can be eventually removed for later versions.
+val githubRunNumberBump = if ("$major.$minor" == "2022.3") 1000 else 0
 
 if (ciBuild) {
     val branch = GitBasedVersioning.getGitBranch()
 
     val buildNumber =  if (System.getenv("GITHUB_RUN_NUMBER") != null) 
-                                System.getenv("GITHUB_RUN_NUMBER").toInt() 
+                                System.getenv("GITHUB_RUN_NUMBER").toInt() + githubRunNumberBump
                             else 
                                 System.getenv("BUILD_NUMBER")!!.toInt()
+
     if (branch.startsWith("maintenance") || branch.startsWith("mps") || branch.startsWith("migration")) {
         version = "$major.$minor.$buildNumber.${GitBasedVersioning.getGitShortCommitHash()}"
     } else {

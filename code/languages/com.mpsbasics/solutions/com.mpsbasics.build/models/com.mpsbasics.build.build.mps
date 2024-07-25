@@ -445,6 +445,11 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbJb" resolve="MPS.Platform" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6oMDOnZjq5H" role="3bR37C">
+          <node concept="3bR9La" id="6oMDOnZjq5I" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L4p" resolve="jetbrains.mps.lang.behavior" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="42jqVeFkUuP" role="2G$12L">
         <property role="BnDLt" value="true" />
