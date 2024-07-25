@@ -34,7 +34,7 @@
         <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
         <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
         <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-        <property id="4583510071007917016" name="transform" index="TgtnS" />
+        <property id="4583510071007917016" name="portTransform" index="TgtnS" />
       </concept>
       <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
         <child id="8963411245960991904" name="entries" index="37mRID" />
@@ -89,12 +89,12 @@
       <property role="TrG5h" value="ecu2" />
     </node>
     <node concept="2jnq7J" id="2gpUZARhwa8" role="2jnmDS">
-      <ref role="2jnmXU" node="2gpUZARh4BO" resolve="ecu1" />
-      <ref role="2jnmXW" node="2gpUZARh4BT" resolve="bus" />
+      <ref role="2jnmXU" node="2gpUZARh4BO" />
+      <ref role="2jnmXW" node="2gpUZARh4BT" />
     </node>
     <node concept="2jnq7J" id="2gpUZARhwaa" role="2jnmDS">
-      <ref role="2jnmXU" node="2gpUZARh4C9" resolve="ecu2" />
-      <ref role="2jnmXW" node="2gpUZARh4BT" resolve="bus" />
+      <ref role="2jnmXU" node="2gpUZARh4C9" />
+      <ref role="2jnmXW" node="2gpUZARh4BT" />
     </node>
   </node>
 </model>

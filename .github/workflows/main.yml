@@ -67,8 +67,8 @@ jobs:
     - name: Upload distribution
       uses: actions/upload-artifact@v4
       with:
-        name: fasten-distribution
-        path: build/distributions/fasten-*.zip
+        name: fasten-distribution-win-2022.3-${{ steps.time.outputs.time }}
+        path: build/distributions/fasten-2022.3-SNAPSHOT-Win-2022.3-SNAPSHOT.zip
 
   publish:
     # Only publish on push (to maintenance or master) or on dispatch if requested
