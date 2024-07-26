@@ -6245,35 +6245,6 @@
             </node>
           </node>
         </node>
-        <node concept="1yeLz9" id="jPgKPEIjII" role="1TViLv">
-          <property role="TrG5h" value="com.mbeddr.formal.safety.argument.visualisation.generator" />
-          <property role="3LESm3" value="06e5f4e2-b387-4832-b299-6a5dcb5a7370" />
-          <node concept="1BupzO" id="jPgKPEIjIW" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="jPgKPEIjIX" role="1HemKq">
-              <node concept="398BVA" id="jPgKPEIjIJ" role="3LXTmr">
-                <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
-                <node concept="2Ry0Ak" id="jPgKPEIjIK" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="jPgKPEIjIL" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.mbeddr.formal.safety.argument.visualisation" />
-                    <node concept="2Ry0Ak" id="jPgKPEIjIM" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="jPgKPEIjIN" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="jPgKPEIjIY" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="jPgKPEIqS4" role="3bR37C">
           <node concept="3bR9La" id="jPgKPEIqS5" role="1SiIV1">
             <ref role="3bR37D" to="2tou:7C9PHv6FBMC" resolve="org.mpsqa.treemap.lib" />
