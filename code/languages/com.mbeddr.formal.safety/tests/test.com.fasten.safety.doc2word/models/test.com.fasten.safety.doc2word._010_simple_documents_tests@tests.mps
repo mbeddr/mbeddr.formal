@@ -19,7 +19,7 @@
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="t4or" ref="r:46d5de5a-eb8e-412b-a838-775bb49dd8d1(com.mpsbasics.docx4j.testutils)" />
+    <import index="i4w6" ref="r:dff33fe2-c0a9-4081-af46-a022c7542f07(com.mpsbasics.docx4j.core.test_utils)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -1201,8 +1201,8 @@
         </node>
         <node concept="3clFbF" id="4ziKDEnfxm9" role="3cqZAp">
           <node concept="2YIFZM" id="4ziKDEnfx$B" role="3clFbG">
-            <ref role="37wK5l" to="t4or:4ziKDEn8YGk" resolve="compare" />
-            <ref role="1Pybhc" to="t4or:4ziKDEn8YET" resolve="DocumentsComparator" />
+            <ref role="37wK5l" to="i4w6:4ziKDEn8YGk" resolve="compare" />
+            <ref role="1Pybhc" to="i4w6:4ziKDEn8YET" resolve="DocumentsComparator" />
             <node concept="37vLTw" id="4ziKDEnep1R" role="37wK5m">
               <ref role="3cqZAo" node="4ziKDEnei2v" resolve="newFile" />
             </node>
