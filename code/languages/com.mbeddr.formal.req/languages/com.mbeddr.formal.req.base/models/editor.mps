@@ -229,9 +229,6 @@
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1095950406618" name="jetbrains.mps.baseLanguage.structure.DivExpression" flags="nn" index="FJ1c_" />
-      <concept id="1224848483129" name="jetbrains.mps.baseLanguage.structure.IBLDeprecatable" flags="ngI" index="IEa8$">
-        <property id="1224848525476" name="isDeprecated" index="IEkAT" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -2702,7 +2699,6 @@
                                       <property role="1EzhhJ" value="false" />
                                       <property role="TrG5h" value="mouseClicked" />
                                       <property role="DiZV1" value="false" />
-                                      <property role="IEkAT" value="false" />
                                       <node concept="3Tm1VV" id="2niU3$XPvA6" role="1B3o_S" />
                                       <node concept="3cqZAl" id="2niU3$XPvA8" role="3clF45" />
                                       <node concept="37vLTG" id="2niU3$XPvA9" role="3clF46">

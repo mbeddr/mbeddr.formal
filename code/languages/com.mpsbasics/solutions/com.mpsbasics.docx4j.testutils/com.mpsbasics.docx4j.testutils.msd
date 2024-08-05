@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mpsbasics.docx4j.testutils" uuid="5f04c496-eb21-4501-981b-4e5fc2ab46ec" moduleVersion="0" compileInMPS="true">
+<solution name="com.mpsbasics.docx4j.testutils" uuid="5f04c496-eb21-4501-981b-4e5fc2ab46ec" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">71bb25aa-20fa-4c18-8954-1b176576f52d(com.mpsbasics.docx4j.lib)</dependency>

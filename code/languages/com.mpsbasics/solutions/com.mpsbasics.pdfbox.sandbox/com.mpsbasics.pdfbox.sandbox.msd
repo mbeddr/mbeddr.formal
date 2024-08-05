@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mpsbasics.pdfbox.sandbox" uuid="72b4461a-3375-4163-8cbd-a00095782972" moduleVersion="0" compileInMPS="true">
+<solution name="com.mpsbasics.pdfbox.sandbox" uuid="72b4461a-3375-4163-8cbd-a00095782972" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">ece26728-2885-4b26-9f61-67d2821fc361(com.mpsbasics.pdfexporter)</dependency>
   </dependencies>

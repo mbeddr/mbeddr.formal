@@ -23,7 +23,7 @@
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="19" />
     <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
-    <language slang="l:40ab19e9-751a-4433-b645-0e65160e58a0:org.mpsqa.lint.generic" version="0" />
+    <language slang="l:40ab19e9-751a-4433-b645-0e65160e58a0:org.mpsqa.lint.generic" version="1" />
   </languageVersions>
   <dependencyVersions>
     <module reference="97efeb54-e757-4c3b-b175-aa20f7476a23(com.fasten.meta.linters)" version="0" />

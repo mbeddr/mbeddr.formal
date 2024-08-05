@@ -2664,7 +2664,7 @@
       <node concept="1E1JtA" id="2MrvZqtDgLZ" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mpsbasics.docx4j.diffx.lib" />
-        <property role="3LESm3" value="1cb48442-05da-4cad-b5c5-e31ddd69e322" />        
+        <property role="3LESm3" value="1cb48442-05da-4cad-b5c5-e31ddd69e322" />
         <node concept="398BVA" id="2MrvZqtDh3X" role="3LF7KH">
           <ref role="398BVh" node="7he_lUum_$u" resolve="mpsbasics.code" />
           <node concept="2Ry0Ak" id="2MrvZqtDhmt" role="iGT6I">
@@ -17288,6 +17288,22 @@
             </node>
             <node concept="3qWCbU" id="5h_XtOowdYm" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="14ODq4qDvwB" role="3bR31x">
+          <node concept="3LXTmp" id="14ODq4qDvwC" role="3rtmxm">
+            <node concept="3qWCbU" id="14ODq4qDvwD" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="14ODq4qDvwE" role="3LXTmr">
+              <ref role="398BVh" node="1FMyjUPkmcT" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="14ODq4qDvwF" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="14ODq4qDvwG" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.mbeddr.formal.safety.argument.modelquery" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

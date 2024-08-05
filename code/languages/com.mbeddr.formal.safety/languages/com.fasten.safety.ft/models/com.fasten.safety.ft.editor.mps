@@ -409,7 +409,7 @@
         <child id="5855146979801445196" name="width" index="2JxpDF" />
         <child id="5855146979801445211" name="height" index="2JxpDW" />
       </concept>
-      <concept id="8433227566816385664" name="de.itemis.mps.editor.diagram.structure.ILayoutAlgorithm" flags="ng" index="35SPa">
+      <concept id="8433227566816385664" name="de.itemis.mps.editor.diagram.structure.ILayoutAlgorithm" flags="ngI" index="35SPa">
         <child id="2064429317493348220" name="config" index="3pGojU" />
       </concept>
       <concept id="6554619383003875357" name="de.itemis.mps.editor.diagram.structure.InlineEditorComponent" flags="ig" index="238au4" />
@@ -490,7 +490,7 @@
         <property id="3662141892379115494" name="left" index="36xZl3" />
         <property id="3662141892379115491" name="top" index="36xZl6" />
       </concept>
-      <concept id="3662141892377043655" name="de.itemis.mps.editor.diagram.structure.ISupportTopdownPacking" flags="ng" index="36TQxy">
+      <concept id="3662141892377043655" name="de.itemis.mps.editor.diagram.structure.ISupportTopdownPacking" flags="ngI" index="36TQxy">
         <property id="3662141892371757000" name="topdownHierarchicalNodeAspectRatio" index="31dVPH" />
         <property id="3662141892371761113" name="topdownScaleFactor" index="31dWPW" />
         <property id="3662141892374571168" name="topdownNodeType" index="36KE85" />

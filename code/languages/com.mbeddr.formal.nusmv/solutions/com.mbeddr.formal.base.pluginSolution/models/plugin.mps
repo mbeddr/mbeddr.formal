@@ -472,7 +472,6 @@
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
@@ -2745,7 +2744,7 @@
                           </node>
                           <node concept="2OqwBi" id="26E6nZcG70Q" role="0kSFX">
                             <node concept="37vLTw" id="26E6nZcG6Kz" role="2Oq$k0">
-                              <ref role="3cqZAo" node="26E6nZcG6mA" resolve="it" />
+                              <ref role="3cqZAo" node="14ODq4qCDQS" resolve="it" />
                             </node>
                             <node concept="liA8E" id="26E6nZcG7B2" role="2OqNvi">
                               <ref role="37wK5l" to="lui2:~SModuleReference.resolve(org.jetbrains.mps.openapi.module.SRepository)" resolve="resolve" />
@@ -2765,9 +2764,9 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="Rh6nW" id="26E6nZcG6mA" role="1bW2Oz">
+                    <node concept="gl6BB" id="14ODq4qCDQS" role="1bW2Oz">
                       <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="26E6nZcG6mB" role="1tU5fm" />
+                      <node concept="2jxLKc" id="14ODq4qCDQT" role="1tU5fm" />
                     </node>
                   </node>
                 </node>
