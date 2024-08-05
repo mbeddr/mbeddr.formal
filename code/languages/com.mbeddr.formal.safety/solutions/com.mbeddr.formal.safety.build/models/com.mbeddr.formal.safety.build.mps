@@ -2664,8 +2664,7 @@
       <node concept="1E1JtA" id="2MrvZqtDgLZ" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mpsbasics.docx4j.diffx.lib" />
-        <property role="3LESm3" value="1cb48442-05da-4cad-b5c5-e31ddd69e322" />
-        <property role="2GAjPV" value="true" />
+        <property role="3LESm3" value="1cb48442-05da-4cad-b5c5-e31ddd69e322" />        
         <node concept="398BVA" id="2MrvZqtDh3X" role="3LF7KH">
           <ref role="398BVh" node="7he_lUum_$u" resolve="mpsbasics.code" />
           <node concept="2Ry0Ak" id="2MrvZqtDhmt" role="iGT6I">
