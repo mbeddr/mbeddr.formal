@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:a798ee9a-3e4a-45a8-bc41-b679d66034f7(_500_real_world_examples._010_uber_atg_safety_case)" content="header">
+  <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
+  <languages>
+    <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
+  </languages>
+  <imports />
+</model>
+

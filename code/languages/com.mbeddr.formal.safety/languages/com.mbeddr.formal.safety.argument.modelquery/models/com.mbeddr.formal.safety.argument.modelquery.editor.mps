@@ -383,12 +383,6 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="y1G8y66Ej4">
-    <ref role="1XX52x" to="9br2:y1G8y66EiD" resolve="ProjectExpression" />
-    <node concept="3F0ifn" id="y1G8y66Ej6" role="2wV5jI">
-      <property role="3F0ifm" value="project" />
-    </node>
-  </node>
   <node concept="24kQdi" id="y1G8y68MHf">
     <ref role="1XX52x" to="9br2:y1G8y68MHa" resolve="ModelElementWord" />
     <node concept="3EZMnI" id="y1G8y68MHh" role="2wV5jI">

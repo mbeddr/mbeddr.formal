@@ -1414,7 +1414,7 @@
                 <ref role="3cqZAo" node="2w5Gq4UvDQ_" resolve="imagePart" />
               </node>
               <node concept="liA8E" id="2w5Gq4UvE0u" role="2OqNvi">
-                <ref role="37wK5l" to="s1v1:~BinaryPartAbstractImage.createImageInline(java.lang.String,java.lang.String,int,int,boolean)" resolve="createImageInline" />
+                <ref role="37wK5l" to="s1v1:~BinaryPartAbstractImage.createImageInline(java.lang.String,java.lang.String,long,int,boolean)" resolve="createImageInline" />
                 <node concept="37vLTw" id="38aFq1iXoBK" role="37wK5m">
                   <ref role="3cqZAo" node="38aFq1iXmVq" resolve="imageOriginHint" />
                 </node>
@@ -1799,7 +1799,7 @@
                 <ref role="3cqZAo" node="2321JT9kaOn" resolve="imagePart" />
               </node>
               <node concept="liA8E" id="2321JT9kaOx" role="2OqNvi">
-                <ref role="37wK5l" to="s1v1:~BinaryPartAbstractImage.createImageInline(java.lang.String,java.lang.String,int,int,boolean)" resolve="createImageInline" />
+                <ref role="37wK5l" to="s1v1:~BinaryPartAbstractImage.createImageInline(java.lang.String,java.lang.String,long,int,boolean)" resolve="createImageInline" />
                 <node concept="37vLTw" id="2321JT9kaOy" role="37wK5m">
                   <ref role="3cqZAo" node="2321JT9kaOT" resolve="imageOriginHint" />
                 </node>

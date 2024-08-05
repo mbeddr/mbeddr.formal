@@ -44,6 +44,9 @@
       <concept id="6666499814681541919" name="jetbrains.mps.core.xml.structure.XmlTextValue" flags="ng" index="2pMdtt">
         <property id="6666499814681541920" name="text" index="2pMdty" />
       </concept>
+      <concept id="6666499814681299057" name="jetbrains.mps.core.xml.structure.XmlProlog" flags="ng" index="2pNm8N">
+        <child id="7604553062773674214" name="elements" index="BGLLu" />
+      </concept>
       <concept id="6666499814681415858" name="jetbrains.mps.core.xml.structure.XmlElement" flags="ng" index="2pNNFK">
         <property id="6666499814681415862" name="tagName" index="2pNNFO" />
         <child id="6666499814681415861" name="attributes" index="2pNNFR" />
@@ -58,6 +61,11 @@
       </concept>
       <concept id="6786756355279841993" name="jetbrains.mps.core.xml.structure.XmlDocument" flags="ng" index="3rIKKV">
         <child id="6666499814681299055" name="rootElement" index="2pNm8H" />
+        <child id="6666499814681299060" name="prolog" index="2pNm8Q" />
+      </concept>
+      <concept id="5228786488744996718" name="jetbrains.mps.core.xml.structure.XmlDeclaration" flags="ng" index="3W$oVP">
+        <property id="5491461270226117667" name="version" index="1D$jbd" />
+        <property id="3374336260035925078" name="encoding" index="1UZly_" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -234,6 +242,12 @@
           <node concept="1sPUBX" id="6VBHnHRi4JI" role="lGtFl">
             <ref role="v9R2y" node="6VBHnHRhYAm" resolve="goalStructureConnection2XML_SWITCH" />
           </node>
+        </node>
+      </node>
+      <node concept="2pNm8N" id="23H9md0uVw$" role="2pNm8Q">
+        <node concept="3W$oVP" id="23H9md0uVzt" role="BGLLu">
+          <property role="1D$jbd" value="1.0" />
+          <property role="1UZly_" value="utf-8" />
         </node>
       </node>
     </node>

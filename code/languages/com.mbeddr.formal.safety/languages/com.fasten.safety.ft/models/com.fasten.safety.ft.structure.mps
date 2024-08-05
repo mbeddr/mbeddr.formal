@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -29,7 +30,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9" />
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -63,7 +63,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -77,22 +76,6 @@
     <property role="34LRSv" value="fault tree" />
     <property role="R4oN_" value="fault tree" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="5rwT_JnuR3W" role="1TKVEi">
-      <property role="IQ2ns" value="6260256764176593148" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="elements" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5rwT_JnuR3U" resolve="FaultTreeElementBase" />
-      <node concept="asaX9" id="2s9yRNfpQfn" role="lGtFl" />
-    </node>
-    <node concept="1TJgyj" id="5rwT_JnuR3Y" role="1TKVEi">
-      <property role="IQ2ns" value="6260256764176593150" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="connections" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="5rwT_JnuR3V" resolve="FaultTreeConnectionBase" />
-      <node concept="asaX9" id="2s9yRNfpQfx" role="lGtFl" />
-    </node>
     <node concept="1TJgyj" id="2s9yRNfpPP4" role="1TKVEi">
       <property role="IQ2ns" value="2812932810441448772" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -219,12 +202,6 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="spec" />
       <ref role="20lvS9" node="11L6MQb45$I" resolve="EventSpecBase" />
-    </node>
-    <node concept="1TJgyi" id="5rwT_JnuRcl" role="1TKVEl">
-      <property role="IQ2nx" value="6260256764176593685" />
-      <property role="TrG5h" value="probability" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="11L6MQb4bLB" role="lGtFl" />
     </node>
     <node concept="PrWs8" id="5rwT_JnuRcj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />

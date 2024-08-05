@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:6df6dea3-0ed6-4204-928b-52b619b721ef(_100_examples._020_adas_students_lab._020_safe_acc)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
+      <concept id="3226630706269625197" name="com.mbeddr.formal.req.base.structure.EmptyRequirement" flags="ng" index="0lH3_" />
+      <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
+        <child id="3226630706270140651" name="text" index="0nzdz" />
+      </concept>
+      <concept id="815900398743272760" name="com.mbeddr.formal.req.base.structure.Image" flags="ng" index="3OoTgI">
+        <property id="815900398743502458" name="scale" index="3OpxtG" />
+        <child id="815900398743284144" name="imageFile" index="3OoW2A" />
+      </concept>
+      <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
+        <child id="4908298719893728789" name="spec" index="1QQeAV" />
+      </concept>
+      <concept id="4908298719893728634" name="com.mbeddr.formal.req.base.structure.Functional" flags="ng" index="1QQeFk" />
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706270020326" name="createdBy" index="0ke_I" />
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="4908298719893728774" name="specs" index="1QQeAC" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+        <property id="2711621784026951428" name="pointOnlyToExistingFile" index="1RwFax" />
+      </concept>
+      <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1QQeGf" id="1Z4anaVRJHD">
+    <property role="TrG5h" value="_010_acc_functional_requirements" />
+    <property role="3GE5qa" value="acc_item_definition" />
+    <node concept="0lhDl" id="1Z4anaVRJHE" role="1QQeBF">
+      <property role="0lsPA" value="FR01_ACC" />
+      <property role="0ke_I" value="Carmen" />
+      <node concept="1QQeAY" id="1Z4anaVRJHO" role="1QQeAC">
+        <node concept="0nzK2" id="1Z4anaVRJHQ" role="1QQeAV">
+          <node concept="19SGf9" id="1Z4anaVRJHS" role="0nzdz">
+            <node concept="19SUe$" id="1Z4anaVRJHT" role="19SJt6">
+              <property role="19SUeA" value="The ACC provides an intelligent Cruise Control functionality. Specifically it allows to:&#10;&#10;1) Set a target speed of the vehicle by the driver and autonomously keep this speed &#10;by accelerating and deaccelerating the vehicle correspondingly&#10;2) Adapt the speed of the vehicle autonomously depending on the distance &#10;to a leading vehicle to avoid unsafe distances between them&#10;&#10;The target speed hereby is always the current velocity of the vehicle when ACC is activated.&#10;" />
+            </node>
+            <node concept="3OoTgI" id="1HNBDjrJCBU" role="19SJt6">
+              <property role="3OpxtG" value="50" />
+              <node concept="3NXOOs" id="1HNBDjrJCBZ" role="3OoW2A">
+                <property role="1RwFax" value="true" />
+                <property role="3N1Lgt" value="figures/acc.png" />
+              </node>
+            </node>
+            <node concept="19SUe$" id="1HNBDjrJCBV" role="19SJt6" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="1Z4anaVRJHF" role="0nOlf" />
+      <node concept="19SGf9" id="1Z4anaVRJHG" role="1QQeG9">
+        <node concept="19SUe$" id="1Z4anaVRJHH" role="19SJt6">
+          <property role="19SUeA" value="Intelligent Cruise Control" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="2l0tHRMMe27" role="1QQeBF">
+      <property role="0lsPA" value="FR02_ACC" />
+      <property role="0ke_I" value="Marcel&amp;Moritz" />
+      <node concept="1QQeAY" id="2l0tHRMMevx" role="1QQeAC">
+        <node concept="0nzK2" id="2l0tHRMMevz" role="1QQeAV">
+          <node concept="19SGf9" id="2l0tHRMMev_" role="0nzdz">
+            <node concept="19SUe$" id="2l0tHRMMevA" role="19SJt6">
+              <property role="19SUeA" value="If there is no obstacle within the safe distance in front of the rover, &#10;the rover shall keep the speed that was set by the driver. &#10;Technically, the rover shall accelerate/brake within small intervals. &#10;So if the rover moves slower than the target speed, the rover accelerates, &#10;whereas if the velocity needs to be reduced, the rover brakes." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="2l0tHRMMe29" role="1QQeG9">
+        <node concept="19SUe$" id="2l0tHRMMe2a" role="19SJt6">
+          <property role="19SUeA" value="Keep Target Speed" />
+        </node>
+      </node>
+      <node concept="1QQeFk" id="2vEFX4zmZ5D" role="0nOlf" />
+    </node>
+    <node concept="0lhDl" id="1Z4anaVRJI9" role="1QQeBF">
+      <property role="0lsPA" value="FR03_ACC" />
+      <property role="0ke_I" value="Carmen" />
+      <node concept="1QQeAY" id="1Z4anaVRJIu" role="1QQeAC">
+        <node concept="0nzK2" id="1Z4anaVRJIw" role="1QQeAV">
+          <node concept="19SGf9" id="1Z4anaVRJIy" role="0nzdz">
+            <node concept="19SUe$" id="1Z4anaVRJIz" role="19SJt6">
+              <property role="19SUeA" value="The driver can change the state of the ACC system when&#10;- activates/deactivates the system via the ACC activation button&#10;- deactivates the system using the brake&#10;- deactivates if emergency brake is activated&#10;- Set the target distance&#10;- Set the target speed&#10;- powers off the engine by pushing the switch-off button or rotating the key&#10;In all other situations the system should not permit the driver to change or &#10;control the system state" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="1Z4anaVRJIa" role="0nOlf" />
+      <node concept="19SGf9" id="1Z4anaVRJIb" role="1QQeG9">
+        <node concept="19SUe$" id="1Z4anaVRJIc" role="19SJt6">
+          <property role="19SUeA" value="ACC Deactivation and Change" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4tgWazNvlzx" role="1QQeBF">
+      <property role="0lsPA" value="FR04_ACC" />
+      <property role="0ke_I" value="Team" />
+      <node concept="1QQeAY" id="4tgWazNvl$E" role="1QQeAC">
+        <node concept="0nzK2" id="4tgWazNvl$G" role="1QQeAV">
+          <node concept="19SGf9" id="4tgWazNvl$I" role="0nzdz">
+            <node concept="19SUe$" id="4tgWazNvl$J" role="19SJt6">
+              <property role="19SUeA" value="Driver shall be informed about ACC system state." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="4tgWazNvlzz" role="1QQeG9">
+        <node concept="19SUe$" id="4tgWazNvlz$" role="19SJt6">
+          <property role="19SUeA" value="System-Driver Communication" />
+        </node>
+      </node>
+      <node concept="1QQeFk" id="2vEFX4zmTua" role="0nOlf" />
+    </node>
+    <node concept="0lH3_" id="2vEFX4zmT_w" role="1QQeBF" />
+  </node>
+</model>
+

@@ -160,7 +160,6 @@
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
       </concept>
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
-        <property id="7430509679011668804" name="counterVarName" index="1qytDF" />
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
       <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
@@ -539,7 +538,6 @@
                   </node>
                 </node>
                 <node concept="1WS0z7" id="6mm$FLYVpkR" role="lGtFl">
-                  <property role="1qytDF" value="" />
                   <ref role="2rW$FS" node="1ZsZb$iJcgr" resolve="param2Definition" />
                   <node concept="3JmXsc" id="6mm$FLYVpkT" role="3Jn$fo">
                     <node concept="3clFbS" id="6mm$FLYVpkV" role="2VODD2">

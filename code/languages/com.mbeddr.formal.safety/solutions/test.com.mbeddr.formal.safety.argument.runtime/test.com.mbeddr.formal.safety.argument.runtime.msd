@@ -9,6 +9,7 @@
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet type="tests" />
   </facets>
   <dependencies>
     <dependency reexport="false">81f324e1-38b1-44b1-85d2-19432dece3f6(com.mbeddr.formal.safety.argument.runtime.pluginSolution)</dependency>

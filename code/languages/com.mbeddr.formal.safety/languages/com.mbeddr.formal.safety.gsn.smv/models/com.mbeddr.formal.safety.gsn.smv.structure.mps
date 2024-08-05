@@ -30,9 +30,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
-        <property id="1225118933224" name="comment" index="YLQ7P" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -58,7 +55,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -217,20 +213,6 @@
     <property role="TrG5h" value="SupportedBySmvResultsBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
-  </node>
-  <node concept="1TIwiD" id="4i__4Gxs2uL">
-    <property role="EcuMT" value="4946522816140814257" />
-    <property role="TrG5h" value="ComponentInterfaceRef" />
-    <ref role="1TJDcQ" to="2qxf:6rlO$dpPTOC" resolve="AbstractComponentRef" />
-    <node concept="1TJgyj" id="4i__4Gxs2vk" role="1TKVEi">
-      <property role="IQ2ns" value="4946522816140814292" />
-      <property role="20kJfa" value="componentInterface" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
-    </node>
-    <node concept="asaX9" id="4MR8i$4iWhX" role="lGtFl">
-      <property role="YLQ7P" value="to remove from FASTEN in releases after March 2020" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4i__4Gxsq_o">
     <property role="EcuMT" value="4946522816140912984" />

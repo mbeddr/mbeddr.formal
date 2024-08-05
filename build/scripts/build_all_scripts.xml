@@ -9,7 +9,9 @@
   <property name="mbeddr.formal.safety.code" location="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety" />
   <property name="dependencies.root" location="${mbeddr.formal.home}/build/dependencies" />
   <property name="dependencies.mbeddr.platform" location="${dependencies.root}/com.mbeddr.platform" />
+  <property name="dependencies.mpsqa" location="${mbeddr.formal.home}/build/dependencies/org.mpsqa.allInOne" />
   <property name="artifacts.mps" location="${mps.home}" />
+  <property name="artifacts.org.mpsqa.base" location="${dependencies.mpsqa}" />
   <property name="artifacts.com.mbeddr.platform" location="${dependencies.mbeddr.platform}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.platform}/build.properties" prefix="import.com.mbeddr.platform" />
@@ -56,6 +58,7 @@
           <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
           <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
+          <module ref="5e8cea6b-997f-49b1-a8d8-dc2a7a6fa657(org.mpsqa.base.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -95,6 +98,7 @@
           <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
           <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
+          <module ref="5e8cea6b-997f-49b1-a8d8-dc2a7a6fa657(org.mpsqa.base.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -109,6 +113,7 @@
     </echoxml>
     <jar destfile="${build.layout}/com.fasten.assurance.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.fasten.assurance.build" />
+      <fileset dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build" includes="icons/**, resources/**" />
       <fileset dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.fasten.assurance.build.jar" />
     </jar>
@@ -157,6 +162,7 @@
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" />
+      <plugin path="${artifacts.org.mpsqa.base}/org.mpsqa.base.build" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/collections.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -260,6 +266,7 @@
       <macro name="mbeddr.formal.safety.code" path="${mbeddr.formal.safety.code}" />
       <macro name="dependencies.root" path="${dependencies.root}" />
       <macro name="dependencies.mbeddr.platform" path="${dependencies.mbeddr.platform}" />
+      <macro name="dependencies.mpsqa" path="${dependencies.mpsqa}" />
     </generate>
   </target>
   
@@ -278,6 +285,7 @@
       <classpath>
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build/languages/de.itemis.mps.extensions.build/de.itemis.mps.extensions.build.jar" />
+        <fileset file="${artifacts.org.mpsqa.base}/org.mpsqa.base.build/languages/build/org.mpsqa.base.build.jar" />
       </classpath>
     </javac>
   </target>
@@ -293,6 +301,7 @@
       <classpath>
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build/languages/de.itemis.mps.extensions.build/de.itemis.mps.extensions.build.jar" />
+        <fileset file="${artifacts.org.mpsqa.base}/org.mpsqa.base.build/languages/build/org.mpsqa.base.build.jar" />
       </classpath>
     </javac>
   </target>

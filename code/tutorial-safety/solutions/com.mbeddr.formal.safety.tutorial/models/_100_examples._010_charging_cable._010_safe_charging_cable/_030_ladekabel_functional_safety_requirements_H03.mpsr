@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:28d45899-cb06-44a2-a245-407cc7013b3d(_100_examples._010_charging_cable._010_safe_charging_cable)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl">
+        <child id="7127433683365164021" name="subRequirements" index="1VMWzp" />
+      </concept>
+      <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
+        <child id="3226630706270140651" name="text" index="0nzdz" />
+      </concept>
+      <concept id="4908298719893728799" name="com.mbeddr.formal.req.base.structure.EmptySpec" flags="ng" index="1QQeAL" />
+      <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
+        <child id="4908298719893728789" name="spec" index="1QQeAV" />
+      </concept>
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706270020326" name="createdBy" index="0ke_I" />
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="4908298719893728774" name="specs" index="1QQeAC" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
+    <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
+      <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.FunctionalSafetyReqKind" flags="ng" index="2iDXIW">
+        <child id="7998766141987827641" name="hazards" index="DABNk" />
+      </concept>
+    </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
+        <reference id="7998766141987827622" name="hazard" index="DABNb" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1QQeGf" id="2UkUklpZtUR">
+    <property role="TrG5h" value="_030_ladekabel_functional_safety_requirements_H03" />
+    <node concept="0lhDl" id="7n39yospbe0" role="1QQeBF">
+      <property role="0lsPA" value="FSR03" />
+      <property role="0ke_I" value="Hannes" />
+      <node concept="1QQeAY" id="6W1kQP6__m_" role="1QQeAC">
+        <node concept="0nzK2" id="6W1kQP6__mB" role="1QQeAV">
+          <node concept="19SGf9" id="6W1kQP6__mD" role="0nzdz">
+            <node concept="19SUe$" id="6W1kQP6__mE" role="19SJt6">
+              <property role="19SUeA" value="The cable temperature shall not exceed 60 degrees Celsius." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeAL" id="6W1kQP6__mx" role="1QQeAC" />
+      <node concept="0lhDl" id="7n39yospbep" role="1VMWzp">
+        <property role="0lsPA" value="FSR03.01" />
+        <property role="0ke_I" value="Hannes" />
+        <node concept="1QQeAY" id="6W1kQP6__mT" role="1QQeAC">
+          <node concept="0nzK2" id="6W1kQP6__mV" role="1QQeAV">
+            <node concept="19SGf9" id="6W1kQP6__mX" role="0nzdz">
+              <node concept="19SUe$" id="6W1kQP6__mY" role="19SJt6">
+                <property role="19SUeA" value="The temperature of the InControlBox shall not exceed 60 degrees Celsius." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="19SGf9" id="7n39yospber" role="1QQeG9">
+          <node concept="19SUe$" id="7n39yospbes" role="19SJt6">
+            <property role="19SUeA" value="InControlBox temperature" />
+          </node>
+        </node>
+        <node concept="2iDXIW" id="7n39yospbeW" role="0nOlf">
+          <node concept="DABN8" id="6W1kQP6Bq6o" role="DABNk">
+            <ref role="DABNb" node="3TSGpjyFlES" resolve="Cable temperature too high" />
+          </node>
+          <node concept="DABN8" id="66sW2d$Fg2v" role="DABNk">
+            <ref role="DABNb" node="3TSGpjyFlFy" resolve="Smoke comes out of the cable" />
+          </node>
+          <node concept="DABN8" id="2UkUklpZvWa" role="DABNk">
+            <ref role="DABNb" node="3TSGpjyFlFy" resolve="Smoke comes out of the cable" />
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="7n39yospbe2" role="1QQeG9">
+        <node concept="19SUe$" id="7n39yospbe3" role="19SJt6">
+          <property role="19SUeA" value="Over-temperature protection" />
+        </node>
+      </node>
+      <node concept="2iDXIW" id="7n39yospbeR" role="0nOlf">
+        <node concept="DABN8" id="6W1kQP6Bq6q" role="DABNk">
+          <ref role="DABNb" node="3TSGpjyFlES" resolve="Cable temperature too high" />
+        </node>
+        <node concept="DABN8" id="6W1kQP6Bzra" role="DABNk">
+          <ref role="DABNb" node="3TSGpjyFlFy" resolve="Smoke comes out of the cable" />
+        </node>
+        <node concept="DABN8" id="2UkUklpZvW1" role="DABNk">
+          <ref role="DABNb" node="3TSGpjyFlFc" resolve="The cable catches fire" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

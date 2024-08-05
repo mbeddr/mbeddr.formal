@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="5X1JwjFKKLJ">
+    <property role="TrG5h" value="extract_from_G1.4.1.9" />
+    <property role="3GE5qa" value="1_nominal_operation.1_4_SDV_:operations" />
+    <node concept="2vn7WC" id="1e9opmpdGck" role="2vn1q5">
+      <property role="TrG5h" value="G1.4.1.9" />
+      <node concept="19SGf9" id="1e9opmpdHw9" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0X" role="19SJt6">
+          <property role="19SUeA" value="The Mission Specialist is alert and attentive&#10;to the road environment " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGcm" role="2vn1q5">
+      <property role="TrG5h" value="G1.4.1.9.1" />
+      <node concept="19SGf9" id="1e9opmpdHwa" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0Y" role="19SJt6">
+          <property role="19SUeA" value="A Driver Monitoring System alerts the&#10;Mission Specialist to inattention " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGco" role="2vn1q5">
+      <property role="TrG5h" value="G1.4.1.9.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHwb" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK0Z" role="19SJt6">
+          <property role="19SUeA" value="The driver monitor system is present&#10;and functional whenever the vehicle is&#10;in motion " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcq" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.1.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHwc" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK10" role="19SJt6">
+          <property role="19SUeA" value="Daily commissioning test results showing&#10;the driver / operator monitoring system&#10;is functional prior to starting RVT\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcs" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.1.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHwd" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK11" role="19SJt6">
+          <property role="19SUeA" value="Justification in-use failures of the&#10;driver monitor system can be detected" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGcu" role="2vn1q5">
+      <property role="TrG5h" value="G1.4.1.9.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHwe" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK12" role="19SJt6">
+          <property role="19SUeA" value="The false negative error rate of the&#10;driver monitoring system is acceptably&#10;low\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcw" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.1.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHwf" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK13" role="19SJt6">
+          <property role="19SUeA" value="Performance requirements for driver /&#10;operator monitoring system in NVO\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcy" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.1.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHwg" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK14" role="19SJt6">
+          <property role="19SUeA" value="Test results showing performance of driver&#10;/ operator monitoring system in NVO\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGc$" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.1.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHwh" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK15" role="19SJt6">
+          <property role="19SUeA" value="Peer review and approval of performance&#10;requirements for driver / operator monitoring&#10;system " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGcA" role="2vn1q5">
+      <property role="TrG5h" value="G1.4.1.9.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHwi" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK16" role="19SJt6">
+          <property role="19SUeA" value="Periodic and random auditing of the driver&#10;monitoring logs are conducted to confirm&#10;the false negative error rate\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcC" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.1.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHwj" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK17" role="19SJt6">
+          <property role="19SUeA" value="Audit schedule\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcE" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.1.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHwk" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK18" role="19SJt6">
+          <property role="19SUeA" value="Audit results " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGcG" role="2vn1q5">
+      <property role="TrG5h" value="G1.4.1.9.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHwl" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK19" role="19SJt6">
+          <property role="19SUeA" value="All true positive triggers of the driver&#10;monitoring system are reviewed and corrective&#10;action taken\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcI" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.1.4.1" />
+      <node concept="19SGf9" id="1e9opmpdHwm" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK1a" role="19SJt6">
+          <property role="19SUeA" value="Anomaly report for true positive triggers\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcK" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.1.4.2" />
+      <node concept="19SGf9" id="1e9opmpdHwn" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK1b" role="19SJt6">
+          <property role="19SUeA" value="Corrective action &amp; closure of anomaly\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcM" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.1.4.3" />
+      <node concept="19SGf9" id="1e9opmpdHwo" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK1c" role="19SJt6">
+          <property role="19SUeA" value="Anomaly resolution process " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGcO" role="2vn1q5">
+      <property role="TrG5h" value="G1.4.1.9.2" />
+      <node concept="19SGf9" id="1e9opmpdHwp" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK1d" role="19SJt6">
+          <property role="19SUeA" value="The Self-Driving Vehicle is designed&#10;to prevent undue Mission Specialist distraction\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcQ" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHwq" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK1e" role="19SJt6">
+          <property role="19SUeA" value="Vehicle Operations Policies and Procedures\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcS" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHwr" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK1f" role="19SJt6">
+          <property role="19SUeA" value="Analysis of Vehicle Operations roles&#10;for left and right seat\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcU" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHws" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK1g" role="19SJt6">
+          <property role="19SUeA" value="Peer review and approval of role changes&#10;in excess of a manually driven vehicle" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGcW" role="2vn1q5">
+      <property role="TrG5h" value="G1.4.1.9.3" />
+      <node concept="19SGf9" id="1e9opmpdHwt" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK1h" role="19SJt6">
+          <property role="19SUeA" value="The Mission Specialist is capable of&#10;identifying and mitigating Operational&#10;Design Domain (ODD) and Operational Domain&#10;(OD) mismatch\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGcY" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHwu" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK1i" role="19SJt6">
+          <property role="19SUeA" value="Fault injection testing in Mission Specialist&#10;Training\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGd0" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHwv" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK1j" role="19SJt6">
+          <property role="19SUeA" value="E-stop testing in Mission Specialist&#10;Training\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGd2" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.3.3" />
+      <node concept="19SGf9" id="1e9opmpdHww" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK1k" role="19SJt6">
+          <property role="19SUeA" value="Coverage of fault injection testing to&#10;defined ODD\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGd4" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.4.1.9.3.4" />
+      <node concept="19SGf9" id="1e9opmpdHwx" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK1l" role="19SJt6">
+          <property role="19SUeA" value="Post-mission log review &amp; anomaly detection&#10;for efficacy of Mission Specialist " />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcn" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGck" resolve="G1.4.1.9" />
+      <ref role="3VeSjQ" node="1e9opmpdGcm" resolve="G1.4.1.9.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcp" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGcm" resolve="G1.4.1.9.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGco" resolve="G1.4.1.9.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcr" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGcq" resolve="Sn1.4.1.9.1.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdGco" resolve="G1.4.1.9.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGct" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGcs" resolve="Sn1.4.1.9.1.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdGco" resolve="G1.4.1.9.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcv" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGcm" resolve="G1.4.1.9.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGcu" resolve="G1.4.1.9.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcx" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGcu" resolve="G1.4.1.9.1.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGcw" resolve="Sn1.4.1.9.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcz" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGcu" resolve="G1.4.1.9.1.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGcy" resolve="Sn1.4.1.9.1.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGc_" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGc$" resolve="Sn1.4.1.9.1.2.3" />
+      <ref role="3VeSjP" node="1e9opmpdGcu" resolve="G1.4.1.9.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcB" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGcm" resolve="G1.4.1.9.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGcA" resolve="G1.4.1.9.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcD" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGcC" resolve="Sn1.4.1.9.1.3.1" />
+      <ref role="3VeSjP" node="1e9opmpdGcA" resolve="G1.4.1.9.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcF" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGcE" resolve="Sn1.4.1.9.1.3.2" />
+      <ref role="3VeSjP" node="1e9opmpdGcA" resolve="G1.4.1.9.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcH" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGcm" resolve="G1.4.1.9.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGcG" resolve="G1.4.1.9.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcJ" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGcI" resolve="Sn1.4.1.9.1.4.1" />
+      <ref role="3VeSjP" node="1e9opmpdGcG" resolve="G1.4.1.9.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcL" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGcK" resolve="Sn1.4.1.9.1.4.2" />
+      <ref role="3VeSjP" node="1e9opmpdGcG" resolve="G1.4.1.9.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcN" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGcM" resolve="Sn1.4.1.9.1.4.3" />
+      <ref role="3VeSjP" node="1e9opmpdGcG" resolve="G1.4.1.9.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcP" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGck" resolve="G1.4.1.9" />
+      <ref role="3VeSjQ" node="1e9opmpdGcO" resolve="G1.4.1.9.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcR" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGcO" resolve="G1.4.1.9.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGcQ" resolve="Sn1.4.1.9.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcT" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGcO" resolve="G1.4.1.9.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGcS" resolve="Sn1.4.1.9.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcV" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGcU" resolve="Sn1.4.1.9.2.3" />
+      <ref role="3VeSjP" node="1e9opmpdGcO" resolve="G1.4.1.9.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcX" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGck" resolve="G1.4.1.9" />
+      <ref role="3VeSjQ" node="1e9opmpdGcW" resolve="G1.4.1.9.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGcZ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGcW" resolve="G1.4.1.9.3" />
+      <ref role="3VeSjQ" node="1e9opmpdGcY" resolve="Sn1.4.1.9.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGd1" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGd0" resolve="Sn1.4.1.9.3.2" />
+      <ref role="3VeSjP" node="1e9opmpdGcW" resolve="G1.4.1.9.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGd3" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGcW" resolve="G1.4.1.9.3" />
+      <ref role="3VeSjQ" node="1e9opmpdGd2" resolve="Sn1.4.1.9.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGd5" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGd4" resolve="Sn1.4.1.9.3.4" />
+      <ref role="3VeSjP" node="1e9opmpdGcW" resolve="G1.4.1.9.3" />
+    </node>
+  </node>
+</model>
+

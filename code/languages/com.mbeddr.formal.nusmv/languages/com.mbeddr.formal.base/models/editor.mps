@@ -7,7 +7,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
-    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="0" />
+    <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="1" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
@@ -620,6 +620,27 @@
         </node>
       </node>
     </node>
+    <node concept="Wx3nA" id="3Q78AXIZrq" role="jymVt">
+      <property role="TrG5h" value="KEYWORD_LIGHT_BLUE" />
+      <node concept="3Tm1VV" id="3Q78AXIZrr" role="1B3o_S" />
+      <node concept="3uibUv" id="3Q78AXIZrs" role="1tU5fm">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+      <node concept="2ShNRf" id="3Q78AXIZrt" role="33vP2m">
+        <node concept="1pGfFk" id="3Q78AXIZru" role="2ShVmc">
+          <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int)" resolve="Color" />
+          <node concept="3cmrfG" id="3Q78AXIZrv" role="37wK5m">
+            <property role="3cmrfH" value="0" />
+          </node>
+          <node concept="3cmrfG" id="3Q78AXIZrw" role="37wK5m">
+            <property role="3cmrfH" value="210" />
+          </node>
+          <node concept="3cmrfG" id="3Q78AXJbUG" role="37wK5m">
+            <property role="3cmrfH" value="255" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="Wx3nA" id="KwKRgpJugV" role="jymVt">
       <property role="TrG5h" value="KEYWORD_DARK_BLUE" />
       <node concept="3Tm1VV" id="KwKRgpJugW" role="1B3o_S" />
@@ -641,7 +662,37 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4afdSTbPIoh" role="jymVt" />
+    <node concept="Wx3nA" id="4afdSTbPIhl" role="jymVt">
+      <property role="TrG5h" value="KEYWORD_GREEN_DARK" />
+      <node concept="3Tm1VV" id="4afdSTbPIhm" role="1B3o_S" />
+      <node concept="3uibUv" id="4afdSTbPIhn" role="1tU5fm">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+      <node concept="2YIFZM" id="42Yf_hF11Mi" role="33vP2m">
+        <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
+        <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+        <node concept="Xl_RD" id="42Yf_hF11Mj" role="37wK5m">
+          <property role="Xl_RC" value="#01C60B" />
+        </node>
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4afdSTbQoB4" role="jymVt">
+      <property role="TrG5h" value="KEYWORD_GREEN_LIGHT" />
+      <node concept="3Tm1VV" id="4afdSTbQoB5" role="1B3o_S" />
+      <node concept="3uibUv" id="4afdSTbQoB6" role="1tU5fm">
+        <ref role="3uigEE" to="z60i:~Color" resolve="Color" />
+      </node>
+      <node concept="2YIFZM" id="42Yf_hF11Md" role="33vP2m">
+        <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
+        <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
+        <node concept="Xl_RD" id="42Yf_hF11Me" role="37wK5m">
+          <property role="Xl_RC" value="#017507" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="KwKRgpJueU" role="jymVt" />
+    <node concept="2tJIrI" id="4afdSTbPIfQ" role="jymVt" />
     <node concept="Wx3nA" id="y826GEUxbz" role="jymVt">
       <property role="TrG5h" value="INACTIVE" />
       <node concept="3Tm1VV" id="y826GEUxb$" role="1B3o_S" />
@@ -1969,8 +2020,8 @@
                     <ref role="3cqZAo" node="2CEi94emCnI" resolve="KEYWORD_BLUE" />
                     <ref role="1PxDUh" node="4tRpPVPUEa3" resolve="BasicColors" />
                   </node>
-                  <node concept="10M0yZ" id="8xY_IhAb1I" role="37wK5m">
-                    <ref role="3cqZAo" node="2CEi94emCnI" resolve="KEYWORD_BLUE" />
+                  <node concept="10M0yZ" id="4afdSTbQY$w" role="37wK5m">
+                    <ref role="3cqZAo" node="4afdSTbQoB4" resolve="KEYWORD_GREEN_LIGHT" />
                     <ref role="1PxDUh" node="4tRpPVPUEa3" resolve="BasicColors" />
                   </node>
                 </node>
@@ -1997,8 +2048,8 @@
                     <ref role="3cqZAo" node="KwKRgpJugV" resolve="KEYWORD_DARK_BLUE" />
                     <ref role="1PxDUh" node="4tRpPVPUEa3" resolve="BasicColors" />
                   </node>
-                  <node concept="10M0yZ" id="8xY_IhAbdL" role="37wK5m">
-                    <ref role="3cqZAo" node="KwKRgpJugV" resolve="KEYWORD_DARK_BLUE" />
+                  <node concept="10M0yZ" id="3Q78AXJuEw" role="37wK5m">
+                    <ref role="3cqZAo" node="3Q78AXIZrq" resolve="KEYWORD_LIGHT_BLUE" />
                     <ref role="1PxDUh" node="4tRpPVPUEa3" resolve="BasicColors" />
                   </node>
                 </node>
@@ -4351,6 +4402,26 @@
       <property role="TrG5h" value="AnnotationProviderStyle" />
       <node concept="VSNWy" id="65LrkjiZl6c" role="3F10Kt">
         <property role="1lJzqX" value="8" />
+        <node concept="1cFabM" id="3Q78AXT7ST" role="1d8cEk">
+          <node concept="3clFbS" id="3Q78AXT7SU" role="2VODD2">
+            <node concept="3clFbF" id="3Q78AXM_3g" role="3cqZAp">
+              <node concept="3cpWsd" id="3Q78AXM_3h" role="3clFbG">
+                <node concept="3cmrfG" id="3Q78AXM_3i" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="2OqwBi" id="3Q78AXM_3j" role="3uHU7B">
+                  <node concept="2YIFZM" id="3Q78AXM_3k" role="2Oq$k0">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                  </node>
+                  <node concept="liA8E" id="3Q78AXM_3l" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2biZxu" id="65LrkjiZl6h" role="3F10Kt">
         <property role="1rj3mz" value="Arial" />
@@ -4399,9 +4470,9 @@
                     <ref role="3cqZAo" node="2CEi94emCnI" resolve="KEYWORD_BLUE" />
                     <ref role="1PxDUh" node="4tRpPVPUEa3" resolve="BasicColors" />
                   </node>
-                  <node concept="10M0yZ" id="4I1OjAqvnma" role="37wK5m">
+                  <node concept="10M0yZ" id="4afdSTbQp0P" role="37wK5m">
+                    <ref role="3cqZAo" node="4afdSTbQoB4" resolve="KEYWORD_GREEN_LIGHT" />
                     <ref role="1PxDUh" node="4tRpPVPUEa3" resolve="BasicColors" />
-                    <ref role="3cqZAo" node="2CEi94emCnI" resolve="KEYWORD_BLUE" />
                   </node>
                 </node>
               </node>

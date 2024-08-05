@@ -4,10 +4,11 @@
   <languages>
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -167,9 +168,6 @@
       </concept>
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
@@ -180,6 +178,20 @@
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
@@ -253,8 +265,12 @@
       <node concept="3Tm1VV" id="49yFphTYenV" role="1B3o_S" />
       <node concept="10P_77" id="49yFphTYenW" role="1tU5fm" />
       <node concept="3clFbT" id="49yFphTYenX" role="33vP2m" />
-      <node concept="NWlO9" id="49yFphTYenY" role="lGtFl">
-        <property role="NWlVz" value="Should we debug?" />
+      <node concept="z59LJ" id="1y75Pbzy1wQ" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1wO" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1wP" role="1dT_Ay">
+            <property role="1dT_AB" value="Should we debug?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="49yFphTYenG" role="jymVt" />
@@ -272,8 +288,12 @@
           <node concept="2I9FWS" id="49yFphTYeoY" role="3rHtpV" />
         </node>
       </node>
-      <node concept="NWlO9" id="49yFphTYeo2" role="lGtFl">
-        <property role="NWlVz" value="Cache that maps a program location to all possible original nodes." />
+      <node concept="z59LJ" id="1y75Pbzy1wT" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1wR" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1wS" role="1dT_Ay">
+            <property role="1dT_AB" value="Cache that maps a program location to all possible original nodes." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="49yFphTYenI" role="jymVt" />
@@ -301,8 +321,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="49yFphTYeo6" role="lGtFl">
-        <property role="NWlVz" value="Cache that prevents many reads of the trace.info file." />
+      <node concept="z59LJ" id="1y75Pbzy1wW" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1wU" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1wV" role="1dT_Ay">
+            <property role="1dT_AB" value="Cache that prevents many reads of the trace.info file." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="49yFphTYenK" role="jymVt" />
@@ -330,8 +354,12 @@
       </node>
       <node concept="3Tm1VV" id="49yFphTYeo8" role="1B3o_S" />
       <node concept="3cqZAl" id="49yFphTYeo9" role="3clF45" />
-      <node concept="NWlO9" id="49yFphTYeoa" role="lGtFl">
-        <property role="NWlVz" value="Clears the cache for original nodes." />
+      <node concept="P$JXv" id="1y75Pbzy1wZ" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1wX" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1wY" role="1dT_Ay">
+            <property role="1dT_AB" value="Clears the cache for original nodes." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="49yFphTYenM" role="jymVt" />
@@ -375,8 +403,12 @@
       <node concept="3uibUv" id="49yFphTYeog" role="Sfmx6">
         <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
       </node>
-      <node concept="NWlO9" id="49yFphTYeoh" role="lGtFl">
-        <property role="NWlVz" value="Returns the first original node that is traced to a certain file and line." />
+      <node concept="P$JXv" id="1y75Pbzy1x2" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1x0" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1x1" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the first original node that is traced to a certain file and line." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="49yFphTYenO" role="jymVt" />
@@ -736,8 +768,12 @@
       <node concept="3uibUv" id="49yFphTYeon" role="Sfmx6">
         <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
       </node>
-      <node concept="NWlO9" id="49yFphTYeoo" role="lGtFl">
-        <property role="NWlVz" value="Returns all possible original nodes that can be traced to a certain file and line." />
+      <node concept="P$JXv" id="1y75Pbzy1x5" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1x3" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1x4" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns all possible original nodes that can be traced to a certain file and line." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="49yFphTYenQ" role="jymVt" />
@@ -907,8 +943,12 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="49yFphTYenT" role="1B3o_S" />
-    <node concept="NWlO9" id="49yFphTYenU" role="lGtFl">
-      <property role="NWlVz" value="Facade for tracing lines from generated files to nodes." />
+    <node concept="3UR2Jj" id="1y75Pbzy1x8" role="lGtFl">
+      <node concept="TZ5HA" id="1y75Pbzy1x6" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75Pbzy1x7" role="1dT_Ay">
+          <property role="1dT_AB" value="Facade for tracing lines from generated files to nodes." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="49yFphTYeaK">
@@ -1137,8 +1177,12 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="49yFphTYeb6" role="1B3o_S" />
-      <node concept="NWlO9" id="49yFphTYeb7" role="lGtFl">
-        <property role="NWlVz" value="Returns the full unit name from a full path -- e.g. a.b.file from /Users/.../source_gen/a/b/file.c" />
+      <node concept="P$JXv" id="1y75Pbzy1xb" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1x9" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1xa" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the full unit name from a full path -- e.g. a.b.file from /Users/.../source_gen/a/b/file.c" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="49yFphTYeaQ" role="jymVt" />
@@ -1263,12 +1307,20 @@
         <ref role="3uigEE" to="wyt6:~IllegalArgumentException" resolve="IllegalArgumentException" />
       </node>
       <node concept="3Tm1VV" id="49yFphTYebg" role="1B3o_S" />
-      <node concept="NWlO9" id="4yl5rmQRA40" role="lGtFl">
-        <property role="NWlVz" value="Returns the unit name - e.g. pack1.pack2.pack3.root_node_name" />
+      <node concept="P$JXv" id="1y75Pbzy1xe" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1xc" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1xd" role="1dT_Ay">
+            <property role="1dT_AB" value="Returns the unit name - e.g. pack1.pack2.pack3.root_node_name" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="NWlO9" id="49yFphTYeaW" role="lGtFl">
-      <property role="NWlVz" value="General utility methods." />
+    <node concept="3UR2Jj" id="1y75Pbzy1xh" role="lGtFl">
+      <node concept="TZ5HA" id="1y75Pbzy1xf" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75Pbzy1xg" role="1dT_Ay">
+          <property role="1dT_AB" value="General utility methods." />
+        </node>
+      </node>
     </node>
   </node>
 </model>

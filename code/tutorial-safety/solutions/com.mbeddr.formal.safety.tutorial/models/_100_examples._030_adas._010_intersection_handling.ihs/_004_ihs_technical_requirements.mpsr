@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:0a67385e-17ec-4148-b1f8-83ce752e9242(_100_examples._030_adas._010_intersection_handling.ihs)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
+      <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
+        <child id="3226630706270140651" name="text" index="0nzdz" />
+      </concept>
+      <concept id="675797132014971920" name="com.mbeddr.formal.req.base.structure.RefinementAttribute" flags="ng" index="KAwnT">
+        <child id="675797132015040231" name="referencedRequirements" index="KALWe" />
+      </concept>
+      <concept id="675797132014971924" name="com.mbeddr.formal.req.base.structure.AbstractRequirementRef" flags="ng" index="KAwnX">
+        <reference id="675797132014971925" name="req" index="KAwnW" />
+      </concept>
+      <concept id="3337148140221778980" name="com.mbeddr.formal.req.base.structure.Technical" flags="ng" index="1qyqaD" />
+      <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
+        <child id="4908298719893728789" name="spec" index="1QQeAV" />
+      </concept>
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706270020326" name="createdBy" index="0ke_I" />
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="6025137760892668610" name="attributes" index="2FklKs" />
+        <child id="4908298719893728774" name="specs" index="1QQeAC" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1QQeGf" id="3Jn$RV2VwJg">
+    <property role="TrG5h" value="_004_ihs_technical_requirements" />
+    <property role="3GE5qa" value="_000_item_definition" />
+    <node concept="0lhDl" id="3Jn$RV2VwJh" role="1QQeBF">
+      <property role="0lsPA" value="TR01" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="19SGf9" id="3Jn$RV2VwJn" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2VwJB" role="19SJt6">
+          <property role="19SUeA" value="180 Degrees Sensing Capabilties" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2VwJo" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2VwJC" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2VwJL" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2VwJQ" role="19SJt6">
+              <property role="19SUeA" value="The system shall perceive the operational environment &#10;within a range of 180 degrees around the vehicle." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1qyqaD" id="3Jn$RV2VwJp" role="0nOlf" />
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwJi" role="1QQeBF">
+      <property role="0lsPA" value="TR02" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="1QQeAY" id="3Jn$RV2VwJq" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2VwJD" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2VwJM" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2VwJR" role="19SJt6">
+              <property role="19SUeA" value="The system shall communicate with the connected infrastructure &#10;by a means of V2X communication, acquiring data about TPO, VRU &#10;and other objects localized at least 150 meters before the intersection." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="3Jn$RV2VwJr" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2VwJE" role="19SJt6">
+          <property role="19SUeA" value="V2X Capabilities" />
+        </node>
+      </node>
+      <node concept="1qyqaD" id="3Jn$RV2VwJs" role="0nOlf" />
+      <node concept="KAwnT" id="ZH03rPhIxx" role="2FklKs">
+        <node concept="KAwnX" id="ZH03rPhIx$" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwH6" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwJj" role="1QQeBF">
+      <property role="0lsPA" value="TR03" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="1QQeAY" id="3Jn$RV2VwJt" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2VwJF" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2VwJN" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2VwJS" role="19SJt6">
+              <property role="19SUeA" value="The system shall use ego vehicle capabilities if &#10;the communication with the infrastructure is not available &#10;at least 150 meters before the intersection." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1qyqaD" id="3Jn$RV2VwJu" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2VwJv" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2VwJG" role="19SJt6">
+          <property role="19SUeA" value="Ego Vehicle Sensing Capabilities" />
+        </node>
+      </node>
+      <node concept="KAwnT" id="ZH03rPhIxs" role="2FklKs">
+        <node concept="KAwnX" id="ZH03rPhIxv" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwH8" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwJk" role="1QQeBF">
+      <property role="0lsPA" value="TR04" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="1QQeAY" id="3Jn$RV2VwJw" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2VwJH" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2VwJO" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2VwJT" role="19SJt6">
+              <property role="19SUeA" value="The system shall ask the driver to hand over the control of the car &#10;when approaching to 150 meters of intersection." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1qyqaD" id="3Jn$RV2VwJx" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2VwJy" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2VwJI" role="19SJt6">
+          <property role="19SUeA" value="Takeover Request" />
+        </node>
+      </node>
+      <node concept="KAwnT" id="ZH03rPhIxn" role="2FklKs">
+        <node concept="KAwnX" id="ZH03rPhIxq" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwHd" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwJl" role="1QQeBF">
+      <property role="0lsPA" value="TR05" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="1QQeAY" id="3Jn$RV2VwJz" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2VwJJ" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2VwJP" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2VwJU" role="19SJt6">
+              <property role="19SUeA" value="The system of interest shall issue control commands towards other &#10;in-vehicle systems to reach the targeted intersection exit, &#10;while ensuring a comfortable driving experience." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1qyqaD" id="3Jn$RV2VwJ$" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2VwJ_" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2VwJK" role="19SJt6">
+          <property role="19SUeA" value="Control Capabilities" />
+        </node>
+      </node>
+      <node concept="KAwnT" id="ZH03rPhIxi" role="2FklKs">
+        <node concept="KAwnX" id="ZH03rPhIxl" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwHf" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

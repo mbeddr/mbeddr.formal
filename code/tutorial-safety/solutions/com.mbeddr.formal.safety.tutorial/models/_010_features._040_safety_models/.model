@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._040_safety_models)" content="header">
+  <persistence version="9" />
+  <languages>
+    <devkit ref="bf74abbc-7521-4990-984c-b43ecaf32ba1(fasten.safety.fmea)" />
+    <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
+    <devkit ref="cc8f24e6-1235-41ad-b4fc-f9b70bfca7d7(fasten.safety.fmea.arch)" />
+  </languages>
+  <imports />
+</model>
+

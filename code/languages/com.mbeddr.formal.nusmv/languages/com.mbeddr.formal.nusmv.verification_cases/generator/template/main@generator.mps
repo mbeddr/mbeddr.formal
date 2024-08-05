@@ -101,7 +101,6 @@
       </concept>
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
-        <property id="7430509679011668804" name="counterVarName" index="1qytDF" />
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
       <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
@@ -472,7 +471,6 @@
                   </node>
                 </node>
                 <node concept="1WS0z7" id="4Hts7PYEvaW" role="lGtFl">
-                  <property role="1qytDF" value="" />
                   <node concept="3JmXsc" id="4Hts7PYEvaY" role="3Jn$fo">
                     <node concept="3clFbS" id="4Hts7PYEvb0" role="2VODD2">
                       <node concept="3clFbF" id="4Hts7PYEvgc" role="3cqZAp">
@@ -536,7 +534,6 @@
                   </node>
                 </node>
                 <node concept="1WS0z7" id="6mm$FLYVpkR" role="lGtFl">
-                  <property role="1qytDF" value="" />
                   <ref role="2rW$FS" node="1ZsZb$iJcgr" resolve="param2Definition" />
                   <node concept="3JmXsc" id="6mm$FLYVpkT" role="3Jn$fo">
                     <node concept="3clFbS" id="6mm$FLYVpkV" role="2VODD2">

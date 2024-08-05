@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:ffdc23de-2347-43cf-8b68-9eee3e234e66(doc)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="c3og" ref="r:03da4936-751b-48d2-80dc-ab1f2a2cdd5b(_010_features._010_requirements)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="4317007310193476045" name="com.mbeddr.doc.structure.ScaleDownNotUp100" flags="ng" index="2bctqb" />
+      <concept id="6657644269295214799" name="com.mbeddr.doc.structure.IDocumentLike" flags="ng" index="G9hjZ">
+        <reference id="6657644269295214800" name="config" index="G9hjw" />
+      </concept>
+      <concept id="2286331641395252232" name="com.mbeddr.doc.structure.NamedNodeModelContentPointerElement" flags="ng" index="2NCMab">
+        <reference id="2286331641395252233" name="node" index="2NCMaa" />
+      </concept>
+      <concept id="2286331641395238583" name="com.mbeddr.doc.structure.ModelContentPointer" flags="ng" index="2NCZwO">
+        <child id="2286331641395252236" name="elements" index="2NCMaf" />
+      </concept>
+      <concept id="6386504476136263187" name="com.mbeddr.doc.structure.ImageParagraph" flags="ng" index="2SaynC">
+        <property id="6386504476136358630" name="showImage" index="2Sbq$t" />
+        <reference id="2587259889032869885" name="originalNode" index="1wz7Nk" />
+        <child id="6386504476136278696" name="description" index="2SaI5j" />
+        <child id="6386504476136531838" name="resource" index="2SbwM5" />
+        <child id="8624890525767908695" name="sizeSpec" index="3SHJ_F" />
+      </concept>
+      <concept id="6386504476136521407" name="com.mbeddr.doc.structure.Resource" flags="ng" index="2Sb_l4">
+        <property id="6386504476136521408" name="fileName" index="2Sb_kV" />
+        <reference id="6386504476136521409" name="path" index="2Sb_kU" />
+      </concept>
+      <concept id="4208238404730191274" name="com.mbeddr.doc.structure.Chapter" flags="ng" index="1mvXsy" />
+      <concept id="6955693250238922827" name="com.mbeddr.doc.structure.ModelContentAsImageParagraph" flags="ng" index="3z_lpz">
+        <child id="6955693250238922832" name="description" index="3z_lpS" />
+        <child id="6955693250238922833" name="sizeSpec" index="3z_lpT" />
+      </concept>
+      <concept id="6955693250238922820" name="com.mbeddr.doc.structure.AbstractModelContentParagraph" flags="ng" index="3z_lpG">
+        <property id="6955693250238922823" name="showContents" index="3z_lpJ" />
+        <child id="6955693250238922822" name="codeptr" index="3z_lpI" />
+      </concept>
+      <concept id="3350625596580089586" name="com.mbeddr.doc.structure.TextParagraph" flags="ng" index="1_0LV8">
+        <child id="3350625596580089613" name="text" index="1_0LWR" />
+      </concept>
+      <concept id="3350625596580064249" name="com.mbeddr.doc.structure.IDocContentContainer" flags="ng" index="1_0VJ3">
+        <child id="3350625596580064250" name="contents" index="1_0VJ0" />
+      </concept>
+      <concept id="3350625596580064222" name="com.mbeddr.doc.structure.AbstractSection" flags="ng" index="1_0VJ$">
+        <property id="3350625596580064225" name="text" index="1_0VJr" />
+      </concept>
+      <concept id="3350625596580064455" name="com.mbeddr.doc.structure.Section" flags="ng" index="1_0VNX" />
+      <concept id="3350625596579911728" name="com.mbeddr.doc.structure.Document" flags="ng" index="1_1swa">
+        <property id="5572730672710143343" name="chapterStartIndex" index="yApLE" />
+      </concept>
+    </language>
+    <language id="d4280a54-f6df-4383-aa41-d1b2bffa7eb1" name="com.mbeddr.core.base">
+      <concept id="8375407818529178006" name="com.mbeddr.core.base.structure.TextBlock" flags="ng" index="OjmMv">
+        <child id="8375407818529178007" name="text" index="OjmMu" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1_1swa" id="2rbLpQ_WohI">
+    <property role="yApLE" value="1" />
+    <property role="TrG5h" value="_010_requirements_modeling" />
+    <property role="3GE5qa" value="features" />
+    <ref role="G9hjw" node="2mjHtwTu9dY" resolve="conf" />
+    <node concept="1mvXsy" id="4U3OABz7KUi" role="1_0VJ0">
+      <property role="TrG5h" value="requirements" />
+      <property role="1_0VJr" value="Requirements Specification" />
+      <node concept="1_0LV8" id="4U3OABz7KUm" role="1_0VJ0">
+        <node concept="19SGf9" id="4U3OABz7KUn" role="1_0LWR">
+          <node concept="19SUe$" id="4U3OABz7KUo" role="19SJt6">
+            <property role="19SUeA" value="FASTEN offers the possibility to combine textual requirements specifications with more formal ones." />
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="4U3OABz7LfW" role="1_0VJ0">
+        <property role="TrG5h" value="plain_textual_requirements" />
+        <property role="1_0VJr" value="Plain Textual Requirements" />
+        <node concept="3z_lpz" id="1LeaOOdakEm" role="1_0VJ0">
+          <property role="TrG5h" value="simple_text_requirements" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakEo" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakEp" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakEq" role="19SJt6">
+                <property role="19SUeA" value="Example of requirements specified in plain text and pictures." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakEs" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakEu" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakEG" role="2NCMaf">
+              <ref role="2NCMaa" to="c3og:5FhZjqTMMrD" resolve="_010_simple_text_requirements" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="4U3OABz7Lgm" role="1_0VJ0">
+        <property role="TrG5h" value="tl_boilerplates_requirements" />
+        <property role="1_0VJr" value="Temporal-Logics Boilerplate Textual Requirements" />
+        <node concept="1_0LV8" id="4U3OABz7LgN" role="1_0VJ0">
+          <node concept="19SGf9" id="4U3OABz7LgO" role="1_0LWR">
+            <node concept="19SUe$" id="4U3OABz7LgP" role="19SJt6">
+              <property role="19SUeA" value="Instead of writing pure text, one can use pre-defined sentence templates that capture rigorously the system requirements using higher level language constructs. Inside a template (i.e. to fill in the dots), plain natural language text can be used. " />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpz" id="1LeaOOdakF2" role="1_0VJ0">
+          <property role="TrG5h" value="text_tl_boilerplates_specs" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakF4" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakF5" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakF6" role="19SJt6">
+                <property role="19SUeA" value="Examples of requirements specified using boilerplates specs." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakF8" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakFa" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakFr" role="2NCMaf">
+              <ref role="2NCMaa" to="c3og:5FhZjqTNhvP" resolve="_020_text_tl_boilerplates_specs" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1_0VNX" id="4U3OABz7Lh0" role="1_0VJ0">
+        <property role="TrG5h" value="formal_tl_requirements" />
+        <property role="1_0VJr" value="Temporal-Logics Formal Requirements" />
+        <node concept="1_0LV8" id="4U3OABz7Lh1" role="1_0VJ0">
+          <node concept="19SGf9" id="4U3OABz7Lh2" role="1_0LWR">
+            <node concept="19SUe$" id="4U3OABz7Lh3" role="19SJt6">
+              <property role="19SUeA" value="Temporal logics patterns can contain expressions that reference inputs/outputs of components. " />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpz" id="1LeaOOdakFT" role="1_0VJ0">
+          <property role="TrG5h" value="formal_architecture_driven_req_spec" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakFV" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakFW" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakFX" role="19SJt6">
+                <property role="19SUeA" value="Examples of temporal logics specs referencing inputs/outputs of components." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakFZ" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakG1" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakGr" role="2NCMaf">
+              <ref role="2NCMaa" to="c3og:5FhZjqTO18E" resolve="_030_formal_architecture_driven_req_spec" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_0LV8" id="4U3OABz7Lie" role="1_0VJ0">
+          <node concept="19SGf9" id="4U3OABz7Lif" role="1_0LWR">
+            <node concept="19SUe$" id="4U3OABz7Lig" role="19SJt6">
+              <property role="19SUeA" value="The requirements specified using TL patterns and formal models can be checked for consistency." />
+            </node>
+          </node>
+        </node>
+        <node concept="2SaynC" id="4U3OABz7LiY" role="1_0VJ0">
+          <property role="TrG5h" value="checking_requirements_consistency" />
+          <property role="2Sbq$t" value="true" />
+          <ref role="1wz7Nk" to="c3og:5FhZjqTO18E" resolve="_030_formal_architecture_driven_req_spec" />
+          <node concept="2Sb_l4" id="4U3OABz7Ljn" role="2SbwM5">
+            <property role="2Sb_kV" value="checking_tl_formal_requirements.png" />
+            <ref role="2Sb_kU" node="9TY4XGZias" resolve="img" />
+          </node>
+          <node concept="OjmMv" id="4U3OABz7Lj2" role="2SaI5j">
+            <node concept="19SGf9" id="4U3OABz7Lj3" role="OjmMu">
+              <node concept="19SUe$" id="4U3OABz7Lj4" role="19SJt6">
+                <property role="19SUeA" value="Right-click on the requirement document and start checking of requirements." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="4U3OABz7Lj6" role="3SHJ_F" />
+        </node>
+      </node>
+      <node concept="1_0VNX" id="4U3OABz7Lhx" role="1_0VJ0">
+        <property role="TrG5h" value="formal_smv_requirements" />
+        <property role="1_0VJr" value="SMV Formal Requirements" />
+        <node concept="1_0LV8" id="4U3OABz7Lhy" role="1_0VJ0">
+          <node concept="19SGf9" id="4U3OABz7Lhz" role="1_0LWR">
+            <node concept="19SUe$" id="4U3OABz7Lh$" role="19SJt6">
+              <property role="19SUeA" value="Temporal logics patterns can contain expressions which reference inputs/outputs of components. " />
+            </node>
+          </node>
+        </node>
+        <node concept="3z_lpz" id="1LeaOOdakGT" role="1_0VJ0">
+          <property role="TrG5h" value="formal_architecture_driven_req_spec" />
+          <property role="3z_lpJ" value="true" />
+          <node concept="OjmMv" id="1LeaOOdakGV" role="3z_lpS">
+            <node concept="19SGf9" id="1LeaOOdakGW" role="OjmMu">
+              <node concept="19SUe$" id="1LeaOOdakGX" role="19SJt6">
+                <property role="19SUeA" value="Example of architecture driven requirements specification." />
+              </node>
+            </node>
+          </node>
+          <node concept="2bctqb" id="1LeaOOdakGZ" role="3z_lpT" />
+          <node concept="2NCZwO" id="1LeaOOdakH1" role="3z_lpI">
+            <node concept="2NCMab" id="1LeaOOdakHi" role="2NCMaf">
+              <ref role="2NCMaa" to="c3og:5FhZjqTO18E" resolve="_030_formal_architecture_driven_req_spec" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

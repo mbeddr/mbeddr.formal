@@ -4,7 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
-    <use id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.slisson.mps.hacks.xmodelgen" version="0" />
+    <use id="c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1" name="de.itemis.mps.hacks.xmodelgen" version="0" />
   </languages>
   <imports>
     <import index="7qe3" ref="r:65dc22a9-884e-4aad-aa27-16060900ad59(_010_spin_hdl_high_prio@generator)" />

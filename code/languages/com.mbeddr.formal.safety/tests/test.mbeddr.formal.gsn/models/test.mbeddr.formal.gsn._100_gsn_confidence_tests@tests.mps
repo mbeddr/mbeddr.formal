@@ -176,7 +176,7 @@
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
-        <reference id="1171315804605" name="concept" index="2RRcyH" />
+        <child id="6750920497477046361" name="conceptArgument" index="3MHsoP" />
       </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
@@ -205,7 +205,7 @@
         <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
         <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
         <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-        <property id="4583510071007917016" name="transform" index="TgtnS" />
+        <property id="4583510071007917016" name="portTransform" index="TgtnS" />
       </concept>
       <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC">
         <child id="2319506556913311101" name="anchors" index="2Vcluh" />
@@ -790,7 +790,9 @@
                         <ref role="3cqZAo" node="5WyjFZRq049" resolve="m" />
                       </node>
                       <node concept="2RRcyG" id="5WyjFZRq04p" role="2OqNvi">
-                        <ref role="2RRcyH" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                        <node concept="chp4Y" id="4euqtkrutg4" role="3MHsoP">
+                          <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                        </node>
                       </node>
                     </node>
                     <node concept="1z4cxt" id="5WyjFZRq04q" role="2OqNvi">
@@ -973,7 +975,9 @@
                         <ref role="3cqZAo" node="5WyjFZRq3$p" resolve="m" />
                       </node>
                       <node concept="2RRcyG" id="5WyjFZRq3$B" role="2OqNvi">
-                        <ref role="2RRcyH" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                        <node concept="chp4Y" id="4euqtkrutg5" role="3MHsoP">
+                          <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                        </node>
                       </node>
                     </node>
                     <node concept="1z4cxt" id="5WyjFZRq3$C" role="2OqNvi">

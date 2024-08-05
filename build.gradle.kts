@@ -1,18 +1,18 @@
 import de.itemis.mps.gradle.*
-import de.itemis.mps.gradle.downloadJBR.DownloadJbrForPlatform
-import de.itemis.mps.gradle.modelcheck.ModelCheckPluginExtensions
-import de.itemis.mps.gradle.modelcheck.ModelcheckMpsProjectPlugin
+import de.itemis.mps.gradle.tasks.MpsCheck
+import de.itemis.mps.gradle.tasks.MpsMigrate
+import de.itemis.mps.gradle.tasks.Remigrate
 import java.util.Date
 
-//will pull the groovy classes/types from nexus to the classpath
 plugins {
     base
     `maven-publish`
     id("co.riiid.gradle") version "0.4.2"
 
-    // Version must match buildscript mps-gradle-plugin dependency above
-    id("download-jbr") version "1.22.+"
-    id("de.itemis.mps.gradle.common") version "1.22.+"
+    val mpsGradlePluginVersion = "1.28.0.+"
+
+    id("download-jbr") version mpsGradlePluginVersion
+    id("de.itemis.mps.gradle.common") version mpsGradlePluginVersion
 }
 
 val jbrVers = "17.0.8.1-b1000.32"
@@ -46,13 +46,21 @@ val mpsVersion = "$major.$minor" + appendOpt(bugfix, ".")
 // Dependency versions
 val platformVersion = "$major.$minor.+"
 
+// We now publish only from GitHub but there are older releases from TeamCity with higher build numbers due to TeamCity
+// build sequence being higher. In order for GitHub build to appear later, we bump the GitHub run number to be greater
+// than the build number from TeamCity.
+//
+// We do it only on 2022.3 so that the hack can be eventually removed for later versions.
+val githubRunNumberBump = if ("$major.$minor" == "2022.3") 1000 else 0
+
 if (ciBuild) {
     val branch = GitBasedVersioning.getGitBranch()
 
     val buildNumber =  if (System.getenv("GITHUB_RUN_NUMBER") != null) 
-                                System.getenv("GITHUB_RUN_NUMBER").toInt() 
+                                System.getenv("GITHUB_RUN_NUMBER").toInt() + githubRunNumberBump
                             else 
                                 System.getenv("BUILD_NUMBER")!!.toInt()
+
     if (branch.startsWith("maintenance") || branch.startsWith("mps") || branch.startsWith("migration")) {
         version = "$major.$minor.$buildNumber.${GitBasedVersioning.getGitShortCommitHash()}"
     } else {
@@ -109,7 +117,8 @@ repositories {
 }
 
 val skipResolveMps = project.hasProperty("mpsHomeDir")
-val mpsHomeDir = rootProject.file(project.findProperty("mpsHomeDir") ?: "$buildDir/mps")
+val mpsHomeDir = rootProject.file(project.findProperty("mpsHomeDir")
+    ?: layout.buildDirectory.dir("mps").get().asFile.path)
 
 val resolveMps = if (skipResolveMps) {
     tasks.register("resolveMps") {
@@ -131,9 +140,9 @@ val resolveMps = if (skipResolveMps) {
 // tools needed for compiler support in ant calls
 val buildScriptClasspath = project.configurations["antLib"]
 
-val artifactsDir = file("$buildDir/artifacts")
-val dependenciesDir = file("$buildDir/dependencies")
-val jdkDir = file("$buildDir/jdkDir")
+val artifactsDir = layout.buildDirectory.dir("artifacts").get()
+val dependenciesDir = layout.buildDirectory.dir("dependencies").get()
+val jdkDir = layout.buildDirectory.dir("jdkDir").get()
 
 
 // ___________________ utilities ___________________
@@ -141,7 +150,7 @@ val jdkDir = file("$buildDir/jdkDir")
 val defaultScriptArgs = mapOf(
         "mps.home" to mpsHomeDir,
         "mbeddr.formal.home" to rootDir,
-        "build.dir" to buildDir,
+        "build.dir" to layout.buildDirectory.get(),
         "version" to version,
         "build.date" to Date(),
         //incremental build support
@@ -154,7 +163,6 @@ fun scriptFile(relativePath: String):File = File("$rootDir/build/scripts/patched
 
 tasks {
     val configureJava by registering {
-        val downloadJbr = named("downloadJbr", DownloadJbrForPlatform::class)
         dependsOn(downloadJbr)
         doLast {
             project.extra["itemis.mps.gradle.ant.defaultScriptArgs"] = defaultScriptArgs.map { "-D${it.key}=${it.value}" }
@@ -169,22 +177,36 @@ tasks {
         into(dependenciesDir)
     }
 
-    val generateLibrariesXml by registering(GenerateLibrariesXml::class) {
-        dependsOn(resolveLanguageLibs)
-        description = "Will read project libraries from projectlibraries.properties and generate libraries.xml in .mps directory. Libraries are loaded in mps during start."
-        defaults = rootProject.file("projectlibraries.properties")
-        setOverrides(rootProject.file("projectlibraries.overrides.properties"))
-        destination = file("code/languages/com.mbeddr.formal.nusmv/.mps/libraries.xml")
+    // "com.fasten.safety.rcp.pluginSolution" makes use of the mbeddr actionsfilter plugin.
+    // The "actionsfilter" plugin and dependencies must be copied to "MPS\plugins" folder in order to load properly.
+    val copy_mbeddr_actionsfilter by registering {
+        dependsOn(resolveLanguageLibs, resolveMps)
+        description="Installs 'com.mbeddr.mpsutil.actionsfilter' plugin and its dependencies into 'MPS\\plugins' directory."
+
+        // Using `Project#copy` method instead of using Copy task type in order to keep Gradle happy about multiple
+        // tasks using the same output.
+        doLast {
+            copy {
+                from("$dependenciesDir/com.mbeddr.platform")
+                include("com.mbeddr.mpsutil.actionsfilter/",
+                    "de.itemis.mps.editor.widgets/",
+                    "de.slisson.mps.hacks/",
+                    "de.itemis.mps.tooltips/")
+                into("$mpsHomeDir/plugins")
+            }
+        }
     }
 
     val setup by registering {
-        dependsOn(generateLibrariesXml)
+        dependsOn(resolveMps, copy_mbeddr_actionsfilter)
         description = "Set up MPS project libraries. Libraries are read in from projectlibraries.properties file."
     }
 
+    fun scriptFile(name: String): Provider<RegularFile> = layout.buildDirectory.file("scripts/$name")
+
     val build_allScripts_unpatched by registering(BuildLanguages::class) {
         dependsOn(resolveMps, resolveLanguageLibs)
-        script = "$buildDir/scripts/build_all_scripts.xml"
+        script = scriptFile("build_all_scripts.xml")
     }
 
     // Patch JNA path in generated build scripts until https://github.com/JetBrains/MPS/pull/71 is fixed
@@ -226,11 +248,12 @@ tasks {
                 "taskdef"("name" to "junitreport",
                         "classname" to "org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator",
                         "classpath" to configurations["antLib"].asPath)
+                val reportDir = layout.buildDirectory.dir("junitreport_smv").get()
                 "junitreport" {
-                    "fileset"("dir" to buildDir.toString(), "includes" to "**/TEST*.xml")
-                    "report"("format" to "frames", "todir" to "$buildDir/junitreport_smv")
+                    "fileset"("dir" to layout.buildDirectory.get(), "includes" to "**/TEST*.xml")
+                    "report"("format" to "frames", "todir" to reportDir)
                 }
-                "echo"("JUnit report placed into $buildDir/junitreport_smv/index.html")
+                "echo"("JUnit report placed into $reportDir/index.html")
             }
         }
     }
@@ -243,11 +266,12 @@ tasks {
                 "taskdef"("name" to "junitreport",
                         "classname" to "org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator",
                         "classpath" to configurations["antLib"].asPath)
+                val reportDir = layout.buildDirectory.dir("junitreport_safety").get()
                 "junitreport" {
-                    "fileset"("dir" to buildDir.toString(), "includes" to "**/TEST*.xml")
-                    "report"("format" to "frames", "todir" to "$buildDir/junitreport")
+                    "fileset"("dir" to layout.buildDirectory.get(), "includes" to "**/TEST*.xml")
+                    "report"("format" to "frames", "todir" to reportDir)
                 }
-                "echo"("JUnit report placed into $buildDir/junitreport/index.html")
+                "echo"("JUnit report placed into $reportDir/index.html")
             }
         }
     }
@@ -261,17 +285,47 @@ tasks {
                 "taskdef"("name" to "junitreport",
                         "classname" to "org.apache.tools.ant.taskdefs.optional.junit.XMLResultAggregator",
                         "classpath" to configurations["antLib"].asPath)
+                val reportDir = layout.buildDirectory.dir("junitreport").get()
                 "junitreport" {
-                    "fileset"("dir" to buildDir.toString(), "includes" to "**/TEST*.xml")
-                    "report"("format" to "frames", "todir" to "$buildDir/junitreport")
+                    "fileset"("dir" to layout.buildDirectory.get(), "includes" to "**/TEST*.xml")
+                    "report"("format" to "frames", "todir" to reportDir)
                 }
-                "echo"("JUnit report placed into $buildDir/junitreport/index.html")
+                "echo"("JUnit report placed into $reportDir/index.html")
             }
         }
     }
 
+    withType<MpsCheck>().configureEach {
+        dependsOn(downloadJbr, resolveMps, resolveLanguageLibs)
+        javaLauncher = downloadJbr.flatMap { it.javaLauncher }
+
+        mpsHome = mpsHomeDir
+        folderMacros.put("mbeddr.formal.home", layout.projectDirectory)
+        pluginRoots.addAll(
+            layout.buildDirectory.map { buildDir ->
+                listOf(
+                    "dependencies/com.mbeddr.platform",
+                    "dependencies/org.mpsqa.allInOne",
+                    "artifacts/com.mbeddr.formal.languages").map { buildDir.dir(it) }
+            })
+
+        ignoreFailures = true
+        maxHeapSize = "3G"
+    }
+
+    val checkSafetyTutorial by registering(MpsCheck::class) {
+        projectLocation = file("code/tutorial-safety")
+        modules = listOf("com.mbeddr.formal.safety.tutorial")
+    }
+
+    val checkNusmvTutorial by registering(MpsCheck::class) {
+        projectLocation = file("code/tutorial")
+        modules = listOf("com.mbeddr.formal.nusmv.tutorial")
+    }
+
     check {
         dependsOn(run_all_tests)
+        dependsOn(withType<MpsCheck>())
     }
 
     val package_formal by registering(Zip::class) {
@@ -326,6 +380,10 @@ tasks {
         from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
     }
 
+    val build_all_languages by registering {
+        dependsOn(build_assurance_languages, build_formal_languages)
+    }
+
     assemble { dependsOn(package_formal, package_assurance) }
 
     val cleanMps by registering(Delete::class) {
@@ -334,6 +392,59 @@ tasks {
 
     //clean { dependsOn(cleanMps) }
     val rebuild by registering { dependsOn(clean, build_formal_languages) }
+
+    // Some projects are not migrated because they (or languages contained in them) are not built by Gradle:
+    // - com.fasten.symo
+    // - com.mbeddr.formal.smt
+    // - com.mbeddr.formal.prism
+    //
+    // Tutorials could be migrated but would need a slightly different setup.
+
+    val projectsToMigrate = listOf(
+        "com.mpsbasics",
+        "com.mbeddr.formal.nusmv",
+        "com.mbeddr.formal.cprover",
+        "com.mbeddr.formal.repo_admin",
+        "com.mbeddr.formal.req",
+        "com.mbeddr.formal.spin",
+        "com.mbeddr.formal.safety",
+    ).map { layout.projectDirectory.dir("code/languages/$it") }
+
+    val pluginRootsForMigration = listOf(mpsHomeDir.resolve("plugins"), dependenciesDir.asFile)
+
+    val migrate by registering(MpsMigrate::class) {
+        dependsOn(resolveMps, downloadJbr, build_all_languages)
+
+        javaLauncher = downloadJbr.flatMap { it.javaLauncher }
+        mpsHome = mpsHomeDir
+        folderMacros.put("mbeddr.formal.home", layout.projectDirectory)
+        projectDirectories.from(projectsToMigrate)
+        pluginRoots.from(pluginRootsForMigration)
+
+        haltOnPrecheckFailure = true
+        haltOnDependencyError = true
+
+        maxHeapSize = "4G"
+    }
+
+    val remigrate by registering(Remigrate::class) {
+        dependsOn(resolveMps, downloadJbr)
+        mustRunAfter(migrate)
+
+        // Technically we don't need to _depend_ on build_all_languages because we can opt to rerun only migrations that
+        // come from MPS.
+        mustRunAfter(build_all_languages)
+
+        javaLauncher = downloadJbr.flatMap { it.javaLauncher }
+        mpsHome = mpsHomeDir
+        folderMacros.put("mbeddr.formal.home", layout.projectDirectory)
+        projectDirectories.from(projectsToMigrate)
+        pluginRoots.from(pluginRootsForMigration)
+
+        maxHeapSize = "4G"
+
+        excludeModuleMigration("de.itemis.mps.editor.diagram", 0)
+    }
 }
 
 publishing {
@@ -408,48 +519,4 @@ publishing {
     }
 }
 
-enum class ProjectToCheck(val projectDirectory: String, val module: String) {
-    SAFETY("tutorial-safety", "com.mbeddr.formal.safety.tutorial"),
-    NUSMV("tutorial", "com.mbeddr.formal.nusmv.tutorial")
-}
-
-val projectToCheck = (project.findProperty("checkProject") as String?)?.let { ProjectToCheck.valueOf(it.toUpperCase()) }
-
-if (projectToCheck != null) {
-    apply<ModelcheckMpsProjectPlugin>()
-
-    val pluginsProvider = provider {
-        val result = mutableListOf<de.itemis.mps.gradle.Plugin>()
-        File("$buildDir/dependencies/com.mbeddr.platform").listFiles().forEach {
-            if (it.isDirectory) {
-                result.add(Plugin(it.name, it.absolutePath))
-            }
-        }
-
-        File("$buildDir/artifacts/com.mbeddr.formal.languages").listFiles().forEach {
-            if (it.isDirectory) {
-                result.add(Plugin(it.name, it.absolutePath))
-            }
-        }
-
-        result
-    }
-
-
-    configure<ModelCheckPluginExtensions> {
-        mpsLocation = File("$buildDir/mps")
-        macros = listOf(Macro("mbeddr.formal.home", "$projectDir"))
-        pluginsProperty.set(pluginsProvider)
-        projectLocation = File("$projectDir/code/${projectToCheck.projectDirectory}/")
-        mpsConfig = configurations["mps"]
-        junitFile = File("$buildDir/TEST-${projectToCheck.name.toLowerCase()}-modelcheckresult.xml")
-        errorNoFail = true
-        debug = false
-        maxHeap = "3G"
-        modules = listOf(projectToCheck.module)
-    }
-
-    defaultTasks("checkmodels")
-} else {
-    defaultTasks("build_formal_languages")
-}
+defaultTasks("build_formal_languages")

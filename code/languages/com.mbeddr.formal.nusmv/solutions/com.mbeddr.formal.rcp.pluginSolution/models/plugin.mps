@@ -30,9 +30,6 @@
       </concept>
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
         <property id="1204991940915" name="caption" index="2f7twF" />
-        <property id="1205160812895" name="mnemonic" index="2pbE17" />
-        <property id="1217005992861" name="isInvisibleWhenDisabled" index="1rdrE6" />
-        <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -59,17 +56,6 @@
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
     </language>
-    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
-      <concept id="361130699826193249" name="jetbrains.mps.lang.modelapi.structure.ModulePointer" flags="ng" index="1dCxOk">
-        <property id="1863527487546097500" name="moduleId" index="1XweGW" />
-        <property id="1863527487545993577" name="moduleName" index="1XxBO9" />
-      </concept>
-    </language>
-    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1678062499342629858" name="jetbrains.mps.lang.smodel.structure.ModuleRefExpression" flags="ng" index="37shsh">
-        <child id="1678062499342629861" name="moduleId" index="37shsm" />
-      </concept>
-    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -77,7 +63,6 @@
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
-        <child id="1237721435808" name="initValue" index="HW$Y0" />
         <child id="1237721435807" name="elementType" index="HW$YZ" />
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
@@ -88,48 +73,27 @@
     <property role="TrG5h" value="FASTENSMVActionsGroup" />
     <property role="2f7twF" value="New" />
     <node concept="ftmFs" id="5uW1px6ni3n" role="ftER_">
-      <node concept="tC5Ba" id="3ALtb$iqtxU" role="ftvYc">
-        <property role="TrG5h" value="SMV" />
-        <property role="1XlLyE" value="true" />
-        <property role="2f7twF" value="Formal Specification Models" />
-        <property role="1rdrE6" value="true" />
-        <property role="2pbE17" value="S" />
-        <node concept="ftmFs" id="3ALtb$iqtyN" role="ftER_">
-          <node concept="tCFHf" id="5tRIc6mlLia" role="ftvYc">
-            <ref role="tCJdB" to="8js5:5tRIc6mkOfA" resolve="FASTENNewModel" />
-            <node concept="Xl_RD" id="3ALtb$ipKz5" role="2J__8u">
-              <property role="Xl_RC" value="SMV Specs" />
-            </node>
-            <node concept="2ShNRf" id="3ALtb$ipKzy" role="2J__8u">
-              <node concept="2Jqq0_" id="3ALtb$ipMgm" role="2ShVmc">
-                <node concept="3uibUv" id="3ALtb$ipMmU" role="HW$YZ">
-                  <ref role="3uigEE" to="lui2:~SModuleReference" resolve="SModuleReference" />
-                </node>
-                <node concept="37shsh" id="3ALtb$ipMyl" role="HW$Y0">
-                  <node concept="1dCxOk" id="3ALtb$ipMyF" role="37shsm">
-                    <property role="1XweGW" value="edb51d2d-64eb-404a-818e-c1cabf1d58d5" />
-                    <property role="1XxBO9" value="fasten.nusmv" />
-                  </node>
-                </node>
-                <node concept="37shsh" id="3ALtb$iIBQZ" role="HW$Y0">
-                  <node concept="1dCxOk" id="3ALtb$iIBRs" role="37shsm">
-                    <property role="1XweGW" value="15b78606-0574-4c04-a9f2-d43bce9698b3" />
-                    <property role="1XxBO9" value="fasten.nuxmv" />
-                  </node>
-                </node>
-              </node>
+      <node concept="tCFHf" id="26E6nZcCvUB" role="ftvYc">
+        <ref role="tCJdB" to="8js5:5tRIc6mkOfA" resolve="FASTENNewModel" />
+        <node concept="Xl_RD" id="26E6nZcCvUC" role="2J__8u">
+          <property role="Xl_RC" value="New FASTEN Model" />
+        </node>
+        <node concept="2ShNRf" id="26E6nZcCvUD" role="2J__8u">
+          <node concept="2Jqq0_" id="26E6nZcCvUE" role="2ShVmc">
+            <node concept="3uibUv" id="26E6nZcCvUF" role="HW$YZ">
+              <ref role="3uigEE" to="lui2:~SModuleReference" resolve="SModuleReference" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="tT9cl" id="7Wl2irMPeJi" role="2f5YQi">
-      <ref role="tU$_T" to="tprs:hyf4Jpv" resolve="SolutionNewActions" />
-      <ref role="2f8Tey" to="tprs:1bRM4HyGTmR" resolve="newModel" />
+      <ref role="tU$_T" to="tprs:hyf4Jd1" resolve="SolutionActions" />
+      <ref role="2f8Tey" to="tprs:hyalGNA" resolve="solutionNew" />
     </node>
     <node concept="tT9cl" id="6s_wYCETe6U" role="2f5YQi">
       <ref role="tU$_T" to="tprs:hQh2F9P" resolve="NamespaceActions" />
-      <ref role="2f8Tey" to="tprs:V2X$nu7ww3" resolve="check" />
+      <ref role="2f8Tey" to="tprs:hQhenBr" resolve="namespaceInternal" />
     </node>
   </node>
 </model>

@@ -6,8 +6,9 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
@@ -159,9 +160,6 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
       <concept id="5753587520027641499" name="com.mbeddr.mpsutil.blutil.structure.SafeReadAction" flags="ng" index="3kxDZ6">
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="5753587520027644759" name="body" index="3kxCCa" />
@@ -179,6 +177,20 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -259,8 +271,12 @@
       <node concept="3Tqbb2" id="CmOUmcbec2" role="1tU5fm">
         <ref role="ehGHo" to="bsp8:2_iMKAX4lX5" resolve="SmvSpecGoal" />
       </node>
-      <node concept="NWlO9" id="CmOUmcboND" role="lGtFl">
-        <property role="NWlVz" value="The goal which is under analysis." />
+      <node concept="z59LJ" id="1y75PbzycVd" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycVb" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycVc" role="1dT_Ay">
+            <property role="1dT_AB" value="The goal which is under analysis." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="CmOUmcbeZT" role="jymVt" />
@@ -818,8 +834,12 @@
       <node concept="3Tqbb2" id="CmOUmcbv4y" role="1tU5fm">
         <ref role="ehGHo" to="bsp8:4qaoH_Q49c" resolve="SmvGoalBase" />
       </node>
-      <node concept="NWlO9" id="CmOUmcbvhR" role="lGtFl">
-        <property role="NWlVz" value="Analyzed goal." />
+      <node concept="z59LJ" id="1y75PbzycVg" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycVe" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycVf" role="1dT_Ay">
+            <property role="1dT_AB" value="Analyzed goal." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="CmOUmcbuQd" role="jymVt" />
@@ -885,17 +905,18 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="CmOUmcbVyw" role="lGtFl">
-        <property role="NWlVz" value="Constructor." />
+      <node concept="P$JXv" id="1y75PbzycVj" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycVh" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycVi" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="CmOUmcbuEc" role="jymVt" />
     <node concept="3Tm1VV" id="CmOUmcbso5" role="1B3o_S" />
     <node concept="3uibUv" id="CmOUmcbtL9" role="1zkMxy">
       <ref role="3uigEE" to="4c75:7mSH3Wn4c5n" resolve="NuSMVLiftedResult" />
-    </node>
-    <node concept="NWlO9" id="CmOUmcbuFN" role="lGtFl">
-      <property role="NWlVz" value="Lifted result for goals." />
     </node>
     <node concept="3clFb_" id="CmOUmcbuGX" role="jymVt">
       <property role="TrG5h" value="getUserFriendlyMessage" />
@@ -946,8 +967,19 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="CmOUmcbvlr" role="lGtFl">
-        <property role="NWlVz" value="{@inheritDoc}" />
+      <node concept="P$JXv" id="1y75PbzycVp" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycVn" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycVo" role="1dT_Ay">
+            <property role="1dT_AB" value="{@inheritDoc}" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3UR2Jj" id="1y75PbzycVm" role="lGtFl">
+      <node concept="TZ5HA" id="1y75PbzycVk" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75PbzycVl" role="1dT_Ay">
+          <property role="1dT_AB" value="Lifted result for goals." />
+        </node>
       </node>
     </node>
   </node>
@@ -961,8 +993,12 @@
       <node concept="3Tqbb2" id="CmOUmcc54c" role="1tU5fm">
         <ref role="ehGHo" to="bsp8:4qaoH_Q49c" resolve="SmvGoalBase" />
       </node>
-      <node concept="NWlO9" id="CmOUmcc54d" role="lGtFl">
-        <property role="NWlVz" value="The goal which is under analysis." />
+      <node concept="z59LJ" id="1y75PbzycVs" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycVq" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycVr" role="1dT_Ay">
+            <property role="1dT_AB" value="The goal which is under analysis." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="CmOUmcehf7" role="jymVt" />
@@ -972,8 +1008,12 @@
       <node concept="3Tqbb2" id="CmOUmcegAx" role="1tU5fm">
         <ref role="ehGHo" to="gioj:6NmtaR1SUJl" resolve="System" />
       </node>
-      <node concept="NWlO9" id="CmOUmcegAy" role="lGtFl">
-        <property role="NWlVz" value="The system which is under analysis." />
+      <node concept="z59LJ" id="1y75PbzycVv" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycVt" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycVu" role="1dT_Ay">
+            <property role="1dT_AB" value="The system which is under analysis." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="CmOUmcc54e" role="jymVt" />
@@ -1098,8 +1138,12 @@
       <node concept="3Tqbb2" id="CmOUmccbbQ" role="1tU5fm">
         <ref role="ehGHo" to="bsp8:4qaoH_PPfz" resolve="SmvTestsGoal" />
       </node>
-      <node concept="NWlO9" id="CmOUmccbbR" role="lGtFl">
-        <property role="NWlVz" value="The goal which is under analysis." />
+      <node concept="z59LJ" id="1y75PbzycVy" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycVw" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycVx" role="1dT_Ay">
+            <property role="1dT_AB" value="The goal which is under analysis." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="CmOUmccbbS" role="jymVt" />

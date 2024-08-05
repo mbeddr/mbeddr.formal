@@ -50,7 +50,7 @@
         <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
         <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
         <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-        <property id="4583510071007917016" name="transform" index="TgtnS" />
+        <property id="4583510071007917016" name="portTransform" index="TgtnS" />
         <child id="738815095926774816" name="portLayouts" index="1pap1a" />
       </concept>
       <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
@@ -76,7 +76,7 @@
       <property role="TrG5h" value="Sender" />
       <node concept="3USqFc" id="pk5lVrZWqi" role="3UVs02">
         <property role="TrG5h" value="data" />
-        <ref role="3US7yy" node="pk5lVrZWqd" resolve="Data" />
+        <ref role="3US7yy" node="pk5lVrZWqd" />
       </node>
     </node>
     <node concept="3UUxL_" id="pk5lVrZWqq" role="3UUxLy" />
@@ -84,7 +84,7 @@
       <property role="TrG5h" value="Receiver" />
       <node concept="3USqFc" id="pk5lVrZWqL" role="3UVs00">
         <property role="TrG5h" value="data" />
-        <ref role="3US7yy" node="pk5lVrZWqd" resolve="Data" />
+        <ref role="3US7yy" node="pk5lVrZWqd" />
       </node>
     </node>
     <node concept="3UUxL_" id="pk5lVrZWr9" role="3UUxLy" />
@@ -93,20 +93,20 @@
       <node concept="3UVpuM" id="pk5lVrZWrH" role="3UVWDc">
         <node concept="3UVpuK" id="pk5lVrZWrJ" role="3UVKbZ">
           <property role="TrG5h" value="s" />
-          <ref role="3UVpu6" node="6TLpWSY0gIt" resolve="Sender" />
+          <ref role="3UVpu6" node="6TLpWSY0gIt" />
         </node>
         <node concept="3UVpuK" id="pk5lVrZWrO" role="3UVKbZ">
           <property role="TrG5h" value="r" />
-          <ref role="3UVpu6" node="pk5lVrZWqB" resolve="Receiver" />
+          <ref role="3UVpu6" node="pk5lVrZWqB" />
         </node>
         <node concept="3UVptf" id="pk5lVrZWrW" role="3UVKbZ">
           <node concept="3UVgTP" id="pk5lVrZWs1" role="3UVptc">
-            <ref role="3UVgTb" node="pk5lVrZWrJ" resolve="s" />
-            <ref role="3UVgT4" node="pk5lVrZWqi" resolve="data" />
+            <ref role="3UVgTb" node="pk5lVrZWrJ" />
+            <ref role="3UVgT4" node="pk5lVrZWqi" />
           </node>
           <node concept="3UVgTP" id="pk5lVrZWs3" role="3UVpta">
-            <ref role="3UVgTb" node="pk5lVrZWrO" resolve="r" />
-            <ref role="3UVgT4" node="pk5lVrZWqL" resolve="data" />
+            <ref role="3UVgTb" node="pk5lVrZWrO" />
+            <ref role="3UVgT4" node="pk5lVrZWqL" />
           </node>
         </node>
         <node concept="37mRI7" id="pk5lVrZWs6" role="lGtFl">

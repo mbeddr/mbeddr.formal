@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="5X1JwjFKTva">
+    <property role="TrG5h" value="extract_from_G2.1.1.6" />
+    <property role="3GE5qa" value="2_failure_operation" />
+    <node concept="2vn7WC" id="1e9opmpdGmU" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6" />
+      <node concept="19SGf9" id="1e9opmpdH_s" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6g" role="19SJt6">
+          <property role="19SUeA" value="The Self-Driving Vehicle component fault&#10;analysis covers all known and reasonably&#10;possible failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGmW" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.1" />
+      <node concept="19SGf9" id="1e9opmpdH_t" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6h" role="19SJt6">
+          <property role="19SUeA" value="Faults and Hazards in the component functions&#10;are comprehensively identified " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGmY" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.1.1" />
+      <node concept="19SGf9" id="1e9opmpdH_u" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6i" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis techniques inform master&#10;list of potential hazards, faults and&#10;failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGn0" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.1.1.1" />
+      <node concept="19SGf9" id="1e9opmpdH_v" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6j" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis (FHA, STPA, etc) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGn2" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.1.1.2" />
+      <node concept="19SGf9" id="1e9opmpdH_w" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6k" role="19SJt6">
+          <property role="19SUeA" value="Peer review of top down analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGn4" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.1.2" />
+      <node concept="19SGf9" id="1e9opmpdH_x" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6l" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis techniques inform&#10;master list of potential hazards, faults&#10;and failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGn6" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.1.2.1" />
+      <node concept="19SGf9" id="1e9opmpdH_y" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6m" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis (FMEA, ETA, etc) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGn8" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.1.2.2" />
+      <node concept="19SGf9" id="1e9opmpdH_z" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6n" role="19SJt6">
+          <property role="19SUeA" value="Peer review of  analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGna" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.2" />
+      <node concept="19SGf9" id="1e9opmpdH_$" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6o" role="19SJt6">
+          <property role="19SUeA" value="Faults and Hazards in the component software&#10;are comprehensively identified " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGnc" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.2.1" />
+      <node concept="19SGf9" id="1e9opmpdH__" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6p" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis techniques inform master&#10;list of potential hazards, faults and&#10;failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGne" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.2.1.1" />
+      <node concept="19SGf9" id="1e9opmpdH_A" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6q" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis (FHA, STPA, etc) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGng" role="2vn1q5">
+      <property role="TrG5h" value="Sn6.1.1.6.2.1.2" />
+      <node concept="19SGf9" id="1e9opmpdH_B" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6r" role="19SJt6">
+          <property role="19SUeA" value="Peer review of top down analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGni" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.2.2" />
+      <node concept="19SGf9" id="1e9opmpdH_C" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6s" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis techniques inform&#10;master list of potential hazards, faults&#10;and failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGnk" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.2.2.1" />
+      <node concept="19SGf9" id="1e9opmpdH_D" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6t" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis (FMEA, ETA, etc) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGnm" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.2.2.2" />
+      <node concept="19SGf9" id="1e9opmpdH_E" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6u" role="19SJt6">
+          <property role="19SUeA" value="Peer review of  analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGno" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.3" />
+      <node concept="19SGf9" id="1e9opmpdH_F" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6v" role="19SJt6">
+          <property role="19SUeA" value="Faults and Hazards in the component hardware&#10;are comprehensively identified " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGnq" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.3.1" />
+      <node concept="19SGf9" id="1e9opmpdH_G" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6w" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis techniques inform master&#10;list of potential hazards, faults and&#10;failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGns" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.3.1.1" />
+      <node concept="19SGf9" id="1e9opmpdH_H" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6x" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis (FHA, STPA, etc) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGnu" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.3.1.2" />
+      <node concept="19SGf9" id="1e9opmpdH_I" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6y" role="19SJt6">
+          <property role="19SUeA" value="Peer review of top down analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGnw" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.3.2" />
+      <node concept="19SGf9" id="1e9opmpdH_J" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6z" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis techniques inform&#10;master list of potential hazards, faults&#10;and failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGny" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.3.2.1" />
+      <node concept="19SGf9" id="1e9opmpdH_K" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6$" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis (FMEA, ETA, etc) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGn$" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.3.2.2" />
+      <node concept="19SGf9" id="1e9opmpdH_L" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6_" role="19SJt6">
+          <property role="19SUeA" value="Peer review of  analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGnA" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.4" />
+      <node concept="19SGf9" id="1e9opmpdH_M" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6A" role="19SJt6">
+          <property role="19SUeA" value="Faults and Hazards in the component degradation&#10;are comprehensively identified " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGnC" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.4.1" />
+      <node concept="19SGf9" id="1e9opmpdH_N" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6B" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis techniques inform master&#10;list of potential hazards, faults and&#10;failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGnE" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.4.1.1" />
+      <node concept="19SGf9" id="1e9opmpdH_O" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6C" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis (FHA, STPA, etc) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGnG" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.4.1.2" />
+      <node concept="19SGf9" id="1e9opmpdH_P" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6D" role="19SJt6">
+          <property role="19SUeA" value="Peer review of top down analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGnI" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.4.2" />
+      <node concept="19SGf9" id="1e9opmpdH_Q" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6E" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis techniques inform&#10;master list of potential hazards, faults&#10;and failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGnK" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.4.2.1" />
+      <node concept="19SGf9" id="1e9opmpdH_R" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6F" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis (FMEA, ETA, etc) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGnM" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.4.2.2" />
+      <node concept="19SGf9" id="1e9opmpdH_S" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6G" role="19SJt6">
+          <property role="19SUeA" value="Peer review of  analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGnO" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.5" />
+      <node concept="19SGf9" id="1e9opmpdH_T" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6H" role="19SJt6">
+          <property role="19SUeA" value="Faults and Hazards in the subsystem timings&#10;are comprehensively identified " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGnQ" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.5.1" />
+      <node concept="19SGf9" id="1e9opmpdH_U" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6I" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis techniques inform master&#10;list of potential hazards, faults and&#10;failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGnS" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.5.1.1" />
+      <node concept="19SGf9" id="1e9opmpdH_V" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6J" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis (FHA, STPA, etc)\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGnU" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.5.1.2" />
+      <node concept="19SGf9" id="1e9opmpdH_W" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6K" role="19SJt6">
+          <property role="19SUeA" value="Peer review of top down analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGnW" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.5.2" />
+      <node concept="19SGf9" id="1e9opmpdH_X" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6L" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis techniques inform&#10;master list of potential hazards, faults&#10;and failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGnY" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.5.2.1" />
+      <node concept="19SGf9" id="1e9opmpdH_Y" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6M" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis (FMEA, ETA, etc)\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGo0" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.5.2.2" />
+      <node concept="19SGf9" id="1e9opmpdH_Z" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6N" role="19SJt6">
+          <property role="19SUeA" value="Peer review of  analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGo2" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.6" />
+      <node concept="19SGf9" id="1e9opmpdHA0" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6O" role="19SJt6">
+          <property role="19SUeA" value="Faults and Hazards pertaining to non-developmental&#10;components are comprehensively identified" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGo4" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.6.1" />
+      <node concept="19SGf9" id="1e9opmpdHA1" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6P" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis techniques inform master&#10;list of potential hazards, faults and&#10;failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGo6" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.6.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHA2" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6Q" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis (FHA, STPA, etc)\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGo8" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.6.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHA3" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6R" role="19SJt6">
+          <property role="19SUeA" value="Peer review of top down analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGoa" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.6.2" />
+      <node concept="19SGf9" id="1e9opmpdHA4" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6S" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis techniques inform&#10;master list of potential hazards, faults&#10;and failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGoc" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.6.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHA5" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6T" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis (FMEA, ETA, etc)\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGoe" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.6.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHA6" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6U" role="19SJt6">
+          <property role="19SUeA" value="Peer review of  analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGog" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.7" />
+      <node concept="19SGf9" id="1e9opmpdHA7" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6V" role="19SJt6">
+          <property role="19SUeA" value="Faults and Hazards pertaining to end&#10;of service life and disposal are comprehensively&#10;identified " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGoi" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.7.1" />
+      <node concept="19SGf9" id="1e9opmpdHA8" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6W" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis techniques inform master&#10;list of potential hazards, faults and&#10;failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGok" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.7.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHA9" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6X" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis (FHA, STPA, etc)\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGom" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.7.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHAa" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6Y" role="19SJt6">
+          <property role="19SUeA" value="Peer review of top down analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGoo" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.7.2" />
+      <node concept="19SGf9" id="1e9opmpdHAb" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK6Z" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis techniques inform&#10;master list of potential hazards, faults&#10;and failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGoq" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.7.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHAc" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK70" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis (FMEA, ETA, etc)\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGos" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.7.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHAd" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK71" role="19SJt6">
+          <property role="19SUeA" value="Peer review of  analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGou" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.8" />
+      <node concept="19SGf9" id="1e9opmpdHAe" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK72" role="19SJt6">
+          <property role="19SUeA" value="Faults and Hazards in the misuse of the&#10;component are comprehensively identified" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGow" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.8.1" />
+      <node concept="19SGf9" id="1e9opmpdHAf" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK73" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis techniques inform master&#10;list of potential hazards, faults and&#10;failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGoy" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.8.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHAg" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK74" role="19SJt6">
+          <property role="19SUeA" value="Top down analysis (FHA, STPA, etc)\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGo$" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.8.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHAh" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK75" role="19SJt6">
+          <property role="19SUeA" value="Peer review of top down analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGoA" role="2vn1q5">
+      <property role="TrG5h" value="G2.1.1.6.8.2" />
+      <node concept="19SGf9" id="1e9opmpdHAi" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK76" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis techniques inform&#10;master list of potential hazards, faults&#10;and failures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGoC" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.8.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHAj" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK77" role="19SJt6">
+          <property role="19SUeA" value="Bottom up analysis (FMEA, ETA, etc)\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGoE" role="2vn1q5">
+      <property role="TrG5h" value="Sn2.1.1.6.8.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHAk" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdK78" role="19SJt6">
+          <property role="19SUeA" value="Peer review of  analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGmX" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGmW" resolve="G2.1.1.6.1" />
+      <ref role="3VeSjP" node="1e9opmpdGmU" resolve="G2.1.1.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGmZ" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGmY" resolve="G2.1.1.6.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdGmW" resolve="G2.1.1.6.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGn1" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGn0" resolve="Sn2.1.1.6.1.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdGmY" resolve="G2.1.1.6.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGn3" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGn2" resolve="Sn2.1.1.6.1.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdGmY" resolve="G2.1.1.6.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGn5" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGn4" resolve="G2.1.1.6.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdGmW" resolve="G2.1.1.6.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGn7" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGn6" resolve="Sn2.1.1.6.1.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdGn4" resolve="G2.1.1.6.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGn9" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGn8" resolve="Sn2.1.1.6.1.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdGn4" resolve="G2.1.1.6.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnb" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGna" resolve="G2.1.1.6.2" />
+      <ref role="3VeSjP" node="1e9opmpdGmU" resolve="G2.1.1.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnd" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGnc" resolve="G2.1.1.6.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdGna" resolve="G2.1.1.6.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnf" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnc" resolve="G2.1.1.6.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGne" resolve="Sn2.1.1.6.2.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnh" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnc" resolve="G2.1.1.6.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGng" resolve="Sn6.1.1.6.2.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnj" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGna" resolve="G2.1.1.6.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGni" resolve="G2.1.1.6.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnl" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGni" resolve="G2.1.1.6.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGnk" resolve="Sn2.1.1.6.2.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnn" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGnm" resolve="Sn2.1.1.6.2.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdGni" resolve="G2.1.1.6.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnp" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGmU" resolve="G2.1.1.6" />
+      <ref role="3VeSjQ" node="1e9opmpdGno" resolve="G2.1.1.6.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnr" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGno" resolve="G2.1.1.6.3" />
+      <ref role="3VeSjQ" node="1e9opmpdGnq" resolve="G2.1.1.6.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnt" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnq" resolve="G2.1.1.6.3.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGns" resolve="Sn2.1.1.6.3.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnv" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGnu" resolve="Sn2.1.1.6.3.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdGnq" resolve="G2.1.1.6.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnx" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGnw" resolve="G2.1.1.6.3.2" />
+      <ref role="3VeSjP" node="1e9opmpdGno" resolve="G2.1.1.6.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnz" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnw" resolve="G2.1.1.6.3.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGny" resolve="Sn2.1.1.6.3.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGn_" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnw" resolve="G2.1.1.6.3.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGn$" resolve="Sn2.1.1.6.3.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnB" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGmU" resolve="G2.1.1.6" />
+      <ref role="3VeSjQ" node="1e9opmpdGnA" resolve="G2.1.1.6.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnD" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnA" resolve="G2.1.1.6.4" />
+      <ref role="3VeSjQ" node="1e9opmpdGnC" resolve="G2.1.1.6.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnF" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGnE" resolve="Sn2.1.1.6.4.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdGnC" resolve="G2.1.1.6.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnH" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnC" resolve="G2.1.1.6.4.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGnG" resolve="Sn2.1.1.6.4.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnJ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnA" resolve="G2.1.1.6.4" />
+      <ref role="3VeSjQ" node="1e9opmpdGnI" resolve="G2.1.1.6.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnL" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnI" resolve="G2.1.1.6.4.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGnK" resolve="Sn2.1.1.6.4.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnN" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnI" resolve="G2.1.1.6.4.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGnM" resolve="Sn2.1.1.6.4.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnP" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGnO" resolve="G2.1.1.6.5" />
+      <ref role="3VeSjP" node="1e9opmpdGmU" resolve="G2.1.1.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnR" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnO" resolve="G2.1.1.6.5" />
+      <ref role="3VeSjQ" node="1e9opmpdGnQ" resolve="G2.1.1.6.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnT" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnQ" resolve="G2.1.1.6.5.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGnS" resolve="Sn2.1.1.6.5.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnV" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnQ" resolve="G2.1.1.6.5.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGnU" resolve="Sn2.1.1.6.5.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnX" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGnW" resolve="G2.1.1.6.5.2" />
+      <ref role="3VeSjP" node="1e9opmpdGnO" resolve="G2.1.1.6.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGnZ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGnW" resolve="G2.1.1.6.5.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGnY" resolve="Sn2.1.1.6.5.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGo1" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGo0" resolve="Sn2.1.1.6.5.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdGnW" resolve="G2.1.1.6.5.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGo3" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGmU" resolve="G2.1.1.6" />
+      <ref role="3VeSjQ" node="1e9opmpdGo2" resolve="G2.1.1.6.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGo5" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGo2" resolve="G2.1.1.6.6" />
+      <ref role="3VeSjQ" node="1e9opmpdGo4" resolve="G2.1.1.6.6.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGo7" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGo4" resolve="G2.1.1.6.6.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGo6" resolve="Sn2.1.1.6.6.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGo9" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGo8" resolve="Sn2.1.1.6.6.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdGo4" resolve="G2.1.1.6.6.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGob" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGoa" resolve="G2.1.1.6.6.2" />
+      <ref role="3VeSjP" node="1e9opmpdGo2" resolve="G2.1.1.6.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGod" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGoa" resolve="G2.1.1.6.6.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGoc" resolve="Sn2.1.1.6.6.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGof" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGoe" resolve="Sn2.1.1.6.6.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdGoa" resolve="G2.1.1.6.6.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGoh" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGmU" resolve="G2.1.1.6" />
+      <ref role="3VeSjQ" node="1e9opmpdGog" resolve="G2.1.1.6.7" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGoj" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGog" resolve="G2.1.1.6.7" />
+      <ref role="3VeSjQ" node="1e9opmpdGoi" resolve="G2.1.1.6.7.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGol" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGoi" resolve="G2.1.1.6.7.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGok" resolve="Sn2.1.1.6.7.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGon" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGom" resolve="Sn2.1.1.6.7.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdGoi" resolve="G2.1.1.6.7.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGop" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGog" resolve="G2.1.1.6.7" />
+      <ref role="3VeSjQ" node="1e9opmpdGoo" resolve="G2.1.1.6.7.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGor" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGoo" resolve="G2.1.1.6.7.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGoq" resolve="Sn2.1.1.6.7.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGot" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGoo" resolve="G2.1.1.6.7.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGos" resolve="Sn2.1.1.6.7.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGov" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGou" resolve="G2.1.1.6.8" />
+      <ref role="3VeSjP" node="1e9opmpdGmU" resolve="G2.1.1.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGox" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGow" resolve="G2.1.1.6.8.1" />
+      <ref role="3VeSjP" node="1e9opmpdGou" resolve="G2.1.1.6.8" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGoz" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGow" resolve="G2.1.1.6.8.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGoy" resolve="Sn2.1.1.6.8.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGo_" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGo$" resolve="Sn2.1.1.6.8.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdGow" resolve="G2.1.1.6.8.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGoB" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGoA" resolve="G2.1.1.6.8.2" />
+      <ref role="3VeSjP" node="1e9opmpdGou" resolve="G2.1.1.6.8" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGoD" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGoC" resolve="Sn2.1.1.6.8.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdGoA" resolve="G2.1.1.6.8.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGoF" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGoE" resolve="Sn2.1.1.6.8.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdGoA" resolve="G2.1.1.6.8.2" />
+    </node>
+  </node>
+</model>
+

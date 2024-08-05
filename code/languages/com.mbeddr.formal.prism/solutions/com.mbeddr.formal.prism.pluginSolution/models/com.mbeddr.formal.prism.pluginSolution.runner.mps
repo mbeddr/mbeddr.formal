@@ -7,7 +7,8 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="2avh" ref="r:d71bd9ec-2dae-496f-9887-8fb9facf61b7(com.mbeddr.formal.base.tooling.tools)" />
@@ -107,9 +108,16 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -257,8 +265,12 @@
           <node concept="17QB3L" id="4Hts7PYu1UB" role="_ZDj9" />
         </node>
       </node>
-      <node concept="NWlO9" id="4Hts7PYtZ_O" role="lGtFl">
-        <property role="NWlVz" value="Runs Prism on a given file and with additional arguments." />
+      <node concept="P$JXv" id="1y75PbzycUD" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycUB" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycUC" role="1dT_Ay">
+            <property role="1dT_AB" value="Runs Prism on a given file and with additional arguments." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1xpXAu0NY81" role="jymVt" />
@@ -368,8 +380,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="2xeYpNCeHYD" role="lGtFl">
-        <property role="NWlVz" value="Rund Prism." />
+      <node concept="P$JXv" id="1y75PbzycUG" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycUE" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycUF" role="1dT_Ay">
+            <property role="1dT_AB" value="Rund Prism." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1xpXAu0NY8e" role="jymVt" />

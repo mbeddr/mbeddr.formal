@@ -1790,5 +1790,41 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="7NA168qa4CZ">
+    <property role="3GE5qa" value="attributes.color" />
+    <ref role="13h7C2" to="py52:7NA168q5wko" resolve="PlainTextAttribute" />
+    <node concept="13hLZK" id="7NA168qa4D0" role="13h7CW">
+      <node concept="3clFbS" id="7NA168qa4D1" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7NA168qa4Ew" role="13h7CS">
+      <property role="TrG5h" value="asText" />
+      <ref role="13i0hy" to="w873:1r1mR59uH1f" resolve="asText" />
+      <node concept="3Tm1VV" id="7NA168qa4Ex" role="1B3o_S" />
+      <node concept="3clFbS" id="7NA168qa4E$" role="3clF47">
+        <node concept="3clFbF" id="7NA168qa4EB" role="3cqZAp">
+          <node concept="3cpWs3" id="7NA168qa6z2" role="3clFbG">
+            <node concept="2OqwBi" id="7NA168qa6Fj" role="3uHU7w">
+              <node concept="13iPFW" id="7NA168qa6$J" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7NA168qa7fo" role="2OqNvi">
+                <ref role="3TsBF5" to="py52:7NA168q5wRL" resolve="value" />
+              </node>
+            </node>
+            <node concept="3cpWs3" id="7NA168qa6lq" role="3uHU7B">
+              <node concept="2OqwBi" id="7NA168qa5gy" role="3uHU7B">
+                <node concept="13iPFW" id="7NA168qa4YC" role="2Oq$k0" />
+                <node concept="3TrcHB" id="7NA168qa5MP" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="7NA168qa6mS" role="3uHU7w">
+                <property role="Xl_RC" value=":" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7NA168qa4E_" role="3clF45" />
+    </node>
+  </node>
 </model>
 

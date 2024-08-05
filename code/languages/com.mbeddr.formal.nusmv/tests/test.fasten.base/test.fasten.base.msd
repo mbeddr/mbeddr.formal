@@ -9,6 +9,7 @@
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet type="tests" />
   </facets>
   <dependencies>
     <dependency reexport="false">b0f97242-b2a5-4637-95d3-c63ed6f55701(test.mbeddr.formal.nusmv)</dependency>

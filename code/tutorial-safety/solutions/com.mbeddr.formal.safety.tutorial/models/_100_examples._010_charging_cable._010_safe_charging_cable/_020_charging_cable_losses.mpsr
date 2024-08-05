@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:28d45899-cb06-44a2-a245-407cc7013b3d(_100_examples._010_charging_cable._010_safe_charging_cable)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="2626862697025835302" name="com.mbeddr.formal.safety.hara.structure.Losses" flags="ng" index="2HxQMi">
+        <child id="2626862697025835303" name="losses" index="2HxQMj" />
+      </concept>
+      <concept id="2626862697025835278" name="com.mbeddr.formal.safety.hara.structure.Loss" flags="ng" index="2HxQMU">
+        <property id="2626862697025835281" name="id" index="2HxQM_" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2HxQMi" id="2hOvri9WU6F">
+    <property role="TrG5h" value="_020_charging_cable_losses" />
+    <node concept="2HxQMU" id="2hOvri9WU6G" role="2HxQMj">
+      <property role="2HxQM_" value="L01" />
+      <property role="TrG5h" value="Loss of life or serious injury to people" />
+    </node>
+    <node concept="2HxQMU" id="2hOvri9WU6H" role="2HxQMj">
+      <property role="2HxQM_" value="L02" />
+      <property role="TrG5h" value="Electrical damage (economic loss)" />
+    </node>
+  </node>
+</model>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.meta.all/com.fasten.meta.all.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.meta.architecture/com.fasten.meta.architecture.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.meta.linters/com.fasten.meta.linters.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

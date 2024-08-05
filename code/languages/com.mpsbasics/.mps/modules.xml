@@ -2,10 +2,20 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.jira/com.mpsbasics.jira.mpl" folder="jira" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.pdfexporter/com.mpsbasics.pdfexporter.mpl" folder="pdfbox" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.build/com.mpsbasics.build.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.core/com.mpsbasics.docx4j.core.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.lib/com.mpsbasics.docx4j.lib.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.sandbox/com.mpsbasics.docx4j.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.core/com.mpsbasics.docx4j.core.msd" folder="docx4j" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.diffx.lib/com.mpsbasics.docx4j.diffx.lib.msd" folder="docx4j" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.lib/com.mpsbasics.docx4j.lib.msd" folder="docx4j" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.sandbox/com.mpsbasics.docx4j.sandbox.msd" folder="docx4j" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.testutils/com.mpsbasics.docx4j.testutils.msd" folder="docx4j" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.editor.utils/com.mpsbasics.editor.utils.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.jira.pluginSolution/com.mpsbasics.jira.pluginSolution.msd" folder="jira" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.jira.sandbox/com.mpsbasics.jira.sandbox.msd" folder="jira" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.pdfbox.sandbox/com.mpsbasics.pdfbox.sandbox.msd" folder="pdfbox" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.pdfbox/com.mpsbasics.pdfbox.msd" folder="pdfbox" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.project.utils/com.mpsbasics.project.utils.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.snode.utils/com.mpsbasics.snode.utils.msd" folder="" />
     </projectModules>
   </component>

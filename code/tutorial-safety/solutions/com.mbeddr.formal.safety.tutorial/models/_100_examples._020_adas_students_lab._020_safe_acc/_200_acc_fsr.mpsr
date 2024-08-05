@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:6df6dea3-0ed6-4204-928b-52b619b721ef(_100_examples._020_adas_students_lab._020_safe_acc)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl">
+        <child id="7127433683365164021" name="subRequirements" index="1VMWzp" />
+      </concept>
+      <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
+        <child id="3226630706270140651" name="text" index="0nzdz" />
+      </concept>
+      <concept id="467505803006179844" name="com.mbeddr.formal.req.base.structure.RequirementTrace" flags="ng" index="0Sh09">
+        <child id="7993788941569402916" name="reqRefs" index="hnKMk" />
+      </concept>
+      <concept id="7993788941569402923" name="com.mbeddr.formal.req.base.structure.RequirementRef" flags="ng" index="hnKMr">
+        <reference id="7993788941569402924" name="req" index="hnKMs" />
+      </concept>
+      <concept id="4908298719893728799" name="com.mbeddr.formal.req.base.structure.EmptySpec" flags="ng" index="1QQeAL" />
+      <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
+        <child id="4908298719893728789" name="spec" index="1QQeAV" />
+      </concept>
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706270020326" name="createdBy" index="0ke_I" />
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="4908298719893728774" name="specs" index="1QQeAC" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
+    <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
+      <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.FunctionalSafetyReqKind" flags="ng" index="2iDXIW">
+        <child id="7998766141987827641" name="hazards" index="DABNk" />
+      </concept>
+      <concept id="7998766141987822488" name="com.mbeddr.formal.safety.req.structure.TechnicalSafetyReqKind" flags="ng" index="DA$zP" />
+    </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
+        <reference id="7998766141987827622" name="hazard" index="DABNb" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1QQeGf" id="4WLVkAsg6Gu">
+    <property role="TrG5h" value="_200_acc_fsr" />
+    <node concept="0lhDl" id="7NWnpv9rO5h" role="1QQeBF">
+      <property role="0lsPA" value="FSR01_ACC" />
+      <property role="0ke_I" value="Team" />
+      <node concept="0lhDl" id="2vEFX4zmZhW" role="1VMWzp">
+        <property role="0ke_I" value="Team" />
+        <property role="0lsPA" value="FSR01_1_ACC" />
+        <node concept="19SGf9" id="2vEFX4zmZhY" role="1QQeG9">
+          <node concept="19SUe$" id="2vEFX4zmZhZ" role="19SJt6">
+            <property role="19SUeA" value="Driver Warning" />
+          </node>
+        </node>
+        <node concept="1QQeAY" id="2vEFX4zmZif" role="1QQeAC">
+          <node concept="0nzK2" id="2vEFX4zmZih" role="1QQeAV">
+            <node concept="19SGf9" id="2vEFX4zmZij" role="0nzdz">
+              <node concept="19SUe$" id="2vEFX4zmZik" role="19SJt6">
+                <property role="19SUeA" value="If inconsistent computation is detected, the driver must be warned.&#10;If hardware failure is detected, the driver must be warned." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2iDXIW" id="2vEFX4zmZjd" role="0nOlf" />
+      </node>
+      <node concept="0lhDl" id="7NWnpv9rO7O" role="1VMWzp">
+        <property role="0lsPA" value="FSR01_2_ACC" />
+        <property role="0ke_I" value="Team" />
+        <node concept="1QQeAY" id="7NWnpv9rO8h" role="1QQeAC">
+          <node concept="0nzK2" id="7NWnpv9rO8j" role="1QQeAV">
+            <node concept="19SGf9" id="7NWnpv9rO8l" role="0nzdz">
+              <node concept="19SUe$" id="7NWnpv9rO8m" role="19SJt6">
+                <property role="19SUeA" value="The driver shall be able to take over control of the car." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="19SGf9" id="7NWnpv9rO7Q" role="1QQeG9">
+          <node concept="19SUe$" id="7NWnpv9rO7R" role="19SJt6">
+            <property role="19SUeA" value="Driver take-over" />
+          </node>
+        </node>
+        <node concept="2iDXIW" id="4tgWazNvn9I" role="0nOlf" />
+      </node>
+      <node concept="1QQeAY" id="7NWnpv9rO6K" role="1QQeAC">
+        <node concept="0nzK2" id="7NWnpv9rO6M" role="1QQeAV">
+          <node concept="19SGf9" id="7NWnpv9rO6O" role="0nzdz">
+            <node concept="19SUe$" id="7NWnpv9rO6P" role="19SJt6">
+              <property role="19SUeA" value="The ACC shall be able to switch to a safe state, when needed." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeAL" id="2vEFX4zmZh4" role="1QQeAC" />
+      <node concept="19SGf9" id="7NWnpv9rO5j" role="1QQeG9">
+        <node concept="19SUe$" id="7NWnpv9rO5k" role="19SJt6">
+          <property role="19SUeA" value="Reach safe state" />
+        </node>
+      </node>
+      <node concept="2iDXIW" id="4tgWazNvn9L" role="0nOlf">
+        <node concept="DABN8" id="2vEFX4zmTFh" role="DABNk">
+          <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="2l0tHRMMe1Z" role="1QQeBF">
+      <property role="0lsPA" value="FSR02_ACC" />
+      <property role="0ke_I" value="Marcel&amp;Moritz" />
+      <node concept="1QQeAY" id="2l0tHRMMevk" role="1QQeAC">
+        <node concept="0nzK2" id="2l0tHRMMevm" role="1QQeAV">
+          <node concept="19SGf9" id="2l0tHRMMevo" role="0nzdz">
+            <node concept="19SUe$" id="2l0tHRMMevp" role="19SJt6">
+              <property role="19SUeA" value="The rover shall not violate the safe distance to the vehicle in front. &#10;It therefore shall by monitoring the system and environmental&#10;conditions, and accelerate/brake within small intervals in order to keep &#10;the distance accordingly. The safe distance is defined by the distance &#10;that is mandatory to safely stop the rover in an emergency situation avoiding a crash." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="DA$zP" id="2l0tHRMMe2j" role="0nOlf" />
+      <node concept="19SGf9" id="2l0tHRMMe21" role="1QQeG9">
+        <node concept="19SUe$" id="2l0tHRMMe22" role="19SJt6">
+          <property role="19SUeA" value="Keep Safe Distance" />
+        </node>
+      </node>
+      <node concept="0Sh09" id="2vEFX4zmTFm" role="lGtFl">
+        <node concept="hnKMr" id="2vEFX4zmZkg" role="hnKMk">
+          <ref role="hnKMs" node="4WLVkAsg3oT" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="4j8iycQYmv5" role="1QQeBF">
+      <property role="0lsPA" value="FSR03_ACC" />
+      <property role="0ke_I" value="Team" />
+      <node concept="1QQeAY" id="4j8iycQYmwk" role="1QQeAC">
+        <node concept="0nzK2" id="4j8iycQYmwm" role="1QQeAV">
+          <node concept="19SGf9" id="4j8iycQYmwo" role="0nzdz">
+            <node concept="19SUe$" id="4j8iycQYmwp" role="19SJt6">
+              <property role="19SUeA" value="The ACC shall require feedback from multiple sensing &#10;technologies in order to reliably detect leader vehicle. " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="4j8iycQYmv7" role="1QQeG9">
+        <node concept="19SUe$" id="4j8iycQYmv8" role="19SJt6">
+          <property role="19SUeA" value="Reliable Sensor Function " />
+        </node>
+      </node>
+      <node concept="2iDXIW" id="4tgWazNvn8l" role="0nOlf">
+        <node concept="DABN8" id="2vEFX4zmTFb" role="DABNk">
+          <ref role="DABNb" node="2vEFX4zmTr$" resolve="Ego vehicle does not maintain safe distance from leader vehicle" />
+        </node>
+      </node>
+      <node concept="0Sh09" id="2vEFX4zmZkk" role="lGtFl">
+        <node concept="hnKMr" id="2vEFX4zmZko" role="hnKMk">
+          <ref role="hnKMs" node="2l0tHRMMe1Z" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

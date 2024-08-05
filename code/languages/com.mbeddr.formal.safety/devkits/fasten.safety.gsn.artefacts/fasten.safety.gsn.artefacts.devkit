@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="fasten.safety.gsn.artefacts" uuid="58430e3c-3d97-455c-a27e-8eeba7f8513e">
   <exported-language name="fdecb1e5-875e-41ef-a5fd-4b18f747f204(com.mbeddr.formal.safety.argument.process.artefacts)" />
+  <exported-language name="e6e482a5-282a-4c6d-862a-311affd0586b(com.mbeddr.formal.safety.argument.jira_integration)" />
+  <exported-language name="fde86f49-830f-414f-9c22-2a9e300eaba6(com.mpsbasics.jira)" />
   <extendedDevKits>
     <extendedDevKit>7466bc49-e775-4df7-a9f3-e383173b2eee(fasten.safety.gsn.ext)</extendedDevKit>
   </extendedDevKits>

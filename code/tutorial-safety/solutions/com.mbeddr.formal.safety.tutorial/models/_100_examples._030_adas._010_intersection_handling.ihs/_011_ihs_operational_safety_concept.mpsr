@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:0a67385e-17ec-4148-b1f8-83ce752e9242(_100_examples._030_adas._010_intersection_handling.ihs)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
+      <concept id="3226630706269625197" name="com.mbeddr.formal.req.base.structure.EmptyRequirement" flags="ng" index="0lH3_" />
+      <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
+        <child id="3226630706270140651" name="text" index="0nzdz" />
+      </concept>
+      <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
+        <child id="4908298719893728789" name="spec" index="1QQeAV" />
+      </concept>
+      <concept id="4908298719893728634" name="com.mbeddr.formal.req.base.structure.Functional" flags="ng" index="1QQeFk" />
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706270020326" name="createdBy" index="0ke_I" />
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="4908298719893728774" name="specs" index="1QQeAC" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
+    <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
+      <concept id="7926133672146485940" name="com.mbeddr.formal.safety.req.structure.OperatingContextReqKind" flags="ng" index="3ZsCCw" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1QQeGf" id="3Jn$RV2VwqZ">
+    <property role="TrG5h" value="_011_ihs_operational_safety_concept" />
+    <property role="3GE5qa" value="_010_hara" />
+    <node concept="0lhDl" id="3Jn$RV2Vwr0" role="1QQeBF">
+      <property role="0lsPA" value="OSR01" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="1QQeAY" id="3Jn$RV2Vwr4" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vwre" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vwrk" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vwrm" role="19SJt6">
+              <property role="19SUeA" value="Safe and responsive control of the vehicle &#10;considering Object and Event Detection and Response (OEDR)." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="3Jn$RV2Vwr5" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vwrf" role="19SJt6">
+          <property role="19SUeA" value="OEDR" />
+        </node>
+      </node>
+      <node concept="3ZsCCw" id="3Jn$RV2Vwr6" role="0nOlf" />
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2Vwr1" role="1QQeBF">
+      <property role="0lsPA" value="OSR02" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="19SGf9" id="3Jn$RV2Vwr7" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vwrg" role="19SJt6">
+          <property role="19SUeA" value="Available and Reliable AD Service" />
+        </node>
+      </node>
+      <node concept="3ZsCCw" id="3Jn$RV2Vwr8" role="0nOlf" />
+      <node concept="1QQeAY" id="4Crei7hwgfu" role="1QQeAC">
+        <node concept="0nzK2" id="4Crei7hwgfw" role="1QQeAV">
+          <node concept="19SGf9" id="4Crei7hwgfy" role="0nzdz">
+            <node concept="19SUe$" id="4Crei7hwgfz" role="19SJt6">
+              <property role="19SUeA" value="The Intersection Assistant shall provide safe control &#10;to the vehicle with high availability &#10;while operating in the defined ODD." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2Vwr2" role="1QQeBF">
+      <property role="0lsPA" value="OSR03" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="1QQeAY" id="3Jn$RV2Vwr9" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vwrh" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vwrl" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vwrn" role="19SJt6">
+              <property role="19SUeA" value="Predictive, user-centric and collision free AD service." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="3Jn$RV2Vwra" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2Vwrb" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vwri" role="19SJt6">
+          <property role="19SUeA" value="Collision-free AD Service" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2Vwr3" role="1QQeBF">
+      <property role="0lsPA" value="OSR04" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="1QQeFk" id="3Jn$RV2Vwrc" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2Vwrd" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vwrj" role="19SJt6">
+          <property role="19SUeA" value="Sensors Maintenance" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="4Crei7hwgg9" role="1QQeAC">
+        <node concept="0nzK2" id="4Crei7hwggb" role="1QQeAV">
+          <node concept="19SGf9" id="4Crei7hwggd" role="0nzdz">
+            <node concept="19SUe$" id="4Crei7hwgge" role="19SJt6">
+              <property role="19SUeA" value="A maintenance service for the in-vehicle sensors &#10;on which the Intersection Assistant relies shall exist." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="4Crei7hwgfD" role="1QQeBF" />
+  </node>
+</model>
+

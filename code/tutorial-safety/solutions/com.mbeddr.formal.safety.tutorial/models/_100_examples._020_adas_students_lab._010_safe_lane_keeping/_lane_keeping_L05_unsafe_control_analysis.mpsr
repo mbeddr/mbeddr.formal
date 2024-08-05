@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:dd5bd7c0-777e-4df6-8e2d-9a855cc2e96b(_100_examples._020_adas_students_lab._010_safe_lane_keeping)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
+      <concept id="2925021647566955739" name="com.mbeddr.formal.safety.stamp.structure.ActionsForHazopKeyword" flags="ng" index="3f6qtF">
+        <child id="2925021647566955740" name="actions" index="3f6qtG" />
+      </concept>
+      <concept id="2925021647566797644" name="com.mbeddr.formal.safety.stamp.structure.HazopKeywordDefinition" flags="ng" index="3f73zW" />
+      <concept id="2004523000582373898" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControlAnalysis" flags="ng" index="1E0nO6">
+        <reference id="2004523000582447869" name="functionalControlStructure" index="1E05RL" />
+        <child id="2925021647566797672" name="hazopKeywords" index="3f73zo" />
+        <child id="2004523000582374978" name="unsafeController" index="1E0n_e" />
+      </concept>
+      <concept id="2004523000582373920" name="com.mbeddr.formal.safety.stamp.structure.UnsafeController" flags="ng" index="1E0nOG">
+        <reference id="2004523000582373921" name="controller" index="1E0nOH" />
+        <child id="2004523000582373924" name="unsafeActions" index="1E0nOC" />
+      </concept>
+      <concept id="2004523000582373923" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControllerAction" flags="ng" index="1E0nOJ">
+        <reference id="2004523000582375039" name="action" index="1E0n_N" />
+        <child id="2925021647566955780" name="actionsForHazopKeyword" index="3f6qqO" />
+      </concept>
+      <concept id="2004523000582413322" name="com.mbeddr.formal.safety.stamp.structure.TextualActionDescription" flags="ng" index="1E0uc6">
+        <child id="2004523000582413323" name="text" index="1E0uc7" />
+      </concept>
+      <concept id="2036977205576040320" name="com.mbeddr.formal.safety.stamp.structure.NotApplicableAction" flags="ng" index="3XErhT" />
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="3302592670537174430" name="com.mbeddr.formal.safety.hara.structure.HazardRefWord" flags="ng" index="oY6sn">
+        <reference id="3302592670537516121" name="hazard" index="oTUVg" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1E0nO6" id="2fZol$t_25v">
+    <property role="TrG5h" value="_lane_keeping_L05_unsafe_control_analysis" />
+    <ref role="1E05RL" node="2fZol$t_0Lh" resolve="_lane_keeping_L05_control_structure" />
+    <node concept="1E0nOG" id="2fZol$t_25w" role="1E0n_e">
+      <ref role="1E0nOH" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
+      <node concept="1E0nOJ" id="2fZol$t_25x" role="1E0nOC">
+        <ref role="1E0n_N" node="2fZol$t_17g" resolve="alarm signal" />
+        <node concept="3f6qtF" id="6vZMoXu3Mih" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JMrp" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_12" />
+            <node concept="19SGf9" id="1J1VyY6JMrr" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JMrs" role="19SJt6">
+                <property role="19SUeA" value="Alarm signal issues in non emergency situations " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6RJ" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYgH" resolve="Unnecessary warnings - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6RK" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mij" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JMrF" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_11" />
+            <node concept="19SGf9" id="1J1VyY6JMrO" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JMrP" role="19SJt6">
+                <property role="19SUeA" value="A few (not all) alarm signals not working " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6RE" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6RF" role="19SJt6">
+                <property role="19SUeA" value="&#10;  " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mil" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JMtn" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_13" />
+            <node concept="19SGf9" id="1J1VyY6JMtA" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JMtB" role="19SJt6">
+                <property role="19SUeA" value="Alarm signal issues too late " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6RO" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6RP" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Min" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JMtE" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_14" />
+            <node concept="19SGf9" id="1J1VyY6JMtG" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JMtH" role="19SJt6">
+                <property role="19SUeA" value="Alarm signal stoppes too soon, so driver might not interprete signal. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6RT" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6RU" role="19SJt6">
+                <property role="19SUeA" value="&#10;Alarm signal stoppes too late, so driver might be confused and/or &#10;disturbed. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6RY" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYgH" resolve="Unnecessary warnings - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6RZ" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="1J1VyY6JMvJ" role="1E0n_e">
+      <ref role="1E0nOH" node="2fZol$t_0Pf" resolve="Communication Control Unit" />
+      <node concept="1E0nOJ" id="1J1VyY6JMvK" role="1E0nOC">
+        <ref role="1E0n_N" node="1J1VyY6JMus" resolve="activation signal" />
+        <node concept="3f6qtF" id="6vZMoXu3Mio" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JMxe" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_22" />
+            <node concept="19SGf9" id="1J1VyY6JMxg" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JMxh" role="19SJt6">
+                <property role="19SUeA" value="Signal of system activation without system being actually active -&gt; driver confused. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6Sa" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWj5" resolve="Bad system feedback to driver (e.g. error reporting) - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6Sb" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mip" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JMx8" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_21" />
+            <node concept="19SGf9" id="1J1VyY6JMxa" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JMxb" role="19SJt6">
+                <property role="19SUeA" value="Driver cannot recognize that system is activated. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6S5" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWj5" resolve="Bad system feedback to driver (e.g. error reporting) - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6S6" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Miq" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JMxk" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_23" />
+            <node concept="19SGf9" id="1J1VyY6JMxm" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JMxn" role="19SJt6">
+                <property role="19SUeA" value="Activation signal delayed -&gt; Driver confused why system is not activated. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6Tm" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWj5" resolve="Bad system feedback to driver (e.g. error reporting) - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6Tn" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mir" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JMxq" role="3f6qtG" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="1J1VyY6JMtZ" role="1E0n_e">
+      <ref role="1E0nOH" node="2fZol$t_0Rm" resolve="LK Activation button" />
+      <node concept="1E0nOJ" id="1J1VyY6JMu0" role="1E0nOC">
+        <ref role="1E0n_N" node="2fZol$t_1dX" resolve="activate" />
+        <node concept="3f6qtF" id="6vZMoXu3Mis" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JMwe" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mit" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JMuj" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_31" />
+            <node concept="19SGf9" id="1J1VyY6JMul" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JMum" role="19SJt6">
+                <property role="19SUeA" value="Button does not switch. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6Sf" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWkF" resolve="Lane keeping system cannot be activated - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6Sg" role="19SJt6">
+                <property role="19SUeA" value="&#10;Button difficult to find or handle. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6Sk" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYh9" resolve="Complicated interface - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6Sl" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Miu" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JMx4" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Miv" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JMx6" role="3f6qtG" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="1J1VyY6JMxs" role="1E0n_e">
+      <ref role="1E0nOH" node="2fZol$t_0O3" resolve="Lane Keeping Control Unit" />
+      <node concept="1E0nOJ" id="1J1VyY6JM$8" role="1E0nOC">
+        <ref role="1E0n_N" node="2fZol$t_1LI" resolve="driver overtake request" />
+        <node concept="3f6qtF" id="6vZMoXu3Miw" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JM_i" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_42" />
+            <node concept="19SGf9" id="1J1VyY6JM_k" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JM_l" role="19SJt6">
+                <property role="19SUeA" value="Signal of system deactivation without need. -&gt; driver confused. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6Sr" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWj5" resolve="Bad system feedback to driver (e.g. error reporting) - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6Ss" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mix" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JM_p" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Miy" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JM_r" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Miz" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JM_t" role="3f6qtG" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="1J1VyY6JM_B" role="1E0n_e">
+      <ref role="1E0nOH" node="2fZol$t_0O3" resolve="Lane Keeping Control Unit" />
+      <node concept="1E0nOJ" id="1J1VyY6JM_C" role="1E0nOC">
+        <ref role="1E0n_N" node="2fZol$t_1ma" resolve="control" />
+        <node concept="3f6qtF" id="6vZMoXu3Mi$" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JMAV" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3Mi_" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JMAT" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MiA" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JMAX" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MiB" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JMAZ" role="3f6qtG" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="1J1VyY6JMy4" role="1E0n_e">
+      <ref role="1E0nOH" node="2fZol$t_0Ly" resolve="Motor providing torque to steering wheel" />
+      <node concept="1E0nOJ" id="1J1VyY6JMy5" role="1E0nOC">
+        <ref role="1E0n_N" node="2fZol$t_13w" resolve="steer" />
+        <node concept="3f6qtF" id="6vZMoXu3MiC" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JM_x" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MiD" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JM_v" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MiE" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JM_z" role="3f6qtG" />
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MiF" role="3f6qqO">
+          <node concept="3XErhT" id="1J1VyY6JM__" role="3f6qtG" />
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="1J1VyY6JMyI" role="1E0n_e">
+      <ref role="1E0nOH" node="2fZol$t_0Lj" resolve="Motor providing vibrations to steering wheel&#10;" />
+      <node concept="1E0nOJ" id="1J1VyY6JMyJ" role="1E0nOC">
+        <ref role="1E0n_N" node="2fZol$t_15g" resolve="vibrate" />
+        <node concept="3f6qtF" id="6vZMoXu3MiG" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JM$q" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_72" />
+            <node concept="19SGf9" id="1J1VyY6JM$s" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JM$t" role="19SJt6">
+                <property role="19SUeA" value="Signal of system activation without system being actually active -&gt; driver confused. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6Sw" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWj5" resolve="Bad system feedback to driver (e.g. error reporting) - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6Sx" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MiH" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JM$j" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_71" />
+            <node concept="19SGf9" id="1J1VyY6JM$l" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JM$m" role="19SJt6">
+                <property role="19SUeA" value="Driver cannot recognize that he has to intervene. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6Tc" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6Td" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MiI" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JM$y" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_73" />
+            <node concept="19SGf9" id="1J1VyY6JM$$" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JM$_" role="19SJt6">
+                <property role="19SUeA" value="Activation signal delayed -&gt; Driver confused why system is not activated. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6SE" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWj5" resolve="Bad system feedback to driver (e.g. error reporting) - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6SF" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MiJ" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JM$D" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_74" />
+            <node concept="19SGf9" id="1J1VyY6JM$F" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JM$G" role="19SJt6">
+                <property role="19SUeA" value="Vibration stoppes too soon, so driver might not interprete signal. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6SO" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6SP" role="19SJt6">
+                <property role="19SUeA" value="&#10;Vibration stoppes too late -&gt; uncomfortable. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6SY" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYgH" resolve="Unnecessary warnings - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6Ts" role="19SJt6" />
+              <node concept="oY6sn" id="4NqRXFNx6Tr" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYeZ" resolve="Uncomfortable steering - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6Tt" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1E0nOG" id="1J1VyY6JMzq" role="1E0n_e">
+      <ref role="1E0nOH" node="2fZol$t_0Nn" resolve="Steering wheel" />
+      <node concept="1E0nOJ" id="1J1VyY6JMzr" role="1E0nOC">
+        <ref role="1E0n_N" node="2fZol$t_10d" resolve="vibrate" />
+        <node concept="3f6qtF" id="6vZMoXu3MiK" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JM$K" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_82" />
+            <node concept="19SGf9" id="1J1VyY6JM$M" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JM$N" role="19SJt6">
+                <property role="19SUeA" value="Signal of system activation without system being actually active -&gt; driver confused. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6S_" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWj5" resolve="Bad system feedback to driver (e.g. error reporting) - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6SA" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MiL" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JM$d" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_81" />
+            <node concept="19SGf9" id="1J1VyY6JM$f" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JM$g" role="19SJt6">
+                <property role="19SUeA" value="Driver cannot recognize that he has to intervene. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6Th" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6Ti" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MiM" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JM$S" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_83" />
+            <node concept="19SGf9" id="1J1VyY6JM$U" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JM$V" role="19SJt6">
+                <property role="19SUeA" value="Activation signal delayed -&gt; Driver confused why system is not activated. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6SJ" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWj5" resolve="Bad system feedback to driver (e.g. error reporting) - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6SK" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="6vZMoXu3MiN" role="3f6qqO">
+          <node concept="1E0uc6" id="1J1VyY6JM$Z" role="3f6qtG">
+            <property role="TrG5h" value="UCA_LK_Control_84" />
+            <node concept="19SGf9" id="1J1VyY6JM_1" role="1E0uc7">
+              <node concept="19SUe$" id="1J1VyY6JM_2" role="19SJt6">
+                <property role="19SUeA" value="Vibration stoppes too soon, so driver might not interprete signal. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6ST" role="19SJt6">
+                <ref role="oTUVg" node="lV44fsLWjR" resolve="User interface devices not working properly - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6SU" role="19SJt6">
+                <property role="19SUeA" value="&#10;Vibration stoppes too late -&gt; uncomfortable. " />
+              </node>
+              <node concept="oY6sn" id="4NqRXFNx6T5" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYgH" resolve="Unnecessary warnings - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6TA" role="19SJt6" />
+              <node concept="oY6sn" id="4NqRXFNx6T_" role="19SJt6">
+                <ref role="oTUVg" node="G$XGFsgYeZ" resolve="Uncomfortable steering - ASIL QM" />
+              </node>
+              <node concept="19SUe$" id="4NqRXFNx6TB" role="19SJt6" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mig" role="3f73zo">
+      <property role="TrG5h" value="Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mii" role="3f73zo">
+      <property role="TrG5h" value="Not Providing Causes Hazard" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mik" role="3f73zo">
+      <property role="TrG5h" value="Too Soon/Late, Out of Sequence" />
+    </node>
+    <node concept="3f73zW" id="6vZMoXu3Mim" role="3f73zo">
+      <property role="TrG5h" value="Stopped too Soon, Applied too Long" />
+    </node>
+  </node>
+</model>
+

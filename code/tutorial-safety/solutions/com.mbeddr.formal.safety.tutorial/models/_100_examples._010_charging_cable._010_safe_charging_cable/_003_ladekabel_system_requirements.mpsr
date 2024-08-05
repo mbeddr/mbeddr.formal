@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:28d45899-cb06-44a2-a245-407cc7013b3d(_100_examples._010_charging_cable._010_safe_charging_cable)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl">
+        <child id="7127433683365164021" name="subRequirements" index="1VMWzp" />
+      </concept>
+      <concept id="3226630706269625197" name="com.mbeddr.formal.req.base.structure.EmptyRequirement" flags="ng" index="0lH3_" />
+      <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
+        <child id="3226630706270140651" name="text" index="0nzdz" />
+      </concept>
+      <concept id="3536307729771763876" name="com.mbeddr.formal.req.base.structure.TracedNodeSpec" flags="ng" index="3g$em0">
+        <reference id="3536307729771763879" name="trace" index="3g$em3" />
+      </concept>
+      <concept id="6544290145033221524" name="com.mbeddr.formal.req.base.structure.Interface" flags="ng" index="3z6Cyy" />
+      <concept id="4908298719893728799" name="com.mbeddr.formal.req.base.structure.EmptySpec" flags="ng" index="1QQeAL" />
+      <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
+        <child id="4908298719893728789" name="spec" index="1QQeAV" />
+      </concept>
+      <concept id="4908298719893728634" name="com.mbeddr.formal.req.base.structure.Functional" flags="ng" index="1QQeFk" />
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706270020326" name="createdBy" index="0ke_I" />
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="4908298719893728774" name="specs" index="1QQeAC" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1QQeGf" id="6bDIMKp8B9J">
+    <property role="TrG5h" value="_003_ladekabel_system_requirements" />
+    <property role="3GE5qa" value="_000_item_definition" />
+    <node concept="0lhDl" id="6bDIMKp8B9K" role="1QQeBF">
+      <property role="0lsPA" value="SR01" />
+      <property role="0ke_I" value="Hannes" />
+      <node concept="19SGf9" id="6bDIMKp8B9M" role="1QQeG9">
+        <node concept="19SUe$" id="6bDIMKp8Ba0" role="19SJt6">
+          <property role="19SUeA" value="Charging cable system states" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="6bDIMKp8BfB" role="1QQeAC">
+        <node concept="0nzK2" id="6bDIMKp8BfC" role="1QQeAV">
+          <node concept="19SGf9" id="6bDIMKp8BfD" role="0nzdz">
+            <node concept="19SUe$" id="6bDIMKp8BfE" role="19SJt6">
+              <property role="19SUeA" value="The charging cable has following states: initial, startup, operate, safe and shutdown." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3g$em0" id="1JJRV36A0ZT" role="1QQeAC">
+        <ref role="3g$em3" node="1JJRV36A102" />
+      </node>
+      <node concept="1QQeAL" id="6bDIMKp9j45" role="1QQeAC" />
+      <node concept="1QQeAL" id="6bDIMKp9iZQ" role="1QQeAC" />
+      <node concept="0lhDl" id="6bDIMKp97o9" role="1VMWzp">
+        <property role="0lsPA" value="SR01.1" />
+        <property role="0ke_I" value="Hannes" />
+        <node concept="1QQeAY" id="6bDIMKp9iY9" role="1QQeAC">
+          <node concept="0nzK2" id="6bDIMKp9iYb" role="1QQeAV">
+            <node concept="19SGf9" id="6bDIMKp9iYd" role="0nzdz">
+              <node concept="19SUe$" id="6bDIMKp9iYe" role="19SJt6">
+                <property role="19SUeA" value="Circuit breaker open;&#10;Connector EV and mains disconnected;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3g$em0" id="1JJRV36A12U" role="1QQeAC">
+          <ref role="3g$em3" node="6bDIMKp9iZO" />
+        </node>
+        <node concept="3g$em0" id="1JJRV36A151" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A13I" />
+        </node>
+        <node concept="1QQeFk" id="6bDIMKp97oa" role="0nOlf" />
+        <node concept="19SGf9" id="6bDIMKp97ob" role="1QQeG9">
+          <node concept="19SUe$" id="6bDIMKp97oc" role="19SJt6">
+            <property role="19SUeA" value="Initial State" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="4bSVeFVFBjW" role="1VMWzp">
+        <property role="0lsPA" value="SR01.2" />
+        <property role="0ke_I" value="Hannes" />
+        <node concept="1QQeAY" id="4bSVeFVFBlm" role="1QQeAC">
+          <node concept="0nzK2" id="4bSVeFVFBlo" role="1QQeAV">
+            <node concept="19SGf9" id="4bSVeFVFBlq" role="0nzdz">
+              <node concept="19SUe$" id="4bSVeFVFBlr" role="19SJt6">
+                <property role="19SUeA" value="The state startup shall only be reachable from initial state.&#10;Connector mains connected;&#10;Controller powered;&#10;Controller startup initiated including startup-check;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3g$em0" id="1JJRV36A5nN" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A3Pe" />
+        </node>
+        <node concept="3g$em0" id="1JJRV36A4OV" role="1QQeAC">
+          <ref role="3g$em3" node="4bSVeFVFBxR" />
+        </node>
+        <node concept="3g$em0" id="1JJRV36A4P9" role="1QQeAC">
+          <ref role="3g$em3" node="4bSVeFVFBmd" />
+        </node>
+        <node concept="3g$em0" id="1JJRV36A4PF" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A3ox" />
+        </node>
+        <node concept="1QQeFk" id="4bSVeFVFBjX" role="0nOlf" />
+        <node concept="19SGf9" id="4bSVeFVFBjY" role="1QQeG9">
+          <node concept="19SUe$" id="4bSVeFVFBjZ" role="19SJt6">
+            <property role="19SUeA" value="Startup State" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="4bSVeFVFBkc" role="1VMWzp">
+        <property role="0lsPA" value="SR01.3" />
+        <property role="0ke_I" value="Hannes" />
+        <node concept="1QQeAY" id="4bSVeFVFBnV" role="1QQeAC">
+          <node concept="0nzK2" id="4bSVeFVFBnX" role="1QQeAV">
+            <node concept="19SGf9" id="4bSVeFVFBnZ" role="0nzdz">
+              <node concept="19SUe$" id="4bSVeFVFBo0" role="19SJt6">
+                <property role="19SUeA" value="The state operation shall only be reachable from state startup. &#10;Connector EV and mains connected;&#10;Close Circuit breaker;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3g$em0" id="1JJRV36A4Q9" role="1QQeAC">
+          <ref role="3g$em3" node="4bSVeFVFBo6" />
+        </node>
+        <node concept="1QQeFk" id="4bSVeFVFBkd" role="0nOlf" />
+        <node concept="19SGf9" id="4bSVeFVFBke" role="1QQeG9">
+          <node concept="19SUe$" id="4bSVeFVFBkf" role="19SJt6">
+            <property role="19SUeA" value="Operate State" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="4bSVeFVFBkw" role="1VMWzp">
+        <property role="0lsPA" value="SR01.4" />
+        <property role="0ke_I" value="Hannes" />
+        <node concept="1QQeAY" id="4bSVeFVFBlz" role="1QQeAC">
+          <node concept="0nzK2" id="4bSVeFVFBl_" role="1QQeAV">
+            <node concept="19SGf9" id="4bSVeFVFBlB" role="0nzdz">
+              <node concept="19SUe$" id="4bSVeFVFBlC" role="19SJt6">
+                <property role="19SUeA" value="Circuit breaker open;&#10;Connector EV and mains disconnected;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3g$em0" id="1JJRV36A5mv" role="1QQeAC">
+          <ref role="3g$em3" node="4bSVeFVFBog" />
+        </node>
+        <node concept="3g$em0" id="7n39yospbcC" role="1QQeAC">
+          <ref role="3g$em3" node="4bSVeFVFBok" />
+        </node>
+        <node concept="1QQeFk" id="4bSVeFVFBkx" role="0nOlf" />
+        <node concept="19SGf9" id="4bSVeFVFBky" role="1QQeG9">
+          <node concept="19SUe$" id="4bSVeFVFBkz" role="19SJt6">
+            <property role="19SUeA" value="Safe State" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="4bSVeFVFBkS" role="1VMWzp">
+        <property role="0lsPA" value="SR01.5" />
+        <property role="0ke_I" value="Hannes" />
+        <node concept="1QQeAY" id="4bSVeFVFBlK" role="1QQeAC">
+          <node concept="0nzK2" id="4bSVeFVFBlM" role="1QQeAV">
+            <node concept="19SGf9" id="4bSVeFVFBlO" role="0nzdz">
+              <node concept="19SUe$" id="4bSVeFVFBlP" role="19SJt6">
+                <property role="19SUeA" value="The state shutdown shall be reached from all states.&#10;Circuit breaker opens;&#10;Connector mains disconnected;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3g$em0" id="1JJRV36A5nX" role="1QQeAC">
+          <ref role="3g$em3" node="4bSVeFVFBlV" />
+        </node>
+        <node concept="3g$em0" id="1JJRV36A5od" role="1QQeAC">
+          <ref role="3g$em3" node="4bSVeFVFBlZ" />
+        </node>
+        <node concept="3g$em0" id="1JJRV36A5ov" role="1QQeAC">
+          <ref role="3g$em3" node="4bSVeFVFBm1" />
+        </node>
+        <node concept="1QQeFk" id="4bSVeFVFBkT" role="0nOlf" />
+        <node concept="19SGf9" id="4bSVeFVFBkU" role="1QQeG9">
+          <node concept="19SUe$" id="4bSVeFVFBkV" role="19SJt6">
+            <property role="19SUeA" value="Shutdown State" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="4bSVeFVFB7E" role="0nOlf" />
+    </node>
+    <node concept="0lhDl" id="1JJRV36A5r0" role="1QQeBF">
+      <property role="0lsPA" value="SR02" />
+      <property role="0ke_I" value="Carmen" />
+      <node concept="0lhDl" id="1JJRV36A5sZ" role="1VMWzp">
+        <property role="0lsPA" value="SR02.1" />
+        <property role="0ke_I" value="Carmen" />
+        <node concept="1QQeAY" id="1JJRV36A6ph" role="1QQeAC">
+          <node concept="0nzK2" id="1JJRV36A6pj" role="1QQeAV">
+            <node concept="19SGf9" id="1JJRV36A6pl" role="0nzdz">
+              <node concept="19SUe$" id="1JJRV36A6pm" role="19SJt6">
+                <property role="19SUeA" value="Circuit breaker open;&#10;Connector EV and mains disconnected;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3g$em0" id="1JJRV36A6py" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A6pD" />
+        </node>
+        <node concept="1QQeAL" id="1JJRV36A6pF" role="1QQeAC" />
+        <node concept="1QQeFk" id="1JJRV36A5t0" role="0nOlf" />
+        <node concept="19SGf9" id="1JJRV36A5t1" role="1QQeG9">
+          <node concept="19SUe$" id="1JJRV36A5t2" role="19SJt6">
+            <property role="19SUeA" value="Initial State" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="1JJRV36A5t7" role="1VMWzp">
+        <property role="0lsPA" value="SR02.2" />
+        <property role="0ke_I" value="Carmen" />
+        <node concept="1QQeAY" id="1JJRV36A6kM" role="1QQeAC">
+          <node concept="0nzK2" id="1JJRV36A6kO" role="1QQeAV">
+            <node concept="19SGf9" id="1JJRV36A6kQ" role="0nzdz">
+              <node concept="19SUe$" id="1JJRV36A6kR" role="19SJt6">
+                <property role="19SUeA" value="The state startup shall only be reachable from initial state.&#10;Connector mains connected;&#10;Controller powered;&#10;Controller startup initiated including startup-check;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3g$em0" id="1JJRV36A6l3" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A6mX" />
+        </node>
+        <node concept="3g$em0" id="1JJRV36A6oP" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A6la" />
+        </node>
+        <node concept="3g$em0" id="1JJRV36A6p5" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A5BX" />
+        </node>
+        <node concept="1QQeFk" id="1JJRV36A5t8" role="0nOlf" />
+        <node concept="19SGf9" id="1JJRV36A5t9" role="1QQeG9">
+          <node concept="19SUe$" id="1JJRV36A5ta" role="19SJt6">
+            <property role="19SUeA" value="Startup State" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="1JJRV36A5tj" role="1VMWzp">
+        <property role="0lsPA" value="SR02.3" />
+        <property role="0ke_I" value="Carmen" />
+        <node concept="1QQeAY" id="1JJRV36A6gB" role="1QQeAC">
+          <node concept="0nzK2" id="1JJRV36A6gD" role="1QQeAV">
+            <node concept="19SGf9" id="1JJRV36A6gF" role="0nzdz">
+              <node concept="19SUe$" id="1JJRV36A6gG" role="19SJt6">
+                <property role="19SUeA" value="The state operation shall only be reachable from state startup. &#10;Connector EV and mains connected;&#10;Close Circuit breaker;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3g$em0" id="1JJRV36A6gS" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A6iF" />
+        </node>
+        <node concept="3g$em0" id="1JJRV36A6kB" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A6gZ" />
+        </node>
+        <node concept="1QQeFk" id="1JJRV36A5tk" role="0nOlf" />
+        <node concept="19SGf9" id="1JJRV36A5tl" role="1QQeG9">
+          <node concept="19SUe$" id="1JJRV36A5tm" role="19SJt6">
+            <property role="19SUeA" value="Operate State" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="1JJRV36A5tz" role="1VMWzp">
+        <property role="0lsPA" value="SR02.4" />
+        <property role="0ke_I" value="Carmen" />
+        <node concept="1QQeAY" id="1JJRV36A5BM" role="1QQeAC">
+          <node concept="0nzK2" id="1JJRV36A5BO" role="1QQeAV">
+            <node concept="19SGf9" id="1JJRV36A5BQ" role="0nzdz">
+              <node concept="19SUe$" id="1JJRV36A5BR" role="19SJt6">
+                <property role="19SUeA" value="Circuit breaker open;&#10;Connector EV and mains disconnected;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3g$em0" id="1JJRV36A6fR" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A5BZ" />
+        </node>
+        <node concept="1QQeFk" id="1JJRV36A5t$" role="0nOlf" />
+        <node concept="19SGf9" id="1JJRV36A5t_" role="1QQeG9">
+          <node concept="19SUe$" id="1JJRV36A5tA" role="19SJt6">
+            <property role="19SUeA" value="Safe State" />
+          </node>
+        </node>
+      </node>
+      <node concept="0lhDl" id="1JJRV36A5tR" role="1VMWzp">
+        <property role="0lsPA" value="SR02.5" />
+        <property role="0ke_I" value="Carmen" />
+        <node concept="1QQeAY" id="1JJRV36A5v$" role="1QQeAC">
+          <node concept="0nzK2" id="1JJRV36A5vA" role="1QQeAV">
+            <node concept="19SGf9" id="1JJRV36A5vC" role="0nzdz">
+              <node concept="19SUe$" id="1JJRV36A5vD" role="19SJt6">
+                <property role="19SUeA" value="The state shutdown shall be reached from all states.&#10;Circuit breaker opens;&#10;Connector mains disconnected;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3g$em0" id="1JJRV36A5_U" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A5zJ" />
+        </node>
+        <node concept="3g$em0" id="1JJRV36A5B3" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A5yo" />
+        </node>
+        <node concept="3g$em0" id="1JJRV36A5Bj" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A5ym" />
+        </node>
+        <node concept="3g$em0" id="1JJRV36A5B_" role="1QQeAC">
+          <ref role="3g$em3" node="1JJRV36A5yk" />
+        </node>
+        <node concept="1QQeFk" id="1JJRV36A5tS" role="0nOlf" />
+        <node concept="19SGf9" id="1JJRV36A5tT" role="1QQeG9">
+          <node concept="19SUe$" id="1JJRV36A5tU" role="19SJt6">
+            <property role="19SUeA" value="Shutdown State" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeAY" id="1JJRV36A5sO" role="1QQeAC">
+        <node concept="0nzK2" id="1JJRV36A5sQ" role="1QQeAV">
+          <node concept="19SGf9" id="1JJRV36A5sS" role="0nzdz">
+            <node concept="19SUe$" id="1JJRV36A5sT" role="19SJt6">
+              <property role="19SUeA" value="The charging cable controller has following states: initial, startup, operate, safe and shutdown." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="1JJRV36A5r1" role="0nOlf" />
+      <node concept="19SGf9" id="1JJRV36A5r2" role="1QQeG9">
+        <node concept="19SUe$" id="1JJRV36A5r3" role="19SJt6">
+          <property role="19SUeA" value="Controller States" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="4bSVeFVFB9G" role="1QQeBF" />
+    <node concept="0lhDl" id="4cUeGolY8Bl" role="1QQeBF">
+      <property role="0lsPA" value="IR01" />
+      <property role="0ke_I" value="Hannes" />
+      <node concept="1QQeAY" id="3JuqBheLOpq" role="1QQeAC">
+        <node concept="0nzK2" id="3JuqBheLOps" role="1QQeAV">
+          <node concept="19SGf9" id="3JuqBheLOpu" role="0nzdz">
+            <node concept="19SUe$" id="3JuqBheLOpv" role="19SJt6">
+              <property role="19SUeA" value="The in-cable control box shall receive current from mains" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="4cUeGolY8Bn" role="1QQeG9">
+        <node concept="19SUe$" id="4cUeGolY8Bo" role="19SJt6">
+          <property role="19SUeA" value="Interface to mains" />
+        </node>
+      </node>
+      <node concept="3z6Cyy" id="4cUeGolY8Ln" role="0nOlf" />
+    </node>
+    <node concept="0lH3_" id="4cUeGolY8DP" role="1QQeBF" />
+    <node concept="0lhDl" id="4cUeGolY8IK" role="1QQeBF">
+      <property role="0lsPA" value="IR02" />
+      <property role="0ke_I" value="Hannes" />
+      <node concept="1QQeAY" id="3JuqBheLOpC" role="1QQeAC">
+        <node concept="0nzK2" id="3JuqBheLOpE" role="1QQeAV">
+          <node concept="19SGf9" id="3JuqBheLOpG" role="0nzdz">
+            <node concept="19SUe$" id="3JuqBheLOpH" role="19SJt6">
+              <property role="19SUeA" value="The in-cable control box shall send current from mains to the EV" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="4cUeGolY8IM" role="1QQeG9">
+        <node concept="19SUe$" id="4cUeGolY8IN" role="19SJt6">
+          <property role="19SUeA" value="Interface to EV" />
+        </node>
+      </node>
+      <node concept="3z6Cyy" id="4cUeGolY8Ls" role="0nOlf" />
+    </node>
+    <node concept="0lH3_" id="4cUeGolY8Lv" role="1QQeBF" />
+    <node concept="0lhDl" id="3JuqBheLNV1" role="1QQeBF">
+      <property role="0lsPA" value="IR03" />
+      <property role="0ke_I" value="Hannes" />
+      <node concept="1QQeAY" id="3JuqBheLOte" role="1QQeAC">
+        <node concept="0nzK2" id="3JuqBheLOtg" role="1QQeAV">
+          <node concept="19SGf9" id="3JuqBheLOti" role="0nzdz">
+            <node concept="19SUe$" id="3JuqBheLOtj" role="19SJt6">
+              <property role="19SUeA" value="The in-cable control box shall receive information about the temperature at &#10;the ends of the cable, the voltage and the current intensity " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="3JuqBheLNV2" role="0nOlf" />
+      <node concept="19SGf9" id="3JuqBheLNV3" role="1QQeG9">
+        <node concept="19SUe$" id="3JuqBheLNV4" role="19SJt6">
+          <property role="19SUeA" value="Cable Sensors" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="3JuqBheLNXJ" role="1QQeBF" />
+    <node concept="0lhDl" id="3JuqBheLO36" role="1QQeBF">
+      <property role="0lsPA" value="IR04" />
+      <property role="0ke_I" value="Hannes" />
+      <node concept="1QQeAY" id="3JuqBheLOpP" role="1QQeAC">
+        <node concept="0nzK2" id="3JuqBheLOpR" role="1QQeAV">
+          <node concept="19SGf9" id="3JuqBheLOpT" role="0nzdz">
+            <node concept="19SUe$" id="3JuqBheLOpU" role="19SJt6">
+              <property role="19SUeA" value="The in-cable control box shall dislay its status on LEDs" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="3JuqBheLO37" role="0nOlf" />
+      <node concept="19SGf9" id="3JuqBheLO38" role="1QQeG9">
+        <node concept="19SUe$" id="3JuqBheLO39" role="19SJt6">
+          <property role="19SUeA" value="LEDs" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="3JuqBheLO5T" role="1QQeBF" />
+    <node concept="0lhDl" id="3JuqBheLObq" role="1QQeBF">
+      <property role="0lsPA" value="IR05" />
+      <property role="0ke_I" value="Hannes" />
+      <node concept="1QQeAY" id="3JuqBheLOq2" role="1QQeAC">
+        <node concept="0nzK2" id="3JuqBheLOq4" role="1QQeAV">
+          <node concept="19SGf9" id="3JuqBheLOq6" role="0nzdz">
+            <node concept="19SUe$" id="3JuqBheLOq7" role="19SJt6">
+              <property role="19SUeA" value="The in-cable control box shall disconnect from mains via a relay" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1QQeFk" id="3JuqBheLObr" role="0nOlf" />
+      <node concept="19SGf9" id="3JuqBheLObs" role="1QQeG9">
+        <node concept="19SUe$" id="3JuqBheLObt" role="19SJt6">
+          <property role="19SUeA" value="Relay" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lH3_" id="4cUeGolY8$W" role="1QQeBF" />
+    <node concept="0lhDl" id="4bSVeFVFB7d" role="1QQeBF">
+      <property role="0ke_I" value="Hannes" />
+      <property role="0lsPA" value="IR06" />
+      <node concept="0lhDl" id="4bSVeFVFB7Z" role="1VMWzp">
+        <property role="0lsPA" value="IR06.1" />
+        <property role="0ke_I" value="DIN VDE 0100" />
+        <node concept="1QQeAY" id="4bSVeFVFB8e" role="1QQeAC">
+          <node concept="0nzK2" id="4bSVeFVFB8g" role="1QQeAV">
+            <node concept="19SGf9" id="4bSVeFVFB8i" role="0nzdz">
+              <node concept="19SUe$" id="4bSVeFVFB8j" role="19SJt6">
+                <property role="19SUeA" value="The voltage is always close to 230 V." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3g$em0" id="5Jr7irfQEq4" role="1QQeAC">
+          <ref role="3g$em3" node="1ef6u74hUfw" />
+        </node>
+        <node concept="19SGf9" id="4bSVeFVFB81" role="1QQeG9">
+          <node concept="19SUe$" id="4bSVeFVFB82" role="19SJt6">
+            <property role="19SUeA" value="Nominal Voltage" />
+          </node>
+        </node>
+        <node concept="3z6Cyy" id="4bSVeFVFB89" role="0nOlf" />
+      </node>
+      <node concept="0lhDl" id="4bSVeFVFB8p" role="1VMWzp">
+        <property role="0lsPA" value="IR06.2" />
+        <property role="0ke_I" value="DIN VDE 0100" />
+        <node concept="1QQeAY" id="4bSVeFVFB8F" role="1QQeAC">
+          <node concept="0nzK2" id="4bSVeFVFB8H" role="1QQeAV">
+            <node concept="19SGf9" id="4bSVeFVFB8J" role="0nzdz">
+              <node concept="19SUe$" id="4bSVeFVFB8K" role="19SJt6">
+                <property role="19SUeA" value="The intensity is always close to 16A." />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3g$em0" id="5Jr7irfQEqh" role="1QQeAC">
+          <ref role="3g$em3" node="1ef6u74hUfy" />
+        </node>
+        <node concept="19SGf9" id="4bSVeFVFB8r" role="1QQeG9">
+          <node concept="19SUe$" id="4bSVeFVFB8s" role="19SJt6">
+            <property role="19SUeA" value="Nominal Intensity" />
+          </node>
+        </node>
+        <node concept="3z6Cyy" id="66sW2d$FggM" role="0nOlf" />
+      </node>
+      <node concept="1QQeAY" id="4bSVeFVFB7O" role="1QQeAC">
+        <node concept="0nzK2" id="4bSVeFVFB7Q" role="1QQeAV">
+          <node concept="19SGf9" id="4bSVeFVFB7S" role="0nzdz">
+            <node concept="19SUe$" id="4bSVeFVFB7T" role="19SJt6">
+              <property role="19SUeA" value="When the in-cable control box is connected to mains, it shall be connected to a low voltage mains" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="4bSVeFVFB7f" role="1QQeG9">
+        <node concept="19SUe$" id="4bSVeFVFB7g" role="19SJt6">
+          <property role="19SUeA" value="Connection to Low Voltage Mains" />
+        </node>
+      </node>
+      <node concept="3z6Cyy" id="4bSVeFVFB7J" role="0nOlf" />
+    </node>
+  </node>
+</model>
+

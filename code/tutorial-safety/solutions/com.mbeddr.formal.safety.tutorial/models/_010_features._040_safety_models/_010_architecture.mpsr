@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._040_safety_models)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
+      <concept id="4183024216371329180" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentAssemblySMV" flags="ng" index="2dDAV0" />
+      <concept id="4183024216371329174" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceSMV" flags="ng" index="2dDAVa" />
+    </language>
+    <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2295987781863305066" name="com.mbeddr.formal.nusmv.structure.IntervalType" flags="ng" index="dhpfj">
+        <child id="2295987781863305067" name="left" index="dhpfi" />
+        <child id="2295987781863305070" name="right" index="dhpfn" />
+      </concept>
+      <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
+        <child id="7842584090743643493" name="content" index="2HcuB8" />
+      </concept>
+      <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
+    </language>
+    <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7842584090745356592" name="com.mbeddr.formal.base.expressions.structure.NumberLiteral" flags="ng" index="2IPVmt">
+        <property id="7842584090745356593" name="value" index="2IPVms" />
+      </concept>
+    </language>
+    <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="2406721343443666554" name="com.mbeddr.formal.nusmv.ext.structure.TypedefDeclaration" flags="ng" index="1sau8P">
+        <child id="2406721343443666559" name="originalType" index="1sau8K" />
+      </concept>
+      <concept id="2406721343443672946" name="com.mbeddr.formal.nusmv.ext.structure.TypedefType" flags="ng" index="1savGX">
+        <reference id="2406721343443672947" name="typedef" index="1savGW" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
+      <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
+        <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
+        <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
+        <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
+        <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
+        <property id="4583510071007917016" name="portTransform" index="TgtnS" />
+        <child id="738815095926774816" name="portLayouts" index="1pap1a" />
+      </concept>
+      <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
+        <child id="8963411245960991904" name="entries" index="37mRID" />
+      </concept>
+      <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
+        <property id="8963411245960998400" name="key" index="37mO49" />
+        <child id="8963411245960998404" name="value" index="37mO4d" />
+      </concept>
+      <concept id="738815095926749345" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Port" flags="ng" index="1pa3jb">
+        <property id="7964702570467115501" name="ordinal" index="2gRgW$" />
+        <property id="738815095926749379" name="portName" index="1pa3iD" />
+      </concept>
+    </language>
+    <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
+      <concept id="9066112305507423291" name="com.mbeddr.formal.base.arch.structure.Connection" flags="ng" index="3Ug1$w">
+        <child id="9066112305507423293" name="source" index="3Ug1$A" />
+        <child id="9066112305507423296" name="target" index="3Ug1_r" />
+      </concept>
+      <concept id="9066112305507423290" name="com.mbeddr.formal.base.arch.structure.ComponentAssembly" flags="ng" index="3Ug1$x">
+        <child id="9066112305507508715" name="content" index="3UgYNK" />
+      </concept>
+      <concept id="9066112305507423392" name="com.mbeddr.formal.base.arch.structure.Instance" flags="ng" index="3Ug1AV">
+        <child id="9066112305507423422" name="interfaceRef" index="3Ug1A_" />
+      </concept>
+      <concept id="9066112305507423396" name="com.mbeddr.formal.base.arch.structure.ComponentInterfaceRef" flags="ng" index="3Ug1AZ">
+        <reference id="9066112305507423397" name="interface" index="3Ug1AY" />
+      </concept>
+      <concept id="9066112305507423795" name="com.mbeddr.formal.base.arch.structure.CompositePart" flags="ng" index="3Ug1GC">
+        <reference id="9066112305507423825" name="port" index="3Ug1Ha" />
+        <child id="9066112305507423822" name="instanceRef" index="3Ug1Hl" />
+      </concept>
+      <concept id="9066112305507423796" name="com.mbeddr.formal.base.arch.structure.InstanceRef" flags="ng" index="3Ug1GJ">
+        <reference id="9066112305507423797" name="instance" index="3Ug1GI" />
+      </concept>
+      <concept id="9066112305507315482" name="com.mbeddr.formal.base.arch.structure.InputPort" flags="ng" index="3UnI81" />
+      <concept id="9066112305507315474" name="com.mbeddr.formal.base.arch.structure.ComponentInterface" flags="ng" index="3UnI89">
+        <child id="9066112305507315547" name="outputs" index="3UnI90" />
+        <child id="9066112305507315533" name="inputs" index="3UnI9m" />
+      </concept>
+      <concept id="9066112305507315478" name="com.mbeddr.formal.base.arch.structure.Port" flags="ng" index="3UnI8d">
+        <child id="9066112305507315483" name="type" index="3UnI80" />
+      </concept>
+      <concept id="9066112305507315532" name="com.mbeddr.formal.base.arch.structure.OutputPort" flags="ng" index="3UnI9n" />
+    </language>
+  </registry>
+  <node concept="2HdtXS" id="42QGQFVn3B6">
+    <property role="TrG5h" value="_010_architecture" />
+    <property role="3GE5qa" value="_00_dfmea" />
+    <node concept="2dDAVa" id="42QGQFVn3Bd" role="2HcuB8">
+      <property role="TrG5h" value="HDCamera" />
+      <node concept="3UnI9n" id="42QGQFVn3Bg" role="3UnI90">
+        <property role="TrG5h" value="data" />
+        <node concept="1savGX" id="4eD_5l3mJgj" role="3UnI80">
+          <ref role="1savGW" node="4eD_5l3mJdy" resolve="frame_stream_t" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4eD_5l3mJhg" role="2HcuB8" />
+    <node concept="2SQmWS" id="42QGQFVn3D7" role="2HcuB8" />
+    <node concept="2dDAVa" id="42QGQFVn3Dm" role="2HcuB8">
+      <property role="TrG5h" value="ObjectDetection" />
+      <node concept="3UnI9n" id="4eD_5l3mJq1" role="3UnI90">
+        <property role="TrG5h" value="object_list" />
+        <node concept="1savGX" id="4eD_5l3mJq2" role="3UnI80">
+          <ref role="1savGW" node="4eD_5l3mJc_" resolve="object_list_t" />
+        </node>
+      </node>
+      <node concept="3UnI81" id="42QGQFVn3Dv" role="3UnI9m">
+        <property role="TrG5h" value="camera_data" />
+        <node concept="1savGX" id="4eD_5l3mJmh" role="3UnI80">
+          <ref role="1savGW" node="4eD_5l3mJdy" resolve="frame_stream_t" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4eD_5l3mJno" role="2HcuB8" />
+    <node concept="2dDAVa" id="4eD_5l3mJo_" role="2HcuB8">
+      <property role="TrG5h" value="Manipulator" />
+      <node concept="3UnI81" id="4eD_5l3mJr$" role="3UnI9m">
+        <property role="TrG5h" value="objects" />
+        <node concept="1savGX" id="4eD_5l3mJs3" role="3UnI80">
+          <ref role="1savGW" node="4eD_5l3mJc_" resolve="object_list_t" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="42QGQFVn3EP" role="2HcuB8" />
+    <node concept="2dDAV0" id="42QGQFVn3Fg" role="2HcuB8">
+      <property role="TrG5h" value="SmartFactoryPackagingRobot" />
+      <node concept="3Ug1AV" id="42QGQFVn3FJ" role="3UgYNK">
+        <property role="TrG5h" value="camera" />
+        <node concept="3Ug1AZ" id="42QGQFVn3FI" role="3Ug1A_">
+          <ref role="3Ug1AY" node="42QGQFVn3Bd" resolve="HDCamera" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="42QGQFVn3FY" role="3UgYNK">
+        <property role="TrG5h" value="objects_detector" />
+        <node concept="3Ug1AZ" id="42QGQFVn3FW" role="3Ug1A_">
+          <ref role="3Ug1AY" node="42QGQFVn3Dm" resolve="ObjectDetection" />
+        </node>
+      </node>
+      <node concept="3Ug1AV" id="4eD_5l3mJsy" role="3UgYNK">
+        <property role="TrG5h" value="effector" />
+        <node concept="3Ug1AZ" id="4eD_5l3mJsw" role="3Ug1A_">
+          <ref role="3Ug1AY" node="4eD_5l3mJo_" resolve="Manipulator" />
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="42QGQFVn3Gf" role="3UgYNK">
+        <node concept="3Ug1GC" id="42QGQFVn3Gn" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="42QGQFVn3Bg" resolve="data" />
+          <node concept="3Ug1GJ" id="42QGQFVn3Gm" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="42QGQFVn3FJ" resolve="camera" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="42QGQFVn3GH" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="42QGQFVn3Dv" resolve="camera_data" />
+          <node concept="3Ug1GJ" id="42QGQFVn3GG" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="42QGQFVn3FY" resolve="objects_detector" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Ug1$w" id="4eD_5l3mJt4" role="3UgYNK">
+        <node concept="3Ug1GC" id="4eD_5l3mJt5" role="3Ug1$A">
+          <ref role="3Ug1Ha" node="4eD_5l3mJq1" resolve="object_list" />
+          <node concept="3Ug1GJ" id="4eD_5l3mJtz" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="42QGQFVn3FY" resolve="objects_detector" />
+          </node>
+        </node>
+        <node concept="3Ug1GC" id="4eD_5l3mJt7" role="3Ug1_r">
+          <ref role="3Ug1Ha" node="4eD_5l3mJr$" resolve="objects" />
+          <node concept="3Ug1GJ" id="4eD_5l3mJug" role="3Ug1Hl">
+            <ref role="3Ug1GI" node="4eD_5l3mJsy" resolve="effector" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRI7" id="4eD_5l3mJv5" role="lGtFl">
+        <node concept="37mRIm" id="4eD_5l3mJv6" role="37mRID">
+          <property role="37mO49" value="4663111736253758191" />
+          <node concept="gqqVs" id="4eD_5l3mJv4" role="37mO4d">
+            <property role="gqqTZ" value="12.0" />
+            <property role="gqqTW" value="12.0" />
+            <property role="gqqTX" value="58.0" />
+            <property role="gqqTy" value="32.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4eD_5l3mJv7" role="1pap1a">
+              <property role="1pa3iD" value="data" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4eD_5l3mJv9" role="37mRID">
+          <property role="37mO49" value="4663111736253758206" />
+          <node concept="gqqVs" id="4eD_5l3mJv8" role="37mO4d">
+            <property role="gqqTZ" value="114.0" />
+            <property role="gqqTW" value="12.0" />
+            <property role="gqqTX" value="138.0" />
+            <property role="gqqTy" value="32.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4eD_5l3mJva" role="1pap1a">
+              <property role="1pa3iD" value="camera_data" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+            <node concept="1pa3jb" id="4eD_5l3mJvb" role="1pap1a">
+              <property role="1pa3iD" value="object_list" />
+              <property role="2gRgW$" value="2147483646" />
+            </node>
+          </node>
+        </node>
+        <node concept="37mRIm" id="4eD_5l3mJvd" role="37mRID">
+          <property role="37mO49" value="4875591165528438562" />
+          <node concept="gqqVs" id="4eD_5l3mJvc" role="37mO4d">
+            <property role="gqqTZ" value="296.0" />
+            <property role="gqqTW" value="12.0" />
+            <property role="gqqTX" value="74.0" />
+            <property role="gqqTy" value="32.0" />
+            <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            <node concept="1pa3jb" id="4eD_5l3mJve" role="1pap1a">
+              <property role="1pa3iD" value="objects" />
+              <property role="2gRgW$" value="1073741823" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="42QGQFVn3Fv" role="2HcuB8" />
+    <node concept="2SQmWS" id="4eD_5l3mJeV" role="2HcuB8" />
+    <node concept="2SQmWS" id="4eD_5l3mJfr" role="2HcuB8" />
+    <node concept="1sau8P" id="4eD_5l3mJdy" role="2HcuB8">
+      <property role="TrG5h" value="frame_stream_t" />
+      <node concept="dhpfj" id="4eD_5l3mJea" role="1sau8K">
+        <node concept="2IPVmt" id="4eD_5l3mJe9" role="dhpfi">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="4eD_5l3mJez" role="dhpfn">
+          <property role="2IPVms" value="10" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="4eD_5l3mJbM" role="2HcuB8" />
+    <node concept="1sau8P" id="4eD_5l3mJc_" role="2HcuB8">
+      <property role="TrG5h" value="object_list_t" />
+      <node concept="dhpfj" id="4eD_5l3mJi2" role="1sau8K">
+        <node concept="2IPVmt" id="4eD_5l3mJi1" role="dhpfi">
+          <property role="2IPVms" value="0" />
+        </node>
+        <node concept="2IPVmt" id="4eD_5l3mJir" role="dhpfn">
+          <property role="2IPVms" value="10" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+
