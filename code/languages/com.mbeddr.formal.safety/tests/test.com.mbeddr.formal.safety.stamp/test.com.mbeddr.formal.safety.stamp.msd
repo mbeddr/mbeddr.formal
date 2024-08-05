@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.com.mbeddr.formal.safety.stamp" uuid="ee83f675-925e-4829-ac73-32c7bec10bfc" moduleVersion="0" compileInMPS="true">
+<solution name="test.com.mbeddr.formal.safety.stamp" uuid="ee83f675-925e-4829-ac73-32c7bec10bfc" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">7e777b53-0a6b-4719-b36d-10475788d49f(com.mbeddr.formal.safety.stamp)</dependency>
   </dependencies>

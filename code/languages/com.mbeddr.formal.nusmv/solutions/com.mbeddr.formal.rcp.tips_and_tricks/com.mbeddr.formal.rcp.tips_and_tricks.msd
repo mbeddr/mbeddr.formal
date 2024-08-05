@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.formal.rcp.tips_and_tricks" uuid="d599fae5-4709-4828-943d-5c57296d1034" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.formal.rcp.tips_and_tricks" uuid="d599fae5-4709-4828-943d-5c57296d1034" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:feee615f-9f2b-486f-804f-8987b652fcea:jetbrains.mps.build.tips" version="0" />
     <language slang="l:479c7a8c-02f9-43b5-9139-d910cb22f298:jetbrains.mps.core.xml" version="0" />

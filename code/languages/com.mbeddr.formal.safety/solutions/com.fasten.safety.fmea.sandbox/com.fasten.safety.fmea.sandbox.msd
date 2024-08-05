@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.fasten.safety.fmea.sandbox" uuid="000592db-6c17-494c-8195-a1023a2581a9" moduleVersion="0" compileInMPS="true">
+<solution name="com.fasten.safety.fmea.sandbox" uuid="000592db-6c17-494c-8195-a1023a2581a9" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:3b22dedc-d6cf-4626-9445-6e9909b3e04a:com.fasten.base.arch.msc" version="0" />
     <language slang="l:81f6a079-965e-4523-87c3-8e6194f66585:com.fasten.base.msc" version="0" />

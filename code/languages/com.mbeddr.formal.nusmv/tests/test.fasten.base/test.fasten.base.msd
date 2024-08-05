@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="test.fasten.base" uuid="f5ce9397-6680-44ec-931f-95861db3337f" moduleVersion="0" compileInMPS="true">
+<solution name="test.fasten.base" uuid="f5ce9397-6680-44ec-931f-95861db3337f" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -11,7 +11,6 @@
     </facet>
     <facet type="tests" />
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">b0f97242-b2a5-4637-95d3-c63ed6f55701(test.mbeddr.formal.nusmv)</dependency>
   </dependencies>

@@ -48,7 +48,7 @@
         <child id="1137896353117004005" name="text" index="112JTh" />
       </concept>
       <concept id="1137896353117084364" name="com.mbeddr.formal.prism.structure.LocalVariableDeclaration" flags="ng" index="112KhS" />
-      <concept id="1137896353117084361" name="com.mbeddr.formal.prism.structure.IVariableDeclaration" flags="ng" index="112KhX">
+      <concept id="1137896353117084361" name="com.mbeddr.formal.prism.structure.IVariableDeclaration" flags="ngI" index="112KhX">
         <child id="1137896353117084370" name="init" index="112KhA" />
         <child id="1137896353117084367" name="tpe" index="112KhV" />
       </concept>
@@ -82,7 +82,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>

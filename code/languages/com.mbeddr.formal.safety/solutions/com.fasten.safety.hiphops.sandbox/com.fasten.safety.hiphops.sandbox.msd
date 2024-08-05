@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.fasten.safety.hiphops.sandbox" uuid="f8a7f191-5e22-4df6-94e0-56afdc3dc6e2" moduleVersion="0" compileInMPS="true">
+<solution name="com.fasten.safety.hiphops.sandbox" uuid="f8a7f191-5e22-4df6-94e0-56afdc3dc6e2" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:3b22dedc-d6cf-4626-9445-6e9909b3e04a:com.fasten.base.arch.msc" version="0" />
     <language slang="l:81f6a079-965e-4523-87c3-8e6194f66585:com.fasten.base.msc" version="0" />

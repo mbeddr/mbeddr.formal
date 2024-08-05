@@ -13,7 +13,7 @@
   </imports>
   <registry>
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
-      <concept id="7741759128795045742" name="org.mpsqa.lint.generic.structure.IScriptsParametersAware" flags="ng" index="2j1LY6">
+      <concept id="7741759128795045742" name="org.mpsqa.lint.generic.structure.IScriptsParametersAware" flags="ngI" index="2j1LY6">
         <child id="7741759128795065655" name="parValues" index="2j1YRv" />
       </concept>
       <concept id="7741759128795045754" name="org.mpsqa.lint.generic.structure.CheckableScriptParameterRef" flags="ng" index="2j1LYi">
@@ -23,7 +23,7 @@
         <child id="7741759128795045752" name="exp" index="2j1LYg" />
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
-      <concept id="1024891882119954681" name="org.mpsqa.lint.generic.structure.ISeverityLevelAwareChecker" flags="ng" index="2oM2l5">
+      <concept id="1024891882119954681" name="org.mpsqa.lint.generic.structure.ISeverityLevelAwareChecker" flags="ngI" index="2oM2l5">
         <property id="1024891882119955433" name="reportLevel" index="2oM2pl" />
       </concept>
       <concept id="3786325089106496663" name="org.mpsqa.lint.generic.structure.ReuseCheckableScript" flags="ng" index="2wR3oc">

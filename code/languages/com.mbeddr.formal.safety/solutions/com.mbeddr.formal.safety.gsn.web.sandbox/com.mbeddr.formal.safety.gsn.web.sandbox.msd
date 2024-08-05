@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.formal.safety.gsn.web.sandbox" uuid="9781f05b-f21a-4f29-9db4-a44a95ba0f2b" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.formal.safety.gsn.web.sandbox" uuid="9781f05b-f21a-4f29-9db4-a44a95ba0f2b" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:e4dd8dcd-fbfe-4e69-bcdd-b4371f25f476:com.fasten.base.git" version="0" />
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />

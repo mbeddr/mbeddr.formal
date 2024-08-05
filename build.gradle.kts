@@ -15,7 +15,7 @@ plugins {
     id("de.itemis.mps.gradle.common") version mpsGradlePluginVersion
 }
 
-val jbrVers = "17.0.6-b469.82"
+val jbrVers = "17.0.8.1-b1000.32"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -35,9 +35,9 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2022"
-val minor = "3"
-val bugfix = "2"
+val major = "2023"
+val minor = "2"
+val bugfix = ""
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
@@ -159,6 +159,8 @@ val defaultScriptArgs = mapOf(
         "jdk.util.zip.disableZip64ExtraFieldValidation" to true
 )
 
+fun scriptFile(relativePath: String):File = File("$rootDir/build/scripts/patched/$relativePath")
+
 tasks {
     val configureJava by registering {
         dependsOn(downloadJbr)
@@ -202,9 +204,30 @@ tasks {
 
     fun scriptFile(name: String): Provider<RegularFile> = layout.buildDirectory.file("scripts/$name")
 
-    val build_allScripts by registering(BuildLanguages::class) {
+    val build_allScripts_unpatched by registering(BuildLanguages::class) {
         dependsOn(resolveMps, resolveLanguageLibs)
         script = scriptFile("build_all_scripts.xml")
+    }
+
+    // Patch JNA path in generated build scripts until https://github.com/JetBrains/MPS/pull/71 is fixed
+    val patch_allScripts by registering(Copy::class) {
+        dependsOn(build_allScripts_unpatched)
+        from("build/scripts")
+        exclude("patched")
+        exclude("build")
+        into("build/scripts/patched")
+
+        val isAarch64 = System.getProperty("os.arch") == "aarch64"
+        val jnaArch = if (isAarch64) "aarch64" else "amd64"
+
+        filter { line: String ->
+            line.replace("\"-Djna.boot.library.path=${'$'}{artifacts.mps}/lib/jna\"",
+                    "\"-Djna.boot.library.path=${'$'}{artifacts.mps}/lib/jna/" + jnaArch + "\"")
+        }
+    }
+
+    val build_allScripts by registering {
+        dependsOn(patch_allScripts, resolveLanguageLibs)
     }
 
     val build_formal_languages by registering(BuildLanguages::class) {
