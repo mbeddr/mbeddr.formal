@@ -50,8 +50,8 @@ val platformVersion = "$major.$minor.+"
 // build sequence being higher. In order for GitHub build to appear later, we bump the GitHub run number to be greater
 // than the build number from TeamCity.
 //
-// We do it only on 2022.3 so that the hack can be eventually removed for later versions.
-val githubRunNumberBump = if ("$major.$minor" == "2022.3") 1000 else 0
+// We do it only on 2022.3 and 2023.2 so that the hack can be eventually removed for later versions.
+val githubRunNumberBump = if ("$major.$minor" == "2022.3" || "$major.$minor" == "2023.2") 1000 else 0
 
 if (ciBuild) {
     val branch = GitBasedVersioning.getGitBranch()
