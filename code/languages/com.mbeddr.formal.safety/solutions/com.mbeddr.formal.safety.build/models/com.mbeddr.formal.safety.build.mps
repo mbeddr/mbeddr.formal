@@ -17311,6 +17311,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="63c49URuxt2" role="3bR31x">
+          <node concept="3LXTmp" id="63c49URuxt3" role="3rtmxm">
+            <node concept="3qWCbU" id="63c49URuxt4" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="63c49URuxt5" role="3LXTmr">
+              <ref role="398BVh" node="1FMyjUPkmcT" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="63c49URuxt6" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="63c49URuxt7" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.mbeddr.formal.safety.argument.modelquery" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4ziKDEngCOU" role="2G$12L">
         <property role="BnDLt" value="true" />

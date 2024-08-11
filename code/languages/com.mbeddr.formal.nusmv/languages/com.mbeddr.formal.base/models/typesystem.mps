@@ -598,7 +598,7 @@
                     <ref role="3cqZAo" node="84ljAGCXdv" resolve="nodeUsingPrefix" />
                   </node>
                   <node concept="3Cnw8n" id="3f8ZVRYf_jS" role="1urrFz">
-                    <ref role="QpYPw" node="3f8ZVRYftjp" resolve="fix_GoalStructureElementsNames_basedOnPrefix" />
+                    <ref role="QpYPw" node="3f8ZVRYftjp" resolve="fix_EntitiesNames_basedOnPrefix" />
                     <node concept="3CnSsL" id="3f8ZVRYf_oM" role="3Coj4f">
                       <ref role="QkamJ" node="3f8ZVRYftxu" resolve="nodeWithPrefixedName" />
                       <node concept="37vLTw" id="84ljAGDg3E" role="3CoRuB">
@@ -672,7 +672,7 @@
                 <node concept="3clFbS" id="3f8ZVRYdTFI" role="3eOfB_">
                   <node concept="2MkqsV" id="3f8ZVRYdVlx" role="3cqZAp">
                     <node concept="3Cnw8n" id="3f8ZVRYfC5W" role="1urrFz">
-                      <ref role="QpYPw" node="3f8ZVRYftjp" resolve="fix_GoalStructureElementsNames_basedOnPrefix" />
+                      <ref role="QpYPw" node="3f8ZVRYftjp" resolve="fix_EntitiesNames_basedOnPrefix" />
                       <node concept="3CnSsL" id="3f8ZVRYfC5X" role="3Coj4f">
                         <ref role="QkamJ" node="3f8ZVRYftxu" resolve="nodeWithPrefixedName" />
                         <node concept="37vLTw" id="84ljAGDg6L" role="3CoRuB">
@@ -719,7 +719,7 @@
                       <node concept="3clFbS" id="3f8ZVRYe6LF" role="1zc67A">
                         <node concept="2MkqsV" id="3f8ZVRYe6X3" role="3cqZAp">
                           <node concept="3Cnw8n" id="3f8ZVRYfCbF" role="1urrFz">
-                            <ref role="QpYPw" node="3f8ZVRYftjp" resolve="fix_GoalStructureElementsNames_basedOnPrefix" />
+                            <ref role="QpYPw" node="3f8ZVRYftjp" resolve="fix_EntitiesNames_basedOnPrefix" />
                             <node concept="3CnSsL" id="3f8ZVRYfCbG" role="3Coj4f">
                               <ref role="QkamJ" node="3f8ZVRYftxu" resolve="nodeWithPrefixedName" />
                               <node concept="37vLTw" id="84ljAGDg9S" role="3CoRuB">
@@ -798,7 +798,7 @@
                   </node>
                   <node concept="2Mj0R9" id="3f8ZVRYe7X$" role="3cqZAp">
                     <node concept="3Cnw8n" id="3f8ZVRYfD01" role="1urrFz">
-                      <ref role="QpYPw" node="3f8ZVRYftjp" resolve="fix_GoalStructureElementsNames_basedOnPrefix" />
+                      <ref role="QpYPw" node="3f8ZVRYftjp" resolve="fix_EntitiesNames_basedOnPrefix" />
                       <node concept="3CnSsL" id="3f8ZVRYfD02" role="3Coj4f">
                         <ref role="QkamJ" node="3f8ZVRYftxu" resolve="nodeWithPrefixedName" />
                         <node concept="37vLTw" id="84ljAGDgbq" role="3CoRuB">

@@ -2,7 +2,7 @@
 <model ref="r:7f28bd12-d21d-4c95-8613-64ad2bd87166(com.fasten.meta.linters.model_level)">
   <persistence version="9" />
   <languages>
-    <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="0" />
+    <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
   </languages>

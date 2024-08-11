@@ -158,7 +158,7 @@
             </node>
             <node concept="2OqwBi" id="3T9YlBtr2am" role="33vP2m">
               <node concept="3xONca" id="3T9YlBtr2an" role="2Oq$k0">
-                <ref role="3xOPvv" node="3vv33A$G6VH" resolve="two_lines" />
+                <ref role="3xOPvv" node="3vv33A$G6VH" resolve="two_lines_1" />
               </node>
               <node concept="2qgKlT" id="3T9YlBtr2ao" role="2OqNvi">
                 <ref role="37wK5l" to="89jy:3T9YlBtnHHf" resolve="doFormatDescription" />
@@ -172,7 +172,7 @@
           </node>
           <node concept="2OqwBi" id="3T9YlBtr3xJ" role="3tpDZA">
             <node concept="37vLTw" id="3T9YlBtr2fa" role="2Oq$k0">
-              <ref role="3cqZAo" node="3T9YlBtr2al" resolve="doFormatDescription" />
+              <ref role="3cqZAo" node="3T9YlBtr2al" resolve="two_lines_1_formatted_description" />
             </node>
             <node concept="34oBXx" id="3T9YlBtr6zI" role="2OqNvi" />
           </node>
@@ -184,7 +184,7 @@
           <node concept="2OqwBi" id="3T9YlBtre2h" role="3tpDZA">
             <node concept="2OqwBi" id="3T9YlBtr6D3" role="2Oq$k0">
               <node concept="37vLTw" id="3T9YlBtr6Aw" role="2Oq$k0">
-                <ref role="3cqZAo" node="3T9YlBtr2al" resolve="doFormatDescription" />
+                <ref role="3cqZAo" node="3T9YlBtr2al" resolve="two_lines_1_formatted_description" />
               </node>
               <node concept="1uHKPH" id="3T9YlBtrdmP" role="2OqNvi" />
             </node>
@@ -216,7 +216,7 @@
           </node>
           <node concept="2OqwBi" id="3T9YlBtsKJ8" role="3tpDZA">
             <node concept="37vLTw" id="3T9YlBtsKJ9" role="2Oq$k0">
-              <ref role="3cqZAo" node="3T9YlBtsKJ1" resolve="doFormatDescription" />
+              <ref role="3cqZAo" node="3T9YlBtsKJ1" resolve="two_lines_2_formatted_description" />
             </node>
             <node concept="34oBXx" id="3T9YlBtsKJa" role="2OqNvi" />
           </node>
@@ -228,7 +228,7 @@
           <node concept="2OqwBi" id="3T9YlBtsKJd" role="3tpDZA">
             <node concept="2OqwBi" id="3T9YlBtsKJe" role="2Oq$k0">
               <node concept="37vLTw" id="3T9YlBtsKJf" role="2Oq$k0">
-                <ref role="3cqZAo" node="3T9YlBtsKJ1" resolve="doFormatDescription" />
+                <ref role="3cqZAo" node="3T9YlBtsKJ1" resolve="two_lines_2_formatted_description" />
               </node>
               <node concept="1uHKPH" id="3T9YlBtsKJg" role="2OqNvi" />
             </node>
