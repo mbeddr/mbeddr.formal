@@ -1970,6 +1970,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="YXkTXVNg_7" role="3bR37C">
+          <node concept="3bR9La" id="YXkTXVNg_8" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="YXkTXVNg_9" role="3bR37C">
+          <node concept="3bR9La" id="YXkTXVNg_a" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2u7UHDC1RNf" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -4610,6 +4620,11 @@
         <node concept="1SiIV0" id="8xY_IhvzJb" role="3bR37C">
           <node concept="3bR9La" id="8xY_IhvzJc" role="1SiIV1">
             <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="YXkTXVNgI0" role="3bR37C">
+          <node concept="3bR9La" id="YXkTXVNgI1" role="1SiIV1">
+            <ref role="3bR37D" node="2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
           </node>
         </node>
       </node>
