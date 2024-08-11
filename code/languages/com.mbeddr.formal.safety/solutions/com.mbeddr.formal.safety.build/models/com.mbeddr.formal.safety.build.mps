@@ -2028,6 +2028,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="YXkTXVNhjn" role="3bR37C">
+          <node concept="3bR9La" id="YXkTXVNhjo" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="YXkTXVNhjp" role="3bR37C">
+          <node concept="3bR9La" id="YXkTXVNhjq" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2u7UHDC1RNf" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -9434,6 +9444,11 @@
         <node concept="1SiIV0" id="8xY_IhvySl" role="3bR37C">
           <node concept="3bR9La" id="8xY_IhvySm" role="1SiIV1">
             <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="YXkTXVNhC4" role="3bR37C">
+          <node concept="3bR9La" id="YXkTXVNhC5" role="1SiIV1">
+            <ref role="3bR37D" node="2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
           </node>
         </node>
       </node>
@@ -17293,6 +17308,22 @@
             </node>
             <node concept="3qWCbU" id="5h_XtOowdYm" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="63c49URuxt2" role="3bR31x">
+          <node concept="3LXTmp" id="63c49URuxt3" role="3rtmxm">
+            <node concept="3qWCbU" id="63c49URuxt4" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="63c49URuxt5" role="3LXTmr">
+              <ref role="398BVh" node="1FMyjUPkmcT" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="63c49URuxt6" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="63c49URuxt7" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.mbeddr.formal.safety.argument.modelquery" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
