@@ -172,7 +172,6 @@
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1210784285454" name="jetbrains.mps.lang.typesystem.structure.TypesystemIntention" flags="ng" index="3Cnw8n">
-        <property id="1216127910019" name="applyImmediately" index="ARO6o" />
         <reference id="1216388525179" name="quickFix" index="QpYPw" />
         <child id="1210784493590" name="actualArgument" index="3Coj4f" />
       </concept>
@@ -405,7 +404,7 @@
     </node>
   </node>
   <node concept="Q5z_Y" id="3f8ZVRYftjp">
-    <property role="TrG5h" value="fix_GoalStructureElementsNames_basedOnPrefix" />
+    <property role="TrG5h" value="fix_EntitiesNames_basedOnPrefix" />
     <node concept="Q6JDH" id="3f8ZVRYftxu" role="Q6Id_">
       <property role="TrG5h" value="nodeWithPrefixedName" />
       <node concept="3Tqbb2" id="3f8ZVRYftx$" role="Q6QK4">
@@ -673,7 +672,6 @@
                 <node concept="3clFbS" id="3f8ZVRYdTFI" role="3eOfB_">
                   <node concept="2MkqsV" id="3f8ZVRYdVlx" role="3cqZAp">
                     <node concept="3Cnw8n" id="3f8ZVRYfC5W" role="1urrFz">
-                      <property role="ARO6o" value="true" />
                       <ref role="QpYPw" node="3f8ZVRYftjp" resolve="fix_GoalStructureElementsNames_basedOnPrefix" />
                       <node concept="3CnSsL" id="3f8ZVRYfC5X" role="3Coj4f">
                         <ref role="QkamJ" node="3f8ZVRYftxu" resolve="nodeWithPrefixedName" />
@@ -721,7 +719,6 @@
                       <node concept="3clFbS" id="3f8ZVRYe6LF" role="1zc67A">
                         <node concept="2MkqsV" id="3f8ZVRYe6X3" role="3cqZAp">
                           <node concept="3Cnw8n" id="3f8ZVRYfCbF" role="1urrFz">
-                            <property role="ARO6o" value="true" />
                             <ref role="QpYPw" node="3f8ZVRYftjp" resolve="fix_GoalStructureElementsNames_basedOnPrefix" />
                             <node concept="3CnSsL" id="3f8ZVRYfCbG" role="3Coj4f">
                               <ref role="QkamJ" node="3f8ZVRYftxu" resolve="nodeWithPrefixedName" />
