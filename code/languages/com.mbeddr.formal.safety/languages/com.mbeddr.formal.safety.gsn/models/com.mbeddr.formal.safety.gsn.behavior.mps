@@ -955,7 +955,7 @@
                 </node>
                 <node concept="3eOSWO" id="6TSnICNlwEV" role="3uHU7B">
                   <node concept="37vLTw" id="6TSnICNsbIX" role="3uHU7B">
-                    <ref role="3cqZAo" node="6TSnICNsbIT" resolve="length" />
+                    <ref role="3cqZAo" node="6TSnICNsbIT" resolve="textLength" />
                   </node>
                   <node concept="3cmrfG" id="6TSnICNl$GX" role="3uHU7w">
                     <property role="3cmrfH" value="75" />
