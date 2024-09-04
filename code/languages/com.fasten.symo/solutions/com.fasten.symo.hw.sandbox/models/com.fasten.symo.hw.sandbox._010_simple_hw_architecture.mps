@@ -89,12 +89,12 @@
       <property role="TrG5h" value="ecu2" />
     </node>
     <node concept="2jnq7J" id="2gpUZARhwa8" role="2jnmDS">
-      <ref role="2jnmXU" node="2gpUZARh4BO" />
-      <ref role="2jnmXW" node="2gpUZARh4BT" />
+      <ref role="2jnmXU" node="2gpUZARh4BO" resolve="ecu1" />
+      <ref role="2jnmXW" node="2gpUZARh4BT" resolve="bus" />
     </node>
     <node concept="2jnq7J" id="2gpUZARhwaa" role="2jnmDS">
-      <ref role="2jnmXU" node="2gpUZARh4C9" />
-      <ref role="2jnmXW" node="2gpUZARh4BT" />
+      <ref role="2jnmXU" node="2gpUZARh4C9" resolve="ecu2" />
+      <ref role="2jnmXW" node="2gpUZARh4BT" resolve="bus" />
     </node>
   </node>
 </model>
