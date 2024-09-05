@@ -125,7 +125,9 @@
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
         <child id="5721587534047265374" name="message" index="9lYJi" />
+        <child id="5721587534047265375" name="throwable" index="9lYJj" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -158,6 +160,7 @@
       <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
     </language>
     <language id="de1ad86d-6e50-4a02-b306-d4d17f64c375" name="jetbrains.mps.console.base">
       <concept id="752693057587755272" name="jetbrains.mps.console.base.structure.ProjectExpression" flags="ng" index="o6qdh" />
@@ -303,6 +306,15 @@
               </node>
             </node>
             <node concept="3clFbS" id="6r0uA12M7jh" role="1zc67A">
+              <node concept="2xdQw9" id="1k6eCQni1xz" role="3cqZAp">
+                <property role="2xdLsb" value="gZ5fh_4/error" />
+                <node concept="Xl_RD" id="1k6eCQni1x_" role="9lYJi">
+                  <property role="Xl_RC" value="Exception occurred while building fasten.all super-project" />
+                </node>
+                <node concept="37vLTw" id="1k6eCQni1zu" role="9lYJj">
+                  <ref role="3cqZAo" node="6r0uA12M7je" resolve="e" />
+                </node>
+              </node>
               <node concept="3clFbF" id="6r0uA12M7ji" role="3cqZAp">
                 <node concept="2OqwBi" id="6r0uA12M7jj" role="3clFbG">
                   <node concept="37vLTw" id="6r0uA12M7jk" role="2Oq$k0">
@@ -399,6 +411,21 @@
                           <property role="Xl_RC" value="modules.xml" />
                         </node>
                       </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2xdQw9" id="1k6eCQnhQNV" role="3cqZAp">
+                  <node concept="3cpWs3" id="1k6eCQnhREC" role="9lYJi">
+                    <node concept="2OqwBi" id="1k6eCQnhRRh" role="3uHU7w">
+                      <node concept="37vLTw" id="1k6eCQnhRFq" role="2Oq$k0">
+                        <ref role="3cqZAo" node="yuql$cyaeH" resolve="moduleFile" />
+                      </node>
+                      <node concept="liA8E" id="1k6eCQnhSoq" role="2OqNvi">
+                        <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="1k6eCQnhQNX" role="3uHU7B">
+                      <property role="Xl_RC" value="reading module file: " />
                     </node>
                   </node>
                 </node>
@@ -666,8 +693,21 @@
                     <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
                   </node>
                 </node>
-                <node concept="Xl_RD" id="1y75PbziWYc" role="3uHU7B">
-                  <property role="Xl_RC" value="wrote lines in " />
+                <node concept="3cpWs3" id="1k6eCQnhZm1" role="3uHU7B">
+                  <node concept="Xl_RD" id="1k6eCQnhZo$" role="3uHU7w">
+                    <property role="Xl_RC" value=" lines in " />
+                  </node>
+                  <node concept="3cpWs3" id="1k6eCQnhWoT" role="3uHU7B">
+                    <node concept="Xl_RD" id="1y75PbziWYc" role="3uHU7B">
+                      <property role="Xl_RC" value="wrote " />
+                    </node>
+                    <node concept="2OqwBi" id="1k6eCQnhX1p" role="3uHU7w">
+                      <node concept="37vLTw" id="1k6eCQnhWpG" role="2Oq$k0">
+                        <ref role="3cqZAo" node="yuql$cxEkm" resolve="lines" />
+                      </node>
+                      <node concept="34oBXx" id="1k6eCQnhYzI" role="2OqNvi" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>

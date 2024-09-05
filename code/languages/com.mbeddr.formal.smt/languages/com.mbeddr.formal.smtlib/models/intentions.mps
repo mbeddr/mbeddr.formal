@@ -8,6 +8,7 @@
   <imports>
     <import index="kaug" ref="r:521dbd70-b62b-4a68-a516-821505a8eae5(com.mbeddr.formal.smtlib.z3.rt.runner)" />
     <import index="fsan" ref="r:f2b2fa9d-7b24-4c14-9aef-720730021a71(com.mbeddr.formal.smtlib.z3.rt.witness)" />
+    <import index="f7eu" ref="f7821750-33bf-489c-8f64-0850d86d540d/java:com.microsoft.z3(com.mbeddr.formal.smtlib.z3.lib/)" />
     <import index="d9cz" ref="r:41c1238c-43f1-4441-984e-72955eefcbfb(com.mbeddr.formal.smtlib.structure)" implicit="true" />
   </imports>
   <registry>
