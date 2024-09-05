@@ -5566,6 +5566,22 @@
             <ref role="3bR37D" node="1k6eCQnoUdo" resolve="com.mbeddr.formal.prism" />
           </node>
         </node>
+        <node concept="3rtmxn" id="8wvJyaWlTF" role="3bR31x">
+          <node concept="3LXTmp" id="8wvJyaWlTG" role="3rtmxm">
+            <node concept="3qWCbU" id="8wvJyaWlTH" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="8wvJyaWlTI" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnp9eV" resolve="mbeddr.formal.prism.code" />
+              <node concept="2Ry0Ak" id="8wvJyaWlTJ" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="8wvJyaWlTK" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.prism.pluginSolution" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="1k6eCQnp8Bb" role="3989C9">
@@ -5857,6 +5873,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="8wvJyaWlTM" role="3bR31x">
+          <node concept="3LXTmp" id="8wvJyaWlTN" role="3rtmxm">
+            <node concept="3qWCbU" id="8wvJyaWlTO" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="8wvJyaWlTP" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnoUp$" resolve="mbeddr.formal.smt.code" />
+              <node concept="2Ry0Ak" id="8wvJyaWlTQ" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="8wvJyaWlTR" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.smtlib.z3.lib" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="1k6eCQnp8CR" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -5924,6 +5956,22 @@
         <node concept="1SiIV0" id="1k6eCQnphtV" role="3bR37C">
           <node concept="3bR9La" id="1k6eCQnphtW" role="1SiIV1">
             <ref role="3bR37D" node="1k6eCQnp8Bc" resolve="com.mbeddr.formal.smtlib" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="8wvJyaWlTT" role="3bR31x">
+          <node concept="3LXTmp" id="8wvJyaWlTU" role="3rtmxm">
+            <node concept="3qWCbU" id="8wvJyaWlTV" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="8wvJyaWlTW" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnoUp$" resolve="mbeddr.formal.smt.code" />
+              <node concept="2Ry0Ak" id="8wvJyaWlTX" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="8wvJyaWlTY" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.smtlib.z3.rt" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

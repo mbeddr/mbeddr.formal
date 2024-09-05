@@ -421,6 +421,7 @@ tasks {
         maxHeapSize = "4G"
 
         excludeModuleMigration("de.itemis.mps.editor.diagram", 0)
+	excludeModuleMigration("jetbrains.mps.baseLanguage.javadoc", 0)
     }
 }
 
