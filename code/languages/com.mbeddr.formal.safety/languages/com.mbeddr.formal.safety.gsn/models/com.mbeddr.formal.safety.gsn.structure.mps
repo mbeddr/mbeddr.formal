@@ -468,5 +468,17 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2X_iJQi$6ae">
+    <property role="EcuMT" value="3415218345376506510" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="GoalStructureElementBaseRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="2X_iJQi$6af" role="1TKVEi">
+      <property role="IQ2ns" value="3415218345376506511" />
+      <property role="20kJfa" value="gseb" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    </node>
+  </node>
 </model>
 

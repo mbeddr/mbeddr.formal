@@ -14889,5 +14889,18 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2X_iJQi$6ag">
+    <property role="3GE5qa" value="base" />
+    <ref role="1XX52x" to="py52:2X_iJQi$6ae" resolve="GoalStructureElementBaseRef" />
+    <node concept="1iCGBv" id="2X_iJQi$6ai" role="2wV5jI">
+      <ref role="1NtTu8" to="py52:2X_iJQi$6af" resolve="gseb" />
+      <node concept="1sVBvm" id="2X_iJQi$6ak" role="1sWHZn">
+        <node concept="3F0A7n" id="2X_iJQi$6aq" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
