@@ -50,7 +50,7 @@
     <property role="TrG5h" value="SPIContainer" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="safety performance indicators" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2X_iJQizBwf" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -67,7 +67,7 @@
     <property role="TrG5h" value="SPIDefinition" />
     <property role="34LRSv" value="spi definition" />
     <property role="R4oN_" value="safety perf. indicator definition" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2X_iJQizBwj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -100,7 +100,7 @@
     <property role="TrG5h" value="SPIEvaluatorBase" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="evaluators" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="2X_iJQizBB6">
     <property role="EcuMT" value="3415218345376381382" />
@@ -126,7 +126,7 @@
     <property role="EcuMT" value="3415218345380592611" />
     <property role="TrG5h" value="SpiAnnotationProvider" />
     <property role="34LRSv" value="from SPIs (defined in the same module)" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2X_iJQiNFJ$" role="PzmwI">
       <ref role="PrY4T" to="b19z:3cGyC6fA47u" resolve="IAnnotationProvider" />
     </node>
