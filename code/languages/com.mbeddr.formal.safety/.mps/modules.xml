@@ -12,6 +12,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn.formal/fasten.safety.gsn.formal.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn.modelquery/fasten.safety.gsn.modelquery.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn.patterns/fasten.safety.gsn.patterns.devkit" folder="" />
+      <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn.runtime/fasten.safety.gsn.runtime.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.gsn/fasten.safety.gsn.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.hara/fasten.safety.hara.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety/fasten.safety.devkit" folder="" />
@@ -31,6 +32,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.process.artefacts/com.mbeddr.formal.safety.argument.process.artefacts.mpl" folder="gsn._030_process" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.process/com.mbeddr.formal.safety.argument.process.mpl" folder="gsn._030_process" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.runtime/com.mbeddr.formal.safety.argument.runtime.mpl" folder="gsn._060_runtime" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.spi/com.mbeddr.formal.safety.argument.spi.mpl" folder="gsn._060_runtime" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.visualisation/com.mbeddr.formal.safety.argument.visualisation.mpl" folder="gsn._070_visualisation" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae.ext/com.mbeddr.formal.safety.cae.ext.mpl" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae.external_evidence/com.mbeddr.formal.safety.cae.external_evidence.mpl" folder="gsn._010_base" />
@@ -69,6 +71,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.process.sandbox/com.mbeddr.formal.safety.argument.process.sandbox.msd" folder="gsn._030_process" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.runtime.pluginSolution/com.mbeddr.formal.safety.argument.runtime.pluginSolution.msd" folder="gsn._060_runtime" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.runtime.sandbox/com.mbeddr.formal.safety.argument.runtime.sandbox.msd" folder="gsn._060_runtime" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.spi.sandbox/com.mbeddr.formal.safety.argument.spi.sandbox.msd" folder="gsn._060_runtime" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.build/com.mbeddr.formal.safety.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.cae.sandbox/com.mbeddr.formal.safety.cae.sandbox.msd" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.gsn.cbd.pluginSolution/com.mbeddr.formal.safety.gsn.cbd.pluginSolution.msd" folder="gsn._100_checkable_patterns" />
