@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.formal.safety.argument.spi.sandbox" uuid="f87c9e9c-5b58-41cc-992f-8233e1a1d597" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.formal.safety.argument.spi.sandbox" uuid="f87c9e9c-5b58-41cc-992f-8233e1a1d597" moduleVersion="0">
   <models>
     <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
@@ -10,7 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
   </dependencies>

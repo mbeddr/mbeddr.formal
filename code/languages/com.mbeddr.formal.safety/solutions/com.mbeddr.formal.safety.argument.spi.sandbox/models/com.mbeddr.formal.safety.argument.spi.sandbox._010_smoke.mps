@@ -22,7 +22,7 @@
       <concept id="3415218345376381382" name="com.mbeddr.formal.safety.argument.spi.structure.SPIClosure" flags="ng" index="2XUNcV">
         <child id="3415218345376381383" name="fun" index="2XUNcU" />
       </concept>
-      <concept id="3415218345376512773" name="com.mbeddr.formal.safety.argument.spi.structure.SPIClosureConceptFunction" flags="ig" index="2XXj7S" />
+      <concept id="3415218345376512773" name="com.mbeddr.formal.safety.argument.spi.structure.SPIClosureConceptFunction" flags="ng" index="2XXj7S" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
@@ -50,7 +50,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -71,7 +71,7 @@
       </concept>
     </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
-      <concept id="3687474483974128093" name="com.mbeddr.formal.base.structure.IAnnotationProvidersContainer" flags="ng" index="2WHcHs">
+      <concept id="3687474483974128093" name="com.mbeddr.formal.base.structure.IAnnotationProvidersContainer" flags="ngI" index="2WHcHs">
         <child id="3687474483974128095" name="annotationProviders" index="2WHcHu" />
       </concept>
     </language>
