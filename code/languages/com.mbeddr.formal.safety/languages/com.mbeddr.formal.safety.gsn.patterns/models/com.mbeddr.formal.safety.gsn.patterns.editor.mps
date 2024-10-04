@@ -42,6 +42,8 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -144,6 +146,8 @@
         </node>
       </node>
       <node concept="1iCGBv" id="2rzNEUxND_p" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
+        <property role="1$x2rV" value="req-doc" />
         <ref role="1NtTu8" to="2qxf:2rzNEUxND_8" resolve="requirementDocument" />
         <node concept="1sVBvm" id="2rzNEUxND_q" role="1sWHZn">
           <node concept="3F0A7n" id="2rzNEUxND_r" role="2wV5jI">
@@ -179,6 +183,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="65LrkjiWSIu" role="3EZMnx">
+        <property role="1$x2rV" value="req" />
         <ref role="1NtTu8" to="2qxf:65LrkjiWSI5" resolve="requirement" />
         <node concept="1sVBvm" id="65LrkjiWSIv" role="1sWHZn">
           <node concept="3F0A7n" id="65LrkjiWSIw" role="2wV5jI">

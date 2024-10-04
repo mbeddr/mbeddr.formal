@@ -14,7 +14,6 @@
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
-    <import index="35tq" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.scope(MPS.Core/)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="bewr" ref="r:a5d87024-d7b0-459e-b0ec-a9c089196f41(com.mbeddr.formal.safety.stamp.structure)" />
   </imports>
@@ -128,9 +127,6 @@
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
     </language>
   </registry>
-  <node concept="1M2fIO" id="1JhvKLLOidd">
-    <ref role="1M2myG" to="bewr:1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
-  </node>
   <node concept="1M2fIO" id="1JhvKLLOifz">
     <property role="3GE5qa" value="baseLanguage.analysis" />
     <ref role="1M2myG" to="bewr:1JhvKLLO08w" resolve="UnsafeController" />

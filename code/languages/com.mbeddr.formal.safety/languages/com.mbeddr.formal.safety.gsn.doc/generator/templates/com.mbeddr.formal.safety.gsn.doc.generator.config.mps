@@ -33,13 +33,13 @@
     <node concept="2SbYGw" id="5t37uj6$zuI" role="A10yx">
       <property role="TrG5h" value="temp" />
       <node concept="9PVaO" id="5t37uj6$zuJ" role="9PVG_">
-        <property role="3N1Lgt" value="models" />
+        <property role="3N1Lgt" value="tmp" />
       </node>
     </node>
     <node concept="2SbYGw" id="5t37uj6$zuK" role="Cbewh">
       <property role="TrG5h" value="img" />
       <node concept="9PVaO" id="5t37uj6$zuL" role="9PVG_">
-        <property role="3N1Lgt" value="models" />
+        <property role="3N1Lgt" value="tmp" />
       </node>
     </node>
   </node>

@@ -314,9 +314,6 @@
       </node>
     </node>
   </node>
-  <node concept="1M2fIO" id="3f8ZVRYdw_A">
-    <ref role="1M2myG" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
-  </node>
   <node concept="1M2fIO" id="3Px2xUV5DxF">
     <ref role="1M2myG" to="py52:3Px2xUV4m9W" resolve="GenericGSNAttributeAnnotationProvider" />
     <node concept="9S07l" id="3Px2xUV5DxG" role="9Vyp8">

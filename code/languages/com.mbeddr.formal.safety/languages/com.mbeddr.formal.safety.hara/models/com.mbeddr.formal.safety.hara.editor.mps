@@ -41,6 +41,7 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -229,6 +230,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="2RlaC$PcSj0" role="3EZMnx">
+        <property role="1$x2rV" value="hazards" />
         <ref role="1NtTu8" to="cjwq:2RlaC$Pcvh7" resolve="hazardsList" />
         <node concept="1sVBvm" id="2RlaC$PcSj2" role="1sWHZn">
           <node concept="3F0A7n" id="2RlaC$PcSjd" role="2wV5jI">
@@ -264,6 +266,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="2RlaC$PcChJ" role="3EZMnx">
+        <property role="1$x2rV" value="hazard" />
         <ref role="1NtTu8" to="cjwq:2RlaC$PcChp" resolve="hazard" />
         <node concept="1sVBvm" id="2RlaC$PcChL" role="1sWHZn">
           <node concept="3F0A7n" id="2RlaC$PcCi2" role="2wV5jI">

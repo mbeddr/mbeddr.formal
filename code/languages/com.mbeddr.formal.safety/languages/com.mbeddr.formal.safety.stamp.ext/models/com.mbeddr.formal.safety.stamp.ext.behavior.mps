@@ -8,7 +8,6 @@
   </languages>
   <imports>
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="8war" ref="r:b49c7957-4334-4f1e-b689-693d5ae0d5f7(com.mbeddr.formal.safety.stamp.ext.structure)" />
   </imports>
   <registry>

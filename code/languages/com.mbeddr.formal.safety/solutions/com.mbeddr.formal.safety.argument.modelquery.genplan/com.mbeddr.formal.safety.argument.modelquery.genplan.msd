@@ -10,9 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <dependencies>
-    <dependency reexport="false">43d5f6b1-f45e-44e8-8beb-2ef9aabefcbc(com.mbeddr.formal.safety.argument.modelquery.generator)</dependency>
-  </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
@@ -24,7 +21,6 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="43d5f6b1-f45e-44e8-8beb-2ef9aabefcbc(com.mbeddr.formal.safety.argument.modelquery.generator)" version="0" />
     <module reference="28c9d1d8-7af8-472d-8679-9b314648c201(com.mbeddr.formal.safety.argument.modelquery.genplan)" version="0" />
   </dependencyVersions>
 </solution>

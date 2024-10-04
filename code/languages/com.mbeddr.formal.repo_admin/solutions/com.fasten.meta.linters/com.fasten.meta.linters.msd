@@ -26,6 +26,9 @@
     <language slang="l:40ab19e9-751a-4433-b645-0e65160e58a0:org.mpsqa.lint.generic" version="1" />
   </languageVersions>
   <dependencyVersions>
+    <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
+    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
+    <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="97efeb54-e757-4c3b-b175-aa20f7476a23(com.fasten.meta.linters)" version="0" />
     <module reference="a86f8e91-0c59-4691-a7ce-49b7e2c7c3a9(org.mpsqa.lint.generic.linters_library)" version="0" />
     <module reference="12a40499-ed72-4b23-9437-358c4217c97b(org.mpsqa.lint.mps_lang.linters_library)" version="0" />

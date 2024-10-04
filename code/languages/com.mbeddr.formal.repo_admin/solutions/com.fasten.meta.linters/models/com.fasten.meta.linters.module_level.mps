@@ -28,6 +28,16 @@
       <concept id="3786325089106496663" name="org.mpsqa.lint.generic.structure.ReuseCheckableScript" flags="ng" index="2wR3oc">
         <reference id="3786325089106496690" name="script" index="2wR3oD" />
       </concept>
+      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ngI" index="3dgnlL">
+        <property id="7223240310078527797" name="failOnlyOnNewResults" index="3dJkfZ" />
+        <child id="7223240310078271420" name="violations" index="3dgnlQ" />
+      </concept>
+      <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
+        <property id="49142249442884896" name="resultLocation" index="2hbMIX" />
+        <property id="7223240310078271417" name="result" index="3dgnlN" />
+        <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
+        <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
+      </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="4733039728785194814" name="jetbrains.mps.lang.modelapi.structure.NamedNodeReference" flags="ng" index="ZC_QK">
@@ -47,7 +57,14 @@
     <ref role="2wR3oD" to="wpu7:1anGYsMsnkr" resolve="broken_module_dependencies" />
   </node>
   <node concept="2wR3oc" id="6wRVFFwyqlK">
+    <property role="3dJkfZ" value="true" />
     <ref role="2wR3oD" to="wpu7:7hx0FZiTgg2" resolve="not_used_module_dependencies" />
+    <node concept="3dgnlM" id="1a4oUCpPFZh" role="3dgnlQ">
+      <property role="3dgnlN" value="The module has unused dependencies: com.mbeddr.formal.nusmv.cbd#01" />
+      <property role="3qxsY3" value="7509733390062036336" />
+      <property role="3qxsSb" value="r:54059a0b-024a-42ab-b8cd-2453fed4f7ff(com.fasten.meta.linters.module_level)" />
+      <property role="2hbMIX" value="0cd4968b-4ddc-4835-aa0f-2a9e87b43fae(com.mbeddr.formal.safety.gsn.odd#01)" />
+    </node>
   </node>
   <node concept="2wR3oc" id="6wRVFFwyqlL">
     <ref role="2wR3oD" to="wpu7:3$9W3co2Xpl" resolve="modules_in_project_directory_on_harddisk_but_not_added_to_project" />

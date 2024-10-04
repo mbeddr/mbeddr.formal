@@ -7,7 +7,6 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="1ob6" ref="r:f44404ed-5270-44f9-8e19-281b0df5835d(com.mpsbasics.pdfexporter.structure)" />
     <import index="e4i3" ref="r:ba0a53f2-78bd-4230-9576-68a1e8855e28(com.mpsbasics.pdfexporter.editor)" />
     <import index="z1f2" ref="r:b350b49f-d62a-46db-826a-8c341f599d9e(com.mbeddr.formal.safety.gsn.pdfexport.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
