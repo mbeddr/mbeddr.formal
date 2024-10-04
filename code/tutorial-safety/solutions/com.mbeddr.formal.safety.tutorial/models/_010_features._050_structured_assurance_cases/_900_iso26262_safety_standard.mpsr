@@ -10,7 +10,7 @@
       <concept id="3731513482756195661" name="com.mbeddr.formal.safety.argument.process.structure.Standard" flags="ng" index="3dyRFK">
         <child id="3731513482756244090" name="clauses" index="3dzbR7" />
       </concept>
-      <concept id="3731513482756195662" name="com.mbeddr.formal.safety.argument.process.structure.IBibliographyEntry" flags="ng" index="3dyRFN">
+      <concept id="3731513482756195662" name="com.mbeddr.formal.safety.argument.process.structure.IBibliographyEntry" flags="ngI" index="3dyRFN">
         <property id="3731513482756243948" name="publicationYear" index="3dzbTh" />
         <property id="3731513482756243946" name="longTitle" index="3dzbTn" />
       </concept>
@@ -20,7 +20,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
