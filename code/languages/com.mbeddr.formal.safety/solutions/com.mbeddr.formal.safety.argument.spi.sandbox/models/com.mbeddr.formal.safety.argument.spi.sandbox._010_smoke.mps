@@ -22,7 +22,7 @@
       <concept id="3415218345376381382" name="com.mbeddr.formal.safety.argument.spi.structure.SPIClosure" flags="ng" index="2XUNcV">
         <child id="3415218345376381383" name="fun" index="2XUNcU" />
       </concept>
-      <concept id="3415218345376512773" name="com.mbeddr.formal.safety.argument.spi.structure.SPIClosureConceptFunction" flags="ng" index="2XXj7S" />
+      <concept id="3415218345376512773" name="com.mbeddr.formal.safety.argument.spi.structure.SPIClosureConceptFunction" flags="ig" index="2XXj7S" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
