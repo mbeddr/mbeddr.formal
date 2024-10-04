@@ -63,6 +63,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.pluginSolution/com.fasten.safety.ft.pluginSolution.msd" folder="ft" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.sandbox/com.fasten.safety.ft.sandbox.msd" folder="ft" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.xfta.pluginSolution/com.fasten.safety.ft.xfta.pluginSolution.msd" folder="ft" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.ft.xfta.sandbox/com.fasten.safety.ft.xfta.sandbox.msd" folder="ft" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hara.sandbox/com.fasten.safety.hara.sandbox.msd" folder="hara" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hazop.sandbox/com.fasten.safety.hazop.sandbox.msd" folder="hara.hazop" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hiphops.sandbox/com.fasten.safety.hiphops.sandbox.msd" folder="fmea_hiphops" />

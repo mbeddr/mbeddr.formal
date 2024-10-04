@@ -2,12 +2,9 @@
 <model ref="r:a7d744f1-6a73-4a61-a626-9afbf05ebf1a(com.mbeddr.formal.safety.argument.spi.sandbox._010_smoke)">
   <persistence version="9" />
   <languages>
-    <use id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts" version="0" />
     <devkit ref="16e7e722-0522-46f7-b3be-41f15da742ed(fasten.safety.gsn.runtime)" />
   </languages>
-  <imports>
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-  </imports>
+  <imports />
   <registry>
     <language id="1118d03f-f774-4a18-9e75-2357f8563d46" name="com.mbeddr.formal.safety.argument.spi">
       <concept id="3415218345380592611" name="com.mbeddr.formal.safety.argument.spi.structure.SpiAnnotationProvider" flags="ng" index="2XEZ4u" />

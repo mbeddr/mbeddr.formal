@@ -4,9 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
-    <use id="289fcc83-6543-41e8-a5ca-768235715ce4" name="jetbrains.mps.lang.generator.generationParameters" version="0" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
@@ -32,7 +30,6 @@
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="6w1g" ref="r:e3e42643-2e12-4fcc-8002-d27a9b589141(com.mbeddr.formal.safety.gsn.web.rt.genutil)" />
     <import index="qq03" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.actions(MPS.Platform/)" />
-    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="w2i7" ref="r:b79595f7-8350-4c32-8b59-20629b485a08(com.mbeddr.formal.safety.gsn.web.rt.gsn_genplan)" />
     <import index="ra3w" ref="r:d160eea8-047c-42af-ab07-6b169eeb13fd(com.mbeddr.formal.safety.gsn.web.util)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
@@ -284,6 +281,10 @@
         <child id="7400021826774799510" name="ref" index="2tJFKM" />
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -294,6 +295,9 @@
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI">
+        <property id="1238684351431" name="asCast" index="1BlNFB" />
       </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
@@ -421,8 +425,12 @@
             <node concept="3Tqbb2" id="kPkqqqMlJv" role="1tU5fm">
               <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
             </node>
-            <node concept="10QFUN" id="kPkqqqMlML" role="33vP2m">
-              <node concept="2YIFZM" id="5pJnDA9exBe" role="10QFUP">
+            <node concept="1PxgMI" id="1a4oUCpOkFs" role="33vP2m">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="1a4oUCpOkWS" role="3oSUPX">
+                <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+              </node>
+              <node concept="2YIFZM" id="5pJnDA9exBe" role="1m5AlR">
                 <ref role="37wK5l" node="4eRbb89BRvz" resolve="resolveNode" />
                 <ref role="1Pybhc" node="4eRbb89BzK0" resolve="SelectNodeUtil" />
                 <node concept="3_PKRz" id="5pJnDA9exBf" role="37wK5m">
@@ -431,9 +439,6 @@
                 <node concept="3_PKRz" id="5pJnDA9exBg" role="37wK5m">
                   <ref role="3_PKRw" node="kPkqqqM4Qn" resolve="node" />
                 </node>
-              </node>
-              <node concept="3Tqbb2" id="kPkqqqMlMM" role="10QFUM">
-                <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
               </node>
             </node>
           </node>
@@ -1096,8 +1101,12 @@
             <node concept="3Tqbb2" id="5pJnDA9hdRv" role="1tU5fm">
               <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
             </node>
-            <node concept="10QFUN" id="5pJnDA9hdRw" role="33vP2m">
-              <node concept="2YIFZM" id="5pJnDA9hdRx" role="10QFUP">
+            <node concept="1PxgMI" id="1a4oUCpOgF3" role="33vP2m">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="1a4oUCpOgM1" role="3oSUPX">
+                <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+              </node>
+              <node concept="2YIFZM" id="5pJnDA9hdRx" role="1m5AlR">
                 <ref role="1Pybhc" node="4eRbb89BzK0" resolve="SelectNodeUtil" />
                 <ref role="37wK5l" node="4eRbb89BRvz" resolve="resolveNode" />
                 <node concept="3_PKRz" id="5pJnDA9hdRy" role="37wK5m">
@@ -1106,9 +1115,6 @@
                 <node concept="3_PKRz" id="5pJnDA9hdRz" role="37wK5m">
                   <ref role="3_PKRw" node="5pJnDA9hdRg" resolve="gsnNode" />
                 </node>
-              </node>
-              <node concept="3Tqbb2" id="5pJnDA9hdR$" role="10QFUM">
-                <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
               </node>
             </node>
           </node>
@@ -1302,8 +1308,12 @@
             <node concept="3Tqbb2" id="5pJnDA9j9ux" role="1tU5fm">
               <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
             </node>
-            <node concept="10QFUN" id="5pJnDA9j9uy" role="33vP2m">
-              <node concept="2YIFZM" id="5pJnDA9j9uz" role="10QFUP">
+            <node concept="1PxgMI" id="1a4oUCpOrxh" role="33vP2m">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="1a4oUCpOrEx" role="3oSUPX">
+                <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+              </node>
+              <node concept="2YIFZM" id="5pJnDA9j9uz" role="1m5AlR">
                 <ref role="37wK5l" node="4eRbb89BRvz" resolve="resolveNode" />
                 <ref role="1Pybhc" node="4eRbb89BzK0" resolve="SelectNodeUtil" />
                 <node concept="3_PKRz" id="5pJnDA9j9u$" role="37wK5m">
@@ -1312,9 +1322,6 @@
                 <node concept="3_PKRz" id="5pJnDA9j9u_" role="37wK5m">
                   <ref role="3_PKRw" node="5pJnDA9j9uc" resolve="gsnNode" />
                 </node>
-              </node>
-              <node concept="3Tqbb2" id="5pJnDA9j9uA" role="10QFUM">
-                <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
               </node>
             </node>
           </node>
@@ -1640,8 +1647,12 @@
             <node concept="3Tqbb2" id="5pJnDA9ktAD" role="1tU5fm">
               <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
             </node>
-            <node concept="10QFUN" id="5pJnDA9ktAE" role="33vP2m">
-              <node concept="2YIFZM" id="5pJnDA9ktAF" role="10QFUP">
+            <node concept="1PxgMI" id="1a4oUCpOou9" role="33vP2m">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="1a4oUCpOoFb" role="3oSUPX">
+                <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+              </node>
+              <node concept="2YIFZM" id="5pJnDA9ktAF" role="1m5AlR">
                 <ref role="1Pybhc" node="4eRbb89BzK0" resolve="SelectNodeUtil" />
                 <ref role="37wK5l" node="4eRbb89BRvz" resolve="resolveNode" />
                 <node concept="3_PKRz" id="5pJnDA9ktAG" role="37wK5m">
@@ -1650,9 +1661,6 @@
                 <node concept="3_PKRz" id="5pJnDA9ktAH" role="37wK5m">
                   <ref role="3_PKRw" node="5pJnDA9ktAk" resolve="gsnNode" />
                 </node>
-              </node>
-              <node concept="3Tqbb2" id="5pJnDA9ktAI" role="10QFUM">
-                <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
               </node>
             </node>
           </node>
@@ -1910,8 +1918,12 @@
             <node concept="3Tqbb2" id="5pJnDA9lfRw" role="1tU5fm">
               <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
             </node>
-            <node concept="10QFUN" id="5pJnDA9lfRx" role="33vP2m">
-              <node concept="2YIFZM" id="5pJnDA9lfRy" role="10QFUP">
+            <node concept="1PxgMI" id="1a4oUCpOdZz" role="33vP2m">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="1a4oUCpOe5b" role="3oSUPX">
+                <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+              </node>
+              <node concept="2YIFZM" id="5pJnDA9lfRy" role="1m5AlR">
                 <ref role="37wK5l" node="4eRbb89BRvz" resolve="resolveNode" />
                 <ref role="1Pybhc" node="4eRbb89BzK0" resolve="SelectNodeUtil" />
                 <node concept="3_PKRz" id="5pJnDA9lfRz" role="37wK5m">
@@ -1920,9 +1932,6 @@
                 <node concept="3_PKRz" id="5pJnDA9lfR$" role="37wK5m">
                   <ref role="3_PKRw" node="5pJnDA9lfRb" resolve="gsnNode" />
                 </node>
-              </node>
-              <node concept="3Tqbb2" id="5pJnDA9lfR_" role="10QFUM">
-                <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
               </node>
             </node>
           </node>
@@ -2076,8 +2085,12 @@
             <node concept="3Tqbb2" id="2SMJEPn9RE9" role="1tU5fm">
               <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
             </node>
-            <node concept="10QFUN" id="2SMJEPn9REa" role="33vP2m">
-              <node concept="2YIFZM" id="2SMJEPn9REb" role="10QFUP">
+            <node concept="1PxgMI" id="1a4oUCpObiY" role="33vP2m">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="1a4oUCpObuU" role="3oSUPX">
+                <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+              </node>
+              <node concept="2YIFZM" id="2SMJEPn9REb" role="1m5AlR">
                 <ref role="37wK5l" node="4eRbb89BRvz" resolve="resolveNode" />
                 <ref role="1Pybhc" node="4eRbb89BzK0" resolve="SelectNodeUtil" />
                 <node concept="3_PKRz" id="2SMJEPn9REc" role="37wK5m">
@@ -2086,9 +2099,6 @@
                 <node concept="3_PKRz" id="2SMJEPn9REd" role="37wK5m">
                   <ref role="3_PKRw" node="2SMJEPn9RDO" resolve="gsnNode" />
                 </node>
-              </node>
-              <node concept="3Tqbb2" id="2SMJEPn9REe" role="10QFUM">
-                <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
               </node>
             </node>
           </node>

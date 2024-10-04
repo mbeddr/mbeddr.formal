@@ -3,11 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="fdecb1e5-875e-41ef-a5fd-4b18f747f204" name="com.mbeddr.formal.safety.argument.process.artefacts" version="-1" />
-    <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
   </languages>
-  <imports>
-    <import index="v0ty" ref="r:f4296e65-905c-42ee-8349-52d0474604ad(com.mbeddr.formal.safety.stamp.sandbox._010_sandbox)" />
-  </imports>
+  <imports />
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
