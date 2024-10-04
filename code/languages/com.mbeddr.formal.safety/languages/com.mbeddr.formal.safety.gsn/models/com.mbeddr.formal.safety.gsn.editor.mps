@@ -14129,6 +14129,7 @@
         <node concept="VPM3Z" id="336$aoTDWxE" role="3F10Kt" />
         <node concept="3F0ifn" id="336$aoTDWxF" role="3EZMnx">
           <property role="3F0ifm" value="Documentation:" />
+          <ref role="1k5W1q" node="4afdSTbTtoR" resolve="GSNTextualNotationBaseLanguageKeyword" />
         </node>
         <node concept="3F1sOY" id="336$aoTDWxG" role="3EZMnx">
           <ref role="1NtTu8" to="py52:336$aoT$ZLb" resolve="documentation" />
@@ -14900,6 +14901,32 @@
           <ref role="ehGHo" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4yKSwbd2KSq">
+    <property role="3GE5qa" value="connections" />
+    <ref role="1XX52x" to="py52:2ccN23odOxd" resolve="GoalStructureConnectionBase" />
+    <node concept="2aJ2om" id="4yKSwbd2KSI" role="CpUAK">
+      <ref role="2$4xQ3" node="5uFV_KKBhnn" resolve="GOAL_STRUCTURE_TEXTUAL" />
+    </node>
+    <node concept="3F0ifn" id="4yKSwbd2RPD" role="2wV5jI" />
+  </node>
+  <node concept="24kQdi" id="4yKSwbd6Fxy">
+    <ref role="1XX52x" to="py52:336$aoT_UFY" resolve="GoalStructureDoc" />
+    <node concept="3F1sOY" id="4yKSwbd6Fxz" role="2wV5jI">
+      <ref role="1NtTu8" to="py52:336$aoT_UHh" resolve="documentation" />
+    </node>
+    <node concept="2aJ2om" id="4yKSwbd6Fx$" role="CpUAK">
+      <ref role="2$4xQ3" node="7olAlesPj8d" resolve="GOAL_STRUCTURE_TEXTUAL_FAST" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4yKSwbd9z4I">
+    <ref role="1XX52x" to="py52:336$aoT_UFY" resolve="GoalStructureDoc" />
+    <node concept="3F1sOY" id="4yKSwbd9z4J" role="2wV5jI">
+      <ref role="1NtTu8" to="py52:336$aoT_UHh" resolve="documentation" />
+    </node>
+    <node concept="2aJ2om" id="4yKSwbd9z4K" role="CpUAK">
+      <ref role="2$4xQ3" node="4Cms47V74xp" resolve="GOAL_STRUCTURE_TREE_TABLE" />
     </node>
   </node>
 </model>
