@@ -147,15 +147,6 @@
             </node>
           </node>
         </node>
-        <node concept="mXxR0" id="1a4oUCoJRVb" role="mXAiC">
-          <property role="Z2I3b" value="hazop.iso26262" />
-          <node concept="37shsh" id="1a4oUCoJRVc" role="mXxR3">
-            <node concept="1dCxOk" id="1a4oUCoJRWm" role="37shsm">
-              <property role="1XweGW" value="f610e51f-b05d-4ea8-a354-7ee51a81bcbc" />
-              <property role="1XxBO9" value="com.fasten.safety.hazop.iso26262" />
-            </node>
-          </node>
-        </node>
         <node concept="mXxR0" id="1a4oUCoJRVo" role="mXAiC">
           <property role="Z2I3b" value="hara" />
           <node concept="37shsh" id="1a4oUCoJRVp" role="mXxR3">
@@ -256,24 +247,21 @@
       <node concept="Z9REq" id="1a4oUCoJSzz" role="mXAiC" />
       <node concept="mXAGQ" id="1a4oUCoJSxo" role="mXAiC">
         <property role="TrG5h" value="fmea_lancomp" />
-        <node concept="mXAGQ" id="1a4oUCoJSxp" role="mXAiC">
-          <property role="TrG5h" value="fmea_base_lancomp" />
-          <node concept="mXxR0" id="1a4oUCoJSxq" role="mXAiC">
-            <property role="Z2I3b" value="fmea" />
-            <node concept="37shsh" id="1a4oUCoJSxr" role="mXxR3">
-              <node concept="1dCxOk" id="1a4oUCoJSzi" role="37shsm">
-                <property role="1XweGW" value="b43c548b-f75f-46e2-ad24-de9edd93e95e" />
-                <property role="1XxBO9" value="com.fasten.safety.fmea" />
-              </node>
+        <node concept="mXxR0" id="1a4oUCoJSxq" role="mXAiC">
+          <property role="Z2I3b" value="fmea" />
+          <node concept="37shsh" id="1a4oUCoJSxr" role="mXxR3">
+            <node concept="1dCxOk" id="1a4oUCoJSzi" role="37shsm">
+              <property role="1XweGW" value="b43c548b-f75f-46e2-ad24-de9edd93e95e" />
+              <property role="1XxBO9" value="com.fasten.safety.fmea" />
             </node>
           </node>
-          <node concept="mXxR0" id="1a4oUCoJSxt" role="mXAiC">
-            <property role="Z2I3b" value="fmea.iso26262" />
-            <node concept="37shsh" id="1a4oUCoJSxu" role="mXxR3">
-              <node concept="1dCxOk" id="1a4oUCoJSzn" role="37shsm">
-                <property role="1XweGW" value="dc773f77-cced-42c8-ba62-465140b810a5" />
-                <property role="1XxBO9" value="com.fasten.safety.fmea.iso26262" />
-              </node>
+        </node>
+        <node concept="mXxR0" id="1a4oUCoO858" role="mXAiC">
+          <property role="Z2I3b" value="fmea.arch" />
+          <node concept="37shsh" id="1a4oUCoO85h" role="mXxR3">
+            <node concept="1dCxOk" id="1a4oUCoO85o" role="37shsm">
+              <property role="1XweGW" value="1110e3ef-a98e-444f-9748-1d61fe61c7f7" />
+              <property role="1XxBO9" value="com.fasten.safety.fmea.arch" />
             </node>
           </node>
         </node>
@@ -299,7 +287,7 @@
             <ref role="mXAj7" node="1a4oUCoJRuU" resolve="fault_trees_base_lancomp" />
           </node>
           <node concept="mXAj4" id="1a4oUCoJSFA" role="mXvOw">
-            <ref role="mXAj7" node="1a4oUCoJSxp" resolve="fmea_base_lancomp" />
+            <ref role="mXAj7" node="1a4oUCoJSxo" resolve="fmea_lancomp" />
           </node>
         </node>
         <node concept="mXxR0" id="1a4oUCoJRZ8" role="mXAiC">
@@ -317,6 +305,45 @@
             <node concept="1dCxOk" id="1a4oUCoJRZO" role="37shsm">
               <property role="1XweGW" value="521724dc-29ef-4d5a-9c15-25f6b680b809" />
               <property role="1XxBO9" value="com.fasten.safety.hiphops.arch" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="Z9REq" id="1a4oUCoO85z" role="mXAiC" />
+      <node concept="mXAGQ" id="1a4oUCoO87I" role="mXAiC">
+        <property role="TrG5h" value="safety_analyses_iso26262_lancomp" />
+        <node concept="mXA1B" id="1a4oUCoO8a0" role="mXAiC">
+          <node concept="mXAj4" id="1a4oUCoO8ac" role="mXvOw">
+            <ref role="mXAj7" node="1a4oUCoJRK1" resolve="hazards_lancomp" />
+          </node>
+          <node concept="mXAj4" id="1a4oUCoO8ae" role="mXvOw">
+            <ref role="mXAj7" node="1a4oUCoJSxo" resolve="fmea_lancomp" />
+          </node>
+        </node>
+        <node concept="mXxR0" id="1a4oUCoO890" role="mXAiC">
+          <property role="Z2I3b" value="safety.iso26262" />
+          <node concept="37shsh" id="1a4oUCoO896" role="mXxR3">
+            <node concept="1dCxOk" id="1a4oUCoO89d" role="37shsm">
+              <property role="1XweGW" value="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" />
+              <property role="1XxBO9" value="com.mbeddr.formal.safety.iso26262" />
+            </node>
+          </node>
+        </node>
+        <node concept="mXxR0" id="1a4oUCoJRVb" role="mXAiC">
+          <property role="Z2I3b" value="hazop.iso26262" />
+          <node concept="37shsh" id="1a4oUCoJRVc" role="mXxR3">
+            <node concept="1dCxOk" id="1a4oUCoJRWm" role="37shsm">
+              <property role="1XweGW" value="f610e51f-b05d-4ea8-a354-7ee51a81bcbc" />
+              <property role="1XxBO9" value="com.fasten.safety.hazop.iso26262" />
+            </node>
+          </node>
+        </node>
+        <node concept="mXxR0" id="1a4oUCoO89q" role="mXAiC">
+          <property role="Z2I3b" value="fmea.iso26262" />
+          <node concept="37shsh" id="1a4oUCoO89z" role="mXxR3">
+            <node concept="1dCxOk" id="1a4oUCoO89E" role="37shsm">
+              <property role="1XweGW" value="dc773f77-cced-42c8-ba62-465140b810a5" />
+              <property role="1XxBO9" value="com.fasten.safety.fmea.iso26262" />
             </node>
           </node>
         </node>
@@ -409,6 +436,33 @@
               <node concept="1dCxOk" id="41Pak$lHHzQ" role="37shsm">
                 <property role="1XweGW" value="51fb6274-410b-4585-802e-ffc783ce3996" />
                 <property role="1XxBO9" value="com.mbeddr.formal.safety.gsn.pluginSolution" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="Z9REq" id="1a4oUCoO83h" role="mXAiC" />
+        <node concept="mXAGQ" id="1a4oUCoO81$" role="mXAiC">
+          <property role="TrG5h" value="assurance_base_gsn_web_lancomp" />
+          <node concept="mXA1B" id="1a4oUCoO84P" role="mXAiC">
+            <node concept="mXAj4" id="1a4oUCoO84Y" role="mXvOw">
+              <ref role="mXAj7" node="41Pak$lH_kn" resolve="assurance_base_gsn_lancomp" />
+            </node>
+          </node>
+          <node concept="mXxR0" id="1a4oUCoO81L" role="mXAiC">
+            <property role="Z2I3b" value="gsn.web" />
+            <node concept="37shsh" id="1a4oUCoO81M" role="mXxR3">
+              <node concept="1dCxOk" id="1a4oUCoO81N" role="37shsm">
+                <property role="1XweGW" value="0ca42a58-5150-4a55-89be-ba447ef72356" />
+                <property role="1XxBO9" value="com.mbeddr.formal.safety.gsn.web" />
+              </node>
+            </node>
+          </node>
+          <node concept="mXxR0" id="1a4oUCoO81O" role="mXAiC">
+            <property role="Z2I3b" value="gsn.web.rt" />
+            <node concept="37shsh" id="1a4oUCoO81P" role="mXxR3">
+              <node concept="1dCxOk" id="1a4oUCoO81Q" role="37shsm">
+                <property role="1XweGW" value="f762e964-9110-40bd-ac0a-9fbf8a051755" />
+                <property role="1XxBO9" value="com.mbeddr.formal.safety.gsn.web.rt" />
               </node>
             </node>
           </node>
