@@ -12853,11 +12853,6 @@
             <ref role="3bR37D" node="7he_lUurDmQ" resolve="com.mbeddr.formal.safety.stamp" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5uFV_KLFgd7" role="3bR37C">
-          <node concept="3bR9La" id="5uFV_KLFgd8" role="1SiIV1">
-            <ref role="3bR37D" node="7he_lUuxic9" resolve="com.mbeddr.formal.safety.req" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="5uFV_KLFgdm" role="3bR37C">
           <node concept="1Busua" id="5uFV_KLFgdn" role="1SiIV1">
             <ref role="1Busuk" node="7he_lUurDmQ" resolve="com.mbeddr.formal.safety.stamp" />
@@ -14844,35 +14839,6 @@
             </node>
             <node concept="3qWCbU" id="6Z2HiVHt9tk" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
-          </node>
-        </node>
-        <node concept="1yeLz9" id="6Z2HiVHt9tl" role="1TViLv">
-          <property role="TrG5h" value="com.fasten.safety.bayesian_network.generator" />
-          <property role="3LESm3" value="d6928dde-248a-483c-8a2c-af50f6c5e322" />
-          <node concept="1BupzO" id="6Z2HiVHt9tz" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="6Z2HiVHt9t$" role="1HemKq">
-              <node concept="398BVA" id="6Z2HiVHt9tm" role="3LXTmr">
-                <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
-                <node concept="2Ry0Ak" id="6Z2HiVHt9tn" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="6Z2HiVHt9to" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.fasten.safety.bayesian_network" />
-                    <node concept="2Ry0Ak" id="6Z2HiVHt9tp" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="6Z2HiVHt9tq" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="6Z2HiVHt9t_" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
             </node>
           </node>
         </node>

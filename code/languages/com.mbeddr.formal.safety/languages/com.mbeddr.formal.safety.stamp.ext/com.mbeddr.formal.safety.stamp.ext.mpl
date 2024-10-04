@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="com.mbeddr.formal.safety.stamp.ext" uuid="eccaed1c-88f4-4a5c-9ad8-d1b8c9f330e9" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
@@ -69,7 +69,6 @@
     <dependency reexport="false">7e777b53-0a6b-4719-b36d-10475788d49f(com.mbeddr.formal.safety.stamp)</dependency>
     <dependency reexport="false">17da266c-02d9-4bbd-b69b-8a656b49f45c(com.mbeddr.formal.safety.hara)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
-    <dependency reexport="false">434b2bfb-bd7a-47c9-bced-b445035e6d96(com.mbeddr.formal.safety.req)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
   </dependencies>
@@ -116,9 +115,7 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
-    <module reference="0deccdfd-196b-4d8c-895e-0d6cb8014dfd(com.mbeddr.formal.req.base)" version="0" />
     <module reference="17da266c-02d9-4bbd-b69b-8a656b49f45c(com.mbeddr.formal.safety.hara)" version="0" />
-    <module reference="434b2bfb-bd7a-47c9-bced-b445035e6d96(com.mbeddr.formal.safety.req)" version="0" />
     <module reference="7e777b53-0a6b-4719-b36d-10475788d49f(com.mbeddr.formal.safety.stamp)" version="0" />
     <module reference="eccaed1c-88f4-4a5c-9ad8-d1b8c9f330e9(com.mbeddr.formal.safety.stamp.ext)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
