@@ -489,6 +489,11 @@
         <property id="6910723851735134393" name="hasFitSizeAllDiagramButton" index="3sAy83" />
         <property id="6910723851735134386" name="hasZoomOutButton" index="3sAy88" />
         <property id="6910723851735134380" name="hasZoomInButton" index="3sAy8m" />
+        <property id="5128117196765949674" name="hasUseGridSnappingButton" index="3wTdm1" />
+        <property id="5128117196765949417" name="hasShowGridButton" index="3wTdq2" />
+        <property id="3457085882766355628" name="hasTranslateToOriginButton" index="1JH6nB" />
+        <property id="3457085882766358673" name="hasSVGExportButton" index="1JH77q" />
+        <property id="3457085882766356966" name="hasPNGExportButton" index="1JH7yH" />
       </concept>
       <concept id="4717906927461703453" name="de.itemis.mps.editor.diagram.structure.SNodeConnectionType_ValidStart" flags="ig" index="3vNc17" />
       <concept id="4717906927461703977" name="de.itemis.mps.editor.diagram.structure.SNodeConnectionType_ValidEnd" flags="ig" index="3vNfTN" />
@@ -7279,7 +7284,12 @@
         <property role="3sAwEb" value="true" />
         <property role="3sAy8m" value="true" />
         <property role="3sAy88" value="true" />
-        <property role="3sAy83" value="false" />
+        <property role="3sAy83" value="true" />
+        <property role="1JH7yH" value="true" />
+        <property role="1JH77q" value="true" />
+        <property role="3wTdm1" value="true" />
+        <property role="3wTdq2" value="true" />
+        <property role="1JH6nB" value="true" />
       </node>
     </node>
   </node>

@@ -3152,6 +3152,44 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="1PcolARwcfX" role="3cqZAp">
+              <node concept="2OqwBi" id="1PcolARwcfY" role="3clFbG">
+                <node concept="37vLTw" id="1PcolARwcfZ" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5Imyhiim4lz" resolve="buttons" />
+                </node>
+                <node concept="TSZUe" id="1PcolARwcg0" role="2OqNvi">
+                  <node concept="2ShNRf" id="1PcolARwcg1" role="25WWJ7">
+                    <node concept="1pGfFk" id="1PcolARwcg2" role="2ShVmc">
+                      <ref role="37wK5l" to="r3rm:4sEIQIBu97K" resolve="ToggleGridDiagramButton" />
+                      <node concept="10M0yZ" id="1PcolARwcg3" role="37wK5m">
+                        <ref role="3cqZAo" to="r3rm:17I5kyiXMqc" resolve="DEFAULT_BUTTON_SIZE" />
+                        <ref role="1PxDUh" to="r3rm:2KWY$Um6wZH" resolve="ContextButton" />
+                      </node>
+                      <node concept="1Q80Hy" id="1PcolARwcg4" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="1PcolARwUch" role="3cqZAp">
+              <node concept="2OqwBi" id="1PcolARwUci" role="3clFbG">
+                <node concept="37vLTw" id="1PcolARwUcj" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5Imyhiim4lz" resolve="buttons" />
+                </node>
+                <node concept="TSZUe" id="1PcolARwUck" role="2OqNvi">
+                  <node concept="2ShNRf" id="1PcolARwUcl" role="25WWJ7">
+                    <node concept="1pGfFk" id="1PcolARwUcm" role="2ShVmc">
+                      <ref role="37wK5l" to="r3rm:4sEIQIBMnTa" resolve="ToggleGridSnappingDiagramButton" />
+                      <node concept="10M0yZ" id="1PcolARwUcn" role="37wK5m">
+                        <ref role="3cqZAo" to="r3rm:17I5kyiXMqc" resolve="DEFAULT_BUTTON_SIZE" />
+                        <ref role="1PxDUh" to="r3rm:2KWY$Um6wZH" resolve="ContextButton" />
+                      </node>
+                      <node concept="1Q80Hy" id="1PcolARwUco" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="5Imyhiim4mE" role="3cqZAp">
               <node concept="2OqwBi" id="5Imyhiim4mF" role="3clFbG">
                 <node concept="37vLTw" id="5Imyhiim4mG" role="2Oq$k0">
