@@ -16962,6 +16962,9 @@
             <node concept="3_I8Xc" id="5cnt3YQNQAI" role="39821P">
               <ref role="3_I8Xa" to="al5i:6rBfBe1XyuT" resolve="com.mbeddr.mpsutil.contextactions" />
             </node>
+            <node concept="3_I8Xc" id="7khq58xlv14" role="39821P">
+              <ref role="3_I8Xa" to="al5i:4SMNYR2Zl4L" resolve="com.mbeddr.mpsutil.actionsfilter" />
+            </node>
             <node concept="28u9K_" id="5cnt3YQEHvb" role="39821P">
               <property role="28hIV_" value="doc requires platform, plarform requires jung, plantuml" />
             </node>
