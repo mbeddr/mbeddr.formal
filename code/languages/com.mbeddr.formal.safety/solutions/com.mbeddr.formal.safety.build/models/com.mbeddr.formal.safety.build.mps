@@ -2,7 +2,7 @@
 <model ref="r:c3566e6b-a5e5-48f9-99d7-fc25ee01c1dd(com.mbeddr.formal.safety.build)">
   <persistence version="9" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="-1" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="-1" />
     <use id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests" version="-1" />
   </languages>
@@ -16744,7 +16744,7 @@
                 </node>
               </node>
               <node concept="1zDrgl" id="42jqVeFkUvE" role="39821P">
-                <ref role="1zDrgn" node="42jqVeFkUtq" resolve="FASTEN 2023.2" />
+                <ref role="1zDrgn" node="42jqVeFkUtq" resolve="FASTEN 2024.1" />
               </node>
             </node>
           </node>
@@ -16978,7 +16978,7 @@
               <ref role="3_I8Xa" to="ffeo:1nJh0raVyYj" resolve="modelchecker.jar" />
             </node>
             <node concept="3_I8Xc" id="2i2e8U1mF1i" role="39821P">
-              <ref role="3_I8Xa" to="ffeo:6jDaT$jlXhe" />
+              <ref role="3_I8Xa" to="ffeo:6jDaT$jlXhe" resolve="mps-testing" />
             </node>
             <node concept="3_I8Xc" id="7he_lUutsoc" role="39821P">
               <ref role="3_I8Xa" node="7he_lUumPyH" resolve="com.mpsbasics" />
