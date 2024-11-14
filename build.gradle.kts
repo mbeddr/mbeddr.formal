@@ -98,19 +98,11 @@ configurations {
 dependencyLocking { lockAllConfigurations() }
 
 repositories {
-    val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps",
-            "https://maven.pkg.github.com/mbeddr/*")
+    val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps")
 
     for (repoUrl in dependencyRepositories) {
         maven {
             url = uri(repoUrl)
-
-            if (repoUrl.startsWith("https://maven.pkg.github.com/")) {
-                credentials {
-                    username = project.property("gpr.user") as String
-                    password = project.property("gpr.token") as String
-                }
-            }
         }
     }
     mavenCentral()
