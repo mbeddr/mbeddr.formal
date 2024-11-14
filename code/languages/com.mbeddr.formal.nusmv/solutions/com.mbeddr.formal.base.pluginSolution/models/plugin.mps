@@ -54,6 +54,7 @@
     <import index="xr52" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.ui.tree.smodel(MPS.Platform/)" />
     <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
     <import index="8tyk" ref="r:eb0002ce-67d6-41e9-b36c-361c22b4de97(com.mbeddr.mpsutil.smodule.runtime.lib)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="w873" ref="r:0de03bcd-6ad8-423c-b85e-ae3dd18ed2b3(com.mbeddr.formal.base.behavior)" implicit="true" />
   </imports>
@@ -66,6 +67,7 @@
       <concept id="394857668357342104" name="jetbrains.mps.lang.plugin.structure.EverywhereActionPlace" flags="ng" index="mfpdH" />
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
+        <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
         <child id="394857668356997869" name="places" index="med8o" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
@@ -219,6 +221,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -450,7 +453,6 @@
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
-      <concept id="3358009230509553641" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListType" flags="in" index="2BANLN" />
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -461,15 +463,14 @@
       </concept>
       <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
         <child id="1237721435807" name="elementType" index="HW$YZ" />
-        <child id="1237731803878" name="copyFrom" index="I$8f6" />
       </concept>
       <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1167380149909" name="jetbrains.mps.baseLanguage.collections.structure.RemoveElementOperation" flags="nn" index="3dhRuq" />
-      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="7125221305512719026" name="jetbrains.mps.baseLanguage.collections.structure.CollectionType" flags="in" index="3vKaQO" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
@@ -2493,6 +2494,7 @@
     <property role="TrG5h" value="FASTENNewModel" />
     <property role="2uzpH1" value="New FASTEN Model" />
     <property role="3GE5qa" value="new_actions" />
+    <property role="2YLI8m" value="6u2MFnph2wS/none" />
     <node concept="1DS2jV" id="26E6nZcFIuS" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
@@ -2561,8 +2563,8 @@
         <node concept="3cpWs8" id="5tRIc6mlvG5" role="3cqZAp">
           <node concept="3cpWsn" id="5tRIc6mlvG6" role="3cpWs9">
             <property role="TrG5h" value="mrs" />
-            <node concept="2BANLN" id="5tRIc6mlvFI" role="1tU5fm">
-              <node concept="3uibUv" id="5tRIc6mlvFL" role="_ZDj9">
+            <node concept="_YKpA" id="2i2e8U2kc2k" role="1tU5fm">
+              <node concept="3uibUv" id="2i2e8U2kc2m" role="_ZDj9">
                 <ref role="3uigEE" to="dush:~ModelRoot" resolve="ModelRoot" />
               </node>
             </node>
@@ -2571,15 +2573,41 @@
                 <node concept="3uibUv" id="5tRIc6mlvG9" role="HW$YZ">
                   <ref role="3uigEE" to="dush:~ModelRoot" resolve="ModelRoot" />
                 </node>
-                <node concept="2OqwBi" id="5tRIc6mlvGa" role="I$8f6">
-                  <node concept="37vLTw" id="5tRIc6mlvGb" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5tRIc6mlsRK" resolve="sol" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1QHqEK" id="2i2e8U2iC9d" role="3cqZAp">
+          <node concept="1QHqEC" id="2i2e8U2iC9f" role="1QHqEI">
+            <node concept="3clFbS" id="2i2e8U2iC9h" role="1bW5cS">
+              <node concept="3clFbF" id="2i2e8U2iGb1" role="3cqZAp">
+                <node concept="2OqwBi" id="2i2e8U2iHAL" role="3clFbG">
+                  <node concept="37vLTw" id="2i2e8U2iGb0" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5tRIc6mlvG6" resolve="mrs" />
                   </node>
-                  <node concept="liA8E" id="5tRIc6mlvGc" role="2OqNvi">
-                    <ref role="37wK5l" to="z1c4:~AbstractModule.getModelRoots()" resolve="getModelRoots" />
+                  <node concept="X8dFx" id="2i2e8U2iJOh" role="2OqNvi">
+                    <node concept="2OqwBi" id="5tRIc6mlvGa" role="25WWJ7">
+                      <node concept="37vLTw" id="5tRIc6mlvGb" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5tRIc6mlsRK" resolve="sol" />
+                      </node>
+                      <node concept="liA8E" id="5tRIc6mlvGc" role="2OqNvi">
+                        <ref role="37wK5l" to="z1c4:~AbstractModule.getModelRoots()" resolve="getModelRoots" />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="2i2e8U2iEi4" role="ukAjM">
+            <node concept="2OqwBi" id="2i2e8U2iCIC" role="2Oq$k0">
+              <node concept="2WthIp" id="2i2e8U2iCIF" role="2Oq$k0" />
+              <node concept="1DTwFV" id="2i2e8U2iCIH" role="2OqNvi">
+                <ref role="2WH_rO" node="26E6nZcFIuS" resolve="project" />
+              </node>
+            </node>
+            <node concept="liA8E" id="2i2e8U2iFC3" role="2OqNvi">
+              <ref role="37wK5l" to="z1c4:~Project.getRepository()" resolve="getRepository" />
             </node>
           </node>
         </node>
@@ -2594,32 +2622,32 @@
             <node concept="1v1jN8" id="5tRIc6mlzAn" role="2OqNvi" />
           </node>
         </node>
-        <node concept="3cpWs8" id="5tRIc6mlCTF" role="3cqZAp">
-          <node concept="3cpWsn" id="5tRIc6mlCTG" role="3cpWs9">
-            <property role="TrG5h" value="mr" />
-            <node concept="3uibUv" id="5tRIc6mlCTy" role="1tU5fm">
-              <ref role="3uigEE" to="dush:~ModelRoot" resolve="ModelRoot" />
-            </node>
-            <node concept="2OqwBi" id="5tRIc6mlCTH" role="33vP2m">
-              <node concept="37vLTw" id="5tRIc6mlCTI" role="2Oq$k0">
-                <ref role="3cqZAo" node="5tRIc6mlvG6" resolve="mrs" />
-              </node>
-              <node concept="1uHKPH" id="5tRIc6mlCTJ" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5tRIc6mlHkE" role="3cqZAp">
           <node concept="3cpWsn" id="5tRIc6mlHkF" role="3cpWs9">
             <property role="TrG5h" value="modelName" />
             <node concept="17QB3L" id="5tRIc6mm0vv" role="1tU5fm" />
-            <node concept="2YIFZM" id="5tRIc6mlHkG" role="33vP2m">
-              <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-              <ref role="37wK5l" to="dxuu:~JOptionPane.showInputDialog(java.awt.Component,java.lang.Object)" resolve="showInputDialog" />
-              <node concept="10Nm6u" id="5tRIc6mlHkH" role="37wK5m" />
-              <node concept="Xl_RD" id="5tRIc6mlHkI" role="37wK5m">
-                <property role="Xl_RC" value="Model name:" />
+            <node concept="2YIFZM" id="2i2e8U2kMo5" role="33vP2m">
+              <ref role="37wK5l" to="jkm4:~Messages.showInputDialog(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="showInputDialog" />
+              <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+              <node concept="Xl_RD" id="2i2e8U2kMo7" role="37wK5m">
+                <property role="Xl_RC" value="Name:" />
               </node>
+              <node concept="Xl_RD" id="2i2e8U2kTeV" role="37wK5m">
+                <property role="Xl_RC" value="Model" />
+              </node>
+              <node concept="10Nm6u" id="2i2e8U2kXO2" role="37wK5m" />
             </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="2i2e8U2kZFH" role="3cqZAp">
+          <node concept="3clFbS" id="2i2e8U2kZFJ" role="3clFbx">
+            <node concept="3cpWs6" id="2i2e8U2l4oS" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="2i2e8U2l1_8" role="3clFbw">
+            <node concept="37vLTw" id="2i2e8U2l07B" role="2Oq$k0">
+              <ref role="3cqZAo" node="5tRIc6mlHkF" resolve="modelName" />
+            </node>
+            <node concept="17RlXB" id="2i2e8U2l3uS" role="2OqNvi" />
           </node>
         </node>
         <node concept="3cpWs8" id="2NC0Oc6G62F" role="3cqZAp">
@@ -2826,12 +2854,14 @@
         <node concept="3clFbJ" id="5tRIc6mm2CE" role="3cqZAp">
           <node concept="3clFbS" id="5tRIc6mm2CG" role="3clFbx">
             <node concept="3clFbF" id="5tRIc6mm3uy" role="3cqZAp">
-              <node concept="2YIFZM" id="5tRIc6mm3v6" role="3clFbG">
-                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                <node concept="10Nm6u" id="5tRIc6mm3x0" role="37wK5m" />
-                <node concept="Xl_RD" id="5tRIc6mm3Ag" role="37wK5m">
-                  <property role="Xl_RC" value="Error while creating the model!" />
+              <node concept="2YIFZM" id="2i2e8U2kCUr" role="3clFbG">
+                <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                <node concept="Xl_RD" id="2i2e8U2kCUt" role="37wK5m">
+                  <property role="Xl_RC" value="Error while creating the model" />
+                </node>
+                <node concept="Xl_RD" id="2i2e8U2kJce" role="37wK5m">
+                  <property role="Xl_RC" value="Error" />
                 </node>
               </node>
             </node>
