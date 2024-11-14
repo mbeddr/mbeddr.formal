@@ -550,7 +550,8 @@
             </node>
             <node concept="2ShNRf" id="6bK0Ak3CbLJ" role="33vP2m">
               <node concept="1pGfFk" id="6bK0Ak3CbLL" role="2ShVmc">
-                <ref role="37wK5l" to="8fb:~CustomActionsSchema.&lt;init&gt;()" resolve="CustomActionsSchema" />
+                <ref role="37wK5l" to="8fb:~CustomActionsSchema.&lt;init&gt;(kotlinx.coroutines.CoroutineScope)" resolve="CustomActionsSchema" />
+                <node concept="10Nm6u" id="2i2e8U0vTPh" role="37wK5m" />
               </node>
             </node>
           </node>
@@ -584,9 +585,14 @@
           </node>
         </node>
         <node concept="3clFbF" id="6bK0Ak3CatE" role="3cqZAp">
-          <node concept="2YIFZM" id="6bK0Ak3CbKc" role="3clFbG">
-            <ref role="1Pybhc" to="8fb:~CustomActionsSchema" resolve="CustomActionsSchema" />
-            <ref role="37wK5l" to="8fb:~CustomActionsSchema.setCustomizationSchemaForCurrentProjects()" resolve="setCustomizationSchemaForCurrentProjects" />
+          <node concept="2OqwBi" id="2i2e8U0uiHJ" role="3clFbG">
+            <node concept="2YIFZM" id="2i2e8U0uiw6" role="2Oq$k0">
+              <ref role="37wK5l" to="8fb:~CustomActionsSchema.getInstance()" resolve="getInstance" />
+              <ref role="1Pybhc" to="8fb:~CustomActionsSchema" resolve="CustomActionsSchema" />
+            </node>
+            <node concept="liA8E" id="2i2e8U0uj1T" role="2OqNvi">
+              <ref role="37wK5l" to="8fb:~CustomActionsSchema.setCustomizationSchemaForCurrentProjects()" resolve="setCustomizationSchemaForCurrentProjects" />
+            </node>
           </node>
         </node>
       </node>
