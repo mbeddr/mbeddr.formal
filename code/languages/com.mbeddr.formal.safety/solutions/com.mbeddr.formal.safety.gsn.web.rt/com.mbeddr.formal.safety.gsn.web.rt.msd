@@ -6,7 +6,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet languageLevel="JAVA_8" type="java" compile="mps" classes="mps" ext="yes">
+    <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
@@ -74,7 +74,6 @@
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />
     <module reference="0022e9df-2136-4ef8-81b2-08650aeb1dc7(de.itemis.mps.tooltips.runtime)" version="0" />
     <module reference="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" version="0" />
-    <module reference="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="5fa23c0a-216d-4571-a163-e286643e6f5f(jetbrains.mps.generator)" version="0" />
     <module reference="339c3a3d-4c7f-4727-bc4f-f1abb19286a3(jetbrains.mps.ide.httpsupport.nodeaccess)" version="0" />
