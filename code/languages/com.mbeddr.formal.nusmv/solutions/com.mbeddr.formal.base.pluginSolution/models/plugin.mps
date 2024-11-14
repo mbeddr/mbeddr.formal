@@ -426,13 +426,6 @@
         <property id="8575328350543493365" name="message" index="huDt6" />
         <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
-      </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
@@ -2827,27 +2820,6 @@
             </node>
             <node concept="37vLTw" id="26E6nZcFu$i" role="37vLTJ">
               <ref role="3cqZAo" node="5tRIc6mm0Ql" resolve="newModel" />
-            </node>
-          </node>
-        </node>
-        <node concept="1X3_iC" id="26E6nZcFtoJ" role="3cqZAp">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="26E6nZcFsZY" role="8Wnug">
-            <node concept="37vLTI" id="26E6nZcFt00" role="3clFbG">
-              <node concept="2YIFZM" id="5tRIc6mm0Qm" role="37vLTx">
-                <ref role="37wK5l" to="z1c4:~SModuleOperations.createModelWithAdjustments(java.lang.String,org.jetbrains.mps.openapi.persistence.ModelRoot)" resolve="createModelWithAdjustments" />
-                <ref role="1Pybhc" to="z1c4:~SModuleOperations" resolve="SModuleOperations" />
-                <node concept="37vLTw" id="5tRIc6mm0Qn" role="37wK5m">
-                  <ref role="3cqZAo" node="3ALtb$ipQoE" resolve="fullModelName" />
-                </node>
-                <node concept="37vLTw" id="5tRIc6mm0Qo" role="37wK5m">
-                  <ref role="3cqZAo" node="5tRIc6mlCTG" resolve="mr" />
-                </node>
-              </node>
-              <node concept="37vLTw" id="26E6nZcFt04" role="37vLTJ">
-                <ref role="3cqZAo" node="5tRIc6mm0Ql" resolve="newModel" />
-              </node>
             </node>
           </node>
         </node>
