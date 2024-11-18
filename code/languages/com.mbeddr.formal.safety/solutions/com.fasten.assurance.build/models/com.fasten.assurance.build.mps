@@ -3,7 +3,7 @@
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
-    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="7" />
+    <use id="0cf935df-4699-4e9c-a132-fa109541cba3" name="jetbrains.mps.build.mps" version="8" />
     <use id="798100da-4f0a-421a-b991-71f8c50ce5d2" name="jetbrains.mps.build" version="0" />
   </languages>
   <imports>
@@ -1919,11 +1919,6 @@
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2u7UHDCnSLS" role="3bR37C">
-          <node concept="3bR9La" id="2u7UHDCnSLT" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:35JynOkF_BM" resolve="org.apache.batik" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="2u7UHDCnSLU" role="3bR37C">
           <node concept="3bR9La" id="2u7UHDCnSLV" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
@@ -1975,6 +1970,11 @@
         <node concept="1SiIV0" id="YXkTXVNg_9" role="3bR37C">
           <node concept="3bR9La" id="YXkTXVNg_a" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2i2e8U1mEgx" role="3bR37C">
+          <node concept="3bR9La" id="2i2e8U1mEgy" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6bkzxtWPDx1" resolve="de.itemis.stubs.batik" />
           </node>
         </node>
       </node>
@@ -2053,11 +2053,6 @@
         <node concept="1SiIV0" id="3TNxfDZ5bWu" role="3bR37C">
           <node concept="3bR9La" id="3TNxfDZ5bWv" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3TNxfDZ5bWw" role="3bR37C">
-          <node concept="3bR9La" id="3TNxfDZ5bWx" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:35JynOkF_BM" resolve="org.apache.batik" />
           </node>
         </node>
         <node concept="1SiIV0" id="3TNxfDZ5bWy" role="3bR37C">
@@ -3952,11 +3947,6 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg2" resolve="jetbrains.mps.smodel.resources" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4jiM8XS_ow5" role="3bR37C">
-          <node concept="3bR9La" id="4jiM8XS_ow6" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:3MI1gu0QouH" resolve="jetbrains.mps.editor.runtime" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="4jiM8XS_ow7" role="3bR37C">
           <node concept="3bR9La" id="4jiM8XS_ow8" role="1SiIV1">
             <property role="3bR36h" value="true" />
@@ -4025,11 +4015,6 @@
         <node concept="1SiIV0" id="8xY_IhvzHi" role="3bR37C">
           <node concept="3bR9La" id="8xY_IhvzHj" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="8xY_IhvzHk" role="3bR37C">
-          <node concept="3bR9La" id="8xY_IhvzHl" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:35JynOkF_BM" resolve="org.apache.batik" />
           </node>
         </node>
       </node>
@@ -8048,7 +8033,7 @@
         <node concept="2Ry0Ak" id="6hyv0iVPmu0" role="iGT6I">
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="3ALtb$it0Jq" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS_2022_2_3" />
+            <property role="2Ry0Am" value="MPS_2024_1" />
           </node>
         </node>
       </node>

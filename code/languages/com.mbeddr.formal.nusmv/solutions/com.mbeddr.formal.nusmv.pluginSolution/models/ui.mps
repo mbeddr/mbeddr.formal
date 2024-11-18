@@ -28,6 +28,7 @@
     <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="yvhq" ref="r:b8dfa86d-6fa5-4013-9800-ef25be8121b5(com.mbeddr.formal.nusmv.pluginSolution.msc)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="ztk3" ref="r:1d7819a9-9001-45b3-8897-91b2f81186cb(com.mbeddr.formal.base.tooling.ui)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="v4mk" ref="e9ce245b-3106-45ed-8e5b-aff820d09b85/java:org.jdesktop.swingx(com.mbeddr.formal.base.tooling/)" implicit="true" />
@@ -80,9 +81,6 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -1069,27 +1067,23 @@
                               </node>
                             </node>
                             <node concept="3clFbS" id="2k2dPZH6$th" role="1zc67A">
-                              <node concept="3clFbF" id="2k2dPZH6$ti" role="3cqZAp">
-                                <node concept="2YIFZM" id="2k2dPZH6$tj" role="3clFbG">
-                                  <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
-                                  <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                  <node concept="37vLTw" id="2k2dPZH6$tk" role="37wK5m">
+                              <node concept="3clFbF" id="2i2e8U2CRs0" role="3cqZAp">
+                                <node concept="2YIFZM" id="2i2e8U2D0Cx" role="3clFbG">
+                                  <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.awt.Component,java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                                  <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                  <node concept="37vLTw" id="2i2e8U2D3ws" role="37wK5m">
                                     <ref role="3cqZAo" to="vxn5:JsaLOcnA09" resolve="analysesResultsTable" />
                                   </node>
-                                  <node concept="2OqwBi" id="2k2dPZH6$tl" role="37wK5m">
-                                    <node concept="37vLTw" id="2k2dPZH6$tm" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="2i2e8U2Dghz" role="37wK5m">
+                                    <node concept="37vLTw" id="2i2e8U2DdnA" role="2Oq$k0">
                                       <ref role="3cqZAo" node="2k2dPZH6$tf" resolve="ex" />
                                     </node>
-                                    <node concept="liA8E" id="2k2dPZH6$tn" role="2OqNvi">
+                                    <node concept="liA8E" id="2i2e8U2DjJ1" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                                     </node>
                                   </node>
-                                  <node concept="Xl_RD" id="2k2dPZH6$to" role="37wK5m">
-                                    <property role="Xl_RC" value="Error" />
-                                  </node>
-                                  <node concept="10M0yZ" id="2k2dPZH6$tp" role="37wK5m">
-                                    <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
-                                    <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                  <node concept="Xl_RD" id="2i2e8U2DnOf" role="37wK5m">
+                                    <property role="Xl_RC" value="Error running last analysis" />
                                   </node>
                                 </node>
                               </node>
@@ -1153,13 +1147,15 @@
                             </node>
                           </node>
                           <node concept="3clFbS" id="6Kf5KB718M3" role="3clFbx">
-                            <node concept="3clFbF" id="2QUcAU243Fa" role="3cqZAp">
-                              <node concept="2YIFZM" id="2QUcAU244dM" role="3clFbG">
-                                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                <node concept="10Nm6u" id="2QUcAU244Cq" role="37wK5m" />
-                                <node concept="Xl_RD" id="2QUcAU24557" role="37wK5m">
-                                  <property role="Xl_RC" value="No trace available to simulate!\nPlease select a result with a trace attached." />
+                            <node concept="3clFbF" id="2i2e8U2DFY1" role="3cqZAp">
+                              <node concept="2YIFZM" id="2i2e8U2DHKQ" role="3clFbG">
+                                <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                <node concept="Xl_RD" id="2i2e8U2DLxc" role="37wK5m">
+                                  <property role="Xl_RC" value="Please select a result with a trace attached" />
+                                </node>
+                                <node concept="Xl_RD" id="2i2e8U2E47r" role="37wK5m">
+                                  <property role="Xl_RC" value="No trace available to simulate" />
                                 </node>
                               </node>
                             </node>
@@ -1293,13 +1289,15 @@
                             </node>
                           </node>
                           <node concept="3clFbS" id="1wencriOzsu" role="3clFbx">
-                            <node concept="3clFbF" id="1wencriOzsv" role="3cqZAp">
-                              <node concept="2YIFZM" id="1wencriOzsw" role="3clFbG">
-                                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                <node concept="10Nm6u" id="1wencriOzsx" role="37wK5m" />
-                                <node concept="Xl_RD" id="1wencriOzsy" role="37wK5m">
-                                  <property role="Xl_RC" value="No trace available to show MSC on!\nPlease select a result with a trace attached." />
+                            <node concept="3clFbF" id="2i2e8U2EkBh" role="3cqZAp">
+                              <node concept="2YIFZM" id="2i2e8U2EkBi" role="3clFbG">
+                                <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                                <node concept="Xl_RD" id="2i2e8U2EkBj" role="37wK5m">
+                                  <property role="Xl_RC" value="Please select a result with a trace attached" />
+                                </node>
+                                <node concept="Xl_RD" id="2i2e8U2EkBk" role="37wK5m">
+                                  <property role="Xl_RC" value="No trace available to simulate" />
                                 </node>
                               </node>
                             </node>

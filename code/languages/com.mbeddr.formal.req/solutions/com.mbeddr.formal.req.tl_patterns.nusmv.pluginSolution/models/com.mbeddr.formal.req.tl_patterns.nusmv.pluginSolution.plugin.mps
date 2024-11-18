@@ -33,6 +33,7 @@
     <import index="7gut" ref="r:a2a23a30-67b2-48a3-878f-fb5cb8f590da(com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution.analyzer)" />
     <import index="3g0o" ref="r:a6263c3c-f5c8-43aa-8a86-c420dd6b206e(com.mpsbasics.docx4j.core.registry)" />
     <import index="amee" ref="r:9a030108-0369-40ca-a181-b4e3b6ebc9c7(com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution.word_serializer)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -115,9 +116,6 @@
       </concept>
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
@@ -597,20 +595,15 @@
         <node concept="3clFbH" id="4qaoH_J6fr" role="3cqZAp" />
         <node concept="3clFbJ" id="6hWVnwAIRSQ" role="3cqZAp">
           <node concept="3clFbS" id="6hWVnwAIRSS" role="3clFbx">
-            <node concept="3clFbF" id="6hWVnwAIT8O" role="3cqZAp">
-              <node concept="2YIFZM" id="6hWVnwAIT$s" role="3clFbG">
-                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
-                <node concept="10Nm6u" id="6hWVnwAITEO" role="37wK5m" />
-                <node concept="Xl_RD" id="6hWVnwAITLx" role="37wK5m">
-                  <property role="Xl_RC" value="Requirements are consistent!" />
+            <node concept="3clFbF" id="2i2e8U2EqOr" role="3cqZAp">
+              <node concept="2YIFZM" id="2i2e8U2Er7B" role="3clFbG">
+                <ref role="37wK5l" to="jkm4:~Messages.showInfoMessage(java.lang.String,java.lang.String)" resolve="showInfoMessage" />
+                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                <node concept="Xl_RD" id="2i2e8U2EuOT" role="37wK5m">
+                  <property role="Xl_RC" value="Requirements are consistent" />
                 </node>
-                <node concept="Xl_RD" id="6hWVnwAIWGZ" role="37wK5m">
+                <node concept="Xl_RD" id="2i2e8U2Ewi0" role="37wK5m">
                   <property role="Xl_RC" value="Success" />
-                </node>
-                <node concept="10M0yZ" id="6hWVnwAIWvT" role="37wK5m">
-                  <ref role="3cqZAo" to="dxuu:~JOptionPane.INFORMATION_MESSAGE" resolve="INFORMATION_MESSAGE" />
-                  <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                 </node>
               </node>
             </node>
@@ -625,20 +618,15 @@
           </node>
           <node concept="9aQIb" id="6hWVnwAIUnH" role="9aQIa">
             <node concept="3clFbS" id="6hWVnwAIUnI" role="9aQI4">
-              <node concept="3clFbF" id="6hWVnwAIUs8" role="3cqZAp">
-                <node concept="2YIFZM" id="6hWVnwAIUs9" role="3clFbG">
-                  <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                  <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
-                  <node concept="10Nm6u" id="6hWVnwAIUsa" role="37wK5m" />
-                  <node concept="Xl_RD" id="6hWVnwAIUsb" role="37wK5m">
-                    <property role="Xl_RC" value="Requirements are NOT consistent!" />
+              <node concept="3clFbF" id="2i2e8U2Exb4" role="3cqZAp">
+                <node concept="2YIFZM" id="2i2e8U2ExtT" role="3clFbG">
+                  <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                  <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                  <node concept="Xl_RD" id="2i2e8U2ExPW" role="37wK5m">
+                    <property role="Xl_RC" value="Requirements are not consistent" />
                   </node>
-                  <node concept="Xl_RD" id="6hWVnwAIUNW" role="37wK5m">
+                  <node concept="Xl_RD" id="2i2e8U2E$v1" role="37wK5m">
                     <property role="Xl_RC" value="Error" />
-                  </node>
-                  <node concept="10M0yZ" id="6hWVnwAIVe2" role="37wK5m">
-                    <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
-                    <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
                   </node>
                 </node>
               </node>

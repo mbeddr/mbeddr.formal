@@ -20,29 +20,8 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
-    <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
-    <import index="f061" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application.ex(MPS.IDEA/)" />
-    <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
-    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
-    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
-    <import index="oqcp" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio(JDK/)" />
-    <import index="7a0s" ref="r:2af017c2-293f-4ebb-99f3-81e353b3d6e6(jetbrains.mps.editor.runtime)" />
-    <import index="22ra" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.update(MPS.Editor/)" />
-    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
-    <import index="jan3" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.image(JDK/)" />
-    <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
-    <import index="2y64" ref="r:b91d3184-5a2f-40d8-b310-14ec3048d9cc(com.mbeddr.formal.base.tooling.project)" />
-    <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
-    <import index="fnpx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.notification(MPS.IDEA/)" />
-    <import index="kt01" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.datatransfer(JDK/)" />
-    <import index="qkt" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.actionSystem(MPS.IDEA/)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
-    <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
-    <import index="nxzt" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.svggen(org.apache.batik/)" />
-    <import index="ujg5" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.dom(org.apache.batik/)" />
-    <import index="lhjl" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:org.w3c.dom(JDK/)" />
+    <import index="jkny" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.wm(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -250,19 +229,14 @@
           </node>
         </node>
         <node concept="3clFbF" id="3kLBXRrt367" role="3cqZAp">
-          <node concept="2YIFZM" id="3kLBXRrt368" role="3clFbG">
-            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
-            <node concept="10Nm6u" id="3kLBXRrt369" role="37wK5m" />
-            <node concept="37vLTw" id="3kLBXRrt36a" role="37wK5m">
+          <node concept="2YIFZM" id="2i2e8U2lR59" role="3clFbG">
+            <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+            <node concept="37vLTw" id="2i2e8U2lR5b" role="37wK5m">
               <ref role="3cqZAo" node="3kLBXRrt36d" resolve="message" />
             </node>
-            <node concept="37vLTw" id="3kLBXRrtf4F" role="37wK5m">
+            <node concept="37vLTw" id="2i2e8U2lR5c" role="37wK5m">
               <ref role="3cqZAo" node="3kLBXRrtd$t" resolve="title" />
-            </node>
-            <node concept="10M0yZ" id="3kLBXRrt36c" role="37wK5m">
-              <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
-              <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             </node>
           </node>
         </node>
@@ -292,137 +266,24 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="6BowXlDxQ7U" role="3cqZAp">
-          <node concept="3cpWsn" id="6BowXlDxQ7T" role="3cpWs9">
-            <property role="3TUv4t" value="false" />
-            <property role="TrG5h" value="textPane" />
-            <node concept="3uibUv" id="6BowXlDC7Pv" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~JTextPane" resolve="JTextPane" />
-            </node>
-            <node concept="2ShNRf" id="6BowXlDxQ8g" role="33vP2m">
-              <node concept="1pGfFk" id="6BowXlDxQag" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JTextPane.&lt;init&gt;()" resolve="JTextPane" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6BowXlDCaoC" role="3cqZAp">
-          <node concept="2OqwBi" id="6BowXlDCaAc" role="3clFbG">
-            <node concept="37vLTw" id="6BowXlDCaoA" role="2Oq$k0">
-              <ref role="3cqZAo" node="6BowXlDxQ7T" resolve="textPane" />
-            </node>
-            <node concept="liA8E" id="6BowXlDCbbv" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JEditorPane.setContentType(java.lang.String)" resolve="setContentType" />
-              <node concept="Xl_RD" id="6BowXlDCbi3" role="37wK5m">
-                <property role="Xl_RC" value="text/html" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6BowXlDC8yT" role="3cqZAp">
-          <node concept="2OqwBi" id="6BowXlDC8Lx" role="3clFbG">
-            <node concept="37vLTw" id="6BowXlDC8yR" role="2Oq$k0">
-              <ref role="3cqZAo" node="6BowXlDxQ7T" resolve="textPane" />
-            </node>
-            <node concept="liA8E" id="6BowXlDC9n4" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JEditorPane.setText(java.lang.String)" resolve="setText" />
-              <node concept="37vLTw" id="6BowXlDC9zS" role="37wK5m">
-                <ref role="3cqZAo" node="6BowXlDxMX3" resolve="message" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6BowXlD$J0p" role="3cqZAp">
-          <node concept="2OqwBi" id="6BowXlD$JdW" role="3clFbG">
-            <node concept="37vLTw" id="6BowXlD$J0n" role="2Oq$k0">
-              <ref role="3cqZAo" node="6BowXlDxQ7T" resolve="textPane" />
-            </node>
-            <node concept="liA8E" id="6BowXlD$JMW" role="2OqNvi">
-              <ref role="37wK5l" to="r791:~JTextComponent.setEditable(boolean)" resolve="setEditable" />
-              <node concept="3clFbT" id="6BowXlD$JTv" role="37wK5m">
-                <property role="3clFbU" value="false" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6BowXlDxQ84" role="3cqZAp">
-          <node concept="2OqwBi" id="6BowXlDxQd9" role="3clFbG">
-            <node concept="37vLTw" id="6BowXlDxQd8" role="2Oq$k0">
-              <ref role="3cqZAo" node="6BowXlDxQ7T" resolve="textPane" />
-            </node>
-            <node concept="liA8E" id="6BowXlDxQda" role="2OqNvi">
-              <ref role="37wK5l" to="r791:~JTextComponent.setMargin(java.awt.Insets)" resolve="setMargin" />
-              <node concept="2ShNRf" id="6BowXlDxQdb" role="37wK5m">
-                <node concept="1pGfFk" id="6BowXlDxQdc" role="2ShVmc">
-                  <ref role="37wK5l" to="z60i:~Insets.&lt;init&gt;(int,int,int,int)" resolve="Insets" />
-                  <node concept="3cmrfG" id="6BowXlDxQ87" role="37wK5m">
-                    <property role="3cmrfH" value="5" />
-                  </node>
-                  <node concept="3cmrfG" id="6BowXlDxQ88" role="37wK5m">
-                    <property role="3cmrfH" value="5" />
-                  </node>
-                  <node concept="3cmrfG" id="6BowXlDxQ89" role="37wK5m">
-                    <property role="3cmrfH" value="5" />
-                  </node>
-                  <node concept="3cmrfG" id="6BowXlDxQ8a" role="37wK5m">
-                    <property role="3cmrfH" value="5" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="6BowXlDxO9D" role="3cqZAp">
-          <node concept="3cpWsn" id="6BowXlDxO9E" role="3cpWs9">
-            <property role="TrG5h" value="scrollPane" />
-            <node concept="3uibUv" id="6BowXlDxO9F" role="1tU5fm">
-              <ref role="3uigEE" to="dxuu:~JScrollPane" resolve="JScrollPane" />
-            </node>
-            <node concept="2ShNRf" id="6BowXlDxOhs" role="33vP2m">
-              <node concept="1pGfFk" id="6BowXlDxQ2u" role="2ShVmc">
-                <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component)" resolve="JScrollPane" />
-                <node concept="37vLTw" id="6BowXlDzNzO" role="37wK5m">
-                  <ref role="3cqZAo" node="6BowXlDxQ7T" resolve="textPane" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6BowXlDySCz" role="3cqZAp">
-          <node concept="2OqwBi" id="6BowXlDySD$" role="3clFbG">
-            <node concept="37vLTw" id="6BowXlDySDz" role="2Oq$k0">
-              <ref role="3cqZAo" node="6BowXlDxO9E" resolve="scrollPane" />
-            </node>
-            <node concept="liA8E" id="6BowXlDySD_" role="2OqNvi">
-              <ref role="37wK5l" to="dxuu:~JComponent.setPreferredSize(java.awt.Dimension)" resolve="setPreferredSize" />
-              <node concept="2ShNRf" id="6BowXlDySDA" role="37wK5m">
-                <node concept="1pGfFk" id="6BowXlDySDB" role="2ShVmc">
-                  <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
-                  <node concept="37vLTw" id="6BowXlDL2Vc" role="37wK5m">
-                    <ref role="3cqZAo" node="6BowXlDKZSX" resolve="width" />
-                  </node>
-                  <node concept="37vLTw" id="6BowXlDL39h" role="37wK5m">
-                    <ref role="3cqZAo" node="6BowXlDL02v" resolve="height" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6BowXlDxMWV" role="3cqZAp">
-          <node concept="2YIFZM" id="6BowXlDxMWW" role="3clFbG">
-            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
-            <node concept="10Nm6u" id="6BowXlDxMWX" role="37wK5m" />
-            <node concept="37vLTw" id="6BowXlD$I$b" role="37wK5m">
-              <ref role="3cqZAo" node="6BowXlDxO9E" resolve="scrollPane" />
+          <node concept="2YIFZM" id="2i2e8U2ma3d" role="3clFbG">
+            <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.awt.Component,java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+            <node concept="2OqwBi" id="2i2e8U2n3l7" role="37wK5m">
+              <node concept="2YIFZM" id="2i2e8U2n2RZ" role="2Oq$k0">
+                <ref role="37wK5l" to="jkny:~WindowManager.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="jkny:~WindowManager" resolve="WindowManager" />
+              </node>
+              <node concept="liA8E" id="2i2e8U2n6Pt" role="2OqNvi">
+                <ref role="37wK5l" to="jkny:~WindowManager.findVisibleFrame()" resolve="findVisibleFrame" />
+              </node>
             </node>
-            <node concept="37vLTw" id="6BowXlDxMWZ" role="37wK5m">
+            <node concept="37vLTw" id="2i2e8U2mmn4" role="37wK5m">
+              <ref role="3cqZAo" node="6BowXlDxMX3" resolve="message" />
+            </node>
+            <node concept="37vLTw" id="2i2e8U2ma3g" role="37wK5m">
               <ref role="3cqZAo" node="6BowXlDxMX1" resolve="title" />
-            </node>
-            <node concept="10M0yZ" id="6BowXlDxMX0" role="37wK5m">
-              <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-              <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
             </node>
           </node>
         </node>
@@ -467,20 +328,24 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7Quig7_QtUO" role="3cqZAp">
-          <node concept="2YIFZM" id="7Quig7_QtUP" role="3clFbG">
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
-            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-            <node concept="10Nm6u" id="7Quig7_QtUQ" role="37wK5m" />
-            <node concept="37vLTw" id="7Quig7_QEpc" role="37wK5m">
+        <node concept="3clFbF" id="2i2e8U2ncf5" role="3cqZAp">
+          <node concept="2YIFZM" id="2i2e8U2nfTt" role="3clFbG">
+            <ref role="37wK5l" to="jkm4:~Messages.showInfoMessage(java.awt.Component,java.lang.String,java.lang.String)" resolve="showInfoMessage" />
+            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+            <node concept="2OqwBi" id="2i2e8U2njzG" role="37wK5m">
+              <node concept="2YIFZM" id="2i2e8U2njzH" role="2Oq$k0">
+                <ref role="37wK5l" to="jkny:~WindowManager.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="jkny:~WindowManager" resolve="WindowManager" />
+              </node>
+              <node concept="liA8E" id="2i2e8U2njzI" role="2OqNvi">
+                <ref role="37wK5l" to="jkny:~WindowManager.findVisibleFrame()" resolve="findVisibleFrame" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2i2e8U2noa$" role="37wK5m">
               <ref role="3cqZAo" node="7Quig7_QDn$" resolve="msg" />
             </node>
-            <node concept="37vLTw" id="7Quig7_QtUS" role="37wK5m">
+            <node concept="37vLTw" id="2i2e8U2nsLn" role="37wK5m">
               <ref role="3cqZAo" node="7Quig7_QtUU" resolve="title" />
-            </node>
-            <node concept="10M0yZ" id="7Quig7_QtUT" role="37wK5m">
-              <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-              <ref role="3cqZAo" to="dxuu:~JOptionPane.INFORMATION_MESSAGE" resolve="INFORMATION_MESSAGE" />
             </node>
           </node>
         </node>
@@ -518,20 +383,24 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="615cGN$MG9s" role="3cqZAp">
-          <node concept="2YIFZM" id="615cGN$MG9t" role="3clFbG">
-            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
-            <node concept="10Nm6u" id="615cGN$MG9u" role="37wK5m" />
-            <node concept="37vLTw" id="615cGN$MG9v" role="37wK5m">
+        <node concept="3clFbF" id="2i2e8U2n$Vi" role="3cqZAp">
+          <node concept="2YIFZM" id="2i2e8U2n$Vj" role="3clFbG">
+            <ref role="37wK5l" to="jkm4:~Messages.showInfoMessage(java.awt.Component,java.lang.String,java.lang.String)" resolve="showInfoMessage" />
+            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+            <node concept="2OqwBi" id="2i2e8U2n$Vk" role="37wK5m">
+              <node concept="2YIFZM" id="2i2e8U2n$Vl" role="2Oq$k0">
+                <ref role="37wK5l" to="jkny:~WindowManager.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="jkny:~WindowManager" resolve="WindowManager" />
+              </node>
+              <node concept="liA8E" id="2i2e8U2n$Vm" role="2OqNvi">
+                <ref role="37wK5l" to="jkny:~WindowManager.findVisibleFrame()" resolve="findVisibleFrame" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2i2e8U2n$Vn" role="37wK5m">
               <ref role="3cqZAo" node="615cGN$MG9n" resolve="msg" />
             </node>
-            <node concept="37vLTw" id="615cGN$MG9w" role="37wK5m">
+            <node concept="37vLTw" id="2i2e8U2n$Vo" role="37wK5m">
               <ref role="3cqZAo" node="615cGN$MG9y" resolve="title" />
-            </node>
-            <node concept="10M0yZ" id="615cGN$MG9x" role="37wK5m">
-              <ref role="3cqZAo" to="dxuu:~JOptionPane.INFORMATION_MESSAGE" resolve="INFORMATION_MESSAGE" />
-              <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
             </node>
           </node>
         </node>
@@ -569,20 +438,24 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7Quig7_QJQN" role="3cqZAp">
-          <node concept="2YIFZM" id="7Quig7_QJQO" role="3clFbG">
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
-            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-            <node concept="10Nm6u" id="7Quig7_QJQP" role="37wK5m" />
-            <node concept="37vLTw" id="7Quig7_QJQQ" role="37wK5m">
+        <node concept="3clFbF" id="2i2e8U2nHeS" role="3cqZAp">
+          <node concept="2YIFZM" id="2i2e8U2nHeT" role="3clFbG">
+            <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.awt.Component,java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+            <node concept="2OqwBi" id="2i2e8U2nHeU" role="37wK5m">
+              <node concept="2YIFZM" id="2i2e8U2nHeV" role="2Oq$k0">
+                <ref role="37wK5l" to="jkny:~WindowManager.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="jkny:~WindowManager" resolve="WindowManager" />
+              </node>
+              <node concept="liA8E" id="2i2e8U2nHeW" role="2OqNvi">
+                <ref role="37wK5l" to="jkny:~WindowManager.findVisibleFrame()" resolve="findVisibleFrame" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2i2e8U2nHeX" role="37wK5m">
               <ref role="3cqZAo" node="7Quig7_QJQI" resolve="msg" />
             </node>
-            <node concept="37vLTw" id="7Quig7_QJQR" role="37wK5m">
+            <node concept="37vLTw" id="2i2e8U2nHeY" role="37wK5m">
               <ref role="3cqZAo" node="7Quig7_QJQT" resolve="title" />
-            </node>
-            <node concept="10M0yZ" id="7Quig7_QJQS" role="37wK5m">
-              <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-              <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
             </node>
           </node>
         </node>
@@ -620,20 +493,24 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="615cGN$MQRq" role="3cqZAp">
-          <node concept="2YIFZM" id="615cGN$MQRr" role="3clFbG">
-            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
-            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-            <node concept="10Nm6u" id="615cGN$MQRs" role="37wK5m" />
-            <node concept="37vLTw" id="615cGN$MQRt" role="37wK5m">
+        <node concept="3clFbF" id="2i2e8U2oHZ6" role="3cqZAp">
+          <node concept="2YIFZM" id="2i2e8U2oHZ7" role="3clFbG">
+            <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.awt.Component,java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+            <node concept="2OqwBi" id="2i2e8U2oHZ8" role="37wK5m">
+              <node concept="2YIFZM" id="2i2e8U2oHZ9" role="2Oq$k0">
+                <ref role="37wK5l" to="jkny:~WindowManager.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="jkny:~WindowManager" resolve="WindowManager" />
+              </node>
+              <node concept="liA8E" id="2i2e8U2oHZa" role="2OqNvi">
+                <ref role="37wK5l" to="jkny:~WindowManager.findVisibleFrame()" resolve="findVisibleFrame" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="2i2e8U2oHZb" role="37wK5m">
               <ref role="3cqZAo" node="615cGN$MQRl" resolve="msg" />
             </node>
-            <node concept="37vLTw" id="615cGN$MQRu" role="37wK5m">
+            <node concept="37vLTw" id="2i2e8U2oHZc" role="37wK5m">
               <ref role="3cqZAo" node="615cGN$MQRw" resolve="title" />
-            </node>
-            <node concept="10M0yZ" id="615cGN$MQRv" role="37wK5m">
-              <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-              <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
             </node>
           </node>
         </node>

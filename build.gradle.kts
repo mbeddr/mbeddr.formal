@@ -15,7 +15,7 @@ plugins {
     id("de.itemis.mps.gradle.common") version mpsGradlePluginVersion
 }
 
-val jbrVers = "17.0.8.1-b1000.32"
+val jbrVers = "17.0.11-b1207.30"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -35,9 +35,9 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2023"
-val minor = "2"
-val bugfix = ""
+val major = "2024"
+val minor = "1"
+val bugfix = "1"
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
@@ -98,19 +98,11 @@ configurations {
 dependencyLocking { lockAllConfigurations() }
 
 repositories {
-    val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps",
-            "https://maven.pkg.github.com/mbeddr/*")
+    val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps")
 
     for (repoUrl in dependencyRepositories) {
         maven {
             url = uri(repoUrl)
-
-            if (repoUrl.startsWith("https://maven.pkg.github.com/")) {
-                credentials {
-                    username = project.property("gpr.user") as String
-                    password = project.property("gpr.token") as String
-                }
-            }
         }
     }
     mavenCentral()
