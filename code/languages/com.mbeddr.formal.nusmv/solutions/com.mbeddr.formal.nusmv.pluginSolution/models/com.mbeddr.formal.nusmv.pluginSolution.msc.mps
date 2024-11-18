@@ -480,7 +480,7 @@
                                 </node>
                               </node>
                               <node concept="2pIpSj" id="1wencriP6sY" role="2pJxcM">
-                                <ref role="2pIpSl" to="6jj4:4CA5ZMJ3tsn" />
+                                <ref role="2pIpSl" to="6jj4:4CA5ZMJ3tsn" resolve="objects" />
                                 <node concept="36biLy" id="1wencriP6tA" role="28nt2d">
                                   <node concept="2OqwBi" id="1wencriP6Nw" role="36biLW">
                                     <node concept="37vLTw" id="1wencriP6un" role="2Oq$k0">
@@ -622,7 +622,7 @@
                                           <ref role="3cqZAo" node="1wencriP8Hy" resolve="state" />
                                         </node>
                                         <node concept="3Tsc0h" id="1wencriPd9b" role="2OqNvi">
-                                          <ref role="3TtcxE" to="6jj4:HiEhrZeLrA" />
+                                          <ref role="3TtcxE" to="6jj4:HiEhrZeLrA" resolve="instances" />
                                         </node>
                                       </node>
                                       <node concept="TSZUe" id="1wencriPfwn" role="2OqNvi">
@@ -630,7 +630,7 @@
                                           <node concept="2pJPED" id="1wencriPg1A" role="2pJPEn">
                                             <ref role="2pJxaS" to="6jj4:HiEhrZeLox" resolve="StateInstance" />
                                             <node concept="2pIpSj" id="1wencriPgdV" role="2pJxcM">
-                                              <ref role="2pIpSl" to="6jj4:HiEhrZgdjG" />
+                                              <ref role="2pIpSl" to="6jj4:HiEhrZgdjG" resolve="exp" />
                                               <node concept="2pJPED" id="1wencriPhbK" role="28nt2d">
                                                 <ref role="2pJxaS" to="ehqg:6mm$FLYVIYX" resolve="ArbitraryTextExpression" />
                                                 <node concept="2pJxcG" id="1wencriPhfc" role="2pJxcM">
@@ -644,11 +644,11 @@
                                               </node>
                                             </node>
                                             <node concept="2pIpSj" id="1wencriPh$c" role="2pJxcM">
-                                              <ref role="2pIpSl" to="6jj4:HiEhrZeNaj" />
+                                              <ref role="2pIpSl" to="6jj4:HiEhrZeNaj" resolve="source" />
                                               <node concept="2pJPED" id="1wencriPirE" role="28nt2d">
                                                 <ref role="2pJxaS" to="6jj4:5PdLXX5HGha" resolve="MSCObjectRef" />
                                                 <node concept="2pIpSj" id="1wencriPivS" role="2pJxcM">
-                                                  <ref role="2pIpSl" to="6jj4:5PdLXX5HGhd" />
+                                                  <ref role="2pIpSl" to="6jj4:5PdLXX5HGhd" resolve="mscObject" />
                                                   <node concept="36biLy" id="1wencriPhLP" role="28nt2d">
                                                     <node concept="3EllGN" id="1wencriPici" role="36biLW">
                                                       <node concept="2GrUjf" id="1wencriPig1" role="3ElVtu">
@@ -663,11 +663,11 @@
                                               </node>
                                             </node>
                                             <node concept="2pIpSj" id="1wencriPiAb" role="2pJxcM">
-                                              <ref role="2pIpSl" to="6jj4:HiEhrZeNak" />
+                                              <ref role="2pIpSl" to="6jj4:HiEhrZeNak" resolve="target" />
                                               <node concept="2pJPED" id="1wencriPiAc" role="28nt2d">
                                                 <ref role="2pJxaS" to="6jj4:5PdLXX5HGha" resolve="MSCObjectRef" />
                                                 <node concept="2pIpSj" id="1wencriPiAd" role="2pJxcM">
-                                                  <ref role="2pIpSl" to="6jj4:5PdLXX5HGhd" />
+                                                  <ref role="2pIpSl" to="6jj4:5PdLXX5HGhd" resolve="mscObject" />
                                                   <node concept="36biLy" id="1wencriPiAe" role="28nt2d">
                                                     <node concept="3EllGN" id="1wencriPiAf" role="36biLW">
                                                       <node concept="2GrUjf" id="1wencriPiAg" role="3ElVtu">
@@ -703,7 +703,7 @@
                                   <ref role="3cqZAo" node="1wencriOWrR" resolve="msc" />
                                 </node>
                                 <node concept="3Tsc0h" id="1wencriP9i$" role="2OqNvi">
-                                  <ref role="3TtcxE" to="6jj4:4CA5ZMJ3tsp" />
+                                  <ref role="3TtcxE" to="6jj4:4CA5ZMJ3tsp" resolve="messages" />
                                 </node>
                               </node>
                               <node concept="TSZUe" id="1wencriPbAW" role="2OqNvi">
@@ -856,7 +856,7 @@
                       <node concept="2ShNRf" id="2i2e8U2yMnn" role="33vP2m">
                         <node concept="1pGfFk" id="2i2e8U2yO9E" role="2ShVmc">
                           <property role="373rjd" value="true" />
-                          <ref role="37wK5l" node="2i2e8U2wXih" />
+                          <ref role="37wK5l" node="2i2e8U2wXih" resolve="CheckboxDialog" />
                           <node concept="37vLTw" id="2i2e8U2yYTS" role="37wK5m">
                             <ref role="3cqZAo" node="1wencriRhLy" resolve="allAssignedVariables" />
                           </node>
@@ -1390,7 +1390,7 @@
         </node>
       </node>
       <node concept="2AHcQZ" id="2i2e8U2_rIc" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" />
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>

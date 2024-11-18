@@ -9486,7 +9486,7 @@
                             </node>
                             <node concept="3cpWs3" id="1uIpCUuGIEF" role="3uHU7B">
                               <node concept="37vLTw" id="1uIpCUuGIlc" role="3uHU7B">
-                                <ref role="3cqZAo" node="1uIpCUuGI1p" resolve="msg" />
+                                <ref role="3cqZAo" node="1uIpCUuGI1p" resolve="title" />
                               </node>
                               <node concept="Xl_RD" id="1uIpCUuGIIZ" role="3uHU7w">
                                 <property role="Xl_RC" value=" Analysis starting point is: " />
@@ -9510,7 +9510,7 @@
                               </node>
                             </node>
                             <node concept="37vLTw" id="2i2e8U2Cl9S" role="37wK5m">
-                              <ref role="3cqZAo" node="1uIpCUuGI1p" resolve="msg" />
+                              <ref role="3cqZAo" node="1uIpCUuGI1p" resolve="title" />
                             </node>
                           </node>
                         </node>
