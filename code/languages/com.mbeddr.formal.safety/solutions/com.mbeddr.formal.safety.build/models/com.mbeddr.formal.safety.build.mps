@@ -230,6 +230,7 @@
         <property id="4237758264760168561" name="bugfixNr" index="1lNJF1" />
         <child id="6845119683729337285" name="progressY" index="27hAJg" />
         <child id="6845119683729294884" name="progressColor" index="27hGoL" />
+        <child id="6845119683729280452" name="icon" index="27igRh" />
         <child id="7962467864633062782" name="progressHeight" index="2gqIGF" />
         <child id="922958177840117051" name="script" index="2gvbiD" />
         <child id="6108265972537182997" name="aboutScreen" index="2EqU2s" />
@@ -243,6 +244,8 @@
         <child id="781140262677914381" name="company" index="IuKBz" />
         <child id="3497141547781549827" name="codename" index="2OjNyQ" />
         <child id="1462305029084462472" name="buildDate" index="R$TG_" />
+        <child id="62678610895108195" name="svg_small" index="1hH5mY" />
+        <child id="62678610895108142" name="svg" index="1hH5nN" />
         <child id="772379520210716142" name="welcomeLogo" index="3vi$VU" />
         <child id="437343344536486297" name="help" index="1xUO3H" />
         <child id="5894421362117323157" name="support" index="3$HL_E" />
@@ -345,7 +348,7 @@
         <node concept="2Ry0Ak" id="51uLzzZ6tyC" role="iGT6I">
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="3Sfdbyg_LZt" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS_2022_2_2" />
+            <property role="2Ry0Am" value="MPS_2023_2_2" />
           </node>
         </node>
       </node>
@@ -16302,7 +16305,7 @@
     <node concept="2kB4xC" id="wUJmWCxY0a" role="1l3spd">
       <property role="TrG5h" value="build.date" />
       <node concept="hHN3E" id="wUJmWCxY0b" role="aVJcv">
-        <property role="hHN3Y" value="20240104" />
+        <property role="hHN3Y" value="20241107" />
       </node>
     </node>
     <node concept="2kB4xC" id="wUJmWCxY0c" role="1l3spd">
@@ -16310,7 +16313,7 @@
       <node concept="aVJcg" id="wUJmWCxY0d" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0e" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0f" role="3MwsjC">
-            <property role="3MwjfP" value="FASTEN-222.SNAPSHOT" />
+            <property role="3MwjfP" value="FASTEN-232.SNAPSHOT" />
           </node>
         </node>
       </node>
@@ -16333,7 +16336,7 @@
         <node concept="2Ry0Ak" id="7YjSMFl$i24" role="iGT6I">
           <property role="2Ry0Am" value=".." />
           <node concept="2Ry0Ak" id="3SfdbygrgG8" role="2Ry0An">
-            <property role="2Ry0Am" value="MPS_2022_2_2" />
+            <property role="2Ry0Am" value="MPS_2023_2_2" />
           </node>
         </node>
       </node>
@@ -16433,7 +16436,7 @@
       <node concept="aVJcg" id="wUJmWCxY0I" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0J" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0K" role="3MwsjC">
-            <property role="3MwjfP" value="2024-01-04" />
+            <property role="3MwjfP" value="2024-11-07" />
           </node>
         </node>
       </node>
@@ -16782,6 +16785,33 @@
         </node>
         <node concept="NbPM2" id="1TD_kqsGBKy" role="3ZAF11" />
         <node concept="NbPM2" id="1TD_kqsGBKz" role="3ZAF12" />
+      </node>
+      <node concept="398BVA" id="7khq58x81AK" role="27igRh">
+        <ref role="398BVh" node="wUJmWCxY0q" resolve="rcp.resources" />
+        <node concept="2Ry0Ak" id="7khq58x81AL" role="iGT6I">
+          <property role="2Ry0Am" value="icons" />
+          <node concept="2Ry0Ak" id="7khq58x81AM" role="2Ry0An">
+            <property role="2Ry0Am" value="fasten32.png" />
+          </node>
+        </node>
+      </node>
+      <node concept="398BVA" id="7khq58x81AN" role="1hH5nN">
+        <ref role="398BVh" node="wUJmWCxY0q" resolve="rcp.resources" />
+        <node concept="2Ry0Ak" id="7khq58x81AO" role="iGT6I">
+          <property role="2Ry0Am" value="icons" />
+          <node concept="2Ry0Ak" id="7khq58x81AP" role="2Ry0An">
+            <property role="2Ry0Am" value="fasten32.svg" />
+          </node>
+        </node>
+      </node>
+      <node concept="398BVA" id="7khq58x81AQ" role="1hH5mY">
+        <ref role="398BVh" node="wUJmWCxY0q" resolve="rcp.resources" />
+        <node concept="2Ry0Ak" id="7khq58x81AR" role="iGT6I">
+          <property role="2Ry0Am" value="icons" />
+          <node concept="2Ry0Ak" id="7khq58x81AT" role="2Ry0An">
+            <property role="2Ry0Am" value="fasten16.svg" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2sgV4H" id="wUJmWCzf46" role="1l3spa">
@@ -17171,6 +17201,9 @@
             <node concept="3_I8Xc" id="5cnt3YQNQAI" role="39821P">
               <ref role="3_I8Xa" to="al5i:6rBfBe1XyuT" resolve="com.mbeddr.mpsutil.contextactions" />
             </node>
+            <node concept="3_I8Xc" id="7khq58xlv14" role="39821P">
+              <ref role="3_I8Xa" to="al5i:4SMNYR2Zl4L" resolve="com.mbeddr.mpsutil.actionsfilter" />
+            </node>
             <node concept="28u9K_" id="5cnt3YQEHvb" role="39821P">
               <property role="28hIV_" value="doc requires platform, plarform requires jung, plantuml" />
             </node>
@@ -17215,6 +17248,12 @@
             </node>
             <node concept="3_I8Xc" id="3ZV5FZJFBbM" role="39821P">
               <ref role="3_I8Xa" to="ffeo:6b4RkXS7XdG" resolve="mps-build" />
+            </node>
+            <node concept="3_I8Xc" id="7khq58xcrlD" role="39821P">
+              <ref role="3_I8Xa" to="90a9:2IcGFIaJVAA" resolve="MPS.Kotlin" />
+            </node>
+            <node concept="3_I8Xc" id="7khq58xgP5p" role="39821P">
+              <ref role="3_I8Xa" to="90a9:6bkzxtWPMLl" resolve="de.itemis.stubs.batik" />
             </node>
             <node concept="3_I8Xc" id="5ehf6dVy_Rd" role="39821P">
               <ref role="3_I8Xa" to="ffeo:4wxeloVufXE" resolve="mps-git4idea" />
