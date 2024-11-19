@@ -8,9 +8,6 @@
       <sourceRoot location="plantuml-epl-1.2024.7.jar" />
     </modelRoot>
     <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="batik-all-1.18.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
       <sourceRoot location="xml-apis-ext.jar" />
     </modelRoot>
     <modelRoot type="java_classes" contentPath="${module}/lib">
@@ -22,7 +19,6 @@
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/xmlgraphics-commons-2.7.jar" />
       <library location="${module}/lib/xml-apis-ext.jar" />
-      <library location="${module}/lib/batik-all-1.18.jar" />
       <library location="${module}/lib/plantuml-epl-1.2024.7.jar" />
     </facet>
   </facets>
@@ -37,7 +33,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
-    <module reference="71bb25aa-20fa-4c18-8954-1b176576f52d(com.mpsbasics.docx4j.lib)" version="0" />
     <module reference="377bf088-4ffc-48ac-910f-fb1c66ffa60e(com.symo.plantuml.lib)" version="0" />
   </dependencyVersions>
 </solution>

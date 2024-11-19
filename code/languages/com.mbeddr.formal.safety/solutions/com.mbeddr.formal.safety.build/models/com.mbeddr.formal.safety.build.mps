@@ -3241,6 +3241,16 @@
             <ref role="3bR37D" node="3fV34643kGS" resolve="com.symo.plantuml.lib" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5xCkqdyRMXz" role="3bR37C">
+          <node concept="3bR9La" id="5xCkqdyRMX$" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6bkzxtWPDx1" resolve="de.itemis.stubs.batik" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5xCkqdyRMX_" role="3bR37C">
+          <node concept="3bR9La" id="5xCkqdyRMXA" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:35JynOkF_BM" resolve="org.apache.batik" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3fV34643kGS" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3294,25 +3304,6 @@
                     <property role="2Ry0Am" value="lib" />
                     <node concept="2Ry0Ak" id="3fV34643mDu" role="2Ry0An">
                       <property role="2Ry0Am" value="xml-apis-ext.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="3fV34643mDQ" role="3bR37C">
-          <node concept="1BurEX" id="3fV34643mDR" role="1SiIV1">
-            <node concept="398BVA" id="3fV34643mDD" role="1BurEY">
-              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
-              <node concept="2Ry0Ak" id="3fV34643mDE" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3fV34643mDF" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
-                  <node concept="2Ry0Ak" id="3fV34643mDG" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3fV34643mDH" role="2Ry0An">
-                      <property role="2Ry0Am" value="batik-all-1.18.jar" />
                     </node>
                   </node>
                 </node>
