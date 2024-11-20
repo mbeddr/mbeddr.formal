@@ -29,5 +29,5 @@ org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.21=executeBackend,generateBackend,mo
 org.jetbrains.kotlin:kotlin-stdlib:1.6.21=executeBackend,generateBackend,modelcheckBackend,remigrateBackend
 org.jetbrains.kotlin:kotlin-test:1.6.21=modelcheckBackend
 org.jetbrains:annotations:13.0=executeBackend,generateBackend,modelcheckBackend,remigrateBackend
-org.mpsqa:all-in-one:2023.2.805.20cf17f=languageLibs
+org.mpsqa:all-in-one:2023.2.847.4de185f=languageLibs
 empty=

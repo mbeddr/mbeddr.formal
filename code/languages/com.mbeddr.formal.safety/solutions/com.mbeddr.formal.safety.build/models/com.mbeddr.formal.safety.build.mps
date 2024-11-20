@@ -646,6 +646,27 @@
       <node concept="m$_wl" id="1k6eCQnF1G0" role="39821P">
         <ref role="m_rDy" node="1k6eCQnEZzO" resolve="fasten.symo" />
         <node concept="pUk6x" id="1k6eCQnF24M" role="pUk7w" />
+        <node concept="398223" id="3fV34643o89" role="39821P">
+          <node concept="3_J27D" id="3fV34643o8a" role="Nbhlr">
+            <node concept="3Mxwew" id="3fV34643olm" role="3MwsjC">
+              <property role="3MwjfP" value="lib" />
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="3fV34643oln" role="39821P">
+            <node concept="398BVA" id="3fV34643oy$" role="2HvfZ0">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="3fV34643oJN" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3fV34643oJQ" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                  <node concept="2Ry0Ak" id="3fV34643oJT" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="m$_wl" id="7he_lUumQum" role="39821P">
         <ref role="m_rDy" node="7he_lUumO49" resolve="com.mbeddr.formal.req" />
@@ -3122,6 +3143,228 @@
             </node>
             <node concept="3qWCbU" id="1k6eCQnEYYA" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="3fV34643ilv" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.symo.plantuml" />
+        <property role="3LESm3" value="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" />
+        <node concept="398BVA" id="3fV34643ixU" role="3LF7KH">
+          <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+          <node concept="2Ry0Ak" id="3fV34643iUG" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3fV34643jjt" role="2Ry0An">
+              <property role="2Ry0Am" value="com.symo.plantuml" />
+              <node concept="2Ry0Ak" id="3fV34643jGe" role="2Ry0An">
+                <property role="2Ry0Am" value="com.symo.plantuml.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3fV34643k51" role="3bR37C">
+          <node concept="3bR9La" id="3fV34643k52" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3fV34643k53" role="3bR37C">
+          <node concept="3bR9La" id="3fV34643k54" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3fV34643k55" role="3bR37C">
+          <node concept="3bR9La" id="3fV34643k56" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3fV34643k57" role="3bR37C">
+          <node concept="3bR9La" id="3fV34643k58" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3fV34643k59" role="3bR37C">
+          <node concept="3bR9La" id="3fV34643k5a" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6SVXTgIejl1" resolve="de.itemis.mps.editor.celllayout.runtime" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="3fV34643k5m" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3fV34643k5n" role="1HemKq">
+            <node concept="398BVA" id="3fV34643k5b" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="3fV34643k5c" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3fV34643k5d" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml" />
+                  <node concept="2Ry0Ak" id="3fV34643k5e" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3fV34643k5o" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="3fV34643k5p" role="1TViLv">
+          <property role="TrG5h" value="com.symo.plantuml.generator" />
+          <property role="3LESm3" value="a57cbb55-8fec-4326-ad52-8822ceb60e64" />
+          <node concept="1BupzO" id="3fV34643k5B" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="3fV34643k5C" role="1HemKq">
+              <node concept="398BVA" id="3fV34643k5q" role="3LXTmr">
+                <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+                <node concept="2Ry0Ak" id="3fV34643k5r" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="3fV34643k5s" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.symo.plantuml" />
+                    <node concept="2Ry0Ak" id="3fV34643k5t" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="3fV34643k5u" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="3fV34643k5D" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3fV34643nuK" role="3bR37C">
+          <node concept="3bR9La" id="3fV34643nuL" role="1SiIV1">
+            <ref role="3bR37D" node="3fV34643kGS" resolve="com.symo.plantuml.lib" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5xCkqdyRMXz" role="3bR37C">
+          <node concept="3bR9La" id="5xCkqdyRMX$" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:6bkzxtWPDx1" resolve="de.itemis.stubs.batik" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5xCkqdyRMX_" role="3bR37C">
+          <node concept="3bR9La" id="5xCkqdyRMXA" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:35JynOkF_BM" resolve="org.apache.batik" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="v5LJv9WTpA" role="3bR31x">
+          <node concept="3LXTmp" id="v5LJv9WTpB" role="3rtmxm">
+            <node concept="3qWCbU" id="v5LJv9WTpC" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="v5LJv9WTpD" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="v5LJv9WTpE" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="v5LJv9WTpF" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="3fV34643kGS" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.symo.plantuml.lib" />
+        <property role="3LESm3" value="377bf088-4ffc-48ac-910f-fb1c66ffa60e" />
+        <node concept="398BVA" id="3fV34643kTj" role="3LF7KH">
+          <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+          <node concept="2Ry0Ak" id="3fV34643lus" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="3fV34643lRd" role="2Ry0An">
+              <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+              <node concept="2Ry0Ak" id="3fV34643mfY" role="2Ry0An">
+                <property role="2Ry0Am" value="com.symo.plantuml.lib.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3fV34643mD9" role="3bR37C">
+          <node concept="3bR9La" id="3fV34643mDa" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3fV34643mDB" role="3bR37C">
+          <node concept="1BurEX" id="3fV34643mDC" role="1SiIV1">
+            <node concept="398BVA" id="3fV34643mDq" role="1BurEY">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="3fV34643mDr" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3fV34643mDs" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                  <node concept="2Ry0Ak" id="3fV34643mDt" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3fV34643mDu" role="2Ry0An">
+                      <property role="2Ry0Am" value="xml-apis-ext.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3fV34643mE5" role="3bR37C">
+          <node concept="1BurEX" id="3fV34643mE6" role="1SiIV1">
+            <node concept="398BVA" id="3fV34643mDS" role="1BurEY">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="3fV34643mDT" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3fV34643mDU" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                  <node concept="2Ry0Ak" id="3fV34643mDV" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3fV34643mDW" role="2Ry0An">
+                      <property role="2Ry0Am" value="plantuml-epl-1.2024.7.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="3fV34643mEi" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3fV34643mEj" role="1HemKq">
+            <node concept="398BVA" id="3fV34643mE7" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="3fV34643mE8" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3fV34643mE9" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                  <node concept="2Ry0Ak" id="3fV34643mEa" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3fV34643mEk" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="v5LJv9WTpv" role="3bR31x">
+          <node concept="3LXTmp" id="v5LJv9WTpw" role="3rtmxm">
+            <node concept="3qWCbU" id="v5LJv9WTpx" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="v5LJv9WTpy" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="v5LJv9WTpz" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="v5LJv9WTp$" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -16547,15 +16790,6 @@
         <node concept="NbPM2" id="1TD_kqsGBKy" role="3ZAF11" />
         <node concept="NbPM2" id="1TD_kqsGBKz" role="3ZAF12" />
       </node>
-      <node concept="398BVA" id="7khq58x81AK" role="27igRh">
-        <ref role="398BVh" node="wUJmWCxY0q" resolve="rcp.resources" />
-        <node concept="2Ry0Ak" id="7khq58x81AL" role="iGT6I">
-          <property role="2Ry0Am" value="icons" />
-          <node concept="2Ry0Ak" id="7khq58x81AM" role="2Ry0An">
-            <property role="2Ry0Am" value="fasten32.png" />
-          </node>
-        </node>
-      </node>
       <node concept="398BVA" id="7khq58x81AN" role="1hH5nN">
         <ref role="398BVh" node="wUJmWCxY0q" resolve="rcp.resources" />
         <node concept="2Ry0Ak" id="7khq58x81AO" role="iGT6I">
@@ -16571,6 +16805,15 @@
           <property role="2Ry0Am" value="icons" />
           <node concept="2Ry0Ak" id="7khq58x81AT" role="2Ry0An">
             <property role="2Ry0Am" value="fasten16.svg" />
+          </node>
+        </node>
+      </node>
+      <node concept="398BVA" id="7khq58x81AK" role="27igRh">
+        <ref role="398BVh" node="wUJmWCxY0q" resolve="rcp.resources" />
+        <node concept="2Ry0Ak" id="7khq58x81AL" role="iGT6I">
+          <property role="2Ry0Am" value="icons" />
+          <node concept="2Ry0Ak" id="7khq58x81AM" role="2Ry0An">
+            <property role="2Ry0Am" value="fasten32.png" />
           </node>
         </node>
       </node>
