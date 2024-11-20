@@ -517,6 +517,34 @@ publishing {
                 }
             }
         }
+	create<MavenPublication>("FASTEN_WIN_RCP") {
+            groupId = "fasten"
+            artifactId = "win.rcp"
+            artifact(tasks.named("package_fasten_safety_distribution_win"))
+            /*pom.withXml {
+                val dependenciesNode = asNode().appendNode("dependencies")
+                configurations["languageLibs"].resolvedConfiguration.firstLevelModuleDependencies.forEach {
+                    val dependencyNode = dependenciesNode.appendNode("dependency")
+                    dependencyNode.appendNode("groupId", it.moduleGroup)
+                    dependencyNode.appendNode("artifactId", it.moduleName)
+                    dependencyNode.appendNode("version", it.moduleVersion)
+                    dependencyNode.appendNode("type", it.moduleArtifacts.first().type)
+                }
+                configurations["mps"].resolvedConfiguration.firstLevelModuleDependencies.forEach {
+                    val dependencyNode = dependenciesNode.appendNode("dependency")
+                    dependencyNode.appendNode("groupId", it.moduleGroup)
+                    dependencyNode.appendNode("artifactId", it.moduleName)
+                    dependencyNode.appendNode("version", it.moduleVersion)
+                    dependencyNode.appendNode("type", it.moduleArtifacts.first().type)
+                    dependencyNode.appendNode("scope", "provided")
+                }
+            }*/
+        }
+        create<MavenPublication>("FASTEN_LINUX_RCP") {
+           groupId = "fasten"
+           artifactId = "linux.rcp"
+           artifact(tasks.named("build_fasten_safety_distribution"))
+        }
     }
 }
 
