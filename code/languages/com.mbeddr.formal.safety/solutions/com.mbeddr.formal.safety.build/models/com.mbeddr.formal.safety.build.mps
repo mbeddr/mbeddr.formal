@@ -3254,6 +3254,22 @@
             <ref role="3bR37D" to="al5i:35JynOkF_BM" resolve="org.apache.batik" />
           </node>
         </node>
+        <node concept="3rtmxn" id="v5LJv9WTpA" role="3bR31x">
+          <node concept="3LXTmp" id="v5LJv9WTpB" role="3rtmxm">
+            <node concept="3qWCbU" id="v5LJv9WTpC" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="v5LJv9WTpD" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="v5LJv9WTpE" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="v5LJv9WTpF" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3fV34643kGS" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3333,6 +3349,22 @@
             </node>
             <node concept="3qWCbU" id="3fV34643mEk" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="v5LJv9WTpv" role="3bR31x">
+          <node concept="3LXTmp" id="v5LJv9WTpw" role="3rtmxm">
+            <node concept="3qWCbU" id="v5LJv9WTpx" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="v5LJv9WTpy" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="v5LJv9WTpz" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="v5LJv9WTp$" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
