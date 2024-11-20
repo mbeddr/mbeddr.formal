@@ -11,7 +11,7 @@ on:
       publish:
         description: Whether to publish the build result to Maven repositories
         type: boolean
-        default: false
+        default: 'false'
         required: false
 
 jobs:
@@ -64,6 +64,10 @@ jobs:
           exit 1
         fi
 
+    - name: List all zip files
+      run: |
+        ls -lr | grep zip
+
     - name: Upload distribution
       uses: actions/upload-artifact@v4
       with:
@@ -72,7 +76,7 @@ jobs:
 
   publish:
     # Only publish on push (to maintenance or master) or on dispatch if requested
-    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish == 'true')
+    if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish == 'true') }}
 
     runs-on: ubuntu-latest
     steps:
