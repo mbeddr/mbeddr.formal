@@ -76,7 +76,7 @@ jobs:
 
   publish:
     # Only publish on push (to maintenance or master) or on dispatch if requested
-    if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish == 'true') }}
+    #if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish == 'true') }}
 
     runs-on: ubuntu-latest
     steps:
