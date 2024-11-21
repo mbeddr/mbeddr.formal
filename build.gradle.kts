@@ -366,8 +366,15 @@ tasks {
         delete("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/jbr")
     }
 
-    val removeJBR by registering(Zip::class) {
+    val fixJNA by registering(Copy::class) {
         dependsOn(deleteJBR)
+        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/jinidispatch.dll") {
+	    into "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna"
+	}
+    }
+
+    val removeJBR by registering(Zip::class) {
+        dependsOn(fixJNA)
         from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}")
         archiveFileName.set("fasten-${version}_with_removed_JBR.zip")
         destinationDirectory.set(file("$artifactsDir/com.mbeddr.formal.safetyDistribution"))
@@ -377,7 +384,10 @@ tasks {
         dependsOn(resolveJBR_Win, build_fasten_safety_distribution, removeJBR)
         archiveBaseName.set("fasten-${version}-Win")
         from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-${version}_with_removed_JBR.zip"))
-        from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
+        from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz")) {
+	  include "**/*.*"
+	  into("jbr")
+	}
     }
 
     val build_all_languages by registering {
