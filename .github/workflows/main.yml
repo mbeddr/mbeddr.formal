@@ -105,7 +105,7 @@ jobs:
 
   publish_rcps:
     # Only publish on push (to maintenance or master) or on dispatch if requested
-    if: ${{ github.event_name == 'workflow_dispatch' && inputs.publish_rcp == 'true' }}
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.publish_rcp == 'true' }}
 
     runs-on: ubuntu-latest
     steps:
