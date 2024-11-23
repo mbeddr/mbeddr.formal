@@ -391,7 +391,6 @@ tasks {
         archiveBaseName.set("fasten-${version}-Win")
         from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/")
         from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/$jbrWindowsVers") {
-	        include("**/*.*")
 	        into("jbr")
 	    }
 
