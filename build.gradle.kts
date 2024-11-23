@@ -369,7 +369,6 @@ tasks {
 
     val fix_JNA_and_fix_BIN by registering(Copy::class) {
         dependsOn(deleteJBR)
-        System.err.println("--------- JNA: " + "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
         copy {
             from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
             into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/")
@@ -378,13 +377,26 @@ tasks {
             from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/win/")
             into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/")
         }
+
+        doLast {
+            System.err.println("--------- JNA: " + "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
+            File("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/").walk().forEach {
+                println(it)
+            }
+        }
     }
 
     val unpack_windows_JBR by registering(Copy::class) {
         dependsOn(resolveJBR_Win, fix_JNA_and_fix_BIN)
         from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
         into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
-        System.err.println("--------- win jbr unpacked in " + "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
+
+        doLast {
+            System.err.println("--------- win jbr unpacked in " + "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
+            File("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/").walk().forEach {
+                println(it)
+            }
+        }
     }
 
     val package_fasten_safety_distribution_win by registering(Zip::class) {
