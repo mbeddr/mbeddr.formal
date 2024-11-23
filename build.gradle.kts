@@ -378,13 +378,6 @@ tasks {
             from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/win/")
             into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/")
         }
-
-        doLast {
-            System.err.println("--------- JNA: " + "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
-            File("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/").walk().forEach {
-                println(it)
-            }
-        }
     }
 
     val unpack_windows_JBR by registering(Copy::class) {
@@ -401,6 +394,13 @@ tasks {
 	        include("**/*.*")
 	        into("jbr")
 	    }
+
+        doLast {
+            System.err.println("--------- JNA: " + "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
+            File("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/").walk().forEach {
+                println(it)
+            }
+        }
     }
 
     val package_fasten_safety_distribution_linux by registering(Zip::class) {
