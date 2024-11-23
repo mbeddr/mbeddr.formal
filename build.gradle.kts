@@ -393,13 +393,6 @@ tasks {
         from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/$jbrWindowsVers") {
 	        into("jbr")
 	    }
-
-        doLast {
-            System.err.println("--------- JNA: " + "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
-            File("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/").walk().forEach {
-                println(it)
-            }
-        }
     }
 
     val package_fasten_safety_distribution_linux by registering(Zip::class) {
