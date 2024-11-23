@@ -141,9 +141,10 @@ val resolveMps = if (skipResolveMps) {
 val buildScriptClasspath = project.configurations["antLib"]
 
 val artifactsDir = layout.buildDirectory.dir("artifacts").get()
+//val artifactsDir = "C:/work/mbeddr.formal/build/scripts/build/artifacts"
 val dependenciesDir = layout.buildDirectory.dir("dependencies").get()
 val jdkDir = layout.buildDirectory.dir("jdkDir").get()
-
+//val jdkDir = "C:/work/mbeddr.formal/build/scripts/build/artifacts/com.mbeddr.formal.safetyDistribution"
 
 // ___________________ utilities ___________________
 
@@ -363,31 +364,35 @@ tasks {
 
     val deleteJBR by registering(Delete::class) {
         dependsOn(unpackDistribution)
-        delete("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/jbr")
+        delete("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/jbr/")
     }
 
-    val fixJNA by registering(Copy::class) {
+    val fix_JNA_and_fix_BIN by registering(Copy::class) {
         dependsOn(deleteJBR)
-        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/jinidispatch.dll") {
-	    into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna")
-	}
+        copy {
+            from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
+            into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/")
+        }
+        copy {
+            from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/win/")
+            into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/")
+        }
     }
 
-    val removeJBR by registering(Zip::class) {
-        dependsOn(fixJNA)
-        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}")
-        archiveFileName.set("fasten-${version}_with_removed_JBR.zip")
-        destinationDirectory.set(file("$artifactsDir/com.mbeddr.formal.safetyDistribution"))
+    val unpack_windows_JBR by registering(Copy::class) {
+        dependsOn(fix_JNA_and_fix_BIN)
+        from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
+        into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
     }
 
     val package_fasten_safety_distribution_win by registering(Zip::class) {
-        dependsOn(resolveJBR_Win, build_fasten_safety_distribution, removeJBR)
+        dependsOn(resolveJBR_Win, build_fasten_safety_distribution, unpack_windows_JBR)
         archiveBaseName.set("fasten-${version}-Win")
-        from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-${version}_with_removed_JBR.zip"))
-        from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz")) {
-	  include("**/*.*")
-	  into("jbr")
-	}
+        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/")
+        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/jbr_jcef-windows-x64") {
+	        include("**/*.*")
+	        into("jbr")
+	    }
     }
 
     val build_all_languages by registering {
