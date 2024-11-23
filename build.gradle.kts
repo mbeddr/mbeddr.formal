@@ -16,6 +16,7 @@ plugins {
 }
 
 val jbrVers = "17.0.8.1-b1000.32"
+val jbrWindowsVers = "jbr_jcef-17.0.8.1-windows-x64-b1000.32"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -386,33 +387,17 @@ tasks {
         }
     }
 
-    var directory_containing_unpacked_jbr_win = "";
     val unpack_windows_JBR by registering(Copy::class) {
         dependsOn(resolveJBR_Win, fix_JNA_and_fix_BIN)
         from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
         into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
-
-        doLast {
-            //System.err.println("--------- win jbr unpacked in " + "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
-            //File("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/").walk().forEach {
-            //    println(it)
-            //}
-            val path_tmp = File("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/").listFiles { file ->
-                file.isDirectory && file.name.startsWith("jbr")
-            }?.first()?.absolutePath
-
-            if (path_tmp != null) {
-                directory_containing_unpacked_jbr_win = path_tmp;
-            }
-            System.err.println("--------- win jbr unpacked in " + directory_containing_unpacked_jbr_win)
-        }
     }
 
     val package_fasten_safety_distribution_win by registering(Zip::class) {
         dependsOn(resolveJBR_Win, build_fasten_safety_distribution, unpack_windows_JBR)
         archiveBaseName.set("fasten-${version}-Win")
         from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/")
-        from(directory_containing_unpacked_jbr_win /*"$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/jbr_jcef-windows-x64"*/) {
+        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/$jbrWindowsVers") {
 	        include("**/*.*")
 	        into("jbr")
 	    }
