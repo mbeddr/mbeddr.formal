@@ -368,20 +368,18 @@ tasks {
         delete("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/jbr/")
     }
 
-    val fix_JNA_and_fix_BIN by registering(Copy::class) {
-        dependsOn(deleteJBR)
-        copy {
-            from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
-            into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/")
-        }
-        copy {
-            from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/win/")
-            into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/")
-        }
+    val fix_JNA_for_Windows by registering(Copy::class) {
+        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
+        into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/")
+    }
+
+    val fix_BIN_for_Windows by registering(Copy::class) {
+        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/win/")
+        into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/")
     }
 
     val unpack_windows_JBR by registering(Copy::class) {
-        dependsOn(resolveJBR_Win, fix_JNA_and_fix_BIN)
+        dependsOn(resolveJBR_Win, deleteJBR, fix_JNA_for_Windows, fix_BIN_for_Windows)
         from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
         into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
     }
