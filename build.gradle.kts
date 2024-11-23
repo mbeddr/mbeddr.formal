@@ -369,6 +369,7 @@ tasks {
 
     val fix_JNA_and_fix_BIN by registering(Copy::class) {
         dependsOn(deleteJBR)
+        System.err.println("--------- JNA: " + "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
         copy {
             from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
             into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/")
@@ -383,6 +384,7 @@ tasks {
         dependsOn(resolveJBR_Win, fix_JNA_and_fix_BIN)
         from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
         into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
+        System.err.println("--------- win jbr unpacked in " + "$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
     }
 
     val package_fasten_safety_distribution_win by registering(Zip::class) {
@@ -393,6 +395,12 @@ tasks {
 	        include("**/*.*")
 	        into("jbr")
 	    }
+    }
+
+    val package_fasten_safety_distribution_linux by registering(Zip::class) {
+        dependsOn(build_fasten_safety_distribution)
+        archiveBaseName.set("fasten-${version}-Linux")
+        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-${version}.zip")
     }
 
     val build_all_languages by registering {
@@ -558,7 +566,7 @@ publishing {
         create<MavenPublication>("FASTEN_LINUX_RCP") {
            groupId = "fasten"
            artifactId = "linux.rcp"
-           artifact(tasks.named("build_fasten_safety_distribution"))
+           artifact(tasks.named("package_fasten_safety_distribution_linux"))
         }
     }
 }
