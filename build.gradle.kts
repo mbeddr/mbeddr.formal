@@ -380,7 +380,7 @@ tasks {
     }
 
     val unpack_windows_JBR by registering(Copy::class) {
-        dependsOn(fix_JNA_and_fix_BIN)
+        dependsOn(resolveJBR_Win, fix_JNA_and_fix_BIN)
         from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
         into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
     }
