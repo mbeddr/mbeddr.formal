@@ -369,11 +369,13 @@ tasks {
     }
 
     val fix_JNA_for_Windows by registering(Copy::class) {
+        dependsOn(unpackDistribution)
         from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
         into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/")
     }
 
     val fix_BIN_for_Windows by registering(Copy::class) {
+        dependsOn(unpackDistribution)
         from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/win/")
         into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/")
     }
