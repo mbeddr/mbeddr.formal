@@ -42,35 +42,31 @@ jobs:
         xvfb-run ./gradlew package_fasten_safety_distribution_win build_all_languages check \
           -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
 
-    #- name: Publish test report
-    #  uses: mikepenz/action-junit-report@v4
-    #  if: ${{ !cancelled() }}
-    #  with:
-    #    fail_on_failure: true
-    #    require_tests: true
-    #    report_paths: 'build/**/TEST*.xml'
-    #    github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Publish test report
+      uses: mikepenz/action-junit-report@v4
+      if: ${{ !cancelled() }}
+      with:
+        fail_on_failure: true
+        require_tests: true
+        report_paths: 'build/**/TEST*.xml'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
 
-    #- name: Run migrations
-    #  run: |
-    #    ./gradlew migrate remigrate -x build_all_languages \
-    #      -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-
-    #- name: Check for dirty files
-    #  run: |
-    #    if [[ -n $(git status --porcelain | head --lines=1) ]]
-    #    then
-    #      echo "Dirty files detected after build/migration, run './gradlew migrate remigrate' and/or update .gitignore to fix:"
-    #      git status
-    #      echo "::group::git diff"
-    #      git diff
-    #      echo "::endgroup::"
-    #      exit 1
-    #    fi
-
-    - name: List all zip files
+    - name: Run migrations
       run: |
-        find . -name \*.zip
+        ./gradlew migrate remigrate -x build_all_languages \
+          -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+
+    - name: Check for dirty files
+      run: |
+        if [[ -n $(git status --porcelain | head --lines=1) ]]
+        then
+          echo "Dirty files detected after build/migration, run './gradlew migrate remigrate' and/or update .gitignore to fix:"
+          git status
+          echo "::group::git diff"
+          git diff
+          echo "::endgroup::"
+          exit 1
+        fi
 
     - name: Upload distribution
       uses: actions/upload-artifact@v4

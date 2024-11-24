@@ -142,10 +142,9 @@ val resolveMps = if (skipResolveMps) {
 val buildScriptClasspath = project.configurations["antLib"]
 
 val artifactsDir = layout.buildDirectory.dir("artifacts").get()
-//val artifactsDir = "C:/work/mbeddr.formal/build/scripts/build/artifacts"
 val dependenciesDir = layout.buildDirectory.dir("dependencies").get()
 val jdkDir = layout.buildDirectory.dir("jdkDir").get()
-//val jdkDir = "C:/work/mbeddr.formal/build/scripts/build/artifacts/com.mbeddr.formal.safetyDistribution"
+
 
 // ___________________ utilities ___________________
 
@@ -538,28 +537,10 @@ publishing {
                 }
             }
         }
-	create<MavenPublication>("FASTEN_WIN_RCP") {
+	    create<MavenPublication>("FASTEN_WIN_RCP") {
             groupId = "fasten"
             artifactId = "win.rcp"
             artifact(tasks.named("package_fasten_safety_distribution_win"))
-            /*pom.withXml {
-                val dependenciesNode = asNode().appendNode("dependencies")
-                configurations["languageLibs"].resolvedConfiguration.firstLevelModuleDependencies.forEach {
-                    val dependencyNode = dependenciesNode.appendNode("dependency")
-                    dependencyNode.appendNode("groupId", it.moduleGroup)
-                    dependencyNode.appendNode("artifactId", it.moduleName)
-                    dependencyNode.appendNode("version", it.moduleVersion)
-                    dependencyNode.appendNode("type", it.moduleArtifacts.first().type)
-                }
-                configurations["mps"].resolvedConfiguration.firstLevelModuleDependencies.forEach {
-                    val dependencyNode = dependenciesNode.appendNode("dependency")
-                    dependencyNode.appendNode("groupId", it.moduleGroup)
-                    dependencyNode.appendNode("artifactId", it.moduleName)
-                    dependencyNode.appendNode("version", it.moduleVersion)
-                    dependencyNode.appendNode("type", it.moduleArtifacts.first().type)
-                    dependencyNode.appendNode("scope", "provided")
-                }
-            }*/
         }
         create<MavenPublication>("FASTEN_LINUX_RCP") {
            groupId = "fasten"
