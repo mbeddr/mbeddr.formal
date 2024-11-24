@@ -11,9 +11,13 @@ on:
       publish:
         description: Whether to publish the build result to Maven repositories
         type: boolean
-        default: false
+        default: 'false'
         required: false
-
+      publish_rcp:
+        description: Whether to publish the RCP to Github packages
+        type: boolean
+        default: 'false'
+        required: true
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -72,7 +76,7 @@ jobs:
 
   publish:
     # Only publish on push (to maintenance or master) or on dispatch if requested
-    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish == 'true')
+    if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish == 'true') }}
 
     runs-on: ubuntu-latest
     steps:
@@ -94,3 +98,33 @@ jobs:
           -Pgpr.token=${{ secrets.GITHUB_TOKEN }} \
           -Partifacts.itemis.cloud.user=${{ secrets.ARTIFACTS_ITEMIS_CLOUD_USER }} \
           -Partifacts.itemis.cloud.pw=${{ secrets.ARTIFACTS_ITEMIS_CLOUD_PW }}
+
+  publish_rcps:
+    # Only publish on push (to maintenance or master) or on dispatch if requested
+    if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.publish_rcp == 'true' }}
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        distribution: 'temurin'
+        java-version: 17
+
+    - name: Set up Gradle
+      uses: gradle/actions/setup-gradle@v3
+
+    - name: Publish FASTEN-Windows RCP to Github Packages
+      run: |
+        ./gradlew publishFASTEN_WIN_RCPPublicationToGitHubPackagesRepository \
+          -Pgpr.user=${{ github.actor }} \
+          -Pgpr.token=${{ secrets.GITHUB_TOKEN }} \
+
+    - name: Publish FASTEN-Linux RCPs to Github Packages
+      run: |
+        ./gradlew publishFASTEN_LINUX_RCPPublicationToGitHubPackagesRepository \
+          -Pgpr.user=${{ github.actor }} \
+          -Pgpr.token=${{ secrets.GITHUB_TOKEN }} \
+ 
