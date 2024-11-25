@@ -84,6 +84,7 @@ configurations {
     val jbrWin by creating
     val jbrMac by creating
     val jbrLinux by creating
+    val docx4j by creating
 
     dependencies {
         mps("com.jetbrains:mps:$mpsVersion")
@@ -93,6 +94,8 @@ configurations {
         jbrWin("com.jetbrains.jdk:jbr_jcef:$jbrVers:windows-x64@tgz")
         jbrMac("com.jetbrains.jdk:jbr_jcef:$jbrVers:osx-x64@tgz")
         jbrLinux("com.jetbrains.jdk:jbr_jcef:$jbrVers:linux-x64@tgz")
+        docx4j("org.docx4j:docx4j-diffx:11.4.11")
+        docx4j("org.docx4j:docx4j-JAXB-MOXy:11.4.11")
     }
 }
  
@@ -172,10 +175,18 @@ tasks {
         }
     }
 
+
     val resolveLanguageLibs by registering(Copy::class) {
         dependsOn(configureJava)
         from({ configurations["languageLibs"].resolve().map(::zipTree) })
         into(dependenciesDir)
+    }
+
+    val resolveDocx4j by registering(Sync::class) {
+        duplicatesStrategy = DuplicatesStrategy.INCLUDE
+        dependsOn(configureJava)
+        from({ configurations["docx4j"].resolve() })
+        into("code/languages/com.mpsbasics/solutions/com.mpsbasics.docx4j.lib/lib")
     }
 
     // "com.fasten.safety.rcp.pluginSolution" makes use of the mbeddr actionsfilter plugin.
@@ -206,7 +217,7 @@ tasks {
     fun scriptFile(name: String): Provider<RegularFile> = layout.buildDirectory.file("scripts/$name")
 
     val build_allScripts_unpatched by registering(BuildLanguages::class) {
-        dependsOn(resolveMps, resolveLanguageLibs)
+        dependsOn(resolveMps, resolveLanguageLibs,resolveDocx4j)
         script = scriptFile("build_all_scripts.xml")
     }
 

@@ -15,7 +15,7 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="5zxs" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging.packages(com.mpsbasics.docx4j.lib/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="mtwz" ref="1cb48442-05da-4cad-b5c5-e31ddd69e322/java:org.docx4j.diff(com.mpsbasics.docx4j.diffx.lib/)" />
+    <import index="mtwz" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.diff(com.mpsbasics.docx4j.lib/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -323,7 +323,7 @@
                   <ref role="3uigEE" to="mtwz:~Differencer" resolve="Differencer" />
                 </node>
                 <node concept="2ShNRf" id="4ziKDEndpgL" role="33vP2m">
-                  <node concept="1pGfFk" id="5QnufgdhSQ1" role="2ShVmc">
+                  <node concept="1pGfFk" id="Kl54_$nNGH" role="2ShVmc">
                     <ref role="37wK5l" to="mtwz:~Differencer.&lt;init&gt;()" resolve="Differencer" />
                   </node>
                 </node>
