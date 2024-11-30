@@ -63,7 +63,7 @@
           <node concept="3oM_SD" id="5rjUx$vMKH5" role="1PaTwD">
             <property role="3oM_SC" value="with" />
           </node>
-          <node concept="3oM_SD" id="5rjUx$vMkzQ" role="1PaTwD">
+          <node concept="3oM_SD" id="3G_hsRkgJkq" role="1PaTwD">
             <property role="3oM_SC" value="FASTEN.mpsbasics" />
           </node>
         </node>
@@ -74,6 +74,9 @@
     </node>
     <node concept="TVjW0" id="6v3euY34Iag" role="TVegP">
       <ref role="TVjpn" to="1ob6:24pF5$oX9dp" resolve="RootNodesRef" />
+    </node>
+    <node concept="TVjW0" id="3G_hsRkgJko" role="TVegP">
+      <ref role="TVjpn" to="1ob6:24pF5$oXkiA" resolve="IPdfPage" />
     </node>
   </node>
 </model>

@@ -147,7 +147,15 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
+        <child id="1197683466920" name="keyType" index="3rvQeY" />
+        <child id="1197683475734" name="valueType" index="3rvSg0" />
+      </concept>
+      <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
+      <concept id="1240906768633" name="jetbrains.mps.baseLanguage.collections.structure.PutAllOperation" flags="nn" index="3FNE7p">
+        <child id="1240906921264" name="map" index="3FOfgg" />
+      </concept>
     </language>
   </registry>
   <node concept="13h7C7" id="3TNxfDZ5yNv">
@@ -156,10 +164,25 @@
       <node concept="3clFbS" id="3TNxfDZ5yNx" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="3TNxfDZ5yPq" role="13h7CS">
-      <property role="TrG5h" value="convertToPdf" />
+      <property role="TrG5h" value="addPagesToPdfDocument" />
       <ref role="13i0hy" to="vix4:5rjUx$vLwAC" resolve="convertToPdf" />
       <node concept="3Tm1VV" id="3TNxfDZ5yPt" role="1B3o_S" />
       <node concept="3clFbS" id="3TNxfDZ5yPw" role="3clF47">
+        <node concept="3cpWs8" id="3G_hsRko$ny" role="3cqZAp">
+          <node concept="3cpWsn" id="3G_hsRko$n_" role="3cpWs9">
+            <property role="TrG5h" value="page2OriginatingNodes" />
+            <node concept="3rvAFt" id="3G_hsRko$tV" role="1tU5fm">
+              <node concept="3uibUv" id="3G_hsRko$tW" role="3rvQeY">
+                <ref role="3uigEE" to="yid2:~PDPage" resolve="PDPage" />
+              </node>
+              <node concept="2I9FWS" id="3G_hsRko$tX" role="3rvSg0" />
+            </node>
+            <node concept="2ShNRf" id="3G_hsRko_dn" role="33vP2m">
+              <node concept="3rGOSV" id="3G_hsRko_EM" role="2ShVmc" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3G_hsRko$hd" role="3cqZAp" />
         <node concept="3cpWs8" id="3TNxfDZ5_Ai" role="3cqZAp">
           <node concept="3cpWsn" id="3TNxfDZ5_Aj" role="3cpWs9">
             <property role="TrG5h" value="seed" />
@@ -251,19 +274,46 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="3TNxfDZ6sKq" role="3cqZAp">
-              <node concept="2OqwBi" id="3TNxfDZ6sWl" role="3clFbG">
-                <node concept="37vLTw" id="3TNxfDZ6sKo" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3TNxfDZ6rSp" resolve="rnr" />
+            <node concept="3cpWs8" id="3G_hsRkoA85" role="3cqZAp">
+              <node concept="3cpWsn" id="3G_hsRkoA86" role="3cpWs9">
+                <property role="TrG5h" value="crtPage2Nodes" />
+                <node concept="3rvAFt" id="3G_hsRko_YI" role="1tU5fm">
+                  <node concept="3uibUv" id="3G_hsRko_YO" role="3rvQeY">
+                    <ref role="3uigEE" to="yid2:~PDPage" resolve="PDPage" />
+                  </node>
+                  <node concept="2I9FWS" id="3G_hsRko_YN" role="3rvSg0" />
                 </node>
-                <node concept="2qgKlT" id="3TNxfDZ6tck" role="2OqNvi">
-                  <ref role="37wK5l" to="vix4:5rjUx$vLwAC" resolve="convertToPdf" />
-                  <node concept="37vLTw" id="3TNxfDZ6ucg" role="37wK5m">
-                    <ref role="3cqZAo" node="3TNxfDZ5yPx" resolve="document" />
+                <node concept="2OqwBi" id="3G_hsRkoA87" role="33vP2m">
+                  <node concept="37vLTw" id="3G_hsRkoA88" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3TNxfDZ6rSp" resolve="rnr" />
+                  </node>
+                  <node concept="2qgKlT" id="3G_hsRkoA89" role="2OqNvi">
+                    <ref role="37wK5l" to="vix4:5rjUx$vLwAC" resolve="addPagesToPdfDocument" />
+                    <node concept="37vLTw" id="3G_hsRkoA8a" role="37wK5m">
+                      <ref role="3cqZAo" node="3TNxfDZ5yPx" resolve="document" />
+                    </node>
                   </node>
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="3G_hsRkoBg9" role="3cqZAp">
+              <node concept="2OqwBi" id="3G_hsRkoCcQ" role="3clFbG">
+                <node concept="37vLTw" id="3G_hsRkoBg7" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3G_hsRko$n_" resolve="page2OriginatingNodes" />
+                </node>
+                <node concept="3FNE7p" id="3G_hsRkoE1d" role="2OqNvi">
+                  <node concept="37vLTw" id="3G_hsRkoE9g" role="3FOfgg">
+                    <ref role="3cqZAo" node="3G_hsRkoA86" resolve="page2Nodes" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="3G_hsRko_Mc" role="3cqZAp" />
+        <node concept="3clFbF" id="3G_hsRko_Sy" role="3cqZAp">
+          <node concept="37vLTw" id="3G_hsRko_Sw" role="3clFbG">
+            <ref role="3cqZAo" node="3G_hsRko$n_" resolve="page2OriginatingNodes" />
           </node>
         </node>
       </node>
@@ -273,7 +323,12 @@
           <ref role="3uigEE" to="yid2:~PDDocument" resolve="PDDocument" />
         </node>
       </node>
-      <node concept="3cqZAl" id="3TNxfDZ5yPz" role="3clF45" />
+      <node concept="3rvAFt" id="3G_hsRkbWvO" role="3clF45">
+        <node concept="3uibUv" id="3G_hsRkbWwa" role="3rvQeY">
+          <ref role="3uigEE" to="yid2:~PDPage" resolve="PDPage" />
+        </node>
+        <node concept="2I9FWS" id="3G_hsRkbWws" role="3rvSg0" />
+      </node>
     </node>
     <node concept="13i0hz" id="3TNxfDZ5$jM" role="13h7CS">
       <property role="TrG5h" value="collectLeg" />
