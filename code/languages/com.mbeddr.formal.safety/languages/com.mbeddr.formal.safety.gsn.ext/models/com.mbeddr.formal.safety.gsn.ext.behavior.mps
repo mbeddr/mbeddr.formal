@@ -420,7 +420,7 @@
                 <node concept="X8dFx" id="Kdb35FgsEW" role="2OqNvi">
                   <node concept="2OqwBi" id="Kdb35Fg__A" role="25WWJ7">
                     <node concept="37vLTw" id="Kdb35Fg$oa" role="2Oq$k0">
-                      <ref role="3cqZAo" node="Kdb35Fgtf8" resolve="resolve" />
+                      <ref role="3cqZAo" node="Kdb35Fgtf8" resolve="crtDevkit" />
                     </node>
                     <node concept="liA8E" id="Kdb35FgAvs" role="2OqNvi">
                       <ref role="37wK5l" to="z1c3:~DevKit.getAllExportedLanguageIds()" resolve="getAllExportedLanguageIds" />
@@ -480,7 +480,7 @@
             </node>
             <node concept="X8dFx" id="Kdb35FgMAK" role="2OqNvi">
               <node concept="37vLTw" id="Kdb35FgNjK" role="25WWJ7">
-                <ref role="3cqZAo" node="Kdb35FgE6n" resolve="importedLanguages" />
+                <ref role="3cqZAo" node="Kdb35FgE6n" resolve="directlyUsedLanguages" />
               </node>
             </node>
           </node>
