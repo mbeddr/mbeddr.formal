@@ -2337,6 +2337,16 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="Kdb35FiyF2" role="3bR37C">
+          <node concept="3bR9La" id="Kdb35FiyF3" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="Kdb35FiyF4" role="3bR37C">
+          <node concept="3bR9La" id="Kdb35FiyF5" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2u7UHDC1TKp" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -17164,6 +17174,9 @@
             </node>
             <node concept="3_I8Xc" id="42jqVeFkUvJ" role="39821P">
               <ref role="3_I8Xa" to="ffeo:4EdAnGErOtx" resolve="mps-core" />
+            </node>
+            <node concept="3_I8Xc" id="Kdb35FfNyc" role="39821P">
+              <ref role="3_I8Xa" to="ffeo:5lGJ4TajoPh" resolve="mps-migration" />
             </node>
             <node concept="3_I8Xc" id="3ZV5FZJCmVR" role="39821P">
               <ref role="3_I8Xa" to="ffeo:5xhjlkpPhA8" resolve="mps-httpsupport" />
