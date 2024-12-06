@@ -2040,11 +2040,6 @@
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3TNxfDZ5bWw" role="3bR37C">
-          <node concept="3bR9La" id="3TNxfDZ5bWx" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:35JynOkF_BM" resolve="org.apache.batik" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3TNxfDZ5bWy" role="3bR37C">
           <node concept="3bR9La" id="3TNxfDZ5bWz" role="1SiIV1">
             <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
@@ -2083,16 +2078,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="Kdb35FizQs" role="3bR37C">
-          <node concept="3bR9La" id="Kdb35FizQt" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="Kdb35FizQu" role="3bR37C">
-          <node concept="3bR9La" id="Kdb35FizQv" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
       </node>
