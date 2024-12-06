@@ -20,6 +20,7 @@
         <reference id="2385126976340138510" name="rootNode" index="TVjpn" />
       </concept>
       <concept id="2385126976339379921" name="com.mpsbasics.pdfexporter.structure.PdfExportConfiguration" flags="ng" index="TWaE8">
+        <property id="4810766282448831095" name="addLinks" index="102kg5" />
         <child id="2385126976340183148" name="pages" index="TVegP" />
         <child id="2848503513110145633" name="location" index="1fTw2V" />
       </concept>
@@ -46,6 +47,7 @@
   </registry>
   <node concept="TWaE8" id="6v3euY30Uzm">
     <property role="TrG5h" value="export_config_1" />
+    <property role="102kg5" value="true" />
     <node concept="9PVaO" id="6v3euY34qTI" role="1fTw2V">
       <property role="3N1Lgt" value="exports" />
     </node>

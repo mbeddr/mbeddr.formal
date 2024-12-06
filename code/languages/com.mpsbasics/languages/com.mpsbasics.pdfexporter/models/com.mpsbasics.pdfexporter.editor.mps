@@ -223,6 +223,16 @@
         </node>
         <node concept="2iRfu4" id="2u7UHDCqtca" role="2iSdaV" />
       </node>
+      <node concept="3EZMnI" id="4b3hB82Mw9T" role="3EZMnx">
+        <node concept="VPM3Z" id="4b3hB82Mw9V" role="3F10Kt" />
+        <node concept="3F0ifn" id="4b3hB82Mwa2" role="3EZMnx">
+          <property role="3F0ifm" value="add hyperlinks for referenced nodes:" />
+        </node>
+        <node concept="3F0A7n" id="4b3hB82Mwa4" role="3EZMnx">
+          <ref role="1NtTu8" to="1ob6:4b3hB82Mw9R" resolve="addLinks" />
+        </node>
+        <node concept="2iRfu4" id="4b3hB82Mw9Y" role="2iSdaV" />
+      </node>
       <node concept="18a60v" id="2u7UHDCqt_V" role="3EZMnx">
         <node concept="VPM3Z" id="2u7UHDCqt_X" role="3F10Kt" />
         <node concept="3noiJN" id="2u7UHDCqt_Y" role="3F10Kt">

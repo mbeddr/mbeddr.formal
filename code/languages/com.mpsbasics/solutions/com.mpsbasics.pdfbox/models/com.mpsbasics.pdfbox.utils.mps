@@ -37,6 +37,7 @@
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="bik8" ref="bc7d0863-298c-41cf-984f-a0421e757da5/java:org.apache.pdfbox.pdmodel.graphics.color(com.mpsbasics.pdfbox/)" />
+    <import index="fnpx" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.notification(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -339,6 +340,32 @@
                   <ref role="3cqZAo" node="4lZTrcO$UO4" resolve="e" />
                 </node>
               </node>
+              <node concept="3clFbF" id="1U$3judPfRt" role="3cqZAp">
+                <node concept="2YIFZM" id="2u7UHDCerTs" role="3clFbG">
+                  <ref role="37wK5l" to="5yhu:xCk$O6mi_h" resolve="showNotification" />
+                  <ref role="1Pybhc" to="5yhu:696iakqzmI" resolve="NotificationUtils" />
+                  <node concept="Xl_RD" id="3mpcDUdxFYb" role="37wK5m">
+                    <property role="Xl_RC" value="Error" />
+                  </node>
+                  <node concept="3cpWs3" id="3mpcDUdxFYc" role="37wK5m">
+                    <node concept="2OqwBi" id="3mpcDUdxFYd" role="3uHU7w">
+                      <node concept="37vLTw" id="3mpcDUdxFYe" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4lZTrcO$UO4" resolve="e" />
+                      </node>
+                      <node concept="liA8E" id="3mpcDUdxFYf" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="3mpcDUdxFYg" role="3uHU7B">
+                      <property role="Xl_RC" value="Exception while saving pdf " />
+                    </node>
+                  </node>
+                  <node concept="Rm8GO" id="3mpcDUdxFYh" role="37wK5m">
+                    <ref role="Rm8GQ" to="fnpx:~NotificationType.ERROR" resolve="ERROR" />
+                    <ref role="1Px2BO" to="fnpx:~NotificationType" resolve="NotificationType" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
           <node concept="3clFbS" id="4lZTrcO$UHC" role="1zxBo7">
@@ -391,14 +418,27 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="6uwfldAExId" role="3cqZAp">
-              <node concept="1rXfSq" id="3CK0RGEM0j9" role="3clFbG">
-                <ref role="37wK5l" node="3CK0RGELPWn" resolve="addLinks" />
-                <node concept="37vLTw" id="3CK0RGEM0u0" role="37wK5m">
-                  <ref role="3cqZAo" node="4lZTrcOzSGX" resolve="document" />
+            <node concept="3clFbH" id="4b3hB82Mx8D" role="3cqZAp" />
+            <node concept="3clFbJ" id="4b3hB82M$Gl" role="3cqZAp">
+              <node concept="3clFbS" id="4b3hB82M$Gn" role="3clFbx">
+                <node concept="3clFbF" id="6uwfldAExId" role="3cqZAp">
+                  <node concept="1rXfSq" id="3CK0RGEM0j9" role="3clFbG">
+                    <ref role="37wK5l" node="3CK0RGELPWn" resolve="addLinks" />
+                    <node concept="37vLTw" id="3CK0RGEM0u0" role="37wK5m">
+                      <ref role="3cqZAo" node="4lZTrcOzSGX" resolve="document" />
+                    </node>
+                    <node concept="37vLTw" id="3G_hsRkdyE3" role="37wK5m">
+                      <ref role="3cqZAo" node="3G_hsRkdk0I" resolve="pages2OriginatingNodes" />
+                    </node>
+                  </node>
                 </node>
-                <node concept="37vLTw" id="3G_hsRkdyE3" role="37wK5m">
-                  <ref role="3cqZAo" node="3G_hsRkdk0I" resolve="pages2OriginatingNodes" />
+              </node>
+              <node concept="2OqwBi" id="4b3hB82M_X3" role="3clFbw">
+                <node concept="37vLTw" id="4b3hB82M_CL" role="2Oq$k0">
+                  <ref role="3cqZAo" node="54ozzUwn_7d" resolve="exportConfig" />
+                </node>
+                <node concept="3TrcHB" id="4b3hB82MCec" role="2OqNvi">
+                  <ref role="3TsBF5" to="1ob6:4b3hB82Mw9R" resolve="addLinks" />
                 </node>
               </node>
             </node>
@@ -1468,7 +1508,7 @@
                 <node concept="17QB3L" id="3G_hsRkk7U0" role="1tU5fm" />
                 <node concept="3cpWs3" id="3G_hsRkk84K" role="33vP2m">
                   <node concept="Xl_RD" id="3G_hsRkk84L" role="3uHU7B">
-                    <property role="Xl_RC" value="Jump To: " />
+                    <property role="Xl_RC" value="Go To: " />
                   </node>
                   <node concept="2OqwBi" id="3G_hsRkk84M" role="3uHU7w">
                     <node concept="2GrUjf" id="3G_hsRkk84N" role="2Oq$k0">

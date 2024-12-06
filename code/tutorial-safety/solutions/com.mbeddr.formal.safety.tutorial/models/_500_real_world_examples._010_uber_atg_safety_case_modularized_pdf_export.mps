@@ -16,6 +16,7 @@
     </language>
     <language id="ece26728-2885-4b26-9f61-67d2821fc361" name="com.mpsbasics.pdfexporter">
       <concept id="2385126976339379921" name="com.mpsbasics.pdfexporter.structure.PdfExportConfiguration" flags="ng" index="TWaE8">
+        <property id="4810766282448831095" name="addLinks" index="102kg5" />
         <child id="2385126976340183148" name="pages" index="TVegP" />
         <child id="2848503513110145633" name="location" index="1fTw2V" />
       </concept>
@@ -47,6 +48,7 @@
   </registry>
   <node concept="TWaE8" id="3TNxfDZ8toW">
     <property role="TrG5h" value="operations_export" />
+    <property role="102kg5" value="true" />
     <node concept="9PVaO" id="3TNxfDZ8tuf" role="1fTw2V">
       <property role="3N1Lgt" value="pdf_export_dir" />
     </node>
