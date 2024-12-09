@@ -10,10 +10,18 @@
     <modelRoot type="java_classes" contentPath="${module}/lib">
       <sourceRoot location="xml-apis-ext.jar" />
     </modelRoot>
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="batik-all-1.18.jar" />
+    </modelRoot>
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="xmlgraphics-commons-2.2.jar" />
+    </modelRoot>
   </models>
   <facets>
     <facet compile="mps" classes="mps" ext="no" type="java">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/xmlgraphics-commons-2.2.jar" />
+      <library location="${module}/lib/batik-all-1.18.jar" />
       <library location="${module}/lib/xml-apis-ext.jar" />
       <library location="${module}/lib/plantuml-epl-1.2024.7.jar" />
     </facet>
