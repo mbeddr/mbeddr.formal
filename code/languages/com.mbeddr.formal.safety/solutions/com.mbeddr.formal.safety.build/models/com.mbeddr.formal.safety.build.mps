@@ -101,7 +101,7 @@
       <concept id="8654221991637384182" name="jetbrains.mps.build.structure.BuildFileIncludesSelector" flags="ng" index="3qWCbU">
         <property id="8654221991637384184" name="pattern" index="3qWCbO" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
@@ -144,7 +144,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -2307,11 +2307,6 @@
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3TNxfDZ5bWw" role="3bR37C">
-          <node concept="3bR9La" id="3TNxfDZ5bWx" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:35JynOkF_BM" resolve="org.apache.batik" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="3TNxfDZ5bWy" role="3bR37C">
           <node concept="3bR9La" id="3TNxfDZ5bWz" role="1SiIV1">
             <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
@@ -2350,16 +2345,6 @@
                 </node>
               </node>
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="Kdb35FiyF2" role="3bR37C">
-          <node concept="3bR9La" id="Kdb35FiyF3" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="Kdb35FiyF4" role="3bR37C">
-          <node concept="3bR9La" id="Kdb35FiyF5" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
           </node>
         </node>
       </node>
@@ -3254,16 +3239,6 @@
             <ref role="3bR37D" node="3fV34643kGS" resolve="com.symo.plantuml.lib" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5xCkqdyRMXz" role="3bR37C">
-          <node concept="3bR9La" id="5xCkqdyRMX$" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:6bkzxtWPDx1" resolve="de.itemis.stubs.batik" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5xCkqdyRMX_" role="3bR37C">
-          <node concept="3bR9La" id="5xCkqdyRMXA" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:35JynOkF_BM" resolve="org.apache.batik" />
-          </node>
-        </node>
         <node concept="3rtmxn" id="v5LJv9WTpA" role="3bR31x">
           <node concept="3LXTmp" id="v5LJv9WTpB" role="3rtmxm">
             <node concept="3qWCbU" id="v5LJv9WTpC" role="3LXTna">
@@ -3373,6 +3348,44 @@
                 <property role="2Ry0Am" value="solutions" />
                 <node concept="2Ry0Ak" id="v5LJv9WTp$" role="2Ry0An">
                   <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3LSmzdyk7ip" role="3bR37C">
+          <node concept="1BurEX" id="3LSmzdyk7iq" role="1SiIV1">
+            <node concept="398BVA" id="3LSmzdyk7ic" role="1BurEY">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="3LSmzdyk7id" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3LSmzdyk7ie" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                  <node concept="2Ry0Ak" id="3LSmzdyk7if" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3LSmzdyk7ig" role="2Ry0An">
+                      <property role="2Ry0Am" value="xmlgraphics-commons-2.2.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3LSmzdyk7iC" role="3bR37C">
+          <node concept="1BurEX" id="3LSmzdyk7iD" role="1SiIV1">
+            <node concept="398BVA" id="3LSmzdyk7ir" role="1BurEY">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="3LSmzdyk7is" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3LSmzdyk7it" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                  <node concept="2Ry0Ak" id="3LSmzdyk7iu" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="3LSmzdyk7iv" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik-all-1.18.jar" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
