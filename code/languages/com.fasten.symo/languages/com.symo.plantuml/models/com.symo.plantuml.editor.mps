@@ -22,20 +22,22 @@
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="asup" ref="377bf088-4ffc-48ac-910f-fb1c66ffa60e/java:net.sourceforge.plantuml.core(com.symo.plantuml.lib/)" />
-    <import index="mnlj" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.beans(JDK/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
-    <import index="er5d" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing(org.apache.batik/)" />
-    <import index="iyaa" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.anim.dom(org.apache.batik/)" />
-    <import index="e373" ref="563a0770-eb88-4f4f-83ed-f708776fc2fe/java:org.apache.batik.util(de.itemis.stubs.batik/)" />
-    <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" implicit="true" />
-    <import index="4anb" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.svg(org.apache.batik/)" implicit="true" />
+    <import index="er5d" ref="377bf088-4ffc-48ac-910f-fb1c66ffa60e/java:org.apache.batik.swing(com.symo.plantuml.lib/)" />
+    <import index="iyaa" ref="377bf088-4ffc-48ac-910f-fb1c66ffa60e/java:org.apache.batik.anim.dom(com.symo.plantuml.lib/)" />
+    <import index="e373" ref="377bf088-4ffc-48ac-910f-fb1c66ffa60e/java:org.apache.batik.util(com.symo.plantuml.lib/)" />
+    <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
+    <import index="4anb" ref="377bf088-4ffc-48ac-910f-fb1c66ffa60e/java:org.apache.batik.swing.svg(com.symo.plantuml.lib/)" implicit="true" />
     <import index="lc7h" ref="r:9af299a8-c69a-4780-9c99-063ff8f4181a(com.symo.plantuml.behavior)" implicit="true" />
+    <import index="4anc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.svg(org.apache.batik/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
@@ -56,7 +58,9 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
+      <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
+        <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
+      </concept>
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
@@ -70,7 +74,12 @@
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
+      <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1630016958697344083" name="jetbrains.mps.lang.editor.structure.IMenu_Concept" flags="ngI" index="2ZABuq">
+        <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
+        <child id="5991739802479788259" name="type" index="22hAXT" />
+      </concept>
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
@@ -103,6 +112,9 @@
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1176474535556" name="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" flags="in" index="3Fmcul" />
+      <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
+        <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
+      </concept>
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
@@ -946,7 +958,7 @@
                       <ref role="3uigEE" to="fbzs:~Dimension2D" resolve="Dimension2D" />
                     </node>
                     <node concept="1rXfSq" id="7ikA1GKNyvt" role="33vP2m">
-                      <ref role="37wK5l" to="4anb:~JSVGComponent.getSVGDocumentSize()" resolve="getSVGDocumentSize" />
+                      <ref role="37wK5l" to="4anc:~JSVGComponent.getSVGDocumentSize()" resolve="getSVGDocumentSize" />
                     </node>
                   </node>
                 </node>
@@ -1135,8 +1147,8 @@
     <node concept="3Tm1VV" id="25fKBAPJnSN" role="1B3o_S" />
   </node>
   <node concept="24kQdi" id="1I7wo92VgA6">
-    <property role="3GE5qa" value="diagram.component" />
-    <ref role="1XX52x" to="udwj:1I7wo92Vg_X" resolve="PlantUmlComponentDiagram" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1XX52x" to="udwj:1I7wo92Vg_W" resolve="PlantUmlDiagramBase" />
     <node concept="3EZMnI" id="1I7wo92VgAa" role="2wV5jI">
       <node concept="2iRkQZ" id="1I7wo92VgAd" role="2iSdaV" />
       <node concept="PMmxH" id="1I7wo92WvV$" role="3EZMnx">
@@ -1147,20 +1159,8 @@
         <node concept="3EZMnI" id="1I7wo92WvW1" role="3EZMnx">
           <node concept="2iRfu4" id="1I7wo92WvW2" role="2iSdaV" />
           <node concept="3XFhqQ" id="1I7wo92WvVF" role="3EZMnx" />
-          <node concept="3F2HdR" id="1I7wo92VgAh" role="3EZMnx">
-            <ref role="1NtTu8" to="udwj:1I7wo92VgA3" resolve="content" />
-            <node concept="2iRkQZ" id="1I7wo92VgAi" role="2czzBx" />
-            <node concept="4$FPG" id="1I7wo92Xj6d" role="4_6I_">
-              <node concept="3clFbS" id="1I7wo92Xj6e" role="2VODD2">
-                <node concept="3clFbF" id="1I7wo92Xj8k" role="3cqZAp">
-                  <node concept="2pJPEk" id="1I7wo92Xj8i" role="3clFbG">
-                    <node concept="2pJPED" id="1I7wo92Xj8j" role="2pJPEn">
-                      <ref role="2pJxaS" to="udwj:1I7wo92X9V3" resolve="PlantUmlDiagramEmptyLine" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
+          <node concept="PMmxH" id="6CyxyHhVZMD" role="3EZMnx">
+            <ref role="PMmxG" node="6CyxyHhVZuv" resolve="PlantUmlTextualEditorComponentBase" />
           </node>
           <node concept="pkWqt" id="1I7wo92WvW3" role="pqm2j">
             <node concept="3clFbS" id="1I7wo92WvW4" role="2VODD2">
@@ -1355,11 +1355,6 @@
       <node concept="2iRfu4" id="1I7wo92WYNA" role="2iSdaV" />
     </node>
   </node>
-  <node concept="24kQdi" id="1I7wo92X9V6">
-    <property role="3GE5qa" value="base" />
-    <ref role="1XX52x" to="udwj:1I7wo92X9V3" resolve="PlantUmlDiagramEmptyLine" />
-    <node concept="3F0ifn" id="1I7wo92X9V8" role="2wV5jI" />
-  </node>
   <node concept="24kQdi" id="1I7wo92Xp9Y">
     <ref role="1XX52x" to="udwj:1I7wo92Vbhy" resolve="PlantUmlRoot" />
     <node concept="3EZMnI" id="1I7wo92Xpa0" role="2wV5jI">
@@ -1460,8 +1455,19 @@
       </node>
       <node concept="3F0ifn" id="1I7wo92ZMYY" role="3EZMnx" />
       <node concept="3F2HdR" id="1I7wo92Xpah" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:1I7wo92VgA2" resolve="diagrams" />
+        <ref role="1NtTu8" to="udwj:1I7wo92VgA2" resolve="content" />
         <node concept="2iRkQZ" id="1I7wo92Xpaj" role="2czzBx" />
+        <node concept="4$FPG" id="6BNnCp_okOR" role="4_6I_">
+          <node concept="3clFbS" id="6BNnCp_okOS" role="2VODD2">
+            <node concept="3clFbF" id="6BNnCp_on5$" role="3cqZAp">
+              <node concept="2pJPEk" id="6BNnCp_on5y" role="3clFbG">
+                <node concept="2pJPED" id="6BNnCp_on5z" role="2pJPEn">
+                  <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="2iRkQZ" id="1I7wo92Xpa3" role="2iSdaV" />
     </node>
@@ -1547,7 +1553,7 @@
   </node>
   <node concept="24kQdi" id="1I7wo92Y2Tv">
     <property role="3GE5qa" value="diagram.component" />
-    <ref role="1XX52x" to="udwj:1I7wo92XVu3" resolve="Channel" />
+    <ref role="1XX52x" to="udwj:6BNnCp_tb0t" resolve="AbstractPlantumlLinkBase" />
     <node concept="3EZMnI" id="1I7wo92Y2Tx" role="2wV5jI">
       <node concept="1kIj98" id="1I7wo92Y2U7" role="3EZMnx">
         <node concept="3F1sOY" id="1I7wo92Y2Ud" role="1kIj9b">
@@ -1938,6 +1944,185 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="6CyxyHhVZuv">
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="PlantUmlTextualEditorComponentBase" />
+    <ref role="1XX52x" to="udwj:1I7wo92Vg_W" resolve="PlantUmlDiagramBase" />
+    <node concept="3F0ifn" id="6CyxyHhVZx4" role="2wV5jI">
+      <property role="3F0ifm" value="&lt;please override this component&gt;" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="6CyxyHhVZx6">
+    <property role="3GE5qa" value="diagram.component" />
+    <property role="TrG5h" value="PlantUmlComponentDiagramTextualEditorComponent" />
+    <ref role="1XX52x" to="udwj:1I7wo92Vg_X" resolve="PlantUmlComponentDiagram" />
+    <node concept="1PE4EZ" id="6CyxyHhVZx8" role="1PM95z">
+      <ref role="1PE7su" node="6CyxyHhVZuv" resolve="PlantUmlTextualEditorComponentBase" />
+    </node>
+    <node concept="3F2HdR" id="1I7wo92VgAh" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:1I7wo92VgA3" resolve="content" />
+      <node concept="2iRkQZ" id="1I7wo92VgAi" role="2czzBx" />
+      <node concept="4$FPG" id="1I7wo92Xj6d" role="4_6I_">
+        <node concept="3clFbS" id="1I7wo92Xj6e" role="2VODD2">
+          <node concept="3clFbF" id="1I7wo92Xj8k" role="3cqZAp">
+            <node concept="2pJPEk" id="1I7wo92Xj8i" role="3clFbG">
+              <node concept="2pJPED" id="1I7wo92Xj8j" role="2pJPEn">
+                <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="6CyxyHhWRR_">
+    <property role="3GE5qa" value="diagram.usecase" />
+    <property role="TrG5h" value="PlantUmlUsecaseDiagramTextualEditorComponent" />
+    <ref role="1XX52x" to="udwj:6CyxyHhTfBx" resolve="PlantUmlUsecaseDiagram" />
+    <node concept="1PE4EZ" id="6CyxyHhWRRA" role="1PM95z">
+      <ref role="1PE7su" node="6CyxyHhVZuv" resolve="PlantUmlTextualEditorComponentBase" />
+    </node>
+    <node concept="3F2HdR" id="6CyxyHhWRRB" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:6CyxyHhTfBA" resolve="content" />
+      <node concept="2iRkQZ" id="6CyxyHhWRRC" role="2czzBx" />
+      <node concept="4$FPG" id="6CyxyHhWRRD" role="4_6I_">
+        <node concept="3clFbS" id="6CyxyHhWRRE" role="2VODD2">
+          <node concept="3clFbF" id="6BNnCp_qGYl" role="3cqZAp">
+            <node concept="2pJPEk" id="6BNnCp_qGYm" role="3clFbG">
+              <node concept="2pJPED" id="6BNnCp_qGYn" role="2pJPEn">
+                <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6CyxyHi8x5H">
+    <property role="3GE5qa" value="diagram.usecase" />
+    <ref role="1XX52x" to="udwj:6CyxyHi8x5D" resolve="UsecaseDeclaration" />
+    <node concept="3EZMnI" id="6CyxyHi8x5J" role="2wV5jI">
+      <node concept="3F0ifn" id="6CyxyHi8x5P" role="3EZMnx">
+        <property role="3F0ifm" value="usecase" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="_tjkj" id="6CyxyHi9vWO" role="3EZMnx">
+        <node concept="3EZMnI" id="6CyxyHi9vWS" role="_tjki">
+          <node concept="3F0ifn" id="6CyxyHi9vWW" role="3EZMnx">
+            <property role="3F0ifm" value="(" />
+          </node>
+          <node concept="3F1sOY" id="6CyxyHibNNd" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:7ikA1GKvxAd" resolve="longDescription" />
+          </node>
+          <node concept="3F0ifn" id="6CyxyHibNNg" role="3EZMnx">
+            <property role="3F0ifm" value=")" />
+          </node>
+          <node concept="2iRfu4" id="6CyxyHi9vWV" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6CyxyHi8x5S" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="6CyxyHi8x5M" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6CyxyHibNNj">
+    <property role="3GE5qa" value="diagram.usecase" />
+    <ref role="1XX52x" to="udwj:6CyxyHibNNa" resolve="ActorDeclaration" />
+    <node concept="3EZMnI" id="6CyxyHibNNl" role="2wV5jI">
+      <node concept="3F0ifn" id="6CyxyHibNNm" role="3EZMnx">
+        <property role="3F0ifm" value="actor" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="_tjkj" id="6CyxyHibNNn" role="3EZMnx">
+        <node concept="3EZMnI" id="6CyxyHibNNo" role="_tjki">
+          <node concept="3F0ifn" id="6CyxyHibNNp" role="3EZMnx">
+            <property role="3F0ifm" value=":" />
+          </node>
+          <node concept="3F1sOY" id="6CyxyHibNNq" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:7ikA1GKvxAd" resolve="longDescription" />
+          </node>
+          <node concept="3F0ifn" id="6CyxyHibNNx" role="3EZMnx">
+            <property role="3F0ifm" value=":" />
+          </node>
+          <node concept="3F0ifn" id="6CyxyHibNN$" role="3EZMnx">
+            <property role="3F0ifm" value="as" />
+          </node>
+          <node concept="2iRfu4" id="6CyxyHibNNs" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="6CyxyHibNNt" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="6CyxyHibNNu" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6BNnCp_mOax">
+    <property role="3GE5qa" value="diagram.usecase.skinparams" />
+    <ref role="1XX52x" to="udwj:6BNnCp_mL3p" resolve="ActorStyleSkinParameter" />
+    <node concept="3EZMnI" id="6BNnCp_mOaz" role="2wV5jI">
+      <node concept="3F0ifn" id="6BNnCp_mOaB" role="3EZMnx">
+        <property role="3F0ifm" value="actorStyle" />
+      </node>
+      <node concept="3F0A7n" id="6BNnCp_mOaE" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:6BNnCp_mOav" resolve="style" />
+      </node>
+      <node concept="2iRfu4" id="6BNnCp_mOaA" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6BNnCp_okdJ">
+    <property role="3GE5qa" value="base.generic_content" />
+    <ref role="1XX52x" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+    <node concept="3F0ifn" id="6BNnCp_okdL" role="2wV5jI">
+      <node concept="VPxyj" id="6BNnCp_vuqe" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="22mcaB" id="6BNnCp_okdN">
+    <property role="3GE5qa" value="base.generic_content" />
+    <ref role="aqKnT" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+    <node concept="22hDWj" id="6BNnCp_okdO" role="22hAXT" />
+  </node>
+  <node concept="24kQdi" id="6BNnCp_onxQ">
+    <property role="3GE5qa" value="base.generic_content" />
+    <ref role="1XX52x" to="udwj:6BNnCp_onfs" resolve="PlantUmlSingleLineComment" />
+    <node concept="3EZMnI" id="6BNnCp_onxS" role="2wV5jI">
+      <node concept="3F0ifn" id="6BNnCp_onxW" role="3EZMnx">
+        <property role="3F0ifm" value="'" />
+      </node>
+      <node concept="3F0A7n" id="6BNnCp_onxZ" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:6BNnCp_onx9" resolve="comment" />
+      </node>
+      <node concept="2iRfu4" id="6BNnCp_onxV" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6BNnCp_rSNQ">
+    <property role="3GE5qa" value="diagram.usecase" />
+    <ref role="1XX52x" to="udwj:6BNnCp_rSNN" resolve="ActorRef" />
+    <node concept="1iCGBv" id="6BNnCp_rSNS" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:6BNnCp_rSNP" resolve="actor" />
+      <node concept="1sVBvm" id="6BNnCp_rSNU" role="1sWHZn">
+        <node concept="3F0A7n" id="6BNnCp_rSNY" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6BNnCp_rZau">
+    <property role="3GE5qa" value="diagram.usecase" />
+    <ref role="1XX52x" to="udwj:6BNnCp_rZar" resolve="UsecaseRef" />
+    <node concept="1iCGBv" id="6BNnCp_rZaw" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:6BNnCp_rZat" resolve="usecase" />
+      <node concept="1sVBvm" id="6BNnCp_rZay" role="1sWHZn">
+        <node concept="3F0A7n" id="6BNnCp_rZaA" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>
