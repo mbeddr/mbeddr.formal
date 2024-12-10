@@ -260,7 +260,7 @@
                 <node concept="2OqwBi" id="4WhNU8SECHH" role="33vP2m">
                   <node concept="2OqwBi" id="4WhNU8SE_s2" role="2Oq$k0">
                     <node concept="37vLTw" id="4WhNU8SE$Aq" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4ziKDEn90jb" resolve="olderPackage" />
+                      <ref role="3cqZAo" node="4ziKDEn90jb" resolve="witnessPackage" />
                     </node>
                     <node concept="liA8E" id="4WhNU8SEAGi" role="2OqNvi">
                       <ref role="37wK5l" to="5zxs:~WordprocessingMLPackage.getMainDocumentPart()" resolve="getMainDocumentPart" />
@@ -470,7 +470,7 @@
                                 <property role="Xl_RC" value="\tWitness line: '" />
                               </node>
                               <node concept="37vLTw" id="3egY5wRrB_T" role="3uHU7w">
-                                <ref role="3cqZAo" node="3egY5wRrB_O" resolve="string" />
+                                <ref role="3cqZAo" node="3egY5wRrB_O" resolve="crtXmlWitnessLine" />
                               </node>
                             </node>
                           </node>
@@ -494,7 +494,7 @@
                                 <property role="Xl_RC" value="\tNew line: '" />
                               </node>
                               <node concept="37vLTw" id="3egY5wRruMy" role="3uHU7w">
-                                <ref role="3cqZAo" node="3egY5wRruMt" resolve="string" />
+                                <ref role="3cqZAo" node="3egY5wRruMt" resolve="crtXmlNewLine" />
                               </node>
                             </node>
                           </node>
@@ -506,12 +506,12 @@
                   <node concept="3fqX7Q" id="3egY5wRoIB3" role="3clFbw">
                     <node concept="2OqwBi" id="3egY5wRoIB5" role="3fr31v">
                       <node concept="37vLTw" id="3egY5wRruMx" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3egY5wRruMt" resolve="string" />
+                        <ref role="3cqZAo" node="3egY5wRruMt" resolve="crtXmlNewLine" />
                       </node>
                       <node concept="liA8E" id="3egY5wRoIB9" role="2OqNvi">
                         <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
                         <node concept="37vLTw" id="3egY5wRrB_S" role="37wK5m">
-                          <ref role="3cqZAo" node="3egY5wRrB_O" resolve="string" />
+                          <ref role="3cqZAo" node="3egY5wRrB_O" resolve="crtXmlWitnessLine" />
                         </node>
                       </node>
                     </node>
@@ -663,7 +663,7 @@
             </node>
             <node concept="3cpWs6" id="4WhNU8SEGq2" role="3cqZAp">
               <node concept="37vLTw" id="4WhNU8SEYc4" role="3cqZAk">
-                <ref role="3cqZAo" node="4WhNU8SEYbZ" resolve="equals" />
+                <ref role="3cqZAo" node="4WhNU8SEYbZ" resolve="res" />
               </node>
             </node>
           </node>
