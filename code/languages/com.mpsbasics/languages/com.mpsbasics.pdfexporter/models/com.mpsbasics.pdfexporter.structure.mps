@@ -158,7 +158,7 @@
     <property role="EcuMT" value="7531332239700639218" />
     <property role="TrG5h" value="HtmlPage" />
     <property role="34LRSv" value="HTML page" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6y4EGjKNrRN" role="PzmwI">
       <ref role="PrY4T" node="24pF5$oXkiA" resolve="IPdfPage" />
     </node>

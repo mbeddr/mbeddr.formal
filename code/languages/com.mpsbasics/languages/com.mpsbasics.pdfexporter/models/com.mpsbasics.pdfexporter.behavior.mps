@@ -2507,7 +2507,7 @@
                     <node concept="2OqwBi" id="15LIVNPAoAp" role="3clFbG">
                       <node concept="2OqwBi" id="15LIVNPAjvB" role="2Oq$k0">
                         <node concept="37vLTw" id="15LIVNPAibq" role="2Oq$k0">
-                          <ref role="3cqZAo" node="15LIVNP_L9C" resolve="html" />
+                          <ref role="3cqZAo" node="15LIVNP_L9C" resolve="htmlStringBuffer" />
                         </node>
                         <node concept="liA8E" id="15LIVNPAktH" role="2OqNvi">
                           <ref role="37wK5l" to="wyt6:~StringBuffer.append(java.lang.String)" resolve="append" />
@@ -2544,7 +2544,7 @@
             <node concept="17QB3L" id="YWV3xMMdBZ" role="1tU5fm" />
             <node concept="2OqwBi" id="YWV3xMMhPT" role="33vP2m">
               <node concept="37vLTw" id="YWV3xMMfx7" role="2Oq$k0">
-                <ref role="3cqZAo" node="15LIVNP_L9C" resolve="htmlSB" />
+                <ref role="3cqZAo" node="15LIVNP_L9C" resolve="htmlStringBuffer" />
               </node>
               <node concept="liA8E" id="YWV3xMMl72" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~StringBuffer.toString()" resolve="toString" />
