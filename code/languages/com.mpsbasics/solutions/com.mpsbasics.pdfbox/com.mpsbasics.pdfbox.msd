@@ -10,10 +10,20 @@
     <modelRoot type="java_classes" contentPath="${module}/lib">
       <sourceRoot location="pdfbox-app-3.0.1.jar" />
     </modelRoot>
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="xmpbox-3.0.1.jar" />
+    </modelRoot>
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="openhtmltopdf-core-1.1.23.jar" />
+      <sourceRoot location="openhtmltopdf-pdfbox-1.1.23.jar" />
+    </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/openhtmltopdf-core-1.1.23.jar" />
+      <library location="${module}/lib/openhtmltopdf-pdfbox-1.1.23.jar" />
+      <library location="${module}/lib/xmpbox-3.0.1.jar" />
       <library location="${module}/lib/pdfbox-app-3.0.1.jar" />
       <library location="${module}/lib/graphics2d-3.0.1.jar" />
     </facet>
