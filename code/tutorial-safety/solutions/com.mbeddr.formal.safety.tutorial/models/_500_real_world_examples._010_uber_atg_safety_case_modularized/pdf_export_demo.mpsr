@@ -11,6 +11,7 @@
     </language>
     <language id="ece26728-2885-4b26-9f61-67d2821fc361" name="com.mpsbasics.pdfexporter">
       <concept id="2385126976339379921" name="com.mpsbasics.pdfexporter.structure.PdfExportConfiguration" flags="ng" index="TWaE8">
+        <property id="4810766282448831095" name="addLinks" index="102kg5" />
         <child id="2385126976340183148" name="pages" index="TVegP" />
         <child id="2848503513110145633" name="location" index="1fTw2V" />
       </concept>
@@ -42,6 +43,7 @@
   </registry>
   <node concept="TWaE8" id="3GMd7ba9wzs">
     <property role="TrG5h" value="pdf_export_demo" />
+    <property role="102kg5" value="true" />
     <node concept="9PVaO" id="3GMd7ba9wzt" role="1fTw2V">
       <property role="3N1Lgt" value="pdf_export_dir" />
     </node>
@@ -57,11 +59,28 @@
           <node concept="3oM_SD" id="3GMd7ba9wzE" role="1PaTwD">
             <property role="3oM_SC" value="Demo" />
           </node>
+          <node concept="3oM_SD" id="62vmcSiiqai" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="62vmcSiiqaj" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="62vmcSiiqg_" role="1PaQFQ">
+          <node concept="3oM_SD" id="62vmcSiiqg$" role="1PaTwD">
+            <property role="3oM_SC" value="Entire" />
+          </node>
+          <node concept="3oM_SD" id="62vmcSiiqn2" role="1PaTwD">
+            <property role="3oM_SC" value="Safety" />
+          </node>
+          <node concept="3oM_SD" id="62vmcSiiqzz" role="1PaTwD">
+            <property role="3oM_SC" value="Case" />
+          </node>
         </node>
       </node>
     </node>
     <node concept="11pACh" id="3GMd7ba9wzQ" role="TVegP">
-      <ref role="11poNA" node="5X1JwjFKLK_" resolve="extract_from_G1.4.1" />
+      <ref role="11poNA" node="1e9opmpdFtw" resolve="_010_uber_atg_safety_case_top" />
     </node>
   </node>
 </model>
