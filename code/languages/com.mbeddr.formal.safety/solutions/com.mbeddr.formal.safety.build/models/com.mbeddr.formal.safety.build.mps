@@ -117,7 +117,7 @@
       <concept id="8577651205286814211" name="jetbrains.mps.build.structure.BuildLayout_Tar" flags="ng" index="1tmT9g">
         <property id="1979010778009209128" name="compression" index="AB_bT" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
@@ -160,7 +160,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -813,6 +813,9 @@
       </node>
       <node concept="m$_yC" id="3TNxfDZ8qPv" role="m$_yJ">
         <ref role="m$_y1" to="al5i:Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
+      </node>
+      <node concept="m$_yC" id="hKYaKNdlcG" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:3$A0JaN5ezp" resolve="MPS.ThirdParty" />
       </node>
     </node>
     <node concept="m$_wf" id="2MrvZqtDsQE" role="3989C9">
@@ -2379,6 +2382,63 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="hKYaKNc91F" role="3bR37C">
+          <node concept="1BurEX" id="hKYaKNc91G" role="1SiIV1">
+            <node concept="398BVA" id="hKYaKNc91u" role="1BurEY">
+              <ref role="398BVh" node="7he_lUum_$u" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="hKYaKNc91v" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="hKYaKNc91w" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.pdfbox" />
+                  <node concept="2Ry0Ak" id="hKYaKNc91x" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="hKYaKNc91y" role="2Ry0An">
+                      <property role="2Ry0Am" value="openhtmltopdf-core-1.1.23.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="hKYaKNc91U" role="3bR37C">
+          <node concept="1BurEX" id="hKYaKNc91V" role="1SiIV1">
+            <node concept="398BVA" id="hKYaKNc91H" role="1BurEY">
+              <ref role="398BVh" node="7he_lUum_$u" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="hKYaKNc91I" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="hKYaKNc91J" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.pdfbox" />
+                  <node concept="2Ry0Ak" id="hKYaKNc91K" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="hKYaKNc91L" role="2Ry0An">
+                      <property role="2Ry0Am" value="openhtmltopdf-pdfbox-1.1.23.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="hKYaKNc929" role="3bR37C">
+          <node concept="1BurEX" id="hKYaKNc92a" role="1SiIV1">
+            <node concept="398BVA" id="hKYaKNc91W" role="1BurEY">
+              <ref role="398BVh" node="7he_lUum_$u" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="hKYaKNc91X" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="hKYaKNc91Y" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.pdfbox" />
+                  <node concept="2Ry0Ak" id="hKYaKNc91Z" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="hKYaKNc920" role="2Ry0An">
+                      <property role="2Ry0Am" value="xmpbox-3.0.1.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2u7UHDC1TKp" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2477,6 +2537,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="hKYaKNc92K" role="3bR37C">
+          <node concept="3bR9La" id="hKYaKNc92L" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
           </node>
         </node>
       </node>
@@ -19535,309 +19600,6 @@
       </node>
     </node>
   </node>
-  <node concept="26EafH" id="nwXZr$UPFw">
-    <property role="26FY9R" value="jetbrains.mps.Launcher" />
-    <property role="TrG5h" value="fastenScripts" />
-    <ref role="1_kbm$" node="42jqVeFkUtq" resolve="FASTEN 2023.2" />
-    <node concept="26EafG" id="nwXZr$UPFx" role="26Ea7d">
-      <property role="26EafJ" value="lib/annotations.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFy" role="26Ea7d">
-      <property role="26EafJ" value="lib/app.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFz" role="26Ea7d">
-      <property role="26EafJ" value="lib/bouncy-castle.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPF$" role="26Ea7d">
-      <property role="26EafJ" value="lib/branding.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPF_" role="26Ea7d">
-      <property role="26EafJ" value="lib/byte-buddy-agent.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFA" role="26Ea7d">
-      <property role="26EafJ" value="lib/eclipse.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFB" role="26Ea7d">
-      <property role="26EafJ" value="lib/error-prone-annotations.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFC" role="26Ea7d">
-      <property role="26EafJ" value="lib/external-system-rt.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFD" role="26Ea7d">
-      <property role="26EafJ" value="lib/externalProcess-rt.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFE" role="26Ea7d">
-      <property role="26EafJ" value="lib/forms_rt.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFF" role="26Ea7d">
-      <property role="26EafJ" value="lib/groovy.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFG" role="26Ea7d">
-      <property role="26EafJ" value="lib/grpc.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFH" role="26Ea7d">
-      <property role="26EafJ" value="lib/idea_rt.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFI" role="26Ea7d">
-      <property role="26EafJ" value="lib/intellij-coverage-agent-1.0.723.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFJ" role="26Ea7d">
-      <property role="26EafJ" value="lib/intellij-test-discovery.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFK" role="26Ea7d">
-      <property role="26EafJ" value="lib/java-impl.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFL" role="26Ea7d">
-      <property role="26EafJ" value="lib/javac2.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFM" role="26Ea7d">
-      <property role="26EafJ" value="lib/jetbrains-annotations.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFN" role="26Ea7d">
-      <property role="26EafJ" value="lib/jps-model.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFO" role="26Ea7d">
-      <property role="26EafJ" value="lib/junit4.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFP" role="26Ea7d">
-      <property role="26EafJ" value="lib/kotlin-compiler-client-embeddable-1.9.0.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFQ" role="26Ea7d">
-      <property role="26EafJ" value="lib/kotlinx-metadata-jvm-0.7.0.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFR" role="26Ea7d">
-      <property role="26EafJ" value="lib/lib.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFS" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-annotations.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFT" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-behavior-api.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFU" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-behavior-runtime.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFV" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-boot-util.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFW" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-boot.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFX" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-closures.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFY" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-collections.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPFZ" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-constraints-runtime.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPG0" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-context.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPG1" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-core.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPG2" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-editor-api.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPG3" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-editor-runtime.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPG4" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-editor.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPG5" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-environment.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPG6" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-feedback-api.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPG7" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-generator.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPG8" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-icons.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPG9" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-messages-api.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGa" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-messages-for-legacy-constraints.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGb" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-messages-for-rules.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGc" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-messages-for-structure.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGd" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-openapi.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGe" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-persistence.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGf" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-platform.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGg" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-problem.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGh" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-project-check.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGi" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-references.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGj" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-resources.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGk" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-resources_en.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGl" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-test.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGm" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-textgen.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGn" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-tips.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGo" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-tuples.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGp" role="26Ea7d">
-      <property role="26EafJ" value="lib/mps-workbench.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGq" role="26Ea7d">
-      <property role="26EafJ" value="lib/platform-loader.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGr" role="26Ea7d">
-      <property role="26EafJ" value="lib/protobuf.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGs" role="26Ea7d">
-      <property role="26EafJ" value="lib/pty4j.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGt" role="26Ea7d">
-      <property role="26EafJ" value="lib/rd.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGu" role="26Ea7d">
-      <property role="26EafJ" value="lib/stats.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGv" role="26Ea7d">
-      <property role="26EafJ" value="lib/testFramework.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGw" role="26Ea7d">
-      <property role="26EafJ" value="lib/util-8.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGx" role="26Ea7d">
-      <property role="26EafJ" value="lib/util.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGy" role="26Ea7d">
-      <property role="26EafJ" value="lib/util_rt.jar" />
-    </node>
-    <node concept="26EafG" id="nwXZr$UPGz" role="26Ea7d">
-      <property role="26EafJ" value="lib/ant/lib/ant.jar" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPG$" role="2hID6k">
-      <property role="2eq24a" value="true" />
-      <property role="26Ea6C" value="Common IntelliJ Platform options:" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPG_" role="2hID6k">
-      <property role="26Ea6C" value="-Xms256m" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGA" role="2hID6k">
-      <property role="26Ea6C" value="-Xmx2048m" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGB" role="2hID6k">
-      <property role="26Ea6C" value="-XX:ReservedCodeCacheSize=512m" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGC" role="2hID6k">
-      <property role="26Ea6C" value="-XX:+UseG1GC" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGD" role="2hID6k">
-      <property role="26Ea6C" value="-XX:SoftRefLRUPolicyMSPerMB=50" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGE" role="2hID6k">
-      <property role="26Ea6C" value="-XX:CICompilerCount=2" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGF" role="2hID6k">
-      <property role="26Ea6C" value="-XX:+HeapDumpOnOutOfMemoryError" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGG" role="2hID6k">
-      <property role="26Ea6C" value="-XX:-OmitStackTraceInFastThrow" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGH" role="2hID6k">
-      <property role="26Ea6C" value="-XX:+IgnoreUnrecognizedVMOptions" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGI" role="2hID6k">
-      <property role="26Ea6C" value="-ea" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGJ" role="2hID6k">
-      <property role="26Ea6C" value="-Djava.system.class.loader=com.intellij.util.lang.PathClassLoader" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGK" role="2hID6k">
-      <property role="26Ea6C" value="-Dsun.io.useCanonCaches=false" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGL" role="2hID6k">
-      <property role="26Ea6C" value="-Dsun.java2d.metal=true" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGM" role="2hID6k">
-      <property role="26Ea6C" value="-Djdk.http.auth.tunneling.disabledSchemes=&quot;&quot;" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGN" role="2hID6k">
-      <property role="26Ea6C" value="-Djdk.attach.allowAttachSelf=true" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGO" role="2hID6k">
-      <property role="26Ea6C" value="-Djdk.module.illegalAccess.silent=true" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGP" role="2hID6k">
-      <property role="26Ea6C" value="-Dkotlinx.coroutines.debug=off" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGQ" role="2hID6k">
-      <property role="26Ea6C" value="-Dsun.tools.attach.tmp.only=true" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGR" role="2hID6k">
-      <property role="2eq24a" value="true" />
-      <property role="26Ea6C" value="Additional MPS options:" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGS" role="2hID6k">
-      <property role="26Ea6C" value="-client" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGT" role="2hID6k">
-      <property role="26Ea6C" value="-Dfile.encoding=UTF-8" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGU" role="2hID6k">
-      <property role="26Ea6C" value="-Dapple.awt.graphics.UseQuartz=true" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGV" role="2hID6k">
-      <property role="26Ea6C" value="-Dide.mac.message.dialogs.as.sheets=false" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGW" role="2hID6k">
-      <property role="26Ea6C" value="-Didea.invalidate.caches.invalidates.vfs=true" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGX" role="2hID6k">
-      <property role="26Ea6C" value="-Didea.trust.disabled=false" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGY" role="2hID6k">
-      <property role="26Ea6C" value="-Dfreeze.reporter.enabled=false" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPGZ" role="2hID6k">
-      <property role="26Ea6C" value="-Didea.indices.psi.dependent.default=false" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPH0" role="2hID6k">
-      <property role="26Ea6C" value="-Dide.experimental.ui=false" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPH1" role="2hID6k">
-      <property role="2eq24a" value="true" />
-      <property role="26Ea6C" value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5071" />
-    </node>
-    <node concept="26Ea6D" id="nwXZr$UPH2" role="26FZ21">
-      <property role="2eq24a" value="true" />
-      <property role="26Ea6C" value="MPS no longer uses 32-bit version of mps.vmoptions" />
-    </node>
-  </node>
   <node concept="1l3spW" id="nwXZr$UPwD">
     <property role="TrG5h" value="com.mbeddr.formal.safetyDistribution.platforms" />
     <property role="turDy" value="build-fasten-distribution-for-specific-platforms.xml" />
@@ -20597,6 +20359,309 @@
     </node>
     <node concept="10PD9b" id="nwXZr_8lfh" role="10PD9s" />
     <node concept="3b7kt6" id="nwXZr_8lfj" role="10PD9s" />
+  </node>
+  <node concept="26EafH" id="nwXZr$UPFw">
+    <property role="26FY9R" value="jetbrains.mps.Launcher" />
+    <property role="TrG5h" value="fastenScripts" />
+    <ref role="1_kbm$" node="42jqVeFkUtq" resolve="FASTEN 2023.2" />
+    <node concept="26EafG" id="nwXZr$UPFx" role="26Ea7d">
+      <property role="26EafJ" value="lib/annotations.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFy" role="26Ea7d">
+      <property role="26EafJ" value="lib/app.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFz" role="26Ea7d">
+      <property role="26EafJ" value="lib/bouncy-castle.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPF$" role="26Ea7d">
+      <property role="26EafJ" value="lib/branding.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPF_" role="26Ea7d">
+      <property role="26EafJ" value="lib/byte-buddy-agent.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFA" role="26Ea7d">
+      <property role="26EafJ" value="lib/eclipse.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFB" role="26Ea7d">
+      <property role="26EafJ" value="lib/error-prone-annotations.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFC" role="26Ea7d">
+      <property role="26EafJ" value="lib/external-system-rt.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFD" role="26Ea7d">
+      <property role="26EafJ" value="lib/externalProcess-rt.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFE" role="26Ea7d">
+      <property role="26EafJ" value="lib/forms_rt.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFF" role="26Ea7d">
+      <property role="26EafJ" value="lib/groovy.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFG" role="26Ea7d">
+      <property role="26EafJ" value="lib/grpc.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFH" role="26Ea7d">
+      <property role="26EafJ" value="lib/idea_rt.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFI" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij-coverage-agent-1.0.723.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFJ" role="26Ea7d">
+      <property role="26EafJ" value="lib/intellij-test-discovery.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFK" role="26Ea7d">
+      <property role="26EafJ" value="lib/java-impl.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFL" role="26Ea7d">
+      <property role="26EafJ" value="lib/javac2.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFM" role="26Ea7d">
+      <property role="26EafJ" value="lib/jetbrains-annotations.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFN" role="26Ea7d">
+      <property role="26EafJ" value="lib/jps-model.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFO" role="26Ea7d">
+      <property role="26EafJ" value="lib/junit4.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFP" role="26Ea7d">
+      <property role="26EafJ" value="lib/kotlin-compiler-client-embeddable-1.9.0.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFQ" role="26Ea7d">
+      <property role="26EafJ" value="lib/kotlinx-metadata-jvm-0.7.0.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFR" role="26Ea7d">
+      <property role="26EafJ" value="lib/lib.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFS" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-annotations.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFT" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-behavior-api.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFU" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-behavior-runtime.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFV" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-boot-util.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFW" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-boot.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFX" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-closures.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFY" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-collections.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPFZ" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-constraints-runtime.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPG0" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-context.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPG1" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-core.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPG2" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-editor-api.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPG3" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-editor-runtime.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPG4" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-editor.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPG5" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-environment.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPG6" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-feedback-api.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPG7" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-generator.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPG8" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-icons.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPG9" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-messages-api.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGa" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-messages-for-legacy-constraints.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGb" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-messages-for-rules.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGc" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-messages-for-structure.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGd" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-openapi.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGe" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-persistence.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGf" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-platform.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGg" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-problem.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGh" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-project-check.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGi" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-references.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGj" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-resources.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGk" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-resources_en.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGl" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-test.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGm" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-textgen.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGn" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-tips.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGo" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-tuples.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGp" role="26Ea7d">
+      <property role="26EafJ" value="lib/mps-workbench.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGq" role="26Ea7d">
+      <property role="26EafJ" value="lib/platform-loader.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGr" role="26Ea7d">
+      <property role="26EafJ" value="lib/protobuf.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGs" role="26Ea7d">
+      <property role="26EafJ" value="lib/pty4j.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGt" role="26Ea7d">
+      <property role="26EafJ" value="lib/rd.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGu" role="26Ea7d">
+      <property role="26EafJ" value="lib/stats.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGv" role="26Ea7d">
+      <property role="26EafJ" value="lib/testFramework.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGw" role="26Ea7d">
+      <property role="26EafJ" value="lib/util-8.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGx" role="26Ea7d">
+      <property role="26EafJ" value="lib/util.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGy" role="26Ea7d">
+      <property role="26EafJ" value="lib/util_rt.jar" />
+    </node>
+    <node concept="26EafG" id="nwXZr$UPGz" role="26Ea7d">
+      <property role="26EafJ" value="lib/ant/lib/ant.jar" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPG$" role="2hID6k">
+      <property role="2eq24a" value="true" />
+      <property role="26Ea6C" value="Common IntelliJ Platform options:" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPG_" role="2hID6k">
+      <property role="26Ea6C" value="-Xms256m" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGA" role="2hID6k">
+      <property role="26Ea6C" value="-Xmx2048m" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGB" role="2hID6k">
+      <property role="26Ea6C" value="-XX:ReservedCodeCacheSize=512m" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGC" role="2hID6k">
+      <property role="26Ea6C" value="-XX:+UseG1GC" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGD" role="2hID6k">
+      <property role="26Ea6C" value="-XX:SoftRefLRUPolicyMSPerMB=50" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGE" role="2hID6k">
+      <property role="26Ea6C" value="-XX:CICompilerCount=2" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGF" role="2hID6k">
+      <property role="26Ea6C" value="-XX:+HeapDumpOnOutOfMemoryError" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGG" role="2hID6k">
+      <property role="26Ea6C" value="-XX:-OmitStackTraceInFastThrow" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGH" role="2hID6k">
+      <property role="26Ea6C" value="-XX:+IgnoreUnrecognizedVMOptions" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGI" role="2hID6k">
+      <property role="26Ea6C" value="-ea" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGJ" role="2hID6k">
+      <property role="26Ea6C" value="-Djava.system.class.loader=com.intellij.util.lang.PathClassLoader" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGK" role="2hID6k">
+      <property role="26Ea6C" value="-Dsun.io.useCanonCaches=false" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGL" role="2hID6k">
+      <property role="26Ea6C" value="-Dsun.java2d.metal=true" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGM" role="2hID6k">
+      <property role="26Ea6C" value="-Djdk.http.auth.tunneling.disabledSchemes=&quot;&quot;" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGN" role="2hID6k">
+      <property role="26Ea6C" value="-Djdk.attach.allowAttachSelf=true" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGO" role="2hID6k">
+      <property role="26Ea6C" value="-Djdk.module.illegalAccess.silent=true" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGP" role="2hID6k">
+      <property role="26Ea6C" value="-Dkotlinx.coroutines.debug=off" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGQ" role="2hID6k">
+      <property role="26Ea6C" value="-Dsun.tools.attach.tmp.only=true" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGR" role="2hID6k">
+      <property role="2eq24a" value="true" />
+      <property role="26Ea6C" value="Additional MPS options:" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGS" role="2hID6k">
+      <property role="26Ea6C" value="-client" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGT" role="2hID6k">
+      <property role="26Ea6C" value="-Dfile.encoding=UTF-8" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGU" role="2hID6k">
+      <property role="26Ea6C" value="-Dapple.awt.graphics.UseQuartz=true" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGV" role="2hID6k">
+      <property role="26Ea6C" value="-Dide.mac.message.dialogs.as.sheets=false" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGW" role="2hID6k">
+      <property role="26Ea6C" value="-Didea.invalidate.caches.invalidates.vfs=true" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGX" role="2hID6k">
+      <property role="26Ea6C" value="-Didea.trust.disabled=false" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGY" role="2hID6k">
+      <property role="26Ea6C" value="-Dfreeze.reporter.enabled=false" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPGZ" role="2hID6k">
+      <property role="26Ea6C" value="-Didea.indices.psi.dependent.default=false" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPH0" role="2hID6k">
+      <property role="26Ea6C" value="-Dide.experimental.ui=false" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPH1" role="2hID6k">
+      <property role="2eq24a" value="true" />
+      <property role="26Ea6C" value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5071" />
+    </node>
+    <node concept="26Ea6D" id="nwXZr$UPH2" role="26FZ21">
+      <property role="2eq24a" value="true" />
+      <property role="26Ea6C" value="MPS no longer uses 32-bit version of mps.vmoptions" />
+    </node>
   </node>
 </model>
 

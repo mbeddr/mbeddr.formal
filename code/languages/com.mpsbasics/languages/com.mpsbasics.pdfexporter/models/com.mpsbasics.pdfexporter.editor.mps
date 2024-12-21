@@ -93,6 +93,7 @@
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
       </concept>
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -374,6 +375,33 @@
       </node>
       <node concept="3F0ifn" id="5rjUx$vLvj6" role="3EZMnx">
         <property role="3F0ifm" value=";" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6y4EGjKNrRP">
+    <ref role="1XX52x" to="1ob6:6y4EGjKNrRM" resolve="HtmlPage" />
+    <node concept="3EZMnI" id="6y4EGjKNrS0" role="2wV5jI">
+      <node concept="2iRkQZ" id="6y4EGjKNrS1" role="2iSdaV" />
+      <node concept="3EZMnI" id="6y4EGjKNrRT" role="3EZMnx">
+        <node concept="2iRfu4" id="6y4EGjKNrRU" role="2iSdaV" />
+        <node concept="PMmxH" id="6y4EGjKNrRV" role="3EZMnx">
+          <ref role="PMmxG" node="24pF5$oXmdr" resolve="PageIndex" />
+        </node>
+        <node concept="3F0ifn" id="6y4EGjKNrRW" role="3EZMnx">
+          <property role="3F0ifm" value="HTML text (needs to be correct HTML):" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6y4EGjKNrS3" role="3EZMnx">
+        <node concept="VPM3Z" id="6y4EGjKNrS5" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6y4EGjKNrS9" role="3EZMnx" />
+        <node concept="3XFhqQ" id="6y4EGjKNrSb" role="3EZMnx" />
+        <node concept="2iRfu4" id="6y4EGjKNrS8" role="2iSdaV" />
+        <node concept="3F1sOY" id="6y4EGjKNrSf" role="3EZMnx">
+          <ref role="1NtTu8" to="1ob6:6y4EGjKNrRO" resolve="text" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6y4EGjKNrSh" role="3EZMnx">
+        <property role="3F0ifm" value="---" />
       </node>
     </node>
   </node>

@@ -605,6 +605,9 @@
       <node concept="m$_yC" id="3TNxfDZ8qPv" role="m$_yJ">
         <ref role="m$_y1" to="al5i:Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
       </node>
+      <node concept="m$_yC" id="hKYaKNdjV$" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:3$A0JaN5ezp" resolve="MPS.ThirdParty" />
+      </node>
     </node>
     <node concept="m$_wf" id="2MrvZqtGPGn" role="3989C9">
       <property role="m$_wk" value="com.mpsbasics.testutils" />
@@ -2095,6 +2098,63 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="hKYaKNc7M8" role="3bR37C">
+          <node concept="1BurEX" id="hKYaKNc7M9" role="1SiIV1">
+            <node concept="398BVA" id="hKYaKNc7LV" role="1BurEY">
+              <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="hKYaKNc7LW" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="hKYaKNc7LX" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.pdfbox" />
+                  <node concept="2Ry0Ak" id="hKYaKNc7LY" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="hKYaKNc7LZ" role="2Ry0An">
+                      <property role="2Ry0Am" value="openhtmltopdf-core-1.1.23.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="hKYaKNc7Mn" role="3bR37C">
+          <node concept="1BurEX" id="hKYaKNc7Mo" role="1SiIV1">
+            <node concept="398BVA" id="hKYaKNc7Ma" role="1BurEY">
+              <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="hKYaKNc7Mb" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="hKYaKNc7Mc" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.pdfbox" />
+                  <node concept="2Ry0Ak" id="hKYaKNc7Md" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="hKYaKNc7Me" role="2Ry0An">
+                      <property role="2Ry0Am" value="openhtmltopdf-pdfbox-1.1.23.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="hKYaKNc7MA" role="3bR37C">
+          <node concept="1BurEX" id="hKYaKNc7MB" role="1SiIV1">
+            <node concept="398BVA" id="hKYaKNc7Mp" role="1BurEY">
+              <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="hKYaKNc7Mq" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="hKYaKNc7Mr" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.pdfbox" />
+                  <node concept="2Ry0Ak" id="hKYaKNc7Ms" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="hKYaKNc7Mt" role="2Ry0An">
+                      <property role="2Ry0Am" value="xmpbox-3.0.1.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2u7UHDC1TKp" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2193,6 +2253,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="hKYaKNc7Nd" role="3bR37C">
+          <node concept="3bR9La" id="hKYaKNc7Ne" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
           </node>
         </node>
       </node>
