@@ -17,6 +17,7 @@ plugins {
 
 val jbrVers = "17.0.8.1-b1000.32"
 val jbrWindowsVers = "jbr_jcef-17.0.8.1-windows-x64-b1000.32"
+val jbrLinuxVers = "jbr_jcef-17.0.8.1-linux-x64-b1000.32"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -161,6 +162,16 @@ val defaultScriptArgs = mapOf(
 )
 
 fun scriptFile(relativePath: String):File = File("$rootDir/build/scripts/patched/$relativePath")
+
+fun unpackAndRenameJBR(archiveName : String, nameOfDirectoryInsideArchive : String, nameOfJbrDirectory : String) {
+    val jbrDownloadDir = jdkDir.toString() + "/../jbrDownload";
+    //project.delete(files("${jbrDownloadDir}"));
+    copy {
+        from(tarTree(resources.gzip(jdkDir.toString() + "/${archiveName}")))
+        into(jbrDownloadDir)
+    }
+    file(jbrDownloadDir + "/${nameOfDirectoryInsideArchive}").renameTo(file("${jbrDownloadDir}/${nameOfJbrDirectory}"))
+}
 
 tasks {
     val configureJava by registering {
@@ -355,49 +366,41 @@ tasks {
             val resolvedArtifact = configurations["jbrWin"].resolvedConfiguration.resolvedArtifacts.find { ra -> ra.file.name == filename }!!
             resolvedArtifact.name + "-" + resolvedArtifact.classifier + "." + resolvedArtifact.extension
         }
+
+        doLast {
+            unpackAndRenameJBR("jbr_jcef-windows-x64.tgz", jbrWindowsVers, "jbr_windows");
+        }
     }
 
-    val unpackDistribution by registering(Copy::class) {
-        from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-${version}.zip"))
-        into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
+    val resolveJBR_Linux by registering(Copy::class) {
+        from(configurations["jbrLinux"])
+        into(jdkDir)
+        rename { filename ->
+            val resolvedArtifact = configurations["jbrLinux"].resolvedConfiguration.resolvedArtifacts.find { ra -> ra.file.name == filename }!!
+            resolvedArtifact.name + "-" + resolvedArtifact.classifier + "." + resolvedArtifact.extension
+        }
+
+        doLast {
+            unpackAndRenameJBR("jbr_jcef-linux-x64.tgz", jbrLinuxVers, "jbr_linux");
+        }
     }
 
-    val deleteJBR by registering(Delete::class) {
-        dependsOn(unpackDistribution)
-        delete("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/jbr/")
+    val package_fasten_distribution_for_specific_platforms by registering(BuildLanguages::class) {
+        dependsOn(resolveJBR_Win, resolveJBR_Linux, build_fasten_safety_distribution)
+        script = scriptFile("build-fasten-distribution-for-specific-platforms.xml")
     }
 
-    val fix_JNA_for_Windows by registering(Copy::class) {
-        dependsOn(unpackDistribution)
-        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/amd64/")
-        into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/lib/jna/")
+    val produce_fasten_distribution_win by registering(Zip::class) {
+        dependsOn(package_fasten_distribution_for_specific_platforms)
+        from(zipTree(artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Win.zip")))
+        destinationDirectory = artifactsDir
     }
 
-    val fix_BIN_for_Windows by registering(Copy::class) {
-        dependsOn(unpackDistribution)
-        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/win/")
-        into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/bin/")
-    }
-
-    val unpack_windows_JBR by registering(Copy::class) {
-        dependsOn(resolveJBR_Win, deleteJBR, fix_JNA_for_Windows, fix_BIN_for_Windows)
-        from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
-        into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
-    }
-
-    val package_fasten_safety_distribution_win by registering(Zip::class) {
-        dependsOn(resolveJBR_Win, build_fasten_safety_distribution, unpack_windows_JBR)
-        archiveBaseName.set("fasten-${version}-Win")
-        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/")
-        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/$jbrWindowsVers") {
-	        into("jbr")
-	    }
-    }
-
-    val package_fasten_safety_distribution_linux by registering(Zip::class) {
-        dependsOn(build_fasten_safety_distribution)
-        archiveBaseName.set("fasten-${version}-Linux")
-        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-${version}.zip")
+    val produce_fasten_distribution_linux by registering(Tar::class) {
+        //dependsOn(package_fasten_distribution_for_specific_platforms)
+        compression = Compression.GZIP
+        from(tarTree(artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Linux.tar.gz")))
+        destinationDirectory = artifactsDir
     }
 
     val build_all_languages by registering {
@@ -540,12 +543,12 @@ publishing {
 	    create<MavenPublication>("FASTEN_WIN_RCP") {
             groupId = "fasten"
             artifactId = "win.rcp"
-            artifact(tasks.named("package_fasten_safety_distribution_win"))
+            artifact(tasks.named("produce_fasten_distribution_win"))
         }
         create<MavenPublication>("FASTEN_LINUX_RCP") {
            groupId = "fasten"
            artifactId = "linux.rcp"
-           artifact(tasks.named("package_fasten_safety_distribution_linux"))
+           artifact(tasks.named("produce_fasten_distribution_linux"))
         }
     }
 }
