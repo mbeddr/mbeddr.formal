@@ -390,14 +390,17 @@ tasks {
         script = scriptFile("build-fasten-distribution-for-specific-platforms.xml")
     }
 
-    val produce_fasten_distribution_win by registering {
+    val produce_fasten_distribution_win by registering(Zip::class) {
         dependsOn(package_fasten_distribution_for_specific_platforms)
-        artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Win.zip")
+        from(zipTree(artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Win.zip")))
+        destinationDirectory = artifactsDir
     }
 
-    val produce_fasten_distribution_linux by registering {
-        dependsOn(package_fasten_distribution_for_specific_platforms)
-        artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Linux.tar.gz")
+    val produce_fasten_distribution_linux by registering(Tar::class) {
+        //dependsOn(package_fasten_distribution_for_specific_platforms)
+        compression = Compression.GZIP
+        from(tarTree(artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Linux.tar.gz")))
+        destinationDirectory = artifactsDir
     }
 
     val build_all_languages by registering {
