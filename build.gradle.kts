@@ -397,10 +397,11 @@ tasks {
     }
 
     val produce_fasten_distribution_linux by registering(Tar::class) {
-        //dependsOn(package_fasten_distribution_for_specific_platforms)
+        dependsOn(package_fasten_distribution_for_specific_platforms)
         compression = Compression.GZIP
         from(tarTree(artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Linux.tar.gz")))
         destinationDirectory = artifactsDir
+        archiveFileName = "fasten-${version}-Linux.tar.gz"
     }
 
     val build_all_languages by registering {
