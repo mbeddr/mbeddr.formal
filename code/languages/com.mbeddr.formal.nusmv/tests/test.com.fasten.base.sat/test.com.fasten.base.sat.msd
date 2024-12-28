@@ -9,6 +9,7 @@
     <facet compile="mps" classes="mps" ext="no" type="java">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet type="tests" />
   </facets>
   <dependencies>
     <dependency reexport="false">e9038998-a640-4eb0-b13b-4b4970869bbd(com.fasten.base.sat)</dependency>
