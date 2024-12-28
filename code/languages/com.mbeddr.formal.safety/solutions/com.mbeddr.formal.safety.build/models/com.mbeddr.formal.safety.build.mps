@@ -7873,6 +7873,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="6XiJsMeelVY" role="3bR31x">
+          <node concept="3LXTmp" id="6XiJsMeelVZ" role="3rtmxm">
+            <node concept="3qWCbU" id="6XiJsMeelW0" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="6XiJsMeelW1" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="6XiJsMeelW2" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6XiJsMeelW3" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.base.sat" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="5t37uj6UEjA" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -18935,6 +18951,22 @@
         <node concept="1SiIV0" id="7G1xrtoxQaf" role="3bR37C">
           <node concept="3bR9La" id="7G1xrtoxQag" role="1SiIV1">
             <ref role="3bR37D" node="7G1xrtoxJNz" resolve="com.fasten.base.sat" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="6XiJsMeelW5" role="3bR31x">
+          <node concept="3LXTmp" id="6XiJsMeelW6" role="3rtmxm">
+            <node concept="3qWCbU" id="6XiJsMeelW7" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="6XiJsMeelW8" role="3LXTmr">
+              <ref role="398BVh" node="6ucyvMUDFdw" resolve="mbeddr.formal.nusmv.code" />
+              <node concept="2Ry0Ak" id="6XiJsMeelW9" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="6XiJsMeelWa" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.fasten.base.sat" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
