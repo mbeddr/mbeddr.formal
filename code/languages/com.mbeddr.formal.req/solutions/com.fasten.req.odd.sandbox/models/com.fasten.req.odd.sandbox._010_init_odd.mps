@@ -14,7 +14,7 @@
   </imports>
   <registry>
     <language id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd">
-      <concept id="1743143573359941966" name="com.fasten.req.odd.structure.IODDParameterDimensionLike" flags="ng" index="MFNEm">
+      <concept id="1743143573359941966" name="com.fasten.req.odd.structure.IODDParameterDimensionLike" flags="ngI" index="MFNEm">
         <child id="4312077340877644477" name="alternatives" index="3SOB73" />
       </concept>
       <concept id="4464095630345135492" name="com.fasten.req.odd.structure.PlainTextExpression" flags="ng" index="3fUWbm">
@@ -52,7 +52,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>

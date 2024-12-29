@@ -10,7 +10,7 @@
   </imports>
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -25,6 +25,7 @@
         <child id="4334402999003312335" name="oddAttributes" index="wR1hv" />
       </concept>
       <concept id="4334402999003312332" name="com.fasten.req.asam_open_odd.structure.OddAttribute" flags="ng" index="wR1hs">
+        <reference id="4334402999003312337" name="isTypeOf" index="wR1h1" />
         <reference id="4334402999003319641" name="source" index="wRuB9" />
       </concept>
       <concept id="227259047947405442" name="com.fasten.req.asam_open_odd.structure.OddParameterRef" flags="ng" index="1FKmD$">
@@ -41,6 +42,7 @@
     <node concept="wR1hs" id="3KAT90sYKPa" role="wR1hv">
       <property role="TrG5h" value="Rainfall" />
       <ref role="wRuB9" to="jgkh:2jtY4wYFdE0" resolve="BSI PAS 1883" />
+      <ref role="wR1h1" to="jgkh:dewOy1UJzP" resolve="Distributor roads" />
     </node>
   </node>
   <node concept="2nzRdi" id="cBoIpCTl6I">
