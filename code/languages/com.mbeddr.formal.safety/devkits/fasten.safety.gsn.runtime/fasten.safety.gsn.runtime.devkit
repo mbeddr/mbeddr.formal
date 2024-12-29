@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="fasten.safety.gsn.runtime" uuid="16e7e722-0522-46f7-b3be-41f15da742ed">
+  <exported-language name="546ac349-3106-438d-b92b-7d2ebfa2ade8(com.mbeddr.formal.safety.argument.runtime)" />
+  <exported-language name="1118d03f-f774-4a18-9e75-2357f8563d46(com.mbeddr.formal.safety.argument.spi)" />
+  <extendedDevKits>
+    <extendedDevKit>b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+

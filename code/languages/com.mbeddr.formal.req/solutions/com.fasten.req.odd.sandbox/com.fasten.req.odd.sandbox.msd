@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.fasten.req.odd.sandbox" uuid="73fb596f-9570-4b3a-ac73-e7cd09a99ac8" moduleVersion="0" compileInMPS="true">
+<solution name="com.fasten.req.odd.sandbox" uuid="73fb596f-9570-4b3a-ac73-e7cd09a99ac8" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <dependencies>
     <dependency reexport="false">8fe22e59-5111-4d11-87a2-2938e839b2fd(com.fasten.req.ontology.lib)</dependency>
   </dependencies>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="1e9opmpebsq">
+    <property role="TrG5h" value="extract_from_G3.4.2" />
+    <property role="3GE5qa" value="3_improvement_process" />
+    <node concept="2vn7WC" id="1e9opmpdGUK" role="2vn1q5">
+      <property role="TrG5h" value="G3.4.2" />
+      <node concept="19SGf9" id="1e9opmpdHRn" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKob" role="19SJt6">
+          <property role="19SUeA" value="Anomaly health status is appropriately&#10;reviewed by relevant internal stakeholders" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGUM" role="2vn1q5">
+      <property role="TrG5h" value="G3.4.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHRo" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKoc" role="19SJt6">
+          <property role="19SUeA" value="Anomaly health status is appropriately&#10;reviewed by relevant internal stakeholders" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGUO" role="2vn1q5">
+      <property role="TrG5h" value="Sn3.4.2.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHRp" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKod" role="19SJt6">
+          <property role="19SUeA" value="Anomaly resolution process\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGUQ" role="2vn1q5">
+      <property role="TrG5h" value="Sn3.4.2.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHRq" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKoe" role="19SJt6">
+          <property role="19SUeA" value="Anomaly report appropriately closed\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGUS" role="2vn1q5">
+      <property role="TrG5h" value="Sn3.4.2.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHRr" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKof" role="19SJt6">
+          <property role="19SUeA" value="Corrective actions deployed\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGUU" role="2vn1q5">
+      <property role="TrG5h" value="Sn3.4.2.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHRs" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKog" role="19SJt6">
+          <property role="19SUeA" value="Preventative actions deployed " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGUW" role="2vn1q5">
+      <property role="TrG5h" value="G3.4.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHRt" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKoh" role="19SJt6">
+          <property role="19SUeA" value="The Company regularly reviews anomalies&#10;in cross-functional stakeholder reviews" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGUY" role="2vn1q5">
+      <property role="TrG5h" value="Sn3.4.2.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHRu" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKoi" role="19SJt6">
+          <property role="19SUeA" value="Anomaly review stakeholders\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGV0" role="2vn1q5">
+      <property role="TrG5h" value="Sn3.4.2.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHRv" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKoj" role="19SJt6">
+          <property role="19SUeA" value="Anomaly resolution process\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGV2" role="2vn1q5">
+      <property role="TrG5h" value="Sn3.4.2.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHRw" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKok" role="19SJt6">
+          <property role="19SUeA" value="SRB meeting agenda\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGV4" role="2vn1q5">
+      <property role="TrG5h" value="Sn3.4.2.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHRx" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKol" role="19SJt6">
+          <property role="19SUeA" value="SRB meeting minutes\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGV6" role="2vn1q5">
+      <property role="TrG5h" value="Sn3.4.2.2.5" />
+      <node concept="19SGf9" id="1e9opmpdHRy" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKom" role="19SJt6">
+          <property role="19SUeA" value="SRB meeting action items " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGV8" role="2vn1q5">
+      <property role="TrG5h" value="Sn3.4.2.2.6" />
+      <node concept="19SGf9" id="1e9opmpdHRz" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKon" role="19SJt6">
+          <property role="19SUeA" value="Action item traceability to change requests" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGVa" role="2vn1q5">
+      <property role="TrG5h" value="G3.4.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHR$" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKoo" role="19SJt6">
+          <property role="19SUeA" value="The stakeholder review output is fed&#10;back to the development process to effect&#10;change " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGVc" role="2vn1q5">
+      <property role="TrG5h" value="Sn3.4.2.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHR_" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKop" role="19SJt6">
+          <property role="19SUeA" value="SRB meeting minutes " />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGUN" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGUK" resolve="G3.4.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGUM" resolve="G3.4.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGUP" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGUO" resolve="Sn3.4.2.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdGUM" resolve="G3.4.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGUR" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGUQ" resolve="Sn3.4.2.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdGUM" resolve="G3.4.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGUT" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGUS" resolve="Sn3.4.2.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdGUM" resolve="G3.4.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGUV" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGUM" resolve="G3.4.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGUU" resolve="Sn3.4.2.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGUX" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGUW" resolve="G3.4.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdGUK" resolve="G3.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGUZ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGUW" resolve="G3.4.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGUY" resolve="Sn3.4.2.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGV1" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGV0" resolve="Sn3.4.2.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdGUW" resolve="G3.4.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGV3" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGUW" resolve="G3.4.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGV2" resolve="Sn3.4.2.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGV5" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGV4" resolve="Sn3.4.2.2.4" />
+      <ref role="3VeSjP" node="1e9opmpdGUW" resolve="G3.4.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGV7" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGUW" resolve="G3.4.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGV6" resolve="Sn3.4.2.2.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGV9" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGV8" resolve="Sn3.4.2.2.6" />
+      <ref role="3VeSjP" node="1e9opmpdGUW" resolve="G3.4.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGVb" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGVa" resolve="G3.4.2.3" />
+      <ref role="3VeSjP" node="1e9opmpdGUK" resolve="G3.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGVd" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGVc" resolve="Sn3.4.2.3.1" />
+      <ref role="3VeSjP" node="1e9opmpdGVa" resolve="G3.4.2.3" />
+    </node>
+  </node>
+</model>
+

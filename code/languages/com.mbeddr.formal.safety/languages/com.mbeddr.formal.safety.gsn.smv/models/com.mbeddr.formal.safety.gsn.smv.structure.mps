@@ -11,10 +11,7 @@
     <import index="gioj" ref="r:a6dee7e9-c79f-4293-b631-7c366a8877df(com.mbeddr.formal.nusmv.structure)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" />
-    <import index="vzqj" ref="r:27bd828c-1d2d-479d-bb43-b193c82b9c29(com.mbeddr.formal.nusmv.cbd.structure)" />
-    <import index="2qxf" ref="r:92bf1daa-4510-4ff1-a9b1-c695f68c3f1d(com.mbeddr.formal.safety.gsn.patterns.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -31,9 +28,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
-        <property id="1225118933224" name="comment" index="YLQ7P" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -59,9 +53,8 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -218,20 +211,6 @@
     <property role="TrG5h" value="SupportedBySmvResultsBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
-  </node>
-  <node concept="1TIwiD" id="4i__4Gxs2uL">
-    <property role="EcuMT" value="4946522816140814257" />
-    <property role="TrG5h" value="ComponentInterfaceRef" />
-    <ref role="1TJDcQ" to="2qxf:6rlO$dpPTOC" resolve="AbstractComponentRef" />
-    <node concept="1TJgyj" id="4i__4Gxs2vk" role="1TKVEi">
-      <property role="IQ2ns" value="4946522816140814292" />
-      <property role="20kJfa" value="componentInterface" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
-    </node>
-    <node concept="asaX9" id="4MR8i$4iWhX" role="lGtFl">
-      <property role="YLQ7P" value="to remove from FASTEN in releases after March 2020" />
-    </node>
   </node>
   <node concept="1TIwiD" id="4i__4Gxsq_o">
     <property role="EcuMT" value="4946522816140912984" />

@@ -6,6 +6,7 @@
       <modulePath path="$PROJECT_DIR$/devkits/fasten.nuxmv/fasten.nuxmv.devkit" folder="lang.nuxmv" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.base.activity/com.fasten.base.activity.mpl" folder="lang.base.activity" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.base.arch.msc/com.fasten.base.arch.msc.mpl" folder="lang.base.msc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.base.git/com.fasten.base.git.mpl" folder="lang.base" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.base.msc/com.fasten.base.msc.mpl" folder="lang.base.msc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.analyses/com.mbeddr.formal.base.analyses.mpl" folder="lang.base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.base.arch/com.mbeddr.formal.base.arch.mpl" folder="lang.base" />
@@ -31,10 +32,10 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.ocra/sandbox/com.mbeddr.formal.ocra.sandbox.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.base.activity.sandbox/com.fasten.base.activity.sandbox.msd" folder="lang.base.activity" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.base.msc.sandbox/com.fasten.base.msc.sandbox.msd" folder="lang.base.msc" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.fasten.base.sat/com.fasten.base.sat.msd" folder="lang.base.sat" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.operatorspanel.rt/com.mbeddr.formal.base.operatorspanel.rt.msd" folder="lang.base" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.pluginSolution/com.mbeddr.formal.base.pluginSolution.msd" folder="lang.base" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.base.tooling/com.mbeddr.formal.base.tooling.msd" folder="lang.base" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.build/com.mbeddr.formal.nusmv.build.msd" folder="build" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.cbd.pluginSolution/com.mbeddr.formal.nusmv.cbd.pluginSolution.msd" folder="lang.nusmv" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.importer.rt/com.mbeddr.formal.nusmv.importer.rt.msd" folder="lang.nusmv" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.nusmv.pluginSolution/com.mbeddr.formal.nusmv.pluginSolution.msd" folder="lang.nusmv" />
@@ -43,6 +44,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.rcp.tips_and_tricks/com.mbeddr.formal.rcp.tips_and_tricks.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.rcp.tutorialActions/com.mbeddr.formal.rcp.tutorialActions.msd" folder="rcp" />
       <modulePath path="$PROJECT_DIR$/tests/com.mbeddr.formal.nusmv.sandbox/com.mbeddr.formal.nusmv.sandbox.msd" folder="tests" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.fasten.base.sat/test.com.fasten.base.sat.msd" folder="lang.base.sat" />
       <modulePath path="$PROJECT_DIR$/tests/test.fasten.base/test.fasten.base.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.nusmv/test.mbeddr.formal.nusmv.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/tests/test.mbeddr.formal.nuxmv/test.mbeddr.formal.nuxmv.msd" folder="tests" />

@@ -2,7 +2,7 @@
 <model ref="r:3da489b4-91f7-49c2-a6e2-ed01b272938b(test.com.mbeddr.formal.req.tl_patterns._050_tl_patterns_requirements@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="0" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
@@ -21,6 +21,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
@@ -53,10 +54,10 @@
         <child id="7632099376748602196" name="time" index="SvwEA" />
         <child id="7632099376748602197" name="timeUnit" index="SvwEB" />
       </concept>
-      <concept id="7632099376746146979" name="com.mbeddr.formal.req.tl_patterns.structure.ISpecWithTime" flags="ng" index="Sxolh">
+      <concept id="7632099376746146979" name="com.mbeddr.formal.req.tl_patterns.structure.ISpecWithTime" flags="ngI" index="Sxolh">
         <child id="7632099376746146980" name="time" index="Sxolm" />
       </concept>
-      <concept id="7632099376746632815" name="com.mbeddr.formal.req.tl_patterns.structure.ISpecWithProbability" flags="ng" index="SB3Yt">
+      <concept id="7632099376746632815" name="com.mbeddr.formal.req.tl_patterns.structure.ISpecWithProbability" flags="ngI" index="SB3Yt">
         <child id="7632099376746632816" name="probability" index="SB3Y2" />
       </concept>
       <concept id="7632099376746544950" name="com.mbeddr.formal.req.tl_patterns.structure.HighProbabilityBound" flags="ng" index="SBTr4" />
@@ -101,7 +102,7 @@
       <concept id="2184270308345955043" name="com.mbeddr.formal.req.tl_patterns.structure.Time" flags="ng" index="3gddiA">
         <child id="2184270308345955380" name="unit" index="3gdd9L" />
       </concept>
-      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ng" index="3z0uXf">
+      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ngI" index="3z0uXf">
         <child id="6544290145033523834" name="specs" index="3z0uXc" />
       </concept>
       <concept id="6544290145033461193" name="com.mbeddr.formal.req.tl_patterns.structure.TLRequirementSpecification" flags="ng" index="3z7I3Z" />
@@ -122,7 +123,7 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
     </language>
@@ -176,7 +177,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -186,6 +187,7 @@
   </node>
   <node concept="1lH9Xt" id="6BEEv9hro2$">
     <property role="TrG5h" value="_000_Test_OccurrencePatterns" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="6BEEv9hroj$" role="1SKRRt">
       <node concept="1QQeGf" id="6BEEv9hrojD" role="1qenE9">
         <property role="TrG5h" value="_010" />

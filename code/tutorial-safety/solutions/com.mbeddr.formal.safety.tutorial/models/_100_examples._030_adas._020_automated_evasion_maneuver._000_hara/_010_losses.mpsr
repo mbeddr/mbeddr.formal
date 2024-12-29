@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:5420edf2-2eb2-443a-8588-2a7bd3924a5e(_100_examples._030_adas._020_automated_evasion_maneuver._000_hara)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="2626862697025835302" name="com.mbeddr.formal.safety.hara.structure.Losses" flags="ng" index="2HxQMi">
+        <child id="2626862697025835303" name="losses" index="2HxQMj" />
+      </concept>
+      <concept id="2626862697025835278" name="com.mbeddr.formal.safety.hara.structure.Loss" flags="ng" index="2HxQMU">
+        <property id="2626862697025835281" name="id" index="2HxQM_" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2HxQMi" id="_wUu$TYbEF">
+    <property role="TrG5h" value="_010_losses" />
+    <node concept="2HxQMU" id="_wUu$TYbEG" role="2HxQMj">
+      <property role="2HxQM_" value="LOSS_VEH_01" />
+      <property role="TrG5h" value="Vehicle Damage" />
+    </node>
+    <node concept="2HxQMU" id="_wUu$TYbEI" role="2HxQMj">
+      <property role="2HxQM_" value="LOSS_INJ_01" />
+      <property role="TrG5h" value="Fatal Injury" />
+    </node>
+    <node concept="2HxQMU" id="_wUu$TYbEH" role="2HxQMj">
+      <property role="2HxQM_" value="LOSS_INJ_02" />
+      <property role="TrG5h" value="Severe Injury" />
+    </node>
+    <node concept="2HxQMU" id="_wUu$TYbEJ" role="2HxQMj">
+      <property role="2HxQM_" value="LOSS_INJ_03" />
+      <property role="TrG5h" value="Light Injury" />
+    </node>
+  </node>
+</model>
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:f55b42c2-771a-4828-bc62-5b64fd2520eb(_010_features._020_hazards_and_risk_analysis)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="2626862697025835302" name="com.mbeddr.formal.safety.hara.structure.Losses" flags="ng" index="2HxQMi">
+        <child id="2626862697025835303" name="losses" index="2HxQMj" />
+      </concept>
+      <concept id="2626862697025835278" name="com.mbeddr.formal.safety.hara.structure.Loss" flags="ng" index="2HxQMU">
+        <property id="2626862697025835281" name="id" index="2HxQM_" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2HxQMi" id="7Jm8RM1zooG">
+    <property role="TrG5h" value="_100_losses" />
+    <node concept="2HxQMU" id="7Jm8RM1zooH" role="2HxQMj">
+      <property role="2HxQM_" value="PASS_SEV_INJ" />
+      <property role="TrG5h" value="passenger severe injury which requires hospitalization" />
+    </node>
+    <node concept="2HxQMU" id="7Jm8RM1zooJ" role="2HxQMj">
+      <property role="2HxQM_" value="PASS_LIGHT_INJ" />
+      <property role="TrG5h" value="passenger light injury which does not require hospitalization" />
+    </node>
+    <node concept="2HxQMU" id="7Jm8RM1zooO" role="2HxQMj">
+      <property role="2HxQM_" value="DRIVER_SEV_INJ" />
+      <property role="TrG5h" value="driver severe injury which requires hospitalization" />
+    </node>
+    <node concept="2HxQMU" id="7Jm8RM1zooN" role="2HxQMj">
+      <property role="2HxQM_" value="DRIVER_LIGHT_INJ" />
+      <property role="TrG5h" value="driver light injury which does not require hospitalization" />
+    </node>
+  </node>
+</model>
+

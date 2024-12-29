@@ -9,7 +9,9 @@
   <property name="mbeddr.formal.safety.code" location="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety" />
   <property name="dependencies.root" location="${mbeddr.formal.home}/build/dependencies" />
   <property name="dependencies.mbeddr.platform" location="${dependencies.root}/com.mbeddr.platform" />
+  <property name="dependencies.mpsqa" location="${mbeddr.formal.home}/build/dependencies/org.mpsqa.allInOne" />
   <property name="artifacts.mps" location="${mps.home}" />
+  <property name="artifacts.org.mpsqa.base" location="${dependencies.mpsqa}" />
   <property name="artifacts.com.mbeddr.platform" location="${dependencies.mbeddr.platform}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.platform}/build.properties" prefix="import.com.mbeddr.platform" />
@@ -29,6 +31,10 @@
   <property name="com.mbeddr.platform.build" value="${import.com.mbeddr.platform.com.mbeddr.platform.build}" />
   <property name="com.mbeddr.platform.mbeddr.version" value="${import.com.mbeddr.platform.com.mbeddr.platform.mbeddr.version}" />
   <property name="de.itemis.mps.extensions.versionNumber" value="${import.com.mbeddr.platform.de.itemis.mps.extensions.versionNumber}" />
+  <property name="com.mbeddr.mpsutil.actionsfilter.major.version" value="${import.com.mbeddr.platform.com.mbeddr.mpsutil.actionsfilter.major.version}" />
+  <property name="com.mbeddr.mpsutil.actionsfilter.minor.version" value="${import.com.mbeddr.platform.com.mbeddr.mpsutil.actionsfilter.minor.version}" />
+  <property name="com.mbeddr.mpsutil.actionsfilter.build" value="${import.com.mbeddr.platform.com.mbeddr.mpsutil.actionsfilter.build}" />
+  <property name="com.mbeddr.mpsutil.actionsfilter.mbeddr.version" value="${import.com.mbeddr.platform.com.mbeddr.mpsutil.actionsfilter.mbeddr.version}" />
   <property name="environment" value="env" />
   <property name="env.JAVA_HOME" value="${java.home}/.." />
   <property name="jdk.home" value="${env.JAVA_HOME}" />
@@ -37,9 +43,14 @@
   
   <path id="path.mps.ant.path">
     <pathelement location="${artifacts.mps}/lib/ant/lib/ant-mps.jar" />
-    <pathelement location="${artifacts.mps}/lib/jdom.jar" />
-    <pathelement location="${artifacts.mps}/lib/log4j.jar" />
+    <fileset dir="${artifacts.mps}/lib">
+      <include name="util-8.jar" />
+    </fileset>
   </path>
+  
+  <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
+  
+  <generator-settings id="m2m-defaults" strictMode="true" parallelThreads="8" inplaceTransform="false" warnWrongChild="true" createStaticRefs="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}" />
   
   <target name="assemble" depends="classes, declare-mps-tasks">
     <mkdir dir="${build.layout}" />
@@ -51,11 +62,13 @@
           <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
           <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
+          <module ref="5e8cea6b-997f-49b1-a8d8-dc2a7a6fa657(org.mpsqa.base.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
           <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
           <language id="l:3600cb0a-44dd-4a5b-9968-22924406419e:jetbrains.mps.build.mps.tests" />
+          <language id="l:d5033cee-f632-44b6-b308-89d4fbde34ff:jetbrains.mps.build.startup" />
         </uses>
         <classpath>
           <entry path="." />
@@ -87,15 +100,14 @@
     <echoxml file="${build.tmp}/default/com.fasten.assurance.build.jar/META-INF/module.xml">
       <module namespace="com.fasten.assurance.build" type="solution" uuid="7301161d-854c-45d9-b0d7-121b4fb52625">
         <dependencies>
-          <module ref="b4bbc0a5-248e-4db2-9ddc-4901a463c66c(com.mbeddr.formal.safety.build)" kind="cl" />
           <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
           <module ref="422c2909-59d6-41a9-b318-40e6256b250f(jetbrains.mps.ide.build)" kind="cl" />
+          <module ref="5e8cea6b-997f-49b1-a8d8-dc2a7a6fa657(org.mpsqa.base.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
           <language id="l:0cf935df-4699-4e9c-a132-fa109541cba3:jetbrains.mps.build.mps" />
-          <language id="l:3600cb0a-44dd-4a5b-9968-22924406419e:jetbrains.mps.build.mps.tests" />
         </uses>
         <classpath>
           <entry path="." />
@@ -105,6 +117,7 @@
     </echoxml>
     <jar destfile="${build.layout}/com.fasten.assurance.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.fasten.assurance.build" />
+      <fileset dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build" includes="icons/**, resources/**" />
       <fileset dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.fasten.assurance.build.jar" />
     </jar>
@@ -121,7 +134,7 @@
       <zipfileset file="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/com.fasten.assurance.build.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-com.fasten.assurance.build-models" prefix="module/models" />
     </jar>
-    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}</echo>
+    <echo file="${build.layout}/build.properties">mps.build.number=${mps.build.number}${line.separator}mps.date=${mps.date}${line.separator}mps.build.vcs.number=${mps.build.vcs.number}${line.separator}mps.teamcity.buildConfName=${mps.teamcity.buildConfName}${line.separator}mps.idea.platform.build.number=${mps.idea.platform.build.number}${line.separator}mps.mps.build.counter=${mps.mps.build.counter}${line.separator}mpsBootstrapCore.version.major=${mpsBootstrapCore.version.major}${line.separator}mpsBootstrapCore.version.minor=${mpsBootstrapCore.version.minor}${line.separator}mpsBootstrapCore.version.bugfixNr=${mpsBootstrapCore.version.bugfixNr}${line.separator}mpsBootstrapCore.version.eap=${mpsBootstrapCore.version.eap}${line.separator}mpsBootstrapCore.version=${mpsBootstrapCore.version}${line.separator}com.mbeddr.platform.major.version=${com.mbeddr.platform.major.version}${line.separator}com.mbeddr.platform.minor.version=${com.mbeddr.platform.minor.version}${line.separator}com.mbeddr.platform.build=${com.mbeddr.platform.build}${line.separator}com.mbeddr.platform.mbeddr.version=${com.mbeddr.platform.mbeddr.version}${line.separator}de.itemis.mps.extensions.versionNumber=${de.itemis.mps.extensions.versionNumber}${line.separator}com.mbeddr.mpsutil.actionsfilter.major.version=${com.mbeddr.mpsutil.actionsfilter.major.version}${line.separator}com.mbeddr.mpsutil.actionsfilter.minor.version=${com.mbeddr.mpsutil.actionsfilter.minor.version}${line.separator}com.mbeddr.mpsutil.actionsfilter.build=${com.mbeddr.mpsutil.actionsfilter.build}${line.separator}com.mbeddr.mpsutil.actionsfilter.mbeddr.version=${com.mbeddr.mpsutil.actionsfilter.mbeddr.version}</echo>
   </target>
   
   <target name="buildDependents" />
@@ -147,11 +160,13 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" createStaticRefs="true" fork="true" skipUnmodifiedModels="${mps.generator.skipUnmodifiedModels}" logLevel="${mps.ant.log}">
+    <generate fork="true" logLevel="${mps.ant.log}">      
+      <settings refid="m2m-defaults" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.build" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build" />
       <plugin path="${artifacts.mps}/plugins/mps-build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" />
+      <plugin path="${artifacts.org.mpsqa.base}/org.mpsqa.base.build" />
       <library file="${artifacts.mps}/languages/baseLanguage/closures.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/collections.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
@@ -161,14 +176,15 @@
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.javadoc.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
-      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk8.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.references.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.regexp.runtime.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.tuples.runtime.jar" />
+      <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.util.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguageInternal.jar" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editing.runtime.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editor.runtime.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.editorlang.runtime.jar" />
       <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
@@ -185,6 +201,7 @@
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.context.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.core.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.dataFlow.jar" />
+      <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.descriptor.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.editor.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.findUsages.jar" />
       <library file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.generator.generationContext.jar" />
@@ -215,13 +232,16 @@
       <library file="${artifacts.mps}/languages/make/jetbrains.mps.smodel.resources.jar" />
       <library file="${artifacts.mps}/languages/mps-stubs.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.baseLanguage.search.jar" />
-      <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.baseLanguage.util.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.platform.jar" />
       <library file="${artifacts.mps}/languages/plaf/jetbrains.mps.ide.refactoring.platform.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.analyzers.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.dataFlow.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.findUsages.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.behavior.api.jar" />
+      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.constraints.rules.runtime.jar" />
+      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.context.jar" />
+      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.problem.legacy-constraints.jar" />
+      <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.feedback.problem.rt.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.migration.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.lang.smodel.query.runtime.jar" />
       <library file="${artifacts.mps}/languages/runtimes/jetbrains.mps.refactoring.runtime.jar" />
@@ -242,6 +262,7 @@
       <jvmargs>
         <arg value="-ea" />
         <arg value="-Xmx1024m" />
+        <arg value="--add-opens=jdk.compiler/com.sun.tools.javac.api=ALL-UNNAMED" />
       </jvmargs>
       <macro name="mbeddr.formal.home" path="${mbeddr.formal.home}" />
       <macro name="mps.home" path="${mps.home}" />
@@ -249,12 +270,11 @@
       <macro name="mbeddr.formal.safety.code" path="${mbeddr.formal.safety.code}" />
       <macro name="dependencies.root" path="${dependencies.root}" />
       <macro name="dependencies.mbeddr.platform" path="${dependencies.mbeddr.platform}" />
+      <macro name="dependencies.mpsqa" path="${dependencies.mpsqa}" />
     </generate>
   </target>
   
-  <target name="declare-mps-tasks">
-    <taskdef resource="jetbrains/mps/build/ant/antlib.xml" classpathref="path.mps.ant.path" />
-  </target>
+  <target name="declare-mps-tasks" />
   
   <target name="makeDependents" />
   
@@ -269,11 +289,12 @@
       <classpath>
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build/languages/de.itemis.mps.extensions.build/de.itemis.mps.extensions.build.jar" />
+        <fileset file="${artifacts.org.mpsqa.base}/org.mpsqa.base.build/languages/build/org.mpsqa.base.build.jar" />
       </classpath>
     </javac>
   </target>
   
-  <target name="java.compile.com.fasten.assurance.build" depends="java.compile.com.mbeddr.formal.safety.build">
+  <target name="java.compile.com.fasten.assurance.build">
     <mkdir dir="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/source_gen" />
     <mkdir dir="${build.tmp}/java/out/com.fasten.assurance.build" />
     <javac destdir="${build.tmp}/java/out/com.fasten.assurance.build" fork="true" encoding="utf8" includeantruntime="false" debug="true">
@@ -282,9 +303,9 @@
         <path location="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/source_gen" />
       </src>
       <classpath>
-        <pathelement path="${build.tmp}/java/out/com.mbeddr.formal.safety.build" />
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build/languages/de.itemis.mps.extensions.build/de.itemis.mps.extensions.build.jar" />
+        <fileset file="${artifacts.org.mpsqa.base}/org.mpsqa.base.build/languages/build/org.mpsqa.base.build.jar" />
       </classpath>
     </javac>
   </target>

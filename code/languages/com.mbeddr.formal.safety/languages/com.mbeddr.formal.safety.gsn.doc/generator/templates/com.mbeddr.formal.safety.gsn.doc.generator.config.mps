@@ -2,7 +2,7 @@
 <model ref="r:5d27c933-7daf-4e28-b74f-a6ac54f15504(com.mbeddr.formal.safety.gsn.doc.generator.config)">
   <persistence version="9" />
   <languages>
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="3" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="4" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports />
@@ -23,7 +23,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -33,13 +33,13 @@
     <node concept="2SbYGw" id="5t37uj6$zuI" role="A10yx">
       <property role="TrG5h" value="temp" />
       <node concept="9PVaO" id="5t37uj6$zuJ" role="9PVG_">
-        <property role="3N1Lgt" value="models" />
+        <property role="3N1Lgt" value="tmp" />
       </node>
     </node>
     <node concept="2SbYGw" id="5t37uj6$zuK" role="Cbewh">
       <property role="TrG5h" value="img" />
       <node concept="9PVaO" id="5t37uj6$zuL" role="9PVG_">
-        <property role="3N1Lgt" value="models" />
+        <property role="3N1Lgt" value="tmp" />
       </node>
     </node>
   </node>

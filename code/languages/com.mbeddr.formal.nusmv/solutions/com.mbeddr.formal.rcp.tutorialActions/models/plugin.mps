@@ -2,10 +2,11 @@
 <model ref="r:894ef42c-935b-4344-b72e-1ec5b11dd9b0(com.mbeddr.formal.rcp.tutorialActions.plugin)">
   <persistence version="9" />
   <languages>
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -19,6 +20,7 @@
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="2ny0" ref="86441d7a-e194-42da-81a5-2161ec62a379/java:jetbrains.mps.workbench.actions(MPS.Workbench/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -30,7 +32,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -62,6 +64,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -102,7 +107,7 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -119,18 +124,13 @@
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1146644641414" name="jetbrains.mps.baseLanguage.structure.ProtectedVisibility" flags="nn" index="3Tmbuc" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
-    </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
     </language>
     <language id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml">
       <concept id="2133624044437898907" name="jetbrains.mps.core.xml.structure.XmlDoctypeDeclaration" flags="ng" index="29q25o">
@@ -169,6 +169,18 @@
         <child id="6666499814681299060" name="prolog" index="2pNm8Q" />
       </concept>
     </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+    </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
         <property id="2034914114981261751" name="severity" index="RRSoG" />
@@ -180,7 +192,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -206,8 +218,12 @@
       <node concept="Xl_RD" id="1uIpCUufwut" role="33vP2m">
         <property role="Xl_RC" value="tutorial" />
       </node>
-      <node concept="NWlO9" id="1uIpCUufwN6" role="lGtFl">
-        <property role="NWlVz" value="The directory in the FASTEN installation where the tutorial is located." />
+      <node concept="z59LJ" id="1y75PbzycUw" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycUu" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycUv" role="1dT_Ay">
+            <property role="1dT_AB" value="The directory in the FASTEN installation where the tutorial is located." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="1uIpCUufw_g" role="jymVt" />
@@ -644,48 +660,28 @@
                 <node concept="3uibUv" id="7Y21hZBa4DY" role="1tU5fm">
                   <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
                 </node>
-                <node concept="2YIFZM" id="7Y21hZBa4DZ" role="33vP2m">
-                  <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.lang.String,com.intellij.openapi.project.Project,boolean)" resolve="openProject" />
+                <node concept="2YIFZM" id="12q9egMY8Tk" role="33vP2m">
+                  <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.nio.file.Path,com.intellij.ide.impl.OpenProjectTask)" resolve="openProject" />
                   <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
-                  <node concept="37vLTw" id="7Y21hZBa4E0" role="37wK5m">
-                    <ref role="3cqZAo" node="7Y21hZBa4DR" resolve="filePath" />
-                  </node>
-                  <node concept="37vLTw" id="7Y21hZBa4E1" role="37wK5m">
-                    <ref role="3cqZAo" node="7Y21hZBa4Dz" resolve="currentProject" />
-                  </node>
-                  <node concept="3clFbT" id="7Y21hZBa4E2" role="37wK5m">
-                    <property role="3clFbU" value="false" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="7Y21hZBa4E3" role="3cqZAp">
-              <node concept="3y3z36" id="7Y21hZBa4E4" role="3clFbw">
-                <node concept="37vLTw" id="7Y21hZBa4E5" role="3uHU7B">
-                  <ref role="3cqZAo" node="7Y21hZBa4DX" resolve="project" />
-                </node>
-                <node concept="10Nm6u" id="7Y21hZBa4E6" role="3uHU7w" />
-              </node>
-              <node concept="3clFbS" id="7Y21hZBa4E7" role="3clFbx">
-                <node concept="3clFbF" id="7Y21hZBa4E8" role="3cqZAp">
-                  <node concept="2OqwBi" id="7Y21hZBa4E9" role="3clFbG">
-                    <node concept="2YIFZM" id="7Y21hZBa4Ea" role="2Oq$k0">
-                      <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.getInstance(com.intellij.openapi.project.Project)" resolve="getInstance" />
-                      <ref role="1Pybhc" to="ofh9:~ProjectBaseDirectory" resolve="ProjectBaseDirectory" />
-                      <node concept="37vLTw" id="7Y21hZBa4Eb" role="37wK5m">
-                        <ref role="3cqZAo" node="7Y21hZBa4DX" resolve="project" />
-                      </node>
+                  <node concept="2YIFZM" id="12q9egMYsZS" role="37wK5m">
+                    <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
+                    <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
+                    <node concept="37vLTw" id="12q9egMYtnu" role="37wK5m">
+                      <ref role="3cqZAo" node="7Y21hZBa4DR" resolve="filePath" />
                     </node>
-                    <node concept="liA8E" id="7Y21hZBa4Ec" role="2OqNvi">
-                      <ref role="37wK5l" to="ofh9:~ProjectBaseDirectory.setBaseDir(com.intellij.openapi.vfs.VirtualFile)" resolve="setBaseDir" />
-                      <node concept="2OqwBi" id="7Y21hZBa4Ed" role="37wK5m">
-                        <node concept="37vLTw" id="7Y21hZBa4Ee" role="2Oq$k0">
-                          <ref role="3cqZAo" node="7Y21hZBa4DX" resolve="project" />
-                        </node>
-                        <node concept="liA8E" id="7Y21hZBa4Ef" role="2OqNvi">
-                          <ref role="37wK5l" to="4nm9:~Project.getBaseDir()" resolve="getBaseDir" />
-                        </node>
+                  </node>
+                  <node concept="2ShNRf" id="12q9egMYddK" role="37wK5m">
+                    <node concept="1pGfFk" id="12q9egMYkm7" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="btn2:~OpenProjectTask.&lt;init&gt;(boolean,com.intellij.openapi.project.Project,boolean,boolean)" resolve="OpenProjectTask" />
+                      <node concept="3clFbT" id="12q9egMYkHK" role="37wK5m">
+                        <property role="3clFbU" value="true" />
                       </node>
+                      <node concept="10Nm6u" id="12q9egMYmdt" role="37wK5m" />
+                      <node concept="3clFbT" id="12q9egMYope" role="37wK5m">
+                        <property role="3clFbU" value="true" />
+                      </node>
+                      <node concept="3clFbT" id="12q9egMYo_t" role="37wK5m" />
                     </node>
                   </node>
                 </node>
@@ -757,8 +753,12 @@
       <node concept="Xl_RD" id="7Y21hZBa7gB" role="33vP2m">
         <property role="Xl_RC" value="tutorial-safety" />
       </node>
-      <node concept="NWlO9" id="7Y21hZBa7gC" role="lGtFl">
-        <property role="NWlVz" value="The directory in the FASTEN installation where the safety-tutorial is located." />
+      <node concept="z59LJ" id="1y75PbzycUz" role="lGtFl">
+        <node concept="TZ5HA" id="1y75PbzycUx" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75PbzycUy" role="1dT_Ay">
+            <property role="1dT_AB" value="The directory in the FASTEN installation where the safety-tutorial is located." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7Y21hZBa7gD" role="jymVt" />

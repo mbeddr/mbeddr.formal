@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:430ed0bb-2a65-4f5b-a20f-e9037ef3e5fd(_100_examples._030_adas._020_automated_evasion_maneuver._020_requirements)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="u9yl" ref="r:5420edf2-2eb2-443a-8588-2a7bd3924a5e(_100_examples._030_adas._020_automated_evasion_maneuver._000_hara)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
+      <concept id="2808252663735239587" name="com.mbeddr.formal.safety.stamp.structure.ReferenceableActionDescriptionRef" flags="ng" index="rwM_8">
+        <reference id="2808252663735239588" name="action" index="rwM_f" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
+      <concept id="675797132014971920" name="com.mbeddr.formal.req.base.structure.RefinementAttribute" flags="ng" index="KAwnT">
+        <child id="675797132015040231" name="referencedRequirements" index="KALWe" />
+      </concept>
+      <concept id="675797132014971924" name="com.mbeddr.formal.req.base.structure.AbstractRequirementRef" flags="ng" index="KAwnX">
+        <reference id="675797132014971925" name="req" index="KAwnW" />
+      </concept>
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706270020326" name="createdBy" index="0ke_I" />
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="6025137760892668610" name="attributes" index="2FklKs" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
+    <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
+      <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.FunctionalSafetyReqKind" flags="ng" index="2iDXIW">
+        <child id="7998766141987827641" name="hazards" index="DABNk" />
+      </concept>
+      <concept id="4640341350605492417" name="com.mbeddr.formal.safety.req.structure.UCARefinementAttribute" flags="ng" index="J05Ou">
+        <child id="2808252663735239662" name="ucas" index="rwM$5" />
+      </concept>
+    </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
+        <reference id="7998766141987827622" name="hazard" index="DABNb" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1QQeGf" id="41_NtXJuHXI">
+    <property role="TrG5h" value="_010_FSR_deactivation" />
+    <node concept="0lhDl" id="41_NtXJuHXJ" role="1QQeBF">
+      <property role="0lsPA" value="FR_CEM_DEACTIVATION_CONDITION_PRED" />
+      <property role="0ke_I" value="dan" />
+      <node concept="19SGf9" id="41_NtXJuHXK" role="1QQeG9">
+        <node concept="19SUe$" id="41_NtXJuHXL" role="19SJt6">
+          <property role="19SUeA" value="At any time t, CEM shall deactivate if the positions of relevant actors do not correspond to the predicted positions for the time t when CEM was activated." />
+        </node>
+      </node>
+      <node concept="2iDXIW" id="41_NtXJuHYN" role="0nOlf">
+        <node concept="DABN8" id="41_NtXJuHYQ" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$U7zXF" resolve="Collision with another vehicle" />
+        </node>
+      </node>
+      <node concept="KAwnT" id="41_NtXJuHXN" role="2FklKs">
+        <node concept="KAwnX" id="41_NtXJuHXO" role="KALWe">
+          <ref role="KAwnW" node="_wUu$TZD60" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="2rSUIGXuWe2" role="1QQeBF">
+      <property role="0lsPA" value="FR_CEM_DEACTIVATION_CONDITION_PERC" />
+      <property role="0ke_I" value="dan" />
+      <node concept="19SGf9" id="2rSUIGXuWe3" role="1QQeG9">
+        <node concept="19SUe$" id="2rSUIGXuWe4" role="19SJt6">
+          <property role="19SUeA" value="During Level 3 driving, if the perception confidence is low, the driver shall be informed in [200ms] and if in [1s] the driver does not take control, then the vehicle should reach a minimal risk condition." />
+        </node>
+      </node>
+      <node concept="2iDXIW" id="2rSUIGXuWe5" role="0nOlf">
+        <node concept="DABN8" id="2rSUIGXuWe6" role="DABNk">
+          <ref role="DABNb" to="u9yl:_wUu$U7zXF" resolve="Collision with another vehicle" />
+        </node>
+      </node>
+      <node concept="J05Ou" id="2rSUIGXvl6D" role="2FklKs">
+        <node concept="rwM_8" id="2rSUIGXvl6N" role="rwM$5">
+          <ref role="rwM_f" to="u9yl:_wUu$TYGP9" resolve="UCA_PER_OBST_DET_01" />
+        </node>
+        <node concept="rwM_8" id="2rSUIGXvl6O" role="rwM$5">
+          <ref role="rwM_f" to="u9yl:_wUu$TYGP4" resolve="UCA_PER_TRACKING_01" />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

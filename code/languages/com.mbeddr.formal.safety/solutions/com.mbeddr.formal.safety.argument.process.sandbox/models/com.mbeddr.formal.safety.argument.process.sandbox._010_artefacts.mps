@@ -3,11 +3,8 @@
   <persistence version="9" />
   <languages>
     <use id="fdecb1e5-875e-41ef-a5fd-4b18f747f204" name="com.mbeddr.formal.safety.argument.process.artefacts" version="-1" />
-    <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
   </languages>
-  <imports>
-    <import index="v0ty" ref="r:f4296e65-905c-42ee-8349-52d0474604ad(com.mbeddr.formal.safety.stamp.sandbox._010_sandbox)" />
-  </imports>
+  <imports />
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -28,8 +25,25 @@
         <property id="1574221925581155850" name="date" index="UfqMa" />
         <property id="1574221925581155852" name="type" index="UfqMc" />
       </concept>
-      <concept id="1574221925581155799" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.ArtefactRelationship" flags="ng" index="UfqXn" />
-      <concept id="1574221925581136306" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.IArtefactElement" flags="ng" index="UfucM">
+      <concept id="1574221925581155533" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.Participant" flags="ng" index="UfqTd">
+        <child id="1639692281461243282" name="role" index="1vGMrz" />
+      </concept>
+      <concept id="1574221925581155799" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.ArtefactRelationship" flags="ng" index="UfqXn">
+        <property id="1574221925581155820" name="sourceModificationEffect" index="UfqXG" />
+        <property id="1574221925581155822" name="sourceRevocationEffect" index="UfqXI" />
+        <property id="1574221925581155825" name="targetModificationEffect" index="UfqXL" />
+        <property id="1574221925581155829" name="targetRevocationEffect" index="UfqXP" />
+      </concept>
+      <concept id="1574221925581155691" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.Person" flags="ng" index="UfqZF">
+        <property id="1639692281461161168" name="surname" index="1vG6ux" />
+        <property id="1639692281461161163" name="firstName" index="1vG6uU" />
+      </concept>
+      <concept id="1574221925581155694" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.Organization" flags="ng" index="UfqZI">
+        <reference id="1574221925581179044" name="parentOrganization" index="UfgC$" />
+        <child id="1574221925581155720" name="persons" index="UfqW8" />
+        <child id="1639692281461243285" name="roleDefinitions" index="1vGMr$" />
+      </concept>
+      <concept id="1574221925581136306" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.IArtefactElement" flags="ngI" index="UfucM">
         <property id="1574221925581155631" name="id" index="UfqYJ" />
         <child id="1574221925581136309" name="description" index="UfucP" />
       </concept>
@@ -46,9 +60,13 @@
       </concept>
       <concept id="1574221925581137623" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.FileRessource" flags="ng" index="Ufuhn" />
       <concept id="1574221925581137626" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.UrlRessource" flags="ng" index="Ufuhq" />
+      <concept id="1639692281461243256" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.RoleRef" flags="ng" index="1vGMo9">
+        <reference id="1639692281461243257" name="role" index="1vGMo8" />
+      </concept>
+      <concept id="1639692281461243242" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.RoleDefinition" flags="ng" index="1vGMor" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -80,6 +98,12 @@
         <property role="UfqMc" value="dd" />
         <property role="TrG5h" value="ff" />
         <property role="UfqYJ" value="ff" />
+      </node>
+      <node concept="UfqXn" id="3sgpJkb4cfj" role="UfqM4">
+        <property role="UfqXG" value="1noKC0JTmRx/Modification" />
+        <property role="UfqXI" value="1noKC0JTmRA/Revocation" />
+        <property role="UfqXL" value="1noKC0JTmRt/ToModify" />
+        <property role="UfqXP" value="1noKC0JTmRq/ToValidate" />
       </node>
     </node>
     <node concept="UfucO" id="50Wzfz4t_G$" role="UfqWl">
@@ -150,6 +174,44 @@
           <property role="19SUeA" value="some changes:&#10;- list of changes" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="UfqZI" id="3sgpJkb47ki">
+    <property role="TrG5h" value="Company" />
+    <node concept="1vGMor" id="3sgpJkb4cfl" role="1vGMr$">
+      <property role="TrG5h" value="ceo" />
+    </node>
+    <node concept="1vGMor" id="3sgpJkb4cfn" role="1vGMr$">
+      <property role="TrG5h" value="cto" />
+    </node>
+    <node concept="UfqZF" id="3sgpJkb47kj" role="UfqW8">
+      <property role="UfqYJ" value="001" />
+      <property role="1vG6uU" value="Lucky" />
+      <property role="1vG6ux" value="Luke" />
+      <node concept="1vGMo9" id="3sgpJkb4cfw" role="1vGMrz">
+        <ref role="1vGMo8" node="3sgpJkb4cfl" resolve="ceo" />
+      </node>
+    </node>
+  </node>
+  <node concept="UfqZI" id="3sgpJkb47kl">
+    <property role="TrG5h" value="Department" />
+    <ref role="UfgC$" node="3sgpJkb47ki" resolve="Company" />
+    <node concept="UfqZF" id="3sgpJkb47kr" role="UfqW8">
+      <property role="UfqYJ" value="1000" />
+      <property role="1vG6uU" value="John" />
+      <property role="1vG6ux" value="Safran" />
+      <node concept="1vGMo9" id="3sgpJkb47kt" role="1vGMrz">
+        <ref role="1vGMo8" node="3sgpJkb47km" resolve="safety expert" />
+      </node>
+      <node concept="1vGMo9" id="3sgpJkb47kv" role="1vGMrz">
+        <ref role="1vGMo8" node="3sgpJkb47ko" resolve="safety manager" />
+      </node>
+    </node>
+    <node concept="1vGMor" id="3sgpJkb47km" role="1vGMr$">
+      <property role="TrG5h" value="safety expert" />
+    </node>
+    <node concept="1vGMor" id="3sgpJkb47ko" role="1vGMr$">
+      <property role="TrG5h" value="safety manager" />
     </node>
   </node>
 </model>

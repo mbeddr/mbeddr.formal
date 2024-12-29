@@ -3,12 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
-    <use id="6d475058-7ea2-490d-87e7-0f7f46dccc66" name="com.fasten.process.review" version="0" />
     <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
   </languages>
-  <imports>
-    <import index="t3u4" ref="r:5c41598e-c66f-4e8b-a6fb-0fedbfe86144(com.fasten.process.review.sandbox.argument_review)" />
-  </imports>
+  <imports />
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
@@ -22,7 +19,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -32,7 +29,7 @@
         <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
         <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
         <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-        <property id="4583510071007917016" name="transform" index="TgtnS" />
+        <property id="4583510071007917016" name="portTransform" index="TgtnS" />
       </concept>
       <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
         <child id="8963411245960991904" name="entries" index="37mRID" />
@@ -66,10 +63,10 @@
       <node concept="37mRIm" id="5t37uj6BrLe" role="37mRID">
         <property role="37mO49" value="6287902373161319482" />
         <node concept="gqqVs" id="5t37uj6BrLc" role="37mO4d">
-          <property role="gqqTZ" value="181.0" />
-          <property role="gqqTW" value="110.0" />
+          <property role="gqqTZ" value="154.0" />
+          <property role="gqqTW" value="30.0" />
           <property role="gqqTX" value="85.0" />
-          <property role="gqqTy" value="41.0" />
+          <property role="gqqTy" value="55.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>

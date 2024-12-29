@@ -2,11 +2,11 @@
 <model ref="r:a246d6cc-4991-4d6d-845d-a5e5d5e30e43(test.mbeddr.formal.spin._100_hdl_tests_gen@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
   </languages>
   <imports>
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
@@ -19,6 +19,7 @@
       </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501895093" name="testMethods" index="1SL9yI" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
@@ -65,7 +66,7 @@
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -94,7 +95,7 @@
       <concept id="1863527487546132619" name="jetbrains.mps.lang.smodel.structure.SModelPointerType" flags="ig" index="1XwpNF" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -104,6 +105,7 @@
   </node>
   <node concept="1lH9Xt" id="5mQCqLmwNs0">
     <property role="TrG5h" value="_000_loggers" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5mQCqLmAXMD" role="1SL9yI">
       <property role="TrG5h" value="test_loggers_gen" />
       <node concept="3cqZAl" id="5mQCqLmAXME" role="3clF45" />
@@ -163,6 +165,7 @@
   </node>
   <node concept="1lH9Xt" id="6kOHW5f_Lml">
     <property role="TrG5h" value="_020_assume" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6kOHW5f_Lmm" role="1SL9yI">
       <property role="TrG5h" value="test_assume_gen" />
       <node concept="3cqZAl" id="6kOHW5f_Lmn" role="3clF45" />
@@ -213,6 +216,7 @@
   </node>
   <node concept="1lH9Xt" id="6kOHW5f_Ls8">
     <property role="TrG5h" value="_030_multistep" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="6kOHW5f_Ls9" role="1SL9yI">
       <property role="TrG5h" value="test_multistep_gen" />
       <node concept="3cqZAl" id="6kOHW5f_Lsa" role="3clF45" />
@@ -279,6 +283,7 @@
   </node>
   <node concept="1lH9Xt" id="2kmJJKS2pyx">
     <property role="TrG5h" value="_010_nondet_assign" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="2kmJJKS2pyy" role="1SL9yI">
       <property role="TrG5h" value="test_nondets_gen" />
       <node concept="3cqZAl" id="2kmJJKS2pyz" role="3clF45" />
@@ -338,6 +343,7 @@
   </node>
   <node concept="1lH9Xt" id="5SGsxw7KVLj">
     <property role="TrG5h" value="_015_random_assign" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5SGsxw7KVLk" role="1SL9yI">
       <property role="TrG5h" value="test_random_gen" />
       <node concept="3cqZAl" id="5SGsxw7KVLl" role="3clF45" />
@@ -397,6 +403,7 @@
   </node>
   <node concept="1lH9Xt" id="5SGsxw7MCHK">
     <property role="TrG5h" value="_040_nondet_choice" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5SGsxw7MCHL" role="1SL9yI">
       <property role="TrG5h" value="test_nondet_choice" />
       <node concept="3cqZAl" id="5SGsxw7MCHM" role="3clF45" />
@@ -463,6 +470,7 @@
   </node>
   <node concept="1lH9Xt" id="5SGsxw7TnsB">
     <property role="TrG5h" value="_050_when_do" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5SGsxw7TnsC" role="1SL9yI">
       <property role="TrG5h" value="test_when_do" />
       <node concept="3cqZAl" id="5SGsxw7TnsD" role="3clF45" />
@@ -529,6 +537,7 @@
   </node>
   <node concept="1lH9Xt" id="5SGsxw7VYOS">
     <property role="TrG5h" value="_100_combinatorial" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="5SGsxw7VYOT" role="1SL9yI">
       <property role="TrG5h" value="test_combinatorial" />
       <node concept="3cqZAl" id="5SGsxw7VYOU" role="3clF45" />

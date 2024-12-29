@@ -6,6 +6,12 @@
   </languages>
   <imports />
   <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
+    </language>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
       <concept id="2642765975824060179" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeDirPicker" flags="ng" index="9PVaO" />
       <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
@@ -17,7 +23,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -34,7 +40,7 @@
         <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
         <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
         <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-        <property id="4583510071007917016" name="transform" index="TgtnS" />
+        <property id="4583510071007917016" name="portTransform" index="TgtnS" />
       </concept>
       <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
         <child id="8963411245960991904" name="entries" index="37mRID" />
@@ -48,7 +54,10 @@
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
         <child id="4266958635905277632" name="content" index="2vn1q5" />
       </concept>
-      <concept id="8242542213102376275" name="com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution" flags="ng" index="2wgB4F">
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="8242542213102376275" name="com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution" flags="ngI" index="2wgB4F">
         <property id="4946522816140915512" name="hashCode" index="1_P2tN" />
         <property id="4946522816140921955" name="dateShort" index="1_P5wC" />
         <property id="4946522816140921857" name="success" index="1_P5xa" />
@@ -92,6 +101,9 @@
         <property role="1RwFax" value="true" />
         <property role="3N1Lgt" value="external_evidence" />
       </node>
+      <node concept="19SGf9" id="3x6hjiG5XJV" role="2vnaTY">
+        <node concept="19SUe$" id="3x6hjiG5XJW" role="19SJt6" />
+      </node>
     </node>
   </node>
   <node concept="2vn7XN" id="2gpUZARgwO8">
@@ -122,8 +134,8 @@
         <node concept="gqqVs" id="2gpUZARgwOU" role="37mO4d">
           <property role="gqqTZ" value="77.0" />
           <property role="gqqTW" value="59.0" />
-          <property role="gqqTX" value="153.0" />
-          <property role="gqqTy" value="96.0" />
+          <property role="gqqTX" value="195.0" />
+          <property role="gqqTy" value="100.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -138,6 +150,9 @@
       <node concept="9PVaO" id="2gpUZARgwOf" role="Kn92X">
         <property role="1RwFax" value="true" />
         <property role="3N1Lgt" value="external_evidence" />
+      </node>
+      <node concept="19SGf9" id="3x6hjiGkP7M" role="2vnaTY">
+        <node concept="19SUe$" id="3x6hjiGkP7N" role="19SJt6" />
       </node>
     </node>
   </node>

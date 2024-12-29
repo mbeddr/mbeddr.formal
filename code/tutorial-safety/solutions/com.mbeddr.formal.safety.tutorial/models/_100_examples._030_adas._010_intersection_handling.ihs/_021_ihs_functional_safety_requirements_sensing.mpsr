@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:0a67385e-17ec-4148-b1f8-83ce752e9242(_100_examples._030_adas._010_intersection_handling.ihs)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
+      <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
+        <child id="3226630706270140651" name="text" index="0nzdz" />
+      </concept>
+      <concept id="675797132014971920" name="com.mbeddr.formal.req.base.structure.RefinementAttribute" flags="ng" index="KAwnT">
+        <child id="675797132015040231" name="referencedRequirements" index="KALWe" />
+      </concept>
+      <concept id="675797132014971924" name="com.mbeddr.formal.req.base.structure.AbstractRequirementRef" flags="ng" index="KAwnX">
+        <reference id="675797132014971925" name="req" index="KAwnW" />
+      </concept>
+      <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
+        <child id="4908298719893728789" name="spec" index="1QQeAV" />
+      </concept>
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706270020326" name="createdBy" index="0ke_I" />
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="6025137760892668610" name="attributes" index="2FklKs" />
+        <child id="4908298719893728774" name="specs" index="1QQeAC" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
+    <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
+      <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.FunctionalSafetyReqKind" flags="ng" index="2iDXIW" />
+      <concept id="6025137760892770299" name="com.mbeddr.formal.safety.req.structure.AsilAttribute" flags="ng" index="2FkW4_">
+        <property id="6025137760892770342" name="asil" index="2FkWVS" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1QQeGf" id="3Jn$RV2Vwx$">
+    <property role="TrG5h" value="_021_ihs_functional_safety_requirements_sensing" />
+    <property role="3GE5qa" value="_020_functional_safety_concept" />
+    <node concept="0lhDl" id="3Jn$RV2Vwx_" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.1" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="2FkW4_" id="3Jn$RV2Vwy3" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2Vwy4" role="2FklKs">
+        <node concept="KAwnX" id="5icisZS$kaC" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vw_U" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2Vwy5" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vwzk" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_p" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_D" role="19SJt6">
+              <property role="19SUeA" value="The SoI shall require feedback from multiple sensing technologies &#10;in order to control the vehicle operation on road. " />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19SGf9" id="3Jn$RV2Vwy7" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vwzq" role="19SJt6">
+          <property role="19SUeA" value="Multiple Sensing Technologies" />
+        </node>
+      </node>
+      <node concept="2iDXIW" id="5icisZS$ka3" role="0nOlf" />
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxI" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.1.1" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="19SGf9" id="3Jn$RV2Vwys" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2VwzV" role="19SJt6">
+          <property role="19SUeA" value="Lidars Usage" />
+        </node>
+      </node>
+      <node concept="2iDXIW" id="3Jn$RV2Vwyt" role="0nOlf" />
+      <node concept="1QQeAY" id="3Jn$RV2Vwyu" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vw$1" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_u" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_I" role="19SJt6">
+              <property role="19SUeA" value="The SoI shall use data from a sensing setup of lidars &#10;to enable TPO, VRU detection functionality." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2Vwyv" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_vY/ASIL_B" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2Vwyw" role="2FklKs">
+        <node concept="KAwnX" id="4Crei7hwgZS" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vwx_" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxK" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.1.2" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="19SGf9" id="3Jn$RV2Vwyx" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vw$3" role="19SJt6">
+          <property role="19SUeA" value="Radars Usage" />
+        </node>
+      </node>
+      <node concept="2iDXIW" id="3Jn$RV2Vwyy" role="0nOlf" />
+      <node concept="1QQeAY" id="3Jn$RV2Vwyz" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vw$9" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_v" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_J" role="19SJt6">
+              <property role="19SUeA" value="The SoI shall use data from a sensing setup of radars &#10;to enable TPO, VRU detection functionality." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2Vwy$" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_vY/ASIL_B" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2Vwy_" role="2FklKs">
+        <node concept="KAwnX" id="4Crei7hwgZV" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vwx_" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxM" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.1.3" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="19SGf9" id="3Jn$RV2VwyA" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vw$b" role="19SJt6">
+          <property role="19SUeA" value="Cameras Usage" />
+        </node>
+      </node>
+      <node concept="2iDXIW" id="3Jn$RV2VwyB" role="0nOlf" />
+      <node concept="1QQeAY" id="3Jn$RV2VwyC" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vw$h" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_w" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_K" role="19SJt6">
+              <property role="19SUeA" value="The SoI shall use data from a sensing setup of cameras &#10;to enable TPO, VRU detection functionality." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2VwyD" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_vY/ASIL_B" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2VwyE" role="2FklKs">
+        <node concept="KAwnX" id="4Crei7hwgZY" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vwx_" />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxA" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.2" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="2iDXIW" id="3Jn$RV2Vwy8" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2Vwy9" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vwzw" role="19SJt6">
+          <property role="19SUeA" value="Sensors Fault Detection" />
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2Vwya" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2Vwyb" role="2FklKs">
+        <node concept="KAwnX" id="5icisZS$kaG" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vw_U" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2Vwyc" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vwzy" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_q" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_E" role="19SJt6">
+              <property role="19SUeA" value="The SoI shall detect degraded or insufficient information flow &#10;from the environment perception sensors." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxC" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.3" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="2iDXIW" id="3Jn$RV2Vwyd" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2Vwye" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2VwzC" role="19SJt6">
+          <property role="19SUeA" value="Sensors Limitations Detection w.r.t. Environment" />
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2Vwyf" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2Vwyg" role="2FklKs">
+        <node concept="KAwnX" id="5icisZS$kaJ" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vw_U" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2Vwyh" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2VwzE" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_r" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_F" role="19SJt6">
+              <property role="19SUeA" value="The SoI shall detect severe limitation of the environment perception sensors." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxE" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.4" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="2iDXIW" id="3Jn$RV2Vwyi" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2Vwyj" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2VwzK" role="19SJt6">
+          <property role="19SUeA" value="Sensing Zones" />
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2Vwyk" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2Vwyl" role="2FklKs">
+        <node concept="KAwnX" id="5icisZS$kaM" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vw_U" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2Vwym" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2VwzM" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_s" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_G" role="19SJt6">
+              <property role="19SUeA" value="The sensing setup shall be split into the following zones: &#10;long range, medium range, short range." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxG" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.5" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="2iDXIW" id="3Jn$RV2Vwyn" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2Vwyo" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2VwzS" role="19SJt6">
+          <property role="19SUeA" value="Different Sensing Capabilities" />
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2Vwyp" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2Vwyq" role="2FklKs">
+        <node concept="KAwnX" id="4Crei7hwgSi" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2Vwx_" />
+        </node>
+        <node concept="KAwnX" id="4Crei7hwgSm" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxE" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2Vwyr" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2VwzU" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_t" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_H" role="19SJt6">
+              <property role="19SUeA" value="The sensing zones shall be covered by different sensing capabilities to suit the needs &#10;of the functionality that enables a safe operation of the vehicle." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxO" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.9" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="2iDXIW" id="3Jn$RV2VwyF" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2VwyG" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vw$o" role="19SJt6">
+          <property role="19SUeA" value="Long Range Sensing" />
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2VwyH" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2VwyI" role="2FklKs">
+        <node concept="KAwnX" id="5icisZS$kaS" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxG" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2VwyJ" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vw$q" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_x" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_L" role="19SJt6">
+              <property role="19SUeA" value="The sensing setup shall be designed to enable a one-out-of-one &#10;(1oo1) sensing approach for the long range zone." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxQ" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.9.1" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="2iDXIW" id="3Jn$RV2VwyK" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2VwyL" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vw$w" role="19SJt6">
+          <property role="19SUeA" value="Lidars Usage for Long Range Sensing" />
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2VwyM" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2VwyN" role="2FklKs">
+        <node concept="KAwnX" id="5icisZS$kaW" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxO" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2VwyO" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vw$z" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_y" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_M" role="19SJt6">
+              <property role="19SUeA" value="The system shall use data from a sensing setup of lidars &#10;to enable TPO, VRU detection functionality inside the long range zone." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxS" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.10" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="2iDXIW" id="3Jn$RV2VwyP" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2VwyQ" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vw$D" role="19SJt6">
+          <property role="19SUeA" value="Medium Range Sensing" />
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2VwyR" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2VwyS" role="2FklKs">
+        <node concept="KAwnX" id="5icisZS$kaZ" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxG" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2VwyT" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vw$F" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_z" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_N" role="19SJt6">
+              <property role="19SUeA" value="The sensing setup shall be designed to enable a one-out-of-two &#10;(1oo2) sensing approach for the medium range zone." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxU" role="1QQeBF">
+      <property role="0ke_I" value="Daniel P." />
+      <property role="0lsPA" value="FSR06.10.1" />
+      <node concept="2iDXIW" id="3Jn$RV2VwyU" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2VwyV" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vw$L" role="19SJt6">
+          <property role="19SUeA" value="Radars and Lidars Usage for Medium Range Sensing" />
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2VwyW" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2VwyX" role="2FklKs">
+        <node concept="KAwnX" id="3Jn$RV2Vw$M" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxS" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2VwyY" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vw$P" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_$" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_O" role="19SJt6">
+              <property role="19SUeA" value="The system shall use data from a sensing setup of radars and lidars &#10;to enable the TPO, VRU detection functionality with reduced &#10;uncertainty inside the medium range zone." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxW" role="1QQeBF">
+      <property role="0ke_I" value="Daniel P." />
+      <property role="0lsPA" value="FSR06.10.2" />
+      <node concept="2iDXIW" id="3Jn$RV2VwyZ" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2Vwz0" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vw$V" role="19SJt6">
+          <property role="19SUeA" value="1oo2 Sensors Input Voting" />
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2Vwz1" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2Vwz2" role="2FklKs">
+        <node concept="KAwnX" id="3Jn$RV2Vw$W" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxS" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2Vwz3" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vw$X" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw__" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_P" role="19SJt6">
+              <property role="19SUeA" value="The system shall use a arbitration process to use enable at least one of the two &#10;data sources (radar or lidar) to enable TPO, VRU detection functionality &#10;with reduced uncertainty inside the medium range zone." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2VwxY" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.11" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="2iDXIW" id="3Jn$RV2Vwz4" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2Vwz5" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vw_3" role="19SJt6">
+          <property role="19SUeA" value="Short Range Sensing" />
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2Vwz6" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2Vwz7" role="2FklKs">
+        <node concept="KAwnX" id="5icisZS$kb5" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxG" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2Vwz8" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vw_5" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_A" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_Q" role="19SJt6">
+              <property role="19SUeA" value="The sensing setup shall be designed to enable a two-out-of-three &#10;(2oo3) sensing approach for the close range zone." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2Vwy0" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.11.1" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="2iDXIW" id="3Jn$RV2Vwz9" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2Vwza" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vw_b" role="19SJt6">
+          <property role="19SUeA" value="Lidars, Radars and Cameras for Short Range Sensing" />
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2Vwzb" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2Vwzc" role="2FklKs">
+        <node concept="KAwnX" id="3Jn$RV2Vw_c" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxY" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2Vwzd" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vw_g" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_B" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_R" role="19SJt6">
+              <property role="19SUeA" value="The system shall use data from a sensing setup of lidar, radar and camera setups &#10;to enable TPO, VRU detection functionality with high confidence." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="3Jn$RV2Vwy2" role="1QQeBF">
+      <property role="0lsPA" value="FSR06.11.2" />
+      <property role="0ke_I" value="Daniel P." />
+      <node concept="2iDXIW" id="3Jn$RV2Vwze" role="0nOlf" />
+      <node concept="19SGf9" id="3Jn$RV2Vwzf" role="1QQeG9">
+        <node concept="19SUe$" id="3Jn$RV2Vw_m" role="19SJt6">
+          <property role="19SUeA" value="2oo3 Sensors Input Voting" />
+        </node>
+      </node>
+      <node concept="2FkW4_" id="3Jn$RV2Vwzg" role="2FklKs">
+        <property role="2FkWVS" value="5et_HVSN_wa/ASIL_D" />
+      </node>
+      <node concept="KAwnT" id="3Jn$RV2Vwzh" role="2FklKs">
+        <node concept="KAwnX" id="3Jn$RV2Vw_n" role="KALWe">
+          <ref role="KAwnW" node="3Jn$RV2VwxY" />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="3Jn$RV2Vwzi" role="1QQeAC">
+        <node concept="0nzK2" id="3Jn$RV2Vw_o" role="1QQeAV">
+          <node concept="19SGf9" id="3Jn$RV2Vw_C" role="0nzdz">
+            <node concept="19SUe$" id="3Jn$RV2Vw_S" role="19SJt6">
+              <property role="19SUeA" value="The system shall use an arbitration process to decide the two data sources &#10;(lidar, radar, camera) used to enable TPO, VRU detection functionality&#10; with reduced uncertainty rates inside the short range zone." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

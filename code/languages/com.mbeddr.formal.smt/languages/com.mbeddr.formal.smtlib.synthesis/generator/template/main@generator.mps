@@ -50,7 +50,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -159,7 +159,6 @@
       </concept>
       <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
-        <property id="7430509679011668804" name="counterVarName" index="1qytDF" />
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
       <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
@@ -233,7 +232,7 @@
         <property id="1757699476691236116" name="role_DebugInfo" index="2qtEX8" />
         <property id="1341860900488019036" name="linkId" index="P3scX" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -347,7 +346,6 @@
                   <node concept="29HgVG" id="1MFSGJpocos" role="lGtFl" />
                 </node>
                 <node concept="1WS0z7" id="1MFSGJpocaw" role="lGtFl">
-                  <property role="1qytDF" value="" />
                   <node concept="3JmXsc" id="1MFSGJpocaz" role="3Jn$fo">
                     <node concept="3clFbS" id="1MFSGJpoca$" role="2VODD2">
                       <node concept="3clFbF" id="1MFSGJpocaE" role="3cqZAp">
@@ -411,7 +409,6 @@
                   <node concept="29HgVG" id="1MFSGJpoGTF" role="lGtFl" />
                 </node>
                 <node concept="1WS0z7" id="1MFSGJpoGoi" role="lGtFl">
-                  <property role="1qytDF" value="" />
                   <node concept="3JmXsc" id="1MFSGJpoGol" role="3Jn$fo">
                     <node concept="3clFbS" id="1MFSGJpoGom" role="2VODD2">
                       <node concept="3clFbF" id="1MFSGJpoGos" role="3cqZAp">

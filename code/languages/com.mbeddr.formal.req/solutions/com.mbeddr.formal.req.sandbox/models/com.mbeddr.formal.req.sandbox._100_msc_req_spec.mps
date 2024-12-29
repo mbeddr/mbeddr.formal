@@ -7,6 +7,7 @@
     <use id="b9f682be-3e03-4c97-ba0a-ac14cf89f12a" name="com.mbeddr.formal.req.tl_patterns.nusmv" version="0" />
     <use id="83ad0200-6e50-4939-a389-76bf899be11b" name="com.mbeddr.formal.req.nusmv" version="0" />
     <use id="d0ca8631-0992-4239-9151-83b3064311ed" name="com.mbeddr.formal.req.msc" version="0" />
+    <use id="81f6a079-965e-4523-87c3-8e6194f66585" name="com.fasten.base.msc" version="-1" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
   <imports />
@@ -120,7 +121,7 @@
       <concept id="4446202499243314330" name="com.mbeddr.formal.req.msc.structure.ScenarioSpecReq" flags="ng" index="2brx$7" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>

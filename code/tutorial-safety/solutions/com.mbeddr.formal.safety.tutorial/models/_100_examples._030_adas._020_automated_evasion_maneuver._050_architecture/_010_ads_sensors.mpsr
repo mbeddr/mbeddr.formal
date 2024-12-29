@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:5c521345-fa17-4da4-84c9-85fa0d8abf06(_100_examples._030_adas._020_automated_evasion_maneuver._050_architecture)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="58bd9c99-ba42-4205-b3c9-ce445fd870e6" name="com.mbeddr.formal.nusmv.cbd">
+      <concept id="4183024216371329174" name="com.mbeddr.formal.nusmv.cbd.structure.ComponentInterfaceSMV" flags="ng" index="2dDAVa" />
+    </language>
+    <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
+        <child id="7842584090743643493" name="content" index="2HcuB8" />
+      </concept>
+      <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
+    </language>
+    <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="2406721343445433420" name="com.mbeddr.formal.nusmv.ext.structure.StructType" flags="ng" index="1s31w3">
+        <reference id="2406721343445433421" name="structDeclaration" index="1s31w2" />
+      </concept>
+      <concept id="2406721343445432986" name="com.mbeddr.formal.nusmv.ext.structure.StructDeclaration" flags="ng" index="1s31Vl" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
+      <concept id="9066112305507315474" name="com.mbeddr.formal.base.arch.structure.ComponentInterface" flags="ng" index="3UnI89">
+        <child id="9066112305507315547" name="outputs" index="3UnI90" />
+      </concept>
+      <concept id="9066112305507315478" name="com.mbeddr.formal.base.arch.structure.Port" flags="ng" index="3UnI8d">
+        <child id="9066112305507315483" name="type" index="3UnI80" />
+      </concept>
+      <concept id="9066112305507315532" name="com.mbeddr.formal.base.arch.structure.OutputPort" flags="ng" index="3UnI9n" />
+    </language>
+  </registry>
+  <node concept="2HdtXS" id="5tEenuYOLCK">
+    <property role="TrG5h" value="_010_ads_sensors" />
+    <property role="3GE5qa" value="_010_structure_view" />
+    <node concept="1s31Vl" id="5tEenuYOJYp" role="2HcuB8">
+      <property role="TrG5h" value="CameraData" />
+    </node>
+    <node concept="2SQmWS" id="5tEenuYOK1m" role="2HcuB8" />
+    <node concept="1s31Vl" id="5tEenuYOK17" role="2HcuB8">
+      <property role="TrG5h" value="LidarData" />
+    </node>
+    <node concept="2SQmWS" id="5tEenuYOK3E" role="2HcuB8" />
+    <node concept="1s31Vl" id="5tEenuYOK3l" role="2HcuB8">
+      <property role="TrG5h" value="RadarData" />
+    </node>
+    <node concept="2SQmWS" id="5tEenuYOK5a" role="2HcuB8" />
+    <node concept="1s31Vl" id="5tEenuYOK4L" role="2HcuB8">
+      <property role="TrG5h" value="DriverMonitoringData" />
+    </node>
+    <node concept="2SQmWS" id="5tEenuYOLNg" role="2HcuB8" />
+    <node concept="2dDAVa" id="5tEenuYOKtg" role="2HcuB8">
+      <property role="TrG5h" value="Camera" />
+      <node concept="3UnI9n" id="5tEenuYOKv2" role="3UnI90">
+        <property role="TrG5h" value="camera_data" />
+        <node concept="1s31w3" id="5tEenuYOKvG" role="3UnI80">
+          <ref role="1s31w2" node="5tEenuYOJYp" resolve="CameraData" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="5tEenuYOKvO" role="2HcuB8" />
+    <node concept="2dDAVa" id="5tEenuYOKxH" role="2HcuB8">
+      <property role="TrG5h" value="Lidar" />
+      <node concept="3UnI9n" id="5tEenuYOKyF" role="3UnI90">
+        <property role="TrG5h" value="lidar_data" />
+        <node concept="1s31w3" id="5tEenuYOKz6" role="3UnI80">
+          <ref role="1s31w2" node="5tEenuYOK17" resolve="LidarData" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="5tEenuYOK$n" role="2HcuB8" />
+    <node concept="2dDAVa" id="5tEenuYOKze" role="2HcuB8">
+      <property role="TrG5h" value="Radar" />
+      <node concept="3UnI9n" id="5tEenuYOKzf" role="3UnI90">
+        <property role="TrG5h" value="radar_data" />
+        <node concept="1s31w3" id="5tEenuYOK_C" role="3UnI80">
+          <ref role="1s31w2" node="5tEenuYOK3l" resolve="RadarData" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="5tEenuYOLHk" role="2HcuB8" />
+    <node concept="2dDAVa" id="5tEenuYOLHL" role="2HcuB8">
+      <property role="TrG5h" value="DriverMonitor" />
+      <node concept="3UnI9n" id="5tEenuYOLNQ" role="3UnI90">
+        <property role="TrG5h" value="driver_monitoring_data" />
+        <node concept="1s31w3" id="5tEenuYOLOt" role="3UnI80">
+          <ref role="1s31w2" node="5tEenuYOK4L" resolve="DriverMonitoringData" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="5tEenuYOLCL" role="2HcuB8" />
+  </node>
+</model>
+

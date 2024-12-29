@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.formal.spin.sandbox" uuid="65ecbe01-69b9-478b-969c-8c3c97f27e81" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.formal.spin.sandbox" uuid="65ecbe01-69b9-478b-969c-8c3c97f27e81" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:810b1f0c-97b8-4211-8a3c-55a39bac8bee:com.mbeddr.formal.base.analyses" version="0" />

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:98d3bb28-1ea3-4ba1-948d-f2fe642f21b2(_010_features._070_assurance_cases_linked_to_artifacts_models)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="fdecb1e5-875e-41ef-a5fd-4b18f747f204" name="com.mbeddr.formal.safety.argument.process.artefacts">
+      <concept id="1574221925581155533" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.Participant" flags="ng" index="UfqTd">
+        <child id="1639692281461243282" name="role" index="1vGMrz" />
+      </concept>
+      <concept id="1574221925581155691" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.Person" flags="ng" index="UfqZF">
+        <property id="1574221925581155692" name="email" index="UfqZG" />
+        <property id="1639692281461161168" name="surname" index="1vG6ux" />
+        <property id="1639692281461161163" name="firstName" index="1vG6uU" />
+      </concept>
+      <concept id="1574221925581155694" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.Organization" flags="ng" index="UfqZI">
+        <reference id="1574221925581179044" name="parentOrganization" index="UfgC$" />
+        <child id="1574221925581155720" name="persons" index="UfqW8" />
+        <child id="1639692281461243285" name="roleDefinitions" index="1vGMr$" />
+      </concept>
+      <concept id="1574221925581136306" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.IArtefactElement" flags="ngI" index="UfucM">
+        <property id="1574221925581155631" name="id" index="UfqYJ" />
+      </concept>
+      <concept id="1639692281461243256" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.RoleRef" flags="ng" index="1vGMo9">
+        <reference id="1639692281461243257" name="role" index="1vGMo8" />
+      </concept>
+      <concept id="1639692281461243242" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.RoleDefinition" flags="ng" index="1vGMor" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="UfqZI" id="1r1mR59sWS7">
+    <property role="TrG5h" value="_011_implanatable_medical_devices_software_team" />
+    <property role="3GE5qa" value="organisation" />
+    <ref role="UfgC$" node="1r1mR59sjN4" resolve="_010_implanatable_medical_devices_team" />
+    <node concept="UfqZF" id="1r1mR59sWS8" role="UfqW8">
+      <property role="UfqYJ" value="0023" />
+      <property role="1vG6uU" value="Software" />
+      <property role="1vG6ux" value="Guy" />
+      <property role="UfqZG" value="sw_guy@a.com" />
+      <node concept="1vGMo9" id="1r1mR59sWS9" role="1vGMrz">
+        <ref role="1vGMo8" node="1r1mR59sWSc" resolve="software engineer" />
+      </node>
+    </node>
+    <node concept="UfqZF" id="1r1mR59sWSa" role="UfqW8">
+      <property role="UfqYJ" value="0024" />
+      <property role="1vG6uU" value="Test" />
+      <property role="1vG6ux" value="Guy" />
+      <property role="UfqZG" value="test_guy@a.com" />
+      <node concept="1vGMo9" id="1r1mR59sWSb" role="1vGMrz">
+        <ref role="1vGMo8" node="1r1mR59sWSd" resolve="test engineer" />
+      </node>
+    </node>
+    <node concept="1vGMor" id="1r1mR59sWSc" role="1vGMr$">
+      <property role="TrG5h" value="software engineer" />
+    </node>
+    <node concept="1vGMor" id="1r1mR59sWSd" role="1vGMr$">
+      <property role="TrG5h" value="test engineer" />
+    </node>
+  </node>
+</model>
+

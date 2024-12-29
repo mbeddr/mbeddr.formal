@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:28d45899-cb06-44a2-a245-407cc7013b3d(_100_examples._010_charging_cable._010_safe_charging_cable)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ngI" index="8gIbR">
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+      </concept>
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ngI" index="8gIbW">
+        <child id="9102875167978228305" name="hazards" index="8gIbH" />
+      </concept>
+      <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc">
+        <child id="7926133672145657778" name="losses" index="3Zv_sA" />
+      </concept>
+      <concept id="9102875167978180681" name="com.mbeddr.formal.safety.hara.structure.HazardsList" flags="ng" index="8gVzP" />
+      <concept id="7926133672145657758" name="com.mbeddr.formal.safety.hara.structure.LossRef" flags="ng" index="3Zv_sa">
+        <reference id="7926133672145657759" name="loss" index="3Zv_sb" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" name="com.mbeddr.formal.safety.iso26262">
+      <concept id="2392944874760339599" name="com.mbeddr.formal.safety.iso26262.structure.ISO26262Hazard" flags="ng" index="1a6Z8w">
+        <child id="5861696777036826313" name="hazardContexts" index="3h3uzw" />
+      </concept>
+      <concept id="5861696777036826303" name="com.mbeddr.formal.safety.iso26262.structure.HazardContext" flags="ng" index="3h3uym">
+        <property id="5861696777036826305" name="exposure" index="3h3uzC" />
+        <property id="5861696777036826304" name="severity" index="3h3uzD" />
+        <property id="5861696777036826306" name="controlability" index="3h3uzF" />
+        <reference id="5861696777036874408" name="operationalSituationDeclaration" index="3h3iM1" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="8gVzP" id="2VIqKfEJeEr">
+    <property role="TrG5h" value="_022_charging_cable_hazards_list" />
+    <node concept="1a6Z8w" id="3TSGpjyEYYX" role="8gIbH">
+      <property role="TrG5h" value="Electrical hazard" />
+      <property role="0lsPA" value="H01" />
+      <node concept="3h3uym" id="5ehf6dVA6bI" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzD" value="24PsEXFbNKN/S1" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
+      </node>
+      <node concept="3Zv_sa" id="31dqLs$$zGt" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2hOvri9WU6G" resolve="Loss of life or serious injury to people" />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="3TSGpjyFlEA" role="8gIbH">
+      <property role="0lsPA" value="H02" />
+      <property role="TrG5h" value="Explosion of the car" />
+      <node concept="3h3uym" id="5ehf6dVA6bL" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLt/C3" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
+      </node>
+      <node concept="3Zv_sa" id="31dqLs$$zGj" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2hOvri9WU6G" resolve="Loss of life or serious injury to people" />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="3TSGpjyFlES" role="8gIbH">
+      <property role="0lsPA" value="H03" />
+      <property role="TrG5h" value="Cable temperature too high" />
+      <node concept="3h3uym" id="5ehf6dVA6bS" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
+      </node>
+      <node concept="3Zv_sa" id="31dqLs$$zGl" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2hOvri9WU6H" resolve="Electrical damage (economic loss)" />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="3TSGpjyFlFc" role="8gIbH">
+      <property role="0lsPA" value="H04" />
+      <property role="TrG5h" value="The cable catches fire" />
+      <node concept="3h3uym" id="5ehf6dVA6bV" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzD" value="24PsEXFbNKU/S3" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
+      </node>
+      <node concept="3Zv_sa" id="31dqLs$$zGn" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2hOvri9WU6H" resolve="Electrical damage (economic loss)" />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="3TSGpjyFlFy" role="8gIbH">
+      <property role="0lsPA" value="H05" />
+      <property role="TrG5h" value="Smoke comes out of the cable" />
+      <node concept="3h3uym" id="5ehf6dVA6bY" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
+        <property role="3h3uzF" value="24PsEXFbNLp/C2" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
+      </node>
+      <node concept="3Zv_sa" id="31dqLs$$zGp" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2hOvri9WU6H" resolve="Electrical damage (economic loss)" />
+      </node>
+    </node>
+    <node concept="1a6Z8w" id="3TSGpjyFlFU" role="8gIbH">
+      <property role="0lsPA" value="H06" />
+      <property role="TrG5h" value="Tripping" />
+      <node concept="3h3uym" id="5ehf6dVA8Ox" role="3h3uzw">
+        <property role="3h3uzC" value="24PsEXFbNLe/E4" />
+        <ref role="3h3iM1" node="55oVyA0mSMy" resolve="OS1" />
+      </node>
+      <node concept="3Zv_sa" id="31dqLs$$zGr" role="3Zv_sA">
+        <ref role="3Zv_sb" node="2hOvri9WU6G" resolve="Loss of life or serious injury to people" />
+      </node>
+    </node>
+  </node>
+</model>
+

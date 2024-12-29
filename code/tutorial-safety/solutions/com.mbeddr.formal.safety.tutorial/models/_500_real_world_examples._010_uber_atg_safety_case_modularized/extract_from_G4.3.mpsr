@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="1e9opmpecI4">
+    <property role="TrG5h" value="extract_from_G4.3" />
+    <property role="3GE5qa" value="4_misuse" />
+    <node concept="2vn7WC" id="1e9opmpdGZI" role="2vn1q5">
+      <property role="TrG5h" value="G4.3" />
+      <node concept="19SGf9" id="1e9opmpdHTQ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqE" role="19SJt6">
+          <property role="19SUeA" value="Potential harm from cyber intrusion is&#10;appropriately mitigated " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGZK" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHTR" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqF" role="19SJt6">
+          <property role="19SUeA" value="Operational risk assessments identify&#10;threats and their feasibility " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGZM" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHTS" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqG" role="19SJt6">
+          <property role="19SUeA" value="An inventory of all assets is created&#10;and maintained " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGZO" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.1.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHTT" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqH" role="19SJt6">
+          <property role="19SUeA" value="Foreseeable risks and threats from external&#10;networks / remote / over-the-air interfaces&#10;(cellular/internet) are identified " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZQ" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHTU" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqI" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Hardware Assets&#10;Documented (e.g. CIS Control 1)\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZS" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHTV" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqJ" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Software Assets&#10;Document (e.g. CIS Control 2) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGZU" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.1.1.2 " />
+      <node concept="19SGf9" id="1e9opmpdHTW" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqK" role="19SJt6">
+          <property role="19SUeA" value="Foreseeable risks and threats from the&#10;Self Driving Enterprises endpoints, services,&#10;and processes are identified " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZW" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHTX" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqL" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Hardware Assets&#10;Documented (e.g. CIS Control 1)\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZY" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHTY" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqM" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Software Assets&#10;Document (e.g. CIS Control 2) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH00" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.1.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHTZ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqN" role="19SJt6">
+          <property role="19SUeA" value="Foreseeable risks and threats from hardware,&#10;firmware, software and processes within&#10;the Self Driving Vehicles autonomy sensor&#10;security domain are identified " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH02" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHU0" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqO" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Hardware Assets&#10;Documented (e.g. CIS Control 1)\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH04" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHU1" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqP" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Software Assets&#10;Document (e.g. CIS Control 2) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH06" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.1.1.4 " />
+      <node concept="19SGf9" id="1e9opmpdHU2" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqQ" role="19SJt6">
+          <property role="19SUeA" value="Foreseeable risks and threats from hardware,&#10;firmware, software and processes composing&#10;the Self Driving Vehicle's compute infrastructure&#10;are identified " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH08" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.4.1" />
+      <node concept="19SGf9" id="1e9opmpdHU3" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqR" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Hardware Assets&#10;Documented (e.g. CIS Control 1)\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0a" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.4.2" />
+      <node concept="19SGf9" id="1e9opmpdHU4" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqS" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Software Assets&#10;Document (e.g. CIS Control 2) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH0c" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.1.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHU5" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqT" role="19SJt6">
+          <property role="19SUeA" value="Foreseeable risks and threats to the&#10;Self Driving Vehicle's compute systems&#10;interfaces with vehicle platform affecting&#10;safe operation of the vehicle are identified" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0e" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.5.1" />
+      <node concept="19SGf9" id="1e9opmpdHU6" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqU" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Hardware Assets&#10;Documented (e.g. CIS Control 1)\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0g" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.5.2" />
+      <node concept="19SGf9" id="1e9opmpdHU7" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqV" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Software Assets&#10;Document (e.g. CIS Control 2) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH0i" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.1.1.6 " />
+      <node concept="19SGf9" id="1e9opmpdHU8" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqW" role="19SJt6">
+          <property role="19SUeA" value="Foreseeable risks and threats to the&#10;base Vehicle Platform affecting safe&#10;operation of the vehicle are identified" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0k" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.6.1" />
+      <node concept="19SGf9" id="1e9opmpdHU9" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqX" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Hardware Assets&#10;Documented (e.g. CIS Control 1)\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0m" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.6.2" />
+      <node concept="19SGf9" id="1e9opmpdHUa" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqY" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Software Assets&#10;Document (e.g. CIS Control 2) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH0o" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.1.1.7" />
+      <node concept="19SGf9" id="1e9opmpdHUb" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqZ" role="19SJt6">
+          <property role="19SUeA" value="Safety and security impacting hazards&#10;from interfaces between the Self Driving&#10;Vehicle security domains are identified" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0q" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.7.1" />
+      <node concept="19SGf9" id="1e9opmpdHUc" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKr0" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Hardware Assets&#10;Documented (e.g. CIS Control 1)\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0s" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.1.7.2" />
+      <node concept="19SGf9" id="1e9opmpdHUd" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKr1" role="19SJt6">
+          <property role="19SUeA" value="Inventory and Control of Software Assets&#10;Document (e.g. CIS Control 2) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH0u" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHUe" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKr2" role="19SJt6">
+          <property role="19SUeA" value="A threat analysis is conducted on all&#10;assets " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0w" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHUf" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKr3" role="19SJt6">
+          <property role="19SUeA" value="Attack tree analysis\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0y" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHUg" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKr4" role="19SJt6">
+          <property role="19SUeA" value="Coverage analysis on threats\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0$" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHUh" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKr5" role="19SJt6">
+          <property role="19SUeA" value="Attack feasibility and likelihood assessment\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0A" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.1.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHUi" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKr6" role="19SJt6">
+          <property role="19SUeA" value="Vulnerability analysis " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH0C" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHUj" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKr7" role="19SJt6">
+          <property role="19SUeA" value="The Self-Driving Enterprise detects when&#10;a cyber intrusion has occurred " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH0E" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHUk" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKr8" role="19SJt6">
+          <property role="19SUeA" value="Passive event monitoring within components&#10;of the Self-Driving Enterprise identify&#10;anomalous behavior " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0G" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.2.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHUl" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKr9" role="19SJt6">
+          <property role="19SUeA" value="Monitoring plan\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0I" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.2.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHUm" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKra" role="19SJt6">
+          <property role="19SUeA" value="Definition of anomalous behavior\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0K" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.2.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHUn" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrb" role="19SJt6">
+          <property role="19SUeA" value="Monitoring logs\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0M" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.2.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHUo" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrc" role="19SJt6">
+          <property role="19SUeA" value="Analysis of monitoring logs to identify&#10;issues " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH0O" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHUp" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrd" role="19SJt6">
+          <property role="19SUeA" value="Active event monitoring of Self-Driving&#10;Enterprise behavior identify anomalous&#10;behavior " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0Q" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.2.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHUq" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKre" role="19SJt6">
+          <property role="19SUeA" value="Monitoring plan\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0S" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.2.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHUr" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrf" role="19SJt6">
+          <property role="19SUeA" value="Definition of anomalous behavior\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0U" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.2.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHUs" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrg" role="19SJt6">
+          <property role="19SUeA" value="Monitoring logs\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH0W" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.2.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHUt" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrh" role="19SJt6">
+          <property role="19SUeA" value="Analysis of monitoring logs to identify&#10;issues " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH0Y" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.3" />
+      <node concept="19SGf9" id="1e9opmpdHUu" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKri" role="19SJt6">
+          <property role="19SUeA" value="Defensive measures are implemented to&#10;reduce the likelihood of a cyber intrusion" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH10" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHUv" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrj" role="19SJt6">
+          <property role="19SUeA" value="Security considerations and defensive&#10;measures are included at the inception&#10;of all functionality " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH12" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHUw" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrk" role="19SJt6">
+          <property role="19SUeA" value="Security Requirements Included in all&#10;new functionality " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH14" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHUx" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrl" role="19SJt6">
+          <property role="19SUeA" value="Security evaluations during the verification&#10;and validation processes confirm defensive&#10;measures " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH16" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHUy" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrm" role="19SJt6">
+          <property role="19SUeA" value="Security System Test Program Plan\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH18" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHUz" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrn" role="19SJt6">
+          <property role="19SUeA" value="Peer review of testing plan\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1a" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHU$" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKro" role="19SJt6">
+          <property role="19SUeA" value="Peer review of testing results\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1c" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHU_" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrp" role="19SJt6">
+          <property role="19SUeA" value="Security evaluation results\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1e" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.2.5" />
+      <node concept="19SGf9" id="1e9opmpdHUA" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrq" role="19SJt6">
+          <property role="19SUeA" value="Security evaluation finding closure " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH1g" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.3.3" />
+      <node concept="19SGf9" id="1e9opmpdHUB" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrr" role="19SJt6">
+          <property role="19SUeA" value="Security evaluations occur in the operational&#10;domain " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1i" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHUC" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrs" role="19SJt6">
+          <property role="19SUeA" value="Security System Test Program Plan\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1k" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHUD" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrt" role="19SJt6">
+          <property role="19SUeA" value="Peer review of testing plan\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1m" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.3.3" />
+      <node concept="19SGf9" id="1e9opmpdHUE" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKru" role="19SJt6">
+          <property role="19SUeA" value="Peer review of testing results\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1o" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.3.4" />
+      <node concept="19SGf9" id="1e9opmpdHUF" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrv" role="19SJt6">
+          <property role="19SUeA" value="Security evaluation results\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1q" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.3.5" />
+      <node concept="19SGf9" id="1e9opmpdHUG" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrw" role="19SJt6">
+          <property role="19SUeA" value="Security evaluation finding closure " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH1s" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.3.4" />
+      <node concept="19SGf9" id="1e9opmpdHUH" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrx" role="19SJt6">
+          <property role="19SUeA" value="The design of the Self-Driving Vehicle&#10;minimizes the impact of a cyber intrusion" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1u" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.4.1" />
+      <node concept="19SGf9" id="1e9opmpdHUI" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKry" role="19SJt6">
+          <property role="19SUeA" value="Documentation of SDV Specific Controls" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH1w" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.3.5" />
+      <node concept="19SGf9" id="1e9opmpdHUJ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrz" role="19SJt6">
+          <property role="19SUeA" value="Supply chain security policies are implemented&#10;to limit harm " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1y" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.5.1" />
+      <node concept="19SGf9" id="1e9opmpdHUK" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKr$" role="19SJt6">
+          <property role="19SUeA" value="Supply chain security policies\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1$" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.5.2" />
+      <node concept="19SGf9" id="1e9opmpdHUL" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKr_" role="19SJt6">
+          <property role="19SUeA" value="Supply chain threat model(s)\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1A" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.5.3" />
+      <node concept="19SGf9" id="1e9opmpdHUM" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrA" role="19SJt6">
+          <property role="19SUeA" value="Peer review of supply chain security&#10;policies\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1C" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.5.4" />
+      <node concept="19SGf9" id="1e9opmpdHUN" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrB" role="19SJt6">
+          <property role="19SUeA" value="Security best practices " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH1E" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.3.6" />
+      <node concept="19SGf9" id="1e9opmpdHUO" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrC" role="19SJt6">
+          <property role="19SUeA" value="Over the air updates minimize duration&#10;of cyber vulnerabilities " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1G" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.6.1" />
+      <node concept="19SGf9" id="1e9opmpdHUP" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrD" role="19SJt6">
+          <property role="19SUeA" value="Over the air update functionality\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1I" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.6.2" />
+      <node concept="19SGf9" id="1e9opmpdHUQ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrE" role="19SJt6">
+          <property role="19SUeA" value="Policy of forced update prior to mission&#10;readiness (ensure fleet is up to date)" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH1K" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.3.7" />
+      <node concept="19SGf9" id="1e9opmpdHUR" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrF" role="19SJt6">
+          <property role="19SUeA" value="Process compliance audits ensure risks&#10;are mitigated " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1M" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.7.1" />
+      <node concept="19SGf9" id="1e9opmpdHUS" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrG" role="19SJt6">
+          <property role="19SUeA" value="Process compliance audit\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1O" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.7.2" />
+      <node concept="19SGf9" id="1e9opmpdHUT" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrH" role="19SJt6">
+          <property role="19SUeA" value="Process compliance audit schedule\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1Q" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.3.7.3" />
+      <node concept="19SGf9" id="1e9opmpdHUU" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrI" role="19SJt6">
+          <property role="19SUeA" value="Process compliance audit results " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH1S" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.4" />
+      <node concept="19SGf9" id="1e9opmpdHUV" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrJ" role="19SJt6">
+          <property role="19SUeA" value="Reactive measures are implemented during&#10;a cyber intrusion to limit harm " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH1U" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.4.1" />
+      <node concept="19SGf9" id="1e9opmpdHUW" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrK" role="19SJt6">
+          <property role="19SUeA" value="Cyber vulnerabilities exploited in an&#10;intrusion are assessed and remediation&#10;approaches are identified and implemented" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1W" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.4.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHUX" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrL" role="19SJt6">
+          <property role="19SUeA" value="Anomaly / intrusion analysis\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH1Y" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.4.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHUY" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrM" role="19SJt6">
+          <property role="19SUeA" value="Anomaly resolution and closure\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH20" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.4.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHUZ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrN" role="19SJt6">
+          <property role="19SUeA" value="Regression testing updates " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH22" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.5" />
+      <node concept="19SGf9" id="1e9opmpdHV0" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrO" role="19SJt6">
+          <property role="19SUeA" value="Permanent corrective actions and lessons&#10;learned are put in place after a cyber&#10;intrusion to avoid recurrence " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH24" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.5.1" />
+      <node concept="19SGf9" id="1e9opmpdHV1" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrP" role="19SJt6">
+          <property role="19SUeA" value="Lessons learned from intrusions are incorporated&#10;into intrusion response policies. " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH26" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.5.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHV2" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrQ" role="19SJt6">
+          <property role="19SUeA" value="Lessons learned repository\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH28" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.5.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHV3" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrR" role="19SJt6">
+          <property role="19SUeA" value="Traceability of lessons learned to anomaly&#10;reports\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH2a" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.5.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHV4" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrS" role="19SJt6">
+          <property role="19SUeA" value="Continual improvement of process / guidelines" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH2c" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.5.2" />
+      <node concept="19SGf9" id="1e9opmpdHV5" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrT" role="19SJt6">
+          <property role="19SUeA" value="Reactive measures are tested for efficacy" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH2e" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.5.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHV6" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrU" role="19SJt6">
+          <property role="19SUeA" value="Efficacy testing of cyber intrusion countermeasures" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH2g" role="2vn1q5">
+      <property role="TrG5h" value="G4.3.5.3" />
+      <node concept="19SGf9" id="1e9opmpdHV7" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrV" role="19SJt6">
+          <property role="19SUeA" value="Collaboration with appropriate third&#10;party organizations increases threat&#10;awareness and improves response measures" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH2i" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.5.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHV8" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrW" role="19SJt6">
+          <property role="19SUeA" value="Charter / scope of cyber collaborations\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH2k" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.5.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHV9" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrX" role="19SJt6">
+          <property role="19SUeA" value="List of organizations collaborating on&#10;cybersecurity\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH2m" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.3.5.3.3" />
+      <node concept="19SGf9" id="1e9opmpdHVa" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKrY" role="19SJt6">
+          <property role="19SUeA" value="Meeting minutes &amp; action items " />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZL" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZK" resolve="G4.3.1" />
+      <ref role="3VeSjP" node="1e9opmpdGZI" resolve="G4.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZN" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZK" resolve="G4.3.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZM" resolve="G4.3.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZP" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZM" resolve="G4.3.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZO" resolve="G4.3.1.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZR" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZQ" resolve="Sn4.3.1.1.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdGZO" resolve="G4.3.1.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZT" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZS" resolve="Sn4.3.1.1.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdGZO" resolve="G4.3.1.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZV" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZM" resolve="G4.3.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZU" resolve="G4.3.1.1.2 " />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZX" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZU" resolve="G4.3.1.1.2 " />
+      <ref role="3VeSjQ" node="1e9opmpdGZW" resolve="Sn4.3.1.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZZ" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZY" resolve="Sn4.3.1.1.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdGZU" resolve="G4.3.1.1.2 " />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH01" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH00" resolve="G4.3.1.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdGZM" resolve="G4.3.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH03" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH00" resolve="G4.3.1.1.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH02" resolve="Sn4.3.1.1.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH05" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH00" resolve="G4.3.1.1.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH04" resolve="Sn4.3.1.1.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH07" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZM" resolve="G4.3.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH06" resolve="G4.3.1.1.4 " />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH09" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH06" resolve="G4.3.1.1.4 " />
+      <ref role="3VeSjQ" node="1e9opmpdH08" resolve="Sn4.3.1.1.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0b" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0a" resolve="Sn4.3.1.1.4.2" />
+      <ref role="3VeSjP" node="1e9opmpdH06" resolve="G4.3.1.1.4 " />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0d" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZM" resolve="G4.3.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH0c" resolve="G4.3.1.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0f" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0e" resolve="Sn4.3.1.1.5.1" />
+      <ref role="3VeSjP" node="1e9opmpdH0c" resolve="G4.3.1.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0h" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0g" resolve="Sn4.3.1.1.5.2" />
+      <ref role="3VeSjP" node="1e9opmpdH0c" resolve="G4.3.1.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0j" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZM" resolve="G4.3.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH0i" resolve="G4.3.1.1.6 " />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0l" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH0i" resolve="G4.3.1.1.6 " />
+      <ref role="3VeSjQ" node="1e9opmpdH0k" resolve="Sn4.3.1.1.6.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0n" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0m" resolve="Sn4.3.1.1.6.2" />
+      <ref role="3VeSjP" node="1e9opmpdH0i" resolve="G4.3.1.1.6 " />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0p" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZM" resolve="G4.3.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH0o" resolve="G4.3.1.1.7" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0r" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH0o" resolve="G4.3.1.1.7" />
+      <ref role="3VeSjQ" node="1e9opmpdH0q" resolve="Sn4.3.1.1.7.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0t" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0s" resolve="Sn4.3.1.1.7.2" />
+      <ref role="3VeSjP" node="1e9opmpdH0o" resolve="G4.3.1.1.7" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0v" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZK" resolve="G4.3.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH0u" resolve="G4.3.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0x" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0w" resolve="Sn4.3.1.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdH0u" resolve="G4.3.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0z" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0y" resolve="Sn4.3.1.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdH0u" resolve="G4.3.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0_" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH0u" resolve="G4.3.1.2" />
+      <ref role="3VeSjQ" node="1e9opmpdH0$" resolve="Sn4.3.1.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0B" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH0u" resolve="G4.3.1.2" />
+      <ref role="3VeSjQ" node="1e9opmpdH0A" resolve="Sn4.3.1.2.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0D" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0C" resolve="G4.3.2" />
+      <ref role="3VeSjP" node="1e9opmpdGZI" resolve="G4.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0F" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0E" resolve="G4.3.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdH0C" resolve="G4.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0H" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH0E" resolve="G4.3.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH0G" resolve="Sn4.3.2.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0J" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0I" resolve="Sn4.3.2.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdH0E" resolve="G4.3.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0L" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0K" resolve="Sn4.3.2.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdH0E" resolve="G4.3.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0N" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0M" resolve="Sn4.3.2.1.4" />
+      <ref role="3VeSjP" node="1e9opmpdH0E" resolve="G4.3.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0P" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0O" resolve="G4.3.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdH0C" resolve="G4.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0R" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH0Q" resolve="Sn4.3.2.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdH0O" resolve="G4.3.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0T" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH0O" resolve="G4.3.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdH0S" resolve="Sn4.3.2.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0V" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH0O" resolve="G4.3.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdH0U" resolve="Sn4.3.2.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0X" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH0O" resolve="G4.3.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdH0W" resolve="Sn4.3.2.2.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH0Z" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZI" resolve="G4.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH0Y" resolve="G4.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH11" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH10" resolve="G4.3.3.1" />
+      <ref role="3VeSjP" node="1e9opmpdH0Y" resolve="G4.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH13" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH10" resolve="G4.3.3.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH12" resolve="Sn4.3.3.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH15" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH0Y" resolve="G4.3.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH14" resolve="G4.3.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH17" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH16" resolve="Sn4.3.3.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdH14" resolve="G4.3.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH19" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH18" resolve="Sn4.3.3.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdH14" resolve="G4.3.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1b" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1a" resolve="Sn4.3.3.2.3" />
+      <ref role="3VeSjP" node="1e9opmpdH14" resolve="G4.3.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1d" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1c" resolve="Sn4.3.3.2.4" />
+      <ref role="3VeSjP" node="1e9opmpdH14" resolve="G4.3.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1f" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH14" resolve="G4.3.3.2" />
+      <ref role="3VeSjQ" node="1e9opmpdH1e" resolve="Sn4.3.3.2.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1h" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH0Y" resolve="G4.3.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH1g" resolve="G4.3.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1j" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH1g" resolve="G4.3.3.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH1i" resolve="Sn4.3.3.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1l" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH1g" resolve="G4.3.3.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH1k" resolve="Sn4.3.3.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1n" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1m" resolve="Sn4.3.3.3.3" />
+      <ref role="3VeSjP" node="1e9opmpdH1g" resolve="G4.3.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1p" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1o" resolve="Sn4.3.3.3.4" />
+      <ref role="3VeSjP" node="1e9opmpdH1g" resolve="G4.3.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1r" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH1g" resolve="G4.3.3.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH1q" resolve="Sn4.3.3.3.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1t" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH0Y" resolve="G4.3.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH1s" resolve="G4.3.3.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1v" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1u" resolve="Sn4.3.3.4.1" />
+      <ref role="3VeSjP" node="1e9opmpdH1s" resolve="G4.3.3.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1x" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1w" resolve="G4.3.3.5" />
+      <ref role="3VeSjP" node="1e9opmpdH0Y" resolve="G4.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1z" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH1w" resolve="G4.3.3.5" />
+      <ref role="3VeSjQ" node="1e9opmpdH1y" resolve="Sn4.3.3.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1_" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1$" resolve="Sn4.3.3.5.2" />
+      <ref role="3VeSjP" node="1e9opmpdH1w" resolve="G4.3.3.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1B" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1A" resolve="Sn4.3.3.5.3" />
+      <ref role="3VeSjP" node="1e9opmpdH1w" resolve="G4.3.3.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1D" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1C" resolve="Sn4.3.3.5.4" />
+      <ref role="3VeSjP" node="1e9opmpdH1w" resolve="G4.3.3.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1F" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1E" resolve="G4.3.3.6" />
+      <ref role="3VeSjP" node="1e9opmpdH0Y" resolve="G4.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1H" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH1E" resolve="G4.3.3.6" />
+      <ref role="3VeSjQ" node="1e9opmpdH1G" resolve="Sn4.3.3.6.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1J" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1I" resolve="Sn4.3.3.6.2" />
+      <ref role="3VeSjP" node="1e9opmpdH1E" resolve="G4.3.3.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1L" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1K" resolve="G4.3.3.7" />
+      <ref role="3VeSjP" node="1e9opmpdH0Y" resolve="G4.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1N" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1M" resolve="Sn4.3.3.7.1" />
+      <ref role="3VeSjP" node="1e9opmpdH1K" resolve="G4.3.3.7" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1P" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH1K" resolve="G4.3.3.7" />
+      <ref role="3VeSjQ" node="1e9opmpdH1O" resolve="Sn4.3.3.7.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1R" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH1K" resolve="G4.3.3.7" />
+      <ref role="3VeSjQ" node="1e9opmpdH1Q" resolve="Sn4.3.3.7.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1T" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZI" resolve="G4.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH1S" resolve="G4.3.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1V" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1U" resolve="G4.3.4.1" />
+      <ref role="3VeSjP" node="1e9opmpdH1S" resolve="G4.3.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1X" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH1U" resolve="G4.3.4.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH1W" resolve="Sn4.3.4.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH1Z" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH1Y" resolve="Sn4.3.4.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdH1U" resolve="G4.3.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH21" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH20" resolve="Sn4.3.4.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdH1U" resolve="G4.3.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH23" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZI" resolve="G4.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH22" resolve="G4.3.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH25" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH22" resolve="G4.3.5" />
+      <ref role="3VeSjQ" node="1e9opmpdH24" resolve="G4.3.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH27" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH26" resolve="Sn4.3.5.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdH24" resolve="G4.3.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH29" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH28" resolve="Sn4.3.5.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdH24" resolve="G4.3.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH2b" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH2a" resolve="Sn4.3.5.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdH24" resolve="G4.3.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH2d" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH2c" resolve="G4.3.5.2" />
+      <ref role="3VeSjP" node="1e9opmpdH22" resolve="G4.3.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH2f" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH2e" resolve="Sn4.3.5.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdH2c" resolve="G4.3.5.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH2h" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH22" resolve="G4.3.5" />
+      <ref role="3VeSjQ" node="1e9opmpdH2g" resolve="G4.3.5.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH2j" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH2i" resolve="Sn4.3.5.3.1" />
+      <ref role="3VeSjP" node="1e9opmpdH2g" resolve="G4.3.5.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH2l" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH2g" resolve="G4.3.5.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH2k" resolve="Sn4.3.5.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH2n" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH2m" resolve="Sn4.3.5.3.3" />
+      <ref role="3VeSjP" node="1e9opmpdH2g" resolve="G4.3.5.3" />
+    </node>
+  </node>
+</model>
+

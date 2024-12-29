@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:03da4936-751b-48d2-80dc-ab1f2a2cdd5b(_010_features._010_requirements)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="467505803006179844" name="com.mbeddr.formal.req.base.structure.RequirementTrace" flags="ng" index="0Sh09">
+        <child id="7993788941569402916" name="reqRefs" index="hnKMk" />
+      </concept>
+      <concept id="7993788941569402923" name="com.mbeddr.formal.req.base.structure.RequirementRef" flags="ng" index="hnKMr">
+        <reference id="7993788941569402924" name="req" index="hnKMs" />
+      </concept>
+    </language>
+    <language id="22a84bd5-d947-48ae-b9f6-8288eea41dce" name="com.mbeddr.formal.nusmv.arch">
+      <concept id="6584464211390640418" name="com.mbeddr.formal.nusmv.arch.structure.Output" flags="ng" index="JlCpM" />
+    </language>
+    <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="7842584090744804989" name="com.mbeddr.formal.nusmv.structure.AndExpression" flags="ng" index="2HbMbg" />
+      <concept id="7842584090744807152" name="com.mbeddr.formal.nusmv.structure.OrExpression" flags="ng" index="2HbMDt" />
+      <concept id="7842584090743387413" name="com.mbeddr.formal.nusmv.structure.BooleanType" flags="ng" index="2Hds6S" />
+      <concept id="7842584090743386548" name="com.mbeddr.formal.nusmv.structure.VariableDeclaration" flags="ng" index="2Hdskp">
+        <child id="7842584090743387019" name="type" index="2HdssA" />
+      </concept>
+      <concept id="7842584090743385197" name="com.mbeddr.formal.nusmv.structure.ModuleDeclaration" flags="ng" index="2Hdtz0">
+        <child id="7842584090743586905" name="content" index="2HcbjO" />
+        <child id="7842584090743385207" name="params" index="2Hdtzq" />
+      </concept>
+      <concept id="7842584090743385206" name="com.mbeddr.formal.nusmv.structure.ParameterDeclaration" flags="ng" index="2Hdtzr" />
+      <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
+        <child id="7842584090743643493" name="content" index="2HcuB8" />
+      </concept>
+      <concept id="7842584090744164267" name="com.mbeddr.formal.nusmv.structure.NextAssignment" flags="ng" index="2HevG6" />
+      <concept id="7842584090743943170" name="com.mbeddr.formal.nusmv.structure.VariableRef" flags="ng" index="2He$iJ">
+        <reference id="7842584090743943171" name="var" index="2He$iI" />
+      </concept>
+      <concept id="7842584090744023973" name="com.mbeddr.formal.nusmv.structure.EmptyAssignment" flags="ng" index="2HeLW8" />
+      <concept id="7842584090743880820" name="com.mbeddr.formal.nusmv.structure.AssignmentsSection" flags="ng" index="2Hfkzp">
+        <child id="7842584090743880984" name="assignments" index="2HfkAP" />
+      </concept>
+      <concept id="7842584090743880823" name="com.mbeddr.formal.nusmv.structure.VariablesSection" flags="ng" index="2Hfkzq">
+        <child id="7842584090743880932" name="vars" index="2Hfkx9" />
+      </concept>
+      <concept id="7842584090743880983" name="com.mbeddr.formal.nusmv.structure.AbstractAssignment" flags="ng" index="2HfkAU">
+        <child id="7842584090743943213" name="rhs" index="2He$i0" />
+        <child id="7842584090743943207" name="lhs" index="2He$ia" />
+      </concept>
+      <concept id="7842584090743880982" name="com.mbeddr.formal.nusmv.structure.InitAssignment" flags="ng" index="2HfkAV" />
+      <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
+      <concept id="1989356068342053581" name="com.mbeddr.formal.nusmv.structure.DefineSection" flags="ng" index="32O2o0">
+        <child id="1989356068342053586" name="definitions" index="32O2ov" />
+      </concept>
+      <concept id="1989356068341979925" name="com.mbeddr.formal.nusmv.structure.ParameterRef" flags="ng" index="32Ogvo">
+        <reference id="1989356068341979926" name="param" index="32Ogvr" />
+      </concept>
+      <concept id="8482728081216289970" name="com.mbeddr.formal.nusmv.structure.NotExpression" flags="ng" index="1yA0yd" />
+      <concept id="8482728081215818367" name="com.mbeddr.formal.nusmv.structure.FalseLiteral" flags="ng" index="1yCjT0" />
+      <concept id="8482728081213209469" name="com.mbeddr.formal.nusmv.structure.ModuleType" flags="ng" index="1zigX2">
+        <reference id="8482728081213209470" name="module" index="1zigX1" />
+        <child id="8482728081213209473" name="actuals" index="1zigYY" />
+      </concept>
+      <concept id="8482728081211544281" name="com.mbeddr.formal.nusmv.structure.Definition" flags="ng" index="1zoerA">
+        <child id="8482728081211544406" name="rhs" index="1zoetD" />
+      </concept>
+    </language>
+    <language id="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f" name="com.mbeddr.formal.base.expressions">
+      <concept id="7842584090744231473" name="com.mbeddr.formal.base.expressions.structure.BinaryExpression" flags="ng" index="2H9Ias">
+        <child id="7842584090744231480" name="right" index="2H9Ial" />
+        <child id="7842584090744231474" name="left" index="2H9Iav" />
+      </concept>
+      <concept id="1989356068341840849" name="com.mbeddr.formal.base.expressions.structure.ParensExpression" flags="ng" index="32OYss" />
+      <concept id="1989356068341840686" name="com.mbeddr.formal.base.expressions.structure.UnaryExpression" flags="ng" index="32OYvz">
+        <child id="1989356068341840820" name="exp" index="32OYtT" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2HdtXS" id="1L4MZBxTana">
+    <property role="TrG5h" value="_030_airbag_module_implementation" />
+    <property role="3GE5qa" value="system_def" />
+    <node concept="2Hdtz0" id="1L4MZBxTanb" role="2HcuB8">
+      <property role="TrG5h" value="airbag" />
+      <node concept="32O2o0" id="1L4MZBxTanc" role="2HcbjO">
+        <node concept="JlCpM" id="1L4MZBxTand" role="32O2ov">
+          <property role="TrG5h" value="airbag_explode_command" />
+          <node concept="2He$iJ" id="1L4MZBxTane" role="1zoetD">
+            <ref role="2He$iI" node="1L4MZBxTang" resolve="explode_state" />
+          </node>
+        </node>
+      </node>
+      <node concept="2Hfkzq" id="1L4MZBxTanf" role="2HcbjO">
+        <node concept="2Hdskp" id="1L4MZBxTapX" role="2Hfkx9">
+          <property role="TrG5h" value="deactivated_state" />
+          <node concept="2Hds6S" id="1L4MZBxTaqy" role="2HdssA" />
+        </node>
+        <node concept="2Hdskp" id="1L4MZBxTang" role="2Hfkx9">
+          <property role="TrG5h" value="explode_state" />
+          <node concept="2Hds6S" id="1L4MZBxTanh" role="2HdssA" />
+        </node>
+      </node>
+      <node concept="2Hfkzp" id="1L4MZBxTap4" role="2HcbjO">
+        <node concept="2HfkAV" id="1L4MZBxTaqE" role="2HfkAP">
+          <node concept="2He$iJ" id="1L4MZBxTaqV" role="2He$ia">
+            <ref role="2He$iI" node="1L4MZBxTapX" resolve="deactivated_state" />
+          </node>
+          <node concept="1yCjT0" id="1L4MZBxTatV" role="2He$i0" />
+        </node>
+        <node concept="2HevG6" id="1L4MZBxTarY" role="2HfkAP">
+          <node concept="2He$iJ" id="1L4MZBxTasi" role="2He$ia">
+            <ref role="2He$iI" node="1L4MZBxTapX" resolve="deactivated_state" />
+          </node>
+          <node concept="2HbMDt" id="1L4MZBxTau$" role="2He$i0">
+            <node concept="32Ogvo" id="1L4MZBxTav0" role="2H9Ial">
+              <ref role="32Ogvr" node="1L4MZBxTani" resolve="deactivate_airbag" />
+            </node>
+            <node concept="2He$iJ" id="1L4MZBxTaug" role="2H9Iav">
+              <ref role="2He$iI" node="1L4MZBxTapX" resolve="deactivated_state" />
+            </node>
+          </node>
+        </node>
+        <node concept="2HeLW8" id="1L4MZBxTavE" role="2HfkAP" />
+        <node concept="2HfkAV" id="1L4MZBxTava" role="2HfkAP">
+          <node concept="2He$iJ" id="1L4MZBxTaw4" role="2He$ia">
+            <ref role="2He$iI" node="1L4MZBxTang" resolve="explode_state" />
+          </node>
+          <node concept="1yCjT0" id="1L4MZBxTavc" role="2He$i0" />
+        </node>
+        <node concept="2HevG6" id="1L4MZBxTav5" role="2HfkAP">
+          <node concept="2He$iJ" id="1L4MZBxTawB" role="2He$ia">
+            <ref role="2He$iI" node="1L4MZBxTang" resolve="explode_state" />
+          </node>
+          <node concept="2HbMDt" id="1L4MZBxTazU" role="2He$i0">
+            <node concept="2He$iJ" id="1L4MZBxTay6" role="2H9Iav">
+              <ref role="2He$iI" node="1L4MZBxTang" resolve="explode_state" />
+            </node>
+            <node concept="32OYss" id="1L4MZBxTazV" role="2H9Ial">
+              <node concept="2HbMbg" id="1L4MZBxTazW" role="32OYtT">
+                <node concept="1yA0yd" id="1L4MZBxTazX" role="2H9Iav">
+                  <node concept="2He$iJ" id="1L4MZBxTazH" role="32OYtT">
+                    <ref role="2He$iI" node="1L4MZBxTapX" resolve="deactivated_state" />
+                  </node>
+                </node>
+                <node concept="32Ogvo" id="1L4MZBxTa$K" role="2H9Ial">
+                  <ref role="32Ogvr" node="1L4MZBxTanj" resolve="collision_detected" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Hdtzr" id="1L4MZBxTani" role="2Hdtzq">
+        <property role="TrG5h" value="deactivate_airbag" />
+      </node>
+      <node concept="2Hdtzr" id="1L4MZBxTanj" role="2Hdtzq">
+        <property role="TrG5h" value="collision_detected" />
+      </node>
+      <node concept="0Sh09" id="65VbbGlqZgk" role="lGtFl">
+        <node concept="hnKMr" id="SmAS9ikGWO" role="hnKMk">
+          <ref role="hnKMs" node="VJbr0XaaMn" />
+        </node>
+      </node>
+    </node>
+    <node concept="2SQmWS" id="1L4MZBxTank" role="2HcuB8" />
+    <node concept="2Hdtz0" id="1L4MZBxTanl" role="2HcuB8">
+      <property role="TrG5h" value="main" />
+      <node concept="2Hfkzq" id="1L4MZBxTanm" role="2HcbjO">
+        <node concept="2Hdskp" id="1L4MZBxTann" role="2Hfkx9">
+          <property role="TrG5h" value="my_deactivate_airbag" />
+          <node concept="2Hds6S" id="1L4MZBxTano" role="2HdssA" />
+        </node>
+        <node concept="2Hdskp" id="1L4MZBxTanp" role="2Hfkx9">
+          <property role="TrG5h" value="my_collision_detected" />
+          <node concept="2Hds6S" id="1L4MZBxTanq" role="2HdssA" />
+        </node>
+        <node concept="2Hdskp" id="1L4MZBxTanr" role="2Hfkx9">
+          <property role="TrG5h" value="a" />
+          <node concept="1zigX2" id="1L4MZBxTans" role="2HdssA">
+            <ref role="1zigX1" node="1L4MZBxTanb" resolve="airbag" />
+            <node concept="2He$iJ" id="1L4MZBxTant" role="1zigYY">
+              <ref role="2He$iI" node="1L4MZBxTann" resolve="my_deactivate_airbag" />
+            </node>
+            <node concept="2He$iJ" id="1L4MZBxTanu" role="1zigYY">
+              <ref role="2He$iI" node="1L4MZBxTanp" resolve="my_collision_detected" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

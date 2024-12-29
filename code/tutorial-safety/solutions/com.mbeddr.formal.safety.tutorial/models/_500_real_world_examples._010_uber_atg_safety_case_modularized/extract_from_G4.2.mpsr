@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905406443" name="com.mbeddr.formal.safety.gsn.structure.Strategy" flags="ng" index="2vmxQI" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="1e9opmpecmY">
+    <property role="TrG5h" value="extract_from_G4.2" />
+    <property role="3GE5qa" value="4_misuse" />
+    <node concept="2vn7WC" id="1e9opmpdGYa" role="2vn1q5">
+      <property role="TrG5h" value="G4.2" />
+      <node concept="19SGf9" id="1e9opmpdHT4" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKpS" role="19SJt6">
+          <property role="19SUeA" value="Potential harm from reasonably foreseeable&#10;misuse is mitigated " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmxQI" id="1e9opmpdGYc" role="2vn1q5">
+      <property role="TrG5h" value="S4.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHT5" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKpT" role="19SJt6">
+          <property role="19SUeA" value="The misuse analysis is based off ISO&#10;26262, ISO-PAS 21448, and MIL-STD-882E&#10;methodologies. " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGYe" role="2vn1q5">
+      <property role="TrG5h" value="G4.2.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHT6" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKpU" role="19SJt6">
+          <property role="19SUeA" value="Sources of rider and road user reasonably&#10;foreseeable misuse are identified " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmxQI" id="1e9opmpdGYg" role="2vn1q5">
+      <property role="TrG5h" value="S4.2.1.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHT7" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKpV" role="19SJt6">
+          <property role="19SUeA" value="Methods such as systematic analysis,&#10;field research and monitoring to sufficiently&#10;identify sources of misuse " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGYi" role="2vn1q5">
+      <property role="TrG5h" value="G4.2.1.1.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHT8" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKpW" role="19SJt6">
+          <property role="19SUeA" value="Analysis is performed to understand risk&#10;from intentional and unintentional misuse" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYk" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.1.1.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHT9" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKpX" role="19SJt6">
+          <property role="19SUeA" value="Analysis of use cases to derive misuse&#10;cases\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYm" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.1.1.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHTa" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKpY" role="19SJt6">
+          <property role="19SUeA" value="Analysis of actor interactions\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYo" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.1.1.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHTb" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKpZ" role="19SJt6">
+          <property role="19SUeA" value="Analysis of rider interactions\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYq" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.1.1.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHTc" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKq0" role="19SJt6">
+          <property role="19SUeA" value="Coverage / justification that interactions&#10;analyzed cover the demographic spectrum&#10;of actors " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYs" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.1.1.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHTd" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKq1" role="19SJt6">
+          <property role="19SUeA" value="Coverage / justification that analysis&#10;includes all reasonable actor interactions\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYu" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.1.1.1.6" />
+      <node concept="19SGf9" id="1e9opmpdHTe" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKq2" role="19SJt6">
+          <property role="19SUeA" value="Criteria for analysis and ranking\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYw" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.1.1.1.7" />
+      <node concept="19SGf9" id="1e9opmpdHTf" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKq3" role="19SJt6">
+          <property role="19SUeA" value="Field monitoring data / research\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYy" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.1.1.1.8" />
+      <node concept="19SGf9" id="1e9opmpdHTg" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKq4" role="19SJt6">
+          <property role="19SUeA" value="Risk identification and ranking\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGY$" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.1.1.1.9" />
+      <node concept="19SGf9" id="1e9opmpdHTh" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKq5" role="19SJt6">
+          <property role="19SUeA" value="Rider / road user misuse model(s) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGYA" role="2vn1q5">
+      <property role="TrG5h" value="G4.2.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHTi" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKq6" role="19SJt6">
+          <property role="19SUeA" value="Reasonably foreseeable misuse mitigations&#10;are designed and implemented " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGYC" role="2vn1q5">
+      <property role="TrG5h" value="G4.2.1.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHTj" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKq7" role="19SJt6">
+          <property role="19SUeA" value="Reasonably foreseeable misuse mitigations&#10;are verified " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYE" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.2.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHTk" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKq8" role="19SJt6">
+          <property role="19SUeA" value="Definition of expected behavior during&#10;system or component misuse\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYG" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.2.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHTl" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKq9" role="19SJt6">
+          <property role="19SUeA" value="Mitigation design requirements\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYI" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.2.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHTm" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqa" role="19SJt6">
+          <property role="19SUeA" value="Report justifying misuse testing is appropriate\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYK" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.2.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHTn" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqb" role="19SJt6">
+          <property role="19SUeA" value="Report justifying misuse testing coverage&#10;is appropriate\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYM" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.2.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHTo" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqc" role="19SJt6">
+          <property role="19SUeA" value="Report showing no systematic design defects&#10;exist when system is misused\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYO" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.2.1.6" />
+      <node concept="19SGf9" id="1e9opmpdHTp" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqd" role="19SJt6">
+          <property role="19SUeA" value="Misuse injection testing " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGYQ" role="2vn1q5">
+      <property role="TrG5h" value="G4.2.1.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHTq" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqe" role="19SJt6">
+          <property role="19SUeA" value="Reasonably foreseeable misuse mitigations&#10;are validated " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYS" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.2.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHTr" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqf" role="19SJt6">
+          <property role="19SUeA" value="Field monitoring for anomalies\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYU" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.2.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHTs" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqg" role="19SJt6">
+          <property role="19SUeA" value="Anomaly analysis and resolution\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYW" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.2.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHTt" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqh" role="19SJt6">
+          <property role="19SUeA" value="Misuse testing\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGYY" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.2.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHTu" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqi" role="19SJt6">
+          <property role="19SUeA" value="Coverage of misuse testing to scenarios" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGZ0" role="2vn1q5">
+      <property role="TrG5h" value="G4.2.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHTv" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqj" role="19SJt6">
+          <property role="19SUeA" value="Sources of insider threat are identified" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmxQI" id="1e9opmpdGZ2" role="2vn1q5">
+      <property role="TrG5h" value="S4.2.1.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHTw" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqk" role="19SJt6">
+          <property role="19SUeA" value="Methods such as systematic analysis,&#10;field research and monitoring to sufficiently&#10;identify sources of misuse " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGZ4" role="2vn1q5">
+      <property role="TrG5h" value="G4.2.1.3.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHTx" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKql" role="19SJt6">
+          <property role="19SUeA" value="Analysis is performed to understand risk&#10;from insider threat " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZ6" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.3.1.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHTy" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqm" role="19SJt6">
+          <property role="19SUeA" value="Analysis of use cases to derive misuse&#10;cases\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZ8" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.3.1.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHTz" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqn" role="19SJt6">
+          <property role="19SUeA" value="Analysis of actor interactions\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZa" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.3.1.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHT$" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqo" role="19SJt6">
+          <property role="19SUeA" value="Analysis of rider interactions\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZc" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.3.1.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHT_" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqp" role="19SJt6">
+          <property role="19SUeA" value="Criteria for analysis and ranking\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZe" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.3.1.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHTA" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqq" role="19SJt6">
+          <property role="19SUeA" value="Field monitoring data / research\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZg" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.3.1.1.6" />
+      <node concept="19SGf9" id="1e9opmpdHTB" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqr" role="19SJt6">
+          <property role="19SUeA" value="Risk identification and ranking\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZi" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.3.1.1.7" />
+      <node concept="19SGf9" id="1e9opmpdHTC" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqs" role="19SJt6">
+          <property role="19SUeA" value="Insider threat model(s) " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGZk" role="2vn1q5">
+      <property role="TrG5h" value="G4.2.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHTD" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqt" role="19SJt6">
+          <property role="19SUeA" value="Insider threat mitigations are designed&#10;and implemented " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGZm" role="2vn1q5">
+      <property role="TrG5h" value="G4.2.1.4.1" />
+      <node concept="19SGf9" id="1e9opmpdHTE" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqu" role="19SJt6">
+          <property role="19SUeA" value="Mitigations for insider threat are verified" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZo" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.4.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHTF" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqv" role="19SJt6">
+          <property role="19SUeA" value="Definition of expected behavior during&#10;system or component misuse\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZq" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.4.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHTG" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqw" role="19SJt6">
+          <property role="19SUeA" value="Mitigation design requirements\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZs" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.4.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHTH" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqx" role="19SJt6">
+          <property role="19SUeA" value="Report justifying misuse testing is appropriate\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZu" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.4.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHTI" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqy" role="19SJt6">
+          <property role="19SUeA" value="Report justifying misuse testing coverage&#10;is appropriate\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZw" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.4.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHTJ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqz" role="19SJt6">
+          <property role="19SUeA" value="Report showing no systematic design defects&#10;exist when system is misused\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZy" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.4.1.6" />
+      <node concept="19SGf9" id="1e9opmpdHTK" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKq$" role="19SJt6">
+          <property role="19SUeA" value="Misuse injection testing " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdGZ$" role="2vn1q5">
+      <property role="TrG5h" value="G4.2.1.4.2" />
+      <node concept="19SGf9" id="1e9opmpdHTL" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKq_" role="19SJt6">
+          <property role="19SUeA" value="Mitigations for insider threat are validated" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZA" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.4.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHTM" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqA" role="19SJt6">
+          <property role="19SUeA" value="Field monitoring for anomalies\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZC" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.4.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHTN" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqB" role="19SJt6">
+          <property role="19SUeA" value="Anomaly analysis and resolution\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZE" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.4.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHTO" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqC" role="19SJt6">
+          <property role="19SUeA" value="Misuse testing\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdGZG" role="2vn1q5">
+      <property role="TrG5h" value="Sn4.2.1.4.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHTP" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKqD" role="19SJt6">
+          <property role="19SUeA" value="Coverage of misuse testing to scenarios" />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYd" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYc" resolve="S4.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdGYa" resolve="G4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYf" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYc" resolve="S4.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGYe" resolve="G4.2.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYh" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYe" resolve="G4.2.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGYg" resolve="S4.2.1.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYj" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYg" resolve="S4.2.1.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGYi" resolve="G4.2.1.1.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYl" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYi" resolve="G4.2.1.1.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGYk" resolve="Sn4.2.1.1.1.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYn" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYm" resolve="Sn4.2.1.1.1.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdGYi" resolve="G4.2.1.1.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYp" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYo" resolve="Sn4.2.1.1.1.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdGYi" resolve="G4.2.1.1.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYr" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYq" resolve="Sn4.2.1.1.1.1.4" />
+      <ref role="3VeSjP" node="1e9opmpdGYi" resolve="G4.2.1.1.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYt" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYs" resolve="Sn4.2.1.1.1.1.5" />
+      <ref role="3VeSjP" node="1e9opmpdGYi" resolve="G4.2.1.1.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYv" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYu" resolve="Sn4.2.1.1.1.1.6" />
+      <ref role="3VeSjP" node="1e9opmpdGYi" resolve="G4.2.1.1.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYx" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYi" resolve="G4.2.1.1.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGYw" resolve="Sn4.2.1.1.1.1.7" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYz" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYi" resolve="G4.2.1.1.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGYy" resolve="Sn4.2.1.1.1.1.8" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGY_" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYi" resolve="G4.2.1.1.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGY$" resolve="Sn4.2.1.1.1.1.9" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYB" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYc" resolve="S4.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGYA" resolve="G4.2.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYD" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYC" resolve="G4.2.1.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdGYA" resolve="G4.2.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYF" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYE" resolve="Sn4.2.1.2.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdGYC" resolve="G4.2.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYH" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYG" resolve="Sn4.2.1.2.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdGYC" resolve="G4.2.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYJ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYC" resolve="G4.2.1.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGYI" resolve="Sn4.2.1.2.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYL" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYK" resolve="Sn4.2.1.2.1.4" />
+      <ref role="3VeSjP" node="1e9opmpdGYC" resolve="G4.2.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYN" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYC" resolve="G4.2.1.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGYM" resolve="Sn4.2.1.2.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYP" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYO" resolve="Sn4.2.1.2.1.6" />
+      <ref role="3VeSjP" node="1e9opmpdGYC" resolve="G4.2.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYR" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYQ" resolve="G4.2.1.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdGYA" resolve="G4.2.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYT" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYS" resolve="Sn4.2.1.2.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdGYQ" resolve="G4.2.1.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYV" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGYU" resolve="Sn4.2.1.2.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdGYQ" resolve="G4.2.1.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYX" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYQ" resolve="G4.2.1.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGYW" resolve="Sn4.2.1.2.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGYZ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYQ" resolve="G4.2.1.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGYY" resolve="Sn4.2.1.2.2.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZ1" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYc" resolve="S4.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZ0" resolve="G4.2.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZ3" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZ0" resolve="G4.2.1.3" />
+      <ref role="3VeSjQ" node="1e9opmpdGZ2" resolve="S4.2.1.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZ5" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZ2" resolve="S4.2.1.3.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZ4" resolve="G4.2.1.3.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZ7" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZ6" resolve="Sn4.2.1.3.1.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdGZ4" resolve="G4.2.1.3.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZ9" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZ4" resolve="G4.2.1.3.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZ8" resolve="Sn4.2.1.3.1.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZb" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZa" resolve="Sn4.2.1.3.1.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdGZ4" resolve="G4.2.1.3.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZd" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZ4" resolve="G4.2.1.3.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZc" resolve="Sn4.2.1.3.1.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZf" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZ4" resolve="G4.2.1.3.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZe" resolve="Sn4.2.1.3.1.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZh" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZg" resolve="Sn4.2.1.3.1.1.6" />
+      <ref role="3VeSjP" node="1e9opmpdGZ4" resolve="G4.2.1.3.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZj" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZ4" resolve="G4.2.1.3.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZi" resolve="Sn4.2.1.3.1.1.7" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZl" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGYc" resolve="S4.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZk" resolve="G4.2.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZn" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZk" resolve="G4.2.1.4" />
+      <ref role="3VeSjQ" node="1e9opmpdGZm" resolve="G4.2.1.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZp" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZo" resolve="Sn4.2.1.4.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdGZm" resolve="G4.2.1.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZr" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZq" resolve="Sn4.2.1.4.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdGZm" resolve="G4.2.1.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZt" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZm" resolve="G4.2.1.4.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZs" resolve="Sn4.2.1.4.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZv" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZm" resolve="G4.2.1.4.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZu" resolve="Sn4.2.1.4.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZx" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZm" resolve="G4.2.1.4.1" />
+      <ref role="3VeSjQ" node="1e9opmpdGZw" resolve="Sn4.2.1.4.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZz" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZy" resolve="Sn4.2.1.4.1.6" />
+      <ref role="3VeSjP" node="1e9opmpdGZm" resolve="G4.2.1.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZ_" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZk" resolve="G4.2.1.4" />
+      <ref role="3VeSjQ" node="1e9opmpdGZ$" resolve="G4.2.1.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZB" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZA" resolve="Sn4.2.1.4.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdGZ$" resolve="G4.2.1.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZD" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZC" resolve="Sn4.2.1.4.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdGZ$" resolve="G4.2.1.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZF" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdGZE" resolve="Sn4.2.1.4.2.3" />
+      <ref role="3VeSjP" node="1e9opmpdGZ$" resolve="G4.2.1.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdGZH" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdGZ$" resolve="G4.2.1.4.2" />
+      <ref role="3VeSjQ" node="1e9opmpdGZG" resolve="Sn4.2.1.4.2.4" />
+    </node>
+  </node>
+</model>
+

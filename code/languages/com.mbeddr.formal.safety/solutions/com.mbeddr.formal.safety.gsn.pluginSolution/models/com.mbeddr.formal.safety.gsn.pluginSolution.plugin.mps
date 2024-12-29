@@ -24,7 +24,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -58,11 +58,6 @@
       <property role="33g7Lv" value="GSN Textual View Fast" />
       <ref role="33glcW" to="g35p:4mOCK0sBQkK" resolve="GoalStructureHints" />
       <ref role="33glcY" to="g35p:7olAlesPj8d" resolve="GOAL_STRUCTURE_TEXTUAL_FAST" />
-    </node>
-    <node concept="33gmoH" id="5uFV_KKTMM1" role="2hfSGL">
-      <property role="33g7Lv" value="GSN Tree View" />
-      <ref role="33glcW" to="g35p:4mOCK0sBQkK" resolve="GoalStructureHints" />
-      <ref role="33glcY" to="g35p:4mOCK0sBQkL" resolve="GOAL_STRUCTURE_TREE" />
     </node>
     <node concept="33gmoH" id="5li4g21ecOd" role="2hfSGL">
       <property role="33g7Lv" value="GSN Tree View Fast" />

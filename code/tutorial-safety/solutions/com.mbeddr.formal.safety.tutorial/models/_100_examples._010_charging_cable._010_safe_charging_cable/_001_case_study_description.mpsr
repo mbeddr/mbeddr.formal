@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:28d45899-cb06-44a2-a245-407cc7013b3d(_100_examples._010_charging_cable._010_safe_charging_cable)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
+      <concept id="2707707741261635555" name="com.mbeddr.formal.nusmv.structure.DocumentationLine" flags="ng" index="sUyCV">
+        <property id="2707707741261637861" name="documentation" index="sUxOX" />
+      </concept>
+      <concept id="7842584090743385045" name="com.mbeddr.formal.nusmv.structure.System" flags="ng" index="2HdtXS">
+        <child id="7842584090743643493" name="content" index="2HcuB8" />
+      </concept>
+      <concept id="6447909589225766051" name="com.mbeddr.formal.nusmv.structure.EmptySystemContent" flags="ng" index="2SQmWS" />
+    </language>
+    <language id="c0e6afd4-e20f-4e33-9970-004cf26b9bf6" name="com.mbeddr.formal.nusmv.ext">
+      <concept id="1258148499700303837" name="com.mbeddr.formal.nusmv.ext.structure.DocumentationMultiline" flags="ng" index="3I9x2T" />
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2HdtXS" id="7BYuSCF$ivt">
+    <property role="TrG5h" value="_001_case_study_description" />
+    <property role="3GE5qa" value="_000_item_definition" />
+    <node concept="2SQmWS" id="7BYuSCF$ivu" role="2HcuB8" />
+    <node concept="3I9x2T" id="7BYuSCF$ivy" role="2HcuB8">
+      <property role="sUxOX" value="CASE STUDY&#10;&#10;Electric mobility becomes trending issue than ever in transportation sector. The essential part of electric mobility is the use of electric vehicles. Electric Vehicle (EV) is type of vehicle which primarily powered by an electric motor drawing power from a rechargeable energy storage device. EV receives electricity by plugging into the grid and store it in batteries.  &#10;&#10;EV Charger is an electrical device that converts alternating current energy to regulated direct current for replenishing the energy of an energy storage device (i.e. battery) and may also provide energy for operating other vehicle electrical systems.&#10;&#10;There are 3 functions that must be performed to allow charging of the EV battery from an electric supply network. The two of them is electrical functions and other one is mechanical function. First electrical function is rectification process and second one is controlling and regulation of supply voltage according to battery charge acceptance characteristics. The mechanical function is the connecting of the EV to the EVSE and this process is performed by the user.&#10;&#10;Main parts of this system are charger control unit, charging cable and vehicle control unit.&#10;&#10;There are three main ways of charging: conductive charging, inductive charging and by changing the battery. Using the conductive method the battery is connected by a cable and plugged directly into an electricity provider.&#10;&#10;Currently, both the automotive industry and operators of charging stations prefer conductive charging because it is much cheaper and more efficient.&#10;&#10;Conductive charging system use direct contact between the EV connector and charge inlet. The cable can be fed from a standard electrical outlet or a charging station. The main drawback of this solution is that the driver needs to plug in the cable, but of course this is only a connection issue.&#10;&#10;Mode 2 Charging (Domestic socket and cable with a protection device) : The vehicle is connected to the main power grid via household socket-outlets. Recharging is done via a single-phase or three-phase network and installation of an earthing cable. A protection device is built into the cable. This solution is particularly expensive due to the specification of the cable.&#10;&#10;Mode 2 Charging is home charging from a standard power outlet, but with a special in-cable EVSE (EV Supply Equipment), also known as &quot;occasional use cable&quot;, usually supplied with an EV from the manufacturer. This cable provides:&#10;- In-cable RCD&#10;- Over-current protection&#10;- Over-temperature protection&#10;- Protective Earth detection (from wall socket)&#10;&#10;Power will only follow to the vehicle if the EVSE has detected:&#10;- Protective Earth is valid&#10;- No error condition exists (over-current, over-temperature, etc.)&#10;- Vehicle has been plugged in (detected via pilot data line)&#10;- Vehicle has requested power (detected via pilot data line)&#10;&#10;Mode 2 charging cables provide a moderate level of safety and are the minimum standard today for charging an EV.&#10;&#10;Mode 2 charging connection of the EV to the AC supply network (mains) not exceeding 32 A and not exceeding 250V AC single-phase or 480V AC. Three-phase utilizing standardized single-phase or three-phase socket-outlets, and utilizing the power and protective earth conductors together with a control pilot function and system of personnel protection against electric shock (RCD) between the EV and the plug or as a part of the in-cable control box. The inline control box shall be located within 0,3 m of the plug or the EVSE or in the plug.&#10;&#10;---- Citation:&#10;&#10;@article{2018_dericioglu_ev_charging_technologies_review,&#10;  title={A Review of Charging Technologies For Commercial Electric Vehicles},&#10;  author={Dericioglu, C and Yirik, E and Unal, E and Cuma, MU and Onur, B and Tumay, M},&#10;  journal={International Journal of Advances on Automotive and Technology},&#10;  volume={2},&#10;  number={1},&#10;  pages={61--70},&#10;  year={2018}&#10;}&#10;---------------------------------------------------&#10;SCENARIO 1: Changing the cable temperature sensor&#10;&#10;A new version of the cable temperature sensor is used when constructing the cable. &#10;&#10;---------------------------------------------------&#10;ITEM DEFINITION&#10;&#10;- The boundary of the item and the item's interfaces, as well as assumptions concerning other items and elements&#10;&#10;---- System under Consideration: in-cable control box&#10;&#10;Interfaces&#10;&#10;---- interface to mains&#10;---- interface to EV&#10;&#10;---- Context systems: &#10;&#10;Sensors&#10;-------- cable temperature sensor&#10;-------- cable sensors&#10;&#10;Actuators&#10;-------- leds&#10;-------- relay&#10;&#10;- Functional requirements (for the whole cable): FR01-FR04&#10;&#10;- Non-functional requirements if available, e.g. operational and environmental requirements and constraints (for the whole cable)&#10;&#10;---- System interface requirements: IR01 - IR 04&#10;&#10;- System modes and states (SR01, SR02)&#10;&#10;- Already known safety requirements: FSR01-FSR03&#10;&#10;---------------------------------------------------&#10;LOSSES&#10;&#10;L1: Loss of life or serious injury to people&#10;L2: Electrical damage (economic loss)" />
+    </node>
+    <node concept="2SQmWS" id="7BYuSCF$jzV" role="2HcuB8" />
+    <node concept="2SQmWS" id="7BYuSCF$j$2" role="2HcuB8" />
+    <node concept="2SQmWS" id="7BYuSCF$jzO" role="2HcuB8" />
+    <node concept="2SQmWS" id="7BYuSCF$iWb" role="2HcuB8" />
+    <node concept="2SQmWS" id="7BYuSCF$iW7" role="2HcuB8" />
+  </node>
+</model>
+

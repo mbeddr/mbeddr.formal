@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:00435d79-77fb-49f0-87b5-fa7239ab0856(_100_examples._020_adas_students_lab._030_safe_emergency_break)" content="header">
+  <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
+  <languages>
+    <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
+    <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
+    <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
+    <devkit ref="5a50cadb-4d6e-4722-b5f5-c6b9efb22ffe(fasten.safety.gsn.formal)" />
+    <devkit ref="5e597493-feae-41d8-b052-3b0a41743991(fasten.safety.gsn.patterns)" />
+  </languages>
+  <imports>
+    <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_patterns_catalogue)" />
+    <import index="ee4e" ref="r:6df6dea3-0ed6-4204-928b-52b619b721ef(_100_examples._020_adas_students_lab._020_safe_acc)" />
+  </imports>
+</model>
+

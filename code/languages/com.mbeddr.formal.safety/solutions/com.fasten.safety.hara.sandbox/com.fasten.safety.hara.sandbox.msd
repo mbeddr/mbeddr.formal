@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.fasten.safety.hara.sandbox" uuid="1a3fdba9-d840-4870-b5aa-3104c026cb09" moduleVersion="0" compileInMPS="true">
+<solution name="com.fasten.safety.hara.sandbox" uuid="1a3fdba9-d840-4870-b5aa-3104c026cb09" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
-    <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:17da266c-02d9-4bbd-b69b-8a656b49f45c:com.mbeddr.formal.safety.hara" version="0" />
     <language slang="l:a798113f-e2cd-4e21-a8e2-ca1903cb9c43:com.mbeddr.formal.safety.iso26262" version="1" />
     <language slang="l:7e777b53-0a6b-4719-b36d-10475788d49f:com.mbeddr.formal.safety.stamp" version="2" />

@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="1e9opmpedra">
+    <property role="TrG5h" value="extract_from_G5.1.3" />
+    <property role="3GE5qa" value="5_trustworthiness" />
+    <node concept="2vn7WC" id="1e9opmpdH5U" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHWW" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtK" role="19SJt6">
+          <property role="19SUeA" value="Appropriate, verifiable evidence of safety&#10;and performance is provided outside the&#10;Self-Driving Enterprise" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH5W" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHWX" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtL" role="19SJt6">
+          <property role="19SUeA" value="Multimodal communication methods are&#10;used " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH5Y" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHWY" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtM" role="19SJt6">
+          <property role="19SUeA" value="An appropriate, public website with educational&#10;information pertaining to the Self-Driving&#10;Enterprise is maintained\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH60" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.1.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHWZ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtN" role="19SJt6">
+          <property role="19SUeA" value="UATG Website\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH62" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.1.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHX0" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtO" role="19SJt6">
+          <property role="19SUeA" value="Website content review for accuracy and&#10;completeness " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH64" role="2vn1q5">
+      <property role="TrG5h" value="G5.3.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHX1" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtP" role="19SJt6">
+          <property role="19SUeA" value="Timely, public updates on the Self-Driving&#10;Enterprise are provided\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH66" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.1.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHX2" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtQ" role="19SJt6">
+          <property role="19SUeA" value="Voluntary Safety Self Assessment (VSSA)\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH68" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.1.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHX3" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtR" role="19SJt6">
+          <property role="19SUeA" value="External content delivery schedule\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6a" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.1.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHX4" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtS" role="19SJt6">
+          <property role="19SUeA" value="Peer review and approval of external&#10;content delivery schedule\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6c" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.1.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHX5" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtT" role="19SJt6">
+          <property role="19SUeA" value="Blog posts " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH6e" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHX6" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtU" role="19SJt6">
+          <property role="19SUeA" value="A Safety Case framework for the Self-Driving&#10;Enterprise is publicly available " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH6g" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHX7" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtV" role="19SJt6">
+          <property role="19SUeA" value="Internal parties are consulted to verify&#10;and validate the Safety Case Framework\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6i" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.2.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHX8" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtW" role="19SJt6">
+          <property role="19SUeA" value="Safety Case Framework\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6k" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.2.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHX9" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtX" role="19SJt6">
+          <property role="19SUeA" value="Internal peer reviews and approvals\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6m" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.2.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHXa" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtY" role="19SJt6">
+          <property role="19SUeA" value="Safety Case Framework version control&#10;policy / guidelines " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH6o" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHXb" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKtZ" role="19SJt6">
+          <property role="19SUeA" value="External, third parties are consulted&#10;to verify and validate the Safety Case&#10;Framework\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6q" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.2.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHXc" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKu0" role="19SJt6">
+          <property role="19SUeA" value="External peer review records " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH6s" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.3" />
+      <node concept="19SGf9" id="1e9opmpdHXd" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKu1" role="19SJt6">
+          <property role="19SUeA" value="Credible periodic reports and updates&#10;are published or released at key points&#10;of transition, testing, and development&#10;of the Self-Driving Enterprise " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH6u" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHXe" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKu2" role="19SJt6">
+          <property role="19SUeA" value="A safety self-assessment of the Self-Driving&#10;Enterprise is publicly available\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6w" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.3.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHXf" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKu3" role="19SJt6">
+          <property role="19SUeA" value="Voluntary Safety Self Assessment (VSSA)" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH6y" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHXg" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKu4" role="19SJt6">
+          <property role="19SUeA" value="Updates and amendments to the safety&#10;self-assessment are publicly available\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6$" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.3.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHXh" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKu5" role="19SJt6">
+          <property role="19SUeA" value="Voluntary Safety Self Assessment (VSSA)&#10;Addendums " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH6A" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.3.3" />
+      <node concept="19SGf9" id="1e9opmpdHXi" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKu6" role="19SJt6">
+          <property role="19SUeA" value="Industry-related testing, development,&#10;or operational guidance is addressed&#10;in a timely manner\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6C" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.3.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHXj" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKu7" role="19SJt6">
+          <property role="19SUeA" value="Periodic reviews of industry available&#10;guidance / standards \n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6E" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.3.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHXk" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKu8" role="19SJt6">
+          <property role="19SUeA" value="Review, ingestion, and implementation&#10;of new guidance / standards\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6G" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.3.3.3" />
+      <node concept="19SGf9" id="1e9opmpdHXl" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKu9" role="19SJt6">
+          <property role="19SUeA" value="Process compliance audits\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6I" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.3.3.4" />
+      <node concept="19SGf9" id="1e9opmpdHXm" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKua" role="19SJt6">
+          <property role="19SUeA" value="Process compliance schedule\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6K" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.3.3.5" />
+      <node concept="19SGf9" id="1e9opmpdHXn" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKub" role="19SJt6">
+          <property role="19SUeA" value="Process compliance results " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH6M" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.4" />
+      <node concept="19SGf9" id="1e9opmpdHXo" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKuc" role="19SJt6">
+          <property role="19SUeA" value="Verifiable evidence that the Self-Driving&#10;Enterprise is capable of appropriately&#10;adhering to all applicable rules, regulations,&#10;and guidance is maintained " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH6O" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.4.1" />
+      <node concept="19SGf9" id="1e9opmpdHXp" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKud" role="19SJt6">
+          <property role="19SUeA" value="Incidents are reported per the requirements&#10;of applicable rules and regulations\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6Q" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHXq" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKue" role="19SJt6">
+          <property role="19SUeA" value="Incident Reporting Plan\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6S" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHXr" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKuf" role="19SJt6">
+          <property role="19SUeA" value="Traceability from applicable rules /&#10;regs to reporting plan\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH6U" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHXs" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKug" role="19SJt6">
+          <property role="19SUeA" value="Peer review and approval of reporting&#10;plan " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH6W" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.4.2" />
+      <node concept="19SGf9" id="1e9opmpdHXt" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKuh" role="19SJt6">
+          <property role="19SUeA" value="Regulatory requirements are fulfilled" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH6Y" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.4.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHXu" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKui" role="19SJt6">
+          <property role="19SUeA" value="Data is systematically collected\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH70" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHXv" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKuj" role="19SJt6">
+          <property role="19SUeA" value="Operational data log(s)\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH72" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHXw" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKuk" role="19SJt6">
+          <property role="19SUeA" value="Operational data process\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH74" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHXx" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKul" role="19SJt6">
+          <property role="19SUeA" value="Operational data and reporting plan\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH76" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHXy" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKum" role="19SJt6">
+          <property role="19SUeA" value="Peer review and approval of plan\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH78" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHXz" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKun" role="19SJt6">
+          <property role="19SUeA" value="Report showing data is systematically&#10;collected\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH7a" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.1.6" />
+      <node concept="19SGf9" id="1e9opmpdHX$" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKuo" role="19SJt6">
+          <property role="19SUeA" value="Traceability from regulatory requirements&#10;to reporting plan " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH7c" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.4.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHX_" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKup" role="19SJt6">
+          <property role="19SUeA" value="Data is continually audited and reviewed&#10;for accuracy and completeness\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH7e" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHXA" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKuq" role="19SJt6">
+          <property role="19SUeA" value="Operational data and reporting plan\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH7g" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHXB" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKur" role="19SJt6">
+          <property role="19SUeA" value="Audit schedule\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH7i" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHXC" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKus" role="19SJt6">
+          <property role="19SUeA" value="Audit results\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH7k" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHXD" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKut" role="19SJt6">
+          <property role="19SUeA" value="Peer review of audit results\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH7m" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.2.5" />
+      <node concept="19SGf9" id="1e9opmpdHXE" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKuu" role="19SJt6">
+          <property role="19SUeA" value="Report of corrective actions for audit&#10;deficiencies " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdH7o" role="2vn1q5">
+      <property role="TrG5h" value="G5.1.3.4.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHXF" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKuv" role="19SJt6">
+          <property role="19SUeA" value="Data Collection processes are continually&#10;audited and reviewed for accuracy and&#10;completeness\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH7q" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHXG" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKuw" role="19SJt6">
+          <property role="19SUeA" value="Operational data process\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH7s" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHXH" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKux" role="19SJt6">
+          <property role="19SUeA" value="Operational data and reporting plan\n" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH7u" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.3.3" />
+      <node concept="19SGf9" id="1e9opmpdHXI" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKuy" role="19SJt6">
+          <property role="19SUeA" value="Audit results\n " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdH7w" role="2vn1q5">
+      <property role="TrG5h" value="Sn5.1.3.4.2.3.4" />
+      <node concept="19SGf9" id="1e9opmpdHXJ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdKuz" role="19SJt6">
+          <property role="19SUeA" value="Peer review of audit results " />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH5X" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH5U" resolve="G5.1.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH5W" resolve="G5.1.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH5Z" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH5Y" resolve="G5.1.3.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdH5W" resolve="G5.1.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH61" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH60" resolve="Sn5.1.3.1.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdH5Y" resolve="G5.1.3.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH63" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH5Y" resolve="G5.1.3.1.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH62" resolve="Sn5.1.3.1.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH65" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH5W" resolve="G5.1.3.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH64" resolve="G5.3.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH67" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH64" resolve="G5.3.1.2" />
+      <ref role="3VeSjQ" node="1e9opmpdH66" resolve="Sn5.1.3.1.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH69" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH68" resolve="Sn5.1.3.1.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdH64" resolve="G5.3.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6b" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6a" resolve="Sn5.1.3.1.2.3" />
+      <ref role="3VeSjP" node="1e9opmpdH64" resolve="G5.3.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6d" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6c" resolve="Sn5.1.3.1.2.4" />
+      <ref role="3VeSjP" node="1e9opmpdH64" resolve="G5.3.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6f" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6e" resolve="G5.1.3.2" />
+      <ref role="3VeSjP" node="1e9opmpdH5U" resolve="G5.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6h" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6e" resolve="G5.1.3.2" />
+      <ref role="3VeSjQ" node="1e9opmpdH6g" resolve="G5.1.3.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6j" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6i" resolve="Sn5.1.3.2.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdH6g" resolve="G5.1.3.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6l" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6k" resolve="Sn5.1.3.2.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdH6g" resolve="G5.1.3.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6n" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6m" resolve="Sn5.1.3.2.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdH6g" resolve="G5.1.3.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6p" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6e" resolve="G5.1.3.2" />
+      <ref role="3VeSjQ" node="1e9opmpdH6o" resolve="G5.1.3.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6r" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6q" resolve="Sn5.1.3.2.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdH6o" resolve="G5.1.3.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6t" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH5U" resolve="G5.1.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH6s" resolve="G5.1.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6v" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6s" resolve="G5.1.3.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH6u" resolve="G5.1.3.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6x" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6u" resolve="G5.1.3.3.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH6w" resolve="Sn5.1.3.3.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6z" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6y" resolve="G5.1.3.3.2" />
+      <ref role="3VeSjP" node="1e9opmpdH6s" resolve="G5.1.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6_" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6$" resolve="Sn5.1.3.3.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdH6y" resolve="G5.1.3.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6B" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6A" resolve="G5.1.3.3.3" />
+      <ref role="3VeSjP" node="1e9opmpdH6s" resolve="G5.1.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6D" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6C" resolve="Sn5.1.3.3.3.1" />
+      <ref role="3VeSjP" node="1e9opmpdH6A" resolve="G5.1.3.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6F" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6A" resolve="G5.1.3.3.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH6E" resolve="Sn5.1.3.3.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6H" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6A" resolve="G5.1.3.3.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH6G" resolve="Sn5.1.3.3.3.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6J" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6A" resolve="G5.1.3.3.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH6I" resolve="Sn5.1.3.3.3.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6L" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6A" resolve="G5.1.3.3.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH6K" resolve="Sn5.1.3.3.3.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6N" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6M" resolve="G5.1.3.4" />
+      <ref role="3VeSjP" node="1e9opmpdH5U" resolve="G5.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6P" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6O" resolve="G5.1.3.4.1" />
+      <ref role="3VeSjP" node="1e9opmpdH6M" resolve="G5.1.3.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6R" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6Q" resolve="Sn5.1.3.4.1.1" />
+      <ref role="3VeSjP" node="1e9opmpdH6O" resolve="G5.1.3.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6T" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH6S" resolve="Sn5.1.3.4.1.2" />
+      <ref role="3VeSjP" node="1e9opmpdH6O" resolve="G5.1.3.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6V" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6O" resolve="G5.1.3.4.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH6U" resolve="Sn5.1.3.4.1.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6X" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6M" resolve="G5.1.3.4" />
+      <ref role="3VeSjQ" node="1e9opmpdH6W" resolve="G5.1.3.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH6Z" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6W" resolve="G5.1.3.4.2" />
+      <ref role="3VeSjQ" node="1e9opmpdH6Y" resolve="G5.1.3.4.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH71" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6Y" resolve="G5.1.3.4.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH70" resolve="Sn5.1.3.4.2.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH73" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6Y" resolve="G5.1.3.4.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH72" resolve="Sn5.1.3.4.2.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH75" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH74" resolve="Sn5.1.3.4.2.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdH6Y" resolve="G5.1.3.4.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH77" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6Y" resolve="G5.1.3.4.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH76" resolve="Sn5.1.3.4.2.1.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH79" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6Y" resolve="G5.1.3.4.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH78" resolve="Sn5.1.3.4.2.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH7b" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH6Y" resolve="G5.1.3.4.2.1" />
+      <ref role="3VeSjQ" node="1e9opmpdH7a" resolve="Sn5.1.3.4.2.1.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH7d" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH7c" resolve="G5.1.3.4.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdH6W" resolve="G5.1.3.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH7f" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH7c" resolve="G5.1.3.4.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdH7e" resolve="Sn5.1.3.4.2.2.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH7h" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH7c" resolve="G5.1.3.4.2.2" />
+      <ref role="3VeSjQ" node="1e9opmpdH7g" resolve="Sn5.1.3.4.2.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH7j" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH7i" resolve="Sn5.1.3.4.2.2.3" />
+      <ref role="3VeSjP" node="1e9opmpdH7c" resolve="G5.1.3.4.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH7l" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH7k" resolve="Sn5.1.3.4.2.2.4" />
+      <ref role="3VeSjP" node="1e9opmpdH7c" resolve="G5.1.3.4.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH7n" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH7m" resolve="Sn5.1.3.4.2.2.5" />
+      <ref role="3VeSjP" node="1e9opmpdH7c" resolve="G5.1.3.4.2.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH7p" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH7o" resolve="G5.1.3.4.2.3" />
+      <ref role="3VeSjP" node="1e9opmpdH6W" resolve="G5.1.3.4.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH7r" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH7o" resolve="G5.1.3.4.2.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH7q" resolve="Sn5.1.3.4.2.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH7t" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH7s" resolve="Sn5.1.3.4.2.3.2" />
+      <ref role="3VeSjP" node="1e9opmpdH7o" resolve="G5.1.3.4.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH7v" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdH7u" resolve="Sn5.1.3.4.2.3.3" />
+      <ref role="3VeSjP" node="1e9opmpdH7o" resolve="G5.1.3.4.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdH7x" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdH7o" resolve="G5.1.3.4.2.3" />
+      <ref role="3VeSjQ" node="1e9opmpdH7w" resolve="Sn5.1.3.4.2.3.4" />
+    </node>
+  </node>
+</model>
+

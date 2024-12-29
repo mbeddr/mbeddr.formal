@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="1e9opmpf$NC">
+    <property role="TrG5h" value="extract_from_G1.2.1.8" />
+    <property role="3GE5qa" value="1_nominal_operation.1_2_SDV_design" />
+    <node concept="2vn7WC" id="1e9opmpdFI0" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.8" />
+      <node concept="19SGf9" id="1e9opmpdHgZ" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLN" role="19SJt6">
+          <property role="19SUeA" value="Requirements for manufacturing are sufficient" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFI2" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.8.1" />
+      <node concept="19SGf9" id="1e9opmpdHh0" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLO" role="19SJt6">
+          <property role="19SUeA" value="Manufacturing requirements are comprehensive" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFI4" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.1.1" />
+      <node concept="19SGf9" id="1e9opmpdHh1" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLP" role="19SJt6">
+          <property role="19SUeA" value="Requirements elicitation checklist " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFI6" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.1.2" />
+      <node concept="19SGf9" id="1e9opmpdHh2" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLQ" role="19SJt6">
+          <property role="19SUeA" value="Requirements elicitation peer review" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFI8" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.1.3" />
+      <node concept="19SGf9" id="1e9opmpdHh3" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLR" role="19SJt6">
+          <property role="19SUeA" value="Requirements traceability to use cases" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIa" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.1.4" />
+      <node concept="19SGf9" id="1e9opmpdHh4" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLS" role="19SJt6">
+          <property role="19SUeA" value="Requirements traceability to misuse cases" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIc" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.1.5" />
+      <node concept="19SGf9" id="1e9opmpdHh5" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLT" role="19SJt6">
+          <property role="19SUeA" value="Requirements traceability to product&#10;lifecycle " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIe" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.1.6" />
+      <node concept="19SGf9" id="1e9opmpdHh6" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLU" role="19SJt6">
+          <property role="19SUeA" value="Requirements traceability to system architecture" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIg" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.1.7" />
+      <node concept="19SGf9" id="1e9opmpdHh7" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLV" role="19SJt6">
+          <property role="19SUeA" value="Requirements traceability to manufacturing&#10;process architecture " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIi" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.1.8" />
+      <node concept="19SGf9" id="1e9opmpdHh8" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLW" role="19SJt6">
+          <property role="19SUeA" value="Requirements for manufacturing quality" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFIk" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.8.2" />
+      <node concept="19SGf9" id="1e9opmpdHh9" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLX" role="19SJt6">
+          <property role="19SUeA" value="Manufacturing requirements are verified&#10;for gaps and omissions " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIm" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.2.1" />
+      <node concept="19SGf9" id="1e9opmpdHha" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLY" role="19SJt6">
+          <property role="19SUeA" value="Structured walk-through " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIo" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.2.2" />
+      <node concept="19SGf9" id="1e9opmpdHhb" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJLZ" role="19SJt6">
+          <property role="19SUeA" value="Review of requirements and scenarios&#10;/ use cases " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIq" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.2.3" />
+      <node concept="19SGf9" id="1e9opmpdHhc" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJM0" role="19SJt6">
+          <property role="19SUeA" value="Build package validation results " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIs" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.2.4" />
+      <node concept="19SGf9" id="1e9opmpdHhd" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJM1" role="19SJt6">
+          <property role="19SUeA" value="Build package validation criteria " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIu" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.2.5" />
+      <node concept="19SGf9" id="1e9opmpdHhe" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJM2" role="19SJt6">
+          <property role="19SUeA" value="Requirements gaps/omissions and requirements&#10;defects " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIw" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.2.6" />
+      <node concept="19SGf9" id="1e9opmpdHhf" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJM3" role="19SJt6">
+          <property role="19SUeA" value="Response to violation of requirement&#10;assumptions " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFIy" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.8.3" />
+      <node concept="19SGf9" id="1e9opmpdHhg" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJM4" role="19SJt6">
+          <property role="19SUeA" value="Manufacturing requirements are verified&#10;to be internally and externally consistent" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFI$" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.3.1" />
+      <node concept="19SGf9" id="1e9opmpdHhh" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJM5" role="19SJt6">
+          <property role="19SUeA" value="Requirements authoring style guide " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIA" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.3.2" />
+      <node concept="19SGf9" id="1e9opmpdHhi" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJM6" role="19SJt6">
+          <property role="19SUeA" value="Requirements review checklist " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFIC" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.8.4" />
+      <node concept="19SGf9" id="1e9opmpdHhj" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJM7" role="19SJt6">
+          <property role="19SUeA" value="Requirements errors follow a systematic&#10;process for root cause and mitigation" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIE" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.4.1" />
+      <node concept="19SGf9" id="1e9opmpdHhk" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJM8" role="19SJt6">
+          <property role="19SUeA" value="Anomaly resolution process.  See G3 for&#10;details " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vn7WC" id="1e9opmpdFIG" role="2vn1q5">
+      <property role="TrG5h" value="G1.2.1.8.5" />
+      <node concept="19SGf9" id="1e9opmpdHhl" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJM9" role="19SJt6">
+          <property role="19SUeA" value="An accurate, complete, configuration-managed&#10;manufacturing process / architecture&#10;model is developed and maintained " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFII" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.5.1" />
+      <node concept="19SGf9" id="1e9opmpdHhm" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJMa" role="19SJt6">
+          <property role="19SUeA" value="Manufacturing architecture description" />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIK" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.5.2" />
+      <node concept="19SGf9" id="1e9opmpdHhn" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJMb" role="19SJt6">
+          <property role="19SUeA" value="Manufacturing functionality mapped to&#10;architecture elements " />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="1e9opmpdFIM" role="2vn1q5">
+      <property role="TrG5h" value="Sn1.2.1.8.5.3" />
+      <node concept="19SGf9" id="1e9opmpdHho" role="2vnaTY">
+        <node concept="19SUe$" id="1e9opmpdJMc" role="19SJt6">
+          <property role="19SUeA" value="Manufacturing process configuration definition" />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFI3" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFI2" resolve="G1.2.1.8.1" />
+      <ref role="3VeSjP" node="1e9opmpdFI0" resolve="G1.2.1.8" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFI5" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFI2" resolve="G1.2.1.8.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFI4" resolve="Sn1.2.1.8.1.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFI7" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFI2" resolve="G1.2.1.8.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFI6" resolve="Sn1.2.1.8.1.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFI9" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFI8" resolve="Sn1.2.1.8.1.3" />
+      <ref role="3VeSjP" node="1e9opmpdFI2" resolve="G1.2.1.8.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIb" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFIa" resolve="Sn1.2.1.8.1.4" />
+      <ref role="3VeSjP" node="1e9opmpdFI2" resolve="G1.2.1.8.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFId" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFI2" resolve="G1.2.1.8.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFIc" resolve="Sn1.2.1.8.1.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIf" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFI2" resolve="G1.2.1.8.1" />
+      <ref role="3VeSjQ" node="1e9opmpdFIe" resolve="Sn1.2.1.8.1.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIh" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFIg" resolve="Sn1.2.1.8.1.7" />
+      <ref role="3VeSjP" node="1e9opmpdFI2" resolve="G1.2.1.8.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIj" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFIi" resolve="Sn1.2.1.8.1.8" />
+      <ref role="3VeSjP" node="1e9opmpdFI2" resolve="G1.2.1.8.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIl" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFIk" resolve="G1.2.1.8.2" />
+      <ref role="3VeSjP" node="1e9opmpdFI0" resolve="G1.2.1.8" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIn" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFIm" resolve="Sn1.2.1.8.2.1" />
+      <ref role="3VeSjP" node="1e9opmpdFIk" resolve="G1.2.1.8.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIp" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFIo" resolve="Sn1.2.1.8.2.2" />
+      <ref role="3VeSjP" node="1e9opmpdFIk" resolve="G1.2.1.8.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIr" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFIk" resolve="G1.2.1.8.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFIq" resolve="Sn1.2.1.8.2.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIt" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFIk" resolve="G1.2.1.8.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFIs" resolve="Sn1.2.1.8.2.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIv" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFIk" resolve="G1.2.1.8.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFIu" resolve="Sn1.2.1.8.2.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIx" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFIk" resolve="G1.2.1.8.2" />
+      <ref role="3VeSjQ" node="1e9opmpdFIw" resolve="Sn1.2.1.8.2.6" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIz" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFI0" resolve="G1.2.1.8" />
+      <ref role="3VeSjQ" node="1e9opmpdFIy" resolve="G1.2.1.8.3" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFI_" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFIy" resolve="G1.2.1.8.3" />
+      <ref role="3VeSjQ" node="1e9opmpdFI$" resolve="Sn1.2.1.8.3.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIB" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFIy" resolve="G1.2.1.8.3" />
+      <ref role="3VeSjQ" node="1e9opmpdFIA" resolve="Sn1.2.1.8.3.2" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFID" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFI0" resolve="G1.2.1.8" />
+      <ref role="3VeSjQ" node="1e9opmpdFIC" resolve="G1.2.1.8.4" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIF" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFIC" resolve="G1.2.1.8.4" />
+      <ref role="3VeSjQ" node="1e9opmpdFIE" resolve="Sn1.2.1.8.4.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIH" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFI0" resolve="G1.2.1.8" />
+      <ref role="3VeSjQ" node="1e9opmpdFIG" resolve="G1.2.1.8.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIJ" role="2vhqc$">
+      <ref role="3VeSjP" node="1e9opmpdFIG" resolve="G1.2.1.8.5" />
+      <ref role="3VeSjQ" node="1e9opmpdFII" resolve="Sn1.2.1.8.5.1" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIL" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFIK" resolve="Sn1.2.1.8.5.2" />
+      <ref role="3VeSjP" node="1e9opmpdFIG" resolve="G1.2.1.8.5" />
+    </node>
+    <node concept="3VeUTF" id="1e9opmpdFIN" role="2vhqc$">
+      <ref role="3VeSjQ" node="1e9opmpdFIM" resolve="Sn1.2.1.8.5.3" />
+      <ref role="3VeSjP" node="1e9opmpdFIG" resolve="G1.2.1.8.5" />
+    </node>
+  </node>
+</model>
+

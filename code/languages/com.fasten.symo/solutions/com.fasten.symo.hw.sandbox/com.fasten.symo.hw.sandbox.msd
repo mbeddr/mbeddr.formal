@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.fasten.symo.hw.sandbox" uuid="e25ecbb2-5cd5-4911-a32a-5959299b7a00" moduleVersion="0" compileInMPS="true">
+<solution name="com.fasten.symo.hw.sandbox" uuid="e25ecbb2-5cd5-4911-a32a-5959299b7a00" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:c2f3ae03-6a71-4e2a-88c9-c9e6eb4e20fa:com.fasten.symo.hw" version="0" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />

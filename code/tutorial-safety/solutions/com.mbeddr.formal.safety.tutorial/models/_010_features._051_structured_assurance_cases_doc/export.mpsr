@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:2e09a14b-a758-4d9c-8de6-b6ce4037b644(_010_features._051_structured_assurance_cases_doc)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="2dec0852-3a21-4c4e-a68c-b05236cc37f2" name="com.mbeddr.doc.gen_xhtml">
+      <concept id="3498379661306969557" name="com.mbeddr.doc.gen_xhtml.structure.HTMLNoOutputRenderer" flags="ng" index="1TaS0h" />
+    </language>
+    <language id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc">
+      <concept id="6386504476136554612" name="com.mbeddr.doc.structure.PathMapping" flags="ng" index="2SbEIf">
+        <property id="6386504476136554614" name="mappedPath" index="2SbEId" />
+        <reference id="6386504476136554613" name="pathDef" index="2SbEIe" />
+      </concept>
+      <concept id="6068976060904002601" name="com.mbeddr.doc.structure.AbstractExport" flags="ng" index="30Gg6V">
+        <child id="6068976060904007487" name="renderer" index="30GjaH" />
+        <child id="6068976060904007490" name="mappings" index="30Gjbg" />
+        <child id="6068976060904007488" name="inactiveRenderer" index="30Gjbi" />
+        <child id="6068976060904007489" name="root" index="30Gjbj" />
+      </concept>
+      <concept id="3350625596580269173" name="com.mbeddr.doc.structure.NoOutputRenderer" flags="ng" index="1_05Lf" />
+      <concept id="3350625596580256366" name="com.mbeddr.doc.structure.DocumentExport" flags="ng" index="1_08Dk">
+        <property id="126932837435324910" name="title" index="WqcPg" />
+      </concept>
+      <concept id="3350625596580225385" name="com.mbeddr.doc.structure.DocumentRef" flags="ng" index="1_0j5j">
+        <reference id="3350625596580225386" name="doc" index="1_0j5g" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1_08Dk" id="3yqvquzJhdd">
+    <property role="TrG5h" value="export" />
+    <property role="WqcPg" value="Document Export Example" />
+    <property role="3GE5qa" value="config" />
+    <node concept="1TaS0h" id="3yqvquzJhoe" role="30GjaH" />
+    <node concept="1_0j5j" id="3yqvquzJhdf" role="30Gjbj">
+      <ref role="1_0j5g" node="1$lk9M66st8" resolve="_016_goal_structure_explanation" />
+    </node>
+    <node concept="2SbEIf" id="3yqvquzJhpT" role="30Gjbg">
+      <property role="2SbEId" value="img" />
+      <ref role="2SbEIe" node="9TY4XGZias" resolve="img" />
+    </node>
+    <node concept="2SbEIf" id="3yqvquzJhvB" role="30Gjbg">
+      <property role="2SbEId" value="tmp" />
+      <ref role="2SbEIe" node="2mjHtwTu9e1" resolve="tmp" />
+    </node>
+    <node concept="1_05Lf" id="3yqvquzJhO0" role="30Gjbi" />
+  </node>
+</model>
+

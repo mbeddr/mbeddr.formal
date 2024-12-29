@@ -67,7 +67,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -313,6 +313,7 @@
     <property role="TrG5h" value="OrExpressionBase" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="|" />
     <ref role="1TJDcQ" node="6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
   </node>
   <node concept="1TIwiD" id="7mSH3WnvIDy">

@@ -2,11 +2,9 @@
 <model ref="r:e0fdabfa-18f0-4762-8817-0e7b1735bd5d(com.mbeddr.formal.safety.argument.modelquery.util)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="yt22" ref="r:eeb370b6-780e-4985-945e-bbc5d9b97a6c(com.mbeddr.formal.safety.argument.modelquery.typesystem)" />
     <import index="3qmy" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.classloading(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="9br2" ref="r:70aadfb3-8246-45ac-bcd1-b345c7f7cfe4(com.mbeddr.formal.safety.argument.modelquery.structure)" />
@@ -81,7 +79,7 @@
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -102,7 +100,7 @@
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
@@ -110,6 +108,9 @@
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
@@ -122,7 +123,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -383,6 +384,9 @@
                     <node concept="37vLTw" id="y1G8y68BB1" role="37wK5m">
                       <ref role="3cqZAo" node="y1G8y68BAY" resolve="methodName" />
                     </node>
+                    <node concept="3VsKOn" id="4VhhwF2sZdU" role="37wK5m">
+                      <ref role="3VsUkX" to="lui2:~SRepository" resolve="SRepository" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -412,6 +416,22 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="4VhhwF2taB6" role="3cqZAp">
+              <node concept="3cpWsn" id="4VhhwF2taB7" role="3cpWs9">
+                <property role="TrG5h" value="modelCheckerObject" />
+                <node concept="3uibUv" id="4VhhwF2taB5" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
+                </node>
+                <node concept="2OqwBi" id="4VhhwF2taB8" role="33vP2m">
+                  <node concept="37vLTw" id="4VhhwF2taB9" role="2Oq$k0">
+                    <ref role="3cqZAo" node="y1G8y66BZ6" resolve="checkerClazz" />
+                  </node>
+                  <node concept="liA8E" id="4VhhwF2taBa" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Class.newInstance()" resolve="newInstance" />
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="y1G8y68DkZ" role="3cqZAp">
               <node concept="3cpWsn" id="y1G8y68Dl0" role="3cpWs9">
                 <property role="TrG5h" value="result" />
@@ -424,7 +444,12 @@
                   </node>
                   <node concept="liA8E" id="y1G8y68Dl3" role="2OqNvi">
                     <ref role="37wK5l" to="t6h5:~Method.invoke(java.lang.Object,java.lang.Object...)" resolve="invoke" />
-                    <node concept="10Nm6u" id="y1G8y68Dl4" role="37wK5m" />
+                    <node concept="37vLTw" id="4VhhwF2teYI" role="37wK5m">
+                      <ref role="3cqZAo" node="4VhhwF2taB7" resolve="modelCheckerObject" />
+                    </node>
+                    <node concept="37vLTw" id="4VhhwF2svJr" role="37wK5m">
+                      <ref role="3cqZAo" node="4VhhwF2suGK" resolve="repo" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -468,6 +493,12 @@
         <property role="TrG5h" value="mc" />
         <node concept="3Tqbb2" id="y1G8y6aeYx" role="1tU5fm">
           <ref role="ehGHo" to="9br2:1vid6hjrqXf" resolve="ModelCheck" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4VhhwF2suGK" role="3clF46">
+        <property role="TrG5h" value="repo" />
+        <node concept="3uibUv" id="4VhhwF2svua" role="1tU5fm">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
     </node>

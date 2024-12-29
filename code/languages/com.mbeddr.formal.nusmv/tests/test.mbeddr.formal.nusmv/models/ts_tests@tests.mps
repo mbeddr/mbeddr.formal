@@ -2,7 +2,7 @@
 <model ref="r:2acd3778-7f35-4108-8d06-76b28dd1d4e9(test.mbeddr.formal.nusmv.ts_tests@tests)">
   <persistence version="9" />
   <languages>
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="5" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
   <imports>
@@ -17,7 +17,7 @@
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
       <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
-      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ng" index="2u4UPC">
+      <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ngI" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
       <concept id="428590876651279930" name="jetbrains.mps.lang.test.structure.NodeTypeSystemErrorCheckOperation" flags="ng" index="2DdRWr" />
@@ -26,6 +26,7 @@
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
@@ -168,7 +169,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -178,7 +179,7 @@
         <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
         <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
         <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-        <property id="4583510071007917016" name="transform" index="TgtnS" />
+        <property id="4583510071007917016" name="portTransform" index="TgtnS" />
         <child id="738815095926774816" name="portLayouts" index="1pap1a" />
       </concept>
       <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC">
@@ -242,6 +243,7 @@
   </node>
   <node concept="1lH9Xt" id="4IuDkoKKrz$">
     <property role="TrG5h" value="_050_tests_unit_tests_entries" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="4IuDkoKKrz_" role="1SKRRt">
       <node concept="1J0nZ8" id="4IuDkoKKrzB" role="1qenE9">
         <property role="TrG5h" value="tc" />
@@ -314,6 +316,7 @@
   </node>
   <node concept="1lH9Xt" id="25Ap4XXlWlM">
     <property role="TrG5h" value="_020_ext_udt" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="25Ap4XXlWlN" role="1SKRRt">
       <node concept="2HdtXS" id="25Ap4XXlWlP" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -558,6 +561,7 @@
   </node>
   <node concept="1lH9Xt" id="25Ap4XX$Pnm">
     <property role="TrG5h" value="_010_base_equality_expressions" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="25Ap4XX$Pns" role="1SKRRt">
       <node concept="2HdtXS" id="25Ap4XX$Pnt" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -697,6 +701,7 @@
   </node>
   <node concept="1lH9Xt" id="25Ap4XXBk5p">
     <property role="TrG5h" value="_020_ext_udt_structs" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="25Ap4XXBk5v" role="1SKRRt">
       <node concept="2HdtXS" id="25Ap4XXBk5w" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -805,6 +810,7 @@
   </node>
   <node concept="1lH9Xt" id="25Ap4XXCh5R">
     <property role="TrG5h" value="_010_base_defines_type" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="25Ap4XXCh5X" role="1SKRRt">
       <node concept="2HdtXS" id="25Ap4XXCh5Y" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -897,6 +903,7 @@
   </node>
   <node concept="1lH9Xt" id="25Ap4XXJOFi">
     <property role="TrG5h" value="_010_base_module_actual_formal_params" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="25Ap4XXJOFo" role="1SKRRt">
       <node concept="2HdtXS" id="25Ap4XXJOFp" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -1129,6 +1136,7 @@
   </node>
   <node concept="1lH9Xt" id="25dEoZdlpG0">
     <property role="TrG5h" value="_080_tests_architecture_no_output_parameters" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="25dEoZdlpG1" role="1SKRRt">
       <node concept="2HdtXS" id="25dEoZdlpJe" role="1qenE9">
         <property role="TrG5h" value="dummy" />
@@ -1209,6 +1217,7 @@
   </node>
   <node concept="1lH9Xt" id="2obHvWSbfms">
     <property role="TrG5h" value="_100_tests_sm_init_variables" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1qefOq" id="2obHvWSbfmt" role="1SKRRt">
       <node concept="2HdtXS" id="2obHvWSbfmu" role="1qenE9">
         <property role="TrG5h" value="dummy" />

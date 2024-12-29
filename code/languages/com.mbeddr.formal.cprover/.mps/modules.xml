@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MPSProject">
+    <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.cbmc.rt/com.mbeddr.formal.cbmc.rt.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.com.mbeddr.formal.cbmc/test.com.mbeddr.formal.cbmc.msd" folder="" />
+    </projectModules>
+  </component>
+</project>

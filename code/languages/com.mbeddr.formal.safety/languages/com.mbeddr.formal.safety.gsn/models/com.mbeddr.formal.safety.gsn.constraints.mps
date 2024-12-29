@@ -56,7 +56,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -75,6 +75,9 @@
       </concept>
       <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
+      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
+        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
+      </concept>
       <concept id="1152959968041" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertySetter" flags="in" index="1LLf8_" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
@@ -89,6 +92,7 @@
       <concept id="1153138554286" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_propertyValue" flags="nn" index="1Wqviy" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569906740" name="parameter" index="1bW2Oz" />
         <child id="1199569916463" name="body" index="1bW5cS" />
@@ -128,7 +132,10 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -136,7 +143,6 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
-      <concept id="1203518072036" name="jetbrains.mps.baseLanguage.collections.structure.SmartClosureParameterDeclaration" flags="ig" index="Rh6nW" />
       <concept id="3055999550620853964" name="jetbrains.mps.baseLanguage.collections.structure.RemoveWhereOperation" flags="nn" index="1aUR6E" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
@@ -230,14 +236,14 @@
                             <ref role="3cqZAo" node="4q8AAJKL7G4" resolve="gs" />
                           </node>
                           <node concept="37vLTw" id="4q8AAJKM6J1" role="3uHU7B">
-                            <ref role="3cqZAo" node="4q8AAJKM6J2" resolve="it" />
+                            <ref role="3cqZAo" node="2hED36FpCyF" resolve="it" />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="Rh6nW" id="4q8AAJKM6J2" role="1bW2Oz">
+                    <node concept="gl6BB" id="2hED36FpCyF" role="1bW2Oz">
                       <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="4q8AAJKM6J3" role="1tU5fm" />
+                      <node concept="2jxLKc" id="2hED36FpCyG" role="1tU5fm" />
                     </node>
                   </node>
                 </node>
@@ -259,7 +265,7 @@
                         <node concept="2OqwBi" id="4q8AAJKM9Si" role="3clFbG">
                           <node concept="2OqwBi" id="4q8AAJKM9Sj" role="2Oq$k0">
                             <node concept="37vLTw" id="4q8AAJKM9Sk" role="2Oq$k0">
-                              <ref role="3cqZAo" node="4q8AAJKM9Sz" resolve="it" />
+                              <ref role="3cqZAo" node="2hED36FpCyJ" resolve="it" />
                             </node>
                             <node concept="2Rf3mk" id="4q8AAJKM9Sl" role="2OqNvi">
                               <node concept="1xMEDy" id="4q8AAJKM9Sm" role="1xVPHs">
@@ -276,7 +282,7 @@
                                   <node concept="2OqwBi" id="4q8AAJKM9Ss" role="3clFbG">
                                     <node concept="2OqwBi" id="4q8AAJKM9St" role="2Oq$k0">
                                       <node concept="37vLTw" id="4q8AAJKM9Su" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="4q8AAJKM9Sx" resolve="it" />
+                                        <ref role="3cqZAo" node="2hED36FpCyH" resolve="it" />
                                       </node>
                                       <node concept="2qgKlT" id="4q8AAJKM9Sv" role="2OqNvi">
                                         <ref role="37wK5l" to="89jy:71GfFl7iCHN" resolve="getInboundConnections" />
@@ -286,18 +292,18 @@
                                   </node>
                                 </node>
                               </node>
-                              <node concept="Rh6nW" id="4q8AAJKM9Sx" role="1bW2Oz">
+                              <node concept="gl6BB" id="2hED36FpCyH" role="1bW2Oz">
                                 <property role="TrG5h" value="it" />
-                                <node concept="2jxLKc" id="4q8AAJKM9Sy" role="1tU5fm" />
+                                <node concept="2jxLKc" id="2hED36FpCyI" role="1tU5fm" />
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="Rh6nW" id="4q8AAJKM9Sz" role="1bW2Oz">
+                    <node concept="gl6BB" id="2hED36FpCyJ" role="1bW2Oz">
                       <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="4q8AAJKM9S$" role="1tU5fm" />
+                      <node concept="2jxLKc" id="2hED36FpCyK" role="1tU5fm" />
                     </node>
                   </node>
                 </node>
@@ -307,9 +313,6 @@
         </node>
       </node>
     </node>
-  </node>
-  <node concept="1M2fIO" id="3f8ZVRYdw_A">
-    <ref role="1M2myG" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
   </node>
   <node concept="1M2fIO" id="3Px2xUV5DxF">
     <ref role="1M2myG" to="py52:3Px2xUV4m9W" resolve="GenericGSNAttributeAnnotationProvider" />
@@ -325,6 +328,16 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2X_iJQi$6as">
+    <property role="3GE5qa" value="base" />
+    <ref role="1M2myG" to="py52:2X_iJQi$6ae" resolve="GoalStructureElementBaseRef" />
+    <node concept="1N5Pfh" id="2X_iJQi$6at" role="1Mr941">
+      <ref role="1N5Vy1" to="py52:2X_iJQi$6af" resolve="gseb" />
+      <node concept="1dDu$B" id="2X_iJQi$6eP" role="1N6uqs">
+        <ref role="1dDu$A" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
       </node>
     </node>
   </node>

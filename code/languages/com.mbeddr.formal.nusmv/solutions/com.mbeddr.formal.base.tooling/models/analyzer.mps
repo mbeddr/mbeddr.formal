@@ -2,11 +2,12 @@
 <model ref="r:0af55dc0-14f5-45c8-bf12-3c673ca075ac(com.mbeddr.formal.base.tooling.analyzer)">
   <persistence version="9" />
   <languages>
-    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="18" />
-    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="1" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />
-    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -46,7 +47,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
@@ -164,7 +165,7 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -193,7 +194,7 @@
       <concept id="8276990574909231788" name="jetbrains.mps.baseLanguage.structure.FinallyClause" flags="ng" index="1wplmZ">
         <child id="8276990574909234106" name="finallyBody" index="1wplMD" />
       </concept>
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="1144226303539" name="jetbrains.mps.baseLanguage.structure.ForeachStatement" flags="nn" index="1DcWWT">
@@ -221,11 +222,6 @@
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
     </language>
-    <language id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil">
-      <concept id="6451706574539345403" name="com.mbeddr.mpsutil.blutil.structure.MethodLineDoc" flags="ng" index="NWlO9">
-        <property id="6451706574539345425" name="text" index="NWlVz" />
-      </concept>
-    </language>
     <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
       <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
       <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
@@ -238,6 +234,20 @@
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
+    </language>
+    <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
+      <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
+      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
+        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      </concept>
+      <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
+      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
+        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      </concept>
+      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
+        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      </concept>
+      <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -259,7 +269,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -372,8 +382,12 @@
           <ref role="3uigEE" node="7iCG_8WDYdE" resolve="AtomicAnalysisJob" />
         </node>
       </node>
-      <node concept="NWlO9" id="7iCG_8WEzxo" role="lGtFl">
-        <property role="NWlVz" value="Submits for execution an atomic analysis job." />
+      <node concept="P$JXv" id="1y75Pbzy1un" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1ul" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1um" role="1dT_Ay">
+            <property role="1dT_AB" value="Submits for execution an atomic analysis job." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7iCG_8XdOtE" role="jymVt" />
@@ -386,13 +400,21 @@
         <property role="TrG5h" value="millis" />
         <node concept="3cpWsb" id="7iCG_8XdOUO" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="7iCG_8XdOWE" role="lGtFl">
-        <property role="NWlVz" value="Suspend the current thread until all jobs terminate or timeout elapses." />
+      <node concept="P$JXv" id="1y75Pbzy1uq" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1uo" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1up" role="1dT_Ay">
+            <property role="1dT_AB" value="Suspend the current thread until all jobs terminate or timeout elapses." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="7iCG_8WEzsh" role="1B3o_S" />
-    <node concept="NWlO9" id="7iCG_8WEzxF" role="lGtFl">
-      <property role="NWlVz" value="Generic interface for the analyses executors." />
+    <node concept="3UR2Jj" id="1y75Pbzy1ut" role="lGtFl">
+      <node concept="TZ5HA" id="1y75Pbzy1ur" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75Pbzy1us" role="1dT_Ay">
+          <property role="1dT_AB" value="Generic interface for the analyses executors." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="6DyMuFe0PCB">
@@ -498,8 +520,12 @@
         <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
       </node>
       <node concept="3Tmbuc" id="1ZsZb$iRo0w" role="1B3o_S" />
-      <node concept="NWlO9" id="1ZsZb$iRo1t" role="lGtFl">
-        <property role="NWlVz" value="My repository." />
+      <node concept="z59LJ" id="1y75Pbzy1uw" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1uu" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1uv" role="1dT_Ay">
+            <property role="1dT_AB" value="My repository." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7iCG_8WCy6n" role="jymVt" />
@@ -512,8 +538,12 @@
       <node concept="3uibUv" id="7F8$WoW31Wy" role="1tU5fm">
         <ref role="3uigEE" to="xygl:~ProgressIndicator" resolve="ProgressIndicator" />
       </node>
-      <node concept="NWlO9" id="7iCG_8WCIj3" role="lGtFl">
-        <property role="NWlVz" value="The progress indicator." />
+      <node concept="z59LJ" id="1y75Pbzy1uz" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1ux" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1uy" role="1dT_Ay">
+            <property role="1dT_AB" value="The progress indicator." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7iCG_8WCVH5" role="jymVt" />
@@ -524,8 +554,12 @@
       <property role="3TUv4t" value="false" />
       <node concept="3Tmbuc" id="7F8$WoW5N1I" role="1B3o_S" />
       <node concept="10Oyi0" id="7F8$WoW5Psn" role="1tU5fm" />
-      <node concept="NWlO9" id="7iCG_8WDm4Q" role="lGtFl">
-        <property role="NWlVz" value="Number of steps that this analyzer has." />
+      <node concept="z59LJ" id="1y75Pbzy1uA" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1u$" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1u_" role="1dT_Ay">
+            <property role="1dT_AB" value="Number of steps that this analyzer has." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5nrC_ZcYiIO" role="jymVt" />
@@ -539,8 +573,12 @@
       <node concept="3clFbT" id="3iLtdpm5biw" role="33vP2m">
         <property role="3clFbU" value="true" />
       </node>
-      <node concept="NWlO9" id="7iCG_8WBTzY" role="lGtFl">
-        <property role="NWlVz" value="Flag is set if the previous analyses results should be cleared." />
+      <node concept="z59LJ" id="1y75Pbzy1uD" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1uB" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1uC" role="1dT_Ay">
+            <property role="1dT_AB" value="Flag is set if the previous analyses results should be cleared." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="Lg9kEapHW8" role="jymVt" />
@@ -549,8 +587,12 @@
       <node concept="3Tmbuc" id="6XKrTzkt4RV" role="1B3o_S" />
       <node concept="10P_77" id="6XKrTzkt6g8" role="1tU5fm" />
       <node concept="3clFbT" id="6XKrTzkt8P_" role="33vP2m" />
-      <node concept="NWlO9" id="6XKrTzkt8YJ" role="lGtFl">
-        <property role="NWlVz" value="When set to true, publish() will not be called (when this analyzer is part of a higher-level one)." />
+      <node concept="z59LJ" id="1y75Pbzy1uG" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1uE" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1uF" role="1dT_Ay">
+            <property role="1dT_AB" value="When set to true, publish() will not be called (when this analyzer is part of a higher-level one)." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6XKrTzkt7I9" role="jymVt" />
@@ -718,8 +760,12 @@
           <ref role="3uigEE" to="33ny:~List" resolve="List" />
         </node>
       </node>
-      <node concept="NWlO9" id="41thbhv81Xi" role="lGtFl">
-        <property role="NWlVz" value="Show the results in tool and advance progress." />
+      <node concept="P$JXv" id="1y75Pbzy1uJ" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1uH" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1uI" role="1dT_Ay">
+            <property role="1dT_AB" value="Show the results in tool and advance progress." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5nrC_ZcXLJr" role="jymVt" />
@@ -900,8 +946,12 @@
         <property role="TrG5h" value="msg" />
         <node concept="17QB3L" id="6fVeF5smqIu" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="41thbhv86pV" role="lGtFl">
-        <property role="NWlVz" value="Initializes the progress." />
+      <node concept="P$JXv" id="1y75Pbzy1uM" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1uK" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1uL" role="1dT_Ay">
+            <property role="1dT_AB" value="Initializes the progress." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7F8$WoQT2s2" role="jymVt" />
@@ -1145,8 +1195,12 @@
       </node>
       <node concept="3Tmbuc" id="2UdJgvCLu_x" role="1B3o_S" />
       <node concept="3cqZAl" id="2UdJgvCLu_y" role="3clF45" />
-      <node concept="NWlO9" id="7iCG_8WyHy3" role="lGtFl">
-        <property role="NWlVz" value="Stops the progress if this analysis has proper progress. " />
+      <node concept="P$JXv" id="1y75Pbzy1uP" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1uN" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1uO" role="1dT_Ay">
+            <property role="1dT_AB" value="Stops the progress if this analysis has proper progress. " />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7iCG_8WOlir" role="jymVt" />
@@ -1194,8 +1248,12 @@
         <property role="TrG5h" value="clear" />
         <node concept="10P_77" id="3iLtdpm53GO" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="41thbhvk2AP" role="lGtFl">
-        <property role="NWlVz" value="Sets the flag whether previous results should be cleared from the table." />
+      <node concept="P$JXv" id="1y75Pbzy1uS" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1uQ" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1uR" role="1dT_Ay">
+            <property role="1dT_AB" value="Sets the flag whether previous results should be cleared from the table." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="5nrC_ZcYkEK" role="jymVt" />
@@ -1216,8 +1274,12 @@
       <node concept="3uibUv" id="7iCG_8WE$7H" role="3clF45">
         <ref role="3uigEE" node="7iCG_8WEzsg" resolve="AnalysesExecutorService" />
       </node>
-      <node concept="NWlO9" id="7iCG_8X7Tzi" role="lGtFl">
-        <property role="NWlVz" value="The current analyses executor." />
+      <node concept="P$JXv" id="1y75Pbzy1uV" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1uT" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1uU" role="1dT_Ay">
+            <property role="1dT_AB" value="The current analyses executor." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7iCG_8X7Uu_" role="jymVt" />
@@ -1226,9 +1288,6 @@
       <property role="TrG5h" value="submit" />
       <property role="od$2w" value="false" />
       <property role="DiZV1" value="false" />
-      <node concept="NWlO9" id="5uqRFp8AkvL" role="lGtFl">
-        <property role="NWlVz" value="Submits an analysis job to the analyis executor. " />
-      </node>
       <node concept="3clFbS" id="7iCG_8X8pFi" role="3clF47">
         <node concept="3clFbF" id="7iCG_8X8AmA" role="3cqZAp">
           <node concept="2OqwBi" id="7iCG_8X8A_I" role="3clFbG">
@@ -1250,6 +1309,13 @@
         <property role="TrG5h" value="job" />
         <node concept="3uibUv" id="7iCG_8X8_I2" role="1tU5fm">
           <ref role="3uigEE" node="7iCG_8WDYdE" resolve="AtomicAnalysisJob" />
+        </node>
+      </node>
+      <node concept="P$JXv" id="1y75Pbzy1uY" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1uW" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1uX" role="1dT_Ay">
+            <property role="1dT_AB" value="Submits an analysis job to the analyis executor. " />
+          </node>
         </node>
       </node>
     </node>
@@ -1300,8 +1366,12 @@
     <node concept="16euLQ" id="6DyMuFe0SCO" role="16eVyc">
       <property role="TrG5h" value="S" />
     </node>
-    <node concept="NWlO9" id="7lqcRYfYviu" role="lGtFl">
-      <property role="NWlVz" value="Base class for all analyzers." />
+    <node concept="3UR2Jj" id="1y75Pbzy1v1" role="lGtFl">
+      <node concept="TZ5HA" id="1y75Pbzy1uZ" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75Pbzy1v0" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for all analyzers." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="5uqRFp8ViLO">
@@ -1340,8 +1410,12 @@
       <node concept="3clFbT" id="6wKLD3Gl26r" role="33vP2m">
         <property role="3clFbU" value="false" />
       </node>
-      <node concept="NWlO9" id="6wKLD3Gl2gt" role="lGtFl">
-        <property role="NWlVz" value="Did an error occur during generation?" />
+      <node concept="z59LJ" id="1y75Pbzy1v4" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1v2" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1v3" role="1dT_Ay">
+            <property role="1dT_AB" value="Did an error occur during generation?" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="6wKLD3Gl26A" role="jymVt" />
@@ -1735,8 +1809,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="505H3_WYjas" role="lGtFl">
-        <property role="NWlVz" value="Makes the project and runs the analysis as a background task in MPS." />
+      <node concept="P$JXv" id="1y75Pbzy1v7" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1v5" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1v6" role="1dT_Ay">
+            <property role="1dT_AB" value="Makes the project and runs the analysis as a background task in MPS." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="505H3_WY3Qb" role="jymVt" />
@@ -1969,8 +2047,12 @@
       <node concept="3Tm1VV" id="5uqRFp8Vcgx" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="505H3_WY3Qc" role="1B3o_S" />
-    <node concept="NWlO9" id="505H3_WYiGj" role="lGtFl">
-      <property role="NWlVz" value="Facade for running the analyses in MPS." />
+    <node concept="3UR2Jj" id="1y75Pbzy1va" role="lGtFl">
+      <node concept="TZ5HA" id="1y75Pbzy1v8" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75Pbzy1v9" role="1dT_Ay">
+          <property role="1dT_AB" value="Facade for running the analyses in MPS." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="3HP615" id="7iCG_8WDYdE">
@@ -2025,8 +2107,12 @@
       </node>
       <node concept="3Tm1VV" id="57eVTvnGhir" role="1B3o_S" />
       <node concept="3cqZAl" id="57eVTvnGhix" role="3clF45" />
-      <node concept="NWlO9" id="57eVTvnNnPY" role="lGtFl">
-        <property role="NWlVz" value="Wrap and catch exceptions" />
+      <node concept="P$JXv" id="1y75Pbzy1vd" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1vb" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1vc" role="1dT_Ay">
+            <property role="1dT_AB" value="Wrap and catch exceptions" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="57eVTvnGhjT" role="jymVt" />
@@ -2038,16 +2124,24 @@
       <node concept="3clFbS" id="57eVTvnGig9" role="3clF47" />
       <node concept="3Tm1VV" id="57eVTvnGiaS" role="1B3o_S" />
       <node concept="3cqZAl" id="57eVTvnGifi" role="3clF45" />
-      <node concept="NWlO9" id="57eVTvnNnQF" role="lGtFl">
-        <property role="NWlVz" value="Does the job in a safe manner." />
+      <node concept="P$JXv" id="1y75Pbzy1vg" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1ve" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1vf" role="1dT_Ay">
+            <property role="1dT_AB" value="Does the job in a safe manner." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="57eVTvnGgoK" role="1B3o_S" />
     <node concept="3uibUv" id="57eVTvnGhhU" role="EKbjA">
       <ref role="3uigEE" node="7iCG_8WDYdE" resolve="AtomicAnalysisJob" />
     </node>
-    <node concept="NWlO9" id="57eVTvnGiqd" role="lGtFl">
-      <property role="NWlVz" value="Base class for atomic analysis jobs that deals with exceptions." />
+    <node concept="3UR2Jj" id="1y75Pbzy1vj" role="lGtFl">
+      <node concept="TZ5HA" id="1y75Pbzy1vh" role="TZ5H$">
+        <node concept="1dT_AC" id="1y75Pbzy1vi" role="1dT_Ay">
+          <property role="1dT_AB" value="Base class for atomic analysis jobs that deals with exceptions." />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="7iCG_8WzcG5">
@@ -2061,8 +2155,12 @@
       <node concept="3cmrfG" id="41thbhvlYem" role="33vP2m">
         <property role="3cmrfH" value="3" />
       </node>
-      <node concept="NWlO9" id="41thbhvm0oH" role="lGtFl">
-        <property role="NWlVz" value="Default value for the maximum number of threads." />
+      <node concept="z59LJ" id="1y75Pbzy1vm" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1vk" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1vl" role="1dT_Ay">
+            <property role="1dT_AB" value="Default value for the maximum number of threads." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7iCG_8WzcGI" role="jymVt" />
@@ -2075,8 +2173,12 @@
         <ref role="3uigEE" to="5zyv:~ExecutorService" resolve="ExecutorService" />
       </node>
       <node concept="3Tmbuc" id="7iCG_8WBivs" role="1B3o_S" />
-      <node concept="NWlO9" id="7iCG_8WBh5V" role="lGtFl">
-        <property role="NWlVz" value="Wrapped executor service." />
+      <node concept="z59LJ" id="1y75Pbzy1vp" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1vn" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1vo" role="1dT_Ay">
+            <property role="1dT_AB" value="Wrapped executor service." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7iCG_8WBhb$" role="jymVt" />
@@ -2090,8 +2192,12 @@
       <node concept="37vLTw" id="1ZsZb$iVAcU" role="33vP2m">
         <ref role="3cqZAo" node="41thbhvlYen" resolve="DEFAULT_NUMBER_OF_THREADS" />
       </node>
-      <node concept="NWlO9" id="7iCG_8WBhuq" role="lGtFl">
-        <property role="NWlVz" value="Maximal number of threads." />
+      <node concept="z59LJ" id="1y75Pbzy1vs" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1vq" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1vr" role="1dT_Ay">
+            <property role="1dT_AB" value="Maximal number of threads." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7iCG_8WBhHG" role="jymVt" />
@@ -2101,8 +2207,12 @@
       <node concept="3uibUv" id="7iCG_8W$RAD" role="1tU5fm">
         <ref role="3uigEE" node="7iCG_8WzcG5" resolve="DefaultAnalysesExecutorService" />
       </node>
-      <node concept="NWlO9" id="7iCG_8WBhZr" role="lGtFl">
-        <property role="NWlVz" value="The single analyses executor service instance." />
+      <node concept="z59LJ" id="1y75Pbzy1vv" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1vt" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1vu" role="1dT_Ay">
+            <property role="1dT_AB" value="The single analyses executor service instance." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2YIFZL" id="7iCG_8W_05_" role="jymVt">
@@ -2163,8 +2273,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="7iCG_8WBi0L" role="lGtFl">
-        <property role="NWlVz" value="Constructor" />
+      <node concept="P$JXv" id="1y75Pbzy1vy" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1vw" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1vx" role="1dT_Ay">
+            <property role="1dT_AB" value="Constructor" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7iCG_8W_0qW" role="jymVt" />
@@ -2286,8 +2400,12 @@
           <ref role="3uigEE" node="7iCG_8WDYdE" resolve="AtomicAnalysisJob" />
         </node>
       </node>
-      <node concept="NWlO9" id="7iCG_8WEWAR" role="lGtFl">
-        <property role="NWlVz" value="Submits an atomic analysis job." />
+      <node concept="P$JXv" id="1y75Pbzy1v_" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1vz" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1v$" role="1dT_Ay">
+            <property role="1dT_AB" value="Submits an atomic analysis job." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="7iCG_8XdP$L" role="jymVt" />
@@ -2378,8 +2496,12 @@
           </node>
         </node>
       </node>
-      <node concept="NWlO9" id="7iCG_8XdUEW" role="lGtFl">
-        <property role="NWlVz" value="Awaits the termination for a given time." />
+      <node concept="P$JXv" id="1y75Pbzy1vC" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1vA" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1vB" role="1dT_Ay">
+            <property role="1dT_AB" value="Awaits the termination for a given time." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="41thbhvlfsq" role="jymVt" />
@@ -2420,8 +2542,12 @@
         <property role="TrG5h" value="threadsNum" />
         <node concept="10Oyi0" id="41thbhvljjN" role="1tU5fm" />
       </node>
-      <node concept="NWlO9" id="41thbhvlkjU" role="lGtFl">
-        <property role="NWlVz" value="Sets the maximum number of threads." />
+      <node concept="P$JXv" id="1y75Pbzy1vF" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1vD" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1vE" role="1dT_Ay">
+            <property role="1dT_AB" value="Sets the maximum number of threads." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="41thbhvlMNc" role="jymVt" />
@@ -2458,8 +2584,12 @@
       </node>
       <node concept="3Tm1VV" id="41thbhvlONq" role="1B3o_S" />
       <node concept="3cqZAl" id="41thbhvlONr" role="3clF45" />
-      <node concept="NWlO9" id="41thbhvlONu" role="lGtFl">
-        <property role="NWlVz" value="Restores the maximum number of threads to its initial value." />
+      <node concept="P$JXv" id="1y75Pbzy1vI" role="lGtFl">
+        <node concept="TZ5HA" id="1y75Pbzy1vG" role="TZ5H$">
+          <node concept="1dT_AC" id="1y75Pbzy1vH" role="1dT_Ay">
+            <property role="1dT_AB" value="Restores the maximum number of threads to its initial value." />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="41thbhvlNMY" role="jymVt" />

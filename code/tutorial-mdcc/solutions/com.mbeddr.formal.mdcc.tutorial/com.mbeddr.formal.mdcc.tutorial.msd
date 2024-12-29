@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<solution name="com.mbeddr.formal.mdcc.tutorial" uuid="bf49e807-bee9-4ef9-ba45-6c8d19acf71f" moduleVersion="0" compileInMPS="true">
+<solution name="com.mbeddr.formal.mdcc.tutorial" uuid="bf49e807-bee9-4ef9-ba45-6c8d19acf71f" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
   <facets>
-    <facet type="java">
+    <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <sourcePath />
   <languageVersions>
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:810b1f0c-97b8-4211-8a3c-55a39bac8bee:com.mbeddr.formal.base.analyses" version="0" />

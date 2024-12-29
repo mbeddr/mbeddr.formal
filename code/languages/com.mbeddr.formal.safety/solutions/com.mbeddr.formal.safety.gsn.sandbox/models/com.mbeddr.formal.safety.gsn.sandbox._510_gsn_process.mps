@@ -21,7 +21,7 @@
       <concept id="3731513482756195661" name="com.mbeddr.formal.safety.argument.process.structure.Standard" flags="ng" index="3dyRFK">
         <child id="3731513482756244090" name="clauses" index="3dzbR7" />
       </concept>
-      <concept id="3731513482756195662" name="com.mbeddr.formal.safety.argument.process.structure.IBibliographyEntry" flags="ng" index="3dyRFN">
+      <concept id="3731513482756195662" name="com.mbeddr.formal.safety.argument.process.structure.IBibliographyEntry" flags="ngI" index="3dyRFN">
         <property id="3731513482756243948" name="publicationYear" index="3dzbTh" />
         <property id="3731513482756243946" name="longTitle" index="3dzbTn" />
       </concept>
@@ -46,7 +46,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -56,7 +56,7 @@
         <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
         <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
         <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
-        <property id="4583510071007917016" name="transform" index="TgtnS" />
+        <property id="4583510071007917016" name="portTransform" index="TgtnS" />
       </concept>
       <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC">
         <child id="2319506556913311101" name="anchors" index="2Vcluh" />
@@ -83,13 +83,13 @@
       </concept>
     </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
-      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ng" index="2U2l5L">
+      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ngI" index="2U2l5L">
         <child id="7402587364850275470" name="attributes" index="2U2l5M" />
       </concept>
       <concept id="3687474483974639519" name="com.mbeddr.formal.base.structure.GenericAttributeAnnotationProviderBase" flags="ng" index="2Wz8ku">
         <property id="3687474483974749023" name="attributeConceptNodeID" index="2Wzj7u" />
       </concept>
-      <concept id="3687474483974128093" name="com.mbeddr.formal.base.structure.IAnnotationProvidersContainer" flags="ng" index="2WHcHs">
+      <concept id="3687474483974128093" name="com.mbeddr.formal.base.structure.IAnnotationProvidersContainer" flags="ngI" index="2WHcHs">
         <child id="3687474483974128095" name="annotationProviders" index="2WHcHu" />
       </concept>
     </language>
@@ -889,8 +889,8 @@
         <node concept="gqqVs" id="3f8ZVRYhonH" role="37mO4d">
           <property role="gqqTZ" value="679.0" />
           <property role="gqqTW" value="12.000100000000003" />
-          <property role="gqqTX" value="148.0" />
-          <property role="gqqTy" value="53.0" />
+          <property role="gqqTX" value="150.0" />
+          <property role="gqqTy" value="55.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -899,8 +899,8 @@
         <node concept="gqqVs" id="3f8ZVRYhonJ" role="37mO4d">
           <property role="gqqTZ" value="674.5" />
           <property role="gqqTW" value="85.00029836425782" />
-          <property role="gqqTX" value="157.0" />
-          <property role="gqqTy" value="81.0" />
+          <property role="gqqTX" value="159.0" />
+          <property role="gqqTy" value="83.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -909,8 +909,8 @@
         <node concept="gqqVs" id="3f8ZVRYhonL" role="37mO4d">
           <property role="gqqTZ" value="345.0" />
           <property role="gqqTW" value="206.00049672851563" />
-          <property role="gqqTX" value="138.0" />
-          <property role="gqqTy" value="67.0" />
+          <property role="gqqTX" value="140.0" />
+          <property role="gqqTy" value="69.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -919,8 +919,8 @@
         <node concept="gqqVs" id="3f8ZVRYhonN" role="37mO4d">
           <property role="gqqTZ" value="503.0" />
           <property role="gqqTW" value="206.00049672851563" />
-          <property role="gqqTX" value="144.0" />
-          <property role="gqqTy" value="77.0" />
+          <property role="gqqTX" value="146.0" />
+          <property role="gqqTy" value="79.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1227,8 +1227,8 @@
         <node concept="gqqVs" id="3f8ZVRYhF5j" role="37mO4d">
           <property role="gqqTZ" value="181.0" />
           <property role="gqqTW" value="206.00049672851563" />
-          <property role="gqqTX" value="144.0" />
-          <property role="gqqTy" value="91.0" />
+          <property role="gqqTX" value="146.0" />
+          <property role="gqqTy" value="93.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1263,8 +1263,8 @@
         <node concept="gqqVs" id="5gjf2NSkooR" role="37mO4d">
           <property role="gqqTZ" value="12.0" />
           <property role="gqqTW" value="206.00049672851563" />
-          <property role="gqqTX" value="149.0" />
-          <property role="gqqTy" value="91.0" />
+          <property role="gqqTX" value="151.0" />
+          <property role="gqqTy" value="93.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1286,8 +1286,8 @@
         <node concept="gqqVs" id="5gjf2NSkoA6" role="37mO4d">
           <property role="gqqTZ" value="667.0" />
           <property role="gqqTW" value="206.00049672851563" />
-          <property role="gqqTX" value="172.0" />
-          <property role="gqqTy" value="91.0" />
+          <property role="gqqTX" value="174.0" />
+          <property role="gqqTy" value="93.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>

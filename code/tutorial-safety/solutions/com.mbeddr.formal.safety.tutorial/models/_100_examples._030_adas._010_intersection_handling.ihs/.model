@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:0a67385e-17ec-4148-b1f8-83ce752e9242(_100_examples._030_adas._010_intersection_handling.ihs)" content="header">
+  <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
+  <languages>
+    <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
+    <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
+    <devkit ref="5a50cadb-4d6e-4722-b5f5-c6b9efb22ffe(fasten.safety.gsn.formal)" />
+    <devkit ref="3970a543-1808-4b9f-a378-71f15d96d819(fasten.safety.hara)" />
+    <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
+    <devkit ref="5e597493-feae-41d8-b052-3b0a41743991(fasten.safety.gsn.patterns)" />
+  </languages>
+  <imports>
+    <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_patterns_catalogue)" />
+  </imports>
+</model>
+
