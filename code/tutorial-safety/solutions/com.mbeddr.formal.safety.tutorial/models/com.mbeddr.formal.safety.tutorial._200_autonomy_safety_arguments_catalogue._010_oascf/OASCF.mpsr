@@ -44,11 +44,15 @@
       </concept>
     </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="3514655602814462718" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureDoc" flags="ng" index="9kjDo">
+        <child id="3514655602814462801" name="documentation" index="9kjJR" />
+      </concept>
       <concept id="4266958635905406443" name="com.mbeddr.formal.safety.gsn.structure.Strategy" flags="ng" index="2vmxQI" />
       <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC">
         <property id="9102875167979884151" name="undeveloped" index="8uqrb" />
       </concept>
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="3514655602814221387" name="documentation" index="9lmNH" />
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
         <child id="4266958635905277632" name="content" index="2vn1q5" />
       </concept>
@@ -1263,6 +1267,16 @@
         <property role="37mO49" value="3091646309625554064" />
         <node concept="2VclpC" id="2PXXx0E7Y7J" role="37mO4d" />
       </node>
+      <node concept="37mRIm" id="2PXXx0E7Y8V" role="37mRID">
+        <property role="37mO49" value="3278046653082231336" />
+        <node concept="gqqVs" id="2PXXx0E7Y8U" role="37mO4d">
+          <property role="gqqTZ" value="0.0" />
+          <property role="gqqTW" value="0.0" />
+          <property role="gqqTX" value="30.0" />
+          <property role="gqqTy" value="28.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
     </node>
     <node concept="2vn7WC" id="2FBIZ0So8x2" role="2vn1q5">
       <property role="TrG5h" value="G2.1" />
@@ -2147,6 +2161,13 @@
     <node concept="3VeUTF" id="2FBIZ0SoekT" role="2vhqc$">
       <ref role="3VeSjP" node="2FBIZ0Soe0J" resolve="Str3.3.2" />
       <ref role="3VeSjQ" node="2FBIZ0SoceS" resolve="G4.3.6" />
+    </node>
+    <node concept="9kjDo" id="2PXXx0E7Y8C" role="9lmNH">
+      <node concept="19SGf9" id="2PXXx0E7Y8D" role="9kjJR">
+        <node concept="19SUe$" id="2PXXx0E7Y8E" role="19SJt6">
+          <property role="19SUeA" value="Published in &quot;Wagner, M., &amp; Carlan, C. (2024). The Open Autonomy Safety Case Framework. &#10;   arXiv preprint arXiv:2404.05444&quot;. " />
+        </node>
+      </node>
     </node>
   </node>
 </model>
