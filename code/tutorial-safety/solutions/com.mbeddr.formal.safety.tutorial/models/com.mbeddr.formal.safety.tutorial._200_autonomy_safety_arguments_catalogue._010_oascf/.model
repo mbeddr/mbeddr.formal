@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:213069bd-fd84-40a4-9b1e-d0c37c47cec2(_200_autonomy_safety_arguments_catalogue._010_oascf)" content="header">
+  <persistence version="9" />
+  <languages>
+    <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
+  </languages>
+  <imports />
+</model>
+
