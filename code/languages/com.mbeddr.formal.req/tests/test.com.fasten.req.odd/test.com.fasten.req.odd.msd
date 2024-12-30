@@ -9,6 +9,7 @@
     <facet compile="mps" classes="mps" ext="no" type="java">
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
+    <facet type="tests" />
   </facets>
   <languageVersions>
     <language slang="l:f52452b6-7f99-441b-98f9-a98c52b92236:com.fasten.req.odd" version="1" />

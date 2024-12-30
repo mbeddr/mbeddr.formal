@@ -19681,6 +19681,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="VzDJuAWL9c" role="3bR31x">
+          <node concept="3LXTmp" id="VzDJuAWL9d" role="3rtmxm">
+            <node concept="3qWCbU" id="VzDJuAWL9e" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="VzDJuAWL9f" role="3LXTmr">
+              <ref role="398BVh" node="6AHcWlQrk2L" resolve="mbeddr.formal.req.code" />
+              <node concept="2Ry0Ak" id="VzDJuAWL9g" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="VzDJuAWL9h" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.fasten.req.odd" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6AHcWlQrkgH" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -19743,6 +19759,22 @@
         <node concept="1SiIV0" id="6AHcWlQrkjQ" role="3bR37C">
           <node concept="3bR9La" id="6AHcWlQrkjR" role="1SiIV1">
             <ref role="3bR37D" node="7he_lUumLtb" resolve="com.mbeddr.formal.req.tl_patterns" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="VzDJuAWL9j" role="3bR31x">
+          <node concept="3LXTmp" id="VzDJuAWL9k" role="3rtmxm">
+            <node concept="3qWCbU" id="VzDJuAWL9l" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="VzDJuAWL9m" role="3LXTmr">
+              <ref role="398BVh" node="6AHcWlQrk2L" resolve="mbeddr.formal.req.code" />
+              <node concept="2Ry0Ak" id="VzDJuAWL9n" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="VzDJuAWL9o" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mbeddr.formal.req.tl_patterns" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
