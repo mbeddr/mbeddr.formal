@@ -17409,6 +17409,9 @@
         <node concept="3_I8Xc" id="4lJSf3Lb8P4" role="39821P">
           <ref role="3_I8Xa" to="ffeo:16mx0EU4lQy" resolve="mps-ide" />
         </node>
+        <node concept="3_I8Xc" id="4lJSf3LgT8s" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5DF4H224yvv" resolve="mps-rcp" />
+        </node>
         <node concept="3_I8Xc" id="7khq58xcrlD" role="39821P">
           <ref role="3_I8Xa" to="90a9:2IcGFIaJVAA" resolve="MPS.Kotlin" />
         </node>
@@ -20181,13 +20184,13 @@
             <property role="3LWZYl" value="lib/pty4j/**" />
           </node>
           <node concept="3LWZYq" id="4lJSf3LgSfs" role="1juEy9">
-            <property role="3LWZYl" value="bin/linux" />
+            <property role="3LWZYl" value="bin/linux/**" />
           </node>
           <node concept="3LWZYq" id="4lJSf3LgSlB" role="1juEy9">
-            <property role="3LWZYl" value="bin/mac" />
+            <property role="3LWZYl" value="bin/mac/**" />
           </node>
           <node concept="3LWZYq" id="4lJSf3LgSsE" role="1juEy9">
-            <property role="3LWZYl" value="bin/win" />
+            <property role="3LWZYl" value="bin/win/**" />
           </node>
         </node>
         <node concept="398223" id="nwXZr$UPzK" role="39821P">
