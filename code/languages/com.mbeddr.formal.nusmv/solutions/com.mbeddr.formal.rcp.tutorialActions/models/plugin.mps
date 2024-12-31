@@ -65,9 +65,6 @@
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
-      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
-        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
-      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -96,9 +93,6 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
@@ -638,50 +632,27 @@
         </node>
         <node concept="3clFbJ" id="7Y21hZBa4DO" role="3cqZAp">
           <node concept="3clFbS" id="7Y21hZBa4DP" role="3clFbx">
-            <node concept="3cpWs8" id="7Y21hZBa4DQ" role="3cqZAp">
-              <node concept="3cpWsn" id="7Y21hZBa4DR" role="3cpWs9">
-                <property role="3TUv4t" value="false" />
-                <property role="TrG5h" value="filePath" />
-                <node concept="17QB3L" id="7Y21hZBa4DS" role="1tU5fm" />
-                <node concept="2OqwBi" id="7Y21hZBa4DT" role="33vP2m">
-                  <node concept="37vLTw" id="7Y21hZBa4DU" role="2Oq$k0">
+            <node concept="3clFbF" id="4lJSf3LgNtC" role="3cqZAp">
+              <node concept="2YIFZM" id="4lJSf3LgNtE" role="3clFbG">
+                <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.nio.file.Path,com.intellij.ide.impl.OpenProjectTask)" resolve="openProject" />
+                <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
+                <node concept="2OqwBi" id="4lJSf3LgNtF" role="37wK5m">
+                  <node concept="37vLTw" id="4lJSf3LgNtG" role="2Oq$k0">
                     <ref role="3cqZAo" node="7Y21hZBa4DG" resolve="tutorialDir" />
                   </node>
-                  <node concept="liA8E" id="7Y21hZBa4DV" role="2OqNvi">
-                    <ref role="37wK5l" to="jlff:~VirtualFile.getPath()" resolve="getPath" />
+                  <node concept="liA8E" id="4lJSf3LgNtH" role="2OqNvi">
+                    <ref role="37wK5l" to="jlff:~VirtualFile.toNioPath()" resolve="toNioPath" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="7Y21hZBa4DW" role="3cqZAp">
-              <node concept="3cpWsn" id="7Y21hZBa4DX" role="3cpWs9">
-                <property role="3TUv4t" value="false" />
-                <property role="TrG5h" value="project" />
-                <node concept="3uibUv" id="7Y21hZBa4DY" role="1tU5fm">
-                  <ref role="3uigEE" to="4nm9:~Project" resolve="Project" />
-                </node>
-                <node concept="2YIFZM" id="12q9egMY8Tk" role="33vP2m">
-                  <ref role="37wK5l" to="btn2:~ProjectUtil.openProject(java.nio.file.Path,com.intellij.ide.impl.OpenProjectTask)" resolve="openProject" />
-                  <ref role="1Pybhc" to="btn2:~ProjectUtil" resolve="ProjectUtil" />
-                  <node concept="2YIFZM" id="12q9egMYsZS" role="37wK5m">
-                    <ref role="37wK5l" to="eoo2:~Paths.get(java.lang.String,java.lang.String...)" resolve="get" />
-                    <ref role="1Pybhc" to="eoo2:~Paths" resolve="Paths" />
-                    <node concept="37vLTw" id="12q9egMYtnu" role="37wK5m">
-                      <ref role="3cqZAo" node="7Y21hZBa4DR" resolve="filePath" />
-                    </node>
+                <node concept="2OqwBi" id="4lJSf3LgOnP" role="37wK5m">
+                  <node concept="2YIFZM" id="4lJSf3LgO8R" role="2Oq$k0">
+                    <ref role="37wK5l" to="btn2:~OpenProjectTask.build()" resolve="build" />
+                    <ref role="1Pybhc" to="btn2:~OpenProjectTask" resolve="OpenProjectTask" />
                   </node>
-                  <node concept="2ShNRf" id="12q9egMYddK" role="37wK5m">
-                    <node concept="1pGfFk" id="12q9egMYkm7" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="btn2:~OpenProjectTask.&lt;init&gt;(boolean,com.intellij.openapi.project.Project,boolean,boolean)" resolve="OpenProjectTask" />
-                      <node concept="3clFbT" id="12q9egMYkHK" role="37wK5m">
-                        <property role="3clFbU" value="true" />
-                      </node>
-                      <node concept="10Nm6u" id="12q9egMYmdt" role="37wK5m" />
-                      <node concept="3clFbT" id="12q9egMYope" role="37wK5m">
-                        <property role="3clFbU" value="true" />
-                      </node>
-                      <node concept="3clFbT" id="12q9egMYo_t" role="37wK5m" />
+                  <node concept="liA8E" id="4lJSf3LgOFr" role="2OqNvi">
+                    <ref role="37wK5l" to="btn2:~OpenProjectTask.withProjectToClose(com.intellij.openapi.project.Project)" resolve="withProjectToClose" />
+                    <node concept="37vLTw" id="4lJSf3LgORf" role="37wK5m">
+                      <ref role="3cqZAo" node="7Y21hZBa4Dz" resolve="currentProject" />
                     </node>
                   </node>
                 </node>
