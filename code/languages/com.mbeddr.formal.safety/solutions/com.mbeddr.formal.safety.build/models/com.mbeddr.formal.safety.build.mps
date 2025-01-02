@@ -4006,7 +4006,7 @@
               </node>
             </node>
             <node concept="3LWZYx" id="4clv$caDzzO" role="3LXTna">
-              <property role="3LWZYw" value="com/mbeddr/formal/req/odd/structure/*.png" />
+              <property role="3LWZYw" value="com/fasten/req/odd/structure/*.png" />
             </node>
           </node>
         </node>
@@ -20191,6 +20191,15 @@
           </node>
           <node concept="3LWZYq" id="4lJSf3LgSsE" role="1juEy9">
             <property role="3LWZYl" value="bin/win/**" />
+          </node>
+          <node concept="3LWZYq" id="4lJSf3LgTTu" role="1juEy9">
+            <property role="3LWZYl" value="bin/*.vmoptions" />
+          </node>
+          <node concept="3LWZYq" id="4lJSf3LgU0x" role="1juEy9">
+            <property role="3LWZYl" value="bin/mps.bat" />
+          </node>
+          <node concept="3LWZYq" id="4lJSf3LgU43" role="1juEy9">
+            <property role="3LWZYl" value="bin/mps.sh" />
           </node>
         </node>
         <node concept="398223" id="nwXZr$UPzK" role="39821P">
