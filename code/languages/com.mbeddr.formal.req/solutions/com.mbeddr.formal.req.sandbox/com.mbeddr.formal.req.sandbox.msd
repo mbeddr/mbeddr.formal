@@ -13,6 +13,7 @@
   <languageVersions>
     <language slang="l:3b22dedc-d6cf-4626-9445-6e9909b3e04a:com.fasten.base.arch.msc" version="0" />
     <language slang="l:81f6a079-965e-4523-87c3-8e6194f66585:com.fasten.base.msc" version="0" />
+    <language slang="l:f52452b6-7f99-441b-98f9-a98c52b92236:com.fasten.req.odd" version="1" />
     <language slang="l:65ed2ac6-4499-4751-951e-3819684a4b8d:com.fasten.req.ontology" version="1" />
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:71797868-de95-425c-8470-36aa52c8ebc4:com.mbeddr.formal.base.arch" version="1" />

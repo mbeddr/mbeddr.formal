@@ -425,11 +425,6 @@
       <ref role="13i0hy" to="tpcu:52_Geb4QFgX" resolve="getScope" />
       <node concept="3Tm1VV" id="3RNDPbM4UGR" role="1B3o_S" />
       <node concept="3clFbS" id="3RNDPbM4UGS" role="3clF47">
-        <node concept="2xdQw9" id="5hctYtaweH_" role="3cqZAp">
-          <node concept="Xl_RD" id="5hctYtaweHB" role="9lYJi">
-            <property role="Xl_RC" value="in constraint" />
-          </node>
-        </node>
         <node concept="3clFbJ" id="3RNDPbM27ci" role="3cqZAp">
           <node concept="3clFbS" id="3RNDPbM27ck" role="3clFbx">
             <node concept="3cpWs8" id="3RNDPbM0$f7" role="3cqZAp">

@@ -313,6 +313,7 @@
     <property role="TrG5h" value="OrExpressionBase" />
     <property role="R5$K7" value="true" />
     <property role="R5$K2" value="false" />
+    <property role="34LRSv" value="|" />
     <ref role="1TJDcQ" node="6NmtaR1YlpY" resolve="BinaryLogicalExpression" />
   </node>
   <node concept="1TIwiD" id="7mSH3WnvIDy">
