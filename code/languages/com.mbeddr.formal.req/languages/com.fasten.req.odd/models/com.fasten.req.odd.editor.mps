@@ -10,6 +10,7 @@
   </languages>
   <imports>
     <import index="u2ih" ref="r:ab00bc1f-8fc9-4bdf-9a87-1e2713aafade(com.fasten.req.odd.structure)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -208,7 +209,7 @@
     <ref role="1XX52x" to="u2ih:3Jn$RV31nMq" resolve="ODD" />
     <node concept="3EZMnI" id="3Jn$RV31nVT" role="2wV5jI">
       <node concept="PMmxH" id="3Jn$RV31nW0" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="3Jn$RV31nW2" role="3EZMnx" />
       <node concept="3F2HdR" id="3Jn$RV31nW9" role="3EZMnx">
@@ -333,7 +334,7 @@
     <ref role="1XX52x" to="u2ih:3Jn$RV31w1l" resolve="Ontology_old" />
     <node concept="3EZMnI" id="3Jn$RV31w2y" role="2wV5jI">
       <node concept="PMmxH" id="3Jn$RV31w2D" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="52bCGvYEnPy" role="3EZMnx" />
       <node concept="3EZMnI" id="52bCGvYEnPO" role="3EZMnx">

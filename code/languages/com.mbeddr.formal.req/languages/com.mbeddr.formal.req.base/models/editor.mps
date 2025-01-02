@@ -31,6 +31,7 @@
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
@@ -477,7 +478,7 @@
     <ref role="1XX52x" to="z27p:4gtLUSMLiMx" resolve="RequirementDocument" />
     <node concept="3EZMnI" id="4gtLUSMLiTb" role="2wV5jI">
       <node concept="PMmxH" id="4qtpAOhXdCO" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F2HdR" id="4qtpAOhXdPR" role="3EZMnx">
         <ref role="1NtTu8" to="z27p:4gtLUSMLiT5" resolve="requirements" />
@@ -624,7 +625,7 @@
         </node>
       </node>
       <node concept="PMmxH" id="2N7iSwG$ExF" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4_pH3zvd_oC" resolve="horizontalLine" />
+        <ref role="PMmxG" to="1ks0:4_pH3zvd_oC" resolve="horizontalLine" />
         <node concept="27z8qx" id="SmAS9iizqf" role="3F10Kt">
           <property role="3$6WeP" value="-3" />
         </node>

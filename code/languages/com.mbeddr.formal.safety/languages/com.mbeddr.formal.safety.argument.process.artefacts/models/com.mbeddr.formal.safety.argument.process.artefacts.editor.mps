@@ -13,6 +13,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="o6i6" ref="r:ba17a867-3973-4713-ba08-31cd6b992c57(com.mbeddr.formal.safety.argument.process.artefacts.util)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
   </imports>
@@ -677,7 +678,7 @@
     <ref role="1XX52x" to="qsmp:1noKC0JTmPI" resolve="Organization" />
     <node concept="3EZMnI" id="1noKC0JTmTj" role="2wV5jI">
       <node concept="PMmxH" id="3EDV2YKNkya" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="1noKC0JTmTM" role="3EZMnx" />
       <node concept="3EZMnI" id="1noKC0JTmVd" role="3EZMnx">
@@ -1487,7 +1488,7 @@
       </node>
       <node concept="3F0ifn" id="7NA168q7HZa" role="3EZMnx">
         <property role="3F0ifm" value=";" />
-        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+        <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
       </node>
     </node>
   </node>

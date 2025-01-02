@@ -7,8 +7,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="y8ko" ref="r:800c8fcd-3979-4495-9cb0-a3469f2fa4f6(com.mbeddr.formal.safety.argument.jira_integration.structure)" implicit="true" />
-    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -47,7 +47,7 @@
       </node>
       <node concept="3F0ifn" id="2wSfKqyhUs0" role="3EZMnx">
         <property role="3F0ifm" value=";" />
-        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+        <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
       </node>
       <node concept="2iRfu4" id="2wSfKqyhUfT" role="2iSdaV" />
     </node>

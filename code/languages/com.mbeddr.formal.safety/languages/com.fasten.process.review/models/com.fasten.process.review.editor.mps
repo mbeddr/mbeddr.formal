@@ -13,6 +13,7 @@
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="kivz" ref="r:dd766917-4a5c-40cc-9eef-1d695686872d(com.fasten.process.review.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -244,7 +245,7 @@
     <ref role="1XX52x" to="kivz:5t37uj6__pB" resolve="ReviewsContainer" />
     <node concept="3EZMnI" id="5t37uj6_F69" role="2wV5jI">
       <node concept="PMmxH" id="5t37uj6_F6j" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3EZMnI" id="5t37uj6_F6s" role="3EZMnx">
         <node concept="2iRfu4" id="5t37uj6_F6t" role="2iSdaV" />
@@ -490,7 +491,7 @@
         <node concept="l2Vlx" id="5t37uj6D0WA" role="2iSdaV" />
       </node>
       <node concept="PMmxH" id="5t37uj6D0Wm" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4_pH3zvd_oC" resolve="horizontalLine" />
+        <ref role="PMmxG" to="1ks0:4_pH3zvd_oC" resolve="horizontalLine" />
       </node>
       <node concept="3F0ifn" id="5t37uj6CZI$" role="3EZMnx" />
       <node concept="2iRkQZ" id="5t37uj6CZHC" role="2iSdaV" />
