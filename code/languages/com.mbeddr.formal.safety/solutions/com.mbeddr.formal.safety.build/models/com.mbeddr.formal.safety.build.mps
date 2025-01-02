@@ -1145,6 +1145,9 @@
       <node concept="m$_yC" id="7yAshxDrVzA" role="m$_yJ">
         <ref role="m$_y1" node="7he_lUuoSVd" resolve="com.mbeddr.formal.spin" />
       </node>
+      <node concept="m$_yC" id="4lJSf3LigyM" role="m$_yJ">
+        <ref role="m$_y1" node="1k6eCQnEZzO" resolve="fasten.symo" />
+      </node>
       <node concept="m$_yC" id="647GT0tL_fM" role="m$_yJ">
         <ref role="m$_y1" to="90a9:1Rj3F434oop" resolve="com.mbeddr.mpsutil.treenotations" />
       </node>
@@ -3420,6 +3423,29 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+      <node concept="3LEwk6" id="4lJSf3Lh3in" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="fasten.symo.plantuml" />
+        <property role="3LESm3" value="114acb95-50b2-4e9b-81c6-e0c665740eae" />
+        <node concept="398BVA" id="4lJSf3Lh3w0" role="3LF7KH">
+          <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+          <node concept="2Ry0Ak" id="4lJSf3Lh48N" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="4lJSf3Lh4$0" role="2Ry0An">
+              <property role="2Ry0Am" value="fasten.symo.plantuml" />
+              <node concept="2Ry0Ak" id="4lJSf3Lh4Zd" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.symo.plantuml.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEDTy" id="4lJSf3Lh5qZ" role="3LEDUa">
+          <ref role="3LEDTV" node="3fV34643ilv" resolve="com.symo.plantuml" />
+        </node>
+        <node concept="3LEDTM" id="4lJSf3Lh5r0" role="3LEDUa">
+          <ref role="3LEDTN" node="3fV34643kGS" resolve="com.symo.plantuml.lib" />
         </node>
       </node>
     </node>
@@ -14546,6 +14572,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4lJSf3Lie7a" role="3bR37C">
+          <node concept="3bR9La" id="4lJSf3Lie7b" role="1SiIV1">
+            <ref role="3bR37D" node="3fV34643ilv" resolve="com.symo.plantuml" />
           </node>
         </node>
       </node>

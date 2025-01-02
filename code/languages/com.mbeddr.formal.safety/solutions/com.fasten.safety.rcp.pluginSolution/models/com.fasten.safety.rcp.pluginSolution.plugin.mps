@@ -31,6 +31,7 @@
     <import index="6wa3" ref="r:fe70b1ce-4411-47cc-b7d1-2d3fab0737d6(com.fasten.req.ontology.structure)" />
     <import index="uiqf" ref="r:284d7186-e902-4338-a3e0-8017019deafe(com.mbeddr.formal.req.scenarios.structure)" />
     <import index="6jj4" ref="r:77d7f4e3-953a-49ab-a2c5-934fc706bf67(com.fasten.base.msc.structure)" />
+    <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -1035,6 +1036,29 @@
                   <node concept="1dCxOk" id="26E6nZcBLdG" role="37shsm">
                     <property role="1XweGW" value="edb51d2d-64eb-404a-818e-c1cabf1d58d5" />
                     <property role="1XxBO9" value="fasten.nusmv" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="tC5Ba" id="4lJSf3LhyGH" role="ftvYc">
+            <property role="TrG5h" value="SystemModels" />
+            <property role="1XlLyE" value="true" />
+            <property role="2f7twF" value="System Models" />
+            <property role="2pbE17" value="F" />
+            <node concept="ftmFs" id="4lJSf3LhyGI" role="ftER_">
+              <node concept="tCFHf" id="4lJSf3LhyGJ" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="4lJSf3LhyGK" role="2J__8u">
+                  <property role="Xl_RC" value="System Model (PlantUML)" />
+                </node>
+                <node concept="35c_gC" id="4lJSf3LhyGL" role="2J__8u">
+                  <ref role="35c_gD" to="udwj:1I7wo92Vbhy" resolve="PlantUmlRoot" />
+                </node>
+                <node concept="37shsh" id="4lJSf3LhyGM" role="2J__8u">
+                  <node concept="1dCxOk" id="4lJSf3LhTgX" role="37shsm">
+                    <property role="1XweGW" value="114acb95-50b2-4e9b-81c6-e0c665740eae" />
+                    <property role="1XxBO9" value="fasten.symo.plantuml" />
                   </node>
                 </node>
               </node>
