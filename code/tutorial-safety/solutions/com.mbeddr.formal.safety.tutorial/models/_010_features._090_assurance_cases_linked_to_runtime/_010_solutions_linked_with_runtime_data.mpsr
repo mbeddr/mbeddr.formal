@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:3df64c2c-5d66-42f0-86ae-b6824b802d56(_010_features._090_assurance_cases_linked_to_runtime)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
+      <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
+        <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
+        <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
+        <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
+        <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
+        <property id="4583510071007917016" name="portTransform" index="TgtnS" />
+      </concept>
+      <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC" />
+      <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
+        <child id="8963411245960991904" name="entries" index="37mRID" />
+      </concept>
+      <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
+        <property id="8963411245960998400" name="key" index="37mO49" />
+        <child id="8963411245960998404" name="value" index="37mO4d" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="3514655602814462718" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureDoc" flags="ng" index="9kjDo">
+        <child id="3514655602814462801" name="documentation" index="9kjJR" />
+      </concept>
+      <concept id="4266958635905474024" name="com.mbeddr.formal.safety.gsn.structure.Solution" flags="ng" index="2vmhmH" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="3514655602814221387" name="documentation" index="9lmNH" />
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+      </concept>
+      <concept id="2525617932486533707" name="com.mbeddr.formal.safety.gsn.structure.SupportedByConnection" flags="ng" index="3VeUTF" />
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="75npNYZGwUn">
+    <property role="3GE5qa" value="_010_link_to_runtime_data" />
+    <property role="TrG5h" value="_010_solutions_linked_with_runtime_data" />
+    <node concept="9kjDo" id="75npNYZGwU_" role="9lmNH">
+      <node concept="19SGf9" id="75npNYZGwUA" role="9kjJR">
+        <node concept="19SUe$" id="75npNYZGwUB" role="19SJt6">
+          <property role="19SUeA" value="This is an example where a solution is linked with runtime data &#10;available as a CSV file as configured in &quot;_010_solutions_linked_CONFIG&quot;.&#10;The format of the CSV file is that each line contains a *key* &#10;(e.g. &quot;counter-evidence&quot; extensible with other keys) followed by comma and &#10;the *ID* of an entity from the assurance case (e.g. S01) to which this &#10;entry corresponds. " />
+        </node>
+      </node>
+    </node>
+    <node concept="37mRI7" id="75npNYZGwV5" role="lGtFl">
+      <node concept="37mRIm" id="75npNYZGwV6" role="37mRID">
+        <property role="37mO49" value="8167109972756401829" />
+        <node concept="gqqVs" id="75npNYZGwV4" role="37mO4d">
+          <property role="gqqTZ" value="50.0" />
+          <property role="gqqTW" value="50.0001" />
+          <property role="gqqTX" value="539.0" />
+          <property role="gqqTy" value="126.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="75npNYZGwV_" role="37mRID">
+        <property role="37mO49" value="8167109972756401876" />
+        <node concept="gqqVs" id="75npNYZGwV$" role="37mO4d">
+          <property role="gqqTZ" value="140.0" />
+          <property role="gqqTW" value="206.00029836425782" />
+          <property role="gqqTX" value="208.0" />
+          <property role="gqqTy" value="69.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="75npNYZGwW4" role="37mRID">
+        <property role="37mO49" value="8167109972756401907" />
+        <node concept="gqqVs" id="75npNYZGwW3" role="37mO4d">
+          <property role="gqqTZ" value="163.5" />
+          <property role="gqqTW" value="333.0004967285156" />
+          <property role="gqqTX" value="161.0" />
+          <property role="gqqTy" value="50.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="75npNYZGwWx" role="37mRID">
+        <property role="37mO49" value="8167109972756401938" />
+        <node concept="2VclpC" id="75npNYZGwWw" role="37mO4d" />
+      </node>
+    </node>
+    <node concept="2vn7WC" id="75npNYZGwVk" role="2vn1q5">
+      <property role="TrG5h" value="G01" />
+      <node concept="19SGf9" id="75npNYZGwVl" role="2vnaTY">
+        <node concept="19SUe$" id="75npNYZGwVm" role="19SJt6">
+          <property role="19SUeA" value="The V&amp;V results show &#10;correctness of the function." />
+        </node>
+      </node>
+    </node>
+    <node concept="2vmhmH" id="75npNYZGwVN" role="2vn1q5">
+      <property role="TrG5h" value="S01" />
+      <node concept="19SGf9" id="75npNYZGwVO" role="2vnaTY">
+        <node concept="19SUe$" id="75npNYZGwVP" role="19SJt6">
+          <property role="19SUeA" value="V&amp;V results. " />
+        </node>
+      </node>
+    </node>
+    <node concept="3VeUTF" id="75npNYZGwWi" role="2vhqc$">
+      <ref role="3VeSjP" node="75npNYZGwVk" resolve="G01" />
+      <ref role="3VeSjQ" node="75npNYZGwVN" resolve="S01" />
+    </node>
+  </node>
+</model>
+
