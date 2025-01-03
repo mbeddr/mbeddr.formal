@@ -1239,7 +1239,7 @@
               </node>
             </node>
             <node concept="WFELt" id="6BNnCp_pDwM" role="2OqNvi">
-              <ref role="1A0vxQ" to="udwj:1I7wo92VgAs" resolve="StartUmlCommand" />
+              <ref role="1A0vxQ" to="udwj:1I7wo92VgG3" resolve="EndUmlCommand" />
             </node>
           </node>
         </node>

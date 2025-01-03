@@ -207,6 +207,7 @@
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
       <concept id="1068580123165" name="jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" flags="ig" index="3clFb_" />
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -497,19 +498,27 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="7ikA1GKut0k" role="3clFbw">
-                <node concept="2OqwBi" id="7ikA1GKuoSb" role="2Oq$k0">
-                  <node concept="37vLTw" id="7ikA1GKunY6" role="2Oq$k0">
+              <node concept="22lmx$" id="75npNYZx9Z7" role="3clFbw">
+                <node concept="3clFbC" id="75npNYZxbFj" role="3uHU7B">
+                  <node concept="10Nm6u" id="75npNYZxcMp" role="3uHU7w" />
+                  <node concept="37vLTw" id="75npNYZxb33" role="3uHU7B">
                     <ref role="3cqZAo" node="25fKBAPJuvw" resolve="desc" />
                   </node>
-                  <node concept="liA8E" id="7ikA1GKusHR" role="2OqNvi">
-                    <ref role="37wK5l" to="asup:~DiagramDescription.getDescription()" resolve="getDescription" />
-                  </node>
                 </node>
-                <node concept="liA8E" id="7ikA1GKuuw0" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
-                  <node concept="Xl_RD" id="7ikA1GKuuZC" role="37wK5m">
-                    <property role="Xl_RC" value="Error" />
+                <node concept="2OqwBi" id="7ikA1GKut0k" role="3uHU7w">
+                  <node concept="2OqwBi" id="7ikA1GKuoSb" role="2Oq$k0">
+                    <node concept="37vLTw" id="7ikA1GKunY6" role="2Oq$k0">
+                      <ref role="3cqZAo" node="25fKBAPJuvw" resolve="desc" />
+                    </node>
+                    <node concept="liA8E" id="7ikA1GKusHR" role="2OqNvi">
+                      <ref role="37wK5l" to="asup:~DiagramDescription.getDescription()" resolve="getDescription" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7ikA1GKuuw0" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                    <node concept="Xl_RD" id="7ikA1GKuuZC" role="37wK5m">
+                      <property role="Xl_RC" value="Error" />
+                    </node>
                   </node>
                 </node>
               </node>
