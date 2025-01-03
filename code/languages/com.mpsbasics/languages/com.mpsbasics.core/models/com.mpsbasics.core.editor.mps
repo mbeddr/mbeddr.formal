@@ -255,7 +255,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="PMmxH" id="4xJapKM67gV" role="3EZMnx">
-          <ref role="PMmxG" node="4xJapKM66o$" />
+          <ref role="PMmxG" node="4xJapKM66o$" resolve="iconAndNameCell" />
         </node>
         <node concept="l2Vlx" id="4gtLUSMLjsY" role="2iSdaV" />
       </node>
@@ -370,7 +370,7 @@
       </node>
       <node concept="3F0ifn" id="6NmtaR1SUKE" role="3EZMnx" />
       <node concept="PMmxH" id="4_pH3zvdAeV" role="3EZMnx">
-        <ref role="PMmxG" node="4_pH3zvd_oC" />
+        <ref role="PMmxG" node="4_pH3zvd_oC" resolve="horizontalLine" />
       </node>
       <node concept="3F0ifn" id="14CuINs4Qgl" role="3EZMnx" />
     </node>
@@ -564,7 +564,7 @@
         <node concept="3cpWs6" id="DubiFB4e7p" role="3cqZAp">
           <node concept="2ShNRf" id="1dVWdop08sE" role="3cqZAk">
             <node concept="1pGfFk" id="1dVWdop08sF" role="2ShVmc">
-              <ref role="37wK5l" node="1dVWdooZXce" resolve="MyEditorCell_Basic" />
+              <ref role="37wK5l" node="1dVWdooZXce" resolve="IconCell.MyEditorCell_Basic" />
               <node concept="37vLTw" id="1dVWdop08sG" role="37wK5m">
                 <ref role="3cqZAo" node="DubiFB4e5w" resolve="context" />
               </node>
