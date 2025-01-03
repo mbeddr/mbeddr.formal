@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="c1ru" ref="r:906fd65e-f25a-46a4-93f3-5b3ffd79b93f(com.mbeddr.formal.prism.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -130,7 +131,7 @@
     <ref role="1XX52x" to="c1ru:ZaBFheJI2L" resolve="PrismModel" />
     <node concept="3EZMnI" id="6NmtaR1SUJu" role="2wV5jI">
       <node concept="PMmxH" id="4gtLUSMLm4A" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="2iRkQZ" id="6NmtaR1SUJx" role="2iSdaV" />
       <node concept="3F2HdR" id="6NmtaR1TTPF" role="3EZMnx">
@@ -474,7 +475,7 @@
     <ref role="1XX52x" to="c1ru:1xpXAu0OFTn" resolve="PrismSpecification" />
     <node concept="3EZMnI" id="1xpXAu0OFWx" role="2wV5jI">
       <node concept="PMmxH" id="1xpXAu0OFWy" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3EZMnI" id="1xpXAu0URNi" role="3EZMnx">
         <node concept="VPM3Z" id="1xpXAu0URNk" role="3F10Kt" />

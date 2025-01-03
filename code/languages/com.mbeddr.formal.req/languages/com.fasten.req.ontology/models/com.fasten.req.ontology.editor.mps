@@ -26,6 +26,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="s6s" ref="r:d5c12ac5-8ab6-4a1e-b231-be1ce0ac2773(de.itemis.mps.editor.collapsible.runtime)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
   <registry>
@@ -437,7 +438,7 @@
     <ref role="1XX52x" to="6wa3:3Jn$RV31w1l" resolve="Ontology" />
     <node concept="3EZMnI" id="3Jn$RV31w2y" role="2wV5jI">
       <node concept="PMmxH" id="3Jn$RV31w2D" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="52bCGvYEnPy" role="3EZMnx" />
       <node concept="3EZMnI" id="52bCGvYEnPO" role="3EZMnx">
@@ -477,7 +478,7 @@
     </node>
     <node concept="3EZMnI" id="1wKSXwEAKjg" role="2wV5jI">
       <node concept="PMmxH" id="1wKSXwEAKjh" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="1HlG4h" id="1f_hJh21tsw" role="3EZMnx">
         <node concept="1HfYo3" id="1f_hJh21tsy" role="1HlULh">
@@ -732,7 +733,7 @@
               </node>
             </node>
             <node concept="1HlG4h" id="4vIVwd75633" role="3v1y6z">
-              <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
+              <ref role="1k5W1q" to="1ks0:2CEi94e3iKI" resolve="PassiveTextStyle" />
               <node concept="VSNWy" id="4vIVwd75iqj" role="3F10Kt">
                 <property role="1lJzqX" value="8" />
               </node>
@@ -996,7 +997,7 @@
                 </node>
               </node>
               <node concept="1HlG4h" id="4vIVwd755tk" role="3v1y6z">
-                <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
+                <ref role="1k5W1q" to="1ks0:2CEi94e3iKI" resolve="PassiveTextStyle" />
                 <node concept="VSNWy" id="4vIVwd75ihK" role="3F10Kt">
                   <property role="1lJzqX" value="8" />
                 </node>
@@ -1879,7 +1880,7 @@
     </node>
     <node concept="3EZMnI" id="kZSvS5QryZ" role="2wV5jI">
       <node concept="PMmxH" id="kZSvS5Qrz0" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="1HlG4h" id="kZSvS5Qrz1" role="3EZMnx">
         <node concept="1HfYo3" id="kZSvS5Qrz2" role="1HlULh">

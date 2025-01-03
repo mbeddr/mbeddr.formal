@@ -10,6 +10,7 @@
   <imports>
     <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="1w8j" ref="r:0631ef51-dd11-46fa-a4db-001e68da09c6(com.mbeddr.formal.safety.iso26262.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
@@ -243,7 +244,7 @@
             <ref role="1NtTu8" to="1w8j:4JYWwihCjpA" resolve="severityRationale" />
             <node concept="3F0ifn" id="4JYWwihCu0w" role="2ruayu">
               <property role="3F0ifm" value="none" />
-              <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
+              <ref role="1k5W1q" to="1ks0:2CEi94e3iKI" resolve="PassiveTextStyle" />
             </node>
           </node>
           <node concept="1A0rlU" id="4JYWwihCUFU" role="2recC9">
@@ -280,7 +281,7 @@
             <ref role="1NtTu8" to="1w8j:4JYWwihCjpR" resolve="controlabilityRationale" />
             <node concept="3F0ifn" id="4JYWwihCu0y" role="2ruayu">
               <property role="3F0ifm" value="none" />
-              <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
+              <ref role="1k5W1q" to="1ks0:2CEi94e3iKI" resolve="PassiveTextStyle" />
             </node>
           </node>
           <node concept="1A0rlU" id="4JYWwihCUFB" role="2recC9">
@@ -368,7 +369,7 @@
     <ref role="1XX52x" to="1w8j:55oVyA0ls9z" resolve="OperationalSituationsCatalogue" />
     <node concept="3EZMnI" id="2hOvri9WL5z" role="2wV5jI">
       <node concept="PMmxH" id="2hOvri9WL5$" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="2hOvri9WL5_" role="3EZMnx" />
       <node concept="2rfBfz" id="2hOvri9WL5A" role="3EZMnx">

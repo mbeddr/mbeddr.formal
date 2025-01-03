@@ -9,6 +9,7 @@
   </languages>
   <imports>
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="2w7f" ref="r:ea300b49-36a6-4fa8-9ccd-411a1c328f70(com.fasten.safety.hazop.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
   </imports>
@@ -61,7 +62,7 @@
     <ref role="1XX52x" to="2w7f:4UQF4xbCO5S" resolve="HAZOPAnalysisBase" />
     <node concept="3EZMnI" id="5rwT_Jny5eS" role="2wV5jI">
       <node concept="PMmxH" id="2LDKh2uDSuv" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="4UQF4xbCOaF" role="3EZMnx" />
       <node concept="2rfBfz" id="4UQF4xbCOaM" role="3EZMnx">

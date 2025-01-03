@@ -13,6 +13,7 @@
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="p98h" ref="r:c81d99d9-842f-4ea8-b4f3-8f7f171b410f(com.mbeddr.formal.nusmv.pluginSolution.tests)" />
     <import index="mc3u" ref="r:c40f5d7d-8d11-4fe7-a7f1-b09919c94fc9(com.mbeddr.formal.base.tooling.simulator)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="fnq2" ref="r:412c918d-151c-45fe-acf3-0268d0d563c1(com.mbeddr.formal.nusmv.tests.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -427,7 +428,7 @@
               <node concept="3clFbF" id="14CuINs5Uvr" role="3cqZAp">
                 <node concept="2ShNRf" id="14CuINs5Uvp" role="3clFbG">
                   <node concept="1pGfFk" id="14CuINs5UTp" role="2ShVmc">
-                    <ref role="37wK5l" to="xnej:DubiFB4e4X" resolve="IconCell" />
+                    <ref role="37wK5l" to="1ks0:DubiFB4e4X" resolve="IconCell" />
                     <node concept="pncrf" id="14CuINs5UXj" role="37wK5m" />
                     <node concept="3cmrfG" id="14CuINs5Vdl" role="37wK5m">
                       <property role="3cmrfH" value="3" />
@@ -450,7 +451,7 @@
       <node concept="2iRkQZ" id="43FRfGJUEuX" role="2iSdaV" />
       <node concept="3F0ifn" id="43FRfGJUEvU" role="3EZMnx" />
       <node concept="PMmxH" id="4_pH3zvfwyh" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4_pH3zvd_oC" resolve="horizontalLine" />
+        <ref role="PMmxG" to="1ks0:4_pH3zvd_oC" resolve="horizontalLine" />
       </node>
       <node concept="3F0ifn" id="4_pH3zvfwxE" role="3EZMnx" />
       <node concept="3F2HdR" id="43FRfGJUEwK" role="3EZMnx">
