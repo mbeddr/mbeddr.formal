@@ -2,7 +2,6 @@
 <model ref="r:3df64c2c-5d66-42f0-86ae-b6824b802d56(_010_features._090_assurance_cases_linked_to_runtime)" content="header">
   <persistence version="9" />
   <languages>
-    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <devkit ref="16e7e722-0522-46f7-b3be-41f15da742ed(fasten.safety.gsn.runtime)" />
   </languages>
   <imports>

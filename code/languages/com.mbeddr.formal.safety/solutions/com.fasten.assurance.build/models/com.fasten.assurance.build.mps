@@ -785,6 +785,9 @@
       <node concept="m$f5U" id="y1G8y6f46S" role="m$_yh">
         <ref role="m$f5T" node="y1G8y6eV83" resolve="fasten.safety.gsn.modelquery.devkit" />
       </node>
+      <node concept="m$f5U" id="kjG6o7NSOs" role="m$_yh">
+        <ref role="m$f5T" node="kjG6o7NtQD" resolve="fasten.safety.runtime.devkit" />
+      </node>
     </node>
     <node concept="m$_wf" id="xDU_PQJC7g" role="3989C9">
       <property role="m$_wk" value="fasten.safety.analyses" />
@@ -8276,6 +8279,38 @@
         </node>
         <node concept="3LEDTy" id="8xY_IhvzQd" role="3LEDUa">
           <ref role="3LEDTV" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="kjG6o7NtQD" role="3989C9">
+      <property role="TrG5h" value="fasten.safety.runtime.devkit" />
+      <node concept="3LEwk6" id="kjG6o7NtQE" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="fasten.safety.gsn.runtime" />
+        <property role="3LESm3" value="16e7e722-0522-46f7-b3be-41f15da742ed" />
+        <node concept="398BVA" id="kjG6o7NtQF" role="3LF7KH">
+          <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="kjG6o7NtQG" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="kjG6o7NtQH" role="2Ry0An">
+              <property role="2Ry0Am" value="fasten.safety.gsn.runtime" />
+              <node concept="2Ry0Ak" id="kjG6o7Nuvz" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.safety.gsn.runtime.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEz8M" id="kjG6o7NtQJ" role="3LEz9a">
+          <ref role="3LEz8N" node="7he_lUuvj8g" resolve="fasten.safety.gsn" />
+        </node>
+        <node concept="3LEDTy" id="kjG6o7NtQM" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+        </node>
+        <node concept="3LEDTy" id="kjG6o7Nvmn" role="3LEDUa">
+          <ref role="3LEDTV" node="6i5G5_YTYIe" resolve="com.mbeddr.formal.safety.argument.runtime" />
+        </node>
+        <node concept="3LEDTy" id="kjG6o7Nvmo" role="3LEDUa">
+          <ref role="3LEDTV" node="6i5G5_YU0N4" resolve="com.mbeddr.formal.safety.argument.spi" />
         </node>
       </node>
     </node>

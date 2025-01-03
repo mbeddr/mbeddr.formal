@@ -209,6 +209,9 @@
         <reference id="6592112598314801433" name="plugin" index="m_rDy" />
         <child id="3570488090019868128" name="packagingType" index="pUk7w" />
       </concept>
+      <concept id="6592112598314499036" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginModule" flags="ng" index="m$_yB">
+        <reference id="6592112598314499037" name="target" index="m$_yA" />
+      </concept>
       <concept id="6592112598314499027" name="jetbrains.mps.build.mps.structure.BuildMps_IdeaPluginDependency" flags="ng" index="m$_yC">
         <reference id="6592112598314499066" name="target" index="m$_y1" />
       </concept>
@@ -1197,6 +1200,9 @@
       </node>
       <node concept="m$f5U" id="y1G8y6b83Y" role="m$_yh">
         <ref role="m$f5T" node="y1G8y6b4FY" resolve="fasten.safety.gsn.modelquery.devkit" />
+      </node>
+      <node concept="m$_yB" id="kjG6o7NRI5" role="m$_yh">
+        <ref role="m$_yA" node="kjG6o7NtQE" resolve="fasten.safety.gsn.runtime" />
       </node>
       <node concept="m$f5U" id="7he_lUuvmGP" role="m$_yh">
         <ref role="m$f5T" node="7he_lUuvkGI" resolve="fasten.safety.hara.devkit" />
@@ -15901,6 +15907,38 @@
         </node>
         <node concept="3LEDTy" id="8xY_Ihvz2K" role="3LEDUa">
           <ref role="3LEDTV" to="90a9:56Tfdun3uan" resolve="de.itemis.mps.editor.diagram.layout" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="kjG6o7NtQD" role="3989C9">
+      <property role="TrG5h" value="fasten.safety.runtime.devkit" />
+      <node concept="3LEwk6" id="kjG6o7NtQE" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="fasten.safety.gsn.runtime" />
+        <property role="3LESm3" value="16e7e722-0522-46f7-b3be-41f15da742ed" />
+        <node concept="398BVA" id="kjG6o7NtQF" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="kjG6o7NtQG" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="kjG6o7NtQH" role="2Ry0An">
+              <property role="2Ry0Am" value="fasten.safety.gsn.runtime" />
+              <node concept="2Ry0Ak" id="kjG6o7Nuvz" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.safety.gsn.runtime.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEz8M" id="kjG6o7NtQJ" role="3LEz9a">
+          <ref role="3LEz8N" node="7he_lUuvj8g" resolve="fasten.safety.gsn" />
+        </node>
+        <node concept="3LEDTy" id="kjG6o7NtQM" role="3LEDUa">
+          <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+        </node>
+        <node concept="3LEDTy" id="kjG6o7Nvmn" role="3LEDUa">
+          <ref role="3LEDTV" node="6Z2HiVHtakY" resolve="com.mbeddr.formal.safety.argument.runtime" />
+        </node>
+        <node concept="3LEDTy" id="kjG6o7Nvmo" role="3LEDUa">
+          <ref role="3LEDTV" node="6i5G5_YU7r7" resolve="com.mbeddr.formal.safety.argument.spi" />
         </node>
       </node>
     </node>
