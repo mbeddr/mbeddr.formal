@@ -2,8 +2,6 @@
 <model ref="r:3df64c2c-5d66-42f0-86ae-b6824b802d56(_010_features._090_assurance_cases_linked_to_runtime)" content="header">
   <persistence version="9" />
   <languages>
-    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="16e7e722-0522-46f7-b3be-41f15da742ed(fasten.safety.gsn.runtime)" />
   </languages>
   <imports>
