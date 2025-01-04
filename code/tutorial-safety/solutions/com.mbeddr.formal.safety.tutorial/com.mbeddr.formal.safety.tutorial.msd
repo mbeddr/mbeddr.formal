@@ -65,6 +65,8 @@
     <language slang="l:e6e482a5-282a-4c6d-862a-311affd0586b:com.mbeddr.formal.safety.argument.jira_integration" version="0" />
     <language slang="l:8a4ef392-f4b4-43e7-afb5-b071dce8043d:com.mbeddr.formal.safety.argument.process" version="0" />
     <language slang="l:fdecb1e5-875e-41ef-a5fd-4b18f747f204:com.mbeddr.formal.safety.argument.process.artefacts" version="0" />
+    <language slang="l:546ac349-3106-438d-b92b-7d2ebfa2ade8:com.mbeddr.formal.safety.argument.runtime" version="0" />
+    <language slang="l:1118d03f-f774-4a18-9e75-2357f8563d46:com.mbeddr.formal.safety.argument.spi" version="0" />
     <language slang="l:04d81d12-7048-4552-9a53-86a271c0f094:com.mbeddr.formal.safety.argument.visualisation" version="0" />
     <language slang="l:eb32334c-372a-488f-ba9b-e549a59115e9:com.mbeddr.formal.safety.cae" version="0" />
     <language slang="l:d8195c35-9fa4-406e-b16a-8f62c605380b:com.mbeddr.formal.safety.cae.ext" version="0" />

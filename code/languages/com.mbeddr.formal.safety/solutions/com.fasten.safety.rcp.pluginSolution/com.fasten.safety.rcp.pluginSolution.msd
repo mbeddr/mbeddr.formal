@@ -31,6 +31,8 @@
     <dependency reexport="false">3460ac43-6f59-4f61-b134-9fa2f799c2d3(com.mbeddr.formal.req.scenarios)</dependency>
     <dependency reexport="false">81f6a079-965e-4523-87c3-8e6194f66585(com.fasten.base.msc)</dependency>
     <dependency reexport="false">6f31bc85-cbcc-4dcf-ada4-35da43e6832c(com.symo.plantuml)</dependency>
+    <dependency reexport="false">1118d03f-f774-4a18-9e75-2357f8563d46(com.mbeddr.formal.safety.argument.spi)</dependency>
+    <dependency reexport="false">546ac349-3106-438d-b92b-7d2ebfa2ade8(com.mbeddr.formal.safety.argument.runtime)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:c38abce1-4c09-44cb-9ebf-2a764e824bb5:com.mbeddr.mpsutil.actionsfilter" version="0" />
@@ -70,10 +72,13 @@
     <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
     <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
     <module reference="945808cb-09a0-4d70-9f2a-186b7f5c6219(com.mbeddr.formal.base.pluginSolution)" version="0" />
+    <module reference="e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)" version="0" />
     <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
     <module reference="0deccdfd-196b-4d8c-895e-0d6cb8014dfd(com.mbeddr.formal.req.base)" version="0" />
     <module reference="3460ac43-6f59-4f61-b134-9fa2f799c2d3(com.mbeddr.formal.req.scenarios)" version="0" />
     <module reference="8a4ef392-f4b4-43e7-afb5-b071dce8043d(com.mbeddr.formal.safety.argument.process)" version="0" />
+    <module reference="546ac349-3106-438d-b92b-7d2ebfa2ade8(com.mbeddr.formal.safety.argument.runtime)" version="0" />
+    <module reference="1118d03f-f774-4a18-9e75-2357f8563d46(com.mbeddr.formal.safety.argument.spi)" version="0" />
     <module reference="e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)" version="0" />
     <module reference="42606624-2faa-4717-ba66-77021cc11b53(com.mbeddr.formal.safety.gsn.doc)" version="1" />
     <module reference="6464626a-ab04-4051-908e-5e8dc75acd78(com.mbeddr.formal.safety.gsn.ext)" version="2" />

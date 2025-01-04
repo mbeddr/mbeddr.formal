@@ -56,10 +56,10 @@
       <node concept="1ps3o1" id="75npNYZyqAx" role="1pqCzW">
         <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
         <node concept="1pvSZV" id="75npNYZyqAy" role="1pvUZv">
-          <ref role="1pvSZS" node="75npNYZyqAv" resolve="Sender" />
+          <ref role="1pvSZS" node="75npNYZyqAv" resolve="Camera" />
         </node>
         <node concept="1pvSZV" id="75npNYZyqAz" role="1pvUZs">
-          <ref role="1pvSZS" node="75npNYZyqAw" resolve="Receiver" />
+          <ref role="1pvSZS" node="75npNYZyqAw" resolve="Camera_Objects_Detection" />
         </node>
       </node>
       <node concept="1pts5n" id="75npNYZyqBe" role="1pqCzW">
