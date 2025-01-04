@@ -405,7 +405,9 @@ tasks {
     }
 
     val build_all_languages by registering {
-        dependsOn(build_assurance_languages, build_formal_languages)
+	// as of 01.2025, all languages built by 'build_assurance_languages' are also built by 'build_formal_languages' 
+	// commented out to avoid multiple building of the same languages
+        dependsOn(/*build_assurance_languages,*/ build_formal_languages)
     }
 
     assemble { dependsOn(package_formal, package_assurance) }

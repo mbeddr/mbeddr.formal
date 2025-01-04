@@ -14,6 +14,7 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="zqec" ref="r:4b509217-3274-43e6-be70-84e45864fd71(com.fasten.safety.bayesian_network.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
@@ -437,7 +438,7 @@
     <ref role="1XX52x" to="zqec:3sgpJkb4cfD" resolve="BayesianNetwork" />
     <node concept="3EZMnI" id="3GRi4m$qQ5q" role="2wV5jI">
       <node concept="PMmxH" id="2LDKh2uDSuv" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="3GRi4m$qQa$" role="3EZMnx" />
       <node concept="3F2HdR" id="3sgpJkb5gUh" role="3EZMnx">
@@ -464,7 +465,7 @@
       </node>
       <node concept="3F0ifn" id="3sgpJkb4Xpe" role="3EZMnx">
         <property role="3F0ifm" value=";" />
-        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+        <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
       </node>
     </node>
     <node concept="2aJ2om" id="3sgpJkb5jGm" role="CpUAK">
@@ -511,7 +512,7 @@
     <ref role="1XX52x" to="zqec:3sgpJkb4cfD" resolve="BayesianNetwork" />
     <node concept="3EZMnI" id="3sgpJkb5jFX" role="2wV5jI">
       <node concept="PMmxH" id="3sgpJkb5jFY" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="3sgpJkb5jFZ" role="3EZMnx" />
       <node concept="27vDVx" id="3sgpJkb5jG8" role="3EZMnx">
@@ -602,7 +603,7 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="PMmxH" id="3sgpJkb5jHR" role="3EZMnx">
-          <ref role="PMmxG" to="xnej:4_pH3zvd_oC" resolve="horizontalLine" />
+          <ref role="PMmxG" to="1ks0:4_pH3zvd_oC" resolve="horizontalLine" />
         </node>
         <node concept="3F0ifn" id="3sgpJkbiSAy" role="3EZMnx">
           <node concept="pkWqt" id="3sgpJkbmy8$" role="pqm2j">
@@ -694,7 +695,7 @@
       </node>
       <node concept="3F0ifn" id="3sgpJkb5jIi" role="3EZMnx">
         <property role="3F0ifm" value=";" />
-        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+        <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
       </node>
       <node concept="2iRfu4" id="3sgpJkb5jIj" role="2iSdaV" />
     </node>

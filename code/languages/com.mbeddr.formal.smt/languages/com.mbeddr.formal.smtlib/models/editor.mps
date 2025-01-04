@@ -13,6 +13,7 @@
     <import index="3fe0" ref="r:848c2b01-cc1a-44aa-b277-5acd56d63ece(com.mbeddr.formal.base.expressions.editor)" />
     <import index="d9cz" ref="r:41c1238c-43f1-4441-984e-72955eefcbfb(com.mbeddr.formal.smtlib.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
@@ -210,7 +211,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="PMmxH" id="4xJapKM67gV" role="3EZMnx">
-          <ref role="PMmxG" to="xnej:4xJapKM66o$" resolve="iconAndNameCell" />
+          <ref role="PMmxG" to="1ks0:4xJapKM66o$" resolve="iconAndNameCell" />
         </node>
         <node concept="l2Vlx" id="6NmtaR1SUJQ" role="2iSdaV" />
       </node>
@@ -219,13 +220,13 @@
         <node concept="l2Vlx" id="3r83Ks0gb4d" role="2iSdaV" />
         <node concept="3F0ifn" id="3r83Ks0gb4e" role="3EZMnx">
           <property role="3F0ifm" value="model  " />
-          <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
+          <ref role="1k5W1q" to="1ks0:2CEi94e3iKI" resolve="PassiveTextStyle" />
           <node concept="VPM3Z" id="3r83Ks0gyrX" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
         </node>
         <node concept="1HlG4h" id="3r83Ks0gb4f" role="3EZMnx">
-          <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
+          <ref role="1k5W1q" to="1ks0:2CEi94e3iKI" resolve="PassiveTextStyle" />
           <node concept="1HfYo3" id="3r83Ks0gb4g" role="1HlULh">
             <node concept="3TQlhw" id="3r83Ks0gb4h" role="1Hhtcw">
               <node concept="3clFbS" id="3r83Ks0gb4i" role="2VODD2">
@@ -265,13 +266,13 @@
         <node concept="l2Vlx" id="3r83Ks0g7Sl" role="2iSdaV" />
         <node concept="3F0ifn" id="3r83Ks0gb4b" role="3EZMnx">
           <property role="3F0ifm" value="package" />
-          <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
+          <ref role="1k5W1q" to="1ks0:2CEi94e3iKI" resolve="PassiveTextStyle" />
           <node concept="VPM3Z" id="3r83Ks0gyrW" role="3F10Kt">
             <property role="VOm3f" value="false" />
           </node>
         </node>
         <node concept="1HlG4h" id="6GZLGDRsw6C" role="3EZMnx">
-          <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
+          <ref role="1k5W1q" to="1ks0:2CEi94e3iKI" resolve="PassiveTextStyle" />
           <node concept="1HfYo3" id="6GZLGDRsw6D" role="1HlULh">
             <node concept="3TQlhw" id="6GZLGDRsw6E" role="1Hhtcw">
               <node concept="3clFbS" id="6GZLGDRsw6F" role="2VODD2">
@@ -325,7 +326,7 @@
       </node>
       <node concept="3F0ifn" id="6NmtaR1SUKE" role="3EZMnx" />
       <node concept="PMmxH" id="4_pH3zvdAeV" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4_pH3zvd_oC" resolve="horizontalLine" />
+        <ref role="PMmxG" to="1ks0:4_pH3zvd_oC" resolve="horizontalLine" />
       </node>
       <node concept="3F0ifn" id="14CuINs4Qgl" role="3EZMnx" />
       <node concept="3F2HdR" id="6NmtaR1TTPF" role="3EZMnx">

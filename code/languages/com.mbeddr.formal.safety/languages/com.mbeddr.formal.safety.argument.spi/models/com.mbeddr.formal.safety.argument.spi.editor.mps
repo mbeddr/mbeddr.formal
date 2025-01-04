@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="3xw7" ref="r:03075676-dfa1-4f4e-aef4-a178c9f0fb17(com.mbeddr.formal.safety.argument.spi.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -67,7 +68,7 @@
     <ref role="1XX52x" to="3xw7:2X_iJQix75f" resolve="SPIContainer" />
     <node concept="3EZMnI" id="5t37uj6_F69" role="2wV5jI">
       <node concept="PMmxH" id="5t37uj6_F6j" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="5t37uj6B1FC" role="3EZMnx" />
       <node concept="3F2HdR" id="2X_iJQizVLB" role="3EZMnx">

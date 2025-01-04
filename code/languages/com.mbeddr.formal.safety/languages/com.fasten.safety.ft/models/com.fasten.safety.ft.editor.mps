@@ -23,6 +23,7 @@
     <import index="e57x" ref="r:99808a14-1913-4248-aed8-3139a5d05f88(com.mbeddr.formal.base.styles)" />
     <import index="suqv" ref="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" />
     <import index="5un2" ref="r:00d6ee44-268c-4818-b3e7-4eecf669c7ee(com.mbeddr.mpsutil.treenotation.styles.editor)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" implicit="true" />
     <import index="fazf" ref="r:28cb0bbd-efcb-4c9e-94f2-4ccc928adfb4(com.fasten.safety.ft.behavior)" implicit="true" />
@@ -637,7 +638,7 @@
     <ref role="1XX52x" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
     <node concept="3EZMnI" id="5rwT_Jny5eS" role="2wV5jI">
       <node concept="PMmxH" id="2LDKh2uDSuv" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
         <node concept="pkWqt" id="WKGDODOnGl" role="pqm2j">
           <node concept="3clFbS" id="WKGDODOnGm" role="2VODD2">
             <node concept="3clFbF" id="WKGDODOoa6" role="3cqZAp">
@@ -3086,7 +3087,7 @@
     </node>
     <node concept="3EZMnI" id="7wRJ5ynOsrV" role="2wV5jI">
       <node concept="PMmxH" id="7wRJ5ynOsyb" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
         <node concept="pkWqt" id="7wRJ5ynOsyc" role="pqm2j">
           <node concept="3clFbS" id="7wRJ5ynOsyd" role="2VODD2">
             <node concept="3clFbF" id="7wRJ5ynOsye" role="3cqZAp">
@@ -3554,7 +3555,7 @@
     <ref role="1XX52x" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
     <node concept="3EZMnI" id="7wRJ5ynOywq" role="2wV5jI">
       <node concept="PMmxH" id="7wRJ5ynOywx" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
         <node concept="pkWqt" id="7wRJ5ynOywy" role="pqm2j">
           <node concept="3clFbS" id="7wRJ5ynOywz" role="2VODD2">
             <node concept="3clFbF" id="7wRJ5ynOyw$" role="3cqZAp">
@@ -3609,7 +3610,7 @@
       </node>
       <node concept="3F0ifn" id="7wRJ5ynOLG0" role="3EZMnx">
         <property role="3F0ifm" value=";" />
-        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+        <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
       </node>
       <node concept="l2Vlx" id="7wRJ5ynOLFD" role="2iSdaV" />
     </node>
@@ -3651,7 +3652,7 @@
       <node concept="l2Vlx" id="7wRJ5ynOLGh" role="2iSdaV" />
       <node concept="3F0ifn" id="36k0PnKJGGD" role="3EZMnx">
         <property role="3F0ifm" value=";" />
-        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+        <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
       </node>
     </node>
     <node concept="2aJ2om" id="7wRJ5ynOLGb" role="CpUAK">

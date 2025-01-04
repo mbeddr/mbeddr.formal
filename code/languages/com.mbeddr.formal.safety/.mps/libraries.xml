@@ -51,6 +51,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="symo">
+          <value>
+            <Library>
+              <option name="name" value="symo" />
+              <option name="path" value="${mbeddr.formal.home}/code/languages/com.fasten.symo" />
+            </Library>
+          </value>
+        </entry>
       </map>
     </option>
   </component>
