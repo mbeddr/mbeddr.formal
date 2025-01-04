@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:bd3f2258-8e60-43b9-b510-d924947d558e(_500_real_world_examples._010_uber_atg_safety_case_modularized_pdf_export)">
+<model ref="r:bd3f2258-8e60-43b9-b510-d924947d558e(_500_real_world_examples._010_uber_atg_safety_case_modularized_pdf_export)" content="root">
   <persistence version="9" />
-  <languages>
-    <devkit ref="b0b37262-7857-4c92-8e0e-0467c9bc45a6(fasten.safety.gsn.doc)" />
-  </languages>
   <imports>
-    <import index="ps0r" ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" />
+    <import index="ps0r" ref="r:60b8ae5a-a776-490e-980f-f4857fda89ca(_500_real_world_examples._010_uber_atg_safety_case_modularized)" implicit="true" />
   </imports>
   <registry>
     <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
