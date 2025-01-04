@@ -218,7 +218,7 @@
             <node concept="2OqwBi" id="y1G8y68e63" role="33vP2m">
               <node concept="2tJFMh" id="y1G8y68bRu" role="2Oq$k0">
                 <node concept="ZC_QK" id="y1G8y68bRv" role="2tJFKM">
-                  <ref role="2aWVGs" node="y1G8y66r_j" resolve="FASTENAssuranceModelChecker" />
+                  <ref role="2aWVGs" node="y1G8y66r_j" resolve="FASTENAssuranceSpiChecker" />
                   <node concept="1ZhdrF" id="y1G8y68bRw" role="lGtFl">
                     <property role="2qtEX8" value="target" />
                     <property role="P3scX" value="446c26eb-2b7b-4bf0-9b35-f83fa582753e/4733039728785194814/7256306938026143658" />
@@ -397,7 +397,7 @@
         <node concept="3clFbS" id="y1G8y67CFB" role="2VODD2">
           <node concept="3clFbF" id="y1G8y67CNm" role="3cqZAp">
             <node concept="2YIFZM" id="y1G8y67COi" role="3clFbG">
-              <ref role="37wK5l" to="liit:y1G8y67AQP" resolve="nameOfGeneratedModelCheckerClass" />
+              <ref role="37wK5l" to="liit:y1G8y67AQP" resolve="nameOfGeneratedSpiClass" />
               <ref role="1Pybhc" to="liit:y1G8y67AP7" resolve="NamingUtils" />
               <node concept="1PxgMI" id="y1G8y67DiA" role="37wK5m">
                 <property role="1BlNFB" value="true" />
@@ -428,7 +428,7 @@
     <property role="TrG5h" value="main" />
     <node concept="3lhOvk" id="y1G8y67jcJ" role="3lj3bC">
       <ref role="30HIoZ" to="3xw7:2X_iJQix75f" resolve="SPIContainer" />
-      <ref role="3lhOvi" node="y1G8y66r_j" resolve="FASTENAssuranceModelChecker" />
+      <ref role="3lhOvi" node="y1G8y66r_j" resolve="FASTENAssuranceSpiChecker" />
     </node>
   </node>
 </model>

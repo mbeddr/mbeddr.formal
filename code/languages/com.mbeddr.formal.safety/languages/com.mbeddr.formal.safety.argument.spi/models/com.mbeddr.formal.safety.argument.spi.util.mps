@@ -230,7 +230,7 @@
                   <node concept="2JrnkZ" id="y1G8y68uzi" role="2Oq$k0">
                     <node concept="2OqwBi" id="y1G8y68uzj" role="2JrQYb">
                       <node concept="37vLTw" id="y1G8y6afB2" role="2Oq$k0">
-                        <ref role="3cqZAo" node="y1G8y6ad_X" resolve="mcc" />
+                        <ref role="3cqZAo" node="y1G8y6ad_X" resolve="sc" />
                       </node>
                       <node concept="I4A8Y" id="y1G8y68uzl" role="2OqNvi" />
                     </node>
@@ -249,7 +249,7 @@
                 <node concept="2OqwBi" id="y1G8y67Dwl" role="33vP2m">
                   <node concept="2OqwBi" id="y1G8y67Dwm" role="2Oq$k0">
                     <node concept="37vLTw" id="y1G8y6afLN" role="2Oq$k0">
-                      <ref role="3cqZAo" node="y1G8y6ad_X" resolve="mcc" />
+                      <ref role="3cqZAo" node="y1G8y6ad_X" resolve="sc" />
                     </node>
                     <node concept="I4A8Y" id="y1G8y67Dwo" role="2OqNvi" />
                   </node>
@@ -271,10 +271,10 @@
                     </node>
                   </node>
                   <node concept="2YIFZM" id="y1G8y67Erh" role="3uHU7w">
-                    <ref role="1Pybhc" node="y1G8y67AP7" />
-                    <ref role="37wK5l" node="y1G8y67AQP" />
+                    <ref role="1Pybhc" node="y1G8y67AP7" resolve="NamingUtils" />
+                    <ref role="37wK5l" node="y1G8y67AQP" resolve="nameOfGeneratedSpiClass" />
                     <node concept="37vLTw" id="y1G8y6afW_" role="37wK5m">
-                      <ref role="3cqZAo" node="y1G8y6ad_X" resolve="mcc" />
+                      <ref role="3cqZAo" node="y1G8y6ad_X" resolve="sc" />
                     </node>
                   </node>
                 </node>
@@ -334,10 +334,10 @@
                 <property role="TrG5h" value="methodName" />
                 <node concept="17QB3L" id="y1G8y68Aq4" role="1tU5fm" />
                 <node concept="2YIFZM" id="y1G8y68BAZ" role="33vP2m">
-                  <ref role="1Pybhc" node="y1G8y67AP7" />
-                  <ref role="37wK5l" node="y1G8y67H6l" />
+                  <ref role="1Pybhc" node="y1G8y67AP7" resolve="NamingUtils" />
+                  <ref role="37wK5l" node="y1G8y67H6l" resolve="nameOfGeneratedSpiDefinitionMethod" />
                   <node concept="37vLTw" id="y1G8y6alK$" role="37wK5m">
-                    <ref role="3cqZAo" node="y1G8y6aeY7" resolve="mc" />
+                    <ref role="3cqZAo" node="y1G8y6aeY7" resolve="sd" />
                   </node>
                 </node>
               </node>
@@ -517,7 +517,7 @@
               <node concept="2OqwBi" id="y1G8y67CgO" role="2Oq$k0">
                 <node concept="2JrnkZ" id="y1G8y67C32" role="2Oq$k0">
                   <node concept="37vLTw" id="y1G8y67BTJ" role="2JrQYb">
-                    <ref role="3cqZAo" node="y1G8y67ARi" resolve="mcc" />
+                    <ref role="3cqZAo" node="y1G8y67ARi" resolve="sc" />
                   </node>
                 </node>
                 <node concept="liA8E" id="y1G8y67Cpj" role="2OqNvi">
