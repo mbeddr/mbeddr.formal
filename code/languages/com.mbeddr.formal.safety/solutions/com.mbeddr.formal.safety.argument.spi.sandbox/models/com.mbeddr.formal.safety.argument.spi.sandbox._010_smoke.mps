@@ -4,7 +4,10 @@
   <languages>
     <devkit ref="16e7e722-0522-46f7-b3be-41f15da742ed(fasten.safety.gsn.runtime)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+  </imports>
   <registry>
     <language id="1118d03f-f774-4a18-9e75-2357f8563d46" name="com.mbeddr.formal.safety.argument.spi">
       <concept id="3415218345380592611" name="com.mbeddr.formal.safety.argument.spi.structure.SpiAnnotationProvider" flags="ng" index="2XEZ4u" />
@@ -22,17 +25,34 @@
       <concept id="3415218345376512773" name="com.mbeddr.formal.safety.argument.spi.structure.SPIClosureConceptFunction" flags="ig" index="2XXj7S" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
-      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
-        <child id="1068580123156" name="expression" index="3clFbG" />
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
+        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
+      </concept>
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -116,9 +136,21 @@
       <node concept="2XUNcV" id="2X_iJQiNzDl" role="2XUCAh">
         <node concept="2XXj7S" id="2X_iJQiNzDn" role="2XUNcU">
           <node concept="3clFbS" id="2X_iJQiNzDp" role="2VODD2">
-            <node concept="3clFbF" id="2X_iJQiNFxo" role="3cqZAp">
-              <node concept="3clFbT" id="2X_iJQiNFxn" role="3clFbG">
-                <property role="3clFbU" value="true" />
+            <node concept="3cpWs6" id="75npNYZIR5G" role="3cqZAp">
+              <node concept="2ShNRf" id="75npNYZKROn" role="3cqZAk">
+                <node concept="1pGfFk" id="75npNYZKROk" role="2ShVmc">
+                  <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                  <node concept="3uibUv" id="75npNYZKRSm" role="1pMfVU">
+                    <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+                  </node>
+                  <node concept="17QB3L" id="75npNYZKROm" role="1pMfVU" />
+                  <node concept="3clFbT" id="75npNYZKRZZ" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                  <node concept="Xl_RD" id="75npNYZKShU" role="37wK5m">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -138,9 +170,19 @@
       <node concept="2XUNcV" id="2X_iJQiNFAe" role="2XUCAh">
         <node concept="2XXj7S" id="2X_iJQiNFAf" role="2XUNcU">
           <node concept="3clFbS" id="2X_iJQiNFAg" role="2VODD2">
-            <node concept="3clFbF" id="2X_iJQiNFAh" role="3cqZAp">
-              <node concept="3clFbT" id="2X_iJQiNFAi" role="3clFbG">
-                <property role="3clFbU" value="true" />
+            <node concept="3cpWs6" id="75npNYZIR5i" role="3cqZAp">
+              <node concept="2ShNRf" id="75npNYZKSVK" role="3cqZAk">
+                <node concept="1pGfFk" id="75npNYZKSVL" role="2ShVmc">
+                  <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                  <node concept="3uibUv" id="75npNYZKSVM" role="1pMfVU">
+                    <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+                  </node>
+                  <node concept="17QB3L" id="75npNYZKSVN" role="1pMfVU" />
+                  <node concept="3clFbT" id="75npNYZKTux" role="37wK5m" />
+                  <node concept="Xl_RD" id="75npNYZKSVP" role="37wK5m">
+                    <property role="Xl_RC" value="Violation for demo purposes" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

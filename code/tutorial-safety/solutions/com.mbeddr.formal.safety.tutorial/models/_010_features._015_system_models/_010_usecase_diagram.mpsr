@@ -90,7 +90,7 @@
           <ref role="cBd9N" node="75npNYZyqAF" resolve="User" />
         </node>
         <node concept="cBaKt" id="75npNYZyqB2" role="1pvUZs">
-          <ref role="cBaKr" node="75npNYZyqAX" resolve="start" />
+          <ref role="cBaKr" node="75npNYZyqAX" resolve="Start_Machine" />
         </node>
       </node>
       <node concept="cyzMF" id="75npNYZyqB3" role="1pqCzW">
@@ -99,7 +99,7 @@
           <ref role="cBd9N" node="75npNYZyqAI" resolve="Maintenance" />
         </node>
         <node concept="cBaKt" id="75npNYZyqB5" role="1pvUZs">
-          <ref role="cBaKr" node="75npNYZyqAX" resolve="start" />
+          <ref role="cBaKr" node="75npNYZyqAX" resolve="Start_Machine" />
         </node>
       </node>
       <node concept="S09t2" id="75npNYZyqB7" role="1pqCzW">
