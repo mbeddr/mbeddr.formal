@@ -8,9 +8,10 @@
   </languages>
   <imports>
     <import index="hqls" ref="r:9be6a7f5-8948-4321-86ee-36906d4a48b4(com.mbeddr.formal.ocra.structure)" />
-    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -223,7 +224,7 @@
     <ref role="1XX52x" to="hqls:1WjQLbKt0sx" resolve="OthelloSystemSpecification" />
     <node concept="3EZMnI" id="5iGdg8L_FKA" role="2wV5jI">
       <node concept="PMmxH" id="4JMCPGgvPM_" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="1QMZQ03SJsk" role="3EZMnx">
         <node concept="pVoyu" id="1QMZQ03SJsD" role="3F10Kt">
@@ -1312,7 +1313,7 @@
     <node concept="3EZMnI" id="7mSH3WnwK$$" role="2wV5jI">
       <node concept="3F0ifn" id="7mSH3WnwK$I" role="3EZMnx">
         <property role="3F0ifm" value="der" />
-        <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="7mSH3WnwK$R" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1341,7 +1342,7 @@
     <node concept="3EZMnI" id="404$BAz1QzH" role="2wV5jI">
       <node concept="3F0ifn" id="404$BAz1QzI" role="3EZMnx">
         <property role="3F0ifm" value="change" />
-        <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="404$BAz1QzJ" role="3EZMnx">
         <property role="3F0ifm" value="(" />
@@ -1455,7 +1456,7 @@
     <ref role="1XX52x" to="hqls:2OfmkSXY_kt" resolve="OthelloLibrarySpecification" />
     <node concept="3EZMnI" id="2OfmkSXY_uT" role="2wV5jI">
       <node concept="PMmxH" id="2OfmkSXY_uU" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="2OfmkSXY_uV" role="3EZMnx">
         <node concept="pVoyu" id="2OfmkSXY_uW" role="3F10Kt">

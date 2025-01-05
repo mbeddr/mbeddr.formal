@@ -11,6 +11,7 @@
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="oq0u" ref="r:e0fdabfa-18f0-4762-8817-0e7b1735bd5d(com.mbeddr.formal.safety.argument.modelquery.util)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -74,6 +75,7 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -258,7 +260,6 @@
           </node>
         </node>
       </node>
-      <node concept="17QB3L" id="y1G8y67Kc6" role="3clF45" />
       <node concept="3Tm1VV" id="y1G8y66rBe" role="1B3o_S" />
       <node concept="1WS0z7" id="y1G8y67cgE" role="lGtFl">
         <node concept="3JmXsc" id="y1G8y67cgH" role="3Jn$fo">
@@ -318,6 +319,13 @@
         <node concept="3uibUv" id="4VhhwF2sxhs" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
+      </node>
+      <node concept="3uibUv" id="7OA8CsRg0sr" role="3clF45">
+        <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+        <node concept="3uibUv" id="7OA8CsRg2jS" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+        </node>
+        <node concept="17QB3L" id="7OA8CsRg49a" role="11_B2D" />
       </node>
     </node>
     <node concept="2tJIrI" id="y1G8y66rB0" role="jymVt" />

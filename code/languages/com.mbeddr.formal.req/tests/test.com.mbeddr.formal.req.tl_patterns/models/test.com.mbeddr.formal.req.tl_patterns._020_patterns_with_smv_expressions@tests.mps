@@ -18,7 +18,9 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
-      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh" />
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
+        <property id="852155438140865198" name="allowWarnings" index="G7GLP" />
+      </concept>
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
@@ -499,6 +501,7 @@
         <node concept="7CXmI" id="5MWJzF9_U1b" role="lGtFl">
           <node concept="7OXhh" id="5MWJzF9_U1c" role="7EUXB">
             <property role="TrG5h" value="test_tl_nusmv_scoping_migrated" />
+            <property role="G7GLP" value="true" />
           </node>
         </node>
       </node>

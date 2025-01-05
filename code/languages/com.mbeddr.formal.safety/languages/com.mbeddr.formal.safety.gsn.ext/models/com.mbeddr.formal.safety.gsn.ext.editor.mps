@@ -19,6 +19,7 @@
     <import index="lbo2" ref="r:0f81d0ca-0757-4ee3-8a9a-ba988c2c39e3(com.mbeddr.formal.safety.gsn.ext.structure)" />
     <import index="23h6" ref="r:7141fd54-a831-41ba-8753-74008b0b9af4(de.slisson.mps.richtext.editor)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="5pac" ref="r:c1e7e8ce-abfe-4b41-9ced-20ab8db5bd60(com.mbeddr.formal.safety.gsn.ext.behavior)" implicit="true" />
@@ -386,7 +387,7 @@
     <ref role="1XX52x" to="lbo2:x1FXqHRAH" resolve="AbstractReusableArgumentFragmentsContainer" />
     <node concept="3EZMnI" id="1qrXfdH2gEM" role="2wV5jI">
       <node concept="PMmxH" id="2LDKh2uDSuv" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
         <node concept="pkWqt" id="WKGDODOnGl" role="pqm2j">
           <node concept="3clFbS" id="WKGDODOnGm" role="2VODD2">
             <node concept="3clFbF" id="WKGDODOoa6" role="3cqZAp">
@@ -1247,7 +1248,7 @@
         <node concept="3F0ifn" id="3EDV2YKGQbk" role="3EZMnx" />
         <node concept="3F0ifn" id="3EDV2YKDnUS" role="3EZMnx">
           <property role="3F0ifm" value="{" />
-          <ref role="1k5W1q" to="xnej:2CEi94dh36z" resolve="ParensStyle" />
+          <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
         </node>
       </node>
       <node concept="3EZMnI" id="3EDV2YKDnUX" role="3EZMnx">
@@ -1294,7 +1295,7 @@
       </node>
       <node concept="3F0ifn" id="3EDV2YKGQbu" role="3EZMnx">
         <property role="3F0ifm" value="}" />
-        <ref role="1k5W1q" to="xnej:2CEi94dh36z" resolve="ParensStyle" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
       </node>
       <node concept="2iRkQZ" id="3EDV2YKDnUm" role="2iSdaV" />
       <node concept="3EZMnI" id="3EDV2YKGQct" role="AHCbl">
@@ -1308,7 +1309,7 @@
         <node concept="3F0ifn" id="3EDV2YKGQcx" role="3EZMnx" />
         <node concept="3F0ifn" id="3EDV2YKGQcy" role="3EZMnx">
           <property role="3F0ifm" value="{ ... }" />
-          <ref role="1k5W1q" to="xnej:2CEi94dh36z" resolve="ParensStyle" />
+          <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
         </node>
       </node>
     </node>
@@ -1328,7 +1329,7 @@
       </node>
       <node concept="3F0ifn" id="56pBK14tHBS" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="xnej:2CEi94dh36z" resolve="ParensStyle" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
         <node concept="11LMrY" id="56pBK14xa3Z" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -1357,7 +1358,7 @@
       </node>
       <node concept="3F0ifn" id="56pBK14tHCy" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="xnej:2CEi94dh36z" resolve="ParensStyle" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
       </node>
       <node concept="2iRfu4" id="56pBK14tHBA" role="2iSdaV" />
     </node>

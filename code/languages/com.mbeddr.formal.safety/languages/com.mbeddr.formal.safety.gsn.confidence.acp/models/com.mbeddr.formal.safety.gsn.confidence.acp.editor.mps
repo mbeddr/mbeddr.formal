@@ -8,6 +8,7 @@
   <imports>
     <import index="g35p" ref="r:53f7c624-e35c-46e0-a6cd-4bcccc2b91f5(com.mbeddr.formal.safety.gsn.editor)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="kqaf" ref="r:6cc86fc4-3f69-4213-8f49-ef9fcbc7cb5f(com.mbeddr.formal.safety.gsn.confidence.acp.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -111,7 +112,7 @@
         </node>
         <node concept="3F0ifn" id="7NA168q7JtL" role="3EZMnx">
           <property role="3F0ifm" value=";" />
-          <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+          <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
         </node>
         <node concept="l2Vlx" id="4lbNCDmRjvF" role="2iSdaV" />
       </node>
@@ -155,7 +156,7 @@
     <ref role="1XX52x" to="kqaf:3bh1RFvGk3l" resolve="ConfidenceArgument" />
     <node concept="3EZMnI" id="3GRi4m$qQ5q" role="2wV5jI">
       <node concept="PMmxH" id="2LDKh2uDSuv" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
         <node concept="pkWqt" id="WKGDODOnGl" role="pqm2j">
           <node concept="3clFbS" id="WKGDODOnGm" role="2VODD2">
             <node concept="3clFbF" id="WKGDODOoa6" role="3cqZAp">

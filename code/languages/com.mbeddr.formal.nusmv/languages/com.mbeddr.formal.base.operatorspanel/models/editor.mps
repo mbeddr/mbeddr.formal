@@ -31,6 +31,7 @@
     <import index="zhty" ref="4bf9a860-39c9-4cb2-8004-157a961bf42c/java:org.jfree.data.general(com.mbeddr.formal.base.operatorspanel.rt/)" />
     <import index="8en7" ref="4bf9a860-39c9-4cb2-8004-157a961bf42c/java:org.jfree.data.xy(com.mbeddr.formal.base.operatorspanel.rt/)" />
     <import index="teca" ref="4bf9a860-39c9-4cb2-8004-157a961bf42c/java:org.jfree.chart.renderer.xy(com.mbeddr.formal.base.operatorspanel.rt/)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="6m3u" ref="r:67761219-191d-44af-aaf0-3da2d685817e(com.mbeddr.formal.base.operatorspanel.behavior)" implicit="true" />
   </imports>
@@ -607,7 +608,7 @@
           <property role="VOm3f" value="false" />
         </node>
         <node concept="PMmxH" id="4xJapKM67gV" role="3EZMnx">
-          <ref role="PMmxG" to="xnej:4xJapKM66o$" resolve="iconAndNameCell" />
+          <ref role="PMmxG" to="1ks0:4xJapKM66o$" resolve="iconAndNameCell" />
         </node>
         <node concept="l2Vlx" id="2mjHtwTQKh5" role="2iSdaV" />
       </node>

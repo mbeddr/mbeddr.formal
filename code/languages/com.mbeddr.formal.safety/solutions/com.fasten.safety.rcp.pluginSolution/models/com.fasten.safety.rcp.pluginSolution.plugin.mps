@@ -32,6 +32,9 @@
     <import index="uiqf" ref="r:284d7186-e902-4338-a3e0-8017019deafe(com.mbeddr.formal.req.scenarios.structure)" />
     <import index="6jj4" ref="r:77d7f4e3-953a-49ab-a2c5-934fc706bf67(com.fasten.base.msc.structure)" />
     <import index="u2ih" ref="r:ab00bc1f-8fc9-4bdf-9a87-1e2713aafade(com.fasten.req.odd.structure)" />
+    <import index="vdvw" ref="r:0dab1cea-0da9-4395-bdbd-beac207923df(com.mbeddr.formal.safety.argument.runtime.structure)" />
+    <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
+    <import index="3xw7" ref="r:03075676-dfa1-4f4e-aef4-a178c9f0fb17(com.mbeddr.formal.safety.argument.spi.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -1064,6 +1067,29 @@
               </node>
             </node>
           </node>
+          <node concept="tC5Ba" id="4lJSf3LhyGH" role="ftvYc">
+            <property role="TrG5h" value="SystemModels" />
+            <property role="1XlLyE" value="true" />
+            <property role="2f7twF" value="System Models" />
+            <property role="2pbE17" value="S" />
+            <node concept="ftmFs" id="4lJSf3LhyGI" role="ftER_">
+              <node concept="tCFHf" id="4lJSf3LhyGJ" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="4lJSf3LhyGK" role="2J__8u">
+                  <property role="Xl_RC" value="System Model (PlantUML)" />
+                </node>
+                <node concept="35c_gC" id="4lJSf3LhyGL" role="2J__8u">
+                  <ref role="35c_gD" to="udwj:1I7wo92Vbhy" resolve="PlantUmlRoot" />
+                </node>
+                <node concept="37shsh" id="4lJSf3LhyGM" role="2J__8u">
+                  <node concept="1dCxOk" id="4lJSf3LhTgX" role="37shsm">
+                    <property role="1XweGW" value="114acb95-50b2-4e9b-81c6-e0c665740eae" />
+                    <property role="1XxBO9" value="fasten.symo.plantuml" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
       <node concept="tC5Ba" id="7A06dcUGeRu" role="ftvYc">
@@ -1395,6 +1421,44 @@
                   <node concept="1dCxOk" id="7A06dcUJ04F" role="37shsm">
                     <property role="1XweGW" value="7466bc49-e775-4df7-a9f3-e383173b2eee" />
                     <property role="1XxBO9" value="fasten.safety.gsn.ext" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="tC5Ba" id="75npNYZG39B" role="ftvYc">
+            <property role="TrG5h" value="Runtime" />
+            <property role="1XlLyE" value="true" />
+            <property role="2f7twF" value="Runtime Linking" />
+            <property role="2pbE17" value="R" />
+            <node concept="ftmFs" id="75npNYZG39C" role="ftER_">
+              <node concept="tCFHf" id="75npNYZG39D" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="75npNYZG39E" role="2J__8u">
+                  <property role="Xl_RC" value="SPIs Catalogue" />
+                </node>
+                <node concept="35c_gC" id="75npNYZG39F" role="2J__8u">
+                  <ref role="35c_gD" to="3xw7:2X_iJQix75f" resolve="SPIContainer" />
+                </node>
+                <node concept="37shsh" id="75npNYZG39G" role="2J__8u">
+                  <node concept="1dCxOk" id="75npNYZGk3B" role="37shsm">
+                    <property role="1XweGW" value="16e7e722-0522-46f7-b3be-41f15da742ed" />
+                    <property role="1XxBO9" value="fasten.safety.gsn.runtime" />
+                  </node>
+                </node>
+              </node>
+              <node concept="tCFHf" id="75npNYZG39I" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="75npNYZG39J" role="2J__8u">
+                  <property role="Xl_RC" value="Runtime Data Linking" />
+                </node>
+                <node concept="35c_gC" id="75npNYZG39K" role="2J__8u">
+                  <ref role="35c_gD" to="vdvw:56pBK14z35C" resolve="RuntimeDataRoot" />
+                </node>
+                <node concept="37shsh" id="75npNYZG39L" role="2J__8u">
+                  <node concept="1dCxOk" id="75npNYZGk8l" role="37shsm">
+                    <property role="1XweGW" value="16e7e722-0522-46f7-b3be-41f15da742ed" />
+                    <property role="1XxBO9" value="fasten.safety.gsn.runtime" />
                   </node>
                 </node>
               </node>
