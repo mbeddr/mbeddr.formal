@@ -18,6 +18,7 @@
         <child id="1433630071281334407" name="explanation" index="1hVZTN" />
       </concept>
       <concept id="4312077340877652053" name="com.fasten.req.ontology.structure.Ontology" flags="ng" index="3SOpcF">
+        <child id="5803911524651728223" name="description" index="2I8HYo" />
         <child id="4312077340877652119" name="concepts" index="3SOpfD" />
       </concept>
     </language>
@@ -427,7 +428,7 @@
       <ref role="3SOpc_" node="6sXzM9s8hRl" resolve="Drivable area surface" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTH" role="3SOpfD">
-      <property role="TrG5h" value="Drivable area induced road surface conditions" />
+      <property role="TrG5h" value="Drivable area surface conditions" />
       <ref role="3SOpc_" node="6sXzM9s8hRl" resolve="Drivable area surface" />
       <node concept="19SGf9" id="6sXzM9s8hU2" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hU3" role="19SJt6">
@@ -437,15 +438,15 @@
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTI" role="3SOpfD">
       <property role="TrG5h" value="Loose drivable area surface" />
-      <ref role="3SOpc_" node="6sXzM9s8hRl" resolve="Drivable area surface" />
+      <ref role="3SOpc_" node="6sXzM9s8hTC" resolve="Drivable area surface type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTK" role="3SOpfD">
       <property role="TrG5h" value="Segmented drivable area surface" />
-      <ref role="3SOpc_" node="6sXzM9s8hRl" resolve="Drivable area surface" />
+      <ref role="3SOpc_" node="6sXzM9s8hTC" resolve="Drivable area surface type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTM" role="3SOpfD">
       <property role="TrG5h" value="Uniform drivable area surface" />
-      <ref role="3SOpc_" node="6sXzM9s8hRl" resolve="Drivable area surface" />
+      <ref role="3SOpc_" node="6sXzM9s8hTC" resolve="Drivable area surface type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTO" role="3SOpfD">
       <property role="TrG5h" value="Icy" />
@@ -483,6 +484,22 @@
           <property role="19SUeA" value="NOTE 1 For more information on roundabouts, see&#10;the Design manual for roads and bridges: Road layout&#10;design – CD 116: Geometric design of roundabouts [10]. &#10;NOTE 2 Junctions are areas on the map where two or&#10;more roads meet. Roundabouts are a special type of&#10;intersection." />
         </node>
       </node>
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i0_" role="3SOpfD">
+      <property role="TrG5h" value="Cracks" />
+      <ref role="3SOpc_" node="6sXzM9s8hTF" resolve="Drivable area surface features" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i0C" role="3SOpfD">
+      <property role="TrG5h" value="Potholes" />
+      <ref role="3SOpc_" node="6sXzM9s8hTF" resolve="Drivable area surface features" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i0F" role="3SOpfD">
+      <property role="TrG5h" value="Ruts" />
+      <ref role="3SOpc_" node="6sXzM9s8hTF" resolve="Drivable area surface features" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i0I" role="3SOpfD">
+      <property role="TrG5h" value="Swells" />
+      <ref role="3SOpc_" node="6sXzM9s8hTF" resolve="Drivable area surface features" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hU9" role="3SOpfD">
       <property role="TrG5h" value="Intersection" />
@@ -893,6 +910,11 @@
     <node concept="2IzUYn" id="6sXzM9s8hTJ" role="3SOpfD" />
     <node concept="2IzUYn" id="6sXzM9s8hTG" role="3SOpfD" />
     <node concept="2IzUYn" id="6sXzM9s8hTE" role="3SOpfD" />
+    <node concept="19SGf9" id="6sXzM9s8hZR" role="2I8HYo">
+      <node concept="19SUe$" id="6sXzM9s8hZS" role="19SJt6">
+        <property role="19SUeA" value="The ODD taxonomy specified in PAS 1883:2020 Operational Design Domain (ODD) taxonomy for an automated driving system (ADS) – Specification.  " />
+      </node>
+    </node>
   </node>
 </model>
 
