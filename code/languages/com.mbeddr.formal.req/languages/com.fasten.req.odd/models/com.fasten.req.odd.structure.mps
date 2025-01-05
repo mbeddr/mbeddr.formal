@@ -515,5 +515,17 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="opo3atlsiK">
+    <property role="EcuMT" value="439488209149609136" />
+    <property role="TrG5h" value="OntologyRelationTargetDotTarget" />
+    <property role="3GE5qa" value="odd_sentence" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
+    <node concept="1TJgyj" id="opo3atlsiL" role="1TKVEi">
+      <property role="IQ2ns" value="439488209149609137" />
+      <property role="20kJfa" value="concept" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="6wa3:3Jn$RV31w1o" resolve="OntologyConcept" />
+    </node>
+  </node>
 </model>
 

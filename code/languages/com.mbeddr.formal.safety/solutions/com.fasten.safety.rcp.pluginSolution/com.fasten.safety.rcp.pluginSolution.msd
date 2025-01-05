@@ -30,6 +30,7 @@
     <dependency reexport="false">65ed2ac6-4499-4751-951e-3819684a4b8d(com.fasten.req.ontology)</dependency>
     <dependency reexport="false">3460ac43-6f59-4f61-b134-9fa2f799c2d3(com.mbeddr.formal.req.scenarios)</dependency>
     <dependency reexport="false">81f6a079-965e-4523-87c3-8e6194f66585(com.fasten.base.msc)</dependency>
+    <dependency reexport="false">f52452b6-7f99-441b-98f9-a98c52b92236(com.fasten.req.odd)</dependency>
     <dependency reexport="false">6f31bc85-cbcc-4dcf-ada4-35da43e6832c(com.symo.plantuml)</dependency>
     <dependency reexport="false">1118d03f-f774-4a18-9e75-2357f8563d46(com.mbeddr.formal.safety.argument.spi)</dependency>
     <dependency reexport="false">546ac349-3106-438d-b92b-7d2ebfa2ade8(com.mbeddr.formal.safety.argument.runtime)</dependency>
@@ -63,6 +64,7 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)" version="0" />
     <module reference="81f6a079-965e-4523-87c3-8e6194f66585(com.fasten.base.msc)" version="0" />
+    <module reference="f52452b6-7f99-441b-98f9-a98c52b92236(com.fasten.req.odd)" version="1" />
     <module reference="65ed2ac6-4499-4751-951e-3819684a4b8d(com.fasten.req.ontology)" version="0" />
     <module reference="b43c548b-f75f-46e2-ad24-de9edd93e95e(com.fasten.safety.fmea)" version="0" />
     <module reference="ab274f70-5238-4883-adc7-02df7a757829(com.fasten.safety.ft)" version="0" />

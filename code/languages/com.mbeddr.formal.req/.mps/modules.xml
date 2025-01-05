@@ -20,6 +20,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.req.base.pluginSolution/com.mbeddr.formal.req.base.pluginSolution.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.req.sandbox/com.mbeddr.formal.req.sandbox.msd" folder="lang" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution/com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution.msd" folder="lang" />
+      <modulePath path="$PROJECT_DIR$/tests/test.com.fasten.req.odd/test.com.fasten.req.odd.msd" folder="lang.odd" />
       <modulePath path="$PROJECT_DIR$/tests/test.com.mbeddr.formal.req.tl_patterns/test.com.mbeddr.formal.req.tl_patterns.msd" folder="test" />
     </projectModules>
   </component>

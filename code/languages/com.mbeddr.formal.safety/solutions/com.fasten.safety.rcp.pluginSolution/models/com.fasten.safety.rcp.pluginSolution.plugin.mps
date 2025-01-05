@@ -31,9 +31,10 @@
     <import index="6wa3" ref="r:fe70b1ce-4411-47cc-b7d1-2d3fab0737d6(com.fasten.req.ontology.structure)" />
     <import index="uiqf" ref="r:284d7186-e902-4338-a3e0-8017019deafe(com.mbeddr.formal.req.scenarios.structure)" />
     <import index="6jj4" ref="r:77d7f4e3-953a-49ab-a2c5-934fc706bf67(com.fasten.base.msc.structure)" />
+    <import index="u2ih" ref="r:ab00bc1f-8fc9-4bdf-9a87-1e2713aafade(com.fasten.req.odd.structure)" />
+    <import index="vdvw" ref="r:0dab1cea-0da9-4395-bdbd-beac207923df(com.mbeddr.formal.safety.argument.runtime.structure)" />
     <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
     <import index="3xw7" ref="r:03075676-dfa1-4f4e-aef4-a178c9f0fb17(com.mbeddr.formal.safety.argument.spi.structure)" />
-    <import index="vdvw" ref="r:0dab1cea-0da9-4395-bdbd-beac207923df(com.mbeddr.formal.safety.argument.runtime.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -996,6 +997,29 @@
                     </node>
                     <node concept="37shsh" id="26E6nZcBGkc" role="2J__8u">
                       <node concept="1dCxOk" id="26E6nZcBGkd" role="37shsm">
+                        <property role="1XweGW" value="b0ef168f-6f92-4bd0-82f3-cf0521463683" />
+                        <property role="1XxBO9" value="fasten.requirements" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="tC5Ba" id="7G1xrtoyAAB" role="ftvYc">
+                <property role="TrG5h" value="Operational_Design_Domain" />
+                <property role="1XlLyE" value="true" />
+                <property role="2f7twF" value="Operational Design Domain" />
+                <property role="2pbE17" value="O" />
+                <node concept="ftmFs" id="7G1xrtoyAAE" role="ftER_">
+                  <node concept="tCFHf" id="7G1xrtoyAAG" role="ftvYc">
+                    <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                    <node concept="Xl_RD" id="7G1xrtoyIPb" role="2J__8u">
+                      <property role="Xl_RC" value="ODD Spec" />
+                    </node>
+                    <node concept="35c_gC" id="7G1xrtoyIPs" role="2J__8u">
+                      <ref role="35c_gD" to="u2ih:3Jn$RV31nMq" resolve="ODD" />
+                    </node>
+                    <node concept="37shsh" id="7G1xrtoyJsz" role="2J__8u">
+                      <node concept="1dCxOk" id="7G1xrtoyJs$" role="37shsm">
                         <property role="1XweGW" value="b0ef168f-6f92-4bd0-82f3-cf0521463683" />
                         <property role="1XxBO9" value="fasten.requirements" />
                       </node>

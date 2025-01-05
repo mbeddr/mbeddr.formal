@@ -28,6 +28,7 @@
     <language slang="l:e4dd8dcd-fbfe-4e69-bcdd-b4371f25f476:com.fasten.base.git" version="0" />
     <language slang="l:81f6a079-965e-4523-87c3-8e6194f66585:com.fasten.base.msc" version="0" />
     <language slang="l:6d475058-7ea2-490d-87e7-0f7f46dccc66:com.fasten.process.review" version="0" />
+    <language slang="l:f52452b6-7f99-441b-98f9-a98c52b92236:com.fasten.req.odd" version="1" />
     <language slang="l:65ed2ac6-4499-4751-951e-3819684a4b8d:com.fasten.req.ontology" version="1" />
     <language slang="l:b43c548b-f75f-46e2-ad24-de9edd93e95e:com.fasten.safety.fmea" version="0" />
     <language slang="l:1110e3ef-a98e-444f-9748-1d61fe61c7f7:com.fasten.safety.fmea.arch" version="0" />

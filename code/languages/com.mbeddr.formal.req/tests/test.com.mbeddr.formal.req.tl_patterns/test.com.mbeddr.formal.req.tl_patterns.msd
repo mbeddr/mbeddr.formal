@@ -19,6 +19,7 @@
     <dependency reexport="false">5ff577d1-1817-495b-9d6c-ff7b52c68609(com.mbeddr.formal.req.tl_patterns)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:f52452b6-7f99-441b-98f9-a98c52b92236:com.fasten.req.odd" version="1" />
     <language slang="l:65ed2ac6-4499-4751-951e-3819684a4b8d:com.fasten.req.ontology" version="1" />
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:71797868-de95-425c-8470-36aa52c8ebc4:com.mbeddr.formal.base.arch" version="1" />
