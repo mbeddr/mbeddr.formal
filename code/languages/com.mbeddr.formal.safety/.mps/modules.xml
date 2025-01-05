@@ -68,7 +68,6 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hazop.sandbox/com.fasten.safety.hazop.sandbox.msd" folder="hara.hazop" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hiphops.sandbox/com.fasten.safety.hiphops.sandbox.msd" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.rcp.pluginSolution/com.fasten.safety.rcp.pluginSolution.msd" folder="rcp" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.modelquery.genplan/com.mbeddr.formal.safety.argument.modelquery.genplan.msd" folder="gsn._050_modelquery" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.process.sandbox/com.mbeddr.formal.safety.argument.process.sandbox.msd" folder="gsn._030_process" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.runtime.pluginSolution/com.mbeddr.formal.safety.argument.runtime.pluginSolution.msd" folder="gsn._060_runtime" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.runtime.sandbox/com.mbeddr.formal.safety.argument.runtime.sandbox.msd" folder="gsn._060_runtime" />
