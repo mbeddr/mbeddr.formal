@@ -63,6 +63,21 @@
           <ref role="MFvBS" node="6sXzM9s8hR9" resolve="Drivable area geometry" />
         </node>
       </node>
+      <node concept="3fWYEE" id="4L2VcqZX1w9" role="3fY04B">
+        <node concept="MFvB7" id="4L2VcqZX1wb" role="3fWY_o">
+          <ref role="MFvBS" node="6sXzM9s8hRc" resolve="Drivable area lane specification" />
+        </node>
+      </node>
+      <node concept="3fWYEE" id="4L2VcqZX1wd" role="3fY04B">
+        <node concept="MFvB7" id="4L2VcqZX1wf" role="3fWY_o">
+          <ref role="MFvBS" node="6sXzM9s8hRf" resolve="Drivable area signs" />
+        </node>
+      </node>
+      <node concept="3fWYEE" id="4L2VcqZX1wh" role="3fY04B">
+        <node concept="MFvB7" id="4L2VcqZX1wj" role="3fWY_o">
+          <ref role="MFvBS" node="6sXzM9s8hRi" resolve="Drivable area edge" />
+        </node>
+      </node>
       <node concept="3fWYEE" id="6sXzM9s8i0h" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
         <node concept="3fZHMl" id="6sXzM9s8i0l" role="3fWwZA">
