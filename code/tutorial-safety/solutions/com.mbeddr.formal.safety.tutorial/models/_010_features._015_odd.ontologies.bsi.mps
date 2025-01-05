@@ -47,7 +47,7 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQf" role="3SOpfD">
-      <property role="TrG5h" value="Drivable area" />
+      <property role="TrG5h" value="Drivable Area" />
       <ref role="3SOpc_" node="6sXzM9s8hQa" resolve="Scenary" />
       <node concept="19SGf9" id="6sXzM9s8hVD" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hVE" role="19SJt6">
@@ -60,15 +60,15 @@
       <ref role="3SOpc_" node="6sXzM9s8hQa" resolve="Scenary" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQl" role="3SOpfD">
-      <property role="TrG5h" value="Special structures" />
+      <property role="TrG5h" value="Special Structures" />
       <ref role="3SOpc_" node="6sXzM9s8hQa" resolve="Scenary" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQo" role="3SOpfD">
-      <property role="TrG5h" value="Fixed road structures" />
+      <property role="TrG5h" value="Fixed Road Structures" />
       <ref role="3SOpc_" node="6sXzM9s8hQa" resolve="Scenary" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQr" role="3SOpfD">
-      <property role="TrG5h" value="Temporary road structures" />
+      <property role="TrG5h" value="Temporary Road Structures" />
       <ref role="3SOpc_" node="6sXzM9s8hQa" resolve="Scenary" />
       <node concept="19SGf9" id="6sXzM9s8hVt" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hVu" role="19SJt6">
@@ -77,7 +77,7 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQu" role="3SOpfD">
-      <property role="TrG5h" value="Environmental conditions" />
+      <property role="TrG5h" value="Environmental Conditions" />
       <node concept="19SGf9" id="6sXzM9s8hVx" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hVy" role="19SJt6">
           <property role="19SUeA" value="Many of the environmental elements that impact the&#10;ADS will demonstrate high degrees of variability over&#10;time and distance, therefore traditional meteorological&#10;reports of weather parameters require some degree of&#10;interpretation to be truly applicable to the ADS. The&#10;following environmental attributes represent many of&#10;those with the highest expected impact. " />
@@ -86,7 +86,7 @@
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQx" role="3SOpfD">
       <property role="TrG5h" value="Weather" />
-      <ref role="3SOpc_" node="6sXzM9s8hQu" resolve="Environmental conditions" />
+      <ref role="3SOpc_" node="6sXzM9s8hQu" resolve="Environmental Conditions" />
       <node concept="19SGf9" id="6sXzM9s8hWk" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hWl" role="19SJt6">
           <property role="19SUeA" value="While individual weather attributes (e.g. wind, rainfall,&#10;snowfall) are mentioned in this taxonomy, ADS&#10;developers should also take into account the effect of&#10;a combination of attributes (e.g. high rainfall rate and&#10;strong breeze). &#10;NOTE 8 Other weather attributes, such as temperature,&#10;humidity, air pressure, surface temperature, hail,&#10;freezing rain, or solar flares may be taken into account&#10;as part of the ODD definition." />
@@ -95,7 +95,7 @@
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQE" role="3SOpfD">
       <property role="TrG5h" value="Connectivity" />
-      <ref role="3SOpc_" node="6sXzM9s8hQu" resolve="Environmental conditions" />
+      <ref role="3SOpc_" node="6sXzM9s8hQu" resolve="Environmental Conditions" />
       <node concept="19SGf9" id="6sXzM9s8hZh" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hZi" role="19SJt6">
           <property role="19SUeA" value="Connectivity indicates the ability of a vehicle to receive&#10;data from and/or transmit data to an external system&#10;to determine positioning or to communicate with other&#10;vehicles and the wider infrastructure.&#10;Connectivity is increasingly viewed as a key enabler&#10;for autonomy. Certain ADS implementations may use&#10;connectivity from off-board sensors to communicate the&#10;value of certain ODD attributes to the ADS. For example,&#10;some ADS, in order to perform their DDT, are dependent&#10;on positional signals or control command from a&#10;dispatcher via I2V communications. For safe operation of&#10;such systems, data quality and latency are essential.&#10;If connectivity is required for the ADS to perform its&#10;DDT safely, connectivity attributes shall be classified as&#10;communication and positioning attributes. " />
@@ -103,15 +103,15 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQH" role="3SOpfD">
-      <property role="TrG5h" value="Dynamic elements" />
+      <property role="TrG5h" value="Dynamic Elements" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQK" role="3SOpfD">
       <property role="TrG5h" value="Traffic" />
-      <ref role="3SOpc_" node="6sXzM9s8hQH" resolve="Dynamic elements" />
+      <ref role="3SOpc_" node="6sXzM9s8hQH" resolve="Dynamic Elements" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQN" role="3SOpfD">
-      <property role="TrG5h" value="Subject vehicle" />
-      <ref role="3SOpc_" node="6sXzM9s8hQH" resolve="Dynamic elements" />
+      <property role="TrG5h" value="Subject Vehicle" />
+      <ref role="3SOpc_" node="6sXzM9s8hQH" resolve="Dynamic Elements" />
       <node concept="19SGf9" id="6sXzM9s8hXx" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hXy" role="19SJt6">
           <property role="19SUeA" value="NOTE 3 Stakeholders may include additional behaviour&#10;capability of the subject vehicle (e.g. ability to change&#10;lanes, turn right, turn left) as part of their ODD&#10;definition. This might be useful for defining reduced&#10;or degrade mode capability due to the influence of&#10;external factors (e.g. environmental, traffic) or internal&#10;system fault. " />
@@ -119,15 +119,15 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQQ" role="3SOpfD">
-      <property role="TrG5h" value="Geo-fanced areas" />
+      <property role="TrG5h" value="Geo-fanced Areas" />
       <ref role="3SOpc_" node="6sXzM9s8hQc" resolve="Zones" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQT" role="3SOpfD">
-      <property role="TrG5h" value="Traffic management zones" />
+      <property role="TrG5h" value="Traffic Management zones" />
       <ref role="3SOpc_" node="6sXzM9s8hQc" resolve="Zones" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQW" role="3SOpfD">
-      <property role="TrG5h" value="School zones" />
+      <property role="TrG5h" value="School Zones" />
       <ref role="3SOpc_" node="6sXzM9s8hQc" resolve="Zones" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hQZ" role="3SOpfD">
@@ -135,28 +135,28 @@
       <ref role="3SOpc_" node="6sXzM9s8hQc" resolve="Zones" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hR2" role="3SOpfD">
-      <property role="TrG5h" value="Interference zones" />
+      <property role="TrG5h" value="Interference Zones" />
       <ref role="3SOpc_" node="6sXzM9s8hQc" resolve="Zones" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hR6" role="3SOpfD">
-      <property role="TrG5h" value="Drivable area type" />
-      <ref role="3SOpc_" node="6sXzM9s8hQf" resolve="Drivable area" />
+      <property role="TrG5h" value="Drivable Area Type" />
+      <ref role="3SOpc_" node="6sXzM9s8hQf" resolve="Drivable Area" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hR9" role="3SOpfD">
-      <property role="TrG5h" value="Drivable area geometry" />
-      <ref role="3SOpc_" node="6sXzM9s8hQf" resolve="Drivable area" />
+      <property role="TrG5h" value="Drivable Area Geometry" />
+      <ref role="3SOpc_" node="6sXzM9s8hQf" resolve="Drivable Area" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRc" role="3SOpfD">
-      <property role="TrG5h" value="Drivable area lane specification" />
-      <ref role="3SOpc_" node="6sXzM9s8hQf" resolve="Drivable area" />
+      <property role="TrG5h" value="Drivable Area Lane Specification" />
+      <ref role="3SOpc_" node="6sXzM9s8hQf" resolve="Drivable Area" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRf" role="3SOpfD">
-      <property role="TrG5h" value="Drivable area signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hQf" resolve="Drivable area" />
+      <property role="TrG5h" value="Drivable Area Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hQf" resolve="Drivable Area" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRi" role="3SOpfD">
-      <property role="TrG5h" value="Drivable area edge" />
-      <ref role="3SOpc_" node="6sXzM9s8hQf" resolve="Drivable area" />
+      <property role="TrG5h" value="Drivable Area Edge" />
+      <ref role="3SOpc_" node="6sXzM9s8hQf" resolve="Drivable Area" />
       <node concept="19SGf9" id="6sXzM9s8hWd" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hWe" role="19SJt6">
           <property role="19SUeA" value="NOTE Edge is the outermost edge of the roadway in&#10;which a vehicle travels. " />
@@ -164,12 +164,12 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRl" role="3SOpfD">
-      <property role="TrG5h" value="Drivable area surface" />
-      <ref role="3SOpc_" node="6sXzM9s8hQf" resolve="Drivable area" />
+      <property role="TrG5h" value="Drivable Area Surface" />
+      <ref role="3SOpc_" node="6sXzM9s8hQf" resolve="Drivable Area" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRr" role="3SOpfD">
       <property role="TrG5h" value="Motorways" />
-      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable area type" />
+      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable Area Type" />
       <node concept="19SGf9" id="6sXzM9s8hVH" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hVI" role="19SJt6">
           <property role="19SUeA" value="NOTE 1 Motorways are high-traffic roads where&#10;non-motorized vehicles and pedestrians are&#10;prohibited. " />
@@ -177,8 +177,8 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRu" role="3SOpfD">
-      <property role="TrG5h" value="Radial roads" />
-      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable area type" />
+      <property role="TrG5h" value="Radial Roads" />
+      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable Area Type" />
       <node concept="19SGf9" id="6sXzM9s8hVL" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hVM" role="19SJt6">
           <property role="19SUeA" value="NOTE 2 Radial roads (A-roads) are high density&#10;traffic roads which connect motorways to&#10;distributor roads or urban centres. " />
@@ -186,8 +186,8 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRx" role="3SOpfD">
-      <property role="TrG5h" value="Distributor roads" />
-      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable area type" />
+      <property role="TrG5h" value="Distributor Roads" />
+      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable Area Type" />
       <node concept="19SGf9" id="6sXzM9s8hVP" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hVQ" role="19SJt6">
           <property role="19SUeA" value="NOTE 3 Distributor roads (B-roads) connect A-roads&#10;with minor or local roads and generally have low to&#10;moderate capacity. " />
@@ -195,8 +195,8 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hR$" role="3SOpfD">
-      <property role="TrG5h" value="Minor roads" />
-      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable area type" />
+      <property role="TrG5h" value="Minor Roads" />
+      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable Area Type" />
       <node concept="19SGf9" id="6sXzM9s8hVT" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hVU" role="19SJt6">
           <property role="19SUeA" value="NOTE 4 Minor roads or local roads provide access to&#10;residential areas and other local developments. " />
@@ -204,16 +204,16 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRB" role="3SOpfD">
-      <property role="TrG5h" value="Slip roads" />
-      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable area type" />
+      <property role="TrG5h" value="Slip Roads" />
+      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable Area Type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRE" role="3SOpfD">
       <property role="TrG5h" value="Parking" />
-      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable area type" />
+      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable Area Type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRH" role="3SOpfD">
-      <property role="TrG5h" value="Shared space" />
-      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable area type" />
+      <property role="TrG5h" value="Shared Space" />
+      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable Area Type" />
       <node concept="19SGf9" id="6sXzM9s8hVX" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hVY" role="19SJt6">
           <property role="19SUeA" value="NOTE 5 A shared space may be shared between subject&#10;vehicle and other actors, for example, pedestrians or&#10;cyclists. " />
@@ -225,12 +225,12 @@
       <ref role="3SOpc_" node="6sXzM9s8hRr" resolve="Motorways" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRQ" role="3SOpfD">
-      <property role="TrG5h" value="Speed limit" />
-      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable area type" />
+      <property role="TrG5h" value="Speed Limit" />
+      <ref role="3SOpc_" node="6sXzM9s8hR6" resolve="Drivable Area Type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRT" role="3SOpfD">
-      <property role="TrG5h" value="Horizontal plane" />
-      <ref role="3SOpc_" node="6sXzM9s8hR9" resolve="Drivable area geometry" />
+      <property role="TrG5h" value="Horizontal Plane" />
+      <ref role="3SOpc_" node="6sXzM9s8hR9" resolve="Drivable Area Geometry" />
       <node concept="19SGf9" id="6sXzM9s8hW1" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hW2" role="19SJt6">
           <property role="19SUeA" value="NOTE 1 Horizontal alignment can be seen when the&#10;road layout is projected on a horizontal plane. " />
@@ -238,12 +238,12 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRW" role="3SOpfD">
-      <property role="TrG5h" value="Transverse plane" />
-      <ref role="3SOpc_" node="6sXzM9s8hR9" resolve="Drivable area geometry" />
+      <property role="TrG5h" value="Transverse Plane" />
+      <ref role="3SOpc_" node="6sXzM9s8hR9" resolve="Drivable Area Geometry" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hRZ" role="3SOpfD">
-      <property role="TrG5h" value="Longitudinal plane" />
-      <ref role="3SOpc_" node="6sXzM9s8hR9" resolve="Drivable area geometry" />
+      <property role="TrG5h" value="Longitudinal Plane" />
+      <ref role="3SOpc_" node="6sXzM9s8hR9" resolve="Drivable Area Geometry" />
       <node concept="19SGf9" id="6sXzM9s8hW9" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hWa" role="19SJt6">
           <property role="19SUeA" value="NOTE 3 Longitudinal alignment can be seen in a vertical&#10;configuration of the drivable area in a longitudinal&#10;section. " />
@@ -251,36 +251,36 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hS2" role="3SOpfD">
-      <property role="TrG5h" value="Straight lines" />
-      <ref role="3SOpc_" node="6sXzM9s8hRT" resolve="Horizontal plane" />
+      <property role="TrG5h" value="Straight Lines" />
+      <ref role="3SOpc_" node="6sXzM9s8hRT" resolve="Horizontal Plane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hS5" role="3SOpfD">
       <property role="TrG5h" value="Curves" />
-      <ref role="3SOpc_" node="6sXzM9s8hRT" resolve="Horizontal plane" />
+      <ref role="3SOpc_" node="6sXzM9s8hRT" resolve="Horizontal Plane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hS8" role="3SOpfD">
-      <property role="TrG5h" value="Radius of the curvature" />
+      <property role="TrG5h" value="Radius of the Curvature" />
       <ref role="3SOpc_" node="6sXzM9s8hS5" resolve="Curves" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSb" role="3SOpfD">
       <property role="TrG5h" value="Divided" />
-      <ref role="3SOpc_" node="6sXzM9s8hRW" resolve="Transverse plane" />
+      <ref role="3SOpc_" node="6sXzM9s8hRW" resolve="Transverse Plane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSe" role="3SOpfD">
       <property role="TrG5h" value="Undevided" />
-      <ref role="3SOpc_" node="6sXzM9s8hRW" resolve="Transverse plane" />
+      <ref role="3SOpc_" node="6sXzM9s8hRW" resolve="Transverse Plane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSh" role="3SOpfD">
       <property role="TrG5h" value="Pavements" />
-      <ref role="3SOpc_" node="6sXzM9s8hRW" resolve="Transverse plane" />
+      <ref role="3SOpc_" node="6sXzM9s8hRW" resolve="Transverse Plane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSk" role="3SOpfD">
-      <property role="TrG5h" value="Barriers on edges" />
-      <ref role="3SOpc_" node="6sXzM9s8hRW" resolve="Transverse plane" />
+      <property role="TrG5h" value="Barriers on Edges" />
+      <ref role="3SOpc_" node="6sXzM9s8hRW" resolve="Transverse Plane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSn" role="3SOpfD">
-      <property role="TrG5h" value="Types of lanes together" />
-      <ref role="3SOpc_" node="6sXzM9s8hRW" resolve="Transverse plane" />
+      <property role="TrG5h" value="Types of Lanes Together" />
+      <ref role="3SOpc_" node="6sXzM9s8hRW" resolve="Transverse Plane" />
       <node concept="19SGf9" id="6sXzM9s8hW5" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hW6" role="19SJt6">
           <property role="19SUeA" value="NOTE 2 Cross section plane is the drivable area&#10;configuration in the transverse profile. The cross section&#10;shown in Figure 2 provides information about the&#10;features on or adjacent to the road, e.g. pavement or&#10;divided drivable area. Transverse plane attributes may&#10;include banking and camber. " />
@@ -289,147 +289,147 @@
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSq" role="3SOpfD">
       <property role="TrG5h" value="Up-slope" />
-      <ref role="3SOpc_" node="6sXzM9s8hRZ" resolve="Longitudinal plane" />
+      <ref role="3SOpc_" node="6sXzM9s8hRZ" resolve="Longitudinal Plane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSt" role="3SOpfD">
       <property role="TrG5h" value="Down-slope" />
-      <ref role="3SOpc_" node="6sXzM9s8hRZ" resolve="Longitudinal plane" />
+      <ref role="3SOpc_" node="6sXzM9s8hRZ" resolve="Longitudinal Plane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSw" role="3SOpfD">
-      <property role="TrG5h" value="Level plane" />
-      <ref role="3SOpc_" node="6sXzM9s8hRZ" resolve="Longitudinal plane" />
+      <property role="TrG5h" value="Level Plane" />
+      <ref role="3SOpc_" node="6sXzM9s8hRZ" resolve="Longitudinal Plane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSz" role="3SOpfD">
-      <property role="TrG5h" value="Lane dimensions" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable area lane specification" />
+      <property role="TrG5h" value="Lane Dimensions" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSA" role="3SOpfD">
-      <property role="TrG5h" value="Lane marking" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable area lane specification" />
+      <property role="TrG5h" value="Lane Marking" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSD" role="3SOpfD">
-      <property role="TrG5h" value="Lane type" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable area lane specification" />
+      <property role="TrG5h" value="Lane Type" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSG" role="3SOpfD">
-      <property role="TrG5h" value="Number of lanes" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable area lane specification" />
+      <property role="TrG5h" value="Number of Lanes" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSJ" role="3SOpfD">
-      <property role="TrG5h" value="Directions of travel" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable area lane specification" />
+      <property role="TrG5h" value="Directions of Travel" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSM" role="3SOpfD">
-      <property role="TrG5h" value="Bus lane" />
-      <ref role="3SOpc_" node="6sXzM9s8hSD" resolve="Lane type" />
+      <property role="TrG5h" value="Bus Lane" />
+      <ref role="3SOpc_" node="6sXzM9s8hSD" resolve="Lane Type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSP" role="3SOpfD">
-      <property role="TrG5h" value="Traffic lane" />
-      <ref role="3SOpc_" node="6sXzM9s8hSD" resolve="Lane type" />
+      <property role="TrG5h" value="Traffic Lane" />
+      <ref role="3SOpc_" node="6sXzM9s8hSD" resolve="Lane Type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSS" role="3SOpfD">
-      <property role="TrG5h" value="Cycle lane" />
-      <ref role="3SOpc_" node="6sXzM9s8hSD" resolve="Lane type" />
+      <property role="TrG5h" value="Cycle Lane" />
+      <ref role="3SOpc_" node="6sXzM9s8hSD" resolve="Lane Type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSV" role="3SOpfD">
-      <property role="TrG5h" value="Tram lane" />
-      <ref role="3SOpc_" node="6sXzM9s8hSD" resolve="Lane type" />
+      <property role="TrG5h" value="Tram Lane" />
+      <ref role="3SOpc_" node="6sXzM9s8hSD" resolve="Lane Type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSY" role="3SOpfD">
-      <property role="TrG5h" value="Emergency lane" />
-      <ref role="3SOpc_" node="6sXzM9s8hSD" resolve="Lane type" />
+      <property role="TrG5h" value="Emergency Lane" />
+      <ref role="3SOpc_" node="6sXzM9s8hSD" resolve="Lane Type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTa" role="3SOpfD">
-      <property role="TrG5h" value="Information signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hRf" resolve="Drivable area signs" />
+      <property role="TrG5h" value="Information Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hRf" resolve="Drivable Area Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTb" role="3SOpfD">
-      <property role="TrG5h" value="Regulatory signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hRf" resolve="Drivable area signs" />
+      <property role="TrG5h" value="Regulatory Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hRf" resolve="Drivable Area Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTc" role="3SOpfD">
-      <property role="TrG5h" value="Warning signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hRf" resolve="Drivable area signs" />
+      <property role="TrG5h" value="Warning Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hRf" resolve="Drivable Area Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hT1" role="3SOpfD">
-      <property role="TrG5h" value="Variable information signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hTa" resolve="Information signs" />
+      <property role="TrG5h" value="Variable Information Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hTa" resolve="Information Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hT4" role="3SOpfD">
-      <property role="TrG5h" value="Variable regulatory signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hTb" resolve="Regulatory signs" />
+      <property role="TrG5h" value="Variable Regulatory Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hTb" resolve="Regulatory Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hT7" role="3SOpfD">
-      <property role="TrG5h" value="Variable warning signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hTc" resolve="Warning signs" />
+      <property role="TrG5h" value="Variable Warning Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hTc" resolve="Warning Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTd" role="3SOpfD">
-      <property role="TrG5h" value="Uniform information signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hTa" resolve="Information signs" />
+      <property role="TrG5h" value="Uniform Information Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hTa" resolve="Information Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTe" role="3SOpfD">
-      <property role="TrG5h" value="Uniform regulatory signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hTb" resolve="Regulatory signs" />
+      <property role="TrG5h" value="Uniform Regulatory Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hTb" resolve="Regulatory Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTi" role="3SOpfD">
-      <property role="TrG5h" value="Uniform warning signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hTc" resolve="Warning signs" />
+      <property role="TrG5h" value="Uniform Warning Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hTc" resolve="Warning Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTf" role="3SOpfD">
-      <property role="TrG5h" value="Full-time warning signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hTc" resolve="Warning signs" />
+      <property role="TrG5h" value="Full-time Warning Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hTc" resolve="Warning Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTg" role="3SOpfD">
-      <property role="TrG5h" value="Full-time information signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hTa" resolve="Information signs" />
+      <property role="TrG5h" value="Full-time Information Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hTa" resolve="Information Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTh" role="3SOpfD">
-      <property role="TrG5h" value="Full-time regulatory signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hTb" resolve="Regulatory signs" />
+      <property role="TrG5h" value="Full-time Regulatory Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hTb" resolve="Regulatory Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTj" role="3SOpfD">
-      <property role="TrG5h" value="Temporary information signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hTa" resolve="Information signs" />
+      <property role="TrG5h" value="Temporary Information Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hTa" resolve="Information Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTk" role="3SOpfD">
-      <property role="TrG5h" value="Temporary regulatory signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hTb" resolve="Regulatory signs" />
+      <property role="TrG5h" value="Temporary Regulatory Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hTb" resolve="Regulatory Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTl" role="3SOpfD">
-      <property role="TrG5h" value="Temporary warning signs" />
-      <ref role="3SOpc_" node="6sXzM9s8hTc" resolve="Warning signs" />
+      <property role="TrG5h" value="Temporary Warning Signs" />
+      <ref role="3SOpc_" node="6sXzM9s8hTc" resolve="Warning Signs" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTr" role="3SOpfD">
-      <property role="TrG5h" value="Lane markers" />
-      <ref role="3SOpc_" node="6sXzM9s8hRi" resolve="Drivable area edge" />
+      <property role="TrG5h" value="Lane Markers" />
+      <ref role="3SOpc_" node="6sXzM9s8hRi" resolve="Drivable Area Edge" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTt" role="3SOpfD">
-      <property role="TrG5h" value="Paved shoulder " />
-      <ref role="3SOpc_" node="6sXzM9s8hRi" resolve="Drivable area edge" />
+      <property role="TrG5h" value="Paved Shoulder " />
+      <ref role="3SOpc_" node="6sXzM9s8hRi" resolve="Drivable Area Edge" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTv" role="3SOpfD">
-      <property role="TrG5h" value="Grass shoulder" />
-      <ref role="3SOpc_" node="6sXzM9s8hRi" resolve="Drivable area edge" />
+      <property role="TrG5h" value="Grass Shoulder" />
+      <ref role="3SOpc_" node="6sXzM9s8hRi" resolve="Drivable Area Edge" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTy" role="3SOpfD">
-      <property role="TrG5h" value="Temporary line markers" />
-      <ref role="3SOpc_" node="6sXzM9s8hRi" resolve="Drivable area edge" />
+      <property role="TrG5h" value="Temporary Line Markers" />
+      <ref role="3SOpc_" node="6sXzM9s8hRi" resolve="Drivable Area Edge" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hT_" role="3SOpfD">
-      <property role="TrG5h" value="None" />
-      <ref role="3SOpc_" node="6sXzM9s8hRi" resolve="Drivable area edge" />
+      <property role="TrG5h" value="No Edge" />
+      <ref role="3SOpc_" node="6sXzM9s8hRi" resolve="Drivable Area Edge" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTC" role="3SOpfD">
-      <property role="TrG5h" value="Drivable area surface type" />
-      <ref role="3SOpc_" node="6sXzM9s8hRl" resolve="Drivable area surface" />
+      <property role="TrG5h" value="Drivable Area Surface Type" />
+      <ref role="3SOpc_" node="6sXzM9s8hRl" resolve="Drivable Area Surface" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTF" role="3SOpfD">
-      <property role="TrG5h" value="Drivable area surface features" />
-      <ref role="3SOpc_" node="6sXzM9s8hRl" resolve="Drivable area surface" />
+      <property role="TrG5h" value="Drivable Area Surface Features" />
+      <ref role="3SOpc_" node="6sXzM9s8hRl" resolve="Drivable Area Surface" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTH" role="3SOpfD">
-      <property role="TrG5h" value="Drivable area surface conditions" />
-      <ref role="3SOpc_" node="6sXzM9s8hRl" resolve="Drivable area surface" />
+      <property role="TrG5h" value="Drivable Area Surface Conditions" />
+      <ref role="3SOpc_" node="6sXzM9s8hRl" resolve="Drivable Area Surface" />
       <node concept="19SGf9" id="6sXzM9s8hU2" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hU3" role="19SJt6">
           <property role="19SUeA" value="NOTE 1 Manoeuvrability and perception capability of&#10;the ADS might be affected by road and/or weather&#10;conditions. Moreover, road capacity might be reduced&#10;due to flooding or lane obstruction/closure caused by&#10;snow or wind-blown debris.&#10;NOTE 2 Flooded roads result when the amount of water&#10;arriving on the road is greater than the capacity of the&#10;drainage facilities that take it away. Standing water&#10;tends to occur if there is a depression in the road.&#10;NOTE 3 The presence of mirage can affect the&#10;perception sensors due to the reflectivity from the&#10;drivable area surface.&#10;NOTE 4 Surface contamination might include the&#10;presence of leaves, oil, mud or rocks. " />
@@ -437,44 +437,44 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTI" role="3SOpfD">
-      <property role="TrG5h" value="Loose drivable area surface" />
-      <ref role="3SOpc_" node="6sXzM9s8hTC" resolve="Drivable area surface type" />
+      <property role="TrG5h" value="Loose Drivable Area Surface" />
+      <ref role="3SOpc_" node="6sXzM9s8hTC" resolve="Drivable Area Surface Type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTK" role="3SOpfD">
-      <property role="TrG5h" value="Segmented drivable area surface" />
-      <ref role="3SOpc_" node="6sXzM9s8hTC" resolve="Drivable area surface type" />
+      <property role="TrG5h" value="Segmented Drivable Area Surface" />
+      <ref role="3SOpc_" node="6sXzM9s8hTC" resolve="Drivable Area Surface Type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTM" role="3SOpfD">
-      <property role="TrG5h" value="Uniform drivable area surface" />
-      <ref role="3SOpc_" node="6sXzM9s8hTC" resolve="Drivable area surface type" />
+      <property role="TrG5h" value="Uniform Drivable Area Surface" />
+      <ref role="3SOpc_" node="6sXzM9s8hTC" resolve="Drivable Area Surface Type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTO" role="3SOpfD">
       <property role="TrG5h" value="Icy" />
-      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable area surface conditions" />
+      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable Area Surface Conditions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTR" role="3SOpfD">
       <property role="TrG5h" value="Flooded roadways" />
-      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable area surface conditions" />
+      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable Area Surface Conditions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTT" role="3SOpfD">
       <property role="TrG5h" value="Mirage" />
-      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable area surface conditions" />
+      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable Area Surface Conditions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTV" role="3SOpfD">
-      <property role="TrG5h" value="Snow on drivable area" />
-      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable area surface conditions" />
+      <property role="TrG5h" value="Snow on Drivable Area" />
+      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable Area Surface Conditions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTX" role="3SOpfD">
-      <property role="TrG5h" value="Standing water" />
-      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable area surface conditions" />
+      <property role="TrG5h" value="Standing Water" />
+      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable Area Surface Conditions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hTZ" role="3SOpfD">
-      <property role="TrG5h" value="Wet road" />
-      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable area surface conditions" />
+      <property role="TrG5h" value="Wet Road" />
+      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable Area Surface Conditions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hU1" role="3SOpfD">
-      <property role="TrG5h" value="Surface contamination" />
-      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable area surface conditions" />
+      <property role="TrG5h" value="Surface Contamination" />
+      <ref role="3SOpc_" node="6sXzM9s8hTH" resolve="Drivable Area Surface Conditions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hU6" role="3SOpfD">
       <property role="TrG5h" value="Roundabouts" />
@@ -487,82 +487,82 @@
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i0_" role="3SOpfD">
       <property role="TrG5h" value="Cracks" />
-      <ref role="3SOpc_" node="6sXzM9s8hTF" resolve="Drivable area surface features" />
+      <ref role="3SOpc_" node="6sXzM9s8hTF" resolve="Drivable Area Surface Features" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i0C" role="3SOpfD">
       <property role="TrG5h" value="Potholes" />
-      <ref role="3SOpc_" node="6sXzM9s8hTF" resolve="Drivable area surface features" />
+      <ref role="3SOpc_" node="6sXzM9s8hTF" resolve="Drivable Area Surface Features" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i0F" role="3SOpfD">
       <property role="TrG5h" value="Ruts" />
-      <ref role="3SOpc_" node="6sXzM9s8hTF" resolve="Drivable area surface features" />
+      <ref role="3SOpc_" node="6sXzM9s8hTF" resolve="Drivable Area Surface Features" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i0I" role="3SOpfD">
       <property role="TrG5h" value="Swells" />
-      <ref role="3SOpc_" node="6sXzM9s8hTF" resolve="Drivable area surface features" />
+      <ref role="3SOpc_" node="6sXzM9s8hTF" resolve="Drivable Area Surface Features" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hU9" role="3SOpfD">
       <property role="TrG5h" value="Intersection" />
       <ref role="3SOpc_" node="6sXzM9s8hQi" resolve="Junctions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUc" role="3SOpfD">
-      <property role="TrG5h" value="Normal roundabouts" />
+      <property role="TrG5h" value="Normal Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUi" role="3SOpfD">
-      <property role="TrG5h" value="Compact roundabouts" />
+      <property role="TrG5h" value="Compact Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUk" role="3SOpfD">
-      <property role="TrG5h" value="Double roundabouts" />
+      <property role="TrG5h" value="Double Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUm" role="3SOpfD">
-      <property role="TrG5h" value="Large roundabouts" />
+      <property role="TrG5h" value="Large Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUo" role="3SOpfD">
-      <property role="TrG5h" value="Mini roundabouts" />
+      <property role="TrG5h" value="Mini Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUq" role="3SOpfD">
-      <property role="TrG5h" value="Signalized normal roundabouts" />
+      <property role="TrG5h" value="Signalized Normal Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUr" role="3SOpfD">
-      <property role="TrG5h" value="Signalized compact roundabouts" />
+      <property role="TrG5h" value="Signalized Compact Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUs" role="3SOpfD">
-      <property role="TrG5h" value="Signalized double roundabouts" />
+      <property role="TrG5h" value="Signalized Double Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUt" role="3SOpfD">
-      <property role="TrG5h" value="Signalized large roundabouts" />
+      <property role="TrG5h" value="Signalized Large Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUu" role="3SOpfD">
-      <property role="TrG5h" value="Signalized mini roundabouts" />
+      <property role="TrG5h" value="Signalized Mini Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUw" role="3SOpfD">
-      <property role="TrG5h" value="Non-signalized Normal roundabouts" />
+      <property role="TrG5h" value="Non-signalized Normal Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUx" role="3SOpfD">
-      <property role="TrG5h" value="Non-signalized compact roundabouts" />
+      <property role="TrG5h" value="Non-signalized Compact Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUy" role="3SOpfD">
-      <property role="TrG5h" value="Non-signalized double roundabouts" />
+      <property role="TrG5h" value="Non-signalized Double Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUz" role="3SOpfD">
-      <property role="TrG5h" value="Non-signalized large roundabouts" />
+      <property role="TrG5h" value="Non-signalized Large Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hU$" role="3SOpfD">
-      <property role="TrG5h" value="Non-signalized mini roundabouts" />
+      <property role="TrG5h" value="Non-signalized Mini Roundabouts" />
       <ref role="3SOpc_" node="6sXzM9s8hU6" resolve="Roundabouts" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUA" role="3SOpfD">
@@ -582,60 +582,60 @@
       <ref role="3SOpc_" node="6sXzM9s8hU9" resolve="Intersection" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUI" role="3SOpfD">
-      <property role="TrG5h" value="Grade separated" />
+      <property role="TrG5h" value="Grade Separated" />
       <ref role="3SOpc_" node="6sXzM9s8hU9" resolve="Intersection" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUR" role="3SOpfD">
-      <property role="TrG5h" value="Automatic access controls" />
-      <ref role="3SOpc_" node="6sXzM9s8hQl" resolve="Special structures" />
+      <property role="TrG5h" value="Automatic Access Controls" />
+      <ref role="3SOpc_" node="6sXzM9s8hQl" resolve="Special Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUU" role="3SOpfD">
       <property role="TrG5h" value="Bridges" />
-      <ref role="3SOpc_" node="6sXzM9s8hQl" resolve="Special structures" />
+      <ref role="3SOpc_" node="6sXzM9s8hQl" resolve="Special Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hUX" role="3SOpfD">
-      <property role="TrG5h" value="Pedestrian crossings" />
-      <ref role="3SOpc_" node="6sXzM9s8hQl" resolve="Special structures" />
+      <property role="TrG5h" value="Pedestrian Crossings" />
+      <ref role="3SOpc_" node="6sXzM9s8hQl" resolve="Special Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hV0" role="3SOpfD">
-      <property role="TrG5h" value="Rail crossings" />
-      <ref role="3SOpc_" node="6sXzM9s8hQl" resolve="Special structures" />
+      <property role="TrG5h" value="Rail Crossings" />
+      <ref role="3SOpc_" node="6sXzM9s8hQl" resolve="Special Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hV3" role="3SOpfD">
       <property role="TrG5h" value="Tunnels" />
-      <ref role="3SOpc_" node="6sXzM9s8hQl" resolve="Special structures" />
+      <ref role="3SOpc_" node="6sXzM9s8hQl" resolve="Special Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hV6" role="3SOpfD">
-      <property role="TrG5h" value="Toll plaza" />
-      <ref role="3SOpc_" node="6sXzM9s8hQl" resolve="Special structures" />
+      <property role="TrG5h" value="Toll Plaza" />
+      <ref role="3SOpc_" node="6sXzM9s8hQl" resolve="Special Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hV9" role="3SOpfD">
       <property role="TrG5h" value="Buildings" />
-      <ref role="3SOpc_" node="6sXzM9s8hQo" resolve="Fixed road structures" />
+      <ref role="3SOpc_" node="6sXzM9s8hQo" resolve="Fixed Road Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hVc" role="3SOpfD">
-      <property role="TrG5h" value="Street lights" />
-      <ref role="3SOpc_" node="6sXzM9s8hQo" resolve="Fixed road structures" />
+      <property role="TrG5h" value="Street Lights" />
+      <ref role="3SOpc_" node="6sXzM9s8hQo" resolve="Fixed Road Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hVf" role="3SOpfD">
-      <property role="TrG5h" value="Street furnitures" />
-      <ref role="3SOpc_" node="6sXzM9s8hQo" resolve="Fixed road structures" />
+      <property role="TrG5h" value="Street Furnitures" />
+      <ref role="3SOpc_" node="6sXzM9s8hQo" resolve="Fixed Road Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hVi" role="3SOpfD">
       <property role="TrG5h" value="Vegetations" />
-      <ref role="3SOpc_" node="6sXzM9s8hQo" resolve="Fixed road structures" />
+      <ref role="3SOpc_" node="6sXzM9s8hQo" resolve="Fixed Road Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hVl" role="3SOpfD">
-      <property role="TrG5h" value="Construction site detours" />
-      <ref role="3SOpc_" node="6sXzM9s8hQr" resolve="Temporary road structures" />
+      <property role="TrG5h" value="Construction Site detours" />
+      <ref role="3SOpc_" node="6sXzM9s8hQr" resolve="Temporary Road Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hVo" role="3SOpfD">
-      <property role="TrG5h" value="Road works" />
-      <ref role="3SOpc_" node="6sXzM9s8hQr" resolve="Temporary road structures" />
+      <property role="TrG5h" value="Road Works" />
+      <ref role="3SOpc_" node="6sXzM9s8hQr" resolve="Temporary Road Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hVr" role="3SOpfD">
-      <property role="TrG5h" value="Road signage" />
-      <ref role="3SOpc_" node="6sXzM9s8hQr" resolve="Temporary road structures" />
+      <property role="TrG5h" value="Road Signage" />
+      <ref role="3SOpc_" node="6sXzM9s8hQr" resolve="Temporary Road Structures" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hWi" role="3SOpfD">
       <property role="TrG5h" value="Wind" />
@@ -665,11 +665,11 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hWP" role="3SOpfD">
-      <property role="TrG5h" value="Light snow" />
+      <property role="TrG5h" value="Light Snow" />
       <ref role="3SOpc_" node="6sXzM9s8hWA" resolve="Snowfall" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hWS" role="3SOpfD">
-      <property role="TrG5h" value="Moderate snow" />
+      <property role="TrG5h" value="Moderate Snow" />
       <ref role="3SOpc_" node="6sXzM9s8hWA" resolve="Snowfall" />
       <node concept="19SGf9" id="6sXzM9s8hX1" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hX2" role="19SJt6">
@@ -678,7 +678,7 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hWV" role="3SOpfD">
-      <property role="TrG5h" value="Heavy snow" />
+      <property role="TrG5h" value="Heavy Snow" />
       <ref role="3SOpc_" node="6sXzM9s8hWA" resolve="Snowfall" />
       <node concept="19SGf9" id="6sXzM9s8hWX" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hWY" role="19SJt6">
@@ -688,7 +688,7 @@
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXM" role="3SOpfD">
       <property role="TrG5h" value="Particulates" />
-      <ref role="3SOpc_" node="6sXzM9s8hQu" resolve="Environmental conditions" />
+      <ref role="3SOpc_" node="6sXzM9s8hQu" resolve="Environmental Conditions" />
       <node concept="19SGf9" id="6sXzM9s8hY0" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hY1" role="19SJt6">
           <property role="19SUeA" value="NOTE 1 The impact of small airborne particulates on&#10;sensory perception is commonly expressed in terms of&#10;“visibility”. As visibility is related to human perception&#10;it is only directly applicable to sensors operating at&#10;human-visible wavelengths. The degree of obscuration&#10;will be dependent on the amount of particulate matter,&#10;the sensor wavelength and also the composition&#10;and size distribution of the particles in question.&#10;In the particular case of 5.3.2 b) “non-precipitating&#10;water droplets”, it might be useful to employ a&#10;meteorological visibility parameter as it will relate more&#10;closely to impacts on optical systems.&#10;NOTE 2 The meteorological optical range (MOR)&#10;should be measured in metres (m). The MOR is the&#10;length of path in the atmosphere required to reduce&#10;the luminous flux in a collimated beam from an&#10;incandescent lamp (at a colour temperature of 2700&#10;K) to 5% of its original value. The luminous flux is&#10;evaluated by the photometric luminosity function of&#10;the International Commission on Illumination (CIE). " />
@@ -696,23 +696,23 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXJ" role="3SOpfD">
-      <property role="TrG5h" value="Marine particulates" />
+      <property role="TrG5h" value="Marine Particulates" />
       <ref role="3SOpc_" node="6sXzM9s8hXM" resolve="Particulates" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXP" role="3SOpfD">
-      <property role="TrG5h" value="Non-precipitating water droplets or ice crystals" />
+      <property role="TrG5h" value="Non-precipitating Water Droplets or Ice Crystals" />
       <ref role="3SOpc_" node="6sXzM9s8hXM" resolve="Particulates" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXS" role="3SOpfD">
-      <property role="TrG5h" value="Sand and dust" />
+      <property role="TrG5h" value="Sand and Dust" />
       <ref role="3SOpc_" node="6sXzM9s8hXM" resolve="Particulates" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXV" role="3SOpfD">
-      <property role="TrG5h" value="Smoke and pollution" />
+      <property role="TrG5h" value="Smoke and Pollution" />
       <ref role="3SOpc_" node="6sXzM9s8hXM" resolve="Particulates" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXY" role="3SOpfD">
-      <property role="TrG5h" value="Volcanic ash" />
+      <property role="TrG5h" value="Volcanic Ash" />
       <ref role="3SOpc_" node="6sXzM9s8hXM" resolve="Particulates" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hWG" role="3SOpfD">
@@ -734,7 +734,7 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hYg" role="3SOpfD">
-      <property role="TrG5h" value="Elevation of the sun above the horizon" />
+      <property role="TrG5h" value="Elevation of the Sun above the Horizon" />
       <ref role="3SOpc_" node="6sXzM9s8hY9" resolve="Day" />
       <node concept="19SGf9" id="6sXzM9s8hYi" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hYj" role="19SJt6">
@@ -743,7 +743,7 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hYn" role="3SOpfD">
-      <property role="TrG5h" value="Position of the sun" />
+      <property role="TrG5h" value="Position of the Sun" />
       <ref role="3SOpc_" node="6sXzM9s8hY9" resolve="Day" />
       <node concept="19SGf9" id="6sXzM9s8hYp" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hYq" role="19SJt6">
@@ -770,11 +770,11 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hYL" role="3SOpfD">
-      <property role="TrG5h" value="Clear sky" />
+      <property role="TrG5h" value="Clear Sky" />
       <ref role="3SOpc_" node="6sXzM9s8hYG" resolve="Cloudiness" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hYS" role="3SOpfD">
-      <property role="TrG5h" value="Partially cloudy" />
+      <property role="TrG5h" value="Partially Cloudy" />
       <ref role="3SOpc_" node="6sXzM9s8hYG" resolve="Cloudiness" />
       <node concept="19SGf9" id="6sXzM9s8hYU" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hYV" role="19SJt6">
@@ -792,7 +792,7 @@
       </node>
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hY_" role="3SOpfD">
-      <property role="TrG5h" value="Low-ambient lightning condition" />
+      <property role="TrG5h" value="Low-ambient Lightning Condition" />
       <ref role="3SOpc_" node="6sXzM9s8hWG" resolve="Illumination" />
       <node concept="19SGf9" id="6sXzM9s8hYB" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8hYC" role="19SJt6">
@@ -847,11 +847,11 @@
       <ref role="3SOpc_" node="6sXzM9s8hZs" resolve="Positioning" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hZC" role="3SOpfD">
-      <property role="TrG5h" value="cellular" />
+      <property role="TrG5h" value="Cellular" />
       <ref role="3SOpc_" node="6sXzM9s8hZF" resolve="V2X" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hZI" role="3SOpfD">
-      <property role="TrG5h" value="satellite" />
+      <property role="TrG5h" value="Satellite" />
       <ref role="3SOpc_" node="6sXzM9s8hZF" resolve="V2X" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hZL" role="3SOpfD">
@@ -859,44 +859,44 @@
       <ref role="3SOpc_" node="6sXzM9s8hZF" resolve="V2X" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hX9" role="3SOpfD">
-      <property role="TrG5h" value="Density of agents" />
+      <property role="TrG5h" value="Density of Agents" />
       <ref role="3SOpc_" node="6sXzM9s8hQK" resolve="Traffic" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXd" role="3SOpfD">
-      <property role="TrG5h" value="Volume of traffic" />
+      <property role="TrG5h" value="Volume of Traffic" />
       <ref role="3SOpc_" node="6sXzM9s8hQK" resolve="Traffic" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXg" role="3SOpfD">
-      <property role="TrG5h" value="Traffic flow rate" />
+      <property role="TrG5h" value="Traffic Flow Rate" />
       <ref role="3SOpc_" node="6sXzM9s8hQK" resolve="Traffic" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXj" role="3SOpfD">
-      <property role="TrG5h" value="Traffic agent type" />
+      <property role="TrG5h" value="Traffic Agent Type" />
       <ref role="3SOpc_" node="6sXzM9s8hQK" resolve="Traffic" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXm" role="3SOpfD">
-      <property role="TrG5h" value="Presence of special vehicles" />
+      <property role="TrG5h" value="Presence of Special Vehicles" />
       <ref role="3SOpc_" node="6sXzM9s8hQK" resolve="Traffic" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXs" role="3SOpfD">
-      <property role="TrG5h" value="Subject vehicle speed" />
-      <ref role="3SOpc_" node="6sXzM9s8hQN" resolve="Subject vehicle" />
+      <property role="TrG5h" value="Subject Vehicle Speed" />
+      <ref role="3SOpc_" node="6sXzM9s8hQN" resolve="Subject Vehicle" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXv" role="3SOpfD">
-      <property role="TrG5h" value="Pre-defined routes for subject vehicle" />
-      <ref role="3SOpc_" node="6sXzM9s8hQN" resolve="Subject vehicle" />
+      <property role="TrG5h" value="Pre-defined Routes for Subject Vehicle" />
+      <ref role="3SOpc_" node="6sXzM9s8hQN" resolve="Subject Vehicle" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXA" role="3SOpfD">
-      <property role="TrG5h" value="Stationary vehicles" />
+      <property role="TrG5h" value="Stationary Vehicles" />
       <ref role="3SOpc_" node="6sXzM9s8hQK" resolve="Traffic" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXD" role="3SOpfD">
-      <property role="TrG5h" value="Vulnerable road users" />
-      <ref role="3SOpc_" node="6sXzM9s8hXj" resolve="Traffic agent type" />
+      <property role="TrG5h" value="Vulnerable Road Users" />
+      <ref role="3SOpc_" node="6sXzM9s8hXj" resolve="Traffic Agent Type" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hXG" role="3SOpfD">
       <property role="TrG5h" value="Animals" />
-      <ref role="3SOpc_" node="6sXzM9s8hXj" resolve="Traffic agent type" />
+      <ref role="3SOpc_" node="6sXzM9s8hXj" resolve="Traffic Agent Type" />
     </node>
     <node concept="2IzUYn" id="6sXzM9s8hUD" role="3SOpfD" />
     <node concept="2IzUYn" id="6sXzM9s8hUv" role="3SOpfD" />

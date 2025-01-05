@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6097c87c-6726-40c3-b3c1-448a288b240f(_010_features._015_odd)" content="root">
+<model ref="r:3bb3e2c2-c0d0-4a17-8532-bffb8c1e9ff5(_010_features._015_odd.ontologies.czarnecki_operational_world_model_for_ads)">
   <persistence version="9" />
+  <languages>
+    <use id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology" version="1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+    <use id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd" version="1" />
+  </languages>
   <imports />
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -33,9 +38,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -43,7 +45,6 @@
   </registry>
   <node concept="3SOpcF" id="7gUa1Zsx7gl">
     <property role="TrG5h" value="czarnecki_operational_world_model_for_ads" />
-    <property role="3GE5qa" value="ontologies" />
     <node concept="19SGf9" id="7gUa1Zsx7gm" role="2I8HYo">
       <node concept="19SUe$" id="7gUa1Zsx7gn" role="19SJt6">
         <property role="19SUeA" value="This ontology is taken from&#10;&quot;Operational World Model Ontology for Automated Driving Systems - Part 1: Road Structure&quot;, and&#10;&quot;Operational World Model Ontology for Automated Driving Systems - Part 2: Road Users, Animals, Other Obstacles, and Environmental Conditions&quot;&#10;by Krzysztof Czarnecki" />

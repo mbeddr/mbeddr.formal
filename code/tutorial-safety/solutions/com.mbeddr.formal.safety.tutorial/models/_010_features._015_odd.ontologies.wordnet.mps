@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6097c87c-6726-40c3-b3c1-448a288b240f(_010_features._015_odd)" content="root">
+<model ref="r:4c259605-045d-4781-9ec4-c583427a6d62(_010_features._015_odd.ontologies.wordnet)">
   <persistence version="9" />
+  <languages>
+    <use id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology" version="1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+  </languages>
   <imports />
   <registry>
     <language id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology">
@@ -20,9 +24,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -30,7 +31,6 @@
   </registry>
   <node concept="3SOpcF" id="3Jn$RV31zgb">
     <property role="TrG5h" value="wordnet" />
-    <property role="3GE5qa" value="ontologies" />
     <node concept="3SOpcA" id="3Jn$RV31zge" role="3SOpfD">
       <property role="TrG5h" value="visual signal" />
       <ref role="3SOpc_" node="1UJ51yZA8AC" resolve="signal" />

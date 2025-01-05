@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:6097c87c-6726-40c3-b3c1-448a288b240f(_010_features._015_odd)" content="root">
   <persistence version="9" />
-  <imports />
+  <imports>
+    <import index="yyoe" ref="r:ae2ea89c-1354-4b46-b6d7-0ce4a2346b30(_010_features._015_odd.ontologies.bsi)" implicit="true" />
+  </imports>
   <registry>
     <language id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd">
       <concept id="4464095630343556645" name="com.fasten.req.odd.structure.ODDSentenceBase" flags="ng" index="3fWY_R">
@@ -40,95 +42,95 @@
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="_010_odd_example" />
     <node concept="3fY04A" id="2PXXx0E7Y5E" role="3SOIZ9">
-      <ref role="3fY04_" node="6sXzM9s8hQ9" resolve="bsi_1883" />
+      <ref role="3fY04_" to="yyoe:6sXzM9s8hQ9" resolve="bsi_1883" />
       <node concept="3fWYEE" id="6sXzM9s8hZX" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
         <node concept="3fZHMl" id="6sXzM9s8i05" role="3fWwZA">
           <node concept="MFvB7" id="6sXzM9s8i06" role="3fZHMq">
-            <ref role="MFvBS" node="6sXzM9s8hRH" resolve="Shared space" />
+            <ref role="MFvBS" to="yyoe:6sXzM9s8hRH" resolve="Shared Space" />
           </node>
         </node>
         <node concept="MFvB7" id="6sXzM9s8hZY" role="3fWY_o">
-          <ref role="MFvBS" node="6sXzM9s8hR6" resolve="Drivable area type" />
+          <ref role="MFvBS" to="yyoe:6sXzM9s8hR6" resolve="Drivable Area Type" />
         </node>
       </node>
       <node concept="3fWYEE" id="6sXzM9s8i08" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNI/disallow_only" />
         <node concept="3fZHMl" id="6sXzM9s8i0e" role="3fWwZA">
           <node concept="MFvB7" id="6sXzM9s8i0f" role="3fZHMq">
-            <ref role="MFvBS" node="6sXzM9s8hRW" resolve="Transverse plane" />
+            <ref role="MFvBS" to="yyoe:6sXzM9s8hRW" resolve="Transverse Plane" />
           </node>
         </node>
         <node concept="MFvB7" id="6sXzM9s8i0a" role="3fWY_o">
-          <ref role="MFvBS" node="6sXzM9s8hR9" resolve="Drivable area geometry" />
+          <ref role="MFvBS" to="yyoe:6sXzM9s8hR9" resolve="Drivable Area Geometry" />
         </node>
       </node>
       <node concept="3fWYEE" id="4L2VcqZX1w9" role="3fY04B">
         <node concept="MFvB7" id="4L2VcqZX1wb" role="3fWY_o">
-          <ref role="MFvBS" node="6sXzM9s8hRc" resolve="Drivable area lane specification" />
+          <ref role="MFvBS" to="yyoe:6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
         </node>
       </node>
       <node concept="3fWYEE" id="4L2VcqZX1wd" role="3fY04B">
         <node concept="MFvB7" id="4L2VcqZX1wf" role="3fWY_o">
-          <ref role="MFvBS" node="6sXzM9s8hRf" resolve="Drivable area signs" />
+          <ref role="MFvBS" to="yyoe:6sXzM9s8hRf" resolve="Drivable Area Signs" />
         </node>
       </node>
       <node concept="3fWYEE" id="4L2VcqZX1wh" role="3fY04B">
         <node concept="MFvB7" id="4L2VcqZX1wj" role="3fWY_o">
-          <ref role="MFvBS" node="6sXzM9s8hRi" resolve="Drivable area edge" />
+          <ref role="MFvBS" to="yyoe:6sXzM9s8hRi" resolve="Drivable Area Edge" />
         </node>
       </node>
       <node concept="3fWYEE" id="6sXzM9s8i0h" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
         <node concept="3fZHMl" id="6sXzM9s8i0l" role="3fWwZA">
           <node concept="MFvB7" id="6sXzM9s8i0m" role="3fZHMq">
-            <ref role="MFvBS" node="6sXzM9s8hTT" resolve="Mirage" />
+            <ref role="MFvBS" to="yyoe:6sXzM9s8hTT" resolve="Mirage" />
           </node>
         </node>
         <node concept="3fZHMl" id="6sXzM9s8i0n" role="3fWwZA">
           <node concept="MFvB7" id="6sXzM9s8i0o" role="3fZHMq">
-            <ref role="MFvBS" node="6sXzM9s8hTV" resolve="Snow on drivable area" />
+            <ref role="MFvBS" to="yyoe:6sXzM9s8hTV" resolve="Snow on Drivable Area" />
           </node>
         </node>
         <node concept="3fZHMl" id="6sXzM9s8i0p" role="3fWwZA">
           <node concept="MFvB7" id="6sXzM9s8i0q" role="3fZHMq">
-            <ref role="MFvBS" node="6sXzM9s8hTX" resolve="Standing water" />
+            <ref role="MFvBS" to="yyoe:6sXzM9s8hTX" resolve="Standing Water" />
           </node>
         </node>
         <node concept="3fZHMl" id="6sXzM9s8i0r" role="3fWwZA">
           <node concept="MFvB7" id="6sXzM9s8i0s" role="3fZHMq">
-            <ref role="MFvBS" node="6sXzM9s8hTZ" resolve="Wet road" />
+            <ref role="MFvBS" to="yyoe:6sXzM9s8hTZ" resolve="Wet Road" />
           </node>
         </node>
         <node concept="MFvB7" id="6sXzM9s8i0j" role="3fWY_o">
-          <ref role="MFvBS" node="6sXzM9s8hTH" resolve="Drivable area surface conditions" />
+          <ref role="MFvBS" to="yyoe:6sXzM9s8hTH" resolve="Drivable Area Surface Conditions" />
         </node>
       </node>
       <node concept="3fWYEE" id="6sXzM9s8i0u" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
         <node concept="3fZHMl" id="6sXzM9s8i0z" role="3fWwZA">
           <node concept="MFvB7" id="6sXzM9s8i0K" role="3fZHMq">
-            <ref role="MFvBS" node="6sXzM9s8i0_" resolve="Cracks" />
+            <ref role="MFvBS" to="yyoe:6sXzM9s8i0_" resolve="Cracks" />
           </node>
         </node>
         <node concept="3fZHMl" id="6sXzM9s8i0L" role="3fWwZA">
           <node concept="MFvB7" id="6sXzM9s8i0M" role="3fZHMq">
-            <ref role="MFvBS" node="6sXzM9s8i0I" resolve="Swells" />
+            <ref role="MFvBS" to="yyoe:6sXzM9s8i0I" resolve="Swells" />
           </node>
         </node>
         <node concept="MFvB7" id="6sXzM9s8i0w" role="3fWY_o">
-          <ref role="MFvBS" node="6sXzM9s8hTF" resolve="Drivable area surface features" />
+          <ref role="MFvBS" to="yyoe:6sXzM9s8hTF" resolve="Drivable Area Surface Features" />
         </node>
       </node>
       <node concept="3fWYEE" id="6sXzM9s8i0O" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNI/disallow_only" />
         <node concept="3fZHMl" id="6sXzM9s8i0S" role="3fWwZA">
           <node concept="MFvB7" id="6sXzM9s8i0W" role="3fZHMq">
-            <ref role="MFvBS" node="6sXzM9s8hTI" resolve="Loose drivable area surface" />
+            <ref role="MFvBS" to="yyoe:6sXzM9s8hTI" resolve="Loose Drivable Area Surface" />
           </node>
         </node>
         <node concept="MFvB7" id="6sXzM9s8i0Q" role="3fWY_o">
-          <ref role="MFvBS" node="6sXzM9s8hTC" resolve="Drivable area surface type" />
+          <ref role="MFvBS" to="yyoe:6sXzM9s8hTC" resolve="Drivable Area Surface Type" />
         </node>
       </node>
     </node>
