@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:6097c87c-6726-40c3-b3c1-448a288b240f(_010_features._015_odd)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology">
+      <concept id="145334794179050158" name="com.fasten.req.ontology.structure.EmptyLine" flags="ng" index="2IzUYn" />
+      <concept id="4312077340877652056" name="com.fasten.req.ontology.structure.OntologyConcept" flags="ng" index="3SOpcA">
+        <reference id="4312077340877652059" name="superConcept" index="3SOpc_" />
+        <child id="1433630071281334407" name="explanation" index="1hVZTN" />
+      </concept>
+      <concept id="4312077340877652053" name="com.fasten.req.ontology.structure.Ontology" flags="ng" index="3SOpcF">
+        <child id="4312077340877652119" name="concepts" index="3SOpfD" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="3SOpcF" id="6sXzM9s8i0X">
+    <property role="3GE5qa" value="ontologies" />
+    <property role="TrG5h" value="avsc_lexicon" />
+    <node concept="3SOpcA" id="6sXzM9s8i0Y" role="3SOpfD">
+      <property role="TrG5h" value="Weather" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i10" role="3SOpfD">
+      <property role="TrG5h" value="Temperature" />
+      <ref role="3SOpc_" node="6sXzM9s8i0Y" resolve="Weather" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i13" role="3SOpfD">
+      <property role="TrG5h" value="Precipitation Types" />
+      <ref role="3SOpc_" node="6sXzM9s8i0Y" resolve="Weather" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i16" role="3SOpfD">
+      <property role="TrG5h" value="Rain" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i19" role="3SOpfD">
+      <property role="TrG5h" value="Rainfall Rates" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1c" role="3SOpfD">
+      <property role="TrG5h" value="Light Rain" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1f" role="3SOpfD">
+      <property role="TrG5h" value="Moderate Rain" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1i" role="3SOpfD">
+      <property role="TrG5h" value="Heavy Rain" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1l" role="3SOpfD">
+      <property role="TrG5h" value="Drizzle" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1o" role="3SOpfD">
+      <property role="TrG5h" value="Mist" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1r" role="3SOpfD">
+      <property role="TrG5h" value="Fog" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1u" role="3SOpfD">
+      <property role="TrG5h" value="Snow" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1x" role="3SOpfD">
+      <property role="TrG5h" value="Snow Intensity" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1$" role="3SOpfD">
+      <property role="TrG5h" value="Light Snow" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1B" role="3SOpfD">
+      <property role="TrG5h" value="Moderate Snow" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1E" role="3SOpfD">
+      <property role="TrG5h" value="Heavy Snow" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1H" role="3SOpfD">
+      <property role="TrG5h" value="Sleet" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1K" role="3SOpfD">
+      <property role="TrG5h" value="Freezing Rain" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1N" role="3SOpfD">
+      <property role="TrG5h" value="Hail" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1Q" role="3SOpfD">
+      <property role="TrG5h" value="Haze" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1T" role="3SOpfD">
+      <property role="TrG5h" value="Sky Condition" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1W" role="3SOpfD">
+      <property role="TrG5h" value="Sunny" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i1Z" role="3SOpfD">
+      <property role="TrG5h" value="Mostly Sunny" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i22" role="3SOpfD">
+      <property role="TrG5h" value="Partially Sunny" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i25" role="3SOpfD">
+      <property role="TrG5h" value="Mostly Cloudy" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i28" role="3SOpfD">
+      <property role="TrG5h" value="Cloudy" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2b" role="3SOpfD">
+      <property role="TrG5h" value="Illuminance" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2f" role="3SOpfD">
+      <property role="TrG5h" value="Sunlight" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2i" role="3SOpfD">
+      <property role="TrG5h" value="Full Daylight" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2l" role="3SOpfD">
+      <property role="TrG5h" value="Overcast Day" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2o" role="3SOpfD">
+      <property role="TrG5h" value="Very Dark Day" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2r" role="3SOpfD">
+      <property role="TrG5h" value="Twilight" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2u" role="3SOpfD">
+      <property role="TrG5h" value="Deep Twilight" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2x" role="3SOpfD">
+      <property role="TrG5h" value="Full Moon" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2$" role="3SOpfD">
+      <property role="TrG5h" value="Quarter Moon" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2B" role="3SOpfD">
+      <property role="TrG5h" value="Starlight" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2E" role="3SOpfD">
+      <property role="TrG5h" value="Overcast Night" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2H" role="3SOpfD">
+      <property role="TrG5h" value="Sun Angle" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2K" role="3SOpfD">
+      <property role="TrG5h" value="Astronomical Twilight" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2N" role="3SOpfD">
+      <property role="TrG5h" value="Nautical Twilight" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2Q" role="3SOpfD">
+      <property role="TrG5h" value="Civil Twilight" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2T" role="3SOpfD">
+      <property role="TrG5h" value="Wind" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2W" role="3SOpfD">
+      <property role="TrG5h" value="Road Surface Conditions" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i2Z" role="3SOpfD">
+      <property role="TrG5h" value="Surface Condition State of Repair" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i32" role="3SOpfD">
+      <property role="TrG5h" value="Cracking" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i35" role="3SOpfD">
+      <property role="TrG5h" value="Rutting" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i38" role="3SOpfD">
+      <property role="TrG5h" value="Raveling" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3b" role="3SOpfD">
+      <property role="TrG5h" value="Pothole" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3e" role="3SOpfD">
+      <property role="TrG5h" value="Alligator Cracking" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3h" role="3SOpfD">
+      <property role="TrG5h" value="Quality of Road Markings" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3k" role="3SOpfD">
+      <property role="TrG5h" value="Good Markings" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3n" role="3SOpfD">
+      <property role="TrG5h" value="Fair Markings" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3q" role="3SOpfD">
+      <property role="TrG5h" value="Poor Markings" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3t" role="3SOpfD">
+      <property role="TrG5h" value="Road Surface Obscurants" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3w" role="3SOpfD">
+      <property role="TrG5h" value="Dry Road Surface" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3z" role="3SOpfD">
+      <property role="TrG5h" value="Damp Road Surface" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3A" role="3SOpfD">
+      <property role="TrG5h" value="Wet Road Surface" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3D" role="3SOpfD">
+      <property role="TrG5h" value="Snow-covered Road Surface" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3G" role="3SOpfD">
+      <property role="TrG5h" value="Icy Road Surface" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3J" role="3SOpfD">
+      <property role="TrG5h" value="Sand and Gravel on Road Surface" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3M" role="3SOpfD">
+      <property role="TrG5h" value="Leaves on Road Surface" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3Q" role="3SOpfD">
+      <property role="TrG5h" value="Transient Roadway Obstacles" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3T" role="3SOpfD">
+      <property role="TrG5h" value="Road Infrastructure" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3W" role="3SOpfD">
+      <property role="TrG5h" value="Road Network" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i3Z" role="3SOpfD">
+      <property role="TrG5h" value="Route Network" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i42" role="3SOpfD">
+      <property role="TrG5h" value="(Roadway) Sight Distance" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i45" role="3SOpfD">
+      <property role="TrG5h" value="(Roadway) Grade" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i48" role="3SOpfD">
+      <property role="TrG5h" value="(Roadway) Superelevation" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4b" role="3SOpfD">
+      <property role="TrG5h" value="(Road) Vertical Curvature" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4e" role="3SOpfD">
+      <property role="TrG5h" value="(Road) Horizontal Curvature" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4h" role="3SOpfD">
+      <property role="TrG5h" value="Ramps" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4k" role="3SOpfD">
+      <property role="TrG5h" value="Intersections" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4n" role="3SOpfD">
+      <property role="TrG5h" value="Geofenced Area" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4q" role="3SOpfD">
+      <property role="TrG5h" value="Traffic Control Devices" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4t" role="3SOpfD">
+      <property role="TrG5h" value="Design Elements" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4w" role="3SOpfD">
+      <property role="TrG5h" value="Lane" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4z" role="3SOpfD">
+      <property role="TrG5h" value="Dedicated Lane" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4A" role="3SOpfD">
+      <property role="TrG5h" value="Managed Lane" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4D" role="3SOpfD">
+      <property role="TrG5h" value="Mixed Use Lane" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4G" role="3SOpfD">
+      <property role="TrG5h" value="Lane Width" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4J" role="3SOpfD">
+      <property role="TrG5h" value="Shoulder" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4M" role="3SOpfD">
+      <property role="TrG5h" value="Curb" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4P" role="3SOpfD">
+      <property role="TrG5h" value="Weaving Section" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4T" role="3SOpfD">
+      <property role="TrG5h" value="On-street Parking" />
+      <ref role="3SOpc_" node="6sXzM9s8i4W" resolve="Operational Constraints" />
+      <node concept="19SGf9" id="6sXzM9s8i6D" role="1hVZTN">
+        <node concept="19SUe$" id="6sXzM9s8i6E" role="19SJt6">
+          <property role="19SUeA" value="The presence of street parking can occlude objects around parked vehicles. It also introduces new considerations&#10;to ADS operation such as humans opening doors or pulling out of spaces. If allowed within the ODD, there are six&#10;types of street parking:&#10;1. Head-in/back-out angle parking on one side&#10;2. Head-in/back-out angle parking on both sides&#10;3. Back-in/head-out angle parking on one side&#10;4. Back-in/head-out angle parking on both sides&#10;5. Parallel parking on one side&#10;6. Parallel parking on both sides " />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4W" role="3SOpfD">
+      <property role="TrG5h" value="Operational Constraints" />
+      <node concept="19SGf9" id="6sXzM9s8i6x" role="1hVZTN">
+        <node concept="19SUe$" id="6sXzM9s8i6y" role="19SJt6">
+          <property role="19SUeA" value="Operational constraints are elements within the operating environment not related to weather and atmospheric&#10;conditions that alter some characteristic of the operating environment. Operational constraints describe the nonpermissive&#10;elements of the ODD description. " />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i4Z" role="3SOpfD">
+      <property role="TrG5h" value="Rush Hour" />
+      <ref role="3SOpc_" node="6sXzM9s8i4W" resolve="Operational Constraints" />
+      <node concept="19SGf9" id="6sXzM9s8i6_" role="1hVZTN">
+        <node concept="19SUe$" id="6sXzM9s8i6A" role="19SJt6">
+          <property role="19SUeA" value="Rush hour is a description for regular periods of high traffic density on roadways often resulting in lower than posted&#10;speeds and stop-and-go conditions. Rush hours vary among geographic areas in terms of timing and relative density/&#10;speed reduction. The U.S. Department of Transportation (USDOT) defines rush hour as peak travel times, between&#10;7 a.m. and 9 a.m. and between 4 p.m. and 6 p.m., that correspond with commuting to and from work during what&#10;are colloquially referred to as “normal business hours.” USDOT also points out that “people are much more likely to&#10;travel alone when they are commuting [during rush hour] than when they are traveling to run errands and for social&#10;and recreational purposes”. A given ADS product may be designed to exclude operation, or avoid certain&#10;roads/routes, during such peak demand times, or conversely, to operate exclusively during them. " />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i52" role="3SOpfD">
+      <property role="TrG5h" value="Intended Operational Times" />
+      <ref role="3SOpc_" node="6sXzM9s8i4W" resolve="Operational Constraints" />
+      <node concept="19SGf9" id="6sXzM9s8i6t" role="1hVZTN">
+        <node concept="19SUe$" id="6sXzM9s8i6u" role="19SJt6">
+          <property role="19SUeA" value="The intended operational times are the planned days and hours for when MaaS (or delivery) will be provided. Many&#10;considerations may be captured in the operational time description, including but not limited to, traffic density, sun&#10;angle, zone-specific times (e.g., school zone), etc. " />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i6n" role="3SOpfD">
+      <property role="TrG5h" value="Zones" />
+      <ref role="3SOpc_" node="6sXzM9s8i4W" resolve="Operational Constraints" />
+      <node concept="19SGf9" id="6sXzM9s8i6p" role="1hVZTN">
+        <node concept="19SUe$" id="6sXzM9s8i6q" role="19SJt6">
+          <property role="19SUeA" value="Zones are areas with boundaries where some element of the broader operational domain changes. " />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i56" role="3SOpfD">
+      <property role="TrG5h" value="Fixed Zones" />
+      <ref role="3SOpc_" node="6sXzM9s8i6n" resolve="Zones" />
+      <node concept="19SGf9" id="6sXzM9s8i6i" role="1hVZTN">
+        <node concept="19SUe$" id="6sXzM9s8i6j" role="19SJt6">
+          <property role="19SUeA" value="Zones with geographic boundaries (e.g., hospital zone) or geographic and temporal boundaries&#10;(e.g., school zone). Fixed zones are described as a part of the route network but may not be explicitly called out&#10;in the description of a route network " />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i59" role="3SOpfD">
+      <property role="TrG5h" value="Dynamic Zones" />
+      <ref role="3SOpc_" node="6sXzM9s8i6n" resolve="Zones" />
+      <node concept="19SGf9" id="6sXzM9s8i6e" role="1hVZTN">
+        <node concept="19SUe$" id="6sXzM9s8i6f" role="19SJt6">
+          <property role="19SUeA" value="Zones with boundaries that are not permanent or may not be clearly delineated on maps&#10;(e.g., mobile work zone)). Dynamic zones may or may not be marked by signage (e.g., low-lying area prone to&#10;flooding or standing water during rain events). A characteristic of work zones may be removing or otherwise obscuring&#10;extant roadway markings (e.g., cover with tape, sandblast). These methods may result in new gauges or the&#10;appearance of markings of different colors. " />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5c" role="3SOpfD">
+      <property role="TrG5h" value="Road Users" />
+      <node concept="19SGf9" id="6sXzM9s8i68" role="1hVZTN">
+        <node concept="19SUe$" id="6sXzM9s8i69" role="19SJt6">
+          <property role="19SUeA" value="AASHTO lists five categories of road user [9] (listed 1 to 5 below). Because of the unique characteristics associated&#10;with them, this document adds motorcycles, micromobility vehicles, wheelchairs, emergency vehicles, and other&#10;vehicles to this list of road user categories. Categories are included in this document for consideration by manufacturers&#10;as the ODD is characterized. While behaviors associated with other road users should be considered in an ADS manufacturer’s safety case, it is outside the scope of this document and what could be considered a reasonable&#10;description of an ODD." />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5f" role="3SOpfD">
+      <property role="TrG5h" value="Automobile" />
+      <ref role="3SOpc_" node="6sXzM9s8i5c" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5i" role="3SOpfD">
+      <property role="TrG5h" value="Bicyclist" />
+      <ref role="3SOpc_" node="6sXzM9s8i5c" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5l" role="3SOpfD">
+      <property role="TrG5h" value="Pedestrian" />
+      <ref role="3SOpc_" node="6sXzM9s8i5c" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5o" role="3SOpfD">
+      <property role="TrG5h" value="Transit" />
+      <ref role="3SOpc_" node="6sXzM9s8i5c" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5r" role="3SOpfD">
+      <property role="TrG5h" value="Trucks" />
+      <ref role="3SOpc_" node="6sXzM9s8i5c" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5u" role="3SOpfD">
+      <property role="TrG5h" value="Motorcycles and Scooters" />
+      <ref role="3SOpc_" node="6sXzM9s8i5c" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5x" role="3SOpfD">
+      <property role="TrG5h" value="Micormobility Vehicles" />
+      <ref role="3SOpc_" node="6sXzM9s8i5c" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5$" role="3SOpfD">
+      <property role="TrG5h" value="Wheelchairs" />
+      <ref role="3SOpc_" node="6sXzM9s8i5c" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5B" role="3SOpfD">
+      <property role="TrG5h" value="Emergency Vehicles" />
+      <ref role="3SOpc_" node="6sXzM9s8i5c" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5E" role="3SOpfD">
+      <property role="TrG5h" value="Other Vehicles" />
+      <ref role="3SOpc_" node="6sXzM9s8i5c" resolve="Road Users" />
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5H" role="3SOpfD">
+      <property role="TrG5h" value="Non-Static Roadside Objects" />
+      <node concept="19SGf9" id="6sXzM9s8i64" role="1hVZTN">
+        <node concept="19SUe$" id="6sXzM9s8i65" role="19SJt6">
+          <property role="19SUeA" value="Non-static roadside objects are things in the driving environment that are not permanently (or semi-permanently)&#10;fixed in place, but also not (necessarily) dynamic in nature. Trashcans are examples of non-static objects; they&#10;cannot be considered roadside furniture but are not dynamic in the sense of a bouncing ball or dynamic in the sense&#10;of a running animal, yet they (mostly) appear regularly at the side of roads in certain areas with varying outlines that&#10;can make them difficult to include in a static world model. " />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5K" role="3SOpfD">
+      <property role="TrG5h" value="Connectivity" />
+      <node concept="19SGf9" id="6sXzM9s8i60" role="1hVZTN">
+        <node concept="19SUe$" id="6sXzM9s8i61" role="19SJt6">
+          <property role="19SUeA" value="Connectivity is an ADS ability to communicate with other vehicles, other road users, and infrastructure including a&#10;fleet operations center. It can be through cellular connections or other radio communications including line-of-sight&#10;or using satellites as with Global Navigation Satellite System (GNSS).&#10;5.7.1 Fleet " />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5N" role="3SOpfD">
+      <property role="TrG5h" value="Fleet Management" />
+      <ref role="3SOpc_" node="6sXzM9s8i5K" resolve="Connectivity" />
+      <node concept="19SGf9" id="6sXzM9s8i5W" role="1hVZTN">
+        <node concept="19SUe$" id="6sXzM9s8i5X" role="19SJt6">
+          <property role="19SUeA" value="Fleet management is the coordinated operation and oversight of multiple ADS-operated vehicles in one or more&#10;ODDs. Fleet management is included here because it implies connectivity with the fleet operations center which&#10;may be an element of the ADS ODD if this connectivity is required for certain functions (e.g. communications with&#10;the fleet operations center).&#10;NOTE: Fleet management is not to be confused with performance of the DDT fallback or bringing an ADS-DV to a&#10;minimal risk condition (MRC). SAE L4/5 ADS-DV perform these functions independently of external oversight.&#10;5.7.2 Obstructions " />
+        </node>
+      </node>
+    </node>
+    <node concept="3SOpcA" id="6sXzM9s8i5Q" role="3SOpfD">
+      <property role="TrG5h" value="Obstructions" />
+      <ref role="3SOpc_" node="6sXzM9s8i5K" resolve="Connectivity" />
+      <node concept="19SGf9" id="6sXzM9s8i5S" role="1hVZTN">
+        <node concept="19SUe$" id="6sXzM9s8i5T" role="19SJt6">
+          <property role="19SUeA" value="Obstructions are signal blockages of communications or perception systems. Obstructions can take the form of&#10;infrastructure shadows (as in the ability to receive GNSS or cellular signals) created by objects such as tunnels,&#10;overhead wires, tall buildings, overpasses, etc. Obstructions can also be dynamic as the result of a work zone or&#10;large vehicle occluding a vision system or line of sight communication system. The earlier step in the framework&#10;which defines all routes (or areas) in developing an ODD should account for obstructions resulting from&#10;fixed infrastructure. " />
+        </node>
+      </node>
+    </node>
+    <node concept="2IzUYn" id="6sXzM9s8i4R" role="3SOpfD" />
+    <node concept="2IzUYn" id="6sXzM9s8i3O" role="3SOpfD" />
+  </node>
+</model>
+
