@@ -17811,6 +17811,9 @@
         <node concept="3_I8Xc" id="4lJSf3LgT8s" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5DF4H224yvv" resolve="mps-rcp" />
         </node>
+        <node concept="3_I8Xc" id="7OA8CsRAu$w" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:Ye$g8PO953" resolve="mps-kotlin" />
+        </node>
         <node concept="3_I8Xc" id="7khq58xcrlD" role="39821P">
           <ref role="3_I8Xa" to="90a9:2IcGFIaJVAA" resolve="MPS.Kotlin" />
         </node>
