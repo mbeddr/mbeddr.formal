@@ -185,7 +185,7 @@
             </node>
             <node concept="2ShNRf" id="xCk$O6mj3r" role="33vP2m">
               <node concept="1pGfFk" id="xCk$O6mj3O" role="2ShVmc">
-                <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType,com.intellij.notification.NotificationListener)" resolve="Notification" />
+                <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType)" resolve="Notification" />
                 <node concept="2OqwBi" id="xCk$O6mjh0" role="37wK5m">
                   <node concept="37vLTw" id="71GfFl7hNEa" role="2Oq$k0">
                     <ref role="3cqZAo" node="71GfFl7hN$8" resolve="fastenBalloonGroup" />
@@ -203,7 +203,6 @@
                 <node concept="37vLTw" id="xCk$O6mjA0" role="37wK5m">
                   <ref role="3cqZAo" node="xCk$O6mjqq" resolve="type" />
                 </node>
-                <node concept="10Nm6u" id="xCk$O6mj3X" role="37wK5m" />
               </node>
             </node>
           </node>
