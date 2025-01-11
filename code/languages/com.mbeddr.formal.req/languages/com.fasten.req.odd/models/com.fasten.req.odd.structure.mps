@@ -232,7 +232,7 @@
     <property role="TrG5h" value="EmptyLine" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7gUa1Zsy25p" role="PzmwI">
-      <ref role="PrY4T" to="6wa3:7gUa1Zsy25c" resolve="IOntologyContent" />
+      <ref role="PrY4T" node="3RNDPbLZSob" resolve="IODDContent" />
     </node>
   </node>
   <node concept="PlHQZ" id="3RNDPbLZSob">
@@ -268,9 +268,6 @@
     <property role="TrG5h" value="ODDSentenceBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3RNDPbM04SA" role="PzmwI">
-      <ref role="PrY4T" node="3RNDPbLZSob" resolve="IODDContent" />
-    </node>
     <node concept="1TJgyj" id="3RNDPbM04Sa" role="1TKVEi">
       <property role="IQ2ns" value="4464095630343556618" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
