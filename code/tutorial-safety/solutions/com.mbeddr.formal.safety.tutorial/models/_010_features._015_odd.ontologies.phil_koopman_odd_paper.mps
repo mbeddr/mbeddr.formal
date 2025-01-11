@@ -38,7 +38,7 @@
     <property role="TrG5h" value="phil_koopman_odd_paper" />
     <node concept="19SGf9" id="52bCGvYEzn$" role="2I8HYo">
       <node concept="19SUe$" id="52bCGvYEzn_" role="19SJt6">
-        <property role="19SUeA" value="this top-level ODD ontology originates from: &#10;&quot;How Many Operational Design Domains, Objects, and Events?&quot;, by P. Koopman and F. Fratrik" />
+        <property role="19SUeA" value="This top-level ODD ontology originates from: &#10;&quot;How Many Operational Design Domains, Objects, and Events?&quot;, by P. Koopman and F. Fratrik" />
       </node>
     </node>
     <node concept="3SOpcA" id="7gUa1Zsy22Y" role="3SOpfD">
