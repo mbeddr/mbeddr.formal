@@ -22,6 +22,7 @@
         <child id="1433630071281334407" name="explanation" index="1hVZTN" />
       </concept>
       <concept id="4312077340877652053" name="com.fasten.req.ontology.structure.Ontology" flags="ng" index="3SOpcF">
+        <child id="5803911524651728223" name="description" index="2I8HYo" />
         <child id="4312077340877652119" name="concepts" index="3SOpfD" />
       </concept>
     </language>
@@ -46,247 +47,325 @@
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i16" role="3SOpfD">
       <property role="TrG5h" value="Rain" />
+      <ref role="3SOpc_" node="6sXzM9s8i13" resolve="Precipitation Types" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i19" role="3SOpfD">
       <property role="TrG5h" value="Rainfall Rates" />
+      <ref role="3SOpc_" node="6sXzM9s8i16" resolve="Rain" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1c" role="3SOpfD">
       <property role="TrG5h" value="Light Rain" />
+      <ref role="3SOpc_" node="6sXzM9s8i19" resolve="Rainfall Rates" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1f" role="3SOpfD">
       <property role="TrG5h" value="Moderate Rain" />
+      <ref role="3SOpc_" node="6sXzM9s8i19" resolve="Rainfall Rates" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1i" role="3SOpfD">
       <property role="TrG5h" value="Heavy Rain" />
+      <ref role="3SOpc_" node="6sXzM9s8i19" resolve="Rainfall Rates" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1l" role="3SOpfD">
       <property role="TrG5h" value="Drizzle" />
+      <ref role="3SOpc_" node="6sXzM9s8i13" resolve="Precipitation Types" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1o" role="3SOpfD">
       <property role="TrG5h" value="Mist" />
+      <ref role="3SOpc_" node="6sXzM9s8i13" resolve="Precipitation Types" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1r" role="3SOpfD">
       <property role="TrG5h" value="Fog" />
+      <ref role="3SOpc_" node="6sXzM9s8i13" resolve="Precipitation Types" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1u" role="3SOpfD">
       <property role="TrG5h" value="Snow" />
+      <ref role="3SOpc_" node="6sXzM9s8i13" resolve="Precipitation Types" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1x" role="3SOpfD">
       <property role="TrG5h" value="Snow Intensity" />
+      <ref role="3SOpc_" node="6sXzM9s8i16" resolve="Rain" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1$" role="3SOpfD">
       <property role="TrG5h" value="Light Snow" />
+      <ref role="3SOpc_" node="6sXzM9s8i1x" resolve="Snow Intensity" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1B" role="3SOpfD">
       <property role="TrG5h" value="Moderate Snow" />
+      <ref role="3SOpc_" node="6sXzM9s8i1x" resolve="Snow Intensity" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1E" role="3SOpfD">
       <property role="TrG5h" value="Heavy Snow" />
+      <ref role="3SOpc_" node="6sXzM9s8i1x" resolve="Snow Intensity" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1H" role="3SOpfD">
       <property role="TrG5h" value="Sleet" />
+      <ref role="3SOpc_" node="6sXzM9s8i13" resolve="Precipitation Types" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1K" role="3SOpfD">
       <property role="TrG5h" value="Freezing Rain" />
+      <ref role="3SOpc_" node="6sXzM9s8i13" resolve="Precipitation Types" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1N" role="3SOpfD">
       <property role="TrG5h" value="Hail" />
+      <ref role="3SOpc_" node="6sXzM9s8i13" resolve="Precipitation Types" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1Q" role="3SOpfD">
       <property role="TrG5h" value="Haze" />
+      <ref role="3SOpc_" node="6sXzM9s8i0Y" resolve="Weather" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1T" role="3SOpfD">
       <property role="TrG5h" value="Sky Condition" />
+      <ref role="3SOpc_" node="6sXzM9s8i0Y" resolve="Weather" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1W" role="3SOpfD">
       <property role="TrG5h" value="Sunny" />
+      <ref role="3SOpc_" node="6sXzM9s8i1T" resolve="Sky Condition" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i1Z" role="3SOpfD">
       <property role="TrG5h" value="Mostly Sunny" />
+      <ref role="3SOpc_" node="6sXzM9s8i1T" resolve="Sky Condition" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i22" role="3SOpfD">
       <property role="TrG5h" value="Partially Sunny" />
+      <ref role="3SOpc_" node="6sXzM9s8i1T" resolve="Sky Condition" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i25" role="3SOpfD">
       <property role="TrG5h" value="Mostly Cloudy" />
+      <ref role="3SOpc_" node="6sXzM9s8i1T" resolve="Sky Condition" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i28" role="3SOpfD">
       <property role="TrG5h" value="Cloudy" />
+      <ref role="3SOpc_" node="6sXzM9s8i1T" resolve="Sky Condition" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2b" role="3SOpfD">
       <property role="TrG5h" value="Illuminance" />
+      <ref role="3SOpc_" node="6sXzM9s8i0Y" resolve="Weather" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2f" role="3SOpfD">
       <property role="TrG5h" value="Sunlight" />
+      <ref role="3SOpc_" node="6sXzM9s8i2b" resolve="Illuminance" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2i" role="3SOpfD">
       <property role="TrG5h" value="Full Daylight" />
+      <ref role="3SOpc_" node="6sXzM9s8i2b" resolve="Illuminance" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2l" role="3SOpfD">
       <property role="TrG5h" value="Overcast Day" />
+      <ref role="3SOpc_" node="6sXzM9s8i2b" resolve="Illuminance" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2o" role="3SOpfD">
       <property role="TrG5h" value="Very Dark Day" />
+      <ref role="3SOpc_" node="6sXzM9s8i2b" resolve="Illuminance" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2r" role="3SOpfD">
       <property role="TrG5h" value="Twilight" />
+      <ref role="3SOpc_" node="6sXzM9s8i2b" resolve="Illuminance" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2u" role="3SOpfD">
       <property role="TrG5h" value="Deep Twilight" />
+      <ref role="3SOpc_" node="6sXzM9s8i2b" resolve="Illuminance" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2x" role="3SOpfD">
       <property role="TrG5h" value="Full Moon" />
+      <ref role="3SOpc_" node="6sXzM9s8i2b" resolve="Illuminance" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2$" role="3SOpfD">
       <property role="TrG5h" value="Quarter Moon" />
+      <ref role="3SOpc_" node="6sXzM9s8i2b" resolve="Illuminance" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2B" role="3SOpfD">
       <property role="TrG5h" value="Starlight" />
+      <ref role="3SOpc_" node="6sXzM9s8i2b" resolve="Illuminance" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2E" role="3SOpfD">
       <property role="TrG5h" value="Overcast Night" />
+      <ref role="3SOpc_" node="6sXzM9s8i2b" resolve="Illuminance" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2H" role="3SOpfD">
       <property role="TrG5h" value="Sun Angle" />
+      <ref role="3SOpc_" node="6sXzM9s8i0Y" resolve="Weather" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2K" role="3SOpfD">
       <property role="TrG5h" value="Astronomical Twilight" />
+      <ref role="3SOpc_" node="6sXzM9s8i2H" resolve="Sun Angle" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2N" role="3SOpfD">
       <property role="TrG5h" value="Nautical Twilight" />
+      <ref role="3SOpc_" node="6sXzM9s8i2H" resolve="Sun Angle" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2Q" role="3SOpfD">
       <property role="TrG5h" value="Civil Twilight" />
+      <ref role="3SOpc_" node="6sXzM9s8i2H" resolve="Sun Angle" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2T" role="3SOpfD">
       <property role="TrG5h" value="Wind" />
+      <ref role="3SOpc_" node="6sXzM9s8i0Y" resolve="Weather" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2W" role="3SOpfD">
       <property role="TrG5h" value="Road Surface Conditions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i2Z" role="3SOpfD">
       <property role="TrG5h" value="Surface Condition State of Repair" />
+      <ref role="3SOpc_" node="6sXzM9s8i2W" resolve="Road Surface Conditions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i32" role="3SOpfD">
       <property role="TrG5h" value="Cracking" />
+      <ref role="3SOpc_" node="6sXzM9s8i2Z" resolve="Surface Condition State of Repair" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i35" role="3SOpfD">
       <property role="TrG5h" value="Rutting" />
+      <ref role="3SOpc_" node="6sXzM9s8i2Z" resolve="Surface Condition State of Repair" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i38" role="3SOpfD">
       <property role="TrG5h" value="Raveling" />
+      <ref role="3SOpc_" node="6sXzM9s8i2Z" resolve="Surface Condition State of Repair" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3b" role="3SOpfD">
       <property role="TrG5h" value="Pothole" />
+      <ref role="3SOpc_" node="6sXzM9s8i2Z" resolve="Surface Condition State of Repair" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3e" role="3SOpfD">
       <property role="TrG5h" value="Alligator Cracking" />
+      <ref role="3SOpc_" node="6sXzM9s8i2Z" resolve="Surface Condition State of Repair" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3h" role="3SOpfD">
       <property role="TrG5h" value="Quality of Road Markings" />
+      <ref role="3SOpc_" node="6sXzM9s8i2W" resolve="Road Surface Conditions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3k" role="3SOpfD">
       <property role="TrG5h" value="Good Markings" />
+      <ref role="3SOpc_" node="6sXzM9s8i3h" resolve="Quality of Road Markings" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3n" role="3SOpfD">
       <property role="TrG5h" value="Fair Markings" />
+      <ref role="3SOpc_" node="6sXzM9s8i3h" resolve="Quality of Road Markings" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3q" role="3SOpfD">
       <property role="TrG5h" value="Poor Markings" />
+      <ref role="3SOpc_" node="6sXzM9s8i3h" resolve="Quality of Road Markings" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3t" role="3SOpfD">
       <property role="TrG5h" value="Road Surface Obscurants" />
+      <ref role="3SOpc_" node="6sXzM9s8i2W" resolve="Road Surface Conditions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3w" role="3SOpfD">
       <property role="TrG5h" value="Dry Road Surface" />
+      <ref role="3SOpc_" node="6sXzM9s8i3t" resolve="Road Surface Obscurants" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3z" role="3SOpfD">
       <property role="TrG5h" value="Damp Road Surface" />
+      <ref role="3SOpc_" node="6sXzM9s8i3t" resolve="Road Surface Obscurants" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3A" role="3SOpfD">
       <property role="TrG5h" value="Wet Road Surface" />
+      <ref role="3SOpc_" node="6sXzM9s8i3t" resolve="Road Surface Obscurants" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3D" role="3SOpfD">
       <property role="TrG5h" value="Snow-covered Road Surface" />
+      <ref role="3SOpc_" node="6sXzM9s8i3t" resolve="Road Surface Obscurants" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3G" role="3SOpfD">
       <property role="TrG5h" value="Icy Road Surface" />
+      <ref role="3SOpc_" node="6sXzM9s8i3t" resolve="Road Surface Obscurants" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3J" role="3SOpfD">
       <property role="TrG5h" value="Sand and Gravel on Road Surface" />
+      <ref role="3SOpc_" node="6sXzM9s8i3t" resolve="Road Surface Obscurants" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3M" role="3SOpfD">
       <property role="TrG5h" value="Leaves on Road Surface" />
+      <ref role="3SOpc_" node="6sXzM9s8i3t" resolve="Road Surface Obscurants" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3Q" role="3SOpfD">
       <property role="TrG5h" value="Transient Roadway Obstacles" />
+      <ref role="3SOpc_" node="6sXzM9s8i2W" resolve="Road Surface Conditions" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3T" role="3SOpfD">
       <property role="TrG5h" value="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3W" role="3SOpfD">
       <property role="TrG5h" value="Road Network" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i3Z" role="3SOpfD">
       <property role="TrG5h" value="Route Network" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i42" role="3SOpfD">
       <property role="TrG5h" value="(Roadway) Sight Distance" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i45" role="3SOpfD">
       <property role="TrG5h" value="(Roadway) Grade" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i48" role="3SOpfD">
       <property role="TrG5h" value="(Roadway) Superelevation" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4b" role="3SOpfD">
       <property role="TrG5h" value="(Road) Vertical Curvature" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4e" role="3SOpfD">
       <property role="TrG5h" value="(Road) Horizontal Curvature" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4h" role="3SOpfD">
       <property role="TrG5h" value="Ramps" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4k" role="3SOpfD">
       <property role="TrG5h" value="Intersections" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4n" role="3SOpfD">
       <property role="TrG5h" value="Geofenced Area" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4q" role="3SOpfD">
       <property role="TrG5h" value="Traffic Control Devices" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4t" role="3SOpfD">
       <property role="TrG5h" value="Design Elements" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4w" role="3SOpfD">
       <property role="TrG5h" value="Lane" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4z" role="3SOpfD">
       <property role="TrG5h" value="Dedicated Lane" />
+      <ref role="3SOpc_" node="6sXzM9s8i4w" resolve="Lane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4A" role="3SOpfD">
       <property role="TrG5h" value="Managed Lane" />
+      <ref role="3SOpc_" node="6sXzM9s8i4w" resolve="Lane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4D" role="3SOpfD">
       <property role="TrG5h" value="Mixed Use Lane" />
+      <ref role="3SOpc_" node="6sXzM9s8i4w" resolve="Lane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4G" role="3SOpfD">
       <property role="TrG5h" value="Lane Width" />
+      <ref role="3SOpc_" node="6sXzM9s8i4w" resolve="Lane" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4J" role="3SOpfD">
       <property role="TrG5h" value="Shoulder" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4M" role="3SOpfD">
       <property role="TrG5h" value="Curb" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4P" role="3SOpfD">
       <property role="TrG5h" value="Weaving Section" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8i4T" role="3SOpfD">
       <property role="TrG5h" value="On-street Parking" />
-      <ref role="3SOpc_" node="6sXzM9s8i4W" resolve="Operational Constraints" />
+      <ref role="3SOpc_" node="6sXzM9s8i3T" resolve="Road Infrastructure" />
       <node concept="19SGf9" id="6sXzM9s8i6D" role="1hVZTN">
         <node concept="19SUe$" id="6sXzM9s8i6E" role="19SJt6">
           <property role="19SUeA" value="The presence of street parking can occlude objects around parked vehicles. It also introduces new considerations&#10;to ADS operation such as humans opening doors or pulling out of spaces. If allowed within the ODD, there are six&#10;types of street parking:&#10;1. Head-in/back-out angle parking on one side&#10;2. Head-in/back-out angle parking on both sides&#10;3. Back-in/head-out angle parking on one side&#10;4. Back-in/head-out angle parking on both sides&#10;5. Parallel parking on one side&#10;6. Parallel parking on both sides " />
@@ -430,6 +509,11 @@
     </node>
     <node concept="2IzUYn" id="6sXzM9s8i4R" role="3SOpfD" />
     <node concept="2IzUYn" id="6sXzM9s8i3O" role="3SOpfD" />
+    <node concept="19SGf9" id="5_1vAEKUAL$" role="2I8HYo">
+      <node concept="19SUe$" id="5_1vAEKUAL_" role="19SJt6">
+        <property role="19SUeA" value="This ontology is taken from AVSC Best Practice for Describing an Operational Design Domain: Conceptual Framework and Lexicon AVSC00002202004." />
+      </node>
+    </node>
   </node>
 </model>
 
