@@ -17552,7 +17552,7 @@
             </node>
           </node>
           <node concept="1zDrgl" id="42jqVeFkUvE" role="39821P">
-            <ref role="1zDrgn" node="42jqVeFkUtq" resolve="FASTEN 2023.2" />
+            <ref role="1zDrgn" node="42jqVeFkUtq" resolve="FASTEN 2024.1" />
           </node>
         </node>
       </node>
@@ -17676,9 +17676,6 @@
         </node>
         <node concept="3_I8Xc" id="5cnt3YQx_6V" role="39821P">
           <ref role="3_I8Xa" to="90a9:31bAEZ0ssNL" resolve="mps-apache-commons" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuxUQ" role="39821P">
-          <ref role="3_I8Xa" to="90a9:2H_mjOXw4dd" resolve="de.itemis.mps.nativelibs" />
         </node>
         <node concept="3_I8Xc" id="5cnt3YQuxZk" role="39821P">
           <ref role="3_I8Xa" to="90a9:7szUFELHiFQ" resolve="de.itemis.mps.editor.widgets" />
@@ -17808,9 +17805,6 @@
         </node>
         <node concept="3_I8Xc" id="6Kf5KB6RmeW" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1nJh0raVyYj" resolve="modelchecker.jar" />
-        </node>
-        <node concept="3_I8Xc" id="7Nv7YQoAn1l" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:ymnOULAZ8H" resolve="mps-testing" />
         </node>
         <node concept="3_I8Xc" id="7he_lUutsoc" role="39821P">
           <ref role="3_I8Xa" node="7he_lUumPyH" resolve="com.mpsbasics" />
@@ -21051,7 +21045,7 @@
   <node concept="26EafH" id="nwXZr$UPFw">
     <property role="26FY9R" value="jetbrains.mps.Launcher" />
     <property role="TrG5h" value="fastenScripts" />
-    <ref role="1_kbm$" node="42jqVeFkUtq" resolve="FASTEN 2023.2" />
+    <ref role="1_kbm$" node="42jqVeFkUtq" resolve="FASTEN 2024.1" />
     <node concept="26EafG" id="nwXZr$UPFx" role="26Ea7d">
       <property role="26EafJ" value="lib/annotations.jar" />
     </node>
