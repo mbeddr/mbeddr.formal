@@ -22,11 +22,17 @@
         <child id="7741759128795045752" name="exp" index="2j1LYg" />
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
-      <concept id="1024891882119954681" name="org.mpsqa.lint.generic.structure.ISeverityLevelAwareChecker" flags="ngI" index="2oM2l5">
-        <property id="1024891882119955433" name="reportLevel" index="2oM2pl" />
-      </concept>
       <concept id="3786325089106496663" name="org.mpsqa.lint.generic.structure.ReuseCheckableScript" flags="ng" index="2wR3oc">
         <reference id="3786325089106496690" name="script" index="2wR3oD" />
+      </concept>
+      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ngI" index="3dgnlL">
+        <property id="7223240310078527797" name="failOnlyOnNewResults" index="3dJkfZ" />
+        <child id="7223240310078271420" name="violations" index="3dgnlQ" />
+      </concept>
+      <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
+        <property id="7223240310078271417" name="result" index="3dgnlN" />
+        <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
+        <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
       </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
@@ -50,7 +56,7 @@
     <ref role="2wR3oD" to="emnw:3jiJ$OUDXsn" resolve="models_in_same_project_with_same_IDs" />
   </node>
   <node concept="2wR3oc" id="4lfwJVE_q9k">
-    <property role="2oM2pl" value="1c_Dn$lNzd7/WARNING" />
+    <property role="3dJkfZ" value="true" />
     <ref role="2wR3oD" to="54p5:4lfwJVEz_X5" resolve="not_used_linters" />
     <node concept="2j1LYv" id="4lfwJVE_q9l" role="2j1YRv">
       <node concept="2j1LYi" id="4lfwJVE_q9m" role="2j1YQj">
@@ -62,6 +68,57 @@
         </node>
       </node>
     </node>
+    <node concept="3dgnlM" id="33N0TlwroUo" role="3dgnlQ">
+      <property role="3dgnlN" value="The Script is not re-used" />
+      <property role="3qxsY3" value="7223240310078078703" />
+      <property role="3qxsSb" value="r:161dadb5-0fef-403d-8aac-88c1e026ee75(org.mpsqa.lint.generic.linters_library.models)" />
+    </node>
+    <node concept="3dgnlM" id="33N0TlwroUp" role="3dgnlQ">
+      <property role="3dgnlN" value="The Script is not re-used" />
+      <property role="3qxsY3" value="7223240310077936294" />
+      <property role="3qxsSb" value="r:161dadb5-0fef-403d-8aac-88c1e026ee75(org.mpsqa.lint.generic.linters_library.models)" />
+    </node>
+    <node concept="3dgnlM" id="33N0TlwroUq" role="3dgnlQ">
+      <property role="3dgnlN" value="The Script is not re-used" />
+      <property role="3qxsY3" value="8110417213840767695" />
+      <property role="3qxsSb" value="r:161dadb5-0fef-403d-8aac-88c1e026ee75(org.mpsqa.lint.generic.linters_library.models)" />
+    </node>
+    <node concept="3dgnlM" id="33N0TlwroUr" role="3dgnlQ">
+      <property role="3dgnlN" value="The Script is not re-used" />
+      <property role="3qxsY3" value="1807439458653774565" />
+      <property role="3qxsSb" value="r:161dadb5-0fef-403d-8aac-88c1e026ee75(org.mpsqa.lint.generic.linters_library.models)" />
+    </node>
+    <node concept="3dgnlM" id="33N0TlwroUs" role="3dgnlQ">
+      <property role="3dgnlN" value="The Script is not re-used" />
+      <property role="3qxsY3" value="9045894802594373958" />
+      <property role="3qxsSb" value="r:161dadb5-0fef-403d-8aac-88c1e026ee75(org.mpsqa.lint.generic.linters_library.models)" />
+    </node>
+    <node concept="3dgnlM" id="33N0TlwroUt" role="3dgnlQ">
+      <property role="3dgnlN" value="The Script is not re-used" />
+      <property role="3qxsY3" value="2086369935147081530" />
+      <property role="3qxsSb" value="r:161dadb5-0fef-403d-8aac-88c1e026ee75(org.mpsqa.lint.generic.linters_library.models)" />
+    </node>
+    <node concept="3dgnlM" id="33N0TlwroUu" role="3dgnlQ">
+      <property role="3dgnlN" value="The Script is not re-used" />
+      <property role="3qxsY3" value="4746002316342300821" />
+      <property role="3qxsSb" value="r:161dadb5-0fef-403d-8aac-88c1e026ee75(org.mpsqa.lint.generic.linters_library.models)" />
+    </node>
+  </node>
+  <node concept="2wR3oc" id="33N0Tlwri2j">
+    <ref role="2wR3oD" to="54p5:652KpqR3Kk5" resolve="skipped_evaluation_linters" />
+    <node concept="2j1LYv" id="33N0Tlwrit2" role="2j1YRv">
+      <node concept="2j1LYi" id="33N0Tlwrit3" role="2j1YQj">
+        <ref role="2j1LYj" to="54p5:652KpqR3Kk6" resolve="thisNode" />
+      </node>
+      <node concept="2tJFMh" id="33N0Tlwrn3G" role="2j1LYg">
+        <node concept="ZC_QK" id="33N0TlwrncH" role="2tJFKM">
+          <ref role="2aWVGs" node="33N0Tlwri2j" resolve="skipped_evaluation_linters" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2wR3oc" id="33N0Tlwrn$q">
+    <ref role="2wR3oD" to="emnw:30a3800NEqs" resolve="model_name_contains_only_ascii_characters" />
   </node>
 </model>
 

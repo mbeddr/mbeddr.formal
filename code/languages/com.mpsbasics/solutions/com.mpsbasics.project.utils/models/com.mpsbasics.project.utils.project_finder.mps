@@ -22,6 +22,8 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="z1c4" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
+    <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
+    <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -128,6 +130,9 @@
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
+        <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -181,6 +186,35 @@
   <node concept="312cEu" id="1fyC0RHIfK6">
     <property role="TrG5h" value="ProjectHelper" />
     <node concept="2tJIrI" id="1fyC0RHIfKA" role="jymVt" />
+    <node concept="2YIFZL" id="7HJqs_aCpYE" role="jymVt">
+      <property role="TrG5h" value="getProjectManager" />
+      <node concept="3clFbS" id="7HJqs_aCpYF" role="3clF47">
+        <node concept="3clFbF" id="7HJqs_aCpYG" role="3cqZAp">
+          <node concept="2OqwBi" id="7HJqs_aCurS" role="3clFbG">
+            <node concept="2OqwBi" id="7HJqs_aCunD" role="2Oq$k0">
+              <node concept="2YIFZM" id="7HJqs_aCttb" role="2Oq$k0">
+                <ref role="1Pybhc" to="3a50:~MPSCoreComponents" resolve="MPSCoreComponents" />
+                <ref role="37wK5l" to="3a50:~MPSCoreComponents.getInstance()" resolve="getInstance" />
+              </node>
+              <node concept="liA8E" id="7HJqs_aCunE" role="2OqNvi">
+                <ref role="37wK5l" to="3a50:~MPSCoreComponents.getPlatform()" resolve="getPlatform" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7HJqs_aCurT" role="2OqNvi">
+              <ref role="37wK5l" to="wyuk:~ComponentHost.findComponent(java.lang.Class)" resolve="findComponent" />
+              <node concept="3VsKOn" id="7HJqs_aCurU" role="37wK5m">
+                <ref role="3VsUkX" to="z1c3:~ProjectManager" resolve="ProjectManager" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7HJqs_aCpYM" role="1B3o_S" />
+      <node concept="3uibUv" id="7HJqs_aCpYN" role="3clF45">
+        <ref role="3uigEE" to="z1c3:~ProjectManager" resolve="ProjectManager" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="HC5JPazRN_" role="jymVt" />
     <node concept="2YIFZL" id="3SfdbygO2ck" role="jymVt">
       <property role="TrG5h" value="getCurrentlyFocusedMPSProject" />
       <node concept="3clFbS" id="3SfdbygO2cl" role="3clF47">
@@ -194,9 +228,8 @@
               </node>
             </node>
             <node concept="2OqwBi" id="UvPwwl88xh" role="33vP2m">
-              <node concept="2YIFZM" id="UvPwwl88xi" role="2Oq$k0">
-                <ref role="1Pybhc" to="z1c3:~ProjectManager" resolve="ProjectManager" />
-                <ref role="37wK5l" to="z1c3:~ProjectManager.getInstance()" resolve="getInstance" />
+              <node concept="1rXfSq" id="HC5JPazWaR" role="2Oq$k0">
+                <ref role="37wK5l" node="7HJqs_aCpYE" resolve="getProjectManager" />
               </node>
               <node concept="liA8E" id="UvPwwl88xj" role="2OqNvi">
                 <ref role="37wK5l" to="z1c3:~ProjectManager.getOpenedProjects()" resolve="getOpenedProjects" />

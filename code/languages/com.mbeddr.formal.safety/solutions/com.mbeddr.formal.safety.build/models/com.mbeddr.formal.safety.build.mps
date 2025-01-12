@@ -12351,11 +12351,6 @@
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="y1G8y6aW2k" role="3bR37C">
-          <node concept="3bR9La" id="y1G8y6aW2l" role="1SiIV1">
-            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
-          </node>
-        </node>
         <node concept="1BupzO" id="y1G8y6aW2x" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -12693,11 +12688,6 @@
         <node concept="1SiIV0" id="jPgKPEIjIs" role="3bR37C">
           <node concept="3bR9La" id="jPgKPEIjIt" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="jPgKPEIjIu" role="3bR37C">
-          <node concept="3bR9La" id="jPgKPEIjIv" role="1SiIV1">
-            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
         <node concept="1BupzO" id="jPgKPEIjIF" role="3bR31x">
@@ -13122,11 +13112,6 @@
             <node concept="3qWCbU" id="5TezZ1VejmX" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="55oVyA0sXc3" role="3bR37C">
-          <node concept="3bR9La" id="55oVyA0sXc4" role="1SiIV1">
-            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
         <node concept="1SiIV0" id="4JYWwihDhXh" role="3bR37C">
@@ -13630,11 +13615,6 @@
             <node concept="3LWZYx" id="1TD_kqslcyi" role="3LXTna">
               <property role="3LWZYw" value="com/fasten/safety/fmea/structure/*.png" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="7ybnZGKpprH" role="3bR37C">
-          <node concept="3bR9La" id="7ybnZGKpprI" role="1SiIV1">
-            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
         <node concept="1SiIV0" id="8xY_IhvyZf" role="3bR37C">
@@ -15184,11 +15164,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6Z2HiVHt9t5" role="3bR37C">
-          <node concept="3bR9La" id="6Z2HiVHt9t6" role="1SiIV1">
-            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
-          </node>
-        </node>
         <node concept="1BupzO" id="6Z2HiVHt9ti" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -15230,6 +15205,11 @@
         <node concept="1SiIV0" id="4lJSf3Lkj2Z" role="3bR37C">
           <node concept="3bR9La" id="4lJSf3Lkj30" role="1SiIV1">
             <ref role="3bR37D" node="4lJSf3LkfPw" resolve="com.mpsbasics.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1TpxQu7pTJ_" role="3bR37C">
+          <node concept="3bR9La" id="1TpxQu7pTJA" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
       </node>
@@ -20271,8 +20251,12 @@
       <node concept="22LTRM" id="1$9jWFVFLN$" role="22LTRK">
         <ref role="22LTRN" node="1$9jWFVFLHG" resolve="test.com.fasten.safety.ft.xfta" />
       </node>
-      <node concept="22LTRM" id="4ziKDEnkJqu" role="22LTRK">
-        <ref role="22LTRN" node="4ziKDEnkJiX" resolve="test.com.fasten.safety.doc2word" />
+      <node concept="1X3_iC" id="1TpxQu7qrCS" role="lGtFl">
+        <property role="3V$3am" value="modules" />
+        <property role="3V$3ak" value="3600cb0a-44dd-4a5b-9968-22924406419e/4560297596904469357/4560297596904469360" />
+        <node concept="22LTRM" id="4ziKDEnkJqu" role="8Wnug">
+          <ref role="22LTRN" node="4ziKDEnkJiX" resolve="test.com.fasten.safety.doc2word" />
+        </node>
       </node>
       <node concept="22LTRM" id="36k0PnKL7xU" role="22LTRK">
         <ref role="22LTRN" node="36k0PnKL5au" resolve="test.com.fasten.safety.ft" />
