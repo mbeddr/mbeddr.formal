@@ -20251,8 +20251,12 @@
       <node concept="22LTRM" id="1$9jWFVFLN$" role="22LTRK">
         <ref role="22LTRN" node="1$9jWFVFLHG" resolve="test.com.fasten.safety.ft.xfta" />
       </node>
-      <node concept="22LTRM" id="4ziKDEnkJqu" role="22LTRK">
-        <ref role="22LTRN" node="4ziKDEnkJiX" resolve="test.com.fasten.safety.doc2word" />
+      <node concept="1X3_iC" id="1TpxQu7qrCS" role="lGtFl">
+        <property role="3V$3am" value="modules" />
+        <property role="3V$3ak" value="3600cb0a-44dd-4a5b-9968-22924406419e/4560297596904469357/4560297596904469360" />
+        <node concept="22LTRM" id="4ziKDEnkJqu" role="8Wnug">
+          <ref role="22LTRN" node="4ziKDEnkJiX" resolve="test.com.fasten.safety.doc2word" />
+        </node>
       </node>
       <node concept="22LTRM" id="36k0PnKL7xU" role="22LTRK">
         <ref role="22LTRN" node="36k0PnKL5au" resolve="test.com.fasten.safety.ft" />
