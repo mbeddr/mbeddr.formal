@@ -15,6 +15,7 @@
     <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
     <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
+    <dependency reexport="false">792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f89904fb-9486-43a1-865e-5ad0375a8a88:de.itemis.mps.editor.bool" version="0" />
@@ -64,6 +65,7 @@
     <module reference="dc773f77-cced-42c8-ba62-465140b810a5(com.fasten.safety.fmea.iso26262)" version="0" />
     <module reference="fff52720-b1df-4cd2-a8f7-d487bca333ba(com.fasten.safety.fmeda)" version="0" />
     <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
+    <module reference="792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />

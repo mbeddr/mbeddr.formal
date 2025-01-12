@@ -2,9 +2,13 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/fasten.symo.plantuml/fasten.symo.plantuml.devkit" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.symo.hw/com.fasten.symo.hw.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.symo.plantuml/com.symo.plantuml.mpl" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/languages/com.symo.sysml.ibd/com.symo.sysml.ibd.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.symo.hw.sandbox/com.fasten.symo.hw.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.symo.plantuml.lib/com.symo.plantuml.lib.msd" folder="plantuml" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.symo.plantuml.sandbox/com.symo.plantuml.sandbox.msd" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.sysml.ibd.sandbox/com.symo.sysml.ibd.sandbox.msd" folder="" />
     </projectModules>
   </component>

@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="ula4" ref="r:d3a814d2-9602-4041-8e3a-b08bde780524(com.mbeddr.formal.nusmv.operatorspanel.structure)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
   </imports>
@@ -111,7 +112,7 @@
         </node>
         <node concept="3F0ifn" id="1l_ZFOWquha" role="3EZMnx">
           <property role="3F0ifm" value="(" />
-          <ref role="1k5W1q" to="xnej:2CEi94dh36z" resolve="ParensStyle" />
+          <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
           <node concept="11LMrY" id="6UJZwEqm8nF" role="3F10Kt">
             <property role="VOm3f" value="true" />
           </node>
@@ -122,7 +123,7 @@
         </node>
         <node concept="3F0ifn" id="1l_ZFOWqu71" role="3EZMnx">
           <property role="3F0ifm" value=")" />
-          <ref role="1k5W1q" to="xnej:2CEi94dh36z" resolve="ParensStyle" />
+          <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
         </node>
         <node concept="3F0ifn" id="1l_ZFOWqu7b" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -151,7 +152,7 @@
       </node>
       <node concept="3F0ifn" id="1l_ZFOWquhD" role="3EZMnx">
         <property role="3F0ifm" value="(" />
-        <ref role="1k5W1q" to="xnej:2CEi94dh36z" resolve="ParensStyle" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
         <node concept="11LMrY" id="6UJZwEqmFAj" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -161,7 +162,7 @@
       </node>
       <node concept="3F0ifn" id="1l_ZFOWqui0" role="3EZMnx">
         <property role="3F0ifm" value=")" />
-        <ref role="1k5W1q" to="xnej:2CEi94dh36z" resolve="ParensStyle" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
       </node>
       <node concept="2iRfu4" id="1l_ZFOWquhv" role="2iSdaV" />
     </node>
@@ -189,7 +190,7 @@
       </node>
       <node concept="3F0ifn" id="1l_ZFOWquji" role="3EZMnx">
         <property role="3F0ifm" value=";" />
-        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+        <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
       </node>
       <node concept="l2Vlx" id="1l_ZFOWquiN" role="2iSdaV" />
     </node>

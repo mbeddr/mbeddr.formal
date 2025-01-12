@@ -123,92 +123,6 @@
       </node>
     </node>
   </node>
-  <node concept="1TIwiD" id="3Jn$RV31nMt">
-    <property role="EcuMT" value="4312077340877618333" />
-    <property role="TrG5h" value="ODDAttribute" />
-    <property role="34LRSv" value="attribute" />
-    <property role="3GE5qa" value="odd_attribute" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3Jn$RV31nMu" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="3RNDPbLZSof" role="PzmwI">
-      <ref role="PrY4T" node="3RNDPbLZSob" resolve="IODDContent" />
-    </node>
-    <node concept="1TJgyj" id="3Jn$RV31pil" role="1TKVEi">
-      <property role="IQ2ns" value="4312077340877624469" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="dimensions" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1wKSXwEBX_e" resolve="IODDParameterDimensionLike" />
-    </node>
-    <node concept="1TJgyj" id="1wKSXwEBhCU" role="1TKVEi">
-      <property role="IQ2ns" value="1743143573359761978" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="concepts" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" to="6wa3:1wKSXwEBhCv" resolve="OntologyConceptRef" />
-    </node>
-    <node concept="1TJgyj" id="2_d9ZRvW8tn" role="1TKVEi">
-      <property role="IQ2ns" value="2976078900099057495" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <property role="20kJfa" value="oddAttributeRelations" />
-      <ref role="20lvS9" node="2_d9ZRvW8sM" resolve="ODDAttributeRef" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3Jn$RV31p8M">
-    <property role="EcuMT" value="4312077340877623858" />
-    <property role="TrG5h" value="ODDAttributeDimension" />
-    <property role="34LRSv" value="dimension" />
-    <property role="3GE5qa" value="odd_attribute" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3Jn$RV31tXH" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="1wKSXwEBX_i" role="PzmwI">
-      <ref role="PrY4T" node="1wKSXwEBX_e" resolve="IODDParameterDimensionLike" />
-    </node>
-    <node concept="1TJgyj" id="1UJ51yZ_N2a" role="1TKVEi">
-      <property role="IQ2ns" value="2211008038588330122" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="concepts" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" to="6wa3:1wKSXwEBhCv" resolve="OntologyConceptRef" />
-    </node>
-    <node concept="1TJgyi" id="2_d9ZRvRytm" role="1TKVEl">
-      <property role="IQ2nx" value="2976078900097853270" />
-      <property role="TrG5h" value="note" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3Jn$RV31uaP">
-    <property role="EcuMT" value="4312077340877644469" />
-    <property role="TrG5h" value="DimensionAlternative" />
-    <property role="34LRSv" value="alternative" />
-    <property role="3GE5qa" value="odd_attribute" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3Jn$RV31uaQ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="1TJgyj" id="1UJ51yZ_YiA" role="1TKVEi">
-      <property role="IQ2ns" value="2211008038588376230" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="concepts" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" to="6wa3:1wKSXwEBhCv" resolve="OntologyConceptRef" />
-    </node>
-    <node concept="1TJgyi" id="2_d9ZRvTmT7" role="1TKVEl">
-      <property role="IQ2nx" value="2976078900098330183" />
-      <property role="TrG5h" value="note" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="2_d9ZRvTmTM" role="1TKVEl">
-      <property role="IQ2nx" value="2976078900098330226" />
-      <property role="TrG5h" value="included" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="3Jn$RV31w1l">
     <property role="EcuMT" value="4312077340877652053" />
     <property role="TrG5h" value="Ontology_old" />
@@ -305,49 +219,6 @@
       <property role="YLQ7P" value="The concept was moved to language &quot;com.fasten.req.ontology&quot;" />
     </node>
   </node>
-  <node concept="PlHQZ" id="1wKSXwEBX_e">
-    <property role="EcuMT" value="1743143573359941966" />
-    <property role="TrG5h" value="IODDParameterDimensionLike" />
-    <node concept="1TJgyj" id="3Jn$RV31uaX" role="1TKVEi">
-      <property role="IQ2ns" value="4312077340877644477" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="alternatives" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3Jn$RV31uaP" resolve="DimensionAlternative" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="1wKSXwECACA">
-    <property role="EcuMT" value="1743143573360110118" />
-    <property role="TrG5h" value="ODDAttributeWordRef" />
-    <property role="34LRSv" value="@odd-attribute" />
-    <property role="3GE5qa" value="odd_attribute" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1wKSXwECALk" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-    <node concept="1TJgyj" id="1wKSXwECALm" role="1TKVEi">
-      <property role="IQ2ns" value="1743143573360110678" />
-      <property role="20kJfa" value="param" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3Jn$RV31nMt" resolve="ODDAttribute" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="NY_g42e1PC">
-    <property role="EcuMT" value="936349604104379752" />
-    <property role="TrG5h" value="ODDAttributeDimensionWordRef" />
-    <property role="34LRSv" value="@odd-dimension" />
-    <property role="3GE5qa" value="odd_attribute" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="NY_g42e1PD" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-    <node concept="1TJgyj" id="NY_g42e1PF" role="1TKVEi">
-      <property role="IQ2ns" value="936349604104379755" />
-      <property role="20kJfa" value="dim" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3Jn$RV31p8M" resolve="ODDAttributeDimension" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="7gUa1Zsy25c">
     <property role="EcuMT" value="8375050574357864780" />
     <property role="TrG5h" value="IOntologyContent_old" />
@@ -361,7 +232,7 @@
     <property role="TrG5h" value="EmptyLine" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7gUa1Zsy25p" role="PzmwI">
-      <ref role="PrY4T" to="6wa3:7gUa1Zsy25c" resolve="IOntologyContent" />
+      <ref role="PrY4T" node="3RNDPbLZSob" resolve="IODDContent" />
     </node>
   </node>
   <node concept="PlHQZ" id="3RNDPbLZSob">
@@ -397,9 +268,6 @@
     <property role="TrG5h" value="ODDSentenceBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3RNDPbM04SA" role="PzmwI">
-      <ref role="PrY4T" node="3RNDPbLZSob" resolve="IODDContent" />
-    </node>
     <node concept="1TJgyj" id="3RNDPbM04Sa" role="1TKVEi">
       <property role="IQ2ns" value="4464095630343556618" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -498,21 +366,16 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2_d9ZRvW8sM">
-    <property role="EcuMT" value="2976078900099057458" />
-    <property role="3GE5qa" value="odd_attribute" />
-    <property role="TrG5h" value="ODDAttributeRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="2_d9ZRvW8sP" role="1TKVEi">
-      <property role="IQ2ns" value="2976078900099057461" />
-      <property role="20kJfa" value="oddAttribute" />
+  <node concept="1TIwiD" id="opo3atlsiK">
+    <property role="EcuMT" value="439488209149609136" />
+    <property role="TrG5h" value="OntologyRelationTargetDotTarget" />
+    <property role="3GE5qa" value="odd_sentence" />
+    <ref role="1TJDcQ" to="ehqg:7mSH3WmWS3l" resolve="DotTarget" />
+    <node concept="1TJgyj" id="opo3atlsiL" role="1TKVEi">
+      <property role="IQ2ns" value="439488209149609137" />
+      <property role="20kJfa" value="concept" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3Jn$RV31nMt" resolve="ODDAttribute" />
-    </node>
-    <node concept="1TJgyi" id="2_d9ZRvW8tG" role="1TKVEl">
-      <property role="IQ2nx" value="2976078900099057516" />
-      <property role="TrG5h" value="relationType" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <ref role="20lvS9" to="6wa3:3Jn$RV31w1o" resolve="OntologyConcept" />
     </node>
   </node>
 </model>

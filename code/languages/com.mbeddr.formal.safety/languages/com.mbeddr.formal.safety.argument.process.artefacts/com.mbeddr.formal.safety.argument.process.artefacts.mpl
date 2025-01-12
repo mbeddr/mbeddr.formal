@@ -19,6 +19,7 @@
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
     <dependency reexport="false">e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)</dependency>
+    <dependency reexport="false">792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:3bdedd09-792a-4e15-a4db-83970df3ee86:de.itemis.mps.editor.collapsible" version="0" />
@@ -68,6 +69,7 @@
     <module reference="fdecb1e5-875e-41ef-a5fd-4b18f747f204(com.mbeddr.formal.safety.argument.process.artefacts)" version="0" />
     <module reference="e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)" version="0" />
     <module reference="d3a0fd26-445a-466c-900e-10444ddfed52(com.mbeddr.mpsutil.filepicker)" version="0" />
+    <module reference="792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
     <module reference="7b45fa94-2707-4a1a-9e6a-ce40c4aaf35a(de.itemis.mps.editor.collapsible.runtime)" version="0" />

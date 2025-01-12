@@ -5,5 +5,6 @@
   <exported-language name="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" />
   <exported-language name="65ed2ac6-4499-4751-951e-3819684a4b8d(com.fasten.req.ontology)" />
   <exported-language name="3460ac43-6f59-4f61-b134-9fa2f799c2d3(com.mbeddr.formal.req.scenarios)" />
+  <exported-language name="f52452b6-7f99-441b-98f9-a98c52b92236(com.fasten.req.odd)" />
 </dev-kit>
 

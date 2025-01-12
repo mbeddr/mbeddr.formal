@@ -19,7 +19,8 @@
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:b0b65429-cd22-4e2a-83e7-cd58bc6dd72f:com.mbeddr.formal.base.expressions" version="0" />
     <language slang="l:0deccdfd-196b-4d8c-895e-0d6cb8014dfd:com.mbeddr.formal.req.base" version="0" />
-    <language slang="l:83ad0200-6e50-4939-a389-76bf899be11b:com.mbeddr.formal.req.nusmv" version="0" />
+    <language slang="l:3460ac43-6f59-4f61-b134-9fa2f799c2d3:com.mbeddr.formal.req.scenarios" version="0" />
+    <language slang="l:5ff577d1-1817-495b-9d6c-ff7b52c68609:com.mbeddr.formal.req.tl_patterns" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>

@@ -10,6 +10,7 @@
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="9br2" ref="r:70aadfb3-8246-45ac-bcd1-b345c7f7cfe4(com.mbeddr.formal.safety.argument.modelquery.structure)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
   </imports>
   <registry>
@@ -58,11 +59,19 @@
       <concept id="1196350785113" name="jetbrains.mps.lang.quotation.structure.Quotation" flags="nn" index="2c44tf">
         <child id="1196350785114" name="quotedNode" index="2c44tc" />
       </concept>
+      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
+        <reference id="5455284157994012188" name="link" index="2pIpSl" />
+        <child id="1595412875168045827" name="initValue" index="28nt2d" />
+      </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
       </concept>
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+        <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="8182547171709614739" name="jetbrains.mps.lang.quotation.structure.NodeBuilderRef" flags="nn" index="36bGnv">
+        <reference id="8182547171709614741" name="target" index="36bGnp" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -151,10 +160,28 @@
       <ref role="13i0hy" to="tpek:hEwIGRD" resolve="getExpectedReturnType" />
       <node concept="3Tm1VV" id="y1G8y67LAR" role="1B3o_S" />
       <node concept="3clFbS" id="y1G8y67LAT" role="3clF47">
-        <node concept="3clFbF" id="y1G8y67LJ5" role="3cqZAp">
-          <node concept="2pJPEk" id="y1G8y67LQT" role="3clFbG">
-            <node concept="2pJPED" id="y1G8y67LQV" role="2pJPEn">
-              <ref role="2pJxaS" to="tpee:hP7QB7G" resolve="StringType" />
+        <node concept="3clFbF" id="7OA8CsReL_h" role="3cqZAp">
+          <node concept="2pJPEk" id="7OA8CsReL_i" role="3clFbG">
+            <node concept="2pJPED" id="7OA8CsReL_j" role="2pJPEn">
+              <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
+              <node concept="2pIpSj" id="2zdrQh77h27" role="2pJxcM">
+                <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
+                <node concept="36bGnv" id="2zdrQh77h28" role="28nt2d">
+                  <ref role="36bGnp" to="zn9m:~Pair" resolve="Pair" />
+                </node>
+              </node>
+              <node concept="2pIpSj" id="75npNYZJ2P5" role="2pJxcM">
+                <ref role="2pIpSl" to="tpee:g91_B6F" resolve="parameter" />
+                <node concept="2pJPED" id="75npNYZJ2Sf" role="28nt2d">
+                  <ref role="2pJxaS" to="tpee:f_0P_4Y" resolve="BooleanType" />
+                </node>
+              </node>
+              <node concept="2pIpSj" id="2zdrQh77h29" role="2pJxcM">
+                <ref role="2pIpSl" to="tpee:g91_B6F" resolve="parameter" />
+                <node concept="2pJPED" id="2zdrQh77h2a" role="28nt2d">
+                  <ref role="2pJxaS" to="tpee:hP7QB7G" resolve="StringType" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

@@ -11,6 +11,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -98,7 +99,7 @@
     <node concept="3EZMnI" id="6glUKoNPfWh" role="2wV5jI">
       <node concept="2iRkQZ" id="6glUKoNPfWi" role="2iSdaV" />
       <node concept="PMmxH" id="4gtLUSMLpyr" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F2HdR" id="6glUKoNLIpu" role="3EZMnx">
         <ref role="1NtTu8" to="rcfd:6glUKoNLInE" resolve="content" />

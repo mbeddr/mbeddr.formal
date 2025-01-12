@@ -20,6 +20,7 @@
     <dependency reexport="false">e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">6b84fb9e-5f09-4a61-bf31-3bfdc54820e3(com.mpsbasics.editor.utils)</dependency>
+    <dependency reexport="false">792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:fa13cc63-c476-4d46-9c96-d53670abe7bc:de.itemis.mps.editor.diagram" version="1" />
@@ -80,6 +81,7 @@
     <module reference="e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)" version="0" />
     <module reference="17da266c-02d9-4bbd-b69b-8a656b49f45c(com.mbeddr.formal.safety.hara)" version="0" />
     <module reference="7e777b53-0a6b-4719-b36d-10475788d49f(com.mbeddr.formal.safety.stamp)" version="0" />
+    <module reference="792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)" version="0" />
     <module reference="6b84fb9e-5f09-4a61-bf31-3bfdc54820e3(com.mpsbasics.editor.utils)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />

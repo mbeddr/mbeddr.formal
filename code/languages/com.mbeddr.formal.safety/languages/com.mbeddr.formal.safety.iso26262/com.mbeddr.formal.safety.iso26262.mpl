@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="com.mbeddr.formal.safety.iso26262" uuid="a798113f-e2cd-4e21-a8e2-ca1903cb9c43" languageVersion="1" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
@@ -13,8 +13,8 @@
   <accessoryModels />
   <dependencies>
     <dependency reexport="false">17da266c-02d9-4bbd-b69b-8a656b49f45c(com.mbeddr.formal.safety.hara)</dependency>
-    <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
     <dependency reexport="false">c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)</dependency>
+    <dependency reexport="false">792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:31c91def-a131-41a1-9018-102874f49a12:de.slisson.mps.editor.multiline" version="0" />
@@ -63,9 +63,9 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
     <module reference="17da266c-02d9-4bbd-b69b-8a656b49f45c(com.mbeddr.formal.safety.hara)" version="0" />
     <module reference="a798113f-e2cd-4e21-a8e2-ca1903cb9c43(com.mbeddr.formal.safety.iso26262)" version="0" />
+    <module reference="792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
     <module reference="cce85e64-7b37-4ad5-b0e6-9d18324cdfb3(de.itemis.mps.selection.runtime)" version="0" />

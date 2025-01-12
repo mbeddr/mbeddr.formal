@@ -9,6 +9,7 @@
   <imports>
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="osta" ref="r:20be8470-9022-48a8-b125-64f3bb097af5(com.fasten.symo.hw.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -210,7 +211,7 @@
     <ref role="1XX52x" to="osta:2gpUZARgYrl" resolve="PlatformArchitecture" />
     <node concept="3EZMnI" id="2gpUZARgYI6" role="2wV5jI">
       <node concept="PMmxH" id="2gpUZARgZ67" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="2gpUZARgZdH" role="3EZMnx" />
       <node concept="27vDVx" id="2gpUZARgZlo" role="3EZMnx">

@@ -13,6 +13,7 @@
     <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="1706" ref="r:ae7628a3-99c3-40af-bbb8-ad72da8dfcc8(com.fasten.base.activity.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -319,7 +320,7 @@
     <node concept="3EZMnI" id="4CA5ZMJ3tsv" role="2wV5jI">
       <node concept="2iRkQZ" id="4CA5ZMJ3tsw" role="2iSdaV" />
       <node concept="PMmxH" id="4mOCK0sB6Lg" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="4CA5ZMJ6b8y" role="3EZMnx" />
       <node concept="PMmxH" id="3QO5pQQIAyd" role="3EZMnx">

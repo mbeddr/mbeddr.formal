@@ -36,6 +36,7 @@
     <import index="wfnd" ref="r:5f5edb09-c9b1-47da-a374-00a0a908694a(com.mbeddr.formal.base.arch.editor)" />
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="sn11" ref="r:836426ab-a6f4-4fa3-9a9c-34c02ed6ab5d(jetbrains.mps.ide.icons)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="irze" ref="r:afe10199-b53f-473f-86e1-bb9b9bb07417(com.mbeddr.formal.nusmv.arch.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
@@ -3118,7 +3119,7 @@
             <node concept="238au4" id="5sbrvaMhQu0" role="23bJyd">
               <node concept="3F0ifn" id="5sbrvaMhUa9" role="2wV5jI">
                 <property role="3F0ifm" value="TRUE" />
-                <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
+                <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
               </node>
             </node>
             <node concept="3Tqbb2" id="5sbrvaMhQYE" role="2M4AHM">
@@ -3168,7 +3169,7 @@
             <node concept="238au4" id="2zzTeYigHNS" role="23bJyd">
               <node concept="3F0ifn" id="2zzTeYigHNT" role="2wV5jI">
                 <property role="3F0ifm" value="FALSE" />
-                <ref role="1k5W1q" to="xnej:6NmtaR1SVrw" resolve="KeywordStyle" />
+                <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
               </node>
             </node>
             <node concept="3Tqbb2" id="2zzTeYigHNU" role="2M4AHM">
