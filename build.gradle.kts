@@ -436,7 +436,7 @@ tasks {
         "com.mbeddr.formal.safety",
     ).map { layout.projectDirectory.dir("code/languages/$it") }
 
-    val pluginRootsForMigration = listOf(mpsHomeDir.resolve("plugins"), dependenciesDir.asFile)
+    val pluginRootsForMigration = mpsHomeDir.listFiles()
 
     val migrate by registering(MpsMigrate::class) {
         dependsOn(resolveMps, downloadJbr, build_all_languages)
