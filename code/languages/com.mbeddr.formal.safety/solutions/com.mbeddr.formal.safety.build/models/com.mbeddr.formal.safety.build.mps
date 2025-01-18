@@ -1191,6 +1191,9 @@
       <node concept="m$f5U" id="7he_lUuvobF" role="m$_yh">
         <ref role="m$f5T" node="7he_lUuvmPg" resolve="fasten.safety.devkit" />
       </node>
+      <node concept="m$f5U" id="9wBdtpFYS$" role="m$_yh">
+        <ref role="m$f5T" node="9wBdtpFVAE" resolve="fasten.docs.devkit" />
+      </node>
       <node concept="m$f5U" id="7he_lUuvms1" role="m$_yh">
         <ref role="m$f5T" node="7he_lUuvh8_" resolve="fasten.safety.gsn.devkit" />
       </node>
@@ -14928,6 +14931,11 @@
             <ref role="3bR37D" node="6i5G5_YU7r7" resolve="com.mbeddr.formal.safety.argument.spi" />
           </node>
         </node>
+        <node concept="1SiIV0" id="9wBdtpFYqW" role="3bR37C">
+          <node concept="3bR9La" id="9wBdtpFYqX" role="1SiIV1">
+            <ref role="3bR37D" node="2u7UHDC1TKp" resolve="com.mpsbasics.pdfexporter" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4ziKDEngAys" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -16198,6 +16206,35 @@
         </node>
         <node concept="3LEDTy" id="16Akbu5cbIl" role="3LEDUa">
           <ref role="3LEDTV" node="7he_lUuxic9" resolve="com.mbeddr.formal.safety.req" />
+        </node>
+        <node concept="3LEz8M" id="9wBdtpFZKd" role="3LEz9a">
+          <ref role="3LEz8N" node="9wBdtpFVAF" resolve="fasten.docs" />
+        </node>
+      </node>
+    </node>
+    <node concept="2G$12M" id="9wBdtpFVAE" role="3989C9">
+      <property role="TrG5h" value="fasten.docs.devkit" />
+      <node concept="3LEwk6" id="9wBdtpFVAF" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="fasten.docs" />
+        <property role="3LESm3" value="b5694cc1-d827-430b-bf03-ac5910fa8aa7" />
+        <node concept="398BVA" id="9wBdtpFVAG" role="3LF7KH">
+          <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="9wBdtpFVAH" role="iGT6I">
+            <property role="2Ry0Am" value="devkits" />
+            <node concept="2Ry0Ak" id="9wBdtpFVAI" role="2Ry0An">
+              <property role="2Ry0Am" value="fasten.docs" />
+              <node concept="2Ry0Ak" id="9wBdtpFX$I" role="2Ry0An">
+                <property role="2Ry0Am" value="fasten.docs.devkit" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3LEz8M" id="9wBdtpFYso" role="3LEz9a">
+          <ref role="3LEz8N" to="al5i:7tNo_gxoK9_" resolve="com.mbeddr.documentation" />
+        </node>
+        <node concept="3LEDTy" id="9wBdtpFYsp" role="3LEDUa">
+          <ref role="3LEDTV" node="2u7UHDC1TKp" resolve="com.mpsbasics.pdfexporter" />
         </node>
       </node>
     </node>

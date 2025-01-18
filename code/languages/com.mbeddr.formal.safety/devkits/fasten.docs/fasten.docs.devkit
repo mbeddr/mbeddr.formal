@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="fasten.docs" uuid="b5694cc1-d827-430b-bf03-ac5910fa8aa7">
+  <exported-language name="ece26728-2885-4b26-9f61-67d2821fc361(com.mpsbasics.pdfexporter)" />
+  <extendedDevKits>
+    <extendedDevKit>54c79f9f-f3ba-4167-91f1-eb4e98a9c47c(com.mbeddr.documentation)</extendedDevKit>
+  </extendedDevKits>
+</dev-kit>
+
