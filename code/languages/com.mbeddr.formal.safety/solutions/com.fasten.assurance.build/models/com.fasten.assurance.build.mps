@@ -5346,9 +5346,9 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5Gu43O52l0e" role="3bR37C">
-          <node concept="3bR9La" id="5Gu43O52l0f" role="1SiIV1">
-            <ref role="3bR37D" node="4lJSf3LkfPw" resolve="com.mpsbasics.core" />
+        <node concept="1SiIV0" id="1_HYGT7LTW8" role="3bR37C">
+          <node concept="1Busua" id="1_HYGT7LTW9" role="1SiIV1">
+            <ref role="1Busuk" node="4lJSf3LkfPw" resolve="com.mpsbasics.core" />
           </node>
         </node>
       </node>
