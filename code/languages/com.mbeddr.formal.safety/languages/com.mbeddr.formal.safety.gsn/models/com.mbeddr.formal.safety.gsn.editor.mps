@@ -14945,7 +14945,46 @@
     <node concept="2aJ2om" id="4yKSwbd2KSI" role="CpUAK">
       <ref role="2$4xQ3" node="5uFV_KKBhnn" resolve="GOAL_STRUCTURE_TEXTUAL" />
     </node>
-    <node concept="3F0ifn" id="4yKSwbd2RPD" role="2wV5jI" />
+    <node concept="1HlG4h" id="3pul3T6BgJ7" role="2wV5jI">
+      <ref role="1k5W1q" to="xnej:50UR0qsbFdm" resolve="ConnectionStyle_Dynamic" />
+      <node concept="VSNWy" id="3pul3T6BhTD" role="3F10Kt">
+        <node concept="1cFabM" id="3pul3T6BhTE" role="1d8cEk">
+          <node concept="3clFbS" id="3pul3T6BhTF" role="2VODD2">
+            <node concept="3clFbF" id="3pul3T6BhTG" role="3cqZAp">
+              <node concept="3cpWsd" id="3pul3T6BhTH" role="3clFbG">
+                <node concept="3cmrfG" id="3pul3T6BhTI" role="3uHU7w">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="2OqwBi" id="3pul3T6BhTJ" role="3uHU7B">
+                  <node concept="2YIFZM" id="3pul3T6BhTK" role="2Oq$k0">
+                    <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+                  </node>
+                  <node concept="liA8E" id="3pul3T6BhTL" role="2OqNvi">
+                    <ref role="37wK5l" to="exr9:~EditorSettings.getFontSize()" resolve="getFontSize" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1HfYo3" id="3pul3T6BgJ9" role="1HlULh">
+        <node concept="3TQlhw" id="3pul3T6BgJb" role="1Hhtcw">
+          <node concept="3clFbS" id="3pul3T6BgJd" role="2VODD2">
+            <node concept="3clFbF" id="3pul3T6BjYA" role="3cqZAp">
+              <node concept="2OqwBi" id="3pul3T6BjYB" role="3clFbG">
+                <node concept="2OqwBi" id="3pul3T6BjYC" role="2Oq$k0">
+                  <node concept="pncrf" id="3pul3T6BjYD" role="2Oq$k0" />
+                  <node concept="2yIwOk" id="3pul3T6BjYE" role="2OqNvi" />
+                </node>
+                <node concept="3n3YKJ" id="3pul3T6BjYF" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="4yKSwbd6Fxy">
     <ref role="1XX52x" to="py52:336$aoT_UFY" resolve="GoalStructureDoc" />
