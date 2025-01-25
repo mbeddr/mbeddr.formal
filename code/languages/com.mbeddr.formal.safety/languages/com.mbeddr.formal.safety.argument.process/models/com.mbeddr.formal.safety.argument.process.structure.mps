@@ -158,7 +158,7 @@
       <ref role="PrY4T" node="3f8ZVRYgSle" resolve="IBibliographyEntry" />
     </node>
     <node concept="PrWs8" id="3pul3T6tra6" role="PzmwI">
-      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="ISupportsStandardContextMenus" />
+      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="IProvideBasicContextMenus" />
     </node>
   </node>
   <node concept="PlHQZ" id="3f8ZVRYgSle">
@@ -189,7 +189,7 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="3pul3T6t1Qw" role="PzmwI">
-      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="ISupportsStandardContextMenus" />
+      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="IProvideBasicContextMenus" />
     </node>
     <node concept="PrWs8" id="3f8ZVRYhbB7" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
@@ -261,7 +261,7 @@
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
     <node concept="PrWs8" id="3pul3T6tOJR" role="PzmwI">
-      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="ISupportsStandardContextMenus" />
+      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="IProvideBasicContextMenus" />
     </node>
     <node concept="PrWs8" id="5TwIvQFvvN2" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -292,7 +292,7 @@
       <ref role="PrY4T" node="3f8ZVRYgSle" resolve="IBibliographyEntry" />
     </node>
     <node concept="PrWs8" id="3pul3T6uDEO" role="PzmwI">
-      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="ISupportsStandardContextMenus" />
+      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="IProvideBasicContextMenus" />
     </node>
   </node>
   <node concept="1TIwiD" id="5gjf2NSk5qt">
