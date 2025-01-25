@@ -71,6 +71,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -376,6 +379,27 @@
             </node>
             <node concept="WFELt" id="6zKmqpS7yjj" role="2OqNvi">
               <ref role="1A0vxQ" to="z27p:2N7iSwG$pHH" resolve="EmptyRequirement" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="1_HYGT7Ezco">
+    <property role="3GE5qa" value="words" />
+    <ref role="13h7C2" to="z27p:HiEhrZcjOS" resolve="Image" />
+    <node concept="13hLZK" id="1_HYGT7Ezcp" role="13h7CW">
+      <node concept="3clFbS" id="1_HYGT7Ezcq" role="2VODD2">
+        <node concept="3clFbF" id="1_HYGT7EzcU" role="3cqZAp">
+          <node concept="37vLTI" id="1_HYGT7EAcw" role="3clFbG">
+            <node concept="3cmrfG" id="1_HYGT7EAcM" role="37vLTx">
+              <property role="3cmrfH" value="100" />
+            </node>
+            <node concept="2OqwBi" id="1_HYGT7EzoY" role="37vLTJ">
+              <node concept="13iPFW" id="1_HYGT7EzcT" role="2Oq$k0" />
+              <node concept="3TrcHB" id="1_HYGT7EzRY" role="2OqNvi">
+                <ref role="3TsBF5" to="z27p:HiEhrZdbTU" resolve="scale" />
+              </node>
             </node>
           </node>
         </node>

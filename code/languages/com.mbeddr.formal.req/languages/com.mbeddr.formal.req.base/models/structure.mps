@@ -413,6 +413,23 @@
       <property role="20kJfa" value="reqDocument" />
       <ref role="20lvS9" node="4gtLUSMLiMx" resolve="RequirementDocument" />
     </node>
+    <node concept="1irR5M" id="1_HYGT7DCK3" role="rwd14">
+      <property role="2$rrk2" value="3" />
+      <node concept="1irR9n" id="1_HYGT7DCK6" role="1irR9h">
+        <node concept="3PKj8D" id="1_HYGT7DCK7" role="3PKjn_">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+        <node concept="3PKj8D" id="1_HYGT7DCK8" role="3PKjnB">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+      </node>
+      <node concept="1irPie" id="1_HYGT7DCK9" role="1irR9h">
+        <property role="1irPi9" value="R" />
+        <node concept="3PKj8D" id="1_HYGT7DCKa" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1TIwiD" id="5et_HVSNcF1">
     <property role="EcuMT" value="6025137760892668609" />
