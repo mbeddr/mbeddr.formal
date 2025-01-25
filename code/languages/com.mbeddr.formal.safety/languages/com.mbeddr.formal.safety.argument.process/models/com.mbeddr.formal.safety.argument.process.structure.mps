@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+    <import index="uhu" ref="r:7b6bea6a-7952-48df-9449-f3f805640b2f(com.mpsbasics.core.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -156,6 +157,9 @@
     <node concept="PrWs8" id="3f8ZVRYgSlf" role="PzmwI">
       <ref role="PrY4T" node="3f8ZVRYgSle" resolve="IBibliographyEntry" />
     </node>
+    <node concept="PrWs8" id="3pul3T6tra6" role="PzmwI">
+      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="ISupportsStandardContextMenus" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3f8ZVRYgSle">
     <property role="EcuMT" value="3731513482756195662" />
@@ -183,6 +187,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3f8ZVRYh461" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="3pul3T6t1Qw" role="PzmwI">
+      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="ISupportsStandardContextMenus" />
     </node>
     <node concept="PrWs8" id="3f8ZVRYhbB7" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
@@ -253,6 +260,9 @@
     <node concept="PrWs8" id="5gjf2NSjEgd" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
+    <node concept="PrWs8" id="3pul3T6tOJR" role="PzmwI">
+      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="ISupportsStandardContextMenus" />
+    </node>
     <node concept="PrWs8" id="5TwIvQFvvN2" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -280,6 +290,9 @@
     </node>
     <node concept="PrWs8" id="5gjf2NSjEYa" role="PzmwI">
       <ref role="PrY4T" node="3f8ZVRYgSle" resolve="IBibliographyEntry" />
+    </node>
+    <node concept="PrWs8" id="3pul3T6uDEO" role="PzmwI">
+      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="ISupportsStandardContextMenus" />
     </node>
   </node>
   <node concept="1TIwiD" id="5gjf2NSk5qt">
