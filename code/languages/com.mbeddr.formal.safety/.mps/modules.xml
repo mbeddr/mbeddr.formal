@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/fasten.docs/fasten.docs.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.fmea.arch/fasten.safety.fmea.arch.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.fmea/fasten.safety.fmea.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety.ft/fasten.safety.ft.devkit" folder="" />
