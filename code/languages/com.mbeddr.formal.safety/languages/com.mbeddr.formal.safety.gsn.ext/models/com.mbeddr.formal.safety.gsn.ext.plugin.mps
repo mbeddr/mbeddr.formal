@@ -9,6 +9,7 @@
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -30,6 +31,7 @@
     <import index="5pac" ref="r:c1e7e8ce-abfe-4b41-9ced-20ab8db5bd60(com.mbeddr.formal.safety.gsn.ext.behavior)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="zgib" ref="r:903ee02f-828a-46a1-95b8-23d503790e08(com.mbeddr.formal.safety.gsn.ext.intentions)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
@@ -72,6 +74,9 @@
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg">
@@ -85,6 +90,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -4300,6 +4308,104 @@
       </node>
       <node concept="2AHcQZ" id="x1FXquvSS" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lYeZD" id="1_HYGT7OXg6">
+    <property role="TrG5h" value="GsnSemanticLayouter" />
+    <property role="3GE5qa" value="layouting" />
+    <ref role="1lYe$Y" to="p9qi:1_HYGT7ONgo" resolve="GsnContextButtonsProvider" />
+    <node concept="3Tm1VV" id="1_HYGT7OXg7" role="1B3o_S" />
+    <node concept="2tJIrI" id="1_HYGT7OXg8" role="jymVt" />
+    <node concept="3tTeZs" id="1_HYGT7OXg9" role="jymVt">
+      <property role="3tTeZt" value="activate" />
+      <ref role="3tTeZr" to="90d:3zLwYDe0CPy" resolve="activate" />
+    </node>
+    <node concept="3tTeZs" id="1_HYGT7OXga" role="jymVt">
+      <property role="3tTeZt" value="deactivate" />
+      <ref role="3tTeZr" to="90d:3zLwYDe0BDO" resolve="deactivate" />
+    </node>
+    <node concept="2tJIrI" id="1_HYGT7OXgb" role="jymVt" />
+    <node concept="q3mfD" id="1_HYGT7OXgc" role="jymVt">
+      <property role="TrG5h" value="get" />
+      <ref role="2VtyIY" to="90d:3zLwYDe0svr" resolve="get" />
+      <node concept="3Tm1VV" id="1_HYGT7OXge" role="1B3o_S" />
+      <node concept="3clFbS" id="1_HYGT7OXgg" role="3clF47">
+        <node concept="3clFbF" id="1_HYGT7OYgh" role="3cqZAp">
+          <node concept="2ShNRf" id="1_HYGT7OYgf" role="3clFbG">
+            <node concept="YeOm9" id="1_HYGT7P0ac" role="2ShVmc">
+              <node concept="1Y3b0j" id="1_HYGT7P0af" role="YeSDq">
+                <property role="2bfB8j" value="true" />
+                <property role="373rjd" value="true" />
+                <ref role="1Y3XeK" to="p9qi:1_HYGT7ONgC" resolve="IGsnContextButtonProvider" />
+                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                <node concept="3Tm1VV" id="1_HYGT7P0ag" role="1B3o_S" />
+                <node concept="2tJIrI" id="1_HYGT7UMld" role="jymVt" />
+                <node concept="3clFb_" id="1_HYGT7ULF6" role="jymVt">
+                  <property role="TrG5h" value="tooltip" />
+                  <node concept="3Tm1VV" id="1_HYGT7ULF8" role="1B3o_S" />
+                  <node concept="17QB3L" id="1_HYGT7ULF9" role="3clF45" />
+                  <node concept="3clFbS" id="1_HYGT7ULFb" role="3clF47">
+                    <node concept="3clFbF" id="1_HYGT7P0nM" role="3cqZAp">
+                      <node concept="Xl_RD" id="1_HYGT7P0nL" role="3clFbG">
+                        <property role="Xl_RC" value="Auto Layout Diagram (Semantic)" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2AHcQZ" id="1_HYGT7ULFc" role="2AJF6D">
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="1_HYGT7UMri" role="jymVt" />
+                <node concept="3clFb_" id="1_HYGT7ULFf" role="jymVt">
+                  <property role="TrG5h" value="iconUnicodeString" />
+                  <node concept="3Tm1VV" id="1_HYGT7ULFh" role="1B3o_S" />
+                  <node concept="17QB3L" id="1_HYGT7ULFi" role="3clF45" />
+                  <node concept="3clFbS" id="1_HYGT7ULFk" role="3clF47">
+                    <node concept="3clFbF" id="1_HYGT7QsES" role="3cqZAp">
+                      <node concept="Xl_RD" id="6TSnICNtVCA" role="3clFbG">
+                        <property role="Xl_RC" value="\u0496" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2AHcQZ" id="1_HYGT7ULFl" role="2AJF6D">
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                  </node>
+                </node>
+                <node concept="2tJIrI" id="1_HYGT7P0aA" role="jymVt" />
+                <node concept="3clFb_" id="1_HYGT7P0aB" role="jymVt">
+                  <property role="TrG5h" value="execute" />
+                  <node concept="3Tm1VV" id="1_HYGT7P0aD" role="1B3o_S" />
+                  <node concept="3cqZAl" id="1_HYGT7P0aE" role="3clF45" />
+                  <node concept="3clFbS" id="1_HYGT7P0aH" role="3clF47">
+                    <node concept="3clFbF" id="1_HYGT7P1vo" role="3cqZAp">
+                      <node concept="2YIFZM" id="1_HYGT7P1FM" role="3clFbG">
+                        <ref role="37wK5l" to="zgib:6csJveEtDvh" resolve="layout" />
+                        <ref role="1Pybhc" to="zgib:6csJveEtDtM" resolve="AutomaticLayouter" />
+                        <node concept="37vLTw" id="1_HYGT7P1TZ" role="37wK5m">
+                          <ref role="3cqZAo" node="1_HYGT7YazJ" resolve="gs" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2AHcQZ" id="1_HYGT7P0aJ" role="2AJF6D">
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+                  </node>
+                  <node concept="37vLTG" id="1_HYGT7YazJ" role="3clF46">
+                    <property role="TrG5h" value="gs" />
+                    <node concept="3Tqbb2" id="1_HYGT7YazI" role="1tU5fm">
+                      <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="q3mfm" id="1_HYGT7OXgh" role="3clF45">
+        <ref role="q3mfh" to="90d:3zLwYDe0sv$" />
+        <ref role="1QQUv3" node="1_HYGT7OXgc" resolve="get" />
       </node>
     </node>
   </node>

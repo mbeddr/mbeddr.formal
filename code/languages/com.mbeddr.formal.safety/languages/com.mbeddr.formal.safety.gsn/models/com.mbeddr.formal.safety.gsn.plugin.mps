@@ -6,6 +6,7 @@
     <use id="c7d5b9dd-a05f-4be2-bc73-f2e16994cc67" name="jetbrains.mps.baseLanguage.lightweightdsl" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
+    <use id="c9d137c4-3259-44f8-80ff-33ab2b506ee4" name="jetbrains.mps.lang.util.order" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -4022,6 +4023,42 @@
       <node concept="3cqZAl" id="3x6hjiFQSd5" role="3clF45" />
     </node>
     <node concept="3Tm1VV" id="3x6hjiFQOKU" role="1B3o_S" />
+  </node>
+  <node concept="vrV6u" id="1_HYGT7ONgo">
+    <property role="TrG5h" value="GsnContextButtonsProvider" />
+    <property role="3GE5qa" value="context_buttons" />
+    <node concept="3uibUv" id="1_HYGT7OXl7" role="luc8K">
+      <ref role="3uigEE" node="1_HYGT7ONgC" resolve="IGsnContextButtonProvider" />
+    </node>
+  </node>
+  <node concept="3HP615" id="1_HYGT7ONgC">
+    <property role="3GE5qa" value="context_buttons" />
+    <property role="TrG5h" value="IGsnContextButtonProvider" />
+    <node concept="3clFb_" id="1_HYGT7OXDx" role="jymVt">
+      <property role="TrG5h" value="tooltip" />
+      <node concept="3clFbS" id="1_HYGT7OXD$" role="3clF47" />
+      <node concept="3Tm1VV" id="1_HYGT7OXD_" role="1B3o_S" />
+      <node concept="17QB3L" id="1_HYGT7OXD3" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="1_HYGT7Qr61" role="jymVt">
+      <property role="TrG5h" value="iconUnicodeString" />
+      <node concept="3clFbS" id="1_HYGT7Qr64" role="3clF47" />
+      <node concept="3Tm1VV" id="1_HYGT7Qr65" role="1B3o_S" />
+      <node concept="17QB3L" id="1_HYGT7QtNH" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="1_HYGT7ONF$" role="jymVt">
+      <property role="TrG5h" value="execute" />
+      <node concept="3clFbS" id="1_HYGT7ONFB" role="3clF47" />
+      <node concept="3Tm1VV" id="1_HYGT7ONFC" role="1B3o_S" />
+      <node concept="3cqZAl" id="1_HYGT7ONFq" role="3clF45" />
+      <node concept="37vLTG" id="1_HYGT7Yaa8" role="3clF46">
+        <property role="TrG5h" value="gs" />
+        <node concept="3Tqbb2" id="1_HYGT7Yaa7" role="1tU5fm">
+          <ref role="ehGHo" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="1_HYGT7ONgD" role="1B3o_S" />
   </node>
 </model>
 
