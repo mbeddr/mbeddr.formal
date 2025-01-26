@@ -4028,7 +4028,7 @@
     <property role="TrG5h" value="GsnContextButtonsProvider" />
     <property role="3GE5qa" value="context_buttons" />
     <node concept="3uibUv" id="1_HYGT7OXl7" role="luc8K">
-      <ref role="3uigEE" node="1_HYGT7ONgC" resolve="IGsnLayoutProvider" />
+      <ref role="3uigEE" node="1_HYGT7ONgC" resolve="IGsnContextButtonProvider" />
     </node>
   </node>
   <node concept="3HP615" id="1_HYGT7ONgC">

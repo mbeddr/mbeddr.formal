@@ -4314,7 +4314,7 @@
   <node concept="1lYeZD" id="1_HYGT7OXg6">
     <property role="TrG5h" value="GsnSemanticLayouter" />
     <property role="3GE5qa" value="layouting" />
-    <ref role="1lYe$Y" to="p9qi:1_HYGT7ONgo" resolve="GsnLayouterProvider" />
+    <ref role="1lYe$Y" to="p9qi:1_HYGT7ONgo" resolve="GsnContextButtonsProvider" />
     <node concept="3Tm1VV" id="1_HYGT7OXg7" role="1B3o_S" />
     <node concept="2tJIrI" id="1_HYGT7OXg8" role="jymVt" />
     <node concept="3tTeZs" id="1_HYGT7OXg9" role="jymVt">
@@ -4337,8 +4337,8 @@
               <node concept="1Y3b0j" id="1_HYGT7P0af" role="YeSDq">
                 <property role="2bfB8j" value="true" />
                 <property role="373rjd" value="true" />
-                <ref role="1Y3XeK" to="p9qi:1_HYGT7ONgC" resolve="IGsnLayoutProvider" />
-                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                <ref role="1Y3XeK" to="p9qi:1_HYGT7ONgC" resolve="IGsnContextButtonProvider" />
+                <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <node concept="3Tm1VV" id="1_HYGT7P0ag" role="1B3o_S" />
                 <node concept="2tJIrI" id="1_HYGT7UMld" role="jymVt" />
                 <node concept="3clFb_" id="1_HYGT7ULF6" role="jymVt">
@@ -4353,7 +4353,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="1_HYGT7ULFc" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
                 <node concept="2tJIrI" id="1_HYGT7UMri" role="jymVt" />
@@ -4369,7 +4369,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="1_HYGT7ULFl" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                 </node>
                 <node concept="2tJIrI" id="1_HYGT7P0aA" role="jymVt" />
@@ -4389,7 +4389,7 @@
                     </node>
                   </node>
                   <node concept="2AHcQZ" id="1_HYGT7P0aJ" role="2AJF6D">
-                    <ref role="2AI5Lk" to="wyt6:~Override" />
+                    <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                   </node>
                   <node concept="37vLTG" id="1_HYGT7YazJ" role="3clF46">
                     <property role="TrG5h" value="gs" />
