@@ -21,6 +21,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="kq9k" ref="r:26cf53ce-de1d-47e1-8acc-79dd464f660a(com.mbeddr.formal.safety.gsn.external_evidence.util)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -63,6 +64,10 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -1822,8 +1827,14 @@
                       <ref role="3cqZAo" node="2gpUZARg2TZ" resolve="solution" />
                     </node>
                   </node>
-                  <node concept="37vLTw" id="3jaLROLu6Iv" role="37vLTx">
-                    <ref role="3cqZAo" node="1XxXeb0MCX0" resolve="isSuccess" />
+                  <node concept="3clFbC" id="7bPRoQUaG8u" role="37vLTx">
+                    <node concept="Rm8GO" id="7bPRoQUaH8e" role="3uHU7w">
+                      <ref role="Rm8GQ" to="kq9k:7bPRoQU9u_d" resolve="SUCCESS" />
+                      <ref role="1Px2BO" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+                    </node>
+                    <node concept="37vLTw" id="3jaLROLu6Iv" role="3uHU7B">
+                      <ref role="3cqZAo" node="1XxXeb0MCX0" resolve="res" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1858,8 +1869,10 @@
         </node>
       </node>
       <node concept="37vLTG" id="1XxXeb0MCX0" role="3clF46">
-        <property role="TrG5h" value="isSuccess" />
-        <node concept="10P_77" id="1XxXeb0MCWZ" role="1tU5fm" />
+        <property role="TrG5h" value="res" />
+        <node concept="3uibUv" id="7bPRoQUa_Na" role="1tU5fm">
+          <ref role="3uigEE" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+        </node>
       </node>
       <node concept="37vLTG" id="1XxXeb0MCYc" role="3clF46">
         <property role="TrG5h" value="repo" />

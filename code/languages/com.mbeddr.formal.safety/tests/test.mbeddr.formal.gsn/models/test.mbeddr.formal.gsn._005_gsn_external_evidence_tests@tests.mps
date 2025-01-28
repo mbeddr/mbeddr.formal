@@ -35,6 +35,10 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -58,6 +62,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -75,6 +80,10 @@
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -324,7 +333,9 @@
         <node concept="3cpWs8" id="2gpUZARgSSR" role="3cqZAp">
           <node concept="3cpWsn" id="2gpUZARgSSS" role="3cpWs9">
             <property role="TrG5h" value="res" />
-            <node concept="10P_77" id="2gpUZARgSST" role="1tU5fm" />
+            <node concept="3uibUv" id="7bPRoQU9Zb0" role="1tU5fm">
+              <ref role="3uigEE" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+            </node>
             <node concept="2YIFZM" id="2gpUZARgSSU" role="33vP2m">
               <ref role="1Pybhc" to="kq9k:3wuU_o8gGw5" resolve="GeneratedEvidenceChecker" />
               <ref role="37wK5l" to="kq9k:3wuU_o8gGAo" resolve="checkEvidenceExternally" />
@@ -338,8 +349,14 @@
           </node>
         </node>
         <node concept="3clFbF" id="2gpUZARgTbz" role="3cqZAp">
-          <node concept="37vLTw" id="2gpUZARgTbx" role="3clFbG">
-            <ref role="3cqZAo" node="2gpUZARgSSS" resolve="res" />
+          <node concept="3clFbC" id="7bPRoQUa0cM" role="3clFbG">
+            <node concept="Rm8GO" id="7bPRoQUa1A0" role="3uHU7w">
+              <ref role="Rm8GQ" to="kq9k:7bPRoQU9u_d" resolve="SUCCESS" />
+              <ref role="1Px2BO" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+            </node>
+            <node concept="37vLTw" id="2gpUZARgTbx" role="3uHU7B">
+              <ref role="3cqZAo" node="2gpUZARgSSS" resolve="res" />
+            </node>
           </node>
         </node>
       </node>

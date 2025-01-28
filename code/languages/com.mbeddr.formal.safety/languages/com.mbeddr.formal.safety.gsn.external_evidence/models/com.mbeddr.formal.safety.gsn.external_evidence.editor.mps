@@ -175,7 +175,6 @@
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
-      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -267,6 +266,7 @@
       </concept>
     </language>
     <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
       <concept id="7122083600695857782" name="de.itemis.mps.editor.bool.structure.CellModel_BooleanText" flags="sg" stub="416014060004530854" index="2aMyGU">
         <property id="7122083600696909496" name="falseText" index="2aYyvO" />
         <property id="7122083600696906118" name="trueText" index="2aYyza" />
@@ -663,6 +663,15 @@
           </node>
         </node>
       </node>
+      <node concept="3EZMnI" id="7bPRoQUavr6" role="3EZMnx">
+        <node concept="2iRfu4" id="7bPRoQUavr7" role="2iSdaV" />
+        <node concept="3F0ifn" id="7bPRoQUavjx" role="3EZMnx">
+          <property role="3F0ifm" value="... run with modelchecker" />
+        </node>
+        <node concept="27S6Sx" id="7bPRoQUawam" role="3EZMnx">
+          <ref role="1NtTu8" to="s9pq:7bPRoQUaevy" resolve="runWithModelChecker" />
+        </node>
+      </node>
       <node concept="3gTLQM" id="7Jm8RM1sjKG" role="3EZMnx">
         <node concept="3Fmcul" id="7Jm8RM1sjKE" role="3FoqZy">
           <node concept="3clFbS" id="7Jm8RM1sjLc" role="2VODD2">
@@ -723,8 +732,10 @@
                             </node>
                             <node concept="3cpWs8" id="7Jm8RM1sjKS" role="3cqZAp">
                               <node concept="3cpWsn" id="7Jm8RM1sjKK" role="3cpWs9">
-                                <property role="TrG5h" value="successfulResult" />
-                                <node concept="10P_77" id="7Jm8RM1sjJs" role="1tU5fm" />
+                                <property role="TrG5h" value="res" />
+                                <node concept="3uibUv" id="7bPRoQUaEDa" role="1tU5fm">
+                                  <ref role="3uigEE" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+                                </node>
                                 <node concept="2YIFZM" id="7Jm8RM1sjKO" role="33vP2m">
                                   <ref role="37wK5l" to="kq9k:3wuU_o8gGAo" resolve="checkEvidenceExternally" />
                                   <ref role="1Pybhc" to="kq9k:3wuU_o8gGw5" resolve="GeneratedEvidenceChecker" />

@@ -10,7 +10,9 @@
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="kq9k" ref="r:26cf53ce-de1d-47e1-8acc-79dd464f660a(com.mbeddr.formal.safety.gsn.external_evidence.util)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -24,6 +26,10 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -46,6 +52,8 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -66,6 +74,10 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
       </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
       <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
         <child id="8276990574895933173" name="catchBody" index="1zc67A" />
         <child id="8276990574895933172" name="throwable" index="1zc67B" />
@@ -85,7 +97,9 @@
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
-      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
+      <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G">
+        <property id="7181286126212894140" name="doNotApplyOnTheFly" index="1$Xk0j" />
+      </concept>
       <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
@@ -101,6 +115,10 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
+      <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
+        <child id="1145404616321" name="leftExpression" index="2JrQYb" />
+      </concept>
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -277,6 +295,85 @@
     <node concept="1YaCAy" id="2QkJsC6FGrE" role="1YuTPh">
       <property role="TrG5h" value="externalEvidenceDocument" />
       <ref role="1YaFvo" to="s9pq:3wuU_o8fDT9" resolve="ExternalEvidenceDocument" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7bPRoQU95PS">
+    <property role="TrG5h" value="check_GeneratedExternalEvidenceSolution" />
+    <property role="1$Xk0j" value="true" />
+    <node concept="3clFbS" id="7bPRoQU95PT" role="18ibNy">
+      <node concept="3clFbJ" id="7bPRoQUbhVw" role="3cqZAp">
+        <node concept="3clFbS" id="7bPRoQUbhVy" role="3clFbx">
+          <node concept="3cpWs8" id="7bPRoQUae5Q" role="3cqZAp">
+            <node concept="3cpWsn" id="7bPRoQUae5R" role="3cpWs9">
+              <property role="TrG5h" value="repo" />
+              <node concept="3uibUv" id="7bPRoQUae5p" role="1tU5fm">
+                <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+              </node>
+              <node concept="2OqwBi" id="7bPRoQUae5S" role="33vP2m">
+                <node concept="2JrnkZ" id="7bPRoQUae5T" role="2Oq$k0">
+                  <node concept="2OqwBi" id="7bPRoQUae5U" role="2JrQYb">
+                    <node concept="1YBJjd" id="7bPRoQUae5V" role="2Oq$k0">
+                      <ref role="1YBMHb" node="7bPRoQU95PV" resolve="generatedExternalEvidenceSolution" />
+                    </node>
+                    <node concept="I4A8Y" id="7bPRoQUae5W" role="2OqNvi" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="7bPRoQUae5X" role="2OqNvi">
+                  <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="7bPRoQUaebD" role="3cqZAp">
+            <node concept="3cpWsn" id="7bPRoQUaebE" role="3cpWs9">
+              <property role="TrG5h" value="checkEvidenceExternally" />
+              <node concept="3uibUv" id="7bPRoQUae7M" role="1tU5fm">
+                <ref role="3uigEE" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+              </node>
+              <node concept="2YIFZM" id="7bPRoQUaebF" role="33vP2m">
+                <ref role="37wK5l" to="kq9k:3wuU_o8gGAo" resolve="checkEvidenceExternally" />
+                <ref role="1Pybhc" to="kq9k:3wuU_o8gGw5" resolve="GeneratedEvidenceChecker" />
+                <node concept="1YBJjd" id="7bPRoQUaebG" role="37wK5m">
+                  <ref role="1YBMHb" node="7bPRoQU95PV" resolve="generatedExternalEvidenceSolution" />
+                </node>
+                <node concept="37vLTw" id="7bPRoQUaebH" role="37wK5m">
+                  <ref role="3cqZAo" node="7bPRoQUae5R" resolve="repo" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2Mj0R9" id="7bPRoQUbiKV" role="3cqZAp">
+            <node concept="3clFbC" id="7bPRoQUbjXl" role="2MkoU_">
+              <node concept="Rm8GO" id="7bPRoQUbksy" role="3uHU7w">
+                <ref role="Rm8GQ" to="kq9k:7bPRoQU9u_d" resolve="SUCCESS" />
+                <ref role="1Px2BO" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+              </node>
+              <node concept="37vLTw" id="7bPRoQUbiMD" role="3uHU7B">
+                <ref role="3cqZAo" node="7bPRoQUaebE" resolve="checkEvidenceExternally" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="7bPRoQUbkt4" role="2MkJ7o">
+              <property role="Xl_RC" value="external evidence checking failed" />
+            </node>
+            <node concept="1YBJjd" id="7bPRoQUbkxp" role="1urrMF">
+              <ref role="1YBMHb" node="7bPRoQU95PV" resolve="generatedExternalEvidenceSolution" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="7bPRoQUbieV" role="3clFbw">
+          <node concept="1YBJjd" id="7bPRoQUbhWV" role="2Oq$k0">
+            <ref role="1YBMHb" node="7bPRoQU95PV" resolve="generatedExternalEvidenceSolution" />
+          </node>
+          <node concept="3TrcHB" id="7bPRoQUbiGK" role="2OqNvi">
+            <ref role="3TsBF5" to="s9pq:7bPRoQUaevy" resolve="runWithModelChecker" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="7bPRoQUaet0" role="3cqZAp" />
+    </node>
+    <node concept="1YaCAy" id="7bPRoQU95PV" role="1YuTPh">
+      <property role="TrG5h" value="generatedExternalEvidenceSolution" />
+      <ref role="1YaFvo" to="s9pq:6R91tEKNYHe" resolve="GeneratedExternalEvidenceSolution" />
     </node>
   </node>
 </model>

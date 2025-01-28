@@ -29,6 +29,7 @@
     <language id="5e7ffa70-8e23-49f4-8c13-a887bba14c36" name="com.mbeddr.formal.safety.gsn.external_evidence">
       <concept id="7910860657280412494" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.GeneratedExternalEvidenceSolution" flags="ng" index="3t1IUk">
         <property id="8242542213102175686" name="regexMatchMeansSuccess" index="2wvm6Y" />
+        <property id="8283770690401265634" name="runWithModelChecker" index="38RjDJ" />
         <property id="7910860657280412497" name="resultRegex" index="3t1IUb" />
         <property id="7910860657280412495" name="cmdToExecute" index="3t1IUl" />
         <child id="4043927170651945707" name="workingDirectory" index="Kn92X" />
@@ -286,6 +287,7 @@
       <property role="1_P5wC" value="28-01-2025 23:44:40" />
       <property role="1_P2tN" value="42" />
       <property role="1_P5xa" value="true" />
+      <property role="38RjDJ" value="true" />
       <node concept="19SGf9" id="3aMU_WNEw_o" role="2vnaTY">
         <node concept="19SUe$" id="3aMU_WNEw_p" role="19SJt6">
           <property role="19SUeA" value="Tests are GREEN. " />
