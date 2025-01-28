@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This is a basic JUnit-style XML example to showcase the connection with evidence in assurance case.
+
+If you uncomment the failure message below, the python script will detect test failure and will return 'FAIL' 
+which will cause in turn the invalidation of the evidence.
+-->
+<testsuites time="15.682687">
+    <testsuite name="DemoTestSuite" time="6.605871">
+        <testcase name="testCase1" classname="DemoTestSuite" time="2.113871" />
+        <testcase name="testCase2" classname="DemoTestSuite" time="1.051" />
+        <testcase name="testCase3" classname="DemoTestSuite" time="3.441" >
+	    <!-- failure message="Assertion error message" type="AssertionError">
+                
+            </failure -->
+	</testcase>
+    </testsuite>
+</testsuites>
