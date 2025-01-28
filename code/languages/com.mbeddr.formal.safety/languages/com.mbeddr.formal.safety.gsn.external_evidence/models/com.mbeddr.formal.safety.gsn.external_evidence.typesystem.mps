@@ -11,6 +11,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="kq9k" ref="r:26cf53ce-de1d-47e1-8acc-79dd464f660a(com.mbeddr.formal.safety.gsn.external_evidence.util)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -328,7 +329,7 @@
             <node concept="3cpWsn" id="7bPRoQUaebE" role="3cpWs9">
               <property role="TrG5h" value="checkEvidenceExternally" />
               <node concept="3uibUv" id="7bPRoQUae7M" role="1tU5fm">
-                <ref role="3uigEE" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+                <ref role="3uigEE" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
               </node>
               <node concept="2YIFZM" id="7bPRoQUaebF" role="33vP2m">
                 <ref role="37wK5l" to="kq9k:3wuU_o8gGAo" resolve="checkEvidenceExternally" />
@@ -345,8 +346,8 @@
           <node concept="2Mj0R9" id="7bPRoQUbiKV" role="3cqZAp">
             <node concept="3clFbC" id="7bPRoQUbjXl" role="2MkoU_">
               <node concept="Rm8GO" id="7bPRoQUbksy" role="3uHU7w">
-                <ref role="Rm8GQ" to="kq9k:7bPRoQU9u_d" resolve="SUCCESS" />
-                <ref role="1Px2BO" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+                <ref role="Rm8GQ" to="89jy:7bPRoQU9u_d" resolve="SUCCESS" />
+                <ref role="1Px2BO" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
               </node>
               <node concept="37vLTw" id="7bPRoQUbiMD" role="3uHU7B">
                 <ref role="3cqZAo" node="7bPRoQUaebE" resolve="checkEvidenceExternally" />

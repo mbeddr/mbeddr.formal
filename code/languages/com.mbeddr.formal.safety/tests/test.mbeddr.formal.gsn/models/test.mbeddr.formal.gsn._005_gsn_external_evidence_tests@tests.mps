@@ -14,6 +14,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="s9pq" ref="r:8ef909e6-5cd8-45b2-9793-5a70f4829a0a(com.mbeddr.formal.safety.gsn.external_evidence.structure)" />
     <import index="kq9k" ref="r:26cf53ce-de1d-47e1-8acc-79dd464f660a(com.mbeddr.formal.safety.gsn.external_evidence.util)" />
+    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -334,7 +335,7 @@
           <node concept="3cpWsn" id="2gpUZARgSSS" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="3uibUv" id="7bPRoQU9Zb0" role="1tU5fm">
-              <ref role="3uigEE" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+              <ref role="3uigEE" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
             </node>
             <node concept="2YIFZM" id="2gpUZARgSSU" role="33vP2m">
               <ref role="1Pybhc" to="kq9k:3wuU_o8gGw5" resolve="GeneratedEvidenceChecker" />
@@ -351,8 +352,8 @@
         <node concept="3clFbF" id="2gpUZARgTbz" role="3cqZAp">
           <node concept="3clFbC" id="7bPRoQUa0cM" role="3clFbG">
             <node concept="Rm8GO" id="7bPRoQUa1A0" role="3uHU7w">
-              <ref role="Rm8GQ" to="kq9k:7bPRoQU9u_d" resolve="SUCCESS" />
-              <ref role="1Px2BO" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+              <ref role="Rm8GQ" to="89jy:7bPRoQU9u_d" resolve="SUCCESS" />
+              <ref role="1Px2BO" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
             </node>
             <node concept="37vLTw" id="2gpUZARgTbx" role="3uHU7B">
               <ref role="3cqZAo" node="2gpUZARgSSS" resolve="res" />

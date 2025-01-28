@@ -23,7 +23,7 @@
     <import index="kldk" ref="r:9beacef3-7901-4618-b268-83e1ff474c32(com.mbeddr.formal.nusmv.pluginSolution.utils)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="kq9k" ref="r:26cf53ce-de1d-47e1-8acc-79dd464f660a(com.mbeddr.formal.safety.gsn.external_evidence.util)" />
-    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" implicit="true" />
+    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -812,16 +812,16 @@
           <node concept="3cpWsn" id="7bPRoQUa_xJ" role="3cpWs9">
             <property role="TrG5h" value="result" />
             <node concept="3uibUv" id="7bPRoQUa_wx" role="1tU5fm">
-              <ref role="3uigEE" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+              <ref role="3uigEE" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
             </node>
             <node concept="3K4zz7" id="7bPRoQUa_xK" role="33vP2m">
               <node concept="Rm8GO" id="7bPRoQUa_xL" role="3K4E3e">
-                <ref role="Rm8GQ" to="kq9k:7bPRoQU9u_d" resolve="SUCCESS" />
-                <ref role="1Px2BO" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+                <ref role="Rm8GQ" to="89jy:7bPRoQU9u_d" resolve="SUCCESS" />
+                <ref role="1Px2BO" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
               </node>
               <node concept="Rm8GO" id="7bPRoQUa_xM" role="3K4GZi">
-                <ref role="Rm8GQ" to="kq9k:7bPRoQU9uCF" resolve="FAIL" />
-                <ref role="1Px2BO" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+                <ref role="Rm8GQ" to="89jy:7bPRoQU9uCF" resolve="FAIL" />
+                <ref role="1Px2BO" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
               </node>
               <node concept="37vLTw" id="7bPRoQUa_xN" role="3K4Cdx">
                 <ref role="3cqZAo" node="3jaLROLu6Im" resolve="isSuccess" />

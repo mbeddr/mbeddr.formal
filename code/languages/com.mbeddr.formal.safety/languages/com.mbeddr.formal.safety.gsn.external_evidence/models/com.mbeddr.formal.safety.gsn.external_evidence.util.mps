@@ -18,6 +18,7 @@
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="jgjw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.security(JDK/)" />
+    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -52,10 +53,6 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
-      <concept id="1083245097125" name="jetbrains.mps.baseLanguage.structure.EnumClass" flags="ig" index="Qs71p">
-        <child id="1083245396908" name="enumConstant" index="Qtgdg" />
-      </concept>
-      <concept id="1083245299891" name="jetbrains.mps.baseLanguage.structure.EnumConstantDeclaration" flags="ig" index="QsSxf" />
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
         <reference id="1144432896254" name="enumClass" index="1Px2BO" />
@@ -501,8 +498,8 @@
             </node>
             <node concept="3cpWs6" id="7bPRoQU9Jf2" role="3cqZAp">
               <node concept="Rm8GO" id="7bPRoQU9KL3" role="3cqZAk">
-                <ref role="Rm8GQ" node="7bPRoQU9uHx" resolve="TOOL_FAILURE" />
-                <ref role="1Px2BO" node="7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+                <ref role="Rm8GQ" to="89jy:7bPRoQU9uHx" resolve="TOOL_FAILURE" />
+                <ref role="1Px2BO" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
               </node>
             </node>
           </node>
@@ -580,8 +577,8 @@
               <node concept="3clFbS" id="7bPRoQU9R3F" role="3clFbx">
                 <node concept="3cpWs6" id="79zp7zi7Cj9" role="3cqZAp">
                   <node concept="Rm8GO" id="7bPRoQU9zaL" role="3cqZAk">
-                    <ref role="Rm8GQ" node="7bPRoQU9u_d" resolve="SUCCESS" />
-                    <ref role="1Px2BO" node="7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+                    <ref role="Rm8GQ" to="89jy:7bPRoQU9u_d" resolve="SUCCESS" />
+                    <ref role="1Px2BO" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
                   </node>
                 </node>
               </node>
@@ -596,8 +593,8 @@
                 <node concept="3clFbS" id="7bPRoQU9T3h" role="3clFbx">
                   <node concept="3cpWs6" id="7bPRoQU9T3i" role="3cqZAp">
                     <node concept="Rm8GO" id="7bPRoQU9T3j" role="3cqZAk">
-                      <ref role="Rm8GQ" node="7bPRoQU9u_d" resolve="SUCCESS" />
-                      <ref role="1Px2BO" node="7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+                      <ref role="Rm8GQ" to="89jy:7bPRoQU9u_d" resolve="SUCCESS" />
+                      <ref role="1Px2BO" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
                     </node>
                   </node>
                 </node>
@@ -615,8 +612,8 @@
         </node>
         <node concept="3cpWs6" id="79zp7zi7CEF" role="3cqZAp">
           <node concept="Rm8GO" id="7bPRoQU9$Qm" role="3cqZAk">
-            <ref role="Rm8GQ" node="7bPRoQU9uCF" resolve="FAIL" />
-            <ref role="1Px2BO" node="7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+            <ref role="Rm8GQ" to="89jy:7bPRoQU9uCF" resolve="FAIL" />
+            <ref role="1Px2BO" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
           </node>
         </node>
       </node>
@@ -633,7 +630,7 @@
         </node>
       </node>
       <node concept="3uibUv" id="7bPRoQU9xov" role="3clF45">
-        <ref role="3uigEE" node="7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+        <ref role="3uigEE" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
       </node>
       <node concept="3Tm1VV" id="3wuU_o8gGzC" role="1B3o_S" />
     </node>
@@ -1280,22 +1277,6 @@
     <node concept="2tJIrI" id="4MlXWpxaF6O" role="jymVt" />
     <node concept="2tJIrI" id="4MlXWpxaF7c" role="jymVt" />
     <node concept="3Tm1VV" id="2QkJsC6G0dl" role="1B3o_S" />
-  </node>
-  <node concept="Qs71p" id="7bPRoQU9uvN">
-    <property role="TrG5h" value="EEvidenceCheckingResult" />
-    <node concept="QsSxf" id="7bPRoQU9u_d" role="Qtgdg">
-      <property role="TrG5h" value="SUCCESS" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
-    </node>
-    <node concept="QsSxf" id="7bPRoQU9uCF" role="Qtgdg">
-      <property role="TrG5h" value="FAIL" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
-    </node>
-    <node concept="QsSxf" id="7bPRoQU9uHx" role="Qtgdg">
-      <property role="TrG5h" value="RUNTIME_ERROR" />
-      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
-    </node>
-    <node concept="3Tm1VV" id="7bPRoQU9uvO" role="1B3o_S" />
   </node>
 </model>
 

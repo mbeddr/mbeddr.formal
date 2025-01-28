@@ -20,10 +20,10 @@
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="oqvi" ref="r:d4fc365d-2731-4abe-97d6-18ce4700d823(com.mpsbasics.editor.utils.buttons)" />
     <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
+    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
-    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" implicit="true" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
   </imports>
   <registry>
@@ -734,7 +734,7 @@
                               <node concept="3cpWsn" id="7Jm8RM1sjKK" role="3cpWs9">
                                 <property role="TrG5h" value="res" />
                                 <node concept="3uibUv" id="7bPRoQUaEDa" role="1tU5fm">
-                                  <ref role="3uigEE" to="kq9k:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+                                  <ref role="3uigEE" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
                                 </node>
                                 <node concept="2YIFZM" id="7Jm8RM1sjKO" role="33vP2m">
                                   <ref role="37wK5l" to="kq9k:3wuU_o8gGAo" resolve="checkEvidenceExternally" />
