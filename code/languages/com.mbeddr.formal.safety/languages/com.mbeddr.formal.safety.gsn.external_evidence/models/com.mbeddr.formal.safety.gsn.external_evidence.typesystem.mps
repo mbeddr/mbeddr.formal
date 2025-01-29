@@ -391,7 +391,7 @@
                 <ref role="1Px2BO" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
               </node>
               <node concept="37vLTw" id="4puY9YZfr4m" role="3uHU7B">
-                <ref role="3cqZAo" node="7bPRoQUaebE" resolve="checkEvidenceExternally" />
+                <ref role="3cqZAo" node="7bPRoQUaebE" resolve="res" />
               </node>
             </node>
             <node concept="3eNFk2" id="4puY9YZfr8H" role="3eNLev">
@@ -421,7 +421,7 @@
                   <ref role="1Px2BO" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
                 </node>
                 <node concept="37vLTw" id="4puY9YZfrbD" role="3uHU7B">
-                  <ref role="3cqZAo" node="7bPRoQUaebE" resolve="checkEvidenceExternally" />
+                  <ref role="3cqZAo" node="7bPRoQUaebE" resolve="res" />
                 </node>
               </node>
             </node>
