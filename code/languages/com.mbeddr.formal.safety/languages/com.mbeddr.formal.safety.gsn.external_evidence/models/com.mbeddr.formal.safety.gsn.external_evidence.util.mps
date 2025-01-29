@@ -427,27 +427,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="3I9hGreJ1VS" role="3cqZAp" />
-        <node concept="2xdQw9" id="3I9hGreJ4S1" role="3cqZAp">
-          <property role="2xdLsb" value="h1akgim/info" />
-          <node concept="3cpWs3" id="3I9hGreJ6gx" role="9lYJi">
-            <node concept="37vLTw" id="3I9hGreJ6jC" role="3uHU7w">
-              <ref role="3cqZAo" node="3wuU_o8gZ2r" resolve="files" />
-            </node>
-            <node concept="3cpWs3" id="3I9hGreJ61T" role="3uHU7B">
-              <node concept="3cpWs3" id="3I9hGreJ5Al" role="3uHU7B">
-                <node concept="Xl_RD" id="3I9hGreJ4S3" role="3uHU7B">
-                  <property role="Xl_RC" value="evidence checked by running command: " />
-                </node>
-                <node concept="37vLTw" id="3I9hGreJ5ER" role="3uHU7w">
-                  <ref role="3cqZAo" node="3wuU_o8gXWF" resolve="toolBinaryName" />
-                </node>
-              </node>
-              <node concept="Xl_RD" id="3I9hGreJ6aF" role="3uHU7w">
-                <property role="Xl_RC" value=" " />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="3wuU_o8hupj" role="3cqZAp">
           <node concept="3cpWsn" id="3wuU_o8hupk" role="3cpWs9">
             <property role="TrG5h" value="result" />
