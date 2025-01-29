@@ -14526,6 +14526,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="4puY9YZcVUz" role="3bR37C">
+          <node concept="3bR9La" id="4puY9YZcVU$" role="1SiIV1">
+            <ref role="3bR37D" node="5uFV_KLFgnB" resolve="com.mbeddr.formal.safety.gsn.external_evidence" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7he_lUurx31" role="2G$12L">
         <property role="BnDLt" value="true" />
