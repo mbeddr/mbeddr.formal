@@ -24,6 +24,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" implicit="true" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
   </imports>
   <registry>
@@ -156,6 +157,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -736,12 +740,17 @@
                                 <node concept="3uibUv" id="7bPRoQUaEDa" role="1tU5fm">
                                   <ref role="3uigEE" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
                                 </node>
-                                <node concept="2YIFZM" id="7Jm8RM1sjKO" role="33vP2m">
-                                  <ref role="37wK5l" to="kq9k:3wuU_o8gGAo" resolve="checkEvidenceExternally" />
-                                  <ref role="1Pybhc" to="kq9k:3wuU_o8gGw5" resolve="GeneratedEvidenceChecker" />
-                                  <node concept="pncrf" id="7Jm8RM1sjKI" role="37wK5m" />
-                                  <node concept="37vLTw" id="7Jm8RM1sjKU" role="37wK5m">
-                                    <ref role="3cqZAo" node="7Jm8RM1sjL4" resolve="repo" />
+                                <node concept="2OqwBi" id="4puY9YZgsuL" role="33vP2m">
+                                  <node concept="2YIFZM" id="7Jm8RM1sjKO" role="2Oq$k0">
+                                    <ref role="37wK5l" to="kq9k:3wuU_o8gGAo" resolve="checkEvidenceExternally" />
+                                    <ref role="1Pybhc" to="kq9k:3wuU_o8gGw5" resolve="GeneratedEvidenceChecker" />
+                                    <node concept="pncrf" id="7Jm8RM1sjKI" role="37wK5m" />
+                                    <node concept="37vLTw" id="7Jm8RM1sjKU" role="37wK5m">
+                                      <ref role="3cqZAo" node="7Jm8RM1sjL4" resolve="repo" />
+                                    </node>
+                                  </node>
+                                  <node concept="2OwXpG" id="4puY9YZgsVu" role="2OqNvi">
+                                    <ref role="2Oxat5" to="18ew:~Pair.o1" resolve="o1" />
                                   </node>
                                 </node>
                               </node>

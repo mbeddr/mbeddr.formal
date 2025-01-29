@@ -15,6 +15,7 @@
     <import index="s9pq" ref="r:8ef909e6-5cd8-45b2-9793-5a70f4829a0a(com.mbeddr.formal.safety.gsn.external_evidence.structure)" />
     <import index="kq9k" ref="r:26cf53ce-de1d-47e1-8acc-79dd464f660a(com.mbeddr.formal.safety.gsn.external_evidence.util)" />
     <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -35,6 +36,9 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
       <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
         <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
@@ -337,14 +341,19 @@
             <node concept="3uibUv" id="7bPRoQU9Zb0" role="1tU5fm">
               <ref role="3uigEE" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
             </node>
-            <node concept="2YIFZM" id="2gpUZARgSSU" role="33vP2m">
-              <ref role="1Pybhc" to="kq9k:3wuU_o8gGw5" resolve="GeneratedEvidenceChecker" />
-              <ref role="37wK5l" to="kq9k:3wuU_o8gGAo" resolve="checkEvidenceExternally" />
-              <node concept="37vLTw" id="2gpUZARgSSV" role="37wK5m">
-                <ref role="3cqZAo" node="2gpUZARgSSI" resolve="solution" />
+            <node concept="2OqwBi" id="4puY9YZgpWV" role="33vP2m">
+              <node concept="2YIFZM" id="2gpUZARgSSU" role="2Oq$k0">
+                <ref role="1Pybhc" to="kq9k:3wuU_o8gGw5" resolve="GeneratedEvidenceChecker" />
+                <ref role="37wK5l" to="kq9k:3wuU_o8gGAo" resolve="checkEvidenceExternally" />
+                <node concept="37vLTw" id="2gpUZARgSSV" role="37wK5m">
+                  <ref role="3cqZAo" node="2gpUZARgSSI" resolve="solution" />
+                </node>
+                <node concept="37vLTw" id="2gpUZARgSSW" role="37wK5m">
+                  <ref role="3cqZAo" node="2gpUZARgSSc" resolve="repo" />
+                </node>
               </node>
-              <node concept="37vLTw" id="2gpUZARgSSW" role="37wK5m">
-                <ref role="3cqZAo" node="2gpUZARgSSc" resolve="repo" />
+              <node concept="2OwXpG" id="4puY9YZgqDI" role="2OqNvi">
+                <ref role="2Oxat5" to="18ew:~Pair.o1" resolve="o1" />
               </node>
             </node>
           </node>
