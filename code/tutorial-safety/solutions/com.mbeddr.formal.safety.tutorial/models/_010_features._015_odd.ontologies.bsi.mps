@@ -912,7 +912,7 @@
     <node concept="2IzUYn" id="6sXzM9s8hTE" role="3SOpfD" />
     <node concept="19SGf9" id="6sXzM9s8hZR" role="2I8HYo">
       <node concept="19SUe$" id="6sXzM9s8hZS" role="19SJt6">
-        <property role="19SUeA" value="The ODD taxonomy specified in PAS 1883:2020 Operational Design Domain (ODD) taxonomy for an automated driving system (ADS) – Specification.  " />
+        <property role="19SUeA" value="The ODD taxonomy specified in PAS 1883:2020 Operational Design Domain (ODD) taxonomy&#10;for an automated driving system (ADS) – Specification.  " />
       </node>
     </node>
   </node>

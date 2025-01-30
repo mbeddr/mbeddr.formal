@@ -511,7 +511,7 @@
     <node concept="2IzUYn" id="6sXzM9s8i3O" role="3SOpfD" />
     <node concept="19SGf9" id="5_1vAEKUAL$" role="2I8HYo">
       <node concept="19SUe$" id="5_1vAEKUAL_" role="19SJt6">
-        <property role="19SUeA" value="This ontology is taken from AVSC Best Practice for Describing an Operational Design Domain: Conceptual Framework and Lexicon AVSC00002202004." />
+        <property role="19SUeA" value="This ontology is taken from AVSC Best Practice for Describing an Operational Design Domain: &#10;Conceptual Framework and Lexicon AVSC00002202004." />
       </node>
     </node>
   </node>
