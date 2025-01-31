@@ -135,7 +135,7 @@
               <node concept="19SGf9" id="7Jm8RM1z5xo" role="3z7eFT">
                 <node concept="19SUe$" id="7Jm8RM1z5yP" role="19SJt6" />
                 <node concept="3Un2dA" id="7Jm8RM1z5yN" role="19SJt6">
-                  <ref role="3Un2dz" node="7Jm8RM1yvX5" resolve="airbag system" />
+                  <ref role="3Un2dz" node="7Jm8RM1yvX5" resolve="Airbag system" />
                 </node>
                 <node concept="19SUe$" id="7Jm8RM1z5yO" role="19SJt6">
                   <property role="19SUeA" value=" is active unless explicitly deactivated" />
@@ -156,7 +156,7 @@
               <node concept="19SGf9" id="7Jm8RM1z5xw" role="3z7eFT">
                 <node concept="19SUe$" id="7Jm8RM1z5yV" role="19SJt6" />
                 <node concept="3Un2dA" id="7Jm8RM1z5yT" role="19SJt6">
-                  <ref role="3Un2dz" node="7Jm8RM1yvZh" resolve="front passenger airbag" />
+                  <ref role="3Un2dz" node="7Jm8RM1yvZh" resolve="Front passenger airbag" />
                 </node>
                 <node concept="19SUe$" id="7Jm8RM1z5yU" role="19SJt6">
                   <property role="19SUeA" value=" deactivation button is turned off" />
@@ -167,7 +167,7 @@
               <node concept="19SGf9" id="7Jm8RM1z5xz" role="3z7eFT">
                 <node concept="19SUe$" id="7Jm8RM1z5z1" role="19SJt6" />
                 <node concept="3Un2dA" id="7Jm8RM1z5yZ" role="19SJt6">
-                  <ref role="3Un2dz" node="7Jm8RM1yvZh" resolve="front passenger airbag" />
+                  <ref role="3Un2dz" node="7Jm8RM1yvZh" resolve="Front passenger airbag" />
                 </node>
                 <node concept="19SUe$" id="7Jm8RM1z5z0" role="19SJt6">
                   <property role="19SUeA" value=" activation button is turned on" />
@@ -180,7 +180,7 @@
               <node concept="19SGf9" id="7Jm8RM1z5xB" role="3z7eFT">
                 <node concept="19SUe$" id="7Jm8RM1z5z7" role="19SJt6" />
                 <node concept="3Un2dA" id="7Jm8RM1z5z5" role="19SJt6">
-                  <ref role="3Un2dz" node="7Jm8RM1yvZh" resolve="front passenger airbag" />
+                  <ref role="3Un2dz" node="7Jm8RM1yvZh" resolve="Front passenger airbag" />
                 </node>
                 <node concept="19SUe$" id="7Jm8RM1z5z6" role="19SJt6">
                   <property role="19SUeA" value=" does not explode" />
@@ -233,7 +233,7 @@
                     <property role="19SUeA" value="the " />
                   </node>
                   <node concept="3Un2dA" id="7Jm8RM1z5zb" role="19SJt6">
-                    <ref role="3Un2dz" node="7Jm8RM1yvX5" resolve="airbag system" />
+                    <ref role="3Un2dz" node="7Jm8RM1yvX5" resolve="Airbag system" />
                   </node>
                   <node concept="19SUe$" id="7Jm8RM1z5zc" role="19SJt6">
                     <property role="19SUeA" value=" will be deployed" />

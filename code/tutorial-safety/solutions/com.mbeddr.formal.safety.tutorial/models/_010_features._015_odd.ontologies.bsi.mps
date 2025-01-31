@@ -301,23 +301,23 @@
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSz" role="3SOpfD">
       <property role="TrG5h" value="Lane Dimensions" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane Specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSA" role="3SOpfD">
       <property role="TrG5h" value="Lane Marking" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane Specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSD" role="3SOpfD">
       <property role="TrG5h" value="Lane Type" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane Specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSG" role="3SOpfD">
       <property role="TrG5h" value="Number of Lanes" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane Specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSJ" role="3SOpfD">
       <property role="TrG5h" value="Directions of Travel" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane Specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSM" role="3SOpfD">
       <property role="TrG5h" value="Bus Lane" />

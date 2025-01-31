@@ -38,51 +38,51 @@
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvWT" role="3SOpfD">
       <property role="TrG5h" value="Passive safety" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWB" resolve="car safety feature" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWB" resolve="Car safety feature" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvX5" role="3SOpfD">
       <property role="TrG5h" value="Airbag system" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="passive safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="Passive safety" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvZv" role="3SOpfD">
       <property role="TrG5h" value="Rear passenger airbag" />
-      <ref role="3SOpc_" node="7Jm8RM1yvX5" resolve="airbag system" />
+      <ref role="3SOpc_" node="7Jm8RM1yvX5" resolve="Airbag system" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvZh" role="3SOpfD">
       <property role="TrG5h" value="Front passenger airbag" />
-      <ref role="3SOpc_" node="7Jm8RM1yvX5" resolve="airbag system" />
+      <ref role="3SOpc_" node="7Jm8RM1yvX5" resolve="Airbag system" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvZ4" role="3SOpfD">
       <property role="TrG5h" value="Front driver airbag" />
-      <ref role="3SOpc_" node="7Jm8RM1yvX5" resolve="airbag system" />
+      <ref role="3SOpc_" node="7Jm8RM1yvX5" resolve="Airbag system" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvXj" role="3SOpfD">
       <property role="TrG5h" value="Anti lock brakes" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="passive safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="Passive safety" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvXz" role="3SOpfD">
       <property role="TrG5h" value="Electronic stability control" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="passive safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="Passive safety" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvXP" role="3SOpfD">
       <property role="TrG5h" value="Adaptive headlights" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="passive safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="Passive safety" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvY9" role="3SOpfD">
       <property role="TrG5h" value="Traction control" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="passive safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWT" resolve="Passive safety" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvWG" role="3SOpfD">
       <property role="TrG5h" value="Active safety" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWB" resolve="car safety feature" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWB" resolve="Car safety feature" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvYv" role="3SOpfD">
       <property role="TrG5h" value="Emergency braking" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWG" resolve="active safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWG" resolve="Active safety" />
     </node>
     <node concept="3SOpcA" id="7Jm8RM1yvYR" role="3SOpfD">
       <property role="TrG5h" value="Collision avoidance maneuver" />
-      <ref role="3SOpc_" node="7Jm8RM1yvWG" resolve="active safety" />
+      <ref role="3SOpc_" node="7Jm8RM1yvWG" resolve="Active safety" />
     </node>
   </node>
 </model>
