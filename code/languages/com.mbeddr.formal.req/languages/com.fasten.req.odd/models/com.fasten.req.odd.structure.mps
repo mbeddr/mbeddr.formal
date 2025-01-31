@@ -298,7 +298,7 @@
     <node concept="25R33" id="3RNDPbM0lNI" role="25R1y">
       <property role="3tVfz5" value="4464095630343625966" />
       <property role="TrG5h" value="disallow_only" />
-      <property role="1L1pqM" value="disallow_only" />
+      <property role="1L1pqM" value="disallow only" />
     </node>
   </node>
   <node concept="1TIwiD" id="3RNDPbM2UpO">
