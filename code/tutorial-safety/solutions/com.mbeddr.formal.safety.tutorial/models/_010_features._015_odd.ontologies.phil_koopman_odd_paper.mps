@@ -16,10 +16,8 @@
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
-    <language id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd">
-      <concept id="8375050574357864792" name="com.fasten.req.odd.structure.EmptyLine" flags="ng" index="2CGw_7" />
-    </language>
     <language id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology">
+      <concept id="145334794179050158" name="com.fasten.req.ontology.structure.EmptyLine" flags="ng" index="2IzUYn" />
       <concept id="4312077340877652056" name="com.fasten.req.ontology.structure.OntologyConcept" flags="ng" index="3SOpcA">
         <reference id="4312077340877652059" name="superConcept" index="3SOpc_" />
       </concept>
@@ -29,7 +27,7 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -72,7 +70,7 @@
       <property role="TrG5h" value="Air density" />
       <ref role="3SOpc_" node="7gUa1Zsy22Y" resolve="ODD_location_dependent_characteristic" />
     </node>
-    <node concept="2CGw_7" id="5o42uxih0Ae" role="3SOpfD" />
+    <node concept="2IzUYn" id="1TpxQu7oogZ" role="3SOpfD" />
     <node concept="3SOpcA" id="52bCGvYEznC" role="3SOpfD">
       <property role="TrG5h" value="ODD_base" />
     </node>

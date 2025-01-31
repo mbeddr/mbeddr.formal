@@ -23,9 +23,6 @@
         <child id="7741759128795045752" name="exp" index="2j1LYg" />
         <child id="7741759128795065723" name="paramRef" index="2j1YQj" />
       </concept>
-      <concept id="1024891882119954681" name="org.mpsqa.lint.generic.structure.ISeverityLevelAwareChecker" flags="ngI" index="2oM2l5">
-        <property id="1024891882119955433" name="reportLevel" index="2oM2pl" />
-      </concept>
       <concept id="3786325089106496663" name="org.mpsqa.lint.generic.structure.ReuseCheckableScript" flags="ng" index="2wR3oc">
         <reference id="3786325089106496690" name="script" index="2wR3oD" />
       </concept>
@@ -45,7 +42,6 @@
     <ref role="2wR3oD" to="ewdl:3pz5R1DPwMT" resolve="cast_to_specific_SNodeType" />
   </node>
   <node concept="2wR3oc" id="4lfwJVE_q9k">
-    <property role="2oM2pl" value="1c_Dn$lNzd7/WARNING" />
     <ref role="2wR3oD" to="54p5:4lfwJVEz_X5" resolve="not_used_linters" />
     <node concept="2j1LYv" id="4lfwJVE_q9l" role="2j1YRv">
       <node concept="2j1LYi" id="4lfwJVE_q9m" role="2j1YQj">
@@ -54,6 +50,19 @@
       <node concept="2tJFMh" id="4lfwJVE$q1j" role="2j1LYg">
         <node concept="ZC_QK" id="4lfwJVE$qau" role="2tJFKM">
           <ref role="2aWVGs" node="4lfwJVE_q9k" resolve="not_used_linters" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2wR3oc" id="33N0Tlwri2j">
+    <ref role="2wR3oD" to="54p5:652KpqR3Kk5" resolve="skipped_evaluation_linters" />
+    <node concept="2j1LYv" id="33N0Tlwrit2" role="2j1YRv">
+      <node concept="2j1LYi" id="33N0Tlwrit3" role="2j1YQj">
+        <ref role="2j1LYj" to="54p5:652KpqR3Kk6" resolve="thisNode" />
+      </node>
+      <node concept="2tJFMh" id="33N0Tlwrn3G" role="2j1LYg">
+        <node concept="ZC_QK" id="33N0TlwrncH" role="2tJFKM">
+          <ref role="2aWVGs" node="33N0Tlwri2j" resolve="skipped_evaluation_linters" />
         </node>
       </node>
     </node>
