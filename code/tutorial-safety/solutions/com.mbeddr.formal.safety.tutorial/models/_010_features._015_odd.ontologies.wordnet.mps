@@ -139,7 +139,7 @@
     </node>
     <node concept="19SGf9" id="5_1vAEKUALt" role="2I8HYo">
       <node concept="19SUe$" id="5_1vAEKUALu" role="19SJt6">
-        <property role="19SUeA" value="This ontology is taken from Princeton University &quot;About WordNet.&quot; https://wordnet.princeton.edu/citing-wordnet. Princeton University. 2010. " />
+        <property role="19SUeA" value="This ontology is taken from Princeton University &quot;About WordNet.&quot; &#10;https://wordnet.princeton.edu/citing-wordnet. Princeton University. 2010. " />
       </node>
     </node>
   </node>
