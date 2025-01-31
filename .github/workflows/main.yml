@@ -37,6 +37,10 @@ jobs:
     - name: Set up Gradle
       uses: gradle/actions/setup-gradle@v3
 
+    - name: Install Python Packages
+      run: |
+        pip install junitparser
+
     - name: Build
       run: |
         xvfb-run ./gradlew build_all_languages check \

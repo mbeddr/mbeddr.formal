@@ -22,7 +22,8 @@
     <import index="2avh" ref="r:d71bd9ec-2dae-496f-9887-8fb9facf61b7(com.mbeddr.formal.base.tooling.tools)" />
     <import index="kldk" ref="r:9beacef3-7901-4618-b268-83e1ff474c32(com.mbeddr.formal.nusmv.pluginSolution.utils)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" implicit="true" />
+    <import index="kq9k" ref="r:26cf53ce-de1d-47e1-8acc-79dd464f660a(com.mbeddr.formal.safety.gsn.external_evidence.util)" />
+    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -51,6 +52,10 @@
       </concept>
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
+      </concept>
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -144,6 +149,11 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
       <concept id="5497648299878491908" name="jetbrains.mps.baseLanguage.structure.BaseVariableReference" flags="nn" index="1M0zk4">
         <reference id="5497648299878491909" name="baseVariableDeclaration" index="1M0zk5" />
@@ -798,6 +808,27 @@
         </node>
       </node>
       <node concept="3clFbS" id="3jaLROLu6Hy" role="3clF47">
+        <node concept="3cpWs8" id="7bPRoQUa_xI" role="3cqZAp">
+          <node concept="3cpWsn" id="7bPRoQUa_xJ" role="3cpWs9">
+            <property role="TrG5h" value="result" />
+            <node concept="3uibUv" id="7bPRoQUa_wx" role="1tU5fm">
+              <ref role="3uigEE" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+            </node>
+            <node concept="3K4zz7" id="7bPRoQUa_xK" role="33vP2m">
+              <node concept="Rm8GO" id="7bPRoQUa_xL" role="3K4E3e">
+                <ref role="Rm8GQ" to="89jy:7bPRoQU9u_d" resolve="SUCCESS" />
+                <ref role="1Px2BO" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+              </node>
+              <node concept="Rm8GO" id="7bPRoQUa_xM" role="3K4GZi">
+                <ref role="Rm8GQ" to="89jy:7bPRoQU9uCF" resolve="FAIL" />
+                <ref role="1Px2BO" to="89jy:7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+              </node>
+              <node concept="37vLTw" id="7bPRoQUa_xN" role="3K4Cdx">
+                <ref role="3cqZAo" node="3jaLROLu6Im" resolve="isSuccess" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="1XxXeb0MNhb" role="3cqZAp">
           <node concept="2OqwBi" id="1XxXeb0MNtg" role="3clFbG">
             <node concept="37vLTw" id="1XxXeb0MNha" role="2Oq$k0">
@@ -805,8 +836,8 @@
             </node>
             <node concept="2qgKlT" id="1XxXeb0MNLO" role="2OqNvi">
               <ref role="37wK5l" to="89jy:1XxXeb0MCTM" resolve="updateResult" />
-              <node concept="37vLTw" id="1XxXeb0MNWK" role="37wK5m">
-                <ref role="3cqZAo" node="3jaLROLu6Im" resolve="isSuccess" />
+              <node concept="37vLTw" id="7bPRoQUa_xO" role="37wK5m">
+                <ref role="3cqZAo" node="7bPRoQUa_xJ" resolve="result" />
               </node>
               <node concept="37vLTw" id="1XxXeb0MO8w" role="37wK5m">
                 <ref role="3cqZAo" node="3jaLROLu6Io" resolve="repo" />
