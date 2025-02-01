@@ -382,7 +382,7 @@
     <property role="EcuMT" value="8215579935891968584" />
     <property role="TrG5h" value="ODDRefWord" />
     <property role="34LRSv" value="@odd" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="783AALQEH9a" role="1TKVEi">
       <property role="IQ2ns" value="8215579935891968586" />
       <property role="20kJfa" value="odd" />
