@@ -16257,6 +16257,9 @@
         <node concept="3LEz8M" id="6xXHcqxd5Sn" role="3LEz9a">
           <ref role="3LEz8N" node="7jpsyZvuXUD" resolve="fasten.safety.fmea.arch" />
         </node>
+        <node concept="3LEDTy" id="6xXHcqxd7c8" role="3LEDUa">
+          <ref role="3LEDTV" node="7he_lUuxic9" resolve="com.mbeddr.formal.safety.req" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="9wBdtpFVAE" role="3989C9">
