@@ -16233,11 +16233,29 @@
         <node concept="3LEz8M" id="4eD_5l3mUPj" role="3LEz9a">
           <ref role="3LEz8N" node="4eD_5l3mRuY" resolve="fasten.safety.ft" />
         </node>
-        <node concept="3LEDTy" id="16Akbu5cbIl" role="3LEDUa">
-          <ref role="3LEDTV" node="7he_lUuxic9" resolve="com.mbeddr.formal.safety.req" />
-        </node>
         <node concept="3LEz8M" id="9wBdtpFZKd" role="3LEz9a">
           <ref role="3LEz8N" node="9wBdtpFVAF" resolve="fasten.docs" />
+        </node>
+        <node concept="3LEz8M" id="6xXHcqxd5Sh" role="3LEz9a">
+          <ref role="3LEz8N" node="7he_lUuveoQ" resolve="fasten.requirements" />
+        </node>
+        <node concept="3LEz8M" id="6xXHcqxd5Si" role="3LEz9a">
+          <ref role="3LEz8N" node="1r1mR59FDMp" resolve="fasten.safety.gsn.artefacts" />
+        </node>
+        <node concept="3LEz8M" id="6xXHcqxd5Sj" role="3LEz9a">
+          <ref role="3LEz8N" node="16Akbu57sKj" resolve="fasten.safety.gsn.doc" />
+        </node>
+        <node concept="3LEz8M" id="6xXHcqxd5Sk" role="3LEz9a">
+          <ref role="3LEz8N" node="y1G8y6b5Po" resolve="fasten.safety.gsn.modelquery" />
+        </node>
+        <node concept="3LEz8M" id="6xXHcqxd5Sl" role="3LEz9a">
+          <ref role="3LEz8N" node="16Akbu57yk2" resolve="fasten.safety.gsn.patterns" />
+        </node>
+        <node concept="3LEz8M" id="6xXHcqxd5Sm" role="3LEz9a">
+          <ref role="3LEz8N" node="kjG6o7NtQE" resolve="fasten.safety.gsn.runtime" />
+        </node>
+        <node concept="3LEz8M" id="6xXHcqxd5Sn" role="3LEz9a">
+          <ref role="3LEz8N" node="7jpsyZvuXUD" resolve="fasten.safety.fmea.arch" />
         </node>
       </node>
     </node>
