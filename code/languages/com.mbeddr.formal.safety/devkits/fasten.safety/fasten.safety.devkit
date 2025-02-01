@@ -9,6 +9,13 @@
     <extendedDevKit>b80b29fe-1cc4-4054-aee5-cb5c2049985a(fasten.safety.gsn.confidence)</extendedDevKit>
     <extendedDevKit>7466bc49-e775-4df7-a9f3-e383173b2eee(fasten.safety.gsn.ext)</extendedDevKit>
     <extendedDevKit>b5694cc1-d827-430b-bf03-ac5910fa8aa7(fasten.docs)</extendedDevKit>
+    <extendedDevKit>b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)</extendedDevKit>
+    <extendedDevKit>58430e3c-3d97-455c-a27e-8eeba7f8513e(fasten.safety.gsn.artefacts)</extendedDevKit>
+    <extendedDevKit>b0b37262-7857-4c92-8e0e-0467c9bc45a6(fasten.safety.gsn.doc)</extendedDevKit>
+    <extendedDevKit>ad50662a-9851-40b5-8a07-e7535a82f5bb(fasten.safety.gsn.modelquery)</extendedDevKit>
+    <extendedDevKit>5e597493-feae-41d8-b052-3b0a41743991(fasten.safety.gsn.patterns)</extendedDevKit>
+    <extendedDevKit>16e7e722-0522-46f7-b3be-41f15da742ed(fasten.safety.gsn.runtime)</extendedDevKit>
+    <extendedDevKit>cc8f24e6-1235-41ad-b4fc-f9b70bfca7d7(fasten.safety.fmea.arch)</extendedDevKit>
   </extendedDevKits>
 </dev-kit>
 

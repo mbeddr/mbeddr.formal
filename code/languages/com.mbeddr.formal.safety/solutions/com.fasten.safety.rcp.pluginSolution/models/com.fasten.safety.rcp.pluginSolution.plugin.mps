@@ -1286,9 +1286,9 @@
               <ref role="35c_gD" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
             </node>
             <node concept="37shsh" id="7A06dcUGIiZ" role="2J__8u">
-              <node concept="1dCxOk" id="7A06dcUGIj0" role="37shsm">
-                <property role="1XweGW" value="7466bc49-e775-4df7-a9f3-e383173b2eee" />
-                <property role="1XxBO9" value="fasten.safety.gsn.ext" />
+              <node concept="1dCxOk" id="6xXHcqxcOIG" role="37shsm">
+                <property role="1XweGW" value="ac9a2847-3512-4af0-8db9-c20abbe2720a" />
+                <property role="1XxBO9" value="fasten.safety" />
               </node>
             </node>
           </node>

@@ -8,6 +8,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="uhu" ref="r:7b6bea6a-7952-48df-9449-f3f805640b2f(com.mpsbasics.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -118,6 +119,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7TjUbLQ4gDe" role="PzmwI">
       <ref role="PrY4T" node="7TjUbLQ4gDb" resolve="IHazardLike" />
+    </node>
+    <node concept="PrWs8" id="6xXHcqx99aZ" role="PzmwI">
+      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="IProvideBasicContextMenus" />
     </node>
     <node concept="1TJgyj" id="6RZi9iiwhYM" role="1TKVEi">
       <property role="IQ2ns" value="7926133672145657778" />
