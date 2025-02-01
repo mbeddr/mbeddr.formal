@@ -89,7 +89,7 @@
         </node>
       </node>
       <node concept="1irPie" id="y1G8y68LVo" role="1irR9h">
-        <property role="1irPi9" value="⚙" />
+        <property role="1irPi9" value="?" />
         <node concept="3PKj8D" id="y1G8y68LVt" role="3PKjny">
           <property role="3PKj8l" value="FF4400" />
         </node>
@@ -138,6 +138,7 @@
     <property role="EcuMT" value="612965124711590730" />
     <property role="TrG5h" value="ModelElementWord" />
     <property role="34LRSv" value="@model-element" />
+    <property role="R4oN_" value="named model element reference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="y1G8y68MHb" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
