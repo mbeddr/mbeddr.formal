@@ -38,6 +38,7 @@
     <language slang="l:ca32bc98-ea47-4b42-82e1-76bebf8a4e7d:com.mbeddr.formal.safety.gsn.xml_gen" version="0" />
     <language slang="l:17da266c-02d9-4bbd-b69b-8a656b49f45c:com.mbeddr.formal.safety.hara" version="0" />
     <language slang="l:792be022-0a7a-4b28-bfd8-b1b2d347b772:com.mpsbasics.core" version="0" />
+    <language slang="l:e4b230e7-8e1a-4a05-8148-8713530572c1:com.mpsbasics.words.generic" version="0" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />

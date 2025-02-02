@@ -10,6 +10,7 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
+    <import index="iy8y" ref="r:0c08e44a-c7e7-4e55-9b2a-c33f3133e6c2(com.mpsbasics.words.generic.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -149,6 +150,9 @@
     </node>
     <node concept="PrWs8" id="1noKC0JTmQn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6FJpOMBsDB9" role="PzmwI">
+      <ref role="PrY4T" to="iy8y:6xXHcqxdSHU" resolve="IAllowGenericWords" />
     </node>
     <node concept="1QGGSu" id="5fX5a81pV8W" role="rwd14">
       <property role="1iqoE4" value="${module}/icons/artefacts.png" />
