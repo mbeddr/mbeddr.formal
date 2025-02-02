@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.core/com.mpsbasics.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.jira/com.mpsbasics.jira.mpl" folder="jira" />
       <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.pdfexporter/com.mpsbasics.pdfexporter.mpl" folder="pdfbox" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.words.generic/com.mpsbasics.words.generic.mpl" folder="words" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.build/com.mpsbasics.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.core/com.mpsbasics.docx4j.core.msd" folder="docx4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.lib/com.mpsbasics.docx4j.lib.msd" folder="docx4j" />

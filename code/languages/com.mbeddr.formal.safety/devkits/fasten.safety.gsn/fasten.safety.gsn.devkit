@@ -10,5 +10,6 @@
   <exported-language name="e4dd8dcd-fbfe-4e69-bcdd-b4371f25f476(com.fasten.base.git)" />
   <exported-language name="a7775cc7-19db-41cf-a724-3212ac4437b9(com.mbeddr.formal.safety.gsn.importer)" />
   <exported-language name="04d81d12-7048-4552-9a53-86a271c0f094(com.mbeddr.formal.safety.argument.visualisation)" />
+  <exported-language name="e4b230e7-8e1a-4a05-8148-8713530572c1(com.mpsbasics.words.generic)" />
 </dev-kit>
 

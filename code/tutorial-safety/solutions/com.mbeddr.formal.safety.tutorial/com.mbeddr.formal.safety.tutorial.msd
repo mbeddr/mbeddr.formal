@@ -104,6 +104,7 @@
     <language slang="l:792be022-0a7a-4b28-bfd8-b1b2d347b772:com.mpsbasics.core" version="0" />
     <language slang="l:fde86f49-830f-414f-9c22-2a9e300eaba6:com.mpsbasics.jira" version="0" />
     <language slang="l:ece26728-2885-4b26-9f61-67d2821fc361:com.mpsbasics.pdfexporter" version="0" />
+    <language slang="l:e4b230e7-8e1a-4a05-8148-8713530572c1:com.mpsbasics.words.generic" version="0" />
     <language slang="l:6f31bc85-cbcc-4dcf-ada4-35da43e6832c:com.symo.plantuml" version="0" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
@@ -146,7 +147,6 @@
     <module reference="17da266c-02d9-4bbd-b69b-8a656b49f45c(com.mbeddr.formal.safety.hara)" version="0" />
     <module reference="7a642ffb-bd05-4e8c-b81a-08fde9a204ba(com.mbeddr.formal.safety.tutorial)" version="0" />
     <module reference="d873c9ba-1199-4310-897d-5fa1a905f179(com.mbeddr.formal.safety.users_guide)" version="0" />
-    <module reference="fde86f49-830f-414f-9c22-2a9e300eaba6(com.mpsbasics.jira)" version="0" />
     <module reference="377bf088-4ffc-48ac-910f-fb1c66ffa60e(com.symo.plantuml.lib)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
@@ -161,7 +161,6 @@
     <module reference="f0fff802-6d26-4d2e-b89d-391357265626(de.slisson.mps.hacks.editor)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-    <module reference="56f134c7-a829-428d-9119-715369c69768(org.mpsqa.treemap.lib)" version="0" />
   </dependencyVersions>
 </solution>
 

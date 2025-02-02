@@ -8,16 +8,13 @@
     <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
     <use id="ca32bc98-ea47-4b42-82e1-76bebf8a4e7d" name="com.mbeddr.formal.safety.gsn.xml_gen" version="0" />
     <use id="5e7ffa70-8e23-49f4-8c13-a887bba14c36" name="com.mbeddr.formal.safety.gsn.external_evidence" version="0" />
+    <use id="e4b230e7-8e1a-4a05-8148-8713530572c1" name="com.mpsbasics.words.generic" version="-1" />
   </languages>
   <imports />
   <registry>
     <language id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext">
       <concept id="5489462543707440098" name="com.mbeddr.formal.safety.gsn.ext.structure.TemplateWord" flags="ng" index="hkfVV">
         <child id="4266958635905312315" name="text" index="2vnaTY" />
-      </concept>
-      <concept id="5879905612006349272" name="com.mbeddr.formal.safety.gsn.ext.structure.GenericNamedModelElementRefWord" flags="ng" index="lVOro">
-        <property id="5879905612006349277" name="type" index="lVOrt" />
-        <reference id="5879905612006349279" name="elem" index="lVOrv" />
       </concept>
       <concept id="2392944874759792240" name="com.mbeddr.formal.safety.gsn.ext.structure.SupportedByConnectionPattern" flags="ng" index="1a4Pjv" />
       <concept id="2392944874760086914" name="com.mbeddr.formal.safety.gsn.ext.structure.IGsnConnectionPattern" flags="ngI" index="1a7XsH">
@@ -46,6 +43,12 @@
       </concept>
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="e4b230e7-8e1a-4a05-8148-8713530572c1" name="com.mpsbasics.words.generic">
+      <concept id="5879905612006349272" name="com.mpsbasics.words.generic.structure.TypedNamedModelElementRefWord" flags="ng" index="lVOro">
+        <property id="5879905612006349277" name="type" index="lVOrt" />
+        <reference id="5879905612006349279" name="elem" index="lVOrv" />
       </concept>
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
@@ -1257,8 +1260,8 @@
         <node concept="gqqVs" id="x1FXqw_vs" role="37mO4d">
           <property role="gqqTZ" value="93.0" />
           <property role="gqqTW" value="16.0" />
-          <property role="gqqTX" value="161.0" />
-          <property role="gqqTy" value="97.0" />
+          <property role="gqqTX" value="224.0" />
+          <property role="gqqTy" value="108.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1267,7 +1270,7 @@
         <node concept="gqqVs" id="x1FXqy4aJ" role="37mO4d">
           <property role="gqqTZ" value="67.0" />
           <property role="gqqTW" value="136.0" />
-          <property role="gqqTX" value="217.0" />
+          <property role="gqqTX" value="278.0" />
           <property role="gqqTy" value="60.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -1287,7 +1290,7 @@
         <node concept="gqqVs" id="x1FXqClKN" role="37mO4d">
           <property role="gqqTZ" value="376.0" />
           <property role="gqqTW" value="15.0" />
-          <property role="gqqTX" value="222.0" />
+          <property role="gqqTX" value="285.0" />
           <property role="gqqTy" value="60.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -1297,8 +1300,8 @@
         <node concept="gqqVs" id="56pBK14uNRj" role="37mO4d">
           <property role="gqqTZ" value="357.5" />
           <property role="gqqTW" value="136.0" />
-          <property role="gqqTX" value="259.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTX" value="401.0" />
+          <property role="gqqTy" value="60.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1339,7 +1342,7 @@
           <property role="lVOrt" value="hazard" />
           <ref role="lVOrv" node="5l6J5csSGJ1" resolve="Unintended acceleration" />
         </node>
-        <node concept="19SUe$" id="56pBK14uNRB" role="19SJt6">
+        <node concept="19SUe$" id="6FJpOMATMYf" role="19SJt6">
           <property role="19SUeA" value="&#10;has been mitigated." />
         </node>
       </node>

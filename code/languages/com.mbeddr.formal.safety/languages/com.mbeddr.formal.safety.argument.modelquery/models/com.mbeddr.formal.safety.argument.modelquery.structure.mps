@@ -10,6 +10,7 @@
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
+    <import index="iy8y" ref="r:0c08e44a-c7e7-4e55-9b2a-c33f3133e6c2(com.mpsbasics.words.generic.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -31,6 +32,10 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118929411" name="build" index="YLPcu" />
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -55,6 +60,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -68,6 +76,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1vid6hjrqXd" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6FJpOMBcvOR" role="PzmwI">
+      <ref role="PrY4T" to="iy8y:6xXHcqxdSHU" resolve="IAllowGenericWords" />
     </node>
     <node concept="1TJgyj" id="1vid6hjrr6h" role="1TKVEi">
       <property role="IQ2ns" value="1716492013482652049" />
@@ -136,7 +147,7 @@
   </node>
   <node concept="1TIwiD" id="y1G8y68MHa">
     <property role="EcuMT" value="612965124711590730" />
-    <property role="TrG5h" value="ModelElementWord" />
+    <property role="TrG5h" value="ModelElementWord_old" />
     <property role="34LRSv" value="@model-element" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="y1G8y68MHb" role="PzmwI">
@@ -144,8 +155,15 @@
     </node>
     <node concept="1TJgyj" id="y1G8y68MHd" role="1TKVEi">
       <property role="IQ2ns" value="612965124711590733" />
-      <property role="20kJfa" value="node" />
+      <property role="20kJfa" value="node_old" />
       <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <node concept="asaX9" id="6FJpOMAQ8Xz" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mpsbasics.words.generic.structure.ModelElementWord&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="6FJpOMAQ8Xl" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mpsbasics.words.generic&quot;" />
+      <property role="YLPcu" value="2025.02.01" />
     </node>
   </node>
 </model>

@@ -27,6 +27,10 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ngI" index="22mbnS">
+        <child id="414384289274416996" name="parts" index="3ft7WO" />
+      </concept>
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
@@ -66,6 +70,7 @@
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="615427434521884870" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Subconcepts" flags="ng" index="2VfDsV" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -1319,7 +1324,7 @@
   </node>
   <node concept="24kQdi" id="56pBK14tHBx">
     <property role="3GE5qa" value="words" />
-    <ref role="1XX52x" to="lbo2:56pBK14tHBo" resolve="GenericNamedModelElementRefWord" />
+    <ref role="1XX52x" to="lbo2:56pBK14tHBo" resolve="GenericNamedModelElementRefWord_old" />
     <node concept="3EZMnI" id="56pBK14tHBz" role="2wV5jI">
       <node concept="PMmxH" id="56pBK14vZcZ" role="3EZMnx">
         <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
@@ -1335,9 +1340,9 @@
         </node>
       </node>
       <node concept="3F0A7n" id="56pBK14tHBK" role="3EZMnx">
-        <ref role="1NtTu8" to="lbo2:56pBK14tHBt" resolve="type" />
+        <ref role="1NtTu8" to="lbo2:56pBK14tHBt" resolve="type_old" />
         <node concept="A1WHr" id="56pBK14uicO" role="3vIgyS">
-          <ref role="2ZyFGn" to="lbo2:56pBK14tHBo" resolve="GenericNamedModelElementRefWord" />
+          <ref role="2ZyFGn" to="lbo2:56pBK14tHBo" resolve="GenericNamedModelElementRefWord_old" />
         </node>
         <node concept="VPxyj" id="56pBK14y3z2" role="3F10Kt" />
       </node>
@@ -1351,7 +1356,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="56pBK14tHC8" role="3EZMnx">
-        <ref role="1NtTu8" to="lbo2:56pBK14tHBv" resolve="elem" />
+        <ref role="1NtTu8" to="lbo2:56pBK14tHBv" resolve="elem_old" />
         <node concept="1sVBvm" id="56pBK14tHCa" role="1sWHZn">
           <node concept="3SHvHV" id="56pBK14tHCn" role="2wV5jI" />
         </node>
@@ -1365,7 +1370,7 @@
   </node>
   <node concept="3ICUPy" id="56pBK14tHDl">
     <property role="3GE5qa" value="words" />
-    <ref role="aqKnT" to="lbo2:56pBK14tHBo" resolve="GenericNamedModelElementRefWord" />
+    <ref role="aqKnT" to="lbo2:56pBK14tHBo" resolve="GenericNamedModelElementRefWord_old" />
     <node concept="22hDWj" id="56pBK14tHDm" role="22hAXT" />
     <node concept="1Qtc8_" id="56pBK14tHDo" role="IW6Ez">
       <node concept="3eGOoe" id="56pBK14tHDs" role="1Qtc8$" />
@@ -1409,7 +1414,7 @@
                   <node concept="2OqwBi" id="56pBK14uh_C" role="37vLTJ">
                     <node concept="7Obwk" id="56pBK14uht1" role="2Oq$k0" />
                     <node concept="3TrcHB" id="56pBK14uhO$" role="2OqNvi">
-                      <ref role="3TsBF5" to="lbo2:56pBK14tHBt" resolve="type" />
+                      <ref role="3TsBF5" to="lbo2:56pBK14tHBt" resolve="type_old" />
                     </node>
                   </node>
                 </node>
@@ -1454,6 +1459,11 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="22mcaB" id="6FJpOMAQ8Wt">
+    <ref role="aqKnT" to="lbo2:56pBK14tHBo" resolve="GenericNamedModelElementRefWord_old" />
+    <node concept="22hDWj" id="6FJpOMAQ8Wu" role="22hAXT" />
+    <node concept="2VfDsV" id="6FJpOMAQ8Wv" role="3ft7WO" />
   </node>
 </model>
 
