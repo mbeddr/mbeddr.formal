@@ -63,7 +63,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -76,9 +76,6 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1vid6hjrqXd" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="6FJpOMBcvOR" role="PzmwI">
-      <ref role="PrY4T" to="iy8y:6xXHcqxdSHU" resolve="IAllowGenericWords" />
     </node>
     <node concept="1TJgyj" id="1vid6hjrr6h" role="1TKVEi">
       <property role="IQ2ns" value="1716492013482652049" />
@@ -100,11 +97,14 @@
         </node>
       </node>
       <node concept="1irPie" id="y1G8y68LVo" role="1irR9h">
-        <property role="1irPi9" value="⚙" />
+        <property role="1irPi9" value="?" />
         <node concept="3PKj8D" id="y1G8y68LVt" role="3PKjny">
           <property role="3PKj8l" value="FF4400" />
         </node>
       </node>
+    </node>
+    <node concept="PrWs8" id="6FJpOMBcvOR" role="PzmwI">
+      <ref role="PrY4T" to="iy8y:6xXHcqxdSHU" resolve="IAllowGenericWords" />
     </node>
   </node>
   <node concept="1TIwiD" id="1vid6hjrqXf">
@@ -149,6 +149,7 @@
     <property role="EcuMT" value="612965124711590730" />
     <property role="TrG5h" value="ModelElementWord_old" />
     <property role="34LRSv" value="@model-element" />
+    <property role="R4oN_" value="named model element reference" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="y1G8y68MHb" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />

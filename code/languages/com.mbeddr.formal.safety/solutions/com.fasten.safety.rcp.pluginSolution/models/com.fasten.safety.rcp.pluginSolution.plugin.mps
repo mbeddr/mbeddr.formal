@@ -42,6 +42,7 @@
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="lbo2" ref="r:0f81d0ca-0757-4ee3-8a9a-ba988c2c39e3(com.mbeddr.formal.safety.gsn.ext.structure)" implicit="true" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="true" />
+    <import index="9br2" ref="r:70aadfb3-8246-45ac-bcd1-b345c7f7cfe4(com.mbeddr.formal.safety.argument.modelquery.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -1423,6 +1424,29 @@
                   <node concept="1dCxOk" id="7A06dcUJ04F" role="37shsm">
                     <property role="1XweGW" value="7466bc49-e775-4df7-a9f3-e383173b2eee" />
                     <property role="1XxBO9" value="fasten.safety.gsn.ext" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="tC5Ba" id="6xXHcqxdLYA" role="ftvYc">
+            <property role="TrG5h" value="Semantics" />
+            <property role="1XlLyE" value="true" />
+            <property role="2f7twF" value="Semantics" />
+            <property role="2pbE17" value="S" />
+            <node concept="ftmFs" id="6xXHcqxdLYB" role="ftER_">
+              <node concept="tCFHf" id="6xXHcqxdLZ4" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="6xXHcqxdLZ5" role="2J__8u">
+                  <property role="Xl_RC" value="Custom Assurance Consistency Checks" />
+                </node>
+                <node concept="35c_gC" id="6xXHcqxdLZ6" role="2J__8u">
+                  <ref role="35c_gD" to="9br2:1vid6hjrqXc" resolve="ModelChecksContainer" />
+                </node>
+                <node concept="37shsh" id="6xXHcqxdLZ7" role="2J__8u">
+                  <node concept="1dCxOk" id="6xXHcqxdzWY" role="37shsm">
+                    <property role="1XweGW" value="ad50662a-9851-40b5-8a07-e7535a82f5bb" />
+                    <property role="1XxBO9" value="fasten.safety.gsn.modelquery" />
                   </node>
                 </node>
               </node>
