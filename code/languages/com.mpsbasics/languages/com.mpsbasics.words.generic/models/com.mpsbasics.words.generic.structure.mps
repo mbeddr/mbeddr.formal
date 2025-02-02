@@ -88,7 +88,7 @@
     <property role="TrG5h" value="FullyQualifiedNamedModelElementRefWord" />
     <property role="34LRSv" value="@fqn-model-element" />
     <property role="R4oN_" value="fully qualified named model element" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6FJpOMATDUU" role="1TKVEi">
       <property role="IQ2ns" value="7705491066369515194" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -103,7 +103,7 @@
   <node concept="1TIwiD" id="6FJpOMATAAK">
     <property role="EcuMT" value="7705491066369501616" />
     <property role="TrG5h" value="FullyQualifiesNameSegment" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6FJpOMATAAL" role="1TKVEi">
       <property role="IQ2ns" value="7705491066369501617" />
       <property role="20kJfa" value="namedModelElement" />
