@@ -14959,6 +14959,11 @@
             <ref role="3bR37D" node="2u7UHDC1TKp" resolve="com.mpsbasics.pdfexporter" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6FJpOMBtycz" role="3bR37C">
+          <node concept="3bR9La" id="6FJpOMBtyc$" role="1SiIV1">
+            <ref role="3bR37D" node="y1G8y6aUhJ" resolve="com.mbeddr.formal.safety.argument.modelquery" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4ziKDEngAys" role="2G$12L">
         <property role="BnDLt" value="true" />

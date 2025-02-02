@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.formal.safety.tutorial" uuid="7a642ffb-bd05-4e8c-b81a-08fde9a204ba" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
@@ -12,14 +12,10 @@
   </facets>
   <dependencies>
     <dependency reexport="false">676b5323-9c6d-4b8d-a4fc-5d159c3d8aed(com.mbeddr.formal.safety.gsn.patterns.lib)</dependency>
-    <dependency reexport="false">d873c9ba-1199-4310-897d-5fa1a905f179(com.mbeddr.formal.safety.users_guide)</dependency>
     <dependency reexport="false">04d81d12-7048-4552-9a53-86a271c0f094(com.mbeddr.formal.safety.argument.visualisation)</dependency>
     <dependency reexport="false">e6e482a5-282a-4c6d-862a-311affd0586b(com.mbeddr.formal.safety.argument.jira_integration)</dependency>
     <dependency reexport="false">e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)</dependency>
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-    <dependency reexport="false">56f134c7-a829-428d-9119-715369c69768(org.mpsqa.treemap.lib)</dependency>
-    <dependency reexport="false">fde86f49-830f-414f-9c22-2a9e300eaba6(com.mpsbasics.jira)</dependency>
-    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">17da266c-02d9-4bbd-b69b-8a656b49f45c(com.mbeddr.formal.safety.hara)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
   </dependencies>

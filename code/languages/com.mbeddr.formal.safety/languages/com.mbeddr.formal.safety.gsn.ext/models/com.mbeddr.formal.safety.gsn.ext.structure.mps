@@ -396,8 +396,8 @@
     <property role="EcuMT" value="5879905612006349272" />
     <property role="3GE5qa" value="words" />
     <property role="TrG5h" value="GenericNamedModelElementRefWord" />
-    <property role="R4oN_" value="typed model element" />
-    <property role="34LRSv" value="@model-elem" />
+    <property role="R4oN_" value="typed model element reference" />
+    <property role="34LRSv" value="@model-element" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="56pBK14tHBp" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />

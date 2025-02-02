@@ -35,6 +35,7 @@
     <dependency reexport="false">1118d03f-f774-4a18-9e75-2357f8563d46(com.mbeddr.formal.safety.argument.spi)</dependency>
     <dependency reexport="false">546ac349-3106-438d-b92b-7d2ebfa2ade8(com.mbeddr.formal.safety.argument.runtime)</dependency>
     <dependency reexport="false">ece26728-2885-4b26-9f61-67d2821fc361(com.mpsbasics.pdfexporter)</dependency>
+    <dependency reexport="false">57ecebe4-dfb8-4fef-9175-0008e04a3684(com.mbeddr.formal.safety.argument.modelquery)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:c38abce1-4c09-44cb-9ebf-2a764e824bb5:com.mbeddr.mpsutil.actionsfilter" version="0" />
@@ -79,6 +80,7 @@
     <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
     <module reference="0deccdfd-196b-4d8c-895e-0d6cb8014dfd(com.mbeddr.formal.req.base)" version="0" />
     <module reference="3460ac43-6f59-4f61-b134-9fa2f799c2d3(com.mbeddr.formal.req.scenarios)" version="0" />
+    <module reference="57ecebe4-dfb8-4fef-9175-0008e04a3684(com.mbeddr.formal.safety.argument.modelquery)" version="0" />
     <module reference="8a4ef392-f4b4-43e7-afb5-b071dce8043d(com.mbeddr.formal.safety.argument.process)" version="0" />
     <module reference="546ac349-3106-438d-b92b-7d2ebfa2ade8(com.mbeddr.formal.safety.argument.runtime)" version="0" />
     <module reference="1118d03f-f774-4a18-9e75-2357f8563d46(com.mbeddr.formal.safety.argument.spi)" version="0" />
