@@ -10,6 +10,7 @@
     <import index="9br2" ref="r:70aadfb3-8246-45ac-bcd1-b345c7f7cfe4(com.mbeddr.formal.safety.argument.modelquery.structure)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -83,7 +84,9 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk">
+        <child id="1212687122400" name="typeParameter" index="1pMfVU" />
+      </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
@@ -110,6 +113,13 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
+      </concept>
+    </language>
+    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
+        <child id="5721587534047265375" name="throwable" index="9lYJj" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -222,13 +232,37 @@
               </node>
             </node>
             <node concept="3clFbS" id="y1G8y66BRw" role="1zc67A">
-              <node concept="3clFbF" id="y1G8y67HY_" role="3cqZAp">
-                <node concept="2OqwBi" id="y1G8y67If4" role="3clFbG">
-                  <node concept="37vLTw" id="y1G8y67HY$" role="2Oq$k0">
-                    <ref role="3cqZAo" node="y1G8y66BRu" resolve="e" />
-                  </node>
-                  <node concept="liA8E" id="y1G8y67Iw0" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
+              <node concept="2xdQw9" id="75npNYZJ$io" role="3cqZAp">
+                <property role="2xdLsb" value="gZ5fh_4/error" />
+                <node concept="Xl_RD" id="75npNYZJ$iq" role="9lYJi">
+                  <property role="Xl_RC" value="exception while running the checker" />
+                </node>
+                <node concept="37vLTw" id="75npNYZJ_5w" role="9lYJj">
+                  <ref role="3cqZAo" node="y1G8y66BRu" resolve="e" />
+                </node>
+              </node>
+              <node concept="3cpWs6" id="75npNYZJn33" role="3cqZAp">
+                <node concept="2ShNRf" id="75npNYZJo$P" role="3cqZAk">
+                  <node concept="1pGfFk" id="75npNYZJo$$" role="2ShVmc">
+                    <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                    <node concept="3uibUv" id="75npNYZJo$_" role="1pMfVU">
+                      <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+                    </node>
+                    <node concept="17QB3L" id="75npNYZJo$A" role="1pMfVU" />
+                    <node concept="10Nm6u" id="75npNYZJpmR" role="37wK5m" />
+                    <node concept="3cpWs3" id="75npNYZJvHr" role="37wK5m">
+                      <node concept="2OqwBi" id="75npNYZJxsd" role="3uHU7w">
+                        <node concept="37vLTw" id="75npNYZJwvh" role="2Oq$k0">
+                          <ref role="3cqZAo" node="y1G8y66BRu" resolve="e" />
+                        </node>
+                        <node concept="liA8E" id="75npNYZJyH8" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Throwable.getLocalizedMessage()" resolve="getLocalizedMessage" />
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="75npNYZJqTG" role="3uHU7B">
+                        <property role="Xl_RC" value="Exception while running the checker: " />
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -298,8 +332,8 @@
                     </node>
                   </node>
                   <node concept="2YIFZM" id="y1G8y67Erh" role="3uHU7w">
-                    <ref role="1Pybhc" node="y1G8y67AP7" resolve="NamingUtils" />
                     <ref role="37wK5l" node="y1G8y67AQP" resolve="nameOfGeneratedModelCheckerClass" />
+                    <ref role="1Pybhc" node="y1G8y67AP7" resolve="NamingUtils" />
                     <node concept="37vLTw" id="y1G8y6afW_" role="37wK5m">
                       <ref role="3cqZAo" node="y1G8y6ad_X" resolve="mcc" />
                     </node>
@@ -457,7 +491,19 @@
             <node concept="3clFbJ" id="y1G8y68DET" role="3cqZAp">
               <node concept="3clFbS" id="y1G8y68DEV" role="3clFbx">
                 <node concept="3cpWs6" id="y1G8y6az7T" role="3cqZAp">
-                  <node concept="10Nm6u" id="y1G8y6azjn" role="3cqZAk" />
+                  <node concept="2ShNRf" id="75npNYZJGnG" role="3cqZAk">
+                    <node concept="1pGfFk" id="75npNYZJGnH" role="2ShVmc">
+                      <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                      <node concept="3uibUv" id="75npNYZJGnI" role="1pMfVU">
+                        <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+                      </node>
+                      <node concept="17QB3L" id="75npNYZJGnJ" role="1pMfVU" />
+                      <node concept="10Nm6u" id="75npNYZJGnK" role="37wK5m" />
+                      <node concept="Xl_RD" id="75npNYZJGnP" role="37wK5m">
+                        <property role="Xl_RC" value="Unexpected error while running the checker" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
               <node concept="3clFbC" id="y1G8y68DR$" role="3clFbw">
@@ -472,17 +518,26 @@
                 <node concept="37vLTw" id="y1G8y6aqU$" role="10QFUP">
                   <ref role="3cqZAo" node="y1G8y68Dl0" resolve="result" />
                 </node>
-                <node concept="17QB3L" id="y1G8y6arly" role="10QFUM" />
+                <node concept="3uibUv" id="75npNYZInq_" role="10QFUM">
+                  <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+                  <node concept="3uibUv" id="75npNYZJjcA" role="11_B2D">
+                    <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+                  </node>
+                  <node concept="17QB3L" id="75npNYZJkG5" role="11_B2D" />
+                </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="y1G8y6asJ1" role="3cqZAp">
-          <node concept="10Nm6u" id="y1G8y6asTX" role="3cqZAk" />
-        </node>
       </node>
       <node concept="3Tm1VV" id="y1G8y6ad$X" role="1B3o_S" />
-      <node concept="17QB3L" id="y1G8y6ad_m" role="3clF45" />
+      <node concept="3uibUv" id="7OA8CsRg0sr" role="3clF45">
+        <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+        <node concept="3uibUv" id="7OA8CsRg2jS" role="11_B2D">
+          <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
+        </node>
+        <node concept="17QB3L" id="7OA8CsRg49a" role="11_B2D" />
+      </node>
       <node concept="37vLTG" id="y1G8y6ad_X" role="3clF46">
         <property role="TrG5h" value="mcc" />
         <node concept="3Tqbb2" id="y1G8y6ad_W" role="1tU5fm">

@@ -79,7 +79,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -177,7 +176,6 @@
         </node>
       </node>
       <node concept="3clFbS" id="xCk$O6mi_k" role="3clF47">
-        <node concept="3clFbH" id="xCk$O6mi_G" role="3cqZAp" />
         <node concept="3cpWs8" id="xCk$O6miVt" role="3cqZAp">
           <node concept="3cpWsn" id="xCk$O6miVs" role="3cpWs9">
             <property role="3TUv4t" value="true" />
@@ -187,7 +185,7 @@
             </node>
             <node concept="2ShNRf" id="xCk$O6mj3r" role="33vP2m">
               <node concept="1pGfFk" id="xCk$O6mj3O" role="2ShVmc">
-                <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType,com.intellij.notification.NotificationListener)" resolve="Notification" />
+                <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType)" resolve="Notification" />
                 <node concept="2OqwBi" id="xCk$O6mjh0" role="37wK5m">
                   <node concept="37vLTw" id="71GfFl7hNEa" role="2Oq$k0">
                     <ref role="3cqZAo" node="71GfFl7hN$8" resolve="fastenBalloonGroup" />
@@ -205,7 +203,6 @@
                 <node concept="37vLTw" id="xCk$O6mjA0" role="37wK5m">
                   <ref role="3cqZAo" node="xCk$O6mjqq" resolve="type" />
                 </node>
-                <node concept="10Nm6u" id="xCk$O6mj3X" role="37wK5m" />
               </node>
             </node>
           </node>

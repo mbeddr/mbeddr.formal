@@ -15,7 +15,9 @@ plugins {
     id("de.itemis.mps.gradle.common") version mpsGradlePluginVersion
 }
 
-val jbrVers = "17.0.11-b1207.30"
+val jbrVers = "17.0.8.1-b1000.32"
+val jbrWindowsVers = "jbr_jcef-17.0.8.1-windows-x64-b1000.32"
+val jbrLinuxVers = "jbr_jcef-17.0.8.1-linux-x64-b1000.32"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -98,11 +100,19 @@ configurations {
 dependencyLocking { lockAllConfigurations() }
 
 repositories {
-    val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps")
+    val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps",
+            "https://maven.pkg.github.com/mbeddr/*")
 
     for (repoUrl in dependencyRepositories) {
         maven {
             url = uri(repoUrl)
+
+            if (repoUrl.startsWith("https://maven.pkg.github.com/")) {
+                credentials {
+                    username = project.property("gpr.user") as String
+                    password = project.property("gpr.token") as String
+                }
+            }
         }
     }
     mavenCentral()
@@ -152,6 +162,16 @@ val defaultScriptArgs = mapOf(
 )
 
 fun scriptFile(relativePath: String):File = File("$rootDir/build/scripts/patched/$relativePath")
+
+fun unpackAndRenameJBR(archiveName : String, nameOfDirectoryInsideArchive : String, nameOfJbrDirectory : String) {
+    val jbrDownloadDir = jdkDir.toString() + "/../jbrDownload";
+    //project.delete(files("${jbrDownloadDir}"));
+    copy {
+        from(tarTree(resources.gzip(jdkDir.toString() + "/${archiveName}")))
+        into(jbrDownloadDir)
+    }
+    file(jbrDownloadDir + "/${nameOfDirectoryInsideArchive}").renameTo(file("${jbrDownloadDir}/${nameOfJbrDirectory}"))
+}
 
 tasks {
     val configureJava by registering {
@@ -346,34 +366,48 @@ tasks {
             val resolvedArtifact = configurations["jbrWin"].resolvedConfiguration.resolvedArtifacts.find { ra -> ra.file.name == filename }!!
             resolvedArtifact.name + "-" + resolvedArtifact.classifier + "." + resolvedArtifact.extension
         }
+
+        doLast {
+            unpackAndRenameJBR("jbr_jcef-windows-x64.tgz", jbrWindowsVers, "jbr_windows");
+        }
     }
 
-    val unpackDistribution by registering(Copy::class) {
-        from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-${version}.zip"))
-        into("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp")
+    val resolveJBR_Linux by registering(Copy::class) {
+        from(configurations["jbrLinux"])
+        into(jdkDir)
+        rename { filename ->
+            val resolvedArtifact = configurations["jbrLinux"].resolvedConfiguration.resolvedArtifacts.find { ra -> ra.file.name == filename }!!
+            resolvedArtifact.name + "-" + resolvedArtifact.classifier + "." + resolvedArtifact.extension
+        }
+
+        doLast {
+            unpackAndRenameJBR("jbr_jcef-linux-x64.tgz", jbrLinuxVers, "jbr_linux");
+        }
     }
 
-    val deleteJBR by registering(Delete::class) {
-        dependsOn(unpackDistribution)
-        delete("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}/jbr")
+    val package_fasten_distribution_for_specific_platforms by registering(BuildLanguages::class) {
+        dependsOn(resolveJBR_Win, resolveJBR_Linux, build_fasten_safety_distribution)
+        script = scriptFile("build-fasten-distribution-for-specific-platforms.xml")
     }
 
-    val removeJBR by registering(Zip::class) {
-        dependsOn(deleteJBR)
-        from("$artifactsDir/com.mbeddr.formal.safetyDistribution/tmp/fasten-${version}")
-        archiveFileName.set("fasten-${version}_with_removed_JBR.zip")
-        destinationDirectory.set(file("$artifactsDir/com.mbeddr.formal.safetyDistribution"))
+    val produce_fasten_distribution_win by registering(Zip::class) {
+        dependsOn(package_fasten_distribution_for_specific_platforms)
+        from(zipTree(artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Win.zip")))
+        destinationDirectory = artifactsDir
     }
 
-    val package_fasten_safety_distribution_win by registering(Zip::class) {
-        dependsOn(resolveJBR_Win, build_fasten_safety_distribution, removeJBR)
-        archiveBaseName.set("fasten-${version}-Win")
-        from(zipTree("$artifactsDir/com.mbeddr.formal.safetyDistribution/fasten-${version}_with_removed_JBR.zip"))
-        from(tarTree("$jdkDir/jbr_jcef-windows-x64.tgz"))
+    val produce_fasten_distribution_linux by registering(Tar::class) {
+        dependsOn(package_fasten_distribution_for_specific_platforms)
+        compression = Compression.GZIP
+        from(tarTree(artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Linux.tar.gz")))
+        destinationDirectory = artifactsDir
+        archiveFileName = "fasten-${version}-Linux.tar.gz"
     }
 
     val build_all_languages by registering {
-        dependsOn(build_assurance_languages, build_formal_languages)
+	// as of 01.2025, all languages built by 'build_assurance_languages' are also built by 'build_formal_languages'
+	// commented out to avoid multiple building of the same languages
+        dependsOn(/*build_assurance_languages,*/ build_formal_languages)
     }
 
     assemble { dependsOn(package_formal, package_assurance) }
@@ -402,7 +436,7 @@ tasks {
         "com.mbeddr.formal.safety",
     ).map { layout.projectDirectory.dir("code/languages/$it") }
 
-    val pluginRootsForMigration = listOf(mpsHomeDir.resolve("plugins"), dependenciesDir.asFile)
+    val pluginRootsForMigration = mpsHomeDir.listFiles()
 
     val migrate by registering(MpsMigrate::class) {
         dependsOn(resolveMps, downloadJbr, build_all_languages)
@@ -508,6 +542,16 @@ publishing {
                     dependencyNode.appendNode("scope", "provided")
                 }
             }
+        }
+	    create<MavenPublication>("FASTEN_WIN_RCP") {
+            groupId = "fasten"
+            artifactId = "win.rcp"
+            artifact(tasks.named("produce_fasten_distribution_win"))
+        }
+        create<MavenPublication>("FASTEN_LINUX_RCP") {
+           groupId = "fasten"
+           artifactId = "linux.rcp"
+           artifact(tasks.named("produce_fasten_distribution_linux"))
         }
     }
 }

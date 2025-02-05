@@ -3,7 +3,6 @@
   <persistence version="9" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
-    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -13,6 +12,7 @@
     <import index="vicv" ref="r:b37643be-188d-4d39-96f8-132e87814a06(com.fasten.safety.fmea.iso26262.structure)" />
     <import index="b64w" ref="r:6afcb499-f0e8-4360-a726-91f0159f2fd9(com.fasten.safety.fmea.iso26262.behavior)" />
     <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -191,13 +191,13 @@
             <node concept="3F0A7n" id="2TaO3kYBHMR" role="2wV5jI">
               <property role="1Intyy" value="true" />
               <ref role="1NtTu8" to="vicv:2TaO3kYv$an" resolve="fit" />
-              <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
+              <ref role="1k5W1q" to="1ks0:2CEi94e3iKI" resolve="PassiveTextStyle" />
             </node>
           </node>
         </node>
         <node concept="3F0ifn" id="2TaO3kY$Ux1" role="3EZMnx">
           <property role="3F0ifm" value="FIT" />
-          <ref role="1k5W1q" to="xnej:2CEi94e3iKI" resolve="PassiveTextStyle" />
+          <ref role="1k5W1q" to="1ks0:2CEi94e3iKI" resolve="PassiveTextStyle" />
         </node>
         <node concept="3F0ifn" id="42QGQFVnOlW" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -223,7 +223,7 @@
     <ref role="1XX52x" to="vicv:2TaO3kYvzOZ" resolve="ElectronicComponentTypeCatalogue" />
     <node concept="3EZMnI" id="5rwT_Jny5eS" role="2wV5jI">
       <node concept="PMmxH" id="2LDKh2uDSuv" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="2TaO3kYv$ag" role="3EZMnx" />
       <node concept="2rfBfz" id="2TaO3kYv$ai" role="3EZMnx">
@@ -263,7 +263,7 @@
     <ref role="1XX52x" to="vicv:2TaO3kYv4an" resolve="ElectronicComponentCatalogue" />
     <node concept="3EZMnI" id="2TaO3kYvDN7" role="2wV5jI">
       <node concept="PMmxH" id="2TaO3kYvDN8" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="2TaO3kYvDN9" role="3EZMnx" />
       <node concept="2rfBfz" id="2TaO3kYvDNa" role="3EZMnx">

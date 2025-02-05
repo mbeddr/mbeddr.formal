@@ -22,6 +22,7 @@
     <import index="95j3" ref="r:b59c48c6-3515-4a72-8146-4b8c723b8307(com.mbeddr.formal.base.diagram_utils)" />
     <import index="bewr" ref="r:a5d87024-d7b0-459e-b0ec-a9c089196f41(com.mbeddr.formal.safety.stamp.structure)" />
     <import index="xm38" ref="r:d81a00b5-7941-4066-9929-d2d2283d4215(com.mbeddr.formal.base.tooling.vcs)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
@@ -497,7 +498,7 @@
     <ref role="1XX52x" to="bewr:3HVC1H6VUjH" resolve="FunctionalControlStructure" />
     <node concept="3EZMnI" id="3GRi4m$qQ5q" role="2wV5jI">
       <node concept="PMmxH" id="2LDKh2uDSuv" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="3GRi4m$qQa$" role="3EZMnx" />
       <node concept="PMmxH" id="4bL3rTRLlvM" role="3EZMnx">
@@ -1371,7 +1372,7 @@
     <ref role="1XX52x" to="bewr:1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
     <node concept="3EZMnI" id="1JhvKLLO08I" role="2wV5jI">
       <node concept="PMmxH" id="1JhvKLLO08P" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="1JhvKLLO08R" role="3EZMnx" />
       <node concept="3EZMnI" id="1JhvKLLOic6" role="3EZMnx">
@@ -1765,7 +1766,7 @@
     <ref role="1XX52x" to="bewr:6RZi9iiAzbi" resolve="LossScenarios" />
     <node concept="3EZMnI" id="6RZi9iiAzdT" role="2wV5jI">
       <node concept="PMmxH" id="1dsoBXVMQn8" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="2rfBfz" id="6RZi9iiAze4" role="3EZMnx">
         <node concept="2reSaE" id="6RZi9iiAze5" role="2rf8GZ">
@@ -1817,7 +1818,7 @@
     <ref role="1XX52x" to="bewr:EZNLLOzOsH" resolve="ContextsCatalogue" />
     <node concept="3EZMnI" id="EZNLLOzTUG" role="2wV5jI">
       <node concept="PMmxH" id="EZNLLOzTUH" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="2rfBfz" id="EZNLLOzTUI" role="3EZMnx">
         <node concept="2reSaE" id="EZNLLOzTUJ" role="2rf8GZ">
@@ -2452,7 +2453,7 @@
     </node>
     <node concept="3EZMnI" id="4bL3rTRE7sr" role="2wV5jI">
       <node concept="PMmxH" id="4bL3rTRE7ss" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="4bL3rTRE7st" role="3EZMnx" />
       <node concept="PMmxH" id="4bL3rTRKGkc" role="3EZMnx">
@@ -2603,7 +2604,7 @@
         </node>
         <node concept="3F0ifn" id="4bL3rTRH4Y7" role="3EZMnx">
           <property role="3F0ifm" value=";" />
-          <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+          <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
         </node>
         <node concept="l2Vlx" id="4bL3rTRFUhR" role="2iSdaV" />
       </node>

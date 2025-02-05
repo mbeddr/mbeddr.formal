@@ -47,6 +47,7 @@
     <import index="oqvi" ref="r:d4fc365d-2731-4abe-97d6-18ce4700d823(com.mpsbasics.editor.utils.buttons)" />
     <import index="1njx" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:com.mxgraph.view(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="r3rm" ref="r:7fc96130-6279-4a55-aeeb-422a6879539d(de.itemis.mps.editor.diagram.runtime.jgraph)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
@@ -833,7 +834,7 @@
     <ref role="1XX52x" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
     <node concept="3EZMnI" id="3GRi4m$qQ5q" role="2wV5jI">
       <node concept="PMmxH" id="2LDKh2uDSuv" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
         <node concept="pkWqt" id="WKGDODOnGl" role="pqm2j">
           <node concept="3clFbS" id="WKGDODOnGm" role="2VODD2">
             <node concept="3clFbF" id="WKGDODOoa6" role="3cqZAp">
@@ -5845,7 +5846,7 @@
     <ref role="1XX52x" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
     <node concept="3EZMnI" id="5uFV_KKBiZL" role="2wV5jI">
       <node concept="PMmxH" id="5uFV_KKBiZM" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
         <node concept="pkWqt" id="5uFV_KKBiZN" role="pqm2j">
           <node concept="3clFbS" id="5uFV_KKBiZO" role="2VODD2">
             <node concept="3clFbF" id="5uFV_KKBiZP" role="3cqZAp">
@@ -10396,7 +10397,7 @@
     </node>
     <node concept="3EZMnI" id="7olAlesPjYr" role="2wV5jI">
       <node concept="PMmxH" id="7olAlesPjYs" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
         <node concept="pkWqt" id="7olAlesPjYt" role="pqm2j">
           <node concept="3clFbS" id="7olAlesPjYu" role="2VODD2">
             <node concept="3clFbF" id="7olAlesPjYv" role="3cqZAp">
@@ -11726,7 +11727,7 @@
     <ref role="1XX52x" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
     <node concept="3EZMnI" id="4Cms47V7bQb" role="2wV5jI">
       <node concept="PMmxH" id="4Cms47V7bQc" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
         <node concept="pkWqt" id="4Cms47V7bQd" role="pqm2j">
           <node concept="3clFbS" id="4Cms47V7bQe" role="2VODD2">
             <node concept="3clFbF" id="4Cms47V7bQf" role="3cqZAp">
@@ -13024,7 +13025,7 @@
       <node concept="2iRfu4" id="2p23w$d1hPE" role="2iSdaV" />
       <node concept="3F0ifn" id="7NA168q7J5k" role="3EZMnx">
         <property role="3F0ifm" value=";" />
-        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+        <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
       </node>
     </node>
   </node>
@@ -13740,7 +13741,7 @@
     </node>
     <node concept="3EZMnI" id="3EDV2YKNky9" role="2wV5jI">
       <node concept="PMmxH" id="3EDV2YKNkya" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
         <node concept="pkWqt" id="3EDV2YKNkyb" role="pqm2j">
           <node concept="3clFbS" id="3EDV2YKNkyc" role="2VODD2">
             <node concept="3clFbF" id="3EDV2YKNkyd" role="3cqZAp">
@@ -14266,7 +14267,7 @@
       </node>
       <node concept="3F0ifn" id="7NA168q5QLZ" role="3EZMnx">
         <property role="3F0ifm" value=";" />
-        <ref role="1k5W1q" to="xnej:hFDgi_W" resolve="Semicolon" />
+        <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
       </node>
       <node concept="2iRfu4" id="7NA168q5x7o" role="2iSdaV" />
     </node>

@@ -11,6 +11,7 @@
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -102,7 +103,7 @@
     <ref role="1XX52x" to="cjwq:7TjUbLQ4519" resolve="HazardsList" />
     <node concept="3EZMnI" id="7TjUbLQ452l" role="2wV5jI">
       <node concept="PMmxH" id="2LDKh2uDSuv" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="7TjUbLQ45uH" role="3EZMnx" />
       <node concept="2rfBfz" id="7TjUbLQ45uW" role="3EZMnx">
@@ -201,7 +202,7 @@
     <ref role="1XX52x" to="cjwq:2hOvri9WL4A" resolve="Losses" />
     <node concept="3EZMnI" id="2hOvri9WL5z" role="2wV5jI">
       <node concept="PMmxH" id="2hOvri9WL5$" role="3EZMnx">
-        <ref role="PMmxG" to="xnej:4gtLUSMLjsp" resolve="HeaderComponent" />
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="2hOvri9WL5_" role="3EZMnx" />
       <node concept="2rfBfz" id="2hOvri9WL5A" role="3EZMnx">

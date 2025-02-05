@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:864b7953-f3fa-48ac-aa8c-5a263225acf3(_010_features._110_checkable_assurance_demo_modelquery)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
+    <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
+      <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.FunctionalSafetyReqKind" flags="ng" index="2iDXIW">
+        <child id="7998766141987827641" name="hazards" index="DABNk" />
+      </concept>
+    </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
+        <reference id="7998766141987827622" name="hazard" index="DABNb" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1QQeGf" id="y1G8y690Kr">
+    <property role="TrG5h" value="_020_safety_reqs" />
+    <property role="3GE5qa" value="" />
+    <node concept="0lhDl" id="y1G8y690Kt" role="1QQeBF">
+      <property role="0lsPA" value="01" />
+      <node concept="2iDXIW" id="y1G8y690KD" role="0nOlf">
+        <node concept="DABN8" id="y1G8y690KG" role="DABNk">
+          <ref role="DABNb" node="y1G8y690K6" resolve="Unintended acceleration" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="y1G8y690Kv" role="1QQeG9">
+        <node concept="19SUe$" id="y1G8y690Kw" role="19SJt6">
+          <property role="19SUeA" value="Vehicle shall avoid unintended acceleration " />
+        </node>
+      </node>
+    </node>
+    <node concept="0lhDl" id="y1G8y690KT" role="1QQeBF">
+      <property role="0lsPA" value="02" />
+      <node concept="2iDXIW" id="y1G8y690KU" role="0nOlf">
+        <node concept="DABN8" id="y1G8y690KV" role="DABNk">
+          <ref role="DABNb" node="y1G8y690Kn" resolve="Unintended braking" />
+        </node>
+      </node>
+      <node concept="19SGf9" id="y1G8y690KW" role="1QQeG9">
+        <node concept="19SUe$" id="y1G8y690KX" role="19SJt6">
+          <property role="19SUeA" value="Vehicle shall avoid unintended braking " />
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

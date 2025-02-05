@@ -1,20 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mpsbasics.pdfbox" uuid="bc7d0863-298c-41cf-984f-a0421e757da5" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="pdfbox-app-3.0.1.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
       <sourceRoot location="graphics2d-3.0.1.jar" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="graphics2d-3.0.1.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="pdfbox-app-3.0.1.jar" />
+    </modelRoot>
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="xmpbox-3.0.1.jar" />
+    </modelRoot>
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="openhtmltopdf-core-1.1.23.jar" />
+      <sourceRoot location="openhtmltopdf-pdfbox-1.1.23.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
+      <library location="${module}/lib/openhtmltopdf-core-1.1.23.jar" />
+      <library location="${module}/lib/openhtmltopdf-pdfbox-1.1.23.jar" />
+      <library location="${module}/lib/xmpbox-3.0.1.jar" />
       <library location="${module}/lib/pdfbox-app-3.0.1.jar" />
       <library location="${module}/lib/graphics2d-3.0.1.jar" />
     </facet>
@@ -30,11 +39,13 @@
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
+    <language slang="l:73736c50-f124-433b-b789-2828a15a0adc:jetbrains.mps.baseLanguage.collections.trove" version="0" />
     <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
     <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="19" />
+    <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
@@ -48,7 +59,6 @@
     <module reference="bc7d0863-298c-41cf-984f-a0421e757da5(com.mpsbasics.pdfbox)" version="0" />
     <module reference="ece26728-2885-4b26-9f61-67d2821fc361(com.mpsbasics.pdfexporter)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-    <module reference="5ad14eca-28d7-4bce-b8e0-648908a49062(org.apache.batik)" version="0" />
   </dependencyVersions>
 </solution>
 

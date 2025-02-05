@@ -29,6 +29,7 @@
     <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="x4mf" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.menus(MPS.Editor/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -579,7 +580,7 @@
             </node>
             <node concept="3F0ifn" id="67ygqsM8Nzi" role="2czzBI">
               <property role="3F0ifm" value="no input" />
-              <ref role="1k5W1q" to="xnej:67ygqsM9cDK" resolve="EditingHintStyle" />
+              <ref role="1k5W1q" to="1ks0:67ygqsM9cDK" resolve="EditingHintStyle" />
             </node>
           </node>
           <node concept="l2Vlx" id="7RhjhI7AbnM" role="2iSdaV" />
@@ -597,7 +598,7 @@
             </node>
             <node concept="3F0ifn" id="67ygqsMaaq$" role="2czzBI">
               <property role="3F0ifm" value="no output" />
-              <ref role="1k5W1q" to="xnej:67ygqsM9cDK" resolve="EditingHintStyle" />
+              <ref role="1k5W1q" to="1ks0:67ygqsM9cDK" resolve="EditingHintStyle" />
             </node>
           </node>
         </node>
@@ -626,7 +627,7 @@
             </node>
             <node concept="3F0ifn" id="67ygqsMaaqB" role="2czzBI">
               <property role="3F0ifm" value="no contract" />
-              <ref role="1k5W1q" to="xnej:67ygqsM9cDK" resolve="EditingHintStyle" />
+              <ref role="1k5W1q" to="1ks0:67ygqsM9cDK" resolve="EditingHintStyle" />
             </node>
           </node>
           <node concept="l2Vlx" id="7RhjhI7Baj$" role="2iSdaV" />
@@ -1427,7 +1428,7 @@
             </node>
             <node concept="3F0ifn" id="57ROGn8Stw6" role="2czzBI">
               <property role="3F0ifm" value="add new input" />
-              <ref role="1k5W1q" to="xnej:67ygqsM9cDK" resolve="EditingHintStyle" />
+              <ref role="1k5W1q" to="1ks0:67ygqsM9cDK" resolve="EditingHintStyle" />
             </node>
           </node>
           <node concept="3EZMnI" id="57ROGn943HX" role="3EZMnx">
@@ -1487,7 +1488,7 @@
               <node concept="2iRkQZ" id="57ROGn8Wv8Z" role="2czzBy" />
               <node concept="3F0ifn" id="_wUu$TZEUf" role="2czzBJ">
                 <property role="3F0ifm" value="no inherited inputs" />
-                <ref role="1k5W1q" to="xnej:67ygqsM9cDK" resolve="EditingHintStyle" />
+                <ref role="1k5W1q" to="1ks0:67ygqsM9cDK" resolve="EditingHintStyle" />
               </node>
             </node>
             <node concept="pkWqt" id="57ROGn944zF" role="pqm2j">
@@ -1524,7 +1525,7 @@
             </node>
             <node concept="3F0ifn" id="57ROGn8Stwd" role="2czzBI">
               <property role="3F0ifm" value="add new output" />
-              <ref role="1k5W1q" to="xnej:67ygqsM9cDK" resolve="EditingHintStyle" />
+              <ref role="1k5W1q" to="1ks0:67ygqsM9cDK" resolve="EditingHintStyle" />
             </node>
           </node>
           <node concept="3EZMnI" id="57ROGn947SV" role="3EZMnx">
@@ -1584,7 +1585,7 @@
               <node concept="2iRkQZ" id="_wUu$TZFv1" role="2czzBy" />
               <node concept="3F0ifn" id="_wUu$TZFv2" role="2czzBJ">
                 <property role="3F0ifm" value="no inherited outputs" />
-                <ref role="1k5W1q" to="xnej:67ygqsM9cDK" resolve="EditingHintStyle" />
+                <ref role="1k5W1q" to="1ks0:67ygqsM9cDK" resolve="EditingHintStyle" />
               </node>
             </node>
             <node concept="pkWqt" id="57ROGn948It" role="pqm2j">
@@ -1633,7 +1634,7 @@
             </node>
             <node concept="3F0ifn" id="6xNJt7lueN0" role="2czzBI">
               <property role="3F0ifm" value="add new contract" />
-              <ref role="1k5W1q" to="xnej:67ygqsM9cDK" resolve="EditingHintStyle" />
+              <ref role="1k5W1q" to="1ks0:67ygqsM9cDK" resolve="EditingHintStyle" />
             </node>
           </node>
           <node concept="3EZMnI" id="6xNJt7lufcD" role="3EZMnx">
@@ -1695,7 +1696,7 @@
               </node>
               <node concept="3F0ifn" id="6xNJt7lufd3" role="2czzBJ">
                 <property role="3F0ifm" value="no inherited contracts" />
-                <ref role="1k5W1q" to="xnej:67ygqsM9cDK" resolve="EditingHintStyle" />
+                <ref role="1k5W1q" to="1ks0:67ygqsM9cDK" resolve="EditingHintStyle" />
               </node>
               <node concept="2iRkQZ" id="5WRxR_T2a5V" role="2czzBy" />
             </node>
