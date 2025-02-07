@@ -15,6 +15,7 @@
       <concept id="2743728465716671950" name="com.mbeddr.formal.safety.cae.structure.Argument" flags="ng" index="29edHe" />
       <concept id="2743728465716671380" name="com.mbeddr.formal.safety.cae.structure.Claim" flags="ng" index="29edOk" />
       <concept id="2743728465716888629" name="com.mbeddr.formal.safety.cae.structure.Connection" flags="ng" index="29fmEP" />
+      <concept id="3083417542714086533" name="com.mbeddr.formal.safety.cae.structure.CAEStructure" flags="ng" index="Pp2HI" />
     </language>
     <language id="402c6c59-bdb3-47fc-8dfa-74ab35e75274" name="com.mbeddr.formal.safety.cae.external_evidence">
       <concept id="2210355370894166208" name="com.mbeddr.formal.safety.cae.external_evidence.structure.DocumentBasedExternalEvidence" flags="ng" index="2FaGEZ">
@@ -92,6 +93,9 @@
       </concept>
     </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="4445845612600281072" name="com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames" flags="ngI" index="2GXxrR">
+        <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
+      </concept>
       <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ngI" index="2U2l5L">
         <child id="7402587364850275470" name="attributes" index="2U2l5M" />
       </concept>
@@ -113,8 +117,9 @@
       </concept>
     </language>
   </registry>
-  <node concept="2vn7XN" id="1UGKBYPAxlj">
+  <node concept="Pp2HI" id="2FavYGw1Zjr">
     <property role="TrG5h" value="_051_cae_linking_evidence_to_external_ressources" />
+    <property role="3dZJ_E" value="0" />
     <node concept="29edOk" id="1UGKBYPAxlk" role="2vn1q5">
       <property role="TrG5h" value="C01" />
       <node concept="19SGf9" id="1UGKBYPAxlm" role="2vnaTY">
@@ -125,6 +130,72 @@
       <node concept="Figmn" id="1UGKBYPAxll" role="2U2l5M">
         <property role="Figmm" value="ccccff" />
       </node>
+    </node>
+    <node concept="29edHe" id="1UGKBYPAxmD" role="2vn1q5">
+      <property role="TrG5h" value="A01" />
+      <node concept="19SGf9" id="1UGKBYPAxmE" role="2vnaTY">
+        <node concept="19SUe$" id="1UGKBYPAxmF" role="19SJt6">
+          <property role="19SUeA" value="Sufficient QA &#10;has been performed." />
+        </node>
+      </node>
+    </node>
+    <node concept="2FaGEZ" id="1UGKBYPAxH$" role="2vn1q5">
+      <property role="TrG5h" value="EV01" />
+      <node concept="19SGf9" id="1UGKBYPAxH_" role="2vnaTY">
+        <node concept="19SUe$" id="1UGKBYPAxHA" role="19SJt6">
+          <property role="19SUeA" value="Test results and audit trail &#10;of peer reviews." />
+        </node>
+      </node>
+      <node concept="K87gv" id="1UGKBYPAxOA" role="3t1IcV">
+        <property role="FewnR" value="7bdRgLUxddkjgFgy7rLPow==" />
+        <property role="HIrNm" value="09/12/2021 14:58:50" />
+        <node concept="3NXOOs" id="1UGKBYPAxPB" role="K87gs">
+          <property role="3N1Lgt" value="external_documents/evidences/test_results_1.xml" />
+        </node>
+        <node concept="1Pa9Pv" id="1UGKBYPAxPD" role="2FbXVB">
+          <node concept="1PaTwC" id="1UGKBYPAxPE" role="1PaQFQ">
+            <node concept="3oM_SD" id="1UGKBYPAxPF" role="1PaTwD">
+              <property role="3oM_SC" value="Results" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPAxPJ" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPAxPM" role="1PaTwD">
+              <property role="3oM_SC" value="running" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPAxPQ" role="1PaTwD">
+              <property role="3oM_SC" value="tests." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2Fbr9R" id="1UGKBYPAxUt" role="3t1IcV">
+        <property role="2Fbr9O" value="https://www.youtube.com/watch?v=ekKMXtXehfg&amp;list=PL_DQiOR0jhbVIaShDvI4ePNefLFXBF1lT" />
+        <node concept="1Pa9Pv" id="1UGKBYPAxVB" role="2FbXVB">
+          <node concept="1PaTwC" id="1UGKBYPAxVC" role="1PaQFQ">
+            <node concept="3oM_SD" id="1UGKBYPAxVD" role="1PaTwD">
+              <property role="3oM_SC" value="Importance" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPAxXP" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPAxXV" role="1PaTwD">
+              <property role="3oM_SC" value="peer" />
+            </node>
+            <node concept="3oM_SD" id="1UGKBYPAxYn" role="1PaTwD">
+              <property role="3oM_SC" value="reviews." />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="29fmEP" id="1UGKBYPAxn6" role="2vhqc$">
+      <ref role="3VeSjP" node="1UGKBYPAxlk" resolve="C01" />
+      <ref role="3VeSjQ" node="1UGKBYPAxmD" resolve="A01" />
+    </node>
+    <node concept="29fmEP" id="1UGKBYPAxQU" role="2vhqc$">
+      <ref role="3VeSjQ" node="1UGKBYPAxH$" resolve="EV01" />
+      <ref role="3VeSjP" node="1UGKBYPAxmD" resolve="A01" />
     </node>
     <node concept="37mRI7" id="1UGKBYPAxlo" role="lGtFl">
       <node concept="37mRIm" id="1UGKBYPAxlp" role="37mRID">
@@ -608,72 +679,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="29edHe" id="1UGKBYPAxmD" role="2vn1q5">
-      <property role="TrG5h" value="A01" />
-      <node concept="19SGf9" id="1UGKBYPAxmE" role="2vnaTY">
-        <node concept="19SUe$" id="1UGKBYPAxmF" role="19SJt6">
-          <property role="19SUeA" value="Sufficient QA &#10;has been performed." />
-        </node>
-      </node>
-    </node>
-    <node concept="29fmEP" id="1UGKBYPAxn6" role="2vhqc$">
-      <ref role="3VeSjP" node="1UGKBYPAxlk" resolve="C01" />
-      <ref role="3VeSjQ" node="1UGKBYPAxmD" resolve="A01" />
-    </node>
-    <node concept="2FaGEZ" id="1UGKBYPAxH$" role="2vn1q5">
-      <property role="TrG5h" value="EV01" />
-      <node concept="19SGf9" id="1UGKBYPAxH_" role="2vnaTY">
-        <node concept="19SUe$" id="1UGKBYPAxHA" role="19SJt6">
-          <property role="19SUeA" value="Test results and audit trail &#10;of peer reviews." />
-        </node>
-      </node>
-      <node concept="K87gv" id="1UGKBYPAxOA" role="3t1IcV">
-        <property role="FewnR" value="7bdRgLUxddkjgFgy7rLPow==" />
-        <property role="HIrNm" value="09/12/2021 14:58:50" />
-        <node concept="3NXOOs" id="1UGKBYPAxPB" role="K87gs">
-          <property role="3N1Lgt" value="external_documents/evidences/test_results_1.xml" />
-        </node>
-        <node concept="1Pa9Pv" id="1UGKBYPAxPD" role="2FbXVB">
-          <node concept="1PaTwC" id="1UGKBYPAxPE" role="1PaQFQ">
-            <node concept="3oM_SD" id="1UGKBYPAxPF" role="1PaTwD">
-              <property role="3oM_SC" value="Results" />
-            </node>
-            <node concept="3oM_SD" id="1UGKBYPAxPJ" role="1PaTwD">
-              <property role="3oM_SC" value="of" />
-            </node>
-            <node concept="3oM_SD" id="1UGKBYPAxPM" role="1PaTwD">
-              <property role="3oM_SC" value="running" />
-            </node>
-            <node concept="3oM_SD" id="1UGKBYPAxPQ" role="1PaTwD">
-              <property role="3oM_SC" value="tests." />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2Fbr9R" id="1UGKBYPAxUt" role="3t1IcV">
-        <property role="2Fbr9O" value="https://www.youtube.com/watch?v=ekKMXtXehfg&amp;list=PL_DQiOR0jhbVIaShDvI4ePNefLFXBF1lT" />
-        <node concept="1Pa9Pv" id="1UGKBYPAxVB" role="2FbXVB">
-          <node concept="1PaTwC" id="1UGKBYPAxVC" role="1PaQFQ">
-            <node concept="3oM_SD" id="1UGKBYPAxVD" role="1PaTwD">
-              <property role="3oM_SC" value="Importance" />
-            </node>
-            <node concept="3oM_SD" id="1UGKBYPAxXP" role="1PaTwD">
-              <property role="3oM_SC" value="of" />
-            </node>
-            <node concept="3oM_SD" id="1UGKBYPAxXV" role="1PaTwD">
-              <property role="3oM_SC" value="peer" />
-            </node>
-            <node concept="3oM_SD" id="1UGKBYPAxYn" role="1PaTwD">
-              <property role="3oM_SC" value="reviews." />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="29fmEP" id="1UGKBYPAxQU" role="2vhqc$">
-      <ref role="3VeSjQ" node="1UGKBYPAxH$" resolve="EV01" />
-      <ref role="3VeSjP" node="1UGKBYPAxmD" resolve="A01" />
     </node>
   </node>
 </model>
