@@ -61,6 +61,7 @@
         <module reference="6464626a-ab04-4051-908e-5e8dc75acd78(com.mbeddr.formal.safety.gsn.ext)" version="2" />
         <module reference="ca32bc98-ea47-4b42-82e1-76bebf8a4e7d(com.mbeddr.formal.safety.gsn.xml_gen)" version="0" />
         <module reference="ee6eeaae-ffd5-470a-941e-cd79223a6a02(com.mbeddr.formal.safety.gsn.xml_gen.generator)" version="0" />
+        <module reference="e4b230e7-8e1a-4a05-8148-8713530572c1(com.mpsbasics.words.generic)" version="0" />
         <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
         <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
         <module reference="7b45fa94-2707-4a1a-9e6a-ce40c4aaf35a(de.itemis.mps.editor.collapsible.runtime)" version="0" />
