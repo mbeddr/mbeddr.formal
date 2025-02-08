@@ -42,6 +42,7 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -119,13 +120,14 @@
     <node concept="1TJgyj" id="1vid6hjrqXi" role="1TKVEi">
       <property role="IQ2ns" value="1716492013482651474" />
       <property role="20kJfa" value="gseb" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
     </node>
     <node concept="1TJgyj" id="1vid6hjrANk" role="1TKVEi">
       <property role="IQ2ns" value="1716492013482699988" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="checkingClosure" />
-      <ref role="20lvS9" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+      <ref role="20lvS9" node="y1G8y667Mj" resolve="ModelCheckConceptFunction" />
     </node>
     <node concept="1TJgyj" id="1vid6hjrASt" role="1TKVEi">
       <property role="IQ2ns" value="1716492013482700317" />
@@ -137,11 +139,16 @@
   <node concept="1TIwiD" id="y1G8y667Mj">
     <property role="EcuMT" value="612965124710890643" />
     <property role="TrG5h" value="ModelCheckConceptFunction" />
+    <property role="34LRSv" value="custom model check" />
+    <property role="R4oN_" value="logic for a custom model check" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+    <node concept="PrWs8" id="2FavYGw27Wi" role="PzmwI">
+      <ref role="PrY4T" node="2FavYGw2760" resolve="IModelCheckFunction" />
+    </node>
   </node>
   <node concept="1TIwiD" id="y1G8y66PGV">
     <property role="EcuMT" value="612965124711078715" />
-    <property role="TrG5h" value="ConceptFunctionParameter_node" />
+    <property role="TrG5h" value="ModelCheckConceptFunctionParameter_node" />
     <property role="34LRSv" value="node" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
@@ -166,6 +173,10 @@
       <property role="YLQ7P" value="The concept was moved to language &quot;com.mpsbasics.words.generic&quot;" />
       <property role="YLPcu" value="2025.02.01" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="2FavYGw2760">
+    <property role="EcuMT" value="3083417542719992192" />
+    <property role="TrG5h" value="IModelCheckFunction" />
   </node>
 </model>
 

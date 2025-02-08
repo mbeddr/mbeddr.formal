@@ -12,6 +12,7 @@
     <import index="9br2" ref="r:70aadfb3-8246-45ac-bcd1-b345c7f7cfe4(com.mbeddr.formal.safety.argument.modelquery.structure)" />
     <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
+    <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -27,6 +28,10 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -37,6 +42,10 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
@@ -63,12 +72,19 @@
         <reference id="5455284157994012188" name="link" index="2pIpSl" />
         <child id="1595412875168045827" name="initValue" index="28nt2d" />
       </concept>
+      <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
+        <reference id="5455284157993911078" name="property" index="2pJxcJ" />
+        <child id="1595412875168045201" name="initValue" index="28ntcv" />
+      </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
       </concept>
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
         <child id="5455284157993911099" name="values" index="2pJxcM" />
+      </concept>
+      <concept id="6985522012210254362" name="jetbrains.mps.lang.quotation.structure.NodeBuilderPropertyExpression" flags="nn" index="WxPPo">
+        <child id="6985522012210254363" name="expression" index="WxPPp" />
       </concept>
       <concept id="8182547171709614739" name="jetbrains.mps.lang.quotation.structure.NodeBuilderRef" flags="nn" index="36bGnv">
         <reference id="8182547171709614741" name="target" index="36bGnp" />
@@ -140,7 +156,7 @@
           <node concept="2ShNRf" id="3dJ0eUbEVuL" role="3cqZAk">
             <node concept="Tc6Ow" id="3dJ0eUbEVuM" role="2ShVmc">
               <node concept="35c_gC" id="1zqEQG3WoG4" role="HW$Y0">
-                <ref role="35c_gD" to="9br2:y1G8y66PGV" resolve="ConceptFunctionParameter_node" />
+                <ref role="35c_gD" to="9br2:y1G8y66PGV" resolve="ModelCheckConceptFunctionParameter_node" />
               </node>
               <node concept="3bZ5Sz" id="3dJ0eUbEVuO" role="HW$YZ">
                 <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
@@ -190,7 +206,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="y1G8y66QzK">
-    <ref role="13h7C2" to="9br2:y1G8y66PGV" resolve="ConceptFunctionParameter_node" />
+    <ref role="13h7C2" to="9br2:y1G8y66PGV" resolve="ModelCheckConceptFunctionParameter_node" />
     <node concept="13hLZK" id="y1G8y66QzL" role="13h7CW">
       <node concept="3clFbS" id="y1G8y66QzM" role="2VODD2" />
     </node>
@@ -313,6 +329,42 @@
       </node>
       <node concept="3Tqbb2" id="y1G8y66Q$2" role="3clF45">
         <ref role="ehGHo" to="tpee:fz3vP1H" resolve="Type" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2FavYGw28CE">
+    <ref role="13h7C2" to="9br2:1vid6hjrqXf" resolve="ModelCheck" />
+    <node concept="13hLZK" id="2FavYGw28CF" role="13h7CW">
+      <node concept="3clFbS" id="2FavYGw28CG" role="2VODD2">
+        <node concept="3clFbF" id="2FavYGw28CY" role="3cqZAp">
+          <node concept="37vLTI" id="2FavYGw29rI" role="3clFbG">
+            <node concept="2OqwBi" id="2FavYGw28O2" role="37vLTJ">
+              <node concept="13iPFW" id="2FavYGw28CX" role="2Oq$k0" />
+              <node concept="3TrEf2" id="2FavYGw29ez" role="2OqNvi">
+                <ref role="3Tt5mk" to="9br2:1vid6hjrASt" resolve="explanation" />
+              </node>
+            </node>
+            <node concept="2pJPEk" id="2FavYGw29z8" role="37vLTx">
+              <node concept="2pJPED" id="2FavYGw29za" role="2pJPEn">
+                <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+                <node concept="2pIpSj" id="2FavYGw29_P" role="2pJxcM">
+                  <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
+                  <node concept="2pJPED" id="2FavYGw29Cm" role="28nt2d">
+                    <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                    <node concept="2pJxcG" id="2FavYGw29E$" role="2pJxcM">
+                      <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                      <node concept="WxPPo" id="2FavYGw29F6" role="28ntcv">
+                        <node concept="Xl_RD" id="2FavYGw29F5" role="WxPPp">
+                          <property role="Xl_RC" value="ToDo" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
