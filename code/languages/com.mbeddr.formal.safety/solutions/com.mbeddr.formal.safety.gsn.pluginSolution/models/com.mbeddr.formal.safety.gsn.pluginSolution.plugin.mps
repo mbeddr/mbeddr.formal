@@ -47,25 +47,25 @@
     <property role="3GE5qa" value="diagrams" />
     <property role="TrG5h" value="GsnNotationSwitcher" />
     <property role="33gmoF" value="true" />
-    <property role="1QNlnu" value="GSN Diagrammatic View" />
+    <property role="1QNlnu" value="Diagrammatic View" />
     <ref role="2hhq6$" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
     <node concept="33gmoH" id="3onExzPnGum" role="2hfSGL">
-      <property role="33g7Lv" value="GSN Textual View" />
+      <property role="33g7Lv" value="Textual View" />
       <ref role="33glcW" to="g35p:4mOCK0sBQkK" resolve="GoalStructureHints" />
       <ref role="33glcY" to="g35p:5uFV_KKBhnn" resolve="GOAL_STRUCTURE_TEXTUAL" />
     </node>
     <node concept="33gmoH" id="7olAlesQMFD" role="2hfSGL">
-      <property role="33g7Lv" value="GSN Textual View Fast" />
+      <property role="33g7Lv" value="Textual View Fast" />
       <ref role="33glcW" to="g35p:4mOCK0sBQkK" resolve="GoalStructureHints" />
       <ref role="33glcY" to="g35p:7olAlesPj8d" resolve="GOAL_STRUCTURE_TEXTUAL_FAST" />
     </node>
     <node concept="33gmoH" id="5li4g21ecOd" role="2hfSGL">
-      <property role="33g7Lv" value="GSN Tree View Fast" />
+      <property role="33g7Lv" value="Tree View Fast" />
       <ref role="33glcW" to="g35p:4mOCK0sBQkK" resolve="GoalStructureHints" />
       <ref role="33glcY" to="g35p:4Cms47V74xp" resolve="GOAL_STRUCTURE_TREE_TABLE" />
     </node>
     <node concept="33gmoH" id="3EDV2YKNeYH" role="2hfSGL">
-      <property role="33g7Lv" value="GSN Low Level Textual View" />
+      <property role="33g7Lv" value="Low Level Textual View" />
       <ref role="33glcW" to="g35p:4mOCK0sBQkK" resolve="GoalStructureHints" />
       <ref role="33glcY" to="g35p:3EDV2YKAndh" resolve="GOAL_STRUCTURE_DIFF_VIEW" />
     </node>
