@@ -207,7 +207,7 @@
     </language>
     <language id="57ecebe4-dfb8-4fef-9175-0008e04a3684" name="com.mbeddr.formal.safety.argument.modelquery">
       <concept id="612965124710890643" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelCheckConceptFunction" flags="ig" index="2eAsKr" />
-      <concept id="612965124711078715" name="com.mbeddr.formal.safety.argument.modelquery.structure.ConceptFunctionParameter_node" flags="ng" index="2eAIIN" />
+      <concept id="612965124711078715" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelCheckConceptFunctionParameter_node" flags="ng" index="2eAIIN" />
       <concept id="1716492013482651468" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelChecksContainer" flags="ng" index="14JTGC">
         <reference id="1716492013482686107" name="gs" index="14J0bZ" />
         <child id="1716492013482652049" name="modelChecks" index="14JSnP" />
