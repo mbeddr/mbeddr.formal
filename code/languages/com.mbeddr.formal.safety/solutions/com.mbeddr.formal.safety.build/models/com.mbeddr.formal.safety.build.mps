@@ -17990,6 +17990,9 @@
         <node concept="3_I8Xc" id="7OA8CsRAu$w" role="39821P">
           <ref role="3_I8Xa" to="ffeo:Ye$g8PO953" resolve="mps-kotlin" />
         </node>
+        <node concept="3_I8Xc" id="2FavYGw3mev" role="39821P">
+          <ref role="3_I8Xa" to="90a9:6Fx0OSkEtpQ" resolve="de.itemis.mps.linenumbers" />
+        </node>
         <node concept="3_I8Xc" id="7khq58xcrlD" role="39821P">
           <ref role="3_I8Xa" to="90a9:2IcGFIaJVAA" resolve="MPS.Kotlin" />
         </node>
