@@ -323,7 +323,7 @@
   </node>
   <node concept="13h7C7" id="56pBK14wzNc">
     <property role="3GE5qa" value="words" />
-    <ref role="13h7C2" to="lbo2:56pBK14tHBo" resolve="GenericNamedModelElementRefWord" />
+    <ref role="13h7C2" to="lbo2:56pBK14tHBo" resolve="GenericNamedModelElementRefWord_old" />
     <node concept="13i0hz" id="56pBK14wzNn" role="13h7CS">
       <property role="TrG5h" value="getConcepts" />
       <node concept="3Tm1VV" id="56pBK14wzNo" role="1B3o_S" />

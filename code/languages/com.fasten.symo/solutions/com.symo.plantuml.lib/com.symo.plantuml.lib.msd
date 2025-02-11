@@ -18,7 +18,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet type="java" compile="mps" classes="mps" ext="no">
+    <facet compile="mps" classes="mps" ext="no" type="java">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/xmlgraphics-commons-2.2.jar" />
       <library location="${module}/lib/batik-all-1.18.jar" />

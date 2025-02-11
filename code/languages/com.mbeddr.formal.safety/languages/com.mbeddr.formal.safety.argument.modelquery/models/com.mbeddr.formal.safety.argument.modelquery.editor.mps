@@ -15,6 +15,10 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ngI" index="22mbnS">
+        <child id="414384289274416996" name="parts" index="3ft7WO" />
+      </concept>
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="6516520003787916624" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Condition" flags="ig" index="27VH4U" />
@@ -44,6 +48,7 @@
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="615427434521884870" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Subconcepts" flags="ng" index="2VfDsV" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -64,6 +69,8 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -247,6 +254,8 @@
           <property role="3F0ifm" value="Explanation:" />
         </node>
         <node concept="3F1sOY" id="y1G8y66Wmo" role="3EZMnx">
+          <property role="39s7Ar" value="true" />
+          <property role="1$x2rV" value="Press Enter to add explanation" />
           <ref role="1NtTu8" to="9br2:1vid6hjrASt" resolve="explanation" />
         </node>
         <node concept="l2Vlx" id="y1G8y66Wmp" role="2iSdaV" />
@@ -378,7 +387,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="y1G8y68MHf">
-    <ref role="1XX52x" to="9br2:y1G8y68MHa" resolve="ModelElementWord" />
+    <ref role="1XX52x" to="9br2:y1G8y68MHa" resolve="ModelElementWord_old" />
     <node concept="3EZMnI" id="y1G8y68MHh" role="2wV5jI">
       <node concept="3F0ifn" id="y1G8y68MHo" role="3EZMnx">
         <property role="3F0ifm" value="@model-element" />
@@ -394,7 +403,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="y1G8y68MHA" role="3EZMnx">
-        <ref role="1NtTu8" to="9br2:y1G8y68MHd" resolve="node" />
+        <ref role="1NtTu8" to="9br2:y1G8y68MHd" resolve="node_old" />
         <node concept="1sVBvm" id="y1G8y68MHC" role="1sWHZn">
           <node concept="3F0A7n" id="y1G8y68MHO" role="2wV5jI">
             <property role="1Intyy" value="true" />
@@ -411,6 +420,11 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="22mcaB" id="6FJpOMAQ8Xm">
+    <ref role="aqKnT" to="9br2:y1G8y68MHa" resolve="ModelElementWord_old" />
+    <node concept="22hDWj" id="6FJpOMAQ8Xn" role="22hAXT" />
+    <node concept="2VfDsV" id="6FJpOMAQ8Xo" role="3ft7WO" />
   </node>
 </model>
 

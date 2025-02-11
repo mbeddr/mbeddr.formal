@@ -31,6 +31,10 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118929411" name="build" index="YLPcu" />
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -67,6 +71,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -395,22 +400,32 @@
   <node concept="1TIwiD" id="56pBK14tHBo">
     <property role="EcuMT" value="5879905612006349272" />
     <property role="3GE5qa" value="words" />
-    <property role="TrG5h" value="GenericNamedModelElementRefWord" />
-    <property role="R4oN_" value="typed model element" />
-    <property role="34LRSv" value="@model-elem" />
+    <property role="TrG5h" value="GenericNamedModelElementRefWord_old" />
+    <property role="R4oN_" value="typed model element reference" />
+    <property role="34LRSv" value="@model-element" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="56pBK14tHBp" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
     <node concept="1TJgyi" id="56pBK14tHBt" role="1TKVEl">
       <property role="IQ2nx" value="5879905612006349277" />
-      <property role="TrG5h" value="type" />
+      <property role="TrG5h" value="type_old" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+      <node concept="asaX9" id="6FJpOMAQ8WE" role="lGtFl">
+        <property role="YLQ7P" value="The property was moved to concept &quot;com.mpsbasics.words.generic.structure.GenericNamedModelElementRefWord&quot;" />
+      </node>
     </node>
     <node concept="1TJgyj" id="56pBK14tHBv" role="1TKVEi">
       <property role="IQ2ns" value="5879905612006349279" />
-      <property role="20kJfa" value="elem" />
+      <property role="20kJfa" value="elem_old" />
       <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <node concept="asaX9" id="6FJpOMAQ8WP" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.mpsbasics.words.generic.structure.GenericNamedModelElementRefWord&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="6FJpOMAQ8Ws" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.mpsbasics.words.generic&quot;" />
+      <property role="YLPcu" value="2025.02.01" />
     </node>
   </node>
 </model>

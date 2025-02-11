@@ -3,10 +3,9 @@
   <persistence version="9" />
   <languages>
     <use id="24aa32c5-8513-4a94-a289-04392bead64e" name="com.mbeddr.formal.req.arch" version="0" />
-    <use id="3b22dedc-d6cf-4626-9445-6e9909b3e04a" name="com.fasten.base.arch.msc" version="0" />
-    <use id="81f6a079-965e-4523-87c3-8e6194f66585" name="com.fasten.base.msc" version="0" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
+    <devkit ref="34367ce7-2993-4c7e-896e-c299a2abf50d(fasten.requirements.formal)" />
   </languages>
   <imports>
     <import index="rd3y" ref="r:430ed0bb-2a65-4f5b-a20f-e9037ef3e5fd(_100_examples._030_adas._020_automated_evasion_maneuver._020_requirements)" />

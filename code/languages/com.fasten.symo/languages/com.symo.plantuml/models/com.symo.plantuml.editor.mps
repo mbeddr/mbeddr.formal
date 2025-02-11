@@ -31,6 +31,7 @@
     <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="4anb" ref="377bf088-4ffc-48ac-910f-fb1c66ffa60e/java:org.apache.batik.swing.svg(com.symo.plantuml.lib/)" implicit="true" />
     <import index="lc7h" ref="r:9af299a8-c69a-4780-9c99-063ff8f4181a(com.symo.plantuml.behavior)" implicit="true" />
+    <import index="4anc" ref="5ad14eca-28d7-4bce-b8e0-648908a49062/java:org.apache.batik.swing.svg(org.apache.batik/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
@@ -958,7 +959,7 @@
                       <ref role="3uigEE" to="fbzs:~Dimension2D" resolve="Dimension2D" />
                     </node>
                     <node concept="1rXfSq" id="7ikA1GKNyvt" role="33vP2m">
-                      <ref role="37wK5l" to="4anb:~JSVGComponent.getSVGDocumentSize()" resolve="getSVGDocumentSize" />
+                      <ref role="37wK5l" to="4anc:~JSVGComponent.getSVGDocumentSize()" resolve="getSVGDocumentSize" />
                     </node>
                   </node>
                 </node>
