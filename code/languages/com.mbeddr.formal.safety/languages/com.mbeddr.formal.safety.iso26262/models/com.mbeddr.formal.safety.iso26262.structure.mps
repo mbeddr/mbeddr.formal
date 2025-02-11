@@ -9,6 +9,7 @@
   <imports>
     <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
+    <import index="uhu" ref="r:7b6bea6a-7952-48df-9449-f3f805640b2f(com.mpsbasics.core.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" implicit="true" />
   </imports>
@@ -91,6 +92,9 @@
       <property role="20kJfa" value="hazardContexts" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="55oVyA0lgqZ" resolve="HazardContext" />
+    </node>
+    <node concept="PrWs8" id="6xXHcqx9Ds_" role="PzmwI">
+      <ref role="PrY4T" to="uhu:3pul3T6srr3" resolve="IProvideBasicContextMenus" />
     </node>
   </node>
   <node concept="25R3W" id="24PsEXFbNKL">
@@ -223,7 +227,7 @@
         </node>
       </node>
       <node concept="1irPie" id="55oVyA0mF_p" role="1irR9h">
-        <property role="1irPi9" value="⁂" />
+        <property role="1irPi9" value="?" />
         <node concept="3PKj8D" id="55oVyA0mF_$" role="3PKjny">
           <property role="3PKj8l" value="FF0000" />
         </node>

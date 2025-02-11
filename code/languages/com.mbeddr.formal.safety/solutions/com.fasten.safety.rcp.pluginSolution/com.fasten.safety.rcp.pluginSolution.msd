@@ -34,6 +34,8 @@
     <dependency reexport="false">6f31bc85-cbcc-4dcf-ada4-35da43e6832c(com.symo.plantuml)</dependency>
     <dependency reexport="false">1118d03f-f774-4a18-9e75-2357f8563d46(com.mbeddr.formal.safety.argument.spi)</dependency>
     <dependency reexport="false">546ac349-3106-438d-b92b-7d2ebfa2ade8(com.mbeddr.formal.safety.argument.runtime)</dependency>
+    <dependency reexport="false">ece26728-2885-4b26-9f61-67d2821fc361(com.mpsbasics.pdfexporter)</dependency>
+    <dependency reexport="false">57ecebe4-dfb8-4fef-9175-0008e04a3684(com.mbeddr.formal.safety.argument.modelquery)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:c38abce1-4c09-44cb-9ebf-2a764e824bb5:com.mbeddr.mpsutil.actionsfilter" version="0" />
@@ -78,6 +80,7 @@
     <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
     <module reference="0deccdfd-196b-4d8c-895e-0d6cb8014dfd(com.mbeddr.formal.req.base)" version="0" />
     <module reference="3460ac43-6f59-4f61-b134-9fa2f799c2d3(com.mbeddr.formal.req.scenarios)" version="0" />
+    <module reference="57ecebe4-dfb8-4fef-9175-0008e04a3684(com.mbeddr.formal.safety.argument.modelquery)" version="0" />
     <module reference="8a4ef392-f4b4-43e7-afb5-b071dce8043d(com.mbeddr.formal.safety.argument.process)" version="0" />
     <module reference="546ac349-3106-438d-b92b-7d2ebfa2ade8(com.mbeddr.formal.safety.argument.runtime)" version="0" />
     <module reference="1118d03f-f774-4a18-9e75-2357f8563d46(com.mbeddr.formal.safety.argument.spi)" version="0" />
@@ -94,6 +97,9 @@
     <module reference="d09a16fb-1d68-4a92-a5a4-20b4b2f86a62(com.mbeddr.mpsutil.jung)" version="0" />
     <module reference="b4d28e19-7d2d-47e9-943e-3a41f97a0e52(com.mbeddr.mpsutil.plantuml.node)" version="0" />
     <module reference="732373f1-0d48-4122-bb43-c1606db4baca(com.mbeddr.mpsutil.projectview.runtime)" version="0" />
+    <module reference="792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)" version="0" />
+    <module reference="ece26728-2885-4b26-9f61-67d2821fc361(com.mpsbasics.pdfexporter)" version="0" />
+    <module reference="e4b230e7-8e1a-4a05-8148-8713530572c1(com.mpsbasics.words.generic)" version="0" />
     <module reference="6f31bc85-cbcc-4dcf-ada4-35da43e6832c(com.symo.plantuml)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />

@@ -10,7 +10,37 @@
     <import index="1o88" ref="r:638d8f46-2b56-4b35-8d3c-bc5e75fa2ac5(com.fasten.req.ontology.lib.koopman)" />
   </imports>
   <registry>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="0deccdfd-196b-4d8c-895e-0d6cb8014dfd" name="com.mbeddr.formal.req.base">
+      <concept id="3226630706269671901" name="com.mbeddr.formal.req.base.structure.Requirement" flags="ng" index="0lhDl" />
+      <concept id="3226630706270140298" name="com.mbeddr.formal.req.base.structure.TextParagraph" flags="ng" index="0nzK2">
+        <child id="3226630706270140651" name="text" index="0nzdz" />
+      </concept>
+      <concept id="4908298719893728784" name="com.mbeddr.formal.req.base.structure.TextualReqSpec" flags="ng" index="1QQeAY">
+        <child id="4908298719893728789" name="spec" index="1QQeAV" />
+      </concept>
+      <concept id="4908298719893728634" name="com.mbeddr.formal.req.base.structure.Functional" flags="ng" index="1QQeFk" />
+      <concept id="4908298719893728422" name="com.mbeddr.formal.req.base.structure.AbstractRequirement" flags="ng" index="1QQeG8">
+        <property id="3226630706269685486" name="id" index="0lsPA" />
+        <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="4908298719893728774" name="specs" index="1QQeAC" />
+        <child id="4908298719893728423" name="title" index="1QQeG9" />
+      </concept>
+      <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
+        <child id="4908298719893728837" name="requirements" index="1QQeBF" />
+      </concept>
+    </language>
     <language id="f52452b6-7f99-441b-98f9-a98c52b92236" name="com.fasten.req.odd">
+      <concept id="8215579935891968584" name="com.fasten.req.odd.structure.ODDRefWord" flags="ng" index="4Ekw$">
+        <reference id="8215579935891968586" name="odd" index="4EkwA" />
+      </concept>
       <concept id="4464095630345135492" name="com.fasten.req.odd.structure.PlainTextExpression" flags="ng" index="3fUWbm">
         <property id="4464095630345135493" name="text" index="3fUWbn" />
       </concept>
@@ -39,6 +69,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -111,6 +144,34 @@
       <node concept="3fWYEE" id="3RNDPbM3nIK" role="3fY04B">
         <node concept="MFvB7" id="3RNDPbM3nIL" role="3fWY_o">
           <ref role="MFvBS" to="1o88:52bCGvYEzob" resolve="Availability and freshness of infrastructure characterization data" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1QQeGf" id="783AALQF$HM">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="req" />
+    <node concept="0lhDl" id="783AALQF$HO" role="1QQeBF">
+      <property role="0lsPA" value="01" />
+      <node concept="1QQeFk" id="783AALQF$HP" role="0nOlf" />
+      <node concept="19SGf9" id="783AALQF$HQ" role="1QQeG9">
+        <node concept="19SUe$" id="783AALQF$HR" role="19SJt6">
+          <property role="19SUeA" value="Odd reference " />
+        </node>
+      </node>
+      <node concept="1QQeAY" id="783AALQF$HU" role="1QQeAC">
+        <node concept="0nzK2" id="783AALQF$HW" role="1QQeAV">
+          <node concept="19SGf9" id="783AALQF$HY" role="0nzdz">
+            <node concept="19SUe$" id="783AALQF$HZ" role="19SJt6">
+              <property role="19SUeA" value="Requirement referencing " />
+            </node>
+            <node concept="4Ekw$" id="783AALQF$I1" role="19SJt6">
+              <ref role="4EkwA" node="3Jn$RV31p8J" resolve="first_odd" />
+            </node>
+            <node concept="19SUe$" id="783AALQF$I2" role="19SJt6">
+              <property role="19SUeA" value=" " />
+            </node>
+          </node>
         </node>
       </node>
     </node>

@@ -2,7 +2,7 @@
 <model ref="r:39d1bdc9-3c0f-4847-b2b8-341c74818841(com.mbeddr.formal.safety.gsn.sandbox._600_gsn_modelquery)">
   <persistence version="9" />
   <languages>
-    <use id="57ecebe4-dfb8-4fef-9175-0008e04a3684" name="com.mbeddr.formal.safety.argument.modelquery" version="-1" />
+    <use id="57ecebe4-dfb8-4fef-9175-0008e04a3684" name="com.mbeddr.formal.safety.argument.modelquery" version="1" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
     <devkit ref="7466bc49-e775-4df7-a9f3-e383173b2eee(fasten.safety.gsn.ext)" />
@@ -13,6 +13,7 @@
   <imports>
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" />
+    <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
@@ -39,6 +40,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
@@ -55,6 +59,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
@@ -70,6 +75,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -201,7 +207,7 @@
     </language>
     <language id="57ecebe4-dfb8-4fef-9175-0008e04a3684" name="com.mbeddr.formal.safety.argument.modelquery">
       <concept id="612965124710890643" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelCheckConceptFunction" flags="ig" index="2eAsKr" />
-      <concept id="612965124711078715" name="com.mbeddr.formal.safety.argument.modelquery.structure.ConceptFunctionParameter_node" flags="ng" index="2eAIIN" />
+      <concept id="612965124711078715" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelCheckConceptFunctionParameter_node" flags="ng" index="2eAIIN" />
       <concept id="1716492013482651468" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelChecksContainer" flags="ng" index="14JTGC">
         <reference id="1716492013482686107" name="gs" index="14J0bZ" />
         <child id="1716492013482652049" name="modelChecks" index="14JSnP" />
@@ -456,19 +462,26 @@
           <node concept="3clFbJ" id="y1G8y69pc8" role="3cqZAp">
             <node concept="3clFbS" id="y1G8y69pca" role="3clFbx">
               <node concept="3cpWs6" id="y1G8y69vRb" role="3cqZAp">
-                <node concept="3cpWs3" id="y1G8y69yV5" role="3cqZAk">
-                  <node concept="2OqwBi" id="y1G8y69$K3" role="3uHU7w">
-                    <node concept="37vLTw" id="y1G8y69zbY" role="2Oq$k0">
-                      <ref role="3cqZAo" node="y1G8y6967z" resolve="myHazards" />
-                    </node>
-                    <node concept="66VNe" id="y1G8y69C6j" role="2OqNvi">
-                      <node concept="37vLTw" id="y1G8y69D0m" role="576Qk">
-                        <ref role="3cqZAo" node="y1G8y69f_C" resolve="addressedHazards" />
+                <node concept="2ShNRf" id="6xXHcqxb3as" role="3cqZAk">
+                  <node concept="1pGfFk" id="6xXHcqxb4IO" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="18ew:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                    <node concept="3clFbT" id="6xXHcqxb4S1" role="37wK5m" />
+                    <node concept="3cpWs3" id="y1G8y69yV5" role="37wK5m">
+                      <node concept="2OqwBi" id="y1G8y69$K3" role="3uHU7w">
+                        <node concept="37vLTw" id="y1G8y69zbY" role="2Oq$k0">
+                          <ref role="3cqZAo" node="y1G8y6967z" resolve="myHazards" />
+                        </node>
+                        <node concept="66VNe" id="y1G8y69C6j" role="2OqNvi">
+                          <node concept="37vLTw" id="y1G8y69D0m" role="576Qk">
+                            <ref role="3cqZAo" node="y1G8y69f_C" resolve="addressedHazards" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="Xl_RD" id="y1G8y69wl5" role="3uHU7B">
+                        <property role="Xl_RC" value="not all hazards have been addressed - " />
                       </node>
                     </node>
-                  </node>
-                  <node concept="Xl_RD" id="y1G8y69wl5" role="3uHU7B">
-                    <property role="Xl_RC" value="not all hazards have been addressed - " />
                   </node>
                 </node>
               </node>

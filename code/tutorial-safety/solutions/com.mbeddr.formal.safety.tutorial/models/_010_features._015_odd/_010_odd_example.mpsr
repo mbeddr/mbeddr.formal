@@ -67,7 +67,7 @@
       </node>
       <node concept="3fWYEE" id="4L2VcqZX1w9" role="3fY04B">
         <node concept="MFvB7" id="4L2VcqZX1wb" role="3fWY_o">
-          <ref role="MFvBS" to="yyoe:6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
+          <ref role="MFvBS" to="yyoe:6sXzM9s8hRc" resolve="Drivable Area Lane Specification" />
         </node>
       </node>
       <node concept="3fWYEE" id="4L2VcqZX1wd" role="3fY04B">

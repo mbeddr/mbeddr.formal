@@ -42,104 +42,104 @@
     <property role="TrG5h" value="wordnet" />
     <node concept="3SOpcA" id="3Jn$RV31zge" role="3SOpfD">
       <property role="TrG5h" value="Visual signal" />
-      <ref role="3SOpc_" node="1UJ51yZA8AC" resolve="signal" />
+      <ref role="3SOpc_" node="1UJ51yZA8AC" resolve="Signal" />
     </node>
     <node concept="3SOpcA" id="3Jn$RV31zgc" role="3SOpfD">
       <property role="TrG5h" value="Light" />
-      <ref role="3SOpc_" node="3Jn$RV31zge" resolve="visual signal" />
+      <ref role="3SOpc_" node="3Jn$RV31zge" resolve="Visual signal" />
     </node>
     <node concept="3SOpcA" id="1wKSXwEBhBS" role="3SOpfD">
       <property role="TrG5h" value="Traffic light" />
-      <ref role="3SOpc_" node="3Jn$RV31zgc" resolve="light" />
+      <ref role="3SOpc_" node="3Jn$RV31zgc" resolve="Light" />
     </node>
     <node concept="3SOpcA" id="1wKSXwEBhBW" role="3SOpfD">
       <property role="TrG5h" value="Red light" />
-      <ref role="3SOpc_" node="3Jn$RV31zge" resolve="visual signal" />
+      <ref role="3SOpc_" node="3Jn$RV31zge" resolve="Visual signal" />
     </node>
     <node concept="3SOpcA" id="1UJ51yZA8__" role="3SOpfD">
       <property role="TrG5h" value="Entity" />
     </node>
     <node concept="3SOpcA" id="1wKSXwEBhC1" role="3SOpfD">
       <property role="TrG5h" value="Physical entity" />
-      <ref role="3SOpc_" node="1UJ51yZA8__" resolve="entity" />
+      <ref role="3SOpc_" node="1UJ51yZA8__" resolve="Entity" />
       <node concept="1BN$wR" id="5qtcz4LmGNt" role="1BN$wV">
         <node concept="MFvB7" id="5qtcz4LmGNu" role="1BNJHd">
-          <ref role="MFvBS" node="1UJ51yZA8_i" resolve="color" />
+          <ref role="MFvBS" node="1UJ51yZA8_i" resolve="Color" />
         </node>
       </node>
     </node>
     <node concept="3SOpcA" id="1UJ51yZA8_T" role="3SOpfD">
       <property role="TrG5h" value="Abstract entity" />
-      <ref role="3SOpc_" node="1UJ51yZA8__" resolve="entity" />
+      <ref role="3SOpc_" node="1UJ51yZA8__" resolve="Entity" />
     </node>
     <node concept="3SOpcA" id="1wKSXwEBhC7" role="3SOpfD">
       <property role="TrG5h" value="Object" />
-      <ref role="3SOpc_" node="1wKSXwEBhC1" resolve="physical entity" />
+      <ref role="3SOpc_" node="1wKSXwEBhC1" resolve="Physical entity" />
     </node>
     <node concept="3SOpcA" id="1wKSXwEBhCe" role="3SOpfD">
       <property role="TrG5h" value="Person" />
-      <ref role="3SOpc_" node="1wKSXwEBhC7" resolve="object" />
+      <ref role="3SOpc_" node="1wKSXwEBhC7" resolve="Object" />
     </node>
     <node concept="3SOpcA" id="1wKSXwEBXz0" role="3SOpfD">
       <property role="TrG5h" value="Traveller" />
-      <ref role="3SOpc_" node="1wKSXwEBhCe" resolve="person" />
+      <ref role="3SOpc_" node="1wKSXwEBhCe" resolve="Person" />
     </node>
     <node concept="3SOpcA" id="1wKSXwEBXza" role="3SOpfD">
       <property role="TrG5h" value="Carrier" />
-      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="traveller" />
+      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="Traveller" />
     </node>
     <node concept="3SOpcA" id="1wKSXwEBhCm" role="3SOpfD">
       <property role="TrG5h" value="Pedestrian" />
-      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="traveller" />
+      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="Traveller" />
     </node>
     <node concept="3SOpcA" id="1wKSXwEBXzl" role="3SOpfD">
       <property role="TrG5h" value="Motorcyclist" />
-      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="traveller" />
+      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="Traveller" />
     </node>
     <node concept="3SOpcA" id="1wKSXwEBXzx" role="3SOpfD">
       <property role="TrG5h" value="Runner" />
-      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="traveller" />
+      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="Traveller" />
     </node>
     <node concept="3SOpcA" id="1wKSXwEBX$8" role="3SOpfD">
       <property role="TrG5h" value="Rider" />
-      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="traveller" />
+      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="Traveller" />
     </node>
     <node concept="3SOpcA" id="1wKSXwEBX$m" role="3SOpfD">
       <property role="TrG5h" value="Follower" />
-      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="traveller" />
+      <ref role="3SOpc_" node="1wKSXwEBXz0" resolve="Traveller" />
     </node>
     <node concept="3SOpcA" id="1wKSXwECsWt" role="3SOpfD">
       <property role="TrG5h" value="Clothing" />
-      <ref role="3SOpc_" node="1wKSXwEBhC7" resolve="object" />
+      <ref role="3SOpc_" node="1wKSXwEBhC7" resolve="Object" />
       <node concept="1BN$wR" id="5qtcz4LmGNv" role="1BN$wV">
         <node concept="MFvB7" id="5qtcz4LmGNw" role="1BNJHd">
-          <ref role="MFvBS" node="1UJ51yZA8_i" resolve="color" />
+          <ref role="MFvBS" node="1UJ51yZA8_i" resolve="Color" />
         </node>
       </node>
     </node>
     <node concept="3SOpcA" id="1UJ51yZA8$v" role="3SOpfD">
       <property role="TrG5h" value="Dress" />
-      <ref role="3SOpc_" node="1wKSXwECsWt" resolve="clothing" />
+      <ref role="3SOpc_" node="1wKSXwECsWt" resolve="Clothing" />
     </node>
     <node concept="3SOpcA" id="1UJ51yZA8Ae" role="3SOpfD">
       <property role="TrG5h" value="Visual property" />
-      <ref role="3SOpc_" node="1UJ51yZA8_T" resolve="abstract entity" />
+      <ref role="3SOpc_" node="1UJ51yZA8_T" resolve="Abstract entity" />
     </node>
     <node concept="3SOpcA" id="1UJ51yZA8_i" role="3SOpfD">
       <property role="TrG5h" value="Color" />
-      <ref role="3SOpc_" node="1UJ51yZA8Ae" resolve="visual property" />
+      <ref role="3SOpc_" node="1UJ51yZA8Ae" resolve="Visual property" />
     </node>
     <node concept="3SOpcA" id="1UJ51yZA8AC" role="3SOpfD">
       <property role="TrG5h" value="Signal" />
-      <ref role="3SOpc_" node="1UJ51yZA8B0" resolve="communication" />
+      <ref role="3SOpc_" node="1UJ51yZA8B0" resolve="Communication" />
     </node>
     <node concept="3SOpcA" id="1UJ51yZA8B0" role="3SOpfD">
       <property role="TrG5h" value="Communication" />
-      <ref role="3SOpc_" node="1UJ51yZA8_T" resolve="abstract entity" />
+      <ref role="3SOpc_" node="1UJ51yZA8_T" resolve="Abstract entity" />
     </node>
     <node concept="19SGf9" id="5_1vAEKUALt" role="2I8HYo">
       <node concept="19SUe$" id="5_1vAEKUALu" role="19SJt6">
-        <property role="19SUeA" value="This ontology is taken from Princeton University &quot;About WordNet.&quot; https://wordnet.princeton.edu/citing-wordnet. Princeton University. 2010. " />
+        <property role="19SUeA" value="This ontology is taken from Princeton University &quot;About WordNet.&quot; &#10;https://wordnet.princeton.edu/citing-wordnet. Princeton University. 2010. " />
       </node>
     </node>
   </node>

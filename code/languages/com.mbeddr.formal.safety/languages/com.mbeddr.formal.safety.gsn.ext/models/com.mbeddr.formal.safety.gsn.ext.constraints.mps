@@ -194,9 +194,9 @@
   </node>
   <node concept="1M2fIO" id="56pBK14wyyn">
     <property role="3GE5qa" value="words" />
-    <ref role="1M2myG" to="lbo2:56pBK14tHBo" resolve="GenericNamedModelElementRefWord" />
+    <ref role="1M2myG" to="lbo2:56pBK14tHBo" resolve="GenericNamedModelElementRefWord_old" />
     <node concept="1N5Pfh" id="56pBK14wyyo" role="1Mr941">
-      <ref role="1N5Vy1" to="lbo2:56pBK14tHBv" resolve="elem" />
+      <ref role="1N5Vy1" to="lbo2:56pBK14tHBv" resolve="elem_old" />
       <node concept="3dgokm" id="56pBK14wy_k" role="1N6uqs">
         <node concept="3clFbS" id="56pBK14wy_l" role="2VODD2">
           <node concept="3clFbJ" id="56pBK14x4Qp" role="3cqZAp">
@@ -213,7 +213,7 @@
               <node concept="2OqwBi" id="56pBK14x5ho" role="2Oq$k0">
                 <node concept="3kakTB" id="56pBK14x4Z9" role="2Oq$k0" />
                 <node concept="3TrcHB" id="56pBK14x5$b" role="2OqNvi">
-                  <ref role="3TsBF5" to="lbo2:56pBK14tHBt" resolve="type" />
+                  <ref role="3TsBF5" to="lbo2:56pBK14tHBt" resolve="type_old" />
                 </node>
               </node>
               <node concept="17RlXB" id="56pBK14x6q9" role="2OqNvi" />
@@ -269,7 +269,7 @@
                             <node concept="2OqwBi" id="56pBK14wEzM" role="37wK5m">
                               <node concept="3kakTB" id="56pBK14wEzN" role="2Oq$k0" />
                               <node concept="3TrcHB" id="56pBK14wEzO" role="2OqNvi">
-                                <ref role="3TsBF5" to="lbo2:56pBK14tHBt" resolve="type" />
+                                <ref role="3TsBF5" to="lbo2:56pBK14tHBt" resolve="type_old" />
                               </node>
                             </node>
                           </node>

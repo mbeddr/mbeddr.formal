@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="com.mbeddr.formal.safety.gsn" uuid="e8a04d94-4307-4f88-95a2-25f7c4f39437" languageVersion="3" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}" type="default">
+    <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
@@ -26,6 +26,7 @@
     <dependency reexport="false">6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)</dependency>
     <dependency reexport="false">6b84fb9e-5f09-4a61-bf31-3bfdc54820e3(com.mpsbasics.editor.utils)</dependency>
     <dependency reexport="false">792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)</dependency>
+    <dependency reexport="false">e4b230e7-8e1a-4a05-8148-8713530572c1(com.mpsbasics.words.generic)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:120e1c9d-4e27-4478-b2af-b2c3bd3850b0:com.mbeddr.mpsutil.editor.querylist" version="0" />
@@ -72,6 +73,7 @@
     <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
     <language slang="l:7a5dda62-9140-4668-ab76-d5ed1746f2b2:jetbrains.mps.lang.typesystem" version="5" />
+    <language slang="l:c9d137c4-3259-44f8-80ff-33ab2b506ee4:jetbrains.mps.lang.util.order" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
@@ -87,6 +89,7 @@
     <module reference="792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)" version="0" />
     <module reference="6b84fb9e-5f09-4a61-bf31-3bfdc54820e3(com.mpsbasics.editor.utils)" version="0" />
     <module reference="8da51702-0e05-44c8-96db-8f11d1457c0c(com.mpsbasics.snode.utils)" version="0" />
+    <module reference="e4b230e7-8e1a-4a05-8148-8713530572c1(com.mpsbasics.words.generic)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
     <module reference="7b45fa94-2707-4a1a-9e6a-ce40c4aaf35a(de.itemis.mps.editor.collapsible.runtime)" version="0" />

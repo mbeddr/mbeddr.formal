@@ -63,6 +63,7 @@
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
         <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3360401466585705291" name="jetbrains.mps.lang.editor.structure.CellModel_ContextAssistant" flags="ng" index="18a60v" />
       <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
@@ -644,6 +645,35 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="783AALQEH9b">
+    <ref role="1XX52x" to="u2ih:783AALQEH98" resolve="ODDRefWord" />
+    <node concept="3EZMnI" id="783AALQEH9d" role="2wV5jI">
+      <node concept="3F0ifn" id="783AALQEH9h" role="3EZMnx">
+        <property role="3F0ifm" value="@odd" />
+      </node>
+      <node concept="3F0ifn" id="783AALQEH9k" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+        <node concept="11LMrY" id="783AALQF$I3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="783AALQEH9q" role="3EZMnx">
+        <ref role="1NtTu8" to="u2ih:783AALQEH9a" resolve="odd" />
+        <node concept="1sVBvm" id="783AALQEH9s" role="1sWHZn">
+          <node concept="3F0A7n" id="783AALQEH9y" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="783AALQEH9n" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+      </node>
+      <node concept="2iRfu4" id="783AALQEH9g" role="2iSdaV" />
     </node>
   </node>
 </model>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:4be4bb23-fdcf-470e-a82e-9908d5748cb4(com.fasten.safety.rcp.pluginSolution.plugin)">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
@@ -35,12 +36,14 @@
     <import index="vdvw" ref="r:0dab1cea-0da9-4395-bdbd-beac207923df(com.mbeddr.formal.safety.argument.runtime.structure)" />
     <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
     <import index="3xw7" ref="r:03075676-dfa1-4f4e-aef4-a178c9f0fb17(com.mbeddr.formal.safety.argument.spi.structure)" />
+    <import index="1ob6" ref="r:f44404ed-5270-44f9-8e19-281b0df5835d(com.mpsbasics.pdfexporter.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="lbo2" ref="r:0f81d0ca-0757-4ee3-8a9a-ba988c2c39e3(com.mbeddr.formal.safety.gsn.ext.structure)" implicit="true" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="true" />
+    <import index="9br2" ref="r:70aadfb3-8246-45ac-bcd1-b345c7f7cfe4(com.mbeddr.formal.safety.argument.modelquery.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -65,6 +68,7 @@
       </concept>
     </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1204908117386" name="jetbrains.mps.lang.plugin.structure.Separator" flags="ng" index="2a7GMi" />
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
         <child id="1207145201301" name="reference" index="ftvYc" />
       </concept>
@@ -1284,9 +1288,9 @@
               <ref role="35c_gD" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
             </node>
             <node concept="37shsh" id="7A06dcUGIiZ" role="2J__8u">
-              <node concept="1dCxOk" id="7A06dcUGIj0" role="37shsm">
-                <property role="1XweGW" value="7466bc49-e775-4df7-a9f3-e383173b2eee" />
-                <property role="1XxBO9" value="fasten.safety.gsn.ext" />
+              <node concept="1dCxOk" id="6xXHcqxcOIG" role="37shsm">
+                <property role="1XweGW" value="ac9a2847-3512-4af0-8db9-c20abbe2720a" />
+                <property role="1XxBO9" value="fasten.safety" />
               </node>
             </node>
           </node>
@@ -1426,6 +1430,29 @@
               </node>
             </node>
           </node>
+          <node concept="tC5Ba" id="6xXHcqxdLYA" role="ftvYc">
+            <property role="TrG5h" value="Semantics" />
+            <property role="1XlLyE" value="true" />
+            <property role="2f7twF" value="Semantics" />
+            <property role="2pbE17" value="S" />
+            <node concept="ftmFs" id="6xXHcqxdLYB" role="ftER_">
+              <node concept="tCFHf" id="6xXHcqxdLZ4" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="6xXHcqxdLZ5" role="2J__8u">
+                  <property role="Xl_RC" value="Custom Assurance Consistency Checks" />
+                </node>
+                <node concept="35c_gC" id="6xXHcqxdLZ6" role="2J__8u">
+                  <ref role="35c_gD" to="9br2:1vid6hjrqXc" resolve="ModelChecksContainer" />
+                </node>
+                <node concept="37shsh" id="6xXHcqxdLZ7" role="2J__8u">
+                  <node concept="1dCxOk" id="6xXHcqxdzWY" role="37shsm">
+                    <property role="1XweGW" value="ad50662a-9851-40b5-8a07-e7535a82f5bb" />
+                    <property role="1XxBO9" value="fasten.safety.gsn.modelquery" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="tC5Ba" id="75npNYZG39B" role="ftvYc">
             <property role="TrG5h" value="Runtime" />
             <property role="1XlLyE" value="true" />
@@ -1482,9 +1509,9 @@
               <ref role="35c_gD" to="2c95:2TZO3DbuxwK" resolve="Document" />
             </node>
             <node concept="37shsh" id="26E6nZcC0ad" role="2J__8u">
-              <node concept="1dCxOk" id="26E6nZcC0ex" role="37shsm">
-                <property role="1XweGW" value="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c" />
-                <property role="1XxBO9" value="com.mbeddr.documentation" />
+              <node concept="1dCxOk" id="9wBdtpFVol" role="37shsm">
+                <property role="1XweGW" value="b5694cc1-d827-430b-bf03-ac5910fa8aa7" />
+                <property role="1XxBO9" value="fasten.docs" />
               </node>
             </node>
           </node>
@@ -1497,9 +1524,9 @@
               <ref role="35c_gD" to="2c95:5yxqZJwzC3e" resolve="DocumentConfig" />
             </node>
             <node concept="37shsh" id="26E6nZcC0ai" role="2J__8u">
-              <node concept="1dCxOk" id="26E6nZcC0eP" role="37shsm">
-                <property role="1XweGW" value="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c" />
-                <property role="1XxBO9" value="com.mbeddr.documentation" />
+              <node concept="1dCxOk" id="9wBdtpFVop" role="37shsm">
+                <property role="1XweGW" value="b5694cc1-d827-430b-bf03-ac5910fa8aa7" />
+                <property role="1XxBO9" value="fasten.docs" />
               </node>
             </node>
           </node>
@@ -1512,9 +1539,25 @@
               <ref role="35c_gD" to="2c95:2TZO3DbvPDI" resolve="DocumentExport" />
             </node>
             <node concept="37shsh" id="26E6nZcC0f7" role="2J__8u">
-              <node concept="1dCxOk" id="26E6nZcC0f8" role="37shsm">
-                <property role="1XweGW" value="54c79f9f-f3ba-4167-91f1-eb4e98a9c47c" />
-                <property role="1XxBO9" value="com.mbeddr.documentation" />
+              <node concept="1dCxOk" id="9wBdtpFVot" role="37shsm">
+                <property role="1XweGW" value="b5694cc1-d827-430b-bf03-ac5910fa8aa7" />
+                <property role="1XxBO9" value="fasten.docs" />
+              </node>
+            </node>
+          </node>
+          <node concept="2a7GMi" id="9wBdtpFLRS" role="ftvYc" />
+          <node concept="tCFHf" id="9wBdtpFLRV" role="ftvYc">
+            <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+            <node concept="Xl_RD" id="9wBdtpFV2i" role="2J__8u">
+              <property role="Xl_RC" value="Models to PDF" />
+            </node>
+            <node concept="35c_gC" id="9wBdtpFVeN" role="2J__8u">
+              <ref role="35c_gD" to="1ob6:24pF5$oUgrh" resolve="PdfExportConfiguration" />
+            </node>
+            <node concept="37shsh" id="9wBdtpFVof" role="2J__8u">
+              <node concept="1dCxOk" id="9wBdtpFVox" role="37shsm">
+                <property role="1XweGW" value="b5694cc1-d827-430b-bf03-ac5910fa8aa7" />
+                <property role="1XxBO9" value="fasten.docs" />
               </node>
             </node>
           </node>

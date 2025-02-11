@@ -4,6 +4,7 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -63,6 +64,14 @@
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1083245097125" name="jetbrains.mps.baseLanguage.structure.EnumClass" flags="ig" index="Qs71p">
+        <child id="1083245396908" name="enumConstant" index="Qtgdg" />
+      </concept>
+      <concept id="1083245299891" name="jetbrains.mps.baseLanguage.structure.EnumConstantDeclaration" flags="ig" index="QsSxf" />
+      <concept id="1083260308424" name="jetbrains.mps.baseLanguage.structure.EnumConstantReference" flags="nn" index="Rm8GO">
+        <reference id="1083260308426" name="enumConstantDeclaration" index="Rm8GQ" />
+        <reference id="1144432896254" name="enumClass" index="1Px2BO" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -1822,8 +1831,14 @@
                       <ref role="3cqZAo" node="2gpUZARg2TZ" resolve="solution" />
                     </node>
                   </node>
-                  <node concept="37vLTw" id="3jaLROLu6Iv" role="37vLTx">
-                    <ref role="3cqZAo" node="1XxXeb0MCX0" resolve="isSuccess" />
+                  <node concept="3clFbC" id="7bPRoQUaG8u" role="37vLTx">
+                    <node concept="Rm8GO" id="7bPRoQUaH8e" role="3uHU7w">
+                      <ref role="Rm8GQ" node="7bPRoQU9u_d" resolve="SUCCESS" />
+                      <ref role="1Px2BO" node="7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+                    </node>
+                    <node concept="37vLTw" id="3jaLROLu6Iv" role="3uHU7B">
+                      <ref role="3cqZAo" node="1XxXeb0MCX0" resolve="res" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -1858,8 +1873,10 @@
         </node>
       </node>
       <node concept="37vLTG" id="1XxXeb0MCX0" role="3clF46">
-        <property role="TrG5h" value="isSuccess" />
-        <node concept="10P_77" id="1XxXeb0MCWZ" role="1tU5fm" />
+        <property role="TrG5h" value="res" />
+        <node concept="3uibUv" id="7bPRoQUa_Na" role="1tU5fm">
+          <ref role="3uigEE" node="7bPRoQU9uvN" resolve="EEvidenceCheckingResult" />
+        </node>
       </node>
       <node concept="37vLTG" id="1XxXeb0MCYc" role="3clF46">
         <property role="TrG5h" value="repo" />
@@ -2808,6 +2825,22 @@
       </node>
       <node concept="17QB3L" id="7NA168qa4E_" role="3clF45" />
     </node>
+  </node>
+  <node concept="Qs71p" id="7bPRoQU9uvN">
+    <property role="TrG5h" value="EEvidenceCheckingResult" />
+    <node concept="QsSxf" id="7bPRoQU9u_d" role="Qtgdg">
+      <property role="TrG5h" value="SUCCESS" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="7bPRoQU9uCF" role="Qtgdg">
+      <property role="TrG5h" value="FAIL" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="QsSxf" id="7bPRoQU9uHx" role="Qtgdg">
+      <property role="TrG5h" value="RUNTIME_ERROR" />
+      <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+    </node>
+    <node concept="3Tm1VV" id="7bPRoQU9uvO" role="1B3o_S" />
   </node>
 </model>
 

@@ -301,23 +301,23 @@
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSz" role="3SOpfD">
       <property role="TrG5h" value="Lane Dimensions" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane Specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSA" role="3SOpfD">
       <property role="TrG5h" value="Lane Marking" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane Specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSD" role="3SOpfD">
       <property role="TrG5h" value="Lane Type" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane Specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSG" role="3SOpfD">
       <property role="TrG5h" value="Number of Lanes" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane Specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSJ" role="3SOpfD">
       <property role="TrG5h" value="Directions of Travel" />
-      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane specification" />
+      <ref role="3SOpc_" node="6sXzM9s8hRc" resolve="Drivable Area Lane Specification" />
     </node>
     <node concept="3SOpcA" id="6sXzM9s8hSM" role="3SOpfD">
       <property role="TrG5h" value="Bus Lane" />
@@ -912,7 +912,7 @@
     <node concept="2IzUYn" id="6sXzM9s8hTE" role="3SOpfD" />
     <node concept="19SGf9" id="6sXzM9s8hZR" role="2I8HYo">
       <node concept="19SUe$" id="6sXzM9s8hZS" role="19SJt6">
-        <property role="19SUeA" value="The ODD taxonomy specified in PAS 1883:2020 Operational Design Domain (ODD) taxonomy for an automated driving system (ADS) – Specification.  " />
+        <property role="19SUeA" value="The ODD taxonomy specified in PAS 1883:2020 Operational Design Domain (ODD) taxonomy&#10;for an automated driving system (ADS) – Specification.  " />
       </node>
     </node>
   </node>

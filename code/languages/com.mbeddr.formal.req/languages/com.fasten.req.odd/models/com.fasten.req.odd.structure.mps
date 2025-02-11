@@ -298,7 +298,7 @@
     <node concept="25R33" id="3RNDPbM0lNI" role="25R1y">
       <property role="3tVfz5" value="4464095630343625966" />
       <property role="TrG5h" value="disallow_only" />
-      <property role="1L1pqM" value="disallow_only" />
+      <property role="1L1pqM" value="disallow only" />
     </node>
   </node>
   <node concept="1TIwiD" id="3RNDPbM2UpO">
@@ -376,6 +376,20 @@
       <property role="20kJfa" value="concept" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="6wa3:3Jn$RV31w1o" resolve="OntologyConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="783AALQEH98">
+    <property role="EcuMT" value="8215579935891968584" />
+    <property role="TrG5h" value="ODDRefWord" />
+    <property role="34LRSv" value="@odd" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="783AALQEH9a" role="1TKVEi">
+      <property role="IQ2ns" value="8215579935891968586" />
+      <property role="20kJfa" value="odd" />
+      <ref role="20lvS9" node="3Jn$RV31nMq" resolve="ODD" />
+    </node>
+    <node concept="PrWs8" id="783AALQEH99" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
   </node>
 </model>

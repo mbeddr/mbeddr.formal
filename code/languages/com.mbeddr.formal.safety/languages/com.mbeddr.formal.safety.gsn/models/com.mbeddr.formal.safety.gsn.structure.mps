@@ -10,6 +10,7 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
+    <import index="iy8y" ref="r:0c08e44a-c7e7-4e55-9b2a-c33f3133e6c2(com.mpsbasics.words.generic.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -124,6 +125,9 @@
     </node>
     <node concept="PrWs8" id="1$lk9M65oEr" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="6FJpOMB2Hre" role="PzmwI">
+      <ref role="PrY4T" to="iy8y:6xXHcqxdSHU" resolve="IAllowGenericWords" />
     </node>
     <node concept="1irR5M" id="2LDKh2uE0R3" role="rwd14">
       <property role="2$rrk2" value="1" />

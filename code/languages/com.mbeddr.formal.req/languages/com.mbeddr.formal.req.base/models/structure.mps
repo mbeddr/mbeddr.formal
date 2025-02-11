@@ -9,6 +9,7 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
+    <import index="iy8y" ref="r:0c08e44a-c7e7-4e55-9b2a-c33f3133e6c2(com.mpsbasics.words.generic.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -95,6 +96,9 @@
     </node>
     <node concept="PrWs8" id="4gtLUSMLiMy" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6FJpOMB3Y2O" role="PzmwI">
+      <ref role="PrY4T" to="iy8y:6xXHcqxdSHU" resolve="IAllowGenericWords" />
     </node>
     <node concept="1irR5M" id="4qtpAOhXv5S" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -412,6 +416,23 @@
       <property role="IQ2ns" value="3684463346796158188" />
       <property role="20kJfa" value="reqDocument" />
       <ref role="20lvS9" node="4gtLUSMLiMx" resolve="RequirementDocument" />
+    </node>
+    <node concept="1irR5M" id="1_HYGT7DCK3" role="rwd14">
+      <property role="2$rrk2" value="3" />
+      <node concept="1irR9n" id="1_HYGT7DCK6" role="1irR9h">
+        <node concept="3PKj8D" id="1_HYGT7DCK7" role="3PKjn_">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+        <node concept="3PKj8D" id="1_HYGT7DCK8" role="3PKjnB">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+      </node>
+      <node concept="1irPie" id="1_HYGT7DCK9" role="1irR9h">
+        <property role="1irPi9" value="R" />
+        <node concept="3PKj8D" id="1_HYGT7DCKa" role="3PKjny">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="5et_HVSNcF1">
