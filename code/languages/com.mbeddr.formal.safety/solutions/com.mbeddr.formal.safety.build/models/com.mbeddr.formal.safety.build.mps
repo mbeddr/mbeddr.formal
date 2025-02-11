@@ -17809,7 +17809,7 @@
           <ref role="3_I8Xa" to="al5i:5fGcQI94qmQ" resolve="com.mbeddr.mpsutil.common" />
         </node>
         <node concept="3_I8Xc" id="5cnt3YQuwY1" role="39821P">
-          <ref role="3_I8Xa" to="90a9:77YfcvONpu4" />
+          <ref role="3_I8Xa" to="90a9:77YfcvONpu4" resolve="de.itemis.mps.compare" />
         </node>
         <node concept="3_I8Xc" id="5cnt3YQux25" role="39821P">
           <ref role="3_I8Xa" to="al5i:Vtr7jyBi$h" resolve="com.mbeddr.mpsutil.filepicker" />

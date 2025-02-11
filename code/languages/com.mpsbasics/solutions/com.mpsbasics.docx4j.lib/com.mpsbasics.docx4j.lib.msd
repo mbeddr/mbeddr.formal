@@ -83,3 +83,4 @@
     <module reference="b55d8dfc-0d9d-43d5-886d-c644e7083bff(jetbrains.mps.java.stub)" version="0" />
   </dependencyVersions>
 </solution>
+

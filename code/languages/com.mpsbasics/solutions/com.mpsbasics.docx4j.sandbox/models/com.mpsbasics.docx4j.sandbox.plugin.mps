@@ -34,6 +34,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
+        <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
         <child id="8976425910813834639" name="icon" index="3Uehp1" />
@@ -222,6 +223,7 @@
     <property role="TrG5h" value="SerializeJava2Word" />
     <property role="2uzpH1" value="Serialize Java Class to Word" />
     <property role="2YLI8m" value="6u2MFnph2wS/none" />
+    <property role="1rBW0U" value="true" />
     <node concept="2S4$dB" id="2w5Gq4Utm4H" role="1NuT2Z">
       <property role="TrG5h" value="node" />
       <node concept="3Tm6S6" id="2w5Gq4Utm4I" role="1B3o_S" />
