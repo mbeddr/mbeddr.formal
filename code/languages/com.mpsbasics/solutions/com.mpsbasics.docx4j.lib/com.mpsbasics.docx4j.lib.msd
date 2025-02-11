@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mpsbasics.docx4j.lib" uuid="71bb25aa-20fa-4c18-8954-1b176576f52d" moduleVersion="0">
   <models>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="docx4j-core-11.4.9.jar" />
       <sourceRoot location="docx4j-openxml-objects-11.4.9.jar" />
       <sourceRoot location="docx4j-openxml-objects-pml-11.4.9.jar" />
@@ -21,7 +21,6 @@
       <sourceRoot location="dependencies/jcl-over-slf4j-2.0.0-alpha5.jar" />
       <sourceRoot location="dependencies/mbassador-1.3.2.jar" />
       <sourceRoot location="dependencies/qdox-1.12.jar" />
-      <sourceRoot location="dependencies/slf4j-api-2.0.0-alpha6.jar" />
       <sourceRoot location="dependencies/stringtemplate-3.2.1.jar" />
       <sourceRoot location="dependencies/wmf2svg-0.9.8.jar" />
       <sourceRoot location="dependencies/xalan-interpretive-11.0.0.jar" />
@@ -33,7 +32,6 @@
       <sourceRoot location="dependencies/org.eclipse.persistence.moxy-3.0.2.jar" />
       <sourceRoot location="dependencies/jakarta.mail-2.0.1.jar" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib" />
   </models>
   <facets>
     <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">
@@ -62,7 +60,6 @@
       <library location="${module}/lib/dependencies/org.eclipse.persistence.core-3.0.2.jar" />
       <library location="${module}/lib/dependencies/org.eclipse.persistence.moxy-3.0.2.jar" />
       <library location="${module}/lib/dependencies/qdox-1.12.jar" />
-      <library location="${module}/lib/dependencies/slf4j-api-2.0.0-alpha6.jar" />
       <library location="${module}/lib/dependencies/stringtemplate-3.2.1.jar" />
       <library location="${module}/lib/dependencies/wmf2svg-0.9.8.jar" />
       <library location="${module}/lib/dependencies/xalan-interpretive-11.0.0.jar" />
@@ -86,4 +83,3 @@
     <module reference="b55d8dfc-0d9d-43d5-886d-c644e7083bff(jetbrains.mps.java.stub)" version="0" />
   </dependencyVersions>
 </solution>
-
