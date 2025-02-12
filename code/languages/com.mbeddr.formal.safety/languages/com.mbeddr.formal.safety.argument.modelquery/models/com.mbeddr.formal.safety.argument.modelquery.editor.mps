@@ -69,6 +69,8 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -252,6 +254,8 @@
           <property role="3F0ifm" value="Explanation:" />
         </node>
         <node concept="3F1sOY" id="y1G8y66Wmo" role="3EZMnx">
+          <property role="39s7Ar" value="true" />
+          <property role="1$x2rV" value="Press Enter to add explanation" />
           <ref role="1NtTu8" to="9br2:1vid6hjrASt" resolve="explanation" />
         </node>
         <node concept="l2Vlx" id="y1G8y66Wmp" role="2iSdaV" />
