@@ -17925,6 +17925,9 @@
         <node concept="3_I8Xc" id="5cnt3YQEHdp" role="39821P">
           <ref role="3_I8Xa" to="al5i:64SK4bcOniE" resolve="com.mbeddr.mpsutil.editorsupport" />
         </node>
+        <node concept="3_I8Xc" id="1tmvefXmPpO" role="39821P">
+          <ref role="3_I8Xa" to="al5i:NMVW79yxti" resolve="com.mbeddr.mpsutil.userstyles" />
+        </node>
         <node concept="3_I8Xc" id="3SfdbygKjSB" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1jjxZP6JHO_" resolve="mps-console" />
         </node>
@@ -17993,6 +17996,9 @@
         </node>
         <node concept="3_I8Xc" id="4lJSf3Lb8P4" role="39821P">
           <ref role="3_I8Xa" to="ffeo:16mx0EU4lQy" resolve="mps-ide" />
+        </node>
+        <node concept="3_I8Xc" id="1tmvefXmPpR" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5xfzfY92wJr" resolve="mps-devkit" />
         </node>
         <node concept="3_I8Xc" id="4lJSf3LgT8s" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5DF4H224yvv" resolve="mps-rcp" />
