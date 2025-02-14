@@ -16958,11 +16958,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1IhJc2tzBYp" role="3bR37C">
-          <node concept="3bR9La" id="1IhJc2tzBYq" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:776vT$mQZbf" resolve="com.mbeddr.mpsutil.comparator" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1IhJc2tzBYr" role="3bR37C">
           <node concept="3bR9La" id="1IhJc2tzBYs" role="1SiIV1">
             <ref role="3bR37D" node="1V$lRyiUHLD" resolve="com.mbeddr.formal.nusmv.pluginSolution" />
@@ -17024,6 +17019,11 @@
             <node concept="3qWCbU" id="72ufn5vaRlL" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6_254Rln3LH" role="3bR37C">
+          <node concept="3bR9La" id="6_254Rln3LI" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
           </node>
         </node>
       </node>
@@ -17974,10 +17974,10 @@
           <ref role="3_I8Xa" to="ffeo:Ye$g8PO953" resolve="mps-kotlin" />
         </node>
         <node concept="3_I8Xc" id="dCXfrcV27E" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:6jDaT$jlXhe" />
+          <ref role="3_I8Xa" to="ffeo:6jDaT$jlXhe" resolve="mps-testing" />
         </node>
         <node concept="3_I8Xc" id="dCXfrcV27H" role="39821P">
-          <ref role="3_I8Xa" to="90a9:2sSK94l$G4K" />
+          <ref role="3_I8Xa" to="90a9:2sSK94l$G4K" resolve="de.itemis.stubs.xml" />
         </node>
         <node concept="3_I8Xc" id="2FavYGw3mev" role="39821P">
           <ref role="3_I8Xa" to="90a9:6Fx0OSkEtpQ" resolve="de.itemis.mps.linenumbers" />
@@ -18435,11 +18435,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="7lPNUDMrkTW" role="3bR37C">
-          <node concept="3bR9La" id="7lPNUDMrkTX" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:776vT$mQZbf" resolve="com.mbeddr.mpsutil.comparator" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="7lPNUDMrkTY" role="3bR37C">
           <node concept="3bR9La" id="7lPNUDMrkTZ" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
@@ -18501,6 +18496,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6_254Rln3Mj" role="3bR37C">
+          <node concept="3bR9La" id="6_254Rln3Mk" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
           </node>
         </node>
       </node>
@@ -19368,11 +19368,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6ucyvMUDFeB" role="3bR37C">
-          <node concept="3bR9La" id="6ucyvMUDFeC" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:776vT$mQZbf" resolve="com.mbeddr.mpsutil.comparator" />
-          </node>
-        </node>
         <node concept="3rtmxn" id="6ucyvMUDFeN" role="3bR31x">
           <node concept="3LXTmp" id="6ucyvMUDFeO" role="3rtmxm">
             <node concept="3qWCbU" id="6ucyvMUDFeP" role="3LXTna">
@@ -19474,6 +19469,11 @@
         <node concept="1SiIV0" id="6ucyvMUGDpE" role="3bR37C">
           <node concept="3bR9La" id="6ucyvMUGDpF" role="1SiIV1">
             <ref role="3bR37D" node="42jqVeFkUuJ" resolve="com.mbeddr.formal.nusmv.importer.rt" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6_254Rln3v3" role="3bR37C">
+          <node concept="3bR9La" id="6_254Rln3v4" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
           </node>
         </node>
       </node>
@@ -19635,11 +19635,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6ucyvMUDFga" role="3bR37C">
-          <node concept="3bR9La" id="6ucyvMUDFgb" role="1SiIV1">
-            <ref role="3bR37D" to="al5i:776vT$mQZbf" resolve="com.mbeddr.mpsutil.comparator" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="6ucyvMUDFgc" role="3bR37C">
           <node concept="3bR9La" id="6ucyvMUDFgd" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
@@ -19706,6 +19701,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6_254Rln3vV" role="3bR37C">
+          <node concept="3bR9La" id="6_254Rln3vW" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
           </node>
         </node>
       </node>
