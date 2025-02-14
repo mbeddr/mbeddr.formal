@@ -690,9 +690,6 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
-      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
-        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
-      </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
@@ -2712,12 +2709,20 @@
       <node concept="1RplYI" id="1qrXfdH1YCx" role="1RuSHk">
         <node concept="1Rplqp" id="1qrXfdH1YCy" role="1Rpjdr">
           <node concept="3clFbS" id="1qrXfdH1YCz" role="2VODD2">
-            <node concept="3clFbF" id="1qrXfdH1YC$" role="3cqZAp">
-              <node concept="2OqwBi" id="1qrXfdH1YC_" role="3clFbG">
-                <node concept="1yATlc" id="1qrXfdH1YCA" role="2Oq$k0" />
-                <node concept="2Zo12i" id="1qrXfdH1YCB" role="2OqNvi">
-                  <node concept="chp4Y" id="1qrXfdH1YCC" role="2Zo12j">
-                    <ref role="cht4Q" to="py52:7bxPmtp5I2v" resolve="IHideInPalletteGoalStructureElement" />
+            <node concept="3clFbF" id="2FavYGvFNTH" role="3cqZAp">
+              <node concept="3fqX7Q" id="2FavYGvFNTD" role="3clFbG">
+                <node concept="2OqwBi" id="2FavYGvFOAe" role="3fr31v">
+                  <node concept="2ZN8Hh" id="2FavYGvFNUy" role="2Oq$k0" />
+                  <node concept="2qgKlT" id="2FavYGvFPD6" role="2OqNvi">
+                    <ref role="37wK5l" to="89jy:2FavYGvFEgW" resolve="shouldAllowContent" />
+                    <node concept="1eOMI4" id="2FavYGvRWFF" role="37wK5m">
+                      <node concept="10QFUN" id="2FavYGvRWFE" role="1eOMHV">
+                        <node concept="1yATlc" id="2FavYGvRWFD" role="10QFUP" />
+                        <node concept="3bZ5Sz" id="2FavYGvRWFC" role="10QFUM">
+                          <ref role="3bZ5Sy" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+                        </node>
+                      </node>
+                    </node>
                   </node>
                 </node>
               </node>
@@ -2730,15 +2735,16 @@
       </node>
       <node concept="gQ1qB" id="1qrXfdH2vEp" role="1RuSHk">
         <node concept="3clFbS" id="1qrXfdH2vEr" role="2VODD2">
-          <node concept="3clFbF" id="1qrXfdH2OBE" role="3cqZAp">
-            <node concept="2YIFZM" id="1qrXfdH2OEG" role="3clFbG">
-              <ref role="37wK5l" node="1qrXfdH2wAl" resolve="collectAdditionalPaletteEntries" />
-              <ref role="1Pybhc" node="1qrXfdH2wAj" resolve="GSNPaletteEntriesFactory" />
-              <node concept="2ZN8Hh" id="1qrXfdH3pJ0" role="37wK5m" />
-              <node concept="2OqwBi" id="WKGDODSVxU" role="37wK5m">
-                <node concept="1Q80Hx" id="WKGDODSVnC" role="2Oq$k0" />
-                <node concept="liA8E" id="WKGDODSW8C" role="2OqNvi">
-                  <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+          <node concept="3clFbF" id="2FavYGvG4UY" role="3cqZAp">
+            <node concept="2OqwBi" id="2FavYGvG5kM" role="3clFbG">
+              <node concept="2ZN8Hh" id="2FavYGvG4UX" role="2Oq$k0" />
+              <node concept="2qgKlT" id="2FavYGvG6wE" role="2OqNvi">
+                <ref role="37wK5l" to="89jy:2FavYGvFRmL" resolve="computePaletteEntries" />
+                <node concept="2OqwBi" id="2FavYGvG70$" role="37wK5m">
+                  <node concept="1Q80Hx" id="2FavYGvG6Kk" role="2Oq$k0" />
+                  <node concept="liA8E" id="2FavYGvG7cp" role="2OqNvi">
+                    <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+                  </node>
                 </node>
               </node>
             </node>

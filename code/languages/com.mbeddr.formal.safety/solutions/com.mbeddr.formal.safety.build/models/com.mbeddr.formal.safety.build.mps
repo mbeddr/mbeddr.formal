@@ -117,7 +117,7 @@
       <concept id="8577651205286814211" name="jetbrains.mps.build.structure.BuildLayout_Tar" flags="ng" index="1tmT9g">
         <property id="1979010778009209128" name="compression" index="AB_bT" />
       </concept>
-      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ngI" index="1y1bJS">
+      <concept id="4701820937132344003" name="jetbrains.mps.build.structure.BuildLayout_Container" flags="ng" index="1y1bJS">
         <child id="7389400916848037006" name="children" index="39821P" />
       </concept>
       <concept id="5610619299013057363" name="jetbrains.mps.build.structure.BuildLayout_ImportContent" flags="ng" index="3ygNvl">
@@ -160,7 +160,7 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
       <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
@@ -10931,9 +10931,9 @@
             <ref role="3bR37D" node="4lJSf3LkfPw" resolve="com.mpsbasics.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6FJpOMBt9QH" role="3bR37C">
-          <node concept="3bR9La" id="6FJpOMBt9QI" role="1SiIV1">
-            <ref role="3bR37D" node="6FJpOMBsZUh" resolve="com.mpsbasics.words.generic" />
+        <node concept="1SiIV0" id="2FavYGw23MC" role="3bR37C">
+          <node concept="1Busua" id="2FavYGw23MD" role="1SiIV1">
+            <ref role="1Busuk" node="6FJpOMBsZUh" resolve="com.mpsbasics.words.generic" />
           </node>
         </node>
       </node>
@@ -12069,6 +12069,11 @@
         <node concept="1SiIV0" id="8xY_IhvyVv" role="3bR37C">
           <node concept="3bR9La" id="8xY_IhvyVw" role="1SiIV1">
             <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2FavYGw23OB" role="3bR37C">
+          <node concept="3bR9La" id="2FavYGw23OC" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
       </node>
@@ -15055,6 +15060,11 @@
         <node concept="1SiIV0" id="6FJpOMBtycz" role="3bR37C">
           <node concept="3bR9La" id="6FJpOMBtyc$" role="1SiIV1">
             <ref role="3bR37D" node="y1G8y6aUhJ" resolve="com.mbeddr.formal.safety.argument.modelquery" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2FavYGw23UM" role="3bR37C">
+          <node concept="3bR9La" id="2FavYGw23UN" role="1SiIV1">
+            <ref role="3bR37D" node="7FGTN4LGIpd" resolve="com.mbeddr.formal.safety.cae" />
           </node>
         </node>
       </node>
