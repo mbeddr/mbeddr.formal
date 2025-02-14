@@ -24,6 +24,10 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+        <child id="2597348684684069742" name="contextHints" index="CpUAK" />
+      </concept>
+      <concept id="6822301196700715228" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclarationReference" flags="ig" index="2aJ2om">
+        <reference id="5944657839026714445" name="hint" index="2$4xQ3" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
@@ -1129,6 +1133,19 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3EDV2YKAnh3">
+    <property role="3GE5qa" value="connection" />
+    <ref role="1XX52x" to="cdmc:2ojFC2JbGgP" resolve="Connection" />
+    <node concept="PMmxH" id="38XtHnKGciK" role="2wV5jI">
+      <ref role="PMmxG" to="g35p:38XtHnKGc9l" resolve="GoalStructureConnectionBase_DIFF_View" />
+    </node>
+    <node concept="2aJ2om" id="3EDV2YKAnhZ" role="CpUAK">
+      <ref role="2$4xQ3" to="g35p:3EDV2YKAndh" resolve="GOAL_STRUCTURE_DIFF_VIEW" />
+    </node>
+    <node concept="PMmxH" id="38XtHnKGciM" role="6VMZX">
+      <ref role="PMmxG" to="g35p:38XtHnKGc9D" resolve="GoalStructureConnectionBase_DIFF_View_Inspector" />
     </node>
   </node>
 </model>

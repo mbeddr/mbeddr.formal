@@ -37,6 +37,7 @@
     <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
     <import index="3xw7" ref="r:03075676-dfa1-4f4e-aef4-a178c9f0fb17(com.mbeddr.formal.safety.argument.spi.structure)" />
     <import index="1ob6" ref="r:f44404ed-5270-44f9-8e19-281b0df5835d(com.mpsbasics.pdfexporter.structure)" />
+    <import index="cdmc" ref="r:d4129e7d-34b5-4657-8b81-f5b9fbe93567(com.mbeddr.formal.safety.cae.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -1282,7 +1283,7 @@
           <node concept="tCFHf" id="7A06dcUGIiW" role="ftvYc">
             <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
             <node concept="Xl_RD" id="7A06dcUGIiX" role="2J__8u">
-              <property role="Xl_RC" value="Goal Structures (GSN)" />
+              <property role="Xl_RC" value="Structured Arguments (GSN)" />
             </node>
             <node concept="35c_gC" id="7A06dcUGIiY" role="2J__8u">
               <ref role="35c_gD" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
@@ -1294,10 +1295,25 @@
               </node>
             </node>
           </node>
+          <node concept="tCFHf" id="2FavYGw1GCr" role="ftvYc">
+            <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+            <node concept="Xl_RD" id="2FavYGw1GCs" role="2J__8u">
+              <property role="Xl_RC" value="Structured Arguments (CAE)" />
+            </node>
+            <node concept="35c_gC" id="2FavYGw1GCt" role="2J__8u">
+              <ref role="35c_gD" to="cdmc:2FavYGvF_i5" resolve="CAEStructure" />
+            </node>
+            <node concept="37shsh" id="2FavYGw1GCu" role="2J__8u">
+              <node concept="1dCxOk" id="2FavYGw1GCv" role="37shsm">
+                <property role="1XweGW" value="ac9a2847-3512-4af0-8db9-c20abbe2720a" />
+                <property role="1XxBO9" value="fasten.safety" />
+              </node>
+            </node>
+          </node>
           <node concept="tCFHf" id="7A06dcUGStC" role="ftvYc">
             <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
             <node concept="Xl_RD" id="7A06dcUGStD" role="2J__8u">
-              <property role="Xl_RC" value="GSN Patterns Definition" />
+              <property role="Xl_RC" value="Patterns Definition" />
             </node>
             <node concept="35c_gC" id="7A06dcUGStE" role="2J__8u">
               <ref role="35c_gD" to="lbo2:1qrXfdH1Uhb" resolve="PatternDefinition" />
@@ -1312,7 +1328,7 @@
           <node concept="tCFHf" id="7A06dcUJBDX" role="ftvYc">
             <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
             <node concept="Xl_RD" id="7A06dcUJBDY" role="2J__8u">
-              <property role="Xl_RC" value="GSN Reusable Entities Definition" />
+              <property role="Xl_RC" value="Reusable Entities Definition" />
             </node>
             <node concept="35c_gC" id="7A06dcUJBDZ" role="2J__8u">
               <ref role="35c_gD" to="lbo2:x1FXquehm" resolve="LibraryDefinition" />

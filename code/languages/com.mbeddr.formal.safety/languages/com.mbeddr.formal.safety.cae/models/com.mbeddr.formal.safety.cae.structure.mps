@@ -12,6 +12,9 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
+        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
+      </concept>
       <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
         <property id="2756621024541681854" name="text" index="1irPi9" />
         <child id="1860120738943552534" name="color" index="3PKjny" />
@@ -20,6 +23,7 @@
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
+      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
         <property id="1860120738943552481" name="val" index="3PKj8l" />
       </concept>
@@ -37,6 +41,7 @@
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
+        <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
@@ -47,7 +52,10 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -160,6 +168,36 @@
         <property role="1irPi9" value="W" />
         <node concept="3PKj8D" id="3$Xa1eBi8G5" role="3PKjny">
           <property role="3PKj8l" value="A52A2A" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2FavYGvF_i5">
+    <property role="EcuMT" value="3083417542714086533" />
+    <property role="TrG5h" value="CAEStructure" />
+    <property role="34LRSv" value="CAE Structured Argument" />
+    <property role="R4oN_" value="Claim-Argument-Evidence" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+    <node concept="1TJgyj" id="3GRi4m$qPV0" role="1TKVEi">
+      <property role="IQ2ns" value="4266958635905277632" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20kJfa" value="content" />
+      <ref role="20lvS9" node="2ojFC2JaRng" resolve="CAEArgumentElementBase" />
+      <ref role="20ksaX" to="py52:3GRi4m$qPV0" resolve="content" />
+    </node>
+    <node concept="1irR5M" id="2FavYGvICi9" role="rwd14">
+      <property role="2$rrk2" value="5" />
+      <node concept="1irR9n" id="2LDKh2uE1oj" role="1irR9h">
+        <node concept="3PKj8D" id="2LDKh2uE1oA" role="3PKjn_">
+          <property role="3PKj8l" value="BBBBBB" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2LDKh2uE0Rd" role="1irR9h">
+        <property role="1irPi9" value="C" />
+        <node concept="3PKj8D" id="2LDKh2uE0Ro" role="3PKjny">
+          <property role="3PKj8l" value="FF0000" />
         </node>
       </node>
     </node>

@@ -4805,9 +4805,9 @@
             <ref role="3bR37D" node="4lJSf3LkfPw" resolve="com.mpsbasics.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6FJpOMBt4l7" role="3bR37C">
-          <node concept="3bR9La" id="6FJpOMBt4l8" role="1SiIV1">
-            <ref role="3bR37D" node="6FJpOMBsZUh" resolve="com.mpsbasics.words.generic" />
+        <node concept="1SiIV0" id="2FavYGw22Mg" role="3bR37C">
+          <node concept="1Busua" id="2FavYGw22Mh" role="1SiIV1">
+            <ref role="1Busuk" node="6FJpOMBsZUh" resolve="com.mpsbasics.words.generic" />
           </node>
         </node>
       </node>
@@ -5146,6 +5146,11 @@
         <node concept="1SiIV0" id="8xY_IhvzJF" role="3bR37C">
           <node concept="3bR9La" id="8xY_IhvzJG" role="1SiIV1">
             <ref role="3bR37D" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2FavYGw22MC" role="3bR37C">
+          <node concept="3bR9La" id="2FavYGw22MD" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
           </node>
         </node>
       </node>
