@@ -68,7 +68,7 @@
     <language slang="l:546ac349-3106-438d-b92b-7d2ebfa2ade8:com.mbeddr.formal.safety.argument.runtime" version="0" />
     <language slang="l:1118d03f-f774-4a18-9e75-2357f8563d46:com.mbeddr.formal.safety.argument.spi" version="0" />
     <language slang="l:04d81d12-7048-4552-9a53-86a271c0f094:com.mbeddr.formal.safety.argument.visualisation" version="0" />
-    <language slang="l:eb32334c-372a-488f-ba9b-e549a59115e9:com.mbeddr.formal.safety.cae" version="0" />
+    <language slang="l:eb32334c-372a-488f-ba9b-e549a59115e9:com.mbeddr.formal.safety.cae" version="1" />
     <language slang="l:d8195c35-9fa4-406e-b16a-8f62c605380b:com.mbeddr.formal.safety.cae.ext" version="0" />
     <language slang="l:402c6c59-bdb3-47fc-8dfa-74ab35e75274:com.mbeddr.formal.safety.cae.external_evidence" version="0" />
     <language slang="l:e8a04d94-4307-4f88-95a2-25f7c4f39437:com.mbeddr.formal.safety.gsn" version="3" />
@@ -140,6 +140,7 @@
     <module reference="676b5323-9c6d-4b8d-a4fc-5d159c3d8aed(com.mbeddr.formal.safety.gsn.patterns.lib)" version="0" />
     <module reference="17da266c-02d9-4bbd-b69b-8a656b49f45c(com.mbeddr.formal.safety.hara)" version="0" />
     <module reference="7a642ffb-bd05-4e8c-b81a-08fde9a204ba(com.mbeddr.formal.safety.tutorial)" version="0" />
+    <module reference="e4b230e7-8e1a-4a05-8148-8713530572c1(com.mpsbasics.words.generic)" version="0" />
     <module reference="377bf088-4ffc-48ac-910f-fb1c66ffa60e(com.symo.plantuml.lib)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />

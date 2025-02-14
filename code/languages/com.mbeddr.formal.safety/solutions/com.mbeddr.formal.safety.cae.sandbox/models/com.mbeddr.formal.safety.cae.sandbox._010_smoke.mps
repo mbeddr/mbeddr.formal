@@ -2,7 +2,7 @@
 <model ref="r:0f829d41-c70e-4b12-a290-58cb47d3831a(com.mbeddr.formal.safety.cae.sandbox._010_smoke)">
   <persistence version="9" />
   <languages>
-    <use id="eb32334c-372a-488f-ba9b-e549a59115e9" name="com.mbeddr.formal.safety.cae" version="0" />
+    <use id="eb32334c-372a-488f-ba9b-e549a59115e9" name="com.mbeddr.formal.safety.cae" version="1" />
     <devkit ref="b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)" />
   </languages>
   <imports />
@@ -21,6 +21,7 @@
       <concept id="2743728465716671951" name="com.mbeddr.formal.safety.cae.structure.Evidence" flags="ng" index="29edHf" />
       <concept id="2743728465716671380" name="com.mbeddr.formal.safety.cae.structure.Claim" flags="ng" index="29edOk" />
       <concept id="2743728465716888629" name="com.mbeddr.formal.safety.cae.structure.Connection" flags="ng" index="29fmEP" />
+      <concept id="3083417542714086533" name="com.mbeddr.formal.safety.cae.structure.CAEStructure" flags="ng" index="Pp2HI" />
     </language>
     <language id="402c6c59-bdb3-47fc-8dfa-74ab35e75274" name="com.mbeddr.formal.safety.cae.external_evidence">
       <concept id="2210355370894166208" name="com.mbeddr.formal.safety.cae.external_evidence.structure.DocumentBasedExternalEvidence" flags="ng" index="2FaGEZ">
@@ -97,6 +98,11 @@
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
+    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="4445845612600281072" name="com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames" flags="ngI" index="2GXxrR">
+        <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
+      </concept>
+    </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
@@ -111,8 +117,9 @@
       </concept>
     </language>
   </registry>
-  <node concept="2vn7XN" id="2ojFC2JbceD">
+  <node concept="Pp2HI" id="2FavYGw1k_Q">
     <property role="TrG5h" value="_010_smoke_cae" />
+    <property role="3dZJ_E" value="0" />
     <node concept="29edOk" id="2ojFC2JbceP" role="2vn1q5">
       <property role="TrG5h" value="C01" />
       <node concept="19SGf9" id="2ojFC2JbceQ" role="2vnaTY">
@@ -120,6 +127,78 @@
           <property role="19SUeA" value="System is safe &#10;to operate." />
         </node>
       </node>
+    </node>
+    <node concept="29edHe" id="2ojFC2Jbcfq" role="2vn1q5">
+      <property role="TrG5h" value="A01" />
+      <node concept="19SGf9" id="2ojFC2Jbcfr" role="2vnaTY">
+        <node concept="19SUe$" id="2ojFC2Jbcfs" role="19SJt6">
+          <property role="19SUeA" value="All hazards have&#10;been identified and&#10;risks mitigated." />
+        </node>
+      </node>
+    </node>
+    <node concept="29edHf" id="2ojFC2Jbcgb" role="2vn1q5">
+      <property role="TrG5h" value="E01" />
+      <node concept="19SGf9" id="2ojFC2Jbcgc" role="2vnaTY">
+        <node concept="19SUe$" id="2ojFC2Jbcgd" role="19SJt6">
+          <property role="19SUeA" value="Comprehensive V&amp;V." />
+        </node>
+      </node>
+    </node>
+    <node concept="29edHf" id="2ojFC2JbcgQ" role="2vn1q5">
+      <property role="TrG5h" value="E02" />
+      <node concept="19SGf9" id="2ojFC2JbcgR" role="2vnaTY">
+        <node concept="19SUe$" id="2ojFC2JbcgS" role="19SJt6">
+          <property role="19SUeA" value="Active field &#10;monitoring." />
+        </node>
+      </node>
+    </node>
+    <node concept="298YCw" id="2ojFC2Jc9WF" role="2vn1q5">
+      <property role="TrG5h" value="W1" />
+      <node concept="19SGf9" id="2ojFC2Jc9WG" role="2vnaTY">
+        <node concept="19SUe$" id="2ojFC2Jc9WH" role="19SJt6">
+          <property role="19SUeA" value="A systematic procedure has&#10;been applied for the &#10;identification of hazards." />
+        </node>
+      </node>
+    </node>
+    <node concept="29edOk" id="192INcxsqSx" role="2vn1q5">
+      <property role="TrG5h" value="C02" />
+      <node concept="19SGf9" id="192INcxsqSy" role="2vnaTY">
+        <node concept="19SUe$" id="192INcxsqSz" role="19SJt6">
+          <property role="19SUeA" value="Procedure has been validated &#10;in many similar projects." />
+        </node>
+      </node>
+    </node>
+    <node concept="29edOk" id="192INcxtsPb" role="2vn1q5">
+      <property role="TrG5h" value="C03" />
+      <node concept="19SGf9" id="192INcxtsPc" role="2vnaTY">
+        <node concept="19SUe$" id="192INcxtsPd" role="19SJt6">
+          <property role="19SUeA" value="Procedure is supported by &#10;established tools." />
+        </node>
+      </node>
+    </node>
+    <node concept="29fmEP" id="75La0fJ_xPF" role="2vhqc$">
+      <ref role="3VeSjQ" node="2ojFC2Jbcgb" resolve="E01" />
+      <ref role="3VeSjP" node="2ojFC2Jbcfq" resolve="A01" />
+    </node>
+    <node concept="29fmEP" id="75La0fJ_xRE" role="2vhqc$">
+      <ref role="3VeSjQ" node="2ojFC2JbcgQ" resolve="E02" />
+      <ref role="3VeSjP" node="2ojFC2Jbcfq" resolve="A01" />
+    </node>
+    <node concept="29fmEP" id="75La0fJ_xTM" role="2vhqc$">
+      <ref role="3VeSjQ" node="2ojFC2Jbcfq" resolve="A01" />
+      <ref role="3VeSjP" node="2ojFC2JbceP" resolve="C01" />
+    </node>
+    <node concept="29fmEP" id="75La0fJ_xUY" role="2vhqc$">
+      <ref role="3VeSjP" node="2ojFC2Jbcfq" resolve="A01" />
+      <ref role="3VeSjQ" node="2ojFC2Jc9WF" resolve="W1" />
+    </node>
+    <node concept="29fmEP" id="192INcxtsNG" role="2vhqc$">
+      <ref role="3VeSjQ" node="192INcxsqSx" resolve="C02" />
+      <ref role="3VeSjP" node="2ojFC2Jc9WF" resolve="W1" />
+    </node>
+    <node concept="29fmEP" id="192INcxtsR$" role="2vhqc$">
+      <ref role="3VeSjQ" node="192INcxtsPb" resolve="C03" />
+      <ref role="3VeSjP" node="2ojFC2Jc9WF" resolve="W1" />
     </node>
     <node concept="37mRI7" id="2ojFC2Jbcf7" role="lGtFl">
       <node concept="37mRIm" id="2ojFC2Jbcf8" role="37mRID">
@@ -359,81 +438,10 @@
         </node>
       </node>
     </node>
-    <node concept="29edHe" id="2ojFC2Jbcfq" role="2vn1q5">
-      <property role="TrG5h" value="A01" />
-      <node concept="19SGf9" id="2ojFC2Jbcfr" role="2vnaTY">
-        <node concept="19SUe$" id="2ojFC2Jbcfs" role="19SJt6">
-          <property role="19SUeA" value="All hazards have&#10;been identified and&#10;risks mitigated." />
-        </node>
-      </node>
-    </node>
-    <node concept="29edHf" id="2ojFC2Jbcgb" role="2vn1q5">
-      <property role="TrG5h" value="E01" />
-      <node concept="19SGf9" id="2ojFC2Jbcgc" role="2vnaTY">
-        <node concept="19SUe$" id="2ojFC2Jbcgd" role="19SJt6">
-          <property role="19SUeA" value="Comprehensive V&amp;V." />
-        </node>
-      </node>
-    </node>
-    <node concept="29edHf" id="2ojFC2JbcgQ" role="2vn1q5">
-      <property role="TrG5h" value="E02" />
-      <node concept="19SGf9" id="2ojFC2JbcgR" role="2vnaTY">
-        <node concept="19SUe$" id="2ojFC2JbcgS" role="19SJt6">
-          <property role="19SUeA" value="Active field &#10;monitoring." />
-        </node>
-      </node>
-    </node>
-    <node concept="29fmEP" id="75La0fJ_xPF" role="2vhqc$">
-      <ref role="3VeSjQ" node="2ojFC2Jbcgb" resolve="E01" />
-      <ref role="3VeSjP" node="2ojFC2Jbcfq" resolve="A01" />
-    </node>
-    <node concept="29fmEP" id="75La0fJ_xRE" role="2vhqc$">
-      <ref role="3VeSjQ" node="2ojFC2JbcgQ" resolve="E02" />
-      <ref role="3VeSjP" node="2ojFC2Jbcfq" resolve="A01" />
-    </node>
-    <node concept="29fmEP" id="75La0fJ_xTM" role="2vhqc$">
-      <ref role="3VeSjQ" node="2ojFC2Jbcfq" resolve="A01" />
-      <ref role="3VeSjP" node="2ojFC2JbceP" resolve="C01" />
-    </node>
-    <node concept="29fmEP" id="75La0fJ_xUY" role="2vhqc$">
-      <ref role="3VeSjP" node="2ojFC2Jbcfq" resolve="A01" />
-      <ref role="3VeSjQ" node="2ojFC2Jc9WF" resolve="W1" />
-    </node>
-    <node concept="298YCw" id="2ojFC2Jc9WF" role="2vn1q5">
-      <property role="TrG5h" value="W1" />
-      <node concept="19SGf9" id="2ojFC2Jc9WG" role="2vnaTY">
-        <node concept="19SUe$" id="2ojFC2Jc9WH" role="19SJt6">
-          <property role="19SUeA" value="A systematic procedure has&#10;been applied for the &#10;identification of hazards." />
-        </node>
-      </node>
-    </node>
-    <node concept="29edOk" id="192INcxsqSx" role="2vn1q5">
-      <property role="TrG5h" value="C02" />
-      <node concept="19SGf9" id="192INcxsqSy" role="2vnaTY">
-        <node concept="19SUe$" id="192INcxsqSz" role="19SJt6">
-          <property role="19SUeA" value="Procedure has been validated &#10;in many similar projects." />
-        </node>
-      </node>
-    </node>
-    <node concept="29edOk" id="192INcxtsPb" role="2vn1q5">
-      <property role="TrG5h" value="C03" />
-      <node concept="19SGf9" id="192INcxtsPc" role="2vnaTY">
-        <node concept="19SUe$" id="192INcxtsPd" role="19SJt6">
-          <property role="19SUeA" value="Procedure is supported by &#10;established tools." />
-        </node>
-      </node>
-    </node>
-    <node concept="29fmEP" id="192INcxtsNG" role="2vhqc$">
-      <ref role="3VeSjQ" node="192INcxsqSx" resolve="C02" />
-      <ref role="3VeSjP" node="2ojFC2Jc9WF" resolve="W1" />
-    </node>
-    <node concept="29fmEP" id="192INcxtsR$" role="2vhqc$">
-      <ref role="3VeSjQ" node="192INcxtsPb" resolve="C03" />
-      <ref role="3VeSjP" node="2ojFC2Jc9WF" resolve="W1" />
-    </node>
   </node>
-  <node concept="2vn7XN" id="1UGKBYPxy_8">
+  <node concept="Pp2HI" id="2FavYGw1k_R">
     <property role="TrG5h" value="_020_external_evidence_cae" />
+    <property role="3dZJ_E" value="0" />
     <node concept="2FaGEZ" id="1UGKBYPxLUF" role="2vn1q5">
       <property role="TrG5h" value="E_External" />
       <node concept="19SGf9" id="1UGKBYPxLUG" role="2vnaTY">
