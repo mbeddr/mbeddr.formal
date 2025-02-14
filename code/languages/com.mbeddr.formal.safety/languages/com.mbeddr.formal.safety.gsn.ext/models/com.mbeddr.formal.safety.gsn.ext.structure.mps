@@ -125,6 +125,9 @@
     <node concept="PrWs8" id="84ljAGDLxi" role="PzmwI">
       <ref role="PrY4T" to="b19z:5mW_a0OEuea" resolve="IFASTENHierarchicalStructure" />
     </node>
+    <node concept="PrWs8" id="58QADzT1SWM" role="PzmwI">
+      <ref role="PrY4T" to="py52:58QADzT1SWK" resolve="IReuseArgumentFragment" />
+    </node>
     <node concept="1TJgyj" id="WKGDODIrUZ" role="1TKVEi">
       <property role="IQ2ns" value="1094571097530678975" />
       <property role="20kJfa" value="originalDefinition" />
@@ -361,6 +364,9 @@
     <node concept="PrWs8" id="x1FXqy2u7" role="PrDN$">
       <ref role="PrY4T" to="py52:7bxPmtp5I2v" resolve="IHideInPalletteGoalStructureElement" />
     </node>
+    <node concept="PrWs8" id="58QADzT1SWL" role="PrDN$">
+      <ref role="PrY4T" to="py52:58QADzT1SWK" resolve="IReuseArgumentFragment" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4KIvh_tvCfy">
     <property role="EcuMT" value="5489462543707440098" />
@@ -395,6 +401,9 @@
       <property role="IQ2ns" value="9296093161947828" />
       <property role="20kJfa" value="documentationRef" />
       <ref role="20lvS9" node="2xfNjApoY99" resolve="IGSNDocument" />
+    </node>
+    <node concept="PrWs8" id="58QADzT1PK0" role="PzmwI">
+      <ref role="PrY4T" to="py52:58QADzT1PJZ" resolve="IContainerOfReusableArgumentFragments" />
     </node>
   </node>
   <node concept="1TIwiD" id="56pBK14tHBo">

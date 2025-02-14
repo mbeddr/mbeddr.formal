@@ -484,5 +484,15 @@
       <ref role="20lvS9" node="3GRi4m$qS5k" resolve="GoalStructureElementBase" />
     </node>
   </node>
+  <node concept="PlHQZ" id="58QADzT1PJZ">
+    <property role="EcuMT" value="5924092341656181759" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="IContainerOfReusableArgumentFragments" />
+  </node>
+  <node concept="PlHQZ" id="58QADzT1SWK">
+    <property role="EcuMT" value="5924092341656194864" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="IReuseArgumentFragment" />
+  </node>
 </model>
 
