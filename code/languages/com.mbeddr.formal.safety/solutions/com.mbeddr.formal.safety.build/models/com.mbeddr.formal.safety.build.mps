@@ -1918,28 +1918,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="2MrvZqtAlB3" role="3bR37C">
-          <node concept="1BurEX" id="2MrvZqtAlB4" role="1SiIV1">
-            <node concept="398BVA" id="2MrvZqtAlAO" role="1BurEY">
-              <ref role="398BVh" node="7he_lUum_$u" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="2MrvZqtAlAP" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="2MrvZqtAlAQ" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="2MrvZqtAlAR" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="2MrvZqtAlAS" role="2Ry0An">
-                      <property role="2Ry0Am" value="dependencies" />
-                      <node concept="2Ry0Ak" id="2MrvZqtAlAT" role="2Ry0An">
-                        <property role="2Ry0Am" value="slf4j-api-2.0.0-alpha6.jar" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="2MrvZqtAlBk" role="3bR37C">
           <node concept="1BurEX" id="2MrvZqtAlBl" role="1SiIV1">
             <node concept="398BVA" id="2MrvZqtAlB5" role="1BurEY">
@@ -10900,14 +10878,14 @@
             <ref role="3bR37D" node="2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2FavYGw23MC" role="3bR37C">
-          <node concept="1Busua" id="2FavYGw23MD" role="1SiIV1">
-            <ref role="1Busuk" node="6FJpOMBsZUh" resolve="com.mpsbasics.words.generic" />
+        <node concept="1SiIV0" id="6_254RlouCF" role="3bR37C">
+          <node concept="3bR9La" id="6_254RlouCG" role="1SiIV1">
+            <ref role="3bR37D" node="2dsc7GndbM" resolve="com.mpsbasics.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="2dsc7GnC43" role="3bR37C">
-          <node concept="3bR9La" id="2dsc7GnC44" role="1SiIV1">
-            <ref role="3bR37D" node="2dsc7GndbM" resolve="com.mpsbasics.core" />
+        <node concept="1SiIV0" id="6_254RlovI7" role="3bR37C">
+          <node concept="1Busua" id="6_254RlovI8" role="1SiIV1">
+            <ref role="1Busuk" node="6FJpOMBsZUh" resolve="com.mpsbasics.words.generic" />
           </node>
         </node>
       </node>
@@ -17898,6 +17876,9 @@
         <node concept="3_I8Xc" id="5cnt3YQEHdp" role="39821P">
           <ref role="3_I8Xa" to="al5i:64SK4bcOniE" resolve="com.mbeddr.mpsutil.editorsupport" />
         </node>
+        <node concept="3_I8Xc" id="1tmvefXmPpO" role="39821P">
+          <ref role="3_I8Xa" to="al5i:NMVW79yxti" resolve="com.mbeddr.mpsutil.userstyles" />
+        </node>
         <node concept="3_I8Xc" id="6_254Rln4fj" role="39821P">
           <ref role="3_I8Xa" to="al5i:3lZeU8ehKmj" resolve="com.mbeddr.mpsutil.httpsupport" />
         </node>
@@ -17969,6 +17950,9 @@
         </node>
         <node concept="3_I8Xc" id="4lJSf3Lb8P4" role="39821P">
           <ref role="3_I8Xa" to="ffeo:16mx0EU4lQy" resolve="mps-ide" />
+        </node>
+        <node concept="3_I8Xc" id="1tmvefXmPpR" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5xfzfY92wJr" resolve="mps-devkit" />
         </node>
         <node concept="3_I8Xc" id="4lJSf3LgT8s" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5DF4H224yvv" resolve="mps-rcp" />
