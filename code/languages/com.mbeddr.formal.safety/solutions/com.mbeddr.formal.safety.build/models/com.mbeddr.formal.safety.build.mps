@@ -17899,7 +17899,7 @@
           <ref role="3_I8Xa" to="al5i:64SK4bcOniE" resolve="com.mbeddr.mpsutil.editorsupport" />
         </node>
         <node concept="3_I8Xc" id="6_254Rln4fj" role="39821P">
-          <ref role="3_I8Xa" to="al5i:3lZeU8ehKmj" />
+          <ref role="3_I8Xa" to="al5i:3lZeU8ehKmj" resolve="com.mbeddr.mpsutil.httpsupport" />
         </node>
         <node concept="3_I8Xc" id="3SfdbygKjSB" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1jjxZP6JHO_" resolve="mps-console" />
@@ -17980,7 +17980,7 @@
           <ref role="3_I8Xa" to="ffeo:6jDaT$jlXhe" resolve="mps-testing" />
         </node>
         <node concept="3_I8Xc" id="6_254Rln41w" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:6jDaT$jlWWW" />
+          <ref role="3_I8Xa" to="ffeo:6jDaT$jlWWW" resolve="mps-junit5" />
         </node>
         <node concept="3_I8Xc" id="dCXfrcV27H" role="39821P">
           <ref role="3_I8Xa" to="90a9:2sSK94l$G4K" resolve="de.itemis.stubs.xml" />
