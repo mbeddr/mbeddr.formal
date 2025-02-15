@@ -17898,6 +17898,9 @@
         <node concept="3_I8Xc" id="5cnt3YQEHdp" role="39821P">
           <ref role="3_I8Xa" to="al5i:64SK4bcOniE" resolve="com.mbeddr.mpsutil.editorsupport" />
         </node>
+        <node concept="3_I8Xc" id="6_254Rln4fj" role="39821P">
+          <ref role="3_I8Xa" to="al5i:3lZeU8ehKmj" />
+        </node>
         <node concept="3_I8Xc" id="3SfdbygKjSB" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1jjxZP6JHO_" resolve="mps-console" />
         </node>
