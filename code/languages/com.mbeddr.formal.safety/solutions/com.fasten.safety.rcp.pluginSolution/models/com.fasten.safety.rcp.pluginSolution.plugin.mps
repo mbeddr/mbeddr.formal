@@ -37,6 +37,7 @@
     <import index="3xw7" ref="r:03075676-dfa1-4f4e-aef4-a178c9f0fb17(com.mbeddr.formal.safety.argument.spi.structure)" />
     <import index="1ob6" ref="r:f44404ed-5270-44f9-8e19-281b0df5835d(com.mpsbasics.pdfexporter.structure)" />
     <import index="cdmc" ref="r:d4129e7d-34b5-4657-8b81-f5b9fbe93567(com.mbeddr.formal.safety.cae.structure)" />
+    <import index="qsmp" ref="r:061fba79-f31c-4775-8e2b-fd83f8c73bfe(com.mbeddr.formal.safety.argument.process.artefacts.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -1503,6 +1504,45 @@
                     <property role="1XxBO9" value="fasten.safety.gsn.runtime" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="tC5Ba" id="2oRUTT_RsET" role="ftvYc">
+        <property role="TrG5h" value="ProcessModels" />
+        <property role="1XlLyE" value="true" />
+        <property role="2f7twF" value="Process Models" />
+        <property role="1rdrE6" value="true" />
+        <property role="2pbE17" value="P" />
+        <node concept="ftmFs" id="2oRUTT_RsEU" role="ftER_">
+          <node concept="tCFHf" id="2oRUTT_RsEV" role="ftvYc">
+            <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+            <node concept="Xl_RD" id="2oRUTT_RsEW" role="2J__8u">
+              <property role="Xl_RC" value="Organization Model" />
+            </node>
+            <node concept="35c_gC" id="2oRUTT_RsEX" role="2J__8u">
+              <ref role="35c_gD" to="qsmp:1noKC0JTmPI" resolve="Organization" />
+            </node>
+            <node concept="37shsh" id="2oRUTT_RsEY" role="2J__8u">
+              <node concept="1dCxOk" id="2oRUTT_RsNe" role="37shsm">
+                <property role="1XweGW" value="58430e3c-3d97-455c-a27e-8eeba7f8513e" />
+                <property role="1XxBO9" value="fasten.safety.gsn.artefacts" />
+              </node>
+            </node>
+          </node>
+          <node concept="tCFHf" id="2oRUTT_RsF0" role="ftvYc">
+            <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+            <node concept="Xl_RD" id="2oRUTT_RsF1" role="2J__8u">
+              <property role="Xl_RC" value="Artefact Definition" />
+            </node>
+            <node concept="35c_gC" id="2oRUTT_RsF2" role="2J__8u">
+              <ref role="35c_gD" to="qsmp:1noKC0JTi6N" resolve="ArtefactDefinition" />
+            </node>
+            <node concept="37shsh" id="2oRUTT_RsF3" role="2J__8u">
+              <node concept="1dCxOk" id="2oRUTT_RsNx" role="37shsm">
+                <property role="1XweGW" value="58430e3c-3d97-455c-a27e-8eeba7f8513e" />
+                <property role="1XxBO9" value="fasten.safety.gsn.artefacts" />
               </node>
             </node>
           </node>
