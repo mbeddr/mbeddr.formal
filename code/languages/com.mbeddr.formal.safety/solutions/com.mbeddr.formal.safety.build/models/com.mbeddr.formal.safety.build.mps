@@ -15067,6 +15067,16 @@
             <ref role="3bR37D" node="7FGTN4LGIpd" resolve="com.mbeddr.formal.safety.cae" />
           </node>
         </node>
+        <node concept="1SiIV0" id="2oRUTT_RtDX" role="3bR37C">
+          <node concept="3bR9La" id="2oRUTT_RtDY" role="1SiIV1">
+            <ref role="3bR37D" node="5YWtEMPJWqd" resolve="com.mbeddr.formal.safety.argument.process.artefacts" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2oRUTT_RLOm" role="3bR37C">
+          <node concept="3bR9La" id="2oRUTT_RLOn" role="1SiIV1">
+            <ref role="3bR37D" node="4eD_5l3ft1H" resolve="com.mbeddr.formal.safety.gsn.confidence.acp" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4ziKDEngAys" role="2G$12L">
         <property role="BnDLt" value="true" />

@@ -14,6 +14,9 @@
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
+        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
+      </concept>
       <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
         <property id="2756621024541681854" name="text" index="1irPi9" />
         <child id="1860120738943552534" name="color" index="3PKjny" />
@@ -22,11 +25,9 @@
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
+      <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
         <property id="1860120738943552481" name="val" index="3PKj8l" />
-      </concept>
-      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
-        <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -93,7 +94,7 @@
     </node>
     <node concept="1TJgyi" id="1noKC0JTir4" role="1TKVEl">
       <property role="IQ2nx" value="1574221925581137604" />
-      <property role="TrG5h" value="date" />
+      <property role="TrG5h" value="creationDate" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="1noKC0JTir9" role="1TKVEl">
@@ -109,7 +110,7 @@
     <node concept="1TJgyj" id="1noKC0JTir7" role="1TKVEi">
       <property role="IQ2ns" value="1574221925581137607" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="changes" />
+      <property role="20kJfa" value="documentation" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
     <node concept="1TJgyj" id="1noKC0JW3mf" role="1TKVEi">
@@ -133,6 +134,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1noKC0JTiri" resolve="Ressource" />
     </node>
+    <node concept="PrWs8" id="2oRUTT_PdXX" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1noKC0JTi6N">
     <property role="EcuMT" value="1574221925581136307" />
@@ -154,8 +158,19 @@
     <node concept="PrWs8" id="6FJpOMBsDB9" role="PzmwI">
       <ref role="PrY4T" to="iy8y:6xXHcqxdSHU" resolve="IAllowGenericWords" />
     </node>
-    <node concept="1QGGSu" id="5fX5a81pV8W" role="rwd14">
-      <property role="1iqoE4" value="${module}/icons/artefacts.png" />
+    <node concept="1irR5M" id="2oRUTT_OkLP" role="rwd14">
+      <property role="2$rrk2" value="2" />
+      <node concept="1irPie" id="2oRUTT_OkLR" role="1irR9h">
+        <property role="1irPi9" value="#" />
+        <node concept="3PKj8D" id="2oRUTT_OkLU" role="3PKjny">
+          <property role="3PKj8l" value="FF0000" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="2oRUTT_OkLY" role="1irR9h">
+        <node concept="3PKj8D" id="2oRUTT_OkM1" role="3PKjn_">
+          <property role="3PKj8l" value="1155FF" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PlHQZ" id="1noKC0JTi6M">
