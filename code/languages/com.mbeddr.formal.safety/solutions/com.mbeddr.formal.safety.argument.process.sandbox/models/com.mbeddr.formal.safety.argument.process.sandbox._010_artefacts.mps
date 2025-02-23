@@ -52,11 +52,11 @@
       </concept>
       <concept id="1574221925581136308" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.Artefact" flags="ng" index="UfucO">
         <property id="1574221925581137602" name="versionId" index="Ufuh2" />
-        <property id="1574221925581137604" name="date" index="Ufuh4" />
+        <property id="1574221925581137604" name="creationDate" index="Ufuh4" />
         <child id="1574221925581862287" name="events" index="Uafsf" />
         <child id="1574221925581496545" name="ressources" index="UcA9x" />
         <child id="1574221925581155844" name="relations" index="UfqM4" />
-        <child id="1574221925581137607" name="changes" index="Ufuh7" />
+        <child id="1574221925581137607" name="documentation" index="Ufuh7" />
       </concept>
       <concept id="1574221925581137623" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.FileRessource" flags="ng" index="Ufuhn" />
       <concept id="1574221925581137626" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.UrlRessource" flags="ng" index="Ufuhq" />
