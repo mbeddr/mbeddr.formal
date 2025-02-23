@@ -38,6 +38,7 @@
     <import index="1ob6" ref="r:f44404ed-5270-44f9-8e19-281b0df5835d(com.mpsbasics.pdfexporter.structure)" />
     <import index="cdmc" ref="r:d4129e7d-34b5-4657-8b81-f5b9fbe93567(com.mbeddr.formal.safety.cae.structure)" />
     <import index="qsmp" ref="r:061fba79-f31c-4775-8e2b-fd83f8c73bfe(com.mbeddr.formal.safety.argument.process.artefacts.structure)" />
+    <import index="kqaf" ref="r:6cc86fc4-3f69-4213-8f49-ef9fcbc7cb5f(com.mbeddr.formal.safety.gsn.confidence.acp.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -1464,6 +1465,29 @@
                   <node concept="1dCxOk" id="6xXHcqxdzWY" role="37shsm">
                     <property role="1XweGW" value="ad50662a-9851-40b5-8a07-e7535a82f5bb" />
                     <property role="1XxBO9" value="fasten.safety.gsn.modelquery" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="tC5Ba" id="2oRUTT_RKRQ" role="ftvYc">
+            <property role="TrG5h" value="Confidence" />
+            <property role="1XlLyE" value="true" />
+            <property role="2f7twF" value="Confidence" />
+            <property role="2pbE17" value="C" />
+            <node concept="ftmFs" id="2oRUTT_RKRR" role="ftER_">
+              <node concept="tCFHf" id="2oRUTT_RKRS" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="2oRUTT_RKRT" role="2J__8u">
+                  <property role="Xl_RC" value="Confidence Argument (ACP)" />
+                </node>
+                <node concept="35c_gC" id="2oRUTT_RKRU" role="2J__8u">
+                  <ref role="35c_gD" to="kqaf:3bh1RFvGk3l" resolve="ConfidenceArgument" />
+                </node>
+                <node concept="37shsh" id="2oRUTT_RKRV" role="2J__8u">
+                  <node concept="1dCxOk" id="2oRUTT_RKXU" role="37shsm">
+                    <property role="1XweGW" value="b80b29fe-1cc4-4054-aee5-cb5c2049985a" />
+                    <property role="1XxBO9" value="fasten.safety.gsn.confidence" />
                   </node>
                 </node>
               </node>
