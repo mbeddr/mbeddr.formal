@@ -335,10 +335,10 @@
           <node concept="VPM3Z" id="1noKC0JTis2" role="3F10Kt" />
           <node concept="3XFhqQ" id="1noKC0JTisg" role="3EZMnx" />
           <node concept="3F0ifn" id="1noKC0JTism" role="3EZMnx">
-            <property role="3F0ifm" value="date:" />
+            <property role="3F0ifm" value="creation date:" />
           </node>
           <node concept="3F0A7n" id="5YWtEMPIj6Y" role="3EZMnx">
-            <ref role="1NtTu8" to="qsmp:1noKC0JTir4" resolve="date" />
+            <ref role="1NtTu8" to="qsmp:1noKC0JTir4" resolve="creationDate" />
           </node>
           <node concept="l2Vlx" id="1noKC0JTis5" role="2iSdaV" />
         </node>
@@ -346,10 +346,10 @@
           <node concept="VPM3Z" id="1noKC0JU7Ys" role="3F10Kt" />
           <node concept="3XFhqQ" id="1noKC0JU80U" role="3EZMnx" />
           <node concept="3F0ifn" id="1noKC0JU810" role="3EZMnx">
-            <property role="3F0ifm" value="changes:" />
+            <property role="3F0ifm" value="documentation:" />
           </node>
           <node concept="3F1sOY" id="1noKC0JU818" role="3EZMnx">
-            <ref role="1NtTu8" to="qsmp:1noKC0JTir7" resolve="changes" />
+            <ref role="1NtTu8" to="qsmp:1noKC0JTir7" resolve="documentation" />
           </node>
           <node concept="3F0ifn" id="1noKC0JU81i" role="3EZMnx">
             <property role="3F0ifm" value=";" />

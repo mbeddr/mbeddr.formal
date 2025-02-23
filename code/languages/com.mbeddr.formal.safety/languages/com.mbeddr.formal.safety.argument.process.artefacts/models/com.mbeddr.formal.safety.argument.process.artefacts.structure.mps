@@ -94,7 +94,7 @@
     </node>
     <node concept="1TJgyi" id="1noKC0JTir4" role="1TKVEl">
       <property role="IQ2nx" value="1574221925581137604" />
-      <property role="TrG5h" value="date" />
+      <property role="TrG5h" value="creationDate" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="1noKC0JTir9" role="1TKVEl">
@@ -110,7 +110,7 @@
     <node concept="1TJgyj" id="1noKC0JTir7" role="1TKVEi">
       <property role="IQ2ns" value="1574221925581137607" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="changes" />
+      <property role="20kJfa" value="documentation" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
     <node concept="1TJgyj" id="1noKC0JW3mf" role="1TKVEi">
