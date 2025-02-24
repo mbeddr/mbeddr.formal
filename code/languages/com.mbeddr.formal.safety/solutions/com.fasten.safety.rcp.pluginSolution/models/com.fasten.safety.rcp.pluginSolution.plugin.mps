@@ -39,6 +39,8 @@
     <import index="cdmc" ref="r:d4129e7d-34b5-4657-8b81-f5b9fbe93567(com.mbeddr.formal.safety.cae.structure)" />
     <import index="qsmp" ref="r:061fba79-f31c-4775-8e2b-fd83f8c73bfe(com.mbeddr.formal.safety.argument.process.artefacts.structure)" />
     <import index="kqaf" ref="r:6cc86fc4-3f69-4213-8f49-ef9fcbc7cb5f(com.mbeddr.formal.safety.gsn.confidence.acp.structure)" />
+    <import index="s9o5" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor(MPS.IDEA/)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -105,8 +107,12 @@
       <concept id="1204478074808" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_MPSProject" flags="nn" index="1KvdUw" />
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
+      <concept id="481983775135178851" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginInitBlock" flags="in" index="2uRRBj" />
       <concept id="481983775135178834" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginDeclaration" flags="ng" index="2uRRBy">
         <child id="481983775135178836" name="initBlock" index="2uRRB$" />
+      </concept>
+      <concept id="481983775135178840" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginDeclaration" flags="ng" index="2uRRBC">
+        <child id="481983775135178842" name="initBlock" index="2uRRBE" />
       </concept>
       <concept id="481983775135178825" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginInitBlock" flags="in" index="2uRRBT" />
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
@@ -174,6 +180,9 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -1673,6 +1682,38 @@
     </node>
     <node concept="2flH9Z" id="2ToO$l38whw" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.NewSubTestModel_Action" />
+    </node>
+  </node>
+  <node concept="2uRRBC" id="YBmTnbejfn">
+    <property role="TrG5h" value="SetTextWidth" />
+    <node concept="2uRRBj" id="YBmTnbejfo" role="2uRRBE">
+      <node concept="3clFbS" id="YBmTnbejfp" role="2VODD2">
+        <node concept="3cpWs8" id="YBmTnbesNx" role="3cqZAp">
+          <node concept="3cpWsn" id="YBmTnbesNy" role="3cpWs9">
+            <property role="TrG5h" value="instance" />
+            <node concept="3uibUv" id="YBmTnbesN8" role="1tU5fm">
+              <ref role="3uigEE" to="exr9:~EditorSettings" resolve="EditorSettings" />
+            </node>
+            <node concept="2YIFZM" id="YBmTnbesNz" role="33vP2m">
+              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+              <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="YBmTnbesJ2" role="3cqZAp">
+          <node concept="2OqwBi" id="YBmTnbet3q" role="3clFbG">
+            <node concept="37vLTw" id="YBmTnbesN$" role="2Oq$k0">
+              <ref role="3cqZAo" node="YBmTnbesNy" resolve="instance" />
+            </node>
+            <node concept="liA8E" id="YBmTnbevdP" role="2OqNvi">
+              <ref role="37wK5l" to="exr9:~EditorSettings.setVerticalBound(int)" resolve="setVerticalBound" />
+              <node concept="3cmrfG" id="YBmTnbeveC" role="37wK5m">
+                <property role="3cmrfH" value="500" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
