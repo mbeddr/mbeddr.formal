@@ -20,6 +20,7 @@
         <property id="3226630706270020326" name="createdBy" index="0ke_I" />
         <property id="3226630706269685486" name="id" index="0lsPA" />
         <child id="3226630706270047943" name="kind" index="0nOlf" />
+        <child id="6025137760892668610" name="attributes" index="2FklKs" />
         <child id="4908298719893728423" name="title" index="1QQeG9" />
       </concept>
       <concept id="4908298719893728417" name="com.mbeddr.formal.req.base.structure.RequirementDocument" flags="ng" index="1QQeGf">
@@ -29,6 +30,9 @@
     <language id="434b2bfb-bd7a-47c9-bced-b445035e6d96" name="com.mbeddr.formal.safety.req">
       <concept id="6251628050004698410" name="com.mbeddr.formal.safety.req.structure.FunctionalSafetyReqKind" flags="ng" index="2iDXIW">
         <child id="7998766141987827641" name="hazards" index="DABNk" />
+      </concept>
+      <concept id="1127970930597209652" name="com.mbeddr.formal.safety.req.structure.FTTIAttribute" flags="ng" index="34$vQx">
+        <property id="1127970930597209653" name="value" index="34$vQw" />
       </concept>
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
@@ -71,6 +75,9 @@
         <node concept="19SUe$" id="7L33HENduwk" role="19SJt6">
           <property role="19SUeA" value="Ensure airbag deploys when crash detected" />
         </node>
+      </node>
+      <node concept="34$vQx" id="YBmTnbejfj" role="2FklKs">
+        <property role="34$vQw" value="20" />
       </node>
     </node>
   </node>
