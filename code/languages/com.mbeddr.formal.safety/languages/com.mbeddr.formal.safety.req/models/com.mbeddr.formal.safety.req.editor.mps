@@ -101,5 +101,20 @@
       <node concept="l2Vlx" id="41_NtXJpp48" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="YBmTnbdEoQ">
+    <ref role="1XX52x" to="30zx:YBmTnbdEoO" resolve="FTTIAttribute" />
+    <node concept="3EZMnI" id="YBmTnbdEoS" role="2wV5jI">
+      <node concept="3F0ifn" id="YBmTnbdEoT" role="3EZMnx">
+        <property role="3F0ifm" value="FTTI:" />
+      </node>
+      <node concept="3F0A7n" id="YBmTnbdEoU" role="3EZMnx">
+        <ref role="1NtTu8" to="30zx:YBmTnbdEoP" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="YBmTnbdEoX" role="3EZMnx">
+        <property role="3F0ifm" value="(ms)" />
+      </node>
+      <node concept="l2Vlx" id="YBmTnbdEoV" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
