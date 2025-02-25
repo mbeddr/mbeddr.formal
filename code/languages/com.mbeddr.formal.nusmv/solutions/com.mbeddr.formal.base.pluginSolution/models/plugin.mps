@@ -69,6 +69,7 @@
       <concept id="1203071646776" name="jetbrains.mps.lang.plugin.structure.ActionDeclaration" flags="ng" index="sE7Ow">
         <property id="1205250923097" name="caption" index="2uzpH1" />
         <property id="7458746815261976739" name="requiredAccess" index="2YLI8m" />
+        <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="394857668356997869" name="places" index="med8o" />
         <child id="1203083196627" name="updateBlock" index="tmbBb" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
@@ -79,6 +80,7 @@
       <concept id="1203082903663" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_AnActionEvent" flags="nn" index="tl45R" />
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
@@ -485,6 +487,7 @@
     <property role="TrG5h" value="fastenPlatformNotationGroup" />
     <property role="1XlLyE" value="true" />
     <property role="2f7twF" value="Notations" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="goNQ8fnbtc" role="ftER_">
       <node concept="10WQ6h" id="goNQ8fnbte" role="ftvYc">
         <property role="TrG5h" value="fastenProjectionModes" />
@@ -498,6 +501,7 @@
   <node concept="2DaZZR" id="6iM0fX1N45m" />
   <node concept="tC5Ba" id="53G_t0FcvfX">
     <property role="TrG5h" value="fastenPlatformEditorPopupGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="53G_t0FcvgP" role="ftER_">
       <node concept="2a7GMi" id="53G_t0FcvgS" role="ftvYc" />
       <node concept="10WQ6h" id="53G_t0FcvgX" role="ftvYc">
@@ -2495,6 +2499,7 @@
     <property role="2uzpH1" value="New FASTEN Model" />
     <property role="3GE5qa" value="new_actions" />
     <property role="2YLI8m" value="6u2MFnph2wS/none" />
+    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="26E6nZcFIuS" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
@@ -3630,6 +3635,7 @@
     <property role="3GE5qa" value="new_actions" />
     <property role="TrG5h" value="FASTENNewRootNode" />
     <property role="2uzpH1" value="New Fasten Root Node" />
+    <property role="1rBW0U" value="true" />
     <node concept="1DS2jV" id="BKGoaZVrgy" role="1NuT2Z">
       <property role="TrG5h" value="project" />
       <ref role="1DUlNI" to="qq03:~MPSCommonDataKeys.MPS_PROJECT" resolve="MPS_PROJECT" />
