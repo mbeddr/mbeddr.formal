@@ -75,6 +75,7 @@
     <property role="TrG5h" value="Hazards List" />
     <node concept="UfucO" id="1noKC0JTP7j" role="UfqWl">
       <property role="Ufuh2" value="1.0" />
+      <property role="TrG5h" value="acc_hazards" />
       <node concept="19SGf9" id="1noKC0JUE3s" role="Ufuh7">
         <node concept="19SUe$" id="50Wzfz4tjo6" role="19SJt6">
           <property role="19SUeA" value="Initial version" />
@@ -109,6 +110,7 @@
     <node concept="UfucO" id="50Wzfz4t_G$" role="UfqWl">
       <property role="Ufuh2" value="1.1" />
       <property role="Ufuh4" value="12.12.2022" />
+      <property role="TrG5h" value="acc_hazards" />
       <node concept="UfqM7" id="2oRUTT_NjqE" role="Uafsf" />
       <node concept="2kir$l" id="50Wzfz4t_GI" role="UcA9x">
         <property role="2kiMve" value="_010_patterns_catalogue" />
