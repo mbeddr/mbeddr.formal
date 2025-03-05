@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:4f9ae998-716c-48b6-80cb-8b1a80e5dcd8(_010_features._200_structured_assurance_cases_confidence_acp)" content="header">
+  <persistence version="9" />
+  <languages>
+    <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
+  </languages>
+  <imports />
+</model>
+
