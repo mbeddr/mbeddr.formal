@@ -65,9 +65,6 @@
       <concept id="8182547171709738802" name="jetbrains.mps.lang.quotation.structure.NodeBuilderList" flags="nn" index="36be1Y">
         <child id="8182547171709738803" name="nodes" index="36be1Z" />
       </concept>
-      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
-        <child id="8182547171709752112" name="expression" index="36biLW" />
-      </concept>
     </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="1158700664498" name="jetbrains.mps.lang.actions.structure.NodeFactories" flags="ng" index="37WguZ">
@@ -119,7 +116,7 @@
                     <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
                     <node concept="WxPPo" id="4eD_5l3gm4I" role="28ntcv">
                       <node concept="Xl_RD" id="4eD_5l3gm4H" role="WxPPp">
-                        <property role="Xl_RC" value="G-C.01" />
+                        <property role="Xl_RC" value="ACP.ToDo" />
                       </node>
                     </node>
                   </node>
@@ -136,24 +133,68 @@
                               <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
                               <node concept="WxPPo" id="4eD_5l3gmPF" role="28ntcv">
                                 <node concept="Xl_RD" id="4eD_5l3gmPE" role="WxPPp">
-                                  <property role="Xl_RC" value="All defeaters for \n" />
+                                  <property role="Xl_RC" value="Sufficient confidence exists in\n" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2pJPED" id="1OwxQiTlDUn" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="1OwxQiTlDUo" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="WxPPo" id="1OwxQiTlDUp" role="28ntcv">
+                                <node concept="Xl_RD" id="1OwxQiTlDUq" role="WxPPp">
+                                  <property role="Xl_RC" value="ToDo: choose one of [[ \n" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2pJPED" id="1OwxQiTlI4Q" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="1OwxQiTlI4R" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="WxPPo" id="1OwxQiTlI4S" role="28ntcv">
+                                <node concept="Xl_RD" id="1OwxQiTlI4T" role="WxPPp">
+                                  <property role="Xl_RC" value="  - context appropriateness / \n" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2pJPED" id="1OwxQiTlGxs" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="1OwxQiTlGxt" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="WxPPo" id="1OwxQiTlGxu" role="28ntcv">
+                                <node concept="Xl_RD" id="1OwxQiTlGxv" role="WxPPp">
+                                  <property role="Xl_RC" value="  - asserted inference / \n" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2pJPED" id="1OwxQiTlGxw" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="1OwxQiTlGxx" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="WxPPo" id="1OwxQiTlGxy" role="28ntcv">
+                                <node concept="Xl_RD" id="1OwxQiTlGxz" role="WxPPp">
+                                  <property role="Xl_RC" value="  - asserted solution ]]\n" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2pJPED" id="1OwxQiTlE04" role="36be1Z">
+                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                            <node concept="2pJxcG" id="1OwxQiTlE05" role="2pJxcM">
+                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                              <node concept="WxPPo" id="1OwxQiTlE06" role="28ntcv">
+                                <node concept="Xl_RD" id="1OwxQiTlE07" role="WxPPp">
+                                  <property role="Xl_RC" value="at " />
                                 </node>
                               </node>
                             </node>
                           </node>
                           <node concept="2pJPED" id="4eD_5l3gn2d" role="36be1Z">
                             <ref role="2pJxaS" to="kqaf:4lbNCDmPb8A" resolve="AcpRefWord" />
-                          </node>
-                          <node concept="2pJPED" id="4eD_5l3gn9M" role="36be1Z">
-                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                            <node concept="2pJxcG" id="4eD_5l3gncv" role="2pJxcM">
-                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                              <node concept="WxPPo" id="4eD_5l3gnfc" role="28ntcv">
-                                <node concept="Xl_RD" id="4eD_5l3gnfb" role="WxPPp">
-                                  <property role="Xl_RC" value="\n have been eliminated" />
-                                </node>
-                              </node>
-                            </node>
                           </node>
                         </node>
                       </node>
@@ -174,370 +215,6 @@
               <node concept="TSZUe" id="4lbNCDmP9YV" role="2OqNvi">
                 <node concept="37vLTw" id="4lbNCDmPttO" role="25WWJ7">
                   <ref role="3cqZAo" node="4lbNCDmPttH" resolve="top" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="4lbNCDmPuhF" role="3cqZAp">
-            <node concept="3cpWsn" id="4lbNCDmPuhG" role="3cpWs9">
-              <property role="TrG5h" value="strategy" />
-              <node concept="3Tqbb2" id="4lbNCDmPu3C" role="1tU5fm">
-                <ref role="ehGHo" to="py52:3GRi4m$rlnF" resolve="Strategy" />
-              </node>
-              <node concept="2pJPEk" id="4eD_5l3gry7" role="33vP2m">
-                <node concept="2pJPED" id="4eD_5l3gry8" role="2pJPEn">
-                  <ref role="2pJxaS" to="py52:3GRi4m$rlnF" resolve="Strategy" />
-                  <node concept="2pJxcG" id="4eD_5l3gry9" role="2pJxcM">
-                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="WxPPo" id="4eD_5l3grya" role="28ntcv">
-                      <node concept="Xl_RD" id="4eD_5l3gryb" role="WxPPp">
-                        <property role="Xl_RC" value="S01" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2pIpSj" id="4eD_5l3gryc" role="2pJxcM">
-                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
-                    <node concept="2pJPED" id="4eD_5l3gryd" role="28nt2d">
-                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                      <node concept="2pIpSj" id="4eD_5l3grye" role="2pJxcM">
-                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
-                        <node concept="36be1Y" id="4eD_5l3gryf" role="28nt2d">
-                          <node concept="2pJPED" id="4eD_5l3gryg" role="36be1Z">
-                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                            <node concept="2pJxcG" id="4eD_5l3gryh" role="2pJxcM">
-                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                              <node concept="WxPPo" id="4eD_5l3gryi" role="28ntcv">
-                                <node concept="Xl_RD" id="4eD_5l3gryj" role="WxPPp">
-                                  <property role="Xl_RC" value="Argument on rebutting, \nundercutting and\nundermining defeaters." />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4lbNCDmPEoC" role="3cqZAp">
-            <node concept="2OqwBi" id="4lbNCDmPHBx" role="3clFbG">
-              <node concept="2OqwBi" id="4lbNCDmPFfV" role="2Oq$k0">
-                <node concept="1r4Lsj" id="4lbNCDmPEoB" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="4lbNCDmPFLN" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="4lbNCDmPJGG" role="2OqNvi">
-                <node concept="37vLTw" id="4lbNCDmPJSb" role="25WWJ7">
-                  <ref role="3cqZAo" node="4lbNCDmPuhG" resolve="strategy" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="4lbNCDmPBvh" role="3cqZAp">
-            <node concept="3cpWsn" id="4lbNCDmPBvi" role="3cpWs9">
-              <property role="TrG5h" value="rebutting" />
-              <node concept="3Tqbb2" id="4lbNCDmPBvj" role="1tU5fm">
-                <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
-              </node>
-              <node concept="2pJPEk" id="4eD_5l3gvXG" role="33vP2m">
-                <node concept="2pJPED" id="4eD_5l3gvXH" role="2pJPEn">
-                  <ref role="2pJxaS" to="py52:3GRi4m$qNtH" resolve="Goal" />
-                  <node concept="2pJxcG" id="4eD_5l3gvXI" role="2pJxcM">
-                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="WxPPo" id="4eD_5l3gvXJ" role="28ntcv">
-                      <node concept="Xl_RD" id="4eD_5l3gvXK" role="WxPPp">
-                        <property role="Xl_RC" value="G-C.02" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2pIpSj" id="4eD_5l3gvXL" role="2pJxcM">
-                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
-                    <node concept="2pJPED" id="4eD_5l3gvXM" role="28nt2d">
-                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                      <node concept="2pIpSj" id="4eD_5l3gvXN" role="2pJxcM">
-                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
-                        <node concept="36be1Y" id="4eD_5l3gvXO" role="28nt2d">
-                          <node concept="2pJPED" id="4eD_5l3gvXP" role="36be1Z">
-                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                            <node concept="2pJxcG" id="4eD_5l3gvXQ" role="2pJxcM">
-                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                              <node concept="WxPPo" id="4eD_5l3gvXR" role="28ntcv">
-                                <node concept="Xl_RD" id="4eD_5l3gvXS" role="WxPPp">
-                                  <property role="Xl_RC" value="All rebubtting \ndefeaters have \nbeen eliminated." />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4lbNCDmPrc5" role="3cqZAp">
-            <node concept="2OqwBi" id="4lbNCDmPrc6" role="3clFbG">
-              <node concept="2OqwBi" id="4lbNCDmPrc7" role="2Oq$k0">
-                <node concept="1r4Lsj" id="4lbNCDmPrc8" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="4lbNCDmPrc9" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="4lbNCDmPrca" role="2OqNvi">
-                <node concept="37vLTw" id="4lbNCDmPLeM" role="25WWJ7">
-                  <ref role="3cqZAo" node="4lbNCDmPBvi" resolve="rebutting" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="4lbNCDmPvk4" role="3cqZAp">
-            <node concept="3cpWsn" id="4lbNCDmPvk5" role="3cpWs9">
-              <property role="TrG5h" value="undercutting" />
-              <node concept="3Tqbb2" id="4lbNCDmPuRc" role="1tU5fm">
-                <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
-              </node>
-              <node concept="2pJPEk" id="4eD_5l3g_3e" role="33vP2m">
-                <node concept="2pJPED" id="4eD_5l3g_3f" role="2pJPEn">
-                  <ref role="2pJxaS" to="py52:3GRi4m$qNtH" resolve="Goal" />
-                  <node concept="2pJxcG" id="4eD_5l3g_3g" role="2pJxcM">
-                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="WxPPo" id="4eD_5l3g_3h" role="28ntcv">
-                      <node concept="Xl_RD" id="4eD_5l3g_3i" role="WxPPp">
-                        <property role="Xl_RC" value="G-C.01" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2pIpSj" id="4eD_5l3g_3j" role="2pJxcM">
-                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
-                    <node concept="2pJPED" id="4eD_5l3g_3k" role="28nt2d">
-                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                      <node concept="2pIpSj" id="4eD_5l3g_3l" role="2pJxcM">
-                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
-                        <node concept="36be1Y" id="4eD_5l3g_3m" role="28nt2d">
-                          <node concept="2pJPED" id="4eD_5l3g_3n" role="36be1Z">
-                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                            <node concept="2pJxcG" id="4eD_5l3g_3o" role="2pJxcM">
-                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                              <node concept="WxPPo" id="4eD_5l3g_3p" role="28ntcv">
-                                <node concept="Xl_RD" id="4eD_5l3g_3q" role="WxPPp">
-                                  <property role="Xl_RC" value="All undercutting \ndefeaters have \nbeen eliminated." />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4lbNCDmPrJ4" role="3cqZAp">
-            <node concept="2OqwBi" id="4lbNCDmPrJ5" role="3clFbG">
-              <node concept="2OqwBi" id="4lbNCDmPrJ6" role="2Oq$k0">
-                <node concept="1r4Lsj" id="4lbNCDmPrJ7" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="4lbNCDmPrJ8" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="4lbNCDmPrJ9" role="2OqNvi">
-                <node concept="37vLTw" id="4lbNCDmPvka" role="25WWJ7">
-                  <ref role="3cqZAo" node="4lbNCDmPvk5" resolve="undercutting" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="4lbNCDmPw$w" role="3cqZAp">
-            <node concept="3cpWsn" id="4lbNCDmPw$x" role="3cpWs9">
-              <property role="TrG5h" value="undermining" />
-              <node concept="3Tqbb2" id="4lbNCDmPvUr" role="1tU5fm">
-                <ref role="ehGHo" to="py52:3GRi4m$qNtH" resolve="Goal" />
-              </node>
-              <node concept="2pJPEk" id="4eD_5l3gEfn" role="33vP2m">
-                <node concept="2pJPED" id="4eD_5l3gEfo" role="2pJPEn">
-                  <ref role="2pJxaS" to="py52:3GRi4m$qNtH" resolve="Goal" />
-                  <node concept="2pJxcG" id="4eD_5l3gEfp" role="2pJxcM">
-                    <ref role="2pJxcJ" to="tpck:h0TrG11" resolve="name" />
-                    <node concept="WxPPo" id="4eD_5l3gEfq" role="28ntcv">
-                      <node concept="Xl_RD" id="4eD_5l3gEfr" role="WxPPp">
-                        <property role="Xl_RC" value="G-C.04" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2pIpSj" id="4eD_5l3gEfs" role="2pJxcM">
-                    <ref role="2pIpSl" to="py52:3GRi4m$qYoV" resolve="text" />
-                    <node concept="2pJPED" id="4eD_5l3gEft" role="28nt2d">
-                      <ref role="2pJxaS" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-                      <node concept="2pIpSj" id="4eD_5l3gEfu" role="2pJxcM">
-                        <ref role="2pIpSl" to="87nw:2dWzqxEBBFI" resolve="words" />
-                        <node concept="36be1Y" id="4eD_5l3gEfv" role="28nt2d">
-                          <node concept="2pJPED" id="4eD_5l3gEfw" role="36be1Z">
-                            <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
-                            <node concept="2pJxcG" id="4eD_5l3gEfx" role="2pJxcM">
-                              <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
-                              <node concept="WxPPo" id="4eD_5l3gEfy" role="28ntcv">
-                                <node concept="Xl_RD" id="4eD_5l3gEfz" role="WxPPp">
-                                  <property role="Xl_RC" value="All undermining \ndefeaters have \nbeen eliminated." />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4lbNCDmPskW" role="3cqZAp">
-            <node concept="2OqwBi" id="4lbNCDmPskX" role="3clFbG">
-              <node concept="2OqwBi" id="4lbNCDmPskY" role="2Oq$k0">
-                <node concept="1r4Lsj" id="4lbNCDmPskZ" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="4lbNCDmPsl0" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="4lbNCDmPsl1" role="2OqNvi">
-                <node concept="37vLTw" id="4lbNCDmPw$A" role="25WWJ7">
-                  <ref role="3cqZAo" node="4lbNCDmPw$x" resolve="undermining" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4lbNCDmPyqt" role="3cqZAp">
-            <node concept="2OqwBi" id="4lbNCDmP$KF" role="3clFbG">
-              <node concept="2OqwBi" id="4lbNCDmPzen" role="2Oq$k0">
-                <node concept="1r4Lsj" id="4lbNCDmPyqs" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="4lbNCDmPzqJ" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="4lbNCDmPAni" role="2OqNvi">
-                <node concept="2pJPEk" id="4lbNCDmPAw9" role="25WWJ7">
-                  <node concept="2pJPED" id="4lbNCDmPLyN" role="2pJPEn">
-                    <ref role="2pJxaS" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
-                    <node concept="2pIpSj" id="4lbNCDmPLI$" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
-                      <node concept="36biLy" id="4lbNCDmPLUp" role="28nt2d">
-                        <node concept="37vLTw" id="4lbNCDmPLUG" role="36biLW">
-                          <ref role="3cqZAo" node="4lbNCDmPttH" resolve="top" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2pIpSj" id="4lbNCDmPM6t" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
-                      <node concept="36biLy" id="4lbNCDmPMgA" role="28nt2d">
-                        <node concept="37vLTw" id="4lbNCDmPMiF" role="36biLW">
-                          <ref role="3cqZAo" node="4lbNCDmPuhG" resolve="strategy" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4lbNCDmPMns" role="3cqZAp">
-            <node concept="2OqwBi" id="4lbNCDmPMnt" role="3clFbG">
-              <node concept="2OqwBi" id="4lbNCDmPMnu" role="2Oq$k0">
-                <node concept="1r4Lsj" id="4lbNCDmPMnv" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="4lbNCDmPMnw" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="4lbNCDmPMnx" role="2OqNvi">
-                <node concept="2pJPEk" id="4lbNCDmPMny" role="25WWJ7">
-                  <node concept="2pJPED" id="4lbNCDmPMnz" role="2pJPEn">
-                    <ref role="2pJxaS" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
-                    <node concept="2pIpSj" id="4lbNCDmPMn$" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
-                      <node concept="36biLy" id="4lbNCDmPMn_" role="28nt2d">
-                        <node concept="37vLTw" id="4lbNCDmPNqC" role="36biLW">
-                          <ref role="3cqZAo" node="4lbNCDmPuhG" resolve="strategy" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2pIpSj" id="4lbNCDmPMnB" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
-                      <node concept="36biLy" id="4lbNCDmPMnC" role="28nt2d">
-                        <node concept="37vLTw" id="4lbNCDmPNtB" role="36biLW">
-                          <ref role="3cqZAo" node="4lbNCDmPBvi" resolve="rebutting" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4lbNCDmPNwA" role="3cqZAp">
-            <node concept="2OqwBi" id="4lbNCDmPNwB" role="3clFbG">
-              <node concept="2OqwBi" id="4lbNCDmPNwC" role="2Oq$k0">
-                <node concept="1r4Lsj" id="4lbNCDmPNwD" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="4lbNCDmPNwE" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="4lbNCDmPNwF" role="2OqNvi">
-                <node concept="2pJPEk" id="4lbNCDmPNwG" role="25WWJ7">
-                  <node concept="2pJPED" id="4lbNCDmPNwH" role="2pJPEn">
-                    <ref role="2pJxaS" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
-                    <node concept="2pIpSj" id="4lbNCDmPNwI" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
-                      <node concept="36biLy" id="4lbNCDmPNwJ" role="28nt2d">
-                        <node concept="37vLTw" id="4lbNCDmPNwK" role="36biLW">
-                          <ref role="3cqZAo" node="4lbNCDmPuhG" resolve="strategy" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2pIpSj" id="4lbNCDmPNwL" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
-                      <node concept="36biLy" id="4lbNCDmPNwM" role="28nt2d">
-                        <node concept="37vLTw" id="4lbNCDmPQY0" role="36biLW">
-                          <ref role="3cqZAo" node="4lbNCDmPvk5" resolve="undercutting" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="4lbNCDmPOGB" role="3cqZAp">
-            <node concept="2OqwBi" id="4lbNCDmPOGC" role="3clFbG">
-              <node concept="2OqwBi" id="4lbNCDmPOGD" role="2Oq$k0">
-                <node concept="1r4Lsj" id="4lbNCDmPOGE" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="4lbNCDmPOGF" role="2OqNvi">
-                  <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
-                </node>
-              </node>
-              <node concept="TSZUe" id="4lbNCDmPOGG" role="2OqNvi">
-                <node concept="2pJPEk" id="4lbNCDmPOGH" role="25WWJ7">
-                  <node concept="2pJPED" id="4lbNCDmPOGI" role="2pJPEn">
-                    <ref role="2pJxaS" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
-                    <node concept="2pIpSj" id="4lbNCDmPOGJ" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:2ccN23odOzl" resolve="source" />
-                      <node concept="36biLy" id="4lbNCDmPOGK" role="28nt2d">
-                        <node concept="37vLTw" id="4lbNCDmPOGL" role="36biLW">
-                          <ref role="3cqZAo" node="4lbNCDmPuhG" resolve="strategy" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2pIpSj" id="4lbNCDmPOGM" role="2pJxcM">
-                      <ref role="2pIpSl" to="py52:2ccN23odOzm" resolve="target" />
-                      <node concept="36biLy" id="4lbNCDmPOGN" role="28nt2d">
-                        <node concept="37vLTw" id="4lbNCDmPVuW" role="36biLW">
-                          <ref role="3cqZAo" node="4lbNCDmPw$x" resolve="undermining" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
                 </node>
               </node>
             </node>

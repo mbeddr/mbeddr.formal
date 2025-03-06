@@ -52,11 +52,11 @@
       </concept>
       <concept id="1574221925581136308" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.Artefact" flags="ng" index="UfucO">
         <property id="1574221925581137602" name="versionId" index="Ufuh2" />
-        <property id="1574221925581137604" name="date" index="Ufuh4" />
+        <property id="1574221925581137604" name="creationDate" index="Ufuh4" />
         <child id="1574221925581862287" name="events" index="Uafsf" />
         <child id="1574221925581496545" name="ressources" index="UcA9x" />
         <child id="1574221925581155844" name="relations" index="UfqM4" />
-        <child id="1574221925581137607" name="changes" index="Ufuh7" />
+        <child id="1574221925581137607" name="documentation" index="Ufuh7" />
       </concept>
       <concept id="1574221925581137623" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.FileRessource" flags="ng" index="Ufuhn" />
       <concept id="1574221925581137626" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.UrlRessource" flags="ng" index="Ufuhq" />
@@ -75,6 +75,7 @@
     <property role="TrG5h" value="Hazards List" />
     <node concept="UfucO" id="1noKC0JTP7j" role="UfqWl">
       <property role="Ufuh2" value="1.0" />
+      <property role="TrG5h" value="acc_hazards" />
       <node concept="19SGf9" id="1noKC0JUE3s" role="Ufuh7">
         <node concept="19SUe$" id="50Wzfz4tjo6" role="19SJt6">
           <property role="19SUeA" value="Initial version" />
@@ -109,6 +110,8 @@
     <node concept="UfucO" id="50Wzfz4t_G$" role="UfqWl">
       <property role="Ufuh2" value="1.1" />
       <property role="Ufuh4" value="12.12.2022" />
+      <property role="TrG5h" value="acc_hazards" />
+      <node concept="UfqM7" id="2oRUTT_NjqE" role="Uafsf" />
       <node concept="2kir$l" id="50Wzfz4t_GI" role="UcA9x">
         <property role="2kiMve" value="_010_patterns_catalogue" />
         <property role="2kiLe9" value="r:975e4969-1ce0-4ded-8867-b40b46ebd140" />
@@ -130,6 +133,7 @@
     <property role="TrG5h" value="Safety Requirements" />
     <node concept="UfucO" id="1noKC0JW3lC" role="UfqWl">
       <property role="Ufuh2" value="1.0" />
+      <property role="TrG5h" value="Safety Requirements - Initial" />
       <node concept="19SGf9" id="1noKC0JW3lE" role="Ufuh7">
         <node concept="19SUe$" id="1noKC0JW3lF" role="19SJt6">
           <property role="19SUeA" value="initial version" />
@@ -140,23 +144,24 @@
   </node>
   <node concept="UfucN" id="1noKC0JX6BM">
     <property role="TrG5h" value="Test Cases" />
-    <node concept="UfucO" id="1noKC0JX6BN" role="UfqWl">
-      <property role="Ufuh2" value="1.0" />
-      <node concept="Ufuhn" id="1noKC0JX6BT" role="UcA9x">
-        <property role="TrG5h" value="test_files" />
-        <property role="UfqYJ" value="TF01" />
+    <node concept="UfucO" id="2oRUTT_PcDO" role="UfqWl" />
+    <node concept="UfucO" id="2oRUTT_Njqy" role="UfqWl">
+      <property role="Ufuh2" value="0.1" />
+      <node concept="19SGf9" id="2oRUTT_Njqz" role="Ufuh7">
+        <node concept="19SUe$" id="2oRUTT_Njq$" role="19SJt6">
+          <property role="19SUeA" value="ddd " />
+        </node>
       </node>
-      <node concept="UfqXn" id="1noKC0JX6BV" role="UfqM4" />
+      <node concept="UfqM7" id="2oRUTT_Njq_" role="Uafsf" />
+      <node concept="UfqXn" id="2oRUTT_NjqA" role="UfqM4">
+        <property role="TrG5h" value="ee" />
+      </node>
     </node>
   </node>
   <node concept="UfucN" id="62usmIhUc2W">
     <property role="TrG5h" value="Test Scenarios" />
     <node concept="UfucO" id="62usmIhUc2X" role="UfqWl">
       <property role="Ufuh2" value="0.1" />
-      <node concept="UfqM7" id="62usmIhUc33" role="Uafsf">
-        <property role="UfqMa" value="Thu Mar 10 00:00:00 CET 2022" />
-        <property role="UfqYJ" value="99" />
-      </node>
       <node concept="Ufuhn" id="62usmIhUc35" role="UcA9x">
         <property role="TrG5h" value="hara" />
         <property role="UfqYJ" value="0.3" />

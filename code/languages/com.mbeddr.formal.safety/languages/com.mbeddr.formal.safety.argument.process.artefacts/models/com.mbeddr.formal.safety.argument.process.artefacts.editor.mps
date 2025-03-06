@@ -21,6 +21,7 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
       <concept id="1164052439493" name="jetbrains.mps.lang.editor.structure.CellMenuPart_AbstractGroup_MatchingText" flags="in" index="6VE3a" />
@@ -53,6 +54,10 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -330,10 +335,10 @@
           <node concept="VPM3Z" id="1noKC0JTis2" role="3F10Kt" />
           <node concept="3XFhqQ" id="1noKC0JTisg" role="3EZMnx" />
           <node concept="3F0ifn" id="1noKC0JTism" role="3EZMnx">
-            <property role="3F0ifm" value="date:" />
+            <property role="3F0ifm" value="creation date:" />
           </node>
           <node concept="3F0A7n" id="5YWtEMPIj6Y" role="3EZMnx">
-            <ref role="1NtTu8" to="qsmp:1noKC0JTir4" resolve="date" />
+            <ref role="1NtTu8" to="qsmp:1noKC0JTir4" resolve="creationDate" />
           </node>
           <node concept="l2Vlx" id="1noKC0JTis5" role="2iSdaV" />
         </node>
@@ -341,10 +346,10 @@
           <node concept="VPM3Z" id="1noKC0JU7Ys" role="3F10Kt" />
           <node concept="3XFhqQ" id="1noKC0JU80U" role="3EZMnx" />
           <node concept="3F0ifn" id="1noKC0JU810" role="3EZMnx">
-            <property role="3F0ifm" value="changes:" />
+            <property role="3F0ifm" value="documentation:" />
           </node>
           <node concept="3F1sOY" id="1noKC0JU818" role="3EZMnx">
-            <ref role="1NtTu8" to="qsmp:1noKC0JTir7" resolve="changes" />
+            <ref role="1NtTu8" to="qsmp:1noKC0JTir7" resolve="documentation" />
           </node>
           <node concept="3F0ifn" id="1noKC0JU81i" role="3EZMnx">
             <property role="3F0ifm" value=";" />
@@ -584,6 +589,12 @@
         <node concept="3F0ifn" id="1noKC0JUrsQ" role="3EZMnx">
           <property role="3F0ifm" value="," />
         </node>
+        <node concept="3F0A7n" id="2oRUTT_Pe$B" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="2oRUTT_Pexq" role="3EZMnx">
+          <property role="3F0ifm" value="," />
+        </node>
         <node concept="3F0ifn" id="1noKC0JUrv8" role="3EZMnx">
           <property role="3F0ifm" value="version:" />
         </node>
@@ -592,6 +603,27 @@
         </node>
         <node concept="18a60v" id="50Wzfz4tkhB" role="3EZMnx">
           <node concept="VPM3Z" id="50Wzfz4tkhD" role="3F10Kt" />
+        </node>
+      </node>
+    </node>
+    <node concept="3EZMnI" id="2oRUTT_PfUh" role="6VMZX">
+      <node concept="2iRkQZ" id="2oRUTT_PfUi" role="2iSdaV" />
+      <node concept="3F0ifn" id="2oRUTT_PfUj" role="3EZMnx">
+        <property role="3F0ifm" value="Help: an artefact corresponds to a distinguishable concrete" />
+        <node concept="VechU" id="2oRUTT_PfUk" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2oRUTT_PfUl" role="3EZMnx">
+        <property role="3F0ifm" value="and individual unit of data to manage in an assurance project" />
+        <node concept="VechU" id="2oRUTT_PfUm" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2oRUTT_PfUn" role="3EZMnx">
+        <property role="3F0ifm" value="(e.g. hazard log version 1, revised and extended version of hazard log)" />
+        <node concept="VechU" id="2oRUTT_PfUo" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
         </node>
       </node>
     </node>
@@ -654,15 +686,8 @@
     <property role="3GE5qa" value="" />
     <ref role="1XX52x" to="qsmp:1noKC0JTi6N" resolve="ArtefactDefinition" />
     <node concept="3EZMnI" id="1noKC0JTmQr" role="2wV5jI">
-      <node concept="3EZMnI" id="1noKC0JTmQy" role="3EZMnx">
-        <node concept="VPM3Z" id="1noKC0JTmQ$" role="3F10Kt" />
-        <node concept="3F0ifn" id="1noKC0JTmQG" role="3EZMnx">
-          <property role="3F0ifm" value="Artefact Definition:" />
-        </node>
-        <node concept="3F0A7n" id="1noKC0JTmQQ" role="3EZMnx">
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-        </node>
-        <node concept="2iRfu4" id="1noKC0JTmQB" role="2iSdaV" />
+      <node concept="PMmxH" id="5t37uj6_F6j" role="3EZMnx">
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
       </node>
       <node concept="3F0ifn" id="1noKC0JTmQU" role="3EZMnx" />
       <node concept="3F2HdR" id="1noKC0JTmR9" role="3EZMnx">
@@ -671,6 +696,27 @@
         <node concept="VPM3Z" id="1noKC0JTmRd" role="3F10Kt" />
       </node>
       <node concept="2iRkQZ" id="1noKC0JTmQu" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="2oRUTT_Pe_K" role="6VMZX">
+      <node concept="2iRkQZ" id="2oRUTT_Pe_L" role="2iSdaV" />
+      <node concept="3F0ifn" id="2oRUTT_Pe_J" role="3EZMnx">
+        <property role="3F0ifm" value="Help: an artefact definition corresponds to a distinguishable " />
+        <node concept="VechU" id="2oRUTT_Pe_N" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2oRUTT_Pe_M" role="3EZMnx">
+        <property role="3F0ifm" value="abstract unit of data to manage in an assurance project" />
+        <node concept="VechU" id="2oRUTT_Pe_O" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2oRUTT_Pe_Q" role="3EZMnx">
+        <property role="3F0ifm" value="(e.g. hazard log, requirements document, tests)" />
+        <node concept="VechU" id="2oRUTT_Pe_R" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="1noKC0JTmTh">

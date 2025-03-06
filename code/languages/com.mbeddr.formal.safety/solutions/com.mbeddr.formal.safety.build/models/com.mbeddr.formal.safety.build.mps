@@ -10883,7 +10883,7 @@
             <ref role="3bR37D" node="2dsc7GndbM" resolve="com.mpsbasics.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="6_254RlovI7" role="3bR37C">
+        <node concept="1SiIV0" id="2FavYGw23MC" role="3bR37C">
           <node concept="1Busua" id="6_254RlovI8" role="1SiIV1">
             <ref role="1Busuk" node="6FJpOMBsZUh" resolve="com.mpsbasics.words.generic" />
           </node>
@@ -11569,6 +11569,11 @@
         <node concept="1SiIV0" id="2dsc7GnC5q" role="3bR37C">
           <node concept="3bR9La" id="2dsc7GnC5r" role="1SiIV1">
             <ref role="3bR37D" node="2dsc7GndbM" resolve="com.mpsbasics.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1OwxQiTf6J8" role="3bR37C">
+          <node concept="3bR9La" id="1OwxQiTf6J9" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
           </node>
         </node>
       </node>
@@ -15022,6 +15027,16 @@
         <node concept="1SiIV0" id="2FavYGw23UM" role="3bR37C">
           <node concept="3bR9La" id="2FavYGw23UN" role="1SiIV1">
             <ref role="3bR37D" node="7FGTN4LGIpd" resolve="com.mbeddr.formal.safety.cae" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2oRUTT_RtDX" role="3bR37C">
+          <node concept="3bR9La" id="2oRUTT_RtDY" role="1SiIV1">
+            <ref role="3bR37D" node="5YWtEMPJWqd" resolve="com.mbeddr.formal.safety.argument.process.artefacts" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="2oRUTT_RLOm" role="3bR37C">
+          <node concept="3bR9La" id="2oRUTT_RLOn" role="1SiIV1">
+            <ref role="3bR37D" node="4eD_5l3ft1H" resolve="com.mbeddr.formal.safety.gsn.confidence.acp" />
           </node>
         </node>
       </node>

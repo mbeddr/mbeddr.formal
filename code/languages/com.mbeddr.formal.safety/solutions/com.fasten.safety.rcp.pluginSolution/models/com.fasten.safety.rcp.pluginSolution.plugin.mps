@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:4be4bb23-fdcf-470e-a82e-9908d5748cb4(com.fasten.safety.rcp.pluginSolution.plugin)">
   <persistence version="9" />
-  <attribute name="doNotGenerate" value="false" />
   <languages>
     <use id="1f1b4a81-113d-4b88-9b67-2bae3e4f8128" name="com.mbeddr.mpsutil.projectview" version="1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
@@ -37,6 +36,10 @@
     <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
     <import index="3xw7" ref="r:03075676-dfa1-4f4e-aef4-a178c9f0fb17(com.mbeddr.formal.safety.argument.spi.structure)" />
     <import index="1ob6" ref="r:f44404ed-5270-44f9-8e19-281b0df5835d(com.mpsbasics.pdfexporter.structure)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="s9o5" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor(MPS.IDEA/)" />
+    <import index="qsmp" ref="r:061fba79-f31c-4775-8e2b-fd83f8c73bfe(com.mbeddr.formal.safety.argument.process.artefacts.structure)" />
+    <import index="kqaf" ref="r:6cc86fc4-3f69-4213-8f49-ef9fcbc7cb5f(com.mbeddr.formal.safety.gsn.confidence.acp.structure)" />
     <import index="cdmc" ref="r:d4129e7d-34b5-4657-8b81-f5b9fbe93567(com.mbeddr.formal.safety.cae.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
@@ -105,8 +108,12 @@
       <concept id="1204478074808" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_MPSProject" flags="nn" index="1KvdUw" />
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
+      <concept id="481983775135178851" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginInitBlock" flags="in" index="2uRRBj" />
       <concept id="481983775135178834" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginDeclaration" flags="ng" index="2uRRBy">
         <child id="481983775135178836" name="initBlock" index="2uRRB$" />
+      </concept>
+      <concept id="481983775135178840" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginDeclaration" flags="ng" index="2uRRBC">
+        <child id="481983775135178842" name="initBlock" index="2uRRBE" />
       </concept>
       <concept id="481983775135178825" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginInitBlock" flags="in" index="2uRRBT" />
       <concept id="7520713872864775836" name="jetbrains.mps.lang.plugin.standalone.structure.StandalonePluginDescriptor" flags="ng" index="2DaZZR" />
@@ -174,6 +181,9 @@
       </concept>
       <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
         <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -1483,6 +1493,29 @@
               </node>
             </node>
           </node>
+          <node concept="tC5Ba" id="2oRUTT_RKRQ" role="ftvYc">
+            <property role="TrG5h" value="Confidence" />
+            <property role="1XlLyE" value="true" />
+            <property role="2f7twF" value="Confidence" />
+            <property role="2pbE17" value="C" />
+            <node concept="ftmFs" id="2oRUTT_RKRR" role="ftER_">
+              <node concept="tCFHf" id="2oRUTT_RKRS" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="2oRUTT_RKRT" role="2J__8u">
+                  <property role="Xl_RC" value="Confidence Argument (ACP)" />
+                </node>
+                <node concept="35c_gC" id="2oRUTT_RKRU" role="2J__8u">
+                  <ref role="35c_gD" to="kqaf:3bh1RFvGk3l" resolve="ConfidenceArgument" />
+                </node>
+                <node concept="37shsh" id="2oRUTT_RKRV" role="2J__8u">
+                  <node concept="1dCxOk" id="2oRUTT_RKXU" role="37shsm">
+                    <property role="1XweGW" value="b80b29fe-1cc4-4054-aee5-cb5c2049985a" />
+                    <property role="1XxBO9" value="fasten.safety.gsn.confidence" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="tC5Ba" id="75npNYZG39B" role="ftvYc">
             <property role="TrG5h" value="Runtime" />
             <property role="1XlLyE" value="true" />
@@ -1519,6 +1552,45 @@
                     <property role="1XxBO9" value="fasten.safety.gsn.runtime" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="tC5Ba" id="2oRUTT_RsET" role="ftvYc">
+        <property role="TrG5h" value="ProcessModels" />
+        <property role="1XlLyE" value="true" />
+        <property role="2f7twF" value="Process Models" />
+        <property role="1rdrE6" value="true" />
+        <property role="2pbE17" value="P" />
+        <node concept="ftmFs" id="2oRUTT_RsEU" role="ftER_">
+          <node concept="tCFHf" id="2oRUTT_RsEV" role="ftvYc">
+            <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+            <node concept="Xl_RD" id="2oRUTT_RsEW" role="2J__8u">
+              <property role="Xl_RC" value="Organization Model" />
+            </node>
+            <node concept="35c_gC" id="2oRUTT_RsEX" role="2J__8u">
+              <ref role="35c_gD" to="qsmp:1noKC0JTmPI" resolve="Organization" />
+            </node>
+            <node concept="37shsh" id="2oRUTT_RsEY" role="2J__8u">
+              <node concept="1dCxOk" id="2oRUTT_RsNe" role="37shsm">
+                <property role="1XweGW" value="58430e3c-3d97-455c-a27e-8eeba7f8513e" />
+                <property role="1XxBO9" value="fasten.safety.gsn.artefacts" />
+              </node>
+            </node>
+          </node>
+          <node concept="tCFHf" id="2oRUTT_RsF0" role="ftvYc">
+            <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+            <node concept="Xl_RD" id="2oRUTT_RsF1" role="2J__8u">
+              <property role="Xl_RC" value="Artefact Definition" />
+            </node>
+            <node concept="35c_gC" id="2oRUTT_RsF2" role="2J__8u">
+              <ref role="35c_gD" to="qsmp:1noKC0JTi6N" resolve="ArtefactDefinition" />
+            </node>
+            <node concept="37shsh" id="2oRUTT_RsF3" role="2J__8u">
+              <node concept="1dCxOk" id="2oRUTT_RsNx" role="37shsm">
+                <property role="1XweGW" value="58430e3c-3d97-455c-a27e-8eeba7f8513e" />
+                <property role="1XxBO9" value="fasten.safety.gsn.artefacts" />
               </node>
             </node>
           </node>
@@ -1626,6 +1698,38 @@
     </node>
     <node concept="2flH9Z" id="2ToO$l38whw" role="2flH9W">
       <property role="2flH96" value="jetbrains.mps.ide.actions.NewSubTestModel_Action" />
+    </node>
+  </node>
+  <node concept="2uRRBC" id="YBmTnbejfn">
+    <property role="TrG5h" value="SetTextWidth" />
+    <node concept="2uRRBj" id="YBmTnbejfo" role="2uRRBE">
+      <node concept="3clFbS" id="YBmTnbejfp" role="2VODD2">
+        <node concept="3cpWs8" id="YBmTnbesNx" role="3cqZAp">
+          <node concept="3cpWsn" id="YBmTnbesNy" role="3cpWs9">
+            <property role="TrG5h" value="instance" />
+            <node concept="3uibUv" id="YBmTnbesN8" role="1tU5fm">
+              <ref role="3uigEE" to="exr9:~EditorSettings" resolve="EditorSettings" />
+            </node>
+            <node concept="2YIFZM" id="YBmTnbesNz" role="33vP2m">
+              <ref role="37wK5l" to="exr9:~EditorSettings.getInstance()" resolve="getInstance" />
+              <ref role="1Pybhc" to="exr9:~EditorSettings" resolve="EditorSettings" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="YBmTnbesJ2" role="3cqZAp">
+          <node concept="2OqwBi" id="YBmTnbet3q" role="3clFbG">
+            <node concept="37vLTw" id="YBmTnbesN$" role="2Oq$k0">
+              <ref role="3cqZAo" node="YBmTnbesNy" resolve="instance" />
+            </node>
+            <node concept="liA8E" id="YBmTnbevdP" role="2OqNvi">
+              <ref role="37wK5l" to="exr9:~EditorSettings.setVerticalBound(int)" resolve="setVerticalBound" />
+              <node concept="3cmrfG" id="YBmTnbeveC" role="37wK5m">
+                <property role="3cmrfH" value="500" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

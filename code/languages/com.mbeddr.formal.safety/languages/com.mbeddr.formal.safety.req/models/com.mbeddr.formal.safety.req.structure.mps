@@ -9,6 +9,7 @@
     <import index="z27p" ref="r:9796df7f-5d01-4a46-b1e4-58be8e3ac472(com.mbeddr.formal.req.base.structure)" />
     <import index="cjwq" ref="r:7e1f4da1-19b3-4ceb-bcab-0237eb7a50b7(com.mbeddr.formal.safety.hara.structure)" />
     <import index="bewr" ref="r:a5d87024-d7b0-459e-b0ec-a9c089196f41(com.mbeddr.formal.safety.stamp.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -128,6 +129,17 @@
       <property role="20kJfa" value="ucas" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" to="bewr:2rSUIGXuWez" resolve="ReferenceableActionDescriptionRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="YBmTnbdEoO">
+    <property role="EcuMT" value="1127970930597209652" />
+    <property role="TrG5h" value="FTTIAttribute" />
+    <property role="34LRSv" value="FTTI" />
+    <ref role="1TJDcQ" to="z27p:5et_HVSNcF1" resolve="RequirementAttributeBase" />
+    <node concept="1TJgyi" id="YBmTnbdEoP" role="1TKVEl">
+      <property role="IQ2nx" value="1127970930597209653" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>
