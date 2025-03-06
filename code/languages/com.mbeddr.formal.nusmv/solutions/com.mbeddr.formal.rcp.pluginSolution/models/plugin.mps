@@ -30,6 +30,7 @@
       </concept>
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
         <property id="1204991940915" name="caption" index="2f7twF" />
+        <property id="1213283637680" name="isPopup" index="1XlLyE" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -72,6 +73,7 @@
   <node concept="tC5Ba" id="5uW1px6ni3m">
     <property role="TrG5h" value="FASTENSMVActionsGroup" />
     <property role="2f7twF" value="New" />
+    <property role="1XlLyE" value="true" />
     <node concept="ftmFs" id="5uW1px6ni3n" role="ftER_">
       <node concept="tCFHf" id="26E6nZcCvUB" role="ftvYc">
         <ref role="tCJdB" to="8js5:5tRIc6mkOfA" resolve="FASTENNewModel" />

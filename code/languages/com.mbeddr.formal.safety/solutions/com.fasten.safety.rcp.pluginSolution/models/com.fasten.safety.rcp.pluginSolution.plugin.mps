@@ -36,11 +36,11 @@
     <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
     <import index="3xw7" ref="r:03075676-dfa1-4f4e-aef4-a178c9f0fb17(com.mbeddr.formal.safety.argument.spi.structure)" />
     <import index="1ob6" ref="r:f44404ed-5270-44f9-8e19-281b0df5835d(com.mpsbasics.pdfexporter.structure)" />
-    <import index="cdmc" ref="r:d4129e7d-34b5-4657-8b81-f5b9fbe93567(com.mbeddr.formal.safety.cae.structure)" />
+    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="s9o5" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor(MPS.IDEA/)" />
     <import index="qsmp" ref="r:061fba79-f31c-4775-8e2b-fd83f8c73bfe(com.mbeddr.formal.safety.argument.process.artefacts.structure)" />
     <import index="kqaf" ref="r:6cc86fc4-3f69-4213-8f49-ef9fcbc7cb5f(com.mbeddr.formal.safety.gsn.confidence.acp.structure)" />
-    <import index="s9o5" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor(MPS.IDEA/)" />
-    <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="cdmc" ref="r:d4129e7d-34b5-4657-8b81-f5b9fbe93567(com.mbeddr.formal.safety.cae.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -80,6 +80,7 @@
         <child id="1214307129846" name="getComponentBlock" index="2Um5zG" />
       </concept>
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <property id="1204991940915" name="caption" index="2f7twF" />
         <property id="1205160812895" name="mnemonic" index="2pbE17" />
         <property id="1217005992861" name="isInvisibleWhenDisabled" index="1rdrE6" />
@@ -929,12 +930,14 @@
         <property role="2f7twF" value="System Models" />
         <property role="1rdrE6" value="true" />
         <property role="2pbE17" value="S" />
+        <property role="22ra45" value="true" />
         <node concept="ftmFs" id="6KmRYnv7GEg" role="ftER_">
           <node concept="tC5Ba" id="26E6nZcB_nT" role="ftvYc">
             <property role="TrG5h" value="Requirements" />
             <property role="1XlLyE" value="true" />
             <property role="2f7twF" value="Requirements" />
             <property role="2pbE17" value="R" />
+            <property role="22ra45" value="true" />
             <node concept="ftmFs" id="26E6nZcB_pp" role="ftER_">
               <node concept="tCFHf" id="6KmRYnv7GER" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -971,6 +974,7 @@
                 <property role="1XlLyE" value="true" />
                 <property role="2f7twF" value="Scenarios" />
                 <property role="2pbE17" value="S" />
+                <property role="22ra45" value="true" />
                 <node concept="ftmFs" id="26E6nZcBEi_" role="ftER_">
                   <node concept="tCFHf" id="26E6nZcBEiC" role="ftvYc">
                     <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -1024,6 +1028,7 @@
                 <property role="1XlLyE" value="true" />
                 <property role="2f7twF" value="Operational Design Domain" />
                 <property role="2pbE17" value="O" />
+                <property role="22ra45" value="true" />
                 <node concept="ftmFs" id="7G1xrtoyAAE" role="ftER_">
                   <node concept="tCFHf" id="7G1xrtoyAAG" role="ftvYc">
                     <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -1049,6 +1054,7 @@
             <property role="1XlLyE" value="true" />
             <property role="2f7twF" value="Formal Models" />
             <property role="2pbE17" value="F" />
+            <property role="22ra45" value="true" />
             <node concept="ftmFs" id="26E6nZcB_ql" role="ftER_">
               <node concept="tCFHf" id="7A06dcUGIih" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -1087,6 +1093,7 @@
             <property role="1XlLyE" value="true" />
             <property role="2f7twF" value="System Models" />
             <property role="2pbE17" value="S" />
+            <property role="22ra45" value="true" />
             <node concept="ftmFs" id="4lJSf3LhyGI" role="ftER_">
               <node concept="tCFHf" id="4lJSf3LhyGJ" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -1119,6 +1126,7 @@
             <property role="1XlLyE" value="true" />
             <property role="2f7twF" value="STPA" />
             <property role="2pbE17" value="P" />
+            <property role="22ra45" value="true" />
             <node concept="ftmFs" id="7A06dcUGIjS" role="ftER_">
               <node concept="tCFHf" id="7A06dcUGIkw" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -1187,6 +1195,7 @@
             <property role="1XlLyE" value="true" />
             <property role="2f7twF" value="HARA" />
             <property role="2pbE17" value="H" />
+            <property role="22ra45" value="true" />
             <node concept="ftmFs" id="7A06dcUGLGK" role="ftER_">
               <node concept="tCFHf" id="7A06dcUGLGQ" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -1225,6 +1234,7 @@
             <property role="1XlLyE" value="true" />
             <property role="2f7twF" value="Requirements" />
             <property role="2pbE17" value="R" />
+            <property role="22ra45" value="true" />
             <node concept="ftmFs" id="7A06dcUGNoV" role="ftER_">
               <node concept="tCFHf" id="7A06dcUGNoW" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -1248,6 +1258,7 @@
             <property role="1XlLyE" value="true" />
             <property role="2f7twF" value="Safety Analyses" />
             <property role="2pbE17" value="L" />
+            <property role="22ra45" value="true" />
             <node concept="ftmFs" id="7A06dcUGP6j" role="ftER_">
               <node concept="tCFHf" id="7A06dcUGP6k" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -1370,6 +1381,7 @@
             <property role="1XlLyE" value="true" />
             <property role="2f7twF" value="Assurance Documentation" />
             <property role="2pbE17" value="D" />
+            <property role="22ra45" value="true" />
             <node concept="ftmFs" id="26E6nZcC0jm" role="ftER_">
               <node concept="tCFHf" id="7A06dcUIY7p" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -1423,6 +1435,7 @@
             <property role="1XlLyE" value="true" />
             <property role="2f7twF" value="Import/Export" />
             <property role="2pbE17" value="I" />
+            <property role="22ra45" value="true" />
             <node concept="ftmFs" id="26E6nZcC0k4" role="ftER_">
               <node concept="tCFHf" id="7A06dcUJ28j" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -1461,6 +1474,7 @@
             <property role="1XlLyE" value="true" />
             <property role="2f7twF" value="Semantics" />
             <property role="2pbE17" value="S" />
+            <property role="22ra45" value="true" />
             <node concept="ftmFs" id="6xXHcqxdLYB" role="ftER_">
               <node concept="tCFHf" id="6xXHcqxdLZ4" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -1507,6 +1521,7 @@
             <property role="1XlLyE" value="true" />
             <property role="2f7twF" value="Runtime Linking" />
             <property role="2pbE17" value="R" />
+            <property role="22ra45" value="true" />
             <node concept="ftmFs" id="75npNYZG39C" role="ftER_">
               <node concept="tCFHf" id="75npNYZG39D" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
@@ -1587,6 +1602,7 @@
         <property role="2f7twF" value="Technical Documentation" />
         <property role="1rdrE6" value="true" />
         <property role="2pbE17" value="T" />
+        <property role="22ra45" value="true" />
         <node concept="ftmFs" id="26E6nZcC0a9" role="ftER_">
           <node concept="tCFHf" id="26E6nZcC0aa" role="ftvYc">
             <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />

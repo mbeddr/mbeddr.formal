@@ -15,6 +15,7 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="95j3" ref="r:b59c48c6-3515-4a72-8146-4b8c723b8307(com.mbeddr.formal.base.diagram_utils)" />
     <import index="suqv" ref="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -804,11 +805,10 @@
         </node>
         <node concept="3clFbJ" id="6csJveEtVBh" role="3cqZAp">
           <node concept="3clFbS" id="6csJveEtVBj" role="3clFbx">
-            <node concept="3clFbF" id="6csJveEu4UE" role="3cqZAp">
-              <node concept="2YIFZM" id="6csJveEu7EG" role="3clFbG">
-                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                <node concept="10Nm6u" id="6csJveEu7JV" role="37wK5m" />
+            <node concept="3clFbF" id="2i2e8U2ESH8" role="3cqZAp">
+              <node concept="2YIFZM" id="2i2e8U2EVul" role="3clFbG">
+                <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
                 <node concept="3cpWs3" id="6csJveEL6_e" role="37wK5m">
                   <node concept="2OqwBi" id="6csJveEL72Q" role="3uHU7w">
                     <node concept="37vLTw" id="6csJveEL6II" role="2Oq$k0">
@@ -836,8 +836,11 @@
                     </node>
                   </node>
                   <node concept="Xl_RD" id="6csJveEu7Or" role="3uHU7B">
-                    <property role="Xl_RC" value="Goal structure shall have exactly one top\n element to enable automated layout!\nThe following entities were found: " />
+                    <property role="Xl_RC" value="The following entities were found: " />
                   </node>
+                </node>
+                <node concept="Xl_RD" id="2i2e8U2EZNS" role="37wK5m">
+                  <property role="Xl_RC" value="Goal structure shall have exactly one top element to enable automated layout" />
                 </node>
               </node>
             </node>

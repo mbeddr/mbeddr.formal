@@ -37,9 +37,9 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2023"
-val minor = "2"
-val bugfix = ""
+val major = "2024"
+val minor = "1"
+val bugfix = "1"
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
@@ -405,7 +405,7 @@ tasks {
     }
 
     val build_all_languages by registering {
-	// as of 01.2025, all languages built by 'build_assurance_languages' are also built by 'build_formal_languages' 
+	// as of 01.2025, all languages built by 'build_assurance_languages' are also built by 'build_formal_languages'
 	// commented out to avoid multiple building of the same languages
         dependsOn(/*build_assurance_languages,*/ build_formal_languages)
     }
@@ -436,7 +436,7 @@ tasks {
         "com.mbeddr.formal.safety",
     ).map { layout.projectDirectory.dir("code/languages/$it") }
 
-    val pluginRootsForMigration = listOf(mpsHomeDir.resolve("plugins"), dependenciesDir.asFile)
+    val pluginRootsForMigration = mpsHomeDir.listFiles()
 
     val migrate by registering(MpsMigrate::class) {
         dependsOn(resolveMps, downloadJbr, build_all_languages)

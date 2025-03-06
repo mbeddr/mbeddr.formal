@@ -12,7 +12,7 @@
     </modelRoot>
   </models>
   <facets>
-    <facet languageLevel="JAVA_8" type="java" compile="mps" classes="mps" ext="yes">
+    <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
       <library location="${module}/lib/jfreechart-1.5.3.jar" />
     </facet>

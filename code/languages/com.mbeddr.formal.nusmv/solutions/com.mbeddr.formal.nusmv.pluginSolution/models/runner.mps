@@ -39,6 +39,7 @@
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" />
     <import index="rcfd" ref="r:aa6c5e05-6972-4980-b759-3c51783a587d(com.mbeddr.formal.nusmv.source.structure)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="pav8" ref="r:feabab2a-139f-4223-afac-3da5bc33e1e8(com.mbeddr.formal.nusmv.tests.behavior)" implicit="true" />
   </imports>
   <registry>
@@ -326,6 +327,7 @@
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
+      <concept id="8329979535468945057" name="jetbrains.mps.lang.smodel.structure.Node_PresentationOperation" flags="ng" index="2Iv5rx" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
         <reference id="1883223317721008712" name="nodeConcept" index="JncvD" />
         <child id="1883223317721008709" name="body" index="Jncv$" />
@@ -9469,7 +9471,7 @@
                       <node concept="3clFbS" id="1uIpCUur6Cp" role="9aQI4">
                         <node concept="3cpWs8" id="1uIpCUuGI1o" role="3cqZAp">
                           <node concept="3cpWsn" id="1uIpCUuGI1p" role="3cpWs9">
-                            <property role="TrG5h" value="msg" />
+                            <property role="TrG5h" value="title" />
                             <node concept="17QB3L" id="1uIpCUuGI1n" role="1tU5fm" />
                             <node concept="Xl_RD" id="1uIpCUuGI1q" role="33vP2m">
                               <property role="Xl_RC" value="Cannot find the module declaration corresponding to the starting point of the analysis." />
@@ -9484,7 +9486,7 @@
                             </node>
                             <node concept="3cpWs3" id="1uIpCUuGIEF" role="3uHU7B">
                               <node concept="37vLTw" id="1uIpCUuGIlc" role="3uHU7B">
-                                <ref role="3cqZAo" node="1uIpCUuGI1p" resolve="msg" />
+                                <ref role="3cqZAo" node="1uIpCUuGI1p" resolve="title" />
                               </node>
                               <node concept="Xl_RD" id="1uIpCUuGIIZ" role="3uHU7w">
                                 <property role="Xl_RC" value=" Analysis starting point is: " />
@@ -9492,13 +9494,23 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3clFbF" id="1uIpCUur6X1" role="3cqZAp">
-                          <node concept="2YIFZM" id="1uIpCUur72i" role="3clFbG">
-                            <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                            <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                            <node concept="10Nm6u" id="1uIpCUur77G" role="37wK5m" />
-                            <node concept="37vLTw" id="1uIpCUuGI1r" role="37wK5m">
-                              <ref role="3cqZAo" node="1uIpCUuGI1p" resolve="msg" />
+                        <node concept="3clFbF" id="2i2e8U2CktA" role="3cqZAp">
+                          <node concept="2YIFZM" id="2i2e8U2CkLH" role="3clFbG">
+                            <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                            <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                            <node concept="3cpWs3" id="2i2e8U2CmrG" role="37wK5m">
+                              <node concept="Xl_RD" id="2i2e8U2CmrK" role="3uHU7B">
+                                <property role="Xl_RC" value="Analysis starting point is: " />
+                              </node>
+                              <node concept="2OqwBi" id="2i2e8U2CCq2" role="3uHU7w">
+                                <node concept="37vLTw" id="2i2e8U2CmrH" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="6Kf5KB71ni8" resolve="analysisStartingPoint" />
+                                </node>
+                                <node concept="2Iv5rx" id="2i2e8U2CCq3" role="2OqNvi" />
+                              </node>
+                            </node>
+                            <node concept="37vLTw" id="2i2e8U2Cl9S" role="37wK5m">
+                              <ref role="3cqZAo" node="1uIpCUuGI1p" resolve="title" />
                             </node>
                           </node>
                         </node>

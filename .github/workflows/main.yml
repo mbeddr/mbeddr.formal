@@ -131,4 +131,4 @@ jobs:
         ./gradlew publishFASTEN_LINUX_RCPPublicationToGitHubPackagesRepository -x package_fasten_distribution_for_specific_platforms \
           -Pgpr.user=${{ github.actor }} \
           -Pgpr.token=${{ secrets.GITHUB_TOKEN }} \
- 
+
