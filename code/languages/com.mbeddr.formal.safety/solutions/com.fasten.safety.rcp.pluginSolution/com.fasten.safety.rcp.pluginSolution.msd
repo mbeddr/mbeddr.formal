@@ -39,6 +39,7 @@
     <dependency reexport="false">eb32334c-372a-488f-ba9b-e549a59115e9(com.mbeddr.formal.safety.cae)</dependency>
     <dependency reexport="false">fdecb1e5-875e-41ef-a5fd-4b18f747f204(com.mbeddr.formal.safety.argument.process.artefacts)</dependency>
     <dependency reexport="false">00a2e56d-f195-410b-8afe-5a3c7e505658(com.mbeddr.formal.safety.gsn.confidence.acp)</dependency>
+    <dependency reexport="false">fb9af7fb-3816-4066-99c4-a12adf147a7b(com.mbeddr.formal.safety.gsn.operational.ocp)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:c38abce1-4c09-44cb-9ebf-2a764e824bb5:com.mbeddr.mpsutil.actionsfilter" version="0" />
@@ -94,6 +95,8 @@
     <module reference="42606624-2faa-4717-ba66-77021cc11b53(com.mbeddr.formal.safety.gsn.doc)" version="1" />
     <module reference="6464626a-ab04-4051-908e-5e8dc75acd78(com.mbeddr.formal.safety.gsn.ext)" version="2" />
     <module reference="a7775cc7-19db-41cf-a724-3212ac4437b9(com.mbeddr.formal.safety.gsn.importer)" version="0" />
+    <module reference="ab56bf34-b9de-44be-bf0c-7b5847766e98(com.mbeddr.formal.safety.gsn.modularization.claim_points)" version="0" />
+    <module reference="fb9af7fb-3816-4066-99c4-a12adf147a7b(com.mbeddr.formal.safety.gsn.operational.ocp)" version="0" />
     <module reference="ca32bc98-ea47-4b42-82e1-76bebf8a4e7d(com.mbeddr.formal.safety.gsn.xml_gen)" version="0" />
     <module reference="17da266c-02d9-4bbd-b69b-8a656b49f45c(com.mbeddr.formal.safety.hara)" version="0" />
     <module reference="a798113f-e2cd-4e21-a8e2-ca1903cb9c43(com.mbeddr.formal.safety.iso26262)" version="0" />

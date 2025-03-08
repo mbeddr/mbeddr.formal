@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:f8c82c0f-a63c-40bc-b23c-934bbbdebaa9(com.mbeddr.formal.safety.gsn.sandbox._450_gsn_operational_ocp)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="fb9af7fb-3816-4066-99c4-a12adf147a7b" name="com.mbeddr.formal.safety.gsn.operational.ocp">
+      <concept id="3173037291468800739" name="com.mbeddr.formal.safety.gsn.operational.ocp.structure.OperationalClaimPoint" flags="ng" index="3562pT">
+        <reference id="3661716196349264088" name="operationArgument" index="3Ho4uy" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
+      <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
+        <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
+        <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
+        <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
+        <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
+        <property id="4583510071007917016" name="portTransform" index="TgtnS" />
+      </concept>
+      <concept id="2319506556913310852" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Connection" flags="ng" index="2VclpC" />
+      <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
+        <child id="8963411245960991904" name="entries" index="37mRID" />
+      </concept>
+      <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
+        <property id="8963411245960998400" name="key" index="37mO49" />
+        <child id="8963411245960998404" name="value" index="37mO4d" />
+      </concept>
+    </language>
+    <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="4266958635905770170" name="com.mbeddr.formal.safety.gsn.structure.InContextOfConnection" flags="ng" index="2vhqFZ" />
+      <concept id="4266958635905406579" name="com.mbeddr.formal.safety.gsn.structure.Context" flags="ng" index="2vmxSQ" />
+      <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC" />
+      <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="4266958635905772385" name="connections" index="2vhqc$" />
+        <child id="4266958635905277632" name="content" index="2vn1q5" />
+      </concept>
+      <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
+        <child id="4266958635905312315" name="text" index="2vnaTY" />
+      </concept>
+      <concept id="2525617932486527053" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureConnectionBase" flags="ng" index="3VeShH">
+        <reference id="2525617932486527189" name="source" index="3VeSjP" />
+        <reference id="2525617932486527190" name="target" index="3VeSjQ" />
+        <child id="4766383208097458607" name="attributes" index="1Wbb7D" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="2vn7XN" id="2K8T9FD55fw">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="_010_main_argument" />
+    <node concept="2vn7WC" id="2K8T9FD55gr" role="2vn1q5">
+      <property role="TrG5h" value="G01" />
+      <node concept="19SGf9" id="2K8T9FD55gs" role="2vnaTY">
+        <node concept="19SUe$" id="2K8T9FD55gt" role="19SJt6">
+          <property role="19SUeA" value="The system is sufficiently &#10;safe to operate. " />
+        </node>
+      </node>
+    </node>
+    <node concept="37mRI7" id="2K8T9FD55hp" role="lGtFl">
+      <node concept="37mRIm" id="2K8T9FD55hq" role="37mRID">
+        <property role="37mO49" value="3173037291469034523" />
+        <node concept="gqqVs" id="2K8T9FD55ho" role="37mO4d">
+          <property role="gqqTZ" value="50.0" />
+          <property role="gqqTW" value="50.0" />
+          <property role="gqqTX" value="203.0" />
+          <property role="gqqTy" value="60.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="2K8T9FD55hv" role="37mRID">
+        <property role="37mO49" value="3173037291469034587" />
+        <node concept="gqqVs" id="2K8T9FD55hu" role="37mO4d">
+          <property role="gqqTZ" value="400.0" />
+          <property role="gqqTW" value="50.0" />
+          <property role="gqqTX" value="194.0" />
+          <property role="gqqTy" value="60.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="2K8T9FD55oM" role="37mRID">
+        <property role="37mO49" value="3173037291469034998" />
+        <node concept="2VclpC" id="2K8T9FD55oL" role="37mO4d" />
+      </node>
+    </node>
+    <node concept="2vmxSQ" id="2K8T9FD55hr" role="2vn1q5">
+      <property role="TrG5h" value="C01" />
+      <node concept="19SGf9" id="2K8T9FD55hs" role="2vnaTY">
+        <node concept="19SUe$" id="2K8T9FD55ht" role="19SJt6">
+          <property role="19SUeA" value="Usage procedures guarantee&#10;a safe operation." />
+        </node>
+      </node>
+    </node>
+    <node concept="2vhqFZ" id="2K8T9FD55nQ" role="2vhqc$">
+      <ref role="3VeSjP" node="2K8T9FD55gr" resolve="G01" />
+      <ref role="3VeSjQ" node="2K8T9FD55hr" resolve="C01" />
+      <node concept="3562pT" id="2K8T9FD55qB" role="1Wbb7D">
+        <property role="TrG5h" value="OCP1" />
+        <ref role="3Ho4uy" node="2K8T9FD4Y3L" resolve="_operations_argument" />
+      </node>
+    </node>
+  </node>
+</model>
+

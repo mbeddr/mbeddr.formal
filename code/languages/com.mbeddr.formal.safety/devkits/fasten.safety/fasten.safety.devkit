@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="fasten.safety" uuid="ac9a2847-3512-4af0-8db9-c20abbe2720a">
   <exported-language name="434b2bfb-bd7a-47c9-bced-b445035e6d96(com.mbeddr.formal.safety.req)" />
+  <exported-language name="ab56bf34-b9de-44be-bf0c-7b5847766e98(com.mbeddr.formal.safety.gsn.modularization.claim_points)" />
+  <exported-language name="fb9af7fb-3816-4066-99c4-a12adf147a7b(com.mbeddr.formal.safety.gsn.operational.ocp)" />
   <extendedDevKits>
     <extendedDevKit>b64463ba-ae31-4cf7-be7b-afc13cab4daa(fasten.safety.gsn)</extendedDevKit>
     <extendedDevKit>3970a543-1808-4b9f-a378-71f15d96d819(fasten.safety.hara)</extendedDevKit>

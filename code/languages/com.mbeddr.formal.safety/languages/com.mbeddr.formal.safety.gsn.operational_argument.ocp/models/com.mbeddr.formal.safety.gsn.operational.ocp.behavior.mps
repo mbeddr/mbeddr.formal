@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:dc5032d7-fbab-4d54-9bca-a26df026f386(com.mbeddr.formal.safety.gsn.confidence.acp.behavior)">
+<model ref="r:ecdd125b-9113-4172-b967-0c4f58b80975(com.mbeddr.formal.safety.gsn.operational.ocp.behavior)">
   <persistence version="9" />
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
@@ -7,9 +7,9 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
+    <import index="68t1" ref="r:7becb57c-c22a-45d5-9727-08526e822dee(com.mbeddr.formal.safety.gsn.operational.ocp.structure)" />
     <import index="w873" ref="r:0de03bcd-6ad8-423c-b85e-ae3dd18ed2b3(com.mbeddr.formal.base.behavior)" />
-    <import index="kqaf" ref="r:6cc86fc4-3f69-4213-8f49-ef9fcbc7cb5f(com.mbeddr.formal.safety.gsn.confidence.acp.structure)" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="etzb" ref="r:eacb5900-f8d5-4c60-8501-f982ea315da5(com.mbeddr.formal.safety.gsn.modularization.claim_points.behavior)" implicit="true" />
     <import index="q1zg" ref="r:0cc89091-66be-4b72-8f13-2b5a9eaa1035(com.mbeddr.formal.safety.gsn.modularization.claim_points.structure)" implicit="true" />
   </imports>
@@ -45,7 +45,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -76,10 +75,52 @@
       </concept>
     </language>
   </registry>
-  <node concept="13h7C7" id="1r1mR59uIKd">
-    <ref role="13h7C2" to="kqaf:3bh1RFvGk3g" resolve="AssuranceClaimPoint" />
-    <node concept="13hLZK" id="1r1mR59uIKe" role="13h7CW">
-      <node concept="3clFbS" id="1r1mR59uIKf" role="2VODD2" />
+  <node concept="13h7C7" id="2K8T9FD4cvf">
+    <ref role="13h7C2" to="68t1:2K8T9FD4cn3" resolve="OperationArgument" />
+    <node concept="13hLZK" id="2K8T9FD4cvg" role="13h7CW">
+      <node concept="3clFbS" id="2K8T9FD4cvh" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2K8T9FD4cvy" role="13h7CS">
+      <property role="TrG5h" value="associatedClaimPoint" />
+      <ref role="13i0hy" to="etzb:2K8T9FD3kzf" resolve="associatedClaimPoint" />
+      <node concept="3Tm1VV" id="2K8T9FD4cvz" role="1B3o_S" />
+      <node concept="3clFbS" id="2K8T9FD4cvA" role="3clF47">
+        <node concept="3clFbF" id="2K8T9FD4cvT" role="3cqZAp">
+          <node concept="2OqwBi" id="2K8T9FD4cQM" role="3clFbG">
+            <node concept="13iPFW" id="2K8T9FD4cvS" role="2Oq$k0" />
+            <node concept="3TrEf2" id="2K8T9FD4dP1" role="2OqNvi">
+              <ref role="3Tt5mk" to="68t1:2K8T9FD4djj" resolve="ocp" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2K8T9FD4cvB" role="3clF45">
+        <ref role="ehGHo" to="q1zg:2K8T9FD2Qh7" resolve="ClaimPointAttributeBase" />
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="2K8T9FD4dTl">
+    <ref role="13h7C2" to="68t1:2K8T9FD4cbz" resolve="OperationalClaimPoint" />
+    <node concept="13hLZK" id="2K8T9FD4dTm" role="13h7CW">
+      <node concept="3clFbS" id="2K8T9FD4dTn" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2K8T9FD4dTC" role="13h7CS">
+      <property role="TrG5h" value="associatedSpecialArgument" />
+      <ref role="13i0hy" to="etzb:2K8T9FD3cyU" resolve="associatedSpecialArgument" />
+      <node concept="3Tm1VV" id="2K8T9FD4dTD" role="1B3o_S" />
+      <node concept="3clFbS" id="2K8T9FD4dTG" role="3clF47">
+        <node concept="3clFbF" id="2K8T9FD4dTZ" role="3cqZAp">
+          <node concept="2OqwBi" id="2K8T9FD4eaQ" role="3clFbG">
+            <node concept="13iPFW" id="2K8T9FD4dTY" role="2Oq$k0" />
+            <node concept="3TrEf2" id="2K8T9FD4etD" role="2OqNvi">
+              <ref role="3Tt5mk" to="68t1:3bh1RFvGk3o" resolve="operationArgument" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="2K8T9FD4dTH" role="3clF45">
+        <ref role="ehGHo" to="q1zg:2K8T9FD2QBL" resolve="SpecialArgumentBase" />
+      </node>
     </node>
     <node concept="13i0hz" id="1r1mR59uIKo" role="13h7CS">
       <property role="TrG5h" value="text" />
@@ -95,55 +136,12 @@
               </node>
             </node>
             <node concept="Xl_RD" id="1r1mR59uIKu" role="3uHU7B">
-              <property role="Xl_RC" value="acp " />
+              <property role="Xl_RC" value="ocp " />
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="1r1mR59uIZu" role="3cqZAp" />
       </node>
       <node concept="17QB3L" id="1r1mR59uIKt" role="3clF45" />
-    </node>
-    <node concept="13i0hz" id="2K8T9FD3cSr" role="13h7CS">
-      <property role="TrG5h" value="associatedSpecialArgument" />
-      <ref role="13i0hy" to="etzb:2K8T9FD3cyU" resolve="associatedSpecialArgument" />
-      <node concept="3Tm1VV" id="2K8T9FD3cSs" role="1B3o_S" />
-      <node concept="3clFbS" id="2K8T9FD3cSv" role="3clF47">
-        <node concept="3clFbF" id="2K8T9FD3cTs" role="3cqZAp">
-          <node concept="2OqwBi" id="2K8T9FD3da3" role="3clFbG">
-            <node concept="13iPFW" id="2K8T9FD3cTr" role="2Oq$k0" />
-            <node concept="3TrEf2" id="2K8T9FD3f51" role="2OqNvi">
-              <ref role="3Tt5mk" to="kqaf:3bh1RFvGk3o" resolve="confidenceArgument" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="2K8T9FD3cSw" role="3clF45">
-        <ref role="ehGHo" to="q1zg:2K8T9FD2QBL" resolve="SpecialArgumentBase" />
-      </node>
-    </node>
-  </node>
-  <node concept="13h7C7" id="2K8T9FD3k_l">
-    <ref role="13h7C2" to="kqaf:3bh1RFvGk3l" resolve="ConfidenceArgument" />
-    <node concept="13hLZK" id="2K8T9FD3k_m" role="13h7CW">
-      <node concept="3clFbS" id="2K8T9FD3k_n" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="2K8T9FD3k_C" role="13h7CS">
-      <property role="TrG5h" value="associatedClaimPoint" />
-      <ref role="13i0hy" to="etzb:2K8T9FD3kzf" resolve="associatedClaimPoint" />
-      <node concept="3Tm1VV" id="2K8T9FD3k_D" role="1B3o_S" />
-      <node concept="3clFbS" id="2K8T9FD3k_G" role="3clF47">
-        <node concept="3clFbF" id="2K8T9FD3k_Z" role="3cqZAp">
-          <node concept="2OqwBi" id="2K8T9FD3kWC" role="3clFbG">
-            <node concept="13iPFW" id="2K8T9FD3k_Y" role="2Oq$k0" />
-            <node concept="3TrEf2" id="2K8T9FD3lqj" role="2OqNvi">
-              <ref role="3Tt5mk" to="kqaf:4lbNCDmPWRO" resolve="acp" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tqbb2" id="2K8T9FD3k_H" role="3clF45">
-        <ref role="ehGHo" to="q1zg:2K8T9FD2Qh7" resolve="ClaimPointAttributeBase" />
-      </node>
     </node>
   </node>
 </model>
