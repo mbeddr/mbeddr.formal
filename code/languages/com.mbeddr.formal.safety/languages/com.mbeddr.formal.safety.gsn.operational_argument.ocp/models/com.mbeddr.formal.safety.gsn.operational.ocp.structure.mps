@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6cc86fc4-3f69-4213-8f49-ef9fcbc7cb5f(com.mbeddr.formal.safety.gsn.confidence.acp.structure)">
+<model ref="r:7becb57c-c22a-45d5-9727-08526e822dee(com.mbeddr.formal.safety.gsn.operational.ocp.structure)">
   <persistence version="9" />
   <languages>
-    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="q1zg" ref="r:0cc89091-66be-4b72-8f13-2b5a9eaa1035(com.mbeddr.formal.safety.gsn.modularization.claim_points.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
@@ -58,31 +55,45 @@
       </concept>
     </language>
   </registry>
-  <node concept="1TIwiD" id="3bh1RFvGk3g">
-    <property role="EcuMT" value="3661716196349264080" />
-    <property role="TrG5h" value="AssuranceClaimPoint" />
-    <property role="34LRSv" value="acp" />
-    <property role="R4oN_" value="assurance claim point" />
+  <node concept="1TIwiD" id="2K8T9FD4c8c">
+    <property role="EcuMT" value="3173037291468800524" />
+    <property role="TrG5h" value="OcpRefWord" />
+    <property role="34LRSv" value="@ocp" />
+    <property role="R4oN_" value="operational claim point reference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="2K8T9FD4cbx" role="PzmwI">
+      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
+    </node>
+    <node concept="1TJgyj" id="2K8T9FD4cby" role="1TKVEi">
+      <property role="IQ2ns" value="3173037291468800738" />
+      <property role="20kJfa" value="ocp" />
+      <ref role="20lvS9" node="2K8T9FD4cbz" resolve="OperationalClaimPoint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2K8T9FD4cbz">
+    <property role="EcuMT" value="3173037291468800739" />
+    <property role="TrG5h" value="OperationalClaimPoint" />
+    <property role="34LRSv" value="ocp" />
+    <property role="R4oN_" value="operation claim point" />
     <ref role="1TJDcQ" to="q1zg:2K8T9FD2Qh7" resolve="ClaimPointAttributeBase" />
     <node concept="1TJgyj" id="3bh1RFvGk3o" role="1TKVEi">
       <property role="IQ2ns" value="3661716196349264088" />
-      <property role="20kJfa" value="confidenceArgument" />
-      <ref role="20lvS9" node="3bh1RFvGk3l" resolve="ConfidenceArgument" />
+      <property role="20kJfa" value="operationArgument" />
+      <ref role="20lvS9" node="2K8T9FD4cn3" resolve="OperationArgument" />
     </node>
   </node>
-  <node concept="1TIwiD" id="3bh1RFvGk3l">
-    <property role="EcuMT" value="3661716196349264085" />
-    <property role="TrG5h" value="ConfidenceArgument" />
+  <node concept="1TIwiD" id="2K8T9FD4cn3">
+    <property role="EcuMT" value="3173037291468801475" />
+    <property role="TrG5h" value="OperationArgument" />
+    <property role="34LRSv" value="operation argument" />
     <property role="19KtqR" value="true" />
-    <property role="34LRSv" value="confidence argument" />
-    <property role="R4oN_" value="an argument about the confidence in a claim" />
     <ref role="1TJDcQ" to="q1zg:2K8T9FD2QBL" resolve="SpecialArgumentBase" />
-    <node concept="1TJgyj" id="4lbNCDmPWRO" role="1TKVEi">
-      <property role="IQ2ns" value="4993311705428119028" />
-      <property role="20kJfa" value="acp" />
-      <ref role="20lvS9" node="3bh1RFvGk3g" resolve="AssuranceClaimPoint" />
+    <node concept="1TJgyj" id="2K8T9FD4djj" role="1TKVEi">
+      <property role="IQ2ns" value="3173037291468805331" />
+      <property role="20kJfa" value="ocp" />
+      <ref role="20lvS9" node="2K8T9FD4cbz" resolve="OperationalClaimPoint" />
     </node>
-    <node concept="1irR5M" id="1XJsHce2Un6" role="rwd14">
+    <node concept="1irR5M" id="2K8T9FD4utN" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irR9n" id="1XJsHce2V90" role="1irR9h">
         <node concept="3PKj8D" id="1XJsHce2V95" role="3PKjn_">
@@ -92,24 +103,9 @@
       <node concept="1irPie" id="2LDKh2uE0Rd" role="1irR9h">
         <property role="1irPi9" value="G" />
         <node concept="3PKj8D" id="2LDKh2uE0Ro" role="3PKjny">
-          <property role="3PKj8l" value="987654" />
+          <property role="3PKj8l" value="CC7654" />
         </node>
       </node>
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4lbNCDmPb8A">
-    <property role="EcuMT" value="4993311705427915302" />
-    <property role="TrG5h" value="AcpRefWord" />
-    <property role="34LRSv" value="@acp" />
-    <property role="R4oN_" value="assurance claim point reference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="4lbNCDmPbhv" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-    <node concept="1TJgyj" id="4lbNCDmPbhB" role="1TKVEi">
-      <property role="IQ2ns" value="4993311705427915879" />
-      <property role="20kJfa" value="acp" />
-      <ref role="20lvS9" node="3bh1RFvGk3g" resolve="AssuranceClaimPoint" />
     </node>
   </node>
 </model>
