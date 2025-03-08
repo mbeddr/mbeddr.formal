@@ -60,7 +60,7 @@
     <property role="TrG5h" value="OcpRefWord" />
     <property role="34LRSv" value="@ocp" />
     <property role="R4oN_" value="operational claim point reference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2K8T9FD4cbx" role="PzmwI">
       <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
     </node>
