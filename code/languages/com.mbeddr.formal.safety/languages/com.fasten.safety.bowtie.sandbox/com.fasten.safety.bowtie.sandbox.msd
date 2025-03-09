@@ -12,6 +12,7 @@
   </facets>
   <languageVersions>
     <language slang="l:51f69ce3-7fa9-4277-b3f5-a74cd93a920b:com.fasten.safety.bowtie" version="0" />
+    <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
   </languageVersions>
   <dependencyVersions>
