@@ -41,6 +41,7 @@
     <import index="kqaf" ref="r:6cc86fc4-3f69-4213-8f49-ef9fcbc7cb5f(com.mbeddr.formal.safety.gsn.confidence.acp.structure)" />
     <import index="s9o5" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor(MPS.IDEA/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
+    <import index="68t1" ref="r:7becb57c-c22a-45d5-9727-08526e822dee(com.mbeddr.formal.safety.gsn.operational.ocp.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -1497,6 +1498,29 @@
                   <node concept="1dCxOk" id="2oRUTT_RKXU" role="37shsm">
                     <property role="1XweGW" value="b80b29fe-1cc4-4054-aee5-cb5c2049985a" />
                     <property role="1XxBO9" value="fasten.safety.gsn.confidence" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="tC5Ba" id="2K8T9FD4uKV" role="ftvYc">
+            <property role="TrG5h" value="Operational" />
+            <property role="1XlLyE" value="true" />
+            <property role="2f7twF" value="Operational" />
+            <property role="2pbE17" value="O" />
+            <node concept="ftmFs" id="2K8T9FD4uKW" role="ftER_">
+              <node concept="tCFHf" id="2K8T9FD4uKX" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="2K8T9FD4uKY" role="2J__8u">
+                  <property role="Xl_RC" value="Operational Argument (OCP)" />
+                </node>
+                <node concept="35c_gC" id="2K8T9FD4ysZ" role="2J__8u">
+                  <ref role="35c_gD" to="68t1:2K8T9FD4cn3" resolve="OperationArgument" />
+                </node>
+                <node concept="37shsh" id="2K8T9FD4uL0" role="2J__8u">
+                  <node concept="1dCxOk" id="2K8T9FD4yt7" role="37shsm">
+                    <property role="1XweGW" value="ac9a2847-3512-4af0-8db9-c20abbe2720a" />
+                    <property role="1XxBO9" value="fasten.safety" />
                   </node>
                 </node>
               </node>
