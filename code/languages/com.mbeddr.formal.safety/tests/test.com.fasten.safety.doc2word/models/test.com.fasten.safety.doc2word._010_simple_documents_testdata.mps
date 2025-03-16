@@ -2,7 +2,7 @@
 <model ref="r:9d9482af-e942-422d-ba88-55ba18852f77(test.com.fasten.safety.doc2word._010_simple_documents_testdata)">
   <persistence version="9" />
   <languages>
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="4" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="5" />
   </languages>
   <imports />
   <registry>

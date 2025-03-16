@@ -42,7 +42,7 @@
     <property role="TrG5h" value="BowtieDiagram" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="bowtie" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2K8T9FD6QRo" role="1TKVEi">
       <property role="IQ2ns" value="3173037291469499864" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -65,7 +65,7 @@
     <property role="EcuMT" value="3173037291469493694" />
     <property role="TrG5h" value="BowtieEntityBase" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2K8T9FD6PmZ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -74,7 +74,7 @@
     <property role="EcuMT" value="3173037291469493697" />
     <property role="TrG5h" value="BowtieConnectionBase" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2K8T9FD6Pn2" role="1TKVEi">
       <property role="IQ2ns" value="3173037291469493698" />
       <property role="20kJfa" value="source" />

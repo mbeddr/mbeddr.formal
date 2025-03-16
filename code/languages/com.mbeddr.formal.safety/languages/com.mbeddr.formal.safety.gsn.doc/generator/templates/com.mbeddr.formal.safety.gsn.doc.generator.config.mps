@@ -2,7 +2,7 @@
 <model ref="r:5d27c933-7daf-4e28-b74f-a6ac54f15504(com.mbeddr.formal.safety.gsn.doc.generator.config)">
   <persistence version="9" />
   <languages>
-    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="4" />
+    <use id="2374bc90-7e37-41f1-a9c4-c2e35194c36a" name="com.mbeddr.doc" version="5" />
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports />

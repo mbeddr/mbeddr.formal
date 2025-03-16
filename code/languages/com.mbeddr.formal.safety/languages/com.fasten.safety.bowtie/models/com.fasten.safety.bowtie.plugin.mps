@@ -244,7 +244,7 @@
     <property role="2bfB8j" value="true" />
     <property role="TrG5h" value="BowtieBaseLanConnectionsFactoryProvider_extension" />
     <property role="3GE5qa" value="connections.baselang" />
-    <ref role="1lYe$Y" node="58S6eLQM0$n" />
+    <ref role="1lYe$Y" node="58S6eLQM0$n" resolve="BowtieConnectionsFactoryProvider" />
     <node concept="3Tm1VV" id="4imEbjrxX2e" role="1B3o_S" />
     <node concept="2tJIrI" id="4imEbjrxX2f" role="jymVt" />
     <node concept="2tJIrI" id="4imEbjrxX2g" role="jymVt" />
@@ -265,7 +265,7 @@
         <node concept="3clFbF" id="58S6eLQJ9xH" role="3cqZAp">
           <node concept="2ShNRf" id="58S6eLQJ9xF" role="3clFbG">
             <node concept="HV5vD" id="58S6eLQJeJN" role="2ShVmc">
-              <ref role="HV5vE" node="3GRi4m$sKhy" />
+              <ref role="HV5vE" node="3GRi4m$sKhy" resolve="BowtieBaseLangConnectionsFactory" />
             </node>
           </node>
         </node>
@@ -394,14 +394,14 @@
     </node>
     <node concept="3Tm1VV" id="3GRi4m$sKhz" role="1B3o_S" />
     <node concept="3uibUv" id="7kF4CZH$QFy" role="EKbjA">
-      <ref role="3uigEE" node="7kF4CZH$qjm" />
+      <ref role="3uigEE" node="7kF4CZH$qjm" resolve="IBowtieConnectionFactory" />
     </node>
   </node>
   <node concept="vrV6u" id="58S6eLQM0$n">
     <property role="TrG5h" value="BowtieConnectionsFactoryProvider" />
     <property role="3GE5qa" value="connections" />
     <node concept="3uibUv" id="7kF4CZH$EI1" role="luc8K">
-      <ref role="3uigEE" node="7kF4CZH$qjm" />
+      <ref role="3uigEE" node="7kF4CZH$qjm" resolve="IBowtieConnectionFactory" />
     </node>
   </node>
   <node concept="3HP615" id="7kF4CZH$qjm">
@@ -597,7 +597,7 @@
             </node>
             <node concept="2OqwBi" id="73nwnmNAVuN" role="2Oq$k0">
               <node concept="37vLTw" id="73nwnmNAVuO" role="2Oq$k0">
-                <ref role="3cqZAo" node="73nwnmNAVut" resolve="gs" />
+                <ref role="3cqZAo" node="73nwnmNAVut" resolve="btd" />
               </node>
               <node concept="3Tsc0h" id="73nwnmNAVuP" role="2OqNvi">
                 <ref role="3TtcxE" to="y5k9:2K8T9FD6QRp" resolve="connections" />
@@ -752,7 +752,7 @@
           <node concept="37vLTI" id="7kF4CZH_Uj6" role="3clFbG">
             <node concept="2ShNRf" id="7kF4CZH_Uj7" role="37vLTx">
               <node concept="1pGfFk" id="7kF4CZH_Uj8" role="2ShVmc">
-                <ref role="37wK5l" to="fbzs:~Rectangle2D$Double.&lt;init&gt;(double,double,double,double)" resolve="Double" />
+                <ref role="37wK5l" to="fbzs:~Rectangle2D$Double.&lt;init&gt;(double,double,double,double)" resolve="Rectangle2D.Double" />
                 <node concept="3cpWs3" id="7kF4CZH_Uj9" role="37wK5m">
                   <node concept="37vLTw" id="7kF4CZH_Uja" role="3uHU7w">
                     <ref role="3cqZAo" node="7kF4CZH_UiY" resolve="padding" />
@@ -1094,7 +1094,7 @@
                     <node concept="liA8E" id="7kF4CZH$F49" role="2OqNvi">
                       <ref role="37wK5l" node="7kF4CZH$vUh" resolve="createConnectionTypes" />
                       <node concept="37vLTw" id="24PsEXFbTAa" role="37wK5m">
-                        <ref role="3cqZAo" node="24PsEXFbTze" resolve="gs" />
+                        <ref role="3cqZAo" node="24PsEXFbTze" resolve="btd" />
                       </node>
                     </node>
                   </node>
