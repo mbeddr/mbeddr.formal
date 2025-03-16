@@ -33,6 +33,7 @@
     <import index="kle0" ref="r:e64c059a-e646-49b9-a694-43206fe0e74b(com.mbeddr.formal.base.tooling.nodes)" />
     <import index="iwwu" ref="r:2c4d9270-b6d6-44af-aecd-e01a223680db(jetbrains.mps.kernel.model)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="vt3w" ref="r:adc36c3c-4daf-4fb6-87db-41b3b762af25(com.mbeddr.formal.spin.analyses.behavior)" implicit="true" />
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" implicit="true" />
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" implicit="true" />
@@ -3750,13 +3751,15 @@
         </node>
         <node concept="3clFbJ" id="2yuIwRziK2J" role="3cqZAp">
           <node concept="3clFbS" id="2yuIwRziK2L" role="3clFbx">
-            <node concept="3clFbF" id="2yuIwRziMsg" role="3cqZAp">
-              <node concept="2YIFZM" id="2yuIwRziMte" role="3clFbG">
-                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                <node concept="10Nm6u" id="2yuIwRziMv8" role="37wK5m" />
-                <node concept="Xl_RD" id="2yuIwRziMxl" role="37wK5m">
-                  <property role="Xl_RC" value="Error: at most one assertion analysis configuration referencing this environment can be present." />
+            <node concept="3clFbF" id="2i2e8U2FaKK" role="3cqZAp">
+              <node concept="2YIFZM" id="2i2e8U2Fb44" role="3clFbG">
+                <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                <node concept="Xl_RD" id="2i2e8U2Fbt6" role="37wK5m">
+                  <property role="Xl_RC" value="At most one assertion analysis configuration referencing this environment can be present." />
+                </node>
+                <node concept="Xl_RD" id="2i2e8U2Fe5P" role="37wK5m">
+                  <property role="Xl_RC" value="Error" />
                 </node>
               </node>
             </node>

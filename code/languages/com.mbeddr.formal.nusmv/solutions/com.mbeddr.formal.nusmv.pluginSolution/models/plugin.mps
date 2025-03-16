@@ -79,6 +79,7 @@
       </concept>
       <concept id="1203083511112" name="jetbrains.mps.lang.plugin.structure.ExecuteBlock" flags="in" index="tnohg" />
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
+        <property id="6461604478897396236" name="updateInBackground" index="22ra45" />
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
       </concept>
@@ -661,6 +662,7 @@
   </node>
   <node concept="tC5Ba" id="6NmtaR24728">
     <property role="TrG5h" value="NuSMVGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="6NmtaR2472a" role="ftER_">
       <node concept="tCFHf" id="6NmtaR2472h" role="ftvYc">
         <ref role="tCJdB" node="6NmtaR23THu" resolve="RunNUSMVOnSystem" />
@@ -1140,6 +1142,7 @@
   </node>
   <node concept="tC5Ba" id="5uW1px6ni3m">
     <property role="TrG5h" value="TestsGroup" />
+    <property role="22ra45" value="true" />
     <node concept="ftmFs" id="5uW1px6ni3n" role="ftER_">
       <node concept="tCFHf" id="2xeYpNCdQDD" role="ftvYc">
         <ref role="tCJdB" node="2xeYpNCdzDf" resolve="RunNUSMVOnTestsFromModel" />

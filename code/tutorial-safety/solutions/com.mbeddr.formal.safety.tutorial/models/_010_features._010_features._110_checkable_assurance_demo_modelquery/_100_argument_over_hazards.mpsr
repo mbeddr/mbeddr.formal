@@ -56,6 +56,11 @@
         <child id="8963411245960998404" name="value" index="37mO4d" />
       </concept>
     </language>
+    <language id="57ecebe4-dfb8-4fef-9175-0008e04a3684" name="com.mbeddr.formal.safety.argument.modelquery">
+      <concept id="612965124711590730" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelElementWord" flags="ng" index="2eCDJ2">
+        <reference id="612965124711590733" name="node" index="2eCDJ5" />
+      </concept>
+    </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
       <concept id="3514655602814462718" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureDoc" flags="ng" index="9kjDo">
         <child id="3514655602814462801" name="documentation" index="9kjJR" />

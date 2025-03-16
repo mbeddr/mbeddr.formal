@@ -19,6 +19,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="4agl" ref="r:fdf64437-9be3-455e-9c7a-77cc1026e250(com.mbeddr.formal.base.plugin)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1162,12 +1163,15 @@
           <node concept="3clFbS" id="3fsZMFLI9tO" role="3clFbx">
             <node concept="3clFbF" id="3fsZMFLI9tP" role="3cqZAp">
               <node concept="2YIFZM" id="3fsZMFLI9tQ" role="3clFbG">
-                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                <node concept="10Nm6u" id="3fsZMFLI9tR" role="37wK5m" />
+                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                <ref role="37wK5l" to="jkm4:~Messages.showMessageDialog(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="showMessageDialog" />
                 <node concept="Xl_RD" id="3fsZMFLI9tS" role="37wK5m">
-                  <property role="Xl_RC" value="No simulation trace associated to this node - please re-run the simulator" />
+                  <property role="Xl_RC" value="Please re-run the simulator" />
                 </node>
+                <node concept="Xl_RD" id="2i2e8U2lqCg" role="37wK5m">
+                  <property role="Xl_RC" value="No simulation trace associated to this node" />
+                </node>
+                <node concept="10Nm6u" id="2i2e8U2lnff" role="37wK5m" />
               </node>
             </node>
             <node concept="3cpWs6" id="3fsZMFLI9tT" role="3cqZAp" />
@@ -1183,12 +1187,15 @@
           <node concept="3clFbS" id="3fsZMFLI9tY" role="3clFbx">
             <node concept="3clFbF" id="3fsZMFLI9tZ" role="3cqZAp">
               <node concept="2YIFZM" id="3fsZMFLI9u0" role="3clFbG">
-                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                <node concept="10Nm6u" id="3fsZMFLI9u1" role="37wK5m" />
-                <node concept="Xl_RD" id="3fsZMFLI9u2" role="37wK5m">
-                  <property role="Xl_RC" value="Beginning of the trace!" />
+                <ref role="37wK5l" to="jkm4:~Messages.showMessageDialog(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="showMessageDialog" />
+                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                <node concept="Xl_RD" id="2i2e8U2lxbD" role="37wK5m">
+                  <property role="Xl_RC" value="Index less than zero" />
                 </node>
+                <node concept="Xl_RD" id="3fsZMFLI9u2" role="37wK5m">
+                  <property role="Xl_RC" value="Beginning of the trace" />
+                </node>
+                <node concept="10Nm6u" id="2i2e8U2lwgI" role="37wK5m" />
               </node>
             </node>
             <node concept="3clFbF" id="3fsZMFLI9u3" role="3cqZAp">
@@ -1216,12 +1223,15 @@
           <node concept="3clFbS" id="3fsZMFLI9uc" role="3clFbx">
             <node concept="3clFbF" id="3fsZMFLI9ud" role="3cqZAp">
               <node concept="2YIFZM" id="3fsZMFLI9ue" role="3clFbG">
-                <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object)" resolve="showMessageDialog" />
-                <node concept="10Nm6u" id="3fsZMFLI9uf" role="37wK5m" />
-                <node concept="Xl_RD" id="3fsZMFLI9ug" role="37wK5m">
-                  <property role="Xl_RC" value="End of the trace!" />
+                <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
+                <ref role="37wK5l" to="jkm4:~Messages.showMessageDialog(java.lang.String,java.lang.String,javax.swing.Icon)" resolve="showMessageDialog" />
+                <node concept="Xl_RD" id="2i2e8U2lDsP" role="37wK5m">
+                  <property role="Xl_RC" value="Number of steps less or equal to index" />
                 </node>
+                <node concept="Xl_RD" id="3fsZMFLI9ug" role="37wK5m">
+                  <property role="Xl_RC" value="End of the trace" />
+                </node>
+                <node concept="10Nm6u" id="2i2e8U2lCQB" role="37wK5m" />
               </node>
             </node>
             <node concept="3clFbF" id="3fsZMFLI9uh" role="3cqZAp">
