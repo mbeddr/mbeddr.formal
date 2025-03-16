@@ -19,6 +19,8 @@
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety/fasten.safety.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.process.review/com.fasten.process.review.mpl" folder="process" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.bayesian_network/com.fasten.safety.bayesian_network.mpl" folder="bayesian" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.bowtie.sandbox/com.fasten.safety.bowtie.sandbox.msd" folder="bowtie" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.bowtie/com.fasten.safety.bowtie.mpl" folder="bowtie" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea.arch/com.fasten.safety.fmea.arch.mpl" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea.iso26262/com.fasten.safety.fmea.iso26262.mpl" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea/com.fasten.safety.fmea.mpl" folder="fmea" />
@@ -44,7 +46,9 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.ext/com.mbeddr.formal.safety.gsn.ext.mpl" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.external_evidence/com.mbeddr.formal.safety.gsn.external_evidence.mpl" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.importer/com.mbeddr.formal.safety.gsn.importer.mpl" folder="gsn._010_base" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.modularization.claim_points/com.mbeddr.formal.safety.gsn.modularization.claim_points.mpl" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.odd/com.mbeddr.formal.safety.gsn.odd.mpl" folder="gsn._100_checkable_patterns" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.operational_argument.ocp/com.mbeddr.formal.safety.gsn.operational.ocp.mpl" folder="gsn._045_operational_arguments" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.patterns/com.mbeddr.formal.safety.gsn.patterns.mpl" folder="gsn._100_checkable_patterns" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.pdfexport/com.mbeddr.formal.safety.gsn.pdfexport.mpl" folder="gsn._020_doc" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.smv/com.mbeddr.formal.safety.gsn.smv.mpl" folder="gsn._100_checkable_patterns" />
