@@ -4858,6 +4858,11 @@
             <ref role="1Busuk" node="6FJpOMBsZUh" resolve="com.mpsbasics.words.generic" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5mBZ2gvf8EL" role="3bR37C">
+          <node concept="3bR9La" id="5mBZ2gvf8EM" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:4be$WTb1CbJ" resolve="de.itemis.mps.editor.diagram" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6hyv0iVPlGu" role="2G$12L">
         <property role="BnDLt" value="true" />
