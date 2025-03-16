@@ -19,6 +19,8 @@
       <modulePath path="$PROJECT_DIR$/devkits/fasten.safety/fasten.safety.devkit" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.process.review/com.fasten.process.review.mpl" folder="process" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.bayesian_network/com.fasten.safety.bayesian_network.mpl" folder="bayesian" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.bowtie.sandbox/com.fasten.safety.bowtie.sandbox.msd" folder="bowtie" />
+      <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.bowtie/com.fasten.safety.bowtie.mpl" folder="bowtie" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea.arch/com.fasten.safety.fmea.arch.mpl" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea.iso26262/com.fasten.safety.fmea.iso26262.mpl" folder="fmea" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.fmea/com.fasten.safety.fmea.mpl" folder="fmea" />
