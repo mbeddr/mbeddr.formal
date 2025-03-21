@@ -352,7 +352,7 @@
                         <ref role="3cqZAo" node="21lHZzX6drQ" resolve="yamlFile" />
                       </node>
                       <node concept="37vLTw" id="21lHZzX8FtK" role="37wK5m">
-                        <ref role="3cqZAo" node="21lHZzX6ikg" resolve="readFileToString" />
+                        <ref role="3cqZAo" node="21lHZzX6ikg" resolve="fileContent" />
                       </node>
                     </node>
                   </node>

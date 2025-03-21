@@ -86,7 +86,7 @@
     <property role="EcuMT" value="2329970662259311447" />
     <property role="TrG5h" value="Scalar" />
     <property role="34LRSv" value="-" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="21lHZzX34dp" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
     </node>
@@ -95,7 +95,7 @@
     <property role="EcuMT" value="2329970662259311450" />
     <property role="TrG5h" value="Word" />
     <property role="34LRSv" value="word" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="21lHZzX3eyj" role="1TKVEl">
       <property role="IQ2nx" value="2329970662259353747" />
       <property role="TrG5h" value="text" />
@@ -109,7 +109,7 @@
     <property role="EcuMT" value="2329970662259311452" />
     <property role="TrG5h" value="Comment" />
     <property role="34LRSv" value="comment" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="21lHZzX34du" role="1TKVEl">
       <property role="IQ2nx" value="2329970662259311454" />
       <property role="TrG5h" value="commentText" />
@@ -122,7 +122,7 @@
   <node concept="1TIwiD" id="21lHZzX6GRf">
     <property role="EcuMT" value="2329970662260264399" />
     <property role="TrG5h" value="EndOfLine" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="21lHZzX6GRg" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
     </node>
