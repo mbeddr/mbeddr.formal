@@ -5,6 +5,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.core/com.mpsbasics.core.mpl" folder="" />
       <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.jira/com.mpsbasics.jira.mpl" folder="jira" />
       <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.pdfexporter/com.mpsbasics.pdfexporter.mpl" folder="pdfbox" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.plaintext.yaml/com.mpsbasics.plaintext.yaml.mpl" folder="plaintext_yaml" />
       <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.words.generic/com.mpsbasics.words.generic.mpl" folder="words" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.build/com.mpsbasics.build.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.docx4j.core/com.mpsbasics.docx4j.core.msd" folder="docx4j" />
@@ -16,8 +17,10 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.jira.sandbox/com.mpsbasics.jira.sandbox.msd" folder="jira" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.pdfbox.sandbox/com.mpsbasics.pdfbox.sandbox.msd" folder="pdfbox" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.pdfbox/com.mpsbasics.pdfbox.msd" folder="pdfbox" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.plaintext.yaml.sandbox/com.mpsbasics.plaintext.yaml.sandbox.msd" folder="plaintext_yaml" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.project.utils/com.mpsbasics.project.utils.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.snode.utils/com.mpsbasics.snode.utils.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.com.mpsbasics.plaintext.yaml/test.com.mpsbasics.plaintext.yaml.msd" folder="plaintext_yaml" />
     </projectModules>
   </component>
 </project>
