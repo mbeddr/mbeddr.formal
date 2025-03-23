@@ -15,7 +15,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -37,6 +39,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -81,11 +86,15 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="21lHZzX1IBT" resolve="IYamlToken" />
     </node>
+    <node concept="PrWs8" id="5AI9Uvu4sX1" role="PrDN$">
+      <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
+    </node>
   </node>
   <node concept="1TIwiD" id="21lHZzX34dn">
     <property role="EcuMT" value="2329970662259311447" />
     <property role="TrG5h" value="Scalar" />
     <property role="34LRSv" value="-" />
+    <property role="3GE5qa" value="baselan" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="21lHZzX34dp" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
@@ -125,6 +134,30 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="21lHZzX6GRg" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5AI9Uvu1R0R">
+    <property role="EcuMT" value="6462146117261291575" />
+    <property role="TrG5h" value="Key" />
+    <property role="34LRSv" value="key" />
+    <property role="3GE5qa" value="baselan" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5AI9Uvu5hA5" role="1TKVEl">
+      <property role="IQ2nx" value="6462146117262186885" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="5AI9Uvu1R0S" role="PzmwI">
+      <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5AI9Uvu6u6m">
+    <property role="EcuMT" value="6462146117262500246" />
+    <property role="3GE5qa" value="baselan" />
+    <property role="TrG5h" value="Line" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="5AI9Uvu6u7j" role="PzmwI">
+      <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
     </node>
   </node>
 </model>
