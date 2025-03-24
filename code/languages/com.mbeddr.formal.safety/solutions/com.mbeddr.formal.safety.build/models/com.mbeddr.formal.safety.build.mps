@@ -18205,6 +18205,9 @@
         <node concept="3_I8Xc" id="5cnt3YQEIIu" role="39821P">
           <ref role="3_I8Xa" to="al5i:64SK4bcOqRB" resolve="com.mbeddr.mpsutil.jung" />
         </node>
+        <node concept="3_I8Xc" id="2RWExvyUhpL" role="39821P">
+          <ref role="3_I8Xa" to="90a9:TAJODzV169" resolve="com.mbeddr.mpsutil.intentions" />
+        </node>
         <node concept="3_I8Xc" id="5cnt3YQEING" role="39821P">
           <ref role="3_I8Xa" to="al5i:2wdbvPWEvVz" resolve="com.mbeddr.mpsutil.infrastructure.misc" />
         </node>
@@ -18255,6 +18258,9 @@
         </node>
         <node concept="3_I8Xc" id="6_254Rln41w" role="39821P">
           <ref role="3_I8Xa" to="ffeo:6jDaT$jlWWW" resolve="mps-junit5" />
+        </node>
+        <node concept="3_I8Xc" id="2RWExvyUhpI" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:3vXGXT89g4o" />
         </node>
         <node concept="3_I8Xc" id="dCXfrcV27H" role="39821P">
           <ref role="3_I8Xa" to="90a9:2sSK94l$G4K" resolve="de.itemis.stubs.xml" />
