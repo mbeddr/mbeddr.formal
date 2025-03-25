@@ -21827,7 +21827,7 @@
       <property role="26Ea6C" value="-Didea.indices.psi.dependent.default=false" />
     </node>
     <node concept="26Ea6D" id="nwXZr$UPH0" role="2hID6k">
-      <property role="26Ea6C" value="-Dide.experimental.ui=false" />
+      <property role="26Ea6C" value="-Dide.experimental.ui=true" />
     </node>
     <node concept="26Ea6D" id="nwXZr$UPH1" role="2hID6k">
       <property role="2eq24a" value="true" />
