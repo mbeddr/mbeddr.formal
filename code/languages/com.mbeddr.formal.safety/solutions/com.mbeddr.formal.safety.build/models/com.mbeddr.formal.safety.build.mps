@@ -18260,7 +18260,7 @@
           <ref role="3_I8Xa" to="ffeo:6jDaT$jlWWW" resolve="mps-junit5" />
         </node>
         <node concept="3_I8Xc" id="2RWExvyUhpI" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:3vXGXT89g4o" />
+          <ref role="3_I8Xa" to="ffeo:3vXGXT89g4o" resolve="mps-trove" />
         </node>
         <node concept="3_I8Xc" id="dCXfrcV27H" role="39821P">
           <ref role="3_I8Xa" to="90a9:2sSK94l$G4K" resolve="de.itemis.stubs.xml" />
