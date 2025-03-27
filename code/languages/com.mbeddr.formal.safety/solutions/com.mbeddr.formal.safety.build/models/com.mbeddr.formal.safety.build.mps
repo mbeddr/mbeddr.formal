@@ -17220,7 +17220,7 @@
         </node>
         <node concept="1SiIV0" id="1IhJc2tzBYp" role="3bR37C">
           <node concept="3bR9La" id="1IhJc2tzBYq" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
         <node concept="1SiIV0" id="1IhJc2tzBYr" role="3bR37C">
@@ -17288,7 +17288,7 @@
         </node>
         <node concept="1SiIV0" id="6_254Rln3LH" role="3bR37C">
           <node concept="3bR9La" id="6_254Rln3LI" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
       </node>
@@ -18205,6 +18205,9 @@
         <node concept="3_I8Xc" id="5cnt3YQEIIu" role="39821P">
           <ref role="3_I8Xa" to="al5i:64SK4bcOqRB" resolve="com.mbeddr.mpsutil.jung" />
         </node>
+        <node concept="3_I8Xc" id="2RWExvyUhpL" role="39821P">
+          <ref role="3_I8Xa" to="90a9:TAJODzV169" resolve="com.mbeddr.mpsutil.intentions" />
+        </node>
         <node concept="3_I8Xc" id="5cnt3YQEING" role="39821P">
           <ref role="3_I8Xa" to="al5i:2wdbvPWEvVz" resolve="com.mbeddr.mpsutil.infrastructure.misc" />
         </node>
@@ -18256,6 +18259,9 @@
         <node concept="3_I8Xc" id="6_254Rln41w" role="39821P">
           <ref role="3_I8Xa" to="ffeo:6jDaT$jlWWW" resolve="mps-junit5" />
         </node>
+        <node concept="3_I8Xc" id="2RWExvyUhpI" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:3vXGXT89g4o" resolve="mps-trove" />
+        </node>
         <node concept="3_I8Xc" id="dCXfrcV27H" role="39821P">
           <ref role="3_I8Xa" to="90a9:2sSK94l$G4K" resolve="de.itemis.stubs.xml" />
         </node>
@@ -18282,9 +18288,6 @@
         </node>
         <node concept="3_I8Xc" id="4aeOpjl$fXD" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5CFKsRWS5pU" resolve="mps-debugger-api" />
-        </node>
-        <node concept="3_I8Xc" id="6Kf5KB6RmeW" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:1nJh0raVyYj" resolve="modelchecker.jar" />
         </node>
         <node concept="3_I8Xc" id="7he_lUutsoc" role="39821P">
           <ref role="3_I8Xa" node="7he_lUumPyH" resolve="com.mpsbasics" />
@@ -18717,7 +18720,7 @@
         </node>
         <node concept="1SiIV0" id="7lPNUDMrkTW" role="3bR37C">
           <node concept="3bR9La" id="7lPNUDMrkTX" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
         <node concept="1SiIV0" id="7lPNUDMrkTY" role="3bR37C">
@@ -19650,7 +19653,7 @@
         </node>
         <node concept="1SiIV0" id="6ucyvMUDFeB" role="3bR37C">
           <node concept="3bR9La" id="6ucyvMUDFeC" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
         <node concept="3rtmxn" id="6ucyvMUDFeN" role="3bR31x">
@@ -19758,7 +19761,7 @@
         </node>
         <node concept="1SiIV0" id="6_254Rln3v3" role="3bR37C">
           <node concept="3bR9La" id="6_254Rln3v4" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
       </node>
@@ -19922,7 +19925,7 @@
         </node>
         <node concept="1SiIV0" id="6ucyvMUDFga" role="3bR37C">
           <node concept="3bR9La" id="6ucyvMUDFgb" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
         <node concept="1SiIV0" id="6ucyvMUDFgc" role="3bR37C">
@@ -19995,7 +19998,7 @@
         </node>
         <node concept="1SiIV0" id="6_254Rln3vV" role="3bR37C">
           <node concept="3bR9La" id="6_254Rln3vW" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="com.mbeddr.mpsutil.comparator" />
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
       </node>
@@ -21824,7 +21827,7 @@
       <property role="26Ea6C" value="-Didea.indices.psi.dependent.default=false" />
     </node>
     <node concept="26Ea6D" id="nwXZr$UPH0" role="2hID6k">
-      <property role="26Ea6C" value="-Dide.experimental.ui=false" />
+      <property role="26Ea6C" value="-Dide.experimental.ui=true" />
     </node>
     <node concept="26Ea6D" id="nwXZr$UPH1" role="2hID6k">
       <property role="2eq24a" value="true" />
