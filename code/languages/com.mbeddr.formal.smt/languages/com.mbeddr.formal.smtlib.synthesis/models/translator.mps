@@ -93,11 +93,13 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="1171903607971" name="jetbrains.mps.baseLanguage.structure.WildCardType" flags="in" index="3qTvmN" />
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -267,6 +269,7 @@
           <node concept="17QB3L" id="6cjunGy$lJb" role="3rvQeY" />
           <node concept="3uibUv" id="6cjunGy$mI6" role="3rvSg0">
             <ref role="3uigEE" to="f7eu:~FuncDecl" resolve="FuncDecl" />
+            <node concept="3qTvmN" id="6ppXHmQqe3u" role="11_B2D" />
           </node>
         </node>
       </node>
@@ -276,6 +279,7 @@
           <node concept="17QB3L" id="7xXCuh1yVzE" role="3rvQeY" />
           <node concept="3uibUv" id="7xXCuh1yVAX" role="3rvSg0">
             <ref role="3uigEE" to="f7eu:~DatatypeSort" resolve="DatatypeSort" />
+            <node concept="3qTvmN" id="6ppXHmQqhTl" role="11_B2D" />
           </node>
         </node>
       </node>
@@ -603,7 +607,7 @@
                     <ref role="3cqZAo" node="104dc5Eg9zL" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="104dc5EheU8" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~Context.mkAnd(com.microsoft.z3.BoolExpr...)" resolve="mkAnd" />
+                    <ref role="37wK5l" to="f7eu:~Context.mkAnd(com.microsoft.z3.Expr...)" resolve="mkAnd" />
                     <node concept="2OqwBi" id="104dc5EheU9" role="37wK5m">
                       <node concept="37vLTw" id="104dc5EheUa" role="2Oq$k0">
                         <ref role="3cqZAo" node="104dc5Eh8YK" resolve="inputsAnd" />
@@ -807,7 +811,7 @@
                     <ref role="3cqZAo" node="104dc5Eg9zL" resolve="ctx" />
                   </node>
                   <node concept="liA8E" id="104dc5Ehg2u" role="2OqNvi">
-                    <ref role="37wK5l" to="f7eu:~Context.mkAnd(com.microsoft.z3.BoolExpr...)" resolve="mkAnd" />
+                    <ref role="37wK5l" to="f7eu:~Context.mkAnd(com.microsoft.z3.Expr...)" resolve="mkAnd" />
                     <node concept="2OqwBi" id="104dc5Ehg2v" role="37wK5m">
                       <node concept="37vLTw" id="104dc5Ehg2w" role="2Oq$k0">
                         <ref role="3cqZAo" node="104dc5Ehg1n" resolve="outputsAnd" />
@@ -830,7 +834,7 @@
                       <ref role="3cqZAo" node="104dc5Eg9zL" resolve="ctx" />
                     </node>
                     <node concept="liA8E" id="104dc5Ehm9Q" role="2OqNvi">
-                      <ref role="37wK5l" to="f7eu:~Context.mkImplies(com.microsoft.z3.BoolExpr,com.microsoft.z3.BoolExpr)" resolve="mkImplies" />
+                      <ref role="37wK5l" to="f7eu:~Context.mkImplies(com.microsoft.z3.Expr,com.microsoft.z3.Expr)" resolve="mkImplies" />
                       <node concept="37vLTw" id="104dc5Ehmd3" role="37wK5m">
                         <ref role="3cqZAo" node="104dc5EheU5" resolve="implicant" />
                       </node>
@@ -856,7 +860,7 @@
                 <ref role="3cqZAo" node="104dc5Eg9zL" resolve="ctx" />
               </node>
               <node concept="liA8E" id="6cjunGyxRiY" role="2OqNvi">
-                <ref role="37wK5l" to="f7eu:~Context.mkAnd(com.microsoft.z3.BoolExpr...)" resolve="mkAnd" />
+                <ref role="37wK5l" to="f7eu:~Context.mkAnd(com.microsoft.z3.Expr...)" resolve="mkAnd" />
                 <node concept="2OqwBi" id="6cjunGyxRiZ" role="37wK5m">
                   <node concept="37vLTw" id="6cjunGyxRj0" role="2Oq$k0">
                     <ref role="3cqZAo" node="104dc5Ehi_Q" resolve="translatedCase" />
@@ -884,7 +888,7 @@
               <ref role="3cqZAo" node="104dc5Eg9zN" resolve="solver" />
             </node>
             <node concept="liA8E" id="104dc5EhsGj" role="2OqNvi">
-              <ref role="37wK5l" to="f7eu:~Solver.add(com.microsoft.z3.BoolExpr...)" resolve="add" />
+              <ref role="37wK5l" to="f7eu:~Solver.add(com.microsoft.z3.Expr...)" resolve="add" />
               <node concept="37vLTw" id="6cjunGyxRj2" role="37wK5m">
                 <ref role="3cqZAo" node="6cjunGyxRiV" resolve="res" />
               </node>
