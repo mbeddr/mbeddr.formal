@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.formal.smtlib.z3.lib" uuid="f7821750-33bf-489c-8f64-0850d86d540d" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
-      <sourceRoot location="models" />
-    </modelRoot>
     <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="com.microsoft.z3.jar" />
+      <sourceRoot location="z3-turnkey.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/com.microsoft.z3.jar" />
+      <library location="${module}/lib/z3-turnkey.jar" />
     </facet>
   </facets>
   <dependencies>

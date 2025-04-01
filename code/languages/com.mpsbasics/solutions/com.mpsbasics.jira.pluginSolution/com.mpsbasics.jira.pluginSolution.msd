@@ -4,64 +4,74 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="atlassian-util-concurrent-2.4.2.jar" />
-      <sourceRoot location="guava-10.0.1.jar" />
-      <sourceRoot location="jira-rest-java-client-api-4.0.0.jar" />
-      <sourceRoot location="jira-rest-java-client-core-4.0.0.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="sal-api-3.0.3.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="atlassian-event-2.3.5.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="atlassian-httpclient-plugin-0.23.0.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="spring-beans-2.5.6.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="fugue-2.6.1.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="slf4j-api-2.0.13.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="jcl-over-slf4j-2.0.13.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="jersey-core-1.5.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="jersey-client-1.5.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="jettison-1.1.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="joda-time-1.6.jar" />
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="jackson-core-asl.jar" />
+      <sourceRoot location="joda-time.jar" />
+      <sourceRoot location="jsr305.jar" />
+      <sourceRoot location="httpasyncclient.jar" />
+      <sourceRoot location="jersey-json.jar" />
+      <sourceRoot location="jackson-xc.jar" />
+      <sourceRoot location="commons-logging.jar" />
+      <sourceRoot location="httpclient-cache.jar" />
+      <sourceRoot location="httpcore-nio.jar" />
+      <sourceRoot location="commons-lang.jar" />
+      <sourceRoot location="atlassian-httpclient-api.jar" />
+      <sourceRoot location="jackson-jaxrs.jar" />
+      <sourceRoot location="atlassian-event.jar" />
+      <sourceRoot location="jaxb-api.jar" />
+      <sourceRoot location="httpcore.jar" />
+      <sourceRoot location="jira-rest-java-client-core.jar" />
+      <sourceRoot location="stax-api.jar" />
+      <sourceRoot location="slf4j-api.jar" />
+      <sourceRoot location="guava.jar" />
+      <sourceRoot location="httpclient.jar" />
+      <sourceRoot location="jackson-mapper-asl.jar" />
+      <sourceRoot location="atlassian-util-concurrent.jar" />
+      <sourceRoot location="spring-beans.jar" />
+      <sourceRoot location="jersey-client.jar" />
+      <sourceRoot location="httpmime.jar" />
+      <sourceRoot location="jira-rest-java-client-api.jar" />
+      <sourceRoot location="jersey-core.jar" />
+      <sourceRoot location="spring-core.jar" />
+      <sourceRoot location="httpasyncclient-cache.jar" />
+      <sourceRoot location="jettison.jar" />
+      <sourceRoot location="jaxb-impl.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/atlassian-util-concurrent-2.4.2.jar" />
-      <library location="${module}/lib/guava-10.0.1.jar" />
-      <library location="${module}/lib/jira-rest-java-client-api-4.0.0.jar" />
-      <library location="${module}/lib/jira-rest-java-client-core-4.0.0.jar" />
-      <library location="${module}/lib/sal-api-3.0.3.jar" />
-      <library location="${module}/lib/atlassian-event-2.3.5.jar" />
-      <library location="${module}/lib/atlassian-httpclient-plugin-0.23.0.jar" />
-      <library location="${module}/lib/spring-beans-2.5.6.jar" />
-      <library location="${module}/lib/fugue-2.6.1.jar" />
-      <library location="${module}/lib/slf4j-api-2.0.13.jar" />
-      <library location="${module}/lib/jcl-over-slf4j-2.0.13.jar" />
-      <library location="${module}/lib/jersey-core-1.5.jar" />
-      <library location="${module}/lib/jersey-client-1.5.jar" />
-      <library location="${module}/lib/jettison-1.1.jar" />
-      <library location="${module}/lib/joda-time-1.6.jar" />
+      <library location="${module}/lib/atlassian-event.jar" />
+      <library location="${module}/lib/atlassian-httpclient-api.jar" />
+      <library location="${module}/lib/atlassian-util-concurrent.jar" />
+      <library location="${module}/lib/commons-lang.jar" />
+      <library location="${module}/lib/commons-logging.jar" />
+      <library location="${module}/lib/guava.jar" />
+      <library location="${module}/lib/httpasyncclient-cache.jar" />
+      <library location="${module}/lib/httpasyncclient.jar" />
+      <library location="${module}/lib/httpclient-cache.jar" />
+      <library location="${module}/lib/httpclient.jar" />
+      <library location="${module}/lib/httpcore-nio.jar" />
+      <library location="${module}/lib/httpcore.jar" />
+      <library location="${module}/lib/httpmime.jar" />
+      <library location="${module}/lib/jackson-core-asl.jar" />
+      <library location="${module}/lib/jackson-jaxrs.jar" />
+      <library location="${module}/lib/jackson-mapper-asl.jar" />
+      <library location="${module}/lib/jackson-xc.jar" />
+      <library location="${module}/lib/jaxb-api.jar" />
+      <library location="${module}/lib/jaxb-impl.jar" />
+      <library location="${module}/lib/jersey-client.jar" />
+      <library location="${module}/lib/jersey-core.jar" />
+      <library location="${module}/lib/jersey-json.jar" />
+      <library location="${module}/lib/jettison.jar" />
+      <library location="${module}/lib/jira-rest-java-client-api.jar" />
+      <library location="${module}/lib/jira-rest-java-client-core.jar" />
+      <library location="${module}/lib/joda-time.jar" />
+      <library location="${module}/lib/jsr305.jar" />
+      <library location="${module}/lib/slf4j-api.jar" />
+      <library location="${module}/lib/spring-beans.jar" />
+      <library location="${module}/lib/spring-core.jar" />
+      <library location="${module}/lib/stax-api.jar" />
     </facet>
   </facets>
   <dependencies>
@@ -70,15 +80,8 @@
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
-    <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
-    <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
     <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
-    <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
-    <language slang="l:a247e09e-2435-45ba-b8d2-07e93feba96a:jetbrains.mps.baseLanguage.tuples" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
-    <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
-    <language slang="l:7866978e-a0f0-4cc7-81bc-4d213d9375e1:jetbrains.mps.lang.smodel" version="19" />
-    <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
@@ -91,4 +94,3 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
   </dependencyVersions>
 </solution>
-

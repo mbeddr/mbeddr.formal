@@ -5,23 +5,23 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="asm-tree-9.2.jar" />
-      <sourceRoot location="parboiled-java-1.4.1.jar" />
-      <sourceRoot location="asm-9.2.jar" />
-      <sourceRoot location="asm-analysis-9.2.jar" />
-      <sourceRoot location="asm-util-9.2.jar" />
-      <sourceRoot location="parboiled-core-1.4.1.jar" />
+      <sourceRoot location="asm-analysis.jar" />
+      <sourceRoot location="asm-tree.jar" />
+      <sourceRoot location="asm-util.jar" />
+      <sourceRoot location="asm.jar" />
+      <sourceRoot location="parboiled-core.jar" />
+      <sourceRoot location="parboiled-java.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/asm-tree-9.2.jar" />
-      <library location="${module}/lib/parboiled-java-1.4.1.jar" />
-      <library location="${module}/lib/asm-9.2.jar" />
-      <library location="${module}/lib/asm-analysis-9.2.jar" />
-      <library location="${module}/lib/asm-util-9.2.jar" />
-      <library location="${module}/lib/parboiled-core-1.4.1.jar" />
+      <library location="${module}/lib/asm-analysis.jar" />
+      <library location="${module}/lib/asm-tree.jar" />
+      <library location="${module}/lib/asm-util.jar" />
+      <library location="${module}/lib/asm.jar" />
+      <library location="${module}/lib/parboiled-core.jar" />
+      <library location="${module}/lib/parboiled-java.jar" />
     </facet>
   </facets>
   <dependencies>

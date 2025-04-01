@@ -35,10 +35,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="d4sc" ref="bc7d0863-298c-41cf-984f-a0421e757da5/java:com.openhtmltopdf.pdfboxout(com.mpsbasics.pdfbox/)" />
-    <import index="mq3p" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.jsoup.helper(MPS.ThirdParty/)" />
     <import index="9570" ref="bc7d0863-298c-41cf-984f-a0421e757da5/java:com.openhtmltopdf.outputdevice.helper(com.mpsbasics.pdfbox/)" />
-    <import index="b3ru" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.jsoup.nodes(MPS.ThirdParty/)" />
-    <import index="qajb" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.jsoup(MPS.ThirdParty/)" />
     <import index="1z1r" ref="bc7d0863-298c-41cf-984f-a0421e757da5/java:org.apache.pdfbox(com.mpsbasics.pdfbox/)" />
   </imports>
   <registry>

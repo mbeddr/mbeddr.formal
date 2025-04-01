@@ -1,31 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mpsbasics.pdfbox" uuid="bc7d0863-298c-41cf-984f-a0421e757da5" moduleVersion="0">
   <models>
+    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="graphics2d.jar" />
+      <sourceRoot location="openhtmltopdf-core.jar" />
+      <sourceRoot location="openhtmltopdf-pdfbox.jar" />
+      <sourceRoot location="pdfbox-app.jar" />
+      <sourceRoot location="xmpbox.jar" />
+    </modelRoot>
     <modelRoot type="default" contentPath="${module}">
       <sourceRoot location="models" />
-    </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="graphics2d-3.0.1.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="pdfbox-app-3.0.1.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="xmpbox-3.0.1.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="openhtmltopdf-core-1.1.23.jar" />
-      <sourceRoot location="openhtmltopdf-pdfbox-1.1.23.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/openhtmltopdf-core-1.1.23.jar" />
-      <library location="${module}/lib/openhtmltopdf-pdfbox-1.1.23.jar" />
-      <library location="${module}/lib/xmpbox-3.0.1.jar" />
-      <library location="${module}/lib/pdfbox-app-3.0.1.jar" />
-      <library location="${module}/lib/graphics2d-3.0.1.jar" />
+      <library location="${module}/lib/graphics2d.jar" />
+      <library location="${module}/lib/openhtmltopdf-core.jar" />
+      <library location="${module}/lib/openhtmltopdf-pdfbox.jar" />
+      <library location="${module}/lib/pdfbox-app.jar" />
+      <library location="${module}/lib/xmpbox.jar" />
     </facet>
   </facets>
   <dependencies>
