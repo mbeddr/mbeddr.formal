@@ -110,7 +110,6 @@ org.slf4j:slf4j-api:1.7.12=jira
 org.slf4j:slf4j-api:2.0.12=docx4j
 org.springframework:spring-beans:2.5.6=jira
 org.springframework:spring-core:2.5.6=jira
-org.swinglabs.swingx:swingx-core:1.6.3=swingx
 stax:stax-api:1.0.1=jira
 tools.aqua:z3-turnkey:4.11.2=z3
 xml-apis:xml-apis-ext:1.3.04=plantUML

@@ -92,9 +92,6 @@ configurations {
     val sat4j by creating {
         isTransitive = false
     }
-    val swingx by creating {
-        isTransitive = false
-    }
     val jfreechart by creating {
         isTransitive = false
     }
@@ -131,8 +128,6 @@ configurations {
         docx4j("org.docx4j:docx4j-JAXB-MOXy:$docx4JVersion")
 
         sat4j("org.ow2.sat4j:org.ow2.sat4j.core:2.3.6")
-
-        swingx("org.swinglabs.swingx:swingx-core:1.6.3")
 
         jfreechart("org.jfree:jfreechart:1.5.3")
 
@@ -273,12 +268,6 @@ val resolveSat4j = createSyncTask(
     destinationDir = file("code/languages/com.mbeddr.formal.nusmv/solutions/com.fasten.base.sat/lib")
 )
 
-val resolveSwingx = createSyncTask(
-    taskName = "resolveSwingx",
-    configurationName = "swingx",
-    destinationDir = file("code/languages/com.mbeddr.formal.nusmv/solutions/com.mbeddr.formal.base.tooling/lib")
-)
-
 val resolveJFreeChart = createSyncTask(
     taskName = "resolveJFreeChart",
     configurationName = "jfreechart",
@@ -324,7 +313,6 @@ tasks {
         dependsOn(resolvePlantUML)
         dependsOn(resolveDocx4j)
         dependsOn(resolveSat4j)
-        dependsOn(resolveSwingx)
         dependsOn(resolveJFreeChart)
         dependsOn(resolveNuSMV)
         dependsOn(resolveZ3)
@@ -578,7 +566,6 @@ cyclonedxBom {
         "docx4j",
         "plantUML",
         "sat4j",
-        "swingx",
         "jfreechart",
         "nusmv",
         "z3",
@@ -670,7 +657,6 @@ fun configurePublication(publication: MavenPublication, group: String, artifactI
                 "docx4j",
                 "plantUML",
                 "sat4j",
-                "swingx",
                 "jfreechart",
                 "nusmv",
                 "z3",

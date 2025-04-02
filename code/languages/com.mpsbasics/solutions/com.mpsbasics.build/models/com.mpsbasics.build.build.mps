@@ -450,22 +450,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="3rtmxn" id="1hUQF5WmqIB" role="3bR31x">
-          <node concept="3LXTmp" id="1hUQF5WmqIC" role="3rtmxm">
-            <node concept="3qWCbU" id="1hUQF5WmqID" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
-            </node>
-            <node concept="398BVA" id="1hUQF5WmqIE" role="3LXTmr">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="1hUQF5WmqIF" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="1hUQF5WmqIG" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.formal.base.tooling" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="3jaLROLwp0d" role="3bR37C">
           <node concept="3bR9La" id="3jaLROLwp0e" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiHrmy" resolve="jetbrains.mps.java.stub" />
