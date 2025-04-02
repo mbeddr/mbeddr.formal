@@ -245,27 +245,6 @@
       <node concept="m$_wl" id="2MrvZqtDm59" role="39821P">
         <ref role="m_rDy" node="2MrvZqtDklV" resolve="com.mpsbasics.testutils" />
         <node concept="pUk6x" id="2MrvZqtDm5a" role="pUk7w" />
-        <node concept="398223" id="2MrvZqtDm5b" role="39821P">
-          <node concept="3_J27D" id="2MrvZqtDm5c" role="Nbhlr">
-            <node concept="3Mxwew" id="2MrvZqtDm5d" role="3MwsjC">
-              <property role="3MwjfP" value="lib" />
-            </node>
-          </node>
-          <node concept="2HvfSZ" id="2MrvZqtDm5e" role="39821P">
-            <node concept="398BVA" id="2MrvZqtDm5f" role="2HvfZ0">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="2MrvZqtDm5g" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="2MrvZqtDm5h" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mpsbasics.docx4j.diffx.lib" />
-                  <node concept="2Ry0Ak" id="2MrvZqtDm5i" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="L2wRC" id="wUJmWCwVZN" role="39821P">
         <ref role="L2wRA" node="5jdn85oHU1h" resolve="com.mpsbasics.build" />
