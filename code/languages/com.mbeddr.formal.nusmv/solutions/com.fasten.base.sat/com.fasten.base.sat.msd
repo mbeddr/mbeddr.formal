@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.fasten.base.sat" uuid="e9038998-a640-4eb0-b13b-4b4970869bbd" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="org.sat4j.core-src.jar" />
-      <sourceRoot location="org.sat4j.core.jar" />
+      <sourceRoot location="org.ow2.sat4j.core.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet compile="mps" classes="mps" ext="no" type="java">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/org.sat4j.core-src.jar" />
-      <library location="${module}/lib/org.sat4j.core.jar" />
+      <library location="${module}/lib/org.ow2.sat4j.core.jar" />
     </facet>
   </facets>
   <dependencies>

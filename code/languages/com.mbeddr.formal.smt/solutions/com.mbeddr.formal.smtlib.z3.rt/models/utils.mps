@@ -39,6 +39,10 @@
         <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
+        <child id="1070534934091" name="type" index="10QFUM" />
+        <child id="1070534934092" name="expression" index="10QFUP" />
+      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -88,11 +92,13 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="1171903607971" name="jetbrains.mps.baseLanguage.structure.WildCardType" flags="in" index="3qTvmN" />
       <concept id="7812454656619025416" name="jetbrains.mps.baseLanguage.structure.MethodDeclaration" flags="ng" index="1rXfSm">
         <property id="8355037393041754995" name="isNative" index="2aFKle" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -323,8 +329,14 @@
                   </node>
                   <node concept="liA8E" id="6cjunGyEhrW" role="2OqNvi">
                     <ref role="37wK5l" to="f7eu:~Model.getConstInterp(com.microsoft.z3.FuncDecl)" resolve="getConstInterp" />
-                    <node concept="2GrUjf" id="6cjunGyEhrX" role="37wK5m">
-                      <ref role="2Gs0qQ" node="6cjunGyEb49" resolve="cd" />
+                    <node concept="10QFUN" id="6ppXHmPIGD5" role="37wK5m">
+                      <node concept="3uibUv" id="6ppXHmPIGD6" role="10QFUM">
+                        <ref role="3uigEE" to="f7eu:~FuncDecl" resolve="FuncDecl" />
+                        <node concept="3qTvmN" id="6ppXHmPIGD7" role="11_B2D" />
+                      </node>
+                      <node concept="2GrUjf" id="6ppXHmPIGD8" role="10QFUP">
+                        <ref role="2Gs0qQ" node="6cjunGyEb49" resolve="cd" />
+                      </node>
                     </node>
                   </node>
                 </node>
@@ -384,8 +396,14 @@
                   </node>
                   <node concept="liA8E" id="6cjunGyEiTz" role="2OqNvi">
                     <ref role="37wK5l" to="f7eu:~Model.getFuncInterp(com.microsoft.z3.FuncDecl)" resolve="getFuncInterp" />
-                    <node concept="2GrUjf" id="6cjunGyEiT$" role="37wK5m">
-                      <ref role="2Gs0qQ" node="6cjunGyEiTe" resolve="fd" />
+                    <node concept="10QFUN" id="6ppXHmPIEsP" role="37wK5m">
+                      <node concept="3uibUv" id="6ppXHmPIF0E" role="10QFUM">
+                        <ref role="3uigEE" to="f7eu:~FuncDecl" resolve="FuncDecl" />
+                        <node concept="3qTvmN" id="6ppXHmPIG0v" role="11_B2D" />
+                      </node>
+                      <node concept="2GrUjf" id="6cjunGyEiT$" role="10QFUP">
+                        <ref role="2Gs0qQ" node="6cjunGyEiTe" resolve="fd" />
+                      </node>
                     </node>
                   </node>
                 </node>
