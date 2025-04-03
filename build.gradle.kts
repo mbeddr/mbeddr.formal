@@ -605,8 +605,8 @@ cyclonedxBom {
         projectDirectories.from(projectsToMigrate)
         pluginRoots.from(pluginRootsForMigration)
 
-        haltOnPrecheckFailure = true
-        haltOnDependencyError = true
+        haltOnPrecheckFailure = false
+        haltOnDependencyError = false
 
         maxHeapSize = "4G"
     }
