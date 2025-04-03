@@ -1126,7 +1126,7 @@
                 </node>
                 <node concept="Rm8GO" id="6R6ZVTpxOPF" role="37wK5m">
                   <ref role="Rm8GQ" to="tlox:~HSBTreeMapColorProvider$ColorDistributionTypes.LOG" resolve="LOG" />
-                  <ref role="1Px2BO" to="tlox:~HSBTreeMapColorProvider$ColorDistributionTypes" resolve="ColorDistributionTypes" />
+                  <ref role="1Px2BO" to="tlox:~HSBTreeMapColorProvider$ColorDistributionTypes" resolve="HSBTreeMapColorProvider.ColorDistributionTypes" />
                 </node>
                 <node concept="10M0yZ" id="5Dw7oA66r6E" role="37wK5m">
                   <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />

@@ -1063,6 +1063,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="2my$dfVXqV3" role="3bR31x">
+          <node concept="3LXTmp" id="2my$dfVXqV4" role="3rtmxm">
+            <node concept="3qWCbU" id="2my$dfVXqV5" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="2my$dfVXqV6" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="2my$dfVXqV7" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2my$dfVXqV8" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="2MrvZqtDg3S" role="3989C9">
