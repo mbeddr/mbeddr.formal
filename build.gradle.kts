@@ -40,8 +40,8 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2023"
-val minor = "2"
+val major = "2024"
+val minor = "1"
 val bugfix = "2"
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
@@ -238,7 +238,7 @@ fun createSyncTask(taskName: String, configurationName: String, destinationDir: 
         into(destinationDir)
         rename { filename ->
             val ra = configurations[configurationName].resolvedConfiguration.resolvedArtifacts.find { it.file.name == filename }!!
-            
+
             if (ra.classifier != null) {
                 "${ra.name}-${ra.classifier}.${ra.extension}"
             } else {
@@ -369,7 +369,7 @@ tasks {
     }
 
     val build_allScripts by registering {
-        dependsOn(patch_allScripts, resolveLanguageLibs) 
+        dependsOn(patch_allScripts, resolveLanguageLibs)
     }
 
     val build_formal_languages by registering(BuildLanguages::class) {
@@ -544,7 +544,7 @@ tasks {
     }
 
     val build_all_languages by registering {
-	// as of 01.2025, all languages built by 'build_assurance_languages' are also built by 'build_formal_languages' 
+	// as of 01.2025, all languages built by 'build_assurance_languages' are also built by 'build_formal_languages'
 	// commented out to avoid multiple building of the same languages
         dependsOn(/*build_assurance_languages,*/ build_formal_languages)
     }
@@ -556,7 +556,7 @@ tasks {
     }
 
 cyclonedxBom {
-    destination = file("$buildDir/reports") 
+    destination = file("$buildDir/reports")
     outputName = "sbom"
     outputFormat = "json"
     includeLicenseText = false
@@ -594,7 +594,7 @@ cyclonedxBom {
         "com.mbeddr.formal.safety",
     ).map { layout.projectDirectory.dir("code/languages/$it") }
 
-    val pluginRootsForMigration = listOf(mpsHomeDir.resolve("plugins"), dependenciesDir.asFile)
+    val pluginRootsForMigration = mpsHomeDir.listFiles()
 
     val migrate by registering(MpsMigrate::class) {
         dependsOn(resolveMps, downloadJbr, build_all_languages)
@@ -650,7 +650,7 @@ fun configurePublication(publication: MavenPublication, group: String, artifactI
         artifact(packageTask)
         pom.withXml {
             val dependenciesNode = asNode().appendNode("dependencies")
-            
+
             listOf(
                 "languageLibs",
                 "mps",

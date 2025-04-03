@@ -13,7 +13,6 @@
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
-    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="tpcq" ref="r:00000000-0000-4000-0000-011c89590286(jetbrains.mps.lang.core.plugin)" />
     <import index="fn29" ref="r:6ba2667b-185e-45cd-ac65-e4b9d66da28e(jetbrains.mps.smodel.resources)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -25,7 +24,7 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="b0pz" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project.facets(MPS.Core/)" />
     <import index="8oaq" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.apache.commons.io(MPS.ThirdParty/)" />
-    <import index="n8ay" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.apache.commons.lang(MPS.ThirdParty/)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" implicit="true" />
   </imports>
@@ -2288,9 +2287,9 @@
               </node>
             </node>
           </node>
-          <node concept="10M0yZ" id="jZav4mCYas" role="3clFbw">
-            <ref role="3cqZAo" to="n8ay:~SystemUtils.IS_OS_WINDOWS" resolve="IS_OS_WINDOWS" />
-            <ref role="1PxDUh" to="n8ay:~SystemUtils" resolve="SystemUtils" />
+          <node concept="10M0yZ" id="2i2e8U0Y7wQ" role="3clFbw">
+            <ref role="3cqZAo" to="zn9m:~SystemInfo.isWindows" resolve="isWindows" />
+            <ref role="1PxDUh" to="zn9m:~SystemInfo" resolve="SystemInfo" />
           </node>
         </node>
         <node concept="3clFbF" id="5y2MdLwLeET" role="3cqZAp">

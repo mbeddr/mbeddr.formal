@@ -22,6 +22,7 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="vxn5" ref="r:a3aca88b-58e4-4e34-884c-ec641c87bfca(com.mbeddr.formal.base.tooling.results_ui)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
     <import index="ztk3" ref="r:1d7819a9-9001-45b3-8897-91b2f81186cb(com.mbeddr.formal.base.tooling.ui)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="v4mk" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.jdesktop.swingx(MPS.ThirdParty/)" implicit="true" />
@@ -40,7 +41,7 @@
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
-      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
+      <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
       <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
@@ -70,9 +71,6 @@
       <concept id="1081256982272" name="jetbrains.mps.baseLanguage.structure.InstanceOfExpression" flags="nn" index="2ZW3vV">
         <child id="1081256993305" name="classType" index="2ZW6by" />
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
-      </concept>
-      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
-        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -149,7 +147,7 @@
       <concept id="1160998861373" name="jetbrains.mps.baseLanguage.structure.AssertStatement" flags="nn" index="1gVbGN">
         <child id="1160998896846" name="condition" index="1gVkn0" />
       </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
@@ -177,7 +175,7 @@
       </concept>
       <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1081855346303" name="jetbrains.mps.baseLanguage.structure.BreakStatement" flags="nn" index="3zACq4" />
-      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
+      <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
       <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
@@ -225,7 +223,7 @@
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
@@ -1038,27 +1036,23 @@
                               </node>
                             </node>
                             <node concept="3clFbS" id="2k2dPZH6$th" role="1zc67A">
-                              <node concept="3clFbF" id="2k2dPZH6$ti" role="3cqZAp">
-                                <node concept="2YIFZM" id="2k2dPZH6$tj" role="3clFbG">
-                                  <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
-                                  <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
+                              <node concept="3clFbF" id="2i2e8U2Fvd2" role="3cqZAp">
+                                <node concept="2YIFZM" id="2i2e8U2Fxdy" role="3clFbG">
+                                  <ref role="37wK5l" to="jkm4:~Messages.showErrorDialog(java.awt.Component,java.lang.String,java.lang.String)" resolve="showErrorDialog" />
+                                  <ref role="1Pybhc" to="jkm4:~Messages" resolve="Messages" />
                                   <node concept="37vLTw" id="4_pH3zvo18A" role="37wK5m">
                                     <ref role="3cqZAo" to="vxn5:JsaLOcnA09" resolve="analysesResultsTable" />
                                   </node>
-                                  <node concept="2OqwBi" id="2k2dPZH6$tl" role="37wK5m">
-                                    <node concept="37vLTw" id="2k2dPZH6$tm" role="2Oq$k0">
+                                  <node concept="2OqwBi" id="2i2e8U2G1Sw" role="37wK5m">
+                                    <node concept="37vLTw" id="2i2e8U2G0CW" role="2Oq$k0">
                                       <ref role="3cqZAo" node="2k2dPZH6$tf" resolve="ex" />
                                     </node>
-                                    <node concept="liA8E" id="2k2dPZH6$tn" role="2OqNvi">
+                                    <node concept="liA8E" id="2i2e8U2G49C" role="2OqNvi">
                                       <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                                     </node>
                                   </node>
-                                  <node concept="Xl_RD" id="2k2dPZH6$to" role="37wK5m">
-                                    <property role="Xl_RC" value="Error" />
-                                  </node>
-                                  <node concept="10M0yZ" id="2k2dPZH6$tp" role="37wK5m">
-                                    <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
-                                    <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                  <node concept="Xl_RD" id="2i2e8U2FGih" role="37wK5m">
+                                    <property role="Xl_RC" value="Error reunning last analysis" />
                                   </node>
                                 </node>
                               </node>

@@ -10,12 +10,12 @@
   </languages>
   <imports>
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
-    <import index="mkxq" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.jira.rest.client.api(com.fasten.jira/)" />
+    <import index="mkxq" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.jira.rest.client.api(com.mpsbasics.jira.pluginSolution/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="lagk" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.jira.rest.client.api.domain(com.mpsbasics.jira.pluginSolution/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="xbmv" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.jira.rest.client.internal.async(com.fasten.jira/)" />
-    <import index="oqtg" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.jira.rest.client.auth(com.fasten.jira.pluginSolution/)" />
+    <import index="xbmv" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.jira.rest.client.internal.async(com.mpsbasics.jira.pluginSolution/)" />
+    <import index="oqtg" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.jira.rest.client.auth(com.mpsbasics.jira.pluginSolution/)" />
     <import index="cxdr" ref="r:10e9be3d-5ae8-41d9-9554-78e944872df2(com.mpsbasics.jira.structure)" />
     <import index="ct1y" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.util.concurrent(com.mpsbasics.jira.pluginSolution/)" implicit="true" />
   </imports>

@@ -8,6 +8,11 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="jlyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.filechooser(JDK/)" />
+    <import index="xlxw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.math(JDK/)" />
+    <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
+    <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
+    <import index="syuh" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.concurrency(MPS.IDEA/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -39,6 +44,7 @@
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -91,6 +97,11 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="5351203823916832286" name="jetbrains.mps.baseLanguage.structure.ResourceVariable" flags="ng" index="3J1hQo" />
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
+        <child id="8276990574886367508" name="body" index="1zxBo7" />
+        <child id="5351203823916750334" name="resource" index="3J1_TS" />
       </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
@@ -238,25 +249,47 @@
           <node concept="3cpWsn" id="38aFq1iXZVn" role="3cpWs9">
             <property role="TrG5h" value="returnValue" />
             <node concept="10Oyi0" id="38aFq1iXZVp" role="1tU5fm" />
-            <node concept="2OqwBi" id="38aFq1iY0zC" role="33vP2m">
-              <node concept="37vLTw" id="38aFq1iY0zB" role="2Oq$k0">
-                <ref role="3cqZAo" node="38aFq1iXWxs" resolve="jfc" />
+          </node>
+        </node>
+        <node concept="3J1_TO" id="41E4zrq1FM6" role="3cqZAp">
+          <node concept="3clFbS" id="41E4zrq1FM8" role="1zxBo7">
+            <node concept="3clFbF" id="41E4zrq1I_T" role="3cqZAp">
+              <node concept="37vLTI" id="41E4zrq1I_V" role="3clFbG">
+                <node concept="2OqwBi" id="38aFq1iY0zC" role="37vLTx">
+                  <node concept="37vLTw" id="38aFq1iY0zB" role="2Oq$k0">
+                    <ref role="3cqZAo" node="38aFq1iXWxs" resolve="jfc" />
+                  </node>
+                  <node concept="liA8E" id="38aFq1iY0zD" role="2OqNvi">
+                    <ref role="37wK5l" to="dxuu:~JFileChooser.showSaveDialog(java.awt.Component)" resolve="showSaveDialog" />
+                    <node concept="10Nm6u" id="38aFq1iY0zE" role="37wK5m" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="41E4zrq1I_Z" role="37vLTJ">
+                  <ref role="3cqZAo" node="38aFq1iXZVn" resolve="returnValue" />
+                </node>
               </node>
-              <node concept="liA8E" id="38aFq1iY0zD" role="2OqNvi">
-                <ref role="37wK5l" to="dxuu:~JFileChooser.showSaveDialog(java.awt.Component)" resolve="showSaveDialog" />
-                <node concept="10Nm6u" id="38aFq1iY0zE" role="37wK5m" />
-              </node>
+            </node>
+          </node>
+          <node concept="3J1hQo" id="41E4zrq1FM9" role="3J1_TS">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="token" />
+            <node concept="3uibUv" id="41E4zrq1GWb" role="1tU5fm">
+              <ref role="3uigEE" to="bd8o:~AccessToken" resolve="AccessToken" />
+            </node>
+            <node concept="2YIFZM" id="41E4zrq1GBt" role="33vP2m">
+              <ref role="37wK5l" to="syuh:~ThreadContext.resetThreadContext()" resolve="resetThreadContext" />
+              <ref role="1Pybhc" to="syuh:~ThreadContext" resolve="ThreadContext" />
             </node>
           </node>
         </node>
         <node concept="3clFbJ" id="38aFq1iXZVs" role="3cqZAp">
           <node concept="3clFbC" id="38aFq1iXZVt" role="3clFbw">
-            <node concept="37vLTw" id="38aFq1iXZVu" role="3uHU7B">
-              <ref role="3cqZAo" node="38aFq1iXZVn" resolve="returnValue" />
-            </node>
             <node concept="10M0yZ" id="38aFq1iY0qp" role="3uHU7w">
               <ref role="3cqZAo" to="dxuu:~JFileChooser.APPROVE_OPTION" resolve="APPROVE_OPTION" />
               <ref role="1PxDUh" to="dxuu:~JFileChooser" resolve="JFileChooser" />
+            </node>
+            <node concept="37vLTw" id="38aFq1iXZVu" role="3uHU7B">
+              <ref role="3cqZAo" node="38aFq1iXZVn" resolve="returnValue" />
             </node>
           </node>
           <node concept="3clFbS" id="38aFq1iXZVx" role="3clFbx">

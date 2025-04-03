@@ -35,6 +35,7 @@
       <sourceRoot location="org.eclipse.persistence.moxy.jar" />
       <sourceRoot location="jakarta.activation-api.jar" />
     </modelRoot>
+    <modelRoot type="java_classes" contentPath="${module}/lib" />
   </models>
   <facets>
     <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">
