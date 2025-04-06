@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:f913842d-4de5-41a3-90fb-88c857c893cf(_500_real_world_examples._020_acc)" content="header">
+  <persistence version="9" />
+  <languages>
+    <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
+  </languages>
+  <imports />
+</model>
+
