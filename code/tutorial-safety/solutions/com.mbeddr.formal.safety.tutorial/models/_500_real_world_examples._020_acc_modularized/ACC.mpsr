@@ -19136,7 +19136,7 @@
     <node concept="9kjDo" id="4Od2Yw_1sa$" role="9lmNH">
       <node concept="19SGf9" id="4Od2Yw_1sa_" role="9kjJR">
         <node concept="19SUe$" id="4Od2Yw_1saA" role="19SJt6">
-          <property role="19SUeA" value="This argument was imported from the dataset available at 'https://zenodo.org/records/13368055'&#10;associated to the paper &quot;AI-Supported Eliminative Argumentation: Practical Experience Generating &#10;Defeaters to Increase Confidence in Assurance Cases&quot; by Torin Viger, Logan Murphy, Simon Diemert, &#10;Claudio Menghi, Alessio Di Sandro, Jeff Joyce, Marsha Chechik" />
+          <property role="19SUeA" value="This argument was imported from the dataset available at 'https://zenodo.org/records/13368055'&#10;associated to the paper &quot;AI-Supported Eliminative Argumentation: Practical Experience Generating &#10;Defeaters to Increase Confidence in Assurance Cases&quot; by Torin Viger, Logan Murphy, Simon Diemert, &#10;Claudio Menghi, Alessio Di Sandro, Jeff Joyce, Marsha Chechik&#10;&#10;The original argument used Eliminative Argumentation Notation, the import ignored the defeaters&#10;and transformed the argument in GSN. " />
         </node>
       </node>
     </node>
