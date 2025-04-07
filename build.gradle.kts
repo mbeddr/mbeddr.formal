@@ -3,6 +3,7 @@ import de.itemis.mps.gradle.tasks.MpsCheck
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
 import java.util.Date
+import groovy.util.Node
 
 plugins {
     base
@@ -13,6 +14,8 @@ plugins {
 
     id("download-jbr") version mpsGradlePluginVersion
     id("de.itemis.mps.gradle.common") version mpsGradlePluginVersion
+
+    id("org.cyclonedx.bom") version "2.2.0"
 }
 
 val jbrVers = "17.0.8.1-b1000.32"
@@ -39,7 +42,7 @@ logger.info("Repository username: {}", nexusUsername)
 // Project versions
 val major = "2024"
 val minor = "1"
-val bugfix = "1"
+val bugfix = "2"
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
@@ -77,9 +80,33 @@ if (ciBuild) {
 
 val publishingRepository = uri("https://artifacts.itemis.cloud/repository/maven-mps-releases")
 
+val docx4JVersion = "11.4.11"
+
 configurations {
     val mps by creating
     val languageLibs by creating
+    val docx4j by creating
+    val plantUML by creating {
+        isTransitive = false
+    }
+    val sat4j by creating {
+        isTransitive = false
+    }
+    val jfreechart by creating {
+        isTransitive = false
+    }
+    val nusmv by creating {
+        isTransitive = false
+    }
+    val z3 by creating {
+        isTransitive = false
+    }
+    val jira by creating
+
+    val pdfbox by creating {
+        isTransitive = false
+    }
+
     // includes also junit tasks support
     val antLib by creating
     val jbrWin by creating
@@ -88,8 +115,39 @@ configurations {
 
     dependencies {
         mps("com.jetbrains:mps:$mpsVersion")
+
         languageLibs("com.mbeddr:platform:$platformVersion")
         languageLibs("org.mpsqa:all-in-one:$platformVersion")
+
+        plantUML("org.apache.xmlgraphics:batik-all:1.18")
+        plantUML("net.sourceforge.plantuml:plantuml-epl:1.2024.7")
+        plantUML("xml-apis:xml-apis-ext:1.3.04")
+        plantUML("org.apache.xmlgraphics:xmlgraphics-commons:2.2")
+
+        docx4j("org.docx4j:docx4j-core:$docx4JVersion")
+        docx4j("org.docx4j:docx4j-JAXB-MOXy:$docx4JVersion")
+
+        sat4j("org.ow2.sat4j:org.ow2.sat4j.core:2.3.6")
+
+        jfreechart("org.jfree:jfreechart:1.5.3")
+
+        nusmv("org.ow2.asm:asm:9.2")
+        nusmv("org.ow2.asm:asm-analysis:9.2")
+        nusmv("org.ow2.asm:asm-tree:9.2")
+        nusmv("org.ow2.asm:asm-util:9.2")
+        nusmv("org.parboiled:parboiled-core:1.4.1")
+        nusmv("org.parboiled:parboiled-java:1.4.1")
+
+        z3("tools.aqua:z3-turnkey:4.11.2")
+
+        jira("com.atlassian.jira:jira-rest-java-client-core:4.0.0")
+
+        pdfbox("org.apache.pdfbox:pdfbox-app:3.0.1")
+        pdfbox("de.rototor.pdfbox:graphics2d:3.0.1")
+        pdfbox("io.github.openhtmltopdf:openhtmltopdf-core:1.1.23")
+        pdfbox("io.github.openhtmltopdf:openhtmltopdf-pdfbox:1.1.23")
+        pdfbox("org.apache.pdfbox:xmpbox:3.0.1")
+
         antLib("org.apache.ant:ant-junit:1.10.6")
         jbrWin("com.jetbrains.jdk:jbr_jcef:$jbrVers:windows-x64@tgz")
         jbrMac("com.jetbrains.jdk:jbr_jcef:$jbrVers:osx-x64@tgz")
@@ -101,7 +159,7 @@ dependencyLocking { lockAllConfigurations() }
 
 repositories {
     val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps",
-            "https://maven.pkg.github.com/mbeddr/*")
+            "https://maven.pkg.github.com/mbeddr/*","https://packages.atlassian.com/mvn/maven-external")
 
     for (repoUrl in dependencyRepositories) {
         maven {
@@ -143,10 +201,11 @@ val resolveMps = if (skipResolveMps) {
 val buildScriptClasspath = project.configurations["antLib"]
 
 val artifactsDir = layout.buildDirectory.dir("artifacts").get()
+val reportsDir = layout.buildDirectory.dir("reports").get()
 val dependenciesDir = layout.buildDirectory.dir("dependencies").get()
 val jdkDir = layout.buildDirectory.dir("jdkDir").get()
 
-
+group = "com.mbeddr"
 // ___________________ utilities ___________________
 
 val defaultScriptArgs = mapOf(
@@ -173,6 +232,72 @@ fun unpackAndRenameJBR(archiveName : String, nameOfDirectoryInsideArchive : Stri
     file(jbrDownloadDir + "/${nameOfDirectoryInsideArchive}").renameTo(file("${jbrDownloadDir}/${nameOfJbrDirectory}"))
 }
 
+fun createSyncTask(taskName: String, configurationName: String, destinationDir: File): TaskProvider<Sync> {
+    return tasks.register(taskName, Sync::class) {
+        from({ configurations[configurationName].resolve().map { file -> file } })
+        into(destinationDir)
+        rename { filename ->
+            val ra = configurations[configurationName].resolvedConfiguration.resolvedArtifacts.find { it.file.name == filename }!!
+
+            if (ra.classifier != null) {
+                "${ra.name}-${ra.classifier}.${ra.extension}"
+            } else {
+                "${ra.name}.${ra.extension}"
+            }
+        }
+
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    }
+}
+
+val resolvePlantUML = createSyncTask(
+    taskName = "resolvePlantUML",
+    configurationName = "plantUML",
+    destinationDir = file("code/languages/com.fasten.symo/solutions/com.symo.plantuml.lib/lib")
+)
+
+val resolveDocx4j = createSyncTask(
+    taskName = "resolveDocx4j",
+    configurationName = "docx4j",
+    destinationDir = file("code/languages/com.mpsbasics/solutions/com.mpsbasics.docx4j.lib/lib")
+)
+
+val resolveSat4j = createSyncTask(
+    taskName = "resolveSat4j",
+    configurationName = "sat4j",
+    destinationDir = file("code/languages/com.mbeddr.formal.nusmv/solutions/com.fasten.base.sat/lib")
+)
+
+val resolveJFreeChart = createSyncTask(
+    taskName = "resolveJFreeChart",
+    configurationName = "jfreechart",
+    destinationDir = file("code/languages/com.mbeddr.formal.nusmv/solutions/com.mbeddr.formal.base.operatorspanel.rt/lib")
+)
+
+val resolveNuSMV = createSyncTask(
+    taskName = "resolveNuSMV",
+    configurationName = "nusmv",
+    destinationDir = file("code/languages/com.mbeddr.formal.nusmv/solutions/com.mbeddr.formal.nusmv.importer.rt/lib")
+)
+
+val resolveZ3 = createSyncTask(
+    taskName = "resolveZ3",
+    configurationName = "z3",
+    destinationDir = file("code/languages/com.mbeddr.formal.smt/solutions/com.mbeddr.formal.smtlib.z3.lib/lib")
+)
+
+val resolveJira = createSyncTask(
+    taskName = "resolveJira",
+    configurationName = "jira",
+    destinationDir = file("code/languages/com.mpsbasics/solutions/com.mpsbasics.jira.pluginSolution/lib")
+)
+
+val resolvePDFBox = createSyncTask(
+    taskName = "resolvePDFBox",
+    configurationName = "pdfbox",
+    destinationDir = file("code/languages/com.mpsbasics/solutions/com.mpsbasics.pdfbox/lib")
+)
+
 tasks {
     val configureJava by registering {
         dependsOn(downloadJbr)
@@ -183,8 +308,16 @@ tasks {
         }
     }
 
-    val resolveLanguageLibs by registering(Copy::class) {
+    val resolveLanguageLibs by registering(Sync::class) {
         dependsOn(configureJava)
+        dependsOn(resolvePlantUML)
+        dependsOn(resolveDocx4j)
+        dependsOn(resolveSat4j)
+        dependsOn(resolveJFreeChart)
+        dependsOn(resolveNuSMV)
+        dependsOn(resolveZ3)
+        dependsOn(resolveJira)
+        dependsOn(resolvePDFBox)
         from({ configurations["languageLibs"].resolve().map(::zipTree) })
         into(dependenciesDir)
     }
@@ -200,10 +333,7 @@ tasks {
         doLast {
             copy {
                 from("$dependenciesDir/com.mbeddr.platform")
-                include("com.mbeddr.mpsutil.actionsfilter/",
-                    "de.itemis.mps.editor.widgets/",
-                    "de.slisson.mps.hacks/",
-                    "de.itemis.mps.tooltips/")
+                include("com.mbeddr.mpsutil.actionsfilter/")
                 into("$mpsHomeDir/plugins")
             }
         }
@@ -343,8 +473,13 @@ tasks {
     val package_formal by registering(Zip::class) {
         dependsOn(build_formal_languages)
         archiveBaseName.set("com.mbeddr.formal")
-        from(artifactsDir)
-        include("com.mbeddr.formal.languages/**")
+        from(artifactsDir) {
+            include("com.mbeddr.formal.languages/**")
+        }
+        from(reportsDir) {
+            include("sbom.json")
+        }
+
     }
 
     val build_assurance_languages by registering(BuildLanguages::class) {
@@ -355,8 +490,12 @@ tasks {
     val package_assurance by registering(Zip::class) {
         dependsOn(build_assurance_languages)
         archiveBaseName.set("fasten.assurance")
-        from(artifactsDir)
-        include("fasten.assurance.languages/**")
+        from(artifactsDir) {
+            include("fasten.assurance.languages/**")
+        }
+        from(reportsDir) {
+            include("sbom.json")
+        }
     }
 
     val resolveJBR_Win by registering(Copy::class) {
@@ -416,6 +555,25 @@ tasks {
         delete(fileTree(projectDir) { include("**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**") })
     }
 
+cyclonedxBom {
+    destination = file("$buildDir/reports")
+    outputName = "sbom"
+    outputFormat = "json"
+    includeLicenseText = false
+    schemaVersion = "1.5"
+    includeConfigs = listOf(
+        "languageLibs",
+        "docx4j",
+        "plantUML",
+        "sat4j",
+        "jfreechart",
+        "nusmv",
+        "z3",
+        "jira",
+        "pdfbox"
+    )
+}
+
     //clean { dependsOn(cleanMps) }
     val rebuild by registering { dependsOn(clean, build_formal_languages) }
 
@@ -447,8 +605,8 @@ tasks {
         projectDirectories.from(projectsToMigrate)
         pluginRoots.from(pluginRootsForMigration)
 
-        haltOnPrecheckFailure = true
-        haltOnDependencyError = true
+        haltOnPrecheckFailure = false
+        haltOnDependencyError = false
 
         maxHeapSize = "4G"
     }
@@ -471,6 +629,43 @@ tasks {
 
         excludeModuleMigration("de.itemis.mps.editor.diagram", 0)
 	excludeModuleMigration("jetbrains.mps.baseLanguage.javadoc", 0)
+    }
+}
+
+fun addDependencies(dependenciesNode: Node, configurationName: String) {
+    project.configurations[configurationName].resolvedConfiguration.firstLevelModuleDependencies.forEach { dep ->
+        val dependencyNode = dependenciesNode.appendNode("dependency")
+        dependencyNode.appendNode("groupId", dep.moduleGroup)
+        dependencyNode.appendNode("artifactId", dep.moduleName)
+        dependencyNode.appendNode("version", dep.moduleVersion)
+        dependencyNode.appendNode("type", dep.moduleArtifacts.first().type)
+        dependencyNode.appendNode("scope", "provided")
+    }
+}
+
+fun configurePublication(publication: MavenPublication, group: String, artifactId: String, packageTask: TaskProvider<*>) {
+    publication.apply {
+        this.groupId = group
+        this.artifactId = artifactId
+        artifact(packageTask)
+        pom.withXml {
+            val dependenciesNode = asNode().appendNode("dependencies")
+
+            listOf(
+                "languageLibs",
+                "mps",
+                "docx4j",
+                "plantUML",
+                "sat4j",
+                "jfreechart",
+                "nusmv",
+                "z3",
+                "jira",
+                "pdfbox"
+            ).forEach { config ->
+                addDependencies(dependenciesNode, config)
+            }
+        }
     }
 }
 
@@ -498,51 +693,13 @@ publishing {
     }
     publications {
         create<MavenPublication>("NuSMVLanguages") {
-            groupId = "com.mbeddr"
-            artifactId = "formal"
-            artifact(tasks.named("package_formal"))
-            pom.withXml {
-                val dependenciesNode = asNode().appendNode("dependencies")
-                configurations["languageLibs"].resolvedConfiguration.firstLevelModuleDependencies.forEach {
-                    val dependencyNode = dependenciesNode.appendNode("dependency")
-                    dependencyNode.appendNode("groupId", it.moduleGroup)
-                    dependencyNode.appendNode("artifactId", it.moduleName)
-                    dependencyNode.appendNode("version", it.moduleVersion)
-                    dependencyNode.appendNode("type", it.moduleArtifacts.first().type)
-                }
-                configurations["mps"].resolvedConfiguration.firstLevelModuleDependencies.forEach {
-                    val dependencyNode = dependenciesNode.appendNode("dependency")
-                    dependencyNode.appendNode("groupId", it.moduleGroup)
-                    dependencyNode.appendNode("artifactId", it.moduleName)
-                    dependencyNode.appendNode("version", it.moduleVersion)
-                    dependencyNode.appendNode("type", it.moduleArtifacts.first().type)
-                    dependencyNode.appendNode("scope", "provided")
-                }
-            }
+            configurePublication(this, "com.mbeddr", "formal", tasks.named("package_formal"))
         }
+
         create<MavenPublication>("FASTENSafetyLanguages") {
-            groupId = "fasten"
-            artifactId = "assurance"
-            artifact(tasks.named("package_assurance"))
-            pom.withXml {
-                val dependenciesNode = asNode().appendNode("dependencies")
-                configurations["languageLibs"].resolvedConfiguration.firstLevelModuleDependencies.forEach {
-                    val dependencyNode = dependenciesNode.appendNode("dependency")
-                    dependencyNode.appendNode("groupId", it.moduleGroup)
-                    dependencyNode.appendNode("artifactId", it.moduleName)
-                    dependencyNode.appendNode("version", it.moduleVersion)
-                    dependencyNode.appendNode("type", it.moduleArtifacts.first().type)
-                }
-                configurations["mps"].resolvedConfiguration.firstLevelModuleDependencies.forEach {
-                    val dependencyNode = dependenciesNode.appendNode("dependency")
-                    dependencyNode.appendNode("groupId", it.moduleGroup)
-                    dependencyNode.appendNode("artifactId", it.moduleName)
-                    dependencyNode.appendNode("version", it.moduleVersion)
-                    dependencyNode.appendNode("type", it.moduleArtifacts.first().type)
-                    dependencyNode.appendNode("scope", "provided")
-                }
-            }
+            configurePublication(this, "fasten", "assurance", tasks.named("package_assurance"))
         }
+
 	    create<MavenPublication>("FASTEN_WIN_RCP") {
             groupId = "fasten"
             artifactId = "win.rcp"

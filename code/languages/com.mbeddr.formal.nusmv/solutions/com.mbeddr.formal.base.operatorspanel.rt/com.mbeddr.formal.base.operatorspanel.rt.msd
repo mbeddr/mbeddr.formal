@@ -1,20 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.formal.base.operatorspanel.rt" uuid="4bf9a860-39c9-4cb2-8004-157a961bf42c" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
-      <sourceRoot location="models" />
-    </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib/jfreechart-1.5.3.jar!/">
-      <sourceRoot location="." />
-    </modelRoot>
     <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="jfreechart-1.5.3.jar" />
+      <sourceRoot location="jfreechart.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/jfreechart-1.5.3.jar" />
+      <library location="${module}/lib/jfreechart.jar" />
     </facet>
   </facets>
   <dependencies>

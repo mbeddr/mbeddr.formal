@@ -1,29 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.symo.plantuml.lib" uuid="377bf088-4ffc-48ac-910f-fb1c66ffa60e" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
-      <sourceRoot location="models" />
-    </modelRoot>
     <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="plantuml-epl-1.2024.7.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+      <sourceRoot location="batik-all.jar" />
+      <sourceRoot location="plantuml-epl.jar" />
       <sourceRoot location="xml-apis-ext.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="batik-all-1.18.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="xmlgraphics-commons-2.2.jar" />
+      <sourceRoot location="xmlgraphics-commons.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/xmlgraphics-commons-2.2.jar" />
-      <library location="${module}/lib/batik-all-1.18.jar" />
+      <library location="${module}/lib/batik-all.jar" />
+      <library location="${module}/lib/plantuml-epl.jar" />
       <library location="${module}/lib/xml-apis-ext.jar" />
-      <library location="${module}/lib/plantuml-epl-1.2024.7.jar" />
+      <library location="${module}/lib/xmlgraphics-commons.jar" />
     </facet>
   </facets>
   <dependencies>
