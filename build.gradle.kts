@@ -143,7 +143,7 @@ configurations {
         jira("com.atlassian.jira:jira-rest-java-client-core:4.0.0")
 
         pdfbox("org.apache.pdfbox:pdfbox-app:3.0.1")
-        pdfbox("de.rototor.pdfbox:graphics2d:3.0.1")
+        pdfbox("de.rototor.pdfbox:graphics2d:3.0.3")
         pdfbox("io.github.openhtmltopdf:openhtmltopdf-core:1.1.23")
         pdfbox("io.github.openhtmltopdf:openhtmltopdf-pdfbox:1.1.23")
         pdfbox("org.apache.pdfbox:xmpbox:3.0.1")
