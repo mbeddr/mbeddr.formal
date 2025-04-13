@@ -1820,7 +1820,7 @@
               <ref role="3uigEE" to="vvcd:~MappingNode" resolve="MappingNode" />
             </node>
             <node concept="37vLTw" id="3YAmJdZHoS_" role="2ZW6bz">
-              <ref role="3cqZAo" node="3YAmJdZHoJQ" resolve="rootNode" />
+              <ref role="3cqZAo" node="3YAmJdZHoJQ" resolve="currentNode" />
             </node>
           </node>
           <node concept="3clFbS" id="3YAmJdZHoQm" role="3clFbx">
@@ -1856,7 +1856,7 @@
                         <ref role="3uigEE" to="vvcd:~MappingNode" resolve="MappingNode" />
                       </node>
                       <node concept="37vLTw" id="3YAmJdZLQrO" role="10QFUP">
-                        <ref role="3cqZAo" node="3YAmJdZHoJQ" resolve="rootNode" />
+                        <ref role="3cqZAo" node="3YAmJdZHoJQ" resolve="currentNode" />
                       </node>
                     </node>
                   </node>
@@ -1871,7 +1871,7 @@
                 <property role="TrG5h" value="val" />
               </node>
               <node concept="37vLTw" id="3YAmJdZLSL$" role="2GsD0m">
-                <ref role="3cqZAo" node="3YAmJdZLQrJ" resolve="value" />
+                <ref role="3cqZAo" node="3YAmJdZLQrJ" resolve="values" />
               </node>
               <node concept="3clFbS" id="3YAmJdZLSte" role="2LFqv$">
                 <node concept="3clFbF" id="3YAmJdZLTn9" role="3cqZAp">
@@ -1962,7 +1962,7 @@
                 <node concept="1rXfSq" id="3YAmJdZMLFa" role="3clFbG">
                   <ref role="37wK5l" node="3YAmJdZLLEP" resolve="printScalarIndented" />
                   <node concept="37vLTw" id="3YAmJe019Xi" role="37wK5m">
-                    <ref role="3cqZAo" node="3YAmJe019Xd" resolve="node" />
+                    <ref role="3cqZAo" node="3YAmJe019Xd" resolve="scalarNode" />
                   </node>
                   <node concept="37vLTw" id="3YAmJdZMNLz" role="37wK5m">
                     <ref role="3cqZAo" node="3YAmJdZHoLH" resolve="indentLevel" />
@@ -2080,8 +2080,8 @@
               <node concept="3clFbF" id="3YAmJe00$88" role="3cqZAp">
                 <node concept="2OqwBi" id="3YAmJe00$85" role="3clFbG">
                   <node concept="10M0yZ" id="3YAmJe00$86" role="2Oq$k0">
-                    <ref role="1PxDUh" to="wyt6:~System" />
-                    <ref role="3cqZAo" to="wyt6:~System.err" />
+                    <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+                    <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
                   </node>
                   <node concept="liA8E" id="3YAmJe00$87" role="2OqNvi">
                     <ref role="37wK5l" to="guwi:~PrintStream.println(java.lang.String)" resolve="println" />
@@ -2130,8 +2130,8 @@
         <node concept="3clFbF" id="3YAmJdZLLO$" role="3cqZAp">
           <node concept="2OqwBi" id="3YAmJdZLLOx" role="3clFbG">
             <node concept="10M0yZ" id="3YAmJdZLLOy" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="3YAmJdZLLOz" role="2OqNvi">
               <ref role="37wK5l" to="guwi:~PrintStream.print(java.lang.String)" resolve="print" />
@@ -2226,11 +2226,11 @@
         <node concept="3clFbF" id="3YAmJdZQ7cb" role="3cqZAp">
           <node concept="2OqwBi" id="3YAmJdZQ7c8" role="3clFbG">
             <node concept="10M0yZ" id="3YAmJdZQ7c9" role="2Oq$k0">
-              <ref role="1PxDUh" to="wyt6:~System" />
-              <ref role="3cqZAo" to="wyt6:~System.err" />
+              <ref role="1PxDUh" to="wyt6:~System" resolve="System" />
+              <ref role="3cqZAo" to="wyt6:~System.err" resolve="err" />
             </node>
             <node concept="liA8E" id="3YAmJdZQ7ca" role="2OqNvi">
-              <ref role="37wK5l" to="guwi:~PrintStream.println()" />
+              <ref role="37wK5l" to="guwi:~PrintStream.println()" resolve="println" />
             </node>
           </node>
         </node>
@@ -2417,7 +2417,7 @@
             <property role="TrG5h" value="cl" />
           </node>
           <node concept="37vLTw" id="3YAmJdZOeCY" role="2GsD0m">
-            <ref role="3cqZAo" node="3YAmJdZNZoA" resolve="text" />
+            <ref role="3cqZAo" node="3YAmJdZNZoA" resolve="commentLines" />
           </node>
           <node concept="3clFbS" id="3YAmJdZOaLu" role="2LFqv$">
             <node concept="3clFbF" id="3YAmJdZNZor" role="3cqZAp">
@@ -2485,14 +2485,14 @@
                 <ref role="ehGHo" to="bpzl:21lHZzX1IBT" resolve="IYamlToken" />
               </node>
               <node concept="3uibUv" id="3YAmJe03ubF" role="3rvSg0">
-                <ref role="3uigEE" node="3YAmJe04qYl" resolve="Position" />
+                <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
               </node>
             </node>
             <node concept="2YIFZM" id="3YAmJe04wq0" role="33vP2m">
               <ref role="37wK5l" node="3YAmJe04qWu" resolve="computePositions" />
               <ref role="1Pybhc" node="3YAmJe04qWs" resolve="LiftText2YamlLevelUtils" />
               <node concept="37vLTw" id="3YAmJe04wtA" role="37wK5m">
-                <ref role="3cqZAo" node="3YAmJe03srd" resolve="file" />
+                <ref role="3cqZAo" node="3YAmJe03srd" resolve="rawTextFile" />
               </node>
             </node>
           </node>
@@ -2517,7 +2517,7 @@
           <node concept="37vLTI" id="3YAmJe04_TJ" role="3clFbG">
             <node concept="2OqwBi" id="3YAmJe04Aih" role="37vLTx">
               <node concept="37vLTw" id="3YAmJe04_Yf" role="2Oq$k0">
-                <ref role="3cqZAo" node="3YAmJe03srd" resolve="file" />
+                <ref role="3cqZAo" node="3YAmJe03srd" resolve="rawTextFile" />
               </node>
               <node concept="3TrcHB" id="3YAmJe04AmQ" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -2539,7 +2539,7 @@
             <ref role="37wK5l" node="3YAmJe04AFv" resolve="doLift" />
             <node concept="2OqwBi" id="6RAJ7g3vo6x" role="37wK5m">
               <node concept="37vLTw" id="6RAJ7g3vns1" role="2Oq$k0">
-                <ref role="3cqZAo" node="3YAmJe03srd" resolve="file" />
+                <ref role="3cqZAo" node="3YAmJe03srd" resolve="rawTextFile" />
               </node>
               <node concept="3Tsc0h" id="6RAJ7g3voKw" role="2OqNvi">
                 <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
@@ -2549,7 +2549,7 @@
               <ref role="3cqZAo" node="3YAmJe04xTI" resolve="lifted" />
             </node>
             <node concept="37vLTw" id="6RAJ7g3vqNG" role="37wK5m">
-              <ref role="3cqZAo" node="3YAmJe03stQ" resolve="aNode" />
+              <ref role="3cqZAo" node="3YAmJe03stQ" resolve="aSnakeYamlNode" />
             </node>
             <node concept="37vLTw" id="6RAJ7g3vrRe" role="37wK5m">
               <ref role="3cqZAo" node="3YAmJe03tMJ" resolve="token2Position" />
@@ -3076,7 +3076,7 @@
             <ref role="ehGHo" to="bpzl:21lHZzX1IBT" resolve="IYamlToken" />
           </node>
           <node concept="3uibUv" id="3YAmJe05a0b" role="3rvSg0">
-            <ref role="3uigEE" node="3YAmJe04qYl" resolve="Position" />
+            <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
           </node>
         </node>
       </node>
@@ -3251,7 +3251,7 @@
                     <ref role="1Pybhc" node="6nIrkDgnKc3" resolve="RawTextFile2YamlLevelLifterUtils" />
                     <node concept="2OqwBi" id="6nIrkDguVDg" role="37wK5m">
                       <node concept="37vLTw" id="6nIrkDgvdBk" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6nIrkDguVCZ" resolve="snakeYamlMappingNode" />
+                        <ref role="3cqZAo" node="6nIrkDguVCZ" resolve="snakeYamlNodeTuple" />
                       </node>
                       <node concept="liA8E" id="6nIrkDguVDi" role="2OqNvi">
                         <ref role="37wK5l" to="vvcd:~NodeTuple.getKeyNode()" resolve="getKeyNode" />
@@ -3265,7 +3265,7 @@
                   <node concept="3cpWs6" id="6nIrkDguVDl" role="3cqZAp">
                     <node concept="2OqwBi" id="6nIrkDgvfXX" role="3cqZAk">
                       <node concept="37vLTw" id="6nIrkDgvfXY" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6nIrkDguVCZ" resolve="snakeYamlMappingNode" />
+                        <ref role="3cqZAo" node="6nIrkDguVCZ" resolve="snakeYamlNodeTuple" />
                       </node>
                       <node concept="liA8E" id="6nIrkDgvfXZ" role="2OqNvi">
                         <ref role="37wK5l" to="vvcd:~NodeTuple.getKeyNode()" resolve="getKeyNode" />
@@ -3326,7 +3326,7 @@
                     <ref role="1Pybhc" node="6nIrkDgnKc3" resolve="RawTextFile2YamlLevelLifterUtils" />
                     <node concept="2OqwBi" id="6nIrkDgviXD" role="37wK5m">
                       <node concept="37vLTw" id="6nIrkDgviXE" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6nIrkDguVCZ" resolve="snakeYamlMappingNode" />
+                        <ref role="3cqZAo" node="6nIrkDguVCZ" resolve="snakeYamlNodeTuple" />
                       </node>
                       <node concept="liA8E" id="6nIrkDgviXF" role="2OqNvi">
                         <ref role="37wK5l" to="vvcd:~NodeTuple.getValueNode()" resolve="getValueNode" />
@@ -3340,7 +3340,7 @@
                   <node concept="3cpWs6" id="6nIrkDgviXe" role="3cqZAp">
                     <node concept="2OqwBi" id="6nIrkDgviXf" role="3cqZAk">
                       <node concept="37vLTw" id="6nIrkDgviXg" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6nIrkDguVCZ" resolve="snakeYamlMappingNode" />
+                        <ref role="3cqZAo" node="6nIrkDguVCZ" resolve="snakeYamlNodeTuple" />
                       </node>
                       <node concept="liA8E" id="6nIrkDgviXh" role="2OqNvi">
                         <ref role="37wK5l" to="vvcd:~NodeTuple.getValueNode()" resolve="getValueNode" />
@@ -3444,7 +3444,7 @@
                     <node concept="3clFbS" id="3aacpE5wLCK" role="3clFbx">
                       <node concept="3cpWs6" id="3aacpE5wLCL" role="3cqZAp">
                         <node concept="2GrUjf" id="3aacpE5wLCM" role="3cqZAk">
-                          <ref role="2Gs0qQ" node="3aacpE5wLCy" resolve="tuple" />
+                          <ref role="2Gs0qQ" node="3aacpE5wLCy" resolve="sequenceObject" />
                         </node>
                       </node>
                     </node>
@@ -3537,7 +3537,7 @@
             <ref role="ehGHo" to="bpzl:21lHZzX1IBT" resolve="IYamlToken" />
           </node>
           <node concept="3uibUv" id="6nIrkDgpaCm" role="3rvSg0">
-            <ref role="3uigEE" node="3YAmJe04qYl" resolve="Position" />
+            <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
           </node>
         </node>
       </node>
@@ -3559,7 +3559,7 @@
                 <ref role="ehGHo" to="bpzl:21lHZzX1IBT" resolve="IYamlToken" />
               </node>
               <node concept="3uibUv" id="3YAmJe04qW$" role="3rvSg0">
-                <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevel.Position" />
+                <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
               </node>
             </node>
             <node concept="2ShNRf" id="3YAmJe04qW_" role="33vP2m">
@@ -3610,7 +3610,7 @@
                       <ref role="3cqZAo" node="3YAmJe04qYf" resolve="file" />
                     </node>
                     <node concept="3Tsc0h" id="3YAmJe04qWX" role="2OqNvi">
-                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                     </node>
                   </node>
                   <node concept="34jXtK" id="3YAmJe04qWY" role="2OqNvi">
@@ -3625,7 +3625,7 @@
               <node concept="37vLTI" id="3YAmJe04qX1" role="3clFbG">
                 <node concept="2ShNRf" id="3YAmJe04qX2" role="37vLTx">
                   <node concept="1pGfFk" id="3YAmJe04qX3" role="2ShVmc">
-                    <ref role="37wK5l" node="3YAmJe04qYr" resolve="LiftText2YamlLevel.Position" />
+                    <ref role="37wK5l" node="3YAmJe04qYr" resolve="LiftText2YamlLevelUtils.Position" />
                     <node concept="37vLTw" id="3YAmJe04qX4" role="37wK5m">
                       <ref role="3cqZAo" node="3YAmJe04qWI" resolve="crtLine" />
                     </node>
@@ -3794,7 +3794,7 @@
                   <ref role="3cqZAo" node="3YAmJe04qYf" resolve="file" />
                 </node>
                 <node concept="3Tsc0h" id="3YAmJe04qY8" role="2OqNvi">
-                  <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                  <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                 </node>
               </node>
               <node concept="34oBXx" id="3YAmJe04qY9" role="2OqNvi" />
@@ -3823,7 +3823,7 @@
           <ref role="ehGHo" to="bpzl:21lHZzX1IBT" resolve="IYamlToken" />
         </node>
         <node concept="3uibUv" id="3YAmJe04sIs" role="3rvSg0">
-          <ref role="3uigEE" node="3YAmJe04qYl" resolve="Position" />
+          <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
         </node>
       </node>
     </node>
@@ -4054,7 +4054,7 @@
                   <node concept="1eOMI4" id="6nIrkDgrQ3t" role="37wK5m">
                     <node concept="10QFUN" id="6nIrkDgrQ3s" role="1eOMHV">
                       <node concept="37vLTw" id="6nIrkDgrQ3r" role="10QFUP">
-                        <ref role="3cqZAo" node="3YAmJe09l43" resolve="n" />
+                        <ref role="3cqZAo" node="3YAmJe09l43" resolve="snakeYamlObject" />
                       </node>
                       <node concept="3uibUv" id="6nIrkDgrQ3q" role="10QFUM">
                         <ref role="3uigEE" to="vvcd:~Node" resolve="Node" />
@@ -4130,7 +4130,7 @@
               <ref role="3uigEE" to="vvcd:~Node" resolve="Node" />
             </node>
             <node concept="37vLTw" id="6nIrkDgrsbI" role="2ZW6bz">
-              <ref role="3cqZAo" node="3YAmJe09l43" resolve="n" />
+              <ref role="3cqZAo" node="3YAmJe09l43" resolve="snakeYamlObject" />
             </node>
           </node>
           <node concept="9aQIb" id="6nIrkDgrzlL" role="9aQIa">
@@ -4151,7 +4151,7 @@
                       <node concept="1eOMI4" id="6nIrkDgrSLT" role="2Oq$k0">
                         <node concept="10QFUN" id="6nIrkDgrSLS" role="1eOMHV">
                           <node concept="37vLTw" id="6nIrkDgrSLR" role="10QFUP">
-                            <ref role="3cqZAo" node="3YAmJe09l43" resolve="n" />
+                            <ref role="3cqZAo" node="3YAmJe09l43" resolve="snakeYamlObject" />
                           </node>
                           <node concept="3uibUv" id="6nIrkDgrTlF" role="10QFUM">
                             <ref role="3uigEE" to="vvcd:~NodeTuple" resolve="NodeTuple" />
@@ -4214,7 +4214,7 @@
                       <node concept="1eOMI4" id="6nIrkDgrUBb" role="2Oq$k0">
                         <node concept="10QFUN" id="6nIrkDgrUBc" role="1eOMHV">
                           <node concept="37vLTw" id="6nIrkDgrUBd" role="10QFUP">
-                            <ref role="3cqZAo" node="3YAmJe09l43" resolve="n" />
+                            <ref role="3cqZAo" node="3YAmJe09l43" resolve="snakeYamlObject" />
                           </node>
                           <node concept="3uibUv" id="6nIrkDgrUBe" role="10QFUM">
                             <ref role="3uigEE" to="vvcd:~NodeTuple" resolve="NodeTuple" />

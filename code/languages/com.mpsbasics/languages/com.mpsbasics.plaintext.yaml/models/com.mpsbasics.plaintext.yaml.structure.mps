@@ -134,7 +134,7 @@
     <property role="EcuMT" value="4586453272395245967" />
     <property role="TrG5h" value="ScalarNode" />
     <property role="3GE5qa" value="yaml_level" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3YAmJe02YAg" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
     </node>
@@ -143,7 +143,7 @@
     <property role="EcuMT" value="4586453272395245969" />
     <property role="3GE5qa" value="yaml_level" />
     <property role="TrG5h" value="MappingNode" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3YAmJe02YAi" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
     </node>
@@ -152,7 +152,7 @@
     <property role="EcuMT" value="4586453272395245971" />
     <property role="3GE5qa" value="yaml_level" />
     <property role="TrG5h" value="SequenceNode" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3YAmJe02YAk" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
     </node>
@@ -161,7 +161,7 @@
     <property role="EcuMT" value="4586453272396561802" />
     <property role="3GE5qa" value="yaml_level" />
     <property role="TrG5h" value="NodeTuple" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3YAmJe07ZQb" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
     </node>
@@ -170,7 +170,7 @@
     <property role="EcuMT" value="3641777788415793204" />
     <property role="3GE5qa" value="yaml_level" />
     <property role="TrG5h" value="ScalarValue" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3aacpE5r_wQ" role="1TKVEl">
       <property role="IQ2nx" value="3641777788415793206" />
       <property role="TrG5h" value="text" />

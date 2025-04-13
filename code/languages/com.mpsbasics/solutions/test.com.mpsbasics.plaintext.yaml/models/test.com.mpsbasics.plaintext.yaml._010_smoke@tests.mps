@@ -515,7 +515,7 @@
                 <ref role="3xOPvv" node="U7AKzhiY0I" resolve="_010_lines_splitting_testdata" />
               </node>
               <node concept="3Tsc0h" id="U7AKzhiXZ1" role="2OqNvi">
-                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
               </node>
             </node>
           </node>
@@ -1351,7 +1351,7 @@
             </node>
             <node concept="2YIFZM" id="6nIrkDgi9ef" role="33vP2m">
               <ref role="37wK5l" to="fdr5:3YAmJe03spZ" resolve="lift2YamlLevel" />
-              <ref role="1Pybhc" to="fdr5:3YAmJe03sgu" resolve="LiftText2YamlLevel" />
+              <ref role="1Pybhc" to="fdr5:3YAmJe03sgu" resolve="RawTextFile2YamlLevelLifter" />
               <node concept="37vLTw" id="6nIrkDgi9eg" role="37wK5m">
                 <ref role="3cqZAo" node="6nIrkDgi9e3" resolve="myFile" />
               </node>
@@ -1916,7 +1916,7 @@
                     <ref role="3cqZAo" node="3yl_UmFUPsq" resolve="expected" />
                   </node>
                   <node concept="3Tsc0h" id="3yl_UmFVnJR" role="2OqNvi">
-                    <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                    <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                   </node>
                 </node>
                 <node concept="34oBXx" id="3yl_UmFVnJS" role="2OqNvi" />
@@ -1966,7 +1966,7 @@
                       <ref role="3cqZAo" node="3yl_UmFUPso" resolve="actual" />
                     </node>
                     <node concept="3Tsc0h" id="3aacpE5vR58" role="2OqNvi">
-                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                     </node>
                   </node>
                   <node concept="34oBXx" id="3aacpE5vR59" role="2OqNvi" />

@@ -549,7 +549,7 @@
   <node concept="24kQdi" id="3aacpE5uvee">
     <ref role="1XX52x" to="bpzl:21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
     <node concept="3F2HdR" id="3aacpE5r_wS" role="2wV5jI">
-      <ref role="1NtTu8" to="bpzl:21lHZzX1IBY" />
+      <ref role="1NtTu8" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
       <node concept="l2Vlx" id="3aacpE5rI5K" role="2czzBx" />
     </node>
   </node>
