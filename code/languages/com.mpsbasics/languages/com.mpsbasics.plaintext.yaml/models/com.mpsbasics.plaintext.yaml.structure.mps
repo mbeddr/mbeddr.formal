@@ -71,6 +71,7 @@
   <node concept="1TIwiD" id="21lHZzX1IBU">
     <property role="EcuMT" value="2329970662258960890" />
     <property role="TrG5h" value="Space" />
+    <property role="3GE5qa" value="text_level" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="21lHZzX1IBV" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
@@ -90,20 +91,11 @@
       <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
     </node>
   </node>
-  <node concept="1TIwiD" id="21lHZzX34dn">
-    <property role="EcuMT" value="2329970662259311447" />
-    <property role="TrG5h" value="Scalar" />
-    <property role="34LRSv" value="-" />
-    <property role="3GE5qa" value="baselan" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="21lHZzX34dp" role="PzmwI">
-      <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="21lHZzX34dq">
     <property role="EcuMT" value="2329970662259311450" />
     <property role="TrG5h" value="Word" />
     <property role="34LRSv" value="word" />
+    <property role="3GE5qa" value="text_level" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="21lHZzX3eyj" role="1TKVEl">
       <property role="IQ2nx" value="2329970662259353747" />
@@ -117,7 +109,8 @@
   <node concept="1TIwiD" id="21lHZzX34ds">
     <property role="EcuMT" value="2329970662259311452" />
     <property role="TrG5h" value="Comment" />
-    <property role="34LRSv" value="comment" />
+    <property role="34LRSv" value="#" />
+    <property role="3GE5qa" value="text_level" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="21lHZzX34du" role="1TKVEl">
       <property role="IQ2nx" value="2329970662259311454" />
@@ -131,33 +124,60 @@
   <node concept="1TIwiD" id="21lHZzX6GRf">
     <property role="EcuMT" value="2329970662260264399" />
     <property role="TrG5h" value="EndOfLine" />
+    <property role="3GE5qa" value="text_level" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="21lHZzX6GRg" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5AI9Uvu1R0R">
-    <property role="EcuMT" value="6462146117261291575" />
-    <property role="TrG5h" value="Key" />
-    <property role="34LRSv" value="key" />
-    <property role="3GE5qa" value="baselan" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5AI9Uvu5hA5" role="1TKVEl">
-      <property role="IQ2nx" value="6462146117262186885" />
-      <property role="TrG5h" value="text" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="5AI9Uvu1R0S" role="PzmwI">
+  <node concept="1TIwiD" id="3YAmJe02YAf">
+    <property role="EcuMT" value="4586453272395245967" />
+    <property role="TrG5h" value="ScalarNode" />
+    <property role="3GE5qa" value="yaml_level" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3YAmJe02YAg" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
     </node>
   </node>
-  <node concept="1TIwiD" id="5AI9Uvu6u6m">
-    <property role="EcuMT" value="6462146117262500246" />
-    <property role="3GE5qa" value="baselan" />
-    <property role="TrG5h" value="Line" />
+  <node concept="1TIwiD" id="3YAmJe02YAh">
+    <property role="EcuMT" value="4586453272395245969" />
+    <property role="3GE5qa" value="yaml_level" />
+    <property role="TrG5h" value="MappingNode" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="PrWs8" id="5AI9Uvu6u7j" role="PzmwI">
+    <node concept="PrWs8" id="3YAmJe02YAi" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3YAmJe02YAj">
+    <property role="EcuMT" value="4586453272395245971" />
+    <property role="3GE5qa" value="yaml_level" />
+    <property role="TrG5h" value="SequenceNode" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3YAmJe02YAk" role="PzmwI">
+      <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3YAmJe07ZQa">
+    <property role="EcuMT" value="4586453272396561802" />
+    <property role="3GE5qa" value="yaml_level" />
+    <property role="TrG5h" value="NodeTuple" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3YAmJe07ZQb" role="PzmwI">
+      <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3aacpE5r_wO">
+    <property role="EcuMT" value="3641777788415793204" />
+    <property role="3GE5qa" value="yaml_level" />
+    <property role="TrG5h" value="ScalarValue" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="3aacpE5r_wQ" role="1TKVEl">
+      <property role="IQ2nx" value="3641777788415793206" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3aacpE5r_wP" role="PzmwI">
+      <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
     </node>
   </node>
 </model>

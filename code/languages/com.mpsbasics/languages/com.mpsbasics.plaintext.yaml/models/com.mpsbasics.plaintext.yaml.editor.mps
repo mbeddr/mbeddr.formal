@@ -209,6 +209,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="21lHZzX37f0">
+    <property role="3GE5qa" value="text_level" />
     <ref role="1XX52x" to="bpzl:21lHZzX1IBU" resolve="Space" />
     <node concept="3F0ifn" id="21lHZzX37f2" role="2wV5jI">
       <property role="3F0ifm" value=" " />
@@ -333,6 +334,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="21lHZzX3MPm">
+    <property role="3GE5qa" value="text_level" />
     <ref role="1XX52x" to="bpzl:21lHZzX34ds" resolve="Comment" />
     <node concept="3EZMnI" id="21lHZzX3MPo" role="2wV5jI">
       <node concept="3F0ifn" id="21lHZzX3MPs" role="3EZMnx">
@@ -351,6 +353,7 @@
   </node>
   <node concept="325Ffw" id="21lHZzX3MYv">
     <property role="TrG5h" value="CommentKeymap" />
+    <property role="3GE5qa" value="text_level" />
     <ref role="1chiOs" to="bpzl:21lHZzX34ds" resolve="Comment" />
     <node concept="2PxR9H" id="21lHZzX3MZ7" role="2QnnpI">
       <property role="2IlM53" value="gAIlx3c/LAST_POSITION" />
@@ -377,6 +380,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="21lHZzX4Grj">
+    <property role="3GE5qa" value="text_level" />
     <ref role="1XX52x" to="bpzl:21lHZzX34dq" resolve="Word" />
     <node concept="3F0A7n" id="21lHZzX4Grl" role="2wV5jI">
       <ref role="1NtTu8" to="bpzl:21lHZzX3eyj" resolve="text" />
@@ -386,6 +390,7 @@
   </node>
   <node concept="325Ffw" id="21lHZzX4Gro">
     <property role="TrG5h" value="WordKeymap" />
+    <property role="3GE5qa" value="text_level" />
     <ref role="1chiOs" to="bpzl:21lHZzX34dq" resolve="Word" />
     <node concept="2PxR9H" id="21lHZzX4GrH" role="2QnnpI">
       <property role="2IlM53" value="gAIlx3c/LAST_POSITION" />
@@ -462,6 +467,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="21lHZzX6GRh">
+    <property role="3GE5qa" value="text_level" />
     <ref role="1XX52x" to="bpzl:21lHZzX6GRf" resolve="EndOfLine" />
     <node concept="3F0ifn" id="21lHZzX6GRj" role="2wV5jI">
       <property role="3F0ifm" value="⏎" />
@@ -474,6 +480,7 @@
   </node>
   <node concept="325Ffw" id="21lHZzX7tal">
     <property role="TrG5h" value="EndOfLineKeymap" />
+    <property role="3GE5qa" value="text_level" />
     <ref role="1chiOs" to="bpzl:21lHZzX6GRf" resolve="EndOfLine" />
     <node concept="2PxR9H" id="21lHZzX7tam" role="2QnnpI">
       <node concept="2Py5lD" id="21lHZzX7tan" role="2PyaAO">
@@ -532,11 +539,18 @@
       </node>
     </node>
   </node>
-  <node concept="24kQdi" id="5AI9Uvu6u8$">
-    <property role="3GE5qa" value="baselan" />
-    <ref role="1XX52x" to="bpzl:5AI9Uvu6u6m" resolve="Line" />
-    <node concept="3F2HdR" id="5AI9Uvu6u9y" role="2wV5jI">
-      <ref role="1NtTu8" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
+  <node concept="24kQdi" id="3aacpE5r_wU">
+    <property role="3GE5qa" value="yaml_level" />
+    <ref role="1XX52x" to="bpzl:3aacpE5r_wO" resolve="ScalarValue" />
+    <node concept="3F0A7n" id="3aacpE5r_wW" role="2wV5jI">
+      <ref role="1NtTu8" to="bpzl:3aacpE5r_wQ" resolve="text" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3aacpE5uvee">
+    <ref role="1XX52x" to="bpzl:21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
+    <node concept="3F2HdR" id="3aacpE5r_wS" role="2wV5jI">
+      <ref role="1NtTu8" to="bpzl:21lHZzX1IBY" />
+      <node concept="l2Vlx" id="3aacpE5rI5K" role="2czzBx" />
     </node>
   </node>
 </model>
