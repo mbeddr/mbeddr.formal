@@ -19917,6 +19917,11 @@
             <ref role="3bR37D" node="42jqVeFkUuJ" resolve="com.mbeddr.formal.nusmv.importer.rt" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6_254Rln3v3" role="3bR37C">
+          <node concept="3bR9La" id="6_254Rln3v4" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="7G1xrtoxFN_" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -20147,6 +20152,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6_254Rln3vV" role="3bR37C">
+          <node concept="3bR9La" id="6_254Rln3vW" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:77YfcvOLBqQ" resolve="de.itemis.mps.comparator" />
           </node>
         </node>
       </node>
