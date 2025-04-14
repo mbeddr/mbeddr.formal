@@ -431,6 +431,63 @@
         <node concept="3bZ5Sz" id="64FnLWQwq9$" role="1tU5fm" />
       </node>
     </node>
+    <node concept="2tJIrI" id="Hoz148wXDW" role="jymVt" />
+    <node concept="2YIFZL" id="Hoz148wUTO" role="jymVt">
+      <property role="TrG5h" value="getBoxAndDetachLayoutInformation" />
+      <node concept="3clFbS" id="Hoz148wUTP" role="3clF47">
+        <node concept="3cpWs8" id="Hoz148x7G8" role="3cqZAp">
+          <node concept="3cpWsn" id="Hoz148x7G9" role="3cpWs9">
+            <property role="TrG5h" value="box" />
+            <node concept="3Tqbb2" id="Hoz148x6O7" role="1tU5fm">
+              <ref role="ehGHo" to="suqv:5P3ZJ9da_0I" resolve="Layout_Box" />
+            </node>
+            <node concept="1rXfSq" id="Hoz148x7Ga" role="33vP2m">
+              <ref role="37wK5l" node="5pJnDA9dmgD" resolve="getBox" />
+              <node concept="37vLTw" id="Hoz148x7Gb" role="37wK5m">
+                <ref role="3cqZAo" node="Hoz148wUUy" resolve="boxNode" />
+              </node>
+              <node concept="37vLTw" id="Hoz148x7Gc" role="37wK5m">
+                <ref role="3cqZAo" node="Hoz148wUU$" resolve="conceptWhereLayoutMapIsAttached" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="Hoz148xcI3" role="3cqZAp">
+          <node concept="2OqwBi" id="Hoz148xjn7" role="3clFbG">
+            <node concept="2OqwBi" id="Hoz148xcUw" role="2Oq$k0">
+              <node concept="37vLTw" id="Hoz148xcI1" role="2Oq$k0">
+                <ref role="3cqZAo" node="Hoz148x7G9" resolve="box" />
+              </node>
+              <node concept="2Xjw5R" id="Hoz148xfVq" role="2OqNvi">
+                <node concept="1xMEDy" id="Hoz148xfVs" role="1xVPHs">
+                  <node concept="chp4Y" id="Hoz148xgOa" role="ri$Ld">
+                    <ref role="cht4Q" to="suqv:7L$rKAVfLiv" resolve="LayoutMapEntry" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3YRAZt" id="Hoz148xkpX" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="Hoz148x3CI" role="3cqZAp">
+          <node concept="37vLTw" id="Hoz148x7Gd" role="3clFbG">
+            <ref role="3cqZAo" node="Hoz148x7G9" resolve="box" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="Hoz148wUUw" role="1B3o_S" />
+      <node concept="3Tqbb2" id="Hoz148wUUx" role="3clF45">
+        <ref role="ehGHo" to="suqv:5P3ZJ9da_0I" resolve="Layout_Box" />
+      </node>
+      <node concept="37vLTG" id="Hoz148wUUy" role="3clF46">
+        <property role="TrG5h" value="boxNode" />
+        <node concept="3Tqbb2" id="Hoz148wUUz" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="Hoz148wUU$" role="3clF46">
+        <property role="TrG5h" value="conceptWhereLayoutMapIsAttached" />
+        <node concept="3bZ5Sz" id="Hoz148wUU_" role="1tU5fm" />
+      </node>
+    </node>
     <node concept="2tJIrI" id="5pJnDA9hs28" role="jymVt" />
     <node concept="2YIFZL" id="5pJnDA9hrMj" role="jymVt">
       <property role="TrG5h" value="setNewPosition" />
