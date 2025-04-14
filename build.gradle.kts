@@ -478,6 +478,7 @@ tasks {
         }
         from(reportsDir) {
             include("sbom.json")
+	    into("com.mbeddr.formal.languages")
         }
 
     }
@@ -495,6 +496,7 @@ tasks {
         }
         from(reportsDir) {
             include("sbom.json")
+	    into("fasten.assurance.languages")
         }
     }
 
@@ -560,7 +562,6 @@ cyclonedxBom {
     outputName = "sbom"
     outputFormat = "json"
     includeLicenseText = false
-    schemaVersion = "1.5"
     includeConfigs = listOf(
         "languageLibs",
         "docx4j",
