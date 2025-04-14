@@ -560,7 +560,6 @@ cyclonedxBom {
     outputName = "sbom"
     outputFormat = "json"
     includeLicenseText = false
-    schemaVersion = "1.5"
     includeConfigs = listOf(
         "languageLibs",
         "docx4j",
