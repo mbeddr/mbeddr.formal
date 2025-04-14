@@ -19781,6 +19781,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="ZrEVkdmSXX" role="3bR31x">
+          <node concept="3LXTmp" id="ZrEVkdmSXY" role="3rtmxm">
+            <node concept="3qWCbU" id="ZrEVkdmSXZ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="ZrEVkdmSY0" role="3LXTmr">
+              <ref role="398BVh" node="4m8f5phpEe4" resolve="mpsbasics" />
+              <node concept="2Ry0Ak" id="ZrEVkdmSY1" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="ZrEVkdmSY2" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.mpsbasics.plaintext.yaml" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6ucyvMUDFee" role="2G$12L">
         <property role="BnDLt" value="true" />
