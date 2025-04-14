@@ -3056,6 +3056,81 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="4m8f5php_QJ" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mpsbasics.plaintext.yaml" />
+        <property role="3LESm3" value="4556fd77-6edd-4716-8b05-e35fd684d04d" />
+        <node concept="398BVA" id="4m8f5php_QK" role="3LF7KH">
+          <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+          <node concept="2Ry0Ak" id="4m8f5php_QL" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="4m8f5php_QM" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mpsbasics.plaintext.yaml" />
+              <node concept="2Ry0Ak" id="4m8f5phpAua" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mpsbasics.plaintext.yaml.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="4m8f5php_QS" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="4m8f5phpAR3" role="1HemKq">
+            <node concept="398BVA" id="4m8f5phpAQS" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="4m8f5phpAQT" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4m8f5phpAQU" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.plaintext.yaml" />
+                  <node concept="2Ry0Ak" id="4m8f5phpAQV" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4m8f5phpAR4" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="4m8f5php_R1" role="3bR31x">
+          <node concept="3LXTmp" id="4m8f5php_R2" role="3rtmxm">
+            <node concept="398BVA" id="4m8f5php_R3" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="4m8f5php_R4" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="4m8f5phpBR3" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.plaintext.yaml" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="4m8f5php_R6" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4m8f5phpAQK" role="3bR37C">
+          <node concept="3bR9La" id="4m8f5phpAQL" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4m8f5phpAQM" role="3bR37C">
+          <node concept="3bR9La" id="4m8f5phpAQN" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4m8f5phpAQO" role="3bR37C">
+          <node concept="3bR9La" id="4m8f5phpAQP" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4m8f5phpAQQ" role="3bR37C">
+          <node concept="3bR9La" id="4m8f5phpAQR" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="2MrvZqtGQDM" role="3989C9">
       <property role="TrG5h" value="com.mpsbasics.testutils" />
