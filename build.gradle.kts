@@ -471,14 +471,14 @@ tasks {
     }
 
     val package_formal by registering(Zip::class) {
-        dependsOn(build_formal_languages)
+        dependsOn(build_formal_languages, cyclonedxBom)
         archiveBaseName.set("com.mbeddr.formal")
         from(artifactsDir) {
             include("com.mbeddr.formal.languages/**")
         }
         from(reportsDir) {
             include("sbom.json")
-	    into("com.mbeddr.formal.languages")
+	        into("com.mbeddr.formal.languages")
         }
 
     }
@@ -489,14 +489,14 @@ tasks {
     }
 
     val package_assurance by registering(Zip::class) {
-        dependsOn(build_assurance_languages)
+        dependsOn(build_assurance_languages, cyclonedxBom)
         archiveBaseName.set("fasten.assurance")
         from(artifactsDir) {
             include("fasten.assurance.languages/**")
         }
         from(reportsDir) {
             include("sbom.json")
-	    into("fasten.assurance.languages")
+	        into("fasten.assurance.languages")
         }
     }
 
