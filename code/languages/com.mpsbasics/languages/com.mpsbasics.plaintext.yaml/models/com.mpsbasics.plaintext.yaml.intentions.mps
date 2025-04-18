@@ -74,12 +74,42 @@
       <node concept="3clFbS" id="21lHZzX8JPZ" role="2VODD2">
         <node concept="3clFbF" id="21lHZzX8KoZ" role="3cqZAp">
           <node concept="2YIFZM" id="21lHZzX8Kqk" role="3clFbG">
-            <ref role="37wK5l" to="fdr5:21lHZzX6dro" resolve="load" />
-            <ref role="1Pybhc" to="fdr5:21lHZzX6dpI" resolve="LoadFromFile" />
+            <ref role="37wK5l" to="fdr5:21lHZzX6dro" resolve="loadRawText" />
+            <ref role="1Pybhc" to="fdr5:21lHZzX6dpI" resolve="RawTextLoader" />
             <node concept="2Sf5sV" id="21lHZzX8KqX" role="37wK5m" />
             <node concept="2OqwBi" id="21lHZzX8LHH" role="37wK5m">
               <node concept="1XNTG" id="21lHZzX8L_B" role="2Oq$k0" />
               <node concept="liA8E" id="21lHZzX8LSe" role="2OqNvi">
+                <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7VD92VLrC3U">
+    <property role="TrG5h" value="populateFileAndLift" />
+    <ref role="2ZfgGC" to="bpzl:21lHZzX1B26" resolve="YamlFile" />
+    <node concept="2S6ZIM" id="7VD92VLrC3V" role="2ZfVej">
+      <node concept="3clFbS" id="7VD92VLrC3W" role="2VODD2">
+        <node concept="3clFbF" id="7VD92VLrC3X" role="3cqZAp">
+          <node concept="Xl_RD" id="7VD92VLrC3Y" role="3clFbG">
+            <property role="Xl_RC" value="Populate File and Lift" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7VD92VLrC3Z" role="2ZfgGD">
+      <node concept="3clFbS" id="7VD92VLrC40" role="2VODD2">
+        <node concept="3clFbF" id="7VD92VLsVnW" role="3cqZAp">
+          <node concept="2YIFZM" id="7VD92VLsVrd" role="3clFbG">
+            <ref role="37wK5l" to="fdr5:7VD92VLsoP2" resolve="loadAndLift" />
+            <ref role="1Pybhc" to="fdr5:7VD92VLsl7x" resolve="LoadAndLiftFacade" />
+            <node concept="2Sf5sV" id="7VD92VLsVu7" role="37wK5m" />
+            <node concept="2OqwBi" id="7VD92VLsVxe" role="37wK5m">
+              <node concept="1XNTG" id="7VD92VLsVxf" role="2Oq$k0" />
+              <node concept="liA8E" id="7VD92VLsVxg" role="2OqNvi">
                 <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
               </node>
             </node>

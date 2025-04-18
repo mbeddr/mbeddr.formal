@@ -180,5 +180,52 @@
       <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3gvcLqnRFrs">
+    <property role="EcuMT" value="3755776786380535516" />
+    <property role="3GE5qa" value="text_level.parens" />
+    <property role="TrG5h" value="OpenParens" />
+    <property role="34LRSv" value="{" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3gvcLqnRKnf" role="PzmwI">
+      <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3gvcLqnRKnl">
+    <property role="EcuMT" value="3755776786380555733" />
+    <property role="3GE5qa" value="text_level.parens" />
+    <property role="TrG5h" value="ClosedParens" />
+    <property role="34LRSv" value="}" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3gvcLqnRKnm" role="PzmwI">
+      <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3gvcLqnRXWO">
+    <property role="EcuMT" value="3755776786380611380" />
+    <property role="3GE5qa" value="text_level" />
+    <property role="TrG5h" value="Semicolon" />
+    <property role="34LRSv" value=":" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3gvcLqnRXWP" role="PzmwI">
+      <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3gvcLqnRXWV">
+    <property role="EcuMT" value="3755776786380611387" />
+    <property role="3GE5qa" value="text_level" />
+    <property role="TrG5h" value="Comma" />
+    <property role="34LRSv" value="," />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3gvcLqnRXWW" role="PzmwI">
+      <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3gvcLqnVlJf">
+    <property role="EcuMT" value="3755776786381495247" />
+    <property role="TrG5h" value="IPunctuationLike" />
+    <node concept="PrWs8" id="3gvcLqnVlJg" role="PrDN$">
+      <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
+    </node>
+  </node>
 </model>
 
