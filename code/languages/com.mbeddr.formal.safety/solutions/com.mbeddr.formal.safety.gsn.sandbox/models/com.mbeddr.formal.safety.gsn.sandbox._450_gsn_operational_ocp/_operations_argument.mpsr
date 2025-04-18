@@ -4,8 +4,11 @@
   <imports />
   <registry>
     <language id="fb9af7fb-3816-4066-99c4-a12adf147a7b" name="com.mbeddr.formal.safety.gsn.operational.ocp">
+      <concept id="4861154084263727273" name="com.mbeddr.formal.safety.gsn.operational.ocp.structure.OperationalClaimPointRef" flags="ng" index="lzd_b">
+        <reference id="4861154084263727514" name="ocp" index="lzdxS" />
+      </concept>
       <concept id="3173037291468801475" name="com.mbeddr.formal.safety.gsn.operational.ocp.structure.OperationArgument" flags="ng" index="35625p">
-        <reference id="3173037291468805331" name="ocp" index="356319" />
+        <child id="4861154084263728089" name="ocps" index="lzdCV" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -20,7 +23,9 @@
   <node concept="35625p" id="2K8T9FD4Y3L">
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="_operations_argument" />
-    <ref role="356319" node="2K8T9FD55qB" resolve="OCP1" />
+    <node concept="lzd_b" id="4dQiu9mZfd9" role="lzdCV">
+      <ref role="lzdxS" node="2K8T9FD55qB" resolve="OCP1" />
+    </node>
   </node>
 </model>
 

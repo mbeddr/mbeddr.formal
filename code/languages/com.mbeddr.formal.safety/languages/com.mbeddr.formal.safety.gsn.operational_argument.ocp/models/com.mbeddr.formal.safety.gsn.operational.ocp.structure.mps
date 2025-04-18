@@ -90,11 +90,6 @@
     <property role="34LRSv" value="operation argument" />
     <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" to="q1zg:2K8T9FD2QBL" resolve="SpecialArgumentBase" />
-    <node concept="1TJgyj" id="2K8T9FD4djj" role="1TKVEi">
-      <property role="IQ2ns" value="3173037291468805331" />
-      <property role="20kJfa" value="ocp" />
-      <ref role="20lvS9" node="2K8T9FD4cbz" resolve="OperationalClaimPoint" />
-    </node>
     <node concept="1irR5M" id="2K8T9FD4utN" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irR9n" id="1XJsHce2V90" role="1irR9h">
@@ -120,7 +115,7 @@
   <node concept="1TIwiD" id="4dQiu9mYD2D">
     <property role="EcuMT" value="4861154084263727273" />
     <property role="TrG5h" value="OperationalClaimPointRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4dQiu9mYD6q" role="1TKVEi">
       <property role="IQ2ns" value="4861154084263727514" />
       <property role="20kJfa" value="ocp" />

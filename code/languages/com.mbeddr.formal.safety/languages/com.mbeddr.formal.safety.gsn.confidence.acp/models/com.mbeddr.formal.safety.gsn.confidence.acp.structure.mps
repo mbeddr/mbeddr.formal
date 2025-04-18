@@ -133,7 +133,7 @@
   <node concept="1TIwiD" id="4dQiu9mXS03">
     <property role="EcuMT" value="4861154084263526403" />
     <property role="TrG5h" value="AssuranceClaimPointRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4dQiu9mXS3O" role="1TKVEi">
       <property role="IQ2ns" value="4861154084263526644" />
       <property role="20kJfa" value="acp" />
