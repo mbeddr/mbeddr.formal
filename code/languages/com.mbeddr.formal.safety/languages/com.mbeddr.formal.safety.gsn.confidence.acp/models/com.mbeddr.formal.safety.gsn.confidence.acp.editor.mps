@@ -17,6 +17,10 @@
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
+      <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
+        <child id="1140524464360" name="cellLayout" index="2czzBx" />
+      </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
@@ -60,6 +64,7 @@
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
+      <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -83,6 +88,10 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
     </language>
   </registry>
   <node concept="24kQdi" id="3bh1RFvGk3D">
@@ -192,7 +201,7 @@
       <node concept="3EZMnI" id="4lbNCDmQ1Yd" role="3EZMnx">
         <node concept="2iRfu4" id="4lbNCDmQ1Ye" role="2iSdaV" />
         <node concept="3F0ifn" id="4lbNCDmQ1PR" role="3EZMnx">
-          <property role="3F0ifm" value="Confidence argument for ACP:" />
+          <property role="3F0ifm" value="Confidence argument for ACPs:" />
           <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="1iCGBv" id="4lbNCDmQ26E" role="3EZMnx">
@@ -203,6 +212,26 @@
               <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
             </node>
           </node>
+          <node concept="pkWqt" id="4dQiu9mXSDF" role="pqm2j">
+            <node concept="3clFbS" id="4dQiu9mXSDG" role="2VODD2">
+              <node concept="3clFbF" id="4dQiu9mXSSB" role="3cqZAp">
+                <node concept="2OqwBi" id="4dQiu9mXWWh" role="3clFbG">
+                  <node concept="2OqwBi" id="4dQiu9mXTvK" role="2Oq$k0">
+                    <node concept="pncrf" id="4dQiu9mXSSA" role="2Oq$k0" />
+                    <node concept="3TrEf2" id="4dQiu9mXWEP" role="2OqNvi">
+                      <ref role="3Tt5mk" to="kqaf:4lbNCDmPWRO" resolve="acp" />
+                    </node>
+                  </node>
+                  <node concept="3x8VRR" id="4dQiu9mXXLG" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F2HdR" id="4dQiu9mYBNL" role="3EZMnx">
+          <property role="2czwfO" value="," />
+          <ref role="1NtTu8" to="kqaf:4dQiu9mXSe3" resolve="acps" />
+          <node concept="2iRfu4" id="4dQiu9mYBNN" role="2czzBx" />
         </node>
       </node>
       <node concept="PMmxH" id="1qrXfdH1Zc1" role="3EZMnx">
@@ -211,6 +240,18 @@
       <node concept="2iRkQZ" id="3GRi4m$qQ5t" role="2iSdaV" />
     </node>
     <node concept="B$lHz" id="1OwxQiTkCux" role="6VMZX" />
+  </node>
+  <node concept="24kQdi" id="4dQiu9mXS8d">
+    <ref role="1XX52x" to="kqaf:4dQiu9mXS03" resolve="AssuranceClaimPointRef" />
+    <node concept="1iCGBv" id="4dQiu9mXSa9" role="2wV5jI">
+      <ref role="1NtTu8" to="kqaf:4dQiu9mXS3O" resolve="acp" />
+      <node concept="1sVBvm" id="4dQiu9mXSab" role="1sWHZn">
+        <node concept="3F0A7n" id="4dQiu9mXSaT" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 

@@ -5,7 +5,7 @@
   <languages>
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
-    <use id="00a2e56d-f195-410b-8afe-5a3c7e505658" name="com.mbeddr.formal.safety.gsn.confidence.acp" version="0" />
+    <use id="00a2e56d-f195-410b-8afe-5a3c7e505658" name="com.mbeddr.formal.safety.gsn.confidence.acp" version="1" />
   </languages>
   <imports />
   <registry>
@@ -13,11 +13,14 @@
       <concept id="4993311705427915302" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.AcpRefWord" flags="ng" index="jBRMG">
         <reference id="4993311705427915879" name="acp" index="jBRFH" />
       </concept>
+      <concept id="4861154084263526403" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.AssuranceClaimPointRef" flags="ng" index="lwsBx">
+        <reference id="4861154084263526644" name="acp" index="lws$m" />
+      </concept>
       <concept id="3661716196349264080" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.AssuranceClaimPoint" flags="ng" index="3Ho4uE">
         <reference id="3661716196349264088" name="confidenceArgument" index="3Ho4uy" />
       </concept>
       <concept id="3661716196349264085" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.ConfidenceArgument" flags="ng" index="3Ho4uJ">
-        <reference id="4993311705428119028" name="acp" index="jB0dY" />
+        <child id="4861154084263527299" name="acps" index="lwsDx" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -710,7 +713,6 @@
   <node concept="3Ho4uJ" id="4lbNCDmRjpH">
     <property role="TrG5h" value="_100_confidence_argument_1" />
     <property role="3GE5qa" value="confidence_arguments" />
-    <ref role="jB0dY" node="4lbNCDmRoZa" resolve="ACP01" />
     <node concept="2vn7WC" id="4lbNCDmRjpI" role="2vn1q5">
       <property role="TrG5h" value="G-C.01" />
       <node concept="19SGf9" id="4lbNCDmRjpJ" role="2vnaTY">
@@ -913,11 +915,13 @@
         </node>
       </node>
     </node>
+    <node concept="lwsBx" id="4dQiu9mZeMU" role="lwsDx">
+      <ref role="lws$m" node="4lbNCDmRoZa" resolve="ACP01" />
+    </node>
   </node>
   <node concept="3Ho4uJ" id="l38t$6v2pk">
     <property role="3GE5qa" value="confidence_arguments" />
     <property role="TrG5h" value="_110_confidence_argument_scenarios" />
-    <ref role="jB0dY" node="5rKLCgmFXSa" resolve="ACP2" />
     <node concept="2vn7WC" id="l38t$6v2pl" role="2vn1q5">
       <property role="TrG5h" value="G-C.01" />
       <node concept="19SGf9" id="l38t$6v2pm" role="2vnaTY">
@@ -1119,6 +1123,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="lwsBx" id="4dQiu9mZeMV" role="lwsDx">
+      <ref role="lws$m" node="5rKLCgmFXSa" resolve="ACP2" />
     </node>
   </node>
 </model>
