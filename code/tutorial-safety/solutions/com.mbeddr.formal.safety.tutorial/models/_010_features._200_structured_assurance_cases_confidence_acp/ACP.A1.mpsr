@@ -7,8 +7,11 @@
       <concept id="4993311705427915302" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.AcpRefWord" flags="ng" index="jBRMG">
         <reference id="4993311705427915879" name="acp" index="jBRFH" />
       </concept>
+      <concept id="4861154084263526403" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.AssuranceClaimPointRef" flags="ng" index="lwsBx">
+        <reference id="4861154084263526644" name="acp" index="lws$m" />
+      </concept>
       <concept id="3661716196349264085" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.ConfidenceArgument" flags="ng" index="3Ho4uJ">
-        <reference id="4993311705428119028" name="acp" index="jB0dY" />
+        <child id="4861154084263527299" name="acps" index="lwsDx" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -93,7 +96,6 @@
     <property role="TrG5h" value="ACP.A1" />
     <property role="3dZJUb" value="ACP_A1" />
     <property role="3dZJ_E" value="5" />
-    <ref role="jB0dY" node="1OwxQiTfAGa" resolve="ACP.A1" />
     <node concept="2vn7WC" id="1OwxQiTfACF" role="2vn1q5">
       <property role="TrG5h" value="ACP_A1_001" />
       <node concept="19SGf9" id="1OwxQiTfACG" role="2vnaTY">
@@ -380,6 +382,9 @@
           <property role="19SUeA" value="Source: &quot;A New Approach to creating Clear Safety Arguments&quot;, by&#10;R. Hawkins, T. Kelly, J. Knight, M. Graydon&#10;&#10;https://www.researchgate.net/publication/226809050 " />
         </node>
       </node>
+    </node>
+    <node concept="lwsBx" id="4dQiu9n0hCA" role="lwsDx">
+      <ref role="lws$m" node="1OwxQiTfAGa" resolve="ACP.A1" />
     </node>
   </node>
 </model>

@@ -7,8 +7,11 @@
       <concept id="4993311705427915302" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.AcpRefWord" flags="ng" index="jBRMG">
         <reference id="4993311705427915879" name="acp" index="jBRFH" />
       </concept>
+      <concept id="4861154084263526403" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.AssuranceClaimPointRef" flags="ng" index="lwsBx">
+        <reference id="4861154084263526644" name="acp" index="lws$m" />
+      </concept>
       <concept id="3661716196349264085" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.ConfidenceArgument" flags="ng" index="3Ho4uJ">
-        <reference id="4993311705428119028" name="acp" index="jB0dY" />
+        <child id="4861154084263527299" name="acps" index="lwsDx" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -80,7 +83,6 @@
   <node concept="3Ho4uJ" id="4y8PK53YrTN">
     <property role="TrG5h" value="_000_confidence_for_ACP_01" />
     <property role="3GE5qa" value="_999_confidence" />
-    <ref role="jB0dY" node="4y8PK53Ys1A" resolve="ACP_01" />
     <node concept="2vn7WC" id="4y8PK53YrTO" role="2vn1q5">
       <property role="TrG5h" value="G-C.01" />
       <node concept="19SGf9" id="4y8PK53YrTP" role="2vnaTY">
@@ -282,6 +284,9 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="lwsBx" id="4dQiu9n0hC_" role="lwsDx">
+      <ref role="lws$m" node="4y8PK53Ys1A" resolve="ACP_01" />
     </node>
   </node>
 </model>

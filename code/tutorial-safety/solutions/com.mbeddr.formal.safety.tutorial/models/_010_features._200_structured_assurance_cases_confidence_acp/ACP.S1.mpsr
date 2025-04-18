@@ -4,8 +4,11 @@
   <imports />
   <registry>
     <language id="00a2e56d-f195-410b-8afe-5a3c7e505658" name="com.mbeddr.formal.safety.gsn.confidence.acp">
+      <concept id="4861154084263526403" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.AssuranceClaimPointRef" flags="ng" index="lwsBx">
+        <reference id="4861154084263526644" name="acp" index="lws$m" />
+      </concept>
       <concept id="3661716196349264085" name="com.mbeddr.formal.safety.gsn.confidence.acp.structure.ConfidenceArgument" flags="ng" index="3Ho4uJ">
-        <reference id="4993311705428119028" name="acp" index="jB0dY" />
+        <child id="4861154084263527299" name="acps" index="lwsDx" />
       </concept>
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -80,7 +83,6 @@
     <property role="TrG5h" value="ACP.S1" />
     <property role="3dZJUb" value="ACP_S1" />
     <property role="3dZJ_E" value="2" />
-    <ref role="jB0dY" node="1OwxQiTfBko" resolve="ACP.S1" />
     <node concept="37mRI7" id="1OwxQiTfBlD" role="lGtFl">
       <node concept="37mRIm" id="1OwxQiTfBlE" role="37mRID">
         <property role="37mO49" value="2098826293029005867" />
@@ -320,6 +322,9 @@
           <property role="19SUeA" value="Source: &quot;A New Approach to creating Clear Safety Arguments&quot;, by&#10;R. Hawkins, T. Kelly, J. Knight, M. Graydon&#10;&#10;https://www.researchgate.net/publication/226809050  " />
         </node>
       </node>
+    </node>
+    <node concept="lwsBx" id="4dQiu9n0hCH" role="lwsDx">
+      <ref role="lws$m" node="1OwxQiTfBko" resolve="ACP.S1" />
     </node>
   </node>
 </model>
