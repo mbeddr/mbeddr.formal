@@ -316,7 +316,7 @@
         <node concept="3clFbF" id="3YAmJdZnM2s" role="3cqZAp">
           <node concept="2YIFZM" id="3YAmJdZnM3e" role="3clFbG">
             <ref role="37wK5l" to="fdr5:21lHZzX6vfi" resolve="populateFile" />
-            <ref role="1Pybhc" to="fdr5:21lHZzX6dpI" resolve="LoadFromFile" />
+            <ref role="1Pybhc" to="fdr5:21lHZzX6dpI" resolve="RawTextLoader" />
             <node concept="37vLTw" id="3YAmJdZnM3I" role="37wK5m">
               <ref role="3cqZAo" node="3YAmJdZnJso" resolve="file" />
             </node>
@@ -392,7 +392,7 @@
               <ref role="3cqZAo" node="3YAmJdZnJso" resolve="file" />
             </node>
             <node concept="3xONca" id="3gvcLqnR$44" role="37wK5m">
-              <ref role="3xOPvv" node="5AI9Uvu2$wA" resolve="_020_comments_testdata" />
+              <ref role="3xOPvv" node="5AI9Uvu2$wA" resolve="_020_raw_text_loader_comments" />
             </node>
           </node>
         </node>
@@ -1369,7 +1369,7 @@
         <node concept="3clFbF" id="6nIrkDgi9e8" role="3cqZAp">
           <node concept="2YIFZM" id="6nIrkDgi9e9" role="3clFbG">
             <ref role="37wK5l" to="fdr5:21lHZzX6vfi" resolve="populateFile" />
-            <ref role="1Pybhc" to="fdr5:21lHZzX6dpI" resolve="LoadFromFile" />
+            <ref role="1Pybhc" to="fdr5:21lHZzX6dpI" resolve="RawTextLoader" />
             <node concept="37vLTw" id="6nIrkDgi9ea" role="37wK5m">
               <ref role="3cqZAo" node="6nIrkDgi9e3" resolve="myFile" />
             </node>

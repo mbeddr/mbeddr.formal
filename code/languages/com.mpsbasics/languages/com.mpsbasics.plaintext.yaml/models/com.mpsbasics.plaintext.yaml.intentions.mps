@@ -74,8 +74,8 @@
       <node concept="3clFbS" id="21lHZzX8JPZ" role="2VODD2">
         <node concept="3clFbF" id="21lHZzX8KoZ" role="3cqZAp">
           <node concept="2YIFZM" id="21lHZzX8Kqk" role="3clFbG">
-            <ref role="37wK5l" to="fdr5:21lHZzX6dro" resolve="load" />
-            <ref role="1Pybhc" to="fdr5:21lHZzX6dpI" resolve="LoadFromFile" />
+            <ref role="37wK5l" to="fdr5:21lHZzX6dro" resolve="loadRawText" />
+            <ref role="1Pybhc" to="fdr5:21lHZzX6dpI" resolve="RawTextLoader" />
             <node concept="2Sf5sV" id="21lHZzX8KqX" role="37wK5m" />
             <node concept="2OqwBi" id="21lHZzX8LHH" role="37wK5m">
               <node concept="1XNTG" id="21lHZzX8L_B" role="2Oq$k0" />

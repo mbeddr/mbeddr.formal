@@ -185,7 +185,7 @@
     <property role="3GE5qa" value="text_level.parens" />
     <property role="TrG5h" value="OpenParens" />
     <property role="34LRSv" value="{" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3gvcLqnRKnf" role="PzmwI">
       <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
     </node>
@@ -195,7 +195,7 @@
     <property role="3GE5qa" value="text_level.parens" />
     <property role="TrG5h" value="ClosedParens" />
     <property role="34LRSv" value="}" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3gvcLqnRKnm" role="PzmwI">
       <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
     </node>
@@ -205,7 +205,7 @@
     <property role="3GE5qa" value="text_level" />
     <property role="TrG5h" value="Semicolon" />
     <property role="34LRSv" value=":" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3gvcLqnRXWP" role="PzmwI">
       <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
     </node>
@@ -215,7 +215,7 @@
     <property role="3GE5qa" value="text_level" />
     <property role="TrG5h" value="Comma" />
     <property role="34LRSv" value="," />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3gvcLqnRXWW" role="PzmwI">
       <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
     </node>

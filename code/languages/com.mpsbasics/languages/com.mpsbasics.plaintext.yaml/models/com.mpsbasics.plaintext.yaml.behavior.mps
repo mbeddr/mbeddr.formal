@@ -2068,12 +2068,12 @@
                 <ref role="ehGHo" to="bpzl:21lHZzX1IBT" resolve="IYamlToken" />
               </node>
               <node concept="3uibUv" id="3YAmJe03ubF" role="3rvSg0">
-                <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
+                <ref role="3uigEE" node="3YAmJe04qYl" resolve="RawTextPositionComputer.Position" />
               </node>
             </node>
             <node concept="2YIFZM" id="3YAmJe04wq0" role="33vP2m">
               <ref role="37wK5l" node="3YAmJe04qWu" resolve="computePositions" />
-              <ref role="1Pybhc" node="3YAmJe04qWs" resolve="LiftText2YamlLevelUtils" />
+              <ref role="1Pybhc" node="3YAmJe04qWs" resolve="RawTextPositionComputer" />
               <node concept="37vLTw" id="3YAmJe04wtA" role="37wK5m">
                 <ref role="3cqZAo" node="3YAmJe03srd" resolve="rawTextFile" />
               </node>
@@ -2661,7 +2661,7 @@
             <ref role="ehGHo" to="bpzl:21lHZzX1IBT" resolve="IYamlToken" />
           </node>
           <node concept="3uibUv" id="3YAmJe05a0b" role="3rvSg0">
-            <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
+            <ref role="3uigEE" node="3YAmJe04qYl" resolve="RawTextPositionComputer.Position" />
           </node>
         </node>
       </node>
@@ -2675,7 +2675,7 @@
           <node concept="3cpWsn" id="6nIrkDgpe9y" role="3cpWs9">
             <property role="TrG5h" value="position" />
             <node concept="3uibUv" id="6nIrkDgpdPH" role="1tU5fm">
-              <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
+              <ref role="3uigEE" node="3YAmJe04qYl" resolve="RawTextPositionComputer.Position" />
             </node>
             <node concept="3EllGN" id="6nIrkDgpe9z" role="33vP2m">
               <node concept="37vLTw" id="6nIrkDgpe9$" role="3ElVtu">
@@ -3122,7 +3122,7 @@
             <ref role="ehGHo" to="bpzl:21lHZzX1IBT" resolve="IYamlToken" />
           </node>
           <node concept="3uibUv" id="6nIrkDgpaCm" role="3rvSg0">
-            <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
+            <ref role="3uigEE" node="3YAmJe04qYl" resolve="RawTextPositionComputer.Position" />
           </node>
         </node>
       </node>
@@ -3144,7 +3144,7 @@
                 <ref role="ehGHo" to="bpzl:21lHZzX1IBT" resolve="IYamlToken" />
               </node>
               <node concept="3uibUv" id="3YAmJe04qW$" role="3rvSg0">
-                <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
+                <ref role="3uigEE" node="3YAmJe04qYl" resolve="RawTextPositionComputer.Position" />
               </node>
             </node>
             <node concept="2ShNRf" id="3YAmJe04qW_" role="33vP2m">
@@ -3210,7 +3210,7 @@
               <node concept="37vLTI" id="3YAmJe04qX1" role="3clFbG">
                 <node concept="2ShNRf" id="3YAmJe04qX2" role="37vLTx">
                   <node concept="1pGfFk" id="3YAmJe04qX3" role="2ShVmc">
-                    <ref role="37wK5l" node="3YAmJe04qYr" resolve="LiftText2YamlLevelUtils.Position" />
+                    <ref role="37wK5l" node="3YAmJe04qYr" resolve="RawTextPositionComputer.Position" />
                     <node concept="37vLTw" id="3YAmJe04qX4" role="37wK5m">
                       <ref role="3cqZAo" node="3YAmJe04qWI" resolve="crtLine" />
                     </node>
@@ -3420,7 +3420,7 @@
           <ref role="ehGHo" to="bpzl:21lHZzX1IBT" resolve="IYamlToken" />
         </node>
         <node concept="3uibUv" id="3YAmJe04sIs" role="3rvSg0">
-          <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
+          <ref role="3uigEE" node="3YAmJe04qYl" resolve="RawTextPositionComputer.Position" />
         </node>
       </node>
     </node>
@@ -3871,7 +3871,7 @@
               <node concept="3cpWsn" id="3YAmJe0aayn" role="3cpWs9">
                 <property role="TrG5h" value="tokenPosition" />
                 <node concept="3uibUv" id="3YAmJe0aa7w" role="1tU5fm">
-                  <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
+                  <ref role="3uigEE" node="3YAmJe04qYl" resolve="RawTextPositionComputer.Position" />
                 </node>
                 <node concept="3EllGN" id="3YAmJe0aayo" role="33vP2m">
                   <node concept="37vLTw" id="3YAmJe0aayp" role="3ElQJh">
@@ -3985,7 +3985,7 @@
               <node concept="3cpWsn" id="3YAmJe0aw02" role="3cpWs9">
                 <property role="TrG5h" value="tokenPosition" />
                 <node concept="3uibUv" id="3YAmJe0aw03" role="1tU5fm">
-                  <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
+                  <ref role="3uigEE" node="3YAmJe04qYl" resolve="RawTextPositionComputer.Position" />
                 </node>
                 <node concept="3EllGN" id="3YAmJe0aw04" role="33vP2m">
                   <node concept="37vLTw" id="3YAmJe0aw05" role="3ElQJh">
@@ -4108,7 +4108,7 @@
             <ref role="ehGHo" to="bpzl:21lHZzX1IBT" resolve="IYamlToken" />
           </node>
           <node concept="3uibUv" id="3YAmJe0a6RS" role="3rvSg0">
-            <ref role="3uigEE" node="3YAmJe04qYl" resolve="LiftText2YamlLevelUtils.Position" />
+            <ref role="3uigEE" node="3YAmJe04qYl" resolve="RawTextPositionComputer.Position" />
           </node>
         </node>
       </node>
@@ -4208,7 +4208,7 @@
             <node concept="3clFbF" id="6nIrkDgi9e8" role="3cqZAp">
               <node concept="2YIFZM" id="6nIrkDgi9e9" role="3clFbG">
                 <ref role="37wK5l" node="21lHZzX6vfi" resolve="populateFile" />
-                <ref role="1Pybhc" node="21lHZzX6dpI" resolve="LoadFromFile" />
+                <ref role="1Pybhc" node="21lHZzX6dpI" resolve="RawTextLoader" />
                 <node concept="37vLTw" id="6nIrkDgi9ea" role="37wK5m">
                   <ref role="3cqZAo" node="6nIrkDgi9e3" resolve="myFile" />
                 </node>
