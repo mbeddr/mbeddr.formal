@@ -11907,6 +11907,11 @@
             <ref role="1Busuk" node="2K8T9FD4ngl" resolve="com.mbeddr.formal.safety.gsn.modularization.claim_points" />
           </node>
         </node>
+        <node concept="1SiIV0" id="4dQiu9n0l5D" role="3bR37C">
+          <node concept="3bR9La" id="4dQiu9n0l5E" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="2K8T9FD4q9m" role="2G$12L">
         <property role="BnDLt" value="true" />
