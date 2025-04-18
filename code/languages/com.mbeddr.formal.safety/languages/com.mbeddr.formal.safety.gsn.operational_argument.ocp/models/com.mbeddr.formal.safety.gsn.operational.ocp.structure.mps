@@ -45,6 +45,8 @@
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
+        <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
+        <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
@@ -106,6 +108,24 @@
           <property role="3PKj8l" value="CC7654" />
         </node>
       </node>
+    </node>
+    <node concept="1TJgyj" id="4dQiu9mYDfp" role="1TKVEi">
+      <property role="IQ2ns" value="4861154084263728089" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="ocps" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="4dQiu9mYD2D" resolve="OperationalClaimPointRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4dQiu9mYD2D">
+    <property role="EcuMT" value="4861154084263727273" />
+    <property role="TrG5h" value="OperationalClaimPointRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="4dQiu9mYD6q" role="1TKVEi">
+      <property role="IQ2ns" value="4861154084263727514" />
+      <property role="20kJfa" value="ocp" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2K8T9FD4cbz" resolve="OperationalClaimPoint" />
     </node>
   </node>
 </model>
