@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -13,6 +14,8 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" implicit="true" />
   </imports>
@@ -46,6 +49,10 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -53,7 +60,9 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -69,6 +78,7 @@
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -76,6 +86,9 @@
       <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
         <child id="1206060619838" name="condition" index="3eO9$A" />
         <child id="1206060644605" name="statementList" index="3eOfB_" />
+      </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -98,8 +111,12 @@
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
         <child id="1175517761460" name="condition" index="2MkoU_" />
       </concept>
@@ -147,6 +164,7 @@
   </registry>
   <node concept="18kY7G" id="2QkJsC6FGrB">
     <property role="TrG5h" value="check_ExternalEvidenceDocument" />
+    <property role="1$Xk0j" value="true" />
     <node concept="3clFbS" id="2QkJsC6FGrC" role="18ibNy">
       <node concept="3clFbJ" id="2QkJsC6FQtL" role="3cqZAp">
         <node concept="3clFbS" id="2QkJsC6FQtN" role="3clFbx">
@@ -441,6 +459,226 @@
     <node concept="1YaCAy" id="7bPRoQU95PV" role="1YuTPh">
       <property role="TrG5h" value="generatedExternalEvidenceSolution" />
       <ref role="1YaFvo" to="s9pq:6R91tEKNYHe" resolve="GeneratedExternalEvidenceSolution" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4dQiu9n8yOv">
+    <property role="TrG5h" value="check_UrlEvidenceDocument" />
+    <property role="1$Xk0j" value="true" />
+    <node concept="3clFbS" id="4dQiu9n8yOw" role="18ibNy">
+      <node concept="3clFbJ" id="4dQiu9na1QE" role="3cqZAp">
+        <node concept="3clFbS" id="4dQiu9na1QG" role="3clFbx">
+          <node concept="3cpWs6" id="4dQiu9na3be" role="3cqZAp" />
+        </node>
+        <node concept="3fqX7Q" id="4dQiu9na1Y2" role="3clFbw">
+          <node concept="2OqwBi" id="4dQiu9na2cj" role="3fr31v">
+            <node concept="1YBJjd" id="4dQiu9na1ZG" role="2Oq$k0">
+              <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="urlEvidenceDocument" />
+            </node>
+            <node concept="3TrcHB" id="4dQiu9na34i" role="2OqNvi">
+              <ref role="3TsBF5" to="s9pq:4dQiu9n9URK" resolve="enableCheckingChanges" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbH" id="4dQiu9na3cG" role="3cqZAp" />
+      <node concept="3clFbJ" id="4dQiu9n8yOx" role="3cqZAp">
+        <node concept="3clFbS" id="4dQiu9n8yOy" role="3clFbx">
+          <node concept="3J1_TO" id="4dQiu9n8yOz" role="3cqZAp">
+            <node concept="3uVAMA" id="4dQiu9n8yO$" role="1zxBo5">
+              <node concept="XOnhg" id="4dQiu9n8yO_" role="1zc67B">
+                <property role="TrG5h" value="e" />
+                <node concept="nSUau" id="4dQiu9n8yOA" role="1tU5fm">
+                  <node concept="3uibUv" id="4dQiu9n8yOB" role="nSUat">
+                    <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="4dQiu9n8yOC" role="1zc67A">
+                <node concept="2MkqsV" id="4dQiu9n8yOD" role="3cqZAp">
+                  <node concept="Xl_RD" id="4dQiu9n8yOE" role="2MkJ7o">
+                    <property role="Xl_RC" value="error while accessing file" />
+                  </node>
+                  <node concept="1YBJjd" id="4dQiu9n8yOF" role="1urrMF">
+                    <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="externalEvidenceDocument" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="4dQiu9n8yOG" role="1zxBo7">
+              <node concept="3cpWs8" id="4dQiu9n8S3i" role="3cqZAp">
+                <node concept="3cpWsn" id="4dQiu9n8S3j" role="3cpWs9">
+                  <property role="TrG5h" value="lastModifiedDate" />
+                  <node concept="3uibUv" id="4dQiu9n8S0j" role="1tU5fm">
+                    <ref role="3uigEE" to="33ny:~Date" resolve="Date" />
+                  </node>
+                  <node concept="2YIFZM" id="4dQiu9n8S3k" role="33vP2m">
+                    <ref role="37wK5l" to="kq9k:4dQiu9n8Fre" resolve="getLastModifiedDate" />
+                    <ref role="1Pybhc" to="kq9k:4dQiu9n8fWF" resolve="UrlEvidenceDocumentChecker" />
+                    <node concept="1YBJjd" id="4dQiu9n8S3l" role="37wK5m">
+                      <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="urlEvidenceDocument" />
+                    </node>
+                    <node concept="2OqwBi" id="4dQiu9n9sQc" role="37wK5m">
+                      <node concept="1YBJjd" id="4dQiu9n9sdF" role="2Oq$k0">
+                        <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="urlEvidenceDocument" />
+                      </node>
+                      <node concept="3TrcHB" id="4dQiu9n9tcv" role="2OqNvi">
+                        <ref role="3TsBF5" to="s9pq:1UGKBYPwn0b" resolve="url" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="4dQiu9n9joZ" role="3cqZAp">
+                <node concept="3clFbS" id="4dQiu9n9jp1" role="3clFbx">
+                  <node concept="a7r0C" id="4dQiu9n9vwe" role="3cqZAp">
+                    <node concept="Xl_RD" id="4dQiu9n9vwg" role="a7wSD">
+                      <property role="Xl_RC" value="Could not get the last modified date. Possible cause are internet access problems" />
+                    </node>
+                    <node concept="1YBJjd" id="4dQiu9n9vwh" role="1urrMF">
+                      <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="urlEvidenceDocument" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbC" id="4dQiu9n9nfX" role="3clFbw">
+                  <node concept="10Nm6u" id="4dQiu9n9nNO" role="3uHU7w" />
+                  <node concept="37vLTw" id="4dQiu9n9jRw" role="3uHU7B">
+                    <ref role="3cqZAo" node="4dQiu9n8S3j" resolve="lastModifiedDate" />
+                  </node>
+                </node>
+                <node concept="9aQIb" id="4dQiu9n9vNv" role="9aQIa">
+                  <node concept="3clFbS" id="4dQiu9n9vNw" role="9aQI4">
+                    <node concept="3cpWs8" id="4dQiu9n9960" role="3cqZAp">
+                      <node concept="3cpWsn" id="4dQiu9n9961" role="3cpWs9">
+                        <property role="TrG5h" value="savedDate" />
+                        <node concept="3uibUv" id="4dQiu9n993K" role="1tU5fm">
+                          <ref role="3uigEE" to="33ny:~Date" resolve="Date" />
+                        </node>
+                        <node concept="2OqwBi" id="4dQiu9n9elA" role="33vP2m">
+                          <node concept="10M0yZ" id="4dQiu9n9elB" role="2Oq$k0">
+                            <ref role="3cqZAo" to="kq9k:4dQiu9n90ZC" resolve="sdf" />
+                            <ref role="1PxDUh" to="kq9k:4dQiu9n90Pf" resolve="Constants" />
+                          </node>
+                          <node concept="liA8E" id="4dQiu9n9elC" role="2OqNvi">
+                            <ref role="37wK5l" to="25x5:~DateFormat.parse(java.lang.String)" resolve="parse" />
+                            <node concept="2OqwBi" id="4dQiu9n9elD" role="37wK5m">
+                              <node concept="1YBJjd" id="4dQiu9n9elE" role="2Oq$k0">
+                                <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="urlEvidenceDocument" />
+                              </node>
+                              <node concept="3TrcHB" id="4dQiu9n9elF" role="2OqNvi">
+                                <ref role="3TsBF5" to="s9pq:4dQiu9n0ySe" resolve="lastModifiedDate" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbJ" id="4dQiu9n9fmJ" role="3cqZAp">
+                      <node concept="3clFbS" id="4dQiu9n9fmL" role="3clFbx">
+                        <node concept="2MkqsV" id="4dQiu9n9ipm" role="3cqZAp">
+                          <node concept="3cpWs3" id="4dQiu9n9Cgi" role="2MkJ7o">
+                            <node concept="2OqwBi" id="4dQiu9n9CO9" role="3uHU7w">
+                              <node concept="10M0yZ" id="4dQiu9n9CrQ" role="2Oq$k0">
+                                <ref role="3cqZAo" to="kq9k:4dQiu9n90ZC" resolve="sdf" />
+                                <ref role="1PxDUh" to="kq9k:4dQiu9n90Pf" resolve="Constants" />
+                              </node>
+                              <node concept="liA8E" id="4dQiu9n9DZc" role="2OqNvi">
+                                <ref role="37wK5l" to="25x5:~DateFormat.format(java.util.Date)" resolve="format" />
+                                <node concept="37vLTw" id="4dQiu9n9El2" role="37wK5m">
+                                  <ref role="3cqZAo" node="4dQiu9n8S3j" resolve="lastModifiedDate" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3cpWs3" id="4dQiu9n9_Pl" role="3uHU7B">
+                              <node concept="3cpWs3" id="4dQiu9n9yno" role="3uHU7B">
+                                <node concept="Xl_RD" id="4dQiu9n9itc" role="3uHU7B">
+                                  <property role="Xl_RC" value="Document changed since last timestamp saved in the model. Last saved timestamp: " />
+                                </node>
+                                <node concept="2OqwBi" id="4dQiu9n9z7Y" role="3uHU7w">
+                                  <node concept="10M0yZ" id="4dQiu9n9yKR" role="2Oq$k0">
+                                    <ref role="3cqZAo" to="kq9k:4dQiu9n90ZC" resolve="sdf" />
+                                    <ref role="1PxDUh" to="kq9k:4dQiu9n90Pf" resolve="Constants" />
+                                  </node>
+                                  <node concept="liA8E" id="4dQiu9n9$qQ" role="2OqNvi">
+                                    <ref role="37wK5l" to="25x5:~DateFormat.format(java.util.Date)" resolve="format" />
+                                    <node concept="37vLTw" id="4dQiu9n9$IU" role="37wK5m">
+                                      <ref role="3cqZAo" node="4dQiu9n9961" resolve="savedDate" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="Xl_RD" id="4dQiu9n9A8A" role="3uHU7w">
+                                <property role="Xl_RC" value=" Last modified date: " />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1YBJjd" id="4dQiu9n9EFo" role="1urrMF">
+                            <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="urlEvidenceDocument" />
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="4dQiu9n9gju" role="3clFbw">
+                        <node concept="37vLTw" id="4dQiu9n9fvU" role="2Oq$k0">
+                          <ref role="3cqZAo" node="4dQiu9n8S3j" resolve="lastModifiedDate" />
+                        </node>
+                        <node concept="liA8E" id="4dQiu9n9i01" role="2OqNvi">
+                          <ref role="37wK5l" to="33ny:~Date.after(java.util.Date)" resolve="after" />
+                          <node concept="37vLTw" id="4dQiu9n9ii4" role="37wK5m">
+                            <ref role="3cqZAo" node="4dQiu9n9961" resolve="savedDate" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1Wc70l" id="3anBrrRz1Zz" role="3clFbw">
+          <node concept="17QLQc" id="3anBrrRz6j8" role="3uHU7w">
+            <node concept="10M0yZ" id="3anBrrRz6Od" role="3uHU7w">
+              <ref role="3cqZAo" to="kq9k:3anBrrRyVCU" resolve="UNKNOWN_LAST_MODIFICATION_DATE" />
+              <ref role="1PxDUh" to="kq9k:4dQiu9n8fWF" resolve="UrlEvidenceDocumentCheckerUtils" />
+            </node>
+            <node concept="2OqwBi" id="3anBrrRz2FG" role="3uHU7B">
+              <node concept="1YBJjd" id="3anBrrRz2qD" role="2Oq$k0">
+                <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="urlEvidenceDocument" />
+              </node>
+              <node concept="3TrcHB" id="3anBrrRz3e$" role="2OqNvi">
+                <ref role="3TsBF5" to="s9pq:4dQiu9n0ySe" resolve="lastModifiedDate" />
+              </node>
+            </node>
+          </node>
+          <node concept="1Wc70l" id="4dQiu9n8UCy" role="3uHU7B">
+            <node concept="2OqwBi" id="4dQiu9n8BZG" role="3uHU7B">
+              <node concept="2OqwBi" id="4dQiu9n8yPu" role="2Oq$k0">
+                <node concept="1YBJjd" id="4dQiu9n8yPv" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="urlEvidenceDocument" />
+                </node>
+                <node concept="3TrcHB" id="4dQiu9n8_0F" role="2OqNvi">
+                  <ref role="3TsBF5" to="s9pq:1UGKBYPwn0b" resolve="url" />
+                </node>
+              </node>
+              <node concept="17RvpY" id="4dQiu9n8EvH" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="4dQiu9n8XHg" role="3uHU7w">
+              <node concept="2OqwBi" id="4dQiu9n8Vqq" role="2Oq$k0">
+                <node concept="1YBJjd" id="4dQiu9n8V1M" role="2Oq$k0">
+                  <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="urlEvidenceDocument" />
+                </node>
+                <node concept="3TrcHB" id="4dQiu9n8VHW" role="2OqNvi">
+                  <ref role="3TsBF5" to="s9pq:4dQiu9n0ySe" resolve="lastModifiedDate" />
+                </node>
+              </node>
+              <node concept="17RvpY" id="4dQiu9n8ZAX" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4dQiu9n8yPy" role="1YuTPh">
+      <property role="TrG5h" value="urlEvidenceDocument" />
+      <ref role="1YaFvo" to="s9pq:1UGKBYPwn08" resolve="URLEvidenceDocument" />
     </node>
   </node>
 </model>

@@ -246,6 +246,97 @@
       <node concept="3Tm1VV" id="xCk$O6mizl" role="1B3o_S" />
       <node concept="3cqZAl" id="xCk$O6mi_6" role="3clF45" />
     </node>
+    <node concept="2tJIrI" id="4dQiu9n7EII" role="jymVt" />
+    <node concept="2YIFZL" id="4dQiu9n7EtY" role="jymVt">
+      <property role="TrG5h" value="showErrorNotification" />
+      <node concept="37vLTG" id="4dQiu9n7EtZ" role="3clF46">
+        <property role="TrG5h" value="title" />
+        <node concept="17QB3L" id="4dQiu9n7Eu0" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4dQiu9n7Eu1" role="3clF46">
+        <property role="TrG5h" value="message" />
+        <node concept="17QB3L" id="4dQiu9n7Eu2" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="4dQiu9n7Eu5" role="3clF46">
+        <property role="TrG5h" value="actions" />
+        <node concept="8X2XB" id="4dQiu9n7Eu6" role="1tU5fm">
+          <node concept="3uibUv" id="4dQiu9n7Eu7" role="8Xvag">
+            <ref role="3uigEE" to="fnpx:~NotificationAction" resolve="NotificationAction" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="4dQiu9n7Eu8" role="3clF47">
+        <node concept="3cpWs8" id="4dQiu9n7Eu9" role="3cqZAp">
+          <node concept="3cpWsn" id="4dQiu9n7Eua" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="notification" />
+            <node concept="3uibUv" id="4dQiu9n7Eub" role="1tU5fm">
+              <ref role="3uigEE" to="fnpx:~Notification" resolve="Notification" />
+            </node>
+            <node concept="2ShNRf" id="4dQiu9n7Euc" role="33vP2m">
+              <node concept="1pGfFk" id="4dQiu9n7Eud" role="2ShVmc">
+                <ref role="37wK5l" to="fnpx:~Notification.&lt;init&gt;(java.lang.String,java.lang.String,java.lang.String,com.intellij.notification.NotificationType)" resolve="Notification" />
+                <node concept="2OqwBi" id="4dQiu9n7Eue" role="37wK5m">
+                  <node concept="37vLTw" id="4dQiu9n7Euf" role="2Oq$k0">
+                    <ref role="3cqZAo" node="71GfFl7hN$8" resolve="fastenBalloonGroup" />
+                  </node>
+                  <node concept="liA8E" id="4dQiu9n7Eug" role="2OqNvi">
+                    <ref role="37wK5l" to="fnpx:~NotificationGroup.getDisplayId()" resolve="getDisplayId" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="4dQiu9n7Euh" role="37wK5m">
+                  <ref role="3cqZAo" node="4dQiu9n7EtZ" resolve="title" />
+                </node>
+                <node concept="37vLTw" id="4dQiu9n7Eui" role="37wK5m">
+                  <ref role="3cqZAo" node="4dQiu9n7Eu1" resolve="message" />
+                </node>
+                <node concept="Rm8GO" id="4dQiu9n7FsH" role="37wK5m">
+                  <ref role="Rm8GQ" to="fnpx:~NotificationType.ERROR" resolve="ERROR" />
+                  <ref role="1Px2BO" to="fnpx:~NotificationType" resolve="NotificationType" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DcWWT" id="4dQiu9n7Euk" role="3cqZAp">
+          <node concept="37vLTw" id="4dQiu9n7Eul" role="1DdaDG">
+            <ref role="3cqZAo" node="4dQiu9n7Eu5" resolve="actions" />
+          </node>
+          <node concept="3cpWsn" id="4dQiu9n7Eum" role="1Duv9x">
+            <property role="TrG5h" value="action" />
+            <node concept="3uibUv" id="4dQiu9n7Eun" role="1tU5fm">
+              <ref role="3uigEE" to="fnpx:~NotificationAction" resolve="NotificationAction" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="4dQiu9n7Euo" role="2LFqv$">
+            <node concept="3clFbF" id="4dQiu9n7Eup" role="3cqZAp">
+              <node concept="2OqwBi" id="4dQiu9n7Euq" role="3clFbG">
+                <node concept="37vLTw" id="4dQiu9n7Eur" role="2Oq$k0">
+                  <ref role="3cqZAo" node="4dQiu9n7Eua" resolve="notification" />
+                </node>
+                <node concept="liA8E" id="4dQiu9n7Eus" role="2OqNvi">
+                  <ref role="37wK5l" to="fnpx:~Notification.addAction(com.intellij.openapi.actionSystem.AnAction)" resolve="addAction" />
+                  <node concept="37vLTw" id="4dQiu9n7Eut" role="37wK5m">
+                    <ref role="3cqZAo" node="4dQiu9n7Eum" resolve="action" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4dQiu9n7Euu" role="3cqZAp">
+          <node concept="2YIFZM" id="4dQiu9n7Euv" role="3clFbG">
+            <ref role="1Pybhc" to="fnpx:~Notifications$Bus" resolve="Notifications.Bus" />
+            <ref role="37wK5l" to="fnpx:~Notifications$Bus.notify(com.intellij.notification.Notification)" resolve="notify" />
+            <node concept="37vLTw" id="4dQiu9n7Euw" role="37wK5m">
+              <ref role="3cqZAo" node="4dQiu9n7Eua" resolve="notification" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4dQiu9n7Eux" role="1B3o_S" />
+      <node concept="3cqZAl" id="4dQiu9n7Euy" role="3clF45" />
+    </node>
     <node concept="2tJIrI" id="696iakqznI" role="jymVt" />
     <node concept="3Tm1VV" id="696iakqzmJ" role="1B3o_S" />
   </node>
