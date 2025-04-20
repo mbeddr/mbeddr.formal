@@ -499,7 +499,7 @@
                     <property role="Xl_RC" value="error while accessing file" />
                   </node>
                   <node concept="1YBJjd" id="4dQiu9n8yOF" role="1urrMF">
-                    <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="externalEvidenceDocument" />
+                    <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="urlEvidenceDocument" />
                   </node>
                 </node>
               </node>
@@ -513,7 +513,7 @@
                   </node>
                   <node concept="2YIFZM" id="4dQiu9n8S3k" role="33vP2m">
                     <ref role="37wK5l" to="kq9k:4dQiu9n8Fre" resolve="getLastModifiedDate" />
-                    <ref role="1Pybhc" to="kq9k:4dQiu9n8fWF" resolve="UrlEvidenceDocumentChecker" />
+                    <ref role="1Pybhc" to="kq9k:4dQiu9n8fWF" resolve="UrlEvidenceDocumentCheckerUtils" />
                     <node concept="1YBJjd" id="4dQiu9n8S3l" role="37wK5m">
                       <ref role="1YBMHb" node="4dQiu9n8yPy" resolve="urlEvidenceDocument" />
                     </node>
