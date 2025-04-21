@@ -38,6 +38,8 @@
     </language>
     <language id="5e7ffa70-8e23-49f4-8c13-a887bba14c36" name="com.mbeddr.formal.safety.gsn.external_evidence">
       <concept id="2210355370893864968" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.URLEvidenceDocument" flags="ng" index="2Fbr9R">
+        <property id="4861154084266683888" name="enableCheckingChanges" index="kkugi" />
+        <property id="4861154084264226318" name="lastModifiedDate" index="kt6vG" />
         <property id="2210355370893864971" name="url" index="2Fbr9O" />
       </concept>
       <concept id="2210355370893864965" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.IExternalRessourceDocument" flags="ngI" index="2Fbr9U">
@@ -169,8 +171,14 @@
           </node>
         </node>
       </node>
+      <node concept="2Fbr9R" id="3anBrrRzuG3" role="3t1IcV">
+        <property role="2Fbr9O" value="https://assets.publishing.service.gov.uk/media/6336a2eee90e0772da28d7f0/RA1225_Issue_3.pdf" />
+        <property role="kkugi" value="true" />
+        <property role="kt6vG" value="09/30/2022 10:03:58" />
+      </node>
       <node concept="2Fbr9R" id="1UGKBYPAxUt" role="3t1IcV">
         <property role="2Fbr9O" value="https://www.youtube.com/watch?v=ekKMXtXehfg&amp;list=PL_DQiOR0jhbVIaShDvI4ePNefLFXBF1lT" />
+        <property role="kt6vG" value="Unknown" />
         <node concept="1Pa9Pv" id="1UGKBYPAxVB" role="2FbXVB">
           <node concept="1PaTwC" id="1UGKBYPAxVC" role="1PaQFQ">
             <node concept="3oM_SD" id="1UGKBYPAxVD" role="1PaTwD">
@@ -496,8 +504,8 @@
         <node concept="gqqVs" id="1UGKBYPAxo8" role="37mO4d">
           <property role="gqqTZ" value="74.0" />
           <property role="gqqTW" value="50.0001" />
-          <property role="gqqTX" value="154.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTX" value="192.0" />
+          <property role="gqqTy" value="60.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -506,7 +514,7 @@
         <node concept="gqqVs" id="1UGKBYPAxoa" role="37mO4d">
           <property role="gqqTZ" value="101.5" />
           <property role="gqqTW" value="159.00029836425782" />
-          <property role="gqqTX" value="99.0" />
+          <property role="gqqTX" value="126.0" />
           <property role="gqqTy" value="69.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -638,8 +646,8 @@
         <node concept="gqqVs" id="1UGKBYPAxIN" role="37mO4d">
           <property role="gqqTZ" value="50.0" />
           <property role="gqqTW" value="298.0" />
-          <property role="gqqTX" value="202.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTX" value="216.0" />
+          <property role="gqqTy" value="60.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>

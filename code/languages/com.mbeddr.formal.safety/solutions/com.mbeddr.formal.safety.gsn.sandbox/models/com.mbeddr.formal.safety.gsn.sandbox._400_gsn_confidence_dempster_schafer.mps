@@ -5,7 +5,6 @@
   <languages>
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <use id="d2864642-8e1f-4dd8-b3a6-71f0d9d33ae8" name="com.mbeddr.formal.safety.gsn.confidence.dempster_shafer" version="0" />
-    <use id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv" version="9" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
   </languages>
   <imports />
@@ -71,9 +70,6 @@
         <child id="3253043142928125559" name="offset" index="3wpmZR" />
       </concept>
     </language>
-    <language id="7f3eac5a-7f9a-4fbe-8264-f69c70ece985" name="com.mbeddr.formal.safety.gsn.smv">
-      <concept id="79421622115107638" name="com.mbeddr.formal.safety.gsn.smv.structure.SmvResultsSolution" flags="ng" index="1$GyEX" />
-    </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
       <concept id="4445845612600281072" name="com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames" flags="ngI" index="2GXxrR">
         <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
@@ -125,7 +121,7 @@
         <node concept="gqqVs" id="6dwPixfdDQl" role="37mO4d">
           <property role="gqqTZ" value="27.0" />
           <property role="gqqTW" value="27.0" />
-          <property role="gqqTX" value="158.0" />
+          <property role="gqqTX" value="162.0" />
           <property role="gqqTy" value="64.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -135,7 +131,7 @@
         <node concept="gqqVs" id="2QkJsC6vHGs" role="37mO4d">
           <property role="gqqTZ" value="227.5" />
           <property role="gqqTW" value="10.0" />
-          <property role="gqqTX" value="162.0" />
+          <property role="gqqTX" value="180.0" />
           <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -145,7 +141,7 @@
         <node concept="gqqVs" id="2QkJsC6xbaL" role="37mO4d">
           <property role="gqqTZ" value="209.0" />
           <property role="gqqTW" value="109.0" />
-          <property role="gqqTX" value="246.0" />
+          <property role="gqqTX" value="288.0" />
           <property role="gqqTy" value="100.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -155,7 +151,7 @@
         <node concept="gqqVs" id="2QkJsC6xbCK" role="37mO4d">
           <property role="gqqTZ" value="27.0" />
           <property role="gqqTW" value="163.0" />
-          <property role="gqqTX" value="185.0" />
+          <property role="gqqTX" value="204.0" />
           <property role="gqqTy" value="61.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -167,18 +163,6 @@
       <node concept="19SGf9" id="2QkJsC6vHGe" role="2vnaTY">
         <node concept="19SUe$" id="2QkJsC6vHGf" role="19SJt6">
           <property role="19SUeA" value="Strongly rejectable,&#10;no confidence" />
-        </node>
-      </node>
-    </node>
-    <node concept="1$GyEX" id="2QkJsC6xb9D" role="2vn1q5">
-      <property role="TrG5h" value="S3" />
-      <node concept="EupL4" id="3U$zn$8Niau" role="2U2l5M">
-        <property role="EupNq" value="100" />
-        <property role="EupNo" value="50" />
-      </node>
-      <node concept="19SGf9" id="2QkJsC6xb9E" role="2vnaTY">
-        <node concept="19SUe$" id="2QkJsC6xb9F" role="19SJt6">
-          <property role="19SUeA" value="Strongly acceptable, medium confidence" />
         </node>
       </node>
     </node>

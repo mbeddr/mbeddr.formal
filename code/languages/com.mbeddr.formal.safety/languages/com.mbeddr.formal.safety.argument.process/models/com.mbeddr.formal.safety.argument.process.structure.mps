@@ -14,6 +14,7 @@
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
       <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
         <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
+        <child id="1860120738943552531" name="borderColor" index="3PKjnB" />
       </concept>
       <concept id="2756621024541681849" name="jetbrains.mps.lang.resources.structure.Text" flags="ng" index="1irPie">
         <property id="2756621024541681854" name="text" index="1irPi9" />
@@ -312,6 +313,67 @@
       <property role="IQ2ns" value="6058252087585691295" />
       <property role="20kJfa" value="part" />
       <ref role="20lvS9" node="5gjf2NSjE2x" resolve="AcademicPaperPart" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2l56qoH6GGV">
+    <property role="EcuMT" value="2685580954308365115" />
+    <property role="TrG5h" value="GenericStatusAttribute" />
+    <property role="34LRSv" value="status" />
+    <property role="3GE5qa" value="generic_status" />
+    <ref role="1TJDcQ" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    <node concept="PrWs8" id="2l56qoH6GGW" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2l56qoH76Xu" role="1TKVEi">
+      <property role="IQ2ns" value="2685580954308472670" />
+      <property role="20kJfa" value="status" />
+      <ref role="20lvS9" node="2l56qoH76Xr" resolve="GenericStatusDefinition" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2l56qoH6GGX">
+    <property role="EcuMT" value="2685580954308365117" />
+    <property role="3GE5qa" value="generic_status" />
+    <property role="TrG5h" value="GenericStatusDefinitionsContainer" />
+    <property role="19KtqR" value="true" />
+    <property role="34LRSv" value="Generic Status Definitions" />
+    <property role="R4oN_" value="generic status definitions container" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2l56qoH6GGY" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="2l56qoH76Y8" role="1TKVEi">
+      <property role="IQ2ns" value="2685580954308472712" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="statusDefinitions" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2l56qoH76Xr" resolve="GenericStatusDefinition" />
+    </node>
+    <node concept="1irR5M" id="2l56qoH7SIt" role="rwd14">
+      <property role="2$rrk2" value="2" />
+      <node concept="1irR9n" id="2l56qoH7ToP" role="1irR9h">
+        <node concept="3PKj8D" id="2l56qoH7ToS" role="3PKjn_">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+        <node concept="3PKj8D" id="2l56qoH7ToU" role="3PKjnB">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2l56qoH7SIv" role="1irR9h">
+        <property role="1irPi9" value="S" />
+        <node concept="3PKj8D" id="2l56qoH7SIy" role="3PKjny">
+          <property role="3PKj8l" value="44FF44" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2l56qoH76Xr">
+    <property role="EcuMT" value="2685580954308472667" />
+    <property role="TrG5h" value="GenericStatusDefinition" />
+    <property role="34LRSv" value="status definition" />
+    <property role="3GE5qa" value="generic_status" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2l56qoH76Xs" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

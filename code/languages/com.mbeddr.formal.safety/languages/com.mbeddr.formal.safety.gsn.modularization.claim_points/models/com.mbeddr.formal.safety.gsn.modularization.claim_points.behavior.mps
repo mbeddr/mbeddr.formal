@@ -37,6 +37,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
+        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -70,8 +73,8 @@
       <property role="13i0it" value="true" />
       <property role="13i0iv" value="true" />
       <node concept="3Tm1VV" id="2K8T9FD3kzg" role="1B3o_S" />
-      <node concept="3Tqbb2" id="2K8T9FD3kzz" role="3clF45">
-        <ref role="ehGHo" to="q1zg:2K8T9FD2Qh7" resolve="ClaimPointAttributeBase" />
+      <node concept="2I9FWS" id="4dQiu9mZB7E" role="3clF45">
+        <ref role="2I9WkF" to="q1zg:2K8T9FD2Qh7" resolve="ClaimPointAttributeBase" />
       </node>
       <node concept="3clFbS" id="2K8T9FD3kzi" role="3clF47" />
     </node>
