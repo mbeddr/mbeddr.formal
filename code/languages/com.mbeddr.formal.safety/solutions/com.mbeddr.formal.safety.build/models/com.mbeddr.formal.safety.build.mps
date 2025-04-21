@@ -19068,20 +19068,6 @@
             </node>
           </node>
         </node>
-        <node concept="2HvfSZ" id="6ucyvMUMpVN" role="39821P">
-          <node concept="398BVA" id="6ucyvMUMpW5" role="2HvfZ0">
-            <ref role="398BVh" node="6ucyvMUDFiJ" resolve="mbeddr.formal.safety.code" />
-            <node concept="2Ry0Ak" id="6ucyvMUMpWd" role="iGT6I">
-              <property role="2Ry0Am" value="tests" />
-              <node concept="2Ry0Ak" id="6ucyvMUMpWk" role="2Ry0An">
-                <property role="2Ry0Am" value="test.mbeddr.formal.gsn" />
-                <node concept="2Ry0Ak" id="6ucyvMUMpWr" role="2Ry0An">
-                  <property role="2Ry0Am" value="source_gen" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
       </node>
       <node concept="398223" id="6ucyvMUPxbX" role="39821P">
         <node concept="3_J27D" id="6ucyvMUPxbY" role="Nbhlr">
