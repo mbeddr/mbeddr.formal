@@ -18500,11 +18500,6 @@
               <ref role="3bR37D" node="7he_lUup0GQ" resolve="com.mbeddr.formal.spin.analyses" />
             </node>
           </node>
-          <node concept="1SiIV0" id="6ucyvMUxNRn" role="3bR37C">
-            <node concept="3bR9La" id="6ucyvMUxNRo" role="1SiIV1">
-              <ref role="3bR37D" node="7he_lUurAEj" resolve="com.mbeddr.formal.safety.gsn.odd" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="6ucyvMUxNRp" role="3bR37C">
             <node concept="3bR9La" id="6ucyvMUxNRq" role="1SiIV1">
               <ref role="3bR37D" node="5yQpAUIgOcH" resolve="com.mbeddr.formal.nusmv.cbd" />
@@ -18518,11 +18513,6 @@
           <node concept="1SiIV0" id="6ucyvMUxNRt" role="3bR37C">
             <node concept="3bR9La" id="6ucyvMUxNRu" role="1SiIV1">
               <ref role="3bR37D" node="7he_lUuoVxm" resolve="com.mbeddr.formal.spin.pluginSolution" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="6ucyvMUxNRv" role="3bR37C">
-            <node concept="3bR9La" id="6ucyvMUxNRw" role="1SiIV1">
-              <ref role="3bR37D" node="7he_lUur_VI" resolve="com.mbeddr.formal.safety.gsn.smv" />
             </node>
           </node>
           <node concept="1SiIV0" id="6ucyvMUxNRx" role="3bR37C">
@@ -18550,11 +18540,6 @@
               <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
             </node>
           </node>
-          <node concept="1SiIV0" id="6ucyvMUxNRF" role="3bR37C">
-            <node concept="3bR9La" id="6ucyvMUxNRG" role="1SiIV1">
-              <ref role="3bR37D" node="7he_lUurx31" resolve="com.mbeddr.formal.safety.gsn.spin.pluginSolution" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="6ucyvMUxNRH" role="3bR37C">
             <node concept="3bR9La" id="6ucyvMUxNRI" role="1SiIV1">
               <ref role="3bR37D" node="7he_lUury9o" resolve="com.mbeddr.formal.safety.gsn" />
@@ -18570,19 +18555,9 @@
               <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
             </node>
           </node>
-          <node concept="1SiIV0" id="6ucyvMUxNRN" role="3bR37C">
-            <node concept="3bR9La" id="6ucyvMUxNRO" role="1SiIV1">
-              <ref role="3bR37D" node="7he_lUurug6" resolve="com.mbeddr.formal.safety.gsn.cbd.pluginSolution" />
-            </node>
-          </node>
           <node concept="1SiIV0" id="6ucyvMUxNRP" role="3bR37C">
             <node concept="3bR9La" id="6ucyvMUxNRQ" role="1SiIV1">
               <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
-            </node>
-          </node>
-          <node concept="1SiIV0" id="6ucyvMUxNRR" role="3bR37C">
-            <node concept="3bR9La" id="6ucyvMUxNRS" role="1SiIV1">
-              <ref role="3bR37D" node="7he_lUurwna" resolve="com.mbeddr.formal.safety.gsn.smv.pluginSolution" />
             </node>
           </node>
           <node concept="1BupzO" id="6ucyvMUxNSb" role="3bR31x">
