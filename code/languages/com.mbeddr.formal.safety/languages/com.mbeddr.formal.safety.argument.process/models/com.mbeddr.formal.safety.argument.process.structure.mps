@@ -337,7 +337,7 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Generic Status Definitions" />
     <property role="R4oN_" value="generic status definitions container" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2l56qoH6GGY" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -371,7 +371,7 @@
     <property role="TrG5h" value="GenericStatusDefinition" />
     <property role="34LRSv" value="status definition" />
     <property role="3GE5qa" value="generic_status" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2l56qoH76Xs" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>

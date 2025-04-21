@@ -689,7 +689,7 @@
       </node>
       <node concept="3F0ifn" id="5t37uj6B1FC" role="3EZMnx" />
       <node concept="3F2HdR" id="5t37uj6DgKJ" role="3EZMnx">
-        <ref role="1NtTu8" to="l1gl:2l56qoH76Y8" />
+        <ref role="1NtTu8" to="l1gl:2l56qoH76Y8" resolve="statusDefinitions" />
         <node concept="2iRkQZ" id="5t37uj6DgKL" role="2czzBx" />
       </node>
       <node concept="2iRkQZ" id="5t37uj6_F6c" role="2iSdaV" />
