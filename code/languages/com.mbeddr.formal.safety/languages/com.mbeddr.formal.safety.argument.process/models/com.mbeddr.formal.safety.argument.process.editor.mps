@@ -6,6 +6,7 @@
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
     <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="0" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -677,6 +678,57 @@
     </node>
     <node concept="2aJ2om" id="5gjf2NSk5A_" role="CpUAK">
       <ref role="2$4xQ3" to="xnej:3cGyC6fBMuN" resolve="ANNOTATION_PROVIDER" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2l56qoH74Tf">
+    <property role="3GE5qa" value="generic_status" />
+    <ref role="1XX52x" to="l1gl:2l56qoH6GGX" resolve="GenericStatusDefinitionsContainer" />
+    <node concept="3EZMnI" id="5t37uj6_F69" role="2wV5jI">
+      <node concept="PMmxH" id="5t37uj6_F6j" role="3EZMnx">
+        <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
+      </node>
+      <node concept="3F0ifn" id="5t37uj6B1FC" role="3EZMnx" />
+      <node concept="3F2HdR" id="5t37uj6DgKJ" role="3EZMnx">
+        <ref role="1NtTu8" to="l1gl:2l56qoH76Y8" />
+        <node concept="2iRkQZ" id="5t37uj6DgKL" role="2czzBx" />
+      </node>
+      <node concept="2iRkQZ" id="5t37uj6_F6c" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2l56qoH76Xv">
+    <property role="3GE5qa" value="generic_status" />
+    <ref role="1XX52x" to="l1gl:2l56qoH6GGV" resolve="GenericStatusAttribute" />
+    <node concept="3EZMnI" id="2l56qoH76Xx" role="2wV5jI">
+      <node concept="3F0ifn" id="2l56qoH76X_" role="3EZMnx">
+        <property role="3F0ifm" value="status:" />
+      </node>
+      <node concept="1iCGBv" id="2l56qoH76XE" role="3EZMnx">
+        <ref role="1NtTu8" to="l1gl:2l56qoH76Xu" resolve="status" />
+        <node concept="1sVBvm" id="2l56qoH76XG" role="1sWHZn">
+          <node concept="3F0A7n" id="2l56qoH76XK" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2l56qoH76XN" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
+      </node>
+      <node concept="2iRfu4" id="2l56qoH76X$" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2l56qoH76XP">
+    <property role="3GE5qa" value="generic_status" />
+    <ref role="1XX52x" to="l1gl:2l56qoH76Xr" resolve="GenericStatusDefinition" />
+    <node concept="3EZMnI" id="2l56qoH76XR" role="2wV5jI">
+      <node concept="3F0ifn" id="2l56qoH76XV" role="3EZMnx">
+        <property role="3F0ifm" value="status:" />
+      </node>
+      <node concept="3F0A7n" id="2l56qoH76XY" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="2l56qoH76XU" role="2iSdaV" />
     </node>
   </node>
 </model>
