@@ -7658,8 +7658,8 @@
               <ref role="398BVh" node="6hyv0iVPlDX" resolve="mbeddr.formal.safety.code" />
               <node concept="2Ry0Ak" id="6hyv0iVPmij" role="iGT6I">
                 <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="6hyv0iVPmlH" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.gsn.odd" />
+                <node concept="2Ry0Ak" id="6zHOr9sQNJA" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mbeddr.formal.safety.iso26262" />
                 </node>
               </node>
             </node>
