@@ -9,6 +9,7 @@
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
     <import index="uhu" ref="r:7b6bea6a-7952-48df-9449-f3f805640b2f(com.mpsbasics.core.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -166,6 +167,13 @@
     <property role="EcuMT" value="3731513482756195662" />
     <property role="TrG5h" value="IBibliographyEntry" />
     <property role="3GE5qa" value="bibliography" />
+    <node concept="1TJgyj" id="3aXq4CudxsP" role="1TKVEi">
+      <property role="IQ2ns" value="3656193140038440757" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="ressources" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="b19z:3aXq4CufQaq" resolve="OpenableAbstractFilePicker" />
+    </node>
     <node concept="PrWs8" id="3f8ZVRYh479" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -282,6 +290,16 @@
     <property role="TrG5h" value="AbstractPaper" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3aXq4Cuf8gL" role="1TKVEl">
+      <property role="IQ2nx" value="3656193140038861873" />
+      <property role="TrG5h" value="authors" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3aXq4Cuf9Or" role="1TKVEl">
+      <property role="IQ2nx" value="3656193140038868251" />
+      <property role="TrG5h" value="howPublished" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="5gjf2NSjE2y" role="1TKVEi">
       <property role="IQ2ns" value="6058252087585579170" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
