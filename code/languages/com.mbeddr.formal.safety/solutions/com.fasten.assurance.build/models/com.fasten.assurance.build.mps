@@ -3982,6 +3982,11 @@
             <ref role="3bR37D" node="4lJSf3LkfPw" resolve="com.mpsbasics.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3aXq4CuhyUs" role="3bR37C">
+          <node concept="3bR9La" id="3aXq4CuhyUt" role="1SiIV1">
+            <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="6hyv0iVPlG4" role="2G$12L">
         <property role="BnDLt" value="true" />

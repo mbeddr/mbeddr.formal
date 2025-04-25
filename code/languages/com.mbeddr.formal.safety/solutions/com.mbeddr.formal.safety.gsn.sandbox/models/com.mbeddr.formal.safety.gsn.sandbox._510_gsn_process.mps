@@ -6,6 +6,7 @@
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <use id="8a4ef392-f4b4-43e7-afb5-b071dce8043d" name="com.mbeddr.formal.safety.argument.process" version="0" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
+    <use id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker" version="0" />
   </languages>
   <imports />
   <registry>
@@ -24,6 +25,7 @@
       <concept id="3731513482756195662" name="com.mbeddr.formal.safety.argument.process.structure.IBibliographyEntry" flags="ngI" index="3dyRFN">
         <property id="3731513482756243948" name="publicationYear" index="3dzbTh" />
         <property id="3731513482756243946" name="longTitle" index="3dzbTn" />
+        <child id="3656193140038440757" name="ressources" index="GyRXZ" />
       </concept>
       <concept id="3731513482756243840" name="com.mbeddr.formal.safety.argument.process.structure.StandardClause" flags="ng" index="3dzbSX">
         <property id="3731513482756243853" name="page" index="3dzbSK" />
@@ -41,6 +43,12 @@
       <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
+    </language>
+    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
+      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
+        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+      </concept>
+      <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -83,6 +91,9 @@
       </concept>
     </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="3656193140039049882" name="com.mbeddr.formal.base.structure.OpenableAbstractFilePicker" flags="ng" index="GwwFg">
+        <child id="3656193140039049883" name="filePicker" index="GwwFh" />
+      </concept>
       <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ngI" index="2U2l5L">
         <child id="7402587364850275470" name="attributes" index="2U2l5M" />
       </concept>
@@ -1455,6 +1466,11 @@
       <property role="TrG5h" value="Kelly1997" />
       <property role="3dzbTn" value="Safety case patterns - Reusing successful arguments" />
       <property role="3dzbTh" value="1997" />
+      <node concept="GwwFg" id="3aXq4Cuhyp6" role="GyRXZ">
+        <node concept="3NXOOs" id="3aXq4CuhyqV" role="GwwFh">
+          <property role="3N1Lgt" value="external_evidence/D4.2.1_system_testing_report.pdf" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
