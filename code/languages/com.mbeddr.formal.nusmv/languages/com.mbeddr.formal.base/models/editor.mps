@@ -45,8 +45,9 @@
     <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
     <import index="18ew" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.util(MPS.Core/)" />
     <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
-    <import index="48kf" ref="r:5f41c82d-84d1-4fb1-a1cf-6697d2365854(com.mbeddr.mpsutil.filepicker.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -258,6 +259,9 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
+        <child id="8118189177080264854" name="alternative" index="nSUat" />
+      </concept>
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
@@ -289,6 +293,7 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="4952749571008284462" name="jetbrains.mps.baseLanguage.structure.CatchVariable" flags="ng" index="XOnhg" />
       <concept id="1182160077978" name="jetbrains.mps.baseLanguage.structure.AnonymousClassCreator" flags="nn" index="YeOm9">
         <child id="1182160096073" name="cls" index="YeSDq" />
       </concept>
@@ -392,8 +397,17 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="3093926081414150598" name="jetbrains.mps.baseLanguage.structure.MultipleCatchClause" flags="ng" index="3uVAMA">
+        <child id="8276990574895933173" name="catchBody" index="1zc67A" />
+        <child id="8276990574895933172" name="throwable" index="1zc67B" />
+      </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
+        <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
+        <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
       <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
         <child id="1163668914799" name="condition" index="3K4Cdx" />
@@ -4808,16 +4822,90 @@
                                 <node concept="3clFbS" id="3aXq4Cuh6DN" role="1bW5cS">
                                   <node concept="3clFbJ" id="3aXq4Cuh6DO" role="3cqZAp">
                                     <node concept="3clFbS" id="3aXq4Cuh6DP" role="3clFbx">
-                                      <node concept="3clFbF" id="3aXq4Cuh6DQ" role="3cqZAp">
-                                        <node concept="2OqwBi" id="3aXq4Cuh6DR" role="3clFbG">
-                                          <node concept="2OqwBi" id="3aXq4Cuh6DS" role="2Oq$k0">
-                                            <node concept="pncrf" id="3aXq4Cuh6DT" role="2Oq$k0" />
-                                            <node concept="3TrEf2" id="3aXq4Cuh6DU" role="2OqNvi">
-                                              <ref role="3Tt5mk" to="b19z:3aXq4CufQar" resolve="filePicker" />
+                                      <node concept="3J1_TO" id="6uhyUqXhg1P" role="3cqZAp">
+                                        <node concept="3uVAMA" id="6uhyUqXhg2e" role="1zxBo5">
+                                          <node concept="XOnhg" id="6uhyUqXhg2f" role="1zc67B">
+                                            <property role="3TUv4t" value="false" />
+                                            <property role="TrG5h" value="ex" />
+                                            <node concept="nSUau" id="y7_6djrkto" role="1tU5fm">
+                                              <node concept="3uibUv" id="6uhyUqXhg2g" role="nSUat">
+                                                <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                                              </node>
                                             </node>
                                           </node>
-                                          <node concept="2qgKlT" id="3aXq4Cuh6DV" role="2OqNvi">
-                                            <ref role="37wK5l" to="48kf:6uhyUqXhg1F" resolve="openWithSystemFileExplorer" />
+                                          <node concept="3clFbS" id="6uhyUqXhg2h" role="1zc67A">
+                                            <node concept="3clFbF" id="6uhyUqXhg2i" role="3cqZAp">
+                                              <node concept="2OqwBi" id="6uhyUqXhg2j" role="3clFbG">
+                                                <node concept="37vLTw" id="6uhyUqXhg2k" role="2Oq$k0">
+                                                  <ref role="3cqZAo" node="6uhyUqXhg2f" resolve="ex" />
+                                                </node>
+                                                <node concept="liA8E" id="6uhyUqXhg2l" role="2OqNvi">
+                                                  <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                        </node>
+                                        <node concept="3clFbS" id="6uhyUqXhg1Q" role="1zxBo7">
+                                          <node concept="3cpWs8" id="6uhyUqXhg1R" role="3cqZAp">
+                                            <node concept="3cpWsn" id="6uhyUqXhg1S" role="3cpWs9">
+                                              <property role="TrG5h" value="d" />
+                                              <node concept="3uibUv" id="6uhyUqXhg1T" role="1tU5fm">
+                                                <ref role="3uigEE" to="z60i:~Desktop" resolve="Desktop" />
+                                              </node>
+                                              <node concept="3K4zz7" id="6uhyUqXhg1U" role="33vP2m">
+                                                <node concept="2YIFZM" id="6uhyUqXhg1V" role="3K4E3e">
+                                                  <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
+                                                  <ref role="37wK5l" to="z60i:~Desktop.getDesktop()" resolve="getDesktop" />
+                                                </node>
+                                                <node concept="10Nm6u" id="6uhyUqXhg1W" role="3K4GZi" />
+                                                <node concept="2YIFZM" id="6uhyUqXhg1X" role="3K4Cdx">
+                                                  <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
+                                                  <ref role="37wK5l" to="z60i:~Desktop.isDesktopSupported()" resolve="isDesktopSupported" />
+                                                </node>
+                                              </node>
+                                            </node>
+                                          </node>
+                                          <node concept="3clFbJ" id="6uhyUqXhg1Y" role="3cqZAp">
+                                            <node concept="3clFbS" id="6uhyUqXhg1Z" role="3clFbx">
+                                              <node concept="3clFbF" id="6uhyUqXhg20" role="3cqZAp">
+                                                <node concept="2OqwBi" id="6uhyUqXhg21" role="3clFbG">
+                                                  <node concept="37vLTw" id="6uhyUqXhg22" role="2Oq$k0">
+                                                    <ref role="3cqZAo" node="6uhyUqXhg1S" resolve="d" />
+                                                  </node>
+                                                  <node concept="liA8E" id="6uhyUqXhg23" role="2OqNvi">
+                                                    <ref role="37wK5l" to="z60i:~Desktop.open(java.io.File)" resolve="open" />
+                                                    <node concept="2OqwBi" id="3aXq4Cur_na" role="37wK5m">
+                                                      <node concept="2ShNRf" id="6uhyUqXhg24" role="2Oq$k0">
+                                                        <node concept="1pGfFk" id="6uhyUqXhg25" role="2ShVmc">
+                                                          <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                                                          <node concept="2OqwBi" id="3aXq4CuramB" role="37wK5m">
+                                                            <node concept="2OqwBi" id="3aXq4Cur7Fw" role="2Oq$k0">
+                                                              <node concept="pncrf" id="3aXq4Cur7bZ" role="2Oq$k0" />
+                                                              <node concept="3TrEf2" id="3aXq4Cur9A_" role="2OqNvi">
+                                                                <ref role="3Tt5mk" to="b19z:3aXq4CufQar" resolve="filePicker" />
+                                                              </node>
+                                                            </node>
+                                                            <node concept="2qgKlT" id="3aXq4Curc4I" role="2OqNvi">
+                                                              <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
+                                                            </node>
+                                                          </node>
+                                                        </node>
+                                                      </node>
+                                                      <node concept="liA8E" id="3aXq4CurC$d" role="2OqNvi">
+                                                        <ref role="37wK5l" to="guwi:~File.getParentFile()" resolve="getParentFile" />
+                                                      </node>
+                                                    </node>
+                                                  </node>
+                                                </node>
+                                              </node>
+                                            </node>
+                                            <node concept="3y3z36" id="6uhyUqXhg29" role="3clFbw">
+                                              <node concept="37vLTw" id="6uhyUqXhg2a" role="3uHU7B">
+                                                <ref role="3cqZAo" node="6uhyUqXhg1S" resolve="d" />
+                                              </node>
+                                              <node concept="10Nm6u" id="6uhyUqXhg2b" role="3uHU7w" />
+                                            </node>
                                           </node>
                                         </node>
                                       </node>
