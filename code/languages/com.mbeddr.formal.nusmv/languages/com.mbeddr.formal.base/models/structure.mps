@@ -305,7 +305,7 @@
     <property role="EcuMT" value="3656193140039049882" />
     <property role="TrG5h" value="OpenableAbstractFilePicker" />
     <property role="3GE5qa" value="openable_abstract_file_picker" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3aXq4CufQar" role="1TKVEi">
       <property role="IQ2ns" value="3656193140039049883" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
