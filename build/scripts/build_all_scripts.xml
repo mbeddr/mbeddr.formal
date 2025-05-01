@@ -11,8 +11,9 @@
   <property name="dependencies.mbeddr.platform" location="${dependencies.root}/com.mbeddr.platform" />
   <property name="dependencies.mpsqa" location="${mbeddr.formal.home}/build/dependencies/org.mpsqa.allInOne" />
   <property name="artifacts.mps" location="${mps.home}" />
-  <property name="artifacts.org.mpsqa.base" location="${dependencies.mpsqa}" />
   <property name="artifacts.com.mbeddr.platform" location="${dependencies.mbeddr.platform}" />
+  <property name="artifacts.org.mpsqa.base" location="${dependencies.mpsqa}" />
+  <property name="artifacts.org.mpsqa.allInOne" location="${dependencies.mpsqa}" />
   <property file="${artifacts.mps}/build.properties" prefix="import.mps" />
   <property file="${artifacts.com.mbeddr.platform}/build.properties" prefix="import.com.mbeddr.platform" />
   <property name="mps.build.number" value="${import.mps.mps.build.number}" />
@@ -63,6 +64,7 @@
           <module ref="3ae9cfda-f938-4524-b4ca-fbcba3b0525b(com.mbeddr.platform)" kind="cl" />
           <module ref="f1fb7b1c-ce0d-423c-9369-4a661d600029(de.itemis.mps.extensions.build)" kind="cl" />
           <module ref="5e8cea6b-997f-49b1-a8d8-dc2a7a6fa657(org.mpsqa.base.build)" kind="cl" />
+          <module ref="11d4368a-a7e8-4dd9-bfc6-c2de268d1994(org.mpsqa.build)" kind="cl" />
         </dependencies>
         <uses>
           <language id="l:798100da-4f0a-421a-b991-71f8c50ce5d2:jetbrains.mps.build" />
@@ -165,6 +167,8 @@
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build" id="de.itemis.mps.extensions.build" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
+      <plugin path="${artifacts.org.mpsqa.allInOne}/org.mpsqa.build" id="org.mpsqa.build" />
+      <plugin path="${artifacts.org.mpsqa.allInOne}/org.mpsqa.testing.build" id="org.mpsqa.testing.build" />
       <plugin path="${artifacts.org.mpsqa.base}/org.mpsqa.base.build" id="org.mpsqa.base.build" />
       <chunk>
         <module file="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/com.fasten.assurance.build.msd" />
@@ -201,6 +205,7 @@
         <fileset file="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.jar" />
         <fileset file="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build/languages/de.itemis.mps.extensions.build/de.itemis.mps.extensions.build.jar" />
         <fileset file="${artifacts.org.mpsqa.base}/org.mpsqa.base.build/languages/build/org.mpsqa.base.build.jar" />
+        <fileset file="${artifacts.org.mpsqa.allInOne}/org.mpsqa.build/languages/org.mpsqa.build.jar" />
       </classpath>
     </javac>
     <copy todir="${build.tmp}/java/out/com.mbeddr.formal.safety.build">

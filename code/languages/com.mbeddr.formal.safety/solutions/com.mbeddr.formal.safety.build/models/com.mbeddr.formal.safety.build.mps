@@ -12,6 +12,8 @@
     <import index="ffeo" ref="r:874d959d-e3b4-4d04-b931-ca849af130dd(jetbrains.mps.ide.build)" />
     <import index="90a9" ref="r:fb24ac52-5985-4947-bba9-25be6fd32c1a(de.itemis.mps.extensions.build)" />
     <import index="2tou" ref="r:18bebd8f-6332-4ffd-b628-cc9dad4ef421(org.mpsqa.base.build)" />
+    <import index="jrpl" ref="r:f9ac9a52-9b52-485f-a0e9-7c4ea505964a(org.mpsqa.build._100_allInOne_build)" />
+    <import index="390y" ref="r:7cf4c5c6-be6b-461a-9752-5a87d0b55129(org.mpsqa.build._080_lint_build)" implicit="true" />
   </imports>
   <registry>
     <language id="3600cb0a-44dd-4a5b-9968-22924406419e" name="jetbrains.mps.build.mps.tests">
@@ -548,16 +550,22 @@
         </node>
       </node>
     </node>
+    <node concept="2sgV4H" id="4aeOpjlBUUu" role="1l3spa">
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <node concept="398BVA" id="4MDOjos0BnZ" role="2JcizS">
+        <ref role="398BVh" node="4MDOjos0yOT" resolve="dependencies.mbeddr.platform" />
+      </node>
+    </node>
     <node concept="2sgV4H" id="6odNb$o7gZm" role="1l3spa">
       <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
       <node concept="398BVA" id="6odNb$o7gZn" role="2JcizS">
         <ref role="398BVh" node="6odNb$o7gGe" resolve="dependencies.mpsqa" />
       </node>
     </node>
-    <node concept="2sgV4H" id="4aeOpjlBUUu" role="1l3spa">
-      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
-      <node concept="398BVA" id="4MDOjos0BnZ" role="2JcizS">
-        <ref role="398BVh" node="4MDOjos0yOT" resolve="dependencies.mbeddr.platform" />
+    <node concept="2sgV4H" id="1n_6a3Gkb_S" role="1l3spa">
+      <ref role="1l3spb" to="jrpl:3PN66LDqBUx" resolve="org.mpsqa.allInOne" />
+      <node concept="398BVA" id="1n_6a3Gkcok" role="2JcizS">
+        <ref role="398BVh" node="6odNb$o7gGe" resolve="dependencies.mpsqa" />
       </node>
     </node>
     <node concept="1l3spV" id="42jqVeFkUvc" role="1l3spN">
@@ -1201,6 +1209,9 @@
       <node concept="m$_yC" id="6odNb$olxz0" role="m$_yJ">
         <ref role="m$_y1" to="2tou:7C9PHv6FBIO" resolve="org.mpsqa.base" />
       </node>
+      <node concept="m$_yC" id="1n_6a3Gk64c" role="m$_yJ">
+        <ref role="m$_y1" to="390y:3dqUbgQmcyy" />
+      </node>
     </node>
     <node concept="m$_wf" id="1FlxJGBMqg9" role="3989C9">
       <property role="m$_wk" value="com.mbeddr.formal.safety.build" />
@@ -1227,6 +1238,9 @@
       </node>
       <node concept="m$_yC" id="6odNb$oaXKo" role="m$_yJ">
         <ref role="m$_y1" to="2tou:32O483pJLpG" resolve="org.mpsqa.base.build" />
+      </node>
+      <node concept="m$_yC" id="1n_6a3Gkd$P" role="m$_yJ">
+        <ref role="m$_y1" to="jrpl:fm3v0X36My" />
       </node>
     </node>
     <node concept="2G$12M" id="7he_lUumA35" role="3989C9">
@@ -14944,6 +14958,11 @@
             <ref role="3bR37D" node="2K8T9FD4q9m" resolve="com.mbeddr.formal.safety.gsn.operational.ocp" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1n_6a3Gk5xF" role="3bR37C">
+          <node concept="3bR9La" id="1n_6a3Gk5xG" role="1SiIV1">
+            <ref role="3bR37D" to="390y:3dqUbgQmcyL" resolve="org.mpsqa.lint.generic" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4ziKDEngAys" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -16331,6 +16350,11 @@
             <ref role="3bR37D" to="2tou:32O483pJL16" resolve="org.mpsqa.base.build" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1n_6a3Gkdka" role="3bR37C">
+          <node concept="3bR9La" id="1n_6a3Gkdkb" role="1SiIV1">
+            <ref role="3bR37D" to="jrpl:5Xjjs0Nf2r4" resolve="org.mpsqa.build" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -16503,6 +16527,11 @@
           <ref role="3bR37D" to="2tou:32O483pJL16" resolve="org.mpsqa.base.build" />
         </node>
       </node>
+      <node concept="1SiIV0" id="1n_6a3GkyQC" role="3bR37C">
+        <node concept="3bR9La" id="1n_6a3GkyQD" role="1SiIV1">
+          <ref role="3bR37D" to="jrpl:5Xjjs0Nf2r4" resolve="org.mpsqa.build" />
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="gYMUULBCgK" role="3989C9">
       <property role="BnDLt" value="true" />
@@ -16582,16 +16611,22 @@
     <node concept="2igEWh" id="3GDqItDloKJ" role="1hWBAP">
       <property role="3UIfUI" value="1024" />
     </node>
+    <node concept="2sgV4H" id="3BCpwf5yOWG" role="1l3spa">
+      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
+      <node concept="398BVA" id="2DcSMg43Ebc" role="2JcizS">
+        <ref role="398BVh" node="3BCpwf5yOWF" resolve="dependencies.mbeddr.platform" />
+      </node>
+    </node>
     <node concept="2sgV4H" id="jPgKPEIk2n" role="1l3spa">
       <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
       <node concept="398BVA" id="jPgKPEIqv_" role="2JcizS">
         <ref role="398BVh" node="jPgKPEIpnE" resolve="dependencies.mpsqa" />
       </node>
     </node>
-    <node concept="2sgV4H" id="3BCpwf5yOWG" role="1l3spa">
-      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
-      <node concept="398BVA" id="2DcSMg43Ebc" role="2JcizS">
-        <ref role="398BVh" node="3BCpwf5yOWF" resolve="dependencies.mbeddr.platform" />
+    <node concept="2sgV4H" id="1n_6a3GkyQA" role="1l3spa">
+      <ref role="1l3spb" to="jrpl:3PN66LDqBUx" resolve="org.mpsqa.allInOne" />
+      <node concept="398BVA" id="1n_6a3GkyQB" role="2JcizS">
+        <ref role="398BVh" node="jPgKPEIpnE" resolve="dependencies.mpsqa" />
       </node>
     </node>
     <node concept="398rNT" id="jPgKPEIpnE" role="1l3spd">
