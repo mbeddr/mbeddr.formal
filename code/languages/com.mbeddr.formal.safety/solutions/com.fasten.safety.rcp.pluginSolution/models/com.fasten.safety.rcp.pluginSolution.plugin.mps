@@ -42,6 +42,7 @@
     <import index="s9o5" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.editor(MPS.IDEA/)" />
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="68t1" ref="r:7becb57c-c22a-45d5-9727-08526e822dee(com.mbeddr.formal.safety.gsn.operational.ocp.structure)" />
+    <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -1686,6 +1687,31 @@
               <node concept="1dCxOk" id="9wBdtpFVox" role="37shsm">
                 <property role="1XweGW" value="b5694cc1-d827-430b-bf03-ac5910fa8aa7" />
                 <property role="1XxBO9" value="fasten.docs" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="tC5Ba" id="1n_6a3GjTVx" role="ftvYc">
+        <property role="TrG5h" value="Utilities" />
+        <property role="1XlLyE" value="true" />
+        <property role="2f7twF" value="Utilities" />
+        <property role="1rdrE6" value="true" />
+        <property role="22ra45" value="true" />
+        <property role="2pbE17" value="U" />
+        <node concept="ftmFs" id="1n_6a3GjTVy" role="ftER_">
+          <node concept="tCFHf" id="1n_6a3GjTVz" role="ftvYc">
+            <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+            <node concept="Xl_RD" id="1n_6a3GjTV$" role="2J__8u">
+              <property role="Xl_RC" value="Checkable Script" />
+            </node>
+            <node concept="35c_gC" id="1n_6a3GjTV_" role="2J__8u">
+              <ref role="35c_gD" to="a1af:2dSiT1hKD8P" resolve="CheckableScript" />
+            </node>
+            <node concept="37shsh" id="1n_6a3GjTVA" role="2J__8u">
+              <node concept="1dCxOk" id="1n_6a3Gk1cf" role="37shsm">
+                <property role="1XweGW" value="ce47f8ae-2ba9-435c-99ef-44dc38731951" />
+                <property role="1XxBO9" value="org.mpsqa.lint.devkit" />
               </node>
             </node>
           </node>
