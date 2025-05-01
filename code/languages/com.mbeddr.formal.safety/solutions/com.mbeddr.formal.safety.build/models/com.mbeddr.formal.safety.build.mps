@@ -1210,7 +1210,7 @@
         <ref role="m$_y1" to="2tou:7C9PHv6FBIO" resolve="org.mpsqa.base" />
       </node>
       <node concept="m$_yC" id="1n_6a3Gk64c" role="m$_yJ">
-        <ref role="m$_y1" to="390y:3dqUbgQmcyy" />
+        <ref role="m$_y1" to="390y:3dqUbgQmcyy" resolve="org.mpsqa.lint" />
       </node>
     </node>
     <node concept="m$_wf" id="1FlxJGBMqg9" role="3989C9">
@@ -1240,7 +1240,7 @@
         <ref role="m$_y1" to="2tou:32O483pJLpG" resolve="org.mpsqa.base.build" />
       </node>
       <node concept="m$_yC" id="1n_6a3Gkd$P" role="m$_yJ">
-        <ref role="m$_y1" to="jrpl:fm3v0X36My" />
+        <ref role="m$_y1" to="jrpl:fm3v0X36My" resolve="org.mpsqa.build" />
       </node>
     </node>
     <node concept="2G$12M" id="7he_lUumA35" role="3989C9">
