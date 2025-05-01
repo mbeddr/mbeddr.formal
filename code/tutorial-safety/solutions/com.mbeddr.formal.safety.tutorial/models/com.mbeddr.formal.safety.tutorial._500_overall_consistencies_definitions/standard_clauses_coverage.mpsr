@@ -1,0 +1,670 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:78f85251-6057-4f15-9f39-88a715fb8497(_010_features._500_overall_consistencies_definitions)" content="root">
+  <persistence version="9" />
+  <imports>
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" implicit="true" />
+    <import index="l1gl" ref="r:3c95f73d-aaea-4fdd-b65a-8486222ab2c3(com.mbeddr.formal.safety.argument.process.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+  </imports>
+  <registry>
+    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
+        <child id="1154032183016" name="body" index="2LFqv$" />
+      </concept>
+      <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
+        <child id="1197027771414" name="operand" index="2Oq$k0" />
+        <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
+      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
+      </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
+      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
+        <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
+      </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
+      <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
+        <reference id="1107535924139" name="classifier" index="3uigEE" />
+        <child id="1109201940907" name="parameter" index="11_B2D" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+    </language>
+    <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
+      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ngI" index="3dgnlL">
+        <property id="7223240310078527797" name="failOnlyOnNewResults" index="3dJkfZ" />
+        <child id="7223240310078271420" name="violations" index="3dgnlQ" />
+      </concept>
+      <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
+        <property id="7223240310078271417" name="result" index="3dgnlN" />
+        <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
+        <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
+      </concept>
+      <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
+      <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
+        <child id="1716492013482699988" name="check" index="14J5yK" />
+        <child id="2555875871751847640" name="documentation" index="1MIJl8" />
+      </concept>
+      <concept id="2555875871751904530" name="org.mpsqa.lint.generic.structure.GenericCheckingFunction" flags="ig" index="1MIXq2" />
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569906740" name="parameter" index="1bW2Oz" />
+        <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
+    <language id="1a8554c4-eb84-43ba-8c34-6f0d90c6e75a" name="jetbrains.mps.lang.smodel.query">
+      <concept id="7738379549910147341" name="jetbrains.mps.lang.smodel.query.structure.InstancesExpression" flags="ng" index="qVDSY">
+        <child id="7738379549910147342" name="conceptArg" index="qVDSX" />
+      </concept>
+      <concept id="4234138103881610891" name="jetbrains.mps.lang.smodel.query.structure.WithStatement" flags="ng" index="L3pyB">
+        <child id="4234138103881610935" name="scope" index="L3pyr" />
+        <child id="4234138103881610892" name="stmts" index="L3pyw" />
+      </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
+        <child id="1204796294226" name="closure" index="23t8la" />
+      </concept>
+      <concept id="1176906603202" name="jetbrains.mps.baseLanguage.collections.structure.BinaryOperation" flags="nn" index="56pJg">
+        <child id="1176906787974" name="rightExpression" index="576Qk" />
+      </concept>
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
+      <concept id="1176923520476" name="jetbrains.mps.baseLanguage.collections.structure.ExcludeOperation" flags="nn" index="66VNe" />
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
+      <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
+        <child id="1151689745422" name="elementType" index="A3Ik2" />
+      </concept>
+      <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
+        <child id="1153944400369" name="variable" index="2Gsz3X" />
+        <child id="1153944424730" name="inputSequence" index="2GsD0m" />
+      </concept>
+      <concept id="1153944193378" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariable" flags="nr" index="2GrKxI" />
+      <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
+        <reference id="1153944258490" name="variable" index="2Gs0qQ" />
+      </concept>
+      <concept id="1237721394592" name="jetbrains.mps.baseLanguage.collections.structure.AbstractContainerCreator" flags="nn" index="HWqM0">
+        <child id="1237721435807" name="elementType" index="HW$YZ" />
+      </concept>
+      <concept id="1227008614712" name="jetbrains.mps.baseLanguage.collections.structure.LinkedListCreator" flags="nn" index="2Jqq0_" />
+      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
+      <concept id="1178894719932" name="jetbrains.mps.baseLanguage.collections.structure.DistinctOperation" flags="nn" index="1VAtEI" />
+    </language>
+  </registry>
+  <node concept="1MIHA_" id="1n_6a3GpK18">
+    <property role="TrG5h" value="standard_clauses_coverage" />
+    <property role="3dJkfZ" value="true" />
+    <node concept="1Pa9Pv" id="1n_6a3GpK19" role="1MIJl8">
+      <node concept="1PaTwC" id="1n_6a3GpK1a" role="1PaQFQ">
+        <node concept="3oM_SD" id="1n_6a3GpK1b" role="1PaTwD">
+          <property role="3oM_SC" value="This" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1c" role="1PaTwD">
+          <property role="3oM_SC" value="checking" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1e" role="1PaTwD">
+          <property role="3oM_SC" value="script" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1f" role="1PaTwD">
+          <property role="3oM_SC" value="makes" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1g" role="1PaTwD">
+          <property role="3oM_SC" value="sure" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1h" role="1PaTwD">
+          <property role="3oM_SC" value="that" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1i" role="1PaTwD">
+          <property role="3oM_SC" value="all" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1j" role="1PaTwD">
+          <property role="3oM_SC" value="standard" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1k" role="1PaTwD">
+          <property role="3oM_SC" value="clauses" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1l" role="1PaTwD">
+          <property role="3oM_SC" value="defined" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1m" role="1PaTwD">
+          <property role="3oM_SC" value="in" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1n" role="1PaTwD">
+          <property role="3oM_SC" value="bibliography" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1o" role="1PaTwD">
+          <property role="3oM_SC" value="modules" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1p" role="1PaTwD">
+          <property role="3oM_SC" value="are" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK1q" role="1PaTwD">
+          <property role="3oM_SC" value="" />
+        </node>
+      </node>
+      <node concept="1PaTwC" id="1n_6a3GpK1s" role="1PaQFQ">
+        <node concept="3oM_SD" id="1n_6a3GpK1Z" role="1PaTwD">
+          <property role="3oM_SC" value="linked" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK20" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK22" role="1PaTwD">
+          <property role="3oM_SC" value="assurance" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GpK23" role="1PaTwD">
+          <property role="3oM_SC" value="case" />
+        </node>
+        <node concept="3oM_SD" id="1n_6a3GvVhP" role="1PaTwD">
+          <property role="3oM_SC" value="elements." />
+        </node>
+      </node>
+    </node>
+    <node concept="1MIXq2" id="1n_6a3GpK26" role="14J5yK">
+      <node concept="3clFbS" id="1n_6a3GpK27" role="2VODD2">
+        <node concept="3cpWs8" id="1n_6a3GpK43" role="3cqZAp">
+          <node concept="3cpWsn" id="1n_6a3GpK46" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="_YKpA" id="1n_6a3GpK41" role="1tU5fm">
+              <node concept="3uibUv" id="1n_6a3Gu4K7" role="_ZDj9">
+                <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+                <node concept="17QB3L" id="1n_6a3Gu4Oy" role="11_B2D" />
+                <node concept="3Tqbb2" id="1n_6a3Gu4Tf" role="11_B2D" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="1n_6a3Gu4Zf" role="33vP2m">
+              <node concept="2Jqq0_" id="1n_6a3Gu6H2" role="2ShVmc">
+                <node concept="3uibUv" id="1n_6a3Gu6Md" role="HW$YZ">
+                  <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
+                  <node concept="17QB3L" id="1n_6a3Gu7ax" role="11_B2D" />
+                  <node concept="3Tqbb2" id="1n_6a3Gu7h0" role="11_B2D" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1n_6a3Gu7l3" role="3cqZAp" />
+        <node concept="L3pyB" id="1n_6a3Gu7Ag" role="3cqZAp">
+          <node concept="3clFbS" id="1n_6a3Gu7Ai" role="L3pyw">
+            <node concept="3cpWs8" id="1n_6a3Gv03E" role="3cqZAp">
+              <node concept="3cpWsn" id="1n_6a3Gv03F" role="3cpWs9">
+                <property role="TrG5h" value="referencedClauses" />
+                <node concept="A3Dl8" id="1n_6a3GuZZI" role="1tU5fm">
+                  <node concept="3Tqbb2" id="1n_6a3GuZZL" role="A3Ik2">
+                    <ref role="ehGHo" to="l1gl:3f8ZVRYh460" resolve="StandardClause" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1n_6a3Gv03G" role="33vP2m">
+                  <node concept="2OqwBi" id="1n_6a3Gv03H" role="2Oq$k0">
+                    <node concept="qVDSY" id="1n_6a3Gv03I" role="2Oq$k0">
+                      <node concept="chp4Y" id="1n_6a3Gv03J" role="qVDSX">
+                        <ref role="cht4Q" to="l1gl:3f8ZVRYh476" resolve="StandardAndClauseRefGSNAttribute" />
+                      </node>
+                    </node>
+                    <node concept="3$u5V9" id="1n_6a3Gv03K" role="2OqNvi">
+                      <node concept="1bVj0M" id="1n_6a3Gv03L" role="23t8la">
+                        <node concept="3clFbS" id="1n_6a3Gv03M" role="1bW5cS">
+                          <node concept="3clFbF" id="1n_6a3Gv03N" role="3cqZAp">
+                            <node concept="2OqwBi" id="1n_6a3Gv03O" role="3clFbG">
+                              <node concept="37vLTw" id="1n_6a3Gv03P" role="2Oq$k0">
+                                <ref role="3cqZAo" node="1n_6a3Gv03R" resolve="it" />
+                              </node>
+                              <node concept="3TrEf2" id="1n_6a3Gv03Q" role="2OqNvi">
+                                <ref role="3Tt5mk" to="l1gl:3f8ZVRYhFRn" resolve="clause" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="gl6BB" id="1n_6a3Gv03R" role="1bW2Oz">
+                          <property role="TrG5h" value="it" />
+                          <node concept="2jxLKc" id="1n_6a3Gv03S" role="1tU5fm" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="1VAtEI" id="1n_6a3Gv03T" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="1n_6a3Gv27b" role="3cqZAp">
+              <node concept="3cpWsn" id="1n_6a3Gv27c" role="3cpWs9">
+                <property role="TrG5h" value="clausesNotReferences" />
+                <node concept="A3Dl8" id="1n_6a3Gv25R" role="1tU5fm">
+                  <node concept="3Tqbb2" id="1n_6a3Gv25U" role="A3Ik2">
+                    <ref role="ehGHo" to="l1gl:3f8ZVRYh460" resolve="StandardClause" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="1n_6a3Gv27d" role="33vP2m">
+                  <node concept="qVDSY" id="1n_6a3Gv27e" role="2Oq$k0">
+                    <node concept="chp4Y" id="1n_6a3Gv27f" role="qVDSX">
+                      <ref role="cht4Q" to="l1gl:3f8ZVRYh460" resolve="StandardClause" />
+                    </node>
+                  </node>
+                  <node concept="66VNe" id="1n_6a3Gv27g" role="2OqNvi">
+                    <node concept="37vLTw" id="1n_6a3Gv27h" role="576Qk">
+                      <ref role="3cqZAo" node="1n_6a3Gv03F" resolve="referencedClauses" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2Gpval" id="1n_6a3Gv2HA" role="3cqZAp">
+              <node concept="2GrKxI" id="1n_6a3Gv2HC" role="2Gsz3X">
+                <property role="TrG5h" value="clause" />
+              </node>
+              <node concept="37vLTw" id="1n_6a3Gv2PH" role="2GsD0m">
+                <ref role="3cqZAo" node="1n_6a3Gv27c" resolve="clausesNotReferences" />
+              </node>
+              <node concept="3clFbS" id="1n_6a3Gv2HG" role="2LFqv$">
+                <node concept="3clFbF" id="1n_6a3Gv2RK" role="3cqZAp">
+                  <node concept="2OqwBi" id="1n_6a3Gv3Zh" role="3clFbG">
+                    <node concept="37vLTw" id="1n_6a3Gv2RJ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="1n_6a3GpK46" resolve="res" />
+                    </node>
+                    <node concept="TSZUe" id="1n_6a3Gv68x" role="2OqNvi">
+                      <node concept="2ShNRf" id="1n_6a3Gv6dh" role="25WWJ7">
+                        <node concept="1pGfFk" id="1n_6a3Gv6GO" role="2ShVmc">
+                          <property role="373rjd" value="true" />
+                          <ref role="37wK5l" to="zn9m:~Pair.&lt;init&gt;(java.lang.Object,java.lang.Object)" resolve="Pair" />
+                          <node concept="3cpWs3" id="1n_6a3Gvaea" role="37wK5m">
+                            <node concept="Xl_RD" id="1n_6a3Gvakj" role="3uHU7w">
+                              <property role="Xl_RC" value=" is not referenced in any assurance case element." />
+                            </node>
+                            <node concept="3cpWs3" id="1n_6a3Gv8at" role="3uHU7B">
+                              <node concept="Xl_RD" id="1n_6a3Gv6LW" role="3uHU7B">
+                                <property role="Xl_RC" value="Clause " />
+                              </node>
+                              <node concept="2OqwBi" id="1n_6a3Gv8I$" role="3uHU7w">
+                                <node concept="2GrUjf" id="1n_6a3Gv8gl" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="1n_6a3Gv2HC" resolve="clause" />
+                                </node>
+                                <node concept="3TrcHB" id="1n_6a3Gv9RL" role="2OqNvi">
+                                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2GrUjf" id="1n_6a3Gv7cB" role="37wK5m">
+                            <ref role="2Gs0qQ" node="1n_6a3Gv2HC" resolve="clause" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1MG55F" id="1n_6a3Gu7KV" role="L3pyr" />
+        </node>
+        <node concept="3clFbH" id="1n_6a3Gu8Z9" role="3cqZAp" />
+        <node concept="3clFbF" id="1n_6a3Gu7lL" role="3cqZAp">
+          <node concept="37vLTw" id="1n_6a3Gu7lJ" role="3clFbG">
+            <ref role="3cqZAo" node="1n_6a3GpK46" resolve="res" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7$Y" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.1 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="1639692281460263150" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7$Z" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.1.1 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265804120" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_0" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.1.2 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265804131" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_1" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.2 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="1639692281460263158" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_2" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.2.1 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265637127" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_3" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.2.2 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265845899" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_4" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.2.3 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265845938" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_5" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.2.4 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265845952" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_6" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.2.5 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265845967" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_7" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.2.6 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265846015" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_8" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.2.7 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265846032" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_9" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.3 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="1639692281460263161" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_a" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.3.1 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891014" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_b" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.3.10 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891263" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_c" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.3.11 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891291" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_d" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.3.2 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891033" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_e" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.3.3 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891053" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_f" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.3.4 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891116" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_g" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.3.5 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891138" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_h" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.3.6 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891161" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_i" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.3.7 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891185" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_j" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.3.8 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891210" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_k" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.3.9 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891236" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_l" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.4 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891320" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_m" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.4 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="1639692281460263187" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_n" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.4.1 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891350" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_o" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.4.2 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891381" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_p" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.4.3 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891413" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_q" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.4.4 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891446" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_r" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.5 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891480" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_s" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.5.1 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891515" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_t" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.5.2 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891551" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_u" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.5.3 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891588" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_v" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.5.4 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891626" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_w" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.5.5 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891665" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_x" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.5.6 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891705" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_y" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.5.7 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891746" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_z" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.6 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891788" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_$" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 6.4.6.1 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891831" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7__" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265891875" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_A" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.1 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892010" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_B" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.2 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892056" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_C" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.1 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892103" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_D" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.2 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="1639692281460667524" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_E" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.2.1 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892151" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_F" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.2.10 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892628" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_G" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.2.2 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892200" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_H" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.2.3 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892250" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_I" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.2.4 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892301" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_J" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.2.5 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892353" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_K" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.2.6 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892406" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_L" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.2.7 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892460" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_M" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.2.8 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892515" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_N" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.2.9 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892571" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_O" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.3 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="1639692281460667531" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_P" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.3.1 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892686" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_Q" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.4 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="1639692281460667539" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+    <node concept="3dgnlM" id="1n_6a3Gw7_R" role="3dgnlQ">
+      <property role="3dgnlN" value="Clause 7.4.4.1 is not referenced in any assurance case element." />
+      <property role="3qxsY3" value="4157232269265892745" />
+      <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
+    </node>
+  </node>
+</model>
+
