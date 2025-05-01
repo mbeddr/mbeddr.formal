@@ -74,6 +74,9 @@
         <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
         <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
       </concept>
+      <concept id="7008376823202027689" name="org.mpsqa.lint.generic.structure.ICanSkipCheckerEvaluation" flags="ngI" index="3miP$Z">
+        <property id="7008376823202030902" name="skipEvaluation" index="3miQiw" />
+      </concept>
       <concept id="2555875871752198907" name="org.mpsqa.lint.generic.structure.ConceptFunctionParameter_MPSProject" flags="ng" index="1MG55F" />
       <concept id="2555875871751836213" name="org.mpsqa.lint.generic.structure.CheckableScript" flags="ng" index="1MIHA_">
         <child id="1716492013482699988" name="check" index="14J5yK" />
@@ -164,6 +167,7 @@
   <node concept="1MIHA_" id="1n_6a3GpK18">
     <property role="TrG5h" value="standard_clauses_coverage" />
     <property role="3dJkfZ" value="true" />
+    <property role="3miQiw" value="true" />
     <node concept="1Pa9Pv" id="1n_6a3GpK19" role="1MIJl8">
       <node concept="1PaTwC" id="1n_6a3GpK1a" role="1PaQFQ">
         <node concept="3oM_SD" id="1n_6a3GpK1b" role="1PaTwD">
