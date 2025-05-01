@@ -40,6 +40,7 @@
     <dependency reexport="false">fdecb1e5-875e-41ef-a5fd-4b18f747f204(com.mbeddr.formal.safety.argument.process.artefacts)</dependency>
     <dependency reexport="false">00a2e56d-f195-410b-8afe-5a3c7e505658(com.mbeddr.formal.safety.gsn.confidence.acp)</dependency>
     <dependency reexport="false">fb9af7fb-3816-4066-99c4-a12adf147a7b(com.mbeddr.formal.safety.gsn.operational.ocp)</dependency>
+    <dependency reexport="false">40ab19e9-751a-4433-b645-0e65160e58a0(org.mpsqa.lint.generic)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:c38abce1-4c09-44cb-9ebf-2a764e824bb5:com.mbeddr.mpsutil.actionsfilter" version="0" />
@@ -133,7 +134,9 @@
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="1" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
+    <module reference="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
+    <module reference="40ab19e9-751a-4433-b645-0e65160e58a0(org.mpsqa.lint.generic)" version="0" />
   </dependencyVersions>
 </solution>
 

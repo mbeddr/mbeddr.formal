@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:78f85251-6057-4f15-9f39-88a715fb8497(_010_features._500_overall_consistencies_definitions)" content="header">
+  <persistence version="9" />
+  <languages>
+    <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
+    <devkit ref="ce47f8ae-2ba9-435c-99ef-44dc38731951(org.mpsqa.lint.devkit)" />
+  </languages>
+  <imports>
+    <import index="l1gl" ref="r:3c95f73d-aaea-4fdd-b65a-8486222ab2c3(com.mbeddr.formal.safety.argument.process.structure)" />
+    <import index="zn9m" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.util(MPS.IDEA/)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+  </imports>
+</model>
+
