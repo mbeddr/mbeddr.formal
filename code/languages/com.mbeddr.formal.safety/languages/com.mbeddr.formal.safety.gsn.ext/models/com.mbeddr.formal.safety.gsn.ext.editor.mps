@@ -374,15 +374,20 @@
         <node concept="l2Vlx" id="WKGDODNpr_" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="25jECTPZ$Qd" role="3EZMnx" />
-      <node concept="3EZMnI" id="25jECTPZ$QP" role="3EZMnx">
-        <node concept="VPM3Z" id="25jECTPZ$QR" role="3F10Kt" />
-        <node concept="3F0ifn" id="25jECTPZ$QT" role="3EZMnx">
-          <property role="3F0ifm" value="Explanation:" />
+      <node concept="3EZMnI" id="aOqDiG0fjy" role="3EZMnx">
+        <node concept="VPM3Z" id="aOqDiG0fj$" role="3F10Kt" />
+        <node concept="3F0ifn" id="aOqDiG0fjC" role="3EZMnx">
+          <property role="3F0ifm" value="Documentation:" />
         </node>
-        <node concept="3F1sOY" id="25jECTPZ$Rq" role="3EZMnx">
-          <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        <node concept="1iCGBv" id="aOqDiG0fjF" role="3EZMnx">
+          <ref role="1NtTu8" to="lbo2:1qrXfdH1UrR" resolve="goalStructure" />
+          <node concept="1sVBvm" id="aOqDiG0fjH" role="1sWHZn">
+            <node concept="3F1sOY" id="aOqDiG0fjL" role="2wV5jI">
+              <ref role="1NtTu8" to="py52:336$aoT$ZLb" resolve="documentation" />
+            </node>
+          </node>
         </node>
-        <node concept="2iRfu4" id="25jECTPZ$QU" role="2iSdaV" />
+        <node concept="2iRfu4" id="aOqDiG0fjB" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="WKGDODNpog" role="2iSdaV" />
     </node>
