@@ -4115,7 +4115,7 @@
     </node>
   </node>
   <node concept="312cEu" id="7VD92VLsl7x">
-    <property role="TrG5h" value="LoadAndLiftFacade" />
+    <property role="TrG5h" value="YamlLoadAndLiftFacade" />
     <node concept="2tJIrI" id="7VD92VLsld3" role="jymVt" />
     <node concept="2YIFZL" id="7VD92VLsoP2" role="jymVt">
       <property role="TrG5h" value="loadAndLift" />
@@ -4175,62 +4175,17 @@
               </node>
             </node>
             <node concept="3clFbH" id="7VD92VLssD8" role="3cqZAp" />
-            <node concept="3cpWs8" id="6nIrkDgi9dX" role="3cqZAp">
-              <node concept="3cpWsn" id="6nIrkDgi9dY" role="3cpWs9">
-                <property role="TrG5h" value="rootNode" />
-                <node concept="3uibUv" id="6nIrkDgi9dZ" role="1tU5fm">
-                  <ref role="3uigEE" to="vvcd:~Node" resolve="Node" />
-                </node>
-                <node concept="2YIFZM" id="6nIrkDgi9e0" role="33vP2m">
-                  <ref role="37wK5l" node="U7AKzhi$CI" resolve="parseYaml" />
-                  <ref role="1Pybhc" node="U7AKzhi$Bs" resolve="YamlParserFacade" />
-                  <node concept="37vLTw" id="6nIrkDgi9e1" role="37wK5m">
-                    <ref role="3cqZAo" node="7VD92VLsoPl" resolve="fileContent" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="6nIrkDgi9e2" role="3cqZAp">
-              <node concept="3cpWsn" id="6nIrkDgi9e3" role="3cpWs9">
-                <property role="TrG5h" value="myFile" />
-                <node concept="3Tqbb2" id="6nIrkDgi9e4" role="1tU5fm">
-                  <ref role="ehGHo" to="bpzl:21lHZzX1B26" resolve="YamlFile" />
-                </node>
-                <node concept="2ShNRf" id="6nIrkDgi9e5" role="33vP2m">
-                  <node concept="3zrR0B" id="6nIrkDgi9e6" role="2ShVmc">
-                    <node concept="3Tqbb2" id="6nIrkDgi9e7" role="3zrR0E">
-                      <ref role="ehGHo" to="bpzl:21lHZzX1B26" resolve="YamlFile" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="6nIrkDgi9e8" role="3cqZAp">
-              <node concept="2YIFZM" id="6nIrkDgi9e9" role="3clFbG">
-                <ref role="37wK5l" node="21lHZzX6vfi" resolve="populateFile" />
-                <ref role="1Pybhc" node="21lHZzX6dpI" resolve="RawTextLoader" />
-                <node concept="37vLTw" id="6nIrkDgi9ea" role="37wK5m">
-                  <ref role="3cqZAo" node="6nIrkDgi9e3" resolve="myFile" />
-                </node>
-                <node concept="37vLTw" id="6nIrkDgi9eb" role="37wK5m">
-                  <ref role="3cqZAo" node="7VD92VLsoPl" resolve="fileContent" />
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="6nIrkDgi9ec" role="3cqZAp">
               <node concept="3cpWsn" id="6nIrkDgi9ed" role="3cpWs9">
                 <property role="TrG5h" value="lifted2YamlLevel" />
                 <node concept="3Tqbb2" id="6nIrkDgi9ee" role="1tU5fm">
                   <ref role="ehGHo" to="bpzl:21lHZzX1B26" resolve="YamlFile" />
                 </node>
-                <node concept="2YIFZM" id="6nIrkDgi9ef" role="33vP2m">
-                  <ref role="37wK5l" node="3YAmJe03spZ" resolve="lift2YamlLevel" />
-                  <ref role="1Pybhc" node="3YAmJe03sgu" resolve="RawTextFile2YamlLevelLifter" />
-                  <node concept="37vLTw" id="6nIrkDgi9eg" role="37wK5m">
-                    <ref role="3cqZAo" node="6nIrkDgi9e3" resolve="myFile" />
-                  </node>
-                  <node concept="37vLTw" id="6nIrkDgi9eh" role="37wK5m">
-                    <ref role="3cqZAo" node="6nIrkDgi9dY" resolve="rootNode" />
+                <node concept="2YIFZM" id="5jnWVpE$VQI" role="33vP2m">
+                  <ref role="1Pybhc" node="7VD92VLsl7x" resolve="LoadAndLiftFacade" />
+                  <ref role="37wK5l" node="5jnWVpE$VQE" resolve="createLiftedYamlFile" />
+                  <node concept="37vLTw" id="5jnWVpE$VQH" role="37wK5m">
+                    <ref role="3cqZAo" node="7VD92VLsoPl" resolve="fileContent" />
                   </node>
                 </node>
               </node>
@@ -4324,8 +4279,75 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="5jnWVpE$W3P" role="jymVt" />
+    <node concept="2YIFZL" id="5jnWVpE$VQE" role="jymVt">
+      <property role="TrG5h" value="createLiftedYamlFile" />
+      <node concept="3Tm1VV" id="5jnWVpE$VQF" role="1B3o_S" />
+      <node concept="3Tqbb2" id="5jnWVpE$VQG" role="3clF45">
+        <ref role="ehGHo" to="bpzl:21lHZzX1B26" resolve="YamlFile" />
+      </node>
+      <node concept="37vLTG" id="5jnWVpE$VQ$" role="3clF46">
+        <property role="TrG5h" value="fileContent" />
+        <node concept="17QB3L" id="5jnWVpE$VQ_" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="5jnWVpE$VQa" role="3clF47">
+        <node concept="3cpWs8" id="5jnWVpE$VQd" role="3cqZAp">
+          <node concept="3cpWsn" id="5jnWVpE$VQe" role="3cpWs9">
+            <property role="TrG5h" value="rootNode" />
+            <node concept="3uibUv" id="5jnWVpE$VQf" role="1tU5fm">
+              <ref role="3uigEE" to="vvcd:~Node" resolve="Node" />
+            </node>
+            <node concept="2YIFZM" id="5jnWVpE$VQg" role="33vP2m">
+              <ref role="37wK5l" node="U7AKzhi$CI" resolve="parseYaml" />
+              <ref role="1Pybhc" node="U7AKzhi$Bs" resolve="YamlParserFacade" />
+              <node concept="37vLTw" id="5jnWVpE$VQB" role="37wK5m">
+                <ref role="3cqZAo" node="5jnWVpE$VQ$" resolve="fileContent" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5jnWVpE$VQi" role="3cqZAp">
+          <node concept="3cpWsn" id="5jnWVpE$VQj" role="3cpWs9">
+            <property role="TrG5h" value="myFile" />
+            <node concept="3Tqbb2" id="5jnWVpE$VQk" role="1tU5fm">
+              <ref role="ehGHo" to="bpzl:21lHZzX1B26" resolve="YamlFile" />
+            </node>
+            <node concept="2ShNRf" id="5jnWVpE$VQl" role="33vP2m">
+              <node concept="3zrR0B" id="5jnWVpE$VQm" role="2ShVmc">
+                <node concept="3Tqbb2" id="5jnWVpE$VQn" role="3zrR0E">
+                  <ref role="ehGHo" to="bpzl:21lHZzX1B26" resolve="YamlFile" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5jnWVpE$VQo" role="3cqZAp">
+          <node concept="2YIFZM" id="5jnWVpE$VQp" role="3clFbG">
+            <ref role="37wK5l" node="21lHZzX6vfi" resolve="populateFile" />
+            <ref role="1Pybhc" node="21lHZzX6dpI" resolve="RawTextLoader" />
+            <node concept="37vLTw" id="5jnWVpE$VQq" role="37wK5m">
+              <ref role="3cqZAo" node="5jnWVpE$VQj" resolve="myFile" />
+            </node>
+            <node concept="37vLTw" id="5jnWVpE$VQA" role="37wK5m">
+              <ref role="3cqZAo" node="5jnWVpE$VQ$" resolve="fileContent" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5jnWVpE$VQy" role="3cqZAp">
+          <node concept="2YIFZM" id="5jnWVpE$VQv" role="3cqZAk">
+            <ref role="37wK5l" node="3YAmJe03spZ" resolve="lift2YamlLevel" />
+            <ref role="1Pybhc" node="3YAmJe03sgu" resolve="RawTextFile2YamlLevelLifter" />
+            <node concept="37vLTw" id="5jnWVpE$VQw" role="37wK5m">
+              <ref role="3cqZAo" node="5jnWVpE$VQj" resolve="myFile" />
+            </node>
+            <node concept="37vLTw" id="5jnWVpE$VQx" role="37wK5m">
+              <ref role="3cqZAo" node="5jnWVpE$VQe" resolve="rootNode" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="7VD92VLsld4" role="jymVt" />
-    <node concept="2tJIrI" id="7VD92VLsld5" role="jymVt" />
     <node concept="3Tm1VV" id="7VD92VLsl7y" role="1B3o_S" />
   </node>
 </model>

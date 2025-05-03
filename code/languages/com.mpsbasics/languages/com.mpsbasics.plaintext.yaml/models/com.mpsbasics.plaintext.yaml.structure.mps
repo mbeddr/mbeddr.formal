@@ -76,6 +76,9 @@
     <node concept="PrWs8" id="21lHZzX1IBV" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
     </node>
+    <node concept="PrWs8" id="5jnWVpEAvco" role="PzmwI">
+      <ref role="PrY4T" node="5jnWVpEAvcn" resolve="IWhitespaceLike" />
+    </node>
   </node>
   <node concept="PlHQZ" id="21lHZzX1IBX">
     <property role="EcuMT" value="2329970662258960893" />
@@ -120,6 +123,9 @@
     <node concept="PrWs8" id="21lHZzX34dt" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
     </node>
+    <node concept="PrWs8" id="5jnWVpEAvcq" role="PzmwI">
+      <ref role="PrY4T" node="5jnWVpEAvcn" resolve="IWhitespaceLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="21lHZzX6GRf">
     <property role="EcuMT" value="2329970662260264399" />
@@ -128,6 +134,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="21lHZzX6GRg" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
+    </node>
+    <node concept="PrWs8" id="5jnWVpEAvcp" role="PzmwI">
+      <ref role="PrY4T" node="5jnWVpEAvcn" resolve="IWhitespaceLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="3YAmJe02YAf">
@@ -226,6 +235,10 @@
     <node concept="PrWs8" id="3gvcLqnVlJg" role="PrDN$">
       <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="5jnWVpEAvcn">
+    <property role="EcuMT" value="6113622983976809239" />
+    <property role="TrG5h" value="IWhitespaceLike" />
   </node>
 </model>
 

@@ -15,6 +15,7 @@
   <imports>
     <import index="bpzl" ref="r:8e9bbbf8-bc28-4903-ba1f-4a24127d3d8e(com.mpsbasics.plaintext.yaml.structure)" />
     <import index="d5sz" ref="r:60551728-0438-4f85-9536-c234499a0c3a(test.com.mpsbasics.plaintext.yaml._010_smoke@tests)" />
+    <import index="qyws" ref="r:6dbd5c7d-7c72-44db-8e95-5b8713d1321d(com.mpsbasics.plaintext.yaml.util.testing)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -199,9 +200,9 @@
         <node concept="3clFbH" id="VNqGeRKDLl" role="3cqZAp" />
         <node concept="3clFbF" id="6nIrkDgiCXY" role="3cqZAp">
           <node concept="37vLTI" id="6nIrkDgiCY0" role="3clFbG">
-            <node concept="2YIFZM" id="6nIrkDgiaG9" role="37vLTx">
-              <ref role="37wK5l" to="d5sz:VNqGeRIRqP" resolve="createYamlFile" />
-              <ref role="1Pybhc" to="d5sz:6nIrkDgi90K" resolve="TestUtils" />
+            <node concept="2YIFZM" id="5jnWVpE$Gdt" role="37vLTx">
+              <ref role="37wK5l" to="qyws:VNqGeRIRqP" resolve="createYamlFile" />
+              <ref role="1Pybhc" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
               <node concept="37vLTw" id="6nIrkDgibAV" role="37wK5m">
                 <ref role="3cqZAo" node="xOc3nAzFsX" resolve="text" />
               </node>
