@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:2486fa7b-4e6a-4bb2-ab31-c7fc74064365(_010_features._015_odd.ontologies.avsc_lexicon)" content="header">
+  <persistence version="9" />
+  <languages>
+    <use id="65ed2ac6-4499-4751-951e-3819684a4b8d" name="com.fasten.req.ontology" version="1" />
+    <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
+  </languages>
+  <imports />
+</model>
+

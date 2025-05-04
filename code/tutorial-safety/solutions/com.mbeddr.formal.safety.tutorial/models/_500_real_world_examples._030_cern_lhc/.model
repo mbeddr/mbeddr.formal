@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:2bf66eff-f642-4a3d-83f0-92fb40bc2d79(_500_real_world_examples._030_cern_lhc)" content="header">
+  <persistence version="9" />
+  <languages>
+    <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="-1" />
+    <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
+  </languages>
+  <imports />
+</model>
+
