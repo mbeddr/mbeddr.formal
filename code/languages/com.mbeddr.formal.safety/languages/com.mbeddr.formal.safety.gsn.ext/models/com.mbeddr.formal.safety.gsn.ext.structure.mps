@@ -396,6 +396,10 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="explanation" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+      <node concept="asaX9" id="2Gadht9GpMN" role="lGtFl">
+        <property role="YLPcu" value="2025.05.04" />
+        <property role="YLQ7P" value="Use the documentation associated to goal structures." />
+      </node>
     </node>
     <node concept="1TJgyj" id="x1FXqHSaO" role="1TKVEi">
       <property role="IQ2ns" value="9296093161947828" />

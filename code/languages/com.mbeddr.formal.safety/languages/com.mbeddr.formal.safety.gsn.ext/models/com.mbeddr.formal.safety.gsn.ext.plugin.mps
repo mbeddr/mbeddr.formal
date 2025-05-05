@@ -1231,7 +1231,35 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="WKGDODTO1p" role="3cqZAp" />
+        <node concept="3clFbF" id="2Gadht9HHBM" role="3cqZAp">
+          <node concept="37vLTI" id="2Gadht9HU1B" role="3clFbG">
+            <node concept="2OqwBi" id="2Gadht9I3Ko" role="37vLTx">
+              <node concept="2OqwBi" id="2Gadht9HYCX" role="2Oq$k0">
+                <node concept="37vLTw" id="2Gadht9HWgD" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2mjHtwU8yZs" resolve="patternDefinition" />
+                </node>
+                <node concept="3TrEf2" id="2Gadht9I0Va" role="2OqNvi">
+                  <ref role="3Tt5mk" to="py52:336$aoT$ZLb" resolve="documentation" />
+                </node>
+              </node>
+              <node concept="1$rogu" id="2Gadht9I5dN" role="2OqNvi" />
+            </node>
+            <node concept="2OqwBi" id="2Gadht9HPdY" role="37vLTJ">
+              <node concept="2OqwBi" id="2Gadht9HIW0" role="2Oq$k0">
+                <node concept="37vLTw" id="2Gadht9HHBK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2mjHtwU8vkj" resolve="pi" />
+                </node>
+                <node concept="3TrEf2" id="2Gadht9HMqF" role="2OqNvi">
+                  <ref role="3Tt5mk" to="lbo2:1qrXfdH1UrR" resolve="goalStructure" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="2Gadht9HRUq" role="2OqNvi">
+                <ref role="3Tt5mk" to="py52:336$aoT$ZLb" resolve="documentation" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2Gadht9HFjC" role="3cqZAp" />
         <node concept="3cpWs8" id="WKGDODLE_3" role="3cqZAp">
           <node concept="3cpWsn" id="WKGDODLE_6" role="3cpWs9">
             <property role="TrG5h" value="original2Copy" />
