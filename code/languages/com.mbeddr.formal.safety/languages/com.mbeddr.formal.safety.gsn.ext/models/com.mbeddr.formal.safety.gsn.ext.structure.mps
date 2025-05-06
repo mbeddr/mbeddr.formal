@@ -160,6 +160,8 @@
     <property role="EcuMT" value="2392944874759792240" />
     <property role="TrG5h" value="SupportedByConnectionPattern" />
     <property role="3GE5qa" value="patterns" />
+    <property role="34LRSv" value="supported-by" />
+    <property role="R4oN_" value="supported-by connection in pattern" />
     <ref role="1TJDcQ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
     <node concept="PrWs8" id="24PsEXFaEm5" role="PzmwI">
       <ref role="PrY4T" node="24PsEXFaEm2" resolve="IGsnConnectionPattern" />
@@ -184,12 +186,18 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="explanation" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+      <node concept="asaX9" id="5K95X1y12dH" role="lGtFl">
+        <property role="YLQ7P" value="explanation is migrated to GsnPatternConnectionExplanation" />
+        <property role="YLPcu" value="2025.05.06" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="35$gPpxbZQ_">
     <property role="EcuMT" value="3559043643806317989" />
     <property role="3GE5qa" value="patterns" />
     <property role="TrG5h" value="InContextOfConnectionPattern" />
+    <property role="34LRSv" value="in-contextOf" />
+    <property role="R4oN_" value="in-contextOf connection in patterns" />
     <ref role="1TJDcQ" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
     <node concept="PrWs8" id="35$gPpxbZQA" role="PzmwI">
       <ref role="PrY4T" node="24PsEXFaEm2" resolve="IGsnConnectionPattern" />

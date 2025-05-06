@@ -665,14 +665,28 @@
       <node concept="3EZMnI" id="5xKN$GcBug$" role="3EZMnx">
         <node concept="VPM3Z" id="5xKN$GcBugA" role="3F10Kt" />
         <node concept="3F0ifn" id="5xKN$GcBugC" role="3EZMnx">
-          <property role="3F0ifm" value="explanation:" />
+          <property role="3F0ifm" value="DEPRECATED (use intention to attach explanation note to connections in patterns) explanation:" />
         </node>
         <node concept="3F1sOY" id="5Ac1Q93IIr_" role="3EZMnx">
           <ref role="1NtTu8" to="lbo2:5Ac1Q93IIdk" resolve="explanation" />
         </node>
         <node concept="l2Vlx" id="5xKN$GcBugD" role="2iSdaV" />
+        <node concept="pkWqt" id="5K95X1y130J" role="pqm2j">
+          <node concept="3clFbS" id="5K95X1y130K" role="2VODD2">
+            <node concept="3clFbF" id="5K95X1y14qZ" role="3cqZAp">
+              <node concept="2OqwBi" id="5K95X1y15w7" role="3clFbG">
+                <node concept="2OqwBi" id="5K95X1y14SO" role="2Oq$k0">
+                  <node concept="pncrf" id="5K95X1y14qY" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="5K95X1y15gb" role="2OqNvi">
+                    <ref role="3Tt5mk" to="lbo2:5Ac1Q93IIdk" resolve="explanation" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="5K95X1y15Y5" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
-      <node concept="3F0ifn" id="5Ac1Q93K50b" role="3EZMnx" />
     </node>
   </node>
   <node concept="24kQdi" id="35$gPpxbZZo">
