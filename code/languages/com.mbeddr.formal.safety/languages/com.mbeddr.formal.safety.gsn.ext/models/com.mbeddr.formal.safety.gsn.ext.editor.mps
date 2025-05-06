@@ -66,6 +66,7 @@
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="4323500428121233431" name="jetbrains.mps.lang.editor.structure.EditorCellId" flags="ng" index="2SqB2G" />
+      <concept id="1149850725784" name="jetbrains.mps.lang.editor.structure.CellModel_AttributedNodeCell" flags="ng" index="2SsqMj" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
@@ -93,6 +94,7 @@
       <concept id="1630016958697057551" name="jetbrains.mps.lang.editor.structure.IMenuPartParameterized" flags="ngI" index="2ZBHr6">
         <child id="1630016958697057552" name="parameterType" index="2ZBHrp" />
       </concept>
+      <concept id="1214406454886" name="jetbrains.mps.lang.editor.structure.TextBackgroundColorStyleClassItem" flags="ln" index="30gYXW" />
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1235999440492" name="jetbrains.mps.lang.editor.structure.HorizontalAlign" flags="ln" index="37jFXN">
@@ -1505,6 +1507,31 @@
     <ref role="aqKnT" to="lbo2:56pBK14tHBo" resolve="GenericNamedModelElementRefWord_old" />
     <node concept="22hDWj" id="6FJpOMAQ8Wu" role="22hAXT" />
     <node concept="2VfDsV" id="6FJpOMAQ8Wv" role="3ft7WO" />
+  </node>
+  <node concept="24kQdi" id="18O4bIoeP_N">
+    <ref role="1XX52x" to="lbo2:18O4bIocyw2" resolve="GsnPaternConnectionExplanation" />
+    <node concept="3EZMnI" id="18O4bIoeP_P" role="2wV5jI">
+      <node concept="3F0ifn" id="18O4bIoeP_T" role="3EZMnx">
+        <property role="3F0ifm" value="Explanation:" />
+        <node concept="30gYXW" id="18O4bIogS44" role="3F10Kt">
+          <property role="Vb096" value="fLwANPq/yellow" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="18O4bIoeP_W" role="3EZMnx">
+        <ref role="1NtTu8" to="lbo2:18O4bIod0Kt" resolve="explanation" />
+      </node>
+      <node concept="2SsqMj" id="18O4bIoga$B" role="3EZMnx" />
+      <node concept="2iRkQZ" id="18O4bIoeP_S" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="18O4bIoeP_Y" role="6VMZX">
+      <node concept="3F0ifn" id="18O4bIoePA1" role="3EZMnx">
+        <property role="3F0ifm" value="Explanation:" />
+      </node>
+      <node concept="3F1sOY" id="18O4bIoePA6" role="3EZMnx">
+        <ref role="1NtTu8" to="lbo2:18O4bIod0Kt" resolve="explanation" />
+      </node>
+      <node concept="2iRkQZ" id="18O4bIoheT2" role="2iSdaV" />
+    </node>
   </node>
 </model>
 
