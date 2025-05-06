@@ -5572,14 +5572,14 @@
     </node>
     <node concept="3VeUTF" id="18O4bIokw2N" role="2vhqc$">
       <ref role="3VeSjP" node="Zbnj3aOW5k" resolve="G01" />
-      <ref role="3VeSjQ" node="18O4bIokvRI" resolve="alternative" />
+      <ref role="3VeSjQ" node="18O4bIokvRI" />
     </node>
     <node concept="3VeUTF" id="18O4bIokw4Q" role="2vhqc$">
-      <ref role="3VeSjP" node="18O4bIokvRI" resolve="alternative" />
+      <ref role="3VeSjP" node="18O4bIokvRI" />
       <ref role="3VeSjQ" node="Zbnj3aOWaf" resolve="Str01" />
     </node>
     <node concept="3VeUTF" id="18O4bIokwnX" role="2vhqc$">
-      <ref role="3VeSjP" node="18O4bIokvRI" resolve="alternative" />
+      <ref role="3VeSjP" node="18O4bIokvRI" />
       <ref role="3VeSjQ" node="Zbnj3aOWfb" resolve="Str02" />
       <node concept="2a1zyT" id="18O4bIokwx3" role="lGtFl">
         <node concept="19SGf9" id="18O4bIokwx4" role="2a01MA">

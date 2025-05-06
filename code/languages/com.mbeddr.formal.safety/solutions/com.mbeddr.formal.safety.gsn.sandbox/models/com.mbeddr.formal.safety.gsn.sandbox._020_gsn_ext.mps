@@ -1223,14 +1223,14 @@
     </node>
     <node concept="3VeUTF" id="25jECTPZsWP" role="2vhqc$">
       <ref role="3VeSjP" node="25jECTPZsQq" resolve="Str1" />
-      <ref role="3VeSjQ" node="25jECTPZsSE" resolve="alternative" />
+      <ref role="3VeSjQ" node="25jECTPZsSE" resolve="OR_Example" />
     </node>
     <node concept="3VeUTF" id="25jECTPZsYo" role="2vhqc$">
-      <ref role="3VeSjP" node="25jECTPZsSE" resolve="alternative" />
+      <ref role="3VeSjP" node="25jECTPZsSE" resolve="OR_Example" />
       <ref role="3VeSjQ" node="25jECTPZsSZ" resolve="G3" />
     </node>
     <node concept="3VeUTF" id="25jECTPZsZQ" role="2vhqc$">
-      <ref role="3VeSjP" node="25jECTPZsSE" resolve="alternative" />
+      <ref role="3VeSjP" node="25jECTPZsSE" resolve="OR_Example" />
       <ref role="3VeSjQ" node="25jECTPZsTU" resolve="G4" />
     </node>
   </node>

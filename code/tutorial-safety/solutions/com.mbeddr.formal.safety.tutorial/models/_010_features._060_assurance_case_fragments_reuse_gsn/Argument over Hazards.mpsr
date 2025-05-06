@@ -365,11 +365,11 @@
       </node>
     </node>
     <node concept="3VeUTF" id="4FEga0FTt2L" role="2vhqc$">
-      <ref role="3VeSjP" node="4FEga0FTt17" />
+      <ref role="3VeSjP" node="4FEga0FTt17" resolve="OR" />
       <ref role="3VeSjQ" node="4FEga0FTsWf" resolve="G02_HazElim" />
     </node>
     <node concept="3VeUTF" id="4FEga0FTt32" role="2vhqc$">
-      <ref role="3VeSjP" node="4FEga0FTt17" />
+      <ref role="3VeSjP" node="4FEga0FTt17" resolve="OR" />
       <ref role="3VeSjQ" node="4FEga0FTsYo" resolve="G03_HazMit" />
     </node>
     <node concept="2vn7WC" id="4FEga0FTt3x" role="2vn1q5">
@@ -391,7 +391,7 @@
       </node>
     </node>
     <node concept="3VeUTF" id="4FEga0FTt4w" role="2vhqc$">
-      <ref role="3VeSjP" node="4FEga0FTt17" />
+      <ref role="3VeSjP" node="4FEga0FTt17" resolve="OR" />
       <ref role="3VeSjQ" node="4FEga0FTt3x" resolve="G04_HazNeg" />
     </node>
     <node concept="2vn7WC" id="4FEga0FTt8B" role="2vn1q5">
@@ -414,7 +414,7 @@
     </node>
     <node concept="3VeUTF" id="4FEga0FTt9M" role="2vhqc$">
       <ref role="3VeSjP" node="4FEga0FTt8B" resolve="GHaz_i" />
-      <ref role="3VeSjQ" node="4FEga0FTt17" />
+      <ref role="3VeSjQ" node="4FEga0FTt17" resolve="OR" />
     </node>
     <node concept="1a4Pjv" id="4FEga0FTtaV" role="2vhqc$">
       <property role="1a4Pju" value="0" />
