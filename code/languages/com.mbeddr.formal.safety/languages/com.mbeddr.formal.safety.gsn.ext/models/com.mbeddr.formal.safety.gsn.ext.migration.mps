@@ -599,7 +599,7 @@
                               <ref role="3cqZAo" node="5K95X1y0_Hx" resolve="it" />
                             </node>
                             <node concept="3TrEf2" id="5K95X1y0_GW" role="2OqNvi">
-                              <ref role="3Tt5mk" to="lbo2:5Ac1Q93IIdk" />
+                              <ref role="3Tt5mk" to="lbo2:5Ac1Q93IIdk" resolve="explanation" />
                             </node>
                           </node>
                           <node concept="3x8VRR" id="5K95X1y0_GX" role="2OqNvi" />
@@ -650,7 +650,7 @@
                               </node>
                               <node concept="TSZUe" id="5K95X1y0MC2" role="2OqNvi">
                                 <node concept="37vLTw" id="5K95X1y0T0k" role="25WWJ7">
-                                  <ref role="3cqZAo" node="5K95X1y0T0h" resolve="node" />
+                                  <ref role="3cqZAo" node="5K95X1y0T0h" resolve="connectionExplanationAttribute" />
                                 </node>
                               </node>
                             </node>
