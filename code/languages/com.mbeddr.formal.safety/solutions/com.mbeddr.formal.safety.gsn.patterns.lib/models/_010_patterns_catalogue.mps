@@ -17,9 +17,6 @@
         <property id="2392944874759792241" name="min" index="1a4Pju" />
       </concept>
       <concept id="8790599356044273577" name="com.mbeddr.formal.safety.gsn.ext.structure.OrEntity" flags="ng" index="1idpKz" />
-      <concept id="9296093161945517" name="com.mbeddr.formal.safety.gsn.ext.structure.AbstractReusableArgumentFragmentsContainer" flags="ng" index="1q_BWi">
-        <child id="9296093161947774" name="explanation" index="1q_Cj1" />
-      </concept>
       <concept id="1629165016568013899" name="com.mbeddr.formal.safety.gsn.ext.structure.PatternDefinition" flags="ng" index="1VB52S" />
     </language>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
@@ -5407,7 +5404,7 @@
         <node concept="gqqVs" id="18O4bIokbIR" role="37mO4d">
           <property role="gqqTZ" value="11.0" />
           <property role="gqqTW" value="10.0" />
-          <property role="gqqTX" value="204.0" />
+          <property role="gqqTX" value="212.0" />
           <property role="gqqTy" value="76.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -5553,9 +5550,6 @@
       <ref role="3VeSjP" node="Zbnj3aOW5k" resolve="G01" />
       <ref role="3VeSjQ" node="Zbnj3aOWVN" resolve="C02" />
     </node>
-    <node concept="19SGf9" id="18O4bIoiMkx" role="1q_Cj1">
-      <node concept="19SUe$" id="18O4bIoiMky" role="19SJt6" />
-    </node>
     <node concept="9kjDo" id="18O4bIokbEK" role="9lmNH">
       <node concept="19SGf9" id="18O4bIokbEL" role="9kjJR">
         <node concept="19SUe$" id="18O4bIokbLU" role="19SJt6">
@@ -5564,6 +5558,7 @@
       </node>
     </node>
     <node concept="1idpKz" id="18O4bIokvRI" role="2vn1q5">
+      <property role="TrG5h" value="Or" />
       <node concept="19SGf9" id="18O4bIokvRJ" role="2vnaTY">
         <node concept="19SUe$" id="18O4bIokvRK" role="19SJt6">
           <property role="19SUeA" value=" " />
@@ -5572,14 +5567,14 @@
     </node>
     <node concept="3VeUTF" id="18O4bIokw2N" role="2vhqc$">
       <ref role="3VeSjP" node="Zbnj3aOW5k" resolve="G01" />
-      <ref role="3VeSjQ" node="18O4bIokvRI" />
+      <ref role="3VeSjQ" node="18O4bIokvRI" resolve="Or" />
     </node>
     <node concept="3VeUTF" id="18O4bIokw4Q" role="2vhqc$">
-      <ref role="3VeSjP" node="18O4bIokvRI" />
+      <ref role="3VeSjP" node="18O4bIokvRI" resolve="Or" />
       <ref role="3VeSjQ" node="Zbnj3aOWaf" resolve="Str01" />
     </node>
     <node concept="3VeUTF" id="18O4bIokwnX" role="2vhqc$">
-      <ref role="3VeSjP" node="18O4bIokvRI" />
+      <ref role="3VeSjP" node="18O4bIokvRI" resolve="Or" />
       <ref role="3VeSjQ" node="Zbnj3aOWfb" resolve="Str02" />
       <node concept="2a1zyT" id="18O4bIokwx3" role="lGtFl">
         <node concept="19SGf9" id="18O4bIokwx4" role="2a01MA">
