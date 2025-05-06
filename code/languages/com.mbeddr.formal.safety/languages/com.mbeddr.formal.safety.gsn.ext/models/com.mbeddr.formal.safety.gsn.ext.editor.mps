@@ -810,44 +810,62 @@
       </node>
       <node concept="3EZMnI" id="5yzfR7K0o9J" role="1ytjkN">
         <node concept="2iRkQZ" id="5yzfR7K0o9K" role="2iSdaV" />
-        <node concept="3F0ifn" id="7BYuSCFMY$f" role="3EZMnx">
-          <property role="3F0ifm" value="OR" />
-          <node concept="37jFXN" id="5yzfR7K0tAx" role="3F10Kt">
+        <node concept="3F0A7n" id="5K95X1y86FP" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          <node concept="VSNWy" id="5K95X1y86GG" role="3F10Kt">
+            <property role="1lJzqX" value="9" />
+          </node>
+          <node concept="37jFXN" id="5K95X1y8z8I" role="3F10Kt">
             <property role="37lx6p" value="hZ7kQ4a/CENTER" />
           </node>
         </node>
-        <node concept="3F0A7n" id="5yzfR7K0tAz" role="3EZMnx">
+        <node concept="3F0A7n" id="5K95X1yaTw5" role="3EZMnx">
           <property role="39s7Ar" value="true" />
           <property role="1O74Pk" value="true" />
           <ref role="1NtTu8" to="lbo2:5yzfR7K0o7Y" resolve="cardinality" />
-          <node concept="pkWqt" id="5yzfR7K0tAC" role="pqm2j">
-            <node concept="3clFbS" id="5yzfR7K0tAD" role="2VODD2">
-              <node concept="3clFbF" id="5yzfR7K0v95" role="3cqZAp">
-                <node concept="2OqwBi" id="5yzfR7K0wmw" role="3clFbG">
-                  <node concept="2OqwBi" id="5yzfR7K0vqn" role="2Oq$k0">
-                    <node concept="pncrf" id="5yzfR7K0v94" role="2Oq$k0" />
-                    <node concept="3TrcHB" id="5yzfR7K0vPv" role="2OqNvi">
+          <node concept="VSNWy" id="5K95X1yaTw6" role="3F10Kt">
+            <property role="1lJzqX" value="7" />
+          </node>
+          <node concept="37jFXN" id="5K95X1yaTw7" role="3F10Kt" />
+          <node concept="pkWqt" id="5K95X1yaTw8" role="pqm2j">
+            <node concept="3clFbS" id="5K95X1yaTw9" role="2VODD2">
+              <node concept="3clFbF" id="5K95X1yaTwa" role="3cqZAp">
+                <node concept="2OqwBi" id="5K95X1yaTwb" role="3clFbG">
+                  <node concept="2OqwBi" id="5K95X1yaTwc" role="2Oq$k0">
+                    <node concept="pncrf" id="5K95X1yaTwd" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="5K95X1yaTwe" role="2OqNvi">
                       <ref role="3TsBF5" to="lbo2:5yzfR7K0o7Y" resolve="cardinality" />
                     </node>
                   </node>
-                  <node concept="17RvpY" id="5yzfR7K0xit" role="2OqNvi" />
+                  <node concept="17RvpY" id="5K95X1yaTwf" role="2OqNvi" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="VSNWy" id="5yzfR7K0xjb" role="3F10Kt">
-            <property role="1lJzqX" value="7" />
-          </node>
         </node>
       </node>
     </node>
-    <node concept="3EZMnI" id="5yzfR7K0xjR" role="6VMZX">
-      <node concept="2iRfu4" id="5yzfR7K0xjS" role="2iSdaV" />
-      <node concept="3F0ifn" id="5yzfR7K0xsl" role="3EZMnx">
-        <property role="3F0ifm" value="cardinality:" />
+    <node concept="3EZMnI" id="5K95X1y7jNd" role="6VMZX">
+      <node concept="3EZMnI" id="5K95X1y7k6C" role="3EZMnx">
+        <node concept="VPM3Z" id="5K95X1y7k6E" role="3F10Kt" />
+        <node concept="3F0ifn" id="5K95X1y7k6I" role="3EZMnx">
+          <property role="3F0ifm" value="name:" />
+        </node>
+        <node concept="3F0A7n" id="5K95X1y7k6N" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="2iRfu4" id="5K95X1y7k6H" role="2iSdaV" />
       </node>
-      <node concept="3F0A7n" id="5yzfR7K0xsu" role="3EZMnx">
-        <ref role="1NtTu8" to="lbo2:5yzfR7K0o7Y" resolve="cardinality" />
+      <node concept="2iRkQZ" id="5K95X1y7jNe" role="2iSdaV" />
+      <node concept="3EZMnI" id="5yzfR7K0xjR" role="3EZMnx">
+        <node concept="2iRfu4" id="5yzfR7K0xjS" role="2iSdaV" />
+        <node concept="3F0ifn" id="5yzfR7K0xsl" role="3EZMnx">
+          <property role="3F0ifm" value="cardinality:" />
+        </node>
+        <node concept="3F0A7n" id="5yzfR7K0xsu" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="lbo2:5yzfR7K0o7Y" resolve="cardinality" />
+        </node>
       </node>
     </node>
   </node>
@@ -879,7 +897,7 @@
             <node concept="3clFbF" id="5yzfR7K1fvy" role="3cqZAp">
               <node concept="37vLTI" id="5yzfR7K1gIg" role="3clFbG">
                 <node concept="3cmrfG" id="5yzfR7K1h5t" role="37vLTx">
-                  <property role="3cmrfH" value="30" />
+                  <property role="3cmrfH" value="35" />
                 </node>
                 <node concept="37vLTw" id="5yzfR7K1gDB" role="37vLTJ">
                   <ref role="3cqZAo" node="7TjUbLQaj_d" resolve="DIAMOND_SIZE" />
