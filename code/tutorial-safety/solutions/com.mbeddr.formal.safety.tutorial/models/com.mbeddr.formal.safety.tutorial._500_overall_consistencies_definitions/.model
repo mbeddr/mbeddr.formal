@@ -2,7 +2,6 @@
 <model ref="r:78f85251-6057-4f15-9f39-88a715fb8497(_010_features._500_overall_consistencies_definitions)" content="header">
   <persistence version="9" />
   <languages>
-    <use id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic" version="1" />
     <devkit ref="ce47f8ae-2ba9-435c-99ef-44dc38731951(org.mpsqa.lint.devkit)" />
   </languages>
   <imports>
