@@ -11,6 +11,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -143,7 +144,7 @@
     <property role="EcuMT" value="4586453272395245967" />
     <property role="TrG5h" value="ScalarNode" />
     <property role="3GE5qa" value="yaml_level" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4uGZ3dxnn3e" resolve="Node" />
     <node concept="PrWs8" id="3YAmJe02YAg" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
     </node>
@@ -152,7 +153,7 @@
     <property role="EcuMT" value="4586453272395245969" />
     <property role="3GE5qa" value="yaml_level" />
     <property role="TrG5h" value="MappingNode" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4uGZ3dxnn3e" resolve="Node" />
     <node concept="PrWs8" id="3YAmJe02YAi" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
     </node>
@@ -161,7 +162,7 @@
     <property role="EcuMT" value="4586453272395245971" />
     <property role="3GE5qa" value="yaml_level" />
     <property role="TrG5h" value="SequenceNode" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4uGZ3dxnn3e" resolve="Node" />
     <node concept="PrWs8" id="3YAmJe02YAk" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
     </node>
@@ -170,7 +171,7 @@
     <property role="EcuMT" value="4586453272396561802" />
     <property role="3GE5qa" value="yaml_level" />
     <property role="TrG5h" value="NodeTuple" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="4uGZ3dxnn3e" resolve="Node" />
     <node concept="PrWs8" id="3YAmJe07ZQb" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBX" resolve="IYamlHierarchicalToken" />
     </node>
@@ -239,6 +240,36 @@
   <node concept="PlHQZ" id="5jnWVpEAvcn">
     <property role="EcuMT" value="6113622983976809239" />
     <property role="TrG5h" value="IWhitespaceLike" />
+  </node>
+  <node concept="1TIwiD" id="4uGZ3dxnn3e">
+    <property role="EcuMT" value="5164780170294161614" />
+    <property role="3GE5qa" value="yaml_level" />
+    <property role="TrG5h" value="Node" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="4uGZ3dxo_Eb" role="PzmwI">
+      <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2NBvRaDpsjM">
+    <property role="EcuMT" value="3235694987734009074" />
+    <property role="3GE5qa" value="text_level" />
+    <property role="TrG5h" value="Dash" />
+    <property role="34LRSv" value="-" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2NBvRaDpsjN" role="PzmwI">
+      <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2NBvRaDsu7I">
+    <property role="EcuMT" value="3235694987734802926" />
+    <property role="3GE5qa" value="text_level" />
+    <property role="TrG5h" value="Pipe" />
+    <property role="34LRSv" value="|" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2NBvRaDsu7J" role="PzmwI">
+      <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
+    </node>
   </node>
 </model>
 
