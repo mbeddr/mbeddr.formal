@@ -317,8 +317,8 @@
         </node>
         <node concept="3cpWs6" id="2IHxh93jxEV" role="3cqZAp">
           <node concept="2YIFZM" id="2IHxh93jxEU" role="3cqZAk">
-            <ref role="1Pybhc" node="5jnWVpE$Jnv" resolve="AdlImporter" />
-            <ref role="37wK5l" node="2IHxh93jxEN" resolve="liftYamlFile2Adl" />
+            <ref role="1Pybhc" node="5jnWVpE$Jnv" resolve="DslImporter" />
+            <ref role="37wK5l" node="2IHxh93jxEN" resolve="liftYamlFile2Dsl" />
             <node concept="37vLTw" id="2IHxh93jxEQ" role="37wK5m">
               <ref role="3cqZAo" node="5jnWVpE$Jli" resolve="name" />
             </node>
@@ -433,17 +433,17 @@
                 <ref role="3cqZAo" node="2IHxh93jxEF" resolve="yamlFile" />
               </node>
               <node concept="3Tsc0h" id="2IHxh93jxEs" role="2OqNvi">
-                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
               </node>
             </node>
             <node concept="37vLTw" id="6e$tVQRZYuQ" role="37wK5m">
-              <ref role="3cqZAo" node="6e$tVQRZYuM" resolve="nodes" />
+              <ref role="3cqZAo" node="6e$tVQRZYuM" resolve="parents" />
             </node>
           </node>
         </node>
         <node concept="3clFbF" id="2IHxh93jxEv" role="3cqZAp">
           <node concept="37vLTw" id="2IHxh93jxEw" role="3clFbG">
-            <ref role="3cqZAo" node="2IHxh93jxEe" resolve="adlFile" />
+            <ref role="3cqZAo" node="2IHxh93jxEe" resolve="dslFile" />
           </node>
         </node>
       </node>
@@ -469,8 +469,8 @@
         </node>
         <node concept="3clFbF" id="4uGZ3dxtZQ6" role="3cqZAp">
           <node concept="2YIFZM" id="4uGZ3dxu1zP" role="3clFbG">
-            <ref role="37wK5l" node="4uGZ3dxtCfT" />
-            <ref role="1Pybhc" node="4uGZ3dxtCec" />
+            <ref role="37wK5l" node="4uGZ3dxtCfT" resolve="logTokens" />
+            <ref role="1Pybhc" node="4uGZ3dxtCec" resolve="DslImporterLoggingUtils" />
             <node concept="37vLTw" id="2NBvRaDuP13" role="37wK5m">
               <ref role="3cqZAo" node="6e$tVQRYNu0" resolve="parent" />
             </node>
@@ -524,7 +524,7 @@
                       <ref role="1M0zk5" node="4uGZ3dxjLIM" resolve="mapping" />
                     </node>
                     <node concept="3Tsc0h" id="4uGZ3dxjLHP" role="2OqNvi">
-                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="4uGZ3dxjLHQ" role="2LFqv$">
@@ -560,7 +560,7 @@
                               <ref role="1M0zk5" node="4uGZ3dxjLID" resolve="tuple" />
                             </node>
                             <node concept="3Tsc0h" id="4uGZ3dxo8DV" role="2OqNvi">
-                              <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                              <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                             </node>
                           </node>
                           <node concept="3clFbS" id="4uGZ3dxo1YT" role="2LFqv$">
@@ -608,7 +608,7 @@
                                             <ref role="3cqZAo" node="4uGZ3dxjLHV" resolve="sn" />
                                           </node>
                                           <node concept="3Tsc0h" id="4uGZ3dxjLIc" role="2OqNvi">
-                                            <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                                            <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                                           </node>
                                         </node>
                                         <node concept="1uHKPH" id="4uGZ3dxjLId" role="2OqNvi" />
@@ -654,7 +654,7 @@
                                         <ref role="3cqZAo" node="6e$tVQRYNu0" resolve="parent" />
                                       </node>
                                       <node concept="3Tsc0h" id="4uGZ3dxjLIy" role="2OqNvi">
-                                        <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                                        <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                                       </node>
                                     </node>
                                     <node concept="TSZUe" id="4uGZ3dxjLIz" role="2OqNvi">
@@ -674,7 +674,7 @@
                                           <ref role="1M0zk5" node="4uGZ3dxjLID" resolve="tuple" />
                                         </node>
                                         <node concept="3Tsc0h" id="7gE2YMAnRrt" role="2OqNvi">
-                                          <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                                          <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                                         </node>
                                       </node>
                                       <node concept="2WmjW8" id="7gE2YMAnRru" role="2OqNvi">
@@ -690,14 +690,14 @@
                                     <property role="TrG5h" value="semicolonIndex" />
                                     <node concept="10Oyi0" id="7gE2YMAnYfh" role="1tU5fm" />
                                     <node concept="2YIFZM" id="7gE2YMAoql9" role="33vP2m">
-                                      <ref role="37wK5l" node="7gE2YMAo6Pa" />
-                                      <ref role="1Pybhc" node="7gE2YMAo6NB" />
+                                      <ref role="37wK5l" node="7gE2YMAo6Pa" resolve="semicolonIndex" />
+                                      <ref role="1Pybhc" node="7gE2YMAo6NB" resolve="DslImporterUtils" />
                                       <node concept="2OqwBi" id="7gE2YMAot_9" role="37wK5m">
                                         <node concept="Jnkvi" id="7gE2YMAor$f" role="2Oq$k0">
                                           <ref role="1M0zk5" node="4uGZ3dxjLID" resolve="tuple" />
                                         </node>
                                         <node concept="3Tsc0h" id="7gE2YMAov9i" role="2OqNvi">
-                                          <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                                          <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                                         </node>
                                       </node>
                                       <node concept="37vLTw" id="7gE2YMAoypU" role="37wK5m">
@@ -730,7 +730,7 @@
                                           <ref role="1M0zk5" node="4uGZ3dxjLID" resolve="tuple" />
                                         </node>
                                         <node concept="3Tsc0h" id="4uGZ3dxk1IP" role="2OqNvi">
-                                          <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                                          <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                                         </node>
                                       </node>
                                       <node concept="1eb2uI" id="4uGZ3dxk6TT" role="2OqNvi">
@@ -775,7 +775,7 @@
                             <ref role="3cqZAo" node="6e$tVQRYNu0" resolve="parent" />
                           </node>
                           <node concept="3Tsc0h" id="4uGZ3dxpcHB" role="2OqNvi">
-                            <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                            <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                           </node>
                         </node>
                         <node concept="TSZUe" id="4uGZ3dxpksg" role="2OqNvi">
@@ -819,11 +819,11 @@
                         <ref role="1M0zk5" node="2NBvRaDqZ3p" resolve="sequence" />
                       </node>
                       <node concept="3Tsc0h" id="2NBvRaDriMN" role="2OqNvi">
-                        <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                        <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="2NBvRaDrH4z" role="37wK5m">
-                      <ref role="3cqZAo" node="5jnWVpE_H_O" resolve="parent" />
+                      <ref role="3cqZAo" node="5jnWVpE_H_O" resolve="parents" />
                     </node>
                   </node>
                 </node>
@@ -856,7 +856,7 @@
                       <ref role="1M0zk5" node="7gE2YMA$_sD" resolve="scalar" />
                     </node>
                     <node concept="3Tsc0h" id="49jqi8rQMIM" role="2OqNvi">
-                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="49jqi8rQAkA" role="2LFqv$">
@@ -873,7 +873,7 @@
                               <ref role="ehGHo" to="3kjf:49jqi8s8r1R" resolve="IDslYamlToken" />
                             </node>
                             <node concept="1rXfSq" id="7gE2YMA$_rG" role="33vP2m">
-                              <ref role="37wK5l" node="7gE2YMAq9uk" resolve="createNextHierarchicalToken" />
+                              <ref role="37wK5l" node="7gE2YMAq9uk" resolve="createNextToken" />
                               <node concept="37vLTw" id="7gE2YMA$_rH" role="37wK5m">
                                 <ref role="3cqZAo" node="49jqi8sjpMc" resolve="cfg" />
                               </node>
@@ -898,7 +898,7 @@
                                 <ref role="3cqZAo" node="6e$tVQRYNu0" resolve="parent" />
                               </node>
                               <node concept="3Tsc0h" id="7gE2YMA$_rQ" role="2OqNvi">
-                                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                               </node>
                             </node>
                             <node concept="TSZUe" id="7gE2YMA$_rR" role="2OqNvi">
@@ -923,7 +923,7 @@
                             <ref role="3cqZAo" node="6e$tVQRYNu0" resolve="parent" />
                           </node>
                           <node concept="3Tsc0h" id="49jqi8rRQsQ" role="2OqNvi">
-                            <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                            <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                           </node>
                         </node>
                         <node concept="TSZUe" id="49jqi8rS0K9" role="2OqNvi">
@@ -957,7 +957,7 @@
                     <ref role="3cqZAo" node="6e$tVQRYNu0" resolve="parent" />
                   </node>
                   <node concept="3Tsc0h" id="4uGZ3dxkkV3" role="2OqNvi">
-                    <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                    <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="4uGZ3dxkrgG" role="2OqNvi">

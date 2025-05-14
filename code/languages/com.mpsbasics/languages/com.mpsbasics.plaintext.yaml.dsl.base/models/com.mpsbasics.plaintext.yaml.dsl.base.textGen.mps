@@ -264,7 +264,7 @@
                     <node concept="117lpO" id="6e$tVQS1ZQA" role="1m5AlR" />
                   </node>
                   <node concept="3Tsc0h" id="6e$tVQS1ZQB" role="2OqNvi">
-                    <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                    <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                   </node>
                 </node>
               </node>
