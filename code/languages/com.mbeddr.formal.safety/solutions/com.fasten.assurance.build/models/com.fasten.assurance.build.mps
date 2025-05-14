@@ -3131,6 +3131,71 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtD" id="5C1tqSGWeiw" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mpsbasics.plaintext.yaml.dsl.base" />
+        <property role="3LESm3" value="91ea57f8-7d6f-44b2-9328-d39a2e01a88b" />
+        <node concept="398BVA" id="5C1tqSGWew_" role="3LF7KH">
+          <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+          <node concept="2Ry0Ak" id="5C1tqSGWeIE" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="5C1tqSGWfoK" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mpsbasics.plaintext.yaml.dsl.base" />
+              <node concept="2Ry0Ak" id="5C1tqSGWfOP" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mpsbasics.plaintext.yaml.dsl.base.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5C1tqSGWgiJ" role="3bR37C">
+          <node concept="3bR9La" id="5C1tqSGWgiK" role="1SiIV1">
+            <ref role="3bR37D" node="4m8f5php_QJ" resolve="com.mpsbasics.plaintext.yaml" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="5C1tqSGWgiW" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="5C1tqSGWgiX" role="1HemKq">
+            <node concept="398BVA" id="5C1tqSGWgiL" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="5C1tqSGWgiM" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="5C1tqSGWgiN" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.plaintext.yaml.dsl.base" />
+                  <node concept="2Ry0Ak" id="5C1tqSGWgiO" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5C1tqSGWgiY" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5C1tqSGWgiZ" role="3bR37C">
+          <node concept="1Busua" id="5C1tqSGWgj0" role="1SiIV1">
+            <ref role="1Busuk" node="4m8f5php_QJ" resolve="com.mpsbasics.plaintext.yaml" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="5C1tqSGWgGk" role="3bR31x">
+          <node concept="3LXTmp" id="5C1tqSGWgGl" role="3rtmxm">
+            <node concept="398BVA" id="5C1tqSGWgGm" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="5C1tqSGWgGn" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="5C1tqSGWgGo" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.plaintext.yaml.dsl.base" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="5C1tqSGWgGq" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="2MrvZqtGQDM" role="3989C9">
       <property role="TrG5h" value="com.mpsbasics.testutils" />
