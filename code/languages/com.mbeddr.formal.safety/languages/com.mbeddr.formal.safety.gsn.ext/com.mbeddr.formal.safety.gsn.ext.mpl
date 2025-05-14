@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language namespace="com.mbeddr.formal.safety.gsn.ext" uuid="6464626a-ab04-4051-908e-5e8dc75acd78" languageVersion="4" moduleVersion="2">
+<language namespace="com.mbeddr.formal.safety.gsn.ext" uuid="6464626a-ab04-4051-908e-5e8dc75acd78" languageVersion="5" moduleVersion="2">
   <models>
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />

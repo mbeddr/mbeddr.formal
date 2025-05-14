@@ -35,6 +35,13 @@
         <property id="1225118929411" name="build" index="YLPcu" />
         <property id="1225118933224" name="comment" index="YLQ7P" />
       </concept>
+      <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
+        <reference id="6054523464627965081" name="concept" index="trN6q" />
+      </concept>
+      <concept id="2992811758677295509" name="jetbrains.mps.lang.structure.structure.AttributeInfo" flags="ng" index="M6xJ_">
+        <property id="7588428831955550663" name="role" index="Hh88m" />
+        <child id="7588428831947959310" name="attributed" index="EQaZv" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -153,6 +160,8 @@
     <property role="EcuMT" value="2392944874759792240" />
     <property role="TrG5h" value="SupportedByConnectionPattern" />
     <property role="3GE5qa" value="patterns" />
+    <property role="34LRSv" value="supported-by" />
+    <property role="R4oN_" value="supported-by connection in pattern" />
     <ref role="1TJDcQ" to="py52:2ccN23odQ9b" resolve="SupportedByConnection" />
     <node concept="PrWs8" id="24PsEXFaEm5" role="PzmwI">
       <ref role="PrY4T" node="24PsEXFaEm2" resolve="IGsnConnectionPattern" />
@@ -177,12 +186,18 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="explanation" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+      <node concept="asaX9" id="5K95X1y12dH" role="lGtFl">
+        <property role="YLQ7P" value="explanation is migrated to GsnPatternConnectionExplanation" />
+        <property role="YLPcu" value="2025.05.06" />
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="35$gPpxbZQ_">
     <property role="EcuMT" value="3559043643806317989" />
     <property role="3GE5qa" value="patterns" />
     <property role="TrG5h" value="InContextOfConnectionPattern" />
+    <property role="34LRSv" value="in-contextOf" />
+    <property role="R4oN_" value="in-contextOf connection in patterns" />
     <ref role="1TJDcQ" to="py52:3GRi4m$sIaU" resolve="InContextOfConnection" />
     <node concept="PrWs8" id="35$gPpxbZQA" role="PzmwI">
       <ref role="PrY4T" node="24PsEXFaEm2" resolve="IGsnConnectionPattern" />
@@ -439,6 +454,23 @@
     <node concept="asaX9" id="6FJpOMAQ8Ws" role="lGtFl">
       <property role="YLQ7P" value="The concept was moved to language &quot;com.mpsbasics.words.generic&quot;" />
       <property role="YLPcu" value="2025.02.01" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="18O4bIocyw2">
+    <property role="EcuMT" value="1311691789370009602" />
+    <property role="TrG5h" value="GsnPaternConnectionExplanation" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="18O4bIocyw3" role="lGtFl">
+      <property role="Hh88m" value="explanation" />
+      <node concept="trNpa" id="18O4bIohEGT" role="EQaZv">
+        <ref role="trN6q" to="py52:2ccN23odOxd" resolve="GoalStructureConnectionBase" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="18O4bIod0Kt" role="1TKVEi">
+      <property role="IQ2ns" value="1311691789370133533" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="explanation" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
   </node>
 </model>
