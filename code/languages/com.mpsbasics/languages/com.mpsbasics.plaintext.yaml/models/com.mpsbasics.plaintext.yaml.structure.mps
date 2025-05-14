@@ -246,7 +246,7 @@
     <property role="3GE5qa" value="yaml_level" />
     <property role="TrG5h" value="Node" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4uGZ3dxo_Eb" role="PzmwI">
       <ref role="PrY4T" node="21lHZzX1IBT" resolve="IYamlToken" />
     </node>

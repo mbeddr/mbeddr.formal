@@ -105,7 +105,7 @@
         <node concept="3clFbF" id="7VD92VLsVnW" role="3cqZAp">
           <node concept="2YIFZM" id="7VD92VLsVrd" role="3clFbG">
             <ref role="37wK5l" to="fdr5:7VD92VLsoP2" resolve="loadAndLift" />
-            <ref role="1Pybhc" to="fdr5:7VD92VLsl7x" resolve="LoadAndLiftFacade" />
+            <ref role="1Pybhc" to="fdr5:7VD92VLsl7x" resolve="YamlLoadAndLiftFacade" />
             <node concept="2Sf5sV" id="7VD92VLsVu7" role="37wK5m" />
             <node concept="2OqwBi" id="7VD92VLsVxe" role="37wK5m">
               <node concept="1XNTG" id="7VD92VLsVxf" role="2Oq$k0" />

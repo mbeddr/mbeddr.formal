@@ -345,7 +345,7 @@
                 <ref role="3cqZAo" node="3YAmJdZnJso" resolve="file" />
               </node>
               <node concept="3xONca" id="7gE2YMAn4Xe" role="37wK5m">
-                <ref role="3xOPvv" node="5AI9Uvu2$wA" resolve="_020_raw_text_loader_comments" />
+                <ref role="3xOPvv" node="5AI9Uvu2$wA" resolve="_020_raw_text_loader_comments_1" />
               </node>
             </node>
           </node>
@@ -356,7 +356,7 @@
             <ref role="1PxDUh" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
           </node>
           <node concept="37vLTw" id="7gE2YMAn52Y" role="3tpDZA">
-            <ref role="3cqZAo" node="7gE2YMAn4Xb" resolve="compareYamlFiles" />
+            <ref role="3cqZAo" node="7gE2YMAn4Xb" resolve="res" />
           </node>
         </node>
       </node>
@@ -1710,7 +1710,7 @@
                 <ref role="3cqZAo" node="2NBvRaDsC9$" resolve="file" />
               </node>
               <node concept="3xONca" id="2NBvRaDsCac" role="37wK5m">
-                <ref role="3xOPvv" node="2NBvRaDsCbF" resolve="_020_raw_text_loader_comments_1" />
+                <ref role="3xOPvv" node="2NBvRaDsCbF" resolve="_030_simple_pipe" />
               </node>
             </node>
           </node>

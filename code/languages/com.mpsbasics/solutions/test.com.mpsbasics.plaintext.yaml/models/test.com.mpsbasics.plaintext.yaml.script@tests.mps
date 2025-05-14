@@ -169,7 +169,7 @@
           <node concept="2OqwBi" id="3aacpE5sLRp" role="3clFbG">
             <node concept="2OqwBi" id="3aacpE5sJ$C" role="2Oq$k0">
               <node concept="37vLTw" id="3aacpE5sJpv" role="2Oq$k0">
-                <ref role="3cqZAo" node="VNqGeRKblR" resolve="target" />
+                <ref role="3cqZAo" node="VNqGeRKblR" resolve="liftedFile" />
               </node>
               <node concept="3Tsc0h" id="3aacpE5sJWR" role="2OqNvi">
                 <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
@@ -182,7 +182,7 @@
           <node concept="2OqwBi" id="2NBvRaDsXiN" role="3clFbG">
             <node concept="2OqwBi" id="2NBvRaDsXiO" role="2Oq$k0">
               <node concept="37vLTw" id="2NBvRaDsXiP" role="2Oq$k0">
-                <ref role="3cqZAo" node="2NBvRaDsW_f" resolve="rawLifted" />
+                <ref role="3cqZAo" node="2NBvRaDsW_f" resolve="rawFile" />
               </node>
               <node concept="3Tsc0h" id="2NBvRaDsXiQ" role="2OqNvi">
                 <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
@@ -274,7 +274,7 @@
             <ref role="37wK5l" to="fdr5:21lHZzX6vfi" resolve="populateFile" />
             <ref role="1Pybhc" to="fdr5:21lHZzX6dpI" resolve="RawTextLoader" />
             <node concept="37vLTw" id="5jnWVpE$VQq" role="37wK5m">
-              <ref role="3cqZAo" node="2NBvRaDsW_f" resolve="rawLifted" />
+              <ref role="3cqZAo" node="2NBvRaDsW_f" resolve="rawFile" />
             </node>
             <node concept="37vLTw" id="5jnWVpE$VQA" role="37wK5m">
               <ref role="3cqZAo" node="7gE2YMAmYSL" resolve="text" />
@@ -312,7 +312,7 @@
           <node concept="2OqwBi" id="3yl_UmFRcKt" role="3clFbG">
             <node concept="2OqwBi" id="3yl_UmFR8dm" role="2Oq$k0">
               <node concept="37vLTw" id="3yl_UmFR80F" role="2Oq$k0">
-                <ref role="3cqZAo" node="VNqGeRKblR" resolve="target" />
+                <ref role="3cqZAo" node="VNqGeRKblR" resolve="liftedFile" />
               </node>
               <node concept="3Tsc0h" id="3yl_UmFRaQb" role="2OqNvi">
                 <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
@@ -325,7 +325,7 @@
           <node concept="2OqwBi" id="VNqGeRKvc9" role="3clFbG">
             <node concept="2OqwBi" id="VNqGeRKs9F" role="2Oq$k0">
               <node concept="37vLTw" id="VNqGeRKpv5" role="2Oq$k0">
-                <ref role="3cqZAo" node="VNqGeRKblR" resolve="target" />
+                <ref role="3cqZAo" node="VNqGeRKblR" resolve="liftedFile" />
               </node>
               <node concept="3Tsc0h" id="VNqGeRKthG" role="2OqNvi">
                 <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
