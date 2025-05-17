@@ -56,6 +56,7 @@
     <import index="zce0" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.smodel.action(MPS.Editor/)" />
     <import index="8tyk" ref="r:eb0002ce-67d6-41e9-b36c-361c22b4de97(com.mbeddr.mpsutil.smodule.runtime.lib)" />
     <import index="jkm4" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.ui(MPS.IDEA/)" />
+    <import index="v23q" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi(MPS.IDEA/)" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="w873" ref="r:0de03bcd-6ad8-423c-b85e-ae3dd18ed2b3(com.mbeddr.formal.base.behavior)" implicit="true" />
   </imports>
@@ -216,6 +217,9 @@
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -2439,11 +2443,26 @@
               </node>
             </node>
             <node concept="liA8E" id="2DKZaNkd4fV" role="2OqNvi">
-              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object)" resolve="registerExtension" />
+              <ref role="37wK5l" to="9ti4:~ExtensionPoint.registerExtension(java.lang.Object,com.intellij.openapi.extensions.LoadingOrder,com.intellij.openapi.Disposable)" resolve="registerExtension" />
               <node concept="2OqwBi" id="2DKZaNkd4sD" role="37wK5m">
                 <node concept="2WthIp" id="2DKZaNkd4sG" role="2Oq$k0" />
                 <node concept="2BZ7hE" id="2DKZaNkd4sI" role="2OqNvi">
                   <ref role="2WH_rO" node="2DKZaNkcPrF" resolve="provider" />
+                </node>
+              </node>
+              <node concept="10M0yZ" id="3_MTCMSb9Vu" role="37wK5m">
+                <ref role="3cqZAo" to="9ti4:~LoadingOrder.FIRST" resolve="FIRST" />
+                <ref role="1PxDUh" to="9ti4:~LoadingOrder" resolve="LoadingOrder" />
+              </node>
+              <node concept="2ShNRf" id="3_MTCMSbati" role="37wK5m">
+                <node concept="YeOm9" id="3_MTCMSbSSN" role="2ShVmc">
+                  <node concept="1Y3b0j" id="3_MTCMSbSSQ" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <property role="373rjd" value="true" />
+                    <ref role="1Y3XeK" to="v23q:~Disposable$Default" resolve="Disposable.Default" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                    <node concept="3Tm1VV" id="3_MTCMSbSSR" role="1B3o_S" />
+                  </node>
                 </node>
               </node>
             </node>
