@@ -17788,146 +17788,11 @@
         <node concept="3ygNvl" id="6odNb$ogKaD" role="39821P">
           <ref role="3ygNvj" to="2tou:7C9PHv6FBIN" />
         </node>
-        <node concept="3_I8Xc" id="5cnt3YQuwM1" role="39821P">
-          <ref role="3_I8Xa" to="al5i:48qh2gYgI9M" resolve="codereview" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuwTZ" role="39821P">
-          <ref role="3_I8Xa" to="al5i:5fGcQI94qmQ" resolve="com.mbeddr.mpsutil.common" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuwY1" role="39821P">
-          <ref role="3_I8Xa" to="90a9:77YfcvONpu4" resolve="de.itemis.mps.compare" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQux25" role="39821P">
-          <ref role="3_I8Xa" to="al5i:Vtr7jyBi$h" resolve="com.mbeddr.mpsutil.filepicker" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQux6b" role="39821P">
-          <ref role="3_I8Xa" to="al5i:7yAshxDt_ZK" resolve="com.mbeddr.mpsutil.genreview" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuxaj" role="39821P">
-          <ref role="3_I8Xa" to="al5i:6rBfBe1XsD$" resolve="com.mbeddr.mpsutil.interpreter" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuxet" role="39821P">
-          <ref role="3_I8Xa" to="al5i:NlXl$er7Ti" resolve="com.mbeddr.mpsutil.margincell_review" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuxiD" role="39821P">
-          <ref role="3_I8Xa" to="90a9:64SK4bcOKUz" resolve="com.mbeddr.mpsutil.projectview" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuxmR" role="39821P">
-          <ref role="3_I8Xa" to="al5i:5fGcQI90j6p" resolve="com.mbeddr.mpsutil.smodule" />
-        </node>
-        <node concept="3_I8Xc" id="1YOcjwdCr4K" role="39821P">
-          <ref role="3_I8Xa" to="al5i:59sJF$9uCpn" resolve="com.mbeddr.mpsutil.spreferences" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuxr7" role="39821P">
-          <ref role="3_I8Xa" to="90a9:1Rj3F4357qn" resolve="com.mbeddr.mpsutil.treenotations" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuxvp" role="39821P">
-          <ref role="3_I8Xa" to="90a9:2NyZxKpV2Ss" resolve="de.itemis.mps.blutil" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuxzH" role="39821P">
-          <ref role="3_I8Xa" to="90a9:5QhEsDNBgC7" resolve="de.itemis.mps.celllayout" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuxC3" role="39821P">
-          <ref role="3_I8Xa" to="90a9:F1NWDqrBeT" resolve="de.itemis.mps.grammarcells" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuxM0" role="39821P">
-          <ref role="3_I8Xa" to="90a9:4be$WTb1O3_" resolve="de.itemis.mps.editor.diagram" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQx$NR" role="39821P">
-          <ref role="3_I8Xa" to="90a9:6Y0V2RJk5G9" resolve="de-itemis-mps-selection" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQx$S_" role="39821P">
-          <ref role="3_I8Xa" to="90a9:29so9Vb$6Tw" resolve="mps-tables" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQx_27" role="39821P">
-          <ref role="3_I8Xa" to="90a9:7klUZA6XM65" resolve="de.slisson.mps.conditionalEditor" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQx_6V" role="39821P">
-          <ref role="3_I8Xa" to="90a9:31bAEZ0ssNL" resolve="mps-apache-commons" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuxZk" role="39821P">
-          <ref role="3_I8Xa" to="90a9:7szUFELHiFQ" resolve="de.itemis.mps.editor.widgets" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuy3O" role="39821P">
-          <ref role="3_I8Xa" to="90a9:2Xjt3l57guk" resolve="de.slisson.mps.hacks" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQ$BxO" role="39821P">
-          <ref role="3_I8Xa" to="90a9:1sO539bGQvs" resolve="mps-richtext" />
-        </node>
-        <node concept="3_I8Xc" id="3SfdbygKk42" role="39821P">
-          <ref role="3_I8Xa" to="90a9:4p3FRivDLPx" resolve="mps-multiline" />
-        </node>
-        <node concept="3_I8Xc" id="3SfdbygKk6K" role="39821P">
-          <ref role="3_I8Xa" to="90a9:5QhEsDNBgC7" resolve="de.itemis.mps.celllayout" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQ$BAI" role="39821P">
-          <ref role="3_I8Xa" to="al5i:64SK4bcOF5o" resolve="com.mbeddr.mpsutil.suppresswarning" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQ$C4w" role="39821P">
-          <ref role="3_I8Xa" to="90a9:2OJNL7Em24Q" resolve="de.q60.mps.collections.libs" />
-        </node>
-        <node concept="3_I8Xc" id="1uZbIJyDDrK" role="39821P">
-          <ref role="3_I8Xa" to="90a9:2NTGYE$JTHj" resolve="com.dslfoundry.plaintextgen" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQBEA9" role="39821P">
-          <ref role="3_I8Xa" to="90a9:4p3FRivDLPx" resolve="mps-multiline" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQBEKf" role="39821P">
-          <ref role="3_I8Xa" to="90a9:6hpTCZQe4Ro" resolve="com.mbeddr.mpsutil.editor.querylist" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQEHdp" role="39821P">
-          <ref role="3_I8Xa" to="al5i:64SK4bcOniE" resolve="com.mbeddr.mpsutil.editorsupport" />
-        </node>
-        <node concept="3_I8Xc" id="1tmvefXmPpO" role="39821P">
-          <ref role="3_I8Xa" to="al5i:NMVW79yxti" resolve="com.mbeddr.mpsutil.userstyles" />
-        </node>
-        <node concept="3_I8Xc" id="6_254Rln4fj" role="39821P">
-          <ref role="3_I8Xa" to="al5i:3lZeU8ehKmj" resolve="com.mbeddr.mpsutil.httpsupport" />
+        <node concept="3ygNvl" id="5qXR41W9bR5" role="39821P">
+          <ref role="3ygNvj" to="al5i:3AVJcIMlF9x" />
         </node>
         <node concept="3_I8Xc" id="3SfdbygKjSB" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1jjxZP6JHO_" resolve="mps-console" />
-        </node>
-        <node concept="28u9K_" id="5cnt3YQNQ$1" role="39821P">
-          <property role="28hIV_" value="editor hints changing requires refactoring which in turn requires contextactions" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQKNXc" role="39821P">
-          <ref role="3_I8Xa" to="al5i:2DUWZ4YFgC6" resolve="mpsutil.refactoring" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQNQAI" role="39821P">
-          <ref role="3_I8Xa" to="al5i:6rBfBe1XyuT" resolve="com.mbeddr.mpsutil.contextactions" />
-        </node>
-        <node concept="3_I8Xc" id="4puY9YZhjCM" role="39821P">
-          <ref role="3_I8Xa" to="al5i:TGQG6kig7O" resolve="com.mbeddr.mpsutil.uisupport" />
-        </node>
-        <node concept="3_I8Xc" id="7khq58xlv14" role="39821P">
-          <ref role="3_I8Xa" to="al5i:4SMNYR2Zl4L" resolve="com.mbeddr.mpsutil.actionsfilter" />
-        </node>
-        <node concept="28u9K_" id="5cnt3YQEHvb" role="39821P">
-          <property role="28hIV_" value="doc requires platform, plarform requires jung, plantuml" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQuy8m" role="39821P">
-          <ref role="3_I8Xa" to="al5i:6ucYLjol8_u" resolve="mbeddr.doc" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQx$Xl" role="39821P">
-          <ref role="3_I8Xa" to="al5i:6ucYLjolhRD" resolve="mbeddr.platform" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YR2S7G" role="39821P">
-          <ref role="3_I8Xa" to="al5i:64SK4bcO$6K" resolve="com.mbeddr.mpsutil.plantuml" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQEIIu" role="39821P">
-          <ref role="3_I8Xa" to="al5i:64SK4bcOqRB" resolve="com.mbeddr.mpsutil.jung" />
-        </node>
-        <node concept="3_I8Xc" id="2RWExvyUhpL" role="39821P">
-          <ref role="3_I8Xa" to="90a9:TAJODzV169" resolve="com.mbeddr.mpsutil.intentions" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQEING" role="39821P">
-          <ref role="3_I8Xa" to="al5i:2wdbvPWEvVz" resolve="com.mbeddr.mpsutil.infrastructure.misc" />
-        </node>
-        <node concept="3_I8Xc" id="5cnt3YQHLkM" role="39821P">
-          <ref role="3_I8Xa" to="90a9:6860Y5A0_cI" resolve="de.itemis.mps.utils" />
-        </node>
-        <node concept="3_I8Xc" id="3SfdbygGMSx" role="39821P">
-          <ref role="3_I8Xa" to="90a9:2Y$Ewq9ERUo" resolve="MPS.ThirdParty" />
         </node>
         <node concept="3_I8Xc" id="4aeOpjlAaq3" role="39821P">
           <ref role="3_I8Xa" to="ffeo:2d0qgmCdg0g" resolve="make" />
@@ -17973,18 +17838,6 @@
         </node>
         <node concept="3_I8Xc" id="2RWExvyUhpI" role="39821P">
           <ref role="3_I8Xa" to="ffeo:3vXGXT89g4o" resolve="mps-trove" />
-        </node>
-        <node concept="3_I8Xc" id="dCXfrcV27H" role="39821P">
-          <ref role="3_I8Xa" to="90a9:2sSK94l$G4K" resolve="de.itemis.stubs.xml" />
-        </node>
-        <node concept="3_I8Xc" id="2FavYGw3mev" role="39821P">
-          <ref role="3_I8Xa" to="90a9:6Fx0OSkEtpQ" resolve="de.itemis.mps.linenumbers" />
-        </node>
-        <node concept="3_I8Xc" id="7khq58xcrlD" role="39821P">
-          <ref role="3_I8Xa" to="90a9:2IcGFIaJVAA" resolve="MPS.Kotlin" />
-        </node>
-        <node concept="3_I8Xc" id="7khq58xgP5p" role="39821P">
-          <ref role="3_I8Xa" to="90a9:6bkzxtWPMLl" resolve="de.itemis.stubs.batik" />
         </node>
         <node concept="3_I8Xc" id="5ehf6dVy_Rd" role="39821P">
           <ref role="3_I8Xa" to="ffeo:4wxeloVufXE" resolve="mps-git4idea" />
