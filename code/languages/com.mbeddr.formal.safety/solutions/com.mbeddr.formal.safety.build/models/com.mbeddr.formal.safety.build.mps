@@ -17854,6 +17854,9 @@
         <node concept="3_I8Xc" id="4aeOpjl$fXD" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5CFKsRWS5pU" resolve="mps-debugger-api" />
         </node>
+        <node concept="3_I8Xc" id="1kq0H7MqD1b" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:3SKb_4JujwY" resolve="mps-spellcheck" />
+        </node>
         <node concept="3_I8Xc" id="7he_lUutsoc" role="39821P">
           <ref role="3_I8Xa" node="7he_lUumPyH" resolve="com.mpsbasics" />
         </node>
