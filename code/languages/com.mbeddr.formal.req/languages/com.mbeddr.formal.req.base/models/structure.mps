@@ -100,6 +100,9 @@
     <node concept="PrWs8" id="6FJpOMB3Y2O" role="PzmwI">
       <ref role="PrY4T" to="iy8y:6xXHcqxdSHU" resolve="IAllowGenericWords" />
     </node>
+    <node concept="PrWs8" id="5qXR41W7vCR" role="PzmwI">
+      <ref role="PrY4T" to="b19z:60zS9AZgHTg" resolve="IFASTENStructureViewRoot" />
+    </node>
     <node concept="1irR5M" id="4qtpAOhXv5S" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irR9n" id="4qtpAOhXv5W" role="1irR9h">
@@ -162,6 +165,9 @@
     </node>
     <node concept="PrWs8" id="2N7iSwGAmuf" role="PzmwI">
       <ref role="PrY4T" node="2N7iSwGAmue" resolve="IRequirementLike" />
+    </node>
+    <node concept="PrWs8" id="5qXR41W7D2e" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
   <node concept="PlHQZ" id="4gtLUSMLiPR">
@@ -226,6 +232,9 @@
     <ref role="1TJDcQ" node="4gtLUSMLiMA" resolve="AbstractRequirement" />
     <node concept="PrWs8" id="2fmnPVfexQa" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
+    <node concept="PrWs8" id="5qXR41W7KR7" role="PzmwI">
+      <ref role="PrY4T" to="b19z:5mW_a0OEuea" resolve="IFASTENHierarchicalStructure" />
     </node>
     <node concept="1TJgyj" id="6bDIMKp8BfP" role="1TKVEi">
       <property role="IQ2ns" value="7127433683365164021" />
