@@ -90,9 +90,16 @@
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
+      <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
+        <reference id="1147467295099" name="applicableProperty" index="EomxK" />
+        <child id="1147468630220" name="propertyGetter" index="EtsB7" />
+      </concept>
+      <concept id="1147467790433" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyGetter" flags="in" index="Eqf_E" />
+      <concept id="1147468365020" name="jetbrains.mps.lang.constraints.structure.ConstraintsFunctionParameter_node" flags="nn" index="EsrRn" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
       </concept>
       <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
@@ -322,6 +329,24 @@
             </node>
           </node>
           <node concept="3clFbH" id="34jvijxywYO" role="3cqZAp" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5qXR41W7D2f">
+    <ref role="1M2myG" to="z27p:4gtLUSMLiMA" resolve="AbstractRequirement" />
+    <node concept="EnEH3" id="5qXR41W7D2g" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="5qXR41W7D4Z" role="EtsB7">
+        <node concept="3clFbS" id="5qXR41W7D50" role="2VODD2">
+          <node concept="3clFbF" id="5qXR41W7Ezs" role="3cqZAp">
+            <node concept="2OqwBi" id="5qXR41W7F1A" role="3clFbG">
+              <node concept="EsrRn" id="5qXR41W7Ezr" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5qXR41W7FyN" role="2OqNvi">
+                <ref role="3TsBF5" to="z27p:2N7iSwG$CrI" resolve="id" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>

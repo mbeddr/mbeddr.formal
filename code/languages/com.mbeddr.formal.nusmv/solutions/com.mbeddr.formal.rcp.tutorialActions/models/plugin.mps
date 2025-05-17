@@ -288,24 +288,80 @@
               <node concept="2pNUuL" id="7Y21hZBa7$A" role="2pNNFR">
                 <property role="2pNUuO" value="id" />
                 <node concept="2pMdtt" id="7Y21hZBa7$B" role="2pMdts">
-                  <property role="2pMdty" value="OpenFastenSafetyTutorialProject" />
+                  <property role="2pMdty" value="NewMPSProjectAction" />
                 </node>
               </node>
               <node concept="2pNUuL" id="7Y21hZBa7$C" role="2pNNFR">
                 <property role="2pNUuO" value="class" />
                 <node concept="2pMdtt" id="7Y21hZBa7$D" role="2pMdts">
-                  <property role="2pMdty" value="com.mbeddr.formal.rcp.tutorialActions.plugin.OpenFastenSafetyTutorialProjectAction" />
+                  <property role="2pMdty" value="jetbrains.mps.workbench.actions.NewMPSProjectAction" />
                 </node>
               </node>
               <node concept="2pNUuL" id="7Y21hZBa7$E" role="2pNNFR">
                 <property role="2pNUuO" value="text" />
                 <node concept="2pMdtt" id="7Y21hZBa7$F" role="2pMdts">
-                  <property role="2pMdty" value="Safety Tutorial" />
+                  <property role="2pMdty" value="New Project" />
                 </node>
               </node>
               <node concept="2pNUuL" id="7Y21hZBa7$G" role="2pNNFR">
                 <property role="2pNUuO" value="description" />
                 <node concept="2pMdtt" id="7Y21hZBa7$H" role="2pMdts">
+                  <property role="2pMdty" value="Creates a new FASTEN project" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="1kq0H7MqFAL" role="3o6s8t">
+              <property role="2pNNFO" value="action" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="1kq0H7MqFAM" role="2pNNFR">
+                <property role="2pNUuO" value="id" />
+                <node concept="2pMdtt" id="1kq0H7MqFAN" role="2pMdts">
+                  <property role="2pMdty" value="OpenMPSProjectAction" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="1kq0H7MqFAO" role="2pNNFR">
+                <property role="2pNUuO" value="class" />
+                <node concept="2pMdtt" id="1kq0H7MqFAP" role="2pMdts">
+                  <property role="2pMdty" value="jetbrains.mps.workbench.actions.OpenMPSProjectAction" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="1kq0H7MqFAQ" role="2pNNFR">
+                <property role="2pNUuO" value="text" />
+                <node concept="2pMdtt" id="1kq0H7MqFAR" role="2pMdts">
+                  <property role="2pMdty" value="Open Project" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="1kq0H7MqFAS" role="2pNNFR">
+                <property role="2pNUuO" value="description" />
+                <node concept="2pMdtt" id="1kq0H7MqFAT" role="2pMdts">
+                  <property role="2pMdty" value="Opens an existing FASTEN project" />
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="5qXR41WlGXv" role="3o6s8t">
+              <property role="2pNNFO" value="action" />
+              <property role="qg3DV" value="true" />
+              <node concept="2pNUuL" id="5qXR41WlGXw" role="2pNNFR">
+                <property role="2pNUuO" value="id" />
+                <node concept="2pMdtt" id="5qXR41WlGXx" role="2pMdts">
+                  <property role="2pMdty" value="OpenFastenSafetyTutorialProject" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="5qXR41WlGXy" role="2pNNFR">
+                <property role="2pNUuO" value="class" />
+                <node concept="2pMdtt" id="5qXR41WlGXz" role="2pMdts">
+                  <property role="2pMdty" value="com.mbeddr.formal.rcp.tutorialActions.plugin.OpenFastenSafetyTutorialProjectAction" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="5qXR41WlGX$" role="2pNNFR">
+                <property role="2pNUuO" value="text" />
+                <node concept="2pMdtt" id="5qXR41WlGX_" role="2pMdts">
+                  <property role="2pMdty" value="Safety Tutorial" />
+                </node>
+              </node>
+              <node concept="2pNUuL" id="5qXR41WlGXA" role="2pNNFR">
+                <property role="2pNUuO" value="description" />
+                <node concept="2pMdtt" id="5qXR41WlGXB" role="2pMdts">
                   <property role="2pMdty" value="Opens the FASTEN safety tutorial from the installation directory" />
                 </node>
               </node>
