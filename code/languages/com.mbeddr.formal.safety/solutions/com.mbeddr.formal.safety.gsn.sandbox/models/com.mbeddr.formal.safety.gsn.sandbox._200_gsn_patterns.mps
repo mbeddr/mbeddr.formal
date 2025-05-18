@@ -1954,7 +1954,7 @@
       <node concept="19SGf9" id="1xpXAu0Y$Cl" role="2vnaTY">
         <node concept="19SUe$" id="1xpXAu0Y$Dj" role="19SJt6" />
         <node concept="2NwIr6" id="1xpXAu0Y$Cm" role="19SJt6">
-          <ref role="2NwIr1" node="1xpXAu0Y$Aw" />
+          <ref role="2NwIr1" node="1xpXAu0Y$Aw" resolve="SR01" />
         </node>
         <node concept="19SUe$" id="1xpXAu0Y$Cn" role="19SJt6">
           <property role="19SUeA" value="&#10; is satisfied" />
@@ -2070,7 +2070,7 @@
       <node concept="19SGf9" id="1xpXAu0Y$RT" role="2vnaTY">
         <node concept="19SUe$" id="1xpXAu0Y$Sa" role="19SJt6" />
         <node concept="2NwIr6" id="1xpXAu0Y$RU" role="19SJt6">
-          <ref role="2NwIr1" node="1xpXAu0Y$AC" />
+          <ref role="2NwIr1" node="1xpXAu0Y$AC" resolve="SR02" />
         </node>
         <node concept="19SUe$" id="1xpXAu0Y$RV" role="19SJt6">
           <property role="19SUeA" value="&#10; is satisfied" />
