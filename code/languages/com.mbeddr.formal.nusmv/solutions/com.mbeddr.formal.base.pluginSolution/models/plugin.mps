@@ -2460,7 +2460,7 @@
                     <property role="2bfB8j" value="true" />
                     <property role="373rjd" value="true" />
                     <ref role="1Y3XeK" to="v23q:~Disposable$Default" resolve="Disposable.Default" />
-                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3Tm1VV" id="3_MTCMSbSSR" role="1B3o_S" />
                   </node>
                 </node>

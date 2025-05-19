@@ -215,7 +215,7 @@
               <property role="19SUeA" value="Is inconsistent with " />
             </node>
             <node concept="2aGvr3" id="69OrlvCLBvE" role="19SJt6">
-              <ref role="2aGvrx" node="69OrlvCKmWl" />
+              <ref role="2aGvrx" node="69OrlvCKmWl" resolve="R_010_010" />
             </node>
             <node concept="19SUe$" id="69OrlvCL$bF" role="19SJt6" />
           </node>
