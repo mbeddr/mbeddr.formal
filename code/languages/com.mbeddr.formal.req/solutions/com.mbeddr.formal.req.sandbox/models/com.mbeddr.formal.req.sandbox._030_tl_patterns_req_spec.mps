@@ -487,7 +487,7 @@
               <property role="19SUeA" value="The following additional assumptions, w.r.t " />
             </node>
             <node concept="2aGvr3" id="2fmnPVfepYB" role="19SJt6">
-              <ref role="2aGvrx" node="6hWVnwA1qj9" />
+              <ref role="2aGvrx" node="6hWVnwA1qj9" resolve="R_010" />
             </node>
             <node concept="19SUe$" id="2fmnPVfepYC" role="19SJt6">
               <property role="19SUeA" value=" hold:&#10;" />
