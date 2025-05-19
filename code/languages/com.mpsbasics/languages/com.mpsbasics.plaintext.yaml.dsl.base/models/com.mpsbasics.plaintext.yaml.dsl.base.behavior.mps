@@ -181,28 +181,5 @@
       <node concept="3clFbS" id="6e$tVQRM1GR" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="1kq0H7M$FUz">
-    <ref role="13h7C2" to="3kjf:1kq0H7Mzw__" resolve="UninterpretedGenericDSLConcept" />
-    <node concept="13hLZK" id="1kq0H7M$FU$" role="13h7CW">
-      <node concept="3clFbS" id="1kq0H7M$FU_" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="1kq0H7M$FV8" role="13h7CS">
-      <property role="TrG5h" value="allowedConceptsAsChildren" />
-      <ref role="13i0hy" node="49jqi8s8rcE" resolve="allowedConceptsAsChildren" />
-      <node concept="3Tm1VV" id="1kq0H7M$FV9" role="1B3o_S" />
-      <node concept="3clFbS" id="1kq0H7M$FVd" role="3clF47">
-        <node concept="3clFbF" id="1kq0H7M$FWC" role="3cqZAp">
-          <node concept="2ShNRf" id="1kq0H7M$FWA" role="3clFbG">
-            <node concept="Tc6Ow" id="1kq0H7M$Giy" role="2ShVmc" />
-          </node>
-        </node>
-      </node>
-      <node concept="_YKpA" id="1kq0H7M$FVe" role="3clF45">
-        <node concept="3bZ5Sz" id="1kq0H7M$FVf" role="_ZDj9">
-          <ref role="3bZ5Sy" to="3kjf:49jqi8s8r1R" resolve="IDslYamlToken" />
-        </node>
-      </node>
-    </node>
-  </node>
 </model>
 

@@ -113,19 +113,5 @@
       <ref role="PrY4T" node="49jqi8s8r1R" resolve="IDslYamlToken" />
     </node>
   </node>
-  <node concept="1TIwiD" id="1kq0H7Mzw__">
-    <property role="EcuMT" value="1520530924931778917" />
-    <property role="TrG5h" value="UninterpretedGenericDSLConcept" />
-    <property role="34LRSv" value="unknown concept" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyi" id="1kq0H7M$gZb" role="1TKVEl">
-      <property role="IQ2nx" value="1520530924931977163" />
-      <property role="TrG5h" value="text" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="PrWs8" id="1kq0H7MzwDg" role="PzmwI">
-      <ref role="PrY4T" node="49jqi8s8qPW" resolve="IDslYamlHierarchicalToken" />
-    </node>
-  </node>
 </model>
 

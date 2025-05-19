@@ -227,18 +227,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
@@ -1388,39 +1378,20 @@
                 </node>
               </node>
             </node>
-            <node concept="1X3_iC" id="1kq0H7MzwSb" role="lGtFl">
-              <property role="3V$3am" value="statement" />
-              <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-              <node concept="YS8fn" id="49jqi8shEY6" role="8Wnug">
-                <node concept="2ShNRf" id="49jqi8shIaq" role="YScLw">
-                  <node concept="1pGfFk" id="49jqi8shLWf" role="2ShVmc">
-                    <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                    <node concept="3cpWs3" id="49jqi8shTGQ" role="37wK5m">
-                      <node concept="Xl_RD" id="49jqi8shTGR" role="3uHU7w">
-                        <property role="Xl_RC" value="'" />
-                      </node>
-                      <node concept="3cpWs3" id="49jqi8shTGS" role="3uHU7B">
-                        <node concept="Xl_RD" id="49jqi8shTGT" role="3uHU7B">
-                          <property role="Xl_RC" value="could not find concept to instantiate for '" />
-                        </node>
-                        <node concept="37vLTw" id="49jqi8shTGU" role="3uHU7w">
-                          <ref role="3cqZAo" node="7gE2YMAqa1V" resolve="text" />
-                        </node>
-                      </node>
+            <node concept="YS8fn" id="49jqi8shEY6" role="3cqZAp">
+              <node concept="2ShNRf" id="49jqi8shIaq" role="YScLw">
+                <node concept="1pGfFk" id="49jqi8shLWf" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="3cpWs3" id="49jqi8shTGQ" role="37wK5m">
+                    <node concept="Xl_RD" id="49jqi8shTGR" role="3uHU7w">
+                      <property role="Xl_RC" value="'" />
                     </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="1kq0H7MzCjR" role="3cqZAp">
-              <node concept="2pJPEk" id="1kq0H7M$pgm" role="3cqZAk">
-                <node concept="2pJPED" id="1kq0H7M$pgq" role="2pJPEn">
-                  <ref role="2pJxaS" to="3kjf:1kq0H7Mzw__" resolve="UninterpretedGenericDSLConcept" />
-                  <node concept="2pJxcG" id="1kq0H7M$tEU" role="2pJxcM">
-                    <ref role="2pJxcJ" to="3kjf:1kq0H7M$gZb" resolve="text" />
-                    <node concept="WxPPo" id="1kq0H7M$uDd" role="28ntcv">
-                      <node concept="37vLTw" id="1kq0H7M$uDb" role="WxPPp">
+                    <node concept="3cpWs3" id="49jqi8shTGS" role="3uHU7B">
+                      <node concept="Xl_RD" id="49jqi8shTGT" role="3uHU7B">
+                        <property role="Xl_RC" value="could not find concept to instantiate for '" />
+                      </node>
+                      <node concept="37vLTw" id="49jqi8shTGU" role="3uHU7w">
                         <ref role="3cqZAo" node="7gE2YMAqa1V" resolve="text" />
                       </node>
                     </node>
