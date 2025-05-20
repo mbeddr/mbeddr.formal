@@ -20,6 +20,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
+        <child id="1137022507850" name="body" index="2VODD2" />
+      </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
@@ -68,8 +71,10 @@
       </concept>
       <concept id="1233670071145" name="jetbrains.mps.lang.textGen.structure.ConceptTextGenDeclaration" flags="ig" index="WtQ9Q">
         <reference id="1233670257997" name="conceptDeclaration" index="WuzLi" />
+        <child id="1233749296504" name="textGenBlock" index="11c4hB" />
       </concept>
       <concept id="1233748055915" name="jetbrains.mps.lang.textGen.structure.NodeParameter" flags="nn" index="117lpO" />
+      <concept id="1233749247888" name="jetbrains.mps.lang.textGen.structure.GenerateTextDeclaration" flags="in" index="11bSqf" />
       <concept id="1233921373471" name="jetbrains.mps.lang.textGen.structure.LanguageTextGenDeclaration" flags="ig" index="1bsvg0">
         <child id="1233922432965" name="operation" index="1bwxVq" />
       </concept>
@@ -114,6 +119,9 @@
       <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="WtQ9Q" id="49jqi8smJMu">
@@ -389,6 +397,46 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="4WObXHxDDR0">
+    <ref role="WuzLi" to="3kjf:1kq0H7Mzw__" resolve="UninterpretedGenericDSLConcept" />
+    <node concept="11bSqf" id="4WObXHxDDR1" role="11c4hB">
+      <node concept="3clFbS" id="4WObXHxDDR2" role="2VODD2">
+        <node concept="lc7rE" id="4WObXHxDDRM" role="3cqZAp">
+          <node concept="l9hG8" id="4WObXHxDDSc" role="lcghm">
+            <node concept="2OqwBi" id="4WObXHxDE2X" role="lb14g">
+              <node concept="117lpO" id="4WObXHxDDSH" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4WObXHxDFXE" role="2OqNvi">
+                <ref role="3TsBF5" to="3kjf:1kq0H7M$gZb" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4WObXHxDG4M" role="3cqZAp">
+          <node concept="3clFbS" id="4WObXHxDG4O" role="3clFbx">
+            <node concept="lc7rE" id="4WObXHxDL8h" role="3cqZAp">
+              <node concept="l9S2W" id="4WObXHxDLcD" role="lcghm">
+                <node concept="2OqwBi" id="4WObXHxDLmg" role="lbANJ">
+                  <node concept="117lpO" id="4WObXHxDLd5" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="4WObXHxDLCa" role="2OqNvi">
+                    <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="4WObXHxDIhR" role="3clFbw">
+            <node concept="2OqwBi" id="4WObXHxDGhk" role="2Oq$k0">
+              <node concept="117lpO" id="4WObXHxDG5E" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4WObXHxDG$p" role="2OqNvi">
+                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
+              </node>
+            </node>
+            <node concept="3GX2aA" id="4WObXHxDL7h" role="2OqNvi" />
           </node>
         </node>
       </node>

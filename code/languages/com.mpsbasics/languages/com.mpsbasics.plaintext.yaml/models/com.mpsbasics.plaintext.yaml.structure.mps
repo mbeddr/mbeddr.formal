@@ -271,5 +271,9 @@
       <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
     </node>
   </node>
+  <node concept="PlHQZ" id="4WObXHxG7xv">
+    <property role="EcuMT" value="5707239247068559455" />
+    <property role="TrG5h" value="ISpecialStubConcept" />
+  </node>
 </model>
 
