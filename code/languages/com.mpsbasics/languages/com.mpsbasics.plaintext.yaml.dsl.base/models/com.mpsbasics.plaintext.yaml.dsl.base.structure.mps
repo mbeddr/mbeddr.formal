@@ -119,7 +119,7 @@
     <property role="TrG5h" value="UninterpretedGenericDSLConcept" />
     <property role="34LRSv" value="uninterpreted" />
     <property role="R4oN_" value="an uninterpreted node with unknown DSL concept" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1kq0H7M$gZb" role="1TKVEl">
       <property role="IQ2nx" value="1520530924931977163" />
       <property role="TrG5h" value="text" />
