@@ -12,6 +12,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -111,6 +112,24 @@
     </node>
     <node concept="PrWs8" id="6e$tVQRUqa8" role="PrDN$">
       <ref role="PrY4T" node="49jqi8s8r1R" resolve="IDslYamlToken" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1kq0H7Mzw__">
+    <property role="EcuMT" value="1520530924931778917" />
+    <property role="TrG5h" value="UninterpretedGenericDSLConcept" />
+    <property role="34LRSv" value="uninterpreted" />
+    <property role="R4oN_" value="an uninterpreted node with unknown DSL concept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1kq0H7M$gZb" role="1TKVEl">
+      <property role="IQ2nx" value="1520530924931977163" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="1kq0H7MzwDg" role="PzmwI">
+      <ref role="PrY4T" node="49jqi8s8qPW" resolve="IDslYamlHierarchicalToken" />
+    </node>
+    <node concept="PrWs8" id="4WObXHxGbjN" role="PzmwI">
+      <ref role="PrY4T" to="bpzl:4WObXHxG7xv" resolve="ISpecialStubConcept" />
     </node>
   </node>
 </model>
