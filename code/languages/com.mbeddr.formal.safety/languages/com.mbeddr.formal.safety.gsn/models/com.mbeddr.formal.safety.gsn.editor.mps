@@ -572,6 +572,7 @@
       <concept id="1110129820007229393" name="de.itemis.mps.editor.diagram.structure.CellModel_Diagram" flags="ng" index="27vDVx">
         <child id="8433227566816393050" name="layoutAlgorithm" index="35U2g" />
         <child id="1742468285817538342" name="disableNodeEditing" index="2gDVEa" />
+        <child id="9014008627795543370" name="minimumScale" index="3b5Rhs" />
         <child id="6910723851735171798" name="buttonConfig" index="3sAl1G" />
         <child id="8637411062076630380" name="connectionTypes" index="1xLlFP" />
         <child id="8637411062062914773" name="paletteFolder" index="1y_2dc" />
@@ -617,6 +618,7 @@
       <concept id="6237710625713942002" name="de.itemis.mps.editor.diagram.structure.Content_BLQuery" flags="ig" index="2ZMM4L" />
       <concept id="6237710625713964946" name="de.itemis.mps.editor.diagram.structure.Parameter_Node" flags="ng" index="2ZN8Hh" />
       <concept id="5051221038171022699" name="de.itemis.mps.editor.diagram.structure.ShadeColor" flags="lg" index="38c6YI" />
+      <concept id="7899485855304485736" name="de.itemis.mps.editor.diagram.structure.QueryFunction_Float" flags="ig" index="1k1hvw" />
       <concept id="3454709602156468860" name="de.itemis.mps.editor.diagram.structure.ShapeParameterDeclaration" flags="ng" index="1xmO9C">
         <child id="3454709602156468949" name="type" index="1xmOb1" />
       </concept>
@@ -3928,6 +3930,15 @@
                 <ref role="Rm8GQ" to="u8j:~OrderingStrategy.NODES_AND_EDGES" resolve="NODES_AND_EDGES" />
                 <ref role="1Px2BO" to="u8j:~OrderingStrategy" resolve="OrderingStrategy" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1k1hvw" id="4LKChjDQcL4" role="3b5Rhs">
+        <node concept="3clFbS" id="4LKChjDQcL5" role="2VODD2">
+          <node concept="3clFbF" id="4LKChjDQfjX" role="3cqZAp">
+            <node concept="2$xPTn" id="4LKChjDQgjv" role="3clFbG">
+              <property role="2$xPTl" value="0.2f" />
             </node>
           </node>
         </node>
