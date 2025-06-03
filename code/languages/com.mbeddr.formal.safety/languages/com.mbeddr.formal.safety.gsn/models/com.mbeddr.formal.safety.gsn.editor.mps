@@ -650,7 +650,6 @@
       <concept id="459067182341492618" name="com.mbeddr.mpsutil.editor.querylist.structure.Parameter_NodeToDelete" flags="ng" index="2dRY2x" />
       <concept id="6202678563380238499" name="com.mbeddr.mpsutil.editor.querylist.structure.Function_GetElements" flags="ig" index="s8sZD" />
       <concept id="6202678563380233810" name="com.mbeddr.mpsutil.editor.querylist.structure.CellModel_QueryList" flags="ng" index="s8t4o">
-        <property id="730823979356023502" name="duplicatesSafe" index="28Zw97" />
         <property id="1160590307797" name="usesFolding" index="S$F3r" />
         <reference id="730823979350682502" name="elementsConcept" index="28F8cf" />
         <child id="1140524464360" name="cellLayout" index="2czzBy" />
@@ -10947,7 +10946,6 @@
     <node concept="3EZMnI" id="7olAlesPlIQ" role="2wV5jI">
       <node concept="3EZMnI" id="7olAlesPlIR" role="3EZMnx">
         <node concept="s8t4o" id="4UQF4xbNwsi" role="3EZMnx">
-          <property role="28Zw97" value="true" />
           <ref role="28F8cf" to="py52:2ccN23odOxd" resolve="GoalStructureConnectionBase" />
           <node concept="xShMh" id="4UQF4xbNwsk" role="3F10Kt">
             <property role="VOm3f" value="true" />
