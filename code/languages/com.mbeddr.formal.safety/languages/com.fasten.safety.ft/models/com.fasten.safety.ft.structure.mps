@@ -30,6 +30,12 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -38,7 +44,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -57,6 +65,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -92,6 +101,9 @@
     <node concept="PrWs8" id="6qVhvNsGXIz" role="PzmwI">
       <ref role="PrY4T" to="b19z:6qVhvNsGxid" resolve="IAttributeContainer" />
     </node>
+    <node concept="PrWs8" id="51rtRMZu$2A" role="PzmwI">
+      <ref role="PrY4T" to="b19z:3cGyC6fA47t" resolve="IAnnotationProvidersContainer" />
+    </node>
     <node concept="1irR5M" id="5rwT_JnuR41" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irPie" id="5rwT_JnuR48" role="1irR9h">
@@ -125,6 +137,13 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="description" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+    <node concept="1TJgyj" id="51rtRMZveUE" role="1TKVEi">
+      <property role="IQ2ns" value="5790353123587190442" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="attributes" />
+      <ref role="20lvS9" node="51rtRMZv9D2" resolve="IFaultTreeAttribute" />
+      <ref role="20ksaX" to="b19z:6qVhvNsGxie" resolve="attributes" />
     </node>
   </node>
   <node concept="1TIwiD" id="5rwT_JnuR3V">
@@ -369,6 +388,43 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="Az7Fb" id="2p23w$d2KIt">
+    <property role="3F6X1D" value="2756781353940487069" />
+    <property role="TrG5h" value="ColorString" />
+    <property role="FLfZY" value="[0-9a-zA-Z]{6}" />
+    <property role="3GE5qa" value="attributes.color" />
+  </node>
+  <node concept="1TIwiD" id="2p23w$d2KIu">
+    <property role="EcuMT" value="2756781353940487070" />
+    <property role="3GE5qa" value="attributes.color" />
+    <property role="TrG5h" value="EntityColorAttribute" />
+    <property role="34LRSv" value="color" />
+    <property role="R4oN_" value="the color of an entity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2p23w$d2KIv" role="1TKVEl">
+      <property role="IQ2nx" value="2756781353940487071" />
+      <property role="TrG5h" value="val" />
+      <ref role="AX2Wp" node="2p23w$d2KIt" resolve="ColorString" />
+    </node>
+    <node concept="PrWs8" id="51rtRMZv9D3" role="PzmwI">
+      <ref role="PrY4T" node="51rtRMZv9D2" resolve="IFaultTreeAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="51rtRMZv9D2">
+    <property role="EcuMT" value="5790353123587168834" />
+    <property role="TrG5h" value="IFaultTreeAttribute" />
+    <property role="3GE5qa" value="base" />
+    <node concept="PrWs8" id="51rtRMZveUD" role="PrDN$">
+      <ref role="PrY4T" to="b19z:6qVhvNsGwB7" resolve="IAttribute" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="51rtRMZxE2G">
+    <property role="EcuMT" value="5790353123587825836" />
+    <property role="3GE5qa" value="attributes.color" />
+    <property role="TrG5h" value="GenericFaultTreeAttributeAnnotationProvider" />
+    <property role="34LRSv" value="from attribute:" />
+    <ref role="1TJDcQ" to="b19z:3cGyC6fC0Yv" resolve="GenericAttributeAnnotationProviderBase" />
   </node>
 </model>
 

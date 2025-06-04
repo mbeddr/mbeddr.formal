@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <model ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._040_safety_models)" content="header">
   <persistence version="9" />
+  <attribute name="doNotGenerate" value="true" />
   <languages>
     <devkit ref="bf74abbc-7521-4990-984c-b43ecaf32ba1(fasten.safety.fmea)" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
