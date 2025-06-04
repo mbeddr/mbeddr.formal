@@ -71,6 +71,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -230,6 +231,13 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
+      </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
@@ -254,44 +262,90 @@
     <property role="TrG5h" value="check_EventBase" />
     <property role="3GE5qa" value="events.base" />
     <node concept="3clFbS" id="11L6MQb4hf7" role="18ibNy">
-      <node concept="3clFbJ" id="33PksMocPB" role="3cqZAp">
-        <node concept="3clFbS" id="33PksMocPD" role="3clFbx">
-          <node concept="2MkqsV" id="33PksMonKM" role="3cqZAp">
-            <node concept="Xl_RD" id="33PksMonL1" role="2MkJ7o">
-              <property role="Xl_RC" value="exactly one upstream element shall be connected to an event" />
+      <node concept="1X3_iC" id="3ILMVXjmXar" role="lGtFl">
+        <property role="3V$3am" value="statement" />
+        <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+        <node concept="3clFbJ" id="33PksMocPB" role="8Wnug">
+          <node concept="3clFbS" id="33PksMocPD" role="3clFbx">
+            <node concept="2MkqsV" id="33PksMonKM" role="3cqZAp">
+              <node concept="Xl_RD" id="33PksMonL1" role="2MkJ7o">
+                <property role="Xl_RC" value="exactly one upstream element shall be connected to an event" />
+              </node>
+              <node concept="1YBJjd" id="33PksMos4a" role="1urrMF">
+                <ref role="1YBMHb" node="11L6MQb4hf9" resolve="eventBase" />
+              </node>
             </node>
-            <node concept="1YBJjd" id="33PksMos4a" role="1urrMF">
+          </node>
+          <node concept="1Wc70l" id="33PksMyikN" role="3clFbw">
+            <node concept="3fqX7Q" id="33PksMykgx" role="3uHU7B">
+              <node concept="2OqwBi" id="33PksMykgz" role="3fr31v">
+                <node concept="1YBJjd" id="33PksMykg$" role="2Oq$k0">
+                  <ref role="1YBMHb" node="11L6MQb4hf9" resolve="eventBase" />
+                </node>
+                <node concept="1mIQ4w" id="33PksMykg_" role="2OqNvi">
+                  <node concept="chp4Y" id="33PksMykgA" role="cj9EA">
+                    <ref role="cht4Q" to="spwl:5rwT_JnuR4f" resolve="TopEvent" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3y3z36" id="33PksMongv" role="3uHU7w">
+              <node concept="3cmrfG" id="33PksMonJc" role="3uHU7w">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="2OqwBi" id="33PksMofRK" role="3uHU7B">
+                <node concept="2OqwBi" id="33PksMod3I" role="2Oq$k0">
+                  <node concept="1YBJjd" id="33PksMocQ4" role="2Oq$k0">
+                    <ref role="1YBMHb" node="11L6MQb4hf9" resolve="eventBase" />
+                  </node>
+                  <node concept="2qgKlT" id="33PksModnK" role="2OqNvi">
+                    <ref role="37wK5l" to="fazf:7EzhnkmR5k4" resolve="getUpstreamNeighbouringElements" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="33PksMoiOj" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="3ILMVXjmXaw" role="3cqZAp">
+        <node concept="3clFbS" id="3ILMVXjmXax" role="3clFbx">
+          <node concept="2MkqsV" id="3ILMVXjmXay" role="3cqZAp">
+            <node concept="Xl_RD" id="3ILMVXjmXaz" role="2MkJ7o">
+              <property role="Xl_RC" value="at least one upstream element shall be connected to an event" />
+            </node>
+            <node concept="1YBJjd" id="3ILMVXjmXa$" role="1urrMF">
               <ref role="1YBMHb" node="11L6MQb4hf9" resolve="eventBase" />
             </node>
           </node>
         </node>
-        <node concept="1Wc70l" id="33PksMyikN" role="3clFbw">
-          <node concept="3fqX7Q" id="33PksMykgx" role="3uHU7B">
-            <node concept="2OqwBi" id="33PksMykgz" role="3fr31v">
-              <node concept="1YBJjd" id="33PksMykg$" role="2Oq$k0">
+        <node concept="1Wc70l" id="3ILMVXjmXa_" role="3clFbw">
+          <node concept="3fqX7Q" id="3ILMVXjmXaA" role="3uHU7B">
+            <node concept="2OqwBi" id="3ILMVXjmXaB" role="3fr31v">
+              <node concept="1YBJjd" id="3ILMVXjmXaC" role="2Oq$k0">
                 <ref role="1YBMHb" node="11L6MQb4hf9" resolve="eventBase" />
               </node>
-              <node concept="1mIQ4w" id="33PksMykg_" role="2OqNvi">
-                <node concept="chp4Y" id="33PksMykgA" role="cj9EA">
+              <node concept="1mIQ4w" id="3ILMVXjmXaD" role="2OqNvi">
+                <node concept="chp4Y" id="3ILMVXjmXaE" role="cj9EA">
                   <ref role="cht4Q" to="spwl:5rwT_JnuR4f" resolve="TopEvent" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="3y3z36" id="33PksMongv" role="3uHU7w">
-            <node concept="3cmrfG" id="33PksMonJc" role="3uHU7w">
-              <property role="3cmrfH" value="1" />
-            </node>
-            <node concept="2OqwBi" id="33PksMofRK" role="3uHU7B">
-              <node concept="2OqwBi" id="33PksMod3I" role="2Oq$k0">
-                <node concept="1YBJjd" id="33PksMocQ4" role="2Oq$k0">
+          <node concept="3clFbC" id="3ILMVXjmXaP" role="3uHU7w">
+            <node concept="2OqwBi" id="3ILMVXjmXaH" role="3uHU7B">
+              <node concept="2OqwBi" id="3ILMVXjmXaI" role="2Oq$k0">
+                <node concept="1YBJjd" id="3ILMVXjmXaJ" role="2Oq$k0">
                   <ref role="1YBMHb" node="11L6MQb4hf9" resolve="eventBase" />
                 </node>
-                <node concept="2qgKlT" id="33PksModnK" role="2OqNvi">
+                <node concept="2qgKlT" id="3ILMVXjmXaK" role="2OqNvi">
                   <ref role="37wK5l" to="fazf:7EzhnkmR5k4" resolve="getUpstreamNeighbouringElements" />
                 </node>
               </node>
-              <node concept="34oBXx" id="33PksMoiOj" role="2OqNvi" />
+              <node concept="34oBXx" id="3ILMVXjmXaL" role="2OqNvi" />
+            </node>
+            <node concept="3cmrfG" id="3ILMVXjmXaG" role="3uHU7w">
+              <property role="3cmrfH" value="0" />
             </node>
           </node>
         </node>
