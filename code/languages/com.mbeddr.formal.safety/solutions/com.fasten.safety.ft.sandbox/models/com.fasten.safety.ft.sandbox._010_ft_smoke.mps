@@ -3972,7 +3972,7 @@
     </node>
     <node concept="21oswF" id="3ILMVXjmXad" role="3CrHoS">
       <ref role="21oszt" node="3f8ZVRXZCps" resolve="Or Gate 2" />
-      <ref role="21oszj" node="3ILMVXjmXaa" />
+      <ref role="21oszj" node="3ILMVXjmXaa" resolve="sensor_22_error" />
     </node>
   </node>
   <node concept="21ASy4" id="5kIAo_xMxey">

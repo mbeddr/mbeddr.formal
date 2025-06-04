@@ -144,7 +144,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="attributes" />
       <ref role="20lvS9" node="51rtRMZv9D2" resolve="IFaultTreeAttribute" />
-      <ref role="20ksaX" to="b19z:6qVhvNsGxie" />
+      <ref role="20ksaX" to="b19z:6qVhvNsGxie" resolve="attributes" />
     </node>
   </node>
   <node concept="1TIwiD" id="5rwT_JnuR3V">

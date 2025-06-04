@@ -1277,7 +1277,7 @@
         <node concept="3clFbF" id="51rtRMZv3fL" role="3cqZAp">
           <node concept="2ShNRf" id="51rtRMZv3fM" role="3clFbG">
             <node concept="HV5vD" id="51rtRMZv3fN" role="2ShVmc">
-              <ref role="HV5vE" node="51rtRMZv3fa" resolve="GsnColorProvider" />
+              <ref role="HV5vE" node="51rtRMZv3fa" resolve="FaultTreeColorProvider" />
             </node>
           </node>
         </node>
