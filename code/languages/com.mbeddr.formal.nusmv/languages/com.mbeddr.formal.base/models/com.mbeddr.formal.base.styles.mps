@@ -358,6 +358,7 @@
           <ref role="HV5vE" node="50UR0qsbooM" resolve="EditorDynamicStyleBase" />
         </node>
       </node>
+      <node concept="3Tm1VV" id="3ILMVXji940" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="50UR0qsbM0_" role="jymVt" />
     <node concept="2YIFZL" id="50UR0qsbou1" role="jymVt">
@@ -2314,7 +2315,7 @@
           <ref role="37wK5l" to="z60i:~Color.decode(java.lang.String)" resolve="decode" />
           <ref role="1Pybhc" to="z60i:~Color" resolve="Color" />
           <node concept="Xl_RD" id="1t0qU$W8AlK" role="37wK5m">
-            <property role="Xl_RC" value="#F5F5F5" />
+            <property role="Xl_RC" value="#C5C5C5" />
           </node>
         </node>
       </node>
