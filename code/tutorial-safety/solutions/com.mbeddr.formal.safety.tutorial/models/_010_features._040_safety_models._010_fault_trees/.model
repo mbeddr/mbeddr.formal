@@ -2,8 +2,10 @@
 <model ref="r:01c63dab-3c7b-4a81-b088-84727219e340(_010_features._040_safety_models_fault_trees)" content="header">
   <persistence version="9" />
   <languages>
-    <use id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft" version="1" />
+    <devkit ref="a43bbdef-33e6-44ad-a995-6accad936f48(fasten.safety.ft)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="1e9r" ref="r:22491be8-bbe2-4f01-83d3-05da71d8404c(test.com.fasten.safety.ft.xfta._010_smoke_ft)" />
+  </imports>
 </model>
 

@@ -19,6 +19,7 @@
     <dependency reexport="false">17da266c-02d9-4bbd-b69b-8a656b49f45c(com.mbeddr.formal.safety.hara)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">8a4ef392-f4b4-43e7-afb5-b071dce8043d(com.mbeddr.formal.safety.argument.process)</dependency>
+    <dependency reexport="false">82b16819-a621-494e-8797-872ebe7f4433(test.com.fasten.safety.ft.xfta)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:3b22dedc-d6cf-4626-9445-6e9909b3e04a:com.fasten.base.arch.msc" version="0" />
@@ -143,6 +144,8 @@
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="e1b41d7d-269e-4a91-a7d8-91bd657028d7(com.fasten.safety.doc2word)" version="0" />
+    <module reference="4dc47fba-0f4f-4162-820b-d2e1e306482d(com.fasten.safety.ft.pluginSolution)" version="0" />
+    <module reference="54912f5b-43b5-48a6-b710-8bbe3bcf9649(com.fasten.safety.ft.xfta.pluginSolution)" version="0" />
     <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
     <module reference="e6e482a5-282a-4c6d-862a-311affd0586b(com.mbeddr.formal.safety.argument.jira_integration)" version="0" />
     <module reference="28c9d1d8-7af8-472d-8679-9b314648c201(com.mbeddr.formal.safety.argument.modelquery.genplan)" version="0" />
@@ -167,6 +170,7 @@
     <module reference="dc038ceb-b7ea-4fea-ac12-55f7400e97ba(de.slisson.mps.editor.multiline.runtime)" version="0" />
     <module reference="92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+    <module reference="82b16819-a621-494e-8797-872ebe7f4433(test.com.fasten.safety.ft.xfta)" version="0" />
   </dependencyVersions>
 </solution>
 
