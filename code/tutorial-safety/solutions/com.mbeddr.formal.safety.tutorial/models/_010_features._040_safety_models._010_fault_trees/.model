@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:01c63dab-3c7b-4a81-b088-84727219e340(_010_features._040_safety_models_fault_trees)" content="header">
+  <persistence version="9" />
+  <languages>
+    <use id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft" version="1" />
+  </languages>
+  <imports />
+</model>
+
