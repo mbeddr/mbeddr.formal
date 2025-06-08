@@ -19,11 +19,24 @@
     <import index="fhlc" ref="r:89fb4363-ec36-4a06-ac51-b284d265c631(com.mbeddr.formal.base.tooling.make)" />
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="z1c3" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.project(MPS.Platform/)" />
+    <import index="a7wd" ref="r:0d8de557-bbe4-455a-a872-4eb6baf716c6(com.fasten.safety.ft.xfta_gen.structure)" implicit="true" />
     <import index="z1c4" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" implicit="true" />
     <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="2756621024541681841" name="jetbrains.mps.lang.resources.structure.Primitive" flags="ng" index="1irPi6">
+        <child id="1860120738943552529" name="fillColor" index="3PKjn_" />
+        <child id="1860120738943552531" name="borderColor" index="3PKjnB" />
+      </concept>
+      <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
+        <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="2756621024541675110" name="layers" index="1irR9h" />
+      </concept>
+      <concept id="2756621024541675105" name="jetbrains.mps.lang.resources.structure.Rect" flags="ng" index="1irR9m" />
+      <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
+        <property id="1860120738943552481" name="val" index="3PKj8l" />
+      </concept>
       <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu">
         <property id="2756621024541341363" name="file" index="1iqoE4" />
       </concept>
@@ -37,6 +50,7 @@
         <property id="4692598989365753297" name="updateInBackground" index="1rBW0U" />
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
+        <child id="8976425910813834639" name="icon" index="3Uehp1" />
       </concept>
       <concept id="1203071677434" name="jetbrains.mps.lang.plugin.structure.ToolDeclaration" flags="ng" index="sEfby">
         <child id="1214307129846" name="getComponentBlock" index="2Um5zG" />
@@ -216,14 +230,14 @@
   <node concept="2DaZZR" id="6iM0fX1N45m" />
   <node concept="sE7Ow" id="7YOjUbFptrP">
     <property role="TrG5h" value="AnalyzeFaultTree" />
-    <property role="2uzpH1" value="Analyze Fault Tree" />
+    <property role="2uzpH1" value="Execute Analysis" />
     <property role="1rBW0U" value="true" />
     <node concept="2S4$dB" id="72xocJVig2G" role="1NuT2Z">
       <property role="TrG5h" value="node" />
       <node concept="3Tm6S6" id="72xocJVig2H" role="1B3o_S" />
       <node concept="1oajcY" id="72xocJVig2I" role="1oa70y" />
       <node concept="3Tqbb2" id="72xocJVibVa" role="1tU5fm">
-        <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+        <ref role="ehGHo" to="a7wd:2MppyJmL3W1" resolve="XFTAScript" />
       </node>
     </node>
     <node concept="2S4$dB" id="6xNJt7lK$f4" role="1NuT2Z">
@@ -259,10 +273,10 @@
         </node>
         <node concept="3cpWs8" id="3R_yAtWo0nk" role="3cqZAp">
           <node concept="3cpWsn" id="3R_yAtWo0nl" role="3cpWs9">
-            <property role="TrG5h" value="faultTree" />
+            <property role="TrG5h" value="script" />
             <property role="3TUv4t" value="true" />
             <node concept="3Tqbb2" id="3R_yAtWnYQd" role="1tU5fm">
-              <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+              <ref role="ehGHo" to="a7wd:2MppyJmL3W1" resolve="XFTAScript" />
             </node>
             <node concept="2OqwBi" id="3R_yAtWo0nm" role="33vP2m">
               <node concept="2WthIp" id="3R_yAtWo0nn" role="2Oq$k0" />
@@ -274,7 +288,7 @@
         </node>
         <node concept="3cpWs8" id="3R_yAtWmJak" role="3cqZAp">
           <node concept="3cpWsn" id="3R_yAtWmJal" role="3cpWs9">
-            <property role="TrG5h" value="faultTreeName" />
+            <property role="TrG5h" value="xftaScriptName" />
             <property role="3TUv4t" value="true" />
             <node concept="17QB3L" id="3R_yAtWmIAv" role="1tU5fm" />
             <node concept="2OqwBi" id="3R_yAtWmJam" role="33vP2m">
@@ -435,7 +449,7 @@
                             <ref role="37wK5l" to="qofe:3R_yAtWncuQ" resolve="liftResults" />
                             <ref role="1Pybhc" to="qofe:3R_yAtWncsr" resolve="ResultLifter" />
                             <node concept="37vLTw" id="3R_yAtWo18T" role="37wK5m">
-                              <ref role="3cqZAo" node="3R_yAtWo0nl" resolve="faultTree" />
+                              <ref role="3cqZAo" node="3R_yAtWo0nl" resolve="script" />
                             </node>
                           </node>
                         </node>
@@ -503,6 +517,17 @@
               </node>
             </node>
           </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1irR5M" id="2MppyJmTSCt" role="3Uehp1">
+      <property role="2$rrk2" value="1" />
+      <node concept="1irR9m" id="2MppyJmTSCU" role="1irR9h">
+        <node concept="3PKj8D" id="2MppyJmTSD2" role="3PKjn_">
+          <property role="3PKj8l" value="FF0000" />
+        </node>
+        <node concept="3PKj8D" id="2MppyJmTSDg" role="3PKjnB">
+          <property role="3PKj8l" value="111111" />
         </node>
       </node>
     </node>
