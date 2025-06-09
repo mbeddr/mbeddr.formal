@@ -293,7 +293,7 @@
             <node concept="17QB3L" id="3R_yAtWmIAv" role="1tU5fm" />
             <node concept="2OqwBi" id="3R_yAtWmJam" role="33vP2m">
               <node concept="37vLTw" id="3R_yAtWo0np" role="2Oq$k0">
-                <ref role="3cqZAo" node="3R_yAtWo0nl" resolve="faultTree" />
+                <ref role="3cqZAo" node="3R_yAtWo0nl" resolve="script" />
               </node>
               <node concept="3TrcHB" id="3R_yAtWmJaq" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -382,7 +382,7 @@
                           <property role="Xl_RC" value=".xfta" />
                         </node>
                         <node concept="37vLTw" id="3R_yAtWmJar" role="3uHU7B">
-                          <ref role="3cqZAo" node="3R_yAtWmJal" resolve="faultTreeName" />
+                          <ref role="3cqZAo" node="3R_yAtWmJal" resolve="xftaScriptName" />
                         </node>
                       </node>
                       <node concept="37vLTw" id="7jevvt_gE1P" role="37wK5m">

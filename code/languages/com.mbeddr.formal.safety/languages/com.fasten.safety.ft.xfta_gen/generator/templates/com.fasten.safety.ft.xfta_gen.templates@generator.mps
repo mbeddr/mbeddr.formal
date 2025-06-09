@@ -393,7 +393,7 @@
                       <node concept="2OqwBi" id="2MppyJmSx7I" role="2Oq$k0">
                         <node concept="30H73N" id="2MppyJmSx7J" role="2Oq$k0" />
                         <node concept="3TrEf2" id="2MppyJmSx7K" role="2OqNvi">
-                          <ref role="3Tt5mk" to="a7wd:2MppyJmL4G3" />
+                          <ref role="3Tt5mk" to="a7wd:2MppyJmL4G3" resolve="top" />
                         </node>
                       </node>
                       <node concept="3TrcHB" id="2MppyJmSx7L" role="2OqNvi">

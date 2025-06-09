@@ -6798,7 +6798,7 @@
                   <node concept="2OqwBi" id="2zYHfFNAM8k" role="3clFbG">
                     <node concept="pncrf" id="2zYHfFNAM8l" role="2Oq$k0" />
                     <node concept="3TrEf2" id="2zYHfFNAM8m" role="2OqNvi">
-                      <ref role="3Tt5mk" to="spwl:1SpkZ1V83E9" />
+                      <ref role="3Tt5mk" to="spwl:1SpkZ1V83E9" resolve="subtreeStart" />
                     </node>
                   </node>
                 </node>
