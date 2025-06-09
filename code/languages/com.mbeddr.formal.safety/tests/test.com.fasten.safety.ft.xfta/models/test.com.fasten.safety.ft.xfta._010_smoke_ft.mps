@@ -220,7 +220,7 @@
     </node>
     <node concept="21oswF" id="3oGITgu_n$U" role="3CrHoS">
       <ref role="21oszj" node="3oGITgu_n$d" resolve="And Gate 1" />
-      <ref role="21oszt" node="3oGITgu_n$8" resolve="top event" />
+      <ref role="21oszt" node="3oGITgu_n$8" resolve="_010_and_gate_top_event" />
     </node>
     <node concept="21oswF" id="3oGITgu_n_S" role="3CrHoS">
       <ref role="21oszt" node="3oGITgu_n$d" resolve="And Gate 1" />
@@ -253,7 +253,7 @@
       </node>
     </node>
     <node concept="21oswF" id="5sUzoS9Hb7R" role="3CrHoS">
-      <ref role="21oszt" node="5sUzoS9Hb7L" resolve="top event" />
+      <ref role="21oszt" node="5sUzoS9Hb7L" resolve="_020_or_gate_top_event" />
       <ref role="21oszj" node="5sUzoS9Hb7M" resolve="Or Gate 1" />
     </node>
     <node concept="21oswF" id="5sUzoS9Hb7S" role="3CrHoS">
@@ -376,11 +376,11 @@
     </node>
     <node concept="3Unl_y" id="2MppyJmNcqC" role="3Unl$J" />
     <node concept="3UniOE" id="2MppyJmPR9Z" role="3Unl$J">
-      <ref role="3UniOC" node="3oGITgu_n$8" resolve="top event" />
+      <ref role="3UniOC" node="3oGITgu_n$8" resolve="_010_and_gate_top_event" />
     </node>
     <node concept="3Unl_R" id="2MppyJmNcqF" role="3Unl$J">
       <property role="3Un5U_" value="1000" />
-      <ref role="3Unl_b" node="3oGITgu_n$8" resolve="top event" />
+      <ref role="3Unl_b" node="3oGITgu_n$8" resolve="_010_and_gate_top_event" />
       <node concept="3Ugoyx" id="2MppyJmQV$P" role="3UgoyZ">
         <property role="3Ugoyw" value="_010_and_gate_out.tsv" />
       </node>
@@ -393,11 +393,11 @@
     </node>
     <node concept="3Unl_y" id="2MppyJmTn5_" role="3Unl$J" />
     <node concept="3UniOE" id="2MppyJmTn5A" role="3Unl$J">
-      <ref role="3UniOC" node="5sUzoS9Hb7L" resolve="top event" />
+      <ref role="3UniOC" node="5sUzoS9Hb7L" resolve="_020_or_gate_top_event" />
     </node>
     <node concept="3Unl_R" id="2MppyJmTn5B" role="3Unl$J">
       <property role="3Un5U_" value="1000" />
-      <ref role="3Unl_b" node="5sUzoS9Hb7L" resolve="top event" />
+      <ref role="3Unl_b" node="5sUzoS9Hb7L" resolve="_020_or_gate_top_event" />
       <node concept="3Ugoyx" id="2MppyJmTn5C" role="3UgoyZ">
         <property role="3Ugoyw" value="_020_or_gate_out.tsv" />
       </node>

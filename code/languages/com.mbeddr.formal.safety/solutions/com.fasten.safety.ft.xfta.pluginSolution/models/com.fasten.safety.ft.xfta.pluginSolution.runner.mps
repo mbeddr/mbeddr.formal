@@ -519,7 +519,7 @@
               <ref role="1Pybhc" to="fhlc:3AFGfkfpqfj" resolve="PathsUtils" />
               <node concept="2OqwBi" id="3R_yAtWncH7" role="37wK5m">
                 <node concept="37vLTw" id="3R_yAtWncy7" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3R_yAtWncvq" resolve="ft" />
+                  <ref role="3cqZAo" node="3R_yAtWncvq" resolve="script" />
                 </node>
                 <node concept="I4A8Y" id="3R_yAtWncTM" role="2OqNvi" />
               </node>
@@ -700,7 +700,7 @@
                 </node>
                 <node concept="2OqwBi" id="2XVAqcw02H_" role="3uHU7B">
                   <node concept="37vLTw" id="2XVAqcw02rE" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2XVAqcvZZUd" resolve="faultTree" />
+                    <ref role="3cqZAo" node="2XVAqcvZZUd" resolve="script" />
                   </node>
                   <node concept="3TrcHB" id="2XVAqcw03fE" role="2OqNvi">
                     <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -732,7 +732,7 @@
               <ref role="37wK5l" node="3R_yAtWncuQ" resolve="liftResults" />
               <ref role="1Pybhc" node="3R_yAtWncsr" resolve="ResultLifter" />
               <node concept="37vLTw" id="3R_yAtWo18T" role="37wK5m">
-                <ref role="3cqZAo" node="2XVAqcvZZUd" resolve="faultTree" />
+                <ref role="3cqZAo" node="2XVAqcvZZUd" resolve="script" />
               </node>
             </node>
             <node concept="37vLTw" id="2XVAqcw044I" role="37vLTJ">

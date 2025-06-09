@@ -64,7 +64,7 @@
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="XFTA script" />
     <property role="R4oN_" value="instructions for running the XFTA engine" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2MppyJmL3W4" role="1TKVEi">
       <property role="IQ2ns" value="3213712147578371844" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -85,7 +85,7 @@
     <property role="TrG5h" value="LoadModel" />
     <property role="34LRSv" value="load model" />
     <property role="3GE5qa" value="commands" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2MppyJmL3WO" role="1TKVEi">
       <property role="IQ2ns" value="3213712147578371892" />
       <property role="20kJfa" value="ft" />
@@ -105,7 +105,7 @@
     <property role="TrG5h" value="BuildTargetModel" />
     <property role="34LRSv" value="build target-model" />
     <property role="3GE5qa" value="commands" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2MppyJmL3Xa" role="PzmwI">
       <ref role="PrY4T" node="2MppyJmL3W3" resolve="IXFTAScriptContent" />
     </node>
@@ -115,7 +115,7 @@
     <property role="3GE5qa" value="commands" />
     <property role="TrG5h" value="ComputeProbability" />
     <property role="34LRSv" value="compute probability" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2MppyJmL3Xw" role="1TKVEi">
       <property role="IQ2ns" value="3213712147578371936" />
       <property role="20kJfa" value="top" />
@@ -137,7 +137,7 @@
     <property role="EcuMT" value="3213712147578374905" />
     <property role="3GE5qa" value="base" />
     <property role="TrG5h" value="EmptyLine" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2MppyJmL4FU" role="PzmwI">
       <ref role="PrY4T" node="2MppyJmL3W3" resolve="IXFTAScriptContent" />
     </node>
@@ -146,7 +146,7 @@
     <property role="EcuMT" value="3213712147578374913" />
     <property role="3GE5qa" value="commands" />
     <property role="TrG5h" value="BuildBDT" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2MppyJmL4G3" role="1TKVEi">
       <property role="IQ2ns" value="3213712147578374915" />
       <property role="20kJfa" value="top" />
@@ -161,7 +161,7 @@
     <property role="3GE5qa" value="commands" />
     <property role="TrG5h" value="ArbitraryTextLine" />
     <property role="34LRSv" value="arbitrary text" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2MppyJmL4Gw" role="1TKVEl">
       <property role="IQ2nx" value="3213712147578374944" />
       <property role="TrG5h" value="text" />
@@ -183,7 +183,7 @@
     <property role="EcuMT" value="3213712147579727498" />
     <property role="3GE5qa" value="base" />
     <property role="TrG5h" value="Output" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2MppyJmQeUb" role="1TKVEl">
       <property role="IQ2nx" value="3213712147579727499" />
       <property role="TrG5h" value="fileName" />
@@ -211,7 +211,7 @@
     <property role="EcuMT" value="3213712147579799119" />
     <property role="3GE5qa" value="commands" />
     <property role="TrG5h" value="PrintMinimalCutsets" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2MppyJmQwqx" role="1TKVEi">
       <property role="IQ2ns" value="3213712147579799201" />
       <property role="20kJfa" value="event" />
