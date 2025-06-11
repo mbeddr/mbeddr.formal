@@ -58,7 +58,7 @@
       <node concept="1QQeAL" id="41_NtXJuH0t" role="1QQeAC" />
       <node concept="KAwnT" id="41_NtXJuH0v" role="2FklKs">
         <node concept="KAwnX" id="41_NtXJuHkx" role="KALWe">
-          <ref role="KAwnW" node="41_NtXJr_KF" />
+          <ref role="KAwnW" node="41_NtXJr_KF" resolve="FSR_CEM_COLLISION_NEIGHBHOURING_EGO_LANE" />
         </node>
       </node>
       <node concept="2iDXIW" id="41_NtXJuH0x" role="0nOlf">
@@ -78,7 +78,7 @@
       <node concept="1QQeAL" id="41_NtXJuHjT" role="1QQeAC" />
       <node concept="KAwnT" id="41_NtXJuHjU" role="2FklKs">
         <node concept="KAwnX" id="41_NtXJuHjV" role="KALWe">
-          <ref role="KAwnW" node="41_NtXJr_KG" />
+          <ref role="KAwnW" node="41_NtXJr_KG" resolve="FSR_CEM_COLLISION_NEIGHBHOURING_1_1" />
         </node>
       </node>
       <node concept="2iDXIW" id="41_NtXJuHjW" role="0nOlf">
@@ -98,7 +98,7 @@
       <node concept="1QQeAL" id="41_NtXJuHXf" role="1QQeAC" />
       <node concept="KAwnT" id="41_NtXJuHXg" role="2FklKs">
         <node concept="KAwnX" id="41_NtXJuHXh" role="KALWe">
-          <ref role="KAwnW" node="41_NtXJr_KG" />
+          <ref role="KAwnW" node="41_NtXJr_KG" resolve="FSR_CEM_COLLISION_NEIGHBHOURING_1_1" />
         </node>
       </node>
       <node concept="2iDXIW" id="41_NtXJuHXi" role="0nOlf">

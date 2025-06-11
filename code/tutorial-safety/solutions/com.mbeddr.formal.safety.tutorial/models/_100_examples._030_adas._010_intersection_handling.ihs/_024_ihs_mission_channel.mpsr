@@ -486,7 +486,7 @@
         </node>
         <node concept="0Sh09" id="ZH03rPhKSQ" role="lGtFl">
           <node concept="hnKMr" id="ZH03rPhKT9" role="hnKMk">
-            <ref role="hnKMs" node="3Jn$RV2VwxQ" />
+            <ref role="hnKMs" node="3Jn$RV2VwxQ" resolve="FSR06.9.1" />
           </node>
         </node>
       </node>
@@ -1451,7 +1451,7 @@
         </node>
         <node concept="0Sh09" id="ZH03rPhKRd" role="lGtFl">
           <node concept="hnKMr" id="ZH03rPhKRq" role="hnKMk">
-            <ref role="hnKMs" node="3Jn$RV2VwxS" />
+            <ref role="hnKMs" node="3Jn$RV2VwxS" resolve="FSR06.10" />
           </node>
         </node>
       </node>
@@ -1506,7 +1506,7 @@
         </node>
         <node concept="0Sh09" id="ZH03rPhKRB" role="lGtFl">
           <node concept="hnKMr" id="ZH03rPhKRS" role="hnKMk">
-            <ref role="hnKMs" node="3Jn$RV2VwxY" />
+            <ref role="hnKMs" node="3Jn$RV2VwxY" resolve="FSR06.11" />
           </node>
         </node>
       </node>

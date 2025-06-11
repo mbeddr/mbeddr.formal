@@ -240,7 +240,7 @@
       </node>
       <node concept="0Sh09" id="_wUu$TZDcw" role="lGtFl">
         <node concept="hnKMr" id="55oVyA0r_z1" role="hnKMk">
-          <ref role="hnKMs" to="rd3y:_wUu$TY_gq" />
+          <ref role="hnKMs" to="rd3y:_wUu$TY_gq" resolve="FSR_CEM_ACTIVATION_UNINTENDED_03" />
         </node>
       </node>
     </node>
@@ -270,7 +270,7 @@
         </node>
         <node concept="N8ley" id="41_NtXJvtUu" role="Nnt9r">
           <node concept="KAwnX" id="41_NtXJvtW7" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:41_NtXJvtUH" />
+            <ref role="KAwnW" to="rd3y:41_NtXJvtUH" resolve="FSR_CEM_ACTIVATION_UNINTENDED_04" />
           </node>
         </node>
       </node>

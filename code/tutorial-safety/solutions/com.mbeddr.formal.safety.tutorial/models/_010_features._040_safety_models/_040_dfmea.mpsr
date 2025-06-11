@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._040_safety_models)" content="root">
+<model ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._049_safety_models_all_together)" content="root">
   <persistence version="9" />
   <imports />
   <registry>

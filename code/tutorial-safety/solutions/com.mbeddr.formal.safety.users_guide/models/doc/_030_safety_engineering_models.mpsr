@@ -2,7 +2,7 @@
 <model ref="r:ffdc23de-2347-43cf-8b68-9eee3e234e66(doc)" content="root">
   <persistence version="9" />
   <imports>
-    <import index="688z" ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._040_safety_models)" implicit="true" />
+    <import index="688z" ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._049_safety_models_all_together)" implicit="true" />
   </imports>
   <registry>
     <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">

@@ -65,7 +65,7 @@
       </node>
       <node concept="KAwnT" id="3Jn$RV2VwCc" role="2FklKs">
         <node concept="KAwnX" id="3Jn$RV2VwCu" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2VwxK" />
+          <ref role="KAwnW" node="3Jn$RV2VwxK" resolve="FSR06.1.2" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2VwCd" role="1QQeAC">
@@ -92,7 +92,7 @@
       </node>
       <node concept="KAwnT" id="3Jn$RV2VwCh" role="2FklKs">
         <node concept="KAwnX" id="3Jn$RV2VwCx" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2VwxK" />
+          <ref role="KAwnW" node="3Jn$RV2VwxK" resolve="FSR06.1.2" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2VwCi" role="1QQeAC">
@@ -119,10 +119,10 @@
       </node>
       <node concept="KAwnT" id="3Jn$RV2VwCm" role="2FklKs">
         <node concept="KAwnX" id="3Jn$RV2VwC$" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2VwxK" />
+          <ref role="KAwnW" node="3Jn$RV2VwxK" resolve="FSR06.1.2" />
         </node>
         <node concept="KAwnX" id="3Jn$RV2VwC_" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2VwC6" />
+          <ref role="KAwnW" node="3Jn$RV2VwC6" resolve="TSR05" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2VwCn" role="1QQeAC">
@@ -149,10 +149,10 @@
       </node>
       <node concept="KAwnT" id="3Jn$RV2VwCr" role="2FklKs">
         <node concept="KAwnX" id="3Jn$RV2VwCC" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2VwxK" />
+          <ref role="KAwnW" node="3Jn$RV2VwxK" resolve="FSR06.1.2" />
         </node>
         <node concept="KAwnX" id="3Jn$RV2VwCD" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2VwC6" />
+          <ref role="KAwnW" node="3Jn$RV2VwC6" resolve="TSR05" />
         </node>
       </node>
       <node concept="1QQeAY" id="3Jn$RV2VwCs" role="1QQeAC">

@@ -88,7 +88,7 @@
           <property role="19SUeA" value="EB" />
           <node concept="0Sh09" id="4tgWazNvndt" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$Tg" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg3oT" />
+              <ref role="hnKMs" node="4WLVkAsg3oT" resolve="SG01_EB" />
             </node>
           </node>
         </node>
@@ -156,7 +156,7 @@
           <property role="19SUeA" value="Warn driver" />
           <node concept="0Sh09" id="4j8iycQYkXw" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$Te" role="hnKMk">
-              <ref role="hnKMs" node="4tgWazNvlzx" />
+              <ref role="hnKMs" node="4tgWazNvlzx" resolve="SG02_EB" />
             </node>
           </node>
         </node>
@@ -188,7 +188,7 @@
           <property role="19SUeA" value="Sensor function " />
           <node concept="0Sh09" id="4j8iycQYmwb" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$Tc" role="hnKMk">
-              <ref role="hnKMs" node="4tgWazNvlzR" />
+              <ref role="hnKMs" node="4tgWazNvlzR" resolve="SG03_EB" />
             </node>
           </node>
         </node>

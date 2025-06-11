@@ -489,22 +489,22 @@
         </node>
         <node concept="N8ley" id="41_NtXJu_zt" role="Nnt9r">
           <node concept="KAwnX" id="41_NtXJuD$5" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:_wUu$TYcYh" />
+            <ref role="KAwnW" to="rd3y:_wUu$TYcYh" resolve="FSR_CEM_ACTIVATION_UNINTENDED_01" />
           </node>
           <node concept="KAwnX" id="41_NtXJuD$i" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:_wUu$TYcYz" />
+            <ref role="KAwnW" to="rd3y:_wUu$TYcYz" resolve="FSR_CEM_ACTIVATION_UNINTENDED_02" />
           </node>
           <node concept="KAwnX" id="41_NtXJuD$A" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:_wUu$TYcYE" />
+            <ref role="KAwnW" to="rd3y:_wUu$TYcYE" resolve="FSR_CEM_ACTIVATION_UNINTENDED_ODD_01" />
           </node>
           <node concept="KAwnX" id="41_NtXJuD$M" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:_wUu$TY_g8" />
+            <ref role="KAwnW" to="rd3y:_wUu$TY_g8" resolve="FSR_CEM_ACTIVATION_UNINTENDED_ODD_02" />
           </node>
           <node concept="KAwnX" id="41_NtXJuD_0" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:41_NtXJpd2C" />
+            <ref role="KAwnW" to="rd3y:41_NtXJpd2C" resolve="FSR_CEM_ACTIVATION_UNINTENDED_ODD_03" />
           </node>
           <node concept="KAwnX" id="41_NtXJuD$o" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:_wUu$TY_gq" />
+            <ref role="KAwnW" to="rd3y:_wUu$TY_gq" resolve="FSR_CEM_ACTIVATION_UNINTENDED_03" />
           </node>
         </node>
       </node>
@@ -515,16 +515,16 @@
         </node>
         <node concept="N8ley" id="41_NtXJvtWZ" role="Nnt9r">
           <node concept="KAwnX" id="41_NtXJvtXc" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:_wUu$TZD60" />
+            <ref role="KAwnW" to="rd3y:_wUu$TZD60" resolve="FR_CEM_1" />
           </node>
           <node concept="KAwnX" id="41_NtXJvvsp" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:41_NtXJuH0s" />
+            <ref role="KAwnW" to="rd3y:41_NtXJuH0s" resolve="FSR_CEM_COL_NEIGHB_EGO_LANE_HW_1" />
           </node>
           <node concept="KAwnX" id="41_NtXJvvsx" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:41_NtXJuHjS" />
+            <ref role="KAwnW" to="rd3y:41_NtXJuHjS" resolve="FSR_CEM_COL_NEIGHB_SAFE_DIST_HW_PARKED_1" />
           </node>
           <node concept="KAwnX" id="41_NtXJvvsF" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:41_NtXJuHXe" />
+            <ref role="KAwnW" to="rd3y:41_NtXJuHXe" resolve="FSR_CEM_COL_NEIGHB_SAFE_DIST_PARALLEL_VEH" />
           </node>
         </node>
       </node>

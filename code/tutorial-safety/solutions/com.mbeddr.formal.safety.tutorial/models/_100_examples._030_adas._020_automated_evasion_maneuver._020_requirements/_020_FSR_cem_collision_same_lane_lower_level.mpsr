@@ -56,7 +56,7 @@
       <property role="0ke_I" value="dan" />
       <node concept="KAwnT" id="2rSUIGXuVYI" role="2FklKs">
         <node concept="KAwnX" id="2rSUIGXuVYV" role="KALWe">
-          <ref role="KAwnW" node="41_NtXJr_Li" />
+          <ref role="KAwnW" node="41_NtXJr_Li" resolve="FSR_CEM_COLLISION_SAME_LANE_1" />
         </node>
       </node>
       <node concept="2iDXIW" id="2rSUIGXuVYN" role="0nOlf">
@@ -81,7 +81,7 @@
       <property role="0ke_I" value="dan" />
       <node concept="KAwnT" id="2rSUIGXuW0w" role="2FklKs">
         <node concept="KAwnX" id="2rSUIGXuW18" role="KALWe">
-          <ref role="KAwnW" node="2rSUIGXuVZP" />
+          <ref role="KAwnW" node="2rSUIGXuVZP" resolve="FSR_CEM_COLLISION_SAME_LANE_2" />
         </node>
       </node>
       <node concept="2iDXIW" id="2rSUIGXuW0A" role="0nOlf">
@@ -106,7 +106,7 @@
       <property role="0ke_I" value="dan" />
       <node concept="KAwnT" id="2rSUIGXuW43" role="2FklKs">
         <node concept="KAwnX" id="2rSUIGXuW44" role="KALWe">
-          <ref role="KAwnW" node="2rSUIGXuVZP" />
+          <ref role="KAwnW" node="2rSUIGXuVZP" resolve="FSR_CEM_COLLISION_SAME_LANE_2" />
         </node>
       </node>
       <node concept="2iDXIW" id="2rSUIGXuW45" role="0nOlf">

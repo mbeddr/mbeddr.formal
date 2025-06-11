@@ -50,7 +50,7 @@
       <node concept="1QQeFk" id="41_NtXJuHgK" role="0nOlf" />
       <node concept="KAwnT" id="41_NtXJuHgL" role="2FklKs">
         <node concept="KAwnX" id="41_NtXJuHhL" role="KALWe">
-          <ref role="KAwnW" node="41_NtXJuH5h" />
+          <ref role="KAwnW" node="41_NtXJuH5h" resolve="FR_CEM_ACTIVATION_CONDITION" />
         </node>
       </node>
     </node>
@@ -65,7 +65,7 @@
       <node concept="1QQeFk" id="41_NtXJvl9K" role="0nOlf" />
       <node concept="KAwnT" id="41_NtXJvl9L" role="2FklKs">
         <node concept="KAwnX" id="41_NtXJvl9M" role="KALWe">
-          <ref role="KAwnW" node="41_NtXJuH5h" />
+          <ref role="KAwnW" node="41_NtXJuH5h" resolve="FR_CEM_ACTIVATION_CONDITION" />
         </node>
       </node>
     </node>

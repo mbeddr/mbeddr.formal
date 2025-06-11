@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:01c63dab-3c7b-4a81-b088-84727219e340(_010_features._040_safety_models_fault_trees)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="091b20ea-7bf0-41d6-8e6e-4460a9bd8121" name="com.fasten.safety.ft.xfta_gen">
+      <concept id="3213712147579727498" name="com.fasten.safety.ft.xfta_gen.structure.Output" flags="ng" index="3Ugoyx">
+        <property id="3213712147579727499" name="fileName" index="3Ugoyw" />
+      </concept>
+      <concept id="3213712147579727507" name="com.fasten.safety.ft.xfta_gen.structure.IGenerateOutput" flags="ngI" index="3UgoyS">
+        <child id="3213712147579727508" name="output" index="3UgoyZ" />
+      </concept>
+      <concept id="3213712147578374913" name="com.fasten.safety.ft.xfta_gen.structure.BuildBDT" flags="ng" index="3UniOE">
+        <reference id="3213712147578374915" name="top" index="3UniOC" />
+      </concept>
+      <concept id="3213712147578371841" name="com.fasten.safety.ft.xfta_gen.structure.XFTAScript" flags="ng" index="3Unl$E">
+        <child id="3213712147578371844" name="content" index="3Unl$J" />
+      </concept>
+      <concept id="3213712147578371870" name="com.fasten.safety.ft.xfta_gen.structure.LoadModel" flags="ng" index="3Unl$P">
+        <reference id="3213712147578371892" name="ft" index="3Unl$v" />
+      </concept>
+      <concept id="3213712147578371913" name="com.fasten.safety.ft.xfta_gen.structure.BuildTargetModel" flags="ng" index="3Unl_y" />
+      <concept id="3213712147578371932" name="com.fasten.safety.ft.xfta_gen.structure.ComputeProbability" flags="ng" index="3Unl_R">
+        <property id="3213712147578435726" name="missionTime" index="3Un5U_" />
+        <reference id="3213712147578371936" name="top" index="3Unl_b" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="3Unl$E" id="2MppyJmTn5z">
+    <property role="TrG5h" value="_030_plant_burning_script" />
+    <property role="3GE5qa" value="_030_quantitative_fault_tree_analysis" />
+    <node concept="3Unl$P" id="2MppyJmTn5$" role="3Unl$J">
+      <ref role="3Unl$v" node="2zYHfFNJUAN" resolve="_030_plant_burning" />
+    </node>
+    <node concept="3Unl_y" id="2MppyJmTn5_" role="3Unl$J" />
+    <node concept="3UniOE" id="2MppyJmTn5A" role="3Unl$J">
+      <ref role="3UniOC" node="2zYHfFNJUSM" resolve="PLANT_LOSS_BY_BURNING" />
+    </node>
+    <node concept="3Unl_R" id="2MppyJmTn5B" role="3Unl$J">
+      <property role="3Un5U_" value="1000" />
+      <ref role="3Unl_b" node="2zYHfFNJUSM" resolve="PLANT_LOSS_BY_BURNING" />
+      <node concept="3Ugoyx" id="2MppyJmTn5C" role="3UgoyZ">
+        <property role="3Ugoyw" value="_030_plant_burning_out.tsv" />
+      </node>
+    </node>
+  </node>
+</model>
+

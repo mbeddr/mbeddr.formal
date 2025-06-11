@@ -72,7 +72,7 @@
       </node>
       <node concept="KAwnT" id="41_NtXJt5Oe" role="2FklKs">
         <node concept="KAwnX" id="41_NtXJt5Oi" role="KALWe">
-          <ref role="KAwnW" node="_wUu$TYGQO" />
+          <ref role="KAwnW" node="_wUu$TYGQO" resolve="FSR_CEM_COLLISION_1_1" />
         </node>
       </node>
       <node concept="2iDXIW" id="41_NtXJr_L6" role="0nOlf">
@@ -96,7 +96,7 @@
       </node>
       <node concept="KAwnT" id="41_NtXJtxqr" role="2FklKs">
         <node concept="KAwnX" id="41_NtXJtxqw" role="KALWe">
-          <ref role="KAwnW" node="41_NtXJr_KF" />
+          <ref role="KAwnW" node="41_NtXJr_KF" resolve="FSR_CEM_COLLISION_NEIGHBHOURING_EGO_LANE" />
         </node>
       </node>
       <node concept="2iDXIW" id="41_NtXJr_KK" role="0nOlf">
@@ -120,7 +120,7 @@
       </node>
       <node concept="KAwnT" id="41_NtXJu$r7" role="2FklKs">
         <node concept="KAwnX" id="41_NtXJu$r8" role="KALWe">
-          <ref role="KAwnW" node="41_NtXJr_KF" />
+          <ref role="KAwnW" node="41_NtXJr_KF" resolve="FSR_CEM_COLLISION_NEIGHBHOURING_EGO_LANE" />
         </node>
       </node>
       <node concept="2iDXIW" id="41_NtXJu$r9" role="0nOlf">
@@ -144,7 +144,7 @@
       </node>
       <node concept="KAwnT" id="41_NtXJu_d5" role="2FklKs">
         <node concept="KAwnX" id="41_NtXJu_da" role="KALWe">
-          <ref role="KAwnW" node="41_NtXJr_KF" />
+          <ref role="KAwnW" node="41_NtXJr_KF" resolve="FSR_CEM_COLLISION_NEIGHBHOURING_EGO_LANE" />
         </node>
       </node>
       <node concept="2iDXIW" id="41_NtXJr_KS" role="0nOlf">
@@ -168,7 +168,7 @@
       </node>
       <node concept="KAwnT" id="41_NtXJuHhS" role="2FklKs">
         <node concept="KAwnX" id="41_NtXJuHhX" role="KALWe">
-          <ref role="KAwnW" node="41_NtXJr_KF" />
+          <ref role="KAwnW" node="41_NtXJr_KF" resolve="FSR_CEM_COLLISION_NEIGHBHOURING_EGO_LANE" />
         </node>
       </node>
       <node concept="2iDXIW" id="41_NtXJr_L0" role="0nOlf">

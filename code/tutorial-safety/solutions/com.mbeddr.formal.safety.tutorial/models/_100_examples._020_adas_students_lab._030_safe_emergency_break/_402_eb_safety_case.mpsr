@@ -1394,19 +1394,19 @@
           <property role="19SUeA" value="Ensure that " />
         </node>
         <node concept="2aGvr3" id="22e91OCPL_l" role="19SJt6">
-          <ref role="2aGvrx" node="4tgWazNvlzR" />
+          <ref role="2aGvrx" node="4tgWazNvlzR" resolve="SG03_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPL_m" role="19SJt6">
           <property role="19SUeA" value="&#10;&quot;Recognize approaching obstacle&quot; and " />
         </node>
         <node concept="2aGvr3" id="6i8f1VRXiRq" role="19SJt6">
-          <ref role="2aGvrx" node="4WLVkAsg3oT" />
+          <ref role="2aGvrx" node="4WLVkAsg3oT" resolve="SG01_EB" />
         </node>
         <node concept="19SUe$" id="6i8f1VRXiTv" role="19SJt6">
           <property role="19SUeA" value=" incl." />
         </node>
         <node concept="2aGvr3" id="6i8f1VRXiTt" role="19SJt6">
-          <ref role="2aGvrx" node="54T4ifBJt07" />
+          <ref role="2aGvrx" node="54T4ifBJt07" resolve="SG01_01_EB" />
         </node>
         <node concept="19SUe$" id="6i8f1VRXiTu" role="19SJt6">
           <property role="19SUeA" value=" are met." />
@@ -1424,13 +1424,13 @@
           <property role="19SUeA" value="Sensor funcion ensured " />
         </node>
         <node concept="2aGvr3" id="22e91OCPLIP" role="19SJt6">
-          <ref role="2aGvrx" node="4j8iycQYmv5" />
+          <ref role="2aGvrx" node="4j8iycQYmv5" resolve="FSR03_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPLIR" role="19SJt6">
           <property role="19SUeA" value=" &#10;by addressing HW and SW reliability. " />
         </node>
         <node concept="2aGvr3" id="22e91OCPLJT" role="19SJt6">
-          <ref role="2aGvrx" node="2l0tHRMMe38" />
+          <ref role="2aGvrx" node="2l0tHRMMe38" resolve="TSR02_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPLJU" role="19SJt6" />
       </node>
@@ -1446,13 +1446,13 @@
           <property role="19SUeA" value="Sensor redundancy " />
         </node>
         <node concept="2aGvr3" id="22e91OCPMfn" role="19SJt6">
-          <ref role="2aGvrx" node="2l0tHRMMe3x" />
+          <ref role="2aGvrx" node="2l0tHRMMe3x" resolve="TSR02_01_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPMfo" role="19SJt6">
           <property role="19SUeA" value=" is given&#10;by implemented sensor voter " />
         </node>
         <node concept="2aGvr3" id="22e91OCPMgq" role="19SJt6">
-          <ref role="2aGvrx" node="5L9QjI21i2p" />
+          <ref role="2aGvrx" node="5L9QjI21i2p" resolve="TSR02_01_01_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPMgr" role="19SJt6">
           <property role="19SUeA" value="." />
@@ -1466,13 +1466,13 @@
           <property role="19SUeA" value="The system detects failures " />
         </node>
         <node concept="2aGvr3" id="22e91OCPMDA" role="19SJt6">
-          <ref role="2aGvrx" node="2l0tHRMMe3D" />
+          <ref role="2aGvrx" node="2l0tHRMMe3D" resolve="TSR02_02_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPMDB" role="19SJt6">
           <property role="19SUeA" value="&#10;by monitoring the braking system " />
         </node>
         <node concept="2aGvr3" id="22e91OCPMED" role="19SJt6">
-          <ref role="2aGvrx" node="2l0tHRMMe55" />
+          <ref role="2aGvrx" node="2l0tHRMMe55" resolve="TSR02_02_01_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPMEE" role="19SJt6">
           <property role="19SUeA" value="." />
@@ -1584,13 +1584,13 @@
           <property role="19SUeA" value="Ensure that " />
         </node>
         <node concept="2aGvr3" id="22e91OCPOJT" role="19SJt6">
-          <ref role="2aGvrx" node="4tgWazNvlzx" />
+          <ref role="2aGvrx" node="4tgWazNvlzx" resolve="SG02_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPOJU" role="19SJt6">
           <property role="19SUeA" value=" " />
         </node>
         <node concept="2aGvr3" id="22e91OCPPDo" role="19SJt6">
-          <ref role="2aGvrx" node="4WLVkAsg6H2" />
+          <ref role="2aGvrx" node="4WLVkAsg6H2" resolve="FSR02_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPPDp" role="19SJt6">
           <property role="19SUeA" value="&#10;&quot;Driver warning&quot; are met." />
@@ -1608,7 +1608,7 @@
           <property role="19SUeA" value="The system detects failures, preventing it&#10;from operating safely. " />
         </node>
         <node concept="2aGvr3" id="22e91OCPP3k" role="19SJt6">
-          <ref role="2aGvrx" node="54T4ifBJt7K" />
+          <ref role="2aGvrx" node="54T4ifBJt7K" resolve="FSR02_02_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPP3l" role="19SJt6" />
       </node>
@@ -1632,7 +1632,7 @@
           <property role="19SUeA" value="The driver is informed about the system &#10;status at any time. " />
         </node>
         <node concept="2aGvr3" id="22e91OCPPQ1" role="19SJt6">
-          <ref role="2aGvrx" node="2NJwv_HFK2a" />
+          <ref role="2aGvrx" node="2NJwv_HFK2a" resolve="TSR04_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPPQ2" role="19SJt6" />
       </node>
@@ -1644,7 +1644,7 @@
           <property role="19SUeA" value="In case of a system failure, a warning&#10;message is shown on the display. " />
         </node>
         <node concept="2aGvr3" id="22e91OCPPS2" role="19SJt6">
-          <ref role="2aGvrx" node="3OFTjxLQzSy" />
+          <ref role="2aGvrx" node="3OFTjxLQzSy" resolve="TSR04_01_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPPS3" role="19SJt6" />
       </node>
@@ -1664,7 +1664,7 @@
           <property role="19SUeA" value="If the system detects an imminent collision,&#10;the driver is warned. " />
         </node>
         <node concept="2aGvr3" id="22e91OCPQdr" role="19SJt6">
-          <ref role="2aGvrx" node="54T4ifBJt7C" />
+          <ref role="2aGvrx" node="54T4ifBJt7C" resolve="FSR02_01_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPQds" role="19SJt6" />
       </node>
@@ -1680,13 +1680,13 @@
           <property role="19SUeA" value="The driver is warned " />
         </node>
         <node concept="2aGvr3" id="22e91OCPQIm" role="19SJt6">
-          <ref role="2aGvrx" node="3OFTjxLQzSE" />
+          <ref role="2aGvrx" node="3OFTjxLQzSE" resolve="TSR04_02_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPQIn" role="19SJt6">
           <property role="19SUeA" value="&#10;with a display message and a vibration&#10;of the steering wheel " />
         </node>
         <node concept="2aGvr3" id="22e91OCPQJp" role="19SJt6">
-          <ref role="2aGvrx" node="5et_HVSMSIF" />
+          <ref role="2aGvrx" node="5et_HVSMSIF" resolve="IR01_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPQJq" role="19SJt6">
           <property role="19SUeA" value="." />
@@ -1750,7 +1750,7 @@
           <property role="19SUeA" value="Ensure that " />
         </node>
         <node concept="2aGvr3" id="22e91OCPSFS" role="19SJt6">
-          <ref role="2aGvrx" node="54T4ifBJt0k" />
+          <ref role="2aGvrx" node="54T4ifBJt0k" resolve="SG01_02_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPSFT" role="19SJt6">
           <property role="19SUeA" value="&#10;&quot;Avoid rear-end collision&quot; is met." />
@@ -1792,7 +1792,7 @@
           <property role="19SUeA" value="The driver can override the system " />
         </node>
         <node concept="2aGvr3" id="22e91OCPT83" role="19SJt6">
-          <ref role="2aGvrx" node="2NJwv_HFGO2" />
+          <ref role="2aGvrx" node="2NJwv_HFGO2" resolve="TSR03_EB" />
         </node>
         <node concept="19SUe$" id="22e91OCPT84" role="19SJt6">
           <property role="19SUeA" value=".&#10;The driver can change the state of the EB system when the driver&#10;- deactivates the system using the throttle during the warning period&#10;- reacts on the warning and initiates braking himself&#10;- changes the lane to avoid a collision" />

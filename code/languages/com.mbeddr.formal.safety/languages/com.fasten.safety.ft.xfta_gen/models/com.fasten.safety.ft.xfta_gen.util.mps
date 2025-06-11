@@ -10,6 +10,8 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="fazf" ref="r:28cb0bbd-efcb-4c9e-94f2-4ccc928adfb4(com.fasten.safety.ft.behavior)" implicit="true" />
+    <import index="rat1" ref="r:2c8ccb8e-a08f-45aa-8a13-53170b878b46(com.fasten.safety.ft.xfta_gen.behavior)" implicit="true" />
+    <import index="a7wd" ref="r:0d8de557-bbe4-455a-a872-4eb6baf716c6(com.fasten.safety.ft.xfta_gen.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -369,17 +371,12 @@
       <property role="TrG5h" value="resultsFileName" />
       <node concept="3clFbS" id="3R_yAtWn3yl" role="3clF47">
         <node concept="3clFbF" id="3R_yAtWn3E$" role="3cqZAp">
-          <node concept="3cpWs3" id="3R_yAtWn4nB" role="3clFbG">
-            <node concept="Xl_RD" id="3R_yAtWn4pv" role="3uHU7w">
-              <property role="Xl_RC" value="_output.tsv" />
+          <node concept="2OqwBi" id="2MppyJmSZ9_" role="3clFbG">
+            <node concept="37vLTw" id="2MppyJmSYVT" role="2Oq$k0">
+              <ref role="3cqZAo" node="3R_yAtWn3_u" resolve="script" />
             </node>
-            <node concept="2OqwBi" id="3R_yAtWn3NH" role="3uHU7B">
-              <node concept="37vLTw" id="3R_yAtWn3Ez" role="2Oq$k0">
-                <ref role="3cqZAo" node="3R_yAtWn3_u" resolve="ft" />
-              </node>
-              <node concept="3TrcHB" id="3R_yAtWn3YX" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
-              </node>
+            <node concept="2qgKlT" id="2MppyJmSZnh" role="2OqNvi">
+              <ref role="37wK5l" to="rat1:2MppyJmRMrr" resolve="getOutputFileName" />
             </node>
           </node>
         </node>
@@ -387,9 +384,9 @@
       <node concept="3Tm1VV" id="3R_yAtWn3ts" role="1B3o_S" />
       <node concept="17QB3L" id="3R_yAtWn3xm" role="3clF45" />
       <node concept="37vLTG" id="3R_yAtWn3_u" role="3clF46">
-        <property role="TrG5h" value="ft" />
+        <property role="TrG5h" value="script" />
         <node concept="3Tqbb2" id="3R_yAtWn3_t" role="1tU5fm">
-          <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+          <ref role="ehGHo" to="a7wd:2MppyJmL3W1" resolve="XFTAScript" />
         </node>
       </node>
     </node>

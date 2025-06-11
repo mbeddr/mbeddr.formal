@@ -746,19 +746,19 @@
       <node concept="19SGf9" id="7LcbFqtrkoS" role="2vnaTY">
         <node concept="19SUe$" id="2us2R$MJyrj" role="19SJt6" />
         <node concept="2aGvr3" id="2us2R$MJyrh" role="19SJt6">
-          <ref role="2aGvrx" node="7NWnpv9rNPc" />
+          <ref role="2aGvrx" node="7NWnpv9rNPc" resolve="FSR01_LK_Control" />
         </node>
         <node concept="19SUe$" id="2us2R$MJyri" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
         <node concept="2aGvr3" id="2us2R$MJyj5" role="19SJt6">
-          <ref role="2aGvrx" node="2NJwv_HFGHB" />
+          <ref role="2aGvrx" node="2NJwv_HFGHB" resolve="TSR01_LK_Control" />
         </node>
         <node concept="19SUe$" id="7LcbFqtrkoT" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
         <node concept="2aGvr3" id="2us2R$MJyla" role="19SJt6">
-          <ref role="2aGvrx" node="2NJwv_HFGIc" />
+          <ref role="2aGvrx" node="2NJwv_HFGIc" resolve="TSR02_LK_Control" />
         </node>
         <node concept="19SUe$" id="2us2R$MJylb" role="19SJt6" />
       </node>
@@ -770,25 +770,25 @@
           <property role="19SUeA" value="Communication simulated in Gazebo&#10;" />
         </node>
         <node concept="2aGvr3" id="2us2R$MJyFM" role="19SJt6">
-          <ref role="2aGvrx" node="7NWnpv9rNZJ" />
+          <ref role="2aGvrx" node="7NWnpv9rNZJ" resolve="FSR05_LK_Control" />
         </node>
         <node concept="19SUe$" id="2us2R$MJyFN" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
         <node concept="2aGvr3" id="2us2R$MJyGR" role="19SJt6">
-          <ref role="2aGvrx" node="7NWnpv9rO2s" />
+          <ref role="2aGvrx" node="7NWnpv9rO2s" resolve="FSR06_LK_Control" />
         </node>
         <node concept="19SUe$" id="2us2R$MJyGS" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
         <node concept="2aGvr3" id="2us2R$MJyKY" role="19SJt6">
-          <ref role="2aGvrx" node="2NJwv_HFK2a" />
+          <ref role="2aGvrx" node="2NJwv_HFK2a" resolve="TSR05_LK_Control" />
         </node>
         <node concept="19SUe$" id="2us2R$MJyKZ" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
         <node concept="2aGvr3" id="2us2R$MJyM7" role="19SJt6">
-          <ref role="2aGvrx" node="2NJwv_HFK5l" />
+          <ref role="2aGvrx" node="2NJwv_HFK5l" resolve="TSR06_LK_Control" />
         </node>
         <node concept="19SUe$" id="2us2R$MJyM8" role="19SJt6" />
       </node>
@@ -890,13 +890,13 @@
       <node concept="19SGf9" id="2us2R$MJywr" role="2vnaTY">
         <node concept="19SUe$" id="2us2R$MJyyy" role="19SJt6" />
         <node concept="2aGvr3" id="2us2R$MJy_A" role="19SJt6">
-          <ref role="2aGvrx" node="7NWnpv9rNTs" />
+          <ref role="2aGvrx" node="7NWnpv9rNTs" resolve="FSR04_LK_Control" />
         </node>
         <node concept="19SUe$" id="2us2R$MJyws" role="19SJt6">
           <property role="19SUeA" value="&#10;" />
         </node>
         <node concept="2aGvr3" id="2us2R$MJyBF" role="19SJt6">
-          <ref role="2aGvrx" node="2NJwv_HFGO2" />
+          <ref role="2aGvrx" node="2NJwv_HFGO2" resolve="TSR04_LK_Control" />
         </node>
         <node concept="19SUe$" id="2us2R$MJyBG" role="19SJt6" />
       </node>
@@ -908,7 +908,7 @@
           <property role="19SUeA" value="Simulation results&#10;" />
         </node>
         <node concept="2aGvr3" id="2us2R$MJzfM" role="19SJt6">
-          <ref role="2aGvrx" node="7NWnpv9rO5h" />
+          <ref role="2aGvrx" node="7NWnpv9rO5h" resolve="FSR00_LK_Control" />
         </node>
         <node concept="19SUe$" id="2us2R$MJzfN" role="19SJt6" />
       </node>

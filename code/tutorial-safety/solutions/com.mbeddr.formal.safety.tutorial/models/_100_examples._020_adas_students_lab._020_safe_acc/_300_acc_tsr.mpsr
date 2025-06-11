@@ -116,7 +116,7 @@
         </node>
         <node concept="0Sh09" id="2vEFX4zn0Bl" role="lGtFl">
           <node concept="hnKMr" id="2vEFX4zn0Bn" role="hnKMk">
-            <ref role="hnKMs" node="4j8iycQYmv5" />
+            <ref role="hnKMs" node="4j8iycQYmv5" resolve="FSR03_ACC" />
           </node>
         </node>
       </node>
