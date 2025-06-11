@@ -67,7 +67,7 @@
           <property role="19SUeA" value="Software quality " />
           <node concept="0Sh09" id="4j8iycQYkZe" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$SY" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6IZ" />
+              <ref role="hnKMs" node="4WLVkAsg6IZ" resolve="FSR03_LK" />
             </node>
           </node>
         </node>
@@ -91,7 +91,7 @@
           <property role="19SUeA" value="Reliabilty of hardware" />
           <node concept="0Sh09" id="4j8iycQYkZg" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$SW" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6IZ" />
+              <ref role="hnKMs" node="4WLVkAsg6IZ" resolve="FSR03_LK" />
             </node>
           </node>
         </node>
@@ -115,7 +115,7 @@
           <property role="19SUeA" value="Restart system in case of inconsistent computation " />
           <node concept="0Sh09" id="4j8iycQYkZi" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$SU" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6H2" />
+              <ref role="hnKMs" node="4WLVkAsg6H2" resolve="FSR02_LK" />
             </node>
           </node>
         </node>
@@ -139,7 +139,7 @@
           <property role="19SUeA" value="Hardware failure detection" />
           <node concept="0Sh09" id="4j8iycQYkZk" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$SS" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6H2" />
+              <ref role="hnKMs" node="4WLVkAsg6H2" resolve="FSR02_LK" />
             </node>
           </node>
         </node>
@@ -154,7 +154,7 @@
           <property role="19SUeA" value="Allocate sufficient ressources" />
           <node concept="0Sh09" id="4j8iycQYkZF" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$SK" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6IZ" />
+              <ref role="hnKMs" node="4WLVkAsg6IZ" resolve="FSR03_LK" />
             </node>
           </node>
         </node>
@@ -187,7 +187,7 @@
           <property role="19SUeA" value="Watchdog" />
           <node concept="0Sh09" id="4j8iycQYll4" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$SM" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6Gx" />
+              <ref role="hnKMs" node="4WLVkAsg6Gx" resolve="FSR01_LK" />
             </node>
           </node>
         </node>
@@ -211,7 +211,7 @@
           <property role="19SUeA" value="N-Version Image processing " />
           <node concept="0Sh09" id="4j8iycQYlmX" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$SO" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6IZ" />
+              <ref role="hnKMs" node="4WLVkAsg6IZ" resolve="FSR03_LK" />
             </node>
           </node>
         </node>
@@ -235,7 +235,7 @@
           <property role="19SUeA" value="Monitor Channel of the  camera " />
           <node concept="0Sh09" id="4j8iycQYlpu" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$SQ" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6Pl" />
+              <ref role="hnKMs" node="4WLVkAsg6Pl" resolve="FSR06_LK" />
             </node>
           </node>
         </node>

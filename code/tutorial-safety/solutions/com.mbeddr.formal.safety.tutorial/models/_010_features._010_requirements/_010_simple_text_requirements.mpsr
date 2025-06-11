@@ -69,7 +69,7 @@
               <property role="19SUeA" value="An airbag shall protect the passengers of a car in case of impact.&#10;The figure below illustrates intuitively the deployment of airbags.&#10;Requirement " />
             </node>
             <node concept="2aGvr3" id="5UKHWoLYYL5" role="19SJt6">
-              <ref role="2aGvrx" node="5FhZjqTMRVO" />
+              <ref role="2aGvrx" node="5FhZjqTMRVO" resolve="010.02" />
             </node>
             <node concept="19SUe$" id="5UKHWoLYYL6" role="19SJt6">
               <property role="19SUeA" value=" contains the specification of the interface&#10;between the car sensors and the airbag system.&#10;&#10;" />
@@ -101,7 +101,7 @@
               <property role="19SUeA" value="Textual specification for the sensing modules.&#10;Other requirements can be referenced in text - see " />
             </node>
             <node concept="2aGvr3" id="VJbr0XaaIj" role="19SJt6">
-              <ref role="2aGvrx" node="5FhZjqTMMrE" />
+              <ref role="2aGvrx" node="5FhZjqTMMrE" resolve="010.01" />
             </node>
             <node concept="19SUe$" id="VJbr0XaaIk" role="19SJt6" />
           </node>

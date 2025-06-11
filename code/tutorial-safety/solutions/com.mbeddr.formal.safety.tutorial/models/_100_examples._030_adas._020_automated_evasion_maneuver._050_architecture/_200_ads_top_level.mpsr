@@ -504,7 +504,7 @@
         </node>
         <node concept="N8ley" id="41_NtXJuAIb" role="Nnt9r">
           <node concept="KAwnX" id="41_NtXJuAIc" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:_wUu$TYGQ3" />
+            <ref role="KAwnW" to="rd3y:_wUu$TYGQ3" resolve="FSR_CEM_COLLISION_1" />
           </node>
         </node>
       </node>

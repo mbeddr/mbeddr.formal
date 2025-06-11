@@ -4260,7 +4260,7 @@
       <node concept="19SGf9" id="2iCnExZHZqN" role="2vnaTY">
         <node concept="19SUe$" id="2iCnExZHZsz" role="19SJt6" />
         <node concept="2NwIr6" id="2iCnExZHZqO" role="19SJt6">
-          <ref role="2NwIr1" node="35$gPpxdqTq" />
+          <ref role="2NwIr1" node="35$gPpxdqTq" resolve="SR_02" />
         </node>
         <node concept="19SUe$" id="2iCnExZHZqP" role="19SJt6">
           <property role="19SUeA" value=" is satisfied" />
@@ -4277,7 +4277,7 @@
       <node concept="19SGf9" id="3O4VKknI_sd" role="2vnaTY">
         <node concept="19SUe$" id="3O4VKknI_t$" role="19SJt6" />
         <node concept="2NwIr6" id="3O4VKknI_se" role="19SJt6">
-          <ref role="2NwIr1" node="35$gPpxdqeM" />
+          <ref role="2NwIr1" node="35$gPpxdqeM" resolve="SR_01" />
         </node>
         <node concept="19SUe$" id="3O4VKknI_sf" role="19SJt6">
           <property role="19SUeA" value=" is satisfied" />

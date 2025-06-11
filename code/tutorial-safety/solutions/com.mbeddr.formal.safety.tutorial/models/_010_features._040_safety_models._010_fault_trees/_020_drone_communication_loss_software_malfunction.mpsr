@@ -249,18 +249,18 @@
     </node>
     <node concept="21oswF" id="2zYHfFN$SeC" role="3CrHoS">
       <ref role="21oszt" node="2zYHfFN$SeP" resolve="SOFTWARE_MALFUNCTION" />
-      <ref role="21oszj" node="2zYHfFN$Seq" resolve="Or Gate 1" />
+      <ref role="21oszj" node="2zYHfFN$Seq" resolve="Or Gate 15" />
     </node>
     <node concept="21oswF" id="2zYHfFN$SeI" role="3CrHoS">
-      <ref role="21oszt" node="2zYHfFN$Seq" resolve="Or Gate 1" />
+      <ref role="21oszt" node="2zYHfFN$Seq" resolve="Or Gate 15" />
       <ref role="21oszj" node="2zYHfFN$Sev" resolve="PROTOCOL_ERROR" />
     </node>
     <node concept="21oswF" id="2zYHfFN$SeL" role="3CrHoS">
-      <ref role="21oszt" node="2zYHfFN$Seq" resolve="Or Gate 1" />
+      <ref role="21oszt" node="2zYHfFN$Seq" resolve="Or Gate 15" />
       <ref role="21oszj" node="2zYHfFN$Sey" resolve="COMMUNICATION_SOFTWARE_CRASH" />
     </node>
     <node concept="21oswF" id="2zYHfFN$SeO" role="3CrHoS">
-      <ref role="21oszt" node="2zYHfFN$Seq" resolve="Or Gate 1" />
+      <ref role="21oszt" node="2zYHfFN$Seq" resolve="Or Gate 15" />
       <ref role="21oszj" node="2zYHfFN$Se_" resolve="FIRMWARE_CORRUPTION" />
     </node>
     <node concept="21ATtk" id="2zYHfFN$SeP" role="3CrHoS">

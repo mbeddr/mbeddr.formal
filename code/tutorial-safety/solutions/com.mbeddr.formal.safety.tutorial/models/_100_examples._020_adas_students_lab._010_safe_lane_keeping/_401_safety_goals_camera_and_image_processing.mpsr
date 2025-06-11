@@ -437,19 +437,19 @@
       <node concept="19SGf9" id="H5BLscf$6t" role="2vnaTY">
         <node concept="19SUe$" id="H5BLscf$6u" role="19SJt6" />
         <node concept="2aGvr3" id="H5BLscf$7x" role="19SJt6">
-          <ref role="2aGvrx" node="4WLVkAsg6Pl" />
+          <ref role="2aGvrx" node="4WLVkAsg6Pl" resolve="FSR06_LK" />
         </node>
         <node concept="19SUe$" id="H5BLscf$7y" role="19SJt6">
           <property role="19SUeA" value="Cleaning of the camera&#10;" />
         </node>
         <node concept="2aGvr3" id="H5BLscf$8A" role="19SJt6">
-          <ref role="2aGvrx" node="4WLVkAsg6Ry" />
+          <ref role="2aGvrx" node="4WLVkAsg6Ry" resolve="FSR07_LK" />
         </node>
         <node concept="19SUe$" id="H5BLscf$8B" role="19SJt6">
           <property role="19SUeA" value="Auto Adjustment of aperture&#10;" />
         </node>
         <node concept="2aGvr3" id="H5BLscf$9H" role="19SJt6">
-          <ref role="2aGvrx" node="4j8iycQYmv5" />
+          <ref role="2aGvrx" node="4j8iycQYmv5" resolve="FSR08_LK" />
         </node>
         <node concept="19SUe$" id="H5BLscf$9I" role="19SJt6">
           <property role="19SUeA" value="Camera works properly" />
@@ -461,7 +461,7 @@
       <node concept="19SGf9" id="H5BLscf$dQ" role="2vnaTY">
         <node concept="19SUe$" id="H5BLscf$eV" role="19SJt6" />
         <node concept="2aGvr3" id="H5BLscf$eU" role="19SJt6">
-          <ref role="2aGvrx" node="4WLVkAsg6IZ" />
+          <ref role="2aGvrx" node="4WLVkAsg6IZ" resolve="FSR03_LK" />
         </node>
         <node concept="19SUe$" id="H5BLscf$eW" role="19SJt6">
           <property role="19SUeA" value="Reliable computation" />
@@ -497,19 +497,19 @@
       <node concept="19SGf9" id="H5BLscf$g0" role="2vnaTY">
         <node concept="19SUe$" id="H5BLscf$j5" role="19SJt6" />
         <node concept="2aGvr3" id="H5BLscf$j4" role="19SJt6">
-          <ref role="2aGvrx" node="3OFTjxLQ$sC" />
+          <ref role="2aGvrx" node="3OFTjxLQ$sC" resolve="TSR02_03_LK_Control" />
         </node>
         <node concept="19SUe$" id="H5BLscf$j6" role="19SJt6">
           <property role="19SUeA" value=" By implementing a watchdog the system can detect &#10;the need for a degraded mode to stay in a safe state&#10;" />
         </node>
         <node concept="2aGvr3" id="H5BLscf$ka" role="19SJt6">
-          <ref role="2aGvrx" node="4j8iycQYkTk" />
+          <ref role="2aGvrx" node="4j8iycQYkTk" resolve="TSR 04_LK_Cam" />
         </node>
         <node concept="19SUe$" id="H5BLscf$kb" role="19SJt6">
           <property role="19SUeA" value="Warn driver when hardware fails&#10;" />
         </node>
         <node concept="2aGvr3" id="H5BLscf$lh" role="19SJt6">
-          <ref role="2aGvrx" node="4j8iycQYhLt" />
+          <ref role="2aGvrx" node="4j8iycQYhLt" resolve="TSR 03_LK_Cam" />
         </node>
         <node concept="19SUe$" id="H5BLscf$li" role="19SJt6">
           <property role="19SUeA" value=" Restart in Case of inconsisten computation, warn driver" />

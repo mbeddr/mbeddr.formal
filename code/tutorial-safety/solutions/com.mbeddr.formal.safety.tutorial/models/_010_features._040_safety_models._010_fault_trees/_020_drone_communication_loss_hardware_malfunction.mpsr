@@ -257,16 +257,16 @@
       <property role="TrG5h" value="RADIO_TRANSMITTER_FAILURE" />
     </node>
     <node concept="21oswF" id="2zYHfFN$Sg3" role="3CrHoS">
-      <ref role="21oszt" node="2zYHfFN$SfO" resolve="OPERATOR_ERROR" />
-      <ref role="21oszj" node="2zYHfFN$SfS" resolve="Or Gate 1" />
+      <ref role="21oszt" node="2zYHfFN$SfO" resolve="HARDWARE_FAILURE" />
+      <ref role="21oszj" node="2zYHfFN$SfS" resolve="Or Gate 12" />
     </node>
     <node concept="21oswF" id="2zYHfFN$Sg6" role="3CrHoS">
-      <ref role="21oszt" node="2zYHfFN$SfS" resolve="Or Gate 1" />
-      <ref role="21oszj" node="2zYHfFN$SfV" resolve="INCORRECT_SETTINGS" />
+      <ref role="21oszt" node="2zYHfFN$SfS" resolve="Or Gate 12" />
+      <ref role="21oszj" node="2zYHfFN$SfV" resolve="RADIO_RECEIVER_FAILURE" />
     </node>
     <node concept="21oswF" id="2zYHfFN$Sgb" role="3CrHoS">
-      <ref role="21oszt" node="2zYHfFN$SfS" resolve="Or Gate 1" />
-      <ref role="21oszj" node="2zYHfFN$Sg0" resolve="IMPROPER_OPERATOR_HANDLING" />
+      <ref role="21oszt" node="2zYHfFN$SfS" resolve="Or Gate 12" />
+      <ref role="21oszj" node="2zYHfFN$Sg0" resolve="RADIO_TRANSMITTER_FAILURE" />
     </node>
     <node concept="21ATtL" id="2zYHfFN$Sgo" role="3CrHoS">
       <property role="TrG5h" value="ANTENNA_DAMAGE" />
@@ -275,11 +275,11 @@
       <property role="TrG5h" value="POWER_SUPPLY_FAILURE" />
     </node>
     <node concept="21oswF" id="2zYHfFN$Sgu" role="3CrHoS">
-      <ref role="21oszt" node="2zYHfFN$SfS" resolve="Or Gate 1" />
+      <ref role="21oszt" node="2zYHfFN$SfS" resolve="Or Gate 12" />
       <ref role="21oszj" node="2zYHfFN$Sgo" resolve="ANTENNA_DAMAGE" />
     </node>
     <node concept="21oswF" id="2zYHfFN$Sgx" role="3CrHoS">
-      <ref role="21oszt" node="2zYHfFN$SfS" resolve="Or Gate 1" />
+      <ref role="21oszt" node="2zYHfFN$SfS" resolve="Or Gate 12" />
       <ref role="21oszj" node="2zYHfFN$Sgr" resolve="POWER_SUPPLY_FAILURE" />
     </node>
   </node>

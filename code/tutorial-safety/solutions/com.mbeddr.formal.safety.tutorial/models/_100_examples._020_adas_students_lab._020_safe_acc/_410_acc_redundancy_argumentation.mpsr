@@ -466,7 +466,7 @@
           <property role="19SUeA" value="Pattern guarantees meet &#10;requirement " />
         </node>
         <node concept="2aGvr3" id="2vEFX4zn1N$" role="19SJt6">
-          <ref role="2aGvrx" node="4j8iycQYmv5" />
+          <ref role="2aGvrx" node="4j8iycQYmv5" resolve="FSR03_ACC" />
         </node>
         <node concept="19SUe$" id="2vEFX4zn1N_" role="19SJt6" />
       </node>

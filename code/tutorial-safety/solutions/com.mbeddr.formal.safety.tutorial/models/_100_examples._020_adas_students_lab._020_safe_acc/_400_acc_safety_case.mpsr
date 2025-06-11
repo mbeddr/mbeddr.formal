@@ -2644,7 +2644,7 @@
           <property role="19SUeA" value="If ACC fails to keep a safe distance&#10;to a detected lead vehicle,&#10;the driver is warned.&#10;" />
         </node>
         <node concept="2aGvr3" id="55oVyA0mUfw" role="19SJt6">
-          <ref role="2aGvrx" node="2vEFX4zmZhW" />
+          <ref role="2aGvrx" node="2vEFX4zmZhW" resolve="FSR01_1_ACC" />
         </node>
         <node concept="19SUe$" id="55oVyA0mUfx" role="19SJt6">
           <property role="19SUeA" value=": Warn driver&#10;" />
@@ -2658,13 +2658,13 @@
           <property role="19SUeA" value="Mitigate the risk of safe distance violation&#10;by implementing " />
         </node>
         <node concept="2aGvr3" id="55oVyA0mTcS" role="19SJt6">
-          <ref role="2aGvrx" node="1Z4anaVRJHE" />
+          <ref role="2aGvrx" node="1Z4anaVRJHE" resolve="FR01_ACC" />
         </node>
         <node concept="19SUe$" id="55oVyA0mTcT" role="19SJt6">
           <property role="19SUeA" value=": ACC-functionality&#10;This is refined by " />
         </node>
         <node concept="2aGvr3" id="36EUxMsC4O3" role="19SJt6">
-          <ref role="2aGvrx" node="2l0tHRMMe38" />
+          <ref role="2aGvrx" node="2l0tHRMMe38" resolve="TSR02_ACC" />
         </node>
         <node concept="19SUe$" id="36EUxMsC4O4" role="19SJt6">
           <property role="19SUeA" value=": Reliable computation" />
@@ -2692,7 +2692,7 @@
       <node concept="19SGf9" id="36EUxMsBYUU" role="2vnaTY">
         <node concept="19SUe$" id="36EUxMsBYV7" role="19SJt6" />
         <node concept="2aGvr3" id="36EUxMsBYV6" role="19SJt6">
-          <ref role="2aGvrx" node="4WLVkAsg3oT" />
+          <ref role="2aGvrx" node="4WLVkAsg3oT" resolve="SG01_ACC" />
         </node>
         <node concept="19SUe$" id="36EUxMsBYV8" role="19SJt6" />
       </node>
@@ -2702,7 +2702,7 @@
       <node concept="19SGf9" id="36EUxMsBYV$" role="2vnaTY">
         <node concept="19SUe$" id="36EUxMsBYVL" role="19SJt6" />
         <node concept="2aGvr3" id="36EUxMsBYVK" role="19SJt6">
-          <ref role="2aGvrx" node="4tgWazNvlzx" />
+          <ref role="2aGvrx" node="4tgWazNvlzx" resolve="FR04_ACC" />
         </node>
         <node concept="19SUe$" id="36EUxMsBYVM" role="19SJt6" />
       </node>
@@ -2712,7 +2712,7 @@
       <node concept="19SGf9" id="36EUxMsBYWe" role="2vnaTY">
         <node concept="19SUe$" id="36EUxMsBYWM" role="19SJt6" />
         <node concept="2aGvr3" id="36EUxMsBYWL" role="19SJt6">
-          <ref role="2aGvrx" node="4tgWazNvlzR" />
+          <ref role="2aGvrx" node="4tgWazNvlzR" resolve="SR01_ACC" />
         </node>
         <node concept="19SUe$" id="36EUxMsBYWN" role="19SJt6" />
       </node>
@@ -2746,7 +2746,7 @@
       <node concept="19SGf9" id="36EUxMsC5FA" role="2vnaTY">
         <node concept="19SUe$" id="36EUxMsC5FN" role="19SJt6" />
         <node concept="2aGvr3" id="36EUxMsC5FM" role="19SJt6">
-          <ref role="2aGvrx" node="2l0tHRMMe3D" />
+          <ref role="2aGvrx" node="2l0tHRMMe3D" resolve="TSR02_02_ACC" />
         </node>
         <node concept="19SUe$" id="36EUxMsC5FO" role="19SJt6">
           <property role="19SUeA" value=": Actor Failure Detection" />
@@ -2758,7 +2758,7 @@
       <node concept="19SGf9" id="36EUxMsC5a1" role="2vnaTY">
         <node concept="19SUe$" id="36EUxMsC5ae" role="19SJt6" />
         <node concept="2aGvr3" id="36EUxMsC5ad" role="19SJt6">
-          <ref role="2aGvrx" node="2l0tHRMMe3x" />
+          <ref role="2aGvrx" node="2l0tHRMMe3x" resolve="TSR02_01_ACC" />
         </node>
         <node concept="19SUe$" id="36EUxMsC5af" role="19SJt6">
           <property role="19SUeA" value=" Redundant sensors" />
@@ -2798,25 +2798,25 @@
       <node concept="19SGf9" id="36EUxMsC6Ds" role="2vnaTY">
         <node concept="19SUe$" id="36EUxMsC6DT" role="19SJt6" />
         <node concept="2aGvr3" id="36EUxMsC6DS" role="19SJt6">
-          <ref role="2aGvrx" node="2l0tHRMMe4B" />
+          <ref role="2aGvrx" node="2l0tHRMMe4B" resolve="TSR02_02_01_ACC" />
         </node>
         <node concept="19SUe$" id="36EUxMsC6DU" role="19SJt6">
           <property role="19SUeA" value=" Monitor Channel Gas Pedal&#10;" />
         </node>
         <node concept="2aGvr3" id="36EUxMsC6E6" role="19SJt6">
-          <ref role="2aGvrx" node="2l0tHRMMe55" />
+          <ref role="2aGvrx" node="2l0tHRMMe55" resolve="TSR02_02_02_ACC" />
         </node>
         <node concept="19SUe$" id="36EUxMsC6Es" role="19SJt6">
           <property role="19SUeA" value=" Monitor Channel Brake&#10;" />
         </node>
         <node concept="2aGvr3" id="36EUxMsC6F9" role="19SJt6">
-          <ref role="2aGvrx" node="2l0tHRMMe5_" />
+          <ref role="2aGvrx" node="2l0tHRMMe5_" resolve="TSR02_02_03_ACC" />
         </node>
         <node concept="19SUe$" id="36EUxMsC6Fa" role="19SJt6">
           <property role="19SUeA" value=" Monitor Channel Velocity&#10;" />
         </node>
         <node concept="2aGvr3" id="36EUxMsC6Fq" role="19SJt6">
-          <ref role="2aGvrx" node="2l0tHRMMex4" />
+          <ref role="2aGvrx" node="2l0tHRMMex4" resolve="TSR02_02_04_ACC" />
         </node>
         <node concept="19SUe$" id="36EUxMsC6Fr" role="19SJt6">
           <property role="19SUeA" value=" Monitor Channel Control Unit" />
@@ -2878,7 +2878,7 @@
           <property role="19SUeA" value="Visual alert:&#10;- ACC communication unit connected to car display&#10;- " />
         </node>
         <node concept="2aGvr3" id="36EUxMsCbri" role="19SJt6">
-          <ref role="2aGvrx" node="3OFTjxLQzSE" />
+          <ref role="2aGvrx" node="3OFTjxLQzSE" resolve="TSR04_02_ACC" />
         </node>
         <node concept="19SUe$" id="36EUxMsCbrj" role="19SJt6">
           <property role="19SUeA" value=": Takeover request" />
@@ -2892,7 +2892,7 @@
           <property role="19SUeA" value="Aural alert:&#10;- ACC communication unit connected to speaker&#10;- " />
         </node>
         <node concept="2aGvr3" id="36EUxMsCbrQ" role="19SJt6">
-          <ref role="2aGvrx" node="3OFTjxLQzSE" />
+          <ref role="2aGvrx" node="3OFTjxLQzSE" resolve="TSR04_02_ACC" />
         </node>
         <node concept="19SUe$" id="36EUxMsCbrR" role="19SJt6">
           <property role="19SUeA" value=": Takeover request" />

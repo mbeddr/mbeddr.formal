@@ -129,7 +129,7 @@
           <property role="19SUeA" value="Functionality of Lane keeping " />
           <node concept="0Sh09" id="3OFTjxLQyiF" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$T0" role="hnKMk">
-              <ref role="hnKMs" node="7NWnpv9rNPc" />
+              <ref role="hnKMs" node="7NWnpv9rNPc" resolve="FSR01_LK_Control" />
             </node>
           </node>
         </node>
@@ -209,7 +209,7 @@
           <property role="19SUeA" value="HW and SW should function correctly." />
           <node concept="0Sh09" id="3OFTjxLQyiH" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$T2" role="hnKMk">
-              <ref role="hnKMs" node="7NWnpv9rNPc" />
+              <ref role="hnKMs" node="7NWnpv9rNPc" resolve="FSR01_LK_Control" />
             </node>
           </node>
         </node>
@@ -233,7 +233,7 @@
           <property role="19SUeA" value="Responsiveness of components " />
           <node concept="0Sh09" id="3OFTjxLQyiJ" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$T4" role="hnKMk">
-              <ref role="hnKMs" node="7NWnpv9rNPO" />
+              <ref role="hnKMs" node="7NWnpv9rNPO" resolve="FSR02_LK_Control" />
             </node>
           </node>
         </node>
@@ -257,7 +257,7 @@
           <property role="19SUeA" value="Driver control actions " />
           <node concept="0Sh09" id="3OFTjxLQyiL" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$T6" role="hnKMk">
-              <ref role="hnKMs" node="7NWnpv9rNTs" />
+              <ref role="hnKMs" node="7NWnpv9rNTs" resolve="FSR04_LK_Control" />
             </node>
           </node>
         </node>
@@ -319,7 +319,7 @@
           <property role="19SUeA" value="System-Driver communication " />
           <node concept="0Sh09" id="3OFTjxLQyiN" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$T8" role="hnKMk">
-              <ref role="hnKMs" node="7NWnpv9rNZJ" />
+              <ref role="hnKMs" node="7NWnpv9rNZJ" resolve="FSR05_LK_Control" />
             </node>
           </node>
         </node>
@@ -343,7 +343,7 @@
           <property role="19SUeA" value="LKA can be powered on/off " />
           <node concept="0Sh09" id="3OFTjxLQyiP" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$Ta" role="hnKMk">
-              <ref role="hnKMs" node="7NWnpv9rO2s" />
+              <ref role="hnKMs" node="7NWnpv9rO2s" resolve="FSR06_LK_Control" />
             </node>
           </node>
         </node>

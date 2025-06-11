@@ -453,7 +453,7 @@
         </node>
         <node concept="N8ley" id="41_NtXJvtWk" role="Nnt9r">
           <node concept="KAwnX" id="41_NtXJvtWz" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:_wUu$TZD60" />
+            <ref role="KAwnW" to="rd3y:_wUu$TZD60" resolve="FR_CEM_1" />
           </node>
         </node>
       </node>
@@ -464,13 +464,13 @@
         </node>
         <node concept="N8ley" id="41_NtXJuHQb" role="Nnt9r">
           <node concept="KAwnX" id="41_NtXJuHX2" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:41_NtXJuH0s" />
+            <ref role="KAwnW" to="rd3y:41_NtXJuH0s" resolve="FSR_CEM_COL_NEIGHB_EGO_LANE_HW_1" />
           </node>
           <node concept="KAwnX" id="41_NtXJuHX6" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:41_NtXJuHjS" />
+            <ref role="KAwnW" to="rd3y:41_NtXJuHjS" resolve="FSR_CEM_COL_NEIGHB_SAFE_DIST_HW_PARKED_1" />
           </node>
           <node concept="KAwnX" id="41_NtXJvpFk" role="N8j5Z">
-            <ref role="KAwnW" to="rd3y:41_NtXJuHXe" />
+            <ref role="KAwnW" to="rd3y:41_NtXJuHXe" resolve="FSR_CEM_COL_NEIGHB_SAFE_DIST_PARALLEL_VEH" />
           </node>
         </node>
       </node>

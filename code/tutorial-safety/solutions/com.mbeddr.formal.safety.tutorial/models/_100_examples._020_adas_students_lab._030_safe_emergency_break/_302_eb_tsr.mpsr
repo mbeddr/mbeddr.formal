@@ -71,7 +71,7 @@
           <property role="19SUeA" value="Functionality of EB " />
           <node concept="0Sh09" id="2l0tHRMMe2p" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r_uM" role="hnKMk">
-              <ref role="hnKMs" node="4tgWazNvnb3" />
+              <ref role="hnKMs" node="4tgWazNvnb3" resolve="FSR01_EB" />
             </node>
           </node>
         </node>
@@ -164,7 +164,7 @@
           <property role="19SUeA" value="HW and SW should function correctly " />
           <node concept="0Sh09" id="2l0tHRMMeer" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r_uO" role="hnKMk">
-              <ref role="hnKMs" node="4j8iycQYmv5" />
+              <ref role="hnKMs" node="4j8iycQYmv5" resolve="FSR03_EB" />
             </node>
           </node>
         </node>
@@ -187,7 +187,7 @@
           <property role="19SUeA" value="Driver control actions " />
           <node concept="0Sh09" id="3OFTjxLQyiL" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r_uQ" role="hnKMk">
-              <ref role="hnKMs" node="4tgWazNvnb3" />
+              <ref role="hnKMs" node="4tgWazNvnb3" resolve="FSR01_EB" />
             </node>
           </node>
         </node>
@@ -250,7 +250,7 @@
           <property role="19SUeA" value="System-Driver communication " />
           <node concept="0Sh09" id="3OFTjxLQyiN" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r_uS" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6H2" />
+              <ref role="hnKMs" node="4WLVkAsg6H2" resolve="FSR02_EB" />
             </node>
           </node>
         </node>

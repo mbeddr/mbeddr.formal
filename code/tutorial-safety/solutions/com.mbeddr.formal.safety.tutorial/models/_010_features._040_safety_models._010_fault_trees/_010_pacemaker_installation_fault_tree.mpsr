@@ -415,7 +415,7 @@
       <property role="TrG5h" value="Or Gate 1" />
     </node>
     <node concept="21oswF" id="ve7g5CQh7F" role="3CrHoS">
-      <ref role="21oszt" node="ve7g5CQh7y" resolve="PM_INSTALL_TOP" />
+      <ref role="21oszt" node="ve7g5CQh7y" resolve="PACEMAKER_INSTALLATION_INJURY" />
       <ref role="21oszj" node="ve7g5CQh7C" resolve="Or Gate 1" />
     </node>
     <node concept="21ATtL" id="ve7g5CQh7L" role="3CrHoS">
@@ -443,7 +443,7 @@
       </node>
     </node>
     <node concept="21oswF" id="ve7g5CQh86" role="3CrHoS">
-      <ref role="21oszt" node="ve7g5CQh7C" resolve="OR_1" />
+      <ref role="21oszt" node="ve7g5CQh7C" resolve="Or Gate 1" />
       <ref role="21oszj" node="ve7g5CQh83" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="ve7g5CQh89" role="3CrHoS">
@@ -487,7 +487,7 @@
       <ref role="21oszj" node="ve7g5CQh8C" resolve="MECHANICAL_MALFUNCTION" />
     </node>
     <node concept="21oswF" id="ve7g5CQh8N" role="3CrHoS">
-      <ref role="21oszt" node="ve7g5CQh7C" resolve="OR_1" />
+      <ref role="21oszt" node="ve7g5CQh7C" resolve="Or Gate 1" />
       <ref role="21oszj" node="ve7g5CQh8w" resolve="Or Gate 2" />
     </node>
     <node concept="21ATtL" id="ve7g5CQh98" role="3CrHoS">
@@ -500,7 +500,7 @@
     </node>
     <node concept="21oswF" id="ve7g5CQh9b" role="3CrHoS">
       <ref role="21oszt" node="ve7g5CQh8w" resolve="Or Gate 2" />
-      <ref role="21oszj" node="ve7g5CQh98" />
+      <ref role="21oszj" node="ve7g5CQh98" resolve="CONTAMINATION" />
     </node>
     <node concept="21ATtL" id="ve7g5CQh9g" role="3CrHoS">
       <property role="TrG5h" value="OPERATOR_ERROR" />

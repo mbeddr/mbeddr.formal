@@ -65,7 +65,7 @@
       <property role="0ke_I" value="dan" />
       <node concept="KAwnT" id="41_NtXJrA4N" role="2FklKs">
         <node concept="KAwnX" id="41_NtXJrA4S" role="KALWe">
-          <ref role="KAwnW" node="_wUu$TZD6x" />
+          <ref role="KAwnW" node="_wUu$TZD6x" resolve="FSR_CEM_COLLISION_1_2" />
         </node>
       </node>
       <node concept="J2em_" id="41_NtXJu_f2" role="2FklKs">
@@ -101,7 +101,7 @@
       <property role="0ke_I" value="dan" />
       <node concept="KAwnT" id="2rSUIGXuVZQ" role="2FklKs">
         <node concept="KAwnX" id="2rSUIGXuVZR" role="KALWe">
-          <ref role="KAwnW" node="_wUu$TZD6x" />
+          <ref role="KAwnW" node="_wUu$TZD6x" resolve="FSR_CEM_COLLISION_1_2" />
         </node>
       </node>
       <node concept="J2em_" id="2rSUIGXuVZS" role="2FklKs">

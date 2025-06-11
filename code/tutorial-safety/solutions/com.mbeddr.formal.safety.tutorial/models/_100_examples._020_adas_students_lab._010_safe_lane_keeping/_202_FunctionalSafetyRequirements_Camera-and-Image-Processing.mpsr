@@ -84,7 +84,7 @@
           <property role="19SUeA" value="Switch to degraded mode " />
           <node concept="0Sh09" id="4j8iycQYkW2" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$$k" role="hnKMk">
-              <ref role="hnKMs" node="4j8iycQYkW_" />
+              <ref role="hnKMs" node="4j8iycQYkW_" resolve="SG08_LK" />
             </node>
           </node>
         </node>
@@ -127,7 +127,7 @@
           <property role="19SUeA" value="Warn driver" />
           <node concept="0Sh09" id="4j8iycQYkXw" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$$a" role="hnKMk">
-              <ref role="hnKMs" node="4j8iycQYkW_" />
+              <ref role="hnKMs" node="4j8iycQYkW_" resolve="SG08_LK" />
             </node>
           </node>
         </node>
@@ -155,7 +155,7 @@
           <property role="19SUeA" value="Reliable and appropiate computation " />
           <node concept="0Sh09" id="4j8iycQYkXy" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$$c" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6wf" />
+              <ref role="hnKMs" node="4WLVkAsg6wf" resolve="SG02_LK" />
             </node>
           </node>
         </node>
@@ -183,7 +183,7 @@
           <property role="19SUeA" value="Cleaning the camera " />
           <node concept="0Sh09" id="4j8iycQYkX$" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$$e" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6Bl" />
+              <ref role="hnKMs" node="4WLVkAsg6Bl" resolve="SG07_LK" />
             </node>
           </node>
         </node>
@@ -214,7 +214,7 @@
           <property role="19SUeA" value="Auto adjustment of aperture" />
           <node concept="0Sh09" id="4j8iycQYkXL" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$$g" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6Bl" />
+              <ref role="hnKMs" node="4WLVkAsg6Bl" resolve="SG07_LK" />
             </node>
           </node>
         </node>
@@ -246,7 +246,7 @@
           <property role="19SUeA" value="Camera function " />
           <node concept="0Sh09" id="4j8iycQYmwb" role="lGtFl">
             <node concept="hnKMr" id="55oVyA0r$$i" role="hnKMk">
-              <ref role="hnKMs" node="4WLVkAsg6Bl" />
+              <ref role="hnKMs" node="4WLVkAsg6Bl" resolve="SG07_LK" />
             </node>
           </node>
         </node>

@@ -78,7 +78,7 @@
       </node>
       <node concept="KAwnT" id="3Jn$RV2VwA2" role="2FklKs">
         <node concept="KAwnX" id="5icisZS$ka$" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqv" />
+          <ref role="KAwnW" node="3Jn$RV2Vwqv" resolve="SG02" />
         </node>
       </node>
       <node concept="2iDXIW" id="5icisZS$kax" role="0nOlf" />
@@ -106,7 +106,7 @@
       </node>
       <node concept="KAwnT" id="3Jn$RV2VwA7" role="2FklKs">
         <node concept="KAwnX" id="3Jn$RV2VwAv" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqu" />
+          <ref role="KAwnW" node="3Jn$RV2Vwqu" resolve="SG01" />
         </node>
       </node>
     </node>
@@ -133,7 +133,7 @@
       </node>
       <node concept="KAwnT" id="3Jn$RV2VwAc" role="2FklKs">
         <node concept="KAwnX" id="3Jn$RV2VwAA" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqu" />
+          <ref role="KAwnW" node="3Jn$RV2Vwqu" resolve="SG01" />
         </node>
       </node>
     </node>
@@ -160,7 +160,7 @@
       </node>
       <node concept="KAwnT" id="3Jn$RV2VwAh" role="2FklKs">
         <node concept="KAwnX" id="3Jn$RV2VwAH" role="KALWe">
-          <ref role="KAwnW" node="3Jn$RV2Vwqu" />
+          <ref role="KAwnW" node="3Jn$RV2Vwqu" resolve="SG01" />
         </node>
       </node>
     </node>

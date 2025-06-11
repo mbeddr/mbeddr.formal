@@ -426,7 +426,7 @@
         <node concept="0Sh09" id="4eD_5l3mIAp" role="lGtFl">
           <property role="18Epq9" value="airbag_statemachine" />
           <node concept="hnKMr" id="SmAS9imD3J" role="hnKMk">
-            <ref role="hnKMs" node="VJbr0XaaMn" />
+            <ref role="hnKMs" node="VJbr0XaaMn" resolve="070.01" />
           </node>
         </node>
       </node>

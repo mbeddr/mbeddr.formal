@@ -198,14 +198,14 @@
     </node>
     <node concept="21oswF" id="2zYHfFN$Sfv" role="3CrHoS">
       <ref role="21oszt" node="2zYHfFN$Sfd" resolve="OPERATOR_ERROR" />
-      <ref role="21oszj" node="2zYHfFN$Sfh" resolve="Or Gate 1" />
+      <ref role="21oszj" node="2zYHfFN$Sfh" resolve="Or Gate 11" />
     </node>
     <node concept="21oswF" id="2zYHfFN$Sfy" role="3CrHoS">
-      <ref role="21oszt" node="2zYHfFN$Sfh" resolve="Or Gate 1" />
+      <ref role="21oszt" node="2zYHfFN$Sfh" resolve="Or Gate 11" />
       <ref role="21oszj" node="2zYHfFN$Sfk" resolve="INCORRECT_SETTINGS" />
     </node>
     <node concept="21oswF" id="2zYHfFN$Sf_" role="3CrHoS">
-      <ref role="21oszt" node="2zYHfFN$Sfh" resolve="Or Gate 1" />
+      <ref role="21oszt" node="2zYHfFN$Sfh" resolve="Or Gate 11" />
       <ref role="21oszj" node="2zYHfFN$Sfs" resolve="IMPROPER_OPERATOR_HANDLING" />
     </node>
   </node>
