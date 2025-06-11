@@ -7,9 +7,7 @@
     <use id="091b20ea-7bf0-41d6-8e6e-4460a9bd8121" name="com.fasten.safety.ft.xfta_gen" version="0" />
     <engage id="091b20ea-7bf0-41d6-8e6e-4460a9bd8121" name="com.fasten.safety.ft.xfta_gen" />
   </languages>
-  <imports>
-    <import index="c7dj" ref="r:2904c551-de1e-4b98-ba23-0b1e63da8180(com.fasten.safety.ft.sandbox._010_ft_smoke_xfta)" />
-  </imports>
+  <imports />
   <registry>
     <language id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft">
       <concept id="6260256764176969328" name="com.fasten.safety.ft.structure.Connection" flags="ng" index="21oswF" />
@@ -35,7 +33,7 @@
       <concept id="3213712147579727498" name="com.fasten.safety.ft.xfta_gen.structure.Output" flags="ng" index="3Ugoyx">
         <property id="3213712147579727499" name="fileName" index="3Ugoyw" />
       </concept>
-      <concept id="3213712147579727507" name="com.fasten.safety.ft.xfta_gen.structure.IGenerateOutput" flags="ngI" index="3UgoyS">
+      <concept id="3213712147579727507" name="com.fasten.safety.ft.xfta_gen.structure.IGenerateOutput" flags="ng" index="3UgoyS">
         <child id="3213712147579727508" name="output" index="3UgoyZ" />
       </concept>
       <concept id="3213712147578374913" name="com.fasten.safety.ft.xfta_gen.structure.BuildBDT" flags="ng" index="3UniOE">
