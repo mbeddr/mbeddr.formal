@@ -492,7 +492,7 @@
             </node>
             <node concept="2OqwBi" id="7Nwy3y9ujfd" role="37vLTJ">
               <node concept="37vLTw" id="7Nwy3y9uinz" role="2Oq$k0">
-                <ref role="3cqZAo" node="6fCPE$QMB$J" resolve="extracted" />
+                <ref role="3cqZAo" node="6fCPE$QMB$J" resolve="intermediateEvent" />
               </node>
               <node concept="3TrcHB" id="7Nwy3y9uk2L" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -507,7 +507,7 @@
             </node>
             <node concept="2OqwBi" id="6csJveEQnG$" role="37vLTJ">
               <node concept="37vLTw" id="6csJveEQmP$" role="2Oq$k0">
-                <ref role="3cqZAo" node="6fCPE$QMB$J" resolve="extracted" />
+                <ref role="3cqZAo" node="6fCPE$QMB$J" resolve="intermediateEvent" />
               </node>
               <node concept="3TrEf2" id="6csJveEQoZh" role="2OqNvi">
                 <ref role="3Tt5mk" to="spwl:1SpkZ1V83E9" resolve="subtreeStart" />
@@ -573,7 +573,7 @@
                   <node concept="3clFbF" id="4G_iuUEcOdG" role="3cqZAp">
                     <node concept="37vLTI" id="6csJveEQtZs" role="3clFbG">
                       <node concept="37vLTw" id="6csJveEQueO" role="37vLTx">
-                        <ref role="3cqZAo" node="6fCPE$QMB$J" resolve="extracted" />
+                        <ref role="3cqZAo" node="6fCPE$QMB$J" resolve="intermediateEvent" />
                       </node>
                       <node concept="2OqwBi" id="4G_iuUEcOj2" role="37vLTJ">
                         <node concept="37vLTw" id="4G_iuUEcOdF" role="2Oq$k0">
@@ -606,7 +606,7 @@
             </node>
             <node concept="TSZUe" id="6Ut9yCDCYWb" role="2OqNvi">
               <node concept="37vLTw" id="6csJveEQupj" role="25WWJ7">
-                <ref role="3cqZAo" node="6fCPE$QMB$J" resolve="extracted" />
+                <ref role="3cqZAo" node="6fCPE$QMB$J" resolve="intermediateEvent" />
               </node>
             </node>
           </node>
@@ -616,7 +616,7 @@
             <ref role="1Pybhc" to="95j3:5pJnDA9djfI" resolve="LayoutUtil" />
             <ref role="37wK5l" to="95j3:5pJnDA9hrMj" resolve="setNewPosition" />
             <node concept="37vLTw" id="4G_iuUEh16t" role="37wK5m">
-              <ref role="3cqZAo" node="6fCPE$QMB$J" resolve="extracted" />
+              <ref role="3cqZAo" node="6fCPE$QMB$J" resolve="intermediateEvent" />
             </node>
             <node concept="35c_gC" id="64FnLWQwGEd" role="37wK5m">
               <ref role="35c_gD" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
