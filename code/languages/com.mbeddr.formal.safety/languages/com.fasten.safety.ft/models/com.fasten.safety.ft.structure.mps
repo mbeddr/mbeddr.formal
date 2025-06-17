@@ -92,6 +92,12 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2s9yRNfoxl$" resolve="IFaultTreeContent" />
     </node>
+    <node concept="1TJgyj" id="NOO35lLpA4" role="1TKVEi">
+      <property role="IQ2ns" value="933599933083523460" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="documentation" />
+      <ref role="20lvS9" node="NOO35lKMdq" resolve="FaultTreeDoc" />
+    </node>
     <node concept="PrWs8" id="5rwT_JnuR3S" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -425,6 +431,20 @@
     <property role="TrG5h" value="GenericFaultTreeAttributeAnnotationProvider" />
     <property role="34LRSv" value="from attribute:" />
     <ref role="1TJDcQ" to="b19z:3cGyC6fC0Yv" resolve="GenericAttributeAnnotationProviderBase" />
+  </node>
+  <node concept="1TIwiD" id="NOO35lKMdq">
+    <property role="EcuMT" value="933599933083362138" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="FaultTreeDoc" />
+    <property role="34LRSv" value="documentation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="336$aoT_UHh" role="1TKVEi">
+      <property role="IQ2ns" value="3514655602814462801" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="documentation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
   </node>
 </model>
 
