@@ -437,7 +437,7 @@
     <property role="3GE5qa" value="base" />
     <property role="TrG5h" value="FaultTreeDoc" />
     <property role="34LRSv" value="documentation" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="336$aoT_UHh" role="1TKVEi">
       <property role="IQ2ns" value="3514655602814462801" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
