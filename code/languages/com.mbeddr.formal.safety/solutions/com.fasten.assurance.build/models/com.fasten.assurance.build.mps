@@ -8822,6 +8822,9 @@
         <node concept="3LEDTy" id="8xY_IhvzQ9" role="3LEDUa">
           <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
         </node>
+        <node concept="3LEDTy" id="4xYwEyeH0MX" role="3LEDUa">
+          <ref role="3LEDTV" node="5FTX57fE1T2" resolve="com.fasten.base.git" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="3rkUgzovh0M" role="3989C9">

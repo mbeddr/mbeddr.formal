@@ -16255,6 +16255,9 @@
         <node concept="3LEDTy" id="8xY_Ihvz2N" role="3LEDUa">
           <ref role="3LEDTV" to="90a9:1sO539bGQvB" resolve="de.slisson.mps.richtext" />
         </node>
+        <node concept="3LEDTy" id="4xYwEyeGZSY" role="3LEDUa">
+          <ref role="3LEDTV" node="5FTX57fE4q0" resolve="com.fasten.base.git" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7he_lUuvmPg" role="3989C9">

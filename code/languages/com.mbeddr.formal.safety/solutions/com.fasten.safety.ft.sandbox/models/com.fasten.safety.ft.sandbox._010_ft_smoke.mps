@@ -2,9 +2,7 @@
 <model ref="r:28421036-4f33-49cb-a0aa-ea98f18ab244(com.fasten.safety.ft.sandbox._010_ft_smoke)">
   <persistence version="9" />
   <languages>
-    <use id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft" version="1" />
-    <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
-    <use id="e4dd8dcd-fbfe-4e69-bcdd-b4371f25f476" name="com.fasten.base.git" version="0" />
+    <devkit ref="a43bbdef-33e6-44ad-a995-6accad936f48(fasten.safety.ft)" />
   </languages>
   <imports />
   <registry>
