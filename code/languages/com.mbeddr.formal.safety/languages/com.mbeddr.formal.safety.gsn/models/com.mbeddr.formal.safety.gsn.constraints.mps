@@ -118,6 +118,7 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -338,6 +339,29 @@
       <ref role="1N5Vy1" to="py52:2X_iJQi$6af" resolve="gseb" />
       <node concept="1dDu$B" id="2X_iJQi$6eP" role="1N6uqs">
         <ref role="1dDu$A" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6BXRcBg9IIh">
+    <property role="3GE5qa" value="base" />
+    <ref role="1M2myG" to="py52:6dwPixfdDSd" resolve="GoalStructureAttributeBase" />
+    <node concept="9S07l" id="6BXRcBg9IIi" role="9Vyp8">
+      <node concept="3clFbS" id="6BXRcBg9IIj" role="2VODD2">
+        <node concept="3clFbF" id="6BXRcBg9KDt" role="3cqZAp">
+          <node concept="2OqwBi" id="6BXRcBg9Oa4" role="3clFbG">
+            <node concept="2OqwBi" id="6BXRcBg9L74" role="2Oq$k0">
+              <node concept="nLn13" id="6BXRcBg9KDs" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="6BXRcBg9Ngf" role="2OqNvi">
+                <node concept="1xMEDy" id="6BXRcBg9Ngh" role="1xVPHs">
+                  <node concept="chp4Y" id="6BXRcBg9NvS" role="ri$Ld">
+                    <ref role="cht4Q" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="6BXRcBg9ORy" role="2OqNvi" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
