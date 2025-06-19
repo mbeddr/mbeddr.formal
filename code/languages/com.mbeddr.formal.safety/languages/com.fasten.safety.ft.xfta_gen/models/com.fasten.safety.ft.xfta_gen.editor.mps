@@ -8,6 +8,7 @@
   <imports>
     <import index="a7wd" ref="r:0d8de557-bbe4-455a-a872-4eb6baf716c6(com.fasten.safety.ft.xfta_gen.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -20,11 +21,25 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
+      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
+        <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
+      <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ngI" index="1k5N5V">
+        <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
+      </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="6681408443912431607" name="jetbrains.mps.lang.editor.structure.URLStyleClassItem" flags="ln" index="3u2Kpz">
+        <property id="6681408443912457593" name="url" index="3u2UNH" />
+      </concept>
+      <concept id="1219226236603" name="jetbrains.mps.lang.editor.structure.DrawBracketsStyleClassItem" flags="ln" index="3vyZuw" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -64,6 +79,60 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="2iRfu4" id="2MppyJmL3Wh" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="3US$zqccJJW" role="3EZMnx" />
+      <node concept="3EZMnI" id="3US$zqcemkI" role="3EZMnx">
+        <node concept="VPM3Z" id="3US$zqcemkK" role="3F10Kt" />
+        <node concept="3vyZuw" id="3US$zqcemkP" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="2iRkQZ" id="3US$zqcemkN" role="2iSdaV" />
+        <node concept="3F0ifn" id="3US$zqcdsuj" role="3EZMnx">
+          <property role="3F0ifm" value="Help:" />
+          <node concept="VechU" id="3US$zqcdsuk" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="3EZMnI" id="3US$zqccKa7" role="3EZMnx">
+          <node concept="2iRfu4" id="3US$zqccKa8" role="2iSdaV" />
+          <node concept="3F0ifn" id="3US$zqccKa5" role="3EZMnx">
+            <property role="3F0ifm" value="This root node contains the configuration for running XFTA as specified" />
+            <ref role="1k5W1q" to="xnej:_wUu$U1lWI" resolve="FASTENComment" />
+          </node>
+          <node concept="3F0ifn" id="3US$zqccKaa" role="3EZMnx">
+            <property role="3F0ifm" value="here" />
+            <node concept="VechU" id="3US$zqccKad" role="3F10Kt">
+              <property role="Vb096" value="hGRnIZc/lightBlue" />
+            </node>
+            <node concept="3u2Kpz" id="3US$zqccKaf" role="3F10Kt">
+              <property role="3u2UNH" value="https://altarica-association.org/members/arauzy/Software/XFTA/XFTA2.html#Documentation" />
+            </node>
+          </node>
+        </node>
+        <node concept="3EZMnI" id="3US$zqccKaj" role="3EZMnx">
+          <node concept="VPM3Z" id="3US$zqccKal" role="3F10Kt" />
+          <node concept="3F0ifn" id="3US$zqccKan" role="3EZMnx">
+            <property role="3F0ifm" value="From the Fault-Tree root nodes we generate files in the OPEN-PSA format containing the fault tree." />
+            <ref role="1k5W1q" to="xnej:_wUu$U1lWI" resolve="FASTENComment" />
+          </node>
+          <node concept="2iRfu4" id="3US$zqccKao" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="3US$zqcdsul" role="3EZMnx">
+          <node concept="VPM3Z" id="3US$zqcdsum" role="3F10Kt" />
+          <node concept="3F0ifn" id="3US$zqcdsun" role="3EZMnx">
+            <property role="3F0ifm" value="They are further analyzed by XFTA as specified in this script." />
+            <ref role="1k5W1q" to="xnej:_wUu$U1lWI" resolve="FASTENComment" />
+          </node>
+          <node concept="2iRfu4" id="3US$zqcdsuo" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="3US$zqcdhwX" role="3EZMnx">
+          <node concept="VPM3Z" id="3US$zqcdhwY" role="3F10Kt" />
+          <node concept="3F0ifn" id="3US$zqcdhwZ" role="3EZMnx">
+            <property role="3F0ifm" value="To run the analysis, right-click on the script node and select menu &quot;Execute Analysis&quot;." />
+            <ref role="1k5W1q" to="xnej:_wUu$U1lWI" resolve="FASTENComment" />
+          </node>
+          <node concept="2iRfu4" id="3US$zqcdhx0" role="2iSdaV" />
+        </node>
       </node>
       <node concept="3F0ifn" id="2MppyJmL3Wp" role="3EZMnx" />
       <node concept="3F2HdR" id="2MppyJmL3Wr" role="3EZMnx">
