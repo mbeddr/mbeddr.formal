@@ -41,6 +41,7 @@
     <dependency reexport="false">00a2e56d-f195-410b-8afe-5a3c7e505658(com.mbeddr.formal.safety.gsn.confidence.acp)</dependency>
     <dependency reexport="false">fb9af7fb-3816-4066-99c4-a12adf147a7b(com.mbeddr.formal.safety.gsn.operational.ocp)</dependency>
     <dependency reexport="false">40ab19e9-751a-4433-b645-0e65160e58a0(org.mpsqa.lint.generic)</dependency>
+    <dependency reexport="false">091b20ea-7bf0-41d6-8e6e-4460a9bd8121(com.fasten.safety.ft.xfta_gen)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:c38abce1-4c09-44cb-9ebf-2a764e824bb5:com.mbeddr.mpsutil.actionsfilter" version="0" />
@@ -75,6 +76,7 @@
     <module reference="65ed2ac6-4499-4751-951e-3819684a4b8d(com.fasten.req.ontology)" version="0" />
     <module reference="b43c548b-f75f-46e2-ad24-de9edd93e95e(com.fasten.safety.fmea)" version="0" />
     <module reference="ab274f70-5238-4883-adc7-02df7a757829(com.fasten.safety.ft)" version="0" />
+    <module reference="091b20ea-7bf0-41d6-8e6e-4460a9bd8121(com.fasten.safety.ft.xfta_gen)" version="0" />
     <module reference="e541ff24-7ed7-40cb-a90e-8b708f547925(com.fasten.safety.rcp.pluginSolution)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="3" />
     <module reference="2374bc90-7e37-41f1-a9c4-c2e35194c36a(com.mbeddr.doc)" version="0" />

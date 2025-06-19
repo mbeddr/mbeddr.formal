@@ -15043,6 +15043,11 @@
             <ref role="3bR37D" to="390y:3dqUbgQmcyL" resolve="org.mpsqa.lint.generic" />
           </node>
         </node>
+        <node concept="1SiIV0" id="3US$zqccb2o" role="3bR37C">
+          <node concept="3bR9La" id="3US$zqccb2p" role="1SiIV1">
+            <ref role="3bR37D" node="3R_yAtWp53E" resolve="com.fasten.safety.ft.xfta_gen" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4ziKDEngAys" role="2G$12L">
         <property role="BnDLt" value="true" />
