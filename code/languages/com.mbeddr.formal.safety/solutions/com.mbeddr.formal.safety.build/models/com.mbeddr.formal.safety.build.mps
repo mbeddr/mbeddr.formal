@@ -13974,11 +13974,6 @@
             <ref role="3bR37D" to="90a9:2NTGYE$JTGY" resolve="com.dslfoundry.plaintextgen" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5uow0HSPGvr" role="3bR37C">
-          <node concept="3bR9La" id="5uow0HSPGvs" role="1SiIV1">
-            <ref role="3bR37D" node="3R_yAtWp1Os" resolve="com.fasten.safety.ft.xfta.pluginSolution" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="73rWdFZqzKL" role="2G$12L">
         <property role="BnDLt" value="true" />
