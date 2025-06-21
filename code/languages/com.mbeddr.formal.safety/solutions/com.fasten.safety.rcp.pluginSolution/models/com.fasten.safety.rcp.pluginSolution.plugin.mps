@@ -43,6 +43,7 @@
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="68t1" ref="r:7becb57c-c22a-45d5-9727-08526e822dee(com.mbeddr.formal.safety.gsn.operational.ocp.structure)" />
     <import index="a1af" ref="r:839ac015-7de1-49f3-ac8f-8d7c6d47259d(org.mpsqa.lint.generic.structure)" />
+    <import index="a7wd" ref="r:0d8de557-bbe4-455a-a872-4eb6baf716c6(com.fasten.safety.ft.xfta_gen.structure)" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
     <import index="uhdf" ref="r:30978237-741d-4b0b-ac0b-6600a1c5c14f(com.mbeddr.mpsutil.projectview.runtime.tree)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
@@ -1286,9 +1287,24 @@
                   <ref role="35c_gD" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
                 </node>
                 <node concept="37shsh" id="7A06dcUGQNa" role="2J__8u">
-                  <node concept="1dCxOk" id="7A06dcUGQNb" role="37shsm">
-                    <property role="1XweGW" value="ac9a2847-3512-4af0-8db9-c20abbe2720a" />
-                    <property role="1XxBO9" value="fasten.safety" />
+                  <node concept="1dCxOk" id="6BXRcBge$eF" role="37shsm">
+                    <property role="1XweGW" value="a43bbdef-33e6-44ad-a995-6accad936f48" />
+                    <property role="1XxBO9" value="fasten.safety.ft" />
+                  </node>
+                </node>
+              </node>
+              <node concept="tCFHf" id="6BXRcBge$et" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="6BXRcBge$eu" role="2J__8u">
+                  <property role="Xl_RC" value="XFTA Script" />
+                </node>
+                <node concept="35c_gC" id="6BXRcBge$ev" role="2J__8u">
+                  <ref role="35c_gD" to="a7wd:2MppyJmL3W1" resolve="XFTAScript" />
+                </node>
+                <node concept="37shsh" id="6BXRcBge$ew" role="2J__8u">
+                  <node concept="1dCxOk" id="6BXRcBge$kV" role="37shsm">
+                    <property role="1XweGW" value="a43bbdef-33e6-44ad-a995-6accad936f48" />
+                    <property role="1XxBO9" value="fasten.safety.ft" />
                   </node>
                 </node>
               </node>

@@ -142,7 +142,7 @@
     </node>
   </node>
   <node concept="WtQ9Q" id="2MppyJmLfYg">
-    <property role="3GE5qa" value="commands" />
+    <property role="3GE5qa" value="commands.build" />
     <ref role="WuzLi" to="a7wd:2MppyJmL3X9" resolve="BuildTargetModel" />
     <node concept="11bSqf" id="2MppyJmLfYh" role="11c4hB">
       <node concept="3clFbS" id="2MppyJmLfYi" role="2VODD2">
