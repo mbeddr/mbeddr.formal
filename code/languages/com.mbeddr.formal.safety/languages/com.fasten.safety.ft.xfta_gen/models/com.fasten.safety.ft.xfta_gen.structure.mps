@@ -153,7 +153,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="options" />
       <ref role="20lvS9" node="2c2ooLv7b3q" resolve="IComputeProbabilityOption" />
-      <ref role="20ksaX" node="5_mIHxj8$EZ" />
+      <ref role="20ksaX" node="5_mIHxj8$EZ" resolve="options" />
     </node>
     <node concept="1TJgyj" id="2MppyJmL3Xw" role="1TKVEi">
       <property role="IQ2ns" value="3213712147578371936" />
@@ -206,7 +206,7 @@
       <property role="20kJfa" value="options" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5_mIHxj5uXZ" resolve="IBuildBDTOption" />
-      <ref role="20ksaX" node="5_mIHxj8$EZ" />
+      <ref role="20ksaX" node="5_mIHxj8$EZ" resolve="options" />
     </node>
   </node>
   <node concept="1TIwiD" id="2MppyJmL4Gv">
@@ -273,7 +273,7 @@
       <property role="20kJfa" value="options" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2c2ooLv9RwD" resolve="IPrintMinimalCutsetsOption" />
-      <ref role="20ksaX" node="5_mIHxj8$EZ" />
+      <ref role="20ksaX" node="5_mIHxj8$EZ" resolve="options" />
     </node>
     <node concept="1TJgyj" id="2MppyJmQwqx" role="1TKVEi">
       <property role="IQ2ns" value="3213712147579799201" />
@@ -336,7 +336,7 @@
     <property role="3GE5qa" value="options.base" />
     <property role="TrG5h" value="PositiveIntegerValuedOption" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="5_mIHxj5A_m" role="PzmwI">
       <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
     </node>
@@ -381,7 +381,7 @@
     <property role="3GE5qa" value="options.base" />
     <property role="TrG5h" value="RealValueZeroToOneOption" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2c2ooLuZZr0" role="1TKVEl">
       <property role="IQ2nx" value="2522685996798047936" />
       <property role="TrG5h" value="value" />
@@ -410,7 +410,7 @@
     <property role="3GE5qa" value="options.base" />
     <property role="TrG5h" value="PositiveRealValueOption" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2c2ooLv3w9K" role="1TKVEl">
       <property role="IQ2nx" value="2522685996798968432" />
       <property role="TrG5h" value="value" />
@@ -445,7 +445,7 @@
     <property role="3GE5qa" value="options" />
     <property role="TrG5h" value="ArbitraryTextOption" />
     <property role="34LRSv" value="arbitrary text option" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2c2ooLv4moM" role="1TKVEl">
       <property role="IQ2nx" value="2522685996799190578" />
       <property role="TrG5h" value="optionName" />

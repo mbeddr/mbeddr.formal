@@ -429,16 +429,16 @@
       </node>
     </node>
     <node concept="21oswF" id="2c2ooLvbYuR" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvbYuL" resolve="_020_or_gate_top_event" />
-      <ref role="21oszj" node="2c2ooLvbYuM" resolve="Or Gate 1" />
+      <ref role="21oszt" node="2c2ooLvbYuL" resolve="_100_minimal_cutsets_top_event" />
+      <ref role="21oszj" node="2c2ooLvbYuM" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="2c2ooLvbYuS" role="3CrHoS">
       <ref role="21oszj" node="2c2ooLvbYuN" resolve="basic event 1" />
-      <ref role="21oszt" node="2c2ooLvbYuM" resolve="Or Gate 1" />
+      <ref role="21oszt" node="2c2ooLvbYuM" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="2c2ooLvbYuT" role="3CrHoS">
       <ref role="21oszj" node="2c2ooLvbYuP" resolve="basic event 2" />
-      <ref role="21oszt" node="2c2ooLvbYuM" resolve="Or Gate 1" />
+      <ref role="21oszt" node="2c2ooLvbYuM" resolve="And Gate 1" />
     </node>
     <node concept="37mRI7" id="2c2ooLvbYuU" role="lGtFl">
       <node concept="37mRIm" id="2c2ooLvbYuV" role="37mRID">
@@ -786,8 +786,8 @@
       <property role="TrG5h" value="Or Gate 1" />
     </node>
     <node concept="21oswF" id="2c2ooLvbZwM" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvbYuM" resolve="Or Gate 1" />
-      <ref role="21oszj" node="2c2ooLvbZvV" resolve="And Gate 1" />
+      <ref role="21oszt" node="2c2ooLvbYuM" resolve="And Gate 1" />
+      <ref role="21oszj" node="2c2ooLvbZvV" resolve="Or Gate 1" />
     </node>
     <node concept="21ATtL" id="2c2ooLvbZxd" role="3CrHoS">
       <property role="TrG5h" value="basic event 3" />
@@ -802,12 +802,12 @@
       </node>
     </node>
     <node concept="21oswF" id="2c2ooLvbZyz" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvbZvV" resolve="And Gate 1" />
-      <ref role="21oszj" node="2c2ooLvbZxd" />
+      <ref role="21oszt" node="2c2ooLvbZvV" resolve="Or Gate 1" />
+      <ref role="21oszj" node="2c2ooLvbZxd" resolve="basic event 3" />
     </node>
     <node concept="21oswF" id="2c2ooLvbZz0" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvbZvV" resolve="And Gate 1" />
-      <ref role="21oszj" node="2c2ooLvbZxG" />
+      <ref role="21oszt" node="2c2ooLvbZvV" resolve="Or Gate 1" />
+      <ref role="21oszj" node="2c2ooLvbZxG" resolve="basic event 4" />
     </node>
     <node concept="21ATtL" id="2c2ooLvbZAj" role="3CrHoS">
       <property role="TrG5h" value="basic event 5" />
@@ -816,7 +816,7 @@
       </node>
     </node>
     <node concept="21oswF" id="2c2ooLvbZFD" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvbZvV" resolve="And Gate 1" />
+      <ref role="21oszt" node="2c2ooLvbZvV" resolve="Or Gate 1" />
       <ref role="21oszj" node="2c2ooLvbZAj" resolve="basic event 5" />
     </node>
   </node>

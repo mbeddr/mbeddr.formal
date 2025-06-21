@@ -163,7 +163,7 @@
     <property role="3GE5qa" value="commands.build.bdt" />
     <ref role="1M2myG" to="a7wd:2MppyJmL4G1" resolve="BuildBDT" />
     <node concept="1N5Pfh" id="2c2ooLveAUp" role="1Mr941">
-      <ref role="1N5Vy1" to="a7wd:2MppyJmL4G3" />
+      <ref role="1N5Vy1" to="a7wd:2MppyJmL4G3" resolve="variable" />
       <node concept="1dDu$B" id="2c2ooLveAZi" role="1N6uqs">
         <ref role="1dDu$A" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
       </node>
@@ -173,7 +173,7 @@
     <property role="3GE5qa" value="commands.compute.probability" />
     <ref role="1M2myG" to="a7wd:2MppyJmL3Xs" resolve="ComputeProbability" />
     <node concept="1N5Pfh" id="2c2ooLveB4g" role="1Mr941">
-      <ref role="1N5Vy1" to="a7wd:2MppyJmL3Xw" />
+      <ref role="1N5Vy1" to="a7wd:2MppyJmL3Xw" resolve="variable" />
       <node concept="1dDu$B" id="2c2ooLveB4h" role="1N6uqs">
         <ref role="1dDu$A" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
       </node>
@@ -183,7 +183,7 @@
     <property role="3GE5qa" value="commands.print.minimal_cutsets" />
     <ref role="1M2myG" to="a7wd:2MppyJmQwpf" resolve="PrintMinimalCutsets" />
     <node concept="1N5Pfh" id="2c2ooLveBbB" role="1Mr941">
-      <ref role="1N5Vy1" to="a7wd:2MppyJmQwqx" />
+      <ref role="1N5Vy1" to="a7wd:2MppyJmQwqx" resolve="variable" />
       <node concept="1dDu$B" id="2c2ooLveBbC" role="1N6uqs">
         <ref role="1dDu$A" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
       </node>
