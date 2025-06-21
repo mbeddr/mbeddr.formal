@@ -131,8 +131,14 @@
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="7992060018732187438" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation" flags="ng" index="AMVWg" />
+      <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
+        <child id="1175517761460" name="condition" index="2MkoU_" />
+      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
+      </concept>
+      <concept id="1227096498176" name="jetbrains.mps.lang.typesystem.structure.PropertyMessageTarget" flags="ng" index="2ODE4t">
+        <reference id="1227096521710" name="propertyDeclaration" index="2ODJFN" />
       </concept>
       <concept id="1216383170661" name="jetbrains.mps.lang.typesystem.structure.TypesystemQuickFix" flags="ng" index="Q5z_Y">
         <child id="1216383424566" name="executeBlock" index="Q6x$H" />
@@ -150,6 +156,7 @@
       </concept>
       <concept id="1195214364922" name="jetbrains.mps.lang.typesystem.structure.NonTypesystemRule" flags="ig" index="18kY7G" />
       <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
         <child id="3937244445246643221" name="helginsIntention" index="1urrFz" />
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
@@ -954,6 +961,43 @@
       </node>
     </node>
     <node concept="3Tm1VV" id="36k0PnKJ4O0" role="1B3o_S" />
+  </node>
+  <node concept="18kY7G" id="2c2ooLv8DWQ">
+    <property role="TrG5h" value="check_FailureRate" />
+    <property role="3GE5qa" value="events.specs" />
+    <node concept="3clFbS" id="2c2ooLv8DWR" role="18ibNy">
+      <node concept="2Mj0R9" id="2c2ooLv15qH" role="3cqZAp">
+        <node concept="2OqwBi" id="2c2ooLv1764" role="2MkoU_">
+          <node concept="2OqwBi" id="2c2ooLv15A3" role="2Oq$k0">
+            <node concept="1YBJjd" id="2c2ooLv15qX" role="2Oq$k0">
+              <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="lambda" />
+            </node>
+            <node concept="3TrcHB" id="2c2ooLv15Nx" role="2OqNvi">
+              <ref role="3TsBF5" to="spwl:11L6MQb670m" resolve="failureRate" />
+            </node>
+          </node>
+          <node concept="liA8E" id="2c2ooLv18Rz" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="Xl_RD" id="2c2ooLv18Uu" role="37wK5m">
+              <property role="Xl_RC" value="[0-9]\\.[0-9]*([Ee][\\+\\-]?[0-9]+)?" />
+            </node>
+          </node>
+        </node>
+        <node concept="Xl_RD" id="2c2ooLv1fMf" role="2MkJ7o">
+          <property role="Xl_RC" value="invalid format - expected '[0-9]\\.[0-9]*([Ee][\\+\\-]?[0-9]+)?'" />
+        </node>
+        <node concept="1YBJjd" id="2c2ooLv1g7o" role="1urrMF">
+          <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="lambda" />
+        </node>
+        <node concept="2ODE4t" id="2c2ooLv1gbW" role="1urrC5">
+          <ref role="2ODJFN" to="spwl:11L6MQb670m" resolve="failureRate" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2c2ooLv8DWT" role="1YuTPh">
+      <property role="TrG5h" value="lambda" />
+      <ref role="1YaFvo" to="spwl:11L6MQb4bLc" resolve="FailureRate" />
+    </node>
   </node>
 </model>
 
