@@ -37,11 +37,14 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -60,6 +63,7 @@
         <property id="1071599893252" name="sourceCardinality" index="20lbJX" />
         <property id="1071599937831" name="metaClass" index="20lmBu" />
         <property id="241647608299431140" name="linkId" index="IQ2ns" />
+        <reference id="1071599698500" name="specializedLink" index="20ksaX" />
         <reference id="1071599976176" name="target" index="20lvS9" />
       </concept>
     </language>
@@ -88,6 +92,9 @@
     </node>
     <node concept="PrWs8" id="2MppyJmL3W5" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="2c2ooLvcwrY" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
     <node concept="1irR5M" id="3US$zqcc$Ax" role="rwd14">
       <property role="2$rrk2" value="1" />
@@ -127,7 +134,8 @@
     <property role="EcuMT" value="3213712147578371913" />
     <property role="TrG5h" value="BuildTargetModel" />
     <property role="34LRSv" value="build target-model" />
-    <property role="3GE5qa" value="commands" />
+    <property role="3GE5qa" value="commands.build" />
+    <property role="R4oN_" value="builds the target (mathematical) model" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2MppyJmL3Xa" role="PzmwI">
       <ref role="PrY4T" node="2MppyJmL3W3" resolve="IXFTAScriptContent" />
@@ -135,14 +143,22 @@
   </node>
   <node concept="1TIwiD" id="2MppyJmL3Xs">
     <property role="EcuMT" value="3213712147578371932" />
-    <property role="3GE5qa" value="commands" />
+    <property role="3GE5qa" value="commands.compute.probability" />
     <property role="TrG5h" value="ComputeProbability" />
     <property role="34LRSv" value="compute probability" />
+    <property role="R4oN_" value="computes and prints out the probability of the variable given as argument." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2c2ooLv7b3s" role="1TKVEi">
+      <property role="IQ2ns" value="2522685996799930588" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="options" />
+      <ref role="20lvS9" node="2c2ooLv7b3q" resolve="IComputeProbabilityOption" />
+      <ref role="20ksaX" node="5_mIHxj8$EZ" />
+    </node>
     <node concept="1TJgyj" id="2MppyJmL3Xw" role="1TKVEi">
       <property role="IQ2ns" value="3213712147578371936" />
-      <property role="20kJfa" value="top" />
-      <ref role="20lvS9" to="spwl:5rwT_JnuR4f" resolve="TopEvent" />
+      <property role="20kJfa" value="variable" />
+      <ref role="20lvS9" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
     </node>
     <node concept="PrWs8" id="2MppyJmL3Xt" role="PzmwI">
       <ref role="PrY4T" node="2MppyJmL3W3" resolve="IXFTAScriptContent" />
@@ -150,10 +166,8 @@
     <node concept="PrWs8" id="2MppyJmQeUl" role="PzmwI">
       <ref role="PrY4T" node="2MppyJmQeUj" resolve="IGenerateOutput" />
     </node>
-    <node concept="1TJgyi" id="2MppyJmLjye" role="1TKVEl">
-      <property role="IQ2nx" value="3213712147578435726" />
-      <property role="TrG5h" value="missionTime" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="PrWs8" id="2c2ooLv7b3n" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj8$EY" resolve="ICommandWithOptions" />
     </node>
   </node>
   <node concept="1TIwiD" id="2MppyJmL4FT">
@@ -164,19 +178,35 @@
     <node concept="PrWs8" id="2MppyJmL4FU" role="PzmwI">
       <ref role="PrY4T" node="2MppyJmL3W3" resolve="IXFTAScriptContent" />
     </node>
+    <node concept="PrWs8" id="2c2ooLv5Xgu" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2MppyJmL4G1">
     <property role="EcuMT" value="3213712147578374913" />
-    <property role="3GE5qa" value="commands" />
+    <property role="3GE5qa" value="commands.build.bdt" />
     <property role="TrG5h" value="BuildBDT" />
+    <property role="34LRSv" value="build bdt" />
+    <property role="R4oN_" value="build binary decision tree" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2MppyJmL4G3" role="1TKVEi">
       <property role="IQ2ns" value="3213712147578374915" />
-      <property role="20kJfa" value="top" />
-      <ref role="20lvS9" to="spwl:5rwT_JnuR4f" resolve="TopEvent" />
+      <property role="20kJfa" value="variable" />
+      <ref role="20lvS9" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
     </node>
     <node concept="PrWs8" id="2MppyJmL4G2" role="PzmwI">
       <ref role="PrY4T" node="2MppyJmL3W3" resolve="IXFTAScriptContent" />
+    </node>
+    <node concept="PrWs8" id="5_mIHxj8SMu" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj8$EY" resolve="ICommandWithOptions" />
+    </node>
+    <node concept="1TJgyj" id="5_mIHxj5ehB" role="1TKVEi">
+      <property role="IQ2ns" value="6437538155642283111" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="options" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5_mIHxj5uXZ" resolve="IBuildBDTOption" />
+      <ref role="20ksaX" node="5_mIHxj8$EZ" />
     </node>
   </node>
   <node concept="1TIwiD" id="2MppyJmL4Gv">
@@ -232,20 +262,32 @@
   </node>
   <node concept="1TIwiD" id="2MppyJmQwpf">
     <property role="EcuMT" value="3213712147579799119" />
-    <property role="3GE5qa" value="commands" />
+    <property role="3GE5qa" value="commands.print.minimal_cutsets" />
     <property role="TrG5h" value="PrintMinimalCutsets" />
+    <property role="34LRSv" value="print minimal cutsets" />
+    <property role="R4oN_" value="prints the minimal cutsets" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2c2ooLv9Rs$" role="1TKVEi">
+      <property role="IQ2ns" value="2522685996800636708" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="options" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2c2ooLv9RwD" resolve="IPrintMinimalCutsetsOption" />
+      <ref role="20ksaX" node="5_mIHxj8$EZ" />
+    </node>
     <node concept="1TJgyj" id="2MppyJmQwqx" role="1TKVEi">
       <property role="IQ2ns" value="3213712147579799201" />
-      <property role="20kJfa" value="event" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="spwl:5rwT_JnuR4f" resolve="TopEvent" />
+      <property role="20kJfa" value="variable" />
+      <ref role="20lvS9" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
     </node>
     <node concept="PrWs8" id="2MppyJmQwqy" role="PzmwI">
       <ref role="PrY4T" node="2MppyJmL3W3" resolve="IXFTAScriptContent" />
     </node>
     <node concept="PrWs8" id="2MppyJmQwqz" role="PzmwI">
       <ref role="PrY4T" node="2MppyJmQeUj" resolve="IGenerateOutput" />
+    </node>
+    <node concept="PrWs8" id="2c2ooLv9PjP" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj8$EY" resolve="ICommandWithOptions" />
     </node>
   </node>
   <node concept="25R3W" id="2MppyJmQwq_">
@@ -260,6 +302,178 @@
     <node concept="25R33" id="2MppyJmTlWe" role="25R1y">
       <property role="3tVfz5" value="3213712147580542734" />
       <property role="TrG5h" value="write" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5_mIHxj5uXY">
+    <property role="TrG5h" value="IOptionBase" />
+    <property role="3GE5qa" value="base" />
+    <property role="EcuMT" value="6437538155642266594" />
+  </node>
+  <node concept="PlHQZ" id="5_mIHxj5uXZ">
+    <property role="TrG5h" value="IBuildBDTOption" />
+    <property role="3GE5qa" value="commands.build.bdt" />
+    <property role="EcuMT" value="6437538155642283112" />
+    <node concept="PrWs8" id="5_mIHxj5uY0" role="PrDN$">
+      <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5_mIHxj5uY5">
+    <property role="EcuMT" value="6437538155642351493" />
+    <property role="TrG5h" value="MaximumNumberOption" />
+    <property role="34LRSv" value="maximum-number" />
+    <property role="3GE5qa" value="options" />
+    <property role="R4oN_" value="maximum number of extracted minimal cutsets" />
+    <ref role="1TJDcQ" node="5_mIHxj5A_l" resolve="PositiveIntegerValuedOption" />
+    <node concept="PrWs8" id="5_mIHxj5uY6" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj5uXZ" resolve="IBuildBDTOption" />
+    </node>
+    <node concept="PrWs8" id="5_mIHxj9QoB" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj9Aj6" resolve="IAmUniqueOption" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5_mIHxj5A_l">
+    <property role="EcuMT" value="6437538155642382677" />
+    <property role="3GE5qa" value="options.base" />
+    <property role="TrG5h" value="PositiveIntegerValuedOption" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="5_mIHxj5A_m" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
+    </node>
+    <node concept="1TJgyi" id="5_mIHxj5A_n" role="1TKVEl">
+      <property role="IQ2nx" value="6437538155642382679" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5_mIHxj8$EY">
+    <property role="EcuMT" value="6437538155643161278" />
+    <property role="TrG5h" value="ICommandWithOptions" />
+    <node concept="1TJgyj" id="5_mIHxj8$EZ" role="1TKVEi">
+      <property role="IQ2ns" value="6437538155643161279" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="options" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5_mIHxj5uXY" resolve="IOptionBase" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5_mIHxj9Aj6">
+    <property role="EcuMT" value="6437538155643430086" />
+    <property role="3GE5qa" value="options.base" />
+    <property role="TrG5h" value="IAmUniqueOption" />
+  </node>
+  <node concept="1TIwiD" id="5_mIHxje$J3">
+    <property role="EcuMT" value="6437538155644734403" />
+    <property role="TrG5h" value="MaximumOrderOption" />
+    <property role="34LRSv" value="maximum-order" />
+    <property role="3GE5qa" value="options" />
+    <property role="R4oN_" value="maximum number of variables of extracted minimal cutsets" />
+    <ref role="1TJDcQ" node="5_mIHxj5A_l" resolve="PositiveIntegerValuedOption" />
+    <node concept="PrWs8" id="5_mIHxje$J4" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj5uXZ" resolve="IBuildBDTOption" />
+    </node>
+    <node concept="PrWs8" id="5_mIHxje$J5" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj9Aj6" resolve="IAmUniqueOption" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5_mIHxje_Ec">
+    <property role="EcuMT" value="6437538155644738188" />
+    <property role="3GE5qa" value="options.base" />
+    <property role="TrG5h" value="RealValueZeroToOneOption" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="2c2ooLuZZr0" role="1TKVEl">
+      <property role="IQ2nx" value="2522685996798047936" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="5_mIHxje_Ed" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5_mIHxjeV3g">
+    <property role="EcuMT" value="6437538155644825808" />
+    <property role="TrG5h" value="MinimumProbabilityOption" />
+    <property role="34LRSv" value="minimum-probability" />
+    <property role="3GE5qa" value="options" />
+    <property role="R4oN_" value="minimum probability of extracted minimal cutsets" />
+    <ref role="1TJDcQ" node="5_mIHxje_Ec" resolve="RealValueZeroToOneOption" />
+    <node concept="PrWs8" id="5_mIHxjeV3h" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj5uXZ" resolve="IBuildBDTOption" />
+    </node>
+    <node concept="PrWs8" id="5_mIHxjeV3i" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj9Aj6" resolve="IAmUniqueOption" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2c2ooLv3w9J">
+    <property role="EcuMT" value="2522685996798968431" />
+    <property role="3GE5qa" value="options.base" />
+    <property role="TrG5h" value="PositiveRealValueOption" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="2c2ooLv3w9K" role="1TKVEl">
+      <property role="IQ2nx" value="2522685996798968432" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2c2ooLv3w9L" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2c2ooLv3USy">
+    <property role="EcuMT" value="2522685996799077922" />
+    <property role="TrG5h" value="MissionTimeOption" />
+    <property role="34LRSv" value="mission-time" />
+    <property role="3GE5qa" value="options" />
+    <property role="R4oN_" value="mission time at which the probabilities of basic events are calculated" />
+    <ref role="1TJDcQ" node="2c2ooLv3w9J" resolve="PositiveRealValueOption" />
+    <node concept="PrWs8" id="2c2ooLv3USz" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj5uXZ" resolve="IBuildBDTOption" />
+    </node>
+    <node concept="PrWs8" id="2c2ooLv7x4z" role="PzmwI">
+      <ref role="PrY4T" node="2c2ooLv7b3q" resolve="IComputeProbabilityOption" />
+    </node>
+    <node concept="PrWs8" id="2c2ooLvacn1" role="PzmwI">
+      <ref role="PrY4T" node="2c2ooLv9RwD" resolve="IPrintMinimalCutsetsOption" />
+    </node>
+    <node concept="PrWs8" id="2c2ooLv3US$" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj9Aj6" resolve="IAmUniqueOption" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2c2ooLv4moK">
+    <property role="EcuMT" value="2522685996799190576" />
+    <property role="3GE5qa" value="options" />
+    <property role="TrG5h" value="ArbitraryTextOption" />
+    <property role="34LRSv" value="arbitrary text option" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="2c2ooLv4moM" role="1TKVEl">
+      <property role="IQ2nx" value="2522685996799190578" />
+      <property role="TrG5h" value="optionName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2c2ooLv4moN" role="1TKVEl">
+      <property role="IQ2nx" value="2522685996799190579" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2c2ooLv4moL" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj5uXZ" resolve="IBuildBDTOption" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2c2ooLv7b3q">
+    <property role="EcuMT" value="2522685996799930586" />
+    <property role="TrG5h" value="IComputeProbabilityOption" />
+    <property role="3GE5qa" value="commands.compute.probability" />
+    <node concept="PrWs8" id="2c2ooLv7b3u" role="PrDN$">
+      <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2c2ooLv9RwD">
+    <property role="EcuMT" value="2522685996800636969" />
+    <property role="3GE5qa" value="commands.print.minimal_cutsets" />
+    <property role="TrG5h" value="IPrintMinimalCutsetsOption" />
+    <node concept="PrWs8" id="2c2ooLv9RzU" role="PrDN$">
+      <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
     </node>
   </node>
 </model>
