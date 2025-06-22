@@ -16,7 +16,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
-    <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" implicit="true" />
+    <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="fazf" ref="r:28cb0bbd-efcb-4c9e-94f2-4ccc928adfb4(com.fasten.safety.ft.behavior)" implicit="true" />
   </imports>
@@ -260,6 +260,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -297,6 +298,7 @@
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
@@ -1045,7 +1047,7 @@
       <node concept="3clFbS" id="6fCPE$QLID6" role="2VODD2">
         <node concept="3clFbF" id="6fCPE$QLIPA" role="3cqZAp">
           <node concept="Xl_RD" id="6fCPE$QLIP_" role="3clFbG">
-            <property role="Xl_RC" value="Extract Branch Into Module" />
+            <property role="Xl_RC" value="Extract Branch into Module" />
           </node>
         </node>
       </node>
@@ -1401,6 +1403,168 @@
                 <ref role="3cqZAo" node="3dK1Bfni6BI" resolve="newFteb" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="NSnLXM$km9">
+    <property role="TrG5h" value="IntermediateEventCollapser" />
+    <node concept="2tJIrI" id="NSnLXM$ko9" role="jymVt" />
+    <node concept="2YIFZL" id="NSnLXM$kqr" role="jymVt">
+      <property role="TrG5h" value="collapseIntermediateEvent" />
+      <node concept="3clFbS" id="NSnLXM$kqu" role="3clF47">
+        <node concept="3cpWs8" id="NSnLXM$lgb" role="3cqZAp">
+          <node concept="3cpWsn" id="NSnLXM$lgc" role="3cpWs9">
+            <property role="TrG5h" value="subtreeStart" />
+            <node concept="3Tqbb2" id="NSnLXM$lc$" role="1tU5fm">
+              <ref role="ehGHo" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
+            </node>
+            <node concept="2OqwBi" id="NSnLXM$lgd" role="33vP2m">
+              <node concept="37vLTw" id="NSnLXM$lge" role="2Oq$k0">
+                <ref role="3cqZAo" node="NSnLXM$krn" resolve="ie" />
+              </node>
+              <node concept="3TrEf2" id="NSnLXM$lgf" role="2OqNvi">
+                <ref role="3Tt5mk" to="spwl:1SpkZ1V83E9" resolve="subtreeStart" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="NSnLXM$vDT" role="3cqZAp">
+          <node concept="3cpWsn" id="NSnLXM$vDW" role="3cpWs9">
+            <property role="TrG5h" value="faultTreeModule" />
+            <node concept="3Tqbb2" id="NSnLXM$vDR" role="1tU5fm">
+              <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+            </node>
+            <node concept="2OqwBi" id="NSnLXM$ws6" role="33vP2m">
+              <node concept="37vLTw" id="NSnLXM$w6U" role="2Oq$k0">
+                <ref role="3cqZAo" node="NSnLXM$lgc" resolve="subtreeStart" />
+              </node>
+              <node concept="2Xjw5R" id="NSnLXM$xe0" role="2OqNvi">
+                <node concept="1xMEDy" id="NSnLXM$xe2" role="1xVPHs">
+                  <node concept="chp4Y" id="NSnLXM$xhu" role="ri$Ld">
+                    <ref role="cht4Q" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="NSnLXM$yGF" role="3cqZAp">
+          <node concept="3cpWsn" id="NSnLXM$yGG" role="3cpWs9">
+            <property role="TrG5h" value="faultTreeParent" />
+            <node concept="3Tqbb2" id="NSnLXM$yGH" role="1tU5fm">
+              <ref role="ehGHo" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+            </node>
+            <node concept="2OqwBi" id="NSnLXM$yGI" role="33vP2m">
+              <node concept="2Xjw5R" id="NSnLXM$yGK" role="2OqNvi">
+                <node concept="1xMEDy" id="NSnLXM$yGL" role="1xVPHs">
+                  <node concept="chp4Y" id="NSnLXM$yGM" role="ri$Ld">
+                    <ref role="cht4Q" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="NSnLXM$zmd" role="2Oq$k0">
+                <ref role="3cqZAo" node="NSnLXM$krn" resolve="ie" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="NSnLXM$y8r" role="3cqZAp" />
+        <node concept="3clFbF" id="NSnLXM$zoC" role="3cqZAp">
+          <node concept="2OqwBi" id="NSnLXM$BiC" role="3clFbG">
+            <node concept="2OqwBi" id="NSnLXM$zPd" role="2Oq$k0">
+              <node concept="37vLTw" id="NSnLXM$zoA" role="2Oq$k0">
+                <ref role="3cqZAo" node="NSnLXM$yGG" resolve="faultTreeParent" />
+              </node>
+              <node concept="3Tsc0h" id="NSnLXM$$B8" role="2OqNvi">
+                <ref role="3TtcxE" to="spwl:2s9yRNfpPP4" resolve="content" />
+              </node>
+            </node>
+            <node concept="X8dFx" id="NSnLXM$HgX" role="2OqNvi">
+              <node concept="2OqwBi" id="NSnLXM$IwN" role="25WWJ7">
+                <node concept="37vLTw" id="NSnLXM$HtK" role="2Oq$k0">
+                  <ref role="3cqZAo" node="NSnLXM$vDW" resolve="faultTreeModule" />
+                </node>
+                <node concept="3Tsc0h" id="NSnLXM$Ji$" role="2OqNvi">
+                  <ref role="3TtcxE" to="spwl:2s9yRNfpPP4" resolve="content" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="NSnLXM$l_v" role="3cqZAp">
+          <node concept="37vLTI" id="NSnLXM_c1z" role="3clFbG">
+            <node concept="37vLTw" id="NSnLXM_ckh" role="37vLTx">
+              <ref role="3cqZAo" node="NSnLXM$lgc" resolve="subtreeStart" />
+            </node>
+            <node concept="2OqwBi" id="NSnLXM_aXe" role="37vLTJ">
+              <node concept="2OqwBi" id="NSnLXM_2s1" role="2Oq$k0">
+                <node concept="2OqwBi" id="NSnLXM$lQx" role="2Oq$k0">
+                  <node concept="37vLTw" id="NSnLXM$l_t" role="2Oq$k0">
+                    <ref role="3cqZAo" node="NSnLXM$krn" resolve="ie" />
+                  </node>
+                  <node concept="2qgKlT" id="NSnLXM$mph" role="2OqNvi">
+                    <ref role="37wK5l" to="fazf:NSnLXM$nnv" resolve="getUpstreamNeighbouringConnections" />
+                  </node>
+                </node>
+                <node concept="1uHKPH" id="NSnLXM_83H" role="2OqNvi" />
+              </node>
+              <node concept="3TrEf2" id="NSnLXM_brq" role="2OqNvi">
+                <ref role="3Tt5mk" to="spwl:5rwT_JnwiU8" resolve="end" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="NSnLXM_Dxa" role="3cqZAp">
+          <node concept="2OqwBi" id="NSnLXM_DO0" role="3clFbG">
+            <node concept="37vLTw" id="NSnLXM_Dx8" role="2Oq$k0">
+              <ref role="3cqZAo" node="NSnLXM$krn" resolve="ie" />
+            </node>
+            <node concept="3YRAZt" id="NSnLXM_ET7" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="NSnLXM_cRM" role="3cqZAp">
+          <node concept="2OqwBi" id="NSnLXM_dje" role="3clFbG">
+            <node concept="37vLTw" id="NSnLXM_cRK" role="2Oq$k0">
+              <ref role="3cqZAo" node="NSnLXM$vDW" resolve="faultTreeModule" />
+            </node>
+            <node concept="3YRAZt" id="NSnLXM_e2z" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="NSnLXM$koU" role="1B3o_S" />
+      <node concept="3cqZAl" id="NSnLXM$kqh" role="3clF45" />
+      <node concept="37vLTG" id="NSnLXM$krn" role="3clF46">
+        <property role="TrG5h" value="ie" />
+        <node concept="3Tqbb2" id="NSnLXM$krm" role="1tU5fm">
+          <ref role="ehGHo" to="spwl:1SpkZ1V6gPJ" resolve="IntermediateEvent" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="NSnLXM$kob" role="jymVt" />
+    <node concept="2tJIrI" id="NSnLXM$koc" role="jymVt" />
+    <node concept="3Tm1VV" id="NSnLXM$kma" role="1B3o_S" />
+  </node>
+  <node concept="2S6QgY" id="NSnLXM_fxN">
+    <property role="TrG5h" value="combineFaultTreeBranchIntoParent" />
+    <ref role="2ZfgGC" to="spwl:1SpkZ1V6gPJ" resolve="IntermediateEvent" />
+    <node concept="2S6ZIM" id="NSnLXM_fxO" role="2ZfVej">
+      <node concept="3clFbS" id="NSnLXM_fxP" role="2VODD2">
+        <node concept="3clFbF" id="NSnLXM_fxQ" role="3cqZAp">
+          <node concept="Xl_RD" id="NSnLXM_fxR" role="3clFbG">
+            <property role="Xl_RC" value="Combine Branch into Parent" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="NSnLXM_fxS" role="2ZfgGD">
+      <node concept="3clFbS" id="NSnLXM_fxT" role="2VODD2">
+        <node concept="3clFbF" id="NSnLXM_fxU" role="3cqZAp">
+          <node concept="2YIFZM" id="NSnLXM_jzc" role="3clFbG">
+            <ref role="37wK5l" node="NSnLXM$kqr" resolve="collapseIntermediateEvent" />
+            <ref role="1Pybhc" node="NSnLXM$km9" resolve="IntermediateEventCollapser" />
+            <node concept="2Sf5sV" id="NSnLXM_jzf" role="37wK5m" />
           </node>
         </node>
       </node>
