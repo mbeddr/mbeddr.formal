@@ -8,18 +8,32 @@
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports>
     <import index="n7z1" ref="r:d9248eb8-cb38-4cb3-8454-cc903ebf6c86(com.fasten.safety.ft.typesystem)" />
     <import index="8hjb" ref="r:eddff93b-4988-424d-b9e2-54a06bf42811(com.fasten.safety.ft.intentions)" />
+    <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="suqv" ref="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" />
     <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
+        <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
+        <child id="3143335925185262981" name="testNodeResult" index="25YQFr" />
+        <child id="1229187755283" name="code" index="LjaKd" />
+      </concept>
+      <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
+        <property id="1229194968596" name="caretPosition" index="LIFWa" />
+        <property id="1229194968595" name="cellId" index="LIFWd" />
+      </concept>
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
@@ -33,9 +47,13 @@
         <reference id="1210674534086" name="declaration" index="3xOPvv" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
+      <concept id="1225989773458" name="jetbrains.mps.lang.test.structure.InvokeIntentionStatement" flags="nn" index="1MFPAf">
+        <reference id="1225989811227" name="intention" index="1MFYO6" />
+      </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -85,6 +103,17 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
+        <child id="8356039341262087992" name="line" index="1aUNEU" />
+      </concept>
+    </language>
+    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
+      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
+      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
+        <child id="1423104411234567454" name="repo" index="ukAjM" />
+        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
+      </concept>
+      <concept id="8974276187400348183" name="jetbrains.mps.lang.access.structure.ExecuteWriteActionStatement" flags="nn" index="1QHqEM" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -107,6 +136,9 @@
       <concept id="4599235098220151312" name="com.fasten.safety.ft.structure.EmptyLine" flags="ng" index="4e07$" />
       <concept id="4232349791877945006" name="com.fasten.safety.ft.structure.AndGate" flags="ng" index="cEgko" />
       <concept id="4232349791877819920" name="com.fasten.safety.ft.structure.OrGate" flags="ng" index="cFNQA" />
+      <concept id="2168856987878100335" name="com.fasten.safety.ft.structure.IntermediateEvent" flags="ng" index="1_05Uv">
+        <reference id="2168856987878570633" name="subtreeStart" index="1_em_T" />
+      </concept>
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
@@ -122,9 +154,16 @@
       <concept id="1145567426890" name="jetbrains.mps.lang.smodel.structure.SNodeListCreator" flags="nn" index="2T8Vx0">
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
+      <concept id="6407023681583036853" name="jetbrains.mps.lang.smodel.structure.NodeAttributeQualifier" flags="ng" index="3CFYIy">
+        <reference id="6407023681583036854" name="attributeConcept" index="3CFYIx" />
+      </concept>
+      <concept id="6407023681583031218" name="jetbrains.mps.lang.smodel.structure.AttributeAccess" flags="nn" index="3CFZ6_">
+        <child id="6407023681583036852" name="qualifier" index="3CFYIz" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -160,6 +199,14 @@
       <concept id="738815095926749345" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Port" flags="ng" index="1pa3jb">
         <property id="7964702570467115501" name="ordinal" index="2gRgW$" />
         <property id="738815095926749379" name="portName" index="1pa3iD" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -745,6 +792,469 @@
           <ref role="21oszj" node="3ybZIMDkJH6" resolve="Or Gate 1" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="NSnLXM_H0A">
+    <property role="TrG5h" value="_020_extract_module_test" />
+    <node concept="1qefOq" id="NSnLXM_H0C" role="25YQCW">
+      <node concept="21ASy4" id="NSnLXM_H0B" role="1qenE9">
+        <node concept="21ATtk" id="NSnLXM_H0D" role="3CrHoS">
+          <property role="TrG5h" value="TOP" />
+        </node>
+        <node concept="cEgko" id="NSnLXM_H0H" role="3CrHoS">
+          <property role="TrG5h" value="And 1" />
+        </node>
+        <node concept="cFNQA" id="NSnLXM_H0K" role="3CrHoS">
+          <property role="TrG5h" value="Or Gate to Extract 1" />
+          <node concept="LIFWc" id="NSnLXMA74z" role="lGtFl">
+            <property role="LIFWa" value="0" />
+            <property role="LIFWd" value="DiagramNode_5wdoe7_a" />
+          </node>
+        </node>
+        <node concept="21ATtL" id="NSnLXM_H0N" role="3CrHoS">
+          <property role="TrG5h" value="Basic Event 3" />
+        </node>
+        <node concept="21ATtL" id="NSnLXM_H0Q" role="3CrHoS">
+          <property role="TrG5h" value="Basic Event 1" />
+        </node>
+        <node concept="21ATtL" id="NSnLXM_H0T" role="3CrHoS">
+          <property role="TrG5h" value="Basic Event 2" />
+        </node>
+        <node concept="21oswF" id="NSnLXM_H0W" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXM_H0D" />
+          <ref role="21oszj" node="NSnLXM_H0H" />
+        </node>
+        <node concept="21oswF" id="NSnLXM_H0Z" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXM_H0H" />
+          <ref role="21oszj" node="NSnLXM_H0K" />
+        </node>
+        <node concept="21oswF" id="NSnLXM_H12" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXM_H0H" />
+          <ref role="21oszj" node="NSnLXM_H0N" />
+        </node>
+        <node concept="21oswF" id="NSnLXM_H15" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXM_H0K" />
+          <ref role="21oszj" node="NSnLXM_H0Q" />
+        </node>
+        <node concept="21oswF" id="NSnLXM_H18" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXM_H0K" />
+          <ref role="21oszj" node="NSnLXM_H0T" />
+        </node>
+        <node concept="37mRI7" id="NSnLXMA4ab" role="lGtFl" />
+        <node concept="3xLA65" id="NSnLXMAcVK" role="lGtFl">
+          <property role="TrG5h" value="initial_ft" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="NSnLXM_H1y" role="25YQFr">
+      <node concept="21ASy4" id="NSnLXM_H1x" role="1qenE9">
+        <node concept="21ATtk" id="NSnLXM_H1E" role="3CrHoS">
+          <property role="TrG5h" value="TOP" />
+        </node>
+        <node concept="cEgko" id="NSnLXM_H1F" role="3CrHoS">
+          <property role="TrG5h" value="And 1" />
+        </node>
+        <node concept="21ATtL" id="NSnLXM_H1I" role="3CrHoS">
+          <property role="TrG5h" value="Basic Event 3" />
+        </node>
+        <node concept="21oswF" id="NSnLXM_H1K" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXM_H1E" resolve="TOP" />
+          <ref role="21oszj" node="NSnLXM_H1F" resolve="And 1" />
+        </node>
+        <node concept="21oswF" id="NSnLXM_H1L" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXM_H1F" resolve="And 1" />
+          <ref role="21oszj" node="NSnLXM_H1O" resolve="Intermediate" />
+        </node>
+        <node concept="21oswF" id="NSnLXM_H1M" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXM_H1F" resolve="And 1" />
+          <ref role="21oszj" node="NSnLXM_H1I" resolve="Basic Event 3" />
+        </node>
+        <node concept="1_05Uv" id="NSnLXM_H1O" role="3CrHoS">
+          <property role="TrG5h" value="Or Gate to Extract 1_away" />
+          <ref role="1_em_T" node="NSnLXM_H0K" resolve="Or Gate to Extract 1" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="NSnLXM_H21" role="LjaKd">
+      <node concept="3clFbH" id="NSnLXM_Kq8" role="3cqZAp" />
+      <node concept="1MFPAf" id="NSnLXM_H20" role="3cqZAp">
+        <ref role="1MFYO6" to="8hjb:6fCPE$QLID4" resolve="extractFaultTreeBranchIntoModule" />
+      </node>
+      <node concept="3SKdUt" id="NSnLXMAsYo" role="3cqZAp">
+        <node concept="1PaTwC" id="NSnLXMAsYp" role="1aUNEU">
+          <node concept="3oM_SD" id="NSnLXMAsYq" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZ8" role="1PaTwD">
+            <property role="3oM_SC" value="delete" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZa" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZb" role="1PaTwD">
+            <property role="3oM_SC" value="layout" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZc" role="1PaTwD">
+            <property role="3oM_SC" value="information" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZd" role="1PaTwD">
+            <property role="3oM_SC" value="since" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZe" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZh" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZi" role="1PaTwD">
+            <property role="3oM_SC" value="interested" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZj" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZk" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZl" role="1PaTwD">
+            <property role="3oM_SC" value="test" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZm" role="1PaTwD">
+            <property role="3oM_SC" value="about" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAsZn" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QHqEM" id="NSnLXMAmOK" role="3cqZAp">
+        <node concept="1QHqEC" id="NSnLXMAmOM" role="1QHqEI">
+          <node concept="3clFbS" id="NSnLXMAmOO" role="1bW5cS">
+            <node concept="3clFbF" id="NSnLXMAcWr" role="3cqZAp">
+              <node concept="2OqwBi" id="NSnLXMAdPq" role="3clFbG">
+                <node concept="2OqwBi" id="NSnLXMAdfx" role="2Oq$k0">
+                  <node concept="3xONca" id="NSnLXMAcWp" role="2Oq$k0">
+                    <ref role="3xOPvv" node="NSnLXMAcVK" resolve="initial_ft" />
+                  </node>
+                  <node concept="3CFZ6_" id="NSnLXMAd_d" role="2OqNvi">
+                    <node concept="3CFYIy" id="NSnLXMAdCq" role="3CFYIz">
+                      <ref role="3CFYIx" to="suqv:7L$rKAVfLie" resolve="LayoutMap" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3YRAZt" id="NSnLXMAeu5" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="NSnLXMAn9t" role="ukAjM">
+          <node concept="1jxXqW" id="NSnLXMAmP8" role="2Oq$k0" />
+          <node concept="liA8E" id="NSnLXMApxV" role="2OqNvi">
+            <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="NSnLXMAx15">
+    <property role="TrG5h" value="_030_combine_extracted_branch_into_parent_ft_test" />
+    <node concept="1qefOq" id="NSnLXMAx16" role="25YQCW">
+      <node concept="21ASy4" id="NSnLXMAx17" role="1qenE9">
+        <node concept="21ATtk" id="NSnLXMAx18" role="3CrHoS">
+          <property role="TrG5h" value="TOP" />
+        </node>
+        <node concept="cEgko" id="NSnLXMAx19" role="3CrHoS">
+          <property role="TrG5h" value="And 1" />
+        </node>
+        <node concept="21ATtL" id="NSnLXMAx1c" role="3CrHoS">
+          <property role="TrG5h" value="Basic Event 3" />
+        </node>
+        <node concept="21oswF" id="NSnLXMAx1f" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXMAx18" resolve="TOP" />
+          <ref role="21oszj" node="NSnLXMAx19" resolve="And 1" />
+        </node>
+        <node concept="21oswF" id="NSnLXMAx1g" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXMAx19" resolve="And 1" />
+          <ref role="21oszj" node="NSnLXMAxus" resolve="Or Gate to Extract 1_away" />
+        </node>
+        <node concept="21oswF" id="NSnLXMAx1h" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXMAx19" resolve="And 1" />
+          <ref role="21oszj" node="NSnLXMAx1c" resolve="Basic Event 3" />
+        </node>
+        <node concept="37mRI7" id="NSnLXMAx1k" role="lGtFl">
+          <node concept="37mRIm" id="NSnLXMAxgH" role="37mRID">
+            <property role="37mO49" value="934601511350702152" />
+            <node concept="gqqVs" id="NSnLXMAxgG" role="37mO4d">
+              <property role="gqqTZ" value="103.5" />
+              <property role="gqqTW" value="12.0" />
+              <property role="gqqTX" value="52.0" />
+              <property role="gqqTy" value="52.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+              <node concept="1pa3jb" id="NSnLXMAxgI" role="1pap1a">
+                <property role="1pa3iD" value="source_port" />
+                <property role="2gRgW$" value="1354566607" />
+              </node>
+            </node>
+          </node>
+          <node concept="37mRIm" id="NSnLXMAxgK" role="37mRID">
+            <property role="37mO49" value="934601511350702153" />
+            <node concept="gqqVs" id="NSnLXMAxgJ" role="37mO4d">
+              <property role="gqqTZ" value="98.5" />
+              <property role="gqqTW" value="82.0" />
+              <property role="gqqTX" value="62.0" />
+              <property role="gqqTy" value="62.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+              <node concept="1pa3jb" id="NSnLXMAxgL" role="1pap1a">
+                <property role="1pa3iD" value="port" />
+                <property role="2gRgW$" value="912680549" />
+              </node>
+              <node concept="1pa3jb" id="NSnLXMAxgM" role="1pap1a">
+                <property role="1pa3iD" value="60" />
+                <property role="2gRgW$" value="1650445092" />
+              </node>
+              <node concept="1pa3jb" id="NSnLXMAxgN" role="1pap1a">
+                <property role="1pa3iD" value="61" />
+                <property role="2gRgW$" value="1286758345" />
+              </node>
+            </node>
+          </node>
+          <node concept="37mRIm" id="NSnLXMAxgU" role="37mRID">
+            <property role="37mO49" value="934601511350702156" />
+            <node concept="gqqVs" id="NSnLXMAxgT" role="37mO4d">
+              <property role="gqqTZ" value="12.0" />
+              <property role="gqqTW" value="182.8" />
+              <property role="gqqTX" value="89.0" />
+              <property role="gqqTy" value="52.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+              <node concept="1pa3jb" id="NSnLXMAxgV" role="1pap1a">
+                <property role="1pa3iD" value="target_port" />
+                <property role="2gRgW$" value="632180578" />
+              </node>
+              <node concept="1pa3jb" id="NSnLXMAxgW" role="1pap1a">
+                <property role="1pa3iD" value="source_port" />
+                <property role="2gRgW$" value="1503563366" />
+              </node>
+            </node>
+          </node>
+          <node concept="37mRIm" id="NSnLXMAxh6" role="37mRID">
+            <property role="37mO49" value="934601511350702159" />
+            <node concept="2VclpC" id="NSnLXMAxh5" role="37mO4d" />
+          </node>
+          <node concept="37mRIm" id="NSnLXMAxh8" role="37mRID">
+            <property role="37mO49" value="934601511350702160" />
+            <node concept="2VclpC" id="NSnLXMAxh7" role="37mO4d">
+              <node concept="2VclrF" id="NSnLXMAxhf" role="2Vcluh">
+                <property role="2Vclpx" value="133.55" />
+                <property role="2Vclpz" value="162.0" />
+              </node>
+              <node concept="2VclrF" id="NSnLXMAxhg" role="2Vcluh">
+                <property role="2Vclpx" value="202.5" />
+                <property role="2Vclpz" value="162.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="37mRIm" id="NSnLXMAxha" role="37mRID">
+            <property role="37mO49" value="934601511350702161" />
+            <node concept="2VclpC" id="NSnLXMAxh9" role="37mO4d">
+              <node concept="2VclrF" id="NSnLXMAxhh" role="2Vcluh">
+                <property role="2Vclpx" value="125.45" />
+                <property role="2Vclpz" value="162.0" />
+              </node>
+              <node concept="2VclrF" id="NSnLXMAxhi" role="2Vcluh">
+                <property role="2Vclpx" value="56.5" />
+                <property role="2Vclpz" value="162.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="37mRIm" id="NSnLXMAxhc" role="37mRID">
+            <property role="37mO49" value="934601511350702162" />
+            <node concept="2VclpC" id="NSnLXMAxhb" role="37mO4d">
+              <node concept="2VclrF" id="NSnLXMAxhj" role="2Vcluh">
+                <property role="2Vclpx" value="206.55" />
+                <property role="2Vclpz" value="265.0" />
+              </node>
+              <node concept="2VclrF" id="NSnLXMAxhk" role="2Vcluh">
+                <property role="2Vclpx" value="256.0" />
+                <property role="2Vclpz" value="265.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="37mRIm" id="NSnLXMAxhe" role="37mRID">
+            <property role="37mO49" value="934601511350702163" />
+            <node concept="2VclpC" id="NSnLXMAxhd" role="37mO4d">
+              <node concept="2VclrF" id="NSnLXMAxhl" role="2Vcluh">
+                <property role="2Vclpx" value="198.45" />
+                <property role="2Vclpz" value="265.0" />
+              </node>
+              <node concept="2VclrF" id="NSnLXMAxhm" role="2Vcluh">
+                <property role="2Vclpx" value="149.0" />
+                <property role="2Vclpz" value="265.0" />
+              </node>
+            </node>
+          </node>
+          <node concept="37mRIm" id="NSnLXMAxuu" role="37mRID">
+            <property role="37mO49" value="934601511350704028" />
+            <node concept="gqqVs" id="NSnLXMAxut" role="37mO4d">
+              <property role="gqqTX" value="177.0" />
+              <property role="gqqTy" value="66.0" />
+              <property role="gqqTZ" value="119.0" />
+              <property role="gqqTW" value="182.0" />
+              <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+            </node>
+          </node>
+        </node>
+        <node concept="3xLA65" id="NSnLXMAx1l" role="lGtFl">
+          <property role="TrG5h" value="initial_ft" />
+        </node>
+        <node concept="1_05Uv" id="NSnLXMAxus" role="3CrHoS">
+          <property role="TrG5h" value="Or Gate to Extract 1_away" />
+          <ref role="1_em_T" node="NSnLXMAx1a" resolve="Or Gate to Extract 1" />
+          <node concept="LIFWc" id="NSnLXMAxyy" role="lGtFl">
+            <property role="LIFWa" value="0" />
+            <property role="LIFWd" value="DiagramNode_fe7rk5_a" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="NSnLXMAx1m" role="25YQFr">
+      <node concept="21ASy4" id="NSnLXMAx1n" role="1qenE9">
+        <node concept="21ATtk" id="NSnLXMCilh" role="3CrHoS">
+          <property role="TrG5h" value="TOP" />
+        </node>
+        <node concept="cEgko" id="NSnLXMCili" role="3CrHoS">
+          <property role="TrG5h" value="And 1" />
+        </node>
+        <node concept="21ATtL" id="NSnLXMCilj" role="3CrHoS">
+          <property role="TrG5h" value="Basic Event 3" />
+        </node>
+        <node concept="21oswF" id="NSnLXMCilk" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXMCilh" resolve="TOP" />
+          <ref role="21oszj" node="NSnLXMCili" resolve="And 1" />
+        </node>
+        <node concept="21oswF" id="NSnLXMCill" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXMCili" resolve="And 1" />
+          <ref role="21oszj" node="NSnLXMCiln" />
+        </node>
+        <node concept="21oswF" id="NSnLXMCilm" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXMCili" resolve="And 1" />
+          <ref role="21oszj" node="NSnLXMCilj" resolve="Basic Event 3" />
+        </node>
+        <node concept="cFNQA" id="NSnLXMCiln" role="3CrHoS">
+          <property role="TrG5h" value="Or Gate to Extract 1" />
+        </node>
+        <node concept="21ATtL" id="NSnLXMCilo" role="3CrHoS">
+          <property role="TrG5h" value="Basic Event 1" />
+        </node>
+        <node concept="21ATtL" id="NSnLXMCilp" role="3CrHoS">
+          <property role="TrG5h" value="Basic Event 2" />
+        </node>
+        <node concept="21oswF" id="NSnLXMCilq" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXMCiln" resolve="Or Gate to Extract 1" />
+          <ref role="21oszj" node="NSnLXMCilo" resolve="Basic Event 1" />
+        </node>
+        <node concept="21oswF" id="NSnLXMCilr" role="3CrHoS">
+          <ref role="21oszt" node="NSnLXMCiln" resolve="Or Gate to Extract 1" />
+          <ref role="21oszj" node="NSnLXMCilp" resolve="Basic Event 2" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="NSnLXMAx1v" role="LjaKd">
+      <node concept="3clFbH" id="NSnLXMAx1w" role="3cqZAp" />
+      <node concept="1MFPAf" id="NSnLXMAx1x" role="3cqZAp">
+        <ref role="1MFYO6" to="8hjb:NSnLXM_fxN" resolve="combineFaultTreeBranchIntoParent" />
+      </node>
+      <node concept="3SKdUt" id="NSnLXMAx1y" role="3cqZAp">
+        <node concept="1PaTwC" id="NSnLXMAx1z" role="1aUNEU">
+          <node concept="3oM_SD" id="NSnLXMAx1$" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1_" role="1PaTwD">
+            <property role="3oM_SC" value="delete" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1A" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1B" role="1PaTwD">
+            <property role="3oM_SC" value="layout" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1C" role="1PaTwD">
+            <property role="3oM_SC" value="information" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1D" role="1PaTwD">
+            <property role="3oM_SC" value="since" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1E" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1F" role="1PaTwD">
+            <property role="3oM_SC" value="not" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1G" role="1PaTwD">
+            <property role="3oM_SC" value="interested" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1H" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1I" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1J" role="1PaTwD">
+            <property role="3oM_SC" value="test" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1K" role="1PaTwD">
+            <property role="3oM_SC" value="about" />
+          </node>
+          <node concept="3oM_SD" id="NSnLXMAx1L" role="1PaTwD">
+            <property role="3oM_SC" value="it" />
+          </node>
+        </node>
+      </node>
+      <node concept="1QHqEM" id="NSnLXMAx1M" role="3cqZAp">
+        <node concept="1QHqEC" id="NSnLXMAx1N" role="1QHqEI">
+          <node concept="3clFbS" id="NSnLXMAx1O" role="1bW5cS">
+            <node concept="3clFbF" id="NSnLXMAx1P" role="3cqZAp">
+              <node concept="2OqwBi" id="NSnLXMAx1Q" role="3clFbG">
+                <node concept="2OqwBi" id="NSnLXMAx1R" role="2Oq$k0">
+                  <node concept="3xONca" id="NSnLXMAx1S" role="2Oq$k0">
+                    <ref role="3xOPvv" node="NSnLXMAx1l" resolve="initial_ft" />
+                  </node>
+                  <node concept="3CFZ6_" id="NSnLXMAx1T" role="2OqNvi">
+                    <node concept="3CFYIy" id="NSnLXMAx1U" role="3CFYIz">
+                      <ref role="3CFYIx" to="suqv:7L$rKAVfLie" resolve="LayoutMap" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3YRAZt" id="NSnLXMAx1V" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="NSnLXMAx1W" role="ukAjM">
+          <node concept="1jxXqW" id="NSnLXMAx1X" role="2Oq$k0" />
+          <node concept="liA8E" id="NSnLXMAx1Y" role="2OqNvi">
+            <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="21ASy4" id="NSnLXMClYa">
+    <property role="TrG5h" value="extract_from_Or Gate to Extract 1" />
+    <node concept="cFNQA" id="NSnLXMAx1a" role="3CrHoS">
+      <property role="TrG5h" value="Or Gate to Extract 1" />
+    </node>
+    <node concept="21ATtL" id="NSnLXMAx1d" role="3CrHoS">
+      <property role="TrG5h" value="Basic Event 1" />
+    </node>
+    <node concept="21ATtL" id="NSnLXMAx1e" role="3CrHoS">
+      <property role="TrG5h" value="Basic Event 2" />
+    </node>
+    <node concept="21oswF" id="NSnLXMAx1i" role="3CrHoS">
+      <ref role="21oszt" node="NSnLXMAx1a" resolve="Or Gate to Extract 1" />
+      <ref role="21oszj" node="NSnLXMAx1d" resolve="Basic Event 1" />
+    </node>
+    <node concept="21oswF" id="NSnLXMAx1j" role="3CrHoS">
+      <ref role="21oszt" node="NSnLXMAx1a" resolve="Or Gate to Extract 1" />
+      <ref role="21oszj" node="NSnLXMAx1e" resolve="Basic Event 2" />
     </node>
   </node>
 </model>
