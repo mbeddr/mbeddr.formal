@@ -524,7 +524,7 @@
                     <ref role="3cqZAo" node="5VDMD6Qd_7w" resolve="ft" />
                   </node>
                   <node concept="3Tsc0h" id="5VDMD6QdMoh" role="2OqNvi">
-                    <ref role="3TtcxE" to="spwl:2s9yRNfpPP4" />
+                    <ref role="3TtcxE" to="spwl:2s9yRNfpPP4" resolve="content" />
                   </node>
                 </node>
                 <node concept="v3k3i" id="5VDMD6QdMoi" role="2OqNvi">
@@ -597,7 +597,7 @@
                 <ref role="3cqZAo" node="NSnLXM$krn" resolve="ie" />
               </node>
               <node concept="3TrEf2" id="NSnLXM$lgf" role="2OqNvi">
-                <ref role="3Tt5mk" to="spwl:1SpkZ1V83E9" />
+                <ref role="3Tt5mk" to="spwl:1SpkZ1V83E9" resolve="subtreeStart" />
               </node>
             </node>
           </node>
@@ -650,7 +650,7 @@
                 <ref role="3cqZAo" node="NSnLXM$yGG" resolve="faultTreeParent" />
               </node>
               <node concept="3Tsc0h" id="NSnLXM$$B8" role="2OqNvi">
-                <ref role="3TtcxE" to="spwl:2s9yRNfpPP4" />
+                <ref role="3TtcxE" to="spwl:2s9yRNfpPP4" resolve="content" />
               </node>
             </node>
             <node concept="X8dFx" id="NSnLXM$HgX" role="2OqNvi">
@@ -686,7 +686,7 @@
                 <node concept="1uHKPH" id="NSnLXM_83H" role="2OqNvi" />
               </node>
               <node concept="3TrEf2" id="NSnLXM_brq" role="2OqNvi">
-                <ref role="3Tt5mk" to="spwl:5rwT_JnwiU8" />
+                <ref role="3Tt5mk" to="spwl:5rwT_JnwiU8" resolve="end" />
               </node>
             </node>
           </node>

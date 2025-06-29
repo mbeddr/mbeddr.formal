@@ -863,7 +863,7 @@
       </node>
     </node>
     <node concept="21oswF" id="5VDMD6QeqW9" role="3CrHoS">
-      <ref role="21oszt" node="5VDMD6QeqW3" resolve="_100_minimal_cutsets_top_event" />
+      <ref role="21oszt" node="5VDMD6QeqW3" resolve="_101_minimal_cutsets_top_event" />
       <ref role="21oszj" node="5VDMD6QeqW4" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="5VDMD6QeqWa" role="3CrHoS">
@@ -1548,10 +1548,10 @@
     </node>
     <node concept="3Unl_y" id="5VDMD6Qeyu6" role="3Unl$J" />
     <node concept="3UniOE" id="5VDMD6Qeyu7" role="3Unl$J">
-      <ref role="3UniOC" node="5VDMD6QeqW3" resolve="_100_minimal_cutsets_top_event" />
+      <ref role="3UniOC" node="5VDMD6QeqW3" resolve="_101_minimal_cutsets_top_event" />
     </node>
     <node concept="3UgQ1$" id="5VDMD6Qeyu8" role="3Unl$J">
-      <ref role="3UgQ2a" node="5VDMD6QeqW3" resolve="_100_minimal_cutsets_top_event" />
+      <ref role="3UgQ2a" node="5VDMD6QeqW3" resolve="_101_minimal_cutsets_top_event" />
       <node concept="3Ugoyx" id="5VDMD6Qeyu9" role="3UgoyZ">
         <property role="3Ugoyw" value="_101_minimal_cutsets_out.tsv" />
       </node>

@@ -651,7 +651,7 @@
           <node concept="2OqwBi" id="1GpuQySZm6y" role="3clFbG">
             <node concept="2OqwBi" id="7EzhnkmR6UI" role="2Oq$k0">
               <node concept="BsUDl" id="NSnLXM$rya" role="2Oq$k0">
-                <ref role="37wK5l" node="NSnLXM$nnv" resolve="getUpstreamConnections" />
+                <ref role="37wK5l" node="NSnLXM$nnv" resolve="getUpstreamNeighbouringConnections" />
               </node>
               <node concept="13MTOL" id="7EzhnkmR79R" role="2OqNvi">
                 <ref role="13MTZf" to="spwl:5rwT_JnwiU6" resolve="start" />
@@ -727,7 +727,7 @@
           <node concept="2OqwBi" id="12e1nc$3fym" role="3clFbG">
             <node concept="2OqwBi" id="12e1nc$3fyn" role="2Oq$k0">
               <node concept="BsUDl" id="NSnLXM$uQy" role="2Oq$k0">
-                <ref role="37wK5l" node="NSnLXM$rBi" resolve="getDownstreamConnections" />
+                <ref role="37wK5l" node="NSnLXM$rBi" resolve="getDownstreamNeighbouringConnections" />
               </node>
               <node concept="13MTOL" id="12e1nc$3fyF" role="2OqNvi">
                 <ref role="13MTZf" to="spwl:5rwT_JnwiU8" resolve="end" />
@@ -773,7 +773,7 @@
                             <ref role="3cqZAo" node="NSnLXM$rBD" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="NSnLXM$rBB" role="2OqNvi">
-                            <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" />
+                            <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
                           </node>
                         </node>
                         <node concept="13iPFW" id="NSnLXM$rBC" role="3uHU7w" />
