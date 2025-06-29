@@ -8369,9 +8369,9 @@
             <ref role="3bR37D" to="90a9:2NTGYE$JTGY" resolve="com.dslfoundry.plaintextgen" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5uow0HSPFnV" role="3bR37C">
-          <node concept="3bR9La" id="5uow0HSPFnW" role="1SiIV1">
-            <ref role="3bR37D" node="3rkUgzovdWl" resolve="com.fasten.safety.ft.xfta.pluginSolution" />
+        <node concept="1SiIV0" id="2c2ooLvfpWL" role="3bR37C">
+          <node concept="3bR9La" id="2c2ooLvfpWM" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
       </node>

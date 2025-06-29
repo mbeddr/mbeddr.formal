@@ -44,29 +44,29 @@
       </concept>
     </language>
   </registry>
-  <node concept="3Unl$E" id="2MppyJmTn5z">
-    <property role="TrG5h" value="_030_plant_burning_script" />
+  <node concept="3Unl$E" id="2c2ooLvi$GR">
+    <property role="TrG5h" value="_030_alarm_failure_script" />
     <property role="3GE5qa" value="_030_quantitative_fault_tree_analysis" />
-    <node concept="3Unl$P" id="2MppyJmTn5$" role="3Unl$J">
-      <ref role="3Unl$v" node="2zYHfFNJUAN" resolve="_030_plant_burning" />
+    <node concept="3Unl$P" id="2c2ooLvi$GS" role="3Unl$J">
+      <ref role="3Unl$v" node="2c2ooLvcwoc" resolve="_030_alarm_failure" />
     </node>
-    <node concept="3Unl_y" id="2MppyJmTn5_" role="3Unl$J" />
-    <node concept="3UniOE" id="2MppyJmTn5A" role="3Unl$J">
-      <ref role="3UniOC" node="2zYHfFNJUSM" resolve="PLANT_LOSS_BY_BURNING" />
+    <node concept="3Unl_y" id="2c2ooLvi$GT" role="3Unl$J" />
+    <node concept="3UniOE" id="2c2ooLvi$GU" role="3Unl$J">
+      <ref role="3UniOC" node="2c2ooLvcwod" resolve="ALARM_FAILURE_TOP" />
     </node>
-    <node concept="3Unl_R" id="2MppyJmTn5B" role="3Unl$J">
-      <ref role="3Unl_b" node="2zYHfFNJUSM" resolve="PLANT_LOSS_BY_BURNING" />
-      <node concept="3Ugoyx" id="2MppyJmTn5C" role="3UgoyZ">
-        <property role="3Ugoyw" value="_030_plant_burning_out.tsv" />
+    <node concept="3Unl_R" id="2c2ooLvi$GV" role="3Unl$J">
+      <ref role="3Unl_b" node="2c2ooLvcwod" resolve="ALARM_FAILURE_TOP" />
+      <node concept="3Ugoyx" id="2c2ooLvi$GW" role="3UgoyZ">
+        <property role="3Ugoyw" value="_030_alarm_failure_out.tsv" />
       </node>
-      <node concept="1W3sYI" id="2c2ooLvc5Hz" role="atf1B">
-        <property role="1W36fW" value="10" />
+      <node concept="1W3sYI" id="2c2ooLvi$GX" role="atf1B">
+        <property role="1W36fW" value="1" />
       </node>
     </node>
-    <node concept="3UgQ1$" id="2c2ooLvcwaA" role="3Unl$J">
-      <ref role="3UgQ2a" node="2zYHfFNJUSM" resolve="PLANT_LOSS_BY_BURNING" />
-      <node concept="3Ugoyx" id="2c2ooLvcwaC" role="3UgoyZ">
-        <property role="3Ugoyw" value="_030_plant_burning_out.tsv" />
+    <node concept="3UgQ1$" id="2c2ooLvi$GY" role="3Unl$J">
+      <ref role="3UgQ2a" node="2c2ooLvcwqE" resolve="ALARM" />
+      <node concept="3Ugoyx" id="2c2ooLvi$GZ" role="3UgoyZ">
+        <property role="3Ugoyw" value="_030_alarm_failure_out.tsv" />
         <property role="3UgQ2f" value="2MppyJmQwqA/append" />
       </node>
     </node>
