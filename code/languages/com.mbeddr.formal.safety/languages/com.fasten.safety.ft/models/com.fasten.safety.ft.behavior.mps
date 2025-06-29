@@ -12,6 +12,7 @@
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="6496299201655527393" name="jetbrains.mps.lang.behavior.structure.LocalBehaviorMethodCall" flags="nn" index="BsUDl" />
       <concept id="1225194240794" name="jetbrains.mps.lang.behavior.structure.ConceptBehavior" flags="ng" index="13h7C7">
         <reference id="1225194240799" name="concept" index="13h7C2" />
         <child id="1225194240805" name="method" index="13h7CS" />
@@ -649,51 +650,68 @@
         <node concept="3clFbF" id="1GpuQySZg$v" role="3cqZAp">
           <node concept="2OqwBi" id="1GpuQySZm6y" role="3clFbG">
             <node concept="2OqwBi" id="7EzhnkmR6UI" role="2Oq$k0">
-              <node concept="2OqwBi" id="1GpuQySZj2G" role="2Oq$k0">
-                <node concept="2OqwBi" id="1GpuQySZhbD" role="2Oq$k0">
-                  <node concept="2OqwBi" id="1GpuQySZgKJ" role="2Oq$k0">
-                    <node concept="13iPFW" id="7EzhnkmR69m" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="1GpuQySZgXM" role="2OqNvi">
-                      <node concept="1xMEDy" id="1GpuQySZgXO" role="1xVPHs">
-                        <node concept="chp4Y" id="1GpuQySZgZW" role="ri$Ld">
-                          <ref role="cht4Q" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="2s9yRNfqolf" role="2OqNvi">
-                    <ref role="37wK5l" node="2s9yRNforA0" resolve="connections" />
-                  </node>
-                </node>
-                <node concept="3zZkjj" id="1GpuQySZp42" role="2OqNvi">
-                  <node concept="1bVj0M" id="1GpuQySZp44" role="23t8la">
-                    <node concept="3clFbS" id="1GpuQySZp45" role="1bW5cS">
-                      <node concept="3clFbF" id="1GpuQySZp46" role="3cqZAp">
-                        <node concept="3clFbC" id="1GpuQySZp47" role="3clFbG">
-                          <node concept="2OqwBi" id="1GpuQySZp49" role="3uHU7B">
-                            <node concept="37vLTw" id="1GpuQySZp4a" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2hED36FpCw1" resolve="it" />
-                            </node>
-                            <node concept="3TrEf2" id="6csJveETB7f" role="2OqNvi">
-                              <ref role="3Tt5mk" to="spwl:5rwT_JnwiU8" resolve="end" />
-                            </node>
-                          </node>
-                          <node concept="13iPFW" id="7EzhnkmR7sx" role="3uHU7w" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="gl6BB" id="2hED36FpCw1" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="2hED36FpCw2" role="1tU5fm" />
-                    </node>
-                  </node>
-                </node>
+              <node concept="BsUDl" id="NSnLXM$rya" role="2Oq$k0">
+                <ref role="37wK5l" node="NSnLXM$nnv" resolve="getUpstreamNeighbouringConnections" />
               </node>
               <node concept="13MTOL" id="7EzhnkmR79R" role="2OqNvi">
                 <ref role="13MTZf" to="spwl:5rwT_JnwiU6" resolve="start" />
               </node>
             </node>
             <node concept="ANE8D" id="1GpuQySZmAt" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="NSnLXM$nnv" role="13h7CS">
+      <property role="TrG5h" value="getUpstreamNeighbouringConnections" />
+      <node concept="3Tm1VV" id="NSnLXM$nnw" role="1B3o_S" />
+      <node concept="2I9FWS" id="NSnLXM$nLo" role="3clF45">
+        <ref role="2I9WkF" to="spwl:5rwT_JnuR3V" resolve="FaultTreeConnectionBase" />
+      </node>
+      <node concept="3clFbS" id="NSnLXM$nny" role="3clF47">
+        <node concept="3clFbF" id="NSnLXM$ocj" role="3cqZAp">
+          <node concept="2OqwBi" id="NSnLXM$prw" role="3clFbG">
+            <node concept="2OqwBi" id="NSnLXM$ocl" role="2Oq$k0">
+              <node concept="2OqwBi" id="NSnLXM$ocm" role="2Oq$k0">
+                <node concept="2OqwBi" id="NSnLXM$ocn" role="2Oq$k0">
+                  <node concept="13iPFW" id="NSnLXM$oco" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="NSnLXM$ocp" role="2OqNvi">
+                    <node concept="1xMEDy" id="NSnLXM$ocq" role="1xVPHs">
+                      <node concept="chp4Y" id="NSnLXM$ocr" role="ri$Ld">
+                        <ref role="cht4Q" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="NSnLXM$ocs" role="2OqNvi">
+                  <ref role="37wK5l" node="2s9yRNforA0" resolve="connections" />
+                </node>
+              </node>
+              <node concept="3zZkjj" id="NSnLXM$oct" role="2OqNvi">
+                <node concept="1bVj0M" id="NSnLXM$ocu" role="23t8la">
+                  <node concept="3clFbS" id="NSnLXM$ocv" role="1bW5cS">
+                    <node concept="3clFbF" id="NSnLXM$ocw" role="3cqZAp">
+                      <node concept="3clFbC" id="NSnLXM$ocx" role="3clFbG">
+                        <node concept="2OqwBi" id="NSnLXM$ocy" role="3uHU7B">
+                          <node concept="37vLTw" id="NSnLXM$ocz" role="2Oq$k0">
+                            <ref role="3cqZAo" node="NSnLXM$ocA" resolve="it" />
+                          </node>
+                          <node concept="3TrEf2" id="NSnLXM$oc$" role="2OqNvi">
+                            <ref role="3Tt5mk" to="spwl:5rwT_JnwiU8" resolve="end" />
+                          </node>
+                        </node>
+                        <node concept="13iPFW" id="NSnLXM$oc_" role="3uHU7w" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="gl6BB" id="NSnLXM$ocA" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="NSnLXM$ocB" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="ANE8D" id="NSnLXM$raS" role="2OqNvi" />
           </node>
         </node>
       </node>
@@ -708,51 +726,68 @@
         <node concept="3clFbF" id="12e1nc$3fyl" role="3cqZAp">
           <node concept="2OqwBi" id="12e1nc$3fym" role="3clFbG">
             <node concept="2OqwBi" id="12e1nc$3fyn" role="2Oq$k0">
-              <node concept="2OqwBi" id="12e1nc$3fyo" role="2Oq$k0">
-                <node concept="2OqwBi" id="12e1nc$3fyp" role="2Oq$k0">
-                  <node concept="2OqwBi" id="12e1nc$3fyq" role="2Oq$k0">
-                    <node concept="13iPFW" id="12e1nc$3fyr" role="2Oq$k0" />
-                    <node concept="2Xjw5R" id="12e1nc$3fys" role="2OqNvi">
-                      <node concept="1xMEDy" id="12e1nc$3fyt" role="1xVPHs">
-                        <node concept="chp4Y" id="12e1nc$3fyu" role="ri$Ld">
-                          <ref role="cht4Q" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2qgKlT" id="12e1nc$3fyv" role="2OqNvi">
-                    <ref role="37wK5l" node="2s9yRNforA0" resolve="connections" />
-                  </node>
-                </node>
-                <node concept="3zZkjj" id="12e1nc$3fyw" role="2OqNvi">
-                  <node concept="1bVj0M" id="12e1nc$3fyx" role="23t8la">
-                    <node concept="3clFbS" id="12e1nc$3fyy" role="1bW5cS">
-                      <node concept="3clFbF" id="12e1nc$3fyz" role="3cqZAp">
-                        <node concept="3clFbC" id="12e1nc$3fy$" role="3clFbG">
-                          <node concept="2OqwBi" id="12e1nc$3fy_" role="3uHU7B">
-                            <node concept="37vLTw" id="12e1nc$3fyA" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2hED36FpCw3" resolve="it" />
-                            </node>
-                            <node concept="3TrEf2" id="12e1nc$3fyB" role="2OqNvi">
-                              <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
-                            </node>
-                          </node>
-                          <node concept="13iPFW" id="12e1nc$3fyC" role="3uHU7w" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="gl6BB" id="2hED36FpCw3" role="1bW2Oz">
-                      <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="2hED36FpCw4" role="1tU5fm" />
-                    </node>
-                  </node>
-                </node>
+              <node concept="BsUDl" id="NSnLXM$uQy" role="2Oq$k0">
+                <ref role="37wK5l" node="NSnLXM$rBi" resolve="getDownstreamNeighbouringConnections" />
               </node>
               <node concept="13MTOL" id="12e1nc$3fyF" role="2OqNvi">
                 <ref role="13MTZf" to="spwl:5rwT_JnwiU8" resolve="end" />
               </node>
             </node>
             <node concept="ANE8D" id="12e1nc$3fyG" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="NSnLXM$rBi" role="13h7CS">
+      <property role="TrG5h" value="getDownstreamNeighbouringConnections" />
+      <node concept="3Tm1VV" id="NSnLXM$rBj" role="1B3o_S" />
+      <node concept="2I9FWS" id="NSnLXM$rBk" role="3clF45">
+        <ref role="2I9WkF" to="spwl:5rwT_JnuR3V" resolve="FaultTreeConnectionBase" />
+      </node>
+      <node concept="3clFbS" id="NSnLXM$rBl" role="3clF47">
+        <node concept="3clFbF" id="NSnLXM$rBm" role="3cqZAp">
+          <node concept="2OqwBi" id="NSnLXM$rBn" role="3clFbG">
+            <node concept="2OqwBi" id="NSnLXM$rBo" role="2Oq$k0">
+              <node concept="2OqwBi" id="NSnLXM$rBp" role="2Oq$k0">
+                <node concept="2OqwBi" id="NSnLXM$rBq" role="2Oq$k0">
+                  <node concept="13iPFW" id="NSnLXM$rBr" role="2Oq$k0" />
+                  <node concept="2Xjw5R" id="NSnLXM$rBs" role="2OqNvi">
+                    <node concept="1xMEDy" id="NSnLXM$rBt" role="1xVPHs">
+                      <node concept="chp4Y" id="NSnLXM$rBu" role="ri$Ld">
+                        <ref role="cht4Q" to="spwl:5rwT_JnuQVv" resolve="FaultTree" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2qgKlT" id="NSnLXM$rBv" role="2OqNvi">
+                  <ref role="37wK5l" node="2s9yRNforA0" resolve="connections" />
+                </node>
+              </node>
+              <node concept="3zZkjj" id="NSnLXM$rBw" role="2OqNvi">
+                <node concept="1bVj0M" id="NSnLXM$rBx" role="23t8la">
+                  <node concept="3clFbS" id="NSnLXM$rBy" role="1bW5cS">
+                    <node concept="3clFbF" id="NSnLXM$rBz" role="3cqZAp">
+                      <node concept="3clFbC" id="NSnLXM$rB$" role="3clFbG">
+                        <node concept="2OqwBi" id="NSnLXM$rB_" role="3uHU7B">
+                          <node concept="37vLTw" id="NSnLXM$rBA" role="2Oq$k0">
+                            <ref role="3cqZAo" node="NSnLXM$rBD" resolve="it" />
+                          </node>
+                          <node concept="3TrEf2" id="NSnLXM$rBB" role="2OqNvi">
+                            <ref role="3Tt5mk" to="spwl:5rwT_JnwiU6" resolve="start" />
+                          </node>
+                        </node>
+                        <node concept="13iPFW" id="NSnLXM$rBC" role="3uHU7w" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="gl6BB" id="NSnLXM$rBD" role="1bW2Oz">
+                    <property role="TrG5h" value="it" />
+                    <node concept="2jxLKc" id="NSnLXM$rBE" role="1tU5fm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="ANE8D" id="NSnLXM$rBF" role="2OqNvi" />
           </node>
         </node>
       </node>
