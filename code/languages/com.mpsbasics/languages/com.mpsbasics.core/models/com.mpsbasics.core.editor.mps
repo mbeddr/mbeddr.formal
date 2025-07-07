@@ -443,7 +443,6 @@
       <node concept="3F0ifn" id="1_aHBva9WSF" role="3EZMnx">
         <property role="3F0ifm" value="―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――" />
       </node>
-      <node concept="3F0ifn" id="14CuINs4Qgl" role="3EZMnx" />
     </node>
   </node>
   <node concept="PKFIW" id="4_pH3zvd_oC">

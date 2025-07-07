@@ -6,6 +6,7 @@
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -219,9 +220,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -375,6 +374,9 @@
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
     </language>
+    <language id="817e4e70-961e-4a95-98a1-15e9f32231f1" name="jetbrains.mps.ide.httpsupport">
+      <concept id="1829257266377339186" name="jetbrains.mps.ide.httpsupport.structure.Node_getURLOperation" flags="ng" index="2$mYbS" />
+    </language>
   </registry>
   <node concept="312cEu" id="25fKBAPJnSM">
     <property role="TrG5h" value="SVGGenerator" />
@@ -383,9 +385,7 @@
       <property role="TrG5h" value="DEBUG_ENABLED" />
       <node concept="3Tm1VV" id="4A8SZs9GMG$" role="1B3o_S" />
       <node concept="10P_77" id="4A8SZs9GQUM" role="1tU5fm" />
-      <node concept="3clFbT" id="4A8SZs9GVrR" role="33vP2m">
-        <property role="3clFbU" value="true" />
-      </node>
+      <node concept="3clFbT" id="4A8SZs9GVrR" role="33vP2m" />
     </node>
     <node concept="2tJIrI" id="25fKBAPJnVC" role="jymVt" />
     <node concept="2YIFZL" id="25fKBAPJnWs" role="jymVt">
@@ -613,7 +613,7 @@
                 </node>
               </node>
             </node>
-            <node concept="3clFbH" id="25fKBAPL2DQ" role="3cqZAp" />
+            <node concept="3clFbH" id="1$TzEhkDEce" role="3cqZAp" />
             <node concept="3cpWs8" id="25fKBAPL4Lc" role="3cqZAp">
               <node concept="3cpWsn" id="25fKBAPL4Ld" role="3cpWs9">
                 <property role="TrG5h" value="canvas" />
@@ -705,7 +705,12 @@
                       </node>
                       <node concept="liA8E" id="25fKBAPM7bt" role="2OqNvi">
                         <ref role="37wK5l" to="iyaa:~SAXSVGDocumentFactory.createSVGDocument(java.lang.String,java.io.Reader)" resolve="createSVGDocument" />
-                        <node concept="10Nm6u" id="25fKBAPOfC6" role="37wK5m" />
+                        <node concept="2OqwBi" id="1$TzEhkAgOw" role="37wK5m">
+                          <node concept="37vLTw" id="1$TzEhkAgOx" role="2Oq$k0">
+                            <ref role="3cqZAo" node="1I7wo92VPOf" resolve="diagram" />
+                          </node>
+                          <node concept="2$mYbS" id="1$TzEhkAgOy" role="2OqNvi" />
+                        </node>
                         <node concept="2ShNRf" id="25fKBAPOgh$" role="37wK5m">
                           <node concept="1pGfFk" id="25fKBAPOlZ9" role="2ShVmc">
                             <property role="373rjd" value="true" />
@@ -2124,8 +2129,10 @@
     <property role="3GE5qa" value="diagram.mindmap" />
     <ref role="1XX52x" to="udwj:1_aHBvaf0rl" resolve="MindmapEntry" />
     <node concept="3EZMnI" id="1_aHBvaf0rr" role="2wV5jI">
-      <node concept="3F0A7n" id="1_aHBvaf0rx" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:1_aHBvaf0rn" resolve="indentation" />
+      <node concept="1kIj98" id="1$TzEhkIqct" role="3EZMnx">
+        <node concept="3F0A7n" id="1_aHBvaf0rx" role="1kIj9b">
+          <ref role="1NtTu8" to="udwj:1_aHBvaf0rn" resolve="indentation" />
+        </node>
       </node>
       <node concept="3F1sOY" id="1_aHBvaf0r$" role="3EZMnx">
         <ref role="1NtTu8" to="udwj:1_aHBvaf0ro" resolve="text" />

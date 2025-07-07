@@ -16,6 +16,7 @@
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -1861,17 +1862,17 @@
                       <property role="Xl_RC" value=":" />
                     </node>
                     <node concept="2YIFZM" id="1_aHBvajRF_" role="3uHU7w">
-                      <ref role="37wK5l" to="n8ay:~StringUtils.join(java.util.Collection,java.lang.String)" resolve="join" />
-                      <ref role="1Pybhc" to="n8ay:~StringUtils" resolve="StringUtils" />
-                      <node concept="2YIFZM" id="4A8SZs9LB8B" role="37wK5m">
-                        <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
-                        <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
-                        <node concept="37vLTw" id="4A8SZs9LBvV" role="37wK5m">
-                          <ref role="3cqZAo" node="1_aHBvajF02" resolve="array" />
-                        </node>
-                      </node>
+                      <ref role="37wK5l" to="wyt6:~String.join(java.lang.CharSequence,java.lang.Iterable)" resolve="join" />
+                      <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
                       <node concept="Xl_RD" id="1_aHBvajRFB" role="37wK5m">
                         <property role="Xl_RC" value="\n" />
+                      </node>
+                      <node concept="2YIFZM" id="1$TzEhkBEyo" role="37wK5m">
+                        <ref role="37wK5l" to="33ny:~Arrays.asList(java.lang.Object...)" resolve="asList" />
+                        <ref role="1Pybhc" to="33ny:~Arrays" resolve="Arrays" />
+                        <node concept="37vLTw" id="1$TzEhkBEyp" role="37wK5m">
+                          <ref role="3cqZAo" node="1_aHBvajF02" resolve="array" />
+                        </node>
                       </node>
                     </node>
                   </node>
