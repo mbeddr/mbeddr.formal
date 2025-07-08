@@ -37,6 +37,9 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -76,6 +79,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -153,7 +157,7 @@
   <node concept="1TIwiD" id="1I7wo92Vg_X">
     <property role="EcuMT" value="1983696557348555133" />
     <property role="TrG5h" value="PlantUmlComponentDiagram" />
-    <property role="3GE5qa" value="diagram.component" />
+    <property role="3GE5qa" value="diagram.uml.component" />
     <property role="34LRSv" value="components diagram" />
     <ref role="1TJDcQ" node="1I7wo92Vg_W" resolve="PlantUmlDiagramBase" />
     <node concept="1TJgyj" id="1I7wo92VgA3" role="1TKVEi">
@@ -184,13 +188,16 @@
     <property role="EcuMT" value="1983696557348555164" />
     <property role="TrG5h" value="StartUmlCommand" />
     <property role="34LRSv" value="@startuml" />
-    <property role="3GE5qa" value="common_commands" />
+    <property role="3GE5qa" value="diagram.uml" />
     <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
     <node concept="PrWs8" id="1I7wo92VgEo" role="PzmwI">
       <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
     </node>
     <node concept="PrWs8" id="6CyxyHhXJqj" role="PzmwI">
       <ref role="PrY4T" node="6CyxyHhTfB$" resolve="IPlantUmlUsecaseDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="4A8SZs9KCzX" role="PzmwI">
+      <ref role="PrY4T" node="4A8SZs9JTE0" resolve="IUniquePlantUmlCommand" />
     </node>
   </node>
   <node concept="1TIwiD" id="1I7wo92VgAu">
@@ -207,13 +214,16 @@
     <property role="EcuMT" value="1983696557348555523" />
     <property role="TrG5h" value="EndUmlCommand" />
     <property role="34LRSv" value="@enduml" />
-    <property role="3GE5qa" value="common_commands" />
+    <property role="3GE5qa" value="diagram.uml" />
     <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
     <node concept="PrWs8" id="1I7wo92VgG4" role="PzmwI">
       <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
     </node>
     <node concept="PrWs8" id="6CyxyHhXJqk" role="PzmwI">
       <ref role="PrY4T" node="6CyxyHhTfB$" resolve="IPlantUmlUsecaseDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="4A8SZs9KCzY" role="PzmwI">
+      <ref role="PrY4T" node="4A8SZs9JTE0" resolve="IUniquePlantUmlCommand" />
     </node>
   </node>
   <node concept="25R3W" id="1I7wo92WvVM">
@@ -239,7 +249,7 @@
   </node>
   <node concept="1TIwiD" id="1I7wo92W$3l">
     <property role="EcuMT" value="1983696557348896981" />
-    <property role="3GE5qa" value="diagram.component" />
+    <property role="3GE5qa" value="diagram.uml.component" />
     <property role="TrG5h" value="ComponentDeclaration" />
     <property role="34LRSv" value="component" />
     <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
@@ -257,7 +267,7 @@
   </node>
   <node concept="1TIwiD" id="1I7wo92WYNu">
     <property role="EcuMT" value="1983696557349006558" />
-    <property role="3GE5qa" value="diagram.component" />
+    <property role="3GE5qa" value="diagram.uml.component" />
     <property role="TrG5h" value="InterfaceDeclaration" />
     <property role="34LRSv" value="interface" />
     <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
@@ -270,7 +280,7 @@
   </node>
   <node concept="1TIwiD" id="1I7wo92XVu3">
     <property role="EcuMT" value="1983696557349255043" />
-    <property role="3GE5qa" value="diagram.component" />
+    <property role="3GE5qa" value="diagram.uml.component" />
     <property role="TrG5h" value="ComponentsChannel" />
     <property role="34LRSv" value="-" />
     <property role="R4oN_" value="channel" />
@@ -281,7 +291,7 @@
   </node>
   <node concept="1TIwiD" id="1I7wo92Y0TT">
     <property role="EcuMT" value="1983696557349277305" />
-    <property role="3GE5qa" value="diagram.component" />
+    <property role="3GE5qa" value="diagram.uml.component" />
     <property role="TrG5h" value="ComponentRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1I7wo92Y0TU" role="1TKVEi">
@@ -296,7 +306,7 @@
   </node>
   <node concept="1TIwiD" id="1I7wo92Y2Tg">
     <property role="EcuMT" value="1983696557349285456" />
-    <property role="3GE5qa" value="diagram.component" />
+    <property role="3GE5qa" value="diagram.uml.component" />
     <property role="TrG5h" value="InterfaceRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1I7wo92Y2Th" role="1TKVEi">
@@ -311,7 +321,7 @@
   </node>
   <node concept="PlHQZ" id="1I7wo92Y2Ts">
     <property role="EcuMT" value="1983696557349285468" />
-    <property role="3GE5qa" value="diagram.component" />
+    <property role="3GE5qa" value="diagram.uml.component" />
     <property role="TrG5h" value="IChannelEndpoint" />
   </node>
   <node concept="25R3W" id="1I7wo92YSO_">
@@ -448,7 +458,7 @@
   </node>
   <node concept="1TIwiD" id="7ikA1GKqys5">
     <property role="EcuMT" value="8400506447496619781" />
-    <property role="3GE5qa" value="diagram.component" />
+    <property role="3GE5qa" value="diagram.uml.component" />
     <property role="TrG5h" value="PackageDeclaration" />
     <property role="34LRSv" value="package" />
     <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
@@ -495,7 +505,7 @@
   </node>
   <node concept="1TIwiD" id="7ikA1GKsghA">
     <property role="EcuMT" value="8400506447497069670" />
-    <property role="3GE5qa" value="diagram.component.skinparam" />
+    <property role="3GE5qa" value="diagram.uml.component.skinparam" />
     <property role="TrG5h" value="SkinparamComponentStyle" />
     <property role="34LRSv" value="componentStyle" />
     <ref role="1TJDcQ" node="7ikA1GKsdF8" resolve="SkinparamParameterBase" />
@@ -507,7 +517,7 @@
   </node>
   <node concept="25R3W" id="7ikA1GKsghG">
     <property role="3F6X1D" value="8400506447497069676" />
-    <property role="3GE5qa" value="diagram.component.skinparam" />
+    <property role="3GE5qa" value="diagram.uml.component.skinparam" />
     <property role="TrG5h" value="ESkinparamComponentStyle" />
     <ref role="1H5jkz" node="7ikA1GKsghK" resolve="uml2" />
     <node concept="25R33" id="7ikA1GKsghK" role="25R1y">
@@ -525,7 +535,7 @@
   </node>
   <node concept="1TIwiD" id="6CyxyHhTfBx">
     <property role="EcuMT" value="7647822637844199905" />
-    <property role="3GE5qa" value="diagram.usecase" />
+    <property role="3GE5qa" value="diagram.uml.usecase" />
     <property role="TrG5h" value="PlantUmlUsecaseDiagram" />
     <property role="34LRSv" value="usecase diagram" />
     <ref role="1TJDcQ" node="1I7wo92Vg_W" resolve="PlantUmlDiagramBase" />
@@ -550,7 +560,7 @@
   </node>
   <node concept="1TIwiD" id="6CyxyHi8x5D">
     <property role="EcuMT" value="7647822637848203625" />
-    <property role="3GE5qa" value="diagram.usecase" />
+    <property role="3GE5qa" value="diagram.uml.usecase" />
     <property role="TrG5h" value="UsecaseDeclaration" />
     <property role="34LRSv" value="usecase" />
     <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
@@ -577,7 +587,7 @@
   </node>
   <node concept="1TIwiD" id="6CyxyHibNNa">
     <property role="EcuMT" value="7647822637849066698" />
-    <property role="3GE5qa" value="diagram.usecase" />
+    <property role="3GE5qa" value="diagram.uml.usecase" />
     <property role="TrG5h" value="ActorDeclaration" />
     <property role="34LRSv" value="actor" />
     <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
@@ -590,7 +600,7 @@
   </node>
   <node concept="1TIwiD" id="6BNnCp_mL3p">
     <property role="EcuMT" value="7634549724642218201" />
-    <property role="3GE5qa" value="diagram.usecase.skinparams" />
+    <property role="3GE5qa" value="diagram.uml.usecase.skinparams" />
     <property role="TrG5h" value="ActorStyleSkinParameter" />
     <property role="34LRSv" value="actorStyle" />
     <ref role="1TJDcQ" node="7ikA1GKsdF8" resolve="SkinparamParameterBase" />
@@ -602,7 +612,7 @@
   </node>
   <node concept="25R3W" id="6BNnCp_mOaq">
     <property role="3F6X1D" value="7634549724642230938" />
-    <property role="3GE5qa" value="diagram.usecase.skinparams" />
+    <property role="3GE5qa" value="diagram.uml.usecase.skinparams" />
     <property role="TrG5h" value="ESkinparamActorStyle" />
     <node concept="25R33" id="6BNnCp_mOar" role="25R1y">
       <property role="3tVfz5" value="7634549724642230939" />
@@ -636,6 +646,9 @@
     <node concept="PrWs8" id="6BNnCp_onfv" role="PzmwI">
       <ref role="PrY4T" node="6CyxyHhTfB$" resolve="IPlantUmlUsecaseDiagramContent" />
     </node>
+    <node concept="PrWs8" id="1_aHBvagmzJ" role="PzmwI">
+      <ref role="PrY4T" node="1_aHBvadUkr" resolve="IPlantUmlMindmapDiagramContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6BNnCp_onfs">
     <property role="EcuMT" value="7634549724642636764" />
@@ -658,10 +671,13 @@
     <node concept="PrWs8" id="6BNnCp_onxP" role="PzmwI">
       <ref role="PrY4T" node="6CyxyHhTfB$" resolve="IPlantUmlUsecaseDiagramContent" />
     </node>
+    <node concept="PrWs8" id="1_aHBvagmzK" role="PzmwI">
+      <ref role="PrY4T" node="1_aHBvadUkr" resolve="IPlantUmlMindmapDiagramContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6BNnCp_rSNN">
     <property role="EcuMT" value="7634549724643560691" />
-    <property role="3GE5qa" value="diagram.usecase" />
+    <property role="3GE5qa" value="diagram.uml.usecase" />
     <property role="TrG5h" value="ActorRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="6BNnCp_rSNO" role="PzmwI">
@@ -676,7 +692,7 @@
   </node>
   <node concept="1TIwiD" id="6BNnCp_rZar">
     <property role="EcuMT" value="7634549724643586715" />
-    <property role="3GE5qa" value="diagram.usecase" />
+    <property role="3GE5qa" value="diagram.uml.usecase" />
     <property role="TrG5h" value="UsecaseRef" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6BNnCp_rZat" role="1TKVEi">
@@ -719,13 +735,138 @@
   </node>
   <node concept="1TIwiD" id="6BNnCp_um8H">
     <property role="EcuMT" value="7634549724644205101" />
-    <property role="3GE5qa" value="diagram.usecase" />
+    <property role="3GE5qa" value="diagram.uml.usecase" />
     <property role="TrG5h" value="UsecaseDiagramLink" />
     <property role="34LRSv" value="-" />
     <property role="R4oN_" value="usecase diagram link" />
     <ref role="1TJDcQ" node="6BNnCp_tb0t" resolve="AbstractPlantumlLinkBase" />
     <node concept="PrWs8" id="6BNnCp_um8I" role="PzmwI">
       <ref role="PrY4T" node="6CyxyHhTfB$" resolve="IPlantUmlUsecaseDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1_aHBvacGQQ">
+    <property role="EcuMT" value="1822469624834477494" />
+    <property role="TrG5h" value="Together" />
+    <property role="34LRSv" value="together" />
+    <property role="3GE5qa" value="diagram.common" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="1_aHBvacGQR" role="PzmwI">
+      <ref role="PrY4T" node="6BNnCp_okdG" resolve="IPlantUmlRootContent" />
+    </node>
+    <node concept="PrWs8" id="1_aHBvacGQS" role="PzmwI">
+      <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="1_aHBvacGQT" role="PzmwI">
+      <ref role="PrY4T" node="6CyxyHhTfB$" resolve="IPlantUmlUsecaseDiagramContent" />
+    </node>
+    <node concept="1TJgyj" id="1_aHBvacGQU" role="1TKVEi">
+      <property role="IQ2ns" value="1822469624834477498" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1I7wo92Vg_Z" resolve="IPlantUmlDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1_aHBvadUhW">
+    <property role="EcuMT" value="1822469624834794620" />
+    <property role="TrG5h" value="StartMindmapCommand" />
+    <property role="34LRSv" value="@startmindmap" />
+    <property role="3GE5qa" value="diagram.mindmap" />
+    <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
+    <node concept="PrWs8" id="1_aHBvagsjz" role="PzmwI">
+      <ref role="PrY4T" node="1_aHBvadUkr" resolve="IPlantUmlMindmapDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="4A8SZs9KCzW" role="PzmwI">
+      <ref role="PrY4T" node="4A8SZs9JTE0" resolve="IUniquePlantUmlCommand" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1_aHBvadUiF">
+    <property role="EcuMT" value="1822469624834794667" />
+    <property role="3GE5qa" value="diagram.mindmap" />
+    <property role="TrG5h" value="EndMindmapCommand" />
+    <property role="34LRSv" value="@endmindmap" />
+    <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
+    <node concept="PrWs8" id="1_aHBvagmzI" role="PzmwI">
+      <ref role="PrY4T" node="1_aHBvadUkr" resolve="IPlantUmlMindmapDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="4A8SZs9KCfs" role="PzmwI">
+      <ref role="PrY4T" node="4A8SZs9JTE0" resolve="IUniquePlantUmlCommand" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1_aHBvadUkp">
+    <property role="EcuMT" value="1822469624834794777" />
+    <property role="TrG5h" value="PlantUmlMindmapDiagram" />
+    <property role="3GE5qa" value="diagram.mindmap" />
+    <property role="34LRSv" value="mindmap diagram" />
+    <ref role="1TJDcQ" node="1I7wo92Vg_W" resolve="PlantUmlDiagramBase" />
+    <node concept="PrWs8" id="1_aHBvadUkq" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="1_aHBvadUkt" role="1TKVEi">
+      <property role="IQ2ns" value="1822469624834794781" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1_aHBvadUkr" resolve="IPlantUmlMindmapDiagramContent" />
+      <ref role="20ksaX" node="1I7wo92Vg_Y" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="1_aHBvadUkr">
+    <property role="EcuMT" value="1822469624834794779" />
+    <property role="TrG5h" value="IPlantUmlMindmapDiagramContent" />
+    <property role="3GE5qa" value="base" />
+    <node concept="PrWs8" id="1_aHBvadUks" role="PrDN$">
+      <ref role="PrY4T" node="1I7wo92Vg_Z" resolve="IPlantUmlDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1_aHBvaf0rl">
+    <property role="EcuMT" value="1822469624835081941" />
+    <property role="3GE5qa" value="diagram.mindmap" />
+    <property role="TrG5h" value="MindmapEntry" />
+    <property role="34LRSv" value="entry" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="1_aHBvaf0ro" role="1TKVEi">
+      <property role="IQ2ns" value="1822469624835081944" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+    </node>
+    <node concept="1TJgyi" id="1_aHBvaf0rn" role="1TKVEl">
+      <property role="IQ2nx" value="1822469624835081943" />
+      <property role="TrG5h" value="indentation" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="1_aHBvaf0rm" role="PzmwI">
+      <ref role="PrY4T" node="1_aHBvadUkr" resolve="IPlantUmlMindmapDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1_aHBvak082">
+    <property role="EcuMT" value="1822469624836391426" />
+    <property role="3GE5qa" value="diagram.mindmap.entry_values" />
+    <property role="TrG5h" value="EntryValueBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+  </node>
+  <node concept="1TIwiD" id="1_aHBvak083">
+    <property role="EcuMT" value="1822469624836391427" />
+    <property role="3GE5qa" value="diagram.mindmap.entry_values" />
+    <property role="TrG5h" value="SingleLineEntry" />
+    <ref role="1TJDcQ" node="1_aHBvak082" resolve="EntryValueBase" />
+    <node concept="1TJgyj" id="1_aHBvak084" role="1TKVEi">
+      <property role="IQ2ns" value="1822469624836391428" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="val" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6J5A" resolve="Line" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4A8SZs9JTE0">
+    <property role="EcuMT" value="5298735611761367680" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="IUniquePlantUmlCommand" />
+    <node concept="t5JxF" id="4A8SZs9JTE1" role="lGtFl">
+      <property role="t5JxN" value="A command which can occur only once." />
     </node>
   </node>
 </model>

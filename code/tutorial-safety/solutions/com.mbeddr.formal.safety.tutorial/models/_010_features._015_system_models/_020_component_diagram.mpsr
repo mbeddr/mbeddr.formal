@@ -13,6 +13,9 @@
       <concept id="7634549724642636764" name="com.symo.plantuml.structure.PlantUmlSingleLineComment" flags="ng" index="c$yPq">
         <property id="7634549724642637897" name="comment" index="c$yrf" />
       </concept>
+      <concept id="1822469624834477494" name="com.symo.plantuml.structure.Together" flags="ng" index="3ju7J1">
+        <child id="1822469624834477498" name="content" index="3ju7Jd" />
+      </concept>
       <concept id="1983696557348555164" name="com.symo.plantuml.structure.StartUmlCommand" flags="ng" index="1pqCwu" />
       <concept id="1983696557348555132" name="com.symo.plantuml.structure.PlantUmlDiagramBase" flags="ng" index="1pqCzY">
         <property id="8400506447498256066" name="zoom" index="145Srp" />
@@ -53,26 +56,19 @@
       <node concept="1pts5n" id="75npNYZyqAw" role="1pqCzW">
         <property role="TrG5h" value="Camera_Objects_Detection" />
       </node>
-      <node concept="1ps3o1" id="75npNYZyqAx" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
-        <node concept="1pvSZV" id="75npNYZyqAy" role="1pvUZv">
-          <ref role="1pvSZS" node="75npNYZyqAv" resolve="Camera" />
+      <node concept="3ju7J1" id="1_aHBvadUd7" role="1pqCzW">
+        <node concept="1pts5n" id="75npNYZyqBe" role="3ju7Jd">
+          <property role="TrG5h" value="Radar_Left" />
         </node>
-        <node concept="1pvSZV" id="75npNYZyqAz" role="1pvUZs">
-          <ref role="1pvSZS" node="75npNYZyqAw" resolve="Camera_Objects_Detection" />
+        <node concept="1pts5n" id="75npNYZyqBf" role="3ju7Jd">
+          <property role="TrG5h" value="Radar_Right" />
         </node>
-      </node>
-      <node concept="1pts5n" id="75npNYZyqBe" role="1pqCzW">
-        <property role="TrG5h" value="Radar_Left" />
-      </node>
-      <node concept="1pts5n" id="75npNYZyqBf" role="1pqCzW">
-        <property role="TrG5h" value="Radar_Right" />
       </node>
       <node concept="1pts5n" id="75npNYZyqBj" role="1pqCzW">
         <property role="TrG5h" value="Radar_Objects_Detection" />
       </node>
       <node concept="1ps3o1" id="75npNYZyqBm" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
+        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
         <node concept="1pvSZV" id="75npNYZyqBo" role="1pvUZv">
           <ref role="1pvSZS" node="75npNYZyqBe" resolve="Radar_Left" />
         </node>
@@ -81,7 +77,7 @@
         </node>
       </node>
       <node concept="1ps3o1" id="75npNYZyqBq" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
+        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
         <node concept="1pvSZV" id="75npNYZyqBr" role="1pvUZv">
           <ref role="1pvSZS" node="75npNYZyqBf" resolve="Radar_Right" />
         </node>
@@ -89,11 +85,20 @@
           <ref role="1pvSZS" node="75npNYZyqBj" resolve="Radar_Objects_Detection" />
         </node>
       </node>
+      <node concept="1ps3o1" id="75npNYZyqAx" role="1pqCzW">
+        <property role="1pv0MD" value="7ikA1GKscSD/DOTTED_DOWN" />
+        <node concept="1pvSZV" id="75npNYZyqAy" role="1pvUZv">
+          <ref role="1pvSZS" node="75npNYZyqAv" resolve="Camera" />
+        </node>
+        <node concept="1pvSZV" id="75npNYZyqAz" role="1pvUZs">
+          <ref role="1pvSZS" node="75npNYZyqAw" resolve="Camera_Objects_Detection" />
+        </node>
+      </node>
       <node concept="1pts5n" id="75npNYZyqBu" role="1pqCzW">
         <property role="TrG5h" value="Sensors_Fusion" />
       </node>
       <node concept="1ps3o1" id="75npNYZyqBx" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
+        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
         <node concept="1pvSZV" id="75npNYZyqBz" role="1pvUZv">
           <ref role="1pvSZS" node="75npNYZyqAw" resolve="Camera_Objects_Detection" />
         </node>

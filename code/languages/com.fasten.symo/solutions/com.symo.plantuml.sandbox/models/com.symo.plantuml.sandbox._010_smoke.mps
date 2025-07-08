@@ -42,6 +42,13 @@
       <concept id="8400506447496619781" name="com.symo.plantuml.structure.PackageDeclaration" flags="ng" index="14ZFWu">
         <child id="8400506447496650874" name="content" index="14Zzxx" />
       </concept>
+      <concept id="1822469624835081941" name="com.symo.plantuml.structure.MindmapEntry" flags="ng" index="3jtF2y">
+        <property id="1822469624835081943" name="indentation" index="3jtF2w" />
+        <child id="1822469624835081944" name="text" index="3jtF2J" />
+      </concept>
+      <concept id="1822469624834794620" name="com.symo.plantuml.structure.StartMindmapCommand" flags="ng" index="3jvh8b" />
+      <concept id="1822469624834794667" name="com.symo.plantuml.structure.EndMindmapCommand" flags="ng" index="3jvhbs" />
+      <concept id="1822469624834794777" name="com.symo.plantuml.structure.PlantUmlMindmapDiagram" flags="ng" index="3jvhdI" />
       <concept id="1983696557349946927" name="com.symo.plantuml.structure.Note" flags="ng" index="1oxsuH">
         <child id="1983696557349946929" name="text" index="1oxsuN" />
         <child id="1983696557349947400" name="annotatedObject" index="1oxsAa" />
@@ -401,6 +408,96 @@
         </node>
       </node>
       <node concept="1pqCE1" id="6BNnCp_puwe" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="1_aHBvaf0q8">
+    <property role="TrG5h" value="_200_mindmap_diagram_simple" />
+    <node concept="3jvhdI" id="1_aHBvaf0rg" role="1pqCw0">
+      <property role="145Srp" value="70" />
+      <property role="TrG5h" value="MindmapDemo" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="3jvh8b" id="1_aHBvaiyZq" role="1pqCzW" />
+      <node concept="3jtF2y" id="1_aHBvajqQ6" role="1pqCzW">
+        <property role="3jtF2w" value="+ " />
+        <node concept="1Pa9Pv" id="1_aHBvajqQ7" role="3jtF2J">
+          <node concept="1PaTwC" id="4A8SZs9ItAW" role="1PaQFQ">
+            <node concept="3oM_SD" id="1$TzEhkFhIb" role="1PaTwD">
+              <property role="3oM_SC" value="Products" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3jtF2y" id="1_aHBvaiyZw" role="1pqCzW">
+        <property role="3jtF2w" value="++" />
+        <node concept="1Pa9Pv" id="1_aHBvaiyZy" role="3jtF2J">
+          <node concept="1PaTwC" id="1_aHBvaiyZ$" role="1PaQFQ">
+            <node concept="3oM_SD" id="1_aHBvaiyZ_" role="1PaTwD">
+              <property role="3oM_SC" value="Cars" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3jtF2y" id="1_aHBvaiyZB" role="1pqCzW">
+        <property role="3jtF2w" value="+++" />
+        <node concept="1Pa9Pv" id="1_aHBvaiyZD" role="3jtF2J">
+          <node concept="1PaTwC" id="1_aHBvaiyZF" role="1PaQFQ">
+            <node concept="3oM_SD" id="1_aHBvaiyZG" role="1PaTwD">
+              <property role="3oM_SC" value="Electric" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3jtF2y" id="1_aHBvaiDk_" role="1pqCzW">
+        <property role="3jtF2w" value="+++" />
+        <node concept="1Pa9Pv" id="1_aHBvaiDkA" role="3jtF2J">
+          <node concept="1PaTwC" id="1_aHBvaiDkB" role="1PaQFQ">
+            <node concept="3oM_SD" id="1_aHBvaiDkC" role="1PaTwD">
+              <property role="3oM_SC" value="Hybrid" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3jtF2y" id="1_aHBvaiDkD" role="1pqCzW">
+        <property role="3jtF2w" value="+++" />
+        <node concept="1Pa9Pv" id="1_aHBvaiDkE" role="3jtF2J">
+          <node concept="1PaTwC" id="1_aHBvaiDkF" role="1PaQFQ">
+            <node concept="3oM_SD" id="1_aHBvaiDkG" role="1PaTwD">
+              <property role="3oM_SC" value="ICE" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3jtF2y" id="1_aHBvaiDkI" role="1pqCzW">
+        <property role="3jtF2w" value="-- " />
+        <node concept="1Pa9Pv" id="1_aHBvaiDkJ" role="3jtF2J">
+          <node concept="1PaTwC" id="1_aHBvaiDkK" role="1PaQFQ">
+            <node concept="3oM_SD" id="1_aHBvalaYh" role="1PaTwD">
+              <property role="3oM_SC" value="Countries" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3jtF2y" id="1_aHBvak07N" role="1pqCzW">
+        <property role="3jtF2w" value="--- " />
+        <node concept="1Pa9Pv" id="1_aHBvak07O" role="3jtF2J">
+          <node concept="1PaTwC" id="1_aHBvak07P" role="1PaQFQ">
+            <node concept="3oM_SD" id="1_aHBvak081" role="1PaTwD">
+              <property role="3oM_SC" value="Germany" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3jtF2y" id="1_aHBvak07R" role="1pqCzW">
+        <property role="3jtF2w" value="--- " />
+        <node concept="1Pa9Pv" id="1_aHBvak07S" role="3jtF2J">
+          <node concept="1PaTwC" id="1_aHBvak07T" role="1PaQFQ">
+            <node concept="3oM_SD" id="1_aHBvak07U" role="1PaTwD">
+              <property role="3oM_SC" value="USA" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3jvhbs" id="1_aHBvaiyZu" role="1pqCzW" />
     </node>
   </node>
 </model>
