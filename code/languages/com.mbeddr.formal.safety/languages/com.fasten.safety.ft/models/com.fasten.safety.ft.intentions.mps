@@ -1710,7 +1710,7 @@
             </node>
             <node concept="2OqwBi" id="6qZV73v7UM9" role="33vP2m">
               <node concept="37vLTw" id="6qZV73v7UMa" role="2Oq$k0">
-                <ref role="3cqZAo" node="6qZV73v7RzX" resolve="basicEvents" />
+                <ref role="3cqZAo" node="6qZV73v7RzX" resolve="basicEventsString" />
               </node>
               <node concept="liA8E" id="6qZV73v7UMb" role="2OqNvi">
                 <ref role="37wK5l" to="wyt6:~String.split(java.lang.String)" resolve="split" />
