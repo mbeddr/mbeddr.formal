@@ -34,7 +34,7 @@
     <property role="TrG5h" value="_050_loss_scenarios" />
     <node concept="3ZpnCB" id="3z9KAuxpLBb" role="3ZpnDU">
       <property role="TrG5h" value="HWP_LOSS_1" />
-      <ref role="3ZpnDr" node="3z9KAuxpLAK" resolve="uca03" />
+      <ref role="3ZpnDr" node="3z9KAuxpLAK" resolve="HWP_UCA03" />
       <node concept="19SGf9" id="3z9KAuxpLBc" role="2vnaTY">
         <node concept="19SUe$" id="3z9KAuxpLBd" role="19SJt6">
           <property role="19SUeA" value="InssufficiencyCondition-1: HP erroneously believes that there is no collision imminent due to inadequate feedback:&#10;Relative position, speed, acceleration, direction to an obstacle.&#10; &#10;CausalFactor-1: Sensors mounted incorrectly, sensor focus or position compromised, sensor blocked, etc.&#10;CausalFactor-2: Feedback delayed and not received in time because the bus is busy, inadequate message priority or arbitration, EMI, etc.&#10;CausalFactor-3: Feedback is deemed to be incorrect (ignored by HP) because it conflicts with other feedback (e.g. other feedback indicates the wheel speed is zero) " />

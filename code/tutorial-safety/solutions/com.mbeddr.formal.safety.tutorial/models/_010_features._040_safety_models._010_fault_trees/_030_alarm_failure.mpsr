@@ -790,7 +790,7 @@
       <property role="TrG5h" value="ALARM" />
     </node>
     <node concept="21oswF" id="2c2ooLvcwpo" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvcwod" resolve="PLANT_LOSS_BY_BURNING" />
+      <ref role="21oszt" node="2c2ooLvcwod" resolve="ALARM_FAILURE_TOP" />
       <ref role="21oszj" node="2c2ooLvcwqE" resolve="ALARM" />
     </node>
     <node concept="cEgko" id="2c2ooLvcwqs" role="3CrHoS">
@@ -845,7 +845,7 @@
     </node>
     <node concept="21oswF" id="2c2ooLvcwr2" role="3CrHoS">
       <ref role="21oszt" node="2c2ooLvcwqE" resolve="ALARM" />
-      <ref role="21oszj" node="2c2ooLvcwqU" resolve="NOOP" />
+      <ref role="21oszj" node="2c2ooLvcwqU" resolve="NOOPA" />
     </node>
     <node concept="21ATtL" id="2c2ooLvcwr3" role="3CrHoS">
       <property role="TrG5h" value="ALARM_FAILURE" />
@@ -865,11 +865,11 @@
       </node>
     </node>
     <node concept="21oswF" id="2c2ooLvcwrd" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvcwqU" resolve="NOOP" />
+      <ref role="21oszt" node="2c2ooLvcwqU" resolve="NOOPA" />
       <ref role="21oszj" node="2c2ooLvcwr3" resolve="ALARM_FAILURE" />
     </node>
     <node concept="21oswF" id="2c2ooLvcwrg" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvcwqU" resolve="NOOP" />
+      <ref role="21oszt" node="2c2ooLvcwqU" resolve="NOOPA" />
       <ref role="21oszj" node="2c2ooLvcwr8" resolve="OPERATOR" />
     </node>
   </node>
