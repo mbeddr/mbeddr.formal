@@ -473,7 +473,7 @@
         <node concept="2OqwBi" id="7JDlEF1SAsj" role="2MkoU_">
           <node concept="2OqwBi" id="7JDlEF1SAsk" role="2Oq$k0">
             <node concept="1YBJjd" id="7JDlEF1SAsl" role="2Oq$k0">
-              <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="glm" />
+              <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="periodicTest" />
             </node>
             <node concept="3TrcHB" id="7JDlEF1SAsm" role="2OqNvi">
               <ref role="3TsBF5" to="a7wd:7JDlEF1SArB" resolve="tau" />
@@ -492,7 +492,7 @@
           <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
         </node>
         <node concept="1YBJjd" id="7JDlEF1SAsq" role="1urrMF">
-          <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="glm" />
+          <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="periodicTest" />
         </node>
         <node concept="2ODE4t" id="7JDlEF1SAsr" role="1urrC5">
           <ref role="2ODJFN" to="a7wd:7JDlEF1SArB" resolve="tau" />
@@ -502,7 +502,7 @@
         <node concept="2OqwBi" id="7JDlEF1SAsB" role="2MkoU_">
           <node concept="2OqwBi" id="7JDlEF1SAsC" role="2Oq$k0">
             <node concept="1YBJjd" id="7JDlEF1SAsD" role="2Oq$k0">
-              <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="glm" />
+              <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="periodicTest" />
             </node>
             <node concept="3TrcHB" id="7JDlEF1SAsE" role="2OqNvi">
               <ref role="3TsBF5" to="a7wd:7JDlEF1SArD" resolve="theta" />
@@ -521,7 +521,7 @@
           <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
         </node>
         <node concept="1YBJjd" id="7JDlEF1SAsI" role="1urrMF">
-          <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="glm" />
+          <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="periodicTest" />
         </node>
         <node concept="2ODE4t" id="7JDlEF1SAsJ" role="1urrC5">
           <ref role="2ODJFN" to="a7wd:7JDlEF1SArD" resolve="theta" />
