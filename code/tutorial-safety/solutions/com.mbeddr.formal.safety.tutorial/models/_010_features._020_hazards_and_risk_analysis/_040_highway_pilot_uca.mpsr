@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:f55b42c2-771a-4828-bc62-5b64fd2520eb(_010_features._020_hazards_and_risk_analysis)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="7e777b53-0a6b-4719-b36d-10475788d49f" name="com.mbeddr.formal.safety.stamp">
+      <concept id="2925021647566955739" name="com.mbeddr.formal.safety.stamp.structure.ActionsForHazopKeyword" flags="ng" index="3f6qtF">
+        <child id="2925021647566955740" name="actions" index="3f6qtG" />
+      </concept>
+      <concept id="2925021647566797644" name="com.mbeddr.formal.safety.stamp.structure.HazopKeywordDefinition" flags="ng" index="3f73zW" />
+      <concept id="2004523000582373898" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControlAnalysis" flags="ng" index="1E0nO6">
+        <reference id="2004523000582447869" name="functionalControlStructure" index="1E05RL" />
+        <child id="2925021647566797672" name="hazopKeywords" index="3f73zo" />
+        <child id="2004523000582374978" name="unsafeController" index="1E0n_e" />
+      </concept>
+      <concept id="2004523000582373920" name="com.mbeddr.formal.safety.stamp.structure.UnsafeController" flags="ng" index="1E0nOG">
+        <reference id="2004523000582373921" name="controller" index="1E0nOH" />
+        <child id="2004523000582373924" name="unsafeActions" index="1E0nOC" />
+      </concept>
+      <concept id="2004523000582373923" name="com.mbeddr.formal.safety.stamp.structure.UnsafeControllerAction" flags="ng" index="1E0nOJ">
+        <reference id="2004523000582375039" name="action" index="1E0n_N" />
+        <child id="2925021647566955780" name="actionsForHazopKeyword" index="3f6qqO" />
+      </concept>
+      <concept id="2004523000582413321" name="com.mbeddr.formal.safety.stamp.structure.ActionDescriptionBase" flags="ng" index="1E0uc5">
+        <child id="2185346695491723265" name="hazards" index="2Dy4$W" />
+      </concept>
+      <concept id="2004523000582413322" name="com.mbeddr.formal.safety.stamp.structure.TextualActionDescription" flags="ng" index="1E0uc6">
+        <child id="2004523000582413323" name="text" index="1E0uc7" />
+      </concept>
+    </language>
+    <language id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext">
+      <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
+        <child id="2557074442922392302" name="words" index="19SJt6" />
+      </concept>
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="7998766141987827621" name="com.mbeddr.formal.safety.hara.structure.HazardRef" flags="ng" index="DABN8">
+        <reference id="7998766141987827622" name="hazard" index="DABNb" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1E0nO6" id="3z9KAuxpLAo">
+    <property role="TrG5h" value="_040_highway_pilot_uca" />
+    <property role="3GE5qa" value="_020_hwp" />
+    <ref role="1E05RL" node="3z9KAuxpLzl" resolve="_030_hwp_control_structure" />
+    <node concept="3f73zW" id="3z9KAuxpLAr" role="3f73zo">
+      <property role="TrG5h" value="PROVIDED" />
+    </node>
+    <node concept="3f73zW" id="3z9KAuxpLAs" role="3f73zo">
+      <property role="TrG5h" value="NOT_PROVIDED" />
+    </node>
+    <node concept="3f73zW" id="3z9KAuxpLAt" role="3f73zo">
+      <property role="TrG5h" value="PROVIDED_TOO_EARLY/LATE" />
+    </node>
+    <node concept="3f73zW" id="3z9KAuxpLAu" role="3f73zo">
+      <property role="TrG5h" value="STOPPING_TOO_SOON/APPLYING_TOO_LONG" />
+    </node>
+    <node concept="1E0nOG" id="3z9KAuxpLAp" role="1E0n_e">
+      <ref role="1E0nOH" node="3z9KAuxpLzt" resolve="Highway Pilot" />
+      <node concept="1E0nOJ" id="3z9KAuxpLAq" role="1E0nOC">
+        <ref role="1E0n_N" node="3z9KAuxpLA1" resolve="Brake" />
+        <node concept="3f6qtF" id="3z9KAuxpLAv" role="3f6qqO">
+          <node concept="1E0uc6" id="3z9KAuxpLAx" role="3f6qtG">
+            <property role="TrG5h" value="HWP_UCA01" />
+            <node concept="19SGf9" id="3z9KAuxpLAz" role="1E0uc7">
+              <node concept="19SUe$" id="3z9KAuxpLA$" role="19SJt6">
+                <property role="19SUeA" value="HWP provides a brake &#10;command with insufficient &#10;amount of braking when a&#10;forward collision is &#10;imminent. " />
+              </node>
+            </node>
+            <node concept="DABN8" id="3z9KAuxpLA_" role="2Dy4$W">
+              <ref role="DABNb" node="3z9KAuxpmE2" resolve="Safe distance violation" />
+            </node>
+          </node>
+          <node concept="1E0uc6" id="3z9KAuxpLB5" role="3f6qtG">
+            <property role="TrG5h" value="HWP_UCA05" />
+            <node concept="19SGf9" id="3z9KAuxpLB7" role="1E0uc7">
+              <node concept="19SUe$" id="3z9KAuxpLB8" role="19SJt6">
+                <property role="19SUeA" value="HWP provides a brake command&#10;when the driver provides a &#10;throttle command. " />
+              </node>
+            </node>
+            <node concept="DABN8" id="3z9KAuxpLB9" role="2Dy4$W">
+              <ref role="DABNb" node="3z9KAuxpLzh" resolve="Unclear control responsibility between driver and HWP" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="3z9KAuxpLAB" role="3f6qqO">
+          <node concept="1E0uc6" id="3z9KAuxpLAC" role="3f6qtG">
+            <property role="TrG5h" value="HWP_UCA02" />
+            <node concept="19SGf9" id="3z9KAuxpLAD" role="1E0uc7">
+              <node concept="19SUe$" id="3z9KAuxpLAE" role="19SJt6">
+                <property role="19SUeA" value="HWP does not provide&#10;brake command when&#10;a forward collision is&#10;imminent. " />
+              </node>
+            </node>
+            <node concept="DABN8" id="3z9KAuxpLAF" role="2Dy4$W">
+              <ref role="DABNb" node="3z9KAuxpmE2" resolve="Safe distance violation" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="3z9KAuxpLAG" role="3f6qqO">
+          <node concept="1E0uc6" id="3z9KAuxpLAK" role="3f6qtG">
+            <property role="TrG5h" value="HWP_UCA03" />
+            <node concept="19SGf9" id="3z9KAuxpLAL" role="1E0uc7">
+              <node concept="19SUe$" id="3z9KAuxpLAM" role="19SJt6">
+                <property role="19SUeA" value="HWP provides brake &#10;command too late after&#10;a forward collision is&#10;imminent. " />
+              </node>
+            </node>
+            <node concept="DABN8" id="3z9KAuxpLAN" role="2Dy4$W">
+              <ref role="DABNb" node="3z9KAuxpmE2" resolve="Safe distance violation" />
+            </node>
+          </node>
+        </node>
+        <node concept="3f6qtF" id="3z9KAuxpLAS" role="3f6qqO">
+          <node concept="1E0uc6" id="3z9KAuxpLAU" role="3f6qtG">
+            <property role="TrG5h" value="HWP_UCAß4" />
+            <node concept="19SGf9" id="3z9KAuxpLAW" role="1E0uc7">
+              <node concept="19SUe$" id="3z9KAuxpLAX" role="19SJt6">
+                <property role="19SUeA" value="HWP stops providing a &#10;brake command too soon &#10;after the collision &#10;occurred. " />
+              </node>
+            </node>
+            <node concept="DABN8" id="3z9KAuxpLAY" role="2Dy4$W">
+              <ref role="DABNb" node="3z9KAuxpmE2" resolve="Safe distance violation" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+

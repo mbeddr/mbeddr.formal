@@ -4532,6 +4532,11 @@
             <ref role="3bR37D" to="al5i:lse_ua97Px" resolve="com.mbeddr.mpsutil.smodule.runtime" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6qZV73vv3_3" role="3bR37C">
+          <node concept="3bR9La" id="6qZV73vv3_4" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6hyv0iVPlGc" role="2G$12L">
         <property role="BnDLt" value="true" />
