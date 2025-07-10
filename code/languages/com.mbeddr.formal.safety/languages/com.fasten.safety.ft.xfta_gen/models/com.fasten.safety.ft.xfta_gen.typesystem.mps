@@ -8,7 +8,7 @@
   <imports>
     <import index="n7z1" ref="r:d9248eb8-cb38-4cb3-8454-cc903ebf6c86(com.fasten.safety.ft.typesystem)" />
     <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" />
-    <import index="a7wd" ref="r:0d8de557-bbe4-455a-a872-4eb6baf716c6(com.fasten.safety.ft.xfta_gen.structure)" implicit="true" />
+    <import index="a7wd" ref="r:0d8de557-bbe4-455a-a872-4eb6baf716c6(com.fasten.safety.ft.xfta_gen.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -434,6 +434,103 @@
     <node concept="1YaCAy" id="7JDlEF1Fq9$" role="1YuTPh">
       <property role="TrG5h" value="glm" />
       <ref role="1YaFvo" to="a7wd:7JDlEF1FeFE" resolve="GLM" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7JDlEF1SAsg">
+    <property role="TrG5h" value="check_periodicTest" />
+    <property role="3GE5qa" value="events.specs" />
+    <node concept="3clFbS" id="7JDlEF1SAsh" role="18ibNy">
+      <node concept="2Mj0R9" id="7JDlEF1SAss" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF1SAst" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF1SAsu" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF1SAsv" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="periodicTest" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF1SAsw" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF1SArC" resolve="lambda" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF1SAsx" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF1SAsy" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="RATE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF1SAsz" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF1FmhM" resolve="RATE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF1SAs$" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="periodicTest" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF1SAs_" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF1SArC" resolve="lambda" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="7JDlEF1SAsi" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF1SAsj" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF1SAsk" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF1SAsl" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="glm" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF1SAsm" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF1SArB" resolve="tau" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF1SAsn" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF1TR$V" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="RATE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF1TRBU" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="RATE_REGEX" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF1SAsq" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="glm" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF1SAsr" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF1SArB" resolve="tau" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="7JDlEF1SAsA" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF1SAsB" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF1SAsC" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF1SAsD" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="glm" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF1SAsE" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF1SArD" resolve="theta" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF1SAsF" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF1SAsG" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="RATE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF1SAsH" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF1FmhM" resolve="RATE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF1SAsI" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="glm" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF1SAsJ" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF1SArD" resolve="theta" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7JDlEF1SAsK" role="1YuTPh">
+      <property role="TrG5h" value="periodicTest" />
+      <ref role="1YaFvo" to="a7wd:7JDlEF1SArA" resolve="PeriodicTest" />
     </node>
   </node>
 </model>

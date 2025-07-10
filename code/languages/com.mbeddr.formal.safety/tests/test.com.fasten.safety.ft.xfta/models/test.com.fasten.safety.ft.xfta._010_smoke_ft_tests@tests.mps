@@ -450,7 +450,7 @@
     <property role="TrG5h" value="_011_and_gate_glm" />
     <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <node concept="1LZb2c" id="7JDlEF1K59B" role="1SL9yI">
-      <property role="TrG5h" value="_010_one_and_gate_glm" />
+      <property role="TrG5h" value="_011_one_and_gate_glm" />
       <node concept="3cqZAl" id="7JDlEF1K59C" role="3clF45" />
       <node concept="3clFbS" id="7JDlEF1K59D" role="3clF47">
         <node concept="3cpWs8" id="7JDlEF1K59E" role="3cqZAp">
@@ -510,6 +510,75 @@
           </node>
           <node concept="Xl_RD" id="7JDlEF1K5a3" role="3tpDZB">
             <property role="Xl_RC" value="1000\t0.224363" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7JDlEF1TUZ$">
+    <property role="TrG5h" value="_012_and_gate_periodic_test" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <node concept="1LZb2c" id="7JDlEF1TUZ_" role="1SL9yI">
+      <property role="TrG5h" value="_012_one_and_gate_periodic_test" />
+      <node concept="3cqZAl" id="7JDlEF1TUZA" role="3clF45" />
+      <node concept="3clFbS" id="7JDlEF1TUZB" role="3clF47">
+        <node concept="3cpWs8" id="7JDlEF1TUZC" role="3cqZAp">
+          <node concept="3cpWsn" id="7JDlEF1TUZD" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="7JDlEF1TUZE" role="1tU5fm" />
+            <node concept="2OqwBi" id="7JDlEF1TUZF" role="33vP2m">
+              <node concept="1Xw6AR" id="7JDlEF1TUZG" role="2Oq$k0">
+                <node concept="1dCxOl" id="7JDlEF1TUZH" role="1XwpL7">
+                  <property role="1XweGQ" value="r:22491be8-bbe2-4f01-83d3-05da71d8404c" />
+                  <node concept="1j_P7g" id="7JDlEF1TUZI" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.com.fasten.safety.ft.xfta._010_smoke_ft" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="7JDlEF1TUZJ" role="2OqNvi">
+                <node concept="2OqwBi" id="7JDlEF1TUZK" role="Vysub">
+                  <node concept="1jxXqW" id="7JDlEF1TUZL" role="2Oq$k0" />
+                  <node concept="liA8E" id="7JDlEF1TUZM" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7JDlEF1TUZN" role="3cqZAp">
+          <node concept="3cpWsn" id="7JDlEF1TUZO" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="_YKpA" id="7JDlEF1TUZP" role="1tU5fm">
+              <node concept="17QB3L" id="7JDlEF1TUZQ" role="_ZDj9" />
+            </node>
+            <node concept="2YIFZM" id="7JDlEF1TUZR" role="33vP2m">
+              <ref role="37wK5l" to="qofe:2MppyJmTqsd" resolve="runXFTA" />
+              <ref role="1Pybhc" to="qofe:2XVAqcvZUli" resolve="XFTATestingUtils" />
+              <node concept="1jxXqW" id="7JDlEF1TUZS" role="37wK5m" />
+              <node concept="37vLTw" id="7JDlEF1TUZT" role="37wK5m">
+                <ref role="3cqZAo" node="7JDlEF1TUZD" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="7JDlEF1TUZU" role="37wK5m">
+                <property role="Xl_RC" value="_012_and_gate_periodic_test_script" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7JDlEF1TUZV" role="3cqZAp" />
+        <node concept="3vlDli" id="7JDlEF1TUZW" role="3cqZAp">
+          <node concept="2OqwBi" id="7JDlEF1TUZX" role="3tpDZA">
+            <node concept="37vLTw" id="7JDlEF1TUZY" role="2Oq$k0">
+              <ref role="3cqZAo" node="7JDlEF1TUZO" resolve="res" />
+            </node>
+            <node concept="34jXtK" id="7JDlEF1TUZZ" role="2OqNvi">
+              <node concept="3cmrfG" id="7JDlEF1TV00" role="25WWJ7">
+                <property role="3cmrfH" value="4" />
+              </node>
+            </node>
+          </node>
+          <node concept="Xl_RD" id="7JDlEF1TV01" role="3tpDZB">
+            <property role="Xl_RC" value="1000\t0.25" />
           </node>
         </node>
       </node>

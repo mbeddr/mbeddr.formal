@@ -1017,5 +1017,70 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7JDlEF1SArI">
+    <property role="3GE5qa" value="events.specs" />
+    <ref role="1XX52x" to="a7wd:7JDlEF1SArA" resolve="PeriodicTest" />
+    <node concept="3EZMnI" id="7JDlEF1SArK" role="2wV5jI">
+      <node concept="2iRkQZ" id="7JDlEF1SArL" role="2iSdaV" />
+      <node concept="3EZMnI" id="7JDlEF1SArM" role="3EZMnx">
+        <node concept="VPM3Z" id="7JDlEF1SArN" role="3F10Kt" />
+        <node concept="3F0ifn" id="7JDlEF1SArO" role="3EZMnx">
+          <property role="3F0ifm" value="periodic-test" />
+        </node>
+        <node concept="3F0ifn" id="7JDlEF1SArP" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="2iRfu4" id="7JDlEF1SArQ" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="7JDlEF1SArX" role="3EZMnx">
+        <node concept="VPM3Z" id="7JDlEF1SArY" role="3F10Kt" />
+        <node concept="3XFhqQ" id="7JDlEF1SArZ" role="3EZMnx" />
+        <node concept="3F0ifn" id="7JDlEF1SAs0" role="3EZMnx">
+          <property role="3F0ifm" value="failure rate:" />
+        </node>
+        <node concept="3F0A7n" id="7JDlEF1SAs1" role="3EZMnx">
+          <ref role="1NtTu8" to="a7wd:7JDlEF1SArC" resolve="lambda" />
+        </node>
+        <node concept="3F0ifn" id="7JDlEF1SAs2" role="3EZMnx">
+          <property role="3F0ifm" value="/h" />
+          <node concept="11L4FC" id="7JDlEF1SAs3" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="7JDlEF1SAs4" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="7JDlEF1SArR" role="3EZMnx">
+        <node concept="VPM3Z" id="7JDlEF1SArS" role="3F10Kt" />
+        <node concept="3XFhqQ" id="7JDlEF1SArT" role="3EZMnx" />
+        <node concept="3F0ifn" id="7JDlEF1SArU" role="3EZMnx">
+          <property role="3F0ifm" value="delay between two consecutive tests:" />
+        </node>
+        <node concept="3F0A7n" id="7JDlEF1SArV" role="3EZMnx">
+          <ref role="1NtTu8" to="a7wd:7JDlEF1SArB" resolve="tau" />
+        </node>
+        <node concept="2iRfu4" id="7JDlEF1SArW" role="2iSdaV" />
+        <node concept="3F0ifn" id="7JDlEF1U34s" role="3EZMnx">
+          <property role="3F0ifm" value="h" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7JDlEF1SAs5" role="3EZMnx">
+        <node concept="VPM3Z" id="7JDlEF1SAs6" role="3F10Kt" />
+        <node concept="3XFhqQ" id="7JDlEF1SAs7" role="3EZMnx" />
+        <node concept="3F0ifn" id="7JDlEF1SAs8" role="3EZMnx">
+          <property role="3F0ifm" value="delay before the first test:" />
+        </node>
+        <node concept="3F0A7n" id="7JDlEF1SAs9" role="3EZMnx">
+          <ref role="1NtTu8" to="a7wd:7JDlEF1SArD" resolve="theta" />
+        </node>
+        <node concept="3F0ifn" id="7JDlEF1SAsa" role="3EZMnx">
+          <property role="3F0ifm" value="h" />
+          <node concept="11L4FC" id="7JDlEF1SAsb" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="7JDlEF1SAsc" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
 </model>
 

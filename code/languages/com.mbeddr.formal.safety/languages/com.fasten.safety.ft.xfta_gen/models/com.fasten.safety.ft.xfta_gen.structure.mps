@@ -500,5 +500,28 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7JDlEF1SArA">
+    <property role="EcuMT" value="8928763027635988198" />
+    <property role="3GE5qa" value="events.specs" />
+    <property role="TrG5h" value="PeriodicTest" />
+    <property role="R4oN_" value="periodically tested and repaired components" />
+    <property role="34LRSv" value="periodic-test" />
+    <ref role="1TJDcQ" to="spwl:11L6MQb45$I" resolve="EventSpecBase" />
+    <node concept="1TJgyi" id="7JDlEF1SArC" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027635988200" />
+      <property role="TrG5h" value="lambda" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF1SArB" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027635988199" />
+      <property role="TrG5h" value="tau" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF1SArD" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027635988201" />
+      <property role="TrG5h" value="theta" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 
