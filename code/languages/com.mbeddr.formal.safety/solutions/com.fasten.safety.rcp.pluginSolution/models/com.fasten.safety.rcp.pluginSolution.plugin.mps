@@ -1146,6 +1146,21 @@
                   </node>
                 </node>
               </node>
+              <node concept="tCFHf" id="6qZV73vgg0n" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="6qZV73vgg0o" role="2J__8u">
+                  <property role="Xl_RC" value="Hazards Catalogue" />
+                </node>
+                <node concept="35c_gC" id="6qZV73vgg0p" role="2J__8u">
+                  <ref role="35c_gD" to="cjwq:7TjUbLQ4519" resolve="HazardsList" />
+                </node>
+                <node concept="37shsh" id="6qZV73vgg0q" role="2J__8u">
+                  <node concept="1dCxOk" id="6qZV73vgg0r" role="37shsm">
+                    <property role="1XweGW" value="ac9a2847-3512-4af0-8db9-c20abbe2720a" />
+                    <property role="1XxBO9" value="fasten.safety" />
+                  </node>
+                </node>
+              </node>
               <node concept="tCFHf" id="7A06dcUGK1m" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
                 <node concept="Xl_RD" id="7A06dcUGK1n" role="2J__8u">
@@ -1191,6 +1206,21 @@
                   </node>
                 </node>
               </node>
+              <node concept="tCFHf" id="6qZV73vguNP" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="6qZV73vguNQ" role="2J__8u">
+                  <property role="Xl_RC" value="Loss Scenarios Analysis" />
+                </node>
+                <node concept="35c_gC" id="6qZV73vguNR" role="2J__8u">
+                  <ref role="35c_gD" to="bewr:6RZi9iiAzbi" resolve="LossScenarios" />
+                </node>
+                <node concept="37shsh" id="6qZV73vguNS" role="2J__8u">
+                  <node concept="1dCxOk" id="6qZV73vguNT" role="37shsm">
+                    <property role="1XweGW" value="ac9a2847-3512-4af0-8db9-c20abbe2720a" />
+                    <property role="1XxBO9" value="fasten.safety" />
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
           <node concept="tC5Ba" id="7A06dcUGLGJ" role="ftvYc">
@@ -1218,7 +1248,7 @@
               <node concept="tCFHf" id="7A06dcUGLGL" role="ftvYc">
                 <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
                 <node concept="Xl_RD" id="7A06dcUGLGM" role="2J__8u">
-                  <property role="Xl_RC" value="Hazard Analysis" />
+                  <property role="Xl_RC" value="Hazard Catalogue" />
                 </node>
                 <node concept="35c_gC" id="7A06dcUGLGN" role="2J__8u">
                   <ref role="35c_gD" to="cjwq:7TjUbLQ4519" resolve="HazardsList" />
