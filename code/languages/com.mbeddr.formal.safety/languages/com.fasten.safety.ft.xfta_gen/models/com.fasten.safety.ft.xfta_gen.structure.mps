@@ -523,5 +523,83 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7JDlEF1V6CP">
+    <property role="EcuMT" value="8928763027636644405" />
+    <property role="3GE5qa" value="commands.compute.sensitivity" />
+    <property role="TrG5h" value="ComputeSensitivity" />
+    <property role="34LRSv" value="compute sensitivity" />
+    <property role="R4oN_" value="performs sensitivity analysis on a variable" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7JDlEF1V6CR" role="1TKVEi">
+      <property role="IQ2ns" value="8928763027636644407" />
+      <property role="20kJfa" value="variable" />
+      <ref role="20lvS9" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF1V6CS" role="PzmwI">
+      <ref role="PrY4T" node="2MppyJmL3W3" resolve="IXFTAScriptContent" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF1VGD4" role="PzmwI">
+      <ref role="PrY4T" node="2MppyJmQeUj" resolve="IGenerateOutput" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF1V6CU" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj8$EY" resolve="ICommandWithOptions" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF1V6CW" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027636644412" />
+      <property role="TrG5h" value="numberOfTries" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7JDlEF1V8FL">
+    <property role="EcuMT" value="8928763027636652785" />
+    <property role="TrG5h" value="IComputeSensitivityOption" />
+    <property role="3GE5qa" value="commands.compute.sensitivity" />
+    <node concept="PrWs8" id="7JDlEF1V8FM" role="PrDN$">
+      <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF1V9oj">
+    <property role="EcuMT" value="8928763027636655635" />
+    <property role="TrG5h" value="NumberOfTriesOption" />
+    <property role="34LRSv" value="number-of-tries" />
+    <property role="3GE5qa" value="options" />
+    <property role="R4oN_" value="number of tries taken by the Monte-Carlo simulation to compute the sensitivity" />
+    <ref role="1TJDcQ" node="2c2ooLv3w9J" resolve="PositiveRealValueOption" />
+    <node concept="PrWs8" id="7JDlEF1V9ok" role="PzmwI">
+      <ref role="PrY4T" node="7JDlEF1V8FL" resolve="IComputeSensitivityOption" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF1V9on" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj9Aj6" resolve="IAmUniqueOption" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF1WyHb">
+    <property role="EcuMT" value="8928763027637021515" />
+    <property role="3GE5qa" value="options.base" />
+    <property role="TrG5h" value="BooleanOption" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7JDlEF1WyHc" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF1XLPk" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027637345620" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF1XcYX">
+    <property role="EcuMT" value="8928763027637194685" />
+    <property role="TrG5h" value="PrintBasicEventSensitivityOption" />
+    <property role="34LRSv" value="print-basic-event-sensitivity" />
+    <property role="3GE5qa" value="options" />
+    <property role="R4oN_" value="prints the sensitivity of basic events" />
+    <ref role="1TJDcQ" node="7JDlEF1WyHb" resolve="BooleanOption" />
+    <node concept="PrWs8" id="7JDlEF1XcYY" role="PzmwI">
+      <ref role="PrY4T" node="7JDlEF1V8FL" resolve="IComputeSensitivityOption" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF1XcYZ" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj9Aj6" resolve="IAmUniqueOption" />
+    </node>
+  </node>
 </model>
 
