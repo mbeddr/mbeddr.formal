@@ -20,24 +20,20 @@
       </concept>
     </language>
   </registry>
-  <node concept="2HxQMi" id="7Jm8RM1zooG">
-    <property role="TrG5h" value="_100_losses" />
-    <property role="3GE5qa" value="_010_airbag" />
-    <node concept="2HxQMU" id="7Jm8RM1zooH" role="2HxQMj">
-      <property role="2HxQM_" value="PASS_SEV_INJ" />
-      <property role="TrG5h" value="passenger severe injury which requires hospitalization" />
+  <node concept="2HxQMi" id="3z9KAuxpmDX">
+    <property role="TrG5h" value="_010_highway_pilot_losses" />
+    <property role="3GE5qa" value="_020_hwp" />
+    <node concept="2HxQMU" id="3z9KAuxpmDY" role="2HxQMj">
+      <property role="2HxQM_" value="HWP_LOSS_01" />
+      <property role="TrG5h" value="Human harm" />
     </node>
-    <node concept="2HxQMU" id="7Jm8RM1zooJ" role="2HxQMj">
-      <property role="2HxQM_" value="PASS_LIGHT_INJ" />
-      <property role="TrG5h" value="passenger light injury which does not require hospitalization" />
+    <node concept="2HxQMU" id="3z9KAuxpmDZ" role="2HxQMj">
+      <property role="2HxQM_" value="HWP_LOSS_02" />
+      <property role="TrG5h" value="Damage to vehicle" />
     </node>
-    <node concept="2HxQMU" id="7Jm8RM1zooO" role="2HxQMj">
-      <property role="2HxQM_" value="DRIVER_SEV_INJ" />
-      <property role="TrG5h" value="driver severe injury which requires hospitalization" />
-    </node>
-    <node concept="2HxQMU" id="7Jm8RM1zooN" role="2HxQMj">
-      <property role="2HxQM_" value="DRIVER_LIGHT_INJ" />
-      <property role="TrG5h" value="driver light injury which does not require hospitalization" />
+    <node concept="2HxQMU" id="3z9KAuxpmE0" role="2HxQMj">
+      <property role="2HxQM_" value="HWP_LOSS_03" />
+      <property role="TrG5h" value="Loss of customer trust" />
     </node>
   </node>
 </model>
