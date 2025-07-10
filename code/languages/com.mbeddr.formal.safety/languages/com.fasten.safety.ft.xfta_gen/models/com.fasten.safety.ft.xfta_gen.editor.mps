@@ -955,5 +955,67 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="7JDlEF1Fgxc">
+    <property role="3GE5qa" value="events.specs" />
+    <ref role="1XX52x" to="a7wd:7JDlEF1FeFE" resolve="GLM" />
+    <node concept="3EZMnI" id="7JDlEF1FhAR" role="2wV5jI">
+      <node concept="2iRkQZ" id="7JDlEF1FhAS" role="2iSdaV" />
+      <node concept="3EZMnI" id="7JDlEF1FhtN" role="3EZMnx">
+        <node concept="VPM3Z" id="7JDlEF1FhtO" role="3F10Kt" />
+        <node concept="3F0ifn" id="7JDlEF1FhHB" role="3EZMnx">
+          <property role="3F0ifm" value="gamma-lambda-mu" />
+        </node>
+        <node concept="3F0ifn" id="7JDlEF1FhtQ" role="3EZMnx">
+          <property role="3F0ifm" value=":" />
+        </node>
+        <node concept="2iRfu4" id="7JDlEF1FhtU" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="7JDlEF1Fifb" role="3EZMnx">
+        <node concept="VPM3Z" id="7JDlEF1Fifc" role="3F10Kt" />
+        <node concept="3XFhqQ" id="7JDlEF1Fiqr" role="3EZMnx" />
+        <node concept="3F0ifn" id="7JDlEF1Fixc" role="3EZMnx">
+          <property role="3F0ifm" value="probability of failure on demand:" />
+        </node>
+        <node concept="3F0A7n" id="7JDlEF1FhtR" role="3EZMnx">
+          <ref role="1NtTu8" to="a7wd:7JDlEF1FfZD" resolve="gamma" />
+        </node>
+        <node concept="2iRfu4" id="7JDlEF1Fiff" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="7JDlEF1FiGp" role="3EZMnx">
+        <node concept="VPM3Z" id="7JDlEF1FiGq" role="3F10Kt" />
+        <node concept="3XFhqQ" id="7JDlEF1FiGr" role="3EZMnx" />
+        <node concept="3F0ifn" id="7JDlEF1FiGs" role="3EZMnx">
+          <property role="3F0ifm" value="failure rate:" />
+        </node>
+        <node concept="3F0A7n" id="7JDlEF1FiGt" role="3EZMnx">
+          <ref role="1NtTu8" to="a7wd:7JDlEF1FeFF" resolve="lambda" />
+        </node>
+        <node concept="3F0ifn" id="7JDlEF1FiGu" role="3EZMnx">
+          <property role="3F0ifm" value="/h" />
+          <node concept="11L4FC" id="7JDlEF1FiGv" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="7JDlEF1FiGx" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="7JDlEF1Fj0D" role="3EZMnx">
+        <node concept="VPM3Z" id="7JDlEF1Fj0E" role="3F10Kt" />
+        <node concept="3XFhqQ" id="7JDlEF1Fj0F" role="3EZMnx" />
+        <node concept="3F0ifn" id="7JDlEF1Fj0G" role="3EZMnx">
+          <property role="3F0ifm" value="repair rate:" />
+        </node>
+        <node concept="3F0A7n" id="7JDlEF1Fj0H" role="3EZMnx">
+          <ref role="1NtTu8" to="a7wd:7JDlEF1Fgof" resolve="mu" />
+        </node>
+        <node concept="3F0ifn" id="7JDlEF1Fj0I" role="3EZMnx">
+          <property role="3F0ifm" value="/h" />
+          <node concept="11L4FC" id="7JDlEF1Fj0J" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="7JDlEF1Fj0L" role="2iSdaV" />
+      </node>
+    </node>
+  </node>
 </model>
 

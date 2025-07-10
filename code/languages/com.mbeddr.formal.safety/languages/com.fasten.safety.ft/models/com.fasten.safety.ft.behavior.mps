@@ -184,13 +184,6 @@
       <node concept="3clFbS" id="3oGITgu$E7n" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="3oGITgu$E8X">
-    <property role="3GE5qa" value="events.specs" />
-    <ref role="13h7C2" to="spwl:11L6MQb4bLc" resolve="FailureRate" />
-    <node concept="13hLZK" id="3oGITgu$E8Y" role="13h7CW">
-      <node concept="3clFbS" id="3oGITgu$E8Z" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="3oGITgu_HkZ">
     <property role="3GE5qa" value="gates" />
     <ref role="13h7C2" to="spwl:3EWkVoQ4QSf" resolve="GateBase" />

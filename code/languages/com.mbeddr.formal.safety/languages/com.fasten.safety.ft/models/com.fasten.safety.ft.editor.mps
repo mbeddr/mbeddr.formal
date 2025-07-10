@@ -31,8 +31,8 @@
     <import index="u8j" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.elk.alg.layered.options(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="r3rm" ref="r:7fc96130-6279-4a55-aeeb-422a6879539d(de.itemis.mps.editor.diagram.runtime.jgraph)" />
     <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="fazf" ref="r:28cb0bbd-efcb-4c9e-94f2-4ccc928adfb4(com.fasten.safety.ft.behavior)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="88j9" ref="r:20c4aa5c-ab36-4815-af32-01895ee9c2f5(de.itemis.mps.editor.diagram.editor)" implicit="true" />
     <import index="1njx" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:com.mxgraph.view(de.itemis.mps.editor.diagram.runtime/)" implicit="true" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
@@ -3800,25 +3800,25 @@
   </node>
   <node concept="24kQdi" id="11L6MQb670M">
     <property role="3GE5qa" value="events.specs" />
-    <ref role="1XX52x" to="spwl:11L6MQb4bLc" resolve="FailureRate" />
-    <node concept="3EZMnI" id="11L6MQb670O" role="2wV5jI">
-      <node concept="3EZMnI" id="11L6MQb670V" role="3EZMnx">
-        <node concept="VPM3Z" id="11L6MQb670X" role="3F10Kt" />
-        <node concept="3F0ifn" id="11L6MQb6715" role="3EZMnx">
-          <property role="3F0ifm" value="failure rate:" />
-        </node>
-        <node concept="3F0A7n" id="11L6MQb671f" role="3EZMnx">
-          <ref role="1NtTu8" to="spwl:11L6MQb670m" resolve="failureRate" />
-        </node>
-        <node concept="3F0ifn" id="2c2ooLvc5Oi" role="3EZMnx">
-          <property role="3F0ifm" value="/h" />
-          <node concept="11L4FC" id="2c2ooLvc5Ol" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="2iRfu4" id="11L6MQb6710" role="2iSdaV" />
+    <ref role="1XX52x" to="spwl:11L6MQb4bLc" resolve="Lambda" />
+    <node concept="3EZMnI" id="11L6MQb670V" role="2wV5jI">
+      <node concept="VPM3Z" id="11L6MQb670X" role="3F10Kt" />
+      <node concept="3F0ifn" id="7JDlEF1J_uu" role="3EZMnx">
+        <property role="3F0ifm" value="failure rate" />
       </node>
-      <node concept="2iRkQZ" id="11L6MQb670R" role="2iSdaV" />
+      <node concept="3F0ifn" id="7JDlEF1FdPT" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F0A7n" id="11L6MQb671f" role="3EZMnx">
+        <ref role="1NtTu8" to="spwl:11L6MQb670m" resolve="lambda" />
+      </node>
+      <node concept="3F0ifn" id="2c2ooLvc5Oi" role="3EZMnx">
+        <property role="3F0ifm" value="/h" />
+        <node concept="11L4FC" id="2c2ooLvc5Ol" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="11L6MQb6710" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="7wRJ5ynOt3K">

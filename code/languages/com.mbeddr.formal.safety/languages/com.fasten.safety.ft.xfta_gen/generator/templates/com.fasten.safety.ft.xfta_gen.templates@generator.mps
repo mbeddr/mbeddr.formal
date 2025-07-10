@@ -1196,6 +1196,114 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="7JDlEF1FGR5" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="a7wd:7JDlEF1FeFE" resolve="GLM" />
+      <node concept="gft3U" id="7JDlEF1FGR6" role="1lVwrX">
+        <node concept="2pNNFK" id="7JDlEF1FGR7" role="gfFT$">
+          <property role="2pNNFO" value="GLM" />
+          <node concept="2pNNFK" id="7JDlEF1FGR8" role="3o6s8t">
+            <property role="2pNNFO" value="parameter" />
+            <node concept="2pNUuL" id="7JDlEF1FGR9" role="2pNNFR">
+              <property role="2pNUuO" value="name" />
+              <node concept="2pMdtt" id="7JDlEF1FGRa" role="2pMdts">
+                <property role="2pMdty" value="gamma_dummy_param" />
+                <node concept="17Uvod" id="7JDlEF1FGRb" role="lGtFl">
+                  <property role="2qtEX9" value="text" />
+                  <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                  <node concept="3zFVjK" id="7JDlEF1FGRc" role="3zH0cK">
+                    <node concept="3clFbS" id="7JDlEF1FGRd" role="2VODD2">
+                      <node concept="3clFbF" id="7JDlEF1FGRe" role="3cqZAp">
+                        <node concept="2YIFZM" id="7JDlEF1FIjY" role="3clFbG">
+                          <ref role="37wK5l" to="ltf9:7JDlEF1F_n8" resolve="getGammaParameterNameForBasicEvent" />
+                          <ref role="1Pybhc" to="ltf9:3oGITguzMJW" resolve="XFTAUtils" />
+                          <node concept="2OqwBi" id="7JDlEF1FIjZ" role="37wK5m">
+                            <node concept="30H73N" id="7JDlEF1FIk0" role="2Oq$k0" />
+                            <node concept="2Xjw5R" id="7JDlEF1FIk1" role="2OqNvi">
+                              <node concept="1xMEDy" id="7JDlEF1FIk2" role="1xVPHs">
+                                <node concept="chp4Y" id="7JDlEF1FIk3" role="ri$Ld">
+                                  <ref role="cht4Q" to="spwl:5rwT_JnuR4E" resolve="BasicEvent" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="7JDlEF1FIC1" role="3o6s8t">
+            <property role="2pNNFO" value="parameter" />
+            <node concept="2pNUuL" id="7JDlEF1FIC2" role="2pNNFR">
+              <property role="2pNUuO" value="name" />
+              <node concept="2pMdtt" id="7JDlEF1FIC3" role="2pMdts">
+                <property role="2pMdty" value="lambda_dummy_param" />
+                <node concept="17Uvod" id="7JDlEF1FIC4" role="lGtFl">
+                  <property role="2qtEX9" value="text" />
+                  <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                  <node concept="3zFVjK" id="7JDlEF1FIC5" role="3zH0cK">
+                    <node concept="3clFbS" id="7JDlEF1FIC6" role="2VODD2">
+                      <node concept="3clFbF" id="7JDlEF1FIC7" role="3cqZAp">
+                        <node concept="2YIFZM" id="7JDlEF1FITu" role="3clFbG">
+                          <ref role="37wK5l" to="ltf9:3oGITgu_arH" resolve="getLambdaParameterNameForBasicEvent" />
+                          <ref role="1Pybhc" to="ltf9:3oGITguzMJW" resolve="XFTAUtils" />
+                          <node concept="2OqwBi" id="7JDlEF1FITv" role="37wK5m">
+                            <node concept="30H73N" id="7JDlEF1FITw" role="2Oq$k0" />
+                            <node concept="2Xjw5R" id="7JDlEF1FITx" role="2OqNvi">
+                              <node concept="1xMEDy" id="7JDlEF1FITy" role="1xVPHs">
+                                <node concept="chp4Y" id="7JDlEF1FITz" role="ri$Ld">
+                                  <ref role="cht4Q" to="spwl:5rwT_JnuR4E" resolve="BasicEvent" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2pNNFK" id="7JDlEF1FIH9" role="3o6s8t">
+            <property role="2pNNFO" value="parameter" />
+            <node concept="2pNUuL" id="7JDlEF1FIHa" role="2pNNFR">
+              <property role="2pNUuO" value="name" />
+              <node concept="2pMdtt" id="7JDlEF1FIHb" role="2pMdts">
+                <property role="2pMdty" value="mu_dummy_param" />
+                <node concept="17Uvod" id="7JDlEF1FIHc" role="lGtFl">
+                  <property role="2qtEX9" value="text" />
+                  <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                  <node concept="3zFVjK" id="7JDlEF1FIHd" role="3zH0cK">
+                    <node concept="3clFbS" id="7JDlEF1FIHe" role="2VODD2">
+                      <node concept="3clFbF" id="7JDlEF1FIHf" role="3cqZAp">
+                        <node concept="2YIFZM" id="7JDlEF1FJqi" role="3clFbG">
+                          <ref role="37wK5l" to="ltf9:7JDlEF1FAgV" resolve="getMuParameterNameForBasicEvent" />
+                          <ref role="1Pybhc" to="ltf9:3oGITguzMJW" resolve="XFTAUtils" />
+                          <node concept="2OqwBi" id="7JDlEF1FJqj" role="37wK5m">
+                            <node concept="30H73N" id="7JDlEF1FJqk" role="2Oq$k0" />
+                            <node concept="2Xjw5R" id="7JDlEF1FJql" role="2OqNvi">
+                              <node concept="1xMEDy" id="7JDlEF1FJqm" role="1xVPHs">
+                                <node concept="chp4Y" id="7JDlEF1FJqn" role="ri$Ld">
+                                  <ref role="cht4Q" to="spwl:5rwT_JnuR4E" resolve="BasicEvent" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1N15co" id="6qZV73ve_rp" role="1s_3oS">
       <property role="TrG5h" value="spec" />
       <node concept="3Tqbb2" id="6qZV73ve_rx" role="1N15GL">
@@ -1269,6 +1377,192 @@
               </node>
             </node>
             <node concept="raruj" id="6qZV73veQGX" role="lGtFl" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3aamgX" id="7JDlEF1FzSq" role="3aUrZf">
+      <property role="36QftV" value="true" />
+      <ref role="30HIoZ" to="a7wd:7JDlEF1FeFE" resolve="GLM" />
+      <node concept="1Koe21" id="7JDlEF1FzSr" role="1lVwrX">
+        <node concept="2pNNFK" id="7JDlEF1FzSs" role="1Koe22">
+          <property role="2pNNFO" value="context" />
+          <node concept="2pNNFK" id="7JDlEF1FzSt" role="3o6s8t">
+            <property role="2pNNFO" value="define-parameter" />
+            <node concept="2pNUuL" id="7JDlEF1FzSu" role="2pNNFR">
+              <property role="2pNUuO" value="name" />
+              <node concept="2pMdtt" id="7JDlEF1FzSv" role="2pMdts">
+                <property role="2pMdty" value="gamma_dummy_param" />
+                <node concept="17Uvod" id="7JDlEF1FzSw" role="lGtFl">
+                  <property role="2qtEX9" value="text" />
+                  <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                  <node concept="3zFVjK" id="7JDlEF1FzSx" role="3zH0cK">
+                    <node concept="3clFbS" id="7JDlEF1FzSy" role="2VODD2">
+                      <node concept="3clFbF" id="7JDlEF1FzSz" role="3cqZAp">
+                        <node concept="2YIFZM" id="7JDlEF1FEnk" role="3clFbG">
+                          <ref role="37wK5l" to="ltf9:7JDlEF1F_n8" resolve="getGammaParameterNameForBasicEvent" />
+                          <ref role="1Pybhc" to="ltf9:3oGITguzMJW" resolve="XFTAUtils" />
+                          <node concept="2OqwBi" id="7JDlEF1FEnl" role="37wK5m">
+                            <node concept="30H73N" id="7JDlEF1FEnm" role="2Oq$k0" />
+                            <node concept="2Xjw5R" id="7JDlEF1FEnn" role="2OqNvi">
+                              <node concept="1xMEDy" id="7JDlEF1FEno" role="1xVPHs">
+                                <node concept="chp4Y" id="7JDlEF1FEnp" role="ri$Ld">
+                                  <ref role="cht4Q" to="spwl:5rwT_JnuR4E" resolve="BasicEvent" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7JDlEF1FzSE" role="3o6s8t">
+              <property role="2pNNFO" value="float" />
+              <node concept="2pNUuL" id="7JDlEF1FzSF" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="7JDlEF1FzSG" role="2pMdts">
+                  <property role="2pMdty" value="1.23" />
+                  <node concept="17Uvod" id="7JDlEF1FzSH" role="lGtFl">
+                    <property role="2qtEX9" value="text" />
+                    <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                    <node concept="3zFVjK" id="7JDlEF1FzSI" role="3zH0cK">
+                      <node concept="3clFbS" id="7JDlEF1FzSJ" role="2VODD2">
+                        <node concept="3clFbF" id="7JDlEF1FzSK" role="3cqZAp">
+                          <node concept="2OqwBi" id="7JDlEF1FzSL" role="3clFbG">
+                            <node concept="30H73N" id="7JDlEF1FzSM" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="7JDlEF1FzSN" role="2OqNvi">
+                              <ref role="3TsBF5" to="a7wd:7JDlEF1FfZD" resolve="gamma" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="raruj" id="7JDlEF1FzSO" role="lGtFl" />
+          </node>
+          <node concept="2pNNFK" id="7JDlEF1FCgI" role="3o6s8t">
+            <property role="2pNNFO" value="define-parameter" />
+            <node concept="2pNUuL" id="7JDlEF1FCgJ" role="2pNNFR">
+              <property role="2pNUuO" value="name" />
+              <node concept="2pMdtt" id="7JDlEF1FCgK" role="2pMdts">
+                <property role="2pMdty" value="lambda_dummy_param" />
+                <node concept="17Uvod" id="7JDlEF1FCgL" role="lGtFl">
+                  <property role="2qtEX9" value="text" />
+                  <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                  <node concept="3zFVjK" id="7JDlEF1FCgM" role="3zH0cK">
+                    <node concept="3clFbS" id="7JDlEF1FCgN" role="2VODD2">
+                      <node concept="3clFbF" id="7JDlEF1FCgO" role="3cqZAp">
+                        <node concept="2YIFZM" id="7JDlEF1FCgP" role="3clFbG">
+                          <ref role="37wK5l" to="ltf9:3oGITgu_arH" resolve="getLambdaParameterNameForBasicEvent" />
+                          <ref role="1Pybhc" to="ltf9:3oGITguzMJW" resolve="XFTAUtils" />
+                          <node concept="2OqwBi" id="7JDlEF1FCgQ" role="37wK5m">
+                            <node concept="30H73N" id="7JDlEF1FCgR" role="2Oq$k0" />
+                            <node concept="2Xjw5R" id="7JDlEF1FCgS" role="2OqNvi">
+                              <node concept="1xMEDy" id="7JDlEF1FCgT" role="1xVPHs">
+                                <node concept="chp4Y" id="7JDlEF1FCgU" role="ri$Ld">
+                                  <ref role="cht4Q" to="spwl:5rwT_JnuR4E" resolve="BasicEvent" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7JDlEF1FCgV" role="3o6s8t">
+              <property role="2pNNFO" value="float" />
+              <node concept="2pNUuL" id="7JDlEF1FCgW" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="7JDlEF1FCgX" role="2pMdts">
+                  <property role="2pMdty" value="1.23" />
+                  <node concept="17Uvod" id="7JDlEF1FCgY" role="lGtFl">
+                    <property role="2qtEX9" value="text" />
+                    <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                    <node concept="3zFVjK" id="7JDlEF1FCgZ" role="3zH0cK">
+                      <node concept="3clFbS" id="7JDlEF1FCh0" role="2VODD2">
+                        <node concept="3clFbF" id="7JDlEF1FCh1" role="3cqZAp">
+                          <node concept="2OqwBi" id="7JDlEF1FCh2" role="3clFbG">
+                            <node concept="30H73N" id="7JDlEF1FCh3" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="7JDlEF1FF_p" role="2OqNvi">
+                              <ref role="3TsBF5" to="a7wd:7JDlEF1FeFF" resolve="lambda" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="raruj" id="7JDlEF1FCh5" role="lGtFl" />
+          </node>
+          <node concept="2pNNFK" id="7JDlEF1FCDC" role="3o6s8t">
+            <property role="2pNNFO" value="define-parameter" />
+            <node concept="2pNUuL" id="7JDlEF1FCDD" role="2pNNFR">
+              <property role="2pNUuO" value="name" />
+              <node concept="2pMdtt" id="7JDlEF1FCDE" role="2pMdts">
+                <property role="2pMdty" value="gamma_dummy_param" />
+                <node concept="17Uvod" id="7JDlEF1FCDF" role="lGtFl">
+                  <property role="2qtEX9" value="text" />
+                  <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                  <node concept="3zFVjK" id="7JDlEF1FCDG" role="3zH0cK">
+                    <node concept="3clFbS" id="7JDlEF1FCDH" role="2VODD2">
+                      <node concept="3clFbF" id="7JDlEF1FCDI" role="3cqZAp">
+                        <node concept="2YIFZM" id="7JDlEF1FGcl" role="3clFbG">
+                          <ref role="37wK5l" to="ltf9:7JDlEF1FAgV" resolve="getMuParameterNameForBasicEvent" />
+                          <ref role="1Pybhc" to="ltf9:3oGITguzMJW" resolve="XFTAUtils" />
+                          <node concept="2OqwBi" id="7JDlEF1FGcm" role="37wK5m">
+                            <node concept="30H73N" id="7JDlEF1FGcn" role="2Oq$k0" />
+                            <node concept="2Xjw5R" id="7JDlEF1FGco" role="2OqNvi">
+                              <node concept="1xMEDy" id="7JDlEF1FGcp" role="1xVPHs">
+                                <node concept="chp4Y" id="7JDlEF1FGcq" role="ri$Ld">
+                                  <ref role="cht4Q" to="spwl:5rwT_JnuR4E" resolve="BasicEvent" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2pNNFK" id="7JDlEF1FCDP" role="3o6s8t">
+              <property role="2pNNFO" value="float" />
+              <node concept="2pNUuL" id="7JDlEF1FCDQ" role="2pNNFR">
+                <property role="2pNUuO" value="value" />
+                <node concept="2pMdtt" id="7JDlEF1FCDR" role="2pMdts">
+                  <property role="2pMdty" value="1.23" />
+                  <node concept="17Uvod" id="7JDlEF1FCDS" role="lGtFl">
+                    <property role="2qtEX9" value="text" />
+                    <property role="P4ACc" value="479c7a8c-02f9-43b5-9139-d910cb22f298/6666499814681541919/6666499814681541920" />
+                    <node concept="3zFVjK" id="7JDlEF1FCDT" role="3zH0cK">
+                      <node concept="3clFbS" id="7JDlEF1FCDU" role="2VODD2">
+                        <node concept="3clFbF" id="7JDlEF1FCDV" role="3cqZAp">
+                          <node concept="2OqwBi" id="7JDlEF1FCDW" role="3clFbG">
+                            <node concept="30H73N" id="7JDlEF1FCDX" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="7JDlEF1FCDY" role="2OqNvi">
+                              <ref role="3TsBF5" to="a7wd:7JDlEF1Fgof" resolve="mu" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="raruj" id="7JDlEF1FCDZ" role="lGtFl" />
           </node>
         </node>
       </node>

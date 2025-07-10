@@ -127,6 +127,8 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>ab274f70-5238-4883-adc7-02df7a757829(com.fasten.safety.ft)</extendedLanguage>
+  </extendedLanguages>
 </language>
 
