@@ -23,6 +23,7 @@
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
     <dependency reexport="false">d7931714-a11c-4108-aa0e-246d86070dad(com.mbeddr.mpsutil.smodule.runtime)</dependency>
+    <dependency reexport="false">86441d7a-e194-42da-81a5-2161ec62a379(MPS.Workbench)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:58e731a3-6aaa-444a-bf40-801b91c15878:com.mbeddr.mpsutil.lang.plugin.extensions" version="0" />
