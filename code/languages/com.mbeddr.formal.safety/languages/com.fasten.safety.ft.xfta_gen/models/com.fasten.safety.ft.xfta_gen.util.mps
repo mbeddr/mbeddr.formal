@@ -369,12 +369,12 @@
     </node>
     <node concept="2tJIrI" id="3oGITgu_aza" role="jymVt" />
     <node concept="2YIFZL" id="3oGITgu_arH" role="jymVt">
-      <property role="TrG5h" value="getParameterNameForBasicEvent" />
+      <property role="TrG5h" value="getLambdaParameterNameForBasicEvent" />
       <node concept="3clFbS" id="3oGITgu_arI" role="3clF47">
         <node concept="3clFbF" id="3oGITgu_aV4" role="3cqZAp">
           <node concept="3cpWs3" id="3oGITgu_byD" role="3clFbG">
             <node concept="Xl_RD" id="3oGITgu_b$L" role="3uHU7w">
-              <property role="Xl_RC" value="_param" />
+              <property role="Xl_RC" value="_lambda_param" />
             </node>
             <node concept="1rXfSq" id="3oGITgu_aV3" role="3uHU7B">
               <ref role="37wK5l" node="3oGITgu_19m" resolve="normalizeName" />

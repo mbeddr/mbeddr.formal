@@ -393,6 +393,9 @@
       <node concept="3Ugoyx" id="2MppyJmQV$P" role="3UgoyZ">
         <property role="3Ugoyw" value="_010_and_gate_out.tsv" />
       </node>
+      <node concept="1W3sYI" id="6qZV73vf$VB" role="atf1B">
+        <property role="1W36fW" value="1000" />
+      </node>
     </node>
   </node>
   <node concept="3Unl$E" id="2MppyJmTn5z">
@@ -408,6 +411,9 @@
       <ref role="3Unl_b" node="5sUzoS9Hb7L" resolve="_020_or_gate_top_event" />
       <node concept="3Ugoyx" id="2MppyJmTn5C" role="3UgoyZ">
         <property role="3Ugoyw" value="_020_or_gate_out.tsv" />
+      </node>
+      <node concept="1W3sYI" id="6qZV73vfBlv" role="atf1B">
+        <property role="1W36fW" value="1000" />
       </node>
     </node>
   </node>
