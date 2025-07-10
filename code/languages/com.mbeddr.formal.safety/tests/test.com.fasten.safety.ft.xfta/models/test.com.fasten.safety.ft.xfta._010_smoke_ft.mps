@@ -2202,7 +2202,7 @@
     </node>
     <node concept="21oswF" id="7JDlEF1TRdt" role="3CrHoS">
       <ref role="21oszj" node="7JDlEF1TRdo" resolve="And Gate 1" />
-      <ref role="21oszt" node="7JDlEF1TRdn" resolve="_011_and_gate_glm_top_event" />
+      <ref role="21oszt" node="7JDlEF1TRdn" resolve="_012_and_gate_periodic_test_top_event" />
     </node>
     <node concept="21oswF" id="7JDlEF1TRdu" role="3CrHoS">
       <ref role="21oszt" node="7JDlEF1TRdo" resolve="And Gate 1" />
@@ -2221,7 +2221,7 @@
     </node>
     <node concept="3Unl_y" id="7JDlEF1TUZu" role="3Unl$J" />
     <node concept="3UniOE" id="7JDlEF1TUZv" role="3Unl$J">
-      <ref role="3UniOC" node="7JDlEF1TRdn" resolve="_011_and_gate_periodic_test_top_event" />
+      <ref role="3UniOC" node="7JDlEF1TRdn" resolve="_012_and_gate_periodic_test_top_event" />
     </node>
     <node concept="3Unl_R" id="7JDlEF1TUZw" role="3Unl$J">
       <ref role="3Unl_b" node="7JDlEF1TRdn" resolve="_012_and_gate_periodic_test_top_event" />
@@ -2254,7 +2254,7 @@
       </node>
     </node>
     <node concept="21oswF" id="7JDlEF1VBtt" role="3CrHoS">
-      <ref role="21oszt" node="7JDlEF1VBtn" resolve="_100_minimal_cutsets_top_event" />
+      <ref role="21oszt" node="7JDlEF1VBtn" resolve="_110_sensitivity_analysis_top_event" />
       <ref role="21oszj" node="7JDlEF1VBto" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="7JDlEF1VBtu" role="3CrHoS">
