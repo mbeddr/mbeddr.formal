@@ -197,7 +197,7 @@
     </node>
     <node concept="21oswF" id="2zYHfFNJUTn" role="3CrHoS">
       <ref role="21oszt" node="2zYHfFNJUSZ" resolve="IGNITION" />
-      <ref role="21oszj" node="2zYHfFNJUT2" resolve="OPERATOR_ERROR" />
+      <ref role="21oszj" node="2zYHfFNJUT2" resolve="_OPERATOR_ERROR" />
     </node>
     <node concept="21oswF" id="2zYHfFNJUTq" role="3CrHoS">
       <ref role="21oszt" node="2zYHfFNJUSZ" resolve="IGNITION" />
