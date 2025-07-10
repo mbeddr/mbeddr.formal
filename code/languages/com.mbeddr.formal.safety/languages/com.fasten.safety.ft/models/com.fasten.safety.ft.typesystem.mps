@@ -975,7 +975,7 @@
         <node concept="2OqwBi" id="2c2ooLv1764" role="2MkoU_">
           <node concept="2OqwBi" id="2c2ooLv15A3" role="2Oq$k0">
             <node concept="1YBJjd" id="2c2ooLv15qX" role="2Oq$k0">
-              <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="lambda" />
+              <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="failureRate" />
             </node>
             <node concept="3TrcHB" id="2c2ooLv15Nx" role="2OqNvi">
               <ref role="3TsBF5" to="spwl:11L6MQb670m" resolve="lambda" />
@@ -984,17 +984,17 @@
           <node concept="liA8E" id="2c2ooLv18Rz" role="2OqNvi">
             <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
             <node concept="10M0yZ" id="7JDlEF1FlMH" role="37wK5m">
-              <ref role="3cqZAo" node="7JDlEF1Fl7U" resolve="REGEX" />
+              <ref role="3cqZAo" node="7JDlEF1Fl7U" resolve="RATE_REGEX" />
               <ref role="1PxDUh" node="7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
             </node>
           </node>
         </node>
         <node concept="10M0yZ" id="7JDlEF1FpCw" role="2MkJ7o">
-          <ref role="3cqZAo" node="7JDlEF1FmhM" resolve="ERROR_MESSAGE" />
+          <ref role="3cqZAo" node="7JDlEF1FmhM" resolve="RATE_ERROR_MESSAGE" />
           <ref role="1PxDUh" node="7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
         </node>
         <node concept="1YBJjd" id="2c2ooLv1g7o" role="1urrMF">
-          <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="lambda" />
+          <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="failureRate" />
         </node>
         <node concept="2ODE4t" id="2c2ooLv1gbW" role="1urrC5">
           <ref role="2ODJFN" to="spwl:11L6MQb670m" resolve="lambda" />
@@ -1003,7 +1003,7 @@
     </node>
     <node concept="1YaCAy" id="2c2ooLv8DWT" role="1YuTPh">
       <property role="TrG5h" value="failureRate" />
-      <ref role="1YaFvo" to="spwl:11L6MQb4bLc" resolve="Lambda" />
+      <ref role="1YaFvo" to="spwl:11L6MQb4bLc" resolve="FailureRate" />
     </node>
   </node>
   <node concept="312cEu" id="7JDlEF1FkrK">
@@ -1032,7 +1032,7 @@
             <property role="Xl_RC" value="invalid format - expected '" />
           </node>
           <node concept="37vLTw" id="7JDlEF1FnCe" role="3uHU7w">
-            <ref role="3cqZAo" node="7JDlEF1Fl7U" resolve="REGEX" />
+            <ref role="3cqZAo" node="7JDlEF1Fl7U" resolve="RATE_REGEX" />
           </node>
         </node>
       </node>

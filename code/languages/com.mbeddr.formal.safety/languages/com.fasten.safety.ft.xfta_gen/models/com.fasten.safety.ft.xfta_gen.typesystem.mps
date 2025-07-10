@@ -385,13 +385,13 @@
           <node concept="liA8E" id="7JDlEF1FuN8" role="2OqNvi">
             <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
             <node concept="10M0yZ" id="7JDlEF1FuN9" role="37wK5m">
-              <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="REGEX" />
+              <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="RATE_REGEX" />
               <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
             </node>
           </node>
         </node>
         <node concept="10M0yZ" id="7JDlEF1FuNa" role="2MkJ7o">
-          <ref role="3cqZAo" to="n7z1:7JDlEF1FmhM" resolve="ERROR_MESSAGE" />
+          <ref role="3cqZAo" to="n7z1:7JDlEF1FmhM" resolve="RATE_ERROR_MESSAGE" />
           <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
         </node>
         <node concept="1YBJjd" id="7JDlEF1FuNb" role="1urrMF">
@@ -414,13 +414,13 @@
           <node concept="liA8E" id="7JDlEF1FrBU" role="2OqNvi">
             <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
             <node concept="10M0yZ" id="7JDlEF1FrBV" role="37wK5m">
-              <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="REGEX" />
+              <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="RATE_REGEX" />
               <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
             </node>
           </node>
         </node>
         <node concept="10M0yZ" id="7JDlEF1FrBW" role="2MkJ7o">
-          <ref role="3cqZAo" to="n7z1:7JDlEF1FmhM" resolve="ERROR_MESSAGE" />
+          <ref role="3cqZAo" to="n7z1:7JDlEF1FmhM" resolve="RATE_ERROR_MESSAGE" />
           <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
         </node>
         <node concept="1YBJjd" id="7JDlEF1FrBX" role="1urrMF">

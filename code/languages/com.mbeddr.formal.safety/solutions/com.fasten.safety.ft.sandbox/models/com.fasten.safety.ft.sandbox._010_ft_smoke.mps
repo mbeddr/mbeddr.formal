@@ -39,7 +39,7 @@
       <concept id="4232349791877945006" name="com.fasten.safety.ft.structure.AndGate" flags="ng" index="cEgko" />
       <concept id="4232349791877819920" name="com.fasten.safety.ft.structure.OrGate" flags="ng" index="cFNQA" />
       <concept id="1184758059395759180" name="com.fasten.safety.ft.structure.FailureRate" flags="ng" index="2roqtx">
-        <property id="1184758059396263958" name="failureRate" index="2rqmGV" />
+        <property id="1184758059396263958" name="lambda" index="2rqmGV" />
       </concept>
       <concept id="2756781353940487070" name="com.fasten.safety.ft.structure.EntityColorAttribute" flags="ng" index="Figmn">
         <property id="2756781353940487071" name="val" index="Figmm" />

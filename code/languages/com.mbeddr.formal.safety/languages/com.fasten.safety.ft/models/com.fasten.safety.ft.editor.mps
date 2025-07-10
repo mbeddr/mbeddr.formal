@@ -3800,7 +3800,7 @@
   </node>
   <node concept="24kQdi" id="11L6MQb670M">
     <property role="3GE5qa" value="events.specs" />
-    <ref role="1XX52x" to="spwl:11L6MQb4bLc" resolve="Lambda" />
+    <ref role="1XX52x" to="spwl:11L6MQb4bLc" resolve="FailureRate" />
     <node concept="3EZMnI" id="11L6MQb670V" role="2wV5jI">
       <node concept="VPM3Z" id="11L6MQb670X" role="3F10Kt" />
       <node concept="3F0ifn" id="7JDlEF1J_uu" role="3EZMnx">

@@ -1173,7 +1173,7 @@
                     <node concept="3clFbS" id="6qZV73ve_sK" role="2VODD2">
                       <node concept="3clFbF" id="6qZV73ve_sL" role="3cqZAp">
                         <node concept="2YIFZM" id="6qZV73ve_sM" role="3clFbG">
-                          <ref role="37wK5l" to="ltf9:3oGITgu_arH" resolve="getParameterNameForBasicEvent" />
+                          <ref role="37wK5l" to="ltf9:3oGITgu_arH" resolve="getLambdaParameterNameForBasicEvent" />
                           <ref role="1Pybhc" to="ltf9:3oGITguzMJW" resolve="XFTAUtils" />
                           <node concept="2OqwBi" id="6qZV73veBmU" role="37wK5m">
                             <node concept="30H73N" id="6qZV73ve_sN" role="2Oq$k0" />
@@ -1332,7 +1332,7 @@
                     <node concept="3clFbS" id="6qZV73vePtm" role="2VODD2">
                       <node concept="3clFbF" id="6qZV73vePtn" role="3cqZAp">
                         <node concept="2YIFZM" id="6qZV73vePto" role="3clFbG">
-                          <ref role="37wK5l" to="ltf9:3oGITgu_arH" resolve="getParameterNameForBasicEvent" />
+                          <ref role="37wK5l" to="ltf9:3oGITgu_arH" resolve="getLambdaParameterNameForBasicEvent" />
                           <ref role="1Pybhc" to="ltf9:3oGITguzMJW" resolve="XFTAUtils" />
                           <node concept="2OqwBi" id="6qZV73veRFh" role="37wK5m">
                             <node concept="30H73N" id="6qZV73vePtp" role="2Oq$k0" />
@@ -1366,7 +1366,7 @@
                           <node concept="2OqwBi" id="6qZV73vePtx" role="3clFbG">
                             <node concept="30H73N" id="6qZV73vePtz" role="2Oq$k0" />
                             <node concept="3TrcHB" id="6qZV73veSWc" role="2OqNvi">
-                              <ref role="3TsBF5" to="spwl:11L6MQb670m" resolve="failureRate" />
+                              <ref role="3TsBF5" to="spwl:11L6MQb670m" resolve="lambda" />
                             </node>
                           </node>
                         </node>
