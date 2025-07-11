@@ -4,6 +4,7 @@
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
+    <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -198,6 +199,9 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline">
+      <concept id="8006371471054135775" name="de.slisson.mps.editor.multiline.structure.CellModel_Multiline" flags="sg" stub="8664183491941389655" index="2v7bAL" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
@@ -1188,6 +1192,31 @@
     </node>
     <node concept="1PE4EZ" id="7JDlEF1XLPn" role="1PM95z">
       <ref role="1PE7su" node="5_mIHxjavXT" resolve="XftaOptionValueEditorComponentBase" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="7JDlEF21C0B">
+    <property role="3GE5qa" value="commands" />
+    <ref role="1XX52x" to="a7wd:7JDlEF21C0$" resolve="XFTAScriptPlainTextCommand" />
+    <node concept="3EZMnI" id="7JDlEF230bu" role="2wV5jI">
+      <node concept="2iRkQZ" id="7JDlEF230bv" role="2iSdaV" />
+      <node concept="3F0ifn" id="7JDlEF21C0H" role="3EZMnx">
+        <property role="3F0ifm" value="[[" />
+        <node concept="VechU" id="7JDlEF23pmx" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7JDlEF21C0D" role="3EZMnx">
+        <node concept="2v7bAL" id="7JDlEF22B0Z" role="3EZMnx">
+          <ref role="1NtTu8" to="a7wd:7JDlEF21C0A" resolve="text" />
+        </node>
+        <node concept="2iRfu4" id="7JDlEF21C0G" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="7JDlEF21C0Q" role="3EZMnx">
+        <property role="3F0ifm" value="]]" />
+        <node concept="VechU" id="7JDlEF23pmz" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

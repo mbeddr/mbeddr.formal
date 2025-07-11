@@ -36,6 +36,9 @@
       <concept id="6437538155643161278" name="com.fasten.safety.ft.xfta_gen.structure.ICommandWithOptions" flags="ngI" index="atf1A">
         <child id="6437538155643161279" name="options" index="atf1B" />
       </concept>
+      <concept id="8928763027638353956" name="com.fasten.safety.ft.xfta_gen.structure.XFTAScriptPlainTextCommand" flags="ng" index="2TVXqe">
+        <property id="8928763027638353958" name="text" index="2TVXqc" />
+      </concept>
       <concept id="8928763027636644405" name="com.fasten.safety.ft.xfta_gen.structure.ComputeSensitivity" flags="ng" index="2U1jMv">
         <reference id="8928763027636644407" name="variable" index="2U1jMt" />
       </concept>
@@ -2915,6 +2918,24 @@
       <node concept="3Ugoyx" id="7JDlEF1Wicj" role="3UgoyZ">
         <property role="3Ugoyw" value="_110_sensitivity_analysis_output" />
         <property role="3UgQ2f" value="2MppyJmQwqA/append" />
+      </node>
+    </node>
+  </node>
+  <node concept="3Unl$E" id="7JDlEF21C0s">
+    <property role="TrG5h" value="_010_and_gate_arbitrary_text_script" />
+    <node concept="3Unl$P" id="7JDlEF23S0w" role="3Unl$J">
+      <ref role="3Unl$v" node="3oGITgu_n$7" resolve="_010_and_gate" />
+    </node>
+    <node concept="2TVXqe" id="7JDlEF23pms" role="3Unl$J">
+      <property role="2TVXqc" value="build target-model;&#10;build BDT _010_and_gate_top_event;" />
+    </node>
+    <node concept="3Unl_R" id="7JDlEF23S0z" role="3Unl$J">
+      <ref role="3Unl_b" node="3oGITgu_n$8" resolve="_010_and_gate_top_event" />
+      <node concept="3Ugoyx" id="7JDlEF23S0$" role="3UgoyZ">
+        <property role="3Ugoyw" value="_010_and_gate_out.tsv" />
+      </node>
+      <node concept="1W3sYI" id="7JDlEF23S0_" role="atf1B">
+        <property role="1W36fW" value="1000" />
       </node>
     </node>
   </node>

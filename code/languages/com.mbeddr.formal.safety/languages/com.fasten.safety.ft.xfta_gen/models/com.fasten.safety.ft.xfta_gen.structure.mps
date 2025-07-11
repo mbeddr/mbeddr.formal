@@ -116,6 +116,7 @@
     <property role="TrG5h" value="LoadModel" />
     <property role="34LRSv" value="load model" />
     <property role="3GE5qa" value="commands" />
+    <property role="R4oN_" value="loads a model from file" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2MppyJmL3WO" role="1TKVEi">
       <property role="IQ2ns" value="3213712147578371892" />
@@ -619,6 +620,22 @@
     </node>
     <node concept="PrWs8" id="7JDlEF1XcYZ" role="PzmwI">
       <ref role="PrY4T" node="5_mIHxj9Aj6" resolve="IAmUniqueOption" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF21C0$">
+    <property role="EcuMT" value="8928763027638353956" />
+    <property role="TrG5h" value="XFTAScriptPlainTextCommand" />
+    <property role="34LRSv" value="# plain text" />
+    <property role="R4oN_" value="uninterpreted plain text" />
+    <property role="3GE5qa" value="commands" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="7JDlEF21C0_" role="PzmwI">
+      <ref role="PrY4T" node="2MppyJmL3W3" resolve="IXFTAScriptContent" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF21C0A" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027638353958" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

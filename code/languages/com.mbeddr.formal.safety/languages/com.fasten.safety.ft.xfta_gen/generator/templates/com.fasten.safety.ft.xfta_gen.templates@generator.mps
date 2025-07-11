@@ -277,6 +277,33 @@
   </registry>
   <node concept="bUwia" id="7YOjUbFpdHa">
     <property role="TrG5h" value="main" />
+    <node concept="3aamgX" id="7JDlEF21E3d" role="3acgRq">
+      <ref role="30HIoZ" to="a7wd:7JDlEF21C0$" resolve="XFTAScriptPlainTextContent" />
+      <node concept="gft3U" id="7JDlEF21F0K" role="1lVwrX">
+        <node concept="356sEK" id="7JDlEF21F0O" role="gfFT$">
+          <node concept="356sEF" id="7JDlEF21F0P" role="356sEH">
+            <property role="TrG5h" value="plain_text" />
+            <node concept="17Uvod" id="7JDlEF21GeZ" role="lGtFl">
+              <property role="2qtEX9" value="name" />
+              <property role="P4ACc" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c/1169194658468/1169194664001" />
+              <node concept="3zFVjK" id="7JDlEF21Gf0" role="3zH0cK">
+                <node concept="3clFbS" id="7JDlEF21Gf1" role="2VODD2">
+                  <node concept="3clFbF" id="7JDlEF21Gvb" role="3cqZAp">
+                    <node concept="2OqwBi" id="7JDlEF21GWb" role="3clFbG">
+                      <node concept="30H73N" id="7JDlEF21Gva" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="7JDlEF21H90" role="2OqNvi">
+                        <ref role="3TsBF5" to="a7wd:7JDlEF21C0A" resolve="text" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2EixSi" id="7JDlEF21F16" role="2EinRH" />
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="2MppyJmP6rn" role="3acgRq">
       <ref role="30HIoZ" to="a7wd:2MppyJmL3Wu" resolve="LoadModel" />
       <node concept="gft3U" id="2MppyJmP6Rv" role="1lVwrX">
