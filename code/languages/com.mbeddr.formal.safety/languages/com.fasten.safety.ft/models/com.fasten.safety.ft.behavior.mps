@@ -20,8 +20,6 @@
       </concept>
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz">
-        <property id="1225194472832" name="isVirtual" index="13i0it" />
-        <property id="1225194472834" name="isAbstract" index="13i0iv" />
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
@@ -182,39 +180,8 @@
   <node concept="13h7C7" id="3oGITgu$E7l">
     <property role="3GE5qa" value="events.base" />
     <ref role="13h7C2" to="spwl:11L6MQb45$I" resolve="EventSpecBase" />
-    <node concept="13i0hz" id="3oGITgu$E7w" role="13h7CS">
-      <property role="TrG5h" value="failureRate" />
-      <property role="13i0it" value="true" />
-      <property role="13i0iv" value="true" />
-      <node concept="3Tm1VV" id="3oGITgu$E7x" role="1B3o_S" />
-      <node concept="17QB3L" id="3oGITgu$E7K" role="3clF45" />
-      <node concept="3clFbS" id="3oGITgu$E7z" role="3clF47" />
-    </node>
     <node concept="13hLZK" id="3oGITgu$E7m" role="13h7CW">
       <node concept="3clFbS" id="3oGITgu$E7n" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="3oGITgu$E8X">
-    <property role="3GE5qa" value="events.specs" />
-    <ref role="13h7C2" to="spwl:11L6MQb4bLc" resolve="FailureRate" />
-    <node concept="13hLZK" id="3oGITgu$E8Y" role="13h7CW">
-      <node concept="3clFbS" id="3oGITgu$E8Z" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="3oGITgu$E98" role="13h7CS">
-      <property role="TrG5h" value="failureRate" />
-      <ref role="13i0hy" node="3oGITgu$E7w" resolve="failureRate" />
-      <node concept="3Tm1VV" id="3oGITgu$E99" role="1B3o_S" />
-      <node concept="3clFbS" id="3oGITgu$E9c" role="3clF47">
-        <node concept="3clFbF" id="3oGITgu$E9r" role="3cqZAp">
-          <node concept="2OqwBi" id="3oGITgu$Ei5" role="3clFbG">
-            <node concept="13iPFW" id="3oGITgu$E9q" role="2Oq$k0" />
-            <node concept="3TrcHB" id="3oGITgu$Esw" role="2OqNvi">
-              <ref role="3TsBF5" to="spwl:11L6MQb670m" resolve="failureRate" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="3oGITgu$E9d" role="3clF45" />
     </node>
   </node>
   <node concept="13h7C7" id="3oGITgu_HkZ">

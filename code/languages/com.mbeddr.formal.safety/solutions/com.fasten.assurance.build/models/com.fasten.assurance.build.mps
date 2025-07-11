@@ -8379,6 +8379,11 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
+        <node concept="1SiIV0" id="7JDlEF1NBvs" role="3bR37C">
+          <node concept="1Busua" id="7JDlEF1NBvt" role="1SiIV1">
+            <ref role="1Busuk" node="551EivYxZ3O" resolve="com.fasten.safety.ft" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3rkUgzovdWl" role="2G$12L">
         <property role="BnDLt" value="true" />

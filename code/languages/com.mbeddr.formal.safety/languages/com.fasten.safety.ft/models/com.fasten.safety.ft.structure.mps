@@ -307,12 +307,12 @@
     <property role="EcuMT" value="1184758059395759180" />
     <property role="3GE5qa" value="events.specs" />
     <property role="TrG5h" value="FailureRate" />
+    <property role="R4oN_" value="lambda" />
     <property role="34LRSv" value="failure rate" />
-    <property role="R4oN_" value="failure rate (lambda)" />
     <ref role="1TJDcQ" node="11L6MQb45$I" resolve="EventSpecBase" />
     <node concept="1TJgyi" id="11L6MQb670m" role="1TKVEl">
       <property role="IQ2nx" value="1184758059396263958" />
-      <property role="TrG5h" value="failureRate" />
+      <property role="TrG5h" value="lambda" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

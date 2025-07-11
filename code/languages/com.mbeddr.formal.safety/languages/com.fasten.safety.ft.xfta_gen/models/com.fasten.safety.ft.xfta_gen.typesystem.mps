@@ -6,7 +6,9 @@
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
-    <import index="a7wd" ref="r:0d8de557-bbe4-455a-a872-4eb6baf716c6(com.fasten.safety.ft.xfta_gen.structure)" implicit="true" />
+    <import index="n7z1" ref="r:d9248eb8-cb38-4cb3-8454-cc903ebf6c86(com.fasten.safety.ft.typesystem)" />
+    <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" />
+    <import index="a7wd" ref="r:0d8de557-bbe4-455a-a872-4eb6baf716c6(com.fasten.safety.ft.xfta_gen.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -19,6 +21,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -332,6 +337,297 @@
     <node concept="1YaCAy" id="2c2ooLv3weL" role="1YuTPh">
       <property role="TrG5h" value="positiveRealValueOption" />
       <ref role="1YaFvo" to="a7wd:2c2ooLv3w9J" resolve="PositiveRealValueOption" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7JDlEF1Fq9x">
+    <property role="TrG5h" value="check_GLM" />
+    <property role="3GE5qa" value="events.specs" />
+    <node concept="3clFbS" id="7JDlEF1Fq9y" role="18ibNy">
+      <node concept="2Mj0R9" id="7JDlEF1FqIN" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF1FqIO" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF1FqIP" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF1FqIQ" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF1Fq9$" resolve="glm" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF1FqIR" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF1FfZD" resolve="gamma" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF1FqIS" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF1FyPT" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF1Fwso" resolve="ZERO_ONE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF1Fz1X" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF1Fxbl" resolve="ZERO_ONE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF1FqIT" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF1Fq9$" resolve="glm" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF1FqIU" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF1FeFF" resolve="lambda" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="7JDlEF1FuN3" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF1FuN4" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF1FuN5" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF1FuN6" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF1Fq9$" resolve="glm" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF1FuN7" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF1FeFF" resolve="lambda" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF1FuN8" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF1FuN9" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="RATE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF1FuNa" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF1FmhM" resolve="RATE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF1FuNb" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF1Fq9$" resolve="glm" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF1FuNc" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF1FeFF" resolve="lambda" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="7JDlEF1FrBP" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF1FrBQ" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF1FrBR" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF1FrBS" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF1Fq9$" resolve="glm" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF1FrBT" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF1Fgof" resolve="mu" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF1FrBU" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF1FrBV" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="RATE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF1FrBW" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF1FmhM" resolve="RATE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF1FrBX" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF1Fq9$" resolve="glm" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF1FrBY" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF1FeFF" resolve="lambda" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7JDlEF1Fq9$" role="1YuTPh">
+      <property role="TrG5h" value="glm" />
+      <ref role="1YaFvo" to="a7wd:7JDlEF1FeFE" resolve="GLM" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7JDlEF1SAsg">
+    <property role="TrG5h" value="check_periodicTest" />
+    <property role="3GE5qa" value="events.specs" />
+    <node concept="3clFbS" id="7JDlEF1SAsh" role="18ibNy">
+      <node concept="2Mj0R9" id="7JDlEF1SAss" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF1SAst" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF1SAsu" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF1SAsv" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="periodicTest" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF1SAsw" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF1SArC" resolve="lambda" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF1SAsx" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF1SAsy" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="RATE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF1SAsz" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF1FmhM" resolve="RATE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF1SAs$" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="periodicTest" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF1SAs_" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF1SArC" resolve="lambda" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="7JDlEF1SAsi" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF1SAsj" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF1SAsk" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF1SAsl" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="periodicTest" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF1SAsm" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF1SArB" resolve="tau" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF1SAsn" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF1TR$V" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="RATE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF1TRBU" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="RATE_REGEX" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF1SAsq" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="periodicTest" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF1SAsr" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF1SArB" resolve="tau" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="7JDlEF1SAsA" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF1SAsB" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF1SAsC" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF1SAsD" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="periodicTest" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF1SAsE" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF1SArD" resolve="theta" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF1SAsF" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF1SAsG" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF1Fl7U" resolve="RATE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF1SAsH" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF1FmhM" resolve="RATE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF1SAsI" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF1SAsK" resolve="periodicTest" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF1SAsJ" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF1SArD" resolve="theta" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7JDlEF1SAsK" role="1YuTPh">
+      <property role="TrG5h" value="periodicTest" />
+      <ref role="1YaFvo" to="a7wd:7JDlEF1SArA" resolve="PeriodicTest" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="7JDlEF24taI">
+    <property role="TrG5h" value="check_Weibull" />
+    <property role="3GE5qa" value="events.specs" />
+    <node concept="3clFbS" id="7JDlEF24taJ" role="18ibNy">
+      <node concept="2Mj0R9" id="7JDlEF24txB" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF24txC" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF24txD" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF24txE" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF24taL" resolve="weibull" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF24txF" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF24t9S" resolve="alpha" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF24txG" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF25uqI" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF24uKY" resolve="POSITIVE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF24wDd" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF24uKQ" resolve="POSITIVE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF24txJ" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF24taL" resolve="weibull" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF24txK" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF24t9S" resolve="alpha" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="7JDlEF24wVA" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF24wVB" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF24wVC" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF24wVD" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF24taL" resolve="weibull" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF24wVE" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF24t9T" resolve="beta" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF24wVF" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF25uwd" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF24uKY" resolve="POSITIVE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF24wVH" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF24uKQ" resolve="POSITIVE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF24wVI" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF24taL" resolve="weibull" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF24wVJ" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF24t9T" resolve="beta" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="7JDlEF24wVK" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF24wVL" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF24wVM" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF24wVN" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF24taL" resolve="weibull" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF24wVO" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF24t9U" resolve="t_0" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF24wVP" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF25u_H" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF24uKY" resolve="POSITIVE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF24wVR" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF24uKQ" resolve="POSITIVE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF24wVS" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF24taL" resolve="weibull" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF24wVT" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF24t9U" resolve="t_0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7JDlEF24taL" role="1YuTPh">
+      <property role="TrG5h" value="weibull" />
+      <ref role="1YaFvo" to="a7wd:7JDlEF24t9R" resolve="Weibull" />
     </node>
   </node>
 </model>
