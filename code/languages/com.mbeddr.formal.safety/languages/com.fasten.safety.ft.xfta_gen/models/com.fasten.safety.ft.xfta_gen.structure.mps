@@ -434,6 +434,9 @@
     <node concept="PrWs8" id="2c2ooLv7x4z" role="PzmwI">
       <ref role="PrY4T" node="2c2ooLv7b3q" resolve="IComputeProbabilityOption" />
     </node>
+    <node concept="PrWs8" id="7JDlEF204QI" role="PzmwI">
+      <ref role="PrY4T" node="7JDlEF1V8FL" resolve="IComputeSensitivityOption" />
+    </node>
     <node concept="PrWs8" id="2c2ooLvacn1" role="PzmwI">
       <ref role="PrY4T" node="2c2ooLv9RwD" resolve="IPrintMinimalCutsetsOption" />
     </node>
@@ -459,6 +462,15 @@
     </node>
     <node concept="PrWs8" id="2c2ooLv4moL" role="PzmwI">
       <ref role="PrY4T" node="5_mIHxj5uXZ" resolve="IBuildBDTOption" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF1ZTqx" role="PzmwI">
+      <ref role="PrY4T" node="7JDlEF1V8FL" resolve="IComputeSensitivityOption" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF203JT" role="PzmwI">
+      <ref role="PrY4T" node="2c2ooLv7b3q" resolve="IComputeProbabilityOption" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF203JU" role="PzmwI">
+      <ref role="PrY4T" node="2c2ooLv9RwD" resolve="IPrintMinimalCutsetsOption" />
     </node>
   </node>
   <node concept="PlHQZ" id="2c2ooLv7b3q">
@@ -548,6 +560,14 @@
       <property role="IQ2nx" value="8928763027636644412" />
       <property role="TrG5h" value="numberOfTries" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="7JDlEF203JV" role="1TKVEi">
+      <property role="IQ2ns" value="8928763027637943291" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="options" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7JDlEF1V8FL" resolve="IComputeSensitivityOption" />
+      <ref role="20ksaX" node="5_mIHxj8$EZ" />
     </node>
   </node>
   <node concept="PlHQZ" id="7JDlEF1V8FL">
