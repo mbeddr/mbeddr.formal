@@ -810,5 +810,74 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="7JDlEF25yAC">
+    <property role="TrG5h" value="_012_and_gate_weibull" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <node concept="1LZb2c" id="7JDlEF25yAD" role="1SL9yI">
+      <property role="TrG5h" value="_012_one_and_gate_weibull" />
+      <node concept="3cqZAl" id="7JDlEF25yAE" role="3clF45" />
+      <node concept="3clFbS" id="7JDlEF25yAF" role="3clF47">
+        <node concept="3cpWs8" id="7JDlEF25yAG" role="3cqZAp">
+          <node concept="3cpWsn" id="7JDlEF25yAH" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="7JDlEF25yAI" role="1tU5fm" />
+            <node concept="2OqwBi" id="7JDlEF25yAJ" role="33vP2m">
+              <node concept="1Xw6AR" id="7JDlEF25yAK" role="2Oq$k0">
+                <node concept="1dCxOl" id="7JDlEF25yAL" role="1XwpL7">
+                  <property role="1XweGQ" value="r:22491be8-bbe2-4f01-83d3-05da71d8404c" />
+                  <node concept="1j_P7g" id="7JDlEF25yAM" role="1j$8Uc">
+                    <property role="1j_P7h" value="test.com.fasten.safety.ft.xfta._010_smoke_ft" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2yCiCJ" id="7JDlEF25yAN" role="2OqNvi">
+                <node concept="2OqwBi" id="7JDlEF25yAO" role="Vysub">
+                  <node concept="1jxXqW" id="7JDlEF25yAP" role="2Oq$k0" />
+                  <node concept="liA8E" id="7JDlEF25yAQ" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7JDlEF25yAR" role="3cqZAp">
+          <node concept="3cpWsn" id="7JDlEF25yAS" role="3cpWs9">
+            <property role="TrG5h" value="res" />
+            <node concept="_YKpA" id="7JDlEF25yAT" role="1tU5fm">
+              <node concept="17QB3L" id="7JDlEF25yAU" role="_ZDj9" />
+            </node>
+            <node concept="2YIFZM" id="7JDlEF25yAV" role="33vP2m">
+              <ref role="37wK5l" to="qofe:2MppyJmTqsd" resolve="runXFTA" />
+              <ref role="1Pybhc" to="qofe:2XVAqcvZUli" resolve="XFTATestingUtils" />
+              <node concept="1jxXqW" id="7JDlEF25yAW" role="37wK5m" />
+              <node concept="37vLTw" id="7JDlEF25yAX" role="37wK5m">
+                <ref role="3cqZAo" node="7JDlEF25yAH" resolve="m" />
+              </node>
+              <node concept="Xl_RD" id="7JDlEF25yAY" role="37wK5m">
+                <property role="Xl_RC" value="_012_and_gate_weibull_script" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7JDlEF25yAZ" role="3cqZAp" />
+        <node concept="3vlDli" id="7JDlEF25yB0" role="3cqZAp">
+          <node concept="2OqwBi" id="7JDlEF25yB1" role="3tpDZA">
+            <node concept="37vLTw" id="7JDlEF25yB2" role="2Oq$k0">
+              <ref role="3cqZAo" node="7JDlEF25yAS" resolve="res" />
+            </node>
+            <node concept="34jXtK" id="7JDlEF25yB3" role="2OqNvi">
+              <node concept="3cmrfG" id="7JDlEF25yB4" role="25WWJ7">
+                <property role="3cmrfH" value="4" />
+              </node>
+            </node>
+          </node>
+          <node concept="Xl_RD" id="7JDlEF25yB5" role="3tpDZB">
+            <property role="Xl_RC" value="10000\t0.384407" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -1066,6 +1066,35 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="7JDlEF24v1V" role="jymVt" />
+    <node concept="Wx3nA" id="7JDlEF24uKY" role="jymVt">
+      <property role="TrG5h" value="POSITIVE_REGEX" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7JDlEF24uKZ" role="1B3o_S" />
+      <node concept="17QB3L" id="7JDlEF24uL0" role="1tU5fm" />
+      <node concept="Xl_RD" id="7JDlEF24vCc" role="33vP2m">
+        <property role="Xl_RC" value="[0-9]+\\.[0-9]*([Ee][\\+\\-]?[0-9]+)?" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7JDlEF24uKQ" role="jymVt">
+      <property role="TrG5h" value="POSITIVE_ERROR_MESSAGE" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7JDlEF24uKR" role="1B3o_S" />
+      <node concept="17QB3L" id="7JDlEF24uKS" role="1tU5fm" />
+      <node concept="3cpWs3" id="7JDlEF24uKT" role="33vP2m">
+        <node concept="Xl_RD" id="7JDlEF24uKU" role="3uHU7w">
+          <property role="Xl_RC" value="'" />
+        </node>
+        <node concept="3cpWs3" id="7JDlEF24uKV" role="3uHU7B">
+          <node concept="Xl_RD" id="7JDlEF24uKW" role="3uHU7B">
+            <property role="Xl_RC" value="invalid format - expected '" />
+          </node>
+          <node concept="37vLTw" id="7JDlEF24uKX" role="3uHU7w">
+            <ref role="3cqZAo" node="7JDlEF24uKY" resolve="POSITIVE_REGEX" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3Tm1VV" id="7JDlEF1FkrL" role="1B3o_S" />
   </node>
 </model>

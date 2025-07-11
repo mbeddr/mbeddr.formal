@@ -568,7 +568,7 @@
       <property role="20kJfa" value="options" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7JDlEF1V8FL" resolve="IComputeSensitivityOption" />
-      <ref role="20ksaX" node="5_mIHxj8$EZ" />
+      <ref role="20ksaX" node="5_mIHxj8$EZ" resolve="options" />
     </node>
   </node>
   <node concept="PlHQZ" id="7JDlEF1V8FL">
@@ -628,13 +628,36 @@
     <property role="34LRSv" value="# plain text" />
     <property role="R4oN_" value="uninterpreted plain text" />
     <property role="3GE5qa" value="commands" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7JDlEF21C0_" role="PzmwI">
       <ref role="PrY4T" node="2MppyJmL3W3" resolve="IXFTAScriptContent" />
     </node>
     <node concept="1TJgyi" id="7JDlEF21C0A" role="1TKVEl">
       <property role="IQ2nx" value="8928763027638353958" />
       <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF24t9R">
+    <property role="EcuMT" value="8928763027639095927" />
+    <property role="3GE5qa" value="events.specs" />
+    <property role="TrG5h" value="Weibull" />
+    <property role="34LRSv" value="Weibull" />
+    <property role="R4oN_" value="Weibull distribution" />
+    <ref role="1TJDcQ" to="spwl:11L6MQb45$I" resolve="EventSpecBase" />
+    <node concept="1TJgyi" id="7JDlEF24t9S" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027639095928" />
+      <property role="TrG5h" value="alpha" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF24t9T" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027639095929" />
+      <property role="TrG5h" value="beta" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF24t9U" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027639095930" />
+      <property role="TrG5h" value="t_0" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>

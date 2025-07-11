@@ -533,5 +533,102 @@
       <ref role="1YaFvo" to="a7wd:7JDlEF1SArA" resolve="PeriodicTest" />
     </node>
   </node>
+  <node concept="18kY7G" id="7JDlEF24taI">
+    <property role="TrG5h" value="check_Weibull" />
+    <property role="3GE5qa" value="events.specs" />
+    <node concept="3clFbS" id="7JDlEF24taJ" role="18ibNy">
+      <node concept="2Mj0R9" id="7JDlEF24txB" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF24txC" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF24txD" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF24txE" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF24taL" resolve="weibull" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF24txF" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF24t9S" resolve="alpha" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF24txG" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF25uqI" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF24uKY" resolve="POSITIVE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF24wDd" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF24uKQ" resolve="POSITIVE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF24txJ" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF24taL" resolve="weibull" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF24txK" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF24t9S" resolve="alpha" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="7JDlEF24wVA" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF24wVB" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF24wVC" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF24wVD" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF24taL" resolve="weibull" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF24wVE" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF24t9T" resolve="beta" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF24wVF" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF25uwd" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF24uKY" resolve="POSITIVE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF24wVH" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF24uKQ" resolve="POSITIVE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF24wVI" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF24taL" resolve="weibull" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF24wVJ" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF24t9T" resolve="beta" />
+        </node>
+      </node>
+      <node concept="2Mj0R9" id="7JDlEF24wVK" role="3cqZAp">
+        <node concept="2OqwBi" id="7JDlEF24wVL" role="2MkoU_">
+          <node concept="2OqwBi" id="7JDlEF24wVM" role="2Oq$k0">
+            <node concept="1YBJjd" id="7JDlEF24wVN" role="2Oq$k0">
+              <ref role="1YBMHb" node="7JDlEF24taL" resolve="weibull" />
+            </node>
+            <node concept="3TrcHB" id="7JDlEF24wVO" role="2OqNvi">
+              <ref role="3TsBF5" to="a7wd:7JDlEF24t9U" resolve="t_0" />
+            </node>
+          </node>
+          <node concept="liA8E" id="7JDlEF24wVP" role="2OqNvi">
+            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+            <node concept="10M0yZ" id="7JDlEF25u_H" role="37wK5m">
+              <ref role="3cqZAo" to="n7z1:7JDlEF24uKY" resolve="POSITIVE_REGEX" />
+              <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+          </node>
+        </node>
+        <node concept="10M0yZ" id="7JDlEF24wVR" role="2MkJ7o">
+          <ref role="3cqZAo" to="n7z1:7JDlEF24uKQ" resolve="POSITIVE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" to="n7z1:7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+        </node>
+        <node concept="1YBJjd" id="7JDlEF24wVS" role="1urrMF">
+          <ref role="1YBMHb" node="7JDlEF24taL" resolve="weibull" />
+        </node>
+        <node concept="2ODE4t" id="7JDlEF24wVT" role="1urrC5">
+          <ref role="2ODJFN" to="a7wd:7JDlEF24t9U" resolve="t_0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7JDlEF24taL" role="1YuTPh">
+      <property role="TrG5h" value="weibull" />
+      <ref role="1YaFvo" to="a7wd:7JDlEF24t9R" resolve="Weibull" />
+    </node>
+  </node>
 </model>
 
