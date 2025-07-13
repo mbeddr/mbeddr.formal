@@ -8,6 +8,7 @@
   <imports>
     <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" />
     <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
+    <import index="ak5" ref="r:88065739-bafb-4b27-a0a9-fb089ac8ac63(com.symo.arch.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -52,7 +53,7 @@
       <property role="IQ2ns" value="8413234032528111728" />
       <property role="20kJfa" value="arch" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />
+      <ref role="20lvS9" to="ak5:3acQo$0xi7O" resolve="IComponentDefinitionLike" />
     </node>
     <node concept="PrWs8" id="42QGQFVncls" role="PzmwI">
       <ref role="PrY4T" to="6k2r:42QGQFVnclm" resolve="IDesignFMEARootContent" />
@@ -64,9 +65,9 @@
     <ref role="1TJDcQ" to="6k2r:7j1NWs11GhV" resolve="SubjectBase" />
     <node concept="1TJgyj" id="7j1NWs11KvH" role="1TKVEi">
       <property role="IQ2ns" value="8413234032527476717" />
-      <property role="20kJfa" value="comp" />
+      <property role="20kJfa" value="componentInstance" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="3whv:7RhjhI7$liw" resolve="Instance" />
+      <ref role="20lvS9" to="ak5:3acQo$0xi7V" resolve="IComponentInstanceLike" />
     </node>
     <node concept="PrWs8" id="31P83hzGyef" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -92,9 +93,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="42QGQFVn62G" role="1TKVEi">
       <property role="IQ2ns" value="4663111736253767852" />
-      <property role="20kJfa" value="interface" />
+      <property role="20kJfa" value="componentDefinition" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" to="3whv:7RhjhI7zUWi" resolve="ComponentInterface" />
+      <ref role="20lvS9" to="ak5:3acQo$0xi7O" resolve="IComponentDefinitionLike" />
     </node>
     <node concept="PrWs8" id="42QGQFVnclu" role="PzmwI">
       <ref role="PrY4T" to="6k2r:42QGQFVnclm" resolve="IDesignFMEARootContent" />

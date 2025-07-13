@@ -10,6 +10,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" />
+    <import index="ak5" ref="r:88065739-bafb-4b27-a0a9-fb089ac8ac63(com.symo.arch.base.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -68,6 +69,9 @@
     <node concept="PrWs8" id="7RhjhI7zUWn" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3acQo$0xl15" role="PzmwI">
+      <ref role="PrY4T" to="ak5:3acQo$0xi7R" resolve="IPortLike" />
+    </node>
     <node concept="PrWs8" id="1EKbsQRpiyJ" role="PzmwI">
       <ref role="PrY4T" to="b19z:5_V$TJxAHB1" resolve="ISimulationValueAnnotatable" />
     </node>
@@ -86,6 +90,9 @@
     <property role="34LRSv" value="input port" />
     <property role="R4oN_" value="input port" />
     <ref role="1TJDcQ" node="7RhjhI7zUWm" resolve="Port" />
+    <node concept="PrWs8" id="3acQo$0xl13" role="PzmwI">
+      <ref role="PrY4T" to="ak5:3acQo$0xi7P" resolve="IInputPortLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7RhjhI7$E7x">
     <property role="EcuMT" value="9066112305507508705" />
@@ -116,6 +123,9 @@
       <property role="20kJfa" value="outputs" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7RhjhI7zUXc" resolve="OutputPort" />
+    </node>
+    <node concept="PrWs8" id="3acQo$0xjUm" role="PzmwI">
+      <ref role="PrY4T" to="ak5:3acQo$0xi7O" resolve="IComponentDefinitionLike" />
     </node>
     <node concept="PrWs8" id="7RhjhI7$9Bh" role="PzmwI">
       <ref role="PrY4T" to="b19z:6oUHYlAmoE8" resolve="IIdentifierNamedConcept" />
@@ -259,6 +269,9 @@
     <property role="34LRSv" value="output" />
     <property role="R4oN_" value="output port" />
     <ref role="1TJDcQ" node="7RhjhI7zUWm" resolve="Port" />
+    <node concept="PrWs8" id="3acQo$0xl14" role="PzmwI">
+      <ref role="PrY4T" to="ak5:3acQo$0xi7T" resolve="IOutputPortLike" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7RhjhI7$liw">
     <property role="EcuMT" value="9066112305507423392" />
@@ -286,6 +299,9 @@
     </node>
     <node concept="PrWs8" id="7RhjhI7$E8d" role="PzmwI">
       <ref role="PrY4T" node="7RhjhI7$E7w" resolve="IComponentAssemblyBodyContent" />
+    </node>
+    <node concept="PrWs8" id="3acQo$0xRKV" role="PzmwI">
+      <ref role="PrY4T" to="ak5:3acQo$0xi7V" resolve="IComponentInstanceLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="7RhjhI7$loN">

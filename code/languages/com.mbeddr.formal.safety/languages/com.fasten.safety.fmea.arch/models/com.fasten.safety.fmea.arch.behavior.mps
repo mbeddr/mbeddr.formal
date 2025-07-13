@@ -13,6 +13,7 @@
     <import index="3whv" ref="r:b1da8ad9-7b88-4c56-bf74-d8352a2282f9(com.mbeddr.formal.base.arch.structure)" />
     <import index="g9vz" ref="r:c54ad2e6-d537-48fe-8f9f-916529edd872(com.fasten.safety.fmea.arch.structure)" />
     <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" />
+    <import index="i3ui" ref="r:1f4e099a-2b6a-4ca4-9995-e0739ad809b7(com.symo.arch.base.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -101,6 +102,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -198,20 +200,15 @@
                   <node concept="3clFbS" id="GA19r1644m" role="1bW5cS">
                     <node concept="3clFbF" id="GA19r1644n" role="3cqZAp">
                       <node concept="3clFbC" id="GA19r1644o" role="3clFbG">
-                        <node concept="2OqwBi" id="GA19r1644p" role="3uHU7w">
-                          <node concept="2OqwBi" id="GA19r1644q" role="2Oq$k0">
-                            <node concept="2OqwBi" id="GA19r1644r" role="2Oq$k0">
-                              <node concept="13iPFW" id="GA19r1644s" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="GA19r1644t" role="2OqNvi">
-                                <ref role="3Tt5mk" to="g9vz:7j1NWs11KvH" resolve="comp" />
-                              </node>
-                            </node>
-                            <node concept="3TrEf2" id="GA19r1644u" role="2OqNvi">
-                              <ref role="3Tt5mk" to="3whv:7RhjhI7$liY" resolve="interfaceRef" />
+                        <node concept="2OqwBi" id="GA19r1644q" role="3uHU7w">
+                          <node concept="2OqwBi" id="GA19r1644r" role="2Oq$k0">
+                            <node concept="13iPFW" id="GA19r1644s" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="GA19r1644t" role="2OqNvi">
+                              <ref role="3Tt5mk" to="g9vz:7j1NWs11KvH" resolve="componentInstance" />
                             </node>
                           </node>
-                          <node concept="3TrEf2" id="GA19r1644v" role="2OqNvi">
-                            <ref role="3Tt5mk" to="3whv:7RhjhI7$li_" resolve="interface" />
+                          <node concept="2qgKlT" id="3acQo$0yAwQ" role="2OqNvi">
+                            <ref role="37wK5l" to="i3ui:3acQo$0xPr0" resolve="getComponentDefinition" />
                           </node>
                         </node>
                         <node concept="2OqwBi" id="GA19r1644w" role="3uHU7B">
@@ -219,7 +216,7 @@
                             <ref role="3cqZAo" node="2hED36FpCvK" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="GA19r1644y" role="2OqNvi">
-                            <ref role="3Tt5mk" to="g9vz:42QGQFVn62G" resolve="interface" />
+                            <ref role="3Tt5mk" to="g9vz:42QGQFVn62G" resolve="componentDefinition" />
                           </node>
                         </node>
                       </node>
@@ -299,20 +296,15 @@
                   <node concept="3clFbS" id="22gnu5EUEy6" role="1bW5cS">
                     <node concept="3clFbF" id="22gnu5EUEy7" role="3cqZAp">
                       <node concept="3clFbC" id="22gnu5EUEy8" role="3clFbG">
-                        <node concept="2OqwBi" id="22gnu5EUEy9" role="3uHU7w">
-                          <node concept="2OqwBi" id="22gnu5EUEya" role="2Oq$k0">
-                            <node concept="2OqwBi" id="22gnu5EUEyb" role="2Oq$k0">
-                              <node concept="13iPFW" id="22gnu5EUEyc" role="2Oq$k0" />
-                              <node concept="3TrEf2" id="22gnu5EUEyd" role="2OqNvi">
-                                <ref role="3Tt5mk" to="g9vz:7j1NWs11KvH" resolve="comp" />
-                              </node>
-                            </node>
-                            <node concept="3TrEf2" id="22gnu5EUEye" role="2OqNvi">
-                              <ref role="3Tt5mk" to="3whv:7RhjhI7$liY" resolve="interfaceRef" />
+                        <node concept="2OqwBi" id="22gnu5EUEya" role="3uHU7w">
+                          <node concept="2OqwBi" id="22gnu5EUEyb" role="2Oq$k0">
+                            <node concept="13iPFW" id="22gnu5EUEyc" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="22gnu5EUEyd" role="2OqNvi">
+                              <ref role="3Tt5mk" to="g9vz:7j1NWs11KvH" resolve="componentInstance" />
                             </node>
                           </node>
-                          <node concept="3TrEf2" id="22gnu5EUEyf" role="2OqNvi">
-                            <ref role="3Tt5mk" to="3whv:7RhjhI7$li_" resolve="interface" />
+                          <node concept="2qgKlT" id="3acQo$0yBf7" role="2OqNvi">
+                            <ref role="37wK5l" to="i3ui:3acQo$0xPr0" resolve="getComponentDefinition" />
                           </node>
                         </node>
                         <node concept="2OqwBi" id="22gnu5EUEyg" role="3uHU7B">
@@ -320,7 +312,7 @@
                             <ref role="3cqZAo" node="2hED36FpCvM" resolve="it" />
                           </node>
                           <node concept="3TrEf2" id="22gnu5EUEyi" role="2OqNvi">
-                            <ref role="3Tt5mk" to="g9vz:42QGQFVn62G" resolve="interface" />
+                            <ref role="3Tt5mk" to="g9vz:42QGQFVn62G" resolve="componentDefinition" />
                           </node>
                         </node>
                       </node>
