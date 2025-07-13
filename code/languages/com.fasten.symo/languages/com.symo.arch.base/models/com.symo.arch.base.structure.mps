@@ -4,7 +4,9 @@
   <languages>
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
-  <imports />
+  <imports>
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+  </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
@@ -26,6 +28,9 @@
   <node concept="PlHQZ" id="3acQo$0xi7O">
     <property role="EcuMT" value="3642525381078360564" />
     <property role="TrG5h" value="IComponentDefinitionLike" />
+    <node concept="PrWs8" id="3acQo$0BeAp" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3acQo$0xi7P">
     <property role="EcuMT" value="3642525381078360565" />
@@ -52,6 +57,9 @@
   <node concept="PlHQZ" id="3acQo$0xi7V">
     <property role="EcuMT" value="3642525381078360571" />
     <property role="TrG5h" value="IComponentInstanceLike" />
+    <node concept="PrWs8" id="3acQo$0BeCh" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 
