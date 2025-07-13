@@ -8,6 +8,7 @@
   <imports>
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="ak5" ref="r:88065739-bafb-4b27-a0a9-fb089ac8ac63(com.symo.arch.base.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -170,6 +171,9 @@
     <node concept="PrWs8" id="6BNnCp_PzR6" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="PrWs8" id="3acQo$0z33l" role="PzmwI">
+      <ref role="PrY4T" to="ak5:3acQo$0xi7O" resolve="IComponentDefinitionLike" />
+    </node>
   </node>
   <node concept="PlHQZ" id="1I7wo92Vg_Z">
     <property role="EcuMT" value="1983696557348555135" />
@@ -263,6 +267,12 @@
     </node>
     <node concept="PrWs8" id="6CyxyHi9vX0" role="PzmwI">
       <ref role="PrY4T" node="6CyxyHi9vWZ" resolve="INamedElementWithLongDescription" />
+    </node>
+    <node concept="PrWs8" id="3acQo$0ylzs" role="PzmwI">
+      <ref role="PrY4T" to="ak5:3acQo$0xi7O" resolve="IComponentDefinitionLike" />
+    </node>
+    <node concept="PrWs8" id="3acQo$0yS9d" role="PzmwI">
+      <ref role="PrY4T" to="ak5:3acQo$0xi7V" resolve="IComponentInstanceLike" />
     </node>
   </node>
   <node concept="1TIwiD" id="1I7wo92WYNu">
