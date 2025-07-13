@@ -894,9 +894,6 @@
       <node concept="m$_yC" id="5t37uj6Y1l2" role="m$_yJ">
         <ref role="m$_y1" node="7he_lUumEw2" resolve="com.mpsbasics" />
       </node>
-      <node concept="m$_yC" id="3acQo$0zH2X" role="m$_yJ">
-        <ref role="m$_y1" node="1k6eCQnEZzO" />
-      </node>
       <node concept="3_J27D" id="1uyUeTt3ODf" role="m$_yQ">
         <node concept="3Mxwew" id="1uyUeTt3QtK" role="3MwsjC">
           <property role="3MwjfP" value="com.mbeddr.formal.base" />
@@ -3741,45 +3738,6 @@
         <node concept="1SiIV0" id="2dsc7GnBKb" role="3bR37C">
           <node concept="3bR9La" id="2dsc7GnBKc" role="1SiIV1">
             <ref role="3bR37D" node="2dsc7GndbM" resolve="com.mpsbasics.core" />
-          </node>
-        </node>
-      </node>
-      <node concept="1E1JtD" id="3acQo$0zCb7" role="2G$12L">
-        <property role="BnDLt" value="true" />
-        <property role="TrG5h" value="com.symo.arch.base" />
-        <property role="3LESm3" value="88dbbd3b-b7c2-4ffe-9c47-4eb67390953b" />
-        <node concept="398BVA" id="3acQo$0zCH_" role="3LF7KH">
-          <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
-          <node concept="2Ry0Ak" id="3acQo$0zDeV" role="iGT6I">
-            <property role="2Ry0Am" value="languages" />
-            <node concept="2Ry0Ak" id="3acQo$0zDKC" role="2Ry0An">
-              <property role="2Ry0Am" value="com.symo.arch.base" />
-              <node concept="2Ry0Ak" id="3acQo$0zEil" role="2Ry0An">
-                <property role="2Ry0Am" value="com.symo.arch.base.mpl" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1BupzO" id="3acQo$0zENJ" role="3bR31x">
-          <property role="3ZfqAx" value="models" />
-          <property role="1Hdu6h" value="true" />
-          <property role="1HemKv" value="true" />
-          <node concept="3LXTmp" id="3acQo$0zENK" role="1HemKq">
-            <node concept="398BVA" id="3acQo$0zEN$" role="3LXTmr">
-              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
-              <node concept="2Ry0Ak" id="3acQo$0zEN_" role="iGT6I">
-                <property role="2Ry0Am" value="languages" />
-                <node concept="2Ry0Ak" id="3acQo$0zENA" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.symo.arch.base" />
-                  <node concept="2Ry0Ak" id="3acQo$0zENB" role="2Ry0An">
-                    <property role="2Ry0Am" value="models" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="3acQo$0zENL" role="3LXTna">
-              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-            </node>
           </node>
         </node>
       </node>
@@ -7410,11 +7368,6 @@
             <ref role="3bR37D" node="2dsc7GndbM" resolve="com.mpsbasics.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3acQo$0zFTz" role="3bR37C">
-          <node concept="3bR9La" id="3acQo$0zFT$" role="1SiIV1">
-            <ref role="3bR37D" node="3acQo$0zCb7" resolve="com.symo.arch.base" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="5yQpAUIgMcT" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -8040,6 +7993,61 @@
         <node concept="1SiIV0" id="2dsc7GnBV6" role="3bR37C">
           <node concept="3bR9La" id="2dsc7GnBV7" role="1SiIV1">
             <ref role="3bR37D" node="2dsc7GndbM" resolve="com.mpsbasics.core" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="3acQo$0zCb7" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.symo.arch.base" />
+        <property role="3LESm3" value="88dbbd3b-b7c2-4ffe-9c47-4eb67390953b" />
+        <node concept="398BVA" id="3acQo$0zCH_" role="3LF7KH">
+          <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+          <node concept="2Ry0Ak" id="3acQo$0zDeV" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3acQo$0zDKC" role="2Ry0An">
+              <property role="2Ry0Am" value="com.symo.arch.base" />
+              <node concept="2Ry0Ak" id="3acQo$0zEil" role="2Ry0An">
+                <property role="2Ry0Am" value="com.symo.arch.base.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="3acQo$0zENJ" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3acQo$0zENK" role="1HemKq">
+            <node concept="398BVA" id="3acQo$0zEN$" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="3acQo$0zEN_" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3acQo$0zENA" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.arch.base" />
+                  <node concept="2Ry0Ak" id="3acQo$0zENB" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3acQo$0zENL" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3LnEi8NZFoD" role="3bR31x">
+          <node concept="3LXTmp" id="3LnEi8NZFoE" role="3rtmxm">
+            <node concept="398BVA" id="3LnEi8NZFoF" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="3LnEi8NZFoG" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3LnEi8NZFoH" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.arch.base" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3LnEi8NZFoJ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
           </node>
         </node>
       </node>
