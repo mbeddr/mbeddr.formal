@@ -7,6 +7,10 @@
       <concept id="6437538155643161278" name="com.fasten.safety.ft.xfta_gen.structure.ICommandWithOptions" flags="ngI" index="atf1A">
         <child id="6437538155643161279" name="options" index="atf1B" />
       </concept>
+      <concept id="8928763027636644405" name="com.fasten.safety.ft.xfta_gen.structure.ComputeSensitivity" flags="ng" index="2U1jMv">
+        <reference id="8928763027636644407" name="variable" index="2U1jMt" />
+      </concept>
+      <concept id="8928763027636655635" name="com.fasten.safety.ft.xfta_gen.structure.NumberOfTriesOption" flags="ng" index="2U1s2T" />
       <concept id="3213712147579727498" name="com.fasten.safety.ft.xfta_gen.structure.Output" flags="ng" index="3Ugoyx">
         <property id="3213712147579727499" name="fileName" index="3Ugoyw" />
         <property id="3213712147579799204" name="mode" index="3UgQ2f" />
@@ -69,6 +73,19 @@
         <property role="1W36fW" value="1000" />
       </node>
       <node concept="3Ugoyx" id="3NuP_opAHt2" role="3UgoyZ">
+        <property role="3Ugoyw" value="out.tsv" />
+        <property role="3UgQ2f" value="2MppyJmQwqA/append" />
+      </node>
+    </node>
+    <node concept="2U1jMv" id="7JDlEF272oe" role="3Unl$J">
+      <ref role="2U1jMt" node="3NuP_opAGFJ" resolve="ENGINE_OVERHEATS" />
+      <node concept="2U1s2T" id="7JDlEF272og" role="atf1B">
+        <property role="1W36fW" value="1000" />
+      </node>
+      <node concept="1W3sYI" id="7JDlEF272oh" role="atf1B">
+        <property role="1W36fW" value="1000" />
+      </node>
+      <node concept="3Ugoyx" id="7JDlEF272oi" role="3UgoyZ">
         <property role="3Ugoyw" value="out.tsv" />
         <property role="3UgQ2f" value="2MppyJmQwqA/append" />
       </node>
