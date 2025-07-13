@@ -888,7 +888,7 @@
       <node concept="2iRkQZ" id="2c2ooLv9Qvm" role="2iSdaV" />
       <node concept="3EZMnI" id="2c2ooLv9Qvn" role="3EZMnx">
         <node concept="3F0ifn" id="2c2ooLv9Qvo" role="3EZMnx">
-          <property role="3F0ifm" value="print minimal cutsets" />
+          <property role="3F0ifm" value="print minimal-cutsets" />
         </node>
         <node concept="1iCGBv" id="2c2ooLv9Qvp" role="3EZMnx">
           <ref role="1NtTu8" to="a7wd:2MppyJmQwqx" resolve="variable" />

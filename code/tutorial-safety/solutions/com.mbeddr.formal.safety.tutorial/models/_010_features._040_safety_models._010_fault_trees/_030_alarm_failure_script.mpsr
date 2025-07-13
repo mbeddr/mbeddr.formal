@@ -46,7 +46,7 @@
   </registry>
   <node concept="3Unl$E" id="2c2ooLvi$GR">
     <property role="TrG5h" value="_030_alarm_failure_script" />
-    <property role="3GE5qa" value="_030_quantitative_fault_tree_analysis" />
+    <property role="3GE5qa" value="_030_quantitative_fault_tree_analysis.example_01_alarm_failure" />
     <node concept="3Unl$P" id="2c2ooLvi$GS" role="3Unl$J">
       <ref role="3Unl$v" node="2c2ooLvcwoc" resolve="_030_alarm_failure" />
     </node>

@@ -19,7 +19,7 @@
       <concept id="6260256764176593194" name="com.fasten.safety.ft.structure.BasicEvent" flags="ng" index="21ATtL" />
       <concept id="4232349791877945006" name="com.fasten.safety.ft.structure.AndGate" flags="ng" index="cEgko" />
       <concept id="1184758059395759180" name="com.fasten.safety.ft.structure.FailureRate" flags="ng" index="2roqtx">
-        <property id="1184758059396263958" name="failureRate" index="2rqmGV" />
+        <property id="1184758059396263958" name="lambda" index="2rqmGV" />
       </concept>
       <concept id="2168856987878100335" name="com.fasten.safety.ft.structure.IntermediateEvent" flags="ng" index="1_05Uv">
         <reference id="2168856987878570633" name="subtreeStart" index="1_em_T" />
@@ -65,7 +65,7 @@
   </registry>
   <node concept="21ASy4" id="2zYHfFNJUAN">
     <property role="TrG5h" value="_030_plant_burning" />
-    <property role="3GE5qa" value="_030_quantitative_fault_tree_analysis" />
+    <property role="3GE5qa" value="_030_quantitative_fault_tree_analysis.example_03_plant_burning" />
     <node concept="21ATtk" id="2zYHfFNJUSM" role="3CrHoS">
       <property role="TrG5h" value="PLANT_LOSS_BY_BURNING" />
     </node>

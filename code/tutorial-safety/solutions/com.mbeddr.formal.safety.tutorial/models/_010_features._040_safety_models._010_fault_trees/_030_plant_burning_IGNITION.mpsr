@@ -18,7 +18,7 @@
       <concept id="6260256764176593194" name="com.fasten.safety.ft.structure.BasicEvent" flags="ng" index="21ATtL" />
       <concept id="4232349791877819920" name="com.fasten.safety.ft.structure.OrGate" flags="ng" index="cFNQA" />
       <concept id="1184758059395759180" name="com.fasten.safety.ft.structure.FailureRate" flags="ng" index="2roqtx">
-        <property id="1184758059396263958" name="failureRate" index="2rqmGV" />
+        <property id="1184758059396263958" name="lambda" index="2rqmGV" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -61,7 +61,7 @@
   </registry>
   <node concept="21ASy4" id="6qZV73vdqBY">
     <property role="TrG5h" value="_030_plant_burning_IGNITION" />
-    <property role="3GE5qa" value="_030_quantitative_fault_tree_analysis" />
+    <property role="3GE5qa" value="_030_quantitative_fault_tree_analysis.example_03_plant_burning" />
     <node concept="37mRI7" id="6qZV73vdqBZ" role="lGtFl">
       <node concept="37mRIm" id="6qZV73vdqC4" role="37mRID">
         <property role="37mO49" value="2953997395525873215" />

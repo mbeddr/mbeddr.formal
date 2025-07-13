@@ -266,7 +266,7 @@
     <property role="EcuMT" value="3213712147579799119" />
     <property role="3GE5qa" value="commands.print.minimal_cutsets" />
     <property role="TrG5h" value="PrintMinimalCutsets" />
-    <property role="34LRSv" value="print minimal cutsets" />
+    <property role="34LRSv" value="print minimal-cutsets" />
     <property role="R4oN_" value="prints the minimal cutsets" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2c2ooLv9Rs$" role="1TKVEi">
