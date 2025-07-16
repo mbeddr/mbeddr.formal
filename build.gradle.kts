@@ -563,7 +563,7 @@ tasks {
     }
 
     val produce_fasten_distribution_macos by registering(Zip::class) {
-	dependsOn(package_fasten_distribution_for_specific_platforms)
+	    dependsOn(package_fasten_distribution_for_specific_platforms)
         from(zipTree(artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Macos.zip")))
         destinationDirectory = artifactsDir
     }
@@ -729,11 +729,11 @@ publishing {
             artifactId = "win.rcp"
             artifact(tasks.named("produce_fasten_distribution_win"))
         }
-        create<MavenPublication>("FASTEN_LINUX_RCP") {
-           groupId = "fasten"
-           artifactId = "linux.rcp"
-           artifact(tasks.named("produce_fasten_distribution_linux"))
-        }
+    create<MavenPublication>("FASTEN_LINUX_RCP") {
+        groupId = "fasten"
+        artifactId = "linux.rcp"
+        artifact(tasks.named("produce_fasten_distribution_linux"))
+    }
 	create<MavenPublication>("FASTEN_MACOS_RCP") {
            groupId = "fasten"
            artifactId = "macos.rcp"
