@@ -31,7 +31,7 @@
       <concept id="4232349791877945006" name="com.fasten.safety.ft.structure.AndGate" flags="ng" index="cEgko" />
       <concept id="4232349791877819920" name="com.fasten.safety.ft.structure.OrGate" flags="ng" index="cFNQA" />
       <concept id="1184758059395759180" name="com.fasten.safety.ft.structure.FailureRate" flags="ng" index="2roqtx">
-        <property id="1184758059396263958" name="failureRate" index="2rqmGV" />
+        <property id="1184758059396263958" name="lambda" index="2rqmGV" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -74,7 +74,7 @@
   </registry>
   <node concept="21ASy4" id="2c2ooLvcwoc">
     <property role="TrG5h" value="_030_alarm_failure" />
-    <property role="3GE5qa" value="_030_quantitative_fault_tree_analysis" />
+    <property role="3GE5qa" value="_030_quantitative_fault_tree_analysis.example_01_alarm_failure" />
     <node concept="21ATtk" id="2c2ooLvcwod" role="3CrHoS">
       <property role="TrG5h" value="ALARM_FAILURE_TOP" />
     </node>
@@ -790,7 +790,7 @@
       <property role="TrG5h" value="ALARM" />
     </node>
     <node concept="21oswF" id="2c2ooLvcwpo" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvcwod" resolve="PLANT_LOSS_BY_BURNING" />
+      <ref role="21oszt" node="2c2ooLvcwod" resolve="ALARM_FAILURE_TOP" />
       <ref role="21oszj" node="2c2ooLvcwqE" resolve="ALARM" />
     </node>
     <node concept="cEgko" id="2c2ooLvcwqs" role="3CrHoS">
@@ -845,7 +845,7 @@
     </node>
     <node concept="21oswF" id="2c2ooLvcwr2" role="3CrHoS">
       <ref role="21oszt" node="2c2ooLvcwqE" resolve="ALARM" />
-      <ref role="21oszj" node="2c2ooLvcwqU" resolve="NOOP" />
+      <ref role="21oszj" node="2c2ooLvcwqU" resolve="NOOPA" />
     </node>
     <node concept="21ATtL" id="2c2ooLvcwr3" role="3CrHoS">
       <property role="TrG5h" value="ALARM_FAILURE" />
@@ -865,11 +865,11 @@
       </node>
     </node>
     <node concept="21oswF" id="2c2ooLvcwrd" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvcwqU" resolve="NOOP" />
+      <ref role="21oszt" node="2c2ooLvcwqU" resolve="NOOPA" />
       <ref role="21oszj" node="2c2ooLvcwr3" resolve="ALARM_FAILURE" />
     </node>
     <node concept="21oswF" id="2c2ooLvcwrg" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvcwqU" resolve="NOOP" />
+      <ref role="21oszt" node="2c2ooLvcwqU" resolve="NOOPA" />
       <ref role="21oszj" node="2c2ooLvcwr8" resolve="OPERATOR" />
     </node>
   </node>

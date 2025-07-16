@@ -2,11 +2,12 @@
 <model ref="r:0d8de557-bbe4-455a-a872-4eb6baf716c6(com.fasten.safety.ft.xfta_gen.structure)">
   <persistence version="9" />
   <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" implicit="true" />
+    <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -115,6 +116,7 @@
     <property role="TrG5h" value="LoadModel" />
     <property role="34LRSv" value="load model" />
     <property role="3GE5qa" value="commands" />
+    <property role="R4oN_" value="loads a model from file" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2MppyJmL3WO" role="1TKVEi">
       <property role="IQ2ns" value="3213712147578371892" />
@@ -264,7 +266,7 @@
     <property role="EcuMT" value="3213712147579799119" />
     <property role="3GE5qa" value="commands.print.minimal_cutsets" />
     <property role="TrG5h" value="PrintMinimalCutsets" />
-    <property role="34LRSv" value="print minimal cutsets" />
+    <property role="34LRSv" value="print minimal-cutsets" />
     <property role="R4oN_" value="prints the minimal cutsets" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="2c2ooLv9Rs$" role="1TKVEi">
@@ -433,6 +435,9 @@
     <node concept="PrWs8" id="2c2ooLv7x4z" role="PzmwI">
       <ref role="PrY4T" node="2c2ooLv7b3q" resolve="IComputeProbabilityOption" />
     </node>
+    <node concept="PrWs8" id="7JDlEF204QI" role="PzmwI">
+      <ref role="PrY4T" node="7JDlEF1V8FL" resolve="IComputeSensitivityOption" />
+    </node>
     <node concept="PrWs8" id="2c2ooLvacn1" role="PzmwI">
       <ref role="PrY4T" node="2c2ooLv9RwD" resolve="IPrintMinimalCutsetsOption" />
     </node>
@@ -459,6 +464,15 @@
     <node concept="PrWs8" id="2c2ooLv4moL" role="PzmwI">
       <ref role="PrY4T" node="5_mIHxj5uXZ" resolve="IBuildBDTOption" />
     </node>
+    <node concept="PrWs8" id="7JDlEF1ZTqx" role="PzmwI">
+      <ref role="PrY4T" node="7JDlEF1V8FL" resolve="IComputeSensitivityOption" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF203JT" role="PzmwI">
+      <ref role="PrY4T" node="2c2ooLv7b3q" resolve="IComputeProbabilityOption" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF203JU" role="PzmwI">
+      <ref role="PrY4T" node="2c2ooLv9RwD" resolve="IPrintMinimalCutsetsOption" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2c2ooLv7b3q">
     <property role="EcuMT" value="2522685996799930586" />
@@ -474,6 +488,177 @@
     <property role="TrG5h" value="IPrintMinimalCutsetsOption" />
     <node concept="PrWs8" id="2c2ooLv9RzU" role="PrDN$">
       <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF1FeFE">
+    <property role="EcuMT" value="8928763027632483050" />
+    <property role="3GE5qa" value="events.specs" />
+    <property role="TrG5h" value="GLM" />
+    <property role="R4oN_" value="pfd (gamma), failure rate (lambda), repair rate (mu)" />
+    <property role="34LRSv" value="GLM" />
+    <ref role="1TJDcQ" to="spwl:11L6MQb45$I" resolve="EventSpecBase" />
+    <node concept="1TJgyi" id="7JDlEF1FfZD" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027632488425" />
+      <property role="TrG5h" value="gamma" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF1FeFF" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027632483051" />
+      <property role="TrG5h" value="lambda" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF1Fgof" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027632489999" />
+      <property role="TrG5h" value="mu" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF1SArA">
+    <property role="EcuMT" value="8928763027635988198" />
+    <property role="3GE5qa" value="events.specs" />
+    <property role="TrG5h" value="PeriodicTest" />
+    <property role="R4oN_" value="periodically tested and repaired components" />
+    <property role="34LRSv" value="periodic-test" />
+    <ref role="1TJDcQ" to="spwl:11L6MQb45$I" resolve="EventSpecBase" />
+    <node concept="1TJgyi" id="7JDlEF1SArC" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027635988200" />
+      <property role="TrG5h" value="lambda" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF1SArB" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027635988199" />
+      <property role="TrG5h" value="tau" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF1SArD" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027635988201" />
+      <property role="TrG5h" value="theta" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF1V6CP">
+    <property role="EcuMT" value="8928763027636644405" />
+    <property role="3GE5qa" value="commands.compute.sensitivity" />
+    <property role="TrG5h" value="ComputeSensitivity" />
+    <property role="34LRSv" value="compute sensitivity" />
+    <property role="R4oN_" value="performs sensitivity analysis on a variable" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7JDlEF1V6CR" role="1TKVEi">
+      <property role="IQ2ns" value="8928763027636644407" />
+      <property role="20kJfa" value="variable" />
+      <ref role="20lvS9" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF1V6CS" role="PzmwI">
+      <ref role="PrY4T" node="2MppyJmL3W3" resolve="IXFTAScriptContent" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF1VGD4" role="PzmwI">
+      <ref role="PrY4T" node="2MppyJmQeUj" resolve="IGenerateOutput" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF1V6CU" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj8$EY" resolve="ICommandWithOptions" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF1V6CW" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027636644412" />
+      <property role="TrG5h" value="numberOfTries" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="7JDlEF203JV" role="1TKVEi">
+      <property role="IQ2ns" value="8928763027637943291" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="options" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7JDlEF1V8FL" resolve="IComputeSensitivityOption" />
+      <ref role="20ksaX" node="5_mIHxj8$EZ" resolve="options" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7JDlEF1V8FL">
+    <property role="EcuMT" value="8928763027636652785" />
+    <property role="TrG5h" value="IComputeSensitivityOption" />
+    <property role="3GE5qa" value="commands.compute.sensitivity" />
+    <node concept="PrWs8" id="7JDlEF1V8FM" role="PrDN$">
+      <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF1V9oj">
+    <property role="EcuMT" value="8928763027636655635" />
+    <property role="TrG5h" value="NumberOfTriesOption" />
+    <property role="34LRSv" value="number-of-tries" />
+    <property role="3GE5qa" value="options" />
+    <property role="R4oN_" value="number of tries taken by the Monte-Carlo simulation to compute the sensitivity" />
+    <ref role="1TJDcQ" node="2c2ooLv3w9J" resolve="PositiveRealValueOption" />
+    <node concept="PrWs8" id="7JDlEF1V9ok" role="PzmwI">
+      <ref role="PrY4T" node="7JDlEF1V8FL" resolve="IComputeSensitivityOption" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF1V9on" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj9Aj6" resolve="IAmUniqueOption" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF1WyHb">
+    <property role="EcuMT" value="8928763027637021515" />
+    <property role="3GE5qa" value="options.base" />
+    <property role="TrG5h" value="BooleanOption" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7JDlEF1WyHc" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj5uXY" resolve="IOptionBase" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF1XLPk" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027637345620" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF1XcYX">
+    <property role="EcuMT" value="8928763027637194685" />
+    <property role="TrG5h" value="PrintBasicEventSensitivityOption" />
+    <property role="34LRSv" value="print-basic-event-sensitivity" />
+    <property role="3GE5qa" value="options" />
+    <property role="R4oN_" value="prints the sensitivity of basic events" />
+    <ref role="1TJDcQ" node="7JDlEF1WyHb" resolve="BooleanOption" />
+    <node concept="PrWs8" id="7JDlEF1XcYY" role="PzmwI">
+      <ref role="PrY4T" node="7JDlEF1V8FL" resolve="IComputeSensitivityOption" />
+    </node>
+    <node concept="PrWs8" id="7JDlEF1XcYZ" role="PzmwI">
+      <ref role="PrY4T" node="5_mIHxj9Aj6" resolve="IAmUniqueOption" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF21C0$">
+    <property role="EcuMT" value="8928763027638353956" />
+    <property role="TrG5h" value="XFTAScriptPlainTextCommand" />
+    <property role="34LRSv" value="# plain text" />
+    <property role="R4oN_" value="uninterpreted plain text" />
+    <property role="3GE5qa" value="commands" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7JDlEF21C0_" role="PzmwI">
+      <ref role="PrY4T" node="2MppyJmL3W3" resolve="IXFTAScriptContent" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF21C0A" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027638353958" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JDlEF24t9R">
+    <property role="EcuMT" value="8928763027639095927" />
+    <property role="3GE5qa" value="events.specs" />
+    <property role="TrG5h" value="Weibull" />
+    <property role="34LRSv" value="Weibull" />
+    <property role="R4oN_" value="Weibull distribution" />
+    <ref role="1TJDcQ" to="spwl:11L6MQb45$I" resolve="EventSpecBase" />
+    <node concept="1TJgyi" id="7JDlEF24t9S" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027639095928" />
+      <property role="TrG5h" value="alpha" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF24t9T" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027639095929" />
+      <property role="TrG5h" value="beta" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7JDlEF24t9U" role="1TKVEl">
+      <property role="IQ2nx" value="8928763027639095930" />
+      <property role="TrG5h" value="t_0" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
 </model>

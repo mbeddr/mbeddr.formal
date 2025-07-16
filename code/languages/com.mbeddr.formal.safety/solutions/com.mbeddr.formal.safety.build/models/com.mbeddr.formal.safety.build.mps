@@ -3869,6 +3869,11 @@
             <ref role="3bR37D" node="2dsc7GndbM" resolve="com.mpsbasics.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1$TzEhkKht5" role="3bR37C">
+          <node concept="3bR9La" id="1$TzEhkKht6" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3fV34643kGS" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -8103,6 +8108,11 @@
         <node concept="1SiIV0" id="26E6nZcGXUC" role="3bR37C">
           <node concept="3bR9La" id="26E6nZcGXUD" role="1SiIV1">
             <ref role="3bR37D" to="al5i:lse_ua97Px" resolve="com.mbeddr.mpsutil.smodule.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6qZV73vtIof" role="3bR37C">
+          <node concept="3bR9La" id="6qZV73vtIog" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
           </node>
         </node>
       </node>
@@ -13956,11 +13966,14 @@
                 <property role="2Ry0Am" value="languages" />
                 <node concept="2Ry0Ak" id="3R_yAtWp7ax" role="2Ry0An">
                   <property role="2Ry0Am" value="com.fasten.safety.ft.xfta_gen" />
+                  <node concept="2Ry0Ak" id="1$TzEhkKlZQ" role="2Ry0An">
+                    <property role="2Ry0Am" value="source_gen" />
+                  </node>
                 </node>
               </node>
             </node>
             <node concept="3qWCbU" id="3R_yAtWp7az" role="3LXTna">
-              <property role="3qWCbO" value="icons/**, resources/**" />
+              <property role="3qWCbO" value="com/fasten/safety/ft/xfta_gen/structure/*.png" />
             </node>
           </node>
         </node>
@@ -13972,6 +13985,11 @@
         <node concept="1SiIV0" id="2c2ooLvfr4d" role="3bR37C">
           <node concept="3bR9La" id="2c2ooLvfr4e" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7JDlEF1NCAS" role="3bR37C">
+          <node concept="1Busua" id="7JDlEF1NCAT" role="1SiIV1">
+            <ref role="1Busuk" node="73rWdFZqGo8" resolve="com.fasten.safety.ft" />
           </node>
         </node>
       </node>
@@ -14800,22 +14818,6 @@
             </node>
           </node>
         </node>
-        <node concept="3rtmxn" id="3R_yAtWp3TZ" role="3bR31x">
-          <node concept="3LXTmp" id="3R_yAtWp3U0" role="3rtmxm">
-            <node concept="398BVA" id="3R_yAtWp3U1" role="3LXTmr">
-              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
-              <node concept="2Ry0Ak" id="3R_yAtWp3U2" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3R_yAtWp3U3" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.fasten.safety.ft.xfta.pluginSolution" />
-                </node>
-              </node>
-            </node>
-            <node concept="3qWCbU" id="3R_yAtWp3U5" role="3LXTna">
-              <property role="3qWCbO" value="icons/**" />
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="3R_yAtWp7Lp" role="3bR37C">
           <node concept="3bR9La" id="3R_yAtWp7Lq" role="1SiIV1">
             <ref role="3bR37D" node="3R_yAtWp53E" resolve="com.fasten.safety.ft.xfta_gen" />
@@ -14829,6 +14831,25 @@
         <node concept="1SiIV0" id="8xY_Ihvz22" role="3bR37C">
           <node concept="3bR9La" id="8xY_Ihvz23" role="1SiIV1">
             <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="1$TzEhkKrpo" role="3bR31x">
+          <node concept="3LXTmp" id="1$TzEhkKrpp" role="3rtmxm">
+            <node concept="398BVA" id="1$TzEhkKrpq" role="3LXTmr">
+              <ref role="398BVh" node="7he_lUurqtF" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="1$TzEhkKrpr" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="1$TzEhkKrps" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.fasten.safety.ft.xfta.pluginSolution" />
+                  <node concept="2Ry0Ak" id="1$TzEhkKrpt" role="2Ry0An">
+                    <property role="2Ry0Am" value="source_gen" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="1$TzEhkKrpu" role="3LXTna">
+              <property role="3qWCbO" value="com/fasten/safety/ft/xfta/pluginSolution/plugin/*.png" />
+            </node>
           </node>
         </node>
       </node>

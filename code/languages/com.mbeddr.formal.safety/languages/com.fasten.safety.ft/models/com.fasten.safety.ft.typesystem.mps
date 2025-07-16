@@ -43,6 +43,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -50,10 +51,14 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
+      </concept>
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
@@ -970,34 +975,127 @@
         <node concept="2OqwBi" id="2c2ooLv1764" role="2MkoU_">
           <node concept="2OqwBi" id="2c2ooLv15A3" role="2Oq$k0">
             <node concept="1YBJjd" id="2c2ooLv15qX" role="2Oq$k0">
-              <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="lambda" />
+              <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="failureRate" />
             </node>
             <node concept="3TrcHB" id="2c2ooLv15Nx" role="2OqNvi">
-              <ref role="3TsBF5" to="spwl:11L6MQb670m" resolve="failureRate" />
+              <ref role="3TsBF5" to="spwl:11L6MQb670m" resolve="lambda" />
             </node>
           </node>
           <node concept="liA8E" id="2c2ooLv18Rz" role="2OqNvi">
             <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-            <node concept="Xl_RD" id="2c2ooLv18Uu" role="37wK5m">
-              <property role="Xl_RC" value="[0-9]\\.[0-9]*([Ee][\\+\\-]?[0-9]+)?" />
+            <node concept="10M0yZ" id="7JDlEF1FlMH" role="37wK5m">
+              <ref role="3cqZAo" node="7JDlEF1Fl7U" resolve="RATE_REGEX" />
+              <ref role="1PxDUh" node="7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
             </node>
           </node>
         </node>
-        <node concept="Xl_RD" id="2c2ooLv1fMf" role="2MkJ7o">
-          <property role="Xl_RC" value="invalid format - expected '[0-9]\\.[0-9]*([Ee][\\+\\-]?[0-9]+)?'" />
+        <node concept="10M0yZ" id="7JDlEF1FpCw" role="2MkJ7o">
+          <ref role="3cqZAo" node="7JDlEF1FmhM" resolve="RATE_ERROR_MESSAGE" />
+          <ref role="1PxDUh" node="7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
         </node>
         <node concept="1YBJjd" id="2c2ooLv1g7o" role="1urrMF">
-          <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="lambda" />
+          <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="failureRate" />
         </node>
         <node concept="2ODE4t" id="2c2ooLv1gbW" role="1urrC5">
-          <ref role="2ODJFN" to="spwl:11L6MQb670m" resolve="failureRate" />
+          <ref role="2ODJFN" to="spwl:11L6MQb670m" resolve="lambda" />
         </node>
       </node>
     </node>
     <node concept="1YaCAy" id="2c2ooLv8DWT" role="1YuTPh">
-      <property role="TrG5h" value="lambda" />
+      <property role="TrG5h" value="failureRate" />
       <ref role="1YaFvo" to="spwl:11L6MQb4bLc" resolve="FailureRate" />
     </node>
+  </node>
+  <node concept="312cEu" id="7JDlEF1FkrK">
+    <property role="TrG5h" value="BaseEventSpecsCheckingUtils" />
+    <node concept="2tJIrI" id="7JDlEF1FkUE" role="jymVt" />
+    <node concept="Wx3nA" id="7JDlEF1Fl7U" role="jymVt">
+      <property role="TrG5h" value="RATE_REGEX" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7JDlEF1FkZF" role="1B3o_S" />
+      <node concept="17QB3L" id="7JDlEF1FlcY" role="1tU5fm" />
+      <node concept="Xl_RD" id="7JDlEF1Flro" role="33vP2m">
+        <property role="Xl_RC" value="[0-9]\\.[0-9]*([Ee][\\+\\-]?[0-9]+)?" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7JDlEF1FmhM" role="jymVt">
+      <property role="TrG5h" value="RATE_ERROR_MESSAGE" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7JDlEF1Fm2g" role="1B3o_S" />
+      <node concept="17QB3L" id="7JDlEF1Fmd8" role="1tU5fm" />
+      <node concept="3cpWs3" id="7JDlEF1FoUt" role="33vP2m">
+        <node concept="Xl_RD" id="7JDlEF1FoVd" role="3uHU7w">
+          <property role="Xl_RC" value="'" />
+        </node>
+        <node concept="3cpWs3" id="7JDlEF1FnyZ" role="3uHU7B">
+          <node concept="Xl_RD" id="7JDlEF1FmuA" role="3uHU7B">
+            <property role="Xl_RC" value="invalid format - expected '" />
+          </node>
+          <node concept="37vLTw" id="7JDlEF1FnCe" role="3uHU7w">
+            <ref role="3cqZAo" node="7JDlEF1Fl7U" resolve="RATE_REGEX" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7JDlEF1FlUZ" role="jymVt" />
+    <node concept="Wx3nA" id="7JDlEF1Fwso" role="jymVt">
+      <property role="TrG5h" value="ZERO_ONE_REGEX" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7JDlEF1Fwsp" role="1B3o_S" />
+      <node concept="17QB3L" id="7JDlEF1Fwsq" role="1tU5fm" />
+      <node concept="Xl_RD" id="7JDlEF1Fwsr" role="33vP2m">
+        <property role="Xl_RC" value="[0-1]\\.[0-9]+" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7JDlEF1Fxbl" role="jymVt">
+      <property role="TrG5h" value="ZERO_ONE_ERROR_MESSAGE" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7JDlEF1Fxbm" role="1B3o_S" />
+      <node concept="17QB3L" id="7JDlEF1Fxbn" role="1tU5fm" />
+      <node concept="3cpWs3" id="7JDlEF1Fxbo" role="33vP2m">
+        <node concept="Xl_RD" id="7JDlEF1Fxbp" role="3uHU7w">
+          <property role="Xl_RC" value="'" />
+        </node>
+        <node concept="3cpWs3" id="7JDlEF1Fxbq" role="3uHU7B">
+          <node concept="Xl_RD" id="7JDlEF1Fxbr" role="3uHU7B">
+            <property role="Xl_RC" value="invalid format - expected '" />
+          </node>
+          <node concept="37vLTw" id="7JDlEF1Fxbs" role="3uHU7w">
+            <ref role="3cqZAo" node="7JDlEF1Fwso" resolve="ZERO_ONE_REGEX" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7JDlEF24v1V" role="jymVt" />
+    <node concept="Wx3nA" id="7JDlEF24uKY" role="jymVt">
+      <property role="TrG5h" value="POSITIVE_REGEX" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7JDlEF24uKZ" role="1B3o_S" />
+      <node concept="17QB3L" id="7JDlEF24uL0" role="1tU5fm" />
+      <node concept="Xl_RD" id="7JDlEF24vCc" role="33vP2m">
+        <property role="Xl_RC" value="[0-9]+\\.[0-9]*([Ee][\\+\\-]?[0-9]+)?" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7JDlEF24uKQ" role="jymVt">
+      <property role="TrG5h" value="POSITIVE_ERROR_MESSAGE" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7JDlEF24uKR" role="1B3o_S" />
+      <node concept="17QB3L" id="7JDlEF24uKS" role="1tU5fm" />
+      <node concept="3cpWs3" id="7JDlEF24uKT" role="33vP2m">
+        <node concept="Xl_RD" id="7JDlEF24uKU" role="3uHU7w">
+          <property role="Xl_RC" value="'" />
+        </node>
+        <node concept="3cpWs3" id="7JDlEF24uKV" role="3uHU7B">
+          <node concept="Xl_RD" id="7JDlEF24uKW" role="3uHU7B">
+            <property role="Xl_RC" value="invalid format - expected '" />
+          </node>
+          <node concept="37vLTw" id="7JDlEF24uKX" role="3uHU7w">
+            <ref role="3cqZAo" node="7JDlEF24uKY" resolve="POSITIVE_REGEX" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="7JDlEF1FkrL" role="1B3o_S" />
   </node>
 </model>
 

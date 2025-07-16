@@ -13,6 +13,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="fazf" ref="r:28cb0bbd-efcb-4c9e-94f2-4ccc928adfb4(com.fasten.safety.ft.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -609,6 +610,33 @@
         </node>
       </node>
       <node concept="17QB3L" id="2c2ooLv5XgT" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="7JDlEF1WEI2">
+    <property role="3GE5qa" value="options.base" />
+    <ref role="13h7C2" to="a7wd:7JDlEF1WyHb" resolve="BooleanOption" />
+    <node concept="13hLZK" id="7JDlEF1WEI3" role="13h7CW">
+      <node concept="3clFbS" id="7JDlEF1WEI4" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7JDlEF1WEIl" role="13h7CS">
+      <property role="TrG5h" value="valueAsString" />
+      <ref role="13i0hy" node="5_mIHxj5afQ" resolve="valueAsString" />
+      <node concept="3Tm1VV" id="7JDlEF1WEIm" role="1B3o_S" />
+      <node concept="3clFbS" id="7JDlEF1WEIp" role="3clF47">
+        <node concept="3clFbF" id="7JDlEF1YljW" role="3cqZAp">
+          <node concept="2YIFZM" id="7JDlEF1YlkI" role="3clFbG">
+            <ref role="37wK5l" to="wyt6:~Boolean.toString(boolean)" resolve="toString" />
+            <ref role="1Pybhc" to="wyt6:~Boolean" resolve="Boolean" />
+            <node concept="2OqwBi" id="7JDlEF1XNAF" role="37wK5m">
+              <node concept="13iPFW" id="7JDlEF1XNni" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7JDlEF1XNZt" role="2OqNvi">
+                <ref role="3TsBF5" to="a7wd:7JDlEF1XLPk" resolve="value" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="7JDlEF1WEIq" role="3clF45" />
     </node>
   </node>
 </model>

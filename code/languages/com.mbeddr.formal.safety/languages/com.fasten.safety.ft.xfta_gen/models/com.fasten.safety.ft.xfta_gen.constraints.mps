@@ -189,5 +189,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7JDlEF1V8my">
+    <property role="3GE5qa" value="commands.compute.sensitivity" />
+    <ref role="1M2myG" to="a7wd:7JDlEF1V6CP" resolve="ComputeSensitivity" />
+    <node concept="1N5Pfh" id="7JDlEF1V8mz" role="1Mr941">
+      <ref role="1N5Vy1" to="a7wd:7JDlEF1V6CR" resolve="variable" />
+      <node concept="1dDu$B" id="7JDlEF1V8m$" role="1N6uqs">
+        <ref role="1dDu$A" to="spwl:5rwT_JnuR3U" resolve="FaultTreeElementBase" />
+      </node>
+    </node>
+  </node>
 </model>
 

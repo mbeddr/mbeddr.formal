@@ -7,6 +7,10 @@
       <concept id="6437538155643161278" name="com.fasten.safety.ft.xfta_gen.structure.ICommandWithOptions" flags="ngI" index="atf1A">
         <child id="6437538155643161279" name="options" index="atf1B" />
       </concept>
+      <concept id="8928763027636644405" name="com.fasten.safety.ft.xfta_gen.structure.ComputeSensitivity" flags="ng" index="2U1jMv">
+        <reference id="8928763027636644407" name="variable" index="2U1jMt" />
+      </concept>
+      <concept id="8928763027636655635" name="com.fasten.safety.ft.xfta_gen.structure.NumberOfTriesOption" flags="ng" index="2U1s2T" />
       <concept id="3213712147579727498" name="com.fasten.safety.ft.xfta_gen.structure.Output" flags="ng" index="3Ugoyx">
         <property id="3213712147579727499" name="fileName" index="3Ugoyw" />
         <property id="3213712147579799204" name="mode" index="3UgQ2f" />
@@ -44,33 +48,46 @@
       </concept>
     </language>
   </registry>
-  <node concept="3Unl$E" id="2MppyJmTn5z">
-    <property role="TrG5h" value="_030_plant_burning_script" />
-    <property role="3GE5qa" value="_030_quantitative_fault_tree_analysis.example_03_plant_burning" />
-    <node concept="3Unl$P" id="2MppyJmTn5$" role="3Unl$J">
-      <ref role="3Unl$v" node="2zYHfFNJUAN" resolve="_030_plant_burning" />
+  <node concept="3Unl$E" id="3NuP_opAGJZ">
+    <property role="3GE5qa" value="_030_quantitative_fault_tree_analysis.example_02_engine_overheating" />
+    <property role="TrG5h" value="_030_engine_overheating_analysis_script" />
+    <node concept="3Unl$P" id="3NuP_opAGK0" role="3Unl$J">
+      <ref role="3Unl$v" node="3NuP_opAGFG" resolve="_030_engine_overheating_analysis" />
     </node>
-    <node concept="3Unl_y" id="2MppyJmTn5_" role="3Unl$J" />
-    <node concept="3UniOE" id="2MppyJmTn5A" role="3Unl$J">
-      <ref role="3UniOC" node="2zYHfFNJUSM" resolve="PLANT_LOSS_BY_BURNING" />
+    <node concept="3Unl_y" id="3NuP_opAGK1" role="3Unl$J" />
+    <node concept="3UniOE" id="3NuP_opAGK2" role="3Unl$J">
+      <ref role="3UniOC" node="3NuP_opAGFJ" resolve="ENGINE_OVERHEATS" />
     </node>
-    <node concept="3Unl_R" id="2MppyJmTn5B" role="3Unl$J">
-      <ref role="3Unl_b" node="2zYHfFNJUSM" resolve="PLANT_LOSS_BY_BURNING" />
-      <node concept="3Ugoyx" id="2MppyJmTn5C" role="3UgoyZ">
-        <property role="3Ugoyw" value="_030_plant_burning_out.tsv" />
+    <node concept="3Unl_R" id="3NuP_opAGK3" role="3Unl$J">
+      <ref role="3Unl_b" node="3NuP_opAGFJ" resolve="ENGINE_OVERHEATS" />
+      <node concept="3Ugoyx" id="3NuP_opAGK4" role="3UgoyZ">
+        <property role="3Ugoyw" value="out.tsv" />
       </node>
-      <node concept="1W3sYI" id="2c2ooLvc5Hz" role="atf1B">
-        <property role="1W36fW" value="10" />
+      <node concept="1W3sYI" id="3NuP_opAGK5" role="atf1B">
+        <property role="1W36fW" value="1000" />
       </node>
     </node>
-    <node concept="3UgQ1$" id="2c2ooLvcwaA" role="3Unl$J">
-      <ref role="3UgQ2a" node="2zYHfFNJUSM" resolve="PLANT_LOSS_BY_BURNING" />
-      <node concept="3Ugoyx" id="2c2ooLvcwaC" role="3UgoyZ">
-        <property role="3Ugoyw" value="_030_plant_burning_out.tsv" />
+    <node concept="3UgQ1$" id="3NuP_opAHsZ" role="3Unl$J">
+      <ref role="3UgQ2a" node="3NuP_opAGFJ" resolve="ENGINE_OVERHEATS" />
+      <node concept="1W3sYI" id="3NuP_opAHt1" role="atf1B">
+        <property role="1W36fW" value="1000" />
+      </node>
+      <node concept="3Ugoyx" id="3NuP_opAHt2" role="3UgoyZ">
+        <property role="3Ugoyw" value="out.tsv" />
         <property role="3UgQ2f" value="2MppyJmQwqA/append" />
       </node>
-      <node concept="1W3sYI" id="1$TzEhkJZ$b" role="atf1B">
-        <property role="1W36fW" value="10" />
+    </node>
+    <node concept="2U1jMv" id="7JDlEF272oe" role="3Unl$J">
+      <ref role="2U1jMt" node="3NuP_opAGFJ" resolve="ENGINE_OVERHEATS" />
+      <node concept="2U1s2T" id="7JDlEF272og" role="atf1B">
+        <property role="1W36fW" value="1000" />
+      </node>
+      <node concept="1W3sYI" id="7JDlEF272oh" role="atf1B">
+        <property role="1W36fW" value="1000" />
+      </node>
+      <node concept="3Ugoyx" id="7JDlEF272oi" role="3UgoyZ">
+        <property role="3Ugoyw" value="out.tsv" />
+        <property role="3UgQ2f" value="2MppyJmQwqA/append" />
       </node>
     </node>
   </node>
