@@ -246,7 +246,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="unsafeActions" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1JhvKLLO08z" resolve="UnsafeControlAction" />
+      <ref role="20lvS9" node="1JhvKLLO08z" resolve="UnsafeControllerAction" />
     </node>
     <node concept="1TJgyj" id="1JhvKLLO08x" role="1TKVEi">
       <property role="IQ2ns" value="2004523000582373921" />

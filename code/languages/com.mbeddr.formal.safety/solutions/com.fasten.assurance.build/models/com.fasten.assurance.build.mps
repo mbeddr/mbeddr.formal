@@ -580,7 +580,7 @@
         <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
       </node>
       <node concept="m$_yC" id="5mv1DnKbokD" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" />
+        <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" resolve="jetbrains.mps.trove" />
       </node>
     </node>
     <node concept="m$_wf" id="2MrvZqtGPGn" role="3989C9">
@@ -640,7 +640,7 @@
         <ref role="m$_y1" to="al5i:$bJ0jguQdg" resolve="com.mbeddr.platform" />
       </node>
       <node concept="m$_yC" id="5mv1DnKblAF" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" />
+        <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" resolve="jetbrains.mps.trove" />
       </node>
       <node concept="3_J27D" id="6hyv0iVPlET" role="m$_yQ">
         <node concept="3Mxwew" id="6hyv0iVPlH8" role="3MwsjC">

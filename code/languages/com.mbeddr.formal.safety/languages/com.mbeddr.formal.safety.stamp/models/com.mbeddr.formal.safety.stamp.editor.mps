@@ -1487,7 +1487,7 @@
   </node>
   <node concept="24kQdi" id="1JhvKLLO0pO">
     <property role="3GE5qa" value="baseLanguage.analysis" />
-    <ref role="1XX52x" to="bewr:1JhvKLLO08z" resolve="UnsafeControlAction" />
+    <ref role="1XX52x" to="bewr:1JhvKLLO08z" resolve="UnsafeControllerAction" />
     <node concept="2r0Tta" id="1JhvKLLO0pQ" role="2wV5jI">
       <node concept="2reCLk" id="1JhvKLLO0pT" role="2r0Tv6">
         <node concept="2reCLy" id="1JhvKLLO0pV" role="2reCL6">
@@ -1550,7 +1550,7 @@
                       <node concept="2Xjw5R" id="6qZV73vndGI" role="2OqNvi">
                         <node concept="1xMEDy" id="6qZV73vndGJ" role="1xVPHs">
                           <node concept="chp4Y" id="6qZV73vndGK" role="ri$Ld">
-                            <ref role="cht4Q" to="bewr:1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
+                            <ref role="cht4Q" to="bewr:1JhvKLLO08a" resolve="UnsafeControlActionAnalysis" />
                           </node>
                         </node>
                       </node>
