@@ -8,7 +8,6 @@
     <use id="31c91def-a131-41a1-9018-102874f49a12" name="de.slisson.mps.editor.multiline" version="0" />
     <use id="7e450f4e-1ac3-41ef-a851-4598161bdb94" name="de.slisson.mps.tables" version="0" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -23,13 +22,13 @@
     <import index="95j3" ref="r:b59c48c6-3515-4a72-8146-4b8c723b8307(com.mbeddr.formal.base.diagram_utils)" />
     <import index="bewr" ref="r:a5d87024-d7b0-459e-b0ec-a9c089196f41(com.mbeddr.formal.safety.stamp.structure)" />
     <import index="xm38" ref="r:d81a00b5-7941-4066-9929-d2d2283d4215(com.mbeddr.formal.base.tooling.vcs)" />
+    <import index="a6vc" ref="r:e6f4512f-409a-4a84-b8a1-33fc1cc8fd1f(com.mbeddr.formal.safety.stamp.behavior)" />
     <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="r3rm" ref="r:7fc96130-6279-4a55-aeeb-422a6879539d(de.itemis.mps.editor.diagram.runtime.jgraph)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="a6vc" ref="r:e6f4512f-409a-4a84-b8a1-33fc1cc8fd1f(com.mbeddr.formal.safety.stamp.behavior)" implicit="true" />
     <import index="1njx" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:com.mxgraph.view(de.itemis.mps.editor.diagram.runtime/)" implicit="true" />
   </imports>
   <registry>
@@ -902,11 +901,11 @@
       <node concept="3EZMnI" id="5t7SqsaptNX" role="3EZMnx">
         <node concept="l2Vlx" id="5t7SqsaptNY" role="2iSdaV" />
         <node concept="3F0ifn" id="5t7SqsaptNZ" role="3EZMnx">
-          <property role="3F0ifm" value="Responsabilities:" />
+          <property role="3F0ifm" value="Responsibilities:" />
         </node>
         <node concept="3EZMnI" id="5t7SqsaqgNq" role="3EZMnx">
           <node concept="3F2HdR" id="5t7SqsaqgNy" role="3EZMnx">
-            <ref role="1NtTu8" to="bewr:5t7Sqsap4BI" resolve="responsabilities" />
+            <ref role="1NtTu8" to="bewr:5t7Sqsap4BI" resolve="responsibilities" />
             <node concept="2iRkQZ" id="5t7SqsaqgN$" role="2czzBx" />
           </node>
           <node concept="2iRkQZ" id="5t7SqsaqgNt" role="2iSdaV" />
@@ -929,6 +928,13 @@
         </node>
       </node>
       <node concept="1PNbMa" id="2ccN23oa9F_" role="1PN8qh">
+        <node concept="2xQOud" id="3Cm$$O2uNfe" role="1PNbKK">
+          <ref role="2xQOue" node="7z30MUmeewT" resolve="ArrowHead" />
+          <node concept="3cmrfG" id="3Cm$$O2uNfp" role="1xbcaF">
+            <property role="3cmrfH" value="1" />
+          </node>
+          <node concept="3clFbT" id="3Cm$$O2uNkI" role="1xbcaF" />
+        </node>
         <node concept="23hSZX" id="2ccN23oaa7_" role="ljJml">
           <node concept="2OqwBi" id="2ccN23oaagi" role="23hSWE">
             <node concept="1Pxb5l" id="3HVC1H6WJhV" role="2Oq$k0" />
@@ -936,13 +942,6 @@
               <ref role="3Tt5mk" to="bewr:3Cm$$O2us9a" resolve="target" />
             </node>
           </node>
-        </node>
-        <node concept="2xQOud" id="3Cm$$O2uNfe" role="1PNbKK">
-          <ref role="2xQOue" node="7z30MUmeewT" resolve="ArrowHead" />
-          <node concept="3cmrfG" id="3Cm$$O2uNfp" role="1xbcaF">
-            <property role="3cmrfH" value="1" />
-          </node>
-          <node concept="3clFbT" id="3Cm$$O2uNkI" role="1xbcaF" />
         </node>
       </node>
       <node concept="KXoZh" id="2ccN23oaUMV" role="KYgL9">
@@ -1407,7 +1406,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="1JhvKLLO08D">
-    <ref role="1XX52x" to="bewr:1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
+    <ref role="1XX52x" to="bewr:1JhvKLLO08a" resolve="UnsafeControlActionAnalysis" />
     <node concept="3EZMnI" id="1JhvKLLO08I" role="2wV5jI">
       <node concept="PMmxH" id="1JhvKLLO08P" role="3EZMnx">
         <ref role="PMmxG" to="1ks0:4gtLUSMLjsp" resolve="HeaderComponent" />
@@ -1416,7 +1415,7 @@
       <node concept="3EZMnI" id="1JhvKLLOic6" role="3EZMnx">
         <node concept="VPM3Z" id="1JhvKLLOic8" role="3F10Kt" />
         <node concept="3F0ifn" id="1JhvKLLOica" role="3EZMnx">
-          <property role="3F0ifm" value="Unsafe Control Analysis for Control Structure:" />
+          <property role="3F0ifm" value="Unsafe Control Action Analysis for Control Structure:" />
           <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="1iCGBv" id="1JhvKLLOico" role="3EZMnx">
@@ -1522,7 +1521,7 @@
                       <node concept="2Xjw5R" id="2ynKV3BEar6" role="2OqNvi">
                         <node concept="1xMEDy" id="2ynKV3BEar8" role="1xVPHs">
                           <node concept="chp4Y" id="2ynKV3BEav8" role="ri$Ld">
-                            <ref role="cht4Q" to="bewr:1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
+                            <ref role="cht4Q" to="bewr:1JhvKLLO08a" resolve="UnsafeControlActionAnalysis" />
                           </node>
                         </node>
                       </node>
@@ -1551,7 +1550,7 @@
                       <node concept="2Xjw5R" id="6qZV73vndGI" role="2OqNvi">
                         <node concept="1xMEDy" id="6qZV73vndGJ" role="1xVPHs">
                           <node concept="chp4Y" id="6qZV73vndGK" role="ri$Ld">
-                            <ref role="cht4Q" to="bewr:1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
+                            <ref role="cht4Q" to="bewr:1JhvKLLO08a" resolve="UnsafeControlActionAnalysis" />
                           </node>
                         </node>
                       </node>

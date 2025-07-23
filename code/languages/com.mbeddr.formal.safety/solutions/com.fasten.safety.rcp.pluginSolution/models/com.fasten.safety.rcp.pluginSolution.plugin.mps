@@ -1196,7 +1196,7 @@
                   <property role="Xl_RC" value="Unsafe Control Analysis" />
                 </node>
                 <node concept="35c_gC" id="7A06dcUGK0A" role="2J__8u">
-                  <ref role="35c_gD" to="bewr:1JhvKLLO08a" resolve="UnsafeControlAnalysis" />
+                  <ref role="35c_gD" to="bewr:1JhvKLLO08a" resolve="UnsafeControlActionAnalysis" />
                 </node>
                 <node concept="37shsh" id="7A06dcUGK0B" role="2J__8u">
                   <node concept="1dCxOk" id="7A06dcUGK0C" role="37shsm">
