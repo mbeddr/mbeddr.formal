@@ -132,3 +132,9 @@ jobs:
           -Pgpr.user=${{ github.actor }} \
           -Pgpr.token=${{ secrets.GITHUB_TOKEN }} \
 
+    - name: Publish FASTEN-MacOS RCPs to Github Packages
+      run: |
+        ./gradlew publishFASTEN_MACOS_RCPPublicationToGitHubPackagesRepository \
+          -Pgpr.user=${{ github.actor }} \
+          -Pgpr.token=${{ secrets.GITHUB_TOKEN }} \
+
