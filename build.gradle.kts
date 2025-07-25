@@ -729,7 +729,7 @@ publishing {
         create<MavenPublication>("FASTEN_WIN_RCP") {
             groupId = "fasten"
             artifactId = "win.rcp"
-            artifact(tasks.named<Zip>("produce_fasten_distribution_win").flatMap { it.archiveFile })
+            artifact(tasks.named("produce_fasten_distribution_win"))
         }
         create<MavenPublication>("FASTEN_LINUX_RCP") {
             groupId = "fasten"
@@ -739,8 +739,8 @@ publishing {
         create<MavenPublication>("FASTEN_MACOS_RCP") {
             groupId = "fasten"
             artifactId = "macos.rcp"
-            artifact(tasks.named<Zip>("produce_fasten_distribution_macos").flatMap { it.archiveFile })
-    }
+            artifact(tasks.named("produce_fasten_distribution_macos"))
+        }
     }
 }
 
