@@ -230,7 +230,7 @@
         </node>
       </node>
       <node concept="0mxsP" id="2N7iSwGBo2l" role="1QQeAC">
-        <ref role="2rfAiQ" node="57$lt3aQGuy" />
+        <ref role="2rfAiQ" node="57$lt3aQGuy" resolve="traffic_lights_controller" />
       </node>
       <node concept="19SGf9" id="2fmnPVfeppB" role="1QQeG9">
         <node concept="19SUe$" id="2fmnPVfeppC" role="19SJt6">
@@ -250,19 +250,19 @@
               <property role="19SUeA" value="The cars semaphore has the following colors: " />
             </node>
             <node concept="0m3kX" id="2N7iSwGBWni" role="19SJt6">
-              <ref role="0m3iP" node="2N7iSwGBRUG" />
+              <ref role="0m3iP" node="2N7iSwGBRUG" resolve="RED" />
             </node>
             <node concept="19SUe$" id="2N7iSwGBWnj" role="19SJt6">
               <property role="19SUeA" value=", " />
             </node>
             <node concept="0m3kX" id="2N7iSwGCJau" role="19SJt6">
-              <ref role="0m3iP" node="2N7iSwGBRUI" />
+              <ref role="0m3iP" node="2N7iSwGBRUI" resolve="GREEN" />
             </node>
             <node concept="19SUe$" id="2N7iSwGCJav" role="19SJt6">
               <property role="19SUeA" value=" and " />
             </node>
             <node concept="0m3kX" id="2N7iSwGCJa_" role="19SJt6">
-              <ref role="0m3iP" node="2N7iSwGBRUL" />
+              <ref role="0m3iP" node="2N7iSwGBRUL" resolve="YELLOW" />
             </node>
             <node concept="19SUe$" id="2N7iSwGCJaA" role="19SJt6" />
           </node>
@@ -309,7 +309,7 @@
         </node>
       </node>
       <node concept="0mxsP" id="71RA3dHzBNr" role="1QQeAC">
-        <ref role="2rfAiQ" node="57$lt3aQGvg" />
+        <ref role="2rfAiQ" node="57$lt3aQGvg" resolve="merger" />
       </node>
       <node concept="1QQeAL" id="71RA3dHzBRG" role="1QQeAC" />
     </node>
@@ -322,13 +322,13 @@
         <node concept="JlCpM" id="57$lt3aQGu$" role="32O2ov">
           <property role="TrG5h" value="cars_light" />
           <node concept="32Ogvo" id="57$lt3aQGu_" role="1zoetD">
-            <ref role="32Ogvr" node="57$lt3aQGuC" />
+            <ref role="32Ogvr" node="57$lt3aQGuC" resolve="pedestrian_req" />
           </node>
         </node>
         <node concept="JlCpM" id="57$lt3aQGuA" role="32O2ov">
           <property role="TrG5h" value="pedestrians_light" />
           <node concept="32Ogvo" id="57$lt3aQGuB" role="1zoetD">
-            <ref role="32Ogvr" node="57$lt3aQGuC" />
+            <ref role="32Ogvr" node="57$lt3aQGuC" resolve="pedestrian_req" />
           </node>
         </node>
       </node>
@@ -344,10 +344,10 @@
           <property role="TrG5h" value="out" />
           <node concept="2HbMDt" id="57$lt3aQGvj" role="1zoetD">
             <node concept="32Ogvo" id="57$lt3aQGvk" role="2H9Ial">
-              <ref role="32Ogvr" node="57$lt3aQGvo" />
+              <ref role="32Ogvr" node="57$lt3aQGvo" resolve="right" />
             </node>
             <node concept="32Ogvo" id="57$lt3aQGvl" role="2H9Iav">
-              <ref role="32Ogvr" node="57$lt3aQGvm" />
+              <ref role="32Ogvr" node="57$lt3aQGvm" resolve="left" />
             </node>
           </node>
         </node>
@@ -450,22 +450,22 @@
             </node>
           </node>
           <node concept="0Sh09" id="34jvijxxTF7" role="lGtFl">
-            <ref role="0Sh0a" node="34jvijxxTyO" />
+            <ref role="0Sh0a" node="34jvijxxTyO" resolve="ID_03.01" />
           </node>
         </node>
       </node>
       <node concept="2aiEES" id="34jvijxxTzq" role="2HcbjO">
         <node concept="2HfkAV" id="34jvijxxTzr" role="2HfkAP">
           <node concept="1tTNRl" id="34jvijxxTzs" role="2He$ia">
-            <ref role="1tTNPH" node="34jvijxxTzm" />
+            <ref role="1tTNPH" node="34jvijxxTzm" resolve="system_state" />
           </node>
           <node concept="1tS8IT" id="34jvijxxTzt" role="2He$i0">
-            <ref role="1tS8HL" node="34jvijxxTzl" />
+            <ref role="1tS8HL" node="34jvijxxTzl" resolve="startup" />
           </node>
         </node>
         <node concept="1tTNHs" id="34jvijxxTzu" role="2HfkAP">
           <node concept="1tTNRl" id="34jvijxxTzv" role="2He$ia">
-            <ref role="1tTNPH" node="34jvijxxTzm" />
+            <ref role="1tTNPH" node="34jvijxxTzm" resolve="system_state" />
           </node>
           <node concept="1tTNP8" id="34jvijxxTzw" role="2He$i0">
             <node concept="1IK9QF" id="34jvijxxTzx" role="2H9I2x" />

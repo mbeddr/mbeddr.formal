@@ -24,7 +24,7 @@
     <property role="3GE5qa" value="" />
     <property role="TrG5h" value="_operations_argument" />
     <node concept="lzd_b" id="4dQiu9mZfd9" role="lzdCV">
-      <ref role="lzdxS" node="2K8T9FD55qB" />
+      <ref role="lzdxS" node="2K8T9FD55qB" resolve="OCP1" />
     </node>
   </node>
 </model>

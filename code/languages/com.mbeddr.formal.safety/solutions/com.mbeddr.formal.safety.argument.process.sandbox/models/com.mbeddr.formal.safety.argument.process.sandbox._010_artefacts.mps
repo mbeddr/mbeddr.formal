@@ -43,7 +43,7 @@
         <child id="1574221925581155720" name="persons" index="UfqW8" />
         <child id="1639692281461243285" name="roleDefinitions" index="1vGMr$" />
       </concept>
-      <concept id="1574221925581136306" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.IArtefactElement" flags="ng" index="UfucM">
+      <concept id="1574221925581136306" name="com.mbeddr.formal.safety.argument.process.artefacts.structure.IArtefactElement" flags="ngI" index="UfucM">
         <property id="1574221925581155631" name="id" index="UfqYJ" />
         <child id="1574221925581136309" name="description" index="UfucP" />
       </concept>
@@ -194,22 +194,22 @@
       <property role="1vG6uU" value="Lucky" />
       <property role="1vG6ux" value="Luke" />
       <node concept="1vGMo9" id="3sgpJkb4cfw" role="1vGMrz">
-        <ref role="1vGMo8" node="3sgpJkb4cfl" />
+        <ref role="1vGMo8" node="3sgpJkb4cfl" resolve="ceo" />
       </node>
     </node>
   </node>
   <node concept="UfqZI" id="3sgpJkb47kl">
     <property role="TrG5h" value="Department" />
-    <ref role="UfgC$" node="3sgpJkb47ki" />
+    <ref role="UfgC$" node="3sgpJkb47ki" resolve="Company" />
     <node concept="UfqZF" id="3sgpJkb47kr" role="UfqW8">
       <property role="UfqYJ" value="1000" />
       <property role="1vG6uU" value="John" />
       <property role="1vG6ux" value="Safran" />
       <node concept="1vGMo9" id="3sgpJkb47kt" role="1vGMrz">
-        <ref role="1vGMo8" node="3sgpJkb47km" />
+        <ref role="1vGMo8" node="3sgpJkb47km" resolve="safety expert" />
       </node>
       <node concept="1vGMo9" id="3sgpJkb47kv" role="1vGMrz">
-        <ref role="1vGMo8" node="3sgpJkb47ko" />
+        <ref role="1vGMo8" node="3sgpJkb47ko" resolve="safety manager" />
       </node>
     </node>
     <node concept="1vGMor" id="3sgpJkb47km" role="1vGMr$">

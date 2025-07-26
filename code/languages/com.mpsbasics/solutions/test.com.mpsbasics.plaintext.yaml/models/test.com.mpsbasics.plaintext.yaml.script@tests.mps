@@ -111,7 +111,7 @@
       <concept id="4586453272396561802" name="com.mpsbasics.plaintext.yaml.structure.NodeTuple" flags="ng" index="2ZIqtT" />
       <concept id="2329970662260264399" name="com.mpsbasics.plaintext.yaml.structure.EndOfLine" flags="ng" index="3tjRCR" />
       <concept id="2329970662258960890" name="com.mpsbasics.plaintext.yaml.structure.Space" flags="ng" index="3tkPS2" />
-      <concept id="2329970662258960893" name="com.mpsbasics.plaintext.yaml.structure.IYamlHierarchicalToken" flags="ng" index="3tkPS5">
+      <concept id="2329970662258960893" name="com.mpsbasics.plaintext.yaml.structure.IYamlHierarchicalToken" flags="ngI" index="3tkPS5">
         <child id="2329970662258960894" name="childTokens" index="3tkPS6" />
       </concept>
       <concept id="2329970662258929798" name="com.mpsbasics.plaintext.yaml.structure.YamlFile" flags="ng" index="3tkWtY" />
@@ -150,7 +150,7 @@
               <ref role="ehGHo" to="bpzl:21lHZzX1B26" resolve="YamlFile" />
             </node>
             <node concept="1HAH1G" id="VNqGeRK83n" role="33vP2m">
-              <ref role="2qTbeR" node="VNqGeRGLCu" />
+              <ref role="2qTbeR" node="VNqGeRGLCu" resolve="lifted_yaml_file" />
             </node>
           </node>
         </node>
@@ -161,7 +161,7 @@
               <ref role="ehGHo" to="bpzl:21lHZzX1B26" resolve="YamlFile" />
             </node>
             <node concept="1HAH1G" id="2NBvRaDsWDS" role="33vP2m">
-              <ref role="2qTbeR" node="2NBvRaDsVUj" />
+              <ref role="2qTbeR" node="2NBvRaDsVUj" resolve="raw_yaml_file" />
             </node>
           </node>
         </node>

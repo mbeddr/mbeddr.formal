@@ -409,16 +409,16 @@
       <property role="TrG5h" value="check inspection &#10;status of crane" />
     </node>
     <node concept="355BHh" id="2K8T9FD9u5l" role="354S_3">
-      <ref role="354V5o" node="2K8T9FD82wE" />
-      <ref role="354V5p" node="2K8T9FD8ocw" />
+      <ref role="354V5o" node="2K8T9FD82wE" resolve="Structural &#10;failure&#10;of crane" />
+      <ref role="354V5p" node="2K8T9FD8ocw" resolve="check inspection &#10;status of crane" />
     </node>
     <node concept="355BHh" id="2K8T9FDuFW_" role="354S_3">
-      <ref role="354V5o" node="2K8T9FDabUC" />
-      <ref role="354V5p" node="2K8T9FDdmPO" />
+      <ref role="354V5o" node="2K8T9FDabUC" resolve="hazard" />
+      <ref role="354V5p" node="2K8T9FDdmPO" resolve="Fahrzeug-&#10;geschwindigkskeits-&#10;profil begrenzen" />
     </node>
     <node concept="355BHh" id="2K8T9FDuFWA" role="354S_3">
-      <ref role="354V5o" node="2K8T9FDdmPO" />
-      <ref role="354V5p" node="2K8T9FDdEEW" />
+      <ref role="354V5o" node="2K8T9FDdmPO" resolve="Fahrzeug-&#10;geschwindigkskeits-&#10;profil begrenzen" />
+      <ref role="354V5p" node="2K8T9FDdEEW" resolve="severe injury&#10;of worker" />
     </node>
     <node concept="354V5t" id="2K8T9FDabUC" role="354S_2">
       <property role="TrG5h" value="hazard" />
@@ -433,12 +433,12 @@
       <property role="TrG5h" value="pre-lift crane&#10;check" />
     </node>
     <node concept="355BHh" id="2K8T9FDvqOp" role="354S_3">
-      <ref role="354V5o" node="2K8T9FD8ocw" />
-      <ref role="354V5p" node="2K8T9FDvqO6" />
+      <ref role="354V5o" node="2K8T9FD8ocw" resolve="check inspection &#10;status of crane" />
+      <ref role="354V5p" node="2K8T9FDvqO6" resolve="pre-lift crane&#10;check" />
     </node>
     <node concept="355BHh" id="2K8T9FDvqOw" role="354S_3">
-      <ref role="354V5o" node="2K8T9FDvqO6" />
-      <ref role="354V5p" node="2K8T9FDabUC" />
+      <ref role="354V5o" node="2K8T9FDvqO6" resolve="pre-lift crane&#10;check" />
+      <ref role="354V5p" node="2K8T9FDabUC" resolve="hazard" />
     </node>
     <node concept="354V5v" id="2fmOBL3W4_5" role="354S_2" />
     <node concept="355B_$" id="2fmOBL3W4_c" role="354S_2">
@@ -446,7 +446,7 @@
     </node>
     <node concept="355BHh" id="2fmOBL3W4_r" role="354S_3">
       <ref role="354V5o" node="2fmOBL3W4_5" />
-      <ref role="354V5p" node="2fmOBL3W4_c" />
+      <ref role="354V5p" node="2fmOBL3W4_c" resolve="b1" />
     </node>
     <node concept="354V5t" id="2fmOBL3W4_w" role="354S_2">
       <property role="TrG5h" value="some&#10;name" />
@@ -456,8 +456,8 @@
       <property role="TrG5h" value="b2&#10;b3" />
     </node>
     <node concept="355BHh" id="2fmOBL3WoHm" role="354S_3">
-      <ref role="354V5o" node="2fmOBL3W4_c" />
-      <ref role="354V5p" node="2K8T9FDabUC" />
+      <ref role="354V5o" node="2fmOBL3W4_c" resolve="b1" />
+      <ref role="354V5p" node="2K8T9FDabUC" resolve="hazard" />
     </node>
     <node concept="354V5t" id="4rVENofPpU7" role="354S_2">
       <property role="TrG5h" value="ee" />
@@ -468,18 +468,18 @@
     </node>
     <node concept="355BHh" id="4rVENofQ75Y" role="354S_3">
       <ref role="354V5o" node="4rVENofPpUe" />
-      <ref role="354V5p" node="4rVENofPpU7" />
+      <ref role="354V5p" node="4rVENofPpU7" resolve="ee" />
     </node>
     <node concept="355BHh" id="4rVENofQAuk" role="354S_3">
-      <ref role="354V5o" node="2fmOBL3W4_w" />
-      <ref role="354V5p" node="2fmOBL3W4_Z" />
+      <ref role="354V5o" node="2fmOBL3W4_w" resolve="some&#10;name" />
+      <ref role="354V5p" node="2fmOBL3W4_Z" resolve="b2&#10;b3" />
     </node>
     <node concept="355BHh" id="4rVENofQKwb" role="354S_3">
-      <ref role="354V5o" node="4rVENofPpUl" />
+      <ref role="354V5o" node="4rVENofPpUl" resolve="start" />
       <ref role="354V5p" node="4rVENofPpUe" />
     </node>
     <node concept="355BHh" id="1DBxgaUekGl" role="354S_3">
-      <ref role="354V5o" node="2fmOBL3W4_Z" />
+      <ref role="354V5o" node="2fmOBL3W4_Z" resolve="b2&#10;b3" />
       <ref role="354V5p" node="2fmOBL3W4_S" />
     </node>
   </node>

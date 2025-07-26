@@ -57,7 +57,7 @@
       <concept id="4266958635905286484" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureElementBase" flags="ng" index="2vnc$h">
         <child id="4266958635905312315" name="text" index="2vnaTY" />
       </concept>
-      <concept id="8242542213102376275" name="com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution" flags="ng" index="2wgB4F">
+      <concept id="8242542213102376275" name="com.mbeddr.formal.safety.gsn.structure.IUpdateableSolution" flags="ngI" index="2wgB4F">
         <property id="4946522816140915512" name="hashCode" index="1_P2tN" />
         <property id="4946522816140921955" name="dateShort" index="1_P5wC" />
         <property id="4946522816140921857" name="success" index="1_P5xa" />

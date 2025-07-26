@@ -22,7 +22,7 @@
       <concept id="3731513482756195661" name="com.mbeddr.formal.safety.argument.process.structure.Standard" flags="ng" index="3dyRFK">
         <child id="3731513482756244090" name="clauses" index="3dzbR7" />
       </concept>
-      <concept id="3731513482756195662" name="com.mbeddr.formal.safety.argument.process.structure.IBibliographyEntry" flags="ng" index="3dyRFN">
+      <concept id="3731513482756195662" name="com.mbeddr.formal.safety.argument.process.structure.IBibliographyEntry" flags="ngI" index="3dyRFN">
         <property id="3731513482756243948" name="publicationYear" index="3dzbTh" />
         <property id="3731513482756243946" name="longTitle" index="3dzbTn" />
         <child id="3656193140038440757" name="ressources" index="GyRXZ" />
@@ -94,13 +94,13 @@
       <concept id="3656193140039049882" name="com.mbeddr.formal.base.structure.OpenableAbstractFilePicker" flags="ng" index="GwwFg">
         <child id="3656193140039049883" name="filePicker" index="GwwFh" />
       </concept>
-      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ng" index="2U2l5L">
+      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ngI" index="2U2l5L">
         <child id="7402587364850275470" name="attributes" index="2U2l5M" />
       </concept>
       <concept id="3687474483974639519" name="com.mbeddr.formal.base.structure.GenericAttributeAnnotationProviderBase" flags="ng" index="2Wz8ku">
         <property id="3687474483974749023" name="attributeConceptNodeID" index="2Wzj7u" />
       </concept>
-      <concept id="3687474483974128093" name="com.mbeddr.formal.base.structure.IAnnotationProvidersContainer" flags="ng" index="2WHcHs">
+      <concept id="3687474483974128093" name="com.mbeddr.formal.base.structure.IAnnotationProvidersContainer" flags="ngI" index="2WHcHs">
         <child id="3687474483974128095" name="annotationProviders" index="2WHcHu" />
       </concept>
     </language>
@@ -1312,8 +1312,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="3f8ZVRYhojh" role="2vhqc$">
-      <ref role="3VeSjP" node="3f8ZVRYhoje" />
-      <ref role="3VeSjQ" node="3f8ZVRYhojg" />
+      <ref role="3VeSjP" node="3f8ZVRYhoje" resolve="G01" />
+      <ref role="3VeSjQ" node="3f8ZVRYhojg" resolve="S01" />
     </node>
     <node concept="2vn7WC" id="3f8ZVRYhoji" role="2vn1q5">
       <property role="TrG5h" value="G02" />
@@ -1333,17 +1333,17 @@
         </node>
       </node>
       <node concept="3dzbTV" id="3f8ZVRYhZqV" role="2U2l5M">
-        <ref role="3dz$9E" node="3f8ZVRYhFCU" />
-        <ref role="3dzbTU" node="3f8ZVRYhF4k" />
+        <ref role="3dz$9E" node="3f8ZVRYhFCU" resolve="5.4.3.1" />
+        <ref role="3dzbTU" node="3f8ZVRYhF4k" resolve="ISO26262-8:2018" />
       </node>
     </node>
     <node concept="3VeUTF" id="3f8ZVRYhojk" role="2vhqc$">
-      <ref role="3VeSjP" node="3f8ZVRYhojg" />
-      <ref role="3VeSjQ" node="3f8ZVRYhoji" />
+      <ref role="3VeSjP" node="3f8ZVRYhojg" resolve="S01" />
+      <ref role="3VeSjQ" node="3f8ZVRYhoji" resolve="G02" />
     </node>
     <node concept="3VeUTF" id="3f8ZVRYhojl" role="2vhqc$">
-      <ref role="3VeSjP" node="3f8ZVRYhojg" />
-      <ref role="3VeSjQ" node="3f8ZVRYhojj" />
+      <ref role="3VeSjP" node="3f8ZVRYhojg" resolve="S01" />
+      <ref role="3VeSjQ" node="3f8ZVRYhojj" resolve="G03" />
     </node>
     <node concept="2vn7WC" id="3f8ZVRYhF4G" role="2vn1q5">
       <property role="TrG5h" value="G04" />
@@ -1354,13 +1354,13 @@
         </node>
       </node>
       <node concept="3dzbTV" id="3f8ZVRYhFR9" role="2U2l5M">
-        <ref role="3dzbTU" node="3f8ZVRYhF4k" />
-        <ref role="3dz$9E" node="3f8ZVRYhF4z" />
+        <ref role="3dzbTU" node="3f8ZVRYhF4k" resolve="ISO26262-8:2018" />
+        <ref role="3dz$9E" node="3f8ZVRYhF4z" resolve="5.4.2.1" />
       </node>
     </node>
     <node concept="3VeUTF" id="3f8ZVRYhFDb" role="2vhqc$">
-      <ref role="3VeSjP" node="3f8ZVRYhojg" />
-      <ref role="3VeSjQ" node="3f8ZVRYhF4G" />
+      <ref role="3VeSjP" node="3f8ZVRYhojg" resolve="S01" />
+      <ref role="3VeSjQ" node="3f8ZVRYhF4G" resolve="G04" />
     </node>
     <node concept="26s6xy" id="5gjf2NSkouw" role="2WHcHu">
       <property role="2Wzj7u" value="6058252087585691293" />
@@ -1376,12 +1376,12 @@
         </node>
       </node>
       <node concept="2GgQEL" id="5gjf2NSkou9" role="2U2l5M">
-        <ref role="2GgQEM" node="5gjf2NSk4SX" />
+        <ref role="2GgQEM" node="5gjf2NSk4SX" resolve="Kelly1997" />
       </node>
     </node>
     <node concept="3VeUTF" id="5gjf2NSkotX" role="2vhqc$">
-      <ref role="3VeSjP" node="3f8ZVRYhojg" />
-      <ref role="3VeSjQ" node="5gjf2NSkoop" />
+      <ref role="3VeSjP" node="3f8ZVRYhojg" resolve="S01" />
+      <ref role="3VeSjQ" node="5gjf2NSkoop" resolve="G05" />
     </node>
     <node concept="2vn7WC" id="5gjf2NSko_t" role="2vn1q5">
       <property role="TrG5h" value="G06" />
@@ -1391,12 +1391,12 @@
         </node>
       </node>
       <node concept="2GgQEL" id="5gjf2NSko_Y" role="2U2l5M">
-        <ref role="2GgQEM" node="5gjf2NSkoog" />
+        <ref role="2GgQEM" node="5gjf2NSkoog" resolve="NEA2021" />
       </node>
     </node>
     <node concept="3VeUTF" id="5gjf2NSkoFo" role="2vhqc$">
-      <ref role="3VeSjP" node="3f8ZVRYhojg" />
-      <ref role="3VeSjQ" node="5gjf2NSko_t" />
+      <ref role="3VeSjP" node="3f8ZVRYhojg" resolve="S01" />
+      <ref role="3VeSjQ" node="5gjf2NSko_t" resolve="G06" />
     </node>
   </node>
   <node concept="3dyw5u" id="3f8ZVRYhwmc">

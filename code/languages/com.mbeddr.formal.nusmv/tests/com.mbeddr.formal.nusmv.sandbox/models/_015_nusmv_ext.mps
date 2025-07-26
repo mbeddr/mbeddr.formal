@@ -159,7 +159,7 @@
         <property role="2IPVms" value="0" />
       </node>
       <node concept="hx854" id="4Jpgh6IKHF9" role="2XEmfA">
-        <ref role="hx9HS" node="4Jpgh6IKHEv" />
+        <ref role="hx9HS" node="4Jpgh6IKHEv" resolve="MAX_COUNT" />
       </node>
     </node>
     <node concept="2XJXe5" id="4Jpgh6IKOXx" role="2HcuB8">
@@ -181,7 +181,7 @@
         <node concept="2Hdskp" id="4Jpgh6IKOYJ" role="2Hfkx9">
           <property role="TrG5h" value="carsSignal" />
           <node concept="2XJXdx" id="4Jpgh6IKOZ5" role="2HdssA">
-            <ref role="2XJXdw" node="4Jpgh6IKOXx" />
+            <ref role="2XJXdw" node="4Jpgh6IKOXx" resolve="CARS_COLOR" />
           </node>
         </node>
       </node>
@@ -192,10 +192,10 @@
         </node>
         <node concept="1lxFmE" id="4Jpgh6IKP2n" role="2HfkAP">
           <node concept="2He$iJ" id="4Jpgh6IKP2l" role="2He$ia">
-            <ref role="2He$iI" node="4Jpgh6IKOYJ" />
+            <ref role="2He$iI" node="4Jpgh6IKOYJ" resolve="carsSignal" />
           </node>
           <node concept="32Ogvo" id="4Jpgh6IN5i5" role="2He$i0">
-            <ref role="32Ogvr" node="4Jpgh6IKHBa" />
+            <ref role="32Ogvr" node="4Jpgh6IKHBa" resolve="btnPressed" />
           </node>
         </node>
       </node>
@@ -206,7 +206,7 @@
       <node concept="3_qfHp" id="4Jpgh6IKHBF" role="2Hdtzq">
         <property role="TrG5h" value="cnt" />
         <node concept="2XEmfi" id="4Jpgh6IKHDb" role="2HdssB">
-          <ref role="2XEmfl" node="4Jpgh6IKHCe" />
+          <ref role="2XEmfl" node="4Jpgh6IKHCe" resolve="COUNTER_TYPE" />
         </node>
       </node>
       <node concept="2Hdtzr" id="4Jpgh6IKOWA" role="2Hdtzq">
@@ -243,23 +243,23 @@
         <node concept="2Hdskp" id="25Ap4XXtK7k" role="2Hfkx9">
           <property role="TrG5h" value="old_braking_dist" />
           <node concept="1savGX" id="25Ap4XXtK7M" role="2HdssA">
-            <ref role="1savGW" node="25Ap4XXtJSf" />
+            <ref role="1savGW" node="25Ap4XXtJSf" resolve="LENGTH" />
           </node>
         </node>
         <node concept="2Hdskp" id="25Ap4XXtK86" role="2Hfkx9">
           <property role="TrG5h" value="old_braking_time" />
           <node concept="1savGX" id="25Ap4XXtK9d" role="2HdssA">
-            <ref role="1savGW" node="25Ap4XXtJUY" />
+            <ref role="1savGW" node="25Ap4XXtJUY" resolve="DELAY" />
           </node>
         </node>
       </node>
       <node concept="2Hfkzp" id="25Ap4XXtK9z" role="2HcbjO">
         <node concept="2HevG6" id="25Ap4XXtLA6" role="2HfkAP">
           <node concept="2He$iJ" id="25Ap4XXtLA$" role="2He$ia">
-            <ref role="2He$iI" node="25Ap4XXtK7k" />
+            <ref role="2He$iI" node="25Ap4XXtK7k" resolve="old_braking_dist" />
           </node>
           <node concept="32Ogvo" id="25Ap4XXtLAI" role="2He$i0">
-            <ref role="32Ogvr" node="25Ap4XXtK6s" />
+            <ref role="32Ogvr" node="25Ap4XXtK6s" resolve="braking_dist" />
           </node>
         </node>
         <node concept="2HeLW8" id="25Ap4XXtLzM" role="2HfkAP" />
@@ -267,23 +267,23 @@
         <node concept="2HeLW8" id="25Ap4XXtQdW" role="2HfkAP" />
         <node concept="2HevG6" id="25Ap4XXtLBv" role="2HfkAP">
           <node concept="2He$iJ" id="25Ap4XXtLCc" role="2He$ia">
-            <ref role="2He$iI" node="25Ap4XXtK86" />
+            <ref role="2He$iI" node="25Ap4XXtK86" resolve="old_braking_time" />
           </node>
           <node concept="32Ogvo" id="25Ap4XXtLCx" role="2He$i0">
-            <ref role="32Ogvr" node="25Ap4XXtK6s" />
+            <ref role="32Ogvr" node="25Ap4XXtK6s" resolve="braking_dist" />
           </node>
         </node>
       </node>
       <node concept="3_qfHp" id="25Ap4XXtK6s" role="2Hdtzq">
         <property role="TrG5h" value="braking_dist" />
         <node concept="1savGX" id="25Ap4XXtK6z" role="2HdssB">
-          <ref role="1savGW" node="25Ap4XXtJSf" />
+          <ref role="1savGW" node="25Ap4XXtJSf" resolve="LENGTH" />
         </node>
       </node>
       <node concept="3_qfHp" id="25Ap4XXtK6M" role="2Hdtzq">
         <property role="TrG5h" value="braking_time" />
         <node concept="1savGX" id="25Ap4XXtK73" role="2HdssB">
-          <ref role="1savGW" node="25Ap4XXtJUY" />
+          <ref role="1savGW" node="25Ap4XXtJUY" resolve="DELAY" />
         </node>
       </node>
     </node>
@@ -320,13 +320,13 @@
       <node concept="1s31WS" id="25Ap4XXtSh1" role="1s31w6">
         <property role="TrG5h" value="upper_left" />
         <node concept="1s31w3" id="25Ap4XXtShg" role="1s31WO">
-          <ref role="1s31w2" node="25Ap4XXr70$" />
+          <ref role="1s31w2" node="25Ap4XXr70$" resolve="Point" />
         </node>
       </node>
       <node concept="1s31WS" id="25Ap4XXtShn" role="1s31w6">
         <property role="TrG5h" value="lower_right" />
         <node concept="1s31w3" id="25Ap4XXtSho" role="1s31WO">
-          <ref role="1s31w2" node="25Ap4XXr70$" />
+          <ref role="1s31w2" node="25Ap4XXr70$" resolve="Point" />
         </node>
       </node>
     </node>
@@ -336,20 +336,20 @@
       <node concept="3_qfHp" id="25Ap4XXtKpZ" role="2Hdtzq">
         <property role="TrG5h" value="vehicle_pos" />
         <node concept="1s31w3" id="25Ap4XXtKqa" role="2HdssB">
-          <ref role="1s31w2" node="25Ap4XXr70$" />
+          <ref role="1s31w2" node="25Ap4XXr70$" resolve="Point" />
         </node>
       </node>
       <node concept="3_qfHp" id="25Ap4XXtKqA" role="2Hdtzq">
         <property role="TrG5h" value="safety_area" />
         <node concept="1s31w3" id="25Ap4XXtSkB" role="2HdssB">
-          <ref role="1s31w2" node="25Ap4XXtSeh" />
+          <ref role="1s31w2" node="25Ap4XXtSeh" resolve="Rectangle" />
         </node>
       </node>
       <node concept="2Hfkzq" id="25Ap4XXtKzj" role="2HcbjO">
         <node concept="2Hdskp" id="25Ap4XXtKzt" role="2Hfkx9">
           <property role="TrG5h" value="vehicle_old_pos" />
           <node concept="1s31w3" id="25Ap4XXtK$t" role="2HdssA">
-            <ref role="1s31w2" node="25Ap4XXr70$" />
+            <ref role="1s31w2" node="25Ap4XXr70$" resolve="Point" />
           </node>
         </node>
       </node>
@@ -444,25 +444,25 @@
         <node concept="2Hdskp" id="25Ap4XXlWbG" role="2Hfkx9">
           <property role="TrG5h" value="carsSignal" />
           <node concept="2XJXdx" id="25Ap4XXlWbH" role="2HdssA">
-            <ref role="2XJXdw" node="25Ap4XXlWb_" />
+            <ref role="2XJXdw" node="25Ap4XXlWb_" resolve="CARS_COLOR_01" />
           </node>
         </node>
         <node concept="2Hdskp" id="25Ap4XXlWcw" role="2Hfkx9">
           <property role="TrG5h" value="counter" />
           <node concept="2XEmfi" id="25Ap4XXlWcQ" role="2HdssA">
-            <ref role="2XEmfl" node="25Ap4XXlWby" />
+            <ref role="2XEmfl" node="25Ap4XXlWby" resolve="COUNTER_TYPE_01" />
           </node>
         </node>
         <node concept="2Hdskp" id="25Ap4XXlWhS" role="2Hfkx9">
           <property role="TrG5h" value="my_len" />
           <node concept="1savGX" id="25Ap4XXlWil" role="2HdssA">
-            <ref role="1savGW" node="25Ap4XXlWff" />
+            <ref role="1savGW" node="25Ap4XXlWff" resolve="length" />
           </node>
         </node>
         <node concept="2Hdskp" id="25Ap4XXlWiD" role="2Hfkx9">
           <property role="TrG5h" value="my_speed" />
           <node concept="1savGX" id="25Ap4XXlWjh" role="2HdssA">
-            <ref role="1savGW" node="25Ap4XXlWgq" />
+            <ref role="1savGW" node="25Ap4XXlWgq" resolve="speed" />
           </node>
         </node>
         <node concept="2Hdskp" id="25Ap4XXrebC" role="2Hfkx9">
@@ -480,50 +480,50 @@
       <node concept="2Hfkzp" id="25Ap4XXlWbI" role="2HcbjO">
         <node concept="1lxFmE" id="25Ap4XXlWk0" role="2HfkAP">
           <node concept="2He$iJ" id="25Ap4XXlWjY" role="2He$ia">
-            <ref role="2He$iI" node="25Ap4XXlWhS" />
+            <ref role="2He$iI" node="25Ap4XXlWhS" resolve="my_len" />
           </node>
           <node concept="32Ogvo" id="25Ap4XXlWkd" role="2He$i0">
-            <ref role="32Ogvr" node="25Ap4XXlWbO" />
+            <ref role="32Ogvr" node="25Ap4XXlWbO" resolve="len" />
           </node>
         </node>
         <node concept="1lxFmE" id="25Ap4XXred5" role="2HfkAP">
           <node concept="2He$iJ" id="25Ap4XXred3" role="2He$ia">
-            <ref role="2He$iI" node="25Ap4XXrebC" />
+            <ref role="2He$iI" node="25Ap4XXrebC" resolve="my_x" />
           </node>
           <node concept="1ziNjN" id="25Ap4XXs8c8" role="2He$i0">
             <node concept="32pVh0" id="25Ap4XXs8dx" role="1ziNjJ">
               <property role="TrG5h" value="x" />
             </node>
             <node concept="32Ogvo" id="25Ap4XXs8bs" role="1ziNjM">
-              <ref role="32Ogvr" node="25Ap4XXr73N" />
+              <ref role="32Ogvr" node="25Ap4XXr73N" resolve="pt" />
             </node>
           </node>
         </node>
         <node concept="1lxFmE" id="25Ap4XXlWjq" role="2HfkAP">
           <node concept="2He$iJ" id="25Ap4XXlWjp" role="2He$ia">
-            <ref role="2He$iI" node="25Ap4XXlWhS" />
+            <ref role="2He$iI" node="25Ap4XXlWhS" resolve="my_len" />
           </node>
           <node concept="32Ogvo" id="25Ap4XXlWj_" role="2He$i0">
-            <ref role="32Ogvr" node="25Ap4XXlWhx" />
+            <ref role="32Ogvr" node="25Ap4XXlWhx" resolve="crt_speed" />
           </node>
         </node>
       </node>
       <node concept="3_qfHp" id="25Ap4XXlWbO" role="2Hdtzq">
         <property role="TrG5h" value="len" />
         <node concept="1savGX" id="25Ap4XXlWhp" role="2HdssB">
-          <ref role="1savGW" node="25Ap4XXlWff" />
+          <ref role="1savGW" node="25Ap4XXlWff" resolve="length" />
         </node>
       </node>
       <node concept="3_qfHp" id="25Ap4XXlWhx" role="2Hdtzq">
         <property role="TrG5h" value="crt_speed" />
         <node concept="1savGX" id="25Ap4XXlWhJ" role="2HdssB">
-          <ref role="1savGW" node="25Ap4XXlWgq" />
+          <ref role="1savGW" node="25Ap4XXlWgq" resolve="speed" />
         </node>
       </node>
       <node concept="3_qfHp" id="25Ap4XXr73N" role="2Hdtzq">
         <property role="TrG5h" value="pt" />
         <node concept="1s31w3" id="25Ap4XXr742" role="2HdssB">
-          <ref role="1s31w2" node="25Ap4XXr70$" />
+          <ref role="1s31w2" node="25Ap4XXr70$" resolve="Point" />
         </node>
       </node>
     </node>
@@ -558,13 +558,13 @@
         <node concept="1zoerA" id="1gJVC85F5zs" role="32O2ov">
           <property role="TrG5h" value="o" />
           <node concept="2He$iJ" id="1gJVC85F5zt" role="1zoetD">
-            <ref role="2He$iI" node="1gJVC85F5z_" />
+            <ref role="2He$iI" node="1gJVC85F5z_" resolve="c" />
           </node>
         </node>
         <node concept="1zoerA" id="1gJVC85F5zu" role="32O2ov">
           <property role="TrG5h" value="d" />
           <node concept="2He$iJ" id="1gJVC85F5zv" role="1zoetD">
-            <ref role="2He$iI" node="1gJVC85F5zx" />
+            <ref role="2He$iI" node="1gJVC85F5zx" resolve="b" />
           </node>
         </node>
       </node>
@@ -573,10 +573,10 @@
           <property role="TrG5h" value="b" />
           <node concept="dhpfj" id="1gJVC85F5zy" role="2HdssA">
             <node concept="hx854" id="1gJVC85JLtH" role="dhpfi">
-              <ref role="hx9HS" node="1gJVC85JGok" />
+              <ref role="hx9HS" node="1gJVC85JGok" resolve="MIN" />
             </node>
             <node concept="hx854" id="1gJVC85JLus" role="dhpfn">
-              <ref role="hx9HS" node="1gJVC85JHIx" />
+              <ref role="hx9HS" node="1gJVC85JHIx" resolve="MAX" />
             </node>
           </node>
         </node>
@@ -584,10 +584,10 @@
           <property role="TrG5h" value="c" />
           <node concept="dhpfj" id="1gJVC85F5zA" role="2HdssA">
             <node concept="hx854" id="1gJVC85JLwi" role="dhpfi">
-              <ref role="hx9HS" node="1gJVC85JGok" />
+              <ref role="hx9HS" node="1gJVC85JGok" resolve="MIN" />
             </node>
             <node concept="hx854" id="1gJVC85JLvb" role="dhpfn">
-              <ref role="hx9HS" node="1gJVC85JHIx" />
+              <ref role="hx9HS" node="1gJVC85JHIx" resolve="MAX" />
             </node>
           </node>
         </node>
@@ -595,7 +595,7 @@
       <node concept="2Hfkzp" id="1gJVC85F5zD" role="2HcbjO">
         <node concept="2HfkAV" id="1gJVC85F5zE" role="2HfkAP">
           <node concept="2He$iJ" id="1gJVC85F5zF" role="2He$ia">
-            <ref role="2He$iI" node="1gJVC85F5zx" />
+            <ref role="2He$iI" node="1gJVC85F5zx" resolve="b" />
           </node>
           <node concept="2IPVmt" id="1gJVC85F5zG" role="2He$i0">
             <property role="2IPVms" value="1" />
@@ -603,7 +603,7 @@
         </node>
         <node concept="2HevG6" id="1gJVC85F5zH" role="2HfkAP">
           <node concept="2He$iJ" id="1gJVC85F5zI" role="2He$ia">
-            <ref role="2He$iI" node="1gJVC85F5z_" />
+            <ref role="2He$iI" node="1gJVC85F5z_" resolve="c" />
           </node>
           <node concept="2H9I2B" id="1gJVC85F5zJ" role="2He$i0">
             <node concept="2H9I2A" id="1gJVC85F5zK" role="2H9I2x">
@@ -612,11 +612,11 @@
                   <property role="2IPVms" value="10" />
                 </node>
                 <node concept="2He$iJ" id="1gJVC85F5zN" role="2H9Iav">
-                  <ref role="2He$iI" node="1gJVC85F5z_" />
+                  <ref role="2He$iI" node="1gJVC85F5z_" resolve="c" />
                 </node>
               </node>
               <node concept="1J1L9T" id="1gJVC85F5zO" role="2H9I4_">
-                <ref role="1J1L9S" node="1gJVC85F5zu" />
+                <ref role="1J1L9S" node="1gJVC85F5zu" resolve="d" />
               </node>
             </node>
             <node concept="2H9I2A" id="1gJVC85F5zP" role="2H9I2x">
@@ -625,11 +625,11 @@
                   <property role="2IPVms" value="10" />
                 </node>
                 <node concept="2He$iJ" id="1gJVC85F5zS" role="2H9Iav">
-                  <ref role="2He$iI" node="1gJVC85F5z_" />
+                  <ref role="2He$iI" node="1gJVC85F5z_" resolve="c" />
                 </node>
               </node>
               <node concept="2He$iJ" id="1gJVC85F5zT" role="2H9I4_">
-                <ref role="2He$iI" node="1gJVC85F5z_" />
+                <ref role="2He$iI" node="1gJVC85F5z_" resolve="c" />
               </node>
             </node>
           </node>
@@ -642,7 +642,7 @@
               <property role="2IPVms" value="1" />
             </node>
             <node concept="1J1L9T" id="1gJVC85F5zY" role="2H9Iav">
-              <ref role="1J1L9S" node="1gJVC85F5zs" />
+              <ref role="1J1L9S" node="1gJVC85F5zs" resolve="o" />
             </node>
           </node>
         </node>
@@ -651,7 +651,7 @@
         <node concept="1yBCNs" id="1gJVC85F5$0" role="1yBDGv">
           <node concept="dheZm" id="1gJVC85F5$1" role="1yBIc4">
             <node concept="1J1L9T" id="1gJVC85F5$2" role="2H9Iav">
-              <ref role="1J1L9S" node="1gJVC85F5zs" />
+              <ref role="1J1L9S" node="1gJVC85F5zs" resolve="o" />
             </node>
             <node concept="2IPVmt" id="1gJVC85F5$3" role="2H9Ial">
               <property role="2IPVms" value="2" />
@@ -718,7 +718,7 @@
         <node concept="2Hdskp" id="4PN$IszPxpd" role="2Hfkx9">
           <property role="TrG5h" value="old_car_pos" />
           <node concept="1s31w3" id="4PN$IszPxpH" role="2HdssA">
-            <ref role="1s31w2" node="4PN$IszPxar" />
+            <ref role="1s31w2" node="4PN$IszPxar" resolve="Position" />
           </node>
         </node>
       </node>
@@ -726,45 +726,45 @@
         <node concept="2HevG6" id="4PN$IszPxiv" role="2HfkAP">
           <node concept="1ziNjN" id="4PN$IszPxj1" role="2He$ia">
             <node concept="1s3gwN" id="4PN$IszPxjo" role="1ziNjJ">
-              <ref role="1s3g$p" node="4PN$IszPxaB" />
+              <ref role="1s3g$p" node="4PN$IszPxaB" resolve="x" />
             </node>
             <node concept="32Ogvo" id="4PN$IszPxiR" role="1ziNjM">
-              <ref role="32Ogvr" node="4PN$IszPxh9" />
+              <ref role="32Ogvr" node="4PN$IszPxh9" resolve="car_pos" />
             </node>
           </node>
           <node concept="2H9FEB" id="4PN$IszPxmK" role="2He$i0">
             <node concept="32Ogvo" id="4PN$IszPxnp" role="2H9Ial">
-              <ref role="32Ogvr" node="4PN$IszPxep" />
+              <ref role="32Ogvr" node="4PN$IszPxep" resolve="crt_speed_x" />
             </node>
             <node concept="1ziNjN" id="4PN$IszPxlz" role="2H9Iav">
               <node concept="1s3gwN" id="4PN$IszPxmx" role="1ziNjJ">
-                <ref role="1s3g$p" node="4PN$IszPxaB" />
+                <ref role="1s3g$p" node="4PN$IszPxaB" resolve="x" />
               </node>
               <node concept="32Ogvo" id="4PN$IszPxle" role="1ziNjM">
-                <ref role="32Ogvr" node="4PN$IszPxh9" />
+                <ref role="32Ogvr" node="4PN$IszPxh9" resolve="car_pos" />
               </node>
             </node>
           </node>
         </node>
         <node concept="2HevG6" id="4PN$IszPxhK" role="2HfkAP">
           <node concept="32Ogvo" id="4PN$IszPxi1" role="2He$ia">
-            <ref role="32Ogvr" node="4PN$IszPxep" />
+            <ref role="32Ogvr" node="4PN$IszPxep" resolve="crt_speed_x" />
           </node>
           <node concept="32Ogvo" id="4PN$IszPxkR" role="2He$i0">
-            <ref role="32Ogvr" node="4PN$IszPxh9" />
+            <ref role="32Ogvr" node="4PN$IszPxh9" resolve="car_pos" />
           </node>
         </node>
       </node>
       <node concept="3_qfHp" id="4PN$IszPxep" role="2Hdtzq">
         <property role="TrG5h" value="crt_speed_x" />
         <node concept="1savGX" id="4PN$IszPxfR" role="2HdssB">
-          <ref role="1savGW" node="4PN$IszPxes" />
+          <ref role="1savGW" node="4PN$IszPxes" resolve="Speed" />
         </node>
       </node>
       <node concept="3_qfHp" id="4PN$IszPxh9" role="2Hdtzq">
         <property role="TrG5h" value="car_pos" />
         <node concept="1s31w3" id="4PN$IszPxhq" role="2HdssB">
-          <ref role="1s31w2" node="4PN$IszPxar" />
+          <ref role="1s31w2" node="4PN$IszPxar" resolve="Position" />
         </node>
       </node>
     </node>

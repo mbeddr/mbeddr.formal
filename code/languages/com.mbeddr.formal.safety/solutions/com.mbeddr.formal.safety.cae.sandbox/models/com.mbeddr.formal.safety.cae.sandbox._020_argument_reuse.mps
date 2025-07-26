@@ -11,7 +11,7 @@
         <child id="4266958635905312315" name="text" index="2vnaTY" />
       </concept>
       <concept id="9296093157844054" name="com.mbeddr.formal.safety.gsn.ext.structure.LibraryDefinition" flags="ng" index="1qmubD" />
-      <concept id="9296093158641125" name="com.mbeddr.formal.safety.gsn.ext.structure.ILibraryEntityRef" flags="ng" index="1qD0Hq">
+      <concept id="9296093158641125" name="com.mbeddr.formal.safety.gsn.ext.structure.ILibraryEntityRef" flags="ngI" index="1qD0Hq">
         <reference id="9296093158689453" name="entityDefinition" index="1qDcKi" />
       </concept>
       <concept id="1629165016568013899" name="com.mbeddr.formal.safety.gsn.ext.structure.PatternDefinition" flags="ng" index="1VB52S" />
@@ -59,7 +59,7 @@
       </concept>
     </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
-      <concept id="4445845612600281072" name="com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames" flags="ng" index="2GXxrR">
+      <concept id="4445845612600281072" name="com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames" flags="ngI" index="2GXxrR">
         <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
       </concept>
     </language>
@@ -259,20 +259,20 @@
       </node>
     </node>
     <node concept="29fmEP" id="x1FXqKABL" role="2vhqc$">
-      <ref role="3VeSjQ" node="x1FXqKA9f" />
-      <ref role="3VeSjP" node="x1FXqK_YE" />
+      <ref role="3VeSjQ" node="x1FXqKA9f" resolve="A01" />
+      <ref role="3VeSjP" node="x1FXqK_YE" resolve="C01" />
     </node>
     <node concept="29fmEP" id="x1FXqKACN" role="2vhqc$">
-      <ref role="3VeSjQ" node="x1FXqKAdB" />
-      <ref role="3VeSjP" node="x1FXqKA9f" />
+      <ref role="3VeSjQ" node="x1FXqKAdB" resolve="C02" />
+      <ref role="3VeSjP" node="x1FXqKA9f" resolve="A01" />
     </node>
     <node concept="29fmEP" id="x1FXqKADQ" role="2vhqc$">
-      <ref role="3VeSjQ" node="x1FXqKAi7" />
-      <ref role="3VeSjP" node="x1FXqKA9f" />
+      <ref role="3VeSjQ" node="x1FXqKAi7" resolve="C03" />
+      <ref role="3VeSjP" node="x1FXqKA9f" resolve="A01" />
     </node>
     <node concept="29fmEP" id="x1FXqKAFU" role="2vhqc$">
-      <ref role="3VeSjQ" node="x1FXqKAww" />
-      <ref role="3VeSjP" node="x1FXqKA9f" />
+      <ref role="3VeSjQ" node="x1FXqKAww" resolve="C04" />
+      <ref role="3VeSjP" node="x1FXqKA9f" resolve="A01" />
     </node>
   </node>
   <node concept="1qmubD" id="x1FXqKAKZ">
@@ -312,7 +312,7 @@
     <property role="3dZJ_E" value="0" />
     <node concept="1qSPMh" id="x1FXqKAWf" role="2vn1q5">
       <property role="TrG5h" value="C_ReqSat_Ref" />
-      <ref role="1qDcKi" node="x1FXqKALZ" />
+      <ref role="1qDcKi" node="x1FXqKALZ" resolve="C_ReqSat" />
       <node concept="19SGf9" id="x1FXqKAWg" role="2vnaTZ">
         <node concept="19SUe$" id="x1FXqKAWh" role="19SJt6">
           <property role="19SUeA" value="Timing constraints are satisfied&#10;by the communication system." />

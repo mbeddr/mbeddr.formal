@@ -73,8 +73,8 @@
     </node>
     <node concept="4e07$" id="1r1mR59Orta" role="3CrHoS" />
     <node concept="21oswF" id="1r1mR59Ortb" role="3CrHoS">
-      <ref role="21oszt" node="1r1mR59Ort4" />
-      <ref role="21oszj" node="1r1mR59Ort8" />
+      <ref role="21oszt" node="1r1mR59Ort4" resolve="Or Gate 11" />
+      <ref role="21oszj" node="1r1mR59Ort8" resolve="ev2" />
     </node>
     <node concept="37mRI7" id="1r1mR59Ortc" role="lGtFl">
       <node concept="37mRIm" id="1r1mR59Ortd" role="37mRID">
@@ -354,8 +354,8 @@
       </node>
     </node>
     <node concept="21oswF" id="1r1mR59OrtX" role="3CrHoS">
-      <ref role="21oszj" node="1r1mR59Ort6" />
-      <ref role="21oszt" node="1r1mR59Ort4" />
+      <ref role="21oszj" node="1r1mR59Ort6" resolve="ev1" />
+      <ref role="21oszt" node="1r1mR59Ort4" resolve="Or Gate 11" />
     </node>
   </node>
   <node concept="21ASy4" id="1r1mR59OqQX">
@@ -368,12 +368,12 @@
     </node>
     <node concept="1_05Uv" id="1r1mR59OrGS" role="3CrHoS">
       <property role="TrG5h" value="intermediate_leading_to_Or_Gate_11" />
-      <ref role="1_em_T" node="1r1mR59Ort4" />
+      <ref role="1_em_T" node="1r1mR59Ort4" resolve="Or Gate 11" />
     </node>
     <node concept="4e07$" id="1r1mR59OrH0" role="3CrHoS" />
     <node concept="21oswF" id="1r1mR59OqR5" role="3CrHoS">
-      <ref role="21oszt" node="1r1mR59Orx5" />
-      <ref role="21oszj" node="1r1mR59OrGS" />
+      <ref role="21oszt" node="1r1mR59Orx5" resolve="And Gate 1" />
+      <ref role="21oszj" node="1r1mR59OrGS" resolve="intermediate_leading_to_Or_Gate_11" />
     </node>
     <node concept="37mRI7" id="1r1mR59OqR6" role="lGtFl">
       <node concept="37mRIm" id="1r1mR59OqR7" role="37mRID">
@@ -645,8 +645,8 @@
       </node>
     </node>
     <node concept="21oswF" id="1r1mR59OqRR" role="3CrHoS">
-      <ref role="21oszj" node="1r1mR59OqR0" />
-      <ref role="21oszt" node="1r1mR59Orx5" />
+      <ref role="21oszj" node="1r1mR59OqR0" resolve="ev3" />
+      <ref role="21oszt" node="1r1mR59Orx5" resolve="And Gate 1" />
     </node>
   </node>
 </model>

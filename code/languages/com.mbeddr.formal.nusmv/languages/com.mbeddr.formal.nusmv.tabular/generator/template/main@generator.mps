@@ -137,7 +137,7 @@
         <child id="2295987781866647191" name="elseExpr" index="d498I" />
         <child id="2295987781866647183" name="cond" index="d498Q" />
       </concept>
-      <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
+      <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ngI" index="skqaJ">
         <reference id="2707707741266384760" name="definitionLike" index="skqaw" />
       </concept>
       <concept id="7842584090744230923" name="com.mbeddr.formal.nusmv.structure.SingleCase" flags="ng" index="2H9I2A">
@@ -575,7 +575,7 @@
             <node concept="1zoerA" id="7Z6$Wo5NJZF" role="32O2ov">
               <property role="TrG5h" value="d1" />
               <node concept="1J1L9T" id="7Z6$Wo5NK2r" role="1zoetD">
-                <ref role="1J1L9S" node="7Z6$Wo5NJZF" />
+                <ref role="1J1L9S" node="7Z6$Wo5NJZF" resolve="d1" />
                 <node concept="raruj" id="7Z6$Wo5NK2y" role="lGtFl" />
                 <node concept="1ZhdrF" id="7Z6$Wo5NK2z" role="lGtFl">
                   <property role="P3scX" value="001b2375-3bd5-4d5e-9958-6b3f62dc8548/4678075609353342594/4678075609353342595" />
@@ -631,10 +631,10 @@
               <node concept="2Hdskp" id="7Z6$Wo5O6k3" role="2Hfkx9">
                 <property role="TrG5h" value="m" />
                 <node concept="1zigX2" id="7Z6$Wo5Od0E" role="2HdssA">
-                  <ref role="1zigX1" node="7Z6$Wo5O61O" />
+                  <ref role="1zigX1" node="7Z6$Wo5O61O" resolve="m1" />
                   <node concept="1ziNjN" id="7Z6$Wo5Od2q" role="1zigYY">
                     <node concept="1zjgSo" id="7Z6$Wo5Od49" role="1ziNjJ">
-                      <ref role="skqaw" node="7Z6$Wo5O61Q" />
+                      <ref role="skqaw" node="7Z6$Wo5O61Q" resolve="d1" />
                       <node concept="raruj" id="7Z6$Wo5OghC" role="lGtFl" />
                       <node concept="1ZhdrF" id="7Z6$Wo5OghD" role="lGtFl">
                         <property role="P3scX" value="001b2375-3bd5-4d5e-9958-6b3f62dc8548/2707707741266384759/2707707741266384760" />
@@ -660,7 +660,7 @@
                       </node>
                     </node>
                     <node concept="2He$iJ" id="7Z6$Wo5Od2n" role="1ziNjM">
-                      <ref role="2He$iI" node="7Z6$Wo5O6k3" />
+                      <ref role="2He$iI" node="7Z6$Wo5O6k3" resolve="m" />
                     </node>
                   </node>
                 </node>
@@ -788,7 +788,7 @@
           <node concept="1yLTVY" id="4pkEwgj29gH" role="2HcbjO">
             <node concept="1yLTVP" id="4pkEwgj29gR" role="1yLTVS">
               <node concept="2He$iJ" id="4pkEwgj29gP" role="1yeVNG">
-                <ref role="2He$iI" node="4pkEwgj29di" />
+                <ref role="2He$iI" node="4pkEwgj29di" resolve="v" />
                 <node concept="1pdMLZ" id="4pkEwgj4tA3" role="lGtFl">
                   <node concept="2kFOW8" id="4pkEwgj4tAc" role="2kGFt3">
                     <node concept="3clFbS" id="4pkEwgj4tAd" role="2VODD2">

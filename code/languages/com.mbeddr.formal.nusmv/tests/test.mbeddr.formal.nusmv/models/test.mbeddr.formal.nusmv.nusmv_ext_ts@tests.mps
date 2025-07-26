@@ -115,20 +115,20 @@
             <node concept="2Hdskp" id="5PdLXX5UVK9" role="2Hfkx9">
               <property role="TrG5h" value="anIntervalVar" />
               <node concept="2XEmfi" id="5PdLXX5UVM6" role="2HdssA">
-                <ref role="2XEmfl" node="5PdLXX5UVBT" />
+                <ref role="2XEmfl" node="5PdLXX5UVBT" resolve="anInterval" />
               </node>
             </node>
             <node concept="2Hdskp" id="5PdLXX5UVS7" role="2Hfkx9">
               <property role="TrG5h" value="anotherIntervalVar" />
               <node concept="2XEmfi" id="5PdLXX5UVS8" role="2HdssA">
-                <ref role="2XEmfl" node="5PdLXX5UVBT" />
+                <ref role="2XEmfl" node="5PdLXX5UVBT" resolve="anInterval" />
               </node>
             </node>
           </node>
           <node concept="2Hfkzp" id="5PdLXX5UV$A" role="2HcbjO">
             <node concept="2HfkAV" id="5PdLXX5UVHL" role="2HfkAP">
               <node concept="2He$iJ" id="5PdLXX5UVMo" role="2He$ia">
-                <ref role="2He$iI" node="5PdLXX5UV$C" />
+                <ref role="2He$iI" node="5PdLXX5UV$C" resolve="anIntVar" />
               </node>
               <node concept="2IPVmt" id="5PdLXX5UVMD" role="2He$i0">
                 <property role="2IPVms" value="0" />
@@ -136,7 +136,7 @@
             </node>
             <node concept="2HfkAV" id="5PdLXX5UVOz" role="2HfkAP">
               <node concept="2He$iJ" id="5PdLXX5UVPm" role="2He$ia">
-                <ref role="2He$iI" node="5PdLXX5UVK9" />
+                <ref role="2He$iI" node="5PdLXX5UVK9" resolve="anIntervalVar" />
               </node>
               <node concept="2IPVmt" id="5PdLXX5UVPx" role="2He$i0">
                 <property role="2IPVms" value="0" />
@@ -144,7 +144,7 @@
             </node>
             <node concept="2HfkAV" id="5PdLXX5UVRs" role="2HfkAP">
               <node concept="2He$iJ" id="5PdLXX5UVSK" role="2He$ia">
-                <ref role="2He$iI" node="5PdLXX5UVS7" />
+                <ref role="2He$iI" node="5PdLXX5UVS7" resolve="anotherIntervalVar" />
               </node>
               <node concept="1yCjRe" id="5PdLXX5UVT_" role="2He$i0" />
               <node concept="7CXmI" id="5PdLXX5UVU3" role="lGtFl">

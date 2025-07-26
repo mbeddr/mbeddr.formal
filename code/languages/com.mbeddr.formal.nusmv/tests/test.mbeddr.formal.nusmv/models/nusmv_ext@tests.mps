@@ -1134,17 +1134,17 @@
             <node concept="2Hdskp" id="4Jpgh6IKOYJ" role="2Hfkx9">
               <property role="TrG5h" value="carsSignal" />
               <node concept="2XJXdx" id="4Jpgh6IKOZ5" role="2HdssA">
-                <ref role="2XJXdw" node="4Jpgh6IKOXx" />
+                <ref role="2XJXdw" node="4Jpgh6IKOXx" resolve="CARS_COLOR" />
               </node>
             </node>
           </node>
           <node concept="2Hfkzp" id="4Jpgh6IKP23" role="2HcbjO">
             <node concept="1lxFmE" id="4Jpgh6IKP2n" role="2HfkAP">
               <node concept="2He$iJ" id="4Jpgh6IKP2l" role="2He$ia">
-                <ref role="2He$iI" node="4Jpgh6IKOYJ" />
+                <ref role="2He$iI" node="4Jpgh6IKOYJ" resolve="carsSignal" />
               </node>
               <node concept="32Ogvo" id="4Jpgh6IN5i5" role="2He$i0">
-                <ref role="32Ogvr" node="4Jpgh6IKHBa" />
+                <ref role="32Ogvr" node="4Jpgh6IKHBa" resolve="btnPressed" />
                 <node concept="7CXmI" id="4Wa4Mc7fibz" role="lGtFl">
                   <node concept="30Omv" id="4Wa4Mc7fibP" role="7EUXB">
                     <node concept="2Hds6S" id="4Wa4Mc7fic0" role="31d$z" />
@@ -1157,10 +1157,10 @@
             </node>
             <node concept="1lxFmE" id="4Jpgh6INhgU" role="2HfkAP">
               <node concept="2He$iJ" id="4Jpgh6INhgS" role="2He$ia">
-                <ref role="2He$iI" node="4Jpgh6IKOYJ" />
+                <ref role="2He$iI" node="4Jpgh6IKOYJ" resolve="carsSignal" />
               </node>
               <node concept="32Ogvo" id="4Jpgh6INhhq" role="2He$i0">
-                <ref role="32Ogvr" node="4Jpgh6INheh" />
+                <ref role="32Ogvr" node="4Jpgh6INheh" resolve="signal" />
               </node>
             </node>
           </node>
@@ -1174,7 +1174,7 @@
           <node concept="3_qfHp" id="4Jpgh6INheh" role="2Hdtzq">
             <property role="TrG5h" value="signal" />
             <node concept="2XJXdx" id="4Jpgh6INheE" role="2HdssB">
-              <ref role="2XJXdw" node="4Jpgh6IKOXx" />
+              <ref role="2XJXdw" node="4Jpgh6IKOXx" resolve="CARS_COLOR" />
             </node>
           </node>
         </node>

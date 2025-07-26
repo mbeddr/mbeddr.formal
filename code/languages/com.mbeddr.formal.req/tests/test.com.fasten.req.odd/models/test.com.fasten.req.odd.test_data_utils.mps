@@ -45,33 +45,33 @@
     </node>
     <node concept="3SOpcA" id="6AHcWlQl_DU" role="3SOpfD">
       <property role="TrG5h" value="Age" />
-      <ref role="3SOpc_" node="6AHcWlQl_DR" />
+      <ref role="3SOpc_" node="6AHcWlQl_DR" resolve="PersonCharacteristics" />
     </node>
     <node concept="3SOpcA" id="6AHcWlQlXG8" role="3SOpfD">
       <property role="TrG5h" value="Address" />
-      <ref role="3SOpc_" node="6AHcWlQl_DR" />
+      <ref role="3SOpc_" node="6AHcWlQl_DR" resolve="PersonCharacteristics" />
     </node>
     <node concept="2IzUYn" id="6AHcWlQlXGa" role="3SOpfD" />
     <node concept="3SOpcA" id="6AHcWlQl_DH" role="3SOpfD">
       <property role="TrG5h" value="Person" />
       <node concept="1BN$wR" id="6AHcWlQlXGd" role="1BN$wV">
         <node concept="MFvB7" id="6AHcWlQlXGg" role="1BNJHd">
-          <ref role="MFvBS" node="6AHcWlQl_DU" />
+          <ref role="MFvBS" node="6AHcWlQl_DU" resolve="Age" />
         </node>
       </node>
       <node concept="1BN$wR" id="6AHcWlQmDWm" role="1BN$wV">
         <node concept="MFvB7" id="6AHcWlQmDWo" role="1BNJHd">
-          <ref role="MFvBS" node="6AHcWlQlXG8" />
+          <ref role="MFvBS" node="6AHcWlQlXG8" resolve="Address" />
         </node>
       </node>
     </node>
     <node concept="3SOpcA" id="6AHcWlQl_DK" role="3SOpfD">
       <property role="TrG5h" value="Man" />
-      <ref role="3SOpc_" node="6AHcWlQl_DH" />
+      <ref role="3SOpc_" node="6AHcWlQl_DH" resolve="Person" />
     </node>
     <node concept="3SOpcA" id="6AHcWlQl_DN" role="3SOpfD">
       <property role="TrG5h" value="Woman" />
-      <ref role="3SOpc_" node="6AHcWlQl_DH" />
+      <ref role="3SOpc_" node="6AHcWlQl_DH" resolve="Person" />
     </node>
     <node concept="19SGf9" id="6AHcWlQl_DE" role="2I8HYo">
       <node concept="19SUe$" id="6AHcWlQl_DF" role="19SJt6">

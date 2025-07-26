@@ -14,7 +14,7 @@
         <child id="2601369717537236697" name="elements" index="2jmwOw" />
         <child id="2601369717537276289" name="connections" index="2jnmDS" />
       </concept>
-      <concept id="2601369717537276292" name="com.fasten.symo.hw.structure.IPlatformArchitectureConnection" flags="ng" index="2jnmDX">
+      <concept id="2601369717537276292" name="com.fasten.symo.hw.structure.IPlatformArchitectureConnection" flags="ngI" index="2jnmDX">
         <reference id="2601369717537277059" name="source" index="2jnmXU" />
         <reference id="2601369717537277061" name="target" index="2jnmXW" />
       </concept>
@@ -89,12 +89,12 @@
       <property role="TrG5h" value="ecu2" />
     </node>
     <node concept="2jnq7J" id="2gpUZARhwa8" role="2jnmDS">
-      <ref role="2jnmXU" node="2gpUZARh4BO" />
-      <ref role="2jnmXW" node="2gpUZARh4BT" />
+      <ref role="2jnmXU" node="2gpUZARh4BO" resolve="ecu1" />
+      <ref role="2jnmXW" node="2gpUZARh4BT" resolve="bus" />
     </node>
     <node concept="2jnq7J" id="2gpUZARhwaa" role="2jnmDS">
-      <ref role="2jnmXU" node="2gpUZARh4C9" />
-      <ref role="2jnmXW" node="2gpUZARh4BT" />
+      <ref role="2jnmXU" node="2gpUZARh4C9" resolve="ecu2" />
+      <ref role="2jnmXW" node="2gpUZARh4BT" resolve="bus" />
     </node>
   </node>
 </model>

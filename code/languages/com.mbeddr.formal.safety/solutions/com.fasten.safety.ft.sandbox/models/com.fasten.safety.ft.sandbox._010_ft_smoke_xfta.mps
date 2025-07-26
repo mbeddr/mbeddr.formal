@@ -33,7 +33,7 @@
         <property id="6437538155642382679" name="value" index="agdef" />
       </concept>
       <concept id="6437538155642351493" name="com.fasten.safety.ft.xfta_gen.structure.MaximumNumberOption" flags="ng" index="agPlt" />
-      <concept id="6437538155643161278" name="com.fasten.safety.ft.xfta_gen.structure.ICommandWithOptions" flags="ng" index="atf1A">
+      <concept id="6437538155643161278" name="com.fasten.safety.ft.xfta_gen.structure.ICommandWithOptions" flags="ngI" index="atf1A">
         <child id="6437538155643161279" name="options" index="atf1B" />
       </concept>
       <concept id="8928763027632483050" name="com.fasten.safety.ft.xfta_gen.structure.GLM" flags="ng" index="2UhrL0">
@@ -45,7 +45,7 @@
         <property id="3213712147579727499" name="fileName" index="3Ugoyw" />
         <property id="3213712147579799204" name="mode" index="3UgQ2f" />
       </concept>
-      <concept id="3213712147579727507" name="com.fasten.safety.ft.xfta_gen.structure.IGenerateOutput" flags="ng" index="3UgoyS">
+      <concept id="3213712147579727507" name="com.fasten.safety.ft.xfta_gen.structure.IGenerateOutput" flags="ngI" index="3UgoyS">
         <child id="3213712147579727508" name="output" index="3UgoyZ" />
       </concept>
       <concept id="3213712147579799119" name="com.fasten.safety.ft.xfta_gen.structure.PrintMinimalCutsets" flags="ng" index="3UgQ1$">
@@ -495,42 +495,42 @@
       <property role="TrG5h" value="collision" />
     </node>
     <node concept="21oswF" id="7YOjUbFq7f$" role="3CrHoS">
-      <ref role="21oszt" node="7YOjUbFq7fx" />
-      <ref role="21oszj" node="7YOjUbFq7fu" />
+      <ref role="21oszt" node="7YOjUbFq7fx" resolve="Or Gate 1" />
+      <ref role="21oszj" node="7YOjUbFq7fu" resolve="erroneous_speed" />
     </node>
     <node concept="21oswF" id="7YOjUbFq7fC" role="3CrHoS">
-      <ref role="21oszt" node="7YOjUbFq7fB" />
-      <ref role="21oszj" node="7YOjUbFq7fy" />
+      <ref role="21oszt" node="7YOjUbFq7fB" resolve="collision" />
+      <ref role="21oszj" node="7YOjUbFq7fy" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="7YOjUbFq7fD" role="3CrHoS">
-      <ref role="21oszt" node="7YOjUbFq7fy" />
-      <ref role="21oszj" node="7YOjUbFq7fA" />
+      <ref role="21oszt" node="7YOjUbFq7fy" resolve="And Gate 1" />
+      <ref role="21oszj" node="7YOjUbFq7fA" resolve="obstacle" />
     </node>
     <node concept="21oswF" id="7YOjUbFq7fE" role="3CrHoS">
-      <ref role="21oszj" node="7YOjUbFq7fx" />
-      <ref role="21oszt" node="7YOjUbFq7fy" />
+      <ref role="21oszj" node="7YOjUbFq7fx" resolve="Or Gate 1" />
+      <ref role="21oszt" node="7YOjUbFq7fy" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="7YOjUbFq7fF" role="3CrHoS">
-      <ref role="21oszt" node="7YOjUbFq7fx" />
-      <ref role="21oszj" node="7YOjUbFq7fz" />
+      <ref role="21oszt" node="7YOjUbFq7fx" resolve="Or Gate 1" />
+      <ref role="21oszj" node="7YOjUbFq7fz" resolve="erroneous_time" />
     </node>
   </node>
   <node concept="3Unl$E" id="2MppyJmNcq_">
     <property role="TrG5h" value="_010_script_1" />
     <node concept="3Unl$P" id="2MppyJmNcqA" role="3Unl$J">
-      <ref role="3Unl$v" node="7YOjUbFq7ft" />
+      <ref role="3Unl$v" node="7YOjUbFq7ft" resolve="_010_first_FT" />
     </node>
     <node concept="3UniNi" id="2c2ooLv9P_n" role="3Unl$J" />
     <node concept="3Unl_y" id="2MppyJmNcqC" role="3Unl$J" />
     <node concept="3UniOE" id="5_mIHxj9lWE" role="3Unl$J">
-      <ref role="3UniOC" node="7YOjUbFq7fB" />
+      <ref role="3UniOC" node="7YOjUbFq7fB" resolve="collision" />
       <node concept="agPlt" id="2c2ooLv3w88" role="atf1B">
         <property role="agdef" value="10" />
       </node>
     </node>
     <node concept="3UniNi" id="2c2ooLv5Xgt" role="3Unl$J" />
     <node concept="3Unl_R" id="2MppyJmNcqF" role="3Unl$J">
-      <ref role="3Unl_b" node="7YOjUbFq7fB" />
+      <ref role="3Unl_b" node="7YOjUbFq7fB" resolve="collision" />
       <node concept="3Ugoyx" id="2MppyJmQV$P" role="3UgoyZ">
         <property role="3Ugoyw" value="out1.tsv" />
       </node>
@@ -540,7 +540,7 @@
     </node>
     <node concept="3UniNi" id="2c2ooLv9PmG" role="3Unl$J" />
     <node concept="3UgQ1$" id="2c2ooLvav7Y" role="3Unl$J">
-      <ref role="3UgQ2a" node="7YOjUbFq7fB" />
+      <ref role="3UgQ2a" node="7YOjUbFq7fB" resolve="collision" />
       <node concept="3Ugoyx" id="2c2ooLvav80" role="3UgoyZ">
         <property role="3Ugoyw" value="out1.tsv" />
         <property role="3UgQ2f" value="2MppyJmQwqA/append" />

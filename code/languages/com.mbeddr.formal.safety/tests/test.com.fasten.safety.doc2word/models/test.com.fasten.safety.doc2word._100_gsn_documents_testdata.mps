@@ -12,7 +12,7 @@
   <registry>
     <language id="6464626a-ab04-4051-908e-5e8dc75acd78" name="com.mbeddr.formal.safety.gsn.ext">
       <concept id="2392944874759792240" name="com.mbeddr.formal.safety.gsn.ext.structure.SupportedByConnectionPattern" flags="ng" index="1a4Pjv" />
-      <concept id="2392944874760086914" name="com.mbeddr.formal.safety.gsn.ext.structure.IGsnConnectionPattern" flags="ng" index="1a7XsH">
+      <concept id="2392944874760086914" name="com.mbeddr.formal.safety.gsn.ext.structure.IGsnConnectionPattern" flags="ngI" index="1a7XsH">
         <property id="2392944874759792243" name="max" index="1a4Pjs" />
         <property id="2392944874759792241" name="min" index="1a4Pju" />
       </concept>
@@ -215,14 +215,14 @@
     <node concept="1a4Pjv" id="3mpcDUdycA4" role="2vhqc$">
       <property role="1a4Pju" value="0" />
       <property role="1a4Pjs" value="n" />
-      <ref role="3VeSjP" node="3mpcDUdyab3" />
-      <ref role="3VeSjQ" node="3mpcDUdyczO" />
+      <ref role="3VeSjP" node="3mpcDUdyab3" resolve="G01" />
+      <ref role="3VeSjQ" node="3mpcDUdyczO" resolve="S01" />
     </node>
   </node>
   <node concept="qdN4g" id="3mpcDUdycH1">
     <property role="yApLE" value="1" />
     <property role="TrG5h" value="_110_argument_over_hazards_doc" />
-    <ref role="qdN4h" node="3mpcDUdya9X" />
+    <ref role="qdN4h" node="3mpcDUdya9X" resolve="_110_argument_over_hazards" />
     <ref role="G9hjw" node="3mpcDUdy7QQ" resolve="config" />
     <node concept="1mvXsy" id="3mpcDUdycH7" role="1_0VJ0">
       <property role="TrG5h" value="overview" />
@@ -239,7 +239,7 @@
         <node concept="2bctqb" id="3mpcDUdycHd" role="3z_lpT" />
         <node concept="2NCZwO" id="3mpcDUdycHe" role="3z_lpI">
           <node concept="2NCMab" id="3mpcDUdycHn" role="2NCMaf">
-            <ref role="2NCMaa" node="3mpcDUdya9X" />
+            <ref role="2NCMaa" node="3mpcDUdya9X" resolve="_110_argument_over_hazards" />
           </node>
         </node>
       </node>
