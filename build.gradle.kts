@@ -41,9 +41,9 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2024"
+val major = "2025"
 val minor = "1"
-val bugfix = "3"
+val bugfix = ""
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
