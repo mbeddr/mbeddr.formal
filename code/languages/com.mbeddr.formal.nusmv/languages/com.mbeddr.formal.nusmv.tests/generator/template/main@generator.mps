@@ -381,7 +381,7 @@
     <property role="TrG5h" value="main" />
     <node concept="3lhOvk" id="1ZsZb$iKiKR" role="3lj3bC">
       <ref role="30HIoZ" to="fnq2:1ZsZb$iIWjt" resolve="ExecutableTestCase" />
-      <ref role="3lhOvi" node="1ZsZb$iKiKU" resolve="system_for_executable_test" />
+      <ref role="3lhOvi" node="1ZsZb$iKiKU" />
     </node>
     <node concept="aNPBN" id="1ZsZb$iJWZE" role="aQYdv">
       <ref role="aOQi4" to="fnq2:43FRfGJUEcN" resolve="TestsCollection" />
@@ -430,7 +430,7 @@
               <node concept="2Hdskp" id="1ZsZb$iIZ5E" role="2Hfkx9">
                 <property role="TrG5h" value="sut" />
                 <node concept="1zigX2" id="1ZsZb$iIZ6m" role="2HdssA">
-                  <ref role="1zigX1" node="1ZsZb$iIZ4B" resolve="sut" />
+                  <ref role="1zigX1" node="1ZsZb$iIZ4B" />
                   <node concept="1ZhdrF" id="1ZsZb$iJFJ9" role="lGtFl">
                     <property role="P3scX" value="001b2375-3bd5-4d5e-9958-6b3f62dc8548/8482728081213209469/8482728081213209470" />
                     <property role="2qtEX8" value="module" />
@@ -448,7 +448,7 @@
                     </node>
                   </node>
                   <node concept="1J1L9T" id="6mm$FLYWR1h" role="1zigYY">
-                    <ref role="1J1L9S" node="6mm$FLYVoYA" resolve="in_val" />
+                    <ref role="1J1L9S" node="6mm$FLYVoYA" />
                     <node concept="1WS0z7" id="6mm$FLYWReB" role="lGtFl">
                       <node concept="3JmXsc" id="6mm$FLYWReD" role="3Jn$fo">
                         <node concept="3clFbS" id="6mm$FLYWReF" role="2VODD2">
@@ -578,7 +578,7 @@
             <node concept="2Hfkzp" id="1ZsZb$iIZaa" role="2HcbjO">
               <node concept="2HfkAV" id="1ZsZb$iIZdN" role="2HfkAP">
                 <node concept="2He$iJ" id="1ZsZb$iIZgb" role="2He$ia">
-                  <ref role="2He$iI" node="1ZsZb$iIZeo" resolve="__crtStep" />
+                  <ref role="2He$iI" node="1ZsZb$iIZeo" />
                 </node>
                 <node concept="2IPVmt" id="1ZsZb$iIZgr" role="2He$i0">
                   <property role="2IPVms" value="0" />
@@ -586,7 +586,7 @@
               </node>
               <node concept="2HevG6" id="1ZsZb$iIQG8" role="2HfkAP">
                 <node concept="2He$iJ" id="1ZsZb$iIZl7" role="2He$ia">
-                  <ref role="2He$iI" node="1ZsZb$iIZeo" resolve="__crtStep" />
+                  <ref role="2He$iI" node="1ZsZb$iIZeo" />
                 </node>
                 <node concept="2H9I2B" id="1ZsZb$iIVet" role="2He$i0">
                   <node concept="2H9I2A" id="1ZsZb$iIVex" role="2H9I2x">
@@ -618,7 +618,7 @@
                         </node>
                       </node>
                       <node concept="2He$iJ" id="1ZsZb$iIVeU" role="2H9Iav">
-                        <ref role="2He$iI" node="1ZsZb$iIZeo" resolve="__crtStep" />
+                        <ref role="2He$iI" node="1ZsZb$iIZeo" />
                       </node>
                     </node>
                     <node concept="d4bQV" id="1ZsZb$iODNA" role="2H9I4_">
@@ -678,7 +678,7 @@
                         <node concept="32OYss" id="1ZsZb$iODsd" role="2H9Iav">
                           <node concept="2H9FEB" id="1ZsZb$iODse" role="32OYtT">
                             <node concept="2He$iJ" id="1ZsZb$iIQGL" role="2H9Iav">
-                              <ref role="2He$iI" node="1ZsZb$iIZeo" resolve="__crtStep" />
+                              <ref role="2He$iI" node="1ZsZb$iIZeo" />
                             </node>
                             <node concept="2IPVmt" id="1ZsZb$iODsf" role="2H9Ial">
                               <property role="2IPVms" value="1" />
@@ -688,7 +688,7 @@
                       </node>
                       <node concept="2H9FEB" id="1ZsZb$iOEdA" role="d498F">
                         <node concept="2He$iJ" id="1ZsZb$iOEdB" role="2H9Iav">
-                          <ref role="2He$iI" node="1ZsZb$iIZeo" resolve="__crtStep" />
+                          <ref role="2He$iI" node="1ZsZb$iIZeo" />
                         </node>
                         <node concept="2IPVmt" id="1ZsZb$iOEdC" role="2H9Ial">
                           <property role="2IPVms" value="1" />
@@ -699,7 +699,7 @@
                   <node concept="2H9I2A" id="1ZsZb$iIVgZ" role="2H9I2x">
                     <node concept="1yCjRe" id="1ZsZb$iODo8" role="2H9I4J" />
                     <node concept="2He$iJ" id="1ZsZb$iIVj_" role="2H9I4_">
-                      <ref role="2He$iI" node="1ZsZb$iIZeo" resolve="__crtStep" />
+                      <ref role="2He$iI" node="1ZsZb$iIZeo" />
                     </node>
                   </node>
                 </node>

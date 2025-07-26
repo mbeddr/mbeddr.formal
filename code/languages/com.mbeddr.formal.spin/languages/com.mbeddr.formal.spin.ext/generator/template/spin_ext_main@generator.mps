@@ -74,10 +74,10 @@
       </concept>
       <concept id="5285453794052877353" name="com.mbeddr.formal.spin.structure.LocalVarRef" flags="ng" index="2m6Dwh" />
       <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.PromelaLocalVariableDeclaration" flags="ng" index="2m6DXv" />
-      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ngI" index="2m6DZO">
+      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
         <reference id="5285453794052877261" name="var" index="2m6DZP" />
       </concept>
-      <concept id="5285453794052877263" name="com.mbeddr.formal.spin.structure.IVariableDeclaration" flags="ngI" index="2m6DZR">
+      <concept id="5285453794052877263" name="com.mbeddr.formal.spin.structure.IVariableDeclaration" flags="ng" index="2m6DZR">
         <child id="7611646782271350980" name="init" index="3WDmyJ" />
       </concept>
       <concept id="5285453794052597017" name="com.mbeddr.formal.spin.structure.StatementsList" flags="ng" index="2mpP4x">
@@ -119,7 +119,7 @@
       <concept id="4613921340551921915" name="com.mbeddr.formal.spin.structure.ExpressionStatement" flags="ng" index="XdJ7S">
         <child id="4613921340551921928" name="exp" index="XdJ0b" />
       </concept>
-      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ngI" index="1a0DGj">
+      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
         <child id="2291855968617420240" name="tpe" index="1a0DGc" />
       </concept>
       <concept id="2291855968618360712" name="com.mbeddr.formal.spin.structure.CDecl" flags="ng" index="1a5m5k">
@@ -263,7 +263,7 @@
       </concept>
     </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
-      <concept id="2291855968619888578" name="com.mbeddr.formal.base.structure.IArbitraryText" flags="ngI" index="1af34u">
+      <concept id="2291855968619888578" name="com.mbeddr.formal.base.structure.IArbitraryText" flags="ng" index="1af34u">
         <property id="2291855968619888582" name="text" index="1af34q" />
       </concept>
     </language>
@@ -928,7 +928,7 @@
             </node>
             <node concept="1a7Kpe" id="4ZxQD5y0loa" role="2mpP4z">
               <node concept="2m6Dwh" id="4ZxQD5y0lDT" role="1a7Kpf">
-                <ref role="2m6DZP" node="4ZxQD5y0jbr" resolve="flag" />
+                <ref role="2m6DZP" node="4ZxQD5y0jbr" />
               </node>
               <node concept="2IPVmt" id="4ZxQD5y0lE2" role="1a7Kpb">
                 <property role="2IPVms" value="0" />
@@ -944,7 +944,7 @@
                     <property role="2IPVms" value="0" />
                   </node>
                   <node concept="2m6Dwh" id="4ZxQD5y0n_c" role="2H9Iav">
-                    <ref role="2m6DZP" node="4ZxQD5y0jbr" resolve="flag" />
+                    <ref role="2m6DZP" node="4ZxQD5y0jbr" />
                   </node>
                 </node>
                 <node concept="2mpP4x" id="4ZxQD5y0o8F" role="2xXWtj">

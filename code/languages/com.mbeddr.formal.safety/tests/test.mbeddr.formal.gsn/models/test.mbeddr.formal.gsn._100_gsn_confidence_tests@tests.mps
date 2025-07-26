@@ -222,7 +222,7 @@
       </concept>
     </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
-      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ngI" index="2U2l5L">
+      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ng" index="2U2l5L">
         <child id="7402587364850275470" name="attributes" index="2U2l5M" />
       </concept>
     </language>
@@ -1151,8 +1151,8 @@
           </node>
         </node>
         <node concept="3VeUTF" id="5WyjFZRs5zs" role="2vhqc$">
-          <ref role="3VeSjP" node="5WyjFZRs5yF" resolve="G01" />
-          <ref role="3VeSjQ" node="5WyjFZRs5yU" resolve="S01" />
+          <ref role="3VeSjP" node="5WyjFZRs5yF" />
+          <ref role="3VeSjQ" node="5WyjFZRs5yU" />
         </node>
         <node concept="7CXmI" id="5WyjFZRsD1L" role="lGtFl">
           <node concept="7OXhh" id="5WyjFZRsD1Y" role="7EUXB">
@@ -1235,8 +1235,8 @@
           </node>
         </node>
         <node concept="3VeUTF" id="5WyjFZRsY1g" role="2vhqc$">
-          <ref role="3VeSjP" node="5WyjFZRsY0V" resolve="G01" />
-          <ref role="3VeSjQ" node="5WyjFZRsY1c" resolve="S01" />
+          <ref role="3VeSjP" node="5WyjFZRsY0V" />
+          <ref role="3VeSjQ" node="5WyjFZRsY1c" />
         </node>
         <node concept="7CXmI" id="5WyjFZRsY1h" role="lGtFl">
           <node concept="7OXhh" id="5WyjFZRsY1i" role="7EUXB">

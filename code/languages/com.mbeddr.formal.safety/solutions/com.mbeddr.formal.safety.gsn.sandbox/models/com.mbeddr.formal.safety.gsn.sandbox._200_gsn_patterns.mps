@@ -53,10 +53,10 @@
       </concept>
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
-      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ngI" index="8gIbR">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
         <property id="3226630706269685486" name="id" index="0lsPB" />
       </concept>
-      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ngI" index="8gIbW">
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
       <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc" />
@@ -1822,7 +1822,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="1xpXAu0X_5s" role="19SJt6">
-          <ref role="oTUVg" node="1xpXAu0X_wV" resolve="breaking too late" />
+          <ref role="oTUVg" node="1xpXAu0X_wV" />
         </node>
         <node concept="19SUe$" id="1xpXAu0X_5t" role="19SJt6">
           <property role="19SUeA" value="&#10; has been mitigated" />
@@ -1830,8 +1830,8 @@
       </node>
     </node>
     <node concept="8gDHL" id="1xpXAu0X_5u" role="2vhqc$">
-      <ref role="3VeSjP" node="1xpXAu0X_5e" resolve="S01" />
-      <ref role="3VeSjQ" node="1xpXAu0X_5p" resolve="G2" />
+      <ref role="3VeSjP" node="1xpXAu0X_5e" />
+      <ref role="3VeSjQ" node="1xpXAu0X_5p" />
     </node>
     <node concept="FXfxu" id="1xpXAu0X_5e" role="2vn1q5">
       <property role="TrG5h" value="S01" />
@@ -1840,7 +1840,7 @@
           <property role="19SUeA" value="All hazards from &#10;" />
         </node>
         <node concept="oXkut" id="1xpXAu0X_5h" role="19SJt6">
-          <ref role="oTdVe" node="7TjUbLQ5hUY" resolve="_090_hazards" />
+          <ref role="oTdVe" node="7TjUbLQ5hUY" />
         </node>
         <node concept="19SUe$" id="1xpXAu0X_5i" role="19SJt6">
           <property role="19SUeA" value="&#10; have been addressed" />
@@ -1848,8 +1848,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="1xpXAu0X_gl" role="2vhqc$">
-      <ref role="3VeSjP" node="7TjUbLQ5Oru" resolve="G1" />
-      <ref role="3VeSjQ" node="1xpXAu0X_5e" resolve="S01" />
+      <ref role="3VeSjP" node="7TjUbLQ5Oru" />
+      <ref role="3VeSjQ" node="1xpXAu0X_5e" />
     </node>
     <node concept="atroF" id="1Y8zh0me$q1" role="2vn1q5">
       <property role="8uqrb" value="true" />
@@ -1859,7 +1859,7 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="1Y8zh0me$q4" role="19SJt6">
-          <ref role="oTUVg" node="7TjUbLQ5xJR" resolve="breaking too high" />
+          <ref role="oTUVg" node="7TjUbLQ5xJR" />
         </node>
         <node concept="19SUe$" id="1Y8zh0me$q5" role="19SJt6">
           <property role="19SUeA" value="&#10; has been eliminated &#10; and can no longer occur" />
@@ -1867,8 +1867,8 @@
       </node>
     </node>
     <node concept="8gDHL" id="1Y8zh0mf6Vr" role="2vhqc$">
-      <ref role="3VeSjP" node="1xpXAu0X_5e" resolve="S01" />
-      <ref role="3VeSjQ" node="1Y8zh0me$q1" resolve="G3" />
+      <ref role="3VeSjP" node="1xpXAu0X_5e" />
+      <ref role="3VeSjQ" node="1Y8zh0me$q1" />
     </node>
     <node concept="atrou" id="1Y8zh0mf7Pb" role="2vn1q5">
       <property role="8uqrb" value="true" />
@@ -1878,20 +1878,20 @@
           <property role="19SUeA" value="Hazard " />
         </node>
         <node concept="oY6sn" id="1Y8zh0mf7Pe" role="19SJt6">
-          <ref role="oTUVg" node="7TjUbLQ5hV8" resolve="breaking too low" />
+          <ref role="oTUVg" node="7TjUbLQ5hV8" />
         </node>
         <node concept="19SUe$" id="1Y8zh0mf7Pf" role="19SJt6">
           <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
         </node>
         <node concept="oY6sn" id="1Y8zh0mf7Pg" role="19SJt6">
-          <ref role="oTUVg" node="7TjUbLQ5xJR" resolve="breaking too high" />
+          <ref role="oTUVg" node="7TjUbLQ5xJR" />
         </node>
         <node concept="19SUe$" id="1Y8zh0mf7Q_" role="19SJt6" />
       </node>
     </node>
     <node concept="8gDHL" id="1Y8zh0mf83b" role="2vhqc$">
-      <ref role="3VeSjP" node="1xpXAu0X_5e" resolve="S01" />
-      <ref role="3VeSjQ" node="1Y8zh0mf7Pb" resolve="G4" />
+      <ref role="3VeSjP" node="1xpXAu0X_5e" />
+      <ref role="3VeSjQ" node="1Y8zh0mf7Pb" />
     </node>
   </node>
   <node concept="8gVzP" id="7TjUbLQ5hUY">
@@ -1954,7 +1954,7 @@
       <node concept="19SGf9" id="1xpXAu0Y$Cl" role="2vnaTY">
         <node concept="19SUe$" id="1xpXAu0Y$Dj" role="19SJt6" />
         <node concept="2NwIr6" id="1xpXAu0Y$Cm" role="19SJt6">
-          <ref role="2NwIr1" node="1xpXAu0Y$Aw" resolve="SR01" />
+          <ref role="2NwIr1" node="1xpXAu0Y$Aw" />
         </node>
         <node concept="19SUe$" id="1xpXAu0Y$Cn" role="19SJt6">
           <property role="19SUeA" value="&#10; is satisfied" />
@@ -1962,8 +1962,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="1xpXAu0Y$Co" role="2vhqc$">
-      <ref role="3VeSjP" node="1xpXAu0Y$Cf" resolve="S01" />
-      <ref role="3VeSjQ" node="1xpXAu0Y$Ck" resolve="G01" />
+      <ref role="3VeSjP" node="1xpXAu0Y$Cf" />
+      <ref role="3VeSjQ" node="1xpXAu0Y$Ck" />
     </node>
     <node concept="2iK_uI" id="1xpXAu0Y$Cf" role="2vn1q5">
       <property role="TrG5h" value="S01" />
@@ -1972,7 +1972,7 @@
           <property role="19SUeA" value="All requirements from &#10;" />
         </node>
         <node concept="27blvF" id="1xpXAu0Y$Ci" role="19SJt6">
-          <ref role="27blvA" node="1xpXAu0Y$Av" resolve="_020_requirements" />
+          <ref role="27blvA" node="1xpXAu0Y$Av" />
         </node>
         <node concept="19SUe$" id="1xpXAu0Y$Cj" role="19SJt6">
           <property role="19SUeA" value="&#10; are satisfied" />
@@ -2070,7 +2070,7 @@
       <node concept="19SGf9" id="1xpXAu0Y$RT" role="2vnaTY">
         <node concept="19SUe$" id="1xpXAu0Y$Sa" role="19SJt6" />
         <node concept="2NwIr6" id="1xpXAu0Y$RU" role="19SJt6">
-          <ref role="2NwIr1" node="1xpXAu0Y$AC" resolve="SR02" />
+          <ref role="2NwIr1" node="1xpXAu0Y$AC" />
         </node>
         <node concept="19SUe$" id="1xpXAu0Y$RV" role="19SJt6">
           <property role="19SUeA" value="&#10; is satisfied" />
@@ -2078,8 +2078,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="1xpXAu0Y$UK" role="2vhqc$">
-      <ref role="3VeSjP" node="1xpXAu0Y$Cf" resolve="S01" />
-      <ref role="3VeSjQ" node="1xpXAu0Y$RS" resolve="G02" />
+      <ref role="3VeSjP" node="1xpXAu0Y$Cf" />
+      <ref role="3VeSjQ" node="1xpXAu0Y$RS" />
     </node>
   </node>
 </model>

@@ -83,13 +83,13 @@
     <property role="TrG5h" value="_10_boilerplates_container" />
     <node concept="1iq0qn" id="63UItOi6hK0" role="1iq0qk">
       <property role="1MUBaM" value="uca01" />
-      <ref role="1iq0qE" to="v0ty:4q9fsxm3ooS" resolve="Circuit Switch" />
-      <ref role="1iq0r6" to="v0ty:4q9fsxm3ow6" resolve="battery overheating" />
+      <ref role="1iq0qE" to="v0ty:4q9fsxm3ooS" />
+      <ref role="1iq0r6" to="v0ty:4q9fsxm3ow6" />
       <node concept="1iqbzp" id="63UItOi6hK2" role="1iqeDx">
-        <ref role="1iq0r3" to="v0ty:4q9fsxm3osI" resolve="Switch Open" />
+        <ref role="1iq0r3" to="v0ty:4q9fsxm3osI" />
       </node>
       <node concept="1ipxol" id="63UItOi6hK4" role="1ipxpF">
-        <ref role="1ipxoE" to="v0ty:4q9fsxm3Bzk" resolve="Charging Not Allowed" />
+        <ref role="1ipxoE" to="v0ty:4q9fsxm3Bzk" />
       </node>
       <node concept="3f6qtF" id="6vZMoXu1P0C" role="3f6qqO" />
       <node concept="3f6qtF" id="6vZMoXu1P0E" role="3f6qqO" />

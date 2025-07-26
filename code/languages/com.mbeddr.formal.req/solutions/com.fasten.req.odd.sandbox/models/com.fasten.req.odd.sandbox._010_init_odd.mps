@@ -80,34 +80,34 @@
   <node concept="3SOIZ$" id="3Jn$RV31p8J">
     <property role="TrG5h" value="first_odd" />
     <node concept="3fY04A" id="5hctYtavRSk" role="3SOIZ9">
-      <ref role="3fY04_" to="sqn2:7gUa1Zsx7gl" resolve="czarnecki_operational_world_model_for_ads" />
+      <ref role="3fY04_" to="sqn2:7gUa1Zsx7gl" />
       <node concept="3fWYEE" id="5hctYtavRTf" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
         <node concept="MFvB7" id="5hctYtavRTg" role="3fWY_o">
-          <ref role="MFvBS" to="sqn2:1f_hJh22DZf" resolve="Traffic Control Signals" />
+          <ref role="MFvBS" to="sqn2:1f_hJh22DZf" />
         </node>
         <node concept="3fZHMl" id="5hctYtavRTh" role="3fWwZA">
           <node concept="MFvB7" id="I_4wa9w6V$" role="3fZHMq">
-            <ref role="MFvBS" to="sqn2:1f_hJh22Ehy" resolve="Intersection Pedestrian Signals" />
+            <ref role="MFvBS" to="sqn2:1f_hJh22Ehy" />
           </node>
         </node>
         <node concept="3fZHMl" id="opo3atkepf" role="3fWwZA">
           <node concept="MFvB7" id="opo3atkepg" role="3fZHMq">
-            <ref role="MFvBS" to="sqn2:1f_hJh22EoV" resolve="Bicycles Control Signals" />
+            <ref role="MFvBS" to="sqn2:1f_hJh22EoV" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3fY04A" id="3RNDPbM3nIg" role="3SOIZ9">
-      <ref role="3fY04_" to="1o88:52bCGvYEnPu" resolve="phil_koopman" />
+      <ref role="3fY04_" to="1o88:52bCGvYEnPu" />
       <node concept="3fWYEE" id="3RNDPbM4U6e" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
         <node concept="MFvB7" id="3RNDPbM4U6z" role="3fWY_o">
-          <ref role="MFvBS" to="1o88:52bCGvYEznH" resolve="Environmental and Weather Conditions" />
+          <ref role="MFvBS" to="1o88:52bCGvYEznH" />
         </node>
         <node concept="3fZHMl" id="3RNDPbM4U6x" role="3fWwZA">
           <node concept="MFvB7" id="I_4wa9w6Vv" role="3fZHMq">
-            <ref role="MFvBS" to="1o88:3RNDPbLZQjz" resolve="Air Temperature" />
+            <ref role="MFvBS" to="1o88:3RNDPbLZQjz" />
           </node>
           <node concept="3fUWbm" id="3RNDPbM6AKk" role="3fZHMo">
             <property role="3fUWbn" value="it &lt; 50 C" />
@@ -117,33 +117,33 @@
       <node concept="3fWYEE" id="3RNDPbM3nIC" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
         <node concept="MFvB7" id="3RNDPbM3nID" role="3fWY_o">
-          <ref role="MFvBS" to="1o88:3RNDPbLZQmG" resolve="Traffic Management Devices" />
+          <ref role="MFvBS" to="1o88:3RNDPbLZQmG" />
         </node>
         <node concept="3fZHMl" id="3RNDPbM4qLR" role="3fWwZA">
           <node concept="MFvB7" id="3RNDPbM4qLP" role="3fZHMq">
-            <ref role="MFvBS" to="1o88:3RNDPbLZQou" resolve="Traffic Lights" />
+            <ref role="MFvBS" to="1o88:3RNDPbLZQou" />
           </node>
         </node>
       </node>
       <node concept="3fWYEE" id="3RNDPbM3nIF" role="3fY04B">
         <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
         <node concept="MFvB7" id="3RNDPbM3nIG" role="3fWY_o">
-          <ref role="MFvBS" to="1o88:52bCGvYEznQ" resolve="Rules of Engagement" />
+          <ref role="MFvBS" to="1o88:52bCGvYEznQ" />
         </node>
         <node concept="3fZHMl" id="3RNDPbM3TGb" role="3fWwZA">
           <node concept="MFvB7" id="3RNDPbM3nIH" role="3fZHMq">
-            <ref role="MFvBS" to="1o88:3RNDPbLZQvr" resolve="Traffic Laws" />
+            <ref role="MFvBS" to="1o88:3RNDPbLZQvr" />
           </node>
         </node>
       </node>
       <node concept="3fWYEE" id="3RNDPbM3nII" role="3fY04B">
         <node concept="MFvB7" id="3RNDPbM3nIJ" role="3fWY_o">
-          <ref role="MFvBS" to="1o88:52bCGvYEznW" resolve="Considerations of Deployment to Multiple Countries" />
+          <ref role="MFvBS" to="1o88:52bCGvYEznW" />
         </node>
       </node>
       <node concept="3fWYEE" id="3RNDPbM3nIK" role="3fY04B">
         <node concept="MFvB7" id="3RNDPbM3nIL" role="3fWY_o">
-          <ref role="MFvBS" to="1o88:52bCGvYEzob" resolve="Availability and freshness of infrastructure characterization data" />
+          <ref role="MFvBS" to="1o88:52bCGvYEzob" />
         </node>
       </node>
     </node>
@@ -166,7 +166,7 @@
               <property role="19SUeA" value="Requirement referencing " />
             </node>
             <node concept="4Ekw$" id="783AALQF$I1" role="19SJt6">
-              <ref role="4EkwA" node="3Jn$RV31p8J" resolve="first_odd" />
+              <ref role="4EkwA" node="3Jn$RV31p8J" />
             </node>
             <node concept="19SUe$" id="783AALQF$I2" role="19SJt6">
               <property role="19SUeA" value=" " />

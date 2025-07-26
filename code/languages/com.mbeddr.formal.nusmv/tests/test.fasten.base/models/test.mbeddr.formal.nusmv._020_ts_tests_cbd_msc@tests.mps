@@ -96,14 +96,14 @@
         <node concept="oRLRZ" id="3QO5pQQMPQt" role="3_aW3_" />
         <node concept="3_aW46" id="3QO5pQQMPQD" role="3_aW3_">
           <node concept="oYKel" id="3QO5pQQMPQJ" role="oZz2X">
-            <ref role="oYKei" node="3QO5pQQMPQn" resolve="sender" />
+            <ref role="oYKei" node="3QO5pQQMPQn" />
           </node>
           <node concept="oYKel" id="3QO5pQQMPQL" role="oZz2S">
-            <ref role="oYKei" node="3QO5pQQMPQo" resolve="receiver" />
+            <ref role="oYKei" node="3QO5pQQMPQo" />
           </node>
           <node concept="2bsV3G" id="3QO5pQQMPQQ" role="3_fVoY">
             <node concept="2btTNY" id="3QO5pQQMPQS" role="2bsV3J">
-              <ref role="2bsodY" to="3mdc:3QO5pQQMPNW" resolve="sender_out" />
+              <ref role="2bsodY" to="3mdc:3QO5pQQMPNW" />
               <node concept="1yCjRe" id="3QO5pQQMPR4" role="2bsobk" />
             </node>
           </node>
@@ -111,14 +111,14 @@
         <node concept="oRLRZ" id="3QO5pQQMYZ2" role="3_aW3_" />
         <node concept="3_aW46" id="3QO5pQQMYXd" role="3_aW3_">
           <node concept="oYKel" id="3QO5pQQMYXe" role="oZz2X">
-            <ref role="oYKei" node="3QO5pQQMPQn" resolve="sender" />
+            <ref role="oYKei" node="3QO5pQQMPQn" />
           </node>
           <node concept="oYKel" id="3QO5pQQMYXf" role="oZz2S">
-            <ref role="oYKei" node="3QO5pQQMPQo" resolve="receiver" />
+            <ref role="oYKei" node="3QO5pQQMPQo" />
           </node>
           <node concept="2bsV3G" id="3QO5pQQMYXg" role="3_fVoY">
             <node concept="2btTNY" id="3QO5pQQMYXh" role="2bsV3J">
-              <ref role="2bsodY" to="3mdc:3QO5pQQMPNW" resolve="sender_out" />
+              <ref role="2bsodY" to="3mdc:3QO5pQQMPNW" />
               <node concept="2IPVmt" id="3QO5pQQMYZC" role="2bsobk">
                 <property role="2IPVms" value="2" />
                 <node concept="7CXmI" id="3QO5pQQN0KJ" role="lGtFl">
@@ -131,14 +131,14 @@
         <node concept="oRLRZ" id="3QO5pQQMTiv" role="3_aW3_" />
         <node concept="3_aW46" id="3QO5pQQMTi3" role="3_aW3_">
           <node concept="oYKel" id="3QO5pQQMTi4" role="oZz2X">
-            <ref role="oYKei" node="3QO5pQQMPQn" resolve="sender" />
+            <ref role="oYKei" node="3QO5pQQMPQn" />
           </node>
           <node concept="oYKel" id="3QO5pQQMTi5" role="oZz2S">
-            <ref role="oYKei" node="3QO5pQQMPQo" resolve="receiver" />
+            <ref role="oYKei" node="3QO5pQQMPQo" />
           </node>
           <node concept="2bsV3G" id="3QO5pQQMTi6" role="3_fVoY">
             <node concept="2btTNY" id="3QO5pQQMTi7" role="2bsV3J">
-              <ref role="2bsodY" to="3mdc:3QO5pQQMTjd" resolve="send_in" />
+              <ref role="2bsodY" to="3mdc:3QO5pQQMTjd" />
               <node concept="1yCjRe" id="3QO5pQQMTi8" role="2bsobk" />
               <node concept="7CXmI" id="3QO5pQQMUDw" role="lGtFl">
                 <node concept="1TM$A" id="3QO5pQQMUDx" role="7EUXB" />
@@ -149,14 +149,14 @@
         <node concept="oRLRZ" id="3QO5pQQMPQ$" role="3_aW3_" />
         <node concept="3_aW46" id="3QO5pQQMPRw" role="3_aW3_">
           <node concept="oYKel" id="3QO5pQQMPRG" role="oZz2X">
-            <ref role="oYKei" node="3QO5pQQMPQo" resolve="receiver" />
+            <ref role="oYKei" node="3QO5pQQMPQo" />
           </node>
           <node concept="oYKel" id="3QO5pQQMPRI" role="oZz2S">
-            <ref role="oYKei" node="3QO5pQQMPQn" resolve="sender" />
+            <ref role="oYKei" node="3QO5pQQMPQn" />
           </node>
           <node concept="2bsV3G" id="3QO5pQQMPRK" role="3_fVoY">
             <node concept="2btTNY" id="3QO5pQQMTjN" role="2bsV3J">
-              <ref role="2bsodY" to="3mdc:3QO5pQQMPNW" resolve="sender_out" />
+              <ref role="2bsodY" to="3mdc:3QO5pQQMPNW" />
               <node concept="1yCjRe" id="3QO5pQQMTjO" role="2bsobk" />
               <node concept="7CXmI" id="3QO5pQQMUhV" role="lGtFl">
                 <node concept="1TM$A" id="3QO5pQQMUhW" role="7EUXB" />
@@ -172,11 +172,11 @@
         </node>
         <node concept="2b3SXi" id="3QO5pQQMPQn" role="3_aW3F">
           <property role="TrG5h" value="sender" />
-          <ref role="2b3SXf" to="3mdc:3QO5pQQMPPr" resolve="sender" />
+          <ref role="2b3SXf" to="3mdc:3QO5pQQMPPr" />
         </node>
         <node concept="2b3SXi" id="3QO5pQQMPQo" role="3_aW3F">
           <property role="TrG5h" value="receiver" />
-          <ref role="2b3SXf" to="3mdc:3QO5pQQMPP$" resolve="receiver" />
+          <ref role="2b3SXf" to="3mdc:3QO5pQQMPP$" />
         </node>
         <node concept="7CXmI" id="3QO5pQQMTk2" role="lGtFl">
           <node concept="7OXhh" id="3QO5pQQMTk7" role="7EUXB">

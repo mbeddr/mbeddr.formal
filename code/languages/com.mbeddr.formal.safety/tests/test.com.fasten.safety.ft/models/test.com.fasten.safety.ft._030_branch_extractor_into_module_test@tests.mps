@@ -411,16 +411,16 @@
         </node>
         <node concept="4e07$" id="3ybZIMDkJCr" role="3CrHoS" />
         <node concept="21oswF" id="3ybZIMDkJCs" role="3CrHoS">
-          <ref role="21oszt" node="3ybZIMDkJCn" resolve="And Gate 1" />
-          <ref role="21oszj" node="3ybZIMDkJCp" resolve="ev1" />
+          <ref role="21oszt" node="3ybZIMDkJCn" />
+          <ref role="21oszj" node="3ybZIMDkJCp" />
         </node>
         <node concept="21oswF" id="3ybZIMDkJCt" role="3CrHoS">
-          <ref role="21oszt" node="3ybZIMDkJCo" resolve="And Gate 2" />
-          <ref role="21oszj" node="3ybZIMDkJCn" resolve="And Gate 1" />
+          <ref role="21oszt" node="3ybZIMDkJCo" />
+          <ref role="21oszj" node="3ybZIMDkJCn" />
         </node>
         <node concept="21oswF" id="3ybZIMDkJCu" role="3CrHoS">
-          <ref role="21oszt" node="3ybZIMDkJCo" resolve="And Gate 2" />
-          <ref role="21oszj" node="3ybZIMDkJCq" resolve="ev3" />
+          <ref role="21oszt" node="3ybZIMDkJCo" />
+          <ref role="21oszj" node="3ybZIMDkJCq" />
         </node>
         <node concept="37mRI7" id="3ybZIMDkJCv" role="lGtFl">
           <node concept="37mRIm" id="3ybZIMDkJCy" role="37mRID">
@@ -768,7 +768,7 @@
         <node concept="21ATtk" id="3ybZIMDkJGZ" role="3CrHoS" />
         <node concept="21oswF" id="3ybZIMDkJH2" role="3CrHoS">
           <ref role="21oszt" node="3ybZIMDkJGZ" />
-          <ref role="21oszj" node="3ybZIMDkJCo" resolve="And Gate 2" />
+          <ref role="21oszj" node="3ybZIMDkJCo" />
         </node>
         <node concept="cFNQA" id="3ybZIMDkJH6" role="3CrHoS">
           <property role="TrG5h" value="Or Gate 1" />
@@ -780,16 +780,16 @@
           <property role="TrG5h" value="ev2" />
         </node>
         <node concept="21oswF" id="3ybZIMDkJHf" role="3CrHoS">
-          <ref role="21oszt" node="3ybZIMDkJH6" resolve="Or Gate 1" />
-          <ref role="21oszj" node="3ybZIMDkJH9" resolve="ev4" />
+          <ref role="21oszt" node="3ybZIMDkJH6" />
+          <ref role="21oszj" node="3ybZIMDkJH9" />
         </node>
         <node concept="21oswF" id="3ybZIMDkJHi" role="3CrHoS">
-          <ref role="21oszt" node="3ybZIMDkJH6" resolve="Or Gate 1" />
-          <ref role="21oszj" node="3ybZIMDkJHc" resolve="ev2" />
+          <ref role="21oszt" node="3ybZIMDkJH6" />
+          <ref role="21oszj" node="3ybZIMDkJHc" />
         </node>
         <node concept="21oswF" id="3ybZIMDkJHl" role="3CrHoS">
-          <ref role="21oszt" node="3ybZIMDkJCn" resolve="And Gate 1" />
-          <ref role="21oszj" node="3ybZIMDkJH6" resolve="Or Gate 1" />
+          <ref role="21oszt" node="3ybZIMDkJCn" />
+          <ref role="21oszj" node="3ybZIMDkJH6" />
         </node>
       </node>
     </node>
@@ -821,24 +821,24 @@
           <property role="TrG5h" value="Basic Event 2" />
         </node>
         <node concept="21oswF" id="NSnLXM_H0W" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXM_H0D" resolve="TOP" />
-          <ref role="21oszj" node="NSnLXM_H0H" resolve="And 1" />
+          <ref role="21oszt" node="NSnLXM_H0D" />
+          <ref role="21oszj" node="NSnLXM_H0H" />
         </node>
         <node concept="21oswF" id="NSnLXM_H0Z" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXM_H0H" resolve="And 1" />
-          <ref role="21oszj" node="NSnLXM_H0K" resolve="Or Gate to Extract 1" />
+          <ref role="21oszt" node="NSnLXM_H0H" />
+          <ref role="21oszj" node="NSnLXM_H0K" />
         </node>
         <node concept="21oswF" id="NSnLXM_H12" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXM_H0H" resolve="And 1" />
-          <ref role="21oszj" node="NSnLXM_H0N" resolve="Basic Event 3" />
+          <ref role="21oszt" node="NSnLXM_H0H" />
+          <ref role="21oszj" node="NSnLXM_H0N" />
         </node>
         <node concept="21oswF" id="NSnLXM_H15" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXM_H0K" resolve="Or Gate to Extract 1" />
-          <ref role="21oszj" node="NSnLXM_H0Q" resolve="Basic Event 1" />
+          <ref role="21oszt" node="NSnLXM_H0K" />
+          <ref role="21oszj" node="NSnLXM_H0Q" />
         </node>
         <node concept="21oswF" id="NSnLXM_H18" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXM_H0K" resolve="Or Gate to Extract 1" />
-          <ref role="21oszj" node="NSnLXM_H0T" resolve="Basic Event 2" />
+          <ref role="21oszt" node="NSnLXM_H0K" />
+          <ref role="21oszj" node="NSnLXM_H0T" />
         </node>
         <node concept="37mRI7" id="NSnLXMA4ab" role="lGtFl" />
         <node concept="3xLA65" id="NSnLXMAcVK" role="lGtFl">
@@ -858,20 +858,20 @@
           <property role="TrG5h" value="Basic Event 3" />
         </node>
         <node concept="21oswF" id="NSnLXM_H1K" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXM_H1E" resolve="TOP" />
-          <ref role="21oszj" node="NSnLXM_H1F" resolve="And 1" />
+          <ref role="21oszt" node="NSnLXM_H1E" />
+          <ref role="21oszj" node="NSnLXM_H1F" />
         </node>
         <node concept="21oswF" id="NSnLXM_H1L" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXM_H1F" resolve="And 1" />
-          <ref role="21oszj" node="NSnLXM_H1O" resolve="Or Gate to Extract 1_away" />
+          <ref role="21oszt" node="NSnLXM_H1F" />
+          <ref role="21oszj" node="NSnLXM_H1O" />
         </node>
         <node concept="21oswF" id="NSnLXM_H1M" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXM_H1F" resolve="And 1" />
-          <ref role="21oszj" node="NSnLXM_H1I" resolve="Basic Event 3" />
+          <ref role="21oszt" node="NSnLXM_H1F" />
+          <ref role="21oszj" node="NSnLXM_H1I" />
         </node>
         <node concept="1_05Uv" id="NSnLXM_H1O" role="3CrHoS">
           <property role="TrG5h" value="Or Gate to Extract 1_away" />
-          <ref role="1_em_T" node="NSnLXM_H0K" resolve="Or Gate to Extract 1" />
+          <ref role="1_em_T" node="NSnLXM_H0K" />
         </node>
       </node>
     </node>
@@ -969,16 +969,16 @@
           <property role="TrG5h" value="Basic Event 3" />
         </node>
         <node concept="21oswF" id="NSnLXMAx1f" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXMAx18" resolve="TOP" />
-          <ref role="21oszj" node="NSnLXMAx19" resolve="And 1" />
+          <ref role="21oszt" node="NSnLXMAx18" />
+          <ref role="21oszj" node="NSnLXMAx19" />
         </node>
         <node concept="21oswF" id="NSnLXMAx1g" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXMAx19" resolve="And 1" />
-          <ref role="21oszj" node="NSnLXMAxus" resolve="Or Gate to Extract 1_away" />
+          <ref role="21oszt" node="NSnLXMAx19" />
+          <ref role="21oszj" node="NSnLXMAxus" />
         </node>
         <node concept="21oswF" id="NSnLXMAx1h" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXMAx19" resolve="And 1" />
-          <ref role="21oszj" node="NSnLXMAx1c" resolve="Basic Event 3" />
+          <ref role="21oszt" node="NSnLXMAx19" />
+          <ref role="21oszj" node="NSnLXMAx1c" />
         </node>
         <node concept="37mRI7" id="NSnLXMAx1k" role="lGtFl">
           <node concept="37mRIm" id="NSnLXMAxgH" role="37mRID">
@@ -1107,7 +1107,7 @@
         </node>
         <node concept="1_05Uv" id="NSnLXMAxus" role="3CrHoS">
           <property role="TrG5h" value="Or Gate to Extract 1_away" />
-          <ref role="1_em_T" node="NSnLXMAx1a" resolve="Or Gate to Extract 1" />
+          <ref role="1_em_T" node="NSnLXMAx1a" />
           <node concept="LIFWc" id="NSnLXMAxyy" role="lGtFl">
             <property role="LIFWa" value="0" />
             <property role="LIFWd" value="DiagramNode_fe7rk5_a" />
@@ -1127,16 +1127,16 @@
           <property role="TrG5h" value="Basic Event 3" />
         </node>
         <node concept="21oswF" id="NSnLXMCilk" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXMCilh" resolve="TOP" />
-          <ref role="21oszj" node="NSnLXMCili" resolve="And 1" />
+          <ref role="21oszt" node="NSnLXMCilh" />
+          <ref role="21oszj" node="NSnLXMCili" />
         </node>
         <node concept="21oswF" id="NSnLXMCill" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXMCili" resolve="And 1" />
-          <ref role="21oszj" node="NSnLXMCiln" resolve="Or Gate to Extract 1" />
+          <ref role="21oszt" node="NSnLXMCili" />
+          <ref role="21oszj" node="NSnLXMCiln" />
         </node>
         <node concept="21oswF" id="NSnLXMCilm" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXMCili" resolve="And 1" />
-          <ref role="21oszj" node="NSnLXMCilj" resolve="Basic Event 3" />
+          <ref role="21oszt" node="NSnLXMCili" />
+          <ref role="21oszj" node="NSnLXMCilj" />
         </node>
         <node concept="cFNQA" id="NSnLXMCiln" role="3CrHoS">
           <property role="TrG5h" value="Or Gate to Extract 1" />
@@ -1148,12 +1148,12 @@
           <property role="TrG5h" value="Basic Event 2" />
         </node>
         <node concept="21oswF" id="NSnLXMCilq" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXMCiln" resolve="Or Gate to Extract 1" />
-          <ref role="21oszj" node="NSnLXMCilo" resolve="Basic Event 1" />
+          <ref role="21oszt" node="NSnLXMCiln" />
+          <ref role="21oszj" node="NSnLXMCilo" />
         </node>
         <node concept="21oswF" id="NSnLXMCilr" role="3CrHoS">
-          <ref role="21oszt" node="NSnLXMCiln" resolve="Or Gate to Extract 1" />
-          <ref role="21oszj" node="NSnLXMCilp" resolve="Basic Event 2" />
+          <ref role="21oszt" node="NSnLXMCiln" />
+          <ref role="21oszj" node="NSnLXMCilp" />
         </node>
       </node>
     </node>
@@ -1249,12 +1249,12 @@
       <property role="TrG5h" value="Basic Event 2" />
     </node>
     <node concept="21oswF" id="NSnLXMAx1i" role="3CrHoS">
-      <ref role="21oszt" node="NSnLXMAx1a" resolve="Or Gate to Extract 1" />
-      <ref role="21oszj" node="NSnLXMAx1d" resolve="Basic Event 1" />
+      <ref role="21oszt" node="NSnLXMAx1a" />
+      <ref role="21oszj" node="NSnLXMAx1d" />
     </node>
     <node concept="21oswF" id="NSnLXMAx1j" role="3CrHoS">
-      <ref role="21oszt" node="NSnLXMAx1a" resolve="Or Gate to Extract 1" />
-      <ref role="21oszj" node="NSnLXMAx1e" resolve="Basic Event 2" />
+      <ref role="21oszt" node="NSnLXMAx1a" />
+      <ref role="21oszj" node="NSnLXMAx1e" />
     </node>
   </node>
 </model>

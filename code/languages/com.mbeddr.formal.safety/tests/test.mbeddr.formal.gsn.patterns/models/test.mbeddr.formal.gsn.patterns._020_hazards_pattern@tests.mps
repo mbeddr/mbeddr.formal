@@ -55,10 +55,10 @@
       <concept id="8278132229936590137" name="com.mbeddr.formal.safety.gsn.patterns.structure.ArgumentOverHazardsStrategy" flags="ng" index="FXfxu" />
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
-      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ngI" index="8gIbR">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
         <property id="3226630706269685486" name="id" index="0lsPA" />
       </concept>
-      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ngI" index="8gIbW">
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
       <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc" />
@@ -653,7 +653,7 @@
               <property role="19SUeA" value="All hazards from " />
             </node>
             <node concept="oXkut" id="1qK9rHkjjxj" role="19SJt6">
-              <ref role="oTdVe" node="5uFV_KLFv$f" resolve="_010_hazards_list" />
+              <ref role="oTdVe" node="5uFV_KLFv$f" />
             </node>
             <node concept="19SUe$" id="1qK9rHkjjxk" role="19SJt6">
               <property role="19SUeA" value="&#10; have been addressed" />
@@ -673,7 +673,7 @@
               <property role="19SUeA" value="Hazard " />
             </node>
             <node concept="oY6sn" id="7lPNUDMqxlM" role="19SJt6">
-              <ref role="oTUVg" node="5uFV_KLFv$g" resolve="first hazard from the first list" />
+              <ref role="oTUVg" node="5uFV_KLFv$g" />
             </node>
             <node concept="19SUe$" id="7lPNUDMqxlN" role="19SJt6">
               <property role="19SUeA" value="&#10; has been eliminated &#10; and can no longer occur" />
@@ -681,8 +681,8 @@
           </node>
         </node>
         <node concept="8gDHL" id="7lPNUDMqxlO" role="2vhqc$">
-          <ref role="3VeSjP" node="1qK9rHkjjxg" resolve="S1" />
-          <ref role="3VeSjQ" node="7lPNUDMqxlJ" resolve="G1" />
+          <ref role="3VeSjP" node="1qK9rHkjjxg" />
+          <ref role="3VeSjQ" node="7lPNUDMqxlJ" />
         </node>
         <node concept="8gVzV" id="7lPNUDMqxUi" role="2vn1q5">
           <property role="8uqrb" value="true" />
@@ -692,7 +692,7 @@
               <property role="19SUeA" value="Hazard " />
             </node>
             <node concept="oY6sn" id="7lPNUDMqxUl" role="19SJt6">
-              <ref role="oTUVg" node="1qK9rHkji8z" resolve="second hazard from the first list" />
+              <ref role="oTUVg" node="1qK9rHkji8z" />
             </node>
             <node concept="19SUe$" id="7lPNUDMqxUm" role="19SJt6">
               <property role="19SUeA" value="&#10; has been mitigated" />
@@ -700,8 +700,8 @@
           </node>
         </node>
         <node concept="8gDHL" id="7lPNUDMqxUn" role="2vhqc$">
-          <ref role="3VeSjP" node="1qK9rHkjjxg" resolve="S1" />
-          <ref role="3VeSjQ" node="7lPNUDMqxUi" resolve="G2" />
+          <ref role="3VeSjP" node="1qK9rHkjjxg" />
+          <ref role="3VeSjQ" node="7lPNUDMqxUi" />
         </node>
         <node concept="atroE" id="7lPNUDMqxWN" role="2vn1q5">
           <property role="8uqrb" value="true" />
@@ -711,7 +711,7 @@
               <property role="19SUeA" value="Risk associated with hazard " />
             </node>
             <node concept="oY6sn" id="7lPNUDMqxWQ" role="19SJt6">
-              <ref role="oTUVg" node="1qK9rHkji8B" resolve="third hazard from the first list" />
+              <ref role="oTUVg" node="1qK9rHkji8B" />
             </node>
             <node concept="19SUe$" id="7lPNUDMqxWR" role="19SJt6">
               <property role="19SUeA" value="&#10; has been shown negligible" />
@@ -719,8 +719,8 @@
           </node>
         </node>
         <node concept="8gDHL" id="7lPNUDMqxWS" role="2vhqc$">
-          <ref role="3VeSjP" node="1qK9rHkjjxg" resolve="S1" />
-          <ref role="3VeSjQ" node="7lPNUDMqxWN" resolve="G3" />
+          <ref role="3VeSjP" node="1qK9rHkjjxg" />
+          <ref role="3VeSjQ" node="7lPNUDMqxWN" />
         </node>
       </node>
     </node>
@@ -1385,7 +1385,7 @@
               <property role="19SUeA" value="All hazards from " />
             </node>
             <node concept="oXkut" id="1qK9rHkjJNB" role="19SJt6">
-              <ref role="oTdVe" node="5uFV_KLFv$f" resolve="_010_hazards_list" />
+              <ref role="oTdVe" node="5uFV_KLFv$f" />
             </node>
             <node concept="19SUe$" id="1qK9rHkjJNC" role="19SJt6">
               <property role="19SUeA" value="&#10; have been addressed" />
@@ -1405,7 +1405,7 @@
               <property role="19SUeA" value="Hazard " />
             </node>
             <node concept="oY6sn" id="7lPNUDMqy$G" role="19SJt6">
-              <ref role="oTUVg" node="5uFV_KLFv$g" resolve="first hazard from the first list" />
+              <ref role="oTUVg" node="5uFV_KLFv$g" />
             </node>
             <node concept="19SUe$" id="7lPNUDMqy$H" role="19SJt6">
               <property role="19SUeA" value="&#10; has been eliminated &#10; and can no longer occur" />
@@ -1413,8 +1413,8 @@
           </node>
         </node>
         <node concept="8gDHL" id="7lPNUDMqy$I" role="2vhqc$">
-          <ref role="3VeSjP" node="1qK9rHkjJN$" resolve="S1" />
-          <ref role="3VeSjQ" node="7lPNUDMqy$D" resolve="G1" />
+          <ref role="3VeSjP" node="1qK9rHkjJN$" />
+          <ref role="3VeSjQ" node="7lPNUDMqy$D" />
         </node>
         <node concept="atrou" id="7lPNUDMqyB4" role="2vn1q5">
           <property role="8uqrb" value="true" />
@@ -1424,20 +1424,20 @@
               <property role="19SUeA" value="Hazard " />
             </node>
             <node concept="oY6sn" id="7lPNUDMqyB7" role="19SJt6">
-              <ref role="oTUVg" node="1qK9rHkji8z" resolve="second hazard from the first list" />
+              <ref role="oTUVg" node="1qK9rHkji8z" />
             </node>
             <node concept="19SUe$" id="7lPNUDMqyB8" role="19SJt6">
               <property role="19SUeA" value="&#10; has been substituted &#10; with hazard " />
             </node>
             <node concept="oY6sn" id="7lPNUDMqyB9" role="19SJt6">
-              <ref role="oTUVg" node="1qK9rHkji8B" resolve="third hazard from the first list" />
+              <ref role="oTUVg" node="1qK9rHkji8B" />
             </node>
             <node concept="19SUe$" id="7lPNUDMqyBt" role="19SJt6" />
           </node>
         </node>
         <node concept="8gDHL" id="7lPNUDMqyBa" role="2vhqc$">
-          <ref role="3VeSjP" node="1qK9rHkjJN$" resolve="S1" />
-          <ref role="3VeSjQ" node="7lPNUDMqyB4" resolve="G2" />
+          <ref role="3VeSjP" node="1qK9rHkjJN$" />
+          <ref role="3VeSjQ" node="7lPNUDMqyB4" />
         </node>
         <node concept="atroE" id="7lPNUDMqyDH" role="2vn1q5">
           <property role="8uqrb" value="true" />
@@ -1447,7 +1447,7 @@
               <property role="19SUeA" value="Risk associated with hazard " />
             </node>
             <node concept="oY6sn" id="7lPNUDMqyDK" role="19SJt6">
-              <ref role="oTUVg" node="1qK9rHkji8B" resolve="third hazard from the first list" />
+              <ref role="oTUVg" node="1qK9rHkji8B" />
             </node>
             <node concept="19SUe$" id="7lPNUDMqyDL" role="19SJt6">
               <property role="19SUeA" value="&#10; has been shown negligible" />
@@ -1455,8 +1455,8 @@
           </node>
         </node>
         <node concept="8gDHL" id="7lPNUDMqyDM" role="2vhqc$">
-          <ref role="3VeSjP" node="1qK9rHkjJN$" resolve="S1" />
-          <ref role="3VeSjQ" node="7lPNUDMqyDH" resolve="G3" />
+          <ref role="3VeSjP" node="1qK9rHkjJN$" />
+          <ref role="3VeSjQ" node="7lPNUDMqyDH" />
         </node>
       </node>
     </node>
@@ -2061,7 +2061,7 @@
               <property role="19SUeA" value="All hazards from " />
             </node>
             <node concept="oXkut" id="1qK9rHkjjJR" role="19SJt6">
-              <ref role="oTdVe" node="5uFV_KLFv$f" resolve="_010_hazards_list" />
+              <ref role="oTdVe" node="5uFV_KLFv$f" />
             </node>
             <node concept="19SUe$" id="1qK9rHkjjJS" role="19SJt6">
               <property role="19SUeA" value="&#10; have been addressed" />
@@ -2088,7 +2088,7 @@
               <property role="19SUeA" value="Hazard " />
             </node>
             <node concept="oY6sn" id="7lPNUDMqzsu" role="19SJt6">
-              <ref role="oTUVg" node="5uFV_KLFv$g" resolve="first hazard from the first list" />
+              <ref role="oTUVg" node="5uFV_KLFv$g" />
             </node>
             <node concept="19SUe$" id="7lPNUDMqzsv" role="19SJt6">
               <property role="19SUeA" value="&#10; has been mitigated" />
@@ -2096,8 +2096,8 @@
           </node>
         </node>
         <node concept="8gDHL" id="7lPNUDMqzsw" role="2vhqc$">
-          <ref role="3VeSjP" node="1qK9rHkjjJO" resolve="S1" />
-          <ref role="3VeSjQ" node="7lPNUDMqzsr" resolve="G1" />
+          <ref role="3VeSjP" node="1qK9rHkjjJO" />
+          <ref role="3VeSjQ" node="7lPNUDMqzsr" />
         </node>
         <node concept="atroF" id="7lPNUDMqzuT" role="2vn1q5">
           <property role="8uqrb" value="true" />
@@ -2107,7 +2107,7 @@
               <property role="19SUeA" value="Hazard " />
             </node>
             <node concept="oY6sn" id="7lPNUDMqzuW" role="19SJt6">
-              <ref role="oTUVg" node="1qK9rHkji8z" resolve="second hazard from the first list" />
+              <ref role="oTUVg" node="1qK9rHkji8z" />
             </node>
             <node concept="19SUe$" id="7lPNUDMqzuX" role="19SJt6">
               <property role="19SUeA" value="&#10; has been eliminated &#10; and can no longer occur" />
@@ -2115,8 +2115,8 @@
           </node>
         </node>
         <node concept="8gDHL" id="7lPNUDMqzuY" role="2vhqc$">
-          <ref role="3VeSjP" node="1qK9rHkjjJO" resolve="S1" />
-          <ref role="3VeSjQ" node="7lPNUDMqzuT" resolve="G2" />
+          <ref role="3VeSjP" node="1qK9rHkjjJO" />
+          <ref role="3VeSjQ" node="7lPNUDMqzuT" />
         </node>
       </node>
     </node>

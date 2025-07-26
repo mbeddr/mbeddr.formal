@@ -54,10 +54,10 @@
         <child id="7632099376748602196" name="time" index="SvwEA" />
         <child id="7632099376748602197" name="timeUnit" index="SvwEB" />
       </concept>
-      <concept id="7632099376746146979" name="com.mbeddr.formal.req.tl_patterns.structure.ISpecWithTime" flags="ngI" index="Sxolh">
+      <concept id="7632099376746146979" name="com.mbeddr.formal.req.tl_patterns.structure.ISpecWithTime" flags="ng" index="Sxolh">
         <child id="7632099376746146980" name="time" index="Sxolm" />
       </concept>
-      <concept id="7632099376746632815" name="com.mbeddr.formal.req.tl_patterns.structure.ISpecWithProbability" flags="ngI" index="SB3Yt">
+      <concept id="7632099376746632815" name="com.mbeddr.formal.req.tl_patterns.structure.ISpecWithProbability" flags="ng" index="SB3Yt">
         <child id="7632099376746632816" name="probability" index="SB3Y2" />
       </concept>
       <concept id="7632099376746544950" name="com.mbeddr.formal.req.tl_patterns.structure.HighProbabilityBound" flags="ng" index="SBTr4" />
@@ -102,7 +102,7 @@
       <concept id="2184270308345955043" name="com.mbeddr.formal.req.tl_patterns.structure.Time" flags="ng" index="3gddiA">
         <child id="2184270308345955380" name="unit" index="3gdd9L" />
       </concept>
-      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ngI" index="3z0uXf">
+      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ng" index="3z0uXf">
         <child id="6544290145033523834" name="specs" index="3z0uXc" />
       </concept>
       <concept id="6544290145033461193" name="com.mbeddr.formal.req.tl_patterns.structure.TLRequirementSpecification" flags="ng" index="3z7I3Z" />

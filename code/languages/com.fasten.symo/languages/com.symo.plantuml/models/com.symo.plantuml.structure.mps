@@ -749,7 +749,7 @@
     <property role="TrG5h" value="Together" />
     <property role="34LRSv" value="together" />
     <property role="3GE5qa" value="diagram.common" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1_aHBvacGQR" role="PzmwI">
       <ref role="PrY4T" node="6BNnCp_okdG" resolve="IPlantUmlRootContent" />
     </node>
@@ -808,7 +808,7 @@
       <property role="20kJfa" value="content" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1_aHBvadUkr" resolve="IPlantUmlMindmapDiagramContent" />
-      <ref role="20ksaX" node="1I7wo92Vg_Y" />
+      <ref role="20ksaX" node="1I7wo92Vg_Y" resolve="content" />
     </node>
   </node>
   <node concept="PlHQZ" id="1_aHBvadUkr">
@@ -824,7 +824,7 @@
     <property role="3GE5qa" value="diagram.mindmap" />
     <property role="TrG5h" value="MindmapEntry" />
     <property role="34LRSv" value="entry" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1_aHBvaf0ro" role="1TKVEi">
       <property role="IQ2ns" value="1822469624835081944" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -846,7 +846,7 @@
     <property role="3GE5qa" value="diagram.mindmap.entry_values" />
     <property role="TrG5h" value="EntryValueBase" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="1_aHBvak083">
     <property role="EcuMT" value="1822469624836391427" />

@@ -46,7 +46,7 @@
       <concept id="2210355370893864968" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.URLEvidenceDocument" flags="ng" index="2Fbr9R">
         <property id="2210355370893864971" name="url" index="2Fbr9O" />
       </concept>
-      <concept id="2210355370893864965" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.IExternalRessourceDocument" flags="ngI" index="2Fbr9U">
+      <concept id="2210355370893864965" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.IExternalRessourceDocument" flags="ng" index="2Fbr9U">
         <child id="2210355370893974680" name="explanation" index="2FbXVB" />
       </concept>
       <concept id="4043927170651692617" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.ExternalEvidenceDocument" flags="ng" index="K87gv">
@@ -99,7 +99,7 @@
       </concept>
     </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
-      <concept id="4445845612600281072" name="com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames" flags="ngI" index="2GXxrR">
+      <concept id="4445845612600281072" name="com.mbeddr.formal.base.structure.IContainerForEntitiesWithPrefixedNames" flags="ng" index="2GXxrR">
         <property id="3731513482755311319" name="crtMaxIndex" index="3dZJ_E" />
       </concept>
     </language>
@@ -177,28 +177,28 @@
       </node>
     </node>
     <node concept="29fmEP" id="75La0fJ_xPF" role="2vhqc$">
-      <ref role="3VeSjQ" node="2ojFC2Jbcgb" resolve="E01" />
-      <ref role="3VeSjP" node="2ojFC2Jbcfq" resolve="A01" />
+      <ref role="3VeSjQ" node="2ojFC2Jbcgb" />
+      <ref role="3VeSjP" node="2ojFC2Jbcfq" />
     </node>
     <node concept="29fmEP" id="75La0fJ_xRE" role="2vhqc$">
-      <ref role="3VeSjQ" node="2ojFC2JbcgQ" resolve="E02" />
-      <ref role="3VeSjP" node="2ojFC2Jbcfq" resolve="A01" />
+      <ref role="3VeSjQ" node="2ojFC2JbcgQ" />
+      <ref role="3VeSjP" node="2ojFC2Jbcfq" />
     </node>
     <node concept="29fmEP" id="75La0fJ_xTM" role="2vhqc$">
-      <ref role="3VeSjQ" node="2ojFC2Jbcfq" resolve="A01" />
-      <ref role="3VeSjP" node="2ojFC2JbceP" resolve="C01" />
+      <ref role="3VeSjQ" node="2ojFC2Jbcfq" />
+      <ref role="3VeSjP" node="2ojFC2JbceP" />
     </node>
     <node concept="29fmEP" id="75La0fJ_xUY" role="2vhqc$">
-      <ref role="3VeSjP" node="2ojFC2Jbcfq" resolve="A01" />
-      <ref role="3VeSjQ" node="2ojFC2Jc9WF" resolve="W1" />
+      <ref role="3VeSjP" node="2ojFC2Jbcfq" />
+      <ref role="3VeSjQ" node="2ojFC2Jc9WF" />
     </node>
     <node concept="29fmEP" id="192INcxtsNG" role="2vhqc$">
-      <ref role="3VeSjQ" node="192INcxsqSx" resolve="C02" />
-      <ref role="3VeSjP" node="2ojFC2Jc9WF" resolve="W1" />
+      <ref role="3VeSjQ" node="192INcxsqSx" />
+      <ref role="3VeSjP" node="2ojFC2Jc9WF" />
     </node>
     <node concept="29fmEP" id="192INcxtsR$" role="2vhqc$">
-      <ref role="3VeSjQ" node="192INcxtsPb" resolve="C03" />
-      <ref role="3VeSjP" node="2ojFC2Jc9WF" resolve="W1" />
+      <ref role="3VeSjQ" node="192INcxtsPb" />
+      <ref role="3VeSjP" node="2ojFC2Jc9WF" />
     </node>
     <node concept="37mRI7" id="2ojFC2Jbcf7" role="lGtFl">
       <node concept="37mRIm" id="2ojFC2Jbcf8" role="37mRID">

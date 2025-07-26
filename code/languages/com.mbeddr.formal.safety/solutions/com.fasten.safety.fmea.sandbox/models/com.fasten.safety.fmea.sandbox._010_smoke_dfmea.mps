@@ -149,26 +149,26 @@
       <node concept="3Ug1AV" id="42QGQFVn3FJ" role="3UgYNK">
         <property role="TrG5h" value="s" />
         <node concept="3Ug1AZ" id="42QGQFVn3FI" role="3Ug1A_">
-          <ref role="3Ug1AY" node="42QGQFVn3Bd" resolve="Sender" />
+          <ref role="3Ug1AY" node="42QGQFVn3Bd" />
         </node>
       </node>
       <node concept="3Ug1AV" id="42QGQFVn3FY" role="3UgYNK">
         <property role="TrG5h" value="r" />
         <node concept="3Ug1AZ" id="42QGQFVn3FW" role="3Ug1A_">
-          <ref role="3Ug1AY" node="42QGQFVn3Dm" resolve="Receiver" />
+          <ref role="3Ug1AY" node="42QGQFVn3Dm" />
         </node>
       </node>
       <node concept="3Ug1$w" id="42QGQFVn3Gf" role="3UgYNK">
         <node concept="3Ug1GC" id="42QGQFVn3Gn" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="42QGQFVn3Bg" resolve="data" />
+          <ref role="3Ug1Ha" node="42QGQFVn3Bg" />
           <node concept="3Ug1GJ" id="42QGQFVn3Gm" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="42QGQFVn3FJ" resolve="s" />
+            <ref role="3Ug1GI" node="42QGQFVn3FJ" />
           </node>
         </node>
         <node concept="3Ug1GC" id="42QGQFVn3GH" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="42QGQFVn3Dv" resolve="data" />
+          <ref role="3Ug1Ha" node="42QGQFVn3Dv" />
           <node concept="3Ug1GJ" id="42QGQFVn3GG" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="42QGQFVn3FY" resolve="r" />
+            <ref role="3Ug1GI" node="42QGQFVn3FY" />
           </node>
         </node>
       </node>
@@ -193,7 +193,7 @@
     </node>
     <node concept="2VURXa" id="42QGQFVotAP" role="1POhhj" />
     <node concept="2VUHfc" id="42QGQFVnOkZ" role="1POhhj">
-      <ref role="2VUHf6" node="42QGQFVn3Dm" resolve="Receiver" />
+      <ref role="2VUHf6" node="42QGQFVn3Dm" />
       <node concept="2VUHfq" id="GA19r0MZIZ" role="2VUBrq">
         <property role="TrG5h" value="blocked" />
         <node concept="19SGf9" id="GA19r16ebr" role="2VUHfi">
@@ -209,7 +209,7 @@
     </node>
     <node concept="2VURXa" id="o0_W81kiyE" role="1POhhj" />
     <node concept="2VUHfc" id="o0_W81kiy3" role="1POhhj">
-      <ref role="2VUHf6" node="42QGQFVn3Bd" resolve="Sender" />
+      <ref role="2VUHf6" node="42QGQFVn3Bd" />
       <node concept="2VUHfq" id="o0_W81kiy4" role="2VUBrq">
         <property role="TrG5h" value="noisy" />
         <node concept="19SGf9" id="o0_W81kiy5" role="2VUHfi">
@@ -226,34 +226,34 @@
     <node concept="2VURXa" id="42QGQFVnOld" role="1POhhj" />
     <node concept="2VURXa" id="42QGQFVnOlm" role="1POhhj" />
     <node concept="1PLMAg" id="42QGQFVmZGJ" role="1POhhj">
-      <ref role="1POnuR" node="42QGQFVn3Fg" resolve="SenderReceiverSystem" />
+      <ref role="1POnuR" node="42QGQFVn3Fg" />
       <node concept="1PLGxJ" id="o0_W81kixT" role="1PLElB">
-        <ref role="1PLGwE" node="42QGQFVn3FJ" resolve="s" />
+        <ref role="1PLGwE" node="42QGQFVn3FJ" />
         <node concept="1PLKG7" id="o0_W81kiy1" role="1PLCo$">
-          <ref role="1jQAtN" node="o0_W81kiy4" resolve="noisy" />
+          <ref role="1jQAtN" node="o0_W81kiy4" />
           <node concept="1PNyZM" id="o0_W81kizc" role="1PLCoy">
-            <ref role="2VPQEx" node="31P83hzGOo0" resolve="message altered" />
+            <ref role="2VPQEx" node="31P83hzGOo0" />
           </node>
         </node>
         <node concept="1PLKG7" id="o0_W81kizi" role="1PLCo$">
-          <ref role="1jQAtN" node="o0_W81kiy7" resolve="too fast" />
+          <ref role="1jQAtN" node="o0_W81kiy7" />
           <node concept="1PNyZM" id="o0_W81kizm" role="1PLCoy">
-            <ref role="2VPQEx" node="42QGQFVotAu" resolve="message loss" />
+            <ref role="2VPQEx" node="42QGQFVotAu" />
           </node>
         </node>
       </node>
       <node concept="1PLGxJ" id="42QGQFVn3I8" role="1PLElB">
-        <ref role="1PLGwE" node="42QGQFVn3FY" resolve="r" />
+        <ref role="1PLGwE" node="42QGQFVn3FY" />
         <node concept="1PLKG7" id="31P83hzGOnQ" role="1PLCo$">
-          <ref role="1jQAtN" node="GA19r0MZIZ" resolve="blocked" />
+          <ref role="1jQAtN" node="GA19r0MZIZ" />
           <node concept="1PNyZM" id="31P83hzGOnY" role="1PLCoy">
-            <ref role="2VPQEx" node="42QGQFVotAu" resolve="message loss" />
+            <ref role="2VPQEx" node="42QGQFVotAu" />
           </node>
         </node>
         <node concept="1PLKG7" id="31P83hzGMP3" role="1PLCo$">
-          <ref role="1jQAtN" node="GA19r0MZKL" resolve="too slow" />
+          <ref role="1jQAtN" node="GA19r0MZKL" />
           <node concept="1PNyZM" id="31P83hzGMP6" role="1PLCoy">
-            <ref role="2VPQEx" node="42QGQFVotAu" resolve="message loss" />
+            <ref role="2VPQEx" node="42QGQFVotAu" />
           </node>
         </node>
       </node>

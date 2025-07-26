@@ -90,26 +90,26 @@
       <node concept="3Ug1AV" id="3QO5pQQMPPr" role="3UgYNK">
         <property role="TrG5h" value="sender" />
         <node concept="3Ug1AZ" id="3QO5pQQMPPq" role="3Ug1A_">
-          <ref role="3Ug1AY" node="VJbr0WYScw" resolve="Sender" />
+          <ref role="3Ug1AY" node="VJbr0WYScw" />
         </node>
       </node>
       <node concept="3Ug1AV" id="3QO5pQQMPP$" role="3UgYNK">
         <property role="TrG5h" value="receiver" />
         <node concept="3Ug1AZ" id="3QO5pQQMPPy" role="3Ug1A_">
-          <ref role="3Ug1AY" node="VJbr0WYScx" resolve="Receiver" />
+          <ref role="3Ug1AY" node="VJbr0WYScx" />
         </node>
       </node>
       <node concept="3Ug1$w" id="3QO5pQQMPPY" role="3UgYNK">
         <node concept="3Ug1GC" id="3QO5pQQMPQ6" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="3QO5pQQMPNW" resolve="sender_out" />
+          <ref role="3Ug1Ha" node="3QO5pQQMPNW" />
           <node concept="3Ug1GJ" id="3QO5pQQMPQ5" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQMPPr" resolve="sender" />
+            <ref role="3Ug1GI" node="3QO5pQQMPPr" />
           </node>
         </node>
         <node concept="3Ug1GC" id="3QO5pQQMPQa" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="3QO5pQQMPOx" resolve="in" />
+          <ref role="3Ug1Ha" node="3QO5pQQMPOx" />
           <node concept="3Ug1GJ" id="3QO5pQQMPQ9" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQMPP$" resolve="receiver" />
+            <ref role="3Ug1GI" node="3QO5pQQMPP$" />
           </node>
         </node>
       </node>

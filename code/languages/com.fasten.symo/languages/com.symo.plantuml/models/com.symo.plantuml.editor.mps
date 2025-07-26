@@ -2,7 +2,7 @@
 <model ref="r:c54e8620-02ce-447b-add3-cc9dc7547dc1(com.symo.plantuml.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -2077,7 +2077,7 @@
         <node concept="VPM3Z" id="1_aHBvacGR5" role="3F10Kt" />
         <node concept="3XFhqQ" id="1_aHBvacGR6" role="3EZMnx" />
         <node concept="3F2HdR" id="1_aHBvacGR7" role="3EZMnx">
-          <ref role="1NtTu8" to="udwj:1_aHBvacGQU" />
+          <ref role="1NtTu8" to="udwj:1_aHBvacGQU" resolve="content" />
           <node concept="2iRkQZ" id="1_aHBvacGR8" role="2czzBx" />
         </node>
         <node concept="2iRfu4" id="1_aHBvacGR9" role="2iSdaV" />
@@ -2110,7 +2110,7 @@
       <ref role="1PE7su" node="6CyxyHhVZuv" resolve="PlantUmlTextualEditorComponentBase" />
     </node>
     <node concept="3F2HdR" id="1_aHBvadUnz" role="2wV5jI">
-      <ref role="1NtTu8" to="udwj:1_aHBvadUkt" />
+      <ref role="1NtTu8" to="udwj:1_aHBvadUkt" resolve="content" />
       <node concept="2iRkQZ" id="1_aHBvadUn$" role="2czzBx" />
       <node concept="4$FPG" id="1_aHBvadUn_" role="4_6I_">
         <node concept="3clFbS" id="1_aHBvadUnA" role="2VODD2">

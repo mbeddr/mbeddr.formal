@@ -51,7 +51,7 @@
   </registry>
   <node concept="2b3yYo" id="3QO5pQQJ$sD">
     <property role="TrG5h" value="_010_tlc_scenario" />
-    <ref role="2b3yJn" to="2hrk:VJbr0WYRZk" resolve="Device" />
+    <ref role="2b3yJn" to="2hrk:VJbr0WYRZk" />
     <node concept="oRLRZ" id="g4WxncHcdB" role="3_aW3_" />
     <node concept="oO4cR" id="g4WxncHcdP" role="3_aW3_">
       <node concept="ru7O1" id="g4WxncHokz" role="oV6Cc">
@@ -61,34 +61,34 @@
     <node concept="oRLRZ" id="g4WxncHcdK" role="3_aW3_" />
     <node concept="3_aW46" id="g4WxncHok_" role="3_aW3_">
       <node concept="oYKel" id="g4WxncHokF" role="oZz2X">
-        <ref role="oYKei" node="g4WxncHcdz" resolve="e2e" />
+        <ref role="oYKei" node="g4WxncHcdz" />
       </node>
       <node concept="oYKel" id="g4WxncHokJ" role="oZz2S">
-        <ref role="oYKei" node="g4WxncHcd$" resolve="airbag" />
+        <ref role="oYKei" node="g4WxncHcd$" />
       </node>
     </node>
     <node concept="3_aW46" id="g4WxncHokM" role="3_aW3_">
       <node concept="oZz27" id="g4WxncHokV" role="oZz2X" />
       <node concept="oYKel" id="g4WxncHokX" role="oZz2S">
-        <ref role="oYKei" node="g4WxncHcdz" resolve="e2e" />
+        <ref role="oYKei" node="g4WxncHcdz" />
       </node>
       <node concept="2bsV3G" id="g4WxncHM8i" role="3_fVoY" />
     </node>
     <node concept="oRLRZ" id="g4WxncHHdu" role="3_aW3_" />
     <node concept="3_aW46" id="g4WxncHHe3" role="3_aW3_">
       <node concept="oYKel" id="g4WxncHHeh" role="oZz2X">
-        <ref role="oYKei" node="g4WxncHcd$" resolve="airbag" />
+        <ref role="oYKei" node="g4WxncHcd$" />
       </node>
       <node concept="oZz27" id="g4WxncHHej" role="oZz2S" />
     </node>
     <node concept="oRLRZ" id="g4WxncHHel" role="3_aW3_" />
     <node concept="2b3SXi" id="g4WxncHcdz" role="3_aW3F">
       <property role="TrG5h" value="e2e" />
-      <ref role="2b3SXf" to="2hrk:57ROGn931VS" resolve="e2e" />
+      <ref role="2b3SXf" to="2hrk:57ROGn931VS" />
     </node>
     <node concept="2b3SXi" id="g4WxncHcd$" role="3_aW3F">
       <property role="TrG5h" value="airbag" />
-      <ref role="2b3SXf" to="2hrk:57ROGn931W6" resolve="airbag" />
+      <ref role="2b3SXf" to="2hrk:57ROGn931W6" />
     </node>
   </node>
 </model>

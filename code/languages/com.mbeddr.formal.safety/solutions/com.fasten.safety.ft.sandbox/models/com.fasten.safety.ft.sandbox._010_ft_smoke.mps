@@ -102,7 +102,7 @@
       </concept>
     </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
-      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ngI" index="2U2l5L">
+      <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ng" index="2U2l5L">
         <child id="7402587364850275470" name="attributes" index="2U2l5M" />
       </concept>
     </language>
@@ -780,32 +780,32 @@
       </node>
     </node>
     <node concept="21oswF" id="551EivYxWUs" role="3CrHoS">
-      <ref role="21oszt" node="3EWkVoQ6VEg" resolve="collision" />
-      <ref role="21oszj" node="3EWkVoQ5BRe" resolve="SENSOR_ERROR_AND_OBSTACLE" />
+      <ref role="21oszt" node="3EWkVoQ6VEg" />
+      <ref role="21oszj" node="3EWkVoQ5BRe" />
     </node>
     <node concept="21oswF" id="551EivYxWV1" role="3CrHoS">
-      <ref role="21oszt" node="3EWkVoQ5BRe" resolve="SENSOR_ERROR_AND_OBSTACLE" />
-      <ref role="21oszj" node="6csJveEVWmi" resolve="UNDEVELOPED_001" />
+      <ref role="21oszt" node="3EWkVoQ5BRe" />
+      <ref role="21oszj" node="6csJveEVWmi" />
     </node>
     <node concept="21oswF" id="551EivYxWVl" role="3CrHoS">
-      <ref role="21oszt" node="5rwT_Jnw0S4" resolve="erroneous braking distance" />
-      <ref role="21oszj" node="6csJveEVWmf" resolve="SENSORS_ERROR" />
+      <ref role="21oszt" node="5rwT_Jnw0S4" />
+      <ref role="21oszj" node="6csJveEVWmf" />
     </node>
     <node concept="21oswF" id="551EivYxWVE" role="3CrHoS">
-      <ref role="21oszt" node="6csJveEVWmf" resolve="SENSORS_ERROR" />
-      <ref role="21oszj" node="6csJveEVWmp" resolve="ERRONEOUS_SPEED" />
+      <ref role="21oszt" node="6csJveEVWmf" />
+      <ref role="21oszj" node="6csJveEVWmp" />
     </node>
     <node concept="21oswF" id="551EivYxWW0" role="3CrHoS">
-      <ref role="21oszt" node="6csJveEVWmf" resolve="SENSORS_ERROR" />
-      <ref role="21oszj" node="6csJveEVWml" resolve="erroneous_time" />
+      <ref role="21oszt" node="6csJveEVWmf" />
+      <ref role="21oszj" node="6csJveEVWml" />
     </node>
     <node concept="21oswF" id="551EivYxX0N" role="3CrHoS">
-      <ref role="21oszt" node="3EWkVoQ5BRe" resolve="SENSOR_ERROR_AND_OBSTACLE" />
-      <ref role="21oszj" node="3EWkVoQ6VE7" resolve="obstacle" />
+      <ref role="21oszt" node="3EWkVoQ5BRe" />
+      <ref role="21oszj" node="3EWkVoQ6VE7" />
     </node>
     <node concept="21oswF" id="3f8ZVRXZ8Io" role="3CrHoS">
-      <ref role="21oszt" node="3EWkVoQ5BRe" resolve="SENSOR_ERROR_AND_OBSTACLE" />
-      <ref role="21oszj" node="6csJveEVWmf" resolve="SENSORS_ERROR" />
+      <ref role="21oszt" node="3EWkVoQ5BRe" />
+      <ref role="21oszj" node="6csJveEVWmf" />
     </node>
     <node concept="1pdZdF" id="NOO35lMckT" role="1pckAP">
       <node concept="19SGf9" id="NOO35lMckU" role="9kjJR">
@@ -1509,7 +1509,7 @@
     </node>
     <node concept="1_05Uv" id="1SpkZ1V8SLA" role="3CrHoS">
       <property role="TrG5h" value="sensor error" />
-      <ref role="1_em_T" node="1SpkZ1V8S_$" resolve="sensor error" />
+      <ref role="1_em_T" node="1SpkZ1V8S_$" />
       <node concept="19SGf9" id="3f8ZVRXNyLn" role="6n8cP">
         <node concept="19SUe$" id="3f8ZVRXNyLo" role="19SJt6">
           <property role="19SUeA" value="sensors reading&#10;is erroneous or&#10;not accurate enough" />
@@ -1517,20 +1517,20 @@
       </node>
     </node>
     <node concept="21oswF" id="6csJveEW0ph" role="3CrHoS">
-      <ref role="21oszt" node="1SpkZ1V8SqC" resolve="COLLISION" />
-      <ref role="21oszj" node="1SpkZ1V8Sqt" resolve="SENSOR_ERROR_AND_OBSTACLE" />
+      <ref role="21oszt" node="1SpkZ1V8SqC" />
+      <ref role="21oszj" node="1SpkZ1V8Sqt" />
     </node>
     <node concept="21oswF" id="6csJveEW0pu" role="3CrHoS">
-      <ref role="21oszt" node="1SpkZ1V8Sqt" resolve="SENSOR_ERROR_AND_OBSTACLE" />
-      <ref role="21oszj" node="1SpkZ1V8Sqr" resolve="obstacle" />
+      <ref role="21oszt" node="1SpkZ1V8Sqt" />
+      <ref role="21oszj" node="1SpkZ1V8Sqr" />
     </node>
     <node concept="21oswF" id="6csJveEW0pG" role="3CrHoS">
-      <ref role="21oszt" node="1SpkZ1V8Sqt" resolve="SENSOR_ERROR_AND_OBSTACLE" />
-      <ref role="21oszj" node="1SpkZ1V8SLA" resolve="sensor error" />
+      <ref role="21oszt" node="1SpkZ1V8Sqt" />
+      <ref role="21oszj" node="1SpkZ1V8SLA" />
     </node>
     <node concept="21oswF" id="6csJveEW0pV" role="3CrHoS">
-      <ref role="21oszt" node="1SpkZ1V8Sq$" resolve="erroneous braking distance" />
-      <ref role="21oszj" node="1SpkZ1V8SLA" resolve="sensor error" />
+      <ref role="21oszt" node="1SpkZ1V8Sq$" />
+      <ref role="21oszj" node="1SpkZ1V8SLA" />
     </node>
   </node>
   <node concept="21ASy4" id="1SpkZ1V8SyK">
@@ -2445,20 +2445,20 @@
       </node>
     </node>
     <node concept="21oswF" id="6csJveEW0u9" role="3CrHoS">
-      <ref role="21oszt" node="1SpkZ1V8S_$" resolve="sensor error" />
-      <ref role="21oszj" node="1SpkZ1V8S_p" resolve="SENSOR_ERRORS" />
+      <ref role="21oszt" node="1SpkZ1V8S_$" />
+      <ref role="21oszj" node="1SpkZ1V8S_p" />
     </node>
     <node concept="21oswF" id="6csJveEW0un" role="3CrHoS">
-      <ref role="21oszt" node="1SpkZ1V8S_p" resolve="SENSOR_ERRORS" />
-      <ref role="21oszj" node="1SpkZ1V8S_h" resolve="erroneous_speed" />
+      <ref role="21oszt" node="1SpkZ1V8S_p" />
+      <ref role="21oszj" node="1SpkZ1V8S_h" />
     </node>
     <node concept="21oswF" id="6csJveEW0uA" role="3CrHoS">
-      <ref role="21oszt" node="1SpkZ1V8S_p" resolve="SENSOR_ERRORS" />
-      <ref role="21oszj" node="1SpkZ1V8S_f" resolve="erroneous_time" />
+      <ref role="21oszt" node="1SpkZ1V8S_p" />
+      <ref role="21oszj" node="1SpkZ1V8S_f" />
     </node>
     <node concept="21oswF" id="6csJveEW0uQ" role="3CrHoS">
-      <ref role="21oszt" node="1SpkZ1V8S_p" resolve="SENSOR_ERRORS" />
-      <ref role="21oszj" node="1SpkZ1V8S_E" resolve="UNDEVELOPED_001" />
+      <ref role="21oszt" node="1SpkZ1V8S_p" />
+      <ref role="21oszj" node="1SpkZ1V8S_E" />
     </node>
   </node>
   <node concept="21ASy4" id="551EivYyseb">
@@ -3855,16 +3855,16 @@
       </node>
     </node>
     <node concept="21oswF" id="551EivYysgI" role="3CrHoS">
-      <ref role="21oszj" node="551EivYysgA" resolve="SENSORS_ERROR" />
-      <ref role="21oszt" node="551EivYysgy" resolve="erroneous braking distance" />
+      <ref role="21oszj" node="551EivYysgA" />
+      <ref role="21oszt" node="551EivYysgy" />
     </node>
     <node concept="21oswF" id="551EivYysgJ" role="3CrHoS">
-      <ref role="21oszj" node="551EivYysgE" resolve="erroneous_speed" />
-      <ref role="21oszt" node="551EivYysgA" resolve="SENSORS_ERROR" />
+      <ref role="21oszj" node="551EivYysgE" />
+      <ref role="21oszt" node="551EivYysgA" />
     </node>
     <node concept="21oswF" id="551EivYyspU" role="3CrHoS">
-      <ref role="21oszt" node="551EivYysgA" resolve="SENSORS_ERROR" />
-      <ref role="21oszj" node="551EivYysgC" resolve="erroneous_time" />
+      <ref role="21oszt" node="551EivYysgA" />
+      <ref role="21oszj" node="551EivYysgC" />
     </node>
     <node concept="21ATtL" id="551EivYysq9" role="3CrHoS">
       <property role="TrG5h" value="erroneous_distance" />
@@ -3885,34 +3885,34 @@
       </node>
     </node>
     <node concept="21oswF" id="551EivYys$8" role="3CrHoS">
-      <ref role="21oszt" node="551EivYysgA" resolve="SENSORS_ERROR" />
-      <ref role="21oszj" node="551EivYysq9" resolve="erroneous_distance" />
+      <ref role="21oszt" node="551EivYysgA" />
+      <ref role="21oszj" node="551EivYysq9" />
     </node>
     <node concept="21oswF" id="551EivYys$u" role="3CrHoS">
-      <ref role="21oszt" node="551EivYysgA" resolve="SENSORS_ERROR" />
-      <ref role="21oszj" node="551EivYystq" resolve="erroneous_position" />
+      <ref role="21oszt" node="551EivYysgA" />
+      <ref role="21oszj" node="551EivYystq" />
     </node>
     <node concept="21oswF" id="551EivYE6SW" role="3CrHoS">
-      <ref role="21oszt" node="551EivYysgA" resolve="SENSORS_ERROR" />
-      <ref role="21oszj" node="551EivYyswJ" resolve="dead_camera" />
+      <ref role="21oszt" node="551EivYysgA" />
+      <ref role="21oszj" node="551EivYyswJ" />
     </node>
     <node concept="21ATtL" id="551EivYEVD6" role="3CrHoS">
       <property role="TrG5h" value="dead_clock" />
     </node>
     <node concept="21oswF" id="551EivYEVGQ" role="3CrHoS">
-      <ref role="21oszt" node="551EivYysgA" resolve="SENSORS_ERROR" />
-      <ref role="21oszj" node="551EivYEVD6" resolve="dead_clock" />
+      <ref role="21oszt" node="551EivYysgA" />
+      <ref role="21oszj" node="551EivYEVD6" />
     </node>
     <node concept="21oswF" id="3f8ZVRXZCkJ" role="3CrHoS">
-      <ref role="21oszt" node="551EivYysgy" resolve="erroneous braking distance" />
-      <ref role="21oszj" node="551EivYysgA" resolve="SENSORS_ERROR" />
+      <ref role="21oszt" node="551EivYysgy" />
+      <ref role="21oszj" node="551EivYysgA" />
     </node>
     <node concept="cFNQA" id="3f8ZVRXZCps" role="3CrHoS">
       <property role="TrG5h" value="Or Gate 2" />
     </node>
     <node concept="21oswF" id="3f8ZVRXZCAv" role="3CrHoS">
-      <ref role="21oszt" node="551EivYysgy" resolve="erroneous braking distance" />
-      <ref role="21oszj" node="3f8ZVRXZCps" resolve="Or Gate 2" />
+      <ref role="21oszt" node="551EivYysgy" />
+      <ref role="21oszj" node="3f8ZVRXZCps" />
     </node>
     <node concept="cEgko" id="5kIAo_xDUwo" role="3CrHoS">
       <property role="TrG5h" value="And Gate 2" />
@@ -3921,12 +3921,12 @@
       <property role="TrG5h" value="sensor_1_error" />
     </node>
     <node concept="21oswF" id="5kIAo_xDUGx" role="3CrHoS">
-      <ref role="21oszt" node="3f8ZVRXZCps" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xDUwo" resolve="And Gate 2" />
+      <ref role="21oszt" node="3f8ZVRXZCps" />
+      <ref role="21oszj" node="5kIAo_xDUwo" />
     </node>
     <node concept="21oswF" id="5kIAo_xDUH6" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xDUwo" resolve="And Gate 2" />
-      <ref role="21oszj" node="5kIAo_xDUwW" resolve="sensor_1_error" />
+      <ref role="21oszt" node="5kIAo_xDUwo" />
+      <ref role="21oszj" node="5kIAo_xDUwW" />
     </node>
     <node concept="21ATtL" id="5kIAo_xDUIg" role="3CrHoS">
       <property role="TrG5h" value="sensor_2_error" />
@@ -3941,20 +3941,20 @@
       <property role="TrG5h" value="sensor_5_error" />
     </node>
     <node concept="21oswF" id="5kIAo_xDUZ6" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xDUwo" resolve="And Gate 2" />
-      <ref role="21oszj" node="5kIAo_xDUIg" resolve="sensor_2_error" />
+      <ref role="21oszt" node="5kIAo_xDUwo" />
+      <ref role="21oszj" node="5kIAo_xDUIg" />
     </node>
     <node concept="21oswF" id="5kIAo_xDUZK" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xDUwo" resolve="And Gate 2" />
-      <ref role="21oszj" node="5kIAo_xDUMp" resolve="sensor_3_error" />
+      <ref role="21oszt" node="5kIAo_xDUwo" />
+      <ref role="21oszj" node="5kIAo_xDUMp" />
     </node>
     <node concept="21oswF" id="5kIAo_xDV0r" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xDUwo" resolve="And Gate 2" />
-      <ref role="21oszj" node="5kIAo_xDUQ_" resolve="sensor_4_error" />
+      <ref role="21oszt" node="5kIAo_xDUwo" />
+      <ref role="21oszj" node="5kIAo_xDUQ_" />
     </node>
     <node concept="21oswF" id="5kIAo_xDV17" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xDUwo" resolve="And Gate 2" />
-      <ref role="21oszj" node="5kIAo_xDUUO" resolve="sensor_5_error" />
+      <ref role="21oszt" node="5kIAo_xDUwo" />
+      <ref role="21oszj" node="5kIAo_xDUUO" />
     </node>
     <node concept="21ATtL" id="5kIAo_xDV1O" role="3CrHoS">
       <property role="TrG5h" value="sensor_5_error" />
@@ -3969,34 +3969,34 @@
       <property role="TrG5h" value="sensor_5_error" />
     </node>
     <node concept="21oswF" id="5kIAo_xDVjE" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xDUwo" resolve="And Gate 2" />
-      <ref role="21oszj" node="5kIAo_xDV6d" resolve="sensor_5_error" />
+      <ref role="21oszt" node="5kIAo_xDUwo" />
+      <ref role="21oszj" node="5kIAo_xDV6d" />
     </node>
     <node concept="21oswF" id="5kIAo_xDVks" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xDUwo" resolve="And Gate 2" />
-      <ref role="21oszj" node="5kIAo_xDVaD" resolve="sensor_5_error" />
+      <ref role="21oszt" node="5kIAo_xDUwo" />
+      <ref role="21oszj" node="5kIAo_xDVaD" />
     </node>
     <node concept="21oswF" id="5kIAo_xDVlf" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xDUwo" resolve="And Gate 2" />
-      <ref role="21oszj" node="5kIAo_xDVf8" resolve="sensor_5_error" />
+      <ref role="21oszt" node="5kIAo_xDUwo" />
+      <ref role="21oszj" node="5kIAo_xDVf8" />
     </node>
     <node concept="21oswF" id="5kIAo_xDVm3" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xDUwo" resolve="And Gate 2" />
-      <ref role="21oszj" node="5kIAo_xDV1O" resolve="sensor_5_error" />
+      <ref role="21oszt" node="5kIAo_xDUwo" />
+      <ref role="21oszj" node="5kIAo_xDV1O" />
     </node>
     <node concept="21ATtL" id="5kIAo_xF2ud" role="3CrHoS">
       <property role="TrG5h" value="dead_radar" />
     </node>
     <node concept="21oswF" id="5kIAo_xKC5p" role="3CrHoS">
-      <ref role="21oszt" node="551EivYysgA" resolve="SENSORS_ERROR" />
-      <ref role="21oszj" node="5kIAo_xF2ud" resolve="dead_radar" />
+      <ref role="21oszt" node="551EivYysgA" />
+      <ref role="21oszj" node="5kIAo_xF2ud" />
     </node>
     <node concept="21ATtL" id="3ILMVXjmXaa" role="3CrHoS">
       <property role="TrG5h" value="sensor_22_error" />
     </node>
     <node concept="21oswF" id="3ILMVXjmXad" role="3CrHoS">
-      <ref role="21oszt" node="3f8ZVRXZCps" resolve="Or Gate 2" />
-      <ref role="21oszj" node="3ILMVXjmXaa" resolve="sensor_22_error" />
+      <ref role="21oszt" node="3f8ZVRXZCps" />
+      <ref role="21oszj" node="3ILMVXjmXaa" />
     </node>
   </node>
   <node concept="21ASy4" id="5kIAo_xMxey">
@@ -8275,60 +8275,60 @@
       <property role="TrG5h" value="be3" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxJs" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxIA" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxID" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xMxIA" />
+      <ref role="21oszj" node="5kIAo_xMxID" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxJv" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxIA" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxIG" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xMxIA" />
+      <ref role="21oszj" node="5kIAo_xMxIG" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxJy" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxIJ" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxIM" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xMxIJ" />
+      <ref role="21oszj" node="5kIAo_xMxIM" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxJ_" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxIJ" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxIP" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xMxIJ" />
+      <ref role="21oszj" node="5kIAo_xMxIP" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxJC" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxIJ" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxIS" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xMxIJ" />
+      <ref role="21oszj" node="5kIAo_xMxIS" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxJF" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxIV" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxIY" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xMxIV" />
+      <ref role="21oszj" node="5kIAo_xMxIY" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxJI" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxIV" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxJ1" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xMxIV" />
+      <ref role="21oszj" node="5kIAo_xMxJ1" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxJL" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxIV" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxJ4" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xMxIV" />
+      <ref role="21oszj" node="5kIAo_xMxJ4" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxJO" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxIV" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxJ7" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xMxIV" />
+      <ref role="21oszj" node="5kIAo_xMxJ7" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxJR" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxJa" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxJd" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xMxJa" />
+      <ref role="21oszj" node="5kIAo_xMxJd" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxJU" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxJa" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxJg" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xMxJa" />
+      <ref role="21oszj" node="5kIAo_xMxJg" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxJX" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxJa" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxJj" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xMxJa" />
+      <ref role="21oszj" node="5kIAo_xMxJj" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxK0" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxJa" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxJm" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xMxJa" />
+      <ref role="21oszj" node="5kIAo_xMxJm" />
     </node>
     <node concept="21oswF" id="5kIAo_xMxK3" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxJa" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxJp" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xMxJa" />
+      <ref role="21oszj" node="5kIAo_xMxJp" />
     </node>
     <node concept="cFNQA" id="5kIAo_xMxTY" role="3CrHoS">
       <property role="TrG5h" value="Or Gate 1" />
@@ -8363,60 +8363,60 @@
       </node>
     </node>
     <node concept="21oswF" id="5kIAo_xMycy" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxTY" resolve="Or Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxfj" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xMxTY" />
+      <ref role="21oszj" node="5kIAo_xMxfj" />
     </node>
     <node concept="21oswF" id="5kIAo_xMydM" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxTY" resolve="Or Gate 1" />
-      <ref role="21oszj" node="5kIAo_xMxfm" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xMxTY" />
+      <ref role="21oszj" node="5kIAo_xMxfm" />
     </node>
     <node concept="21oswF" id="5kIAo_xMyf3" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMy3b" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxgE" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xMy3b" />
+      <ref role="21oszj" node="5kIAo_xMxgE" />
     </node>
     <node concept="21oswF" id="5kIAo_xMygl" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMy3b" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxgH" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xMy3b" />
+      <ref role="21oszj" node="5kIAo_xMxgH" />
     </node>
     <node concept="21oswF" id="5kIAo_xMyhC" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMy3b" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxgK" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xMy3b" />
+      <ref role="21oszj" node="5kIAo_xMxgK" />
     </node>
     <node concept="21oswF" id="5kIAo_xMyiW" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMy7P" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxhM" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xMy7P" />
+      <ref role="21oszj" node="5kIAo_xMxhM" />
     </node>
     <node concept="21oswF" id="5kIAo_xMykh" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMy7P" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxhP" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xMy7P" />
+      <ref role="21oszj" node="5kIAo_xMxhP" />
     </node>
     <node concept="21oswF" id="5kIAo_xMylB" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMy7P" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxhS" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xMy7P" />
+      <ref role="21oszj" node="5kIAo_xMxhS" />
     </node>
     <node concept="21oswF" id="5kIAo_xMymY" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMy7P" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxk2" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xMy7P" />
+      <ref role="21oszj" node="5kIAo_xMxk2" />
     </node>
     <node concept="21oswF" id="5kIAo_xMyom" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxVc" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxpE" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xMxVc" />
+      <ref role="21oszj" node="5kIAo_xMxpE" />
     </node>
     <node concept="21oswF" id="5kIAo_xMypJ" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxVc" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxpN" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xMxVc" />
+      <ref role="21oszj" node="5kIAo_xMxpN" />
     </node>
     <node concept="21oswF" id="5kIAo_xMyr9" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxVc" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxpH" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xMxVc" />
+      <ref role="21oszj" node="5kIAo_xMxpH" />
     </node>
     <node concept="21oswF" id="5kIAo_xMys$" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxVc" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxpK" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xMxVc" />
+      <ref role="21oszj" node="5kIAo_xMxpK" />
     </node>
     <node concept="21oswF" id="5kIAo_xMyu0" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xMxVc" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxpQ" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xMxVc" />
+      <ref role="21oszj" node="5kIAo_xMxpQ" />
     </node>
     <node concept="21ATtL" id="5kIAo_xNHLT" role="3CrHoS">
       <property role="TrG5h" value="be1" />
@@ -8461,28 +8461,28 @@
       <property role="TrG5h" value="be3" />
     </node>
     <node concept="21oswF" id="5kIAo_xNHMM" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xNHMb" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xNHMe" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xNHMb" />
+      <ref role="21oszj" node="5kIAo_xNHMe" />
     </node>
     <node concept="21oswF" id="5kIAo_xNHMP" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xNHMb" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xNHMh" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xNHMb" />
+      <ref role="21oszj" node="5kIAo_xNHMh" />
     </node>
     <node concept="21oswF" id="5kIAo_xNHMS" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xNHMb" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xNHMk" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xNHMb" />
+      <ref role="21oszj" node="5kIAo_xNHMk" />
     </node>
     <node concept="21oswF" id="5kIAo_xNHMV" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xNHMb" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xNHMn" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xNHMb" />
+      <ref role="21oszj" node="5kIAo_xNHMn" />
     </node>
     <node concept="21oswF" id="5kIAo_xNHMY" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xNHMb" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xNHMq" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xNHMb" />
+      <ref role="21oszj" node="5kIAo_xNHMq" />
     </node>
     <node concept="21oswF" id="5kIAo_xNHN1" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xNHMb" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xNHMt" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xNHMb" />
+      <ref role="21oszj" node="5kIAo_xNHMt" />
     </node>
     <node concept="cFNQA" id="5kIAo_xNHXa" role="3CrHoS">
       <property role="TrG5h" value="Or Gate 2" />
@@ -8493,28 +8493,28 @@
       </node>
     </node>
     <node concept="21oswF" id="5kIAo_xNI6K" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xNHXa" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMx$r" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xNHXa" />
+      <ref role="21oszj" node="5kIAo_xMx$r" />
     </node>
     <node concept="21oswF" id="5kIAo_xNI8s" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xNHXa" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMx$$" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xNHXa" />
+      <ref role="21oszj" node="5kIAo_xMx$$" />
     </node>
     <node concept="21oswF" id="5kIAo_xNIa9" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xNHXa" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMx$u" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xNHXa" />
+      <ref role="21oszj" node="5kIAo_xMx$u" />
     </node>
     <node concept="21oswF" id="5kIAo_xO5Xl" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xNHXa" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMx$x" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xNHXa" />
+      <ref role="21oszj" node="5kIAo_xMx$x" />
     </node>
     <node concept="21oswF" id="5kIAo_xO5Z4" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xNHXa" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMx$B" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xNHXa" />
+      <ref role="21oszj" node="5kIAo_xMx$B" />
     </node>
     <node concept="21oswF" id="5kIAo_xO60O" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xNHXa" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMx$E" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xNHXa" />
+      <ref role="21oszj" node="5kIAo_xMx$E" />
     </node>
     <node concept="cFNQA" id="5kIAo_xO62_" role="3CrHoS">
       <property role="TrG5h" value="Or Gate 2" />
@@ -8525,32 +8525,32 @@
       </node>
     </node>
     <node concept="21oswF" id="5kIAo_xO68Y" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xO62_" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxs5" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xO62_" />
+      <ref role="21oszj" node="5kIAo_xMxs5" />
     </node>
     <node concept="21oswF" id="5kIAo_xO6aL" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xO62_" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxse" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xO62_" />
+      <ref role="21oszj" node="5kIAo_xMxse" />
     </node>
     <node concept="21oswF" id="5kIAo_xO6c_" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xO62_" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxvi" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xO62_" />
+      <ref role="21oszj" node="5kIAo_xMxvi" />
     </node>
     <node concept="21oswF" id="5kIAo_xO6eq" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xO62_" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxs8" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xO62_" />
+      <ref role="21oszj" node="5kIAo_xMxs8" />
     </node>
     <node concept="21oswF" id="5kIAo_xO6gg" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xO62_" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxsb" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xO62_" />
+      <ref role="21oszj" node="5kIAo_xMxsb" />
     </node>
     <node concept="21oswF" id="5kIAo_xO6i7" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xO62_" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxsh" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xO62_" />
+      <ref role="21oszj" node="5kIAo_xMxsh" />
     </node>
     <node concept="21oswF" id="5kIAo_xO6jZ" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xO62_" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xMxCh" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xO62_" />
+      <ref role="21oszj" node="5kIAo_xMxCh" />
     </node>
     <node concept="21ATtL" id="5kIAo_xOS06" role="3CrHoS">
       <property role="TrG5h" value="be1" />
@@ -8652,112 +8652,112 @@
       <property role="TrG5h" value="Or Gate 2" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS1D" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1n" resolve="Or Gate 1" />
-      <ref role="21oszj" node="5kIAo_xOS06" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xOS1n" />
+      <ref role="21oszj" node="5kIAo_xOS06" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS1G" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1n" resolve="Or Gate 1" />
-      <ref role="21oszj" node="5kIAo_xOS09" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xOS1n" />
+      <ref role="21oszj" node="5kIAo_xOS09" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS1J" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1t" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0c" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xOS1t" />
+      <ref role="21oszj" node="5kIAo_xOS0c" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS1M" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1t" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0f" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xOS1t" />
+      <ref role="21oszj" node="5kIAo_xOS0f" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS1P" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1t" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0i" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xOS1t" />
+      <ref role="21oszj" node="5kIAo_xOS0i" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS1S" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1w" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0l" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xOS1w" />
+      <ref role="21oszj" node="5kIAo_xOS0l" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS1V" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1w" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0o" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xOS1w" />
+      <ref role="21oszj" node="5kIAo_xOS0o" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS1Y" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1w" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0r" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xOS1w" />
+      <ref role="21oszj" node="5kIAo_xOS0r" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS21" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1w" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0u" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xOS1w" />
+      <ref role="21oszj" node="5kIAo_xOS0u" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS24" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1q" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0x" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xOS1q" />
+      <ref role="21oszj" node="5kIAo_xOS0x" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS27" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1q" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0E" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xOS1q" />
+      <ref role="21oszj" node="5kIAo_xOS0E" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2a" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1q" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0$" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xOS1q" />
+      <ref role="21oszj" node="5kIAo_xOS0$" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2d" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1q" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0B" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xOS1q" />
+      <ref role="21oszj" node="5kIAo_xOS0B" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2g" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1q" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0H" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xOS1q" />
+      <ref role="21oszj" node="5kIAo_xOS0H" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2j" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1z" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS12" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xOS1z" />
+      <ref role="21oszj" node="5kIAo_xOS12" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2m" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1z" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS1b" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xOS1z" />
+      <ref role="21oszj" node="5kIAo_xOS1b" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2p" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1z" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS15" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xOS1z" />
+      <ref role="21oszj" node="5kIAo_xOS15" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2s" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1z" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS18" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xOS1z" />
+      <ref role="21oszj" node="5kIAo_xOS18" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2v" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1z" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS1e" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xOS1z" />
+      <ref role="21oszj" node="5kIAo_xOS1e" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2y" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1z" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS1h" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xOS1z" />
+      <ref role="21oszj" node="5kIAo_xOS1h" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2_" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1A" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0K" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xOS1A" />
+      <ref role="21oszj" node="5kIAo_xOS0K" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2C" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1A" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0T" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xOS1A" />
+      <ref role="21oszj" node="5kIAo_xOS0T" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2F" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1A" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0Z" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xOS1A" />
+      <ref role="21oszj" node="5kIAo_xOS0Z" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2I" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1A" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0N" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xOS1A" />
+      <ref role="21oszj" node="5kIAo_xOS0N" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2L" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1A" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0Q" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xOS1A" />
+      <ref role="21oszj" node="5kIAo_xOS0Q" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2O" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1A" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS0W" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xOS1A" />
+      <ref role="21oszj" node="5kIAo_xOS0W" />
     </node>
     <node concept="21oswF" id="5kIAo_xOS2R" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xOS1A" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xOS1k" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xOS1A" />
+      <ref role="21oszj" node="5kIAo_xOS1k" />
     </node>
     <node concept="cEgko" id="5kIAo_xQrnN" role="3CrHoS">
       <property role="TrG5h" value="And Gate 1" />
@@ -8784,32 +8784,32 @@
       <property role="TrG5h" value="be3" />
     </node>
     <node concept="21oswF" id="5kIAo_xQrob" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrnN" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQrnQ" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xQrnN" />
+      <ref role="21oszj" node="5kIAo_xQrnQ" />
     </node>
     <node concept="21oswF" id="5kIAo_xQroe" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrnN" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQrnT" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xQrnN" />
+      <ref role="21oszj" node="5kIAo_xQrnT" />
     </node>
     <node concept="21oswF" id="5kIAo_xQroh" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrnN" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQrnW" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQrnN" />
+      <ref role="21oszj" node="5kIAo_xQrnW" />
     </node>
     <node concept="21oswF" id="5kIAo_xQrok" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrnN" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQrnZ" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xQrnN" />
+      <ref role="21oszj" node="5kIAo_xQrnZ" />
     </node>
     <node concept="21oswF" id="5kIAo_xQron" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrnN" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQro2" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQrnN" />
+      <ref role="21oszj" node="5kIAo_xQro2" />
     </node>
     <node concept="21oswF" id="5kIAo_xQroq" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrnN" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQro8" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQrnN" />
+      <ref role="21oszj" node="5kIAo_xQro8" />
     </node>
     <node concept="21oswF" id="5kIAo_xQrot" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrnN" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQro5" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQrnN" />
+      <ref role="21oszj" node="5kIAo_xQro5" />
     </node>
     <node concept="21ATtL" id="5kIAo_xQrKv" role="3CrHoS">
       <property role="TrG5h" value="be1" />
@@ -8842,71 +8842,71 @@
       <property role="TrG5h" value="be1" />
     </node>
     <node concept="21oswF" id="5kIAo_xQrYI" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrYj" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQrYm" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xQrYj" />
+      <ref role="21oszj" node="5kIAo_xQrYm" />
     </node>
     <node concept="21oswF" id="5kIAo_xQrYL" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrYj" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQrYp" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xQrYj" />
+      <ref role="21oszj" node="5kIAo_xQrYp" />
     </node>
     <node concept="21oswF" id="5kIAo_xQrYO" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrYj" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQrYs" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQrYj" />
+      <ref role="21oszj" node="5kIAo_xQrYs" />
     </node>
     <node concept="21oswF" id="5kIAo_xQrYR" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrYj" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQrYv" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xQrYj" />
+      <ref role="21oszj" node="5kIAo_xQrYv" />
     </node>
     <node concept="21oswF" id="5kIAo_xQrYU" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrYj" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQrYy" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQrYj" />
+      <ref role="21oszj" node="5kIAo_xQrYy" />
     </node>
     <node concept="21oswF" id="5kIAo_xQrYX" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrYj" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQrYC" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQrYj" />
+      <ref role="21oszj" node="5kIAo_xQrYC" />
     </node>
     <node concept="21oswF" id="5kIAo_xQrZ0" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrYj" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQrY_" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQrYj" />
+      <ref role="21oszj" node="5kIAo_xQrY_" />
     </node>
     <node concept="21oswF" id="5kIAo_xQrZ3" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQrYj" resolve="And Gate 1" />
-      <ref role="21oszj" node="5kIAo_xQrYF" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xQrYj" />
+      <ref role="21oszj" node="5kIAo_xQrYF" />
     </node>
     <node concept="cFNQA" id="5kIAo_xQsdU" role="3CrHoS">
       <property role="TrG5h" value="Or Gate 2" />
     </node>
     <node concept="21oswF" id="5kIAo_xQspa" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQsdU" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xNHLT" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xQsdU" />
+      <ref role="21oszj" node="5kIAo_xNHLT" />
     </node>
     <node concept="21oswF" id="5kIAo_xQssA" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQsdU" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xNHM2" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xQsdU" />
+      <ref role="21oszj" node="5kIAo_xNHM2" />
     </node>
     <node concept="21oswF" id="5kIAo_xQsw3" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQsdU" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xNHM8" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQsdU" />
+      <ref role="21oszj" node="5kIAo_xNHM8" />
     </node>
     <node concept="21oswF" id="5kIAo_xQszx" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQsdU" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xQrKv" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xQsdU" />
+      <ref role="21oszj" node="5kIAo_xQrKv" />
     </node>
     <node concept="21oswF" id="5kIAo_xQsB0" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQsdU" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xNHLW" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xQsdU" />
+      <ref role="21oszj" node="5kIAo_xNHLW" />
     </node>
     <node concept="21oswF" id="5kIAo_xQsEw" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQsdU" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xNHLZ" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQsdU" />
+      <ref role="21oszj" node="5kIAo_xNHLZ" />
     </node>
     <node concept="21oswF" id="5kIAo_xQsI1" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQsdU" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xNHM5" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQsdU" />
+      <ref role="21oszj" node="5kIAo_xNHM5" />
     </node>
     <node concept="21oswF" id="5kIAo_xQsLz" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQsdU" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xNHMw" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQsdU" />
+      <ref role="21oszj" node="5kIAo_xNHMw" />
     </node>
     <node concept="21ATtL" id="5kIAo_xQsP6" role="3CrHoS">
       <property role="TrG5h" value="be1" />
@@ -8941,36 +8941,36 @@
       </node>
     </node>
     <node concept="21oswF" id="5kIAo_xQtd2" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQt1b" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xQsP6" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xQt1b" />
+      <ref role="21oszj" node="5kIAo_xQsP6" />
     </node>
     <node concept="21oswF" id="5kIAo_xQtgL" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQt1b" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xQsPf" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xQt1b" />
+      <ref role="21oszj" node="5kIAo_xQsPf" />
     </node>
     <node concept="21oswF" id="5kIAo_xQtkx" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQt1b" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xQsPl" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQt1b" />
+      <ref role="21oszj" node="5kIAo_xQsPl" />
     </node>
     <node concept="21oswF" id="5kIAo_xQtoi" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQt1b" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xQsPr" resolve="be1" />
+      <ref role="21oszt" node="5kIAo_xQt1b" />
+      <ref role="21oszj" node="5kIAo_xQsPr" />
     </node>
     <node concept="21oswF" id="5kIAo_xQts4" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQt1b" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xQsP9" resolve="be2" />
+      <ref role="21oszt" node="5kIAo_xQt1b" />
+      <ref role="21oszj" node="5kIAo_xQsP9" />
     </node>
     <node concept="21oswF" id="5kIAo_xQtvR" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQt1b" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xQsPc" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQt1b" />
+      <ref role="21oszj" node="5kIAo_xQsPc" />
     </node>
     <node concept="21oswF" id="5kIAo_xQtzF" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQt1b" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xQsPi" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQt1b" />
+      <ref role="21oszj" node="5kIAo_xQsPi" />
     </node>
     <node concept="21oswF" id="5kIAo_xQtBw" role="3CrHoS">
-      <ref role="21oszt" node="5kIAo_xQt1b" resolve="Or Gate 2" />
-      <ref role="21oszj" node="5kIAo_xQsPo" resolve="be3" />
+      <ref role="21oszt" node="5kIAo_xQt1b" />
+      <ref role="21oszj" node="5kIAo_xQsPo" />
     </node>
   </node>
 </model>

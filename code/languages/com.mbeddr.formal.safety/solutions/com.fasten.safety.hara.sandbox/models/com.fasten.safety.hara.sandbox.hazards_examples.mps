@@ -15,10 +15,10 @@
       </concept>
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
-      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ngI" index="8gIbR">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
         <property id="3226630706269685486" name="id" index="0lsPA" />
       </concept>
-      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ngI" index="8gIbW">
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
       <concept id="9102875167978180681" name="com.mbeddr.formal.safety.hara.structure.HazardsList" flags="ng" index="8gVzP" />
@@ -72,7 +72,7 @@
       <node concept="3h3uym" id="55oVyA0m$q9" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKU/S3" />
         <property role="3h3uzF" value="24PsEXFbNLm/C1" />
-        <ref role="3h3iM1" node="55oVyA0m$pZ" resolve="OpS1" />
+        <ref role="3h3iM1" node="55oVyA0m$pZ" />
       </node>
     </node>
     <node concept="1a6Z8w" id="7V6gmIdKaTX" role="8gIbH">
@@ -80,10 +80,10 @@
       <property role="TrG5h" value="Front-end collision" />
       <node concept="3h3uym" id="7V6gmIdKaU2" role="3h3uzw">
         <property role="3h3uzD" value="24PsEXFbNKQ/S2" />
-        <ref role="3h3iM1" node="55oVyA0m$pZ" resolve="OpS1" />
+        <ref role="3h3iM1" node="55oVyA0m$pZ" />
       </node>
       <node concept="3h3uym" id="7V6gmIdKaUd" role="3h3uzw">
-        <ref role="3h3iM1" node="7V6gmIdKaU4" resolve="OpS2" />
+        <ref role="3h3iM1" node="7V6gmIdKaU4" />
       </node>
     </node>
   </node>

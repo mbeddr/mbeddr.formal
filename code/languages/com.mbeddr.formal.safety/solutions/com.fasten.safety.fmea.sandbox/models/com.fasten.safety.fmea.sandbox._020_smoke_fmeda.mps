@@ -80,7 +80,7 @@
   <node concept="1POhia" id="2TaO3kYuXQM">
     <property role="TrG5h" value="_010_fmeda" />
     <node concept="gdD45" id="2TaO3kYwL33" role="1POhhj">
-      <ref role="gdDlh" node="2TaO3kYwnxc" resolve="capacitor" />
+      <ref role="gdDlh" node="2TaO3kYwnxc" />
       <node concept="gcgWH" id="2TaO3kYAdzw" role="gdDaz">
         <property role="TrG5h" value="short circuit" />
         <property role="gQn7f" value="50" />
@@ -128,24 +128,24 @@
     </node>
     <node concept="2VURXa" id="2TaO3kYwL8V" role="1POhhj" />
     <node concept="gMs3w" id="2TaO3kYwXWK" role="1POhhj">
-      <ref role="gMski" node="2TaO3kYwHIo" resolve="_020_first_circuit" />
+      <ref role="gMski" node="2TaO3kYwHIo" />
       <node concept="gMs9V" id="2TaO3kYwXWX" role="gMse6">
-        <ref role="gMgXP" node="2TaO3kYwHNX" resolve="C01" />
+        <ref role="gMgXP" node="2TaO3kYwHNX" />
         <node concept="gMj3g" id="2TaO3kYAd$2" role="gNFc4">
           <property role="gLwpJ" value="20" />
           <property role="3A4chu" value="100" />
-          <ref role="gMj9Z" node="2TaO3kYAdzG" resolve="open circuit" />
-          <ref role="gNbZo" node="2TaO3kYyhUV" resolve="overheating" />
-          <ref role="gK94U" node="2TaO3kYy$3C" resolve="overheating protection" />
-          <ref role="3A4ffL" node="2TaO3kYy$3C" resolve="overheating protection" />
+          <ref role="gMj9Z" node="2TaO3kYAdzG" />
+          <ref role="gNbZo" node="2TaO3kYyhUV" />
+          <ref role="gK94U" node="2TaO3kYy$3C" />
+          <ref role="3A4ffL" node="2TaO3kYy$3C" />
         </node>
         <node concept="gMj3g" id="2TaO3kYB7Ee" role="gNFc4">
           <property role="gLwpJ" value="80" />
           <property role="3A4chu" value="10" />
-          <ref role="gMj9Z" node="2TaO3kYAdzw" resolve="short circuit" />
-          <ref role="gNbZo" node="2TaO3kYyhUV" resolve="overheating" />
-          <ref role="gK94U" node="2TaO3kYy$3C" resolve="overheating protection" />
-          <ref role="3A4ffL" node="2TaO3kYy$3C" resolve="overheating protection" />
+          <ref role="gMj9Z" node="2TaO3kYAdzw" />
+          <ref role="gNbZo" node="2TaO3kYyhUV" />
+          <ref role="gK94U" node="2TaO3kYy$3C" />
+          <ref role="3A4ffL" node="2TaO3kYy$3C" />
         </node>
       </node>
     </node>
@@ -165,7 +165,7 @@
     <property role="TrG5h" value="_020_first_circuit" />
     <node concept="gdDf8" id="2TaO3kYwHNX" role="gd4Hl">
       <property role="TrG5h" value="C01" />
-      <ref role="gd4NS" node="2TaO3kYwnxc" resolve="capacitor" />
+      <ref role="gd4NS" node="2TaO3kYwnxc" />
     </node>
   </node>
 </model>

@@ -80,10 +80,10 @@
       </concept>
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
-      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ngI" index="8gIbR">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
         <property id="3226630706269685486" name="id" index="0lsPA" />
       </concept>
-      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ngI" index="8gIbW">
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
       <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc" />
@@ -138,8 +138,8 @@
     <node concept="1XyJaU" id="3HVC1H6WxIx" role="1X_0GB">
       <property role="TrG5h" value="Command &#10;Authority" />
       <node concept="1XypPU" id="3Cm$$O2uxuw" role="2I3o71">
-        <ref role="SrP08" node="3HVC1H6WxIx" resolve="Command &#10;Authority" />
-        <ref role="SrP07" node="3HVC1H6WxII" resolve="Operators" />
+        <ref role="SrP08" node="3HVC1H6WxIx" />
+        <ref role="SrP07" node="3HVC1H6WxII" />
         <node concept="Sqzvu" id="3Cm$$O2vpuo" role="Sq$B$">
           <property role="TrG5h" value="Doctrine" />
         </node>
@@ -1066,8 +1066,8 @@
     <node concept="1XyJaU" id="3HVC1H6WxII" role="1X_0GB">
       <property role="TrG5h" value="Operators" />
       <node concept="1XypPU" id="3Cm$$O2vAeG" role="2I3o71">
-        <ref role="SrP08" node="3HVC1H6WxII" resolve="Operators" />
-        <ref role="SrP07" node="3Cm$$O2vprc" resolve="Fire Control" />
+        <ref role="SrP08" node="3HVC1H6WxII" />
+        <ref role="SrP07" node="3Cm$$O2vprc" />
         <node concept="Sqzvu" id="3Cm$$O2vAfQ" role="Sq$B$">
           <property role="TrG5h" value="Engage Target" />
         </node>
@@ -1082,8 +1082,8 @@
         </node>
       </node>
       <node concept="Sq$B_" id="1JhvKLLMRRX" role="2I3o71">
-        <ref role="SrP08" node="3HVC1H6WxII" resolve="Operators" />
-        <ref role="SrP07" node="3HVC1H6WxIx" resolve="Command &#10;Authority" />
+        <ref role="SrP08" node="3HVC1H6WxII" />
+        <ref role="SrP07" node="3HVC1H6WxIx" />
         <node concept="Sqzvu" id="3Cm$$O2vUN1" role="Sq$B$">
           <property role="TrG5h" value="Exercise Results" />
         </node>
@@ -1101,8 +1101,8 @@
     <node concept="1XyJaU" id="3Cm$$O2vpqe" role="1X_0GB">
       <property role="TrG5h" value="Early Warning System" />
       <node concept="Sq$B_" id="1JhvKLLMS9W" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vpqe" resolve="Early Warning System" />
-        <ref role="SrP07" node="3Cm$$O2vprc" resolve="Fire Control" />
+        <ref role="SrP08" node="3Cm$$O2vpqe" />
+        <ref role="SrP07" node="3Cm$$O2vprc" />
         <node concept="Sqzvu" id="3Cm$$O2vUZ4" role="Sq$B$">
           <property role="TrG5h" value="Launch Report" />
         </node>
@@ -1117,8 +1117,8 @@
     <node concept="1XyJaU" id="3Cm$$O2vpqF" role="1X_0GB">
       <property role="TrG5h" value="Radar" />
       <node concept="Sq$B_" id="1JhvKLLMSgB" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vpqF" resolve="Radar" />
-        <ref role="SrP07" node="3Cm$$O2vprc" resolve="Fire Control" />
+        <ref role="SrP08" node="3Cm$$O2vpqF" />
+        <ref role="SrP07" node="3Cm$$O2vprc" />
         <node concept="Sqzvu" id="3Cm$$O2vUZg" role="Sq$B$">
           <property role="TrG5h" value="Status" />
         </node>
@@ -1130,15 +1130,15 @@
     <node concept="1XyJaU" id="3Cm$$O2vprc" role="1X_0GB">
       <property role="TrG5h" value="Fire Control" />
       <node concept="1XypPU" id="3Cm$$O2vAgc" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vprc" resolve="Fire Control" />
-        <ref role="SrP07" node="3Cm$$O2vpqe" resolve="Early Warning System" />
+        <ref role="SrP08" node="3Cm$$O2vprc" />
+        <ref role="SrP07" node="3Cm$$O2vpqe" />
         <node concept="Sqzvu" id="3Cm$$O2vAhn" role="Sq$B$">
           <property role="TrG5h" value="Status Request" />
         </node>
       </node>
       <node concept="1XypPU" id="3Cm$$O2vAhr" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vprc" resolve="Fire Control" />
-        <ref role="SrP07" node="3Cm$$O2vpqF" resolve="Radar" />
+        <ref role="SrP08" node="3Cm$$O2vprc" />
+        <ref role="SrP07" node="3Cm$$O2vpqF" />
         <node concept="Sqzvu" id="3Cm$$O2vAiI" role="Sq$B$">
           <property role="TrG5h" value="Radar Tasking" />
         </node>
@@ -1150,8 +1150,8 @@
         </node>
       </node>
       <node concept="1XypPU" id="3Cm$$O2vAm9" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vprc" resolve="Fire Control" />
-        <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <ref role="SrP08" node="3Cm$$O2vprc" />
+        <ref role="SrP07" node="3Cm$$O2vpsZ" />
         <node concept="Sqzvu" id="3Cm$$O2vAnZ" role="Sq$B$">
           <property role="TrG5h" value="Fire Disable" />
         </node>
@@ -1172,8 +1172,8 @@
         </node>
       </node>
       <node concept="Sq$B_" id="1JhvKLLMSxO" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vprc" resolve="Fire Control" />
-        <ref role="SrP07" node="3HVC1H6WxII" resolve="Operators" />
+        <ref role="SrP08" node="3Cm$$O2vprc" />
+        <ref role="SrP07" node="3HVC1H6WxII" />
         <node concept="Sqzvu" id="3Cm$$O2vUR4" role="Sq$B$">
           <property role="TrG5h" value="Operational Mode" />
         </node>
@@ -1194,8 +1194,8 @@
     <node concept="1XyJaU" id="3Cm$$O2vprJ" role="1X_0GB">
       <property role="TrG5h" value="Launcher" />
       <node concept="Sq$B_" id="1JhvKLLNT2t" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vprJ" resolve="Launcher" />
-        <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <ref role="SrP08" node="3Cm$$O2vprJ" />
+        <ref role="SrP07" node="3Cm$$O2vpsZ" />
         <node concept="Sqzvu" id="3Cm$$O2vV7f" role="Sq$B$">
           <property role="TrG5h" value="BIT Results" />
         </node>
@@ -1207,8 +1207,8 @@
     <node concept="1XyJaU" id="3Cm$$O2vpsm" role="1X_0GB">
       <property role="TrG5h" value="Interceptor&#10;Simulator" />
       <node concept="Sq$B_" id="1JhvKLLMSCB" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vpsm" resolve="Interceptor&#10;Simulator" />
-        <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <ref role="SrP08" node="3Cm$$O2vpsm" />
+        <ref role="SrP07" node="3Cm$$O2vpsZ" />
         <node concept="Sqzvu" id="3Cm$$O2vV6X" role="Sq$B$">
           <property role="TrG5h" value="Acknowledgements" />
         </node>
@@ -1223,8 +1223,8 @@
     <node concept="1XyJaU" id="3Cm$$O2vpsZ" role="1X_0GB">
       <property role="TrG5h" value="Launch Station" />
       <node concept="1XypPU" id="3Cm$$O2vAke" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-        <ref role="SrP07" node="3Cm$$O2vprJ" resolve="Launcher" />
+        <ref role="SrP08" node="3Cm$$O2vpsZ" />
+        <ref role="SrP07" node="3Cm$$O2vprJ" />
         <node concept="Sqzvu" id="3Cm$$O2vAlH" role="Sq$B$">
           <property role="TrG5h" value="Launch Position" />
         </node>
@@ -1236,8 +1236,8 @@
         </node>
       </node>
       <node concept="1XypPU" id="3Cm$$O2vApM" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-        <ref role="SrP07" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
+        <ref role="SrP08" node="3Cm$$O2vpsZ" />
+        <ref role="SrP07" node="3Cm$$O2vAow" />
         <node concept="Sqzvu" id="3Cm$$O2vArR" role="Sq$B$">
           <property role="TrG5h" value="Abort" />
         </node>
@@ -1267,8 +1267,8 @@
         </node>
       </node>
       <node concept="1XypPU" id="3Cm$$O2vAwR" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-        <ref role="SrP07" node="3Cm$$O2vpsm" resolve="Interceptor&#10;Simulator" />
+        <ref role="SrP08" node="3Cm$$O2vpsZ" />
+        <ref role="SrP07" node="3Cm$$O2vpsm" />
         <node concept="Sqzvu" id="3Cm$$O2vAzi" role="Sq$B$">
           <property role="TrG5h" value="Abort" />
         </node>
@@ -1298,8 +1298,8 @@
         </node>
       </node>
       <node concept="Sq$B_" id="1JhvKLLNTi0" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vpsZ" resolve="Launch Station" />
-        <ref role="SrP07" node="3Cm$$O2vprc" resolve="Fire Control" />
+        <ref role="SrP08" node="3Cm$$O2vpsZ" />
+        <ref role="SrP07" node="3Cm$$O2vprc" />
         <node concept="Sqzvu" id="3Cm$$O2vVsS" role="Sq$B$">
           <property role="TrG5h" value="Command Responses" />
         </node>
@@ -1314,8 +1314,8 @@
     <node concept="1XyJaU" id="3Cm$$O2vAow" role="1X_0GB">
       <property role="TrG5h" value="Flight&#10;Computer" />
       <node concept="1XypPU" id="3Cm$$O2vAuj" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
-        <ref role="SrP07" node="3Cm$$O2vAsU" resolve="Interceptor&#10;H/W" />
+        <ref role="SrP08" node="3Cm$$O2vAow" />
+        <ref role="SrP07" node="3Cm$$O2vAsU" />
         <node concept="Sqzvu" id="3Cm$$O2vAwE" role="Sq$B$">
           <property role="TrG5h" value="Arm" />
         </node>
@@ -1327,8 +1327,8 @@
         </node>
       </node>
       <node concept="Sq$B_" id="1JhvKLLNWwJ" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
-        <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <ref role="SrP08" node="3Cm$$O2vAow" />
+        <ref role="SrP07" node="3Cm$$O2vpsZ" />
         <node concept="Sqzvu" id="3Cm$$O2vVmx" role="Sq$B$">
           <property role="TrG5h" value="Acknowledgements" />
         </node>
@@ -1343,8 +1343,8 @@
     <node concept="1XyJaU" id="3Cm$$O2vAsU" role="1X_0GB">
       <property role="TrG5h" value="Interceptor&#10;H/W" />
       <node concept="Sq$B_" id="1JhvKLLNWC_" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vAsU" resolve="Interceptor&#10;H/W" />
-        <ref role="SrP07" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
+        <ref role="SrP08" node="3Cm$$O2vAsU" />
+        <ref role="SrP07" node="3Cm$$O2vAow" />
         <node concept="Sqzvu" id="3Cm$$O2vVlx" role="Sq$B$">
           <property role="TrG5h" value="BIT Info" />
         </node>
@@ -1353,8 +1353,8 @@
         </node>
       </node>
       <node concept="Sq$B_" id="1JhvKLLNWKA" role="2I3o71">
-        <ref role="SrP08" node="3Cm$$O2vAsU" resolve="Interceptor&#10;H/W" />
-        <ref role="SrP07" node="3Cm$$O2vpsZ" resolve="Launch Station" />
+        <ref role="SrP08" node="3Cm$$O2vAsU" />
+        <ref role="SrP07" node="3Cm$$O2vpsZ" />
         <node concept="Sqzvu" id="3Cm$$O2vVlC" role="Sq$B$">
           <property role="TrG5h" value="Breakwires" />
         </node>
@@ -1369,11 +1369,11 @@
   </node>
   <node concept="1E0nO6" id="1JhvKLLOibR">
     <property role="TrG5h" value="_010_ballistic_missle_defence_system_unsafe_control_analysis" />
-    <ref role="1E05RL" node="3HVC1H6WpyK" resolve="_010_ballistic_missle_defence_system_control" />
+    <ref role="1E05RL" node="3HVC1H6WpyK" />
     <node concept="1E0nOG" id="1JhvKLLOibS" role="1E0n_e">
-      <ref role="1E0nOH" node="3Cm$$O2vAow" resolve="Flight&#10;Computer" />
+      <ref role="1E0nOH" node="3Cm$$O2vAow" />
       <node concept="1E0nOJ" id="1JhvKLLOibU" role="1E0nOC">
-        <ref role="1E0n_N" node="3Cm$$O2vAwE" resolve="Arm" />
+        <ref role="1E0n_N" node="3Cm$$O2vAwE" />
         <node concept="3f6qtF" id="6vZMoXu1P0K" role="3f6qqO">
           <node concept="1E0uc6" id="1JhvKLLOOtH" role="3f6qtG">
             <property role="TrG5h" value="ARM_UNINTENDED" />
@@ -1383,7 +1383,7 @@
               </node>
             </node>
             <node concept="DABN8" id="EZNLLOG_WJ" role="2Dy4$W">
-              <ref role="DABNb" node="EZNLLOG_WF" resolve="accidental launch" />
+              <ref role="DABNb" node="EZNLLOG_WF" />
             </node>
           </node>
         </node>
@@ -1405,7 +1405,7 @@
                 </node>
               </node>
               <node concept="DABN8" id="EZNLLOH1Wc" role="1Y4wFg">
-                <ref role="DABNb" node="EZNLLOG_WF" resolve="accidental launch" />
+                <ref role="DABNb" node="EZNLLOG_WF" />
               </node>
             </node>
           </node>
@@ -1414,15 +1414,15 @@
       </node>
     </node>
     <node concept="1E0nOG" id="6knLqZ8Kr2v" role="1E0n_e">
-      <ref role="1E0nOH" node="3HVC1H6WxIx" resolve="Command &#10;Authority" />
+      <ref role="1E0nOH" node="3HVC1H6WxIx" />
       <node concept="1E0nOJ" id="6knLqZ8Kr2K" role="1E0nOC">
-        <ref role="1E0n_N" node="3Cm$$O2vpuv" resolve="Training" />
+        <ref role="1E0n_N" node="3Cm$$O2vpuv" />
         <node concept="3f6qtF" id="6vZMoXu1P0R" role="3f6qqO" />
         <node concept="3f6qtF" id="6vZMoXu1P0S" role="3f6qqO">
           <node concept="1E0COo" id="EZNLLO_608" role="3f6qtG">
             <property role="TrG5h" value="NO_TRAINING" />
             <node concept="1YbhHi" id="EZNLLO_60h" role="1E0COp">
-              <ref role="1YbhHj" node="EZNLLO_600" resolve="attack starts unexpectedly" />
+              <ref role="1YbhHj" node="EZNLLO_600" />
             </node>
             <node concept="1E0COF" id="EZNLLO_60s" role="1E0COk">
               <node concept="19SGf9" id="EZNLLO_60u" role="1E0CO$">
@@ -1431,10 +1431,10 @@
                 </node>
               </node>
               <node concept="DABN8" id="EZNLLOFR8N" role="1Y4wFg">
-                <ref role="DABNb" node="EZNLLOFO$u" resolve="innefficient defence" />
+                <ref role="DABNb" node="EZNLLOFO$u" />
               </node>
               <node concept="DABN8" id="EZNLLOH1Wj" role="1Y4wFg">
-                <ref role="DABNb" node="EZNLLOFR8K" resolve="no defence" />
+                <ref role="DABNb" node="EZNLLOFR8K" />
               </node>
             </node>
           </node>
@@ -1456,7 +1456,7 @@
                 </node>
               </node>
               <node concept="DABN8" id="EZNLLOH1We" role="1Y4wFg">
-                <ref role="DABNb" node="EZNLLOFO$u" resolve="innefficient defence" />
+                <ref role="DABNb" node="EZNLLOFO$u" />
               </node>
             </node>
           </node>
@@ -1465,18 +1465,18 @@
       </node>
     </node>
     <node concept="1E0nOG" id="6XKrTzkz8yF" role="1E0n_e">
-      <ref role="1E0nOH" node="3Cm$$O2vpqe" resolve="Early Warning System" />
+      <ref role="1E0nOH" node="3Cm$$O2vpqe" />
       <node concept="1E0nOJ" id="6XKrTzkz8zc" role="1E0nOC">
-        <ref role="1E0n_N" node="3Cm$$O2vUZb" resolve="Heartbeat" />
+        <ref role="1E0n_N" node="3Cm$$O2vUZb" />
         <node concept="3f6qtF" id="6vZMoXu1P0V" role="3f6qqO" />
         <node concept="3f6qtF" id="6vZMoXu1P0W" role="3f6qqO">
           <node concept="1E0COo" id="EZNLLOH28Q" role="3f6qtG">
             <property role="TrG5h" value="NO_HEARTBEAT" />
             <node concept="1YbhHi" id="EZNLLOH293" role="1E0COp">
-              <ref role="1YbhHj" node="EZNLLOH28U" resolve="peace" />
+              <ref role="1YbhHj" node="EZNLLOH28U" />
             </node>
             <node concept="gxbn0" id="EZNLLOH296" role="1E0COk">
-              <ref role="gxbni" node="EZNLLOG_WF" resolve="accidental launch" />
+              <ref role="gxbni" node="EZNLLOG_WF" />
             </node>
           </node>
         </node>
@@ -1502,8 +1502,8 @@
     <node concept="1XyJaU" id="1JhvKLLP$9p" role="1X_0GB">
       <property role="TrG5h" value="ATC" />
       <node concept="1XypPU" id="1JhvKLLPH8r" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLP$9p" resolve="ATC" />
-        <ref role="SrP07" node="1JhvKLLPH72" resolve="Team Lead" />
+        <ref role="SrP08" node="1JhvKLLP$9p" />
+        <ref role="SrP07" node="1JhvKLLPH72" />
         <node concept="Sqzvu" id="1JhvKLLPH8s" role="Sq$B$">
           <property role="TrG5h" value="Grant clearance" />
         </node>
@@ -1515,8 +1515,8 @@
         </node>
       </node>
       <node concept="1XypPU" id="1JhvKLLPHxr" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLP$9p" resolve="ATC" />
-        <ref role="SrP07" node="1JhvKLLPH79" resolve="Ground Station" />
+        <ref role="SrP08" node="1JhvKLLP$9p" />
+        <ref role="SrP07" node="1JhvKLLPH79" />
         <node concept="Sqzvu" id="1JhvKLLPI0V" role="Sq$B$">
           <property role="TrG5h" value="Grant clearance" />
         </node>
@@ -1969,8 +1969,8 @@
     <node concept="1XyJaU" id="1JhvKLLP$9v" role="1X_0GB">
       <property role="TrG5h" value="Mission Planning&#10;and Crew Chief" />
       <node concept="1XypPU" id="1JhvKLLPH9n" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLP$9v" resolve="Mission Planning&#10;and Crew Chief" />
-        <ref role="SrP07" node="1JhvKLLPH72" resolve="Team Lead" />
+        <ref role="SrP08" node="1JhvKLLP$9v" />
+        <ref role="SrP07" node="1JhvKLLPH72" />
         <node concept="Sqzvu" id="1JhvKLLPH9o" role="Sq$B$">
           <property role="TrG5h" value="Issue mission plan" />
         </node>
@@ -1979,8 +1979,8 @@
         </node>
       </node>
       <node concept="1XypPU" id="1JhvKLLPH$r" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLP$9v" resolve="Mission Planning&#10;and Crew Chief" />
-        <ref role="SrP07" node="1JhvKLLPH79" resolve="Ground Station" />
+        <ref role="SrP08" node="1JhvKLLP$9v" />
+        <ref role="SrP07" node="1JhvKLLPH79" />
         <node concept="Sqzvu" id="1JhvKLLPI12" role="Sq$B$">
           <property role="TrG5h" value="Issue mission plan" />
         </node>
@@ -1992,8 +1992,8 @@
     <node concept="1XyJaU" id="1JhvKLLPH72" role="1X_0GB">
       <property role="TrG5h" value="Team Lead" />
       <node concept="Sq$B_" id="1JhvKLLPHaz" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLPH72" resolve="Team Lead" />
-        <ref role="SrP07" node="1JhvKLLP$9p" resolve="ATC" />
+        <ref role="SrP08" node="1JhvKLLPH72" />
+        <ref role="SrP07" node="1JhvKLLP$9p" />
         <node concept="Sqzvu" id="1JhvKLLPI0t" role="Sq$B$">
           <property role="TrG5h" value="Request takeoff/landing clearance" />
         </node>
@@ -2005,8 +2005,8 @@
         </node>
       </node>
       <node concept="1XypPU" id="1JhvKLLPHbW" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLPH72" resolve="Team Lead" />
-        <ref role="SrP07" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
+        <ref role="SrP08" node="1JhvKLLPH72" />
+        <ref role="SrP07" node="1JhvKLLPH7y" />
         <node concept="Sqzvu" id="1JhvKLLPHbX" role="Sq$B$">
           <property role="TrG5h" value="Surveil a region" />
         </node>
@@ -2033,15 +2033,15 @@
         </node>
       </node>
       <node concept="Sq$B_" id="1JhvKLLPHEA" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLPH72" resolve="Team Lead" />
-        <ref role="SrP07" node="1JhvKLLP$9v" resolve="Mission Planning&#10;and Crew Chief" />
+        <ref role="SrP08" node="1JhvKLLPH72" />
+        <ref role="SrP07" node="1JhvKLLP$9v" />
         <node concept="Sqzvu" id="1JhvKLLPHUQ" role="Sq$B$">
           <property role="TrG5h" value="Mission Status" />
         </node>
       </node>
       <node concept="Sq$B_" id="1JhvKLLPHOR" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLPH72" resolve="Team Lead" />
-        <ref role="SrP07" node="1JhvKLLPH79" resolve="Ground Station" />
+        <ref role="SrP08" node="1JhvKLLPH72" />
+        <ref role="SrP07" node="1JhvKLLPH79" />
         <node concept="Sqzvu" id="1JhvKLLPHEB" role="Sq$B$">
           <property role="TrG5h" value="Positions" />
         </node>
@@ -2062,8 +2062,8 @@
     <node concept="1XyJaU" id="1JhvKLLPH79" role="1X_0GB">
       <property role="TrG5h" value="Ground Station" />
       <node concept="1XypPU" id="1JhvKLLPHji" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLPH79" resolve="Ground Station" />
-        <ref role="SrP07" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
+        <ref role="SrP08" node="1JhvKLLPH79" />
+        <ref role="SrP07" node="1JhvKLLPH7y" />
         <node concept="Sqzvu" id="1JhvKLLPHjj" role="Sq$B$">
           <property role="TrG5h" value="Takeoff" />
         </node>
@@ -2096,15 +2096,15 @@
         </node>
       </node>
       <node concept="Sq$B_" id="1JhvKLLPHBz" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLPH79" resolve="Ground Station" />
-        <ref role="SrP07" node="1JhvKLLP$9v" resolve="Mission Planning&#10;and Crew Chief" />
+        <ref role="SrP08" node="1JhvKLLPH79" />
+        <ref role="SrP07" node="1JhvKLLP$9v" />
         <node concept="Sqzvu" id="1JhvKLLPHB$" role="Sq$B$">
           <property role="TrG5h" value="Mission Status" />
         </node>
       </node>
       <node concept="1XypPU" id="1JhvKLLPHLm" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLPH79" resolve="Ground Station" />
-        <ref role="SrP07" node="1JhvKLLPH72" resolve="Team Lead" />
+        <ref role="SrP08" node="1JhvKLLPH79" />
+        <ref role="SrP07" node="1JhvKLLPH72" />
         <node concept="Sqzvu" id="1JhvKLLPHLn" role="Sq$B$">
           <property role="TrG5h" value="Mission Changes" />
         </node>
@@ -2116,8 +2116,8 @@
         </node>
       </node>
       <node concept="Sq$B_" id="1JhvKLLPHWl" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLPH79" resolve="Ground Station" />
-        <ref role="SrP07" node="1JhvKLLP$9p" resolve="ATC" />
+        <ref role="SrP08" node="1JhvKLLPH79" />
+        <ref role="SrP07" node="1JhvKLLP$9p" />
         <node concept="Sqzvu" id="1JhvKLLPHxs" role="Sq$B$">
           <property role="TrG5h" value="Request takeoff/landing clearance" />
         </node>
@@ -2132,8 +2132,8 @@
     <node concept="1XyJaU" id="1JhvKLLPH7y" role="1X_0GB">
       <property role="TrG5h" value="Autonomous&#10;Controller" />
       <node concept="Sq$B_" id="1JhvKLLPHdk" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-        <ref role="SrP07" node="1JhvKLLPH72" resolve="Team Lead" />
+        <ref role="SrP08" node="1JhvKLLPH7y" />
+        <ref role="SrP07" node="1JhvKLLPH72" />
         <node concept="Sqzvu" id="1JhvKLLPHdl" role="Sq$B$">
           <property role="TrG5h" value="Visual" />
         </node>
@@ -2154,8 +2154,8 @@
         </node>
       </node>
       <node concept="1XypPU" id="1JhvKLLPHf_" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-        <ref role="SrP07" node="1JhvKLLPH7F" resolve="UAVs" />
+        <ref role="SrP08" node="1JhvKLLPH7y" />
+        <ref role="SrP07" node="1JhvKLLPH7F" />
         <node concept="Sqzvu" id="1JhvKLLPHfA" role="Sq$B$">
           <property role="TrG5h" value="Change altitude" />
         </node>
@@ -2164,8 +2164,8 @@
         </node>
       </node>
       <node concept="Sq$B_" id="1JhvKLLPHlj" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
-        <ref role="SrP07" node="1JhvKLLPH79" resolve="Ground Station" />
+        <ref role="SrP08" node="1JhvKLLPH7y" />
+        <ref role="SrP07" node="1JhvKLLPH79" />
         <node concept="Sqzvu" id="1JhvKLLPHlk" role="Sq$B$">
           <property role="TrG5h" value="Engine status" />
         </node>
@@ -2204,8 +2204,8 @@
     <node concept="1XyJaU" id="1JhvKLLPH7F" role="1X_0GB">
       <property role="TrG5h" value="UAVs" />
       <node concept="Sq$B_" id="1JhvKLLPHh9" role="2I3o71">
-        <ref role="SrP08" node="1JhvKLLPH7F" resolve="UAVs" />
-        <ref role="SrP07" node="1JhvKLLPH7y" resolve="Autonomous&#10;Controller" />
+        <ref role="SrP08" node="1JhvKLLPH7F" />
+        <ref role="SrP07" node="1JhvKLLPH7y" />
         <node concept="Sqzvu" id="1JhvKLLPHha" role="Sq$B$">
           <property role="TrG5h" value="GPS position" />
         </node>
@@ -2232,22 +2232,22 @@
     <node concept="1XyJaU" id="4q9fsxm3ohX" role="1X_0GB">
       <property role="TrG5h" value="ChargerController" />
       <node concept="Sq$B_" id="4q9fsxm3ojB" role="2I3o71">
-        <ref role="SrP08" node="4q9fsxm3ohX" resolve="ChargerController" />
-        <ref role="SrP07" node="4q9fsxm3oiB" resolve="Operator" />
+        <ref role="SrP08" node="4q9fsxm3ohX" />
+        <ref role="SrP07" node="4q9fsxm3oiB" />
         <node concept="Sqzvu" id="4q9fsxm3ojC" role="Sq$B$">
           <property role="TrG5h" value="Charging Active" />
         </node>
       </node>
       <node concept="1XypPU" id="4q9fsxm3olZ" role="2I3o71">
-        <ref role="SrP08" node="4q9fsxm3ohX" resolve="ChargerController" />
-        <ref role="SrP07" node="4q9fsxm3oih" resolve="Car" />
+        <ref role="SrP08" node="4q9fsxm3ohX" />
+        <ref role="SrP07" node="4q9fsxm3oih" />
         <node concept="Sqzvu" id="4q9fsxm3ooF" role="Sq$B$">
           <property role="TrG5h" value="Check Status" />
         </node>
       </node>
       <node concept="1XypPU" id="4q9fsxm3opO" role="2I3o71">
-        <ref role="SrP08" node="4q9fsxm3ohX" resolve="ChargerController" />
-        <ref role="SrP07" node="4q9fsxm3ooS" resolve="Circuit Switch" />
+        <ref role="SrP08" node="4q9fsxm3ohX" />
+        <ref role="SrP07" node="4q9fsxm3ooS" />
         <node concept="Sqzvu" id="4q9fsxm3opP" role="Sq$B$">
           <property role="TrG5h" value="Close Switch" />
         </node>
@@ -2460,8 +2460,8 @@
     <node concept="1XyJaU" id="4q9fsxm3oih" role="1X_0GB">
       <property role="TrG5h" value="Car" />
       <node concept="Sq$B_" id="4q9fsxm3ong" role="2I3o71">
-        <ref role="SrP08" node="4q9fsxm3oih" resolve="Car" />
-        <ref role="SrP07" node="4q9fsxm3ohX" resolve="ChargerController" />
+        <ref role="SrP08" node="4q9fsxm3oih" />
+        <ref role="SrP07" node="4q9fsxm3ohX" />
         <node concept="Sqzvu" id="4q9fsxm3onh" role="Sq$B$">
           <property role="TrG5h" value="Charging Allowed" />
         </node>
@@ -2473,8 +2473,8 @@
     <node concept="1XyJaU" id="4q9fsxm3oiB" role="1X_0GB">
       <property role="TrG5h" value="Operator" />
       <node concept="1XypPU" id="4q9fsxm3oiW" role="2I3o71">
-        <ref role="SrP08" node="4q9fsxm3oiB" resolve="Operator" />
-        <ref role="SrP07" node="4q9fsxm3ohX" resolve="ChargerController" />
+        <ref role="SrP08" node="4q9fsxm3oiB" />
+        <ref role="SrP07" node="4q9fsxm3ohX" />
         <node concept="Sqzvu" id="4q9fsxm3oiX" role="Sq$B$">
           <property role="TrG5h" value="Start Charging" />
         </node>
@@ -2486,8 +2486,8 @@
     <node concept="1XyJaU" id="4q9fsxm3ooS" role="1X_0GB">
       <property role="TrG5h" value="Circuit Switch" />
       <node concept="Sq$B_" id="4q9fsxm3org" role="2I3o71">
-        <ref role="SrP08" node="4q9fsxm3ooS" resolve="Circuit Switch" />
-        <ref role="SrP07" node="4q9fsxm3ohX" resolve="ChargerController" />
+        <ref role="SrP08" node="4q9fsxm3ooS" />
+        <ref role="SrP07" node="4q9fsxm3ohX" />
         <node concept="Sqzvu" id="4q9fsxm3orh" role="Sq$B$">
           <property role="TrG5h" value="Switch Closed" />
         </node>
@@ -2499,11 +2499,11 @@
   </node>
   <node concept="1E0nO6" id="4q9fsxm3otn">
     <property role="TrG5h" value="_100_car_smart_charger_unsafe_control" />
-    <ref role="1E05RL" node="4q9fsxm3ohE" resolve="_100_car_smart_charger_connector" />
+    <ref role="1E05RL" node="4q9fsxm3ohE" />
     <node concept="1E0nOG" id="4q9fsxm3otD" role="1E0n_e">
-      <ref role="1E0nOH" node="4q9fsxm3oiB" resolve="Operator" />
+      <ref role="1E0nOH" node="4q9fsxm3oiB" />
       <node concept="1E0nOJ" id="4q9fsxm3otF" role="1E0nOC">
-        <ref role="1E0n_N" node="4q9fsxm3oiX" resolve="Start Charging" />
+        <ref role="1E0n_N" node="4q9fsxm3oiX" />
         <node concept="3f6qtF" id="6vZMoXu1P10" role="3f6qqO">
           <node concept="1E0COo" id="4q9fsxm3otH" role="3f6qtG">
             <property role="TrG5h" value="UCA01" />
@@ -2529,9 +2529,9 @@
       </node>
     </node>
     <node concept="1E0nOG" id="4q9fsxm3ou9" role="1E0n_e">
-      <ref role="1E0nOH" node="4q9fsxm3ohX" resolve="ChargerController" />
+      <ref role="1E0nOH" node="4q9fsxm3ohX" />
       <node concept="1E0nOJ" id="4q9fsxm3ouk" role="1E0nOC">
-        <ref role="1E0n_N" node="4q9fsxm3opP" resolve="Close Switch" />
+        <ref role="1E0n_N" node="4q9fsxm3opP" />
         <node concept="3f6qtF" id="6vZMoXu1P17" role="3f6qqO">
           <node concept="1E0COo" id="4q9fsxm3oum" role="3f6qtG">
             <property role="TrG5h" value="UCA02" />
@@ -2655,8 +2655,8 @@
     <node concept="1XyJaU" id="1FMyjUP7vy4" role="1X_0GB">
       <property role="TrG5h" value="Infrastructure" />
       <node concept="1XypPU" id="1FMyjUP7vyV" role="2I3o71">
-        <ref role="SrP08" node="1FMyjUP7vy4" resolve="Infrastructure" />
-        <ref role="SrP07" node="1FMyjUP7vyt" resolve="Receiver" />
+        <ref role="SrP08" node="1FMyjUP7vy4" />
+        <ref role="SrP07" node="1FMyjUP7vyt" />
         <node concept="Sqzvu" id="1FMyjUP7vyW" role="Sq$B$">
           <property role="TrG5h" value="Limit Speed under 30 km/h" />
         </node>
@@ -2731,8 +2731,8 @@
       <node concept="1XyJaU" id="1FMyjUP7vyt" role="2I3oOA">
         <property role="TrG5h" value="Receiver" />
         <node concept="1XypPU" id="1FMyjUP7v$E" role="2I3o71">
-          <ref role="SrP08" node="1FMyjUP7vyt" resolve="Receiver" />
-          <ref role="SrP07" node="1FMyjUP7vzN" resolve="Planner" />
+          <ref role="SrP08" node="1FMyjUP7vyt" />
+          <ref role="SrP07" node="1FMyjUP7vzN" />
           <node concept="Sqzvu" id="1FMyjUP7v$F" role="Sq$B$">
             <property role="TrG5h" value="Reduce Speed Msg" />
           </node>
@@ -2831,8 +2831,8 @@
       <node concept="1XyJaU" id="1FMyjUP7vzN" role="2I3oOA">
         <property role="TrG5h" value="Planner" />
         <node concept="1XypPU" id="1FMyjUP7v_x" role="2I3o71">
-          <ref role="SrP08" node="1FMyjUP7vzN" resolve="Planner" />
-          <ref role="SrP07" node="1FMyjUP7v_c" resolve="Vehicle" />
+          <ref role="SrP08" node="1FMyjUP7vzN" />
+          <ref role="SrP07" node="1FMyjUP7v_c" />
           <node concept="Sqzvu" id="1FMyjUP7v_y" role="Sq$B$">
             <property role="TrG5h" value="Reduce Speed due to Infrastructure" />
           </node>
@@ -2841,8 +2841,8 @@
       <node concept="1XyJaU" id="1FMyjUP7v_c" role="2I3oOA">
         <property role="TrG5h" value="Vehicle" />
         <node concept="Sq$B_" id="1FMyjUP7vAj" role="2I3o71">
-          <ref role="SrP08" node="1FMyjUP7v_c" resolve="Vehicle" />
-          <ref role="SrP07" node="1FMyjUP7vy4" resolve="Infrastructure" />
+          <ref role="SrP08" node="1FMyjUP7v_c" />
+          <ref role="SrP07" node="1FMyjUP7vy4" />
           <node concept="Sqzvu" id="1FMyjUP7vAk" role="Sq$B$">
             <property role="TrG5h" value="Reducing Speed" />
           </node>
@@ -2857,8 +2857,8 @@
       <node concept="1XyJaU" id="18H7s3mX5hg" role="2I3oOA">
         <property role="TrG5h" value="Pilot Flying" />
         <node concept="1XypPU" id="y_X$kzwvB6" role="2I3o71">
-          <ref role="SrP08" node="18H7s3mX5hg" resolve="Pilot Flying" />
-          <ref role="SrP07" node="18H7s3mX5i1" resolve="Pilot Monitoring" />
+          <ref role="SrP08" node="18H7s3mX5hg" />
+          <ref role="SrP07" node="18H7s3mX5i1" />
           <node concept="Sqzvu" id="y_X$kzwvB7" role="Sq$B$">
             <property role="TrG5h" value="Issue Mayday" />
           </node>
@@ -3048,8 +3048,8 @@
       <node concept="1XyJaU" id="18H7s3mX5i1" role="2I3oOA">
         <property role="TrG5h" value="Pilot Monitoring" />
         <node concept="1XypPU" id="y_X$kzwv__" role="2I3o71">
-          <ref role="SrP08" node="18H7s3mX5i1" resolve="Pilot Monitoring" />
-          <ref role="SrP07" node="18H7s3mX5hg" resolve="Pilot Flying" />
+          <ref role="SrP08" node="18H7s3mX5i1" />
+          <ref role="SrP07" node="18H7s3mX5hg" />
           <node concept="Sqzvu" id="y_X$kzwv_A" role="Sq$B$">
             <property role="TrG5h" value="Permission to Land" />
           </node>
@@ -3058,8 +3058,8 @@
       <node concept="1XyJaU" id="18H7s3mX5ic" role="2I3oOA">
         <property role="TrG5h" value="Communication System" />
         <node concept="1XypPU" id="y_X$kzwv$1" role="2I3o71">
-          <ref role="SrP08" node="18H7s3mX5ic" resolve="Communication System" />
-          <ref role="SrP07" node="18H7s3mX5i1" resolve="Pilot Monitoring" />
+          <ref role="SrP08" node="18H7s3mX5ic" />
+          <ref role="SrP07" node="18H7s3mX5i1" />
           <node concept="Sqzvu" id="y_X$kzwv$2" role="Sq$B$">
             <property role="TrG5h" value="Communication" />
           </node>
@@ -3419,8 +3419,8 @@
       <node concept="1XyJaU" id="18H7s3mX5gb" role="2I3oOA">
         <property role="TrG5h" value="Control Tower" />
         <node concept="1XypPU" id="y_X$kzwvxo" role="2I3o71">
-          <ref role="SrP08" node="18H7s3mX5gb" resolve="Control Tower" />
-          <ref role="SrP07" node="18H7s3mX5ic" resolve="Communication System" />
+          <ref role="SrP08" node="18H7s3mX5gb" />
+          <ref role="SrP07" node="18H7s3mX5ic" />
           <node concept="Sqzvu" id="y_X$kzwvxp" role="Sq$B$">
             <property role="TrG5h" value="Permission to Land" />
           </node>
@@ -3432,8 +3432,8 @@
       <node concept="1XyJaU" id="18H7s3mX5gq" role="2I3oOA">
         <property role="TrG5h" value="Region Contorller" />
         <node concept="1XypPU" id="y_X$kzwvyB" role="2I3o71">
-          <ref role="SrP08" node="18H7s3mX5gq" resolve="Region Contorller" />
-          <ref role="SrP07" node="18H7s3mX5ic" resolve="Communication System" />
+          <ref role="SrP08" node="18H7s3mX5gq" />
+          <ref role="SrP07" node="18H7s3mX5ic" />
           <node concept="Sqzvu" id="y_X$kzwvyC" role="Sq$B$">
             <property role="TrG5h" value="Flight Level" />
           </node>
