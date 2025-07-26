@@ -18,10 +18,10 @@ plugins {
     id("org.cyclonedx.bom") version "2.2.0"
 }
 
-val jbrVers = "17.0.8.1-b1000.32"
-val jbrWindowsVers = "jbr_jcef-17.0.8.1-windows-x64-b1000.32"
-val jbrLinuxVers = "jbr_jcef-17.0.8.1-linux-x64-b1000.32"
-val jbrMacAarchVers = "jbr_jcef-17.0.8.1-osx-aarch64-b1000.32"
+val jbrVers = "21.0.6-b895.109"
+val jbrWindowsVers = "jbr_jcef-21.0.6-windows-x64-b895.109"
+val jbrLinuxVers = "jbr_jcef-21.0.6-linux-x64-b895.109"
+val jbrMacAarchVers = "jbr_jcef-21.0.6-osx-aarch64-b895.109"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -41,9 +41,9 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2024"
+val major = "2025"
 val minor = "1"
-val bugfix = "3"
+val bugfix = ""
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 

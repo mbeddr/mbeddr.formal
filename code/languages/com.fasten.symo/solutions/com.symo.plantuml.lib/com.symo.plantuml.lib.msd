@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.symo.plantuml.lib" uuid="377bf088-4ffc-48ac-910f-fb1c66ffa60e" moduleVersion="0">
   <models>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="batik-all.jar" />
       <sourceRoot location="plantuml-epl.jar" />
       <sourceRoot location="xml-apis-ext.jar" />
