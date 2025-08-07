@@ -132,5 +132,32 @@
       <ref role="PrY4T" to="bpzl:4WObXHxG7xv" resolve="ISpecialStubConcept" />
     </node>
   </node>
+  <node concept="PlHQZ" id="4v4hk0aiFww">
+    <property role="EcuMT" value="5171334413481064480" />
+    <property role="TrG5h" value="IDslYamlTokenWithSpaces" />
+    <node concept="PrWs8" id="4v4hk0aiFwx" role="PrDN$">
+      <ref role="PrY4T" node="49jqi8s8r1R" resolve="IDslYamlToken" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4v4hk0aiKnD">
+    <property role="EcuMT" value="5171334413481084393" />
+    <property role="TrG5h" value="IDslYamlTokenWithSinglePropertyAndSpaces" />
+    <node concept="PrWs8" id="4v4hk0aiKnE" role="PrDN$">
+      <ref role="PrY4T" node="4v4hk0aiFww" resolve="IDslYamlTokenWithSpaces" />
+    </node>
+    <node concept="PrWs8" id="4v4hk0aiKnF" role="PrDN$">
+      <ref role="PrY4T" node="6e$tVQRL8Yh" resolve="IDslYamlTokenWithSingleProperty" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4v4hk0aiKnG">
+    <property role="EcuMT" value="5171334413481084396" />
+    <property role="TrG5h" value="IDslYamlNamedTokenWithSpaces" />
+    <node concept="PrWs8" id="4v4hk0aiKnH" role="PrDN$">
+      <ref role="PrY4T" node="4v4hk0aiFww" resolve="IDslYamlTokenWithSpaces" />
+    </node>
+    <node concept="PrWs8" id="4v4hk0aiKnI" role="PrDN$">
+      <ref role="PrY4T" node="49jqi8s8r41" resolve="IDslYamlNamedToken" />
+    </node>
+  </node>
 </model>
 

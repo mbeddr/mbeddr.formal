@@ -31,6 +31,7 @@
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
         <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
       </concept>
+      <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
@@ -74,6 +75,7 @@
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
@@ -131,6 +133,7 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
+      <concept id="1144146199828" name="jetbrains.mps.lang.smodel.structure.Node_CopyOperation" flags="nn" index="1$rogu" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -911,6 +914,33 @@
         </node>
       </node>
     </node>
+    <node concept="1qefOq" id="61FPPPg7v4z" role="1SKRRt">
+      <node concept="3tkWtY" id="61FPPPg7v4$" role="1qenE9">
+        <property role="TrG5h" value="_200_smoke_lifting_scalars_2" />
+        <node concept="2ZFrdW" id="1PMqbyDRsl$" role="3tkPS6">
+          <node concept="3tmvi$" id="1PMqbyDRsl_" role="3tkPS6">
+            <property role="3tmviA" value="#####  ! NOTE !  ######" />
+          </node>
+          <node concept="3tjRCR" id="1PMqbyDRslA" role="3tkPS6" />
+          <node concept="3tmvi$" id="1PMqbyDRslB" role="3tkPS6">
+            <property role="3tmviA" value="  Constructs to avoid &quot;min&quot;, &quot;max&quot;." />
+          </node>
+          <node concept="3tjRCR" id="1PMqbyDRslC" role="3tkPS6" />
+          <node concept="3tmvi$" id="1PMqbyDRslD" role="3tkPS6">
+            <property role="3tmviA" value=" Furthermore, some more infos (level &gt; 0)." />
+          </node>
+          <node concept="3tjRCR" id="1PMqbyDRslE" role="3tkPS6" />
+          <node concept="3tjRCR" id="1PMqbyDRslF" role="3tkPS6" />
+          <node concept="2RT6AI" id="1PMqbyDRslG" role="3tkPS6">
+            <property role="2RT6AG" value="aScalar" />
+          </node>
+          <node concept="3tjRCR" id="1PMqbyDRslH" role="3tkPS6" />
+        </node>
+        <node concept="3xLA65" id="61FPPPg7v4E" role="lGtFl">
+          <property role="TrG5h" value="_200_smoke_lifting_scalars_3" />
+        </node>
+      </node>
+    </node>
     <node concept="1qefOq" id="3aacpE5uuGD" role="1SKRRt">
       <node concept="3tkWtY" id="3aacpE5uuGE" role="1qenE9">
         <property role="TrG5h" value="_200_smoke_lifting_mapping_1" />
@@ -955,6 +985,42 @@
         </node>
         <node concept="3xLA65" id="7gE2YMADWVR" role="lGtFl">
           <property role="TrG5h" value="_200_smoke_lifting_mapping_1_1" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="4v4hk0ahUzH" role="1SKRRt">
+      <node concept="3tkWtY" id="4v4hk0ahUzI" role="1qenE9">
+        <property role="TrG5h" value="_200_smoke_lifting_mapping_1_2" />
+        <node concept="2ZFrdy" id="4v4hk0ahUzJ" role="3tkPS6">
+          <node concept="2ZIqtT" id="4v4hk0ahUzK" role="3tkPS6">
+            <node concept="2ZFrdW" id="4v4hk0ahUzL" role="3tkPS6">
+              <node concept="2RT6AI" id="4v4hk0ahUzM" role="3tkPS6">
+                <property role="2RT6AG" value="key" />
+              </node>
+            </node>
+            <node concept="2zKeKy" id="4v4hk0ahUzN" role="3tkPS6" />
+            <node concept="3tkPS2" id="4v4hk0alsz8" role="3tkPS6" />
+            <node concept="2ZFrdW" id="4v4hk0ahUzO" role="3tkPS6">
+              <node concept="2RT6AI" id="4v4hk0ahUzP" role="3tkPS6">
+                <property role="2RT6AG" value="value" />
+              </node>
+              <node concept="3tkPS2" id="4v4hk0alhEx" role="3tkPS6" />
+              <node concept="2RT6AI" id="4v4hk0alhHS" role="3tkPS6">
+                <property role="2RT6AG" value="with" />
+              </node>
+              <node concept="3tkPS2" id="4v4hk0alhLf" role="3tkPS6" />
+              <node concept="2RT6AI" id="4v4hk0alhOA" role="3tkPS6">
+                <property role="2RT6AG" value="more" />
+              </node>
+              <node concept="3tkPS2" id="4v4hk0alhRX" role="3tkPS6" />
+              <node concept="2RT6AI" id="4v4hk0alhVk" role="3tkPS6">
+                <property role="2RT6AG" value="words" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3xLA65" id="4v4hk0ahUzQ" role="lGtFl">
+          <property role="TrG5h" value="_200_smoke_lifting_mapping_1_2" />
         </node>
       </node>
     </node>
@@ -1247,6 +1313,105 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="61FPPPg7t4z" role="1SL9yI">
+      <property role="TrG5h" value="_200_smoke_lifting_scalars_3" />
+      <node concept="3cqZAl" id="61FPPPg7t4$" role="3clF45" />
+      <node concept="3clFbS" id="61FPPPg7t4_" role="3clF47">
+        <node concept="3cpWs8" id="61FPPPg7t4A" role="3cqZAp">
+          <node concept="3cpWsn" id="61FPPPg7t4B" role="3cpWs9">
+            <property role="TrG5h" value="text" />
+            <node concept="17QB3L" id="61FPPPg7t4C" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="61FPPPg8q1T" role="3cqZAp">
+          <node concept="37vLTI" id="61FPPPg8q1V" role="3clFbG">
+            <node concept="Xl_RD" id="61FPPPg7t4D" role="37vLTx">
+              <property role="Xl_RC" value="######  ! NOTE !  ######\n" />
+            </node>
+            <node concept="37vLTw" id="61FPPPg8q1Z" role="37vLTJ">
+              <ref role="3cqZAo" node="61FPPPg7t4B" resolve="text" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="61FPPPg8q5p" role="3cqZAp">
+          <node concept="d57v9" id="61FPPPg8rX1" role="3clFbG">
+            <node concept="37vLTw" id="61FPPPg8rX4" role="37vLTJ">
+              <ref role="3cqZAo" node="61FPPPg7t4B" resolve="text" />
+            </node>
+            <node concept="Xl_RD" id="61FPPPg8rX3" role="37vLTx">
+              <property role="Xl_RC" value="#  Constructs to avoid \&quot;min\&quot;, \&quot;max\&quot;.\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="61FPPPg8q8D" role="3cqZAp">
+          <node concept="d57v9" id="61FPPPg8qUI" role="3clFbG">
+            <node concept="37vLTw" id="61FPPPg8qUL" role="37vLTJ">
+              <ref role="3cqZAo" node="61FPPPg7t4B" resolve="text" />
+            </node>
+            <node concept="Xl_RD" id="61FPPPg8qUK" role="37vLTx">
+              <property role="Xl_RC" value="# Furthermore, some more infos (level &gt; 0).\n\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="61FPPPg7t4E" role="3cqZAp">
+          <node concept="d57v9" id="61FPPPg7t4F" role="3clFbG">
+            <node concept="37vLTw" id="61FPPPg7t4G" role="37vLTJ">
+              <ref role="3cqZAo" node="61FPPPg7t4B" resolve="text" />
+            </node>
+            <node concept="Xl_RD" id="61FPPPg7t4H" role="37vLTx">
+              <property role="Xl_RC" value="aScalar\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="61FPPPg7t4I" role="3cqZAp">
+          <node concept="3cpWsn" id="61FPPPg7t4J" role="3cpWs9">
+            <property role="TrG5h" value="lifted2YamlLevel" />
+            <node concept="3Tqbb2" id="61FPPPg7t4K" role="1tU5fm">
+              <ref role="ehGHo" to="bpzl:21lHZzX1B26" resolve="YamlFile" />
+            </node>
+            <node concept="2YIFZM" id="61FPPPg7t4L" role="33vP2m">
+              <ref role="37wK5l" to="qyws:VNqGeRIRqP" resolve="createYamlFile" />
+              <ref role="1Pybhc" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
+              <node concept="37vLTw" id="61FPPPg7t4M" role="37wK5m">
+                <ref role="3cqZAo" node="61FPPPg7t4B" resolve="text" />
+              </node>
+              <node concept="Xl_RD" id="61FPPPg7t4N" role="37wK5m">
+                <property role="Xl_RC" value="_200_smoke_lifting_scalars_3" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="61FPPPg80GI" role="3cqZAp">
+          <node concept="2YIFZM" id="61FPPPg80PK" role="3clFbG">
+            <ref role="37wK5l" to="qyws:61FPPPg7J6R" resolve="saveToTemp" />
+            <ref role="1Pybhc" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
+            <node concept="1jxXqW" id="61FPPPg80Wr" role="37wK5m" />
+            <node concept="2OqwBi" id="61FPPPg8b47" role="37wK5m">
+              <node concept="37vLTw" id="61FPPPg810$" role="2Oq$k0">
+                <ref role="3cqZAo" node="61FPPPg7t4J" resolve="lifted2YamlLevel" />
+              </node>
+              <node concept="1$rogu" id="61FPPPg8brO" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="61FPPPg7t4O" role="3cqZAp">
+          <node concept="2YIFZM" id="61FPPPg7t4P" role="3tpDZA">
+            <ref role="37wK5l" to="qyws:3yl_UmFUNN$" resolve="compareYamlFiles" />
+            <ref role="1Pybhc" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
+            <node concept="37vLTw" id="61FPPPg7t4Q" role="37wK5m">
+              <ref role="3cqZAo" node="61FPPPg7t4J" resolve="lifted2YamlLevel" />
+            </node>
+            <node concept="3xONca" id="61FPPPg7t4R" role="37wK5m">
+              <ref role="3xOPvv" node="61FPPPg7v4E" resolve="_200_smoke_lifting_scalars_3" />
+            </node>
+          </node>
+          <node concept="10M0yZ" id="61FPPPg7t4S" role="3tpDZB">
+            <ref role="3cqZAo" to="qyws:3gvcLqnU8rV" resolve="SUCCESS" />
+            <ref role="1PxDUh" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="1LZb2c" id="6nIrkDgj5Ec" role="1SL9yI">
       <property role="TrG5h" value="_200_smoke_lifting_mappings_1" />
       <node concept="3cqZAl" id="6nIrkDgj5Ed" role="3clF45" />
@@ -1390,6 +1555,67 @@
           </node>
           <node concept="Xl_RD" id="7gE2YMAERvC" role="3tpDZB">
             <property role="Xl_RC" value="on line 0 expected concept 'com.mpsbasics.plaintext.yaml.structure.MappingNode' but was 'com.mpsbasics.plaintext.yaml.structure.ScalarNode'" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="4v4hk0ahVVZ" role="1SL9yI">
+      <property role="TrG5h" value="_200_smoke_lifting_mappings_1_2" />
+      <node concept="3cqZAl" id="4v4hk0ahVW0" role="3clF45" />
+      <node concept="3clFbS" id="4v4hk0ahVW1" role="3clF47">
+        <node concept="3cpWs8" id="4v4hk0ahVW2" role="3cqZAp">
+          <node concept="3cpWsn" id="4v4hk0ahVW3" role="3cpWs9">
+            <property role="TrG5h" value="text" />
+            <node concept="17QB3L" id="4v4hk0ahVW4" role="1tU5fm" />
+            <node concept="Xl_RD" id="4v4hk0ahVW5" role="33vP2m">
+              <property role="Xl_RC" value="key: value with more words" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4v4hk0ahVW6" role="3cqZAp">
+          <node concept="3cpWsn" id="4v4hk0ahVW7" role="3cpWs9">
+            <property role="TrG5h" value="lifted2YamlLevel" />
+            <node concept="3Tqbb2" id="4v4hk0ahVW8" role="1tU5fm">
+              <ref role="ehGHo" to="bpzl:21lHZzX1B26" resolve="YamlFile" />
+            </node>
+            <node concept="2YIFZM" id="4v4hk0ahVW9" role="33vP2m">
+              <ref role="37wK5l" to="qyws:6nIrkDgi97Z" resolve="createYamlFile" />
+              <ref role="1Pybhc" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
+              <node concept="37vLTw" id="4v4hk0ahVWa" role="37wK5m">
+                <ref role="3cqZAo" node="4v4hk0ahVW3" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4v4hk0ahVWb" role="3cqZAp" />
+        <node concept="1X3_iC" id="4v4hk0alzXm" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="4v4hk0aiboH" role="8Wnug">
+            <node concept="2YIFZM" id="4v4hk0aibyA" role="3clFbG">
+              <ref role="37wK5l" to="qyws:61FPPPg7J6R" resolve="saveToTemp" />
+              <ref role="1Pybhc" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
+              <node concept="1jxXqW" id="4v4hk0aibK9" role="37wK5m" />
+              <node concept="37vLTw" id="4v4hk0aibE8" role="37wK5m">
+                <ref role="3cqZAo" node="4v4hk0ahVW7" resolve="lifted2YamlLevel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="4v4hk0ahVWv" role="3cqZAp">
+          <node concept="2YIFZM" id="4v4hk0ahVWw" role="3tpDZA">
+            <ref role="37wK5l" to="qyws:3yl_UmFUNN$" resolve="compareYamlFiles" />
+            <ref role="1Pybhc" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
+            <node concept="37vLTw" id="4v4hk0ahVWx" role="37wK5m">
+              <ref role="3cqZAo" node="4v4hk0ahVW7" resolve="lifted2YamlLevel" />
+            </node>
+            <node concept="3xONca" id="4v4hk0ahVWy" role="37wK5m">
+              <ref role="3xOPvv" node="4v4hk0ahUzQ" resolve="_200_smoke_lifting_mapping_1_2" />
+            </node>
+          </node>
+          <node concept="10M0yZ" id="4v4hk0ahWrE" role="3tpDZB">
+            <ref role="3cqZAo" to="qyws:3gvcLqnU8rV" resolve="SUCCESS" />
+            <ref role="1PxDUh" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
           </node>
         </node>
       </node>
