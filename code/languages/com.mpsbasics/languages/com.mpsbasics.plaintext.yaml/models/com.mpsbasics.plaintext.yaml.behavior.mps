@@ -2285,7 +2285,7 @@
                     <ref role="3cqZAo" node="3YAmJe03srd" resolve="rawTextFile" />
                   </node>
                   <node concept="3Tsc0h" id="6jvFVRmajJI" role="2OqNvi">
-                    <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                    <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                   </node>
                 </node>
               </node>
