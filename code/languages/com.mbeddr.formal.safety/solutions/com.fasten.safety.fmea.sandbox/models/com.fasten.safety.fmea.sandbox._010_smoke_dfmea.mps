@@ -62,12 +62,12 @@
         <child id="4663111736254003226" name="effects" index="2VUkHK" />
       </concept>
       <concept id="4663111736253767846" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModesDefinition" flags="ng" index="2VUHfc">
-        <reference id="4663111736253767852" name="interface" index="2VUHf6" />
+        <reference id="4663111736253767852" name="componentDefinition" index="2VUHf6" />
         <child id="4663111736253793712" name="failureModes" index="2VUBrq" />
       </concept>
       <concept id="4663111736253767856" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModeDefinition" flags="ng" index="2VUHfq" />
       <concept id="8413234032527476648" name="com.fasten.safety.fmea.arch.structure.ComponentInstanceSubject" flags="ng" index="1PLGxJ">
-        <reference id="8413234032527476717" name="comp" index="1PLGwE" />
+        <reference id="8413234032527476717" name="componentInstance" index="1PLGwE" />
       </concept>
       <concept id="8413234032527468119" name="com.fasten.safety.fmea.arch.structure.DesignFMEA" flags="ng" index="1PLMAg">
         <reference id="8413234032528111728" name="arch" index="1POnuR" />

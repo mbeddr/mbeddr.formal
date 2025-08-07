@@ -138,10 +138,10 @@
           <node concept="1ps3o1" id="3acQo$0xjUf" role="1pqCzW">
             <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
             <node concept="1pvSZV" id="3acQo$0xjUh" role="1pvUZv">
-              <ref role="1pvSZS" node="3acQo$0xjU8" resolve="SenderUml" />
+              <ref role="1pvSZS" node="3acQo$0xjU8" resolve="Sender" />
             </node>
             <node concept="1pvSZV" id="3acQo$0xjUi" role="1pvUZs">
-              <ref role="1pvSZS" node="3acQo$0xjUb" resolve="ReceiverUml" />
+              <ref role="1pvSZS" node="3acQo$0xjUb" resolve="Receiver" />
             </node>
           </node>
           <node concept="1pqCE1" id="3acQo$0xjQj" role="1pqCzW" />
@@ -168,7 +168,7 @@
         </node>
         <node concept="2VURXa" id="3acQo$0xjPG" role="1POhhj" />
         <node concept="2VUHfc" id="3acQo$0xjPH" role="1POhhj">
-          <ref role="2VUHf6" node="3acQo$0xjUb" resolve="ReceiverUml" />
+          <ref role="2VUHf6" node="3acQo$0xjUb" resolve="Receiver" />
           <node concept="2VUHfq" id="3acQo$0xjPP" role="2VUBrq">
             <property role="TrG5h" value="blocked" />
             <node concept="19SGf9" id="3acQo$0xjPX" role="2VUHfi">
@@ -184,7 +184,7 @@
         </node>
         <node concept="2VURXa" id="3acQo$0xjPI" role="1POhhj" />
         <node concept="2VUHfc" id="3acQo$0xjPJ" role="1POhhj">
-          <ref role="2VUHf6" node="3acQo$0xjU8" resolve="SenderUml" />
+          <ref role="2VUHf6" node="3acQo$0xjU8" resolve="Sender" />
           <node concept="2VUHfq" id="3acQo$0xjPR" role="2VUBrq">
             <property role="TrG5h" value="noisy" />
             <node concept="19SGf9" id="3acQo$0xjPZ" role="2VUHfi">
@@ -213,9 +213,9 @@
         <node concept="2VURXa" id="3acQo$0xjPK" role="1POhhj" />
         <node concept="2VURXa" id="3acQo$0zrpn" role="1POhhj" />
         <node concept="1PLMAg" id="3acQo$0xjPM" role="1POhhj">
-          <ref role="1POnuR" node="3acQo$0xjQg" resolve="SenderReceiverSystemUml" />
+          <ref role="1POnuR" node="3acQo$0xjQg" resolve="SenderReceiverSystem" />
           <node concept="1PLGxJ" id="3acQo$0xjPT" role="1PLElB">
-            <ref role="1PLGwE" node="3acQo$0xjU8" resolve="SenderUml" />
+            <ref role="1PLGwE" node="3acQo$0xjU8" resolve="Sender" />
             <node concept="1PLKG7" id="3acQo$0xjQ1" role="1PLCo$">
               <ref role="1jQAtN" node="3acQo$0xjPR" resolve="noisy" />
               <node concept="1PNyZM" id="3acQo$0xjQb" role="1PLCoy">
@@ -248,7 +248,7 @@
             </node>
           </node>
           <node concept="1PLGxJ" id="3acQo$0xjPU" role="1PLElB">
-            <ref role="1PLGwE" node="3acQo$0xjUb" resolve="ReceiverUml" />
+            <ref role="1PLGwE" node="3acQo$0xjUb" resolve="Receiver" />
             <node concept="1PLKG7" id="3acQo$0xjQ3" role="1PLCo$">
               <ref role="1jQAtN" node="3acQo$0xjPP" resolve="blocked" />
               <node concept="1PNyZM" id="3acQo$0xjQd" role="1PLCoy">

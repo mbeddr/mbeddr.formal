@@ -187,10 +187,10 @@
       <node concept="1ps3o1" id="3acQo$0xjUf" role="1pqCzW">
         <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
         <node concept="1pvSZV" id="3acQo$0xjUh" role="1pvUZv">
-          <ref role="1pvSZS" node="3acQo$0xjU8" resolve="Sender" />
+          <ref role="1pvSZS" node="3acQo$0xjU8" resolve="SenderUml" />
         </node>
         <node concept="1pvSZV" id="3acQo$0xjUi" role="1pvUZs">
-          <ref role="1pvSZS" node="3acQo$0xjUb" resolve="Receiver" />
+          <ref role="1pvSZS" node="3acQo$0xjUb" resolve="ReceiverUml" />
         </node>
       </node>
       <node concept="1pqCE1" id="3acQo$0xjQj" role="1pqCzW" />
