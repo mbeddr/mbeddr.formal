@@ -21,6 +21,7 @@ plugins {
 val jbrVers = "17.0.8.1-b1000.32"
 val jbrWindowsVers = "jbr_jcef-17.0.8.1-windows-x64-b1000.32"
 val jbrLinuxVers = "jbr_jcef-17.0.8.1-linux-x64-b1000.32"
+val jbrMacAarchVers = "jbr_jcef-17.0.8.1-osx-aarch64-b1000.32"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -112,6 +113,7 @@ configurations {
     val jbrWin by creating
     val jbrMac by creating
     val jbrLinux by creating
+    val jbrMacAarch by creating
 
     dependencies {
         mps("com.jetbrains:mps:$mpsVersion")
@@ -152,6 +154,8 @@ configurations {
         jbrWin("com.jetbrains.jdk:jbr_jcef:$jbrVers:windows-x64@tgz")
         jbrMac("com.jetbrains.jdk:jbr_jcef:$jbrVers:osx-x64@tgz")
         jbrLinux("com.jetbrains.jdk:jbr_jcef:$jbrVers:linux-x64@tgz")
+	    jbrMacAarch("com.jetbrains.jdk:jbr_jcef:$jbrVers:osx-aarch64@tgz")
+
     }
 }
  
@@ -526,8 +530,21 @@ tasks {
         }
     }
 
+    val resolveJBR_Mac_Aarch by registering(Copy::class) {
+        from(configurations["jbrMacAarch"])
+        into(jdkDir)
+        rename { filename ->
+            val resolvedArtifact = configurations["jbrMacAarch"].resolvedConfiguration.resolvedArtifacts.find { ra -> ra.file.name == filename }!!
+            resolvedArtifact.name + "-" + resolvedArtifact.classifier + "." + resolvedArtifact.extension
+        }
+
+        doLast {
+            unpackAndRenameJBR("jbr_jcef-osx-aarch64.tgz", jbrMacAarchVers, "jbr_mac_aarch");
+        }
+    }
+
     val package_fasten_distribution_for_specific_platforms by registering(BuildLanguages::class) {
-        dependsOn(resolveJBR_Win, resolveJBR_Linux, build_fasten_safety_distribution)
+        dependsOn(resolveJBR_Win, resolveJBR_Linux, resolveJBR_Mac_Aarch, build_fasten_safety_distribution)
         script = scriptFile("build-fasten-distribution-for-specific-platforms.xml")
     }
 
@@ -535,6 +552,7 @@ tasks {
         dependsOn(package_fasten_distribution_for_specific_platforms)
         from(zipTree(artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Win.zip")))
         destinationDirectory = artifactsDir
+        archiveFileName.set("fasten-${version}-Win.zip")
     }
 
     val produce_fasten_distribution_linux by registering(Tar::class) {
@@ -543,6 +561,13 @@ tasks {
         from(tarTree(artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Linux.tar.gz")))
         destinationDirectory = artifactsDir
         archiveFileName = "fasten-${version}-Linux.tar.gz"
+    }
+
+    val produce_fasten_distribution_macos by registering(Zip::class) {
+	    dependsOn(package_fasten_distribution_for_specific_platforms)
+        from(zipTree(artifactsDir.file("com.mbeddr.formal.safetyDistribution.platforms/fasten-${version}-Macos.zip")))
+        destinationDirectory = artifactsDir
+        archiveFileName.set("fasten-${version}-Macos.zip")
     }
 
     val build_all_languages by registering {
@@ -701,15 +726,20 @@ publishing {
             configurePublication(this, "fasten", "assurance", tasks.named("package_assurance"))
         }
 
-	    create<MavenPublication>("FASTEN_WIN_RCP") {
+        create<MavenPublication>("FASTEN_WIN_RCP") {
             groupId = "fasten"
             artifactId = "win.rcp"
             artifact(tasks.named("produce_fasten_distribution_win"))
         }
         create<MavenPublication>("FASTEN_LINUX_RCP") {
-           groupId = "fasten"
-           artifactId = "linux.rcp"
-           artifact(tasks.named("produce_fasten_distribution_linux"))
+            groupId = "fasten"
+            artifactId = "linux.rcp"
+            artifact(tasks.named("produce_fasten_distribution_linux"))
+        }
+        create<MavenPublication>("FASTEN_MACOS_RCP") {
+            groupId = "fasten"
+            artifactId = "macos.rcp"
+            artifact(tasks.named("produce_fasten_distribution_macos"))
         }
     }
 }

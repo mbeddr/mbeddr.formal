@@ -154,7 +154,7 @@
     <node concept="1TJgyj" id="5t7Sqsap4BI" role="1TKVEi">
       <property role="IQ2ns" value="6289243512196319726" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="responsabilities" />
+      <property role="20kJfa" value="responsibilities" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
     </node>
@@ -198,7 +198,7 @@
   </node>
   <node concept="1TIwiD" id="1JhvKLLO08a">
     <property role="EcuMT" value="2004523000582373898" />
-    <property role="TrG5h" value="UnsafeControlAnalysis" />
+    <property role="TrG5h" value="UnsafeControlActionAnalysis" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="unsafe control analysis" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -302,6 +302,9 @@
     </node>
     <node concept="PrWs8" id="6RZi9iizv5e" role="PzmwI">
       <ref role="PrY4T" node="6RZi9iizv5a" resolve="IReferenceableActionDescription" />
+    </node>
+    <node concept="PrWs8" id="3V_YOtJH1ix" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
   </node>
   <node concept="1TIwiD" id="1JhvKLLOZ8k">
