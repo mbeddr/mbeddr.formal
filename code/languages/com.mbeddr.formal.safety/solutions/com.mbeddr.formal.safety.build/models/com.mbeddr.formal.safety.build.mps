@@ -19951,6 +19951,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="7JyHTfkfTrX" role="3bR31x">
+          <node concept="3LXTmp" id="7JyHTfkfTrY" role="3rtmxm">
+            <node concept="3qWCbU" id="7JyHTfkfTrZ" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7JyHTfkfTs0" role="3LXTmr">
+              <ref role="398BVh" node="6ucyvMUDFiJ" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="7JyHTfkfTs1" role="iGT6I">
+                <property role="2Ry0Am" value="tests" />
+                <node concept="2Ry0Ak" id="7JyHTfkfTs2" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.fasten.safety.fmea" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4ziKDEnkJiX" role="2G$12L">
         <property role="BnDLt" value="true" />

@@ -519,28 +519,28 @@
           <property role="TrG5h" value="speed__speed too high" />
         </node>
         <node concept="21oswF" id="1gTsIm4Om7v" role="3CrHoS">
-          <ref role="21oszt" node="1gTsIm4Om7t" resolve="" />
+          <ref role="21oszt" node="1gTsIm4Om7t" resolve="Or Gate 1" />
           <ref role="21oszj" node="1gTsIm4Om7u" resolve="speed__speed too high" />
         </node>
         <node concept="21ATtL" id="1gTsIm4Om7w" role="3CrHoS">
           <property role="TrG5h" value="speed__speed too low" />
         </node>
         <node concept="21oswF" id="1gTsIm4Om7x" role="3CrHoS">
-          <ref role="21oszt" node="1gTsIm4Om7t" resolve="" />
+          <ref role="21oszt" node="1gTsIm4Om7t" resolve="Or Gate 1" />
           <ref role="21oszj" node="1gTsIm4Om7w" resolve="speed__speed too low" />
         </node>
         <node concept="cFNQA" id="1gTsIm4Om7t" role="3CrHoS">
           <property role="TrG5h" value="Or Gate 1" />
         </node>
         <node concept="21oswF" id="1gTsIm4Om7y" role="3CrHoS">
-          <ref role="21oszt" node="1gTsIm4Om7s" resolve="" />
-          <ref role="21oszj" node="1gTsIm4Om7t" resolve="" />
+          <ref role="21oszt" node="1gTsIm4Om7s" resolve="Or Gate 2" />
+          <ref role="21oszj" node="1gTsIm4Om7t" resolve="Or Gate 1" />
         </node>
         <node concept="21ATtL" id="1gTsIm4Om7z" role="3CrHoS">
           <property role="TrG5h" value="innacurate_computation" />
         </node>
         <node concept="21oswF" id="1gTsIm4Om7$" role="3CrHoS">
-          <ref role="21oszt" node="1gTsIm4Om7s" resolve="" />
+          <ref role="21oszt" node="1gTsIm4Om7s" resolve="Or Gate 2" />
           <ref role="21oszj" node="1gTsIm4Om7z" resolve="innacurate_computation" />
         </node>
         <node concept="cFNQA" id="1gTsIm4Om7s" role="3CrHoS">
@@ -548,7 +548,7 @@
         </node>
         <node concept="21oswF" id="1gTsIm4Om7_" role="3CrHoS">
           <ref role="21oszt" node="1gTsIm4Om7k" resolve="plausibilizedSpeed__speed innacurate" />
-          <ref role="21oszj" node="1gTsIm4Om7s" resolve="" />
+          <ref role="21oszj" node="1gTsIm4Om7s" resolve="Or Gate 2" />
         </node>
         <node concept="37mRI7" id="1gTsIm4Om7C" role="lGtFl">
           <node concept="37mRIm" id="1gTsIm4Om7D" role="37mRID">
@@ -817,24 +817,24 @@
       <property role="TrG5h" value="Or Gate 2" />
     </node>
     <node concept="21oswF" id="1gTsIm4OmaA" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Oma$" resolve="" />
+      <ref role="21oszt" node="1gTsIm4Oma$" resolve="Or Gate 1" />
       <ref role="21oszj" node="1gTsIm4Omam" resolve="speed__speed too high" />
     </node>
     <node concept="21oswF" id="1gTsIm4OmaC" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Oma$" resolve="" />
+      <ref role="21oszt" node="1gTsIm4Oma$" resolve="Or Gate 1" />
       <ref role="21oszj" node="1gTsIm4Omaj" resolve="speed__speed too low" />
     </node>
     <node concept="21oswF" id="1gTsIm4OmaD" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omaz" resolve="" />
-      <ref role="21oszj" node="1gTsIm4Oma$" resolve="" />
+      <ref role="21oszt" node="1gTsIm4Omaz" resolve="Or Gate 2" />
+      <ref role="21oszj" node="1gTsIm4Oma$" resolve="Or Gate 1" />
     </node>
     <node concept="21oswF" id="1gTsIm4OmaF" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omaz" resolve="" />
+      <ref role="21oszt" node="1gTsIm4Omaz" resolve="Or Gate 2" />
       <ref role="21oszj" node="1gTsIm4OmaE" resolve="innacurate_computation" />
     </node>
     <node concept="21oswF" id="1gTsIm4OmaG" role="3CrHoS">
       <ref role="21oszt" node="1gTsIm4Omar" resolve="plausibilizedSpeed__speed innacurate" />
-      <ref role="21oszj" node="1gTsIm4Omaz" resolve="" />
+      <ref role="21oszj" node="1gTsIm4Omaz" resolve="Or Gate 2" />
     </node>
     <node concept="37mRI7" id="1gTsIm4Omf3" role="lGtFl">
       <node concept="37mRIm" id="1gTsIm4Omf4" role="37mRID">
@@ -1037,24 +1037,24 @@
       <property role="TrG5h" value="Or Gate 2" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omcr" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omcp" resolve="" />
+      <ref role="21oszt" node="1gTsIm4Omcp" resolve="Or Gate 1" />
       <ref role="21oszj" node="1gTsIm4Omcq" resolve="speed__speed too high" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omct" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omcp" resolve="" />
+      <ref role="21oszt" node="1gTsIm4Omcp" resolve="Or Gate 1" />
       <ref role="21oszj" node="1gTsIm4Omcs" resolve="speed__speed too low" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omcu" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omco" resolve="" />
-      <ref role="21oszj" node="1gTsIm4Omcp" resolve="" />
+      <ref role="21oszt" node="1gTsIm4Omco" resolve="Or Gate 2" />
+      <ref role="21oszj" node="1gTsIm4Omcp" resolve="Or Gate 1" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omcw" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omco" resolve="" />
+      <ref role="21oszt" node="1gTsIm4Omco" resolve="Or Gate 2" />
       <ref role="21oszj" node="1gTsIm4Omcv" resolve="innacurate_computation" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omcx" role="3CrHoS">
       <ref role="21oszt" node="1gTsIm4Omcg" resolve="plausibilizedSpeed__speed innacurate" />
-      <ref role="21oszj" node="1gTsIm4Omco" resolve="" />
+      <ref role="21oszj" node="1gTsIm4Omco" resolve="Or Gate 2" />
     </node>
     <node concept="21ATtk" id="1gTsIm4Omcz" role="3CrHoS">
       <property role="TrG5h" value="brakeCmd__brake force innacurate" />

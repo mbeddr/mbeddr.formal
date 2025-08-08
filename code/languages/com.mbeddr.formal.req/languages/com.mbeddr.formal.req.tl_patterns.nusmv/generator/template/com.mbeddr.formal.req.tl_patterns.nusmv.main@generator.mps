@@ -205,7 +205,7 @@
     </language>
     <language id="001b2375-3bd5-4d5e-9958-6b3f62dc8548" name="com.mbeddr.formal.nusmv">
       <concept id="2707707741262126533" name="com.mbeddr.formal.nusmv.structure.EmptyModuleContent" flags="ng" index="s4Ewt" />
-      <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ngI" index="skqaJ">
+      <concept id="2707707741266384759" name="com.mbeddr.formal.nusmv.structure.IDefinitionLikeRef" flags="ng" index="skqaJ">
         <reference id="2707707741266384760" name="definitionLike" index="skqaw" />
       </concept>
       <concept id="8004696212664087401" name="com.mbeddr.formal.nusmv.structure.CTLSpecSection" flags="ng" index="tPTuy" />
@@ -397,7 +397,7 @@
             <node concept="1zoerA" id="6hWVnwAf$Wu" role="32O2ov">
               <property role="TrG5h" value="o" />
               <node concept="32Ogvo" id="6hWVnwAf$WB" role="1zoetD">
-                <ref role="32Ogvr" node="6hWVnwAf$W2" resolve="in" />
+                <ref role="32Ogvr" node="6hWVnwAf$W2" />
                 <node concept="raruj" id="6hWVnwAf$WJ" role="lGtFl" />
                 <node concept="1ZhdrF" id="6hWVnwAf$WQ" role="lGtFl">
                   <property role="2qtEX8" value="param" />
@@ -439,7 +439,7 @@
             <node concept="1zoerA" id="6hWVnwA$xt2" role="32O2ov">
               <property role="TrG5h" value="o" />
               <node concept="1J1L9T" id="6hWVnwA$zxz" role="1zoetD">
-                <ref role="1J1L9S" node="6hWVnwA$zt2" resolve="o2" />
+                <ref role="1J1L9S" node="6hWVnwA$zt2" />
                 <node concept="raruj" id="6hWVnwA$zxZ" role="lGtFl" />
                 <node concept="1ZhdrF" id="6hWVnwA$zyA" role="lGtFl">
                   <property role="2qtEX8" value="def" />
@@ -493,7 +493,7 @@
               <node concept="2Hdskp" id="6hWVnwA$CCs" role="2Hfkx9">
                 <property role="TrG5h" value="c" />
                 <node concept="1zigX2" id="6hWVnwA$CCH" role="2HdssA">
-                  <ref role="1zigX1" node="6hWVnwA$Cwt" resolve="comp" />
+                  <ref role="1zigX1" node="6hWVnwA$Cwt" />
                 </node>
               </node>
             </node>
@@ -502,10 +502,10 @@
                 <property role="TrG5h" value="oo" />
                 <node concept="1ziNjN" id="6hWVnwA$CM3" role="1zoetD">
                   <node concept="1zjgSo" id="6hWVnwA$CN0" role="1ziNjJ">
-                    <ref role="skqaw" node="6hWVnwA$CJ$" resolve="o" />
+                    <ref role="skqaw" node="6hWVnwA$CJ$" />
                   </node>
                   <node concept="2He$iJ" id="6hWVnwA$CM0" role="1ziNjM">
-                    <ref role="2He$iI" node="6hWVnwA$CCs" resolve="c" />
+                    <ref role="2He$iI" node="6hWVnwA$CCs" />
                     <node concept="raruj" id="6hWVnwA$CNg" role="lGtFl" />
                     <node concept="1ZhdrF" id="6hWVnwA$CNp" role="lGtFl">
                       <property role="2qtEX8" value="var" />
@@ -565,7 +565,7 @@
               <node concept="2Hdskp" id="6hWVnwABhVs" role="2Hfkx9">
                 <property role="TrG5h" value="c" />
                 <node concept="1zigX2" id="6hWVnwABhVt" role="2HdssA">
-                  <ref role="1zigX1" node="6hWVnwABhVl" resolve="comp" />
+                  <ref role="1zigX1" node="6hWVnwABhVl" />
                   <node concept="2IPVmt" id="6hWVnwABic$" role="1zigYY">
                     <property role="2IPVms" value="42" />
                   </node>
@@ -577,7 +577,7 @@
                 <property role="TrG5h" value="oo" />
                 <node concept="1ziNjN" id="6hWVnwAByqm" role="1zoetD">
                   <node concept="12U1Zx" id="6hWVnwABBpn" role="1ziNjJ">
-                    <ref role="12U1Zy" node="6hWVnwABicg" resolve="inp" />
+                    <ref role="12U1Zy" node="6hWVnwABicg" />
                     <node concept="raruj" id="6hWVnwABBqj" role="lGtFl" />
                     <node concept="1ZhdrF" id="6hWVnwABBqk" role="lGtFl">
                       <property role="2qtEX8" value="param" />
@@ -602,7 +602,7 @@
                     </node>
                   </node>
                   <node concept="2He$iJ" id="6hWVnwABigm" role="1ziNjM">
-                    <ref role="2He$iI" node="6hWVnwABhVs" resolve="c" />
+                    <ref role="2He$iI" node="6hWVnwABhVs" />
                   </node>
                 </node>
               </node>
