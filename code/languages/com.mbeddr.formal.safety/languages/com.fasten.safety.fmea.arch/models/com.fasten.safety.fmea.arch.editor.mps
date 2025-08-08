@@ -142,7 +142,7 @@
           <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="1iCGBv" id="42QGQFVnclO" role="3EZMnx">
-          <ref role="1NtTu8" to="g9vz:42QGQFVn62G" resolve="interface" />
+          <ref role="1NtTu8" to="g9vz:42QGQFVn62G" resolve="componentDefinition" />
           <node concept="1sVBvm" id="42QGQFVnclQ" role="1sWHZn">
             <node concept="3F0A7n" id="42QGQFVnclY" role="2wV5jI">
               <property role="1Intyy" value="true" />
@@ -253,7 +253,7 @@
       <ref role="1PE7su" to="1wto:31P83hzF77w" resolve="FMEASubjectBaseSubject" />
     </node>
     <node concept="1iCGBv" id="31P83hzF7oI" role="2wV5jI">
-      <ref role="1NtTu8" to="g9vz:7j1NWs11KvH" resolve="comp" />
+      <ref role="1NtTu8" to="g9vz:7j1NWs11KvH" resolve="componentInstance" />
       <node concept="1sVBvm" id="31P83hzF7oJ" role="1sWHZn">
         <node concept="3F0A7n" id="31P83hzF7oK" role="2wV5jI">
           <property role="1Intyy" value="true" />

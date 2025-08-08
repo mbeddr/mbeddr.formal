@@ -11,6 +11,14 @@
             </Library>
           </value>
         </entry>
+        <entry key="mpsbasics">
+          <value>
+            <Library>
+              <option name="name" value="mpsbasics" />
+              <option name="path" value="${mbeddr.formal.home}/code/languages/com.mpsbasics" />
+            </Library>
+          </value>
+        </entry>
       </map>
     </option>
   </component>

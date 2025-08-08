@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea" version="0" />
+    <use id="1110e3ef-a98e-444f-9748-1d61fe61c7f7" name="com.fasten.safety.fmea.arch" version="0" />
     <devkit ref="bf74abbc-7521-4990-984c-b43ecaf32ba1(fasten.safety.fmea)" />
     <devkit ref="edb51d2d-64eb-404a-818e-c1cabf1d58d5(fasten.nusmv)" />
   </languages>
@@ -61,12 +62,12 @@
         <child id="4663111736254003226" name="effects" index="2VUkHK" />
       </concept>
       <concept id="4663111736253767846" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModesDefinition" flags="ng" index="2VUHfc">
-        <reference id="4663111736253767852" name="interface" index="2VUHf6" />
+        <reference id="4663111736253767852" name="componentDefinition" index="2VUHf6" />
         <child id="4663111736253793712" name="failureModes" index="2VUBrq" />
       </concept>
       <concept id="4663111736253767856" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModeDefinition" flags="ng" index="2VUHfq" />
       <concept id="8413234032527476648" name="com.fasten.safety.fmea.arch.structure.ComponentInstanceSubject" flags="ng" index="1PLGxJ">
-        <reference id="8413234032527476717" name="comp" index="1PLGwE" />
+        <reference id="8413234032527476717" name="componentInstance" index="1PLGwE" />
       </concept>
       <concept id="8413234032527468119" name="com.fasten.safety.fmea.arch.structure.DesignFMEA" flags="ng" index="1PLMAg">
         <reference id="8413234032528111728" name="arch" index="1POnuR" />

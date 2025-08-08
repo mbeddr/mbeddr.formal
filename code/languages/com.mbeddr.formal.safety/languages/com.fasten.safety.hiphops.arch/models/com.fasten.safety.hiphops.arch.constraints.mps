@@ -408,7 +408,7 @@
                                 <ref role="3cqZAo" node="2hED36FpCwx" resolve="it" />
                               </node>
                               <node concept="3TrEf2" id="5g1NREKOuZx" role="2OqNvi">
-                                <ref role="3Tt5mk" to="g9vz:42QGQFVn62G" resolve="interface" />
+                                <ref role="3Tt5mk" to="g9vz:42QGQFVn62G" resolve="componentDefinition" />
                               </node>
                             </node>
                           </node>
