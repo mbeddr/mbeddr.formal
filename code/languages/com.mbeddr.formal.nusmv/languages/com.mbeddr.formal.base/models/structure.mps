@@ -328,7 +328,7 @@
     <property role="3GE5qa" value="page_settings" />
     <property role="TrG5h" value="PageSettingBase" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="4_xuXPCPAss" role="1TKVEi">
       <property role="IQ2ns" value="5287643628386543388" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -362,13 +362,13 @@
     <property role="EcuMT" value="5287643628386538289" />
     <property role="3GE5qa" value="page_settings" />
     <property role="TrG5h" value="PageSettingsTopLeft" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="4_xuXPCP_OB">
     <property role="EcuMT" value="5287643628386540839" />
     <property role="3GE5qa" value="page_settings" />
     <property role="TrG5h" value="PageSettingsBottomRight" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="4_xuXPD3jwz">
     <property role="EcuMT" value="5287643628390135843" />

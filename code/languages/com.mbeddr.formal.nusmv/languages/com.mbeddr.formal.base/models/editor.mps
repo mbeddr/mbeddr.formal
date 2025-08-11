@@ -5061,7 +5061,7 @@
               </node>
               <node concept="3cpWs3" id="4_xuXPCLIxk" role="37wK5m">
                 <node concept="37vLTw" id="4_xuXPCLJGW" role="3uHU7w">
-                  <ref role="3cqZAo" node="4_xuXPCLIGA" resolve="lineSize" />
+                  <ref role="3cqZAo" node="4_xuXPCLIGA" resolve="LINE_SIZE" />
                 </node>
                 <node concept="37vLTw" id="4_xuXPCLGyo" role="3uHU7B">
                   <ref role="3cqZAo" node="4_xuXPCKLK4" resolve="LEFT_PADDING" />
@@ -5115,7 +5115,7 @@
         <property role="3F0ifm" value="Page Setting:" />
       </node>
       <node concept="3F1sOY" id="4_xuXPCBZAe" role="3EZMnx">
-        <ref role="1NtTu8" to="b19z:4_xuXPCBYpe" />
+        <ref role="1NtTu8" to="b19z:4_xuXPCBYpe" resolve="pageSetting" />
         <node concept="2w$q5c" id="4_xuXPCCoZW" role="3xwHhi">
           <node concept="2aJ2om" id="4_xuXPCCoZX" role="2w$qW5">
             <ref role="2$4xQ3" node="4_xuXPCCof$" resolve="PAGE_SETTING_TEXTUAL" />

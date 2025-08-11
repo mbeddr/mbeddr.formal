@@ -1063,7 +1063,7 @@
         </node>
         <node concept="3Cnw8n" id="4_xuXPD2WMS" role="1urrFz">
           <property role="ARO6o" value="true" />
-          <ref role="QpYPw" node="4_xuXPD2WMP" resolve="fix_" />
+          <ref role="QpYPw" node="4_xuXPD2WMP" resolve="fix_BottomRightPosition" />
           <node concept="3CnSsL" id="4_xuXPD35Wo" role="3Coj4f">
             <ref role="QkamJ" node="4_xuXPD2Y_v" resolve="pageSettingBottomRight" />
             <node concept="1YBJjd" id="4_xuXPD3655" role="3CoRuB">
