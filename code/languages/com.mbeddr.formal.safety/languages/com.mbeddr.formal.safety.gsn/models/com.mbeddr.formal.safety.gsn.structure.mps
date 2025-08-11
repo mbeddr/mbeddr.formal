@@ -129,6 +129,9 @@
     <node concept="PrWs8" id="6FJpOMB2Hre" role="PzmwI">
       <ref role="PrY4T" to="iy8y:6xXHcqxdSHU" resolve="IAllowGenericWords" />
     </node>
+    <node concept="PrWs8" id="4_xuXPCDEmY" role="PzmwI">
+      <ref role="PrY4T" to="b19z:4_xuXPCBuBe" resolve="IDiagramWithPageSettingContainer" />
+    </node>
     <node concept="1irR5M" id="2LDKh2uE0R3" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irR9n" id="2LDKh2uE1oj" role="1irR9h">
