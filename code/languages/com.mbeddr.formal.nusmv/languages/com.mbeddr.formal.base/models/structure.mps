@@ -313,5 +313,133 @@
       <ref role="20lvS9" to="68mc:5Wocj7wnotA" resolve="AbstractFilePicker" />
     </node>
   </node>
+  <node concept="PlHQZ" id="4_xuXPCBuBe">
+    <property role="EcuMT" value="5287643628382841294" />
+    <property role="TrG5h" value="IDiagramWithPageSettingContainer" />
+    <property role="3GE5qa" value="page_settings" />
+    <node concept="1TJgyj" id="4_xuXPCBYpe" role="1TKVEi">
+      <property role="IQ2ns" value="5287643628382971470" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="pageSetting" />
+      <ref role="20lvS9" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4_xuXPCBvIl">
+    <property role="EcuMT" value="5287643628382845845" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="PageSettingBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="4_xuXPCPAss" role="1TKVEi">
+      <property role="IQ2ns" value="5287643628386543388" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="topLeft" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4_xuXPCP_cL" resolve="PageSettingsTopLeft" />
+    </node>
+    <node concept="1TJgyj" id="4_xuXPCPANd" role="1TKVEi">
+      <property role="IQ2ns" value="5287643628386544845" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="bottomRight" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="4_xuXPCP_OB" resolve="PageSettingsBottomRight" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4_xuXPCBwdC">
+    <property role="EcuMT" value="5287643628382847848" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="A4PagePortrait" />
+    <property role="34LRSv" value="A4 portrait" />
+    <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
+  <node concept="1TIwiD" id="4_xuXPCBSAy">
+    <property role="EcuMT" value="5287643628382947746" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="A4PageLandscape" />
+    <property role="34LRSv" value="A4 landscape" />
+    <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
+  <node concept="1TIwiD" id="4_xuXPCP_cL">
+    <property role="EcuMT" value="5287643628386538289" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="PageSettingsTopLeft" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+  </node>
+  <node concept="1TIwiD" id="4_xuXPCP_OB">
+    <property role="EcuMT" value="5287643628386540839" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="PageSettingsBottomRight" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+  </node>
+  <node concept="1TIwiD" id="4_xuXPD3jwz">
+    <property role="EcuMT" value="5287643628390135843" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="A3PageLandscape" />
+    <property role="34LRSv" value="A3 landscape" />
+    <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
+  <node concept="1TIwiD" id="4_xuXPD3lZU">
+    <property role="EcuMT" value="5287643628390146042" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="A3PagePortrait" />
+    <property role="34LRSv" value="A3 portrait" />
+    <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
+  <node concept="1TIwiD" id="4_xuXPD3$4K">
+    <property role="EcuMT" value="5287643628390203696" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="A5PageLandscape" />
+    <property role="34LRSv" value="A5 landscape" />
+    <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
+  <node concept="1TIwiD" id="4_xuXPD3AaM">
+    <property role="EcuMT" value="5287643628390212274" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="A5PagePortrait" />
+    <property role="34LRSv" value="A5 portrait" />
+    <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
+  <node concept="1TIwiD" id="4_xuXPD3EvV">
+    <property role="EcuMT" value="5287643628390230011" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="A2PageLandscape" />
+    <property role="34LRSv" value="A2 landscape" />
+    <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
+  <node concept="1TIwiD" id="4_xuXPD3HWC">
+    <property role="EcuMT" value="5287643628390244136" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="A2PagePortrait" />
+    <property role="34LRSv" value="A2 portrait" />
+    <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
+  <node concept="1TIwiD" id="1P450_2sti0">
+    <property role="EcuMT" value="2108832555518252160" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="A1PageLandscape" />
+    <property role="34LRSv" value="A1 landscape" />
+    <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
+  <node concept="1TIwiD" id="1P450_2sw0G">
+    <property role="EcuMT" value="2108832555518263340" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="A1PagePortrait" />
+    <property role="34LRSv" value="A1 portrait" />
+    <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
+  <node concept="1TIwiD" id="1P450_2s$64">
+    <property role="EcuMT" value="2108832555518280068" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="A0PageLandscape" />
+    <property role="34LRSv" value="A0 landscape" />
+    <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
+  <node concept="1TIwiD" id="1P450_2sA0k">
+    <property role="EcuMT" value="2108832555518287892" />
+    <property role="3GE5qa" value="page_settings" />
+    <property role="TrG5h" value="A0PagePortrait" />
+    <property role="34LRSv" value="A0 portrait" />
+    <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
 </model>
 
