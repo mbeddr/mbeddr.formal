@@ -67,6 +67,16 @@
       </concept>
     </language>
     <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="5287643628386540839" name="com.mbeddr.formal.base.structure.PageSettingsBottomRight" flags="ng" index="xHMrU" />
+      <concept id="5287643628386538289" name="com.mbeddr.formal.base.structure.PageSettingsTopLeft" flags="ng" index="xHMzG" />
+      <concept id="5287643628382845845" name="com.mbeddr.formal.base.structure.PageSettingBase" flags="ng" index="xZ818">
+        <child id="5287643628386544845" name="bottomRight" index="xHLsg" />
+        <child id="5287643628386543388" name="topLeft" index="xHLN1" />
+      </concept>
+      <concept id="5287643628382841294" name="com.mbeddr.formal.base.structure.IDiagramWithPageSettingContainer" flags="ngI" index="xZ98j">
+        <child id="5287643628382971470" name="pageSetting" index="xZDQj" />
+      </concept>
+      <concept id="5287643628382847848" name="com.mbeddr.formal.base.structure.A4PagePortrait" flags="ng" index="xZRyP" />
       <concept id="7402587364850275469" name="com.mbeddr.formal.base.structure.IAttributeContainer" flags="ngI" index="2U2l5L">
         <child id="7402587364850275470" name="attributes" index="2U2l5M" />
       </concept>
@@ -371,6 +381,15 @@
           </node>
         </node>
       </node>
+      <node concept="37mRIm" id="1P450_2$BiK" role="37mRID">
+        <property role="37mO49" value="PAGE_SETTING_BOTTOM_RIGHT" />
+        <node concept="gqqVs" id="1P450_2$BiJ" role="37mO4d">
+          <property role="gqqTX" value="75" />
+          <property role="gqqTy" value="35" />
+          <property role="gqqTZ" value="793" />
+          <property role="gqqTW" value="1122" />
+        </node>
+      </node>
     </node>
     <node concept="1VB52A" id="WKGDODSTiW" role="2vn1q5">
       <ref role="AygKy" to="6r4f:3jaLROLvqLi" resolve="Argument Over Hazards" />
@@ -611,6 +630,10 @@
     </node>
     <node concept="26s6xy" id="3ALtb$im2a9" role="2WHcHu">
       <property role="2Wzj7u" value="6312041527983384237" />
+    </node>
+    <node concept="xZRyP" id="1P450_2$BhU" role="xZDQj">
+      <node concept="xHMzG" id="1P450_2$BhV" role="xHLN1" />
+      <node concept="xHMrU" id="1P450_2$BhW" role="xHLsg" />
     </node>
   </node>
 </model>
