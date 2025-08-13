@@ -51,9 +51,11 @@
     <import index="u8j" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:org.eclipse.elk.alg.layered.options(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="18t6" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:com.mxgraph.util(de.itemis.mps.editor.diagram.runtime/)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
+    <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
+    <import index="93vl" ref="r:ea46d830-b6c1-459f-bca3-d44c20d00c02(de.slisson.mps.editor.multiline.cells)" />
+    <import index="oroz" ref="r:dba7efaf-6d1d-4f64-8546-01563c9e7aae(com.mpsbasics.editor.utils.editor_cells)" />
     <import index="88j9" ref="r:20c4aa5c-ab36-4815-af32-01895ee9c2f5(de.itemis.mps.editor.diagram.editor)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
     <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
     <import index="w873" ref="r:0de03bcd-6ad8-423c-b85e-ae3dd18ed2b3(com.mbeddr.formal.base.behavior)" implicit="true" />
   </imports>
@@ -89,6 +91,9 @@
         <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
+      </concept>
+      <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
+        <child id="1176795024817" name="cellProvider" index="3YsKMw" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
@@ -274,6 +279,7 @@
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
       </concept>
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
+      <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
       <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
         <child id="1950447826683828796" name="target" index="3XvnJa" />
       </concept>
@@ -435,6 +441,7 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -4383,9 +4390,8 @@
         <node concept="l2Vlx" id="65Lrkjj1RgM" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="65Lrkjj1RgO" role="2iSdaV" />
-      <node concept="3F1sOY" id="65Lrkjj1RgP" role="3EZMnx">
-        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
-        <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+      <node concept="PMmxH" id="OKz7ouMTD1" role="3EZMnx">
+        <ref role="PMmxG" node="OKz7ouMn1H" resolve="TextDisplayEditorComponent" />
       </node>
       <node concept="3EZMnI" id="1e9opmp9Iug" role="3EZMnx">
         <node concept="VPM3Z" id="1e9opmp9Iui" role="3F10Kt" />
@@ -4595,9 +4601,8 @@
         <node concept="l2Vlx" id="1_o3ZDJr73_" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="3Ngc4zVhb4k" role="2iSdaV" />
-      <node concept="3F1sOY" id="2BjEyIlT5Kd" role="3EZMnx">
-        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
-        <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+      <node concept="PMmxH" id="OKz7ouMUhh" role="3EZMnx">
+        <ref role="PMmxG" node="OKz7ouMn1H" resolve="TextDisplayEditorComponent" />
       </node>
       <node concept="PMmxH" id="3Px2xUV5Eu9" role="3EZMnx">
         <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
@@ -4654,9 +4659,8 @@
         <node concept="l2Vlx" id="33qt4wr6jWY" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="33qt4wr6jX0" role="2iSdaV" />
-      <node concept="3F1sOY" id="33qt4wr6jX1" role="3EZMnx">
-        <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
-        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+      <node concept="PMmxH" id="OKz7ouMUdY" role="3EZMnx">
+        <ref role="PMmxG" node="OKz7ouMn1H" resolve="TextDisplayEditorComponent" />
       </node>
       <node concept="PMmxH" id="3Px2xUV5EtF" role="3EZMnx">
         <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
@@ -4737,9 +4741,8 @@
         <node concept="l2Vlx" id="7eb_1beKlGD" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="7eb_1beKlGF" role="2iSdaV" />
-      <node concept="3F1sOY" id="7eb_1beKlGG" role="3EZMnx">
-        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
-        <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+      <node concept="PMmxH" id="OKz7ouMU40" role="3EZMnx">
+        <ref role="PMmxG" node="OKz7ouMn1H" resolve="TextDisplayEditorComponent" />
       </node>
       <node concept="PMmxH" id="3Px2xUV79ll" role="3EZMnx">
         <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
@@ -4781,9 +4784,8 @@
         <node concept="l2Vlx" id="33qt4wr8iwy" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="33qt4wr8iw$" role="2iSdaV" />
-      <node concept="3F1sOY" id="33qt4wr8iw_" role="3EZMnx">
-        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
-        <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
+      <node concept="PMmxH" id="OKz7ouMT_V" role="3EZMnx">
+        <ref role="PMmxG" node="OKz7ouMn1H" resolve="TextDisplayEditorComponent" />
       </node>
       <node concept="PMmxH" id="3Px2xUV78fW" role="3EZMnx">
         <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
@@ -12164,9 +12166,8 @@
         <node concept="l2Vlx" id="2TfVCPOME_x" role="2iSdaV" />
       </node>
       <node concept="2iRkQZ" id="2TfVCPOME_y" role="2iSdaV" />
-      <node concept="3F1sOY" id="2TfVCPOME_z" role="3EZMnx">
-        <ref role="1k5W1q" node="65LrkjiZl64" resolve="GSNTextStyle" />
-        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+      <node concept="PMmxH" id="OKz7ouMUaF" role="3EZMnx">
+        <ref role="PMmxG" node="OKz7ouMn1H" resolve="TextDisplayEditorComponent" />
       </node>
       <node concept="PMmxH" id="3Px2xUV78gq" role="3EZMnx">
         <ref role="PMmxG" to="xnej:3cGyC6fBMN1" resolve="AnnotationProviderEditorComponent" />
@@ -16298,6 +16299,111 @@
       </node>
       <node concept="2AHcQZ" id="2Gadht9IOul" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="OKz7ouMn1H">
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="TextDisplayEditorComponent" />
+    <ref role="1XX52x" to="py52:3GRi4m$qS5k" resolve="GoalStructureElementBase" />
+    <node concept="3EZMnI" id="OKz7ouMnb9" role="2wV5jI">
+      <node concept="3F1sOY" id="OKz7ouMncz" role="3EZMnx">
+        <ref role="1NtTu8" to="py52:3GRi4m$qYoV" resolve="text" />
+        <node concept="pkWqt" id="OKz7ouMndT" role="pqm2j">
+          <node concept="3clFbS" id="OKz7ouMndU" role="2VODD2">
+            <node concept="3clFbF" id="OKz7ouMnsH" role="3cqZAp">
+              <node concept="3eOVzh" id="OKz7ouMAfL" role="3clFbG">
+                <node concept="3cmrfG" id="OKz7ouMAhp" role="3uHU7w">
+                  <property role="3cmrfH" value="200" />
+                </node>
+                <node concept="2OqwBi" id="OKz7ouMr09" role="3uHU7B">
+                  <node concept="2OqwBi" id="OKz7ouMoS$" role="2Oq$k0">
+                    <node concept="2OqwBi" id="OKz7ouMnUy" role="2Oq$k0">
+                      <node concept="pncrf" id="OKz7ouMnsG" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="OKz7ouMoFK" role="2OqNvi">
+                        <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="OKz7ouMprH" role="2OqNvi">
+                      <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="OKz7ouMsf$" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="OKz7ouMnbc" role="2iSdaV" />
+      <node concept="3EZMnI" id="OKz7ouMDLy" role="3EZMnx">
+        <node concept="2iRfu4" id="OKz7ouMDLz" role="2iSdaV" />
+        <node concept="gc7cB" id="OKz7ouMB$H" role="3EZMnx">
+          <node concept="3VJUX4" id="OKz7ouMB$J" role="3YsKMw">
+            <node concept="3clFbS" id="OKz7ouMB$L" role="2VODD2">
+              <node concept="3clFbF" id="OKz7ouMELK" role="3cqZAp">
+                <node concept="2OqwBi" id="OKz7ouMSQa" role="3clFbG">
+                  <node concept="2ShNRf" id="OKz7ouMELI" role="2Oq$k0">
+                    <node concept="1pGfFk" id="OKz7ouMPpE" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="oroz:4nY0kF8dL3B" resolve="EditorCell_MultiLine" />
+                      <node concept="pncrf" id="OKz7ouMPwc" role="37wK5m" />
+                      <node concept="2OqwBi" id="OKz7ouMRrs" role="37wK5m">
+                        <node concept="2OqwBi" id="OKz7ouMPTS" role="2Oq$k0">
+                          <node concept="pncrf" id="OKz7ouMP$3" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="OKz7ouMQKv" role="2OqNvi">
+                            <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                          </node>
+                        </node>
+                        <node concept="2qgKlT" id="OKz7ouMS0i" role="2OqNvi">
+                          <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
+                        </node>
+                      </node>
+                      <node concept="10M0yZ" id="OKz7ouMSCz" role="37wK5m">
+                        <ref role="3cqZAo" to="z60i:~Color.black" resolve="black" />
+                        <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="OKz7ouMT8_" role="2OqNvi">
+                    <ref role="37wK5l" to="oroz:4nY0kF8hJxc" resolve="createCellProvider" />
+                    <node concept="1Q80Hx" id="OKz7ouMTaT" role="37wK5m" />
+                    <node concept="pncrf" id="OKz7ouMTk1" role="37wK5m" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pkWqt" id="OKz7ouMEgG" role="pqm2j">
+          <node concept="3clFbS" id="OKz7ouMEgH" role="2VODD2">
+            <node concept="3clFbF" id="OKz7ouMEhp" role="3cqZAp">
+              <node concept="2d3UOw" id="OKz7ouMEHA" role="3clFbG">
+                <node concept="2OqwBi" id="OKz7ouMEhs" role="3uHU7B">
+                  <node concept="2OqwBi" id="OKz7ouMEht" role="2Oq$k0">
+                    <node concept="2OqwBi" id="OKz7ouMEhu" role="2Oq$k0">
+                      <node concept="pncrf" id="OKz7ouMEhv" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="OKz7ouMEhw" role="2OqNvi">
+                        <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
+                      </node>
+                    </node>
+                    <node concept="2qgKlT" id="OKz7ouMEhx" role="2OqNvi">
+                      <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="OKz7ouMEhy" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+                  </node>
+                </node>
+                <node concept="3cmrfG" id="OKz7ouMEhr" role="3uHU7w">
+                  <property role="3cmrfH" value="200" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
