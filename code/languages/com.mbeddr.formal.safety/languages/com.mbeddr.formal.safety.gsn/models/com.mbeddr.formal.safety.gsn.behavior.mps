@@ -428,7 +428,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="4n44eHmidpQ" role="2OqNvi">
-              <ref role="3TtcxE" to="py52:3GRi4m$sIHx" />
+              <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
             </node>
           </node>
         </node>
@@ -479,7 +479,7 @@
           </node>
           <node concept="2OqwBi" id="4n44eHmkNcx" role="2GsD0m">
             <node concept="3Tsc0h" id="4n44eHmkNcy" role="2OqNvi">
-              <ref role="3TtcxE" to="py52:3GRi4m$sIHx" />
+              <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
             </node>
             <node concept="2OqwBi" id="4n44eHmkNcz" role="2Oq$k0">
               <node concept="13iPFW" id="4n44eHmkNc$" role="2Oq$k0" />
@@ -565,7 +565,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="4n44eHml4JK" role="2OqNvi">
-              <ref role="3TtcxE" to="py52:3GRi4m$sIHx" />
+              <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
             </node>
           </node>
         </node>
@@ -610,7 +610,7 @@
                     <ref role="2Gs0qQ" node="4n44eHmltWS" resolve="conn" />
                   </node>
                   <node concept="3TrEf2" id="4n44eHmltWY" role="2OqNvi">
-                    <ref role="3Tt5mk" to="py52:2ccN23odOzl" />
+                    <ref role="3Tt5mk" to="py52:2ccN23odOzl" resolve="source" />
                   </node>
                 </node>
                 <node concept="13iPFW" id="4n44eHmltWZ" role="3uHU7w" />
@@ -643,7 +643,7 @@
               </node>
             </node>
             <node concept="3Tsc0h" id="4n44eHmltXc" role="2OqNvi">
-              <ref role="3TtcxE" to="py52:3GRi4m$sIHx" />
+              <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
             </node>
           </node>
         </node>
