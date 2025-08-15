@@ -54,7 +54,6 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
-      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
@@ -161,6 +160,8 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
         <child id="1145404616321" name="leftExpression" index="2JrQYb" />
       </concept>
@@ -251,7 +252,18 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="4VhhwF2tqvR" role="3cqZAp" />
+        <node concept="3cpWs8" id="dLJ7Bwk7mX" role="3cqZAp">
+          <node concept="3cpWsn" id="dLJ7Bwk7n0" role="3cpWs9">
+            <property role="TrG5h" value="model" />
+            <node concept="H_c77" id="dLJ7Bwk7mV" role="1tU5fm" />
+            <node concept="2OqwBi" id="dLJ7Bwkawp" role="33vP2m">
+              <node concept="37vLTw" id="dLJ7Bwk98y" role="2Oq$k0">
+                <ref role="3cqZAo" node="y1G8y68boG" resolve="node" />
+              </node>
+              <node concept="I4A8Y" id="dLJ7Bwkc8F" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="y1G8y67uut" role="3cqZAp">
           <node concept="3cmrfG" id="y1G8y67uus" role="3clFbG">
             <property role="3cmrfH" value="1" />
