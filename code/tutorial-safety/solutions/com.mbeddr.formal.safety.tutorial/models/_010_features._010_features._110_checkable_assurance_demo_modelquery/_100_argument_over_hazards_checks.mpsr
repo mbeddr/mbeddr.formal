@@ -84,6 +84,11 @@
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
+    <language id="e4b230e7-8e1a-4a05-8148-8713530572c1" name="com.mpsbasics.words.generic">
+      <concept id="612965124711590730" name="com.mpsbasics.words.generic.structure.NamedModelElementRefWord" flags="ng" index="2eCDJ2">
+        <reference id="612965124711590733" name="node" index="2eCDJ5" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
@@ -154,9 +159,6 @@
     <language id="57ecebe4-dfb8-4fef-9175-0008e04a3684" name="com.mbeddr.formal.safety.argument.modelquery">
       <concept id="612965124710890643" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelCheckConceptFunction" flags="ig" index="2eAsKr" />
       <concept id="612965124711078715" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelCheckConceptFunctionParameter_node" flags="ng" index="2eAIIN" />
-      <concept id="612965124711590730" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelElementWord_old" flags="ng" index="2eCDJ2">
-        <reference id="612965124711590733" name="node_old" index="2eCDJ5" />
-      </concept>
       <concept id="1716492013482651468" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelChecksContainer" flags="ng" index="14JTGC">
         <reference id="1716492013482686107" name="gs" index="14J0bZ" />
         <child id="1716492013482652049" name="modelChecks" index="14JSnP" />
@@ -566,10 +568,10 @@
         <node concept="19SUe$" id="7OA8CsRe7GV" role="19SJt6">
           <property role="19SUeA" value="The referenced goal " />
         </node>
-        <node concept="2eCDJ2" id="7OA8CsRe86r" role="19SJt6">
+        <node concept="2eCDJ2" id="dLJ7Bw8PMg" role="19SJt6">
           <ref role="2eCDJ5" node="y1G8y671jV" resolve="G01" />
         </node>
-        <node concept="19SUe$" id="7OA8CsRe86s" role="19SJt6">
+        <node concept="19SUe$" id="dLJ7Bw8PMh" role="19SJt6">
           <property role="19SUeA" value=" claims that each hazard has been addressed&#10;with a specific sub-goal. The check below checks that each hazard from the list &#10;referenced in G01 is referenced in a sub-goal." />
         </node>
       </node>
