@@ -14,6 +14,7 @@
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -31,6 +32,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -41,6 +43,7 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -64,6 +67,10 @@
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
@@ -257,13 +264,26 @@
                 </node>
               </node>
             </node>
-            <node concept="3fqX7Q" id="7OA8CsRgKGN" role="3clFbw">
-              <node concept="2OqwBi" id="7OA8CsRgKGP" role="3fr31v">
-                <node concept="37vLTw" id="7OA8CsRgKGQ" role="2Oq$k0">
-                  <ref role="3cqZAo" node="y1G8y6axz9" resolve="res" />
+            <node concept="22lmx$" id="dLJ7Bw8kch" role="3clFbw">
+              <node concept="3clFbC" id="dLJ7Bw8lUy" role="3uHU7B">
+                <node concept="10Nm6u" id="dLJ7Bw8moa" role="3uHU7w" />
+                <node concept="2OqwBi" id="dLJ7Bw8ku1" role="3uHU7B">
+                  <node concept="37vLTw" id="dLJ7Bw8kgL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="y1G8y6axz9" resolve="res" />
+                  </node>
+                  <node concept="2OwXpG" id="dLJ7Bw8kZg" role="2OqNvi">
+                    <ref role="2Oxat5" to="zn9m:~Pair.first" resolve="first" />
+                  </node>
                 </node>
-                <node concept="2OwXpG" id="7OA8CsRgKGR" role="2OqNvi">
-                  <ref role="2Oxat5" to="zn9m:~Pair.first" resolve="first" />
+              </node>
+              <node concept="3fqX7Q" id="7OA8CsRgKGN" role="3uHU7w">
+                <node concept="2OqwBi" id="7OA8CsRgKGP" role="3fr31v">
+                  <node concept="37vLTw" id="7OA8CsRgKGQ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="y1G8y6axz9" resolve="res" />
+                  </node>
+                  <node concept="2OwXpG" id="7OA8CsRgKGR" role="2OqNvi">
+                    <ref role="2Oxat5" to="zn9m:~Pair.first" resolve="first" />
+                  </node>
                 </node>
               </node>
             </node>
