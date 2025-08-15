@@ -1,4 +1,5 @@
 import de.itemis.mps.gradle.*
+import de.itemis.mps.gradle.tasks.MpsGenerate
 import de.itemis.mps.gradle.tasks.MpsCheck
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
@@ -459,7 +460,31 @@ tasks {
         maxHeapSize = "3G"
     }
 
+    withType<MpsGenerate>().configureEach {
+        dependsOn(downloadJbr, resolveMps, resolveLanguageLibs)
+        javaLauncher = downloadJbr.flatMap { it.javaLauncher }
+
+        mpsHome = mpsHomeDir
+        folderMacros.put("mbeddr.formal.home", layout.projectDirectory)
+        pluginRoots.from(
+            layout.buildDirectory.map { buildDir ->
+                listOf(
+                    "dependencies/com.mbeddr.platform",
+                    "dependencies/org.mpsqa.allInOne",
+                    "artifacts/com.mbeddr.formal.languages").map { buildDir.dir(it) }
+            })
+
+        maxHeapSize = "3G"
+    }
+
+    val generateSafetyTutorial by registering(MpsGenerate::class) {
+        projectLocation = file("code/tutorial-safety")
+        modules = listOf("com.mbeddr.formal.safety.tutorial") 
+        environmentKind = EnvironmentKind.IDEA
+    }
+
     val checkSafetyTutorial by registering(MpsCheck::class) {
+        dependsOn(generateSafetyTutorial)
         projectLocation = file("code/tutorial-safety")
         modules = listOf("com.mbeddr.formal.safety.tutorial")
     }
