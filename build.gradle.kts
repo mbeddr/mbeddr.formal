@@ -43,7 +43,7 @@ logger.info("Repository username: {}", nexusUsername)
 // Project versions
 val major = "2024"
 val minor = "1"
-val bugfix = "3"
+val bugfix = "4"
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
