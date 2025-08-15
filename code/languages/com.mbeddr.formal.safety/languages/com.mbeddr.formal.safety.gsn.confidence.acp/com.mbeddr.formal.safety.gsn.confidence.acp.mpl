@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="com.mbeddr.formal.safety.gsn.confidence.acp" uuid="00a2e56d-f195-410b-8afe-5a3c7e505658" languageVersion="1" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
