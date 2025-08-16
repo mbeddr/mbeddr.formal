@@ -479,7 +479,7 @@ tasks {
 
     val generateSafetyTutorial by registering(MpsGenerate::class) {
         projectLocation = file("code/tutorial-safety")
-        modules = listOf("com.mbeddr.formal.safety.tutorial") 
+        modules = listOf("com.mbeddr.formal.safety.tutorial")
         environmentKind = EnvironmentKind.IDEA
     }
 
