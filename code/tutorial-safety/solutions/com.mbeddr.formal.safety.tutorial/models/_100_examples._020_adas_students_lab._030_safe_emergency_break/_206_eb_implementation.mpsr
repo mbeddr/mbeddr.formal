@@ -105,18 +105,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="71797868-de95-425c-8470-36aa52c8ebc4" name="com.mbeddr.formal.base.arch">
@@ -127,26 +117,22 @@
   </registry>
   <node concept="2HdtXS" id="2Q6_IeFkfKQ">
     <property role="TrG5h" value="_206_eb_implementation" />
-    <node concept="1X3_iC" id="2r$08YM5_E5" role="lGtFl">
-      <property role="3V$3am" value="content" />
-      <property role="3V$3ak" value="001b2375-3bd5-4d5e-9958-6b3f62dc8548/7842584090743385045/7842584090743643493" />
-      <node concept="2XJXe5" id="7hUqFOkxssl" role="8Wnug">
-        <property role="TrG5h" value="enum_state" />
-        <node concept="2Hdrtq" id="7hUqFOkxssm" role="2XJXdW">
-          <property role="TrG5h" value="sensor_fail" />
-        </node>
-        <node concept="2Hdrtq" id="7hUqFOkxssn" role="2XJXdW">
-          <property role="TrG5h" value="ok" />
-        </node>
-        <node concept="2Hdrtq" id="7hUqFOkxsso" role="2XJXdW">
-          <property role="TrG5h" value="eb_fail" />
-        </node>
-        <node concept="2Hdrtq" id="7hUqFOkxssp" role="2XJXdW">
-          <property role="TrG5h" value="driver_engages" />
-        </node>
-        <node concept="2Hdrtq" id="7hUqFOkxssq" role="2XJXdW">
-          <property role="TrG5h" value="warning" />
-        </node>
+    <node concept="2XJXe5" id="7hUqFOkxssl" role="2HcuB8">
+      <property role="TrG5h" value="enum_state" />
+      <node concept="2Hdrtq" id="7hUqFOkxssm" role="2XJXdW">
+        <property role="TrG5h" value="sensor_fail" />
+      </node>
+      <node concept="2Hdrtq" id="7hUqFOkxssn" role="2XJXdW">
+        <property role="TrG5h" value="ok" />
+      </node>
+      <node concept="2Hdrtq" id="7hUqFOkxsso" role="2XJXdW">
+        <property role="TrG5h" value="eb_fail" />
+      </node>
+      <node concept="2Hdrtq" id="7hUqFOkxssp" role="2XJXdW">
+        <property role="TrG5h" value="driver_engages" />
+      </node>
+      <node concept="2Hdrtq" id="7hUqFOkxssq" role="2XJXdW">
+        <property role="TrG5h" value="warning" />
       </node>
     </node>
     <node concept="2SQmWS" id="2Q6_IeFkfKS" role="2HcuB8" />

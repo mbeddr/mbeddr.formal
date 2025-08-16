@@ -53,7 +53,7 @@
       <property role="TrG5h" value="G_SPI_DEMO_01" />
       <node concept="19SGf9" id="75npNYZGxfR" role="2vnaTY">
         <node concept="19SUe$" id="75npNYZGxfS" role="19SJt6">
-          <property role="19SUeA" value="The system is connected to  &#10;internet via a low latency&#10;connection. " />
+          <property role="19SUeA" value="The classification of an object as VRU &#10;is sufficiently accurate. " />
         </node>
       </node>
     </node>
@@ -63,8 +63,8 @@
         <node concept="gqqVs" id="75npNYZGxg6" role="37mO4d">
           <property role="gqqTZ" value="161.0" />
           <property role="gqqTW" value="55.0" />
-          <property role="gqqTX" value="117.0" />
-          <property role="gqqTy" value="50.0" />
+          <property role="gqqTX" value="182.0" />
+          <property role="gqqTy" value="76.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>

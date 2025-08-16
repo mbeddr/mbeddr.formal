@@ -13,7 +13,6 @@
   <accessoryModels />
   <dependencies>
     <dependency reexport="false">b43c548b-f75f-46e2-ad24-de9edd93e95e(com.fasten.safety.fmea)</dependency>
-    <dependency reexport="false">71797868-de95-425c-8470-36aa52c8ebc4(com.mbeddr.formal.base.arch)</dependency>
     <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
     <dependency reexport="false">88dbbd3b-b7c2-4ffe-9c47-4eb67390953b(com.symo.arch.base)</dependency>
@@ -64,8 +63,6 @@
     <module reference="b43c548b-f75f-46e2-ad24-de9edd93e95e(com.fasten.safety.fmea)" version="0" />
     <module reference="1110e3ef-a98e-444f-9748-1d61fe61c7f7(com.fasten.safety.fmea.arch)" version="0" />
     <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
-    <module reference="71797868-de95-425c-8470-36aa52c8ebc4(com.mbeddr.formal.base.arch)" version="0" />
-    <module reference="b0b65429-cd22-4e2a-83e7-cd58bc6dd72f(com.mbeddr.formal.base.expressions)" version="0" />
     <module reference="88dbbd3b-b7c2-4ffe-9c47-4eb67390953b(com.symo.arch.base)" version="0" />
     <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.tutorial.linters/com.mbeddr.formal.safety.tutorial.linters.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.tutorial/com.mbeddr.formal.safety.tutorial.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.users_guide/com.mbeddr.formal.safety.users_guide.msd" folder="" />
     </projectModules>

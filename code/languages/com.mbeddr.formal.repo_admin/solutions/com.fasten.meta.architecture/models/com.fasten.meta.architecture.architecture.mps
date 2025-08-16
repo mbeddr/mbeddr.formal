@@ -385,15 +385,6 @@
           </node>
         </node>
       </node>
-      <node concept="mXxR0" id="1a4oUCoJSus" role="mXAiC">
-        <property role="Z2I3b" value="process.review.generator" />
-        <node concept="37shsh" id="1a4oUCoJSut" role="mXxR3">
-          <node concept="1dCxOk" id="1a4oUCoJSvh" role="37shsm">
-            <property role="1XweGW" value="422f456d-00c1-43e1-afde-92df55d9ffca" />
-            <property role="1XxBO9" value="com.fasten.process.review.generator" />
-          </node>
-        </node>
-      </node>
     </node>
     <node concept="Z9REq" id="1a4oUCoJRqU" role="mXAGU" />
     <node concept="mXAGQ" id="41Pak$lD7uD" role="mXAGU">

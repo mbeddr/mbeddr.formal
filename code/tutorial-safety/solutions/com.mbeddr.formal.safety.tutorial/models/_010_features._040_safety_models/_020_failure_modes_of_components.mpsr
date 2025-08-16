@@ -22,7 +22,7 @@
     </language>
     <language id="1110e3ef-a98e-444f-9748-1d61fe61c7f7" name="com.fasten.safety.fmea.arch">
       <concept id="4663111736253767846" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModesDefinition" flags="ng" index="2VUHfc">
-        <reference id="4663111736253767852" name="interface" index="2VUHf6" />
+        <reference id="4663111736253767852" name="componentDefinition" index="2VUHf6" />
         <child id="4663111736253793712" name="failureModes" index="2VUBrq" />
       </concept>
       <concept id="4663111736253767856" name="com.fasten.safety.fmea.arch.structure.ComponentFailureModeDefinition" flags="ng" index="2VUHfq" />

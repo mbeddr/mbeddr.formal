@@ -11,7 +11,7 @@
         <child id="1941765291767695615" name="startingConnections" index="2I3o71" />
         <child id="1941765291767694360" name="subControllers" index="2I3oOA" />
         <child id="6289243512196426541" name="description" index="1t8wEa" />
-        <child id="6289243512196319726" name="responsabilities" index="1t8Ux9" />
+        <child id="6289243512196319726" name="responsibilities" index="1t8Ux9" />
       </concept>
       <concept id="4286195509387830511" name="com.mbeddr.formal.safety.stamp.structure.SafetyControlStructureConnectionBase" flags="ng" index="1X_0jO">
         <reference id="4185693763139125834" name="target" index="SrP07" />
