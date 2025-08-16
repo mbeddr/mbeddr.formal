@@ -479,14 +479,14 @@ tasks {
 
     val generateSafetyTutorial by registering(MpsGenerate::class) {
         projectLocation = file("code/tutorial-safety")
-        modules = listOf("com.mbeddr.formal.safety.tutorial")
+        modules = listOf("com.mbeddr.formal.safety.tutorial", "com.mbeddr.formal.safety.tutorial.linters")
         environmentKind = EnvironmentKind.IDEA
     }
 
     val checkSafetyTutorial by registering(MpsCheck::class) {
         dependsOn(generateSafetyTutorial)
         projectLocation = file("code/tutorial-safety")
-        modules = listOf("com.mbeddr.formal.safety.tutorial")
+        modules = listOf("com.mbeddr.formal.safety.tutorial", "com.mbeddr.formal.safety.tutorial.linters")
     }
 
     val checkNusmvTutorial by registering(MpsCheck::class) {
