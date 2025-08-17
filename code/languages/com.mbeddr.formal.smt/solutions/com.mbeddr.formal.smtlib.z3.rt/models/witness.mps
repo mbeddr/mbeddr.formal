@@ -9,7 +9,6 @@
   </languages>
   <imports>
     <import index="f7eu" ref="f7821750-33bf-489c-8f64-0850d86d540d/java:com.microsoft.z3(com.mbeddr.formal.smtlib.z3.lib/)" />
-    <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="d9cz" ref="r:41c1238c-43f1-4441-984e-72955eefcbfb(com.mbeddr.formal.smtlib.structure)" />

@@ -41,19 +41,10 @@ jobs:
       run: |
         pip install junitparser
 
-    - name: Build
+    - name: Build Languages
       run: |
-        xvfb-run ./gradlew build_all_languages check \
+        xvfb-run ./gradlew build_all_languages \
           -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
-
-    - name: Publish test report
-      uses: mikepenz/action-junit-report@v4
-      if: ${{ !cancelled() }}
-      with:
-        fail_on_failure: true
-        require_tests: true
-        report_paths: 'build/**/TEST*.xml'
-        github_token: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Run migrations
       run: |
@@ -71,6 +62,20 @@ jobs:
           echo "::endgroup::"
           exit 1
         fi
+
+    - name: Check Models
+      run: |
+        xvfb-run ./gradlew check -x build_all_languages \
+          -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
+
+    - name: Publish test report
+      uses: mikepenz/action-junit-report@v4
+      if: ${{ !cancelled() }}
+      with:
+        fail_on_failure: true
+        require_tests: true
+        report_paths: 'build/**/TEST*.xml'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
 
     #- name: Upload distribution
     #  uses: actions/upload-artifact@v4

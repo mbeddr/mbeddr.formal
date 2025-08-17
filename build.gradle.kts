@@ -1,4 +1,5 @@
 import de.itemis.mps.gradle.*
+import de.itemis.mps.gradle.tasks.MpsGenerate
 import de.itemis.mps.gradle.tasks.MpsCheck
 import de.itemis.mps.gradle.tasks.MpsMigrate
 import de.itemis.mps.gradle.tasks.Remigrate
@@ -43,7 +44,7 @@ logger.info("Repository username: {}", nexusUsername)
 // Project versions
 val major = "2024"
 val minor = "1"
-val bugfix = "3"
+val bugfix = "4"
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
@@ -459,9 +460,33 @@ tasks {
         maxHeapSize = "3G"
     }
 
-    val checkSafetyTutorial by registering(MpsCheck::class) {
+    withType<MpsGenerate>().configureEach {
+        dependsOn(downloadJbr, resolveMps, resolveLanguageLibs)
+        javaLauncher = downloadJbr.flatMap { it.javaLauncher }
+
+        mpsHome = mpsHomeDir
+        folderMacros.put("mbeddr.formal.home", layout.projectDirectory)
+        pluginRoots.from(
+            layout.buildDirectory.map { buildDir ->
+                listOf(
+                    "dependencies/com.mbeddr.platform",
+                    "dependencies/org.mpsqa.allInOne",
+                    "artifacts/com.mbeddr.formal.languages").map { buildDir.dir(it) }
+            })
+
+        maxHeapSize = "3G"
+    }
+
+    val generateSafetyTutorial by registering(MpsGenerate::class) {
         projectLocation = file("code/tutorial-safety")
-        modules = listOf("com.mbeddr.formal.safety.tutorial")
+        modules = listOf("com.mbeddr.formal.safety.tutorial", "com.mbeddr.formal.safety.tutorial.linters")
+        environmentKind = EnvironmentKind.IDEA
+    }
+
+    val checkSafetyTutorial by registering(MpsCheck::class) {
+        dependsOn(generateSafetyTutorial)
+        projectLocation = file("code/tutorial-safety")
+        modules = listOf("com.mbeddr.formal.safety.tutorial", "com.mbeddr.formal.safety.tutorial.linters")
     }
 
     val checkNusmvTutorial by registering(MpsCheck::class) {

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language namespace="com.mbeddr.formal.safety.gsn.modularization.claim_points" uuid="ab56bf34-b9de-44be-bf0c-7b5847766e98" languageVersion="0" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>
@@ -13,7 +13,6 @@
   <accessoryModels />
   <dependencies>
     <dependency reexport="false">e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)</dependency>
-    <dependency reexport="false">00a2e56d-f195-410b-8afe-5a3c7e505658(com.mbeddr.formal.safety.gsn.confidence.acp)</dependency>
     <dependency reexport="false">c0080a47-7e37-4558-bee9-9ae18e690549(jetbrains.mps.lang.extension)</dependency>
   </dependencies>
   <languageVersions>
@@ -67,7 +66,6 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
     <module reference="e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)" version="0" />
-    <module reference="00a2e56d-f195-410b-8afe-5a3c7e505658(com.mbeddr.formal.safety.gsn.confidence.acp)" version="0" />
     <module reference="ab56bf34-b9de-44be-bf0c-7b5847766e98(com.mbeddr.formal.safety.gsn.modularization.claim_points)" version="0" />
     <module reference="e4b230e7-8e1a-4a05-8148-8713530572c1(com.mpsbasics.words.generic)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />

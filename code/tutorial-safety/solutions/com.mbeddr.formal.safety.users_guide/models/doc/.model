@@ -11,7 +11,6 @@
     <import index="xumq" ref="r:c5a55244-77a5-42ce-8f29-e1a72cf99b7f(_010_features._100_checkable_assurance_demo)" />
     <import index="6r4f" ref="r:975e4969-1ce0-4ded-8867-b40b46ebd140(_010_features._065_patterns_catalogue)" />
     <import index="688z" ref="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._049_safety_models_all_together)" />
-    <import index="u8g7" ref="r:f7c95df2-f519-48c0-b59a-d1876c6eb1f2(_010_features._060_assurance_case_fragments_reuse_cae)" />
     <import index="gc7o" ref="r:a5eafefc-bb6b-4a97-af32-8fcb507c8874(_010_features._060_assurance_case_fragments_reuse_gsn)" />
   </imports>
 </model>

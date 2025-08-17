@@ -20,7 +20,7 @@
     </language>
     <language id="1110e3ef-a98e-444f-9748-1d61fe61c7f7" name="com.fasten.safety.fmea.arch">
       <concept id="8413234032527476648" name="com.fasten.safety.fmea.arch.structure.ComponentInstanceSubject" flags="ng" index="1PLGxJ">
-        <reference id="8413234032527476717" name="comp" index="1PLGwE" />
+        <reference id="8413234032527476717" name="componentInstance" index="1PLGwE" />
       </concept>
       <concept id="8413234032527468119" name="com.fasten.safety.fmea.arch.structure.DesignFMEA" flags="ng" index="1PLMAg">
         <reference id="8413234032528111728" name="arch" index="1POnuR" />

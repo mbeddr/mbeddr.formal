@@ -8,7 +8,6 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
   </languages>
   <imports>
-    <import index="spwl" ref="r:ea5ecccc-669e-41c1-a43d-021bc4263d33(com.fasten.safety.ft.structure)" />
     <import index="qofe" ref="r:6e99ad70-095a-4dfc-9cd7-6fd79b5cd071(com.fasten.safety.ft.xfta.pluginSolution.runner)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
     <import index="9jkl" ref="r:290677b7-fc8c-4e0e-97a0-1ad54da16539(com.fasten.safety.ft.xfta.pluginSolution.ui)" />

@@ -177,13 +177,6 @@
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
     </language>
   </registry>
-  <node concept="13h7C7" id="3oGITgu$E7l">
-    <property role="3GE5qa" value="events.base" />
-    <ref role="13h7C2" to="spwl:11L6MQb45$I" resolve="EventSpecBase" />
-    <node concept="13hLZK" id="3oGITgu$E7m" role="13h7CW">
-      <node concept="3clFbS" id="3oGITgu$E7n" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="3oGITgu_HkZ">
     <property role="3GE5qa" value="gates" />
     <ref role="13h7C2" to="spwl:3EWkVoQ4QSf" resolve="GateBase" />
