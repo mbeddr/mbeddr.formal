@@ -104,11 +104,15 @@
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
+      </concept>
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -340,6 +344,60 @@
                 </node>
               </node>
               <node concept="34oBXx" id="4A8SZs9KiX7" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="q$1bLSqhab">
+    <property role="3GE5qa" value="diagram.uml.sequence.participant" />
+    <ref role="1M2myG" to="udwj:q$1bLSou5i" resolve="SequenceDiagramParticipantBaseRef" />
+    <node concept="1N5Pfh" id="q$1bLSqhac" role="1Mr941">
+      <ref role="1N5Vy1" to="udwj:q$1bLSou5k" />
+      <node concept="1dDu$B" id="q$1bLSqhfJ" role="1N6uqs">
+        <ref role="1dDu$A" to="udwj:q$1bLS3dKo" resolve="SequenceDiagramParticipantBase" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="q$1bLSuoLE">
+    <property role="3GE5qa" value="diagram.uml.sequence.skinparam" />
+    <ref role="1M2myG" to="udwj:q$1bLSuoLC" resolve="ISequenceDiagramSkinParameter" />
+    <node concept="9S07l" id="q$1bLSuoLF" role="9Vyp8">
+      <node concept="3clFbS" id="q$1bLSuoLG" role="2VODD2">
+        <node concept="3clFbF" id="q$1bLSup04" role="3cqZAp">
+          <node concept="2OqwBi" id="q$1bLSuqe8" role="3clFbG">
+            <node concept="2OqwBi" id="q$1bLSupou" role="2Oq$k0">
+              <node concept="nLn13" id="q$1bLSup03" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="q$1bLSupGq" role="2OqNvi">
+                <node concept="1xMEDy" id="q$1bLSupGs" role="1xVPHs">
+                  <node concept="chp4Y" id="q$1bLSupIR" role="ri$Ld">
+                    <ref role="cht4Q" to="udwj:q$1bLS32qa" resolve="PlantUmlSequenceDiagram" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3x8VRR" id="q$1bLSur9R" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="q$1bLSGwse">
+    <property role="3GE5qa" value="diagram.uml.sequence.grouping" />
+    <ref role="1M2myG" to="udwj:q$1bLSCbQs" resolve="SequenceDiagramElse" />
+    <node concept="9S07l" id="q$1bLSGwsf" role="9Vyp8">
+      <node concept="3clFbS" id="q$1bLSGwsg" role="2VODD2">
+        <node concept="3clFbF" id="q$1bLSGwEx" role="3cqZAp">
+          <node concept="2OqwBi" id="q$1bLSGy4j" role="3clFbG">
+            <node concept="2OqwBi" id="q$1bLSGx2V" role="2Oq$k0">
+              <node concept="nLn13" id="q$1bLSGwEw" role="2Oq$k0" />
+              <node concept="2yIwOk" id="q$1bLSGxen" role="2OqNvi" />
+            </node>
+            <node concept="2Zo12i" id="q$1bLSGz_N" role="2OqNvi">
+              <node concept="chp4Y" id="q$1bLSGzUv" role="2Zo12j">
+                <ref role="cht4Q" to="udwj:q$1bLSCbQn" resolve="SequenceDiagramAlt" />
+              </node>
             </node>
           </node>
         </node>

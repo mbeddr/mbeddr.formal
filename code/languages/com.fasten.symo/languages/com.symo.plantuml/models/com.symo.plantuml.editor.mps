@@ -30,30 +30,39 @@
     <import index="e373" ref="377bf088-4ffc-48ac-910f-fb1c66ffa60e/java:org.apache.batik.util(com.symo.plantuml.lib/)" />
     <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
     <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="4anb" ref="377bf088-4ffc-48ac-910f-fb1c66ffa60e/java:org.apache.batik.swing.svg(com.symo.plantuml.lib/)" implicit="true" />
     <import index="lc7h" ref="r:9af299a8-c69a-4780-9c99-063ff8f4181a(com.symo.plantuml.behavior)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
+      <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="8954657570917870539" name="jetbrains.mps.lang.editor.structure.TransformationLocation_ContextAssistant" flags="ng" index="2j_NTm" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="3308309804690746362" name="jetbrains.mps.lang.editor.structure.QueryFunction_ColorComposit" flags="ig" index="mot77" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1638911550608610798" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Execute" flags="ig" index="IWg2L" />
+      <concept id="1638911550608610278" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Action" flags="ng" index="IWgqT">
+        <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
+        <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
         <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
@@ -77,26 +86,43 @@
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
         <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
+      <concept id="3360401466585705291" name="jetbrains.mps.lang.editor.structure.CellModel_ContextAssistant" flags="ng" index="18a60v" />
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
       </concept>
+      <concept id="1139535219966" name="jetbrains.mps.lang.editor.structure.CellActionMapDeclaration" flags="ig" index="1h_SRR">
+        <reference id="1139535219968" name="applicableConcept" index="1h_SK9" />
+        <child id="1139535219969" name="item" index="1h_SK8" />
+      </concept>
+      <concept id="1139535280617" name="jetbrains.mps.lang.editor.structure.CellActionMapItem" flags="lg" index="1hA7zw">
+        <property id="1139535298778" name="actionId" index="1hAc7j" />
+        <child id="1139535280620" name="executeFunction" index="1hA7z_" />
+      </concept>
+      <concept id="1139535439104" name="jetbrains.mps.lang.editor.structure.CellActionMap_ExecuteFunction" flags="in" index="1hAIg9" />
+      <concept id="5692353713941573329" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_ActionLabelText" flags="ig" index="1hCUdq" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ngI" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="701160265283677816" name="jetbrains.mps.lang.editor.structure.TransparentStyleSheetItem" flags="ln" index="3noiJN" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
+        <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <property id="1160590353935" name="usesFolding" index="S$Qs1" />
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="7723470090030138869" name="foldedCellModel" index="AHCbl" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
       <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
@@ -109,10 +135,18 @@
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1176474535556" name="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" flags="in" index="3Fmcul" />
+      <concept id="5624877018226900666" name="jetbrains.mps.lang.editor.structure.TransformationMenu" flags="ng" index="3ICUPy" />
+      <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ngI" index="3INCJE">
+        <child id="1638911550608572412" name="sections" index="IW6Ez" />
+      </concept>
       <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
+      <concept id="7980428675268276156" name="jetbrains.mps.lang.editor.structure.TransformationMenuSection" flags="ng" index="1Qtc8_">
+        <child id="7980428675268276157" name="locations" index="1Qtc8$" />
+        <child id="7980428675268276159" name="parts" index="1Qtc8A" />
+      </concept>
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -303,6 +337,7 @@
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -330,6 +365,12 @@
         <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
+        <child id="1143224066849" name="insertedNode" index="HtI8F" />
+      </concept>
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -339,6 +380,7 @@
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1173,6 +1215,7 @@
     <property role="3GE5qa" value="base" />
     <ref role="1XX52x" to="udwj:1I7wo92Vg_W" resolve="PlantUmlDiagramBase" />
     <node concept="3EZMnI" id="1I7wo92VgAa" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
       <node concept="2iRkQZ" id="1I7wo92VgAd" role="2iSdaV" />
       <node concept="PMmxH" id="1I7wo92WvV$" role="3EZMnx">
         <ref role="PMmxG" node="1I7wo92WvVn" resolve="PlantUmlDiagramBaseSectionStart" />
@@ -1265,6 +1308,19 @@
       <node concept="PMmxH" id="1I7wo92VgAp" role="3EZMnx">
         <ref role="PMmxG" node="1I7wo92VgAk" resolve="PlantUmlDiagramBaseSectionEnd" />
       </node>
+      <node concept="3EZMnI" id="q$1bLSwbNz" role="AHCbl">
+        <node concept="3EZMnI" id="q$1bLSwc5c" role="3EZMnx">
+          <node concept="PMmxH" id="q$1bLSwc5d" role="3EZMnx">
+            <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+            <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+          </node>
+          <node concept="3F0A7n" id="q$1bLSwc5e" role="3EZMnx">
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+          <node concept="2iRfu4" id="q$1bLSwc5h" role="2iSdaV" />
+        </node>
+        <node concept="2iRfu4" id="q$1bLSwbN$" role="2iSdaV" />
+      </node>
     </node>
     <node concept="PMmxH" id="7ikA1GKy9pe" role="6VMZX">
       <ref role="PMmxG" node="7ikA1GKy8mz" resolve="DiagramPreferredSize" />
@@ -1345,10 +1401,8 @@
       <node concept="3F0A7n" id="1I7wo92W$3x" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
-      <node concept="_tjkj" id="7ikA1GKvxAg" role="3EZMnx">
-        <node concept="3F1sOY" id="7ikA1GKvxAm" role="_tjki">
-          <ref role="1NtTu8" to="udwj:7ikA1GKvxAd" resolve="longDescription" />
-        </node>
+      <node concept="PMmxH" id="q$1bLS6_rL" role="3EZMnx">
+        <ref role="PMmxG" node="q$1bLS6_r$" resolve="OptionalLongDescriptionEditorComponent" />
       </node>
       <node concept="_tjkj" id="7ikA1GKvx_W" role="3EZMnx">
         <node concept="3EZMnI" id="7ikA1GKvxA0" role="_tjki">
@@ -1532,12 +1586,28 @@
         <node concept="3F0A7n" id="1I7wo930$w0" role="3EZMnx">
           <ref role="1NtTu8" to="udwj:1I7wo930$vZ" resolve="position" />
         </node>
-        <node concept="3F0ifn" id="1I7wo930$w5" role="3EZMnx">
-          <property role="3F0ifm" value="of" />
-          <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+        <node concept="_tjkj" id="q$1bLSL$0K" role="3EZMnx">
+          <node concept="3EZMnI" id="q$1bLSL$0O" role="_tjki">
+            <node concept="3F0ifn" id="1I7wo930$w5" role="3EZMnx">
+              <property role="3F0ifm" value="of" />
+              <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+            </node>
+            <node concept="3F1sOY" id="1I7wo930$w9" role="3EZMnx">
+              <ref role="1NtTu8" to="udwj:1I7wo930$w8" />
+            </node>
+            <node concept="2iRfu4" id="q$1bLSL$0R" role="2iSdaV" />
+          </node>
         </node>
-        <node concept="3F1sOY" id="1I7wo930$w9" role="3EZMnx">
-          <ref role="1NtTu8" to="udwj:1I7wo930$w8" resolve="annotatedObject" />
+        <node concept="_tjkj" id="q$1bLSScG3" role="3EZMnx">
+          <node concept="3EZMnI" id="q$1bLSScG7" role="_tjki">
+            <node concept="3F0ifn" id="q$1bLSScGb" role="3EZMnx">
+              <property role="3F0ifm" value="#" />
+            </node>
+            <node concept="3F0A7n" id="q$1bLSScGe" role="3EZMnx">
+              <ref role="1NtTu8" to="udwj:q$1bLSScG1" resolve="color" />
+            </node>
+            <node concept="2iRfu4" id="q$1bLSScGa" role="2iSdaV" />
+          </node>
         </node>
       </node>
       <node concept="3EZMnI" id="1I7wo930$vM" role="3EZMnx">
@@ -2103,7 +2173,7 @@
     </node>
   </node>
   <node concept="PKFIW" id="1_aHBvadUnx">
-    <property role="3GE5qa" value="diagram.uml.component" />
+    <property role="3GE5qa" value="diagram.mindmap" />
     <property role="TrG5h" value="PlantUmlMindmapDiagramTextualEditorComponent" />
     <ref role="1XX52x" to="udwj:1_aHBvadUkp" resolve="PlantUmlMindmapDiagram" />
     <node concept="1PE4EZ" id="1_aHBvadUny" role="1PM95z">
@@ -2145,6 +2215,420 @@
     <ref role="1XX52x" to="udwj:1_aHBvak083" resolve="SingleLineEntry" />
     <node concept="3F1sOY" id="1_aHBvak087" role="2wV5jI">
       <ref role="1NtTu8" to="udwj:1_aHBvak084" resolve="val" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="q$1bLS32sL">
+    <property role="3GE5qa" value="diagram.uml.sequence" />
+    <property role="TrG5h" value="PlantUmlSequenceDiagramTextualEditorComponent" />
+    <ref role="1XX52x" to="udwj:q$1bLS32qa" resolve="PlantUmlSequenceDiagram" />
+    <node concept="1PE4EZ" id="q$1bLS32sM" role="1PM95z">
+      <ref role="1PE7su" node="6CyxyHhVZuv" resolve="PlantUmlTextualEditorComponentBase" />
+    </node>
+    <node concept="3F2HdR" id="q$1bLS32sN" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:q$1bLS32qb" />
+      <node concept="2iRkQZ" id="q$1bLS32sO" role="2czzBx" />
+      <node concept="4$FPG" id="q$1bLS32sP" role="4_6I_">
+        <node concept="3clFbS" id="q$1bLS32sQ" role="2VODD2">
+          <node concept="3clFbF" id="q$1bLS32sR" role="3cqZAp">
+            <node concept="2pJPEk" id="q$1bLS32sS" role="3clFbG">
+              <node concept="2pJPED" id="q$1bLS32sT" role="2pJPEn">
+                <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLS3dKt">
+    <property role="3GE5qa" value="diagram.uml.sequence.participant" />
+    <ref role="1XX52x" to="udwj:q$1bLS3dKo" resolve="SequenceDiagramParticipantBase" />
+    <node concept="3EZMnI" id="q$1bLS3dKv" role="2wV5jI">
+      <node concept="1kHk_G" id="q$1bLT4vEi" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLT4vEe" resolve="create" />
+      </node>
+      <node concept="PMmxH" id="q$1bLS3dK_" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+        <ref role="1ERwB7" node="q$1bLSaUHI" resolve="delete" />
+        <node concept="VPxyj" id="q$1bLS9Dag" role="3F10Kt" />
+      </node>
+      <node concept="3F0A7n" id="q$1bLS3dKD" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="q$1bLS3dKI" role="3EZMnx">
+        <node concept="3EZMnI" id="q$1bLS3dKM" role="_tjki">
+          <node concept="3F0ifn" id="q$1bLS3dKR" role="3EZMnx">
+            <property role="3F0ifm" value="#" />
+          </node>
+          <node concept="3F0A7n" id="q$1bLS3dKY" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:q$1bLS3dKV" resolve="color" />
+          </node>
+          <node concept="l2Vlx" id="q$1bLS3dKP" role="2iSdaV" />
+          <node concept="VPM3Z" id="q$1bLS3dKQ" role="3F10Kt" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="q$1bLSiZ1z" role="3EZMnx">
+        <node concept="3EZMnI" id="q$1bLSiZ1$" role="_tjki">
+          <node concept="3F0ifn" id="q$1bLSiZ1_" role="3EZMnx">
+            <property role="3F0ifm" value="as" />
+          </node>
+          <node concept="3F0A7n" id="q$1bLSiZ1A" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:q$1bLSiZ1y" resolve="longDescription" />
+          </node>
+          <node concept="l2Vlx" id="q$1bLSiZ1B" role="2iSdaV" />
+          <node concept="VPM3Z" id="q$1bLSiZ1C" role="3F10Kt" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="q$1bLS3dKy" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="q$1bLS6_r$">
+    <property role="TrG5h" value="OptionalLongDescriptionEditorComponent" />
+    <property role="3GE5qa" value="diagram.uml.sequence.participant" />
+    <ref role="1XX52x" to="udwj:6CyxyHi9vWZ" resolve="INamedElementWithLongDescription" />
+    <node concept="3EZMnI" id="q$1bLS6_rC" role="2wV5jI">
+      <node concept="2iRfu4" id="q$1bLS6_rD" role="2iSdaV" />
+      <node concept="_tjkj" id="q$1bLSdybE" role="3EZMnx">
+        <node concept="3F1sOY" id="q$1bLS6_r_" role="_tjki">
+          <ref role="1NtTu8" to="udwj:7ikA1GKvxAd" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="q$1bLSdybL" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="q$1bLSaUHI">
+    <property role="3GE5qa" value="diagram.uml.sequence.participant" />
+    <property role="TrG5h" value="delete" />
+    <ref role="1h_SK9" to="udwj:q$1bLS3dKo" resolve="SequenceDiagramParticipantBase" />
+    <node concept="1hA7zw" id="q$1bLSaUHJ" role="1h_SK8">
+      <property role="1hAc7j" value="7P1WhNABvta/backspace_action_id" />
+      <node concept="1hAIg9" id="q$1bLSaUHK" role="1hA7z_">
+        <node concept="3clFbS" id="q$1bLSaUHL" role="2VODD2">
+          <node concept="3clFbF" id="q$1bLSaUId" role="3cqZAp">
+            <node concept="2OqwBi" id="q$1bLSaUWh" role="3clFbG">
+              <node concept="0IXxy" id="q$1bLSaUIc" role="2Oq$k0" />
+              <node concept="3YRAZt" id="q$1bLSaVHO" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1hA7zw" id="q$1bLSaVIs" role="1h_SK8">
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
+      <node concept="1hAIg9" id="q$1bLSaVIt" role="1hA7z_">
+        <node concept="3clFbS" id="q$1bLSaVIu" role="2VODD2">
+          <node concept="3clFbF" id="q$1bLSaVIv" role="3cqZAp">
+            <node concept="2OqwBi" id="q$1bLSaVIw" role="3clFbG">
+              <node concept="0IXxy" id="q$1bLSaVIx" role="2Oq$k0" />
+              <node concept="3YRAZt" id="q$1bLSaVIy" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLSlaXC">
+    <property role="3GE5qa" value="diagram.uml.sequence.message.message_kind" />
+    <ref role="1XX52x" to="udwj:q$1bLSlaXw" resolve="MessageBase" />
+    <node concept="3EZMnI" id="q$1bLSlaXS" role="2wV5jI">
+      <node concept="2iRfu4" id="q$1bLSlaXT" role="2iSdaV" />
+      <node concept="3F1sOY" id="q$1bLSova0" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLSov9V" resolve="source" />
+      </node>
+      <node concept="_tjkj" id="q$1bLSxRCn" role="3EZMnx">
+        <node concept="3EZMnI" id="q$1bLSxRCr" role="_tjki">
+          <node concept="3F0ifn" id="q$1bLSxRCy" role="3EZMnx">
+            <property role="3F0ifm" value="[#" />
+            <node concept="11LMrY" id="q$1bLS$xBN" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F0A7n" id="q$1bLSxRCD" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:q$1bLSxRCC" resolve="color" />
+          </node>
+          <node concept="3F0ifn" id="q$1bLSxRCG" role="3EZMnx">
+            <property role="3F0ifm" value="]" />
+            <node concept="11L4FC" id="q$1bLS$xBO" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="q$1bLSxRCu" role="2iSdaV" />
+          <node concept="VPM3Z" id="q$1bLSxRCv" role="3F10Kt" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="q$1bLSlaXX" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F1sOY" id="q$1bLSova5" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLSov9W" resolve="target" />
+      </node>
+      <node concept="_tjkj" id="q$1bLSqDc$" role="3EZMnx">
+        <node concept="3EZMnI" id="q$1bLSqDcC" role="_tjki">
+          <node concept="3F0ifn" id="q$1bLSqDcG" role="3EZMnx">
+            <property role="3F0ifm" value=":" />
+          </node>
+          <node concept="3F1sOY" id="q$1bLSqDcJ" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:q$1bLSqDcy" resolve="payload" />
+          </node>
+          <node concept="2iRfu4" id="q$1bLSqDcF" role="2iSdaV" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLSou5l">
+    <property role="3GE5qa" value="diagram.uml.sequence.participant" />
+    <ref role="1XX52x" to="udwj:q$1bLSou5i" resolve="SequenceDiagramParticipantBaseRef" />
+    <node concept="1iCGBv" id="q$1bLSou5n" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:q$1bLSou5k" resolve="entity" />
+      <node concept="1sVBvm" id="q$1bLSou5p" role="1sWHZn">
+        <node concept="3F0A7n" id="q$1bLSou5v" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLSqCzD">
+    <ref role="1XX52x" to="udwj:q$1bLSqCyu" resolve="PlainTextSequenceDiagramMessagePayload" />
+    <node concept="3F0A7n" id="q$1bLSqCzF" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:q$1bLSqCyv" resolve="text" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLSurfN">
+    <property role="3GE5qa" value="diagram.uml.sequence.skinparam" />
+    <ref role="1XX52x" to="udwj:q$1bLSuoLA" resolve="ResponseMessageBelowArrowSkinParameter" />
+    <node concept="3EZMnI" id="q$1bLSurfP" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLSurfW" role="3EZMnx">
+        <property role="3F0ifm" value="responseMessageBelowArrow" />
+      </node>
+      <node concept="3F0A7n" id="q$1bLSurg1" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLSurfM" resolve="flag" />
+      </node>
+      <node concept="2iRfu4" id="q$1bLSurfS" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLSAhkW">
+    <property role="3GE5qa" value="base.generic_content" />
+    <ref role="1XX52x" to="udwj:q$1bLSAhkP" resolve="PlantUmlDiagramTitle" />
+    <node concept="3EZMnI" id="q$1bLSAhl0" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLSAhl6" role="3EZMnx">
+        <property role="3F0ifm" value="title" />
+      </node>
+      <node concept="3F0A7n" id="q$1bLSAhl9" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLSAhkV" resolve="text" />
+      </node>
+      <node concept="2iRfu4" id="q$1bLSAhl3" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLSCbQ_">
+    <property role="3GE5qa" value="diagram.uml.sequence.grouping" />
+    <ref role="1XX52x" to="udwj:q$1bLSCbQp" resolve="PlantUmlSequenceDiagramGroupBase" />
+    <node concept="3EZMnI" id="q$1bLSCbQB" role="2wV5jI">
+      <node concept="PMmxH" id="q$1bLSGkEf" role="3EZMnx">
+        <ref role="PMmxG" node="q$1bLSGkDX" resolve="PlantUmlSequenceDiagramGroupHeaderAndContent" />
+      </node>
+      <node concept="3F0ifn" id="q$1bLSCbR8" role="3EZMnx">
+        <property role="3F0ifm" value="end" />
+        <node concept="pkWqt" id="q$1bLSJcpO" role="pqm2j">
+          <node concept="3clFbS" id="q$1bLSJcpP" role="2VODD2">
+            <node concept="3clFbF" id="q$1bLSJcC3" role="3cqZAp">
+              <node concept="2OqwBi" id="q$1bLSJd4I" role="3clFbG">
+                <node concept="pncrf" id="q$1bLSJcC2" role="2Oq$k0" />
+                <node concept="2qgKlT" id="q$1bLSJdYP" role="2OqNvi">
+                  <ref role="37wK5l" to="lc7h:q$1bLSIUJd" resolve="hasEndKeyword" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="q$1bLSCbQE" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="q$1bLSGkDX">
+    <property role="3GE5qa" value="diagram.uml.sequence.grouping" />
+    <property role="TrG5h" value="PlantUmlSequenceDiagramGroupHeaderAndContent" />
+    <ref role="1XX52x" to="udwj:q$1bLSCbQp" resolve="PlantUmlSequenceDiagramGroupBase" />
+    <node concept="3EZMnI" id="q$1bLSGkDZ" role="2wV5jI">
+      <node concept="3EZMnI" id="q$1bLSGkE3" role="3EZMnx">
+        <node concept="VPM3Z" id="q$1bLSGkE4" role="3F10Kt" />
+        <node concept="PMmxH" id="q$1bLSGkE5" role="3EZMnx">
+          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        </node>
+        <node concept="3F0A7n" id="q$1bLSGkE6" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="18a60v" id="q$1bLSJf5M" role="3EZMnx">
+          <node concept="VPM3Z" id="q$1bLSJf5O" role="3F10Kt" />
+          <node concept="3noiJN" id="q$1bLSJf5P" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="q$1bLSGkE7" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="q$1bLSGkE8" role="3EZMnx">
+        <node concept="VPM3Z" id="q$1bLSGkE9" role="3F10Kt" />
+        <node concept="3XFhqQ" id="q$1bLSGkEa" role="3EZMnx" />
+        <node concept="3F2HdR" id="q$1bLSGkEb" role="3EZMnx">
+          <ref role="1NtTu8" to="udwj:q$1bLSCbQq" />
+          <node concept="2iRkQZ" id="q$1bLSGkEc" role="2czzBx" />
+        </node>
+        <node concept="2iRfu4" id="q$1bLSGkEd" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="q$1bLSGkE2" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLSGkEg">
+    <property role="3GE5qa" value="diagram.uml.sequence.grouping" />
+    <ref role="1XX52x" to="udwj:q$1bLSCbQn" resolve="SequenceDiagramAlt" />
+    <node concept="3EZMnI" id="q$1bLSGkEi" role="2wV5jI">
+      <node concept="PMmxH" id="q$1bLSGkEm" role="3EZMnx">
+        <ref role="PMmxG" node="q$1bLSGkDX" resolve="PlantUmlSequenceDiagramGroupHeaderAndContent" />
+      </node>
+      <node concept="3F2HdR" id="q$1bLSGkEq" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLSGkEp" resolve="elseBranches" />
+        <node concept="2iRkQZ" id="q$1bLSGkEs" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="q$1bLSGkEo" role="3EZMnx">
+        <property role="3F0ifm" value="end" />
+      </node>
+      <node concept="2iRkQZ" id="q$1bLSGkEl" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="3ICUPy" id="q$1bLSJf5Q">
+    <property role="3GE5qa" value="diagram.uml.sequence.grouping" />
+    <ref role="aqKnT" to="udwj:q$1bLSCbQs" resolve="SequenceDiagramElse" />
+    <node concept="22hDWj" id="q$1bLSJf5R" role="22hAXT" />
+    <node concept="1Qtc8_" id="q$1bLSJf5S" role="IW6Ez">
+      <node concept="2j_NTm" id="q$1bLSJf5U" role="1Qtc8$" />
+      <node concept="IWgqT" id="q$1bLSJf5W" role="1Qtc8A">
+        <node concept="1hCUdq" id="q$1bLSJf5X" role="1hCUd6">
+          <node concept="3clFbS" id="q$1bLSJf5Y" role="2VODD2">
+            <node concept="3clFbF" id="q$1bLSJfm$" role="3cqZAp">
+              <node concept="Xl_RD" id="q$1bLSJfmz" role="3clFbG">
+                <property role="Xl_RC" value="Add Else" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="q$1bLSJf5Z" role="IWgqQ">
+          <node concept="3clFbS" id="q$1bLSJf60" role="2VODD2">
+            <node concept="3clFbF" id="q$1bLSJfSD" role="3cqZAp">
+              <node concept="2OqwBi" id="q$1bLSJg6H" role="3clFbG">
+                <node concept="7Obwk" id="q$1bLSJfSC" role="2Oq$k0" />
+                <node concept="HtI8k" id="q$1bLSJgSc" role="2OqNvi">
+                  <node concept="2ShNRf" id="q$1bLSJgSP" role="HtI8F">
+                    <node concept="3zrR0B" id="q$1bLSJCdZ" role="2ShVmc">
+                      <node concept="3Tqbb2" id="q$1bLSJCe1" role="3zrR0E">
+                        <ref role="ehGHo" to="udwj:q$1bLSCbQs" resolve="SequenceDiagramElse" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLSU_Uk">
+    <property role="3GE5qa" value="diagram.uml.sequence.base" />
+    <ref role="1XX52x" to="udwj:q$1bLSU_Ug" resolve="Section" />
+    <node concept="3EZMnI" id="q$1bLSU_Um" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLSU_Uq" role="3EZMnx">
+        <property role="3F0ifm" value="==" />
+      </node>
+      <node concept="3F0A7n" id="q$1bLSU_Uv" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="q$1bLSU_Uy" role="3EZMnx">
+        <property role="3F0ifm" value="==" />
+      </node>
+      <node concept="2iRfu4" id="q$1bLSU_Up" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLSWO0p">
+    <property role="3GE5qa" value="diagram.uml.sequence.base" />
+    <ref role="1XX52x" to="udwj:q$1bLSWO0m" resolve="Delay" />
+    <node concept="3EZMnI" id="q$1bLSWO0r" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLSWO0x" role="3EZMnx">
+        <property role="3F0ifm" value="..." />
+      </node>
+      <node concept="_tjkj" id="q$1bLSWO0A" role="3EZMnx">
+        <node concept="3EZMnI" id="q$1bLSWO0E" role="_tjki">
+          <node concept="3F0ifn" id="q$1bLSX5$N" role="3EZMnx">
+            <property role="3F0ifm" value=" " />
+          </node>
+          <node concept="3F0A7n" id="q$1bLSWO0I" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:q$1bLSWO0o" resolve="value" />
+          </node>
+          <node concept="3F0ifn" id="q$1bLSX5$Q" role="3EZMnx">
+            <property role="3F0ifm" value=" " />
+          </node>
+          <node concept="3F0ifn" id="q$1bLSWO0L" role="3EZMnx">
+            <property role="3F0ifm" value="..." />
+          </node>
+          <node concept="2iRfu4" id="q$1bLSWO0H" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="q$1bLSWO0u" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLSZk07">
+    <property role="3GE5qa" value="diagram.uml.sequence.base" />
+    <ref role="1XX52x" to="udwj:q$1bLSZk04" resolve="Space" />
+    <node concept="3EZMnI" id="q$1bLSZk09" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLSZk0d" role="3EZMnx">
+        <property role="3F0ifm" value="||" />
+      </node>
+      <node concept="3F0A7n" id="q$1bLSZk0i" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLSZk06" resolve="value" />
+      </node>
+      <node concept="3F0ifn" id="q$1bLSZk0l" role="3EZMnx">
+        <property role="3F0ifm" value="||" />
+      </node>
+      <node concept="2iRfu4" id="q$1bLSZk0c" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLT1HoR">
+    <property role="3GE5qa" value="diagram.uml.sequence.activate" />
+    <ref role="1XX52x" to="udwj:q$1bLT1HoK" resolve="PlantUmlSequenceDiagramActivate" />
+    <node concept="3EZMnI" id="q$1bLT1HoT" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLT1HoX" role="3EZMnx">
+        <property role="3F0ifm" value="activate" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F1sOY" id="q$1bLT1Hp0" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLT1HoJ" resolve="participantBase" />
+      </node>
+      <node concept="_tjkj" id="q$1bLT1Hp5" role="3EZMnx">
+        <node concept="3EZMnI" id="q$1bLT1Hp9" role="_tjki">
+          <node concept="3F0ifn" id="q$1bLT1Hpd" role="3EZMnx">
+            <property role="3F0ifm" value="#" />
+          </node>
+          <node concept="3F0A7n" id="q$1bLT1Hpg" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:q$1bLT1HoQ" resolve="color" />
+          </node>
+          <node concept="2iRfu4" id="q$1bLT1Hpc" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="q$1bLT1HoW" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLT1Hpk">
+    <property role="3GE5qa" value="diagram.uml.sequence.activate" />
+    <ref role="1XX52x" to="udwj:q$1bLT1Hpi" resolve="PlantUmlSequenceDiagramDeactivate" />
+    <node concept="3EZMnI" id="q$1bLT1Hpm" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLT1Hps" role="3EZMnx">
+        <property role="3F0ifm" value="deactivate" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F1sOY" id="q$1bLT1Hpv" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLT1HoJ" resolve="participantBase" />
+      </node>
+      <node concept="2iRfu4" id="q$1bLT1Hpp" role="2iSdaV" />
     </node>
   </node>
 </model>
