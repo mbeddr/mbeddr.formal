@@ -1600,7 +1600,7 @@
           <property role="3F0ifm" value="note" />
           <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
         </node>
-        <node concept="3F0A7n" id="1I7wo930$w0" role="3EZMnx">
+        <node concept="3F0A7n" id="q$1bLUceTP" role="3EZMnx">
           <ref role="1NtTu8" to="udwj:1I7wo930$vZ" resolve="position" />
         </node>
         <node concept="_tjkj" id="q$1bLSL$0K" role="3EZMnx">
@@ -2951,6 +2951,48 @@
     </node>
     <node concept="1PE4EZ" id="q$1bLTWPbS" role="1PM95z">
       <ref role="1PE7su" node="q$1bLTpRCm" resolve="PlantUmlStateTransitionArrowEditorComponentBase" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLUezz0">
+    <property role="3GE5qa" value="diagram.common" />
+    <ref role="1XX52x" to="udwj:q$1bLUezyW" resolve="NoteOnLink" />
+    <node concept="3EZMnI" id="q$1bLUezz2" role="2wV5jI">
+      <node concept="3EZMnI" id="q$1bLUezz3" role="3EZMnx">
+        <node concept="2iRfu4" id="q$1bLUezz4" role="2iSdaV" />
+        <node concept="3F0ifn" id="q$1bLUezz5" role="3EZMnx">
+          <property role="3F0ifm" value="note" />
+          <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+        </node>
+        <node concept="3F0A7n" id="q$1bLUezz6" role="3EZMnx">
+          <ref role="1NtTu8" to="udwj:1I7wo930$vZ" resolve="position" />
+        </node>
+        <node concept="3F0ifn" id="q$1bLUezzo" role="3EZMnx">
+          <property role="3F0ifm" value="on link" />
+        </node>
+        <node concept="_tjkj" id="q$1bLUezzc" role="3EZMnx">
+          <node concept="3EZMnI" id="q$1bLUezzd" role="_tjki">
+            <node concept="3F0ifn" id="q$1bLUezze" role="3EZMnx">
+              <property role="3F0ifm" value="#" />
+            </node>
+            <node concept="3F0A7n" id="q$1bLUezzf" role="3EZMnx">
+              <ref role="1NtTu8" to="udwj:q$1bLTZCXT" resolve="color" />
+            </node>
+            <node concept="2iRfu4" id="q$1bLUezzg" role="2iSdaV" />
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="q$1bLUezzh" role="3EZMnx">
+        <node concept="2iRfu4" id="q$1bLUezzi" role="2iSdaV" />
+        <node concept="3XFhqQ" id="q$1bLUezzj" role="3EZMnx" />
+        <node concept="3F1sOY" id="q$1bLUezzk" role="3EZMnx">
+          <ref role="1NtTu8" to="udwj:1I7wo930$oL" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="q$1bLUezzl" role="3EZMnx">
+        <property role="3F0ifm" value="end note" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="2iRkQZ" id="q$1bLUezzm" role="2iSdaV" />
     </node>
   </node>
 </model>

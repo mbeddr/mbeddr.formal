@@ -404,5 +404,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="q$1bLUhlxT">
+    <property role="3GE5qa" value="diagram.uml.statemachine.state" />
+    <ref role="1M2myG" to="udwj:q$1bLT8dn3" resolve="PlantUmlStatemachineStateRef" />
+    <node concept="1N5Pfh" id="q$1bLUhlxU" role="1Mr941">
+      <ref role="1N5Vy1" to="udwj:q$1bLT8dn6" />
+      <node concept="1dDu$B" id="q$1bLUhlHq" role="1N6uqs">
+        <ref role="1dDu$A" to="udwj:q$1bLT8dmP" resolve="PlantUmlStatemachineState" />
+      </node>
+    </node>
+  </node>
 </model>
 

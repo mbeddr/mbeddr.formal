@@ -74,6 +74,7 @@
       <concept id="1983696557349285456" name="com.symo.plantuml.structure.InterfaceRef" flags="ng" index="1pvUZi">
         <reference id="1983696557349285457" name="interf" index="1pvUZj" />
       </concept>
+      <concept id="478512667959113916" name="com.symo.plantuml.structure.PlantUmlStatemachineNoteOnLink" flags="ng" index="1WBzK0" />
       <concept id="478512667932278172" name="com.symo.plantuml.structure.SequenceDiagramElse" flags="ng" index="1Y1b$w" />
       <concept id="478512667932278169" name="com.symo.plantuml.structure.PlantUmlSequenceDiagramGroupBase" flags="ng" index="1Y1b$_">
         <child id="478512667932278170" name="content" index="1Y1b$A" />
@@ -214,6 +215,32 @@
         </node>
         <node concept="1pvSZV" id="1I7wo92YPMh" role="1pvUZs">
           <ref role="1pvSZS" node="1I7wo92WVGh" resolve="Comp" />
+        </node>
+      </node>
+      <node concept="1WBzK0" id="q$1bLUhinh" role="1pqCzW">
+        <node concept="1Pa9Pv" id="q$1bLUhinj" role="1oxsuN">
+          <node concept="1PaTwC" id="q$1bLUhinl" role="1PaQFQ">
+            <node concept="3oM_SD" id="q$1bLUhinm" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhinn" role="1PaTwD">
+              <property role="3oM_SC" value="channel" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhinp" role="1PaTwD">
+              <property role="3oM_SC" value="has" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="q$1bLUhinr" role="1PaQFQ">
+            <node concept="3oM_SD" id="q$1bLUhinq" role="1PaTwD">
+              <property role="3oM_SC" value="also" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhin$" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhinA" role="1PaTwD">
+              <property role="3oM_SC" value="note" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1oxsuH" id="1I7wo9327_$" role="1pqCzW">
@@ -362,6 +389,38 @@
           </node>
         </node>
       </node>
+      <node concept="1oxsuH" id="q$1bLUhC_U" role="1pqCzW">
+        <node concept="1Pa9Pv" id="q$1bLUhC_W" role="1oxsuN">
+          <node concept="1PaTwC" id="q$1bLUhCA2" role="1PaQFQ">
+            <node concept="3oM_SD" id="q$1bLUhCA3" role="1PaTwD">
+              <property role="3oM_SC" value="this" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhCA4" role="1PaTwD">
+              <property role="3oM_SC" value="turns" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhCA6" role="1PaTwD">
+              <property role="3oM_SC" value="on" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhCA7" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="q$1bLUhCAa" role="1PaQFQ">
+            <node concept="3oM_SD" id="q$1bLUhCA9" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhCA8" role="1PaTwD">
+              <property role="3oM_SC" value="coffee" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhCAm" role="1PaTwD">
+              <property role="3oM_SC" value="machine" />
+            </node>
+          </node>
+        </node>
+        <node concept="cBaKt" id="q$1bLUhCA0" role="1oxsAa">
+          <ref role="cBaKr" node="6CyxyHi9vUf" resolve="TurnOn" />
+        </node>
+      </node>
       <node concept="c$yPq" id="6BNnCp_pysk" role="1pqCzW">
         <property role="c$yrf" value="single line comment" />
       </node>
@@ -382,6 +441,48 @@
         </node>
         <node concept="cBaKt" id="6BNnCp_wvUq" role="1pvUZs">
           <ref role="cBaKr" node="6CyxyHi9vUf" resolve="TurnOn" />
+        </node>
+      </node>
+      <node concept="1oxsuH" id="q$1bLUhlxy" role="1pqCzW">
+        <node concept="1Pa9Pv" id="q$1bLUhlx$" role="1oxsuN">
+          <node concept="1PaTwC" id="q$1bLUhlxE" role="1PaQFQ">
+            <node concept="3oM_SD" id="q$1bLUhlxM" role="1PaTwD">
+              <property role="3oM_SC" value="This" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhlxN" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhlxP" role="1PaTwD">
+              <property role="3oM_SC" value="our" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhlxQ" role="1PaTwD">
+              <property role="3oM_SC" value="user" />
+            </node>
+          </node>
+        </node>
+        <node concept="cBd9P" id="q$1bLUhlxC" role="1oxsAa">
+          <ref role="cBd9N" node="6BNnCp_okdu" resolve="User" />
+        </node>
+      </node>
+      <node concept="1WBzK0" id="q$1bLUhlxd" role="1pqCzW">
+        <property role="1ZmCJ5" value="aqua" />
+        <node concept="1Pa9Pv" id="q$1bLUhlxf" role="1oxsuN">
+          <node concept="1PaTwC" id="q$1bLUhlxh" role="1PaQFQ">
+            <node concept="3oM_SD" id="q$1bLUhlxi" role="1PaTwD">
+              <property role="3oM_SC" value="actor" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhlxj" role="1PaTwD">
+              <property role="3oM_SC" value="first" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhlxl" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="q$1bLUhlxn" role="1PaQFQ">
+            <node concept="3oM_SD" id="q$1bLUhlxm" role="1PaTwD">
+              <property role="3oM_SC" value="action" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="cyzMF" id="6BNnCp_wvUi" role="1pqCzW">
@@ -447,6 +548,7 @@
           <ref role="cBaKr" node="6BNnCp_puvt" resolve="TurnOn" />
         </node>
       </node>
+      <node concept="c$xRF" id="q$1bLUhCAn" role="1pqCzW" />
       <node concept="1pqCE1" id="6BNnCp_puvR" role="1pqCzW" />
     </node>
     <node concept="c$xRF" id="6BNnCp_puwf" role="1pqCw0" />
@@ -1272,6 +1374,19 @@
         <node concept="1ZVctO" id="q$1bLU762i" role="1Zxd5C" />
         <node concept="1Zxd5Z" id="q$1bLU762j" role="1Zxd5D">
           <ref role="1Zxd5U" node="q$1bLTftug" resolve="Init" />
+        </node>
+      </node>
+      <node concept="1WBzK0" id="q$1bLUhin0" role="1pqCzW">
+        <property role="1ZmCJ5" value="aqua" />
+        <node concept="1Pa9Pv" id="q$1bLUhin2" role="1oxsuN">
+          <node concept="1PaTwC" id="q$1bLUhin4" role="1PaQFQ">
+            <node concept="3oM_SD" id="q$1bLUhinc" role="1PaTwD">
+              <property role="3oM_SC" value="initial" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLUhind" role="1PaTwD">
+              <property role="3oM_SC" value="transition" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="1Zxorz" id="q$1bLTicf4" role="1pqCzW">
