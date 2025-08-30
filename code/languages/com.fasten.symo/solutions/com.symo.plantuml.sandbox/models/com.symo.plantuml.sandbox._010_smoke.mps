@@ -51,7 +51,6 @@
       <concept id="1822469624834794777" name="com.symo.plantuml.structure.PlantUmlMindmapDiagram" flags="ng" index="3jvhdI" />
       <concept id="1983696557349946927" name="com.symo.plantuml.structure.Note" flags="ng" index="1oxsuH">
         <property id="1983696557349947391" name="position" index="1oxspX" />
-        <property id="478512667936475905" name="color" index="1YhcYX" />
         <child id="1983696557349946929" name="text" index="1oxsuN" />
         <child id="1983696557349947400" name="annotatedObject" index="1oxsAa" />
       </concept>
@@ -68,9 +67,7 @@
       </concept>
       <concept id="1983696557349255043" name="com.symo.plantuml.structure.ComponentsChannel" flags="ng" index="1ps3o1" />
       <concept id="1983696557349006558" name="com.symo.plantuml.structure.InterfaceDeclaration" flags="ng" index="1pt6Ps" />
-      <concept id="1983696557348896981" name="com.symo.plantuml.structure.ComponentDeclaration" flags="ng" index="1pts5n">
-        <property id="8400506447497927034" name="color" index="14UC5x" />
-      </concept>
+      <concept id="1983696557348896981" name="com.symo.plantuml.structure.ComponentDeclaration" flags="ng" index="1pts5n" />
       <concept id="1983696557349277305" name="com.symo.plantuml.structure.ComponentRef" flags="ng" index="1pvSZV">
         <reference id="1983696557349277306" name="component" index="1pvSZS" />
       </concept>
@@ -113,7 +110,6 @@
       <concept id="478512667925277135" name="com.symo.plantuml.structure.Boundary" flags="ng" index="1Y$uPN" />
       <concept id="478512667922540170" name="com.symo.plantuml.structure.PlantUmlSequenceDiagram" flags="ng" index="1YE28Q" />
       <concept id="478512667922586648" name="com.symo.plantuml.structure.SequenceDiagramParticipantBase" flags="ng" index="1YEdy$">
-        <property id="478512667922586683" name="color" index="1YEdy7" />
         <property id="478512667926720610" name="longDescription" index="1YVZju" />
         <property id="478512667939699342" name="create" index="1ZHvSM" />
       </concept>
@@ -133,13 +129,27 @@
         <child id="478512667928162939" name="source" index="1YLvr7" />
         <child id="478512667928728354" name="payload" index="1YNDuu" />
       </concept>
-      <concept id="478512667938969136" name="com.symo.plantuml.structure.PlantUmlSequenceDiagramActivate" flags="ng" index="1ZCHac">
-        <property id="478512667938969142" name="color" index="1ZCHaa" />
+      <concept id="478512667955203960" name="com.symo.plantuml.structure.IPlantUmlEntityWithColor" flags="ngI" index="1ZmCJ4">
+        <property id="478512667955203961" name="color" index="1ZmCJ5" />
       </concept>
+      <concept id="478512667940672949" name="com.symo.plantuml.structure.PlantUmlStatemachineState" flags="ng" index="1Zxd49" />
+      <concept id="478512667940672943" name="com.symo.plantuml.structure.PlantUmlStatemachineDiagram" flags="ng" index="1Zxd4j" />
+      <concept id="478512667940672977" name="com.symo.plantuml.structure.PlantUmlStatemachineTransitionBase" flags="ng" index="1Zxd5H">
+        <child id="478512667940672980" name="source" index="1Zxd5C" />
+        <child id="478512667940672981" name="target" index="1Zxd5D" />
+      </concept>
+      <concept id="478512667940672963" name="com.symo.plantuml.structure.PlantUmlStatemachineStateRef" flags="ng" index="1Zxd5Z">
+        <reference id="478512667940672966" name="state" index="1Zxd5U" />
+      </concept>
+      <concept id="478512667940717151" name="com.symo.plantuml.structure.PlantUmlStatemachineTransition" flags="ng" index="1Zxorz" />
+      <concept id="478512667938969136" name="com.symo.plantuml.structure.PlantUmlSequenceDiagramActivate" flags="ng" index="1ZCHac" />
       <concept id="478512667938969132" name="com.symo.plantuml.structure.PlantUmlSequenceDiagramActivateDeactivateBase" flags="ng" index="1ZCHag">
         <child id="478512667938969135" name="participantBase" index="1ZCHaj" />
       </concept>
       <concept id="478512667938969170" name="com.symo.plantuml.structure.PlantUmlSequenceDiagramDeactivate" flags="ng" index="1ZCHbI" />
+      <concept id="478512667943289800" name="com.symo.plantuml.structure.PlantUmlStatemachineStartEndState" flags="ng" index="1ZVctO" />
+      <concept id="478512667943934956" name="com.symo.plantuml.structure.PlantUmlStatemachineLeftTransition" flags="ng" index="1ZXDXg" />
+      <concept id="478512667943934953" name="com.symo.plantuml.structure.PlantUmlStatemachineDownTransition" flags="ng" index="1ZXDXl" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -179,7 +189,7 @@
       </node>
       <node concept="1pts5n" id="1I7wo92WVGh" role="1pqCzW">
         <property role="TrG5h" value="Comp" />
-        <property role="14UC5x" value="AA2233" />
+        <property role="1ZmCJ5" value="red" />
         <node concept="1Pa9Pv" id="q$1bLS3dL2" role="14UC6m">
           <node concept="1PaTwC" id="q$1bLS3dLf" role="1PaQFQ">
             <node concept="3oM_SD" id="q$1bLS3dLg" role="1PaTwD">
@@ -246,7 +256,7 @@
         </node>
         <node concept="1pts5n" id="47IPWgLMO5a" role="14Zzxx">
           <property role="TrG5h" value="Second" />
-          <property role="14UC5x" value="Green" />
+          <property role="1ZmCJ5" value="red" />
           <node concept="1Pa9Pv" id="47IPWgLPlr$" role="14UC6m">
             <node concept="1PaTwC" id="47IPWgLPlr_" role="1PaQFQ">
               <node concept="3oM_SD" id="47IPWgLPlrA" role="1PaTwD">
@@ -269,7 +279,7 @@
         </node>
         <node concept="1pts5n" id="7ikA1GKrR5x" role="14Zzxx">
           <property role="TrG5h" value="Comp" />
-          <property role="14UC5x" value="Yellow" />
+          <property role="1ZmCJ5" value="blue" />
         </node>
         <node concept="1ps3o1" id="7ikA1GKrR5y" role="14Zzxx">
           <property role="1pvUZN" value="channel name" />
@@ -598,12 +608,12 @@
       <node concept="c$xRF" id="q$1bLS4IZi" role="1pqCzW" />
       <node concept="1YEdyB" id="q$1bLS4IZk" role="1pqCzW">
         <property role="TrG5h" value="Actor" />
-        <property role="1YEdy7" value="red" />
         <property role="1YVZju" value="&quot;this is \n long name&quot;" />
+        <property role="1ZmCJ5" value="red" />
       </node>
       <node concept="1oxsuH" id="q$1bLSNPnS" role="1pqCzW">
-        <property role="1YhcYX" value="aqua" />
         <property role="1oxspX" value="1I7wo930$vV/left" />
+        <property role="1ZmCJ5" value="aqua" />
         <node concept="1Pa9Pv" id="q$1bLSNPnU" role="1oxsuN">
           <node concept="1PaTwC" id="q$1bLSPLpU" role="1PaQFQ">
             <node concept="3oM_SD" id="q$1bLSPLpV" role="1PaTwD">
@@ -1156,7 +1166,7 @@
         </node>
       </node>
       <node concept="1ZCHac" id="q$1bLT4vE4" role="1pqCzW">
-        <property role="1ZCHaa" value="red" />
+        <property role="1ZmCJ5" value="red" />
         <node concept="1YLunI" id="q$1bLT4vE6" role="1ZCHaj">
           <ref role="1YLunC" node="q$1bLT4vDh" resolve="Bob" />
         </node>
@@ -1205,6 +1215,98 @@
       <node concept="1pqCE1" id="q$1bLT4vDe" role="1pqCzW" />
     </node>
     <node concept="c$xRF" id="q$1bLT4vDf" role="1pqCw0" />
+  </node>
+  <node concept="1pqNnw" id="q$1bLTaPrE">
+    <property role="TrG5h" value="_040_statemachine_diagram_simple" />
+    <node concept="1Zxd4j" id="q$1bLTaPrF" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="statemachine simple" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="q$1bLTdbrY" role="1pqCzW" />
+      <node concept="1Zxd49" id="q$1bLTftug" role="1pqCzW">
+        <property role="TrG5h" value="Init" />
+      </node>
+      <node concept="1Zxd49" id="q$1bLTicf0" role="1pqCzW">
+        <property role="TrG5h" value="Warmup" />
+      </node>
+      <node concept="1Zxd49" id="q$1bLTnaSR" role="1pqCzW">
+        <property role="TrG5h" value="Running" />
+      </node>
+      <node concept="1Zxd49" id="q$1bLTnaSU" role="1pqCzW">
+        <property role="TrG5h" value="Error" />
+      </node>
+      <node concept="1oxsuH" id="q$1bLU7aRj" role="1pqCzW">
+        <node concept="1Pa9Pv" id="q$1bLU7aRl" role="1oxsuN">
+          <node concept="1PaTwC" id="q$1bLU7aRp" role="1PaQFQ">
+            <node concept="3oM_SD" id="q$1bLU7aRq" role="1PaTwD">
+              <property role="3oM_SC" value="This" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLU7aRr" role="1PaTwD">
+              <property role="3oM_SC" value="is" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLU7aRt" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLU7aRu" role="1PaTwD">
+              <property role="3oM_SC" value="initial" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="q$1bLU7aRw" role="1PaQFQ">
+            <node concept="3oM_SD" id="q$1bLU7aRv" role="1PaTwD">
+              <property role="3oM_SC" value="state" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLU7aRF" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="q$1bLU7aRH" role="1PaTwD">
+              <property role="3oM_SC" value="semantics." />
+            </node>
+          </node>
+        </node>
+        <node concept="1Zxd5Z" id="q$1bLUbdb1" role="1oxsAa">
+          <ref role="1Zxd5U" node="q$1bLTftug" resolve="Init" />
+        </node>
+      </node>
+      <node concept="1Zxorz" id="q$1bLU762g" role="1pqCzW">
+        <property role="1ZmCJ5" value="red" />
+        <node concept="1ZVctO" id="q$1bLU762i" role="1Zxd5C" />
+        <node concept="1Zxd5Z" id="q$1bLU762j" role="1Zxd5D">
+          <ref role="1Zxd5U" node="q$1bLTftug" resolve="Init" />
+        </node>
+      </node>
+      <node concept="1Zxorz" id="q$1bLTicf4" role="1pqCzW">
+        <node concept="1Zxd5Z" id="q$1bLTicf6" role="1Zxd5C">
+          <ref role="1Zxd5U" node="q$1bLTftug" resolve="Init" />
+        </node>
+        <node concept="1Zxd5Z" id="q$1bLTicf7" role="1Zxd5D">
+          <ref role="1Zxd5U" node="q$1bLTicf0" resolve="Warmup" />
+        </node>
+      </node>
+      <node concept="1ZXDXl" id="q$1bLTnaSW" role="1pqCzW">
+        <node concept="1Zxd5Z" id="q$1bLTnaSY" role="1Zxd5C">
+          <ref role="1Zxd5U" node="q$1bLTicf0" resolve="Warmup" />
+        </node>
+        <node concept="1Zxd5Z" id="q$1bLTnaSZ" role="1Zxd5D">
+          <ref role="1Zxd5U" node="q$1bLTnaSR" resolve="Running" />
+        </node>
+      </node>
+      <node concept="1ZXDXg" id="q$1bLU762l" role="1pqCzW">
+        <property role="1ZmCJ5" value="DD44FF" />
+        <node concept="1Zxd5Z" id="q$1bLU762n" role="1Zxd5C">
+          <ref role="1Zxd5U" node="q$1bLTnaSR" resolve="Running" />
+        </node>
+        <node concept="1Zxd5Z" id="q$1bLU762o" role="1Zxd5D">
+          <ref role="1Zxd5U" node="q$1bLTnaSU" resolve="Error" />
+        </node>
+      </node>
+      <node concept="1ZXDXg" id="q$1bLTnaTb" role="1pqCzW">
+        <node concept="1Zxd5Z" id="q$1bLTnaTd" role="1Zxd5C">
+          <ref role="1Zxd5U" node="q$1bLTnaSU" resolve="Error" />
+        </node>
+        <node concept="1ZVctO" id="q$1bLTnaTe" role="1Zxd5D" />
+      </node>
+      <node concept="1pqCE1" id="q$1bLTftue" role="1pqCzW" />
+    </node>
   </node>
 </model>
 

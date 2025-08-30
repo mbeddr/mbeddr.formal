@@ -64,6 +64,9 @@
         <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
         <child id="5692353713941573325" name="textFunction" index="1hCUd6" />
       </concept>
+      <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
+        <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
+      </concept>
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
         <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
       </concept>
@@ -110,6 +113,11 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="701160265283677816" name="jetbrains.mps.lang.editor.structure.TransparentStyleSheetItem" flags="ln" index="3noiJN" />
+      <concept id="1165424453110" name="jetbrains.mps.lang.editor.structure.CellMenuPart_Generic_Item" flags="ng" index="1oHujT">
+        <property id="1165424453111" name="matchingText" index="1oHujS" />
+        <child id="1165424453112" name="handlerFunction" index="1oHujR" />
+      </concept>
+      <concept id="1165424657443" name="jetbrains.mps.lang.editor.structure.CellMenuPart_Generic_Item_Handler" flags="in" index="1oIgkG" />
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
@@ -118,6 +126,7 @@
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
+        <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
         <property id="1160590353935" name="usesFolding" index="S$Qs1" />
@@ -135,6 +144,7 @@
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1176474535556" name="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" flags="in" index="3Fmcul" />
+      <concept id="1163613822479" name="jetbrains.mps.lang.editor.structure.CellMenuPart_Abstract_editedNode" flags="nn" index="3GMtW1" />
       <concept id="5624877018226900666" name="jetbrains.mps.lang.editor.structure.TransformationMenu" flags="ng" index="3ICUPy" />
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ngI" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
@@ -147,9 +157,15 @@
         <child id="7980428675268276157" name="locations" index="1Qtc8$" />
         <child id="7980428675268276159" name="parts" index="1Qtc8A" />
       </concept>
+      <concept id="1166040637528" name="jetbrains.mps.lang.editor.structure.CellMenuComponent" flags="ng" index="1Xs25n">
+        <child id="1166041505377" name="menuDescriptor" index="1XvlXI" />
+      </concept>
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
+      </concept>
+      <concept id="1166059625718" name="jetbrains.mps.lang.editor.structure.CellMenuPart_CellMenuComponent" flags="ng" index="1Y$tRT">
+        <reference id="1166059677893" name="cellMenuComponent" index="1Y$EBa" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -233,6 +249,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -1410,7 +1427,7 @@
             <property role="3F0ifm" value="#" />
           </node>
           <node concept="3F0A7n" id="7ikA1GKvxA9" role="3EZMnx">
-            <ref role="1NtTu8" to="udwj:7ikA1GKvx_U" resolve="color" />
+            <ref role="1NtTu8" to="udwj:q$1bLTZCXT" resolve="color" />
           </node>
           <node concept="2iRfu4" id="7ikA1GKvxA3" role="2iSdaV" />
         </node>
@@ -1604,7 +1621,7 @@
               <property role="3F0ifm" value="#" />
             </node>
             <node concept="3F0A7n" id="q$1bLSScGe" role="3EZMnx">
-              <ref role="1NtTu8" to="udwj:q$1bLSScG1" resolve="color" />
+              <ref role="1NtTu8" to="udwj:q$1bLTZCXT" resolve="color" />
             </node>
             <node concept="2iRfu4" id="q$1bLSScGa" role="2iSdaV" />
           </node>
@@ -2262,7 +2279,7 @@
             <property role="3F0ifm" value="#" />
           </node>
           <node concept="3F0A7n" id="q$1bLS3dKY" role="3EZMnx">
-            <ref role="1NtTu8" to="udwj:q$1bLS3dKV" resolve="color" />
+            <ref role="1NtTu8" to="udwj:q$1bLTZCXT" resolve="color" />
           </node>
           <node concept="l2Vlx" id="q$1bLS3dKP" role="2iSdaV" />
           <node concept="VPM3Z" id="q$1bLS3dKQ" role="3F10Kt" />
@@ -2609,7 +2626,7 @@
             <property role="3F0ifm" value="#" />
           </node>
           <node concept="3F0A7n" id="q$1bLT1Hpg" role="3EZMnx">
-            <ref role="1NtTu8" to="udwj:q$1bLT1HoQ" resolve="color" />
+            <ref role="1NtTu8" to="udwj:q$1bLTZCXT" resolve="color" />
           </node>
           <node concept="2iRfu4" id="q$1bLT1Hpc" role="2iSdaV" />
         </node>
@@ -2629,6 +2646,311 @@
         <ref role="1NtTu8" to="udwj:q$1bLT1HoJ" resolve="participantBase" />
       </node>
       <node concept="2iRfu4" id="q$1bLT1Hpp" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLT8dmS">
+    <property role="3GE5qa" value="diagram.uml.statemachine.state" />
+    <ref role="1XX52x" to="udwj:q$1bLT8dmP" resolve="PlantUmlStatemachineState" />
+    <node concept="3EZMnI" id="q$1bLT8dmU" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLT8dmY" role="3EZMnx">
+        <property role="3F0ifm" value="state" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0A7n" id="q$1bLT8dn1" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="q$1bLT8dmX" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLT8dn7">
+    <property role="3GE5qa" value="diagram.uml.statemachine.state" />
+    <ref role="1XX52x" to="udwj:q$1bLT8dn3" resolve="PlantUmlStatemachineStateRef" />
+    <node concept="1iCGBv" id="q$1bLT8dn9" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:q$1bLT8dn6" resolve="state" />
+      <node concept="1sVBvm" id="q$1bLT8dnb" role="1sWHZn">
+        <node concept="3F0A7n" id="q$1bLT8dnf" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLT8dnm">
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <ref role="1XX52x" to="udwj:q$1bLT8dnh" resolve="PlantUmlStatemachineTransitionBase" />
+    <node concept="3EZMnI" id="q$1bLT8dno" role="2wV5jI">
+      <node concept="3F1sOY" id="q$1bLT8dnu" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLT8dnk" resolve="source" />
+      </node>
+      <node concept="PMmxH" id="q$1bLTpRCr" role="3EZMnx">
+        <ref role="PMmxG" node="q$1bLTpRCm" resolve="PlantUmlStateTransitionArrowEditorComponentBase" />
+      </node>
+      <node concept="3F1sOY" id="q$1bLT8dn_" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLT8dnl" resolve="target" />
+      </node>
+      <node concept="2iRfu4" id="q$1bLT8dnr" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="q$1bLTaPud">
+    <property role="3GE5qa" value="diagram.uml.statemachine" />
+    <property role="TrG5h" value="PlantUmlTextualEditorStatemachineDiagram" />
+    <ref role="1XX52x" to="udwj:q$1bLT8dmJ" resolve="PlantUmlStatemachineDiagram" />
+    <node concept="3F2HdR" id="q$1bLTaPwL" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:q$1bLT8dmK" resolve="content" />
+      <node concept="2iRkQZ" id="q$1bLTaPwN" role="2czzBx" />
+      <node concept="4$FPG" id="q$1bLTdbs2" role="4_6I_">
+        <node concept="3clFbS" id="q$1bLTdbs3" role="2VODD2">
+          <node concept="3clFbF" id="q$1bLTdbun" role="3cqZAp">
+            <node concept="2pJPEk" id="q$1bLTdbul" role="3clFbG">
+              <node concept="2pJPED" id="q$1bLTdbum" role="2pJPEn">
+                <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1PE4EZ" id="q$1bLTaPwK" role="1PM95z">
+      <ref role="1PE7su" node="6CyxyHhVZuv" resolve="PlantUmlTextualEditorComponentBase" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="q$1bLTicfa">
+    <property role="3GE5qa" value="diagram.uml.statemachine.state" />
+    <ref role="1XX52x" to="udwj:q$1bLTicf8" resolve="PlantUmlStatemachineStartEndState" />
+    <node concept="3F0ifn" id="q$1bLTicfc" role="2wV5jI">
+      <property role="3F0ifm" value="[*]" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="q$1bLTpRCm">
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStateTransitionArrowEditorComponentBase" />
+    <ref role="1XX52x" to="udwj:q$1bLT8dnh" resolve="PlantUmlStatemachineTransitionBase" />
+    <node concept="3F0ifn" id="q$1bLTpRCo" role="2wV5jI">
+      <property role="3F0ifm" value="OVERRIDE" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="q$1bLTpRCs">
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStateTransitionEditorComponent" />
+    <ref role="1XX52x" to="udwj:q$1bLT8o9v" resolve="PlantUmlStatemachineTransition" />
+    <node concept="3EZMnI" id="q$1bLTpRCv" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLTpRCz" role="3EZMnx">
+        <property role="3F0ifm" value="-" />
+        <node concept="11LMrY" id="q$1bLTLedZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="q$1bLTPSrs" role="3EZMnx">
+        <ref role="PMmxG" node="q$1bLTNz0q" resolve="PlantUmlStatemachineTransitionColor" />
+      </node>
+      <node concept="3F0ifn" id="q$1bLTpRCS" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <node concept="OXEIz" id="q$1bLTGtVj" role="P5bDN">
+          <node concept="1Y$tRT" id="q$1bLTGtVk" role="OY2wv">
+            <ref role="1Y$EBa" node="q$1bLTE7o0" resolve="addColor" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="q$1bLTpRCy" role="2iSdaV" />
+    </node>
+    <node concept="1PE4EZ" id="q$1bLTpRCu" role="1PM95z">
+      <ref role="1PE7su" node="q$1bLTpRCm" resolve="PlantUmlStateTransitionArrowEditorComponentBase" />
+    </node>
+  </node>
+  <node concept="1Xs25n" id="q$1bLTE7o0">
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="addColor" />
+    <ref role="1XX52x" to="udwj:q$1bLT8dnh" resolve="PlantUmlStatemachineTransitionBase" />
+    <node concept="OXEIz" id="q$1bLTE7o1" role="1XvlXI">
+      <node concept="1oHujT" id="q$1bLTE7o2" role="OY2wv">
+        <property role="1oHujS" value="[" />
+        <node concept="1oIgkG" id="q$1bLTE7o3" role="1oHujR">
+          <node concept="3clFbS" id="q$1bLTE7o4" role="2VODD2">
+            <node concept="3clFbF" id="q$1bLTE7p8" role="3cqZAp">
+              <node concept="37vLTI" id="q$1bLTE9vl" role="3clFbG">
+                <node concept="Xl_RD" id="q$1bLTE9vB" role="37vLTx">
+                  <property role="Xl_RC" value="red" />
+                </node>
+                <node concept="2OqwBi" id="q$1bLTE7_c" role="37vLTJ">
+                  <node concept="3GMtW1" id="q$1bLTE7p7" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="q$1bLTE8cH" role="2OqNvi">
+                    <ref role="3TsBF5" to="udwj:q$1bLTZCXT" resolve="color" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1h_SRR" id="q$1bLTIQD2">
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="deleteColor" />
+    <ref role="1h_SK9" to="udwj:q$1bLT8dnh" resolve="PlantUmlStatemachineTransitionBase" />
+    <node concept="1hA7zw" id="q$1bLTIQD3" role="1h_SK8">
+      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
+      <node concept="1hAIg9" id="q$1bLTIQD4" role="1hA7z_">
+        <node concept="3clFbS" id="q$1bLTIQD5" role="2VODD2">
+          <node concept="3clFbF" id="q$1bLTIQE9" role="3cqZAp">
+            <node concept="37vLTI" id="q$1bLTIT38" role="3clFbG">
+              <node concept="10Nm6u" id="q$1bLTIT5Z" role="37vLTx" />
+              <node concept="2OqwBi" id="q$1bLTIQQd" role="37vLTJ">
+                <node concept="0IXxy" id="q$1bLTIQE8" role="2Oq$k0" />
+                <node concept="3TrcHB" id="q$1bLTIRtI" role="2OqNvi">
+                  <ref role="3TsBF5" to="udwj:q$1bLTZCXT" resolve="color" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="q$1bLTNz0q">
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStatemachineTransitionColor" />
+    <ref role="1XX52x" to="udwj:q$1bLT8dnh" resolve="PlantUmlStatemachineTransitionBase" />
+    <node concept="3EZMnI" id="q$1bLTE9xh" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLTE9xi" role="3EZMnx">
+        <property role="3F0ifm" value="[#" />
+        <ref role="1ERwB7" node="q$1bLTIQD2" resolve="deleteColor" />
+      </node>
+      <node concept="3F0A7n" id="q$1bLTE9xj" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLTZCXT" resolve="color" />
+      </node>
+      <node concept="3F0ifn" id="q$1bLTE9xk" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+        <ref role="1ERwB7" node="q$1bLTIQD2" resolve="deleteColor" />
+      </node>
+      <node concept="2iRfu4" id="q$1bLTE9xl" role="2iSdaV" />
+      <node concept="pkWqt" id="q$1bLTGtVl" role="pqm2j">
+        <node concept="3clFbS" id="q$1bLTGtVm" role="2VODD2">
+          <node concept="3clFbF" id="q$1bLTGu9D" role="3cqZAp">
+            <node concept="2OqwBi" id="q$1bLTGwtz" role="3clFbG">
+              <node concept="2OqwBi" id="q$1bLTGuAk" role="2Oq$k0">
+                <node concept="pncrf" id="q$1bLTGu9C" role="2Oq$k0" />
+                <node concept="3TrcHB" id="q$1bLTGuXI" role="2OqNvi">
+                  <ref role="3TsBF5" to="udwj:q$1bLTZCXT" resolve="color" />
+                </node>
+              </node>
+              <node concept="17RvpY" id="q$1bLTGxFX" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="q$1bLTScbC">
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStateLeftTransitionEditorComponent" />
+    <ref role="1XX52x" to="udwj:q$1bLTkDJG" resolve="PlantUmlStatemachineLeftTransition" />
+    <node concept="3EZMnI" id="q$1bLTScbD" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLTScbE" role="3EZMnx">
+        <property role="3F0ifm" value="-left" />
+        <node concept="11LMrY" id="q$1bLTScbF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="q$1bLTScbG" role="3EZMnx">
+        <ref role="PMmxG" node="q$1bLTNz0q" resolve="PlantUmlStatemachineTransitionColor" />
+      </node>
+      <node concept="3F0ifn" id="q$1bLTScbH" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+        <node concept="OXEIz" id="q$1bLTScbI" role="P5bDN">
+          <node concept="1Y$tRT" id="q$1bLTScbJ" role="OY2wv">
+            <ref role="1Y$EBa" node="q$1bLTE7o0" resolve="addColor" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="q$1bLTScbK" role="2iSdaV" />
+    </node>
+    <node concept="1PE4EZ" id="q$1bLTScbL" role="1PM95z">
+      <ref role="1PE7su" node="q$1bLTpRCm" resolve="PlantUmlStateTransitionArrowEditorComponentBase" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="q$1bLTWPbr">
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStateRightTransitionEditorComponent" />
+    <ref role="1XX52x" to="udwj:q$1bLTkDJH" resolve="PlantUmlStatemachineRightTransition" />
+    <node concept="3EZMnI" id="q$1bLTWPbs" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLTWPbt" role="3EZMnx">
+        <property role="3F0ifm" value="-right" />
+        <node concept="11LMrY" id="q$1bLTWPbu" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="q$1bLTWPbv" role="3EZMnx">
+        <ref role="PMmxG" node="q$1bLTNz0q" resolve="PlantUmlStatemachineTransitionColor" />
+      </node>
+      <node concept="3F0ifn" id="q$1bLTWPbw" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+        <node concept="OXEIz" id="q$1bLTWPbx" role="P5bDN">
+          <node concept="1Y$tRT" id="q$1bLTWPby" role="OY2wv">
+            <ref role="1Y$EBa" node="q$1bLTE7o0" resolve="addColor" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="q$1bLTWPbz" role="2iSdaV" />
+    </node>
+    <node concept="1PE4EZ" id="q$1bLTWPb$" role="1PM95z">
+      <ref role="1PE7su" node="q$1bLTpRCm" resolve="PlantUmlStateTransitionArrowEditorComponentBase" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="q$1bLTWPb_">
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStateUpTransitionEditorComponent" />
+    <ref role="1XX52x" to="udwj:q$1bLTkDJF" resolve="PlantUmlStatemachineUpTransition" />
+    <node concept="3EZMnI" id="q$1bLTWPbA" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLTWPbB" role="3EZMnx">
+        <property role="3F0ifm" value="-up" />
+        <node concept="11LMrY" id="q$1bLTWPbC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="q$1bLTWPbD" role="3EZMnx">
+        <ref role="PMmxG" node="q$1bLTNz0q" resolve="PlantUmlStatemachineTransitionColor" />
+      </node>
+      <node concept="3F0ifn" id="q$1bLTWPbE" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+        <node concept="OXEIz" id="q$1bLTWPbF" role="P5bDN">
+          <node concept="1Y$tRT" id="q$1bLTWPbG" role="OY2wv">
+            <ref role="1Y$EBa" node="q$1bLTE7o0" resolve="addColor" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="q$1bLTWPbH" role="2iSdaV" />
+    </node>
+    <node concept="1PE4EZ" id="q$1bLTWPbI" role="1PM95z">
+      <ref role="1PE7su" node="q$1bLTpRCm" resolve="PlantUmlStateTransitionArrowEditorComponentBase" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="q$1bLTWPbJ">
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStateDownTransitionEditorComponent" />
+    <ref role="1XX52x" to="udwj:q$1bLTkDJD" resolve="PlantUmlStatemachineDownTransition" />
+    <node concept="3EZMnI" id="q$1bLTWPbK" role="2wV5jI">
+      <node concept="3F0ifn" id="q$1bLTWPbL" role="3EZMnx">
+        <property role="3F0ifm" value="-down" />
+        <node concept="11LMrY" id="q$1bLTWPbM" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="q$1bLTWPbN" role="3EZMnx">
+        <ref role="PMmxG" node="q$1bLTNz0q" resolve="PlantUmlStatemachineTransitionColor" />
+      </node>
+      <node concept="3F0ifn" id="q$1bLTWPbO" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;" />
+        <node concept="OXEIz" id="q$1bLTWPbP" role="P5bDN">
+          <node concept="1Y$tRT" id="q$1bLTWPbQ" role="OY2wv">
+            <ref role="1Y$EBa" node="q$1bLTE7o0" resolve="addColor" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="q$1bLTWPbR" role="2iSdaV" />
+    </node>
+    <node concept="1PE4EZ" id="q$1bLTWPbS" role="1PM95z">
+      <ref role="1PE7su" node="q$1bLTpRCm" resolve="PlantUmlStateTransitionArrowEditorComponentBase" />
     </node>
   </node>
 </model>

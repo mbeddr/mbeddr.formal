@@ -203,6 +203,9 @@
     <node concept="PrWs8" id="q$1bLS6y1K" role="PzmwI">
       <ref role="PrY4T" node="q$1bLS32qf" resolve="IPlantUmlSequenceDiagramContent" />
     </node>
+    <node concept="PrWs8" id="q$1bLTd6Kv" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLT8dmM" resolve="IPlantUmlStatemachineDiagramContent" />
+    </node>
     <node concept="PrWs8" id="4A8SZs9KCzX" role="PzmwI">
       <ref role="PrY4T" node="4A8SZs9JTE0" resolve="IUniquePlantUmlCommand" />
     </node>
@@ -231,6 +234,9 @@
     </node>
     <node concept="PrWs8" id="q$1bLS6y1L" role="PzmwI">
       <ref role="PrY4T" node="q$1bLS32qf" resolve="IPlantUmlSequenceDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="q$1bLTd6Kw" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLT8dmM" resolve="IPlantUmlStatemachineDiagramContent" />
     </node>
     <node concept="PrWs8" id="4A8SZs9KCzY" role="PzmwI">
       <ref role="PrY4T" node="4A8SZs9JTE0" resolve="IUniquePlantUmlCommand" />
@@ -263,16 +269,14 @@
     <property role="TrG5h" value="ComponentDeclaration" />
     <property role="34LRSv" value="component" />
     <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
-    <node concept="1TJgyi" id="7ikA1GKvx_U" role="1TKVEl">
-      <property role="IQ2nx" value="8400506447497927034" />
-      <property role="TrG5h" value="color" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="PrWs8" id="1I7wo92W$3m" role="PzmwI">
       <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
     </node>
     <node concept="PrWs8" id="6CyxyHi9vX0" role="PzmwI">
       <ref role="PrY4T" node="6CyxyHi9vWZ" resolve="INamedElementWithLongDescription" />
+    </node>
+    <node concept="PrWs8" id="q$1bLU3N_7" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
     </node>
     <node concept="PrWs8" id="3acQo$0ylzs" role="PzmwI">
       <ref role="PrY4T" to="ak5:3acQo$0xi7O" resolve="IComponentDefinitionLike" />
@@ -448,16 +452,17 @@
       <property role="TrG5h" value="position" />
       <ref role="AX2Wp" node="1I7wo930$vU" resolve="ENotePosition" />
     </node>
-    <node concept="1TJgyi" id="q$1bLSScG1" role="1TKVEl">
-      <property role="IQ2nx" value="478512667936475905" />
-      <property role="TrG5h" value="color" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="PrWs8" id="1I7wo930$UC" role="PzmwI">
       <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
     </node>
     <node concept="PrWs8" id="q$1bLSLvJR" role="PzmwI">
       <ref role="PrY4T" node="q$1bLS32qf" resolve="IPlantUmlSequenceDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="q$1bLU762q" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLT8dmM" resolve="IPlantUmlStatemachineDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="q$1bLU3MMc" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
     </node>
   </node>
   <node concept="25R3W" id="1I7wo930$vU">
@@ -941,10 +946,8 @@
     <node concept="PrWs8" id="q$1bLS3dKq" role="PzmwI">
       <ref role="PrY4T" node="q$1bLS32qf" resolve="IPlantUmlSequenceDiagramContent" />
     </node>
-    <node concept="1TJgyi" id="q$1bLS3dKV" role="1TKVEl">
-      <property role="IQ2nx" value="478512667922586683" />
-      <property role="TrG5h" value="color" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="PrWs8" id="q$1bLU340V" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
     </node>
     <node concept="1TJgyi" id="q$1bLSiZ1y" role="1TKVEl">
       <property role="IQ2nx" value="478512667926720610" />
@@ -1376,10 +1379,8 @@
     <property role="TrG5h" value="PlantUmlSequenceDiagramActivate" />
     <property role="34LRSv" value="activate" />
     <ref role="1TJDcQ" node="q$1bLT1HoG" resolve="PlantUmlSequenceDiagramActivateDeactivateBase" />
-    <node concept="1TJgyi" id="q$1bLT1HoQ" role="1TKVEl">
-      <property role="IQ2nx" value="478512667938969142" />
-      <property role="TrG5h" value="color" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="PrWs8" id="q$1bLU33lG" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
     </node>
   </node>
   <node concept="1TIwiD" id="q$1bLT1Hpi">
@@ -1388,6 +1389,150 @@
     <property role="TrG5h" value="PlantUmlSequenceDiagramDeactivate" />
     <property role="34LRSv" value="deactivate" />
     <ref role="1TJDcQ" node="q$1bLT1HoG" resolve="PlantUmlSequenceDiagramActivateDeactivateBase" />
+  </node>
+  <node concept="1TIwiD" id="q$1bLT8dmJ">
+    <property role="EcuMT" value="478512667940672943" />
+    <property role="TrG5h" value="PlantUmlStatemachineDiagram" />
+    <property role="3GE5qa" value="diagram.uml.statemachine" />
+    <property role="34LRSv" value="statemachine diagram" />
+    <ref role="1TJDcQ" node="1I7wo92Vg_W" resolve="PlantUmlDiagramBase" />
+    <node concept="1TJgyj" id="q$1bLT8dmK" role="1TKVEi">
+      <property role="IQ2ns" value="478512667940672944" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="content" />
+      <ref role="20lvS9" node="q$1bLT8dmM" resolve="IPlantUmlStatemachineDiagramContent" />
+      <ref role="20ksaX" node="1I7wo92Vg_Y" />
+    </node>
+    <node concept="PrWs8" id="q$1bLT8dmL" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="q$1bLT8dmM">
+    <property role="EcuMT" value="478512667940672946" />
+    <property role="TrG5h" value="IPlantUmlStatemachineDiagramContent" />
+    <property role="3GE5qa" value="base" />
+    <node concept="PrWs8" id="q$1bLT8dmN" role="PrDN$">
+      <ref role="PrY4T" node="1I7wo92Vg_Z" resolve="IPlantUmlDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="q$1bLT8dmP">
+    <property role="EcuMT" value="478512667940672949" />
+    <property role="3GE5qa" value="diagram.uml.statemachine.state" />
+    <property role="TrG5h" value="PlantUmlStatemachineState" />
+    <property role="34LRSv" value="state" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="q$1bLT8dmQ" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLT8dmM" resolve="IPlantUmlStatemachineDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="q$1bLT8dmR" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="q$1bLT8dn3">
+    <property role="EcuMT" value="478512667940672963" />
+    <property role="3GE5qa" value="diagram.uml.statemachine.state" />
+    <property role="TrG5h" value="PlantUmlStatemachineStateRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="q$1bLT8dn6" role="1TKVEi">
+      <property role="IQ2ns" value="478512667940672966" />
+      <property role="20kJfa" value="state" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="q$1bLT8dmP" resolve="PlantUmlStatemachineState" />
+    </node>
+    <node concept="PrWs8" id="q$1bLT8gae" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLT8gad" resolve="IPlantUmlStatemachineTransitionEndpoint" />
+    </node>
+    <node concept="PrWs8" id="q$1bLU7aRI" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLSNL5J" resolve="IPlantUmlNoteReferenceObject" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="q$1bLT8dnh">
+    <property role="EcuMT" value="478512667940672977" />
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStatemachineTransitionBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="q$1bLT8dnk" role="1TKVEi">
+      <property role="IQ2ns" value="478512667940672980" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="source" />
+      <ref role="20lvS9" node="q$1bLT8gad" resolve="IPlantUmlStatemachineTransitionEndpoint" />
+    </node>
+    <node concept="1TJgyj" id="q$1bLT8dnl" role="1TKVEi">
+      <property role="IQ2ns" value="478512667940672981" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="target" />
+      <ref role="20lvS9" node="q$1bLT8gad" resolve="IPlantUmlStatemachineTransitionEndpoint" />
+    </node>
+    <node concept="PrWs8" id="q$1bLT8dni" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLT8dmM" resolve="IPlantUmlStatemachineDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="q$1bLTZF34" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="q$1bLT8gad">
+    <property role="EcuMT" value="478512667940684429" />
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="IPlantUmlStatemachineTransitionEndpoint" />
+    <node concept="PrWs8" id="q$1bLU7dnB" role="PrDN$">
+      <ref role="PrY4T" node="q$1bLSNL5J" resolve="IPlantUmlNoteReferenceObject" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="q$1bLT8o9v">
+    <property role="EcuMT" value="478512667940717151" />
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStatemachineTransition" />
+    <property role="34LRSv" value="-&gt;" />
+    <ref role="1TJDcQ" node="q$1bLT8dnh" resolve="PlantUmlStatemachineTransitionBase" />
+  </node>
+  <node concept="1TIwiD" id="q$1bLTicf8">
+    <property role="EcuMT" value="478512667943289800" />
+    <property role="3GE5qa" value="diagram.uml.statemachine.state" />
+    <property role="TrG5h" value="PlantUmlStatemachineStartEndState" />
+    <property role="34LRSv" value="[*]" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="q$1bLTicf9" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLT8gad" resolve="IPlantUmlStatemachineTransitionEndpoint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="q$1bLTkDJD">
+    <property role="EcuMT" value="478512667943934953" />
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStatemachineDownTransition" />
+    <property role="34LRSv" value="-down-&gt;" />
+    <ref role="1TJDcQ" node="q$1bLT8dnh" resolve="PlantUmlStatemachineTransitionBase" />
+  </node>
+  <node concept="1TIwiD" id="q$1bLTkDJF">
+    <property role="EcuMT" value="478512667943934955" />
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStatemachineUpTransition" />
+    <property role="34LRSv" value="-up-&gt;" />
+    <ref role="1TJDcQ" node="q$1bLT8dnh" resolve="PlantUmlStatemachineTransitionBase" />
+  </node>
+  <node concept="1TIwiD" id="q$1bLTkDJG">
+    <property role="EcuMT" value="478512667943934956" />
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStatemachineLeftTransition" />
+    <property role="34LRSv" value="-left-&gt;" />
+    <ref role="1TJDcQ" node="q$1bLT8dnh" resolve="PlantUmlStatemachineTransitionBase" />
+  </node>
+  <node concept="1TIwiD" id="q$1bLTkDJH">
+    <property role="EcuMT" value="478512667943934957" />
+    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
+    <property role="TrG5h" value="PlantUmlStatemachineRightTransition" />
+    <property role="34LRSv" value="-right-&gt;" />
+    <ref role="1TJDcQ" node="q$1bLT8dnh" resolve="PlantUmlStatemachineTransitionBase" />
+  </node>
+  <node concept="PlHQZ" id="q$1bLTZCXS">
+    <property role="EcuMT" value="478512667955203960" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="IPlantUmlEntityWithColor" />
+    <node concept="1TJgyi" id="q$1bLTZCXT" role="1TKVEl">
+      <property role="IQ2nx" value="478512667955203961" />
+      <property role="TrG5h" value="color" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 
