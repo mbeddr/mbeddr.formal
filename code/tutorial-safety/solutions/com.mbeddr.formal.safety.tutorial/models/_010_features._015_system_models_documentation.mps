@@ -196,7 +196,7 @@
     <property role="WqcPg" value="System Documentation" />
     <node concept="1_07dB" id="q$1bLUbVdA" role="30GjaH" />
     <node concept="1_0j5j" id="q$1bLUbVd_" role="30Gjbj">
-      <ref role="1_0j5g" node="q$1bLUbdb3" resolve="Document" />
+      <ref role="1_0j5g" node="q$1bLUbdb3" resolve="System_Documentation_Demo" />
     </node>
     <node concept="2SbEIf" id="q$1bLUbVdC" role="30Gjbg">
       <property role="2SbEId" value="img" />
