@@ -17874,6 +17874,9 @@
         </node>
         <node concept="3ygNvl" id="5qXR41W9bR5" role="39821P">
           <ref role="3ygNvj" to="al5i:3AVJcIMlF9x" />
+          <node concept="3LWZYq" id="4xyy3JSZ49i" role="1juEy9">
+            <property role="3LWZYl" value="**/com.mbeddr.mpsutil.intentions/**" />
+          </node>
         </node>
         <node concept="3_I8Xc" id="3SfdbygKjSB" role="39821P">
           <ref role="3_I8Xa" to="ffeo:1jjxZP6JHO_" resolve="mps-console" />
