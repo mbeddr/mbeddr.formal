@@ -227,7 +227,6 @@
         <child id="1423104411234567454" name="repo" index="ukAjM" />
         <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
       </concept>
-      <concept id="8974276187400348179" name="jetbrains.mps.lang.access.structure.ExecuteEDTCommandStatement" flags="nn" index="1QHqEQ" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -406,42 +405,6 @@
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
     </language>
   </registry>
-  <node concept="2S6QgY" id="696iakq7lj">
-    <property role="TrG5h" value="takeScreenshotAsPNG" />
-    <ref role="2ZfgGC" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
-    <node concept="2S6ZIM" id="696iakq7lk" role="2ZfVej">
-      <node concept="3clFbS" id="696iakq7ll" role="2VODD2">
-        <node concept="3clFbF" id="696iakqam3" role="3cqZAp">
-          <node concept="Xl_RD" id="696iakqam2" role="3clFbG">
-            <property role="Xl_RC" value="Take Screenshot to PNG" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="696iakq7lm" role="2ZfgGD">
-      <node concept="3clFbS" id="696iakq7ln" role="2VODD2">
-        <node concept="1QHqEQ" id="71GfFl7hLPm" role="3cqZAp">
-          <node concept="1QHqEC" id="71GfFl7hLPo" role="1QHqEI">
-            <node concept="3clFbS" id="71GfFl7hLPq" role="1bW5cS">
-              <node concept="3clFbF" id="696iakqHGD" role="3cqZAp">
-                <node concept="2YIFZM" id="2u7UHDC8hJ2" role="3clFbG">
-                  <ref role="37wK5l" to="mryx:696iakqcN1" resolve="takeScreenshotAndSaveIntoFile" />
-                  <ref role="1Pybhc" to="mryx:1yFmGPnLcL9" resolve="PNGCellEditorScreenshooter" />
-                  <node concept="2Sf5sV" id="696iakqJQL" role="37wK5m" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="71GfFl7hMbX" role="ukAjM">
-            <node concept="1XNTG" id="71GfFl7hMS9" role="2Oq$k0" />
-            <node concept="liA8E" id="71GfFl7hMmZ" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="2S6QgY" id="6fCPE$QLID4">
     <property role="TrG5h" value="extractAwayEntity" />
     <ref role="2ZfgGC" to="py52:3$Xa1eBcsPD" resolve="ICanBeAwayGoalStructureElement" />
@@ -1924,42 +1887,6 @@
     <node concept="2tJIrI" id="4WMzu8sc7LL" role="jymVt" />
     <node concept="2tJIrI" id="4WMzu8sc7NE" role="jymVt" />
     <node concept="3Tm1VV" id="4WMzu8sc7NF" role="1B3o_S" />
-  </node>
-  <node concept="2S6QgY" id="5FTX57fM9Rd">
-    <property role="TrG5h" value="takeScreenshotAsSVN" />
-    <ref role="2ZfgGC" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
-    <node concept="2S6ZIM" id="5FTX57fM9Re" role="2ZfVej">
-      <node concept="3clFbS" id="5FTX57fM9Rf" role="2VODD2">
-        <node concept="3clFbF" id="5FTX57fM9Rg" role="3cqZAp">
-          <node concept="Xl_RD" id="5FTX57fM9Rh" role="3clFbG">
-            <property role="Xl_RC" value="Take Screenshot to SVG" />
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2Sbjvc" id="5FTX57fM9Ri" role="2ZfgGD">
-      <node concept="3clFbS" id="5FTX57fM9Rj" role="2VODD2">
-        <node concept="1QHqEQ" id="5FTX57fM9Rk" role="3cqZAp">
-          <node concept="1QHqEC" id="5FTX57fM9Rl" role="1QHqEI">
-            <node concept="3clFbS" id="5FTX57fM9Rm" role="1bW5cS">
-              <node concept="3clFbF" id="5FTX57fM9Rn" role="3cqZAp">
-                <node concept="2YIFZM" id="2u7UHDC8hJa" role="3clFbG">
-                  <ref role="37wK5l" to="mryx:xCk$O6ov8n" resolve="takeScreenshotAndSaveIntoFile" />
-                  <ref role="1Pybhc" to="mryx:5FTX57fKCMo" resolve="SVGCellEditorScreehshooter" />
-                  <node concept="2Sf5sV" id="5FTX57fMa3D" role="37wK5m" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2OqwBi" id="5FTX57fM9Rq" role="ukAjM">
-            <node concept="1XNTG" id="5FTX57fM9Rr" role="2Oq$k0" />
-            <node concept="liA8E" id="5FTX57fM9Rs" role="2OqNvi">
-              <ref role="37wK5l" to="cj4x:~EditorContext.getRepository()" resolve="getRepository" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
   </node>
   <node concept="2S6QgY" id="47PB7GsHJvh">
     <property role="TrG5h" value="createCollapsibleGSNDiagram" />

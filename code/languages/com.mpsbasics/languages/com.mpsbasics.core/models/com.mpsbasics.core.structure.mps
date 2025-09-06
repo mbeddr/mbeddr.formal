@@ -22,5 +22,9 @@
     <property role="EcuMT" value="3917661352305473219" />
     <property role="TrG5h" value="IProvideBasicContextMenus" />
   </node>
+  <node concept="PlHQZ" id="vYco6EE9pR">
+    <property role="EcuMT" value="575952235333719671" />
+    <property role="TrG5h" value="IProvideScreenshots" />
+  </node>
 </model>
 
