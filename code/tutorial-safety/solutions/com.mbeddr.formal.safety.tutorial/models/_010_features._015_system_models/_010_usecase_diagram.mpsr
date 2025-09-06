@@ -49,7 +49,7 @@
     <node concept="VLBZa" id="75npNYZyqAA" role="1pqCw0">
       <property role="145Srp" value="100" />
       <property role="TrG5h" value="Vending Maching" />
-      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <property role="1ptBXO" value="1I7wo92WvVP/DIAGRAM" />
       <node concept="1pqCwu" id="75npNYZyqAB" role="1pqCzW" />
       <node concept="S3rFx" id="75npNYZyqAF" role="1pqCzW">
         <property role="TrG5h" value="User" />
