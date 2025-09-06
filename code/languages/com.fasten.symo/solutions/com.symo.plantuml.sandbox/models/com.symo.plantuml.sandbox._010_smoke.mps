@@ -74,7 +74,7 @@
       <concept id="1983696557349285456" name="com.symo.plantuml.structure.InterfaceRef" flags="ng" index="1pvUZi">
         <reference id="1983696557349285457" name="interf" index="1pvUZj" />
       </concept>
-      <concept id="478512667959113916" name="com.symo.plantuml.structure.PlantUmlStatemachineNoteOnLink" flags="ng" index="1WBzK0" />
+      <concept id="478512667959113916" name="com.symo.plantuml.structure.NoteOnLink" flags="ng" index="1WBzK0" />
       <concept id="478512667932278172" name="com.symo.plantuml.structure.SequenceDiagramElse" flags="ng" index="1Y1b$w" />
       <concept id="478512667932278169" name="com.symo.plantuml.structure.PlantUmlSequenceDiagramGroupBase" flags="ng" index="1Y1b$_">
         <child id="478512667932278170" name="content" index="1Y1b$A" />
@@ -350,7 +350,7 @@
     <node concept="VLBZa" id="6CyxyHhV4lS" role="1pqCw0">
       <property role="TrG5h" value="usecase_diagram_01" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
-      <property role="145Srp" value="100" />
+      <property role="145Srp" value="80" />
       <node concept="1pqCwu" id="6CyxyHhV4lT" role="1pqCzW" />
       <node concept="14T4ax" id="6BNnCp_okdy" role="1pqCzW">
         <node concept="cE4Tv" id="6BNnCp_okdz" role="14T4bg">
@@ -500,7 +500,7 @@
     <node concept="VLBZa" id="6BNnCp_puvq" role="1pqCw0">
       <property role="TrG5h" value="usecase_diagram_02" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
-      <property role="145Srp" value="100" />
+      <property role="145Srp" value="80" />
       <node concept="1pqCwu" id="6BNnCp_puvs" role="1pqCzW" />
       <node concept="14T4ax" id="6BNnCp_puv_" role="1pqCzW">
         <node concept="cE4Tv" id="6BNnCp_puvA" role="14T4bg">
@@ -555,7 +555,7 @@
     <node concept="VLBZa" id="6BNnCp_puvS" role="1pqCw0">
       <property role="TrG5h" value="usecase_diagram_03" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
-      <property role="145Srp" value="100" />
+      <property role="145Srp" value="80" />
       <node concept="1pqCwu" id="6BNnCp_puvT" role="1pqCzW" />
       <node concept="14T4ax" id="6BNnCp_puw8" role="1pqCzW">
         <node concept="cE4Tv" id="6BNnCp_puw9" role="14T4bg">
@@ -699,7 +699,7 @@
   <node concept="1pqNnw" id="q$1bLS3dLr">
     <property role="TrG5h" value="_030_sequence_diagram_simple" />
     <node concept="1YE28Q" id="q$1bLS4IZg" role="1pqCw0">
-      <property role="145Srp" value="90" />
+      <property role="145Srp" value="80" />
       <property role="TrG5h" value="simple sequence diagram" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="q$1bLS6_rd" role="1pqCzW" />
@@ -903,6 +903,7 @@
       <node concept="1pqCE1" id="q$1bLS6_rg" role="1pqCzW" />
     </node>
     <node concept="c$xRF" id="q$1bLSxR_z" role="1pqCw0" />
+    <node concept="c$xRF" id="q$1bLV5E$i" role="1pqCw0" />
   </node>
   <node concept="1pqNnw" id="q$1bLSxRAM">
     <property role="TrG5h" value="_031_sequence_diagram_message_types" />
