@@ -42,9 +42,9 @@
     <property role="TrG5h" value="_040_dfmea" />
     <property role="3GE5qa" value="_00_dfmea" />
     <node concept="1PLMAg" id="4eD_5l3mJzR" role="1POhhj">
-      <ref role="1POnuR" node="42QGQFVn3Fg" resolve="SmartFactoryPackagingRobot" />
+      <ref role="1POnuR" node="41rggeh7FLJ" resolve="smart_factory_cell" />
       <node concept="1PLGxJ" id="4eD_5l3mJzY" role="1PLElB">
-        <ref role="1PLGwE" node="42QGQFVn3FJ" resolve="camera" />
+        <ref role="1PLGwE" node="41rggeh7FLN" resolve="HDCamera" />
         <node concept="1PLKG7" id="4eD_5l3mJ$2" role="1PLCo$">
           <ref role="1jQAtN" node="4eD_5l3mJwS" resolve="bad pixel" />
           <node concept="1PNyZM" id="4eD_5l3mJ$4" role="1PLCoy">
@@ -62,7 +62,7 @@
         </node>
       </node>
       <node concept="1PLGxJ" id="4eD_5l3mJ$l" role="1PLElB">
-        <ref role="1PLGwE" node="42QGQFVn3FY" resolve="objects_detector" />
+        <ref role="1PLGwE" node="41rggeh7FLT" resolve="ObjectsDetector" />
         <node concept="1PLKG7" id="4eD_5l3mJ$v" role="1PLCo$">
           <ref role="1jQAtN" node="4eD_5l3mJy9" resolve="erroneous algorithm" />
           <node concept="1PNyZM" id="4eD_5l3mJ$x" role="1PLCoy">
@@ -77,7 +77,7 @@
         </node>
       </node>
       <node concept="1PLGxJ" id="4eD_5l3mJ_0" role="1PLElB">
-        <ref role="1PLGwE" node="4eD_5l3mJsy" resolve="effector" />
+        <ref role="1PLGwE" node="41rggeh7FLQ" resolve="Manipulator" />
         <node concept="1PLKG7" id="4eD_5l3mJ_f" role="1PLCo$">
           <ref role="1jQAtN" node="4eD_5l3mJ_v" resolve="force too high" />
           <node concept="1PNyZM" id="4eD_5l3mJAp" role="1PLCoy">
