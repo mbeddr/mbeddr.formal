@@ -427,6 +427,31 @@
       <property role="TrG5h" value="ARROW_DOWN" />
       <property role="1L1pqM" value="-down-&gt;" />
     </node>
+    <node concept="25R33" id="4xyy3JSZwvr" role="25R1y">
+      <property role="3tVfz5" value="5215881109610301403" />
+      <property role="TrG5h" value="ARROW_TO_INTERFACE" />
+      <property role="1L1pqM" value="-(" />
+    </node>
+    <node concept="25R33" id="4xyy3JSZCHZ" role="25R1y">
+      <property role="3tVfz5" value="5215881109610335103" />
+      <property role="TrG5h" value="ARROW_TO_INTERFACE_RIGHT" />
+      <property role="1L1pqM" value="-right-(" />
+    </node>
+    <node concept="25R33" id="4xyy3JSZCI0" role="25R1y">
+      <property role="3tVfz5" value="5215881109610335104" />
+      <property role="TrG5h" value="ARROW_TO_INTERFACE_LEFT" />
+      <property role="1L1pqM" value="-left-(" />
+    </node>
+    <node concept="25R33" id="4xyy3JSZCI1" role="25R1y">
+      <property role="3tVfz5" value="5215881109610335105" />
+      <property role="TrG5h" value="ARROW_TO_INTERFACE_UP" />
+      <property role="1L1pqM" value="-up-(" />
+    </node>
+    <node concept="25R33" id="4xyy3JSZCI2" role="25R1y">
+      <property role="3tVfz5" value="5215881109610335106" />
+      <property role="TrG5h" value="ARROW_TO_INTERFACE_DOWN" />
+      <property role="1L1pqM" value="-down-(" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1I7wo930$oJ">
     <property role="EcuMT" value="1983696557349946927" />

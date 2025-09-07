@@ -50,7 +50,7 @@
         <property role="TrG5h" value="misplaced object" />
         <node concept="19SGf9" id="4eD_5l3mJzo" role="2VUvr4">
           <node concept="19SUe$" id="4eD_5l3mJzp" role="19SJt6">
-            <property role="19SUeA" value="the object is miplaced in a wrong package" />
+            <property role="19SUeA" value="the object is misplaced in a wrong package" />
           </node>
         </node>
       </node>

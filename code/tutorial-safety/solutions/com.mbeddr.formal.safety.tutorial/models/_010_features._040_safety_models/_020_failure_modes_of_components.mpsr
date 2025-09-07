@@ -40,7 +40,7 @@
     <property role="TrG5h" value="_020_failure_modes_of_components" />
     <property role="3GE5qa" value="_00_dfmea" />
     <node concept="2VUHfc" id="4eD_5l3mJwQ" role="1POhhj">
-      <ref role="2VUHf6" node="42QGQFVn3Bd" resolve="HDCamera" />
+      <ref role="2VUHf6" node="41rggeh7FLN" resolve="HDCamera" />
       <node concept="2VUHfq" id="4eD_5l3mJwS" role="2VUBrq">
         <property role="TrG5h" value="bad pixel" />
         <node concept="19SGf9" id="4eD_5l3mJwU" role="2VUHfi">
@@ -66,7 +66,7 @@
     </node>
     <node concept="2VURXa" id="4eD_5l3mJxI" role="1POhhj" />
     <node concept="2VUHfc" id="4eD_5l3mJy7" role="1POhhj">
-      <ref role="2VUHf6" node="42QGQFVn3Dm" resolve="ObjectDetection" />
+      <ref role="2VUHf6" node="41rggeh7FLT" resolve="ObjectsDetector" />
       <node concept="2VUHfq" id="4eD_5l3mJy9" role="2VUBrq">
         <property role="TrG5h" value="erroneous algorithm" />
         <node concept="19SGf9" id="4eD_5l3mJyb" role="2VUHfi">
@@ -82,12 +82,12 @@
     </node>
     <node concept="2VURXa" id="4eD_5l3mJ_Y" role="1POhhj" />
     <node concept="2VUHfc" id="4eD_5l3mJ_u" role="1POhhj">
-      <ref role="2VUHf6" node="4eD_5l3mJo_" resolve="Manipulator" />
+      <ref role="2VUHf6" node="41rggeh7FLQ" resolve="Manipulator" />
       <node concept="2VUHfq" id="4eD_5l3mJ_v" role="2VUBrq">
         <property role="TrG5h" value="force too high" />
         <node concept="19SGf9" id="4eD_5l3mJ_w" role="2VUHfi">
           <node concept="19SUe$" id="4eD_5l3mJ_x" role="19SJt6">
-            <property role="19SUeA" value="the manipulator grabs teh object with a too high force" />
+            <property role="19SUeA" value="the manipulator grabs the object with a too high force" />
           </node>
         </node>
       </node>

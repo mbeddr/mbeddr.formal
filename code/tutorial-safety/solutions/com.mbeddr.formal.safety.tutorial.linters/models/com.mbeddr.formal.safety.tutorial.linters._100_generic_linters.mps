@@ -41,7 +41,6 @@
         <child id="7223240310078271420" name="violations" index="3dgnlQ" />
       </concept>
       <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
-        <property id="49142249442884896" name="resultLocation" index="2hbMIX" />
         <property id="7223240310078271417" name="result" index="3dgnlN" />
         <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
         <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
@@ -133,34 +132,10 @@
         <property role="3cmrfH" value="3" />
       </node>
     </node>
-    <node concept="3dgnlM" id="33N0Tlwr_Ny" role="3dgnlQ">
-      <property role="3dgnlN" value="Cyclic dependency with length 2 found: com.mbeddr.formal.safety.argument.runtime [language], com.mbeddr.formal.safety.argument.runtime.pluginSolution [solution]" />
-      <property role="3qxsY3" value="3527166873264066275" />
-      <property role="3qxsSb" value="r:54059a0b-024a-42ab-b8cd-2453fed4f7ff(com.fasten.meta.linters.module_level)" />
-    </node>
   </node>
   <node concept="2wR3oc" id="33N0TlwrBrE">
-    <property role="3dJkfZ" value="true" />
     <property role="3GE5qa" value="module_level" />
     <ref role="2wR3oD" to="wpu7:30a3800NEqs" resolve="module_name_contains_only_ascii_characters" />
-    <node concept="3dgnlM" id="59o88jXkEwu" role="3dgnlQ">
-      <property role="3dgnlN" value="Module name contains invalid characters. Allowed characters are: '[a-zA-Z0-9_.-]+'" />
-      <property role="3qxsY3" value="3527166873264092906" />
-      <property role="3qxsSb" value="r:54059a0b-024a-42ab-b8cd-2453fed4f7ff(com.fasten.meta.linters.module_level)" />
-      <property role="2hbMIX" value="0940b90d-aea1-4339-be5b-c8084d7ead33(com.fasten.safety.ft.xfta_gen#01)" />
-    </node>
-    <node concept="3dgnlM" id="59o88jXkEwv" role="3dgnlQ">
-      <property role="3dgnlN" value="Module name contains invalid characters. Allowed characters are: '[a-zA-Z0-9_.-]+'" />
-      <property role="3qxsY3" value="3527166873264092906" />
-      <property role="3qxsSb" value="r:54059a0b-024a-42ab-b8cd-2453fed4f7ff(com.fasten.meta.linters.module_level)" />
-      <property role="2hbMIX" value="0cd4968b-4ddc-4835-aa0f-2a9e87b43fae(com.mbeddr.formal.safety.gsn.odd#01)" />
-    </node>
-    <node concept="3dgnlM" id="59o88jXkEww" role="3dgnlQ">
-      <property role="3dgnlN" value="Module name contains invalid characters. Allowed characters are: '[a-zA-Z0-9_.-]+'" />
-      <property role="3qxsY3" value="3527166873264092906" />
-      <property role="3qxsSb" value="r:54059a0b-024a-42ab-b8cd-2453fed4f7ff(com.fasten.meta.linters.module_level)" />
-      <property role="2hbMIX" value="31b0df10-2d1f-4744-8de7-461666d7c2d1(com.mbeddr.formal.safety.gsn.web#01)" />
-    </node>
   </node>
   <node concept="2wR3oc" id="33N0TlwrBHv">
     <property role="3GE5qa" value="module_level" />
@@ -287,15 +262,8 @@
     </node>
   </node>
   <node concept="2wR3oc" id="6wRVFFwyqlK">
-    <property role="3dJkfZ" value="true" />
     <property role="3GE5qa" value="module_level" />
     <ref role="2wR3oD" to="wpu7:7hx0FZiTgg2" resolve="not_used_module_dependencies" />
-    <node concept="3dgnlM" id="1a4oUCpPFZh" role="3dgnlQ">
-      <property role="3dgnlN" value="The module has unused dependencies: com.mbeddr.formal.nusmv.cbd#01" />
-      <property role="3qxsY3" value="7509733390062036336" />
-      <property role="3qxsSb" value="r:54059a0b-024a-42ab-b8cd-2453fed4f7ff(com.fasten.meta.linters.module_level)" />
-      <property role="2hbMIX" value="0cd4968b-4ddc-4835-aa0f-2a9e87b43fae(com.mbeddr.formal.safety.gsn.odd#01)" />
-    </node>
   </node>
   <node concept="2wR3oc" id="1Z2RqhPJgB6">
     <ref role="2wR3oD" to="54p5:652KpqR3Kk5" resolve="skipped_evaluation_linters" />

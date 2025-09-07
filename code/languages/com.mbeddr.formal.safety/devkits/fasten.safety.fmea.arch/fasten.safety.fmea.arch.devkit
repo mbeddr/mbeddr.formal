@@ -4,6 +4,7 @@
   <exported-language name="521724dc-29ef-4d5a-9c15-25f6b680b809(com.fasten.safety.hiphops.arch)" />
   <extendedDevKits>
     <extendedDevKit>bf74abbc-7521-4990-984c-b43ecaf32ba1(fasten.safety.fmea)</extendedDevKit>
+    <extendedDevKit>114acb95-50b2-4e9b-81c6-e0c665740eae(fasten.symo.plantuml)</extendedDevKit>
   </extendedDevKits>
 </dev-kit>
 
