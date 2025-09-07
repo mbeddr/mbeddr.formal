@@ -1424,5 +1424,70 @@
       <node concept="1pqCE1" id="q$1bLTftue" role="1pqCzW" />
     </node>
   </node>
+  <node concept="1pqNnw" id="4xyy3JSZCH6">
+    <property role="TrG5h" value="_010_component_diagram_sender_receiver" />
+    <node concept="1pqCzZ" id="4xyy3JSZCH7" role="1pqCw0">
+      <property role="TrG5h" value="components_diagram_sender_receiver" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <property role="145Srp" value="100" />
+      <node concept="1pqCwu" id="4xyy3JSZCH8" role="1pqCzW" />
+      <node concept="1pt6Ps" id="4xyy3JSZCHd" role="1pqCzW">
+        <property role="TrG5h" value="Payload" />
+      </node>
+      <node concept="1pts5n" id="4xyy3JSZCHe" role="1pqCzW">
+        <property role="TrG5h" value="Sender" />
+        <property role="1ZmCJ5" value="red" />
+      </node>
+      <node concept="1pts5n" id="4xyy3JSZCHH" role="1pqCzW">
+        <property role="TrG5h" value="Receiver" />
+        <property role="1ZmCJ5" value="blue" />
+      </node>
+      <node concept="1ps3o1" id="4xyy3JSZCHM" role="1pqCzW">
+        <property role="1pv0MD" value="4xyy3JSZCHZ/ARROW_TO_INTERFACE_RIGHT" />
+        <property role="1pvUZN" value="payload_send" />
+        <node concept="1pvSZV" id="4xyy3JSZCHO" role="1pvUZv">
+          <ref role="1pvSZS" node="4xyy3JSZCHe" resolve="Sender" />
+        </node>
+        <node concept="1pvUZi" id="4xyy3JSZCHP" role="1pvUZs">
+          <ref role="1pvUZj" node="4xyy3JSZCHd" resolve="Int" />
+        </node>
+      </node>
+      <node concept="1ps3o1" id="4xyy3JSZCHl" role="1pqCzW">
+        <property role="1pvUZN" value="payload_receive" />
+        <property role="1pv0MD" value="7ikA1GKscSF/STRAIGHT_RIGHT" />
+        <node concept="1pvUZi" id="4xyy3JSZCHm" role="1pvUZv">
+          <ref role="1pvUZj" node="4xyy3JSZCHd" resolve="Int" />
+        </node>
+        <node concept="1pvSZV" id="4xyy3JSZCHn" role="1pvUZs">
+          <ref role="1pvSZS" node="4xyy3JSZCHH" resolve="Receiver" />
+        </node>
+      </node>
+      <node concept="c$xRF" id="4xyy3JSZCHQ" role="1pqCzW" />
+      <node concept="1pt6Ps" id="4xyy3JSZCHS" role="1pqCzW">
+        <property role="TrG5h" value="Ack" />
+      </node>
+      <node concept="1ps3o1" id="4xyy3JSZCHV" role="1pqCzW">
+        <property role="1pv0MD" value="7ikA1GKscSF/STRAIGHT_RIGHT" />
+        <property role="1pvUZN" value="ack_receive" />
+        <node concept="1pvSZV" id="4xyy3JSZCHX" role="1pvUZv">
+          <ref role="1pvSZS" node="4xyy3JSZCHe" resolve="Sender" />
+        </node>
+        <node concept="1pvUZi" id="4xyy3JSZCHY" role="1pvUZs">
+          <ref role="1pvUZj" node="4xyy3JSZCHS" resolve="Ack" />
+        </node>
+      </node>
+      <node concept="1ps3o1" id="4xyy3JSZPJl" role="1pqCzW">
+        <property role="1pv0MD" value="4xyy3JSZCI1/ARROW_TO_INTERFACE_UP" />
+        <property role="1pvUZN" value="ack_send" />
+        <node concept="1pvSZV" id="4xyy3JSZPJn" role="1pvUZv">
+          <ref role="1pvSZS" node="4xyy3JSZCHH" resolve="Receiver" />
+        </node>
+        <node concept="1pvUZi" id="4xyy3JSZPJo" role="1pvUZs">
+          <ref role="1pvUZj" node="4xyy3JSZCHS" resolve="Ack" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="4xyy3JSZCHF" role="1pqCzW" />
+    </node>
+  </node>
 </model>
 
