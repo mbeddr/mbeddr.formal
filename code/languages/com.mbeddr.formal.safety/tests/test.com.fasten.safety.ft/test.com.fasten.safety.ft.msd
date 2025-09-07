@@ -74,6 +74,7 @@
     <language slang="l:fde86f49-830f-414f-9c22-2a9e300eaba6:com.mpsbasics.jira" version="0" />
     <language slang="l:ece26728-2885-4b26-9f61-67d2821fc361:com.mpsbasics.pdfexporter" version="0" />
     <language slang="l:e4b230e7-8e1a-4a05-8148-8713530572c1:com.mpsbasics.words.generic" version="0" />
+    <language slang="l:6f31bc85-cbcc-4dcf-ada4-35da43e6832c:com.symo.plantuml" version="0" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
