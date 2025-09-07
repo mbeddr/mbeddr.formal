@@ -16283,6 +16283,9 @@
         <node concept="3LEDTy" id="7jpsyZvuZNJ" role="3LEDUa">
           <ref role="3LEDTV" node="2vOK$QwpFPE" resolve="com.fasten.safety.hiphops.arch" />
         </node>
+        <node concept="3LEz8M" id="4xyy3JSZQTC" role="3LEz9a">
+          <ref role="3LEz8N" node="4lJSf3Lh3in" resolve="fasten.symo.plantuml" />
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="4eD_5l3mRuX" role="3989C9">
