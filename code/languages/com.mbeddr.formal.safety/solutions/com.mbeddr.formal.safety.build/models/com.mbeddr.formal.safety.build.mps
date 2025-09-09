@@ -21421,6 +21421,27 @@
             </node>
           </node>
         </node>
+        <node concept="398223" id="2FyNhQGdl6r" role="39821P">
+          <node concept="3_J27D" id="2FyNhQGdl6s" role="Nbhlr">
+            <node concept="3Mxwew" id="2FyNhQGdl6t" role="3MwsjC">
+              <property role="3MwjfP" value="jbr" />
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="2FyNhQGdl6u" role="39821P">
+            <node concept="398BVA" id="2FyNhQGdl6v" role="2HvfZ0">
+              <ref role="398BVh" node="nwXZr_8le_" resolve="mbeddr.formal.home" />
+              <node concept="2Ry0Ak" id="2FyNhQGdl6w" role="iGT6I">
+                <property role="2Ry0Am" value="build" />
+                <node concept="2Ry0Ak" id="2FyNhQGdl6x" role="2Ry0An">
+                  <property role="2Ry0Am" value="jbrDownload" />
+                  <node concept="2Ry0Ak" id="2FyNhQGdl6y" role="2Ry0An">
+                    <property role="2Ry0Am" value="jbr_windows" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="398223" id="nwXZr$UP$N" role="39821P">
           <node concept="3_J27D" id="nwXZr$UP$O" role="Nbhlr">
             <node concept="3Mxwew" id="nwXZr$UP$P" role="3MwsjC">
