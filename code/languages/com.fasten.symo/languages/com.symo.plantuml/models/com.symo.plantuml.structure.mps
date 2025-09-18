@@ -284,6 +284,13 @@
     <node concept="PrWs8" id="3acQo$0yS9d" role="PzmwI">
       <ref role="PrY4T" to="ak5:3acQo$0xi7V" resolve="IComponentInstanceLike" />
     </node>
+    <node concept="1TJgyj" id="40kNClye_5t" role="1TKVEi">
+      <property role="IQ2ns" value="4617542590235562333" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="substructure" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1I7wo92WYNu">
     <property role="EcuMT" value="1983696557349006558" />
@@ -1568,6 +1575,70 @@
     <property role="TrG5h" value="NoteOnLink" />
     <property role="34LRSv" value="note on link" />
     <ref role="1TJDcQ" node="1I7wo930$oJ" resolve="Note" />
+  </node>
+  <node concept="1TIwiD" id="2qHrqKS_0_C">
+    <property role="EcuMT" value="2787004330863233384" />
+    <property role="3GE5qa" value="base.generic_content" />
+    <property role="TrG5h" value="PlantUmlPlainTextFragment" />
+    <property role="34LRSv" value="#" />
+    <property role="R4oN_" value="plain text fragment" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2qHrqKS_0_E" role="PzmwI">
+      <ref role="PrY4T" node="6BNnCp_okdG" resolve="IPlantUmlRootContent" />
+    </node>
+    <node concept="PrWs8" id="2qHrqKS_0_F" role="PzmwI">
+      <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="2qHrqKS_0_G" role="PzmwI">
+      <ref role="PrY4T" node="6CyxyHhTfB$" resolve="IPlantUmlUsecaseDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="2qHrqKS_0_H" role="PzmwI">
+      <ref role="PrY4T" node="1_aHBvadUkr" resolve="IPlantUmlMindmapDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="2qHrqKS_0_I" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLS32qf" resolve="IPlantUmlSequenceDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="2qHrqKSD7r4" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLT8dmM" resolve="IPlantUmlStatemachineDiagramContent" />
+    </node>
+    <node concept="1TJgyj" id="2qHrqKS_0_J" role="1TKVEi">
+      <property role="IQ2ns" value="2787004330863233391" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="40kNClyHR47">
+    <property role="EcuMT" value="4617542590243762439" />
+    <property role="3GE5qa" value="diagram.uml.component" />
+    <property role="TrG5h" value="PortDeclaration" />
+    <property role="34LRSv" value="port" />
+    <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
+    <node concept="PrWs8" id="40kNClyHR48" role="PzmwI">
+      <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="40kNClyHR49" role="PzmwI">
+      <ref role="PrY4T" node="6CyxyHi9vWZ" resolve="INamedElementWithLongDescription" />
+    </node>
+    <node concept="PrWs8" id="40kNClyHR4a" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="40kNClyKOBX">
+    <property role="EcuMT" value="4617542590244538877" />
+    <property role="TrG5h" value="PortRef" />
+    <property role="3GE5qa" value="diagram.uml.component" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="40kNClyKOBY" role="PzmwI">
+      <ref role="PrY4T" node="1I7wo92Y2Ts" resolve="IChannelEndpoint" />
+    </node>
+    <node concept="1TJgyj" id="40kNClyKOBZ" role="1TKVEi">
+      <property role="IQ2ns" value="4617542590244538879" />
+      <property role="20kJfa" value="port" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="40kNClyHR47" resolve="PortDeclaration" />
+    </node>
   </node>
 </model>
 

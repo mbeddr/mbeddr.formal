@@ -48,9 +48,20 @@
         <child id="2522969319638093993" name="descriptionFunction" index="2ZfVej" />
       </concept>
     </language>
+    <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
+      <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
+        <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
+      </concept>
+      <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
+        <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+      </concept>
+    </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -60,6 +71,12 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
+      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
     </language>
   </registry>
   <node concept="2S6QgY" id="q$1bLTZvzR">
@@ -115,6 +132,41 @@
               <node concept="2Sf5sV" id="q$1bLTZzU2" role="2Oq$k0" />
               <node concept="3TrcHB" id="q$1bLTZzU3" role="2OqNvi">
                 <ref role="3TsBF5" to="udwj:q$1bLTZCXT" resolve="color" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="40kNClywJSz">
+    <property role="3GE5qa" value="diagram.uml.component" />
+    <property role="TrG5h" value="addComponentBody" />
+    <ref role="2ZfgGC" to="udwj:1I7wo92W$3l" resolve="ComponentDeclaration" />
+    <node concept="2S6ZIM" id="40kNClywJS$" role="2ZfVej">
+      <node concept="3clFbS" id="40kNClywJS_" role="2VODD2">
+        <node concept="3clFbF" id="40kNClywKpQ" role="3cqZAp">
+          <node concept="Xl_RD" id="40kNClywKpP" role="3clFbG">
+            <property role="Xl_RC" value="Add Body" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="40kNClywJSA" role="2ZfgGD">
+      <node concept="3clFbS" id="40kNClywJSB" role="2VODD2">
+        <node concept="3clFbF" id="40kNClywKFF" role="3cqZAp">
+          <node concept="2OqwBi" id="40kNClywPJH" role="3clFbG">
+            <node concept="2OqwBi" id="40kNClywL1f" role="2Oq$k0">
+              <node concept="2Sf5sV" id="40kNClywKFE" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="40kNClywNaW" role="2OqNvi">
+                <ref role="3TtcxE" to="udwj:40kNClye_5t" resolve="substructure" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="40kNClywSVC" role="2OqNvi">
+              <node concept="2pJPEk" id="40kNClywT3_" role="25WWJ7">
+                <node concept="2pJPED" id="40kNClywT3B" role="2pJPEn">
+                  <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+                </node>
               </node>
             </node>
           </node>
