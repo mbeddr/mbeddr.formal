@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dev-kit name="fasten.symo.plantuml" uuid="114acb95-50b2-4e9b-81c6-e0c665740eae">
   <exported-language name="6f31bc85-cbcc-4dcf-ada4-35da43e6832c(com.symo.plantuml)" />
+  <exported-language name="c7f99e92-818b-4094-a2f9-369356a5259c(com.symo.plantuml.ext)" />
   <exported-solutions>
     <exported-solution>377bf088-4ffc-48ac-910f-fb1c66ffa60e(com.symo.plantuml.lib)</exported-solution>
   </exported-solutions>
