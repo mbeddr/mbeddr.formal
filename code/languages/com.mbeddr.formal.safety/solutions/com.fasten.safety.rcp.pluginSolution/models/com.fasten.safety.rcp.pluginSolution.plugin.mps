@@ -971,6 +971,21 @@
                   </node>
                 </node>
               </node>
+              <node concept="tCFHf" id="6Af56qYt94z" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="6Af56qYt94$" role="2J__8u">
+                  <property role="Xl_RC" value="PlantUML Container" />
+                </node>
+                <node concept="35c_gC" id="6Af56qYt94_" role="2J__8u">
+                  <ref role="35c_gD" to="udwj:1I7wo92Vbhy" resolve="PlantUmlRoot" />
+                </node>
+                <node concept="37shsh" id="6Af56qYt94A" role="2J__8u">
+                  <node concept="1dCxOk" id="6Af56qYt950" role="37shsm">
+                    <property role="1XweGW" value="114acb95-50b2-4e9b-81c6-e0c665740eae" />
+                    <property role="1XxBO9" value="fasten.symo.plantuml" />
+                  </node>
+                </node>
+              </node>
               <node concept="tC5Ba" id="26E6nZcBEim" role="ftvYc">
                 <property role="TrG5h" value="Scenarios" />
                 <property role="1XlLyE" value="true" />
@@ -1051,6 +1066,30 @@
               </node>
             </node>
           </node>
+          <node concept="tC5Ba" id="4lJSf3LhyGH" role="ftvYc">
+            <property role="TrG5h" value="ArchitectureModels" />
+            <property role="1XlLyE" value="true" />
+            <property role="2f7twF" value="Architecture Models" />
+            <property role="2pbE17" value="S" />
+            <property role="22ra45" value="true" />
+            <node concept="ftmFs" id="4lJSf3LhyGI" role="ftER_">
+              <node concept="tCFHf" id="4lJSf3LhyGJ" role="ftvYc">
+                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
+                <node concept="Xl_RD" id="4lJSf3LhyGK" role="2J__8u">
+                  <property role="Xl_RC" value="PlantUML Container" />
+                </node>
+                <node concept="35c_gC" id="4lJSf3LhyGL" role="2J__8u">
+                  <ref role="35c_gD" to="udwj:1I7wo92Vbhy" resolve="PlantUmlRoot" />
+                </node>
+                <node concept="37shsh" id="4lJSf3LhyGM" role="2J__8u">
+                  <node concept="1dCxOk" id="4lJSf3LhTgX" role="37shsm">
+                    <property role="1XweGW" value="114acb95-50b2-4e9b-81c6-e0c665740eae" />
+                    <property role="1XxBO9" value="fasten.symo.plantuml" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
           <node concept="tC5Ba" id="26E6nZcB_pV" role="ftvYc">
             <property role="TrG5h" value="FormalModels" />
             <property role="1XlLyE" value="true" />
@@ -1085,30 +1124,6 @@
                   <node concept="1dCxOk" id="26E6nZcBLdG" role="37shsm">
                     <property role="1XweGW" value="edb51d2d-64eb-404a-818e-c1cabf1d58d5" />
                     <property role="1XxBO9" value="fasten.nusmv" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="tC5Ba" id="4lJSf3LhyGH" role="ftvYc">
-            <property role="TrG5h" value="SystemModels" />
-            <property role="1XlLyE" value="true" />
-            <property role="2f7twF" value="System Models" />
-            <property role="2pbE17" value="S" />
-            <property role="22ra45" value="true" />
-            <node concept="ftmFs" id="4lJSf3LhyGI" role="ftER_">
-              <node concept="tCFHf" id="4lJSf3LhyGJ" role="ftvYc">
-                <ref role="tCJdB" to="8js5:BKGoaZN_d1" resolve="FASTENNewRootNode" />
-                <node concept="Xl_RD" id="4lJSf3LhyGK" role="2J__8u">
-                  <property role="Xl_RC" value="System Model (PlantUML)" />
-                </node>
-                <node concept="35c_gC" id="4lJSf3LhyGL" role="2J__8u">
-                  <ref role="35c_gD" to="udwj:1I7wo92Vbhy" resolve="PlantUmlRoot" />
-                </node>
-                <node concept="37shsh" id="4lJSf3LhyGM" role="2J__8u">
-                  <node concept="1dCxOk" id="4lJSf3LhTgX" role="37shsm">
-                    <property role="1XweGW" value="114acb95-50b2-4e9b-81c6-e0c665740eae" />
-                    <property role="1XxBO9" value="fasten.symo.plantuml" />
                   </node>
                 </node>
               </node>
