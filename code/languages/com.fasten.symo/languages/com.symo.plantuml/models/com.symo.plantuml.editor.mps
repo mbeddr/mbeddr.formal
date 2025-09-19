@@ -748,8 +748,9 @@
     <ref role="1XX52x" to="udwj:1I7wo92Vg_W" resolve="PlantUmlDiagramBase" />
     <node concept="3EZMnI" id="1I7wo92WvVp" role="2wV5jI">
       <node concept="PMmxH" id="1I7wo92WvVv" role="3EZMnx">
-        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+        <ref role="PMmxG" to="1ks0:1HEyn0wQUUO" resolve="mpsbasicsAlias" />
         <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+        <node concept="VPxyj" id="1HEyn0wNJ1Y" role="3F10Kt" />
       </node>
       <node concept="3F0A7n" id="1I7wo92WvVR" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
