@@ -200,6 +200,7 @@
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
       <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -4049,7 +4050,19 @@
     <property role="3GE5qa" value="base.generic_content" />
     <ref role="13h7C2" to="udwj:2qHrqKS_0_C" resolve="PlantUmlPlainTextFragment" />
     <node concept="13hLZK" id="2qHrqKS_0_Z" role="13h7CW">
-      <node concept="3clFbS" id="2qHrqKS_0A0" role="2VODD2" />
+      <node concept="3clFbS" id="2qHrqKS_0A0" role="2VODD2">
+        <node concept="3clFbF" id="7JbQva7R3rO" role="3cqZAp">
+          <node concept="2OqwBi" id="7JbQva7R5uS" role="3clFbG">
+            <node concept="2OqwBi" id="7JbQva7R3H$" role="2Oq$k0">
+              <node concept="13iPFW" id="7JbQva7R3rN" role="2Oq$k0" />
+              <node concept="3TrEf2" id="7JbQva7R4Aq" role="2OqNvi">
+                <ref role="3Tt5mk" to="udwj:2qHrqKS_0_J" resolve="text" />
+              </node>
+            </node>
+            <node concept="zfrQC" id="7JbQva7R6Iu" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="2qHrqKS_0Ah" role="13h7CS">
       <property role="TrG5h" value="text" />
