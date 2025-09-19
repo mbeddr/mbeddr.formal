@@ -606,12 +606,12 @@
               <node concept="3cpWsn" id="vYco6E_Pvd" role="3cpWs9">
                 <property role="TrG5h" value="component" />
                 <node concept="3uibUv" id="vYco6E_Pve" role="1tU5fm">
-                  <ref role="3uigEE" node="4Fc3$ZqVApf" resolve="SVGImageConverter.ImageComponent" />
+                  <ref role="3uigEE" node="4Fc3$ZqVApf" resolve="SVG2PNGImageConverter.ImageComponent" />
                 </node>
                 <node concept="2ShNRf" id="vYco6E_Pvf" role="33vP2m">
                   <node concept="HV5vD" id="vYco6E_Pvg" role="2ShVmc">
                     <property role="373rjd" value="true" />
-                    <ref role="HV5vE" node="4Fc3$ZqVApf" resolve="SVGImageConverter.ImageComponent" />
+                    <ref role="HV5vE" node="4Fc3$ZqVApf" resolve="SVG2PNGImageConverter.ImageComponent" />
                   </node>
                 </node>
               </node>
@@ -657,7 +657,7 @@
                     </node>
                     <node concept="2YIFZM" id="vYco6E_Pvz" role="33vP2m">
                       <ref role="37wK5l" node="4Fc3$ZqVKjz" resolve="createImageFromSVG" />
-                      <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="SVGImageConverter" />
+                      <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="SVG2PNGImageConverter" />
                       <node concept="37vLTw" id="vYco6E_Pv$" role="37wK5m">
                         <ref role="3cqZAo" node="vYco6E_Pvs" resolve="svg" />
                       </node>
@@ -1027,7 +1027,7 @@
               <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
             </node>
             <node concept="3F1sOY" id="1I7wo930$w9" role="3EZMnx">
-              <ref role="1NtTu8" to="udwj:1I7wo930$w8" />
+              <ref role="1NtTu8" to="udwj:1I7wo930$w8" resolve="annotatedObject" />
             </node>
             <node concept="2iRfu4" id="q$1bLSL$0R" role="2iSdaV" />
           </node>
@@ -1581,7 +1581,7 @@
         <node concept="VPM3Z" id="1_aHBvacGR5" role="3F10Kt" />
         <node concept="3XFhqQ" id="1_aHBvacGR6" role="3EZMnx" />
         <node concept="3F2HdR" id="1_aHBvacGR7" role="3EZMnx">
-          <ref role="1NtTu8" to="udwj:1_aHBvacGQU" />
+          <ref role="1NtTu8" to="udwj:1_aHBvacGQU" resolve="content" />
           <node concept="2iRkQZ" id="1_aHBvacGR8" role="2czzBx" />
         </node>
         <node concept="2iRfu4" id="1_aHBvacGR9" role="2iSdaV" />
@@ -1614,7 +1614,7 @@
       <ref role="1PE7su" node="6CyxyHhVZuv" resolve="PlantUmlTextualEditorComponentBase" />
     </node>
     <node concept="3F2HdR" id="1_aHBvadUnz" role="2wV5jI">
-      <ref role="1NtTu8" to="udwj:1_aHBvadUkt" />
+      <ref role="1NtTu8" to="udwj:1_aHBvadUkt" resolve="content" />
       <node concept="2iRkQZ" id="1_aHBvadUn$" role="2czzBx" />
       <node concept="4$FPG" id="1_aHBvadUn_" role="4_6I_">
         <node concept="3clFbS" id="1_aHBvadUnA" role="2VODD2">
@@ -1659,7 +1659,7 @@
       <ref role="1PE7su" node="6CyxyHhVZuv" resolve="PlantUmlTextualEditorComponentBase" />
     </node>
     <node concept="3F2HdR" id="q$1bLS32sN" role="2wV5jI">
-      <ref role="1NtTu8" to="udwj:q$1bLS32qb" />
+      <ref role="1NtTu8" to="udwj:q$1bLS32qb" resolve="content" />
       <node concept="2iRkQZ" id="q$1bLS32sO" role="2czzBx" />
       <node concept="4$FPG" id="q$1bLS32sP" role="4_6I_">
         <node concept="3clFbS" id="q$1bLS32sQ" role="2VODD2">
@@ -1725,7 +1725,7 @@
       <node concept="2iRfu4" id="q$1bLS6_rD" role="2iSdaV" />
       <node concept="_tjkj" id="q$1bLSdybE" role="3EZMnx">
         <node concept="3F1sOY" id="q$1bLS6_r_" role="_tjki">
-          <ref role="1NtTu8" to="udwj:7ikA1GKvxAd" />
+          <ref role="1NtTu8" to="udwj:7ikA1GKvxAd" resolve="longDescription" />
         </node>
       </node>
       <node concept="3F0ifn" id="q$1bLSdybL" role="3EZMnx" />
@@ -1905,7 +1905,7 @@
         <node concept="VPM3Z" id="q$1bLSGkE9" role="3F10Kt" />
         <node concept="3XFhqQ" id="q$1bLSGkEa" role="3EZMnx" />
         <node concept="3F2HdR" id="q$1bLSGkEb" role="3EZMnx">
-          <ref role="1NtTu8" to="udwj:q$1bLSCbQq" />
+          <ref role="1NtTu8" to="udwj:q$1bLSCbQq" resolve="content" />
           <node concept="2iRkQZ" id="q$1bLSGkEc" role="2czzBx" />
         </node>
         <node concept="2iRfu4" id="q$1bLSGkEd" role="2iSdaV" />
@@ -2402,7 +2402,7 @@
         <node concept="2iRfu4" id="q$1bLUezzi" role="2iSdaV" />
         <node concept="3XFhqQ" id="q$1bLUezzj" role="3EZMnx" />
         <node concept="3F1sOY" id="q$1bLUezzk" role="3EZMnx">
-          <ref role="1NtTu8" to="udwj:1I7wo930$oL" />
+          <ref role="1NtTu8" to="udwj:1I7wo930$oL" resolve="text" />
         </node>
       </node>
       <node concept="3F0ifn" id="q$1bLUezzl" role="3EZMnx">
@@ -2430,12 +2430,12 @@
           <node concept="3cpWsn" id="vYco6E_YTi" role="3cpWs9">
             <property role="TrG5h" value="component" />
             <node concept="3uibUv" id="vYco6E_YTj" role="1tU5fm">
-              <ref role="3uigEE" node="4Fc3$ZqVApf" resolve="SVGImageConverter.ImageComponent" />
+              <ref role="3uigEE" node="4Fc3$ZqVApf" resolve="SVG2PNGImageConverter.ImageComponent" />
             </node>
             <node concept="2ShNRf" id="vYco6E_YTk" role="33vP2m">
               <node concept="HV5vD" id="vYco6E_YTl" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="HV5vE" node="4Fc3$ZqVApf" resolve="SVGImageConverter.ImageComponent" />
+                <ref role="HV5vE" node="4Fc3$ZqVApf" resolve="SVG2PNGImageConverter.ImageComponent" />
               </node>
             </node>
           </node>
@@ -2483,7 +2483,7 @@
                 </node>
                 <node concept="2YIFZM" id="vYco6E_YTC" role="33vP2m">
                   <ref role="37wK5l" node="4Fc3$ZqVKjz" resolve="createImageFromSVG" />
-                  <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="SVGImageConverter" />
+                  <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="SVG2PNGImageConverter" />
                   <node concept="37vLTw" id="vYco6E_YTD" role="37wK5m">
                     <ref role="3cqZAo" node="vYco6E_YTx" resolve="svg" />
                   </node>
@@ -2740,7 +2740,7 @@
             </node>
             <node concept="3cpWs6" id="vYco6E0hG3" role="3cqZAp">
               <node concept="37vLTw" id="vYco6EgsVv" role="3cqZAk">
-                <ref role="3cqZAo" node="vYco6EgsVq" resolve="read" />
+                <ref role="3cqZAo" node="vYco6EgsVq" resolve="bufferedImage" />
               </node>
             </node>
           </node>
@@ -3272,7 +3272,7 @@
         </node>
         <node concept="3clFbF" id="vYco6ECQOM" role="3cqZAp">
           <node concept="37vLTw" id="vYco6ECTM7" role="3clFbG">
-            <ref role="3cqZAo" node="vYco6ECTLZ" resolve="string" />
+            <ref role="3cqZAo" node="vYco6ECTLZ" resolve="svgXmlString" />
           </node>
         </node>
       </node>

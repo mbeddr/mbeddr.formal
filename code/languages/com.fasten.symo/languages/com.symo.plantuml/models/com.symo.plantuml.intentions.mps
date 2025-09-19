@@ -317,7 +317,7 @@
           <node concept="2OqwBi" id="7JbQva7RJdr" role="3clFbG">
             <node concept="2OqwBi" id="7JbQva7RGLj" role="2Oq$k0">
               <node concept="37vLTw" id="7JbQva7RDYQ" role="2Oq$k0">
-                <ref role="3cqZAo" node="7JbQva7RDYK" resolve="myLine" />
+                <ref role="3cqZAo" node="7JbQva7RDYK" resolve="currentLine" />
               </node>
               <node concept="2TlYAL" id="7JbQva7RH8Y" role="2OqNvi" />
             </node>
@@ -399,7 +399,7 @@
                           <ref role="3cqZAo" node="7JbQva7QYZH" resolve="puptf" />
                         </node>
                         <node concept="3TrEf2" id="7JbQva7S8nd" role="2OqNvi">
-                          <ref role="3Tt5mk" to="udwj:2qHrqKS_0_J" />
+                          <ref role="3Tt5mk" to="udwj:2qHrqKS_0_J" resolve="text" />
                         </node>
                       </node>
                       <node concept="2qgKlT" id="7JbQva7S9jA" role="2OqNvi">
@@ -422,7 +422,7 @@
         <node concept="3clFbF" id="7JbQva7SDWK" role="3cqZAp">
           <node concept="2OqwBi" id="7JbQva7SF3c" role="3clFbG">
             <node concept="37vLTw" id="7JbQva7Tmlh" role="2Oq$k0">
-              <ref role="3cqZAo" node="7JbQva7Tmlb" resolve="ancestor" />
+              <ref role="3cqZAo" node="7JbQva7Tmlb" resolve="crtTextFragment" />
             </node>
             <node concept="HtI8k" id="7JbQva7SG3Q" role="2OqNvi">
               <node concept="37vLTw" id="7JbQva7SG4S" role="HtI8F">

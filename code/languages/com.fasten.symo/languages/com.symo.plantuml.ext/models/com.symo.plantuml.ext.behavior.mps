@@ -205,7 +205,7 @@
                 </node>
               </node>
               <node concept="3TrEf2" id="6o6v_lVKXws" role="2OqNvi">
-                <ref role="3Tt5mk" to="cxxa:6o6v_lVLST6" />
+                <ref role="3Tt5mk" to="cxxa:6o6v_lVLST6" resolve="component" />
               </node>
             </node>
             <node concept="3TrcHB" id="1I7wo92YOjI" role="2OqNvi">

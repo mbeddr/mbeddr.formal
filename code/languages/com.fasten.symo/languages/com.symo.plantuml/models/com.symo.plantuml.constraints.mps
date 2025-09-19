@@ -354,7 +354,7 @@
     <property role="3GE5qa" value="diagram.uml.sequence.participant" />
     <ref role="1M2myG" to="udwj:q$1bLSou5i" resolve="SequenceDiagramParticipantBaseRef" />
     <node concept="1N5Pfh" id="q$1bLSqhac" role="1Mr941">
-      <ref role="1N5Vy1" to="udwj:q$1bLSou5k" />
+      <ref role="1N5Vy1" to="udwj:q$1bLSou5k" resolve="entity" />
       <node concept="1dDu$B" id="q$1bLSqhfJ" role="1N6uqs">
         <ref role="1dDu$A" to="udwj:q$1bLS3dKo" resolve="SequenceDiagramParticipantBase" />
       </node>
@@ -408,7 +408,7 @@
     <property role="3GE5qa" value="diagram.uml.statemachine.state" />
     <ref role="1M2myG" to="udwj:q$1bLT8dn3" resolve="PlantUmlStatemachineStateRef" />
     <node concept="1N5Pfh" id="q$1bLUhlxU" role="1Mr941">
-      <ref role="1N5Vy1" to="udwj:q$1bLT8dn6" />
+      <ref role="1N5Vy1" to="udwj:q$1bLT8dn6" resolve="state" />
       <node concept="1dDu$B" id="q$1bLUhlHq" role="1N6uqs">
         <ref role="1dDu$A" to="udwj:q$1bLT8dmP" resolve="PlantUmlStatemachineState" />
       </node>
@@ -418,7 +418,7 @@
     <property role="3GE5qa" value="diagram.uml.component" />
     <ref role="1M2myG" to="udwj:40kNClyKOBX" resolve="PortRef" />
     <node concept="1N5Pfh" id="40kNClyKOF1" role="1Mr941">
-      <ref role="1N5Vy1" to="udwj:40kNClyKOBZ" />
+      <ref role="1N5Vy1" to="udwj:40kNClyKOBZ" resolve="port" />
       <node concept="1dDu$B" id="40kNClyKOKE" role="1N6uqs">
         <ref role="1dDu$A" to="udwj:40kNClyHR47" resolve="PortDeclaration" />
       </node>
