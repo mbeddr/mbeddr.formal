@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:05142504-32bf-4275-bd1c-d1c1eb07650d(_010_features._015_system_models)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="c7f99e92-818b-4094-a2f9-369356a5259c" name="com.symo.plantuml.ext">
+      <concept id="2787004330864323063" name="com.symo.plantuml.ext.structure.SequenceDiagramComponentParticipant" flags="ng" index="u2shr">
+        <child id="2787004330864331504" name="componentRef" index="u2qts" />
+      </concept>
+    </language>
+    <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
+      <concept id="7634549724642624365" name="com.symo.plantuml.structure.PlantUmlEmptyLine" flags="ng" index="c$xRF" />
+      <concept id="7634549724642636764" name="com.symo.plantuml.structure.PlantUmlSingleLineComment" flags="ng" index="c$yPq">
+        <property id="7634549724642637897" name="comment" index="c$yrf" />
+      </concept>
+      <concept id="1983696557349946927" name="com.symo.plantuml.structure.Note" flags="ng" index="1oxsuH">
+        <child id="1983696557349946929" name="text" index="1oxsuN" />
+      </concept>
+      <concept id="1983696557348555164" name="com.symo.plantuml.structure.StartUmlCommand" flags="ng" index="1pqCwu" />
+      <concept id="1983696557348555132" name="com.symo.plantuml.structure.PlantUmlDiagramBase" flags="ng" index="1pqCzY">
+        <property id="8400506447498256066" name="zoom" index="145Srp" />
+        <property id="1983696557348880118" name="displayStrategy" index="1ptBXO" />
+        <child id="1983696557348555134" name="content" index="1pqCzW" />
+      </concept>
+      <concept id="1983696557348555523" name="com.symo.plantuml.structure.EndUmlCommand" flags="ng" index="1pqCE1" />
+      <concept id="1983696557348533346" name="com.symo.plantuml.structure.PlantUmlRoot" flags="ng" index="1pqNnw">
+        <child id="1983696557348555138" name="content" index="1pqCw0" />
+      </concept>
+      <concept id="1983696557349277305" name="com.symo.plantuml.structure.ComponentRef" flags="ng" index="1pvSZV">
+        <reference id="1983696557349277306" name="component" index="1pvSZS" />
+      </concept>
+      <concept id="478512667932278172" name="com.symo.plantuml.structure.SequenceDiagramElse" flags="ng" index="1Y1b$w" />
+      <concept id="478512667932278169" name="com.symo.plantuml.structure.PlantUmlSequenceDiagramGroupBase" flags="ng" index="1Y1b$_">
+        <child id="478512667932278170" name="content" index="1Y1b$A" />
+      </concept>
+      <concept id="478512667932278167" name="com.symo.plantuml.structure.SequenceDiagramAlt" flags="ng" index="1Y1b$F">
+        <child id="478512667933362841" name="elseBranches" index="1Y5kS_" />
+      </concept>
+      <concept id="478512667922540170" name="com.symo.plantuml.structure.PlantUmlSequenceDiagram" flags="ng" index="1YE28Q" />
+      <concept id="478512667928158546" name="com.symo.plantuml.structure.SequenceDiagramParticipantBaseRef" flags="ng" index="1YLunI">
+        <reference id="478512667928158548" name="entity" index="1YLunC" />
+      </concept>
+      <concept id="478512667927293831" name="com.symo.plantuml.structure.DottedArrowRight" flags="ng" index="1YWaGV" />
+      <concept id="478512667927293792" name="com.symo.plantuml.structure.MessageBase" flags="ng" index="1YWaJs">
+        <child id="478512667928162940" name="target" index="1YLvr0" />
+        <child id="478512667928162939" name="source" index="1YLvr7" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1pqNnw" id="1HEyn0wZcwu">
+    <property role="TrG5h" value="_310_sequence_diagram_explicitly_linked_to_components" />
+    <node concept="c$yPq" id="1HEyn0wZcwv" role="1pqCw0">
+      <property role="c$yrf" value="participants are *explicitly* linked to the components from _020_component_diagram" />
+    </node>
+    <node concept="c$xRF" id="1HEyn0wZcww" role="1pqCw0" />
+    <node concept="1YE28Q" id="1HEyn0wZcwx" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="sequence_diagram_reused_components" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="1HEyn0wZcwy" role="1pqCzW" />
+      <node concept="u2shr" id="1HEyn0wZcwP" role="1pqCzW">
+        <node concept="1pvSZV" id="1HEyn0wZcwR" role="u2qts">
+          <ref role="1pvSZS" node="75npNYZyqBj" resolve="Radar_Objects_Detection" />
+        </node>
+      </node>
+      <node concept="u2shr" id="1HEyn0wZcwS" role="1pqCzW">
+        <node concept="1pvSZV" id="1HEyn0wZcwT" role="u2qts">
+          <ref role="1pvSZS" node="75npNYZyqAw" resolve="Camera_Objects_Detection" />
+        </node>
+      </node>
+      <node concept="u2shr" id="1HEyn0wZcwU" role="1pqCzW">
+        <node concept="1pvSZV" id="1HEyn0wZcwV" role="u2qts">
+          <ref role="1pvSZS" node="75npNYZyqBu" resolve="Sensors_Fusion" />
+        </node>
+      </node>
+      <node concept="u2shr" id="1HEyn0wZcwW" role="1pqCzW">
+        <node concept="1pvSZV" id="1HEyn0wZcwX" role="u2qts">
+          <ref role="1pvSZS" node="1HEyn0wZcwl" resolve="Scene_Builder" />
+        </node>
+      </node>
+      <node concept="c$xRF" id="1HEyn0wZcwB" role="1pqCzW" />
+      <node concept="1Y1b$F" id="1HEyn0wZcwC" role="1pqCzW">
+        <property role="TrG5h" value="object_identified_by_radar" />
+        <node concept="1Y1b$w" id="1HEyn0wZcwD" role="1Y5kS_">
+          <property role="TrG5h" value="object_identified_by_camera" />
+          <node concept="1YWaGV" id="1HEyn0wZcwE" role="1Y1b$A">
+            <node concept="1YLunI" id="1HEyn0wZcwF" role="1YLvr7">
+              <ref role="1YLunC" node="1HEyn0wZcwS" />
+            </node>
+            <node concept="1YLunI" id="1HEyn0wZcwG" role="1YLvr0">
+              <ref role="1YLunC" node="1HEyn0wZcwU" />
+            </node>
+          </node>
+        </node>
+        <node concept="1YWaGV" id="1HEyn0wZcwH" role="1Y1b$A">
+          <node concept="1YLunI" id="1HEyn0wZcwI" role="1YLvr7">
+            <ref role="1YLunC" node="1HEyn0wZcwP" />
+          </node>
+          <node concept="1YLunI" id="1HEyn0wZcwJ" role="1YLvr0">
+            <ref role="1YLunC" node="1HEyn0wZcwU" />
+          </node>
+        </node>
+      </node>
+      <node concept="1YWaGV" id="1HEyn0wZcwK" role="1pqCzW">
+        <node concept="1YLunI" id="1HEyn0wZcwL" role="1YLvr7">
+          <ref role="1YLunC" node="1HEyn0wZcwU" />
+        </node>
+        <node concept="1YLunI" id="1HEyn0wZcwM" role="1YLvr0">
+          <ref role="1YLunC" node="1HEyn0wZcwW" />
+        </node>
+      </node>
+      <node concept="1oxsuH" id="1HEyn0wZcyA" role="1pqCzW">
+        <node concept="1Pa9Pv" id="1HEyn0wZcyC" role="1oxsuN">
+          <node concept="1PaTwC" id="1HEyn0wZcyI" role="1PaQFQ">
+            <node concept="3oM_SD" id="1HEyn0wZcyQ" role="1PaTwD">
+              <property role="3oM_SC" value="Sensor" />
+            </node>
+            <node concept="3oM_SD" id="1HEyn0wZcyR" role="1PaTwD">
+              <property role="3oM_SC" value="Fusion" />
+            </node>
+            <node concept="3oM_SD" id="1HEyn0wZcyT" role="1PaTwD">
+              <property role="3oM_SC" value="sends" />
+            </node>
+            <node concept="3oM_SD" id="1HEyn0wZcyZ" role="1PaTwD">
+              <property role="3oM_SC" value="an" />
+            </node>
+            <node concept="3oM_SD" id="1HEyn0wZcz0" role="1PaTwD">
+              <property role="3oM_SC" value="identified" />
+            </node>
+            <node concept="3oM_SD" id="1HEyn0wZcz1" role="1PaTwD">
+              <property role="3oM_SC" value="object" />
+            </node>
+            <node concept="3oM_SD" id="1HEyn0wZcz2" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="1HEyn0wZczt" role="1PaQFQ">
+            <node concept="3oM_SD" id="1HEyn0wZczI" role="1PaTwD">
+              <property role="3oM_SC" value="from" />
+            </node>
+            <node concept="3oM_SD" id="1HEyn0wZczJ" role="1PaTwD">
+              <property role="3oM_SC" value="radar" />
+            </node>
+            <node concept="3oM_SD" id="1HEyn0wZczm" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="1HEyn0wZczo" role="1PaTwD">
+              <property role="3oM_SC" value="camera" />
+            </node>
+            <node concept="3oM_SD" id="1HEyn0wZczp" role="1PaTwD">
+              <property role="3oM_SC" value="object" />
+            </node>
+            <node concept="3oM_SD" id="1HEyn0wZczq" role="1PaTwD">
+              <property role="3oM_SC" value="detection." />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1pqCE1" id="1HEyn0wZcwN" role="1pqCzW" />
+    </node>
+  </node>
+</model>
+
