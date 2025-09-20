@@ -40,7 +40,7 @@
     </language>
   </registry>
   <node concept="1pqNnw" id="75npNYZyqAq">
-    <property role="TrG5h" value="_020_component_diagram" />
+    <property role="TrG5h" value="_200_component_diagram" />
     <node concept="c$yPq" id="75npNYZyqAr" role="1pqCw0">
       <property role="c$yrf" value="example of a component diagram" />
     </node>
@@ -113,6 +113,19 @@
         </node>
         <node concept="1pvSZV" id="75npNYZyqBB" role="1pvUZs">
           <ref role="1pvSZS" node="75npNYZyqBu" resolve="Sensors_Fusion" />
+        </node>
+      </node>
+      <node concept="c$xRF" id="1HEyn0wZcwj" role="1pqCzW" />
+      <node concept="1pts5n" id="1HEyn0wZcwl" role="1pqCzW">
+        <property role="TrG5h" value="Scene_Builder" />
+      </node>
+      <node concept="1ps3o1" id="1HEyn0wZcwo" role="1pqCzW">
+        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
+        <node concept="1pvSZV" id="1HEyn0wZcwq" role="1pvUZv">
+          <ref role="1pvSZS" node="75npNYZyqBu" resolve="Sensors_Fusion" />
+        </node>
+        <node concept="1pvSZV" id="1HEyn0wZcwr" role="1pvUZs">
+          <ref role="1pvSZS" node="1HEyn0wZcwl" resolve="Scene_Builder" />
         </node>
       </node>
       <node concept="1pqCE1" id="75npNYZyqA$" role="1pqCzW" />

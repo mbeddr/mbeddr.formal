@@ -137,7 +137,7 @@
         <node concept="2bctqb" id="q$1bLUbVdQ" role="3z_lpT" />
         <node concept="2NCZwO" id="q$1bLUbVdR" role="3z_lpI">
           <node concept="2NCMab" id="q$1bLUbVdT" role="2NCMaf">
-            <ref role="2NCMaa" to="szwd:75npNYZvABA" resolve="_010_usecase_diagram" />
+            <ref role="2NCMaa" to="szwd:75npNYZvABA" resolve="_100_usecase_diagram" />
           </node>
         </node>
       </node>
@@ -167,7 +167,7 @@
         <node concept="2bctqb" id="q$1bLUbVwb" role="3z_lpT" />
         <node concept="2NCZwO" id="q$1bLUbVwc" role="3z_lpI">
           <node concept="2NCMab" id="q$1bLUbVwd" role="2NCMaf">
-            <ref role="2NCMaa" to="szwd:75npNYZyqAq" resolve="_020_component_diagram" />
+            <ref role="2NCMaa" to="szwd:75npNYZyqAq" resolve="_200_component_diagram" />
           </node>
         </node>
       </node>

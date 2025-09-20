@@ -68,6 +68,7 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
+      <concept id="1225271408483" name="jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation" flags="nn" index="17RvpY" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -971,33 +972,48 @@
     <property role="TrG5h" value="check_FailureRate" />
     <property role="3GE5qa" value="events.specs" />
     <node concept="3clFbS" id="2c2ooLv8DWR" role="18ibNy">
-      <node concept="2Mj0R9" id="2c2ooLv15qH" role="3cqZAp">
-        <node concept="2OqwBi" id="2c2ooLv1764" role="2MkoU_">
-          <node concept="2OqwBi" id="2c2ooLv15A3" role="2Oq$k0">
-            <node concept="1YBJjd" id="2c2ooLv15qX" role="2Oq$k0">
+      <node concept="3clFbJ" id="7hqyxNQVHnN" role="3cqZAp">
+        <node concept="3clFbS" id="7hqyxNQVHnP" role="3clFbx">
+          <node concept="2Mj0R9" id="2c2ooLv15qH" role="3cqZAp">
+            <node concept="2OqwBi" id="2c2ooLv1764" role="2MkoU_">
+              <node concept="2OqwBi" id="2c2ooLv15A3" role="2Oq$k0">
+                <node concept="1YBJjd" id="2c2ooLv15qX" role="2Oq$k0">
+                  <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="failureRate" />
+                </node>
+                <node concept="3TrcHB" id="2c2ooLv15Nx" role="2OqNvi">
+                  <ref role="3TsBF5" to="spwl:11L6MQb670m" resolve="lambda" />
+                </node>
+              </node>
+              <node concept="liA8E" id="2c2ooLv18Rz" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="10M0yZ" id="7JDlEF1FlMH" role="37wK5m">
+                  <ref role="3cqZAo" node="7JDlEF1Fl7U" resolve="RATE_REGEX" />
+                  <ref role="1PxDUh" node="7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+                </node>
+              </node>
+            </node>
+            <node concept="10M0yZ" id="7JDlEF1FpCw" role="2MkJ7o">
+              <ref role="3cqZAo" node="7JDlEF1FmhM" resolve="RATE_ERROR_MESSAGE" />
+              <ref role="1PxDUh" node="7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
+            </node>
+            <node concept="1YBJjd" id="2c2ooLv1g7o" role="1urrMF">
               <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="failureRate" />
             </node>
-            <node concept="3TrcHB" id="2c2ooLv15Nx" role="2OqNvi">
+            <node concept="2ODE4t" id="2c2ooLv1gbW" role="1urrC5">
+              <ref role="2ODJFN" to="spwl:11L6MQb670m" resolve="lambda" />
+            </node>
+          </node>
+        </node>
+        <node concept="2OqwBi" id="7hqyxNQVL_y" role="3clFbw">
+          <node concept="2OqwBi" id="7hqyxNQVHRV" role="2Oq$k0">
+            <node concept="1YBJjd" id="7hqyxNQVHGV" role="2Oq$k0">
+              <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="failureRate" />
+            </node>
+            <node concept="3TrcHB" id="7hqyxNQVK3x" role="2OqNvi">
               <ref role="3TsBF5" to="spwl:11L6MQb670m" resolve="lambda" />
             </node>
           </node>
-          <node concept="liA8E" id="2c2ooLv18Rz" role="2OqNvi">
-            <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-            <node concept="10M0yZ" id="7JDlEF1FlMH" role="37wK5m">
-              <ref role="3cqZAo" node="7JDlEF1Fl7U" resolve="RATE_REGEX" />
-              <ref role="1PxDUh" node="7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
-            </node>
-          </node>
-        </node>
-        <node concept="10M0yZ" id="7JDlEF1FpCw" role="2MkJ7o">
-          <ref role="3cqZAo" node="7JDlEF1FmhM" resolve="RATE_ERROR_MESSAGE" />
-          <ref role="1PxDUh" node="7JDlEF1FkrK" resolve="BaseEventSpecsCheckingUtils" />
-        </node>
-        <node concept="1YBJjd" id="2c2ooLv1g7o" role="1urrMF">
-          <ref role="1YBMHb" node="2c2ooLv8DWT" resolve="failureRate" />
-        </node>
-        <node concept="2ODE4t" id="2c2ooLv1gbW" role="1urrC5">
-          <ref role="2ODJFN" to="spwl:11L6MQb670m" resolve="lambda" />
+          <node concept="17RvpY" id="7hqyxNQVO6Z" role="2OqNvi" />
         </node>
       </node>
     </node>
