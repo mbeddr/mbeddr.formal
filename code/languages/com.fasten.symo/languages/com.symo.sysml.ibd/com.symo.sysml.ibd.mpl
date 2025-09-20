@@ -66,8 +66,6 @@
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
-    <module reference="68b16187-1d03-4fff-975a-475207b3ad31(com.cso.enabler.arch.functional)" version="0" />
-    <module reference="deb4d624-41e8-4a3c-96c6-a1223f64be20(com.cso.enabler.base)" version="0" />
     <module reference="83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)" version="0" />
     <module reference="792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)" version="0" />
     <module reference="d7ce0776-e180-44b6-8b3f-a274ad438311(com.symo.sysml.ibd)" version="0" />

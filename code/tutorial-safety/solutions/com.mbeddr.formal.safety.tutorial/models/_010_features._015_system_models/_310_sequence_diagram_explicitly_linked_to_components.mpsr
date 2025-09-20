@@ -101,28 +101,28 @@
           <property role="TrG5h" value="object_identified_by_camera" />
           <node concept="1YWaGV" id="1HEyn0wZcwE" role="1Y1b$A">
             <node concept="1YLunI" id="1HEyn0wZcwF" role="1YLvr7">
-              <ref role="1YLunC" node="1HEyn0wZcwS" />
+              <ref role="1YLunC" node="1HEyn0wZcwS" resolve="Camera_Objects_Detection" />
             </node>
             <node concept="1YLunI" id="1HEyn0wZcwG" role="1YLvr0">
-              <ref role="1YLunC" node="1HEyn0wZcwU" />
+              <ref role="1YLunC" node="1HEyn0wZcwU" resolve="Sensors_Fusion" />
             </node>
           </node>
         </node>
         <node concept="1YWaGV" id="1HEyn0wZcwH" role="1Y1b$A">
           <node concept="1YLunI" id="1HEyn0wZcwI" role="1YLvr7">
-            <ref role="1YLunC" node="1HEyn0wZcwP" />
+            <ref role="1YLunC" node="1HEyn0wZcwP" resolve="Radar_Objects_Detection" />
           </node>
           <node concept="1YLunI" id="1HEyn0wZcwJ" role="1YLvr0">
-            <ref role="1YLunC" node="1HEyn0wZcwU" />
+            <ref role="1YLunC" node="1HEyn0wZcwU" resolve="Sensors_Fusion" />
           </node>
         </node>
       </node>
       <node concept="1YWaGV" id="1HEyn0wZcwK" role="1pqCzW">
         <node concept="1YLunI" id="1HEyn0wZcwL" role="1YLvr7">
-          <ref role="1YLunC" node="1HEyn0wZcwU" />
+          <ref role="1YLunC" node="1HEyn0wZcwU" resolve="Sensors_Fusion" />
         </node>
         <node concept="1YLunI" id="1HEyn0wZcwM" role="1YLvr0">
-          <ref role="1YLunC" node="1HEyn0wZcwW" />
+          <ref role="1YLunC" node="1HEyn0wZcwW" resolve="Scene_Builder" />
         </node>
       </node>
       <node concept="1oxsuH" id="1HEyn0wZcyA" role="1pqCzW">
