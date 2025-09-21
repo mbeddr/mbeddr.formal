@@ -13,7 +13,6 @@
   <accessoryModels />
   <dependencies>
     <dependency reexport="false">6f31bc85-cbcc-4dcf-ada4-35da43e6832c(com.symo.plantuml)</dependency>
-    <dependency reexport="false">792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="2" />
@@ -63,6 +62,7 @@
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>
   <extendedLanguages>
+    <extendedLanguage>792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)</extendedLanguage>
     <extendedLanguage>6f31bc85-cbcc-4dcf-ada4-35da43e6832c(com.symo.plantuml)</extendedLanguage>
   </extendedLanguages>
 </language>

@@ -3953,6 +3953,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="2oZKZkZRGIw" role="3bR37C">
+          <node concept="1Busua" id="2oZKZkZRGIx" role="1SiIV1">
+            <ref role="1Busuk" node="2dsc7GndbM" resolve="com.mpsbasics.core" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="3fV34643kGS" role="2G$12L">
         <property role="BnDLt" value="true" />
