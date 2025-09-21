@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:05142504-32bf-4275-bd1c-d1c1eb07650d(_010_features._015_system_models)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="c7f99e92-818b-4094-a2f9-369356a5259c" name="com.symo.plantuml.ext">
+      <concept id="2756136955077688037" name="com.symo.plantuml.ext.structure.SequenceDiagramUsecaseDiagramActorActor" flags="ng" index="pxb$g">
+        <reference id="2756136955077690412" name="actor" index="px4vp" />
+      </concept>
+      <concept id="2787004330864323063" name="com.symo.plantuml.ext.structure.SequenceDiagramComponentDiagramParticipant" flags="ng" index="u2shr">
+        <child id="2787004330864331504" name="componentRef" index="u2qts" />
+      </concept>
+    </language>
+    <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
+      <concept id="7634549724642624365" name="com.symo.plantuml.structure.PlantUmlEmptyLine" flags="ng" index="c$xRF" />
+      <concept id="7634549724642636764" name="com.symo.plantuml.structure.PlantUmlSingleLineComment" flags="ng" index="c$yPq">
+        <property id="7634549724642637897" name="comment" index="c$yrf" />
+      </concept>
+      <concept id="1983696557348555164" name="com.symo.plantuml.structure.StartUmlCommand" flags="ng" index="1pqCwu" />
+      <concept id="1983696557348555132" name="com.symo.plantuml.structure.PlantUmlDiagramBase" flags="ng" index="1pqCzY">
+        <property id="8400506447498256066" name="zoom" index="145Srp" />
+        <property id="1983696557348880118" name="displayStrategy" index="1ptBXO" />
+        <child id="1983696557348555134" name="content" index="1pqCzW" />
+      </concept>
+      <concept id="1983696557348555523" name="com.symo.plantuml.structure.EndUmlCommand" flags="ng" index="1pqCE1" />
+      <concept id="1983696557348533346" name="com.symo.plantuml.structure.PlantUmlRoot" flags="ng" index="1pqNnw">
+        <child id="1983696557348555138" name="content" index="1pqCw0" />
+      </concept>
+      <concept id="1983696557349277305" name="com.symo.plantuml.structure.ComponentRef" flags="ng" index="1pvSZV">
+        <reference id="1983696557349277306" name="component" index="1pvSZS" />
+      </concept>
+      <concept id="478512667922540170" name="com.symo.plantuml.structure.PlantUmlSequenceDiagram" flags="ng" index="1YE28Q" />
+      <concept id="478512667928158546" name="com.symo.plantuml.structure.SequenceDiagramParticipantBaseRef" flags="ng" index="1YLunI">
+        <reference id="478512667928158548" name="entity" index="1YLunC" />
+      </concept>
+      <concept id="478512667928725662" name="com.symo.plantuml.structure.PlainTextSequenceDiagramMessagePayload" flags="ng" index="1YNCKy">
+        <property id="478512667928725663" name="text" index="1YNCKz" />
+      </concept>
+      <concept id="478512667927293831" name="com.symo.plantuml.structure.DottedArrowRight" flags="ng" index="1YWaGV" />
+      <concept id="478512667927293792" name="com.symo.plantuml.structure.MessageBase" flags="ng" index="1YWaJs">
+        <child id="478512667928162940" name="target" index="1YLvr0" />
+        <child id="478512667928162939" name="source" index="1YLvr7" />
+        <child id="478512667928728354" name="payload" index="1YNDuu" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1pqNnw" id="2oZKZkZKeWO">
+    <property role="TrG5h" value="_310_sequence_diagram_explicitly_linked_to_usecase_actors" />
+    <node concept="c$yPq" id="2oZKZkZKeWP" role="1pqCw0">
+      <property role="c$yrf" value="actors can be *explicitly* linked to the actors defined in usecase diagrams" />
+    </node>
+    <node concept="c$xRF" id="2oZKZkZKeWQ" role="1pqCw0" />
+    <node concept="1YE28Q" id="2oZKZkZKeWR" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="sequence_diagram_reused_actors_and_components_1" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2oZKZkZKeWS" role="1pqCzW" />
+      <node concept="pxb$g" id="2oZKZkZKeXw" role="1pqCzW">
+        <ref role="px4vp" node="2oZKZkZKeWd" resolve="Programmer" />
+      </node>
+      <node concept="u2shr" id="2oZKZkZKeWT" role="1pqCzW">
+        <node concept="1pvSZV" id="2oZKZkZKeWU" role="u2qts">
+          <ref role="1pvSZS" node="75npNYZyqBj" resolve="Radar_Objects_Detection" />
+        </node>
+      </node>
+      <node concept="u2shr" id="2oZKZkZKeWX" role="1pqCzW">
+        <node concept="1pvSZV" id="2oZKZkZKeWY" role="u2qts">
+          <ref role="1pvSZS" node="75npNYZyqBu" resolve="Sensors_Fusion" />
+        </node>
+      </node>
+      <node concept="c$xRF" id="2oZKZkZKeX1" role="1pqCzW" />
+      <node concept="1YWaGV" id="2oZKZkZKeX7" role="1pqCzW">
+        <node concept="1YLunI" id="2oZKZkZKeX8" role="1YLvr7">
+          <ref role="1YLunC" node="2oZKZkZKeXw" />
+        </node>
+        <node concept="1YLunI" id="2oZKZkZKeX9" role="1YLvr0">
+          <ref role="1YLunC" node="2oZKZkZKeWT" />
+        </node>
+        <node concept="1YNCKy" id="2oZKZkZKeX_" role="1YNDuu">
+          <property role="1YNCKz" value="read logs" />
+        </node>
+      </node>
+      <node concept="1YWaGV" id="2oZKZkZKeXB" role="1pqCzW">
+        <node concept="1YLunI" id="2oZKZkZKeXC" role="1YLvr7">
+          <ref role="1YLunC" node="2oZKZkZKeWT" />
+        </node>
+        <node concept="1YLunI" id="2oZKZkZKeXD" role="1YLvr0">
+          <ref role="1YLunC" node="2oZKZkZKeXw" />
+        </node>
+        <node concept="1YNCKy" id="2oZKZkZKeXE" role="1YNDuu">
+          <property role="1YNCKz" value=" logs" />
+        </node>
+      </node>
+      <node concept="c$xRF" id="2oZKZkZKeXy" role="1pqCzW" />
+      <node concept="1pqCE1" id="2oZKZkZKeXu" role="1pqCzW" />
+    </node>
+  </node>
+</model>
+

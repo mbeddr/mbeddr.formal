@@ -1468,7 +1468,7 @@
   </node>
   <node concept="24kQdi" id="6CyxyHibNNj">
     <property role="3GE5qa" value="diagram.uml.usecase" />
-    <ref role="1XX52x" to="udwj:6CyxyHibNNa" resolve="ActorDeclaration" />
+    <ref role="1XX52x" to="udwj:6CyxyHibNNa" resolve="UsecaseDiagramActor" />
     <node concept="3EZMnI" id="6CyxyHibNNl" role="2wV5jI">
       <node concept="3F0ifn" id="6CyxyHibNNm" role="3EZMnx">
         <property role="3F0ifm" value="actor" />

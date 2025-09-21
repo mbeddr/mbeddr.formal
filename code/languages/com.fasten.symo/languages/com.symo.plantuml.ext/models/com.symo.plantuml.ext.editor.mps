@@ -11,7 +11,8 @@
     <import index="85xj" ref="r:c54e8620-02ce-447b-add3-cc9dc7547dc1(com.symo.plantuml.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
-    <import index="cxxa" ref="r:5e39fe7c-31dd-463f-8717-17f345022d0e(com.symo.plantuml.ext.structure)" implicit="true" />
+    <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
+    <import index="cxxa" ref="r:5e39fe7c-31dd-463f-8717-17f345022d0e(com.symo.plantuml.ext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -26,11 +27,15 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186402211651" name="jetbrains.mps.lang.editor.structure.StyleSheet" flags="ng" index="V5hpn">
+        <child id="1186402402630" name="styles" index="V601i" />
+      </concept>
       <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2">
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186414860679" name="jetbrains.mps.lang.editor.structure.EditableStyleClassItem" flags="ln" index="VPxyj" />
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -38,6 +43,9 @@
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
+      <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
+        <reference id="9122903797312247166" name="style" index="1wgcnl" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
@@ -61,6 +69,9 @@
       <concept id="6918029743850308467" name="jetbrains.mps.lang.editor.structure.QueryFunction_RefPresentation" flags="ig" index="1NMggl" />
       <concept id="625126330682908270" name="jetbrains.mps.lang.editor.structure.CellModel_ReferencePresentation" flags="sg" stub="730538219795961225" index="3SHvHV">
         <child id="7783170064869818501" name="referentPresentation" index="2N1_XE" />
+      </concept>
+      <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
+        <child id="1950447826683828796" name="target" index="3XvnJa" />
       </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -102,20 +113,17 @@
     </language>
   </registry>
   <node concept="24kQdi" id="2qHrqKSDaBY">
-    <ref role="1XX52x" to="cxxa:2qHrqKSDaBR" resolve="SequenceDiagramComponentParticipant" />
+    <ref role="1XX52x" to="cxxa:2qHrqKSDaBR" resolve="SequenceDiagramComponentDiagramParticipant" />
     <node concept="3EZMnI" id="2qHrqKSDaC0" role="2wV5jI">
       <node concept="3EZMnI" id="2qHrqKSDb00" role="3EZMnx">
         <node concept="1kHk_G" id="2qHrqKSDb01" role="3EZMnx">
           <ref role="1NtTu8" to="udwj:q$1bLT4vEe" resolve="create" />
         </node>
         <node concept="PMmxH" id="2qHrqKSDb02" role="3EZMnx">
-          <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
-          <ref role="1k5W1q" to="85xj:1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+          <ref role="PMmxG" to="1ks0:1HEyn0wQUUO" resolve="mpsbasicsAlias" />
+          <ref role="1k5W1q" node="2oZKZkZNy2d" resolve="PlantUmlExtKeyword" />
           <ref role="1ERwB7" to="85xj:q$1bLSaUHI" resolve="delete" />
           <node concept="VPxyj" id="2qHrqKSDb03" role="3F10Kt" />
-          <node concept="Vb9p2" id="4_rWrCMlrxj" role="3F10Kt">
-            <property role="Vbekb" value="g1_kEg4/ITALIC" />
-          </node>
         </node>
         <node concept="3F1sOY" id="2qHrqKSDb0j" role="3EZMnx">
           <ref role="1NtTu8" to="cxxa:2qHrqKSDcFK" resolve="componentRef" />
@@ -216,6 +224,68 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2oZKZkZISgH">
+    <ref role="1XX52x" to="cxxa:2oZKZkZIRF_" resolve="SequenceDiagramUsecaseDiagramActorActor" />
+    <node concept="3EZMnI" id="q$1bLS3dKv" role="2wV5jI">
+      <node concept="1kHk_G" id="q$1bLT4vEi" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:q$1bLT4vEe" resolve="create" />
+      </node>
+      <node concept="PMmxH" id="q$1bLS3dK_" role="3EZMnx">
+        <ref role="PMmxG" to="1ks0:1HEyn0wQUUO" resolve="mpsbasicsAlias" />
+        <ref role="1k5W1q" node="2oZKZkZNy2d" resolve="PlantUmlExtKeyword" />
+        <ref role="1ERwB7" to="85xj:q$1bLSaUHI" resolve="delete" />
+        <node concept="VPxyj" id="q$1bLS9Dag" role="3F10Kt" />
+      </node>
+      <node concept="1iCGBv" id="2oZKZkZIV_K" role="3EZMnx">
+        <ref role="1NtTu8" to="cxxa:2oZKZkZISgG" />
+        <node concept="1sVBvm" id="2oZKZkZIV_M" role="1sWHZn">
+          <node concept="3F0A7n" id="2oZKZkZIV_S" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="_tjkj" id="q$1bLSiZ1z" role="3EZMnx">
+        <node concept="3EZMnI" id="q$1bLSiZ1$" role="_tjki">
+          <node concept="3F0ifn" id="q$1bLSiZ1_" role="3EZMnx">
+            <property role="3F0ifm" value="as" />
+          </node>
+          <node concept="3F0A7n" id="q$1bLSiZ1A" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:q$1bLSiZ1y" resolve="longDescription" />
+          </node>
+          <node concept="l2Vlx" id="q$1bLSiZ1B" role="2iSdaV" />
+          <node concept="VPM3Z" id="q$1bLSiZ1C" role="3F10Kt" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="q$1bLS3dKI" role="3EZMnx">
+        <node concept="3EZMnI" id="q$1bLS3dKM" role="_tjki">
+          <node concept="3F0ifn" id="q$1bLS3dKR" role="3EZMnx">
+            <property role="3F0ifm" value="#" />
+          </node>
+          <node concept="3F0A7n" id="q$1bLS3dKY" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:q$1bLTZCXT" resolve="color" />
+          </node>
+          <node concept="l2Vlx" id="q$1bLS3dKP" role="2iSdaV" />
+          <node concept="VPM3Z" id="q$1bLS3dKQ" role="3F10Kt" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="q$1bLS3dKy" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="V5hpn" id="2oZKZkZNy2b">
+    <property role="TrG5h" value="PlantUMLExtStyles" />
+    <node concept="14StLt" id="2oZKZkZNy2d" role="V601i">
+      <property role="TrG5h" value="PlantUmlExtKeyword" />
+      <node concept="3Xmtl4" id="2oZKZkZNy2g" role="3F10Kt">
+        <node concept="1wgc9g" id="2oZKZkZNy2i" role="3XvnJa">
+          <ref role="1wgcnl" to="85xj:1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+        </node>
+      </node>
+      <node concept="Vb9p2" id="4_rWrCMlrxj" role="3F10Kt">
+        <property role="Vbekb" value="g1_kEg4/ITALIC" />
       </node>
     </node>
   </node>

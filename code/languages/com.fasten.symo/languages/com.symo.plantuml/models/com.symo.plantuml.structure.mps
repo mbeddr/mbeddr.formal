@@ -657,7 +657,7 @@
   <node concept="1TIwiD" id="6CyxyHibNNa">
     <property role="EcuMT" value="7647822637849066698" />
     <property role="3GE5qa" value="diagram.uml.usecase" />
-    <property role="TrG5h" value="ActorDeclaration" />
+    <property role="TrG5h" value="UsecaseDiagramActor" />
     <property role="34LRSv" value="actor" />
     <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
     <node concept="PrWs8" id="6CyxyHibNNb" role="PzmwI">
@@ -762,7 +762,7 @@
       <property role="IQ2ns" value="7634549724643560693" />
       <property role="20kJfa" value="actor" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6CyxyHibNNa" resolve="ActorDeclaration" />
+      <ref role="20lvS9" node="6CyxyHibNNa" resolve="UsecaseDiagramActor" />
     </node>
   </node>
   <node concept="1TIwiD" id="6BNnCp_rZar">
@@ -998,7 +998,7 @@
   <node concept="1TIwiD" id="q$1bLS3dKr">
     <property role="EcuMT" value="478512667922586651" />
     <property role="3GE5qa" value="diagram.uml.sequence.participant" />
-    <property role="TrG5h" value="Actor" />
+    <property role="TrG5h" value="SequenceDiagramActor" />
     <property role="34LRSv" value="actor" />
     <ref role="1TJDcQ" node="q$1bLS3dKo" resolve="SequenceDiagramParticipantBase" />
   </node>

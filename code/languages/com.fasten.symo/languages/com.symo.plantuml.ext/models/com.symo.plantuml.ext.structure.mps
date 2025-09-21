@@ -39,7 +39,7 @@
   </registry>
   <node concept="1TIwiD" id="2qHrqKSDaBR">
     <property role="EcuMT" value="2787004330864323063" />
-    <property role="TrG5h" value="SequenceDiagramComponentParticipant" />
+    <property role="TrG5h" value="SequenceDiagramComponentDiagramParticipant" />
     <property role="34LRSv" value="#component participant" />
     <property role="R4oN_" value="a participant referencing a component" />
     <ref role="1TJDcQ" to="udwj:q$1bLSduBd" resolve="Participant" />
@@ -84,6 +84,18 @@
     </node>
     <node concept="PrWs8" id="6o6v_lVKRFX" role="PzmwI">
       <ref role="PrY4T" to="udwj:1I7wo92Y2Ts" resolve="IChannelEndpoint" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2oZKZkZIRF_">
+    <property role="EcuMT" value="2756136955077688037" />
+    <property role="TrG5h" value="SequenceDiagramUsecaseDiagramActorActor" />
+    <property role="34LRSv" value="#usecase actor" />
+    <property role="R4oN_" value="an actor referencing a " />
+    <ref role="1TJDcQ" to="udwj:q$1bLS3dKr" resolve="SequenceDiagramActor" />
+    <node concept="1TJgyj" id="2oZKZkZISgG" role="1TKVEi">
+      <property role="IQ2ns" value="2756136955077690412" />
+      <property role="20kJfa" value="actor" />
+      <ref role="20lvS9" to="udwj:6CyxyHibNNa" resolve="UsecaseDiagramActor" />
     </node>
   </node>
 </model>
