@@ -4,7 +4,7 @@
   <imports />
   <registry>
     <language id="c7f99e92-818b-4094-a2f9-369356a5259c" name="com.symo.plantuml.ext">
-      <concept id="2787004330864323063" name="com.symo.plantuml.ext.structure.SequenceDiagramComponentParticipant" flags="ng" index="u2shr">
+      <concept id="2787004330864323063" name="com.symo.plantuml.ext.structure.SequenceDiagramComponentDiagramParticipant" flags="ng" index="u2shr">
         <child id="2787004330864331504" name="componentRef" index="u2qts" />
       </concept>
     </language>

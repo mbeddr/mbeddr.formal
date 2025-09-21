@@ -14,9 +14,9 @@
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
     <import index="cxxa" ref="r:5e39fe7c-31dd-463f-8717-17f345022d0e(com.symo.plantuml.ext.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
-    <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -56,7 +56,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="2qHrqKSDbo1">
-    <ref role="1M2myG" to="cxxa:2qHrqKSDaBR" resolve="SequenceDiagramComponentParticipant" />
+    <ref role="1M2myG" to="cxxa:2qHrqKSDaBR" resolve="SequenceDiagramComponentDiagramParticipant" />
     <node concept="EnEH3" id="2qHrqKSDbo2" role="1MhHOB">
       <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
       <node concept="Eqf_E" id="2qHrqKSDbsb" role="EtsB7">
@@ -98,6 +98,29 @@
                 </node>
               </node>
               <node concept="3TrcHB" id="6o6v_lVOBpw" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="2oZKZkZNvGv">
+    <ref role="1M2myG" to="cxxa:2oZKZkZIRF_" resolve="SequenceDiagramUsecaseDiagramActorActor" />
+    <node concept="EnEH3" id="2oZKZkZKf0x" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="2oZKZkZKf0y" role="EtsB7">
+        <node concept="3clFbS" id="2oZKZkZKf0z" role="2VODD2">
+          <node concept="3clFbF" id="2oZKZkZKfkB" role="3cqZAp">
+            <node concept="2OqwBi" id="2oZKZkZKgqL" role="3clFbG">
+              <node concept="2OqwBi" id="2oZKZkZKfO3" role="2Oq$k0">
+                <node concept="EsrRn" id="2oZKZkZKfkA" role="2Oq$k0" />
+                <node concept="3TrEf2" id="2oZKZkZKg6v" role="2OqNvi">
+                  <ref role="3Tt5mk" to="cxxa:2oZKZkZISgG" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="2oZKZkZKgLc" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>

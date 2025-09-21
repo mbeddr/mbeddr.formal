@@ -95,7 +95,7 @@
     </language>
   </registry>
   <node concept="13h7C7" id="4_rWrCMjEu8">
-    <ref role="13h7C2" to="cxxa:2qHrqKSDaBR" resolve="SequenceDiagramComponentParticipant" />
+    <ref role="13h7C2" to="cxxa:2qHrqKSDaBR" resolve="SequenceDiagramComponentDiagramParticipant" />
     <node concept="13hLZK" id="4_rWrCMjEu9" role="13h7CW">
       <node concept="3clFbS" id="4_rWrCMjEua" role="2VODD2" />
     </node>
@@ -215,6 +215,38 @@
         </node>
       </node>
       <node concept="17QB3L" id="6o6v_lVKYlv" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2oZKZkZISne">
+    <ref role="13h7C2" to="cxxa:2oZKZkZIRF_" resolve="SequenceDiagramUsecaseDiagramActorActor" />
+    <node concept="13hLZK" id="2oZKZkZISnf" role="13h7CW">
+      <node concept="3clFbS" id="2oZKZkZISng" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2oZKZkZISnL" role="13h7CS">
+      <property role="TrG5h" value="text" />
+      <ref role="13i0hy" to="lc7h:1I7wo92VgIo" resolve="text" />
+      <node concept="3Tm1VV" id="2oZKZkZISnM" role="1B3o_S" />
+      <node concept="3clFbS" id="2oZKZkZISoN" role="3clF47">
+        <node concept="3clFbF" id="2oZKZkZISxy" role="3cqZAp">
+          <node concept="3cpWs3" id="2oZKZkZOzQj" role="3clFbG">
+            <node concept="Xl_RD" id="2oZKZkZOzR3" role="3uHU7B">
+              <property role="Xl_RC" value="actor " />
+            </node>
+            <node concept="2OqwBi" id="2oZKZkZIV9h" role="3uHU7w">
+              <node concept="2OqwBi" id="2oZKZkZISOt" role="2Oq$k0">
+                <node concept="13iPFW" id="2oZKZkZISxx" role="2Oq$k0" />
+                <node concept="3TrEf2" id="2oZKZkZIUNz" role="2OqNvi">
+                  <ref role="3Tt5mk" to="cxxa:2oZKZkZISgG" resolve="actor" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="2oZKZkZIVvp" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="2oZKZkZISoO" role="3clF45" />
     </node>
   </node>
 </model>

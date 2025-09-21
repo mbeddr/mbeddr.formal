@@ -13,6 +13,7 @@
   <accessoryModels />
   <dependencies>
     <dependency reexport="false">6f31bc85-cbcc-4dcf-ada4-35da43e6832c(com.symo.plantuml)</dependency>
+    <dependency reexport="false">792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:9d69e719-78c8-4286-90db-fb19c107d049:com.mbeddr.mpsutil.grammarcells" version="2" />
@@ -55,6 +56,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)" version="0" />
     <module reference="6f31bc85-cbcc-4dcf-ada4-35da43e6832c(com.symo.plantuml)" version="0" />
     <module reference="c7f99e92-818b-4094-a2f9-369356a5259c(com.symo.plantuml.ext)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />

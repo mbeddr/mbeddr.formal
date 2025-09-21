@@ -1429,7 +1429,7 @@
   </node>
   <node concept="13h7C7" id="6CyxyHibNNA">
     <property role="3GE5qa" value="diagram.uml.usecase" />
-    <ref role="13h7C2" to="udwj:6CyxyHibNNa" resolve="ActorDeclaration" />
+    <ref role="13h7C2" to="udwj:6CyxyHibNNa" resolve="UsecaseDiagramActor" />
     <node concept="13hLZK" id="6CyxyHibNNB" role="13h7CW">
       <node concept="3clFbS" id="6CyxyHibNNC" role="2VODD2" />
     </node>
@@ -1738,7 +1738,7 @@
                   <node concept="2Rf3mk" id="6BNnCp_rWY5" role="2OqNvi">
                     <node concept="1xMEDy" id="6BNnCp_rWY7" role="1xVPHs">
                       <node concept="chp4Y" id="6BNnCp_rXk9" role="ri$Ld">
-                        <ref role="cht4Q" to="udwj:6CyxyHibNNa" resolve="ActorDeclaration" />
+                        <ref role="cht4Q" to="udwj:6CyxyHibNNa" resolve="UsecaseDiagramActor" />
                       </node>
                     </node>
                   </node>
@@ -1752,7 +1752,7 @@
             </node>
             <node concept="2Zo12i" id="6BNnCp_rWbQ" role="2OqNvi">
               <node concept="chp4Y" id="6BNnCp_rWng" role="2Zo12j">
-                <ref role="cht4Q" to="udwj:6CyxyHibNNa" resolve="ActorDeclaration" />
+                <ref role="cht4Q" to="udwj:6CyxyHibNNa" resolve="UsecaseDiagramActor" />
               </node>
             </node>
           </node>

@@ -283,7 +283,7 @@
     <node concept="1N5Pfh" id="6BNnCp_rUsU" role="1Mr941">
       <ref role="1N5Vy1" to="udwj:6BNnCp_rSNP" resolve="actor" />
       <node concept="1dDu$B" id="6BNnCp_rUtJ" role="1N6uqs">
-        <ref role="1dDu$A" to="udwj:6CyxyHibNNa" resolve="ActorDeclaration" />
+        <ref role="1dDu$A" to="udwj:6CyxyHibNNa" resolve="UsecaseDiagramActor" />
       </node>
     </node>
   </node>

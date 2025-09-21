@@ -40,81 +40,58 @@
       </concept>
     </language>
   </registry>
-  <node concept="1pqNnw" id="75npNYZvABA">
-    <property role="TrG5h" value="_100_usecase_diagram" />
-    <node concept="c$yPq" id="75npNYZw7b4" role="1pqCw0">
+  <node concept="1pqNnw" id="2oZKZkZKeW7">
+    <property role="TrG5h" value="_110_usecase_diagram" />
+    <node concept="c$yPq" id="2oZKZkZKeW8" role="1pqCw0">
       <property role="c$yrf" value="example of a usecase diagram" />
     </node>
-    <node concept="c$xRF" id="75npNYZw7b5" role="1pqCw0" />
-    <node concept="VLBZa" id="75npNYZyqAA" role="1pqCw0">
+    <node concept="c$xRF" id="2oZKZkZKeW9" role="1pqCw0" />
+    <node concept="VLBZa" id="2oZKZkZKeWa" role="1pqCw0">
       <property role="145Srp" value="100" />
-      <property role="TrG5h" value="Vending Maching" />
+      <property role="TrG5h" value="perception_usecases" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
-      <node concept="1pqCwu" id="75npNYZyqAB" role="1pqCzW" />
-      <node concept="S3rFx" id="75npNYZyqAF" role="1pqCzW">
-        <property role="TrG5h" value="User" />
+      <node concept="1pqCwu" id="2oZKZkZKeWb" role="1pqCzW" />
+      <node concept="S3rFx" id="2oZKZkZKeWd" role="1pqCzW">
+        <property role="TrG5h" value="Programmer" />
       </node>
-      <node concept="S3rFx" id="75npNYZyqAI" role="1pqCzW">
-        <property role="TrG5h" value="Maintenance" />
+      <node concept="S09t2" id="2oZKZkZKeWe" role="1pqCzW">
+        <property role="TrG5h" value="Investigate_Perception_Stack_Performance" />
       </node>
-      <node concept="S09t2" id="75npNYZyqAL" role="1pqCzW">
-        <property role="TrG5h" value="Buy_Coffee" />
+      <node concept="S09t2" id="2oZKZkZKeWz" role="1pqCzW">
+        <property role="TrG5h" value="Investigate_Object_Detection_Accuracy" />
       </node>
-      <node concept="cyzMF" id="75npNYZyqAO" role="1pqCzW">
+      <node concept="S09t2" id="2oZKZkZKeW_" role="1pqCzW">
+        <property role="TrG5h" value="Investigate_Sensor_Fusion_Accuracy" />
+      </node>
+      <node concept="c$xRF" id="2oZKZkZKeWA" role="1pqCzW" />
+      <node concept="cyzMF" id="2oZKZkZKeWC" role="1pqCzW">
+        <property role="1pv0MD" value="1I7wo92YSOE/ARROW" />
+        <node concept="cBd9P" id="2oZKZkZKeWE" role="1pvUZv">
+          <ref role="cBd9N" node="2oZKZkZKeWd" resolve="Programmer" />
+        </node>
+        <node concept="cBaKt" id="2oZKZkZKeWF" role="1pvUZs">
+          <ref role="cBaKr" node="2oZKZkZKeWe" resolve="Investigate_Perception_Stack_Performance" />
+        </node>
+      </node>
+      <node concept="cyzMF" id="2oZKZkZKeWH" role="1pqCzW">
         <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
-        <node concept="cBd9P" id="75npNYZyqAQ" role="1pvUZv">
-          <ref role="cBd9N" node="75npNYZyqAF" resolve="User" />
+        <node concept="cBaKt" id="2oZKZkZKeWJ" role="1pvUZv">
+          <ref role="cBaKr" node="2oZKZkZKeWe" resolve="Investigate_Perception_Stack_Performance" />
         </node>
-        <node concept="cBaKt" id="75npNYZyqAR" role="1pvUZs">
-          <ref role="cBaKr" node="75npNYZyqAL" resolve="Buy_Coffee" />
+        <node concept="cBaKt" id="2oZKZkZKeWK" role="1pvUZs">
+          <ref role="cBaKr" node="2oZKZkZKeWz" resolve="Investigate_Object_Detection_Accuracy" />
         </node>
       </node>
-      <node concept="S09t2" id="75npNYZyqAV" role="1pqCzW">
-        <property role="TrG5h" value="Repair" />
-      </node>
-      <node concept="cyzMF" id="75npNYZyqAS" role="1pqCzW">
+      <node concept="cyzMF" id="2oZKZkZKeWL" role="1pqCzW">
         <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
-        <node concept="cBd9P" id="75npNYZyqAT" role="1pvUZv">
-          <ref role="cBd9N" node="75npNYZyqAI" resolve="Maintenance" />
+        <node concept="cBaKt" id="2oZKZkZKeWM" role="1pvUZv">
+          <ref role="cBaKr" node="2oZKZkZKeWe" resolve="Investigate_Perception_Stack_Performance" />
         </node>
-        <node concept="cBaKt" id="75npNYZyqAU" role="1pvUZs">
-          <ref role="cBaKr" node="75npNYZyqAV" resolve="Repair" />
-        </node>
-      </node>
-      <node concept="S09t2" id="75npNYZyqAX" role="1pqCzW">
-        <property role="TrG5h" value="Start_Machine" />
-      </node>
-      <node concept="cyzMF" id="75npNYZyqB0" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8Q/ARROW_LEFT" />
-        <node concept="cBd9P" id="75npNYZyqB1" role="1pvUZv">
-          <ref role="cBd9N" node="75npNYZyqAF" resolve="User" />
-        </node>
-        <node concept="cBaKt" id="75npNYZyqB2" role="1pvUZs">
-          <ref role="cBaKr" node="75npNYZyqAX" resolve="Start_Machine" />
+        <node concept="cBaKt" id="2oZKZkZKeWN" role="1pvUZs">
+          <ref role="cBaKr" node="2oZKZkZKeW_" resolve="Investigate_Sensor_Fusion_Accuracy" />
         </node>
       </node>
-      <node concept="cyzMF" id="75npNYZyqB3" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
-        <node concept="cBd9P" id="75npNYZyqB4" role="1pvUZv">
-          <ref role="cBd9N" node="75npNYZyqAI" resolve="Maintenance" />
-        </node>
-        <node concept="cBaKt" id="75npNYZyqB5" role="1pvUZs">
-          <ref role="cBaKr" node="75npNYZyqAX" resolve="Start_Machine" />
-        </node>
-      </node>
-      <node concept="S09t2" id="75npNYZyqB7" role="1pqCzW">
-        <property role="TrG5h" value="Pay" />
-      </node>
-      <node concept="cyzMF" id="75npNYZyqBa" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
-        <node concept="cBaKt" id="75npNYZyqBc" role="1pvUZv">
-          <ref role="cBaKr" node="75npNYZyqAL" resolve="Buy_Coffee" />
-        </node>
-        <node concept="cBaKt" id="75npNYZyqBd" role="1pvUZs">
-          <ref role="cBaKr" node="75npNYZyqB7" resolve="Pay" />
-        </node>
-      </node>
-      <node concept="1pqCE1" id="75npNYZyqAD" role="1pqCzW" />
+      <node concept="1pqCE1" id="2oZKZkZKeWx" role="1pqCzW" />
     </node>
   </node>
 </model>
