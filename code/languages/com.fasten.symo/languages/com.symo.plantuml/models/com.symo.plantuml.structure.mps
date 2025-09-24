@@ -268,28 +268,12 @@
     <property role="3GE5qa" value="diagram.uml.component" />
     <property role="TrG5h" value="ComponentDeclaration" />
     <property role="34LRSv" value="component" />
-    <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
-    <node concept="PrWs8" id="1I7wo92W$3m" role="PzmwI">
-      <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
-    </node>
-    <node concept="PrWs8" id="6CyxyHi9vX0" role="PzmwI">
-      <ref role="PrY4T" node="6CyxyHi9vWZ" resolve="INamedElementWithLongDescription" />
-    </node>
-    <node concept="PrWs8" id="q$1bLU3N_7" role="PzmwI">
-      <ref role="PrY4T" node="q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
-    </node>
+    <ref role="1TJDcQ" node="sWQiz9_DoX" resolve="ComponentDeclarationBase" />
     <node concept="PrWs8" id="3acQo$0ylzs" role="PzmwI">
       <ref role="PrY4T" to="ak5:3acQo$0xi7O" resolve="IComponentDefinitionLike" />
     </node>
     <node concept="PrWs8" id="3acQo$0yS9d" role="PzmwI">
       <ref role="PrY4T" to="ak5:3acQo$0xi7V" resolve="IComponentInstanceLike" />
-    </node>
-    <node concept="1TJgyj" id="40kNClye_5t" role="1TKVEi">
-      <property role="IQ2ns" value="4617542590235562333" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="substructure" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="1I7wo92WYNu">
@@ -325,7 +309,7 @@
       <property role="IQ2ns" value="1983696557349277306" />
       <property role="20kJfa" value="component" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="1I7wo92W$3l" resolve="ComponentDeclaration" />
+      <ref role="20lvS9" node="sWQiz9_DoX" resolve="ComponentDeclarationBase" />
     </node>
     <node concept="PrWs8" id="1I7wo92YLnb" role="PzmwI">
       <ref role="PrY4T" node="1I7wo92Y2Ts" resolve="IChannelEndpoint" />
@@ -1638,6 +1622,29 @@
       <property role="20kJfa" value="port" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="40kNClyHR47" resolve="PortDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="sWQiz9_DoX">
+    <property role="EcuMT" value="521530426072143421" />
+    <property role="TrG5h" value="ComponentDeclarationBase" />
+    <property role="3GE5qa" value="diagram.uml.component" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
+    <node concept="PrWs8" id="1I7wo92W$3m" role="PzmwI">
+      <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="6CyxyHi9vX0" role="PzmwI">
+      <ref role="PrY4T" node="6CyxyHi9vWZ" resolve="INamedElementWithLongDescription" />
+    </node>
+    <node concept="PrWs8" id="q$1bLU3N_7" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
+    </node>
+    <node concept="1TJgyj" id="sWQiz9_Dp0" role="1TKVEi">
+      <property role="IQ2ns" value="521530426072143424" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="substructure" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
     </node>
   </node>
 </model>

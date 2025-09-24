@@ -216,7 +216,7 @@
   <node concept="2S6QgY" id="40kNClywJSz">
     <property role="3GE5qa" value="diagram.uml.component" />
     <property role="TrG5h" value="addComponentBody" />
-    <ref role="2ZfgGC" to="udwj:1I7wo92W$3l" resolve="ComponentDeclaration" />
+    <ref role="2ZfgGC" to="udwj:sWQiz9_DoX" resolve="ComponentDeclarationBase" />
     <node concept="2S6ZIM" id="40kNClywJS$" role="2ZfVej">
       <node concept="3clFbS" id="40kNClywJS_" role="2VODD2">
         <node concept="3clFbF" id="40kNClywKpQ" role="3cqZAp">
@@ -233,7 +233,7 @@
             <node concept="2OqwBi" id="40kNClywL1f" role="2Oq$k0">
               <node concept="2Sf5sV" id="40kNClywKFE" role="2Oq$k0" />
               <node concept="3Tsc0h" id="40kNClywNaW" role="2OqNvi">
-                <ref role="3TtcxE" to="udwj:40kNClye_5t" resolve="substructure" />
+                <ref role="3TtcxE" to="udwj:sWQiz9_Dp0" resolve="substructure" />
               </node>
             </node>
             <node concept="TSZUe" id="40kNClywSVC" role="2OqNvi">
