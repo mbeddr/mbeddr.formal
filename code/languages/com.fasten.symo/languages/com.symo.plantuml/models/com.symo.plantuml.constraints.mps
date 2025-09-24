@@ -140,7 +140,7 @@
     <node concept="1N5Pfh" id="1I7wo92Y0U8" role="1Mr941">
       <ref role="1N5Vy1" to="udwj:1I7wo92Y0TU" resolve="component" />
       <node concept="1dDu$B" id="6CyxyHhTbuR" role="1N6uqs">
-        <ref role="1dDu$A" to="udwj:1I7wo92W$3l" resolve="ComponentDeclaration" />
+        <ref role="1dDu$A" to="udwj:sWQiz9_DoX" resolve="ComponentDeclarationBase" />
       </node>
     </node>
   </node>

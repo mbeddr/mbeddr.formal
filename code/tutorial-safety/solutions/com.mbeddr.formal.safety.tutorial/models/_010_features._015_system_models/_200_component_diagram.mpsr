@@ -47,7 +47,7 @@
     <node concept="c$xRF" id="75npNYZyqAs" role="1pqCw0" />
     <node concept="1pqCzZ" id="75npNYZyqAt" role="1pqCw0">
       <property role="145Srp" value="70" />
-      <property role="TrG5h" value="Sender-Receiver" />
+      <property role="TrG5h" value="Perception_Stack" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="75npNYZyqAu" role="1pqCzW" />
       <node concept="1pts5n" id="75npNYZyqAv" role="1pqCzW">

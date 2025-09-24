@@ -5,7 +5,7 @@
   <registry>
     <language id="c7f99e92-818b-4094-a2f9-369356a5259c" name="com.symo.plantuml.ext">
       <concept id="2787004330864323063" name="com.symo.plantuml.ext.structure.SequenceDiagramComponentDiagramParticipant" flags="ng" index="u2shr">
-        <child id="2787004330864331504" name="componentRef" index="u2qts" />
+        <reference id="8688190019421661359" name="component" index="ga$T_" />
       </concept>
     </language>
     <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
@@ -25,9 +25,6 @@
       <concept id="1983696557348555523" name="com.symo.plantuml.structure.EndUmlCommand" flags="ng" index="1pqCE1" />
       <concept id="1983696557348533346" name="com.symo.plantuml.structure.PlantUmlRoot" flags="ng" index="1pqNnw">
         <child id="1983696557348555138" name="content" index="1pqCw0" />
-      </concept>
-      <concept id="1983696557349277305" name="com.symo.plantuml.structure.ComponentRef" flags="ng" index="1pvSZV">
-        <reference id="1983696557349277306" name="component" index="1pvSZS" />
       </concept>
       <concept id="478512667932278172" name="com.symo.plantuml.structure.SequenceDiagramElse" flags="ng" index="1Y1b$w" />
       <concept id="478512667932278169" name="com.symo.plantuml.structure.PlantUmlSequenceDiagramGroupBase" flags="ng" index="1Y1b$_">
@@ -75,24 +72,16 @@
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="1HEyn0wZcwy" role="1pqCzW" />
       <node concept="u2shr" id="1HEyn0wZcwP" role="1pqCzW">
-        <node concept="1pvSZV" id="1HEyn0wZcwR" role="u2qts">
-          <ref role="1pvSZS" node="75npNYZyqBj" resolve="Radar_Objects_Detection" />
-        </node>
+        <ref role="ga$T_" node="75npNYZyqBj" resolve="Radar_Objects_Detection" />
       </node>
       <node concept="u2shr" id="1HEyn0wZcwS" role="1pqCzW">
-        <node concept="1pvSZV" id="1HEyn0wZcwT" role="u2qts">
-          <ref role="1pvSZS" node="75npNYZyqAw" resolve="Camera_Objects_Detection" />
-        </node>
+        <ref role="ga$T_" node="75npNYZyqAw" resolve="Camera_Objects_Detection" />
       </node>
       <node concept="u2shr" id="1HEyn0wZcwU" role="1pqCzW">
-        <node concept="1pvSZV" id="1HEyn0wZcwV" role="u2qts">
-          <ref role="1pvSZS" node="75npNYZyqBu" resolve="Sensors_Fusion" />
-        </node>
+        <ref role="ga$T_" node="75npNYZyqBu" resolve="Sensors_Fusion" />
       </node>
       <node concept="u2shr" id="1HEyn0wZcwW" role="1pqCzW">
-        <node concept="1pvSZV" id="1HEyn0wZcwX" role="u2qts">
-          <ref role="1pvSZS" node="1HEyn0wZcwl" resolve="Scene_Builder" />
-        </node>
+        <ref role="ga$T_" node="1HEyn0wZcwl" resolve="Scene_Builder" />
       </node>
       <node concept="c$xRF" id="1HEyn0wZcwB" role="1pqCzW" />
       <node concept="1Y1b$F" id="1HEyn0wZcwC" role="1pqCzW">

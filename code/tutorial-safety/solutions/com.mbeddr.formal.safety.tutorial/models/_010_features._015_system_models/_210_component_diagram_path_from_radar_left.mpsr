@@ -7,9 +7,6 @@
       <concept id="7351702347342571918" name="com.symo.plantuml.ext.structure.ComponentDiagramComponentDeclarationReuse" flags="ng" index="tL1vr">
         <reference id="7351702347342908998" name="component" index="tKv0j" />
       </concept>
-      <concept id="7351702347342641916" name="com.symo.plantuml.ext.structure.ComponentDiagramComponentDeclarationReuseRef" flags="ng" index="tLgiD">
-        <reference id="7351702347342641920" name="componentDeclarationReuse" index="tLgll" />
-      </concept>
     </language>
     <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
       <concept id="7634549724643897373" name="com.symo.plantuml.structure.AbstractPlantumlLinkBase" flags="ng" index="cxYUr">
@@ -37,6 +34,9 @@
         <child id="1983696557348555138" name="content" index="1pqCw0" />
       </concept>
       <concept id="1983696557349255043" name="com.symo.plantuml.structure.ComponentsChannel" flags="ng" index="1ps3o1" />
+      <concept id="1983696557349277305" name="com.symo.plantuml.structure.ComponentRef" flags="ng" index="1pvSZV">
+        <reference id="1983696557349277306" name="component" index="1pvSZS" />
+      </concept>
       <concept id="478512667955203960" name="com.symo.plantuml.structure.IPlantUmlEntityWithColor" flags="ngI" index="1ZmCJ4">
         <property id="478512667955203961" name="color" index="1ZmCJ5" />
       </concept>
@@ -84,29 +84,29 @@
       <node concept="c$xRF" id="1HEyn0wZcxO" role="1pqCzW" />
       <node concept="1ps3o1" id="1HEyn0wZcxc" role="1pqCzW">
         <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
-        <node concept="tLgiD" id="1HEyn0wZcxC" role="1pvUZv">
-          <ref role="tLgll" node="1HEyn0wZcxw" resolve="Radar_Right" />
+        <node concept="1pvSZV" id="7SdKVmpewo4" role="1pvUZs">
+          <ref role="1pvSZS" node="1HEyn0wZcxz" resolve="Radar_Objects_Detection" />
         </node>
-        <node concept="tLgiD" id="1HEyn0wZcxE" role="1pvUZs">
-          <ref role="tLgll" node="1HEyn0wZcxz" resolve="Radar_Objects_Detection" />
+        <node concept="1pvSZV" id="7SdKVmpewo2" role="1pvUZv">
+          <ref role="1pvSZS" node="1HEyn0wZcxw" resolve="Radar_Right" />
         </node>
       </node>
       <node concept="1ps3o1" id="1HEyn0wZcxm" role="1pqCzW">
         <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
-        <node concept="tLgiD" id="1HEyn0wZcxA" role="1pvUZv">
-          <ref role="tLgll" node="1HEyn0wZcxz" resolve="Radar_Objects_Detection" />
+        <node concept="1pvSZV" id="7SdKVmpewo7" role="1pvUZv">
+          <ref role="1pvSZS" node="1HEyn0wZcxz" resolve="Radar_Objects_Detection" />
         </node>
-        <node concept="tLgiD" id="1HEyn0wZcxI" role="1pvUZs">
-          <ref role="tLgll" node="1HEyn0wZcx$" resolve="Sensors_Fusion" />
+        <node concept="1pvSZV" id="7SdKVmpewoa" role="1pvUZs">
+          <ref role="1pvSZS" node="1HEyn0wZcx$" resolve="Sensors_Fusion" />
         </node>
       </node>
       <node concept="1ps3o1" id="1HEyn0wZcxr" role="1pqCzW">
         <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
-        <node concept="tLgiD" id="1HEyn0wZcxK" role="1pvUZv">
-          <ref role="tLgll" node="1HEyn0wZcx$" resolve="Sensors_Fusion" />
+        <node concept="1pvSZV" id="7SdKVmpewod" role="1pvUZv">
+          <ref role="1pvSZS" node="1HEyn0wZcx$" resolve="Sensors_Fusion" />
         </node>
-        <node concept="tLgiD" id="1HEyn0wZcxM" role="1pvUZs">
-          <ref role="tLgll" node="1HEyn0wZcx_" resolve="Scene_Builder" />
+        <node concept="1pvSZV" id="7SdKVmpewog" role="1pvUZs">
+          <ref role="1pvSZS" node="1HEyn0wZcx_" resolve="Scene_Builder" />
         </node>
       </node>
       <node concept="c$xRF" id="1HEyn0wZcys" role="1pqCzW" />
@@ -145,8 +145,8 @@
             </node>
           </node>
         </node>
-        <node concept="tLgiD" id="1HEyn0wZcyq" role="1oxsAa">
-          <ref role="tLgll" node="1HEyn0wZcxw" resolve="Radar_Right" />
+        <node concept="1pvSZV" id="7SdKVmpewoj" role="1oxsAa">
+          <ref role="1pvSZS" node="1HEyn0wZcxw" resolve="Radar_Right" />
         </node>
       </node>
       <node concept="1pqCE1" id="1HEyn0wZcxu" role="1pqCzW" />

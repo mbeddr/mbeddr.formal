@@ -48,6 +48,9 @@
       <concept id="2787004330863233384" name="com.symo.plantuml.structure.PlantUmlPlainTextFragment" flags="ng" index="uemj4">
         <child id="2787004330863233391" name="text" index="uemj3" />
       </concept>
+      <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
+        <child id="521530426072143424" name="substructure" index="3eE$XC" />
+      </concept>
       <concept id="1983696557348555164" name="com.symo.plantuml.structure.StartUmlCommand" flags="ng" index="1pqCwu" />
       <concept id="1983696557348555132" name="com.symo.plantuml.structure.PlantUmlDiagramBase" flags="ng" index="1pqCzY">
         <property id="8400506447498256066" name="zoom" index="145Srp" />
@@ -55,9 +58,7 @@
       </concept>
       <concept id="1983696557348555133" name="com.symo.plantuml.structure.PlantUmlComponentDiagram" flags="ng" index="1pqCzZ" />
       <concept id="1983696557348555523" name="com.symo.plantuml.structure.EndUmlCommand" flags="ng" index="1pqCE1" />
-      <concept id="1983696557348896981" name="com.symo.plantuml.structure.ComponentDeclaration" flags="ng" index="1pts5n">
-        <child id="4617542590235562333" name="substructure" index="ybDZo" />
-      </concept>
+      <concept id="1983696557348896981" name="com.symo.plantuml.structure.ComponentDeclaration" flags="ng" index="1pts5n" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -188,15 +189,15 @@
         <node concept="1pqCwu" id="7JbQva82kqr" role="1pqCzW" />
         <node concept="1pts5n" id="7JbQva82kqY" role="1pqCzW">
           <property role="TrG5h" value="Parent" />
-          <node concept="1pts5n" id="7JbQva82kr1" role="ybDZo">
-            <property role="TrG5h" value="Child" />
-          </node>
           <node concept="LIFWc" id="7JbQva82kvF" role="lGtFl">
             <property role="ZRATv" value="true" />
             <property role="OXtK3" value="true" />
             <property role="p6zMq" value="1" />
             <property role="p6zMs" value="1" />
             <property role="LIFWd" value="Constant_kze313_a0g0a" />
+          </node>
+          <node concept="1pts5n" id="7JbQva82kr1" role="3eE$XC">
+            <property role="TrG5h" value="Child" />
           </node>
         </node>
         <node concept="1pqCE1" id="7JbQva82kqC" role="1pqCzW" />
@@ -231,15 +232,15 @@
         <node concept="1pqCwu" id="7JbQva82kvr" role="1pqCzW" />
         <node concept="1pts5n" id="7JbQva82kvs" role="1pqCzW">
           <property role="TrG5h" value="Parent" />
-          <node concept="1pts5n" id="7JbQva82kvt" role="ybDZo">
-            <property role="TrG5h" value="Child" />
-          </node>
           <node concept="LIFWc" id="7JbQva82kvu" role="lGtFl">
             <property role="ZRATv" value="true" />
             <property role="OXtK3" value="true" />
             <property role="p6zMq" value="1" />
             <property role="p6zMs" value="1" />
             <property role="LIFWd" value="Constant_kze313_c0g0a" />
+          </node>
+          <node concept="1pts5n" id="7JbQva82kvt" role="3eE$XC">
+            <property role="TrG5h" value="Child" />
           </node>
         </node>
         <node concept="1pqCE1" id="7JbQva82kvv" role="1pqCzW" />
