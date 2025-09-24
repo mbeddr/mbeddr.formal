@@ -38,7 +38,7 @@
       <concept id="7647822637848461119" name="com.symo.plantuml.structure.INamedElementWithLongDescription" flags="ngI" index="S1R$k">
         <child id="8400506447497927053" name="longDescription" index="14UC6m" />
       </concept>
-      <concept id="7647822637849066698" name="com.symo.plantuml.structure.ActorDeclaration" flags="ng" index="S3rFx" />
+      <concept id="7647822637849066698" name="com.symo.plantuml.structure.UsecaseDiagramActor" flags="ng" index="S3rFx" />
       <concept id="7647822637844199905" name="com.symo.plantuml.structure.PlantUmlUsecaseDiagram" flags="ng" index="VLBZa" />
       <concept id="8400506447497059002" name="com.symo.plantuml.structure.SkinparamCommand" flags="ng" index="14T4ax">
         <child id="8400506447497059019" name="parameter" index="14T4bg" />
@@ -48,6 +48,9 @@
       </concept>
       <concept id="8400506447496619781" name="com.symo.plantuml.structure.PackageDeclaration" flags="ng" index="14ZFWu">
         <child id="8400506447496650874" name="content" index="14Zzxx" />
+      </concept>
+      <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
+        <child id="521530426072143424" name="substructure" index="3eE$XC" />
       </concept>
       <concept id="1822469624835081941" name="com.symo.plantuml.structure.MindmapEntry" flags="ng" index="3jtF2y">
         <property id="1822469624835081943" name="indentation" index="3jtF2w" />
@@ -74,9 +77,7 @@
       </concept>
       <concept id="1983696557349255043" name="com.symo.plantuml.structure.ComponentsChannel" flags="ng" index="1ps3o1" />
       <concept id="1983696557349006558" name="com.symo.plantuml.structure.InterfaceDeclaration" flags="ng" index="1pt6Ps" />
-      <concept id="1983696557348896981" name="com.symo.plantuml.structure.ComponentDeclaration" flags="ng" index="1pts5n">
-        <child id="4617542590235562333" name="substructure" index="ybDZo" />
-      </concept>
+      <concept id="1983696557348896981" name="com.symo.plantuml.structure.ComponentDeclaration" flags="ng" index="1pts5n" />
       <concept id="1983696557349277305" name="com.symo.plantuml.structure.ComponentRef" flags="ng" index="1pvSZV">
         <reference id="1983696557349277306" name="component" index="1pvSZS" />
       </concept>
@@ -123,7 +124,7 @@
         <property id="478512667926720610" name="longDescription" index="1YVZju" />
         <property id="478512667939699342" name="create" index="1ZHvSM" />
       </concept>
-      <concept id="478512667922586651" name="com.symo.plantuml.structure.Actor" flags="ng" index="1YEdyB" />
+      <concept id="478512667922586651" name="com.symo.plantuml.structure.SequenceDiagramActor" flags="ng" index="1YEdyB" />
       <concept id="478512667928158546" name="com.symo.plantuml.structure.SequenceDiagramParticipantBaseRef" flags="ng" index="1YLunI">
         <reference id="478512667928158548" name="entity" index="1YLunC" />
       </concept>
@@ -710,6 +711,7 @@
     <node concept="1YE28Q" id="q$1bLS4IZg" role="1pqCw0">
       <property role="145Srp" value="80" />
       <property role="TrG5h" value="simple sequence diagram" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="q$1bLS6_rd" role="1pqCzW" />
       <node concept="c$xRF" id="q$1bLSuoL$" role="1pqCzW" />
       <node concept="c$yPq" id="q$1bLS4IZh" role="1pqCzW">
@@ -1924,105 +1926,105 @@
       <node concept="1pqCwu" id="40kNClyhHd6" role="1pqCzW" />
       <node concept="1pts5n" id="40kNClyhHdF" role="1pqCzW">
         <property role="TrG5h" value="Parent" />
-        <node concept="1pts5n" id="40kNClyCjwf" role="ybDZo">
+        <node concept="1pts5n" id="40kNClyCjwf" role="3eE$XC">
           <property role="TrG5h" value="Child_1" />
-          <node concept="yCVY2" id="6o6v_lVKA$R" role="ybDZo">
+          <node concept="yCVY2" id="6o6v_lVKA$R" role="3eE$XC">
             <property role="TrG5h" value="Child1_OutPort_1" />
           </node>
         </node>
-        <node concept="1pts5n" id="40kNClyELq2" role="ybDZo">
+        <node concept="1pts5n" id="40kNClyELq2" role="3eE$XC">
           <property role="TrG5h" value="Child_2" />
-          <node concept="1pts5n" id="40kNClyHR3J" role="ybDZo">
+          <node concept="1pts5n" id="40kNClyHR3J" role="3eE$XC">
             <property role="TrG5h" value="Child_2_1" />
           </node>
-          <node concept="1pts5n" id="40kNClyHR3L" role="ybDZo">
+          <node concept="1pts5n" id="40kNClyHR3L" role="3eE$XC">
             <property role="TrG5h" value="Child_2_2" />
           </node>
-          <node concept="1pts5n" id="40kNClyHR3M" role="ybDZo">
+          <node concept="1pts5n" id="40kNClyHR3M" role="3eE$XC">
             <property role="TrG5h" value="Child_2_3" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA$w" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA$w" role="3eE$XC">
             <property role="TrG5h" value="Child_2_4" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA$x" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA$x" role="3eE$XC">
             <property role="TrG5h" value="Child_2_5" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA$y" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA$y" role="3eE$XC">
             <property role="TrG5h" value="Child_2_6" />
           </node>
-          <node concept="c$xRF" id="40kNClyHR40" role="ybDZo" />
-          <node concept="yCVY2" id="40kNClyNLdP" role="ybDZo">
+          <node concept="c$xRF" id="40kNClyHR40" role="3eE$XC" />
+          <node concept="yCVY2" id="40kNClyNLdP" role="3eE$XC">
             <property role="TrG5h" value="In1" />
           </node>
-          <node concept="yCVY2" id="40kNClyQHAp" role="ybDZo">
+          <node concept="yCVY2" id="40kNClyQHAp" role="3eE$XC">
             <property role="TrG5h" value="Out1" />
           </node>
-          <node concept="1pt6Ps" id="40kNClyHR3F" role="ybDZo">
+          <node concept="1pt6Ps" id="40kNClyHR3F" role="3eE$XC">
             <property role="TrG5h" value="Interf1" />
           </node>
         </node>
-        <node concept="1pts5n" id="6o6v_lVKA$z" role="ybDZo">
+        <node concept="1pts5n" id="6o6v_lVKA$z" role="3eE$XC">
           <property role="TrG5h" value="Child_3" />
-          <node concept="1pts5n" id="6o6v_lVKA$$" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA$$" role="3eE$XC">
             <property role="TrG5h" value="Child_3_1" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA$_" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA$_" role="3eE$XC">
             <property role="TrG5h" value="Child_3_2" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA$A" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA$A" role="3eE$XC">
             <property role="TrG5h" value="Child_3_3" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA$B" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA$B" role="3eE$XC">
             <property role="TrG5h" value="Child_3_4" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA$C" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA$C" role="3eE$XC">
             <property role="TrG5h" value="Child_3_5" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA$D" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA$D" role="3eE$XC">
             <property role="TrG5h" value="Child_3_6" />
           </node>
         </node>
-        <node concept="1pts5n" id="6o6v_lVKA$Z" role="ybDZo">
+        <node concept="1pts5n" id="6o6v_lVKA$Z" role="3eE$XC">
           <property role="TrG5h" value="Child_4" />
-          <node concept="1pts5n" id="6o6v_lVKA_0" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_0" role="3eE$XC">
             <property role="TrG5h" value="Child_4_1" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_1" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_1" role="3eE$XC">
             <property role="TrG5h" value="Child_4_2" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_2" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_2" role="3eE$XC">
             <property role="TrG5h" value="Child_4_3" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_3" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_3" role="3eE$XC">
             <property role="TrG5h" value="Child_4_4" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_4" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_4" role="3eE$XC">
             <property role="TrG5h" value="Child_4_5" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_5" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_5" role="3eE$XC">
             <property role="TrG5h" value="Child_4_6" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_6" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_6" role="3eE$XC">
             <property role="TrG5h" value="Child_4_7" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_7" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_7" role="3eE$XC">
             <property role="TrG5h" value="Child_4_8" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_8" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_8" role="3eE$XC">
             <property role="TrG5h" value="Child_4_9" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_9" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_9" role="3eE$XC">
             <property role="TrG5h" value="Child_4_10" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_a" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_a" role="3eE$XC">
             <property role="TrG5h" value="Child_4_11" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_b" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_b" role="3eE$XC">
             <property role="TrG5h" value="Child_4_12" />
           </node>
         </node>
-        <node concept="c$xRF" id="6o6v_lVKA$I" role="ybDZo" />
-        <node concept="yCVY2" id="6o6v_lVKA$K" role="ybDZo">
+        <node concept="c$xRF" id="6o6v_lVKA$I" role="3eE$XC" />
+        <node concept="yCVY2" id="6o6v_lVKA$K" role="3eE$XC">
           <property role="TrG5h" value="Out_Parent" />
         </node>
       </node>
@@ -2066,13 +2068,13 @@
       <node concept="1pqCwu" id="6o6v_lVKAze" role="1pqCzW" />
       <node concept="1pts5n" id="6o6v_lVKAzg" role="1pqCzW">
         <property role="TrG5h" value="Sender" />
-        <node concept="yCVY2" id="6o6v_lVKA$f" role="ybDZo">
+        <node concept="yCVY2" id="6o6v_lVKA$f" role="3eE$XC">
           <property role="TrG5h" value="senderOut" />
         </node>
       </node>
       <node concept="1pts5n" id="6o6v_lVKAzh" role="1pqCzW">
         <property role="TrG5h" value="Receiver" />
-        <node concept="yCVY2" id="6o6v_lVKA$i" role="ybDZo">
+        <node concept="yCVY2" id="6o6v_lVKA$i" role="3eE$XC">
           <property role="TrG5h" value="receiverIn" />
         </node>
       </node>
@@ -2097,108 +2099,108 @@
       <node concept="1pqCwu" id="6o6v_lVKA_e" role="1pqCzW" />
       <node concept="1pts5n" id="6o6v_lVKA_f" role="1pqCzW">
         <property role="TrG5h" value="Parent" />
-        <node concept="1pts5n" id="6o6v_lVKA_Z" role="ybDZo">
+        <node concept="1pts5n" id="6o6v_lVKA_Z" role="3eE$XC">
           <property role="TrG5h" value="Child_1" />
         </node>
-        <node concept="1pts5n" id="6o6v_lVKA_i" role="ybDZo">
+        <node concept="1pts5n" id="6o6v_lVKA_i" role="3eE$XC">
           <property role="TrG5h" value="Child_2" />
-          <node concept="1pts5n" id="6o6v_lVKA_j" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_j" role="3eE$XC">
             <property role="TrG5h" value="Child_2_1" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_k" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_k" role="3eE$XC">
             <property role="TrG5h" value="Child_2_2" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_l" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_l" role="3eE$XC">
             <property role="TrG5h" value="Child_2_3" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_m" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_m" role="3eE$XC">
             <property role="TrG5h" value="Child_2_4" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_n" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_n" role="3eE$XC">
             <property role="TrG5h" value="Child_2_5" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_o" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_o" role="3eE$XC">
             <property role="TrG5h" value="Child_2_6" />
           </node>
         </node>
-        <node concept="1pts5n" id="6o6v_lVKA_t" role="ybDZo">
+        <node concept="1pts5n" id="6o6v_lVKA_t" role="3eE$XC">
           <property role="TrG5h" value="Child_3" />
-          <node concept="1pts5n" id="6o6v_lVKA_u" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_u" role="3eE$XC">
             <property role="TrG5h" value="Child_3_1" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_v" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_v" role="3eE$XC">
             <property role="TrG5h" value="Child_3_2" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_w" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_w" role="3eE$XC">
             <property role="TrG5h" value="Child_3_3" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_x" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_x" role="3eE$XC">
             <property role="TrG5h" value="Child_3_4" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_y" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_y" role="3eE$XC">
             <property role="TrG5h" value="Child_3_5" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_z" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_z" role="3eE$XC">
             <property role="TrG5h" value="Child_3_6" />
           </node>
         </node>
-        <node concept="1pts5n" id="6o6v_lVKA_$" role="ybDZo">
+        <node concept="1pts5n" id="6o6v_lVKA_$" role="3eE$XC">
           <property role="TrG5h" value="Child_4" />
-          <node concept="1pts5n" id="6o6v_lVKA__" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA__" role="3eE$XC">
             <property role="TrG5h" value="Child_4_1" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_A" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_A" role="3eE$XC">
             <property role="TrG5h" value="Child_4_2" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_B" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_B" role="3eE$XC">
             <property role="TrG5h" value="Child_4_3" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_C" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_C" role="3eE$XC">
             <property role="TrG5h" value="Child_4_4" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_D" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_D" role="3eE$XC">
             <property role="TrG5h" value="Child_4_5" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_E" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_E" role="3eE$XC">
             <property role="TrG5h" value="Child_4_6" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_F" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_F" role="3eE$XC">
             <property role="TrG5h" value="Child_4_7" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_G" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_G" role="3eE$XC">
             <property role="TrG5h" value="Child_4_8" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_H" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_H" role="3eE$XC">
             <property role="TrG5h" value="Child_4_9" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_I" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_I" role="3eE$XC">
             <property role="TrG5h" value="Child_4_10" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_J" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_J" role="3eE$XC">
             <property role="TrG5h" value="Child_4_11" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKA_K" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKA_K" role="3eE$XC">
             <property role="TrG5h" value="Child_4_12" />
           </node>
         </node>
-        <node concept="1pts5n" id="6o6v_lVKAA1" role="ybDZo">
+        <node concept="1pts5n" id="6o6v_lVKAA1" role="3eE$XC">
           <property role="TrG5h" value="Child_5" />
-          <node concept="1pts5n" id="6o6v_lVKAA2" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKAA2" role="3eE$XC">
             <property role="TrG5h" value="Child_5_1" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKAA3" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKAA3" role="3eE$XC">
             <property role="TrG5h" value="Child_5_2" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKAA4" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKAA4" role="3eE$XC">
             <property role="TrG5h" value="Child_5_3" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKAA5" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKAA5" role="3eE$XC">
             <property role="TrG5h" value="Child_5_4" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKAA6" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKAA6" role="3eE$XC">
             <property role="TrG5h" value="Child_5_5" />
           </node>
-          <node concept="1pts5n" id="6o6v_lVKAA7" role="ybDZo">
+          <node concept="1pts5n" id="6o6v_lVKAA7" role="3eE$XC">
             <property role="TrG5h" value="Child_5_6" />
           </node>
         </node>

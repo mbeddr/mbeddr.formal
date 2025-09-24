@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:05142504-32bf-4275-bd1c-d1c1eb07650d(_010_features._015_system_models)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="c7f99e92-818b-4094-a2f9-369356a5259c" name="com.symo.plantuml.ext">
+      <concept id="7351702347342571918" name="com.symo.plantuml.ext.structure.ComponentDiagramComponentDeclarationReuse" flags="ng" index="tL1vr">
+        <reference id="7351702347342908998" name="component" index="tKv0j" />
+      </concept>
+    </language>
+    <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
+      <concept id="7634549724643897373" name="com.symo.plantuml.structure.AbstractPlantumlLinkBase" flags="ng" index="cxYUr">
+        <property id="1983696557349506347" name="linkType" index="1pv0MD" />
+        <child id="1983696557349285470" name="target" index="1pvUZs" />
+        <child id="1983696557349285469" name="source" index="1pvUZv" />
+      </concept>
+      <concept id="7634549724642624365" name="com.symo.plantuml.structure.PlantUmlEmptyLine" flags="ng" index="c$xRF" />
+      <concept id="7634549724642636764" name="com.symo.plantuml.structure.PlantUmlSingleLineComment" flags="ng" index="c$yPq">
+        <property id="7634549724642637897" name="comment" index="c$yrf" />
+      </concept>
+      <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
+        <child id="521530426072143424" name="substructure" index="3eE$XC" />
+      </concept>
+      <concept id="1983696557348555164" name="com.symo.plantuml.structure.StartUmlCommand" flags="ng" index="1pqCwu" />
+      <concept id="1983696557348555132" name="com.symo.plantuml.structure.PlantUmlDiagramBase" flags="ng" index="1pqCzY">
+        <property id="8400506447498256066" name="zoom" index="145Srp" />
+        <property id="1983696557348880118" name="displayStrategy" index="1ptBXO" />
+        <child id="1983696557348555134" name="content" index="1pqCzW" />
+      </concept>
+      <concept id="1983696557348555133" name="com.symo.plantuml.structure.PlantUmlComponentDiagram" flags="ng" index="1pqCzZ" />
+      <concept id="1983696557348555523" name="com.symo.plantuml.structure.EndUmlCommand" flags="ng" index="1pqCE1" />
+      <concept id="1983696557348533346" name="com.symo.plantuml.structure.PlantUmlRoot" flags="ng" index="1pqNnw">
+        <child id="1983696557348555138" name="content" index="1pqCw0" />
+      </concept>
+      <concept id="1983696557349255043" name="com.symo.plantuml.structure.ComponentsChannel" flags="ng" index="1ps3o1" />
+      <concept id="1983696557348896981" name="com.symo.plantuml.structure.ComponentDeclaration" flags="ng" index="1pts5n" />
+      <concept id="1983696557349277305" name="com.symo.plantuml.structure.ComponentRef" flags="ng" index="1pvSZV">
+        <reference id="1983696557349277306" name="component" index="1pvSZS" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1pqNnw" id="7SdKVmpfB9x">
+    <property role="TrG5h" value="_212_component_diagram_fusion_detailing" />
+    <node concept="c$yPq" id="7SdKVmpfB9y" role="1pqCw0">
+      <property role="c$yrf" value="example of a component diagram used to detail (decompose) an already defined component" />
+    </node>
+    <node concept="c$xRF" id="7SdKVmpfB9z" role="1pqCw0" />
+    <node concept="1pqCzZ" id="7SdKVmpfB9$" role="1pqCw0">
+      <property role="145Srp" value="70" />
+      <property role="TrG5h" value="Detail_Fusion" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="7SdKVmpfB9_" role="1pqCzW" />
+      <node concept="tL1vr" id="7SdKVmpfBa3" role="1pqCzW">
+        <ref role="tKv0j" node="75npNYZyqBu" resolve="Sensors_Fusion" />
+        <node concept="1pts5n" id="7SdKVmpfBa6" role="3eE$XC">
+          <property role="TrG5h" value="Preprocessing" />
+        </node>
+        <node concept="1pts5n" id="7SdKVmpfBa8" role="3eE$XC">
+          <property role="TrG5h" value="Calibrarion" />
+        </node>
+        <node concept="1pts5n" id="7SdKVmpfBaa" role="3eE$XC">
+          <property role="TrG5h" value="FusionLogic" />
+        </node>
+        <node concept="1ps3o1" id="7SdKVmpfBad" role="3eE$XC">
+          <property role="1pv0MD" value="1I7wo92YSOE/ARROW" />
+          <node concept="1pvSZV" id="7SdKVmpfBaf" role="1pvUZv">
+            <ref role="1pvSZS" node="7SdKVmpfBa6" resolve="Preprocessing" />
+          </node>
+          <node concept="1pvSZV" id="7SdKVmpfBag" role="1pvUZs">
+            <ref role="1pvSZS" node="7SdKVmpfBaa" resolve="FusionLogic" />
+          </node>
+        </node>
+        <node concept="1ps3o1" id="7SdKVmpfBai" role="3eE$XC">
+          <property role="1pv0MD" value="7ikA1GKsc8R/ARROW_UP" />
+          <node concept="1pvSZV" id="7SdKVmpfBak" role="1pvUZv">
+            <ref role="1pvSZS" node="7SdKVmpfBa8" resolve="Calibrarion" />
+          </node>
+          <node concept="1pvSZV" id="7SdKVmpfBal" role="1pvUZs">
+            <ref role="1pvSZS" node="7SdKVmpfBa6" resolve="Preprocessing" />
+          </node>
+        </node>
+      </node>
+      <node concept="1pqCE1" id="7SdKVmpfBa1" role="1pqCzW" />
+    </node>
+  </node>
+</model>
+

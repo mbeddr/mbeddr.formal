@@ -8,7 +8,7 @@
         <reference id="2756136955077690412" name="actor" index="px4vp" />
       </concept>
       <concept id="2787004330864323063" name="com.symo.plantuml.ext.structure.SequenceDiagramComponentDiagramParticipant" flags="ng" index="u2shr">
-        <child id="2787004330864331504" name="componentRef" index="u2qts" />
+        <reference id="8688190019421661359" name="component" index="ga$T_" />
       </concept>
     </language>
     <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
@@ -25,9 +25,6 @@
       <concept id="1983696557348555523" name="com.symo.plantuml.structure.EndUmlCommand" flags="ng" index="1pqCE1" />
       <concept id="1983696557348533346" name="com.symo.plantuml.structure.PlantUmlRoot" flags="ng" index="1pqNnw">
         <child id="1983696557348555138" name="content" index="1pqCw0" />
-      </concept>
-      <concept id="1983696557349277305" name="com.symo.plantuml.structure.ComponentRef" flags="ng" index="1pvSZV">
-        <reference id="1983696557349277306" name="component" index="1pvSZS" />
       </concept>
       <concept id="478512667922540170" name="com.symo.plantuml.structure.PlantUmlSequenceDiagram" flags="ng" index="1YE28Q" />
       <concept id="478512667928158546" name="com.symo.plantuml.structure.SequenceDiagramParticipantBaseRef" flags="ng" index="1YLunI">
@@ -64,14 +61,10 @@
         <ref role="px4vp" node="2oZKZkZKeWd" resolve="Programmer" />
       </node>
       <node concept="u2shr" id="2oZKZkZKeWT" role="1pqCzW">
-        <node concept="1pvSZV" id="2oZKZkZKeWU" role="u2qts">
-          <ref role="1pvSZS" node="75npNYZyqBj" resolve="Radar_Objects_Detection" />
-        </node>
+        <ref role="ga$T_" node="75npNYZyqBj" resolve="Radar_Objects_Detection" />
       </node>
       <node concept="u2shr" id="2oZKZkZKeWX" role="1pqCzW">
-        <node concept="1pvSZV" id="2oZKZkZKeWY" role="u2qts">
-          <ref role="1pvSZS" node="75npNYZyqBu" resolve="Sensors_Fusion" />
-        </node>
+        <ref role="ga$T_" node="75npNYZyqBu" resolve="Sensors_Fusion" />
       </node>
       <node concept="c$xRF" id="2oZKZkZKeX1" role="1pqCzW" />
       <node concept="1YWaGV" id="2oZKZkZKeX7" role="1pqCzW">
