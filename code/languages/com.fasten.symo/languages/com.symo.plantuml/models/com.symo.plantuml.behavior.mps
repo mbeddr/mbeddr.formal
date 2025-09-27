@@ -1680,47 +1680,7 @@
     <property role="3GE5qa" value="diagram.uml.usecase" />
     <ref role="13h7C2" to="udwj:6CyxyHhTfBx" resolve="PlantUmlUsecaseDiagram" />
     <node concept="13hLZK" id="6BNnCp_rUvr" role="13h7CW">
-      <node concept="3clFbS" id="6BNnCp_rUvs" role="2VODD2">
-        <node concept="3clFbF" id="1_aHBvagfyR" role="3cqZAp">
-          <node concept="2OqwBi" id="1_aHBvagfyS" role="3clFbG">
-            <node concept="2OqwBi" id="1_aHBvagfyT" role="2Oq$k0">
-              <node concept="13iPFW" id="1_aHBvagfyU" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="1_aHBvagfyV" role="2OqNvi">
-                <ref role="3TtcxE" to="udwj:6CyxyHhTfBA" resolve="content" />
-              </node>
-            </node>
-            <node concept="WFELt" id="1_aHBvagfyW" role="2OqNvi">
-              <ref role="1A0vxQ" to="udwj:1I7wo92VgAs" resolve="StartUmlCommand" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1_aHBvagfyX" role="3cqZAp">
-          <node concept="2OqwBi" id="1_aHBvagfyY" role="3clFbG">
-            <node concept="2OqwBi" id="1_aHBvagfyZ" role="2Oq$k0">
-              <node concept="13iPFW" id="1_aHBvagfz0" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="1_aHBvagfz1" role="2OqNvi">
-                <ref role="3TtcxE" to="udwj:6CyxyHhTfBA" resolve="content" />
-              </node>
-            </node>
-            <node concept="WFELt" id="1_aHBvagfz2" role="2OqNvi">
-              <ref role="1A0vxQ" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1_aHBvagfz3" role="3cqZAp">
-          <node concept="2OqwBi" id="1_aHBvagfz4" role="3clFbG">
-            <node concept="2OqwBi" id="1_aHBvagfz5" role="2Oq$k0">
-              <node concept="13iPFW" id="1_aHBvagfz6" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="1_aHBvagfz7" role="2OqNvi">
-                <ref role="3TtcxE" to="udwj:6CyxyHhTfBA" resolve="content" />
-              </node>
-            </node>
-            <node concept="WFELt" id="1_aHBvagfz8" role="2OqNvi">
-              <ref role="1A0vxQ" to="udwj:1I7wo92VgG3" resolve="EndUmlCommand" />
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="6BNnCp_rUvs" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="6BNnCp_rUvH" role="13h7CS">
       <property role="TrG5h" value="getScope" />
