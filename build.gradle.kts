@@ -638,8 +638,6 @@ cyclonedxBom {
         "com.mbeddr.formal.safety",
     ).map { layout.projectDirectory.dir("code/languages/$it") }
 
-    val pluginRootsForMigration = mpsHomeDir.listFiles()
-
     val migrate by registering(MpsMigrate::class) {
         dependsOn(resolveMps, downloadJbr, build_all_languages)
 
@@ -647,7 +645,7 @@ cyclonedxBom {
         mpsHome = mpsHomeDir
         folderMacros.put("mbeddr.formal.home", layout.projectDirectory)
         projectDirectories.from(projectsToMigrate)
-        pluginRoots.from(pluginRootsForMigration)
+        pluginRoots.from(mpsHomeDir.resolve("plugins"))
 
         haltOnPrecheckFailure = false
         haltOnDependencyError = false
@@ -667,7 +665,7 @@ cyclonedxBom {
         mpsHome = mpsHomeDir
         folderMacros.put("mbeddr.formal.home", layout.projectDirectory)
         projectDirectories.from(projectsToMigrate)
-        pluginRoots.from(pluginRootsForMigration)
+        pluginRoots.from(mpsHomeDir.resolve("plugins"))
 
         maxHeapSize = "4G"
 
