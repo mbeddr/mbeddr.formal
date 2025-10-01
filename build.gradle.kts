@@ -11,7 +11,7 @@ plugins {
     `maven-publish`
     id("co.riiid.gradle") version "0.4.2"
 
-    val mpsGradlePluginVersion = "1.28.0.+"
+    val mpsGradlePluginVersion = "1.29.2.+"
 
     id("download-jbr") version mpsGradlePluginVersion
     id("de.itemis.mps.gradle.common") version mpsGradlePluginVersion
@@ -19,10 +19,10 @@ plugins {
     id("org.cyclonedx.bom") version "2.2.0"
 }
 
-val jbrVers = "17.0.8.1-b1000.32"
-val jbrWindowsVers = "jbr_jcef-17.0.8.1-windows-x64-b1000.32"
-val jbrLinuxVers = "jbr_jcef-17.0.8.1-linux-x64-b1000.32"
-val jbrMacAarchVers = "jbr_jcef-17.0.8.1-osx-aarch64-b1000.32"
+val jbrVers = "21.0.6-b895.109"
+val jbrWindowsVers = "jbr_jcef-21.0.6-windows-x64-b895.109"
+val jbrLinuxVers = "jbr_jcef-21.0.6-linux-x64-b895.109"
+val jbrMacAarchVers = "jbr_jcef-21.0.6-osx-aarch64-b895.109"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -42,9 +42,9 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2024"
+val major = "2025"
 val minor = "1"
-val bugfix = "4"
+val bugfix = ""
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
@@ -53,18 +53,11 @@ val mpsVersion = "$major.$minor" + appendOpt(bugfix, ".")
 // Dependency versions
 val platformVersion = "$major.$minor.+"
 
-// We now publish only from GitHub but there are older releases from TeamCity with higher build numbers due to TeamCity
-// build sequence being higher. In order for GitHub build to appear later, we bump the GitHub run number to be greater
-// than the build number from TeamCity.
-//
-// We do it only on 2022.3 and 2023.2 so that the hack can be eventually removed for later versions.
-val githubRunNumberBump = if ("$major.$minor" == "2022.3" || "$major.$minor" == "2023.2") 1000 else 0
-
 if (ciBuild) {
     val branch = GitBasedVersioning.getGitBranch()
 
     val buildNumber =  if (System.getenv("GITHUB_RUN_NUMBER") != null) 
-                                System.getenv("GITHUB_RUN_NUMBER").toInt() + githubRunNumberBump
+                                System.getenv("GITHUB_RUN_NUMBER").toInt()
                             else 
                                 System.getenv("BUILD_NUMBER")!!.toInt()
 
@@ -213,6 +206,9 @@ val jdkDir = layout.buildDirectory.dir("jdkDir").get()
 group = "com.mbeddr"
 // ___________________ utilities ___________________
 
+val isAarch64 = System.getProperty("os.arch") == "aarch64"
+val jnaArch = if (isAarch64) "aarch64" else "amd64"
+
 val defaultScriptArgs = mapOf(
         "mps.home" to mpsHomeDir,
         "mbeddr.formal.home" to rootDir,
@@ -222,10 +218,11 @@ val defaultScriptArgs = mapOf(
         //incremental build support
         "mps.generator.skipUnmodifiedModels" to true,
         "jdk.nio.zipfs.allowDotZipEntry" to true,
-        "jdk.util.zip.disableZip64ExtraFieldValidation" to true
+        "jdk.util.zip.disableZip64ExtraFieldValidation" to true,
+        "build.jna.library.path" to mpsHomeDir.resolve("lib/jna/$jnaArch")
 )
 
-fun scriptFile(relativePath: String):File = File("$rootDir/build/scripts/patched/$relativePath")
+fun scriptFile(relativePath: String):File = File("$rootDir/build/scripts/$relativePath")
 
 fun unpackAndRenameJBR(archiveName : String, nameOfDirectoryInsideArchive : String, nameOfJbrDirectory : String) {
     val jbrDownloadDir = jdkDir.toString() + "/../jbrDownload";
@@ -351,30 +348,9 @@ tasks {
 
     fun scriptFile(name: String): Provider<RegularFile> = layout.buildDirectory.file("scripts/$name")
 
-    val build_allScripts_unpatched by registering(BuildLanguages::class) {
+    val build_allScripts by registering(BuildLanguages::class) {
         dependsOn(resolveMps, resolveLanguageLibs)
         script = scriptFile("build_all_scripts.xml")
-    }
-
-    // Patch JNA path in generated build scripts until https://github.com/JetBrains/MPS/pull/71 is fixed
-    val patch_allScripts by registering(Copy::class) {
-        dependsOn(build_allScripts_unpatched)
-        from("build/scripts")
-        exclude("patched")
-        exclude("build")
-        into("build/scripts/patched")
-
-        val isAarch64 = System.getProperty("os.arch") == "aarch64"
-        val jnaArch = if (isAarch64) "aarch64" else "amd64"
-
-        filter { line: String ->
-            line.replace("\"-Djna.boot.library.path=${'$'}{artifacts.mps}/lib/jna\"",
-                    "\"-Djna.boot.library.path=${'$'}{artifacts.mps}/lib/jna/" + jnaArch + "\"")
-        }
-    }
-
-    val build_allScripts by registering {
-        dependsOn(patch_allScripts, resolveLanguageLibs)
     }
 
     val build_formal_languages by registering(BuildLanguages::class) {
@@ -645,8 +621,6 @@ cyclonedxBom {
         "com.mbeddr.formal.safety",
     ).map { layout.projectDirectory.dir("code/languages/$it") }
 
-    val pluginRootsForMigration = mpsHomeDir.listFiles()
-
     val migrate by registering(MpsMigrate::class) {
         dependsOn(resolveMps, downloadJbr, build_all_languages)
 
@@ -654,7 +628,7 @@ cyclonedxBom {
         mpsHome = mpsHomeDir
         folderMacros.put("mbeddr.formal.home", layout.projectDirectory)
         projectDirectories.from(projectsToMigrate)
-        pluginRoots.from(pluginRootsForMigration)
+        pluginRoots.from(mpsHomeDir.resolve("plugins"))
 
         haltOnPrecheckFailure = false
         haltOnDependencyError = false
@@ -674,7 +648,7 @@ cyclonedxBom {
         mpsHome = mpsHomeDir
         folderMacros.put("mbeddr.formal.home", layout.projectDirectory)
         projectDirectories.from(projectsToMigrate)
-        pluginRoots.from(pluginRootsForMigration)
+        pluginRoots.from(mpsHomeDir.resolve("plugins"))
 
         maxHeapSize = "4G"
 
