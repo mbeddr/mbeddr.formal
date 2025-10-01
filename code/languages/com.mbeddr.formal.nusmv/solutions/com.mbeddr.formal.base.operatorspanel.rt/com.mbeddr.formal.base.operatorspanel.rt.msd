@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.formal.base.operatorspanel.rt" uuid="4bf9a860-39c9-4cb2-8004-157a961bf42c" moduleVersion="0">
   <models>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="jfreechart.jar" />
     </modelRoot>
   </models>
