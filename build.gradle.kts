@@ -206,6 +206,9 @@ val jdkDir = layout.buildDirectory.dir("jdkDir").get()
 group = "com.mbeddr"
 // ___________________ utilities ___________________
 
+val isAarch64 = System.getProperty("os.arch") == "aarch64"
+val jnaArch = if (isAarch64) "aarch64" else "amd64"
+
 val defaultScriptArgs = mapOf(
         "mps.home" to mpsHomeDir,
         "mbeddr.formal.home" to rootDir,
@@ -215,10 +218,11 @@ val defaultScriptArgs = mapOf(
         //incremental build support
         "mps.generator.skipUnmodifiedModels" to true,
         "jdk.nio.zipfs.allowDotZipEntry" to true,
-        "jdk.util.zip.disableZip64ExtraFieldValidation" to true
+        "jdk.util.zip.disableZip64ExtraFieldValidation" to true,
+        "build.jna.library.path" to mpsHomeDir.resolve("lib/jna/$jnaArch")
 )
 
-fun scriptFile(relativePath: String):File = File("$rootDir/build/scripts/patched/$relativePath")
+fun scriptFile(relativePath: String):File = File("$rootDir/build/scripts/$relativePath")
 
 fun unpackAndRenameJBR(archiveName : String, nameOfDirectoryInsideArchive : String, nameOfJbrDirectory : String) {
     val jbrDownloadDir = jdkDir.toString() + "/../jbrDownload";
@@ -344,30 +348,9 @@ tasks {
 
     fun scriptFile(name: String): Provider<RegularFile> = layout.buildDirectory.file("scripts/$name")
 
-    val build_allScripts_unpatched by registering(BuildLanguages::class) {
+    val build_allScripts by registering(BuildLanguages::class) {
         dependsOn(resolveMps, resolveLanguageLibs)
         script = scriptFile("build_all_scripts.xml")
-    }
-
-    // Patch JNA path in generated build scripts until https://github.com/JetBrains/MPS/pull/71 is fixed
-    val patch_allScripts by registering(Copy::class) {
-        dependsOn(build_allScripts_unpatched)
-        from("build/scripts")
-        exclude("patched")
-        exclude("build")
-        into("build/scripts/patched")
-
-        val isAarch64 = System.getProperty("os.arch") == "aarch64"
-        val jnaArch = if (isAarch64) "aarch64" else "amd64"
-
-        filter { line: String ->
-            line.replace("\"-Djna.boot.library.path=${'$'}{artifacts.mps}/lib/jna\"",
-                    "\"-Djna.boot.library.path=${'$'}{artifacts.mps}/lib/jna/" + jnaArch + "\"")
-        }
-    }
-
-    val build_allScripts by registering {
-        dependsOn(patch_allScripts, resolveLanguageLibs)
     }
 
     val build_formal_languages by registering(BuildLanguages::class) {
