@@ -18,16 +18,21 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
       </concept>
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
@@ -46,6 +51,7 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -197,6 +203,27 @@
             <property role="2rfbtB" value="Description" />
           </node>
         </node>
+        <node concept="2reCLy" id="FkaPoE7rbN" role="2reCL6">
+          <node concept="3F1sOY" id="FkaPoE7rbR" role="2reSmM">
+            <property role="1$x2rV" value="n/a" />
+            <ref role="1NtTu8" to="6k2r:FkaPoE7dNm" resolve="probability" />
+          </node>
+          <node concept="2rfbtV" id="FkaPoE7rbT" role="2recC9">
+            <property role="2rfbtB" value="Probabiliry" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="FkaPoE6mSR" role="2reCL6">
+          <node concept="3F1sOY" id="FkaPoE6mSV" role="2reSmM">
+            <property role="1$x2rV" value="n/a" />
+            <ref role="1NtTu8" to="6k2r:FkaPoE6mSN" resolve="potentialCause" />
+          </node>
+          <node concept="2rfbtV" id="FkaPoE6mSX" role="2recC9">
+            <property role="2rfbtB" value="Potential Cause" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="6xogEbf66TV" role="2reCL6">
+          <node concept="3F0ifn" id="6xogEbf66TZ" role="2reSmM" />
+        </node>
       </node>
     </node>
   </node>
@@ -219,11 +246,25 @@
             <property role="2rfbtB" value="Failure Mode" />
           </node>
         </node>
+        <node concept="2reCLy" id="6xogEbf0HvO" role="2reCL6">
+          <node concept="1iCGBv" id="6xogEbf0HvP" role="2reSmM">
+            <ref role="1NtTu8" to="6k2r:31P83hzFOt7" resolve="failureModeDefinition" />
+            <node concept="1sVBvm" id="6xogEbf0HvQ" role="1sWHZn">
+              <node concept="3F1sOY" id="6xogEbf0HvU" role="2wV5jI">
+                <property role="1$x2rV" value="n/a" />
+                <ref role="1NtTu8" to="6k2r:FkaPoE7dNm" resolve="probability" />
+                <node concept="xShMh" id="6xogEbf1VJx" role="3F10Kt">
+                  <property role="VOm3f" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2rfbtV" id="6xogEbf0HvS" role="2recC9">
+            <property role="2rfbtB" value="Probability" />
+          </node>
+        </node>
         <node concept="2reSaE" id="42QGQFVnga_" role="2reCL6">
           <ref role="2reCK$" to="6k2r:7j1NWs11OB_" resolve="effects" />
-          <node concept="2rfbtV" id="31P83hzFosa" role="2YiT2b">
-            <property role="2rfbtB" value="Effects" />
-          </node>
         </node>
       </node>
     </node>
@@ -279,6 +320,57 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="5rwT_Jny5eT" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="FkaPoE6KI5">
+    <property role="3GE5qa" value="base.potential_failure_cause" />
+    <ref role="1XX52x" to="6k2r:FkaPoE6Ki_" resolve="PotentialFailureCausePlainText" />
+    <node concept="3F1sOY" id="FkaPoE6KI7" role="2wV5jI">
+      <ref role="1NtTu8" to="6k2r:FkaPoE6KI4" resolve="text" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="FkaPoE7dNA">
+    <property role="3GE5qa" value="base.probability" />
+    <ref role="1XX52x" to="6k2r:FkaPoE7dNo" resolve="FailureModeProbabilityQualitative" />
+    <node concept="3EZMnI" id="FkaPoE7D$y" role="2wV5jI">
+      <node concept="2iRfu4" id="FkaPoE7D$z" role="2iSdaV" />
+      <node concept="3F0A7n" id="FkaPoE7dNC" role="3EZMnx">
+        <ref role="1NtTu8" to="6k2r:FkaPoE7dN_" resolve="probability" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="FkaPoE84w4">
+    <property role="3GE5qa" value="base.severity" />
+    <ref role="1XX52x" to="6k2r:FkaPoE83GY" resolve="FailureEffectSeveriryQualitative" />
+    <node concept="3EZMnI" id="FkaPoE84w6" role="2wV5jI">
+      <node concept="3F0ifn" id="FkaPoE84wc" role="3EZMnx" />
+      <node concept="3F0A7n" id="FkaPoE84we" role="3EZMnx">
+        <ref role="1NtTu8" to="6k2r:FkaPoE84w3" resolve="severity" />
+      </node>
+      <node concept="2iRfu4" id="FkaPoE84w9" role="2iSdaV" />
+    </node>
+    <node concept="3F0ifn" id="FkaPoE84wb" role="6VMZX" />
+  </node>
+  <node concept="24kQdi" id="6xogEbf4UUx">
+    <property role="3GE5qa" value="base" />
+    <ref role="1XX52x" to="6k2r:6xogEbf4UUv" resolve="FailureEffectDefinitionBaseRef" />
+    <node concept="1iCGBv" id="6xogEbf4UUz" role="2wV5jI">
+      <ref role="1NtTu8" to="6k2r:6xogEbf4UUw" resolve="effectDefinition" />
+      <node concept="1sVBvm" id="6xogEbf4UU_" role="1sWHZn">
+        <node concept="3F0A7n" id="6xogEbf4UUD" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6xogEbf4UYN">
+    <property role="3GE5qa" value="base.potential_failure_cause" />
+    <ref role="1XX52x" to="6k2r:6xogEbf4UUt" resolve="PotentialFailureCausesEffectRefs" />
+    <node concept="3F2HdR" id="6xogEbf4UYP" role="2wV5jI">
+      <property role="2czwfO" value="," />
+      <ref role="1NtTu8" to="6k2r:6xogEbf4UUu" resolve="lowerLevelEffects" />
+      <node concept="2iRfu4" id="6xogEbf6$c5" role="2czzBx" />
     </node>
   </node>
 </model>
