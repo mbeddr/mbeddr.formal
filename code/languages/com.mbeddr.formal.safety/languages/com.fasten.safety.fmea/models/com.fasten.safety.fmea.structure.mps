@@ -293,35 +293,55 @@
     <property role="TrG5h" value="EFailureModeProbabilityQualitative" />
     <property role="3GE5qa" value="base.probability" />
     <ref role="1H5jkz" node="FkaPoE7dNu" resolve="POSSIBLE" />
+    <node concept="25R33" id="P3d8mI6qi0" role="25R1y">
+      <property role="3tVfz5" value="955665294688887936" />
+      <property role="TrG5h" value="VIRTUALLY_IMPOSSIBLE" />
+      <property role="1L1pqM" value="Virtually Impossible (1)" />
+    </node>
+    <node concept="25R33" id="P3d8mI6qi2" role="25R1y">
+      <property role="3tVfz5" value="955665294688887938" />
+      <property role="TrG5h" value="EXCEPTIONALLY_UNLIKELY" />
+      <property role="1L1pqM" value="Exceptionally Unlikely (2)" />
+    </node>
     <node concept="25R33" id="FkaPoE7dNq" role="25R1y">
       <property role="3tVfz5" value="780296284515654874" />
       <property role="TrG5h" value="VERY_UNLIKELY" />
-      <property role="1L1pqM" value="Very Unlikely" />
+      <property role="1L1pqM" value="Very Unlikely (3)" />
     </node>
     <node concept="25R33" id="FkaPoE7dNt" role="25R1y">
       <property role="3tVfz5" value="780296284515654877" />
       <property role="TrG5h" value="UNLIKELY" />
-      <property role="1L1pqM" value="Unlikely" />
+      <property role="1L1pqM" value="Unlikely (4)" />
+    </node>
+    <node concept="25R33" id="P3d8mI6qi5" role="25R1y">
+      <property role="3tVfz5" value="955665294688887941" />
+      <property role="TrG5h" value="LESS_LIKELY_THAN_NOT" />
+      <property role="1L1pqM" value="Less Likely than Not (5)" />
     </node>
     <node concept="25R33" id="FkaPoE7dNu" role="25R1y">
       <property role="3tVfz5" value="780296284515654878" />
-      <property role="TrG5h" value="POSSIBLE" />
-      <property role="1L1pqM" value="Possible" />
+      <property role="TrG5h" value="ABOUT_EVEN" />
+      <property role="1L1pqM" value="About Even (6)" />
+    </node>
+    <node concept="25R33" id="P3d8mI6qi7" role="25R1y">
+      <property role="3tVfz5" value="955665294688887943" />
+      <property role="TrG5h" value="MORE_LIKELY_THAN_NOT" />
+      <property role="1L1pqM" value="More Likely than Not (7)" />
     </node>
     <node concept="25R33" id="FkaPoE7dNx" role="25R1y">
       <property role="3tVfz5" value="780296284515654881" />
       <property role="TrG5h" value="LIKELY" />
-      <property role="1L1pqM" value="Likely" />
+      <property role="1L1pqM" value="Likely (8)" />
+    </node>
+    <node concept="25R33" id="P3d8mI6qi9" role="25R1y">
+      <property role="3tVfz5" value="955665294688887945" />
+      <property role="TrG5h" value="VERY_LIKELY" />
+      <property role="1L1pqM" value="Very Likely (9)" />
     </node>
     <node concept="25R33" id="FkaPoE7dNz" role="25R1y">
       <property role="3tVfz5" value="780296284515654883" />
       <property role="TrG5h" value="ALMOST_CERTAIN" />
-      <property role="1L1pqM" value="Almost Certain" />
-    </node>
-    <node concept="25R33" id="6xogEbf2JTW" role="25R1y">
-      <property role="3tVfz5" value="7518832844920782460" />
-      <property role="TrG5h" value="NOT_AVAILABLE" />
-      <property role="1L1pqM" value="n/a" />
+      <property role="1L1pqM" value="Almost Certain (10)" />
     </node>
   </node>
   <node concept="1TIwiD" id="FkaPoE83GX">
@@ -349,30 +369,55 @@
     <property role="TrG5h" value="EFailureEffectSeverityQualitative" />
     <property role="3GE5qa" value="base.severity" />
     <ref role="1H5jkz" node="FkaPoE84vY" resolve="MODERATE" />
-    <node concept="25R33" id="FkaPoE84vV" role="25R1y">
-      <property role="3tVfz5" value="780296284515878907" />
-      <property role="TrG5h" value="VERY_HIGH" />
-      <property role="1L1pqM" value="Very High" />
+    <node concept="25R33" id="P3d8mI74QP" role="25R1y">
+      <property role="3tVfz5" value="955665294689062325" />
+      <property role="TrG5h" value="NEGLIGIBLE" />
+      <property role="1L1pqM" value="Negligible (1)" />
     </node>
-    <node concept="25R33" id="FkaPoE84vW" role="25R1y">
-      <property role="3tVfz5" value="780296284515878908" />
-      <property role="TrG5h" value="HIGH" />
-      <property role="1L1pqM" value="High" />
-    </node>
-    <node concept="25R33" id="FkaPoE84vY" role="25R1y">
-      <property role="3tVfz5" value="780296284515878910" />
-      <property role="TrG5h" value="MODERATE" />
-      <property role="1L1pqM" value="Moderate" />
+    <node concept="25R33" id="P3d8mI74QS" role="25R1y">
+      <property role="3tVfz5" value="955665294689062328" />
+      <property role="TrG5h" value="VERY_MINOR" />
+      <property role="1L1pqM" value="Very Minor (2)" />
     </node>
     <node concept="25R33" id="FkaPoE84vZ" role="25R1y">
       <property role="3tVfz5" value="780296284515878911" />
-      <property role="TrG5h" value="LOW" />
-      <property role="1L1pqM" value="Low" />
+      <property role="TrG5h" value="MINOR" />
+      <property role="1L1pqM" value="Minor (3)" />
+    </node>
+    <node concept="25R33" id="P3d8mI74QV" role="25R1y">
+      <property role="3tVfz5" value="955665294689062331" />
+      <property role="TrG5h" value="MODERATE_MINOR" />
+      <property role="1L1pqM" value="Moderate Minor (4)" />
+    </node>
+    <node concept="25R33" id="P3d8mI74QX" role="25R1y">
+      <property role="3tVfz5" value="955665294689062333" />
+      <property role="TrG5h" value="MODERATE" />
+      <property role="1L1pqM" value="Moderate (5)" />
     </node>
     <node concept="25R33" id="FkaPoE84w2" role="25R1y">
       <property role="3tVfz5" value="780296284515878914" />
-      <property role="TrG5h" value="VERY_LOW" />
-      <property role="1L1pqM" value="Very Low" />
+      <property role="TrG5h" value="MAJOR_LOW" />
+      <property role="1L1pqM" value="Major Low (6)" />
+    </node>
+    <node concept="25R33" id="FkaPoE84vY" role="25R1y">
+      <property role="3tVfz5" value="780296284515878910" />
+      <property role="TrG5h" value="MAJOR" />
+      <property role="1L1pqM" value="Major (7)" />
+    </node>
+    <node concept="25R33" id="FkaPoE84vV" role="25R1y">
+      <property role="3tVfz5" value="780296284515878907" />
+      <property role="TrG5h" value="SEVERE_MAJOR" />
+      <property role="1L1pqM" value="Severe Major (8)" />
+    </node>
+    <node concept="25R33" id="P3d8mI74R2" role="25R1y">
+      <property role="3tVfz5" value="955665294689062338" />
+      <property role="TrG5h" value="CRITICAL" />
+      <property role="1L1pqM" value="Critical (9)" />
+    </node>
+    <node concept="25R33" id="FkaPoE84vW" role="25R1y">
+      <property role="3tVfz5" value="780296284515878908" />
+      <property role="TrG5h" value="CATASTROPHIC" />
+      <property role="1L1pqM" value="Catastrophic (10)" />
     </node>
   </node>
   <node concept="1TIwiD" id="6xogEbf4UUt">

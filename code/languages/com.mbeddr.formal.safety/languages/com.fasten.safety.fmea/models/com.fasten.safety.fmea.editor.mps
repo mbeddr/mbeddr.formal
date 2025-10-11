@@ -29,14 +29,18 @@
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
-      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW" />
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -46,6 +50,8 @@
         <reference id="6591946374543067572" name="conceptDeclaration" index="aqKnT" />
         <child id="5991739802479788259" name="type" index="22hAXT" />
       </concept>
+      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
       <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
         <child id="1088186146602" name="editorComponent" index="1sWHZn" />
       </concept>
@@ -59,13 +65,23 @@
         <child id="1106270802874" name="cellLayout" index="2iSdaV" />
         <child id="1073389446424" name="childCellModel" index="3EZMnx" />
       </concept>
-      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn" />
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+        <property id="1073389577007" name="text" index="3F0ifm" />
+      </concept>
       <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
       <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
         <child id="1219418656006" name="styleItem" index="3F10Kt" />
       </concept>
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
+      <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
+        <child id="1225898971709" name="getter" index="1Hhtcw" />
+      </concept>
+      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
+        <child id="1225900141900" name="modelAccessor" index="1HlULh" />
+      </concept>
+      <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -124,6 +140,9 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -247,14 +266,28 @@
           </node>
         </node>
         <node concept="2reCLy" id="6xogEbf0HvO" role="2reCL6">
-          <node concept="1iCGBv" id="6xogEbf0HvP" role="2reSmM">
-            <ref role="1NtTu8" to="6k2r:31P83hzFOt7" resolve="failureModeDefinition" />
-            <node concept="1sVBvm" id="6xogEbf0HvQ" role="1sWHZn">
-              <node concept="3F1sOY" id="6xogEbf0HvU" role="2wV5jI">
-                <property role="1$x2rV" value="n/a" />
-                <ref role="1NtTu8" to="6k2r:FkaPoE7dNm" resolve="probability" />
-                <node concept="xShMh" id="6xogEbf1VJx" role="3F10Kt">
-                  <property role="VOm3f" value="true" />
+          <node concept="1HlG4h" id="P3d8mI43pv" role="2reSmM">
+            <node concept="1HfYo3" id="P3d8mI43p_" role="1HlULh">
+              <node concept="3TQlhw" id="P3d8mI43pF" role="1Hhtcw">
+                <node concept="3clFbS" id="P3d8mI43pL" role="2VODD2">
+                  <node concept="3clFbF" id="P3d8mI43Ea" role="3cqZAp">
+                    <node concept="2OqwBi" id="P3d8mI47LR" role="3clFbG">
+                      <node concept="2OqwBi" id="P3d8mI45ZB" role="2Oq$k0">
+                        <node concept="2OqwBi" id="P3d8mI4460" role="2Oq$k0">
+                          <node concept="pncrf" id="P3d8mI43E9" role="2Oq$k0" />
+                          <node concept="3TrEf2" id="P3d8mI45ue" role="2OqNvi">
+                            <ref role="3Tt5mk" to="6k2r:31P83hzFOt7" resolve="failureModeDefinition" />
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="P3d8mI46VL" role="2OqNvi">
+                          <ref role="3Tt5mk" to="6k2r:FkaPoE7dNm" resolve="probability" />
+                        </node>
+                      </node>
+                      <node concept="2qgKlT" id="P3d8mI481w" role="2OqNvi">
+                        <ref role="37wK5l" to="arip:FkaPoE85wv" resolve="asText" />
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -333,9 +366,137 @@
     <property role="3GE5qa" value="base.probability" />
     <ref role="1XX52x" to="6k2r:FkaPoE7dNo" resolve="FailureModeProbabilityQualitative" />
     <node concept="3EZMnI" id="FkaPoE7D$y" role="2wV5jI">
+      <node concept="3F0ifn" id="P3d8mI4$JA" role="3EZMnx">
+        <node concept="11L4FC" id="P3d8mI4$JC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="P3d8mI4$JE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="2iRfu4" id="FkaPoE7D$z" role="2iSdaV" />
       <node concept="3F0A7n" id="FkaPoE7dNC" role="3EZMnx">
         <ref role="1NtTu8" to="6k2r:FkaPoE7dN_" resolve="probability" />
+      </node>
+    </node>
+    <node concept="3EZMnI" id="P3d8mI6qgG" role="6VMZX">
+      <node concept="2iRkQZ" id="P3d8mI6qgH" role="2iSdaV" />
+      <node concept="3F0ifn" id="P3d8mI6qgI" role="3EZMnx">
+        <property role="3F0ifm" value="Ten level qualitative probability:" />
+        <node concept="VechU" id="P3d8mI6qgY" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="P3d8mI6qgX" role="3EZMnx" />
+      <node concept="3EZMnI" id="P3d8mI6qgL" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI6qgN" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI6qgR" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI6qgV" role="3EZMnx">
+          <property role="3F0ifm" value="1.    Virtually Impossible — Conceivable but effectively 0% chance (&lt;0.01%)" />
+          <node concept="VechU" id="P3d8mI6qgZ" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI6qgQ" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI6qh0" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI6qh1" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI6qh2" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI6qh3" role="3EZMnx">
+          <property role="3F0ifm" value="2.    Exceptionally Unlikely — Extremely low likelihood, can be disregarded for practical planning (~0.01–0.1%)" />
+          <node concept="VechU" id="P3d8mI6qh4" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI6qh5" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI6qh6" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI6qh7" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI6qh8" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI6qh9" role="3EZMnx">
+          <property role="3F0ifm" value="3.    Very Unlikely — Very small chance; not expected in normal operations (~0.1–1%)" />
+          <node concept="VechU" id="P3d8mI6qha" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI6qhb" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI6qhc" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI6qhd" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI6qhe" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI6qhf" role="3EZMnx">
+          <property role="3F0ifm" value="4.    Unlikely — Low probability; plausible but rare (~1–5%)" />
+          <node concept="VechU" id="P3d8mI6qhg" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI6qhh" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI6qhi" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI6qhj" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI6qhk" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI6qhl" role="3EZMnx">
+          <property role="3F0ifm" value="5.    Less Likely Than Not — Below 20% but significant enough to monitor (~5–20%)" />
+          <node concept="VechU" id="P3d8mI6qhm" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI6qhn" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI6qho" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI6qhp" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI6qhq" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI6qhr" role="3EZMnx">
+          <property role="3F0ifm" value="6.    About Even — Roughly equal chance of occurring or not (~20–50%)" />
+          <node concept="VechU" id="P3d8mI6qhs" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI6qht" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI6qhu" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI6qhv" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI6qhw" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI6qhx" role="3EZMnx">
+          <property role="3F0ifm" value="7.    More Likely Than Not — Above 50% likelihood; expect occurrence (~50–60%)" />
+          <node concept="VechU" id="P3d8mI6qhy" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI6qhz" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI6qh$" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI6qh_" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI6qhA" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI6qhB" role="3EZMnx">
+          <property role="3F0ifm" value="8.    Likely — High probability; occurs in most comparable conditions (~60–80%)" />
+          <node concept="VechU" id="P3d8mI6qhC" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI6qhD" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI6qhE" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI6qhF" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI6qhG" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI6qhH" role="3EZMnx">
+          <property role="3F0ifm" value="9.    Very Likely — Very high probability; occurrence is expected (~80–99%)" />
+          <node concept="VechU" id="P3d8mI6qhI" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI6qhJ" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI6qhK" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI6qhL" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI6qhM" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI6qhN" role="3EZMnx">
+          <property role="3F0ifm" value="10.  Almost Certain — Near certainty; occurrence is effectively guaranteed (&gt;99%)" />
+          <node concept="VechU" id="P3d8mI6qhO" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI6qhP" role="2iSdaV" />
       </node>
     </node>
   </node>
@@ -349,7 +510,126 @@
       </node>
       <node concept="2iRfu4" id="FkaPoE84w9" role="2iSdaV" />
     </node>
-    <node concept="3F0ifn" id="FkaPoE84wb" role="6VMZX" />
+    <node concept="3EZMnI" id="P3d8mI74PE" role="6VMZX">
+      <node concept="2iRkQZ" id="P3d8mI74PF" role="2iSdaV" />
+      <node concept="3F0ifn" id="P3d8mI74PG" role="3EZMnx">
+        <property role="3F0ifm" value="Ten level qualitative severity:" />
+        <node concept="VechU" id="P3d8mI74PH" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="P3d8mI74PI" role="3EZMnx" />
+      <node concept="3EZMnI" id="P3d8mI74PJ" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI74PK" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI74PL" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI74PM" role="3EZMnx">
+          <property role="3F0ifm" value="1.    Negligible — No injury, no damage, no operational impact (e.g., cosmetic issue, trivial annoyance)" />
+          <node concept="VechU" id="P3d8mI74PN" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI74PO" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI74PP" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI74PQ" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI74PR" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI74PS" role="3EZMnx">
+          <property role="3F0ifm" value="2.    Very Minor — Minor inconvenience, small local rework (e.g., brief service glitch)" />
+          <node concept="VechU" id="P3d8mI74PT" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI74PU" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI74PV" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI74PW" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI74PX" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI74PY" role="3EZMnx">
+          <property role="3F0ifm" value="3.    Minor — Minor injury requiring minor localized equipment repair; short disruption to a single task" />
+          <node concept="VechU" id="P3d8mI74PZ" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI74Q0" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI74Q1" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI74Q2" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI74Q3" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI74Q4" role="3EZMnx">
+          <property role="3F0ifm" value="4.    Moderate Minor — Moderate repair costs, short-term loss of capability." />
+          <node concept="VechU" id="P3d8mI74Q5" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI74Q6" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI74Q7" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI74Q8" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI74Q9" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI74Qa" role="3EZMnx">
+          <property role="3F0ifm" value="5.    Moderate — Moderate system degradation, customer complaints, regulatory reporting possible" />
+          <node concept="VechU" id="P3d8mI74Qb" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI74Qc" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI74Qd" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI74Qe" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI74Qf" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI74Qg" role="3EZMnx">
+          <property role="3F0ifm" value="6.    Major Low — Significant equipment damage, sustained degraded operations" />
+          <node concept="VechU" id="P3d8mI74Qh" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI74Qi" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI74Qj" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI74Qk" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI74Ql" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI74Qm" role="3EZMnx">
+          <property role="3F0ifm" value="7.    Major — Major system failure requiring substantial recovery; significant loss" />
+          <node concept="VechU" id="P3d8mI74Qn" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI74Qo" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI74Qp" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI74Qq" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI74Qr" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI74Qs" role="3EZMnx">
+          <property role="3F0ifm" value="8.    Severe Major — Major system catastrophe with long outage; major regulatory/legal consequences." />
+          <node concept="VechU" id="P3d8mI74Qt" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI74Qu" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI74Qv" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI74Qw" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI74Qx" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI74Qy" role="3EZMnx">
+          <property role="3F0ifm" value="9.    Critical — Catastrophic loss of major system capability; long-term damage; enterprise-threatening impact." />
+          <node concept="VechU" id="P3d8mI74Qz" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI74Q$" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="P3d8mI74Q_" role="3EZMnx">
+        <node concept="VPM3Z" id="P3d8mI74QA" role="3F10Kt" />
+        <node concept="3XFhqQ" id="P3d8mI74QB" role="3EZMnx" />
+        <node concept="3F0ifn" id="P3d8mI74QC" role="3EZMnx">
+          <property role="3F0ifm" value="10.  Catastrophic — Irreversible harm, business collapse or high-level consequences." />
+          <node concept="VechU" id="P3d8mI74QD" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="P3d8mI74QE" role="2iSdaV" />
+      </node>
+    </node>
   </node>
   <node concept="24kQdi" id="6xogEbf4UUx">
     <property role="3GE5qa" value="base" />

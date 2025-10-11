@@ -27,6 +27,10 @@
       <concept id="780296284515654872" name="com.fasten.safety.fmea.structure.FailureModeProbabilityQualitative" flags="ng" index="wMfue">
         <property id="780296284515654885" name="probability" index="wMfuN" />
       </concept>
+      <concept id="780296284515533989" name="com.fasten.safety.fmea.structure.PotentialFailureCausePlainText" flags="ng" index="wNMZN">
+        <child id="780296284515535748" name="text" index="wNM3i" />
+      </concept>
+      <concept id="780296284515875646" name="com.fasten.safety.fmea.structure.FailureEffectSeveriryQualitative" flags="ng" index="wX11C" />
       <concept id="7518832844921351839" name="com.fasten.safety.fmea.structure.FailureEffectDefinitionBaseRef" flags="ng" index="2BiYKX">
         <reference id="7518832844921351840" name="effectDefinition" index="2BiYK2" />
       </concept>
@@ -41,6 +45,9 @@
         <child id="780296284515654870" name="probability" index="wMfu0" />
         <child id="780296284515429939" name="potentialCause" index="wNkl_" />
         <child id="4663111736253767864" name="description" index="2VUHfi" />
+      </concept>
+      <concept id="8413234032527459589" name="com.fasten.safety.fmea.structure.EffectBase" flags="ng" index="1PLKF2">
+        <child id="780296284515875644" name="severity" index="wX11E" />
       </concept>
       <concept id="8413234032527459520" name="com.fasten.safety.fmea.structure.FailureModeAndEffects" flags="ng" index="1PLKG7">
         <reference id="3491732495478507335" name="failureModeDefinition" index="1jQAtN" />
@@ -141,11 +148,17 @@
         <node concept="19SGf9" id="3acQo$0xjPX" role="2VUHfi">
           <node concept="19SUe$" id="3acQo$0xjQ7" role="19SJt6" />
         </node>
+        <node concept="wMfue" id="P3d8mI1Jbn" role="wMfu0">
+          <property role="wMfuN" value="FkaPoE7dNx/LIKELY" />
+        </node>
       </node>
       <node concept="2VUHfq" id="3acQo$0xjPQ" role="2VUBrq">
         <property role="TrG5h" value="too slow" />
         <node concept="19SGf9" id="3acQo$0xjPY" role="2VUHfi">
           <node concept="19SUe$" id="3acQo$0xjQ8" role="19SJt6" />
+        </node>
+        <node concept="wMfue" id="P3d8mI39es" role="wMfu0">
+          <property role="wMfuN" value="FkaPoE7dNz/ALMOST_CERTAIN" />
         </node>
       </node>
     </node>
@@ -157,8 +170,15 @@
         <node concept="19SGf9" id="3acQo$0xjPZ" role="2VUHfi">
           <node concept="19SUe$" id="3acQo$0xjQ9" role="19SJt6" />
         </node>
-        <node concept="wMfue" id="6xogEbf2NoL" role="wMfu0">
-          <property role="wMfuN" value="6xogEbf2JTW/NOT_AVAILABLE" />
+        <node concept="wNMZN" id="P3d8mI1Jbo" role="wNkl_">
+          <node concept="19SGf9" id="P3d8mI1Jbp" role="wNM3i">
+            <node concept="19SUe$" id="P3d8mI1Jbq" role="19SJt6">
+              <property role="19SUeA" value="plain text " />
+            </node>
+          </node>
+        </node>
+        <node concept="wMfue" id="P3d8mI5tdW" role="wMfu0">
+          <property role="wMfuN" value="FkaPoE7dNz/ALMOST_CERTAIN" />
         </node>
       </node>
       <node concept="2VUHfq" id="3acQo$0xjPS" role="2VUBrq">
@@ -166,6 +186,7 @@
         <node concept="19SGf9" id="3acQo$0xjQ0" role="2VUHfi">
           <node concept="19SUe$" id="3acQo$0xjQa" role="19SJt6" />
         </node>
+        <node concept="wMfue" id="P3d8mI43ps" role="wMfu0" />
       </node>
     </node>
     <node concept="2VURXa" id="3acQo$0xjPK" role="1POhhj" />
@@ -178,6 +199,7 @@
           <ref role="1jQAtN" node="3acQo$0xjPR" resolve="noisy" />
           <node concept="1PNyZM" id="3acQo$0xjQb" role="1PLCoy">
             <ref role="2VPQEx" node="3acQo$0xjPO" resolve="message altered" />
+            <node concept="wX11C" id="P3d8mI1Jbr" role="wX11E" />
           </node>
         </node>
         <node concept="1PLKG7" id="3acQo$0xjQ2" role="1PLCo$">
@@ -203,6 +225,7 @@
         </node>
       </node>
     </node>
+    <node concept="2VURXa" id="P3d8mI1Jbs" role="1POhhj" />
     <node concept="2VURXa" id="10t3kqDeSVK" role="1POhhj" />
     <node concept="2VUHfc" id="10t3kqDeSVM" role="1POhhj">
       <ref role="2VUHf6" node="6xogEbf4RCn" resolve="SenderReceiverSystem" />

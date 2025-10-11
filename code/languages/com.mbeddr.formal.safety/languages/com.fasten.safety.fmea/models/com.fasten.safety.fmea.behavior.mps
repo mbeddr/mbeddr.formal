@@ -223,7 +223,26 @@
     <property role="3GE5qa" value="base.severity" />
     <ref role="13h7C2" to="6k2r:FkaPoE83GY" resolve="FailureEffectSeveriryQualitative" />
     <node concept="13hLZK" id="FkaPoE83JD" role="13h7CW">
-      <node concept="3clFbS" id="FkaPoE83JE" role="2VODD2" />
+      <node concept="3clFbS" id="FkaPoE83JE" role="2VODD2">
+        <node concept="3clFbF" id="P3d8mI7zMX" role="3cqZAp">
+          <node concept="37vLTI" id="P3d8mI7$xw" role="3clFbG">
+            <node concept="2OqwBi" id="P3d8mI7_wJ" role="37vLTx">
+              <node concept="1XH99k" id="P3d8mI7$A$" role="2Oq$k0">
+                <ref role="1XH99l" to="6k2r:FkaPoE84vU" resolve="EFailureEffectSeverityQualitative" />
+              </node>
+              <node concept="2ViDtV" id="P3d8mI7_W7" role="2OqNvi">
+                <ref role="2ViDtZ" to="6k2r:P3d8mI74QX" resolve="MODERATE" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="P3d8mI7zY1" role="37vLTJ">
+              <node concept="13iPFW" id="P3d8mI7zMW" role="2Oq$k0" />
+              <node concept="3TrcHB" id="P3d8mI7$9u" role="2OqNvi">
+                <ref role="3TsBF5" to="6k2r:FkaPoE84w3" resolve="severity" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="FkaPoE83JV" role="13h7CS">
       <property role="TrG5h" value="asText" />
@@ -274,7 +293,7 @@
                 <ref role="1XH99l" to="6k2r:FkaPoE7dNp" resolve="EFailureModeProbabilityQualitative" />
               </node>
               <node concept="2ViDtV" id="6xogEbf2M2M" role="2OqNvi">
-                <ref role="2ViDtZ" to="6k2r:6xogEbf2JTW" resolve="NOT_AVAILABLE" />
+                <ref role="2ViDtZ" to="6k2r:FkaPoE7dNu" resolve="ABOUT_EVEN" />
               </node>
             </node>
             <node concept="2OqwBi" id="6xogEbf2K9i" role="37vLTJ">
