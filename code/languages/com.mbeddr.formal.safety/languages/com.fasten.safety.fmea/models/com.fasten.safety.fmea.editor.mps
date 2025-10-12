@@ -653,5 +653,12 @@
       <node concept="2iRfu4" id="6xogEbf6$c5" role="2czzBx" />
     </node>
   </node>
+  <node concept="24kQdi" id="P3d8mI8_K1">
+    <property role="3GE5qa" value="base.recommended_action" />
+    <ref role="1XX52x" to="6k2r:P3d8mI8_F6" resolve="ReccomendedActionText" />
+    <node concept="3F1sOY" id="P3d8mI8_K3" role="2wV5jI">
+      <ref role="1NtTu8" to="6k2r:P3d8mI8_F7" resolve="text" />
+    </node>
+  </node>
 </model>
 

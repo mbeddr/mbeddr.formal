@@ -82,6 +82,9 @@
       <concept id="1397920687864683158" name="de.slisson.mps.tables.structure.Table" flags="ng" index="2rfBfz">
         <child id="1397920687864865354" name="cells" index="2rf8GZ" />
       </concept>
+      <concept id="6466068411884348300" name="de.slisson.mps.tables.structure.EditorCellHeader" flags="ng" index="1A0rlU">
+        <child id="6466068411884348445" name="editorCell" index="1A0rbF" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -260,6 +263,23 @@
           </node>
           <node concept="2rfbtV" id="FkaPoE87m$" role="2recC9">
             <property role="2rfbtB" value="Severity" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="P3d8mI8_K5" role="2reCL6">
+          <node concept="3F1sOY" id="P3d8mI8_K6" role="2reSmM">
+            <property role="1$x2rV" value="n/a" />
+            <ref role="1NtTu8" to="6k2r:P3d8mI8_F4" />
+          </node>
+          <node concept="1A0rlU" id="P3d8mI8VCb" role="2recC9">
+            <node concept="3EZMnI" id="P3d8mI8VCd" role="1A0rbF">
+              <node concept="3F0ifn" id="P3d8mI8VCh" role="3EZMnx">
+                <property role="3F0ifm" value="Recommended" />
+              </node>
+              <node concept="3F0ifn" id="P3d8mI8VCj" role="3EZMnx">
+                <property role="3F0ifm" value="      Action" />
+              </node>
+              <node concept="2iRkQZ" id="P3d8mI8VCg" role="2iSdaV" />
+            </node>
           </node>
         </node>
       </node>

@@ -9,6 +9,7 @@
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -136,6 +137,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="severity" />
       <ref role="20lvS9" node="FkaPoE83GX" resolve="FailureEffectSeveriryBase" />
+    </node>
+    <node concept="1TJgyj" id="P3d8mI8_F4" role="1TKVEi">
+      <property role="IQ2ns" value="955665294689458884" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="recommendedAction" />
+      <ref role="20lvS9" node="P3d8mI8_F5" resolve="RecommendedActionBase" />
     </node>
   </node>
   <node concept="1TIwiD" id="31P83hzF$d$">
@@ -445,6 +452,27 @@
       <property role="20kJfa" value="effectDefinition" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="31P83hzHxPM" resolve="FailureEffectDefinitionBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="P3d8mI8_F5">
+    <property role="EcuMT" value="955665294689458885" />
+    <property role="TrG5h" value="RecommendedActionBase" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="base.recommended_action" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+  </node>
+  <node concept="1TIwiD" id="P3d8mI8_F6">
+    <property role="EcuMT" value="955665294689458886" />
+    <property role="3GE5qa" value="base.recommended_action" />
+    <property role="TrG5h" value="ReccomendedActionText" />
+    <property role="34LRSv" value="textual description" />
+    <ref role="1TJDcQ" node="P3d8mI8_F5" resolve="RecommendedActionBase" />
+    <node concept="1TJgyj" id="P3d8mI8_F7" role="1TKVEi">
+      <property role="IQ2ns" value="955665294689458887" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
     </node>
   </node>
 </model>
