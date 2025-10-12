@@ -39,14 +39,23 @@
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
       </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
     </language>
     <language id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea">
+      <concept id="7518832844921351839" name="com.fasten.safety.fmea.structure.FailureEffectDefinitionBaseRef" flags="ng" index="2BiYKX">
+        <reference id="7518832844921351840" name="effectDefinition" index="2BiYK2" />
+      </concept>
+      <concept id="7518832844921351837" name="com.fasten.safety.fmea.structure.PotentialFailureCausesEffectRefs" flags="ng" index="2BiYKZ">
+        <child id="7518832844921351838" name="lowerLevelEffects" index="2BiYKW" />
+      </concept>
       <concept id="4663111736253860896" name="com.fasten.safety.fmea.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
       <concept id="3491732495478955378" name="com.fasten.safety.fmea.structure.FailureEffectDefinitionBase" flags="ng" index="1jKNP6">
         <child id="4663111736253957550" name="description" index="2VUvr4" />
       </concept>
       <concept id="3491732495478440804" name="com.fasten.safety.fmea.structure.FailureModeDefinitionBase" flags="ng" index="1jQQdg">
+        <child id="780296284515429939" name="potentialCause" index="wNkl_" />
         <child id="4663111736253767864" name="description" index="2VUHfi" />
       </concept>
       <concept id="8413234032527459520" name="com.fasten.safety.fmea.structure.FailureModeAndEffects" flags="ng" index="1PLKG7">
@@ -171,6 +180,14 @@
               <node concept="19SUe$" id="3acQo$0xjQ6" role="19SJt6" />
             </node>
           </node>
+          <node concept="2VUvrc" id="1IqNTocaH8F" role="2VUkHK">
+            <property role="TrG5h" value="message shortened" />
+            <node concept="19SGf9" id="1IqNTocaH8G" role="2VUvr4">
+              <node concept="19SUe$" id="1IqNTocaH8H" role="19SJt6">
+                <property role="19SUeA" value=" " />
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="2VURXa" id="3acQo$0xjPG" role="1POhhj" />
         <node concept="2VUHfc" id="3acQo$0xjPH" role="1POhhj">
@@ -251,6 +268,9 @@
               <node concept="3KTrbX" id="3acQo$0zsVJ" role="3KTr4d">
                 <ref role="3AHY9a" node="3acQo$0xjUb" resolve="Receiver" />
               </node>
+              <node concept="3KTrbX" id="1IqNTocaEgs" role="3KTr4d">
+                <ref role="3AHY9a" node="1IqNTocaBhl" resolve="SenderReceiverSystem" />
+              </node>
             </node>
           </node>
           <node concept="1PLGxJ" id="3acQo$0xjPU" role="1PLElB">
@@ -282,6 +302,31 @@
           </node>
         </node>
         <node concept="2VURXa" id="3acQo$0zss7" role="1POhhj" />
+        <node concept="2VUHfc" id="1IqNTocaH2R" role="1POhhj">
+          <ref role="2VUHf6" node="1IqNTocaBhl" resolve="SenderReceiverSystem" />
+          <node concept="2VUHfq" id="1IqNTocaH2T" role="2VUBrq">
+            <property role="TrG5h" value="deadlock" />
+            <node concept="19SGf9" id="1IqNTocaH2V" role="2VUHfi">
+              <node concept="19SUe$" id="1IqNTocaH2W" role="19SJt6">
+                <property role="19SUeA" value=" " />
+              </node>
+            </node>
+            <node concept="2BiYKZ" id="1IqNTocaH5Y" role="wNkl_">
+              <node concept="2BiYKX" id="1IqNTocaH6J" role="2BiYKW">
+                <ref role="2BiYK2" node="3acQo$0xjPO" resolve="message altered" />
+                <node concept="2rqxmr" id="1IqNTocaH8g" role="lGtFl">
+                  <ref role="1BTHP0" node="3acQo$0xjPO" resolve="message altered" />
+                  <node concept="3KTrbX" id="1IqNTocaH8h" role="3KTr4d">
+                    <ref role="3AHY9a" node="3acQo$0xjPO" resolve="message altered" />
+                  </node>
+                  <node concept="3KTrbX" id="1IqNTocaH8i" role="3KTr4d">
+                    <ref role="3AHY9a" node="3acQo$0xjPN" resolve="message loss" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="7CXmI" id="3acQo$0zsVt" role="lGtFl">
           <node concept="7OXhh" id="3acQo$0zsVu" role="7EUXB">
             <property role="GvXf4" value="true" />
