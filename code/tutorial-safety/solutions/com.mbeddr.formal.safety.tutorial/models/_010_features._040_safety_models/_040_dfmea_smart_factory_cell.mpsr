@@ -4,6 +4,13 @@
   <imports />
   <registry>
     <language id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea">
+      <concept id="955665294689458886" name="com.fasten.safety.fmea.structure.ReccomendedActionText" flags="ng" index="2zomT3">
+        <child id="955665294689458887" name="text" index="2zomT2" />
+      </concept>
+      <concept id="4663111736253860896" name="com.fasten.safety.fmea.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
+      <concept id="8413234032527459589" name="com.fasten.safety.fmea.structure.EffectBase" flags="ng" index="1PLKF2">
+        <child id="955665294689458884" name="recommendedAction" index="2zomT1" />
+      </concept>
       <concept id="8413234032527459520" name="com.fasten.safety.fmea.structure.FailureModeAndEffects" flags="ng" index="1PLKG7">
         <reference id="3491732495478507335" name="failureModeDefinition" index="1jQAtN" />
         <child id="8413234032527493605" name="effects" index="1PLCoy" />
@@ -32,23 +39,56 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
+    <language id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout">
+      <concept id="6720495385597071406" name="de.itemis.mps.editor.diagram.layout.structure.Layout_Box" flags="ng" index="gqqVs">
+        <property id="6720495385597071504" name="bounds_height" index="gqqTy" />
+        <property id="6720495385597071502" name="bounds_y" index="gqqTW" />
+        <property id="6720495385597071503" name="bounds_width" index="gqqTX" />
+        <property id="6720495385597071501" name="bounds_x" index="gqqTZ" />
+      </concept>
+      <concept id="8963411245960991886" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMap" flags="ng" index="37mRI7">
+        <child id="8963411245960991904" name="entries" index="37mRID" />
+      </concept>
+      <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
+        <property id="8963411245960998400" name="key" index="37mO49" />
+        <child id="8963411245960998404" name="value" index="37mO4d" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv" />
+    </language>
   </registry>
   <node concept="1POhia" id="4eD_5l3mJzG">
-    <property role="TrG5h" value="_040_dfmea" />
+    <property role="TrG5h" value="_040_dfmea_smart_factory_cell" />
     <property role="3GE5qa" value="_00_dfmea" />
     <node concept="1PLMAg" id="4eD_5l3mJzR" role="1POhhj">
-      <ref role="1POnuR" node="41rggeh7FLJ" resolve="smart_factory_cell" />
+      <ref role="1POnuR" node="FkaPoE2SJx" resolve="SmartFactoryCell" />
       <node concept="1PLGxJ" id="4eD_5l3mJzY" role="1PLElB">
         <ref role="1PLGwE" node="41rggeh7FLN" resolve="HDCamera" />
         <node concept="1PLKG7" id="4eD_5l3mJ$2" role="1PLCo$">
           <ref role="1jQAtN" node="4eD_5l3mJwS" resolve="bad pixel" />
           <node concept="1PNyZM" id="4eD_5l3mJ$4" role="1PLCoy">
             <ref role="2VPQEx" node="4eD_5l3mJz3" resolve="erroneous packaging" />
+            <node concept="37mRI7" id="P3d8mI9BF8" role="lGtFl">
+              <node concept="37mRIm" id="P3d8mI9BF9" role="37mRID">
+                <property role="37mO49" value="PAGE_SETTING_BOTTOM_RIGHT" />
+                <node concept="gqqVs" id="P3d8mI9BF7" role="37mO4d">
+                  <property role="gqqTX" value="75" />
+                  <property role="gqqTy" value="35" />
+                  <property role="gqqTZ" value="4490" />
+                  <property role="gqqTW" value="3174" />
+                </node>
+              </node>
+            </node>
+            <node concept="2zomT3" id="1IqNToc8zg$" role="2zomT1">
+              <node concept="1Pa9Pv" id="1IqNToc8zgA" role="2zomT2" />
+            </node>
           </node>
         </node>
         <node concept="1PLKG7" id="4eD_5l3mJ$8" role="1PLCo$">
@@ -95,6 +135,9 @@
         </node>
       </node>
     </node>
+    <node concept="2VURXa" id="FkaPoE6mQ4" role="1POhhj" />
+    <node concept="2VURXa" id="FkaPoE6mQd" role="1POhhj" />
+    <node concept="2VURXa" id="FkaPoE6mQe" role="1POhhj" />
   </node>
 </model>
 

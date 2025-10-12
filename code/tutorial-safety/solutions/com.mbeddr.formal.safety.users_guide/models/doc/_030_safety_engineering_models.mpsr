@@ -103,7 +103,7 @@
           <node concept="2bctqb" id="1LeaOOdakM1" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakM3" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakMw" role="2NCMaf">
-              <ref role="2NCMaa" to="688z:4eD_5l3mJwO" resolve="_020_failure_modes_of_components" />
+              <ref role="2NCMaa" to="688z:4eD_5l3mJwO" resolve="_020_failure_modes_of_components_component_level" />
             </node>
           </node>
         </node>
@@ -127,7 +127,7 @@
           <node concept="2bctqb" id="1LeaOOdakNn" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakNp" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakNU" role="2NCMaf">
-              <ref role="2NCMaa" to="688z:4eD_5l3mJyA" resolve="_030_failure_effects_on_system" />
+              <ref role="2NCMaa" to="688z:4eD_5l3mJyA" resolve="_011_failure_effects_catalogue" />
             </node>
           </node>
         </node>
@@ -151,7 +151,7 @@
           <node concept="2bctqb" id="1LeaOOdakOT" role="3z_lpT" />
           <node concept="2NCZwO" id="1LeaOOdakOV" role="3z_lpI">
             <node concept="2NCMab" id="1LeaOOdakPw" role="2NCMaf">
-              <ref role="2NCMaa" to="688z:4eD_5l3mJzG" resolve="_040_dfmea" />
+              <ref role="2NCMaa" to="688z:4eD_5l3mJzG" resolve="_040_dfmea_smart_factory_cell" />
             </node>
           </node>
         </node>

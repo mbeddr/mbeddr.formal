@@ -99,6 +99,9 @@
     <node concept="PrWs8" id="42QGQFVnclu" role="PzmwI">
       <ref role="PrY4T" to="6k2r:42QGQFVnclm" resolve="IDesignFMEARootContent" />
     </node>
+    <node concept="PrWs8" id="10t3kqDeSW4" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="42QGQFVncmK" role="1TKVEi">
       <property role="IQ2ns" value="4663111736253793712" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -114,6 +117,9 @@
     <property role="34LRSv" value="failure mode" />
     <property role="R4oN_" value="failure mode definition" />
     <ref role="1TJDcQ" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
+    <node concept="PrWs8" id="3EO1cD5f8oU" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="42QGQFVnOmu">
     <property role="EcuMT" value="4663111736253957534" />

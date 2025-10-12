@@ -69,10 +69,10 @@
       <node concept="c$xRF" id="2oZKZkZKeX1" role="1pqCzW" />
       <node concept="1YWaGV" id="2oZKZkZKeX7" role="1pqCzW">
         <node concept="1YLunI" id="2oZKZkZKeX8" role="1YLvr7">
-          <ref role="1YLunC" node="2oZKZkZKeXw" />
+          <ref role="1YLunC" node="2oZKZkZKeXw" resolve="Programmer" />
         </node>
         <node concept="1YLunI" id="2oZKZkZKeX9" role="1YLvr0">
-          <ref role="1YLunC" node="2oZKZkZKeWT" />
+          <ref role="1YLunC" node="2oZKZkZKeWT" resolve="Radar_Objects_Detection" />
         </node>
         <node concept="1YNCKy" id="2oZKZkZKeX_" role="1YNDuu">
           <property role="1YNCKz" value="read logs" />
@@ -80,10 +80,10 @@
       </node>
       <node concept="1YWaGV" id="2oZKZkZKeXB" role="1pqCzW">
         <node concept="1YLunI" id="2oZKZkZKeXC" role="1YLvr7">
-          <ref role="1YLunC" node="2oZKZkZKeWT" />
+          <ref role="1YLunC" node="2oZKZkZKeWT" resolve="Radar_Objects_Detection" />
         </node>
         <node concept="1YLunI" id="2oZKZkZKeXD" role="1YLvr0">
-          <ref role="1YLunC" node="2oZKZkZKeXw" />
+          <ref role="1YLunC" node="2oZKZkZKeXw" resolve="Programmer" />
         </node>
         <node concept="1YNCKy" id="2oZKZkZKeXE" role="1YNDuu">
           <property role="1YNCKz" value=" logs" />

@@ -14,15 +14,40 @@
       <concept id="2557074442922380897" name="de.slisson.mps.richtext.structure.Text" flags="ng" index="19SGf9">
         <child id="2557074442922392302" name="words" index="19SJt6" />
       </concept>
-      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$" />
+      <concept id="2557074442922438156" name="de.slisson.mps.richtext.structure.Word" flags="ng" index="19SUe$">
+        <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
+      </concept>
+    </language>
+    <language id="c7f99e92-818b-4094-a2f9-369356a5259c" name="com.symo.plantuml.ext">
+      <concept id="7351702347342571918" name="com.symo.plantuml.ext.structure.ComponentDiagramComponentDeclarationReuse" flags="ng" index="tL1vr">
+        <reference id="7351702347342908998" name="component" index="tKv0j" />
+      </concept>
     </language>
     <language id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea">
+      <concept id="780296284515654872" name="com.fasten.safety.fmea.structure.FailureModeProbabilityQualitative" flags="ng" index="wMfue">
+        <property id="780296284515654885" name="probability" index="wMfuN" />
+      </concept>
+      <concept id="780296284515533989" name="com.fasten.safety.fmea.structure.PotentialFailureCausePlainText" flags="ng" index="wNMZN">
+        <child id="780296284515535748" name="text" index="wNM3i" />
+      </concept>
+      <concept id="780296284515875646" name="com.fasten.safety.fmea.structure.FailureEffectSeveriryQualitative" flags="ng" index="wX11C" />
+      <concept id="7518832844921351839" name="com.fasten.safety.fmea.structure.FailureEffectDefinitionBaseRef" flags="ng" index="2BiYKX">
+        <reference id="7518832844921351840" name="effectDefinition" index="2BiYK2" />
+      </concept>
+      <concept id="7518832844921351837" name="com.fasten.safety.fmea.structure.PotentialFailureCausesEffectRefs" flags="ng" index="2BiYKZ">
+        <child id="7518832844921351838" name="lowerLevelEffects" index="2BiYKW" />
+      </concept>
       <concept id="4663111736253860896" name="com.fasten.safety.fmea.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
       <concept id="3491732495478955378" name="com.fasten.safety.fmea.structure.FailureEffectDefinitionBase" flags="ng" index="1jKNP6">
         <child id="4663111736253957550" name="description" index="2VUvr4" />
       </concept>
       <concept id="3491732495478440804" name="com.fasten.safety.fmea.structure.FailureModeDefinitionBase" flags="ng" index="1jQQdg">
+        <child id="780296284515654870" name="probability" index="wMfu0" />
+        <child id="780296284515429939" name="potentialCause" index="wNkl_" />
         <child id="4663111736253767864" name="description" index="2VUHfi" />
+      </concept>
+      <concept id="8413234032527459589" name="com.fasten.safety.fmea.structure.EffectBase" flags="ng" index="1PLKF2">
+        <child id="780296284515875644" name="severity" index="wX11E" />
       </concept>
       <concept id="8413234032527459520" name="com.fasten.safety.fmea.structure.FailureModeAndEffects" flags="ng" index="1PLKG7">
         <reference id="3491732495478507335" name="failureModeDefinition" index="1jQAtN" />
@@ -45,9 +70,13 @@
         <child id="1983696557349285469" name="source" index="1pvUZv" />
       </concept>
       <concept id="7634549724642624365" name="com.symo.plantuml.structure.PlantUmlEmptyLine" flags="ng" index="c$xRF" />
+      <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
+        <child id="521530426072143424" name="substructure" index="3eE$XC" />
+      </concept>
       <concept id="1983696557348555164" name="com.symo.plantuml.structure.StartUmlCommand" flags="ng" index="1pqCwu" />
       <concept id="1983696557348555132" name="com.symo.plantuml.structure.PlantUmlDiagramBase" flags="ng" index="1pqCzY">
         <property id="8400506447498256066" name="zoom" index="145Srp" />
+        <property id="1983696557348880118" name="displayStrategy" index="1ptBXO" />
         <child id="1983696557348555134" name="content" index="1pqCzW" />
       </concept>
       <concept id="1983696557348555133" name="com.symo.plantuml.structure.PlantUmlComponentDiagram" flags="ng" index="1pqCzZ" />
@@ -102,6 +131,14 @@
           <node concept="19SUe$" id="3acQo$0xjQ6" role="19SJt6" />
         </node>
       </node>
+      <node concept="2VUvrc" id="10t3kqDfMgt" role="2VUkHK">
+        <property role="TrG5h" value="message ignored" />
+        <node concept="19SGf9" id="10t3kqDfMgu" role="2VUvr4">
+          <node concept="19SUe$" id="10t3kqDfMgv" role="19SJt6">
+            <property role="19SUeA" value=" " />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2VURXa" id="3acQo$0xjPG" role="1POhhj" />
     <node concept="2VUHfc" id="3acQo$0xjPH" role="1POhhj">
@@ -111,11 +148,17 @@
         <node concept="19SGf9" id="3acQo$0xjPX" role="2VUHfi">
           <node concept="19SUe$" id="3acQo$0xjQ7" role="19SJt6" />
         </node>
+        <node concept="wMfue" id="P3d8mI1Jbn" role="wMfu0">
+          <property role="wMfuN" value="FkaPoE7dNx/LIKELY" />
+        </node>
       </node>
       <node concept="2VUHfq" id="3acQo$0xjPQ" role="2VUBrq">
         <property role="TrG5h" value="too slow" />
         <node concept="19SGf9" id="3acQo$0xjPY" role="2VUHfi">
           <node concept="19SUe$" id="3acQo$0xjQ8" role="19SJt6" />
+        </node>
+        <node concept="wMfue" id="P3d8mI39es" role="wMfu0">
+          <property role="wMfuN" value="FkaPoE7dNz/ALMOST_CERTAIN" />
         </node>
       </node>
     </node>
@@ -127,24 +170,36 @@
         <node concept="19SGf9" id="3acQo$0xjPZ" role="2VUHfi">
           <node concept="19SUe$" id="3acQo$0xjQ9" role="19SJt6" />
         </node>
+        <node concept="wNMZN" id="P3d8mI1Jbo" role="wNkl_">
+          <node concept="19SGf9" id="P3d8mI1Jbp" role="wNM3i">
+            <node concept="19SUe$" id="P3d8mI1Jbq" role="19SJt6">
+              <property role="19SUeA" value="plain text " />
+            </node>
+          </node>
+        </node>
+        <node concept="wMfue" id="P3d8mI5tdW" role="wMfu0">
+          <property role="wMfuN" value="FkaPoE7dNz/ALMOST_CERTAIN" />
+        </node>
       </node>
       <node concept="2VUHfq" id="3acQo$0xjPS" role="2VUBrq">
         <property role="TrG5h" value="too fast" />
         <node concept="19SGf9" id="3acQo$0xjQ0" role="2VUHfi">
           <node concept="19SUe$" id="3acQo$0xjQa" role="19SJt6" />
         </node>
+        <node concept="wMfue" id="P3d8mI43ps" role="wMfu0" />
       </node>
     </node>
     <node concept="2VURXa" id="3acQo$0xjPK" role="1POhhj" />
     <node concept="2VURXa" id="3acQo$0zrpn" role="1POhhj" />
     <node concept="1PLMAg" id="3acQo$0xjPM" role="1POhhj">
-      <ref role="1POnuR" node="3acQo$0xjQg" resolve="SenderReceiverSystemUml" />
+      <ref role="1POnuR" node="6xogEbf4RCn" resolve="SenderReceiverSystem" />
       <node concept="1PLGxJ" id="3acQo$0xjPT" role="1PLElB">
         <ref role="1PLGwE" node="3acQo$0xjU8" resolve="SenderUml" />
         <node concept="1PLKG7" id="3acQo$0xjQ1" role="1PLCo$">
           <ref role="1jQAtN" node="3acQo$0xjPR" resolve="noisy" />
           <node concept="1PNyZM" id="3acQo$0xjQb" role="1PLCoy">
             <ref role="2VPQEx" node="3acQo$0xjPO" resolve="message altered" />
+            <node concept="wX11C" id="P3d8mI1Jbr" role="wX11E" />
           </node>
         </node>
         <node concept="1PLKG7" id="3acQo$0xjQ2" role="1PLCo$">
@@ -170,30 +225,93 @@
         </node>
       </node>
     </node>
+    <node concept="2VURXa" id="P3d8mI1Jbs" role="1POhhj" />
+    <node concept="2VURXa" id="10t3kqDeSVK" role="1POhhj" />
+    <node concept="2VUHfc" id="10t3kqDeSVM" role="1POhhj">
+      <ref role="2VUHf6" node="6xogEbf4RCn" resolve="SenderReceiverSystem" />
+      <node concept="2VUHfq" id="10t3kqDeSVO" role="2VUBrq">
+        <property role="TrG5h" value="deadlock" />
+        <node concept="19SGf9" id="10t3kqDeSVQ" role="2VUHfi">
+          <node concept="19SUe$" id="10t3kqDeSVR" role="19SJt6">
+            <property role="19SUeA" value=" " />
+          </node>
+        </node>
+        <node concept="2BiYKZ" id="10t3kqDeSVT" role="wNkl_">
+          <node concept="2BiYKX" id="10t3kqDeSVU" role="2BiYKW">
+            <ref role="2BiYK2" node="3acQo$0xjPN" resolve="message loss" />
+          </node>
+        </node>
+      </node>
+      <node concept="2VUHfq" id="10t3kqDeSVV" role="2VUBrq">
+        <property role="TrG5h" value="livelock" />
+        <node concept="19SGf9" id="10t3kqDeSVW" role="2VUHfi">
+          <node concept="19SUe$" id="10t3kqDeSVX" role="19SJt6">
+            <property role="19SUeA" value=" " />
+          </node>
+        </node>
+        <node concept="2BiYKZ" id="10t3kqDeSVY" role="wNkl_">
+          <node concept="2BiYKX" id="10t3kqDeSVZ" role="2BiYKW">
+            <ref role="2BiYK2" node="3acQo$0xjPO" resolve="message altered" />
+          </node>
+          <node concept="2BiYKX" id="10t3kqDeSW3" role="2BiYKW">
+            <ref role="2BiYK2" node="3acQo$0xjPN" resolve="message loss" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1pqNnw" id="3acQo$0xjQf">
     <property role="TrG5h" value="_010_first_architecture" />
     <node concept="1pqCzZ" id="3acQo$0xjQg" role="1pqCw0">
       <property role="145Srp" value="100" />
       <property role="TrG5h" value="SenderReceiverSystemUml" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="3acQo$0xjQh" role="1pqCzW" />
-      <node concept="1pts5n" id="3acQo$0xjU8" role="1pqCzW">
-        <property role="TrG5h" value="SenderUml" />
-      </node>
-      <node concept="1pts5n" id="3acQo$0xjUb" role="1pqCzW">
-        <property role="TrG5h" value="ReceiverUml" />
-      </node>
-      <node concept="c$xRF" id="3acQo$0xjUd" role="1pqCzW" />
-      <node concept="1ps3o1" id="3acQo$0xjUf" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
-        <node concept="1pvSZV" id="3acQo$0xjUh" role="1pvUZv">
-          <ref role="1pvSZS" node="3acQo$0xjU8" resolve="SenderUml" />
+      <node concept="1pts5n" id="6xogEbf4RCn" role="1pqCzW">
+        <property role="TrG5h" value="SenderReceiverSystem" />
+        <node concept="1pts5n" id="3acQo$0xjU8" role="3eE$XC">
+          <property role="TrG5h" value="SenderUml" />
         </node>
-        <node concept="1pvSZV" id="3acQo$0xjUi" role="1pvUZs">
-          <ref role="1pvSZS" node="3acQo$0xjUb" resolve="ReceiverUml" />
+        <node concept="1pts5n" id="3acQo$0xjUb" role="3eE$XC">
+          <property role="TrG5h" value="ReceiverUml" />
+        </node>
+        <node concept="1ps3o1" id="3acQo$0xjUf" role="3eE$XC">
+          <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
+          <node concept="1pvSZV" id="3acQo$0xjUh" role="1pvUZv">
+            <ref role="1pvSZS" node="3acQo$0xjU8" resolve="SenderUml" />
+          </node>
+          <node concept="1pvSZV" id="3acQo$0xjUi" role="1pvUZs">
+            <ref role="1pvSZS" node="3acQo$0xjUb" resolve="ReceiverUml" />
+          </node>
         </node>
       </node>
       <node concept="1pqCE1" id="3acQo$0xjQj" role="1pqCzW" />
+    </node>
+    <node concept="c$xRF" id="10t3kqDeSVG" role="1pqCw0" />
+    <node concept="1pqCzZ" id="10t3kqDeSVz" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="TopSystem" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="10t3kqDeSV$" role="1pqCzW" />
+      <node concept="1pts5n" id="10t3kqDeSV_" role="1pqCzW">
+        <property role="TrG5h" value="TopSystem" />
+        <node concept="tL1vr" id="10t3kqDeSVI" role="3eE$XC">
+          <ref role="tKv0j" node="6xogEbf4RCn" resolve="SenderReceiverSystem" />
+        </node>
+        <node concept="1pts5n" id="10t3kqDeSVB" role="3eE$XC">
+          <property role="TrG5h" value="App" />
+        </node>
+        <node concept="1ps3o1" id="10t3kqDeSVC" role="3eE$XC">
+          <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
+          <node concept="1pvSZV" id="10t3kqDeSVD" role="1pvUZv">
+            <ref role="1pvSZS" node="10t3kqDeSVI" resolve="SenderReceiverSystem" />
+          </node>
+          <node concept="1pvSZV" id="10t3kqDeSVE" role="1pvUZs">
+            <ref role="1pvSZS" node="10t3kqDeSVB" resolve="App" />
+          </node>
+        </node>
+      </node>
+      <node concept="1pqCE1" id="10t3kqDeSVF" role="1pqCzW" />
     </node>
   </node>
 </model>
