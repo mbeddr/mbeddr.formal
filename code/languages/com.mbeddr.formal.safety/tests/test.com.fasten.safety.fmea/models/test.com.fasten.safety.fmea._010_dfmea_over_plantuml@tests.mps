@@ -70,6 +70,9 @@
         <child id="1983696557349285469" name="source" index="1pvUZv" />
       </concept>
       <concept id="7634549724642624365" name="com.symo.plantuml.structure.PlantUmlEmptyLine" flags="ng" index="c$xRF" />
+      <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
+        <child id="521530426072143424" name="substructure" index="3eE$XC" />
+      </concept>
       <concept id="1983696557348555164" name="com.symo.plantuml.structure.StartUmlCommand" flags="ng" index="1pqCwu" />
       <concept id="1983696557348555132" name="com.symo.plantuml.structure.PlantUmlDiagramBase" flags="ng" index="1pqCzY">
         <property id="8400506447498256066" name="zoom" index="145Srp" />
@@ -128,20 +131,23 @@
           <property role="145Srp" value="100" />
           <property role="TrG5h" value="SenderReceiverSystem" />
           <node concept="1pqCwu" id="3acQo$0xjQh" role="1pqCzW" />
-          <node concept="1pts5n" id="3acQo$0xjU8" role="1pqCzW">
-            <property role="TrG5h" value="Sender" />
-          </node>
-          <node concept="1pts5n" id="3acQo$0xjUb" role="1pqCzW">
-            <property role="TrG5h" value="Receiver" />
-          </node>
-          <node concept="c$xRF" id="3acQo$0xjUd" role="1pqCzW" />
-          <node concept="1ps3o1" id="3acQo$0xjUf" role="1pqCzW">
-            <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
-            <node concept="1pvSZV" id="3acQo$0xjUh" role="1pvUZv">
-              <ref role="1pvSZS" node="3acQo$0xjU8" resolve="Sender" />
+          <node concept="1pts5n" id="1IqNTocaBhl" role="1pqCzW">
+            <property role="TrG5h" value="SenderReceiverSystem" />
+            <node concept="1pts5n" id="3acQo$0xjU8" role="3eE$XC">
+              <property role="TrG5h" value="Sender" />
             </node>
-            <node concept="1pvSZV" id="3acQo$0xjUi" role="1pvUZs">
-              <ref role="1pvSZS" node="3acQo$0xjUb" resolve="Receiver" />
+            <node concept="1pts5n" id="3acQo$0xjUb" role="3eE$XC">
+              <property role="TrG5h" value="Receiver" />
+            </node>
+            <node concept="c$xRF" id="3acQo$0xjUd" role="3eE$XC" />
+            <node concept="1ps3o1" id="3acQo$0xjUf" role="3eE$XC">
+              <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
+              <node concept="1pvSZV" id="3acQo$0xjUh" role="1pvUZv">
+                <ref role="1pvSZS" node="3acQo$0xjU8" resolve="Sender" />
+              </node>
+              <node concept="1pvSZV" id="3acQo$0xjUi" role="1pvUZs">
+                <ref role="1pvSZS" node="3acQo$0xjUb" resolve="Receiver" />
+              </node>
             </node>
           </node>
           <node concept="1pqCE1" id="3acQo$0xjQj" role="1pqCzW" />
@@ -206,14 +212,14 @@
               <ref role="3AHY9a" node="3acQo$0xjUb" resolve="Receiver" />
             </node>
             <node concept="3KTrbX" id="3acQo$0zsVC" role="3KTr4d">
-              <ref role="3AHY9a" node="3acQo$0xjQg" resolve="SenderReceiverSystem" />
+              <ref role="3AHY9a" node="1IqNTocaBhl" resolve="SenderReceiver" />
             </node>
           </node>
         </node>
         <node concept="2VURXa" id="3acQo$0xjPK" role="1POhhj" />
         <node concept="2VURXa" id="3acQo$0zrpn" role="1POhhj" />
         <node concept="1PLMAg" id="3acQo$0xjPM" role="1POhhj">
-          <ref role="1POnuR" node="3acQo$0xjQg" resolve="SenderReceiverSystem" />
+          <ref role="1POnuR" node="1IqNTocaBhl" resolve="SenderReceiverSystem" />
           <node concept="1PLGxJ" id="3acQo$0xjPT" role="1PLElB">
             <ref role="1PLGwE" node="3acQo$0xjU8" resolve="Sender" />
             <node concept="1PLKG7" id="3acQo$0xjQ1" role="1PLCo$">
@@ -263,7 +269,7 @@
             </node>
           </node>
           <node concept="2rqxmr" id="3acQo$0zsVD" role="lGtFl">
-            <ref role="1BTHP0" node="3acQo$0xjQg" resolve="SenderReceiverSystem" />
+            <ref role="1BTHP0" node="1IqNTocaBhl" resolve="SenderReceiverSystem" />
             <node concept="3KTrbX" id="3acQo$0zsVE" role="3KTr4d">
               <ref role="3AHY9a" node="3acQo$0xjU8" resolve="Sender" />
             </node>
@@ -271,7 +277,7 @@
               <ref role="3AHY9a" node="3acQo$0xjUb" resolve="Receiver" />
             </node>
             <node concept="3KTrbX" id="3acQo$0zsVG" role="3KTr4d">
-              <ref role="3AHY9a" node="3acQo$0xjQg" resolve="SenderReceiverSystem" />
+              <ref role="3AHY9a" node="1IqNTocaBhl" resolve="SenderReceiverSystem" />
             </node>
           </node>
         </node>
