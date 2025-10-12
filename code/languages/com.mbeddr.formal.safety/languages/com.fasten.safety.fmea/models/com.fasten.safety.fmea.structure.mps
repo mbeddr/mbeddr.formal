@@ -258,7 +258,7 @@
     <property role="3GE5qa" value="base.potential_failure_cause" />
     <property role="TrG5h" value="PotentialFailureCauseBase" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="FkaPoE6Ki_">
     <property role="EcuMT" value="780296284515533989" />
@@ -280,7 +280,7 @@
     <property role="3GE5qa" value="base.probability" />
     <property role="TrG5h" value="FailureProbabilityBase" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="FkaPoE7dNo">
     <property role="EcuMT" value="780296284515654872" />
@@ -299,7 +299,7 @@
     <property role="3F6X1D" value="780296284515654873" />
     <property role="TrG5h" value="EFailureModeProbabilityQualitative" />
     <property role="3GE5qa" value="base.probability" />
-    <ref role="1H5jkz" node="FkaPoE7dNu" resolve="POSSIBLE" />
+    <ref role="1H5jkz" node="FkaPoE7dNu" resolve="ABOUT_EVEN" />
     <node concept="25R33" id="P3d8mI6qi0" role="25R1y">
       <property role="3tVfz5" value="955665294688887936" />
       <property role="TrG5h" value="VIRTUALLY_IMPOSSIBLE" />
@@ -356,7 +356,7 @@
     <property role="3GE5qa" value="base.severity" />
     <property role="TrG5h" value="FailureEffectSeveriryBase" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="FkaPoE83GY">
     <property role="EcuMT" value="780296284515875646" />
@@ -375,7 +375,7 @@
     <property role="3F6X1D" value="780296284515878906" />
     <property role="TrG5h" value="EFailureEffectSeverityQualitative" />
     <property role="3GE5qa" value="base.severity" />
-    <ref role="1H5jkz" node="FkaPoE84vY" resolve="MODERATE" />
+    <ref role="1H5jkz" node="FkaPoE84vY" resolve="MAJOR" />
     <node concept="25R33" id="P3d8mI74QP" role="25R1y">
       <property role="3tVfz5" value="955665294689062325" />
       <property role="TrG5h" value="NEGLIGIBLE" />
@@ -446,7 +446,7 @@
     <property role="EcuMT" value="7518832844921351839" />
     <property role="3GE5qa" value="base" />
     <property role="TrG5h" value="FailureEffectDefinitionBaseRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="6xogEbf4UUw" role="1TKVEi">
       <property role="IQ2ns" value="7518832844921351840" />
       <property role="20kJfa" value="effectDefinition" />
@@ -459,7 +459,7 @@
     <property role="TrG5h" value="RecommendedActionBase" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="base.recommended_action" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="P3d8mI8_F6">
     <property role="EcuMT" value="955665294689458886" />

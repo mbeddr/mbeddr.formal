@@ -60,7 +60,7 @@
     <property role="3GE5qa" value="base" />
     <ref role="1M2myG" to="6k2r:6xogEbf4UUv" resolve="FailureEffectDefinitionBaseRef" />
     <node concept="1N5Pfh" id="P3d8mHZN7N" role="1Mr941">
-      <ref role="1N5Vy1" to="6k2r:6xogEbf4UUw" />
+      <ref role="1N5Vy1" to="6k2r:6xogEbf4UUw" resolve="effectDefinition" />
       <node concept="1dDu$B" id="P3d8mHZNc2" role="1N6uqs">
         <ref role="1dDu$A" to="6k2r:31P83hzHxPM" resolve="FailureEffectDefinitionBase" />
       </node>

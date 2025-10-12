@@ -473,7 +473,7 @@
     <node concept="3EZMnI" id="1fmUDYB0ob" role="6VMZX">
       <node concept="2iRkQZ" id="1fmUDYB0oc" role="2iSdaV" />
       <node concept="3F1sOY" id="1fmUDYB0od" role="3EZMnx">
-        <ref role="1NtTu8" to="zqec:3sgpJkb5PI1" />
+        <ref role="1NtTu8" to="zqec:3sgpJkb5PI1" resolve="probabilityDistribution" />
         <node concept="2w$q5c" id="1fmUDYB0oe" role="3xwHhi">
           <node concept="2aJ2om" id="1fmUDYB0of" role="2w$qW5">
             <ref role="2$4xQ3" node="3sgpJkb5jGi" resolve="TEXTUAL" />

@@ -244,7 +244,7 @@
       <node concept="2reCLk" id="FkaPoE87ml" role="2r0Tv6">
         <node concept="2reCLy" id="FkaPoE87m5" role="2reCL6">
           <node concept="1iCGBv" id="FkaPoE87m9" role="2reSmM">
-            <ref role="1NtTu8" to="g9vz:42QGQFVotBb" />
+            <ref role="1NtTu8" to="g9vz:42QGQFVotBb" resolve="effect" />
             <node concept="1sVBvm" id="FkaPoE87mb" role="1sWHZn">
               <node concept="3F0A7n" id="FkaPoE87mh" role="2wV5jI">
                 <property role="1Intyy" value="true" />
@@ -268,7 +268,7 @@
         <node concept="2reCLy" id="P3d8mI8_K5" role="2reCL6">
           <node concept="3F1sOY" id="P3d8mI8_K6" role="2reSmM">
             <property role="1$x2rV" value="n/a" />
-            <ref role="1NtTu8" to="6k2r:P3d8mI8_F4" />
+            <ref role="1NtTu8" to="6k2r:P3d8mI8_F4" resolve="recommendedAction" />
           </node>
           <node concept="1A0rlU" id="P3d8mI8VCb" role="2recC9">
             <node concept="3EZMnI" id="P3d8mI8VCd" role="1A0rbF">

@@ -304,10 +304,10 @@
         <node concept="1ps3o1" id="10t3kqDeSVC" role="3eE$XC">
           <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
           <node concept="1pvSZV" id="10t3kqDeSVD" role="1pvUZv">
-            <ref role="1pvSZS" node="10t3kqDeSVI" />
+            <ref role="1pvSZS" node="10t3kqDeSVI" resolve="SenderReceiverSystem" />
           </node>
           <node concept="1pvSZV" id="10t3kqDeSVE" role="1pvUZs">
-            <ref role="1pvSZS" node="10t3kqDeSVB" resolve="ReceiverUml" />
+            <ref role="1pvSZS" node="10t3kqDeSVB" resolve="App" />
           </node>
         </node>
       </node>

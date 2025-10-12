@@ -463,7 +463,7 @@
                               </node>
                             </node>
                             <node concept="13MTOL" id="10t3kqDfUrE" role="2OqNvi">
-                              <ref role="13MTZf" to="g9vz:42QGQFVotBb" />
+                              <ref role="13MTZf" to="g9vz:42QGQFVotBb" resolve="effect" />
                             </node>
                           </node>
                         </node>
