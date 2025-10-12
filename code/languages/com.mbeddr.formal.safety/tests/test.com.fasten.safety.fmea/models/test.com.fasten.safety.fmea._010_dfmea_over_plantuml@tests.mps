@@ -212,7 +212,7 @@
               <ref role="3AHY9a" node="3acQo$0xjUb" resolve="Receiver" />
             </node>
             <node concept="3KTrbX" id="3acQo$0zsVC" role="3KTr4d">
-              <ref role="3AHY9a" node="1IqNTocaBhl" resolve="SenderReceiver" />
+              <ref role="3AHY9a" node="1IqNTocaBhl" resolve="SenderReceiverSystem" />
             </node>
           </node>
         </node>
