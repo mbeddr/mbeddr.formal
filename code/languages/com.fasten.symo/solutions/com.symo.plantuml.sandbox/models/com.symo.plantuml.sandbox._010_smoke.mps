@@ -10,6 +10,7 @@
       <concept id="7634549724643897373" name="com.symo.plantuml.structure.AbstractPlantumlLinkBase" flags="ng" index="cxYUr">
         <property id="1983696557349506347" name="linkType" index="1pv0MD" />
         <property id="1983696557349285489" name="channelName" index="1pvUZN" />
+        <child id="8677912475548497591" name="linkType" index="S$pns" />
         <child id="1983696557349285470" name="target" index="1pvUZs" />
         <child id="1983696557349285469" name="source" index="1pvUZv" />
       </concept>
@@ -39,6 +40,7 @@
         <child id="8400506447497927053" name="longDescription" index="14UC6m" />
       </concept>
       <concept id="7647822637849066698" name="com.symo.plantuml.structure.UsecaseDiagramActor" flags="ng" index="S3rFx" />
+      <concept id="8677912475548510616" name="com.symo.plantuml.structure.StraightLine" flags="ng" index="S$sFN" />
       <concept id="7647822637844199905" name="com.symo.plantuml.structure.PlantUmlUsecaseDiagram" flags="ng" index="VLBZa" />
       <concept id="8400506447497059002" name="com.symo.plantuml.structure.SkinparamCommand" flags="ng" index="14T4ax">
         <child id="8400506447497059019" name="parameter" index="14T4bg" />
@@ -2029,31 +2031,31 @@
         </node>
       </node>
       <node concept="1ps3o1" id="40kNClyHR3Q" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8R/ARROW_UP" />
         <node concept="yPStS" id="6o6v_lVKA$S" role="1pvUZv">
           <ref role="yPStU" node="6o6v_lVKA$R" resolve="Child1_OutPort_1" />
         </node>
         <node concept="yPStS" id="6o6v_lVKA$M" role="1pvUZs">
           <ref role="yPStU" node="6o6v_lVKA$K" resolve="Out_Parent" />
         </node>
+        <node concept="S$sFN" id="7xI8QH1azGV" role="S$pns" />
       </node>
       <node concept="1ps3o1" id="40kNClyHR3X" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
         <node concept="1pvSZV" id="40kNClyHR3Y" role="1pvUZv">
           <ref role="1pvSZS" node="40kNClyCjwf" resolve="Child_1" />
         </node>
         <node concept="yPStS" id="6o6v_lVKAza" role="1pvUZs">
           <ref role="yPStU" node="40kNClyNLdP" resolve="In1" />
         </node>
+        <node concept="S$sFN" id="7xI8QH1azGT" role="S$pns" />
       </node>
       <node concept="1ps3o1" id="6o6v_lVKA$q" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8R/ARROW_UP" />
         <node concept="yPStS" id="6o6v_lVKA$u" role="1pvUZv">
           <ref role="yPStU" node="40kNClyQHAp" resolve="Out1" />
         </node>
         <node concept="1pvSZV" id="6o6v_lVKA$t" role="1pvUZs">
           <ref role="1pvSZS" node="40kNClyCjwf" resolve="Child_1" />
         </node>
+        <node concept="S$sFN" id="7xI8QH1azGU" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="40kNClyhHdD" role="1pqCzW" />
       <node concept="c$xRF" id="6o6v_lVKA$o" role="1pqCzW" />

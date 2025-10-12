@@ -87,6 +87,7 @@
         <child id="1186402402630" name="styles" index="V601i" />
       </concept>
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
         <child id="1186403803051" name="query" index="VblUZ" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
@@ -980,8 +981,35 @@
           <ref role="1NtTu8" to="udwj:1I7wo92Y2Tt" resolve="source" />
         </node>
       </node>
-      <node concept="3F0A7n" id="1I7wo92Z1do" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:1I7wo92YSOF" resolve="linkType" />
+      <node concept="3F1sOY" id="7xI8QH109WJ" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:7xI8QH0ZVqR" resolve="linkType" />
+      </node>
+      <node concept="3EZMnI" id="7xI8QH15FBc" role="3EZMnx">
+        <node concept="2iRfu4" id="7xI8QH15FBd" role="2iSdaV" />
+        <node concept="3F0ifn" id="7xI8QH15Ii5" role="3EZMnx">
+          <property role="3F0ifm" value="DEPRECATED" />
+          <node concept="VechU" id="7xI8QH15Iym" role="3F10Kt">
+            <property role="Vb096" value="fLwANPn/red" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="7xI8QH15B5p" role="3EZMnx">
+          <ref role="1NtTu8" to="udwj:1I7wo92YSOF" resolve="linkType" />
+        </node>
+        <node concept="pkWqt" id="7xI8QH15GWC" role="pqm2j">
+          <node concept="3clFbS" id="7xI8QH15GWD" role="2VODD2">
+            <node concept="3clFbF" id="7xI8QH15BSB" role="3cqZAp">
+              <node concept="3y3z36" id="7xI8QH15E2V" role="3clFbG">
+                <node concept="10Nm6u" id="7xI8QH15EJ_" role="3uHU7w" />
+                <node concept="2OqwBi" id="7xI8QH15Ck8" role="3uHU7B">
+                  <node concept="pncrf" id="7xI8QH15BSA" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="7xI8QH15D7G" role="2OqNvi">
+                    <ref role="3TsBF5" to="udwj:1I7wo92YSOF" resolve="linkType" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F1sOY" id="1I7wo92Y2TF" role="3EZMnx">
         <ref role="1NtTu8" to="udwj:1I7wo92Y2Tu" resolve="target" />
@@ -3495,6 +3523,13 @@
       <node concept="2Py5lD" id="7JbQva7Zq82" role="2PyaAO">
         <property role="2PWKIS" value="VK_BACK_SPACE" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7xI8QH0ZYAp">
+    <property role="3GE5qa" value="base.generic_content.links.type" />
+    <ref role="1XX52x" to="udwj:7xI8QH0ZYAn" resolve="LinkTypeBase" />
+    <node concept="PMmxH" id="7xI8QH0ZYAr" role="2wV5jI">
+      <ref role="PMmxG" to="1ks0:1HEyn0wQUUO" resolve="mpsbasicsAlias" />
     </node>
   </node>
 </model>
