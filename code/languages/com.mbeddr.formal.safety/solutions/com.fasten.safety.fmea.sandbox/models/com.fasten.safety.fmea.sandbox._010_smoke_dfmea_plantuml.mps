@@ -65,11 +65,12 @@
     </language>
     <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
       <concept id="7634549724643897373" name="com.symo.plantuml.structure.AbstractPlantumlLinkBase" flags="ng" index="cxYUr">
-        <property id="1983696557349506347" name="linkType" index="1pv0MD" />
+        <child id="8677912475548497591" name="linkType" index="S$pns" />
         <child id="1983696557349285470" name="target" index="1pvUZs" />
         <child id="1983696557349285469" name="source" index="1pvUZv" />
       </concept>
       <concept id="7634549724642624365" name="com.symo.plantuml.structure.PlantUmlEmptyLine" flags="ng" index="c$xRF" />
+      <concept id="8677912475548557090" name="com.symo.plantuml.structure.ArrowRightLine" flags="ng" index="TrFL9" />
       <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
         <child id="521530426072143424" name="substructure" index="3eE$XC" />
       </concept>
@@ -276,13 +277,13 @@
           <property role="TrG5h" value="ReceiverUml" />
         </node>
         <node concept="1ps3o1" id="3acQo$0xjUf" role="3eE$XC">
-          <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
           <node concept="1pvSZV" id="3acQo$0xjUh" role="1pvUZv">
             <ref role="1pvSZS" node="3acQo$0xjU8" resolve="SenderUml" />
           </node>
           <node concept="1pvSZV" id="3acQo$0xjUi" role="1pvUZs">
             <ref role="1pvSZS" node="3acQo$0xjUb" resolve="ReceiverUml" />
           </node>
+          <node concept="TrFL9" id="6MxuOkWYe58" role="S$pns" />
         </node>
       </node>
       <node concept="1pqCE1" id="3acQo$0xjQj" role="1pqCzW" />
@@ -302,13 +303,13 @@
           <property role="TrG5h" value="App" />
         </node>
         <node concept="1ps3o1" id="10t3kqDeSVC" role="3eE$XC">
-          <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
           <node concept="1pvSZV" id="10t3kqDeSVD" role="1pvUZv">
             <ref role="1pvSZS" node="10t3kqDeSVI" resolve="SenderReceiverSystem" />
           </node>
           <node concept="1pvSZV" id="10t3kqDeSVE" role="1pvUZs">
             <ref role="1pvSZS" node="10t3kqDeSVB" resolve="App" />
           </node>
+          <node concept="TrFL9" id="6MxuOkWYe59" role="S$pns" />
         </node>
       </node>
       <node concept="1pqCE1" id="10t3kqDeSVF" role="1pqCzW" />

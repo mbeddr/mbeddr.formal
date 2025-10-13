@@ -10,7 +10,7 @@
     </language>
     <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
       <concept id="7634549724643897373" name="com.symo.plantuml.structure.AbstractPlantumlLinkBase" flags="ng" index="cxYUr">
-        <property id="1983696557349506347" name="linkType" index="1pv0MD" />
+        <child id="8677912475548497591" name="linkType" index="S$pns" />
         <child id="1983696557349285470" name="target" index="1pvUZs" />
         <child id="1983696557349285469" name="source" index="1pvUZv" />
       </concept>
@@ -18,6 +18,8 @@
       <concept id="7634549724642636764" name="com.symo.plantuml.structure.PlantUmlSingleLineComment" flags="ng" index="c$yPq">
         <property id="7634549724642637897" name="comment" index="c$yrf" />
       </concept>
+      <concept id="8677912475548557091" name="com.symo.plantuml.structure.ArrowUpLine" flags="ng" index="TrFL8" />
+      <concept id="8677912475548557092" name="com.symo.plantuml.structure.ArrowLine" flags="ng" index="TrFLf" />
       <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
         <child id="521530426072143424" name="substructure" index="3eE$XC" />
       </concept>
@@ -67,22 +69,22 @@
           <property role="TrG5h" value="FusionLogic" />
         </node>
         <node concept="1ps3o1" id="7SdKVmpfBad" role="3eE$XC">
-          <property role="1pv0MD" value="1I7wo92YSOE/ARROW" />
           <node concept="1pvSZV" id="7SdKVmpfBaf" role="1pvUZv">
             <ref role="1pvSZS" node="7SdKVmpfBa6" resolve="Preprocessing" />
           </node>
           <node concept="1pvSZV" id="7SdKVmpfBag" role="1pvUZs">
             <ref role="1pvSZS" node="7SdKVmpfBaa" resolve="FusionLogic" />
           </node>
+          <node concept="TrFLf" id="6MxuOkWYehe" role="S$pns" />
         </node>
         <node concept="1ps3o1" id="7SdKVmpfBai" role="3eE$XC">
-          <property role="1pv0MD" value="7ikA1GKsc8R/ARROW_UP" />
           <node concept="1pvSZV" id="7SdKVmpfBak" role="1pvUZv">
             <ref role="1pvSZS" node="7SdKVmpfBa8" resolve="Calibrarion" />
           </node>
           <node concept="1pvSZV" id="7SdKVmpfBal" role="1pvUZs">
             <ref role="1pvSZS" node="7SdKVmpfBa6" resolve="Preprocessing" />
           </node>
+          <node concept="TrFL8" id="6MxuOkWYehd" role="S$pns" />
         </node>
       </node>
       <node concept="1pqCE1" id="7SdKVmpfBa1" role="1pqCzW" />
