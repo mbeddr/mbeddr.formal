@@ -993,7 +993,7 @@
           </node>
         </node>
         <node concept="3F0A7n" id="7xI8QH15B5p" role="3EZMnx">
-          <ref role="1NtTu8" to="udwj:1I7wo92YSOF" resolve="linkType" />
+          <ref role="1NtTu8" to="udwj:1I7wo92YSOF" resolve="linkType_old" />
         </node>
         <node concept="pkWqt" id="7xI8QH15GWC" role="pqm2j">
           <node concept="3clFbS" id="7xI8QH15GWD" role="2VODD2">
@@ -1003,7 +1003,7 @@
                 <node concept="2OqwBi" id="7xI8QH15Ck8" role="3uHU7B">
                   <node concept="pncrf" id="7xI8QH15BSA" role="2Oq$k0" />
                   <node concept="3TrcHB" id="7xI8QH15D7G" role="2OqNvi">
-                    <ref role="3TsBF5" to="udwj:1I7wo92YSOF" resolve="linkType" />
+                    <ref role="3TsBF5" to="udwj:1I7wo92YSOF" resolve="linkType_old" />
                   </node>
                 </node>
               </node>

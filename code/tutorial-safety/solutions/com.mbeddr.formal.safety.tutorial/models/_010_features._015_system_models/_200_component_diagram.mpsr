@@ -5,7 +5,7 @@
   <registry>
     <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
       <concept id="7634549724643897373" name="com.symo.plantuml.structure.AbstractPlantumlLinkBase" flags="ng" index="cxYUr">
-        <property id="1983696557349506347" name="linkType" index="1pv0MD" />
+        <child id="8677912475548497591" name="linkType" index="S$pns" />
         <child id="1983696557349285470" name="target" index="1pvUZs" />
         <child id="1983696557349285469" name="source" index="1pvUZv" />
       </concept>
@@ -13,6 +13,9 @@
       <concept id="7634549724642636764" name="com.symo.plantuml.structure.PlantUmlSingleLineComment" flags="ng" index="c$yPq">
         <property id="7634549724642637897" name="comment" index="c$yrf" />
       </concept>
+      <concept id="8677912475548557090" name="com.symo.plantuml.structure.ArrowRightLine" flags="ng" index="TrFL9" />
+      <concept id="8677912475548557094" name="com.symo.plantuml.structure.ArrowDownLine" flags="ng" index="TrFLd" />
+      <concept id="8677912475548557087" name="com.symo.plantuml.structure.DottedDownLine" flags="ng" index="TrFLO" />
       <concept id="1822469624834477494" name="com.symo.plantuml.structure.Together" flags="ng" index="3ju7J1">
         <child id="1822469624834477498" name="content" index="3ju7Jd" />
       </concept>
@@ -68,65 +71,65 @@
         <property role="TrG5h" value="Radar_Objects_Detection" />
       </node>
       <node concept="1ps3o1" id="75npNYZyqBm" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
         <node concept="1pvSZV" id="75npNYZyqBo" role="1pvUZv">
           <ref role="1pvSZS" node="75npNYZyqBe" resolve="Radar_Left" />
         </node>
         <node concept="1pvSZV" id="75npNYZyqBp" role="1pvUZs">
           <ref role="1pvSZS" node="75npNYZyqBj" resolve="Radar_Objects_Detection" />
         </node>
+        <node concept="TrFLd" id="6MxuOkWYegl" role="S$pns" />
       </node>
       <node concept="1ps3o1" id="75npNYZyqBq" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
         <node concept="1pvSZV" id="75npNYZyqBr" role="1pvUZv">
           <ref role="1pvSZS" node="75npNYZyqBf" resolve="Radar_Right" />
         </node>
         <node concept="1pvSZV" id="75npNYZyqBs" role="1pvUZs">
           <ref role="1pvSZS" node="75npNYZyqBj" resolve="Radar_Objects_Detection" />
         </node>
+        <node concept="TrFLd" id="6MxuOkWYego" role="S$pns" />
       </node>
       <node concept="1ps3o1" id="75npNYZyqAx" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKscSD/DOTTED_DOWN" />
         <node concept="1pvSZV" id="75npNYZyqAy" role="1pvUZv">
           <ref role="1pvSZS" node="75npNYZyqAv" resolve="Camera" />
         </node>
         <node concept="1pvSZV" id="75npNYZyqAz" role="1pvUZs">
           <ref role="1pvSZS" node="75npNYZyqAw" resolve="Camera_Objects_Detection" />
         </node>
+        <node concept="TrFLO" id="6MxuOkWYegm" role="S$pns" />
       </node>
       <node concept="1pts5n" id="75npNYZyqBu" role="1pqCzW">
         <property role="TrG5h" value="Sensors_Fusion" />
       </node>
       <node concept="1ps3o1" id="75npNYZyqBx" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
         <node concept="1pvSZV" id="75npNYZyqBz" role="1pvUZv">
           <ref role="1pvSZS" node="75npNYZyqAw" resolve="Camera_Objects_Detection" />
         </node>
         <node concept="1pvSZV" id="75npNYZyqB$" role="1pvUZs">
           <ref role="1pvSZS" node="75npNYZyqBu" resolve="Sensors_Fusion" />
         </node>
+        <node concept="TrFLd" id="6MxuOkWYegn" role="S$pns" />
       </node>
       <node concept="1ps3o1" id="75npNYZyqB_" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
         <node concept="1pvSZV" id="75npNYZyqBA" role="1pvUZv">
           <ref role="1pvSZS" node="75npNYZyqBj" resolve="Radar_Objects_Detection" />
         </node>
         <node concept="1pvSZV" id="75npNYZyqBB" role="1pvUZs">
           <ref role="1pvSZS" node="75npNYZyqBu" resolve="Sensors_Fusion" />
         </node>
+        <node concept="TrFL9" id="6MxuOkWYegp" role="S$pns" />
       </node>
       <node concept="c$xRF" id="1HEyn0wZcwj" role="1pqCzW" />
       <node concept="1pts5n" id="1HEyn0wZcwl" role="1pqCzW">
         <property role="TrG5h" value="Scene_Builder" />
       </node>
       <node concept="1ps3o1" id="1HEyn0wZcwo" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
         <node concept="1pvSZV" id="1HEyn0wZcwq" role="1pvUZv">
           <ref role="1pvSZS" node="75npNYZyqBu" resolve="Sensors_Fusion" />
         </node>
         <node concept="1pvSZV" id="1HEyn0wZcwr" role="1pvUZs">
           <ref role="1pvSZS" node="1HEyn0wZcwl" resolve="Scene_Builder" />
         </node>
+        <node concept="TrFLd" id="6MxuOkWYegk" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="75npNYZyqA$" role="1pqCzW" />
     </node>

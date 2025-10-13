@@ -5,7 +5,7 @@
   <registry>
     <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
       <concept id="7634549724643897373" name="com.symo.plantuml.structure.AbstractPlantumlLinkBase" flags="ng" index="cxYUr">
-        <property id="1983696557349506347" name="linkType" index="1pv0MD" />
+        <child id="8677912475548497591" name="linkType" index="S$pns" />
         <child id="1983696557349285470" name="target" index="1pvUZs" />
         <child id="1983696557349285469" name="source" index="1pvUZv" />
       </concept>
@@ -16,6 +16,7 @@
       <concept id="2787004330863233384" name="com.symo.plantuml.structure.PlantUmlPlainTextFragment" flags="ng" index="uemj4">
         <child id="2787004330863233391" name="text" index="uemj3" />
       </concept>
+      <concept id="8677912475548557092" name="com.symo.plantuml.structure.ArrowLine" flags="ng" index="TrFLf" />
       <concept id="1983696557348555164" name="com.symo.plantuml.structure.StartUmlCommand" flags="ng" index="1pqCwu" />
       <concept id="1983696557348555132" name="com.symo.plantuml.structure.PlantUmlDiagramBase" flags="ng" index="1pqCzY">
         <property id="8400506447498256066" name="zoom" index="145Srp" />
@@ -270,13 +271,13 @@
         <property role="TrG5h" value="Receiver" />
       </node>
       <node concept="1ps3o1" id="1HEyn0wZcFC" role="1pqCzW">
-        <property role="1pv0MD" value="1I7wo92YSOE/ARROW" />
         <node concept="1pvSZV" id="1HEyn0wZcFE" role="1pvUZv">
           <ref role="1pvSZS" node="1HEyn0wZcFx" resolve="Sender" />
         </node>
         <node concept="1pvSZV" id="1HEyn0wZcFF" role="1pvUZs">
           <ref role="1pvSZS" node="1HEyn0wZcF$" resolve="Receiver" />
         </node>
+        <node concept="TrFLf" id="6MxuOkWYehZ" role="S$pns" />
       </node>
       <node concept="c$xRF" id="1HEyn0wZcFG" role="1pqCzW" />
       <node concept="uemj4" id="1HEyn0wZcFI" role="1pqCzW">

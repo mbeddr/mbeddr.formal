@@ -343,7 +343,6 @@
     <property role="3F6X1D" value="1983696557349506341" />
     <property role="3GE5qa" value="base.generic_content.links" />
     <property role="TrG5h" value="ELinkType" />
-    <ref role="1H5jkz" node="1I7wo92YSOD" resolve="STRAIGHT" />
     <node concept="25R33" id="1I7wo92YSOD" role="25R1y">
       <property role="3tVfz5" value="1983696557349506345" />
       <property role="TrG5h" value="STRAIGHT" />
@@ -781,7 +780,7 @@
     </node>
     <node concept="1TJgyi" id="1I7wo92YSOF" role="1TKVEl">
       <property role="IQ2nx" value="1983696557349506347" />
-      <property role="TrG5h" value="linkType" />
+      <property role="TrG5h" value="linkType_old" />
       <ref role="AX2Wp" node="1I7wo92YSO_" resolve="ELinkType" />
       <node concept="asaX9" id="7xI8QH109WH" role="lGtFl">
         <property role="YLPcu" value="12.10.2025" />

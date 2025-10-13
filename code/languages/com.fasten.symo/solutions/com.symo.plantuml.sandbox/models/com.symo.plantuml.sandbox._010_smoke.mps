@@ -8,7 +8,6 @@
   <registry>
     <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
       <concept id="7634549724643897373" name="com.symo.plantuml.structure.AbstractPlantumlLinkBase" flags="ng" index="cxYUr">
-        <property id="1983696557349506347" name="linkType" index="1pv0MD" />
         <property id="1983696557349285489" name="channelName" index="1pvUZN" />
         <child id="8677912475548497591" name="linkType" index="S$pns" />
         <child id="1983696557349285470" name="target" index="1pvUZs" />
@@ -40,7 +39,14 @@
         <child id="8400506447497927053" name="longDescription" index="14UC6m" />
       </concept>
       <concept id="7647822637849066698" name="com.symo.plantuml.structure.UsecaseDiagramActor" flags="ng" index="S3rFx" />
-      <concept id="8677912475548510616" name="com.symo.plantuml.structure.StraightLine" flags="ng" index="S$sFN" />
+      <concept id="8677912475548510622" name="com.symo.plantuml.structure.StraightRightLine" flags="ng" index="S$sFP" />
+      <concept id="8677912475548557099" name="com.symo.plantuml.structure.ArrowToInterfaceUpLine" flags="ng" index="TrFL0" />
+      <concept id="8677912475548557097" name="com.symo.plantuml.structure.ArrowToInterfaceRightLine" flags="ng" index="TrFL2" />
+      <concept id="8677912475548557091" name="com.symo.plantuml.structure.ArrowUpLine" flags="ng" index="TrFL8" />
+      <concept id="8677912475548557090" name="com.symo.plantuml.structure.ArrowRightLine" flags="ng" index="TrFL9" />
+      <concept id="8677912475548557094" name="com.symo.plantuml.structure.ArrowDownLine" flags="ng" index="TrFLd" />
+      <concept id="8677912475548557093" name="com.symo.plantuml.structure.ArrowLeftLine" flags="ng" index="TrFLe" />
+      <concept id="8677912475548557092" name="com.symo.plantuml.structure.ArrowLine" flags="ng" index="TrFLf" />
       <concept id="7647822637844199905" name="com.symo.plantuml.structure.PlantUmlUsecaseDiagram" flags="ng" index="VLBZa" />
       <concept id="8400506447497059002" name="com.symo.plantuml.structure.SkinparamCommand" flags="ng" index="14T4ax">
         <child id="8400506447497059019" name="parameter" index="14T4bg" />
@@ -221,13 +227,13 @@
       </node>
       <node concept="1ps3o1" id="1I7wo92YPMf" role="1pqCzW">
         <property role="1pvUZN" value="channel name" />
-        <property role="1pv0MD" value="7ikA1GKsc8R/ARROW_UP" />
         <node concept="1pvUZi" id="1I7wo92YPMd" role="1pvUZv">
           <ref role="1pvUZj" node="1I7wo92X5dY" resolve="Int" />
         </node>
         <node concept="1pvSZV" id="1I7wo92YPMh" role="1pvUZs">
           <ref role="1pvSZS" node="1I7wo92WVGh" resolve="Comp" />
         </node>
+        <node concept="TrFL8" id="ncMLCtZsLH" role="S$pns" />
       </node>
       <node concept="1WBzK0" id="q$1bLUhinh" role="1pqCzW">
         <node concept="1Pa9Pv" id="q$1bLUhinj" role="1oxsuN">
@@ -308,13 +314,13 @@
           </node>
         </node>
         <node concept="1ps3o1" id="47IPWgLMO5v" role="14Zzxx">
-          <property role="1pv0MD" value="7ikA1GKsc8Q/ARROW_LEFT" />
           <node concept="1pvUZi" id="47IPWgLMO5t" role="1pvUZv">
             <ref role="1pvUZj" node="7ikA1GKrR5w" resolve="Int" />
           </node>
           <node concept="1pvSZV" id="47IPWgLMO5x" role="1pvUZs">
             <ref role="1pvSZS" node="47IPWgLMO5a" resolve="Second" />
           </node>
+          <node concept="TrFLe" id="ncMLCtZsLI" role="S$pns" />
         </node>
         <node concept="1pts5n" id="7ikA1GKrR5x" role="14Zzxx">
           <property role="TrG5h" value="Comp" />
@@ -322,13 +328,13 @@
         </node>
         <node concept="1ps3o1" id="7ikA1GKrR5y" role="14Zzxx">
           <property role="1pvUZN" value="channel name" />
-          <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
           <node concept="1pvUZi" id="7ikA1GKrR5z" role="1pvUZv">
             <ref role="1pvUZj" node="7ikA1GKrR5w" resolve="Int" />
           </node>
           <node concept="1pvSZV" id="7ikA1GKrR5$" role="1pvUZs">
             <ref role="1pvSZS" node="7ikA1GKrR5x" resolve="Comp" />
           </node>
+          <node concept="TrFL9" id="ncMLCtZsLJ" role="S$pns" />
         </node>
         <node concept="1oxsuH" id="7ikA1GKrR5_" role="14Zzxx">
           <node concept="1Pa9Pv" id="7ikA1GKrR5A" role="1oxsuN">
@@ -447,13 +453,13 @@
         </node>
       </node>
       <node concept="cyzMF" id="6BNnCp_wvUn" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
         <node concept="cBd9P" id="6BNnCp_wvUp" role="1pvUZv">
           <ref role="cBd9N" node="6BNnCp_okdu" resolve="User" />
         </node>
         <node concept="cBaKt" id="6BNnCp_wvUq" role="1pvUZs">
           <ref role="cBaKr" node="6CyxyHi9vUf" resolve="TurnOn" />
         </node>
+        <node concept="TrFL9" id="ncMLCtZsLN" role="S$pns" />
       </node>
       <node concept="1oxsuH" id="q$1bLUhlxy" role="1pqCzW">
         <node concept="1Pa9Pv" id="q$1bLUhlx$" role="1oxsuN">
@@ -498,13 +504,13 @@
         </node>
       </node>
       <node concept="cyzMF" id="6BNnCp_wvUi" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
         <node concept="cBaKt" id="6BNnCp_wvUk" role="1pvUZv">
           <ref role="cBaKr" node="6CyxyHi9vUf" resolve="TurnOn" />
         </node>
         <node concept="cBaKt" id="6BNnCp_wvUl" role="1pvUZs">
           <ref role="cBaKr" node="6BNnCp_wvU9" resolve="Prepare" />
         </node>
+        <node concept="TrFL9" id="ncMLCtZsLL" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="6CyxyHhXKrw" role="1pqCzW" />
     </node>
@@ -552,13 +558,13 @@
         </node>
       </node>
       <node concept="cyzMF" id="6BNnCp_vuqa" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8Q/ARROW_LEFT" />
         <node concept="cBd9P" id="6BNnCp_vuqc" role="1pvUZv">
           <ref role="cBd9N" node="6BNnCp_puvB" resolve="User" />
         </node>
         <node concept="cBaKt" id="6BNnCp_vuqd" role="1pvUZs">
           <ref role="cBaKr" node="6BNnCp_puvt" resolve="TurnOn" />
         </node>
+        <node concept="TrFLe" id="ncMLCtZsLK" role="S$pns" />
       </node>
       <node concept="c$xRF" id="q$1bLUhCAn" role="1pqCzW" />
       <node concept="1pqCE1" id="6BNnCp_puvR" role="1pqCzW" />
@@ -607,13 +613,13 @@
         </node>
       </node>
       <node concept="cyzMF" id="6BNnCp_MYnN" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
         <node concept="cBd9P" id="6BNnCp_MYnP" role="1pvUZv">
           <ref role="cBd9N" node="6BNnCp_puwa" resolve="User" />
         </node>
         <node concept="cBaKt" id="6BNnCp_MYnQ" role="1pvUZs">
           <ref role="cBaKr" node="6BNnCp_puw0" resolve="TurnOn" />
         </node>
+        <node concept="TrFLd" id="ncMLCtZsLM" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="6BNnCp_puwe" role="1pqCzW" />
     </node>
@@ -1750,7 +1756,6 @@
         <property role="1ZmCJ5" value="blue" />
       </node>
       <node concept="1ps3o1" id="4xyy3JSZCHM" role="1pqCzW">
-        <property role="1pv0MD" value="4xyy3JSZCHZ/ARROW_TO_INTERFACE_RIGHT" />
         <property role="1pvUZN" value="payload_send" />
         <node concept="1pvSZV" id="4xyy3JSZCHO" role="1pvUZv">
           <ref role="1pvSZS" node="4xyy3JSZCHe" resolve="Sender" />
@@ -1758,23 +1763,23 @@
         <node concept="1pvUZi" id="4xyy3JSZCHP" role="1pvUZs">
           <ref role="1pvUZj" node="4xyy3JSZCHd" resolve="Payload" />
         </node>
+        <node concept="TrFL2" id="ncMLCtZsLG" role="S$pns" />
       </node>
       <node concept="1ps3o1" id="4xyy3JSZCHl" role="1pqCzW">
         <property role="1pvUZN" value="payload_receive" />
-        <property role="1pv0MD" value="7ikA1GKscSF/STRAIGHT_RIGHT" />
         <node concept="1pvUZi" id="4xyy3JSZCHm" role="1pvUZv">
           <ref role="1pvUZj" node="4xyy3JSZCHd" resolve="Payload" />
         </node>
         <node concept="1pvSZV" id="4xyy3JSZCHn" role="1pvUZs">
           <ref role="1pvSZS" node="4xyy3JSZCHH" resolve="Receiver" />
         </node>
+        <node concept="S$sFP" id="ncMLCtZsLF" role="S$pns" />
       </node>
       <node concept="c$xRF" id="4xyy3JSZCHQ" role="1pqCzW" />
       <node concept="1pt6Ps" id="4xyy3JSZCHS" role="1pqCzW">
         <property role="TrG5h" value="Ack" />
       </node>
       <node concept="1ps3o1" id="4xyy3JSZCHV" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKscSF/STRAIGHT_RIGHT" />
         <property role="1pvUZN" value="ack_receive" />
         <node concept="1pvSZV" id="4xyy3JSZCHX" role="1pvUZv">
           <ref role="1pvSZS" node="4xyy3JSZCHe" resolve="Sender" />
@@ -1782,9 +1787,9 @@
         <node concept="1pvUZi" id="4xyy3JSZCHY" role="1pvUZs">
           <ref role="1pvUZj" node="4xyy3JSZCHS" resolve="Ack" />
         </node>
+        <node concept="S$sFP" id="ncMLCtZsLD" role="S$pns" />
       </node>
       <node concept="1ps3o1" id="4xyy3JSZPJl" role="1pqCzW">
-        <property role="1pv0MD" value="4xyy3JSZCI1/ARROW_TO_INTERFACE_UP" />
         <property role="1pvUZN" value="ack_send" />
         <node concept="1pvSZV" id="4xyy3JSZPJn" role="1pvUZv">
           <ref role="1pvSZS" node="4xyy3JSZCHH" resolve="Receiver" />
@@ -1792,6 +1797,7 @@
         <node concept="1pvUZi" id="4xyy3JSZPJo" role="1pvUZs">
           <ref role="1pvUZj" node="4xyy3JSZCHS" resolve="Ack" />
         </node>
+        <node concept="TrFL0" id="ncMLCtZsLE" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="4xyy3JSZCHF" role="1pqCzW" />
     </node>
@@ -2030,32 +2036,32 @@
           <property role="TrG5h" value="Out_Parent" />
         </node>
       </node>
-      <node concept="1ps3o1" id="40kNClyHR3Q" role="1pqCzW">
+      <node concept="1ps3o1" id="ncMLCtY6Av" role="1pqCzW">
         <node concept="yPStS" id="6o6v_lVKA$S" role="1pvUZv">
           <ref role="yPStU" node="6o6v_lVKA$R" resolve="Child1_OutPort_1" />
         </node>
         <node concept="yPStS" id="6o6v_lVKA$M" role="1pvUZs">
           <ref role="yPStU" node="6o6v_lVKA$K" resolve="Out_Parent" />
         </node>
-        <node concept="S$sFN" id="7xI8QH1azGV" role="S$pns" />
+        <node concept="TrFLf" id="ncMLCtYPLP" role="S$pns" />
       </node>
-      <node concept="1ps3o1" id="40kNClyHR3X" role="1pqCzW">
+      <node concept="1ps3o1" id="ncMLCtY6Ay" role="1pqCzW">
         <node concept="1pvSZV" id="40kNClyHR3Y" role="1pvUZv">
           <ref role="1pvSZS" node="40kNClyCjwf" resolve="Child_1" />
         </node>
         <node concept="yPStS" id="6o6v_lVKAza" role="1pvUZs">
           <ref role="yPStU" node="40kNClyNLdP" resolve="In1" />
         </node>
-        <node concept="S$sFN" id="7xI8QH1azGT" role="S$pns" />
+        <node concept="TrFLf" id="ncMLCtYPLR" role="S$pns" />
       </node>
-      <node concept="1ps3o1" id="6o6v_lVKA$q" role="1pqCzW">
+      <node concept="1ps3o1" id="ncMLCtY6As" role="1pqCzW">
         <node concept="yPStS" id="6o6v_lVKA$u" role="1pvUZv">
           <ref role="yPStU" node="40kNClyQHAp" resolve="Out1" />
         </node>
         <node concept="1pvSZV" id="6o6v_lVKA$t" role="1pvUZs">
           <ref role="1pvSZS" node="40kNClyCjwf" resolve="Child_1" />
         </node>
-        <node concept="S$sFN" id="7xI8QH1azGU" role="S$pns" />
+        <node concept="TrFLf" id="ncMLCtYPLT" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="40kNClyhHdD" role="1pqCzW" />
       <node concept="c$xRF" id="6o6v_lVKA$o" role="1pqCzW" />
@@ -2081,13 +2087,13 @@
         </node>
       </node>
       <node concept="1ps3o1" id="6o6v_lVKAzi" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
         <node concept="yPStS" id="6o6v_lVKA$k" role="1pvUZv">
           <ref role="yPStU" node="6o6v_lVKA$f" resolve="senderOut" />
         </node>
         <node concept="yPStS" id="6o6v_lVKA$m" role="1pvUZs">
           <ref role="yPStU" node="6o6v_lVKA$i" resolve="receiverIn" />
         </node>
+        <node concept="TrFLd" id="ncMLCtYPLW" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="6o6v_lVKAzw" role="1pqCzW" />
     </node>
