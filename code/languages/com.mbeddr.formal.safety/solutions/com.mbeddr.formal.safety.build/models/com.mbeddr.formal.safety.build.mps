@@ -17968,7 +17968,7 @@
           <ref role="3_I8Xa" to="ffeo:4EdAnGErOtx" resolve="mps-core" />
         </node>
         <node concept="3_I8Xc" id="5b5MxoonLhv" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:_VJVSUXfUt" />
+          <ref role="3_I8Xa" to="ffeo:_VJVSUXfUt" resolve="sh" />
         </node>
         <node concept="3_I8Xc" id="Kdb35FfNyc" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5lGJ4TajoPh" resolve="mps-migration" />
@@ -18016,7 +18016,7 @@
           <ref role="3_I8Xa" to="ffeo:5CFKsRWS5pU" resolve="mps-debugger-api" />
         </node>
         <node concept="3_I8Xc" id="5b5MxoonL6T" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:5CFKsRWS5yu" />
+          <ref role="3_I8Xa" to="ffeo:5CFKsRWS5yu" resolve="mps-debugger-java" />
         </node>
         <node concept="3_I8Xc" id="1kq0H7MqD1b" role="39821P">
           <ref role="3_I8Xa" to="ffeo:3SKb_4JujwY" resolve="mps-spellcheck" />
