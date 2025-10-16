@@ -17955,14 +17955,20 @@
         <node concept="3_I8Xc" id="2OysmNF6VCB" role="39821P">
           <ref role="3_I8Xa" to="ffeo:6Hpa5co69Cc" resolve="mps-tooltips" />
         </node>
-        <node concept="3_I8Xc" id="6Kf5KB6_shL" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="vcs-git" />
-        </node>
         <node concept="3_I8Xc" id="6Kf5KB6_sIG" role="39821P">
           <ref role="3_I8Xa" to="ffeo:RJsmGEig2V" resolve="mps-vcs" />
         </node>
+        <node concept="3_I8Xc" id="6Kf5KB6_shL" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="vcs-git" />
+        </node>
+        <node concept="3_I8Xc" id="5b5MxoonLaG" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:1Zf1t7r6_nr" resolve="vcs-github" />
+        </node>
         <node concept="3_I8Xc" id="42jqVeFkUvJ" role="39821P">
           <ref role="3_I8Xa" to="ffeo:4EdAnGErOtx" resolve="mps-core" />
+        </node>
+        <node concept="3_I8Xc" id="5b5MxoonLhv" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:_VJVSUXfUt" resolve="sh" />
         </node>
         <node concept="3_I8Xc" id="Kdb35FfNyc" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5lGJ4TajoPh" resolve="mps-migration" />
@@ -18008,6 +18014,9 @@
         </node>
         <node concept="3_I8Xc" id="4aeOpjl$fXD" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5CFKsRWS5pU" resolve="mps-debugger-api" />
+        </node>
+        <node concept="3_I8Xc" id="5b5MxoonL6T" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5CFKsRWS5yu" resolve="mps-debugger-java" />
         </node>
         <node concept="3_I8Xc" id="1kq0H7MqD1b" role="39821P">
           <ref role="3_I8Xa" to="ffeo:3SKb_4JujwY" resolve="mps-spellcheck" />
