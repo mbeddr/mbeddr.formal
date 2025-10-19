@@ -12,8 +12,10 @@
       </concept>
     </language>
     <language id="b43c548b-f75f-46e2-ad24-de9edd93e95e" name="com.fasten.safety.fmea">
+      <concept id="780296284515654872" name="com.fasten.safety.fmea.structure.FailureModeProbabilityQualitative" flags="ng" index="wMfue" />
       <concept id="4663111736253860896" name="com.fasten.safety.fmea.structure.DesignFMEAEmptyLine" flags="ng" index="2VURXa" />
       <concept id="3491732495478440804" name="com.fasten.safety.fmea.structure.FailureModeDefinitionBase" flags="ng" index="1jQQdg">
+        <child id="780296284515654870" name="probability" index="wMfu0" />
         <child id="4663111736253767864" name="description" index="2VUHfi" />
       </concept>
       <concept id="8413234032528120653" name="com.fasten.safety.fmea.structure.DesignFMEARoot" flags="ng" index="1POhia">
@@ -37,7 +39,7 @@
     </language>
   </registry>
   <node concept="1POhia" id="4eD_5l3mJwO">
-    <property role="TrG5h" value="_020_failure_modes_of_components" />
+    <property role="TrG5h" value="_020_failure_modes_of_components_component_level" />
     <property role="3GE5qa" value="_00_dfmea" />
     <node concept="2VUHfc" id="4eD_5l3mJwQ" role="1POhhj">
       <ref role="2VUHf6" node="41rggeh7FLN" resolve="HDCamera" />
@@ -48,6 +50,7 @@
             <property role="19SUeA" value="a pixel is innactive" />
           </node>
         </node>
+        <node concept="wMfue" id="FkaPoE7D$x" role="wMfu0" />
       </node>
       <node concept="2VUHfq" id="4eD_5l3mJx1" role="2VUBrq">
         <property role="TrG5h" value="distorted image" />

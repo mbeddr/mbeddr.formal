@@ -311,6 +311,7 @@
         <node concept="VPM3Z" id="2TaO3kYwLky" role="3F10Kt" />
         <node concept="3F0ifn" id="2TaO3kYwLk$" role="3EZMnx">
           <property role="3F0ifm" value="FMEDA for electronic components" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="1iCGBv" id="2TaO3kYwLkC" role="3EZMnx">
           <ref role="1NtTu8" to="vicv:2TaO3kYwLkB" resolve="electronicComponents" />
@@ -866,6 +867,7 @@
         <node concept="VPM3Z" id="2TaO3kYwYxb" role="3F10Kt" />
         <node concept="3F0ifn" id="2TaO3kYwYxf" role="3EZMnx">
           <property role="3F0ifm" value="failure effect definition" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="2TaO3kYwYxk" role="3EZMnx">
           <property role="3F0ifm" value="{" />
@@ -944,6 +946,7 @@
         <node concept="VPM3Z" id="2TaO3kYyiiZ" role="3F10Kt" />
         <node concept="3F0ifn" id="2TaO3kYyij3" role="3EZMnx">
           <property role="3F0ifm" value="measures definitions" />
+          <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
         </node>
         <node concept="3F0ifn" id="2TaO3kYyij6" role="3EZMnx">
           <property role="3F0ifm" value="{" />

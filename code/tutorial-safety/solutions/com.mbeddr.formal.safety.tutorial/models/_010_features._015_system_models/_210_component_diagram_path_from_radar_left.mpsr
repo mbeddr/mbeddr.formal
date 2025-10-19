@@ -10,7 +10,7 @@
     </language>
     <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
       <concept id="7634549724643897373" name="com.symo.plantuml.structure.AbstractPlantumlLinkBase" flags="ng" index="cxYUr">
-        <property id="1983696557349506347" name="linkType" index="1pv0MD" />
+        <child id="8677912475548497591" name="linkType" index="S$pns" />
         <child id="1983696557349285470" name="target" index="1pvUZs" />
         <child id="1983696557349285469" name="source" index="1pvUZv" />
       </concept>
@@ -18,6 +18,8 @@
       <concept id="7634549724642636764" name="com.symo.plantuml.structure.PlantUmlSingleLineComment" flags="ng" index="c$yPq">
         <property id="7634549724642637897" name="comment" index="c$yrf" />
       </concept>
+      <concept id="8677912475548557090" name="com.symo.plantuml.structure.ArrowRightLine" flags="ng" index="TrFL9" />
+      <concept id="8677912475548557094" name="com.symo.plantuml.structure.ArrowDownLine" flags="ng" index="TrFLd" />
       <concept id="1983696557349946927" name="com.symo.plantuml.structure.Note" flags="ng" index="1oxsuH">
         <child id="1983696557349946929" name="text" index="1oxsuN" />
         <child id="1983696557349947400" name="annotatedObject" index="1oxsAa" />
@@ -83,31 +85,31 @@
       </node>
       <node concept="c$xRF" id="1HEyn0wZcxO" role="1pqCzW" />
       <node concept="1ps3o1" id="1HEyn0wZcxc" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
         <node concept="1pvSZV" id="7SdKVmpewo4" role="1pvUZs">
           <ref role="1pvSZS" node="1HEyn0wZcxz" resolve="Radar_Objects_Detection" />
         </node>
         <node concept="1pvSZV" id="7SdKVmpewo2" role="1pvUZv">
           <ref role="1pvSZS" node="1HEyn0wZcxw" resolve="Radar_Right" />
         </node>
+        <node concept="TrFLd" id="6MxuOkWYegN" role="S$pns" />
       </node>
       <node concept="1ps3o1" id="1HEyn0wZcxm" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
         <node concept="1pvSZV" id="7SdKVmpewo7" role="1pvUZv">
           <ref role="1pvSZS" node="1HEyn0wZcxz" resolve="Radar_Objects_Detection" />
         </node>
         <node concept="1pvSZV" id="7SdKVmpewoa" role="1pvUZs">
           <ref role="1pvSZS" node="1HEyn0wZcx$" resolve="Sensors_Fusion" />
         </node>
+        <node concept="TrFL9" id="6MxuOkWYegO" role="S$pns" />
       </node>
       <node concept="1ps3o1" id="1HEyn0wZcxr" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8S/ARROW_DOWN" />
         <node concept="1pvSZV" id="7SdKVmpewod" role="1pvUZv">
           <ref role="1pvSZS" node="1HEyn0wZcx$" resolve="Sensors_Fusion" />
         </node>
         <node concept="1pvSZV" id="7SdKVmpewog" role="1pvUZs">
           <ref role="1pvSZS" node="1HEyn0wZcx_" resolve="Scene_Builder" />
         </node>
+        <node concept="TrFLd" id="6MxuOkWYegM" role="S$pns" />
       </node>
       <node concept="c$xRF" id="1HEyn0wZcys" role="1pqCzW" />
       <node concept="1oxsuH" id="1HEyn0wZcxQ" role="1pqCzW">

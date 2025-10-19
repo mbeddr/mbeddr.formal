@@ -35,7 +35,7 @@
     </language>
   </registry>
   <node concept="1POhia" id="4eD_5l3mJyA">
-    <property role="TrG5h" value="_030_failure_effects_on_system" />
+    <property role="TrG5h" value="_011_failure_effects_catalogue" />
     <property role="3GE5qa" value="_00_dfmea" />
     <node concept="2VUvrO" id="4eD_5l3mJz1" role="1POhhj">
       <node concept="2VUvrc" id="4eD_5l3mJz3" role="2VUkHK">

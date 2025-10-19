@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="c7f99e92-818b-4094-a2f9-369356a5259c" name="com.symo.plantuml.ext">
+      <concept id="2756136955077688037" name="com.symo.plantuml.ext.structure.SequenceDiagramUsecaseDiagramActorActor" flags="ng" index="pxb$g">
+        <reference id="2756136955077690412" name="actor" index="px4vp" />
+      </concept>
       <concept id="7351702347342571918" name="com.symo.plantuml.ext.structure.ComponentDiagramComponentDeclarationReuse" flags="ng" index="tL1vr">
         <reference id="7351702347342908998" name="component" index="tKv0j" />
       </concept>
@@ -16,8 +19,8 @@
     </language>
     <language id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml">
       <concept id="7634549724643897373" name="com.symo.plantuml.structure.AbstractPlantumlLinkBase" flags="ng" index="cxYUr">
-        <property id="1983696557349506347" name="linkType" index="1pv0MD" />
         <property id="1983696557349285489" name="channelName" index="1pvUZN" />
+        <child id="8677912475548497591" name="linkType" index="S$pns" />
         <child id="1983696557349285470" name="target" index="1pvUZs" />
         <child id="1983696557349285469" name="source" index="1pvUZv" />
       </concept>
@@ -25,6 +28,10 @@
       <concept id="7634549724642636764" name="com.symo.plantuml.structure.PlantUmlSingleLineComment" flags="ng" index="c$yPq">
         <property id="7634549724642637897" name="comment" index="c$yrf" />
       </concept>
+      <concept id="7647822637849066698" name="com.symo.plantuml.structure.UsecaseDiagramActor" flags="ng" index="S3rFx" />
+      <concept id="8677912475548557090" name="com.symo.plantuml.structure.ArrowRightLine" flags="ng" index="TrFL9" />
+      <concept id="8677912475548557092" name="com.symo.plantuml.structure.ArrowLine" flags="ng" index="TrFLf" />
+      <concept id="7647822637844199905" name="com.symo.plantuml.structure.PlantUmlUsecaseDiagram" flags="ng" index="VLBZa" />
       <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
         <child id="521530426072143424" name="substructure" index="3eE$XC" />
       </concept>
@@ -58,6 +65,9 @@
         <child id="478512667928162939" name="source" index="1YLvr7" />
         <child id="478512667928728354" name="payload" index="1YNDuu" />
       </concept>
+      <concept id="478512667955203960" name="com.symo.plantuml.structure.IPlantUmlEntityWithColor" flags="ngI" index="1ZmCJ4">
+        <property id="478512667955203961" name="color" index="1ZmCJ5" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -88,6 +98,10 @@
       <property role="TrG5h" value="seq_1" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="4_rWrCMj97M" role="1pqCzW" />
+      <node concept="pxb$g" id="6yEaJskGgyg" role="1pqCzW">
+        <property role="1ZmCJ5" value="red" />
+        <ref role="px4vp" node="6yEaJskGiTe" resolve="AnActor" />
+      </node>
       <node concept="u2shr" id="4_rWrCMj97P" role="1pqCzW">
         <ref role="ga$T_" node="4_rWrCMfuRK" resolve="C1" />
       </node>
@@ -117,7 +131,14 @@
           <property role="1YNCKz" value="world" />
         </node>
       </node>
-      <node concept="c$xRF" id="4_rWrCMkhNh" role="1pqCzW" />
+      <node concept="1YWaGV" id="6yEaJskGxJw" role="1pqCzW">
+        <node concept="1YLunI" id="6yEaJskGxJy" role="1YLvr7">
+          <ref role="1YLunC" node="6yEaJskGgyg" resolve="AnActor" />
+        </node>
+        <node concept="1YLunI" id="6yEaJskGxJz" role="1YLvr0">
+          <ref role="1YLunC" node="4_rWrCMj97P" resolve="C1" />
+        </node>
+      </node>
       <node concept="1pqCE1" id="4_rWrCMj97O" role="1pqCzW" />
     </node>
   </node>
@@ -139,13 +160,13 @@
       </node>
       <node concept="c$xRF" id="6o6v_lVLST5" role="1pqCzW" />
       <node concept="1ps3o1" id="6o6v_lVNh0y" role="1pqCzW">
-        <property role="1pv0MD" value="7ikA1GKsc8P/ARROW_RIGHT" />
         <node concept="1pvSZV" id="7yiDGDC$I$q" role="1pvUZv">
           <ref role="1pvSZS" node="6o6v_lVNh0t" resolve="C1" />
         </node>
         <node concept="1pvSZV" id="7yiDGDC$I$t" role="1pvUZs">
           <ref role="1pvSZS" node="6o6v_lVNh0w" resolve="C2" />
         </node>
+        <node concept="TrFL9" id="ncMLCtZsLO" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="6o6v_lVLSSW" role="1pqCzW" />
     </node>
@@ -170,16 +191,15 @@
         </node>
         <node concept="c$xRF" id="7SdKVmpfyDs" role="3eE$XC" />
         <node concept="1ps3o1" id="7SdKVmpfB9d" role="3eE$XC">
-          <property role="1pv0MD" value="1I7wo92YSOE/ARROW" />
           <node concept="1pvSZV" id="7SdKVmpfB9f" role="1pvUZv">
             <ref role="1pvSZS" node="7SdKVmpfyDp" resolve="C1_1" />
           </node>
           <node concept="1pvSZV" id="7SdKVmpfB9g" role="1pvUZs">
             <ref role="1pvSZS" node="7SdKVmpfyDr" resolve="C1_2" />
           </node>
+          <node concept="TrFLf" id="ncMLCtZsLP" role="S$pns" />
         </node>
         <node concept="1ps3o1" id="7SdKVmpfB9l" role="3eE$XC">
-          <property role="1pv0MD" value="1I7wo92YSOE/ARROW" />
           <property role="1pvUZN" value="in1" />
           <node concept="1pvSZV" id="7SdKVmpfB9n" role="1pvUZv">
             <ref role="1pvSZS" node="7SdKVmpewop" resolve="C1" />
@@ -187,9 +207,9 @@
           <node concept="1pvSZV" id="7SdKVmpfB9o" role="1pvUZs">
             <ref role="1pvSZS" node="7SdKVmpfyDp" resolve="C1_1" />
           </node>
+          <node concept="TrFLf" id="ncMLCtZsLR" role="S$pns" />
         </node>
         <node concept="1ps3o1" id="7SdKVmpfB9p" role="3eE$XC">
-          <property role="1pv0MD" value="1I7wo92YSOE/ARROW" />
           <property role="1pvUZN" value="in2" />
           <node concept="1pvSZV" id="7SdKVmpfB9q" role="1pvUZv">
             <ref role="1pvSZS" node="7SdKVmpewop" resolve="C1" />
@@ -197,9 +217,9 @@
           <node concept="1pvSZV" id="7SdKVmpfB9r" role="1pvUZs">
             <ref role="1pvSZS" node="7SdKVmpfyDp" resolve="C1_1" />
           </node>
+          <node concept="TrFLf" id="ncMLCtZsLS" role="S$pns" />
         </node>
         <node concept="1ps3o1" id="7SdKVmpfB9u" role="3eE$XC">
-          <property role="1pv0MD" value="1I7wo92YSOE/ARROW" />
           <property role="1pvUZN" value="ou1" />
           <node concept="1pvSZV" id="7SdKVmpfB9v" role="1pvUZv">
             <ref role="1pvSZS" node="7SdKVmpfyDr" resolve="C1_2" />
@@ -207,9 +227,25 @@
           <node concept="1pvSZV" id="7SdKVmpfB9w" role="1pvUZs">
             <ref role="1pvSZS" node="7SdKVmpewop" />
           </node>
+          <node concept="TrFLf" id="ncMLCtZsLQ" role="S$pns" />
         </node>
       </node>
       <node concept="1pqCE1" id="7SdKVmpewov" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="6yEaJskGgyi">
+    <property role="TrG5h" value="_000_usecases" />
+    <node concept="VLBZa" id="6yEaJskGgyj" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="usecases" />
+      <node concept="1pqCwu" id="6yEaJskGgyn" role="1pqCzW" />
+      <node concept="S3rFx" id="6yEaJskGiTe" role="1pqCzW">
+        <property role="TrG5h" value="AnActor" />
+      </node>
+      <node concept="S3rFx" id="6yEaJskGiTh" role="1pqCzW">
+        <property role="TrG5h" value="AnotherActor" />
+      </node>
+      <node concept="1pqCE1" id="6yEaJskGgyp" role="1pqCzW" />
     </node>
   </node>
 </model>

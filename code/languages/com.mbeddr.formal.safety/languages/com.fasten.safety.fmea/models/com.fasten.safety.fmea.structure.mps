@@ -9,6 +9,7 @@
   <imports>
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -29,12 +30,24 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
+        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
+        <property id="672037151186491528" name="presentation" index="1L1pqM" />
+      </concept>
+      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
+        <child id="3348158742936976577" name="members" index="25R1y" />
+      </concept>
+      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
+        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
+        <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
       <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
@@ -45,6 +58,10 @@
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
         <child id="6327362524875300597" name="icon" index="rwd14" />
         <child id="1169129564478" name="implements" index="PzmwI" />
+      </concept>
+      <concept id="1071489288299" name="jetbrains.mps.lang.structure.structure.PropertyDeclaration" flags="ig" index="1TJgyi">
+        <property id="241647608299431129" name="propertyId" index="IQ2nx" />
+        <reference id="1082985295845" name="dataType" index="AX2Wp" />
       </concept>
       <concept id="1071489288298" name="jetbrains.mps.lang.structure.structure.LinkDeclaration" flags="ig" index="1TJgyj">
         <property id="1071599776563" name="role" index="20kJfa" />
@@ -115,6 +132,18 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="base" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="FkaPoE83GW" role="1TKVEi">
+      <property role="IQ2ns" value="780296284515875644" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="severity" />
+      <ref role="20lvS9" node="FkaPoE83GX" resolve="FailureEffectSeveriryBase" />
+    </node>
+    <node concept="1TJgyj" id="P3d8mI8_F4" role="1TKVEi">
+      <property role="IQ2ns" value="955665294689458884" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="recommendedAction" />
+      <ref role="20lvS9" node="P3d8mI8_F5" resolve="RecommendedActionBase" />
+    </node>
   </node>
   <node concept="1TIwiD" id="31P83hzF$d$">
     <property role="EcuMT" value="3491732495478440804" />
@@ -125,12 +154,27 @@
     <node concept="PrWs8" id="31P83hzF$d_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="6xogEbf71us" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
     <node concept="1TJgyj" id="42QGQFVn62S" role="1TKVEi">
       <property role="IQ2ns" value="4663111736253767864" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="description" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+    <node concept="1TJgyj" id="FkaPoE6mSN" role="1TKVEi">
+      <property role="IQ2ns" value="780296284515429939" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="potentialCause" />
+      <ref role="20lvS9" node="FkaPoE6mQD" resolve="PotentialFailureCauseBase" />
+    </node>
+    <node concept="1TJgyj" id="FkaPoE7dNm" role="1TKVEi">
+      <property role="IQ2ns" value="780296284515654870" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="probability" />
+      <ref role="20lvS9" node="FkaPoE7dNn" resolve="FailureProbabilityBase" />
     </node>
   </node>
   <node concept="1TIwiD" id="31P83hzHxPM">
@@ -208,6 +252,228 @@
     <property role="EcuMT" value="4663111736253793622" />
     <property role="TrG5h" value="IDesignFMEARootContent" />
     <property role="3GE5qa" value="dfmea" />
+  </node>
+  <node concept="1TIwiD" id="FkaPoE6mQD">
+    <property role="EcuMT" value="780296284515429801" />
+    <property role="3GE5qa" value="base.potential_failure_cause" />
+    <property role="TrG5h" value="PotentialFailureCauseBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="FkaPoE6Ki_">
+    <property role="EcuMT" value="780296284515533989" />
+    <property role="3GE5qa" value="base.potential_failure_cause" />
+    <property role="TrG5h" value="PotentialFailureCausePlainText" />
+    <property role="34LRSv" value="text cause" />
+    <property role="R4oN_" value="cause described as plain text" />
+    <ref role="1TJDcQ" node="FkaPoE6mQD" resolve="PotentialFailureCauseBase" />
+    <node concept="1TJgyj" id="FkaPoE6KI4" role="1TKVEi">
+      <property role="IQ2ns" value="780296284515535748" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="FkaPoE7dNn">
+    <property role="EcuMT" value="780296284515654871" />
+    <property role="3GE5qa" value="base.probability" />
+    <property role="TrG5h" value="FailureProbabilityBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="FkaPoE7dNo">
+    <property role="EcuMT" value="780296284515654872" />
+    <property role="TrG5h" value="FailureModeProbabilityQualitative" />
+    <property role="3GE5qa" value="base.probability" />
+    <property role="34LRSv" value="qualitative" />
+    <property role="R4oN_" value="qualitative probability definition" />
+    <ref role="1TJDcQ" node="FkaPoE7dNn" resolve="FailureProbabilityBase" />
+    <node concept="1TJgyi" id="FkaPoE7dN_" role="1TKVEl">
+      <property role="IQ2nx" value="780296284515654885" />
+      <property role="TrG5h" value="probability" />
+      <ref role="AX2Wp" node="FkaPoE7dNp" resolve="EFailureModeProbabilityQualitative" />
+    </node>
+  </node>
+  <node concept="25R3W" id="FkaPoE7dNp">
+    <property role="3F6X1D" value="780296284515654873" />
+    <property role="TrG5h" value="EFailureModeProbabilityQualitative" />
+    <property role="3GE5qa" value="base.probability" />
+    <ref role="1H5jkz" node="FkaPoE7dNu" resolve="ABOUT_EVEN" />
+    <node concept="25R33" id="P3d8mI6qi0" role="25R1y">
+      <property role="3tVfz5" value="955665294688887936" />
+      <property role="TrG5h" value="VIRTUALLY_IMPOSSIBLE" />
+      <property role="1L1pqM" value="Virtually Impossible (1)" />
+    </node>
+    <node concept="25R33" id="P3d8mI6qi2" role="25R1y">
+      <property role="3tVfz5" value="955665294688887938" />
+      <property role="TrG5h" value="EXCEPTIONALLY_UNLIKELY" />
+      <property role="1L1pqM" value="Exceptionally Unlikely (2)" />
+    </node>
+    <node concept="25R33" id="FkaPoE7dNq" role="25R1y">
+      <property role="3tVfz5" value="780296284515654874" />
+      <property role="TrG5h" value="VERY_UNLIKELY" />
+      <property role="1L1pqM" value="Very Unlikely (3)" />
+    </node>
+    <node concept="25R33" id="FkaPoE7dNt" role="25R1y">
+      <property role="3tVfz5" value="780296284515654877" />
+      <property role="TrG5h" value="UNLIKELY" />
+      <property role="1L1pqM" value="Unlikely (4)" />
+    </node>
+    <node concept="25R33" id="P3d8mI6qi5" role="25R1y">
+      <property role="3tVfz5" value="955665294688887941" />
+      <property role="TrG5h" value="LESS_LIKELY_THAN_NOT" />
+      <property role="1L1pqM" value="Less Likely than Not (5)" />
+    </node>
+    <node concept="25R33" id="FkaPoE7dNu" role="25R1y">
+      <property role="3tVfz5" value="780296284515654878" />
+      <property role="TrG5h" value="ABOUT_EVEN" />
+      <property role="1L1pqM" value="About Even (6)" />
+    </node>
+    <node concept="25R33" id="P3d8mI6qi7" role="25R1y">
+      <property role="3tVfz5" value="955665294688887943" />
+      <property role="TrG5h" value="MORE_LIKELY_THAN_NOT" />
+      <property role="1L1pqM" value="More Likely than Not (7)" />
+    </node>
+    <node concept="25R33" id="FkaPoE7dNx" role="25R1y">
+      <property role="3tVfz5" value="780296284515654881" />
+      <property role="TrG5h" value="LIKELY" />
+      <property role="1L1pqM" value="Likely (8)" />
+    </node>
+    <node concept="25R33" id="P3d8mI6qi9" role="25R1y">
+      <property role="3tVfz5" value="955665294688887945" />
+      <property role="TrG5h" value="VERY_LIKELY" />
+      <property role="1L1pqM" value="Very Likely (9)" />
+    </node>
+    <node concept="25R33" id="FkaPoE7dNz" role="25R1y">
+      <property role="3tVfz5" value="780296284515654883" />
+      <property role="TrG5h" value="ALMOST_CERTAIN" />
+      <property role="1L1pqM" value="Almost Certain (10)" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="FkaPoE83GX">
+    <property role="EcuMT" value="780296284515875645" />
+    <property role="3GE5qa" value="base.severity" />
+    <property role="TrG5h" value="FailureEffectSeveriryBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="FkaPoE83GY">
+    <property role="EcuMT" value="780296284515875646" />
+    <property role="3GE5qa" value="base.severity" />
+    <property role="TrG5h" value="FailureEffectSeveriryQualitative" />
+    <property role="34LRSv" value="severity qualitative" />
+    <property role="R4oN_" value="qualitative estimation of severity" />
+    <ref role="1TJDcQ" node="FkaPoE83GX" resolve="FailureEffectSeveriryBase" />
+    <node concept="1TJgyi" id="FkaPoE84w3" role="1TKVEl">
+      <property role="IQ2nx" value="780296284515878915" />
+      <property role="TrG5h" value="severity" />
+      <ref role="AX2Wp" node="FkaPoE84vU" resolve="EFailureEffectSeverityQualitative" />
+    </node>
+  </node>
+  <node concept="25R3W" id="FkaPoE84vU">
+    <property role="3F6X1D" value="780296284515878906" />
+    <property role="TrG5h" value="EFailureEffectSeverityQualitative" />
+    <property role="3GE5qa" value="base.severity" />
+    <ref role="1H5jkz" node="FkaPoE84vY" resolve="MAJOR" />
+    <node concept="25R33" id="P3d8mI74QP" role="25R1y">
+      <property role="3tVfz5" value="955665294689062325" />
+      <property role="TrG5h" value="NEGLIGIBLE" />
+      <property role="1L1pqM" value="Negligible (1)" />
+    </node>
+    <node concept="25R33" id="P3d8mI74QS" role="25R1y">
+      <property role="3tVfz5" value="955665294689062328" />
+      <property role="TrG5h" value="VERY_MINOR" />
+      <property role="1L1pqM" value="Very Minor (2)" />
+    </node>
+    <node concept="25R33" id="FkaPoE84vZ" role="25R1y">
+      <property role="3tVfz5" value="780296284515878911" />
+      <property role="TrG5h" value="MINOR" />
+      <property role="1L1pqM" value="Minor (3)" />
+    </node>
+    <node concept="25R33" id="P3d8mI74QV" role="25R1y">
+      <property role="3tVfz5" value="955665294689062331" />
+      <property role="TrG5h" value="MODERATE_MINOR" />
+      <property role="1L1pqM" value="Moderate Minor (4)" />
+    </node>
+    <node concept="25R33" id="P3d8mI74QX" role="25R1y">
+      <property role="3tVfz5" value="955665294689062333" />
+      <property role="TrG5h" value="MODERATE" />
+      <property role="1L1pqM" value="Moderate (5)" />
+    </node>
+    <node concept="25R33" id="FkaPoE84w2" role="25R1y">
+      <property role="3tVfz5" value="780296284515878914" />
+      <property role="TrG5h" value="MAJOR_LOW" />
+      <property role="1L1pqM" value="Major Low (6)" />
+    </node>
+    <node concept="25R33" id="FkaPoE84vY" role="25R1y">
+      <property role="3tVfz5" value="780296284515878910" />
+      <property role="TrG5h" value="MAJOR" />
+      <property role="1L1pqM" value="Major (7)" />
+    </node>
+    <node concept="25R33" id="FkaPoE84vV" role="25R1y">
+      <property role="3tVfz5" value="780296284515878907" />
+      <property role="TrG5h" value="SEVERE_MAJOR" />
+      <property role="1L1pqM" value="Severe Major (8)" />
+    </node>
+    <node concept="25R33" id="P3d8mI74R2" role="25R1y">
+      <property role="3tVfz5" value="955665294689062338" />
+      <property role="TrG5h" value="CRITICAL" />
+      <property role="1L1pqM" value="Critical (9)" />
+    </node>
+    <node concept="25R33" id="FkaPoE84vW" role="25R1y">
+      <property role="3tVfz5" value="780296284515878908" />
+      <property role="TrG5h" value="CATASTROPHIC" />
+      <property role="1L1pqM" value="Catastrophic (10)" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6xogEbf4UUt">
+    <property role="EcuMT" value="7518832844921351837" />
+    <property role="3GE5qa" value="base.potential_failure_cause" />
+    <property role="TrG5h" value="PotentialFailureCausesEffectRefs" />
+    <property role="34LRSv" value="parts failures" />
+    <property role="R4oN_" value="causes are effects of lower-level failures" />
+    <ref role="1TJDcQ" node="FkaPoE6mQD" resolve="PotentialFailureCauseBase" />
+    <node concept="1TJgyj" id="6xogEbf4UUu" role="1TKVEi">
+      <property role="IQ2ns" value="7518832844921351838" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="lowerLevelEffects" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6xogEbf4UUv" resolve="FailureEffectDefinitionBaseRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6xogEbf4UUv">
+    <property role="EcuMT" value="7518832844921351839" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="FailureEffectDefinitionBaseRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6xogEbf4UUw" role="1TKVEi">
+      <property role="IQ2ns" value="7518832844921351840" />
+      <property role="20kJfa" value="effectDefinition" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="31P83hzHxPM" resolve="FailureEffectDefinitionBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="P3d8mI8_F5">
+    <property role="EcuMT" value="955665294689458885" />
+    <property role="TrG5h" value="RecommendedActionBase" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="base.recommended_action" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="P3d8mI8_F6">
+    <property role="EcuMT" value="955665294689458886" />
+    <property role="3GE5qa" value="base.recommended_action" />
+    <property role="TrG5h" value="ReccomendedActionText" />
+    <property role="34LRSv" value="textual description" />
+    <ref role="1TJDcQ" node="P3d8mI8_F5" resolve="RecommendedActionBase" />
+    <node concept="1TJgyj" id="P3d8mI8_F7" role="1TKVEi">
+      <property role="IQ2ns" value="955665294689458887" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="text" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+    </node>
   </node>
 </model>
 

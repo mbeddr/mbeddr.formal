@@ -10,7 +10,7 @@
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="1wto" ref="r:d2a5f2a9-7844-41f3-be75-db15de4c0123(com.fasten.safety.fmea.editor)" />
     <import index="6k2r" ref="r:caa5c61b-1fdb-4b2d-a184-3bec7eaec4f9(com.fasten.safety.fmea.structure)" />
-    <import index="g9vz" ref="r:c54ad2e6-d537-48fe-8f9f-916529edd872(com.fasten.safety.fmea.arch.structure)" implicit="true" />
+    <import index="g9vz" ref="r:c54ad2e6-d537-48fe-8f9f-916529edd872(com.fasten.safety.fmea.arch.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -36,6 +36,7 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -80,6 +81,9 @@
       </concept>
       <concept id="1397920687864683158" name="de.slisson.mps.tables.structure.Table" flags="ng" index="2rfBfz">
         <child id="1397920687864865354" name="cells" index="2rf8GZ" />
+      </concept>
+      <concept id="6466068411884348300" name="de.slisson.mps.tables.structure.EditorCellHeader" flags="ng" index="1A0rlU">
+        <child id="6466068411884348445" name="editorCell" index="1A0rbF" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -236,12 +240,47 @@
   </node>
   <node concept="24kQdi" id="42QGQFVotBd">
     <ref role="1XX52x" to="g9vz:7j1NWs13Y0P" resolve="ComponentEffectAnalysis" />
-    <node concept="1iCGBv" id="42QGQFVotBk" role="2wV5jI">
-      <ref role="1NtTu8" to="g9vz:42QGQFVotBb" resolve="effect" />
-      <node concept="1sVBvm" id="42QGQFVotBm" role="1sWHZn">
-        <node concept="3F0A7n" id="42QGQFVotBw" role="2wV5jI">
-          <property role="1Intyy" value="true" />
-          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    <node concept="2r0Tta" id="FkaPoE87m4" role="2wV5jI">
+      <node concept="2reCLk" id="FkaPoE87ml" role="2r0Tv6">
+        <node concept="2reCLy" id="FkaPoE87m5" role="2reCL6">
+          <node concept="1iCGBv" id="FkaPoE87m9" role="2reSmM">
+            <ref role="1NtTu8" to="g9vz:42QGQFVotBb" resolve="effect" />
+            <node concept="1sVBvm" id="FkaPoE87mb" role="1sWHZn">
+              <node concept="3F0A7n" id="FkaPoE87mh" role="2wV5jI">
+                <property role="1Intyy" value="true" />
+                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="2rfbtV" id="FkaPoE87mj" role="2recC9">
+            <property role="2rfbtB" value="Effect" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="FkaPoE87ms" role="2reCL6">
+          <node concept="3F1sOY" id="FkaPoE87my" role="2reSmM">
+            <property role="1$x2rV" value="n/a" />
+            <ref role="1NtTu8" to="6k2r:FkaPoE83GW" resolve="severity" />
+          </node>
+          <node concept="2rfbtV" id="FkaPoE87m$" role="2recC9">
+            <property role="2rfbtB" value="Severity" />
+          </node>
+        </node>
+        <node concept="2reCLy" id="P3d8mI8_K5" role="2reCL6">
+          <node concept="3F1sOY" id="P3d8mI8_K6" role="2reSmM">
+            <property role="1$x2rV" value="n/a" />
+            <ref role="1NtTu8" to="6k2r:P3d8mI8_F4" resolve="recommendedAction" />
+          </node>
+          <node concept="1A0rlU" id="P3d8mI8VCb" role="2recC9">
+            <node concept="3EZMnI" id="P3d8mI8VCd" role="1A0rbF">
+              <node concept="3F0ifn" id="P3d8mI8VCh" role="3EZMnx">
+                <property role="3F0ifm" value="Recommended" />
+              </node>
+              <node concept="3F0ifn" id="P3d8mI8VCj" role="3EZMnx">
+                <property role="3F0ifm" value="      Action" />
+              </node>
+              <node concept="2iRkQZ" id="P3d8mI8VCg" role="2iSdaV" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

@@ -3628,11 +3628,6 @@
             <ref role="3bR37D" to="90a9:4be$WTb1AQa" resolve="de.itemis.mps.editor.diagram.runtime" />
           </node>
         </node>
-        <node concept="1SiIV0" id="1k6eCQnEV01" role="3bR37C">
-          <node concept="3bR9La" id="1k6eCQnEV02" role="1SiIV1">
-            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
-          </node>
-        </node>
         <node concept="1BupzO" id="1k6eCQnEV0e" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -3711,11 +3706,6 @@
         <node concept="1SiIV0" id="1k6eCQnEXbC" role="3bR37C">
           <node concept="3bR9La" id="1k6eCQnEXbD" role="1SiIV1">
             <ref role="3bR37D" to="90a9:6fQhGuklQWU" resolve="de.q60.mps.collections.libs" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1k6eCQnEXbE" role="3bR37C">
-          <node concept="3bR9La" id="1k6eCQnEXbF" role="1SiIV1">
-            <ref role="3bR37D" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
         <node concept="1BupzO" id="1k6eCQnEXbR" role="3bR31x">
@@ -14177,6 +14167,11 @@
             <ref role="3bR37D" node="2dsc7GndbM" resolve="com.mpsbasics.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1IqNToc8MKa" role="3bR37C">
+          <node concept="3bR9La" id="1IqNToc8MKb" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="73rWdFZqBpF" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -17960,14 +17955,20 @@
         <node concept="3_I8Xc" id="2OysmNF6VCB" role="39821P">
           <ref role="3_I8Xa" to="ffeo:6Hpa5co69Cc" resolve="mps-tooltips" />
         </node>
-        <node concept="3_I8Xc" id="6Kf5KB6_shL" role="39821P">
-          <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="vcs-git" />
-        </node>
         <node concept="3_I8Xc" id="6Kf5KB6_sIG" role="39821P">
           <ref role="3_I8Xa" to="ffeo:RJsmGEig2V" resolve="mps-vcs" />
         </node>
+        <node concept="3_I8Xc" id="6Kf5KB6_shL" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:I6XuqH2zYV" resolve="vcs-git" />
+        </node>
+        <node concept="3_I8Xc" id="5b5MxoonLaG" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:1Zf1t7r6_nr" resolve="vcs-github" />
+        </node>
         <node concept="3_I8Xc" id="42jqVeFkUvJ" role="39821P">
           <ref role="3_I8Xa" to="ffeo:4EdAnGErOtx" resolve="mps-core" />
+        </node>
+        <node concept="3_I8Xc" id="5b5MxoonLhv" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:_VJVSUXfUt" resolve="sh" />
         </node>
         <node concept="3_I8Xc" id="Kdb35FfNyc" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5lGJ4TajoPh" resolve="mps-migration" />
@@ -18013,6 +18014,9 @@
         </node>
         <node concept="3_I8Xc" id="4aeOpjl$fXD" role="39821P">
           <ref role="3_I8Xa" to="ffeo:5CFKsRWS5pU" resolve="mps-debugger-api" />
+        </node>
+        <node concept="3_I8Xc" id="5b5MxoonL6T" role="39821P">
+          <ref role="3_I8Xa" to="ffeo:5CFKsRWS5yu" resolve="mps-debugger-java" />
         </node>
         <node concept="3_I8Xc" id="1kq0H7MqD1b" role="39821P">
           <ref role="3_I8Xa" to="ffeo:3SKb_4JujwY" resolve="mps-spellcheck" />

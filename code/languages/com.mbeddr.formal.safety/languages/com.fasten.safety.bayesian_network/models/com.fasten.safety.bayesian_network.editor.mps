@@ -14,7 +14,7 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
-    <import index="zqec" ref="r:4b509217-3274-43e6-be70-84e45864fd71(com.fasten.safety.bayesian_network.structure)" implicit="true" />
+    <import index="zqec" ref="r:4b509217-3274-43e6-be70-84e45864fd71(com.fasten.safety.bayesian_network.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
@@ -469,6 +469,17 @@
     </node>
     <node concept="2aJ2om" id="3sgpJkb5jGm" role="CpUAK">
       <ref role="2$4xQ3" node="3sgpJkb5jGi" resolve="TEXTUAL" />
+    </node>
+    <node concept="3EZMnI" id="1fmUDYB0ob" role="6VMZX">
+      <node concept="2iRkQZ" id="1fmUDYB0oc" role="2iSdaV" />
+      <node concept="3F1sOY" id="1fmUDYB0od" role="3EZMnx">
+        <ref role="1NtTu8" to="zqec:3sgpJkb5PI1" resolve="probabilityDistribution" />
+        <node concept="2w$q5c" id="1fmUDYB0oe" role="3xwHhi">
+          <node concept="2aJ2om" id="1fmUDYB0of" role="2w$qW5">
+            <ref role="2$4xQ3" node="3sgpJkb5jGi" resolve="TEXTUAL" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3sgpJkb4XnE">
