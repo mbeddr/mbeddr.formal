@@ -3442,6 +3442,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="2SdFbzcWc5$" role="3bR31x">
+          <node concept="3LXTmp" id="2SdFbzcWc5_" role="3rtmxm">
+            <node concept="3qWCbU" id="2SdFbzcWc5A" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="2SdFbzcWc5B" role="3LXTmr">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="2SdFbzcWc5C" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2SdFbzcWc5D" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7a7$evTWuD_" role="2G$12L">
         <property role="BnDLt" value="true" />
