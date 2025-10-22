@@ -497,7 +497,7 @@
         <node concept="pUk6x" id="6hyv0iVPlGX" role="pUk7w" />
       </node>
       <node concept="m$_wl" id="7a7$evTWEAK" role="39821P">
-        <ref role="m_rDy" node="7a7$evTWB8g" />
+        <ref role="m_rDy" node="7a7$evTWB8g" resolve="fasten.symo" />
         <node concept="398223" id="7a7$evTWEAL" role="39821P">
           <node concept="3_J27D" id="7a7$evTWEAM" role="Nbhlr">
             <node concept="3Mxwew" id="7a7$evTWEAN" role="3MwsjC">
@@ -644,10 +644,10 @@
         <ref role="m$f5T" node="7a7$evTWl$t" resolve="fasten.symo" />
       </node>
       <node concept="m$_yC" id="7a7$evTWCDI" role="m$_yJ">
-        <ref role="m$_y1" node="6hyv0iVPlE4" />
+        <ref role="m$_y1" node="6hyv0iVPlE4" resolve="com.mpsbasics" />
       </node>
       <node concept="m$_yC" id="7a7$evTWI7Z" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:F1NWDqr5lJ" />
+        <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
       </node>
     </node>
     <node concept="m$_wf" id="2MrvZqtGPGn" role="3989C9">
