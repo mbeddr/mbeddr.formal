@@ -18251,9 +18251,9 @@
         <ref role="398BVh" node="1FMyjUPkmcQ" resolve="mps.home" />
       </node>
     </node>
-    <node concept="2sgV4H" id="6odNb$otLmk" role="1l3spa">
-      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
-      <node concept="398BVA" id="6odNb$otLml" role="2JcizS">
+    <node concept="2sgV4H" id="1_6mr9XQLw9" role="1l3spa">
+      <ref role="1l3spb" to="jrpl:3PN66LDqBUx" resolve="org.mpsqa.allInOne" />
+      <node concept="398BVA" id="1_6mr9XQLwa" role="2JcizS">
         <ref role="398BVh" node="6odNb$otLlK" resolve="dependencies.mpsqa" />
       </node>
     </node>
@@ -19163,9 +19163,9 @@
         <ref role="398BVh" node="6ucyvMUDFdB" resolve="dependencies.mbeddr.platform" />
       </node>
     </node>
-    <node concept="2sgV4H" id="6odNb$otLDP" role="1l3spa">
-      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
-      <node concept="398BVA" id="6odNb$otLDQ" role="2JcizS">
+    <node concept="2sgV4H" id="1_6mr9XH$y5" role="1l3spa">
+      <ref role="1l3spb" to="jrpl:3PN66LDqBUx" resolve="org.mpsqa.allInOne" />
+      <node concept="398BVA" id="1_6mr9XH$y7" role="2JcizS">
         <ref role="398BVh" node="6odNb$otLDj" resolve="dependencies.mpsqa" />
       </node>
     </node>
