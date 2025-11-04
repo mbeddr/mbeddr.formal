@@ -30,6 +30,12 @@
       <concept id="2787004330863233384" name="com.symo.plantuml.structure.PlantUmlPlainTextFragment" flags="ng" index="uemj4">
         <child id="2787004330863233391" name="text" index="uemj3" />
       </concept>
+      <concept id="7607884932992916489" name="com.symo.plantuml.structure.IHaveStereotype" flags="ngI" index="2ywBW0">
+        <property id="7607884932992916490" name="stereotype" index="2ywBW3" />
+      </concept>
+      <concept id="7607884932992882758" name="com.symo.plantuml.structure.IHaveAlias" flags="ngI" index="2ywJHf">
+        <property id="7607884932992916491" name="aliasString" index="2ywBW2" />
+      </concept>
       <concept id="4617542590243762439" name="com.symo.plantuml.structure.PortDeclaration" flags="ng" index="yCVY2" />
       <concept id="4617542590244538877" name="com.symo.plantuml.structure.PortRef" flags="ng" index="yPStS">
         <reference id="4617542590244538879" name="port" index="yPStU" />
@@ -2214,6 +2220,156 @@
         </node>
       </node>
       <node concept="1pqCE1" id="6o6v_lVKA_W" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="4_rWrCMfuRD">
+    <property role="TrG5h" value="_010_components_with_stereotypes" />
+    <node concept="1pqCzZ" id="4_rWrCMfuRF" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="architecture_desc" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="4_rWrCMfuRG" role="1pqCzW" />
+      <node concept="14T4ax" id="6AkCKBbagCG" role="1pqCzW">
+        <node concept="14TpLX" id="6AkCKBbagCK" role="14T4bg" />
+      </node>
+      <node concept="uemj4" id="6AkCKBbagCN" role="1pqCzW">
+        <node concept="1Pa9Pv" id="6AkCKBbagCO" role="uemj3">
+          <node concept="1PaTwC" id="6AkCKBbagCQ" role="1PaQFQ">
+            <node concept="3oM_SD" id="6AkCKBbagCS" role="1PaTwD">
+              <property role="3oM_SC" value="skinparam" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagCT" role="1PaTwD">
+              <property role="3oM_SC" value="component" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagCU" role="1PaTwD">
+              <property role="3oM_SC" value="{" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="6AkCKBbagCV" role="1PaQFQ">
+            <node concept="3oM_SD" id="6AkCKBbagCW" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagCX" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagCY" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagCZ" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagD0" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagD1" role="1PaTwD">
+              <property role="3oM_SC" value="BackgroundColor&lt;&lt;basic&gt;&gt;" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagD2" role="1PaTwD">
+              <property role="3oM_SC" value="green" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="6AkCKBbagD3" role="1PaQFQ">
+            <node concept="3oM_SD" id="6AkCKBbagD4" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagD5" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagD6" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagD7" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagD8" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagD9" role="1PaTwD">
+              <property role="3oM_SC" value="BackgroundColor&lt;&lt;advanced&gt;&gt;" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDa" role="1PaTwD">
+              <property role="3oM_SC" value="blue" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="6AkCKBbagDb" role="1PaQFQ">
+            <node concept="3oM_SD" id="6AkCKBbagDc" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDd" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDe" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDf" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDg" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDh" role="1PaTwD">
+              <property role="3oM_SC" value="BackgroundColor&lt;&lt;new&gt;&gt;" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDi" role="1PaTwD">
+              <property role="3oM_SC" value="orange" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="6AkCKBbagDj" role="1PaQFQ">
+            <node concept="3oM_SD" id="6AkCKBbagDk" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDl" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDm" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDn" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDo" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDp" role="1PaTwD">
+              <property role="3oM_SC" value="BackgroundColor&lt;&lt;unknown&gt;&gt;" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbagDq" role="1PaTwD">
+              <property role="3oM_SC" value="yellow" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="6AkCKBbagDr" role="1PaQFQ">
+            <node concept="3oM_SD" id="6AkCKBbagDs" role="1PaTwD">
+              <property role="3oM_SC" value="}" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1pts5n" id="4_rWrCMfuRK" role="1pqCzW">
+        <property role="TrG5h" value="C1" />
+        <property role="2ywBW3" value="basic " />
+      </node>
+      <node concept="1pts5n" id="4_rWrCMfuRN" role="1pqCzW">
+        <property role="TrG5h" value="C2" />
+        <property role="2ywBW3" value="new " />
+        <property role="2ywBW2" value="C2_alias" />
+      </node>
+      <node concept="c$xRF" id="6AkCKBbrwlu" role="1pqCzW" />
+      <node concept="uemj4" id="6AkCKBbrwlw" role="1pqCzW">
+        <node concept="1Pa9Pv" id="6AkCKBbrwlx" role="uemj3">
+          <node concept="1PaTwC" id="6AkCKBbrwlz" role="1PaQFQ">
+            <node concept="3oM_SD" id="6AkCKBbrwl$" role="1PaTwD">
+              <property role="3oM_SC" value="C1" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbrwlM" role="1PaTwD">
+              <property role="3oM_SC" value="-&gt;" />
+            </node>
+            <node concept="3oM_SD" id="6AkCKBbrwlO" role="1PaTwD">
+              <property role="3oM_SC" value="C2_alias" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1pqCE1" id="4_rWrCMfuRI" role="1pqCzW" />
     </node>
   </node>
 </model>
