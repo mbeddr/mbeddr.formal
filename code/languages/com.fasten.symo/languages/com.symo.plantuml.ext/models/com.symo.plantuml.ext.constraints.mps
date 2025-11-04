@@ -124,5 +124,28 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="1aUDt0NeKry">
+    <ref role="1M2myG" to="cxxa:1aUDt0N7DXb" resolve="ComponentDiagramInterfaceDeclarationReuse" />
+    <node concept="EnEH3" id="1aUDt0NeKsj" role="1MhHOB">
+      <ref role="EomxK" to="tpck:h0TrG11" resolve="name" />
+      <node concept="Eqf_E" id="1aUDt0NeKuT" role="EtsB7">
+        <node concept="3clFbS" id="1aUDt0NeKuU" role="2VODD2">
+          <node concept="3clFbF" id="1aUDt0NeKLT" role="3cqZAp">
+            <node concept="2OqwBi" id="1aUDt0NeMju" role="3clFbG">
+              <node concept="2OqwBi" id="1aUDt0NeL$4" role="2Oq$k0">
+                <node concept="EsrRn" id="1aUDt0NeLgS" role="2Oq$k0" />
+                <node concept="3TrEf2" id="1aUDt0NeLXv" role="2OqNvi">
+                  <ref role="3Tt5mk" to="cxxa:1aUDt0N7Eyu" resolve="interf" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="1aUDt0NeMIT" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

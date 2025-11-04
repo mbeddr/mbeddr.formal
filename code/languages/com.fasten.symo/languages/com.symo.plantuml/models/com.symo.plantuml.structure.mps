@@ -276,19 +276,19 @@
     <node concept="PrWs8" id="3acQo$0yS9d" role="PzmwI">
       <ref role="PrY4T" to="ak5:3acQo$0xi7V" resolve="IComponentInstanceLike" />
     </node>
+    <node concept="PrWs8" id="6AkCKBb5HKc" role="PzmwI">
+      <ref role="PrY4T" node="6AkCKBb5_x6" resolve="IHaveAlias" />
+    </node>
+    <node concept="PrWs8" id="6AkCKBb5HKd" role="PzmwI">
+      <ref role="PrY4T" node="6AkCKBb5HK9" resolve="IHaveStereotype" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1I7wo92WYNu">
     <property role="EcuMT" value="1983696557349006558" />
     <property role="3GE5qa" value="diagram.uml.component" />
     <property role="TrG5h" value="InterfaceDeclaration" />
     <property role="34LRSv" value="interface" />
-    <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
-    <node concept="PrWs8" id="1I7wo92WYNv" role="PzmwI">
-      <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
-    </node>
-    <node concept="PrWs8" id="1I7wo92WYNw" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
+    <ref role="1TJDcQ" node="1aUDt0N7E6$" resolve="InterfaceDeclarationBase" />
   </node>
   <node concept="1TIwiD" id="1I7wo92XVu3">
     <property role="EcuMT" value="1983696557349255043" />
@@ -1807,6 +1807,39 @@
     <property role="TrG5h" value="ArrowToInterfaceUpLine" />
     <property role="34LRSv" value="-up-(" />
     <ref role="1TJDcQ" node="7xI8QH0ZYAn" resolve="LinkTypeBase" />
+  </node>
+  <node concept="1TIwiD" id="1aUDt0N7E6$">
+    <property role="EcuMT" value="1349573351980310948" />
+    <property role="3GE5qa" value="diagram.uml.component" />
+    <property role="TrG5h" value="InterfaceDeclarationBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
+    <node concept="PrWs8" id="1aUDt0N7E6_" role="PzmwI">
+      <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="1aUDt0N7E6A" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6AkCKBb5_x6">
+    <property role="EcuMT" value="7607884932992882758" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="IHaveAlias" />
+    <node concept="1TJgyi" id="6AkCKBb5HKb" role="1TKVEl">
+      <property role="IQ2nx" value="7607884932992916491" />
+      <property role="TrG5h" value="aliasString" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6AkCKBb5HK9">
+    <property role="EcuMT" value="7607884932992916489" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="IHaveStereotype" />
+    <node concept="1TJgyi" id="6AkCKBb5HKa" role="1TKVEl">
+      <property role="IQ2nx" value="7607884932992916490" />
+      <property role="TrG5h" value="stereotype" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

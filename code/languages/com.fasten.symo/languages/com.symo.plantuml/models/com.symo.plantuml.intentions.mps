@@ -453,5 +453,36 @@
       </node>
     </node>
   </node>
+  <node concept="2S6QgY" id="6AkCKBb5HPH">
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="addStereotype" />
+    <ref role="2ZfgGC" to="udwj:6AkCKBb5HK9" resolve="IHaveStereotype" />
+    <node concept="2S6ZIM" id="6AkCKBb5HPI" role="2ZfVej">
+      <node concept="3clFbS" id="6AkCKBb5HPJ" role="2VODD2">
+        <node concept="3clFbF" id="6AkCKBb5I6q" role="3cqZAp">
+          <node concept="Xl_RD" id="6AkCKBb5I6p" role="3clFbG">
+            <property role="Xl_RC" value="Add Stereotype" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="6AkCKBb5HPK" role="2ZfgGD">
+      <node concept="3clFbS" id="6AkCKBb5HPL" role="2VODD2">
+        <node concept="3clFbF" id="6AkCKBb5IqP" role="3cqZAp">
+          <node concept="37vLTI" id="6AkCKBb5Kdy" role="3clFbG">
+            <node concept="Xl_RD" id="6AkCKBb5Ked" role="37vLTx">
+              <property role="Xl_RC" value=" " />
+            </node>
+            <node concept="2OqwBi" id="6AkCKBb5I$O" role="37vLTJ">
+              <node concept="2Sf5sV" id="6AkCKBb5IqO" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6AkCKBb5IKr" role="2OqNvi">
+                <ref role="3TsBF5" to="udwj:6AkCKBb5HKa" resolve="stereotype" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
