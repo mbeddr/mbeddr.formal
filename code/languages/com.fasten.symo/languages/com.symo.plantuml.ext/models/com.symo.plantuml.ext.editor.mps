@@ -321,5 +321,24 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="1aUDt0N7EG1">
+    <ref role="1XX52x" to="cxxa:1aUDt0N7DXb" resolve="ComponentDiagramInterfaceDeclarationReuse" />
+    <node concept="3EZMnI" id="1aUDt0N7EIj" role="2wV5jI">
+      <node concept="3F0ifn" id="1aUDt0N7EIn" role="3EZMnx">
+        <property role="3F0ifm" value="#interface-ref" />
+        <ref role="1k5W1q" node="2oZKZkZNy2d" resolve="PlantUmlExtKeyword" />
+      </node>
+      <node concept="1iCGBv" id="1aUDt0N7EIo" role="3EZMnx">
+        <ref role="1NtTu8" to="cxxa:1aUDt0N7Eyu" />
+        <node concept="1sVBvm" id="1aUDt0N7EIp" role="1sWHZn">
+          <node concept="3F0A7n" id="1aUDt0N7EIq" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="1aUDt0N7EIm" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

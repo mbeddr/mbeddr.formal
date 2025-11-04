@@ -282,13 +282,7 @@
     <property role="3GE5qa" value="diagram.uml.component" />
     <property role="TrG5h" value="InterfaceDeclaration" />
     <property role="34LRSv" value="interface" />
-    <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
-    <node concept="PrWs8" id="1I7wo92WYNv" role="PzmwI">
-      <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
-    </node>
-    <node concept="PrWs8" id="1I7wo92WYNw" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
+    <ref role="1TJDcQ" node="1aUDt0N7E6$" resolve="InterfaceDeclarationBase" />
   </node>
   <node concept="1TIwiD" id="1I7wo92XVu3">
     <property role="EcuMT" value="1983696557349255043" />
@@ -1807,6 +1801,19 @@
     <property role="TrG5h" value="ArrowToInterfaceUpLine" />
     <property role="34LRSv" value="-up-(" />
     <ref role="1TJDcQ" node="7xI8QH0ZYAn" resolve="LinkTypeBase" />
+  </node>
+  <node concept="1TIwiD" id="1aUDt0N7E6$">
+    <property role="EcuMT" value="1349573351980310948" />
+    <property role="3GE5qa" value="diagram.uml.component" />
+    <property role="TrG5h" value="InterfaceDeclarationBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
+    <node concept="PrWs8" id="1aUDt0N7E6_" role="PzmwI">
+      <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="1aUDt0N7E6A" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 
