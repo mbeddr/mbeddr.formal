@@ -10,6 +10,7 @@
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="iy8y" ref="r:0c08e44a-c7e7-4e55-9b2a-c33f3133e6c2(com.mpsbasics.words.generic.structure)" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -515,6 +516,18 @@
       <property role="IQ2ns" value="7993788941569402924" />
       <property role="20kJfa" value="req" />
       <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="2N7iSwG$_7t" resolve="Requirement" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1aUDt0N5N7a">
+    <property role="EcuMT" value="1349573351979823562" />
+    <property role="3GE5qa" value="words" />
+    <property role="TrG5h" value="ReqRefTextElement" />
+    <property role="34LRSv" value="@req" />
+    <ref role="1TJDcQ" to="zqge:8D0iRqSPVB" resolve="TextElement" />
+    <node concept="1TJgyj" id="1aUDt0N5N7b" role="1TKVEi">
+      <property role="IQ2ns" value="1349573351979823563" />
+      <property role="20kJfa" value="req" />
       <ref role="20lvS9" node="2N7iSwG$_7t" resolve="Requirement" />
     </node>
   </node>

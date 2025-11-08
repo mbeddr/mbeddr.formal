@@ -70,6 +70,7 @@
     <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
     <dependency reexport="false">792be022-0a7a-4b28-bfd8-b1b2d347b772(com.mpsbasics.core)</dependency>
     <dependency reexport="false">e4b230e7-8e1a-4a05-8148-8713530572c1(com.mpsbasics.words.generic)</dependency>
+    <dependency reexport="false">c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:120e1c9d-4e27-4478-b2af-b2c3bd3850b0:com.mbeddr.mpsutil.editor.querylist" version="0" />
@@ -145,6 +146,7 @@
   <extendedLanguages>
     <extendedLanguage>83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</extendedLanguage>
     <extendedLanguage>92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</extendedLanguage>
+    <extendedLanguage>c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)</extendedLanguage>
   </extendedLanguages>
 </language>
 
