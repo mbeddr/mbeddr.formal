@@ -355,7 +355,7 @@
     <ref role="aqKnT" to="cjwq:6RZi9iiwhYu" resolve="LossRef" />
     <node concept="22hDWj" id="1aUDt0Ngmn3" role="22hAXT" />
     <node concept="3XHNnq" id="1aUDt0NgmnO" role="3ft7WO">
-      <ref role="3XGfJA" to="cjwq:6RZi9iiwhYv" />
+      <ref role="3XGfJA" to="cjwq:6RZi9iiwhYv" resolve="loss" />
       <ref role="3EoQqy" to="cjwq:6RZi9iiwhYu" resolve="LossRef" />
       <node concept="1WAQ3h" id="1aUDt0Ngmrg" role="1WZ6hz">
         <node concept="3clFbS" id="1aUDt0Ngmri" role="2VODD2">
