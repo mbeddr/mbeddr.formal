@@ -92,7 +92,7 @@
   <node concept="1TIwiD" id="2X_iJQizBwi">
     <property role="EcuMT" value="3415218345376380946" />
     <property role="TrG5h" value="SPIDefinition" />
-    <property role="34LRSv" value="spi definition" />
+    <property role="34LRSv" value="SPI definition" />
     <property role="R4oN_" value="safety perf. indicator definition" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2X_iJQizBwj" role="PzmwI">

@@ -84,7 +84,7 @@
       <node concept="3EZMnI" id="2X_iJQizBwq" role="3EZMnx">
         <node concept="VPM3Z" id="2X_iJQizBws" role="3F10Kt" />
         <node concept="3F0ifn" id="2X_iJQizBww" role="3EZMnx">
-          <property role="3F0ifm" value="spi:" />
+          <property role="3F0ifm" value="SPI:" />
         </node>
         <node concept="3F0A7n" id="2X_iJQizBw_" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
