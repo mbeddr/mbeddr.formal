@@ -2,7 +2,6 @@
 <model ref="r:101f009a-0b5e-4b98-8b71-894a2a14daf4(com.mbeddr.formal.safety.argument.spi.typesystem)">
   <persistence version="9" />
   <languages>
-    <use id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem" version="5" />
     <devkit ref="00000000-0000-4000-0000-1de82b3a4936(jetbrains.mps.devkit.aspect.typesystem)" />
   </languages>
   <imports>
@@ -232,6 +231,9 @@
           <node concept="3clFbS" id="5xecbsSnJIw" role="9aQI4">
             <node concept="3clFbF" id="5xecbsSnJKy" role="3cqZAp">
               <node concept="37vLTI" id="5xecbsSnL8Z" role="3clFbG">
+                <node concept="37vLTw" id="5xecbsSnJKx" role="37vLTJ">
+                  <ref role="3cqZAo" node="5xecbsSnyo1" resolve="resList" />
+                </node>
                 <node concept="1eOMI4" id="5xecbsSnLU1" role="37vLTx">
                   <node concept="10QFUN" id="5xecbsSnLU0" role="1eOMHV">
                     <node concept="37vLTw" id="5xecbsSnLTZ" role="10QFUP">
@@ -247,9 +249,6 @@
                       </node>
                     </node>
                   </node>
-                </node>
-                <node concept="37vLTw" id="5xecbsSnJKx" role="37vLTJ">
-                  <ref role="3cqZAo" node="5xecbsSnyo1" resolve="resList" />
                 </node>
               </node>
             </node>

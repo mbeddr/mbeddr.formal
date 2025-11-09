@@ -76,7 +76,6 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
-      <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -111,7 +110,6 @@
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
-        <child id="1109201940907" name="parameter" index="11_B2D" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -571,12 +569,8 @@
       <property role="13i0iv" value="true" />
       <node concept="3Tm1VV" id="75npNYZG_Gq" role="1B3o_S" />
       <node concept="3clFbS" id="75npNYZG_Gs" role="3clF47" />
-      <node concept="3uibUv" id="75npNYZKjm_" role="3clF45">
-        <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
-        <node concept="3uibUv" id="75npNYZKjmA" role="11_B2D">
-          <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
-        </node>
-        <node concept="17QB3L" id="75npNYZKjmB" role="11_B2D" />
+      <node concept="3uibUv" id="5fngJLcbIIa" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
     </node>
     <node concept="13hLZK" id="75npNYZG_G7" role="13h7CW">
@@ -632,12 +626,8 @@
           </node>
         </node>
       </node>
-      <node concept="3uibUv" id="75npNYZJlrX" role="3clF45">
-        <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
-        <node concept="3uibUv" id="75npNYZJlrY" role="11_B2D">
-          <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
-        </node>
-        <node concept="17QB3L" id="75npNYZJlrZ" role="11_B2D" />
+      <node concept="3uibUv" id="5fngJLbVAxx" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
     </node>
   </node>

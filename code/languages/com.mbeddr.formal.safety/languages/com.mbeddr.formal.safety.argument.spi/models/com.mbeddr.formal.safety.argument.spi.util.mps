@@ -40,10 +40,6 @@
         <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
-      <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
-        <child id="1070534934091" name="type" index="10QFUM" />
-        <child id="1070534934092" name="expression" index="10QFUP" />
-      </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -453,17 +449,8 @@
               </node>
             </node>
             <node concept="3cpWs6" id="y1G8y6aqE$" role="3cqZAp">
-              <node concept="10QFUN" id="y1G8y6arlx" role="3cqZAk">
-                <node concept="37vLTw" id="y1G8y6aqU$" role="10QFUP">
-                  <ref role="3cqZAo" node="y1G8y68Dl0" resolve="result" />
-                </node>
-                <node concept="3uibUv" id="75npNYZInq_" role="10QFUM">
-                  <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
-                  <node concept="3uibUv" id="75npNYZJjcA" role="11_B2D">
-                    <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
-                  </node>
-                  <node concept="17QB3L" id="75npNYZJkG5" role="11_B2D" />
-                </node>
+              <node concept="37vLTw" id="y1G8y6aqU$" role="3cqZAk">
+                <ref role="3cqZAo" node="y1G8y68Dl0" resolve="result" />
               </node>
             </node>
           </node>
@@ -488,12 +475,8 @@
           <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
         </node>
       </node>
-      <node concept="3uibUv" id="75npNYZJlrX" role="3clF45">
-        <ref role="3uigEE" to="zn9m:~Pair" resolve="Pair" />
-        <node concept="3uibUv" id="75npNYZJlrY" role="11_B2D">
-          <ref role="3uigEE" to="wyt6:~Boolean" resolve="Boolean" />
-        </node>
-        <node concept="17QB3L" id="75npNYZJlrZ" role="11_B2D" />
+      <node concept="3uibUv" id="5fngJLbVxpZ" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
       </node>
     </node>
     <node concept="3Tm1VV" id="y1G8y6adzT" role="1B3o_S" />
