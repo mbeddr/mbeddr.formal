@@ -470,9 +470,12 @@ tasks {
         modules = listOf("com.mbeddr.formal.nusmv.tutorial")
     }
 
-    check {
-        dependsOn(run_all_tests)
+    val checkModels by registering {
         dependsOn(withType<MpsCheck>())
+    }
+
+    check {
+        dependsOn(run_all_tests, checkModels)
     }
 
     val package_formal by registering(Zip::class) {
