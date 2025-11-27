@@ -3247,7 +3247,7 @@
                 <node concept="TSZUe" id="5Imyhiim4mA" role="2OqNvi">
                   <node concept="2ShNRf" id="5Imyhiim4mB" role="25WWJ7">
                     <node concept="1pGfFk" id="5Imyhiim4mC" role="2ShVmc">
-                      <ref role="37wK5l" to="r3rm:3orzwPrV2wp" resolve="TranslateToOriginButton" />
+                      <ref role="37wK5l" to="xnej:4Z1Ed6tstiq" />
                       <node concept="10M0yZ" id="5Imyhiim4mD" role="37wK5m">
                         <ref role="3cqZAo" to="r3rm:17I5kyiXMqc" resolve="DEFAULT_BUTTON_SIZE" />
                         <ref role="1PxDUh" to="r3rm:2KWY$Um6wZH" resolve="ContextButton" />
