@@ -8,6 +8,7 @@ import groovy.util.Node
 
 plugins {
     base
+    java
     `maven-publish`
     id("co.riiid.gradle") version "0.4.2"
 
