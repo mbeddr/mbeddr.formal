@@ -4,38 +4,28 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
-      <sourceRoot location="jackson-core-asl.jar" />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="joda-time.jar" />
       <sourceRoot location="jsr305.jar" />
       <sourceRoot location="httpasyncclient.jar" />
-      <sourceRoot location="jersey-json.jar" />
-      <sourceRoot location="jackson-xc.jar" />
       <sourceRoot location="commons-logging.jar" />
       <sourceRoot location="httpclient-cache.jar" />
       <sourceRoot location="httpcore-nio.jar" />
-      <sourceRoot location="commons-lang.jar" />
       <sourceRoot location="atlassian-httpclient-api.jar" />
-      <sourceRoot location="jackson-jaxrs.jar" />
       <sourceRoot location="atlassian-event.jar" />
-      <sourceRoot location="jaxb-api.jar" />
       <sourceRoot location="httpcore.jar" />
       <sourceRoot location="jira-rest-java-client-core.jar" />
-      <sourceRoot location="stax-api.jar" />
       <sourceRoot location="slf4j-api.jar" />
       <sourceRoot location="guava.jar" />
       <sourceRoot location="httpclient.jar" />
-      <sourceRoot location="jackson-mapper-asl.jar" />
       <sourceRoot location="atlassian-util-concurrent.jar" />
       <sourceRoot location="spring-beans.jar" />
       <sourceRoot location="jersey-client.jar" />
       <sourceRoot location="httpmime.jar" />
       <sourceRoot location="jira-rest-java-client-api.jar" />
-      <sourceRoot location="jersey-core.jar" />
       <sourceRoot location="spring-core.jar" />
       <sourceRoot location="httpasyncclient-cache.jar" />
       <sourceRoot location="jettison.jar" />
-      <sourceRoot location="jaxb-impl.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -44,7 +34,6 @@
       <library location="${module}/lib/atlassian-event.jar" />
       <library location="${module}/lib/atlassian-httpclient-api.jar" />
       <library location="${module}/lib/atlassian-util-concurrent.jar" />
-      <library location="${module}/lib/commons-lang.jar" />
       <library location="${module}/lib/commons-logging.jar" />
       <library location="${module}/lib/guava.jar" />
       <library location="${module}/lib/httpasyncclient-cache.jar" />
@@ -54,15 +43,7 @@
       <library location="${module}/lib/httpcore-nio.jar" />
       <library location="${module}/lib/httpcore.jar" />
       <library location="${module}/lib/httpmime.jar" />
-      <library location="${module}/lib/jackson-core-asl.jar" />
-      <library location="${module}/lib/jackson-jaxrs.jar" />
-      <library location="${module}/lib/jackson-mapper-asl.jar" />
-      <library location="${module}/lib/jackson-xc.jar" />
-      <library location="${module}/lib/jaxb-api.jar" />
-      <library location="${module}/lib/jaxb-impl.jar" />
       <library location="${module}/lib/jersey-client.jar" />
-      <library location="${module}/lib/jersey-core.jar" />
-      <library location="${module}/lib/jersey-json.jar" />
       <library location="${module}/lib/jettison.jar" />
       <library location="${module}/lib/jira-rest-java-client-api.jar" />
       <library location="${module}/lib/jira-rest-java-client-core.jar" />
@@ -71,7 +52,6 @@
       <library location="${module}/lib/slf4j-api.jar" />
       <library location="${module}/lib/spring-beans.jar" />
       <library location="${module}/lib/spring-core.jar" />
-      <library location="${module}/lib/stax-api.jar" />
     </facet>
   </facets>
   <dependencies>
