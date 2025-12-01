@@ -143,7 +143,7 @@ configurations {
 
         z3("tools.aqua:z3-turnkey:4.11.2")
 
-        jira("com.atlassian.jira:jira-rest-java-client-core:4.0.0")
+        jira("com.atlassian.jira:jira-rest-java-client-core:7.0.1")
 
         pdfbox("org.apache.pdfbox:pdfbox-app:3.0.1")
         pdfbox("de.rototor.pdfbox:graphics2d:3.0.1")
