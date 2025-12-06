@@ -8,6 +8,7 @@ import groovy.util.Node
 
 plugins {
     base
+    java
     `maven-publish`
     id("co.riiid.gradle") version "0.4.2"
 
@@ -136,7 +137,7 @@ configurations {
 
         z3("tools.aqua:z3-turnkey:4.11.2")
 
-        jira("com.atlassian.jira:jira-rest-java-client-core:4.0.0")
+        jira("com.atlassian.jira:jira-rest-java-client-core:6.0.2")
 
         pdfbox("org.apache.pdfbox:pdfbox-app:3.0.1")
         pdfbox("de.rototor.pdfbox:graphics2d:3.0.1")

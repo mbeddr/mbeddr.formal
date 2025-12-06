@@ -317,6 +317,21 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="7a7$evTWnQq" role="1l3spd">
+      <property role="TrG5h" value="symo.code" />
+      <node concept="398BVA" id="7a7$evTWnQr" role="398pKh">
+        <ref role="398BVh" node="6hyv0iVPlDR" resolve="mbeddr.formal.home" />
+        <node concept="2Ry0Ak" id="7a7$evTWnQs" role="iGT6I">
+          <property role="2Ry0Am" value="code" />
+          <node concept="2Ry0Ak" id="7a7$evTWnQt" role="2Ry0An">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="7a7$evTWpf8" role="2Ry0An">
+              <property role="2Ry0Am" value="com.fasten.symo" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="398rNT" id="6hyv0iVPlDU" role="1l3spd">
       <property role="TrG5h" value="mbeddr.formal.nusmv.code" />
       <node concept="398BVA" id="6hyv0iVPlEu" role="398pKh">
@@ -481,6 +496,31 @@
         </node>
         <node concept="pUk6x" id="6hyv0iVPlGX" role="pUk7w" />
       </node>
+      <node concept="m$_wl" id="7a7$evTWEAK" role="39821P">
+        <ref role="m_rDy" node="7a7$evTWB8g" resolve="fasten.symo" />
+        <node concept="398223" id="7a7$evTWEAL" role="39821P">
+          <node concept="3_J27D" id="7a7$evTWEAM" role="Nbhlr">
+            <node concept="3Mxwew" id="7a7$evTWEAN" role="3MwsjC">
+              <property role="3MwjfP" value="lib" />
+            </node>
+          </node>
+          <node concept="2HvfSZ" id="7a7$evTWEAO" role="39821P">
+            <node concept="398BVA" id="7a7$evTWEAP" role="2HvfZ0">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="7a7$evTWEAQ" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7a7$evTWEAR" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                  <node concept="2Ry0Ak" id="7a7$evTWEAS" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pUk6x" id="7a7$evTWEB3" role="pUk7w" />
+      </node>
       <node concept="m$_wl" id="2MrvZqtGPu8" role="39821P">
         <ref role="m_rDy" node="2MrvZqtGPGn" resolve="com.mpsbasics.testutils" />
         <node concept="pUk6x" id="2MrvZqtGPuh" role="pUk7w" />
@@ -581,6 +621,33 @@
       </node>
       <node concept="m$_yC" id="5mv1DnKbokD" role="m$_yJ">
         <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" resolve="jetbrains.mps.trove" />
+      </node>
+    </node>
+    <node concept="m$_wf" id="7a7$evTWB8g" role="3989C9">
+      <property role="m$_wk" value="fasten.symo" />
+      <node concept="3_J27D" id="7a7$evTWB8h" role="m$_yQ">
+        <node concept="3Mxwew" id="7a7$evTWB8i" role="3MwsjC">
+          <property role="3MwjfP" value="fasten.symo" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="7a7$evTWB8j" role="m_cZH">
+        <node concept="3Mxwew" id="7a7$evTWB8k" role="3MwsjC">
+          <property role="3MwjfP" value="com.symo" />
+        </node>
+      </node>
+      <node concept="3_J27D" id="7a7$evTWB8l" role="m$_w8">
+        <node concept="3Mxwey" id="7a7$evTWB8m" role="3MwsjC">
+          <ref role="3Mxwex" node="6hyv0iVPlDZ" resolve="version" />
+        </node>
+      </node>
+      <node concept="m$f5U" id="7a7$evTWB8n" role="m$_yh">
+        <ref role="m$f5T" node="7a7$evTWl$t" resolve="fasten.symo" />
+      </node>
+      <node concept="m$_yC" id="7a7$evTWCDI" role="m$_yJ">
+        <ref role="m$_y1" node="6hyv0iVPlE4" resolve="com.mpsbasics" />
+      </node>
+      <node concept="m$_yC" id="7a7$evTWI7Z" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
       </node>
     </node>
     <node concept="m$_wf" id="2MrvZqtGPGn" role="3989C9">
@@ -3276,6 +3343,372 @@
         </node>
       </node>
     </node>
+    <node concept="2G$12M" id="7a7$evTWl$t" role="3989C9">
+      <property role="TrG5h" value="fasten.symo" />
+      <node concept="1E1JtA" id="7a7$evTWyYR" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.symo.plantuml.lib" />
+        <property role="3LESm3" value="377bf088-4ffc-48ac-910f-fb1c66ffa60e" />
+        <node concept="398BVA" id="7a7$evTWze4" role="3LF7KH">
+          <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+          <node concept="2Ry0Ak" id="7a7$evTWzEy" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="7a7$evTW$l0" role="2Ry0An">
+              <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+              <node concept="2Ry0Ak" id="7a7$evTW$LP" role="2Ry0An">
+                <property role="2Ry0Am" value="com.symo.plantuml.lib.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTW_gt" role="3bR37C">
+          <node concept="3bR9La" id="7a7$evTW_gu" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTW_gG" role="3bR37C">
+          <node concept="1BurEX" id="7a7$evTW_gH" role="1SiIV1">
+            <node concept="398BVA" id="7a7$evTW_gv" role="1BurEY">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="7a7$evTW_gw" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7a7$evTW_gx" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                  <node concept="2Ry0Ak" id="7a7$evTW_gy" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7a7$evTW_gz" role="2Ry0An">
+                      <property role="2Ry0Am" value="batik-all.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTW_gV" role="3bR37C">
+          <node concept="1BurEX" id="7a7$evTW_gW" role="1SiIV1">
+            <node concept="398BVA" id="7a7$evTW_gI" role="1BurEY">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="7a7$evTW_gJ" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7a7$evTW_gK" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                  <node concept="2Ry0Ak" id="7a7$evTW_gL" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7a7$evTW_gM" role="2Ry0An">
+                      <property role="2Ry0Am" value="plantuml-epl.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTW_ha" role="3bR37C">
+          <node concept="1BurEX" id="7a7$evTW_hb" role="1SiIV1">
+            <node concept="398BVA" id="7a7$evTW_gX" role="1BurEY">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="7a7$evTW_gY" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7a7$evTW_gZ" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                  <node concept="2Ry0Ak" id="7a7$evTW_h0" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7a7$evTW_h1" role="2Ry0An">
+                      <property role="2Ry0Am" value="xml-apis-ext.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTW_hp" role="3bR37C">
+          <node concept="1BurEX" id="7a7$evTW_hq" role="1SiIV1">
+            <node concept="398BVA" id="7a7$evTW_hc" role="1BurEY">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="7a7$evTW_hd" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7a7$evTW_he" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                  <node concept="2Ry0Ak" id="7a7$evTW_hf" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="7a7$evTW_hg" role="2Ry0An">
+                      <property role="2Ry0Am" value="xmlgraphics-commons.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="2SdFbzcWc5$" role="3bR31x">
+          <node concept="3LXTmp" id="2SdFbzcWc5_" role="3rtmxm">
+            <node concept="3qWCbU" id="2SdFbzcWc5A" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="2SdFbzcWc5B" role="3LXTmr">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="2SdFbzcWc5C" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="2SdFbzcWc5D" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="7a7$evTWuD_" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.symo.arch.base" />
+        <property role="3LESm3" value="88dbbd3b-b7c2-4ffe-9c47-4eb67390953b" />
+        <node concept="398BVA" id="7a7$evTWuTa" role="3LF7KH">
+          <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+          <node concept="2Ry0Ak" id="7a7$evTWvog" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="7a7$evTWw3u" role="2Ry0An">
+              <property role="2Ry0Am" value="com.symo.arch.base" />
+              <node concept="2Ry0Ak" id="7a7$evTWwvV" role="2Ry0An">
+                <property role="2Ry0Am" value="com.symo.arch.base.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1BupzO" id="7a7$evTWwZ6" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="7a7$evTWwZ7" role="1HemKq">
+            <node concept="398BVA" id="7a7$evTWwYV" role="3LXTmr">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="7a7$evTWwYW" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7a7$evTWwYX" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.arch.base" />
+                  <node concept="2Ry0Ak" id="7a7$evTWwYY" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="7a7$evTWwZ8" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="7a7$evTWxB_" role="3bR31x">
+          <node concept="3LXTmp" id="7a7$evTWxBA" role="3rtmxm">
+            <node concept="398BVA" id="7a7$evTWxBB" role="3LXTmr">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="7a7$evTWxBC" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7a7$evTWxBD" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.arch.base" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="7a7$evTWxBF" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="7a7$evTWmur" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.symo.plantuml" />
+        <property role="3LESm3" value="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" />
+        <node concept="398BVA" id="7a7$evTWmHY" role="3LF7KH">
+          <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+          <node concept="2Ry0Ak" id="7a7$evTWnot" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="7a7$evTWpW$" role="2Ry0An">
+              <property role="2Ry0Am" value="com.symo.plantuml" />
+              <node concept="2Ry0Ak" id="7a7$evTWqpp" role="2Ry0An">
+                <property role="2Ry0Am" value="com.symo.plantuml.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTWqS1" role="3bR37C">
+          <node concept="3bR9La" id="7a7$evTWqS2" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTWqS3" role="3bR37C">
+          <node concept="3bR9La" id="7a7$evTWqS4" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTWqS5" role="3bR37C">
+          <node concept="3bR9La" id="7a7$evTWqS6" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTWqS7" role="3bR37C">
+          <node concept="3bR9La" id="7a7$evTWqS8" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTWqS9" role="3bR37C">
+          <node concept="3bR9La" id="7a7$evTWqSa" role="1SiIV1">
+            <ref role="3bR37D" node="4lJSf3LkfPw" resolve="com.mpsbasics.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTWqSb" role="3bR37C">
+          <node concept="3bR9La" id="7a7$evTWqSc" role="1SiIV1">
+            <ref role="3bR37D" node="2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="7a7$evTWqSo" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="7a7$evTWqSp" role="1HemKq">
+            <node concept="398BVA" id="7a7$evTWqSd" role="3LXTmr">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="7a7$evTWqSe" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7a7$evTWqSf" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml" />
+                  <node concept="2Ry0Ak" id="7a7$evTWqSg" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="7a7$evTWqSq" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1yeLz9" id="7a7$evTWqSr" role="1TViLv">
+          <property role="TrG5h" value="com.symo.plantuml.generator" />
+          <property role="3LESm3" value="a57cbb55-8fec-4326-ad52-8822ceb60e64" />
+          <node concept="1BupzO" id="7a7$evTWqSD" role="3bR31x">
+            <property role="3ZfqAx" value="generator/templates" />
+            <property role="1Hdu6h" value="true" />
+            <property role="1HemKv" value="true" />
+            <node concept="3LXTmp" id="7a7$evTWqSE" role="1HemKq">
+              <node concept="398BVA" id="7a7$evTWqSs" role="3LXTmr">
+                <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+                <node concept="2Ry0Ak" id="7a7$evTWqSt" role="iGT6I">
+                  <property role="2Ry0Am" value="languages" />
+                  <node concept="2Ry0Ak" id="7a7$evTWqSu" role="2Ry0An">
+                    <property role="2Ry0Am" value="com.symo.plantuml" />
+                    <node concept="2Ry0Ak" id="7a7$evTWqSv" role="2Ry0An">
+                      <property role="2Ry0Am" value="generator" />
+                      <node concept="2Ry0Ak" id="7a7$evTWqSw" role="2Ry0An">
+                        <property role="2Ry0Am" value="templates" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3qWCbU" id="7a7$evTWqSF" role="3LXTna">
+                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTWy7A" role="3bR37C">
+          <node concept="3bR9La" id="7a7$evTWy7B" role="1SiIV1">
+            <ref role="3bR37D" node="7a7$evTWuD_" resolve="com.symo.arch.base" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTW_Y2" role="3bR37C">
+          <node concept="3bR9La" id="7a7$evTW_Y3" role="1SiIV1">
+            <ref role="3bR37D" node="7a7$evTWyYR" resolve="com.symo.plantuml.lib" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="7a7$evTWApj" role="3bR31x">
+          <node concept="3LXTmp" id="7a7$evTWApk" role="3rtmxm">
+            <node concept="398BVA" id="7a7$evTWApl" role="3LXTmr">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="7a7$evTWApm" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7a7$evTWApn" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="7a7$evTWApp" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="7a7$evTWriA" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.symo.plantuml.ext" />
+        <property role="3LESm3" value="c7f99e92-818b-4094-a2f9-369356a5259c" />
+        <node concept="398BVA" id="7a7$evTWrxr" role="3LF7KH">
+          <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+          <node concept="2Ry0Ak" id="7a7$evTWsci" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="7a7$evTWsR8" role="2Ry0An">
+              <property role="2Ry0Am" value="com.symo.plantuml.ext" />
+              <node concept="2Ry0Ak" id="7a7$evTWtxA" role="2Ry0An">
+                <property role="2Ry0Am" value="com.symo.plantuml.ext.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTWu0Y" role="3bR37C">
+          <node concept="3bR9La" id="7a7$evTWu0Z" role="1SiIV1">
+            <ref role="3bR37D" node="7a7$evTWmur" resolve="com.symo.plantuml" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="7a7$evTWu1b" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="7a7$evTWu1c" role="1HemKq">
+            <node concept="398BVA" id="7a7$evTWu10" role="3LXTmr">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="7a7$evTWu11" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7a7$evTWu12" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.ext" />
+                  <node concept="2Ry0Ak" id="7a7$evTWu13" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="7a7$evTWu1d" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTWu1e" role="3bR37C">
+          <node concept="1Busua" id="7a7$evTWu1f" role="1SiIV1">
+            <ref role="1Busuk" node="4lJSf3LkfPw" resolve="com.mpsbasics.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="7a7$evTWu1g" role="3bR37C">
+          <node concept="1Busua" id="7a7$evTWu1h" role="1SiIV1">
+            <ref role="1Busuk" node="7a7$evTWmur" resolve="com.symo.plantuml" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="7a7$evTWACZ" role="3bR31x">
+          <node concept="3LXTmp" id="7a7$evTWAD0" role="3rtmxm">
+            <node concept="398BVA" id="7a7$evTWAD1" role="3LXTmr">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="7a7$evTWAD2" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7a7$evTWAD3" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.plantuml.ext" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="7a7$evTWAD5" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2G$12M" id="6hyv0iVPlEc" role="3989C9">
       <property role="TrG5h" value="fasten.req" />
       <node concept="1E1JtA" id="6hyv0iVPlFK" role="2G$12L">
@@ -3482,6 +3915,16 @@
         <node concept="1SiIV0" id="6FJpOMBt4h9" role="3bR37C">
           <node concept="3bR9La" id="6FJpOMBt4ha" role="1SiIV1">
             <ref role="3bR37D" node="6FJpOMBsZUh" resolve="com.mpsbasics.words.generic" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5xecbsSrGxF" role="3bR37C">
+          <node concept="3bR9La" id="5xecbsSrGxG" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5xecbsSrGxS" role="3bR37C">
+          <node concept="1Busua" id="5xecbsSrGxT" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
       </node>
@@ -7440,6 +7883,11 @@
             <ref role="3bR37D" node="6FJpOMBsZUh" resolve="com.mpsbasics.words.generic" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5xecbsSrGDG" role="3bR37C">
+          <node concept="3bR9La" id="5xecbsSrGDH" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lc2" resolve="jetbrains.mps.lang.typesystem" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6i5G5_YU2S5" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -7937,6 +8385,11 @@
         <node concept="1SiIV0" id="5Gu43O52l4Q" role="3bR37C">
           <node concept="3bR9La" id="5Gu43O52l4R" role="1SiIV1">
             <ref role="3bR37D" node="4lJSf3LkfPw" resolve="com.mpsbasics.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5xecbsSrGEX" role="3bR37C">
+          <node concept="3bR9La" id="5xecbsSrGEY" role="1SiIV1">
+            <ref role="3bR37D" node="6hyv0iVPlFM" resolve="com.mbeddr.formal.req.base" />
           </node>
         </node>
       </node>

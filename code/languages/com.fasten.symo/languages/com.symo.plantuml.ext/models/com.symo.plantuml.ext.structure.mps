@@ -68,5 +68,17 @@
       <ref role="20lvS9" to="udwj:6CyxyHibNNa" resolve="UsecaseDiagramActor" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1aUDt0N7DXb">
+    <property role="EcuMT" value="1349573351980310347" />
+    <property role="TrG5h" value="ComponentDiagramInterfaceDeclarationReuse" />
+    <property role="34LRSv" value="#interface-ref" />
+    <ref role="1TJDcQ" to="udwj:1I7wo92WYNu" resolve="InterfaceDeclaration" />
+    <node concept="1TJgyj" id="1aUDt0N7Eyu" role="1TKVEi">
+      <property role="IQ2ns" value="1349573351980312734" />
+      <property role="20kJfa" value="interf" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="udwj:1I7wo92WYNu" resolve="InterfaceDeclaration" />
+    </node>
+  </node>
 </model>
 
