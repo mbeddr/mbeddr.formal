@@ -303,18 +303,5 @@
       </node>
     </node>
   </node>
-  <node concept="2wR3oc" id="3DHxSK4AjQl">
-    <ref role="2wR3oD" to="54p5:4otXw3$naS_" resolve="linters_without_documentation" />
-    <node concept="2j1LYv" id="3DHxSK4AjQm" role="2j1YRv">
-      <node concept="2j1LYi" id="3DHxSK4AjQn" role="2j1YQj">
-        <ref role="2j1LYj" to="54p5:4otXw3$naSA" resolve="thisNode" />
-      </node>
-      <node concept="2tJFMh" id="3DHxSK4AjX2" role="2j1LYg">
-        <node concept="ZC_QK" id="3DHxSK4AjXc" role="2tJFKM">
-          <ref role="2aWVGs" node="3DHxSK4AjQl" />
-        </node>
-      </node>
-    </node>
-  </node>
 </model>
 
