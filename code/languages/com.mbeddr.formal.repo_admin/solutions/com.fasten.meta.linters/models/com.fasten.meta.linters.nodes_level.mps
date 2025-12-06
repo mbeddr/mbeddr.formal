@@ -105,10 +105,18 @@
       <property role="3qxsY3" value="7008376823202383109" />
       <property role="3qxsSb" value="r:3e5efb66-1a16-46d1-89d2-26142a5dcdaa(org.mpsqa.lint.generic.linters_library.meta)" />
     </node>
-    <node concept="3dgnlM" id="37$hX7XCZ6$" role="3dgnlQ">
-      <property role="3dgnlN" value="The Script is not re-used" />
-      <property role="3qxsY3" value="5052464840671276581" />
-      <property role="3qxsSb" value="r:3e5efb66-1a16-46d1-89d2-26142a5dcdaa(org.mpsqa.lint.generic.linters_library.meta)" />
+  </node>
+  <node concept="2wR3oc" id="3tsEGTjRVjP">
+    <ref role="2wR3oD" to="54p5:4otXw3$naS_" resolve="linters_without_documentation" />
+    <node concept="2j1LYv" id="3tsEGTjRVjQ" role="2j1YRv">
+      <node concept="2j1LYi" id="3tsEGTjRVjR" role="2j1YQj">
+        <ref role="2j1LYj" to="54p5:4otXw3$naSA" resolve="thisNode" />
+      </node>
+      <node concept="2tJFMh" id="3tsEGTjRVqy" role="2j1LYg">
+        <node concept="ZC_QK" id="3tsEGTjRVqD" role="2tJFKM">
+          <ref role="2aWVGs" node="3tsEGTjRVjP" resolve="linters_without_documentation" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
