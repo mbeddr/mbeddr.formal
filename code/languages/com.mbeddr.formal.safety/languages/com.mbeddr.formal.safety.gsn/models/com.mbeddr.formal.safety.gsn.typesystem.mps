@@ -6,7 +6,6 @@
   </languages>
   <imports>
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" />
-    <import index="89jy" ref="r:b084f3b4-d6a1-4460-8222-b4a956bb5d23(com.mbeddr.formal.safety.gsn.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -23,9 +22,6 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
-      </concept>
-      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
-        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -57,7 +53,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -70,9 +65,6 @@
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
-    </language>
-    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
-      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
     </language>
   </registry>
   <node concept="18kY7G" id="4q8AAJKKYRF">
@@ -88,25 +80,6 @@
           </node>
         </node>
         <node concept="3clFbS" id="4q8AAJKKYSg" role="3clFbx">
-          <node concept="2Mj0R9" id="4q8AAJKL3Eu" role="3cqZAp">
-            <node concept="1YBJjd" id="4q8AAJKL3Md" role="1urrMF">
-              <ref role="1YBMHb" node="4q8AAJKKYRI" resolve="goal" />
-            </node>
-            <node concept="2OqwBi" id="4q8AAJKL3F7" role="2MkoU_">
-              <node concept="2OqwBi" id="4q8AAJKL3F8" role="2Oq$k0">
-                <node concept="1YBJjd" id="4q8AAJKL3F9" role="2Oq$k0">
-                  <ref role="1YBMHb" node="4q8AAJKKYRI" resolve="goal" />
-                </node>
-                <node concept="2qgKlT" id="4q8AAJKL3Fa" role="2OqNvi">
-                  <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
-                </node>
-              </node>
-              <node concept="1v1jN8" id="4q8AAJKMo4t" role="2OqNvi" />
-            </node>
-            <node concept="Xl_RD" id="4q8AAJKL3KY" role="2MkJ7o">
-              <property role="Xl_RC" value="an Away Goal cannot have outbound connections" />
-            </node>
-          </node>
           <node concept="2Mj0R9" id="4q8AAJKL3Zi" role="3cqZAp">
             <node concept="2OqwBi" id="4q8AAJKL4Sq" role="2MkoU_">
               <node concept="2OqwBi" id="4q8AAJKL4i2" role="2Oq$k0">
