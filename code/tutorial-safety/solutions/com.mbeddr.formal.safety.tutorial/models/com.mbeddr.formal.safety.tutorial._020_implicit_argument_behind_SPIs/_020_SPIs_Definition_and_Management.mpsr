@@ -58,11 +58,15 @@
       </concept>
     </language>
     <language id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn">
+      <concept id="3514655602814462718" name="com.mbeddr.formal.safety.gsn.structure.GoalStructureDoc" flags="ng" index="9kjDo">
+        <child id="3514655602814462801" name="documentation" index="9kjJR" />
+      </concept>
       <concept id="4266958635905406443" name="com.mbeddr.formal.safety.gsn.structure.Strategy" flags="ng" index="2vmxQI" />
       <concept id="4266958635905267565" name="com.mbeddr.formal.safety.gsn.structure.Goal" flags="ng" index="2vn7WC">
         <property id="9102875167979884151" name="undeveloped" index="8uqrb" />
       </concept>
       <concept id="4266958635905267510" name="com.mbeddr.formal.safety.gsn.structure.GoalStructure" flags="ng" index="2vn7XN">
+        <child id="3514655602814221387" name="documentation" index="9lmNH" />
         <child id="4266958635905772385" name="connections" index="2vhqc$" />
         <child id="4266958635905277632" name="content" index="2vn1q5" />
       </concept>
@@ -705,6 +709,16 @@
           </node>
         </node>
       </node>
+      <node concept="37mRIm" id="6IfUpCwepNP" role="37mRID">
+        <property role="37mO49" value="7750670331902794493" />
+        <node concept="gqqVs" id="6IfUpCwepNO" role="37mO4d">
+          <property role="gqqTZ" value="68.0" />
+          <property role="gqqTW" value="32.0" />
+          <property role="gqqTX" value="162.0" />
+          <property role="gqqTy" value="44.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
     </node>
     <node concept="2vmxQI" id="221yc7i7ZyI" role="2vn1q5">
       <property role="TrG5h" value="SPI_DEF_002" />
@@ -919,6 +933,13 @@
     <node concept="3VeUTF" id="5xecbsSpIcq" role="2vhqc$">
       <ref role="3VeSjP" node="5xecbsSpDDl" />
       <ref role="3VeSjQ" node="5xecbsSpDTP" />
+    </node>
+    <node concept="9kjDo" id="6IfUpCwepFX" role="9lmNH">
+      <node concept="19SGf9" id="6IfUpCwepFY" role="9kjJR">
+        <node concept="19SUe$" id="6IfUpCwepFZ" role="19SJt6">
+          <property role="19SUeA" value="The definition and management&#10;argument leg." />
+        </node>
+      </node>
     </node>
   </node>
 </model>
