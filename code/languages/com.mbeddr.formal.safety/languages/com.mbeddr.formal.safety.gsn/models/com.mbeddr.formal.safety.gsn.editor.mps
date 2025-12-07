@@ -14115,14 +14115,8 @@
     <node concept="2aJ2om" id="3EDV2YKAngz" role="CpUAK">
       <ref role="2$4xQ3" node="3EDV2YKAndh" resolve="GOAL_STRUCTURE_DIFF_VIEW" />
     </node>
-    <node concept="3EZMnI" id="3EDV2YKAngR" role="6VMZX">
-      <node concept="2iRkQZ" id="3EDV2YKAngS" role="2iSdaV" />
-      <node concept="PMmxH" id="3EDV2YKAngP" role="3EZMnx">
-        <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
-      </node>
-      <node concept="PMmxH" id="3EDV2YKAnh0" role="3EZMnx">
-        <ref role="PMmxG" node="1TD_kqsReb9" resolve="AttributesInInspector" />
-      </node>
+    <node concept="PMmxH" id="3EDV2YKAngP" role="6VMZX">
+      <ref role="PMmxG" node="2ccN23oa1rM" resolve="TextInInspector" />
     </node>
   </node>
   <node concept="24kQdi" id="3EDV2YKAnh3">
