@@ -165,11 +165,13 @@
       <settings refid="m2m-defaults" />
       <plugin path="${artifacts.com.mbeddr.platform}/com.mbeddr.platform.build" id="com.mbeddr.platform.build" />
       <plugin path="${artifacts.com.mbeddr.platform}/de.itemis.mps.extensions.build" id="de.itemis.mps.extensions.build" />
+      <plugin path="${artifacts.mps}/lib/mps-workbench.jar" id="com.intellij.modules.mps" />
       <plugin path="${artifacts.mps}/plugins/mps-build" id="jetbrains.mps.build" />
       <plugin path="${artifacts.mps}/plugins/mps-core" id="jetbrains.mps.core" />
       <plugin path="${artifacts.org.mpsqa.allInOne}/org.mpsqa.build" id="org.mpsqa.build" />
       <plugin path="${artifacts.org.mpsqa.allInOne}/org.mpsqa.testing.build" id="org.mpsqa.testing.build" />
       <plugin path="${artifacts.org.mpsqa.base}/org.mpsqa.base.build" id="org.mpsqa.base.build" />
+      <library file="${artifacts.mps}/languages/editor/jetbrains.mps.ide.editor.jar" />
       <chunk>
         <module file="${mbeddr.formal.safety.code}/solutions/com.fasten.assurance.build/com.fasten.assurance.build.msd" />
         <module file="${mbeddr.formal.safety.code}/solutions/com.mbeddr.formal.safety.build/com.mbeddr.formal.safety.build.msd" />

@@ -77,6 +77,16 @@ jobs:
         report_paths: 'build/**/TEST*.xml'
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
+    - name: Upload logs on failure
+      if: failure()
+      uses: actions/upload-artifact@v4
+      with:
+        name: logs
+        path: |
+          build/system/log/
+          build/system/testlog/
+          build/tmp/check*/system/log/
+
     #- name: Upload distribution
     #  uses: actions/upload-artifact@v4
     #  with:
