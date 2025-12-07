@@ -17,7 +17,7 @@
     <import index="xbmv" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.jira.rest.client.internal.async(com.mpsbasics.jira.pluginSolution/)" />
     <import index="oqtg" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.jira.rest.client.auth(com.mpsbasics.jira.pluginSolution/)" />
     <import index="cxdr" ref="r:10e9be3d-5ae8-41d9-9554-78e944872df2(com.mpsbasics.jira.structure)" />
-    <import index="ct1y" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:com.atlassian.util.concurrent(com.mpsbasics.jira.pluginSolution/)" implicit="true" />
+    <import index="8i9n" ref="47b4ca2d-4ed7-41a6-b64f-df36b50a3c95/java:io.atlassian.util.concurrent(com.mpsbasics.jira.pluginSolution/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -207,7 +207,7 @@
               </node>
             </node>
             <node concept="liA8E" id="4XyMOOGCFTy" role="2OqNvi">
-              <ref role="37wK5l" to="ct1y:~Promise.claim()" resolve="claim" />
+              <ref role="37wK5l" to="8i9n:~Promise.claim()" resolve="claim" />
             </node>
           </node>
         </node>
