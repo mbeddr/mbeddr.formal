@@ -9,6 +9,7 @@ de.itemis.mps.build-backends:execute:1.24.3.167.c51149b=executeBackend
 de.itemis.mps.build-backends:modelcheck:1.24.3.167.c51149b=modelcheckBackend
 de.itemis.mps.build-backends:project-loader:5.0.0.167.c51149b=executeBackend,generateBackend,modelcheckBackend,remigrateBackend
 de.itemis.mps.build-backends:remigrate:1.0.0.167.c51149b=remigrateBackend
+org.mpsqa:all-in-one:2024.1.1188.b842bbb=languageLibs
 tools.aqua:z3-turnkey:4.11.2=z3
 xml-apis:xml-apis-ext:1.3.04=plantUML
 empty=annotationProcessor,compileClasspath,runtimeClasspath,testAnnotationProcessor,testCompileClasspath,testRuntimeClasspath
