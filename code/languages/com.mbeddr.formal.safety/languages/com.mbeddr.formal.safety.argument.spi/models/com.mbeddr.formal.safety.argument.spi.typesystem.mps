@@ -100,6 +100,9 @@
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
+      <concept id="1227096620180" name="jetbrains.mps.lang.typesystem.structure.ReferenceMessageTarget" flags="ng" index="2OE7Q9">
+        <reference id="1227096645744" name="linkDeclaration" index="2OEe5H" />
+      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <child id="1195213635060" name="body" index="18ibNy" />
       </concept>
@@ -107,6 +110,7 @@
         <property id="7181286126212894140" name="doNotApplyOnTheFly" index="1$Xk0j" />
       </concept>
       <concept id="3937244445246642777" name="jetbrains.mps.lang.typesystem.structure.AbstractReportStatement" flags="ng" index="1urrMJ">
+        <child id="3937244445246643443" name="messageTarget" index="1urrC5" />
         <child id="3937244445246642781" name="nodeToReport" index="1urrMF" />
       </concept>
       <concept id="1174642788531" name="jetbrains.mps.lang.typesystem.structure.ConceptReference" flags="ig" index="1YaCAy">
@@ -127,10 +131,20 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="4222318806802425298" name="jetbrains.mps.lang.core.structure.SuppressErrorsAnnotation" flags="ng" index="15s5l7">
+        <property id="8575328350543493365" name="message" index="huDt6" />
+        <property id="2423417345669755629" name="filter" index="1eyWvh" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -150,10 +164,11 @@
       </concept>
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
     </language>
   </registry>
   <node concept="18kY7G" id="75npNYZG$Q4">
-    <property role="TrG5h" value="check_spi" />
+    <property role="TrG5h" value="check_spiValidity" />
     <property role="1$Xk0j" value="true" />
     <node concept="3clFbS" id="75npNYZG$Q5" role="18ibNy">
       <node concept="3cpWs8" id="75npNYZIj5E" role="3cqZAp">
@@ -196,6 +211,10 @@
         </node>
       </node>
       <node concept="3clFbJ" id="5xecbsSnv$H" role="3cqZAp">
+        <node concept="15s5l7" id="6P2k_NGBqOO" role="lGtFl">
+          <property role="1eyWvh" value="FLAVOUR_ISSUE_KIND=&quot;typesystem (typesystem)&quot;;FLAVOUR_MESSAGE=&quot;Warning: Raw use of parameterized class 'Pair'&quot;;FLAVOUR_RULE_ID=&quot;[r:00000000-0000-4000-0000-011c895902c5(jetbrains.mps.baseLanguage.typesystem)/8329232789335967727]&quot;;" />
+          <property role="huDt6" value="Warning: Raw use of parameterized class 'Pair'" />
+        </node>
         <node concept="3clFbS" id="5xecbsSnv$J" role="3clFbx">
           <node concept="3clFbF" id="5xecbsSnziz" role="3cqZAp">
             <node concept="2OqwBi" id="5xecbsSn$wX" role="3clFbG">
@@ -364,6 +383,41 @@
       </node>
     </node>
     <node concept="1YaCAy" id="75npNYZG$Q7" role="1YuTPh">
+      <property role="TrG5h" value="spiDefinition" />
+      <ref role="1YaFvo" to="3xw7:2X_iJQizBwi" resolve="SPIDefinition" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="6P2k_NGBrDL">
+    <property role="TrG5h" value="check_SPIDefinition" />
+    <node concept="3clFbS" id="6P2k_NGBrDM" role="18ibNy">
+      <node concept="3clFbJ" id="6P2k_NGBrGC" role="3cqZAp">
+        <node concept="2OqwBi" id="6P2k_NGBwq2" role="3clFbw">
+          <node concept="2OqwBi" id="6P2k_NGBrTm" role="2Oq$k0">
+            <node concept="1YBJjd" id="6P2k_NGBrHj" role="2Oq$k0">
+              <ref role="1YBMHb" node="6P2k_NGBrDO" resolve="spiDefinition" />
+            </node>
+            <node concept="3Tsc0h" id="6P2k_NGBtNQ" role="2OqNvi">
+              <ref role="3TtcxE" to="3xw7:2X_iJQi$6ad" resolve="decoratedEntities" />
+            </node>
+          </node>
+          <node concept="1v1jN8" id="6P2k_NGBzCJ" role="2OqNvi" />
+        </node>
+        <node concept="3clFbS" id="6P2k_NGBrGE" role="3clFbx">
+          <node concept="a7r0C" id="6P2k_NGBzEI" role="3cqZAp">
+            <node concept="Xl_RD" id="6P2k_NGBzER" role="a7wSD">
+              <property role="Xl_RC" value="Each SPI definition needs to be associated to one or more entities from the assurance case." />
+            </node>
+            <node concept="1YBJjd" id="6P2k_NGBzQj" role="1urrMF">
+              <ref role="1YBMHb" node="6P2k_NGBrDO" resolve="spiDefinition" />
+            </node>
+            <node concept="2OE7Q9" id="6P2k_NGBDQ_" role="1urrC5">
+              <ref role="2OEe5H" to="3xw7:2X_iJQi$6ad" resolve="decoratedEntities" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6P2k_NGBrDO" role="1YuTPh">
       <property role="TrG5h" value="spiDefinition" />
       <ref role="1YaFvo" to="3xw7:2X_iJQizBwi" resolve="SPIDefinition" />
     </node>
