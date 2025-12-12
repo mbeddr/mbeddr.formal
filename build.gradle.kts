@@ -166,6 +166,7 @@ configurations {
 dependencyLocking { lockAllConfigurations() }
 
 repositories {
+    mavenCentral()
     val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps",
             "https://maven.pkg.github.com/mbeddr/*","https://packages.atlassian.com/mvn/maven-external")
 
@@ -181,7 +182,6 @@ repositories {
             }
         }
     }
-    mavenCentral()
 }
 
 val skipResolveMps = project.hasProperty("mpsHomeDir")
