@@ -111,7 +111,9 @@ configurations {
     }
 
     // includes also junit tasks support
-    val antLib by creating
+    val antLib by creating {
+        isCanBeConsumed = false
+    }
     val jbrWin by creating
     val jbrMac by creating
     val jbrLinux by creating
@@ -164,6 +166,7 @@ configurations {
 dependencyLocking { lockAllConfigurations() }
 
 repositories {
+    mavenCentral()
     val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps",
             "https://maven.pkg.github.com/mbeddr/*","https://packages.atlassian.com/mvn/maven-external")
 
@@ -179,7 +182,6 @@ repositories {
             }
         }
     }
-    mavenCentral()
 }
 
 val skipResolveMps = project.hasProperty("mpsHomeDir")
