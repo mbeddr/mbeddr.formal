@@ -111,7 +111,9 @@ configurations {
     }
 
     // includes also junit tasks support
-    val antLib by creating
+    val antLib by creating {
+        isCanBeConsumed = false
+    }
     val jbrWin by creating
     val jbrMac by creating
     val jbrLinux by creating
