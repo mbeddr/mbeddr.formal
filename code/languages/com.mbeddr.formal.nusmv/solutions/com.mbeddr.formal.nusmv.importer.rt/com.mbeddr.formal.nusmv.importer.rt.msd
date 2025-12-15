@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.formal.nusmv.importer.rt" uuid="18cd78f6-e870-412b-81e1-d3955c4ecc88" moduleVersion="0">
   <models>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="asm-analysis.jar" />
       <sourceRoot location="asm-tree.jar" />
       <sourceRoot location="asm-util.jar" />

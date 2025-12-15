@@ -76,6 +76,11 @@
       <property role="3qxsY3" value="8129340851655595064" />
       <property role="3qxsSb" value="r:1cfdc492-ba5c-44bc-987a-7d4e55b9c1ad(org.mpsqa.lint.generic.linters_library.nodes)" />
     </node>
+    <node concept="3dgnlM" id="3tsEGTjRVyb" role="3dgnlQ">
+      <property role="3dgnlN" value="The Script is not re-used" />
+      <property role="3qxsY3" value="5052464840671276581" />
+      <property role="3qxsSb" value="r:3e5efb66-1a16-46d1-89d2-26142a5dcdaa(org.mpsqa.lint.generic.linters_library.meta)" />
+    </node>
   </node>
   <node concept="2wR3oc" id="33N0Tlwri2j">
     <ref role="2wR3oD" to="54p5:652KpqR3Kk5" resolve="skipped_evaluation_linters" />
