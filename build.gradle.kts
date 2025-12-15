@@ -45,7 +45,7 @@ logger.info("Repository username: {}", nexusUsername)
 // Project versions
 val major = "2025"
 val minor = "1"
-val bugfix = ""
+val bugfix = "1"
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
@@ -590,7 +590,7 @@ tasks {
     }
 
 cyclonedxBom {
-    destination = file("$buildDir/reports")
+    destination = layout.buildDirectory.dir("reports").get().asFile
     outputName = "sbom"
     outputFormat = "json"
     includeLicenseText = false
