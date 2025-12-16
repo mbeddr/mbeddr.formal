@@ -109,8 +109,9 @@ jobs:
       uses: gradle/actions/setup-gradle@v5
 
     - name: Publish
+      continue-on-error: true
       run: |
-        ./gradlew publish \
+        ./gradlew publish --continue \
           -Pgpr.user=${{ github.actor }} \
           -Pgpr.token=${{ secrets.GITHUB_TOKEN }} \
           -Partifacts.itemis.cloud.user=${{ secrets.ARTIFACTS_ITEMIS_CLOUD_USER }} \
