@@ -21346,31 +21346,6 @@
             </node>
           </node>
         </node>
-        <node concept="398223" id="nwXZr$UP$N" role="39821P">
-          <node concept="3_J27D" id="nwXZr$UP$O" role="Nbhlr">
-            <node concept="3Mxwew" id="nwXZr$UP$P" role="3MwsjC">
-              <property role="3MwjfP" value="plugins" />
-            </node>
-          </node>
-          <node concept="398223" id="nwXZr$UP$Q" role="39821P">
-            <node concept="3_J27D" id="nwXZr$UP$R" role="Nbhlr">
-              <node concept="3Mxwew" id="nwXZr$UP$S" role="3MwsjC">
-                <property role="3MwjfP" value="laf-win10" />
-              </node>
-            </node>
-            <node concept="2HvfSZ" id="nwXZr$UP$T" role="39821P">
-              <node concept="398BVA" id="nwXZr$UPzF" role="2HvfZ0">
-                <ref role="398BVh" node="nwXZr$UPwG" resolve="mps_home" />
-                <node concept="2Ry0Ak" id="nwXZr$UPzG" role="iGT6I">
-                  <property role="2Ry0Am" value="plugins" />
-                  <node concept="2Ry0Ak" id="nwXZr$UPzH" role="2Ry0An">
-                    <property role="2Ry0Am" value="laf-win10" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3_J27D" id="nwXZr$UP$U" role="Nbhlr">
           <node concept="3Mxwew" id="nwXZr$UP$V" role="3MwsjC">
             <property role="3MwjfP" value="fasten" />
