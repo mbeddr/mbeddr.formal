@@ -703,6 +703,7 @@ fun configurePublication(publication: MavenPublication, group: String, artifactI
 publishing {
     repositories {
         maven {
+            name = "ItemisCloud"
             url = publishingRepository
             if (project.hasProperty("artifacts.itemis.cloud.user") && project.hasProperty("artifacts.itemis.cloud.pw")) {
                 credentials {

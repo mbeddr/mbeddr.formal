@@ -21,21 +21,23 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
     - name: Set up Gradle
       run: |
         echo "$(pwd)/rcp_resources/external_tools" >> "$GITHUB_PATH"
 
     - name: Set up JDK 21
-      uses: actions/setup-java@v4
+      uses: actions/setup-java@v5
       with:
         distribution: 'temurin'
         java-version: 21
 
     - name: Set up Gradle
-      uses: gradle/actions/setup-gradle@v3
+      uses: gradle/actions/setup-gradle@v5
 
     - name: Install Python Packages
       run: |
@@ -87,28 +89,24 @@ jobs:
           build/system/testlog/
           build/tmp/check*/system/log/
 
-    #- name: Upload distribution
-    #  uses: actions/upload-artifact@v4
-    #  with:
-    #    name: fasten-distribution-win-2023.2-${{ steps.time.outputs.time }}
-    #    path: build/distributions/fasten-2023.2-SNAPSHOT-Win-2023.2-SNAPSHOT.zip
-
   publish:
     # Only publish on push (to maintenance or master) or on dispatch if requested
     if: ${{ github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.publish == 'true') }}
-
+    permissions:
+      contents: read
+      packages: write
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
+    - name: Set up JDK 21
+      uses: actions/setup-java@v5
       with:
         distribution: 'temurin'
-        java-version: 17
+        java-version: 21
 
     - name: Set up Gradle
-      uses: gradle/actions/setup-gradle@v3
+      uses: gradle/actions/setup-gradle@v5
 
     - name: Publish
       run: |
@@ -121,19 +119,21 @@ jobs:
   publish_rcps:
     # Only publish on push (to maintenance or master) or on dispatch if requested
     if: ${{ github.event_name == 'workflow_dispatch' && github.event.inputs.publish_rcp == 'true' }}
-
+    permissions:
+      contents: read
+      packages: write
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
 
-    - name: Set up JDK 17
-      uses: actions/setup-java@v4
+    - name: Set up JDK 21
+      uses: actions/setup-java@v5
       with:
         distribution: 'temurin'
-        java-version: 17
+        java-version: 21
 
     - name: Set up Gradle
-      uses: gradle/actions/setup-gradle@v3
+      uses: gradle/actions/setup-gradle@v5
 
     - name: Publish FASTEN-Windows RCP to Github Packages
       run: |
