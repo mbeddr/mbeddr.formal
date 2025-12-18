@@ -19334,6 +19334,9 @@
       <node concept="L2wRC" id="4lJSf3LaY2p" role="39821P">
         <ref role="L2wRA" node="6AHcWlQrkgH" resolve="test.com.mbeddr.formal.req.tl_patterns" />
       </node>
+      <node concept="L2wRC" id="6oAzR4b6jpC" role="39821P">
+        <ref role="L2wRA" node="6oAzR4b6jhL" resolve="test.com.fasten.safety.bayesian_network" />
+      </node>
     </node>
     <node concept="m$_wf" id="6ucyvMUDFe3" role="3989C9">
       <property role="m$_wk" value="nusmv.tests.dummy" />
@@ -20393,6 +20396,56 @@
         <node concept="1SiIV0" id="7OA8CsRla2C" role="3bR37C">
           <node concept="3bR9La" id="7OA8CsRla2D" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="6oAzR4b6jhL" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.com.fasten.safety.bayesian_network" />
+        <property role="3LESm3" value="736d8593-b293-4e8a-bef9-c76f27696e1d" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <node concept="398BVA" id="6oAzR4b6jip" role="3LF7KH">
+          <ref role="398BVh" node="6ucyvMUDFiJ" resolve="mbeddr.formal.safety.code" />
+          <node concept="2Ry0Ak" id="6oAzR4b6jj1" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="6oAzR4b6jjs" role="2Ry0An">
+              <property role="2Ry0Am" value="test.com.fasten.safety.bayesian_network" />
+              <node concept="2Ry0Ak" id="6oAzR4b6jk3" role="2Ry0An">
+                <property role="2Ry0Am" value="test.com.fasten.safety.bayesian_network.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6oAzR4b6jnU" role="3bR37C">
+          <node concept="3bR9La" id="6oAzR4b6jnV" role="1SiIV1">
+            <ref role="3bR37D" node="6Z2HiVHt7eY" resolve="com.fasten.safety.bayesian_network" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6oAzR4b6jnW" role="3bR37C">
+          <node concept="3bR9La" id="6oAzR4b6jnX" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="6oAzR4b6jog" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="6oAzR4b6joh" role="1HemKq">
+            <node concept="398BVA" id="6oAzR4b6jnY" role="3LXTmr">
+              <ref role="398BVh" node="6ucyvMUDFiJ" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="6oAzR4b6jnZ" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6oAzR4b6jo0" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.fasten.safety.bayesian_network" />
+                  <node concept="2Ry0Ak" id="6oAzR4b6jo1" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="6oAzR4b6joi" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
           </node>
         </node>
       </node>

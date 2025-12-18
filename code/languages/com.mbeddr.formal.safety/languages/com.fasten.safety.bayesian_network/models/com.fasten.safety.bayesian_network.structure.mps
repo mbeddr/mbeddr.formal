@@ -123,7 +123,7 @@
   </node>
   <node concept="1TIwiD" id="3sgpJkb5PI3">
     <property role="EcuMT" value="3967784474352507779" />
-    <property role="3GE5qa" value="probability_distribution.discrete" />
+    <property role="3GE5qa" value="probability_distribution.discrete.base" />
     <property role="TrG5h" value="DiscreteProbabilityDistributionBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" node="3sgpJkb5PI0" resolve="ProbabilityDistributionBase" />
@@ -132,7 +132,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="categories" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3sgpJkb5PI5" resolve="CategoryProbability" />
+      <ref role="20lvS9" node="6oAzR4aLkWG" resolve="CategoryProbabilityBase" />
     </node>
   </node>
   <node concept="1TIwiD" id="3sgpJkb5PI4">
@@ -143,12 +143,9 @@
   </node>
   <node concept="1TIwiD" id="3sgpJkb5PI5">
     <property role="EcuMT" value="3967784474352507781" />
-    <property role="3GE5qa" value="probability_distribution.discrete" />
+    <property role="3GE5qa" value="probability_distribution.discrete.simple" />
     <property role="TrG5h" value="CategoryProbability" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="3sgpJkb5PI6" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
+    <ref role="1TJDcQ" node="6oAzR4aLkWG" resolve="CategoryProbabilityBase" />
     <node concept="1TJgyi" id="3sgpJkb6jz6" role="1TKVEl">
       <property role="IQ2nx" value="3967784474352629958" />
       <property role="TrG5h" value="probability" />
@@ -159,7 +156,60 @@
     <property role="TrG5h" value="_RealNumberValue" />
     <property role="FLfZY" value="-?[0-9]+\\.[0-9]*([Ee][\\+\\-]?[0-9]+)?" />
     <property role="3F6X1D" value="5279705229678483898" />
-    <property role="3GE5qa" value="probability_distribution.discrete" />
+    <property role="3GE5qa" value="probability_distribution.discrete.base" />
+  </node>
+  <node concept="1TIwiD" id="6oAzR4aLkWG">
+    <property role="EcuMT" value="7360728356658433836" />
+    <property role="TrG5h" value="CategoryProbabilityBase" />
+    <property role="3GE5qa" value="probability_distribution.discrete.base" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="6oAzR4aLkWH" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oAzR4aLkWI">
+    <property role="EcuMT" value="7360728356658433838" />
+    <property role="TrG5h" value="CategoryProbabilityCombined" />
+    <property role="3GE5qa" value="probability_distribution.discrete.combination" />
+    <ref role="1TJDcQ" node="6oAzR4aLkWG" resolve="CategoryProbabilityBase" />
+    <node concept="1TJgyj" id="6oAzR4aLwrN" role="1TKVEi">
+      <property role="IQ2ns" value="7360728356658480883" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="combinations" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6oAzR4aLwrx" resolve="Combination" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oAzR4aLwrx">
+    <property role="EcuMT" value="7360728356658480865" />
+    <property role="3GE5qa" value="probability_distribution.discrete.combination" />
+    <property role="TrG5h" value="Combination" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="6oAzR4aNwx7" role="1TKVEl">
+      <property role="IQ2nx" value="7360728356659005511" />
+      <property role="TrG5h" value="val" />
+      <ref role="AX2Wp" node="4_5hYVHKxAU" resolve="_RealNumberValue" />
+    </node>
+    <node concept="1TJgyj" id="6oAzR4aLwrM" role="1TKVEi">
+      <property role="IQ2ns" value="7360728356658480882" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="categoryRefs" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6oAzR4aLwry" resolve="CategoryRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6oAzR4aLwry">
+    <property role="EcuMT" value="7360728356658480866" />
+    <property role="3GE5qa" value="probability_distribution.discrete.combination" />
+    <property role="TrG5h" value="CategoryRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="6oAzR4aLwrz" role="1TKVEi">
+      <property role="IQ2ns" value="7360728356658480867" />
+      <property role="20kJfa" value="category" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6oAzR4aLkWG" resolve="CategoryProbabilityBase" />
+    </node>
   </node>
 </model>
 
