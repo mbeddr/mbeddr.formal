@@ -338,7 +338,7 @@
     </node>
   </node>
   <node concept="18kY7G" id="6oAzR4aO3e_">
-    <property role="TrG5h" value="check_RandomVariable" />
+    <property role="TrG5h" value="check_Node" />
     <node concept="3clFbS" id="6oAzR4aO3eA" role="18ibNy">
       <node concept="3clFbJ" id="6oAzR4aO3eO" role="3cqZAp">
         <node concept="3clFbS" id="6oAzR4aO3eQ" role="3clFbx">
@@ -357,10 +357,10 @@
                           <ref role="2Gs0qQ" node="6oAzR4aOeZ2" resolve="cat" />
                         </node>
                         <node concept="Xl_RD" id="6oAzR4aOgRg" role="2MkJ7o">
-                          <property role="Xl_RC" value="for non-basic random variables combined probabilities shall be used" />
+                          <property role="Xl_RC" value="for non-root nodes combined probabilities shall be used" />
                         </node>
                         <node concept="AMVWg" id="6oAzR4aSQYz" role="lGtFl">
-                          <property role="TrG5h" value="non_basic_random_variables_use_combined_probabilities" />
+                          <property role="TrG5h" value="non_root_node_use_combined_probabilities" />
                         </node>
                       </node>
                     </node>
@@ -383,7 +383,7 @@
                     <ref role="1M0zk5" node="6oAzR4aOdMm" resolve="npt" />
                   </node>
                   <node concept="3Tsc0h" id="6oAzR4aOeZu" role="2OqNvi">
-                    <ref role="3TtcxE" to="zqec:3sgpJkb65Qv" />
+                    <ref role="3TtcxE" to="zqec:3sgpJkb65Qv" resolve="categories" />
                   </node>
                 </node>
               </node>
@@ -394,10 +394,10 @@
             </node>
             <node concept="2OqwBi" id="6oAzR4aOdM$" role="JncvB">
               <node concept="1YBJjd" id="6oAzR4aOdM_" role="2Oq$k0">
-                <ref role="1YBMHb" node="6oAzR4aO3eC" resolve="randomVariable" />
+                <ref role="1YBMHb" node="6oAzR4aO3eC" resolve="node" />
               </node>
               <node concept="3TrEf2" id="6oAzR4aOdMA" role="2OqNvi">
-                <ref role="3Tt5mk" to="zqec:3sgpJkb5PI1" />
+                <ref role="3Tt5mk" to="zqec:3sgpJkb5PI1" resolve="nodeStates" />
               </node>
             </node>
           </node>
@@ -405,10 +405,10 @@
         <node concept="2OqwBi" id="6oAzR4aO6HA" role="3clFbw">
           <node concept="2OqwBi" id="6oAzR4aO3qZ" role="2Oq$k0">
             <node concept="1YBJjd" id="6oAzR4aO3eZ" role="2Oq$k0">
-              <ref role="1YBMHb" node="6oAzR4aO3eC" resolve="randomVariable" />
+              <ref role="1YBMHb" node="6oAzR4aO3eC" resolve="node" />
             </node>
             <node concept="2qgKlT" id="6oAzR4aO3EA" role="2OqNvi">
-              <ref role="37wK5l" to="5l7z:6oAzR4aNCbx" resolve="variablesOnWhichThisDepends" />
+              <ref role="37wK5l" to="5l7z:6oAzR4aNCbx" resolve="nodesOnWhichThisDepends" />
             </node>
           </node>
           <node concept="3GX2aA" id="6oAzR4aOcno" role="2OqNvi" />
@@ -416,8 +416,8 @@
       </node>
     </node>
     <node concept="1YaCAy" id="6oAzR4aO3eC" role="1YuTPh">
-      <property role="TrG5h" value="randomVariable" />
-      <ref role="1YaFvo" to="zqec:3sgpJkb4cfX" resolve="RandomVariable" />
+      <property role="TrG5h" value="node" />
+      <ref role="1YaFvo" to="zqec:3sgpJkb4cfX" resolve="Node" />
     </node>
   </node>
   <node concept="18kY7G" id="6oAzR4aV$2w">
@@ -448,7 +448,7 @@
               <property role="TrG5h" value="pc" />
             </node>
             <node concept="37vLTw" id="6oAzR4b0GJ3" role="2GsD0m">
-              <ref role="3cqZAo" node="6oAzR4aZS_9" resolve="allPosibleCombinations" />
+              <ref role="3cqZAo" node="6oAzR4aZS_9" resolve="notAddressedCategories" />
             </node>
             <node concept="3clFbS" id="6oAzR4b0GIM" role="2LFqv$">
               <node concept="2MkqsV" id="6oAzR4b0GKZ" role="3cqZAp">
@@ -506,7 +506,7 @@
         </node>
         <node concept="2OqwBi" id="6oAzR4b0DlI" role="3clFbw">
           <node concept="37vLTw" id="6oAzR4b0BX7" role="2Oq$k0">
-            <ref role="3cqZAo" node="6oAzR4aZS_9" resolve="allPosibleCombinations" />
+            <ref role="3cqZAo" node="6oAzR4aZS_9" resolve="notAddressedCategories" />
           </node>
           <node concept="3GX2aA" id="6oAzR4b0GI4" role="2OqNvi" />
         </node>
@@ -591,7 +591,7 @@
             </node>
             <node concept="2OqwBi" id="6oAzR4aWnmz" role="33vP2m">
               <node concept="37vLTw" id="6oAzR4aWnm$" role="2Oq$k0">
-                <ref role="3cqZAo" node="6oAzR4aVE9Z" resolve="listOfSublists" />
+                <ref role="3cqZAo" node="6oAzR4aVE9Z" resolve="listOfCategoriesLists" />
               </node>
               <node concept="34jXtK" id="6oAzR4aWnm_" role="2OqNvi">
                 <node concept="37vLTw" id="6oAzR4aWnmA" role="25WWJ7">
@@ -611,7 +611,7 @@
                 </node>
                 <node concept="2OqwBi" id="6oAzR4aWye2" role="33vP2m">
                   <node concept="37vLTw" id="6oAzR4aWye3" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6oAzR4aWnmy" resolve="crtList" />
+                    <ref role="3cqZAo" node="6oAzR4aWnmy" resolve="currentListOfCategories" />
                   </node>
                   <node concept="34jXtK" id="6oAzR4aWye4" role="2OqNvi">
                     <node concept="37vLTw" id="6oAzR4aWye5" role="25WWJ7">
@@ -702,7 +702,7 @@
                     <node concept="1rXfSq" id="6oAzR4aXdz1" role="3clFbG">
                       <ref role="37wK5l" node="6oAzR4aVE5U" resolve="doComputeCombinations" />
                       <node concept="37vLTw" id="6oAzR4aXdZP" role="37wK5m">
-                        <ref role="3cqZAo" node="6oAzR4aVE9Z" resolve="listOfSublists" />
+                        <ref role="3cqZAo" node="6oAzR4aVE9Z" resolve="listOfCategoriesLists" />
                       </node>
                       <node concept="37vLTw" id="6oAzR4aXeSd" role="37wK5m">
                         <ref role="3cqZAo" node="6oAzR4aVXGu" resolve="crtPartialList" />
@@ -742,7 +742,7 @@
           <node concept="3eOVzh" id="6oAzR4aW4Qt" role="1Dwp0S">
             <node concept="2OqwBi" id="6oAzR4aWdG2" role="3uHU7w">
               <node concept="37vLTw" id="6oAzR4aWnmB" role="2Oq$k0">
-                <ref role="3cqZAo" node="6oAzR4aWnmy" resolve="nodes" />
+                <ref role="3cqZAo" node="6oAzR4aWnmy" resolve="currentListOfCategories" />
               </node>
               <node concept="34oBXx" id="6oAzR4aWiYF" role="2OqNvi" />
             </node>
@@ -809,7 +809,7 @@
                 <ref role="3cqZAo" node="6oAzR4b1AZy" resolve="cpc" />
               </node>
               <node concept="3Tsc0h" id="6oAzR4b1D5D" role="2OqNvi">
-                <ref role="3TtcxE" to="zqec:6oAzR4aLwrN" />
+                <ref role="3TtcxE" to="zqec:6oAzR4aLwrN" resolve="combinations" />
               </node>
             </node>
           </node>
@@ -862,11 +862,11 @@
                                 <ref role="3cqZAo" node="6oAzR4b1D66" resolve="it" />
                               </node>
                               <node concept="3Tsc0h" id="6oAzR4b1D63" role="2OqNvi">
-                                <ref role="3TtcxE" to="zqec:6oAzR4aLwrM" />
+                                <ref role="3TtcxE" to="zqec:6oAzR4aLwrM" resolve="categoryRefs" />
                               </node>
                             </node>
                             <node concept="13MTOL" id="6oAzR4b1D64" role="2OqNvi">
-                              <ref role="13MTZf" to="zqec:6oAzR4aLwrz" />
+                              <ref role="13MTZf" to="zqec:6oAzR4aLwrz" resolve="category" />
                             </node>
                           </node>
                           <node concept="ANE8D" id="6oAzR4b1D65" role="2OqNvi" />
@@ -892,7 +892,7 @@
               </node>
               <node concept="66VNe" id="6oAzR4b1M5F" role="2OqNvi">
                 <node concept="37vLTw" id="6oAzR4b1Mo8" role="576Qk">
-                  <ref role="3cqZAo" node="6oAzR4b1D5O" resolve="crt" />
+                  <ref role="3cqZAo" node="6oAzR4b1D5O" resolve="addressedCombinations" />
                 </node>
               </node>
             </node>
@@ -977,7 +977,7 @@
                   <node concept="2OqwBi" id="6oAzR4b26Cb" role="3clFbG">
                     <node concept="2OqwBi" id="6oAzR4b22RE" role="2Oq$k0">
                       <node concept="37vLTw" id="6oAzR4b22H2" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6oAzR4b22qy" resolve="comp" />
+                        <ref role="3cqZAo" node="6oAzR4b22qy" resolve="crtCombination" />
                       </node>
                       <node concept="3Tsc0h" id="6oAzR4b245y" role="2OqNvi">
                         <ref role="3TtcxE" to="zqec:6oAzR4aLwrM" resolve="categoryRefs" />
@@ -1014,7 +1014,7 @@
                 </node>
                 <node concept="TSZUe" id="6oAzR4b2kzj" role="2OqNvi">
                   <node concept="37vLTw" id="6oAzR4b2kCT" role="25WWJ7">
-                    <ref role="3cqZAo" node="6oAzR4b22qy" resolve="comp" />
+                    <ref role="3cqZAo" node="6oAzR4b22qy" resolve="crtCombination" />
                   </node>
                 </node>
               </node>

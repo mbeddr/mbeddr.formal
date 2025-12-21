@@ -43,8 +43,8 @@
         <reference id="3967784474352075796" name="parent" index="W0abx" />
         <reference id="3967784474352075798" name="child" index="W0abz" />
       </concept>
-      <concept id="3967784474352075773" name="com.fasten.safety.bayesian_network.structure.RandomVariable" flags="ng" index="W0ak8">
-        <child id="3967784474352507777" name="probabilityDistribution" index="W1NPO" />
+      <concept id="3967784474352075773" name="com.fasten.safety.bayesian_network.structure.Node" flags="ng" index="W0ak8">
+        <child id="3967784474352507777" name="nodeStates" index="W1NPO" />
       </concept>
       <concept id="3967784474352075753" name="com.fasten.safety.bayesian_network.structure.BayesianNetwork" flags="ng" index="W0aks">
         <child id="3967784474352276937" name="content" index="W0VcW" />
@@ -53,7 +53,7 @@
         <property id="3967784474352629958" name="probability" index="W2lSN" />
       </concept>
       <concept id="3967784474352507780" name="com.fasten.safety.bayesian_network.structure.NodeProbabilityTable" flags="ng" index="W1NPL" />
-      <concept id="3967784474352507779" name="com.fasten.safety.bayesian_network.structure.DiscreteProbabilityDistributionBase" flags="ng" index="W1NPQ">
+      <concept id="3967784474352507779" name="com.fasten.safety.bayesian_network.structure.DiscreteStateBase" flags="ng" index="W1NPQ">
         <child id="3967784474352573855" name="categories" index="W23HE" />
       </concept>
       <concept id="7360728356658480865" name="com.fasten.safety.bayesian_network.structure.Combination" flags="ng" index="1GS8Ag">
@@ -108,7 +108,7 @@
         <property role="37mO49" value="7360728356659281028" />
         <node concept="gqqVs" id="6oAzR4aOzM5" role="37mO4d">
           <property role="gqqTZ" value="107.0" />
-          <property role="gqqTW" value="139.00029836425782" />
+          <property role="gqqTW" value="149.00029836425782" />
           <property role="gqqTX" value="172.0" />
           <property role="gqqTy" value="89.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -238,11 +238,11 @@
       </node>
     </node>
     <node concept="W0abB" id="6oAzR4aOzM7" role="W0VcW">
-      <ref role="W0abx" node="6oAzR4aOzLX" resolve="A" />
+      <ref role="W0abx" node="6oAzR4aOzLX" resolve="Parent_1" />
       <ref role="W0abz" node="6oAzR4aOzM4" resolve="Child" />
     </node>
     <node concept="W0abB" id="6oAzR4aOzMa" role="W0VcW">
-      <ref role="W0abx" node="6oAzR4aOzM1" resolve="B" />
+      <ref role="W0abx" node="6oAzR4aOzM1" resolve="Parent_2" />
       <ref role="W0abz" node="6oAzR4aOzM4" resolve="Child" />
     </node>
   </node>
