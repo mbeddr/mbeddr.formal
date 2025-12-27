@@ -8,6 +8,7 @@
   <imports>
     <import index="zqec" ref="r:4b509217-3274-43e6-be70-84e45864fd71(com.fasten.safety.bayesian_network.structure)" />
     <import index="5l7z" ref="r:b0e952c1-e1f7-45c0-b3ae-2b26e0db2e88(com.fasten.safety.bayesian_network.behavior)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -21,9 +22,11 @@
       </concept>
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
-      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
+      <concept id="5279705229678483897" name="jetbrains.mps.baseLanguage.structure.FloatingPointFloatConstant" flags="nn" index="2$xPTn">
+        <property id="5279705229678483899" name="value" index="2$xPTl" />
+      </concept>
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
       </concept>
@@ -60,6 +63,9 @@
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
+      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
+        <property id="1113006610751" name="value" index="$nhwW" />
+      </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123134" name="parameter" index="3clF46" />
@@ -86,6 +92,9 @@
       <concept id="1068581242869" name="jetbrains.mps.baseLanguage.structure.MinusExpression" flags="nn" index="3cpWsd" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081506773034" name="jetbrains.mps.baseLanguage.structure.LessThanExpression" flags="nn" index="3eOVzh" />
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
@@ -144,9 +153,6 @@
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
       <concept id="7992060018732187438" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatementAnnotation" flags="ng" index="AMVWg" />
-      <concept id="1175517400280" name="jetbrains.mps.lang.typesystem.structure.AssertStatement" flags="nn" index="2Mj0R9">
-        <child id="1175517761460" name="condition" index="2MkoU_" />
-      </concept>
       <concept id="1175517767210" name="jetbrains.mps.lang.typesystem.structure.ReportErrorStatement" flags="nn" index="2MkqsV">
         <child id="1175517851849" name="errorString" index="2MkJ7o" />
       </concept>
@@ -315,20 +321,45 @@
           </node>
         </node>
       </node>
-      <node concept="2Mj0R9" id="3sgpJkbn6Kk" role="3cqZAp">
-        <node concept="2dkUwp" id="3sgpJkbn7sG" role="2MkoU_">
-          <node concept="3cmrfG" id="3sgpJkbn7t3" role="3uHU7w">
-            <property role="3cmrfH" value="1" />
-          </node>
-          <node concept="37vLTw" id="3sgpJkbn6LJ" role="3uHU7B">
-            <ref role="3cqZAo" node="3sgpJkbn51U" resolve="sum" />
+      <node concept="3clFbJ" id="6PkUDnZ5Gv5" role="3cqZAp">
+        <node concept="3clFbS" id="6PkUDnZ5Gv7" role="3clFbx">
+          <node concept="2MkqsV" id="6PkUDnZ5Mn5" role="3cqZAp">
+            <node concept="1YBJjd" id="6PkUDnZ5Omd" role="1urrMF">
+              <ref role="1YBMHb" node="3sgpJkbn4qG" resolve="nodeProbabilityTable" />
+            </node>
+            <node concept="3cpWs3" id="6PkUDnWW48n" role="2MkJ7o">
+              <node concept="37vLTw" id="6PkUDnWW4bb" role="3uHU7w">
+                <ref role="3cqZAo" node="3sgpJkbn51U" resolve="sum" />
+              </node>
+              <node concept="Xl_RD" id="3sgpJkbn7D9" role="3uHU7B">
+                <property role="Xl_RC" value="the sum of probabilities should be smaller-or-equal to 1 but was " />
+              </node>
+            </node>
+            <node concept="AMVWg" id="6PkUDnZ5OBo" role="lGtFl">
+              <property role="TrG5h" value="probabilities_sum_smaller_equal_one" />
+            </node>
           </node>
         </node>
-        <node concept="Xl_RD" id="3sgpJkbn7D9" role="2MkJ7o">
-          <property role="Xl_RC" value="the sum of probabilities should be smaller-or-equal to 1" />
-        </node>
-        <node concept="1YBJjd" id="3sgpJkbn7LH" role="1urrMF">
-          <ref role="1YBMHb" node="3sgpJkbn4qG" resolve="nodeProbabilityTable" />
+        <node concept="3fqX7Q" id="6PkUDnZ5GEm" role="3clFbw">
+          <node concept="1eOMI4" id="6PkUDnZ5Me8" role="3fr31v">
+            <node concept="3eOVzh" id="6PkUDnWWulx" role="1eOMHV">
+              <node concept="2YIFZM" id="6PkUDnWWj2u" role="3uHU7B">
+                <ref role="37wK5l" to="wyt6:~Math.abs(float)" resolve="abs" />
+                <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
+                <node concept="3cpWsd" id="6PkUDnWWqG4" role="37wK5m">
+                  <node concept="37vLTw" id="6PkUDnWWrAe" role="3uHU7w">
+                    <ref role="3cqZAo" node="3sgpJkbn51U" resolve="sum" />
+                  </node>
+                  <node concept="2$xPTn" id="6PkUDnWWooO" role="3uHU7B">
+                    <property role="2$xPTl" value="1.0f" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3b6qkQ" id="6PkUDnWWwcR" role="3uHU7w">
+                <property role="$nhwW" value="0.0001" />
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
