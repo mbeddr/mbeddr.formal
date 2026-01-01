@@ -4,6 +4,7 @@
   <languages>
     <use id="14289527-ae82-48f0-ab60-380cec6ac506" name="com.fasten.safety.bayesian_network" version="-1" />
     <use id="8ca79d43-eb45-4791-bdd4-0d6130ff895b" name="de.itemis.mps.editor.diagram.layout" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports />
   <registry>
@@ -36,6 +37,25 @@
       <concept id="8963411245960991903" name="de.itemis.mps.editor.diagram.layout.structure.LayoutMapEntry" flags="ng" index="37mRIm">
         <property id="8963411245960998400" name="key" index="37mO49" />
         <child id="8963411245960998404" name="value" index="37mO4d" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
+    <language id="83ed2dfe-f724-46cc-852a-dce086daee3f" name="com.mbeddr.formal.base">
+      <concept id="3769056599174984527" name="com.mbeddr.formal.base.structure.DiagramDocumentation" flags="ng" index="30pd9e">
+        <child id="3514655602814462801" name="documentation" index="9kjJR" />
+      </concept>
+      <concept id="3769056599175571406" name="com.mbeddr.formal.base.structure.IDocumentableDiagram" flags="ngI" index="30vsrf">
+        <child id="3769056599174487930" name="documentation" index="30rnTV" />
       </concept>
     </language>
     <language id="14289527-ae82-48f0-ab60-380cec6ac506" name="com.fasten.safety.bayesian_network">
@@ -97,7 +117,6 @@
     </node>
     <node concept="W0ak8" id="3sgpJkb5jy7" role="W0VcW">
       <property role="TrG5h" value="D" />
-      <node concept="W1NPL" id="6oAzR4aMxgJ" role="W1NPO" />
     </node>
     <node concept="W0ak8" id="3sgpJkb5jxP" role="W0VcW">
       <property role="TrG5h" value="B" />
@@ -155,7 +174,7 @@
         <node concept="gqqVs" id="3sgpJkb5w2f" role="37mO4d">
           <property role="gqqTZ" value="202.0" />
           <property role="gqqTW" value="12.000100000000003" />
-          <property role="gqqTX" value="172.0" />
+          <property role="gqqTX" value="179.0" />
           <property role="gqqTy" value="119.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -165,7 +184,7 @@
         <node concept="gqqVs" id="3sgpJkb5w2i" role="37mO4d">
           <property role="gqqTZ" value="12.0" />
           <property role="gqqTW" value="12.000100000000003" />
-          <property role="gqqTX" value="172.0" />
+          <property role="gqqTX" value="179.0" />
           <property role="gqqTy" value="119.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -175,7 +194,7 @@
         <node concept="gqqVs" id="3sgpJkb5w2k" role="37mO4d">
           <property role="gqqTZ" value="392.0" />
           <property role="gqqTW" value="12.000100000000003" />
-          <property role="gqqTX" value="172.0" />
+          <property role="gqqTX" value="179.0" />
           <property role="gqqTy" value="119.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
@@ -2337,6 +2356,203 @@
     <node concept="W0abB" id="7ExS8gqpFhy" role="W0VcW">
       <ref role="W0abx" node="7ExS8gqpFgN" resolve="Consequence" />
       <ref role="W0abz" node="7ExS8gqpFgQ" resolve="Risk" />
+    </node>
+  </node>
+  <node concept="W0aks" id="3heog7O8LJ8">
+    <property role="TrG5h" value="_110_agena_lucy_letby" />
+    <node concept="37mRI7" id="3heog7OaE_6" role="lGtFl">
+      <node concept="37mRIm" id="3heog7OaE_7" role="37mRID">
+        <property role="37mO49" value="3769056599174733875" />
+        <node concept="gqqVs" id="3heog7OaE_5" role="37mO4d">
+          <property role="gqqTZ" value="148.0" />
+          <property role="gqqTW" value="13.0" />
+          <property role="gqqTX" value="320.0" />
+          <property role="gqqTy" value="66.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="3heog7OaEHp" role="37mRID">
+        <property role="37mO49" value="3769056599174982450" />
+        <node concept="gqqVs" id="3heog7OaEHo" role="37mO4d">
+          <property role="gqqTZ" value="194.0" />
+          <property role="gqqTW" value="119.0" />
+          <property role="gqqTX" value="206.0" />
+          <property role="gqqTy" value="79.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="3heog7OaER9" role="37mRID">
+        <property role="37mO49" value="3769056599174982760" />
+        <node concept="gqqVs" id="3heog7OaER8" role="37mO4d">
+          <property role="gqqTZ" value="56.0" />
+          <property role="gqqTW" value="283.0" />
+          <property role="gqqTX" value="195.0" />
+          <property role="gqqTy" value="79.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="3heog7OaEUA" role="37mRID">
+        <property role="37mO49" value="3769056599174983248" />
+        <node concept="gqqVs" id="3heog7OaEU_" role="37mO4d">
+          <property role="gqqTZ" value="332.0" />
+          <property role="gqqTW" value="280.0" />
+          <property role="gqqTX" value="195.0" />
+          <property role="gqqTy" value="79.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="3heog7OaEXI" role="37mRID">
+        <property role="37mO49" value="3769056599174983520" />
+        <node concept="2VclpC" id="3heog7OaEXH" role="37mO4d" />
+      </node>
+      <node concept="37mRIm" id="3heog7OaEYx" role="37mRID">
+        <property role="37mO49" value="3769056599174983535" />
+        <node concept="2VclpC" id="3heog7OaEYw" role="37mO4d" />
+      </node>
+      <node concept="37mRIm" id="3heog7OgS$a" role="37mRID">
+        <property role="37mO49" value="3769056599176612079" />
+        <node concept="gqqVs" id="3heog7OgS$9" role="37mO4d">
+          <property role="gqqTZ" value="80.0" />
+          <property role="gqqTW" value="7.0" />
+          <property role="gqqTX" value="320.0" />
+          <property role="gqqTy" value="66.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+    </node>
+    <node concept="W0ak8" id="3heog7OaEGM" role="W0VcW">
+      <property role="TrG5h" value="Hypothesis" />
+      <node concept="W1NPL" id="3heog7OaEHM" role="W1NPO">
+        <node concept="W1NPK" id="3heog7OaEI0" role="W23HE">
+          <property role="TrG5h" value="Serial Killer" />
+          <property role="W2lSN" value="0.1" />
+        </node>
+        <node concept="W1NPK" id="3heog7OaEIM" role="W23HE">
+          <property role="TrG5h" value="Sepsis Cluster" />
+          <property role="W2lSN" value="0.9" />
+        </node>
+      </node>
+    </node>
+    <node concept="W0ak8" id="3heog7OaELC" role="W0VcW">
+      <property role="TrG5h" value="Little Evidence of Malecious Harm" />
+      <node concept="W1NPL" id="3heog7OaEMd" role="W1NPO">
+        <node concept="1GSW1v" id="3heog7OaEZu" role="W23HE">
+          <property role="TrG5h" value="False" />
+          <node concept="1GS8Ag" id="3heog7OaF0s" role="1GS8A2">
+            <property role="1GU8sQ" value="0.6" />
+            <node concept="1GS8Aj" id="3heog7OaF0t" role="1GS8A3">
+              <ref role="1GS8Ai" node="3heog7OaEI0" resolve="Serial Killer" />
+            </node>
+          </node>
+          <node concept="1GS8Ag" id="3heog7OaF0u" role="1GS8A2">
+            <property role="1GU8sQ" value="0.2" />
+            <node concept="1GS8Aj" id="3heog7OaF0v" role="1GS8A3">
+              <ref role="1GS8Ai" node="3heog7OaEIM" resolve="Sepsis Cluster" />
+            </node>
+          </node>
+        </node>
+        <node concept="1GSW1v" id="3heog7OaEZR" role="W23HE">
+          <property role="TrG5h" value="True" />
+          <node concept="1GS8Ag" id="3heog7OaF0G" role="1GS8A2">
+            <property role="1GU8sQ" value="0.4" />
+            <node concept="1GS8Aj" id="3heog7OaF0H" role="1GS8A3">
+              <ref role="1GS8Ai" node="3heog7OaEI0" resolve="Serial Killer" />
+            </node>
+          </node>
+          <node concept="1GS8Ag" id="3heog7OaF0I" role="1GS8A2">
+            <property role="1GU8sQ" value="0.8" />
+            <node concept="1GS8Aj" id="3heog7OaF0J" role="1GS8A3">
+              <ref role="1GS8Ai" node="3heog7OaEIM" resolve="Sepsis Cluster" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="W0ak8" id="3heog7OaETg" role="W0VcW">
+      <property role="TrG5h" value="Much Evidence of Sepsis" />
+      <node concept="W1NPL" id="3heog7OaEUN" role="W1NPO">
+        <node concept="1GSW1v" id="3heog7OaF3o" role="W23HE">
+          <property role="TrG5h" value="False" />
+          <node concept="1GS8Ag" id="3heog7OaF4Y" role="1GS8A2">
+            <property role="1GU8sQ" value="0.9" />
+            <node concept="1GS8Aj" id="3heog7OaF4Z" role="1GS8A3">
+              <ref role="1GS8Ai" node="3heog7OaEI0" resolve="Serial Killer" />
+            </node>
+          </node>
+          <node concept="1GS8Ag" id="3heog7OaF50" role="1GS8A2">
+            <property role="1GU8sQ" value="0.01" />
+            <node concept="1GS8Aj" id="3heog7OaF51" role="1GS8A3">
+              <ref role="1GS8Ai" node="3heog7OaEIM" resolve="Sepsis Cluster" />
+            </node>
+          </node>
+        </node>
+        <node concept="1GSW1v" id="3heog7OaF49" role="W23HE">
+          <property role="TrG5h" value="True" />
+          <node concept="1GS8Ag" id="3heog7OaF4I" role="1GS8A2">
+            <property role="1GU8sQ" value="0.1" />
+            <node concept="1GS8Aj" id="3heog7OaF4J" role="1GS8A3">
+              <ref role="1GS8Ai" node="3heog7OaEI0" resolve="Serial Killer" />
+            </node>
+          </node>
+          <node concept="1GS8Ag" id="3heog7OaF4K" role="1GS8A2">
+            <property role="1GU8sQ" value="0.99" />
+            <node concept="1GS8Aj" id="3heog7OaF4L" role="1GS8A3">
+              <ref role="1GS8Ai" node="3heog7OaEIM" resolve="Sepsis Cluster" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="W0abB" id="3heog7OaEXw" role="W0VcW">
+      <ref role="W0abx" node="3heog7OaEGM" resolve="Hypothesis" />
+      <ref role="W0abz" node="3heog7OaELC" resolve="Little Evidence of Malecious Harm" />
+    </node>
+    <node concept="W0abB" id="3heog7OaEXJ" role="W0VcW">
+      <ref role="W0abx" node="3heog7OaEGM" resolve="Hypothesis" />
+      <ref role="W0abz" node="3heog7OaETg" resolve="Much Evidence of Sepsis" />
+    </node>
+    <node concept="30pd9e" id="3heog7OgSzJ" role="30rnTV">
+      <node concept="1Pa9Pv" id="3heog7O9I0O" role="9kjJR">
+        <node concept="1PaTwC" id="3heog7OaEA4" role="1PaQFQ">
+          <node concept="3oM_SD" id="3heog7OaEA5" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="3heog7OaEAi" role="1PaTwD">
+            <property role="3oM_SC" value="example" />
+          </node>
+          <node concept="3oM_SD" id="3heog7OaEAw" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="3heog7OaEAx" role="1PaTwD">
+            <property role="3oM_SC" value="taken" />
+          </node>
+          <node concept="3oM_SD" id="3heog7OaEAU" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="3heog7OaEB7" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3heog7OaECr" role="1PaTwD">
+            <property role="3oM_SC" value="video:" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3heog7OaEBz" role="1PaQFQ">
+          <node concept="3oM_SD" id="3heog7OaEC2" role="1PaTwD">
+            <property role="3oM_SC" value="https://www.youtube.com/watch?v=KVkXBIbkUWM" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3heog7OaEEe" role="1PaQFQ">
+          <node concept="3oM_SD" id="3heog7OaEEd" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="3heog7OaEEv" role="1PaTwD">
+            <property role="3oM_SC" value="Norman" />
+          </node>
+          <node concept="3oM_SD" id="3heog7OaEG1" role="1PaTwD">
+            <property role="3oM_SC" value="Fenton" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

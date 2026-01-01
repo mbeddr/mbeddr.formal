@@ -8,6 +8,7 @@
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
+    <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -439,6 +440,30 @@
     <property role="TrG5h" value="A0PagePortrait" />
     <property role="34LRSv" value="A0 portrait" />
     <ref role="1TJDcQ" node="4_xuXPCBvIl" resolve="PageSettingBase" />
+  </node>
+  <node concept="1TIwiD" id="3heog7OaFdf">
+    <property role="EcuMT" value="3769056599174984527" />
+    <property role="TrG5h" value="DiagramDocumentation" />
+    <property role="3GE5qa" value="doc" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="336$aoT_UHh" role="1TKVEi">
+      <property role="IQ2ns" value="3514655602814462801" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="documentation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3heog7OcUve">
+    <property role="EcuMT" value="3769056599175571406" />
+    <property role="3GE5qa" value="doc" />
+    <property role="TrG5h" value="IDocumentableDiagram" />
+    <node concept="1TJgyj" id="3heog7O8LXU" role="1TKVEi">
+      <property role="IQ2ns" value="3769056599174487930" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="documentation" />
+      <ref role="20lvS9" node="3heog7OaFdf" resolve="DiagramDocumentation" />
+    </node>
   </node>
 </model>
 
