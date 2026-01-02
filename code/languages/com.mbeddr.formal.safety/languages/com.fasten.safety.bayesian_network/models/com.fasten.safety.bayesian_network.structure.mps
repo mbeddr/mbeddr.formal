@@ -93,7 +93,7 @@
     <node concept="1TJgyj" id="3sgpJkb5PI1" role="1TKVEi">
       <property role="IQ2ns" value="3967784474352507777" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="nodeStates" />
+      <property role="20kJfa" value="nodeState" />
       <ref role="20lvS9" node="3sgpJkb5PI0" resolve="NodeStateBase" />
     </node>
     <node concept="PrWs8" id="3sgpJkb4cfY" role="PzmwI">

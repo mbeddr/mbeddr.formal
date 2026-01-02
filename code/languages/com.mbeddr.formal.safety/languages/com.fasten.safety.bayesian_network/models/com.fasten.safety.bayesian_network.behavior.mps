@@ -722,7 +722,7 @@
                           <ref role="2Gs0qQ" node="6oAzR4aOkwr" resolve="rv" />
                         </node>
                         <node concept="3TrEf2" id="6oAzR4aOtIe" role="2OqNvi">
-                          <ref role="3Tt5mk" to="zqec:3sgpJkb5PI1" resolve="nodeStates" />
+                          <ref role="3Tt5mk" to="zqec:3sgpJkb5PI1" resolve="nodeState" />
                         </node>
                       </node>
                     </node>
@@ -922,6 +922,34 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="3heog7OvN0t" role="13h7CS">
+      <property role="TrG5h" value="getDiscreteCategories" />
+      <node concept="3Tm1VV" id="3heog7OvN0u" role="1B3o_S" />
+      <node concept="2I9FWS" id="3heog7OvNpU" role="3clF45">
+        <ref role="2I9WkF" to="zqec:6oAzR4aLkWG" resolve="CategoryProbabilityBase" />
+      </node>
+      <node concept="3clFbS" id="3heog7OvN0w" role="3clF47">
+        <node concept="3clFbF" id="3heog7OvNut" role="3cqZAp">
+          <node concept="2OqwBi" id="3heog7OvPsP" role="3clFbG">
+            <node concept="1PxgMI" id="3heog7OvOG3" role="2Oq$k0">
+              <property role="1BlNFB" value="true" />
+              <node concept="chp4Y" id="3heog7OvOJS" role="3oSUPX">
+                <ref role="cht4Q" to="zqec:3sgpJkb5PI3" resolve="DiscreteStateBase" />
+              </node>
+              <node concept="2OqwBi" id="3heog7OvNGW" role="1m5AlR">
+                <node concept="13iPFW" id="3heog7OvNus" role="2Oq$k0" />
+                <node concept="3TrEf2" id="3heog7OvNUF" role="2OqNvi">
+                  <ref role="3Tt5mk" to="zqec:3sgpJkb5PI1" resolve="nodeState" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Tsc0h" id="3heog7OvPEM" role="2OqNvi">
+              <ref role="3TtcxE" to="zqec:3sgpJkb65Qv" resolve="categories" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="6oAzR4aNCbf" role="13h7CW">
       <node concept="3clFbS" id="6oAzR4aNCbg" role="2VODD2" />
     </node>
@@ -957,7 +985,7 @@
                         </node>
                       </node>
                       <node concept="3TrEf2" id="7TuRmu5TTPb" role="2OqNvi">
-                        <ref role="3Tt5mk" to="zqec:3sgpJkb5PI1" resolve="nodeStates" />
+                        <ref role="3Tt5mk" to="zqec:3sgpJkb5PI1" resolve="nodeState" />
                       </node>
                     </node>
                   </node>

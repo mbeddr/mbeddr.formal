@@ -8,7 +8,6 @@
   <imports>
     <import index="zqec" ref="r:4b509217-3274-43e6-be70-84e45864fd71(com.fasten.safety.bayesian_network.structure)" />
     <import index="5l7z" ref="r:b0e952c1-e1f7-45c0-b3ae-2b26e0db2e88(com.fasten.safety.bayesian_network.behavior)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -22,6 +21,7 @@
       </concept>
       <concept id="1153417849900" name="jetbrains.mps.baseLanguage.structure.GreaterThanOrEqualsExpression" flags="nn" index="2d3UOw" />
       <concept id="1215695189714" name="jetbrains.mps.baseLanguage.structure.PlusAssignmentExpression" flags="nn" index="d57v9" />
+      <concept id="1153422305557" name="jetbrains.mps.baseLanguage.structure.LessThanOrEqualsExpression" flags="nn" index="2dkUwp" />
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="5279705229678483897" name="jetbrains.mps.baseLanguage.structure.FloatingPointFloatConstant" flags="nn" index="2$xPTn">
@@ -62,9 +62,6 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
-      </concept>
-      <concept id="1111509017652" name="jetbrains.mps.baseLanguage.structure.FloatingPointConstant" flags="nn" index="3b6qkQ">
-        <property id="1113006610751" name="value" index="$nhwW" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
@@ -342,21 +339,12 @@
         </node>
         <node concept="3fqX7Q" id="6PkUDnZ5GEm" role="3clFbw">
           <node concept="1eOMI4" id="6PkUDnZ5Me8" role="3fr31v">
-            <node concept="3eOVzh" id="6PkUDnWWulx" role="1eOMHV">
-              <node concept="2YIFZM" id="6PkUDnWWj2u" role="3uHU7B">
-                <ref role="37wK5l" to="wyt6:~Math.abs(float)" resolve="abs" />
-                <ref role="1Pybhc" to="wyt6:~Math" resolve="Math" />
-                <node concept="3cpWsd" id="6PkUDnWWqG4" role="37wK5m">
-                  <node concept="37vLTw" id="6PkUDnWWrAe" role="3uHU7w">
-                    <ref role="3cqZAo" node="3sgpJkbn51U" resolve="sum" />
-                  </node>
-                  <node concept="2$xPTn" id="6PkUDnWWooO" role="3uHU7B">
-                    <property role="2$xPTl" value="1.0f" />
-                  </node>
-                </node>
+            <node concept="2dkUwp" id="3heog7OUsFP" role="1eOMHV">
+              <node concept="37vLTw" id="3heog7OUiv5" role="3uHU7B">
+                <ref role="3cqZAo" node="3sgpJkbn51U" resolve="sum" />
               </node>
-              <node concept="3b6qkQ" id="6PkUDnWWwcR" role="3uHU7w">
-                <property role="$nhwW" value="0.0001" />
+              <node concept="2$xPTn" id="3heog7OUhwf" role="3uHU7w">
+                <property role="2$xPTl" value="1.0001f" />
               </node>
             </node>
           </node>
@@ -428,7 +416,7 @@
                 <ref role="1YBMHb" node="6oAzR4aO3eC" resolve="node" />
               </node>
               <node concept="3TrEf2" id="6oAzR4aOdMA" role="2OqNvi">
-                <ref role="3Tt5mk" to="zqec:3sgpJkb5PI1" resolve="nodeStates" />
+                <ref role="3Tt5mk" to="zqec:3sgpJkb5PI1" resolve="nodeState" />
               </node>
             </node>
           </node>
