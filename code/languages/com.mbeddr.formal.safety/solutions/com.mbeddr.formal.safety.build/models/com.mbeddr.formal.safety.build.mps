@@ -20288,6 +20288,22 @@
             <ref role="3bR37D" to="90a9:29so9Vb$6T5" resolve="de.slisson.mps.tables.runtime" />
           </node>
         </node>
+        <node concept="3rtmxn" id="6pvCoyEhroa" role="3bR31x">
+          <node concept="3LXTmp" id="6pvCoyEhrob" role="3rtmxm">
+            <node concept="3qWCbU" id="6pvCoyEhroc" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="6pvCoyEhrod" role="3LXTmr">
+              <ref role="398BVh" node="6ucyvMUDFiJ" resolve="mbeddr.formal.safety.code" />
+              <node concept="2Ry0Ak" id="6pvCoyEhroe" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6pvCoyEhrof" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.fasten.safety.bayesian_network" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="22LTRH" id="6ucyvMUDFeT" role="1hWBAP">
