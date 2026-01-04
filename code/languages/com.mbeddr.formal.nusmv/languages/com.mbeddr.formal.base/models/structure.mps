@@ -445,7 +445,7 @@
     <property role="EcuMT" value="3769056599174984527" />
     <property role="TrG5h" value="DiagramDocumentation" />
     <property role="3GE5qa" value="doc" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="336$aoT_UHh" role="1TKVEi">
       <property role="IQ2ns" value="3514655602814462801" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />

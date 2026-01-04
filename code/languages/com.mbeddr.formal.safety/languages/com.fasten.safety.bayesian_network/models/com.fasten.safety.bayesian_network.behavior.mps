@@ -534,14 +534,14 @@
           <node concept="3clFbS" id="7TuRmu65Vtm" role="3clFbx">
             <node concept="3cpWs6" id="7TuRmu65Zhb" role="3cqZAp">
               <node concept="37vLTw" id="7TuRmu6602G" role="3cqZAk">
-                <ref role="3cqZAo" node="7TuRmu65ZES" resolve="probabilityAccorcingToActiveScenario" />
+                <ref role="3cqZAo" node="7TuRmu65ZES" resolve="probabilityAccordingToActiveScenario" />
               </node>
             </node>
           </node>
           <node concept="3y3z36" id="7TuRmu65Yi$" role="3clFbw">
             <node concept="10Nm6u" id="7TuRmu65Zci" role="3uHU7w" />
             <node concept="37vLTw" id="7TuRmu65ZEV" role="3uHU7B">
-              <ref role="3cqZAo" node="7TuRmu65ZES" resolve="probabilityAccorcingToActiveScenario" />
+              <ref role="3cqZAo" node="7TuRmu65ZES" resolve="probabilityAccordingToActiveScenario" />
             </node>
           </node>
         </node>

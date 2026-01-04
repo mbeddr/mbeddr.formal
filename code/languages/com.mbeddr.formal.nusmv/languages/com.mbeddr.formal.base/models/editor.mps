@@ -6386,7 +6386,7 @@
         <property role="3F0ifm" value="Documentation:" />
       </node>
       <node concept="3F1sOY" id="336$aoT_VnT" role="3EZMnx">
-        <ref role="1NtTu8" to="b19z:336$aoT_UHh" />
+        <ref role="1NtTu8" to="b19z:336$aoT_UHh" resolve="documentation" />
       </node>
       <node concept="2iRkQZ" id="336$aoT_Vnt" role="2iSdaV" />
     </node>
@@ -6403,7 +6403,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="336$aoT_XGP" role="1ytjkN">
-        <ref role="1NtTu8" to="b19z:336$aoT_UHh" />
+        <ref role="1NtTu8" to="b19z:336$aoT_UHh" resolve="documentation" />
         <node concept="37jFXN" id="336$aoTC9b3" role="3F10Kt" />
       </node>
       <node concept="38c6YI" id="336$aoT_XGY" role="3F10Kt">
@@ -6426,7 +6426,7 @@
       <ref role="2$4xQ3" node="3heog7OaGlP" resolve="DOCUMENTATION_TEXTUAL" />
     </node>
     <node concept="3F1sOY" id="3heog7OaGo1" role="2wV5jI">
-      <ref role="1NtTu8" to="b19z:336$aoT_UHh" />
+      <ref role="1NtTu8" to="b19z:336$aoT_UHh" resolve="documentation" />
     </node>
   </node>
   <node concept="PKFIW" id="3heog7OcV7U">
@@ -6439,7 +6439,7 @@
         <property role="3F0ifm" value="Documentation:" />
       </node>
       <node concept="3F1sOY" id="3ydH56R7Qj2" role="3EZMnx">
-        <ref role="1NtTu8" to="b19z:3heog7O8LXU" />
+        <ref role="1NtTu8" to="b19z:3heog7O8LXU" resolve="documentation" />
         <node concept="2w$q5c" id="5l6J5csz8uE" role="3xwHhi">
           <node concept="2aJ2om" id="5l6J5csz8uF" role="2w$qW5">
             <ref role="2$4xQ3" node="3heog7OaGlP" resolve="DOCUMENTATION_TEXTUAL" />

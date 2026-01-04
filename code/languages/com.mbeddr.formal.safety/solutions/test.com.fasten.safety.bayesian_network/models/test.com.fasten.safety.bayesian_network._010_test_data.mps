@@ -44,7 +44,7 @@
         <reference id="3967784474352075798" name="child" index="W0abz" />
       </concept>
       <concept id="3967784474352075773" name="com.fasten.safety.bayesian_network.structure.Node" flags="ng" index="W0ak8">
-        <child id="3967784474352507777" name="nodeStates" index="W1NPO" />
+        <child id="3967784474352507777" name="nodeState" index="W1NPO" />
       </concept>
       <concept id="3967784474352075753" name="com.fasten.safety.bayesian_network.structure.BayesianNetwork" flags="ng" index="W0aks">
         <child id="3967784474352276937" name="content" index="W0VcW" />
