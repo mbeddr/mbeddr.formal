@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mpsbasics.docx4j.lib" uuid="71bb25aa-20fa-4c18-8954-1b176576f52d" moduleVersion="0">
   <models>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="docx4j-core.jar" />
       <sourceRoot location="docx4j-openxml-objects-pml.jar" />
       <sourceRoot location="docx4j-openxml-objects-sml.jar" />
@@ -35,7 +35,7 @@
       <sourceRoot location="org.eclipse.persistence.moxy.jar" />
       <sourceRoot location="jakarta.activation-api.jar" />
     </modelRoot>
-    <modelRoot type="java_classes" contentPath="${module}/lib" />
+    <modelRoot contentPath="${module}/lib" type="java_classes" />
   </models>
   <facets>
     <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">

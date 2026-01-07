@@ -4296,9 +4296,9 @@
             <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3heog7OuGi_" role="3bR37C">
-          <node concept="3bR9La" id="3heog7OuGiA" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+        <node concept="1SiIV0" id="3tsEGTjSB74" role="3bR37C">
+          <node concept="3bR9La" id="3tsEGTjSB75" role="1SiIV1">
+            <ref role="3bR37D" node="2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
           </node>
         </node>
       </node>
@@ -8220,11 +8220,6 @@
         <node concept="1SiIV0" id="5Gu43O52l4Q" role="3bR37C">
           <node concept="3bR9La" id="5Gu43O52l4R" role="1SiIV1">
             <ref role="3bR37D" node="4lJSf3LkfPw" resolve="com.mpsbasics.core" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="5xecbsSrGEX" role="3bR37C">
-          <node concept="3bR9La" id="5xecbsSrGEY" role="1SiIV1">
-            <ref role="3bR37D" node="6hyv0iVPlFM" resolve="com.mbeddr.formal.req.base" />
           </node>
         </node>
       </node>

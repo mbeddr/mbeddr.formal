@@ -7084,9 +7084,9 @@
             <ref role="3bR37D" to="al5i:Vtr7jyAKU4" resolve="com.mbeddr.mpsutil.filepicker" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3heog7OuHrU" role="3bR37C">
-          <node concept="3bR9La" id="3heog7OuHrV" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+        <node concept="1SiIV0" id="3tsEGTjSC2s" role="3bR37C">
+          <node concept="3bR9La" id="3tsEGTjSC2t" role="1SiIV1">
+            <ref role="3bR37D" node="2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
           </node>
         </node>
       </node>
@@ -13483,11 +13483,6 @@
             <ref role="3bR37D" node="2dsc7GndbM" resolve="com.mpsbasics.core" />
           </node>
         </node>
-        <node concept="1SiIV0" id="5xecbsSrHPR" role="3bR37C">
-          <node concept="3bR9La" id="5xecbsSrHPS" role="1SiIV1">
-            <ref role="3bR37D" node="7he_lUumK0b" resolve="com.mbeddr.formal.req.base" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="5uFV_KLFfhe" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -18106,9 +18101,9 @@
         <ref role="398BVh" node="1FMyjUPkmcQ" resolve="mps.home" />
       </node>
     </node>
-    <node concept="2sgV4H" id="6odNb$otLmk" role="1l3spa">
-      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
-      <node concept="398BVA" id="6odNb$otLml" role="2JcizS">
+    <node concept="2sgV4H" id="1_6mr9XQLw9" role="1l3spa">
+      <ref role="1l3spb" to="jrpl:3PN66LDqBUx" resolve="org.mpsqa.allInOne" />
+      <node concept="398BVA" id="1_6mr9XQLwa" role="2JcizS">
         <ref role="398BVh" node="6odNb$otLlK" resolve="dependencies.mpsqa" />
       </node>
     </node>
@@ -19018,9 +19013,9 @@
         <ref role="398BVh" node="6ucyvMUDFdB" resolve="dependencies.mbeddr.platform" />
       </node>
     </node>
-    <node concept="2sgV4H" id="6odNb$otLDP" role="1l3spa">
-      <ref role="1l3spb" to="2tou:7C9PHv6FBIG" resolve="org.mpsqa.base" />
-      <node concept="398BVA" id="6odNb$otLDQ" role="2JcizS">
+    <node concept="2sgV4H" id="1_6mr9XH$y5" role="1l3spa">
+      <ref role="1l3spb" to="jrpl:3PN66LDqBUx" resolve="org.mpsqa.allInOne" />
+      <node concept="398BVA" id="1_6mr9XH$y7" role="2JcizS">
         <ref role="398BVh" node="6odNb$otLDj" resolve="dependencies.mpsqa" />
       </node>
     </node>
@@ -21439,31 +21434,6 @@
                   <property role="2Ry0Am" value="jbrDownload" />
                   <node concept="2Ry0Ak" id="2FyNhQGdl6y" role="2Ry0An">
                     <property role="2Ry0Am" value="jbr_windows" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="398223" id="nwXZr$UP$N" role="39821P">
-          <node concept="3_J27D" id="nwXZr$UP$O" role="Nbhlr">
-            <node concept="3Mxwew" id="nwXZr$UP$P" role="3MwsjC">
-              <property role="3MwjfP" value="plugins" />
-            </node>
-          </node>
-          <node concept="398223" id="nwXZr$UP$Q" role="39821P">
-            <node concept="3_J27D" id="nwXZr$UP$R" role="Nbhlr">
-              <node concept="3Mxwew" id="nwXZr$UP$S" role="3MwsjC">
-                <property role="3MwjfP" value="laf-win10" />
-              </node>
-            </node>
-            <node concept="2HvfSZ" id="nwXZr$UP$T" role="39821P">
-              <node concept="398BVA" id="nwXZr$UPzF" role="2HvfZ0">
-                <ref role="398BVh" node="nwXZr$UPwG" resolve="mps_home" />
-                <node concept="2Ry0Ak" id="nwXZr$UPzG" role="iGT6I">
-                  <property role="2Ry0Am" value="plugins" />
-                  <node concept="2Ry0Ak" id="nwXZr$UPzH" role="2Ry0An">
-                    <property role="2Ry0Am" value="laf-win10" />
                   </node>
                 </node>
               </node>
