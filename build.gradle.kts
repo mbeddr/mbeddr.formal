@@ -83,7 +83,7 @@ if (ciBuild) {
 
 val publishingRepository = uri("https://artifacts.itemis.cloud/repository/maven-mps-releases")
 
-val docx4JVersion = "11.4.11"
+val docx4JVersion = "11.5.9"
 
 configurations {
     val mps by creating
@@ -128,7 +128,7 @@ configurations {
         plantUML("org.apache.xmlgraphics:batik-all:1.18")
         plantUML("net.sourceforge.plantuml:plantuml-epl:1.2024.7")
         plantUML("xml-apis:xml-apis-ext:1.3.04")
-        plantUML("org.apache.xmlgraphics:xmlgraphics-commons:2.2")
+        plantUML("org.apache.xmlgraphics:xmlgraphics-commons:2.11")
 
         docx4j("org.docx4j:docx4j-core:$docx4JVersion")
         docx4j("org.docx4j:docx4j-JAXB-MOXy:$docx4JVersion")
