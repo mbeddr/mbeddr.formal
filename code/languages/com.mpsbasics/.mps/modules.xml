@@ -16,6 +16,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.editor.utils/com.mpsbasics.editor.utils.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.jira.pluginSolution/com.mpsbasics.jira.pluginSolution.msd" folder="jira" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.jira.sandbox/com.mpsbasics.jira.sandbox.msd" folder="jira" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.langchain4j/com.mpsbasics.langchain4j.msd" folder="langchain4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.pdfbox.sandbox/com.mpsbasics.pdfbox.sandbox.msd" folder="pdfbox" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.pdfbox/com.mpsbasics.pdfbox.msd" folder="pdfbox" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.plaintext.yaml.sandbox/com.mpsbasics.plaintext.yaml.sandbox.msd" folder="plaintext_yaml" />
