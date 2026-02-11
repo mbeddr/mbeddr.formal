@@ -3,6 +3,7 @@
   <component name="MPSProject">
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.core/com.mpsbasics.core.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.genai/com.mpsbasics.genai.mpl" folder="langchain4j" />
       <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.jira/com.mpsbasics.jira.mpl" folder="jira" />
       <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.pdfexporter/com.mpsbasics.pdfexporter.mpl" folder="pdfbox" />
       <modulePath path="$PROJECT_DIR$/languages/com.mpsbasics.plaintext.yaml.dsl.base/com.mpsbasics.plaintext.yaml.dsl.base.mpl" folder="plaintext_yaml" />

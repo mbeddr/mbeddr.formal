@@ -203,23 +203,15 @@
           </node>
         </node>
         <node concept="3clFbF" id="25QeXKbhbdh" role="3cqZAp">
-          <node concept="2OqwBi" id="25QeXKbhe59" role="3clFbG">
-            <node concept="2OqwBi" id="25QeXKbhcqE" role="2Oq$k0">
-              <node concept="37vLTw" id="25QeXKbhbdf" role="2Oq$k0">
-                <ref role="3cqZAo" node="65oZS6J79JO" resolve="response" />
-              </node>
-              <node concept="liA8E" id="25QeXKbhd9o" role="2OqNvi">
-                <ref role="37wK5l" to="8q50:~ChatResponse.aiMessage()" resolve="aiMessage" />
-              </node>
-            </node>
-            <node concept="liA8E" id="25QeXKbhf4S" role="2OqNvi">
-              <ref role="37wK5l" to="gipt:~AiMessage.text()" resolve="text" />
-            </node>
+          <node concept="37vLTw" id="25QeXKbhbdf" role="3clFbG">
+            <ref role="3cqZAo" node="65oZS6J79JO" resolve="response" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="25QeXKbh1yG" role="1B3o_S" />
-      <node concept="17QB3L" id="25QeXKbh2mz" role="3clF45" />
+      <node concept="3uibUv" id="3sHd1L7xjQc" role="3clF45">
+        <ref role="3uigEE" to="8q50:~ChatResponse" resolve="ChatResponse" />
+      </node>
       <node concept="37vLTG" id="25QeXKbh4pi" role="3clF46">
         <property role="TrG5h" value="str" />
         <node concept="17QB3L" id="25QeXKbh4ph" role="1tU5fm" />
@@ -303,15 +295,25 @@
           <node concept="3cpWsn" id="25QeXKbhl$l" role="3cpWs9">
             <property role="TrG5h" value="resp" />
             <node concept="17QB3L" id="25QeXKbhkDt" role="1tU5fm" />
-            <node concept="2OqwBi" id="25QeXKbhl$m" role="33vP2m">
-              <node concept="37vLTw" id="25QeXKbhl$n" role="2Oq$k0">
-                <ref role="3cqZAo" node="6o$jG5tNeW8" resolve="wrapper" />
-              </node>
-              <node concept="liA8E" id="25QeXKbhl$o" role="2OqNvi">
-                <ref role="37wK5l" node="25QeXKbh30k" resolve="doQuery" />
-                <node concept="37vLTw" id="25QeXKbhl$p" role="37wK5m">
-                  <ref role="3cqZAo" node="6o$jG5tKqNs" resolve="str" />
+            <node concept="2OqwBi" id="3sHd1L7xlym" role="33vP2m">
+              <node concept="2OqwBi" id="3sHd1L7xkBz" role="2Oq$k0">
+                <node concept="2OqwBi" id="25QeXKbhl$m" role="2Oq$k0">
+                  <node concept="37vLTw" id="25QeXKbhl$n" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6o$jG5tNeW8" resolve="wrapper" />
+                  </node>
+                  <node concept="liA8E" id="25QeXKbhl$o" role="2OqNvi">
+                    <ref role="37wK5l" node="25QeXKbh30k" resolve="doQuery" />
+                    <node concept="37vLTw" id="25QeXKbhl$p" role="37wK5m">
+                      <ref role="3cqZAo" node="6o$jG5tKqNs" resolve="str" />
+                    </node>
+                  </node>
                 </node>
+                <node concept="liA8E" id="3sHd1L7xlcc" role="2OqNvi">
+                  <ref role="37wK5l" to="8q50:~ChatResponse.aiMessage()" resolve="aiMessage" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3sHd1L7xmiS" role="2OqNvi">
+                <ref role="37wK5l" to="gipt:~AiMessage.text()" resolve="text" />
               </node>
             </node>
           </node>

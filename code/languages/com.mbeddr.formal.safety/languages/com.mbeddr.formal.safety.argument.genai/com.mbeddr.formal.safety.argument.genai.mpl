@@ -58,6 +58,8 @@
     <dependency reexport="false">e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)</dependency>
     <dependency reexport="false">d528b46a-a601-4237-ba3e-e0989001bf8f(com.mbeddr.formal.safety.argument.genai.pluginSolution)</dependency>
     <dependency reexport="false">39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)</dependency>
+    <dependency reexport="false">e49ae71b-b7a6-4321-84b6-ac9a82e13853(com.mpsbasics.genai)</dependency>
+    <dependency reexport="false">b5c0bb04-c583-4b2a-a66e-1eab92d33c68(com.mbeddr.mpsutil.json)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -108,6 +110,8 @@
     <module reference="7f01a836-f049-4bcd-b088-277c30f5a7be(com.mbeddr.formal.safety.argument.genai)" version="0" />
     <module reference="d528b46a-a601-4237-ba3e-e0989001bf8f(com.mbeddr.formal.safety.argument.genai.pluginSolution)" version="0" />
     <module reference="e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)" version="0" />
+    <module reference="b5c0bb04-c583-4b2a-a66e-1eab92d33c68(com.mbeddr.mpsutil.json)" version="0" />
+    <module reference="e49ae71b-b7a6-4321-84b6-ac9a82e13853(com.mpsbasics.genai)" version="0" />
     <module reference="e4b230e7-8e1a-4a05-8148-8713530572c1(com.mpsbasics.words.generic)" version="0" />
     <module reference="848ef45d-e560-4e35-853c-f35a64cc135c(de.itemis.mps.editor.celllayout.runtime)" version="0" />
     <module reference="24c96a96-b7a1-4f30-82da-0f8e279a2661(de.itemis.mps.editor.celllayout.styles)" version="0" />
@@ -123,6 +127,8 @@
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>
-  <extendedLanguages />
+  <extendedLanguages>
+    <extendedLanguage>e8a04d94-4307-4f88-95a2-25f7c4f39437(com.mbeddr.formal.safety.gsn)</extendedLanguage>
+  </extendedLanguages>
 </language>
 
