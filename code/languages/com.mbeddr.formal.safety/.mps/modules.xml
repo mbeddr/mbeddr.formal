@@ -40,6 +40,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae.ext/com.mbeddr.formal.safety.cae.ext.mpl" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae.external_evidence/com.mbeddr.formal.safety.cae.external_evidence.mpl" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae/com.mbeddr.formal.safety.cae.mpl" folder="gsn._010_base" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.genai/com.mbeddr.formal.safety.genai.mpl" folder="gsn._200_genai" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.confidence.acp/com.mbeddr.formal.safety.gsn.confidence.acp.mpl" folder="gsn._040_confidence" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.confidence.dempster_shafer/com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.mpl" folder="gsn._040_confidence" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.doc/com.mbeddr.formal.safety.gsn.doc.mpl" folder="gsn._020_doc" />
