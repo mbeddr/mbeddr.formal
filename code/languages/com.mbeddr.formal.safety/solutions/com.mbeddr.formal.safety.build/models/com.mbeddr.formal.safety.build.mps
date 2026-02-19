@@ -3696,35 +3696,6 @@
             </node>
           </node>
         </node>
-        <node concept="1yeLz9" id="3fV34643k5p" role="1TViLv">
-          <property role="TrG5h" value="com.symo.plantuml.generator" />
-          <property role="3LESm3" value="a57cbb55-8fec-4326-ad52-8822ceb60e64" />
-          <node concept="1BupzO" id="3fV34643k5B" role="3bR31x">
-            <property role="3ZfqAx" value="generator/templates" />
-            <property role="1Hdu6h" value="true" />
-            <property role="1HemKv" value="true" />
-            <node concept="3LXTmp" id="3fV34643k5C" role="1HemKq">
-              <node concept="398BVA" id="3fV34643k5q" role="3LXTmr">
-                <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
-                <node concept="2Ry0Ak" id="3fV34643k5r" role="iGT6I">
-                  <property role="2Ry0Am" value="languages" />
-                  <node concept="2Ry0Ak" id="3fV34643k5s" role="2Ry0An">
-                    <property role="2Ry0Am" value="com.symo.plantuml" />
-                    <node concept="2Ry0Ak" id="3fV34643k5t" role="2Ry0An">
-                      <property role="2Ry0Am" value="generator" />
-                      <node concept="2Ry0Ak" id="3fV34643k5u" role="2Ry0An">
-                        <property role="2Ry0Am" value="templates" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3qWCbU" id="3fV34643k5D" role="3LXTna">
-                <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="1SiIV0" id="3fV34643nuK" role="3bR37C">
           <node concept="3bR9La" id="3fV34643nuL" role="1SiIV1">
             <ref role="3bR37D" node="3fV34643kGS" resolve="com.symo.plantuml.lib" />
