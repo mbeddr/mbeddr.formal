@@ -5285,7 +5285,7 @@
             <node concept="2OqwBi" id="7s0Rn3OKT7N" role="2Oq$k0">
               <node concept="13iPFW" id="7s0Rn3OKT7O" role="2Oq$k0" />
               <node concept="3Tsc0h" id="7s0Rn3OKT7P" role="2OqNvi">
-                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
               </node>
             </node>
             <node concept="v3k3i" id="7s0Rn3OKT7Q" role="2OqNvi">
