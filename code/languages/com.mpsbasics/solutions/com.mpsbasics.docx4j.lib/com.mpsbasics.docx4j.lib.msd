@@ -39,6 +39,7 @@
       <sourceRoot path="${module}/lib/xalan-serializer.jar" />
       <sourceRoot path="${module}/lib/xmlgraphics-commons.jar" />
     </modelRoot>
+    <modelRoot type="java_classes" contentPath="${module}/lib" />
   </models>
   <facets>
     <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">
