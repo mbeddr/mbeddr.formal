@@ -39,14 +39,6 @@
       <sourceRoot path="${module}/lib/xalan-serializer.jar" />
       <sourceRoot path="${module}/lib/xmlgraphics-commons.jar" />
     </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="angus-activation.jar" />
-      <sourceRoot location="angus-mail.jar" />
-      <sourceRoot location="commons-logging.jar" />
-      <sourceRoot location="jaxb-core.jar" />
-      <sourceRoot location="jaxb-xjc.jar" />
-      <sourceRoot location="pdfbox-io.jar" />
-    </modelRoot>
   </models>
   <facets>
     <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">
