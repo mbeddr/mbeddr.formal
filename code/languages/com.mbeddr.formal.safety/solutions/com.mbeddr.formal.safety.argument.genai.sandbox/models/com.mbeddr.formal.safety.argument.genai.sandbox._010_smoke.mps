@@ -8,6 +8,7 @@
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <use id="e8a04d94-4307-4f88-95a2-25f7c4f39437" name="com.mbeddr.formal.safety.gsn" version="3" />
     <use id="7f01a836-f049-4bcd-b088-277c30f5a7be" name="com.mbeddr.formal.safety.argument.genai" version="0" />
+    <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
   </languages>
   <imports />
   <registry>
@@ -24,18 +25,33 @@
         <property id="2557074442922438158" name="escapedValue" index="19SUeA" />
       </concept>
     </language>
-    <language id="d3a0fd26-445a-466c-900e-10444ddfed52" name="com.mbeddr.mpsutil.filepicker">
-      <concept id="6156524541422549000" name="com.mbeddr.mpsutil.filepicker.structure.AbstractPicker" flags="ng" index="3N1QpV">
-        <property id="6156524541422553710" name="path" index="3N1Lgt" />
+    <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ngI" index="8gIbR">
+        <property id="3226630706269685486" name="id" index="0lsPA" />
       </concept>
-      <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ngI" index="8gIbW">
+        <child id="9102875167978228305" name="hazards" index="8gIbH" />
+      </concept>
+      <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc">
+        <child id="7926133672145657778" name="losses" index="3Zv_sA" />
+      </concept>
+      <concept id="9102875167978180681" name="com.mbeddr.formal.safety.hara.structure.HazardsList" flags="ng" index="8gVzP" />
+      <concept id="2626862697025835302" name="com.mbeddr.formal.safety.hara.structure.Losses" flags="ng" index="2HxQMi">
+        <child id="2626862697025835303" name="losses" index="2HxQMj" />
+      </concept>
+      <concept id="2626862697025835278" name="com.mbeddr.formal.safety.hara.structure.Loss" flags="ng" index="2HxQMU">
+        <property id="2626862697025835281" name="id" index="2HxQM_" />
+      </concept>
+      <concept id="7926133672145657758" name="com.mbeddr.formal.safety.hara.structure.LossRef" flags="ng" index="3Zv_sa">
+        <reference id="7926133672145657759" name="loss" index="3Zv_sb" />
+      </concept>
     </language>
     <language id="e49ae71b-b7a6-4321-84b6-ac9a82e13853" name="com.mpsbasics.genai">
+      <concept id="8575097167727037827" name="com.mpsbasics.genai.structure.GenericNamedRootNode" flags="ng" index="23Pd3N">
+        <reference id="8575097167727052075" name="nodeRef" index="23P9xr" />
+      </concept>
       <concept id="8170409784576026253" name="com.mpsbasics.genai.structure.KnowledgeBase" flags="ng" index="1Yp8r$">
         <child id="8170409784576652548" name="entries" index="1YsxlH" />
-      </concept>
-      <concept id="8170409784576029776" name="com.mpsbasics.genai.structure.PdfDocument" flags="ng" index="1Yp9gT">
-        <child id="8170409784576031185" name="location" index="1Yp9AS" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -95,10 +111,8 @@
   </registry>
   <node concept="1Yp8r$" id="75z86$f4j93">
     <property role="TrG5h" value="pacemaker_documents" />
-    <node concept="1Yp9gT" id="75z86$f4vb4" role="1YsxlH">
-      <node concept="3NXOOs" id="3sHd1L7A1vh" role="1Yp9AS">
-        <property role="3N1Lgt" value="docs/pacemaker/living_with_pacemaker.pdf" />
-      </node>
+    <node concept="23Pd3N" id="7s0Rn3OR6iq" role="1YsxlH">
+      <ref role="23P9xr" node="7s0Rn3OR7jU" resolve="Pacemaker Hazards List" />
     </node>
   </node>
   <node concept="2vn7XN" id="2FBIZ0So8wu">
@@ -107,7 +121,7 @@
     <node concept="2vn7WC" id="2FBIZ0So8wG" role="2vn1q5">
       <property role="TrG5h" value="G1" />
       <node concept="19SGf9" id="2FBIZ0So8wH" role="2vnaTY">
-        <node concept="19SUe$" id="3sHd1L7A79P" role="19SJt6">
+        <node concept="19SUe$" id="7s0Rn3OREc3" role="19SJt6">
           <property role="19SUeA" value="The pacemaker is safe to operate&#10;in the given environment." />
         </node>
       </node>
@@ -116,7 +130,7 @@
       <node concept="37mRIm" id="2FBIZ0So8x1" role="37mRID">
         <property role="37mO49" value="3091646309625530412" />
         <node concept="gqqVs" id="2FBIZ0So8wZ" role="37mO4d">
-          <property role="gqqTZ" value="541.0" />
+          <property role="gqqTZ" value="12.0" />
           <property role="gqqTW" value="12.000100000000003" />
           <property role="gqqTX" value="186.0" />
           <property role="gqqTy" value="66.0" />
@@ -136,7 +150,7 @@
       <node concept="37mRIm" id="2FBIZ0So8zD" role="37mRID">
         <property role="37mO49" value="3091646309625530575" />
         <node concept="gqqVs" id="2FBIZ0So8zC" role="37mO4d">
-          <property role="gqqTZ" value="558.0" />
+          <property role="gqqTZ" value="29.0" />
           <property role="gqqTW" value="96.00029836425782" />
           <property role="gqqTX" value="152.0" />
           <property role="gqqTy" value="48.0" />
@@ -1543,11 +1557,108 @@
           </node>
         </node>
       </node>
+      <node concept="37mRIm" id="7s0Rn3ORD$3" role="37mRID">
+        <property role="37mO49" value="8575097167727724677" />
+        <node concept="gqqVs" id="7s0Rn3ORD$2" role="37mO4d">
+          <property role="gqqTZ" value="526.0" />
+          <property role="gqqTW" value="182.00049672851563" />
+          <property role="gqqTX" value="185.0" />
+          <property role="gqqTy" value="64.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="7s0Rn3ORD$5" role="37mRID">
+        <property role="37mO49" value="8575097167727724682" />
+        <node concept="gqqVs" id="7s0Rn3ORD$4" role="37mO4d">
+          <property role="gqqTZ" value="375.0" />
+          <property role="gqqTW" value="182.00049672851563" />
+          <property role="gqqTX" value="131.0" />
+          <property role="gqqTy" value="82.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="7s0Rn3ORD$7" role="37mRID">
+        <property role="37mO49" value="8575097167727724687" />
+        <node concept="gqqVs" id="7s0Rn3ORD$6" role="37mO4d">
+          <property role="gqqTZ" value="182.0" />
+          <property role="gqqTW" value="182.00049672851563" />
+          <property role="gqqTX" value="173.0" />
+          <property role="gqqTy" value="82.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="7s0Rn3ORD$9" role="37mRID">
+        <property role="37mO49" value="8575097167727724692" />
+        <node concept="gqqVs" id="7s0Rn3ORD$8" role="37mO4d">
+          <property role="gqqTZ" value="29.0" />
+          <property role="gqqTW" value="162.00049672851563" />
+          <property role="gqqTX" value="150.0" />
+          <property role="gqqTy" value="82.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="7s0Rn3ORD$b" role="37mRID">
+        <property role="37mO49" value="8575097167727724697" />
+        <node concept="gqqVs" id="7s0Rn3ORD$a" role="37mO4d">
+          <property role="gqqTZ" value="731.0" />
+          <property role="gqqTW" value="182.00049672851563" />
+          <property role="gqqTX" value="141.0" />
+          <property role="gqqTy" value="82.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="7s0Rn3ORD$d" role="37mRID">
+        <property role="37mO49" value="8575097167727724680" />
+        <node concept="2VclpC" id="7s0Rn3ORD$c" role="37mO4d">
+          <node concept="2VclrF" id="7s0Rn3ORDYI" role="2Vcluh">
+            <property role="2Vclpx" value="441.50005" />
+            <property role="2Vclpz" value="162.00039672851562" />
+          </node>
+          <node concept="2VclrF" id="7s0Rn3ORDYJ" role="2Vcluh">
+            <property role="2Vclpx" value="619.50005" />
+            <property role="2Vclpz" value="162.00039672851562" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="7s0Rn3ORD$f" role="37mRID">
+        <property role="37mO49" value="8575097167727724685" />
+        <node concept="2VclpC" id="7s0Rn3ORD$e" role="37mO4d" />
+      </node>
+      <node concept="37mRIm" id="7s0Rn3ORD$h" role="37mRID">
+        <property role="37mO49" value="8575097167727724690" />
+        <node concept="2VclpC" id="7s0Rn3ORD$g" role="37mO4d">
+          <node concept="2VclrF" id="7s0Rn3ORDYK" role="2Vcluh">
+            <property role="2Vclpx" value="441.50005" />
+            <property role="2Vclpz" value="162.00039672851562" />
+          </node>
+          <node concept="2VclrF" id="7s0Rn3ORDYL" role="2Vcluh">
+            <property role="2Vclpx" value="269.50005" />
+            <property role="2Vclpz" value="162.00039672851562" />
+          </node>
+        </node>
+      </node>
+      <node concept="37mRIm" id="7s0Rn3ORD$j" role="37mRID">
+        <property role="37mO49" value="8575097167727724695" />
+        <node concept="2VclpC" id="7s0Rn3ORD$i" role="37mO4d" />
+      </node>
+      <node concept="37mRIm" id="7s0Rn3ORD$l" role="37mRID">
+        <property role="37mO49" value="8575097167727724700" />
+        <node concept="2VclpC" id="7s0Rn3ORD$k" role="37mO4d">
+          <node concept="2VclrF" id="7s0Rn3ORDYO" role="2Vcluh">
+            <property role="2Vclpx" value="441.50005" />
+            <property role="2Vclpz" value="162.00039672851562" />
+          </node>
+          <node concept="2VclrF" id="7s0Rn3ORDYP" role="2Vcluh">
+            <property role="2Vclpx" value="802.50005" />
+            <property role="2Vclpz" value="162.00039672851562" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2vmxQI" id="2FBIZ0So8zf" role="2vn1q5">
       <property role="TrG5h" value="Str1" />
       <node concept="19SGf9" id="2FBIZ0So8zg" role="2vnaTY">
-        <node concept="19SUe$" id="3sHd1L7A79R" role="19SJt6">
+        <node concept="19SUe$" id="7s0Rn3OREc5" role="19SJt6">
           <property role="19SUeA" value="Argument over hazards." />
         </node>
       </node>
@@ -1556,80 +1667,106 @@
       <ref role="3VeSjP" node="2FBIZ0So8wG" resolve="G1" />
       <ref role="3VeSjQ" node="2FBIZ0So8zf" resolve="Str1" />
     </node>
-    <node concept="2vn7WC" id="3sHd1L7A70z" role="2vn1q5">
+    <node concept="2vn7WC" id="7s0Rn3OT_Fh" role="2vn1q5">
       <property role="TrG5h" value="G2" />
-      <node concept="19SGf9" id="3sHd1L7A70$" role="2vnaTY">
-        <node concept="19SUe$" id="3sHd1L7A79T" role="19SJt6">
-          <property role="19SUeA" value="The pacemaker functions properly&#10;in the presence of common household&#10;electrical appliances." />
+      <node concept="19SGf9" id="7s0Rn3OT_Fi" role="2vnaTY">
+        <node concept="19SUe$" id="7s0Rn3OT_Fj" role="19SJt6">
+          <property role="19SUeA" value="The pacemaker's pulse frequency is accurately calibrated to prevent patient injury." />
         </node>
       </node>
-      <node concept="1KgxBZ" id="3sHd1L7A70B" role="2U2l5M">
-        <property role="1Kgw3o" value="living_with_pacemaker.pdf-page_33" />
+      <node concept="1KgxBZ" id="7s0Rn3OT_Fl" role="2U2l5M">
+        <property role="1Kgw3o" value="Pacemaker Hazards List" />
       </node>
     </node>
-    <node concept="3VeUTF" id="3sHd1L7A70A" role="2vhqc$">
+    <node concept="3VeUTF" id="7s0Rn3OT_Fk" role="2vhqc$">
       <ref role="3VeSjP" node="2FBIZ0So8zf" resolve="Str1" />
-      <ref role="3VeSjQ" node="3sHd1L7A70z" resolve="G2" />
+      <ref role="3VeSjQ" node="7s0Rn3OT_Fh" resolve="G2" />
     </node>
-    <node concept="2vn7WC" id="3sHd1L7A70C" role="2vn1q5">
+    <node concept="2vn7WC" id="7s0Rn3OT_Fm" role="2vn1q5">
       <property role="TrG5h" value="G3" />
-      <node concept="19SGf9" id="3sHd1L7A70D" role="2vnaTY">
-        <node concept="19SUe$" id="3sHd1L7A79V" role="19SJt6">
-          <property role="19SUeA" value="The pacemaker is designed to withstand&#10;electromagnetic interference from typical sources." />
+      <node concept="19SGf9" id="7s0Rn3OT_Fn" role="2vnaTY">
+        <node concept="19SUe$" id="7s0Rn3OT_Fo" role="19SJt6">
+          <property role="19SUeA" value="Regular testing and maintenance procedures are implemented to ensure correct pulse frequency." />
         </node>
       </node>
-      <node concept="1KgxBZ" id="3sHd1L7A70G" role="2U2l5M">
-        <property role="1Kgw3o" value="living_with_pacemaker.pdf-page_30" />
+      <node concept="1KgxBZ" id="7s0Rn3OT_Fq" role="2U2l5M">
+        <property role="1Kgw3o" value="Pacemaker Hazards List" />
       </node>
     </node>
-    <node concept="3VeUTF" id="3sHd1L7A70F" role="2vhqc$">
+    <node concept="3VeUTF" id="7s0Rn3OT_Fp" role="2vhqc$">
       <ref role="3VeSjP" node="2FBIZ0So8zf" resolve="Str1" />
-      <ref role="3VeSjQ" node="3sHd1L7A70C" resolve="G3" />
+      <ref role="3VeSjQ" node="7s0Rn3OT_Fm" resolve="G3" />
     </node>
-    <node concept="2vn7WC" id="3sHd1L7A70H" role="2vn1q5">
+    <node concept="2vn7WC" id="7s0Rn3OT_Fr" role="2vn1q5">
       <property role="TrG5h" value="G4" />
-      <node concept="19SGf9" id="3sHd1L7A70I" role="2vnaTY">
-        <node concept="19SUe$" id="3sHd1L7A79X" role="19SJt6">
-          <property role="19SUeA" value="Patients with pacemakers can safely&#10;travel and pass through airport security&#10;without device interference." />
+      <node concept="19SGf9" id="7s0Rn3OT_Fs" role="2vnaTY">
+        <node concept="19SUe$" id="7s0Rn3OT_Ft" role="19SJt6">
+          <property role="19SUeA" value="All personnel operating the pacemaker are trained to recognize and address pulse frequency issues." />
         </node>
       </node>
-      <node concept="1KgxBZ" id="3sHd1L7A70L" role="2U2l5M">
-        <property role="1Kgw3o" value="living_with_pacemaker.pdf-page_36" />
+      <node concept="1KgxBZ" id="7s0Rn3OT_Fv" role="2U2l5M">
+        <property role="1Kgw3o" value="Pacemaker Hazards List" />
       </node>
     </node>
-    <node concept="3VeUTF" id="3sHd1L7A70K" role="2vhqc$">
+    <node concept="3VeUTF" id="7s0Rn3OT_Fu" role="2vhqc$">
       <ref role="3VeSjP" node="2FBIZ0So8zf" resolve="Str1" />
-      <ref role="3VeSjQ" node="3sHd1L7A70H" resolve="G4" />
+      <ref role="3VeSjQ" node="7s0Rn3OT_Fr" resolve="G4" />
     </node>
-    <node concept="2vn7WC" id="3sHd1L7A70M" role="2vn1q5">
+    <node concept="2vn7WC" id="7s0Rn3OT_Fw" role="2vn1q5">
       <property role="TrG5h" value="G5" />
-      <node concept="19SGf9" id="3sHd1L7A70N" role="2vnaTY">
-        <node concept="19SUe$" id="3sHd1L7A79Z" role="19SJt6">
-          <property role="19SUeA" value="The pacemaker maintains functionality&#10;during common medical procedures that&#10;do not involve contraindications." />
+      <node concept="19SGf9" id="7s0Rn3OT_Fx" role="2vnaTY">
+        <node concept="19SUe$" id="7s0Rn3OT_Fy" role="19SJt6">
+          <property role="19SUeA" value="The pacemaker includes built-in alerts for pulse frequency abnormalities to prevent patient injury." />
         </node>
       </node>
-      <node concept="1KgxBZ" id="3sHd1L7A70Q" role="2U2l5M">
-        <property role="1Kgw3o" value="living_with_pacemaker.pdf-page_36" />
+      <node concept="1KgxBZ" id="7s0Rn3OT_F$" role="2U2l5M">
+        <property role="1Kgw3o" value="Pacemaker Hazards List" />
       </node>
     </node>
-    <node concept="3VeUTF" id="3sHd1L7A70P" role="2vhqc$">
+    <node concept="3VeUTF" id="7s0Rn3OT_Fz" role="2vhqc$">
       <ref role="3VeSjP" node="2FBIZ0So8zf" resolve="Str1" />
-      <ref role="3VeSjQ" node="3sHd1L7A70M" resolve="G5" />
+      <ref role="3VeSjQ" node="7s0Rn3OT_Fw" resolve="G5" />
     </node>
-    <node concept="2vn7WC" id="3sHd1L7A70R" role="2vn1q5">
-      <property role="TrG5h" value="G6" />
-      <node concept="19SGf9" id="3sHd1L7A70S" role="2vnaTY">
-        <node concept="19SUe$" id="3sHd1L7A7a1" role="19SJt6">
-          <property role="19SUeA" value="The risk of complications or&#10;malfunctions is low when the&#10;pacemaker is properly monitored." />
-        </node>
-      </node>
-      <node concept="1KgxBZ" id="3sHd1L7A70V" role="2U2l5M">
-        <property role="1Kgw3o" value="living_with_pacemaker.pdf-page_27" />
+  </node>
+  <node concept="8gVzP" id="7s0Rn3OR7jU">
+    <property role="TrG5h" value="Pacemaker Hazards List" />
+    <node concept="8gVzc" id="7s0Rn3OR7jV" role="8gIbH">
+      <property role="0lsPA" value="HAZ01" />
+      <property role="TrG5h" value="Electrical malfunctioning" />
+      <node concept="3Zv_sa" id="7s0Rn3ORa_t" role="3Zv_sA">
+        <ref role="3Zv_sb" node="7s0Rn3ORd2C" resolve="Patient injury" />
       </node>
     </node>
-    <node concept="3VeUTF" id="3sHd1L7A70U" role="2vhqc$">
-      <ref role="3VeSjP" node="2FBIZ0So8zf" resolve="Str1" />
-      <ref role="3VeSjQ" node="3sHd1L7A70R" resolve="G6" />
+    <node concept="8gVzc" id="7s0Rn3ORiLh" role="8gIbH">
+      <property role="0lsPA" value="HAZ02" />
+      <property role="TrG5h" value="Incorrect pulse timing" />
+      <node concept="3Zv_sa" id="7s0Rn3ORkOh" role="3Zv_sA">
+        <ref role="3Zv_sb" node="7s0Rn3ORaM_" resolve="Patient stress" />
+      </node>
+      <node concept="3Zv_sa" id="7s0Rn3ORiLi" role="3Zv_sA">
+        <ref role="3Zv_sb" node="7s0Rn3ORd2C" resolve="Patient injury" />
+      </node>
+    </node>
+    <node concept="8gVzc" id="7s0Rn3ORiYp" role="8gIbH">
+      <property role="0lsPA" value="HAZ03" />
+      <property role="TrG5h" value="Incorrect pulse frequency" />
+      <node concept="3Zv_sa" id="7s0Rn3ORnuw" role="3Zv_sA">
+        <ref role="3Zv_sb" node="7s0Rn3ORaM_" resolve="Patient stress" />
+      </node>
+      <node concept="3Zv_sa" id="7s0Rn3ORiYq" role="3Zv_sA">
+        <ref role="3Zv_sb" node="7s0Rn3ORd2C" resolve="Patient injury" />
+      </node>
+    </node>
+  </node>
+  <node concept="2HxQMi" id="7s0Rn3ORaM$">
+    <property role="TrG5h" value="Pacemaker Losses" />
+    <node concept="2HxQMU" id="7s0Rn3ORaM_" role="2HxQMj">
+      <property role="2HxQM_" value="L01" />
+      <property role="TrG5h" value="Patient stress" />
+    </node>
+    <node concept="2HxQMU" id="7s0Rn3ORd2C" role="2HxQMj">
+      <property role="2HxQM_" value="L02" />
+      <property role="TrG5h" value="Patient injury" />
     </node>
   </node>
 </model>
