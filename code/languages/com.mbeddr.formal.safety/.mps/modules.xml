@@ -29,7 +29,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hazop/com.fasten.safety.hazop.mpl" folder="hara.hazop" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops.arch/com.fasten.safety.hiphops.arch.mpl" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/languages/com.fasten.safety.hiphops/com.fasten.safety.hiphops.mpl" folder="fmea_hiphops" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.genai/com.mbeddr.formal.safety.argument.genai.mpl" folder="gsn._200_genai" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.genai/com.mbeddr.formal.safety.argument.genai.mpl" folder="genai" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.jira_integration/com.mbeddr.formal.safety.argument.jira_integration.mpl" folder="gsn._030_process" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.modelquery/com.mbeddr.formal.safety.argument.modelquery.mpl" folder="gsn._050_modelquery" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.argument.process.artefacts/com.mbeddr.formal.safety.argument.process.artefacts.mpl" folder="gsn._030_process" />
@@ -40,7 +40,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae.ext/com.mbeddr.formal.safety.cae.ext.mpl" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae.external_evidence/com.mbeddr.formal.safety.cae.external_evidence.mpl" folder="gsn._010_base" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.cae/com.mbeddr.formal.safety.cae.mpl" folder="gsn._010_base" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.genai/com.mbeddr.formal.safety.genai.mpl" folder="gsn._200_genai" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.genai/com.mbeddr.formal.safety.genai.mpl" folder="genai" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.confidence.acp/com.mbeddr.formal.safety.gsn.confidence.acp.mpl" folder="gsn._040_confidence" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.confidence.dempster_shafer/com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.mpl" folder="gsn._040_confidence" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.formal.safety.gsn.doc/com.mbeddr.formal.safety.gsn.doc.mpl" folder="gsn._020_doc" />
@@ -73,8 +73,8 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hazop.sandbox/com.fasten.safety.hazop.sandbox.msd" folder="hara.hazop" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.hiphops.sandbox/com.fasten.safety.hiphops.sandbox.msd" folder="fmea_hiphops" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.safety.rcp.pluginSolution/com.fasten.safety.rcp.pluginSolution.msd" folder="rcp" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.genai.pluginSolution/com.mbeddr.formal.safety.argument.genai.pluginSolution.msd" folder="gsn._200_genai" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.genai.sandbox/com.mbeddr.formal.safety.argument.genai.sandbox.msd" folder="gsn._200_genai" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.genai.pluginSolution/com.mbeddr.formal.safety.argument.genai.pluginSolution.msd" folder="genai" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.genai.sandbox/com.mbeddr.formal.safety.argument.genai.sandbox.msd" folder="genai" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.process.sandbox/com.mbeddr.formal.safety.argument.process.sandbox.msd" folder="gsn._030_process" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.runtime.pluginSolution/com.mbeddr.formal.safety.argument.runtime.pluginSolution.msd" folder="gsn._060_runtime" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.formal.safety.argument.runtime.sandbox/com.mbeddr.formal.safety.argument.runtime.sandbox.msd" folder="gsn._060_runtime" />
