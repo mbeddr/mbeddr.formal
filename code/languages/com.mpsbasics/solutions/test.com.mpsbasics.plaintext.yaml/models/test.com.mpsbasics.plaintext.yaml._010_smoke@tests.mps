@@ -174,6 +174,9 @@
       <concept id="3755776786380611380" name="com.mpsbasics.plaintext.yaml.structure.Semicolon" flags="ng" index="2zKeKy" />
       <concept id="3755776786380611387" name="com.mpsbasics.plaintext.yaml.structure.Comma" flags="ng" index="2zKeKH" />
       <concept id="3755776786380535516" name="com.mpsbasics.plaintext.yaml.structure.OpenParens" flags="ng" index="2zKona" />
+      <concept id="6149161506485890547" name="com.mpsbasics.plaintext.yaml.structure.MultipleSpaces" flags="ng" index="DNHwW">
+        <property id="6149161506485972337" name="spaces" index="DN1yY" />
+      </concept>
       <concept id="3641777788415793204" name="com.mpsbasics.plaintext.yaml.structure.ScalarValue" flags="ng" index="2RT6AI">
         <property id="3641777788415793206" name="text" index="2RT6AG" />
       </concept>
@@ -555,14 +558,16 @@
         </node>
         <node concept="2zKeKy" id="7gE2YMAnhfw" role="3tkPS6" />
         <node concept="3tjRCR" id="5AI9Uvu2$w$" role="3tkPS6" />
-        <node concept="3tkPS2" id="5AI9Uvu2$wN" role="3tkPS6" />
-        <node concept="3tkPS2" id="5AI9Uvu2$wO" role="3tkPS6" />
+        <node concept="DNHwW" id="6EHIQdHsYdh" role="3tkPS6">
+          <property role="DN1yY" value="  " />
+        </node>
         <node concept="3tmvi$" id="3YAmJdZoJ65" role="3tkPS6">
           <property role="3tmviA" value=" second comment " />
         </node>
         <node concept="3tjRCR" id="5AI9Uvu2$wS" role="3tkPS6" />
-        <node concept="3tkPS2" id="3YAmJdZn4dJ" role="3tkPS6" />
-        <node concept="3tkPS2" id="3YAmJdZn6Lo" role="3tkPS6" />
+        <node concept="DNHwW" id="6EHIQdHsZ84" role="3tkPS6">
+          <property role="DN1yY" value="  " />
+        </node>
         <node concept="3tmviy" id="3YAmJdZn6Z4" role="3tkPS6">
           <property role="3tmlXF" value="key_2" />
         </node>
@@ -591,8 +596,9 @@
         </node>
         <node concept="2zKeKy" id="7gE2YMAnhzh" role="3tkPS6" />
         <node concept="3tjRCR" id="7gE2YMAn5bJ" role="3tkPS6" />
-        <node concept="3tkPS2" id="7gE2YMAn5bK" role="3tkPS6" />
-        <node concept="3tkPS2" id="7gE2YMAn5bL" role="3tkPS6" />
+        <node concept="DNHwW" id="6EHIQdHsZcA" role="3tkPS6">
+          <property role="DN1yY" value="  " />
+        </node>
         <node concept="3tmvi$" id="7gE2YMAn5bM" role="3tkPS6">
           <property role="3tmviA" value="comment inside some_key" />
         </node>
@@ -1158,8 +1164,9 @@
             <node concept="2zKeKy" id="3gvcLqnWwrx" role="3tkPS6" />
             <node concept="3tkPS2" id="3gvcLqnWwry" role="3tkPS6" />
             <node concept="3tjRCR" id="3gvcLqnWwrz" role="3tkPS6" />
-            <node concept="3tkPS2" id="3gvcLqnWwr$" role="3tkPS6" />
-            <node concept="3tkPS2" id="3gvcLqnWwr_" role="3tkPS6" />
+            <node concept="DNHwW" id="6EHIQdHtb4Q" role="3tkPS6">
+              <property role="DN1yY" value="  " />
+            </node>
             <node concept="2ZFrdy" id="3gvcLqnWwrA" role="3tkPS6">
               <node concept="2zKona" id="3gvcLqnWwrB" role="3tkPS6" />
               <node concept="3tkPS2" id="3gvcLqnWwrC" role="3tkPS6" />
@@ -1967,8 +1974,9 @@
         <node concept="3tkPS2" id="2NBvRaDsDge" role="3tkPS6" />
         <node concept="25_DUs" id="2NBvRaDsDjT" role="3tkPS6" />
         <node concept="3tjRCR" id="2NBvRaDsCbu" role="3tkPS6" />
-        <node concept="3tkPS2" id="2NBvRaDsCbv" role="3tkPS6" />
-        <node concept="3tkPS2" id="2NBvRaDsCbw" role="3tkPS6" />
+        <node concept="DNHwW" id="6EHIQdHt35r" role="3tkPS6">
+          <property role="DN1yY" value="  " />
+        </node>
         <node concept="3tmviy" id="2NBvRaDsDq0" role="3tkPS6">
           <property role="3tmlXF" value="first" />
         </node>
@@ -1977,8 +1985,9 @@
           <property role="3tmlXF" value="line" />
         </node>
         <node concept="3tjRCR" id="2NBvRaDsCby" role="3tkPS6" />
-        <node concept="3tkPS2" id="2NBvRaDsCbz" role="3tkPS6" />
-        <node concept="3tkPS2" id="2NBvRaDsCb$" role="3tkPS6" />
+        <node concept="DNHwW" id="6EHIQdHt36F" role="3tkPS6">
+          <property role="DN1yY" value="  " />
+        </node>
         <node concept="3tmviy" id="2NBvRaDsDGo" role="3tkPS6">
           <property role="3tmlXF" value="second" />
         </node>
@@ -1987,7 +1996,9 @@
           <property role="3tmlXF" value="line" />
         </node>
         <node concept="3tjRCR" id="2NBvRaDsCbE" role="3tkPS6" />
-        <node concept="3tkPS2" id="2NBvRaDtTXk" role="3tkPS6" />
+        <node concept="DNHwW" id="6EHIQdHt6_T" role="3tkPS6">
+          <property role="DN1yY" value="  " />
+        </node>
         <node concept="3xLA65" id="2NBvRaDsCbF" role="lGtFl">
           <property role="TrG5h" value="_030_simple_pipe" />
         </node>
