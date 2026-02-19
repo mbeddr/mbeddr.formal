@@ -1136,12 +1136,8 @@
         </node>
         <node concept="1SiIV0" id="6hyv0iVPlHC" role="3bR37C">
           <node concept="3bR9La" id="6hyv0iVPlUu" role="1SiIV1">
+            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="6hyv0iVPlHD" role="3bR37C">
-          <node concept="3bR9La" id="6hyv0iVPlUv" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1TaHNgiHrmy" resolve="jetbrains.mps.java.stub" />
           </node>
         </node>
         <node concept="3rtmxn" id="6hyv0iVPlIc" role="3bR31x">
