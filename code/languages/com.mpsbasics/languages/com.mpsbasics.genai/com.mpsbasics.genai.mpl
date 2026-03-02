@@ -63,6 +63,8 @@
     <module reference="b5c0bb04-c583-4b2a-a66e-1eab92d33c68(com.mbeddr.mpsutil.json)" version="0" />
     <module reference="e49ae71b-b7a6-4321-84b6-ac9a82e13853(com.mpsbasics.genai)" version="0" />
     <module reference="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43(com.mpsbasics.langchain4j)" version="0" />
+    <module reference="8da51702-0e05-44c8-96db-8f11d1457c0c(com.mpsbasics.snode.utils)" version="0" />
+    <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="a9e4c532-c5f5-4bb7-99ef-42abb73bbb70(jetbrains.mps.lang.descriptor.aspects)" version="0" />
   </dependencyVersions>

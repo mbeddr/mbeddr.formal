@@ -10,9 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <dependencies>
-    <dependency reexport="false">7a642ffb-bd05-4e8c-b81a-08fde9a204ba(com.mbeddr.formal.safety.tutorial)</dependency>
-  </dependencies>
   <languageVersions>
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:7f01a836-f049-4bcd-b088-277c30f5a7be:com.mbeddr.formal.safety.argument.genai" version="0" />
