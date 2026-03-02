@@ -623,7 +623,7 @@
         <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" resolve="jetbrains.mps.trove" />
       </node>
       <node concept="m$_yC" id="5xR2VPu2qTq" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:6Hpa5co69BH" />
+        <ref role="m$_y1" to="ffeo:6Hpa5co69BH" resolve="jetbrains.mps.editor.tooltips" />
       </node>
     </node>
     <node concept="m$_wf" id="7a7$evTWB8g" role="3989C9">
