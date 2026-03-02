@@ -43,8 +43,6 @@
     <module reference="39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)" version="0" />
     <module reference="4556fd77-6edd-4716-8b05-e35fd684d04d(com.mpsbasics.plaintext.yaml)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
-    <module reference="99d83454-b804-4398-bbcb-66f327ff819b(tech.cariad.arche.platform.codeowners)" version="0" />
-    <module reference="db43f37c-62f3-48fe-bc20-b66d850662bd(tech.cariad.arche.platform.codeowners.solutions)" version="0" />
     <module reference="dddc4dbe-91d7-47f4-bbf2-95bb56c2c5fa(test.com.mpsbasics.plaintext.yaml)" version="0" />
   </dependencyVersions>
 </solution>
