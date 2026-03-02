@@ -234,12 +234,12 @@
             <node concept="17QB3L" id="25QeXKbhLLN" role="1tU5fm" />
             <node concept="2YIFZM" id="25QeXKbhLZq" role="33vP2m">
               <ref role="37wK5l" to="pnrk:25QeXKbgnrz" resolve="doPrompt" />
-              <ref role="1Pybhc" to="pnrk:25QeXKbgkX1" resolve="Prompter" />
+              <ref role="1Pybhc" to="pnrk:25QeXKbgkX1" resolve="GsnPrompter" />
               <node concept="37vLTw" id="25QeXKbllf$" role="37wK5m">
-                <ref role="3cqZAo" node="25QeXKbllfu" resolve="ancestor" />
+                <ref role="3cqZAo" node="25QeXKbllfu" resolve="myGs" />
               </node>
               <node concept="37vLTw" id="25QeXKbqim8" role="37wK5m">
-                <ref role="3cqZAo" node="25QeXKbqim6" resolve="string" />
+                <ref role="3cqZAo" node="25QeXKbqim6" resolve="prompt" />
               </node>
             </node>
           </node>
@@ -434,7 +434,7 @@
             <node concept="17QB3L" id="75z86$f1M4h" role="1tU5fm" />
             <node concept="3cpWs3" id="75z86$f37EQ" role="33vP2m">
               <node concept="37vLTw" id="75z86$f4aQj" role="3uHU7w">
-                <ref role="3cqZAo" node="75z86$f47Cr" resolve="valueToString" />
+                <ref role="3cqZAo" node="75z86$f47Cr" resolve="jsonObjectString" />
               </node>
               <node concept="Xl_RD" id="75z86$f32eM" role="3uHU7B">
                 <property role="Xl_RC" value="Consider the information contained in the following document given as JSON object " />
@@ -576,7 +576,7 @@
             <node concept="17QB3L" id="75z86$f1M4p" role="1tU5fm" />
             <node concept="2YIFZM" id="75z86$f1M4q" role="33vP2m">
               <ref role="37wK5l" to="pnrk:25QeXKbgnrz" resolve="doPrompt" />
-              <ref role="1Pybhc" to="pnrk:25QeXKbgkX1" resolve="Prompter" />
+              <ref role="1Pybhc" to="pnrk:25QeXKbgkX1" resolve="GsnPrompter" />
               <node concept="37vLTw" id="75z86$f1M4r" role="37wK5m">
                 <ref role="3cqZAo" node="75z86$f1M48" resolve="myGs" />
               </node>

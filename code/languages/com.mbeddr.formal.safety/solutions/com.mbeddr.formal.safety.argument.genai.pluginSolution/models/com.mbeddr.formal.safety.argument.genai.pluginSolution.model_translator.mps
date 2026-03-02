@@ -364,7 +364,7 @@
         <node concept="3clFbF" id="25QeXKbdUMp" role="3cqZAp">
           <node concept="37vLTI" id="25QeXKbdWpu" role="3clFbG">
             <node concept="37vLTw" id="25QeXKbdX0T" role="37vLTx">
-              <ref role="3cqZAo" node="25QeXKbdHLm" resolve="array" />
+              <ref role="3cqZAo" node="25QeXKbdHLm" resolve="topObject" />
             </node>
             <node concept="2OqwBi" id="25QeXKbdVaR" role="37vLTJ">
               <node concept="37vLTw" id="25QeXKbdUMn" role="2Oq$k0">
@@ -1531,7 +1531,7 @@
                               </node>
                               <node concept="TSZUe" id="25QeXKbog8N" role="2OqNvi">
                                 <node concept="37vLTw" id="25QeXKbtA_9" role="25WWJ7">
-                                  <ref role="3cqZAo" node="25QeXKbtA$Y" resolve="node" />
+                                  <ref role="3cqZAo" node="25QeXKbtA$Y" resolve="newGoal" />
                                 </node>
                               </node>
                             </node>
