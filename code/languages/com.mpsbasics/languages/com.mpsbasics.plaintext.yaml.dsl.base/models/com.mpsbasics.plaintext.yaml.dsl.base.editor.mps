@@ -317,7 +317,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="5jnWVpEBCc5" role="3EZMnx">
-        <ref role="1NtTu8" to="bpzl:21lHZzX1IBY" />
+        <ref role="1NtTu8" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
         <node concept="l2Vlx" id="5jnWVpEBCc6" role="2czzBx" />
       </node>
       <node concept="1v6uyg" id="5jnWVpEBCc7" role="3EZMnx">
@@ -344,7 +344,7 @@
             <property role="Vb096" value="fLJRk5A/lightGray" />
           </node>
           <node concept="A1WHu" id="2pvZbP3IVCw" role="3vIgyS">
-            <ref role="A1WHt" node="7pXyrVpMDCG" />
+            <ref role="A1WHt" node="7pXyrVpMDCG" resolve="EndOfNodeMenu" />
           </node>
         </node>
       </node>
@@ -592,7 +592,7 @@
                       <ref role="3cqZAo" node="7pXyrVpUO3D" resolve="parentWhereTheNewNodeIsAdded" />
                     </node>
                     <node concept="3Tsc0h" id="7pXyrVpUtiL" role="2OqNvi">
-                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                     </node>
                   </node>
                   <node concept="TSZUe" id="7pXyrVpU$Bi" role="2OqNvi">
@@ -622,7 +622,7 @@
                           <ref role="3cqZAo" node="7pXyrVpUO3D" resolve="parentWhereTheNewNodeIsAdded" />
                         </node>
                         <node concept="3Tsc0h" id="2pvZbP3F6e3" role="2OqNvi">
-                          <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                          <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                         </node>
                       </node>
                       <node concept="v3k3i" id="2pvZbP3FqRW" role="2OqNvi">
@@ -733,7 +733,7 @@
                       <ref role="3cqZAo" node="7pXyrVpUO3D" resolve="parentWhereTheNewNodeIsAdded" />
                     </node>
                     <node concept="3Tsc0h" id="7pXyrVpUZ0A" role="2OqNvi">
-                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                     </node>
                   </node>
                   <node concept="TSZUe" id="7pXyrVpUZ0B" role="2OqNvi">
@@ -750,7 +750,7 @@
                       <ref role="3cqZAo" node="7pXyrVpUO3D" resolve="parentWhereTheNewNodeIsAdded" />
                     </node>
                     <node concept="3Tsc0h" id="7pXyrVpV6KH" role="2OqNvi">
-                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                      <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                     </node>
                   </node>
                   <node concept="TSZUe" id="7pXyrVpV6KI" role="2OqNvi">
@@ -807,7 +807,7 @@
         </node>
       </node>
       <node concept="3F2HdR" id="3aacpE5r_wS" role="3EZMnx">
-        <ref role="1NtTu8" to="bpzl:21lHZzX1IBY" />
+        <ref role="1NtTu8" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
         <node concept="l2Vlx" id="3aacpE5rI5K" role="2czzBx" />
       </node>
       <node concept="1v6uyg" id="5jnWVpE_UjB" role="3EZMnx">
@@ -835,7 +835,7 @@
             <property role="Vb096" value="fLJRk5A/lightGray" />
           </node>
           <node concept="A1WHu" id="7pXyrVpOM_l" role="3vIgyS">
-            <ref role="A1WHt" node="7pXyrVpMDCG" />
+            <ref role="A1WHt" node="7pXyrVpMDCG" resolve="EndOfNodeMenu" />
           </node>
         </node>
       </node>

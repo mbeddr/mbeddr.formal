@@ -44,7 +44,7 @@
     <property role="TrG5h" value="KnowledgeBase" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="knowledge base" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="75z86$f1UHu" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -60,7 +60,7 @@
     <property role="EcuMT" value="8170409784576029776" />
     <property role="TrG5h" value="PdfDocument" />
     <property role="34LRSv" value="pdf document" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="75z86$f1VBh" role="1TKVEi">
       <property role="IQ2ns" value="8170409784576031185" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -80,7 +80,7 @@
     <property role="TrG5h" value="GenericNamedRootNode" />
     <property role="34LRSv" value="root node" />
     <property role="R4oN_" value="a root node representing entry in the knowledge base" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7s0Rn3OP1Ry" role="PzmwI">
       <ref role="PrY4T" node="75z86$f230C" resolve="IKnowledgeBaseEntry" />
     </node>

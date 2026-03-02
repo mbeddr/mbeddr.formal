@@ -457,7 +457,7 @@
                           <node concept="2OqwBi" id="7s0Rn3OQ8Df" role="WxPPp">
                             <node concept="2OqwBi" id="7s0Rn3OQ8Dg" role="2Oq$k0">
                               <node concept="2GrUjf" id="7s0Rn3OQ8Dh" role="2Oq$k0">
-                                <ref role="2Gs0qQ" node="7s0Rn3OQ8CZ" resolve="ref" />
+                                <ref role="2Gs0qQ" node="7s0Rn3OQ8CZ" resolve="child" />
                               </node>
                               <node concept="liA8E" id="7s0Rn3OQ8Di" role="2OqNvi">
                                 <ref role="37wK5l" to="mhbf:~SNode.getContainmentLink()" resolve="getContainmentLink" />
