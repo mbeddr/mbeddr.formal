@@ -1873,6 +1873,20 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="11wV9U8em2i" role="3cqZAp">
+          <node concept="2OqwBi" id="11wV9U8emcf" role="3clFbG">
+            <node concept="37vLTw" id="11wV9U8em2g" role="2Oq$k0">
+              <ref role="3cqZAo" node="3YAmJdZqK_F" resolve="options" />
+            </node>
+            <node concept="liA8E" id="11wV9U8emzu" role="2OqNvi">
+              <ref role="37wK5l" to="ihm2:~LoaderOptions.setCodePointLimit(int)" resolve="setCodePointLimit" />
+              <node concept="10M0yZ" id="11wV9U9loPK" role="37wK5m">
+                <ref role="3cqZAo" to="wyt6:~Integer.MAX_VALUE" resolve="MAX_VALUE" />
+                <ref role="1PxDUh" to="wyt6:~Integer" resolve="Integer" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbH" id="3YAmJdZqNdc" role="3cqZAp" />
         <node concept="3cpWs8" id="U7AKzhi$VB" role="3cqZAp">
           <node concept="3cpWsn" id="U7AKzhi$VC" role="3cpWs9">
