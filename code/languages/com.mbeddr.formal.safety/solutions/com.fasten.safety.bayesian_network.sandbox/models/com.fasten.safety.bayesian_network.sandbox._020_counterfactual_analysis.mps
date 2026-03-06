@@ -48,8 +48,8 @@
         <reference id="3967784474352075796" name="parent" index="W0abx" />
         <reference id="3967784474352075798" name="child" index="W0abz" />
       </concept>
-      <concept id="3967784474352075773" name="com.fasten.safety.bayesian_network.structure.RandomVariable" flags="ng" index="W0ak8">
-        <child id="3967784474352507777" name="probabilityDistribution" index="W1NPO" />
+      <concept id="3967784474352075773" name="com.fasten.safety.bayesian_network.structure.Node" flags="ng" index="W0ak8">
+        <child id="3967784474352507777" name="nodeState" index="W1NPO" />
       </concept>
       <concept id="3967784474352075753" name="com.fasten.safety.bayesian_network.structure.BayesianNetwork" flags="ng" index="W0aks">
         <child id="3967784474352276937" name="content" index="W0VcW" />
@@ -58,7 +58,7 @@
         <property id="3967784474352629958" name="probability" index="W2lSN" />
       </concept>
       <concept id="3967784474352507780" name="com.fasten.safety.bayesian_network.structure.NodeProbabilityTable" flags="ng" index="W1NPL" />
-      <concept id="3967784474352507779" name="com.fasten.safety.bayesian_network.structure.DiscreteProbabilityDistributionBase" flags="ng" index="W1NPQ">
+      <concept id="3967784474352507779" name="com.fasten.safety.bayesian_network.structure.DiscreteStateBase" flags="ng" index="W1NPQ">
         <child id="3967784474352573855" name="categories" index="W23HE" />
       </concept>
       <concept id="1940535894323293921" name="com.fasten.safety.bayesian_network.structure.NodeValuation" flags="ng" index="1lTGnW">
@@ -630,13 +630,13 @@
           <node concept="1GS8Ag" id="1FIaLPf3PkL" role="1GS8A2">
             <property role="1GU8sQ" value="0.9" />
             <node concept="1GS8Aj" id="1FIaLPf3Pl9" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjE" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjE" resolve="false" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3PkM" role="1GS8A2">
             <property role="1GU8sQ" value="0.2" />
             <node concept="1GS8Aj" id="1FIaLPf3Pla" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjF" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjF" resolve="true" />
             </node>
           </node>
         </node>
@@ -645,13 +645,13 @@
           <node concept="1GS8Ag" id="1FIaLPf3PkN" role="1GS8A2">
             <property role="1GU8sQ" value="0.1" />
             <node concept="1GS8Aj" id="1FIaLPf3Plb" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjE" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjE" resolve="false" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3PkO" role="1GS8A2">
             <property role="1GU8sQ" value="0.8" />
             <node concept="1GS8Aj" id="1FIaLPf3Plc" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjF" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjF" resolve="true" />
             </node>
           </node>
         </node>
@@ -665,13 +665,13 @@
           <node concept="1GS8Ag" id="1FIaLPf3PkP" role="1GS8A2">
             <property role="1GU8sQ" value="0.9999" />
             <node concept="1GS8Aj" id="1FIaLPf3Pld" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjE" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjE" resolve="false" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3PkQ" role="1GS8A2">
             <property role="1GU8sQ" value="0.95" />
             <node concept="1GS8Aj" id="1FIaLPf3Ple" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjF" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjF" resolve="true" />
             </node>
           </node>
         </node>
@@ -680,13 +680,13 @@
           <node concept="1GS8Ag" id="1FIaLPf3PkR" role="1GS8A2">
             <property role="1GU8sQ" value="0.0001" />
             <node concept="1GS8Aj" id="1FIaLPf3Plf" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjE" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjE" resolve="false" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3PkS" role="1GS8A2">
             <property role="1GU8sQ" value="0.05" />
             <node concept="1GS8Aj" id="1FIaLPf3Plg" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjF" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjF" resolve="true" />
             </node>
           </node>
         </node>
@@ -701,7 +701,7 @@
       <ref role="W0abz" node="1FIaLPf3Pj5" resolve="Levee Failure" />
     </node>
     <node concept="3VDB7u" id="7TuRmu62Br1" role="2WHcHu">
-      <ref role="3VDB7s" node="1FIaLPf5GO5" />
+      <ref role="3VDB7s" node="1FIaLPf5GO5" resolve="animals_true" />
     </node>
   </node>
   <node concept="1lTGV2" id="1FIaLPf5GO4">

@@ -313,8 +313,8 @@
         <reference id="3967784474352075796" name="parent" index="W0abx" />
         <reference id="3967784474352075798" name="child" index="W0abz" />
       </concept>
-      <concept id="3967784474352075773" name="com.fasten.safety.bayesian_network.structure.RandomVariable" flags="ng" index="W0ak8">
-        <child id="3967784474352507777" name="probabilityDistribution" index="W1NPO" />
+      <concept id="3967784474352075773" name="com.fasten.safety.bayesian_network.structure.Node" flags="ng" index="W0ak8">
+        <child id="3967784474352507777" name="nodeState" index="W1NPO" />
       </concept>
       <concept id="3967784474352075753" name="com.fasten.safety.bayesian_network.structure.BayesianNetwork" flags="ng" index="W0aks">
         <child id="3967784474352276937" name="content" index="W0VcW" />
@@ -324,7 +324,7 @@
         <property id="3967784474352629958" name="probability" index="W2lSN" />
       </concept>
       <concept id="3967784474352507780" name="com.fasten.safety.bayesian_network.structure.NodeProbabilityTable" flags="ng" index="W1NPL" />
-      <concept id="3967784474352507779" name="com.fasten.safety.bayesian_network.structure.DiscreteProbabilityDistributionBase" flags="ng" index="W1NPQ">
+      <concept id="3967784474352507779" name="com.fasten.safety.bayesian_network.structure.DiscreteStateBase" flags="ng" index="W1NPQ">
         <child id="3967784474352573855" name="categories" index="W23HE" />
       </concept>
       <concept id="1940535894323711277" name="com.fasten.safety.bayesian_network.structure.ScenarioRef" flags="ng" index="1lSmoK">
@@ -1729,13 +1729,13 @@
               <node concept="1GS8Ag" id="6oAzR4bb_Qi" role="1GS8A2">
                 <property role="1GU8sQ" value="0.9" />
                 <node concept="1GS8Aj" id="6oAzR4bb_Qj" role="1GS8A3">
-                  <ref role="1GS8Ai" node="6oAzR4b94TZ" />
+                  <ref role="1GS8Ai" node="6oAzR4b94TZ" resolve="false" />
                 </node>
               </node>
               <node concept="1GS8Ag" id="6oAzR4bb_Qk" role="1GS8A2">
                 <property role="1GU8sQ" value="0.2" />
                 <node concept="1GS8Aj" id="6oAzR4bb_Ql" role="1GS8A3">
-                  <ref role="1GS8Ai" node="6oAzR4b94Vw" />
+                  <ref role="1GS8Ai" node="6oAzR4b94Vw" resolve="true" />
                 </node>
               </node>
             </node>
@@ -1744,13 +1744,13 @@
               <node concept="1GS8Ag" id="6oAzR4bb_QI" role="1GS8A2">
                 <property role="1GU8sQ" value="0.1" />
                 <node concept="1GS8Aj" id="6oAzR4bb_QJ" role="1GS8A3">
-                  <ref role="1GS8Ai" node="6oAzR4b94TZ" />
+                  <ref role="1GS8Ai" node="6oAzR4b94TZ" resolve="false" />
                 </node>
               </node>
               <node concept="1GS8Ag" id="6oAzR4bb_QK" role="1GS8A2">
                 <property role="1GU8sQ" value="0.8" />
                 <node concept="1GS8Aj" id="6oAzR4bb_QL" role="1GS8A3">
-                  <ref role="1GS8Ai" node="6oAzR4b94Vw" />
+                  <ref role="1GS8Ai" node="6oAzR4b94Vw" resolve="true" />
                 </node>
               </node>
             </node>
@@ -1767,13 +1767,13 @@
               <node concept="1GS8Ag" id="6oAzR4bb_Vx" role="1GS8A2">
                 <property role="1GU8sQ" value="0.9999" />
                 <node concept="1GS8Aj" id="6oAzR4bb_Vy" role="1GS8A3">
-                  <ref role="1GS8Ai" node="6oAzR4b94TZ" />
+                  <ref role="1GS8Ai" node="6oAzR4b94TZ" resolve="false" />
                 </node>
               </node>
               <node concept="1GS8Ag" id="6oAzR4bb_Vz" role="1GS8A2">
                 <property role="1GU8sQ" value="0.95" />
                 <node concept="1GS8Aj" id="6oAzR4bb_V$" role="1GS8A3">
-                  <ref role="1GS8Ai" node="6oAzR4b94Vw" />
+                  <ref role="1GS8Ai" node="6oAzR4b94Vw" resolve="true" />
                 </node>
               </node>
             </node>
@@ -1782,13 +1782,13 @@
               <node concept="1GS8Ag" id="6oAzR4bb_WX" role="1GS8A2">
                 <property role="1GU8sQ" value="0.0001" />
                 <node concept="1GS8Aj" id="6oAzR4bb_WY" role="1GS8A3">
-                  <ref role="1GS8Ai" node="6oAzR4b94TZ" />
+                  <ref role="1GS8Ai" node="6oAzR4b94TZ" resolve="false" />
                 </node>
               </node>
               <node concept="1GS8Ag" id="6oAzR4bb_WZ" role="1GS8A2">
                 <property role="1GU8sQ" value="0.05" />
                 <node concept="1GS8Aj" id="6oAzR4bb_X0" role="1GS8A3">
-                  <ref role="1GS8Ai" node="6oAzR4b94Vw" />
+                  <ref role="1GS8Ai" node="6oAzR4b94Vw" resolve="true" />
                 </node>
               </node>
             </node>
@@ -2661,13 +2661,13 @@
               <node concept="1GS8Ag" id="7TuRmu686rh" role="1GS8A2">
                 <property role="1GU8sQ" value="0.9" />
                 <node concept="1GS8Aj" id="7TuRmu686ri" role="1GS8A3">
-                  <ref role="1GS8Ai" node="7TuRmu686pp" />
+                  <ref role="1GS8Ai" node="7TuRmu686pp" resolve="false" />
                 </node>
               </node>
               <node concept="1GS8Ag" id="7TuRmu686rj" role="1GS8A2">
                 <property role="1GU8sQ" value="0.2" />
                 <node concept="1GS8Aj" id="7TuRmu686rk" role="1GS8A3">
-                  <ref role="1GS8Ai" node="7TuRmu686pA" />
+                  <ref role="1GS8Ai" node="7TuRmu686pA" resolve="true" />
                 </node>
               </node>
             </node>
@@ -2676,13 +2676,13 @@
               <node concept="1GS8Ag" id="7TuRmu686rm" role="1GS8A2">
                 <property role="1GU8sQ" value="0.1" />
                 <node concept="1GS8Aj" id="7TuRmu686rn" role="1GS8A3">
-                  <ref role="1GS8Ai" node="7TuRmu686pp" />
+                  <ref role="1GS8Ai" node="7TuRmu686pp" resolve="false" />
                 </node>
               </node>
               <node concept="1GS8Ag" id="7TuRmu686ro" role="1GS8A2">
                 <property role="1GU8sQ" value="0.8" />
                 <node concept="1GS8Aj" id="7TuRmu686rp" role="1GS8A3">
-                  <ref role="1GS8Ai" node="7TuRmu686pA" />
+                  <ref role="1GS8Ai" node="7TuRmu686pA" resolve="true" />
                 </node>
               </node>
             </node>
@@ -2699,13 +2699,13 @@
               <node concept="1GS8Ag" id="7TuRmu686ru" role="1GS8A2">
                 <property role="1GU8sQ" value="0.9999" />
                 <node concept="1GS8Aj" id="7TuRmu686rv" role="1GS8A3">
-                  <ref role="1GS8Ai" node="7TuRmu686pp" />
+                  <ref role="1GS8Ai" node="7TuRmu686pp" resolve="false" />
                 </node>
               </node>
               <node concept="1GS8Ag" id="7TuRmu686rw" role="1GS8A2">
                 <property role="1GU8sQ" value="0.95" />
                 <node concept="1GS8Aj" id="7TuRmu686rx" role="1GS8A3">
-                  <ref role="1GS8Ai" node="7TuRmu686pA" />
+                  <ref role="1GS8Ai" node="7TuRmu686pA" resolve="true" />
                 </node>
               </node>
             </node>
@@ -2714,13 +2714,13 @@
               <node concept="1GS8Ag" id="7TuRmu686rz" role="1GS8A2">
                 <property role="1GU8sQ" value="0.0001" />
                 <node concept="1GS8Aj" id="7TuRmu686r$" role="1GS8A3">
-                  <ref role="1GS8Ai" node="7TuRmu686pp" />
+                  <ref role="1GS8Ai" node="7TuRmu686pp" resolve="false" />
                 </node>
               </node>
               <node concept="1GS8Ag" id="7TuRmu686r_" role="1GS8A2">
                 <property role="1GU8sQ" value="0.05" />
                 <node concept="1GS8Aj" id="7TuRmu686rA" role="1GS8A3">
-                  <ref role="1GS8Ai" node="7TuRmu686pA" />
+                  <ref role="1GS8Ai" node="7TuRmu686pA" resolve="true" />
                 </node>
               </node>
             </node>
@@ -2738,10 +2738,10 @@
           <ref role="W0abz" node="7TuRmu686rr" resolve="Levee Failure" />
         </node>
         <node concept="1lSmoK" id="7TuRmu69nCc" role="1lSmoL">
-          <ref role="1lSmoN" node="7TuRmu6907_" />
+          <ref role="1lSmoN" node="7TuRmu6907_" resolve="roots_are_true" />
         </node>
         <node concept="3VDB7u" id="7TuRmu69nCd" role="2WHcHu">
-          <ref role="3VDB7s" node="7TuRmu6907_" />
+          <ref role="3VDB7s" node="7TuRmu6907_" resolve="roots_are_true" />
         </node>
       </node>
     </node>

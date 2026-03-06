@@ -195,20 +195,20 @@
       </node>
       <node concept="2brx$7" id="3QO5pQQQHTl" role="1QQeAC">
         <property role="TrG5h" value="_start_filling" />
-        <ref role="2b3yJn" node="5UKHWoLBgYg" resolve="WaterTankSystem" />
+        <ref role="2b3yJn" node="5UKHWoLBgYg" />
         <node concept="oRLRZ" id="3QO5pQQQYtB" role="3_aW3_" />
         <node concept="3OqrL5" id="3QO5pQQQYtP" role="3_aW3_">
           <node concept="3OqrWR" id="3QO5pQQS0HD" role="3OqrZK">
             <node concept="oYKel" id="3QO5pQQS0HF" role="3OqpI5">
-              <ref role="oYKei" node="3QO5pQQQYty" resolve="tank" />
+              <ref role="oYKei" node="3QO5pQQQYty" />
             </node>
             <node concept="oYKel" id="3QO5pQQS0HH" role="3OqpI2">
-              <ref role="oYKei" node="3QO5pQQQYty" resolve="tank" />
+              <ref role="oYKei" node="3QO5pQQQYty" />
             </node>
             <node concept="nE0YL" id="3QO5pQQSpDU" role="3O4BRU">
               <node concept="2H9Ewv" id="3QO5pQQSpEH" role="2H9Ial">
                 <node concept="hx854" id="4OZFeReOkUO" role="2H9Ial">
-                  <ref role="hx9HS" node="4OZFeReOkT2" resolve="MAX_CAPACITY" />
+                  <ref role="hx9HS" node="4OZFeReOkT2" />
                 </node>
                 <node concept="2IPVmt" id="3QO5pQQSpE8" role="2H9Iav">
                   <property role="2IPVms" value="0.9" />
@@ -223,14 +223,14 @@
         <node concept="oRLRZ" id="3QO5pQQQYtG" role="3_aW3_" />
         <node concept="3_aW46" id="4OZFeReOdW$" role="3_aW3_">
           <node concept="oYKel" id="4OZFeReOdWP" role="oZz2X">
-            <ref role="oYKei" node="3QO5pQQQYtv" resolve="operator" />
+            <ref role="oYKei" node="3QO5pQQQYtv" />
           </node>
           <node concept="oYKel" id="4OZFeReOdWR" role="oZz2S">
-            <ref role="oYKei" node="3QO5pQQQYtw" resolve="tankController" />
+            <ref role="oYKei" node="3QO5pQQQYtw" />
           </node>
           <node concept="2bsV3G" id="4OZFeReOe76" role="3_fVoY">
             <node concept="2btTNY" id="4OZFeReOe78" role="2bsV3J">
-              <ref role="2bsodY" node="3QO5pQQQB9L" resolve="start" />
+              <ref role="2bsodY" node="3QO5pQQQB9L" />
               <node concept="1yCjRe" id="4OZFeReOe7I" role="2bsobk" />
             </node>
           </node>
@@ -238,16 +238,16 @@
         <node concept="oRLRZ" id="4OZFeReOdVR" role="3_aW3_" />
         <node concept="3_aW46" id="4OZFeReOdX$" role="3_aW3_">
           <node concept="oYKel" id="4OZFeReOdXU" role="oZz2X">
-            <ref role="oYKei" node="3QO5pQQQYtw" resolve="tankController" />
+            <ref role="oYKei" node="3QO5pQQQYtw" />
           </node>
           <node concept="oYKel" id="4OZFeReOdXW" role="oZz2S">
-            <ref role="oYKei" node="3QO5pQQQYtx" resolve="pump" />
+            <ref role="oYKei" node="3QO5pQQQYtx" />
           </node>
           <node concept="2bsV3G" id="4OZFeReOe7Q" role="3_fVoY">
             <node concept="2btTNY" id="4OZFeReOe7S" role="2bsV3J">
-              <ref role="2bsodY" node="3QO5pQQQBcn" resolve="cmd" />
+              <ref role="2bsodY" node="3QO5pQQQBcn" />
               <node concept="2HeeqP" id="4OZFeReOkPU" role="2bsobk">
-                <ref role="2HeeqO" node="3QO5pQQQBcc" resolve="start" />
+                <ref role="2HeeqO" node="3QO5pQQQBcc" />
               </node>
             </node>
           </node>
@@ -255,14 +255,14 @@
         <node concept="oRLRZ" id="4OZFeReOdXf" role="3_aW3_" />
         <node concept="3_aW46" id="4OZFeReOdY0" role="3_aW3_">
           <node concept="oYKel" id="4OZFeReOdYp" role="oZz2X">
-            <ref role="oYKei" node="3QO5pQQQYty" resolve="tank" />
+            <ref role="oYKei" node="3QO5pQQQYty" />
           </node>
           <node concept="oYKel" id="4OZFeReOdYr" role="oZz2S">
-            <ref role="oYKei" node="3QO5pQQQYtw" resolve="tankController" />
+            <ref role="oYKei" node="3QO5pQQQYtw" />
           </node>
           <node concept="2bsV3G" id="4OZFeReOkQ3" role="3_fVoY">
             <node concept="2btTNY" id="4OZFeReOkQ5" role="2bsV3J">
-              <ref role="2bsodY" node="4OZFeReOe3U" resolve="capacity" />
+              <ref role="2bsodY" node="4OZFeReOe3U" />
               <node concept="2IPVmt" id="4OZFeReOkQk" role="2bsobk">
                 <property role="2IPVms" value="95" />
               </node>
@@ -272,16 +272,16 @@
         <node concept="oRLRZ" id="4OZFeReOdWk" role="3_aW3_" />
         <node concept="3_aW46" id="4OZFeReOe0l" role="3_aW3_">
           <node concept="oYKel" id="4OZFeReOe0P" role="oZz2X">
-            <ref role="oYKei" node="3QO5pQQQYtw" resolve="tankController" />
+            <ref role="oYKei" node="3QO5pQQQYtw" />
           </node>
           <node concept="oYKel" id="4OZFeReOe0R" role="oZz2S">
-            <ref role="oYKei" node="3QO5pQQQYtx" resolve="pump" />
+            <ref role="oYKei" node="3QO5pQQQYtx" />
           </node>
           <node concept="2bsV3G" id="4OZFeReOkRg" role="3_fVoY">
             <node concept="2btTNY" id="4OZFeReOkRi" role="2bsV3J">
-              <ref role="2bsodY" node="3QO5pQQQBcn" resolve="cmd" />
+              <ref role="2bsodY" node="3QO5pQQQBcn" />
               <node concept="2HeeqP" id="4OZFeReOkRq" role="2bsobk">
-                <ref role="2HeeqO" node="3QO5pQQQBce" resolve="stop" />
+                <ref role="2HeeqO" node="3QO5pQQQBce" />
               </node>
             </node>
           </node>
@@ -290,10 +290,10 @@
         <node concept="3OqrL5" id="4OZFeReOe0V" role="3_aW3_">
           <node concept="3OqrWR" id="4OZFeReOe1u" role="3OqrZK">
             <node concept="oYKel" id="4OZFeReOe1w" role="3OqpI5">
-              <ref role="oYKei" node="3QO5pQQQYty" resolve="tank" />
+              <ref role="oYKei" node="3QO5pQQQYty" />
             </node>
             <node concept="oYKel" id="4OZFeReOe1y" role="3OqpI2">
-              <ref role="oYKei" node="3QO5pQQQYty" resolve="tank" />
+              <ref role="oYKei" node="3QO5pQQQYty" />
             </node>
             <node concept="nE0YI" id="4OZFeReOkRv" role="3O4BRU">
               <node concept="ru7O1" id="4OZFeReOe1$" role="2H9Iav">
@@ -301,7 +301,7 @@
               </node>
               <node concept="2H9Ewv" id="4OZFeReOe2t" role="2H9Ial">
                 <node concept="hx854" id="4OZFeReOkUF" role="2H9Ial">
-                  <ref role="hx9HS" node="4OZFeReOkT2" resolve="MAX_CAPACITY" />
+                  <ref role="hx9HS" node="4OZFeReOkT2" />
                 </node>
                 <node concept="2IPVmt" id="4OZFeReOe1Q" role="2H9Iav">
                   <property role="2IPVms" value="0.95" />
@@ -313,19 +313,19 @@
         <node concept="oRLRZ" id="4OZFeReOdZQ" role="3_aW3_" />
         <node concept="2b3SXi" id="3QO5pQQQYtv" role="3_aW3F">
           <property role="TrG5h" value="operator" />
-          <ref role="2b3SXf" node="3QO5pQQQBgb" resolve="operator" />
+          <ref role="2b3SXf" node="3QO5pQQQBgb" />
         </node>
         <node concept="2b3SXi" id="3QO5pQQQYtw" role="3_aW3F">
           <property role="TrG5h" value="tankController" />
-          <ref role="2b3SXf" node="3QO5pQQQBgk" resolve="tankController" />
+          <ref role="2b3SXf" node="3QO5pQQQBgk" />
         </node>
         <node concept="2b3SXi" id="3QO5pQQQYtx" role="3_aW3F">
           <property role="TrG5h" value="pump" />
-          <ref role="2b3SXf" node="3QO5pQQQBgx" resolve="pumpActuators" />
+          <ref role="2b3SXf" node="3QO5pQQQBgx" />
         </node>
         <node concept="2b3SXi" id="3QO5pQQQYty" role="3_aW3F">
           <property role="TrG5h" value="tank" />
-          <ref role="2b3SXf" node="3QO5pQQQYqV" resolve="tankSensors" />
+          <ref role="2b3SXf" node="3QO5pQQQYqV" />
         </node>
       </node>
       <node concept="1QQeAL" id="3QO5pQQQHTy" role="1QQeAC" />
@@ -396,7 +396,7 @@
       <node concept="3UnI9n" id="3QO5pQQQBcn" role="3UnI90">
         <property role="TrG5h" value="cmd" />
         <node concept="2XJXdx" id="3QO5pQQQBcy" role="3UnI80">
-          <ref role="2XJXdw" node="3QO5pQQQBbY" resolve="pump_cmd_t" />
+          <ref role="2XJXdw" node="3QO5pQQQBbY" />
         </node>
       </node>
     </node>
@@ -406,13 +406,13 @@
       <node concept="3UnI81" id="3QO5pQQQBcC" role="3UnI9m">
         <property role="TrG5h" value="cmd" />
         <node concept="2XJXdx" id="3QO5pQQQBcN" role="3UnI80">
-          <ref role="2XJXdw" node="3QO5pQQQBbY" resolve="pump_cmd_t" />
+          <ref role="2XJXdw" node="3QO5pQQQBbY" />
         </node>
       </node>
       <node concept="3UnI9n" id="3QO5pQQQBde" role="3UnI90">
         <property role="TrG5h" value="rate" />
         <node concept="2XEmfi" id="3QO5pQQQYpr" role="3UnI80">
-          <ref role="2XEmfl" node="3QO5pQQQYnF" resolve="rate_t" />
+          <ref role="2XEmfl" node="3QO5pQQQYnF" />
         </node>
       </node>
     </node>
@@ -422,13 +422,13 @@
       <node concept="3UnI81" id="3QO5pQQQYmE" role="3UnI9m">
         <property role="TrG5h" value="rate" />
         <node concept="2XEmfi" id="3QO5pQQQYqe" role="3UnI80">
-          <ref role="2XEmfl" node="3QO5pQQQYnF" resolve="rate_t" />
+          <ref role="2XEmfl" node="3QO5pQQQYnF" />
         </node>
       </node>
       <node concept="3UnI9n" id="4OZFeReOe3U" role="3UnI90">
         <property role="TrG5h" value="capacity" />
         <node concept="2XEmfi" id="4OZFeReOe6R" role="3UnI80">
-          <ref role="2XEmfl" node="4OZFeReOe5d" resolve="tank_fill_percentage_t" />
+          <ref role="2XEmfl" node="4OZFeReOe5d" />
         </node>
       </node>
     </node>
@@ -439,94 +439,94 @@
       <node concept="3Ug1AV" id="3QO5pQQQBgb" role="3UgYNK">
         <property role="TrG5h" value="operator" />
         <node concept="3Ug1AZ" id="3QO5pQQQBga" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5UKHWoLBgYc" resolve="OperatorPanel" />
+          <ref role="3Ug1AY" node="5UKHWoLBgYc" />
         </node>
       </node>
       <node concept="3Ug1AV" id="3QO5pQQQBgk" role="3UgYNK">
         <property role="TrG5h" value="tankController" />
         <node concept="3Ug1AZ" id="3QO5pQQQBgi" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5UKHWoLBgYd" resolve="TankController" />
+          <ref role="3Ug1AY" node="5UKHWoLBgYd" />
         </node>
       </node>
       <node concept="3Ug1AV" id="3QO5pQQQBgx" role="3UgYNK">
         <property role="TrG5h" value="pumpActuators" />
         <node concept="3Ug1AZ" id="3QO5pQQQBgv" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5UKHWoLBgYe" resolve="PumpActuators" />
+          <ref role="3Ug1AY" node="5UKHWoLBgYe" />
         </node>
       </node>
       <node concept="3Ug1AV" id="3QO5pQQQYqV" role="3UgYNK">
         <property role="TrG5h" value="tankSensors" />
         <node concept="3Ug1AZ" id="3QO5pQQQYqT" role="3Ug1A_">
-          <ref role="3Ug1AY" node="5UKHWoLBgYf" resolve="TankSensors" />
+          <ref role="3Ug1AY" node="5UKHWoLBgYf" />
         </node>
       </node>
       <node concept="3Ug1$w" id="3QO5pQQQBhi" role="3UgYNK">
         <node concept="3Ug1GC" id="3QO5pQQQBhs" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="3QO5pQQQB9L" resolve="start" />
+          <ref role="3Ug1Ha" node="3QO5pQQQB9L" />
           <node concept="3Ug1GJ" id="3QO5pQQQBhr" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQBgb" resolve="operator" />
+            <ref role="3Ug1GI" node="3QO5pQQQBgb" />
           </node>
         </node>
         <node concept="3Ug1GC" id="3QO5pQQQBhw" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="3QO5pQQQBcn" resolve="cmd" />
+          <ref role="3Ug1Ha" node="3QO5pQQQBcn" />
           <node concept="3Ug1GJ" id="3QO5pQQQBhv" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQBgk" resolve="tankController" />
+            <ref role="3Ug1GI" node="3QO5pQQQBgk" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="3QO5pQQQBhz" role="3UgYNK">
         <node concept="3Ug1GC" id="3QO5pQQQBiQ" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="3QO5pQQQBcn" resolve="cmd" />
+          <ref role="3Ug1Ha" node="3QO5pQQQBcn" />
           <node concept="3Ug1GJ" id="3QO5pQQQBiN" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQBgk" resolve="tankController" />
+            <ref role="3Ug1GI" node="3QO5pQQQBgk" />
           </node>
         </node>
         <node concept="3Ug1GC" id="3QO5pQQQBhA" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="3QO5pQQQBcC" resolve="cmd" />
+          <ref role="3Ug1Ha" node="3QO5pQQQBcC" />
           <node concept="3Ug1GJ" id="3QO5pQQQBiT" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQBgx" resolve="pumpActuators" />
+            <ref role="3Ug1GI" node="3QO5pQQQBgx" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="3QO5pQQQBhS" role="3UgYNK">
         <node concept="3Ug1GC" id="3QO5pQQQBhT" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="3QO5pQQQB9L" resolve="start" />
+          <ref role="3Ug1Ha" node="3QO5pQQQB9L" />
           <node concept="3Ug1GJ" id="3QO5pQQQBhU" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQBgb" resolve="operator" />
+            <ref role="3Ug1GI" node="3QO5pQQQBgb" />
           </node>
         </node>
         <node concept="3Ug1GC" id="3QO5pQQQBhV" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="3QO5pQQQBcn" resolve="cmd" />
+          <ref role="3Ug1Ha" node="3QO5pQQQBcn" />
           <node concept="3Ug1GJ" id="3QO5pQQQBhW" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQBgk" resolve="tankController" />
+            <ref role="3Ug1GI" node="3QO5pQQQBgk" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="3QO5pQQQBii" role="3UgYNK">
         <node concept="3Ug1GC" id="3QO5pQQQBij" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="3QO5pQQQB9L" resolve="start" />
+          <ref role="3Ug1Ha" node="3QO5pQQQB9L" />
           <node concept="3Ug1GJ" id="3QO5pQQQBik" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQBgb" resolve="operator" />
+            <ref role="3Ug1GI" node="3QO5pQQQBgb" />
           </node>
         </node>
         <node concept="3Ug1GC" id="3QO5pQQQBil" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="3QO5pQQQBcn" resolve="cmd" />
+          <ref role="3Ug1Ha" node="3QO5pQQQBcn" />
           <node concept="3Ug1GJ" id="3QO5pQQQBim" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQBgk" resolve="tankController" />
+            <ref role="3Ug1GI" node="3QO5pQQQBgk" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="3QO5pQQQYrQ" role="3UgYNK">
         <node concept="3Ug1GC" id="3QO5pQQQYsm" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="3QO5pQQQBde" resolve="rate" />
+          <ref role="3Ug1Ha" node="3QO5pQQQBde" />
           <node concept="3Ug1GJ" id="3QO5pQQQYsl" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQBgx" resolve="pumpActuators" />
+            <ref role="3Ug1GI" node="3QO5pQQQBgx" />
           </node>
         </node>
         <node concept="3Ug1GC" id="3QO5pQQQYsq" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="3QO5pQQQYmE" resolve="rate" />
+          <ref role="3Ug1Ha" node="3QO5pQQQYmE" />
           <node concept="3Ug1GJ" id="3QO5pQQQYsp" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="3QO5pQQQYqV" resolve="tankSensors" />
+            <ref role="3Ug1GI" node="3QO5pQQQYqV" />
           </node>
         </node>
       </node>
