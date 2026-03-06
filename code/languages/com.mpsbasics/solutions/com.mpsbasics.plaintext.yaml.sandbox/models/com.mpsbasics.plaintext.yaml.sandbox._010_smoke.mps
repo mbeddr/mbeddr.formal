@@ -484,5 +484,9 @@
     <node concept="3tkPS2" id="21lHZzX93WV" role="3tkPS6" />
     <node concept="3tkPS2" id="21lHZzX93WW" role="3tkPS6" />
   </node>
+  <node concept="3tkWtY" id="UAnbQkZAOH">
+    <property role="TrG5h" value="automatically_imported" />
+    <property role="3tmvi1" value="c:\\work\\big_yaml.yaml" />
+  </node>
 </model>
 

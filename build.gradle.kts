@@ -82,6 +82,7 @@ configurations {
     val mps by creating
     val languageLibs by creating
     val docx4j by creating
+    val langchain4j by creating
     val plantUML by creating {
         isTransitive = false
     }
@@ -125,6 +126,9 @@ configurations {
 
         docx4j("org.docx4j:docx4j-core:$docx4JVersion")
         docx4j("org.docx4j:docx4j-JAXB-MOXy:$docx4JVersion")
+
+	langchain4j("dev.langchain4j:langchain4j-core:1.10.0")
+	langchain4j("dev.langchain4j:langchain4j-open-ai:1.10.0")
 
         sat4j("org.ow2.sat4j:org.ow2.sat4j.core:2.3.6")
 
@@ -267,6 +271,12 @@ val resolveDocx4j = createSyncTask(
     destinationDir = file("code/languages/com.mpsbasics/solutions/com.mpsbasics.docx4j.lib/lib")
 )
 
+val resolveLangchain4j = createSyncTask(
+    taskName = "resolveLangchain4j",
+    configurationName = "langchain4j",
+    destinationDir = file("code/languages/com.mpsbasics/solutions/com.mpsbasics.langchain4j/lib")
+)
+
 val resolveSat4j = createSyncTask(
     taskName = "resolveSat4j",
     configurationName = "sat4j",
@@ -317,6 +327,7 @@ tasks {
         dependsOn(configureJava)
         dependsOn(resolvePlantUML)
         dependsOn(resolveDocx4j)
+        dependsOn(resolveLangchain4j)
         dependsOn(resolveSat4j)
         dependsOn(resolveJFreeChart)
         dependsOn(resolveNuSMV)
@@ -597,6 +608,7 @@ cyclonedxBom {
     includeConfigs = listOf(
         "languageLibs",
         "docx4j",
+	"langchain4j",
         "plantUML",
         "sat4j",
         "jfreechart",
@@ -686,6 +698,7 @@ fun configurePublication(publication: MavenPublication, group: String, artifactI
                 "languageLibs",
                 "mps",
                 "docx4j",
+		"langchain4j",
                 "plantUML",
                 "sat4j",
                 "jfreechart",
