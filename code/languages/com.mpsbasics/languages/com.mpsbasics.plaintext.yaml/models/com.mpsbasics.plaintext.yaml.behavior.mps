@@ -4183,6 +4183,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="UAnbQkZs5W" role="jymVt" />
     <node concept="2YIFZL" id="3YAmJe09jUz" role="jymVt">
       <property role="TrG5h" value="getTokensSublistCorrespondingToSnakeYamlObject" />
       <node concept="3clFbS" id="3YAmJe09jUA" role="3clF47">
@@ -5018,6 +5019,23 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="1pTqKfK6pLn" role="13h7CS">
+      <property role="TrG5h" value="valueAsString" />
+      <node concept="3Tm1VV" id="1pTqKfK6pLo" role="1B3o_S" />
+      <node concept="17QB3L" id="1pTqKfK6q7Q" role="3clF45" />
+      <node concept="3clFbS" id="1pTqKfK6pLq" role="3clF47">
+        <node concept="3clFbF" id="1pTqKfK6pLr" role="3cqZAp">
+          <node concept="2OqwBi" id="1pTqKfK6qpm" role="3clFbG">
+            <node concept="BsUDl" id="1pTqKfK6qc4" role="2Oq$k0">
+              <ref role="37wK5l" node="4uGZ3dxn$wM" resolve="valueNode" />
+            </node>
+            <node concept="2qgKlT" id="1pTqKfK6qMd" role="2OqNvi">
+              <ref role="37wK5l" node="4v4hk0ak4mM" resolve="asText" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="13hLZK" id="4uGZ3dxnn2C" role="13h7CW">
       <node concept="3clFbS" id="4uGZ3dxnn2D" role="2VODD2" />
     </node>
@@ -5290,6 +5308,33 @@
             </node>
             <node concept="2qgKlT" id="2uFtSoLppxO" role="2OqNvi">
               <ref role="37wK5l" node="4v4hk0ak4mM" resolve="asText" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="13i0hz" id="1pTqKfK4CWR" role="13h7CS">
+      <property role="13i0it" value="true" />
+      <property role="TrG5h" value="getValueForFirstNodeTupleWithKey" />
+      <node concept="37vLTG" id="1pTqKfK4CWS" role="3clF46">
+        <property role="TrG5h" value="key" />
+        <node concept="17QB3L" id="1pTqKfK4CWT" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="1pTqKfK4CWU" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1pTqKfK4Hj9" role="3clF45">
+        <ref role="ehGHo" to="bpzl:4uGZ3dxnn3e" resolve="Node" />
+      </node>
+      <node concept="3clFbS" id="1pTqKfK4CWW" role="3clF47">
+        <node concept="3clFbF" id="1pTqKfK4Ilg" role="3cqZAp">
+          <node concept="2OqwBi" id="1pTqKfK4Ili" role="3clFbG">
+            <node concept="BsUDl" id="1pTqKfK4Ilj" role="2Oq$k0">
+              <ref role="37wK5l" node="1eyOViCn_VW" resolve="findFirstNodeTupleWithKey" />
+              <node concept="37vLTw" id="1pTqKfK4Ilk" role="37wK5m">
+                <ref role="3cqZAo" node="1pTqKfK4CWS" resolve="key" />
+              </node>
+            </node>
+            <node concept="2qgKlT" id="1pTqKfK4Ill" role="2OqNvi">
+              <ref role="37wK5l" node="4uGZ3dxn$wM" resolve="valueNode" />
             </node>
           </node>
         </node>
