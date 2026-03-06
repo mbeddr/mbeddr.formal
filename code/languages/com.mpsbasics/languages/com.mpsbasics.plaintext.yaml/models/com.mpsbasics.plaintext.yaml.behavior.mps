@@ -5753,28 +5753,5 @@
       <node concept="3clFbS" id="7j0P_18rqTI" role="2VODD2" />
     </node>
   </node>
-  <node concept="13h7C7" id="79XfDqGEc6T">
-    <property role="3GE5qa" value="text_level" />
-    <ref role="13h7C2" to="bpzl:21lHZzX34dq" resolve="Word" />
-    <node concept="13hLZK" id="79XfDqGEc6U" role="13h7CW">
-      <node concept="3clFbS" id="79XfDqGEc6V" role="2VODD2" />
-    </node>
-    <node concept="13i0hz" id="79XfDqGEc7c" role="13h7CS">
-      <property role="TrG5h" value="asText" />
-      <ref role="13i0hy" node="4v4hk0ak4mM" resolve="asText" />
-      <node concept="3Tm1VV" id="79XfDqGEc7d" role="1B3o_S" />
-      <node concept="3clFbS" id="79XfDqGEc7g" role="3clF47">
-        <node concept="3clFbF" id="79XfDqGEf5s" role="3cqZAp">
-          <node concept="2OqwBi" id="79XfDqGEfi_" role="3clFbG">
-            <node concept="13iPFW" id="79XfDqGEf5p" role="2Oq$k0" />
-            <node concept="3TrcHB" id="79XfDqGEfEM" role="2OqNvi">
-              <ref role="3TsBF5" to="bpzl:21lHZzX3eyj" resolve="text" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="17QB3L" id="79XfDqGEc7h" role="3clF45" />
-    </node>
-  </node>
 </model>
 
