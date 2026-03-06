@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mbeddr.formal.smtlib.z3.lib" uuid="f7821750-33bf-489c-8f64-0850d86d540d" moduleVersion="0">
   <models>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="z3-turnkey.jar" />
     </modelRoot>
   </models>

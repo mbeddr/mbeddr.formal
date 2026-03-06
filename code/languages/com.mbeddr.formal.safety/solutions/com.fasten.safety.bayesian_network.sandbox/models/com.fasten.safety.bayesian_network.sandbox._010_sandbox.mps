@@ -54,7 +54,7 @@
       <concept id="3769056599174984527" name="com.mbeddr.formal.base.structure.DiagramDocumentation" flags="ng" index="30pd9e">
         <child id="3514655602814462801" name="documentation" index="9kjJR" />
       </concept>
-      <concept id="3769056599175571406" name="com.mbeddr.formal.base.structure.IDocumentableDiagram" flags="ngI" index="30vsrf">
+      <concept id="3769056599175571406" name="com.mbeddr.formal.base.structure.IDocumentableDiagram" flags="ng" index="30vsrf">
         <child id="3769056599174487930" name="documentation" index="30rnTV" />
       </concept>
     </language>
@@ -63,8 +63,8 @@
         <reference id="3967784474352075796" name="parent" index="W0abx" />
         <reference id="3967784474352075798" name="child" index="W0abz" />
       </concept>
-      <concept id="3967784474352075773" name="com.fasten.safety.bayesian_network.structure.Node" flags="ng" index="W0ak8">
-        <child id="3967784474352507777" name="nodeState" index="W1NPO" />
+      <concept id="3967784474352075773" name="com.fasten.safety.bayesian_network.structure.RandomVariable" flags="ng" index="W0ak8">
+        <child id="3967784474352507777" name="probabilityDistribution" index="W1NPO" />
       </concept>
       <concept id="3967784474352075753" name="com.fasten.safety.bayesian_network.structure.BayesianNetwork" flags="ng" index="W0aks">
         <child id="3967784474352276937" name="content" index="W0VcW" />
@@ -73,7 +73,7 @@
         <property id="3967784474352629958" name="probability" index="W2lSN" />
       </concept>
       <concept id="3967784474352507780" name="com.fasten.safety.bayesian_network.structure.NodeProbabilityTable" flags="ng" index="W1NPL" />
-      <concept id="3967784474352507779" name="com.fasten.safety.bayesian_network.structure.DiscreteStateBase" flags="ng" index="W1NPQ">
+      <concept id="3967784474352507779" name="com.fasten.safety.bayesian_network.structure.DiscreteProbabilityDistributionBase" flags="ng" index="W1NPQ">
         <child id="3967784474352573855" name="categories" index="W23HE" />
       </concept>
       <concept id="7360728356658480865" name="com.fasten.safety.bayesian_network.structure.Combination" flags="ng" index="1GS8Ag">
@@ -128,7 +128,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUh" resolve="very low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrrp" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrrq" role="1GS8A2">
@@ -139,7 +139,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUh" resolve="very low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrrt" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrru" role="1GS8A2">
@@ -150,7 +150,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUi" resolve="low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrrx" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrry" role="1GS8A2">
@@ -161,7 +161,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUi" resolve="low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrr_" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrrA" role="1GS8A2">
@@ -172,7 +172,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUj" resolve="medium" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrrD" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrrE" role="1GS8A2">
@@ -183,7 +183,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUj" resolve="medium" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrrH" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrrI" role="1GS8A2">
@@ -194,7 +194,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUk" resolve="high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrrL" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrrM" role="1GS8A2">
@@ -205,7 +205,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUk" resolve="high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrrP" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrrQ" role="1GS8A2">
@@ -216,7 +216,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUl" resolve="very high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrrT" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrrU" role="1GS8A2">
@@ -227,7 +227,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUl" resolve="very high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrrX" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrrY" role="1GS8A2">
@@ -238,7 +238,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUh" resolve="very low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrs1" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrs2" role="1GS8A2">
@@ -249,7 +249,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUh" resolve="very low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrs5" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrs6" role="1GS8A2">
@@ -260,7 +260,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUi" resolve="low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrs9" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsa" role="1GS8A2">
@@ -271,7 +271,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUi" resolve="low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrsd" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrse" role="1GS8A2">
@@ -282,7 +282,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUj" resolve="medium" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrsh" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsi" role="1GS8A2">
@@ -293,7 +293,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUj" resolve="medium" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrsl" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsm" role="1GS8A2">
@@ -304,7 +304,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUk" resolve="high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrsp" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsq" role="1GS8A2">
@@ -315,7 +315,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUk" resolve="high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrst" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsu" role="1GS8A2">
@@ -326,7 +326,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUl" resolve="very high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrsx" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsy" role="1GS8A2">
@@ -337,7 +337,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUl" resolve="very high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrs_" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsA" role="1GS8A2">
@@ -348,7 +348,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUh" resolve="very low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrsD" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsE" role="1GS8A2">
@@ -359,7 +359,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUh" resolve="very low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrsH" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsI" role="1GS8A2">
@@ -370,7 +370,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUi" resolve="low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrsL" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsM" role="1GS8A2">
@@ -381,7 +381,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUi" resolve="low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrsP" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsQ" role="1GS8A2">
@@ -392,7 +392,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUj" resolve="medium" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrsT" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsU" role="1GS8A2">
@@ -403,7 +403,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUj" resolve="medium" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrsX" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrsY" role="1GS8A2">
@@ -414,7 +414,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUk" resolve="high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrt1" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrt2" role="1GS8A2">
@@ -425,7 +425,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUk" resolve="high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrt5" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrt6" role="1GS8A2">
@@ -436,7 +436,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUl" resolve="very high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrt9" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrta" role="1GS8A2">
@@ -447,7 +447,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUl" resolve="very high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrtd" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrte" role="1GS8A2">
@@ -458,7 +458,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUh" resolve="very low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrth" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrti" role="1GS8A2">
@@ -469,7 +469,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUh" resolve="very low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrtl" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrtm" role="1GS8A2">
@@ -480,7 +480,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUi" resolve="low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrtp" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrtq" role="1GS8A2">
@@ -491,7 +491,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUi" resolve="low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrtt" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrtu" role="1GS8A2">
@@ -502,7 +502,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUj" resolve="medium" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrtx" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrty" role="1GS8A2">
@@ -513,7 +513,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUj" resolve="medium" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrt_" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrtA" role="1GS8A2">
@@ -524,7 +524,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUk" resolve="high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrtD" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrtE" role="1GS8A2">
@@ -535,7 +535,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUk" resolve="high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrtH" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrtI" role="1GS8A2">
@@ -546,7 +546,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUl" resolve="very high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrtL" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrtM" role="1GS8A2">
@@ -557,7 +557,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUl" resolve="very high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrtP" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrtQ" role="1GS8A2">
@@ -568,7 +568,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUh" resolve="very low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrtT" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrtU" role="1GS8A2">
@@ -579,7 +579,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUh" resolve="very low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrtX" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrtY" role="1GS8A2">
@@ -590,7 +590,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUi" resolve="low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQru1" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQru2" role="1GS8A2">
@@ -601,7 +601,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUi" resolve="low" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQru5" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQru6" role="1GS8A2">
@@ -612,7 +612,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUj" resolve="medium" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQru9" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrua" role="1GS8A2">
@@ -623,7 +623,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUj" resolve="medium" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrud" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrue" role="1GS8A2">
@@ -634,7 +634,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUk" resolve="high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQruh" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrui" role="1GS8A2">
@@ -645,7 +645,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUk" resolve="high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrul" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQrum" role="1GS8A2">
@@ -656,7 +656,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUl" resolve="very high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrup" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrhB" resolve="good" />
+              <ref role="1GS8Ai" node="3heog7OQrhB" />
             </node>
           </node>
           <node concept="1GS8Ag" id="3heog7OQruq" role="1GS8A2">
@@ -667,7 +667,7 @@
               <ref role="1GS8Ai" node="3sgpJkbosUl" resolve="very high" />
             </node>
             <node concept="1GS8Aj" id="3heog7OQrut" role="1GS8A3">
-              <ref role="1GS8Ai" node="3heog7OQrkx" resolve="bad" />
+              <ref role="1GS8Ai" node="3heog7OQrkx" />
             </node>
           </node>
         </node>
@@ -1766,13 +1766,13 @@
           <node concept="1GS8Ag" id="6oAzR4bb_Qi" role="1GS8A2">
             <property role="1GU8sQ" value="0.9" />
             <node concept="1GS8Aj" id="6oAzR4bb_Qj" role="1GS8A3">
-              <ref role="1GS8Ai" node="6oAzR4b94TZ" resolve="false" />
+              <ref role="1GS8Ai" node="6oAzR4b94TZ" />
             </node>
           </node>
           <node concept="1GS8Ag" id="6oAzR4bb_Qk" role="1GS8A2">
             <property role="1GU8sQ" value="0.2" />
             <node concept="1GS8Aj" id="6oAzR4bb_Ql" role="1GS8A3">
-              <ref role="1GS8Ai" node="6oAzR4b94Vw" resolve="true" />
+              <ref role="1GS8Ai" node="6oAzR4b94Vw" />
             </node>
           </node>
         </node>
@@ -1781,13 +1781,13 @@
           <node concept="1GS8Ag" id="6oAzR4bb_QI" role="1GS8A2">
             <property role="1GU8sQ" value="0.1" />
             <node concept="1GS8Aj" id="6oAzR4bb_QJ" role="1GS8A3">
-              <ref role="1GS8Ai" node="6oAzR4b94TZ" resolve="false" />
+              <ref role="1GS8Ai" node="6oAzR4b94TZ" />
             </node>
           </node>
           <node concept="1GS8Ag" id="6oAzR4bb_QK" role="1GS8A2">
             <property role="1GU8sQ" value="0.8" />
             <node concept="1GS8Aj" id="6oAzR4bb_QL" role="1GS8A3">
-              <ref role="1GS8Ai" node="6oAzR4b94Vw" resolve="true" />
+              <ref role="1GS8Ai" node="6oAzR4b94Vw" />
             </node>
           </node>
         </node>
@@ -1801,13 +1801,13 @@
           <node concept="1GS8Ag" id="6oAzR4bb_Vx" role="1GS8A2">
             <property role="1GU8sQ" value="0.9999" />
             <node concept="1GS8Aj" id="6oAzR4bb_Vy" role="1GS8A3">
-              <ref role="1GS8Ai" node="6oAzR4b94TZ" resolve="false" />
+              <ref role="1GS8Ai" node="6oAzR4b94TZ" />
             </node>
           </node>
           <node concept="1GS8Ag" id="6oAzR4bb_Vz" role="1GS8A2">
             <property role="1GU8sQ" value="0.95" />
             <node concept="1GS8Aj" id="6oAzR4bb_V$" role="1GS8A3">
-              <ref role="1GS8Ai" node="6oAzR4b94Vw" resolve="true" />
+              <ref role="1GS8Ai" node="6oAzR4b94Vw" />
             </node>
           </node>
         </node>
@@ -1816,13 +1816,13 @@
           <node concept="1GS8Ag" id="6oAzR4bb_WX" role="1GS8A2">
             <property role="1GU8sQ" value="0.0001" />
             <node concept="1GS8Aj" id="6oAzR4bb_WY" role="1GS8A3">
-              <ref role="1GS8Ai" node="6oAzR4b94TZ" resolve="false" />
+              <ref role="1GS8Ai" node="6oAzR4b94TZ" />
             </node>
           </node>
           <node concept="1GS8Ag" id="6oAzR4bb_WZ" role="1GS8A2">
             <property role="1GU8sQ" value="0.05" />
             <node concept="1GS8Aj" id="6oAzR4bb_X0" role="1GS8A3">
-              <ref role="1GS8Ai" node="6oAzR4b94Vw" resolve="true" />
+              <ref role="1GS8Ai" node="6oAzR4b94Vw" />
             </node>
           </node>
         </node>

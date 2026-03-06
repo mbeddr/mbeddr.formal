@@ -66,7 +66,7 @@
               <node concept="2OqwBi" id="2qHrqKSDelT" role="2Oq$k0">
                 <node concept="EsrRn" id="2qHrqKSDbIu" role="2Oq$k0" />
                 <node concept="3TrEf2" id="2qHrqKSDeX3" role="2OqNvi">
-                  <ref role="3Tt5mk" to="cxxa:7yiDGDCIeyJ" />
+                  <ref role="3Tt5mk" to="cxxa:7yiDGDCIeyJ" resolve="component" />
                 </node>
               </node>
               <node concept="3TrcHB" id="2qHrqKSDfT2" role="2OqNvi">

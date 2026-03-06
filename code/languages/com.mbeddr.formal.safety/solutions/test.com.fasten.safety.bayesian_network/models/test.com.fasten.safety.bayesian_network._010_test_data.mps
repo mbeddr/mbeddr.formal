@@ -43,8 +43,8 @@
         <reference id="3967784474352075796" name="parent" index="W0abx" />
         <reference id="3967784474352075798" name="child" index="W0abz" />
       </concept>
-      <concept id="3967784474352075773" name="com.fasten.safety.bayesian_network.structure.Node" flags="ng" index="W0ak8">
-        <child id="3967784474352507777" name="nodeState" index="W1NPO" />
+      <concept id="3967784474352075773" name="com.fasten.safety.bayesian_network.structure.RandomVariable" flags="ng" index="W0ak8">
+        <child id="3967784474352507777" name="probabilityDistribution" index="W1NPO" />
       </concept>
       <concept id="3967784474352075753" name="com.fasten.safety.bayesian_network.structure.BayesianNetwork" flags="ng" index="W0aks">
         <child id="3967784474352276937" name="content" index="W0VcW" />
@@ -53,7 +53,7 @@
         <property id="3967784474352629958" name="probability" index="W2lSN" />
       </concept>
       <concept id="3967784474352507780" name="com.fasten.safety.bayesian_network.structure.NodeProbabilityTable" flags="ng" index="W1NPL" />
-      <concept id="3967784474352507779" name="com.fasten.safety.bayesian_network.structure.DiscreteStateBase" flags="ng" index="W1NPQ">
+      <concept id="3967784474352507779" name="com.fasten.safety.bayesian_network.structure.DiscreteProbabilityDistributionBase" flags="ng" index="W1NPQ">
         <child id="3967784474352573855" name="categories" index="W23HE" />
       </concept>
       <concept id="7360728356658480865" name="com.fasten.safety.bayesian_network.structure.Combination" flags="ng" index="1GS8Ag">
