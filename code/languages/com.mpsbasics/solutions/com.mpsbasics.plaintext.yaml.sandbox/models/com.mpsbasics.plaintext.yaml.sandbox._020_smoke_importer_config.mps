@@ -104,10 +104,10 @@
           <node concept="2OqwBi" id="3aacpE5sLRp" role="3clFbG">
             <node concept="2OqwBi" id="3aacpE5sJ$C" role="2Oq$k0">
               <node concept="37vLTw" id="3aacpE5sJpv" role="2Oq$k0">
-                <ref role="3cqZAo" node="VNqGeRKblR" resolve="liftedFile" />
+                <ref role="3cqZAo" node="VNqGeRKblR" resolve="automaticaly_imported" />
               </node>
               <node concept="3Tsc0h" id="3aacpE5sJWR" role="2OqNvi">
-                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
               </node>
             </node>
             <node concept="2Kehj3" id="3aacpE5sP1i" role="2OqNvi" />

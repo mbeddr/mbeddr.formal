@@ -1424,7 +1424,7 @@
                   <ref role="3cqZAo" node="5lmdsXWBemS" resolve="file" />
                 </node>
                 <node concept="3Tsc0h" id="7keNUOnn938" role="2OqNvi">
-                  <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                  <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
                 </node>
               </node>
             </node>
@@ -1745,7 +1745,7 @@
                 <ref role="3cqZAo" node="5lmdsXWBemS" resolve="file" />
               </node>
               <node concept="3Tsc0h" id="5lmdsXWC_lU" role="2OqNvi">
-                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" />
+                <ref role="3TtcxE" to="bpzl:21lHZzX1IBY" resolve="childTokens" />
               </node>
             </node>
             <node concept="X8dFx" id="7keNUOlP29b" role="2OqNvi">
