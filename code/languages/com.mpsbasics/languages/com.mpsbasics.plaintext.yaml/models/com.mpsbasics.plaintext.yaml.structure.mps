@@ -275,5 +275,17 @@
     <property role="EcuMT" value="5707239247068559455" />
     <property role="TrG5h" value="ISpecialStubConcept" />
   </node>
+  <node concept="1TIwiD" id="5lmdsXWAeRN">
+    <property role="EcuMT" value="6149161506485890547" />
+    <property role="3GE5qa" value="text_level" />
+    <property role="TrG5h" value="MultipleSpaces" />
+    <property role="34LRSv" value="spaces" />
+    <ref role="1TJDcQ" node="21lHZzX1IBU" resolve="Space" />
+    <node concept="1TJgyi" id="5lmdsXWAyPL" role="1TKVEl">
+      <property role="IQ2nx" value="6149161506485972337" />
+      <property role="TrG5h" value="spaces" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

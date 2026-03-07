@@ -25,6 +25,7 @@
       <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
+      <concept id="795210086017940429" name="jetbrains.mps.lang.editor.structure.ReadOnlyStyleClassItem" flags="lg" index="xShMh" />
       <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
       <concept id="3547227755871693971" name="jetbrains.mps.lang.editor.structure.PredefinedSelector" flags="ng" index="2B6iha">
         <property id="2162403111523065396" name="cellId" index="1lyBwo" />
@@ -912,6 +913,16 @@
     <ref role="1XX52x" to="bpzl:2NBvRaDsu7I" resolve="Pipe" />
     <node concept="3F0ifn" id="2NBvRaDsuca" role="2wV5jI">
       <property role="3F0ifm" value="|" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5lmdsXWAyPM">
+    <property role="3GE5qa" value="text_level" />
+    <ref role="1XX52x" to="bpzl:5lmdsXWAeRN" resolve="MultipleSpaces" />
+    <node concept="3F0A7n" id="5lmdsXWAyPQ" role="2wV5jI">
+      <ref role="1NtTu8" to="bpzl:5lmdsXWAyPL" resolve="spaces" />
+      <node concept="xShMh" id="5lmdsXWAyPS" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
     </node>
   </node>
 </model>

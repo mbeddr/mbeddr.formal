@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:385fc850-648f-4929-816b-d5dca6ad8506(com.symo.plantuml.generator.templates@generator)">
+<model ref="r:e2fc417a-d6a4-4f9e-b368-4f6b12cff138(com.mbeddr.formal.safety.genai.generator.templates@generator)">
   <persistence version="9" />
   <languages>
     <devkit ref="a2eb3a43-fcc2-4200-80dc-c60110c4862d(jetbrains.mps.devkit.templates)" />
   </languages>
   <imports>
-    <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
+    <import index="5kcv" ref="r:d7a5b6c9-47a2-4d28-b3f8-0b7f86c97bd1(com.mbeddr.formal.safety.genai.structure)" />
   </imports>
   <registry>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -17,7 +17,7 @@
       </concept>
     </language>
   </registry>
-  <node concept="bUwia" id="25fKBAPJ1y7">
+  <node concept="bUwia" id="1oE$QGzT4pU">
     <property role="TrG5h" value="main" />
   </node>
 </model>
