@@ -21828,6 +21828,9 @@
     <node concept="26Ea6D" id="nwXZr$UPGH" role="2hID6k">
       <property role="26Ea6C" value="-XX:+IgnoreUnrecognizedVMOptions" />
     </node>
+    <node concept="26Ea6D" id="7keNUOquxtw" role="2hID6k">
+      <property role="26Ea6C" value="-XX:+UseStringDeduplication" />
+    </node>
     <node concept="26Ea6D" id="nwXZr$UPGI" role="2hID6k">
       <property role="26Ea6C" value="-ea" />
     </node>
