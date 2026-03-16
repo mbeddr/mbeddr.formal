@@ -62,8 +62,14 @@
         <child id="6750920497477143611" name="conceptArgument" index="3MHPDn" />
       </concept>
     </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+    </language>
   </registry>
   <node concept="1M2fIO" id="7s0Rn3ORqDj">
+    <property role="3GE5qa" value="knowledge_base" />
     <ref role="1M2myG" to="uzku:7s0Rn3OP0Q3" resolve="GenericNamedRootNode" />
     <node concept="1N5Pfh" id="7s0Rn3ORrgA" role="1Mr941">
       <ref role="1N5Vy1" to="uzku:7s0Rn3OP4kF" resolve="nodeRef" />
