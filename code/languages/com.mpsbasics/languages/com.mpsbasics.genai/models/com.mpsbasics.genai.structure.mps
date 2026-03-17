@@ -8,6 +8,9 @@
   <imports>
     <import index="68mc" ref="r:2a10821d-612f-4a73-b7b0-ed6b57106321(com.mbeddr.mpsutil.filepicker.structure)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
+    <import index="dvox" ref="r:9dfd3567-3b1f-4edb-85a0-3981ca2bfd8c(jetbrains.mps.lang.modelapi.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="hypd" ref="r:aa31e43e-9240-4f4d-b6db-5c1c9a86c59e(jetbrains.mps.lang.project.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
@@ -79,7 +82,7 @@
   </node>
   <node concept="1TIwiD" id="75z86$f1Vhg">
     <property role="EcuMT" value="8170409784576029776" />
-    <property role="TrG5h" value="PdfDocument" />
+    <property role="TrG5h" value="PdfDocumentKnowledgeBaseItem" />
     <property role="34LRSv" value="pdf document" />
     <property role="3GE5qa" value="knowledge_base" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -100,7 +103,7 @@
   </node>
   <node concept="1TIwiD" id="7s0Rn3OP0Q3">
     <property role="EcuMT" value="8575097167727037827" />
-    <property role="TrG5h" value="GenericNamedRootNode" />
+    <property role="TrG5h" value="NamedRootNodeKnowledgeBaseItem" />
     <property role="34LRSv" value="root node" />
     <property role="R4oN_" value="a root node representing entry in the knowledge base" />
     <property role="3GE5qa" value="knowledge_base" />
@@ -213,6 +216,40 @@
       <property role="20kJfa" value="knowledgeBase" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="75z86$f1Uqd" resolve="KnowledgeBase" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ODp2RoKRln">
+    <property role="EcuMT" value="4407163858431735127" />
+    <property role="TrG5h" value="ModelKnowledgeBaseItem" />
+    <property role="34LRSv" value="model" />
+    <property role="R4oN_" value="a model representing entry in the knowledge base" />
+    <property role="3GE5qa" value="knowledge_base" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3ODp2RoKRlo" role="PzmwI">
+      <ref role="PrY4T" node="75z86$f230C" resolve="IKnowledgeBaseEntry" />
+    </node>
+    <node concept="1TJgyj" id="3ODp2RoKRlq" role="1TKVEi">
+      <property role="IQ2ns" value="4407163858431735130" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="modelReference" />
+      <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3ODp2RoLTZR">
+    <property role="EcuMT" value="4407163858432008183" />
+    <property role="TrG5h" value="ModuleKnowledgeBaseItem" />
+    <property role="34LRSv" value="module" />
+    <property role="R4oN_" value="a module representing entry in the knowledge base" />
+    <property role="3GE5qa" value="knowledge_base" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3ODp2RoLTZS" role="PzmwI">
+      <ref role="PrY4T" node="75z86$f230C" resolve="IKnowledgeBaseEntry" />
+    </node>
+    <node concept="1TJgyj" id="3ODp2RoLTZT" role="1TKVEi">
+      <property role="IQ2ns" value="4407163858432008185" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="moduleRef" />
+      <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
     </node>
   </node>
 </model>

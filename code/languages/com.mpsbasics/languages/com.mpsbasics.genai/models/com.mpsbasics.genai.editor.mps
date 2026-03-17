@@ -202,7 +202,7 @@
   </registry>
   <node concept="24kQdi" id="75z86$f1Yd9">
     <property role="3GE5qa" value="knowledge_base" />
-    <ref role="1XX52x" to="uzku:75z86$f1Vhg" resolve="PdfDocument" />
+    <ref role="1XX52x" to="uzku:75z86$f1Vhg" resolve="PdfDocumentKnowledgeBaseItem" />
     <node concept="3EZMnI" id="75z86$f1Ylr" role="2wV5jI">
       <node concept="3F0ifn" id="75z86$f1Yof" role="3EZMnx">
         <property role="3F0ifm" value="pdf file:" />
@@ -240,7 +240,7 @@
   </node>
   <node concept="24kQdi" id="7s0Rn3OP5Xs">
     <property role="3GE5qa" value="knowledge_base" />
-    <ref role="1XX52x" to="uzku:7s0Rn3OP0Q3" resolve="GenericNamedRootNode" />
+    <ref role="1XX52x" to="uzku:7s0Rn3OP0Q3" resolve="NamedRootNodeKnowledgeBaseItem" />
     <node concept="3EZMnI" id="7s0Rn3OP6$K" role="2wV5jI">
       <node concept="3F0ifn" id="7s0Rn3OP6$O" role="3EZMnx">
         <property role="3F0ifm" value="root node ref:" />
@@ -648,6 +648,32 @@
           <ref role="1NtTu8" to="uzku:5s847lWJoWt" resolve="llmModelName" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3ODp2RoKRCL">
+    <property role="3GE5qa" value="knowledge_base" />
+    <ref role="1XX52x" to="uzku:3ODp2RoKRln" resolve="ModelKnowledgeBaseItem" />
+    <node concept="3EZMnI" id="3ODp2RoKRCN" role="2wV5jI">
+      <node concept="3F0ifn" id="3ODp2RoKRCR" role="3EZMnx">
+        <property role="3F0ifm" value="model" />
+      </node>
+      <node concept="3F1sOY" id="3ODp2RoKRCU" role="3EZMnx">
+        <ref role="1NtTu8" to="uzku:3ODp2RoKRlq" resolve="modelReference" />
+      </node>
+      <node concept="2iRfu4" id="3ODp2RoKRCQ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3ODp2RoLTZU">
+    <property role="3GE5qa" value="knowledge_base" />
+    <ref role="1XX52x" to="uzku:3ODp2RoLTZR" resolve="ModuleKnowledgeBaseItem" />
+    <node concept="3EZMnI" id="3ODp2RoLTZW" role="2wV5jI">
+      <node concept="3F0ifn" id="3ODp2RoLU00" role="3EZMnx">
+        <property role="3F0ifm" value="solution:" />
+      </node>
+      <node concept="3F1sOY" id="3ODp2RoLU03" role="3EZMnx">
+        <ref role="1NtTu8" to="uzku:3ODp2RoLTZT" resolve="moduleRef" />
+      </node>
+      <node concept="2iRfu4" id="3ODp2RoLTZZ" role="2iSdaV" />
     </node>
   </node>
 </model>
