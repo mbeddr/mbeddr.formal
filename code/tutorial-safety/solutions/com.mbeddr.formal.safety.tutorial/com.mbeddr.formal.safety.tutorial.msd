@@ -105,6 +105,7 @@
     <language slang="l:c788b046-2019-4656-8b60-8bb9bbb177b5:com.mbeddr.mpsutil.review" version="0" />
     <language slang="l:7a060fae-09e0-4372-be36-6696d6554c0e:com.mbeddr.mpsutil.review.annotation" version="0" />
     <language slang="l:792be022-0a7a-4b28-bfd8-b1b2d347b772:com.mpsbasics.core" version="0" />
+    <language slang="l:e49ae71b-b7a6-4321-84b6-ac9a82e13853:com.mpsbasics.genai" version="0" />
     <language slang="l:fde86f49-830f-414f-9c22-2a9e300eaba6:com.mpsbasics.jira" version="0" />
     <language slang="l:ece26728-2885-4b26-9f61-67d2821fc361:com.mpsbasics.pdfexporter" version="0" />
     <language slang="l:e4b230e7-8e1a-4a05-8148-8713530572c1:com.mpsbasics.words.generic" version="0" />
