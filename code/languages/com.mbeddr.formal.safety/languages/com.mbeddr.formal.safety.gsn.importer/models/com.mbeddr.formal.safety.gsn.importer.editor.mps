@@ -22,7 +22,9 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -427,8 +429,17 @@
         <node concept="2iRfu4" id="7NA168q4u_0" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7NA168q4u_1" role="3EZMnx" />
+      <node concept="3F0ifn" id="5rQdWbHHszn" role="3EZMnx">
+        <property role="3F0ifm" value="(expected format documentation in inspector)" />
+        <node concept="VechU" id="5rQdWbHHvTp" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="7NA168q4u_l" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="5rQdWbHHszl" role="6VMZX">
       <node concept="3F0ifn" id="7NA168q4u_2" role="3EZMnx">
-        <property role="3F0ifm" value="Documentation:" />
+        <property role="3F0ifm" value="Expected Format Documentation:" />
       </node>
       <node concept="3EZMnI" id="7NA168q4u_3" role="3EZMnx">
         <node concept="VPM3Z" id="7NA168q4u_4" role="3F10Kt" />
@@ -650,7 +661,7 @@
         </node>
         <node concept="2iRfu4" id="7NA168q4u_k" role="2iSdaV" />
       </node>
-      <node concept="2iRkQZ" id="7NA168q4u_l" role="2iSdaV" />
+      <node concept="2iRkQZ" id="5rQdWbHHszm" role="2iSdaV" />
     </node>
   </node>
 </model>
