@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:fdb8df35-c3a4-4d35-9a97-58382eac0db5(_900_genai_examples._010_simple_ai)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="e49ae71b-b7a6-4321-84b6-ac9a82e13853" name="com.mpsbasics.genai">
+      <concept id="635638839449277537" name="com.mpsbasics.genai.structure.Chat" flags="ng" index="m0ID9" />
+      <concept id="6271280577903103889" name="com.mpsbasics.genai.structure.ChatInterraction" flags="ng" index="FG9Z$">
+        <child id="6271280577903103890" name="prompt" index="FG9ZB" />
+        <child id="6271280577904183732" name="metaInformation" index="FKhB1" />
+      </concept>
+      <concept id="6818752302521334838" name="com.mpsbasics.genai.structure.AbstractChat" flags="ng" index="3ty2Wx">
+        <property id="6271280577903431453" name="llmModelName" index="FHpXC" />
+        <child id="635638839449333253" name="chatInterraction" index="m0T0H" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="m0ID9" id="5s847lWHtcz">
+    <property role="TrG5h" value="_010_chat" />
+    <property role="FHpXC" value="5Ux4Lu36AgE/GPT_4_O_MINI" />
+    <property role="3GE5qa" value="_010_simple_chat" />
+    <node concept="FG9Z$" id="5Ux4Lu36jsX" role="m0T0H">
+      <node concept="1Pa9Pv" id="5Ux4Lu36jsY" role="FG9ZB">
+        <node concept="1PaTwC" id="5TluDPO7akG" role="1PaQFQ">
+          <node concept="3oM_SD" id="5TluDPO7akH" role="1PaTwD">
+            <property role="3oM_SC" value="We" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDGwK" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDGwM" role="1PaTwD">
+            <property role="3oM_SC" value="having" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$8" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$9" role="1PaTwD">
+            <property role="3oM_SC" value="planning" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$a" role="1PaTwD">
+            <property role="3oM_SC" value="session" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$b" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$c" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$d" role="1PaTwD">
+            <property role="3oM_SC" value="next" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$e" role="1PaTwD">
+            <property role="3oM_SC" value="PI." />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$g" role="1PaTwD">
+            <property role="3oM_SC" value="In" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$h" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$i" role="1PaTwD">
+            <property role="3oM_SC" value="room" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$j" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$k" role="1PaTwD">
+            <property role="3oM_SC" value="Dan," />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$l" role="1PaTwD">
+            <property role="3oM_SC" value="Leonie," />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$m" role="1PaTwD">
+            <property role="3oM_SC" value="two" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$p" role="1PaTwD">
+            <property role="3oM_SC" value="Michaels" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$n" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$o" role="1PaTwD">
+            <property role="3oM_SC" value="other" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$q" role="1PaTwD">
+            <property role="3oM_SC" value="7" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$r" role="1PaTwD">
+            <property role="3oM_SC" value="people." />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG$s" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="T7rx_EDG$u" role="1PaQFQ">
+          <node concept="3oM_SD" id="T7rx_EDG$t" role="1PaTwD">
+            <property role="3oM_SC" value="How" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG_f" role="1PaTwD">
+            <property role="3oM_SC" value="many" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG_h" role="1PaTwD">
+            <property role="3oM_SC" value="people" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG_i" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG_j" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG_k" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDG_l" role="1PaTwD">
+            <property role="3oM_SC" value="room?" />
+          </node>
+        </node>
+      </node>
+      <node concept="1Pa9Pv" id="T7rx_EDG_L" role="FKhB1">
+        <node concept="1PaTwC" id="T7rx_EDG_M" role="1PaQFQ">
+          <node concept="3oM_SD" id="T7rx_EDG_N" role="1PaTwD">
+            <property role="3oM_SC" value="Used" />
+          </node>
+          <node concept="3oM_SD" id="T7rx_EDGAa" role="1PaTwD">
+            <property role="3oM_SC" value="tokens:139" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+
