@@ -73,7 +73,22 @@
             <property role="3oM_SC" value="defined" />
           </node>
           <node concept="3oM_SD" id="5hv_x4gUvdz" role="1PaTwD">
-            <property role="3oM_SC" value="hazards?" />
+            <property role="3oM_SC" value="hazards" />
+          </node>
+          <node concept="3oM_SD" id="5hv_x4gV_aw" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5hv_x4gV_ax" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5hv_x4gV_ay" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="5hv_x4gV_az" role="1PaTwD">
+            <property role="3oM_SC" value="knowledge" />
+          </node>
+          <node concept="3oM_SD" id="5hv_x4gV_a$" role="1PaTwD">
+            <property role="3oM_SC" value="base?" />
           </node>
         </node>
       </node>

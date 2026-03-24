@@ -56,20 +56,8 @@
           <node concept="3oM_SD" id="T7rx_EDG$9" role="1PaTwD">
             <property role="3oM_SC" value="planning" />
           </node>
-          <node concept="3oM_SD" id="T7rx_EDG$a" role="1PaTwD">
-            <property role="3oM_SC" value="session" />
-          </node>
-          <node concept="3oM_SD" id="T7rx_EDG$b" role="1PaTwD">
-            <property role="3oM_SC" value="for" />
-          </node>
-          <node concept="3oM_SD" id="T7rx_EDG$c" role="1PaTwD">
-            <property role="3oM_SC" value="the" />
-          </node>
-          <node concept="3oM_SD" id="T7rx_EDG$d" role="1PaTwD">
-            <property role="3oM_SC" value="next" />
-          </node>
-          <node concept="3oM_SD" id="T7rx_EDG$e" role="1PaTwD">
-            <property role="3oM_SC" value="PI." />
+          <node concept="3oM_SD" id="2ZpX2r3$4G6" role="1PaTwD">
+            <property role="3oM_SC" value="session." />
           </node>
           <node concept="3oM_SD" id="T7rx_EDG$g" role="1PaTwD">
             <property role="3oM_SC" value="In" />
@@ -84,16 +72,16 @@
             <property role="3oM_SC" value="are" />
           </node>
           <node concept="3oM_SD" id="T7rx_EDG$k" role="1PaTwD">
-            <property role="3oM_SC" value="Dan," />
+            <property role="3oM_SC" value="John," />
           </node>
           <node concept="3oM_SD" id="T7rx_EDG$l" role="1PaTwD">
-            <property role="3oM_SC" value="Leonie," />
+            <property role="3oM_SC" value="Bob," />
           </node>
           <node concept="3oM_SD" id="T7rx_EDG$m" role="1PaTwD">
             <property role="3oM_SC" value="two" />
           </node>
           <node concept="3oM_SD" id="T7rx_EDG$p" role="1PaTwD">
-            <property role="3oM_SC" value="Michaels" />
+            <property role="3oM_SC" value="Fred" />
           </node>
           <node concept="3oM_SD" id="T7rx_EDG$n" role="1PaTwD">
             <property role="3oM_SC" value="and" />
@@ -135,13 +123,10 @@
           </node>
         </node>
       </node>
-      <node concept="1Pa9Pv" id="T7rx_EDG_L" role="FKhB1">
-        <node concept="1PaTwC" id="T7rx_EDG_M" role="1PaQFQ">
-          <node concept="3oM_SD" id="T7rx_EDG_N" role="1PaTwD">
-            <property role="3oM_SC" value="Used" />
-          </node>
-          <node concept="3oM_SD" id="T7rx_EDGAa" role="1PaTwD">
-            <property role="3oM_SC" value="tokens:139" />
+      <node concept="1Pa9Pv" id="5hv_x4gVdpD" role="FKhB1">
+        <node concept="1PaTwC" id="5hv_x4gVdpE" role="1PaQFQ">
+          <node concept="3oM_SD" id="5hv_x4gVdpF" role="1PaTwD">
+            <property role="3oM_SC" value="Used tokens:125" />
           </node>
         </node>
       </node>
