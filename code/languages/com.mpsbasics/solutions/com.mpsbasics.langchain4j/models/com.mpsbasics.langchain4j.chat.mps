@@ -714,15 +714,6 @@
         <ref role="3uigEE" to="szki:5Ux4Lu3aTCL" resolve="LangChainWrapper" />
       </node>
     </node>
-    <node concept="2tJIrI" id="5Ux4Lu3dtGT" role="jymVt" />
-    <node concept="2tJIrI" id="5Ux4Lu3dsOn" role="jymVt" />
-    <node concept="312cEg" id="5Ux4Lu3aP5A" role="jymVt">
-      <property role="TrG5h" value="knowledgeBaseQuerry" />
-      <node concept="3Tqbb2" id="5Ux4Lu3aP4M" role="1tU5fm">
-        <ref role="ehGHo" to="uzku:5Ux4Lu3ajJ3" resolve="KnowledgeBaseQuery" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="5Ux4Lu3aP8u" role="jymVt" />
     <node concept="2tJIrI" id="5Ux4Lu3pxZm" role="jymVt" />
     <node concept="3clFbW" id="5Ux4Lu3aOYq" role="jymVt">
       <node concept="3cqZAl" id="5Ux4Lu3aOYs" role="3clF45" />
@@ -732,19 +723,6 @@
           <ref role="37wK5l" node="5Ux4Lu3aKjq" resolve="ChatWrapperBase" />
           <node concept="37vLTw" id="5Ux4Lu3aP1o" role="37wK5m">
             <ref role="3cqZAo" node="5Ux4Lu3aOYS" resolve="kbq" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="5Ux4Lu3aPaq" role="3cqZAp">
-          <node concept="37vLTI" id="5Ux4Lu3aQrc" role="3clFbG">
-            <node concept="37vLTw" id="5Ux4Lu3aQw4" role="37vLTx">
-              <ref role="3cqZAo" node="5Ux4Lu3aOYS" resolve="kbq" />
-            </node>
-            <node concept="2OqwBi" id="5Ux4Lu3aPnS" role="37vLTJ">
-              <node concept="Xjq3P" id="5Ux4Lu3aPao" role="2Oq$k0" />
-              <node concept="2OwXpG" id="5Ux4Lu3aPIJ" role="2OqNvi">
-                <ref role="2Oxat5" node="5Ux4Lu3aP5A" resolve="knowledgeBaseQuerry" />
-              </node>
-            </node>
           </node>
         </node>
         <node concept="3clFbF" id="5Ux4Lu3e9nC" role="3cqZAp">
