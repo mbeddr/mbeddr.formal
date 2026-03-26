@@ -45,7 +45,6 @@
     <dependency reexport="false">bc7d0863-298c-41cf-984f-a0421e757da5(com.mpsbasics.pdfbox)</dependency>
     <dependency reexport="false">e49ae71b-b7a6-4321-84b6-ac9a82e13853(com.mpsbasics.genai)</dependency>
     <dependency reexport="false">c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)</dependency>
-    <dependency reexport="false">d528b46a-a601-4237-ba3e-e0989001bf8f(com.mbeddr.formal.safety.argument.genai.pluginSolution)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />

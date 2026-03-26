@@ -29,6 +29,7 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="xlb7" ref="r:cf42fd0a-68d2-493b-8b77-961658617704(jetbrains.mps.lang.modelapi.behavior)" />
+    <import index="2xy7" ref="r:3dd1f2f5-846b-4447-ad19-8eaba01a1046(com.mpsbasics.genai.plugin)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -110,6 +111,9 @@
       </concept>
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
@@ -484,6 +488,27 @@
     <node concept="2YIFZL" id="7s0Rn3OPbVN" role="jymVt">
       <property role="TrG5h" value="convertNode2Json" />
       <node concept="3clFbS" id="7s0Rn3OPbVQ" role="3clF47">
+        <node concept="3clFbJ" id="6Knx_esyBIO" role="3cqZAp">
+          <node concept="3clFbS" id="6Knx_esyBIQ" role="3clFbx">
+            <node concept="3cpWs6" id="6Knx_esyOsQ" role="3cqZAp">
+              <node concept="2YIFZM" id="6Knx_esyQII" role="3cqZAk">
+                <ref role="37wK5l" to="2xy7:6Knx_esyJbo" resolve="useCustomSerializer" />
+                <ref role="1Pybhc" to="2xy7:6Knx_esygi2" resolve="CustomSerializers" />
+                <node concept="37vLTw" id="6Knx_esyRzD" role="37wK5m">
+                  <ref role="3cqZAo" node="7s0Rn3OPc9n" resolve="aNode" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2YIFZM" id="6Knx_esyMSK" role="3clFbw">
+            <ref role="37wK5l" to="2xy7:6Knx_esyEFj" resolve="hasCustomSerializer" />
+            <ref role="1Pybhc" to="2xy7:6Knx_esygi2" resolve="CustomSerializers" />
+            <node concept="37vLTw" id="6Knx_esyNWe" role="37wK5m">
+              <ref role="3cqZAo" node="7s0Rn3OPc9n" resolve="aNode" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6Knx_esyAQa" role="3cqZAp" />
         <node concept="3cpWs8" id="7s0Rn3OPnQY" role="3cqZAp">
           <node concept="3cpWsn" id="7s0Rn3OPnQZ" role="3cpWs9">
             <property role="TrG5h" value="obj" />
@@ -911,7 +936,6 @@
         <node concept="3Tqbb2" id="7s0Rn3OPc9m" role="1tU5fm" />
       </node>
     </node>
-    <node concept="2tJIrI" id="7s0Rn3OP9S5" role="jymVt" />
     <node concept="3Tm1VV" id="7s0Rn3OP8es" role="1B3o_S" />
   </node>
   <node concept="13h7C7" id="3yEBVmC2rG4">

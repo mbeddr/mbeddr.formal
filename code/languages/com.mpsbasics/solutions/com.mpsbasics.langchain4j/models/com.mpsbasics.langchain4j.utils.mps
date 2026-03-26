@@ -24,7 +24,6 @@
     <import index="mhe9" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.data.embedding(com.mpsbasics.langchain4j/)" />
     <import index="5zc" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.store.embedding.inmemory(com.mpsbasics.langchain4j/)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
-    <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" />
     <import index="ftn0" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.store.embedding(com.mpsbasics.langchain4j/)" />
     <import index="w6l" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.data.segment(com.mpsbasics.langchain4j/)" />
     <import index="hfdo" ref="r:3c285fbd-fd2b-46da-a500-dacc1949e8b7(com.mpsbasics.langchain4j.chat)" />
@@ -32,8 +31,6 @@
     <import index="ysyc" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.model.embedding(com.mpsbasics.langchain4j/)" />
     <import index="9dus" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.model.output(com.mpsbasics.langchain4j/)" />
     <import index="7lyl" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.rag.content.retriever(com.mpsbasics.langchain4j/)" />
-    <import index="rqif" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.service(com.mpsbasics.langchain4j/)" />
-    <import index="pnrk" ref="r:2e9fe4b4-ebaa-469c-b06d-b5c33d98cd7b(com.mbeddr.formal.safety.argument.genai.pluginSolution.model_translator)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
     <import index="8oaq" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.apache.commons.io(MPS.ThirdParty/)" />
     <import index="a0f5" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.data.document(com.mpsbasics.langchain4j/)" />
@@ -212,8 +209,18 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
+        <property id="709746936026609031" name="linkId" index="3V$3ak" />
+        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
+      </concept>
+      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
+        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -252,7 +259,15 @@
       <node concept="3Tm1VV" id="5Ux4Lu2IGr_" role="1B3o_S" />
       <node concept="10Oyi0" id="5Ux4Lu2IDTT" role="1tU5fm" />
       <node concept="3cmrfG" id="5Ux4Lu2IFis" role="33vP2m">
-        <property role="3cmrfH" value="300" />
+        <property role="3cmrfH" value="3000" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="4$EmJHcUSB3" role="jymVt">
+      <property role="TrG5h" value="MEMORY_MAX_NUMBER_OF_MESSAGES_COUNT" />
+      <node concept="3Tm1VV" id="4$EmJHcUSB4" role="1B3o_S" />
+      <node concept="10Oyi0" id="4$EmJHcUSB5" role="1tU5fm" />
+      <node concept="3cmrfG" id="4$EmJHcUSB6" role="33vP2m">
+        <property role="3cmrfH" value="30" />
       </node>
     </node>
     <node concept="2tJIrI" id="5Ux4Lu2IKID" role="jymVt" />
@@ -294,25 +309,43 @@
       <node concept="3cqZAl" id="6o$jG5tN2l4" role="3clF45" />
       <node concept="3Tm1VV" id="6o$jG5tN2l5" role="1B3o_S" />
       <node concept="3clFbS" id="6o$jG5tN2l6" role="3clF47">
-        <node concept="3clFbF" id="7OBWVCZBSV0" role="3cqZAp">
-          <node concept="37vLTI" id="7OBWVCZBTmS" role="3clFbG">
-            <node concept="2YIFZM" id="7OBWVCZBXFG" role="37vLTx">
-              <ref role="37wK5l" to="t2sn:~TokenWindowChatMemory.withMaxTokens(int,dev.langchain4j.model.TokenCountEstimator)" resolve="withMaxTokens" />
-              <ref role="1Pybhc" to="t2sn:~TokenWindowChatMemory" resolve="TokenWindowChatMemory" />
-              <node concept="37vLTw" id="5Ux4Lu2IIC6" role="37wK5m">
-                <ref role="3cqZAo" node="5Ux4Lu2IE7u" resolve="MEMORY_TOKENS_COUNT" />
-              </node>
-              <node concept="2ShNRf" id="7OBWVCZCs2v" role="37wK5m">
-                <node concept="1pGfFk" id="7OBWVCZCsWy" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="8s45:~OpenAiTokenCountEstimator.&lt;init&gt;(dev.langchain4j.model.openai.OpenAiChatModelName)" resolve="OpenAiTokenCountEstimator" />
-                  <node concept="37vLTw" id="7OBWVCZCuY0" role="37wK5m">
-                    <ref role="3cqZAo" node="5s847lWHH1u" resolve="modelName" />
+        <node concept="1X3_iC" id="4$EmJHcUY5r" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="7OBWVCZBSV0" role="8Wnug">
+            <node concept="37vLTI" id="7OBWVCZBTmS" role="3clFbG">
+              <node concept="2YIFZM" id="7OBWVCZBXFG" role="37vLTx">
+                <ref role="37wK5l" to="t2sn:~TokenWindowChatMemory.withMaxTokens(int,dev.langchain4j.model.TokenCountEstimator)" resolve="withMaxTokens" />
+                <ref role="1Pybhc" to="t2sn:~TokenWindowChatMemory" resolve="TokenWindowChatMemory" />
+                <node concept="37vLTw" id="5Ux4Lu2IIC6" role="37wK5m">
+                  <ref role="3cqZAo" node="5Ux4Lu2IE7u" resolve="MEMORY_TOKENS_COUNT" />
+                </node>
+                <node concept="2ShNRf" id="7OBWVCZCs2v" role="37wK5m">
+                  <node concept="1pGfFk" id="7OBWVCZCsWy" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="8s45:~OpenAiTokenCountEstimator.&lt;init&gt;(dev.langchain4j.model.openai.OpenAiChatModelName)" resolve="OpenAiTokenCountEstimator" />
+                    <node concept="37vLTw" id="7OBWVCZCuY0" role="37wK5m">
+                      <ref role="3cqZAo" node="5s847lWHH1u" resolve="modelName" />
+                    </node>
                   </node>
                 </node>
               </node>
+              <node concept="37vLTw" id="7OBWVCZBSUY" role="37vLTJ">
+                <ref role="3cqZAo" node="3yEBVmC3sNs" resolve="memory" />
+              </node>
             </node>
-            <node concept="37vLTw" id="7OBWVCZBSUY" role="37vLTJ">
+          </node>
+        </node>
+        <node concept="3clFbF" id="4$EmJHcULHM" role="3cqZAp">
+          <node concept="37vLTI" id="4$EmJHcUMjb" role="3clFbG">
+            <node concept="2YIFZM" id="4$EmJHcUPFB" role="37vLTx">
+              <ref role="37wK5l" to="t2sn:~MessageWindowChatMemory.withMaxMessages(int)" resolve="withMaxMessages" />
+              <ref role="1Pybhc" to="t2sn:~MessageWindowChatMemory" resolve="MessageWindowChatMemory" />
+              <node concept="37vLTw" id="4$EmJHcUXoM" role="37wK5m">
+                <ref role="3cqZAo" node="4$EmJHcUSB3" resolve="MEMORY_MAX_NUMBER_OF_MESSAGES_COUNT" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="4$EmJHcULHK" role="37vLTJ">
               <ref role="3cqZAo" node="3yEBVmC3sNs" resolve="memory" />
             </node>
           </node>

@@ -40,7 +40,7 @@
   </registry>
   <node concept="3ty2zk" id="5Ux4Lu3eDXg">
     <property role="TrG5h" value="_021_model_query" />
-    <property role="FHpXC" value="2ZpX2r3FV7h/GPT_5_1" />
+    <property role="FHpXC" value="5Ux4Lu36AgE/GPT_4_O_MINI" />
     <property role="3GE5qa" value="_020_model_query" />
     <node concept="3ty2V1" id="5Ux4Lu3hCiD" role="3ty2V2">
       <ref role="3ty2V0" node="5Ux4Lu3eFjy" resolve="current_kb" />
