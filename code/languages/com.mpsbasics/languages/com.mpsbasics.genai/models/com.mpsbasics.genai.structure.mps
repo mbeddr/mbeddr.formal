@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -135,7 +136,7 @@
     <property role="EcuMT" value="6271280577903103889" />
     <property role="3GE5qa" value="chat" />
     <property role="TrG5h" value="ChatInterraction" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5s847lWI8Yi" role="1TKVEi">
       <property role="IQ2ns" value="6271280577903103890" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -209,7 +210,7 @@
     <property role="3GE5qa" value="chat" />
     <property role="TrG5h" value="AbstractChat" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5s847lWJoWt" role="1TKVEl">
       <property role="IQ2nx" value="6271280577903431453" />
       <property role="TrG5h" value="llmModelName" />
@@ -230,7 +231,7 @@
     <property role="EcuMT" value="6818752302521335254" />
     <property role="3GE5qa" value="knowledge_base" />
     <property role="TrG5h" value="KnowledgeBaseRef" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5Ux4Lu3ajRn" role="1TKVEi">
       <property role="IQ2ns" value="6818752302521335255" />
       <property role="20kJfa" value="knowledgeBase" />

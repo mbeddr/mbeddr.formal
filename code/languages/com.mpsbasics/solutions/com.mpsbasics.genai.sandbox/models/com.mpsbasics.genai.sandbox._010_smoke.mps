@@ -113,7 +113,7 @@
     <property role="TrG5h" value="kbq001" />
     <property role="FHpXC" value="5Ux4Lu36AgE/GPT_4_O_MINI" />
     <node concept="3ty2V1" id="5Ux4Lu3hCiD" role="3ty2V2">
-      <ref role="3ty2V0" node="5Ux4Lu3eFjy" resolve="kb" />
+      <ref role="3ty2V0" node="5Ux4Lu3eFjy" resolve="current_kb" />
     </node>
     <node concept="FG9Z$" id="1ia4IClEDch" role="m0T0H">
       <node concept="1Pa9Pv" id="1ia4IClEDci" role="FG9ZB">

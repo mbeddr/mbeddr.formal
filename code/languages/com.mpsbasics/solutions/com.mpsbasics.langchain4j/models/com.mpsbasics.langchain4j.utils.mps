@@ -945,7 +945,7 @@
         <ref role="37wK5l" to="jqqh:~LoggerFactory.getLogger(java.lang.Class)" resolve="getLogger" />
         <ref role="1Pybhc" to="jqqh:~LoggerFactory" resolve="LoggerFactory" />
         <node concept="3VsKOn" id="5Ux4Lu3aTD1" role="37wK5m">
-          <ref role="3VsUkX" node="5Ux4Lu3aTCL" resolve="GptWrapper" />
+          <ref role="3VsUkX" node="5Ux4Lu3aTCL" resolve="LangChainWrapper" />
         </node>
       </node>
     </node>
@@ -1125,7 +1125,7 @@
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel.&lt;init&gt;(dev.langchain4j.model.openai.OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder)" resolve="OpenAiEmbeddingModel" />
                 <node concept="37vLTw" id="5Ux4Lu3gTA$" role="37wK5m">
-                  <ref role="3cqZAo" node="5Ux4Lu3gTAp" resolve="apiKey" />
+                  <ref role="3cqZAo" node="5Ux4Lu3gTAp" resolve="embeddingModelBuilder" />
                 </node>
               </node>
             </node>
@@ -1333,7 +1333,7 @@
                 <node concept="liA8E" id="5Ux4Lu3aTDx" role="2OqNvi">
                   <ref role="37wK5l" to="z7gj:~ConversationalRetrievalChain$Builder.contentRetriever(dev.langchain4j.rag.content.retriever.ContentRetriever)" resolve="contentRetriever" />
                   <node concept="37vLTw" id="5Ux4Lu3f_pv" role="37wK5m">
-                    <ref role="3cqZAo" node="5Ux4Lu3f_ps" resolve="from" />
+                    <ref role="3cqZAo" node="5Ux4Lu3f_ps" resolve="escr" />
                   </node>
                 </node>
               </node>
@@ -1433,7 +1433,7 @@
         </node>
         <node concept="3clFbF" id="5Ux4Lu3dliB" role="3cqZAp">
           <node concept="37vLTw" id="2ZpX2r3CuAq" role="3clFbG">
-            <ref role="3cqZAo" node="2ZpX2r3CuAj" resolve="execute" />
+            <ref role="3cqZAo" node="2ZpX2r3CuAj" resolve="res" />
           </node>
         </node>
       </node>
@@ -1577,7 +1577,7 @@
                   </node>
                 </node>
                 <node concept="37vLTw" id="75z86$f1M4L" role="37wK5m">
-                  <ref role="3cqZAo" node="2ZpX2r3CH16" resolve="prompt" />
+                  <ref role="3cqZAo" node="2ZpX2r3CH16" resolve="text" />
                 </node>
                 <node concept="Xl_RD" id="75z86$f1M4M" role="37wK5m">
                   <property role="Xl_RC" value="UTF8" />

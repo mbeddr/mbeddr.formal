@@ -309,7 +309,7 @@
             <node concept="2ShNRf" id="5s847lWJTMx" role="37vLTx">
               <node concept="1pGfFk" id="5s847lWJUFp" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="szki:6o$jG5tN2l2" />
+                <ref role="37wK5l" to="szki:6o$jG5tN2l2" resolve="GptWrapper" />
                 <node concept="2YIFZM" id="5s847lWJVlD" role="37wK5m">
                   <ref role="37wK5l" to="szki:5s847lWJLs0" resolve="model" />
                   <ref role="1Pybhc" to="szki:5s847lWJK6V" resolve="ModelConverter" />
@@ -481,7 +481,7 @@
             <node concept="3clFbF" id="5s847lWLH_x" role="3cqZAp">
               <node concept="2OqwBi" id="5s847lWLHRT" role="3clFbG">
                 <node concept="37vLTw" id="5s847lWLH_w" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5s847lWLs$q" resolve="text" />
+                  <ref role="3cqZAo" node="5s847lWLs$q" resolve="answerText" />
                 </node>
                 <node concept="2qgKlT" id="5s847lWMepC" role="2OqNvi">
                   <ref role="37wK5l" to="vdrq:7q4YwcerggR" resolve="addLine" />
@@ -489,7 +489,7 @@
                     <node concept="2pJPED" id="5s847lWLVbF" role="2pJPEn">
                       <ref role="2pJxaS" to="zqge:2cLqkTm6J5A" resolve="Line" />
                       <node concept="2pIpSj" id="5s847lWLWMO" role="2pJxcM">
-                        <ref role="2pIpSl" to="zqge:2cLqkTm6J5B" />
+                        <ref role="2pIpSl" to="zqge:2cLqkTm6J5B" resolve="elements" />
                         <node concept="2pJPED" id="5s847lWLWXM" role="28nt2d">
                           <ref role="2pJxaS" to="zqge:8D0iRqSPW4" resolve="Word" />
                           <node concept="2pJxcG" id="5s847lWLX9R" role="2pJxcM">
@@ -654,10 +654,10 @@
             <node concept="10Nm6u" id="5Ux4Lu3dtek" role="3uHU7w" />
             <node concept="3EllGN" id="5Ux4Lu3dtel" role="3uHU7B">
               <node concept="37vLTw" id="5Ux4Lu3dtem" role="3ElVtu">
-                <ref role="3cqZAo" node="5Ux4Lu3dte$" resolve="myChat" />
+                <ref role="3cqZAo" node="5Ux4Lu3dte$" resolve="myKb" />
               </node>
               <node concept="37vLTw" id="5Ux4Lu3dteD" role="3ElQJh">
-                <ref role="3cqZAo" node="5Ux4Lu3dte9" resolve="chat2Wrapper" />
+                <ref role="3cqZAo" node="5Ux4Lu3dte9" resolve="kb2Wrapper" />
               </node>
             </node>
           </node>
@@ -667,18 +667,18 @@
                 <node concept="2ShNRf" id="5Ux4Lu3dteq" role="37vLTx">
                   <node concept="1pGfFk" id="5Ux4Lu3dter" role="2ShVmc">
                     <property role="373rjd" value="true" />
-                    <ref role="37wK5l" node="5Ux4Lu3aOYq" />
+                    <ref role="37wK5l" node="5Ux4Lu3aOYq" resolve="KnowledgeBaseQueryWrapper" />
                     <node concept="37vLTw" id="5Ux4Lu3dtes" role="37wK5m">
-                      <ref role="3cqZAo" node="5Ux4Lu3dte$" resolve="myChat" />
+                      <ref role="3cqZAo" node="5Ux4Lu3dte$" resolve="myKb" />
                     </node>
                   </node>
                 </node>
                 <node concept="3EllGN" id="5Ux4Lu3dtet" role="37vLTJ">
                   <node concept="37vLTw" id="5Ux4Lu3dteu" role="3ElVtu">
-                    <ref role="3cqZAo" node="5Ux4Lu3dte$" resolve="myChat" />
+                    <ref role="3cqZAo" node="5Ux4Lu3dte$" resolve="myKb" />
                   </node>
                   <node concept="37vLTw" id="5Ux4Lu3dteI" role="3ElQJh">
-                    <ref role="3cqZAo" node="5Ux4Lu3dte9" resolve="chat2Wrapper" />
+                    <ref role="3cqZAo" node="5Ux4Lu3dte9" resolve="kb2Wrapper" />
                   </node>
                 </node>
               </node>
@@ -688,10 +688,10 @@
         <node concept="3clFbF" id="5Ux4Lu3dtev" role="3cqZAp">
           <node concept="3EllGN" id="5Ux4Lu3dtew" role="3clFbG">
             <node concept="37vLTw" id="5Ux4Lu3dtex" role="3ElVtu">
-              <ref role="3cqZAo" node="5Ux4Lu3dte$" resolve="myChat" />
+              <ref role="3cqZAo" node="5Ux4Lu3dte$" resolve="myKb" />
             </node>
             <node concept="37vLTw" id="5Ux4Lu3dteN" role="3ElQJh">
-              <ref role="3cqZAo" node="5Ux4Lu3dte9" resolve="chat2Wrapper" />
+              <ref role="3cqZAo" node="5Ux4Lu3dte9" resolve="kb2Wrapper" />
             </node>
           </node>
         </node>
@@ -806,7 +806,7 @@
                   <ref role="3cqZAo" node="5s847lWKdwd" resolve="myChat" />
                 </node>
                 <node concept="3Tsc0h" id="5Ux4Lu3dohD" role="2OqNvi">
-                  <ref role="3TtcxE" to="uzku:zifywuOqS5" />
+                  <ref role="3TtcxE" to="uzku:zifywuOqS5" resolve="chatInterraction" />
                 </node>
               </node>
               <node concept="1yVyf7" id="5Ux4Lu3dohE" role="2OqNvi" />
@@ -821,7 +821,7 @@
                 <ref role="3cqZAo" node="5Ux4Lu3doh$" resolve="chatInterraction" />
               </node>
               <node concept="3TrEf2" id="5Ux4Lu3dohJ" role="2OqNvi">
-                <ref role="3Tt5mk" to="uzku:5s847lWI8Yi" />
+                <ref role="3Tt5mk" to="uzku:5s847lWI8Yi" resolve="prompt" />
               </node>
             </node>
             <node concept="3Tqbb2" id="5Ux4Lu3dohK" role="1tU5fm">
@@ -840,7 +840,7 @@
                     <ref role="3cqZAo" node="5Ux4Lu3dohG" resolve="prompt" />
                   </node>
                   <node concept="3Tsc0h" id="5Ux4Lu3dohS" role="2OqNvi">
-                    <ref role="3TtcxE" to="zqge:2cLqkTm6weS" />
+                    <ref role="3TtcxE" to="zqge:2cLqkTm6weS" resolve="lines" />
                   </node>
                 </node>
                 <node concept="3$u5V9" id="5Ux4Lu3dohT" role="2OqNvi">
@@ -932,7 +932,7 @@
                     <node concept="2pJPED" id="5Ux4Lu3doiy" role="2pJPEn">
                       <ref role="2pJxaS" to="zqge:2cLqkTm6J5A" resolve="Line" />
                       <node concept="2pIpSj" id="5Ux4Lu3doiz" role="2pJxcM">
-                        <ref role="2pIpSl" to="zqge:2cLqkTm6J5B" />
+                        <ref role="2pIpSl" to="zqge:2cLqkTm6J5B" resolve="elements" />
                         <node concept="2pJPED" id="5Ux4Lu3doi$" role="28nt2d">
                           <ref role="2pJxaS" to="zqge:8D0iRqSPW4" resolve="Word" />
                           <node concept="2pJxcG" id="5Ux4Lu3doi_" role="2pJxcM">
@@ -962,7 +962,7 @@
                 <ref role="3cqZAo" node="5Ux4Lu3doh$" resolve="chatInterraction" />
               </node>
               <node concept="3TrEf2" id="5Ux4Lu3doiH" role="2OqNvi">
-                <ref role="3Tt5mk" to="uzku:5s847lWI8YQ" />
+                <ref role="3Tt5mk" to="uzku:5s847lWI8YQ" resolve="answer" />
               </node>
             </node>
           </node>

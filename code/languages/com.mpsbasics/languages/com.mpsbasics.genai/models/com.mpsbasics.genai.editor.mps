@@ -361,7 +361,7 @@
                           <property role="2bfB8j" value="true" />
                           <property role="373rjd" value="true" />
                           <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
-                          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                          <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                           <node concept="3Tm1VV" id="fhch$icu7$" role="1B3o_S" />
                           <node concept="3clFb_" id="fhch$icu7M" role="jymVt">
                             <property role="TrG5h" value="actionPerformed" />
@@ -508,7 +508,7 @@
                               </node>
                             </node>
                             <node concept="2AHcQZ" id="fhch$icu7U" role="2AJF6D">
-                              <ref role="2AI5Lk" to="wyt6:~Override" />
+                              <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                             </node>
                           </node>
                         </node>
@@ -548,7 +548,7 @@
           <property role="3F0ifm" value="Answer:" />
         </node>
         <node concept="3F1sOY" id="5s847lWI8YO" role="3EZMnx">
-          <ref role="1NtTu8" to="uzku:5s847lWI8YQ" />
+          <ref role="1NtTu8" to="uzku:5s847lWI8YQ" resolve="answer" />
         </node>
         <node concept="2iRfu4" id="5s847lWI8YP" role="2iSdaV" />
         <node concept="pkWqt" id="5s847lWMzDT" role="pqm2j">
@@ -623,7 +623,7 @@
         <node concept="VPM3Z" id="5Ux4Lu3arXd" role="3F10Kt" />
         <node concept="3XFhqQ" id="5Ux4Lu3arXh" role="3EZMnx" />
         <node concept="3F2HdR" id="5Ux4Lu3arXk" role="3EZMnx">
-          <ref role="1NtTu8" to="uzku:5Ux4Lu3ajRl" />
+          <ref role="1NtTu8" to="uzku:5Ux4Lu3ajRl" resolve="knowledgeBases" />
           <node concept="2iRkQZ" id="5Ux4Lu3arXn" role="2czzBx" />
           <node concept="VPM3Z" id="5Ux4Lu3arXo" role="3F10Kt" />
         </node>
@@ -631,7 +631,7 @@
       </node>
       <node concept="3F0ifn" id="5Ux4Lu3arX7" role="3EZMnx" />
       <node concept="3F2HdR" id="5Ux4Lu3arX2" role="3EZMnx">
-        <ref role="1NtTu8" to="uzku:zifywuOqS5" />
+        <ref role="1NtTu8" to="uzku:zifywuOqS5" resolve="chatInterraction" />
         <node concept="2iRkQZ" id="5Ux4Lu3arX3" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="5Ux4Lu3arX4" role="3EZMnx" />

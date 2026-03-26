@@ -1235,7 +1235,7 @@
           </node>
           <node concept="2OqwBi" id="3ODp2RoKN8I" role="2GsD0m">
             <node concept="37vLTw" id="3ODp2RoKN8J" role="2Oq$k0">
-              <ref role="3cqZAo" node="3ODp2RoKN8Y" resolve="aModel" />
+              <ref role="3cqZAo" node="3ODp2RoKN8Y" resolve="aModule" />
             </node>
             <node concept="liA8E" id="3ODp2RoKPuR" role="2OqNvi">
               <ref role="37wK5l" to="lui2:~SModule.getModels()" resolve="getModels" />
@@ -1251,7 +1251,7 @@
                   <node concept="1rXfSq" id="3ODp2RoKN8Q" role="25WWJ7">
                     <ref role="37wK5l" node="3ODp2RoKChd" resolve="getTextSegments" />
                     <node concept="2GrUjf" id="3ODp2RoKN8R" role="37wK5m">
-                      <ref role="2Gs0qQ" node="3ODp2RoKN8H" resolve="root" />
+                      <ref role="2Gs0qQ" node="3ODp2RoKN8H" resolve="aModel" />
                     </node>
                     <node concept="37vLTw" id="3ODp2RoKN8S" role="37wK5m">
                       <ref role="3cqZAo" node="3ODp2RoKN90" resolve="chatModelName" />
@@ -1379,7 +1379,7 @@
             <node concept="3clFbF" id="3ODp2RoL3Fr" role="3cqZAp">
               <node concept="2OqwBi" id="3ODp2RoL6DC" role="3clFbG">
                 <node concept="37vLTw" id="3ODp2RoL3Fq" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3ODp2RoKWNs" resolve="objects" />
+                  <ref role="3cqZAo" node="3ODp2RoKWNs" resolve="variables" />
                 </node>
                 <node concept="TSZUe" id="3ODp2RoLbnh" role="2OqNvi">
                   <node concept="2pJPEk" id="3ODp2RoLesh" role="25WWJ7">
@@ -1412,7 +1412,7 @@
                             <ref role="37wK5l" node="7s0Rn3OPbVN" resolve="convertNode2Json" />
                             <ref role="1Pybhc" node="7s0Rn3OP8er" resolve="GenericNode2JsonConverter" />
                             <node concept="2GrUjf" id="3ODp2RoLbV3" role="37wK5m">
-                              <ref role="2Gs0qQ" node="3ODp2RoL2QV" resolve="r" />
+                              <ref role="2Gs0qQ" node="3ODp2RoL2QV" resolve="crtRoot" />
                             </node>
                           </node>
                         </node>
@@ -1681,7 +1681,7 @@
             <node concept="2pJPED" id="3ODp2RoLUI$" role="2pJPEn">
               <ref role="2pJxaS" to="21pk:3L4lRB2GdlQ" resolve="JSONObject" />
               <node concept="2pIpSj" id="3ODp2RoLUI_" role="2pJxcM">
-                <ref role="2pIpSl" to="21pk:3L4lRB2Gdr9" />
+                <ref role="2pIpSl" to="21pk:3L4lRB2Gdr9" resolve="variables" />
                 <node concept="36biLy" id="3ODp2RoLUIA" role="28nt2d">
                   <node concept="37vLTw" id="3ODp2RoLUIB" role="36biLW">
                     <ref role="3cqZAo" node="3ODp2RoLUHL" resolve="variables" />
@@ -1757,7 +1757,7 @@
             <ref role="37wK5l" node="3ODp2RoKN8z" resolve="getTextSegments" />
             <ref role="1Pybhc" node="3ODp2RoKwo4" resolve="TextSegmentsProducer" />
             <node concept="37vLTw" id="3ODp2RoLUJ2" role="37wK5m">
-              <ref role="3cqZAo" node="3ODp2RoLUIQ" resolve="crtModel" />
+              <ref role="3cqZAo" node="3ODp2RoLUIQ" resolve="crtModule" />
             </node>
             <node concept="37vLTw" id="3ODp2RoLUJ3" role="37wK5m">
               <ref role="3cqZAo" node="3ODp2RoLUJ4" resolve="chatModelName" />
