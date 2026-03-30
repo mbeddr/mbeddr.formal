@@ -11,9 +11,6 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
-      <concept id="1228934484974" name="jetbrains.mps.lang.test.structure.PressKeyStatement" flags="nn" index="yd1bK">
-        <child id="1228934507814" name="keyStrokes" index="yd6KS" />
-      </concept>
       <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
         <property id="1883175908513350760" name="description" index="3YCmrE" />
         <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
@@ -27,16 +24,14 @@
         <property id="1932269937152561478" name="useLabelSelection" index="OXtK3" />
         <property id="1229432188737" name="isLastPosition" index="ZRATv" />
       </concept>
+      <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">
+        <property id="5097124989038916363" name="projectPath" index="2XOHcw" />
+      </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
       </concept>
       <concept id="1225989773458" name="jetbrains.mps.lang.test.structure.InvokeIntentionStatement" flags="nn" index="1MFPAf">
         <reference id="1225989811227" name="intention" index="1MFYO6" />
-      </concept>
-    </language>
-    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
-      <concept id="1207318242772" name="jetbrains.mps.lang.plugin.structure.KeyMapKeystroke" flags="ng" index="pLAjd">
-        <property id="1207318242774" name="keycode" index="pLAjf" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -48,9 +43,6 @@
       <concept id="2787004330863233384" name="com.symo.plantuml.structure.PlantUmlPlainTextFragment" flags="ng" index="uemj4">
         <child id="2787004330863233391" name="text" index="uemj3" />
       </concept>
-      <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
-        <child id="521530426072143424" name="substructure" index="3eE$XC" />
-      </concept>
       <concept id="1983696557348555164" name="com.symo.plantuml.structure.StartUmlCommand" flags="ng" index="1pqCwu" />
       <concept id="1983696557348555132" name="com.symo.plantuml.structure.PlantUmlDiagramBase" flags="ng" index="1pqCzY">
         <property id="8400506447498256066" name="zoom" index="145Srp" />
@@ -58,7 +50,6 @@
       </concept>
       <concept id="1983696557348555133" name="com.symo.plantuml.structure.PlantUmlComponentDiagram" flags="ng" index="1pqCzZ" />
       <concept id="1983696557348555523" name="com.symo.plantuml.structure.EndUmlCommand" flags="ng" index="1pqCE1" />
-      <concept id="1983696557348896981" name="com.symo.plantuml.structure.ComponentDeclaration" flags="ng" index="1pts5n" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -179,91 +170,8 @@
       </node>
     </node>
   </node>
-  <node concept="LiM7Y" id="7JbQva82kqo">
-    <property role="TrG5h" value="deleteSubstructurePlainTextSpec_start_bracket" />
-    <property role="3YCmrE" value="splits the plaintext specification" />
-    <node concept="1qefOq" id="7JbQva82kqp" role="25YQCW">
-      <node concept="1pqCzZ" id="7JbQva82kqq" role="1qenE9">
-        <property role="145Srp" value="100" />
-        <property role="TrG5h" value="test" />
-        <node concept="1pqCwu" id="7JbQva82kqr" role="1pqCzW" />
-        <node concept="1pts5n" id="7JbQva82kqY" role="1pqCzW">
-          <property role="TrG5h" value="Parent" />
-          <node concept="LIFWc" id="7JbQva82kvF" role="lGtFl">
-            <property role="ZRATv" value="true" />
-            <property role="OXtK3" value="true" />
-            <property role="p6zMq" value="1" />
-            <property role="p6zMs" value="1" />
-            <property role="LIFWd" value="Constant_kze313_a0g0a" />
-          </node>
-          <node concept="1pts5n" id="7JbQva82kr1" role="3eE$XC">
-            <property role="TrG5h" value="Child" />
-          </node>
-        </node>
-        <node concept="1pqCE1" id="7JbQva82kqC" role="1pqCzW" />
-      </node>
-    </node>
-    <node concept="1qefOq" id="7JbQva82kqD" role="25YQFr">
-      <node concept="1pqCzZ" id="7JbQva82kqE" role="1qenE9">
-        <property role="145Srp" value="100" />
-        <property role="TrG5h" value="test" />
-        <node concept="1pqCwu" id="7JbQva82kqF" role="1pqCzW" />
-        <node concept="1pts5n" id="7JbQva82kr5" role="1pqCzW">
-          <property role="TrG5h" value="Parent" />
-        </node>
-        <node concept="1pqCE1" id="7JbQva82kqU" role="1pqCzW" />
-      </node>
-    </node>
-    <node concept="3clFbS" id="7JbQva82kqV" role="LjaKd">
-      <node concept="yd1bK" id="7JbQva82krb" role="3cqZAp">
-        <node concept="pLAjd" id="7JbQva82krc" role="yd6KS">
-          <property role="pLAjf" value="VK_BACK_SPACE" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="LiM7Y" id="7JbQva82kvo">
-    <property role="TrG5h" value="deleteSubstructurePlainTextSpec_end_bracket" />
-    <property role="3YCmrE" value="splits the plaintext specification" />
-    <node concept="1qefOq" id="7JbQva82kvp" role="25YQCW">
-      <node concept="1pqCzZ" id="7JbQva82kvq" role="1qenE9">
-        <property role="145Srp" value="100" />
-        <property role="TrG5h" value="test" />
-        <node concept="1pqCwu" id="7JbQva82kvr" role="1pqCzW" />
-        <node concept="1pts5n" id="7JbQva82kvs" role="1pqCzW">
-          <property role="TrG5h" value="Parent" />
-          <node concept="LIFWc" id="7JbQva82kvu" role="lGtFl">
-            <property role="ZRATv" value="true" />
-            <property role="OXtK3" value="true" />
-            <property role="p6zMq" value="1" />
-            <property role="p6zMs" value="1" />
-            <property role="LIFWd" value="Constant_kze313_c0g0a" />
-          </node>
-          <node concept="1pts5n" id="7JbQva82kvt" role="3eE$XC">
-            <property role="TrG5h" value="Child" />
-          </node>
-        </node>
-        <node concept="1pqCE1" id="7JbQva82kvv" role="1pqCzW" />
-      </node>
-    </node>
-    <node concept="1qefOq" id="7JbQva82kvw" role="25YQFr">
-      <node concept="1pqCzZ" id="7JbQva82kvx" role="1qenE9">
-        <property role="145Srp" value="100" />
-        <property role="TrG5h" value="test" />
-        <node concept="1pqCwu" id="7JbQva82kvy" role="1pqCzW" />
-        <node concept="1pts5n" id="7JbQva82kvz" role="1pqCzW">
-          <property role="TrG5h" value="Parent" />
-        </node>
-        <node concept="1pqCE1" id="7JbQva82kv$" role="1pqCzW" />
-      </node>
-    </node>
-    <node concept="3clFbS" id="7JbQva82kv_" role="LjaKd">
-      <node concept="yd1bK" id="7JbQva82kvA" role="3cqZAp">
-        <node concept="pLAjd" id="7JbQva82kvB" role="yd6KS">
-          <property role="pLAjf" value="VK_BACK_SPACE" />
-        </node>
-      </node>
-    </node>
+  <node concept="2XOHcx" id="6Kf5KB75Mz6">
+    <property role="2XOHcw" value="${mbeddr.formal.home}/code/languages/com.fasten.symo/" />
   </node>
 </model>
 

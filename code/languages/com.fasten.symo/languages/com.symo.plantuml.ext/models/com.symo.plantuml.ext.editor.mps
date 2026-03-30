@@ -62,7 +62,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <reference id="1081339532145" name="keyMap" index="34QXea" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -219,7 +218,6 @@
         <node concept="3EZMnI" id="40kNClymTpL" role="_tjki">
           <node concept="3F0ifn" id="40kNClye_5B" role="3EZMnx">
             <property role="3F0ifm" value="{" />
-            <ref role="34QXea" to="85xj:7JbQva7Zq7H" resolve="deleteSubstructure" />
             <node concept="ljvvj" id="40kNClyzowl" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -251,7 +249,6 @@
           <node concept="3F0ifn" id="40kNClye_5I" role="3EZMnx">
             <property role="3F0ifm" value="}" />
             <ref role="1ERwB7" to="85xj:q$1bLSaUHI" resolve="delete" />
-            <ref role="34QXea" to="85xj:7JbQva7Zq7H" resolve="deleteSubstructure" />
           </node>
           <node concept="l2Vlx" id="40kNClywV0t" role="2iSdaV" />
         </node>

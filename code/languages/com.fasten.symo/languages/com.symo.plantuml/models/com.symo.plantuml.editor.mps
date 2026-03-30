@@ -34,7 +34,6 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
@@ -69,14 +68,6 @@
       <concept id="1164824717996" name="jetbrains.mps.lang.editor.structure.CellMenuDescriptor" flags="ng" index="OXEIz">
         <child id="1164824815888" name="cellMenuPart" index="OY2wv" />
       </concept>
-      <concept id="1136916919141" name="jetbrains.mps.lang.editor.structure.CellKeyMapItem" flags="lg" index="2PxR9H">
-        <child id="1136916998332" name="keystroke" index="2PyaAO" />
-        <child id="1136920925604" name="executeFunction" index="2PL9iG" />
-      </concept>
-      <concept id="1136916976737" name="jetbrains.mps.lang.editor.structure.CellKeyMapKeystroke" flags="ng" index="2Py5lD">
-        <property id="1136923970224" name="keycode" index="2PWKIS" />
-      </concept>
-      <concept id="1136917288805" name="jetbrains.mps.lang.editor.structure.CellKeyMap_ExecuteFunction" flags="in" index="2PzhpH" />
       <concept id="1078938745671" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclaration" flags="ig" index="PKFIW">
         <child id="7033942394258392116" name="overridenEditorComponent" index="1PM95z" />
       </concept>
@@ -105,10 +96,6 @@
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
       <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
-      <concept id="1081293058843" name="jetbrains.mps.lang.editor.structure.CellKeyMapDeclaration" flags="ig" index="325Ffw">
-        <reference id="1139445935125" name="applicableConcept" index="1chiOs" />
-        <child id="1136930944870" name="item" index="2QnnpI" />
-      </concept>
       <concept id="3383245079137382180" name="jetbrains.mps.lang.editor.structure.StyleClass" flags="ig" index="14StLt" />
       <concept id="3360401466585705291" name="jetbrains.mps.lang.editor.structure.CellModel_ContextAssistant" flags="ng" index="18a60v" />
       <concept id="7342352913006985500" name="jetbrains.mps.lang.editor.structure.TransformationLocation_Completion" flags="ng" index="3eGOoe" />
@@ -143,7 +130,6 @@
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
-        <reference id="1081339532145" name="keyMap" index="34QXea" />
         <reference id="1139959269582" name="actionMap" index="1ERwB7" />
         <child id="1142887637401" name="renderingCondition" index="pqm2j" />
         <child id="1164826688380" name="menuDescriptor" index="P5bDN" />
@@ -452,7 +438,6 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
-      <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
     </language>
   </registry>
@@ -830,7 +815,6 @@
         <node concept="3EZMnI" id="40kNClymTpL" role="_tjki">
           <node concept="3F0ifn" id="40kNClye_5B" role="3EZMnx">
             <property role="3F0ifm" value="{" />
-            <ref role="34QXea" node="7JbQva7Zq7H" resolve="deleteSubstructure" />
             <node concept="ljvvj" id="40kNClyzowl" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -862,7 +846,6 @@
           <node concept="3F0ifn" id="40kNClye_5I" role="3EZMnx">
             <property role="3F0ifm" value="}" />
             <ref role="1ERwB7" node="q$1bLSaUHI" resolve="delete" />
-            <ref role="34QXea" node="7JbQva7Zq7H" resolve="deleteSubstructure" />
           </node>
           <node concept="l2Vlx" id="40kNClywV0t" role="2iSdaV" />
         </node>
@@ -3557,31 +3540,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="325Ffw" id="7JbQva7Zq7H">
-    <property role="3GE5qa" value="diagram.uml.component" />
-    <property role="TrG5h" value="deleteSubstructure" />
-    <ref role="1chiOs" to="udwj:1I7wo92W$3l" resolve="ComponentDeclaration" />
-    <node concept="2PxR9H" id="7JbQva7Zq7I" role="2QnnpI">
-      <node concept="2PzhpH" id="7JbQva7Zq7K" role="2PL9iG">
-        <node concept="3clFbS" id="7JbQva7Zq7L" role="2VODD2">
-          <node concept="3clFbF" id="7JbQva7Zq8V" role="3cqZAp">
-            <node concept="2OqwBi" id="7JbQva7ZuHm" role="3clFbG">
-              <node concept="2OqwBi" id="7JbQva7Zqrk" role="2Oq$k0">
-                <node concept="0GJ7k" id="7JbQva7Zq8U" role="2Oq$k0" />
-                <node concept="3Tsc0h" id="7JbQva7Zr$g" role="2OqNvi">
-                  <ref role="3TtcxE" to="udwj:sWQiz9_Dp0" resolve="substructure" />
-                </node>
-              </node>
-              <node concept="2Kehj3" id="7JbQva7Z$l_" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="2Py5lD" id="7JbQva7Zq82" role="2PyaAO">
-        <property role="2PWKIS" value="VK_BACK_SPACE" />
       </node>
     </node>
   </node>

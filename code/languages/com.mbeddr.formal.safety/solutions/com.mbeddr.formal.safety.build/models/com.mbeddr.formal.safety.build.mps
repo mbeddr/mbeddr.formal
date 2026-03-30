@@ -19581,6 +19581,21 @@
         </node>
       </node>
     </node>
+    <node concept="398rNT" id="3E0v2G6nPXn" role="1l3spd">
+      <property role="TrG5h" value="symo" />
+      <node concept="398BVA" id="3E0v2G6nPXo" role="398pKh">
+        <ref role="398BVh" node="6ucyvMUDFdp" resolve="mbeddr.formal.home" />
+        <node concept="2Ry0Ak" id="3E0v2G6nPXp" role="iGT6I">
+          <property role="2Ry0Am" value="code" />
+          <node concept="2Ry0Ak" id="3E0v2G6nPXq" role="2Ry0An">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="3E0v2G6nPYs" role="2Ry0An">
+              <property role="2Ry0Am" value="com.fasten.symo" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="398rNT" id="6ucyvMUDFdw" role="1l3spd">
       <property role="TrG5h" value="mbeddr.formal.nusmv.code" />
       <node concept="398BVA" id="6ucyvMUDFdx" role="398pKh">
@@ -19783,6 +19798,9 @@
       <node concept="L2wRC" id="4m8f5phpNfv" role="39821P">
         <ref role="L2wRA" node="4m8f5phpE8J" resolve="test.com.mpsbasics.plaintext.yaml" />
       </node>
+      <node concept="L2wRC" id="3E0v2G6nQdE" role="39821P">
+        <ref role="L2wRA" node="3E0v2G6nPWj" resolve="test.com.symo.plantuml" />
+      </node>
       <node concept="L2wRC" id="6ucyvMUDFe2" role="39821P">
         <ref role="L2wRA" node="6ucyvMUDFee" resolve="test.mbeddr.formal.nusmv" />
       </node>
@@ -19913,6 +19931,51 @@
                   <property role="2Ry0Am" value="test.com.mpsbasics.plaintext.yaml" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtA" id="3E0v2G6nPWj" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="test.com.symo.plantuml" />
+        <property role="3LESm3" value="e418c943-7f69-4c2a-8d74-bca69da7d8e5" />
+        <property role="aoJFB" value="eYcmk9QOlj/sources_and_tests" />
+        <node concept="398BVA" id="3E0v2G6nPYX" role="3LF7KH">
+          <ref role="398BVh" node="3E0v2G6nPXn" resolve="syml" />
+          <node concept="2Ry0Ak" id="3E0v2G6nPZL" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="3E0v2G6nQ0c" role="2Ry0An">
+              <property role="2Ry0Am" value="test.com.symo.plantuml" />
+              <node concept="2Ry0Ak" id="3E0v2G6nQ0v" role="2Ry0An">
+                <property role="2Ry0Am" value="test.com.symo.plantuml.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="3E0v2G6nQ0U" role="3bR37C">
+          <node concept="3bR9La" id="3E0v2G6nQ0V" role="1SiIV1">
+            <ref role="3bR37D" node="3fV34643ilv" resolve="com.symo.plantuml" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="3E0v2G6nQ1e" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="3E0v2G6nQ1f" role="1HemKq">
+            <node concept="398BVA" id="3E0v2G6nQ0W" role="3LXTmr">
+              <ref role="398BVh" node="3E0v2G6nPXn" resolve="symo" />
+              <node concept="2Ry0Ak" id="3E0v2G6nQ0X" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3E0v2G6nQ0Y" role="2Ry0An">
+                  <property role="2Ry0Am" value="test.com.symo.plantuml" />
+                  <node concept="2Ry0Ak" id="3E0v2G6nQ0Z" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="3E0v2G6nQ1g" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
           </node>
         </node>
@@ -20957,6 +21020,9 @@
       <property role="TrG5h" value="all" />
       <node concept="22LTRM" id="4m8f5phpNi2" role="22LTRK">
         <ref role="22LTRN" node="4m8f5phpE8J" resolve="test.com.mpsbasics.plaintext.yaml" />
+      </node>
+      <node concept="22LTRM" id="3E0v2G6nQe_" role="22LTRK">
+        <ref role="22LTRN" node="3E0v2G6nPWj" resolve="test.com.symo.plantuml" />
       </node>
       <node concept="22LTRM" id="6ucyvMUDFeU" role="22LTRK">
         <ref role="22LTRN" node="6ucyvMUDFee" resolve="test.mbeddr.formal.nusmv" />
