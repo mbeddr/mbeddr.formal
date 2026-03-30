@@ -14,6 +14,7 @@
     <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:7f01a836-f049-4bcd-b088-277c30f5a7be:com.mbeddr.formal.safety.argument.genai" version="0" />
     <language slang="l:e8a04d94-4307-4f88-95a2-25f7c4f39437:com.mbeddr.formal.safety.gsn" version="3" />
+    <language slang="l:17da266c-02d9-4bbd-b69b-8a656b49f45c:com.mbeddr.formal.safety.hara" version="0" />
     <language slang="l:d3a0fd26-445a-466c-900e-10444ddfed52:com.mbeddr.mpsutil.filepicker" version="0" />
     <language slang="l:e49ae71b-b7a6-4321-84b6-ac9a82e13853:com.mpsbasics.genai" version="0" />
     <language slang="l:e4b230e7-8e1a-4a05-8148-8713530572c1:com.mpsbasics.words.generic" version="0" />
