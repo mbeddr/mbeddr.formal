@@ -1182,13 +1182,6 @@
       </node>
     </node>
   </node>
-  <node concept="13h7C7" id="3VQuWXzokb">
-    <property role="3GE5qa" value="statements.if_do" />
-    <ref role="13h7C2" to="o3hv:2DjQaubD1ZR" resolve="Choice" />
-    <node concept="13hLZK" id="3VQuWXzokc" role="13h7CW">
-      <node concept="3clFbS" id="3VQuWXzokd" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="5mrC_4tzMFy">
     <property role="3GE5qa" value="process" />
     <ref role="13h7C2" to="o3hv:4_pH3zvds0L" resolve="AbstractProcessBase" />

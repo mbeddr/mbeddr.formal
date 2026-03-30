@@ -277,12 +277,6 @@
       </node>
     </node>
   </node>
-  <node concept="13h7C7" id="43FRfGK1zWO">
-    <ref role="13h7C2" to="fnq2:43FRfGJUFO5" resolve="TestStep" />
-    <node concept="13hLZK" id="43FRfGK1zWP" role="13h7CW">
-      <node concept="3clFbS" id="43FRfGK1zWQ" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="3YQnHt5o8q">
     <ref role="13h7C2" to="fnq2:43FRfGJUEcN" resolve="TestsCollection" />
     <node concept="13hLZK" id="3YQnHt5o8r" role="13h7CW">

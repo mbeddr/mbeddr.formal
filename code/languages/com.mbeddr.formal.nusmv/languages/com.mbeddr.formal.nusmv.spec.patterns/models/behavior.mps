@@ -230,13 +230,6 @@
       <node concept="17QB3L" id="6xNJt7lIOiS" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="25dEoZdLqXc">
-    <property role="3GE5qa" value="tl_patterns.property" />
-    <ref role="13h7C2" to="aoh3:6WmpcHMKsaj" resolve="AbstractProperty" />
-    <node concept="13hLZK" id="25dEoZdLqXd" role="13h7CW">
-      <node concept="3clFbS" id="25dEoZdLqXe" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="6hWVnwAhZEW">
     <property role="3GE5qa" value="tl_patterns.scope" />
     <ref role="13h7C2" to="aoh3:6hWVnwAhZui" resolve="BetweenScope" />

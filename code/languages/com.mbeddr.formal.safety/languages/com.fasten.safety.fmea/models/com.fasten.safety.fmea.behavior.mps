@@ -384,13 +384,6 @@
       <node concept="17QB3L" id="6xogEbf4UZg" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="6xogEbf71u9">
-    <property role="3GE5qa" value="base" />
-    <ref role="13h7C2" to="6k2r:31P83hzF$d$" resolve="FailureModeDefinitionBase" />
-    <node concept="13hLZK" id="6xogEbf71ua" role="13h7CW">
-      <node concept="3clFbS" id="6xogEbf71ub" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="FkaPoE6mQE">
     <property role="3GE5qa" value="base.potential_failure_cause" />
     <ref role="13h7C2" to="6k2r:FkaPoE6mQD" resolve="PotentialFailureCauseBase" />

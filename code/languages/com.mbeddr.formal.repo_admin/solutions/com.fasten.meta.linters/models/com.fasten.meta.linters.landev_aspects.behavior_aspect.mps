@@ -91,6 +91,7 @@
     <ref role="2wR3oD" to="i8ub:3bllPAaPI3W" resolve="empty_behavior_aspects" />
   </node>
   <node concept="2wR3oc" id="59o88jXjprO">
+    <property role="3dJkfZ" value="true" />
     <ref role="2wR3oD" to="i8ub:3cj_LrgPwdF" resolve="mandatory_virtual_method_override" />
     <node concept="2j1LYv" id="59o88jXjrZ5" role="2j1YRv">
       <node concept="2j1LYi" id="59o88jXjrZ6" role="2j1YQj">
@@ -115,6 +116,41 @@
       <node concept="Xl_RD" id="59o88jXjpVf" role="2j1LYg">
         <property role="Xl_RC" value="com.mbeddr.formal.base.expressions" />
       </node>
+    </node>
+    <node concept="3dgnlM" id="i8$NZChcF9" role="3dgnlQ">
+      <property role="3dgnlN" value="Virtual method 'renderReadable' from concept Expression, defined in language com.mbeddr.formal.base.expressions, must be implemented in sub-concept ArrayAccessExpression or in one of its ancestors." />
+      <property role="3qxsY3" value="1002556979818902191" />
+      <property role="3qxsSb" value="r:031d7dc7-c45b-4e86-8ffb-786f8e8e85f6(com.mbeddr.formal.spin.c.core.behavior)" />
+    </node>
+    <node concept="3dgnlM" id="i8$NZChcFa" role="3dgnlQ">
+      <property role="3dgnlN" value="Virtual method 'renderReadable' from concept Expression, defined in language com.mbeddr.formal.base.expressions, must be implemented in sub-concept DefineRef or in one of its ancestors." />
+      <property role="3qxsY3" value="2417655713197091228" />
+      <property role="3qxsSb" value="r:031d7dc7-c45b-4e86-8ffb-786f8e8e85f6(com.mbeddr.formal.spin.c.core.behavior)" />
+    </node>
+    <node concept="3dgnlM" id="i8$NZChcFb" role="3dgnlQ">
+      <property role="3dgnlN" value="Virtual method 'renderReadable' from concept Expression, defined in language com.mbeddr.formal.base.expressions, must be implemented in sub-concept FunctionMacroCall or in one of its ancestors." />
+      <property role="3qxsY3" value="1684811100606012883" />
+      <property role="3qxsSb" value="r:2f85448a-6ae7-46b9-a1ce-27bf2bfb5fc1(com.mbeddr.formal.nusmv.ext.behavior)" />
+    </node>
+    <node concept="3dgnlM" id="i8$NZChcFc" role="3dgnlQ">
+      <property role="3dgnlN" value="Virtual method 'renderReadable' from concept Expression, defined in language com.mbeddr.formal.base.expressions, must be implemented in sub-concept NotReifiedVarRef or in one of its ancestors." />
+      <property role="3qxsY3" value="4259790252816338804" />
+      <property role="3qxsSb" value="r:414a1b7a-992d-4940-8403-a1cd761f99b3(com.mbeddr.formal.nusmv.importer.behavior)" />
+    </node>
+    <node concept="3dgnlM" id="i8$NZChcFd" role="3dgnlQ">
+      <property role="3dgnlN" value="Virtual method 'renderReadable' from concept Expression, defined in language com.mbeddr.formal.base.expressions, must be implemented in sub-concept ProcRef or in one of its ancestors." />
+      <property role="3qxsY3" value="6174591375232313624" />
+      <property role="3qxsSb" value="r:55c09d3a-85de-4c18-ab69-cda997480b6a(com.mbeddr.formal.spin.behavior)" />
+    </node>
+    <node concept="3dgnlM" id="i8$NZChcFe" role="3dgnlQ">
+      <property role="3dgnlN" value="Virtual method 'renderReadable' from concept Expression, defined in language com.mbeddr.formal.base.expressions, must be implemented in sub-concept StateRef or in one of its ancestors." />
+      <property role="3qxsY3" value="2295987781861392930" />
+      <property role="3qxsSb" value="r:cde44992-ee7c-42ec-9844-123dc63448f9(com.mbeddr.formal.nusmv.sm.behavior)" />
+    </node>
+    <node concept="3dgnlM" id="i8$NZChcFf" role="3dgnlQ">
+      <property role="3dgnlN" value="Virtual method 'renderReadable' from concept Expression, defined in language com.mbeddr.formal.base.expressions, must be implemented in sub-concept StateVariableRef or in one of its ancestors." />
+      <property role="3qxsY3" value="2295987781860490912" />
+      <property role="3qxsSb" value="r:cde44992-ee7c-42ec-9844-123dc63448f9(com.mbeddr.formal.nusmv.sm.behavior)" />
     </node>
   </node>
 </model>

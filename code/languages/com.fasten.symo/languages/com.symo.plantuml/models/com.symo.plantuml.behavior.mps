@@ -269,13 +269,6 @@
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
-  <node concept="13h7C7" id="1I7wo92VgAv">
-    <property role="3GE5qa" value="base" />
-    <ref role="13h7C2" to="udwj:1I7wo92VgAu" resolve="PlantUmlCommandBase" />
-    <node concept="13hLZK" id="1I7wo92VgAw" role="13h7CW">
-      <node concept="3clFbS" id="1I7wo92VgAx" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="1I7wo92VgEv">
     <property role="3GE5qa" value="diagram.uml" />
     <ref role="13h7C2" to="udwj:1I7wo92VgAs" resolve="StartUmlCommand" />
@@ -673,20 +666,6 @@
         </node>
       </node>
       <node concept="17QB3L" id="1I7wo92X5eo" role="3clF45" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="1I7wo92YKVK">
-    <property role="3GE5qa" value="diagram.uml.component" />
-    <ref role="13h7C2" to="udwj:1I7wo92XVu3" resolve="ComponentsChannel" />
-    <node concept="13hLZK" id="1I7wo92YKVL" role="13h7CW">
-      <node concept="3clFbS" id="1I7wo92YKVM" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="1I7wo92YLnc">
-    <property role="3GE5qa" value="diagram.uml.component" />
-    <ref role="13h7C2" to="udwj:1I7wo92Y2Ts" resolve="IChannelEndpoint" />
-    <node concept="13hLZK" id="1I7wo92YLnd" role="13h7CW">
-      <node concept="3clFbS" id="1I7wo92YLne" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="1I7wo92YLoP">
@@ -2772,13 +2751,6 @@
       <node concept="17QB3L" id="q$1bLSlaYw" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="q$1bLSou5x">
-    <property role="3GE5qa" value="diagram.uml.sequence.message" />
-    <ref role="13h7C2" to="udwj:q$1bLSou5h" resolve="ISequenceDiagramMessageSourceOrTarget" />
-    <node concept="13hLZK" id="q$1bLSou5y" role="13h7CW">
-      <node concept="3clFbS" id="q$1bLSou5z" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="q$1bLSou6U">
     <property role="3GE5qa" value="diagram.uml.sequence.participant" />
     <ref role="13h7C2" to="udwj:q$1bLSou5i" resolve="SequenceDiagramParticipantBaseRef" />
@@ -3496,13 +3468,6 @@
       <node concept="3Tm1VV" id="q$1bLTZ9B9" role="1B3o_S" />
       <node concept="17QB3L" id="q$1bLTZa1c" role="3clF45" />
       <node concept="3clFbS" id="q$1bLTZ9Bb" role="3clF47" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="q$1bLT8gaf">
-    <property role="3GE5qa" value="diagram.uml.statemachine.transition" />
-    <ref role="13h7C2" to="udwj:q$1bLT8gad" resolve="IPlantUmlStatemachineTransitionEndpoint" />
-    <node concept="13hLZK" id="q$1bLT8gag" role="13h7CW">
-      <node concept="3clFbS" id="q$1bLT8gah" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="q$1bLT8gbS">
@@ -4324,13 +4289,6 @@
     </node>
     <node concept="13hLZK" id="7xI8QH0ZYAx" role="13h7CW">
       <node concept="3clFbS" id="7xI8QH0ZYAy" role="2VODD2" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="6AkCKBbagTo">
-    <property role="3GE5qa" value="base" />
-    <ref role="13h7C2" to="udwj:6AkCKBb5HK9" resolve="IHaveStereotype" />
-    <node concept="13hLZK" id="6AkCKBbagTp" role="13h7CW">
-      <node concept="3clFbS" id="6AkCKBbagTq" role="2VODD2" />
     </node>
   </node>
 </model>
