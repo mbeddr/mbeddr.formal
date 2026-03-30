@@ -52,12 +52,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="2wR3oc" id="6wRVFFwzf92">
-    <ref role="2wR3oD" to="mjm5:1WMZ_AZ2QHN" resolve="not_updated_resolve_info" />
-  </node>
-  <node concept="2wR3oc" id="6wRVFFwzf93">
-    <ref role="2wR3oD" to="mjm5:ST9rMmXyNm" resolve="empty_root_nodes" />
-  </node>
   <node concept="2wR3oc" id="4lfwJVE_q9k">
     <property role="3dJkfZ" value="true" />
     <ref role="2wR3oD" to="54p5:4lfwJVEz_X5" resolve="not_used_linters" />
@@ -90,36 +84,6 @@
       </node>
     </node>
   </node>
-  <node concept="2wR3oc" id="59o88jXknTy">
-    <ref role="2wR3oD" to="mjm5:7x_pNDEe0ZH" resolve="named_root_nodes_with_same_name_in_same_model" />
-  </node>
-  <node concept="2wR3oc" id="59o88jXkokh">
-    <property role="3dJkfZ" value="true" />
-    <ref role="2wR3oD" to="mjm5:30a3800NEqs" resolve="root_node_name_contains_only_ascii_characters" />
-    <node concept="3dgnlM" id="59o88jXkupE" role="3dgnlQ">
-      <property role="3dgnlN" value="The root node contains invalid characters. Allowed characters are: '[a-zA-Z0-9_ .-]+'" />
-      <property role="3qxsY3" value="9296093159908589" />
-      <property role="3qxsSb" value="r:d0c90e07-6fcc-4e69-9139-5c3fe98e4772(com.mbeddr.formal.safety.gsn.doc.migration)" />
-    </node>
-    <node concept="3dgnlM" id="59o88jXkupF" role="3dgnlQ">
-      <property role="3dgnlN" value="The root node contains invalid characters. Allowed characters are: '[a-zA-Z0-9_ .-]+'" />
-      <property role="3qxsY3" value="5649897883596794487" />
-      <property role="3qxsSb" value="r:d7458d19-60ce-4f7a-a838-9ee1ecb1ba89(com.fasten.safety.hiphops.sandbox._010_smoke)" />
-    </node>
-    <node concept="3dgnlM" id="59o88jXkupG" role="3dgnlQ">
-      <property role="3dgnlN" value="The root node contains invalid characters. Allowed characters are: '[a-zA-Z0-9_ .-]+'" />
-      <property role="3qxsY3" value="5649897883596809288" />
-      <property role="3qxsSb" value="r:d7458d19-60ce-4f7a-a838-9ee1ecb1ba89(com.fasten.safety.hiphops.sandbox._010_smoke)" />
-    </node>
-    <node concept="3dgnlM" id="59o88jXkupH" role="3dgnlQ">
-      <property role="3dgnlN" value="The root node contains invalid characters. Allowed characters are: '[a-zA-Z0-9_ .-]+'" />
-      <property role="3qxsY3" value="3731513482755160528" />
-      <property role="3qxsSb" value="r:d7272d49-be4c-48bc-8ddb-711079cdb64b(test.fasten.safety.hiphops._010_arch_models)" />
-    </node>
-  </node>
-  <node concept="2wR3oc" id="59o88jXkoEz">
-    <ref role="2wR3oD" to="mjm5:7e2zrEq$4i5" resolve="nodes_commented_out_but_referenced_from_non_commented_models" />
-  </node>
   <node concept="2wR3oc" id="59o88jXkp5i">
     <ref role="2wR3oD" to="mjm5:3bllPAaXzR6" resolve="root_nodes_with_too_many_descendants" />
     <node concept="2j1LYv" id="59o88jXkqrY" role="2j1YRv">
@@ -130,9 +94,6 @@
         <property role="3cmrfH" value="20000" />
       </node>
     </node>
-  </node>
-  <node concept="2wR3oc" id="59o88jXkres">
-    <ref role="2wR3oD" to="mjm5:5FxxG02Td7T" resolve="node_with_smodelattribute_other_than_attribute" />
   </node>
 </model>
 

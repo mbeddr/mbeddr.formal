@@ -48,7 +48,18 @@
     </language>
   </registry>
   <node concept="2wR3oc" id="6wRVFFwyrDM">
+    <property role="3dJkfZ" value="true" />
     <ref role="2wR3oD" to="ewdl:3pz5R1DPwMT" resolve="cast_to_specific_SNodeType" />
+    <node concept="3dgnlM" id="i8$NZC_ikA" role="3dgnlQ">
+      <property role="3dgnlN" value="dubious cast expression in 'buildVar' from rootNode 'NuSMVModuleBuilder' from model 'com.mbeddr.formal.nusmv.importer.rt.importer'. For casting to SNodeType use 'exp : ConceptName' or 'exp as ConceptName'" />
+      <property role="3qxsY3" value="3364675079445057740" />
+      <property role="3qxsSb" value="r:05f86b9b-63c3-4ff9-a22b-af6fdd8e5519(com.mbeddr.formal.nusmv.importer.rt.importer)" />
+    </node>
+    <node concept="3dgnlM" id="i8$NZC_ikB" role="3dgnlQ">
+      <property role="3dgnlN" value="dubious cast expression in 'buildVar' from rootNode 'NuSMVModuleBuilder' from model 'com.mbeddr.formal.nusmv.importer.rt.importer'. For casting to SNodeType use 'exp : ConceptName' or 'exp as ConceptName'" />
+      <property role="3qxsY3" value="3118481524218084476" />
+      <property role="3qxsSb" value="r:05f86b9b-63c3-4ff9-a22b-af6fdd8e5519(com.mbeddr.formal.nusmv.importer.rt.importer)" />
+    </node>
   </node>
   <node concept="2wR3oc" id="4lfwJVE_q9k">
     <property role="3dJkfZ" value="true" />
