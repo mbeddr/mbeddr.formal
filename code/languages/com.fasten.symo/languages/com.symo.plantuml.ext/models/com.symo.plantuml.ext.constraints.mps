@@ -15,6 +15,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
     <import index="cxxa" ref="r:5e39fe7c-31dd-463f-8717-17f345022d0e(com.symo.plantuml.ext.structure)" implicit="true" />
   </imports>
   <registry>
@@ -65,7 +66,7 @@
               <node concept="2OqwBi" id="2qHrqKSDelT" role="2Oq$k0">
                 <node concept="EsrRn" id="2qHrqKSDbIu" role="2Oq$k0" />
                 <node concept="3TrEf2" id="2qHrqKSDeX3" role="2OqNvi">
-                  <ref role="3Tt5mk" to="cxxa:7yiDGDCIeyJ" />
+                  <ref role="3Tt5mk" to="cxxa:7yiDGDCIeyJ" resolve="component" />
                 </node>
               </node>
               <node concept="3TrcHB" id="2qHrqKSDfT2" role="2OqNvi">

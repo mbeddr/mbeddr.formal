@@ -26,15 +26,6 @@
       <concept id="3786325089106496663" name="org.mpsqa.lint.generic.structure.ReuseCheckableScript" flags="ng" index="2wR3oc">
         <reference id="3786325089106496690" name="script" index="2wR3oD" />
       </concept>
-      <concept id="7223240310078271419" name="org.mpsqa.lint.generic.structure.ILinterResultsContainer" flags="ngI" index="3dgnlL">
-        <property id="7223240310078527797" name="failOnlyOnNewResults" index="3dJkfZ" />
-        <child id="7223240310078271420" name="violations" index="3dgnlQ" />
-      </concept>
-      <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
-        <property id="7223240310078271417" name="result" index="3dgnlN" />
-        <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
-        <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
-      </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
       <concept id="4733039728785194814" name="jetbrains.mps.lang.modelapi.structure.NamedNodeReference" flags="ng" index="ZC_QK">
@@ -48,21 +39,9 @@
     </language>
   </registry>
   <node concept="2wR3oc" id="6wRVFFwyrDM">
-    <property role="3dJkfZ" value="true" />
     <ref role="2wR3oD" to="ewdl:3pz5R1DPwMT" resolve="cast_to_specific_SNodeType" />
-    <node concept="3dgnlM" id="i8$NZC_ikA" role="3dgnlQ">
-      <property role="3dgnlN" value="dubious cast expression in 'buildVar' from rootNode 'NuSMVModuleBuilder' from model 'com.mbeddr.formal.nusmv.importer.rt.importer'. For casting to SNodeType use 'exp : ConceptName' or 'exp as ConceptName'" />
-      <property role="3qxsY3" value="3364675079445057740" />
-      <property role="3qxsSb" value="r:05f86b9b-63c3-4ff9-a22b-af6fdd8e5519(com.mbeddr.formal.nusmv.importer.rt.importer)" />
-    </node>
-    <node concept="3dgnlM" id="i8$NZC_ikB" role="3dgnlQ">
-      <property role="3dgnlN" value="dubious cast expression in 'buildVar' from rootNode 'NuSMVModuleBuilder' from model 'com.mbeddr.formal.nusmv.importer.rt.importer'. For casting to SNodeType use 'exp : ConceptName' or 'exp as ConceptName'" />
-      <property role="3qxsY3" value="3118481524218084476" />
-      <property role="3qxsSb" value="r:05f86b9b-63c3-4ff9-a22b-af6fdd8e5519(com.mbeddr.formal.nusmv.importer.rt.importer)" />
-    </node>
   </node>
   <node concept="2wR3oc" id="4lfwJVE_q9k">
-    <property role="3dJkfZ" value="true" />
     <ref role="2wR3oD" to="54p5:4lfwJVEz_X5" resolve="not_used_linters" />
     <node concept="2j1LYv" id="4lfwJVE_q9l" role="2j1YRv">
       <node concept="2j1LYi" id="4lfwJVE_q9m" role="2j1YQj">
@@ -73,11 +52,6 @@
           <ref role="2aWVGs" node="4lfwJVE_q9k" resolve="not_used_linters" />
         </node>
       </node>
-    </node>
-    <node concept="3dgnlM" id="3E0v2G6oLS4" role="3dgnlQ">
-      <property role="3dgnlN" value="The Script is not re-used" />
-      <property role="3qxsY3" value="5052464840671276581" />
-      <property role="3qxsSb" value="r:3e5efb66-1a16-46d1-89d2-26142a5dcdaa(org.mpsqa.lint.generic.linters_library.meta)" />
     </node>
   </node>
   <node concept="2wR3oc" id="33N0Tlwri2j">

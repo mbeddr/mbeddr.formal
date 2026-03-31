@@ -40,6 +40,9 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -76,6 +79,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -117,6 +121,110 @@
           <property role="3PKj8l" value="FF8000" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Jn$RV31w1l">
+    <property role="EcuMT" value="4312077340877652053" />
+    <property role="TrG5h" value="Ontology_old" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="ontology" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3Jn$RV31w1m" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="1h8BwgBGhyu" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="52bCGvYEnPv" role="1TKVEi">
+      <property role="IQ2ns" value="5803911524651728223" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="description_old" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+      <node concept="asaX9" id="1h8BwgBGn5n" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.fasten.req.ontology.structure.Ontology&quot;" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="3Jn$RV31w2n" role="1TKVEi">
+      <property role="IQ2ns" value="4312077340877652119" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="concepts_old" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7gUa1Zsy25c" resolve="IOntologyContent_old" />
+      <node concept="asaX9" id="1h8BwgBGn5y" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.fasten.req.ontology.structure.Ontology&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="1h8BwgBGn4N" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.fasten.req.ontology&quot;" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3Jn$RV31w1o">
+    <property role="EcuMT" value="4312077340877652056" />
+    <property role="TrG5h" value="OntologyConcept_old" />
+    <property role="34LRSv" value="concept" />
+    <property role="R4oN_" value="a concept from the ontology" />
+    <property role="3GE5qa" value="ontology" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3Jn$RV31w1p" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="7gUa1Zsy25i" role="PzmwI">
+      <ref role="PrY4T" to="6wa3:7gUa1Zsy25c" resolve="IOntologyContent" />
+    </node>
+    <node concept="1TJgyj" id="3Jn$RV31w1r" role="1TKVEi">
+      <property role="IQ2ns" value="4312077340877652059" />
+      <property role="20kJfa" value="superConcept_old" />
+      <ref role="20lvS9" node="3Jn$RV31w1o" resolve="OntologyConcept_old" />
+      <node concept="asaX9" id="1h8BwgBGn63" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.fasten.req.ontology.structure.OntologyConcept&quot;" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="1UJ51yZ_hOp" role="1TKVEi">
+      <property role="IQ2ns" value="2211008038588194073" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="attributes_old" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="1wKSXwEBhCv" resolve="OntologyConceptRef_old" />
+      <node concept="asaX9" id="1h8BwgBGn5H" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.fasten.req.ontology.structure.OntologyConcept&quot;" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="1f_hJh22Fy7" role="1TKVEi">
+      <property role="IQ2ns" value="1433630071281334407" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="explanation_old" />
+      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
+      <node concept="asaX9" id="1h8BwgBGn5S" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.fasten.req.ontology.structure.OntologyConcept&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="1h8BwgBGn4Z" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.fasten.req.ontology&quot;" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1wKSXwEBhCv">
+    <property role="EcuMT" value="1743143573359761951" />
+    <property role="TrG5h" value="OntologyConceptRef_old" />
+    <property role="3GE5qa" value="ontology" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="1wKSXwEBhCw" role="1TKVEi">
+      <property role="IQ2ns" value="1743143573359761952" />
+      <property role="20kJfa" value="ontologyConcept_old" />
+      <ref role="20lvS9" node="3Jn$RV31w1o" resolve="OntologyConcept_old" />
+      <node concept="asaX9" id="1h8BwgBGn6e" role="lGtFl">
+        <property role="YLQ7P" value="The link was moved to concept &quot;com.fasten.req.ontology.structure.OntologyConceptRef&quot;" />
+      </node>
+    </node>
+    <node concept="asaX9" id="1h8BwgBGn5b" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.fasten.req.ontology&quot;" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7gUa1Zsy25c">
+    <property role="EcuMT" value="8375050574357864780" />
+    <property role="TrG5h" value="IOntologyContent_old" />
+    <property role="3GE5qa" value="ontology" />
+    <node concept="asaX9" id="1h8BwgBGn4A" role="lGtFl">
+      <property role="YLQ7P" value="The concept was moved to language &quot;com.fasten.req.ontology&quot;" />
     </node>
   </node>
   <node concept="1TIwiD" id="7gUa1Zsy25o">

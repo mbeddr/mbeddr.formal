@@ -445,7 +445,7 @@
     </node>
   </node>
   <node concept="21ASy4" id="2c2ooLvbYuK">
-    <property role="TrG5h" value="_100_minimal_cutsets_ft" />
+    <property role="TrG5h" value="_100_minimal_cutsets" />
     <node concept="21ATtk" id="2c2ooLvbYuL" role="3CrHoS">
       <property role="TrG5h" value="_100_minimal_cutsets_top_event" />
     </node>
@@ -876,7 +876,7 @@
     </node>
   </node>
   <node concept="21ASy4" id="5VDMD6QeqW2">
-    <property role="TrG5h" value="_101_minimal_cutsets_modularized_ft" />
+    <property role="TrG5h" value="_101_minimal_cutsets_modularized" />
     <node concept="21ATtk" id="5VDMD6QeqW3" role="3CrHoS">
       <property role="TrG5h" value="_101_minimal_cutsets_top_event" />
     </node>
@@ -2242,7 +2242,7 @@
     </node>
   </node>
   <node concept="21ASy4" id="7JDlEF1VBtm">
-    <property role="TrG5h" value="_110_sensitivity_analysis_ft" />
+    <property role="TrG5h" value="_110_sensitivity_analysis" />
     <node concept="21ATtk" id="7JDlEF1VBtn" role="3CrHoS">
       <property role="TrG5h" value="_110_sensitivity_analysis_top_event" />
     </node>

@@ -103,16 +103,6 @@
       <property role="3qxsY3" value="4746002316342300821" />
       <property role="3qxsSb" value="r:161dadb5-0fef-403d-8aac-88c1e026ee75(org.mpsqa.lint.generic.linters_library.models)" />
     </node>
-    <node concept="3dgnlM" id="3E0v2G6qVmj" role="3dgnlQ">
-      <property role="3dgnlN" value="The Script is not re-used" />
-      <property role="3qxsY3" value="6381041005308799204" />
-      <property role="3qxsSb" value="r:161dadb5-0fef-403d-8aac-88c1e026ee75(org.mpsqa.lint.generic.linters_library.models)" />
-    </node>
-    <node concept="3dgnlM" id="3E0v2G6qVmk" role="3dgnlQ">
-      <property role="3dgnlN" value="The Script is not re-used" />
-      <property role="3qxsY3" value="5052464840671276581" />
-      <property role="3qxsSb" value="r:3e5efb66-1a16-46d1-89d2-26142a5dcdaa(org.mpsqa.lint.generic.linters_library.meta)" />
-    </node>
   </node>
   <node concept="2wR3oc" id="33N0Tlwri2j">
     <ref role="2wR3oD" to="54p5:652KpqR3Kk5" resolve="skipped_evaluation_linters" />
