@@ -10,9 +10,6 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <dependencies>
-    <dependency reexport="false">8ffff4a3-5838-458b-8c6d-7143a3c423b7(com.mbeddr.formal.spin.hdl#2291855968617432607)</dependency>
-  </dependencies>
   <languageVersions>
     <language slang="l:c5eeb6dc-2f3d-45ae-a7be-929daeb6bda1:de.itemis.mps.hacks.xmodelgen" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -26,7 +23,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="8fa6837b-ded6-4b1e-a190-ce0b2256e987(com.mbeddr.formal.spin.genplan)" version="0" />
-    <module reference="8ffff4a3-5838-458b-8c6d-7143a3c423b7(com.mbeddr.formal.spin.hdl#2291855968617432607)" version="0" />
   </dependencyVersions>
 </solution>
 

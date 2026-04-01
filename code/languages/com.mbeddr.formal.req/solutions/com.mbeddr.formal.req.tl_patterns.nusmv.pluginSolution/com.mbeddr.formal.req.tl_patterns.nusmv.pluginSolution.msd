@@ -21,8 +21,6 @@
     <dependency reexport="false">b9f682be-3e03-4c97-ba0a-ac14cf89f12a(com.mbeddr.formal.req.tl_patterns.nusmv)</dependency>
     <dependency reexport="false">e9ce245b-3106-45ed-8e5b-aff820d09b85(com.mbeddr.formal.base.tooling)</dependency>
     <dependency reexport="false">fdd69818-de3d-4ebf-9ec6-17ea152db151(com.mpsbasics.docx4j.core)</dependency>
-    <dependency reexport="false">92d2ea16-5a42-4fdf-a676-c7604efe3504(de.slisson.mps.richtext)</dependency>
-    <dependency reexport="false">7ef3bfd1-5c44-48e1-9906-6b55babec257(com.mbeddr.formal.req.base.pluginSolution)</dependency>
     <dependency reexport="false">71bb25aa-20fa-4c18-8954-1b176576f52d(com.mpsbasics.docx4j.lib)</dependency>
     <dependency reexport="false">5ff577d1-1817-495b-9d6c-ff7b52c68609(com.mbeddr.formal.req.tl_patterns)</dependency>
   </dependencies>
@@ -34,7 +32,6 @@
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
     <language slang="l:760a0a8c-eabb-4521-8bfd-65db761a9ba3:jetbrains.mps.baseLanguage.logging" version="0" />
     <language slang="l:daafa647-f1f7-4b0b-b096-69cd7c8408c0:jetbrains.mps.baseLanguage.regexp" version="0" />
-    <language slang="l:63650c59-16c8-498a-99c8-005c7ee9515d:jetbrains.mps.lang.access" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
     <language slang="l:446c26eb-2b7b-4bf0-9b35-f83fa582753e:jetbrains.mps.lang.modelapi" version="0" />
     <language slang="l:28f9e497-3b42-4291-aeba-0a1039153ab1:jetbrains.mps.lang.plugin" version="6" />
@@ -58,7 +55,6 @@
     <module reference="001b2375-3bd5-4d5e-9958-6b3f62dc8548(com.mbeddr.formal.nusmv)" version="0" />
     <module reference="692c2a6d-09c5-40f7-98f0-1f4b59860c1b(com.mbeddr.formal.nusmv.pluginSolution)" version="0" />
     <module reference="0deccdfd-196b-4d8c-895e-0d6cb8014dfd(com.mbeddr.formal.req.base)" version="0" />
-    <module reference="7ef3bfd1-5c44-48e1-9906-6b55babec257(com.mbeddr.formal.req.base.pluginSolution)" version="0" />
     <module reference="5ff577d1-1817-495b-9d6c-ff7b52c68609(com.mbeddr.formal.req.tl_patterns)" version="0" />
     <module reference="b9f682be-3e03-4c97-ba0a-ac14cf89f12a(com.mbeddr.formal.req.tl_patterns.nusmv)" version="0" />
     <module reference="1164b831-8cda-44ed-89c4-3c28e36c6eea(com.mbeddr.formal.req.tl_patterns.nusmv.pluginSolution)" version="0" />

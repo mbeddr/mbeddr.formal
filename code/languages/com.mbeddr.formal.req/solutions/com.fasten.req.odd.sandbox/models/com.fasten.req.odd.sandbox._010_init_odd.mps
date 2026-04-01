@@ -5,7 +5,6 @@
     <devkit ref="b0ef168f-6f92-4bd0-82f3-cf0521463683(fasten.requirements)" />
   </languages>
   <imports>
-    <import index="d1jy" ref="r:9e73f239-cf51-478a-abcd-90185f3a81b5(com.fasten.req.ontology.lib.wordnet)" />
     <import index="sqn2" ref="r:d135465b-72d0-4d0c-8b44-c34f75c351c6(com.fasten.req.ontology.lib.czarnecki)" />
     <import index="1o88" ref="r:638d8f46-2b56-4b35-8d3c-bc5e75fa2ac5(com.fasten.req.ontology.lib.koopman)" />
   </imports>

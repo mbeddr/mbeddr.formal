@@ -5,10 +5,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="2" />
   </languages>
-  <imports>
-    <import index="7qe3" ref="r:65dc22a9-884e-4aad-aa27-16060900ad59(_010_spin_hdl_high_prio@generator)" />
-    <import index="bq77" ref="r:dab6a141-de92-48cd-8f26-7c440995c1ab(_020_spin_hdl_main@generator)" />
-  </imports>
+  <imports />
   <registry>
     <language id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan">
       <concept id="1152961914448136207" name="jetbrains.mps.lang.generator.plan.structure.LanguageEntry" flags="ng" index="2Qf6Nf">

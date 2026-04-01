@@ -13,8 +13,6 @@
   </facets>
   <dependencies>
     <dependency reexport="false">4556fd77-6edd-4716-8b05-e35fd684d04d(com.mpsbasics.plaintext.yaml)</dependency>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
-    <dependency reexport="false">39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:4556fd77-6edd-4716-8b05-e35fd684d04d:com.mpsbasics.plaintext.yaml" version="0" />
@@ -38,9 +36,7 @@
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
-    <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
-    <module reference="39983771-4e9b-401b-a1a9-1da6c777c843(MPS.ThirdParty)" version="0" />
     <module reference="4556fd77-6edd-4716-8b05-e35fd684d04d(com.mpsbasics.plaintext.yaml)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="dddc4dbe-91d7-47f4-bbf2-95bb56c2c5fa(test.com.mpsbasics.plaintext.yaml)" version="0" />

@@ -8,8 +8,6 @@
   </languages>
   <imports>
     <import index="8js5" ref="r:896eeadf-a850-400e-b516-f92dfb5b5cd9(com.mbeddr.formal.base.pluginSolution.plugin)" />
-    <import index="u2ih" ref="r:ab00bc1f-8fc9-4bdf-9a87-1e2713aafade(com.fasten.req.odd.structure)" />
-    <import index="lfcg" ref="r:0f6163dd-0b56-4e88-b067-4067979ca8c2(com.fasten.req.odd.editor)" />
     <import index="6wa3" ref="r:fe70b1ce-4411-47cc-b7d1-2d3fab0737d6(com.fasten.req.ontology.structure)" />
     <import index="xqhh" ref="r:5b0991b2-2f18-4b5e-86ab-dfe0e8034b59(com.fasten.req.ontology.editor)" />
   </imports>

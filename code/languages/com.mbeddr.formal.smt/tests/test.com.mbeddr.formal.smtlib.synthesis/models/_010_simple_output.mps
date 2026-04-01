@@ -2,7 +2,6 @@
 <model ref="r:7ba051f6-d4c6-4acb-a5fa-9a9ad070cd67(test.com.mbeddr.formal.smtlib.synthesis._010_simple_output)">
   <persistence version="9" />
   <languages>
-    <use id="bf6758cd-1d80-487a-8750-bda80ddbed16" name="com.mbeddr.formal.smtlib.synthesis" version="0" />
     <use id="9e54e509-552a-4f20-9b96-12a273367cff" name="com.mbeddr.formal.smtlib" version="0" />
   </languages>
   <imports />

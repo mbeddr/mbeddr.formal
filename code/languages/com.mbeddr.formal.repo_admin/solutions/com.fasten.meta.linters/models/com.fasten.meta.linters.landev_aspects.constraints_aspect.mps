@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:e534af10-8097-4026-ab07-dc48e8cb489b(com.fasten.meta.linters.landev_aspects.generator_level)">
+<model ref="r:6dd2b56b-1861-447a-bc85-4cae6eb52e13(com.fasten.meta.linters.landev_aspects.constraints_aspect)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
@@ -8,8 +8,8 @@
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
   </languages>
   <imports>
-    <import index="vi29" ref="r:bad17717-3824-425b-aeb4-5578f6caf605(org.mpsqa.lint.mps_lang.linters_library.generator_aspect)" />
     <import index="54p5" ref="r:3e5efb66-1a16-46d1-89d2-26142a5dcdaa(org.mpsqa.lint.generic.linters_library.meta)" />
+    <import index="392q" ref="r:ba8312cf-1ad8-4d43-abba-78a33726289d(org.mpsqa.lint.mps_lang.linters_library.constraint_aspect)" />
   </imports>
   <registry>
     <language id="40ab19e9-751a-4433-b645-0e65160e58a0" name="org.mpsqa.lint.generic">
@@ -47,39 +47,31 @@
       </concept>
     </language>
   </registry>
-  <node concept="2wR3oc" id="6wRVFFwyrDL">
-    <ref role="2wR3oD" to="vi29:4aEqBbbsVSI" resolve="empty_generators" />
+  <node concept="2wR3oc" id="3E0v2G6ovJF">
+    <ref role="2wR3oD" to="392q:3bllPAaPI3W" resolve="empty_constraint_aspects" />
   </node>
-  <node concept="2wR3oc" id="4lfwJVE_q9k">
+  <node concept="2wR3oc" id="3E0v2G6ovJG">
     <property role="3dJkfZ" value="true" />
     <ref role="2wR3oD" to="54p5:4lfwJVEz_X5" resolve="not_used_linters" />
-    <node concept="2j1LYv" id="4lfwJVE_q9l" role="2j1YRv">
-      <node concept="2j1LYi" id="4lfwJVE_q9m" role="2j1YQj">
+    <node concept="2j1LYv" id="3E0v2G6ovJH" role="2j1YRv">
+      <node concept="2j1LYi" id="3E0v2G6ovJK" role="2j1YQj">
         <ref role="2j1LYj" to="54p5:4lfwJVE$pjg" resolve="thisNode" />
       </node>
-      <node concept="2tJFMh" id="4lfwJVE$q1j" role="2j1LYg">
-        <node concept="ZC_QK" id="4lfwJVE$qau" role="2tJFKM">
-          <ref role="2aWVGs" node="4lfwJVE_q9k" resolve="not_used_linters" />
+      <node concept="2tJFMh" id="3E0v2G6ovJL" role="2j1LYg">
+        <node concept="ZC_QK" id="3E0v2G6ovJM" role="2tJFKM">
+          <ref role="2aWVGs" node="3E0v2G6ovJG" resolve="not_used_linters" />
         </node>
       </node>
     </node>
-    <node concept="3dgnlM" id="59o88jXkHO6" role="3dgnlQ">
+    <node concept="3dgnlM" id="3E0v2G6ovJI" role="3dgnlQ">
       <property role="3dgnlN" value="The Script is not re-used" />
-      <property role="3qxsY3" value="1024891882118332503" />
-      <property role="3qxsSb" value="r:bad17717-3824-425b-aeb4-5578f6caf605(org.mpsqa.lint.mps_lang.linters_library.generator_aspect)" />
+      <property role="3qxsY3" value="7008376823202383109" />
+      <property role="3qxsSb" value="r:3e5efb66-1a16-46d1-89d2-26142a5dcdaa(org.mpsqa.lint.generic.linters_library.meta)" />
     </node>
-  </node>
-  <node concept="2wR3oc" id="33N0Tlwri2j">
-    <ref role="2wR3oD" to="54p5:652KpqR3Kk5" resolve="skipped_evaluation_linters" />
-    <node concept="2j1LYv" id="33N0Tlwrit2" role="2j1YRv">
-      <node concept="2j1LYi" id="33N0Tlwrit3" role="2j1YQj">
-        <ref role="2j1LYj" to="54p5:652KpqR3Kk6" resolve="thisNode" />
-      </node>
-      <node concept="2tJFMh" id="33N0Tlwrn3G" role="2j1LYg">
-        <node concept="ZC_QK" id="33N0TlwrncH" role="2tJFKM">
-          <ref role="2aWVGs" node="33N0Tlwri2j" resolve="skipped_evaluation_linters" />
-        </node>
-      </node>
+    <node concept="3dgnlM" id="3E0v2G6ovJJ" role="3dgnlQ">
+      <property role="3dgnlN" value="The Script is not re-used" />
+      <property role="3qxsY3" value="5052464840671276581" />
+      <property role="3qxsSb" value="r:3e5efb66-1a16-46d1-89d2-26142a5dcdaa(org.mpsqa.lint.generic.linters_library.meta)" />
     </node>
   </node>
 </model>

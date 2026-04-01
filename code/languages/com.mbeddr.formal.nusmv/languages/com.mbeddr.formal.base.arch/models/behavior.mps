@@ -577,13 +577,6 @@
       </node>
     </node>
   </node>
-  <node concept="13h7C7" id="25dEoZdLnRc">
-    <property role="3GE5qa" value="cbd.assembly.connections" />
-    <ref role="13h7C2" to="3whv:7RhjhI7$lgW" resolve="ConnectionPart" />
-    <node concept="13hLZK" id="25dEoZdLnRd" role="13h7CW">
-      <node concept="3clFbS" id="25dEoZdLnRe" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="57ROGn8XizA">
     <property role="3GE5qa" value="cbd.assembly" />
     <ref role="13h7C2" to="3whv:7RhjhI7$lgU" resolve="ComponentAssembly" />

@@ -9,7 +9,6 @@
   </languages>
   <imports>
     <import index="85xj" ref="r:c54e8620-02ce-447b-add3-cc9dc7547dc1(com.symo.plantuml.editor)" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
     <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
     <import index="cxxa" ref="r:5e39fe7c-31dd-463f-8717-17f345022d0e(com.symo.plantuml.ext.structure)" />
@@ -225,7 +224,7 @@
             </node>
           </node>
           <node concept="3F2HdR" id="40kNClye_5E" role="3EZMnx">
-            <ref role="1NtTu8" to="udwj:sWQiz9_Dp0" />
+            <ref role="1NtTu8" to="udwj:sWQiz9_Dp0" resolve="substructure" />
             <node concept="l2Vlx" id="40kNClye_5G" role="2czzBx" />
             <node concept="ljvvj" id="40kNClyeS0v" role="3F10Kt">
               <property role="VOm3f" value="true" />
@@ -329,7 +328,7 @@
         <ref role="1k5W1q" node="2oZKZkZNy2d" resolve="PlantUmlExtKeyword" />
       </node>
       <node concept="1iCGBv" id="1aUDt0N7EIo" role="3EZMnx">
-        <ref role="1NtTu8" to="cxxa:1aUDt0N7Eyu" />
+        <ref role="1NtTu8" to="cxxa:1aUDt0N7Eyu" resolve="interf" />
         <node concept="1sVBvm" id="1aUDt0N7EIp" role="1sWHZn">
           <node concept="3F0A7n" id="1aUDt0N7EIq" role="2wV5jI">
             <property role="1Intyy" value="true" />
