@@ -2,6 +2,7 @@
 <model ref="r:d7a5b6c9-47a2-4d28-b3f8-0b7f86c97bd1(com.mbeddr.formal.safety.genai.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
