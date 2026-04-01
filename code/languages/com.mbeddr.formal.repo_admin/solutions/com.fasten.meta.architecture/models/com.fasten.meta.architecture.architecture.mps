@@ -77,7 +77,7 @@
       <property role="TrG5h" value="requirements_lancomp" />
       <node concept="mXA1B" id="7k4FpArLGyA" role="mXAiC">
         <node concept="mXAj4" id="7k4FpArLGyB" role="mXvOw">
-          <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+          <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
         </node>
         <node concept="mXAj4" id="7k4FpArLGPU" role="mXvOw">
           <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -88,7 +88,7 @@
         <property role="TrG5h" value="requirements_base_lancomp" />
         <node concept="mXA1B" id="7k4FpArLGyD" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGyE" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArLGPT" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -223,7 +223,7 @@
       <property role="TrG5h" value="safety_analyses_lancomp" />
       <node concept="mXA1B" id="7k4FpArLGss" role="mXAiC">
         <node concept="mXAj4" id="7k4FpArLGsu" role="mXvOw">
-          <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+          <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
         </node>
         <node concept="mXAj4" id="7k4FpArLGHv" role="mXvOw">
           <ref role="mXAj7" node="7k4FpArLGHM" resolve="symo_base_lancomp" />
@@ -237,7 +237,7 @@
         <property role="TrG5h" value="hazards_lancomp" />
         <node concept="mXA1B" id="7k4FpArLGsw" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGsx" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArLGQh" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -266,7 +266,7 @@
         <property role="TrG5h" value="stamp_lancomp" />
         <node concept="mXA1B" id="1a4oUCoJSno" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGvs" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArLGQk" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -317,7 +317,7 @@
         <property role="TrG5h" value="fault_trees_lancomp" />
         <node concept="mXA1B" id="7k4FpArLGvu" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGvv" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArLGQm" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -328,7 +328,7 @@
           <property role="TrG5h" value="fault_trees_base_lancomp" />
           <node concept="mXA1B" id="7k4FpArLGvx" role="mXAiC">
             <node concept="mXAj4" id="7k4FpArLGvy" role="mXvOw">
-              <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+              <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
             </node>
             <node concept="mXAj4" id="7k4FpArLGQo" role="mXvOw">
               <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -405,7 +405,7 @@
         <property role="TrG5h" value="fmea_lancomp" />
         <node concept="mXA1B" id="7k4FpArLGv$" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGv_" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArLGHu" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGHM" resolve="symo_base_lancomp" />
@@ -438,7 +438,7 @@
         <property role="TrG5h" value="bayesian_lancomp" />
         <node concept="mXA1B" id="7k4FpArLGvB" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGvC" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArLGQs" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -476,7 +476,7 @@
         <property role="TrG5h" value="bowtie_lancomp" />
         <node concept="mXA1B" id="7k4FpArLGA1" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGA2" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArMhGL" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -530,7 +530,7 @@
         <property role="TrG5h" value="safety_analyses_iso26262_lancomp" />
         <node concept="mXA1B" id="1a4oUCoO8a0" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGyy" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArLGQu" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -599,7 +599,7 @@
       <property role="TrG5h" value="safety_process_lancomp" />
       <node concept="mXA1B" id="7k4FpArLGsp" role="mXAiC">
         <node concept="mXAj4" id="7k4FpArLGsr" role="mXvOw">
-          <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+          <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
         </node>
         <node concept="mXAj4" id="7k4FpArLGQw" role="mXvOw">
           <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -620,7 +620,7 @@
       <property role="TrG5h" value="assurance_lancomp" />
       <node concept="mXA1B" id="7k4FpArLGj5" role="mXAiC">
         <node concept="mXAj4" id="7k4FpArLGj7" role="mXvOw">
-          <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+          <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
         </node>
         <node concept="mXAj4" id="7k4FpArLGQy" role="mXvOw">
           <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -631,7 +631,7 @@
         <property role="TrG5h" value="assurance_base_lancomp" />
         <node concept="mXA1B" id="7k4FpArLGj0" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGj2" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArLGQ$" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -642,7 +642,7 @@
           <property role="TrG5h" value="assurance_base_gsn_lancomp" />
           <node concept="mXA1B" id="7k4FpArLGsl" role="mXAiC">
             <node concept="mXAj4" id="7k4FpArLGsn" role="mXvOw">
-              <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+              <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
             </node>
             <node concept="mXAj4" id="7k4FpArLGQA" role="mXvOw">
               <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -777,7 +777,7 @@
           <property role="TrG5h" value="assurance_base_doc" />
           <node concept="mXA1B" id="41Pak$lH__3" role="mXAiC">
             <node concept="mXAj4" id="7k4FpArLGsj" role="mXvOw">
-              <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+              <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
             </node>
             <node concept="mXAj4" id="41Pak$lH__9" role="mXvOw">
               <ref role="mXAj7" node="41Pak$lH_kn" resolve="assurance_base_gsn_lancomp" />
@@ -862,7 +862,7 @@
         <property role="TrG5h" value="assurance_confidence_lancomp" />
         <node concept="mXA1B" id="41Pak$lH_zk" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGsh" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArLGQG" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -895,7 +895,7 @@
         <property role="TrG5h" value="assurance_modelquery_lancomp" />
         <node concept="mXA1B" id="41Pak$lHHDe" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGpo" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="41Pak$lHHDf" role="mXvOw">
             <ref role="mXAj7" node="41Pak$lH_kn" resolve="assurance_base_gsn_lancomp" />
@@ -916,7 +916,7 @@
         <property role="TrG5h" value="assurance_runtime_lancomp" />
         <node concept="mXA1B" id="1a4oUCoJSFE" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGpm" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArLGQI" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -976,7 +976,7 @@
         <property role="TrG5h" value="assurance_process" />
         <node concept="mXA1B" id="1a4oUCoJSx1" role="mXAiC">
           <node concept="mXAj4" id="7k4FpArLGpk" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+            <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArLGQK" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -1042,7 +1042,7 @@
       </node>
       <node concept="mXA1B" id="7k4FpArLGja" role="mXAiC">
         <node concept="mXAj4" id="7k4FpArLGjc" role="mXvOw">
-          <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+          <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
         </node>
         <node concept="mXAj4" id="7k4FpArLGPR" role="mXvOw">
           <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
@@ -1122,7 +1122,7 @@
       <property role="TrG5h" value="symo_sys_modeling_lancomp" />
       <node concept="mXA1B" id="7k4FpArLGy$" role="mXAiC">
         <node concept="mXAj4" id="7k4FpArLGy_" role="mXvOw">
-          <ref role="mXAj7" node="7k4FpArKOLp" resolve="base_enablers_lancomp" />
+          <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
         </node>
       </node>
       <node concept="Z9REq" id="7k4FpArLGHK" role="mXAiC" />
@@ -1145,7 +1145,7 @@
             <ref role="mXAj7" node="7k4FpArKOLp" resolve="mpsbasics_base_enablers_lancomp" />
           </node>
           <node concept="mXAj4" id="7k4FpArLGHR" role="mXvOw">
-            <ref role="mXAj7" node="7k4FpArLGHM" resolve="symo_base" />
+            <ref role="mXAj7" node="7k4FpArLGHM" resolve="symo_base_lancomp" />
           </node>
         </node>
         <node concept="mXxR0" id="7k4FpArKOIp" role="mXAiC">

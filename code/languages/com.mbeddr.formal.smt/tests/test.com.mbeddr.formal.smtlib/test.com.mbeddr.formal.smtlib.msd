@@ -35,6 +35,7 @@
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="f7821750-33bf-489c-8f64-0850d86d540d(com.mbeddr.formal.smtlib.z3.lib)" version="0" />
     <module reference="03458680-b827-4dcd-a8ca-ad82e7bdf60e(com.mbeddr.formal.smtlib.z3.rt)" version="0" />
     <module reference="3c346bff-621e-4c77-8efd-938607161129(test.com.mbeddr.formal.smtlib)" version="0" />
   </dependencyVersions>
