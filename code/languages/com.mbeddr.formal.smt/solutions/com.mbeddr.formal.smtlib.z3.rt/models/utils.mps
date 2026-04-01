@@ -4,7 +4,6 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="0" />
   </languages>
   <imports>
     <import index="kaug" ref="r:521dbd70-b62b-4a68-a516-821505a8eae5(com.mbeddr.formal.smtlib.z3.rt.runner)" />

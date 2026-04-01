@@ -72,8 +72,6 @@
     <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">03458680-b827-4dcd-a8ca-ad82e7bdf60e(com.mbeddr.formal.smtlib.z3.rt)</dependency>
     <dependency reexport="false">f7821750-33bf-489c-8f64-0850d86d540d(com.mbeddr.formal.smtlib.z3.lib)</dependency>
-    <dependency reexport="false">bf6758cd-1d80-487a-8750-bda80ddbed16(com.mbeddr.formal.smtlib.synthesis)</dependency>
-    <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">83ed2dfe-f724-46cc-852a-dce086daee3f(com.mbeddr.formal.base)</dependency>
   </dependencies>
   <languageVersions>
