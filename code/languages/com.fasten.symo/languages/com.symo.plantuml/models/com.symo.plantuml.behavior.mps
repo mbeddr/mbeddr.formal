@@ -246,9 +246,6 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
-      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
-        <child id="540871147943773366" name="argument" index="25WWJ7" />
-      </concept>
       <concept id="1153943597977" name="jetbrains.mps.baseLanguage.collections.structure.ForEachStatement" flags="nn" index="2Gpval">
         <child id="1153944400369" name="variable" index="2Gsz3X" />
         <child id="1153944424730" name="inputSequence" index="2GsD0m" />
@@ -257,7 +254,6 @@
       <concept id="1153944233411" name="jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference" flags="nn" index="2GrUjf">
         <reference id="1153944258490" name="variable" index="2Gs0qQ" />
       </concept>
-      <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="5633809102336885303" name="jetbrains.mps.baseLanguage.collections.structure.SubListOperation" flags="nn" index="3b24QK">
         <child id="5633809102336885321" name="upToIndex" index="3b24Re" />
@@ -900,25 +896,7 @@
     <property role="3GE5qa" value="diagram.uml.component" />
     <ref role="13h7C2" to="udwj:7ikA1GKqys5" resolve="PackageDeclaration" />
     <node concept="13hLZK" id="7ikA1GKrR5W" role="13h7CW">
-      <node concept="3clFbS" id="7ikA1GKrR5X" role="2VODD2">
-        <node concept="3clFbF" id="2slar0Tvgge" role="3cqZAp">
-          <node concept="2OqwBi" id="2slar0Tvggf" role="3clFbG">
-            <node concept="2OqwBi" id="2slar0Tvggg" role="2Oq$k0">
-              <node concept="13iPFW" id="2slar0Tvggh" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="2slar0Tvggi" role="2OqNvi">
-                <ref role="3TtcxE" to="udwj:7ikA1GKqE1U" />
-              </node>
-            </node>
-            <node concept="TSZUe" id="2slar0Tvggj" role="2OqNvi">
-              <node concept="2pJPEk" id="2slar0Tvggk" role="25WWJ7">
-                <node concept="2pJPED" id="2slar0Tvggl" role="2pJPEn">
-                  <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="7ikA1GKrR5X" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="7ikA1GKrR6e" role="13h7CS">
       <property role="TrG5h" value="text" />
@@ -1995,25 +1973,7 @@
       <node concept="17QB3L" id="1_aHBvacHkE" role="3clF45" />
     </node>
     <node concept="13hLZK" id="1_aHBvacHjP" role="13h7CW">
-      <node concept="3clFbS" id="1_aHBvacHjQ" role="2VODD2">
-        <node concept="3clFbF" id="2slar0Tv43X" role="3cqZAp">
-          <node concept="2OqwBi" id="2slar0Tvbsj" role="3clFbG">
-            <node concept="2OqwBi" id="2slar0Tv4i8" role="2Oq$k0">
-              <node concept="13iPFW" id="2slar0Tv43W" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="2slar0Tv4$6" role="2OqNvi">
-                <ref role="3TtcxE" to="udwj:1_aHBvacGQU" resolve="content" />
-              </node>
-            </node>
-            <node concept="TSZUe" id="2slar0TveZR" role="2OqNvi">
-              <node concept="2pJPEk" id="2slar0Tvf4E" role="25WWJ7">
-                <node concept="2pJPED" id="2slar0Tvf4G" role="2pJPEn">
-                  <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="1_aHBvacHjQ" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="1_aHBvadUiG">
@@ -2904,25 +2864,7 @@
     <property role="3GE5qa" value="diagram.uml.sequence.grouping" />
     <ref role="13h7C2" to="udwj:q$1bLSCbQp" resolve="PlantUmlSequenceDiagramGroupBase" />
     <node concept="13hLZK" id="q$1bLSCbRb" role="13h7CW">
-      <node concept="3clFbS" id="q$1bLSCbRc" role="2VODD2">
-        <node concept="3clFbF" id="2slar0TzHbB" role="3cqZAp">
-          <node concept="2OqwBi" id="2slar0TzHbC" role="3clFbG">
-            <node concept="2OqwBi" id="2slar0TzHbD" role="2Oq$k0">
-              <node concept="13iPFW" id="2slar0TzHbE" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="2slar0TzHbF" role="2OqNvi">
-                <ref role="3TtcxE" to="udwj:q$1bLSCbQq" />
-              </node>
-            </node>
-            <node concept="TSZUe" id="2slar0TzHbG" role="2OqNvi">
-              <node concept="2pJPEk" id="2slar0TzHbH" role="25WWJ7">
-                <node concept="2pJPED" id="2slar0TzHbI" role="2pJPEn">
-                  <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="q$1bLSCbRc" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="q$1bLSCbRt" role="13h7CS">
       <property role="TrG5h" value="text" />
@@ -3039,25 +2981,7 @@
     <property role="3GE5qa" value="diagram.uml.sequence.grouping" />
     <ref role="13h7C2" to="udwj:q$1bLSCbQn" resolve="SequenceDiagramAlt" />
     <node concept="13hLZK" id="q$1bLSInlE" role="13h7CW">
-      <node concept="3clFbS" id="q$1bLSInlF" role="2VODD2">
-        <node concept="3clFbF" id="2slar0Tvhrh" role="3cqZAp">
-          <node concept="2OqwBi" id="2slar0Tvhri" role="3clFbG">
-            <node concept="2OqwBi" id="2slar0Tvhrj" role="2Oq$k0">
-              <node concept="13iPFW" id="2slar0Tvhrk" role="2Oq$k0" />
-              <node concept="3Tsc0h" id="2slar0Tvhrl" role="2OqNvi">
-                <ref role="3TtcxE" to="udwj:q$1bLSCbQq" />
-              </node>
-            </node>
-            <node concept="TSZUe" id="2slar0Tvhrm" role="2OqNvi">
-              <node concept="2pJPEk" id="2slar0Tvhrn" role="25WWJ7">
-                <node concept="2pJPED" id="2slar0Tvhro" role="2pJPEn">
-                  <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
+      <node concept="3clFbS" id="q$1bLSInlF" role="2VODD2" />
     </node>
     <node concept="13i0hz" id="q$1bLSInlW" role="13h7CS">
       <property role="TrG5h" value="text" />

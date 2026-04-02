@@ -225,7 +225,7 @@
             <ref role="1pvSZS" node="7SdKVmpfyDr" resolve="C1_2" />
           </node>
           <node concept="1pvSZV" id="7SdKVmpfB9w" role="1pvUZs">
-            <ref role="1pvSZS" node="7SdKVmpewop" />
+            <ref role="1pvSZS" node="7SdKVmpewop" resolve="C1" />
           </node>
           <node concept="TrFLf" id="ncMLCtZsLQ" role="S$pns" />
         </node>
