@@ -77,7 +77,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="attributes" />
       <ref role="20lvS9" node="4pL_qfp8Woe" resolve="IBowtieEntityAttribute" />
-      <ref role="20ksaX" to="b19z:6qVhvNsGxie" />
+      <ref role="20ksaX" to="b19z:6qVhvNsGxie" resolve="attributes" />
     </node>
     <node concept="1TJgyj" id="4pL_qfpke4w" role="1TKVEi">
       <property role="IQ2ns" value="5076002785981423904" />
@@ -193,7 +193,7 @@
     <property role="EcuMT" value="5076002785981913170" />
     <property role="TrG5h" value="EmptyLine" />
     <property role="3GE5qa" value="base" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="4pL_qfpm5xj" role="PzmwI">
       <ref role="PrY4T" node="4pL_qfpm5xh" resolve="IBowtieDiagramContent" />
     </node>

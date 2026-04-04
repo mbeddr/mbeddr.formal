@@ -1574,7 +1574,7 @@
   </node>
   <node concept="13h7C7" id="4pL_qfpr6v7">
     <property role="3GE5qa" value="attribute.color" />
-    <ref role="13h7C2" to="b19z:2p23w$d2KIu" resolve="EntityColorAttributeBase" />
+    <ref role="13h7C2" to="b19z:2p23w$d2KIu" resolve="ColorAttributeBase" />
     <node concept="13hLZK" id="4pL_qfpr6v8" role="13h7CW">
       <node concept="3clFbS" id="4pL_qfpr6v9" role="2VODD2" />
     </node>

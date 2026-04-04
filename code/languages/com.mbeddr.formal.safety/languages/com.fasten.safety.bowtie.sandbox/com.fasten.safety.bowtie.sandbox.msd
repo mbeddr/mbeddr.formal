@@ -12,6 +12,7 @@
   </facets>
   <languageVersions>
     <language slang="l:51f69ce3-7fa9-4277-b3f5-a74cd93a920b:com.fasten.safety.bowtie" version="0" />
+    <language slang="l:83ed2dfe-f724-46cc-852a-dce086daee3f:com.mbeddr.formal.base" version="0" />
     <language slang="l:17da266c-02d9-4bbd-b69b-8a656b49f45c:com.mbeddr.formal.safety.hara" version="0" />
     <language slang="l:8ca79d43-eb45-4791-bdd4-0d6130ff895b:de.itemis.mps.editor.diagram.layout" version="0" />
     <language slang="l:92d2ea16-5a42-4fdf-a676-c7604efe3504:de.slisson.mps.richtext" version="0" />

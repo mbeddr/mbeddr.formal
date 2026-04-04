@@ -6454,7 +6454,7 @@
   </node>
   <node concept="24kQdi" id="4pL_qfpr2pq">
     <property role="3GE5qa" value="attribute.color" />
-    <ref role="1XX52x" to="b19z:2p23w$d2KIu" resolve="EntityColorAttributeBase" />
+    <ref role="1XX52x" to="b19z:2p23w$d2KIu" resolve="ColorAttributeBase" />
     <node concept="3EZMnI" id="2p23w$d1hPB" role="2wV5jI">
       <node concept="3F0ifn" id="2p23w$d1hPI" role="3EZMnx">
         <property role="3F0ifm" value="color:" />
