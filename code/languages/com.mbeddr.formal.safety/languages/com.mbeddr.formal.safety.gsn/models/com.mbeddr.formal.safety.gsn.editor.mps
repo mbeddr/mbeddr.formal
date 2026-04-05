@@ -1157,11 +1157,13 @@
       </node>
       <node concept="3EZMnI" id="1e9opmpbvVS" role="1ytjkN">
         <node concept="3XFhqQ" id="4WMzu8rS8C3" role="3EZMnx" />
+        <node concept="3XFhqQ" id="4pL_qfpYP5n" role="3EZMnx" />
         <node concept="2iRfu4" id="1e9opmpbvVT" role="2iSdaV" />
         <node concept="PMmxH" id="33qt4wr2MfV" role="3EZMnx">
           <ref role="PMmxG" node="3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
         </node>
         <node concept="3XFhqQ" id="4WMzu8rT33w" role="3EZMnx" />
+        <node concept="3XFhqQ" id="4pL_qfq0OPW" role="3EZMnx" />
         <node concept="xShMh" id="31CZDUiP3fV" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -12107,11 +12109,13 @@
       <node concept="3EZMnI" id="4WMzu8s2nwh" role="1ytjkN">
         <node concept="3XFhqQ" id="4WMzu8s2nw_" role="3EZMnx" />
         <node concept="3XFhqQ" id="4WMzu8s3iJs" role="3EZMnx" />
+        <node concept="3XFhqQ" id="4pL_qfq3Nei" role="3EZMnx" />
         <node concept="2iRfu4" id="4WMzu8s2nwi" role="2iSdaV" />
         <node concept="PMmxH" id="2TfVCPOMBcg" role="3EZMnx">
           <ref role="PMmxG" node="3JvPdC98CYF" resolve="GoalStructureElementBaseTextArea" />
         </node>
         <node concept="3XFhqQ" id="4WMzu8s2nwJ" role="3EZMnx" />
+        <node concept="3XFhqQ" id="4pL_qfq3NBs" role="3EZMnx" />
         <node concept="3XFhqQ" id="4WMzu8s3iJm" role="3EZMnx" />
         <node concept="xShMh" id="x1FXqEHWM" role="3F10Kt">
           <property role="VOm3f" value="true" />
