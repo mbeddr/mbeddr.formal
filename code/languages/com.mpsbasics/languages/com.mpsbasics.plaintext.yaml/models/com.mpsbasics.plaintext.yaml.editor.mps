@@ -320,7 +320,7 @@
               <node concept="HtI8k" id="3gvcLqnTiY7" role="2OqNvi">
                 <node concept="2pJPEk" id="3gvcLqnTiYQ" role="HtI8F">
                   <node concept="2pJPED" id="3gvcLqnTiYS" role="2pJPEn">
-                    <ref role="2pJxaS" to="bpzl:3gvcLqnRFrs" resolve="OpenParens" />
+                    <ref role="2pJxaS" to="bpzl:3gvcLqnRFrs" resolve="OpenCurlyBracket" />
                   </node>
                 </node>
               </node>
@@ -341,7 +341,7 @@
               <node concept="HtI8k" id="3gvcLqnTqCI" role="2OqNvi">
                 <node concept="2pJPEk" id="3gvcLqnTqCJ" role="HtI8F">
                   <node concept="2pJPED" id="3gvcLqnTqCK" role="2pJPEn">
-                    <ref role="2pJxaS" to="bpzl:3gvcLqnRKnl" resolve="ClosedParens" />
+                    <ref role="2pJxaS" to="bpzl:3gvcLqnRKnl" resolve="ClosedCurlyBracket" />
                   </node>
                 </node>
               </node>
@@ -636,7 +636,7 @@
   </node>
   <node concept="24kQdi" id="3gvcLqnRKng">
     <property role="3GE5qa" value="text_level.parens" />
-    <ref role="1XX52x" to="bpzl:3gvcLqnRFrs" resolve="OpenParens" />
+    <ref role="1XX52x" to="bpzl:3gvcLqnRFrs" resolve="OpenCurlyBracket" />
     <node concept="3F0ifn" id="3gvcLqnRKni" role="2wV5jI">
       <property role="3F0ifm" value="{" />
       <ref role="1k5W1q" node="21lHZzX34e8" resolve="GenericTokenStyle" />
@@ -647,7 +647,7 @@
   </node>
   <node concept="24kQdi" id="3gvcLqnRKnn">
     <property role="3GE5qa" value="text_level.parens" />
-    <ref role="1XX52x" to="bpzl:3gvcLqnRKnl" resolve="ClosedParens" />
+    <ref role="1XX52x" to="bpzl:3gvcLqnRKnl" resolve="ClosedCurlyBracket" />
     <node concept="3F0ifn" id="3gvcLqnRKnp" role="2wV5jI">
       <property role="3F0ifm" value="}" />
       <ref role="1k5W1q" node="21lHZzX34e8" resolve="GenericTokenStyle" />
@@ -815,7 +815,7 @@
               <node concept="HtI8k" id="7gE2YMACqqf" role="2OqNvi">
                 <node concept="2pJPEk" id="7gE2YMACqqg" role="HtI8F">
                   <node concept="2pJPED" id="7gE2YMACqqh" role="2pJPEn">
-                    <ref role="2pJxaS" to="bpzl:3gvcLqnRFrs" resolve="OpenParens" />
+                    <ref role="2pJxaS" to="bpzl:3gvcLqnRFrs" resolve="OpenCurlyBracket" />
                   </node>
                 </node>
               </node>
@@ -836,7 +836,7 @@
               <node concept="HtI8k" id="7gE2YMACqqp" role="2OqNvi">
                 <node concept="2pJPEk" id="7gE2YMACqqq" role="HtI8F">
                   <node concept="2pJPED" id="7gE2YMACqqr" role="2pJPEn">
-                    <ref role="2pJxaS" to="bpzl:3gvcLqnRKnl" resolve="ClosedParens" />
+                    <ref role="2pJxaS" to="bpzl:3gvcLqnRKnl" resolve="ClosedCurlyBracket" />
                   </node>
                 </node>
               </node>
@@ -923,6 +923,20 @@
       <node concept="xShMh" id="5lmdsXWAyPS" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="5rQdWbItBMn">
+    <property role="3GE5qa" value="text_level.parens" />
+    <ref role="1XX52x" to="bpzl:5rQdWbIsdSo" resolve="OpenSquareBracket" />
+    <node concept="3F0ifn" id="5rQdWbItBN3" role="2wV5jI">
+      <property role="3F0ifm" value="[" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5rQdWbItBOp">
+    <property role="3GE5qa" value="text_level.parens" />
+    <ref role="1XX52x" to="bpzl:5rQdWbIsdSq" resolve="ClosedSquareBracket" />
+    <node concept="3F0ifn" id="5rQdWbItBP5" role="2wV5jI">
+      <property role="3F0ifm" value="]" />
     </node>
   </node>
 </model>

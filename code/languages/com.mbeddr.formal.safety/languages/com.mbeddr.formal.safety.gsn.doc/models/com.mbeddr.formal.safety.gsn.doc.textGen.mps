@@ -7,8 +7,8 @@
     <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
-    <import index="wvti" ref="r:b5f49a49-cb87-432f-9c94-6a91c1e055e1(com.mbeddr.formal.safety.gsn.doc.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="wvti" ref="r:b5f49a49-cb87-432f-9c94-6a91c1e055e1(com.mbeddr.formal.safety.gsn.doc.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -46,6 +46,11 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
     </language>
   </registry>
@@ -239,6 +244,27 @@
             </node>
           </node>
           <node concept="la8eA" id="4KIvh_tvAEj" role="lcghm">
+            <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="4pL_qfpQZAD">
+    <property role="3GE5qa" value="generic" />
+    <ref role="WuzLi" to="wvti:4pL_qfpQH1o" resolve="UrlWord" />
+    <node concept="11bSqf" id="4pL_qfpQZAE" role="11c4hB">
+      <node concept="3clFbS" id="4pL_qfpQZAF" role="2VODD2">
+        <node concept="lc7rE" id="4pL_qfpR00m" role="3cqZAp">
+          <node concept="l9hG8" id="4pL_qfpR00o" role="lcghm">
+            <node concept="2OqwBi" id="4pL_qfpR00q" role="lb14g">
+              <node concept="117lpO" id="4pL_qfpR00r" role="2Oq$k0" />
+              <node concept="3TrcHB" id="4pL_qfpR1eD" role="2OqNvi">
+                <ref role="3TsBF5" to="wvti:4pL_qfpQIcM" resolve="url" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="4pL_qfpR00u" role="lcghm">
             <property role="lacIc" value=")" />
           </node>
         </node>

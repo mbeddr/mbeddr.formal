@@ -12,7 +12,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
-    <import index="wvti" ref="r:b5f49a49-cb87-432f-9c94-6a91c1e055e1(com.mbeddr.formal.safety.gsn.doc.structure)" implicit="true" />
+    <import index="wvti" ref="r:b5f49a49-cb87-432f-9c94-6a91c1e055e1(com.mbeddr.formal.safety.gsn.doc.structure)" />
     <import index="py52" ref="r:14bd9e1a-63cf-4fde-816f-1d68e4acbfba(com.mbeddr.formal.safety.gsn.structure)" implicit="true" />
     <import index="2c95" ref="r:5f7188a9-e7b4-4a2e-bef9-38d2cf379fdc(com.mbeddr.doc.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
@@ -865,6 +865,48 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="4pL_qfpQM6p">
+    <property role="3GE5qa" value="generic" />
+    <ref role="13h7C2" to="wvti:4pL_qfpQH1o" resolve="UrlWord" />
+    <node concept="13i0hz" id="4pL_qfpQMvM" role="13h7CS">
+      <property role="TrG5h" value="toTextString" />
+      <ref role="13i0hy" to="tbr6:3Q5enzfMT4t" resolve="toTextString" />
+      <node concept="3Tm1VV" id="4pL_qfpQMvN" role="1B3o_S" />
+      <node concept="3clFbS" id="4pL_qfpQMvO" role="3clF47">
+        <node concept="3clFbF" id="4pL_qfpQMvP" role="3cqZAp">
+          <node concept="3cpWs3" id="4pL_qfpQMvQ" role="3clFbG">
+            <node concept="Xl_RD" id="4pL_qfpQMvR" role="3uHU7w">
+              <property role="Xl_RC" value=")" />
+            </node>
+            <node concept="3cpWs3" id="4pL_qfpQMvS" role="3uHU7B">
+              <node concept="3cpWs3" id="4pL_qfpQMvT" role="3uHU7B">
+                <node concept="2OqwBi" id="4pL_qfpQMvU" role="3uHU7B">
+                  <node concept="2OqwBi" id="4pL_qfpQMvV" role="2Oq$k0">
+                    <node concept="13iPFW" id="4pL_qfpQMvW" role="2Oq$k0" />
+                    <node concept="2yIwOk" id="4pL_qfpQMvX" role="2OqNvi" />
+                  </node>
+                  <node concept="3n3YKJ" id="4pL_qfpQMvY" role="2OqNvi" />
+                </node>
+                <node concept="Xl_RD" id="4pL_qfpQMvZ" role="3uHU7w">
+                  <property role="Xl_RC" value="(" />
+                </node>
+              </node>
+              <node concept="2OqwBi" id="4pL_qfpQNM1" role="3uHU7w">
+                <node concept="13iPFW" id="4pL_qfpQNnB" role="2Oq$k0" />
+                <node concept="3TrcHB" id="4pL_qfpQOFn" role="2OqNvi">
+                  <ref role="3TsBF5" to="wvti:4pL_qfpQIcM" resolve="url" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="17QB3L" id="4pL_qfpQMw5" role="3clF45" />
+    </node>
+    <node concept="13hLZK" id="4pL_qfpQM6q" role="13h7CW">
+      <node concept="3clFbS" id="4pL_qfpQM6r" role="2VODD2" />
     </node>
   </node>
 </model>

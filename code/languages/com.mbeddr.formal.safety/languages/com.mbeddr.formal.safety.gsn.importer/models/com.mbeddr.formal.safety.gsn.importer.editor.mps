@@ -22,7 +22,9 @@
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
-      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
+        <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
+      </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -427,8 +429,17 @@
         <node concept="2iRfu4" id="7NA168q4u_0" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7NA168q4u_1" role="3EZMnx" />
+      <node concept="3F0ifn" id="5rQdWbHHszn" role="3EZMnx">
+        <property role="3F0ifm" value="(expected format documentation in inspector)" />
+        <node concept="VechU" id="5rQdWbHHvTp" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="7NA168q4u_l" role="2iSdaV" />
+    </node>
+    <node concept="3EZMnI" id="5rQdWbHHszl" role="6VMZX">
       <node concept="3F0ifn" id="7NA168q4u_2" role="3EZMnx">
-        <property role="3F0ifm" value="Documentation:" />
+        <property role="3F0ifm" value="Expected Format Documentation:" />
       </node>
       <node concept="3EZMnI" id="7NA168q4u_3" role="3EZMnx">
         <node concept="VPM3Z" id="7NA168q4u_4" role="3F10Kt" />
@@ -509,8 +520,140 @@
             </node>
           </node>
           <node concept="3F0ifn" id="7NA168q4xjz" role="3EZMnx">
-            <property role="3F0ifm" value="  &lt;goal&gt;" />
+            <property role="3F0ifm" value="  &lt;/goal&gt;" />
             <node concept="VechU" id="7NA168q4xj$" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAfK" role="3EZMnx">
+            <property role="3F0ifm" value="  &lt;solution&gt;" />
+            <node concept="VechU" id="5rQdWbHGAfL" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAfM" role="3EZMnx">
+            <property role="3F0ifm" value="     &lt;name&gt;S01&lt;/name&gt;" />
+            <node concept="VechU" id="5rQdWbHGAfN" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAfO" role="3EZMnx">
+            <property role="3F0ifm" value="     &lt;node_id&gt;2134432&lt;/node_id&gt;" />
+            <node concept="VechU" id="5rQdWbHGAfP" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAfQ" role="3EZMnx">
+            <property role="3F0ifm" value="     &lt;description&gt;The description&lt;/description&gt;" />
+            <node concept="VechU" id="5rQdWbHGAfR" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAfS" role="3EZMnx">
+            <property role="3F0ifm" value="     &lt;attributes&gt;" />
+            <node concept="VechU" id="5rQdWbHGAfT" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAfU" role="3EZMnx">
+            <property role="3F0ifm" value="       &lt;attribute&gt;" />
+            <node concept="VechU" id="5rQdWbHGAfV" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAfW" role="3EZMnx">
+            <property role="3F0ifm" value="         &lt;name&gt;responsible&lt;/name&gt;" />
+            <node concept="VechU" id="5rQdWbHGAfX" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAfY" role="3EZMnx">
+            <property role="3F0ifm" value="         &lt;value&gt;Luke&lt;/value&gt;" />
+            <node concept="VechU" id="5rQdWbHGAfZ" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAg0" role="3EZMnx">
+            <property role="3F0ifm" value="       &lt;/attribute&gt;" />
+            <node concept="VechU" id="5rQdWbHGAg1" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAg2" role="3EZMnx">
+            <property role="3F0ifm" value="     &lt;/attributes&gt;" />
+            <node concept="VechU" id="5rQdWbHGAg3" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAg4" role="3EZMnx">
+            <property role="3F0ifm" value="  &lt;/solutionl&gt;" />
+            <node concept="VechU" id="5rQdWbHGAg5" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAfJ" role="3EZMnx">
+            <property role="3F0ifm" value="  &lt;in_context_of&gt;" />
+            <node concept="VechU" id="5rQdWbHGAgi" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAg9" role="3EZMnx">
+            <property role="3F0ifm" value="    &lt;source_node_id&gt;8954016816614991919&lt;/source_node_id&gt;" />
+            <node concept="VechU" id="5rQdWbHGAgj" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAgb" role="3EZMnx">
+            <property role="3F0ifm" value="    &lt;target_node_id&gt;2623107343594066592&lt;/target_node_id&gt;" />
+            <node concept="VechU" id="5rQdWbHGAgs" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAgc" role="3EZMnx">
+            <property role="3F0ifm" value="    &lt;attributes&gt;" />
+            <node concept="VechU" id="5rQdWbHGAgk" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAgd" role="3EZMnx">
+            <property role="3F0ifm" value="      &lt;attribute&gt;" />
+            <node concept="VechU" id="5rQdWbHGAgl" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAgf" role="3EZMnx">
+            <property role="3F0ifm" value="        &lt;name&gt;state&lt;/name&gt;" />
+            <node concept="VechU" id="5rQdWbHGAgm" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAgh" role="3EZMnx">
+            <property role="3F0ifm" value="        &lt;value&gt;draft&lt;/value&gt;" />
+            <node concept="VechU" id="5rQdWbHGAgn" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAgg" role="3EZMnx">
+            <property role="3F0ifm" value="      &lt;/attribute&gt;" />
+            <node concept="VechU" id="5rQdWbHGAgo" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAge" role="3EZMnx">
+            <property role="3F0ifm" value="    &lt;/attributes&gt;" />
+            <node concept="VechU" id="5rQdWbHGAgp" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAg7" role="3EZMnx">
+            <property role="3F0ifm" value="  &lt;/in_context_of&gt;" />
+            <node concept="VechU" id="5rQdWbHGAgq" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="5rQdWbHGAfI" role="3EZMnx">
+            <property role="3F0ifm" value="&lt;/goal_structure&gt;" />
+            <node concept="VechU" id="5rQdWbHGAgr" role="3F10Kt">
               <property role="Vb096" value="fLJRk5_/gray" />
             </node>
           </node>
@@ -518,7 +661,7 @@
         </node>
         <node concept="2iRfu4" id="7NA168q4u_k" role="2iSdaV" />
       </node>
-      <node concept="2iRkQZ" id="7NA168q4u_l" role="2iSdaV" />
+      <node concept="2iRkQZ" id="5rQdWbHHszm" role="2iSdaV" />
     </node>
   </node>
 </model>

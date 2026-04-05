@@ -35,6 +35,9 @@
         <reference id="1083171729157" name="memberDataType" index="M4eZT" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1588368162884797030" name="jetbrains.mps.lang.structure.structure.EnumMigrationInfo" flags="ng" index="2JgGob">
         <property id="6491077959634662372" name="valueOpMigration" index="3scbB" />
         <property id="6491077959634650670" name="nameOpMigration" index="3sfsH" />
@@ -50,6 +53,7 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -463,6 +467,29 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="documentation" />
       <ref role="20lvS9" node="3heog7OaFdf" resolve="DiagramDocumentation" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="2p23w$d2KIt">
+    <property role="3F6X1D" value="2756781353940487069" />
+    <property role="TrG5h" value="ColorString" />
+    <property role="FLfZY" value="[0-9a-zA-Z]{6}" />
+    <property role="3GE5qa" value="attribute.color" />
+  </node>
+  <node concept="1TIwiD" id="2p23w$d2KIu">
+    <property role="EcuMT" value="2756781353940487070" />
+    <property role="3GE5qa" value="attribute.color" />
+    <property role="TrG5h" value="ColorAttributeBase" />
+    <property role="34LRSv" value="color" />
+    <property role="R4oN_" value="the color of an entity" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2p23w$d2KIv" role="1TKVEl">
+      <property role="IQ2nx" value="2756781353940487071" />
+      <property role="TrG5h" value="val" />
+      <ref role="AX2Wp" node="2p23w$d2KIt" resolve="ColorString" />
+    </node>
+    <node concept="PrWs8" id="4pL_qfpqXLA" role="PzmwI">
+      <ref role="PrY4T" node="6qVhvNsGwB7" resolve="IAttribute" />
     </node>
   </node>
 </model>
