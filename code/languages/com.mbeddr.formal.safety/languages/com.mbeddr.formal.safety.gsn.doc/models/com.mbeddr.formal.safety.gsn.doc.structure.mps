@@ -291,7 +291,7 @@
     <property role="TrG5h" value="UrlWord" />
     <property role="3GE5qa" value="generic" />
     <property role="34LRSv" value="@url" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="4pL_qfpQIcM" role="1TKVEl">
       <property role="IQ2nx" value="5076002785990468402" />
       <property role="TrG5h" value="url" />
