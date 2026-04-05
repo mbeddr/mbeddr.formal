@@ -1123,20 +1123,50 @@
       <property role="3qxsY3" value="1094571097533420733" />
       <property role="3qxsSb" value="r:673faf0d-da02-4e5a-ac7c-ad9d426404e9(_010_features._050_structured_assurance_cases)" />
     </node>
-    <node concept="3dgnlM" id="3DHxSK4AiVV" role="3dgnlQ">
-      <property role="3dgnlN" value="goal structure does not have documentation set _020_SPIs_Definition_and_Management" />
-      <property role="3qxsY3" value="2342303647244743340" />
-      <property role="3qxsSb" value="r:04b80459-73c8-45b5-aae9-c45759fb48a1(_200_autonomy_safety_arguments_catalogue._020_implicit_argument_behind_SPIs)" />
+    <node concept="3dgnlM" id="4pL_qfqr7gF" role="3dgnlQ">
+      <property role="3dgnlN" value="goal structure does not have documentation set _020_ System_Decomposition_Baseline" />
+      <property role="3qxsY3" value="5076002785990757397" />
+      <property role="3qxsSb" value="r:9e928ab7-f7c8-438d-bc7a-5bbabefeb57d(_200_autonomy_safety_arguments_catalogue._030_sace)" />
     </node>
-    <node concept="3dgnlM" id="3DHxSK4AiVZ" role="3dgnlQ">
-      <property role="3dgnlN" value="goal structure does not have documentation set _030_SPIs_Collection_and_Analysis" />
-      <property role="3qxsY3" value="6363076887004506841" />
-      <property role="3qxsSb" value="r:04b80459-73c8-45b5-aae9-c45759fb48a1(_200_autonomy_safety_arguments_catalogue._020_implicit_argument_behind_SPIs)" />
+    <node concept="3dgnlM" id="4pL_qfqr7gM" role="3dgnlQ">
+      <property role="3dgnlN" value="goal structure does not have documentation set _030_Argument_Pattern_for_Autonomous_System_Operating_Context_Assurance" />
+      <property role="3qxsY3" value="5076002785994426417" />
+      <property role="3qxsSb" value="r:9e928ab7-f7c8-438d-bc7a-5bbabefeb57d(_200_autonomy_safety_arguments_catalogue._030_sace)" />
     </node>
-    <node concept="3dgnlM" id="3DHxSK4AiW2" role="3dgnlQ">
-      <property role="3dgnlN" value="goal structure does not have documentation set _040_SPIs_Violation_Response" />
-      <property role="3qxsY3" value="6363076887004535568" />
-      <property role="3qxsSb" value="r:04b80459-73c8-45b5-aae9-c45759fb48a1(_200_autonomy_safety_arguments_catalogue._020_implicit_argument_behind_SPIs)" />
+    <node concept="3dgnlM" id="4pL_qfqr7gP" role="3dgnlQ">
+      <property role="3dgnlN" value="goal structure does not have documentation set _040_Argument_Pattern_for_Autonomous_System_Hazardous_Scenarios_Assurance" />
+      <property role="3qxsY3" value="5076002785994441157" />
+      <property role="3qxsSb" value="r:9e928ab7-f7c8-438d-bc7a-5bbabefeb57d(_200_autonomy_safety_arguments_catalogue._030_sace)" />
+    </node>
+    <node concept="3dgnlM" id="4pL_qfqr7gR" role="3dgnlQ">
+      <property role="3dgnlN" value="goal structure does not have documentation set _050_ Argument_Pattern_for_Safe_Operating_Context_Assurance" />
+      <property role="3qxsY3" value="5076002785994489217" />
+      <property role="3qxsSb" value="r:9e928ab7-f7c8-438d-bc7a-5bbabefeb57d(_200_autonomy_safety_arguments_catalogue._030_sace)" />
+    </node>
+    <node concept="3dgnlM" id="4pL_qfqr7gU" role="3dgnlQ">
+      <property role="3dgnlN" value="goal structure does not have documentation set _060_Argument_Pattern_for_Autonomous_System_Safety_Requirements_Assurance" />
+      <property role="3qxsY3" value="5076002785994513529" />
+      <property role="3qxsSb" value="r:9e928ab7-f7c8-438d-bc7a-5bbabefeb57d(_200_autonomy_safety_arguments_catalogue._030_sace)" />
+    </node>
+    <node concept="3dgnlM" id="4pL_qfqr7gW" role="3dgnlQ">
+      <property role="3dgnlN" value="goal structure does not have documentation set _070_Argument_Pattern_for_Autonomous_System_Design_Assurance" />
+      <property role="3qxsY3" value="5076002785994540928" />
+      <property role="3qxsSb" value="r:9e928ab7-f7c8-438d-bc7a-5bbabefeb57d(_200_autonomy_safety_arguments_catalogue._030_sace)" />
+    </node>
+    <node concept="3dgnlM" id="4pL_qfqr7gX" role="3dgnlQ">
+      <property role="3dgnlN" value="goal structure does not have documentation set _080_Argument_Pattern_for_Autonomous_System_Hazardous_Failures" />
+      <property role="3qxsY3" value="5076002785991732656" />
+      <property role="3qxsSb" value="r:9e928ab7-f7c8-438d-bc7a-5bbabefeb57d(_200_autonomy_safety_arguments_catalogue._030_sace)" />
+    </node>
+    <node concept="3dgnlM" id="4pL_qfqr7gY" role="3dgnlQ">
+      <property role="3dgnlN" value="goal structure does not have documentation set _090_Argument_Pattern_for_Out_of_Context_Operation_Assurance" />
+      <property role="3qxsY3" value="5076002785991866613" />
+      <property role="3qxsSb" value="r:9e928ab7-f7c8-438d-bc7a-5bbabefeb57d(_200_autonomy_safety_arguments_catalogue._030_sace)" />
+    </node>
+    <node concept="3dgnlM" id="4pL_qfqr7gZ" role="3dgnlQ">
+      <property role="3dgnlN" value="goal structure does not have documentation set _100_Argument_Pattern_for_Autonomous_System_Verification" />
+      <property role="3qxsY3" value="5076002785992271256" />
+      <property role="3qxsSb" value="r:9e928ab7-f7c8-438d-bc7a-5bbabefeb57d(_200_autonomy_safety_arguments_catalogue._030_sace)" />
     </node>
   </node>
   <node concept="1MIHA_" id="1n_6a3GpK18">
