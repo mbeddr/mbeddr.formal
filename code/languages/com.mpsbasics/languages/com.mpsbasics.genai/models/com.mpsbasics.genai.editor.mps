@@ -285,14 +285,8 @@
     </node>
     <node concept="3EZMnI" id="5Ux4Lu375fm" role="6VMZX">
       <node concept="2iRkQZ" id="5Ux4Lu375fn" role="2iSdaV" />
-      <node concept="3EZMnI" id="5Ux4Lu375fo" role="3EZMnx">
-        <node concept="2iRfu4" id="5Ux4Lu375fp" role="2iSdaV" />
-        <node concept="3F0ifn" id="5Ux4Lu375fq" role="3EZMnx">
-          <property role="3F0ifm" value="model:" />
-        </node>
-        <node concept="3F0A7n" id="5Ux4Lu375fs" role="3EZMnx">
-          <ref role="1NtTu8" to="uzku:5s847lWJoWt" resolve="llmModelName" />
-        </node>
+      <node concept="3F1sOY" id="4S6651mBU98" role="3EZMnx">
+        <ref role="1NtTu8" to="uzku:4S6651mB7lM" resolve="chatModelProvider" />
       </node>
     </node>
   </node>
@@ -639,14 +633,8 @@
     </node>
     <node concept="3EZMnI" id="5Ux4Lu3eFqb" role="6VMZX">
       <node concept="2iRkQZ" id="5Ux4Lu3eFqc" role="2iSdaV" />
-      <node concept="3EZMnI" id="5Ux4Lu3eFqd" role="3EZMnx">
-        <node concept="2iRfu4" id="5Ux4Lu3eFqe" role="2iSdaV" />
-        <node concept="3F0ifn" id="5Ux4Lu3eFqf" role="3EZMnx">
-          <property role="3F0ifm" value="model:" />
-        </node>
-        <node concept="3F0A7n" id="5Ux4Lu3eFqg" role="3EZMnx">
-          <ref role="1NtTu8" to="uzku:5s847lWJoWt" resolve="llmModelName" />
-        </node>
+      <node concept="3F1sOY" id="4S6651mBU9X" role="3EZMnx">
+        <ref role="1NtTu8" to="uzku:4S6651mB7lM" resolve="chatModelProvider" />
       </node>
     </node>
   </node>
@@ -674,6 +662,33 @@
         <ref role="1NtTu8" to="uzku:3ODp2RoLTZT" resolve="moduleRef" />
       </node>
       <node concept="2iRfu4" id="3ODp2RoLTZZ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4S6651mB7Tx">
+    <property role="3GE5qa" value="chat" />
+    <ref role="1XX52x" to="uzku:5Ux4Lu3ajKQ" resolve="AbstractChat" />
+    <node concept="3F0ifn" id="4S6651mB7TR" role="2wV5jI" />
+    <node concept="3F1sOY" id="4S6651mB7Ud" role="6VMZX">
+      <ref role="1NtTu8" to="uzku:4S6651mB7lM" resolve="chatModelProvider" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4S6651mB8hd">
+    <property role="3GE5qa" value="chat.model_provider" />
+    <ref role="1XX52x" to="uzku:4S6651mB7Uy" resolve="OpenAIChatModelProvider" />
+    <node concept="3EZMnI" id="4S6651mB8hz" role="2wV5jI">
+      <node concept="3F0ifn" id="4S6651mBUaG" role="3EZMnx">
+        <property role="3F0ifm" value="OpenAI Chat Model Provider" />
+      </node>
+      <node concept="3EZMnI" id="5Ux4Lu3eFqd" role="3EZMnx">
+        <node concept="2iRfu4" id="5Ux4Lu3eFqe" role="2iSdaV" />
+        <node concept="3F0ifn" id="5Ux4Lu3eFqf" role="3EZMnx">
+          <property role="3F0ifm" value="model:" />
+        </node>
+        <node concept="3F0A7n" id="5Ux4Lu3eFqg" role="3EZMnx">
+          <ref role="1NtTu8" to="uzku:5s847lWJoWt" resolve="llmModelName" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="4S6651mB8hA" role="2iSdaV" />
     </node>
   </node>
 </model>

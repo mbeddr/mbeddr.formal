@@ -126,9 +126,6 @@
     <node concept="PrWs8" id="zifywuOdhy" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
-    <node concept="PrWs8" id="5Ux4Lu36_oA" role="PzmwI">
-      <ref role="PrY4T" node="5Ux4Lu36xx7" resolve="IModelProvider" />
-    </node>
   </node>
   <node concept="1TIwiD" id="5s847lWI8Yh">
     <property role="EcuMT" value="6271280577903103889" />
@@ -153,11 +150,6 @@
       <property role="20kJfa" value="metaInformation" />
       <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
     </node>
-  </node>
-  <node concept="PlHQZ" id="5Ux4Lu36xx7">
-    <property role="EcuMT" value="6818752302520342599" />
-    <property role="TrG5h" value="IModelProvider" />
-    <property role="3GE5qa" value="base" />
   </node>
   <node concept="25R3W" id="5Ux4Lu36AgD">
     <property role="3F6X1D" value="6818752302520362025" />
@@ -209,17 +201,18 @@
     <property role="TrG5h" value="AbstractChat" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="5s847lWJoWt" role="1TKVEl">
-      <property role="IQ2nx" value="6271280577903431453" />
-      <property role="TrG5h" value="llmModelName" />
-      <ref role="AX2Wp" node="5Ux4Lu36AgD" resolve="EModelName" />
-    </node>
     <node concept="1TJgyj" id="zifywuOqS5" role="1TKVEi">
       <property role="IQ2ns" value="635638839449333253" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="chatInterraction" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="5s847lWI8Yh" resolve="ChatInterraction" />
+    </node>
+    <node concept="1TJgyj" id="4S6651mB7lM" role="1TKVEi">
+      <property role="IQ2ns" value="5622207918148187506" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="chatModelProvider" />
+      <ref role="20lvS9" node="4S6651mB7j_" resolve="AbstractChatModelProviderBase" />
     </node>
     <node concept="PrWs8" id="5Ux4Lu3eDXh" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -270,6 +263,25 @@
       <property role="20kJfa" value="moduleRef" />
       <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="4S6651mB7j_">
+    <property role="EcuMT" value="5622207918148187365" />
+    <property role="3GE5qa" value="chat.model_provider" />
+    <property role="TrG5h" value="AbstractChatModelProviderBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="5s847lWJoWt" role="1TKVEl">
+      <property role="IQ2nx" value="6271280577903431453" />
+      <property role="TrG5h" value="llmModelName" />
+      <ref role="AX2Wp" node="5Ux4Lu36AgD" resolve="EModelName" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4S6651mB7Uy">
+    <property role="EcuMT" value="5622207918148189858" />
+    <property role="3GE5qa" value="chat.model_provider" />
+    <property role="TrG5h" value="OpenAIChatModelProvider" />
+    <property role="34LRSv" value="OpenAI" />
+    <ref role="1TJDcQ" node="4S6651mB7j_" resolve="AbstractChatModelProviderBase" />
   </node>
 </model>
 
