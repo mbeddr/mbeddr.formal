@@ -119,6 +119,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
+      </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
@@ -818,6 +821,62 @@
           </node>
         </node>
         <node concept="3clFbH" id="25QeXKbgPpa" role="3cqZAp" />
+        <node concept="3cpWs8" id="4S6651mBJFp" role="3cqZAp">
+          <node concept="3cpWsn" id="4S6651mBJFq" role="3cpWs9">
+            <property role="TrG5h" value="apiKey" />
+            <node concept="17QB3L" id="4S6651mBJ_r" role="1tU5fm" />
+            <node concept="2YIFZM" id="4S6651mBJFr" role="33vP2m">
+              <ref role="37wK5l" to="szki:6o$jG5tMD19" resolve="getOpenApiKey" />
+              <ref role="1Pybhc" to="szki:65oZS6J8USM" resolve="ApiKeys" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4S6651mAIwS" role="3cqZAp">
+          <node concept="3cpWsn" id="4S6651mAIwT" role="3cpWs9">
+            <property role="TrG5h" value="builder" />
+            <node concept="3uibUv" id="4S6651mAIii" role="1tU5fm">
+              <ref role="3uigEE" to="8s45:~OpenAiChatModel$OpenAiChatModelBuilder" resolve="OpenAiChatModelBuilder" />
+            </node>
+            <node concept="2OqwBi" id="4S6651mAIwU" role="33vP2m">
+              <node concept="2OqwBi" id="4S6651mAIwV" role="2Oq$k0">
+                <node concept="2OqwBi" id="4S6651mAIwW" role="2Oq$k0">
+                  <node concept="2OqwBi" id="4S6651mAIwY" role="2Oq$k0">
+                    <node concept="2YIFZM" id="4S6651mAIwZ" role="2Oq$k0">
+                      <ref role="1Pybhc" to="8s45:~OpenAiChatModel" resolve="OpenAiChatModel" />
+                      <ref role="37wK5l" to="8s45:~OpenAiChatModel.builder()" resolve="builder" />
+                    </node>
+                    <node concept="liA8E" id="4S6651mAIx0" role="2OqNvi">
+                      <ref role="37wK5l" to="8s45:~OpenAiChatModel$OpenAiChatModelBuilder.apiKey(java.lang.String)" resolve="apiKey" />
+                      <node concept="37vLTw" id="4S6651mBJFs" role="37wK5m">
+                        <ref role="3cqZAo" node="4S6651mBJFq" resolve="apiKey" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="4S6651mAIx4" role="2OqNvi">
+                    <ref role="37wK5l" to="8s45:~OpenAiChatModel$OpenAiChatModelBuilder.logRequests(java.lang.Boolean)" resolve="logRequests" />
+                    <node concept="3clFbT" id="4S6651mAIx5" role="37wK5m">
+                      <property role="3clFbU" value="true" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="4S6651mAIx6" role="2OqNvi">
+                  <ref role="37wK5l" to="8s45:~OpenAiChatModel$OpenAiChatModelBuilder.logResponses(java.lang.Boolean)" resolve="logResponses" />
+                  <node concept="3clFbT" id="4S6651mAIx7" role="37wK5m">
+                    <property role="3clFbU" value="true" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="4S6651mAIx8" role="2OqNvi">
+                <ref role="37wK5l" to="8s45:~OpenAiChatModel$OpenAiChatModelBuilder.modelName(dev.langchain4j.model.openai.OpenAiChatModelName)" resolve="modelName" />
+                <node concept="Rm8GO" id="4S6651mIPQZ" role="37wK5m">
+                  <ref role="Rm8GQ" to="8s45:~OpenAiChatModelName.GPT_4_O_MINI" resolve="GPT_4_O_MINI" />
+                  <ref role="1Px2BO" to="8s45:~OpenAiChatModelName" resolve="OpenAiChatModelName" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="4S6651mIOkO" role="3cqZAp" />
         <node concept="3cpWs8" id="25QeXKbgULQ" role="3cqZAp">
           <node concept="3cpWsn" id="25QeXKbgULR" role="3cpWs9">
             <property role="TrG5h" value="gw" />
@@ -828,9 +887,13 @@
               <node concept="1pGfFk" id="25QeXKbgWbT" role="2ShVmc">
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="szki:6o$jG5tN2l2" resolve="GptWrapper" />
-                <node concept="Rm8GO" id="5s847lWHDmi" role="37wK5m">
-                  <ref role="Rm8GQ" to="8s45:~OpenAiChatModelName.GPT_4_O_MINI" resolve="GPT_4_O_MINI" />
-                  <ref role="1Px2BO" to="8s45:~OpenAiChatModelName" resolve="OpenAiChatModelName" />
+                <node concept="2OqwBi" id="4S6651mIQP9" role="37wK5m">
+                  <node concept="37vLTw" id="4S6651mIQmb" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4S6651mAIwT" resolve="builder" />
+                  </node>
+                  <node concept="liA8E" id="4S6651mIRv7" role="2OqNvi">
+                    <ref role="37wK5l" to="8s45:~OpenAiChatModel$OpenAiChatModelBuilder.build()" resolve="build" />
+                  </node>
                 </node>
               </node>
             </node>
