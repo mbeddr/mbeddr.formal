@@ -34,27 +34,27 @@
       <property role="0lsPA" value="HAZ01" />
       <property role="TrG5h" value="Electrical malfunctioning" />
       <node concept="3Zv_sa" id="7s0Rn3ORa_t" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7s0Rn3ORd2C" />
+        <ref role="3Zv_sb" node="7s0Rn3ORd2C" resolve="Patient injury" />
       </node>
     </node>
     <node concept="8gVzc" id="7s0Rn3ORiLh" role="8gIbH">
       <property role="0lsPA" value="HAZ02" />
       <property role="TrG5h" value="Incorrect pulse timing" />
       <node concept="3Zv_sa" id="7s0Rn3ORkOh" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7s0Rn3ORaM_" />
+        <ref role="3Zv_sb" node="7s0Rn3ORaM_" resolve="Patient stress" />
       </node>
       <node concept="3Zv_sa" id="7s0Rn3ORiLi" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7s0Rn3ORd2C" />
+        <ref role="3Zv_sb" node="7s0Rn3ORd2C" resolve="Patient injury" />
       </node>
     </node>
     <node concept="8gVzc" id="7s0Rn3ORiYp" role="8gIbH">
       <property role="0lsPA" value="HAZ03" />
       <property role="TrG5h" value="Incorrect pulse frequency" />
       <node concept="3Zv_sa" id="7s0Rn3ORnuw" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7s0Rn3ORaM_" />
+        <ref role="3Zv_sb" node="7s0Rn3ORaM_" resolve="Patient stress" />
       </node>
       <node concept="3Zv_sa" id="7s0Rn3ORiYq" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7s0Rn3ORd2C" />
+        <ref role="3Zv_sb" node="7s0Rn3ORd2C" resolve="Patient injury" />
       </node>
     </node>
   </node>

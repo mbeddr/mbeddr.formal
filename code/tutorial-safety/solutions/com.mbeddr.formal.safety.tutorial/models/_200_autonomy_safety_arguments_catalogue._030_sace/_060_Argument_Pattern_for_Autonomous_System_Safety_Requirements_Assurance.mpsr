@@ -189,7 +189,7 @@
       </node>
     </node>
     <node concept="lwsBx" id="4pL_qfq6bJN" role="lwsDx">
-      <ref role="lws$m" node="4pL_qfq67Ph" resolve="AS Safety Requirements" />
+      <ref role="lws$m" node="4pL_qfq67Ph" resolve="AS Safety Reqs." />
     </node>
     <node concept="2vn7WC" id="4pL_qfq6c9F" role="2vn1q5">
       <property role="TrG5h" value="G4.1" />

@@ -328,7 +328,7 @@
       </node>
     </node>
     <node concept="lwsBx" id="4pL_qfq5YJK" role="lwsDx">
-      <ref role="lws$m" node="4pL_qfq5Tjj" resolve="AS Hazardous Scenarios Identification" />
+      <ref role="lws$m" node="4pL_qfq5Tjj" resolve="AS Haz. Scenarios Identif." />
     </node>
     <node concept="2vn7WC" id="4pL_qfq5Z9f" role="2vn1q5">
       <property role="TrG5h" value="G2.1" />
