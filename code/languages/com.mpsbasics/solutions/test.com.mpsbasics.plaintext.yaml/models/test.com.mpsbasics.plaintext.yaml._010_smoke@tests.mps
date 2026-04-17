@@ -177,6 +177,7 @@
       <concept id="3641777788415793204" name="com.mpsbasics.plaintext.yaml.structure.ScalarValue" flags="ng" index="2RT6AI">
         <property id="3641777788415793206" name="text" index="2RT6AG" />
       </concept>
+      <concept id="6266257241896181274" name="com.mpsbasics.plaintext.yaml.structure.ClosedSquareBracket" flags="ng" index="2SxIBo" />
       <concept id="6266257241896181272" name="com.mpsbasics.plaintext.yaml.structure.OpenSquareBracket" flags="ng" index="2SxIBq" />
       <concept id="4586453272395245971" name="com.mpsbasics.plaintext.yaml.structure.SequenceNode" flags="ng" index="2ZFrdw" />
       <concept id="4586453272395245969" name="com.mpsbasics.plaintext.yaml.structure.MappingNode" flags="ng" index="2ZFrdy" />
@@ -948,29 +949,30 @@
     <node concept="1qefOq" id="5rQdWbIsdck" role="1SKRRt">
       <node concept="3tkWtY" id="5rQdWbIsdcl" role="1qenE9">
         <property role="TrG5h" value="_200_smoke_lifting_sequence_1" />
-        <node concept="2ZFrdy" id="5rQdWbIsdcm" role="3tkPS6">
-          <node concept="2ZIqtT" id="5rQdWbIub1I" role="3tkPS6">
-            <node concept="2ZFrdW" id="5rQdWbIub1J" role="3tkPS6">
-              <node concept="2RT6AI" id="5rQdWbIub1K" role="3tkPS6">
+        <node concept="2ZFrdy" id="4aUroz_H2Lc" role="3tkPS6">
+          <node concept="2ZIqtT" id="4aUroz_HhDy" role="3tkPS6">
+            <node concept="2ZFrdW" id="4aUroz_HhDz" role="3tkPS6">
+              <node concept="2RT6AI" id="4aUroz_HhD$" role="3tkPS6">
                 <property role="2RT6AG" value="key" />
               </node>
             </node>
-            <node concept="2zKeKy" id="5rQdWbIub1_" role="3tkPS6" />
-            <node concept="3tkPS2" id="5rQdWbIub1A" role="3tkPS6" />
-            <node concept="2ZFrdw" id="5rQdWbIub1L" role="3tkPS6">
-              <node concept="2SxIBq" id="5rQdWbIub1B" role="3tkPS6" />
-              <node concept="2ZFrdW" id="5rQdWbIub1M" role="3tkPS6">
-                <node concept="2RT6AI" id="5rQdWbIub1N" role="3tkPS6">
+            <node concept="2zKeKy" id="4aUroz_HhD_" role="3tkPS6" />
+            <node concept="3tkPS2" id="4aUroz_HhDA" role="3tkPS6" />
+            <node concept="2ZFrdw" id="4aUroz_HhDB" role="3tkPS6">
+              <node concept="2SxIBq" id="4aUroz_HhDC" role="3tkPS6" />
+              <node concept="2ZFrdW" id="4aUroz_HhDD" role="3tkPS6">
+                <node concept="2RT6AI" id="4aUroz_HhDE" role="3tkPS6">
                   <property role="2RT6AG" value="value1" />
                 </node>
               </node>
-              <node concept="2zKeKH" id="5rQdWbIub1D" role="3tkPS6" />
-              <node concept="3tkPS2" id="5rQdWbIub1E" role="3tkPS6" />
-              <node concept="2ZFrdW" id="5rQdWbIub1O" role="3tkPS6">
-                <node concept="2RT6AI" id="5rQdWbIub1P" role="3tkPS6">
-                  <property role="2RT6AG" value="value2]" />
+              <node concept="2zKeKH" id="4aUroz_HhDF" role="3tkPS6" />
+              <node concept="3tkPS2" id="4aUroz_HhDG" role="3tkPS6" />
+              <node concept="2ZFrdW" id="4aUroz_HhDH" role="3tkPS6">
+                <node concept="2RT6AI" id="4aUroz_HhDI" role="3tkPS6">
+                  <property role="2RT6AG" value="value2" />
                 </node>
               </node>
+              <node concept="2SxIBo" id="4aUroz_HhDJ" role="3tkPS6" />
             </node>
           </node>
         </node>
