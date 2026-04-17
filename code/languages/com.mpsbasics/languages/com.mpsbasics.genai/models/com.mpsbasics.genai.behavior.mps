@@ -1816,7 +1816,7 @@
           <node concept="3cpWsn" id="4S6651mAIwT" role="3cpWs9">
             <property role="TrG5h" value="builder" />
             <node concept="3uibUv" id="4S6651mAIii" role="1tU5fm">
-              <ref role="3uigEE" to="8s45:~OpenAiChatModel$OpenAiChatModelBuilder" resolve="OpenAiChatModelBuilder" />
+              <ref role="3uigEE" to="8s45:~OpenAiChatModel$OpenAiChatModelBuilder" resolve="OpenAiChatModel.OpenAiChatModelBuilder" />
             </node>
             <node concept="2OqwBi" id="4S6651mAIwU" role="33vP2m">
               <node concept="2OqwBi" id="4S6651mAIwV" role="2Oq$k0">
@@ -1829,7 +1829,7 @@
                     <node concept="liA8E" id="4S6651mAIx0" role="2OqNvi">
                       <ref role="37wK5l" to="8s45:~OpenAiChatModel$OpenAiChatModelBuilder.apiKey(java.lang.String)" resolve="apiKey" />
                       <node concept="37vLTw" id="4S6651mBJFs" role="37wK5m">
-                        <ref role="3cqZAo" node="4S6651mBJFq" resolve="openApiKey" />
+                        <ref role="3cqZAo" node="4S6651mBJFq" resolve="apiKey" />
                       </node>
                     </node>
                   </node>
@@ -1850,7 +1850,7 @@
               <node concept="liA8E" id="4S6651mAIx8" role="2OqNvi">
                 <ref role="37wK5l" to="8s45:~OpenAiChatModel$OpenAiChatModelBuilder.modelName(dev.langchain4j.model.openai.OpenAiChatModelName)" resolve="modelName" />
                 <node concept="37vLTw" id="4S6651mBK2f" role="37wK5m">
-                  <ref role="3cqZAo" node="4S6651mBK2a" resolve="model" />
+                  <ref role="3cqZAo" node="4S6651mBK2a" resolve="modelName" />
                 </node>
               </node>
             </node>

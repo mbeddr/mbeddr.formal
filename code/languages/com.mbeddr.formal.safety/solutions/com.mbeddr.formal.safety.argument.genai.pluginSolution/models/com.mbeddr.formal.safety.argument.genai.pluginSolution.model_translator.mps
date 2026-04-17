@@ -835,7 +835,7 @@
           <node concept="3cpWsn" id="4S6651mAIwT" role="3cpWs9">
             <property role="TrG5h" value="builder" />
             <node concept="3uibUv" id="4S6651mAIii" role="1tU5fm">
-              <ref role="3uigEE" to="8s45:~OpenAiChatModel$OpenAiChatModelBuilder" resolve="OpenAiChatModelBuilder" />
+              <ref role="3uigEE" to="8s45:~OpenAiChatModel$OpenAiChatModelBuilder" resolve="OpenAiChatModel.OpenAiChatModelBuilder" />
             </node>
             <node concept="2OqwBi" id="4S6651mAIwU" role="33vP2m">
               <node concept="2OqwBi" id="4S6651mAIwV" role="2Oq$k0">

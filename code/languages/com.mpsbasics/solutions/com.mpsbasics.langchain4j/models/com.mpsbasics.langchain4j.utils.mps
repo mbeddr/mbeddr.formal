@@ -288,7 +288,7 @@
                     <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="8s45:~OpenAiTokenCountEstimator.&lt;init&gt;(dev.langchain4j.model.openai.OpenAiChatModelName)" resolve="OpenAiTokenCountEstimator" />
                     <node concept="37vLTw" id="7OBWVCZCuY0" role="37wK5m">
-                      <ref role="3cqZAo" node="5s847lWHH1u" resolve="modelName" />
+                      <ref role="3cqZAo" node="5s847lWHH1u" resolve="chatModel" />
                     </node>
                   </node>
                 </node>
@@ -753,7 +753,7 @@
           <node concept="1rXfSq" id="5Ux4Lu3d5EL" role="3clFbG">
             <ref role="37wK5l" node="5Ux4Lu3c0sx" resolve="init" />
             <node concept="37vLTw" id="5Ux4Lu3d5ZE" role="37wK5m">
-              <ref role="3cqZAo" node="5Ux4Lu3aTD4" resolve="modelName" />
+              <ref role="3cqZAo" node="5Ux4Lu3aTD4" resolve="chatModel" />
             </node>
             <node concept="37vLTw" id="4S6651mFHhx" role="37wK5m">
               <ref role="3cqZAo" node="4S6651mFDom" resolve="chatModelName" />

@@ -269,7 +269,7 @@
     <property role="3GE5qa" value="chat.model_provider" />
     <property role="TrG5h" value="AbstractChatModelProviderBase" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5s847lWJoWt" role="1TKVEl">
       <property role="IQ2nx" value="6271280577903431453" />
       <property role="TrG5h" value="llmModelName" />
