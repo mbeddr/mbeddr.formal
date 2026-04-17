@@ -181,7 +181,7 @@
       <ref role="3VeSjP" node="4pL_qfpROKp" resolve="S3" />
       <ref role="3VeSjQ" node="4pL_qfpROKC" resolve="C4" />
       <node concept="3Ho4uE" id="4pL_qfq67Ph" role="1Wbb7D">
-        <property role="TrG5h" value="AS Safety Requirements" />
+        <property role="TrG5h" value="AS Safety Reqs." />
         <ref role="3Ho4uy" node="4pL_qfq69LT" resolve="_060_Argument_Pattern_for_Autonomous_System_Safety_Requirements_Assurance" />
       </node>
     </node>
@@ -189,7 +189,7 @@
       <ref role="3VeSjP" node="4pL_qfpROKs" resolve="G5" />
       <ref role="3VeSjQ" node="4pL_qfpROKF" resolve="C5" />
       <node concept="3Ho4uE" id="4pL_qfq6dJ5" role="1Wbb7D">
-        <property role="TrG5h" value="Design Assurance Argument" />
+        <property role="TrG5h" value="Design Assurance Arg." />
         <ref role="3Ho4uy" node="4pL_qfq6gu0" resolve="_070_Argument_Pattern_for_Autonomous_System_Design_Assurance" />
       </node>
     </node>
@@ -238,7 +238,7 @@
           <property role="gqqTZ" value="637.0" />
           <property role="gqqTW" value="286.0" />
           <property role="gqqTX" value="165.0" />
-          <property role="gqqTy" value="60.0" />
+          <property role="gqqTy" value="76.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -265,8 +265,8 @@
       <node concept="37mRIm" id="4pL_qfpROLb" role="37mRID">
         <property role="37mO49" value="5076002785990757416" />
         <node concept="gqqVs" id="4pL_qfpROLa" role="37mO4d">
-          <property role="gqqTZ" value="83.0" />
-          <property role="gqqTW" value="168.0" />
+          <property role="gqqTZ" value="201.0" />
+          <property role="gqqTW" value="157.0" />
           <property role="gqqTX" value="144.0" />
           <property role="gqqTy" value="44.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
@@ -275,9 +275,9 @@
       <node concept="37mRIm" id="4pL_qfpROLd" role="37mRID">
         <property role="37mO49" value="5076002785990757419" />
         <node concept="gqqVs" id="4pL_qfpROLc" role="37mO4d">
-          <property role="gqqTZ" value="50.0" />
+          <property role="gqqTZ" value="83.0" />
           <property role="gqqTW" value="286.0" />
-          <property role="gqqTX" value="90.0" />
+          <property role="gqqTX" value="94.0" />
           <property role="gqqTy" value="44.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>

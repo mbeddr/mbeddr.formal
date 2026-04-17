@@ -576,24 +576,24 @@
       </node>
     </node>
     <node concept="3VeUTF" id="5xecbsSpIZt" role="2vhqc$">
-      <ref role="3VeSjP" node="5xecbsSpIKs" />
-      <ref role="3VeSjQ" node="5xecbsSpIMc" />
+      <ref role="3VeSjP" node="5xecbsSpIKs" resolve="SPI_COLAN_001" />
+      <ref role="3VeSjQ" node="5xecbsSpIMc" resolve="SPI_COLAN_002" />
     </node>
     <node concept="3VeUTF" id="5xecbsSpJ1G" role="2vhqc$">
-      <ref role="3VeSjP" node="5xecbsSpIMc" />
-      <ref role="3VeSjQ" node="5xecbsSpIOj" />
+      <ref role="3VeSjP" node="5xecbsSpIMc" resolve="SPI_COLAN_002" />
+      <ref role="3VeSjQ" node="5xecbsSpIOj" resolve="SPI_COLAN_003" />
     </node>
     <node concept="3VeUTF" id="5xecbsSpJ3p" role="2vhqc$">
-      <ref role="3VeSjP" node="5xecbsSpIMc" />
-      <ref role="3VeSjQ" node="5xecbsSpIQ2" />
+      <ref role="3VeSjP" node="5xecbsSpIMc" resolve="SPI_COLAN_002" />
+      <ref role="3VeSjQ" node="5xecbsSpIQ2" resolve="SPI_COLAN_004" />
     </node>
     <node concept="3VeUTF" id="5xecbsSpJ60" role="2vhqc$">
-      <ref role="3VeSjP" node="5xecbsSpIOj" />
-      <ref role="3VeSjQ" node="5xecbsSpIRL" />
+      <ref role="3VeSjP" node="5xecbsSpIOj" resolve="SPI_COLAN_003" />
+      <ref role="3VeSjQ" node="5xecbsSpIRL" resolve="SPI_COLAN_005" />
     </node>
     <node concept="3VeUTF" id="5xecbsSpJ8f" role="2vhqc$">
-      <ref role="3VeSjP" node="5xecbsSpIQ2" />
-      <ref role="3VeSjQ" node="5xecbsSpIW4" />
+      <ref role="3VeSjP" node="5xecbsSpIQ2" resolve="SPI_COLAN_004" />
+      <ref role="3VeSjQ" node="5xecbsSpIW4" resolve="SPI_COLAN_006" />
     </node>
     <node concept="2vn7WC" id="5xecbsSpLYS" role="2vn1q5">
       <property role="TrG5h" value="SPI_COLAN_007" />
@@ -659,32 +659,32 @@
       </node>
     </node>
     <node concept="3VeUTF" id="5xecbsSpMcj" role="2vhqc$">
-      <ref role="3VeSjP" node="5xecbsSpIRL" />
-      <ref role="3VeSjQ" node="5xecbsSpLYS" />
+      <ref role="3VeSjP" node="5xecbsSpIRL" resolve="SPI_COLAN_005" />
+      <ref role="3VeSjQ" node="5xecbsSpLYS" resolve="SPI_COLAN_007" />
     </node>
     <node concept="3VeUTF" id="5xecbsSpMdC" role="2vhqc$">
-      <ref role="3VeSjP" node="5xecbsSpIRL" />
-      <ref role="3VeSjQ" node="5xecbsSpM0B" />
+      <ref role="3VeSjP" node="5xecbsSpIRL" resolve="SPI_COLAN_005" />
+      <ref role="3VeSjQ" node="5xecbsSpM0B" resolve="SPI_COLAN_008" />
     </node>
     <node concept="3VeUTF" id="5xecbsSpMgf" role="2vhqc$">
-      <ref role="3VeSjP" node="5xecbsSpIW4" />
-      <ref role="3VeSjQ" node="5xecbsSpM2m" />
+      <ref role="3VeSjP" node="5xecbsSpIW4" resolve="SPI_COLAN_006" />
+      <ref role="3VeSjQ" node="5xecbsSpM2m" resolve="SPI_COLAN_009" />
     </node>
     <node concept="3VeUTF" id="5xecbsSpMh$" role="2vhqc$">
-      <ref role="3VeSjP" node="5xecbsSpIW4" />
-      <ref role="3VeSjQ" node="5xecbsSpM45" />
+      <ref role="3VeSjP" node="5xecbsSpIW4" resolve="SPI_COLAN_006" />
+      <ref role="3VeSjQ" node="5xecbsSpM45" resolve="SPI_COLAN_010" />
     </node>
     <node concept="3VeUTF" id="5xecbsSpMiT" role="2vhqc$">
-      <ref role="3VeSjP" node="5xecbsSpIW4" />
-      <ref role="3VeSjQ" node="5xecbsSpM5O" />
+      <ref role="3VeSjP" node="5xecbsSpIW4" resolve="SPI_COLAN_006" />
+      <ref role="3VeSjQ" node="5xecbsSpM5O" resolve="SPI_COLAN_011" />
     </node>
     <node concept="3VeUTF" id="5xecbsSpMke" role="2vhqc$">
-      <ref role="3VeSjP" node="5xecbsSpIW4" />
-      <ref role="3VeSjQ" node="5xecbsSpM7z" />
+      <ref role="3VeSjP" node="5xecbsSpIW4" resolve="SPI_COLAN_006" />
+      <ref role="3VeSjQ" node="5xecbsSpM7z" resolve="SPI_COLAN_012" />
     </node>
     <node concept="3VeUTF" id="5xecbsSpMlz" role="2vhqc$">
-      <ref role="3VeSjP" node="5xecbsSpIW4" />
-      <ref role="3VeSjQ" node="5xecbsSpM9i" />
+      <ref role="3VeSjP" node="5xecbsSpIW4" resolve="SPI_COLAN_006" />
+      <ref role="3VeSjQ" node="5xecbsSpM9i" resolve="SPI_COLAN_013" />
     </node>
     <node concept="9kjDo" id="6IfUpCweq5F" role="9lmNH">
       <node concept="19SGf9" id="6IfUpCweq5G" role="9kjJR">

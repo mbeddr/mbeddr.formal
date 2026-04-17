@@ -294,7 +294,7 @@
       </node>
       <node concept="2tJFMh" id="3DHxSK4AjX2" role="2j1LYg">
         <node concept="ZC_QK" id="3DHxSK4AjXc" role="2tJFKM">
-          <ref role="2aWVGs" node="3DHxSK4AjQl" />
+          <ref role="2aWVGs" node="3DHxSK4AjQl" resolve="linters_without_documentation" />
         </node>
       </node>
     </node>

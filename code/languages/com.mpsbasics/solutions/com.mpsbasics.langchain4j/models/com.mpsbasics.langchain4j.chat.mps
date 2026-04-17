@@ -15,6 +15,7 @@
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" />
     <import index="9dus" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.model.output(com.mpsbasics.langchain4j/)" />
+    <import index="zpwy" ref="r:aae41743-8738-47cd-9865-f4a886e2c9d4(com.mpsbasics.genai.behavior)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -300,16 +301,17 @@
               <node concept="1pGfFk" id="5s847lWJUFp" role="2ShVmc">
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="szki:6o$jG5tN2l2" resolve="GptWrapper" />
-                <node concept="2YIFZM" id="5s847lWJVlD" role="37wK5m">
-                  <ref role="37wK5l" to="szki:5s847lWJLs0" resolve="model" />
-                  <ref role="1Pybhc" to="szki:5s847lWJK6V" resolve="ModelConverter" />
-                  <node concept="2OqwBi" id="5Ux4Lu38ubv" role="37wK5m">
-                    <node concept="37vLTw" id="5Ux4Lu38tVr" role="2Oq$k0">
+                <node concept="2OqwBi" id="4S6651mFg_2" role="37wK5m">
+                  <node concept="2OqwBi" id="4S6651mFfWj" role="2Oq$k0">
+                    <node concept="37vLTw" id="4S6651mFfWk" role="2Oq$k0">
                       <ref role="3cqZAo" node="5s847lWJpfN" resolve="myChat" />
                     </node>
-                    <node concept="3TrcHB" id="5Ux4Lu38us5" role="2OqNvi">
-                      <ref role="3TsBF5" to="uzku:5s847lWJoWt" resolve="llmModelName" />
+                    <node concept="3TrEf2" id="4S6651mFfWl" role="2OqNvi">
+                      <ref role="3Tt5mk" to="uzku:4S6651mB7lM" resolve="chatModelProvider" />
                     </node>
+                  </node>
+                  <node concept="2qgKlT" id="4S6651mFgNa" role="2OqNvi">
+                    <ref role="37wK5l" to="zpwy:4S6651mB7Vu" resolve="getChatModel" />
                   </node>
                 </node>
               </node>
@@ -715,19 +717,43 @@
             <ref role="3cqZAo" node="5Ux4Lu3aOYS" resolve="kbq" />
           </node>
         </node>
+        <node concept="3cpWs8" id="4S6651mGdRb" role="3cqZAp">
+          <node concept="3cpWsn" id="4S6651mGdRc" role="3cpWs9">
+            <property role="TrG5h" value="chatModelProvider" />
+            <node concept="3Tqbb2" id="4S6651mGd2$" role="1tU5fm">
+              <ref role="ehGHo" to="uzku:4S6651mB7j_" resolve="AbstractChatModelProviderBase" />
+            </node>
+            <node concept="2OqwBi" id="4S6651mGdRd" role="33vP2m">
+              <node concept="37vLTw" id="4S6651mGdRe" role="2Oq$k0">
+                <ref role="3cqZAo" node="5Ux4Lu3aOYS" resolve="kbq" />
+              </node>
+              <node concept="3TrEf2" id="4S6651mGdRf" role="2OqNvi">
+                <ref role="3Tt5mk" to="uzku:4S6651mB7lM" resolve="chatModelProvider" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="5Ux4Lu3e9nC" role="3cqZAp">
           <node concept="37vLTI" id="5Ux4Lu3e9yw" role="3clFbG">
             <node concept="2ShNRf" id="5Ux4Lu3e9BE" role="37vLTx">
               <node concept="1pGfFk" id="5Ux4Lu3e9Bu" role="2ShVmc">
                 <ref role="37wK5l" to="szki:5Ux4Lu3aTD3" resolve="LangChainWrapper" />
-                <node concept="2YIFZM" id="5Ux4Lu3ey9C" role="37wK5m">
-                  <ref role="37wK5l" to="szki:5s847lWJLs0" resolve="model" />
-                  <ref role="1Pybhc" to="szki:5s847lWJK6V" resolve="ModelConverter" />
-                  <node concept="2OqwBi" id="5Ux4Lu3e9Zs" role="37wK5m">
-                    <node concept="37vLTw" id="5Ux4Lu3e9Jo" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5Ux4Lu3aOYS" resolve="kbq" />
+                <node concept="2OqwBi" id="4S6651mDgH7" role="37wK5m">
+                  <node concept="37vLTw" id="4S6651mGdRg" role="2Oq$k0">
+                    <ref role="3cqZAo" node="4S6651mGdRc" resolve="chatModelProvider" />
+                  </node>
+                  <node concept="2qgKlT" id="4S6651mDgHb" role="2OqNvi">
+                    <ref role="37wK5l" to="zpwy:4S6651mB7Vu" resolve="getChatModel" />
+                  </node>
+                </node>
+                <node concept="2YIFZM" id="4S6651mGdy6" role="37wK5m">
+                  <ref role="37wK5l" to="zpwy:5s847lWJLs0" resolve="model" />
+                  <ref role="1Pybhc" to="zpwy:5s847lWJK6V" resolve="ModelConverter" />
+                  <node concept="2OqwBi" id="4S6651mGeBR" role="37wK5m">
+                    <node concept="37vLTw" id="4S6651mGecP" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4S6651mGdRc" resolve="chatModelProvider" />
                     </node>
-                    <node concept="3TrcHB" id="5Ux4Lu3eaAe" role="2OqNvi">
+                    <node concept="3TrcHB" id="4S6651mGeRQ" role="2OqNvi">
                       <ref role="3TsBF5" to="uzku:5s847lWJoWt" resolve="llmModelName" />
                     </node>
                   </node>
