@@ -12,11 +12,12 @@
     <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
     <import index="4gky" ref="r:e1dfab1d-c7a7-43e7-9f26-028afd483e82(com.mbeddr.doc.behavior)" />
     <import index="z726" ref="r:6b7eb85f-64d8-4de6-8906-0e18804729df(com.mbeddr.doc.editor)" />
-    <import index="wvti" ref="r:b5f49a49-cb87-432f-9c94-6a91c1e055e1(com.mbeddr.formal.safety.gsn.doc.structure)" implicit="true" />
+    <import index="wvti" ref="r:b5f49a49-cb87-432f-9c94-6a91c1e055e1(com.mbeddr.formal.safety.gsn.doc.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="3696012239575138270" name="jetbrains.mps.lang.editor.structure.CellModel_URL" flags="sg" stub="8104358048506729359" index="225u1i" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="2597348684684069742" name="contextHints" index="CpUAK" />
       </concept>
@@ -954,6 +955,34 @@
           <property role="Vb096" value="hGRnIZc/lightBlue" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4pL_qfpQJon">
+    <property role="3GE5qa" value="generic" />
+    <ref role="1XX52x" to="wvti:4pL_qfpQH1o" resolve="UrlWord" />
+    <node concept="3EZMnI" id="4pL_qfpQKay" role="2wV5jI">
+      <node concept="3F0ifn" id="4pL_qfpQKaz" role="3EZMnx">
+        <property role="3F0ifm" value="@url" />
+      </node>
+      <node concept="3F0ifn" id="4pL_qfpQKa$" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <node concept="11L4FC" id="4pL_qfpQKa_" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="4pL_qfpQKaA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="225u1i" id="4pL_qfpQKWZ" role="3EZMnx">
+        <ref role="1NtTu8" to="wvti:4pL_qfpQIcM" resolve="url" />
+      </node>
+      <node concept="3F0ifn" id="4pL_qfpQKaE" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="4pL_qfpQKaF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="4pL_qfpQKaG" role="2iSdaV" />
     </node>
   </node>
 </model>

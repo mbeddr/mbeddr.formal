@@ -127,8 +127,8 @@ configurations {
         docx4j("org.docx4j:docx4j-core:$docx4JVersion")
         docx4j("org.docx4j:docx4j-JAXB-MOXy:$docx4JVersion")
 
-	langchain4j("dev.langchain4j:langchain4j-core:1.10.0")
-	langchain4j("dev.langchain4j:langchain4j-open-ai:1.10.0")
+	langchain4j("dev.langchain4j:langchain4j:1.12.2")
+	langchain4j("dev.langchain4j:langchain4j-open-ai:1.12.2")
 
         sat4j("org.ow2.sat4j:org.ow2.sat4j.core:2.3.6")
 

@@ -221,6 +221,38 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="4pL_qfpQS1$" role="3acgRq">
+      <ref role="30HIoZ" to="wvti:4pL_qfpQH1o" resolve="UrlWord" />
+      <node concept="gft3U" id="4pL_qfpQS1_" role="1lVwrX">
+        <node concept="19SUe$" id="4pL_qfpQS1A" role="gfFT$">
+          <property role="19SUeA" value="Url" />
+          <node concept="1pdMLZ" id="4pL_qfpQS1B" role="lGtFl">
+            <node concept="2kFOW8" id="4pL_qfpQS1C" role="2kGFt3">
+              <node concept="3clFbS" id="4pL_qfpQS1D" role="2VODD2">
+                <node concept="3clFbF" id="4pL_qfpQS1E" role="3cqZAp">
+                  <node concept="2pJPEk" id="4pL_qfpQS1F" role="3clFbG">
+                    <node concept="2pJPED" id="4pL_qfpQS1G" role="2pJPEn">
+                      <ref role="2pJxaS" to="87nw:2dWzqxEBMSc" resolve="Word" />
+                      <node concept="2pJxcG" id="4pL_qfpQS1H" role="2pJxcM">
+                        <ref role="2pJxcJ" to="87nw:2dWzqxEBMSe" resolve="escapedValue" />
+                        <node concept="WxPPo" id="4pL_qfpQS1I" role="28ntcv">
+                          <node concept="2OqwBi" id="4pL_qfpQS1L" role="WxPPp">
+                            <node concept="30H73N" id="4pL_qfpQS1M" role="2Oq$k0" />
+                            <node concept="3TrcHB" id="4pL_qfpQY7M" role="2OqNvi">
+                              <ref role="3TsBF5" to="wvti:4pL_qfpQIcM" resolve="url" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="1M3oF_76Xqs" role="3acgRq">
       <ref role="30HIoZ" to="wvti:5t37uj6vdh0" resolve="GoalStructureWord" />
       <node concept="gft3U" id="1M3oF_76Xqw" role="1lVwrX">

@@ -190,7 +190,7 @@
   </node>
   <node concept="WtQ9Q" id="4uGZ3dxmybz">
     <property role="3GE5qa" value="text_level.parens" />
-    <ref role="WuzLi" to="bpzl:3gvcLqnRFrs" resolve="OpenParens" />
+    <ref role="WuzLi" to="bpzl:3gvcLqnRFrs" resolve="OpenCurlyBracket" />
     <node concept="11bSqf" id="4uGZ3dxmyb$" role="11c4hB">
       <node concept="3clFbS" id="4uGZ3dxmyb_" role="2VODD2">
         <node concept="lc7rE" id="4uGZ3dxmybY" role="3cqZAp">
@@ -203,7 +203,7 @@
   </node>
   <node concept="WtQ9Q" id="4uGZ3dxmycJ">
     <property role="3GE5qa" value="text_level.parens" />
-    <ref role="WuzLi" to="bpzl:3gvcLqnRKnl" resolve="ClosedParens" />
+    <ref role="WuzLi" to="bpzl:3gvcLqnRKnl" resolve="ClosedCurlyBracket" />
     <node concept="11bSqf" id="4uGZ3dxmycK" role="11c4hB">
       <node concept="3clFbS" id="4uGZ3dxmycL" role="2VODD2">
         <node concept="lc7rE" id="4uGZ3dxmyda" role="3cqZAp">
@@ -271,6 +271,32 @@
                 <ref role="3TsBF5" to="bpzl:5lmdsXWAyPL" resolve="spaces" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="5rQdWbIsdSR">
+    <property role="3GE5qa" value="text_level.parens" />
+    <ref role="WuzLi" to="bpzl:5rQdWbIsdSo" resolve="OpenSquareBracket" />
+    <node concept="11bSqf" id="5rQdWbIsdSS" role="11c4hB">
+      <node concept="3clFbS" id="5rQdWbIsdST" role="2VODD2">
+        <node concept="lc7rE" id="5rQdWbIsdTi" role="3cqZAp">
+          <node concept="la8eA" id="5rQdWbIsdTG" role="lcghm">
+            <property role="lacIc" value="[" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="5rQdWbIsdUt">
+    <property role="3GE5qa" value="text_level.parens" />
+    <ref role="WuzLi" to="bpzl:5rQdWbIsdSq" resolve="ClosedSquareBracket" />
+    <node concept="11bSqf" id="5rQdWbIsdUu" role="11c4hB">
+      <node concept="3clFbS" id="5rQdWbIsdUv" role="2VODD2">
+        <node concept="lc7rE" id="5rQdWbIsdUS" role="3cqZAp">
+          <node concept="la8eA" id="5rQdWbIsdVi" role="lcghm">
+            <property role="lacIc" value="]" />
           </node>
         </node>
       </node>

@@ -7,7 +7,6 @@
   </languages>
   <imports>
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="aoh3" ref="r:f2f03ae8-d8d7-4909-bf68-6c512b1415d7(com.mbeddr.formal.nusmv.spec.patterns.structure)" implicit="true" />
   </imports>
   <registry>
@@ -228,13 +227,6 @@
         </node>
       </node>
       <node concept="17QB3L" id="6xNJt7lIOiS" role="3clF45" />
-    </node>
-  </node>
-  <node concept="13h7C7" id="25dEoZdLqXc">
-    <property role="3GE5qa" value="tl_patterns.property" />
-    <ref role="13h7C2" to="aoh3:6WmpcHMKsaj" resolve="AbstractProperty" />
-    <node concept="13hLZK" id="25dEoZdLqXd" role="13h7CW">
-      <node concept="3clFbS" id="25dEoZdLqXe" role="2VODD2" />
     </node>
   </node>
   <node concept="13h7C7" id="6hWVnwAhZEW">

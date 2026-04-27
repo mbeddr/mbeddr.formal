@@ -2,7 +2,7 @@
 <model ref="r:a2b23b2e-8629-4ca9-a9ef-3d3528a431ca(test.com.fasten.safety.ft._030_modularized_tree_propagation_testdata)">
   <persistence version="9" />
   <languages>
-    <devkit ref="ac9a2847-3512-4af0-8db9-c20abbe2720a(fasten.safety)" />
+    <use id="ab274f70-5238-4883-adc7-02df7a757829" name="com.fasten.safety.ft" version="1" />
   </languages>
   <imports />
   <registry>

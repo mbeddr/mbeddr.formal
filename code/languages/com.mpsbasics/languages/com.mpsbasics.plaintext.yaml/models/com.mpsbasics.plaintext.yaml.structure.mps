@@ -193,7 +193,7 @@
   <node concept="1TIwiD" id="3gvcLqnRFrs">
     <property role="EcuMT" value="3755776786380535516" />
     <property role="3GE5qa" value="text_level.parens" />
-    <property role="TrG5h" value="OpenParens" />
+    <property role="TrG5h" value="OpenCurlyBracket" />
     <property role="34LRSv" value="{" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3gvcLqnRKnf" role="PzmwI">
@@ -203,7 +203,7 @@
   <node concept="1TIwiD" id="3gvcLqnRKnl">
     <property role="EcuMT" value="3755776786380555733" />
     <property role="3GE5qa" value="text_level.parens" />
-    <property role="TrG5h" value="ClosedParens" />
+    <property role="TrG5h" value="ClosedCurlyBracket" />
     <property role="34LRSv" value="}" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3gvcLqnRKnm" role="PzmwI">
@@ -285,6 +285,26 @@
       <property role="IQ2nx" value="6149161506485972337" />
       <property role="TrG5h" value="spaces" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5rQdWbIsdSo">
+    <property role="EcuMT" value="6266257241896181272" />
+    <property role="3GE5qa" value="text_level.parens" />
+    <property role="TrG5h" value="OpenSquareBracket" />
+    <property role="34LRSv" value="[" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5rQdWbIsdSp" role="PzmwI">
+      <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5rQdWbIsdSq">
+    <property role="EcuMT" value="6266257241896181274" />
+    <property role="3GE5qa" value="text_level.parens" />
+    <property role="TrG5h" value="ClosedSquareBracket" />
+    <property role="34LRSv" value="]" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5rQdWbIsdSr" role="PzmwI">
+      <ref role="PrY4T" node="3gvcLqnVlJf" resolve="IPunctuationLike" />
     </node>
   </node>
 </model>

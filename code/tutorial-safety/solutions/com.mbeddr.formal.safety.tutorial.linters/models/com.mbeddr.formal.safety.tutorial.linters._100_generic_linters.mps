@@ -41,6 +41,7 @@
         <child id="7223240310078271420" name="violations" index="3dgnlQ" />
       </concept>
       <concept id="7223240310078271416" name="org.mpsqa.lint.generic.structure.ResultEntry" flags="ng" index="3dgnlM">
+        <property id="49142249442884896" name="resultLocation" index="2hbMIX" />
         <property id="7223240310078271417" name="result" index="3dgnlN" />
         <property id="8230153551040655111" name="resultNodeModelId" index="3qxsSb" />
         <property id="8230153551040654991" name="resultNodeId" index="3qxsY3" />
@@ -215,11 +216,6 @@
       <property role="3qxsY3" value="8129340851655595064" />
       <property role="3qxsSb" value="r:1cfdc492-ba5c-44bc-987a-7d4e55b9c1ad(org.mpsqa.lint.generic.linters_library.nodes)" />
     </node>
-    <node concept="3dgnlM" id="1Z2RqhPKlo6" role="3dgnlQ">
-      <property role="3dgnlN" value="The Script is not re-used" />
-      <property role="3qxsY3" value="7223240310078078703" />
-      <property role="3qxsSb" value="r:161dadb5-0fef-403d-8aac-88c1e026ee75(org.mpsqa.lint.generic.linters_library.models)" />
-    </node>
     <node concept="3dgnlM" id="1Z2RqhPKlo7" role="3dgnlQ">
       <property role="3dgnlN" value="The Script is not re-used" />
       <property role="3qxsY3" value="7223240310077936294" />
@@ -301,6 +297,41 @@
           <ref role="2aWVGs" node="1_6mr9XVrdH" resolve="linters_without_documentation" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2wR3oc" id="3E0v2G6oaGj">
+    <property role="3GE5qa" value="model_level" />
+    <property role="3dJkfZ" value="true" />
+    <ref role="2wR3oD" to="emnw:6gY6GEDv7VJ" resolve="models_with_file_per_root_persistency_and_different_directory_and_name" />
+    <node concept="3dgnlM" id="3E0v2G6oaTG" role="3dgnlQ">
+      <property role="3dgnlN" value="Model is saved in a directory with a different name: _010_features._010_features._110_checkable_assurance_demo_modelquery" />
+      <property role="3qxsY3" value="4215505775451220755" />
+      <property role="3qxsSb" value="r:2639b4be-d22b-4210-961f-066afd661213(com.mbeddr.formal.safety.tutorial.linters._100_generic_linters)" />
+      <property role="2hbMIX" value="r:864b7953-f3fa-48ac-aa8c-5a263225acf3(_010_features._110_checkable_assurance_demo_modelquery)" />
+    </node>
+    <node concept="3dgnlM" id="3E0v2G6oaTH" role="3dgnlQ">
+      <property role="3dgnlN" value="Model is saved in a directory with a different name: _010_features._040_safety_models" />
+      <property role="3qxsY3" value="4215505775451220755" />
+      <property role="3qxsSb" value="r:2639b4be-d22b-4210-961f-066afd661213(com.mbeddr.formal.safety.tutorial.linters._100_generic_linters)" />
+      <property role="2hbMIX" value="r:7000bc40-8318-48c4-b35f-6d57c7260390(_010_features._049_safety_models_all_together)" />
+    </node>
+    <node concept="3dgnlM" id="3E0v2G6oaTI" role="3dgnlQ">
+      <property role="3dgnlN" value="Model is saved in a directory with a different name: _010_features._040_safety_models._010_fault_trees" />
+      <property role="3qxsY3" value="4215505775451220755" />
+      <property role="3qxsSb" value="r:2639b4be-d22b-4210-961f-066afd661213(com.mbeddr.formal.safety.tutorial.linters._100_generic_linters)" />
+      <property role="2hbMIX" value="r:01c63dab-3c7b-4a81-b088-84727219e340(_010_features._040_safety_models_fault_trees)" />
+    </node>
+    <node concept="3dgnlM" id="3E0v2G6oaTJ" role="3dgnlQ">
+      <property role="3dgnlN" value="Model is saved in a directory with a different name: com.mbeddr.formal.safety.tutorial._020_acc" />
+      <property role="3qxsY3" value="4215505775451220755" />
+      <property role="3qxsSb" value="r:2639b4be-d22b-4210-961f-066afd661213(com.mbeddr.formal.safety.tutorial.linters._100_generic_linters)" />
+      <property role="2hbMIX" value="r:f913842d-4de5-41a3-90fb-88c857c893cf(_500_real_world_examples._020_acc)" />
+    </node>
+    <node concept="3dgnlM" id="3E0v2G6oaTK" role="3dgnlQ">
+      <property role="3dgnlN" value="Model is saved in a directory with a different name: com.mbeddr.formal.safety.tutorial._020_implicit_argument_behind_SPIs" />
+      <property role="3qxsY3" value="4215505775451220755" />
+      <property role="3qxsSb" value="r:2639b4be-d22b-4210-961f-066afd661213(com.mbeddr.formal.safety.tutorial.linters._100_generic_linters)" />
+      <property role="2hbMIX" value="r:04b80459-73c8-45b5-aae9-c45759fb48a1(_200_autonomy_safety_arguments_catalogue._020_implicit_argument_behind_SPIs)" />
     </node>
   </node>
 </model>
