@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:9e928ab7-f7c8-438d-bc7a-5bbabefeb57d(_200_autonomy_safety_arguments_catalogue._030_sace)" content="header">
+  <persistence version="9" />
+  <languages>
+    <devkit ref="7466bc49-e775-4df7-a9f3-e383173b2eee(fasten.safety.gsn.ext)" />
+    <devkit ref="b80b29fe-1cc4-4054-aee5-cb5c2049985a(fasten.safety.gsn.confidence)" />
+    <devkit ref="b0b37262-7857-4c92-8e0e-0467c9bc45a6(fasten.safety.gsn.doc)" />
+  </languages>
+  <imports />
+</model>
+

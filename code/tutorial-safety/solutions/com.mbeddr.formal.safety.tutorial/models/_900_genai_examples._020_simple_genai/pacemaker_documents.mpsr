@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:3f08f2cc-482e-4e4e-af2a-d138eec08934(_900_genai_examples._020_simple_genai)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="e49ae71b-b7a6-4321-84b6-ac9a82e13853" name="com.mpsbasics.genai">
+      <concept id="8575097167727037827" name="com.mpsbasics.genai.structure.NamedRootNodeKnowledgeBaseItem" flags="ng" index="23Pd3N">
+        <reference id="8575097167727052075" name="nodeRef" index="23P9xr" />
+      </concept>
+      <concept id="8170409784576026253" name="com.mpsbasics.genai.structure.KnowledgeBase" flags="ng" index="1Yp8r$">
+        <child id="8170409784576652548" name="entries" index="1YsxlH" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1Yp8r$" id="75z86$f4j93">
+    <property role="TrG5h" value="pacemaker_documents" />
+    <property role="3GE5qa" value="_010_pacemaker" />
+    <node concept="23Pd3N" id="7pXyrVpU1YM" role="1YsxlH">
+      <ref role="23P9xr" node="7s0Rn3OR7jU" resolve="Pacemaker Hazards List" />
+    </node>
+  </node>
+</model>
+

@@ -7,10 +7,7 @@
     <use id="68015e26-cc4d-49db-8715-b643faea1769" name="jetbrains.mps.lang.test.generator" version="0" />
     <use id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi" version="0" />
   </languages>
-  <imports>
-    <import index="aidu" ref="r:88ad992e-b387-4fcd-9df7-a1743a592e05(test.com.mbeddr.formal.smtlib.synthesis._010_simple_input)" />
-    <import index="ncn4" ref="r:7ba051f6-d4c6-4acb-a5fa-9a9ad070cd67(test.com.mbeddr.formal.smtlib.synthesis._010_simple_output)" />
-  </imports>
+  <imports />
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="5097124989038916362" name="jetbrains.mps.lang.test.structure.TestInfo" flags="ng" index="2XOHcx">

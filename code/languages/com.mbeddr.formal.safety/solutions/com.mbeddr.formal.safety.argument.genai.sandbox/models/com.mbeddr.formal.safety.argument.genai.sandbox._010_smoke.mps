@@ -53,13 +53,13 @@
       <concept id="6156524541423588207" name="com.mbeddr.mpsutil.filepicker.structure.SolutionRelativeFilePicker" flags="ng" index="3NXOOs" />
     </language>
     <language id="e49ae71b-b7a6-4321-84b6-ac9a82e13853" name="com.mpsbasics.genai">
-      <concept id="8575097167727037827" name="com.mpsbasics.genai.structure.GenericNamedRootNode" flags="ng" index="23Pd3N">
+      <concept id="8575097167727037827" name="com.mpsbasics.genai.structure.NamedRootNodeKnowledgeBaseItem" flags="ng" index="23Pd3N">
         <reference id="8575097167727052075" name="nodeRef" index="23P9xr" />
       </concept>
       <concept id="8170409784576026253" name="com.mpsbasics.genai.structure.KnowledgeBase" flags="ng" index="1Yp8r$">
         <child id="8170409784576652548" name="entries" index="1YsxlH" />
       </concept>
-      <concept id="8170409784576029776" name="com.mpsbasics.genai.structure.PdfDocument" flags="ng" index="1Yp9gT">
+      <concept id="8170409784576029776" name="com.mpsbasics.genai.structure.PdfDocumentKnowledgeBaseItem" flags="ng" index="1Yp9gT">
         <child id="8170409784576031185" name="location" index="1Yp9AS" />
       </concept>
     </language>

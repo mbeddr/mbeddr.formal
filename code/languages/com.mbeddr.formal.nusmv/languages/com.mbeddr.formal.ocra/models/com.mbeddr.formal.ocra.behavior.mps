@@ -477,12 +477,6 @@
       <node concept="17QB3L" id="6rqy6_PHG9b" role="3clF45" />
     </node>
   </node>
-  <node concept="13h7C7" id="1QMZQ046m4v">
-    <ref role="13h7C2" to="hqls:1WjQLbKt0sx" resolve="OthelloSystemSpecification" />
-    <node concept="13hLZK" id="1QMZQ046m4w" role="13h7CW">
-      <node concept="3clFbS" id="1QMZQ046m4x" role="2VODD2" />
-    </node>
-  </node>
   <node concept="13h7C7" id="404$BAz1e2m">
     <property role="3GE5qa" value="constraints" />
     <ref role="13h7C2" to="hqls:7mSH3WnwK$u" resolve="DerExpression" />

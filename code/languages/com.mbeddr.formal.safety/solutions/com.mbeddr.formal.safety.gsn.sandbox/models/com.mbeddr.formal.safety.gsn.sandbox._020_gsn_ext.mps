@@ -26,8 +26,10 @@
       <concept id="9296093157844055" name="com.mbeddr.formal.safety.gsn.ext.structure.LibraryGoalRef" flags="ng" index="1qmubC" />
       <concept id="9296093157844054" name="com.mbeddr.formal.safety.gsn.ext.structure.LibraryDefinition" flags="ng" index="1qmubD" />
       <concept id="9296093158641125" name="com.mbeddr.formal.safety.gsn.ext.structure.ILibraryEntityRef" flags="ngI" index="1qD0Hq">
+        <property id="6819900272921924768" name="forceSynchronizationWithDefinition" index="1HJfea" />
         <reference id="9296093158689453" name="entityDefinition" index="1qDcKi" />
       </concept>
+      <concept id="9296093158641115" name="com.mbeddr.formal.safety.gsn.ext.structure.LibraryStrategyRef" flags="ng" index="1qD0H$" />
       <concept id="1629165016568013909" name="com.mbeddr.formal.safety.gsn.ext.structure.PatternInstance" flags="ng" index="1VB52A">
         <reference id="1094571097530678975" name="originalDefinition" index="AygKy" />
         <child id="1629165016568014583" name="goalStructure" index="1VB584" />
@@ -1261,17 +1263,17 @@
           <property role="gqqTZ" value="93.0" />
           <property role="gqqTW" value="16.0" />
           <property role="gqqTX" value="224.0" />
-          <property role="gqqTy" value="108.0" />
+          <property role="gqqTy" value="120.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
       <node concept="37mRIm" id="x1FXqy4aK" role="37mRID">
         <property role="37mO49" value="9296093158851226" />
         <node concept="gqqVs" id="x1FXqy4aJ" role="37mO4d">
-          <property role="gqqTZ" value="67.0" />
-          <property role="gqqTW" value="136.0" />
-          <property role="gqqTX" value="278.0" />
-          <property role="gqqTy" value="60.0" />
+          <property role="gqqTZ" value="50.0" />
+          <property role="gqqTW" value="192.0" />
+          <property role="gqqTX" value="244.0" />
+          <property role="gqqTy" value="66.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1291,7 +1293,7 @@
           <property role="gqqTZ" value="376.0" />
           <property role="gqqTW" value="15.0" />
           <property role="gqqTX" value="285.0" />
-          <property role="gqqTy" value="60.0" />
+          <property role="gqqTy" value="66.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1299,9 +1301,9 @@
         <property role="37mO49" value="5879905612006636982" />
         <node concept="gqqVs" id="56pBK14uNRj" role="37mO4d">
           <property role="gqqTZ" value="357.5" />
-          <property role="gqqTW" value="136.0" />
+          <property role="gqqTW" value="192.0" />
           <property role="gqqTX" value="401.0" />
-          <property role="gqqTy" value="60.0" />
+          <property role="gqqTy" value="66.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1386,8 +1388,18 @@
         <node concept="gqqVs" id="x1FXq_mq1" role="37mO4d">
           <property role="gqqTZ" value="117.0" />
           <property role="gqqTW" value="26.0" />
-          <property role="gqqTX" value="107.0" />
-          <property role="gqqTy" value="55.0" />
+          <property role="gqqTX" value="158.0" />
+          <property role="gqqTy" value="120.0" />
+          <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
+        </node>
+      </node>
+      <node concept="37mRIm" id="5U_9MCNb1Hq" role="37mRID">
+        <property role="37mO49" value="6819900272923122510" />
+        <node concept="gqqVs" id="5U_9MCNb1Hp" role="37mO4d">
+          <property role="gqqTZ" value="117.0" />
+          <property role="gqqTW" value="212.0" />
+          <property role="gqqTX" value="265.0" />
+          <property role="gqqTy" value="66.0" />
           <property role="TgtnS" value="1.0;0.0;0.0;1.0;0.0;0.0" />
         </node>
       </node>
@@ -1395,9 +1407,29 @@
     <node concept="1qmubC" id="x1FXq_mpP" role="2vn1q5">
       <property role="TrG5h" value="Lib_Goal_01 Ref" />
       <ref role="1qDcKi" node="x1FXqw_vf" resolve="Goal_Root_Causes_Ident" />
-      <node concept="19SGf9" id="x1FXq_mpQ" role="2vnaTZ">
-        <node concept="19SUe$" id="x1FXq_mpR" role="19SJt6">
-          <property role="19SUeA" value="This is a library goal&#10;to be reused." />
+      <node concept="19SGf9" id="5U_9MCNb1Gw" role="2vnaTZ">
+        <node concept="19SUe$" id="5U_9MCNb1Gx" role="19SJt6">
+          <property role="19SUeA" value="All root causes of hazards&#10;associated to " />
+        </node>
+        <node concept="hkfVV" id="5U_9MCNb1Gy" role="19SJt6">
+          <node concept="19SGf9" id="5U_9MCNb1Gz" role="2vnaTY">
+            <node concept="19SUe$" id="5U_9MCNb1G$" role="19SJt6">
+              <property role="19SUeA" value="system X" />
+            </node>
+          </node>
+        </node>
+        <node concept="19SUe$" id="5U_9MCNb1G_" role="19SJt6">
+          <property role="19SUeA" value="&#10;have been identified.&#10;(this is a library goal to be &#10;reused in other arguments)." />
+        </node>
+      </node>
+    </node>
+    <node concept="1qD0H$" id="5U_9MCNb1He" role="2vn1q5">
+      <property role="TrG5h" value="Strategy_Systematic_HARA Ref" />
+      <property role="1HJfea" value="true" />
+      <ref role="1qDcKi" node="x1FXqy4aq" resolve="Strategy_Systematic_HARA" />
+      <node concept="19SGf9" id="5U_9MCNb1IP" role="2vnaTZ">
+        <node concept="19SUe$" id="5U_9MCNb1IQ" role="19SJt6">
+          <property role="19SUeA" value="We use a systematic approach &#10;for the hazard analysis." />
         </node>
       </node>
     </node>

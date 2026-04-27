@@ -12,9 +12,6 @@
   <imports>
     <import index="fdr5" ref="r:71b66e0b-0d4b-4541-bc88-20bfc6f9df94(com.mpsbasics.plaintext.yaml.behavior)" />
     <import index="bpzl" ref="r:8e9bbbf8-bc28-4903-ba1f-4a24127d3d8e(com.mpsbasics.plaintext.yaml.structure)" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
-    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="vvcd" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.yaml.snakeyaml.nodes(MPS.ThirdParty/)" />
     <import index="qyws" ref="r:6dbd5c7d-7c72-44db-8e95-5b8713d1321d(com.mpsbasics.plaintext.yaml.util.testing)" />
   </imports>
   <registry>
@@ -170,16 +167,18 @@
     <language id="4556fd77-6edd-4716-8b05-e35fd684d04d" name="com.mpsbasics.plaintext.yaml">
       <concept id="3235694987734009074" name="com.mpsbasics.plaintext.yaml.structure.Dash" flags="ng" index="25wFI0" />
       <concept id="3235694987734802926" name="com.mpsbasics.plaintext.yaml.structure.Pipe" flags="ng" index="25_DUs" />
-      <concept id="3755776786380555733" name="com.mpsbasics.plaintext.yaml.structure.ClosedParens" flags="ng" index="2zK3r3" />
+      <concept id="3755776786380555733" name="com.mpsbasics.plaintext.yaml.structure.ClosedCurlyBracket" flags="ng" index="2zK3r3" />
       <concept id="3755776786380611380" name="com.mpsbasics.plaintext.yaml.structure.Semicolon" flags="ng" index="2zKeKy" />
       <concept id="3755776786380611387" name="com.mpsbasics.plaintext.yaml.structure.Comma" flags="ng" index="2zKeKH" />
-      <concept id="3755776786380535516" name="com.mpsbasics.plaintext.yaml.structure.OpenParens" flags="ng" index="2zKona" />
+      <concept id="3755776786380535516" name="com.mpsbasics.plaintext.yaml.structure.OpenCurlyBracket" flags="ng" index="2zKona" />
       <concept id="6149161506485890547" name="com.mpsbasics.plaintext.yaml.structure.MultipleSpaces" flags="ng" index="DNHwW">
         <property id="6149161506485972337" name="spaces" index="DN1yY" />
       </concept>
       <concept id="3641777788415793204" name="com.mpsbasics.plaintext.yaml.structure.ScalarValue" flags="ng" index="2RT6AI">
         <property id="3641777788415793206" name="text" index="2RT6AG" />
       </concept>
+      <concept id="6266257241896181274" name="com.mpsbasics.plaintext.yaml.structure.ClosedSquareBracket" flags="ng" index="2SxIBo" />
+      <concept id="6266257241896181272" name="com.mpsbasics.plaintext.yaml.structure.OpenSquareBracket" flags="ng" index="2SxIBq" />
       <concept id="4586453272395245971" name="com.mpsbasics.plaintext.yaml.structure.SequenceNode" flags="ng" index="2ZFrdw" />
       <concept id="4586453272395245969" name="com.mpsbasics.plaintext.yaml.structure.MappingNode" flags="ng" index="2ZFrdy" />
       <concept id="4586453272395245967" name="com.mpsbasics.plaintext.yaml.structure.ScalarNode" flags="ng" index="2ZFrdW" />
@@ -947,6 +946,41 @@
         </node>
       </node>
     </node>
+    <node concept="1qefOq" id="5rQdWbIsdck" role="1SKRRt">
+      <node concept="3tkWtY" id="5rQdWbIsdcl" role="1qenE9">
+        <property role="TrG5h" value="_200_smoke_lifting_sequence_1" />
+        <node concept="2ZFrdy" id="4aUroz_H2Lc" role="3tkPS6">
+          <node concept="2ZIqtT" id="4aUroz_HhDy" role="3tkPS6">
+            <node concept="2ZFrdW" id="4aUroz_HhDz" role="3tkPS6">
+              <node concept="2RT6AI" id="4aUroz_HhD$" role="3tkPS6">
+                <property role="2RT6AG" value="key" />
+              </node>
+            </node>
+            <node concept="2zKeKy" id="4aUroz_HhD_" role="3tkPS6" />
+            <node concept="3tkPS2" id="4aUroz_HhDA" role="3tkPS6" />
+            <node concept="2ZFrdw" id="4aUroz_HhDB" role="3tkPS6">
+              <node concept="2SxIBq" id="4aUroz_HhDC" role="3tkPS6" />
+              <node concept="2ZFrdW" id="4aUroz_HhDD" role="3tkPS6">
+                <node concept="2RT6AI" id="4aUroz_HhDE" role="3tkPS6">
+                  <property role="2RT6AG" value="value1" />
+                </node>
+              </node>
+              <node concept="2zKeKH" id="4aUroz_HhDF" role="3tkPS6" />
+              <node concept="3tkPS2" id="4aUroz_HhDG" role="3tkPS6" />
+              <node concept="2ZFrdW" id="4aUroz_HhDH" role="3tkPS6">
+                <node concept="2RT6AI" id="4aUroz_HhDI" role="3tkPS6">
+                  <property role="2RT6AG" value="value2" />
+                </node>
+              </node>
+              <node concept="2SxIBo" id="4aUroz_HhDJ" role="3tkPS6" />
+            </node>
+          </node>
+        </node>
+        <node concept="3xLA65" id="5rQdWbIsdcu" role="lGtFl">
+          <property role="TrG5h" value="_200_smoke_lifting_sequence_1" />
+        </node>
+      </node>
+    </node>
     <node concept="1qefOq" id="3aacpE5uuGD" role="1SKRRt">
       <node concept="3tkWtY" id="3aacpE5uuGE" role="1qenE9">
         <property role="TrG5h" value="_200_smoke_lifting_mapping_1" />
@@ -1413,6 +1447,52 @@
             </node>
           </node>
           <node concept="10M0yZ" id="61FPPPg7t4S" role="3tpDZB">
+            <ref role="3cqZAo" to="qyws:3gvcLqnU8rV" resolve="SUCCESS" />
+            <ref role="1PxDUh" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5rQdWbIs3XO" role="1SL9yI">
+      <property role="TrG5h" value="_200_smoke_lifting_sequences_1" />
+      <node concept="3cqZAl" id="5rQdWbIs3XP" role="3clF45" />
+      <node concept="3clFbS" id="5rQdWbIs3XQ" role="3clF47">
+        <node concept="3cpWs8" id="5rQdWbIs3XR" role="3cqZAp">
+          <node concept="3cpWsn" id="5rQdWbIs3XS" role="3cpWs9">
+            <property role="TrG5h" value="text" />
+            <node concept="17QB3L" id="5rQdWbIs3XT" role="1tU5fm" />
+            <node concept="Xl_RD" id="5rQdWbIs3XU" role="33vP2m">
+              <property role="Xl_RC" value="key: [value1, value2]" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5rQdWbIs3XV" role="3cqZAp">
+          <node concept="3cpWsn" id="5rQdWbIs3XW" role="3cpWs9">
+            <property role="TrG5h" value="lifted2YamlLevel" />
+            <node concept="3Tqbb2" id="5rQdWbIs3XX" role="1tU5fm">
+              <ref role="ehGHo" to="bpzl:21lHZzX1B26" resolve="YamlFile" />
+            </node>
+            <node concept="2YIFZM" id="5rQdWbIs3XY" role="33vP2m">
+              <ref role="37wK5l" to="qyws:6nIrkDgi97Z" resolve="createYamlFile" />
+              <ref role="1Pybhc" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
+              <node concept="37vLTw" id="5rQdWbIs3XZ" role="37wK5m">
+                <ref role="3cqZAo" node="5rQdWbIs3XS" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="5rQdWbIs3Y0" role="3cqZAp">
+          <node concept="2YIFZM" id="5rQdWbIs3Y1" role="3tpDZA">
+            <ref role="37wK5l" to="qyws:3yl_UmFUNN$" resolve="compareYamlFiles" />
+            <ref role="1Pybhc" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
+            <node concept="37vLTw" id="5rQdWbIs3Y2" role="37wK5m">
+              <ref role="3cqZAo" node="5rQdWbIs3XW" resolve="lifted2YamlLevel" />
+            </node>
+            <node concept="3xONca" id="5rQdWbIs3Y3" role="37wK5m">
+              <ref role="3xOPvv" node="5rQdWbIsdcu" resolve="_200_smoke_lifting_sequence_1" />
+            </node>
+          </node>
+          <node concept="10M0yZ" id="5rQdWbIs3Y4" role="3tpDZB">
             <ref role="3cqZAo" to="qyws:3gvcLqnU8rV" resolve="SUCCESS" />
             <ref role="1PxDUh" to="qyws:6nIrkDgi90K" resolve="TestUtils" />
           </node>
