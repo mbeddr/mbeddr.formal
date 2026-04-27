@@ -11492,6 +11492,11 @@
             <ref role="3bR37D" node="2dsc7GndbM" resolve="com.mpsbasics.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5U_9MCNdVJ7" role="3bR37C">
+          <node concept="3bR9La" id="5U_9MCNdVJ8" role="1SiIV1">
+            <ref role="3bR37D" node="2u7UHDCnPLY" resolve="com.mpsbasics.project.utils" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7he_lUur$v6" role="2G$12L">
         <property role="BnDLt" value="true" />
