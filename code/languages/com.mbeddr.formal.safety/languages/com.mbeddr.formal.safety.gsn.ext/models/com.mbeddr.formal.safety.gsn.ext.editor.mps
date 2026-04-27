@@ -1164,7 +1164,7 @@
         </node>
       </node>
       <node concept="1iCGBv" id="x1FXq_cAm" role="3EZMnx">
-        <ref role="1NtTu8" to="lbo2:x1FXqxsEH" />
+        <ref role="1NtTu8" to="lbo2:x1FXqxsEH" resolve="entityDefinition" />
         <node concept="1sVBvm" id="x1FXq_cAo" role="1sWHZn">
           <node concept="3F0A7n" id="x1FXq_cAw" role="2wV5jI">
             <property role="1Intyy" value="true" />
