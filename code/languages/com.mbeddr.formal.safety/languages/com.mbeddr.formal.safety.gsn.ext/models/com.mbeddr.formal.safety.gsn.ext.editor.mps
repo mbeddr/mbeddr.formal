@@ -6,6 +6,7 @@
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="1" />
     <use id="52733268-be24-4f5f-ab84-a73b7c0c03b0" name="de.slisson.mps.richtext.customcell" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -69,6 +70,7 @@
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
         <property id="1186403713874" name="color" index="Vb096" />
       </concept>
+      <concept id="1186403751766" name="jetbrains.mps.lang.editor.structure.FontStyleStyleClassItem" flags="ln" index="Vb9p2" />
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="615427434521884870" name="jetbrains.mps.lang.editor.structure.SubstituteMenuPart_Subconcepts" flags="ng" index="2VfDsV" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
@@ -311,6 +313,9 @@
         <child id="9064581101900868073" name="target" index="ljJml" />
         <child id="8587703283523590803" name="shape" index="1PNbKK" />
       </concept>
+    </language>
+    <language id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool">
+      <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
@@ -1169,6 +1174,14 @@
             </node>
           </node>
         </node>
+      </node>
+      <node concept="3F0ifn" id="5U_9MCN9OpH" role="3EZMnx" />
+      <node concept="3F0ifn" id="5U_9MCN6tiH" role="3EZMnx">
+        <property role="3F0ifm" value="synchronized description" />
+        <node concept="Vb9p2" id="5U_9MCN9OpP" role="3F10Kt" />
+      </node>
+      <node concept="27S6Sx" id="5U_9MCN6tiN" role="3EZMnx">
+        <ref role="1NtTu8" to="lbo2:5U_9MCN6tiw" resolve="forceSynchronizationWithDefinition" />
       </node>
       <node concept="2iRfu4" id="x1FXq_cAc" role="2iSdaV" />
     </node>

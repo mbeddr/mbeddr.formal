@@ -619,7 +619,7 @@
         <ref role="m$_y1" to="al5i:64SK4bcJmGP" resolve="com.mbeddr.mpsutil.plantuml" />
       </node>
       <node concept="m$_yC" id="36zCbqqqepY" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:NMVW79y25x" />
+        <ref role="m$_y1" to="al5i:NMVW79y25x" resolve="com.mbeddr.mpsutil.json" />
       </node>
       <node concept="m$_yC" id="3TNxfDZ8qPv" role="m$_yJ">
         <ref role="m$_y1" to="al5i:Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
@@ -3372,6 +3372,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="3d7CvMnNV2Q" role="3bR31x">
+          <node concept="3LXTmp" id="3d7CvMnNV2R" role="3rtmxm">
+            <node concept="3qWCbU" id="3d7CvMnNV2S" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="3d7CvMnNV2T" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="3d7CvMnNV2U" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="3d7CvMnNV2V" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.langchain4j" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="36zCbqqq6a9" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3449,6 +3465,22 @@
         <node concept="1SiIV0" id="36zCbqqqcpD" role="3bR37C">
           <node concept="3bR9La" id="36zCbqqqcpE" role="1SiIV1">
             <ref role="3bR37D" node="36zCbqqq9fZ" resolve="com.mpsbasics.langchain4j" />
+          </node>
+        </node>
+        <node concept="3rtmxn" id="3d7CvMnNV2X" role="3bR31x">
+          <node concept="3LXTmp" id="3d7CvMnNV2Y" role="3rtmxm">
+            <node concept="3qWCbU" id="3d7CvMnNV2Z" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="3d7CvMnNV30" role="3LXTmr">
+              <ref role="398BVh" node="6hyv0iVPlDT" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="3d7CvMnNV31" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="3d7CvMnNV32" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.genai" />
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -5979,6 +6011,11 @@
         <node concept="1SiIV0" id="5Gu43O52kZw" role="3bR37C">
           <node concept="3bR9La" id="5Gu43O52kZx" role="1SiIV1">
             <ref role="3bR37D" node="4lJSf3LkfPw" resolve="com.mpsbasics.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="5U_9MCNd6MB" role="3bR37C">
+          <node concept="3bR9La" id="5U_9MCNd6MC" role="1SiIV1">
+            <ref role="3bR37D" node="2u7UHDCnPLY" resolve="com.mpsbasics.project.utils" />
           </node>
         </node>
       </node>
