@@ -81,8 +81,12 @@ val docx4JVersion = "11.5.12"
 configurations {
     val mps by creating
     val languageLibs by creating
-    val docx4j by creating
-    val langchain4j by creating
+    val docx4j by creating {
+        exclude("org.slf4j", "slf4j-api")
+    }
+    val langchain4j by creating {
+        exclude("org.slf4j")
+    }
     val plantUML by creating {
         isTransitive = false
     }
@@ -98,7 +102,9 @@ configurations {
     val z3 by creating {
         isTransitive = false
     }
-    val jira by creating
+    val jira by creating {
+        exclude("org.slf4j")
+    }
 
     val pdfbox by creating {
         isTransitive = false
