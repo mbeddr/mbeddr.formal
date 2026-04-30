@@ -83,7 +83,7 @@ if (ciBuild) {
 
 val publishingRepository = uri("https://artifacts.itemis.cloud/repository/maven-mps-releases")
 
-val docx4JVersion = "11.4.11"
+val docx4JVersion = "11.5.12"
 
 configurations {
     val mps by creating
