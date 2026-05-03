@@ -246,7 +246,7 @@
   <node concept="25R3W" id="1I7wo92WvVM">
     <property role="3F6X1D" value="1983696557348880114" />
     <property role="3GE5qa" value="base" />
-    <property role="TrG5h" value="PlantUmlDiagramDisplay" />
+    <property role="TrG5h" value="EPlantUmlDiagramDisplay" />
     <ref role="1H5jkz" node="1I7wo92WvVN" resolve="TEXT" />
     <node concept="25R33" id="1I7wo92WvVN" role="25R1y">
       <property role="3tVfz5" value="1983696557348880115" />
