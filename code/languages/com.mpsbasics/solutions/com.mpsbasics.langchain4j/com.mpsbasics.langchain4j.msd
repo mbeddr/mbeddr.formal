@@ -15,7 +15,6 @@
       <sourceRoot path="${module}/lib/langchain4j-http-client-jdk.jar" />
       <sourceRoot path="${module}/lib/langchain4j-http-client.jar" />
       <sourceRoot path="${module}/lib/langchain4j-open-ai.jar" />
-      <sourceRoot path="${module}/lib/slf4j-api.jar" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="langchain4j.jar" />
@@ -36,7 +35,6 @@
       <library location="${module}/lib/langchain4j-http-client-jdk.jar" />
       <library location="${module}/lib/langchain4j-http-client.jar" />
       <library location="${module}/lib/langchain4j-open-ai.jar" />
-      <library location="${module}/lib/slf4j-api.jar" />
     </facet>
   </facets>
   <dependencies>
