@@ -17,7 +17,7 @@ plugins {
     id("download-jbr") version mpsGradlePluginVersion
     id("de.itemis.mps.gradle.common") version mpsGradlePluginVersion
 
-    id("org.cyclonedx.bom") version "2.2.0"
+    id("org.cyclonedx.bom") version "3.2.4"
 }
 
 val jbrVers = "17.0.8.1-b1000.32"
@@ -520,7 +520,7 @@ tasks {
     }
 
     val package_formal by registering(Zip::class) {
-        dependsOn(build_formal_languages, cyclonedxBom)
+        dependsOn(build_formal_languages, cyclonedxDirectBom)
         archiveBaseName.set("com.mbeddr.formal")
         from(artifactsDir) {
             include("com.mbeddr.formal.languages/**")
@@ -538,7 +538,7 @@ tasks {
     }
 
     val package_assurance by registering(Zip::class) {
-        dependsOn(build_assurance_languages, cyclonedxBom)
+        dependsOn(build_assurance_languages, cyclonedxDirectBom)
         archiveBaseName.set("fasten.assurance")
         from(artifactsDir) {
             include("fasten.assurance.languages/**")
@@ -627,24 +627,23 @@ tasks {
         delete(fileTree(projectDir) { include("**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**") })
     }
 
-cyclonedxBom {
-    destination = file("$buildDir/reports")
-    outputName = "sbom"
-    outputFormat = "json"
-    includeLicenseText = false
-    includeConfigs = listOf(
-        "languageLibs",
-        "docx4j",
-	"langchain4j",
-        "plantUML",
-        "sat4j",
-        "jfreechart",
-        "nusmv",
-        "z3",
-        "jira",
-        "pdfbox"
-    )
-}
+    cyclonedxDirectBom {
+        jsonOutput = layout.buildDirectory.file("reports/sbom.json")
+        xmlOutput.unsetConvention()
+        includeLicenseText = false
+        includeConfigs = listOf(
+            "languageLibs",
+            "docx4j",
+            "langchain4j",
+            "plantUML",
+            "sat4j",
+            "jfreechart",
+            "nusmv",
+            "z3",
+            "jira",
+            "pdfbox"
+        )
+    }
 
     //clean { dependsOn(cleanMps) }
     val rebuild by registering { dependsOn(clean, build_formal_languages) }
