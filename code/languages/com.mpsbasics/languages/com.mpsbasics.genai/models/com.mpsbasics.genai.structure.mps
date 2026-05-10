@@ -14,15 +14,6 @@
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="3348158742936976480" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ng" index="25R33">
-        <property id="1421157252384165432" name="memberId" index="3tVfz5" />
-      </concept>
-      <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
-        <child id="3348158742936976577" name="members" index="25R1y" />
-      </concept>
-      <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
-        <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -151,35 +142,6 @@
       <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
     </node>
   </node>
-  <node concept="25R3W" id="5Ux4Lu36AgD">
-    <property role="3F6X1D" value="6818752302520362025" />
-    <property role="3GE5qa" value="base" />
-    <property role="TrG5h" value="EModelName" />
-    <node concept="25R33" id="2ZpX2r3FV7i" role="25R1y">
-      <property role="3tVfz5" value="3448055437057831378" />
-      <property role="TrG5h" value="GPT_4_O" />
-    </node>
-    <node concept="25R33" id="5Ux4Lu36AgE" role="25R1y">
-      <property role="3tVfz5" value="6818752302520362026" />
-      <property role="TrG5h" value="GPT_4_O_MINI" />
-    </node>
-    <node concept="25R33" id="2ZpX2r3FV7k" role="25R1y">
-      <property role="3tVfz5" value="3448055437057831380" />
-      <property role="TrG5h" value="GPT_4_1" />
-    </node>
-    <node concept="25R33" id="2ZpX2r3FV7j" role="25R1y">
-      <property role="3tVfz5" value="3448055437057831379" />
-      <property role="TrG5h" value="GPT_4_1_MINI" />
-    </node>
-    <node concept="25R33" id="2ZpX2r3FTQM" role="25R1y">
-      <property role="3tVfz5" value="3448055437057826226" />
-      <property role="TrG5h" value="GPT_5_MINI" />
-    </node>
-    <node concept="25R33" id="2ZpX2r3FV7h" role="25R1y">
-      <property role="3tVfz5" value="3448055437057831377" />
-      <property role="TrG5h" value="GPT_5_1" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="5Ux4Lu3ajJ3">
     <property role="EcuMT" value="6818752302521334723" />
     <property role="TrG5h" value="KnowledgeBaseQuery" />
@@ -273,7 +235,7 @@
     <node concept="1TJgyi" id="5s847lWJoWt" role="1TKVEl">
       <property role="IQ2nx" value="6271280577903431453" />
       <property role="TrG5h" value="llmModelName" />
-      <ref role="AX2Wp" node="5Ux4Lu36AgD" resolve="EModelName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="4S6651mB7Uy">

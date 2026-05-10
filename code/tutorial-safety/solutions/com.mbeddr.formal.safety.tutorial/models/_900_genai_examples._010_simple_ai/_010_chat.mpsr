@@ -28,7 +28,6 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="1094247804558289146" name="jetbrains.mps.lang.text.structure.BulletLine" flags="ng" index="2DRihI" />
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
       </concept>
@@ -128,237 +127,77 @@
           </node>
         </node>
       </node>
-      <node concept="1Pa9Pv" id="4$EmJHcP3ca" role="FG9Z3">
-        <node concept="1PaTwC" id="4$EmJHcP3cb" role="1PaQFQ">
-          <node concept="3oM_SD" id="4$EmJHcP3cc" role="1PaTwD">
-            <property role="3oM_SC" value="To" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWy" role="1PaTwD">
-            <property role="3oM_SC" value="find" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWz" role="1PaTwD">
-            <property role="3oM_SC" value="the" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlW$" role="1PaTwD">
-            <property role="3oM_SC" value="total" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlW_" role="1PaTwD">
-            <property role="3oM_SC" value="number" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWA" role="1PaTwD">
-            <property role="3oM_SC" value="of" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWB" role="1PaTwD">
-            <property role="3oM_SC" value="people" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWC" role="1PaTwD">
-            <property role="3oM_SC" value="in" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWD" role="1PaTwD">
-            <property role="3oM_SC" value="the" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWE" role="1PaTwD">
-            <property role="3oM_SC" value="room," />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWF" role="1PaTwD">
-            <property role="3oM_SC" value="let's" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWG" role="1PaTwD">
-            <property role="3oM_SC" value="analyze" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWH" role="1PaTwD">
-            <property role="3oM_SC" value="the" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWI" role="1PaTwD">
-            <property role="3oM_SC" value="information" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWJ" role="1PaTwD">
-            <property role="3oM_SC" value="given:" />
+      <node concept="1Pa9Pv" id="1xi4xf_a$Fp" role="FG9Z3">
+        <node concept="1PaTwC" id="1xi4xf_a$Fq" role="1PaQFQ">
+          <node concept="3oM_SD" id="1xi4xf_a$Fr" role="1PaTwD">
+            <property role="3oM_SC" value="Let’s break it down:" />
           </node>
         </node>
-        <node concept="1PaTwC" id="4$EmJHcP3cd" role="1PaQFQ">
-          <node concept="3oM_SD" id="4$EmJHcP3ce" role="1PaTwD">
+        <node concept="1PaTwC" id="1xi4xf_a$Fs" role="1PaQFQ">
+          <node concept="3oM_SD" id="1xi4xf_a$Ft" role="1PaTwD">
             <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="2DRihI" id="4S6651mJlWZ" role="1PaQFQ">
-          <node concept="3oM_SD" id="4S6651mJlX1" role="1PaTwD">
-            <property role="3oM_SC" value="John:" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlX2" role="1PaTwD">
-            <property role="3oM_SC" value="1" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlX3" role="1PaTwD">
-            <property role="3oM_SC" value="person" />
+        <node concept="1PaTwC" id="1xi4xf_a$Fu" role="1PaQFQ">
+          <node concept="3oM_SD" id="1xi4xf_a$Fv" role="1PaTwD">
+            <property role="3oM_SC" value="- John: 1  " />
           </node>
         </node>
-        <node concept="2DRihI" id="4S6651mJlWU" role="1PaQFQ">
-          <node concept="3oM_SD" id="4S6651mJlWW" role="1PaTwD">
-            <property role="3oM_SC" value="Bob:" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWX" role="1PaTwD">
-            <property role="3oM_SC" value="1" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWY" role="1PaTwD">
-            <property role="3oM_SC" value="person" />
+        <node concept="1PaTwC" id="1xi4xf_a$Fw" role="1PaQFQ">
+          <node concept="3oM_SD" id="1xi4xf_a$Fx" role="1PaTwD">
+            <property role="3oM_SC" value="- Bob: 1  " />
           </node>
         </node>
-        <node concept="2DRihI" id="4S6651mJlWP" role="1PaQFQ">
-          <node concept="3oM_SD" id="4S6651mJlWR" role="1PaTwD">
-            <property role="3oM_SC" value="Fred:" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWS" role="1PaTwD">
-            <property role="3oM_SC" value="2" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWT" role="1PaTwD">
-            <property role="3oM_SC" value="people" />
+        <node concept="1PaTwC" id="1xi4xf_a$Fy" role="1PaQFQ">
+          <node concept="3oM_SD" id="1xi4xf_a$Fz" role="1PaTwD">
+            <property role="3oM_SC" value="- Two Fred: 2  " />
           </node>
         </node>
-        <node concept="2DRihI" id="4S6651mJlX4" role="1PaQFQ">
-          <node concept="3oM_SD" id="4S6651mJlX6" role="1PaTwD">
-            <property role="3oM_SC" value="Other" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlX7" role="1PaTwD">
-            <property role="3oM_SC" value="people:" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlX8" role="1PaTwD">
-            <property role="3oM_SC" value="7" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlX9" role="1PaTwD">
-            <property role="3oM_SC" value="people" />
+        <node concept="1PaTwC" id="1xi4xf_a$F$" role="1PaQFQ">
+          <node concept="3oM_SD" id="1xi4xf_a$F_" role="1PaTwD">
+            <property role="3oM_SC" value="- Other 7 people: 7  " />
           </node>
         </node>
-        <node concept="1PaTwC" id="4$EmJHcP3cn" role="1PaQFQ">
-          <node concept="3oM_SD" id="4$EmJHcP3co" role="1PaTwD">
+        <node concept="1PaTwC" id="1xi4xf_a$FA" role="1PaQFQ">
+          <node concept="3oM_SD" id="1xi4xf_a$FB" role="1PaTwD">
             <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="1PaTwC" id="4$EmJHcP3cp" role="1PaQFQ">
-          <node concept="3oM_SD" id="4$EmJHcP3cq" role="1PaTwD">
-            <property role="3oM_SC" value="Now," />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWK" role="1PaTwD">
-            <property role="3oM_SC" value="we" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWL" role="1PaTwD">
-            <property role="3oM_SC" value="can" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWM" role="1PaTwD">
-            <property role="3oM_SC" value="add" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWN" role="1PaTwD">
-            <property role="3oM_SC" value="them" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWO" role="1PaTwD">
-            <property role="3oM_SC" value="together:" />
+        <node concept="1PaTwC" id="1xi4xf_a$FC" role="1PaQFQ">
+          <node concept="3oM_SD" id="1xi4xf_a$FD" role="1PaTwD">
+            <property role="3oM_SC" value="Total people = 1 (John) + 1 (Bob) + 2 (Fred) + 7 (others) = **11 people**" />
           </node>
         </node>
-        <node concept="1PaTwC" id="4$EmJHcP3cr" role="1PaQFQ">
-          <node concept="3oM_SD" id="4$EmJHcP3cs" role="1PaTwD">
+        <node concept="1PaTwC" id="1xi4xf_a$FE" role="1PaQFQ">
+          <node concept="3oM_SD" id="1xi4xf_a$FF" role="1PaTwD">
             <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="1PaTwC" id="4$EmJHcP3ct" role="1PaQFQ">
-          <node concept="3oM_SD" id="4$EmJHcP3cu" role="1PaTwD">
-            <property role="3oM_SC" value="1" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlW3" role="1PaTwD">
-            <property role="3oM_SC" value="(John)" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlW4" role="1PaTwD">
-            <property role="3oM_SC" value="+" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlW5" role="1PaTwD">
-            <property role="3oM_SC" value="1" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlW6" role="1PaTwD">
-            <property role="3oM_SC" value="(Bob)" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlW7" role="1PaTwD">
-            <property role="3oM_SC" value="+" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlW8" role="1PaTwD">
-            <property role="3oM_SC" value="2" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlW9" role="1PaTwD">
-            <property role="3oM_SC" value="(Fred)" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWa" role="1PaTwD">
-            <property role="3oM_SC" value="+" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWb" role="1PaTwD">
-            <property role="3oM_SC" value="7" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWc" role="1PaTwD">
-            <property role="3oM_SC" value="(other" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWd" role="1PaTwD">
-            <property role="3oM_SC" value="people)" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWe" role="1PaTwD">
-            <property role="3oM_SC" value="=" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWf" role="1PaTwD">
-            <property role="3oM_SC" value="11" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWg" role="1PaTwD">
-            <property role="3oM_SC" value="people" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="4$EmJHcP3cv" role="1PaQFQ">
-          <node concept="3oM_SD" id="4$EmJHcP3cw" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-        </node>
-        <node concept="1PaTwC" id="4$EmJHcP3cx" role="1PaQFQ">
-          <node concept="3oM_SD" id="4$EmJHcP3cy" role="1PaTwD">
-            <property role="3oM_SC" value="Therefore," />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWk" role="1PaTwD">
-            <property role="3oM_SC" value="there" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWl" role="1PaTwD">
-            <property role="3oM_SC" value="are" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWm" role="1PaTwD">
-            <property role="3oM_SC" value="11" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWn" role="1PaTwD">
-            <property role="3oM_SC" value="people" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWo" role="1PaTwD">
-            <property role="3oM_SC" value="in" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWp" role="1PaTwD">
-            <property role="3oM_SC" value="the" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlWq" role="1PaTwD">
-            <property role="3oM_SC" value="room." />
+        <node concept="1PaTwC" id="1xi4xf_a$FG" role="1PaQFQ">
+          <node concept="3oM_SD" id="1xi4xf_a$FH" role="1PaTwD">
+            <property role="3oM_SC" value="So, there are **11 people in the room**." />
           </node>
         </node>
       </node>
-      <node concept="1Pa9Pv" id="4$EmJHcP3cz" role="FKhB1">
-        <node concept="1PaTwC" id="4$EmJHcP3c$" role="1PaQFQ">
-          <node concept="3oM_SD" id="4$EmJHcP3c_" role="1PaTwD">
-            <property role="3oM_SC" value="Used" />
-          </node>
-          <node concept="3oM_SD" id="4S6651mJlW2" role="1PaTwD">
-            <property role="3oM_SC" value="tokens:134" />
+      <node concept="1Pa9Pv" id="1xi4xf_a$FI" role="FKhB1">
+        <node concept="1PaTwC" id="1xi4xf_a$FJ" role="1PaQFQ">
+          <node concept="3oM_SD" id="1xi4xf_a$FK" role="1PaTwD">
+            <property role="3oM_SC" value="Used tokens:232" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="FG9Z$" id="4$EmJHcP3cA" role="m0T0H">
-      <node concept="1Pa9Pv" id="4$EmJHcP3cB" role="FG9ZB">
-        <node concept="1PaTwC" id="4$EmJHcP3cC" role="1PaQFQ">
-          <node concept="3oM_SD" id="4$EmJHcP3cD" role="1PaTwD">
+    <node concept="FG9Z$" id="1xi4xf_a$FL" role="m0T0H">
+      <node concept="1Pa9Pv" id="1xi4xf_a$FM" role="FG9ZB">
+        <node concept="1PaTwC" id="1xi4xf_a$FN" role="1PaQFQ">
+          <node concept="3oM_SD" id="1xi4xf_a$FO" role="1PaTwD">
             <property role="3oM_SC" value="" />
           </node>
         </node>
       </node>
     </node>
     <node concept="oAArM" id="4S6651mJlXa" role="oAAOy">
-      <property role="FHpXC" value="2ZpX2r3FV7k/GPT_4_1" />
+      <property role="FHpXC" value="gpt-4.1" />
     </node>
   </node>
 </model>
