@@ -14,6 +14,9 @@
       <concept id="1589299685873756410" name="com.symo.mermaid.structure.MermaidDiagramBase" flags="ng" index="34aRHu">
         <property id="8400506447498256066" name="zoom" index="145Srp" />
         <property id="1983696557348880118" name="displayStrategy" index="1ptBXO" />
+        <property id="7010306974508897303" name="rawSvgContent" index="1Rg$$q" />
+        <property id="7010306974508907508" name="hashcodeOfLastSave" index="1RgArT" />
+        <property id="7010306974508907507" name="savePictureInModel" index="1RgArY" />
         <child id="1589299685874047367" name="content" index="349WCz" />
       </concept>
       <concept id="1538964454045129178" name="com.symo.mermaid.structure.MermaidPieDiagram" flags="ng" index="1K2TBu" />
@@ -41,13 +44,16 @@
   <node concept="1K5fmX" id="1oekUji7K1B">
     <property role="TrG5h" value="_010_simple_diagram" />
     <node concept="1K2TBu" id="1oekUji7K1C" role="1K2TBo">
-      <property role="145Srp" value="130" />
+      <property role="145Srp" value="100" />
       <property role="TrG5h" value="mini_pie" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <property role="1Rg$$q" value="C:\Users\G12JLC3\AppData\Local\Temp\mermaid-viewer\output.svg" />
+      <property role="1RgArT" value="-503850886" />
+      <property role="1RgArY" value="true" />
       <node concept="34aC2Y" id="1oekUjicab0" role="349WCz" />
       <node concept="34aC2Y" id="1oekUjicab1" role="349WCz" />
-      <node concept="34aC2Y" id="1oekUjicab2" role="349WCz" />
-      <node concept="34aC2Y" id="1oekUjicab3" role="349WCz" />
+      <node concept="34aC2Y" id="659BgOm49Kh" role="349WCz" />
+      <node concept="34aC2Y" id="659BgOm49Kk" role="349WCz" />
       <node concept="349ntE" id="1oekUjibzAd" role="349WCz">
         <node concept="1Pa9Pv" id="1oekUjibzAe" role="349ntQ">
           <node concept="1PaTwC" id="1oekUjibzAf" role="1PaQFQ">
@@ -113,7 +119,7 @@
               <property role="3oM_SC" value=":" />
             </node>
             <node concept="3oM_SD" id="1oekUjibIth" role="1PaTwD">
-              <property role="3oM_SC" value="90" />
+              <property role="3oM_SC" value="70" />
             </node>
           </node>
           <node concept="1PaTwC" id="1oekUjibIuF" role="1PaQFQ">

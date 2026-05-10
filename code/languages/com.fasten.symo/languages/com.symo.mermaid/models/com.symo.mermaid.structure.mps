@@ -169,6 +169,21 @@
       <property role="TrG5h" value="displayStrategy" />
       <ref role="AX2Wp" node="1I7wo92WvVM" resolve="EMermaidDiagramDisplay" />
     </node>
+    <node concept="1TJgyi" id="659BgOm2Xgn" role="1TKVEl">
+      <property role="IQ2nx" value="7010306974508897303" />
+      <property role="TrG5h" value="rawSvgContent" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="659BgOm2ZJN" role="1TKVEl">
+      <property role="IQ2nx" value="7010306974508907507" />
+      <property role="TrG5h" value="savePictureInModel" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="659BgOm2ZJO" role="1TKVEl">
+      <property role="IQ2nx" value="7010306974508907508" />
+      <property role="TrG5h" value="hashcodeOfLastSave" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="1oekUjiapA7" role="1TKVEi">
       <property role="IQ2ns" value="1589299685874047367" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
