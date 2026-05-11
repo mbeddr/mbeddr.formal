@@ -229,8 +229,6 @@ val defaultScriptArgs = mapOf(
         "build.dir" to layout.buildDirectory.get(),
         "version" to version,
         "build.date" to Date(),
-        //incremental build support
-        "mps.generator.skipUnmodifiedModels" to true,
         "jdk.nio.zipfs.allowDotZipEntry" to true,
         "jdk.util.zip.disableZip64ExtraFieldValidation" to true,
         "build.jna.library.path" to mpsHomeDir.resolve("lib/jna/$jnaArch")
