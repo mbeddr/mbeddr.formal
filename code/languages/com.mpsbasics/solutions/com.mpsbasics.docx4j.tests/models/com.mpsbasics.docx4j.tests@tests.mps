@@ -4,10 +4,16 @@
   <languages>
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
   </languages>
   <imports>
     <import index="5zxs" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.openpackaging.packages(com.mpsbasics.docx4j.lib/)" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="i1lw" ref="r:085b85cb-e7c0-47a8-a09c-179bb5398b5c(com.mpsbasics.docx4j.core)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -35,9 +41,15 @@
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+    </language>
+    <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
+      <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
+        <child id="1199569916463" name="body" index="1bW5cS" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -53,10 +65,20 @@
       <property role="TrG5h" value="simple" />
       <node concept="3cqZAl" id="5gFsbf33v12" role="3clF45" />
       <node concept="3clFbS" id="5gFsbf33v16" role="3clF47">
-        <node concept="3clFbF" id="5gFsbf33zQu" role="3cqZAp">
-          <node concept="2YIFZM" id="2wDfdce8BqK" role="3clFbG">
-            <ref role="1Pybhc" to="5zxs:~WordprocessingMLPackage" resolve="WordprocessingMLPackage" />
-            <ref role="37wK5l" to="5zxs:~WordprocessingMLPackage.createPackage()" resolve="createPackage" />
+        <node concept="3clFbF" id="7yOrhoD$uOh" role="3cqZAp">
+          <node concept="2YIFZM" id="7yOrhoD$vaM" role="3clFbG">
+            <ref role="37wK5l" to="i1lw:7yOrhoD$tn1" resolve="runWithDocx4j" />
+            <ref role="1Pybhc" to="i1lw:7yOrhoDzQ2f" resolve="Docx4j" />
+            <node concept="1bVj0M" id="7yOrhoD$vsi" role="37wK5m">
+              <node concept="3clFbS" id="7yOrhoD$vsn" role="1bW5cS">
+                <node concept="3clFbF" id="7yOrhoD$vCr" role="3cqZAp">
+                  <node concept="2YIFZM" id="7yOrhoD$vCt" role="3clFbG">
+                    <ref role="1Pybhc" to="5zxs:~WordprocessingMLPackage" resolve="WordprocessingMLPackage" />
+                    <ref role="37wK5l" to="5zxs:~WordprocessingMLPackage.createPackage()" resolve="createPackage" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
