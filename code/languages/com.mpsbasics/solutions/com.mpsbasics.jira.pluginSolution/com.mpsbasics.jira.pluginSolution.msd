@@ -5,7 +5,6 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="jackson-core-asl.jar" />
       <sourceRoot location="joda-time.jar" />
       <sourceRoot location="jsr305.jar" />
       <sourceRoot location="httpasyncclient.jar" />
