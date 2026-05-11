@@ -14443,6 +14443,31 @@
           <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
         </node>
       </node>
+      <node concept="3rtmxn" id="7VF2e44sjKl" role="3bR31x">
+        <node concept="3LXTmp" id="7VF2e44sjKm" role="3rtmxm">
+          <node concept="3qWCbU" id="7VF2e44sjKn" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="7VF2e44sjKo" role="3LXTmr">
+            <ref role="398BVh" node="3GDqItDloIT" resolve="mbeddr.formal.home" />
+            <node concept="2Ry0Ak" id="7VF2e44sjKp" role="iGT6I">
+              <property role="2Ry0Am" value="code" />
+              <node concept="2Ry0Ak" id="7VF2e44sjKq" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7VF2e44sjKr" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics" />
+                  <node concept="2Ry0Ak" id="7VF2e44sjKs" role="2Ry0An">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="7VF2e44sjKt" role="2Ry0An">
+                      <property role="2Ry0Am" value="com.mpsbasics.build" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="1E1JtA" id="5gFsbf33HVn" role="3989C9">
       <property role="BnDLt" value="true" />
@@ -14513,6 +14538,31 @@
       <node concept="1SiIV0" id="5gFsbf3gFw7" role="3bR37C">
         <node concept="3bR9La" id="5gFsbf3gFw8" role="1SiIV1">
           <ref role="3bR37D" to="al5i:7Pr7tifzlku" resolve="com.mbeddr.platform" />
+        </node>
+      </node>
+      <node concept="3rtmxn" id="7VF2e44sjKv" role="3bR31x">
+        <node concept="3LXTmp" id="7VF2e44sjKw" role="3rtmxm">
+          <node concept="3qWCbU" id="7VF2e44sjKx" role="3LXTna">
+            <property role="3qWCbO" value="icons/**, resources/**" />
+          </node>
+          <node concept="398BVA" id="7VF2e44sjKy" role="3LXTmr">
+            <ref role="398BVh" node="3GDqItDloIT" resolve="mbeddr.formal.home" />
+            <node concept="2Ry0Ak" id="7VF2e44sjKz" role="iGT6I">
+              <property role="2Ry0Am" value="code" />
+              <node concept="2Ry0Ak" id="7VF2e44sjK$" role="2Ry0An">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="7VF2e44sjK_" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics" />
+                  <node concept="2Ry0Ak" id="7VF2e44sjKA" role="2Ry0An">
+                    <property role="2Ry0Am" value="solutions" />
+                    <node concept="2Ry0Ak" id="7VF2e44sjKB" role="2Ry0An">
+                      <property role="2Ry0Am" value="com.mpsbasics.tests.build" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
       </node>
     </node>
