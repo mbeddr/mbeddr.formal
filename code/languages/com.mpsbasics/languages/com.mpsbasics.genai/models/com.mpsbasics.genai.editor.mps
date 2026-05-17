@@ -917,5 +917,43 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="4b8dqHkXE19">
+    <property role="3GE5qa" value="text_elements" />
+    <ref role="1XX52x" to="uzku:4b8dqHkXjxY" resolve="NamedNodeRefWord" />
+    <node concept="3EZMnI" id="4b8dqHkXE1b" role="2wV5jI">
+      <node concept="3F0ifn" id="4b8dqHkXE1f" role="3EZMnx">
+        <property role="3F0ifm" value="@node" />
+      </node>
+      <node concept="3F0ifn" id="4b8dqHkXE1i" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F1sOY" id="4b8dqHkXE1l" role="3EZMnx">
+        <ref role="1NtTu8" to="uzku:4b8dqHkXkrB" resolve="nodeReference" />
+      </node>
+      <node concept="3F0ifn" id="4b8dqHkXE1o" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="2iRfu4" id="4b8dqHkXE1e" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="4b8dqHkZ6FX">
+    <property role="3GE5qa" value="text_elements" />
+    <ref role="1XX52x" to="uzku:4b8dqHkY5Xf" resolve="ModelRefWord" />
+    <node concept="3EZMnI" id="4b8dqHkZ6FZ" role="2wV5jI">
+      <node concept="3F0ifn" id="4b8dqHkZ6G0" role="3EZMnx">
+        <property role="3F0ifm" value="@model" />
+      </node>
+      <node concept="3F0ifn" id="4b8dqHkZ6G1" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+      </node>
+      <node concept="3F1sOY" id="4b8dqHkZ6G2" role="3EZMnx">
+        <ref role="1NtTu8" to="uzku:4b8dqHkY5Xg" />
+      </node>
+      <node concept="3F0ifn" id="4b8dqHkZ6G3" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+      </node>
+      <node concept="2iRfu4" id="4b8dqHkZ6G4" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

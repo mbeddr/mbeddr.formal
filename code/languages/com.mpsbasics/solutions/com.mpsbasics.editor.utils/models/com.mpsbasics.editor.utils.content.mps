@@ -367,21 +367,31 @@
                   </node>
                 </node>
               </node>
-              <node concept="3clFbF" id="EyxjoF2WrB" role="3cqZAp">
-                <node concept="2OqwBi" id="EyxjoF2XM2" role="3clFbG">
-                  <node concept="37vLTw" id="EyxjoF2XkE" role="2Oq$k0">
-                    <ref role="3cqZAo" node="EyxjoF2Xk_" resolve="componentAction" />
-                  </node>
-                  <node concept="liA8E" id="EyxjoF2Y4D" role="2OqNvi">
-                    <ref role="37wK5l" to="f4zo:~CellAction.execute(jetbrains.mps.openapi.editor.EditorContext)" resolve="execute" />
-                    <node concept="2OqwBi" id="EyxjoF2ZP8" role="37wK5m">
-                      <node concept="37vLTw" id="EyxjoF2YxM" role="2Oq$k0">
-                        <ref role="3cqZAo" node="EyxjoF2LX9" resolve="component" />
+              <node concept="3clFbJ" id="u2p4MKAF_V" role="3cqZAp">
+                <node concept="3clFbS" id="u2p4MKAF_X" role="3clFbx">
+                  <node concept="3clFbF" id="EyxjoF2WrB" role="3cqZAp">
+                    <node concept="2OqwBi" id="EyxjoF2XM2" role="3clFbG">
+                      <node concept="37vLTw" id="EyxjoF2XkE" role="2Oq$k0">
+                        <ref role="3cqZAo" node="EyxjoF2Xk_" resolve="componentAction" />
                       </node>
-                      <node concept="liA8E" id="EyxjoF31ks" role="2OqNvi">
-                        <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
+                      <node concept="liA8E" id="EyxjoF2Y4D" role="2OqNvi">
+                        <ref role="37wK5l" to="f4zo:~CellAction.execute(jetbrains.mps.openapi.editor.EditorContext)" resolve="execute" />
+                        <node concept="2OqwBi" id="EyxjoF2ZP8" role="37wK5m">
+                          <node concept="37vLTw" id="EyxjoF2YxM" role="2Oq$k0">
+                            <ref role="3cqZAo" node="EyxjoF2LX9" resolve="component" />
+                          </node>
+                          <node concept="liA8E" id="EyxjoF31ks" role="2OqNvi">
+                            <ref role="37wK5l" to="exr9:~EditorComponent.getEditorContext()" resolve="getEditorContext" />
+                          </node>
+                        </node>
                       </node>
                     </node>
+                  </node>
+                </node>
+                <node concept="3y3z36" id="u2p4MKAGmE" role="3clFbw">
+                  <node concept="10Nm6u" id="u2p4MKAGMK" role="3uHU7w" />
+                  <node concept="37vLTw" id="u2p4MKAG1S" role="3uHU7B">
+                    <ref role="3cqZAo" node="EyxjoF2Xk_" resolve="componentAction" />
                   </node>
                 </node>
               </node>

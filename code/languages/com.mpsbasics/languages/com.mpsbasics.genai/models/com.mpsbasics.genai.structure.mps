@@ -245,5 +245,40 @@
     <property role="34LRSv" value="OpenAI" />
     <ref role="1TJDcQ" node="4S6651mB7j_" resolve="AbstractChatModelProviderBase" />
   </node>
+  <node concept="1TIwiD" id="4b8dqHkXjxY">
+    <property role="EcuMT" value="4812155211826411646" />
+    <property role="TrG5h" value="NamedNodeRefWord" />
+    <property role="3GE5qa" value="text_elements" />
+    <property role="34LRSv" value="@node" />
+    <property role="R4oN_" value="references a named node" />
+    <ref role="1TJDcQ" node="4b8dqHkXt5H" resolve="ChatWordBase" />
+    <node concept="1TJgyj" id="4b8dqHkXkrB" role="1TKVEi">
+      <property role="IQ2ns" value="4812155211826415335" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nodeReference" />
+      <ref role="20lvS9" to="tp25:6qMaajV39gP" resolve="NodePointerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4b8dqHkXt5H">
+    <property role="EcuMT" value="4812155211826450797" />
+    <property role="3GE5qa" value="text_elements" />
+    <property role="TrG5h" value="ChatWordBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" to="zqge:8D0iRqSPW4" resolve="Word" />
+  </node>
+  <node concept="1TIwiD" id="4b8dqHkY5Xf">
+    <property role="EcuMT" value="4812155211826618191" />
+    <property role="TrG5h" value="ModelRefWord" />
+    <property role="3GE5qa" value="text_elements" />
+    <property role="34LRSv" value="@model" />
+    <property role="R4oN_" value="reference a model" />
+    <ref role="1TJDcQ" node="4b8dqHkXt5H" resolve="ChatWordBase" />
+    <node concept="1TJgyj" id="4b8dqHkY5Xg" role="1TKVEi">
+      <property role="IQ2ns" value="4812155211826618192" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="modelReference" />
+      <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
+    </node>
+  </node>
 </model>
 

@@ -1112,22 +1112,64 @@
             <node concept="3clFbT" id="2ZpX2r3DFmy" role="37wK5m" />
           </node>
         </node>
-        <node concept="3clFbH" id="1Rt_rvg03G9" role="3cqZAp" />
         <node concept="3cpWs8" id="2ZpX2r3CuAi" role="3cqZAp">
           <node concept="3cpWsn" id="2ZpX2r3CuAj" role="3cpWs9">
             <property role="TrG5h" value="res" />
             <node concept="17QB3L" id="2ZpX2r3CvVm" role="1tU5fm" />
-            <node concept="2OqwBi" id="2ZpX2r3CuAk" role="33vP2m">
-              <node concept="2OqwBi" id="2ZpX2r3CuAl" role="2Oq$k0">
-                <node concept="Xjq3P" id="2ZpX2r3CuAm" role="2Oq$k0" />
-                <node concept="2OwXpG" id="2ZpX2r3CuAn" role="2OqNvi">
-                  <ref role="2Oxat5" node="5Ux4Lu3aTCS" resolve="conversationalRetrievalChain" />
+          </node>
+        </node>
+        <node concept="3J1_TO" id="5Hw1CmS907O" role="3cqZAp">
+          <node concept="3uVAMA" id="5Hw1CmS92jP" role="1zxBo5">
+            <node concept="XOnhg" id="5Hw1CmS92jQ" role="1zc67B">
+              <property role="TrG5h" value="t" />
+              <node concept="nSUau" id="5Hw1CmS92jR" role="1tU5fm">
+                <node concept="3uibUv" id="5Hw1CmS944g" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
                 </node>
               </node>
-              <node concept="liA8E" id="2ZpX2r3CuAo" role="2OqNvi">
-                <ref role="37wK5l" node="1Rt_rvfX8tX" resolve="chat" />
-                <node concept="37vLTw" id="2ZpX2r3CuAp" role="37wK5m">
-                  <ref role="3cqZAo" node="5Ux4Lu3d9Vw" resolve="str" />
+            </node>
+            <node concept="3clFbS" id="5Hw1CmS92jS" role="1zc67A">
+              <node concept="3clFbF" id="5Hw1CmS9eMf" role="3cqZAp">
+                <node concept="37vLTI" id="5Hw1CmS9rhv" role="3clFbG">
+                  <node concept="3cpWs3" id="5Hw1CmS9E3Z" role="37vLTx">
+                    <node concept="2OqwBi" id="5Hw1CmS9GZJ" role="3uHU7w">
+                      <node concept="37vLTw" id="5Hw1CmS9FLJ" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5Hw1CmS92jQ" resolve="t" />
+                      </node>
+                      <node concept="liA8E" id="5Hw1CmS9I87" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="5Hw1CmS9tdA" role="3uHU7B">
+                      <property role="Xl_RC" value="Exception thrown: " />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="5Hw1CmS9eMe" role="37vLTJ">
+                    <ref role="3cqZAo" node="2ZpX2r3CuAj" resolve="res" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="5Hw1CmS907Q" role="1zxBo7">
+            <node concept="3clFbF" id="5Hw1CmS8Qbm" role="3cqZAp">
+              <node concept="37vLTI" id="5Hw1CmS8Qbo" role="3clFbG">
+                <node concept="2OqwBi" id="2ZpX2r3CuAk" role="37vLTx">
+                  <node concept="2OqwBi" id="2ZpX2r3CuAl" role="2Oq$k0">
+                    <node concept="Xjq3P" id="2ZpX2r3CuAm" role="2Oq$k0" />
+                    <node concept="2OwXpG" id="2ZpX2r3CuAn" role="2OqNvi">
+                      <ref role="2Oxat5" node="5Ux4Lu3aTCS" resolve="conversationalAssistant" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="2ZpX2r3CuAo" role="2OqNvi">
+                    <ref role="37wK5l" node="1Rt_rvfX8tX" resolve="chat" />
+                    <node concept="37vLTw" id="2ZpX2r3CuAp" role="37wK5m">
+                      <ref role="3cqZAo" node="5Ux4Lu3d9Vw" resolve="str" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="5Hw1CmS8Qbs" role="37vLTJ">
+                  <ref role="3cqZAo" node="2ZpX2r3CuAj" resolve="res" />
                 </node>
               </node>
             </node>
