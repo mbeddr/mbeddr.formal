@@ -67,6 +67,9 @@
     <node concept="23Pd3N" id="2ZpX2r3ENp7" role="1YsxlH">
       <ref role="23P9xr" to="kau0:G$XGFsgYdQ" resolve="_101_lane_keeping_hazard_list_ASIL_A_H04" />
     </node>
+    <node concept="23Pd3N" id="u2p4MKAIRc" role="1YsxlH">
+      <ref role="23P9xr" to="kau0:G$XGFsgYc8" resolve="_102_LKA_losses_list" />
+    </node>
   </node>
 </model>
 

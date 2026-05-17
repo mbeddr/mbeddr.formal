@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:2374fc39-79f6-4405-9eae-95f406e5d21a(_900_genai_examples._100_real_world_models_genai)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
+      <concept id="361130699826193248" name="jetbrains.mps.lang.modelapi.structure.ModelPointer" flags="ng" index="1dCxOl">
+        <property id="1863527487546097494" name="modelId" index="1XweGQ" />
+        <child id="679099339649067980" name="name" index="1j$8Uc" />
+      </concept>
+      <concept id="679099339649053840" name="jetbrains.mps.lang.modelapi.structure.ModelName" flags="ng" index="1j_P7g">
+        <property id="679099339649053841" name="value" index="1j_P7h" />
+      </concept>
+    </language>
+    <language id="e49ae71b-b7a6-4321-84b6-ac9a82e13853" name="com.mpsbasics.genai">
+      <concept id="4407163858431735127" name="com.mpsbasics.genai.structure.ModelKnowledgeBaseItem" flags="ng" index="3_Ux5U">
+        <child id="4407163858431735130" name="modelReference" index="3_Ux5R" />
+      </concept>
+      <concept id="8170409784576026253" name="com.mpsbasics.genai.structure.KnowledgeBase" flags="ng" index="1Yp8r$">
+        <child id="8170409784576652548" name="entries" index="1YsxlH" />
+      </concept>
+    </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1863527487546129879" name="jetbrains.mps.lang.smodel.structure.ModelPointerExpression" flags="ng" index="1Xw6AR">
+        <child id="1863527487546132519" name="modelRef" index="1XwpL7" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1Yp8r$" id="u2p4MKAJ$W">
+    <property role="TrG5h" value="_020_knowledge_base_uber" />
+    <property role="3GE5qa" value="_020_model_query" />
+    <node concept="3_Ux5U" id="u2p4MKAJ_0" role="1YsxlH">
+      <node concept="1Xw6AR" id="u2p4MKAJ_1" role="3_Ux5R">
+        <node concept="1dCxOl" id="5Hw1CmS8HPQ" role="1XwpL7">
+          <property role="1XweGQ" value="r:60b8ae5a-a776-490e-980f-f4857fda89ca" />
+          <node concept="1j_P7g" id="5Hw1CmS8HPR" role="1j$8Uc">
+            <property role="1j_P7h" value="_500_real_world_examples._010_uber_atg_safety_case_modularized" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+</model>
+
