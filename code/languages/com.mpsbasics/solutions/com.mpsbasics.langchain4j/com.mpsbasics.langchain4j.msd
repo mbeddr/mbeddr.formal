@@ -5,28 +5,23 @@
       <sourceRoot path="${module}/models" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="." />
-      <sourceRoot path="${module}/lib/jackson-annotations.jar" />
-      <sourceRoot path="${module}/lib/jackson-core.jar" />
-      <sourceRoot path="${module}/lib/jackson-databind.jar" />
-      <sourceRoot path="${module}/lib/jspecify.jar" />
-      <sourceRoot path="${module}/lib/jtokkit.jar" />
-      <sourceRoot path="${module}/lib/langchain4j-core.jar" />
-      <sourceRoot path="${module}/lib/langchain4j-http-client-jdk.jar" />
-      <sourceRoot path="${module}/lib/langchain4j-http-client.jar" />
-      <sourceRoot path="${module}/lib/langchain4j-open-ai.jar" />
-      <sourceRoot path="${module}/lib/slf4j-api.jar" />
-    </modelRoot>
-    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="jackson-annotations.jar" />
+      <sourceRoot location="jackson-core.jar" />
+      <sourceRoot location="jackson-databind.jar" />
+      <sourceRoot location="jspecify.jar" />
+      <sourceRoot location="jtokkit.jar" />
+      <sourceRoot location="langchain4j-core.jar" />
+      <sourceRoot location="langchain4j-http-client-jdk.jar" />
+      <sourceRoot location="langchain4j-http-client.jar" />
+      <sourceRoot location="langchain4j-open-ai.jar" />
       <sourceRoot location="langchain4j.jar" />
       <sourceRoot location="opennlp-tools.jar" />
+      <sourceRoot location="slf4j-api.jar" />
     </modelRoot>
   </models>
   <facets>
     <facet type="java" compile="mps" classes="mps" ext="no">
       <classes generated="true" path="${module}/classes_gen" />
-      <library location="${module}/lib/langchain4j.jar" />
-      <library location="${module}/lib/opennlp-tools.jar" />
       <library location="${module}/lib/jackson-annotations.jar" />
       <library location="${module}/lib/jackson-core.jar" />
       <library location="${module}/lib/jackson-databind.jar" />
@@ -36,6 +31,8 @@
       <library location="${module}/lib/langchain4j-http-client-jdk.jar" />
       <library location="${module}/lib/langchain4j-http-client.jar" />
       <library location="${module}/lib/langchain4j-open-ai.jar" />
+      <library location="${module}/lib/langchain4j.jar" />
+      <library location="${module}/lib/opennlp-tools.jar" />
       <library location="${module}/lib/slf4j-api.jar" />
     </facet>
   </facets>
