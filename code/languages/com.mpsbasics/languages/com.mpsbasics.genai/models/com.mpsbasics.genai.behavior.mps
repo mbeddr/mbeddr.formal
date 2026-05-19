@@ -566,7 +566,7 @@
               <ref role="37wK5l" to="41ey:2JDrrqk1Wo7" resolve="valueToString" />
               <ref role="1Pybhc" to="41ey:6Sh7xm2KsCp" resolve="JsonHelper" />
               <node concept="37vLTw" id="3ODp2RoKBVo" role="37wK5m">
-                <ref role="3cqZAo" node="3ODp2RoKB8Y" resolve="jsonNode" />
+                <ref role="3cqZAo" node="3ODp2RoKB8Y" resolve="jsonValue" />
               </node>
             </node>
           </node>
@@ -1609,7 +1609,7 @@
                 </node>
               </node>
               <node concept="37vLTw" id="4b8dqHkYGhA" role="37wK5m">
-                <ref role="3cqZAo" node="4b8dqHkYGhv" resolve="repository" />
+                <ref role="3cqZAo" node="4b8dqHkYGhv" resolve="myRepo" />
               </node>
             </node>
           </node>

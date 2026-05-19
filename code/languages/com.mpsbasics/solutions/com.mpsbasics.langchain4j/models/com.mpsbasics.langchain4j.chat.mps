@@ -298,7 +298,7 @@
             <node concept="2ShNRf" id="5YEFBwyGp61" role="37vLTx">
               <node concept="1pGfFk" id="5YEFBwyGp62" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" node="6o$jG5tN2l2" />
+                <ref role="37wK5l" node="6o$jG5tN2l2" resolve="ChatWrapper" />
                 <node concept="37vLTw" id="5YEFBwyGp63" role="37wK5m">
                   <ref role="3cqZAo" node="5YEFBwyE4So" resolve="chat" />
                 </node>
@@ -773,7 +773,7 @@
           <node concept="37vLTI" id="5YEFBwyH1Nn" role="3clFbG">
             <node concept="3EllGN" id="5YEFBwyH1No" role="37vLTJ">
               <node concept="37vLTw" id="5YEFBwyH1Np" role="3ElVtu">
-                <ref role="3cqZAo" node="5YEFBwyH1Nv" resolve="chat" />
+                <ref role="3cqZAo" node="5YEFBwyH1Nv" resolve="myKbq" />
               </node>
               <node concept="37vLTw" id="5YEFBwyH3kb" role="3ElQJh">
                 <ref role="3cqZAo" node="5Ux4Lu3dte9" resolve="kb2Wrapper" />
@@ -782,7 +782,7 @@
             <node concept="2ShNRf" id="5YEFBwyH4Re" role="37vLTx">
               <node concept="1pGfFk" id="5YEFBwyH4Rf" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" node="5Ux4Lu3aOYq" />
+                <ref role="37wK5l" node="5Ux4Lu3aOYq" resolve="KnowledgeBaseQueryWrapper" />
                 <node concept="37vLTw" id="5YEFBwyH4Rg" role="37wK5m">
                   <ref role="3cqZAo" node="5YEFBwyH1Nv" resolve="myKbq" />
                 </node>
@@ -804,7 +804,7 @@
     <node concept="312cEg" id="5Ux4Lu3dteQ" role="jymVt">
       <property role="TrG5h" value="myLangChainWrapper" />
       <node concept="3uibUv" id="5Ux4Lu3dteR" role="1tU5fm">
-        <ref role="3uigEE" to="szki:5Ux4Lu3aTCL" resolve="LangChainWrapper" />
+        <ref role="3uigEE" to="szki:5Ux4Lu3aTCL" resolve="ConversationalAssistantWrapper" />
       </node>
     </node>
     <node concept="2tJIrI" id="5Ux4Lu3pxZm" role="jymVt" />
@@ -838,7 +838,7 @@
           <node concept="37vLTI" id="5Ux4Lu3e9yw" role="3clFbG">
             <node concept="2ShNRf" id="5Ux4Lu3e9BE" role="37vLTx">
               <node concept="1pGfFk" id="5Ux4Lu3e9Bu" role="2ShVmc">
-                <ref role="37wK5l" to="szki:5Ux4Lu3aTD3" resolve="LangChainWrapper" />
+                <ref role="37wK5l" to="szki:5Ux4Lu3aTD3" resolve="ConversationalAssistantWrapper" />
                 <node concept="2OqwBi" id="4S6651mDgH7" role="37wK5m">
                   <node concept="37vLTw" id="4S6651mGdRg" role="2Oq$k0">
                     <ref role="3cqZAo" node="4S6651mGdRc" resolve="chatModelProvider" />

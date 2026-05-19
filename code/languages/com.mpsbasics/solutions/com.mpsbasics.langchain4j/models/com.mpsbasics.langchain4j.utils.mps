@@ -613,7 +613,7 @@
       <property role="TrG5h" value="conversationalAssistant" />
       <node concept="3Tm6S6" id="5Ux4Lu3aTCT" role="1B3o_S" />
       <node concept="3uibUv" id="5Ux4Lu3aTCU" role="1tU5fm">
-        <ref role="3uigEE" node="1Rt_rvfX19L" resolve="ArtifactsAssistant" />
+        <ref role="3uigEE" node="1Rt_rvfX19L" resolve="ConversationalAssistantWrapper.ConversationalAssistant" />
       </node>
     </node>
     <node concept="2tJIrI" id="5Ux4Lu3aTD2" role="jymVt" />
@@ -737,7 +737,7 @@
                   <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder.baseUrl(java.lang.String)" resolve="baseUrl" />
                   <node concept="2OqwBi" id="5l3dUiRlzqL" role="37wK5m">
                     <node concept="37vLTw" id="5l3dUiRlp$9" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4S6651mFK1e" resolve="chatModelName" />
+                      <ref role="3cqZAo" node="4S6651mFK1e" resolve="chatModelProvider" />
                     </node>
                     <node concept="2qgKlT" id="5l3dUiRl$3x" role="2OqNvi">
                       <ref role="37wK5l" to="zpwy:2Mi1G8jb0mr" resolve="getBaseUri" />
@@ -1015,7 +1015,7 @@
         <node concept="3clFbF" id="5Ux4Lu3aTDg" role="3cqZAp">
           <node concept="37vLTI" id="5Ux4Lu3aTDh" role="3clFbG">
             <node concept="37vLTw" id="5Ux4Lu3aTD$" role="37vLTJ">
-              <ref role="3cqZAo" node="5Ux4Lu3aTCS" resolve="conversationalRetrievalChain" />
+              <ref role="3cqZAo" node="5Ux4Lu3aTCS" resolve="conversationalAssistant" />
             </node>
             <node concept="2OqwBi" id="1Rt_rvfXPRT" role="37vLTx">
               <node concept="2OqwBi" id="1Rt_rvfXPRU" role="2Oq$k0">
@@ -1025,7 +1025,7 @@
                       <ref role="37wK5l" to="rqif:~AiServices.builder(java.lang.Class)" resolve="builder" />
                       <ref role="1Pybhc" to="rqif:~AiServices" resolve="AiServices" />
                       <node concept="3VsKOn" id="1Rt_rvfXPRY" role="37wK5m">
-                        <ref role="3VsUkX" node="1Rt_rvfX19L" resolve="ArtifactsAssistant" />
+                        <ref role="3VsUkX" node="1Rt_rvfX19L" resolve="ConversationalAssistantWrapper.ConversationalAssistant" />
                       </node>
                     </node>
                     <node concept="liA8E" id="1Rt_rvfXPRZ" role="2OqNvi">

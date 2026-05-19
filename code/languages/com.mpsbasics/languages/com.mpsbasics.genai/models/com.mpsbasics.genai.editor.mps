@@ -315,7 +315,7 @@
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
         <node concept="PMmxH" id="5YEFBwyIXoY" role="3EZMnx">
-          <ref role="PMmxG" node="5YEFBwyFXql" resolve="ReinitializeAbstractChat" />
+          <ref role="PMmxG" node="5YEFBwyFXql" resolve="ReinitializeAbstractChatEditorComponent" />
         </node>
         <node concept="2iRfu4" id="zifywuOsEV" role="2iSdaV" />
       </node>
@@ -781,7 +781,7 @@
                     <property role="2bfB8j" value="true" />
                     <property role="373rjd" value="true" />
                     <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
-                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                     <node concept="3Tm1VV" id="5YEFBwyFVz_" role="1B3o_S" />
                     <node concept="3clFb_" id="5YEFBwyFVzN" role="jymVt">
                       <property role="TrG5h" value="actionPerformed" />
@@ -903,7 +903,7 @@
                         </node>
                       </node>
                       <node concept="2AHcQZ" id="5YEFBwyFVzV" role="2AJF6D">
-                        <ref role="2AI5Lk" to="wyt6:~Override" />
+                        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
                       </node>
                     </node>
                   </node>
@@ -945,7 +945,7 @@
         <property role="3F0ifm" value="(" />
       </node>
       <node concept="3F1sOY" id="4b8dqHkZ6G2" role="3EZMnx">
-        <ref role="1NtTu8" to="uzku:4b8dqHkY5Xg" />
+        <ref role="1NtTu8" to="uzku:4b8dqHkY5Xg" resolve="modelReference" />
       </node>
       <node concept="3F0ifn" id="4b8dqHkZ6G3" role="3EZMnx">
         <property role="3F0ifm" value=")" />

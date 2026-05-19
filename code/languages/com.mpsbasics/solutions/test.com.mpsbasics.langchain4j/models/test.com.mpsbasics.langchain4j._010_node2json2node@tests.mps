@@ -384,7 +384,7 @@
                     </node>
                   </node>
                   <node concept="2pIpSj" id="4b8dqHk_g9O" role="2pJxcM">
-                    <ref role="2pIpSl" to="tpee:4VkOLwjf83e" />
+                    <ref role="2pIpSl" to="tpee:4VkOLwjf83e" resolve="type" />
                     <node concept="2pJPED" id="4b8dqHk_gcb" role="28nt2d">
                       <ref role="2pJxaS" to="tpee:f_0P_4Y" resolve="BooleanType" />
                     </node>
@@ -546,11 +546,11 @@
                   </node>
                 </node>
                 <node concept="2pIpSj" id="4b8dqHkCS29" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:4VkOLwjf83e" />
+                  <ref role="2pIpSl" to="tpee:4VkOLwjf83e" resolve="type" />
                   <node concept="2pJPED" id="4b8dqHkCS2a" role="28nt2d">
                     <ref role="2pJxaS" to="tpee:g7uibYu" resolve="ClassifierType" />
                     <node concept="2pIpSj" id="4b8dqHkCS2b" role="2pJxcM">
-                      <ref role="2pIpSl" to="tpee:g7uigIF" />
+                      <ref role="2pIpSl" to="tpee:g7uigIF" resolve="classifier" />
                       <node concept="36biLy" id="4b8dqHkCSMl" role="28nt2d">
                         <node concept="37vLTw" id="4b8dqHkCSOF" role="36biLW">
                           <ref role="3cqZAo" node="4b8dqHkCS1Y" resolve="clazz" />
@@ -588,7 +588,7 @@
               <ref role="37wK5l" node="EyxjoF7hOT" resolve="convertNode2Json" />
               <ref role="1Pybhc" node="EyxjoF7hO1" resolve="TestUtils" />
               <node concept="37vLTw" id="4b8dqHkCS2k" role="37wK5m">
-                <ref role="3cqZAo" node="4b8dqHkCS1Y" resolve="node" />
+                <ref role="3cqZAo" node="4b8dqHkCS1Y" resolve="clazz" />
               </node>
             </node>
           </node>
@@ -851,10 +851,10 @@
         <node concept="3clFbF" id="5_3MXEDcvsv" role="3cqZAp">
           <node concept="1Ls8ON" id="5_3MXEDcvst" role="3clFbG">
             <node concept="37vLTw" id="4b8dqHkwvAC" role="1Lso8e">
-              <ref role="3cqZAo" node="4b8dqHkwvAx" resolve="replaceAll" />
+              <ref role="3cqZAo" node="4b8dqHkwvAx" resolve="actual" />
             </node>
             <node concept="37vLTw" id="4b8dqHkwyr3" role="1Lso8e">
-              <ref role="3cqZAo" node="4b8dqHkwyqW" resolve="replaceAll" />
+              <ref role="3cqZAo" node="4b8dqHkwyqW" resolve="expected" />
             </node>
           </node>
         </node>
@@ -1259,7 +1259,7 @@
                   </node>
                 </node>
                 <node concept="2pIpSj" id="4b8dqHk_$M8" role="2pJxcM">
-                  <ref role="2pIpSl" to="tpee:4VkOLwjf83e" />
+                  <ref role="2pIpSl" to="tpee:4VkOLwjf83e" resolve="type" />
                   <node concept="2pJPED" id="4b8dqHk_$M9" role="28nt2d">
                     <ref role="2pJxaS" to="tpee:f_0P_4Y" resolve="BooleanType" />
                   </node>
@@ -1276,7 +1276,7 @@
               <ref role="37wK5l" node="5_3MXEDcs0_" resolve="convertNode2Json2Node2Json" />
               <ref role="1Pybhc" node="EyxjoF7hO1" resolve="TestUtils" />
               <node concept="37vLTw" id="4b8dqHk_$8g" role="37wK5m">
-                <ref role="3cqZAo" node="4b8dqHk_$7V" resolve="vd" />
+                <ref role="3cqZAo" node="4b8dqHk_$7V" resolve="fd" />
               </node>
               <node concept="2OqwBi" id="4b8dqHk_$8j" role="37wK5m">
                 <node concept="1jxXqW" id="4b8dqHk_$8k" role="2Oq$k0" />
@@ -1349,13 +1349,13 @@
                       </node>
                     </node>
                     <node concept="2pIpSj" id="4b8dqHkBU_q" role="2pJxcM">
-                      <ref role="2pIpSl" to="tpee:h9B3oxE" />
+                      <ref role="2pIpSl" to="tpee:h9B3oxE" resolve="visibility" />
                       <node concept="2pJPED" id="4b8dqHkBU_r" role="28nt2d">
                         <ref role="2pJxaS" to="tpee:gFTm6Wc" resolve="PrivateVisibility" />
                       </node>
                     </node>
                     <node concept="2pIpSj" id="4b8dqHkBU_s" role="2pJxcM">
-                      <ref role="2pIpSl" to="tpee:4VkOLwjf83e" />
+                      <ref role="2pIpSl" to="tpee:4VkOLwjf83e" resolve="type" />
                       <node concept="2pJPED" id="4b8dqHkBU_t" role="28nt2d">
                         <ref role="2pJxaS" to="tpee:f_0P_4Y" resolve="BooleanType" />
                       </node>
@@ -1374,7 +1374,7 @@
               <ref role="37wK5l" node="5_3MXEDcs0_" resolve="convertNode2Json2Node2Json" />
               <ref role="1Pybhc" node="EyxjoF7hO1" resolve="TestUtils" />
               <node concept="37vLTw" id="4b8dqHkBU_y" role="37wK5m">
-                <ref role="3cqZAo" node="4b8dqHkBU_j" resolve="vd" />
+                <ref role="3cqZAo" node="4b8dqHkBU_j" resolve="cd" />
               </node>
               <node concept="2OqwBi" id="4b8dqHkBU__" role="37wK5m">
                 <node concept="1jxXqW" id="4b8dqHkBU_A" role="2Oq$k0" />

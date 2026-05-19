@@ -135,7 +135,7 @@
   <node concept="3ty2zk" id="5Ux4Lu3eDXg">
     <property role="TrG5h" value="_010_knowledge_base_query" />
     <node concept="3ty2V1" id="5Ux4Lu3hCiD" role="3ty2V2">
-      <ref role="3ty2V0" node="5Ux4Lu3eFjy" resolve="current_kb" />
+      <ref role="3ty2V0" node="5Ux4Lu3eFjy" resolve="_010_knowledge_base_definition" />
     </node>
     <node concept="FG9Z$" id="1ia4IClEDch" role="m0T0H">
       <node concept="1Pa9Pv" id="1ia4IClEDci" role="FG9ZB">
