@@ -224,6 +224,7 @@
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV" />
     </language>
   </registry>
   <node concept="13h7C7" id="75z86$f1ZhT">
@@ -1410,6 +1411,13 @@
             <ref role="1Pybhc" to="szki:2Mi1G8j9nvi" resolve="OpenAIAvailableModelsProvider" />
             <node concept="BsUDl" id="2Mi1G8jb37s" role="37wK5m">
               <ref role="37wK5l" node="2Mi1G8jb0mr" resolve="getBaseUri" />
+            </node>
+            <node concept="2YIFZM" id="2Mi1G8j9qWY" role="37wK5m">
+              <ref role="37wK5l" to="szki:6o$jG5tMD19" resolve="getOpenApiKey" />
+              <ref role="1Pybhc" to="szki:65oZS6J8USM" resolve="ApiKeys" />
+            </node>
+            <node concept="2ShNRf" id="Bn83_24ezb" role="37wK5m">
+              <node concept="3rGOSV" id="Bn83_24f09" role="2ShVmc" />
             </node>
           </node>
         </node>

@@ -247,6 +247,10 @@
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
       <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
+      <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
+        <child id="1197683466920" name="keyType" index="3rvQeY" />
+        <child id="1197683475734" name="valueType" index="3rvSg0" />
+      </concept>
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
@@ -1394,24 +1398,31 @@
                   <ref role="3uigEE" to="cae:~OpenAiClient" resolve="OpenAiClient" />
                 </node>
                 <node concept="2OqwBi" id="2Mi1G8j9qEU" role="33vP2m">
-                  <node concept="2OqwBi" id="2Mi1G8j9q$w" role="2Oq$k0">
-                    <node concept="2OqwBi" id="2Mi1G8jaXie" role="2Oq$k0">
-                      <node concept="2YIFZM" id="2Mi1G8j9qta" role="2Oq$k0">
-                        <ref role="1Pybhc" to="cae:~OpenAiClient" resolve="OpenAiClient" />
-                        <ref role="37wK5l" to="cae:~OpenAiClient.builder()" resolve="builder" />
+                  <node concept="2OqwBi" id="Bn83_23F7N" role="2Oq$k0">
+                    <node concept="2OqwBi" id="2Mi1G8j9q$w" role="2Oq$k0">
+                      <node concept="2OqwBi" id="2Mi1G8jaXie" role="2Oq$k0">
+                        <node concept="2YIFZM" id="2Mi1G8j9qta" role="2Oq$k0">
+                          <ref role="1Pybhc" to="cae:~OpenAiClient" resolve="OpenAiClient" />
+                          <ref role="37wK5l" to="cae:~OpenAiClient.builder()" resolve="builder" />
+                        </node>
+                        <node concept="liA8E" id="2Mi1G8jaXTt" role="2OqNvi">
+                          <ref role="37wK5l" to="cae:~OpenAiClient$Builder.baseUrl(java.lang.String)" resolve="baseUrl" />
+                          <node concept="37vLTw" id="2Mi1G8jb5By" role="37wK5m">
+                            <ref role="3cqZAo" node="2Mi1G8jb3BU" resolve="baseUrl" />
+                          </node>
+                        </node>
                       </node>
-                      <node concept="liA8E" id="2Mi1G8jaXTt" role="2OqNvi">
-                        <ref role="37wK5l" to="cae:~OpenAiClient$Builder.baseUrl(java.lang.String)" resolve="baseUrl" />
-                        <node concept="37vLTw" id="2Mi1G8jb5By" role="37wK5m">
-                          <ref role="3cqZAo" node="2Mi1G8jb3BU" resolve="baseUrl" />
+                      <node concept="liA8E" id="2Mi1G8j9q$x" role="2OqNvi">
+                        <ref role="37wK5l" to="cae:~OpenAiClient$Builder.apiKey(java.lang.String)" resolve="apiKey" />
+                        <node concept="37vLTw" id="Bn83_225Qy" role="37wK5m">
+                          <ref role="3cqZAo" node="Bn83_221ft" resolve="apiKey" />
                         </node>
                       </node>
                     </node>
-                    <node concept="liA8E" id="2Mi1G8j9q$x" role="2OqNvi">
-                      <ref role="37wK5l" to="cae:~OpenAiClient$Builder.apiKey(java.lang.String)" resolve="apiKey" />
-                      <node concept="2YIFZM" id="2Mi1G8j9qWY" role="37wK5m">
-                        <ref role="37wK5l" node="6o$jG5tMD19" resolve="getOpenApiKey" />
-                        <ref role="1Pybhc" node="65oZS6J8USM" resolve="ApiKeys" />
+                    <node concept="liA8E" id="Bn83_23GWu" role="2OqNvi">
+                      <ref role="37wK5l" to="cae:~OpenAiClient$Builder.customHeaders(java.util.Map)" resolve="customHeaders" />
+                      <node concept="37vLTw" id="Bn83_23N7h" role="37wK5m">
+                        <ref role="3cqZAo" node="Bn83_23I1N" resolve="header" />
                       </node>
                     </node>
                   </node>
@@ -1538,6 +1549,17 @@
       <node concept="37vLTG" id="2Mi1G8jb3BU" role="3clF46">
         <property role="TrG5h" value="baseUrl" />
         <node concept="17QB3L" id="2Mi1G8jb3BT" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="Bn83_221ft" role="3clF46">
+        <property role="TrG5h" value="apiKey" />
+        <node concept="17QB3L" id="Bn83_2232N" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="Bn83_23I1N" role="3clF46">
+        <property role="TrG5h" value="header" />
+        <node concept="3rvAFt" id="Bn83_23JGS" role="1tU5fm">
+          <node concept="17QB3L" id="Bn83_23KzT" role="3rvQeY" />
+          <node concept="17QB3L" id="Bn83_23Lfu" role="3rvSg0" />
+        </node>
       </node>
     </node>
     <node concept="2tJIrI" id="2Mi1G8j9nwB" role="jymVt" />
