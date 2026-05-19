@@ -3388,6 +3388,26 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1H2iI2MaO3r" role="3bR37C">
+          <node concept="3bR9La" id="1H2iI2MaO3s" role="1SiIV1">
+            <ref role="3bR37D" node="2u7UHDCnPLY" resolve="com.mpsbasics.project.utils" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1H2iI2MaO3t" role="3bR37C">
+          <node concept="3bR9La" id="1H2iI2MaO3u" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1H2iI2MaO3v" role="3bR37C">
+          <node concept="3bR9La" id="1H2iI2MaO3w" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LaO" resolve="jetbrains.mps.lang.structure" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1H2iI2MaO3x" role="3bR37C">
+          <node concept="3bR9La" id="1H2iI2MaO3y" role="1SiIV1">
+            <ref role="3bR37D" node="2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="36zCbqqq6a9" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3481,6 +3501,26 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1H2iI2MaO6a" role="3bR37C">
+          <node concept="3bR9La" id="1H2iI2MaO6b" role="1SiIV1">
+            <ref role="3bR37D" node="2u7UHDCnPLY" resolve="com.mpsbasics.project.utils" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1H2iI2MaO6c" role="3bR37C">
+          <node concept="3bR9La" id="1H2iI2MaO6d" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6Lg8" resolve="jetbrains.mps.runtime" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1H2iI2MaO6e" role="3bR37C">
+          <node concept="3bR9La" id="1H2iI2MaO6f" role="1SiIV1">
+            <ref role="3bR37D" node="2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1H2iI2MaO6r" role="3bR37C">
+          <node concept="1Busua" id="1H2iI2MaO6s" role="1SiIV1">
+            <ref role="1Busuk" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
           </node>
         </node>
       </node>
