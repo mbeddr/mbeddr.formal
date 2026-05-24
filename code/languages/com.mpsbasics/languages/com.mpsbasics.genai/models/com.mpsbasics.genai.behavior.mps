@@ -1433,11 +1433,11 @@
                 <node concept="2OqwBi" id="4b8dqHkXq37" role="2Oq$k0">
                   <node concept="13iPFW" id="4b8dqHkXq38" role="2Oq$k0" />
                   <node concept="3TrEf2" id="4b8dqHkXq39" role="2OqNvi">
-                    <ref role="3Tt5mk" to="uzku:4b8dqHkXkrB" />
+                    <ref role="3Tt5mk" to="uzku:4b8dqHkXkrB" resolve="nodeReference" />
                   </node>
                 </node>
                 <node concept="3TrEf2" id="PCzh3eGE_u" role="2OqNvi">
-                  <ref role="3Tt5mk" to="tp25:6qMaajV39im" />
+                  <ref role="3Tt5mk" to="tp25:6qMaajV39im" resolve="ref" />
                 </node>
               </node>
               <node concept="2qgKlT" id="PCzh3eGF8S" role="2OqNvi">
@@ -1528,11 +1528,11 @@
                   <node concept="2OqwBi" id="2wdj7Oy8ijU" role="2Oq$k0">
                     <node concept="13iPFW" id="2wdj7Oy8ijV" role="2Oq$k0" />
                     <node concept="3TrEf2" id="2wdj7Oy8ijW" role="2OqNvi">
-                      <ref role="3Tt5mk" to="uzku:4b8dqHkY5Xg" />
+                      <ref role="3Tt5mk" to="uzku:4b8dqHkY5Xg" resolve="modelReference" />
                     </node>
                   </node>
                   <node concept="3TrEf2" id="2wdj7Oy8ijX" role="2OqNvi">
-                    <ref role="3Tt5mk" to="tp25:1Bs_61$ngwB" />
+                    <ref role="3Tt5mk" to="tp25:1Bs_61$ngwB" resolve="modelRef" />
                   </node>
                 </node>
                 <node concept="2qgKlT" id="2wdj7Oy8ijY" role="2OqNvi">
@@ -1547,8 +1547,8 @@
         </node>
         <node concept="3clFbF" id="2wdj7Oy8vH7" role="3cqZAp">
           <node concept="2YIFZM" id="2wdj7Oy8wTt" role="3clFbG">
-            <ref role="37wK5l" node="2wdj7Oy8igo" resolve="getTextConcept" />
-            <ref role="1Pybhc" node="2wdj7Oy8gGG" resolve="TextEditor" />
+            <ref role="37wK5l" node="2wdj7Oy8igo" resolve="getEditorTextForModel" />
+            <ref role="1Pybhc" node="2wdj7Oy8gGG" resolve="EditorTextGraber" />
             <node concept="37vLTw" id="2wdj7Oy8x6t" role="37wK5m">
               <ref role="3cqZAo" node="2wdj7Oy8ijP" resolve="resolvedModel" />
             </node>

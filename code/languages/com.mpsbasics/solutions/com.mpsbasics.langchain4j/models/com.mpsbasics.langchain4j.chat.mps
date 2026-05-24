@@ -1021,7 +1021,7 @@
                     <node concept="2pJPED" id="5UGnlYWq9$6" role="2pJPEn">
                       <ref role="2pJxaS" to="zqge:2cLqkTm6J5A" resolve="Line" />
                       <node concept="2pIpSj" id="5UGnlYWq9$7" role="2pJxcM">
-                        <ref role="2pIpSl" to="zqge:2cLqkTm6J5B" />
+                        <ref role="2pIpSl" to="zqge:2cLqkTm6J5B" resolve="elements" />
                         <node concept="2pJPED" id="5UGnlYWq9$8" role="28nt2d">
                           <ref role="2pJxaS" to="zqge:8D0iRqSPW4" resolve="Word" />
                           <node concept="2pJxcG" id="5UGnlYWq9$9" role="2pJxcM">

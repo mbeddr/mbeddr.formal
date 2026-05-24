@@ -2784,7 +2784,7 @@
                 <node concept="3clFbF" id="5FTX57fML_B" role="3cqZAp">
                   <node concept="2YIFZM" id="5FTX57fML_D" role="3clFbG">
                     <ref role="37wK5l" node="5FTX57fMJ5a" resolve="doTakeScreenshotAndSaveIntoFile" />
-                    <ref role="1Pybhc" node="5FTX57fKCMo" resolve="SVGCellEditorScreehshooter" />
+                    <ref role="1Pybhc" node="5FTX57fKCMo" resolve="SVGCellEditorScreenshooter" />
                     <node concept="37vLTw" id="5FTX57fML_E" role="37wK5m">
                       <ref role="3cqZAo" node="5FTX57fLCfc" resolve="path" />
                     </node>
