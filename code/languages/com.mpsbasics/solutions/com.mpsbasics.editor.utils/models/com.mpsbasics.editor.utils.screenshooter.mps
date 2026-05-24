@@ -2763,7 +2763,7 @@
   </node>
   <node concept="312cEu" id="5FTX57fKCMo">
     <property role="3GE5qa" value="screenshooter" />
-    <property role="TrG5h" value="SVGCellEditorScreehshooter" />
+    <property role="TrG5h" value="SVGCellEditorScreenshooter" />
     <node concept="2tJIrI" id="5FTX57fKCTl" role="jymVt" />
     <node concept="2YIFZL" id="xCk$O6ov8n" role="jymVt">
       <property role="TrG5h" value="takeScreenshotAndSaveIntoFile" />
