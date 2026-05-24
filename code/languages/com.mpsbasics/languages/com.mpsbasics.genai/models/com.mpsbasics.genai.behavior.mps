@@ -251,10 +251,6 @@
         </node>
       </node>
       <node concept="3clFbS" id="5Ux4Lu37fyT" role="3clF47" />
-      <node concept="37vLTG" id="5Ux4Lu3hOej" role="3clF46">
-        <property role="TrG5h" value="chatModelName" />
-        <node concept="17QB3L" id="6_eRDncdAgi" role="1tU5fm" />
-      </node>
     </node>
   </node>
   <node concept="13h7C7" id="75z86$f23pq">
@@ -308,10 +304,6 @@
     <node concept="13i0hz" id="5Ux4Lu37gRV" role="13h7CS">
       <property role="TrG5h" value="getTextSegments" />
       <ref role="13i0hy" node="5Ux4Lu37fyQ" resolve="getTextSegments" />
-      <node concept="37vLTG" id="5Ux4Lu3hOR9" role="3clF46">
-        <property role="TrG5h" value="chatModelName" />
-        <node concept="17QB3L" id="6_eRDncdK8I" role="1tU5fm" />
-      </node>
       <node concept="3Tm1VV" id="5Ux4Lu37gRW" role="1B3o_S" />
       <node concept="3clFbS" id="5Ux4Lu37gS0" role="3clF47">
         <node concept="3cpWs8" id="5Ux4Lu36oJk" role="3cqZAp">
@@ -365,20 +357,12 @@
             </node>
             <node concept="2YIFZM" id="5Ux4Lu36tDG" role="33vP2m">
               <ref role="1Pybhc" to="h304:~DocumentSplitters" resolve="DocumentSplitters" />
-              <ref role="37wK5l" to="h304:~DocumentSplitters.recursive(int,int,dev.langchain4j.model.TokenCountEstimator)" resolve="recursive" />
+              <ref role="37wK5l" to="h304:~DocumentSplitters.recursive(int,int)" resolve="recursive" />
               <node concept="3cmrfG" id="5Ux4Lu36sCS" role="37wK5m">
                 <property role="3cmrfH" value="100" />
               </node>
               <node concept="3cmrfG" id="5Ux4Lu36sCT" role="37wK5m">
                 <property role="3cmrfH" value="0" />
-              </node>
-              <node concept="2ShNRf" id="5Ux4Lu36wCP" role="37wK5m">
-                <node concept="1pGfFk" id="5Ux4Lu36wD8" role="2ShVmc">
-                  <ref role="37wK5l" to="8s45:~OpenAiTokenCountEstimator.&lt;init&gt;(java.lang.String)" resolve="OpenAiTokenCountEstimator" />
-                  <node concept="37vLTw" id="5Ux4Lu3hPsw" role="37wK5m">
-                    <ref role="3cqZAo" node="5Ux4Lu3hOR9" resolve="chatModelName" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -441,10 +425,6 @@
     <node concept="13i0hz" id="5Ux4Lu37Qe2" role="13h7CS">
       <property role="TrG5h" value="getTextSegments" />
       <ref role="13i0hy" node="5Ux4Lu37fyQ" resolve="getTextSegments" />
-      <node concept="37vLTG" id="5Ux4Lu3hFom" role="3clF46">
-        <property role="TrG5h" value="chatModelName" />
-        <node concept="17QB3L" id="6_eRDncdAp$" role="1tU5fm" />
-      </node>
       <node concept="3Tm1VV" id="5Ux4Lu37Qe3" role="1B3o_S" />
       <node concept="3clFbS" id="5Ux4Lu37Qe7" role="3clF47">
         <node concept="3clFbF" id="3ODp2RoKyyq" role="3cqZAp">
@@ -456,9 +436,6 @@
               <node concept="3TrEf2" id="3ODp2RoK$YN" role="2OqNvi">
                 <ref role="3Tt5mk" to="uzku:7s0Rn3OP4kF" resolve="nodeRef" />
               </node>
-            </node>
-            <node concept="37vLTw" id="3ODp2RoKz1h" role="37wK5m">
-              <ref role="3cqZAo" node="5Ux4Lu3hFom" resolve="chatModelName" />
             </node>
           </node>
         </node>
@@ -592,20 +569,12 @@
             </node>
             <node concept="2YIFZM" id="3ODp2RoKwMe" role="33vP2m">
               <ref role="1Pybhc" to="h304:~DocumentSplitters" resolve="DocumentSplitters" />
-              <ref role="37wK5l" to="h304:~DocumentSplitters.recursive(int,int,dev.langchain4j.model.TokenCountEstimator)" resolve="recursive" />
+              <ref role="37wK5l" to="h304:~DocumentSplitters.recursive(int,int)" resolve="recursive" />
               <node concept="3cmrfG" id="3ODp2RoKwMf" role="37wK5m">
                 <property role="3cmrfH" value="100" />
               </node>
               <node concept="3cmrfG" id="3ODp2RoKwMg" role="37wK5m">
                 <property role="3cmrfH" value="0" />
-              </node>
-              <node concept="2ShNRf" id="3ODp2RoKwMh" role="37wK5m">
-                <node concept="1pGfFk" id="3ODp2RoKwMi" role="2ShVmc">
-                  <ref role="37wK5l" to="8s45:~OpenAiTokenCountEstimator.&lt;init&gt;(java.lang.String)" resolve="OpenAiTokenCountEstimator" />
-                  <node concept="37vLTw" id="3ODp2RoKwMj" role="37wK5m">
-                    <ref role="3cqZAo" node="3ODp2RoKxkW" resolve="chatModelName" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -633,10 +602,6 @@
       <node concept="37vLTG" id="3ODp2RoKx8i" role="3clF46">
         <property role="TrG5h" value="node" />
         <node concept="3Tqbb2" id="3ODp2RoKx8h" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="3ODp2RoKxkW" role="3clF46">
-        <property role="TrG5h" value="chatModelName" />
-        <node concept="17QB3L" id="6_eRDncdC1q" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="3ODp2RoKCyI" role="jymVt" />
@@ -682,9 +647,6 @@
                     <node concept="2GrUjf" id="3ODp2RoKLQY" role="37wK5m">
                       <ref role="2Gs0qQ" node="3ODp2RoKKch" resolve="root" />
                     </node>
-                    <node concept="37vLTw" id="3ODp2RoKMra" role="37wK5m">
-                      <ref role="3cqZAo" node="3ODp2RoKChL" resolve="chatModelName" />
-                    </node>
                   </node>
                 </node>
               </node>
@@ -706,10 +668,6 @@
       <node concept="37vLTG" id="3ODp2RoKChJ" role="3clF46">
         <property role="TrG5h" value="aModel" />
         <node concept="H_c77" id="3ODp2RoKCPb" role="1tU5fm" />
-      </node>
-      <node concept="37vLTG" id="3ODp2RoKChL" role="3clF46">
-        <property role="TrG5h" value="chatModelName" />
-        <node concept="17QB3L" id="6_eRDncdE2m" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="3ODp2RoKNzV" role="jymVt" />
@@ -757,9 +715,6 @@
                     <node concept="2GrUjf" id="3ODp2RoKN8R" role="37wK5m">
                       <ref role="2Gs0qQ" node="3ODp2RoKN8H" resolve="aModel" />
                     </node>
-                    <node concept="37vLTw" id="3ODp2RoKN8S" role="37wK5m">
-                      <ref role="3cqZAo" node="3ODp2RoKN90" resolve="chatModelName" />
-                    </node>
                   </node>
                 </node>
               </node>
@@ -783,10 +738,6 @@
         <node concept="3uibUv" id="3ODp2RoKNTp" role="1tU5fm">
           <ref role="3uigEE" to="lui2:~SModule" resolve="SModule" />
         </node>
-      </node>
-      <node concept="37vLTG" id="3ODp2RoKN90" role="3clF46">
-        <property role="TrG5h" value="chatModelName" />
-        <node concept="17QB3L" id="6_eRDncdFC8" role="1tU5fm" />
       </node>
     </node>
     <node concept="2tJIrI" id="3ODp2RoKwpJ" role="jymVt" />
@@ -1009,15 +960,8 @@
             <node concept="37vLTw" id="3ODp2RoKVvF" role="37wK5m">
               <ref role="3cqZAo" node="3ODp2RoKV19" resolve="crtModel" />
             </node>
-            <node concept="37vLTw" id="3ODp2RoKWyr" role="37wK5m">
-              <ref role="3cqZAo" node="3ODp2RoKRDt" resolve="chatModelName" />
-            </node>
           </node>
         </node>
-      </node>
-      <node concept="37vLTG" id="3ODp2RoKRDt" role="3clF46">
-        <property role="TrG5h" value="chatModelName" />
-        <node concept="17QB3L" id="6_eRDncdHMg" role="1tU5fm" />
       </node>
       <node concept="_YKpA" id="3ODp2RoKRDv" role="3clF45">
         <node concept="3uibUv" id="3ODp2RoKRDw" role="_ZDj9">
@@ -1259,15 +1203,8 @@
             <node concept="37vLTw" id="3ODp2RoLUJ2" role="37wK5m">
               <ref role="3cqZAo" node="3ODp2RoLUIQ" resolve="crtModule" />
             </node>
-            <node concept="37vLTw" id="3ODp2RoLUJ3" role="37wK5m">
-              <ref role="3cqZAo" node="3ODp2RoLUJ4" resolve="chatModelName" />
-            </node>
           </node>
         </node>
-      </node>
-      <node concept="37vLTG" id="3ODp2RoLUJ4" role="3clF46">
-        <property role="TrG5h" value="chatModelName" />
-        <node concept="17QB3L" id="6_eRDncdJ3x" role="1tU5fm" />
       </node>
       <node concept="_YKpA" id="3ODp2RoLUJ6" role="3clF45">
         <node concept="3uibUv" id="3ODp2RoLUJ7" role="_ZDj9">
