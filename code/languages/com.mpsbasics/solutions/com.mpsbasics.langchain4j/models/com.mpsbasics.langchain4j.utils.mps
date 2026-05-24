@@ -890,7 +890,7 @@
           <node concept="3cpWsn" id="5Ux4Lu39a41" role="3cpWs9">
             <property role="TrG5h" value="embeddingStore" />
             <node concept="3uibUv" id="5Ux4Lu39a3Y" role="1tU5fm">
-              <ref role="3uigEE" to="ftn0:~EmbeddingStore" resolve="EmbeddingStore" />
+              <ref role="3uigEE" to="5zc:~InMemoryEmbeddingStore" resolve="InMemoryEmbeddingStore" />
               <node concept="3uibUv" id="5Ux4Lu39as8" role="11_B2D">
                 <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
               </node>
