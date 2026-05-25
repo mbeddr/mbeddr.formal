@@ -197,7 +197,6 @@
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
-      <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
@@ -374,32 +373,19 @@
     <node concept="2tJIrI" id="5Ux4Lu38Alt" role="jymVt" />
     <node concept="3clFb_" id="25QeXKbh30k" role="jymVt">
       <property role="TrG5h" value="execute" />
-      <node concept="3clFbS" id="25QeXKbh30n" role="3clF47">
-        <node concept="3cpWs8" id="5s847lWKDG3" role="3cqZAp">
-          <node concept="3cpWsn" id="5s847lWKDG4" role="3cpWs9">
-            <property role="TrG5h" value="chatInterraction" />
-            <node concept="3Tqbb2" id="3yEBVmC2cJ7" role="1tU5fm">
-              <ref role="ehGHo" to="uzku:5s847lWI8Yh" resolve="ChatInterraction" />
-            </node>
-            <node concept="2OqwBi" id="3yEBVmC25YC" role="33vP2m">
-              <node concept="2OqwBi" id="5s847lWKDG5" role="2Oq$k0">
-                <node concept="37vLTw" id="5s847lWKDG6" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5s847lWKdwd" resolve="myChat" />
-                </node>
-                <node concept="3Tsc0h" id="5s847lWKDG7" role="2OqNvi">
-                  <ref role="3TtcxE" to="uzku:zifywuOqS5" resolve="chatInterraction" />
-                </node>
-              </node>
-              <node concept="1yVyf7" id="3yEBVmC2bm$" role="2OqNvi" />
-            </node>
-          </node>
+      <node concept="37vLTG" id="PCzh3f7wvz" role="3clF46">
+        <property role="TrG5h" value="chatInterraction" />
+        <node concept="3Tqbb2" id="PCzh3f7xvj" role="1tU5fm">
+          <ref role="ehGHo" to="uzku:5s847lWI8Yh" resolve="ChatInterraction" />
         </node>
+      </node>
+      <node concept="3clFbS" id="25QeXKbh30n" role="3clF47">
         <node concept="3cpWs8" id="5s847lWKThc" role="3cqZAp">
           <node concept="3cpWsn" id="5s847lWKThd" role="3cpWs9">
             <property role="TrG5h" value="prompt" />
             <node concept="2OqwBi" id="5s847lWKThe" role="33vP2m">
               <node concept="37vLTw" id="5s847lWKThf" role="2Oq$k0">
-                <ref role="3cqZAo" node="5s847lWKDG4" resolve="chatInterraction" />
+                <ref role="3cqZAo" node="PCzh3f7wvz" resolve="chatInterraction" />
               </node>
               <node concept="3TrEf2" id="3yEBVmC2e$0" role="2OqNvi">
                 <ref role="3Tt5mk" to="uzku:5s847lWI8Yi" resolve="prompt" />
@@ -519,7 +505,7 @@
             </node>
             <node concept="2OqwBi" id="5s847lWMFmy" role="37vLTJ">
               <node concept="37vLTw" id="5s847lWMCZH" role="2Oq$k0">
-                <ref role="3cqZAo" node="5s847lWKDG4" resolve="chatInterraction" />
+                <ref role="3cqZAo" node="PCzh3f7wvz" resolve="chatInterraction" />
               </node>
               <node concept="3TrEf2" id="3yEBVmC2eIK" role="2OqNvi">
                 <ref role="3Tt5mk" to="uzku:5s847lWI8YQ" resolve="answer" />
@@ -532,7 +518,7 @@
           <node concept="37vLTI" id="fhch$idtMY" role="3clFbG">
             <node concept="2OqwBi" id="fhch$idoqB" role="37vLTJ">
               <node concept="37vLTw" id="fhch$idm0r" role="2Oq$k0">
-                <ref role="3cqZAo" node="5s847lWKDG4" resolve="chatInterraction" />
+                <ref role="3cqZAo" node="PCzh3f7wvz" resolve="chatInterraction" />
               </node>
               <node concept="3TrEf2" id="3yEBVmC2dRH" role="2OqNvi">
                 <ref role="3Tt5mk" to="uzku:5s847lWMgAO" resolve="metaInformation" />
@@ -847,31 +833,12 @@
     <node concept="3clFb_" id="5Ux4Lu3dohx" role="jymVt">
       <property role="TrG5h" value="execute" />
       <node concept="3clFbS" id="5Ux4Lu3dohy" role="3clF47">
-        <node concept="3cpWs8" id="5Ux4Lu3dohz" role="3cqZAp">
-          <node concept="3cpWsn" id="5Ux4Lu3doh$" role="3cpWs9">
-            <property role="TrG5h" value="chatInterraction" />
-            <node concept="3Tqbb2" id="5Ux4Lu3doh_" role="1tU5fm">
-              <ref role="ehGHo" to="uzku:5s847lWI8Yh" resolve="ChatInterraction" />
-            </node>
-            <node concept="2OqwBi" id="5Ux4Lu3dohA" role="33vP2m">
-              <node concept="2OqwBi" id="5Ux4Lu3dohB" role="2Oq$k0">
-                <node concept="37vLTw" id="5Ux4Lu3dohC" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5s847lWKdwd" resolve="myChat" />
-                </node>
-                <node concept="3Tsc0h" id="5Ux4Lu3dohD" role="2OqNvi">
-                  <ref role="3TtcxE" to="uzku:zifywuOqS5" resolve="chatInterraction" />
-                </node>
-              </node>
-              <node concept="1yVyf7" id="5Ux4Lu3dohE" role="2OqNvi" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5Ux4Lu3dohF" role="3cqZAp">
           <node concept="3cpWsn" id="5Ux4Lu3dohG" role="3cpWs9">
             <property role="TrG5h" value="prompt" />
             <node concept="2OqwBi" id="5Ux4Lu3dohH" role="33vP2m">
               <node concept="37vLTw" id="5Ux4Lu3dohI" role="2Oq$k0">
-                <ref role="3cqZAo" node="5Ux4Lu3doh$" resolve="chatInterraction" />
+                <ref role="3cqZAo" node="PCzh3f7qyq" resolve="chatInterraction" />
               </node>
               <node concept="3TrEf2" id="5Ux4Lu3dohJ" role="2OqNvi">
                 <ref role="3Tt5mk" to="uzku:5s847lWI8Yi" resolve="prompt" />
@@ -954,7 +921,7 @@
             </node>
             <node concept="2OqwBi" id="5Ux4Lu3doiF" role="37vLTJ">
               <node concept="37vLTw" id="5Ux4Lu3doiG" role="2Oq$k0">
-                <ref role="3cqZAo" node="5Ux4Lu3doh$" resolve="chatInterraction" />
+                <ref role="3cqZAo" node="PCzh3f7qyq" resolve="chatInterraction" />
               </node>
               <node concept="3TrEf2" id="5Ux4Lu3doiH" role="2OqNvi">
                 <ref role="3Tt5mk" to="uzku:5s847lWI8YQ" resolve="answer" />
@@ -965,6 +932,12 @@
       </node>
       <node concept="3Tm1VV" id="5Ux4Lu3doj3" role="1B3o_S" />
       <node concept="3cqZAl" id="5Ux4Lu3doj4" role="3clF45" />
+      <node concept="37vLTG" id="PCzh3f7qyq" role="3clF46">
+        <property role="TrG5h" value="chatInterraction" />
+        <node concept="3Tqbb2" id="PCzh3f7qyp" role="1tU5fm">
+          <ref role="ehGHo" to="uzku:5s847lWI8Yh" resolve="ChatInterraction" />
+        </node>
+      </node>
     </node>
     <node concept="2tJIrI" id="5Ux4Lu3dogp" role="jymVt" />
     <node concept="2tJIrI" id="5Ux4Lu3aNXo" role="jymVt" />
