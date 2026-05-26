@@ -157,6 +157,7 @@
     </echoxml>
     <jar destfile="${build.layout}/com.mpsbasics.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mpsbasics.build" />
+      <fileset dir="${mbeddr.formal.home}/code/languages/com.mpsbasics/solutions/com.mpsbasics.build" includes="icons/**, resources/**" />
       <fileset dir="${mbeddr.formal.home}/code/languages/com.mpsbasics/solutions/com.mpsbasics.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mpsbasics.build.jar" />
     </jar>
@@ -194,6 +195,7 @@
     </echoxml>
     <jar destfile="${build.layout}/com.mpsbasics.tests.build.jar" duplicate="preserve">
       <fileset dir="${build.tmp}/java/out/com.mpsbasics.tests.build" />
+      <fileset dir="${mbeddr.formal.home}/code/languages/com.mpsbasics/solutions/com.mpsbasics.tests.build" includes="icons/**, resources/**" />
       <fileset dir="${mbeddr.formal.home}/code/languages/com.mpsbasics/solutions/com.mpsbasics.tests.build/source_gen" includes="**/trace.info, **/exports, **/*.mps, **/checkpoints" />
       <fileset dir="${build.tmp}/default/com.mpsbasics.tests.build.jar" />
     </jar>
