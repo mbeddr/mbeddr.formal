@@ -396,8 +396,18 @@ tasks {
         dependsOn(patch_allScripts, resolveLanguageLibs)
     }
 
-    val build_formal_languages by registering(BuildLanguages::class) {
+    val build_mpsbasics_languages by registering(BuildLanguages::class) {
         dependsOn(build_allScripts)
+        script = scriptFile("build-mpsbasics-languages.xml")
+    }
+
+    val run_mpsbasics_tests by registering(TestLanguages::class) {
+        dependsOn(build_mpsbasics_languages)
+        script = scriptFile("test-mpsbasics-languages.xml")
+    }
+
+    val build_formal_languages by registering(BuildLanguages::class) {
+        dependsOn(build_mpsbasics_languages)
         script = scriptFile("build-formal-languages.xml")
     }
 
@@ -443,7 +453,7 @@ tasks {
     }
 
     val run_all_tests by registering(TestLanguages::class) {
-        dependsOn(configureJava)
+        dependsOn(configureJava, build_formal_languages)
         description = "Will execute all tests from command line"
         script = scriptFile("build-all-tests.xml")
         doLast {
@@ -490,7 +500,8 @@ tasks {
                 listOf(
                     "dependencies/com.mbeddr.platform",
                     "dependencies/org.mpsqa.allInOne",
-                    "artifacts/com.mbeddr.formal.languages").map { buildDir.dir(it) }
+                    "artifacts/com.mbeddr.formal.languages",
+                    "artifacts/com.mpsbasics").map { buildDir.dir(it) }
             })
 
         maxHeapSize = "3G"
@@ -532,7 +543,7 @@ tasks {
     }
 
     val build_assurance_languages by registering(BuildLanguages::class) {
-        dependsOn(build_allScripts)
+        dependsOn(build_mpsbasics_languages)
         script = scriptFile("build-assurance-languages.xml")
     }
 
@@ -618,6 +629,10 @@ tasks {
 	// as of 01.2025, all languages built by 'build_assurance_languages' are also built by 'build_formal_languages'
 	// commented out to avoid multiple building of the same languages
         dependsOn(/*build_assurance_languages,*/ build_formal_languages)
+    }
+
+    test {
+        dependsOn(run_all_tests, run_mpsbasics_tests)
     }
 
     assemble { dependsOn(package_formal, package_assurance) }
