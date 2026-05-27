@@ -34,6 +34,7 @@
     <import index="v846" ref="r:6201667b-d2d4-4e4c-9ecd-6a88ac401069(com.mpsbasics.editor.utils.content)" />
     <import index="agne" ref="r:2538c08a-32a3-4d93-89c3-b508268173db(com.mpsbasics.project.utils.project_finder)" />
     <import index="i8bi" ref="r:c3548bac-30eb-4a2a-937c-0111d5697309(jetbrains.mps.lang.smodel.generator.smodelAdapter)" />
+    <import index="ysyc" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.model.embedding(com.mpsbasics.langchain4j/)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
   </imports>
@@ -79,6 +80,9 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -1295,6 +1299,16 @@
       </node>
       <node concept="3clFbS" id="4S6651mB7Vx" role="3clF47" />
     </node>
+    <node concept="13i0hz" id="3rArG1B0e$2" role="13h7CS">
+      <property role="TrG5h" value="getEmbeddingModel" />
+      <property role="13i0it" value="true" />
+      <property role="13i0iv" value="true" />
+      <node concept="3Tm1VV" id="3rArG1B0e$3" role="1B3o_S" />
+      <node concept="3uibUv" id="3rArG1B0e$4" role="3clF45">
+        <ref role="3uigEE" to="ysyc:~EmbeddingModel" resolve="EmbeddingModel" />
+      </node>
+      <node concept="3clFbS" id="3rArG1B0e$5" role="3clF47" />
+    </node>
     <node concept="13i0hz" id="2Mi1G8ja7l1" role="13h7CS">
       <property role="TrG5h" value="getAvailableModelNames" />
       <property role="13i0it" value="true" />
@@ -1332,7 +1346,7 @@
           <node concept="3cpWsn" id="4S6651mBJFq" role="3cpWs9">
             <property role="TrG5h" value="apiKey" />
             <node concept="17QB3L" id="4S6651mBJ_r" role="1tU5fm" />
-            <node concept="2YIFZM" id="4S6651mBJFr" role="33vP2m">
+            <node concept="2YIFZM" id="3rArG1B0fOT" role="33vP2m">
               <ref role="37wK5l" to="szki:6o$jG5tMD19" resolve="getOpenApiKey" />
               <ref role="1Pybhc" to="szki:65oZS6J8USM" resolve="ApiKeys" />
             </node>
@@ -1438,6 +1452,67 @@
         </node>
       </node>
       <node concept="17QB3L" id="2Mi1G8jb0s0" role="3clF45" />
+    </node>
+    <node concept="13i0hz" id="3rArG1B0gEW" role="13h7CS">
+      <property role="TrG5h" value="getEmbeddingModel" />
+      <ref role="13i0hy" node="3rArG1B0e$2" resolve="getEmbeddingModel" />
+      <node concept="3Tm1VV" id="3rArG1B0gEX" role="1B3o_S" />
+      <node concept="3clFbS" id="3rArG1B0gF0" role="3clF47">
+        <node concept="3cpWs8" id="3rArG1B0iAT" role="3cqZAp">
+          <node concept="3cpWsn" id="3rArG1B0iAU" role="3cpWs9">
+            <property role="TrG5h" value="apiKey" />
+            <node concept="17QB3L" id="3rArG1B0iAV" role="1tU5fm" />
+            <node concept="2YIFZM" id="3rArG1B0iAW" role="33vP2m">
+              <ref role="37wK5l" to="szki:6o$jG5tMD19" resolve="getOpenApiKey" />
+              <ref role="1Pybhc" to="szki:65oZS6J8USM" resolve="ApiKeys" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3rArG1B0hvC" role="3cqZAp">
+          <node concept="2OqwBi" id="3rArG1B0kiq" role="3clFbG">
+            <node concept="2OqwBi" id="5Ux4Lu3gTAq" role="2Oq$k0">
+              <node concept="2OqwBi" id="5l3dUiRlmU0" role="2Oq$k0">
+                <node concept="2OqwBi" id="5Ux4Lu3gTAr" role="2Oq$k0">
+                  <node concept="2ShNRf" id="5Ux4Lu3gTAs" role="2Oq$k0">
+                    <node concept="1pGfFk" id="5Ux4Lu3gTAt" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder.&lt;init&gt;()" resolve="OpenAiEmbeddingModel.OpenAiEmbeddingModelBuilder" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5Ux4Lu3gTAu" role="2OqNvi">
+                    <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder.modelName(java.lang.String)" resolve="modelName" />
+                    <node concept="10M0yZ" id="3rArG1B0FDr" role="37wK5m">
+                      <ref role="3cqZAo" to="szki:3rArG1B0B7r" resolve="TEXT_EMBEDDING_MODEL" />
+                      <ref role="1PxDUh" to="szki:5Ux4Lu3aTCL" resolve="ConversationalAssistantWrapper" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="5l3dUiRlouW" role="2OqNvi">
+                  <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder.baseUrl(java.lang.String)" resolve="baseUrl" />
+                  <node concept="2OqwBi" id="5l3dUiRlzqL" role="37wK5m">
+                    <node concept="13iPFW" id="3rArG1B0kYK" role="2Oq$k0" />
+                    <node concept="2qgKlT" id="5l3dUiRl$3x" role="2OqNvi">
+                      <ref role="37wK5l" node="2Mi1G8jb0mr" resolve="getBaseUri" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="5Ux4Lu3gTAy" role="2OqNvi">
+                <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder.apiKey(java.lang.String)" resolve="apiKey" />
+                <node concept="37vLTw" id="3rArG1B0jNO" role="37wK5m">
+                  <ref role="3cqZAo" node="3rArG1B0iAU" resolve="apiKey" />
+                </node>
+              </node>
+            </node>
+            <node concept="liA8E" id="3rArG1B0kyZ" role="2OqNvi">
+              <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder.build()" resolve="build" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3uibUv" id="3rArG1B0gF1" role="3clF45">
+        <ref role="3uigEE" to="ysyc:~EmbeddingModel" resolve="EmbeddingModel" />
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="5YEFBwyGRpT">
