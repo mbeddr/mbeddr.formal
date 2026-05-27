@@ -482,8 +482,8 @@ tasks {
                 listOf(
                     "dependencies/com.mbeddr.platform",
                     "dependencies/org.mpsqa.allInOne",
-                    "artifacts/com.mpsbasics",
-                    "artifacts/com.mbeddr.formal.languages").map { buildDir.dir(it) }
+					"artifacts/com.mbeddr.formal.languages",
+                    "artifacts/com.mpsbasics").map { buildDir.dir(it) }
             })
 
         ignoreFailures = true
@@ -635,7 +635,9 @@ tasks {
     test {
         dependsOn(run_all_tests, run_mpsbasics_tests)
     }
-
+	check {
+        dependsOn(checkModels)
+    }
     assemble { dependsOn(package_formal, package_assurance) }
 
     val cleanMps by registering(Delete::class) {
