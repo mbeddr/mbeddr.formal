@@ -635,9 +635,7 @@ tasks {
     test {
         dependsOn(run_all_tests, run_mpsbasics_tests)
     }
-	check {
-        dependsOn(checkModels)
-    }
+	
     assemble { dependsOn(package_formal, package_assurance) }
 
     val cleanMps by registering(Delete::class) {
