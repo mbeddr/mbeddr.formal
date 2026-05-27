@@ -17,7 +17,7 @@ plugins {
     id("download-jbr") version mpsGradlePluginVersion
     id("de.itemis.mps.gradle.common") version mpsGradlePluginVersion
 
-    id("org.cyclonedx.bom") version "2.2.0"
+    id("org.cyclonedx.bom") version "3.2.4"
 }
 
 val jbrVers = "17.0.8.1-b1000.32"
@@ -83,13 +83,17 @@ if (ciBuild) {
 
 val publishingRepository = uri("https://artifacts.itemis.cloud/repository/maven-mps-releases")
 
-val docx4JVersion = "11.4.11"
+val docx4JVersion = "11.5.12"
 
 configurations {
     val mps by creating
     val languageLibs by creating
-    val docx4j by creating
-    val langchain4j by creating
+    val docx4j by creating {
+        exclude("org.slf4j", "slf4j-api")
+    }
+    val langchain4j by creating {
+        exclude("org.slf4j")
+    }
     val plantUML by creating {
         isTransitive = false
     }
@@ -105,7 +109,9 @@ configurations {
     val z3 by creating {
         isTransitive = false
     }
-    val jira by creating
+    val jira by creating {
+        exclude("org.slf4j")
+    }
 
     val pdfbox by creating {
         isTransitive = false
@@ -171,19 +177,20 @@ dependencyLocking { lockAllConfigurations() }
 
 repositories {
     mavenCentral()
-    val dependencyRepositories = listOf("https://artifacts.itemis.cloud/repository/maven-mps",
-            "https://maven.pkg.github.com/mbeddr/*","https://packages.atlassian.com/mvn/maven-external")
+    maven("https://artifacts.itemis.cloud/repository/maven-mps")
 
-    for (repoUrl in dependencyRepositories) {
-        maven {
-            url = uri(repoUrl)
+    maven("https://maven.pkg.github.com/mbeddr/*") {
+        credentials {
+            username = project.property("gpr.user") as String
+            password = project.property("gpr.token") as String
+        }
+    }
 
-            if (repoUrl.startsWith("https://maven.pkg.github.com/")) {
-                credentials {
-                    username = project.property("gpr.user") as String
-                    password = project.property("gpr.token") as String
-                }
-            }
+    // Atlassian stuff is only in the Atlassian repo, tell Gradle to not look for it anywhere else.
+    exclusiveContent {
+        forRepositories(maven("https://packages.atlassian.com/mvn/maven-external"))
+        filter {
+            includeGroupByRegex("com\\.atlassian.*")
         }
     }
 }
@@ -226,8 +233,6 @@ val defaultScriptArgs = mapOf(
         "build.dir" to layout.buildDirectory.get(),
         "version" to version,
         "build.date" to Date(),
-        //incremental build support
-        "mps.generator.skipUnmodifiedModels" to true,
         "jdk.nio.zipfs.allowDotZipEntry" to true,
         "jdk.util.zip.disableZip64ExtraFieldValidation" to true
 )
@@ -391,8 +396,18 @@ tasks {
         dependsOn(patch_allScripts, resolveLanguageLibs)
     }
 
-    val build_formal_languages by registering(BuildLanguages::class) {
+    val build_mpsbasics_languages by registering(BuildLanguages::class) {
         dependsOn(build_allScripts)
+        script = scriptFile("build-mpsbasics-languages.xml")
+    }
+
+    val run_mpsbasics_tests by registering(TestLanguages::class) {
+        dependsOn(build_mpsbasics_languages)
+        script = scriptFile("test-mpsbasics-languages.xml")
+    }
+
+    val build_formal_languages by registering(BuildLanguages::class) {
+        dependsOn(build_mpsbasics_languages)
         script = scriptFile("build-formal-languages.xml")
     }
 
@@ -438,7 +453,7 @@ tasks {
     }
 
     val run_all_tests by registering(TestLanguages::class) {
-        dependsOn(configureJava)
+        dependsOn(configureJava, build_formal_languages)
         description = "Will execute all tests from command line"
         script = scriptFile("build-all-tests.xml")
         doLast {
@@ -467,7 +482,8 @@ tasks {
                 listOf(
                     "dependencies/com.mbeddr.platform",
                     "dependencies/org.mpsqa.allInOne",
-                    "artifacts/com.mbeddr.formal.languages").map { buildDir.dir(it) }
+					"artifacts/com.mbeddr.formal.languages",
+                    "artifacts/com.mpsbasics").map { buildDir.dir(it) }
             })
 
         ignoreFailures = true
@@ -485,7 +501,8 @@ tasks {
                 listOf(
                     "dependencies/com.mbeddr.platform",
                     "dependencies/org.mpsqa.allInOne",
-                    "artifacts/com.mbeddr.formal.languages").map { buildDir.dir(it) }
+                    "artifacts/com.mbeddr.formal.languages",
+                    "artifacts/com.mpsbasics").map { buildDir.dir(it) }
             })
 
         maxHeapSize = "3G"
@@ -514,7 +531,7 @@ tasks {
     }
 
     val package_formal by registering(Zip::class) {
-        dependsOn(build_formal_languages, cyclonedxBom)
+        dependsOn(build_formal_languages, cyclonedxDirectBom)
         archiveBaseName.set("com.mbeddr.formal")
         from(artifactsDir) {
             include("com.mbeddr.formal.languages/**")
@@ -527,12 +544,12 @@ tasks {
     }
 
     val build_assurance_languages by registering(BuildLanguages::class) {
-        dependsOn(build_allScripts)
+        dependsOn(build_mpsbasics_languages)
         script = scriptFile("build-assurance-languages.xml")
     }
 
     val package_assurance by registering(Zip::class) {
-        dependsOn(build_assurance_languages, cyclonedxBom)
+        dependsOn(build_assurance_languages, cyclonedxDirectBom)
         archiveBaseName.set("fasten.assurance")
         from(artifactsDir) {
             include("fasten.assurance.languages/**")
@@ -615,30 +632,33 @@ tasks {
         dependsOn(/*build_assurance_languages,*/ build_formal_languages)
     }
 
+    test {
+        dependsOn(run_all_tests, run_mpsbasics_tests)
+    }
+	
     assemble { dependsOn(package_formal, package_assurance) }
 
     val cleanMps by registering(Delete::class) {
         delete(fileTree(projectDir) { include("**/classes_gen/**", "**/source_gen/**", "**/source_gen.caches/**", "tmp/**") })
     }
 
-cyclonedxBom {
-    destination = file("$buildDir/reports")
-    outputName = "sbom"
-    outputFormat = "json"
-    includeLicenseText = false
-    includeConfigs = listOf(
-        "languageLibs",
-        "docx4j",
-	"langchain4j",
-        "plantUML",
-        "sat4j",
-        "jfreechart",
-        "nusmv",
-        "z3",
-        "jira",
-        "pdfbox"
-    )
-}
+    cyclonedxDirectBom {
+        jsonOutput = layout.buildDirectory.file("reports/sbom.json")
+        xmlOutput.unsetConvention()
+        includeLicenseText = false
+        includeConfigs = listOf(
+            "languageLibs",
+            "docx4j",
+            "langchain4j",
+            "plantUML",
+            "sat4j",
+            "jfreechart",
+            "nusmv",
+            "z3",
+            "jira",
+            "pdfbox"
+        )
+    }
 
     //clean { dependsOn(cleanMps) }
     val rebuild by registering { dependsOn(clean, build_formal_languages) }

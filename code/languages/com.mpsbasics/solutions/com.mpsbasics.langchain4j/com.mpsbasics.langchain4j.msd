@@ -16,7 +16,6 @@
       <sourceRoot location="langchain4j-open-ai.jar" />
       <sourceRoot location="langchain4j.jar" />
       <sourceRoot location="opennlp-tools.jar" />
-      <sourceRoot location="slf4j-api.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -33,7 +32,6 @@
       <library location="${module}/lib/langchain4j-open-ai.jar" />
       <library location="${module}/lib/langchain4j.jar" />
       <library location="${module}/lib/opennlp-tools.jar" />
-      <library location="${module}/lib/slf4j-api.jar" />
     </facet>
   </facets>
   <dependencies>

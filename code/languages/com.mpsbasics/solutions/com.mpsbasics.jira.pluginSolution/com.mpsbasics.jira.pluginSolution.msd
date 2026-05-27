@@ -15,7 +15,6 @@
       <sourceRoot location="atlassian-event.jar" />
       <sourceRoot location="httpcore.jar" />
       <sourceRoot location="jira-rest-java-client-core.jar" />
-      <sourceRoot location="slf4j-api.jar" />
       <sourceRoot location="guava.jar" />
       <sourceRoot location="httpclient.jar" />
       <sourceRoot location="atlassian-util-concurrent.jar" />
@@ -49,7 +48,6 @@
       <library location="${module}/lib/jira-rest-java-client-core.jar" />
       <library location="${module}/lib/joda-time.jar" />
       <library location="${module}/lib/jsr305.jar" />
-      <library location="${module}/lib/slf4j-api.jar" />
       <library location="${module}/lib/spring-beans.jar" />
       <library location="${module}/lib/spring-core.jar" />
     </facet>

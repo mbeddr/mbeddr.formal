@@ -52,6 +52,7 @@
     <import index="1dej" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.model.table(com.mpsbasics.docx4j.lib/)" />
     <import index="ifn4" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:jakarta.xml.bind(com.mpsbasics.docx4j.lib/)" />
     <import index="9anm" ref="r:6f374023-1b4e-4a80-8bf6-2cc3148faa52(jetbrains.mps.lang.editor.plugin)" />
+    <import index="i1lw" ref="r:085b85cb-e7c0-47a8-a09c-179bb5398b5c(com.mpsbasics.docx4j.core)" />
     <import index="2uyo" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:org.docx4j.model.structure(com.mpsbasics.docx4j.lib/)" implicit="true" />
   </imports>
   <registry>
@@ -417,23 +418,6 @@
       <property role="DiZV1" value="false" />
       <property role="2aFKle" value="false" />
       <node concept="3clFbS" id="6OYO23koTTd" role="3clF47">
-        <node concept="3cpWs8" id="6fO82$FsRM5" role="3cqZAp">
-          <node concept="3cpWsn" id="6fO82$FsRM6" role="3cpWs9">
-            <property role="TrG5h" value="initialLoader" />
-            <node concept="3uibUv" id="6fO82$FsRM3" role="1tU5fm">
-              <ref role="3uigEE" to="wyt6:~ClassLoader" resolve="ClassLoader" />
-            </node>
-            <node concept="2OqwBi" id="6fO82$FsRM7" role="33vP2m">
-              <node concept="2YIFZM" id="6fO82$FsRM8" role="2Oq$k0">
-                <ref role="37wK5l" to="wyt6:~Thread.currentThread()" resolve="currentThread" />
-                <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-              </node>
-              <node concept="liA8E" id="6fO82$FsRM9" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~Thread.getContextClassLoader()" resolve="getContextClassLoader" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="8rr1id7Ion" role="3cqZAp">
           <node concept="3cpWsn" id="8rr1id7Ioo" role="3cpWs9">
             <property role="TrG5h" value="repo" />
@@ -450,102 +434,89 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="2w5Gq4UsmFu" role="3cqZAp">
+          <node concept="3cpWsn" id="2w5Gq4UsmFv" role="3cpWs9">
+            <property role="3TUv4t" value="true" />
+            <property role="TrG5h" value="wordFile" />
+            <node concept="3uibUv" id="2w5Gq4UsmFw" role="1tU5fm">
+              <ref role="3uigEE" to="guwi:~File" resolve="File" />
+            </node>
+            <node concept="2ShNRf" id="2w5Gq4UsmFx" role="33vP2m">
+              <node concept="1pGfFk" id="2w5Gq4UsmFy" role="2ShVmc">
+                <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                <node concept="37vLTw" id="2w5Gq4Usndj" role="37wK5m">
+                  <ref role="3cqZAo" node="6fO82$Fr5qq" resolve="pathToWordFile" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3J1_TO" id="6fO82$FsSrs" role="3cqZAp">
           <node concept="3clFbS" id="4L3e0yQSC0e" role="1zxBo7">
-            <node concept="3clFbF" id="6fO82$FsTrZ" role="3cqZAp">
-              <node concept="2OqwBi" id="6fO82$FsTKu" role="3clFbG">
-                <node concept="2YIFZM" id="6fO82$FsTCC" role="2Oq$k0">
-                  <ref role="37wK5l" to="wyt6:~Thread.currentThread()" resolve="currentThread" />
-                  <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                </node>
-                <node concept="liA8E" id="6fO82$FsTUr" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader)" resolve="setContextClassLoader" />
-                  <node concept="2OqwBi" id="6fO82$FsVgj" role="37wK5m">
-                    <node concept="2OqwBi" id="6fO82$FsUK8" role="2Oq$k0">
-                      <node concept="2ShNRf" id="6fO82$FsUmt" role="2Oq$k0">
-                        <node concept="1pGfFk" id="2N6uepFeM2a" role="2ShVmc">
-                          <ref role="37wK5l" to="5zxs:~WordprocessingMLPackage.&lt;init&gt;()" resolve="WordprocessingMLPackage" />
+            <node concept="3clFbF" id="7yOrhoD$uOh" role="3cqZAp">
+              <node concept="2YIFZM" id="7yOrhoD$vaM" role="3clFbG">
+                <ref role="37wK5l" to="i1lw:7yOrhoD$tn1" resolve="runWithDocx4j" />
+                <ref role="1Pybhc" to="i1lw:7yOrhoDzQ2f" resolve="Docx4j" />
+                <node concept="1bVj0M" id="7yOrhoD$vsi" role="37wK5m">
+                  <node concept="3clFbS" id="7yOrhoD$vsn" role="1bW5cS">
+                    <node concept="3cpWs8" id="6fO82$Fsbeq" role="3cqZAp">
+                      <node concept="3cpWsn" id="6fO82$Fsber" role="3cpWs9">
+                        <property role="TrG5h" value="wordPackage" />
+                        <node concept="3uibUv" id="2N6uepFeN3z" role="1tU5fm">
+                          <ref role="3uigEE" to="5zxs:~WordprocessingMLPackage" resolve="WordprocessingMLPackage" />
+                        </node>
+                        <node concept="2YIFZM" id="2N6uepFeNgV" role="33vP2m">
+                          <ref role="37wK5l" to="5zxs:~WordprocessingMLPackage.createPackage()" resolve="createPackage" />
+                          <ref role="1Pybhc" to="5zxs:~WordprocessingMLPackage" resolve="WordprocessingMLPackage" />
                         </node>
                       </node>
-                      <node concept="liA8E" id="6fO82$FsV0q" role="2OqNvi">
-                        <ref role="37wK5l" to="wyt6:~Object.getClass()" resolve="getClass" />
+                    </node>
+                    <node concept="3clFbF" id="38aFq1jq91L" role="3cqZAp">
+                      <node concept="2YIFZM" id="38aFq1jq9bO" role="3clFbG">
+                        <ref role="37wK5l" node="38aFq1jq0Vc" resolve="setStyles" />
+                        <ref role="1Pybhc" node="38aFq1jq0ud" resolve="WordStyle" />
+                        <node concept="37vLTw" id="38aFq1jq9ks" role="37wK5m">
+                          <ref role="3cqZAo" node="6fO82$Fsber" resolve="wordPackage" />
+                        </node>
                       </node>
                     </node>
-                    <node concept="liA8E" id="6fO82$FsVGB" role="2OqNvi">
-                      <ref role="37wK5l" to="wyt6:~Class.getClassLoader()" resolve="getClassLoader" />
+                    <node concept="3clFbH" id="38aFq1jq8KJ" role="3cqZAp" />
+                    <node concept="3clFbF" id="6fO82$Fsaeg" role="3cqZAp">
+                      <node concept="1rXfSq" id="6fO82$Fsaee" role="3clFbG">
+                        <ref role="37wK5l" node="6fO82$Framj" resolve="writeNode" />
+                        <node concept="37vLTw" id="2IlB7EiFZqN" role="37wK5m">
+                          <ref role="3cqZAo" node="6fO82$Fsber" resolve="wordPackage" />
+                        </node>
+                        <node concept="37vLTw" id="4K8dCO7y_Ka" role="37wK5m">
+                          <ref role="3cqZAo" node="4K8dCO7yz_P" resolve="nodeToSerialize" />
+                        </node>
+                        <node concept="37vLTw" id="8rr1id7JYV" role="37wK5m">
+                          <ref role="3cqZAo" node="8rr1id7Ioo" resolve="repo" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbH" id="7TkGv4j2liO" role="3cqZAp" />
+                    <node concept="3clFbF" id="2w5Gq4UsmF$" role="3cqZAp">
+                      <node concept="2OqwBi" id="2w5Gq4UsmF_" role="3clFbG">
+                        <node concept="37vLTw" id="2w5Gq4UsmFA" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6fO82$Fsber" resolve="wordPackage" />
+                        </node>
+                        <node concept="liA8E" id="2w5Gq4UsmFB" role="2OqNvi">
+                          <ref role="37wK5l" to="5zxs:~OpcPackage.save(java.io.File)" resolve="save" />
+                          <node concept="37vLTw" id="2w5Gq4UsmFC" role="37wK5m">
+                            <ref role="3cqZAo" node="2w5Gq4UsmFv" resolve="wordFile" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3cpWs6" id="42CSvZahGMR" role="3cqZAp">
+                      <node concept="10Nm6u" id="1rK48R2URdg" role="3cqZAk" />
                     </node>
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3cpWs8" id="6fO82$Fsbeq" role="3cqZAp">
-              <node concept="3cpWsn" id="6fO82$Fsber" role="3cpWs9">
-                <property role="TrG5h" value="wordPackage" />
-                <node concept="3uibUv" id="2N6uepFeN3z" role="1tU5fm">
-                  <ref role="3uigEE" to="5zxs:~WordprocessingMLPackage" resolve="WordprocessingMLPackage" />
-                </node>
-                <node concept="2YIFZM" id="2N6uepFeNgV" role="33vP2m">
-                  <ref role="37wK5l" to="5zxs:~WordprocessingMLPackage.createPackage()" resolve="createPackage" />
-                  <ref role="1Pybhc" to="5zxs:~WordprocessingMLPackage" resolve="WordprocessingMLPackage" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="38aFq1jq91L" role="3cqZAp">
-              <node concept="2YIFZM" id="38aFq1jq9bO" role="3clFbG">
-                <ref role="37wK5l" node="38aFq1jq0Vc" resolve="setStyles" />
-                <ref role="1Pybhc" node="38aFq1jq0ud" resolve="WordStyle" />
-                <node concept="37vLTw" id="38aFq1jq9ks" role="37wK5m">
-                  <ref role="3cqZAo" node="6fO82$Fsber" resolve="wordPackage" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="38aFq1jq8KJ" role="3cqZAp" />
-            <node concept="3clFbF" id="6fO82$Fsaeg" role="3cqZAp">
-              <node concept="1rXfSq" id="6fO82$Fsaee" role="3clFbG">
-                <ref role="37wK5l" node="6fO82$Framj" resolve="writeNode" />
-                <node concept="37vLTw" id="2IlB7EiFZqN" role="37wK5m">
-                  <ref role="3cqZAo" node="6fO82$Fsber" resolve="wordPackage" />
-                </node>
-                <node concept="37vLTw" id="4K8dCO7y_Ka" role="37wK5m">
-                  <ref role="3cqZAo" node="4K8dCO7yz_P" resolve="nodeToSerialize" />
-                </node>
-                <node concept="37vLTw" id="8rr1id7JYV" role="37wK5m">
-                  <ref role="3cqZAo" node="8rr1id7Ioo" resolve="repo" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="7TkGv4j2liO" role="3cqZAp" />
-            <node concept="3cpWs8" id="2w5Gq4UsmFu" role="3cqZAp">
-              <node concept="3cpWsn" id="2w5Gq4UsmFv" role="3cpWs9">
-                <property role="3TUv4t" value="false" />
-                <property role="TrG5h" value="wordFile" />
-                <node concept="3uibUv" id="2w5Gq4UsmFw" role="1tU5fm">
-                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
-                </node>
-                <node concept="2ShNRf" id="2w5Gq4UsmFx" role="33vP2m">
-                  <node concept="1pGfFk" id="2w5Gq4UsmFy" role="2ShVmc">
-                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
-                    <node concept="37vLTw" id="2w5Gq4Usndj" role="37wK5m">
-                      <ref role="3cqZAo" node="6fO82$Fr5qq" resolve="pathToWordFile" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="2w5Gq4UsmF$" role="3cqZAp">
-              <node concept="2OqwBi" id="2w5Gq4UsmF_" role="3clFbG">
-                <node concept="37vLTw" id="2w5Gq4UsmFA" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6fO82$Fsber" resolve="wordPackage" />
-                </node>
-                <node concept="liA8E" id="2w5Gq4UsmFB" role="2OqNvi">
-                  <ref role="37wK5l" to="5zxs:~OpcPackage.save(java.io.File)" resolve="save" />
-                  <node concept="37vLTw" id="2w5Gq4UsmFC" role="37wK5m">
-                    <ref role="3cqZAo" node="2w5Gq4UsmFv" resolve="wordFile" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="3AvLcZoWias" role="3cqZAp" />
+            <node concept="3clFbH" id="1rK48R2UQv4" role="3cqZAp" />
             <node concept="3clFbF" id="8rr1id71zV" role="3cqZAp">
               <node concept="2YIFZM" id="xCk$O6mZNq" role="3clFbG">
                 <ref role="1Pybhc" node="xCk$O6mgDu" resolve="WordNotificationHelper" />
@@ -643,41 +614,16 @@
                               </node>
                             </node>
                             <node concept="3clFbS" id="2kYdJbxbfjh" role="1zxBo7">
-                              <node concept="3cpWs8" id="2kYdJbxbhUk" role="3cqZAp">
-                                <node concept="3cpWsn" id="2kYdJbxbhUi" role="3cpWs9">
-                                  <property role="TrG5h" value="runtimeCommand" />
-                                  <node concept="17QB3L" id="2kYdJbxbiCn" role="1tU5fm" />
-                                  <node concept="3cpWs3" id="2kYdJbxbj_f" role="33vP2m">
-                                    <node concept="Xl_RD" id="2kYdJbxbji5" role="3uHU7B">
-                                      <property role="Xl_RC" value="explorer /select, " />
-                                    </node>
-                                    <node concept="2OqwBi" id="2kYdJbxc278" role="3uHU7w">
-                                      <node concept="37vLTw" id="8rr1id7r16" role="2Oq$k0">
-                                        <ref role="3cqZAo" node="6fO82$Fr5qq" resolve="pathToWordFile" />
-                                      </node>
-                                      <node concept="liA8E" id="2kYdJbxc2sG" role="2OqNvi">
-                                        <ref role="37wK5l" to="wyt6:~String.replace(java.lang.CharSequence,java.lang.CharSequence)" resolve="replace" />
-                                        <node concept="Xl_RD" id="2kYdJbxc341" role="37wK5m">
-                                          <property role="Xl_RC" value="/" />
-                                        </node>
-                                        <node concept="Xl_RD" id="2kYdJbxc49G" role="37wK5m">
-                                          <property role="Xl_RC" value="\\" />
-                                        </node>
-                                      </node>
-                                    </node>
+                              <node concept="3clFbF" id="1rK48R2TRTE" role="3cqZAp">
+                                <node concept="2OqwBi" id="1rK48R2TTnI" role="3clFbG">
+                                  <node concept="2YIFZM" id="1rK48R2TSZK" role="2Oq$k0">
+                                    <ref role="37wK5l" to="z60i:~Desktop.getDesktop()" resolve="getDesktop" />
+                                    <ref role="1Pybhc" to="z60i:~Desktop" resolve="Desktop" />
                                   </node>
-                                </node>
-                              </node>
-                              <node concept="3clFbF" id="2kYdJbxb8Db" role="3cqZAp">
-                                <node concept="2OqwBi" id="2kYdJbxb8Lh" role="3clFbG">
-                                  <node concept="2YIFZM" id="2kYdJbxb8EJ" role="2Oq$k0">
-                                    <ref role="37wK5l" to="wyt6:~Runtime.getRuntime()" resolve="getRuntime" />
-                                    <ref role="1Pybhc" to="wyt6:~Runtime" resolve="Runtime" />
-                                  </node>
-                                  <node concept="liA8E" id="2kYdJbxb8RW" role="2OqNvi">
-                                    <ref role="37wK5l" to="wyt6:~Runtime.exec(java.lang.String)" resolve="exec" />
-                                    <node concept="37vLTw" id="2kYdJbxbmol" role="37wK5m">
-                                      <ref role="3cqZAo" node="2kYdJbxbhUi" resolve="runtimeCommand" />
+                                  <node concept="liA8E" id="1rK48R2TTX4" role="2OqNvi">
+                                    <ref role="37wK5l" to="z60i:~Desktop.browseFileDirectory(java.io.File)" resolve="browseFileDirectory" />
+                                    <node concept="37vLTw" id="1rK48R2UVeq" role="37wK5m">
+                                      <ref role="3cqZAo" node="2w5Gq4UsmFv" resolve="wordFile" />
                                     </node>
                                   </node>
                                 </node>
@@ -813,24 +759,6 @@
                   </node>
                   <node concept="liA8E" id="6fO82$Fr8O3" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="1wplmZ" id="882InoUALTP" role="1zxBo6">
-            <node concept="3clFbS" id="6fO82$FsSrv" role="1wplMD">
-              <node concept="3clFbF" id="6fO82$FsSJs" role="3cqZAp">
-                <node concept="2OqwBi" id="6fO82$FsSSU" role="3clFbG">
-                  <node concept="2YIFZM" id="6fO82$FsSLb" role="2Oq$k0">
-                    <ref role="1Pybhc" to="wyt6:~Thread" resolve="Thread" />
-                    <ref role="37wK5l" to="wyt6:~Thread.currentThread()" resolve="currentThread" />
-                  </node>
-                  <node concept="liA8E" id="6fO82$FsTaP" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Thread.setContextClassLoader(java.lang.ClassLoader)" resolve="setContextClassLoader" />
-                    <node concept="37vLTw" id="6fO82$FsTd5" role="37wK5m">
-                      <ref role="3cqZAo" node="6fO82$FsRM6" resolve="initialLoader" />
-                    </node>
                   </node>
                 </node>
               </node>
