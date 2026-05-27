@@ -672,10 +672,10 @@
         <node concept="Tc6Ow" id="5Ux4Lu38PFt" role="2ShVmc" />
       </node>
     </node>
-    <node concept="312cEg" id="2ZpX2r3Gx6n" role="jymVt">
+    <node concept="Wx3nA" id="3rArG1B0B7r" role="jymVt">
       <property role="TrG5h" value="TEXT_EMBEDDING_MODEL" />
-      <node concept="3Tm6S6" id="2ZpX2r3Gx6o" role="1B3o_S" />
       <node concept="17QB3L" id="2ZpX2r3Gj08" role="1tU5fm" />
+      <node concept="3Tm1VV" id="3rArG1B0z6p" role="1B3o_S" />
       <node concept="Xl_RD" id="2ZpX2r3GnCf" role="33vP2m">
         <property role="Xl_RC" value="text-embedding-3-large" />
       </node>
@@ -711,70 +711,18 @@
         </node>
       </node>
       <node concept="3clFbS" id="5Ux4Lu3c0s$" role="3clF47">
-        <node concept="3cpWs8" id="5Ux4Lu3gTAo" role="3cqZAp">
-          <node concept="3cpWsn" id="5Ux4Lu3gTAp" role="3cpWs9">
-            <property role="TrG5h" value="embeddingModelBuilder" />
-            <node concept="3uibUv" id="5Ux4Lu3gTsa" role="1tU5fm">
-              <ref role="3uigEE" to="8s45:~OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder" resolve="OpenAiEmbeddingModel.OpenAiEmbeddingModelBuilder" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="5Ux4Lu3h0p6" role="3cqZAp">
-          <node concept="37vLTI" id="5Ux4Lu3h0p8" role="3clFbG">
-            <node concept="2OqwBi" id="5Ux4Lu3gTAq" role="37vLTx">
-              <node concept="2OqwBi" id="5l3dUiRlmU0" role="2Oq$k0">
-                <node concept="2OqwBi" id="5Ux4Lu3gTAr" role="2Oq$k0">
-                  <node concept="2ShNRf" id="5Ux4Lu3gTAs" role="2Oq$k0">
-                    <node concept="1pGfFk" id="5Ux4Lu3gTAt" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder.&lt;init&gt;()" resolve="OpenAiEmbeddingModel.OpenAiEmbeddingModelBuilder" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="5Ux4Lu3gTAu" role="2OqNvi">
-                    <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder.modelName(java.lang.String)" resolve="modelName" />
-                    <node concept="37vLTw" id="2ZpX2r3GnCg" role="37wK5m">
-                      <ref role="3cqZAo" node="2ZpX2r3Gx6n" resolve="TEXT_EMBEDDING_MODEL" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="liA8E" id="5l3dUiRlouW" role="2OqNvi">
-                  <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder.baseUrl(java.lang.String)" resolve="baseUrl" />
-                  <node concept="2OqwBi" id="5l3dUiRlzqL" role="37wK5m">
-                    <node concept="37vLTw" id="5l3dUiRlp$9" role="2Oq$k0">
-                      <ref role="3cqZAo" node="4S6651mFK1e" resolve="chatModelProvider" />
-                    </node>
-                    <node concept="2qgKlT" id="5l3dUiRl$3x" role="2OqNvi">
-                      <ref role="37wK5l" to="zpwy:2Mi1G8jb0mr" resolve="getBaseUri" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="liA8E" id="5Ux4Lu3gTAy" role="2OqNvi">
-                <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder.apiKey(java.lang.String)" resolve="apiKey" />
-                <node concept="2YIFZM" id="5Ux4Lu3gTAz" role="37wK5m">
-                  <ref role="37wK5l" node="6o$jG5tMD19" resolve="getOpenApiKey" />
-                  <ref role="1Pybhc" node="65oZS6J8USM" resolve="ApiKeys" />
-                </node>
-              </node>
-            </node>
-            <node concept="37vLTw" id="5Ux4Lu3h0pc" role="37vLTJ">
-              <ref role="3cqZAo" node="5Ux4Lu3gTAp" resolve="embeddingModelBuilder" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5Ux4Lu38Exh" role="3cqZAp">
           <node concept="3cpWsn" id="5Ux4Lu38Exi" role="3cpWs9">
             <property role="TrG5h" value="embeddingModel" />
             <node concept="3uibUv" id="5Ux4Lu38Exj" role="1tU5fm">
               <ref role="3uigEE" to="ysyc:~EmbeddingModel" resolve="EmbeddingModel" />
             </node>
-            <node concept="2ShNRf" id="5Ux4Lu38FEb" role="33vP2m">
-              <node concept="1pGfFk" id="5Ux4Lu38GQv" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel.&lt;init&gt;(dev.langchain4j.model.openai.OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder)" resolve="OpenAiEmbeddingModel" />
-                <node concept="37vLTw" id="5Ux4Lu3gTA$" role="37wK5m">
-                  <ref role="3cqZAo" node="5Ux4Lu3gTAp" resolve="embeddingModelBuilder" />
-                </node>
+            <node concept="2OqwBi" id="3rArG1B0ssK" role="33vP2m">
+              <node concept="37vLTw" id="3rArG1B0qtN" role="2Oq$k0">
+                <ref role="3cqZAo" node="4S6651mFK1e" resolve="chatModelProvider" />
+              </node>
+              <node concept="2qgKlT" id="3rArG1B0tzp" role="2OqNvi">
+                <ref role="37wK5l" to="zpwy:3rArG1B0e$2" resolve="getEmbeddingModel" />
               </node>
             </node>
           </node>
@@ -903,45 +851,71 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="5Ux4Lu39k4U" role="3cqZAp">
-          <node concept="3cpWsn" id="5Ux4Lu39k4V" role="3cpWs9">
-            <property role="TrG5h" value="embeddings" />
-            <node concept="3uibUv" id="5Ux4Lu39jVE" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~List" resolve="List" />
-              <node concept="3uibUv" id="5Ux4Lu39jVH" role="11_B2D">
-                <ref role="3uigEE" to="mhe9:~Embedding" resolve="Embedding" />
+        <node concept="3clFbH" id="Ygl26Kz80R" role="3cqZAp" />
+        <node concept="3J1_TO" id="Ygl26Kzgdt" role="3cqZAp">
+          <node concept="3uVAMA" id="Ygl26Kzi6O" role="1zxBo5">
+            <node concept="XOnhg" id="Ygl26Kzi6P" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="Ygl26Kzi6Q" role="1tU5fm">
+                <node concept="3uibUv" id="Ygl26Kzj$Z" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="5Ux4Lu39k4W" role="33vP2m">
-              <node concept="2OqwBi" id="5Ux4Lu39k4X" role="2Oq$k0">
-                <node concept="37vLTw" id="5Ux4Lu39k4Y" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5Ux4Lu38Exi" resolve="embeddingModel" />
+            <node concept="3clFbS" id="Ygl26Kzi6R" role="1zc67A">
+              <node concept="2xdQw9" id="Ygl26KzlL2" role="3cqZAp">
+                <property role="2xdLsb" value="gZ5fh_4/error" />
+                <node concept="Xl_RD" id="Ygl26KzlL4" role="9lYJi">
+                  <property role="Xl_RC" value="exception" />
                 </node>
-                <node concept="liA8E" id="5Ux4Lu39k4Z" role="2OqNvi">
-                  <ref role="37wK5l" to="ysyc:~EmbeddingModel.embedAll(java.util.List)" resolve="embedAll" />
-                  <node concept="37vLTw" id="5Ux4Lu39k50" role="37wK5m">
-                    <ref role="3cqZAo" node="2ZpX2r3Eh2U" resolve="allTextSegments" />
-                  </node>
+                <node concept="37vLTw" id="Ygl26KzoTw" role="9lYJj">
+                  <ref role="3cqZAo" node="Ygl26Kzi6P" resolve="e" />
                 </node>
-              </node>
-              <node concept="liA8E" id="5Ux4Lu39k51" role="2OqNvi">
-                <ref role="37wK5l" to="9dus:~Response.content()" resolve="content" />
               </node>
             </node>
           </node>
-        </node>
-        <node concept="3clFbF" id="5Ux4Lu39eHP" role="3cqZAp">
-          <node concept="2OqwBi" id="5Ux4Lu39fhs" role="3clFbG">
-            <node concept="37vLTw" id="5Ux4Lu39eHN" role="2Oq$k0">
-              <ref role="3cqZAo" node="5Ux4Lu39a41" resolve="embeddingStore" />
-            </node>
-            <node concept="liA8E" id="5Ux4Lu39grE" role="2OqNvi">
-              <ref role="37wK5l" to="ftn0:~EmbeddingStore.addAll(java.util.List,java.util.List)" resolve="addAll" />
-              <node concept="37vLTw" id="5Ux4Lu39hEg" role="37wK5m">
-                <ref role="3cqZAo" node="5Ux4Lu39k4V" resolve="embeddings" />
+          <node concept="3clFbS" id="Ygl26Kzgdv" role="1zxBo7">
+            <node concept="3cpWs8" id="5Ux4Lu39k4U" role="3cqZAp">
+              <node concept="3cpWsn" id="5Ux4Lu39k4V" role="3cpWs9">
+                <property role="TrG5h" value="embeddings" />
+                <node concept="3uibUv" id="5Ux4Lu39jVE" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="3uibUv" id="5Ux4Lu39jVH" role="11_B2D">
+                    <ref role="3uigEE" to="mhe9:~Embedding" resolve="Embedding" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="5Ux4Lu39k4W" role="33vP2m">
+                  <node concept="2OqwBi" id="5Ux4Lu39k4X" role="2Oq$k0">
+                    <node concept="37vLTw" id="5Ux4Lu39k4Y" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5Ux4Lu38Exi" resolve="embeddingModel" />
+                    </node>
+                    <node concept="liA8E" id="5Ux4Lu39k4Z" role="2OqNvi">
+                      <ref role="37wK5l" to="ysyc:~EmbeddingModel.embedAll(java.util.List)" resolve="embedAll" />
+                      <node concept="37vLTw" id="5Ux4Lu39k50" role="37wK5m">
+                        <ref role="3cqZAo" node="2ZpX2r3Eh2U" resolve="allTextSegments" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5Ux4Lu39k51" role="2OqNvi">
+                    <ref role="37wK5l" to="9dus:~Response.content()" resolve="content" />
+                  </node>
+                </node>
               </node>
-              <node concept="37vLTw" id="1Rt_rvfWftR" role="37wK5m">
-                <ref role="3cqZAo" node="2ZpX2r3Eh2U" resolve="allTextSegments" />
+            </node>
+            <node concept="3clFbF" id="5Ux4Lu39eHP" role="3cqZAp">
+              <node concept="2OqwBi" id="5Ux4Lu39fhs" role="3clFbG">
+                <node concept="37vLTw" id="5Ux4Lu39eHN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5Ux4Lu39a41" resolve="embeddingStore" />
+                </node>
+                <node concept="liA8E" id="5Ux4Lu39grE" role="2OqNvi">
+                  <ref role="37wK5l" to="ftn0:~EmbeddingStore.addAll(java.util.List,java.util.List)" resolve="addAll" />
+                  <node concept="37vLTw" id="5Ux4Lu39hEg" role="37wK5m">
+                    <ref role="3cqZAo" node="5Ux4Lu39k4V" resolve="embeddings" />
+                  </node>
+                  <node concept="37vLTw" id="1Rt_rvfWftR" role="37wK5m">
+                    <ref role="3cqZAo" node="2ZpX2r3Eh2U" resolve="allTextSegments" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
