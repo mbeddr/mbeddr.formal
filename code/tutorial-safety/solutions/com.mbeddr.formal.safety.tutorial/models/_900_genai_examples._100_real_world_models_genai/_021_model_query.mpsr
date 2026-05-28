@@ -1,0 +1,2500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:2374fc39-79f6-4405-9eae-95f406e5d21a(_900_genai_examples._100_real_world_models_genai)" content="root">
+  <persistence version="9" />
+  <imports />
+  <registry>
+    <language id="e49ae71b-b7a6-4321-84b6-ac9a82e13853" name="com.mpsbasics.genai">
+      <concept id="5622207918148189858" name="com.mpsbasics.genai.structure.OpenAIChatModelProvider" flags="ng" index="oAArM" />
+      <concept id="5622207918148187365" name="com.mpsbasics.genai.structure.AbstractChatModelProviderBase" flags="ng" index="oAAMP">
+        <property id="6271280577903431453" name="llmModelName" index="FHpXC" />
+      </concept>
+      <concept id="6271280577903103889" name="com.mpsbasics.genai.structure.ChatInterraction" flags="ng" index="FG9Z$">
+        <child id="6271280577903103926" name="answer" index="FG9Z3" />
+        <child id="6271280577903103890" name="prompt" index="FG9ZB" />
+      </concept>
+      <concept id="6818752302521334723" name="com.mpsbasics.genai.structure.KnowledgeBaseQuery" flags="ng" index="3ty2zk">
+        <child id="6818752302521335253" name="knowledgeBases" index="3ty2V2" />
+      </concept>
+      <concept id="6818752302521335254" name="com.mpsbasics.genai.structure.KnowledgeBaseRef" flags="ng" index="3ty2V1">
+        <reference id="6818752302521335255" name="knowledgeBase" index="3ty2V0" />
+      </concept>
+      <concept id="6818752302521334838" name="com.mpsbasics.genai.structure.AbstractChat" flags="ng" index="3ty2Wx">
+        <child id="635638839449333253" name="chatInterraction" index="m0T0H" />
+        <child id="5622207918148187506" name="chatModelProvider" index="oAAOy" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="1094247804558289146" name="jetbrains.mps.lang.text.structure.BulletLine" flags="ng" index="2DRihI" />
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="3ty2zk" id="u2p4MKAJ_4">
+    <property role="TrG5h" value="_021_model_query" />
+    <property role="3GE5qa" value="_020_model_query" />
+    <node concept="3ty2V1" id="u2p4MKAJ_5" role="3ty2V2">
+      <ref role="3ty2V0" node="u2p4MKAJ$W" resolve="_020_knowledge_base_uber" />
+    </node>
+    <node concept="FG9Z$" id="u2p4MKAJ_6" role="m0T0H">
+      <node concept="1Pa9Pv" id="u2p4MKAJ_b" role="FG9ZB">
+        <node concept="1PaTwC" id="u2p4MKAJ_f" role="1PaQFQ">
+          <node concept="3oM_SD" id="u2p4MKAJ_j" role="1PaTwD">
+            <property role="3oM_SC" value="What" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS8HPH" role="1PaTwD">
+            <property role="3oM_SC" value="goals" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS8HPJ" role="1PaTwD">
+            <property role="3oM_SC" value="relate" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS8HPK" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS8HPL" role="1PaTwD">
+            <property role="3oM_SC" value="ISO" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS8HPM" role="1PaTwD">
+            <property role="3oM_SC" value="26262?" />
+          </node>
+        </node>
+      </node>
+      <node concept="1Pa9Pv" id="5Hw1CmS9WS4" role="FG9Z3">
+        <node concept="1PaTwC" id="5Hw1CmS9WS5" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9WS6" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0O" role="1PaTwD">
+            <property role="3oM_SC" value="following" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0P" role="1PaTwD">
+            <property role="3oM_SC" value="goals" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0Q" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0R" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0S" role="1PaTwD">
+            <property role="3oM_SC" value="provided" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0T" role="1PaTwD">
+            <property role="3oM_SC" value="set" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0U" role="1PaTwD">
+            <property role="3oM_SC" value="most" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0V" role="1PaTwD">
+            <property role="3oM_SC" value="directly" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0W" role="1PaTwD">
+            <property role="3oM_SC" value="align" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0X" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0Y" role="1PaTwD">
+            <property role="3oM_SC" value="ISO" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0Z" role="1PaTwD">
+            <property role="3oM_SC" value="26262" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X10" role="1PaTwD">
+            <property role="3oM_SC" value="(functional" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X11" role="1PaTwD">
+            <property role="3oM_SC" value="safety" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X12" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X13" role="1PaTwD">
+            <property role="3oM_SC" value="road" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X14" role="1PaTwD">
+            <property role="3oM_SC" value="vehicles):" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9WS7" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9WS8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X5i" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X5k" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5l" role="1PaTwD">
+            <property role="3oM_SC" value="G1.1" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5m" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5n" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5o" role="1PaTwD">
+            <property role="3oM_SC" value="Self-Driving" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5p" role="1PaTwD">
+            <property role="3oM_SC" value="Enterprise" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5q" role="1PaTwD">
+            <property role="3oM_SC" value="uses" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5r" role="1PaTwD">
+            <property role="3oM_SC" value="appropriate" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5s" role="1PaTwD">
+            <property role="3oM_SC" value="development" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5t" role="1PaTwD">
+            <property role="3oM_SC" value="processes" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5u" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5v" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5w" role="1PaTwD">
+            <property role="3oM_SC" value="complex" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5x" role="1PaTwD">
+            <property role="3oM_SC" value="safety" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5y" role="1PaTwD">
+            <property role="3oM_SC" value="critical" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5z" role="1PaTwD">
+            <property role="3oM_SC" value="system" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xb9" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xbb" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbc" role="1PaTwD">
+            <property role="3oM_SC" value="G1.1.1.1" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbd" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbe" role="1PaTwD">
+            <property role="3oM_SC" value="Systems" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbf" role="1PaTwD">
+            <property role="3oM_SC" value="engineering" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbg" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbh" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbi" role="1PaTwD">
+            <property role="3oM_SC" value="established," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbj" role="1PaTwD">
+            <property role="3oM_SC" value="standardized" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbk" role="1PaTwD">
+            <property role="3oM_SC" value="across" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbl" role="1PaTwD">
+            <property role="3oM_SC" value="engineering," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbm" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbn" role="1PaTwD">
+            <property role="3oM_SC" value="there" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbo" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbp" role="1PaTwD">
+            <property role="3oM_SC" value="evidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbq" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbr" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbs" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbt" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbu" role="1PaTwD">
+            <property role="3oM_SC" value="being" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbv" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xbw" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xby" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xbz" role="1PaTwD">
+            <property role="3oM_SC" value="G1.1.1.2" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xb$" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xb_" role="1PaTwD">
+            <property role="3oM_SC" value="Hardware" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbA" role="1PaTwD">
+            <property role="3oM_SC" value="development" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbB" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbC" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbD" role="1PaTwD">
+            <property role="3oM_SC" value="established," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbE" role="1PaTwD">
+            <property role="3oM_SC" value="standardized" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbF" role="1PaTwD">
+            <property role="3oM_SC" value="across" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbG" role="1PaTwD">
+            <property role="3oM_SC" value="engineering," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbH" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbI" role="1PaTwD">
+            <property role="3oM_SC" value="there" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbJ" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbK" role="1PaTwD">
+            <property role="3oM_SC" value="evidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbL" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbM" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbN" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbO" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbP" role="1PaTwD">
+            <property role="3oM_SC" value="being" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbQ" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X8b" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X8d" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8e" role="1PaTwD">
+            <property role="3oM_SC" value="Software" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8f" role="1PaTwD">
+            <property role="3oM_SC" value="development" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8g" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8h" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8i" role="1PaTwD">
+            <property role="3oM_SC" value="established," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8j" role="1PaTwD">
+            <property role="3oM_SC" value="standardized" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8k" role="1PaTwD">
+            <property role="3oM_SC" value="across" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8l" role="1PaTwD">
+            <property role="3oM_SC" value="engineering," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8m" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8n" role="1PaTwD">
+            <property role="3oM_SC" value="there" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8o" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8p" role="1PaTwD">
+            <property role="3oM_SC" value="evidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8q" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8r" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8s" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8t" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8u" role="1PaTwD">
+            <property role="3oM_SC" value="being" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8v" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xa_" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XaB" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaC" role="1PaTwD">
+            <property role="3oM_SC" value="G1.1.1.3" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaD" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaE" role="1PaTwD">
+            <property role="3oM_SC" value="Manufacturing" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaF" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaG" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaH" role="1PaTwD">
+            <property role="3oM_SC" value="established," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaI" role="1PaTwD">
+            <property role="3oM_SC" value="standardized," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaJ" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaK" role="1PaTwD">
+            <property role="3oM_SC" value="there" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaL" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaM" role="1PaTwD">
+            <property role="3oM_SC" value="evidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaN" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaO" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaP" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaQ" role="1PaTwD">
+            <property role="3oM_SC" value="being" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaR" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X7c" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X7e" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7f" role="1PaTwD">
+            <property role="3oM_SC" value="G1.1.1.4" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7g" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7h" role="1PaTwD">
+            <property role="3oM_SC" value="Maintenance" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7i" role="1PaTwD">
+            <property role="3oM_SC" value="/" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7j" role="1PaTwD">
+            <property role="3oM_SC" value="Service" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7k" role="1PaTwD">
+            <property role="3oM_SC" value="processes" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7l" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7m" role="1PaTwD">
+            <property role="3oM_SC" value="established," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7n" role="1PaTwD">
+            <property role="3oM_SC" value="standardized," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7o" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7p" role="1PaTwD">
+            <property role="3oM_SC" value="there" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7q" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7r" role="1PaTwD">
+            <property role="3oM_SC" value="evidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7s" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7t" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7u" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7v" role="1PaTwD">
+            <property role="3oM_SC" value="being" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7w" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X7x" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X7z" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7$" role="1PaTwD">
+            <property role="3oM_SC" value="G1.1.1.6" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7_" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7A" role="1PaTwD">
+            <property role="3oM_SC" value="Quality" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7B" role="1PaTwD">
+            <property role="3oM_SC" value="management" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7C" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7D" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7E" role="1PaTwD">
+            <property role="3oM_SC" value="established," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7F" role="1PaTwD">
+            <property role="3oM_SC" value="effective," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7G" role="1PaTwD">
+            <property role="3oM_SC" value="standardized" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7H" role="1PaTwD">
+            <property role="3oM_SC" value="across" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7I" role="1PaTwD">
+            <property role="3oM_SC" value="engineering," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7J" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7K" role="1PaTwD">
+            <property role="3oM_SC" value="there" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7L" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7M" role="1PaTwD">
+            <property role="3oM_SC" value="evidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7N" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7O" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7P" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7Q" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7R" role="1PaTwD">
+            <property role="3oM_SC" value="being" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7S" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X4Y" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X50" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X51" role="1PaTwD">
+            <property role="3oM_SC" value="G1.1.1.7" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X52" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X53" role="1PaTwD">
+            <property role="3oM_SC" value="Supply" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X54" role="1PaTwD">
+            <property role="3oM_SC" value="chain" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X55" role="1PaTwD">
+            <property role="3oM_SC" value="processes" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X56" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X57" role="1PaTwD">
+            <property role="3oM_SC" value="established," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X58" role="1PaTwD">
+            <property role="3oM_SC" value="standardized," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X59" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5a" role="1PaTwD">
+            <property role="3oM_SC" value="there" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5b" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5c" role="1PaTwD">
+            <property role="3oM_SC" value="evidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5d" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5e" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5f" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5g" role="1PaTwD">
+            <property role="3oM_SC" value="being" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5h" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xdx" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xdz" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xd$" role="1PaTwD">
+            <property role="3oM_SC" value="G1.1.1.9" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xd_" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdA" role="1PaTwD">
+            <property role="3oM_SC" value="System" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdB" role="1PaTwD">
+            <property role="3oM_SC" value="Safety" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdC" role="1PaTwD">
+            <property role="3oM_SC" value="engineering" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdD" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdE" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdF" role="1PaTwD">
+            <property role="3oM_SC" value="established," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdG" role="1PaTwD">
+            <property role="3oM_SC" value="standardized" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdH" role="1PaTwD">
+            <property role="3oM_SC" value="across" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdI" role="1PaTwD">
+            <property role="3oM_SC" value="engineering," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdJ" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdK" role="1PaTwD">
+            <property role="3oM_SC" value="there" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdL" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdM" role="1PaTwD">
+            <property role="3oM_SC" value="evidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdN" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdO" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdP" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdQ" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdR" role="1PaTwD">
+            <property role="3oM_SC" value="being" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdS" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9WSr" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9WSs" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X4t" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X4v" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4w" role="1PaTwD">
+            <property role="3oM_SC" value="G1.2.1.3" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4x" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4y" role="1PaTwD">
+            <property role="3oM_SC" value="Product" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4z" role="1PaTwD">
+            <property role="3oM_SC" value="requirements" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4$" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4_" role="1PaTwD">
+            <property role="3oM_SC" value="appropriately" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4A" role="1PaTwD">
+            <property role="3oM_SC" value="defined," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4B" role="1PaTwD">
+            <property role="3oM_SC" value="traceable" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4C" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4D" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4E" role="1PaTwD">
+            <property role="3oM_SC" value="operational" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4F" role="1PaTwD">
+            <property role="3oM_SC" value="concept" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xaa" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xac" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xad" role="1PaTwD">
+            <property role="3oM_SC" value="G1.2.1.4" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xae" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xaf" role="1PaTwD">
+            <property role="3oM_SC" value="System" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xag" role="1PaTwD">
+            <property role="3oM_SC" value="requirements" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xah" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xai" role="1PaTwD">
+            <property role="3oM_SC" value="appropriately" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xaj" role="1PaTwD">
+            <property role="3oM_SC" value="developed" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xak" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xal" role="1PaTwD">
+            <property role="3oM_SC" value="product" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xam" role="1PaTwD">
+            <property role="3oM_SC" value="requirements" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X3G" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X3I" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3J" role="1PaTwD">
+            <property role="3oM_SC" value="G1.2.1.6" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3K" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3L" role="1PaTwD">
+            <property role="3oM_SC" value="Software" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3M" role="1PaTwD">
+            <property role="3oM_SC" value="requirements" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3N" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3O" role="1PaTwD">
+            <property role="3oM_SC" value="appropriately" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3P" role="1PaTwD">
+            <property role="3oM_SC" value="developed" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3Q" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3R" role="1PaTwD">
+            <property role="3oM_SC" value="safety" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3S" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3T" role="1PaTwD">
+            <property role="3oM_SC" value="system" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3U" role="1PaTwD">
+            <property role="3oM_SC" value="requirements" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X9z" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X9_" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9A" role="1PaTwD">
+            <property role="3oM_SC" value="Hardware" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9B" role="1PaTwD">
+            <property role="3oM_SC" value="requirements" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9C" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9D" role="1PaTwD">
+            <property role="3oM_SC" value="appropriately" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9E" role="1PaTwD">
+            <property role="3oM_SC" value="developed" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9F" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9G" role="1PaTwD">
+            <property role="3oM_SC" value="system" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9H" role="1PaTwD">
+            <property role="3oM_SC" value="requirements" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xa0" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xa2" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xa3" role="1PaTwD">
+            <property role="3oM_SC" value="G1.2.1.7" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xa4" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xa5" role="1PaTwD">
+            <property role="3oM_SC" value="System" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xa6" role="1PaTwD">
+            <property role="3oM_SC" value="safety" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xa7" role="1PaTwD">
+            <property role="3oM_SC" value="requirements" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xa8" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xa9" role="1PaTwD">
+            <property role="3oM_SC" value="sufficient" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X6L" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X6N" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6O" role="1PaTwD">
+            <property role="3oM_SC" value="G1.2.1.8" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6P" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6Q" role="1PaTwD">
+            <property role="3oM_SC" value="Requirements" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6R" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6S" role="1PaTwD">
+            <property role="3oM_SC" value="manufacturing" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6T" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6U" role="1PaTwD">
+            <property role="3oM_SC" value="sufficient" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xdl" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xdn" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdo" role="1PaTwD">
+            <property role="3oM_SC" value="G1.2.1.9" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdp" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdq" role="1PaTwD">
+            <property role="3oM_SC" value="Requirements" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdr" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xds" role="1PaTwD">
+            <property role="3oM_SC" value="maintenance" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdt" role="1PaTwD">
+            <property role="3oM_SC" value="/" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdu" role="1PaTwD">
+            <property role="3oM_SC" value="service" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdv" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdw" role="1PaTwD">
+            <property role="3oM_SC" value="sufficient" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9WSF" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9WSG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X6r" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X6t" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6u" role="1PaTwD">
+            <property role="3oM_SC" value="G1.3" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6v" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6w" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6x" role="1PaTwD">
+            <property role="3oM_SC" value="Self-Driving" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6y" role="1PaTwD">
+            <property role="3oM_SC" value="Vehicle" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6z" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6$" role="1PaTwD">
+            <property role="3oM_SC" value="appropriately" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6_" role="1PaTwD">
+            <property role="3oM_SC" value="tested" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6A" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6B" role="1PaTwD">
+            <property role="3oM_SC" value="released" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6C" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6D" role="1PaTwD">
+            <property role="3oM_SC" value="self-driving" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6E" role="1PaTwD">
+            <property role="3oM_SC" value="operations" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6F" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6G" role="1PaTwD">
+            <property role="3oM_SC" value="accordance" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6H" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6I" role="1PaTwD">
+            <property role="3oM_SC" value="its" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6J" role="1PaTwD">
+            <property role="3oM_SC" value="operational" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6K" role="1PaTwD">
+            <property role="3oM_SC" value="concept" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9XcW" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XcY" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcZ" role="1PaTwD">
+            <property role="3oM_SC" value="G1.3.1.1" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xd0" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xd1" role="1PaTwD">
+            <property role="3oM_SC" value="Traceability" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xd2" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xd3" role="1PaTwD">
+            <property role="3oM_SC" value="testing" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xd4" role="1PaTwD">
+            <property role="3oM_SC" value="demonstrates" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xd5" role="1PaTwD">
+            <property role="3oM_SC" value="comprehensive" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xd6" role="1PaTwD">
+            <property role="3oM_SC" value="requirements" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xd7" role="1PaTwD">
+            <property role="3oM_SC" value="coverage" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X6d" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X6f" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6g" role="1PaTwD">
+            <property role="3oM_SC" value="G1.3.1.2" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6h" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6i" role="1PaTwD">
+            <property role="3oM_SC" value="Peer" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6j" role="1PaTwD">
+            <property role="3oM_SC" value="review" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6k" role="1PaTwD">
+            <property role="3oM_SC" value="minimizes" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6l" role="1PaTwD">
+            <property role="3oM_SC" value="human" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6m" role="1PaTwD">
+            <property role="3oM_SC" value="error" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6n" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6o" role="1PaTwD">
+            <property role="3oM_SC" value="work" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6p" role="1PaTwD">
+            <property role="3oM_SC" value="product" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6q" role="1PaTwD">
+            <property role="3oM_SC" value="development" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xcw" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xcy" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcz" role="1PaTwD">
+            <property role="3oM_SC" value="G1.3.1.3" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xc$" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xc_" role="1PaTwD">
+            <property role="3oM_SC" value="All" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcA" role="1PaTwD">
+            <property role="3oM_SC" value="anomalies" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcB" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcC" role="1PaTwD">
+            <property role="3oM_SC" value="analyzed" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcD" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcE" role="1PaTwD">
+            <property role="3oM_SC" value="ensure" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcF" role="1PaTwD">
+            <property role="3oM_SC" value="requirements" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcG" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcH" role="1PaTwD">
+            <property role="3oM_SC" value="comprehensive" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9XcI" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XcK" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcL" role="1PaTwD">
+            <property role="3oM_SC" value="Sub-system" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcM" role="1PaTwD">
+            <property role="3oM_SC" value="level" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcN" role="1PaTwD">
+            <property role="3oM_SC" value="tests" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcO" role="1PaTwD">
+            <property role="3oM_SC" value="provide" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcP" role="1PaTwD">
+            <property role="3oM_SC" value="appropriate" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcQ" role="1PaTwD">
+            <property role="3oM_SC" value="confidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcR" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcS" role="1PaTwD">
+            <property role="3oM_SC" value="proficiency" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcT" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcU" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XcV" role="1PaTwD">
+            <property role="3oM_SC" value="subsystem" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X97" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X99" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9a" role="1PaTwD">
+            <property role="3oM_SC" value="G1.3.1.4.1.3" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9b" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9c" role="1PaTwD">
+            <property role="3oM_SC" value="Unit" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9d" role="1PaTwD">
+            <property role="3oM_SC" value="level" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9e" role="1PaTwD">
+            <property role="3oM_SC" value="tests" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9f" role="1PaTwD">
+            <property role="3oM_SC" value="provide" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9g" role="1PaTwD">
+            <property role="3oM_SC" value="appropriate" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9h" role="1PaTwD">
+            <property role="3oM_SC" value="confidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9i" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9j" role="1PaTwD">
+            <property role="3oM_SC" value="correctness" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9k" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9l" role="1PaTwD">
+            <property role="3oM_SC" value="software" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xcm" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xco" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcp" role="1PaTwD">
+            <property role="3oM_SC" value="G1.3.1.4.1.4" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcq" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcr" role="1PaTwD">
+            <property role="3oM_SC" value="Hardware" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcs" role="1PaTwD">
+            <property role="3oM_SC" value="components" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xct" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcu" role="1PaTwD">
+            <property role="3oM_SC" value="appropriately" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcv" role="1PaTwD">
+            <property role="3oM_SC" value="tested" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X8w" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X8y" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8z" role="1PaTwD">
+            <property role="3oM_SC" value="G1.3.1.4.1.6" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8$" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8_" role="1PaTwD">
+            <property role="3oM_SC" value="Vehicle" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8A" role="1PaTwD">
+            <property role="3oM_SC" value="Level" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8B" role="1PaTwD">
+            <property role="3oM_SC" value="Testing" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8C" role="1PaTwD">
+            <property role="3oM_SC" value="provides" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8D" role="1PaTwD">
+            <property role="3oM_SC" value="appropriate" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8E" role="1PaTwD">
+            <property role="3oM_SC" value="confidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8F" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8G" role="1PaTwD">
+            <property role="3oM_SC" value="proficiency" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8H" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8I" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8J" role="1PaTwD">
+            <property role="3oM_SC" value="fully" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8K" role="1PaTwD">
+            <property role="3oM_SC" value="integrated" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8L" role="1PaTwD">
+            <property role="3oM_SC" value="Self-Driving" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8M" role="1PaTwD">
+            <property role="3oM_SC" value="Vehicle" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X8N" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X8P" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8Q" role="1PaTwD">
+            <property role="3oM_SC" value="G1.3.1.4.1.8" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8R" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8S" role="1PaTwD">
+            <property role="3oM_SC" value="Manufacturing" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8T" role="1PaTwD">
+            <property role="3oM_SC" value="testing" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8U" role="1PaTwD">
+            <property role="3oM_SC" value="ensures" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8V" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8W" role="1PaTwD">
+            <property role="3oM_SC" value="manufactured" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8X" role="1PaTwD">
+            <property role="3oM_SC" value="item" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8Y" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8Z" role="1PaTwD">
+            <property role="3oM_SC" value="fit" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X90" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X91" role="1PaTwD">
+            <property role="3oM_SC" value="purpose" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X92" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X93" role="1PaTwD">
+            <property role="3oM_SC" value="meets" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X94" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X95" role="1PaTwD">
+            <property role="3oM_SC" value="design" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X96" role="1PaTwD">
+            <property role="3oM_SC" value="requirements" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xed" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xef" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xeg" role="1PaTwD">
+            <property role="3oM_SC" value="G1.3.1.6" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xeh" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xei" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xej" role="1PaTwD">
+            <property role="3oM_SC" value="frequency" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xek" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xel" role="1PaTwD">
+            <property role="3oM_SC" value="potentially" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xem" role="1PaTwD">
+            <property role="3oM_SC" value="harmful" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xen" role="1PaTwD">
+            <property role="3oM_SC" value="events" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xeo" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xep" role="1PaTwD">
+            <property role="3oM_SC" value="below" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xeq" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xer" role="1PaTwD">
+            <property role="3oM_SC" value="target" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xes" role="1PaTwD">
+            <property role="3oM_SC" value="metric(s)" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9WT1" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9WT2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X5P" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X5R" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5S" role="1PaTwD">
+            <property role="3oM_SC" value="G2.1.1" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5T" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5U" role="1PaTwD">
+            <property role="3oM_SC" value="Hazards," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5V" role="1PaTwD">
+            <property role="3oM_SC" value="faults" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5W" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5X" role="1PaTwD">
+            <property role="3oM_SC" value="failures" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5Y" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5Z" role="1PaTwD">
+            <property role="3oM_SC" value="appropriately" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X60" role="1PaTwD">
+            <property role="3oM_SC" value="identified" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X61" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X63" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X64" role="1PaTwD">
+            <property role="3oM_SC" value="G2.1.1.1" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X65" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X66" role="1PaTwD">
+            <property role="3oM_SC" value="Identified" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X67" role="1PaTwD">
+            <property role="3oM_SC" value="Faults" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X68" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X69" role="1PaTwD">
+            <property role="3oM_SC" value="Hazards" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6a" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6b" role="1PaTwD">
+            <property role="3oM_SC" value="systematically" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6c" role="1PaTwD">
+            <property role="3oM_SC" value="tracked" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xc7" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xc9" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xca" role="1PaTwD">
+            <property role="3oM_SC" value="G2.1.1.2" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcb" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcc" role="1PaTwD">
+            <property role="3oM_SC" value="Fault" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcd" role="1PaTwD">
+            <property role="3oM_SC" value="models" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xce" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcf" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcg" role="1PaTwD">
+            <property role="3oM_SC" value="evaluate" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xch" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xci" role="1PaTwD">
+            <property role="3oM_SC" value="Self-Driving" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcj" role="1PaTwD">
+            <property role="3oM_SC" value="Enterprise" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xck" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xcl" role="1PaTwD">
+            <property role="3oM_SC" value="comprehensive" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X5$" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X5A" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5B" role="1PaTwD">
+            <property role="3oM_SC" value="G2.1.1.3" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5C" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5D" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5E" role="1PaTwD">
+            <property role="3oM_SC" value="Self-Driving" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5F" role="1PaTwD">
+            <property role="3oM_SC" value="Enterprise" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5G" role="1PaTwD">
+            <property role="3oM_SC" value="fault" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5H" role="1PaTwD">
+            <property role="3oM_SC" value="analysis" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5I" role="1PaTwD">
+            <property role="3oM_SC" value="covers" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5J" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5K" role="1PaTwD">
+            <property role="3oM_SC" value="known" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5L" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5M" role="1PaTwD">
+            <property role="3oM_SC" value="reasonably" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5N" role="1PaTwD">
+            <property role="3oM_SC" value="possible" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X5O" role="1PaTwD">
+            <property role="3oM_SC" value="failures" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9XaS" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XaU" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaV" role="1PaTwD">
+            <property role="3oM_SC" value="G2.1.1.4" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaW" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaX" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaY" role="1PaTwD">
+            <property role="3oM_SC" value="Self-Driving" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XaZ" role="1PaTwD">
+            <property role="3oM_SC" value="Vehicle" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xb0" role="1PaTwD">
+            <property role="3oM_SC" value="fault" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xb1" role="1PaTwD">
+            <property role="3oM_SC" value="analysis" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xb2" role="1PaTwD">
+            <property role="3oM_SC" value="covers" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xb3" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xb4" role="1PaTwD">
+            <property role="3oM_SC" value="known" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xb5" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xb6" role="1PaTwD">
+            <property role="3oM_SC" value="reasonably" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xb7" role="1PaTwD">
+            <property role="3oM_SC" value="possible" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xb8" role="1PaTwD">
+            <property role="3oM_SC" value="failures" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9XbR" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XbT" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbU" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbV" role="1PaTwD">
+            <property role="3oM_SC" value="Self-Driving" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbW" role="1PaTwD">
+            <property role="3oM_SC" value="Vehicle" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbX" role="1PaTwD">
+            <property role="3oM_SC" value="subsystem" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbY" role="1PaTwD">
+            <property role="3oM_SC" value="fault" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XbZ" role="1PaTwD">
+            <property role="3oM_SC" value="analysis" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xc0" role="1PaTwD">
+            <property role="3oM_SC" value="covers" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xc1" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xc2" role="1PaTwD">
+            <property role="3oM_SC" value="known" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xc3" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xc4" role="1PaTwD">
+            <property role="3oM_SC" value="reasonably" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xc5" role="1PaTwD">
+            <property role="3oM_SC" value="possible" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xc6" role="1PaTwD">
+            <property role="3oM_SC" value="failures" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X7T" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X7V" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7W" role="1PaTwD">
+            <property role="3oM_SC" value="G2.1.1.6" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7X" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7Y" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7Z" role="1PaTwD">
+            <property role="3oM_SC" value="Self-Driving" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X80" role="1PaTwD">
+            <property role="3oM_SC" value="Vehicle" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X81" role="1PaTwD">
+            <property role="3oM_SC" value="component" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X82" role="1PaTwD">
+            <property role="3oM_SC" value="fault" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X83" role="1PaTwD">
+            <property role="3oM_SC" value="analysis" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X84" role="1PaTwD">
+            <property role="3oM_SC" value="covers" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X85" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X86" role="1PaTwD">
+            <property role="3oM_SC" value="known" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X87" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X88" role="1PaTwD">
+            <property role="3oM_SC" value="reasonably" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X89" role="1PaTwD">
+            <property role="3oM_SC" value="possible" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X8a" role="1PaTwD">
+            <property role="3oM_SC" value="failures" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xan" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xap" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xaq" role="1PaTwD">
+            <property role="3oM_SC" value="G2.1.2" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xar" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xas" role="1PaTwD">
+            <property role="3oM_SC" value="Thresholds" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xat" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xau" role="1PaTwD">
+            <property role="3oM_SC" value="tolerable" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xav" role="1PaTwD">
+            <property role="3oM_SC" value="risk" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xaw" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xax" role="1PaTwD">
+            <property role="3oM_SC" value="failure" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xay" role="1PaTwD">
+            <property role="3oM_SC" value="rate" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xaz" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xa$" role="1PaTwD">
+            <property role="3oM_SC" value="appropriate" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9XdT" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XdV" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdW" role="1PaTwD">
+            <property role="3oM_SC" value="G2.1.3" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdX" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdY" role="1PaTwD">
+            <property role="3oM_SC" value="Safety" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XdZ" role="1PaTwD">
+            <property role="3oM_SC" value="relevant" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xe0" role="1PaTwD">
+            <property role="3oM_SC" value="hazards," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xe1" role="1PaTwD">
+            <property role="3oM_SC" value="faults" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xe2" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xe3" role="1PaTwD">
+            <property role="3oM_SC" value="failures" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xe4" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xe5" role="1PaTwD">
+            <property role="3oM_SC" value="mitigated" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xe6" role="1PaTwD">
+            <property role="3oM_SC" value="or" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xe7" role="1PaTwD">
+            <property role="3oM_SC" value="managed" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xe8" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xe9" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xea" role="1PaTwD">
+            <property role="3oM_SC" value="acceptable" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xeb" role="1PaTwD">
+            <property role="3oM_SC" value="risk" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xec" role="1PaTwD">
+            <property role="3oM_SC" value="level" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9WTl" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9WTm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X4G" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X4I" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4J" role="1PaTwD">
+            <property role="3oM_SC" value="G3.1" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4K" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4L" role="1PaTwD">
+            <property role="3oM_SC" value="An" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4M" role="1PaTwD">
+            <property role="3oM_SC" value="internal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4N" role="1PaTwD">
+            <property role="3oM_SC" value="safety" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4O" role="1PaTwD">
+            <property role="3oM_SC" value="concern" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4P" role="1PaTwD">
+            <property role="3oM_SC" value="reporting" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4Q" role="1PaTwD">
+            <property role="3oM_SC" value="system" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4R" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4S" role="1PaTwD">
+            <property role="3oM_SC" value="resolution" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4T" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4U" role="1PaTwD">
+            <property role="3oM_SC" value="exists" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4V" role="1PaTwD">
+            <property role="3oM_SC" value="supporting" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4W" role="1PaTwD">
+            <property role="3oM_SC" value="anomaly" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4X" role="1PaTwD">
+            <property role="3oM_SC" value="identification" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X6V" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X6X" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6Y" role="1PaTwD">
+            <property role="3oM_SC" value="G3.4.1" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X6Z" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X70" role="1PaTwD">
+            <property role="3oM_SC" value="Appropriate" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X71" role="1PaTwD">
+            <property role="3oM_SC" value="resolution" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X72" role="1PaTwD">
+            <property role="3oM_SC" value="processes" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X73" role="1PaTwD">
+            <property role="3oM_SC" value="identify" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X74" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X75" role="1PaTwD">
+            <property role="3oM_SC" value="appropriately" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X76" role="1PaTwD">
+            <property role="3oM_SC" value="resolve" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X77" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X78" role="1PaTwD">
+            <property role="3oM_SC" value="observed" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X79" role="1PaTwD">
+            <property role="3oM_SC" value="/" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7a" role="1PaTwD">
+            <property role="3oM_SC" value="reported" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X7b" role="1PaTwD">
+            <property role="3oM_SC" value="anomalies" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X3V" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X3X" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3Y" role="1PaTwD">
+            <property role="3oM_SC" value="G3.4.2" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X3Z" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X40" role="1PaTwD">
+            <property role="3oM_SC" value="Anomaly" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X41" role="1PaTwD">
+            <property role="3oM_SC" value="health" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X42" role="1PaTwD">
+            <property role="3oM_SC" value="status" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X43" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X44" role="1PaTwD">
+            <property role="3oM_SC" value="appropriately" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X45" role="1PaTwD">
+            <property role="3oM_SC" value="reviewed" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X46" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X47" role="1PaTwD">
+            <property role="3oM_SC" value="relevant" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X48" role="1PaTwD">
+            <property role="3oM_SC" value="internal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X49" role="1PaTwD">
+            <property role="3oM_SC" value="stakeholders" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X4a" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X4c" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4d" role="1PaTwD">
+            <property role="3oM_SC" value="G3.3.1" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4e" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4f" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4g" role="1PaTwD">
+            <property role="3oM_SC" value="Company" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4h" role="1PaTwD">
+            <property role="3oM_SC" value="employs" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4i" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4j" role="1PaTwD">
+            <property role="3oM_SC" value="risk" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4k" role="1PaTwD">
+            <property role="3oM_SC" value="management" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4l" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4m" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4n" role="1PaTwD">
+            <property role="3oM_SC" value="evidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4o" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4p" role="1PaTwD">
+            <property role="3oM_SC" value="process" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4q" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4r" role="1PaTwD">
+            <property role="3oM_SC" value="being" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X4s" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xet" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xev" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xew" role="1PaTwD">
+            <property role="3oM_SC" value="G3.2" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xex" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xey" role="1PaTwD">
+            <property role="3oM_SC" value="Safety" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xez" role="1PaTwD">
+            <property role="3oM_SC" value="performance" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xe$" role="1PaTwD">
+            <property role="3oM_SC" value="indicators" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xe_" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeA" role="1PaTwD">
+            <property role="3oM_SC" value="measured," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeB" role="1PaTwD">
+            <property role="3oM_SC" value="analyzed," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeC" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeD" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeE" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeF" role="1PaTwD">
+            <property role="3oM_SC" value="monitor" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeG" role="1PaTwD">
+            <property role="3oM_SC" value="safety" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9WTx" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9WTy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X9m" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X9o" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9p" role="1PaTwD">
+            <property role="3oM_SC" value="G5.1.1" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9q" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9r" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9s" role="1PaTwD">
+            <property role="3oM_SC" value="organizational" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9t" role="1PaTwD">
+            <property role="3oM_SC" value="environment" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9u" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9v" role="1PaTwD">
+            <property role="3oM_SC" value="appropriate" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9w" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9x" role="1PaTwD">
+            <property role="3oM_SC" value="safety-critical" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9y" role="1PaTwD">
+            <property role="3oM_SC" value="systems" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9X9I" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9X9K" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9L" role="1PaTwD">
+            <property role="3oM_SC" value="G5.1.3" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9M" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9N" role="1PaTwD">
+            <property role="3oM_SC" value="Appropriate," />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9O" role="1PaTwD">
+            <property role="3oM_SC" value="verifiable" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9P" role="1PaTwD">
+            <property role="3oM_SC" value="evidence" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9Q" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9R" role="1PaTwD">
+            <property role="3oM_SC" value="safety" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9S" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9T" role="1PaTwD">
+            <property role="3oM_SC" value="performance" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9U" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9V" role="1PaTwD">
+            <property role="3oM_SC" value="provided" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9W" role="1PaTwD">
+            <property role="3oM_SC" value="outside" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9X" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9Y" role="1PaTwD">
+            <property role="3oM_SC" value="Self-Driving" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X9Z" role="1PaTwD">
+            <property role="3oM_SC" value="Enterprise" />
+          </node>
+        </node>
+        <node concept="2DRihI" id="5Hw1CmS9Xd8" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xda" role="1PaTwD">
+            <property role="3oM_SC" value="Goal" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdb" role="1PaTwD">
+            <property role="3oM_SC" value="G5.1.4" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdc" role="1PaTwD">
+            <property role="3oM_SC" value="—" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdd" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xde" role="1PaTwD">
+            <property role="3oM_SC" value="Self-Driving" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdf" role="1PaTwD">
+            <property role="3oM_SC" value="Enterprise" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdg" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdh" role="1PaTwD">
+            <property role="3oM_SC" value="independently" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdi" role="1PaTwD">
+            <property role="3oM_SC" value="reviewed" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdj" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9Xdk" role="1PaTwD">
+            <property role="3oM_SC" value="audited" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="FG9Z$" id="5Hw1CmS9WTD" role="m0T0H">
+      <node concept="1Pa9Pv" id="5Hw1CmS9WTE" role="FG9ZB">
+        <node concept="1PaTwC" id="5Hw1CmS9WTF" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9WTG" role="1PaTwD">
+            <property role="3oM_SC" value="For" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9WTH" role="1PaTwD">
+            <property role="3oM_SC" value="each" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9X0q" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeH" role="1PaTwD">
+            <property role="3oM_SC" value="these" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeI" role="1PaTwD">
+            <property role="3oM_SC" value="goals" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeJ" role="1PaTwD">
+            <property role="3oM_SC" value="please" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeK" role="1PaTwD">
+            <property role="3oM_SC" value="shortly" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeL" role="1PaTwD">
+            <property role="3oM_SC" value="explain" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeM" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeN" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeO" role="1PaTwD">
+            <property role="3oM_SC" value="parts" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeP" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeQ" role="1PaTwD">
+            <property role="3oM_SC" value="ISO26262" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeR" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="5Hw1CmS9XeS" role="1PaTwD">
+            <property role="3oM_SC" value="related." />
+          </node>
+        </node>
+      </node>
+      <node concept="1Pa9Pv" id="5Hw1CmS9XeT" role="FG9Z3">
+        <node concept="1PaTwC" id="5Hw1CmS9XeU" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XeV" role="1PaTwD">
+            <property role="3oM_SC" value="Below is a concise mapping of each goal to the most relevant parts of ISO 26262, with a short rationale." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XeW" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XeX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XeY" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XeZ" role="1PaTwD">
+            <property role="3oM_SC" value="- G2.1.1.6 — ISO 26262-9 (safety analyses at component level), and -5/-6 (HW/SW safety analyses). Component FMEA/FTA/FMEdA and dependent failure analysis." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xf0" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xf1" role="1PaTwD">
+            <property role="3oM_SC" value="- G2.1.1.4 — ISO 26262-4 (system-level safety analysis) and -9. Vehicle-level fault analysis and allocation of safety mechanisms." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xf2" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xf3" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.4.1.1 — ISO 26262-3/-4/-5/-6. Define nominal requirements across system/HW/SW consistent with the functional/technical safety concepts." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xf4" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xf5" role="1PaTwD">
+            <property role="3oM_SC" value="- G2.1.3 — ISO 26262-3 (HARA, safety goals/ASILs), -4/-5/-6 (safety mechanisms and verification/validation), and -7 (operation). Risk reduction to acceptable level." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xf6" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xf7" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.1 — ISO 26262-2 (management of functional safety) and -8 (supporting processes: configuration/change mgmt, tool qualification, documentation)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xf8" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xf9" role="1PaTwD">
+            <property role="3oM_SC" value="- G2.1.1 — ISO 26262-3 (HARA) and -9 (systematic identification/analysis of faults/failures)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfa" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xfb" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3 — ISO 26262-4/-5/-6 (verification and validation), -7 (release for production/operation), and -2 (confirmation measures)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfc" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xfd" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2 — ISO 26262-3 (item definition incl operating scenarios/ODD), -4/-5/-6 (design implementing technical safety concept)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfe" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xff" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.1.10 — ISO 26262-3 (item definition/operating conditions) and -4 (allocate/derive TS requirements to satisfy ODD)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfg" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xfh" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.4 — ISO 26262-7 (operation, service, decommissioning; procedures to operate safely)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfi" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xfj" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.1.6 — ISO 26262-6 (software safety requirements, architecture, traceability) with inputs from -4 (technical safety requirements)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfk" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xfl" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.4.1.7 — ISO 26262-7 (maintenance/service) and -8 (problem resolution, change management)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfm" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xfn" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.1.7 — ISO 26262-4 (technical safety requirements: completeness, consistency, bidirectional traceability) with links to -3 (functional safety concept)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfo" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xfp" role="1PaTwD">
+            <property role="3oM_SC" value="- G5.1.1 — ISO 26262-2 (organization, roles, competence, safety culture) and -8 (supporting processes)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfq" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xfr" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.4.1.6 — ISO 26262-4 (system integration testing and vehicle-level validation)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfs" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xft" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.1.1.9 — ISO 26262-2 (system safety engineering within FS management, safety plan, confirmation measures) and -8 (safety case documentation)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfu" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xfv" role="1PaTwD">
+            <property role="3oM_SC" value="- G2.1.1.1 — ISO 26262-2 (planning, tracking, escalation) and -8 (configuration/change management, documentation) for systematic tracking of hazards/faults." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfw" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xfx" role="1PaTwD">
+            <property role="3oM_SC" value="- G4.1 — ISO 26262-3 (HARA considering hazardous events leading to/after a crash due to E/E malfunctions) and -4/-5/-6 (post-crash safe state). Passive crashworthiness itself is outside ISO 26262 scope." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xfy" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xfz" role="1PaTwD">
+            <property role="3oM_SC" value="- G2.1.2 — ISO 26262-3 (ASILs/target risk), -5 (hardware architectural metrics: PMHF, SPFM, LFM), and -4 (fault tolerant time intervals, safe states)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xf$" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xf_" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.1 — ISO 26262-4/-5/-6 (test-to-requirements traceability) and -8 (requirements/configuration management)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfA" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfB" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.4.2 — ISO 26262-3 (item definition: operating modes/conditions) and -7 (operational controls to stay within the intended domain)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfC" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfD" role="1PaTwD">
+            <property role="3oM_SC" value="- G0 — Entire ISO 26262 lifecycle (Parts 2–7, 9), with validation focus in -4 and organizational governance in -2." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfE" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfF" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.1.3 — ISO 26262-3 (item definition and functional safety concept) and -4 (derive technical safety requirements), with -8 (traceability)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfG" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfH" role="1PaTwD">
+            <property role="3oM_SC" value="- G2.1.1.2 — ISO 26262-9 (definition/use of fault models, dependent failure analysis)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfI" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfJ" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.2.1 — ISO 26262-4/-6 (system/SW safety requirements and V&amp;V when perception is safety-related). Non-malfunction performance aspects are largely SOTIF (ISO 21448)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfK" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfL" role="1PaTwD">
+            <property role="3oM_SC" value="- G2.1.1.3 — ISO 26262-9 (enterprise/system-wide safety analyses) and -2 (coordination/ownership of analyses)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfM" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfN" role="1PaTwD">
+            <property role="3oM_SC" value="- G3.2 — ISO 26262-2 (monitoring/continuous improvement of FS) and -7 (in-service/field monitoring and feedback)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfO" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfP" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.1.4 — ISO 26262-4 (system and technical safety requirements derivation and allocation)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfQ" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfR" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.2.4 — ISO 26262-4/-6 for safety-related localization; non-malfunction performance mainly SOTIF." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfS" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfT" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.2.7 — ISO 26262-4 (timing/latency as technical safety requirements) and -6 (SW timing constraints, verification)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfU" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfV" role="1PaTwD">
+            <property role="3oM_SC" value="- G3.1 — ISO 26262-2 (FS management, escalation/reporting) and -8 (problem resolution, change management)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfW" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfX" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.2.3 — ISO 26262-4/-6 for safety-related motion planning; non-malfunction performance mainly SOTIF." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XfY" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XfZ" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.4.3 — ISO 26262-7 (operational safety policies/procedures; service and decommissioning)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xg0" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xg1" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.4.1.4 — ISO 26262-5 (hardware unit/integration testing) and -8 (qualification/proven-in-use where applicable)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xg2" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xg3" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.1.1.1 — ISO 26262-2 (FS management integrated with systems engineering) and -4 (system-level development process)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xg4" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xg5" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.1.1.2 — ISO 26262-5 (hardware development lifecycle)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xg6" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xg7" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.1.1.8 — ISO 26262-7 (vehicle operations processes)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xg8" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xg9" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.2.2 — ISO 26262-4/-6 for safety-related prediction; non-malfunction performance mainly SOTIF." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xga" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgb" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.1.1 — ISO 26262-3 (item definition)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xgc" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgd" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.1.2 — ISO 26262-3 (operational scenarios/use cases informing the functional safety concept)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xge" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgf" role="1PaTwD">
+            <property role="3oM_SC" value="- G4.2 — Largely outside ISO 26262 (misuse). Partial tie to ISO 26262-3 when foreseeable misuse is considered in operating scenarios; otherwise more aligned with SOTIF/ISO 21448 and general product safety." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xgg" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgh" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.1.9 — ISO 26262-7 (service/maintenance requirements) and -8 (documentation)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xgi" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgj" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.4.1.8 — ISO 26262-7 (production, end-of-line/manufacturing tests and conformity of production)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xgk" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgl" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.1.1.6 — ISO 26262-2 (quality management interface to FS) and -8 (supporting quality-related processes)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xgm" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgn" role="1PaTwD">
+            <property role="3oM_SC" value="- G5.1.3 — ISO 26262-2 (confirmation measures, safety case/assessment) and -8 (documentation provided to external stakeholders)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xgo" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgp" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.3 — ISO 26262-8 (problem resolution, change mgmt, verification of fixes) and -2 (reviews/confirmation)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xgq" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgr" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.4.1.2 — ISO 26262-4/-5/-6 (test processes); -8 (tool qualification for automated test tools)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xgs" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgt" role="1PaTwD">
+            <property role="3oM_SC" value="- G3.3.1 — ISO 26262-2 (risk/FS management process across the lifecycle)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xgu" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgv" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.1.8 — ISO 26262-7 (production planning/requirements) with allocation from -4." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xgw" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgx" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.4.1.1 — ISO 26262-3 (FSC incl driver/operator takeover and controllability) and -4 (HMI/control allocation and realization)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xgy" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xgz" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.2.6 — ISO 26262-3 (controllability and alerts), -4/-6 (HMI notification requirements and implementation)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9Xg$" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9Xg_" role="1PaTwD">
+            <property role="3oM_SC" value="- G5.1.4 — ISO 26262-2 (independent safety reviews, audits, assessments and required independence)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XgA" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XgB" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.6 — ISO 26262-4 (validation that safety goals are met) and -7 (in-use monitoring of event rates)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XgC" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XgD" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.4.1.9 — ISO 26262-7 (operational readiness/operations testing, service procedures)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XgE" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XgF" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.5 — Indirectly ISO 26262-5/-9 (reliability data in HW metrics and analyses). General reliability is QM and outside direct FS scope." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XgG" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XgH" role="1PaTwD">
+            <property role="3oM_SC" value="- “The Self-Driving Vehicle subsystem fault analysis covers all known and reasonably possible failures” — ISO 26262-9 (subsystem analyses) and -4 (system allocation of safety mechanisms)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XgI" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XgJ" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.4.1.3 — ISO 26262-6 (software unit verification and testing)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XgK" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XgL" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.2.2.5 “Vehicle control provides acceptable functional performance in the defined ODD” — ISO 26262-4/-6 for safety-related control functions; non-malfunction performance aspects mainly SOTIF." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XgM" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XgN" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.2 — ISO 26262-8 (work product reviews, verification) and -5/-6 (HW/SW reviews)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XgO" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XgP" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.1.1.5 “Software development process is established…” — ISO 26262-6 (software development lifecycle)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XgQ" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XgR" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.4.1.4 — ISO 26262-7 (operational controls/authorization to operate) and -4 (requirements for driver/operator enablement)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XgS" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XgT" role="1PaTwD">
+            <property role="3oM_SC" value="- G2.1.1.5 — Title not provided; based on hierarchy under G2.1.1 (hazards/faults identification), it most likely maps to ISO 26262-9 (safety analyses) and -3 (HARA)." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="5Hw1CmS9XgU" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XgV" role="1PaTwD">
+            <property role="3oM_SC" value="- G1.3.1.5 “Sub-system level tests provide appropriate confidence…” — ISO 26262-4 (system/subsystem integration testing) and -5/-6 (HW/SW integration tests)." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="FG9Z$" id="5Hw1CmS9XgW" role="m0T0H">
+      <node concept="1Pa9Pv" id="5Hw1CmS9XgX" role="FG9ZB">
+        <node concept="1PaTwC" id="5Hw1CmS9XgY" role="1PaQFQ">
+          <node concept="3oM_SD" id="5Hw1CmS9XgZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="oAArM" id="u2p4MKAJ_a" role="oAAOy">
+      <property role="FHpXC" value="gpt-5" />
+    </node>
+  </node>
+</model>
+

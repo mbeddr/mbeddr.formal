@@ -246,7 +246,7 @@
   <node concept="25R3W" id="1I7wo92WvVM">
     <property role="3F6X1D" value="1983696557348880114" />
     <property role="3GE5qa" value="base" />
-    <property role="TrG5h" value="PlantUmlDiagramDisplay" />
+    <property role="TrG5h" value="EPlantUmlDiagramDisplay" />
     <ref role="1H5jkz" node="1I7wo92WvVN" resolve="TEXT" />
     <node concept="25R33" id="1I7wo92WvVN" role="25R1y">
       <property role="3tVfz5" value="1983696557348880115" />
@@ -823,9 +823,6 @@
     <property role="34LRSv" value="together" />
     <property role="3GE5qa" value="diagram.common" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="1_aHBvacGQR" role="PzmwI">
-      <ref role="PrY4T" node="6BNnCp_okdG" resolve="IPlantUmlRootContent" />
-    </node>
     <node concept="PrWs8" id="1_aHBvacGQS" role="PzmwI">
       <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
     </node>
@@ -1251,9 +1248,6 @@
     <property role="TrG5h" value="PlantUmlDiagramTitle" />
     <property role="34LRSv" value="title" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="q$1bLSAhkQ" role="PzmwI">
-      <ref role="PrY4T" node="6BNnCp_okdG" resolve="IPlantUmlRootContent" />
-    </node>
     <node concept="PrWs8" id="q$1bLSAhkR" role="PzmwI">
       <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
     </node>
@@ -1581,9 +1575,6 @@
     <property role="34LRSv" value="#" />
     <property role="R4oN_" value="plain text fragment" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="2qHrqKS_0_E" role="PzmwI">
-      <ref role="PrY4T" node="6BNnCp_okdG" resolve="IPlantUmlRootContent" />
-    </node>
     <node concept="PrWs8" id="2qHrqKS_0_F" role="PzmwI">
       <ref role="PrY4T" node="1I7wo92VgA0" resolve="IPlantUmlComponentDiagramContent" />
     </node>
