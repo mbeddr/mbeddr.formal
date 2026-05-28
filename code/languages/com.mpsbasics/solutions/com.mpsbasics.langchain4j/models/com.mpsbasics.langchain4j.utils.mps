@@ -201,9 +201,6 @@
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
-      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
-        <reference id="1138056395725" name="property" index="3TsBF5" />
-      </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
       </concept>
@@ -784,14 +781,6 @@
                               </node>
                               <node concept="2qgKlT" id="5Ux4Lu392rL" role="2OqNvi">
                                 <ref role="37wK5l" to="zpwy:5Ux4Lu37fyQ" resolve="getTextSegments" />
-                                <node concept="2OqwBi" id="5l3dUiRlGFA" role="37wK5m">
-                                  <node concept="37vLTw" id="5Ux4Lu3hE1m" role="2Oq$k0">
-                                    <ref role="3cqZAo" node="4S6651mFK1e" resolve="chatModelProvider" />
-                                  </node>
-                                  <node concept="3TrcHB" id="5l3dUiRlHjL" role="2OqNvi">
-                                    <ref role="3TsBF5" to="uzku:5s847lWJoWt" resolve="llmModelName" />
-                                  </node>
-                                </node>
                               </node>
                             </node>
                           </node>
@@ -837,7 +826,7 @@
           <node concept="3cpWsn" id="5Ux4Lu39a41" role="3cpWs9">
             <property role="TrG5h" value="embeddingStore" />
             <node concept="3uibUv" id="5Ux4Lu39a3Y" role="1tU5fm">
-              <ref role="3uigEE" to="ftn0:~EmbeddingStore" resolve="EmbeddingStore" />
+              <ref role="3uigEE" to="5zc:~InMemoryEmbeddingStore" resolve="InMemoryEmbeddingStore" />
               <node concept="3uibUv" id="5Ux4Lu39as8" role="11_B2D">
                 <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
               </node>

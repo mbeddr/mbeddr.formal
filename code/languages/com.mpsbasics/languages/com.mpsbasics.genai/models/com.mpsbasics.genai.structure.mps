@@ -280,5 +280,19 @@
       <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2wdj7Oy8YuC">
+    <property role="EcuMT" value="2886047036541757352" />
+    <property role="TrG5h" value="ModulelRefWord" />
+    <property role="3GE5qa" value="text_elements" />
+    <property role="34LRSv" value="@module" />
+    <property role="R4oN_" value="reference a module" />
+    <ref role="1TJDcQ" node="4b8dqHkXt5H" resolve="ChatWordBase" />
+    <node concept="1TJgyj" id="2wdj7Oy8YuD" role="1TKVEi">
+      <property role="IQ2ns" value="2886047036541757353" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="moduleReference" />
+      <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
+    </node>
+  </node>
 </model>
 

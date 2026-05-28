@@ -29,6 +29,9 @@
       <concept id="8575097167727037827" name="com.mpsbasics.genai.structure.NamedRootNodeKnowledgeBaseItem" flags="ng" index="23Pd3N">
         <reference id="8575097167727052075" name="nodeRef" index="23P9xr" />
       </concept>
+      <concept id="2886047036541757352" name="com.mpsbasics.genai.structure.ModulelRefWord" flags="ng" index="abEJl">
+        <child id="2886047036541757353" name="moduleReference" index="abEJk" />
+      </concept>
       <concept id="635638839449277537" name="com.mpsbasics.genai.structure.Chat" flags="ng" index="m0ID9" />
       <concept id="4812155211826618191" name="com.mpsbasics.genai.structure.ModelRefWord" flags="ng" index="mc6F$">
         <child id="4812155211826618192" name="modelReference" index="mc6FV" />
@@ -1215,6 +1218,9 @@
         </node>
       </node>
     </node>
+    <node concept="oAArM" id="4S6651mHhLn" role="oAAOy">
+      <property role="FHpXC" value="gpt-5.4" />
+    </node>
     <node concept="FG9Z$" id="3rArG1B2re5" role="m0T0H">
       <node concept="1Pa9Pv" id="3rArG1B2re6" role="FG9ZB">
         <node concept="1PaTwC" id="3rArG1B2re7" role="1PaQFQ">
@@ -1223,9 +1229,6 @@
           </node>
         </node>
       </node>
-    </node>
-    <node concept="oAArM" id="4S6651mHhLn" role="oAAOy">
-      <property role="FHpXC" value="gpt-5.4" />
     </node>
   </node>
   <node concept="1Yp8r$" id="5Ux4Lu3eFjy">
@@ -2125,6 +2128,100 @@
       </node>
     </node>
     <node concept="oAArM" id="4b8dqHkZ2xZ" role="oAAOy">
+      <property role="FHpXC" value="gpt-5.4" />
+    </node>
+  </node>
+  <node concept="m0ID9" id="2wdj7Oy9pYn">
+    <property role="TrG5h" value="_003_chat_room_module" />
+    <node concept="FG9Z$" id="2wdj7Oy9pYo" role="m0T0H">
+      <node concept="1Pa9Pv" id="2wdj7Oy9pYp" role="FG9ZB">
+        <node concept="1PaTwC" id="2wdj7Oy9pYq" role="1PaQFQ">
+          <node concept="3oM_SD" id="2wdj7Oy9pYr" role="1PaTwD">
+            <property role="3oM_SC" value="Please" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oy9pYs" role="1PaTwD">
+            <property role="3oM_SC" value="summarize" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oy9pYt" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oy9pYu" role="1PaTwD">
+            <property role="3oM_SC" value="content" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oy9pYv" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oy9pYw" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oy9pYx" role="1PaTwD">
+            <property role="3oM_SC" value="following" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oy9pYy" role="1PaTwD">
+            <property role="3oM_SC" value="module" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oy9pYz" role="1PaTwD">
+            <property role="3oM_SC" value="using" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oy9pY$" role="1PaTwD">
+            <property role="3oM_SC" value="200" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oy9pY_" role="1PaTwD">
+            <property role="3oM_SC" value="words." />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oyc8IK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2wdj7Oyc8IR" role="1PaQFQ">
+          <node concept="3oM_SD" id="2wdj7Oyc8IQ" role="1PaTwD">
+            <property role="3oM_SC" value="Please" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oyc8IL" role="1PaTwD">
+            <property role="3oM_SC" value="answer" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oyc8IM" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oyc8IN" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oyc8IO" role="1PaTwD">
+            <property role="3oM_SC" value="bullet" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oyc8IP" role="1PaTwD">
+            <property role="3oM_SC" value="list." />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2wdj7Oy9pYA" role="1PaQFQ">
+          <node concept="3oM_SD" id="2wdj7Oy9ZJh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2wdj7Oy9ZJj" role="1PaQFQ">
+          <node concept="abEJl" id="2wdj7OyaQcz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+            <node concept="37shsh" id="2wdj7OyaQc$" role="abEJk">
+              <node concept="1dCxOk" id="2wdj7OyaQcD" role="37shsm">
+                <property role="1XweGW" value="e49ae71b-b7a6-4321-84b6-ac9a82e13853" />
+                <property role="1XxBO9" value="com.mpsbasics.genai" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1Pa9Pv" id="2wdj7Oyc8JW" role="FKhB1">
+        <node concept="1PaTwC" id="2wdj7Oyc8JX" role="1PaQFQ">
+          <node concept="3oM_SD" id="2wdj7Oyc8JY" role="1PaTwD">
+            <property role="3oM_SC" value="Used" />
+          </node>
+          <node concept="3oM_SD" id="2wdj7Oyc8Ns" role="1PaTwD">
+            <property role="3oM_SC" value="tokens:13116" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="oAArM" id="2wdj7Oy9q35" role="oAAOy">
       <property role="FHpXC" value="gpt-5.4" />
     </node>
   </node>
