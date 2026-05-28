@@ -246,15 +246,15 @@
             <ref role="3bR37D" to="k3fp:6hyv0iVPlFH" resolve="com.mpsbasics.docx4j.core" />
           </node>
         </node>
-        <node concept="3rtmxn" id="7VF2e44q0RK" role="3bR31x">
-          <node concept="3LXTmp" id="7VF2e44q0RL" role="3rtmxm">
-            <node concept="3qWCbU" id="7VF2e44q0RM" role="3LXTna">
+        <node concept="3rtmxn" id="7JkLAImNpbQ" role="3bR31x">
+          <node concept="3LXTmp" id="7JkLAImNpbR" role="3rtmxm">
+            <node concept="3qWCbU" id="7JkLAImNpbS" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
             </node>
-            <node concept="55IIr" id="7VF2e44q0RN" role="3LXTmr">
-              <node concept="2Ry0Ak" id="7VF2e44q0RO" role="iGT6I">
+            <node concept="55IIr" id="7JkLAImNpbT" role="3LXTmr">
+              <node concept="2Ry0Ak" id="7JkLAImNpbU" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7VF2e44q0RP" role="2Ry0An">
+                <node concept="2Ry0Ak" id="7JkLAImNpbV" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.docx4j.tests" />
                 </node>
               </node>

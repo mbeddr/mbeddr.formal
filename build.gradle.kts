@@ -458,8 +458,8 @@ tasks {
                 listOf(
                     "dependencies/com.mbeddr.platform",
                     "dependencies/org.mpsqa.allInOne",
-                    "artifacts/com.mpsbasics",
-                    "artifacts/com.mbeddr.formal.languages").map { buildDir.dir(it) }
+					"artifacts/com.mbeddr.formal.languages",
+                    "artifacts/com.mpsbasics").map { buildDir.dir(it) }
             })
 
         ignoreFailures = true

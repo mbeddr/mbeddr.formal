@@ -284,20 +284,6 @@
         <ref role="398BVh" node="jPgKPEIpnE" resolve="dependencies.mpsqa" />
       </node>
     </node>
-    <node concept="2sgV4H" id="5gFsbf33P71" role="1l3spa">
-      <ref role="1l3spb" to="k3fp:42jqVeFkUtb" resolve="com.mpsbasics" />
-      <node concept="55IIr" id="5gFsbf33PmU" role="2JcizS">
-        <node concept="2Ry0Ak" id="5gFsbf33PAN" role="iGT6I">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="5gFsbf33PAU" role="2Ry0An">
-            <property role="2Ry0Am" value="artifacts" />
-            <node concept="2Ry0Ak" id="5gFsbf33PAW" role="2Ry0An">
-              <property role="2Ry0Am" value="com.mpsbasics" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
     <node concept="10PD9b" id="6hyv0iVPlDP" role="10PD9s" />
     <node concept="3b7kt6" id="6hyv0iVPlDQ" role="10PD9s" />
     <node concept="398rNT" id="6hyv0iVPlDR" role="1l3spd">
@@ -444,6 +430,20 @@
         </node>
       </node>
     </node>
+    <node concept="2sgV4H" id="5gFsbf33P71" role="1l3spa">
+      <ref role="1l3spb" to="k3fp:42jqVeFkUtb" resolve="com.mpsbasics" />
+      <node concept="55IIr" id="5gFsbf33PmU" role="2JcizS">
+        <node concept="2Ry0Ak" id="5gFsbf33PAN" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="5gFsbf33PAU" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="5gFsbf33PAW" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mpsbasics" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2sgV4H" id="6hyv0iVPlE0" role="1l3spa">
       <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
       <node concept="398BVA" id="6hyv0iVPlE$" role="2JcizS">
@@ -458,6 +458,15 @@
         <ref role="3_I8Xa" to="k3fp:5gFsbf345XQ" resolve="com.mpsbasics.build" />
       </node>
       <node concept="3_I8Xc" id="5gFsbf347fa" role="39821P">
+        <ref role="3_I8Xa" to="k3fp:2MrvZqtGPu8" resolve="com.mpsbasics.testutils" />
+      </node>
+      <node concept="3_I8Xc" id="4oT$_WGcEsb" role="39821P">
+        <ref role="3_I8Xa" to="k3fp:6hyv0iVPlE_" resolve="com.mpsbasics" />
+      </node>
+      <node concept="3_I8Xc" id="4oT$_WGcEsd" role="39821P">
+        <ref role="3_I8Xa" to="k3fp:5gFsbf345XQ" resolve="com.mpsbasics.build" />
+      </node>
+      <node concept="3_I8Xc" id="4oT$_WGcEsf" role="39821P">
         <ref role="3_I8Xa" to="k3fp:2MrvZqtGPu8" resolve="com.mpsbasics.testutils" />
       </node>
       <node concept="m$_wl" id="ybq6lf$p0P" role="39821P">
@@ -817,6 +826,9 @@
       <node concept="m$_yC" id="5gFsbf342pI" role="m$_yJ">
         <ref role="m$_y1" to="k3fp:5gFsbf342Kk" resolve="com.mpsbasics.build" />
       </node>
+      <node concept="m$_yC" id="4oT$_WGcEsh" role="m$_yJ">
+        <ref role="m$_y1" to="k3fp:5gFsbf342Kk" resolve="com.mpsbasics.build" />
+      </node>
     </node>
     <node concept="2G$12M" id="1FlxJGBMsrc" role="3989C9">
       <property role="TrG5h" value="fasten.assurance.build" />
@@ -896,6 +908,11 @@
         </node>
         <node concept="1SiIV0" id="5gFsbf342ch" role="3bR37C">
           <node concept="3bR9La" id="5gFsbf342ci" role="1SiIV1">
+            <ref role="3bR37D" to="k3fp:5jdn85oHU1h" resolve="com.mpsbasics.build" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4oT$_WGcEs8" role="3bR37C">
+          <node concept="3bR9La" id="4oT$_WGcEs9" role="1SiIV1">
             <ref role="3bR37D" to="k3fp:5jdn85oHU1h" resolve="com.mpsbasics.build" />
           </node>
         </node>
@@ -2012,6 +2029,11 @@
         </node>
         <node concept="1SiIV0" id="6r9ErzLlH4f" role="3bR37C">
           <node concept="3bR9La" id="6r9ErzLlH4g" role="1SiIV1">
+            <ref role="3bR37D" to="k3fp:2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4oT$_WGcEsk" role="3bR37C">
+          <node concept="3bR9La" id="4oT$_WGcEsl" role="1SiIV1">
             <ref role="3bR37D" to="k3fp:2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
           </node>
         </node>
@@ -7535,6 +7557,20 @@
           <node concept="2Ry0Ak" id="3te$DfsQ8DL" role="2Ry0An">
             <property role="2Ry0Am" value="artifacts" />
             <node concept="2Ry0Ak" id="3te$DfsQ8DO" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mpsbasics" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2sgV4H" id="4oT$_WGcDxq" role="1l3spa">
+      <ref role="1l3spb" to="k3fp:42jqVeFkUtb" resolve="com.mpsbasics" />
+      <node concept="55IIr" id="4oT$_WGcDxr" role="2JcizS">
+        <node concept="2Ry0Ak" id="4oT$_WGcDxs" role="iGT6I">
+          <property role="2Ry0Am" value=".." />
+          <node concept="2Ry0Ak" id="4oT$_WGcDxt" role="2Ry0An">
+            <property role="2Ry0Am" value="artifacts" />
+            <node concept="2Ry0Ak" id="4oT$_WGcDxu" role="2Ry0An">
               <property role="2Ry0Am" value="com.mpsbasics" />
             </node>
           </node>
