@@ -11,8 +11,6 @@
     <use id="7f01a836-f049-4bcd-b088-277c30f5a7be" name="com.mbeddr.formal.safety.argument.genai" version="0" />
     <use id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara" version="0" />
   </languages>
-  <imports>
-    <import index="kau0" ref="r:dd5bd7c0-777e-4df6-8e2d-9a855cc2e96b(_100_examples._020_adas_students_lab._010_safe_lane_keeping)" />
-  </imports>
+  <imports />
 </model>
 

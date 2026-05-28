@@ -172,78 +172,1047 @@
           </node>
         </node>
       </node>
-      <node concept="1Pa9Pv" id="5l3dUiRkJuv" role="FG9Z3">
-        <node concept="1PaTwC" id="5l3dUiRkJuw" role="1PaQFQ">
-          <node concept="3oM_SD" id="5l3dUiRkJux" role="1PaTwD">
+      <node concept="1Pa9Pv" id="3rArG1B2rcO" role="FG9Z3">
+        <node concept="1PaTwC" id="3rArG1B2rcP" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rcQ" role="1PaTwD">
             <property role="3oM_SC" value="```java" />
           </node>
         </node>
-        <node concept="1PaTwC" id="5l3dUiRkJuy" role="1PaQFQ">
-          <node concept="3oM_SD" id="5l3dUiRkJuz" role="1PaTwD">
-            <property role="3oM_SC" value="Project" />
+        <node concept="1PaTwC" id="3rArG1B2rcR" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rcS" role="1PaTwD">
+            <property role="3oM_SC" value="import" />
           </node>
-          <node concept="3oM_SD" id="5l3dUiRkNes" role="1PaTwD">
-            <property role="3oM_SC" value="mpsProject" />
-          </node>
-          <node concept="3oM_SD" id="5l3dUiRkNet" role="1PaTwD">
-            <property role="3oM_SC" value="=" />
-          </node>
-          <node concept="3oM_SD" id="5l3dUiRkNeu" role="1PaTwD">
-            <property role="3oM_SC" value="getFirstOpenMPSProject();" />
+          <node concept="3oM_SD" id="3rArG1B2GMZ" role="1PaTwD">
+            <property role="3oM_SC" value="java.util.List;" />
           </node>
         </node>
-        <node concept="1PaTwC" id="5l3dUiRkJu$" role="1PaQFQ">
-          <node concept="3oM_SD" id="5l3dUiRkJu_" role="1PaTwD">
+        <node concept="1PaTwC" id="3rArG1B2rcT" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rcU" role="1PaTwD">
             <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="1PaTwC" id="5l3dUiRkJuA" role="1PaQFQ">
-          <node concept="3oM_SD" id="5l3dUiRkJuB" role="1PaTwD">
-            <property role="3oM_SC" value="if" />
+        <node concept="1PaTwC" id="3rArG1B2rcV" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rcW" role="1PaTwD">
+            <property role="3oM_SC" value="public" />
           </node>
-          <node concept="3oM_SD" id="5l3dUiRkNe_" role="1PaTwD">
-            <property role="3oM_SC" value="(mpsProject" />
+          <node concept="3oM_SD" id="3rArG1B2GNN" role="1PaTwD">
+            <property role="3oM_SC" value="class" />
           </node>
-          <node concept="3oM_SD" id="5l3dUiRkNeA" role="1PaTwD">
-            <property role="3oM_SC" value="!=" />
+          <node concept="3oM_SD" id="3rArG1B2GNO" role="1PaTwD">
+            <property role="3oM_SC" value="ProjectHelper" />
           </node>
-          <node concept="3oM_SD" id="5l3dUiRkNeB" role="1PaTwD">
-            <property role="3oM_SC" value="null)" />
-          </node>
-          <node concept="3oM_SD" id="5l3dUiRkNeC" role="1PaTwD">
+          <node concept="3oM_SD" id="3rArG1B2GNP" role="1PaTwD">
             <property role="3oM_SC" value="{" />
           </node>
         </node>
-        <node concept="1PaTwC" id="5l3dUiRkJuC" role="1PaQFQ">
-          <node concept="3oM_SD" id="5l3dUiRkJuD" role="1PaTwD">
+        <node concept="1PaTwC" id="3rArG1B2rcX" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rcY" role="1PaTwD">
             <property role="3oM_SC" value="" />
-          </node>
-          <node concept="3oM_SD" id="5l3dUiRkNev" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-          <node concept="3oM_SD" id="5l3dUiRkNew" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-          <node concept="3oM_SD" id="5l3dUiRkNex" role="1PaTwD">
-            <property role="3oM_SC" value="" />
-          </node>
-          <node concept="3oM_SD" id="5l3dUiRkNey" role="1PaTwD">
-            <property role="3oM_SC" value="return" />
-          </node>
-          <node concept="3oM_SD" id="5l3dUiRkNez" role="1PaTwD">
-            <property role="3oM_SC" value="ProjectHelper.fromIdeaProject(((IdeFrame)" />
-          </node>
-          <node concept="3oM_SD" id="5l3dUiRkNe$" role="1PaTwD">
-            <property role="3oM_SC" value="mpsProject).getProject());" />
           </node>
         </node>
-        <node concept="1PaTwC" id="5l3dUiRkJuE" role="1PaQFQ">
-          <node concept="3oM_SD" id="5l3dUiRkJuF" role="1PaTwD">
+        <node concept="1PaTwC" id="3rArG1B2rcZ" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rd0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GO$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GO_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOA" role="1PaTwD">
+            <property role="3oM_SC" value="public" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOB" role="1PaTwD">
+            <property role="3oM_SC" value="static" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOC" role="1PaTwD">
+            <property role="3oM_SC" value="ProjectManager" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOD" role="1PaTwD">
+            <property role="3oM_SC" value="getProjectManager()" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOE" role="1PaTwD">
+            <property role="3oM_SC" value="{" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rd1" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rd2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GO3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GO4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GO5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GO6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GO7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GO8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GO9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOa" role="1PaTwD">
+            <property role="3oM_SC" value="return" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOb" role="1PaTwD">
+            <property role="3oM_SC" value="MPSCoreComponents.getInstance()" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rd3" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rd4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GN4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GN5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GN6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GN7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GN8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GN9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNa" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNb" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNj" role="1PaTwD">
+            <property role="3oM_SC" value=".getPlatform()" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rd5" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rd6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GP0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GP1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GP2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GP3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GP4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GP5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GP6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GP7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GP8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GP9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPa" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPb" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPe" role="1PaTwD">
+            <property role="3oM_SC" value=".findComponent(ProjectManager.class);" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rd7" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rd8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GO0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GO1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GO2" role="1PaTwD">
             <property role="3oM_SC" value="}" />
           </node>
         </node>
-        <node concept="1PaTwC" id="5l3dUiRkJuG" role="1PaQFQ">
-          <node concept="3oM_SD" id="5l3dUiRkJuH" role="1PaTwD">
+        <node concept="1PaTwC" id="3rArG1B2rd9" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rda" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdb" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOV" role="1PaTwD">
+            <property role="3oM_SC" value="static" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOW" role="1PaTwD">
+            <property role="3oM_SC" value="Project" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOX" role="1PaTwD">
+            <property role="3oM_SC" value="getCurrentlyFocusedMPSProject()" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOY" role="1PaTwD">
+            <property role="3oM_SC" value="{" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdd" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rde" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOo" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOr" role="1PaTwD">
+            <property role="3oM_SC" value="List&lt;Project&gt;" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOs" role="1PaTwD">
+            <property role="3oM_SC" value="openedProjects" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOt" role="1PaTwD">
+            <property role="3oM_SC" value="=" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOu" role="1PaTwD">
+            <property role="3oM_SC" value="getProjectManager().getOpenedProjects();" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdf" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPQ" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPR" role="1PaTwD">
+            <property role="3oM_SC" value="(openedProjects.size()" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPS" role="1PaTwD">
+            <property role="3oM_SC" value="==" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPT" role="1PaTwD">
+            <property role="3oM_SC" value="1)" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPU" role="1PaTwD">
+            <property role="3oM_SC" value="{" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdh" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPs" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPt" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GP$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GP_" role="1PaTwD">
+            <property role="3oM_SC" value="return" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPA" role="1PaTwD">
+            <property role="3oM_SC" value="openedProjects.get(0);" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdj" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOj" role="1PaTwD">
+            <property role="3oM_SC" value="}" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdl" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdn" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdo" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPi" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPj" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPm" role="1PaTwD">
+            <property role="3oM_SC" value="java.awt.Window" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPn" role="1PaTwD">
+            <property role="3oM_SC" value="parent" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPo" role="1PaTwD">
+            <property role="3oM_SC" value="=" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPp" role="1PaTwD">
+            <property role="3oM_SC" value="java.awt.KeyboardFocusManager" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdp" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GM$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GM_" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GME" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GML" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMM" role="1PaTwD">
+            <property role="3oM_SC" value=".getCurrentKeyboardFocusManager()" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdr" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rds" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPV" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPX" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPZ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQ0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQ1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQ2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQ3" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQ4" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQ5" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQ6" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQ7" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQ8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQ9" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQa" role="1PaTwD">
+            <property role="3oM_SC" value=".getActiveWindow();" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdt" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdv" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMo" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMs" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMt" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMu" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMv" role="1PaTwD">
+            <property role="3oM_SC" value="(parent" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMw" role="1PaTwD">
+            <property role="3oM_SC" value="instanceof" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMx" role="1PaTwD">
+            <property role="3oM_SC" value="IdeFrame)" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMy" role="1PaTwD">
+            <property role="3oM_SC" value="{" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdx" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQr" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQs" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQt" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQ$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQ_" role="1PaTwD">
+            <property role="3oM_SC" value="return" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQA" role="1PaTwD">
+            <property role="3oM_SC" value="fromIdeaProject(((IdeFrame)" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQB" role="1PaTwD">
+            <property role="3oM_SC" value="parent).getProject());" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdz" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rd$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GPI" role="1PaTwD">
+            <property role="3oM_SC" value="}" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rd_" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdA" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdB" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQb" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQc" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQd" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQe" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQf" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQg" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQh" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQi" role="1PaTwD">
+            <property role="3oM_SC" value="throw" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQj" role="1PaTwD">
+            <property role="3oM_SC" value="new" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQk" role="1PaTwD">
+            <property role="3oM_SC" value="RuntimeException(&quot;Unable" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQl" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQm" role="1PaTwD">
+            <property role="3oM_SC" value="determine" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQn" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQo" role="1PaTwD">
+            <property role="3oM_SC" value="active" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQp" role="1PaTwD">
+            <property role="3oM_SC" value="project.&quot;);" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdD" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNB" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GND" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNE" role="1PaTwD">
+            <property role="3oM_SC" value="}" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdF" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdH" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQC" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQD" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQE" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQF" role="1PaTwD">
+            <property role="3oM_SC" value="public" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQG" role="1PaTwD">
+            <property role="3oM_SC" value="static" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQH" role="1PaTwD">
+            <property role="3oM_SC" value="Project" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQI" role="1PaTwD">
+            <property role="3oM_SC" value="getFirstOpenMPSProject()" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GQJ" role="1PaTwD">
+            <property role="3oM_SC" value="{" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdJ" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNu" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNy" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNz" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GN$" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GN_" role="1PaTwD">
+            <property role="3oM_SC" value="return" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNA" role="1PaTwD">
+            <property role="3oM_SC" value="getCurrentlyFocusedMPSProject();" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdL" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GN0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GN1" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GN2" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GN3" role="1PaTwD">
+            <property role="3oM_SC" value="}" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdN" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdP" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNT" role="1PaTwD">
+            <property role="3oM_SC" value="public" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNU" role="1PaTwD">
+            <property role="3oM_SC" value="static" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNV" role="1PaTwD">
+            <property role="3oM_SC" value="Project" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNW" role="1PaTwD">
+            <property role="3oM_SC" value="fromIdeaProject(com.intellij.openapi.project.Project" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNX" role="1PaTwD">
+            <property role="3oM_SC" value="ideaProject)" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNY" role="1PaTwD">
+            <property role="3oM_SC" value="{" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdR" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMN" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMQ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMR" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMS" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMT" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMU" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMV" role="1PaTwD">
+            <property role="3oM_SC" value="(ideaProject" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMW" role="1PaTwD">
+            <property role="3oM_SC" value="==" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMX" role="1PaTwD">
+            <property role="3oM_SC" value="null)" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GMY" role="1PaTwD">
+            <property role="3oM_SC" value="{" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdT" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdU" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOM" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GON" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOO" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOP" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOQ" role="1PaTwD">
+            <property role="3oM_SC" value="return" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOR" role="1PaTwD">
+            <property role="3oM_SC" value="getFirstOpenMPSProject();" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdV" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNF" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNG" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNH" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNI" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNJ" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNK" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNL" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNM" role="1PaTwD">
+            <property role="3oM_SC" value="}" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdX" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2rdY" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNk" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNl" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNm" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNn" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNo" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNp" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNq" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNr" role="1PaTwD">
+            <property role="3oM_SC" value="return" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNs" role="1PaTwD">
+            <property role="3oM_SC" value="((MPSProject)" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GNt" role="1PaTwD">
+            <property role="3oM_SC" value="ideaProject).getProject();" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2rdZ" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2re0" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOv" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOw" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOx" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+          <node concept="3oM_SD" id="3rArG1B2GOy" role="1PaTwD">
+            <property role="3oM_SC" value="}" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2re1" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2re2" role="1PaTwD">
+            <property role="3oM_SC" value="}" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="3rArG1B2re3" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2re4" role="1PaTwD">
             <property role="3oM_SC" value="```" />
           </node>
         </node>
@@ -251,6 +1220,15 @@
     </node>
     <node concept="oAArM" id="4S6651mHhLn" role="oAAOy">
       <property role="FHpXC" value="gpt-5.4" />
+    </node>
+    <node concept="FG9Z$" id="3rArG1B2re5" role="m0T0H">
+      <node concept="1Pa9Pv" id="3rArG1B2re6" role="FG9ZB">
+        <node concept="1PaTwC" id="3rArG1B2re7" role="1PaQFQ">
+          <node concept="3oM_SD" id="3rArG1B2re8" role="1PaTwD">
+            <property role="3oM_SC" value="" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1Yp8r$" id="5Ux4Lu3eFjy">

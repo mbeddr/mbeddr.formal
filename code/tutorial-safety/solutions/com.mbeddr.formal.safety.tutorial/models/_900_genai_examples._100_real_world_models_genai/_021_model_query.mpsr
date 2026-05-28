@@ -48,7 +48,7 @@
     <property role="TrG5h" value="_021_model_query" />
     <property role="3GE5qa" value="_020_model_query" />
     <node concept="3ty2V1" id="u2p4MKAJ_5" role="3ty2V2">
-      <ref role="3ty2V0" node="u2p4MKAJ$W" resolve="_020_knowledge_base" />
+      <ref role="3ty2V0" node="u2p4MKAJ$W" resolve="_020_knowledge_base_uber" />
     </node>
     <node concept="FG9Z$" id="u2p4MKAJ_6" role="m0T0H">
       <node concept="1Pa9Pv" id="u2p4MKAJ_b" role="FG9ZB">
