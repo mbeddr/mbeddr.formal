@@ -41,9 +41,18 @@
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" />
     <import index="rqif" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.service(com.mpsbasics.langchain4j/)" />
+    <import index="7k8f" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.databind(MPS.ThirdParty/)" />
+    <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
+    <import index="kscp" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.google.common.hash(MPS.ThirdParty/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
+    <import index="i4mf" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.core(MPS.ThirdParty/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
+        <child id="1082485599096" name="statements" index="9aQI4" />
+      </concept>
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
@@ -76,6 +85,9 @@
       <concept id="1081236700938" name="jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" flags="ig" index="2YIFZL" />
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
+        <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
@@ -112,6 +124,7 @@
       </concept>
       <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
+        <child id="1082485599094" name="ifFalseStatement" index="9aQIa" />
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
       </concept>
@@ -136,6 +149,9 @@
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
@@ -724,30 +740,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="2ZpX2r3ENDf" role="3cqZAp" />
-        <node concept="3clFbF" id="2ZpX2r3EQhT" role="3cqZAp">
-          <node concept="2OqwBi" id="2ZpX2r3ES4z" role="3clFbG">
-            <node concept="37vLTw" id="2ZpX2r3EQhR" role="2Oq$k0">
-              <ref role="3cqZAo" node="2ZpX2r3Eh2U" resolve="allTextSegments" />
-            </node>
-            <node concept="TSZUe" id="2ZpX2r3EUyo" role="2OqNvi">
-              <node concept="2ShNRf" id="2ZpX2r3EW4o" role="25WWJ7">
-                <node concept="1pGfFk" id="2ZpX2r3EYFy" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="w6l:~TextSegment.&lt;init&gt;(java.lang.String,dev.langchain4j.data.document.Metadata)" resolve="TextSegment" />
-                  <node concept="Xl_RD" id="2ZpX2r3F2$8" role="37wK5m">
-                    <property role="Xl_RC" value="Consider the following knowledge base given by the JSON object below:\n\n```json\n" />
-                  </node>
-                  <node concept="2ShNRf" id="2ZpX2r3FjRP" role="37wK5m">
-                    <node concept="1pGfFk" id="2ZpX2r3Fngn" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="a0f5:~Metadata.&lt;init&gt;()" resolve="Metadata" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="2Gpval" id="5Ux4Lu38BLR" role="3cqZAp">
           <node concept="2GrKxI" id="5Ux4Lu38BLS" role="2Gsz3X">
             <property role="TrG5h" value="ke" />
@@ -797,31 +789,36 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2ZpX2r3H3DK" role="3cqZAp">
-          <node concept="2OqwBi" id="2ZpX2r3H3DL" role="3clFbG">
-            <node concept="37vLTw" id="2ZpX2r3H3DM" role="2Oq$k0">
-              <ref role="3cqZAo" node="2ZpX2r3Eh2U" resolve="allTextSegments" />
+        <node concept="3clFbH" id="5Ux4Lu3igLY" role="3cqZAp" />
+        <node concept="3cpWs8" id="6cEB6OF7fxx" role="3cqZAp">
+          <node concept="3cpWsn" id="6cEB6OF7fxy" role="3cpWs9">
+            <property role="TrG5h" value="em" />
+            <node concept="3uibUv" id="6cEB6OF7f7C" role="1tU5fm">
+              <ref role="3uigEE" node="6cEB6OEV0Sq" resolve="EmbeddingsManager" />
             </node>
-            <node concept="TSZUe" id="2ZpX2r3H3DN" role="2OqNvi">
-              <node concept="2ShNRf" id="2ZpX2r3H3DO" role="25WWJ7">
-                <node concept="1pGfFk" id="2ZpX2r3H3DP" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="w6l:~TextSegment.&lt;init&gt;(java.lang.String,dev.langchain4j.data.document.Metadata)" resolve="TextSegment" />
-                  <node concept="Xl_RD" id="2ZpX2r3H3DQ" role="37wK5m">
-                    <property role="Xl_RC" value="\n```" />
-                  </node>
-                  <node concept="2ShNRf" id="2ZpX2r3H3DR" role="37wK5m">
-                    <node concept="1pGfFk" id="2ZpX2r3H3DS" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="a0f5:~Metadata.&lt;init&gt;()" resolve="Metadata" />
-                    </node>
-                  </node>
-                </node>
+            <node concept="2YIFZM" id="6cEB6OF7fxz" role="33vP2m">
+              <ref role="37wK5l" node="6cEB6OEV47M" resolve="getInstance" />
+              <ref role="1Pybhc" node="6cEB6OEV0Sq" resolve="EmbeddingsManager" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6cEB6OF7kN0" role="3cqZAp">
+          <node concept="2OqwBi" id="6cEB6OF7lS9" role="3clFbG">
+            <node concept="37vLTw" id="6cEB6OF7kMY" role="2Oq$k0">
+              <ref role="3cqZAo" node="6cEB6OF7fxy" resolve="em" />
+            </node>
+            <node concept="liA8E" id="6cEB6OF7o6N" role="2OqNvi">
+              <ref role="37wK5l" node="6cEB6OF4R80" resolve="addAllToEmbeddingStore" />
+              <node concept="37vLTw" id="6cEB6OF7p_e" role="37wK5m">
+                <ref role="3cqZAo" node="5Ux4Lu38Exi" resolve="embeddingModel" />
+              </node>
+              <node concept="37vLTw" id="6cEB6OF7rLx" role="37wK5m">
+                <ref role="3cqZAo" node="2ZpX2r3Eh2U" resolve="allTextSegments" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="5Ux4Lu3igLY" role="3cqZAp" />
+        <node concept="3clFbH" id="6cEB6OF7swG" role="3cqZAp" />
         <node concept="3cpWs8" id="5Ux4Lu39a40" role="3cqZAp">
           <node concept="3cpWsn" id="5Ux4Lu39a41" role="3cpWs9">
             <property role="TrG5h" value="embeddingStore" />
@@ -831,84 +828,17 @@
                 <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
               </node>
             </node>
-            <node concept="2ShNRf" id="5Ux4Lu39c_J" role="33vP2m">
-              <node concept="1pGfFk" id="5Ux4Lu39dSO" role="2ShVmc">
-                <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="5zc:~InMemoryEmbeddingStore.&lt;init&gt;()" resolve="InMemoryEmbeddingStore" />
+            <node concept="2OqwBi" id="6cEB6OF7wcb" role="33vP2m">
+              <node concept="37vLTw" id="6cEB6OF7vp7" role="2Oq$k0">
+                <ref role="3cqZAo" node="6cEB6OF7fxy" resolve="em" />
+              </node>
+              <node concept="liA8E" id="6cEB6OF7x9N" role="2OqNvi">
+                <ref role="37wK5l" node="6cEB6OF6VEf" resolve="getEmbeddingStore" />
               </node>
             </node>
           </node>
         </node>
         <node concept="3clFbH" id="Ygl26Kz80R" role="3cqZAp" />
-        <node concept="3J1_TO" id="Ygl26Kzgdt" role="3cqZAp">
-          <node concept="3uVAMA" id="Ygl26Kzi6O" role="1zxBo5">
-            <node concept="XOnhg" id="Ygl26Kzi6P" role="1zc67B">
-              <property role="TrG5h" value="e" />
-              <node concept="nSUau" id="Ygl26Kzi6Q" role="1tU5fm">
-                <node concept="3uibUv" id="Ygl26Kzj$Z" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="Ygl26Kzi6R" role="1zc67A">
-              <node concept="2xdQw9" id="Ygl26KzlL2" role="3cqZAp">
-                <property role="2xdLsb" value="gZ5fh_4/error" />
-                <node concept="Xl_RD" id="Ygl26KzlL4" role="9lYJi">
-                  <property role="Xl_RC" value="exception" />
-                </node>
-                <node concept="37vLTw" id="Ygl26KzoTw" role="9lYJj">
-                  <ref role="3cqZAo" node="Ygl26Kzi6P" resolve="e" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="Ygl26Kzgdv" role="1zxBo7">
-            <node concept="3cpWs8" id="5Ux4Lu39k4U" role="3cqZAp">
-              <node concept="3cpWsn" id="5Ux4Lu39k4V" role="3cpWs9">
-                <property role="TrG5h" value="embeddings" />
-                <node concept="3uibUv" id="5Ux4Lu39jVE" role="1tU5fm">
-                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
-                  <node concept="3uibUv" id="5Ux4Lu39jVH" role="11_B2D">
-                    <ref role="3uigEE" to="mhe9:~Embedding" resolve="Embedding" />
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="5Ux4Lu39k4W" role="33vP2m">
-                  <node concept="2OqwBi" id="5Ux4Lu39k4X" role="2Oq$k0">
-                    <node concept="37vLTw" id="5Ux4Lu39k4Y" role="2Oq$k0">
-                      <ref role="3cqZAo" node="5Ux4Lu38Exi" resolve="embeddingModel" />
-                    </node>
-                    <node concept="liA8E" id="5Ux4Lu39k4Z" role="2OqNvi">
-                      <ref role="37wK5l" to="ysyc:~EmbeddingModel.embedAll(java.util.List)" resolve="embedAll" />
-                      <node concept="37vLTw" id="5Ux4Lu39k50" role="37wK5m">
-                        <ref role="3cqZAo" node="2ZpX2r3Eh2U" resolve="allTextSegments" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="5Ux4Lu39k51" role="2OqNvi">
-                    <ref role="37wK5l" to="9dus:~Response.content()" resolve="content" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="5Ux4Lu39eHP" role="3cqZAp">
-              <node concept="2OqwBi" id="5Ux4Lu39fhs" role="3clFbG">
-                <node concept="37vLTw" id="5Ux4Lu39eHN" role="2Oq$k0">
-                  <ref role="3cqZAo" node="5Ux4Lu39a41" resolve="embeddingStore" />
-                </node>
-                <node concept="liA8E" id="5Ux4Lu39grE" role="2OqNvi">
-                  <ref role="37wK5l" to="ftn0:~EmbeddingStore.addAll(java.util.List,java.util.List)" resolve="addAll" />
-                  <node concept="37vLTw" id="5Ux4Lu39hEg" role="37wK5m">
-                    <ref role="3cqZAo" node="5Ux4Lu39k4V" resolve="embeddings" />
-                  </node>
-                  <node concept="37vLTw" id="1Rt_rvfWftR" role="37wK5m">
-                    <ref role="3cqZAo" node="2ZpX2r3Eh2U" resolve="allTextSegments" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="1Rt_rvfWjyM" role="3cqZAp" />
         <node concept="3cpWs8" id="1Rt_rvfWuVb" role="3cqZAp">
           <node concept="3cpWsn" id="1Rt_rvfWuVc" role="3cpWs9">
             <property role="TrG5h" value="builder" />
@@ -1021,6 +951,62 @@
               </node>
               <node concept="liA8E" id="1Rt_rvfXPS6" role="2OqNvi">
                 <ref role="37wK5l" to="rqif:~AiServices.build()" resolve="build" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="6cEB6OF76cL" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="2ZpX2r3EQhT" role="8Wnug">
+            <node concept="2OqwBi" id="2ZpX2r3ES4z" role="3clFbG">
+              <node concept="37vLTw" id="2ZpX2r3EQhR" role="2Oq$k0">
+                <ref role="3cqZAo" node="2ZpX2r3Eh2U" resolve="allTextSegments" />
+              </node>
+              <node concept="TSZUe" id="2ZpX2r3EUyo" role="2OqNvi">
+                <node concept="2ShNRf" id="2ZpX2r3EW4o" role="25WWJ7">
+                  <node concept="1pGfFk" id="2ZpX2r3EYFy" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="w6l:~TextSegment.&lt;init&gt;(java.lang.String,dev.langchain4j.data.document.Metadata)" resolve="TextSegment" />
+                    <node concept="Xl_RD" id="2ZpX2r3F2$8" role="37wK5m">
+                      <property role="Xl_RC" value="Consider the following knowledge base given by the JSON object below:\n\n```json\n" />
+                    </node>
+                    <node concept="2ShNRf" id="2ZpX2r3FjRP" role="37wK5m">
+                      <node concept="1pGfFk" id="2ZpX2r3Fngn" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="a0f5:~Metadata.&lt;init&gt;()" resolve="Metadata" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1X3_iC" id="6cEB6OF78m$" role="lGtFl">
+          <property role="3V$3am" value="statement" />
+          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+          <node concept="3clFbF" id="2ZpX2r3H3DK" role="8Wnug">
+            <node concept="2OqwBi" id="2ZpX2r3H3DL" role="3clFbG">
+              <node concept="37vLTw" id="2ZpX2r3H3DM" role="2Oq$k0">
+                <ref role="3cqZAo" node="2ZpX2r3Eh2U" resolve="allTextSegments" />
+              </node>
+              <node concept="TSZUe" id="2ZpX2r3H3DN" role="2OqNvi">
+                <node concept="2ShNRf" id="2ZpX2r3H3DO" role="25WWJ7">
+                  <node concept="1pGfFk" id="2ZpX2r3H3DP" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="w6l:~TextSegment.&lt;init&gt;(java.lang.String,dev.langchain4j.data.document.Metadata)" resolve="TextSegment" />
+                    <node concept="Xl_RD" id="2ZpX2r3H3DQ" role="37wK5m">
+                      <property role="Xl_RC" value="\n```" />
+                    </node>
+                    <node concept="2ShNRf" id="2ZpX2r3H3DR" role="37wK5m">
+                      <node concept="1pGfFk" id="2ZpX2r3H3DS" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="a0f5:~Metadata.&lt;init&gt;()" resolve="Metadata" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -1585,6 +1571,567 @@
     </node>
     <node concept="2tJIrI" id="2Mi1G8jcX_A" role="jymVt" />
     <node concept="3Tm1VV" id="2Mi1G8jcX$Z" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="6cEB6OEV0Sq">
+    <property role="TrG5h" value="EmbeddingsManager" />
+    <node concept="2tJIrI" id="6cEB6OEV0T9" role="jymVt" />
+    <node concept="Wx3nA" id="6cEB6OF1hEL" role="jymVt">
+      <property role="TrG5h" value="instance" />
+      <node concept="3Tm6S6" id="6cEB6OF1h_q" role="1B3o_S" />
+      <node concept="3uibUv" id="6cEB6OF1hDS" role="1tU5fm">
+        <ref role="3uigEE" node="6cEB6OEV0Sq" resolve="EmbeddingsCache" />
+      </node>
+      <node concept="10Nm6u" id="6cEB6OF1hJJ" role="33vP2m" />
+    </node>
+    <node concept="2YIFZL" id="6cEB6OEV47M" role="jymVt">
+      <property role="TrG5h" value="getInstance" />
+      <node concept="3clFbS" id="6cEB6OEV47P" role="3clF47">
+        <node concept="3clFbJ" id="6cEB6OF1hKz" role="3cqZAp">
+          <node concept="3clFbC" id="6cEB6OF1hX0" role="3clFbw">
+            <node concept="10Nm6u" id="6cEB6OF1i8m" role="3uHU7w" />
+            <node concept="37vLTw" id="6cEB6OF1hOV" role="3uHU7B">
+              <ref role="3cqZAo" node="6cEB6OF1hEL" resolve="instance" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6cEB6OF1hK_" role="3clFbx">
+            <node concept="3clFbF" id="6cEB6OF1i9H" role="3cqZAp">
+              <node concept="37vLTI" id="6cEB6OF1imd" role="3clFbG">
+                <node concept="2ShNRf" id="6cEB6OF1inE" role="37vLTx">
+                  <node concept="1pGfFk" id="6cEB6OF1jFX" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" node="6cEB6OEV4eX" resolve="EmbeddingsCache" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6cEB6OF1i9G" role="37vLTJ">
+                  <ref role="3cqZAo" node="6cEB6OF1hEL" resolve="instance" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6cEB6OF1NGF" role="3cqZAp">
+          <node concept="37vLTw" id="6cEB6OF1NGD" role="3clFbG">
+            <ref role="3cqZAo" node="6cEB6OF1hEL" resolve="instance" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6cEB6OEV47t" role="1B3o_S" />
+      <node concept="3uibUv" id="6cEB6OEV48f" role="3clF45">
+        <ref role="3uigEE" node="6cEB6OEV0Sq" resolve="EmbeddingsCache" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6cEB6OEV492" role="jymVt" />
+    <node concept="312cEg" id="6cEB6OF1Ijs" role="jymVt">
+      <property role="TrG5h" value="embeddingsStore" />
+      <node concept="3Tm6S6" id="6cEB6OF1Ijt" role="1B3o_S" />
+      <node concept="3uibUv" id="6cEB6OF2UfN" role="1tU5fm">
+        <ref role="3uigEE" to="5zc:~InMemoryEmbeddingStore" resolve="InMemoryEmbeddingStore" />
+        <node concept="3uibUv" id="6cEB6OF2UP3" role="11_B2D">
+          <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="6cEB6OF1k5y" role="33vP2m">
+        <node concept="1pGfFk" id="6cEB6OF2Ye7" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="37wK5l" to="5zc:~InMemoryEmbeddingStore.&lt;init&gt;()" resolve="InMemoryEmbeddingStore" />
+        </node>
+      </node>
+    </node>
+    <node concept="312cEg" id="6cEB6OF3u9c" role="jymVt">
+      <property role="TrG5h" value="alreadyAvailableEmbeddings" />
+      <node concept="3Tm6S6" id="6cEB6OF3u9d" role="1B3o_S" />
+      <node concept="3uibUv" id="6cEB6OF3u9e" role="1tU5fm">
+        <ref role="3uigEE" to="33ny:~Set" resolve="Set" />
+        <node concept="17QB3L" id="6cEB6OF3v8G" role="11_B2D" />
+      </node>
+      <node concept="2ShNRf" id="6cEB6OF3u9g" role="33vP2m">
+        <node concept="1pGfFk" id="6cEB6OF3xsN" role="2ShVmc">
+          <property role="373rjd" value="true" />
+          <ref role="37wK5l" to="33ny:~HashSet.&lt;init&gt;()" resolve="HashSet" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6cEB6OF1Gjr" role="jymVt" />
+    <node concept="312cEg" id="6cEB6OF6tBa" role="jymVt">
+      <property role="TrG5h" value="cache" />
+      <node concept="3Tm6S6" id="6cEB6OF6tBb" role="1B3o_S" />
+      <node concept="3uibUv" id="6cEB6OF3dAs" role="1tU5fm">
+        <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+      </node>
+    </node>
+    <node concept="312cEg" id="6cEB6OF6tBd" role="jymVt">
+      <property role="TrG5h" value="cachedStrings" />
+      <node concept="3Tm6S6" id="6cEB6OF6tBe" role="1B3o_S" />
+      <node concept="3uibUv" id="6cEB6OF3y_c" role="1tU5fm">
+        <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6cEB6OF6t87" role="jymVt" />
+    <node concept="3clFbW" id="6cEB6OEV4eX" role="jymVt">
+      <node concept="3cqZAl" id="6cEB6OEV4eZ" role="3clF45" />
+      <node concept="3Tm6S6" id="6cEB6OEV4fs" role="1B3o_S" />
+      <node concept="3clFbS" id="6cEB6OEV4f1" role="3clF47">
+        <node concept="3cpWs8" id="6cEB6OF36GA" role="3cqZAp">
+          <node concept="3cpWsn" id="6cEB6OF36GB" role="3cpWs9">
+            <property role="TrG5h" value="systemDir" />
+            <node concept="3uibUv" id="6cEB6OF36DF" role="1tU5fm">
+              <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+            </node>
+            <node concept="2YIFZM" id="6cEB6OF36GC" role="33vP2m">
+              <ref role="37wK5l" to="bd8o:~PathManager.getSystemDir()" resolve="getSystemDir" />
+              <ref role="1Pybhc" to="bd8o:~PathManager" resolve="PathManager" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6cEB6OF6ojV" role="3cqZAp">
+          <node concept="37vLTI" id="6cEB6OF6ojX" role="3clFbG">
+            <node concept="2OqwBi" id="6cEB6OF3dGh" role="37vLTx">
+              <node concept="37vLTw" id="6cEB6OF3dGi" role="2Oq$k0">
+                <ref role="3cqZAo" node="6cEB6OF36GB" resolve="systemDir" />
+              </node>
+              <node concept="liA8E" id="6cEB6OF3dGj" role="2OqNvi">
+                <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
+                <node concept="Xl_RD" id="6cEB6OF3dGk" role="37wK5m">
+                  <property role="Xl_RC" value="embeddings_store_cache.json" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="6cEB6OF6ok1" role="37vLTJ">
+              <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="cache" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6cEB6OF6p5O" role="3cqZAp">
+          <node concept="37vLTI" id="6cEB6OF6p5Q" role="3clFbG">
+            <node concept="2OqwBi" id="6cEB6OF3y_d" role="37vLTx">
+              <node concept="37vLTw" id="6cEB6OF3y_e" role="2Oq$k0">
+                <ref role="3cqZAo" node="6cEB6OF36GB" resolve="systemDir" />
+              </node>
+              <node concept="liA8E" id="6cEB6OF3y_f" role="2OqNvi">
+                <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
+                <node concept="Xl_RD" id="6cEB6OF3y_g" role="37wK5m">
+                  <property role="Xl_RC" value="embeddings_strings_cache.txt" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="6cEB6OF6p5U" role="37vLTJ">
+              <ref role="3cqZAo" node="6cEB6OF6tBd" resolve="cachedStrings" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="6cEB6OF3eMt" role="3cqZAp" />
+        <node concept="3clFbJ" id="6cEB6OF3fqp" role="3cqZAp">
+          <node concept="3clFbS" id="6cEB6OF3fqr" role="3clFbx">
+            <node concept="3clFbF" id="6cEB6OF3iTG" role="3cqZAp">
+              <node concept="37vLTI" id="6cEB6OF3j$v" role="3clFbG">
+                <node concept="2YIFZM" id="6cEB6OF3kQA" role="37vLTx">
+                  <ref role="37wK5l" to="5zc:~InMemoryEmbeddingStore.fromFile(java.nio.file.Path)" resolve="fromFile" />
+                  <ref role="1Pybhc" to="5zc:~InMemoryEmbeddingStore" resolve="InMemoryEmbeddingStore" />
+                  <node concept="37vLTw" id="6cEB6OF3l5c" role="37wK5m">
+                    <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="cache" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6cEB6OF3iTE" role="37vLTJ">
+                  <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="embeddingsStore" />
+                </node>
+              </node>
+            </node>
+            <node concept="3J1_TO" id="6cEB6OF3Nfh" role="3cqZAp">
+              <node concept="3clFbS" id="6cEB6OF3Nfi" role="1zxBo7">
+                <node concept="3clFbF" id="6cEB6OF3C6j" role="3cqZAp">
+                  <node concept="2OqwBi" id="6cEB6OF3DBA" role="3clFbG">
+                    <node concept="37vLTw" id="6cEB6OF3C6f" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6cEB6OF3u9c" resolve="alreadyAvailableEmbeddings" />
+                    </node>
+                    <node concept="liA8E" id="6cEB6OF3Izm" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Set.addAll(java.util.Collection)" resolve="addAll" />
+                      <node concept="2YIFZM" id="6cEB6OF3AUW" role="37wK5m">
+                        <ref role="37wK5l" to="eoo2:~Files.readAllLines(java.nio.file.Path)" resolve="readAllLines" />
+                        <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                        <node concept="37vLTw" id="6cEB6OF3Baa" role="37wK5m">
+                          <ref role="3cqZAo" node="6cEB6OF6tBd" resolve="cachedStrings" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3uVAMA" id="6cEB6OF3Nfk" role="1zxBo5">
+                <node concept="3clFbS" id="6cEB6OF3Nfl" role="1zc67A" />
+                <node concept="XOnhg" id="6cEB6OF3Nfm" role="1zc67B">
+                  <property role="TrG5h" value="e" />
+                  <node concept="nSUau" id="6cEB6OF3Nfn" role="1tU5fm">
+                    <node concept="3uibUv" id="6cEB6OF3Nfj" role="nSUat">
+                      <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2YIFZM" id="6cEB6OF3ikw" role="3clFbw">
+            <ref role="37wK5l" to="eoo2:~Files.exists(java.nio.file.Path,java.nio.file.LinkOption...)" resolve="exists" />
+            <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+            <node concept="37vLTw" id="6cEB6OF3iJW" role="37wK5m">
+              <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="cache" />
+            </node>
+          </node>
+          <node concept="9aQIb" id="6cEB6OF3lsf" role="9aQIa">
+            <node concept="3clFbS" id="6cEB6OF3lsg" role="9aQI4">
+              <node concept="3clFbF" id="6cEB6OF3lFD" role="3cqZAp">
+                <node concept="37vLTI" id="6cEB6OF3m_P" role="3clFbG">
+                  <node concept="2ShNRf" id="6cEB6OF3mPA" role="37vLTx">
+                    <node concept="1pGfFk" id="6cEB6OF3og8" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="5zc:~InMemoryEmbeddingStore.&lt;init&gt;()" resolve="InMemoryEmbeddingStore" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="6cEB6OF3lFC" role="37vLTJ">
+                    <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="embeddingsStore" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6cEB6OF1NbB" role="jymVt" />
+    <node concept="3clFb_" id="6cEB6OF1PAC" role="jymVt">
+      <property role="TrG5h" value="addToEmbeddingStore" />
+      <node concept="3clFbS" id="6cEB6OF1PAF" role="3clF47">
+        <node concept="3cpWs8" id="6cEB6OF3VmA" role="3cqZAp">
+          <node concept="3cpWsn" id="6cEB6OF3VmB" role="3cpWs9">
+            <property role="TrG5h" value="text" />
+            <node concept="17QB3L" id="6cEB6OF3WJl" role="1tU5fm" />
+            <node concept="2OqwBi" id="6cEB6OF3VmC" role="33vP2m">
+              <node concept="37vLTw" id="6cEB6OF3VmD" role="2Oq$k0">
+                <ref role="3cqZAo" node="6cEB6OF1QTR" resolve="ts" />
+              </node>
+              <node concept="liA8E" id="6cEB6OF3VmE" role="2OqNvi">
+                <ref role="37wK5l" to="w6l:~TextSegment.text()" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6cEB6OF40Cy" role="3cqZAp">
+          <node concept="3cpWsn" id="6cEB6OF40Cx" role="3cpWs9">
+            <property role="TrG5h" value="sha256" />
+            <node concept="17QB3L" id="6cEB6OF4bZv" role="1tU5fm" />
+            <node concept="2OqwBi" id="6cEB6OF43ES" role="33vP2m">
+              <node concept="2OqwBi" id="6cEB6OF43gO" role="2Oq$k0">
+                <node concept="2YIFZM" id="6cEB6OF42QP" role="2Oq$k0">
+                  <ref role="1Pybhc" to="kscp:~Hashing" resolve="Hashing" />
+                  <ref role="37wK5l" to="kscp:~Hashing.sha256()" resolve="sha256" />
+                </node>
+                <node concept="liA8E" id="6cEB6OF43gP" role="2OqNvi">
+                  <ref role="37wK5l" to="kscp:~HashFunction.hashString(java.lang.CharSequence,java.nio.charset.Charset)" resolve="hashString" />
+                  <node concept="37vLTw" id="6cEB6OF43gQ" role="37wK5m">
+                    <ref role="3cqZAo" node="6cEB6OF3VmB" resolve="text" />
+                  </node>
+                  <node concept="10M0yZ" id="6cEB6OF4bt_" role="37wK5m">
+                    <ref role="3cqZAo" to="7x5y:~StandardCharsets.UTF_8" resolve="UTF_8" />
+                    <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
+                  </node>
+                </node>
+              </node>
+              <node concept="liA8E" id="6cEB6OF43ET" role="2OqNvi">
+                <ref role="37wK5l" to="kscp:~HashCode.toString()" resolve="toString" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6cEB6OF4dXn" role="3cqZAp">
+          <node concept="3clFbS" id="6cEB6OF4dXp" role="3clFbx">
+            <node concept="3cpWs6" id="6cEB6OF4lRL" role="3cqZAp" />
+          </node>
+          <node concept="2OqwBi" id="6cEB6OF4gV_" role="3clFbw">
+            <node concept="37vLTw" id="6cEB6OF4esm" role="2Oq$k0">
+              <ref role="3cqZAo" node="6cEB6OF3u9c" resolve="alreadyAvailableEmbeddings" />
+            </node>
+            <node concept="liA8E" id="6cEB6OF4kjC" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object)" resolve="contains" />
+              <node concept="37vLTw" id="6cEB6OF4kUn" role="37wK5m">
+                <ref role="3cqZAo" node="6cEB6OF40Cx" resolve="sha256" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6cEB6OF4o0g" role="3cqZAp">
+          <node concept="2OqwBi" id="6cEB6OF4uPb" role="3clFbG">
+            <node concept="37vLTw" id="6cEB6OF4s7t" role="2Oq$k0">
+              <ref role="3cqZAo" node="6cEB6OF3u9c" resolve="alreadyAvailableEmbeddings" />
+            </node>
+            <node concept="liA8E" id="6cEB6OF4x_5" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object)" resolve="add" />
+              <node concept="37vLTw" id="6cEB6OF4yej" role="37wK5m">
+                <ref role="3cqZAo" node="6cEB6OF40Cx" resolve="sha256" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6cEB6OF3q$A" role="3cqZAp">
+          <node concept="2OqwBi" id="6cEB6OF3r2M" role="3clFbG">
+            <node concept="37vLTw" id="6cEB6OF3q$$" role="2Oq$k0">
+              <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="embeddingsStore" />
+            </node>
+            <node concept="liA8E" id="6cEB6OF4zH4" role="2OqNvi">
+              <ref role="37wK5l" to="5zc:~InMemoryEmbeddingStore.add(java.lang.String,dev.langchain4j.data.embedding.Embedding)" resolve="add" />
+              <node concept="37vLTw" id="6cEB6OF4_Kz" role="37wK5m">
+                <ref role="3cqZAo" node="6cEB6OF3VmB" resolve="text" />
+              </node>
+              <node concept="2OqwBi" id="6cEB6OF4KvM" role="37wK5m">
+                <node concept="2OqwBi" id="6cEB6OF4EAc" role="2Oq$k0">
+                  <node concept="37vLTw" id="6cEB6OF4DCF" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6cEB6OF2O8J" resolve="embeddingModel" />
+                  </node>
+                  <node concept="liA8E" id="6cEB6OF4Fun" role="2OqNvi">
+                    <ref role="37wK5l" to="ysyc:~EmbeddingModel.embed(java.lang.String)" resolve="embed" />
+                    <node concept="37vLTw" id="6cEB6OF4H$I" role="37wK5m">
+                      <ref role="3cqZAo" node="6cEB6OF3VmB" resolve="text" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="6cEB6OF4NvE" role="2OqNvi">
+                  <ref role="37wK5l" to="9dus:~Response.content()" resolve="content" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6cEB6OF1NMW" role="1B3o_S" />
+      <node concept="37vLTG" id="6cEB6OF2O8J" role="3clF46">
+        <property role="TrG5h" value="embeddingModel" />
+        <node concept="3uibUv" id="6cEB6OF2QZJ" role="1tU5fm">
+          <ref role="3uigEE" to="ysyc:~EmbeddingModel" resolve="EmbeddingModel" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6cEB6OF1QTR" role="3clF46">
+        <property role="TrG5h" value="ts" />
+        <node concept="3uibUv" id="6cEB6OF1QTQ" role="1tU5fm">
+          <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6cEB6OF3SaT" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="6cEB6OF4TCP" role="jymVt" />
+    <node concept="3clFb_" id="6cEB6OF4R80" role="jymVt">
+      <property role="TrG5h" value="addAllToEmbeddingStore" />
+      <node concept="3clFbS" id="6cEB6OF4R81" role="3clF47">
+        <node concept="3cpWs8" id="6cEB6OF5CkT" role="3cqZAp">
+          <node concept="3cpWsn" id="6cEB6OF5CkW" role="3cpWs9">
+            <property role="TrG5h" value="notYetEmbedded" />
+            <node concept="_YKpA" id="6cEB6OF5CkY" role="1tU5fm">
+              <node concept="3uibUv" id="6cEB6OF5CkZ" role="_ZDj9">
+                <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
+              </node>
+            </node>
+            <node concept="2ShNRf" id="6cEB6OF5O2_" role="33vP2m">
+              <node concept="Tc6Ow" id="6cEB6OF5QCE" role="2ShVmc" />
+            </node>
+          </node>
+        </node>
+        <node concept="2Gpval" id="6cEB6OF51IX" role="3cqZAp">
+          <node concept="2GrKxI" id="6cEB6OF51IZ" role="2Gsz3X">
+            <property role="TrG5h" value="ts" />
+          </node>
+          <node concept="37vLTw" id="6cEB6OF55fw" role="2GsD0m">
+            <ref role="3cqZAo" node="6cEB6OF4R8G" resolve="tss" />
+          </node>
+          <node concept="3clFbS" id="6cEB6OF51J3" role="2LFqv$">
+            <node concept="3cpWs8" id="6cEB6OF4R82" role="3cqZAp">
+              <node concept="3cpWsn" id="6cEB6OF4R83" role="3cpWs9">
+                <property role="TrG5h" value="text" />
+                <node concept="17QB3L" id="6cEB6OF4R84" role="1tU5fm" />
+                <node concept="2OqwBi" id="6cEB6OF4R85" role="33vP2m">
+                  <node concept="2GrUjf" id="6cEB6OF57bd" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="6cEB6OF51IZ" resolve="ts" />
+                  </node>
+                  <node concept="liA8E" id="6cEB6OF4R87" role="2OqNvi">
+                    <ref role="37wK5l" to="w6l:~TextSegment.text()" resolve="text" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="6cEB6OF4R88" role="3cqZAp">
+              <node concept="3cpWsn" id="6cEB6OF4R89" role="3cpWs9">
+                <property role="TrG5h" value="sha256" />
+                <node concept="17QB3L" id="6cEB6OF4R8a" role="1tU5fm" />
+                <node concept="2OqwBi" id="6cEB6OF4R8b" role="33vP2m">
+                  <node concept="2OqwBi" id="6cEB6OF4R8c" role="2Oq$k0">
+                    <node concept="2YIFZM" id="6cEB6OF4R8d" role="2Oq$k0">
+                      <ref role="1Pybhc" to="kscp:~Hashing" resolve="Hashing" />
+                      <ref role="37wK5l" to="kscp:~Hashing.sha256()" resolve="sha256" />
+                    </node>
+                    <node concept="liA8E" id="6cEB6OF4R8e" role="2OqNvi">
+                      <ref role="37wK5l" to="kscp:~HashFunction.hashString(java.lang.CharSequence,java.nio.charset.Charset)" resolve="hashString" />
+                      <node concept="37vLTw" id="6cEB6OF4R8f" role="37wK5m">
+                        <ref role="3cqZAo" node="6cEB6OF4R83" resolve="text" />
+                      </node>
+                      <node concept="10M0yZ" id="6cEB6OF4R8g" role="37wK5m">
+                        <ref role="3cqZAo" to="7x5y:~StandardCharsets.UTF_8" resolve="UTF_8" />
+                        <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6cEB6OF4R8h" role="2OqNvi">
+                    <ref role="37wK5l" to="kscp:~HashCode.toString()" resolve="toString" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="6cEB6OF4R8i" role="3cqZAp">
+              <node concept="3clFbS" id="6cEB6OF4R8j" role="3clFbx">
+                <node concept="3clFbF" id="6cEB6OF5acB" role="3cqZAp">
+                  <node concept="2OqwBi" id="6cEB6OF5can" role="3clFbG">
+                    <node concept="37vLTw" id="6cEB6OF5ac_" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6cEB6OF5CkW" resolve="tss" />
+                    </node>
+                    <node concept="TSZUe" id="6cEB6OF5Zaj" role="2OqNvi">
+                      <node concept="2GrUjf" id="6cEB6OF5Zal" role="25WWJ7">
+                        <ref role="2Gs0qQ" node="6cEB6OF51IZ" resolve="ts" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="6cEB6OF5lu2" role="3cqZAp">
+                  <node concept="2OqwBi" id="6cEB6OF5lu3" role="3clFbG">
+                    <node concept="37vLTw" id="6cEB6OF5lu4" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6cEB6OF3u9c" resolve="alreadyAvailableEmbeddings" />
+                    </node>
+                    <node concept="liA8E" id="6cEB6OF5lu5" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~Set.add(java.lang.Object)" resolve="add" />
+                      <node concept="37vLTw" id="6cEB6OF5lu6" role="37wK5m">
+                        <ref role="3cqZAo" node="6cEB6OF4R89" resolve="sha256" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="6cEB6OF5TON" role="3clFbw">
+                <node concept="2OqwBi" id="6cEB6OF5TOP" role="3fr31v">
+                  <node concept="37vLTw" id="6cEB6OF5TOQ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6cEB6OF3u9c" resolve="alreadyAvailableEmbeddings" />
+                  </node>
+                  <node concept="liA8E" id="6cEB6OF5TOR" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~Set.contains(java.lang.Object)" resolve="contains" />
+                    <node concept="37vLTw" id="6cEB6OF5TOS" role="37wK5m">
+                      <ref role="3cqZAo" node="6cEB6OF4R89" resolve="sha256" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6cEB6OF4R8u" role="3cqZAp">
+          <node concept="2OqwBi" id="6cEB6OF4R8v" role="3clFbG">
+            <node concept="37vLTw" id="6cEB6OF4R8w" role="2Oq$k0">
+              <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="embeddingsStore" />
+            </node>
+            <node concept="liA8E" id="6cEB6OF4R8x" role="2OqNvi">
+              <ref role="37wK5l" to="ftn0:~EmbeddingStore.addAll(java.util.List,java.util.List)" resolve="addAll" />
+              <node concept="2OqwBi" id="6cEB6OF4R8z" role="37wK5m">
+                <node concept="2OqwBi" id="6cEB6OF4R8$" role="2Oq$k0">
+                  <node concept="37vLTw" id="6cEB6OF4R8_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6cEB6OF4R8E" resolve="embeddingModel" />
+                  </node>
+                  <node concept="liA8E" id="6cEB6OF4R8A" role="2OqNvi">
+                    <ref role="37wK5l" to="ysyc:~EmbeddingModel.embedAll(java.util.List)" resolve="embedAll" />
+                    <node concept="37vLTw" id="6cEB6OF4R8B" role="37wK5m">
+                      <ref role="3cqZAo" node="6cEB6OF5CkW" resolve="tss" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="6cEB6OF4R8C" role="2OqNvi">
+                  <ref role="37wK5l" to="9dus:~Response.content()" resolve="content" />
+                </node>
+              </node>
+              <node concept="37vLTw" id="6cEB6OF5AzY" role="37wK5m">
+                <ref role="3cqZAo" node="6cEB6OF5CkW" resolve="tss" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6cEB6OF66na" role="3cqZAp">
+          <node concept="2OqwBi" id="6cEB6OF68rA" role="3clFbG">
+            <node concept="37vLTw" id="6cEB6OF66n8" role="2Oq$k0">
+              <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="embeddingsStore" />
+            </node>
+            <node concept="liA8E" id="6cEB6OF6lZQ" role="2OqNvi">
+              <ref role="37wK5l" to="5zc:~InMemoryEmbeddingStore.serializeToFile(java.nio.file.Path)" resolve="serializeToFile" />
+              <node concept="37vLTw" id="6cEB6OF6vB5" role="37wK5m">
+                <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="cache" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3J1_TO" id="6cEB6OF6Mgi" role="3cqZAp">
+          <node concept="3clFbS" id="6cEB6OF6Mgj" role="1zxBo7">
+            <node concept="3clFbF" id="6cEB6OF6$as" role="3cqZAp">
+              <node concept="2YIFZM" id="6cEB6OF6_7i" role="3clFbG">
+                <ref role="37wK5l" to="eoo2:~Files.write(java.nio.file.Path,java.lang.Iterable,java.nio.file.OpenOption...)" resolve="write" />
+                <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                <node concept="37vLTw" id="6cEB6OF6By8" role="37wK5m">
+                  <ref role="3cqZAo" node="6cEB6OF6tBd" resolve="cachedStrings" />
+                </node>
+                <node concept="37vLTw" id="6cEB6OF6J3o" role="37wK5m">
+                  <ref role="3cqZAo" node="6cEB6OF3u9c" resolve="alreadyAvailableEmbeddings" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="6cEB6OF6Mgl" role="1zxBo5">
+            <node concept="3clFbS" id="6cEB6OF6Mgm" role="1zc67A" />
+            <node concept="XOnhg" id="6cEB6OF6Mgn" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="6cEB6OF6Mgo" role="1tU5fm">
+                <node concept="3uibUv" id="6cEB6OF6Mgk" role="nSUat">
+                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6cEB6OF4R8D" role="1B3o_S" />
+      <node concept="37vLTG" id="6cEB6OF4R8E" role="3clF46">
+        <property role="TrG5h" value="embeddingModel" />
+        <node concept="3uibUv" id="6cEB6OF4R8F" role="1tU5fm">
+          <ref role="3uigEE" to="ysyc:~EmbeddingModel" resolve="EmbeddingModel" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6cEB6OF4R8G" role="3clF46">
+        <property role="TrG5h" value="tss" />
+        <node concept="_YKpA" id="6cEB6OF4WTl" role="1tU5fm">
+          <node concept="3uibUv" id="6cEB6OF4WTm" role="_ZDj9">
+            <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
+          </node>
+        </node>
+      </node>
+      <node concept="3cqZAl" id="6cEB6OF4R8I" role="3clF45" />
+    </node>
+    <node concept="2tJIrI" id="6cEB6OF6QCw" role="jymVt" />
+    <node concept="3clFb_" id="6cEB6OF6VEf" role="jymVt">
+      <property role="TrG5h" value="getEmbeddingStore" />
+      <node concept="3clFbS" id="6cEB6OF6VEi" role="3clF47">
+        <node concept="3clFbF" id="6cEB6OF6YZH" role="3cqZAp">
+          <node concept="37vLTw" id="6cEB6OF6YZG" role="3clFbG">
+            <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="embeddingsStore" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6cEB6OF6TW0" role="1B3o_S" />
+      <node concept="3uibUv" id="6cEB6OF6VgD" role="3clF45">
+        <ref role="3uigEE" to="ftn0:~EmbeddingStore" resolve="EmbeddingStore" />
+        <node concept="3uibUv" id="6cEB6OF74he" role="11_B2D">
+          <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6cEB6OF1NbD" role="jymVt" />
+    <node concept="3Tm1VV" id="6cEB6OEV0Sr" role="1B3o_S" />
   </node>
 </model>
 
