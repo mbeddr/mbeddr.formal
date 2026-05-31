@@ -5,6 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
+    <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
   </languages>
   <imports>
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
@@ -15,6 +16,8 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="g51k" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor.cells(MPS.Editor/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
+    <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -46,6 +49,7 @@
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
+      <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -85,6 +89,7 @@
         <child id="1068580123134" name="parameter" index="3clF46" />
         <child id="1068580123135" name="body" index="3clF47" />
       </concept>
+      <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -184,6 +189,15 @@
       </concept>
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
+        <child id="1197683466920" name="keyType" index="3rvQeY" />
+        <child id="1197683475734" name="valueType" index="3rvSg0" />
+      </concept>
+      <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV" />
+      <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
+        <child id="1197932505799" name="map" index="3ElQJh" />
+        <child id="1197932525128" name="key" index="3ElVtu" />
+      </concept>
     </language>
   </registry>
   <node concept="312cEu" id="1Rt_rvg2t$C">
@@ -348,6 +362,22 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="4FDL7okt9Tl" role="3cqZAp">
+          <node concept="3cpWsn" id="4FDL7okt9Tm" role="3cpWs9">
+            <property role="TrG5h" value="repository" />
+            <node concept="3uibUv" id="4FDL7okt9I9" role="1tU5fm">
+              <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+            </node>
+            <node concept="2OqwBi" id="4FDL7okt9Tn" role="33vP2m">
+              <node concept="37vLTw" id="4FDL7okt9To" role="2Oq$k0">
+                <ref role="3cqZAo" node="EyxjoF2LXy" resolve="project" />
+              </node>
+              <node concept="liA8E" id="4FDL7okt9Tp" role="2OqNvi">
+                <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="1QHqEO" id="EyxjoF2LX5" role="3cqZAp">
           <node concept="1QHqEC" id="EyxjoF2LX6" role="1QHqEI">
             <node concept="3clFbS" id="EyxjoF2LX7" role="1bW5cS">
@@ -357,19 +387,54 @@
                   <node concept="3uibUv" id="EyxjoF2LXa" role="1tU5fm">
                     <ref role="3uigEE" to="7a0s:6qGpHl7IHpK" resolve="HeadlessEditorComponent" />
                   </node>
-                  <node concept="2ShNRf" id="EyxjoF2LXb" role="33vP2m">
-                    <node concept="1pGfFk" id="EyxjoF2LXc" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="7a0s:2iNJDZP2RE6" resolve="HeadlessEditorComponent" />
-                      <node concept="2OqwBi" id="EyxjoF2LXd" role="37wK5m">
-                        <node concept="37vLTw" id="EyxjoF2LXT" role="2Oq$k0">
-                          <ref role="3cqZAo" node="EyxjoF2LXy" resolve="project" />
-                        </node>
-                        <node concept="liA8E" id="EyxjoF2LXf" role="2OqNvi">
-                          <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                  <node concept="3EllGN" id="4FDL7oksEVS" role="33vP2m">
+                    <node concept="37vLTw" id="4FDL7okt9Tq" role="3ElVtu">
+                      <ref role="3cqZAo" node="4FDL7okt9Tm" resolve="repository" />
+                    </node>
+                    <node concept="37vLTw" id="4FDL7okt9ti" role="3ElQJh">
+                      <ref role="3cqZAo" node="4FDL7oksAfn" resolve="repo2HeadlessComp" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbJ" id="4FDL7oksIf6" role="3cqZAp">
+                <node concept="3clFbS" id="4FDL7oksIf8" role="3clFbx">
+                  <node concept="3clFbF" id="4FDL7oksSlY" role="3cqZAp">
+                    <node concept="37vLTI" id="4FDL7oksWto" role="3clFbG">
+                      <node concept="37vLTw" id="4FDL7oksSlW" role="37vLTJ">
+                        <ref role="3cqZAo" node="EyxjoF2LX9" resolve="component" />
+                      </node>
+                      <node concept="2ShNRf" id="4FDL7oksYms" role="37vLTx">
+                        <node concept="1pGfFk" id="4FDL7oksYmt" role="2ShVmc">
+                          <property role="373rjd" value="true" />
+                          <ref role="37wK5l" to="7a0s:2iNJDZP2RE6" />
+                          <node concept="37vLTw" id="4FDL7okt9Tr" role="37wK5m">
+                            <ref role="3cqZAo" node="4FDL7okt9Tm" resolve="repository" />
+                          </node>
                         </node>
                       </node>
                     </node>
+                  </node>
+                  <node concept="3clFbF" id="4FDL7oksZdN" role="3cqZAp">
+                    <node concept="37vLTI" id="4FDL7okt6XI" role="3clFbG">
+                      <node concept="37vLTw" id="4FDL7okt7wK" role="37vLTx">
+                        <ref role="3cqZAo" node="EyxjoF2LX9" resolve="component" />
+                      </node>
+                      <node concept="3EllGN" id="4FDL7okt0ps" role="37vLTJ">
+                        <node concept="37vLTw" id="4FDL7okt9Ts" role="3ElVtu">
+                          <ref role="3cqZAo" node="4FDL7okt9Tm" resolve="repository" />
+                        </node>
+                        <node concept="37vLTw" id="4FDL7oksZdL" role="3ElQJh">
+                          <ref role="3cqZAo" node="4FDL7oksAfn" resolve="repo2HeadlessComp" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbC" id="4FDL7oksQvX" role="3clFbw">
+                  <node concept="10Nm6u" id="4FDL7oksR$1" role="3uHU7w" />
+                  <node concept="37vLTw" id="4FDL7oksJs_" role="3uHU7B">
+                    <ref role="3cqZAo" node="EyxjoF2LX9" resolve="component" />
                   </node>
                 </node>
               </node>
@@ -475,13 +540,8 @@
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="EyxjoF2LXt" role="ukAjM">
-            <node concept="37vLTw" id="EyxjoF2LXU" role="2Oq$k0">
-              <ref role="3cqZAo" node="EyxjoF2LXy" resolve="project" />
-            </node>
-            <node concept="liA8E" id="EyxjoF2LXv" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
-            </node>
+          <node concept="37vLTw" id="4FDL7oktb$Y" role="ukAjM">
+            <ref role="3cqZAo" node="4FDL7okt9Tm" resolve="repository" />
           </node>
         </node>
         <node concept="3cpWs6" id="EyxjoF2LXw" role="3cqZAp">
@@ -493,7 +553,7 @@
     </node>
     <node concept="2tJIrI" id="4Ou7HgAf$TU" role="jymVt" />
     <node concept="2YIFZL" id="4Ou7HgAfADa" role="jymVt">
-      <property role="TrG5h" value="removeComponents" />
+      <property role="TrG5h" value="removeSwingComponents" />
       <node concept="3clFbS" id="4Ou7HgAf_s4" role="3clF47">
         <node concept="3clFbJ" id="4Ou7HgAfB75" role="3cqZAp">
           <node concept="2ZW3vV" id="4Ou7HgAfBWp" role="3clFbw">
@@ -644,6 +704,23 @@
       <node concept="3cqZAl" id="4Ou7HgAf_H_" role="3clF45" />
       <node concept="3Tm6S6" id="4Ou7HgAf_9M" role="1B3o_S" />
     </node>
+    <node concept="2tJIrI" id="4FDL7oksdUb" role="jymVt" />
+    <node concept="2tJIrI" id="4FDL7oksdUc" role="jymVt" />
+    <node concept="Wx3nA" id="4FDL7oksAfn" role="jymVt">
+      <property role="TrG5h" value="repo2HeadlessComp" />
+      <node concept="3rvAFt" id="4FDL7okseYs" role="1tU5fm">
+        <node concept="3uibUv" id="4FDL7oksfKG" role="3rvQeY">
+          <ref role="3uigEE" to="lui2:~SRepository" resolve="SRepository" />
+        </node>
+        <node concept="3uibUv" id="4FDL7oksfR8" role="3rvSg0">
+          <ref role="3uigEE" to="7a0s:6qGpHl7IHpK" resolve="HeadlessEditorComponent" />
+        </node>
+      </node>
+      <node concept="2ShNRf" id="4FDL7oksgF2" role="33vP2m">
+        <node concept="3rGOSV" id="4FDL7oks$Sd" role="2ShVmc" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4FDL7oks$V4" role="jymVt" />
     <node concept="3Tm1VV" id="1Rt_rvg2t$D" role="1B3o_S" />
   </node>
 </model>

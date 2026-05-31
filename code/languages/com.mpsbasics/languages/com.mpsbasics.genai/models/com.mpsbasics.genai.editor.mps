@@ -58,6 +58,10 @@
       <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
         <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
+      <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
+        <property id="1186403713874" name="color" index="Vb096" />
+      </concept>
+      <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
       <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
@@ -92,7 +96,10 @@
       </concept>
       <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
         <property id="1140017977771" name="readOnly" index="1Intyy" />
+        <property id="1140114345053" name="allowEmptyText" index="1O74Pk" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -810,6 +817,21 @@
         <ref role="1NtTu8" to="uzku:3ODp2RoLTZT" resolve="moduleRef" />
       </node>
       <node concept="2iRfu4" id="3ODp2RoLTZZ" role="2iSdaV" />
+      <node concept="3F0ifn" id="4FDL7oku6xH" role="3EZMnx">
+        <property role="3F0ifm" value="(includes readonly:" />
+        <node concept="VechU" id="4FDL7oku6xP" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="4FDL7oku6xK" role="3EZMnx">
+        <ref role="1NtTu8" to="uzku:4FDL7oku6xD" resolve="includeReadonlyModels" />
+      </node>
+      <node concept="3F0ifn" id="4FDL7oku6xN" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="VechU" id="4FDL7oku6xQ" role="3F10Kt">
+          <property role="Vb096" value="fLJRk5_/gray" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="4S6651mB7Tx">
@@ -1232,6 +1254,55 @@
         <node concept="2h3Zct" id="2wdj7Oya1BD" role="16NL0q">
           <property role="2h4Kg1" value="reference a module" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="1Z3z4dL3ZOE">
+    <property role="3GE5qa" value="knowledge_base" />
+    <ref role="1XX52x" to="uzku:1Z3z4dL3ZOA" resolve="ModulesFromCurrentProject" />
+    <node concept="3EZMnI" id="1Z3z4dL3ZOO" role="2wV5jI">
+      <node concept="2iRkQZ" id="1Z3z4dL3ZOP" role="2iSdaV" />
+      <node concept="3F0ifn" id="1Z3z4dL3ZOQ" role="3EZMnx">
+        <property role="3F0ifm" value="project modules" />
+      </node>
+      <node concept="3EZMnI" id="1Z3z4dL3ZOS" role="3EZMnx">
+        <node concept="3XFhqQ" id="1Z3z4dL3ZP9" role="3EZMnx" />
+        <node concept="VPM3Z" id="1Z3z4dL3ZOU" role="3F10Kt" />
+        <node concept="3F0ifn" id="1Z3z4dL3ZOW" role="3EZMnx">
+          <property role="3F0ifm" value="included modules regex:" />
+        </node>
+        <node concept="3F0A7n" id="1Z3z4dL3ZP1" role="3EZMnx">
+          <property role="39s7Ar" value="true" />
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="uzku:1Z3z4dL3ZOC" resolve="includeModuleNameRegex" />
+        </node>
+        <node concept="2iRfu4" id="1Z3z4dL3ZOX" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="1Z3z4dL3ZP3" role="3EZMnx">
+        <node concept="VPM3Z" id="1Z3z4dL3ZP4" role="3F10Kt" />
+        <node concept="3XFhqQ" id="1Z3z4dL3ZPb" role="3EZMnx" />
+        <node concept="3F0ifn" id="1Z3z4dL3ZPg" role="3EZMnx">
+          <property role="3F0ifm" value="excluded modules regex:" />
+        </node>
+        <node concept="3F0A7n" id="1Z3z4dL3ZP6" role="3EZMnx">
+          <property role="1$x2rV" value="none" />
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="uzku:1Z3z4dL3ZOD" resolve="excludeModuleNameRegex" />
+        </node>
+        <node concept="2iRfu4" id="1Z3z4dL3ZP7" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="4FDL7okActv" role="3EZMnx">
+        <node concept="VPM3Z" id="4FDL7okActw" role="3F10Kt" />
+        <node concept="3XFhqQ" id="4FDL7okActx" role="3EZMnx" />
+        <node concept="3F0ifn" id="4FDL7okActy" role="3EZMnx">
+          <property role="3F0ifm" value="consider read-only models:" />
+        </node>
+        <node concept="3F0A7n" id="4FDL7okActz" role="3EZMnx">
+          <property role="1$x2rV" value="none" />
+          <property role="1O74Pk" value="true" />
+          <ref role="1NtTu8" to="uzku:4FDL7ok_2Ti" resolve="includeReadOnlyModels" />
+        </node>
+        <node concept="2iRfu4" id="4FDL7okAct$" role="2iSdaV" />
       </node>
     </node>
   </node>
