@@ -19,14 +19,15 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.genai.sandbox/com.mpsbasics.genai.sandbox.msd" folder="langchain4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.jira.pluginSolution/com.mpsbasics.jira.pluginSolution.msd" folder="jira" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.jira.sandbox/com.mpsbasics.jira.sandbox.msd" folder="jira" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.langchain4j.pluginSolution/com.mpsbasics.langchain4j.pluginSolution.msd" folder="langchain4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.langchain4j/com.mpsbasics.langchain4j.msd" folder="langchain4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.pdfbox.sandbox/com.mpsbasics.pdfbox.sandbox.msd" folder="pdfbox" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.pdfbox/com.mpsbasics.pdfbox.msd" folder="pdfbox" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.plaintext.yaml.sandbox/com.mpsbasics.plaintext.yaml.sandbox.msd" folder="plaintext_yaml" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.project.utils/com.mpsbasics.project.utils.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.snode.utils/com.mpsbasics.snode.utils.msd" folder="" />
-      <modulePath path="$PROJECT_DIR$/solutions/test.com.mpsbasics.langchain4j/test.com.mpsbasics.langchain4j.msd" folder="langchain4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mpsbasics.tests.build/com.mpsbasics.tests.build.msd" folder="_001_build" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.com.mpsbasics.langchain4j/test.com.mpsbasics.langchain4j.msd" folder="langchain4j" />
       <modulePath path="$PROJECT_DIR$/solutions/test.com.mpsbasics.plaintext.yaml/test.com.mpsbasics.plaintext.yaml.msd" folder="plaintext_yaml" />
       <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.repo_admin/solutions/com.fasten.meta.chatty/com.fasten.meta.chatty.msd" folder="_000_meta" />
       <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.repo_admin/solutions/com.fasten.meta.linters/com.fasten.meta.linters.msd" folder="_000_meta" />

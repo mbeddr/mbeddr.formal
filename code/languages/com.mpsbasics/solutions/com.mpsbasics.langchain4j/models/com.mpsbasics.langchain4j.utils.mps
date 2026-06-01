@@ -49,6 +49,7 @@
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="7x0h" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:com.fasterxml.jackson.core.type(com.mpsbasics.langchain4j/)" />
     <import index="7k8g" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:com.fasterxml.jackson.databind(com.mpsbasics.langchain4j/)" />
+    <import index="7tob" ref="r:ab86c3d1-1bb1-4489-8c79-6707606ec9a4(com.mpsbasics.langchain4j.pluginSolution.plugin)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -94,6 +95,9 @@
       <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
         <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
+      <concept id="1201385106094" name="jetbrains.mps.baseLanguage.structure.PropertyReference" flags="nn" index="2S8uIT">
+        <reference id="1201385237847" name="property" index="2S8YL0" />
+      </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
@@ -123,6 +127,7 @@
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
@@ -1902,7 +1907,6 @@
         </node>
       </node>
     </node>
-    <node concept="2tJIrI" id="6cEB6OF1Gjr" role="jymVt" />
     <node concept="312cEg" id="6cEB6OF6tBa" role="jymVt">
       <property role="TrG5h" value="cache" />
       <node concept="3Tm6S6" id="6cEB6OF6tBb" role="1B3o_S" />
@@ -1910,34 +1914,29 @@
         <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
       </node>
     </node>
+    <node concept="Wx3nA" id="7IthyCmeS25" role="jymVt">
+      <property role="TrG5h" value="SAVE_CACHE_TRESHOLD" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="7IthyCmeOkA" role="1B3o_S" />
+      <node concept="3cmrfG" id="7IthyCmeVxH" role="33vP2m">
+        <property role="3cmrfH" value="100" />
+      </node>
+      <node concept="10Oyi0" id="7IthyCmeUeQ" role="1tU5fm" />
+    </node>
     <node concept="2tJIrI" id="6cEB6OF6t87" role="jymVt" />
     <node concept="3clFbW" id="6cEB6OEV4eX" role="jymVt">
       <node concept="3cqZAl" id="6cEB6OEV4eZ" role="3clF45" />
       <node concept="3Tm6S6" id="6cEB6OEV4fs" role="1B3o_S" />
       <node concept="3clFbS" id="6cEB6OEV4f1" role="3clF47">
-        <node concept="3cpWs8" id="6cEB6OF36GA" role="3cqZAp">
-          <node concept="3cpWsn" id="6cEB6OF36GB" role="3cpWs9">
-            <property role="TrG5h" value="systemDir" />
-            <node concept="3uibUv" id="6cEB6OF36DF" role="1tU5fm">
-              <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
-            </node>
-            <node concept="2YIFZM" id="6cEB6OF36GC" role="33vP2m">
-              <ref role="37wK5l" to="bd8o:~PathManager.getSystemDir()" resolve="getSystemDir" />
-              <ref role="1Pybhc" to="bd8o:~PathManager" resolve="PathManager" />
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6cEB6OF6ojV" role="3cqZAp">
           <node concept="37vLTI" id="6cEB6OF6ojX" role="3clFbG">
-            <node concept="2OqwBi" id="6cEB6OF3dGh" role="37vLTx">
-              <node concept="37vLTw" id="6cEB6OF3dGi" role="2Oq$k0">
-                <ref role="3cqZAo" node="6cEB6OF36GB" resolve="systemDir" />
+            <node concept="2OqwBi" id="7IthyCmeIKo" role="37vLTx">
+              <node concept="2YIFZM" id="7IthyCmeIeJ" role="2Oq$k0">
+                <ref role="37wK5l" to="7tob:7IthyCmdUzU" resolve="instancce" />
+                <ref role="1Pybhc" to="7tob:7IthyCmdR0r" resolve="GenAISettings" />
               </node>
-              <node concept="liA8E" id="6cEB6OF3dGj" role="2OqNvi">
-                <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
-                <node concept="Xl_RD" id="6cEB6OF3dGk" role="37wK5m">
-                  <property role="Xl_RC" value="embeddings_store_cache.json" />
-                </node>
+              <node concept="2S8uIT" id="7IthyCmeJbD" role="2OqNvi">
+                <ref role="2S8YL0" to="7tob:7IthyCmdZsa" resolve="embeddingsCachePath" />
               </node>
             </node>
             <node concept="37vLTw" id="6cEB6OF6ok1" role="37vLTJ">
@@ -2314,8 +2313,8 @@
                       <node concept="37vLTw" id="4FDL7okGWeo" role="3uHU7B">
                         <ref role="3cqZAo" node="6cEB6OFgB2X" resolve="cacheMissesCount" />
                       </node>
-                      <node concept="3cmrfG" id="4FDL7okH2oB" role="3uHU7w">
-                        <property role="3cmrfH" value="100" />
+                      <node concept="37vLTw" id="7IthyCmeYc3" role="3uHU7w">
+                        <ref role="3cqZAo" node="7IthyCmeS25" resolve="SAVE_CACHE_TRESHOLD" />
                       </node>
                     </node>
                   </node>
