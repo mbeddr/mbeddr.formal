@@ -477,24 +477,24 @@
                                       <node concept="3clFbS" id="5UGnlYWq02P" role="1zc67A">
                                         <node concept="3clFbF" id="5UGnlYWq26o" role="3cqZAp">
                                           <node concept="37vLTI" id="5UGnlYWq5Pw" role="3clFbG">
-                                            <node concept="2YIFZM" id="5UGnlYWqqp7" role="37vLTx">
-                                              <ref role="37wK5l" to="hfdo:5UGnlYWq9qK" resolve="convertString2AnswerText" />
-                                              <ref role="1Pybhc" to="hfdo:5UGnlYWq9pv" resolve="ChatResponse2Answer" />
-                                              <node concept="2OqwBi" id="5UGnlYWqr82" role="37wK5m">
-                                                <node concept="37vLTw" id="5UGnlYWqqx$" role="2Oq$k0">
-                                                  <ref role="3cqZAo" node="5UGnlYWq02N" resolve="r" />
-                                                </node>
-                                                <node concept="liA8E" id="5UGnlYWqrT4" role="2OqNvi">
-                                                  <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                                                </node>
-                                              </node>
-                                            </node>
                                             <node concept="2OqwBi" id="5UGnlYWq2ML" role="37vLTJ">
                                               <node concept="37vLTw" id="5UGnlYWq26n" role="2Oq$k0">
                                                 <ref role="3cqZAo" node="fhch$icwa1" resolve="ci" />
                                               </node>
                                               <node concept="3TrEf2" id="5UGnlYWq4ND" role="2OqNvi">
                                                 <ref role="3Tt5mk" to="uzku:5s847lWI8YQ" resolve="answer" />
+                                              </node>
+                                            </node>
+                                            <node concept="2YIFZM" id="G9o6poiQfp" role="37vLTx">
+                                              <ref role="37wK5l" to="szki:G9o6poisie" resolve="fromString" />
+                                              <ref role="1Pybhc" to="szki:2Mi1G8jcX$Y" resolve="TextUtils" />
+                                              <node concept="2OqwBi" id="G9o6poiRyh" role="37wK5m">
+                                                <node concept="37vLTw" id="G9o6poiQTd" role="2Oq$k0">
+                                                  <ref role="3cqZAo" node="5UGnlYWq02N" resolve="r" />
+                                                </node>
+                                                <node concept="liA8E" id="G9o6poiT8M" role="2OqNvi">
+                                                  <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                                                </node>
                                               </node>
                                             </node>
                                           </node>
