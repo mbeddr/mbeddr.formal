@@ -30,6 +30,7 @@
       </concept>
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1196434649611" name="jetbrains.mps.lang.editor.structure.SubstituteMenu_SimpleString" flags="ng" index="2h3Zct">
         <property id="1196434851095" name="text" index="2h4Kg1" />
@@ -918,6 +919,12 @@
           <ref role="1NtTu8" to="uzku:5Ux4Lu3ajRl" resolve="knowledgeBases" />
           <node concept="2iRkQZ" id="5Ux4Lu3arXn" role="2czzBx" />
           <node concept="VPM3Z" id="5Ux4Lu3arXo" role="3F10Kt" />
+          <node concept="3F0ifn" id="6k97aKd$G4b" role="2czzBI">
+            <property role="3F0ifm" value="entire knowledge saved in embedding cache" />
+            <node concept="VechU" id="6k97aKd$G4c" role="3F10Kt">
+              <property role="Vb096" value="fLJRk5_/gray" />
+            </node>
+          </node>
         </node>
         <node concept="2iRfu4" id="5Ux4Lu3arXg" role="2iSdaV" />
       </node>
@@ -1402,11 +1409,19 @@
   </node>
   <node concept="24kQdi" id="1Z3z4dL3ZOE">
     <property role="3GE5qa" value="knowledge_base" />
-    <ref role="1XX52x" to="uzku:1Z3z4dL3ZOA" resolve="ModulesFromCurrentProject" />
+    <ref role="1XX52x" to="uzku:1Z3z4dL3ZOA" resolve="ModulesFromProject" />
     <node concept="3EZMnI" id="1Z3z4dL3ZOO" role="2wV5jI">
       <node concept="2iRkQZ" id="1Z3z4dL3ZOP" role="2iSdaV" />
-      <node concept="3F0ifn" id="1Z3z4dL3ZOQ" role="3EZMnx">
-        <property role="3F0ifm" value="project modules" />
+      <node concept="3EZMnI" id="6k97aKdvMYS" role="3EZMnx">
+        <node concept="2iRfu4" id="6k97aKdvMYT" role="2iSdaV" />
+        <node concept="3F0ifn" id="6k97aKdvMYQ" role="3EZMnx">
+          <property role="3F0ifm" value="modules from project:" />
+        </node>
+        <node concept="3F0A7n" id="6k97aKdvMYV" role="3EZMnx">
+          <property role="1O74Pk" value="true" />
+          <property role="1$x2rV" value="current project" />
+          <ref role="1NtTu8" to="uzku:6k97aKdvMYP" resolve="projectName" />
+        </node>
       </node>
       <node concept="3EZMnI" id="1Z3z4dL3ZOS" role="3EZMnx">
         <node concept="3XFhqQ" id="1Z3z4dL3ZP9" role="3EZMnx" />

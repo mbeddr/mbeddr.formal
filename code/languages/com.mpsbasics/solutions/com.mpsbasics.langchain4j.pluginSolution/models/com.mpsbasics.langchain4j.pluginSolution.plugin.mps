@@ -50,9 +50,6 @@
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ngI" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
       </concept>
-      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
-        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
-      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -997,9 +994,8 @@
         <ref role="3uigEE" node="7IthyCmc_6Y" resolve="GenAIConfigurable" />
       </node>
       <node concept="2ShNRf" id="7IthyCmnfUg" role="33vP2m">
-        <node concept="HV5vD" id="7IthyCmngtk" role="2ShVmc">
-          <property role="373rjd" value="true" />
-          <ref role="HV5vE" node="7IthyCmc_6Y" resolve="GenAIConfigurable" />
+        <node concept="1pGfFk" id="6k97aKd$sV6" role="2ShVmc">
+          <ref role="37wK5l" node="6k97aKdlJaB" resolve="GenAIConfigurable" />
         </node>
       </node>
     </node>

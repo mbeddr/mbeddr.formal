@@ -302,8 +302,8 @@
   <node concept="1TIwiD" id="1Z3z4dL3ZOA">
     <property role="EcuMT" value="2288827256921914662" />
     <property role="3GE5qa" value="knowledge_base" />
-    <property role="TrG5h" value="ModulesFromCurrentProject" />
-    <property role="34LRSv" value="modules from the current project" />
+    <property role="TrG5h" value="ModulesFromProject" />
+    <property role="34LRSv" value="modules from project" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="1TJgyi" id="1Z3z4dL3ZOC" role="1TKVEl">
       <property role="IQ2nx" value="2288827256921914664" />
@@ -319,6 +319,11 @@
       <property role="IQ2nx" value="5398061639810690642" />
       <property role="TrG5h" value="includeReadOnlyModels" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6k97aKdvMYP" role="1TKVEl">
+      <property role="IQ2nx" value="7280381797907509173" />
+      <property role="TrG5h" value="projectName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="1Z3z4dL3ZOB" role="PzmwI">
       <ref role="PrY4T" node="75z86$f230C" resolve="IKnowledgeBaseEntry" />
