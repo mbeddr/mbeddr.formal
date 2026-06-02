@@ -184,6 +184,10 @@
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
       <concept id="1081506762703" name="jetbrains.mps.baseLanguage.structure.GreaterThanExpression" flags="nn" index="3eOSWO" />
+      <concept id="1154542696413" name="jetbrains.mps.baseLanguage.structure.ArrayCreatorWithInitializer" flags="nn" index="3g6Rrh">
+        <child id="1154542793668" name="componentType" index="3g7fb8" />
+        <child id="1154542803372" name="initValue" index="3g7hyw" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -1908,12 +1912,20 @@
       </node>
     </node>
     <node concept="312cEg" id="6cEB6OF6tBa" role="jymVt">
-      <property role="TrG5h" value="cache" />
+      <property role="TrG5h" value="embeddingsCacheDir" />
       <node concept="3Tm6S6" id="6cEB6OF6tBb" role="1B3o_S" />
       <node concept="3uibUv" id="6cEB6OF3dAs" role="1tU5fm">
         <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
       </node>
     </node>
+    <node concept="312cEg" id="6k97aKdrQ5T" role="jymVt">
+      <property role="TrG5h" value="embeddingsCacheMainFile" />
+      <node concept="3Tm6S6" id="6k97aKdrQ5U" role="1B3o_S" />
+      <node concept="3uibUv" id="6k97aKdrQ5V" role="1tU5fm">
+        <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="6k97aKdrMWG" role="jymVt" />
     <node concept="Wx3nA" id="7IthyCmeS25" role="jymVt">
       <property role="TrG5h" value="SAVE_CACHE_TRESHOLD" />
       <property role="3TUv4t" value="true" />
@@ -1944,6 +1956,22 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6k97aKdrTCj" role="3cqZAp">
+          <node concept="37vLTI" id="6k97aKdrTCk" role="3clFbG">
+            <node concept="2OqwBi" id="6k97aKdrTCl" role="37vLTx">
+              <node concept="2YIFZM" id="6k97aKdrTCm" role="2Oq$k0">
+                <ref role="37wK5l" to="7tob:7IthyCmdUzU" resolve="getInstancce" />
+                <ref role="1Pybhc" to="7tob:7IthyCmdR0r" resolve="GenAISettings" />
+              </node>
+              <node concept="liA8E" id="6k97aKdsc6Z" role="2OqNvi">
+                <ref role="37wK5l" to="7tob:6k97aKdrWPf" resolve="getEmbeddingsCacheMainFile" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6k97aKdrTCo" role="37vLTJ">
+              <ref role="3cqZAo" node="6k97aKdrQ5T" resolve="embeddingsCacheMainFile" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="6cEB6OF3fqp" role="3cqZAp">
           <node concept="3clFbS" id="6cEB6OF3fqr" role="3clFbx">
             <node concept="3cpWs8" id="6cEB6OFcINp" role="3cqZAp">
@@ -1962,38 +1990,109 @@
             </node>
             <node concept="3J1_TO" id="6cEB6OFcX2l" role="3cqZAp">
               <node concept="3clFbS" id="6cEB6OFcX2m" role="1zxBo7">
-                <node concept="3clFbF" id="4FDL7okEJ1w" role="3cqZAp">
-                  <node concept="37vLTI" id="4FDL7okELJe" role="3clFbG">
-                    <node concept="37vLTw" id="4FDL7okEJ1u" role="37vLTJ">
-                      <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="key2CachedEmbeddings" />
-                    </node>
-                    <node concept="2OqwBi" id="6cEB6OFcKQQ" role="37vLTx">
-                      <node concept="37vLTw" id="6cEB6OFcJ7z" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6cEB6OFcINq" resolve="mapper" />
+                <node concept="2Gpval" id="6k97aKdqsOG" role="3cqZAp">
+                  <node concept="2GrKxI" id="6k97aKdqsOI" role="2Gsz3X">
+                    <property role="TrG5h" value="crtCacheFile" />
+                  </node>
+                  <node concept="2YIFZM" id="6k97aKdqAlH" role="2GsD0m">
+                    <ref role="37wK5l" to="8oaq:~FileUtils.listFiles(java.io.File,java.lang.String[],boolean)" resolve="listFiles" />
+                    <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
+                    <node concept="2OqwBi" id="6k97aKdqOjf" role="37wK5m">
+                      <node concept="37vLTw" id="6k97aKdqAlI" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="embeddingsCacheDir" />
                       </node>
-                      <node concept="liA8E" id="6cEB6OFcKQR" role="2OqNvi">
-                        <ref role="37wK5l" to="7k8g:~ObjectMapper.readValue(java.io.File,com.fasterxml.jackson.core.type.TypeReference)" resolve="readValue" />
-                        <node concept="2OqwBi" id="6cEB6OFcSbg" role="37wK5m">
-                          <node concept="37vLTw" id="6cEB6OFcPzn" role="2Oq$k0">
-                            <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="cache" />
-                          </node>
-                          <node concept="liA8E" id="6cEB6OFcSbh" role="2OqNvi">
-                            <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
+                      <node concept="liA8E" id="6k97aKdqRrR" role="2OqNvi">
+                        <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
+                      </node>
+                    </node>
+                    <node concept="2ShNRf" id="6k97aKdqC24" role="37wK5m">
+                      <node concept="3g6Rrh" id="6k97aKdqIFe" role="2ShVmc">
+                        <node concept="17QB3L" id="6k97aKdqHBs" role="3g7fb8" />
+                        <node concept="Xl_RD" id="6k97aKdqJrS" role="3g7hyw">
+                          <property role="Xl_RC" value="json" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbT" id="6k97aKdqMCz" role="37wK5m" />
+                  </node>
+                  <node concept="3clFbS" id="6k97aKdqsOM" role="2LFqv$">
+                    <node concept="3J1_TO" id="6k97aKdqUAa" role="3cqZAp">
+                      <node concept="3uVAMA" id="6k97aKdqWKR" role="1zxBo5">
+                        <node concept="XOnhg" id="6k97aKdqWKS" role="1zc67B">
+                          <property role="TrG5h" value="e" />
+                          <node concept="nSUau" id="6k97aKdqWKT" role="1tU5fm">
+                            <node concept="3uibUv" id="6k97aKdqXNb" role="nSUat">
+                              <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
+                            </node>
                           </node>
                         </node>
-                        <node concept="2ShNRf" id="6cEB6OFcKQT" role="37wK5m">
-                          <node concept="YeOm9" id="6cEB6OFcKQU" role="2ShVmc">
-                            <node concept="1Y3b0j" id="6cEB6OFcKQV" role="YeSDq">
-                              <ref role="1Y3XeK" to="7x0h:~TypeReference" resolve="TypeReference" />
-                              <ref role="37wK5l" to="7x0h:~TypeReference.&lt;init&gt;()" resolve="TypeReference" />
-                              <node concept="3uibUv" id="6cEB6OFcKQW" role="2Ghqu4">
-                                <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-                                <node concept="3uibUv" id="6cEB6OFcKQX" role="11_B2D">
-                                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                        <node concept="3clFbS" id="6k97aKdqWKU" role="1zc67A">
+                          <node concept="2xdQw9" id="6k97aKdr1wc" role="3cqZAp">
+                            <property role="2xdLsb" value="gZ5fh_4/error" />
+                            <node concept="3cpWs3" id="6k97aKdr6Qh" role="9lYJi">
+                              <node concept="2OqwBi" id="6k97aKdrcl7" role="3uHU7w">
+                                <node concept="2GrUjf" id="6k97aKdraBd" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="6k97aKdqsOI" resolve="crtCacheFile" />
                                 </node>
-                                <node concept="3uibUv" id="6cEB6OFcKQY" role="11_B2D">
-                                  <ref role="3uigEE" node="6cEB6OFcg55" resolve="CachedEmbedding" />
+                                <node concept="liA8E" id="6k97aKdrgqr" role="2OqNvi">
+                                  <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
                                 </node>
+                              </node>
+                              <node concept="Xl_RD" id="6k97aKdr1we" role="3uHU7B">
+                                <property role="Xl_RC" value="Exception while reading embeddings cache file " />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="6k97aKdqUAc" role="1zxBo7">
+                        <node concept="3cpWs8" id="6k97aKdqcsE" role="3cqZAp">
+                          <node concept="3cpWsn" id="6k97aKdqcsF" role="3cpWs9">
+                            <property role="TrG5h" value="cacheFromCurrentFile" />
+                            <node concept="3uibUv" id="6k97aKdqbdY" role="1tU5fm">
+                              <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+                              <node concept="17QB3L" id="6k97aKdruTT" role="11_B2D" />
+                              <node concept="3uibUv" id="6k97aKdqbe3" role="11_B2D">
+                                <ref role="3uigEE" node="6cEB6OFcg55" resolve="EmbeddingsManager.CachedEmbedding" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="6k97aKdqcsG" role="33vP2m">
+                              <node concept="37vLTw" id="6k97aKdqcsH" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6cEB6OFcINq" resolve="mapper" />
+                              </node>
+                              <node concept="liA8E" id="6k97aKdqcsI" role="2OqNvi">
+                                <ref role="37wK5l" to="7k8g:~ObjectMapper.readValue(java.io.File,com.fasterxml.jackson.core.type.TypeReference)" resolve="readValue" />
+                                <node concept="2GrUjf" id="6k97aKdrtkf" role="37wK5m">
+                                  <ref role="2Gs0qQ" node="6k97aKdqsOI" resolve="crtCacheFile" />
+                                </node>
+                                <node concept="2ShNRf" id="6k97aKdqcsM" role="37wK5m">
+                                  <node concept="YeOm9" id="6k97aKdqcsN" role="2ShVmc">
+                                    <node concept="1Y3b0j" id="6k97aKdqcsO" role="YeSDq">
+                                      <ref role="1Y3XeK" to="7x0h:~TypeReference" resolve="TypeReference" />
+                                      <ref role="37wK5l" to="7x0h:~TypeReference.&lt;init&gt;()" resolve="TypeReference" />
+                                      <node concept="3uibUv" id="6k97aKdqcsP" role="2Ghqu4">
+                                        <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+                                        <node concept="17QB3L" id="6k97aKdr_Zk" role="11_B2D" />
+                                        <node concept="3uibUv" id="6k97aKdqcsR" role="11_B2D">
+                                          <ref role="3uigEE" node="6cEB6OFcg55" resolve="EmbeddingsManager.CachedEmbedding" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="4FDL7okEJ1w" role="3cqZAp">
+                          <node concept="2OqwBi" id="6k97aKdrj39" role="3clFbG">
+                            <node concept="37vLTw" id="4FDL7okEJ1u" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="key2CachedEmbeddings" />
+                            </node>
+                            <node concept="liA8E" id="6k97aKdrl3w" role="2OqNvi">
+                              <ref role="37wK5l" to="33ny:~Map.putAll(java.util.Map)" resolve="putAll" />
+                              <node concept="37vLTw" id="6k97aKdrmFB" role="37wK5m">
+                                <ref role="3cqZAo" node="6k97aKdqcsF" resolve="readValue" />
                               </node>
                             </node>
                           </node>
@@ -2009,19 +2108,6 @@
                     <property role="2xdLsb" value="gZ5fh_4/error" />
                     <node concept="Xl_RD" id="6cEB6OFjnN$" role="9lYJi">
                       <property role="Xl_RC" value="Error while loading embedding file" />
-                    </node>
-                  </node>
-                  <node concept="1X3_iC" id="6cEB6OFjwDr" role="lGtFl">
-                    <property role="3V$3am" value="statement" />
-                    <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-                    <node concept="3clFbF" id="6cEB6OFjt$J" role="8Wnug">
-                      <node concept="2YIFZM" id="6cEB6OFjtRU" role="3clFbG">
-                        <ref role="37wK5l" to="eoo2:~Files.delete(java.nio.file.Path)" resolve="delete" />
-                        <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-                        <node concept="37vLTw" id="6cEB6OFjudN" role="37wK5m">
-                          <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="cache" />
-                        </node>
-                      </node>
                     </node>
                   </node>
                 </node>
@@ -2409,6 +2495,26 @@
       <node concept="3clFbS" id="4FDL7okGw4x" role="3clF47">
         <node concept="3J1_TO" id="4FDL7okGw4y" role="3cqZAp">
           <node concept="3clFbS" id="4FDL7okGw4z" role="1zxBo7">
+            <node concept="3clFbF" id="6k97aKdtlTn" role="3cqZAp">
+              <node concept="2OqwBi" id="6k97aKdtzxK" role="3clFbG">
+                <node concept="2OqwBi" id="6k97aKdtumU" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6k97aKdtoAH" role="2Oq$k0">
+                    <node concept="37vLTw" id="6k97aKdtlTl" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6k97aKdrQ5T" resolve="embeddingsCacheMainFile" />
+                    </node>
+                    <node concept="liA8E" id="6k97aKdtrv9" role="2OqNvi">
+                      <ref role="37wK5l" to="eoo2:~Path.getParent()" resolve="getParent" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6k97aKdtwgO" role="2OqNvi">
+                    <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6k97aKdtAg0" role="2OqNvi">
+                  <ref role="37wK5l" to="guwi:~File.mkdirs()" resolve="mkdirs" />
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="4FDL7okGw4$" role="3cqZAp">
               <node concept="3cpWsn" id="4FDL7okGw4_" role="3cpWs9">
                 <property role="TrG5h" value="mapper" />
@@ -2437,7 +2543,7 @@
                   <ref role="37wK5l" to="7k8g:~ObjectWriter.writeValue(java.io.File,java.lang.Object)" resolve="writeValue" />
                   <node concept="2OqwBi" id="4FDL7okGw4J" role="37wK5m">
                     <node concept="37vLTw" id="4FDL7okGw4K" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="cache" />
+                      <ref role="3cqZAo" node="6k97aKdrQ5T" resolve="embeddingsCacheMainFile" />
                     </node>
                     <node concept="liA8E" id="4FDL7okGw4L" role="2OqNvi">
                       <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />

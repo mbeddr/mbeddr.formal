@@ -791,13 +791,22 @@
       </node>
     </node>
     <node concept="2tJIrI" id="7IthyCmdU$L" role="jymVt" />
-    <node concept="312cEg" id="6k97aKdn4OF" role="jymVt">
-      <property role="TrG5h" value="embeddingsStoreLocation" />
+    <node concept="Wx3nA" id="6k97aKdpZ5d" role="jymVt">
+      <property role="TrG5h" value="embeddingsStoreMainFileLocation" />
       <property role="3TUv4t" value="true" />
-      <node concept="3Tm6S6" id="6k97aKdn4OC" role="1B3o_S" />
-      <node concept="17QB3L" id="6k97aKdn4OD" role="1tU5fm" />
-      <node concept="Xl_RD" id="6k97aKdn4OE" role="33vP2m">
+      <node concept="17QB3L" id="6k97aKdpZ5g" role="1tU5fm" />
+      <node concept="Xl_RD" id="6k97aKdpZ5h" role="33vP2m">
         <property role="Xl_RC" value="embeddings_store_cache.json" />
+      </node>
+      <node concept="3Tm1VV" id="6k97aKdpZ5f" role="1B3o_S" />
+    </node>
+    <node concept="312cEg" id="6k97aKdpRb6" role="jymVt">
+      <property role="TrG5h" value="embeddingsStoreCacheDirLocation" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="6k97aKdpRb7" role="1B3o_S" />
+      <node concept="17QB3L" id="6k97aKdpRb8" role="1tU5fm" />
+      <node concept="Xl_RD" id="6k97aKdpRb9" role="33vP2m">
+        <property role="Xl_RC" value="embeddings_store_cache" />
       </node>
     </node>
     <node concept="2tJIrI" id="6k97aKdn5vg" role="jymVt" />
@@ -865,7 +874,7 @@
                 <node concept="2OqwBi" id="6k97aKdn4OM" role="37wK5m">
                   <node concept="Xjq3P" id="6k97aKdn4ON" role="2Oq$k0" />
                   <node concept="2OwXpG" id="6k97aKdn4OO" role="2OqNvi">
-                    <ref role="2Oxat5" node="6k97aKdn4OF" resolve="string" />
+                    <ref role="2Oxat5" node="6k97aKdpRb6" resolve="embeddingsStoreCacheDirLocation" />
                   </node>
                 </node>
               </node>
@@ -896,20 +905,15 @@
       <node concept="3clFbS" id="7IthyCmg3ZS" role="3clF47">
         <node concept="3clFbF" id="7IthyCmg9q5" role="3cqZAp">
           <node concept="2OqwBi" id="7IthyCmgcf7" role="3clFbG">
-            <node concept="2OqwBi" id="6k97aKdmR9z" role="2Oq$k0">
-              <node concept="2OqwBi" id="7IthyCmgaqS" role="2Oq$k0">
-                <node concept="2OqwBi" id="7IthyCmg9$c" role="2Oq$k0">
-                  <node concept="Xjq3P" id="7IthyCmg9q3" role="2Oq$k0" />
-                  <node concept="2S8uIT" id="7IthyCmg9KL" role="2OqNvi">
-                    <ref role="2S8YL0" node="7IthyCmdZsa" resolve="embeddingsCachePath" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="7IthyCmgbJR" role="2OqNvi">
-                  <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
+            <node concept="2OqwBi" id="7IthyCmgaqS" role="2Oq$k0">
+              <node concept="2OqwBi" id="7IthyCmg9$c" role="2Oq$k0">
+                <node concept="Xjq3P" id="7IthyCmg9q3" role="2Oq$k0" />
+                <node concept="2S8uIT" id="7IthyCmg9KL" role="2OqNvi">
+                  <ref role="2S8YL0" node="7IthyCmdZsa" resolve="embeddingsCachePath" />
                 </node>
               </node>
-              <node concept="liA8E" id="6k97aKdmSeV" role="2OqNvi">
-                <ref role="37wK5l" to="guwi:~File.getParentFile()" resolve="getParentFile" />
+              <node concept="liA8E" id="7IthyCmgbJR" role="2OqNvi">
+                <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
               </node>
             </node>
             <node concept="liA8E" id="7IthyCmgd0F" role="2OqNvi">
@@ -937,7 +941,7 @@
               <node concept="liA8E" id="6k97aKdn4c7" role="2OqNvi">
                 <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
                 <node concept="37vLTw" id="6k97aKdn8J8" role="37wK5m">
-                  <ref role="3cqZAo" node="6k97aKdn4OF" resolve="embeddingsStoreLocation" />
+                  <ref role="3cqZAo" node="6k97aKdpRb6" resolve="embeddingsStoreCacheDirLocation" />
                 </node>
               </node>
             </node>
@@ -955,6 +959,31 @@
       <node concept="37vLTG" id="6k97aKdmXuW" role="3clF46">
         <property role="TrG5h" value="dir" />
         <node concept="17QB3L" id="6k97aKdmXuV" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6k97aKdrWPf" role="jymVt">
+      <property role="TrG5h" value="getEmbeddingsCacheMainFile" />
+      <node concept="3clFbS" id="6k97aKdrWPg" role="3clF47">
+        <node concept="3clFbF" id="6k97aKdrWPh" role="3cqZAp">
+          <node concept="2OqwBi" id="6k97aKds0Sm" role="3clFbG">
+            <node concept="2OqwBi" id="6k97aKdrWPk" role="2Oq$k0">
+              <node concept="Xjq3P" id="6k97aKdrWPl" role="2Oq$k0" />
+              <node concept="2S8uIT" id="6k97aKdrWPm" role="2OqNvi">
+                <ref role="2S8YL0" node="7IthyCmdZsa" resolve="embeddingsCachePath" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6k97aKds36A" role="2OqNvi">
+              <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
+              <node concept="37vLTw" id="6k97aKds44A" role="37wK5m">
+                <ref role="3cqZAo" node="6k97aKdpZ5d" resolve="embeddingsStoreMainFileLocation" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6k97aKdrWPp" role="1B3o_S" />
+      <node concept="3uibUv" id="6k97aKds8qZ" role="3clF45">
+        <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
       </node>
     </node>
     <node concept="3Tm1VV" id="7IthyCmdR0s" role="1B3o_S" />
