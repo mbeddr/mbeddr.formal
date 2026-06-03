@@ -14,6 +14,7 @@
     <dependency reexport="false">1f4710e9-f074-4732-a0bd-6fa896d282b7(com.mpsbasics.project.utils)</dependency>
     <dependency reexport="false">e49ae71b-b7a6-4321-84b6-ac9a82e13853(com.mpsbasics.genai)</dependency>
     <dependency reexport="false">6b84fb9e-5f09-4a61-bf31-3bfdc54820e3(com.mpsbasics.editor.utils)</dependency>
+    <dependency reexport="false">033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43(com.mpsbasics.langchain4j)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:e49ae71b-b7a6-4321-84b6-ac9a82e13853:com.mpsbasics.genai" version="0" />
@@ -36,6 +37,7 @@
     <module reference="6b84fb9e-5f09-4a61-bf31-3bfdc54820e3(com.mpsbasics.editor.utils)" version="0" />
     <module reference="e49ae71b-b7a6-4321-84b6-ac9a82e13853(com.mpsbasics.genai)" version="0" />
     <module reference="e68b9ddc-ead9-4ffa-b200-483481d3429d(com.mpsbasics.genai.sandbox)" version="0" />
+    <module reference="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43(com.mpsbasics.langchain4j)" version="0" />
     <module reference="1f4710e9-f074-4732-a0bd-6fa896d282b7(com.mpsbasics.project.utils)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" version="0" />
