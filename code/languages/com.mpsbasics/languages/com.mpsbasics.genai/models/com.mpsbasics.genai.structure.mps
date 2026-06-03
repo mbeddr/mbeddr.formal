@@ -304,7 +304,7 @@
     <property role="3GE5qa" value="knowledge_base" />
     <property role="TrG5h" value="ModulesFromProject" />
     <property role="34LRSv" value="modules from project" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="1Z3z4dL3ZOC" role="1TKVEl">
       <property role="IQ2nx" value="2288827256921914664" />
       <property role="TrG5h" value="includeModuleNameRegex" />

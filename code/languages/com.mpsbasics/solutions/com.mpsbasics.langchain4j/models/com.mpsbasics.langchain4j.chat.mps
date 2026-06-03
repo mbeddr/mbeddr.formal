@@ -759,7 +759,7 @@
                   <ref role="3cqZAo" node="PCzh3f7qyq" resolve="chatInterraction" />
                 </node>
                 <node concept="3TrEf2" id="G9o6pokxO0" role="2OqNvi">
-                  <ref role="3Tt5mk" to="uzku:5s847lWI8Yi" />
+                  <ref role="3Tt5mk" to="uzku:5s847lWI8Yi" resolve="prompt" />
                 </node>
               </node>
             </node>

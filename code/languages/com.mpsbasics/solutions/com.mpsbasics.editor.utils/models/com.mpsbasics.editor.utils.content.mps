@@ -405,7 +405,7 @@
                       <node concept="2ShNRf" id="4FDL7oksYms" role="37vLTx">
                         <node concept="1pGfFk" id="4FDL7oksYmt" role="2ShVmc">
                           <property role="373rjd" value="true" />
-                          <ref role="37wK5l" to="7a0s:2iNJDZP2RE6" />
+                          <ref role="37wK5l" to="7a0s:2iNJDZP2RE6" resolve="HeadlessEditorComponent" />
                           <node concept="37vLTw" id="4FDL7okt9Tr" role="37wK5m">
                             <ref role="3cqZAo" node="4FDL7okt9Tm" resolve="repository" />
                           </node>
@@ -515,7 +515,7 @@
               </node>
               <node concept="3clFbF" id="4Ou7HgAfJ0s" role="3cqZAp">
                 <node concept="1rXfSq" id="4Ou7HgAfJ0q" role="3clFbG">
-                  <ref role="37wK5l" node="4Ou7HgAfADa" resolve="removeComponents" />
+                  <ref role="37wK5l" node="4Ou7HgAfADa" resolve="removeSwingComponents" />
                   <node concept="37vLTw" id="4Ou7HgAfJwb" role="37wK5m">
                     <ref role="3cqZAo" node="EyxjoF2R0v" resolve="rootCell" />
                   </node>
@@ -676,7 +676,7 @@
                     <node concept="3clFbS" id="4Ou7HgAfIf1" role="9aQI4">
                       <node concept="3clFbF" id="4Ou7HgAfIsa" role="3cqZAp">
                         <node concept="1rXfSq" id="4Ou7HgAfIs9" role="3clFbG">
-                          <ref role="37wK5l" node="4Ou7HgAfADa" resolve="removeComponents" />
+                          <ref role="37wK5l" node="4Ou7HgAfADa" resolve="removeSwingComponents" />
                           <node concept="2GrUjf" id="4Ou7HgAfICV" role="37wK5m">
                             <ref role="2Gs0qQ" node="4Ou7HgAfCn6" resolve="mem" />
                           </node>

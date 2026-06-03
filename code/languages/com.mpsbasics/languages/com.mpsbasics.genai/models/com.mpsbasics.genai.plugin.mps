@@ -131,7 +131,7 @@
   <node concept="vrV6u" id="6Knx_esxwmU">
     <property role="TrG5h" value="CustomTextSerializer" />
     <node concept="3uibUv" id="6Knx_esyvF7" role="luc8K">
-      <ref role="3uigEE" node="6Knx_esxwpB" resolve="ICanCustomSerialize2JSON" />
+      <ref role="3uigEE" node="6Knx_esxwpB" resolve="ICanSerialize2CustomText" />
     </node>
   </node>
   <node concept="3HP615" id="6Knx_esxwpB">
@@ -169,7 +169,7 @@
       <node concept="3rvAFt" id="6Knx_esyjg3" role="1tU5fm">
         <node concept="3bZ5Sz" id="6Knx_esyjAB" role="3rvQeY" />
         <node concept="3uibUv" id="6Knx_esyjLY" role="3rvSg0">
-          <ref role="3uigEE" node="6Knx_esxwpB" resolve="ICanCustomSerialize2JSON" />
+          <ref role="3uigEE" node="6Knx_esxwpB" resolve="ICanSerialize2CustomText" />
         </node>
       </node>
       <node concept="2ShNRf" id="6Knx_esyjNB" role="33vP2m">
@@ -228,7 +228,7 @@
           </node>
           <node concept="2OqwBi" id="6Knx_esyoF_" role="2GsD0m">
             <node concept="2O5UvJ" id="6Knx_esyom9" role="2Oq$k0">
-              <ref role="2O5UnU" node="6Knx_esxwmU" resolve="CustomJSONSerializer" />
+              <ref role="2O5UnU" node="6Knx_esxwmU" resolve="CustomTextSerializer" />
             </node>
             <node concept="SfwO_" id="6Knx_esyoRK" role="2OqNvi" />
           </node>
@@ -282,7 +282,7 @@
               </node>
             </node>
             <node concept="liA8E" id="6Knx_esyLFw" role="2OqNvi">
-              <ref role="37wK5l" node="6Knx_esy3FY" resolve="createCustomJSONObject" />
+              <ref role="37wK5l" node="6Knx_esy3FY" resolve="createCustomText" />
               <node concept="37vLTw" id="6Knx_esyLJn" role="37wK5m">
                 <ref role="3cqZAo" node="6Knx_esyJr5" resolve="aNode" />
               </node>

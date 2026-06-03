@@ -1087,7 +1087,7 @@
           <node concept="3cpWsn" id="1Rt_rvfWuVc" role="3cpWs9">
             <property role="TrG5h" value="builder" />
             <node concept="3uibUv" id="1Rt_rvfWuKL" role="1tU5fm">
-              <ref role="3uigEE" to="7lyl:~EmbeddingStoreContentRetriever$EmbeddingStoreContentRetrieverBuilder" resolve="EmbeddingStoreContentRetrieverBuilder" />
+              <ref role="3uigEE" to="7lyl:~EmbeddingStoreContentRetriever$EmbeddingStoreContentRetrieverBuilder" resolve="EmbeddingStoreContentRetriever.EmbeddingStoreContentRetrieverBuilder" />
             </node>
             <node concept="2YIFZM" id="1Rt_rvfWuVd" role="33vP2m">
               <ref role="1Pybhc" to="7lyl:~EmbeddingStoreContentRetriever" resolve="EmbeddingStoreContentRetriever" />
@@ -1162,7 +1162,7 @@
                       <ref role="37wK5l" to="rqif:~AiServices.builder(java.lang.Class)" resolve="builder" />
                       <ref role="1Pybhc" to="rqif:~AiServices" resolve="AiServices" />
                       <node concept="3VsKOn" id="1Rt_rvfXPRY" role="37wK5m">
-                        <ref role="3VsUkX" node="1Rt_rvfX19L" resolve="ConversationalAssistant" />
+                        <ref role="3VsUkX" node="1Rt_rvfX19L" resolve="ConversationalAssistantWrapper.ConversationalAssistant" />
                       </node>
                     </node>
                     <node concept="liA8E" id="1Rt_rvfXPRZ" role="2OqNvi">
@@ -1808,7 +1808,7 @@
                     <node concept="2pJPED" id="5UGnlYWq9$6" role="2pJPEn">
                       <ref role="2pJxaS" to="zqge:2cLqkTm6J5A" resolve="Line" />
                       <node concept="2pIpSj" id="5UGnlYWq9$7" role="2pJxcM">
-                        <ref role="2pIpSl" to="zqge:2cLqkTm6J5B" />
+                        <ref role="2pIpSl" to="zqge:2cLqkTm6J5B" resolve="elements" />
                         <node concept="2pJPED" id="5UGnlYWq9$8" role="28nt2d">
                           <ref role="2pJxaS" to="zqge:8D0iRqSPW4" resolve="Word" />
                           <node concept="2pJxcG" id="5UGnlYWq9$9" role="2pJxcM">
@@ -1852,7 +1852,7 @@
       <property role="TrG5h" value="instance" />
       <node concept="3Tm6S6" id="6cEB6OF1h_q" role="1B3o_S" />
       <node concept="3uibUv" id="6cEB6OF1hDS" role="1tU5fm">
-        <ref role="3uigEE" node="6cEB6OEV0Sq" resolve="EmbeddingsCache" />
+        <ref role="3uigEE" node="6cEB6OEV0Sq" resolve="EmbeddingsManager" />
       </node>
       <node concept="10Nm6u" id="6cEB6OF1hJJ" role="33vP2m" />
     </node>
@@ -1872,7 +1872,7 @@
                 <node concept="2ShNRf" id="6cEB6OF1inE" role="37vLTx">
                   <node concept="1pGfFk" id="6cEB6OF1jFX" role="2ShVmc">
                     <property role="373rjd" value="true" />
-                    <ref role="37wK5l" node="6cEB6OEV4eX" resolve="EmbeddingsCache" />
+                    <ref role="37wK5l" node="6cEB6OEV4eX" resolve="EmbeddingsManager" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6cEB6OF1i9G" role="37vLTJ">
@@ -1890,7 +1890,7 @@
       </node>
       <node concept="3Tm1VV" id="6cEB6OEV47t" role="1B3o_S" />
       <node concept="3uibUv" id="6cEB6OEV48f" role="3clF45">
-        <ref role="3uigEE" node="6cEB6OEV0Sq" resolve="EmbeddingsCache" />
+        <ref role="3uigEE" node="6cEB6OEV0Sq" resolve="EmbeddingsManager" />
       </node>
     </node>
     <node concept="2tJIrI" id="6cEB6OEV492" role="jymVt" />
@@ -1944,7 +1944,7 @@
           <node concept="37vLTI" id="6cEB6OF6ojX" role="3clFbG">
             <node concept="2OqwBi" id="7IthyCmeIKo" role="37vLTx">
               <node concept="2YIFZM" id="7IthyCmeIeJ" role="2Oq$k0">
-                <ref role="37wK5l" to="7tob:7IthyCmdUzU" resolve="instancce" />
+                <ref role="37wK5l" to="7tob:7IthyCmdUzU" resolve="getInstancce" />
                 <ref role="1Pybhc" to="7tob:7IthyCmdR0r" resolve="GenAISettings" />
               </node>
               <node concept="2S8uIT" id="7IthyCmeJbD" role="2OqNvi">
@@ -1952,7 +1952,7 @@
               </node>
             </node>
             <node concept="37vLTw" id="6cEB6OF6ok1" role="37vLTJ">
-              <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="cache" />
+              <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="embeddingsCacheDir" />
             </node>
           </node>
         </node>
@@ -2092,7 +2092,7 @@
                             <node concept="liA8E" id="6k97aKdrl3w" role="2OqNvi">
                               <ref role="37wK5l" to="33ny:~Map.putAll(java.util.Map)" resolve="putAll" />
                               <node concept="37vLTw" id="6k97aKdrmFB" role="37wK5m">
-                                <ref role="3cqZAo" node="6k97aKdqcsF" resolve="readValue" />
+                                <ref role="3cqZAo" node="6k97aKdqcsF" resolve="cacheFromCurrentFile" />
                               </node>
                             </node>
                           </node>
@@ -2126,7 +2126,7 @@
             <ref role="37wK5l" to="eoo2:~Files.exists(java.nio.file.Path,java.nio.file.LinkOption...)" resolve="exists" />
             <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
             <node concept="37vLTw" id="6cEB6OF3iJW" role="37wK5m">
-              <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="cache" />
+              <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="embeddingsCacheDir" />
             </node>
           </node>
         </node>
@@ -2164,7 +2164,7 @@
             <property role="TrG5h" value="ts" />
           </node>
           <node concept="37vLTw" id="6cEB6OF55fw" role="2GsD0m">
-            <ref role="3cqZAo" node="6cEB6OF4R8G" resolve="tss" />
+            <ref role="3cqZAo" node="6cEB6OF4R8G" resolve="textSegments" />
           </node>
           <node concept="3clFbS" id="6cEB6OF51J3" role="2LFqv$">
             <node concept="3cpWs8" id="6cEB6OF4R82" role="3cqZAp">
@@ -2314,7 +2314,7 @@
                         <ref role="3cqZAo" node="6cEB6OFenAu" resolve="ce" />
                       </node>
                       <node concept="2OwXpG" id="6cEB6OFetKq" role="2OqNvi">
-                        <ref role="2Oxat5" node="6cEB6OFciA1" resolve="embedding" />
+                        <ref role="2Oxat5" node="6cEB6OFciA1" resolve="vector" />
                       </node>
                     </node>
                   </node>
@@ -2429,7 +2429,7 @@
                                 <ref role="3cqZAo" node="6cEB6OFdAOn" resolve="embedding" />
                               </node>
                               <node concept="2OwXpG" id="6cEB6OFhdit" role="2OqNvi">
-                                <ref role="2Oxat5" node="6cEB6OFciA1" resolve="embedding" />
+                                <ref role="2Oxat5" node="6cEB6OFciA1" resolve="vector" />
                               </node>
                             </node>
                           </node>
@@ -2778,7 +2778,7 @@
           <node concept="3clFbF" id="1Z3z4dL2PZ8" role="3cqZAp">
             <node concept="37vLTI" id="1Z3z4dL2PZ9" role="3clFbG">
               <node concept="37vLTw" id="1Z3z4dL2PZa" role="37vLTx">
-                <ref role="3cqZAo" node="1Z3z4dL2PZg" resolve="text" />
+                <ref role="3cqZAo" node="1Z3z4dL2PZg" resolve="vector" />
               </node>
               <node concept="2OqwBi" id="1Z3z4dL2PZb" role="37vLTJ">
                 <node concept="Xjq3P" id="1Z3z4dL2PZc" role="2Oq$k0" />

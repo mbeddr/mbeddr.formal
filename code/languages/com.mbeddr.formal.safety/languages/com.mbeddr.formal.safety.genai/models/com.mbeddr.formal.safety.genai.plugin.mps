@@ -175,7 +175,7 @@
   </registry>
   <node concept="1lYeZD" id="6Knx_es$RN4">
     <property role="TrG5h" value="GoalStructureSerializationToText" />
-    <ref role="1lYe$Y" to="2xy7:6Knx_esxwmU" resolve="CustomJSONSerializer" />
+    <ref role="1lYe$Y" to="2xy7:6Knx_esxwmU" resolve="CustomTextSerializer" />
     <node concept="3Tm1VV" id="6Knx_es$RN5" role="1B3o_S" />
     <node concept="2tJIrI" id="6Knx_es$RN6" role="jymVt" />
     <node concept="3tTeZs" id="6Knx_es$RN7" role="jymVt">
@@ -198,7 +198,7 @@
               <node concept="1Y3b0j" id="6Knx_es$Vq7" role="YeSDq">
                 <property role="2bfB8j" value="true" />
                 <property role="373rjd" value="true" />
-                <ref role="1Y3XeK" to="2xy7:6Knx_esxwpB" resolve="ICanCustomSerialize2JSON" />
+                <ref role="1Y3XeK" to="2xy7:6Knx_esxwpB" resolve="ICanSerialize2CustomText" />
                 <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
                 <node concept="3Tm1VV" id="6Knx_es$Vq8" role="1B3o_S" />
                 <node concept="3clFb_" id="6Knx_es$Vqn" role="jymVt">

@@ -334,7 +334,7 @@
             <property role="TrG5h" value="pdfAsString" />
             <node concept="17QB3L" id="PCzh3eYDyy" role="1tU5fm" />
             <node concept="2YIFZM" id="PCzh3eYE4u" role="33vP2m">
-              <ref role="37wK5l" to="ykqc:75z86$f242w" resolve="convert2Json" />
+              <ref role="37wK5l" to="ykqc:75z86$f242w" resolve="convert2Text" />
               <ref role="1Pybhc" to="ykqc:75z86$eWlKu" resolve="PdfWrapper" />
               <node concept="2ShNRf" id="PCzh3eYE4v" role="37wK5m">
                 <node concept="1pGfFk" id="PCzh3eYE4w" role="2ShVmc">
@@ -536,8 +536,8 @@
             <property role="TrG5h" value="nodeString" />
             <node concept="17QB3L" id="3ODp2RoKwM3" role="1tU5fm" />
             <node concept="2YIFZM" id="PCzh3f2XvK" role="33vP2m">
-              <ref role="37wK5l" to="1ydf:7s0Rn3OPbVN" resolve="convertNode2Json" />
-              <ref role="1Pybhc" to="1ydf:7s0Rn3OP8er" resolve="GenericNode2JsonConverter" />
+              <ref role="37wK5l" to="1ydf:7s0Rn3OPbVN" resolve="convertNode2Text" />
+              <ref role="1Pybhc" to="1ydf:7s0Rn3OP8er" resolve="GenericNode2TextConverter" />
               <node concept="37vLTw" id="PCzh3f2XvL" role="37wK5m">
                 <ref role="3cqZAo" node="3ODp2RoKx8i" resolve="node" />
               </node>
@@ -606,13 +606,13 @@
               <ref role="37wK5l" to="a0f5:~Document.from(java.lang.String,dev.langchain4j.data.document.Metadata)" resolve="from" />
               <ref role="1Pybhc" to="a0f5:~Document" resolve="Document" />
               <node concept="37vLTw" id="3ODp2RoKwMa" role="37wK5m">
-                <ref role="3cqZAo" node="3ODp2RoKwM2" resolve="nodeJsonString" />
+                <ref role="3cqZAo" node="3ODp2RoKwM2" resolve="nodeString" />
               </node>
               <node concept="2YIFZM" id="PCzh3eWtuM" role="37wK5m">
                 <ref role="37wK5l" to="a0f5:~Metadata.from(java.util.Map)" resolve="from" />
                 <ref role="1Pybhc" to="a0f5:~Metadata" resolve="Metadata" />
                 <node concept="37vLTw" id="PCzh3eXWyP" role="37wK5m">
-                  <ref role="3cqZAo" node="PCzh3eXWyw" resolve="map_string_string" />
+                  <ref role="3cqZAo" node="PCzh3eXWyw" resolve="map" />
                 </node>
               </node>
             </node>
@@ -660,7 +660,7 @@
         </node>
         <node concept="3clFbF" id="3ODp2RoKwMk" role="3cqZAp">
           <node concept="37vLTw" id="PCzh3eUgyd" role="3clFbG">
-            <ref role="3cqZAo" node="PCzh3eUgy8" resolve="split" />
+            <ref role="3cqZAo" node="PCzh3eUgy8" resolve="segments" />
           </node>
         </node>
       </node>
@@ -1829,14 +1829,14 @@
                   <property role="Xl_RC" value="^.*$" />
                 </node>
                 <node concept="37vLTw" id="1Z3z4dL4eYP" role="37vLTJ">
-                  <ref role="3cqZAo" node="1Z3z4dL4eYF" resolve="included" />
+                  <ref role="3cqZAo" node="1Z3z4dL4eYF" resolve="excluded" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="2OqwBi" id="1Z3z4dL4eYQ" role="3clFbw">
             <node concept="37vLTw" id="1Z3z4dL4eYR" role="2Oq$k0">
-              <ref role="3cqZAo" node="1Z3z4dL4eYF" resolve="included" />
+              <ref role="3cqZAo" node="1Z3z4dL4eYF" resolve="excluded" />
             </node>
             <node concept="17RlXB" id="1Z3z4dL4eYS" role="2OqNvi" />
           </node>
@@ -1945,13 +1945,13 @@
                   <node concept="RRSsy" id="6k97aKdyTsu" role="3cqZAp">
                     <property role="RRSoG" value="gZ5fh_4/error" />
                     <node concept="37vLTw" id="6k97aKd$gKZ" role="RRSoy">
-                      <ref role="3cqZAo" node="6k97aKd$gKR" resolve="string" />
+                      <ref role="3cqZAo" node="6k97aKd$gKR" resolve="msg" />
                     </node>
                   </node>
                   <node concept="2xdQw9" id="6k97aKdzf6H" role="3cqZAp">
                     <property role="2xdLsb" value="gZ5fh_4/error" />
                     <node concept="37vLTw" id="6k97aKd$gL0" role="9lYJi">
-                      <ref role="3cqZAo" node="6k97aKd$gKR" resolve="string" />
+                      <ref role="3cqZAo" node="6k97aKd$gKR" resolve="msg" />
                     </node>
                   </node>
                   <node concept="3clFbF" id="6k97aKd$cPz" role="3cqZAp">
@@ -2057,7 +2057,7 @@
                 <node concept="3clFbF" id="1Z3z4dL4xcK" role="3cqZAp">
                   <node concept="2OqwBi" id="1Z3z4dL4yCt" role="3clFbG">
                     <node concept="37vLTw" id="1Z3z4dL4xcJ" role="2Oq$k0">
-                      <ref role="3cqZAo" node="1Z3z4dL4jPR" resolve="modulesToConsider" />
+                      <ref role="3cqZAo" node="1Z3z4dL4jPR" resolve="modulesToInclude" />
                     </node>
                     <node concept="TSZUe" id="1Z3z4dL4_ws" role="2OqNvi">
                       <node concept="2GrUjf" id="1Z3z4dL4_Kn" role="25WWJ7">
@@ -2088,7 +2088,7 @@
             <property role="TrG5h" value="mod" />
           </node>
           <node concept="37vLTw" id="1Z3z4dL4Bfc" role="2GsD0m">
-            <ref role="3cqZAo" node="1Z3z4dL4jPR" resolve="modulesToConsider" />
+            <ref role="3cqZAo" node="1Z3z4dL4jPR" resolve="modulesToInclude" />
           </node>
           <node concept="3clFbS" id="1Z3z4dL4_Zh" role="2LFqv$">
             <node concept="3cpWs8" id="4FDL7okALXf" role="3cqZAp">

@@ -661,7 +661,7 @@
                   <ref role="1Pybhc" node="7IthyCmdR0r" resolve="GenAISettings" />
                 </node>
                 <node concept="liA8E" id="7IthyCmglsc" role="2OqNvi">
-                  <ref role="37wK5l" node="7IthyCmg3ZP" resolve="getAbsoluteEmbeddingsCachePath" />
+                  <ref role="37wK5l" node="7IthyCmg3ZP" resolve="getAbsoluteEmbeddingsCacheDir" />
                 </node>
               </node>
             </node>
@@ -727,7 +727,7 @@
                   <ref role="1Pybhc" node="7IthyCmdR0r" resolve="GenAISettings" />
                 </node>
                 <node concept="liA8E" id="7IthyCmgnIt" role="2OqNvi">
-                  <ref role="37wK5l" node="7IthyCmg3ZP" resolve="getAbsoluteEmbeddingsCachePath" />
+                  <ref role="37wK5l" node="7IthyCmg3ZP" resolve="getAbsoluteEmbeddingsCacheDir" />
                 </node>
               </node>
             </node>

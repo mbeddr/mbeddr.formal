@@ -415,7 +415,7 @@
             </node>
             <node concept="2OqwBi" id="7s0Rn3OSvx8" role="33vP2m">
               <node concept="37vLTw" id="7s0Rn3OSvx9" role="2Oq$k0">
-                <ref role="3cqZAo" node="75z86$f3$wM" resolve="jsonObjects" />
+                <ref role="3cqZAo" node="75z86$f3$wM" resolve="textSegments" />
               </node>
               <node concept="3$u5V9" id="7s0Rn3OSvxa" role="2OqNvi">
                 <node concept="1bVj0M" id="7s0Rn3OSvxb" role="23t8la">
@@ -446,7 +446,7 @@
             <node concept="17QB3L" id="75z86$f46Om" role="1tU5fm" />
             <node concept="2OqwBi" id="7s0Rn3OS$J7" role="33vP2m">
               <node concept="37vLTw" id="7s0Rn3OSzMa" role="2Oq$k0">
-                <ref role="3cqZAo" node="7s0Rn3OSvx7" resolve="jsonObjectStrings" />
+                <ref role="3cqZAo" node="7s0Rn3OSvx7" resolve="segmentsStrings" />
               </node>
               <node concept="3uJxvA" id="7s0Rn3OSAYO" role="2OqNvi">
                 <node concept="Xl_RD" id="7s0Rn3OSCem" role="3uJOhx">

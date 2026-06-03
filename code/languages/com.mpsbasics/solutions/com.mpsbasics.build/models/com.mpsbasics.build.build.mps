@@ -2914,6 +2914,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="IPsdWjM44M" role="3bR31x">
+          <node concept="3LXTmp" id="IPsdWjM44N" role="3rtmxm">
+            <node concept="3qWCbU" id="IPsdWjM44O" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="IPsdWjM44P" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="IPsdWjM44Q" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="IPsdWjM44R" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.langchain4j.pluginSolution" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="36zCbqqq6a9" role="2G$12L">
         <property role="BnDLt" value="true" />
