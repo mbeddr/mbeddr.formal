@@ -95,6 +95,7 @@
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
       <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
@@ -246,6 +247,7 @@
       <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
+      <concept id="1204980550705" name="jetbrains.mps.baseLanguage.collections.structure.VisitAllOperation" flags="nn" index="2es0OD" />
       <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
         <child id="1151688676805" name="elementType" index="_ZDj9" />
       </concept>
@@ -391,17 +393,46 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="5Ux4Lu36Xbc" role="3cqZAp">
-          <node concept="2OqwBi" id="5Ux4Lu36Xbe" role="3clFbG">
-            <node concept="37vLTw" id="5Ux4Lu36Xbf" role="2Oq$k0">
-              <ref role="3cqZAo" node="5Ux4Lu36sCO" resolve="splitter" />
-            </node>
-            <node concept="liA8E" id="5Ux4Lu36Xbg" role="2OqNvi">
-              <ref role="37wK5l" to="a0f5:~DocumentSplitter.split(dev.langchain4j.data.document.Document)" resolve="split" />
-              <node concept="37vLTw" id="5Ux4Lu36Xbh" role="37wK5m">
-                <ref role="3cqZAo" node="5Ux4Lu36pii" resolve="document" />
+        <node concept="3cpWs8" id="7NXHS$v9VKH" role="3cqZAp">
+          <node concept="3cpWsn" id="7NXHS$v9VKI" role="3cpWs9">
+            <property role="TrG5h" value="textSegments" />
+            <node concept="3uibUv" id="7NXHS$v9xNj" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
+              <node concept="3uibUv" id="7NXHS$v9xNm" role="11_B2D">
+                <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
               </node>
             </node>
+            <node concept="2OqwBi" id="7NXHS$v9VKJ" role="33vP2m">
+              <node concept="37vLTw" id="7NXHS$v9VKK" role="2Oq$k0">
+                <ref role="3cqZAo" node="5Ux4Lu36sCO" resolve="splitter" />
+              </node>
+              <node concept="liA8E" id="7NXHS$v9VKL" role="2OqNvi">
+                <ref role="37wK5l" to="a0f5:~DocumentSplitter.split(dev.langchain4j.data.document.Document)" resolve="split" />
+                <node concept="37vLTw" id="7NXHS$v9VKM" role="37wK5m">
+                  <ref role="3cqZAo" node="5Ux4Lu36pii" resolve="document" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7NXHS$v9XWF" role="3cqZAp">
+          <node concept="2YIFZM" id="7NXHS$v9XWG" role="3clFbG">
+            <ref role="37wK5l" node="7NXHS$v9Bsx" resolve="addCategoryMetadata" />
+            <ref role="1Pybhc" node="7NXHS$v9zxt" resolve="TextSegmentsMetadataHelper" />
+            <node concept="37vLTw" id="7NXHS$v9XWH" role="37wK5m">
+              <ref role="3cqZAo" node="7NXHS$v9VKI" resolve="textSegments" />
+            </node>
+            <node concept="2OqwBi" id="7NXHS$v9XWI" role="37wK5m">
+              <node concept="13iPFW" id="7NXHS$v9XWJ" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7NXHS$v9XWK" role="2OqNvi">
+                <ref role="3TsBF5" to="uzku:1UrPqY6iLwy" resolve="category" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5Ux4Lu36Xbc" role="3cqZAp">
+          <node concept="37vLTw" id="7NXHS$v9VKN" role="3clFbG">
+            <ref role="3cqZAo" node="7NXHS$v9VKI" resolve="textSegments" />
           </node>
         </node>
       </node>
@@ -423,16 +454,44 @@
       <ref role="13i0hy" node="5Ux4Lu37fyQ" resolve="getTextSegments" />
       <node concept="3Tm1VV" id="5Ux4Lu37Qe3" role="1B3o_S" />
       <node concept="3clFbS" id="5Ux4Lu37Qe7" role="3clF47">
-        <node concept="3clFbF" id="3ODp2RoKyyq" role="3cqZAp">
-          <node concept="2YIFZM" id="3ODp2RoKyC4" role="3clFbG">
-            <ref role="37wK5l" node="3ODp2RoKwL$" resolve="getTextSegments" />
-            <ref role="1Pybhc" node="3ODp2RoKwo4" resolve="TextSegmentsProducer" />
-            <node concept="2OqwBi" id="3ODp2RoK$$Y" role="37wK5m">
-              <node concept="13iPFW" id="3ODp2RoK$oU" role="2Oq$k0" />
-              <node concept="3TrEf2" id="3ODp2RoK$YN" role="2OqNvi">
-                <ref role="3Tt5mk" to="uzku:7s0Rn3OP4kF" resolve="nodeRef" />
+        <node concept="3cpWs8" id="7NXHS$v9Uo6" role="3cqZAp">
+          <node concept="3cpWsn" id="7NXHS$v9Uo7" role="3cpWs9">
+            <property role="TrG5h" value="textSegments" />
+            <node concept="_YKpA" id="7NXHS$v9UiM" role="1tU5fm">
+              <node concept="3uibUv" id="7NXHS$v9UiP" role="_ZDj9">
+                <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
               </node>
             </node>
+            <node concept="2YIFZM" id="7NXHS$v9Uo8" role="33vP2m">
+              <ref role="37wK5l" node="3ODp2RoKwL$" resolve="getTextSegments" />
+              <ref role="1Pybhc" node="3ODp2RoKwo4" resolve="TextSegmentsProducer" />
+              <node concept="2OqwBi" id="7NXHS$v9Uo9" role="37wK5m">
+                <node concept="13iPFW" id="7NXHS$v9Uoa" role="2Oq$k0" />
+                <node concept="3TrEf2" id="7NXHS$v9Uob" role="2OqNvi">
+                  <ref role="3Tt5mk" to="uzku:7s0Rn3OP4kF" resolve="nodeRef" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7NXHS$v9UCy" role="3cqZAp">
+          <node concept="2YIFZM" id="7NXHS$v9UCz" role="3clFbG">
+            <ref role="37wK5l" node="7NXHS$v9Bsx" resolve="addCategoryMetadata" />
+            <ref role="1Pybhc" node="7NXHS$v9zxt" resolve="TextSegmentsMetadataHelper" />
+            <node concept="37vLTw" id="7NXHS$v9UC$" role="37wK5m">
+              <ref role="3cqZAo" node="7NXHS$v9Uo7" resolve="textSegments" />
+            </node>
+            <node concept="2OqwBi" id="7NXHS$v9UC_" role="37wK5m">
+              <node concept="13iPFW" id="7NXHS$v9UCA" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7NXHS$v9UCB" role="2OqNvi">
+                <ref role="3TsBF5" to="uzku:1UrPqY6iLwy" resolve="category" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3ODp2RoKyyq" role="3cqZAp">
+          <node concept="37vLTw" id="7NXHS$v9Uoc" role="3clFbG">
+            <ref role="3cqZAo" node="7NXHS$v9Uo7" resolve="textSegments" />
           </node>
         </node>
       </node>
@@ -900,13 +959,41 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3ODp2RoKVqI" role="3cqZAp">
-          <node concept="2YIFZM" id="3ODp2RoKVtm" role="3clFbG">
-            <ref role="37wK5l" node="3ODp2RoKChd" resolve="getTextSegments" />
-            <ref role="1Pybhc" node="3ODp2RoKwo4" resolve="TextSegmentsProducer" />
-            <node concept="37vLTw" id="3ODp2RoKVvF" role="37wK5m">
-              <ref role="3cqZAo" node="3ODp2RoKV19" resolve="crtModel" />
+        <node concept="3cpWs8" id="7NXHS$v9JJE" role="3cqZAp">
+          <node concept="3cpWsn" id="7NXHS$v9JJF" role="3cpWs9">
+            <property role="TrG5h" value="textSegments" />
+            <node concept="_YKpA" id="7NXHS$v9JyE" role="1tU5fm">
+              <node concept="3uibUv" id="7NXHS$v9JyH" role="_ZDj9">
+                <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
+              </node>
             </node>
+            <node concept="2YIFZM" id="7NXHS$v9JJG" role="33vP2m">
+              <ref role="37wK5l" node="3ODp2RoKChd" resolve="getTextSegments" />
+              <ref role="1Pybhc" node="3ODp2RoKwo4" resolve="TextSegmentsProducer" />
+              <node concept="37vLTw" id="7NXHS$v9JJH" role="37wK5m">
+                <ref role="3cqZAo" node="3ODp2RoKV19" resolve="crtModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7NXHS$v9Kw7" role="3cqZAp">
+          <node concept="2YIFZM" id="7NXHS$v9KX_" role="3clFbG">
+            <ref role="37wK5l" node="7NXHS$v9Bsx" resolve="addCategoryMetadata" />
+            <ref role="1Pybhc" node="7NXHS$v9zxt" resolve="TextSegmentsMetadataHelper" />
+            <node concept="37vLTw" id="7NXHS$v9Lcg" role="37wK5m">
+              <ref role="3cqZAo" node="7NXHS$v9JJF" resolve="textSegments" />
+            </node>
+            <node concept="2OqwBi" id="7NXHS$v9MLB" role="37wK5m">
+              <node concept="13iPFW" id="7NXHS$v9M7f" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7NXHS$v9NeD" role="2OqNvi">
+                <ref role="3TsBF5" to="uzku:1UrPqY6iLwy" resolve="category" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3ODp2RoKVqI" role="3cqZAp">
+          <node concept="37vLTw" id="7NXHS$v9JJI" role="3clFbG">
+            <ref role="3cqZAo" node="7NXHS$v9JJF" resolve="textSegments" />
           </node>
         </node>
       </node>
@@ -976,19 +1063,47 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3ODp2RoLUJ0" role="3cqZAp">
-          <node concept="2YIFZM" id="3ODp2RoLUJ1" role="3clFbG">
-            <ref role="37wK5l" node="3ODp2RoKN8z" resolve="getTextSegments" />
-            <ref role="1Pybhc" node="3ODp2RoKwo4" resolve="TextSegmentsProducer" />
-            <node concept="37vLTw" id="3ODp2RoLUJ2" role="37wK5m">
-              <ref role="3cqZAo" node="3ODp2RoLUIQ" resolve="crtModule" />
-            </node>
-            <node concept="2OqwBi" id="4FDL7ok_tbR" role="37wK5m">
-              <node concept="13iPFW" id="4FDL7ok_sYX" role="2Oq$k0" />
-              <node concept="3TrcHB" id="4FDL7ok_uoi" role="2OqNvi">
-                <ref role="3TsBF5" to="uzku:4FDL7oku6xD" resolve="includeReadonlyModels" />
+        <node concept="3cpWs8" id="7NXHS$v9Or_" role="3cqZAp">
+          <node concept="3cpWsn" id="7NXHS$v9OrA" role="3cpWs9">
+            <property role="TrG5h" value="textSegments" />
+            <node concept="_YKpA" id="7NXHS$v9OgH" role="1tU5fm">
+              <node concept="3uibUv" id="7NXHS$v9OgK" role="_ZDj9">
+                <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
               </node>
             </node>
+            <node concept="2YIFZM" id="7NXHS$v9OrB" role="33vP2m">
+              <ref role="37wK5l" node="3ODp2RoKN8z" resolve="getTextSegments" />
+              <ref role="1Pybhc" node="3ODp2RoKwo4" resolve="TextSegmentsProducer" />
+              <node concept="37vLTw" id="7NXHS$v9OrC" role="37wK5m">
+                <ref role="3cqZAo" node="3ODp2RoLUIQ" resolve="crtModule" />
+              </node>
+              <node concept="2OqwBi" id="7NXHS$v9OrD" role="37wK5m">
+                <node concept="13iPFW" id="7NXHS$v9OrE" role="2Oq$k0" />
+                <node concept="3TrcHB" id="7NXHS$v9OrF" role="2OqNvi">
+                  <ref role="3TsBF5" to="uzku:4FDL7oku6xD" resolve="includeReadonlyModels" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7NXHS$v9OSh" role="3cqZAp">
+          <node concept="2YIFZM" id="7NXHS$v9OSi" role="3clFbG">
+            <ref role="37wK5l" node="7NXHS$v9Bsx" resolve="addCategoryMetadata" />
+            <ref role="1Pybhc" node="7NXHS$v9zxt" resolve="TextSegmentsMetadataHelper" />
+            <node concept="37vLTw" id="7NXHS$v9OSj" role="37wK5m">
+              <ref role="3cqZAo" node="7NXHS$v9OrA" resolve="textSegments" />
+            </node>
+            <node concept="2OqwBi" id="7NXHS$v9OSk" role="37wK5m">
+              <node concept="13iPFW" id="7NXHS$v9OSl" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7NXHS$v9OSm" role="2OqNvi">
+                <ref role="3TsBF5" to="uzku:1UrPqY6iLwy" resolve="category" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3ODp2RoLUJ0" role="3cqZAp">
+          <node concept="37vLTw" id="7NXHS$v9OrG" role="3clFbG">
+            <ref role="3cqZAo" node="7NXHS$v9OrA" resolve="textSegments" />
           </node>
         </node>
       </node>
@@ -2178,6 +2293,22 @@
           </node>
         </node>
         <node concept="3clFbH" id="1Z3z4dL4E_2" role="3cqZAp" />
+        <node concept="3clFbF" id="7NXHS$v9RB5" role="3cqZAp">
+          <node concept="2YIFZM" id="7NXHS$v9RB6" role="3clFbG">
+            <ref role="37wK5l" node="7NXHS$v9Bsx" resolve="addCategoryMetadata" />
+            <ref role="1Pybhc" node="7NXHS$v9zxt" resolve="TextSegmentsMetadataHelper" />
+            <node concept="37vLTw" id="7NXHS$v9RB7" role="37wK5m">
+              <ref role="3cqZAo" node="1Z3z4dL4fBO" resolve="res" />
+            </node>
+            <node concept="2OqwBi" id="7NXHS$v9RB8" role="37wK5m">
+              <node concept="13iPFW" id="7NXHS$v9RB9" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7NXHS$v9RBa" role="2OqNvi">
+                <ref role="3TsBF5" to="uzku:1UrPqY6iLwy" resolve="category" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="7NXHS$v9QJX" role="3cqZAp" />
         <node concept="3clFbF" id="1Z3z4dL4OVv" role="3cqZAp">
           <node concept="37vLTw" id="1Z3z4dL4OVt" role="3clFbG">
             <ref role="3cqZAo" node="1Z3z4dL4fBO" resolve="res" />
@@ -2190,6 +2321,179 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="312cEu" id="7NXHS$v9zxt">
+    <property role="3GE5qa" value="knowledge_base" />
+    <property role="TrG5h" value="TextSegmentsMetadataHelper" />
+    <node concept="2tJIrI" id="7NXHS$v9zyu" role="jymVt" />
+    <node concept="Wx3nA" id="7NXHS$v9ALS" role="jymVt">
+      <property role="TrG5h" value="CATEGORY_METADATA_KEY" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7NXHS$v9AJN" role="1B3o_S" />
+      <node concept="17QB3L" id="7NXHS$v9ALB" role="1tU5fm" />
+      <node concept="Xl_RD" id="7NXHS$v9AN4" role="33vP2m">
+        <property role="Xl_RC" value="category" />
+      </node>
+    </node>
+    <node concept="Wx3nA" id="7NXHS$vcndo" role="jymVt">
+      <property role="TrG5h" value="GENERIC_CATEGORY_NAME" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm1VV" id="7NXHS$vcndp" role="1B3o_S" />
+      <node concept="17QB3L" id="7NXHS$vcndq" role="1tU5fm" />
+      <node concept="Xl_RD" id="7NXHS$vcndr" role="33vP2m">
+        <property role="Xl_RC" value="generic" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7NXHS$v9AIx" role="jymVt" />
+    <node concept="2YIFZL" id="7NXHS$v9_lI" role="jymVt">
+      <property role="TrG5h" value="addCategoryMetadata" />
+      <node concept="3clFbS" id="7NXHS$v9_lL" role="3clF47">
+        <node concept="3clFbF" id="7NXHS$v9A08" role="3cqZAp">
+          <node concept="2OqwBi" id="7NXHS$v9AsS" role="3clFbG">
+            <node concept="2OqwBi" id="7NXHS$v9A7F" role="2Oq$k0">
+              <node concept="37vLTw" id="7NXHS$v9A07" role="2Oq$k0">
+                <ref role="3cqZAo" node="7NXHS$v9_Z2" resolve="ts" />
+              </node>
+              <node concept="liA8E" id="7NXHS$v9AkB" role="2OqNvi">
+                <ref role="37wK5l" to="w6l:~TextSegment.metadata()" resolve="metadata" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7NXHS$v9A$5" role="2OqNvi">
+              <ref role="37wK5l" to="a0f5:~Metadata.put(java.lang.String,java.lang.String)" resolve="put" />
+              <node concept="37vLTw" id="7NXHS$v9BaE" role="37wK5m">
+                <ref role="3cqZAo" node="7NXHS$v9ALS" resolve="CATEGORY_METADATA_KEY" />
+              </node>
+              <node concept="37vLTw" id="7NXHS$v9AQo" role="37wK5m">
+                <ref role="3cqZAo" node="7NXHS$v9AF7" resolve="category" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7NXHS$v9_lf" role="1B3o_S" />
+      <node concept="3cqZAl" id="7NXHS$v9_l$" role="3clF45" />
+      <node concept="37vLTG" id="7NXHS$v9_Z2" role="3clF46">
+        <property role="TrG5h" value="ts" />
+        <node concept="3uibUv" id="7NXHS$v9_Z1" role="1tU5fm">
+          <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7NXHS$v9AF7" role="3clF46">
+        <property role="TrG5h" value="category" />
+        <node concept="17QB3L" id="7NXHS$v9AHd" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7NXHS$v9BKz" role="jymVt" />
+    <node concept="2YIFZL" id="7NXHS$v9Bsx" role="jymVt">
+      <property role="TrG5h" value="addCategoryMetadata" />
+      <node concept="3clFbS" id="7NXHS$v9Bsy" role="3clF47">
+        <node concept="3clFbF" id="7NXHS$v9Dag" role="3cqZAp">
+          <node concept="2OqwBi" id="7NXHS$v9ErT" role="3clFbG">
+            <node concept="37vLTw" id="7NXHS$v9Daf" role="2Oq$k0">
+              <ref role="3cqZAo" node="7NXHS$v9BsH" resolve="tss" />
+            </node>
+            <node concept="2es0OD" id="7NXHS$v9Ia0" role="2OqNvi">
+              <node concept="1bVj0M" id="7NXHS$v9Ia2" role="23t8la">
+                <node concept="3clFbS" id="7NXHS$v9Ia3" role="1bW5cS">
+                  <node concept="3clFbF" id="7NXHS$v9Iiy" role="3cqZAp">
+                    <node concept="1rXfSq" id="7NXHS$v9Iix" role="3clFbG">
+                      <ref role="37wK5l" node="7NXHS$v9_lI" resolve="addCategoryMetadata" />
+                      <node concept="37vLTw" id="7NXHS$v9IDU" role="37wK5m">
+                        <ref role="3cqZAo" node="7NXHS$v9Ia4" resolve="it" />
+                      </node>
+                      <node concept="37vLTw" id="7NXHS$v9J05" role="37wK5m">
+                        <ref role="3cqZAo" node="7NXHS$v9BsJ" resolve="category" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="gl6BB" id="7NXHS$v9Ia4" role="1bW2Oz">
+                  <property role="TrG5h" value="it" />
+                  <node concept="2jxLKc" id="7NXHS$v9Ia5" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7NXHS$v9BsF" role="1B3o_S" />
+      <node concept="3cqZAl" id="7NXHS$v9BsG" role="3clF45" />
+      <node concept="37vLTG" id="7NXHS$v9BsH" role="3clF46">
+        <property role="TrG5h" value="tss" />
+        <node concept="_YKpA" id="7NXHS$v9C3A" role="1tU5fm">
+          <node concept="3uibUv" id="7NXHS$v9C3B" role="_ZDj9">
+            <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
+          </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="7NXHS$v9BsJ" role="3clF46">
+        <property role="TrG5h" value="category" />
+        <node concept="17QB3L" id="7NXHS$v9BsK" role="1tU5fm" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7NXHS$vcaHH" role="jymVt" />
+    <node concept="2YIFZL" id="7NXHS$vcbMX" role="jymVt">
+      <property role="TrG5h" value="getCategoryMetadata" />
+      <node concept="3clFbS" id="7NXHS$vcbN0" role="3clF47">
+        <node concept="3cpWs8" id="7NXHS$vcePx" role="3cqZAp">
+          <node concept="3cpWsn" id="7NXHS$vcePy" role="3cpWs9">
+            <property role="TrG5h" value="cat" />
+            <node concept="17QB3L" id="7NXHS$vcfAO" role="1tU5fm" />
+            <node concept="2OqwBi" id="7NXHS$vcePz" role="33vP2m">
+              <node concept="2OqwBi" id="7NXHS$vceP$" role="2Oq$k0">
+                <node concept="37vLTw" id="7NXHS$vceP_" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7NXHS$vccex" resolve="ts" />
+                </node>
+                <node concept="liA8E" id="7NXHS$vcePA" role="2OqNvi">
+                  <ref role="37wK5l" to="w6l:~TextSegment.metadata()" resolve="metadata" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7NXHS$vcePB" role="2OqNvi">
+                <ref role="37wK5l" to="a0f5:~Metadata.getString(java.lang.String)" resolve="getString" />
+                <node concept="37vLTw" id="7NXHS$vcePC" role="37wK5m">
+                  <ref role="3cqZAo" node="7NXHS$v9ALS" resolve="CATEGORY_METADATA_KEY" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7NXHS$vcgeW" role="3cqZAp">
+          <node concept="3clFbS" id="7NXHS$vcgeY" role="3clFbx">
+            <node concept="3clFbF" id="7NXHS$vciZe" role="3cqZAp">
+              <node concept="37vLTI" id="7NXHS$vcm8b" role="3clFbG">
+                <node concept="37vLTw" id="7NXHS$vcoGp" role="37vLTx">
+                  <ref role="3cqZAo" node="7NXHS$vcndo" resolve="GENERIC_CATEGORY_NAME" />
+                </node>
+                <node concept="37vLTw" id="7NXHS$vciZc" role="37vLTJ">
+                  <ref role="3cqZAo" node="7NXHS$vcePy" resolve="cat" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbC" id="7NXHS$vchQo" role="3clFbw">
+            <node concept="10Nm6u" id="7NXHS$vciMC" role="3uHU7w" />
+            <node concept="37vLTw" id="7NXHS$vcgs3" role="3uHU7B">
+              <ref role="3cqZAo" node="7NXHS$vcePy" resolve="cat" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7NXHS$vccSE" role="3cqZAp">
+          <node concept="37vLTw" id="7NXHS$vcePD" role="3clFbG">
+            <ref role="3cqZAo" node="7NXHS$vcePy" resolve="cat" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7NXHS$vcb8Y" role="1B3o_S" />
+      <node concept="17QB3L" id="7NXHS$vcbFu" role="3clF45" />
+      <node concept="37vLTG" id="7NXHS$vccex" role="3clF46">
+        <property role="TrG5h" value="ts" />
+        <node concept="3uibUv" id="7NXHS$vccew" role="1tU5fm">
+          <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="7NXHS$v9zyw" role="jymVt" />
+    <node concept="3Tm1VV" id="7NXHS$v9zxu" role="1B3o_S" />
   </node>
 </model>
 

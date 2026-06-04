@@ -90,6 +90,11 @@
     <property role="TrG5h" value="IKnowledgeBaseEntry" />
     <property role="EcuMT" value="8170409784576028719" />
     <property role="3GE5qa" value="knowledge_base" />
+    <node concept="1TJgyi" id="1UrPqY6iLwy" role="1TKVEl">
+      <property role="IQ2nx" value="2205591392377051170" />
+      <property role="TrG5h" value="category" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7s0Rn3OP0Q3">
     <property role="EcuMT" value="8575097167727037827" />

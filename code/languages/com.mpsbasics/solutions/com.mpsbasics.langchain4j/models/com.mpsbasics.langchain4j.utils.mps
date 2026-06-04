@@ -341,6 +341,8 @@
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
       <concept id="1202128969694" name="jetbrains.mps.baseLanguage.collections.structure.SelectOperation" flags="nn" index="3$u5V9" />
+      <concept id="1240824834947" name="jetbrains.mps.baseLanguage.collections.structure.ValueAccessOperation" flags="nn" index="3AV6Ez" />
+      <concept id="1240825616499" name="jetbrains.mps.baseLanguage.collections.structure.KeyAccessOperation" flags="nn" index="3AY5_j" />
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
@@ -1895,33 +1897,30 @@
     </node>
     <node concept="2tJIrI" id="6cEB6OEV492" role="jymVt" />
     <node concept="312cEg" id="6cEB6OF1Ijs" role="jymVt">
-      <property role="TrG5h" value="key2CachedEmbeddings" />
+      <property role="TrG5h" value="category2Text2CachedEmbeddings" />
       <node concept="3Tm6S6" id="6cEB6OF1Ijt" role="1B3o_S" />
-      <node concept="3uibUv" id="1Z3z4dL38xc" role="1tU5fm">
-        <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
-        <node concept="17QB3L" id="1Z3z4dL3aNZ" role="11_B2D" />
-        <node concept="3uibUv" id="1Z3z4dL3dbk" role="11_B2D">
-          <ref role="3uigEE" node="6cEB6OFcg55" resolve="EmbeddingsManager.CachedEmbedding" />
-        </node>
-      </node>
       <node concept="2ShNRf" id="6cEB6OF1k5y" role="33vP2m">
         <node concept="1pGfFk" id="1Z3z4dL3luX" role="2ShVmc">
           <property role="373rjd" value="true" />
           <ref role="37wK5l" to="33ny:~HashMap.&lt;init&gt;()" resolve="HashMap" />
         </node>
       </node>
-    </node>
-    <node concept="312cEg" id="6cEB6OF6tBa" role="jymVt">
-      <property role="TrG5h" value="embeddingsCacheDir" />
-      <node concept="3Tm6S6" id="6cEB6OF6tBb" role="1B3o_S" />
-      <node concept="3uibUv" id="6cEB6OF3dAs" role="1tU5fm">
-        <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+      <node concept="3uibUv" id="7NXHS$vaGS7" role="1tU5fm">
+        <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+        <node concept="17QB3L" id="7NXHS$vaMHd" role="11_B2D" />
+        <node concept="3uibUv" id="1Z3z4dL38xc" role="11_B2D">
+          <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+          <node concept="17QB3L" id="1Z3z4dL3aNZ" role="11_B2D" />
+          <node concept="3uibUv" id="1Z3z4dL3dbk" role="11_B2D">
+            <ref role="3uigEE" node="6cEB6OFcg55" resolve="EmbeddingsManager.CachedEmbedding" />
+          </node>
+        </node>
       </node>
     </node>
-    <node concept="312cEg" id="6k97aKdrQ5T" role="jymVt">
-      <property role="TrG5h" value="embeddingsCacheMainFile" />
-      <node concept="3Tm6S6" id="6k97aKdrQ5U" role="1B3o_S" />
-      <node concept="3uibUv" id="6k97aKdrQ5V" role="1tU5fm">
+    <node concept="312cEg" id="7NXHS$vhcyV" role="jymVt">
+      <property role="TrG5h" value="embeddingsCacheDir" />
+      <node concept="3Tm6S6" id="7NXHS$vhcyW" role="1B3o_S" />
+      <node concept="3uibUv" id="6cEB6OF3dAs" role="1tU5fm">
         <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
       </node>
     </node>
@@ -1935,40 +1934,33 @@
       </node>
       <node concept="10Oyi0" id="7IthyCmeUeQ" role="1tU5fm" />
     </node>
+    <node concept="Wx3nA" id="7NXHS$vhkQs" role="jymVt">
+      <property role="TrG5h" value="EMBEDDINGS_FILENAME_SUFFIX" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3Tm6S6" id="7NXHS$vhkQt" role="1B3o_S" />
+      <node concept="Xl_RD" id="7NXHS$vhs3f" role="33vP2m">
+        <property role="Xl_RC" value="_embeddings_cache" />
+      </node>
+      <node concept="17QB3L" id="7NXHS$vhpQa" role="1tU5fm" />
+    </node>
     <node concept="2tJIrI" id="6cEB6OF6t87" role="jymVt" />
     <node concept="3clFbW" id="6cEB6OEV4eX" role="jymVt">
       <node concept="3cqZAl" id="6cEB6OEV4eZ" role="3clF45" />
       <node concept="3Tm6S6" id="6cEB6OEV4fs" role="1B3o_S" />
       <node concept="3clFbS" id="6cEB6OEV4f1" role="3clF47">
-        <node concept="3clFbF" id="6cEB6OF6ojV" role="3cqZAp">
-          <node concept="37vLTI" id="6cEB6OF6ojX" role="3clFbG">
-            <node concept="2OqwBi" id="7IthyCmeIKo" role="37vLTx">
-              <node concept="2YIFZM" id="7IthyCmeIeJ" role="2Oq$k0">
+        <node concept="3clFbF" id="7NXHS$vh8m8" role="3cqZAp">
+          <node concept="37vLTI" id="7NXHS$vh8ma" role="3clFbG">
+            <node concept="2OqwBi" id="7NXHS$vaokz" role="37vLTx">
+              <node concept="2YIFZM" id="7NXHS$vaok$" role="2Oq$k0">
                 <ref role="37wK5l" to="7tob:7IthyCmdUzU" resolve="getInstancce" />
                 <ref role="1Pybhc" to="7tob:7IthyCmdR0r" resolve="GenAISettings" />
               </node>
-              <node concept="2S8uIT" id="7IthyCmeJbD" role="2OqNvi">
+              <node concept="2S8uIT" id="7NXHS$vaok_" role="2OqNvi">
                 <ref role="2S8YL0" to="7tob:7IthyCmdZsa" resolve="embeddingsCachePath" />
               </node>
             </node>
-            <node concept="37vLTw" id="6cEB6OF6ok1" role="37vLTJ">
-              <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="embeddingsCacheDir" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6k97aKdrTCj" role="3cqZAp">
-          <node concept="37vLTI" id="6k97aKdrTCk" role="3clFbG">
-            <node concept="2OqwBi" id="6k97aKdrTCl" role="37vLTx">
-              <node concept="2YIFZM" id="6k97aKdrTCm" role="2Oq$k0">
-                <ref role="37wK5l" to="7tob:7IthyCmdUzU" resolve="getInstancce" />
-                <ref role="1Pybhc" to="7tob:7IthyCmdR0r" resolve="GenAISettings" />
-              </node>
-              <node concept="liA8E" id="6k97aKdsc6Z" role="2OqNvi">
-                <ref role="37wK5l" to="7tob:6k97aKdrWPf" resolve="getEmbeddingsCacheMainFile" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="6k97aKdrTCo" role="37vLTJ">
-              <ref role="3cqZAo" node="6k97aKdrQ5T" resolve="embeddingsCacheMainFile" />
+            <node concept="37vLTw" id="7NXHS$vh8me" role="37vLTJ">
+              <ref role="3cqZAo" node="7NXHS$vhcyV" resolve="embeddingsCacheDir" />
             </node>
           </node>
         </node>
@@ -1998,8 +1990,8 @@
                     <ref role="37wK5l" to="8oaq:~FileUtils.listFiles(java.io.File,java.lang.String[],boolean)" resolve="listFiles" />
                     <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
                     <node concept="2OqwBi" id="6k97aKdqOjf" role="37wK5m">
-                      <node concept="37vLTw" id="6k97aKdqAlI" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="embeddingsCacheDir" />
+                      <node concept="37vLTw" id="7NXHS$vaj$9" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7NXHS$vhcyV" resolve="embeddingsCacheDir" />
                       </node>
                       <node concept="liA8E" id="6k97aKdqRrR" role="2OqNvi">
                         <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
@@ -2084,13 +2076,59 @@
                             </node>
                           </node>
                         </node>
+                        <node concept="3cpWs8" id="7NXHS$vbeAu" role="3cqZAp">
+                          <node concept="3cpWsn" id="7NXHS$vbeAv" role="3cpWs9">
+                            <property role="TrG5h" value="categoryName" />
+                            <node concept="17QB3L" id="7NXHS$vbm3K" role="1tU5fm" />
+                            <node concept="2OqwBi" id="7NXHS$vboxC" role="33vP2m">
+                              <node concept="2OqwBi" id="7NXHS$vbeAw" role="2Oq$k0">
+                                <node concept="2GrUjf" id="7NXHS$vbeAx" role="2Oq$k0">
+                                  <ref role="2Gs0qQ" node="6k97aKdqsOI" resolve="crtCacheFile" />
+                                </node>
+                                <node concept="liA8E" id="7NXHS$vbeAy" role="2OqNvi">
+                                  <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="7NXHS$vbun5" role="2OqNvi">
+                                <ref role="37wK5l" to="wyt6:~String.substring(int,int)" resolve="substring" />
+                                <node concept="3cmrfG" id="7NXHS$vbw0B" role="37wK5m">
+                                  <property role="3cmrfH" value="0" />
+                                </node>
+                                <node concept="2OqwBi" id="7NXHS$vbHkP" role="37wK5m">
+                                  <node concept="2OqwBi" id="7NXHS$vbA44" role="2Oq$k0">
+                                    <node concept="2GrUjf" id="7NXHS$vbz$n" role="2Oq$k0">
+                                      <ref role="2Gs0qQ" node="6k97aKdqsOI" resolve="crtCacheFile" />
+                                    </node>
+                                    <node concept="liA8E" id="7NXHS$vbErE" role="2OqNvi">
+                                      <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
+                                    </node>
+                                  </node>
+                                  <node concept="liA8E" id="7NXHS$vbLYG" role="2OqNvi">
+                                    <ref role="37wK5l" to="wyt6:~String.lastIndexOf(java.lang.String)" resolve="lastIndexOf" />
+                                    <node concept="3cpWs3" id="7NXHS$vhjdf" role="37wK5m">
+                                      <node concept="37vLTw" id="7NXHS$vhsQ$" role="3uHU7B">
+                                        <ref role="3cqZAo" node="7NXHS$vhkQs" resolve="EMBEDDINGS_FILENAME_SUFFIX" />
+                                      </node>
+                                      <node concept="Xl_RD" id="7NXHS$vbNLc" role="3uHU7w">
+                                        <property role="Xl_RC" value=".json" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3clFbF" id="4FDL7okEJ1w" role="3cqZAp">
                           <node concept="2OqwBi" id="6k97aKdrj39" role="3clFbG">
                             <node concept="37vLTw" id="4FDL7okEJ1u" role="2Oq$k0">
-                              <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="key2CachedEmbeddings" />
+                              <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="category2Text2CachedEmbeddings" />
                             </node>
                             <node concept="liA8E" id="6k97aKdrl3w" role="2OqNvi">
-                              <ref role="37wK5l" to="33ny:~Map.putAll(java.util.Map)" resolve="putAll" />
+                              <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
+                              <node concept="37vLTw" id="7NXHS$vbeAz" role="37wK5m">
+                                <ref role="3cqZAo" node="7NXHS$vbeAv" resolve="categoryName" />
+                              </node>
                               <node concept="37vLTw" id="6k97aKdrmFB" role="37wK5m">
                                 <ref role="3cqZAo" node="6k97aKdqcsF" resolve="cacheFromCurrentFile" />
                               </node>
@@ -2125,8 +2163,8 @@
           <node concept="2YIFZM" id="6cEB6OF3ikw" role="3clFbw">
             <ref role="37wK5l" to="eoo2:~Files.exists(java.nio.file.Path,java.nio.file.LinkOption...)" resolve="exists" />
             <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
-            <node concept="37vLTw" id="6cEB6OF3iJW" role="37wK5m">
-              <ref role="3cqZAo" node="6cEB6OF6tBa" resolve="embeddingsCacheDir" />
+            <node concept="37vLTw" id="7NXHS$vaj$a" role="37wK5m">
+              <ref role="3cqZAo" node="7NXHS$vhcyV" resolve="embeddingsCacheDir" />
             </node>
           </node>
         </node>
@@ -2208,6 +2246,33 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="7NXHS$vcv6I" role="3cqZAp">
+              <node concept="3cpWsn" id="7NXHS$vcv6J" role="3cpWs9">
+                <property role="TrG5h" value="text2CachedEmbeddings" />
+                <node concept="3uibUv" id="7NXHS$vctTT" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+                  <node concept="17QB3L" id="7NXHS$vctTZ" role="11_B2D" />
+                  <node concept="3uibUv" id="7NXHS$vctTY" role="11_B2D">
+                    <ref role="3uigEE" node="6cEB6OFcg55" resolve="EmbeddingsManager.CachedEmbedding" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="7NXHS$vcv6K" role="33vP2m">
+                  <node concept="37vLTw" id="7NXHS$vcv6L" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="category2Text2CachedEmbeddings" />
+                  </node>
+                  <node concept="liA8E" id="7NXHS$vcv6M" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
+                    <node concept="2YIFZM" id="7NXHS$vcv6N" role="37wK5m">
+                      <ref role="37wK5l" to="zpwy:7NXHS$vcbMX" resolve="getCategoryMetadata" />
+                      <ref role="1Pybhc" to="zpwy:7NXHS$v9zxt" resolve="TextSegmentsMetadataHelper" />
+                      <node concept="2GrUjf" id="7NXHS$vcv6O" role="37wK5m">
+                        <ref role="2Gs0qQ" node="6cEB6OF51IZ" resolve="ts" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="6cEB6OFdAOm" role="3cqZAp">
               <node concept="3cpWsn" id="6cEB6OFdAOn" role="3cpWs9">
                 <property role="TrG5h" value="embedding" />
@@ -2215,8 +2280,8 @@
                   <ref role="3uigEE" node="6cEB6OFcg55" resolve="EmbeddingsManager.CachedEmbedding" />
                 </node>
                 <node concept="2OqwBi" id="1Z3z4dL3yQ$" role="33vP2m">
-                  <node concept="37vLTw" id="6cEB6OFdAOq" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="key2CachedEmbeddings" />
+                  <node concept="37vLTw" id="7NXHS$vcv6P" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7NXHS$vcv6J" resolve="text2CachedEmbeddings" />
                   </node>
                   <node concept="liA8E" id="1Z3z4dL3AB8" role="2OqNvi">
                     <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
@@ -2322,7 +2387,7 @@
                 <node concept="3clFbF" id="6cEB6OFeRkE" role="3cqZAp">
                   <node concept="2OqwBi" id="1Z3z4dL3Gas" role="3clFbG">
                     <node concept="37vLTw" id="6cEB6OFeYP5" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="key2CachedEmbeddings" />
+                      <ref role="3cqZAo" node="7NXHS$vcv6J" resolve="text2CachedEmbeddings" />
                     </node>
                     <node concept="liA8E" id="1Z3z4dL3JlE" role="2OqNvi">
                       <ref role="37wK5l" to="33ny:~Map.put(java.lang.Object,java.lang.Object)" resolve="put" />
@@ -2387,7 +2452,7 @@
                     </node>
                     <node concept="3clFbF" id="4FDL7okHazp" role="3cqZAp">
                       <node concept="1rXfSq" id="4FDL7okHazn" role="3clFbG">
-                        <ref role="37wK5l" node="4FDL7okGw4X" resolve="saveMap" />
+                        <ref role="37wK5l" node="4FDL7okGw4X" resolve="saveAllCachedMaps" />
                       </node>
                     </node>
                   </node>
@@ -2446,7 +2511,7 @@
           <node concept="3clFbS" id="6cEB6OFf_zT" role="3clFbx">
             <node concept="3clFbF" id="4FDL7okGw54" role="3cqZAp">
               <node concept="1rXfSq" id="4FDL7okGw53" role="3clFbG">
-                <ref role="37wK5l" node="4FDL7okGw4X" resolve="saveMap" />
+                <ref role="37wK5l" node="4FDL7okGw4X" resolve="saveAllCachedMaps" />
               </node>
             </node>
           </node>
@@ -2489,90 +2554,227 @@
     </node>
     <node concept="2tJIrI" id="4FDL7okGy0K" role="jymVt" />
     <node concept="3clFb_" id="4FDL7okGw4X" role="jymVt">
-      <property role="TrG5h" value="saveMap" />
+      <property role="TrG5h" value="saveAllCachedMaps" />
       <node concept="3Tm6S6" id="4FDL7okGw4Y" role="1B3o_S" />
       <node concept="3cqZAl" id="4FDL7okGw4Z" role="3clF45" />
       <node concept="3clFbS" id="4FDL7okGw4x" role="3clF47">
-        <node concept="3J1_TO" id="4FDL7okGw4y" role="3cqZAp">
-          <node concept="3clFbS" id="4FDL7okGw4z" role="1zxBo7">
-            <node concept="3clFbF" id="6k97aKdtlTn" role="3cqZAp">
-              <node concept="2OqwBi" id="6k97aKdtzxK" role="3clFbG">
-                <node concept="2OqwBi" id="6k97aKdtumU" role="2Oq$k0">
-                  <node concept="2OqwBi" id="6k97aKdtoAH" role="2Oq$k0">
-                    <node concept="37vLTw" id="6k97aKdtlTl" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6k97aKdrQ5T" resolve="embeddingsCacheMainFile" />
-                    </node>
-                    <node concept="liA8E" id="6k97aKdtrv9" role="2OqNvi">
-                      <ref role="37wK5l" to="eoo2:~Path.getParent()" resolve="getParent" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="6k97aKdtwgO" role="2OqNvi">
-                    <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="6k97aKdtAg0" role="2OqNvi">
-                  <ref role="37wK5l" to="guwi:~File.mkdirs()" resolve="mkdirs" />
-                </node>
-              </node>
+        <node concept="3SKdUt" id="7NXHS$vfuZi" role="3cqZAp">
+          <node concept="1PaTwC" id="7NXHS$vfuZj" role="1aUNEU">
+            <node concept="3oM_SD" id="7NXHS$vfuZk" role="1PaTwD">
+              <property role="3oM_SC" value="ToDo:" />
             </node>
-            <node concept="3cpWs8" id="4FDL7okGw4$" role="3cqZAp">
-              <node concept="3cpWsn" id="4FDL7okGw4_" role="3cpWs9">
-                <property role="TrG5h" value="mapper" />
-                <node concept="3uibUv" id="4FDL7okGw4A" role="1tU5fm">
-                  <ref role="3uigEE" to="7k8g:~ObjectMapper" resolve="ObjectMapper" />
-                </node>
-                <node concept="2ShNRf" id="4FDL7okGw4B" role="33vP2m">
-                  <node concept="1pGfFk" id="4FDL7okGw4C" role="2ShVmc">
-                    <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="7k8g:~ObjectMapper.&lt;init&gt;()" resolve="ObjectMapper" />
-                  </node>
-                </node>
-              </node>
+            <node concept="3oM_SD" id="7NXHS$vfxQm" role="1PaTwD">
+              <property role="3oM_SC" value="writing" />
             </node>
-            <node concept="3clFbF" id="4FDL7okGw4D" role="3cqZAp">
-              <node concept="2OqwBi" id="4FDL7okGw4E" role="3clFbG">
-                <node concept="2OqwBi" id="4FDL7okGw4F" role="2Oq$k0">
-                  <node concept="37vLTw" id="4FDL7okGw4G" role="2Oq$k0">
-                    <ref role="3cqZAo" node="4FDL7okGw4_" resolve="mapper" />
-                  </node>
-                  <node concept="liA8E" id="4FDL7okGw4H" role="2OqNvi">
-                    <ref role="37wK5l" to="7k8g:~ObjectMapper.writerWithDefaultPrettyPrinter()" resolve="writerWithDefaultPrettyPrinter" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="4FDL7okGw4I" role="2OqNvi">
-                  <ref role="37wK5l" to="7k8g:~ObjectWriter.writeValue(java.io.File,java.lang.Object)" resolve="writeValue" />
-                  <node concept="2OqwBi" id="4FDL7okGw4J" role="37wK5m">
-                    <node concept="37vLTw" id="4FDL7okGw4K" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6k97aKdrQ5T" resolve="embeddingsCacheMainFile" />
-                    </node>
-                    <node concept="liA8E" id="4FDL7okGw4L" role="2OqNvi">
-                      <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
-                    </node>
-                  </node>
-                  <node concept="37vLTw" id="4FDL7okGw4M" role="37wK5m">
-                    <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="key2CachedEmbeddings" />
-                  </node>
-                </node>
-              </node>
+            <node concept="3oM_SD" id="7NXHS$vfy5W" role="1PaTwD">
+              <property role="3oM_SC" value="always" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfyeX" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfynY" role="1PaTwD">
+              <property role="3oM_SC" value="entire" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfywZ" role="1PaTwD">
+              <property role="3oM_SC" value="cache" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfyK$" role="1PaTwD">
+              <property role="3oM_SC" value="might" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfyT_" role="1PaTwD">
+              <property role="3oM_SC" value="be" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfz2A" role="1PaTwD">
+              <property role="3oM_SC" value="too" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfzbV" role="1PaTwD">
+              <property role="3oM_SC" value="much" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfzbW" role="1PaTwD">
+              <property role="3oM_SC" value="-" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfzrx" role="1PaTwD">
+              <property role="3oM_SC" value="we" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfzry" role="1PaTwD">
+              <property role="3oM_SC" value="should" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfzrz" role="1PaTwD">
+              <property role="3oM_SC" value="write" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfz$$" role="1PaTwD">
+              <property role="3oM_SC" value="only" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfzH_" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfzHA" role="1PaTwD">
+              <property role="3oM_SC" value="one" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfzHB" role="1PaTwD">
+              <property role="3oM_SC" value="for" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfzQW" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vfzZX" role="1PaTwD">
+              <property role="3oM_SC" value="changed" />
+            </node>
+            <node concept="3oM_SD" id="7NXHS$vf$6y" role="1PaTwD">
+              <property role="3oM_SC" value="category" />
             </node>
           </node>
-          <node concept="3uVAMA" id="4FDL7okGw4N" role="1zxBo5">
-            <node concept="3clFbS" id="4FDL7okGw4O" role="1zc67A">
-              <node concept="2xdQw9" id="4FDL7okGw4P" role="3cqZAp">
-                <property role="2xdLsb" value="gZ5fh_4/error" />
-                <node concept="Xl_RD" id="4FDL7okGw4Q" role="9lYJi">
-                  <property role="Xl_RC" value="Error while saving embeddings cache" />
-                </node>
-                <node concept="37vLTw" id="4FDL7okGw4R" role="9lYJj">
-                  <ref role="3cqZAo" node="4FDL7okGw4S" resolve="e" />
+        </node>
+        <node concept="3clFbH" id="7NXHS$vf$nC" role="3cqZAp" />
+        <node concept="2Gpval" id="7NXHS$vfE6o" role="3cqZAp">
+          <node concept="2GrKxI" id="7NXHS$vfE6q" role="2Gsz3X">
+            <property role="TrG5h" value="entry" />
+          </node>
+          <node concept="37vLTw" id="7NXHS$vgeqA" role="2GsD0m">
+            <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="category2Text2CachedEmbeddings" />
+          </node>
+          <node concept="3clFbS" id="7NXHS$vfE6u" role="2LFqv$">
+            <node concept="3cpWs8" id="7NXHS$vghgd" role="3cqZAp">
+              <node concept="3cpWsn" id="7NXHS$vghgg" role="3cpWs9">
+                <property role="TrG5h" value="category" />
+                <node concept="17QB3L" id="7NXHS$vghgc" role="1tU5fm" />
+                <node concept="2OqwBi" id="7NXHS$vgxBW" role="33vP2m">
+                  <node concept="2GrUjf" id="7NXHS$vgvII" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="7NXHS$vfE6q" resolve="entry" />
+                  </node>
+                  <node concept="3AY5_j" id="7NXHS$vg_1l" role="2OqNvi" />
                 </node>
               </node>
             </node>
-            <node concept="XOnhg" id="4FDL7okGw4S" role="1zc67B">
-              <property role="TrG5h" value="e" />
-              <node concept="nSUau" id="4FDL7okGw4T" role="1tU5fm">
-                <node concept="3uibUv" id="4FDL7okGw4U" role="nSUat">
-                  <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+            <node concept="3cpWs8" id="7NXHS$vgOxt" role="3cqZAp">
+              <node concept="3cpWsn" id="7NXHS$vgOxu" role="3cpWs9">
+                <property role="TrG5h" value="text2Embeddings" />
+                <node concept="3uibUv" id="7NXHS$vgNfn" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
+                  <node concept="17QB3L" id="7NXHS$vgNft" role="11_B2D" />
+                  <node concept="3uibUv" id="7NXHS$vgNfs" role="11_B2D">
+                    <ref role="3uigEE" node="6cEB6OFcg55" resolve="EmbeddingsManager.CachedEmbedding" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="7NXHS$vgOxv" role="33vP2m">
+                  <node concept="2GrUjf" id="7NXHS$vgOxw" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="7NXHS$vfE6q" resolve="entry" />
+                  </node>
+                  <node concept="3AV6Ez" id="7NXHS$vgOxx" role="2OqNvi" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7NXHS$vhy4Y" role="3cqZAp">
+              <node concept="3cpWsn" id="7NXHS$vhy4Z" role="3cpWs9">
+                <property role="TrG5h" value="embeddingsCacheFile" />
+                <node concept="3uibUv" id="7NXHS$vhy50" role="1tU5fm">
+                  <ref role="3uigEE" to="eoo2:~Path" resolve="Path" />
+                </node>
+                <node concept="2OqwBi" id="7NXHS$vhYKH" role="33vP2m">
+                  <node concept="37vLTw" id="7NXHS$vhVm1" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7NXHS$vhcyV" resolve="embeddingsCacheDir" />
+                  </node>
+                  <node concept="liA8E" id="7NXHS$vi4Bn" role="2OqNvi">
+                    <ref role="37wK5l" to="eoo2:~Path.resolve(java.lang.String)" resolve="resolve" />
+                    <node concept="3cpWs3" id="7NXHS$vikNl" role="37wK5m">
+                      <node concept="Xl_RD" id="7NXHS$vioqk" role="3uHU7w">
+                        <property role="Xl_RC" value=".json" />
+                      </node>
+                      <node concept="3cpWs3" id="7NXHS$vicEa" role="3uHU7B">
+                        <node concept="37vLTw" id="7NXHS$vi7TJ" role="3uHU7B">
+                          <ref role="3cqZAo" node="7NXHS$vghgg" resolve="category" />
+                        </node>
+                        <node concept="37vLTw" id="7NXHS$vig3I" role="3uHU7w">
+                          <ref role="3cqZAo" node="7NXHS$vhkQs" resolve="EMBEDDINGS_FILENAME_SUFFIX" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3J1_TO" id="4FDL7okGw4y" role="3cqZAp">
+              <node concept="3clFbS" id="4FDL7okGw4z" role="1zxBo7">
+                <node concept="3clFbF" id="6k97aKdtlTn" role="3cqZAp">
+                  <node concept="2OqwBi" id="6k97aKdtzxK" role="3clFbG">
+                    <node concept="2OqwBi" id="6k97aKdtumU" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6k97aKdtoAH" role="2Oq$k0">
+                        <node concept="37vLTw" id="6k97aKdtlTl" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7NXHS$vhy4Z" resolve="embeddingsCacheFile" />
+                        </node>
+                        <node concept="liA8E" id="6k97aKdtrv9" role="2OqNvi">
+                          <ref role="37wK5l" to="eoo2:~Path.getParent()" resolve="getParent" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="6k97aKdtwgO" role="2OqNvi">
+                        <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6k97aKdtAg0" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.mkdirs()" resolve="mkdirs" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs8" id="4FDL7okGw4$" role="3cqZAp">
+                  <node concept="3cpWsn" id="4FDL7okGw4_" role="3cpWs9">
+                    <property role="TrG5h" value="mapper" />
+                    <node concept="3uibUv" id="4FDL7okGw4A" role="1tU5fm">
+                      <ref role="3uigEE" to="7k8g:~ObjectMapper" resolve="ObjectMapper" />
+                    </node>
+                    <node concept="2ShNRf" id="4FDL7okGw4B" role="33vP2m">
+                      <node concept="1pGfFk" id="4FDL7okGw4C" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="7k8g:~ObjectMapper.&lt;init&gt;()" resolve="ObjectMapper" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4FDL7okGw4D" role="3cqZAp">
+                  <node concept="2OqwBi" id="4FDL7okGw4E" role="3clFbG">
+                    <node concept="2OqwBi" id="4FDL7okGw4F" role="2Oq$k0">
+                      <node concept="37vLTw" id="4FDL7okGw4G" role="2Oq$k0">
+                        <ref role="3cqZAo" node="4FDL7okGw4_" resolve="mapper" />
+                      </node>
+                      <node concept="liA8E" id="4FDL7okGw4H" role="2OqNvi">
+                        <ref role="37wK5l" to="7k8g:~ObjectMapper.writerWithDefaultPrettyPrinter()" resolve="writerWithDefaultPrettyPrinter" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="4FDL7okGw4I" role="2OqNvi">
+                      <ref role="37wK5l" to="7k8g:~ObjectWriter.writeValue(java.io.File,java.lang.Object)" resolve="writeValue" />
+                      <node concept="2OqwBi" id="4FDL7okGw4J" role="37wK5m">
+                        <node concept="37vLTw" id="4FDL7okGw4K" role="2Oq$k0">
+                          <ref role="3cqZAo" node="7NXHS$vhy4Z" resolve="embeddingsCacheFile" />
+                        </node>
+                        <node concept="liA8E" id="4FDL7okGw4L" role="2OqNvi">
+                          <ref role="37wK5l" to="eoo2:~Path.toFile()" resolve="toFile" />
+                        </node>
+                      </node>
+                      <node concept="37vLTw" id="4FDL7okGw4M" role="37wK5m">
+                        <ref role="3cqZAo" node="7NXHS$vgOxu" resolve="text2Embeddings" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3uVAMA" id="4FDL7okGw4N" role="1zxBo5">
+                <node concept="3clFbS" id="4FDL7okGw4O" role="1zc67A">
+                  <node concept="2xdQw9" id="4FDL7okGw4P" role="3cqZAp">
+                    <property role="2xdLsb" value="gZ5fh_4/error" />
+                    <node concept="Xl_RD" id="4FDL7okGw4Q" role="9lYJi">
+                      <property role="Xl_RC" value="Error while saving embeddings cache" />
+                    </node>
+                    <node concept="37vLTw" id="4FDL7okGw4R" role="9lYJj">
+                      <ref role="3cqZAo" node="4FDL7okGw4S" resolve="e" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="XOnhg" id="4FDL7okGw4S" role="1zc67B">
+                  <property role="TrG5h" value="e" />
+                  <node concept="nSUau" id="4FDL7okGw4T" role="1tU5fm">
+                    <node concept="3uibUv" id="4FDL7okGw4U" role="nSUat">
+                      <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -2603,81 +2805,96 @@
           </node>
         </node>
         <node concept="3clFbH" id="G9o6podh81" role="3cqZAp" />
-        <node concept="2Gpval" id="G9o6podl9Q" role="3cqZAp">
-          <node concept="2GrKxI" id="G9o6podl9S" role="2Gsz3X">
-            <property role="TrG5h" value="ce" />
+        <node concept="2Gpval" id="7NXHS$vdxJ0" role="3cqZAp">
+          <node concept="2GrKxI" id="7NXHS$vdxJ2" role="2Gsz3X">
+            <property role="TrG5h" value="text2CachedEmbeddings" />
           </node>
-          <node concept="2OqwBi" id="G9o6podvX_" role="2GsD0m">
-            <node concept="37vLTw" id="G9o6podrFg" role="2Oq$k0">
-              <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="key2CachedEmbeddings" />
+          <node concept="2OqwBi" id="7NXHS$veG21" role="2GsD0m">
+            <node concept="37vLTw" id="7NXHS$veDR7" role="2Oq$k0">
+              <ref role="3cqZAo" node="6cEB6OF1Ijs" resolve="category2Text2CachedEmbeddings" />
             </node>
-            <node concept="liA8E" id="G9o6podyYl" role="2OqNvi">
+            <node concept="liA8E" id="7NXHS$veOPA" role="2OqNvi">
               <ref role="37wK5l" to="33ny:~Map.values()" resolve="values" />
             </node>
           </node>
-          <node concept="3clFbS" id="G9o6podl9W" role="2LFqv$">
-            <node concept="3cpWs8" id="G9o6podHVe" role="3cqZAp">
-              <node concept="3cpWsn" id="G9o6podHVf" role="3cpWs9">
-                <property role="TrG5h" value="ts" />
-                <node concept="3uibUv" id="G9o6podHVg" role="1tU5fm">
-                  <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
+          <node concept="3clFbS" id="7NXHS$vdxJ6" role="2LFqv$">
+            <node concept="2Gpval" id="G9o6podl9Q" role="3cqZAp">
+              <node concept="2GrKxI" id="G9o6podl9S" role="2Gsz3X">
+                <property role="TrG5h" value="ce" />
+              </node>
+              <node concept="2OqwBi" id="G9o6podvX_" role="2GsD0m">
+                <node concept="2GrUjf" id="7NXHS$vf13e" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="7NXHS$vdxJ2" resolve="text2CachedEmbeddings" />
                 </node>
-                <node concept="2ShNRf" id="G9o6podM82" role="33vP2m">
-                  <node concept="1pGfFk" id="G9o6podP4G" role="2ShVmc">
-                    <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="w6l:~TextSegment.&lt;init&gt;(java.lang.String,dev.langchain4j.data.document.Metadata)" resolve="TextSegment" />
-                    <node concept="2OqwBi" id="G9o6podSrf" role="37wK5m">
-                      <node concept="2GrUjf" id="G9o6podRtj" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="G9o6podl9S" resolve="ce" />
-                      </node>
-                      <node concept="2OwXpG" id="G9o6podW0I" role="2OqNvi">
-                        <ref role="2Oxat5" node="6cEB6OFci16" resolve="text" />
-                      </node>
+                <node concept="liA8E" id="G9o6podyYl" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~Map.values()" resolve="values" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="G9o6podl9W" role="2LFqv$">
+                <node concept="3cpWs8" id="G9o6podHVe" role="3cqZAp">
+                  <node concept="3cpWsn" id="G9o6podHVf" role="3cpWs9">
+                    <property role="TrG5h" value="ts" />
+                    <node concept="3uibUv" id="G9o6podHVg" role="1tU5fm">
+                      <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
                     </node>
-                    <node concept="2ShNRf" id="G9o6podZIB" role="37wK5m">
-                      <node concept="1pGfFk" id="G9o6poe5fF" role="2ShVmc">
+                    <node concept="2ShNRf" id="G9o6podM82" role="33vP2m">
+                      <node concept="1pGfFk" id="G9o6podP4G" role="2ShVmc">
                         <property role="373rjd" value="true" />
-                        <ref role="37wK5l" to="a0f5:~Metadata.&lt;init&gt;()" resolve="Metadata" />
+                        <ref role="37wK5l" to="w6l:~TextSegment.&lt;init&gt;(java.lang.String,dev.langchain4j.data.document.Metadata)" resolve="TextSegment" />
+                        <node concept="2OqwBi" id="G9o6podSrf" role="37wK5m">
+                          <node concept="2GrUjf" id="G9o6podRtj" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="G9o6podl9S" resolve="ce" />
+                          </node>
+                          <node concept="2OwXpG" id="G9o6podW0I" role="2OqNvi">
+                            <ref role="2Oxat5" node="6cEB6OFci16" resolve="text" />
+                          </node>
+                        </node>
+                        <node concept="2ShNRf" id="G9o6podZIB" role="37wK5m">
+                          <node concept="1pGfFk" id="G9o6poe5fF" role="2ShVmc">
+                            <property role="373rjd" value="true" />
+                            <ref role="37wK5l" to="a0f5:~Metadata.&lt;init&gt;()" resolve="Metadata" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3cpWs8" id="G9o6poebBO" role="3cqZAp">
-              <node concept="3cpWsn" id="G9o6poebBP" role="3cpWs9">
-                <property role="TrG5h" value="em" />
-                <node concept="3uibUv" id="G9o6poebBQ" role="1tU5fm">
-                  <ref role="3uigEE" to="mhe9:~Embedding" resolve="Embedding" />
-                </node>
-                <node concept="2ShNRf" id="G9o6poegiv" role="33vP2m">
-                  <node concept="1pGfFk" id="G9o6poejIC" role="2ShVmc">
-                    <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="mhe9:~Embedding.&lt;init&gt;(float[])" resolve="Embedding" />
-                    <node concept="2OqwBi" id="G9o6poen82" role="37wK5m">
-                      <node concept="2GrUjf" id="G9o6poem7Y" role="2Oq$k0">
-                        <ref role="2Gs0qQ" node="G9o6podl9S" resolve="ce" />
-                      </node>
-                      <node concept="2OwXpG" id="G9o6poeqDi" role="2OqNvi">
-                        <ref role="2Oxat5" node="6cEB6OFciA1" resolve="vector" />
+                <node concept="3cpWs8" id="G9o6poebBO" role="3cqZAp">
+                  <node concept="3cpWsn" id="G9o6poebBP" role="3cpWs9">
+                    <property role="TrG5h" value="em" />
+                    <node concept="3uibUv" id="G9o6poebBQ" role="1tU5fm">
+                      <ref role="3uigEE" to="mhe9:~Embedding" resolve="Embedding" />
+                    </node>
+                    <node concept="2ShNRf" id="G9o6poegiv" role="33vP2m">
+                      <node concept="1pGfFk" id="G9o6poejIC" role="2ShVmc">
+                        <property role="373rjd" value="true" />
+                        <ref role="37wK5l" to="mhe9:~Embedding.&lt;init&gt;(float[])" resolve="Embedding" />
+                        <node concept="2OqwBi" id="G9o6poen82" role="37wK5m">
+                          <node concept="2GrUjf" id="G9o6poem7Y" role="2Oq$k0">
+                            <ref role="2Gs0qQ" node="G9o6podl9S" resolve="ce" />
+                          </node>
+                          <node concept="2OwXpG" id="G9o6poeqDi" role="2OqNvi">
+                            <ref role="2Oxat5" node="6cEB6OFciA1" resolve="vector" />
+                          </node>
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="G9o6poeuwh" role="3cqZAp">
-              <node concept="2OqwBi" id="G9o6poewJH" role="3clFbG">
-                <node concept="37vLTw" id="G9o6poeuwf" role="2Oq$k0">
-                  <ref role="3cqZAo" node="G9o6pod1Ag" resolve="res" />
-                </node>
-                <node concept="TSZUe" id="G9o6poeB17" role="2OqNvi">
-                  <node concept="1Ls8ON" id="G9o6poeCq_" role="25WWJ7">
-                    <node concept="37vLTw" id="G9o6poeG0J" role="1Lso8e">
-                      <ref role="3cqZAo" node="G9o6poebBP" resolve="em" />
+                <node concept="3clFbF" id="G9o6poeuwh" role="3cqZAp">
+                  <node concept="2OqwBi" id="G9o6poewJH" role="3clFbG">
+                    <node concept="37vLTw" id="G9o6poeuwf" role="2Oq$k0">
+                      <ref role="3cqZAo" node="G9o6pod1Ag" resolve="res" />
                     </node>
-                    <node concept="37vLTw" id="G9o6poeL2i" role="1Lso8e">
-                      <ref role="3cqZAo" node="G9o6podHVf" resolve="ts" />
+                    <node concept="TSZUe" id="G9o6poeB17" role="2OqNvi">
+                      <node concept="1Ls8ON" id="G9o6poeCq_" role="25WWJ7">
+                        <node concept="37vLTw" id="G9o6poeG0J" role="1Lso8e">
+                          <ref role="3cqZAo" node="G9o6poebBP" resolve="em" />
+                        </node>
+                        <node concept="37vLTw" id="G9o6poeL2i" role="1Lso8e">
+                          <ref role="3cqZAo" node="G9o6podHVf" resolve="ts" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>

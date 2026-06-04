@@ -328,17 +328,23 @@
   <node concept="24kQdi" id="75z86$f1Yd9">
     <property role="3GE5qa" value="knowledge_base" />
     <ref role="1XX52x" to="uzku:75z86$f1Vhg" resolve="PdfDocumentKnowledgeBaseItem" />
-    <node concept="3EZMnI" id="75z86$f1Ylr" role="2wV5jI">
-      <node concept="3F0ifn" id="75z86$f1Yof" role="3EZMnx">
-        <property role="3F0ifm" value="pdf file:" />
+    <node concept="3EZMnI" id="7NXHS$v8BfD" role="2wV5jI">
+      <node concept="2iRkQZ" id="7NXHS$v8BfE" role="2iSdaV" />
+      <node concept="3EZMnI" id="75z86$f1Ylr" role="3EZMnx">
+        <node concept="3F0ifn" id="75z86$f1Yof" role="3EZMnx">
+          <property role="3F0ifm" value="pdf file:" />
+        </node>
+        <node concept="3F1sOY" id="75z86$f1YtM" role="3EZMnx">
+          <ref role="1NtTu8" to="uzku:75z86$f1VBh" resolve="location" />
+        </node>
+        <node concept="3F0ifn" id="75z86$f1Yzl" role="3EZMnx">
+          <property role="3F0ifm" value=";" />
+        </node>
+        <node concept="2iRfu4" id="75z86$f1Ylu" role="2iSdaV" />
       </node>
-      <node concept="3F1sOY" id="75z86$f1YtM" role="3EZMnx">
-        <ref role="1NtTu8" to="uzku:75z86$f1VBh" resolve="location" />
+      <node concept="PMmxH" id="7NXHS$v8BfH" role="3EZMnx">
+        <ref role="PMmxG" node="1UrPqY6iLwz" resolve="KnowledgeBaseEntryEditorComponent" />
       </node>
-      <node concept="3F0ifn" id="75z86$f1Yzl" role="3EZMnx">
-        <property role="3F0ifm" value=";" />
-      </node>
-      <node concept="2iRfu4" id="75z86$f1Ylu" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="75z86$f4jv5">
@@ -366,23 +372,29 @@
   <node concept="24kQdi" id="7s0Rn3OP5Xs">
     <property role="3GE5qa" value="knowledge_base" />
     <ref role="1XX52x" to="uzku:7s0Rn3OP0Q3" resolve="NamedRootNodeKnowledgeBaseItem" />
-    <node concept="3EZMnI" id="7s0Rn3OP6$K" role="2wV5jI">
-      <node concept="3F0ifn" id="7s0Rn3OP6$O" role="3EZMnx">
-        <property role="3F0ifm" value="root node ref:" />
-      </node>
-      <node concept="1iCGBv" id="7s0Rn3OP6Z3" role="3EZMnx">
-        <ref role="1NtTu8" to="uzku:7s0Rn3OP4kF" resolve="nodeRef" />
-        <node concept="1sVBvm" id="7s0Rn3OP6Z5" role="1sWHZn">
-          <node concept="3F0A7n" id="7s0Rn3OP7cf" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+    <node concept="3EZMnI" id="7NXHS$v8Bf_" role="2wV5jI">
+      <node concept="2iRkQZ" id="7NXHS$v8BfA" role="2iSdaV" />
+      <node concept="3EZMnI" id="7s0Rn3OP6$K" role="3EZMnx">
+        <node concept="3F0ifn" id="7s0Rn3OP6$O" role="3EZMnx">
+          <property role="3F0ifm" value="root node ref:" />
+        </node>
+        <node concept="1iCGBv" id="7s0Rn3OP6Z3" role="3EZMnx">
+          <ref role="1NtTu8" to="uzku:7s0Rn3OP4kF" resolve="nodeRef" />
+          <node concept="1sVBvm" id="7s0Rn3OP6Z5" role="1sWHZn">
+            <node concept="3F0A7n" id="7s0Rn3OP7cf" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
           </node>
         </node>
+        <node concept="3F0ifn" id="7s0Rn3OP7po" role="3EZMnx">
+          <property role="3F0ifm" value=";" />
+        </node>
+        <node concept="2iRfu4" id="7s0Rn3OP6$N" role="2iSdaV" />
       </node>
-      <node concept="3F0ifn" id="7s0Rn3OP7po" role="3EZMnx">
-        <property role="3F0ifm" value=";" />
+      <node concept="PMmxH" id="7NXHS$v8BfC" role="3EZMnx">
+        <ref role="PMmxG" node="1UrPqY6iLwz" resolve="KnowledgeBaseEntryEditorComponent" />
       </node>
-      <node concept="2iRfu4" id="7s0Rn3OP6$N" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="zifywuOsEO">
@@ -946,41 +958,53 @@
   <node concept="24kQdi" id="3ODp2RoKRCL">
     <property role="3GE5qa" value="knowledge_base" />
     <ref role="1XX52x" to="uzku:3ODp2RoKRln" resolve="ModelKnowledgeBaseItem" />
-    <node concept="3EZMnI" id="3ODp2RoKRCN" role="2wV5jI">
-      <node concept="3F0ifn" id="3ODp2RoKRCR" role="3EZMnx">
-        <property role="3F0ifm" value="model" />
+    <node concept="3EZMnI" id="1UrPqY6iLwM" role="2wV5jI">
+      <node concept="2iRkQZ" id="1UrPqY6iLwN" role="2iSdaV" />
+      <node concept="3EZMnI" id="3ODp2RoKRCN" role="3EZMnx">
+        <node concept="3F0ifn" id="3ODp2RoKRCR" role="3EZMnx">
+          <property role="3F0ifm" value="model" />
+        </node>
+        <node concept="3F1sOY" id="3ODp2RoKRCU" role="3EZMnx">
+          <ref role="1NtTu8" to="uzku:3ODp2RoKRlq" resolve="modelReference" />
+        </node>
+        <node concept="2iRfu4" id="3ODp2RoKRCQ" role="2iSdaV" />
       </node>
-      <node concept="3F1sOY" id="3ODp2RoKRCU" role="3EZMnx">
-        <ref role="1NtTu8" to="uzku:3ODp2RoKRlq" resolve="modelReference" />
+      <node concept="PMmxH" id="1UrPqY6iLwP" role="3EZMnx">
+        <ref role="PMmxG" node="1UrPqY6iLwz" resolve="KnowledgeBaseEntryEditorComponent" />
       </node>
-      <node concept="2iRfu4" id="3ODp2RoKRCQ" role="2iSdaV" />
     </node>
   </node>
   <node concept="24kQdi" id="3ODp2RoLTZU">
     <property role="3GE5qa" value="knowledge_base" />
     <ref role="1XX52x" to="uzku:3ODp2RoLTZR" resolve="ModuleKnowledgeBaseItem" />
-    <node concept="3EZMnI" id="3ODp2RoLTZW" role="2wV5jI">
-      <node concept="3F0ifn" id="3ODp2RoLU00" role="3EZMnx">
-        <property role="3F0ifm" value="solution:" />
-      </node>
-      <node concept="3F1sOY" id="3ODp2RoLU03" role="3EZMnx">
-        <ref role="1NtTu8" to="uzku:3ODp2RoLTZT" resolve="moduleRef" />
-      </node>
-      <node concept="2iRfu4" id="3ODp2RoLTZZ" role="2iSdaV" />
-      <node concept="3F0ifn" id="4FDL7oku6xH" role="3EZMnx">
-        <property role="3F0ifm" value="(includes readonly:" />
-        <node concept="VechU" id="4FDL7oku6xP" role="3F10Kt">
-          <property role="Vb096" value="fLJRk5_/gray" />
+    <node concept="3EZMnI" id="7NXHS$v8Bfv" role="2wV5jI">
+      <node concept="2iRkQZ" id="7NXHS$v8Bfw" role="2iSdaV" />
+      <node concept="3EZMnI" id="3ODp2RoLTZW" role="3EZMnx">
+        <node concept="3F0ifn" id="3ODp2RoLU00" role="3EZMnx">
+          <property role="3F0ifm" value="solution:" />
+        </node>
+        <node concept="3F1sOY" id="3ODp2RoLU03" role="3EZMnx">
+          <ref role="1NtTu8" to="uzku:3ODp2RoLTZT" resolve="moduleRef" />
+        </node>
+        <node concept="2iRfu4" id="3ODp2RoLTZZ" role="2iSdaV" />
+        <node concept="3F0ifn" id="4FDL7oku6xH" role="3EZMnx">
+          <property role="3F0ifm" value="(includes readonly:" />
+          <node concept="VechU" id="4FDL7oku6xP" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="4FDL7oku6xK" role="3EZMnx">
+          <ref role="1NtTu8" to="uzku:4FDL7oku6xD" resolve="includeReadonlyModels" />
+        </node>
+        <node concept="3F0ifn" id="4FDL7oku6xN" role="3EZMnx">
+          <property role="3F0ifm" value=")" />
+          <node concept="VechU" id="4FDL7oku6xQ" role="3F10Kt">
+            <property role="Vb096" value="fLJRk5_/gray" />
+          </node>
         </node>
       </node>
-      <node concept="3F0A7n" id="4FDL7oku6xK" role="3EZMnx">
-        <ref role="1NtTu8" to="uzku:4FDL7oku6xD" resolve="includeReadonlyModels" />
-      </node>
-      <node concept="3F0ifn" id="4FDL7oku6xN" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="VechU" id="4FDL7oku6xQ" role="3F10Kt">
-          <property role="Vb096" value="fLJRk5_/gray" />
-        </node>
+      <node concept="PMmxH" id="7NXHS$v8Bfy" role="3EZMnx">
+        <ref role="PMmxG" node="1UrPqY6iLwz" resolve="KnowledgeBaseEntryEditorComponent" />
       </node>
     </node>
   </node>
@@ -1462,6 +1486,26 @@
         </node>
         <node concept="2iRfu4" id="4FDL7okAct$" role="2iSdaV" />
       </node>
+      <node concept="PMmxH" id="7NXHS$v8Bf$" role="3EZMnx">
+        <ref role="PMmxG" node="1UrPqY6iLwz" resolve="KnowledgeBaseEntryEditorComponent" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="1UrPqY6iLwz">
+    <property role="3GE5qa" value="knowledge_base" />
+    <property role="TrG5h" value="KnowledgeBaseEntryEditorComponent" />
+    <ref role="1XX52x" to="uzku:75z86$f230C" resolve="IKnowledgeBaseEntry" />
+    <node concept="3EZMnI" id="1UrPqY6iLw_" role="2wV5jI">
+      <node concept="3XFhqQ" id="1UrPqY6iLwR" role="3EZMnx" />
+      <node concept="3F0ifn" id="1UrPqY6iLwF" role="3EZMnx">
+        <property role="3F0ifm" value="category:" />
+      </node>
+      <node concept="3F0A7n" id="1UrPqY6iLwK" role="3EZMnx">
+        <property role="1O74Pk" value="true" />
+        <property role="1$x2rV" value="generic" />
+        <ref role="1NtTu8" to="uzku:1UrPqY6iLwy" resolve="category" />
+      </node>
+      <node concept="2iRfu4" id="1UrPqY6iLwC" role="2iSdaV" />
     </node>
   </node>
 </model>
