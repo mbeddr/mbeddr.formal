@@ -95,7 +95,7 @@
     <property role="TrG5h" value="defeaters_identification" />
     <property role="3GE5qa" value="_010_pacemaker" />
     <node concept="3ty2V1" id="5UGnlYWpzRv" role="3ty2V2">
-      <ref role="3ty2V0" node="5UGnlYWpzRr" resolve="pacemaker_documents" />
+      <ref role="3ty2V0" node="5UGnlYWpzRr" resolve="accident_reports" />
     </node>
     <node concept="FG9Z$" id="5UGnlYWpzRw" role="m0T0H">
       <node concept="1Pa9Pv" id="5UGnlYWpzRz" role="FG9ZB">
