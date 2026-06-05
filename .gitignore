@@ -44,3 +44,9 @@ buildDistribution.xml
 # ---------------------------------------
 # JUnit test reports
 TESTS-*.xml
+
+# github co-pilot
+copilot.data.migration.agent.xml
+copilot.data.migration.ask.xml
+copilot.data.migration.ask2agent.xml
+copilot.data.migration.edit.xml

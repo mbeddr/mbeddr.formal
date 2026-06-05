@@ -36,9 +36,6 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
-      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
-        <property id="1068580123138" name="value" index="3clFbU" />
-      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -80,14 +77,6 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -124,29 +113,20 @@
     <ref role="1M2myG" to="uzku:4b8dqHkXt5H" resolve="ChatWordBase" />
     <node concept="9S07l" id="4b8dqHkXt5J" role="9Vyp8">
       <node concept="3clFbS" id="4b8dqHkXt5K" role="2VODD2">
-        <node concept="1X3_iC" id="u2p4MKzsGY" role="lGtFl">
-          <property role="3V$3am" value="statement" />
-          <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
-          <node concept="3clFbF" id="4b8dqHkXtjr" role="8Wnug">
-            <node concept="2OqwBi" id="4b8dqHkXuuC" role="3clFbG">
-              <node concept="2OqwBi" id="4b8dqHkXtuq" role="2Oq$k0">
-                <node concept="nLn13" id="4b8dqHkXtjq" role="2Oq$k0" />
-                <node concept="2Xjw5R" id="4b8dqHkXtZq" role="2OqNvi">
-                  <node concept="1xMEDy" id="4b8dqHkXtZs" role="1xVPHs">
-                    <node concept="chp4Y" id="4b8dqHkXu1w" role="ri$Ld">
-                      <ref role="cht4Q" to="uzku:5Ux4Lu3ajKQ" resolve="AbstractChat" />
-                    </node>
+        <node concept="3clFbF" id="4b8dqHkXtjr" role="3cqZAp">
+          <node concept="2OqwBi" id="4b8dqHkXuuC" role="3clFbG">
+            <node concept="2OqwBi" id="4b8dqHkXtuq" role="2Oq$k0">
+              <node concept="nLn13" id="4b8dqHkXtjq" role="2Oq$k0" />
+              <node concept="2Xjw5R" id="4b8dqHkXtZq" role="2OqNvi">
+                <node concept="1xMEDy" id="4b8dqHkXtZs" role="1xVPHs">
+                  <node concept="chp4Y" id="4b8dqHkXu1w" role="ri$Ld">
+                    <ref role="cht4Q" to="uzku:5Ux4Lu3ajKQ" resolve="AbstractChat" />
                   </node>
-                  <node concept="1xIGOp" id="4b8dqHkXuiR" role="1xVPHs" />
                 </node>
+                <node concept="1xIGOp" id="4b8dqHkXuiR" role="1xVPHs" />
               </node>
-              <node concept="3x8VRR" id="4b8dqHkXuXw" role="2OqNvi" />
             </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="u2p4MKzs4R" role="3cqZAp">
-          <node concept="3clFbT" id="u2p4MKzs4Q" role="3clFbG">
-            <property role="3clFbU" value="true" />
+            <node concept="3x8VRR" id="4b8dqHkXuXw" role="2OqNvi" />
           </node>
         </node>
       </node>

@@ -15,6 +15,7 @@
     <import index="uzku" ref="r:559d7741-840e-4574-b7c8-7764c52017cf(com.mpsbasics.genai.structure)" />
     <import index="21pk" ref="r:be665d13-1e1d-44cd-9817-8bd4d610f422(com.mbeddr.mpsutil.json.structure)" />
     <import index="41ey" ref="r:f005c0ad-4467-4fc6-b611-c9d0774d1591(com.mbeddr.mpsutil.json.behavior)" />
+    <import index="w6l" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.data.segment(com.mpsbasics.langchain4j/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="zpwy" ref="r:aae41743-8738-47cd-9865-f4a886e2c9d4(com.mpsbasics.genai.behavior)" implicit="true" />
@@ -127,9 +128,6 @@
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
-      <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
-        <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
-      </concept>
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
       </concept>
@@ -143,6 +141,9 @@
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -153,10 +154,14 @@
       <concept id="1204796164442" name="jetbrains.mps.baseLanguage.collections.structure.InternalSequenceOperation" flags="nn" index="23sCx2">
         <child id="1204796294226" name="closure" index="23t8la" />
       </concept>
+      <concept id="1151688443754" name="jetbrains.mps.baseLanguage.collections.structure.ListType" flags="in" index="_YKpA">
+        <child id="1151688676805" name="elementType" index="_ZDj9" />
+      </concept>
       <concept id="1151689724996" name="jetbrains.mps.baseLanguage.collections.structure.SequenceType" flags="in" index="A3Dl8">
         <child id="1151689745422" name="elementType" index="A3Ik2" />
       </concept>
       <concept id="1151702311717" name="jetbrains.mps.baseLanguage.collections.structure.ToListOperation" flags="nn" index="ANE8D" />
+      <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
       <concept id="1240687580870" name="jetbrains.mps.baseLanguage.collections.structure.JoinOperation" flags="nn" index="3uJxvA">
         <child id="1240687658305" name="delimiter" index="3uJOhx" />
       </concept>
@@ -336,40 +341,64 @@
         </node>
         <node concept="3cpWs8" id="75z86$f3$wL" role="3cqZAp">
           <node concept="3cpWsn" id="75z86$f3$wM" role="3cpWs9">
-            <property role="TrG5h" value="jsonObjects" />
-            <node concept="2I9FWS" id="7s0Rn3ORN6g" role="1tU5fm">
-              <ref role="2I9WkF" to="21pk:3L4lRB2GdlQ" resolve="JSONObject" />
+            <property role="TrG5h" value="textSegments" />
+            <node concept="_YKpA" id="PCzh3eUBUq" role="1tU5fm">
+              <node concept="3uibUv" id="PCzh3eUDyL" role="_ZDj9">
+                <ref role="3uigEE" to="w6l:~TextSegment" resolve="TextSegment" />
+              </node>
             </node>
             <node concept="2OqwBi" id="7s0Rn3OSbzo" role="33vP2m">
               <node concept="2OqwBi" id="7s0Rn3ORWvo" role="2Oq$k0">
-                <node concept="2OqwBi" id="75z86$f3$wP" role="2Oq$k0">
-                  <node concept="2OqwBi" id="75z86$f3$wQ" role="2Oq$k0">
-                    <node concept="2Sf5sV" id="75z86$f3$wR" role="2Oq$k0" />
-                    <node concept="I4A8Y" id="75z86$f3$wS" role="2OqNvi" />
+                <node concept="2OqwBi" id="PCzh3eZ35q" role="2Oq$k0">
+                  <node concept="2OqwBi" id="75z86$f3$wP" role="2Oq$k0">
+                    <node concept="2OqwBi" id="75z86$f3$wQ" role="2Oq$k0">
+                      <node concept="2Sf5sV" id="75z86$f3$wR" role="2Oq$k0" />
+                      <node concept="I4A8Y" id="75z86$f3$wS" role="2OqNvi" />
+                    </node>
+                    <node concept="2SmgA7" id="75z86$f3$wT" role="2OqNvi">
+                      <node concept="chp4Y" id="75z86$f3$wU" role="1dBWTz">
+                        <ref role="cht4Q" to="uzku:75z86$f1Uqd" resolve="KnowledgeBase" />
+                      </node>
+                    </node>
                   </node>
-                  <node concept="2SmgA7" id="75z86$f3$wT" role="2OqNvi">
-                    <node concept="chp4Y" id="75z86$f3$wU" role="1dBWTz">
-                      <ref role="cht4Q" to="uzku:75z86$f230C" resolve="IKnowledgeBaseEntry" />
+                  <node concept="3goQfb" id="PCzh3eZ9zx" role="2OqNvi">
+                    <node concept="1bVj0M" id="PCzh3eZ9zz" role="23t8la">
+                      <node concept="3clFbS" id="PCzh3eZ9z$" role="1bW5cS">
+                        <node concept="3clFbF" id="PCzh3eZbiS" role="3cqZAp">
+                          <node concept="2OqwBi" id="PCzh3eZc6X" role="3clFbG">
+                            <node concept="37vLTw" id="PCzh3eZbiR" role="2Oq$k0">
+                              <ref role="3cqZAo" node="PCzh3eZ9z_" resolve="it" />
+                            </node>
+                            <node concept="3Tsc0h" id="PCzh3eZdEk" role="2OqNvi">
+                              <ref role="3TtcxE" to="uzku:75z86$f4jk4" resolve="entries" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="gl6BB" id="PCzh3eZ9z_" role="1bW2Oz">
+                        <property role="TrG5h" value="it" />
+                        <node concept="2jxLKc" id="PCzh3eZ9zA" role="1tU5fm" />
+                      </node>
                     </node>
                   </node>
                 </node>
-                <node concept="3$u5V9" id="7s0Rn3OS3qB" role="2OqNvi">
-                  <node concept="1bVj0M" id="7s0Rn3OS3qD" role="23t8la">
-                    <node concept="3clFbS" id="7s0Rn3OS3qE" role="1bW5cS">
-                      <node concept="3clFbF" id="7s0Rn3OS4Sq" role="3cqZAp">
-                        <node concept="2OqwBi" id="7s0Rn3OS5UA" role="3clFbG">
-                          <node concept="37vLTw" id="7s0Rn3OS4Sp" role="2Oq$k0">
-                            <ref role="3cqZAo" node="7s0Rn3OS3qF" resolve="it" />
+                <node concept="3goQfb" id="PCzh3eUH4B" role="2OqNvi">
+                  <node concept="1bVj0M" id="PCzh3eUH4D" role="23t8la">
+                    <node concept="3clFbS" id="PCzh3eUH4E" role="1bW5cS">
+                      <node concept="3clFbF" id="PCzh3eUH4F" role="3cqZAp">
+                        <node concept="2OqwBi" id="PCzh3eUH4G" role="3clFbG">
+                          <node concept="37vLTw" id="PCzh3eUH4H" role="2Oq$k0">
+                            <ref role="3cqZAo" node="PCzh3eUH4J" resolve="it" />
                           </node>
-                          <node concept="2qgKlT" id="7s0Rn3OS999" role="2OqNvi">
-                            <ref role="37wK5l" to="zpwy:75z86$f1Zqs" resolve="getJsonObject" />
+                          <node concept="2qgKlT" id="PCzh3eUH4I" role="2OqNvi">
+                            <ref role="37wK5l" to="zpwy:5Ux4Lu37fyQ" resolve="getTextSegments" />
                           </node>
                         </node>
                       </node>
                     </node>
-                    <node concept="gl6BB" id="7s0Rn3OS3qF" role="1bW2Oz">
+                    <node concept="gl6BB" id="PCzh3eUH4J" role="1bW2Oz">
                       <property role="TrG5h" value="it" />
-                      <node concept="2jxLKc" id="7s0Rn3OS3qG" role="1tU5fm" />
+                      <node concept="2jxLKc" id="PCzh3eUH4K" role="1tU5fm" />
                     </node>
                   </node>
                 </node>
@@ -380,23 +409,24 @@
         </node>
         <node concept="3cpWs8" id="7s0Rn3OSvx6" role="3cqZAp">
           <node concept="3cpWsn" id="7s0Rn3OSvx7" role="3cpWs9">
-            <property role="TrG5h" value="jsonObjectStrings" />
+            <property role="TrG5h" value="segmentsStrings" />
             <node concept="A3Dl8" id="7s0Rn3OSu7R" role="1tU5fm">
               <node concept="17QB3L" id="7s0Rn3OSu7U" role="A3Ik2" />
             </node>
             <node concept="2OqwBi" id="7s0Rn3OSvx8" role="33vP2m">
               <node concept="37vLTw" id="7s0Rn3OSvx9" role="2Oq$k0">
-                <ref role="3cqZAo" node="75z86$f3$wM" resolve="jsonObjects" />
+                <ref role="3cqZAo" node="75z86$f3$wM" resolve="textSegments" />
               </node>
               <node concept="3$u5V9" id="7s0Rn3OSvxa" role="2OqNvi">
                 <node concept="1bVj0M" id="7s0Rn3OSvxb" role="23t8la">
                   <node concept="3clFbS" id="7s0Rn3OSvxc" role="1bW5cS">
                     <node concept="3clFbF" id="7s0Rn3OSvxd" role="3cqZAp">
-                      <node concept="2YIFZM" id="7s0Rn3OSvxe" role="3clFbG">
-                        <ref role="37wK5l" to="41ey:2JDrrqk1Wo7" resolve="valueToString" />
-                        <ref role="1Pybhc" to="41ey:6Sh7xm2KsCp" resolve="JsonHelper" />
-                        <node concept="37vLTw" id="7s0Rn3OSvxf" role="37wK5m">
+                      <node concept="2OqwBi" id="PCzh3eULql" role="3clFbG">
+                        <node concept="37vLTw" id="PCzh3eUL7F" role="2Oq$k0">
                           <ref role="3cqZAo" node="7s0Rn3OSvxg" resolve="it" />
+                        </node>
+                        <node concept="liA8E" id="PCzh3eULX2" role="2OqNvi">
+                          <ref role="37wK5l" to="w6l:~TextSegment.text()" resolve="text" />
                         </node>
                       </node>
                     </node>
@@ -412,15 +442,15 @@
         </node>
         <node concept="3cpWs8" id="75z86$f47Cq" role="3cqZAp">
           <node concept="3cpWsn" id="75z86$f47Cr" role="3cpWs9">
-            <property role="TrG5h" value="jsonObjectString" />
+            <property role="TrG5h" value="allTextSegments" />
             <node concept="17QB3L" id="75z86$f46Om" role="1tU5fm" />
             <node concept="2OqwBi" id="7s0Rn3OS$J7" role="33vP2m">
               <node concept="37vLTw" id="7s0Rn3OSzMa" role="2Oq$k0">
-                <ref role="3cqZAo" node="7s0Rn3OSvx7" resolve="jsonObjectStrings" />
+                <ref role="3cqZAo" node="7s0Rn3OSvx7" resolve="segmentsStrings" />
               </node>
               <node concept="3uJxvA" id="7s0Rn3OSAYO" role="2OqNvi">
                 <node concept="Xl_RD" id="7s0Rn3OSCem" role="3uJOhx">
-                  <property role="Xl_RC" value=" and this json object " />
+                  <property role="Xl_RC" value=" and this string segment " />
                 </node>
               </node>
             </node>
@@ -431,12 +461,17 @@
           <node concept="3cpWsn" id="75z86$f1M4g" role="3cpWs9">
             <property role="TrG5h" value="prompt" />
             <node concept="17QB3L" id="75z86$f1M4h" role="1tU5fm" />
-            <node concept="3cpWs3" id="75z86$f37EQ" role="33vP2m">
-              <node concept="37vLTw" id="75z86$f4aQj" role="3uHU7w">
-                <ref role="3cqZAo" node="75z86$f47Cr" resolve="jsonObjectString" />
+            <node concept="3cpWs3" id="PCzh3eUW0g" role="33vP2m">
+              <node concept="Xl_RD" id="PCzh3eUWTI" role="3uHU7w">
+                <property role="Xl_RC" value="\n&lt;&lt;&lt;\n\n" />
               </node>
-              <node concept="Xl_RD" id="75z86$f32eM" role="3uHU7B">
-                <property role="Xl_RC" value="Consider the information contained in the following document given as JSON object " />
+              <node concept="3cpWs3" id="75z86$f37EQ" role="3uHU7B">
+                <node concept="Xl_RD" id="75z86$f32eM" role="3uHU7B">
+                  <property role="Xl_RC" value="Consider the information contained in the following document \n\n&gt;&gt;&gt;\n " />
+                </node>
+                <node concept="37vLTw" id="75z86$f4aQj" role="3uHU7w">
+                  <ref role="3cqZAo" node="75z86$f47Cr" resolve="allTextSegments" />
+                </node>
               </node>
             </node>
           </node>

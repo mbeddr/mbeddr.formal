@@ -1,0 +1,433 @@
+Notes on Cruise's pedestrian accident
+
+This is a set of notes on the Quinn Emanuel report on Cruise's handling of the 2023-10-02 accident where a Cruise autonomous vehicle (AV) hit a pedestrian, stopped, and then started moving again with the pedestrian stuck under the bottom of the AV, dragging the pedestrian 20 feet. After seeing some comments about this report, I read five stories on this report and then skimmed the report and my feeling is that the authors of four of the stories probably didn't read the report, and that people who were commenting had generally read stories by journalists who did not appear to read the source material, so the comments were generally way off base. As we previously discussed, it's common for summaries to be wildly wrong, even when they're summarizing a short paper that's easily read by laypeople, so of course summaries of a 200-page report are likely to be misleading at best.
+
+On reading the entire report, I'd say that Cruise both looks better and worse than in the articles I saw, which is the same pattern we saw when we looked at the actual source for Exhibits H and J from Twitter v. Musk, the United States v. Microsoft Corp. docs, etc.; just as some journalists seem to be pro/anti-Elon Musk and pro/anti-Microsoft, willing to push an inaccurate narrative to dunk on them to the maximum extent possible or exonerate them to the maximum extent possible, we see the same thing here with Cruise. And as we saw in those cases, despite some articles seemingly trying to paint Cruise in the best or worst light possible, the report itself has material that is more positive and more negative than we see in the most positive or negative stories.
+
+Aside from correcting misleading opinions on the report, I find the report interesting because it's rare to see any kind of investigation over what went wrong in tech in this level of detail, let alone a public one. We often see this kind of investigation in safety critical systems and sometimes see in sports as well as for historical events, but tech events are usually not covered like this. Of course companies do post-mortems of incidents, but you generally won't see a 200-page report on a single incident, nor will the focus of post-mortems be what the focus was here. In the past, we've noted that a lot can be learned by looking at the literature and incident reports on safety-critical systems, so of course this is true here as well, where we see a safety-critical system that's more tech adjacent than the ones we've looked at previously.
+
+The length and depth of the report here reflects a difference in culture between safety-critical systems and "tech". The behavior that's described as unconscionable in the report is not only normal in tech, but probably more transparent and above board than you'd see at most major tech companies; I find the culture clash between tech and safety-critical systems interesting as well. I attempted to inject as little of my opinion as possible into the report as possible, even in cases where knowledge of tech companies or engineering meant that I would've personally written something different. For more opinions, see the section at the end.
+
+REPORT TO THE BOARDS OF DIRECTORS OF CRUISE LLC, GM CRUISE HOLDINGS LLC, AND GENERAL MOTORS HOLDINGS LLC REGARDING THE OCTOBER 2, 2023 ACCIDENT IN SAN FRANCISCO
+
+I. Introduction
+A. Overview
+2023-10-24: California DMV suspended Cruise's driverless license
+2023-10-02: human-drive Nissan hit a pedestrian, putting the pedestrian in the path of a Cruise autonomous vehicle (AV), which then dragged the pedestrian 20 feet before stopping
+DMV claims
+Cruise failed to disclose that the AV moved forward after its initial impact
+video Cruise played only shows a part of the accident and not the pedestrian dragging
+DMV only learned about dragging from another government agency, "impeding its oversight"
+NHTSA and CPUC also took action against Cruise and made similar claims
+Media outlets also complained they were misled by Cruise
+Cruise leadership and Cruise employees who talked with regulators admit they didn't explain the dragging, but they said they played the full video clip but, in all but one of the meetings, internet issues may have prevented regulators from seeing the entire accident
+Cruise employees claim the NHTSA received the full video immediately after the 10-03 meeting and the CPUC declined the offer for the full video
+Cruise employees note they played the full video, with no internet issues, to the SF MTA, SFPD, and SFFD on 10-03 and had a full discussion with those agencies
+Cruise leadership concedes they never informed the media, but leadership believed that Cruise's obligations to the media are different than their obligations to regulators
+B. Scope of Review
+[no notes]
+C. Review Plan Methodology and Limitations
+205k "documents", including " including e-mails, texts, Slack communications, and internal Cruise documents"
+Interviewed 88 current and former employees and contractors
+Reviewed a report by Exponent Inc., 3rd party firm
+Internal review only; did not interview regulators and public officials
+A number of employees and contractors were not available "due to personal circumstances and/or the wide-scale Reduction in Force", but these interviews were not deemed to be important
+Report doesn't address broader issues outside of mandate, "such as the safety or safety processes of Cruise AVs or its operations, which are more appropriately evaluated by those with engineering and technical safety expertise"
+D. Summary of Principal Findings and Conclusions
+By morning of 10-03, leadership and 100+ employees knew the pedestrian had been dragged ~20ft. by the Cruise AV during the secondary movement after the AV came to a stop.
+Plan was to disclose this happened by playing the full video, "letting the 'video speak for itself.'"
+Cruise assumed that regulators and government officials would ask questions and Cruise would provide further info
+"Weight of the evidence" is that Cruise attempted to play the full video, but in 3 meetings, internet issues prevented this from happening and Cruise didn't point out that the pedestrian dragging happened
+On 10-02 and 10-03, "Cruise leadership was fixated on correcting the inaccurate media narrative" that Cruise's AV had caused the accident
+This led Cruise to convey information about the Nissan and omit "other important information" about the accident to "the media, regulators, and other government officials"
+"The reasons for Cruise’s failings in this instance are numerous: poor leadership, mistakes in judgment, lack of coordination, an 'us versus them' mentality with regulators, and a fundamental misapprehension of Cruise’s obligations of accountability and transparency to the government and the public. Cruise must take decisive steps to address these issues in order to restore trust and credibility."
+"the DMV Suspension Order is a direct result of a proverbial self-inflicted wound by certain senior Cruise leadership and employees who appear not to have fully appreciated how a regulated business should interact with its regulators ... it was a fundamentally flawed approach for Cruise or any other business to take the position that a video of an accident causing serious injury provides all necessary information to regulators and otherwise relieves them of the need to affirmatively and fully inform these regulators of all relevant facts. As one Cruise employee stated in a text message to another employee about this matter, our 'leaders have failed us.'"
+II. THE FACTS REGARDING THE OCTOBER 2 ACCIDENT
+A. Background Regarding Cruise’s Business Operations
+Cruise founded in 2013, acquired by GM in 2016 (GM owns 79%)
+Cruise's stated goal: "responsibly deploy the world’s most advanced driverless vehicle service"
+"Cruise’s stated mission is to make transportation cleaner, safer and more accessible"
+Driverless ride-hail operation started 2021-09 in SF
+Started charging in 2022-06
+Has expanded to other areas, including overseas
+10-02 accident was first pedestrian injury in > 5M mi of driving
+B. Key Facts Regarding the Accident
+10-02, 9:29pm: human-driven Nissan Sentra strikes pedestrian in crosswalk of 4-way intersection at 5th & Market in SF
+Pedestrian entered crosswalk against a red light and "Do Not Walk" signal and then paused in Nissan's lane. Police report cited both driver and pedestrian for code violations and concluded that the driver was "most at fault"
+The impact launched the pedestrian into the path of the Crusie AV
+Cruise AV braked but still hit pedestrian
+After coming to a complete stop, the AV moved to find a safe place to stop, known as a "'minimal risk condition' pullover maneuver (pullover maneuver) or 'secondary movement.'"
+AV drove up to 7.7mph for 20 feet, dragging pedestrian with it
+Nissan driver fled the scene (hit and run)
+C. Timeline of Key Events
+10-02, 9:29pm: accident occurs and Nissan driver flees; AV transits low-res 3-second video (Offload 1) confirming collison to Cruise Remote Assistance Center
+9:32pm: AV transmits medium-res 14-second video (Offload 2) of collision, but not pullover maneuver and pedestrian dragging
+9:33pm: emergency responders arrive between 9:33pm and 9:38pm
+9:40pm: SFFD uses heavy rescue tools to remove pedestrian from under AV
+9:49pm: Cruise Incident Response team labels accident a "Sev-1", which is for minor collisions. Team created a virtual "war room" on Google Meet and a dedicated slack channel (war room slack channel) with ~20 employees
+10:17pm: Cruise contractors arrive at accident scene. One contractor takes > 100 photos and videos and notes blood and skin patches on the ground, showing the AV moved from point-of-impact to final stopping place
+Another contractor, with Cruise's authorization, gives SFPD 14-second video showing Nissan
+11:31pm: Cruise raises incident to "Sev-0", for "major vehicle incident with moderate to major injury or fatality to any party". Maybe 200 additional employees are paged to the war room
+10-03, 12:15am: incident management convenes virtual meeting to share updates about accident and discuss media strategy to rebut articles that AV caused the accident
+12:45am: Cruise govt affairs team reaches out to govt officials
+12:53am: Cruise issues a press release noting the Nissan caused the accident. CEO Kyle Vogt and Communications VP Aaron McLear heavily edit the press statement. No mention of pullover maneuver or dragging; Cruise employees claim they were not aware of those facts at the time
+1:30am: AV back at Cruise facility, start the process of downloading collision report data from AV, including full video
+2:14am: 45-second video of accident which depicts pullover maneuver and dragging available, but no Cruise employee receives a notification that it's ready until > 4 hours later, when all data from AV is processed
+3:21am: At the request of Cruise govt. Affairs, Director of Systems Integrity Matt Wood creates 12s video of accident showing Nissan hitting pedestrian and pedestrian landing in front of Cruise AV. Video stops before AV hits pedestrian
+3:45am: Wood posts first known communication within Cruise of pullover maneuver and pedestrian dragging to war room slack channel with 77 employees in the channel at the time. Wood says the AV moved 1-2 car lengths after initial collision
+6:00am: Cruise holds virtual Crisis Management Team (CMT) meeting; pedestrian dragging is discussed. Subsequent slack messages (6:17am, 6:25am, 6:56am) confirm discussion on pullover maneuver and dragging
+6:28am: Cruise posts 45s 9-pane video of pullover and dragging, the full video (offload 3) to war room slack channel
+6:45am: Virtual Senior Leadership Team (SLT) meeting; Vogt and McLear discuss whether or not to share full video with media or alter Cruise press statement and decide to do neither
+7:25am: Cruise govt. affairs employee emails NHTSA and offers to meet
+7:45am: Cruise eng and safety teams hold preliminary meetings to discuss collision and pullover maneuver
+9:05am: Cruise regulator, legal, and systems integrity employees have pre-meeting to prepare for NHTSA briefing; they discuss pullover and dragging
+10:05am: Wood and VP of Global Government Affairs Prashanthi Raman have virtual meeting with Mayor of SF's transpo advisor. Wood shows full video, "reportedly with internet connectivity issues from his home computer"; neither Wood nor Raman brings up or discusses pullover or dragging
+10:30am: Virtual meeting with NHTSA. Wood shows full video, "again having internet connectivity issues causing video to freeze and/or black-out in key places including after initial impact" and again not bringing up or discussing pullover or dragging
+10:35am: Cruise eng and safety teams have 2nd meeting to discuss collision
+11:05am: Cruise regulatory, legal, and systems integrity employees have pre-meeting for DMV and California Highway Patrol (CHP) briefing; Cruise team doesn't discuss pullover and dragging
+11:30am: hybrid in-person and virtual meeting with DMV and CHP. Wood shows full video, again with internet connectivity issues and again not bringing up or discussing pullover or dragging
+12:00pm: virtual Cruise CMT meeting; engineers present findings, including chart detailing movement of AV during accident. Shows how AV collided with pedestrian and then moved forward again, dragging pedestrian ~20 ft. AV programmed to move as much as 100 ft, but internal AV systems flagged a failed wheel speed sensor because wheels were moving at different speeds (because one wheel was spinning on pedestrian's leg), stopping the car early
+12:30pm: Cruise govt affairs employee calls CPUC to discuss 10-02 accident and video
+12:40pm: Cruise virtual SLT meeting. Chart from CMT meeting presented. Vogt, COO Gil West, Chief Legal Officer Jeff Bleich, and others present. Safety and eng teams raise question of grounding fleet; Vogt and West say no
+1:40pm: full video uploaded to NHTSA
+2:37pm: Cruise submits 1-day report to NHTSA; no mention of pullover or dragging
+3:30pm: Cruise virtual meeting with SF MTA, SFPD, and SFFD. Wood "shows full video several times" without technical difficulties. Cruise doesn't bring up pullover maneuver or dragging, but officials see it and ask Cruise questions about it
+6:05pm: Cruise CMT meeting. Vogt and West end Sev-0 war room. Some cruise employees later express concerns about this
+10-05, 10:46am: Forbes asks Cruise for comment on AV dragging. Cruise declines to comment and stands by 10-03 press release
+1:07pm: CPUC sends request for information with 10-19 response deadline
+10-06, 10:31am: Forbes publishes "Cruise Robotaxi Dragged Woman 20 Feet in Recent Accident, Local Politician Says"
+10-10, 4:00pm: DMV requests more complete video from Cruise. Cruise responds same day, offering to screenshare video
+10-11, 11am: Cruise meeting with DMV on operational issues unrelated to accident. DMV's video request "briefly discussed"
+12:48pm: Cruise paralegal submits 10-day report to NHTSA after checking for updates. Report doesn't mention pullover or dragging "as no one told the paralegal these facts needed to be added"
+10-12, 3pm: NHTSA notifies Cruise that it intends to open Preliminary Evaluation (PE) for 10-02 accident and 3 other pedestrian-related events
+10-13, 10am: Cruise meets with DMV and CHP to share 9m 6-pane video and DMV clarifies that it wants the 45s 9-pane video ("full video")
+12:19pm: Cruise uploads full video
+1:30pm: Cruise meets with NHTSA and argues that PE is unwarranted
+10-16, 11:30am: Cruise meets with DMV and CHP, who state they don't believe they were shown full video during 10-03 meeting
+10-16: NHTSA officially opens PE
+10-18, 3:00pm: Cruise holds standing monthly meeting with CPUC. Cruise says they'll meet CPUC's 10-19 deadline
+10-19, 1:40pm: Cruise provides information and full video in response to 10-05 request
+10-23, 2:35pm: Cruise learns of possible DMV suspension of driverless permit
+10-24, 10:28am: DMV issues suspension of Cruise's driverless permit. Except for the few employees who heard on 10-23, Cruise employees are surprised
+10:49am: Cruise publishes blog post which states: "Shortly after the incident, our team proactively shared information with the California Department of Motor Vehicles (DMV), California Public Utilities Commision [sic] (CPUC), and National Highway Traffic Safety Administration (NHTSA), including the full video, and have stayed in close contact with regulators to answer their questions"
+11-02, 12:03pm: Cruise submits 30-day NHTSA report, which includes discussion of pullover and dragging
+11-02: Cruise recalls 950 systems as a result of 10-02 accident
+12-01: CPUC issues Order to Show Cause "for failing to provide complete information and for making misleading public comments regarding the October 2, 2023 Cruise related incident and its subsequent interactions with the commission"
+D. Video Footage of the Accident
+6 videos
+Offload 1; 9:29pm: low res, 3s, 4-pane. Captures 3s immediately after collision, including audio
+Offload 2; 9:32pm*: 14s, 9-pane. No audio. Shows Nissan pedestrian collision and pedestrian being thrown into path of Cruise AV
+Media Video; 10:04pm: 21s, 4-pane. Derived from offload 2, but slowed down
+1:06am: 4s clip of offload 2, cut by Vogt and sent to SVP of Government Affairs David Estrada and Chief Legal Officer Jeff Bleich with "this is the cut I was thinking of". Estrada responds with "yes, agree that should be the primary video that gets released if one is released". Video is a single pane from left-front of AV and only shows Nissan hitting pedestrian. Estrada says this should be shown in meetings with regulators first to show "what happened in clarity so you can see how the event happened (establish clear fault of human driver)", but "no evidence this shorter 4-second video was shown at any of the regulatory meetings."
+3:21am: 12s 9-pane video derived from offload 2. Cruise VP of Global Government Affairs Prashanthi Raman and Estrada asked Wood for shorter version of 14s video, "given last night’s Sev 0 and our need to discuss with policymakers, can you please make us a usable video of this angle [link to Webviz]. We only need to show the impact and the person landing in front of us and then cut it there". Wood created the video. Cruise’s Senior Director of Federal Affairs Eric Danko tells Wood, "believe NHTSA will want video footage that captures moment of our impact as well" and Wood replies, " can create a NHTSA version video once the logs have been offloaded"
+"full video"; 6:28am: 45s, 9-pane, shows pullover and dragging. No audio. Link to full video posted to war room slack at
+E. The Facts Regarding What Cruise Knew and When About the October 2 Accident
+1. Facts Cruise Learned the Evening of October 2
+a. Accident Scene
+Driverless Support Specialists (DSS) arrive at scene, 9:39pm to 9:44pm
+Another 2-person DSS team arrives with member of operations team and member of Safety Escalation team (SET), 10:00-10:30pm
+At least one contractor takes > 100 photos and video and indicated an understanding of pedestrian dragging
+Contractor noted blood and skin pieces, took long shots of trail of blood that indicated traveled after impact; contractor was instructed to bring phone to Cruise instead of uploading video onto customary Slack channel; contractor believes this was to protect injured pedestrian's privacy
+Photos and video uploaded into "RINO" database at 2:23am, accessed by > 100 employees starting at 10-03, 5:11am; DB doesn't show which specific employees reviewed specific photos and videos
+Another person at the scene denied knowing about dragging
+In Cruise's internal review, prior to Quinn Emanuel, One Remote Assistance operator (RA) said they saw "ped flung onto hood of AV. You could see and hear the bump" and another saw AV "was already pulling over to the side". Quinn Emanuel didn't find out about these until after the RIF on 12-14. On reaching out, one declined the interview and the other didn't respond
+Two other interviewees reported discussion of secondary movement of AV on evening of 10-02 or early morning of 10-03 but "this information has not been verified and appears contrary to the weight of the evidence"
+No employees interviewed by Quinn Emanuel indicated they knew about dragging on 10-02
+b. Virtual "Sev-0 War Room"
+20 people initially in war room
+200+ joined and left war room on 10-02 and 10-03
+2 interviewees recalled discussion of pedestrian dragging in Sev-0 war room on Meet. Neither could identify who was involved in the discussion or the timing of the discussion. One said it was after 4:00am
+Cruise incident response playbook outlines roles of Incident Commander, SLT, CMT as well as how to respond in the weeks after incident. Playbook was not followed, said to be "aborted" because "too manually intensive"
+c. Initial Media Narrative About the October 2 Accident
+"Although the War Room was supposed to address a variety of issues such as understanding how the accident happened and next steps, the focus quickly centered almost exclusively on correcting a false media narrative that the Cruise AV had caused the Accident"
+2. Facts Cruise Learned on October 3
+a. The 12:15 a.m. "Sev-0 Collision SFO" Meeting
+CMT Incident Manager convened meeting with 140 invites
+Focus on sharing updates and media narrative strategy
+Slack communications show Cruise employees viewed risk that public could think that Cruise AV injured pedestrian as a crisis
+Estrada says to Raman, "feels like we are fighting with both arms tied behind our back if we are so afraid of releasing an exonerating video, very naïve if we think we won’t get walloped by media and enemies"
+Raman responds, "we are under siege is my opinion, we have no fighting chance with these headlines/media stories…we are drowning — and we will lose every time"
+above statement is said to have "captured well the feeling within Cruise’s senior leadership"
+Vogt attended meeting and wanted to reveal only 4s part of clip showing the Nissan hitting the pedestrian
+Vogt insisted he wanted to authorize any video or media statement before release, "nothing would be shared or done" without his approval
+In parallel, comms team drafted bullet points to share with media, including "AV came to a complete stop immediately after impacting the struck pedestrian", which comms team did not know was inaccurate
+b. Engineer’s 3:45 a.m. Slack Message
+Slack communication
+Wood: I have not seen this mentioned yet, but in the 1st RA Session the AV is stopped nearly right next to the adjacent vehicle but drives forward another 1-2 car lengths before coming to it's [sic] final position.
+Unnamed employee: ACP, I can’t access the link but is the PED under the vehicle while it continues to move? Am I understanding that correctly
+Wood: I believe so and the AV video can be seen moving vertically
+Wood determined this by looking at data from RA center, which implied AV movement of 1-2 car lengths with dragged pedestrian
+c. The 6:00 a.m. Crisis Management Team (CMT) Meeting
+CMT discussed pullover and dragging
+100+ in meeting, including "COO Gil West, co-founder and Chief Product Officer Dan Kan, VP of Communications, Senior Director of Federal Affairs, and members of the communications, legal, engineering, safety, regulatory, and government affairs teams"
+6:17am, engineer slacks Wood, "have they raised the issue that the AV moved post-event? On this call. I joined late" and Wood responds "Not yet. I will raise"
+Slack conversation during meet, from West to 6 other senior leaders:
+West: ACP- For awareness it was reported at the CMT meeting that the AV moved 1-2 vehicle lengths before RA connection (low collision and looking for pull over before e-stop hit)
+Vogt: Should we run road to sim and see what the AV would have done if it was in the other vehicles position? I think that might be quite powerful
+West: Good idea- I suspect the AV would have stopped and never hit the Ped in the first place
+engineer summarized CMT meeting in war room slack, "in the CMT meeting this morning, there was discussion of releasing/sharing video at some point. Matt Wood also noted that the AV travels at a slow speed after the collision, with the pedestrian underneath the car (it's about 7 meters). It wasn't discussed, but i wanted to point out that someone who has access to our AV video above up until the point of the collision could see later that the AV traveled about this distance post-collision, because there is a video on social media which shows the AV stopped with the pedestrian underneath, and there are some markers in the scene."
+engineer also pointed out that non-engineers should be able to deduce pedestrian dragging from before before AV impact plus social media video showing AV's final position. After the DMV suspension order, also said "I pointed out in the channel that it was not hard to conclude there was movement after the initial stop…it seems the DMV fully understanding the entire details was predictable"
+d. The 6:45 a.m. Senior Leadership Team (SLT) Meeting
+Dragging discussed in SLT meeting
+SLT discussed amending media statement, "the outcome [of these discussions] was whatever statement was published on social we would stick with because the decision was we would lose credibility by editing a previously agreed upon statement"
+At this point, senior members of comms team knew that "AV came to a complete stop immediately after impacting the struck pedestrian" statement was inaccurate, but comms team continued giving inaccurate statement to press after SLT meeting, resulting in publications with incorrect statements in Forbes, CNBC, ABC News Digital, Engadget, Jalopnik, and The Register
+"complete stop" removed on 10-13 after comms employee flagged statement to legal, which said "I don’t think we can say this"
+e. The 7:45 a.m. and 10:35 a.m. Engineering and Safety Team
+Meetings
+
+[no notes]
+f. The 12:05 p.m. CMT Meeting
+[no notes]
+g. The 12:40 p.m. SLT Meeting
+"Vogt is said to have stated that it was good the AV stopped after 20 feet when it detected interference with its tire rather than continuing, as AVs are programmed to do, to look for a safe place to pull over for up to 100 feet or one full block"
+Safety and eng teams raised question of grounding fleet until fix deployed
+Vogt and West rejected idea
+h. The 6:05 p.m. CMT Meeting
+CMT leaders learn SLT is disbanding Sev-0 war room
+Some interviewees expressed concern that no future CMT meetings scheduled for biggest incident in Cruise history
+Some suggested to Chief Legal Officer Jeff Bleich that "miniature CMT" should continue to meet; Bleich and others supportive, but this wasn't done
+3. Cruise’s Response to the Forbes Article
+Forbes reached out about pedestrian dragging
+Cruise decides not to respond to avoid triggering a new media cycle
+Cruise stops sharing video with media
+III. CRUISE’S COMMUNICATIONS WITH REGULATORS, CITY OFFICIALS, AND OTHER STAKEHOLDERS
+A. Overview of Cruise’s Initial Outreach and Meetings with Regulators
+"initial blurb" drafted by 12:24am; Cruise not aware of dragging at the time
+B. The Mayor’s Office Meeting on October 3
+Meeting with Mayor’s Transportation Advisor Alexandra Sweet
+Cruise employee gave overview, then Wood played full video
+This approach became the standard presentation from Cruise
+Full video was played twice by Wood, but there were connectivity issues
+Sweet apparently noticed that the vehicle moved again, but didn't ask about dragging or why vehicle moved again
+C. Cruise’s Disclosures to the National Highway Traffic Safety Administration (NHTSA)
+1. Cruise’s Initial Outreach on October 3
+**10-03, 7:25am **: Cruise’s Head of Regulatory Engagement emailed NHTSA
+NHTSA issues they wanted addressed included "Whether the Cruise ADS or remote assistant could ascertain that the pedestrian was trapped under the vehicle or the location of a pedestrian on the ground" and "vehicle control dynamics (lateral and longitudinal) leading to the incident and following impact including ADS predicted path of the pedestrian and whether any crash avoidance or mitigation took place" and video of accident
+2. Cruise’s NHTSA Pre-Meeting
+Talking points for anticipated questions
+Did you stop the fleet?
+Alicia Fenrick: We have not changed the posture of the fleet.
+We have not identified a fault in AV response
+Why did the vehicle move after it had initially stopped?
+[Not discussed] Matthew Wood: The impact triggered a collision detection and the vehicle is designed to pull over out of lane in
+Why didn't the vehicle brake in anticipation of the pedestrian in the road?
+Matthew Wood: I think the video speaks for itself, the pedestrian is well past our lane of travel into the other lane
+Alicia Fenrick: The pedestrian was clearly well past lane of travel of the AV. It would not be reasonable to expect that the other vehicle would speed up and proceed to hit the pedestrian, and then for the pedestrian to flip over the adjacent car and wind up in our lane.
+Excerpt of notes from an employee:
+They requested a video-wait until the meeting at least. Then another question-where we end the video.
+Alicia: Biggest issue candidly. That we moved, and why, is something we are going to need to explain. The facts are what they are.
+Matt: why we moved, it is a collision response. Detected as a minor collision, so design response is a permissible lane pullover.
+How to reference this: triggered a collision detection and was designed to pull over out of lane. Do not qualify as minor collision, rather as a collision detection.
+Questions will be: it stopped and then proceeded forward.
+General premise: we are looking into this, we are doing a deep dive, we have done some preliminary analysis and this is what we have but it is only preliminary.
+Buckets: before impact, impact, after impact.
+Slack messages show discussion of when video should be sent and which video should be sent; decided to play full video due to to avoid being "accused of hiding the ball"
+3. Cruise’s Meeting with NHTSA on October 3
+Wood played the full video 2 or 3 times, "but it kept stopping or blacking- or whiting out because his home computer was having connectivity issues"
+"NHTSA did not see the Full Video clearly or in its entirety"
+No discussion of pullover or dragging
+Pre-meeting notes edited after meeting, adding "[Not discussed]" to this item
+Meeting notes of some questions asked by NHTSA
+Could RA detect that pedestrian trapped?
+Wood: Yes
+Sensors too?
+Wood: Yes
+The statement "the last thing you would want to do is move when a pedestrian is underneath" appears to have been said, but recollections disagree on who said it. Some believe Wood said this and NHTSA concurred, some believe Wood said this an NHTSA repeated the statement, and some believe that NHTSA said this and Wood concurred
+Post-meeting slack discussion
+Employee: "I think we might need to mention the comment Matt made during the NHTSA call that the last thing you would want to do is move with a pedestrian under the car. From my notes and recollection Matt said 'As pedestrian is under vehicle last thing want to do is maneuver' and [the NHTSA regulator] agreed"
+Another employee: "lets see where the conversation goes. if it’s relevant, we should share it. That’s not the main point here though"
+In other discussions, other employees and execs express varying levels of concern on the non-disclosure of pullover and dragging, from moderate to none (e.g., Senior Director of Federal Affair says he "stands by it ... [Cruise's employees] have gone beyond their regulatory requirements")
+4. Cruise’s NHTSA Post-Meeting on October 3
+NHTSA sent a request for video and Cruise uploaded full video
+5. Cruise’s Interactions with NHTSA on October 12, 13, and 16
+a. October 12 Call
+NHTSA regulator called Cruise employee and informed them that NHTSA was planning Preliminary Evaluation; employee sent the following to Cruise NHTSA team:
+"She shared that there was a lot of consternation in the front office about last week's incident. It is going to be a pretty broad investigation into how vehicles react to pedestrians out in the street and people in the roadway. But questions about last week's incident will be included in the IR questions and analysis. I offered an additional briefing about last week's incident, but she said that we were quite upfront and shared the video and told them everything they need to know."
+"it [is] difficult to believe that they could find fault with our reaction to the pedestrian in Panini [Panini is the name of the specific AV] that would extend beyond asking us additional questions in a follow-up…"
+b. October 13 Meeting
+"Despite the severe consequences that could result from a PE, including a recall, Cruise’s Chief Legal Officer and Senior Vice President of Government Affairs did not attend"
+From meeting agenda: "We’re just a little confused by this. We met with you about the Panini incident last week, and the team didn’t express any remaining concerns about it, even when asked if you had any additional concerns. Was there really remaining concern about AV behavior regarding Panini? If yes, why did they not request another briefing? We’ve been extremely cooperative with the Agency and have always provided information that the agency requested. What will be gained by this escalation that we are not already providing? Offer briefing on any of these topics in lieu of PE."
+Also planned to state: "Regarding last week’s incident we briefed the agency within hours of the event, provided video, and offered repeatedly to share additional information, including around the topic of pedestrian safety broadly. None was requested, which makes us question the motivations behind opening a PE. PEs are punitive means to gather information, and are reputationally harmful, particularly in a nascent industry."
+c. October 16 PE
+[no notes]
+6. Cruise’s NHTSA Reports Regarding the October 2 Accident
+NHTSA's SGO requires three written reports, including "a written description of the pre-crash, crash, and post-crash details"
+Cruise's first two reports did not mention pullover and dragging; after consultation with GM, third report did mention pullover and dragging
+a. NHTSA 1-Day Report
+Original draft forwarded from paralegal to Deputy General Counsel Alicia Fenrick, Director of Communications Erik Moser, and Managing Legal Counsel Andrew Rubenstein: "A Cruise autonomous vehicle ("AV"), operating in driverless autonomous mode, was at a complete stop in response to a red light on southbound Cyril Magnin Street at the intersection with Market Street. A dark colored Nissan Sentra was also stopped in the adjacent lane to the left of the AV. As the Nissan Sentra and the AV proceeded through the intersection after the light turned green, a pedestrian entered the crosswalk on the opposite side of Market Street across from the vehicles and proceeded through the intersection against a red light. The pedestrian passed through the AV's lane of travel but stopped mid-crosswalk in the adjacent lane. Shortly thereafter, the Nissan Sentra made contact with the pedestrian, launching the pedestrian in front of the AV. The AV braked aggressively but, shortly thereafter, made contact with the pedestrian. This caused no damage to the AV. The driver of the Nissan Sentra left the scene shortly after the collision. Police and Emergency Medical Services (EMS) were called to the scene. The pedestrian was transported by EMS."
+LGTM'd [approved] by Fenrick and Moser; Rubenstein said "the GA folks have suggested some additional edits", which included adding that the "completely" pass through AV's lane of travel, changing "launching" to "deflecting", and removing "this caused no damage to the AV"; no discussion of possible inclusion of pullover and dragging
+Cruise employee who established NHTSA reporting system believed that full details, including pullover and dragging, should've been included, but they were on vacation at the time
+In later, 10-24, employee Q&A on DMV suspension order, an employee asked "Why was the decision made not to include the post-collision pull-over in the written report to the NHTSA? At least, this seems like it must have been an intentional decision, not an accidental oversight."
+Rubenstein drafted this prepared response for Fenrick: "The purpose of the NHTSA reporting requirement is to notify the agency of the occurrence of crashes. Consistent with that objective and our usual practice, our report notified NHTSA that the crash had occurred. Additionally, we had already met with NHTSA, including showing the full video to them, prior to submission of the report. That meeting was the result of our proactive outreach: we immediately reached out to NHTSA after the incident to set up a meeting to discuss with them. Our team met with NHTSA in the morning following the incident, including showing the full video to NHTSA. We then submitted the report and sent a copy of the full video later that afternoon."
+Fenrick LGTM'd the above, but the response ended up not being given
+Quinn Emanuel notes, "It is difficult to square this rationale with the plain language of the NHTSA regulation itself, which requires “a written description of the pre-crash, crash, *and post-crash details….*” (emphasis added)"
+b. NHTSA 10-Day Report
+Paralegal had full authority to determine if any new info or updates were necessary
+Paralegal asked three employees on slack, "hi, checking in to see if there have been any updates to this incident? In particular, any status on the ped"
+An employee who interacts with law enforcement responded "Unfortunately no. I’ve reached out to the investigating sergeant but have not received a response. This is probably due to other investigations he may be involved in"
+This employee said that they were referring only to the pedestrian's medical condition, but the paralegal took the response more broadly
+The paralegal also checked the RINO database for updates and saw none, then filed the 10-day report, which states "There are no updates related to this incident since the original submission on October 3, 2023" and then repeats the narrative in the 1-day report, omitting discussion of pullover and dragging
+c. NHTSA 30-Day Report
+GM urged Cruise to be more comprehensive with 30-day report, so CLO Bleich got involved.
+Bleich reviewed the 1-day and 10-day reports, and then followed up with "[t]he most important thing now is simply to be complete and accurate in our reporting of this event to our regulators", says to include the pullover and dragging
+Rubenstein objected to including dragging in 30-day report
+7. Conclusions Regarding Cruise’s Interactions with NHTSA
+[no notes]
+D. Cruise’s Disclosures to the Department of Motor Vehicles (DMV)
+1. Cruise’s Initial Outreach to the DMV and Internal Discussion of Which Video to Show
+"Vogt wanted to focus solely on the Nissan’s role in causing the Accident and avoid showing the pedestrian’s injuries"
+Estrada to Raman, apparently concurring: "Think we should get the clip of the video as Kyle described to prepare to show it to policymakers ... show the impact and the person landing in front of us. Cut it there. That's all that is needed."
+Raman and Danko disagreed and pushed for showing most complete video available
+2. DMV’s Response to Cruise’s Outreach
+[no notes]
+3. Cruise’s DMV Pre-Meeting
+"While Deputy General Counsel Fenrick said she did not typically attend DMV meetings, she opted to attend this meeting in order to have some overlapping attendees between the NHTSA and DMV meetings. Notably, neither Bleich nor Estrada attended the pre-meeting despite planning to meet in-person with the DMV Director to discuss the Accident."
+4. Cruise’s October 3 Meeting with the DMV
+a. DMV Meeting Discussions
+DMV regulators do not believe full video was played
+Cruise employees have different recollections, but many believe full video was played, likely with bad connectivity problems
+No discussion of pullover or dragging
+b. Cruise’s Post-DMV Meeting Reflections
+Slack discussion
+Raman: thoughts?
+Fenrick: You mean DMV call? More aggressive than NHTSA . . .
+ACP - Not overly so but seemed a bit more critical and a little unrealistic. Like really we should predict another vehicle will hit and run and brake accordingly. I think they think they're expectations of anticipatory response is to other road users collisions was a bit off.
+Raman: They tend to ask insane hypotheticals. I was about to interrupt and say we can go through any number of hypos.. this is what happened but I was waiting for them to ask a followup question before I did it.
+Fenrick: insane hypothetical is absolutely right
+ACP - Bigger concern is that no regulator has really clued in that we moved after rolling over the pedestrian
+In another slack discussion, an employee stated "the car moved and they didn’t ask and we’re kind of lucky they didn’t ask"
+Some employees indicate that this was the general consensus about the meeting
+5. Cruise’s October 10 Communications with DMV
+DMV asked for video by 10-11. Cruise did not do this, but showed a video in a meeting on 10-13
+6. Cruise’s October 11 Meeting with the DMV
+[no notes]
+7. Cruise’s October 13 Meeting with the DMV
+Cruise shared 9-minute 6-pane video created by Wood
+"Notably, the camera angles did not include the lower frontal camera angles that most clearly showed the AV’s impact with the pedestrian and pullover maneuver"
+"Interviewees said that the DMV’s tone in the meeting 'felt very mistrustful' and that it 'felt like something was not right here.'"
+DMV had questions about what appeared to be missing or misleading video
+In response to DMV's concerns and request, Cruise uploaded full video to DMV online portal
+8. Cruise’s October 16 Meeting with the DMV
+Meeting was scheduled for a different topic, but meeting moved to topic of DMV being misled about the accident; "Cruise interviewees recalled that the DMV and CHP attendees were angry about the October 3 presentation, saying their collective memory was that they were not shown the Full Video"
+9. Cruise’s October 23 Communications with the DMV
+Cruise calls political consultant to have them find out why DMV has been silent on expansion of SF autonomous fleet
+Consultant says DMV is "pissed" and considering revocation of Cruise's license to operate
+Internal disagreement on whether this could happen. "Estrada then sent CLO Bleich a Slack message indicating that he had talked to the DMV Director and there was '[n]o indication whatsoever that they are considering revoking.'"
+Raman checks with political consultant again, who repeats that DMV is very angry and may revoke
+10. DMV’s October 24 Suspension Order
+Estrada calls DMV director Gordon to ask about suspension and is stonewalled
+Vogt joins the call and makes personal appeal, saying he's "been committed to this since he was 13 to try and improve driver safety"
+Appeal fails and suspension order is issued shortly afterwards
+Slack conversation
+Estrada: Kyle leading our response that we provided "full" video and we will stand by that if it's a fight.
+Bleich: ACP- This will be a difficult fight to win. DMV and CHP have credibility and Steve Gordon seems to swear that he did not see the end of the video. The word of Cruise employees won't be trusted. I think we should bring in an outside firm to review the sequence of events and do an internal report since otherwise there is no basis for people to believe us. We should consider doing this and how to message it.
+Estrada: Yes agree difficult and that we need to do it because we have facts, we can have sworn statements and data analytics on our side. Not a he said she said. We have proof. If we prove with facts a false statement that is important reputation saving.
+Steve stopped even trying to make this claim. He resorted to arguing we should have highlighted the pullover attempt. This is a big overreach by them to make a claim like this we have the ability to prove false.
+11. Post-October 24 DMV Communications
+Vogt posted this blog post, titled "A detailed review of the recent SF hit-and-run incident"
+[The report only has an excerpt from the blog post, but for the same reason I think it's worth looking at the report in detail, I think it's worth looking at the blog post linked above; my read of the now-deleted blog post is that it attempts to place the blame on the "hit and run" driver, which is repeatedly emphasized; the blog post also appears to include a video of the simulation discussed above, where Vogt says "Should we run road to sim and see what the AV would have done if it was in the other vehicles position? I think that might be quite powerful"]
+[The blog post does discuss the pullover and dragging, saying "The AV detected a collision, bringing the vehicle to a stop; then attempted to pull over to avoid causing further road safety issues, pulling the individual forward approximately 20 feet"]
+12. Conclusions Regarding Cruise’s Communications with the DMV
+Bleich: "[T]he main concern from DMV was that our vehicle did not distinguish between a person and another object under its carriage originally, and so went into an MRC. Second, they felt that we should have emphasized the AV’s second movement right away in our first meeting. In fact, in the first meeting -- although we showed them the full video -- they (and we) were focused on confirming that we were not operating unsafely before the collision and we did not cause the initial contact with the pedestrian. They did not focus on the end of the video and -- because they did not raise it -- our team did not actively address it"
+Vogt: "I am very much struggling with the fact that our GA team did not volunteer the info about the secondary movement with the DMV, and that during the handling of the event I remember getting inconsistent reports as to what was shared. At some point bad judgment call must have been made, and I want to know how that happened."
+Bleich: "ACP -- I share your concern that the second movement wasn’t part of the discussion. I don’t know that there was a deliberate decision by the team that was doing the briefings. I believe they were still in the mode from the previous evening where they were pushing back against an assumption that we either were responsible for hitting the pedestrian or that we did not react fast enough when the pedestrian fell into our path. But as I’ve probed for basic information about what we shared and when I’ve had the same frustration that dates get pushed together or details are left out. I don’t know if this is deliberate, or people are simply having difficulty recalling exactly what they did or said during the immediate aftermath of that event."
+"these Slacks convey that the three senior leaders of the company – the CEO, CLO, and COO – were not actively engaged in the regulatory response for the worst accident in Cruise’s history. Instead, they were trying to piece together what happened after the fact."
+E. Cruise’s Disclosures to the SF MTA, SF Fire Department, and SF Police
+Department
+
+After playing video, a government official asks "this car moves with the woman underneath it, is that what we are seeing?", which results in a series of discussions about this topic
+Two of the four Cruise employees in the meeting report being shocked to see the pullover and dragging, apparently not realizing that this had happened
+F. Cruise’s Disclosures to the California Public Utilities Commission (CPUC)
+1. Cruise’s October 3 Communications with the CPUC
+CPUC and Cruise disagree on whether or not there was an offer to play the full video
+2. CPUC’s October 5 Data Request
+CPUC requests video by 10-19; Cruise's standard policy was to respond on the last day, so video was sent on 10-19
+3. Cruise’s October 19 Response to CPUC’s Data Request
+Video, along with the following summary: "[T]he Nissan Sentra made contact with the pedestrian, deflecting the pedestrian in front of the AV. The AV biased rightward before braking aggressively but, shortly thereafter, made contact with the pedestrian. The AV then attempted to achieve a minimal risk condition (MRC) by pulling out of the lane before coming to its final stop position. The driver of the Nissan Sentra left the scene shortly after the collision."
+4. Conclusions Regarding Cruise’s Disclosures to the CPUC
+[no notes]
+G. Cruise’s Disclosures to Other Federal Officials
+Cruise's initial outreach focused on conveying the accident had been caused by the hit-and-run Nissan driver
+After the DMV suspension on 10-24, "outreach focused on conveying the message that it believed it had worked closely with regulatory agencies such as the California DMV, CPUC, and NHTSA following the October 2 Accident"
+IV. THE AFTERMATH OF THE OCTOBER 2 ACCIDENT
+A. The Cruise License Suspension by the DMV in California
+Operating with human driver behind the wheel still allowed
+B. The NHTSA PE Investigation and Safety Recall
+[no notes]
+C. The CPUC’s “Show Cause Ruling”
+[no notes]
+D. New Senior Management of Cruise and the Downsizing of Cruise
+[no notes]
+V. SUMMARY OF FINDINGS AND CONCLUSIONS
+"By the time Cruise employees from legal, government affairs, operations, and systems integrity met with regulators and other government officials on October 3, they knew or should have known that the Cruise AV had engaged in a pullover maneuver and dragged the pedestrian underneath the vehicle for approximately 20 feet"
+"Cruise’s passive, non-transparent approach to its disclosure obligations to its regulators reflects a basic misunderstanding of what regulatory authorities need to know and when they need to know it"
+"Although neither Cruise nor Quinn Emanuel can definitively establish that NHTSA or DMV were shown the entirety of the Full Video, including the pullover maneuver and dragging, the weight of the evidence indicates that Cruise attempted to play the Full Video in these meetings; however, internet connectivity issues impeded or prevented these regulators from seeing the video clearly or fully."
+"in the face of these internet connectivity issues that caused the video to freeze or black- or white-out, Cruise employees remained silent, failing to ensure that the regulators understood what they likely could not see – that the Cruise AV had moved forward again after the initial impact, dragging the pedestrian underneath the vehicle"
+"Even if, as some Cruise employees stated, they were unaware of the pullover maneuver and pedestrian dragging at the time of certain regulatory briefings (which itself raises other concerns), Cruise leadership and other personnel were informed about the full details of the October 2 Accident during the day on October 3 and should have taken corrective action."
+"While Cruise employees clearly demonstrated mistakes of judgment and failure to appreciate the importance of transparency and accountability, based on Quinn Emanuel’s review to date, the evidence does not establish that Cruise employees sought to intentionally mislead government regulators about the October 2 Accident, including the pullover maneuver and pedestrian dragging"
+"Cruise’s senior leadership repeatedly failed to understand the importance of public trust and accountability"
+"Cruise’s response to the October 2 Accident reflects deficient leadership at the highest levels of the Company—including among some members of the C-Suite, legal, governmental affairs, systems integrity, and communications teams—that led to a lack of coordination, mistakes of judgment, misapprehension of regulatory requirements and expectations, and inconsistent disclosures and discussions of material facts at critical meetings with regulators and other government officials. The end result has been a profound loss of public and governmental trust and a suspension of Cruise’s business in California"
+"There was no captain of the ship. No single person or team within Cruise appears to have taken responsibility to ensure a coordinated and fully transparent disclosure of all material facts regarding the October 2 Accident to the DMV, NHTSA, and other governmental officials. Various members of the SLT who had the responsibility for managing the response to this Accident were missing-in-action for key meetings, both preparatory and/or with the regulators. This left each Cruise team to prepare for the meetings independently, with different employees attending different regulatory meetings, and with no senior Cruise official providing overall direction to ensure consistency in approach and disclosure of all material facts."
+"There was no demonstrated understanding of regulatory expectations by certain senior Cruise management or line employees"
+"Cruise’s deficient regulatory response to the October 2 Accident reflects preexisting weaknesses in the Company, including ineffectual Cruise leadership with respect to certain senior leaders. Two out of many examples illustrate these weaknesses."
+No coordinated or rigorous process for what needed to be discussed with DMV, NHTSA, etc., nor did leadership or employees in meetings take steps to ensure they were informed of what had happened before the meetings (such as asking their direct reports for updates); "To underscore Cruise’s lack of coordination in its briefings to regulators and other government officials on October 3, senior leadership never convened a meeting of the various teams to discuss and learn how these meetings went, what questions were asked, and what discussions took place. Had they done so, they should have realized that in only one of the four meetings did government officials ask questions about the pullover maneuver and pedestrian dragging, requiring corrective action"
+"Cruise lawyers displayed a lack of understanding of what information must be communicated to NHTSA in these reports, and misapprehended the NHTSA requirement ... Cruise leadership gave a paralegal the primary responsibility for preparing and filing such reports with the Cruise legal department exercising little oversight"
+VI. RECOMMENDATIONS
+New senior leadership
+Consider creating a dedicated, cross-disciplinary Regulatory Team which understands regulations, has experience dealing with regulators, and proactively improves Cruise's regulatory reporting processes and systems, reporting directly to CEO with board oversight
+Training for remaining senior leadership
+Create a streamlined Crisis Management Team
+200 people in a war room can't manage a crisis; also need to have a "captain" or someone in charge
+Review incident response protocol and ensure that it is followed
+"There is a need to reform the governmental affairs, legal, and public communications functions within Cruise"
+"Cruise should file its reports about any accident involving a Cruise vehicle with regulators by having a designated Chief Safety Officer or senior engineer, as well as a regulatory lawyer, within Cruise review and approve the filing of each report"
+Appendix
+The report by Exponent, mentioned above, is included in the Appendix. It is mostly redacted, although there is a lot of interesting non-redacted content, such as "the collision detection system incorrectly identified the pedestrian as being located on the side of the AV at the time of impact instead of in front of the AV and thus determined the collision to be a side impact ... The determination by the ADS that a side collision occurred, and not a frontal collision, led to a less severe collision response being executed and resulted in the AV performing the subsequent outermost lane stop maneuver instead of an emergency stop ... The root cause of the AV’s post-collision movement, after the initial brief stop, was the inaccurate determination by the ADS that a side collision had occurred ... the inaccuracy of the object track considered by the collision detection system and the resulting disparity between this track and the pedestrian’s actual position, the ADS failed to accurately determine the location of the pedestrian at the time of impact and while the pedestrian was underneath the vehicle"
+back to danluu.com
+I don't have much to add to this. I certainly have opinions, but I don't work in automotive and haven't dug into it enough to feel informed enough to add my own thoughts. In one discussion I had with a retired exec who used to work on autonomous vehicles, on incident management at Cruise vs. tech companies Twitter or Slack, the former exec said:
+
+You get good at incidents given a steady stream of incidents of varying severity if you have to handle the many small ones. You get terrible at incidents if you can cover up the small ones until a big one happens. So it's not only funny but natural for internet companies to do it better than AV companies I think
+
+On the "minimal risk condition" pullover maneuver, this exec said:
+
+These pullover maneuvers are magic pixie dust making AVs safe: if something happens, we'll do a safety pullover maneuver
+
+And on the now-deleted blog post, "A detailed review of the recent SF hit-and-run incident", the exec said:
+
+Their mentioning of regulatory ADAS test cases does not inspire confidence; these tests are shit. But it's a bit unfair on my part since of course they would mention these tests, it doesn't mean they don't have better ones
+
+On how regulations and processes making safety-critical industries safer and what you'd do if you cared about safety vs. the recommendations in the report, this exec said
+
+[Dan,] you care about things being done right. People in these industries care about compliance. Anything "above the state of the art" buys you zero brownie points. eg for [X], any [Y] ATM are not required at all. [We] are better at [X] than most and it does nothing for compliance ... OTOH if a terrible tool or process exists that does nothing good but is considered "the state of the art" / is mandated by a standard, you sure as hell are going to use it
+
+If you're looking for work, Freshpaint is hiring a recruiter, Software Engineers, and a Support Engineer. I'm in an investor, so you should consider my potential bias, but they seem to have found product-market fit and are growing extremely quickly (revenue-wise)
+
+Thanks to an anonymous former AV exec, Justin Blank, and 5d22b for comments/corrections/discussion.
+
+Appendix: a physical hardware curiosity
+One question I had for the exec mentioned above, which wasn't relevant to this case, but is something I've wondered about for a while, is why the AVs that I see driving don't have upgraded tires and brakes. You can get much shorter stopping distances from cars that aren't super heavy by upgrading their tires and brakes, but the AVs I've seen have not had this done.
+
+In this case, we can't do the exact comparison from an upgraded vehicle to the base vehicle because the vehicle dynamics data was redacted from section 3.3.3, table 9, and figure 40 of the appendix, but it's common knowledge that the simplest safety upgrade you can make on a car is upgrading the tires (and, if relevant, the brakes). One could argue that this isn't worth the extra running cost, or the effort (for the low-performance cars that I tend to see converted into AVs, getting stopping distances equivalent to a sporty vehicle would generally require modifying the wheel well so that wider tires don't rub) but, as an outsider, I'd be curious to know what the cost benefit trade-off on shorter stopping distances is.
+
+They hadn't considered it before, but thought that better tires and brake would make a difference in a lot of other cases and prevent accients and explained the lack of this upgrade by:
+
+I think if you have a combination of "we want to base AV on commodity cars" and "I am an algorithms guy" mindset you will not go look at what the car should be.
+
+And, to be clear, upgraded tires and brakes would not have changed the outcome in this case. The timeline from the Exponent report has
+
+-2.9s: contact between Nissan and Pedestrian
+-2s: Pedestrian track dropped
+-1.17s: Pedestrian beings separating from Nissan
+-0.81s: [redacted]
+-0.78s: Pedestrian lands in AV's travel lane
+-0.41s: Collision checker predicts collision
+-0.25s: AV starts sending braking and steering commands (19.1 mph)
+0s: collision (18.6 mph)
+Looking at actual accelerometer data from a car with upgraded tires and brakes, stopping time from 19.1mph for that car was around 0.8s, so this wouldn't have made much difference in this case. If brakes aren't pre-charged before attempting to brake, there's significant latency when initially braking, such that 0.25s isn't enough for almost any braking to have occurred, which we can see from the speed only being 0.5mph slower in this case.
+
+Another comment from the exec is that, while a human might react to the collision at -2.9s and slow down or stop, "scene understanding" as a human might do it is non-existent in most or perhaps all AVs, so it's unsurprising that the AV doesn't react until the pedestrian is in the AV's path, whereas a human, if they noticed the accident in the adjacent lane, would likely drastically slow down or stop (the exec guessed that most humans would come to a complete stop, whereas I guessed that most humans would slow down). The exec was also not surprised by the 530ms latency between the pedestrian landing in the AV's path and the AV starting to attempt to apply the brakes although, as a lay person, I found 530ms surprising.
+
+On the advantage of AVs and ADAS, as implemented today, compared to a human who's looking in the right place, paying attention, etc., the exec said
+
+They mainly never get tired or drink and hopefully also run in that terrible driver's car in the next lane. For [current systems], it's reliability and not peak performance that makes it useful. Peak performance is definitely not superhuman but subhuman
+

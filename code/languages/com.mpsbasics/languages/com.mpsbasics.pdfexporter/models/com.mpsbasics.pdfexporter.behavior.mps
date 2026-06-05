@@ -1762,7 +1762,7 @@
         <node concept="3clFbF" id="5FTX57fMJ2Z" role="3cqZAp">
           <node concept="2YIFZM" id="3oGzUKG37kQ" role="3clFbG">
             <ref role="37wK5l" to="mryx:7I3$bA9beYZ" resolve="layoutAll" />
-            <ref role="1Pybhc" to="mryx:5FTX57fKCMo" resolve="SVGCellEditorScreehshooter" />
+            <ref role="1Pybhc" to="mryx:5FTX57fKCMo" resolve="SVGCellEditorScreenshooter" />
             <node concept="37vLTw" id="3oGzUKG37qV" role="37wK5m">
               <ref role="3cqZAo" node="5FTX57fMJ2G" resolve="editorComp" />
             </node>

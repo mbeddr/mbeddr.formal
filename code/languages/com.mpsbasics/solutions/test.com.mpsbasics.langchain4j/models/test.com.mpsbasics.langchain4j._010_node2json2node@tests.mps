@@ -205,11 +205,6 @@
         <child id="540871147943773366" name="argument" index="25WWJ7" />
       </concept>
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
-      <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
-        <child id="1197683466920" name="keyType" index="3rvQeY" />
-        <child id="1197683475734" name="valueType" index="3rvSg0" />
-      </concept>
-      <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV" />
     </language>
   </registry>
   <node concept="1lH9Xt" id="EyxjoF5E6h">
@@ -677,20 +672,6 @@
       <property role="TrG5h" value="convertJson2Node" />
       <node concept="3Tqbb2" id="5_3MXEDc3tN" role="3clF45" />
       <node concept="3clFbS" id="5_3MXEDbV8I" role="3clF47">
-        <node concept="3cpWs8" id="5_3MXEDbX5h" role="3cqZAp">
-          <node concept="3cpWsn" id="5_3MXEDbX5i" role="3cpWs9">
-            <property role="TrG5h" value="fqNames2Concepts" />
-            <node concept="3rvAFt" id="5_3MXEDbX5j" role="1tU5fm">
-              <node concept="17QB3L" id="5_3MXEDbX5k" role="3rvQeY" />
-              <node concept="3uibUv" id="5_3MXEDbX5l" role="3rvSg0">
-                <ref role="3uigEE" to="c17a:~SConcept" resolve="SConcept" />
-              </node>
-            </node>
-            <node concept="2ShNRf" id="5_3MXEDbX5m" role="33vP2m">
-              <node concept="3rGOSV" id="5_3MXEDbX5n" role="2ShVmc" />
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5_3MXEDbX5J" role="3cqZAp">
           <node concept="3cpWsn" id="5_3MXEDbX5K" role="3cpWs9">
             <property role="TrG5h" value="newNode" />

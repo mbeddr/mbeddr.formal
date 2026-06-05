@@ -89,7 +89,7 @@
         <node concept="3clFbF" id="q$1bLUc8RI" role="3cqZAp">
           <node concept="2YIFZM" id="q$1bLUc9a0" role="3clFbG">
             <ref role="37wK5l" to="mryx:xCk$O6ov8n" resolve="takeScreenshotAndSaveIntoFile" />
-            <ref role="1Pybhc" to="mryx:5FTX57fKCMo" resolve="SVGCellEditorScreehshooter" />
+            <ref role="1Pybhc" to="mryx:5FTX57fKCMo" resolve="SVGCellEditorScreenshooter" />
             <node concept="2Sf5sV" id="q$1bLUc9aD" role="37wK5m" />
           </node>
         </node>
