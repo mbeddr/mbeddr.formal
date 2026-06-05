@@ -169,6 +169,11 @@
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="1082113931046" name="jetbrains.mps.baseLanguage.structure.ContinueStatement" flags="nn" index="3N13vt" />
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
@@ -2348,6 +2353,27 @@
     <node concept="2YIFZL" id="7NXHS$v9_lI" role="jymVt">
       <property role="TrG5h" value="addCategoryMetadata" />
       <node concept="3clFbS" id="7NXHS$v9_lL" role="3clF47">
+        <node concept="3clFbF" id="5xnrOuDg$4I" role="3cqZAp">
+          <node concept="37vLTI" id="5xnrOuDg_vj" role="3clFbG">
+            <node concept="3K4zz7" id="5xnrOuDgE8m" role="37vLTx">
+              <node concept="37vLTw" id="5xnrOuDgEln" role="3K4E3e">
+                <ref role="3cqZAo" node="7NXHS$vcndo" resolve="GENERIC_CATEGORY_NAME" />
+              </node>
+              <node concept="37vLTw" id="5xnrOuDgEy_" role="3K4GZi">
+                <ref role="3cqZAo" node="7NXHS$v9AF7" resolve="category" />
+              </node>
+              <node concept="3clFbC" id="5xnrOuDgChS" role="3K4Cdx">
+                <node concept="10Nm6u" id="5xnrOuDgDqK" role="3uHU7w" />
+                <node concept="37vLTw" id="5xnrOuDgAt0" role="3uHU7B">
+                  <ref role="3cqZAo" node="7NXHS$v9AF7" resolve="category" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="5xnrOuDg$4G" role="37vLTJ">
+              <ref role="3cqZAo" node="7NXHS$v9AF7" resolve="category" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7NXHS$v9A08" role="3cqZAp">
           <node concept="2OqwBi" id="7NXHS$v9AsS" role="3clFbG">
             <node concept="2OqwBi" id="7NXHS$v9A7F" role="2Oq$k0">
