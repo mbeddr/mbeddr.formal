@@ -2297,7 +2297,7 @@
                   <node concept="liA8E" id="7NXHS$vcv6M" role="2OqNvi">
                     <ref role="37wK5l" to="33ny:~Map.get(java.lang.Object)" resolve="get" />
                     <node concept="37vLTw" id="5xnrOuDie98" role="37wK5m">
-                      <ref role="3cqZAo" node="5xnrOuDie95" resolve="categoryMetadata" />
+                      <ref role="3cqZAo" node="5xnrOuDie95" resolve="category" />
                     </node>
                   </node>
                 </node>
