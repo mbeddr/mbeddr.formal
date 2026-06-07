@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mpsbasics.docx4j.lib" uuid="71bb25aa-20fa-4c18-8954-1b176576f52d" moduleVersion="0">
   <models>
-    <modelRoot contentPath="${module}/lib" type="java_classes" />
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="angus-activation.jar" />
       <sourceRoot location="angus-mail.jar" />
@@ -41,6 +40,7 @@
       <sourceRoot location="xalan-serializer.jar" />
       <sourceRoot location="xmlgraphics-commons.jar" />
     </modelRoot>
+    <modelRoot contentPath="${module}/lib" type="java_classes" />
   </models>
   <facets>
     <facet type="java" languageLevel="JAVA_8" compile="mps" classes="mps" ext="yes">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:9bded5e1-48b7-43b0-8aa0-b7922933e35c(com.fasten.meta.linters.landev_aspects.behavior_aspect)">
+<model ref="r:9bded5e1-48b7-43b0-8aa0-b7922933e35c(com.fasten.meta.linters.landev_aspects.behavior_level)">
   <persistence version="9" />
   <attribute name="doNotGenerate" value="false" />
   <languages>
@@ -68,7 +68,7 @@
         </node>
       </node>
     </node>
-    <node concept="3dgnlM" id="3E0v2G6oOWB" role="3dgnlQ">
+    <node concept="3dgnlM" id="3tsEGTjRVyq" role="3dgnlQ">
       <property role="3dgnlN" value="The Script is not re-used" />
       <property role="3qxsY3" value="5052464840671276581" />
       <property role="3qxsSb" value="r:3e5efb66-1a16-46d1-89d2-26142a5dcdaa(org.mpsqa.lint.generic.linters_library.meta)" />

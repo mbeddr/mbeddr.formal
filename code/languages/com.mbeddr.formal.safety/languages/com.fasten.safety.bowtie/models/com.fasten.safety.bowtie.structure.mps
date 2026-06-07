@@ -2,7 +2,7 @@
 <model ref="r:29e49ed1-04e0-4e86-adc1-b3ec3659d112(com.fasten.safety.bowtie.structure)">
   <persistence version="9" />
   <languages>
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <use id="92d2ea16-5a42-4fdf-a676-c7604efe3504" name="de.slisson.mps.richtext" version="0" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
@@ -72,6 +72,15 @@
     <property role="TrG5h" value="BowtieEntityBase" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2K8T9FD6PmZ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="4pL_qfp8VVW" role="PzmwI">
+      <ref role="PrY4T" to="b19z:6qVhvNsGxid" resolve="IAttributeContainer" />
+    </node>
+    <node concept="PrWs8" id="4pL_qfpm5xo" role="PzmwI">
+      <ref role="PrY4T" node="4pL_qfpm5xh" resolve="IBowtieDiagramContent" />
+    </node>
     <node concept="1TJgyj" id="4pL_qfp8VVX" role="1TKVEi">
       <property role="IQ2ns" value="5076002785978466045" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -84,15 +93,6 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="description" />
       <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-    </node>
-    <node concept="PrWs8" id="2K8T9FD6PmZ" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-    <node concept="PrWs8" id="4pL_qfp8VVW" role="PzmwI">
-      <ref role="PrY4T" to="b19z:6qVhvNsGxid" resolve="IAttributeContainer" />
-    </node>
-    <node concept="PrWs8" id="4pL_qfpm5xo" role="PzmwI">
-      <ref role="PrY4T" node="4pL_qfpm5xh" resolve="IBowtieDiagramContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="2K8T9FD6Pn1">
@@ -147,23 +147,10 @@
     <property role="34LRSv" value="connection" />
     <ref role="1TJDcQ" node="2K8T9FD6Pn1" resolve="BowtieConnectionBase" />
   </node>
-  <node concept="PlHQZ" id="4pL_qfp8Woe">
-    <property role="EcuMT" value="5076002785978467854" />
-    <property role="TrG5h" value="IBowtieEntityAttribute" />
-    <node concept="PrWs8" id="4pL_qfp8Wof" role="PrDN$">
-      <ref role="PrY4T" to="b19z:6qVhvNsGwB7" resolve="IAttribute" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="4pL_qfpa_NG">
-    <property role="EcuMT" value="5076002785978899692" />
-    <property role="TrG5h" value="BarrierControlBase" />
-    <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" node="2K8T9FD6PmY" resolve="BowtieEntityBase" />
-  </node>
-  <node concept="1TIwiD" id="4pL_qfpa_NH">
-    <property role="EcuMT" value="5076002785978899693" />
-    <property role="TrG5h" value="Control" />
-    <property role="34LRSv" value="control" />
+  <node concept="1TIwiD" id="4pL_qfpcE0I">
+    <property role="EcuMT" value="5076002785979441198" />
+    <property role="TrG5h" value="EscalatingFactorBarrier" />
+    <property role="34LRSv" value="Escalating Factor Barrier" />
     <ref role="1TJDcQ" node="4pL_qfpa_NG" resolve="BarrierControlBase" />
   </node>
   <node concept="1TIwiD" id="4pL_qfpcD6K">
@@ -172,11 +159,11 @@
     <property role="34LRSv" value="Escalating Factor" />
     <ref role="1TJDcQ" node="2K8T9FD6PmY" resolve="BowtieEntityBase" />
   </node>
-  <node concept="1TIwiD" id="4pL_qfpcE0I">
-    <property role="EcuMT" value="5076002785979441198" />
-    <property role="TrG5h" value="EscalatingFactorBarrier" />
-    <property role="34LRSv" value="Escalating Factor Barrier" />
-    <ref role="1TJDcQ" node="4pL_qfpa_NG" resolve="BarrierControlBase" />
+  <node concept="1TIwiD" id="4pL_qfpa_NG">
+    <property role="EcuMT" value="5076002785978899692" />
+    <property role="TrG5h" value="BarrierControlBase" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="2K8T9FD6PmY" resolve="BowtieEntityBase" />
   </node>
   <node concept="1TIwiD" id="4pL_qfpcFfk">
     <property role="EcuMT" value="5076002785979446228" />
@@ -184,10 +171,11 @@
     <property role="34LRSv" value="escalating connection" />
     <ref role="1TJDcQ" node="2K8T9FD6Pn1" resolve="BowtieConnectionBase" />
   </node>
-  <node concept="PlHQZ" id="4pL_qfpm5xh">
-    <property role="EcuMT" value="5076002785981913169" />
-    <property role="TrG5h" value="IBowtieDiagramContent" />
-    <property role="3GE5qa" value="base" />
+  <node concept="1TIwiD" id="4pL_qfpa_NH">
+    <property role="EcuMT" value="5076002785978899693" />
+    <property role="TrG5h" value="Control" />
+    <property role="34LRSv" value="control" />
+    <ref role="1TJDcQ" node="4pL_qfpa_NG" resolve="BarrierControlBase" />
   </node>
   <node concept="1TIwiD" id="4pL_qfpm5xi">
     <property role="EcuMT" value="5076002785981913170" />
@@ -198,6 +186,11 @@
       <ref role="PrY4T" node="4pL_qfpm5xh" resolve="IBowtieDiagramContent" />
     </node>
   </node>
+  <node concept="PlHQZ" id="4pL_qfpm5xh">
+    <property role="EcuMT" value="5076002785981913169" />
+    <property role="TrG5h" value="IBowtieDiagramContent" />
+    <property role="3GE5qa" value="base" />
+  </node>
   <node concept="1TIwiD" id="2p23w$d2KIu">
     <property role="EcuMT" value="2756781353940487070" />
     <property role="3GE5qa" value="attributes.color" />
@@ -207,6 +200,13 @@
     <ref role="1TJDcQ" to="b19z:2p23w$d2KIu" resolve="ColorAttributeBase" />
     <node concept="PrWs8" id="4pL_qfpqXLA" role="PzmwI">
       <ref role="PrY4T" node="4pL_qfp8Woe" resolve="IBowtieEntityAttribute" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4pL_qfp8Woe">
+    <property role="EcuMT" value="5076002785978467854" />
+    <property role="TrG5h" value="IBowtieEntityAttribute" />
+    <node concept="PrWs8" id="4pL_qfp8Wof" role="PrDN$">
+      <ref role="PrY4T" to="b19z:6qVhvNsGwB7" resolve="IAttribute" />
     </node>
   </node>
 </model>

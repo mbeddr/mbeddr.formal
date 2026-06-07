@@ -18,6 +18,7 @@
     <import index="xnej" ref="r:bff9a19b-7e5d-44c3-8cfc-aec191022422(com.mbeddr.formal.base.editor)" />
     <import index="nkm5" ref="r:095345ad-6627-42ca-9d3f-fc1b2d9fbd61(de.itemis.mps.editor.diagram.runtime.model)" />
     <import index="suqv" ref="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" />
+    <import index="dppp" ref="r:a7eea7d0-685c-4faf-bbab-7cae3b1f6cbc(com.mpsbasics.editor.utils.headless)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -106,6 +107,7 @@
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
       <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -901,6 +903,16 @@
     <property role="TrG5h" value="check_PageSettingsBottomRight" />
     <property role="3GE5qa" value="page_settings" />
     <node concept="3clFbS" id="4_xuXPD0ocT" role="18ibNy">
+      <node concept="3clFbJ" id="3tsEGTjSzL_" role="3cqZAp">
+        <node concept="3clFbS" id="3tsEGTjSzLB" role="3clFbx">
+          <node concept="3cpWs6" id="3tsEGTjS$of" role="3cqZAp" />
+        </node>
+        <node concept="2YIFZM" id="3tsEGTjS$nn" role="3clFbw">
+          <ref role="37wK5l" to="dppp:3tsEGTjSytu" resolve="headlessModeActive" />
+          <ref role="1Pybhc" to="dppp:3tsEGTjSysn" resolve="HeadlessUtils" />
+        </node>
+      </node>
+      <node concept="3clFbH" id="3tsEGTjS$oh" role="3cqZAp" />
       <node concept="3cpWs8" id="4_xuXPD2qpF" role="3cqZAp">
         <node concept="3cpWsn" id="4_xuXPD2qpG" role="3cpWs9">
           <property role="TrG5h" value="myX" />

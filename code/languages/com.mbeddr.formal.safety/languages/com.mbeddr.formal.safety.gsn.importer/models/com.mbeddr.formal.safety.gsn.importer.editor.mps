@@ -2,7 +2,7 @@
 <model ref="r:de615b9b-ee1c-4ee0-909a-05814dbf18a4(com.mbeddr.formal.safety.gsn.importer.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
@@ -429,13 +429,13 @@
         <node concept="2iRfu4" id="7NA168q4u_0" role="2iSdaV" />
       </node>
       <node concept="3F0ifn" id="7NA168q4u_1" role="3EZMnx" />
+      <node concept="2iRkQZ" id="7NA168q4u_l" role="2iSdaV" />
       <node concept="3F0ifn" id="5rQdWbHHszn" role="3EZMnx">
         <property role="3F0ifm" value="(expected format documentation in inspector)" />
         <node concept="VechU" id="5rQdWbHHvTp" role="3F10Kt">
           <property role="Vb096" value="fLJRk5_/gray" />
         </node>
       </node>
-      <node concept="2iRkQZ" id="7NA168q4u_l" role="2iSdaV" />
     </node>
     <node concept="3EZMnI" id="5rQdWbHHszl" role="6VMZX">
       <node concept="3F0ifn" id="7NA168q4u_2" role="3EZMnx">

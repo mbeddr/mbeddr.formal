@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <solution name="com.mpsbasics.pdfbox" uuid="bc7d0863-298c-41cf-984f-a0421e757da5" moduleVersion="0">
   <models>
-    <modelRoot type="java_classes" contentPath="${module}/lib">
+    <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="graphics2d.jar" />
       <sourceRoot location="openhtmltopdf-core.jar" />
       <sourceRoot location="openhtmltopdf-pdfbox.jar" />
       <sourceRoot location="pdfbox-app.jar" />
       <sourceRoot location="xmpbox.jar" />
     </modelRoot>
-    <modelRoot type="default" contentPath="${module}">
+    <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
   </models>

@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -290,20 +290,6 @@
       <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
     </node>
   </node>
-  <node concept="1TIwiD" id="2wdj7Oy8YuC">
-    <property role="EcuMT" value="2886047036541757352" />
-    <property role="TrG5h" value="ModulelRefWord" />
-    <property role="3GE5qa" value="text_elements" />
-    <property role="34LRSv" value="@module" />
-    <property role="R4oN_" value="reference a module" />
-    <ref role="1TJDcQ" node="4b8dqHkXt5H" resolve="ChatWordBase" />
-    <node concept="1TJgyj" id="2wdj7Oy8YuD" role="1TKVEi">
-      <property role="IQ2ns" value="2886047036541757353" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="moduleReference" />
-      <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
-    </node>
-  </node>
   <node concept="1TIwiD" id="1Z3z4dL3ZOA">
     <property role="EcuMT" value="2288827256921914662" />
     <property role="3GE5qa" value="knowledge_base" />
@@ -332,6 +318,20 @@
     </node>
     <node concept="PrWs8" id="1Z3z4dL3ZOB" role="PzmwI">
       <ref role="PrY4T" node="75z86$f230C" resolve="IKnowledgeBaseEntry" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2wdj7Oy8YuC">
+    <property role="EcuMT" value="2886047036541757352" />
+    <property role="TrG5h" value="ModulelRefWord" />
+    <property role="3GE5qa" value="text_elements" />
+    <property role="34LRSv" value="@module" />
+    <property role="R4oN_" value="reference a module" />
+    <ref role="1TJDcQ" node="4b8dqHkXt5H" resolve="ChatWordBase" />
+    <node concept="1TJgyj" id="2wdj7Oy8YuD" role="1TKVEi">
+      <property role="IQ2ns" value="2886047036541757353" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="moduleReference" />
+      <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
     </node>
   </node>
 </model>
