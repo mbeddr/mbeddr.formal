@@ -44,6 +44,7 @@
     <dependency reexport="false">9a4afe51-f114-4595-b5df-048ce3c596be(jetbrains.mps.runtime)</dependency>
     <dependency reexport="false">c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)</dependency>
     <dependency reexport="false">1f4710e9-f074-4732-a0bd-6fa896d282b7(com.mpsbasics.project.utils)</dependency>
+    <dependency reexport="false">9e55166d-c201-49d5-9057-ad6885e819c6(com.mpsbasics.langchain4j.pluginSolution)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -71,6 +72,7 @@
     <module reference="6b84fb9e-5f09-4a61-bf31-3bfdc54820e3(com.mpsbasics.editor.utils)" version="0" />
     <module reference="e49ae71b-b7a6-4321-84b6-ac9a82e13853(com.mpsbasics.genai)" version="0" />
     <module reference="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43(com.mpsbasics.langchain4j)" version="0" />
+    <module reference="9e55166d-c201-49d5-9057-ad6885e819c6(com.mpsbasics.langchain4j.pluginSolution)" version="0" />
     <module reference="bc7d0863-298c-41cf-984f-a0421e757da5(com.mpsbasics.pdfbox)" version="0" />
     <module reference="1f4710e9-f074-4732-a0bd-6fa896d282b7(com.mpsbasics.project.utils)" version="0" />
     <module reference="d936855b-48da-4812-a8a0-2bfddd633ac5(jetbrains.mps.lang.behavior.api)" version="0" />

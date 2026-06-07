@@ -90,6 +90,11 @@
     <property role="TrG5h" value="IKnowledgeBaseEntry" />
     <property role="EcuMT" value="8170409784576028719" />
     <property role="3GE5qa" value="knowledge_base" />
+    <node concept="1TJgyi" id="1UrPqY6iLwy" role="1TKVEl">
+      <property role="IQ2nx" value="2205591392377051170" />
+      <property role="TrG5h" value="category" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7s0Rn3OP0Q3">
     <property role="EcuMT" value="8575097167727037827" />
@@ -225,6 +230,11 @@
       <property role="20kJfa" value="moduleRef" />
       <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
     </node>
+    <node concept="1TJgyi" id="4FDL7oku6xD" role="1TKVEl">
+      <property role="IQ2nx" value="5398061639808870505" />
+      <property role="TrG5h" value="includeReadonlyModels" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="4S6651mB7j_">
     <property role="EcuMT" value="5622207918148187365" />
@@ -278,6 +288,50 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="modelReference" />
       <ref role="20lvS9" to="tp25:1Bs_61$nfRn" resolve="ModelPointerExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="1Z3z4dL3ZOA">
+    <property role="EcuMT" value="2288827256921914662" />
+    <property role="3GE5qa" value="knowledge_base" />
+    <property role="TrG5h" value="ModulesFromProject" />
+    <property role="34LRSv" value="modules from project" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="1Z3z4dL3ZOC" role="1TKVEl">
+      <property role="IQ2nx" value="2288827256921914664" />
+      <property role="TrG5h" value="includeModuleNameRegex" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="1Z3z4dL3ZOD" role="1TKVEl">
+      <property role="IQ2nx" value="2288827256921914665" />
+      <property role="TrG5h" value="excludeModuleNameRegex" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="4FDL7ok_2Ti" role="1TKVEl">
+      <property role="IQ2nx" value="5398061639810690642" />
+      <property role="TrG5h" value="includeReadOnlyModels" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6k97aKdvMYP" role="1TKVEl">
+      <property role="IQ2nx" value="7280381797907509173" />
+      <property role="TrG5h" value="projectName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="1Z3z4dL3ZOB" role="PzmwI">
+      <ref role="PrY4T" node="75z86$f230C" resolve="IKnowledgeBaseEntry" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2wdj7Oy8YuC">
+    <property role="EcuMT" value="2886047036541757352" />
+    <property role="TrG5h" value="ModulelRefWord" />
+    <property role="3GE5qa" value="text_elements" />
+    <property role="34LRSv" value="@module" />
+    <property role="R4oN_" value="reference a module" />
+    <ref role="1TJDcQ" node="4b8dqHkXt5H" resolve="ChatWordBase" />
+    <node concept="1TJgyj" id="2wdj7Oy8YuD" role="1TKVEi">
+      <property role="IQ2ns" value="2886047036541757353" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="moduleReference" />
+      <ref role="20lvS9" to="tp25:1t9FffgebJy" resolve="ModuleRefExpression" />
     </node>
   </node>
 </model>

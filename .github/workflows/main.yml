@@ -60,7 +60,7 @@ jobs:
           echo "Dirty files detected after build/migration, run './gradlew migrate remigrate' and/or update .gitignore to fix:"
           git status
           echo "::group::git diff"
-          git diff
+          git diff -U3
           echo "::endgroup::"
           exit 1
         fi

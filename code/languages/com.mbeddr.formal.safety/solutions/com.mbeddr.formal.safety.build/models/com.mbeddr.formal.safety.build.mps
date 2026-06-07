@@ -4739,11 +4739,6 @@
             <ref role="3bR37D" to="k3fp:2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4oT$_WGcLvD" role="3bR37C">
-          <node concept="3bR9La" id="4oT$_WGcLvE" role="1SiIV1">
-            <ref role="3bR37D" to="k3fp:2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="42jqVeFkUub" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -6337,6 +6332,11 @@
             <ref role="1Busuk" node="42jqVeFkUuV" resolve="com.mbeddr.formal.base" />
           </node>
         </node>
+        <node concept="1SiIV0" id="1ppJrCAlPTe" role="3bR37C">
+          <node concept="3bR9La" id="1ppJrCAlPTf" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
+          </node>
+        </node>
         <node concept="1BupzO" id="5TezZ1Vejbv" role="3bR31x">
           <property role="3ZfqAx" value="models" />
           <property role="1Hdu6h" value="true" />
@@ -6357,11 +6357,6 @@
             <node concept="3qWCbU" id="5TezZ1Vejbx" role="3LXTna">
               <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
             </node>
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1ppJrCAlPTe" role="3bR37C">
-          <node concept="3bR9La" id="1ppJrCAlPTf" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6LfQ" resolve="jetbrains.mps.kernel" />
           </node>
         </node>
       </node>
@@ -13284,6 +13279,11 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="1dufLnEEJ5e" role="3bR37C">
+          <node concept="3bR9La" id="1dufLnEEJ5f" role="1SiIV1">
+            <ref role="3bR37D" to="k3fp:36zCbqqq9fZ" resolve="com.mpsbasics.langchain4j" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4$EmJHcVOzj" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -14119,11 +14119,6 @@
         </node>
         <node concept="1SiIV0" id="5gFsbf3gFkQ" role="3bR37C">
           <node concept="3bR9La" id="5gFsbf3gFkR" role="1SiIV1">
-            <ref role="3bR37D" to="k3fp:5jdn85oHU1h" resolve="com.mpsbasics.build" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="4oT$_WGcLv_" role="3bR37C">
-          <node concept="3bR9La" id="4oT$_WGcLvA" role="1SiIV1">
             <ref role="3bR37D" to="k3fp:5jdn85oHU1h" resolve="com.mpsbasics.build" />
           </node>
         </node>
