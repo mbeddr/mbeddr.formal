@@ -3448,6 +3448,11 @@
             <ref role="3bR37D" to="k3fp:4lJSf3LkfPw" resolve="com.mpsbasics.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="5$GK_ob3Nhj" role="3bR37C">
+          <node concept="3bR9La" id="5$GK_ob3Nhk" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:uqqfP8JWSl" resolve="MPS.IDEA.Modules" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtD" id="7he_lUuoYjo" role="2G$12L">
         <property role="BnDLt" value="true" />
