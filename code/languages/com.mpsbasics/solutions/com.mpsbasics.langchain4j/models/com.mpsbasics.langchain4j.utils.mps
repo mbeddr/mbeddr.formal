@@ -46,7 +46,7 @@
     <import index="7tob" ref="r:ab86c3d1-1bb1-4489-8c79-6707606ec9a4(com.mpsbasics.langchain4j.pluginSolution.plugin)" />
     <import index="8oaq" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.apache.commons.io(MPS.IDEA.Modules/)" />
     <import index="kscp" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.google.common.hash(MPS.IDEA.Modules/)" />
-    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" implicit="true" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">

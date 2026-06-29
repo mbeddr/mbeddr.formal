@@ -461,78 +461,6 @@
         <ref role="m$_y1" to="ffeo:6Hpa5co69BH" resolve="jetbrains.mps.editor.tooltips" />
       </node>
     </node>
-    <node concept="m$_wf" id="4oT$_WGcUbS" role="3989C9">
-      <property role="m$_wk" value="com.mpsbasics.build" />
-      <node concept="3_J27D" id="4oT$_WGcUbT" role="m$_yQ">
-        <node concept="3Mxwew" id="4oT$_WGcUbU" role="3MwsjC">
-          <property role="3MwjfP" value="com.mpsbasics.build" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="4oT$_WGcUbV" role="m_cZH">
-        <node concept="3Mxwew" id="4oT$_WGcUbW" role="3MwsjC">
-          <property role="3MwjfP" value="com.mpsbasics.build" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="4oT$_WGcUbX" role="m$_w8">
-        <node concept="3Mxwey" id="4oT$_WGcUbY" role="3MwsjC">
-          <ref role="3Mxwex" node="4aeOpjlAy7f" resolve="version" />
-        </node>
-      </node>
-      <node concept="m$_yB" id="4oT$_WGcUbZ" role="m$_yh">
-        <ref role="m$_yA" node="5jdn85oHU1h" resolve="com.mpsbasics.build" />
-      </node>
-      <node concept="m$_yC" id="4oT$_WGcUc0" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:33r_JpZ6k_l" resolve="com.mbeddr.platform.build" />
-      </node>
-    </node>
-    <node concept="m$_wf" id="4oT$_WGcUcj" role="3989C9">
-      <property role="m$_wk" value="com.mpsbasics" />
-      <node concept="3_J27D" id="4oT$_WGcUck" role="m$_yQ">
-        <node concept="3Mxwew" id="4oT$_WGcUcl" role="3MwsjC">
-          <property role="3MwjfP" value="com.mpsbasics" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="4oT$_WGcUcm" role="m_cZH">
-        <node concept="3Mxwew" id="4oT$_WGcUcn" role="3MwsjC">
-          <property role="3MwjfP" value="com.mpsbasics" />
-        </node>
-      </node>
-      <node concept="3_J27D" id="4oT$_WGcUco" role="m$_w8">
-        <node concept="3Mxwey" id="4oT$_WGcUcp" role="3MwsjC">
-          <ref role="3Mxwex" node="4aeOpjlAy7f" resolve="version" />
-        </node>
-      </node>
-      <node concept="m$f5U" id="4oT$_WGcUcq" role="m$_yh">
-        <ref role="m$f5T" node="6hyv0iVPlEb" resolve="com.mpsbasics" />
-      </node>
-      <node concept="m$_yC" id="4oT$_WGcUcr" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4k71ibbKLe8" resolve="jetbrains.mps.core" />
-      </node>
-      <node concept="m$_yC" id="4oT$_WGcUcs" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4p3FRivDLPy" resolve="org.apache.commons" />
-      </node>
-      <node concept="m$_yC" id="4oT$_WGcUct" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:64SK4bcJmGP" resolve="com.mbeddr.mpsutil.plantuml" />
-      </node>
-      <node concept="m$_yC" id="4oT$_WGcUcu" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:NMVW79y25x" resolve="com.mbeddr.mpsutil.json" />
-      </node>
-      <node concept="m$_yC" id="4oT$_WGcUcv" role="m$_yJ">
-        <ref role="m$_y1" to="al5i:Vtr7jyB0oM" resolve="com.mbeddr.mpsutil.filepicker" />
-      </node>
-      <node concept="m$_yC" id="4oT$_WGcUcx" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:6SVXTgIe8wD" resolve="de.itemis.mps.celllayout" />
-      </node>
-      <node concept="m$_yC" id="4oT$_WGcUcy" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:1sO539bGQvt" resolve="de.slisson.mps.richtext" />
-      </node>
-      <node concept="m$_yC" id="4oT$_WGcUcz" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:4O0hKJpmtq1" resolve="jetbrains.mps.trove" />
-      </node>
-      <node concept="m$_yC" id="4oT$_WGcUc$" role="m$_yJ">
-        <ref role="m$_y1" to="ffeo:6Hpa5co69BH" resolve="jetbrains.mps.editor.tooltips" />
-      </node>
-    </node>
     <node concept="m$_wf" id="2MrvZqtDklV" role="3989C9">
       <property role="m$_wk" value="com.mpsbasics.testutils" />
       <node concept="3_J27D" id="2MrvZqtDklW" role="m$_yQ">
@@ -3010,6 +2938,11 @@
         <node concept="1SiIV0" id="6k97aKdvxMr" role="3bR37C">
           <node concept="3bR9La" id="6k97aKdvxMs" role="1SiIV1">
             <ref role="3bR37D" node="6k97aKdvteW" resolve="com.mpsbasics.langchain4j.pluginSolution" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="sbnwpMYdYg" role="3bR37C">
+          <node concept="3bR9La" id="sbnwpMYdYh" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
           </node>
         </node>
       </node>
