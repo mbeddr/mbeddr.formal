@@ -122,9 +122,10 @@ configurations {
     dependencies {
         mps("com.jetbrains:mps:$mpsVersion")
 
-        languageLibs("com.mbeddr:platform:$platformVersion")
-        //languageLibs("org.mpsqa:all-in-one:$platformVersion")
         // ToDo: temporary hardcoded to enable build
+        //languageLibs("com.mbeddr:platform:$platformVersion")
+        languageLibs("com.mbeddr:platform:2026.1.26529.78a4a5d")
+        //languageLibs("org.mpsqa:all-in-one:$platformVersion")
         languageLibs("org.mpsqa:all-in-one:999.9.1085.0cf5b20")
 
         plantUML("org.apache.xmlgraphics:batik-all:1.18")
