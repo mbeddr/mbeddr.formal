@@ -20,10 +20,10 @@ plugins {
     id("org.cyclonedx.bom") version "3.2.4"
 }
 
-val jbrVers = "21.0.6-b895.109"
-val jbrWindowsVers = "jbr_jcef-21.0.6-windows-x64-b895.109"
-val jbrLinuxVers = "jbr_jcef-21.0.6-linux-x64-b895.109"
-val jbrMacAarchVers = "jbr_jcef-21.0.6-osx-aarch64-b895.109"
+val jbrVers = "25.0.2-b329.117"
+val jbrWindowsVers = "jbr_jcef-25.0.2-b329.117-windows-x64"
+val jbrLinuxVers = "jbr_jcef-25.0.2-b329.117-linux-x64"
+val jbrMacAarchVers = "jbr_jcef-25.0.2-b329.117-osx-aarch64"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -43,9 +43,9 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2025"
+val major = "2026"
 val minor = "1"
-val bugfix = "2"
+val bugfix = ""
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
@@ -123,7 +123,9 @@ configurations {
         mps("com.jetbrains:mps:$mpsVersion")
 
         languageLibs("com.mbeddr:platform:$platformVersion")
-        languageLibs("org.mpsqa:all-in-one:$platformVersion")
+        //languageLibs("org.mpsqa:all-in-one:$platformVersion")
+        // ToDo: temporary hardcoded to enable build
+        languageLibs("org.mpsqa:all-in-one:999.9.1085.0cf5b20")
 
         plantUML("org.apache.xmlgraphics:batik-all:1.18")
         plantUML("net.sourceforge.plantuml:plantuml-epl:1.2024.7")
