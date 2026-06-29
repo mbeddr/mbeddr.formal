@@ -49,7 +49,9 @@ val bugfix = ""
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
-val mpsVersion = "$major.$minor" + appendOpt(bugfix, ".")
+// ToDo: temporary encoded to enable build against RC1
+//val mpsVersion = "$major.$minor" + appendOpt(bugfix, ".")
+val mpsVersion = "2026.1-RC1"
 
 // Dependency versions
 val platformVersion = "$major.$minor.+"
