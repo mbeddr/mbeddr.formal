@@ -14,13 +14,13 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="bpzl" ref="r:8e9bbbf8-bc28-4903-ba1f-4a24127d3d8e(com.mpsbasics.plaintext.yaml.structure)" />
-    <import index="ihm2" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.yaml.snakeyaml(MPS.ThirdParty/)" />
-    <import index="e1ti" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.yaml.snakeyaml.constructor(MPS.ThirdParty/)" />
-    <import index="vvcd" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.yaml.snakeyaml.nodes(MPS.ThirdParty/)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
-    <import index="v0l4" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.yaml.snakeyaml.comments(MPS.ThirdParty/)" />
-    <import index="zxl0" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.yaml.snakeyaml.error(MPS.ThirdParty/)" />
+    <import index="zxl0" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.yaml.snakeyaml.error(MPS.IDEA.Modules/)" />
+    <import index="ihm2" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.yaml.snakeyaml(MPS.IDEA.Modules/)" />
+    <import index="vvcd" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.yaml.snakeyaml.nodes(MPS.IDEA.Modules/)" />
+    <import index="v0l4" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.yaml.snakeyaml.comments(MPS.IDEA.Modules/)" />
+    <import index="e1ti" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.yaml.snakeyaml.constructor(MPS.IDEA.Modules/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
