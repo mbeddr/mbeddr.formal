@@ -15,10 +15,7 @@
     <import index="21pk" ref="r:be665d13-1e1d-44cd-9817-8bd4d610f422(com.mbeddr.mpsutil.json.structure)" />
     <import index="41ey" ref="r:f005c0ad-4467-4fc6-b611-c9d0774d1591(com.mbeddr.mpsutil.json.behavior)" />
     <import index="szki" ref="r:b18cb5fe-0879-4122-9cdc-fb865fb76448(com.mpsbasics.langchain4j.utils)" />
-    <import index="i4mf" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.core(MPS.ThirdParty/)" />
-    <import index="7k8f" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.databind(MPS.ThirdParty/)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
-    <import index="lhlt" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.databind.node(MPS.ThirdParty/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="7lfx" ref="r:246ad65b-b1a5-493e-ad81-b006d6ce762e(com.mbeddr.formal.safety.argument.genai.structure)" />
     <import index="8q50" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.model.chat.response(com.mpsbasics.langchain4j/)" />
@@ -29,6 +26,9 @@
     <import index="87nw" ref="r:ca2ab6bb-f6e7-4c0f-a88c-b78b9b31fff3(de.slisson.mps.richtext.structure)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="8s45" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.model.openai(com.mpsbasics.langchain4j/)" />
+    <import index="7k8f" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.databind(MPS.IDEA.Modules/)" />
+    <import index="i4mf" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.core(MPS.IDEA.Modules/)" />
+    <import index="lhlt" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.fasterxml.jackson.databind.node(MPS.IDEA.Modules/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1100,8 +1100,7 @@
               <ref role="3uigEE" to="7k8f:~ObjectMapper" resolve="ObjectMapper" />
             </node>
             <node concept="2ShNRf" id="25QeXKbjZcz" role="33vP2m">
-              <node concept="1pGfFk" id="25QeXKbk1aZ" role="2ShVmc">
-                <property role="373rjd" value="true" />
+              <node concept="1pGfFk" id="7r0lFI$VfQC" role="2ShVmc">
                 <ref role="37wK5l" to="7k8f:~ObjectMapper.&lt;init&gt;()" resolve="ObjectMapper" />
               </node>
             </node>

@@ -23,9 +23,9 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
-    <import index="iqf9" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.jdesktop.swingx.renderer(MPS.ThirdParty/)" />
-    <import index="v4mk" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.jdesktop.swingx(MPS.ThirdParty/)" />
-    <import index="7tm6" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.jdesktop.swingx.treetable(MPS.ThirdParty/)" />
+    <import index="v4mk" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.jdesktop.swingx(MPS.IDEA.Modules/)" />
+    <import index="7tm6" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.jdesktop.swingx.treetable(MPS.IDEA.Modules/)" />
+    <import index="iqf9" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.jdesktop.swingx.renderer(MPS.IDEA.Modules/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1000,7 +1000,7 @@
     <property role="TrG5h" value="AnalysesResultsCellRenderer" />
     <property role="3GE5qa" value="analyses_results" />
     <node concept="3Tm1VV" id="12KLbTgpYCk" role="1B3o_S" />
-    <node concept="3uibUv" id="2_t3nDPtsLo" role="1zkMxy">
+    <node concept="3uibUv" id="3nXTjEVAqnH" role="1zkMxy">
       <ref role="3uigEE" to="iqf9:~AbstractRenderer" resolve="AbstractRenderer" />
     </node>
     <node concept="2tJIrI" id="12GRGX_9Qag" role="jymVt" />
@@ -1011,7 +1011,7 @@
         <node concept="XkiVB" id="7LklpYzRVC_" role="3cqZAp">
           <ref role="37wK5l" to="iqf9:~AbstractRenderer.&lt;init&gt;(org.jdesktop.swingx.renderer.ComponentProvider)" resolve="AbstractRenderer" />
           <node concept="2ShNRf" id="7LklpYzRVY3" role="37wK5m">
-            <node concept="1pGfFk" id="2_t3nDPtPKz" role="2ShVmc">
+            <node concept="1pGfFk" id="3nXTjEVAsdU" role="2ShVmc">
               <ref role="37wK5l" to="iqf9:~LabelProvider.&lt;init&gt;()" resolve="LabelProvider" />
             </node>
           </node>
@@ -1036,7 +1036,7 @@
               <ref role="3uigEE" to="iqf9:~TableCellContext" resolve="TableCellContext" />
             </node>
             <node concept="2ShNRf" id="7Bf6Ux7TLTt" role="33vP2m">
-              <node concept="1pGfFk" id="2_t3nDPtQOo" role="2ShVmc">
+              <node concept="1pGfFk" id="3nXTjEVAsdV" role="2ShVmc">
                 <ref role="37wK5l" to="iqf9:~TableCellContext.&lt;init&gt;()" resolve="TableCellContext" />
               </node>
             </node>
@@ -1620,7 +1620,7 @@
       <node concept="3clFbS" id="7Bf6Ux7Tz9n" role="3clF47">
         <node concept="3clFbF" id="7Bf6Ux7T$Jq" role="3cqZAp">
           <node concept="2ShNRf" id="7Bf6Ux7T$Jo" role="3clFbG">
-            <node concept="1pGfFk" id="2_t3nDPtQOp" role="2ShVmc">
+            <node concept="1pGfFk" id="3nXTjEVAsdT" role="2ShVmc">
               <ref role="37wK5l" to="iqf9:~LabelProvider.&lt;init&gt;()" resolve="LabelProvider" />
             </node>
           </node>
@@ -2757,7 +2757,7 @@
     </node>
     <node concept="2tJIrI" id="5PkarIFVzpW" role="jymVt" />
     <node concept="3Tm1VV" id="4wNvmgr9OM7" role="1B3o_S" />
-    <node concept="3uibUv" id="2_t3nDPtV6M" role="1zkMxy">
+    <node concept="3uibUv" id="3nXTjEVzHtZ" role="1zkMxy">
       <ref role="3uigEE" to="v4mk:~JXTreeTable" resolve="JXTreeTable" />
     </node>
     <node concept="16euLQ" id="TJrbIN5lMq" role="16eVyc">
@@ -4889,7 +4889,7 @@
         </node>
       </node>
     </node>
-    <node concept="3uibUv" id="2_t3nDPuirr" role="1zkMxy">
+    <node concept="3uibUv" id="3nXTjEVzY9k" role="1zkMxy">
       <ref role="3uigEE" to="7tm6:~AbstractTreeTableModel" resolve="AbstractTreeTableModel" />
     </node>
     <node concept="16euLQ" id="TJrbIN5tPs" role="16eVyc">
