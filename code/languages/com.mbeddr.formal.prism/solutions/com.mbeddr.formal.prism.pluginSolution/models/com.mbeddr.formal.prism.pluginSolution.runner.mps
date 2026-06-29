@@ -12,7 +12,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
-    <import index="do90" ref="r:c726a733-8038-42b5-adf4-0fce41e0214c(com.mbeddr.mpsutil.nodes_tracing.test.nodes_tracing_utils)" />
+    <import index="fhlc" ref="r:89fb4363-ec36-4a06-ac51-b284d265c631(com.mbeddr.formal.base.tooling.make)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -156,10 +156,10 @@
           <node concept="3cpWsn" id="4Hts7PYtZ_0" role="3cpWs9">
             <property role="TrG5h" value="verificationDirectory" />
             <node concept="17QB3L" id="4Hts7PYtZ_1" role="1tU5fm" />
-            <node concept="2YIFZM" id="4Hts7PYtZ_2" role="33vP2m">
-              <ref role="1Pybhc" to="do90:5uY69zv5FFj" resolve="PathsUtils" />
-              <ref role="37wK5l" to="do90:3hNQKr2Cac0" resolve="computePathToGeneratedDirectory" />
-              <node concept="37vLTw" id="4Hts7PYtZ_3" role="37wK5m">
+            <node concept="2YIFZM" id="sbnwpN4NtN" role="33vP2m">
+              <ref role="37wK5l" to="fhlc:3hNQKr2Cac0" resolve="computePathToGeneratedDirectory" />
+              <ref role="1Pybhc" to="fhlc:3AFGfkfpqfj" resolve="PathsUtils" />
+              <node concept="37vLTw" id="sbnwpN4NtO" role="37wK5m">
                 <ref role="3cqZAo" node="4Hts7PYtZ_I" resolve="m" />
               </node>
             </node>
