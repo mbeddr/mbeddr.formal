@@ -51,7 +51,7 @@ fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else "
 
 // ToDo: temporary encoded to enable build against RC1
 //val mpsVersion = "$major.$minor" + appendOpt(bugfix, ".")
-val mpsVersion = "2026.1-RC1"
+val mpsVersion = "261.25134.10158"
 
 // Dependency versions
 val platformVersion = "$major.$minor.+"
@@ -122,7 +122,9 @@ configurations {
     val jbrMacAarch by creating
 
     dependencies {
-        mps("com.jetbrains:mps:$mpsVersion")
+        // ToDo: temporary commented out to enable mps-prerelease artifacts
+        //mps("com.jetbrains:mps:$mpsVersion")
+        mps("com.jetbrains.mps:mps-prerelease:$mpsVersion")
 
         // ToDo: temporary hardcoded to enable build
         //languageLibs("com.mbeddr:platform:$platformVersion")
