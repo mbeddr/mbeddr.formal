@@ -26,10 +26,10 @@
       </concept>
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
-      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ngI" index="8gIbR">
         <property id="3226630706269685486" name="id" index="0lsPA" />
       </concept>
-      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ngI" index="8gIbW">
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
       <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc">
@@ -145,7 +145,7 @@
       </node>
     </node>
     <node concept="23Pd3N" id="7pXyrVpU1YM" role="1YsxlH">
-      <ref role="23P9xr" node="7s0Rn3OR7jU" />
+      <ref role="23P9xr" node="7s0Rn3OR7jU" resolve="Pacemaker Hazards List" />
     </node>
   </node>
   <node concept="2vn7XN" id="2FBIZ0So8wu">
@@ -2330,8 +2330,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="2FBIZ0So8_1" role="2vhqc$">
-      <ref role="3VeSjP" node="2FBIZ0So8wG" />
-      <ref role="3VeSjQ" node="2FBIZ0So8zf" />
+      <ref role="3VeSjP" node="2FBIZ0So8wG" resolve="G1" />
+      <ref role="3VeSjQ" node="2FBIZ0So8zf" resolve="Str1" />
     </node>
     <node concept="2vn7WC" id="PCzh3eYZzJ" role="2vn1q5">
       <property role="TrG5h" value="G2" />
@@ -2345,8 +2345,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="PCzh3eYZzM" role="2vhqc$">
-      <ref role="3VeSjP" node="2FBIZ0So8zf" />
-      <ref role="3VeSjQ" node="PCzh3eYZzJ" />
+      <ref role="3VeSjP" node="2FBIZ0So8zf" resolve="Str1" />
+      <ref role="3VeSjQ" node="PCzh3eYZzJ" resolve="G2" />
     </node>
     <node concept="2vn7WC" id="PCzh3eYZzO" role="2vn1q5">
       <property role="TrG5h" value="G3" />
@@ -2360,8 +2360,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="PCzh3eYZzR" role="2vhqc$">
-      <ref role="3VeSjP" node="2FBIZ0So8zf" />
-      <ref role="3VeSjQ" node="PCzh3eYZzO" />
+      <ref role="3VeSjP" node="2FBIZ0So8zf" resolve="Str1" />
+      <ref role="3VeSjQ" node="PCzh3eYZzO" resolve="G3" />
     </node>
     <node concept="2vn7WC" id="PCzh3eYZzT" role="2vn1q5">
       <property role="TrG5h" value="G4" />
@@ -2375,8 +2375,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="PCzh3eYZzW" role="2vhqc$">
-      <ref role="3VeSjP" node="2FBIZ0So8zf" />
-      <ref role="3VeSjQ" node="PCzh3eYZzT" />
+      <ref role="3VeSjP" node="2FBIZ0So8zf" resolve="Str1" />
+      <ref role="3VeSjQ" node="PCzh3eYZzT" resolve="G4" />
     </node>
     <node concept="2vn7WC" id="PCzh3eYZzY" role="2vn1q5">
       <property role="TrG5h" value="G5" />
@@ -2390,8 +2390,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="PCzh3eYZ$1" role="2vhqc$">
-      <ref role="3VeSjP" node="2FBIZ0So8zf" />
-      <ref role="3VeSjQ" node="PCzh3eYZzY" />
+      <ref role="3VeSjP" node="2FBIZ0So8zf" resolve="Str1" />
+      <ref role="3VeSjQ" node="PCzh3eYZzY" resolve="G5" />
     </node>
     <node concept="2vn7WC" id="PCzh3eYZ$3" role="2vn1q5">
       <property role="TrG5h" value="G6" />
@@ -2405,8 +2405,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="PCzh3eYZ$6" role="2vhqc$">
-      <ref role="3VeSjP" node="2FBIZ0So8zf" />
-      <ref role="3VeSjQ" node="PCzh3eYZ$3" />
+      <ref role="3VeSjP" node="2FBIZ0So8zf" resolve="Str1" />
+      <ref role="3VeSjQ" node="PCzh3eYZ$3" resolve="G6" />
     </node>
     <node concept="2vn7WC" id="PCzh3eYZ$8" role="2vn1q5">
       <property role="TrG5h" value="G7" />
@@ -2420,8 +2420,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="PCzh3eYZ$b" role="2vhqc$">
-      <ref role="3VeSjP" node="2FBIZ0So8zf" />
-      <ref role="3VeSjQ" node="PCzh3eYZ$8" />
+      <ref role="3VeSjP" node="2FBIZ0So8zf" resolve="Str1" />
+      <ref role="3VeSjQ" node="PCzh3eYZ$8" resolve="G7" />
     </node>
   </node>
   <node concept="8gVzP" id="7s0Rn3OR7jU">
@@ -2430,27 +2430,27 @@
       <property role="0lsPA" value="HAZ01" />
       <property role="TrG5h" value="Electrical malfunctioning" />
       <node concept="3Zv_sa" id="7s0Rn3ORa_t" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7s0Rn3ORd2C" />
+        <ref role="3Zv_sb" node="7s0Rn3ORd2C" resolve="Patient injury" />
       </node>
     </node>
     <node concept="8gVzc" id="7s0Rn3ORiLh" role="8gIbH">
       <property role="0lsPA" value="HAZ02" />
       <property role="TrG5h" value="Incorrect pulse timing" />
       <node concept="3Zv_sa" id="7s0Rn3ORkOh" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7s0Rn3ORaM_" />
+        <ref role="3Zv_sb" node="7s0Rn3ORaM_" resolve="Patient stress" />
       </node>
       <node concept="3Zv_sa" id="7s0Rn3ORiLi" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7s0Rn3ORd2C" />
+        <ref role="3Zv_sb" node="7s0Rn3ORd2C" resolve="Patient injury" />
       </node>
     </node>
     <node concept="8gVzc" id="7s0Rn3ORiYp" role="8gIbH">
       <property role="0lsPA" value="HAZ03" />
       <property role="TrG5h" value="Incorrect pulse frequency" />
       <node concept="3Zv_sa" id="7s0Rn3ORnuw" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7s0Rn3ORaM_" />
+        <ref role="3Zv_sb" node="7s0Rn3ORaM_" resolve="Patient stress" />
       </node>
       <node concept="3Zv_sa" id="7s0Rn3ORiYq" role="3Zv_sA">
-        <ref role="3Zv_sb" node="7s0Rn3ORd2C" />
+        <ref role="3Zv_sb" node="7s0Rn3ORd2C" resolve="Patient injury" />
       </node>
     </node>
   </node>

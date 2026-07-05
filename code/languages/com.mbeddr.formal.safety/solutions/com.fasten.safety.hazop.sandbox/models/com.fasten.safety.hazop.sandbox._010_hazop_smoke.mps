@@ -18,10 +18,10 @@
       </concept>
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
-      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ngI" index="8gIbR">
         <property id="3226630706269685486" name="id" index="0lsPA" />
       </concept>
-      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ngI" index="8gIbW">
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
       <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc" />
@@ -108,10 +108,10 @@
       <node concept="199rGX" id="3DZJpXNmRkV" role="199bAU">
         <node concept="199rGI" id="3DZJpXNmTJV" role="199rGN">
           <node concept="3h3uym" id="3DZJpXNnhHC" role="199rGF">
-            <ref role="3h3iM1" node="3DZJpXNnhHw" />
+            <ref role="3h3iM1" node="3DZJpXNnhHw" resolve="OS1" />
           </node>
           <node concept="199rGB" id="3DZJpXNnx2p" role="199rGH">
-            <ref role="DABNb" node="3DZJpXNnhHB" />
+            <ref role="DABNb" node="3DZJpXNnhHB" resolve="Erroneous fuel indication" />
           </node>
         </node>
         <node concept="199rJA" id="3DZJpXNmRkX" role="199rGW">

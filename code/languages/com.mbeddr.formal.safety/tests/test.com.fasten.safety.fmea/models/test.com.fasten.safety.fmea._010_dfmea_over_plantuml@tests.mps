@@ -241,35 +241,35 @@
           <node concept="1PLGxJ" id="3acQo$0xjPT" role="1PLElB">
             <ref role="1PLGwE" node="3acQo$0xjU8" resolve="Sender" />
             <node concept="1PLKG7" id="3acQo$0xjQ1" role="1PLCo$">
-              <ref role="1jQAtN" node="3acQo$0xjPR" />
+              <ref role="1jQAtN" node="3acQo$0xjPR" resolve="noisy" />
               <node concept="1PNyZM" id="3acQo$0xjQb" role="1PLCoy">
-                <ref role="2VPQEx" node="3acQo$0xjPO" />
+                <ref role="2VPQEx" node="3acQo$0xjPO" resolve="message altered" />
                 <node concept="2rqxmr" id="1IqNTocaNN4" role="lGtFl">
-                  <ref role="1BTHP0" node="3acQo$0xjPO" />
+                  <ref role="1BTHP0" node="3acQo$0xjPO" resolve="message altered" />
                   <node concept="3KTrbX" id="1IqNTocaNN5" role="3KTr4d">
-                    <ref role="3AHY9a" node="3acQo$0xjPN" />
+                    <ref role="3AHY9a" node="3acQo$0xjPN" resolve="message loss" />
                   </node>
                   <node concept="3KTrbX" id="1IqNTocaNN6" role="3KTr4d">
-                    <ref role="3AHY9a" node="3acQo$0xjPO" />
+                    <ref role="3AHY9a" node="3acQo$0xjPO" resolve="message altered" />
                   </node>
                   <node concept="3KTrbX" id="1IqNTocaNN7" role="3KTr4d">
-                    <ref role="3AHY9a" node="1IqNTocaH8F" />
+                    <ref role="3AHY9a" node="1IqNTocaH8F" resolve="message shortened" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="1PLKG7" id="3acQo$0xjQ2" role="1PLCo$">
-              <ref role="1jQAtN" node="3acQo$0xjPS" />
+              <ref role="1jQAtN" node="3acQo$0xjPS" resolve="too fast" />
               <node concept="1PNyZM" id="3acQo$0xjQc" role="1PLCoy">
-                <ref role="2VPQEx" node="3acQo$0xjPN" />
+                <ref role="2VPQEx" node="3acQo$0xjPN" resolve="message loss" />
               </node>
               <node concept="2rqxmr" id="3acQo$0zsVv" role="lGtFl">
-                <ref role="1BTHP0" node="3acQo$0xjPS" />
+                <ref role="1BTHP0" node="3acQo$0xjPS" resolve="too fast" />
                 <node concept="3KTrbX" id="3acQo$0zsVw" role="3KTr4d">
-                  <ref role="3AHY9a" node="3acQo$0xjPR" />
+                  <ref role="3AHY9a" node="3acQo$0xjPR" resolve="noisy" />
                 </node>
                 <node concept="3KTrbX" id="3acQo$0zsVx" role="3KTr4d">
-                  <ref role="3AHY9a" node="3acQo$0xjPS" />
+                  <ref role="3AHY9a" node="3acQo$0xjPS" resolve="too fast" />
                 </node>
               </node>
             </node>
@@ -289,15 +289,15 @@
           <node concept="1PLGxJ" id="3acQo$0xjPU" role="1PLElB">
             <ref role="1PLGwE" node="3acQo$0xjUb" resolve="Receiver" />
             <node concept="1PLKG7" id="3acQo$0xjQ3" role="1PLCo$">
-              <ref role="1jQAtN" node="3acQo$0xjPP" />
+              <ref role="1jQAtN" node="3acQo$0xjPP" resolve="blocked" />
               <node concept="1PNyZM" id="3acQo$0xjQd" role="1PLCoy">
-                <ref role="2VPQEx" node="3acQo$0xjPN" />
+                <ref role="2VPQEx" node="3acQo$0xjPN" resolve="message loss" />
               </node>
             </node>
             <node concept="1PLKG7" id="3acQo$0xjQ4" role="1PLCo$">
-              <ref role="1jQAtN" node="3acQo$0xjPQ" />
+              <ref role="1jQAtN" node="3acQo$0xjPQ" resolve="too slow" />
               <node concept="1PNyZM" id="3acQo$0xjQe" role="1PLCoy">
-                <ref role="2VPQEx" node="3acQo$0xjPN" />
+                <ref role="2VPQEx" node="3acQo$0xjPN" resolve="message loss" />
               </node>
             </node>
           </node>
@@ -326,14 +326,14 @@
             </node>
             <node concept="2BiYKZ" id="1IqNTocaH5Y" role="wNkl_">
               <node concept="2BiYKX" id="1IqNTocaH6J" role="2BiYKW">
-                <ref role="2BiYK2" node="3acQo$0xjPO" />
+                <ref role="2BiYK2" node="3acQo$0xjPO" resolve="message altered" />
                 <node concept="2rqxmr" id="1IqNTocaH8g" role="lGtFl">
-                  <ref role="1BTHP0" node="3acQo$0xjPO" />
+                  <ref role="1BTHP0" node="3acQo$0xjPO" resolve="message altered" />
                   <node concept="3KTrbX" id="1IqNTocaH8h" role="3KTr4d">
-                    <ref role="3AHY9a" node="3acQo$0xjPO" />
+                    <ref role="3AHY9a" node="3acQo$0xjPO" resolve="message altered" />
                   </node>
                   <node concept="3KTrbX" id="1IqNTocaH8i" role="3KTr4d">
-                    <ref role="3AHY9a" node="3acQo$0xjPN" />
+                    <ref role="3AHY9a" node="3acQo$0xjPN" resolve="message loss" />
                   </node>
                 </node>
               </node>

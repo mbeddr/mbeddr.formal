@@ -42,10 +42,10 @@
       <concept id="3173037291469709259" name="com.fasten.safety.bowtie.structure.BowtieConnection" flags="ng" index="355BHh" />
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
-      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ngI" index="8gIbR">
         <property id="3226630706269685486" name="id" index="0lsPA" />
       </concept>
-      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ngI" index="8gIbW">
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
       <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc" />
@@ -530,47 +530,47 @@
     </node>
     <node concept="2vmW_e" id="4pL_qfpm46s" role="354S_2" />
     <node concept="355BHh" id="2K8T9FD9u5l" role="354S_2">
-      <ref role="354V5o" node="2K8T9FD82wE" />
-      <ref role="354V5p" node="2K8T9FD8ocw" />
+      <ref role="354V5o" node="2K8T9FD82wE" resolve="Structural &#10;failure&#10;of crane" />
+      <ref role="354V5p" node="2K8T9FD8ocw" resolve="check inspection &#10;status of crane" />
     </node>
     <node concept="355BHh" id="2K8T9FDuFW_" role="354S_2">
-      <ref role="354V5o" node="2K8T9FDabUC" />
-      <ref role="354V5p" node="2K8T9FDdmPO" />
+      <ref role="354V5o" node="2K8T9FDabUC" resolve="hazard" />
+      <ref role="354V5p" node="2K8T9FDdmPO" resolve="Fahrzeug-&#10;geschwindigkskeits-&#10;profil begrenzen" />
     </node>
     <node concept="355BHh" id="2K8T9FDuFWA" role="354S_2">
-      <ref role="354V5o" node="2K8T9FDdmPO" />
-      <ref role="354V5p" node="2K8T9FDdEEW" />
+      <ref role="354V5o" node="2K8T9FDdmPO" resolve="Fahrzeug-&#10;geschwindigkskeits-&#10;profil begrenzen" />
+      <ref role="354V5p" node="2K8T9FDdEEW" resolve="severe injury&#10;of worker" />
     </node>
     <node concept="355BHh" id="2K8T9FDvqOp" role="354S_2">
-      <ref role="354V5o" node="2K8T9FD8ocw" />
-      <ref role="354V5p" node="2K8T9FDvqO6" />
+      <ref role="354V5o" node="2K8T9FD8ocw" resolve="check inspection &#10;status of crane" />
+      <ref role="354V5p" node="2K8T9FDvqO6" resolve="pre-lift crane&#10;check" />
     </node>
     <node concept="355BHh" id="2K8T9FDvqOw" role="354S_2">
-      <ref role="354V5o" node="2K8T9FDvqO6" />
-      <ref role="354V5p" node="2K8T9FDabUC" />
+      <ref role="354V5o" node="2K8T9FDvqO6" resolve="pre-lift crane&#10;check" />
+      <ref role="354V5p" node="2K8T9FDabUC" resolve="hazard" />
     </node>
     <node concept="355BHh" id="2fmOBL3W4_r" role="354S_2">
       <ref role="354V5o" node="2fmOBL3W4_5" />
-      <ref role="354V5p" node="2fmOBL3W4_c" />
+      <ref role="354V5p" node="2fmOBL3W4_c" resolve="b1&#10;b2&#10;b3" />
     </node>
     <node concept="355BHh" id="2fmOBL3WoHm" role="354S_2">
-      <ref role="354V5o" node="2fmOBL3W4_c" />
-      <ref role="354V5p" node="2K8T9FDabUC" />
+      <ref role="354V5o" node="2fmOBL3W4_c" resolve="b1&#10;b2&#10;b3" />
+      <ref role="354V5p" node="2K8T9FDabUC" resolve="hazard" />
     </node>
     <node concept="355BHh" id="4rVENofQ75Y" role="354S_2">
       <ref role="354V5o" node="4rVENofPpUe" />
-      <ref role="354V5p" node="4rVENofPpU7" />
+      <ref role="354V5p" node="4rVENofPpU7" resolve="ee" />
     </node>
     <node concept="355BHh" id="4rVENofQAuk" role="354S_2">
-      <ref role="354V5o" node="2fmOBL3W4_w" />
-      <ref role="354V5p" node="2fmOBL3W4_Z" />
+      <ref role="354V5o" node="2fmOBL3W4_w" resolve="some&#10;name" />
+      <ref role="354V5p" node="2fmOBL3W4_Z" resolve="b2&#10;b3" />
     </node>
     <node concept="355BHh" id="4rVENofQKwb" role="354S_2">
-      <ref role="354V5o" node="4rVENofPpUl" />
+      <ref role="354V5o" node="4rVENofPpUl" resolve="start" />
       <ref role="354V5p" node="4rVENofPpUe" />
     </node>
     <node concept="355BHh" id="1DBxgaUekGl" role="354S_2">
-      <ref role="354V5o" node="2fmOBL3W4_Z" />
+      <ref role="354V5o" node="2fmOBL3W4_Z" resolve="b2&#10;b3" />
       <ref role="354V5p" node="2fmOBL3W4_S" />
     </node>
   </node>
@@ -848,7 +848,7 @@
     </node>
     <node concept="354V5t" id="4pL_qfoQMjM" role="354S_2">
       <property role="TrG5h" value="kkkkkkkkkk&#10;on several lines&#10;long description of the event" />
-      <ref role="2vtxcR" node="4pL_qfp3g3N" />
+      <ref role="2vtxcR" node="4pL_qfp3g3N" resolve="Drug overdosis" />
     </node>
     <node concept="354V5v" id="4pL_qfoQMjT" role="354S_2">
       <property role="TrG5h" value="some&#10;name&#10;with many &#10;details on  a single loonggg line" />
@@ -867,19 +867,19 @@
     </node>
     <node concept="2vgNmd" id="4pL_qfpd_D0" role="354S_2" />
     <node concept="355BHh" id="4pL_qfoQMkm" role="354S_2">
-      <ref role="354V5o" node="4pL_qfoQMjT" />
-      <ref role="354V5p" node="2K8T9FDwLpK" />
+      <ref role="354V5o" node="4pL_qfoQMjT" resolve="some&#10;name&#10;with many &#10;details on  a single loonggg line" />
+      <ref role="354V5p" node="2K8T9FDwLpK" resolve="first line&#10;second line&#10;third line is hte longest one with &#10;detailed &#10;description&#10;" />
     </node>
     <node concept="355BHh" id="4pL_qfoQMkL" role="354S_2">
-      <ref role="354V5o" node="2K8T9FDwLpK" />
+      <ref role="354V5o" node="2K8T9FDwLpK" resolve="first line&#10;second line&#10;third line is hte longest one with &#10;detailed &#10;description&#10;" />
       <ref role="354V5p" node="4pL_qfoQMkb" />
     </node>
     <node concept="355BHh" id="4pL_qfoQMm3" role="354S_2">
       <ref role="354V5o" node="4pL_qfoQMkb" />
-      <ref role="354V5p" node="4pL_qfoQMjM" />
+      <ref role="354V5p" node="4pL_qfoQMjM" resolve="kkkkkkkkkk&#10;on several lines&#10;long description of the event" />
     </node>
     <node concept="355BHh" id="4pL_qfpbPIy" role="354S_2">
-      <ref role="354V5o" node="4pL_qfoQMjM" />
+      <ref role="354V5o" node="4pL_qfoQMjM" resolve="kkkkkkkkkk&#10;on several lines&#10;long description of the event" />
       <ref role="354V5p" node="4pL_qfpbPIg" />
     </node>
     <node concept="355BHh" id="4pL_qfpbPIJ" role="354S_2">
@@ -891,12 +891,12 @@
       <ref role="354V5p" node="4pL_qfoQMk0" />
     </node>
     <node concept="355BHh" id="4pL_qfpeXju" role="354S_2">
-      <ref role="354V5o" node="4pL_qfpd_CO" />
+      <ref role="354V5o" node="4pL_qfpd_CO" resolve="Escalating_Factor_1" />
       <ref role="354V5p" node="4pL_qfpd_D0" />
     </node>
     <node concept="2vgMpR" id="4pL_qfpf9NW" role="354S_2">
       <ref role="354V5o" node="4pL_qfpd_D0" />
-      <ref role="354V5p" node="2K8T9FDwLpK" />
+      <ref role="354V5p" node="2K8T9FDwLpK" resolve="first line&#10;second line&#10;third line is hte longest one with &#10;detailed &#10;description&#10;" />
     </node>
   </node>
   <node concept="8gVzP" id="4pL_qfp3g3M">
@@ -930,32 +930,32 @@
       <property role="TrG5h" value="Material&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMh1" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplLUL" />
-      <ref role="354V5p" node="4pL_qfplM8D" />
+      <ref role="354V5o" node="4pL_qfplLUL" resolve="5. Material&#10;threats" />
+      <ref role="354V5p" node="4pL_qfplM8D" resolve="Machine&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMiS" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM8D" />
-      <ref role="354V5p" node="4pL_qfplM8E" />
+      <ref role="354V5o" node="4pL_qfplM8D" resolve="Machine&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplM8E" resolve="Mother nature&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMj9" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM8E" />
-      <ref role="354V5p" node="4pL_qfplM8F" />
+      <ref role="354V5o" node="4pL_qfplM8E" resolve="Mother nature&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplM8F" resolve="Man barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfplMjq" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM8F" />
-      <ref role="354V5p" node="4pL_qfplM8G" />
+      <ref role="354V5o" node="4pL_qfplM8F" resolve="Man barrier" />
+      <ref role="354V5p" node="4pL_qfplM8G" resolve="Method&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMjF" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM8G" />
-      <ref role="354V5p" node="4pL_qfplM8H" />
+      <ref role="354V5o" node="4pL_qfplM8G" resolve="Method&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplM8H" resolve="Material&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMjW" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM8H" />
-      <ref role="354V5p" node="4pL_qfplM8I" />
+      <ref role="354V5o" node="4pL_qfplM8H" resolve="Material&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplM8I" resolve="Management&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMBZ" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM8I" />
-      <ref role="354V5p" node="4pL_qfplMBa" />
+      <ref role="354V5o" node="4pL_qfplM8I" resolve="Management&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMBa" resolve="Top Event" />
     </node>
     <node concept="2vasRL" id="4pL_qfpCisY" role="354S_2" />
     <node concept="354V5v" id="4pL_qfplLUo" role="354S_2">
@@ -980,32 +980,32 @@
       <property role="TrG5h" value="Man barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfplM2e" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplLUo" />
-      <ref role="354V5p" node="4pL_qfplLY4" />
+      <ref role="354V5o" node="4pL_qfplLUo" resolve="6. Management&#10;threats" />
+      <ref role="354V5p" node="4pL_qfplLY4" resolve="Machine&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplM2v" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplLY4" />
-      <ref role="354V5p" node="4pL_qfplLYl" />
+      <ref role="354V5o" node="4pL_qfplLY4" resolve="Machine&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplLYl" resolve="Mother nature&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplM2K" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplLYl" />
-      <ref role="354V5p" node="4pL_qfplLZc" />
+      <ref role="354V5o" node="4pL_qfplLYl" resolve="Mother nature&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplLZc" resolve="Man barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfplM31" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplLZc" />
-      <ref role="354V5p" node="4pL_qfplLYV" />
+      <ref role="354V5o" node="4pL_qfplLZc" resolve="Man barrier" />
+      <ref role="354V5p" node="4pL_qfplLYV" resolve="Method&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplM3i" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplLYV" />
-      <ref role="354V5p" node="4pL_qfplM0D" />
+      <ref role="354V5o" node="4pL_qfplLYV" resolve="Method&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplM0D" resolve="Material&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplM3z" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM0D" />
-      <ref role="354V5p" node="4pL_qfplM0m" />
+      <ref role="354V5o" node="4pL_qfplM0D" resolve="Material&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplM0m" resolve="Management&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMBt" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM0m" />
-      <ref role="354V5p" node="4pL_qfplMBa" />
+      <ref role="354V5o" node="4pL_qfplM0m" resolve="Management&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMBa" resolve="Top Event" />
     </node>
     <node concept="2vasRL" id="4pL_qfpCcwe" role="354S_2" />
     <node concept="354V5v" id="4pL_qfplLWL" role="354S_2">
@@ -1030,32 +1030,32 @@
       <property role="TrG5h" value="Method&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMAw" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplLWL" />
-      <ref role="354V5p" node="4pL_qfplMky" />
+      <ref role="354V5o" node="4pL_qfplLWL" resolve="1. Machine&#10;Threats" />
+      <ref role="354V5p" node="4pL_qfplMky" resolve="Machine&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplM_Y" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMky" />
-      <ref role="354V5p" node="4pL_qfplMkz" />
+      <ref role="354V5o" node="4pL_qfplMky" resolve="Machine&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMkz" resolve="Mother nature&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplM$q" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMkz" />
-      <ref role="354V5p" node="4pL_qfplMk$" />
+      <ref role="354V5o" node="4pL_qfplMkz" resolve="Mother nature&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMk$" resolve="Man barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMxd" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMk$" />
-      <ref role="354V5p" node="4pL_qfplMk_" />
+      <ref role="354V5o" node="4pL_qfplMk$" resolve="Man barriers" />
+      <ref role="354V5p" node="4pL_qfplMk_" resolve="Method&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMuL" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMk_" />
-      <ref role="354V5p" node="4pL_qfplMkA" />
+      <ref role="354V5o" node="4pL_qfplMk_" resolve="Method&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMkA" resolve="Material&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMtY" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMkA" />
-      <ref role="354V5p" node="4pL_qfplMkB" />
+      <ref role="354V5o" node="4pL_qfplMkA" resolve="Material&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMkB" resolve="Management&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMCx" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMkB" />
-      <ref role="354V5p" node="4pL_qfplMBa" />
+      <ref role="354V5o" node="4pL_qfplMkB" resolve="Management&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMBa" resolve="Top Event" />
     </node>
     <node concept="2vasRL" id="4pL_qfpCnen" role="354S_2" />
     <node concept="354V5v" id="4pL_qfplLVC" role="354S_2">
@@ -1080,32 +1080,32 @@
       <property role="TrG5h" value="Machine&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMgK" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplLVC" />
-      <ref role="354V5p" node="4pL_qfplM5m" />
+      <ref role="354V5o" node="4pL_qfplLVC" resolve="2. Mother&#10;Nature&#10;threats" />
+      <ref role="354V5p" node="4pL_qfplM5m" resolve="Machine&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMhi" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM5m" />
-      <ref role="354V5p" node="4pL_qfplM5n" />
+      <ref role="354V5o" node="4pL_qfplM5m" resolve="Machine&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplM5n" resolve="Mother nature&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMhz" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM5n" />
-      <ref role="354V5p" node="4pL_qfplM5o" />
+      <ref role="354V5o" node="4pL_qfplM5n" resolve="Mother nature&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplM5o" resolve="Man barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfplMhO" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM5o" />
-      <ref role="354V5p" node="4pL_qfplM5p" />
+      <ref role="354V5o" node="4pL_qfplM5o" resolve="Man barrier" />
+      <ref role="354V5p" node="4pL_qfplM5p" resolve="Method&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMi5" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM5p" />
-      <ref role="354V5p" node="4pL_qfplM5q" />
+      <ref role="354V5o" node="4pL_qfplM5p" resolve="Method&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplM5q" resolve="Material&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMim" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM5q" />
-      <ref role="354V5p" node="4pL_qfplM5r" />
+      <ref role="354V5o" node="4pL_qfplM5q" resolve="Material&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplM5r" resolve="Management&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMBI" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplM5r" />
-      <ref role="354V5p" node="4pL_qfplMBa" />
+      <ref role="354V5o" node="4pL_qfplM5r" resolve="Management&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMBa" resolve="Top Event" />
     </node>
     <node concept="2vasRL" id="4pL_qfpCwGW" role="354S_2" />
     <node concept="354V5v" id="4pL_qfplLVg" role="354S_2">
@@ -1130,32 +1130,32 @@
       <property role="TrG5h" value="Machine&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMsk" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplLVg" />
-      <ref role="354V5p" node="4pL_qfplMd5" />
+      <ref role="354V5o" node="4pL_qfplLVg" resolve="4. Method&#10;threats" />
+      <ref role="354V5p" node="4pL_qfplMd5" resolve="Machine&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMuf" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMd9" />
-      <ref role="354V5p" node="4pL_qfplMda" />
+      <ref role="354V5o" node="4pL_qfplMd9" resolve="Material&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMda" resolve="Management&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplM_H" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMd5" />
-      <ref role="354V5p" node="4pL_qfplMd6" />
+      <ref role="354V5o" node="4pL_qfplMd5" resolve="Machine&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMd6" resolve="Mother nature&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMB2" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMd6" />
-      <ref role="354V5p" node="4pL_qfplMd7" />
+      <ref role="354V5o" node="4pL_qfplMd6" resolve="Mother nature&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMd7" resolve="Man barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfplMwP" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMd7" />
-      <ref role="354V5p" node="4pL_qfplMd8" />
+      <ref role="354V5o" node="4pL_qfplMd7" resolve="Man barrier" />
+      <ref role="354V5p" node="4pL_qfplMd8" resolve="Method&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMuw" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMd8" />
-      <ref role="354V5p" node="4pL_qfplMd9" />
+      <ref role="354V5o" node="4pL_qfplMd8" resolve="Method&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMd9" resolve="Material&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMCg" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMda" />
-      <ref role="354V5p" node="4pL_qfplMBa" />
+      <ref role="354V5o" node="4pL_qfplMda" resolve="Management&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMBa" resolve="Top Event" />
     </node>
     <node concept="2vasRL" id="4pL_qfpCzwD" role="354S_2" />
     <node concept="354V5v" id="4pL_qfplLXn" role="354S_2">
@@ -2762,32 +2762,32 @@
       <property role="TrG5h" value="Man barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfplMAL" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplLXn" />
-      <ref role="354V5p" node="4pL_qfplMnZ" />
+      <ref role="354V5o" node="4pL_qfplLXn" resolve="3. Man&#10;threats" />
+      <ref role="354V5p" node="4pL_qfplMnZ" resolve="Machine&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMAf" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMnZ" />
-      <ref role="354V5p" node="4pL_qfplMou" />
+      <ref role="354V5o" node="4pL_qfplMnZ" resolve="Machine&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMou" resolve="Mother nature&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplM$F" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMou" />
-      <ref role="354V5p" node="4pL_qfplMpb" />
+      <ref role="354V5o" node="4pL_qfplMou" resolve="Mother nature&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMpb" resolve="Man barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfplMxU" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMpb" />
-      <ref role="354V5p" node="4pL_qfplMpc" />
+      <ref role="354V5o" node="4pL_qfplMpb" resolve="Man barrier" />
+      <ref role="354V5p" node="4pL_qfplMpc" resolve="Method&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMv2" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMpc" />
-      <ref role="354V5p" node="4pL_qfplMpd" />
+      <ref role="354V5o" node="4pL_qfplMpc" resolve="Method&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMpd" resolve="Material&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMtH" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMpd" />
-      <ref role="354V5p" node="4pL_qfplMri" />
+      <ref role="354V5o" node="4pL_qfplMpd" resolve="Material&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMri" resolve="Management&#10;barriers" />
     </node>
     <node concept="355BHh" id="4pL_qfplMCM" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMri" />
-      <ref role="354V5p" node="4pL_qfplMBa" />
+      <ref role="354V5o" node="4pL_qfplMri" resolve="Management&#10;barriers" />
+      <ref role="354V5p" node="4pL_qfplMBa" resolve="Top Event" />
     </node>
     <node concept="2vasRL" id="4pL_qfpCIAF" role="354S_2" />
     <node concept="354V5t" id="4pL_qfplMBa" role="354S_2">
@@ -2812,28 +2812,28 @@
       <property role="TrG5h" value="Management&#10;barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfpm4av" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMBa" />
-      <ref role="354V5p" node="4pL_qfpm47c" />
+      <ref role="354V5o" node="4pL_qfplMBa" resolve="Top Event" />
+      <ref role="354V5p" node="4pL_qfpm47c" resolve="Management&#10;barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfpm4aD" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMBa" />
-      <ref role="354V5p" node="4pL_qfpm47m" />
+      <ref role="354V5o" node="4pL_qfplMBa" resolve="Top Event" />
+      <ref role="354V5p" node="4pL_qfpm47m" resolve="Management&#10;barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfpm4aN" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMBa" />
-      <ref role="354V5p" node="4pL_qfpm47w" />
+      <ref role="354V5o" node="4pL_qfplMBa" resolve="Top Event" />
+      <ref role="354V5p" node="4pL_qfpm47w" resolve="Management&#10;barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfpm4aX" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMBa" />
-      <ref role="354V5p" node="4pL_qfpm49q" />
+      <ref role="354V5o" node="4pL_qfplMBa" resolve="Top Event" />
+      <ref role="354V5p" node="4pL_qfpm49q" resolve="Management&#10;barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfpm4b7" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMBa" />
-      <ref role="354V5p" node="4pL_qfpm49T" />
+      <ref role="354V5o" node="4pL_qfplMBa" resolve="Top Event" />
+      <ref role="354V5p" node="4pL_qfpm49T" resolve="Management&#10;barrier" />
     </node>
     <node concept="355BHh" id="4pL_qfpm4bh" role="354S_2">
-      <ref role="354V5o" node="4pL_qfplMBa" />
-      <ref role="354V5p" node="4pL_qfpm472" />
+      <ref role="354V5o" node="4pL_qfplMBa" resolve="Top Event" />
+      <ref role="354V5p" node="4pL_qfpm472" resolve="Management&#10;barrier" />
     </node>
     <node concept="2vasRL" id="4pL_qfpCBTp" role="354S_2" />
     <node concept="2vasRL" id="4pL_qfpCCiA" role="354S_2" />

@@ -142,7 +142,7 @@
         <node concept="19SUe$" id="41_NtXJr1pC" role="19SJt6" />
         <node concept="J3_W4" id="41_NtXJr1pA" role="19SJt6">
           <node concept="J0Acc" id="41_NtXJr1pG" role="J3_WZ">
-            <ref role="J0Acb" node="41_NtXJqTb2" />
+            <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
           </node>
         </node>
         <node concept="19SUe$" id="41_NtXJr1pB" role="19SJt6">
@@ -157,10 +157,10 @@
         <node concept="19SUe$" id="41_NtXJr1pJ" role="19SJt6" />
       </node>
       <node concept="J0Acc" id="41_NtXJqTbn" role="J0Acf">
-        <ref role="J0Acb" node="41_NtXJqTb2" />
+        <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
       </node>
       <node concept="J3GH$" id="41_NtXJqTbp" role="J3GHC">
-        <ref role="J3GHz" node="41_NtXJqg0w" />
+        <ref role="J3GHz" node="41_NtXJqg0w" resolve="Highway" />
       </node>
     </node>
     <node concept="J0C2d" id="41_NtXJvqA3" role="J0DCR">
@@ -169,7 +169,7 @@
         <node concept="19SUe$" id="41_NtXJvqA5" role="19SJt6" />
         <node concept="J3_W4" id="41_NtXJvqA6" role="19SJt6">
           <node concept="J0Acc" id="41_NtXJvqA7" role="J3_WZ">
-            <ref role="J0Acb" node="41_NtXJqTb2" />
+            <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
           </node>
         </node>
         <node concept="19SUe$" id="41_NtXJvqA8" role="19SJt6">
@@ -184,10 +184,10 @@
         <node concept="19SUe$" id="41_NtXJvqAb" role="19SJt6" />
       </node>
       <node concept="J0Acc" id="41_NtXJvqAc" role="J0Acf">
-        <ref role="J0Acb" node="41_NtXJqTb2" />
+        <ref role="J0Acb" node="41_NtXJqTb2" resolve="Ego" />
       </node>
       <node concept="J3GH$" id="41_NtXJvqAd" role="J3GHC">
-        <ref role="J3GHz" node="41_NtXJqg0w" />
+        <ref role="J3GHz" node="41_NtXJqg0w" resolve="Highway" />
       </node>
     </node>
   </node>

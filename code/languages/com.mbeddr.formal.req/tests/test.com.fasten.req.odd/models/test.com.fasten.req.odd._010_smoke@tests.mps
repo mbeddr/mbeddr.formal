@@ -98,15 +98,15 @@
       <node concept="3SOIZ$" id="6AHcWlQmDWp" role="1qenE9">
         <property role="TrG5h" value="test_odd" />
         <node concept="3fY04A" id="6AHcWlQmDWr" role="3SOIZ9">
-          <ref role="3fY04_" to="yl1k:6AHcWlQl_DD" />
+          <ref role="3fY04_" to="yl1k:6AHcWlQl_DD" resolve="test_ontology" />
           <node concept="3fWYEE" id="6AHcWlQmDWv" role="3fY04B">
             <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
             <node concept="MFvB7" id="6AHcWlQmDWw" role="3fWY_o">
-              <ref role="MFvBS" to="yl1k:6AHcWlQl_DH" />
+              <ref role="MFvBS" to="yl1k:6AHcWlQl_DH" resolve="Person" />
             </node>
             <node concept="3fZHMl" id="6AHcWlQmDWx" role="3fWwZA">
               <node concept="MFvB7" id="6AHcWlQmDWy" role="3fZHMq">
-                <ref role="MFvBS" to="yl1k:6AHcWlQl_DK" />
+                <ref role="MFvBS" to="yl1k:6AHcWlQl_DK" resolve="Man" />
               </node>
               <node concept="nE0YL" id="74lc1eArVvo" role="3fZHMo">
                 <node concept="2IPVmt" id="74lc1eArVvE" role="2H9Ial">
@@ -114,14 +114,14 @@
                 </node>
                 <node concept="1ziNjN" id="6AHcWlQrfSC" role="2H9Iav">
                   <node concept="2rjai2" id="6AHcWlQrfSK" role="1ziNjJ">
-                    <ref role="2rjai3" to="yl1k:6AHcWlQl_DU" />
+                    <ref role="2rjai3" to="yl1k:6AHcWlQl_DU" resolve="Age" />
                     <node concept="2rqxmr" id="6AHcWlQrhdV" role="lGtFl">
-                      <ref role="1BTHP0" to="yl1k:6AHcWlQl_DU" />
+                      <ref role="1BTHP0" to="yl1k:6AHcWlQl_DU" resolve="Age" />
                       <node concept="3KTrbX" id="6AHcWlQrhdW" role="3KTr4d">
-                        <ref role="3AHY9a" to="yl1k:6AHcWlQl_DU" />
+                        <ref role="3AHY9a" to="yl1k:6AHcWlQl_DU" resolve="Age" />
                       </node>
                       <node concept="3KTrbX" id="6AHcWlQrhdX" role="3KTr4d">
-                        <ref role="3AHY9a" to="yl1k:6AHcWlQlXG8" />
+                        <ref role="3AHY9a" to="yl1k:6AHcWlQlXG8" resolve="Address" />
                       </node>
                     </node>
                   </node>
@@ -133,11 +133,11 @@
           <node concept="3fWYEE" id="6AHcWlQrfT4" role="3fY04B">
             <property role="3fWJIx" value="3RNDPbM0lNB/allow_only" />
             <node concept="MFvB7" id="6AHcWlQrfT5" role="3fWY_o">
-              <ref role="MFvBS" to="yl1k:6AHcWlQl_DR" />
+              <ref role="MFvBS" to="yl1k:6AHcWlQl_DR" resolve="PersonCharacteristics" />
             </node>
             <node concept="3fZHMl" id="6AHcWlQrfT6" role="3fWwZA">
               <node concept="MFvB7" id="6AHcWlQrfT7" role="3fZHMq">
-                <ref role="MFvBS" to="yl1k:6AHcWlQlXG8" />
+                <ref role="MFvBS" to="yl1k:6AHcWlQlXG8" resolve="Address" />
               </node>
               <node concept="nE0YL" id="6AHcWlQrfT8" role="3fZHMo">
                 <node concept="2IPVmt" id="6AHcWlQrfT9" role="2H9Ial">
@@ -145,9 +145,9 @@
                 </node>
                 <node concept="1ziNjN" id="6AHcWlQrfTa" role="2H9Iav">
                   <node concept="2rjai2" id="6AHcWlQrfTb" role="1ziNjJ">
-                    <ref role="2rjai3" to="yl1k:6AHcWlQl_DU" />
+                    <ref role="2rjai3" to="yl1k:6AHcWlQl_DU" resolve="Age" />
                     <node concept="2rqxmr" id="6AHcWlQrhgI" role="lGtFl">
-                      <ref role="1BTHP0" to="yl1k:6AHcWlQl_DU" />
+                      <ref role="1BTHP0" to="yl1k:6AHcWlQl_DU" resolve="Age" />
                     </node>
                     <node concept="7CXmI" id="6AHcWlQri$M" role="lGtFl">
                       <node concept="1TM$A" id="6AHcWlQri$N" role="7EUXB" />

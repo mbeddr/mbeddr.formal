@@ -196,31 +196,31 @@
       <node concept="1PLGxJ" id="3acQo$0xjPT" role="1PLElB">
         <ref role="1PLGwE" node="3acQo$0xjU8" resolve="SenderUml" />
         <node concept="1PLKG7" id="3acQo$0xjQ1" role="1PLCo$">
-          <ref role="1jQAtN" node="3acQo$0xjPR" />
+          <ref role="1jQAtN" node="3acQo$0xjPR" resolve="noisy" />
           <node concept="1PNyZM" id="3acQo$0xjQb" role="1PLCoy">
-            <ref role="2VPQEx" node="3acQo$0xjPO" />
+            <ref role="2VPQEx" node="3acQo$0xjPO" resolve="message altered" />
             <node concept="wX11C" id="P3d8mI1Jbr" role="wX11E" />
           </node>
         </node>
         <node concept="1PLKG7" id="3acQo$0xjQ2" role="1PLCo$">
-          <ref role="1jQAtN" node="3acQo$0xjPS" />
+          <ref role="1jQAtN" node="3acQo$0xjPS" resolve="too fast" />
           <node concept="1PNyZM" id="3acQo$0xjQc" role="1PLCoy">
-            <ref role="2VPQEx" node="3acQo$0xjPN" />
+            <ref role="2VPQEx" node="3acQo$0xjPN" resolve="message loss" />
           </node>
         </node>
       </node>
       <node concept="1PLGxJ" id="3acQo$0xjPU" role="1PLElB">
         <ref role="1PLGwE" node="3acQo$0xjUb" resolve="ReceiverUml" />
         <node concept="1PLKG7" id="3acQo$0xjQ3" role="1PLCo$">
-          <ref role="1jQAtN" node="3acQo$0xjPP" />
+          <ref role="1jQAtN" node="3acQo$0xjPP" resolve="blocked" />
           <node concept="1PNyZM" id="3acQo$0xjQd" role="1PLCoy">
-            <ref role="2VPQEx" node="3acQo$0xjPN" />
+            <ref role="2VPQEx" node="3acQo$0xjPN" resolve="message loss" />
           </node>
         </node>
         <node concept="1PLKG7" id="3acQo$0xjQ4" role="1PLCo$">
-          <ref role="1jQAtN" node="3acQo$0xjPQ" />
+          <ref role="1jQAtN" node="3acQo$0xjPQ" resolve="too slow" />
           <node concept="1PNyZM" id="3acQo$0xjQe" role="1PLCoy">
-            <ref role="2VPQEx" node="3acQo$0xjPN" />
+            <ref role="2VPQEx" node="3acQo$0xjPN" resolve="message loss" />
           </node>
         </node>
       </node>
@@ -238,7 +238,7 @@
         </node>
         <node concept="2BiYKZ" id="10t3kqDeSVT" role="wNkl_">
           <node concept="2BiYKX" id="10t3kqDeSVU" role="2BiYKW">
-            <ref role="2BiYK2" node="3acQo$0xjPN" />
+            <ref role="2BiYK2" node="3acQo$0xjPN" resolve="message loss" />
           </node>
         </node>
       </node>
@@ -251,10 +251,10 @@
         </node>
         <node concept="2BiYKZ" id="10t3kqDeSVY" role="wNkl_">
           <node concept="2BiYKX" id="10t3kqDeSVZ" role="2BiYKW">
-            <ref role="2BiYK2" node="3acQo$0xjPO" />
+            <ref role="2BiYK2" node="3acQo$0xjPO" resolve="message altered" />
           </node>
           <node concept="2BiYKX" id="10t3kqDeSW3" role="2BiYKW">
-            <ref role="2BiYK2" node="3acQo$0xjPN" />
+            <ref role="2BiYK2" node="3acQo$0xjPN" resolve="message loss" />
           </node>
         </node>
       </node>

@@ -208,13 +208,13 @@
       <node concept="3UnI81" id="1TeaL8Rdukn" role="3UnI9m">
         <property role="TrG5h" value="speed" />
         <node concept="1savGX" id="62cfieENpy8" role="3UnI80">
-          <ref role="1savGW" node="62cfieENpwe" />
+          <ref role="1savGW" node="62cfieENpwe" resolve="speed_t" />
         </node>
       </node>
       <node concept="3UnI9n" id="1TeaL8RdujM" role="3UnI90">
         <property role="TrG5h" value="plausibilizedSpeed" />
         <node concept="1savGX" id="3bh1RFvziCx" role="3UnI80">
-          <ref role="1savGW" node="3bh1RFvziBC" />
+          <ref role="1savGW" node="3bh1RFvziBC" resolve="plausibilizedSpeed_t" />
         </node>
       </node>
     </node>
@@ -224,13 +224,13 @@
       <node concept="3UnI81" id="62cfieENdX6" role="3UnI9m">
         <property role="TrG5h" value="speed" />
         <node concept="1savGX" id="3bh1RFvziCE" role="3UnI80">
-          <ref role="1savGW" node="3bh1RFvziBC" />
+          <ref role="1savGW" node="3bh1RFvziBC" resolve="plausibilizedSpeed_t" />
         </node>
       </node>
       <node concept="3UnI9n" id="62cfieENdX8" role="3UnI90">
         <property role="TrG5h" value="brakeCmd" />
         <node concept="1savGX" id="3bh1RFvziBi" role="3UnI80">
-          <ref role="1savGW" node="3bh1RFvziA4" />
+          <ref role="1savGW" node="3bh1RFvziA4" resolve="brake_cmd_t" />
         </node>
       </node>
     </node>
@@ -241,64 +241,64 @@
       <node concept="3Ug1AV" id="62cfieENdWS" role="3UgYNK">
         <property role="TrG5h" value="dsp" />
         <node concept="3Ug1AZ" id="62cfieENdWQ" role="3Ug1A_">
-          <ref role="3Ug1AY" node="1TeaL8RdujJ" />
+          <ref role="3Ug1AY" node="1TeaL8RdujJ" resolve="DeviceSensorsPlausibilization" />
         </node>
       </node>
       <node concept="3Ug1AV" id="62cfieENdZr" role="3UgYNK">
         <property role="TrG5h" value="br" />
         <node concept="3Ug1AZ" id="62cfieENdZp" role="3Ug1A_">
-          <ref role="3Ug1AY" node="62cfieENdX5" />
+          <ref role="3Ug1AY" node="62cfieENdX5" resolve="Braking" />
         </node>
       </node>
       <node concept="3Ug1$w" id="62cfieENdZI" role="3UgYNK">
         <property role="TrG5h" value="c1" />
         <node concept="3Ug1Ap" id="3txYam0cAc2" role="3Ug1$A">
-          <ref role="3Ug1Ao" node="62cfieENdUz" />
+          <ref role="3Ug1Ao" node="62cfieENdUz" resolve="speed" />
         </node>
         <node concept="3Ug1GC" id="62cfieENdZW" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="1TeaL8Rdukn" />
+          <ref role="3Ug1Ha" node="1TeaL8Rdukn" resolve="speed" />
           <node concept="3Ug1GJ" id="62cfieENdZV" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="62cfieENdWS" />
+            <ref role="3Ug1GI" node="62cfieENdWS" resolve="dsp" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="62cfieENe0w" role="3UgYNK">
         <property role="TrG5h" value="c2" />
         <node concept="3Ug1GC" id="62cfieENe0H" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="1TeaL8RdujM" />
+          <ref role="3Ug1Ha" node="1TeaL8RdujM" resolve="plausibilizedSpeed" />
           <node concept="3Ug1GJ" id="62cfieENe0G" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="62cfieENdWS" />
+            <ref role="3Ug1GI" node="62cfieENdWS" resolve="dsp" />
           </node>
         </node>
         <node concept="3Ug1GC" id="62cfieENe0R" role="3Ug1_r">
-          <ref role="3Ug1Ha" node="62cfieENdX6" />
+          <ref role="3Ug1Ha" node="62cfieENdX6" resolve="speed" />
           <node concept="3Ug1GJ" id="62cfieENe0Q" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="62cfieENdZr" />
+            <ref role="3Ug1GI" node="62cfieENdZr" resolve="br" />
           </node>
         </node>
       </node>
       <node concept="3Ug1$w" id="62cfieENe1C" role="3UgYNK">
         <property role="TrG5h" value="c3" />
         <node concept="3Ug1GC" id="62cfieENe1U" role="3Ug1$A">
-          <ref role="3Ug1Ha" node="62cfieENdX8" />
+          <ref role="3Ug1Ha" node="62cfieENdX8" resolve="brakeCmd" />
           <node concept="3Ug1GJ" id="62cfieENe1T" role="3Ug1Hl">
-            <ref role="3Ug1GI" node="62cfieENdZr" />
+            <ref role="3Ug1GI" node="62cfieENdZr" resolve="br" />
           </node>
         </node>
         <node concept="3Ug1Ap" id="62cfieENe23" role="3Ug1_r">
-          <ref role="3Ug1Ao" node="62cfieENdVb" />
+          <ref role="3Ug1Ao" node="62cfieENdVb" resolve="brakeCmd" />
         </node>
       </node>
       <node concept="3UnI81" id="62cfieENdUz" role="3UnI9m">
         <property role="TrG5h" value="speed" />
         <node concept="1savGX" id="1xKUpdtGjzr" role="3UnI80">
-          <ref role="1savGW" node="62cfieENpwe" />
+          <ref role="1savGW" node="62cfieENpwe" resolve="speed_t" />
         </node>
       </node>
       <node concept="3UnI9n" id="62cfieENdVb" role="3UnI90">
         <property role="TrG5h" value="brakeCmd" />
         <node concept="1savGX" id="3bh1RFvziB0" role="3UnI80">
-          <ref role="1savGW" node="3bh1RFvziA4" />
+          <ref role="1savGW" node="3bh1RFvziA4" resolve="brake_cmd_t" />
         </node>
       </node>
       <node concept="37mRI7" id="62cfieENdWb" role="lGtFl">
@@ -429,7 +429,7 @@
     <property role="TrG5h" value="_010_hiphops" />
     <node concept="Du1I4" id="62cfieENIh2" role="1POhhj">
       <node concept="1savGX" id="62cfieENIia" role="3agqmW">
-        <ref role="1savGW" node="62cfieENpwe" />
+        <ref role="1savGW" node="62cfieENpwe" resolve="speed_t" />
       </node>
       <node concept="2VUHfq" id="62cfieENIji" role="Du1I9">
         <property role="TrG5h" value="speed too low" />
@@ -447,7 +447,7 @@
     <node concept="2VURXa" id="62cfieEOvFI" role="1POhhj" />
     <node concept="Du1I4" id="62cfieEOvEB" role="1POhhj">
       <node concept="1savGX" id="3bh1RFvziCY" role="3agqmW">
-        <ref role="1savGW" node="3bh1RFvziBC" />
+        <ref role="1savGW" node="3bh1RFvziBC" resolve="plausibilizedSpeed_t" />
       </node>
       <node concept="2VUHfq" id="62cfieEOvEC" role="Du1I9">
         <property role="TrG5h" value="speed innacurate" />
@@ -459,7 +459,7 @@
     <node concept="2VURXa" id="3bh1RFvziE1" role="1POhhj" />
     <node concept="Du1I4" id="3bh1RFvziD4" role="1POhhj">
       <node concept="1savGX" id="3bh1RFvziEX" role="3agqmW">
-        <ref role="1savGW" node="3bh1RFvziA4" />
+        <ref role="1savGW" node="3bh1RFvziA4" resolve="brake_cmd_t" />
       </node>
       <node concept="2VUHfq" id="3bh1RFvziD5" role="Du1I9">
         <property role="TrG5h" value="brake force innacurate" />
@@ -470,7 +470,7 @@
     </node>
     <node concept="2VURXa" id="5g1NREKNQJV" role="1POhhj" />
     <node concept="2VUHfc" id="5g1NREKNQIM" role="1POhhj">
-      <ref role="2VUHf6" node="1TeaL8RdujJ" />
+      <ref role="2VUHf6" node="1TeaL8RdujJ" resolve="DeviceSensorsPlausibilization" />
       <node concept="2VUHfq" id="5g1NREKNQIO" role="2VUBrq">
         <property role="TrG5h" value="innacurate_computation" />
         <node concept="19SGf9" id="5g1NREKNQIQ" role="2VUHfi">
@@ -482,28 +482,28 @@
     </node>
     <node concept="2VURXa" id="1TeaL8RdXqm" role="1POhhj" />
     <node concept="DuJXM" id="1TeaL8RdXqH" role="1POhhj">
-      <ref role="DuJYV" node="1TeaL8RdujJ" />
+      <ref role="DuJYV" node="1TeaL8RdujJ" resolve="DeviceSensorsPlausibilization" />
       <node concept="DtCCM" id="62cfieEQj9X" role="DuvRR">
         <node concept="3$NFnr" id="5g1NREKOpVE" role="1hIEvT">
-          <ref role="3$NFno" node="5g1NREKNQIO" />
+          <ref role="3$NFno" node="5g1NREKNQIO" resolve="innacurate_computation" />
         </node>
         <node concept="DtHRJ" id="62cfieEQj9Z" role="1hIEvZ">
-          <ref role="DtHRG" node="62cfieEOvEC" />
+          <ref role="DtHRG" node="62cfieEOvEC" resolve="speed innacurate" />
           <node concept="3Ug1Ap" id="62cfieEQjaj" role="3anSQx">
-            <ref role="3Ug1Ao" node="1TeaL8RdujM" />
+            <ref role="3Ug1Ao" node="1TeaL8RdujM" resolve="plausibilizedSpeed" />
           </node>
         </node>
         <node concept="2vqzn0" id="4TCu33h0YVv" role="1hIEvS">
           <node concept="DtHRJ" id="3txYam0baKK" role="2H9Iav">
-            <ref role="DtHRG" node="62cfieENIjB" />
+            <ref role="DtHRG" node="62cfieENIjB" resolve="speed too high" />
             <node concept="3Ug1Ap" id="3txYam0baKL" role="3anSQx">
-              <ref role="3Ug1Ao" node="1TeaL8Rdukn" />
+              <ref role="3Ug1Ao" node="1TeaL8Rdukn" resolve="speed" />
             </node>
           </node>
           <node concept="DtHRJ" id="3txYam0baLc" role="2H9Ial">
-            <ref role="DtHRG" node="62cfieENIji" />
+            <ref role="DtHRG" node="62cfieENIji" resolve="speed too low" />
             <node concept="3Ug1Ap" id="3txYam0baLd" role="3anSQx">
-              <ref role="3Ug1Ao" node="1TeaL8Rdukn" />
+              <ref role="3Ug1Ao" node="1TeaL8Rdukn" resolve="speed" />
             </node>
           </node>
         </node>
@@ -519,36 +519,36 @@
           <property role="TrG5h" value="speed__speed too high" />
         </node>
         <node concept="21oswF" id="1gTsIm4Om7v" role="3CrHoS">
-          <ref role="21oszt" node="1gTsIm4Om7t" />
-          <ref role="21oszj" node="1gTsIm4Om7u" />
+          <ref role="21oszt" node="1gTsIm4Om7t" resolve="Or Gate 1" />
+          <ref role="21oszj" node="1gTsIm4Om7u" resolve="speed__speed too high" />
         </node>
         <node concept="21ATtL" id="1gTsIm4Om7w" role="3CrHoS">
           <property role="TrG5h" value="speed__speed too low" />
         </node>
         <node concept="21oswF" id="1gTsIm4Om7x" role="3CrHoS">
-          <ref role="21oszt" node="1gTsIm4Om7t" />
-          <ref role="21oszj" node="1gTsIm4Om7w" />
+          <ref role="21oszt" node="1gTsIm4Om7t" resolve="Or Gate 1" />
+          <ref role="21oszj" node="1gTsIm4Om7w" resolve="speed__speed too low" />
         </node>
         <node concept="cFNQA" id="1gTsIm4Om7t" role="3CrHoS">
           <property role="TrG5h" value="Or Gate 1" />
         </node>
         <node concept="21oswF" id="1gTsIm4Om7y" role="3CrHoS">
-          <ref role="21oszt" node="1gTsIm4Om7s" />
-          <ref role="21oszj" node="1gTsIm4Om7t" />
+          <ref role="21oszt" node="1gTsIm4Om7s" resolve="Or Gate 2" />
+          <ref role="21oszj" node="1gTsIm4Om7t" resolve="Or Gate 1" />
         </node>
         <node concept="21ATtL" id="1gTsIm4Om7z" role="3CrHoS">
           <property role="TrG5h" value="innacurate_computation" />
         </node>
         <node concept="21oswF" id="1gTsIm4Om7$" role="3CrHoS">
-          <ref role="21oszt" node="1gTsIm4Om7s" />
-          <ref role="21oszj" node="1gTsIm4Om7z" />
+          <ref role="21oszt" node="1gTsIm4Om7s" resolve="Or Gate 2" />
+          <ref role="21oszj" node="1gTsIm4Om7z" resolve="innacurate_computation" />
         </node>
         <node concept="cFNQA" id="1gTsIm4Om7s" role="3CrHoS">
           <property role="TrG5h" value="Or Gate 2" />
         </node>
         <node concept="21oswF" id="1gTsIm4Om7_" role="3CrHoS">
-          <ref role="21oszt" node="1gTsIm4Om7k" />
-          <ref role="21oszj" node="1gTsIm4Om7s" />
+          <ref role="21oszt" node="1gTsIm4Om7k" resolve="plausibilizedSpeed__speed innacurate" />
+          <ref role="21oszj" node="1gTsIm4Om7s" resolve="Or Gate 2" />
         </node>
         <node concept="37mRI7" id="1gTsIm4Om7C" role="lGtFl">
           <node concept="37mRIm" id="1gTsIm4Om7D" role="37mRID">
@@ -724,18 +724,18 @@
     </node>
     <node concept="2VURXa" id="3bh1RFvziHa" role="1POhhj" />
     <node concept="DuJXM" id="3bh1RFvziFV" role="1POhhj">
-      <ref role="DuJYV" node="62cfieENdX5" />
+      <ref role="DuJYV" node="62cfieENdX5" resolve="Braking" />
       <node concept="DtCCM" id="3bh1RFvziFW" role="DuvRR">
         <node concept="DtHRJ" id="3bh1RFvziFX" role="1hIEvZ">
-          <ref role="DtHRG" node="3bh1RFvziD5" />
+          <ref role="DtHRG" node="3bh1RFvziD5" resolve="brake force innacurate" />
           <node concept="3Ug1Ap" id="3bh1RFvziIc" role="3anSQx">
-            <ref role="3Ug1Ao" node="62cfieENdX8" />
+            <ref role="3Ug1Ao" node="62cfieENdX8" resolve="brakeCmd" />
           </node>
         </node>
         <node concept="DtHRJ" id="3bh1RFvziIX" role="1hIEvS">
-          <ref role="DtHRG" node="62cfieEOvEC" />
+          <ref role="DtHRG" node="62cfieEOvEC" resolve="speed innacurate" />
           <node concept="3Ug1Ap" id="3bh1RFvziIG" role="3anSQx">
-            <ref role="3Ug1Ao" node="62cfieENdX6" />
+            <ref role="3Ug1Ao" node="62cfieENdX6" resolve="speed" />
           </node>
         </node>
       </node>
@@ -750,8 +750,8 @@
           <property role="TrG5h" value="speed__speed innacurate" />
         </node>
         <node concept="21oswF" id="1gTsIm4Om8X" role="3CrHoS">
-          <ref role="21oszt" node="1gTsIm4Om8V" />
-          <ref role="21oszj" node="1gTsIm4Om8W" />
+          <ref role="21oszt" node="1gTsIm4Om8V" resolve="brakeCmd__brake force innacurate" />
+          <ref role="21oszj" node="1gTsIm4Om8W" resolve="speed__speed innacurate" />
         </node>
         <node concept="37mRI7" id="1gTsIm4Om90" role="lGtFl">
           <node concept="37mRIm" id="1gTsIm4Om91" role="37mRID">
@@ -817,24 +817,24 @@
       <property role="TrG5h" value="Or Gate 2" />
     </node>
     <node concept="21oswF" id="1gTsIm4OmaA" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Oma$" />
-      <ref role="21oszj" node="1gTsIm4Omam" />
+      <ref role="21oszt" node="1gTsIm4Oma$" resolve="Or Gate 1" />
+      <ref role="21oszj" node="1gTsIm4Omam" resolve="speed__speed too high" />
     </node>
     <node concept="21oswF" id="1gTsIm4OmaC" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Oma$" />
-      <ref role="21oszj" node="1gTsIm4Omaj" />
+      <ref role="21oszt" node="1gTsIm4Oma$" resolve="Or Gate 1" />
+      <ref role="21oszj" node="1gTsIm4Omaj" resolve="speed__speed too low" />
     </node>
     <node concept="21oswF" id="1gTsIm4OmaD" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omaz" />
-      <ref role="21oszj" node="1gTsIm4Oma$" />
+      <ref role="21oszt" node="1gTsIm4Omaz" resolve="Or Gate 2" />
+      <ref role="21oszj" node="1gTsIm4Oma$" resolve="Or Gate 1" />
     </node>
     <node concept="21oswF" id="1gTsIm4OmaF" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omaz" />
-      <ref role="21oszj" node="1gTsIm4OmaE" />
+      <ref role="21oszt" node="1gTsIm4Omaz" resolve="Or Gate 2" />
+      <ref role="21oszj" node="1gTsIm4OmaE" resolve="innacurate_computation" />
     </node>
     <node concept="21oswF" id="1gTsIm4OmaG" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omar" />
-      <ref role="21oszj" node="1gTsIm4Omaz" />
+      <ref role="21oszt" node="1gTsIm4Omar" resolve="plausibilizedSpeed__speed innacurate" />
+      <ref role="21oszj" node="1gTsIm4Omaz" resolve="Or Gate 2" />
     </node>
     <node concept="37mRI7" id="1gTsIm4Omf3" role="lGtFl">
       <node concept="37mRIm" id="1gTsIm4Omf4" role="37mRID">
@@ -1037,24 +1037,24 @@
       <property role="TrG5h" value="Or Gate 2" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omcr" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omcp" />
-      <ref role="21oszj" node="1gTsIm4Omcq" />
+      <ref role="21oszt" node="1gTsIm4Omcp" resolve="Or Gate 1" />
+      <ref role="21oszj" node="1gTsIm4Omcq" resolve="speed__speed too high" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omct" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omcp" />
-      <ref role="21oszj" node="1gTsIm4Omcs" />
+      <ref role="21oszt" node="1gTsIm4Omcp" resolve="Or Gate 1" />
+      <ref role="21oszj" node="1gTsIm4Omcs" resolve="speed__speed too low" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omcu" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omco" />
-      <ref role="21oszj" node="1gTsIm4Omcp" />
+      <ref role="21oszt" node="1gTsIm4Omco" resolve="Or Gate 2" />
+      <ref role="21oszj" node="1gTsIm4Omcp" resolve="Or Gate 1" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omcw" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omco" />
-      <ref role="21oszj" node="1gTsIm4Omcv" />
+      <ref role="21oszt" node="1gTsIm4Omco" resolve="Or Gate 2" />
+      <ref role="21oszj" node="1gTsIm4Omcv" resolve="innacurate_computation" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omcx" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omcg" />
-      <ref role="21oszj" node="1gTsIm4Omco" />
+      <ref role="21oszt" node="1gTsIm4Omcg" resolve="plausibilizedSpeed__speed innacurate" />
+      <ref role="21oszj" node="1gTsIm4Omco" resolve="Or Gate 2" />
     </node>
     <node concept="21ATtk" id="1gTsIm4Omcz" role="3CrHoS">
       <property role="TrG5h" value="brakeCmd__brake force innacurate" />
@@ -1063,24 +1063,24 @@
       <property role="TrG5h" value="speed__speed innacurate" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omc_" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omcz" />
-      <ref role="21oszj" node="1gTsIm4Omc$" />
+      <ref role="21oszt" node="1gTsIm4Omcz" resolve="brakeCmd__brake force innacurate" />
+      <ref role="21oszj" node="1gTsIm4Omc$" resolve="speed__speed innacurate" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omdk" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omcq" />
-      <ref role="21oszj" node="1gTsIm4Omcb" />
+      <ref role="21oszt" node="1gTsIm4Omcq" resolve="speed__speed too high" />
+      <ref role="21oszj" node="1gTsIm4Omcb" resolve="speed__speed too high" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omdl" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omcs" />
-      <ref role="21oszj" node="1gTsIm4Omc8" />
+      <ref role="21oszt" node="1gTsIm4Omcs" resolve="speed__speed too low" />
+      <ref role="21oszj" node="1gTsIm4Omc8" resolve="speed__speed too low" />
     </node>
     <node concept="21oswF" id="1gTsIm4Omdy" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omc$" />
-      <ref role="21oszj" node="1gTsIm4Omcg" />
+      <ref role="21oszt" node="1gTsIm4Omc$" resolve="speed__speed innacurate" />
+      <ref role="21oszj" node="1gTsIm4Omcg" resolve="plausibilizedSpeed__speed innacurate" />
     </node>
     <node concept="21oswF" id="1gTsIm4OmdT" role="3CrHoS">
-      <ref role="21oszt" node="1gTsIm4Omce" />
-      <ref role="21oszj" node="1gTsIm4Omcz" />
+      <ref role="21oszt" node="1gTsIm4Omce" resolve="brakeCmd__brake force innacurate" />
+      <ref role="21oszj" node="1gTsIm4Omcz" resolve="brakeCmd__brake force innacurate" />
     </node>
     <node concept="37mRI7" id="1gTsIm4OmdV" role="lGtFl">
       <node concept="37mRIm" id="1gTsIm4OmdW" role="37mRID">

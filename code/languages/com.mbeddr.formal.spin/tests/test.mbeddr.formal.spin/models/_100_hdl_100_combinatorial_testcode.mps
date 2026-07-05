@@ -50,14 +50,14 @@
       <concept id="5285453794053229581" name="com.mbeddr.formal.spin.structure.StringLiteral" flags="ng" index="2m4jwP">
         <property id="5285453794053229582" name="value" index="2m4jwQ" />
       </concept>
-      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
+      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ngI" index="2m6DZO">
         <reference id="5285453794052877261" name="var" index="2m6DZP" />
       </concept>
       <concept id="3050019586774684031" name="com.mbeddr.formal.spin.structure.EqualsExpression" flags="ng" index="2xSSBo" />
       <concept id="5430620409972500087" name="com.mbeddr.formal.spin.structure.CommentLine" flags="ng" index="Pedoa">
         <property id="5430620409972500140" name="text" index="Pedrh" />
       </concept>
-      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
+      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ngI" index="1a0DGj">
         <child id="2291855968617420240" name="tpe" index="1a0DGc" />
       </concept>
       <concept id="2291855968616790990" name="com.mbeddr.formal.spin.structure.NotExpression" flags="ng" index="1a3nki" />
@@ -120,7 +120,7 @@
         </node>
         <node concept="1pNe7e" id="5SGsxw7SsN5" role="1pNe79">
           <node concept="1a0deV" id="5SGsxw7StK$" role="1pNe7f">
-            <ref role="2m6DZP" node="5SGsxw7S9d4" />
+            <ref role="2m6DZP" node="5SGsxw7S9d4" resolve="charVar" />
           </node>
           <node concept="1a7J9y" id="5SGsxw7SsN9" role="1pNe72">
             <node concept="lAZ_c" id="5SGsxw7StKG" role="1a7J9z">
@@ -171,7 +171,7 @@
             </node>
           </node>
           <node concept="1a0deV" id="5SGsxw7StNs" role="1pNe7f">
-            <ref role="2m6DZP" node="5SGsxw7S9e0" />
+            <ref role="2m6DZP" node="5SGsxw7S9e0" resolve="doubleVar" />
           </node>
         </node>
         <node concept="1pNe7e" id="5SGsxw7StPW" role="1pNe79">
@@ -205,7 +205,7 @@
             </node>
           </node>
           <node concept="1a0deV" id="5SGsxw7StQN" role="1pNe7f">
-            <ref role="2m6DZP" node="5SGsxw7S9eC" />
+            <ref role="2m6DZP" node="5SGsxw7S9eC" resolve="intVar" />
           </node>
         </node>
       </node>
@@ -220,7 +220,7 @@
               <node concept="kzIJX" id="5SGsxw7Su2N" role="2H9Iav">
                 <node concept="2xSSBo" id="5SGsxw7Su2O" role="2H9Iav">
                   <node concept="1a0deV" id="5SGsxw7StYc" role="2H9Iav">
-                    <ref role="2m6DZP" node="5SGsxw7S9d4" />
+                    <ref role="2m6DZP" node="5SGsxw7S9d4" resolve="charVar" />
                   </node>
                   <node concept="lAZ_c" id="5SGsxw7StYE" role="2H9Ial">
                     <property role="lAZ$A" value="b" />
@@ -228,7 +228,7 @@
                 </node>
                 <node concept="2xSSBo" id="5SGsxw7Su2P" role="2H9Ial">
                   <node concept="1a0deV" id="5SGsxw7StZ7" role="2H9Iav">
-                    <ref role="2m6DZP" node="5SGsxw7S9e0" />
+                    <ref role="2m6DZP" node="5SGsxw7S9e0" resolve="doubleVar" />
                   </node>
                   <node concept="2IPVmt" id="5SGsxw7Su2Q" role="2H9Ial">
                     <property role="2IPVms" value="2.2" />
@@ -237,7 +237,7 @@
               </node>
               <node concept="2xSSBo" id="5SGsxw7Su2R" role="2H9Ial">
                 <node concept="1a0deV" id="5SGsxw7Su0n" role="2H9Iav">
-                  <ref role="2m6DZP" node="5SGsxw7S9eC" />
+                  <ref role="2m6DZP" node="5SGsxw7S9eC" resolve="intVar" />
                 </node>
                 <node concept="2IPVmt" id="5SGsxw7Su2S" role="2H9Ial">
                   <property role="2IPVms" value="2" />
@@ -257,7 +257,7 @@
             <node concept="kzIJX" id="5SGsxw7Su6d" role="32OYtT">
               <node concept="2xSSBo" id="5SGsxw7Su6e" role="2H9Iav">
                 <node concept="1a0deV" id="5SGsxw7Su6f" role="2H9Iav">
-                  <ref role="2m6DZP" node="5SGsxw7S9d4" />
+                  <ref role="2m6DZP" node="5SGsxw7S9d4" resolve="charVar" />
                 </node>
                 <node concept="lAZ_c" id="5SGsxw7Su6g" role="2H9Ial">
                   <property role="lAZ$A" value="b" />
@@ -265,7 +265,7 @@
               </node>
               <node concept="2xSSBo" id="5SGsxw7Su6h" role="2H9Ial">
                 <node concept="1a0deV" id="5SGsxw7Su6i" role="2H9Iav">
-                  <ref role="2m6DZP" node="5SGsxw7S9e0" />
+                  <ref role="2m6DZP" node="5SGsxw7S9e0" resolve="doubleVar" />
                 </node>
                 <node concept="2IPVmt" id="5SGsxw7Su6j" role="2H9Ial">
                   <property role="2IPVms" value="2.2" />
@@ -303,7 +303,7 @@
         </node>
         <node concept="1pNe7e" id="4ZxQD5y9KCG" role="1pNe79">
           <node concept="1a0deV" id="4ZxQD5y9KCH" role="1pNe7f">
-            <ref role="2m6DZP" node="4ZxQD5y9KCy" />
+            <ref role="2m6DZP" node="4ZxQD5y9KCy" resolve="charVar" />
           </node>
           <node concept="1a7J9y" id="4ZxQD5y9KCI" role="1pNe72">
             <node concept="lAZ_c" id="4ZxQD5y9KCJ" role="1a7J9z">
@@ -354,7 +354,7 @@
             </node>
           </node>
           <node concept="1a0deV" id="4ZxQD5y9KCZ" role="1pNe7f">
-            <ref role="2m6DZP" node="4ZxQD5y9KC$" />
+            <ref role="2m6DZP" node="4ZxQD5y9KC$" resolve="doubleVar" />
           </node>
         </node>
         <node concept="1pNe7e" id="4ZxQD5y9KD0" role="1pNe79">
@@ -388,7 +388,7 @@
             </node>
           </node>
           <node concept="1a0deV" id="4ZxQD5y9KDb" role="1pNe7f">
-            <ref role="2m6DZP" node="4ZxQD5y9KCA" />
+            <ref role="2m6DZP" node="4ZxQD5y9KCA" resolve="intVar" />
           </node>
         </node>
       </node>
@@ -398,13 +398,13 @@
           <property role="2m4jwQ" value="charVar=%d, doubleVar=%f, intVar=%d\n" />
         </node>
         <node concept="1a0deV" id="4ZxQD5yaHK2" role="1DWSpv">
-          <ref role="2m6DZP" node="4ZxQD5y9KCy" />
+          <ref role="2m6DZP" node="4ZxQD5y9KCy" resolve="charVar" />
         </node>
         <node concept="1a0deV" id="4ZxQD5yaJmk" role="1DWSpv">
-          <ref role="2m6DZP" node="4ZxQD5y9KC$" />
+          <ref role="2m6DZP" node="4ZxQD5y9KC$" resolve="doubleVar" />
         </node>
         <node concept="1a0deV" id="4ZxQD5yaJZn" role="1DWSpv">
-          <ref role="2m6DZP" node="4ZxQD5y9KCA" />
+          <ref role="2m6DZP" node="4ZxQD5y9KCA" resolve="intVar" />
         </node>
         <node concept="3NXOOs" id="4ZxQD5yaKXJ" role="I1rlX">
           <property role="3N1Lgt" value="logs/_020_combinatorial_save_space.txt" />

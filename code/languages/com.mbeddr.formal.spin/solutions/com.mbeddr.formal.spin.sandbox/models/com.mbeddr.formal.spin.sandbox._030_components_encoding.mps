@@ -16,10 +16,10 @@
       <concept id="5285453794052877370" name="com.mbeddr.formal.spin.structure.ArgumentRef" flags="ng" index="2m6Dw2" />
       <concept id="5285453794052877353" name="com.mbeddr.formal.spin.structure.LocalVarRef" flags="ng" index="2m6Dwh" />
       <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.PromelaLocalVariableDeclaration" flags="ng" index="2m6DXv" />
-      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
+      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ngI" index="2m6DZO">
         <reference id="5285453794052877261" name="var" index="2m6DZP" />
       </concept>
-      <concept id="5285453794052877263" name="com.mbeddr.formal.spin.structure.IVariableDeclaration" flags="ng" index="2m6DZR">
+      <concept id="5285453794052877263" name="com.mbeddr.formal.spin.structure.IVariableDeclaration" flags="ngI" index="2m6DZR">
         <child id="7611646782271350980" name="init" index="3WDmyJ" />
       </concept>
       <concept id="5285453794052621232" name="com.mbeddr.formal.spin.structure.ArgumentDeclaration" flags="ng" index="2mpJu8" />
@@ -55,7 +55,7 @@
         <reference id="4613921340552778838" name="proc" index="Xeull" />
         <child id="4613921340552778841" name="args" index="Xeulq" />
       </concept>
-      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
+      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ngI" index="1a0DGj">
         <child id="2291855968617420240" name="tpe" index="1a0DGc" />
       </concept>
       <concept id="1112787102640204567" name="com.mbeddr.formal.spin.structure.ChoiceStatement" flags="ng" index="1kW0bI" />
@@ -109,7 +109,7 @@
             <node concept="XdJ7S" id="4eQ$0qkj9dR" role="2xXWtj">
               <node concept="1AC3W8" id="4eQ$0qkj9dZ" role="XdJ0b">
                 <node concept="2m6Dw2" id="4eQ$0qkj9dQ" role="1AC3W9">
-                  <ref role="2m6DZP" node="4eQ$0qkeShC" />
+                  <ref role="2m6DZP" node="4eQ$0qkeShC" resolve="out_ping" />
                 </node>
                 <node concept="2IPVmt" id="4eQ$0qkj9tY" role="1AC3Wb">
                   <property role="2IPVms" value="1" />
@@ -120,10 +120,10 @@
           <node concept="2xXWtg" id="4eQ$0qkf4SB" role="2xZCTC">
             <node concept="1Aw419" id="4eQ$0qkf5S4" role="2xXZyI">
               <node concept="2m6Dw2" id="4eQ$0qkf5Cc" role="1Aw4vi">
-                <ref role="2m6DZP" node="4eQ$0qkeQME" />
+                <ref role="2m6DZP" node="4eQ$0qkeQME" resolve="in_pong" />
               </node>
               <node concept="2m6Dwh" id="4eQ$0qkf681" role="1Aw4vc">
-                <ref role="2m6DZP" node="4eQ$0qkf2aN" />
+                <ref role="2m6DZP" node="4eQ$0qkf2aN" resolve="msg" />
               </node>
             </node>
             <node concept="2mpP4x" id="4eQ$0qkf6BC" role="2xXWtj">
@@ -161,7 +161,7 @@
             <node concept="XdJ7S" id="4eQ$0qkj4fQ" role="2xXWtj">
               <node concept="1AC3W8" id="4eQ$0qkj4fY" role="XdJ0b">
                 <node concept="2m6Dw2" id="4eQ$0qkj4fP" role="1AC3W9">
-                  <ref role="2m6DZP" node="4eQ$0qkeXdB" />
+                  <ref role="2m6DZP" node="4eQ$0qkeXdB" resolve="out_pong" />
                 </node>
                 <node concept="2IPVmt" id="4eQ$0qkj4vX" role="1AC3Wb">
                   <property role="2IPVms" value="1" />
@@ -172,10 +172,10 @@
           <node concept="2xXWtg" id="4eQ$0qkfbzW" role="2xZCTC">
             <node concept="1Aw419" id="4eQ$0qkfbzX" role="2xXZyI">
               <node concept="2m6Dw2" id="4eQ$0qkfjfT" role="1Aw4vi">
-                <ref role="2m6DZP" node="4eQ$0qkeXd_" />
+                <ref role="2m6DZP" node="4eQ$0qkeXd_" resolve="in_ping" />
               </node>
               <node concept="2m6Dwh" id="4eQ$0qkfbzZ" role="1Aw4vc">
-                <ref role="2m6DZP" node="4eQ$0qkfbzT" />
+                <ref role="2m6DZP" node="4eQ$0qkfbzT" resolve="msg" />
               </node>
             </node>
             <node concept="2mpP4x" id="4eQ$0qkfb$0" role="2xXWtj">
@@ -216,23 +216,23 @@
         </node>
         <node concept="XdJ7S" id="4eQ$0qkqs44" role="2mpP4z">
           <node concept="Xeulf" id="4eQ$0qkqs45" role="XdJ0b">
-            <ref role="Xeull" node="3VQuWWZYGs" />
+            <ref role="Xeull" node="3VQuWWZYGs" resolve="ping_component" />
             <node concept="2m6Dwh" id="4eQ$0qkqs46" role="Xeulq">
-              <ref role="2m6DZP" node="4eQ$0qkfEoj" />
+              <ref role="2m6DZP" node="4eQ$0qkfEoj" resolve="pong_to_ping" />
             </node>
             <node concept="2m6Dwh" id="4eQ$0qkqs47" role="Xeulq">
-              <ref role="2m6DZP" node="4eQ$0qkfk2V" />
+              <ref role="2m6DZP" node="4eQ$0qkfk2V" resolve="ping_to_pong" />
             </node>
           </node>
         </node>
         <node concept="XdJ7S" id="4eQ$0qkqs48" role="2mpP4z">
           <node concept="Xeulf" id="4eQ$0qkqs49" role="XdJ0b">
-            <ref role="Xeull" node="4eQ$0qkeXd$" />
+            <ref role="Xeull" node="4eQ$0qkeXd$" resolve="pong_component" />
             <node concept="2m6Dwh" id="4eQ$0qkqs4a" role="Xeulq">
-              <ref role="2m6DZP" node="4eQ$0qkfk2V" />
+              <ref role="2m6DZP" node="4eQ$0qkfk2V" resolve="ping_to_pong" />
             </node>
             <node concept="2m6Dwh" id="4eQ$0qkqs4b" role="Xeulq">
-              <ref role="2m6DZP" node="4eQ$0qkfEoj" />
+              <ref role="2m6DZP" node="4eQ$0qkfEoj" resolve="pong_to_ping" />
             </node>
           </node>
         </node>

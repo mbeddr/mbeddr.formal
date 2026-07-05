@@ -33,7 +33,7 @@
     <property role="TrG5h" value="tree map" />
     <property role="2xYCaB" value="200" />
     <property role="2xYCe7" value="200" />
-    <ref role="1lHy9I" to="yd4s:3GRi4m$r9r_" />
+    <ref role="1lHy9I" to="yd4s:3GRi4m$r9r_" resolve="G1" />
     <node concept="3VsKOn" id="5ODpABtJJzb" role="2TiK2x">
       <ref role="3VsUkX" to="e90:1wp5V2xiScY" resolve="GoalsWithSolutionsTreeMapBuilder" />
     </node>

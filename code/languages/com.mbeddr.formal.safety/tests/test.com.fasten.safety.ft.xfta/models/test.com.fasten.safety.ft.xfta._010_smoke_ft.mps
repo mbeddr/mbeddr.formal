@@ -33,7 +33,7 @@
       </concept>
     </language>
     <language id="091b20ea-7bf0-41d6-8e6e-4460a9bd8121" name="com.fasten.safety.ft.xfta_gen">
-      <concept id="6437538155643161278" name="com.fasten.safety.ft.xfta_gen.structure.ICommandWithOptions" flags="ng" index="atf1A">
+      <concept id="6437538155643161278" name="com.fasten.safety.ft.xfta_gen.structure.ICommandWithOptions" flags="ngI" index="atf1A">
         <child id="6437538155643161279" name="options" index="atf1B" />
       </concept>
       <concept id="8928763027638353956" name="com.fasten.safety.ft.xfta_gen.structure.XFTAScriptPlainTextCommand" flags="ng" index="2TVXqe">
@@ -66,7 +66,7 @@
         <property id="3213712147579727499" name="fileName" index="3Ugoyw" />
         <property id="3213712147579799204" name="mode" index="3UgQ2f" />
       </concept>
-      <concept id="3213712147579727507" name="com.fasten.safety.ft.xfta_gen.structure.IGenerateOutput" flags="ng" index="3UgoyS">
+      <concept id="3213712147579727507" name="com.fasten.safety.ft.xfta_gen.structure.IGenerateOutput" flags="ngI" index="3UgoyS">
         <child id="3213712147579727508" name="output" index="3UgoyZ" />
       </concept>
       <concept id="3213712147579799119" name="com.fasten.safety.ft.xfta_gen.structure.PrintMinimalCutsets" flags="ng" index="3UgQ1$">
@@ -256,16 +256,16 @@
       </node>
     </node>
     <node concept="21oswF" id="3oGITgu_n$U" role="3CrHoS">
-      <ref role="21oszj" node="3oGITgu_n$d" />
-      <ref role="21oszt" node="3oGITgu_n$8" />
+      <ref role="21oszj" node="3oGITgu_n$d" resolve="And Gate 1" />
+      <ref role="21oszt" node="3oGITgu_n$8" resolve="_010_and_gate_top_event" />
     </node>
     <node concept="21oswF" id="3oGITgu_n_S" role="3CrHoS">
-      <ref role="21oszt" node="3oGITgu_n$d" />
-      <ref role="21oszj" node="3oGITgu_n$z" />
+      <ref role="21oszt" node="3oGITgu_n$d" resolve="And Gate 1" />
+      <ref role="21oszj" node="3oGITgu_n$z" resolve="basic event 2" />
     </node>
     <node concept="21oswF" id="3oGITgu_n_Y" role="3CrHoS">
-      <ref role="21oszj" node="3oGITgu_n$o" />
-      <ref role="21oszt" node="3oGITgu_n$d" />
+      <ref role="21oszj" node="3oGITgu_n$o" resolve="basic event 1" />
+      <ref role="21oszt" node="3oGITgu_n$d" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="3oGITgu_nAT" role="3CrHoS" />
   </node>
@@ -290,16 +290,16 @@
       </node>
     </node>
     <node concept="21oswF" id="5sUzoS9Hb7R" role="3CrHoS">
-      <ref role="21oszt" node="5sUzoS9Hb7L" />
-      <ref role="21oszj" node="5sUzoS9Hb7M" />
+      <ref role="21oszt" node="5sUzoS9Hb7L" resolve="_020_or_gate_top_event" />
+      <ref role="21oszj" node="5sUzoS9Hb7M" resolve="Or Gate 1" />
     </node>
     <node concept="21oswF" id="5sUzoS9Hb7S" role="3CrHoS">
-      <ref role="21oszj" node="5sUzoS9Hb7N" />
-      <ref role="21oszt" node="5sUzoS9Hb7M" />
+      <ref role="21oszj" node="5sUzoS9Hb7N" resolve="basic event 1" />
+      <ref role="21oszt" node="5sUzoS9Hb7M" resolve="Or Gate 1" />
     </node>
     <node concept="21oswF" id="5sUzoS9Hb7T" role="3CrHoS">
-      <ref role="21oszj" node="5sUzoS9Hb7P" />
-      <ref role="21oszt" node="5sUzoS9Hb7M" />
+      <ref role="21oszj" node="5sUzoS9Hb7P" resolve="basic event 2" />
+      <ref role="21oszt" node="5sUzoS9Hb7M" resolve="Or Gate 1" />
     </node>
     <node concept="37mRI7" id="5sUzoS9Hbr7" role="lGtFl">
       <node concept="37mRIm" id="5sUzoS9Hbr8" role="37mRID">
@@ -409,14 +409,14 @@
   <node concept="3Unl$E" id="2MppyJmNcq_">
     <property role="TrG5h" value="_010_and_gate_script" />
     <node concept="3Unl$P" id="2MppyJmNcqA" role="3Unl$J">
-      <ref role="3Unl$v" node="3oGITgu_n$7" />
+      <ref role="3Unl$v" node="3oGITgu_n$7" resolve="_010_and_gate" />
     </node>
     <node concept="3Unl_y" id="2MppyJmNcqC" role="3Unl$J" />
     <node concept="3UniOE" id="2MppyJmPR9Z" role="3Unl$J">
-      <ref role="3UniOC" node="3oGITgu_n$8" />
+      <ref role="3UniOC" node="3oGITgu_n$8" resolve="_010_and_gate_top_event" />
     </node>
     <node concept="3Unl_R" id="2MppyJmNcqF" role="3Unl$J">
-      <ref role="3Unl_b" node="3oGITgu_n$8" />
+      <ref role="3Unl_b" node="3oGITgu_n$8" resolve="_010_and_gate_top_event" />
       <node concept="3Ugoyx" id="2MppyJmQV$P" role="3UgoyZ">
         <property role="3Ugoyw" value="_010_and_gate_out.tsv" />
       </node>
@@ -428,14 +428,14 @@
   <node concept="3Unl$E" id="2MppyJmTn5z">
     <property role="TrG5h" value="_020_or_gate_script" />
     <node concept="3Unl$P" id="2MppyJmTn5$" role="3Unl$J">
-      <ref role="3Unl$v" node="5sUzoS9Ha$k" />
+      <ref role="3Unl$v" node="5sUzoS9Ha$k" resolve="_020_or_gate" />
     </node>
     <node concept="3Unl_y" id="2MppyJmTn5_" role="3Unl$J" />
     <node concept="3UniOE" id="2MppyJmTn5A" role="3Unl$J">
-      <ref role="3UniOC" node="5sUzoS9Hb7L" />
+      <ref role="3UniOC" node="5sUzoS9Hb7L" resolve="_020_or_gate_top_event" />
     </node>
     <node concept="3Unl_R" id="2MppyJmTn5B" role="3Unl$J">
-      <ref role="3Unl_b" node="5sUzoS9Hb7L" />
+      <ref role="3Unl_b" node="5sUzoS9Hb7L" resolve="_020_or_gate_top_event" />
       <node concept="3Ugoyx" id="2MppyJmTn5C" role="3UgoyZ">
         <property role="3Ugoyw" value="_020_or_gate_out.tsv" />
       </node>
@@ -465,16 +465,16 @@
       </node>
     </node>
     <node concept="21oswF" id="2c2ooLvbYuR" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvbYuL" />
-      <ref role="21oszj" node="2c2ooLvbYuM" />
+      <ref role="21oszt" node="2c2ooLvbYuL" resolve="_100_minimal_cutsets_top_event" />
+      <ref role="21oszj" node="2c2ooLvbYuM" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="2c2ooLvbYuS" role="3CrHoS">
-      <ref role="21oszj" node="2c2ooLvbYuN" />
-      <ref role="21oszt" node="2c2ooLvbYuM" />
+      <ref role="21oszj" node="2c2ooLvbYuN" resolve="basic event 1" />
+      <ref role="21oszt" node="2c2ooLvbYuM" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="2c2ooLvbYuT" role="3CrHoS">
-      <ref role="21oszj" node="2c2ooLvbYuP" />
-      <ref role="21oszt" node="2c2ooLvbYuM" />
+      <ref role="21oszj" node="2c2ooLvbYuP" resolve="basic event 2" />
+      <ref role="21oszt" node="2c2ooLvbYuM" resolve="And Gate 1" />
     </node>
     <node concept="37mRI7" id="2c2ooLvbYuU" role="lGtFl">
       <node concept="37mRIm" id="2c2ooLvbYuV" role="37mRID">
@@ -822,8 +822,8 @@
       <property role="TrG5h" value="Or Gate 1" />
     </node>
     <node concept="21oswF" id="2c2ooLvbZwM" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvbYuM" />
-      <ref role="21oszj" node="2c2ooLvbZvV" />
+      <ref role="21oszt" node="2c2ooLvbYuM" resolve="And Gate 1" />
+      <ref role="21oszj" node="2c2ooLvbZvV" resolve="Or Gate 1" />
     </node>
     <node concept="21ATtL" id="2c2ooLvbZxd" role="3CrHoS">
       <property role="TrG5h" value="basic event 3" />
@@ -838,12 +838,12 @@
       </node>
     </node>
     <node concept="21oswF" id="2c2ooLvbZyz" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvbZvV" />
-      <ref role="21oszj" node="2c2ooLvbZxd" />
+      <ref role="21oszt" node="2c2ooLvbZvV" resolve="Or Gate 1" />
+      <ref role="21oszj" node="2c2ooLvbZxd" resolve="basic event 3" />
     </node>
     <node concept="21oswF" id="2c2ooLvbZz0" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvbZvV" />
-      <ref role="21oszj" node="2c2ooLvbZxG" />
+      <ref role="21oszt" node="2c2ooLvbZvV" resolve="Or Gate 1" />
+      <ref role="21oszj" node="2c2ooLvbZxG" resolve="basic event 4" />
     </node>
     <node concept="21ATtL" id="2c2ooLvbZAj" role="3CrHoS">
       <property role="TrG5h" value="basic event 5" />
@@ -852,21 +852,21 @@
       </node>
     </node>
     <node concept="21oswF" id="2c2ooLvbZFD" role="3CrHoS">
-      <ref role="21oszt" node="2c2ooLvbZvV" />
-      <ref role="21oszj" node="2c2ooLvbZAj" />
+      <ref role="21oszt" node="2c2ooLvbZvV" resolve="Or Gate 1" />
+      <ref role="21oszj" node="2c2ooLvbZAj" resolve="basic event 5" />
     </node>
   </node>
   <node concept="3Unl$E" id="2c2ooLvbYAq">
     <property role="TrG5h" value="_100_minimal_cutsets" />
     <node concept="3Unl$P" id="2c2ooLvbYAr" role="3Unl$J">
-      <ref role="3Unl$v" node="2c2ooLvbYuK" />
+      <ref role="3Unl$v" node="2c2ooLvbYuK" resolve="_100_minimal_cutsets" />
     </node>
     <node concept="3Unl_y" id="2c2ooLvbYAs" role="3Unl$J" />
     <node concept="3UniOE" id="2c2ooLvbYAt" role="3Unl$J">
-      <ref role="3UniOC" node="2c2ooLvbYuL" />
+      <ref role="3UniOC" node="2c2ooLvbYuL" resolve="_100_minimal_cutsets_top_event" />
     </node>
     <node concept="3UgQ1$" id="2c2ooLvbYPX" role="3Unl$J">
-      <ref role="3UgQ2a" node="2c2ooLvbYuL" />
+      <ref role="3UgQ2a" node="2c2ooLvbYuL" resolve="_100_minimal_cutsets_top_event" />
       <node concept="3Ugoyx" id="2c2ooLvbYPZ" role="3UgoyZ">
         <property role="3Ugoyw" value="_100_out.tsv" />
       </node>
@@ -896,16 +896,16 @@
       </node>
     </node>
     <node concept="21oswF" id="5VDMD6QeqW9" role="3CrHoS">
-      <ref role="21oszt" node="5VDMD6QeqW3" />
-      <ref role="21oszj" node="5VDMD6QeqW4" />
+      <ref role="21oszt" node="5VDMD6QeqW3" resolve="_101_minimal_cutsets_top_event" />
+      <ref role="21oszj" node="5VDMD6QeqW4" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="5VDMD6QeqWa" role="3CrHoS">
-      <ref role="21oszj" node="5VDMD6QeqW5" />
-      <ref role="21oszt" node="5VDMD6QeqW4" />
+      <ref role="21oszj" node="5VDMD6QeqW5" resolve="basic event 1" />
+      <ref role="21oszt" node="5VDMD6QeqW4" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="5VDMD6QeqWb" role="3CrHoS">
-      <ref role="21oszj" node="5VDMD6QeqW7" />
-      <ref role="21oszt" node="5VDMD6QeqW4" />
+      <ref role="21oszj" node="5VDMD6QeqW7" resolve="basic event 2" />
+      <ref role="21oszt" node="5VDMD6QeqW4" resolve="And Gate 1" />
     </node>
     <node concept="37mRI7" id="5VDMD6QeqWc" role="lGtFl">
       <node concept="37mRIm" id="5VDMD6QeqWd" role="37mRID">
@@ -1418,12 +1418,12 @@
       </node>
     </node>
     <node concept="21oswF" id="5VDMD6QeqX_" role="3CrHoS">
-      <ref role="21oszt" node="5VDMD6QeqW4" />
-      <ref role="21oszj" node="5VDMD6QeqYI" />
+      <ref role="21oszt" node="5VDMD6QeqW4" resolve="And Gate 1" />
+      <ref role="21oszj" node="5VDMD6QeqYI" resolve="Or Gate 1_away" />
     </node>
     <node concept="1_05Uv" id="5VDMD6QeqYI" role="3CrHoS">
       <property role="TrG5h" value="Or Gate 1_away" />
-      <ref role="1_em_T" node="5VDMD6QeqX$" />
+      <ref role="1_em_T" node="5VDMD6QeqX$" resolve="Or Gate 1" />
     </node>
   </node>
   <node concept="21ASy4" id="5VDMD6QeqYG">
@@ -1562,29 +1562,29 @@
       </node>
     </node>
     <node concept="21oswF" id="5VDMD6QeqXE" role="3CrHoS">
-      <ref role="21oszt" node="5VDMD6QeqX$" />
-      <ref role="21oszj" node="5VDMD6QeqXA" />
+      <ref role="21oszt" node="5VDMD6QeqX$" resolve="Or Gate 1" />
+      <ref role="21oszj" node="5VDMD6QeqXA" resolve="basic event 3" />
     </node>
     <node concept="21oswF" id="5VDMD6QeqXF" role="3CrHoS">
-      <ref role="21oszt" node="5VDMD6QeqX$" />
-      <ref role="21oszj" node="5VDMD6QeqXC" />
+      <ref role="21oszt" node="5VDMD6QeqX$" resolve="Or Gate 1" />
+      <ref role="21oszj" node="5VDMD6QeqXC" resolve="basic event 4" />
     </node>
     <node concept="21oswF" id="5VDMD6QeqXI" role="3CrHoS">
-      <ref role="21oszt" node="5VDMD6QeqX$" />
-      <ref role="21oszj" node="5VDMD6QeqXG" />
+      <ref role="21oszt" node="5VDMD6QeqX$" resolve="Or Gate 1" />
+      <ref role="21oszj" node="5VDMD6QeqXG" resolve="basic event 5" />
     </node>
   </node>
   <node concept="3Unl$E" id="5VDMD6Qeyu4">
     <property role="TrG5h" value="_101_minimal_cutsets_modularized" />
     <node concept="3Unl$P" id="5VDMD6Qeyu5" role="3Unl$J">
-      <ref role="3Unl$v" node="5VDMD6QeqW2" />
+      <ref role="3Unl$v" node="5VDMD6QeqW2" resolve="_101_minimal_cutsets_modularized" />
     </node>
     <node concept="3Unl_y" id="5VDMD6Qeyu6" role="3Unl$J" />
     <node concept="3UniOE" id="5VDMD6Qeyu7" role="3Unl$J">
-      <ref role="3UniOC" node="5VDMD6QeqW3" />
+      <ref role="3UniOC" node="5VDMD6QeqW3" resolve="_101_minimal_cutsets_top_event" />
     </node>
     <node concept="3UgQ1$" id="5VDMD6Qeyu8" role="3Unl$J">
-      <ref role="3UgQ2a" node="5VDMD6QeqW3" />
+      <ref role="3UgQ2a" node="5VDMD6QeqW3" resolve="_101_minimal_cutsets_top_event" />
       <node concept="3Ugoyx" id="5VDMD6Qeyu9" role="3UgoyZ">
         <property role="3Ugoyw" value="_101_minimal_cutsets_out.tsv" />
       </node>
@@ -1832,30 +1832,30 @@
       </node>
     </node>
     <node concept="21oswF" id="7JDlEF1J$zt" role="3CrHoS">
-      <ref role="21oszj" node="7JDlEF1J$zo" />
-      <ref role="21oszt" node="7JDlEF1J$zn" />
+      <ref role="21oszj" node="7JDlEF1J$zo" resolve="And Gate 1" />
+      <ref role="21oszt" node="7JDlEF1J$zn" resolve="_011_and_gate_glm_top_event" />
     </node>
     <node concept="21oswF" id="7JDlEF1J$zu" role="3CrHoS">
-      <ref role="21oszt" node="7JDlEF1J$zo" />
-      <ref role="21oszj" node="7JDlEF1J$zr" />
+      <ref role="21oszt" node="7JDlEF1J$zo" resolve="And Gate 1" />
+      <ref role="21oszj" node="7JDlEF1J$zr" resolve="basic event 2" />
     </node>
     <node concept="21oswF" id="7JDlEF1J$zv" role="3CrHoS">
-      <ref role="21oszj" node="7JDlEF1J$zp" />
-      <ref role="21oszt" node="7JDlEF1J$zo" />
+      <ref role="21oszj" node="7JDlEF1J$zp" resolve="basic event 1" />
+      <ref role="21oszt" node="7JDlEF1J$zo" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="7JDlEF1J$zw" role="3CrHoS" />
   </node>
   <node concept="3Unl$E" id="7JDlEF1JZ7U">
     <property role="TrG5h" value="_011_and_gate_glm_script" />
     <node concept="3Unl$P" id="7JDlEF1JZ7V" role="3Unl$J">
-      <ref role="3Unl$v" node="7JDlEF1J$yT" />
+      <ref role="3Unl$v" node="7JDlEF1J$yT" resolve="_011_and_gate_glm" />
     </node>
     <node concept="3Unl_y" id="7JDlEF1JZ7W" role="3Unl$J" />
     <node concept="3UniOE" id="7JDlEF1JZ7X" role="3Unl$J">
-      <ref role="3UniOC" node="7JDlEF1J$zn" />
+      <ref role="3UniOC" node="7JDlEF1J$zn" resolve="_011_and_gate_glm_top_event" />
     </node>
     <node concept="3Unl_R" id="7JDlEF1JZ7Y" role="3Unl$J">
-      <ref role="3Unl_b" node="7JDlEF1J$zn" />
+      <ref role="3Unl_b" node="7JDlEF1J$zn" resolve="_011_and_gate_glm_top_event" />
       <node concept="3Ugoyx" id="7JDlEF1JZ7Z" role="3UgoyZ">
         <property role="3Ugoyw" value="_011_and_gate_out.tsv" />
       </node>
@@ -2209,30 +2209,30 @@
       </node>
     </node>
     <node concept="21oswF" id="7JDlEF1TRdt" role="3CrHoS">
-      <ref role="21oszj" node="7JDlEF1TRdo" />
-      <ref role="21oszt" node="7JDlEF1TRdn" />
+      <ref role="21oszj" node="7JDlEF1TRdo" resolve="And Gate 1" />
+      <ref role="21oszt" node="7JDlEF1TRdn" resolve="_012_and_gate_periodic_test_top_event" />
     </node>
     <node concept="21oswF" id="7JDlEF1TRdu" role="3CrHoS">
-      <ref role="21oszt" node="7JDlEF1TRdo" />
-      <ref role="21oszj" node="7JDlEF1TRdr" />
+      <ref role="21oszt" node="7JDlEF1TRdo" resolve="And Gate 1" />
+      <ref role="21oszj" node="7JDlEF1TRdr" resolve="basic event 2" />
     </node>
     <node concept="21oswF" id="7JDlEF1TRdv" role="3CrHoS">
-      <ref role="21oszj" node="7JDlEF1TRdp" />
-      <ref role="21oszt" node="7JDlEF1TRdo" />
+      <ref role="21oszj" node="7JDlEF1TRdp" resolve="basic event 1" />
+      <ref role="21oszt" node="7JDlEF1TRdo" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="7JDlEF1TRdw" role="3CrHoS" />
   </node>
   <node concept="3Unl$E" id="7JDlEF1TUZs">
     <property role="TrG5h" value="_012_and_gate_periodic_test_script" />
     <node concept="3Unl$P" id="7JDlEF1TUZt" role="3Unl$J">
-      <ref role="3Unl$v" node="7JDlEF1TRct" />
+      <ref role="3Unl$v" node="7JDlEF1TRct" resolve="_012_and_gate_periodic_test" />
     </node>
     <node concept="3Unl_y" id="7JDlEF1TUZu" role="3Unl$J" />
     <node concept="3UniOE" id="7JDlEF1TUZv" role="3Unl$J">
-      <ref role="3UniOC" node="7JDlEF1TRdn" />
+      <ref role="3UniOC" node="7JDlEF1TRdn" resolve="_012_and_gate_periodic_test_top_event" />
     </node>
     <node concept="3Unl_R" id="7JDlEF1TUZw" role="3Unl$J">
-      <ref role="3Unl_b" node="7JDlEF1TRdn" />
+      <ref role="3Unl_b" node="7JDlEF1TRdn" resolve="_012_and_gate_periodic_test_top_event" />
       <node concept="3Ugoyx" id="7JDlEF1TUZx" role="3UgoyZ">
         <property role="3Ugoyw" value="_012_and_gate_out.tsv" />
       </node>
@@ -2262,16 +2262,16 @@
       </node>
     </node>
     <node concept="21oswF" id="7JDlEF1VBtt" role="3CrHoS">
-      <ref role="21oszt" node="7JDlEF1VBtn" />
-      <ref role="21oszj" node="7JDlEF1VBto" />
+      <ref role="21oszt" node="7JDlEF1VBtn" resolve="_110_sensitivity_analysis_top_event" />
+      <ref role="21oszj" node="7JDlEF1VBto" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="7JDlEF1VBtu" role="3CrHoS">
-      <ref role="21oszj" node="7JDlEF1VBtp" />
-      <ref role="21oszt" node="7JDlEF1VBto" />
+      <ref role="21oszj" node="7JDlEF1VBtp" resolve="basic event 1" />
+      <ref role="21oszt" node="7JDlEF1VBto" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="7JDlEF1VBtv" role="3CrHoS">
-      <ref role="21oszj" node="7JDlEF1VBtr" />
-      <ref role="21oszt" node="7JDlEF1VBto" />
+      <ref role="21oszj" node="7JDlEF1VBtr" resolve="basic event 2" />
+      <ref role="21oszt" node="7JDlEF1VBto" resolve="And Gate 1" />
     </node>
     <node concept="37mRI7" id="7JDlEF1VBtw" role="lGtFl">
       <node concept="37mRIm" id="7JDlEF1VBtx" role="37mRID">
@@ -2857,8 +2857,8 @@
       <property role="TrG5h" value="Or Gate 1" />
     </node>
     <node concept="21oswF" id="7JDlEF1VBuT" role="3CrHoS">
-      <ref role="21oszt" node="7JDlEF1VBto" />
-      <ref role="21oszj" node="7JDlEF1VBuS" />
+      <ref role="21oszt" node="7JDlEF1VBto" resolve="And Gate 1" />
+      <ref role="21oszj" node="7JDlEF1VBuS" resolve="Or Gate 1" />
     </node>
     <node concept="21ATtL" id="7JDlEF1VBuU" role="3CrHoS">
       <property role="TrG5h" value="basic event 3" />
@@ -2873,12 +2873,12 @@
       </node>
     </node>
     <node concept="21oswF" id="7JDlEF1VBuY" role="3CrHoS">
-      <ref role="21oszt" node="7JDlEF1VBuS" />
-      <ref role="21oszj" node="7JDlEF1VBuU" />
+      <ref role="21oszt" node="7JDlEF1VBuS" resolve="Or Gate 1" />
+      <ref role="21oszj" node="7JDlEF1VBuU" resolve="basic event 3" />
     </node>
     <node concept="21oswF" id="7JDlEF1VBuZ" role="3CrHoS">
-      <ref role="21oszt" node="7JDlEF1VBuS" />
-      <ref role="21oszj" node="7JDlEF1VBuW" />
+      <ref role="21oszt" node="7JDlEF1VBuS" resolve="Or Gate 1" />
+      <ref role="21oszj" node="7JDlEF1VBuW" resolve="basic event 4" />
     </node>
     <node concept="21ATtL" id="7JDlEF1VBv0" role="3CrHoS">
       <property role="TrG5h" value="basic event 5" />
@@ -2887,21 +2887,21 @@
       </node>
     </node>
     <node concept="21oswF" id="7JDlEF1VBv2" role="3CrHoS">
-      <ref role="21oszt" node="7JDlEF1VBuS" />
-      <ref role="21oszj" node="7JDlEF1VBv0" />
+      <ref role="21oszt" node="7JDlEF1VBuS" resolve="Or Gate 1" />
+      <ref role="21oszj" node="7JDlEF1VBv0" resolve="basic event 5" />
     </node>
   </node>
   <node concept="3Unl$E" id="7JDlEF1VBw0">
     <property role="TrG5h" value="_110_sensitivity_analysis" />
     <node concept="3Unl$P" id="7JDlEF1VBw1" role="3Unl$J">
-      <ref role="3Unl$v" node="7JDlEF1VBtm" />
+      <ref role="3Unl$v" node="7JDlEF1VBtm" resolve="_110_sensitivity_analysis" />
     </node>
     <node concept="3Unl_y" id="7JDlEF1VBw2" role="3Unl$J" />
     <node concept="3UniOE" id="7JDlEF1VBw3" role="3Unl$J">
-      <ref role="3UniOC" node="7JDlEF1VBtn" />
+      <ref role="3UniOC" node="7JDlEF1VBtn" resolve="_110_sensitivity_analysis_top_event" />
     </node>
     <node concept="3Unl_R" id="7JDlEF1WoN3" role="3Unl$J">
-      <ref role="3Unl_b" node="7JDlEF1VBtn" />
+      <ref role="3Unl_b" node="7JDlEF1VBtn" resolve="_110_sensitivity_analysis_top_event" />
       <node concept="1W3sYI" id="7JDlEF1WoN8" role="atf1B">
         <property role="1W36fW" value="8766" />
       </node>
@@ -2910,7 +2910,7 @@
       </node>
     </node>
     <node concept="2U1jMv" id="7JDlEF1VBw8" role="3Unl$J">
-      <ref role="2U1jMt" node="7JDlEF1VBtn" />
+      <ref role="2U1jMt" node="7JDlEF1VBtn" resolve="_110_sensitivity_analysis_top_event" />
       <node concept="2U1s2T" id="7JDlEF1VBwa" role="atf1B">
         <property role="1W36fW" value="1000" />
       </node>
@@ -2929,13 +2929,13 @@
   <node concept="3Unl$E" id="7JDlEF21C0s">
     <property role="TrG5h" value="_010_and_gate_arbitrary_text_script" />
     <node concept="3Unl$P" id="7JDlEF23S0w" role="3Unl$J">
-      <ref role="3Unl$v" node="3oGITgu_n$7" />
+      <ref role="3Unl$v" node="3oGITgu_n$7" resolve="_010_and_gate" />
     </node>
     <node concept="2TVXqe" id="7JDlEF23pms" role="3Unl$J">
       <property role="2TVXqc" value="build target-model;&#10;build BDT _010_and_gate_top_event;" />
     </node>
     <node concept="3Unl_R" id="7JDlEF23S0z" role="3Unl$J">
-      <ref role="3Unl_b" node="3oGITgu_n$8" />
+      <ref role="3Unl_b" node="3oGITgu_n$8" resolve="_010_and_gate_top_event" />
       <node concept="3Ugoyx" id="7JDlEF23S0$" role="3UgoyZ">
         <property role="3Ugoyw" value="_010_and_gate_out.tsv" />
       </node>
@@ -3395,30 +3395,30 @@
       </node>
     </node>
     <node concept="21oswF" id="7JDlEF254Ax" role="3CrHoS">
-      <ref role="21oszj" node="7JDlEF254As" />
-      <ref role="21oszt" node="7JDlEF254Ar" />
+      <ref role="21oszj" node="7JDlEF254As" resolve="And Gate 1" />
+      <ref role="21oszt" node="7JDlEF254Ar" resolve="_012_and_gate_weibull_top_event" />
     </node>
     <node concept="21oswF" id="7JDlEF254Ay" role="3CrHoS">
-      <ref role="21oszt" node="7JDlEF254As" />
-      <ref role="21oszj" node="7JDlEF254Av" />
+      <ref role="21oszt" node="7JDlEF254As" resolve="And Gate 1" />
+      <ref role="21oszj" node="7JDlEF254Av" resolve="basic event 2" />
     </node>
     <node concept="21oswF" id="7JDlEF254Az" role="3CrHoS">
-      <ref role="21oszj" node="7JDlEF254At" />
-      <ref role="21oszt" node="7JDlEF254As" />
+      <ref role="21oszj" node="7JDlEF254At" resolve="basic event 1" />
+      <ref role="21oszt" node="7JDlEF254As" resolve="And Gate 1" />
     </node>
     <node concept="21oswF" id="7JDlEF254A$" role="3CrHoS" />
   </node>
   <node concept="3Unl$E" id="7JDlEF254B1">
     <property role="TrG5h" value="_012_and_gate_weibull_script" />
     <node concept="3Unl$P" id="7JDlEF254B2" role="3Unl$J">
-      <ref role="3Unl$v" node="7JDlEF254_5" />
+      <ref role="3Unl$v" node="7JDlEF254_5" resolve="_012_and_gate_weibull" />
     </node>
     <node concept="3Unl_y" id="7JDlEF254B3" role="3Unl$J" />
     <node concept="3UniOE" id="7JDlEF254B4" role="3Unl$J">
-      <ref role="3UniOC" node="7JDlEF254Ar" />
+      <ref role="3UniOC" node="7JDlEF254Ar" resolve="_012_and_gate_weibull_top_event" />
     </node>
     <node concept="3Unl_R" id="7JDlEF254B5" role="3Unl$J">
-      <ref role="3Unl_b" node="7JDlEF254Ar" />
+      <ref role="3Unl_b" node="7JDlEF254Ar" resolve="_012_and_gate_weibull_top_event" />
       <node concept="3Ugoyx" id="7JDlEF254B6" role="3UgoyZ">
         <property role="3Ugoyw" value="_012_and_gate_weibull_out.tsv" />
       </node>
