@@ -35,6 +35,9 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
@@ -329,7 +332,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -1273,11 +1275,11 @@
                         <ref role="2Oxat5" node="1wp5V2xkWzs" resolve="builderReference" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="1wp5V2xlEmq" role="2OqNvi">
+                    <node concept="3zqWPK" id="4oGkhCURGLR" role="2OqNvi">
                       <ref role="37wK5l" to="tpek:7S22xyoLQG7" resolve="getClassifier" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="1wp5V2xlEmr" role="2OqNvi">
+                  <node concept="3zqWPK" id="4oGkhCURGLT" role="2OqNvi">
                     <ref role="37wK5l" to="tpcu:hEwIO9y" resolve="getFqName" />
                   </node>
                 </node>
@@ -1299,7 +1301,7 @@
                             <ref role="2Oxat5" node="1wp5V2xkWzs" resolve="builderReference" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="4GRTmxzQ6w9" role="2OqNvi">
+                        <node concept="3zqWPK" id="4oGkhCURGLV" role="2OqNvi">
                           <ref role="37wK5l" to="tpek:7S22xyoLQG7" resolve="getClassifier" />
                         </node>
                       </node>
@@ -1625,7 +1627,7 @@
                 <node concept="Jnkvi" id="2Cw9bCdEFzI" role="2Oq$k0">
                   <ref role="1M0zk5" node="2Cw9bCdECE1" resolve="goal" />
                 </node>
-                <node concept="2qgKlT" id="2Cw9bCdEIEX" role="2OqNvi">
+                <node concept="3zqWPK" id="4oGkhCURGLX" role="2OqNvi">
                   <ref role="37wK5l" to="89jy:3$Xa1eBdmCd" resolve="isAway" />
                 </node>
               </node>
@@ -1663,7 +1665,7 @@
               <node concept="37vLTw" id="41Pak$lV5iU" role="2Oq$k0">
                 <ref role="3cqZAo" node="41Pak$lV0G1" resolve="g" />
               </node>
-              <node concept="2qgKlT" id="41Pak$lV5iV" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGLZ" role="2OqNvi">
                 <ref role="37wK5l" to="89jy:2E1OJq6Z1vw" resolve="getNeighbouringOutboundElements" />
               </node>
             </node>
@@ -1728,7 +1730,7 @@
                           <node concept="37vLTw" id="41Pak$lVs6b" role="2Oq$k0">
                             <ref role="3cqZAo" node="1QZ5YZobE6h" resolve="it" />
                           </node>
-                          <node concept="2qgKlT" id="41Pak$lVtpe" role="2OqNvi">
+                          <node concept="3zqWPK" id="4oGkhCURGM1" role="2OqNvi">
                             <ref role="37wK5l" to="89jy:2E1OJq6Z1vw" resolve="getNeighbouringOutboundElements" />
                           </node>
                         </node>
@@ -1925,7 +1927,7 @@
             <node concept="37vLTw" id="3h2IzuaILAu" role="2Oq$k0">
               <ref role="3cqZAo" node="3h2IzuaIAJ0" resolve="gseb" />
             </node>
-            <node concept="2qgKlT" id="3h2IzuaINgL" role="2OqNvi">
+            <node concept="3zqWPK" id="4oGkhCURGM3" role="2OqNvi">
               <ref role="37wK5l" to="89jy:2E1OJq6Z1vw" resolve="getNeighbouringOutboundElements" />
             </node>
           </node>
