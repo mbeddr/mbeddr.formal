@@ -12,7 +12,7 @@ plugins {
     `maven-publish`
     id("co.riiid.gradle") version "0.4.2"
 
-    val mpsGradlePluginVersion = "1.29.2.+"
+    val mpsGradlePluginVersion = "1.30.1.+"
 
     id("download-jbr") version mpsGradlePluginVersion
     id("de.itemis.mps.gradle.common") version mpsGradlePluginVersion
