@@ -309,7 +309,7 @@
       </node>
       <node concept="2tJFMh" id="1_6mr9XVrkF" role="2j1LYg">
         <node concept="ZC_QK" id="1_6mr9XVrUM" role="2tJFKM">
-          <ref role="2aWVGs" node="1_6mr9XVrdH" resolve="linters_without_documentation" />
+          <ref role="2aWVGs" node="1_6mr9XVrdH" />
         </node>
       </node>
     </node>
