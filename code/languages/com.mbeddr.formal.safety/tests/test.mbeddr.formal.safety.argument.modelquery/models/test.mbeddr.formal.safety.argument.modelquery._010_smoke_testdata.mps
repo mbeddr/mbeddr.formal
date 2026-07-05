@@ -111,10 +111,10 @@
       </concept>
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
-      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ngI" index="8gIbR">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
         <property id="3226630706269685486" name="id" index="0lsPB" />
       </concept>
-      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ngI" index="8gIbW">
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
       <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc" />
@@ -212,7 +212,7 @@
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
     </language>
     <language id="57ecebe4-dfb8-4fef-9175-0008e04a3684" name="com.mbeddr.formal.safety.argument.modelquery">
-      <concept id="612965124710890643" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelCheckConceptFunction" flags="ig" index="2eAsKr" />
+      <concept id="612965124710890643" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelCheckConceptFunction" flags="ng" index="2eAsKr" />
       <concept id="612965124711078715" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelCheckConceptFunctionParameter_node" flags="ng" index="2eAIIN" />
       <concept id="1716492013482651468" name="com.mbeddr.formal.safety.argument.modelquery.structure.ModelChecksContainer" flags="ng" index="14JTGC">
         <reference id="1716492013482686107" name="gs" index="14J0bZ" />
@@ -262,7 +262,7 @@
       <property role="0lsPA" value="01" />
       <node concept="2iDXIW" id="y1G8y690KD" role="0nOlf">
         <node concept="DABN8" id="y1G8y690KG" role="DABNk">
-          <ref role="DABNb" node="y1G8y690K6" resolve="Unintended acceleration" />
+          <ref role="DABNb" node="y1G8y690K6" />
         </node>
       </node>
       <node concept="19SGf9" id="y1G8y690Kv" role="1QQeG9">
@@ -275,7 +275,7 @@
       <property role="0lsPA" value="02" />
       <node concept="2iDXIW" id="y1G8y690KU" role="0nOlf">
         <node concept="DABN8" id="y1G8y690KV" role="DABNk">
-          <ref role="DABNb" node="y1G8y690Kn" resolve="Unintended braking" />
+          <ref role="DABNb" node="y1G8y690Kn" />
         </node>
       </node>
       <node concept="19SGf9" id="y1G8y690KW" role="1QQeG9">
@@ -295,7 +295,7 @@
           <property role="19SUeA" value="All hazards from " />
         </node>
         <node concept="oXkut" id="y1G8y69151" role="19SJt6">
-          <ref role="oTdVe" node="y1G8y690K5" resolve="_010_hazards" />
+          <ref role="oTdVe" node="y1G8y690K5" />
         </node>
         <node concept="19SUe$" id="y1G8y69152" role="19SJt6">
           <property role="19SUeA" value="&#10;have been addressed." />
@@ -357,7 +357,7 @@
       <node concept="19SGf9" id="y1G8y6915V" role="2vnaTY">
         <node concept="19SUe$" id="y1G8y6917b" role="19SJt6" />
         <node concept="oY6sn" id="y1G8y6917a" role="19SJt6">
-          <ref role="oTUVg" node="y1G8y690K6" resolve="Unintended acceleration" />
+          <ref role="oTUVg" node="y1G8y690K6" />
         </node>
         <node concept="19SUe$" id="y1G8y6917c" role="19SJt6">
           <property role="19SUeA" value=" is &#10;negligible." />
@@ -369,7 +369,7 @@
       <node concept="19SGf9" id="y1G8y6916l" role="2vnaTY">
         <node concept="19SUe$" id="y1G8y6916m" role="19SJt6" />
         <node concept="oY6sn" id="y1G8y6917E" role="19SJt6">
-          <ref role="oTUVg" node="y1G8y690Kn" resolve="Unintended braking" />
+          <ref role="oTUVg" node="y1G8y690Kn" />
         </node>
         <node concept="19SUe$" id="y1G8y6917F" role="19SJt6">
           <property role="19SUeA" value=" has&#10;been eliminated." />
@@ -377,21 +377,21 @@
       </node>
     </node>
     <node concept="3VeUTF" id="y1G8y6918z" role="2vhqc$">
-      <ref role="3VeSjQ" node="y1G8y6915U" resolve="G02" />
-      <ref role="3VeSjP" node="y1G8y671jV" resolve="G01" />
+      <ref role="3VeSjQ" node="y1G8y6915U" />
+      <ref role="3VeSjP" node="y1G8y671jV" />
     </node>
     <node concept="3VeUTF" id="y1G8y6918M" role="2vhqc$">
-      <ref role="3VeSjQ" node="y1G8y6916k" resolve="G03" />
-      <ref role="3VeSjP" node="y1G8y671jV" resolve="G01" />
+      <ref role="3VeSjQ" node="y1G8y6916k" />
+      <ref role="3VeSjP" node="y1G8y671jV" />
     </node>
   </node>
   <node concept="14JTGC" id="y1G8y6a0nG">
     <property role="TrG5h" value="_100_argument_over_hazards_checks" />
     <property role="3GE5qa" value="testdata" />
-    <ref role="14J0bZ" node="1vid6hjrJjg" resolve="_100_argument_over_hazards" />
+    <ref role="14J0bZ" node="1vid6hjrJjg" />
     <node concept="14JTGF" id="y1G8y6a1s9" role="14JSnP">
       <property role="TrG5h" value="hazards have associated safety requirement" />
-      <ref role="14JTGQ" node="y1G8y671jV" resolve="G01" />
+      <ref role="14JTGQ" node="y1G8y671jV" />
       <node concept="2eAsKr" id="y1G8y6a1sa" role="14J5yK">
         <node concept="3clFbS" id="y1G8y6a1sb" role="2VODD2">
           <node concept="3cpWs8" id="y1G8y6a1sc" role="3cqZAp">

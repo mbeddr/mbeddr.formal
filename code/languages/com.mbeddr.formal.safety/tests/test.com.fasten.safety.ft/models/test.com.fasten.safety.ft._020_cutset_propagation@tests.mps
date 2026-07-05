@@ -364,8 +364,8 @@
         </node>
         <node concept="4e07$" id="1r1mR59M$3a" role="3CrHoS" />
         <node concept="21oswF" id="1r1mR59M$3d" role="3CrHoS">
-          <ref role="21oszt" node="1r1mR59M$37" resolve="And Gate 2" />
-          <ref role="21oszj" node="1r1mR59M$39" resolve="ev2" />
+          <ref role="21oszt" node="1r1mR59M$37" />
+          <ref role="21oszj" node="1r1mR59M$39" />
         </node>
         <node concept="37mRI7" id="1r1mR59M$3e" role="lGtFl">
           <node concept="37mRIm" id="1r1mR59M$3h" role="37mRID">
@@ -570,8 +570,8 @@
           </node>
         </node>
         <node concept="21oswF" id="1r1mR59M$8q" role="3CrHoS">
-          <ref role="21oszt" node="1r1mR59M$37" resolve="And Gate 2" />
-          <ref role="21oszj" node="1r1mR59M$38" resolve="ev1" />
+          <ref role="21oszt" node="1r1mR59M$37" />
+          <ref role="21oszj" node="1r1mR59M$38" />
         </node>
       </node>
     </node>
@@ -750,8 +750,8 @@
         </node>
         <node concept="4e07$" id="1r1mR59NV8t" role="3CrHoS" />
         <node concept="21oswF" id="1r1mR59NU3z" role="3CrHoS">
-          <ref role="21oszj" node="1r1mR59NU3w" resolve="ev2" />
-          <ref role="21oszt" node="1r1mR59NU_0" resolve="Or Gate 1" />
+          <ref role="21oszj" node="1r1mR59NU3w" />
+          <ref role="21oszt" node="1r1mR59NU_0" />
         </node>
         <node concept="37mRI7" id="1r1mR59NU3$" role="lGtFl">
           <node concept="37mRIm" id="1r1mR59NU3_" role="37mRID">
@@ -956,8 +956,8 @@
           </node>
         </node>
         <node concept="21oswF" id="1r1mR59NU4l" role="3CrHoS">
-          <ref role="21oszj" node="1r1mR59NU3u" resolve="ev1" />
-          <ref role="21oszt" node="1r1mR59NU_0" resolve="Or Gate 1" />
+          <ref role="21oszj" node="1r1mR59NU3u" />
+          <ref role="21oszt" node="1r1mR59NU_0" />
         </node>
       </node>
     </node>

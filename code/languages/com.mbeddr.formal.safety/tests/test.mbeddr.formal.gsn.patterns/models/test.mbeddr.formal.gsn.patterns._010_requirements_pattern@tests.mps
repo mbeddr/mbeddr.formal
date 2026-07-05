@@ -107,13 +107,13 @@
               <property role="19SUeA" value="All requirements from &#10;" />
             </node>
             <node concept="27blvF" id="63UItOi6ahe" role="19SJt6">
-              <ref role="27blvA" node="63UItOi6atp" resolve="_010_reqDocument" />
+              <ref role="27blvA" node="63UItOi6atp" />
             </node>
             <node concept="19SUe$" id="63UItOi6ahf" role="19SJt6">
               <property role="19SUeA" value="&#10; are satisfied " />
             </node>
             <node concept="27blvF" id="63UItOi6ax9" role="19SJt6">
-              <ref role="27blvA" node="63UItOi6atq" resolve="_020_reqDocument" />
+              <ref role="27blvA" node="63UItOi6atq" />
             </node>
             <node concept="19SUe$" id="63UItOi6axa" role="19SJt6" />
           </node>
@@ -261,7 +261,7 @@
               <property role="19SUeA" value="All requirements from &#10;" />
             </node>
             <node concept="27blvF" id="63UItOi6bvb" role="19SJt6">
-              <ref role="27blvA" node="63UItOi6atp" resolve="_010_reqDocument" />
+              <ref role="27blvA" node="63UItOi6atp" />
             </node>
             <node concept="19SUe$" id="63UItOi6bvc" role="19SJt6">
               <property role="19SUeA" value="&#10; are satisfied" />

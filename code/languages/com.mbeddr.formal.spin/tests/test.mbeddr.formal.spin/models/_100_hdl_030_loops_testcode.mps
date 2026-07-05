@@ -75,11 +75,11 @@
       </concept>
     </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
-      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ngI" index="2m6DZO">
+      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
         <reference id="5285453794052877261" name="var" index="2m6DZP" />
       </concept>
       <concept id="3050019586774688801" name="com.mbeddr.formal.spin.structure.NotEqualsExpression" flags="ng" index="2xSVM6" />
-      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ngI" index="1a0DGj">
+      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
         <child id="2291855968617420240" name="tpe" index="1a0DGc" />
       </concept>
     </language>
@@ -127,7 +127,7 @@
     <node concept="1a0OAr" id="1vcsY83hflh" role="1a0O6w" />
     <node concept="kFILp" id="1vcsY83uGjQ" role="1a0O6w">
       <node concept="1a0deV" id="3Em8_Splgix" role="kFILs">
-        <ref role="2m6DZP" node="3PN66LDutVz" resolve="crt_state" />
+        <ref role="2m6DZP" node="3PN66LDutVz" />
       </node>
       <node concept="2IPVmt" id="1vcsY83xELn" role="kirKP">
         <property role="2IPVms" value="4" />
@@ -139,7 +139,7 @@
       <node concept="ky8kN" id="1vcsY83jibT" role="1a0q5x">
         <node concept="1a7z$V" id="1vcsY83nz3V" role="ky8kU">
           <node concept="1a0deV" id="1vcsY83nz3W" role="1a7z$R">
-            <ref role="2m6DZP" node="1vcsY83hflk" resolve="my_event" />
+            <ref role="2m6DZP" node="1vcsY83hflk" />
           </node>
           <node concept="1a7IP_" id="1vcsY83nz3X" role="1a7zve">
             <node concept="2IPVmt" id="1vcsY83nz3Y" role="1a7IPA">
@@ -154,13 +154,13 @@
           <node concept="1BCXOe" id="1vcsY83nz8y" role="1BDXQL">
             <node concept="kwC56" id="1vcsY83nz8z" role="1BCXOa">
               <node concept="1a0DGY" id="1vcsY83nz8$" role="kwC55">
-                <ref role="1a0DGZ" node="1vcsY83hfni" resolve="do_step" />
+                <ref role="1a0DGZ" node="1vcsY83hfni" />
                 <node concept="1a0deV" id="1vcsY83nz8_" role="1a0DGU">
-                  <ref role="2m6DZP" node="1vcsY83hflk" resolve="my_event" />
+                  <ref role="2m6DZP" node="1vcsY83hflk" />
                 </node>
               </node>
               <node concept="1a0deV" id="1vcsY83nz8A" role="kwC57">
-                <ref role="2m6DZP" node="1vcsY83jihK" resolve="res" />
+                <ref role="2m6DZP" node="1vcsY83jihK" />
               </node>
             </node>
           </node>
@@ -174,7 +174,7 @@
               <property role="2IPVms" value="42" />
             </node>
             <node concept="1a0deV" id="1vcsY83jilA" role="2H9Iav">
-              <ref role="2m6DZP" node="1vcsY83jihK" resolve="res" />
+              <ref role="2m6DZP" node="1vcsY83jihK" />
             </node>
           </node>
         </node>
@@ -182,7 +182,7 @@
     </node>
     <node concept="1a0OAr" id="1vcsY83hflj" role="1a0O6w" />
     <node concept="3Orf0S" id="1vcsY83hfmG" role="3Orf0X">
-      <ref role="3Orf16" node="1vcsY83hfmF" resolve="simple_sm" />
+      <ref role="3Orf16" node="1vcsY83hfmF" />
     </node>
   </node>
   <node concept="1a0DCM" id="1vcsY83hfmF">

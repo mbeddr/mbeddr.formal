@@ -82,13 +82,13 @@
         <node concept="2Hdskp" id="7mSH3WnEdKW" role="2Hfkx9">
           <property role="TrG5h" value="modVar1" />
           <node concept="1zigX2" id="7mSH3WnEdLv" role="2HdssA">
-            <ref role="1zigX1" node="7mSH3WnEdJv" resolve="mod1" />
+            <ref role="1zigX1" node="7mSH3WnEdJv" />
           </node>
         </node>
         <node concept="2Hdskp" id="7mSH3WnEdMn" role="2Hfkx9">
           <property role="TrG5h" value="modVar2" />
           <node concept="1zigX2" id="7mSH3WnEdNf" role="2HdssA">
-            <ref role="1zigX1" node="7mSH3WnEdLD" resolve="mod2" />
+            <ref role="1zigX1" node="7mSH3WnEdLD" />
             <node concept="2IPVmt" id="7mSH3WnEdNt" role="1zigYY">
               <property role="2IPVms" value="1" />
             </node>
@@ -191,7 +191,7 @@
           <property role="TrG5h" value="arrayAccess" />
           <node concept="12zBG1" id="1qK9rHkiwtz" role="1zoetD">
             <node concept="2He$iJ" id="1qK9rHkf_Uv" role="32OYtT">
-              <ref role="2He$iI" node="2mjHtwTswqQ" resolve="arr1" />
+              <ref role="2He$iI" node="2mjHtwTswqQ" />
             </node>
             <node concept="2IPVmt" id="1qK9rHkiwup" role="12zBG0">
               <property role="2IPVms" value="2" />

@@ -72,7 +72,7 @@
       <concept id="7240923401194766860" name="com.mbeddr.formal.req.tl_patterns.structure.ExistencePattern" flags="ng" index="12uYXO">
         <child id="7240923401194766873" name="p" index="12uYXx" />
       </concept>
-      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ngI" index="3z0uXf">
+      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ng" index="3z0uXf">
         <child id="6544290145033523834" name="specs" index="3z0uXc" />
       </concept>
     </language>

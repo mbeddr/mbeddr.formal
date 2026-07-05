@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
   </languages>
   <imports>
@@ -165,15 +165,11 @@
         <property id="5858074156537516431" name="text" index="x79VB" />
       </concept>
       <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
         <child id="5383422241790532083" name="tags" index="3nqlJM" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -260,6 +256,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -828,18 +832,107 @@
         </node>
       </node>
       <node concept="P$JXv" id="5t37uj6BiZB" role="lGtFl">
-        <node concept="TZ5HA" id="5t37uj6BiZC" role="TZ5H$">
-          <node concept="1dT_AC" id="5t37uj6BiZD" role="1dT_Ay">
-            <property role="1dT_AB" value="Override this with special hash-code computers (e.g. those which ignore the layout information of diagrams)" />
-          </node>
-        </node>
-        <node concept="TZ5HA" id="5t37uj6Bj0X" role="TZ5H$">
-          <node concept="1dT_AC" id="5t37uj6Bj0Y" role="1dT_Ay">
-            <property role="1dT_AB" value="The default implementation computes the hashcode of the node INCLUDING all its children AND references." />
-          </node>
-        </node>
         <node concept="x79VA" id="5t37uj6BiZE" role="3nqlJM">
-          <property role="x79VB" value="hashcode" />
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="2nacnue1GV2" role="1Vez_I">
+            <node concept="3oM_SD" id="2nacnue1GV3" role="1PaTwD">
+              <property role="3oM_SC" value="hashcode" />
+            </node>
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2nacnue1GUy" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GUz" role="1PaTwD">
+            <property role="3oM_SC" value="Override" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GU$" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GU_" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUA" role="1PaTwD">
+            <property role="3oM_SC" value="special" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUB" role="1PaTwD">
+            <property role="3oM_SC" value="hash-code" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUC" role="1PaTwD">
+            <property role="3oM_SC" value="computers" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUD" role="1PaTwD">
+            <property role="3oM_SC" value="(e.g." />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUE" role="1PaTwD">
+            <property role="3oM_SC" value="those" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUF" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUG" role="1PaTwD">
+            <property role="3oM_SC" value="ignore" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUH" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUI" role="1PaTwD">
+            <property role="3oM_SC" value="layout" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUJ" role="1PaTwD">
+            <property role="3oM_SC" value="information" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUK" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUL" role="1PaTwD">
+            <property role="3oM_SC" value="diagrams)" />
+          </node>
+        </node>
+        <node concept="1PaTwC" id="2nacnue1GUM" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GUN" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUO" role="1PaTwD">
+            <property role="3oM_SC" value="default" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUP" role="1PaTwD">
+            <property role="3oM_SC" value="implementation" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUQ" role="1PaTwD">
+            <property role="3oM_SC" value="computes" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUR" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUS" role="1PaTwD">
+            <property role="3oM_SC" value="hashcode" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUT" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUU" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUV" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUW" role="1PaTwD">
+            <property role="3oM_SC" value="INCLUDING" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUX" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUY" role="1PaTwD">
+            <property role="3oM_SC" value="its" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUZ" role="1PaTwD">
+            <property role="3oM_SC" value="children" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GV0" role="1PaTwD">
+            <property role="3oM_SC" value="AND" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GV1" role="1PaTwD">
+            <property role="3oM_SC" value="references." />
+          </node>
         </node>
       </node>
     </node>
@@ -868,13 +961,66 @@
         </node>
       </node>
       <node concept="P$JXv" id="7tmSxcqhciq" role="lGtFl">
-        <node concept="TZ5HA" id="7tmSxcqhcir" role="TZ5H$">
-          <node concept="1dT_AC" id="7tmSxcqhcis" role="1dT_Ay">
-            <property role="1dT_AB" value="This is a hook to be overridden if additional annotation providers are contributed." />
+        <node concept="x79VA" id="7tmSxcqhcit" role="3nqlJM">
+          <property role="x79VB" value="" />
+          <node concept="1PaTwC" id="2nacnue1GVi" role="1Vez_I">
+            <node concept="3oM_SD" id="2nacnue1GVj" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1GVk" role="1PaTwD">
+              <property role="3oM_SC" value="list" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1GVl" role="1PaTwD">
+              <property role="3oM_SC" value="of" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1GVm" role="1PaTwD">
+              <property role="3oM_SC" value="annotation" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1GVn" role="1PaTwD">
+              <property role="3oM_SC" value="providers" />
+            </node>
           </node>
         </node>
-        <node concept="x79VA" id="7tmSxcqhcit" role="3nqlJM">
-          <property role="x79VB" value="the list of annotation providers" />
+        <node concept="1PaTwC" id="2nacnue1GV4" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GV5" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GV6" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GV7" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GV8" role="1PaTwD">
+            <property role="3oM_SC" value="hook" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GV9" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVa" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVb" role="1PaTwD">
+            <property role="3oM_SC" value="overridden" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVc" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVd" role="1PaTwD">
+            <property role="3oM_SC" value="additional" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVe" role="1PaTwD">
+            <property role="3oM_SC" value="annotation" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVf" role="1PaTwD">
+            <property role="3oM_SC" value="providers" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVg" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVh" role="1PaTwD">
+            <property role="3oM_SC" value="contributed." />
+          </node>
         </node>
       </node>
     </node>

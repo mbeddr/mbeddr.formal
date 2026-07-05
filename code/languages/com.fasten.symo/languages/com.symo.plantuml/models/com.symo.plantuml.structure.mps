@@ -22,6 +22,7 @@
       </concept>
       <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
@@ -124,6 +125,20 @@
           <property role="3PKj8l" value="FF0000" />
         </node>
       </node>
+      <node concept="1irR9n" id="2nacnue1Gx6" role="2rmM5M">
+        <node concept="3PKj8D" id="2nacnue1Gx7" role="3PKjn_">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+        <node concept="3PKj8D" id="2nacnue1Gx8" role="3PKjnB">
+          <property role="3PKj8l" value="AAAAAA" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2nacnue1Gx9" role="2rmM5M">
+        <property role="1irPi9" value="U" />
+        <node concept="3PKj8D" id="2nacnue1Gxa" role="3PKjny">
+          <property role="3PKj8l" value="FF0000" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="1I7wo92Vg_W">
@@ -135,7 +150,7 @@
     <node concept="1TJgyi" id="1I7wo92WvVQ" role="1TKVEl">
       <property role="IQ2nx" value="1983696557348880118" />
       <property role="TrG5h" value="displayStrategy" />
-      <ref role="AX2Wp" node="1I7wo92WvVM" resolve="PlantUmlDiagramDisplay" />
+      <ref role="AX2Wp" node="1I7wo92WvVM" resolve="EPlantUmlDiagramDisplay" />
     </node>
     <node concept="1TJgyi" id="7ikA1GKwLV2" role="1TKVEl">
       <property role="IQ2nx" value="8400506447498256066" />

@@ -8,7 +8,7 @@
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram" version="1" />
     <use id="120e1c9d-4e27-4478-b2af-b2c3bd3850b0" name="com.mbeddr.mpsutil.editor.querylist" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
@@ -491,15 +491,9 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="fa13cc63-c476-4d46-9c96-d53670abe7bc" name="de.itemis.mps.editor.diagram">
@@ -6358,19 +6352,82 @@
         <node concept="10Oyi0" id="6OfpnAg6Z7G" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="4Z1Ed6tuGsM" role="lGtFl">
-        <node concept="TZ5HA" id="4Z1Ed6tuGsN" role="TZ5H$">
-          <node concept="1dT_AC" id="4Z1Ed6tuGsO" role="1dT_Ay">
-            <property role="1dT_AB" value="This code is copied from - de.itemis.mps.editor.diagram.runtime.jgraph.DiagramActionsUtil" />
+        <node concept="1PaTwC" id="2nacnue1GVN" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GVO" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVP" role="1PaTwD">
+            <property role="3oM_SC" value="code" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVQ" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVR" role="1PaTwD">
+            <property role="3oM_SC" value="copied" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVS" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVT" role="1PaTwD">
+            <property role="3oM_SC" value="-" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVU" role="1PaTwD">
+            <property role="3oM_SC" value="de.itemis.mps.editor.diagram.runtime.jgraph.DiagramActionsUtil" />
           </node>
         </node>
-        <node concept="TZ5HA" id="4Z1Ed6tuURH" role="TZ5H$">
-          <node concept="1dT_AC" id="4Z1Ed6tuURI" role="1dT_Ay">
-            <property role="1dT_AB" value="" />
+        <node concept="1PaTwC" id="2nacnue1GVV" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GVW" role="1PaTwD">
+            <property role="3oM_SC" value="" />
           </node>
         </node>
-        <node concept="TZ5HA" id="4Z1Ed6tuWpL" role="TZ5H$">
-          <node concept="1dT_AC" id="4Z1Ed6tuWpM" role="1dT_Ay">
-            <property role="1dT_AB" value="The modification consists of ignoring the boxes which are from PageSettingsTopLeft when computing the translation needs" />
+        <node concept="1PaTwC" id="2nacnue1GVX" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GVY" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GVZ" role="1PaTwD">
+            <property role="3oM_SC" value="modification" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GW0" role="1PaTwD">
+            <property role="3oM_SC" value="consists" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GW1" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GW2" role="1PaTwD">
+            <property role="3oM_SC" value="ignoring" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GW3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GW4" role="1PaTwD">
+            <property role="3oM_SC" value="boxes" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GW5" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GW6" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GW7" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GW8" role="1PaTwD">
+            <property role="3oM_SC" value="PageSettingsTopLeft" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GW9" role="1PaTwD">
+            <property role="3oM_SC" value="when" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GWa" role="1PaTwD">
+            <property role="3oM_SC" value="computing" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GWb" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GWc" role="1PaTwD">
+            <property role="3oM_SC" value="translation" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GWd" role="1PaTwD">
+            <property role="3oM_SC" value="needs" />
           </node>
         </node>
       </node>

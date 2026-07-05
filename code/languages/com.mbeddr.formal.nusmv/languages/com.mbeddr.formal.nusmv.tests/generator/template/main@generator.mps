@@ -80,7 +80,7 @@
       <concept id="1219952072943" name="jetbrains.mps.lang.generator.structure.DropRootRule" flags="lg" index="aNPBN">
         <reference id="1219952338328" name="applicableConcept" index="aOQi4" />
       </concept>
-      <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
+      <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="lg" index="2b32R4">
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1095416546421" name="jetbrains.mps.lang.generator.structure.MappingConfiguration" flags="ig" index="bUwia">
@@ -117,7 +117,7 @@
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
         <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
-      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
+      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="lg" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
       </concept>
       <concept id="1087833466690" name="jetbrains.mps.lang.generator.structure.NodeMacro" flags="lg" index="17VmuZ">
@@ -129,7 +129,7 @@
       <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
         <reference id="1167514355421" name="template" index="3lhOvi" />
       </concept>
-      <concept id="1131073187192" name="jetbrains.mps.lang.generator.structure.MapSrcNodeMacro" flags="ln" index="1pdMLZ">
+      <concept id="1131073187192" name="jetbrains.mps.lang.generator.structure.MapSrcNodeMacro" flags="lg" index="1pdMLZ">
         <child id="1170725844563" name="mapperFunction" index="2kGFt3" />
       </concept>
       <concept id="1195499912406" name="jetbrains.mps.lang.generator.structure.MappingScript" flags="lg" index="1pmfR0">
@@ -150,14 +150,14 @@
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
-      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
+      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="ig" index="3JmXsc" />
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
       </concept>
-      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
+      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="lg" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
-      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
+      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="lg" index="1ZhdrF">
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
       </concept>
     </language>
@@ -376,7 +376,7 @@
     <property role="TrG5h" value="main" />
     <node concept="3lhOvk" id="1ZsZb$iKiKR" role="3lj3bC">
       <ref role="30HIoZ" to="fnq2:1ZsZb$iIWjt" resolve="ExecutableTestCase" />
-      <ref role="3lhOvi" node="1ZsZb$iKiKU" resolve="system_for_executable_test" />
+      <ref role="3lhOvi" node="1ZsZb$iKiKU" />
     </node>
     <node concept="aNPBN" id="1ZsZb$iJWZE" role="aQYdv">
       <ref role="aOQi4" to="fnq2:43FRfGJUEcN" resolve="TestsCollection" />
@@ -425,7 +425,7 @@
               <node concept="2Hdskp" id="1ZsZb$iIZ5E" role="2Hfkx9">
                 <property role="TrG5h" value="sut" />
                 <node concept="1zigX2" id="1ZsZb$iIZ6m" role="2HdssA">
-                  <ref role="1zigX1" node="1ZsZb$iIZ4B" resolve="sut" />
+                  <ref role="1zigX1" node="1ZsZb$iIZ4B" />
                   <node concept="1ZhdrF" id="1ZsZb$iJFJ9" role="lGtFl">
                     <property role="P3scX" value="001b2375-3bd5-4d5e-9958-6b3f62dc8548/8482728081213209469/8482728081213209470" />
                     <property role="2qtEX8" value="module" />
@@ -443,7 +443,7 @@
                     </node>
                   </node>
                   <node concept="1J1L9T" id="6mm$FLYWR1h" role="1zigYY">
-                    <ref role="1J1L9S" node="6mm$FLYVoYA" resolve="in_val" />
+                    <ref role="1J1L9S" node="6mm$FLYVoYA" />
                     <node concept="1WS0z7" id="6mm$FLYWReB" role="lGtFl">
                       <node concept="3JmXsc" id="6mm$FLYWReD" role="3Jn$fo">
                         <node concept="3clFbS" id="6mm$FLYWReF" role="2VODD2">
@@ -573,7 +573,7 @@
             <node concept="2Hfkzp" id="1ZsZb$iIZaa" role="2HcbjO">
               <node concept="2HfkAV" id="1ZsZb$iIZdN" role="2HfkAP">
                 <node concept="2He$iJ" id="1ZsZb$iIZgb" role="2He$ia">
-                  <ref role="2He$iI" node="1ZsZb$iIZeo" resolve="__crtStep" />
+                  <ref role="2He$iI" node="1ZsZb$iIZeo" />
                 </node>
                 <node concept="2IPVmt" id="1ZsZb$iIZgr" role="2He$i0">
                   <property role="2IPVms" value="0" />
@@ -581,7 +581,7 @@
               </node>
               <node concept="2HevG6" id="1ZsZb$iIQG8" role="2HfkAP">
                 <node concept="2He$iJ" id="1ZsZb$iIZl7" role="2He$ia">
-                  <ref role="2He$iI" node="1ZsZb$iIZeo" resolve="__crtStep" />
+                  <ref role="2He$iI" node="1ZsZb$iIZeo" />
                 </node>
                 <node concept="2H9I2B" id="1ZsZb$iIVet" role="2He$i0">
                   <node concept="2H9I2A" id="1ZsZb$iIVex" role="2H9I2x">
@@ -613,7 +613,7 @@
                         </node>
                       </node>
                       <node concept="2He$iJ" id="1ZsZb$iIVeU" role="2H9Iav">
-                        <ref role="2He$iI" node="1ZsZb$iIZeo" resolve="__crtStep" />
+                        <ref role="2He$iI" node="1ZsZb$iIZeo" />
                       </node>
                     </node>
                     <node concept="d4bQV" id="1ZsZb$iODNA" role="2H9I4_">
@@ -673,7 +673,7 @@
                         <node concept="32OYss" id="1ZsZb$iODsd" role="2H9Iav">
                           <node concept="2H9FEB" id="1ZsZb$iODse" role="32OYtT">
                             <node concept="2He$iJ" id="1ZsZb$iIQGL" role="2H9Iav">
-                              <ref role="2He$iI" node="1ZsZb$iIZeo" resolve="__crtStep" />
+                              <ref role="2He$iI" node="1ZsZb$iIZeo" />
                             </node>
                             <node concept="2IPVmt" id="1ZsZb$iODsf" role="2H9Ial">
                               <property role="2IPVms" value="1" />
@@ -683,7 +683,7 @@
                       </node>
                       <node concept="2H9FEB" id="1ZsZb$iOEdA" role="d498F">
                         <node concept="2He$iJ" id="1ZsZb$iOEdB" role="2H9Iav">
-                          <ref role="2He$iI" node="1ZsZb$iIZeo" resolve="__crtStep" />
+                          <ref role="2He$iI" node="1ZsZb$iIZeo" />
                         </node>
                         <node concept="2IPVmt" id="1ZsZb$iOEdC" role="2H9Ial">
                           <property role="2IPVms" value="1" />
@@ -694,7 +694,7 @@
                   <node concept="2H9I2A" id="1ZsZb$iIVgZ" role="2H9I2x">
                     <node concept="1yCjRe" id="1ZsZb$iODo8" role="2H9I4J" />
                     <node concept="2He$iJ" id="1ZsZb$iIVj_" role="2H9I4_">
-                      <ref role="2He$iI" node="1ZsZb$iIZeo" resolve="__crtStep" />
+                      <ref role="2He$iI" node="1ZsZb$iIZeo" />
                     </node>
                   </node>
                 </node>

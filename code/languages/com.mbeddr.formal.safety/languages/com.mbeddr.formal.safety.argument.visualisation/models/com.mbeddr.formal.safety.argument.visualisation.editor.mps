@@ -314,15 +314,9 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -2053,9 +2047,12 @@
       </node>
       <node concept="3Tm1VV" id="3ErxEYaaf2Q" role="1B3o_S" />
       <node concept="z59LJ" id="3ErxEYaaf2R" role="lGtFl">
-        <node concept="TZ5HA" id="3ErxEYaaf2S" role="TZ5H$">
-          <node concept="1dT_AC" id="3ErxEYaaf2T" role="1dT_Ay">
-            <property role="1dT_AB" value="Zoom icon" />
+        <node concept="1PaTwC" id="2nacnue1GZO" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GZP" role="1PaTwD">
+            <property role="3oM_SC" value="Zoom" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZQ" role="1PaTwD">
+            <property role="3oM_SC" value="icon" />
           </node>
         </node>
       </node>
@@ -2981,34 +2978,154 @@
         </node>
         <node concept="3Tm1VV" id="3ErxEYaa$Mw" role="1B3o_S" />
         <node concept="P$JXv" id="3ErxEYaa$Mx" role="lGtFl">
-          <node concept="TZ5HA" id="3ErxEYaa$Nf" role="TZ5H$">
-            <node concept="1dT_AC" id="3ErxEYaa$Ng" role="1dT_Ay">
-              <property role="1dT_AB" value=" Constructor" />
+          <node concept="1PaTwC" id="2nacnue1GZR" role="1Vez_I">
+            <node concept="3oM_SD" id="2nacnue1GZS" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1GZT" role="1PaTwD">
+              <property role="3oM_SC" value="Constructor" />
             </node>
           </node>
-          <node concept="TZ5HA" id="3ErxEYaa$Nh" role="TZ5H$">
-            <node concept="1dT_AC" id="3ErxEYaa$Ni" role="1dT_Ay">
-              <property role="1dT_AB" value="" />
+          <node concept="1PaTwC" id="2nacnue1GZU" role="1Vez_I">
+            <node concept="3oM_SD" id="2nacnue1GZV" role="1PaTwD">
+              <property role="3oM_SC" value="" />
             </node>
           </node>
-          <node concept="TZ5HA" id="3ErxEYaa$Nj" role="TZ5H$">
-            <node concept="1dT_AC" id="3ErxEYaa$Nk" role="1dT_Ay">
-              <property role="1dT_AB" value=" @param node" />
+          <node concept="1PaTwC" id="2nacnue1GZW" role="1Vez_I">
+            <node concept="3oM_SD" id="2nacnue1GZX" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1GZY" role="1PaTwD">
+              <property role="3oM_SC" value="@param" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1GZZ" role="1PaTwD">
+              <property role="3oM_SC" value="node" />
             </node>
           </node>
-          <node concept="TZ5HA" id="3ErxEYaa$Nl" role="TZ5H$">
-            <node concept="1dT_AC" id="3ErxEYaa$Nm" role="1dT_Ay">
-              <property role="1dT_AB" value="            where you want to zoom/unzoom" />
+          <node concept="1PaTwC" id="2nacnue1H00" role="1Vez_I">
+            <node concept="3oM_SD" id="2nacnue1H01" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H02" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H03" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H04" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H05" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H06" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H07" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H08" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H09" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0a" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0b" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0c" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0d" role="1PaTwD">
+              <property role="3oM_SC" value="where" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0e" role="1PaTwD">
+              <property role="3oM_SC" value="you" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0f" role="1PaTwD">
+              <property role="3oM_SC" value="want" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0g" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0h" role="1PaTwD">
+              <property role="3oM_SC" value="zoom/unzoom" />
             </node>
           </node>
-          <node concept="TZ5HA" id="3ErxEYaa$Nn" role="TZ5H$">
-            <node concept="1dT_AC" id="3ErxEYaa$No" role="1dT_Ay">
-              <property role="1dT_AB" value=" @param icon" />
+          <node concept="1PaTwC" id="2nacnue1H0i" role="1Vez_I">
+            <node concept="3oM_SD" id="2nacnue1H0j" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0k" role="1PaTwD">
+              <property role="3oM_SC" value="@param" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0l" role="1PaTwD">
+              <property role="3oM_SC" value="icon" />
             </node>
           </node>
-          <node concept="TZ5HA" id="3ErxEYaa$Np" role="TZ5H$">
-            <node concept="1dT_AC" id="3ErxEYaa$Nq" role="1dT_Ay">
-              <property role="1dT_AB" value="            icon corresponding to the operation (zoom or unzoom)" />
+          <node concept="1PaTwC" id="2nacnue1H0m" role="1Vez_I">
+            <node concept="3oM_SD" id="2nacnue1H0n" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0o" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0p" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0q" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0r" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0s" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0t" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0u" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0v" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0w" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0x" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0y" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0z" role="1PaTwD">
+              <property role="3oM_SC" value="icon" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0$" role="1PaTwD">
+              <property role="3oM_SC" value="corresponding" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0_" role="1PaTwD">
+              <property role="3oM_SC" value="to" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0A" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0B" role="1PaTwD">
+              <property role="3oM_SC" value="operation" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0C" role="1PaTwD">
+              <property role="3oM_SC" value="(zoom" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0D" role="1PaTwD">
+              <property role="3oM_SC" value="or" />
+            </node>
+            <node concept="3oM_SD" id="2nacnue1H0E" role="1PaTwD">
+              <property role="3oM_SC" value="unzoom)" />
             </node>
           </node>
         </node>

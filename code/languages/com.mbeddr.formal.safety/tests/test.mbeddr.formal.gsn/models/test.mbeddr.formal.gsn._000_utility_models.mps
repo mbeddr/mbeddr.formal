@@ -71,13 +71,13 @@
       <node concept="3Ug1AV" id="4MR8i$4iSsm" role="3UgYNK">
         <property role="TrG5h" value="s" />
         <node concept="3Ug1AZ" id="4MR8i$4iSsl" role="3Ug1A_">
-          <ref role="3Ug1AY" node="65VbbGlCq4b" resolve="Sender" />
+          <ref role="3Ug1AY" node="65VbbGlCq4b" />
         </node>
       </node>
       <node concept="3Ug1AV" id="4MR8i$4iUWN" role="3UgYNK">
         <property role="TrG5h" value="r" />
         <node concept="3Ug1AZ" id="4MR8i$4iUWL" role="3Ug1A_">
-          <ref role="3Ug1AY" node="65VbbGlCq4c" resolve="Receiver" />
+          <ref role="3Ug1AY" node="65VbbGlCq4c" />
         </node>
       </node>
     </node>

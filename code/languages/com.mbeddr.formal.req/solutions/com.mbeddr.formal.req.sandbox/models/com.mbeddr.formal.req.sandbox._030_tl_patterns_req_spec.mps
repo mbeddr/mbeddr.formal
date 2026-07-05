@@ -24,7 +24,7 @@
       <concept id="7240923401194766738" name="com.mbeddr.formal.req.tl_patterns.structure.AfterScope" flags="ng" index="12uYNE">
         <child id="7240923401194766754" name="q" index="12uYNq" />
       </concept>
-      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ngI" index="3z0uXf">
+      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ng" index="3z0uXf">
         <child id="6544290145033523834" name="specs" index="3z0uXc" />
       </concept>
     </language>
@@ -486,7 +486,7 @@
               <property role="19SUeA" value="The following additional assumptions, w.r.t " />
             </node>
             <node concept="2aGvr3" id="2fmnPVfepYB" role="19SJt6">
-              <ref role="2aGvrx" node="6hWVnwA1qj9" resolve="R_010" />
+              <ref role="2aGvrx" node="6hWVnwA1qj9" />
             </node>
             <node concept="19SUe$" id="2fmnPVfepYC" role="19SJt6">
               <property role="19SUeA" value=" hold:&#10;" />

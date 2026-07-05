@@ -114,7 +114,7 @@
       </node>
       <node concept="2tJFMh" id="3tsEGTjRVqy" role="2j1LYg">
         <node concept="ZC_QK" id="3tsEGTjRVqD" role="2tJFKM">
-          <ref role="2aWVGs" node="3tsEGTjRVjP" resolve="linters_without_documentation" />
+          <ref role="2aWVGs" node="3tsEGTjRVjP" />
         </node>
       </node>
     </node>

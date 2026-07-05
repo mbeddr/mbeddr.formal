@@ -2,7 +2,7 @@
 <model ref="r:3cd0f0c0-0086-477e-b868-3ab692ff59c9(com.symo.mermaid.editor)">
   <persistence version="9" />
   <languages>
-    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="14" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
@@ -453,7 +453,7 @@
                 <node concept="17QB3L" id="vYco6E_YTy" role="1tU5fm" />
                 <node concept="2YIFZM" id="1lrw0h_nqY_" role="33vP2m">
                   <ref role="37wK5l" node="vYco6E5RVk" resolve="convertDiagramToSVG" />
-                  <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="SVG2PNGImageConverter" />
+                  <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="DiagramJComponentBuilder" />
                   <node concept="37vLTw" id="1lrw0h_nqYA" role="37wK5m">
                     <ref role="3cqZAo" node="vYco6E_Y1Q" resolve="pudb" />
                   </node>
@@ -568,12 +568,12 @@
                 <node concept="3cpWsn" id="vYco6E_YTi" role="3cpWs9">
                   <property role="TrG5h" value="component" />
                   <node concept="3uibUv" id="vYco6E_YTj" role="1tU5fm">
-                    <ref role="3uigEE" node="4Fc3$ZqVApf" resolve="SVG2PNGImageConverter.ImageComponent" />
+                    <ref role="3uigEE" node="4Fc3$ZqVApf" resolve="DiagramJComponentBuilder.ImageComponent" />
                   </node>
                   <node concept="2ShNRf" id="vYco6E_YTk" role="33vP2m">
                     <node concept="HV5vD" id="vYco6E_YTl" role="2ShVmc">
                       <property role="373rjd" value="true" />
-                      <ref role="HV5vE" node="4Fc3$ZqVApf" resolve="SVG2PNGImageConverter.ImageComponent" />
+                      <ref role="HV5vE" node="4Fc3$ZqVApf" resolve="DiagramJComponentBuilder.ImageComponent" />
                     </node>
                   </node>
                 </node>
@@ -590,7 +590,7 @@
                   </node>
                   <node concept="2YIFZM" id="vYco6E_YTC" role="33vP2m">
                     <ref role="37wK5l" node="4Fc3$ZqVKjz" resolve="createImageFromSVG" />
-                    <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="SVG2PNGImageConverter" />
+                    <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="DiagramJComponentBuilder" />
                     <node concept="37vLTw" id="vYco6E_YTD" role="37wK5m">
                       <ref role="3cqZAo" node="vYco6E_YTx" resolve="svgString" />
                     </node>
@@ -605,7 +605,7 @@
                 <node concept="37vLTI" id="vYco6E_YTF" role="3clFbG">
                   <node concept="2YIFZM" id="vYco6E_YTG" role="37vLTx">
                     <ref role="37wK5l" node="vYco6EtkLx" resolve="scaleImage" />
-                    <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="SVG2PNGImageConverter" />
+                    <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="DiagramJComponentBuilder" />
                     <node concept="37vLTw" id="vYco6E_YTH" role="37wK5m">
                       <ref role="3cqZAo" node="vYco6E_YTA" resolve="bufferedImage" />
                     </node>
@@ -1808,7 +1808,7 @@
             <node concept="3clFbF" id="659BgOm3rkl" role="3cqZAp">
               <node concept="37vLTI" id="659BgOm3vwd" role="3clFbG">
                 <node concept="37vLTw" id="659BgOm3Tnl" role="37vLTx">
-                  <ref role="3cqZAo" node="659BgOm3Tng" resolve="toString" />
+                  <ref role="3cqZAo" node="659BgOm3Tng" resolve="currentHash" />
                 </node>
                 <node concept="2OqwBi" id="659BgOm3rN$" role="37vLTJ">
                   <node concept="37vLTw" id="659BgOm3rkj" role="2Oq$k0">
@@ -2424,7 +2424,7 @@
               <ref role="3cqZAo" node="1I7wo92VSwS" resolve="diag" />
             </node>
             <node concept="3Tsc0h" id="1I7wo92WerN" role="2OqNvi">
-              <ref role="3TtcxE" to="oqaz:1oekUjiapA7" />
+              <ref role="3TtcxE" to="oqaz:1oekUjiapA7" resolve="content" />
             </node>
           </node>
           <node concept="3clFbS" id="1I7wo92Wb2x" role="2LFqv$">
@@ -2685,12 +2685,12 @@
               <node concept="3cpWsn" id="1oekUji9Ft9" role="3cpWs9">
                 <property role="TrG5h" value="component" />
                 <node concept="3uibUv" id="1oekUji9Fta" role="1tU5fm">
-                  <ref role="3uigEE" node="4Fc3$ZqVApf" resolve="ImageComponent" />
+                  <ref role="3uigEE" node="4Fc3$ZqVApf" resolve="DiagramJComponentBuilder.ImageComponent" />
                 </node>
                 <node concept="2ShNRf" id="1oekUji9Ftb" role="33vP2m">
                   <node concept="HV5vD" id="1oekUji9Ftc" role="2ShVmc">
                     <property role="373rjd" value="true" />
-                    <ref role="HV5vE" node="4Fc3$ZqVApf" resolve="ImageComponent" />
+                    <ref role="HV5vE" node="4Fc3$ZqVApf" resolve="DiagramJComponentBuilder.ImageComponent" />
                   </node>
                 </node>
               </node>
@@ -2723,7 +2723,7 @@
                     <node concept="17QB3L" id="1oekUji9Ftp" role="1tU5fm" />
                     <node concept="2YIFZM" id="1oekUji9Ftq" role="33vP2m">
                       <ref role="37wK5l" node="vYco6E5RVk" resolve="convertDiagramToSVG" />
-                      <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="SVG2PNGImageConverter" />
+                      <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="DiagramJComponentBuilder" />
                       <node concept="pncrf" id="1oekUji9Ftr" role="37wK5m" />
                     </node>
                   </node>
@@ -2736,7 +2736,7 @@
                     </node>
                     <node concept="2YIFZM" id="1oekUji9Ftv" role="33vP2m">
                       <ref role="37wK5l" node="4Fc3$ZqVKjz" resolve="createImageFromSVG" />
-                      <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="SVG2PNGImageConverter" />
+                      <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="DiagramJComponentBuilder" />
                       <node concept="37vLTw" id="1oekUji9Ftw" role="37wK5m">
                         <ref role="3cqZAo" node="1oekUji9Fto" resolve="svg" />
                       </node>
@@ -2759,7 +2759,7 @@
                   <node concept="37vLTI" id="1oekUji9FtC" role="3clFbG">
                     <node concept="2YIFZM" id="1oekUji9FtD" role="37vLTx">
                       <ref role="37wK5l" node="vYco6EtkLx" resolve="scaleImage" />
-                      <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="SVG2PNGImageConverter" />
+                      <ref role="1Pybhc" node="4Fc3$ZqUPv3" resolve="DiagramJComponentBuilder" />
                       <node concept="37vLTw" id="1oekUji9FtE" role="37wK5m">
                         <ref role="3cqZAo" node="1oekUji9Ftt" resolve="bufferedImage" />
                       </node>

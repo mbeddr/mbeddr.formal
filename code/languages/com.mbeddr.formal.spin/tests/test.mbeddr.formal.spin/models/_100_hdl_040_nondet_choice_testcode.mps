@@ -59,7 +59,7 @@
       <concept id="1714872972660411054" name="com.mbeddr.formal.spin.structure.CharLiteral" flags="ng" index="lAZ_c">
         <property id="1714872972660411076" name="value" index="lAZ$A" />
       </concept>
-      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ngI" index="2m6DZO">
+      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
         <reference id="5285453794052877261" name="var" index="2m6DZP" />
       </concept>
       <concept id="3050019586774684045" name="com.mbeddr.formal.spin.structure.GreaterEqualsExpression" flags="ng" index="2xSS$E" />
@@ -68,7 +68,7 @@
       <concept id="5430620409972500087" name="com.mbeddr.formal.spin.structure.CommentLine" flags="ng" index="Pedoa">
         <property id="5430620409972500140" name="text" index="Pedrh" />
       </concept>
-      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ngI" index="1a0DGj">
+      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
         <child id="2291855968617420240" name="tpe" index="1a0DGc" />
       </concept>
     </language>
@@ -112,7 +112,7 @@
                   <property role="lAZ$A" value="a" />
                 </node>
                 <node concept="1a0deV" id="5SGsxw7M6IJ" role="kwC57">
-                  <ref role="2m6DZP" node="5SGsxw7L3$u" resolve="charVar" />
+                  <ref role="2m6DZP" node="5SGsxw7L3$u" />
                 </node>
               </node>
             </node>
@@ -126,7 +126,7 @@
                   <property role="lAZ$A" value="b" />
                 </node>
                 <node concept="1a0deV" id="5SGsxw7M6JW" role="kwC57">
-                  <ref role="2m6DZP" node="5SGsxw7L3$u" resolve="charVar" />
+                  <ref role="2m6DZP" node="5SGsxw7L3$u" />
                 </node>
               </node>
             </node>
@@ -140,7 +140,7 @@
                   <property role="lAZ$A" value="c" />
                 </node>
                 <node concept="1a0deV" id="5SGsxw7M6Ke" role="kwC57">
-                  <ref role="2m6DZP" node="5SGsxw7L3$u" resolve="charVar" />
+                  <ref role="2m6DZP" node="5SGsxw7L3$u" />
                 </node>
               </node>
             </node>
@@ -151,7 +151,7 @@
       <node concept="1a0rUE" id="5SGsxw7M6SG" role="1a0q5x" />
       <node concept="kFIrq" id="5SGsxw7M6UD" role="1a0q5x">
         <node concept="1a0deV" id="5SGsxw7M6VE" role="Sp3na">
-          <ref role="2m6DZP" node="5SGsxw7L3$u" resolve="charVar" />
+          <ref role="2m6DZP" node="5SGsxw7L3$u" />
         </node>
       </node>
       <node concept="19KjX3" id="5SGsxw7M6Mm" role="1a0q5x">
@@ -160,7 +160,7 @@
             <property role="lAZ$A" value="d" />
           </node>
           <node concept="1a0deV" id="5SGsxw7M6Ne" role="2H9Iav">
-            <ref role="2m6DZP" node="5SGsxw7L3$u" resolve="charVar" />
+            <ref role="2m6DZP" node="5SGsxw7L3$u" />
           </node>
         </node>
       </node>
@@ -170,7 +170,7 @@
             <property role="lAZ$A" value="a" />
           </node>
           <node concept="1a0deV" id="5SGsxw7M6NR" role="2H9Iav">
-            <ref role="2m6DZP" node="5SGsxw7L3$u" resolve="charVar" />
+            <ref role="2m6DZP" node="5SGsxw7L3$u" />
           </node>
         </node>
       </node>
@@ -194,7 +194,7 @@
       <property role="TrG5h" value="h1" />
       <node concept="1a7z$V" id="cQ6ZodAmPp" role="1a0q5x">
         <node concept="1a0deV" id="cQ6ZodAmRl" role="1a7z$R">
-          <ref role="2m6DZP" node="cQ6ZodAmCD" resolve="guard" />
+          <ref role="2m6DZP" node="cQ6ZodAmCD" />
         </node>
         <node concept="1a7J9y" id="cQ6ZodAmRt" role="1a7zve">
           <node concept="2IPVmt" id="cQ6ZodAmR_" role="1a7J9z">
@@ -218,7 +218,7 @@
                   <property role="lAZ$A" value="a" />
                 </node>
                 <node concept="1a0deV" id="cQ6ZodAmAg" role="kwC57">
-                  <ref role="2m6DZP" node="cQ6ZodAmA6" resolve="charVar" />
+                  <ref role="2m6DZP" node="cQ6ZodAmA6" />
                 </node>
               </node>
             </node>
@@ -232,7 +232,7 @@
                   <property role="lAZ$A" value="b" />
                 </node>
                 <node concept="1a0deV" id="cQ6ZodAmAm" role="kwC57">
-                  <ref role="2m6DZP" node="cQ6ZodAmA6" resolve="charVar" />
+                  <ref role="2m6DZP" node="cQ6ZodAmA6" />
                 </node>
               </node>
             </node>
@@ -242,7 +242,7 @@
               <property role="2IPVms" value="1" />
             </node>
             <node concept="1a0deV" id="cQ6ZodAmHg" role="2H9Iav">
-              <ref role="2m6DZP" node="cQ6ZodAmCD" resolve="guard" />
+              <ref role="2m6DZP" node="cQ6ZodAmCD" />
             </node>
           </node>
         </node>
@@ -254,14 +254,14 @@
                   <property role="lAZ$A" value="c" />
                 </node>
                 <node concept="1a0deV" id="cQ6ZodAmAs" role="kwC57">
-                  <ref role="2m6DZP" node="cQ6ZodAmA6" resolve="charVar" />
+                  <ref role="2m6DZP" node="cQ6ZodAmA6" />
                 </node>
               </node>
             </node>
           </node>
           <node concept="2xSSBo" id="cQ6ZodAmUr" role="1pU4H0">
             <node concept="1a0deV" id="cQ6ZodAmI6" role="2H9Iav">
-              <ref role="2m6DZP" node="cQ6ZodAmCD" resolve="guard" />
+              <ref role="2m6DZP" node="cQ6ZodAmCD" />
             </node>
             <node concept="2IPVmt" id="cQ6ZodAmIo" role="2H9Ial">
               <property role="2IPVms" value="3" />
@@ -272,7 +272,7 @@
       <node concept="1a0rUE" id="cQ6ZodAmAt" role="1a0q5x" />
       <node concept="kFIrq" id="cQ6ZodAmAv" role="1a0q5x">
         <node concept="1a0deV" id="cQ6ZodAmAw" role="Sp3na">
-          <ref role="2m6DZP" node="cQ6ZodAmA6" resolve="charVar" />
+          <ref role="2m6DZP" node="cQ6ZodAmA6" />
         </node>
       </node>
       <node concept="1a0rUE" id="cQ6ZodAmUP" role="1a0q5x" />
@@ -285,7 +285,7 @@
             <property role="lAZ$A" value="c" />
           </node>
           <node concept="1a0deV" id="cQ6ZodAmA$" role="2H9Iav">
-            <ref role="2m6DZP" node="cQ6ZodAmA6" resolve="charVar" />
+            <ref role="2m6DZP" node="cQ6ZodAmA6" />
           </node>
         </node>
       </node>
@@ -295,7 +295,7 @@
             <property role="lAZ$A" value="a" />
           </node>
           <node concept="1a0deV" id="cQ6ZodAmAC" role="2H9Iav">
-            <ref role="2m6DZP" node="cQ6ZodAmA6" resolve="charVar" />
+            <ref role="2m6DZP" node="cQ6ZodAmA6" />
           </node>
         </node>
       </node>

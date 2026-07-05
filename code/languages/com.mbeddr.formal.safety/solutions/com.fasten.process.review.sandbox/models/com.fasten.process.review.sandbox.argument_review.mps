@@ -39,7 +39,7 @@
   <node concept="2hPkI3" id="5t37uj6_OCJ">
     <property role="TrG5h" value="_010_top_level_argument_review" />
     <property role="2hRKsj" value="70398" />
-    <ref role="2hPnBl" to="zbl0:5t37uj6_OCL" resolve="_010_top_level" />
+    <ref role="2hPnBl" to="zbl0:5t37uj6_OCL" />
     <node concept="2hPkIe" id="xQCLqFscko" role="2hTLal">
       <property role="2hSeYq" value="2022/08/03 22:15 MESZ" />
       <node concept="19SGf9" id="xQCLqFsckp" role="2hSaqZ">

@@ -124,10 +124,10 @@
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
-      <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="ln" index="29HgVG">
+      <concept id="1114706874351" name="jetbrains.mps.lang.generator.structure.CopySrcNodeMacro" flags="lg" index="29HgVG">
         <child id="1168024447342" name="sourceNodeQuery" index="3NFExx" />
       </concept>
-      <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="ln" index="2b32R4">
+      <concept id="1114729360583" name="jetbrains.mps.lang.generator.structure.CopySrcListMacro" flags="lg" index="2b32R4">
         <child id="1168278589236" name="sourceNodesQuery" index="2P8S$" />
       </concept>
       <concept id="1202776937179" name="jetbrains.mps.lang.generator.structure.AbandonInput_RuleConsequence" flags="lg" index="b5Tf3" />
@@ -157,7 +157,7 @@
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
         <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
-      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
+      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="lg" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
       </concept>
       <concept id="1087833466690" name="jetbrains.mps.lang.generator.structure.NodeMacro" flags="lg" index="17VmuZ">
@@ -166,14 +166,14 @@
       <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
         <child id="1169672767469" name="ruleConsequence" index="1lVwrX" />
       </concept>
-      <concept id="1133037731736" name="jetbrains.mps.lang.generator.structure.MapSrcListMacro" flags="ln" index="3ejVUv">
+      <concept id="1133037731736" name="jetbrains.mps.lang.generator.structure.MapSrcListMacro" flags="lg" index="3ejVUv">
         <child id="1168291362368" name="sourceNodesQuery" index="3_Rtg" />
         <child id="1170871384825" name="mapperFunction" index="2tnRJD" />
       </concept>
       <concept id="1167514355419" name="jetbrains.mps.lang.generator.structure.Root_MappingRule" flags="lg" index="3lhOvk">
         <reference id="1167514355421" name="template" index="3lhOvi" />
       </concept>
-      <concept id="1131073187192" name="jetbrains.mps.lang.generator.structure.MapSrcNodeMacro" flags="ln" index="1pdMLZ">
+      <concept id="1131073187192" name="jetbrains.mps.lang.generator.structure.MapSrcNodeMacro" flags="lg" index="1pdMLZ">
         <child id="1170725844563" name="mapperFunction" index="2kGFt3" />
       </concept>
       <concept id="1195499912406" name="jetbrains.mps.lang.generator.structure.MappingScript" flags="lg" index="1pmfR0">
@@ -194,18 +194,18 @@
       </concept>
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
-      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
+      <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="ig" index="3JmXsc" />
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
       </concept>
-      <concept id="3118009927543452571" name="jetbrains.mps.lang.generator.structure.TraceMacro" flags="ln" index="1M6Lop">
+      <concept id="3118009927543452571" name="jetbrains.mps.lang.generator.structure.TraceMacro" flags="lg" index="1M6Lop">
         <child id="3118009927543452625" name="sourceNodeQuery" index="1M6Lpj" />
       </concept>
-      <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="in" index="3NFfHV" />
-      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
+      <concept id="1168024337012" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodeQuery" flags="ig" index="3NFfHV" />
+      <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="lg" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
       </concept>
-      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
+      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="lg" index="1ZhdrF">
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
       </concept>
     </language>
@@ -420,7 +420,7 @@
           <node concept="1yBDGz" id="1NcemxVvT$l" role="2HcbjO">
             <node concept="dheZm" id="1NcemxVvT$_" role="1yBDGv">
               <node concept="32Ogvo" id="1NcemxVvT$v" role="2H9Iav">
-                <ref role="32Ogvr" node="1NcemxVvT$5" resolve="par" />
+                <ref role="32Ogvr" node="1NcemxVvT$5" />
                 <node concept="raruj" id="1NcemxVvT_9" role="lGtFl" />
                 <node concept="1ZhdrF" id="1NcemxVvT_b" role="lGtFl">
                   <property role="P3scX" value="001b2375-3bd5-4d5e-9958-6b3f62dc8548/1989356068341979925/1989356068341979926" />
@@ -456,7 +456,7 @@
       <ref role="30HIoZ" to="vzqj:4lva0NgJarB" resolve="AnalyzeArchitecture" />
       <node concept="gft3U" id="16k3j00_Mua" role="1lVwrX">
         <node concept="1nOERi" id="16k3j00_MP5" role="gfFT$">
-          <ref role="1nOEKr" node="7RhjhI7iPN7" resolve="flattened_system" />
+          <ref role="1nOEKr" node="7RhjhI7iPN7" />
           <node concept="1ZhdrF" id="16k3j00_MP7" role="lGtFl">
             <property role="2qtEX8" value="system" />
             <property role="P3scX" value="bf72618c-958a-47f5-9aac-3eff98d79ffd/7211928790174746324/7211928790174746397" />
@@ -493,7 +493,7 @@
       <node concept="b5Tf3" id="2l5A0OFasBf" role="1lVwrX" />
     </node>
     <node concept="3lhOvk" id="7RhjhI7hJ_9" role="3lj3bC">
-      <ref role="3lhOvi" node="7RhjhI7iPN7" resolve="flattened_system" />
+      <ref role="3lhOvi" node="7RhjhI7iPN7" />
       <ref role="30HIoZ" to="vzqj:3Cd5_MRERys" resolve="ComponentAssemblySMV" />
       <node concept="30G5F_" id="1NcemxVvsoT" role="30HLyM">
         <node concept="3clFbS" id="1NcemxVvsoU" role="2VODD2">
@@ -540,7 +540,7 @@
     </node>
     <node concept="3lhOvk" id="2l5A0OFaqEs" role="3lj3bC">
       <ref role="30HIoZ" to="vzqj:2l5A0OF7cwg" resolve="Refine" />
-      <ref role="3lhOvi" node="2l5A0OF7eAG" resolve="module_with_interface_semantics" />
+      <ref role="3lhOvi" node="2l5A0OF7eAG" />
     </node>
     <node concept="1puMqW" id="74lc1eArmXn" role="1pvy6N">
       <ref role="1puQsG" node="74lc1eAoLxX" resolve="reduceContractsToSpecs" />
@@ -837,9 +837,9 @@
         <node concept="2Hdskp" id="7RhjhI7iS6b" role="2Hfkx9">
           <property role="TrG5h" value="flattened" />
           <node concept="1zigX2" id="7RhjhI7iS6c" role="2HdssA">
-            <ref role="1zigX1" node="7RhjhI7iS5e" resolve="Flattened" />
+            <ref role="1zigX1" node="7RhjhI7iS5e" />
             <node concept="2He$iJ" id="7RhjhI7iS6d" role="1zigYY">
-              <ref role="2He$iI" node="7RhjhI7iS5T" resolve="input" />
+              <ref role="2He$iI" node="7RhjhI7iS5T" />
               <node concept="3ejVUv" id="7RhjhI7iS6e" role="lGtFl">
                 <node concept="3JmXsc" id="7RhjhI7iS6f" role="3_Rtg">
                   <node concept="3clFbS" id="7RhjhI7iS6g" role="2VODD2">
@@ -1025,9 +1025,9 @@
         <node concept="2Hdskp" id="2l5A0OF7eCI" role="2Hfkx9">
           <property role="TrG5h" value="module" />
           <node concept="1zigX2" id="2l5A0OF7eCJ" role="2HdssA">
-            <ref role="1zigX1" node="2l5A0OF7eAH" resolve="Module" />
+            <ref role="1zigX1" node="2l5A0OF7eAH" />
             <node concept="2He$iJ" id="2l5A0OF7eCK" role="1zigYY">
-              <ref role="2He$iI" node="2l5A0OF7eCl" resolve="input" />
+              <ref role="2He$iI" node="2l5A0OF7eCl" />
               <node concept="3ejVUv" id="2l5A0OF7eCL" role="lGtFl">
                 <node concept="3JmXsc" id="2l5A0OF7eCM" role="3_Rtg">
                   <node concept="3clFbS" id="2l5A0OF7eCN" role="2VODD2">

@@ -450,7 +450,7 @@
             </node>
           </node>
           <node concept="0Sh09" id="34jvijxxTF7" role="lGtFl">
-            <ref role="0Sh0a" node="34jvijxxTyO" resolve="ID_03.01" />
+            <ref role="0Sh0a" node="34jvijxxTyO" />
           </node>
         </node>
       </node>

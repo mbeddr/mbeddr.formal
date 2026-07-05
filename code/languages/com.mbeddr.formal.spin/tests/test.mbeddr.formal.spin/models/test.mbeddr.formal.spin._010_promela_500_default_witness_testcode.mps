@@ -9,7 +9,7 @@
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
       <concept id="5285453794052877353" name="com.mbeddr.formal.spin.structure.LocalVarRef" flags="ng" index="2m6Dwh" />
       <concept id="5285453794052877159" name="com.mbeddr.formal.spin.structure.PromelaLocalVariableDeclaration" flags="ng" index="2m6DXv" />
-      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ngI" index="2m6DZO">
+      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
         <reference id="5285453794052877261" name="var" index="2m6DZP" />
       </concept>
       <concept id="5285453794052597017" name="com.mbeddr.formal.spin.structure.StatementsList" flags="ng" index="2mpP4x">
@@ -46,7 +46,7 @@
       <concept id="4613921340552778828" name="com.mbeddr.formal.spin.structure.RunOperator" flags="ng" index="Xeulf">
         <reference id="4613921340552778838" name="proc" index="Xeull" />
       </concept>
-      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ngI" index="1a0DGj">
+      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
         <child id="2291855968617420240" name="tpe" index="1a0DGc" />
       </concept>
       <concept id="1112787102640204567" name="com.mbeddr.formal.spin.structure.ChoiceStatement" flags="ng" index="1kW0bI" />
@@ -86,7 +86,7 @@
                   <property role="2IPVms" value="0" />
                 </node>
                 <node concept="X83sx" id="4ZxQD5yJ_Oz" role="2H9Iav">
-                  <ref role="2m6DZP" node="4ZxQD5yJlp5" resolve="n" />
+                  <ref role="2m6DZP" node="4ZxQD5yJlp5" />
                 </node>
               </node>
             </node>
@@ -98,7 +98,7 @@
                   <property role="2IPVms" value="1" />
                 </node>
                 <node concept="X83sx" id="4ZxQD5yJAcR" role="2H9Iav">
-                  <ref role="2m6DZP" node="4ZxQD5yJlp5" resolve="n" />
+                  <ref role="2m6DZP" node="4ZxQD5yJlp5" />
                 </node>
               </node>
             </node>
@@ -112,10 +112,10 @@
         <node concept="XdJ7S" id="4ZxQD5yJw_V" role="2mpP4z">
           <node concept="1pV$CJ" id="4ZxQD5yJwXS" role="XdJ0b">
             <node concept="X83sx" id="4ZxQD5yJzdI" role="2H9Ial">
-              <ref role="2m6DZP" node="4ZxQD5yJlp5" resolve="n" />
+              <ref role="2m6DZP" node="4ZxQD5yJlp5" />
             </node>
             <node concept="2m6Dwh" id="4ZxQD5yJw_T" role="2H9Iav">
-              <ref role="2m6DZP" node="4ZxQD5yJvPT" resolve="tmp" />
+              <ref role="2m6DZP" node="4ZxQD5yJvPT" />
             </node>
           </node>
         </node>
@@ -126,7 +126,7 @@
               <property role="2IPVms" value="1" />
             </node>
             <node concept="2m6Dwh" id="4ZxQD5yJy64" role="2H9Iav">
-              <ref role="2m6DZP" node="4ZxQD5yJvPT" resolve="tmp" />
+              <ref role="2m6DZP" node="4ZxQD5yJvPT" />
             </node>
           </node>
         </node>
@@ -137,7 +137,7 @@
       <node concept="2mpP4x" id="4ZxQD5yJqg_" role="2mpP4J">
         <node concept="XdJ7S" id="4ZxQD5yJqCT" role="2mpP4z">
           <node concept="Xeulf" id="4ZxQD5yJqCR" role="XdJ0b">
-            <ref role="Xeull" node="4ZxQD5yJlp7" resolve="SUV" />
+            <ref role="Xeull" node="4ZxQD5yJlp7" />
           </node>
         </node>
       </node>

@@ -5,7 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="69b8a993-9b87-4d96-bf0c-3559f4bb0c63" name="jetbrains.mps.lang.slanguage" version="0" />
   </languages>
@@ -296,17 +296,11 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="69b8a993-9b87-4d96-bf0c-3559f4bb0c63" name="jetbrains.mps.lang.slanguage">
       <concept id="6171083915388330090" name="jetbrains.mps.lang.slanguage.structure.AspectModelRefExpression" flags="ng" index="1qvjxa">
@@ -1263,9 +1257,24 @@
       </node>
       <node concept="3Tm1VV" id="2w5Gq4UthJD" role="1B3o_S" />
       <node concept="P$JXv" id="3jaLROLw$66" role="lGtFl">
-        <node concept="TZ5HA" id="3jaLROLw$67" role="TZ5H$">
-          <node concept="1dT_AC" id="3jaLROLw$68" role="1dT_Ay">
-            <property role="1dT_AB" value="Adds a text paragraph containing 'text'." />
+        <node concept="1PaTwC" id="2nacnue1GCx" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GCy" role="1PaTwD">
+            <property role="3oM_SC" value="Adds" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCz" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GC$" role="1PaTwD">
+            <property role="3oM_SC" value="text" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GC_" role="1PaTwD">
+            <property role="3oM_SC" value="paragraph" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCA" role="1PaTwD">
+            <property role="3oM_SC" value="containing" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCB" role="1PaTwD">
+            <property role="3oM_SC" value="'text'." />
           </node>
         </node>
       </node>
@@ -1420,9 +1429,36 @@
         <ref role="3uigEE" to="wyt6:~Exception" resolve="Exception" />
       </node>
       <node concept="P$JXv" id="3jaLROLw$WK" role="lGtFl">
-        <node concept="TZ5HA" id="3jaLROLw$WL" role="TZ5H$">
-          <node concept="1dT_AC" id="3jaLROLw$WM" role="1dT_Ay">
-            <property role="1dT_AB" value="'alternateText' will be shown if the image cannot be displayed." />
+        <node concept="1PaTwC" id="2nacnue1GCC" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GCD" role="1PaTwD">
+            <property role="3oM_SC" value="'alternateText'" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCE" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCF" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCG" role="1PaTwD">
+            <property role="3oM_SC" value="shown" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCH" role="1PaTwD">
+            <property role="3oM_SC" value="if" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCI" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCJ" role="1PaTwD">
+            <property role="3oM_SC" value="image" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCK" role="1PaTwD">
+            <property role="3oM_SC" value="cannot" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCL" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCM" role="1PaTwD">
+            <property role="3oM_SC" value="displayed." />
           </node>
         </node>
       </node>
@@ -3734,9 +3770,42 @@
     <node concept="2tJIrI" id="2w5Gq4UvO9L" role="jymVt" />
     <node concept="3Tm1VV" id="2w5Gq4Uv1dB" role="1B3o_S" />
     <node concept="3UR2Jj" id="3n9jAIZJsC1" role="lGtFl">
-      <node concept="TZ5HA" id="3n9jAIZJsC2" role="TZ5H$">
-        <node concept="1dT_AC" id="3n9jAIZJsC3" role="1dT_Ay">
-          <property role="1dT_AB" value="TODO: Check similarities with com.mbeddr.formal.base.tooling.ui.CellEditorScreenshooter which is able to handle also diagrams." />
+      <node concept="1PaTwC" id="2nacnue1GCe" role="1Vez_I">
+        <node concept="3oM_SD" id="2nacnue1GCf" role="1PaTwD">
+          <property role="3oM_SC" value="TODO:" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCg" role="1PaTwD">
+          <property role="3oM_SC" value="Check" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCh" role="1PaTwD">
+          <property role="3oM_SC" value="similarities" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCi" role="1PaTwD">
+          <property role="3oM_SC" value="with" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCj" role="1PaTwD">
+          <property role="3oM_SC" value="com.mbeddr.formal.base.tooling.ui.CellEditorScreenshooter" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCk" role="1PaTwD">
+          <property role="3oM_SC" value="which" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCl" role="1PaTwD">
+          <property role="3oM_SC" value="is" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCm" role="1PaTwD">
+          <property role="3oM_SC" value="able" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCn" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCo" role="1PaTwD">
+          <property role="3oM_SC" value="handle" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCp" role="1PaTwD">
+          <property role="3oM_SC" value="also" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCq" role="1PaTwD">
+          <property role="3oM_SC" value="diagrams." />
         </node>
       </node>
     </node>
@@ -4810,9 +4879,21 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="3jaLROLwvuU" role="lGtFl">
-      <node concept="TZ5HA" id="3jaLROLwvuV" role="TZ5H$">
-        <node concept="1dT_AC" id="3jaLROLwvuW" role="1dT_Ay">
-          <property role="1dT_AB" value="Code copied form com.mbeddr.core.base ImageTrimmer" />
+      <node concept="1PaTwC" id="2nacnue1GCr" role="1Vez_I">
+        <node concept="3oM_SD" id="2nacnue1GCs" role="1PaTwD">
+          <property role="3oM_SC" value="Code" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCt" role="1PaTwD">
+          <property role="3oM_SC" value="copied" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCu" role="1PaTwD">
+          <property role="3oM_SC" value="form" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCv" role="1PaTwD">
+          <property role="3oM_SC" value="com.mbeddr.core.base" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GCw" role="1PaTwD">
+          <property role="3oM_SC" value="ImageTrimmer" />
         </node>
       </node>
     </node>
@@ -5162,9 +5243,60 @@
         </node>
       </node>
       <node concept="P$JXv" id="3jaLROLwvGn" role="lGtFl">
-        <node concept="TZ5HA" id="3jaLROLwvGo" role="TZ5H$">
-          <node concept="1dT_AC" id="3jaLROLwvGp" role="1dT_Ay">
-            <property role="1dT_AB" value="Do we know how to deal with the concepts' CellModel? If yes, then serializeCellModel will do the job." />
+        <node concept="1PaTwC" id="2nacnue1GCN" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GCO" role="1PaTwD">
+            <property role="3oM_SC" value="Do" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCP" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCQ" role="1PaTwD">
+            <property role="3oM_SC" value="know" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCR" role="1PaTwD">
+            <property role="3oM_SC" value="how" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCS" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCT" role="1PaTwD">
+            <property role="3oM_SC" value="deal" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCU" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCV" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCW" role="1PaTwD">
+            <property role="3oM_SC" value="concepts'" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCX" role="1PaTwD">
+            <property role="3oM_SC" value="CellModel?" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCY" role="1PaTwD">
+            <property role="3oM_SC" value="If" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCZ" role="1PaTwD">
+            <property role="3oM_SC" value="yes," />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GD0" role="1PaTwD">
+            <property role="3oM_SC" value="then" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GD1" role="1PaTwD">
+            <property role="3oM_SC" value="serializeCellModel" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GD2" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GD3" role="1PaTwD">
+            <property role="3oM_SC" value="do" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GD4" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GD5" role="1PaTwD">
+            <property role="3oM_SC" value="job." />
           </node>
         </node>
       </node>
@@ -5816,9 +5948,60 @@
       <node concept="10P_77" id="38aFq1jl25g" role="3clF45" />
       <node concept="3Tm1VV" id="38aFq1jl25f" role="1B3o_S" />
       <node concept="P$JXv" id="3jaLROLwxjO" role="lGtFl">
-        <node concept="TZ5HA" id="3jaLROLwxjP" role="TZ5H$">
-          <node concept="1dT_AC" id="3jaLROLwxjQ" role="1dT_Ay">
-            <property role="1dT_AB" value="Do we know how to deal with the concepts' CellModel? If yes, then serializeCellModel will do the job." />
+        <node concept="1PaTwC" id="2nacnue1GD6" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GD7" role="1PaTwD">
+            <property role="3oM_SC" value="Do" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GD8" role="1PaTwD">
+            <property role="3oM_SC" value="we" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GD9" role="1PaTwD">
+            <property role="3oM_SC" value="know" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDa" role="1PaTwD">
+            <property role="3oM_SC" value="how" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDb" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDc" role="1PaTwD">
+            <property role="3oM_SC" value="deal" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDd" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDe" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDf" role="1PaTwD">
+            <property role="3oM_SC" value="concepts'" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDg" role="1PaTwD">
+            <property role="3oM_SC" value="CellModel?" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDh" role="1PaTwD">
+            <property role="3oM_SC" value="If" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDi" role="1PaTwD">
+            <property role="3oM_SC" value="yes," />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDj" role="1PaTwD">
+            <property role="3oM_SC" value="then" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDk" role="1PaTwD">
+            <property role="3oM_SC" value="serializeCellModel" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDl" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDm" role="1PaTwD">
+            <property role="3oM_SC" value="do" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDn" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GDo" role="1PaTwD">
+            <property role="3oM_SC" value="job." />
           </node>
         </node>
       </node>

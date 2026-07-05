@@ -11,7 +11,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
@@ -525,17 +525,11 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -4900,9 +4894,27 @@
         </node>
       </node>
       <node concept="P$JXv" id="1y75Pbzy1u4" role="lGtFl">
-        <node concept="TZ5HA" id="1y75Pbzy1u2" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75Pbzy1u3" role="1dT_Ay">
-            <property role="1dT_AB" value="Make sure that corresponding connections are deleted." />
+        <node concept="1PaTwC" id="2nacnue1GZq" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GZr" role="1PaTwD">
+            <property role="3oM_SC" value="Make" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZs" role="1PaTwD">
+            <property role="3oM_SC" value="sure" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZt" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZu" role="1PaTwD">
+            <property role="3oM_SC" value="corresponding" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZv" role="1PaTwD">
+            <property role="3oM_SC" value="connections" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZw" role="1PaTwD">
+            <property role="3oM_SC" value="are" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZx" role="1PaTwD">
+            <property role="3oM_SC" value="deleted." />
           </node>
         </node>
       </node>
@@ -7518,9 +7530,39 @@
         <ref role="3uigEE" to="nkm5:6clvLV1YfKy" resolve="IConnectionEndpoint" />
       </node>
       <node concept="3UR2Jj" id="1y75Pbzy1u7" role="lGtFl">
-        <node concept="TZ5HA" id="1y75Pbzy1u5" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75Pbzy1u6" role="1dT_Ay">
-            <property role="1dT_AB" value="Fake implementation of IConnectionEndpoint to be able to use the connection-factories." />
+        <node concept="1PaTwC" id="2nacnue1GZe" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GZf" role="1PaTwD">
+            <property role="3oM_SC" value="Fake" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZg" role="1PaTwD">
+            <property role="3oM_SC" value="implementation" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZh" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZi" role="1PaTwD">
+            <property role="3oM_SC" value="IConnectionEndpoint" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZj" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZk" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZl" role="1PaTwD">
+            <property role="3oM_SC" value="able" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZm" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZn" role="1PaTwD">
+            <property role="3oM_SC" value="use" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZo" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GZp" role="1PaTwD">
+            <property role="3oM_SC" value="connection-factories." />
           </node>
         </node>
       </node>

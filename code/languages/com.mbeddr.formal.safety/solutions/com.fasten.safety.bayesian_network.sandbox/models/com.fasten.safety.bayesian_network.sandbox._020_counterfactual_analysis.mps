@@ -110,37 +110,37 @@
           <node concept="1GS8Ag" id="1FIaLPf3Pkd" role="1GS8A2">
             <property role="1GU8sQ" value="0.999" />
             <node concept="1GS8Aj" id="1FIaLPf3PkT" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjC" resolve="false" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjC" />
             </node>
             <node concept="1GS8Aj" id="1FIaLPf3PkU" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjG" resolve="false" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjG" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3Pke" role="1GS8A2">
             <property role="1GU8sQ" value="0.97" />
             <node concept="1GS8Aj" id="1FIaLPf3PkV" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjC" resolve="false" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjC" />
             </node>
             <node concept="1GS8Aj" id="1FIaLPf3PkW" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjH" resolve="true" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjH" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3Pkf" role="1GS8A2">
             <property role="1GU8sQ" value="0.98" />
             <node concept="1GS8Aj" id="1FIaLPf3PkX" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjD" resolve="true" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjD" />
             </node>
             <node concept="1GS8Aj" id="1FIaLPf3PkY" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjG" resolve="false" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjG" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3Pkg" role="1GS8A2">
             <property role="1GU8sQ" value="0.95" />
             <node concept="1GS8Aj" id="1FIaLPf3PkZ" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjD" resolve="true" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjD" />
             </node>
             <node concept="1GS8Aj" id="1FIaLPf3Pl0" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjH" resolve="true" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjH" />
             </node>
           </node>
         </node>
@@ -149,37 +149,37 @@
           <node concept="1GS8Ag" id="1FIaLPf3Pkh" role="1GS8A2">
             <property role="1GU8sQ" value="0.001" />
             <node concept="1GS8Aj" id="1FIaLPf3Pl1" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjC" resolve="false" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjC" />
             </node>
             <node concept="1GS8Aj" id="1FIaLPf3Pl2" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjG" resolve="false" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjG" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3Pki" role="1GS8A2">
             <property role="1GU8sQ" value="0.03" />
             <node concept="1GS8Aj" id="1FIaLPf3Pl3" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjC" resolve="false" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjC" />
             </node>
             <node concept="1GS8Aj" id="1FIaLPf3Pl4" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjH" resolve="true" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjH" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3Pkj" role="1GS8A2">
             <property role="1GU8sQ" value="0.02" />
             <node concept="1GS8Aj" id="1FIaLPf3Pl5" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjD" resolve="true" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjD" />
             </node>
             <node concept="1GS8Aj" id="1FIaLPf3Pl6" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjG" resolve="false" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjG" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3Pkk" role="1GS8A2">
             <property role="1GU8sQ" value="0.05" />
             <node concept="1GS8Aj" id="1FIaLPf3Pl7" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjD" resolve="true" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjD" />
             </node>
             <node concept="1GS8Aj" id="1FIaLPf3Pl8" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjH" resolve="true" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjH" />
             </node>
           </node>
         </node>
@@ -615,12 +615,12 @@
       </node>
     </node>
     <node concept="W0abB" id="1FIaLPf3Pj2" role="W0VcW">
-      <ref role="W0abx" node="1FIaLPf3PiY" resolve="Roots" />
-      <ref role="W0abz" node="1FIaLPf3PiZ" resolve="Interior Erosion" />
+      <ref role="W0abx" node="1FIaLPf3PiY" />
+      <ref role="W0abz" node="1FIaLPf3PiZ" />
     </node>
     <node concept="W0abB" id="1FIaLPf3Pj3" role="W0VcW">
-      <ref role="W0abx" node="1FIaLPf3Pj0" resolve="Animal Tunnels" />
-      <ref role="W0abz" node="1FIaLPf3PiZ" resolve="Interior Erosion" />
+      <ref role="W0abx" node="1FIaLPf3Pj0" />
+      <ref role="W0abz" node="1FIaLPf3PiZ" />
     </node>
     <node concept="W0ak8" id="1FIaLPf3Pj4" role="W0VcW">
       <property role="TrG5h" value="Inspection" />
@@ -630,13 +630,13 @@
           <node concept="1GS8Ag" id="1FIaLPf3PkL" role="1GS8A2">
             <property role="1GU8sQ" value="0.9" />
             <node concept="1GS8Aj" id="1FIaLPf3Pl9" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjE" resolve="false" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjE" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3PkM" role="1GS8A2">
             <property role="1GU8sQ" value="0.2" />
             <node concept="1GS8Aj" id="1FIaLPf3Pla" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjF" resolve="true" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjF" />
             </node>
           </node>
         </node>
@@ -645,13 +645,13 @@
           <node concept="1GS8Ag" id="1FIaLPf3PkN" role="1GS8A2">
             <property role="1GU8sQ" value="0.1" />
             <node concept="1GS8Aj" id="1FIaLPf3Plb" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjE" resolve="false" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjE" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3PkO" role="1GS8A2">
             <property role="1GU8sQ" value="0.8" />
             <node concept="1GS8Aj" id="1FIaLPf3Plc" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjF" resolve="true" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjF" />
             </node>
           </node>
         </node>
@@ -665,13 +665,13 @@
           <node concept="1GS8Ag" id="1FIaLPf3PkP" role="1GS8A2">
             <property role="1GU8sQ" value="0.9999" />
             <node concept="1GS8Aj" id="1FIaLPf3Pld" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjE" resolve="false" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjE" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3PkQ" role="1GS8A2">
             <property role="1GU8sQ" value="0.95" />
             <node concept="1GS8Aj" id="1FIaLPf3Ple" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjF" resolve="true" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjF" />
             </node>
           </node>
         </node>
@@ -680,39 +680,39 @@
           <node concept="1GS8Ag" id="1FIaLPf3PkR" role="1GS8A2">
             <property role="1GU8sQ" value="0.0001" />
             <node concept="1GS8Aj" id="1FIaLPf3Plf" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjE" resolve="false" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjE" />
             </node>
           </node>
           <node concept="1GS8Ag" id="1FIaLPf3PkS" role="1GS8A2">
             <property role="1GU8sQ" value="0.05" />
             <node concept="1GS8Aj" id="1FIaLPf3Plg" role="1GS8A3">
-              <ref role="1GS8Ai" node="1FIaLPf3PjF" resolve="true" />
+              <ref role="1GS8Ai" node="1FIaLPf3PjF" />
             </node>
           </node>
         </node>
       </node>
     </node>
     <node concept="W0abB" id="1FIaLPf3Pj6" role="W0VcW">
-      <ref role="W0abx" node="1FIaLPf3PiZ" resolve="Interior Erosion" />
-      <ref role="W0abz" node="1FIaLPf3Pj4" resolve="Inspection" />
+      <ref role="W0abx" node="1FIaLPf3PiZ" />
+      <ref role="W0abz" node="1FIaLPf3Pj4" />
     </node>
     <node concept="W0abB" id="1FIaLPf3Pj7" role="W0VcW">
-      <ref role="W0abx" node="1FIaLPf3PiZ" resolve="Interior Erosion" />
-      <ref role="W0abz" node="1FIaLPf3Pj5" resolve="Levee Failure" />
+      <ref role="W0abx" node="1FIaLPf3PiZ" />
+      <ref role="W0abz" node="1FIaLPf3Pj5" />
     </node>
     <node concept="3VDB7u" id="7TuRmu62Br1" role="2WHcHu">
-      <ref role="3VDB7s" node="1FIaLPf5GO5" resolve="animals_true" />
+      <ref role="3VDB7s" node="1FIaLPf5GO5" />
     </node>
   </node>
   <node concept="1lTGV2" id="1FIaLPf5GO4">
     <property role="TrG5h" value="_100_agena_example_network_scenarios" />
-    <ref role="1lYeoq" node="1FIaLPf3PiX" resolve="_100_agena_example_network" />
+    <ref role="1lYeoq" node="1FIaLPf3PiX" />
     <node concept="1lTGVW" id="1FIaLPf5GO5" role="1lTGVY">
       <property role="TrG5h" value="animals_true" />
       <node concept="1lTGnW" id="1FIaLPf5GO6" role="1lTGgc">
-        <ref role="1lTGnK" node="1FIaLPf3Pj0" resolve="Animal Tunnels" />
+        <ref role="1lTGnK" node="1FIaLPf3Pj0" />
         <node concept="1GS8Aj" id="7TuRmu5WoTX" role="1lTGnM">
-          <ref role="1GS8Ai" node="1FIaLPf3PjH" resolve="true" />
+          <ref role="1GS8Ai" node="1FIaLPf3PjH" />
         </node>
       </node>
     </node>

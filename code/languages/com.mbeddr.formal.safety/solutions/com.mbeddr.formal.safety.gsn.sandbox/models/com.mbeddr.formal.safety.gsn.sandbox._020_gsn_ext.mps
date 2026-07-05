@@ -17,7 +17,7 @@
         <child id="4266958635905312315" name="text" index="2vnaTY" />
       </concept>
       <concept id="2392944874759792240" name="com.mbeddr.formal.safety.gsn.ext.structure.SupportedByConnectionPattern" flags="ng" index="1a4Pjv" />
-      <concept id="2392944874760086914" name="com.mbeddr.formal.safety.gsn.ext.structure.IGsnConnectionPattern" flags="ngI" index="1a7XsH">
+      <concept id="2392944874760086914" name="com.mbeddr.formal.safety.gsn.ext.structure.IGsnConnectionPattern" flags="ng" index="1a7XsH">
         <property id="2392944874759792243" name="max" index="1a4Pjs" />
         <property id="2392944874759792241" name="min" index="1a4Pju" />
       </concept>
@@ -25,7 +25,7 @@
       <concept id="8790599356044273577" name="com.mbeddr.formal.safety.gsn.ext.structure.OrEntity" flags="ng" index="1idpKz" />
       <concept id="9296093157844055" name="com.mbeddr.formal.safety.gsn.ext.structure.LibraryGoalRef" flags="ng" index="1qmubC" />
       <concept id="9296093157844054" name="com.mbeddr.formal.safety.gsn.ext.structure.LibraryDefinition" flags="ng" index="1qmubD" />
-      <concept id="9296093158641125" name="com.mbeddr.formal.safety.gsn.ext.structure.ILibraryEntityRef" flags="ngI" index="1qD0Hq">
+      <concept id="9296093158641125" name="com.mbeddr.formal.safety.gsn.ext.structure.ILibraryEntityRef" flags="ng" index="1qD0Hq">
         <property id="6819900272921924768" name="forceSynchronizationWithDefinition" index="1HJfea" />
         <reference id="9296093158689453" name="entityDefinition" index="1qDcKi" />
       </concept>
@@ -54,10 +54,10 @@
       </concept>
     </language>
     <language id="17da266c-02d9-4bbd-b69b-8a656b49f45c" name="com.mbeddr.formal.safety.hara">
-      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ngI" index="8gIbR">
+      <concept id="9102875167978228299" name="com.mbeddr.formal.safety.hara.structure.IHazardLike" flags="ng" index="8gIbR">
         <property id="3226630706269685486" name="id" index="0lsPA" />
       </concept>
-      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ngI" index="8gIbW">
+      <concept id="9102875167978228288" name="com.mbeddr.formal.safety.hara.structure.IHazardsContainer" flags="ng" index="8gIbW">
         <child id="9102875167978228305" name="hazards" index="8gIbH" />
       </concept>
       <concept id="9102875167978180720" name="com.mbeddr.formal.safety.hara.structure.Hazard" flags="ng" index="8gVzc" />
@@ -79,7 +79,7 @@
       <concept id="2210355370893864968" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.URLEvidenceDocument" flags="ng" index="2Fbr9R">
         <property id="2210355370893864971" name="url" index="2Fbr9O" />
       </concept>
-      <concept id="2210355370893864965" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.IExternalRessourceDocument" flags="ngI" index="2Fbr9U">
+      <concept id="2210355370893864965" name="com.mbeddr.formal.safety.gsn.external_evidence.structure.IExternalRessourceDocument" flags="ng" index="2Fbr9U">
         <child id="2210355370893974680" name="explanation" index="2FbXVB" />
       </concept>
     </language>
@@ -473,14 +473,14 @@
       </node>
     </node>
     <node concept="3VeUTF" id="24PsEXFb8ph" role="2vhqc$">
-      <ref role="3VeSjP" node="1qrXfdH2gD1" resolve="HAZ_PAT_001" />
-      <ref role="3VeSjQ" node="1qrXfdH2gDu" resolve="HAZ_PAT_002" />
+      <ref role="3VeSjP" node="1qrXfdH2gD1" />
+      <ref role="3VeSjQ" node="1qrXfdH2gDu" />
     </node>
     <node concept="1a4Pjv" id="24PsEXFb8qG" role="2vhqc$">
       <property role="1a4Pju" value="1" />
       <property role="1a4Pjs" value="n" />
-      <ref role="3VeSjP" node="1qrXfdH2gDu" resolve="HAZ_PAT_002" />
-      <ref role="3VeSjQ" node="24PsEXFb0AU" resolve="HAZ_PAT_003" />
+      <ref role="3VeSjP" node="1qrXfdH2gDu" />
+      <ref role="3VeSjQ" node="24PsEXFb0AU" />
     </node>
     <node concept="2vmxSQ" id="35$gPpxcyFs" role="2vn1q5">
       <property role="TrG5h" value="HAZ_PAT_004" />
@@ -493,8 +493,8 @@
     <node concept="1giVVN" id="35$gPpxcyH0" role="2vhqc$">
       <property role="1a4Pju" value="1" />
       <property role="1a4Pjs" value="n" />
-      <ref role="3VeSjP" node="1qrXfdH2gD1" resolve="HAZ_PAT_001" />
-      <ref role="3VeSjQ" node="35$gPpxcyFs" resolve="HAZ_PAT_004" />
+      <ref role="3VeSjP" node="1qrXfdH2gD1" />
+      <ref role="3VeSjQ" node="35$gPpxcyFs" />
     </node>
   </node>
   <node concept="2vn7XN" id="24PsEXFbjMi">
@@ -735,7 +735,7 @@
     </node>
     <node concept="1VB52A" id="WKGDODNDr2" role="2vn1q5">
       <property role="TrG5h" value="PAT_001" />
-      <ref role="AygKy" node="1qrXfdH2gCU" resolve="_010_argument_over_hazards_baselang_pattern" />
+      <ref role="AygKy" node="1qrXfdH2gCU" />
       <node concept="2vn7XN" id="WKGDODNDr3" role="1VB584">
         <node concept="2vn7WC" id="WKGDODNDr4" role="2vn1q5">
           <property role="TrG5h" value="PAT_002" />
@@ -770,16 +770,16 @@
           </node>
         </node>
         <node concept="3VeUTF" id="WKGDODNDre" role="2vhqc$">
-          <ref role="3VeSjP" node="WKGDODNDr4" resolve="PAT_002" />
-          <ref role="3VeSjQ" node="WKGDODNDr7" resolve="PAT_003" />
+          <ref role="3VeSjP" node="WKGDODNDr4" />
+          <ref role="3VeSjQ" node="WKGDODNDr7" />
         </node>
         <node concept="3VeUTF" id="WKGDODNDrg" role="2vhqc$">
-          <ref role="3VeSjP" node="WKGDODNDr7" resolve="PAT_003" />
-          <ref role="3VeSjQ" node="WKGDODNDra" resolve="PAT_004" />
+          <ref role="3VeSjP" node="WKGDODNDr7" />
+          <ref role="3VeSjQ" node="WKGDODNDra" />
         </node>
         <node concept="2vhqFZ" id="WKGDODNDri" role="2vhqc$">
-          <ref role="3VeSjP" node="WKGDODNDr4" resolve="PAT_002" />
-          <ref role="3VeSjQ" node="WKGDODNDrd" resolve="PAT_005" />
+          <ref role="3VeSjP" node="WKGDODNDr4" />
+          <ref role="3VeSjQ" node="WKGDODNDrd" />
         </node>
         <node concept="37mRI7" id="WKGDODNDs$" role="lGtFl">
           <node concept="37mRIm" id="WKGDODNDs_" role="37mRID">
@@ -974,12 +974,12 @@
           </node>
         </node>
         <node concept="3VeUTF" id="WKGDODNEt0" role="2vhqc$">
-          <ref role="3VeSjP" node="WKGDODNDr7" resolve="PAT_003" />
-          <ref role="3VeSjQ" node="WKGDODNEs3" resolve="PAT_006" />
+          <ref role="3VeSjP" node="WKGDODNDr7" />
+          <ref role="3VeSjQ" node="WKGDODNEs3" />
         </node>
         <node concept="3VeUTF" id="WKGDODNEA6" role="2vhqc$">
-          <ref role="3VeSjP" node="WKGDODNDra" resolve="PAT_004" />
-          <ref role="3VeSjQ" node="WKGDODNE$g" resolve="PAT_008" />
+          <ref role="3VeSjP" node="WKGDODNDra" />
+          <ref role="3VeSjQ" node="WKGDODNE$g" />
         </node>
       </node>
       <node concept="19SGf9" id="25jECTPZSdz" role="2vnaTZ">
@@ -989,8 +989,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="WKGDODODnw" role="2vhqc$">
-      <ref role="3VeSjP" node="WKGDODNE$g" resolve="PAT_008" />
-      <ref role="3VeSjQ" node="WKGDODNEu7" resolve="PAT_007" />
+      <ref role="3VeSjP" node="WKGDODNE$g" />
+      <ref role="3VeSjQ" node="WKGDODNEu7" />
     </node>
     <node concept="2vn7WC" id="WKGDODNEu7" role="2vn1q5">
       <property role="TrG5h" value="PAT_007" />
@@ -1184,8 +1184,8 @@
       </node>
     </node>
     <node concept="3VeUTF" id="25jECTPZsRK" role="2vhqc$">
-      <ref role="3VeSjP" node="25jECTPZsPX" resolve="G1" />
-      <ref role="3VeSjQ" node="25jECTPZsQq" resolve="Str1" />
+      <ref role="3VeSjP" node="25jECTPZsPX" />
+      <ref role="3VeSjQ" node="25jECTPZsQq" />
     </node>
     <node concept="1idpKz" id="25jECTPZsSE" role="2vn1q5">
       <property role="TrG5h" value="OR_Example" />
@@ -1220,20 +1220,20 @@
       </node>
     </node>
     <node concept="3VeUTF" id="25jECTPZsVG" role="2vhqc$">
-      <ref role="3VeSjP" node="25jECTPZsQq" resolve="Str1" />
-      <ref role="3VeSjQ" node="25jECTPZsUH" resolve="G2" />
+      <ref role="3VeSjP" node="25jECTPZsQq" />
+      <ref role="3VeSjQ" node="25jECTPZsUH" />
     </node>
     <node concept="3VeUTF" id="25jECTPZsWP" role="2vhqc$">
-      <ref role="3VeSjP" node="25jECTPZsQq" resolve="Str1" />
-      <ref role="3VeSjQ" node="25jECTPZsSE" resolve="OR_Example" />
+      <ref role="3VeSjP" node="25jECTPZsQq" />
+      <ref role="3VeSjQ" node="25jECTPZsSE" />
     </node>
     <node concept="3VeUTF" id="25jECTPZsYo" role="2vhqc$">
-      <ref role="3VeSjP" node="25jECTPZsSE" resolve="OR_Example" />
-      <ref role="3VeSjQ" node="25jECTPZsSZ" resolve="G3" />
+      <ref role="3VeSjP" node="25jECTPZsSE" />
+      <ref role="3VeSjQ" node="25jECTPZsSZ" />
     </node>
     <node concept="3VeUTF" id="25jECTPZsZQ" role="2vhqc$">
-      <ref role="3VeSjP" node="25jECTPZsSE" resolve="OR_Example" />
-      <ref role="3VeSjQ" node="25jECTPZsTU" resolve="G4" />
+      <ref role="3VeSjP" node="25jECTPZsSE" />
+      <ref role="3VeSjQ" node="25jECTPZsTU" />
     </node>
   </node>
   <node concept="1qmubD" id="x1FXqw_v7">
@@ -1342,7 +1342,7 @@
         </node>
         <node concept="lVOro" id="56pBK14uNRA" role="19SJt6">
           <property role="lVOrt" value="hazard" />
-          <ref role="lVOrv" node="5l6J5csSGJ1" resolve="Unintended acceleration" />
+          <ref role="lVOrv" node="5l6J5csSGJ1" />
         </node>
         <node concept="19SUe$" id="6FJpOMATMYf" role="19SJt6">
           <property role="19SUeA" value="&#10;has been mitigated." />
@@ -1406,7 +1406,7 @@
     </node>
     <node concept="1qmubC" id="x1FXq_mpP" role="2vn1q5">
       <property role="TrG5h" value="Lib_Goal_01 Ref" />
-      <ref role="1qDcKi" node="x1FXqw_vf" resolve="Goal_Root_Causes_Ident" />
+      <ref role="1qDcKi" node="x1FXqw_vf" />
       <node concept="19SGf9" id="5U_9MCNb1Gw" role="2vnaTZ">
         <node concept="19SUe$" id="5U_9MCNb1Gx" role="19SJt6">
           <property role="19SUeA" value="All root causes of hazards&#10;associated to " />
@@ -1426,7 +1426,7 @@
     <node concept="1qD0H$" id="5U_9MCNb1He" role="2vn1q5">
       <property role="TrG5h" value="Strategy_Systematic_HARA Ref" />
       <property role="1HJfea" value="true" />
-      <ref role="1qDcKi" node="x1FXqy4aq" resolve="Strategy_Systematic_HARA" />
+      <ref role="1qDcKi" node="x1FXqy4aq" />
       <node concept="19SGf9" id="5U_9MCNb1IP" role="2vnaTZ">
         <node concept="19SUe$" id="5U_9MCNb1IQ" role="19SJt6">
           <property role="19SUeA" value="We use a systematic approach &#10;for the hazard analysis." />

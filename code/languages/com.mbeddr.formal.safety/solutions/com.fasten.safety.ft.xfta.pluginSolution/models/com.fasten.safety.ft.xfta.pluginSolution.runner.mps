@@ -2,7 +2,7 @@
 <model ref="r:6e99ad70-095a-4dfc-9cd7-6fd79b5cd071(com.fasten.safety.ft.xfta.pluginSolution.runner)">
   <persistence version="9" />
   <languages>
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -144,15 +144,9 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -381,9 +375,36 @@
         </node>
       </node>
       <node concept="P$JXv" id="1y75PbzycUJ" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycUH" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycUI" role="1dT_Ay">
-            <property role="1dT_AB" value="Runs XFTA on a given file and with additional arguments." />
+        <node concept="1PaTwC" id="2nacnue1Hpe" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1Hpf" role="1PaTwD">
+            <property role="3oM_SC" value="Runs" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hpg" role="1PaTwD">
+            <property role="3oM_SC" value="XFTA" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hph" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hpi" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hpj" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hpk" role="1PaTwD">
+            <property role="3oM_SC" value="file" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hpl" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hpm" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hpn" role="1PaTwD">
+            <property role="3oM_SC" value="additional" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hpo" role="1PaTwD">
+            <property role="3oM_SC" value="arguments." />
           </node>
         </node>
       </node>
@@ -493,9 +514,12 @@
         </node>
       </node>
       <node concept="P$JXv" id="1y75PbzycUM" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycUK" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycUL" role="1dT_Ay">
-            <property role="1dT_AB" value="Rund XFTA" />
+        <node concept="1PaTwC" id="2nacnue1Hpp" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1Hpq" role="1PaTwD">
+            <property role="3oM_SC" value="Rund" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hpr" role="1PaTwD">
+            <property role="3oM_SC" value="XFTA" />
           </node>
         </node>
       </node>

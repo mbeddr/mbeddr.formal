@@ -5,7 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="479c7a8c-02f9-43b5-9139-d910cb22f298" name="jetbrains.mps.core.xml" version="0" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -166,14 +166,8 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
@@ -198,6 +192,14 @@
         <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
+      </concept>
+    </language>
   </registry>
   <node concept="312cEu" id="7836$RyWTGT">
     <property role="TrG5h" value="OpenFastenTutorialProjectAction" />
@@ -214,9 +216,39 @@
         <property role="Xl_RC" value="tutorial" />
       </node>
       <node concept="z59LJ" id="1y75PbzycUw" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycUu" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycUv" role="1dT_Ay">
-            <property role="1dT_AB" value="The directory in the FASTEN installation where the tutorial is located." />
+        <node concept="1PaTwC" id="2nacnue1GBo" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GBp" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBq" role="1PaTwD">
+            <property role="3oM_SC" value="directory" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBr" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBs" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBt" role="1PaTwD">
+            <property role="3oM_SC" value="FASTEN" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBu" role="1PaTwD">
+            <property role="3oM_SC" value="installation" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBv" role="1PaTwD">
+            <property role="3oM_SC" value="where" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBw" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBx" role="1PaTwD">
+            <property role="3oM_SC" value="tutorial" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBy" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBz" role="1PaTwD">
+            <property role="3oM_SC" value="located." />
           </node>
         </node>
       </node>
@@ -804,9 +836,39 @@
         <property role="Xl_RC" value="tutorial-safety" />
       </node>
       <node concept="z59LJ" id="1y75PbzycUz" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycUx" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycUy" role="1dT_Ay">
-            <property role="1dT_AB" value="The directory in the FASTEN installation where the safety-tutorial is located." />
+        <node concept="1PaTwC" id="2nacnue1GB$" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GB_" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBA" role="1PaTwD">
+            <property role="3oM_SC" value="directory" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBB" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBC" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBD" role="1PaTwD">
+            <property role="3oM_SC" value="FASTEN" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBE" role="1PaTwD">
+            <property role="3oM_SC" value="installation" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBF" role="1PaTwD">
+            <property role="3oM_SC" value="where" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBG" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBH" role="1PaTwD">
+            <property role="3oM_SC" value="safety-tutorial" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBI" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBJ" role="1PaTwD">
+            <property role="3oM_SC" value="located." />
           </node>
         </node>
       </node>

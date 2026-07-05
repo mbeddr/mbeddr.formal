@@ -21,7 +21,7 @@
         <child id="7240923401194766808" name="r" index="12uYMw" />
         <child id="7240923401194766806" name="q" index="12uYMI" />
       </concept>
-      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ngI" index="3z0uXf">
+      <concept id="6544290145033523833" name="com.mbeddr.formal.req.tl_patterns.structure.ITLPropertyContainer" flags="ng" index="3z0uXf">
         <child id="6544290145033523834" name="specs" index="3z0uXc" />
       </concept>
     </language>

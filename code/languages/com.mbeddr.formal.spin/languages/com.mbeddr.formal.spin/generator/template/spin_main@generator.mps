@@ -61,7 +61,7 @@
         <child id="5285453794052877280" name="lhs" index="2m6DZo" />
         <child id="5285453794052877282" name="rhs" index="2m6DZq" />
       </concept>
-      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ngI" index="2m6DZO">
+      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
         <reference id="5285453794052877261" name="var" index="2m6DZP" />
       </concept>
       <concept id="5285453794052597017" name="com.mbeddr.formal.spin.structure.StatementsList" flags="ng" index="2mpP4x">
@@ -85,7 +85,7 @@
       <concept id="4613921340551921915" name="com.mbeddr.formal.spin.structure.ExpressionStatement" flags="ng" index="XdJ7S">
         <child id="4613921340551921928" name="exp" index="XdJ0b" />
       </concept>
-      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ngI" index="1a0DGj">
+      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
         <child id="2291855968617420240" name="tpe" index="1a0DGc" />
       </concept>
       <concept id="2291855968618030330" name="com.mbeddr.formal.spin.structure.ProcRef" flags="ng" index="1a66CA">
@@ -107,7 +107,7 @@
         <reference id="1167169349424" name="applicableConcept" index="30HIoZ" />
         <child id="1167169362365" name="conditionFunction" index="30HLyM" />
       </concept>
-      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="ln" index="17Uvod">
+      <concept id="1087833241328" name="jetbrains.mps.lang.generator.structure.PropertyMacro" flags="lg" index="17Uvod">
         <child id="1167756362303" name="propertyValueFunction" index="3zH0cK" />
       </concept>
       <concept id="1167327847730" name="jetbrains.mps.lang.generator.structure.Reduction_MappingRule" flags="lg" index="3aamgX">
@@ -118,7 +118,7 @@
       <concept id="8900764248744213868" name="jetbrains.mps.lang.generator.structure.InlineTemplateWithContext_RuleConsequence" flags="lg" index="1Koe21">
         <child id="8900764248744213871" name="contentNode" index="1Koe22" />
       </concept>
-      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="ln" index="1ZhdrF">
+      <concept id="1088761943574" name="jetbrains.mps.lang.generator.structure.ReferenceMacro" flags="lg" index="1ZhdrF">
         <child id="1167770376702" name="referentFunction" index="3$ytzL" />
       </concept>
     </language>
@@ -284,9 +284,9 @@
                 <node concept="2mpP4x" id="4sMKqP$UhMv" role="Sp3lf">
                   <node concept="2m6DZN" id="4sMKqP$UhNz" role="2mpP4z">
                     <node concept="1a66CA" id="4sMKqP$UhNv" role="2m6DZo">
-                      <ref role="1a66Jj" node="4sMKqP$UhM9" resolve="pt" />
+                      <ref role="1a66Jj" node="4sMKqP$UhM9" />
                       <node concept="2m6Dwh" id="4sMKqP$UhNE" role="32OYtT">
-                        <ref role="2m6DZP" node="4sMKqP$UhN5" resolve="b" />
+                        <ref role="2m6DZP" node="4sMKqP$UhN5" />
                         <node concept="1ZhdrF" id="4sMKqP$UkGp" role="lGtFl">
                           <property role="P3scX" value="ad8d48af-022b-40dc-8979-2b76074fb438/5285453794052877260/5285453794052877261" />
                           <property role="2qtEX8" value="var" />
@@ -438,7 +438,7 @@
                   <node concept="XdJ7S" id="3q_k9iFQskX" role="2mpP4z">
                     <node concept="2t4DN0" id="3q_k9iFQskT" role="XdJ0b">
                       <node concept="X83sx" id="3q_k9iFQsAx" role="32OYtT">
-                        <ref role="2m6DZP" node="3q_k9iFQpvb" resolve="global" />
+                        <ref role="2m6DZP" node="3q_k9iFQpvb" />
                         <node concept="1ZhdrF" id="3q_k9iFQtY8" role="lGtFl">
                           <property role="2qtEX8" value="var" />
                           <property role="P3scX" value="ad8d48af-022b-40dc-8979-2b76074fb438/5285453794052877260/5285453794052877261" />

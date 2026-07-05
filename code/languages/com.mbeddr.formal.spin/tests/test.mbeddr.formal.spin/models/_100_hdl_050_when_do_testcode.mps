@@ -43,12 +43,12 @@
     </language>
     <language id="ad8d48af-022b-40dc-8979-2b76074fb438" name="com.mbeddr.formal.spin">
       <concept id="1714872972675815455" name="com.mbeddr.formal.spin.structure.AndExpression" flags="ng" index="kzIJX" />
-      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ngI" index="2m6DZO">
+      <concept id="5285453794052877260" name="com.mbeddr.formal.spin.structure.IVariableReference" flags="ng" index="2m6DZO">
         <reference id="5285453794052877261" name="var" index="2m6DZP" />
       </concept>
       <concept id="3050019586774684031" name="com.mbeddr.formal.spin.structure.EqualsExpression" flags="ng" index="2xSSBo" />
       <concept id="3050019586774688801" name="com.mbeddr.formal.spin.structure.NotEqualsExpression" flags="ng" index="2xSVM6" />
-      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ngI" index="1a0DGj">
+      <concept id="2291855968617420239" name="com.mbeddr.formal.spin.structure.ITyped" flags="ng" index="1a0DGj">
         <child id="2291855968617420240" name="tpe" index="1a0DGc" />
       </concept>
       <concept id="2291855968616790990" name="com.mbeddr.formal.spin.structure.NotExpression" flags="ng" index="1a3nki" />
@@ -89,7 +89,7 @@
       <property role="TrG5h" value="h1" />
       <node concept="1a7z$V" id="5SGsxw7T3hg" role="1a0q5x">
         <node concept="1a0deV" id="5SGsxw7T3hL" role="1a7z$R">
-          <ref role="2m6DZP" node="5SGsxw7T3fP" resolve="guardVar" />
+          <ref role="2m6DZP" node="5SGsxw7T3fP" />
         </node>
         <node concept="1a7IP_" id="5SGsxw7T3hT" role="1a7zve">
           <node concept="2IPVmt" id="5SGsxw7T3i6" role="1a7IPA">
@@ -107,12 +107,12 @@
             <property role="2IPVms" value="3" />
           </node>
           <node concept="1a0deV" id="5SGsxw7T3jB" role="2H9Iav">
-            <ref role="2m6DZP" node="5SGsxw7T3fP" resolve="guardVar" />
+            <ref role="2m6DZP" node="5SGsxw7T3fP" />
           </node>
         </node>
         <node concept="1a7z$V" id="5SGsxw7T3kX" role="1pNzYU">
           <node concept="1a0deV" id="5SGsxw7T3l3" role="1a7z$R">
-            <ref role="2m6DZP" node="5SGsxw7T3k_" resolve="other" />
+            <ref role="2m6DZP" node="5SGsxw7T3k_" />
           </node>
           <node concept="1a7IP_" id="5SGsxw7T3lb" role="1a7zve">
             <node concept="2IPVmt" id="5SGsxw7T3lo" role="1a7IPA">
@@ -131,7 +131,7 @@
             <node concept="kzIJX" id="5SGsxw7Tb3d" role="32OYtT">
               <node concept="2xSSBo" id="5SGsxw7Tb3e" role="2H9Ial">
                 <node concept="1a0deV" id="5SGsxw7T3mD" role="2H9Iav">
-                  <ref role="2m6DZP" node="5SGsxw7T3k_" resolve="other" />
+                  <ref role="2m6DZP" node="5SGsxw7T3k_" />
                 </node>
                 <node concept="2IPVmt" id="5SGsxw7Tb3f" role="2H9Ial">
                   <property role="2IPVms" value="3" />
@@ -139,7 +139,7 @@
               </node>
               <node concept="2xSVM6" id="5SGsxw7T3tB" role="2H9Iav">
                 <node concept="1a0deV" id="5SGsxw7T3g7" role="2H9Iav">
-                  <ref role="2m6DZP" node="5SGsxw7T3fP" resolve="guardVar" />
+                  <ref role="2m6DZP" node="5SGsxw7T3fP" />
                 </node>
                 <node concept="2IPVmt" id="5SGsxw7T3op" role="2H9Ial">
                   <property role="2IPVms" value="3" />
@@ -155,7 +155,7 @@
             <node concept="kzIJX" id="5SGsxw7Tb5L" role="32OYtT">
               <node concept="2xSSBo" id="5SGsxw7Tb5M" role="2H9Iav">
                 <node concept="1a0deV" id="5SGsxw7T3up" role="2H9Iav">
-                  <ref role="2m6DZP" node="5SGsxw7T3fP" resolve="guardVar" />
+                  <ref role="2m6DZP" node="5SGsxw7T3fP" />
                 </node>
                 <node concept="2IPVmt" id="5SGsxw7Tb5N" role="2H9Ial">
                   <property role="2IPVms" value="3" />
@@ -163,7 +163,7 @@
               </node>
               <node concept="2xSSBo" id="5SGsxw7Tb5O" role="2H9Ial">
                 <node concept="1a0deV" id="5SGsxw7T3um" role="2H9Iav">
-                  <ref role="2m6DZP" node="5SGsxw7T3k_" resolve="other" />
+                  <ref role="2m6DZP" node="5SGsxw7T3k_" />
                 </node>
                 <node concept="2IPVmt" id="5SGsxw7Tb5P" role="2H9Ial">
                   <property role="2IPVms" value="3" />

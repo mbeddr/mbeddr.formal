@@ -85,13 +85,13 @@
         <node concept="2Hdskp" id="3nPAywcpe2s" role="2Hfkx9">
           <property role="TrG5h" value="level_1_1" />
           <node concept="1zigX2" id="3nPAywcpe37" role="2HdssA">
-            <ref role="1zigX1" node="3nPAywcpe19" resolve="Level_1" />
+            <ref role="1zigX1" node="3nPAywcpe19" />
           </node>
         </node>
         <node concept="2Hdskp" id="3nPAywcpe3f" role="2Hfkx9">
           <property role="TrG5h" value="level_1_2" />
           <node concept="1zigX2" id="3nPAywcpe3g" role="2HdssA">
-            <ref role="1zigX1" node="3nPAywcpe19" resolve="Level_1" />
+            <ref role="1zigX1" node="3nPAywcpe19" />
           </node>
         </node>
       </node>
@@ -103,10 +103,10 @@
             </node>
             <node concept="1ziNjN" id="3nPAywcpe43" role="2H9Iav">
               <node concept="1y$7Wu" id="3nPAywcpe4j" role="1ziNjJ">
-                <ref role="1y$7Wt" node="3nPAywcpe1n" resolve="level1_a" />
+                <ref role="1y$7Wt" node="3nPAywcpe1n" />
               </node>
               <node concept="2He$iJ" id="3nPAywcpe3X" role="1ziNjM">
-                <ref role="2He$iI" node="3nPAywcpe3f" resolve="level_1_2" />
+                <ref role="2He$iI" node="3nPAywcpe3f" />
               </node>
             </node>
           </node>
