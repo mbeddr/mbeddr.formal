@@ -51,7 +51,7 @@ fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else "
 
 // ToDo: temporary encoded to enable build against RC1
 //val mpsVersion = "$major.$minor" + appendOpt(bugfix, ".")
-val mpsVersion = "261.25134.10158"
+val mpsVersion = "261.25134.10169"
 
 // Dependency versions
 val platformVersion = "$major.$minor.+"
