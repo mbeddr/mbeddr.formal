@@ -20106,6 +20106,9 @@
     <node concept="26Ea6D" id="nwXZr$UPH0" role="2hID6k">
       <property role="26Ea6C" value="-Dide.experimental.ui=true" />
     </node>
+    <node concept="26Ea6D" id="1nTIWE5rLUC" role="2hID6k">
+      <property role="26Ea6C" value="-Didea.disable.collect.statistics=true" />
+    </node>
     <node concept="26Ea6D" id="nwXZr$UPH1" role="2hID6k">
       <property role="2eq24a" value="true" />
       <property role="26Ea6C" value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=5071" />
