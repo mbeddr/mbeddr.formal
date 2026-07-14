@@ -122,9 +122,8 @@ configurations {
 
     dependencies {
         // ToDo: temporary commented out to enable mps-prerelease artifacts
-        //mps("com.jetbrains:mps:$mpsVersion")
-        mps("com.jetbrains.mps:mps-prerelease:$mpsVersion")
-
+        mps("com.jetbrains:mps:$mpsVersion")
+        
         // ToDo: temporary hardcoded to enable build
         //languageLibs("com.mbeddr:platform:$platformVersion")
         languageLibs("com.mbeddr:platform:2026.1.26529.78a4a5d")
