@@ -109,6 +109,9 @@
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="481983775135178851" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginInitBlock" flags="in" index="2uRRBj" />
       <concept id="481983775135178834" name="jetbrains.mps.lang.plugin.standalone.structure.ProjectPluginDeclaration" flags="ng" index="2uRRBy">
@@ -388,7 +391,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="5045161044515397667" name="jetbrains.mps.lang.smodel.structure.Node_PointerOperation" flags="ng" index="iZEcu" />
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
@@ -1128,7 +1130,7 @@
                         <node concept="37vLTw" id="4w58iiKuQb7" role="2Oq$k0">
                           <ref role="3cqZAo" node="4w58iiKuuCu" resolve="myRoot" />
                         </node>
-                        <node concept="2qgKlT" id="60zS9AZgMBf" role="2OqNvi">
+                        <node concept="3zqWPK" id="5WfAYZdRU78" role="2OqNvi">
                           <ref role="37wK5l" to="w873:60zS9AZgLAV" resolve="structure" />
                         </node>
                       </node>
@@ -1909,7 +1911,7 @@
                               <node concept="Jnkvi" id="1V8XF6Fe5R6" role="2Oq$k0">
                                 <ref role="1M0zk5" node="1V8XF6FdyRp" resolve="hs" />
                               </node>
-                              <node concept="2qgKlT" id="5mW_a0OEJ2u" role="2OqNvi">
+                              <node concept="3zqWPK" id="5WfAYZdRU7a" role="2OqNvi">
                                 <ref role="37wK5l" to="w873:4_dTlOOCDAW" resolve="subStructure" />
                               </node>
                             </node>

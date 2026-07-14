@@ -35,6 +35,9 @@
     <import index="ehqg" ref="r:2c1724e1-8ed6-4fe4-9e44-fae13cd2a5ac(com.mbeddr.formal.base.expressions.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -292,7 +295,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -1086,16 +1088,16 @@
               <node concept="37vLTw" id="1U03KaUIVui" role="2Oq$k0">
                 <ref role="3cqZAo" node="1wu5Hv6fB2M" resolve="analysis" />
               </node>
-              <node concept="2qgKlT" id="1U03KaUIW0M" role="2OqNvi">
+              <node concept="3zqWPK" id="5WfAYZdS0vX" role="2OqNvi">
                 <ref role="37wK5l" to="vt3w:4_pH3zvoG50" resolve="createAnalyzer" />
-                <node concept="37vLTw" id="1U03KaUIW6W" role="37wK5m">
+                <node concept="37vLTw" id="5WfAYZdS0vZ" role="37wK5m">
                   <ref role="3cqZAo" node="1wu5Hv6fBpI" resolve="toolAdapter" />
                 </node>
-                <node concept="2OqwBi" id="1U03KaUIZJF" role="37wK5m">
-                  <node concept="37vLTw" id="1U03KaUIZvt" role="2Oq$k0">
+                <node concept="2OqwBi" id="5WfAYZdS0w0" role="37wK5m">
+                  <node concept="37vLTw" id="5WfAYZdS0w1" role="2Oq$k0">
                     <ref role="3cqZAo" node="7uk5GW4OOBe" resolve="mpsProject" />
                   </node>
-                  <node concept="liA8E" id="1U03KaUJ026" role="2OqNvi">
+                  <node concept="liA8E" id="5WfAYZdS0w2" role="2OqNvi">
                     <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
@@ -3051,7 +3053,7 @@
                     <node concept="37vLTw" id="4b2d3GUmGfR" role="2Oq$k0">
                       <ref role="3cqZAo" node="2lN4cj_NvUb" resolve="lhs" />
                     </node>
-                    <node concept="2qgKlT" id="4_pH3zvp3P_" role="2OqNvi">
+                    <node concept="3zqWPK" id="5WfAYZdS0w3" role="2OqNvi">
                       <ref role="37wK5l" to="ox2v:4_pH3zvp0Zq" resolve="renderReadable" />
                     </node>
                   </node>
