@@ -14945,7 +14945,7 @@
     <node concept="2kB4xC" id="wUJmWCxY0a" role="1l3spd">
       <property role="TrG5h" value="build.date" />
       <node concept="hHN3E" id="wUJmWCxY0b" role="aVJcv">
-        <property role="hHN3Y" value="20260511" />
+        <property role="hHN3Y" value="20260715" />
       </node>
     </node>
     <node concept="2kB4xC" id="wUJmWCxY0c" role="1l3spd">
@@ -14953,7 +14953,7 @@
       <node concept="aVJcg" id="wUJmWCxY0d" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0e" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0f" role="3MwsjC">
-            <property role="3MwjfP" value="FASTEN-251.SNAPSHOT" />
+            <property role="3MwjfP" value="FASTEN-261.SNAPSHOT" />
           </node>
         </node>
       </node>
@@ -15091,7 +15091,7 @@
       <node concept="aVJcg" id="wUJmWCxY0I" role="aVJcv">
         <node concept="NbPM2" id="wUJmWCxY0J" role="aVJcq">
           <node concept="3Mxwew" id="wUJmWCxY0K" role="3MwsjC">
-            <property role="3MwjfP" value="2026-05-11" />
+            <property role="3MwjfP" value="2026-07-15" />
           </node>
         </node>
       </node>
@@ -19615,7 +19615,7 @@
       <node concept="aVJcg" id="nwXZr_mN4$" role="aVJcv">
         <node concept="NbPM2" id="nwXZr_mN4_" role="aVJcq">
           <node concept="3Mxwew" id="nwXZr_mN4A" role="3MwsjC">
-            <property role="3MwjfP" value="FASTEN-232.SNAPSHOT" />
+            <property role="3MwjfP" value="FASTEN-261.SNAPSHOT" />
           </node>
         </node>
       </node>
