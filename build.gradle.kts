@@ -12,7 +12,7 @@ plugins {
     `maven-publish`
     id("co.riiid.gradle") version "0.4.2"
 
-    val mpsGradlePluginVersion = "1.29.2.+"
+    val mpsGradlePluginVersion = "1.30.1.+"
 
     id("download-jbr") version mpsGradlePluginVersion
     id("de.itemis.mps.gradle.common") version mpsGradlePluginVersion
@@ -20,10 +20,10 @@ plugins {
     id("org.cyclonedx.bom") version "3.2.4"
 }
 
-val jbrVers = "21.0.6-b895.109"
-val jbrWindowsVers = "jbr_jcef-21.0.6-windows-x64-b895.109"
-val jbrLinuxVers = "jbr_jcef-21.0.6-linux-x64-b895.109"
-val jbrMacAarchVers = "jbr_jcef-21.0.6-osx-aarch64-b895.109"
+val jbrVers = "25.0.2-b329.117"
+val jbrWindowsVers = "jbr_jcef-25.0.2-b329.117-windows-x64"
+val jbrLinuxVers = "jbr_jcef-25.0.2-b329.117-linux-x64"
+val jbrMacAarchVers = "jbr_jcef-25.0.2-b329.117-osx-aarch64"
 
 downloadJbr {
     jbrVersion = jbrVers
@@ -43,12 +43,13 @@ if (nexusUsername == null) {
 logger.info("Repository username: {}", nexusUsername)
 
 // Project versions
-val major = "2025"
+val major = "2026"
 val minor = "1"
-val bugfix = "2"
+val bugfix = ""
 
 fun appendOpt(str:String, pre:String) = if(!str.isEmpty()) "${pre}${str}" else ""
 
+// ToDo: temporary encoded to enable build against RC1
 val mpsVersion = "$major.$minor" + appendOpt(bugfix, ".")
 
 // Dependency versions
@@ -120,11 +121,14 @@ configurations {
     val jbrMacAarch by creating
 
     dependencies {
+        // ToDo: temporary commented out to enable mps-prerelease artifacts
         mps("com.jetbrains:mps:$mpsVersion")
-
-        languageLibs("com.mbeddr:platform:$platformVersion")
+        
+        // ToDo: temporary hardcoded to enable build
+        //languageLibs("com.mbeddr:platform:$platformVersion")
+        languageLibs("com.mbeddr:platform:2026.1.26529.78a4a5d")
         languageLibs("org.mpsqa:all-in-one:$platformVersion")
-
+        
         plantUML("org.apache.xmlgraphics:batik-all:1.18")
         plantUML("net.sourceforge.plantuml:plantuml-epl:1.2024.7")
         plantUML("xml-apis:xml-apis-ext:1.3.04")
@@ -133,8 +137,8 @@ configurations {
         docx4j("org.docx4j:docx4j-core:$docx4JVersion")
         docx4j("org.docx4j:docx4j-JAXB-MOXy:$docx4JVersion")
 
-	langchain4j("dev.langchain4j:langchain4j:1.12.2")
-	langchain4j("dev.langchain4j:langchain4j-open-ai:1.12.2")
+	    langchain4j("dev.langchain4j:langchain4j:1.12.2")
+	    langchain4j("dev.langchain4j:langchain4j-open-ai:1.12.2")
 
         sat4j("org.ow2.sat4j:org.ow2.sat4j.core:2.3.6")
 

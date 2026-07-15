@@ -5,7 +5,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
-    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="1" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
@@ -21,7 +21,6 @@
     <import index="vc73" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.memory(com.mpsbasics.langchain4j/)" />
     <import index="t2sn" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.memory.chat(com.mpsbasics.langchain4j/)" />
     <import index="uzku" ref="r:559d7741-840e-4574-b7c8-7764c52017cf(com.mpsbasics.genai.structure)" />
-    <import index="z7gj" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.chain(com.mpsbasics.langchain4j/)" />
     <import index="zpwy" ref="r:aae41743-8738-47cd-9865-f4a886e2c9d4(com.mpsbasics.genai.behavior)" />
     <import index="mhe9" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.data.embedding(com.mpsbasics.langchain4j/)" />
     <import index="5zc" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.store.embedding.inmemory(com.mpsbasics.langchain4j/)" />
@@ -32,24 +31,22 @@
     <import index="9dus" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.model.output(com.mpsbasics.langchain4j/)" />
     <import index="7lyl" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.rag.content.retriever(com.mpsbasics.langchain4j/)" />
     <import index="25x5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.text(JDK/)" />
-    <import index="8oaq" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:org.apache.commons.io(MPS.ThirdParty/)" />
     <import index="a0f5" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.data.document(com.mpsbasics.langchain4j/)" />
     <import index="5yhu" ref="r:019d0cc6-143d-4aa3-9dc5-d01fd5b71098(com.mpsbasics.editor.utils.notifications)" />
-    <import index="hfdo" ref="r:3c285fbd-fd2b-46da-a500-dacc1949e8b7(com.mpsbasics.langchain4j.chat)" />
     <import index="cae" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.model.openai.internal(com.mpsbasics.langchain4j/)" />
     <import index="8p42" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.model.openai.internal.models(com.mpsbasics.langchain4j/)" />
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" />
     <import index="1ctc" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.stream(JDK/)" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" />
     <import index="rqif" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:dev.langchain4j.service(com.mpsbasics.langchain4j/)" />
-    <import index="7k8f" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.fasterxml.jackson.databind(MPS.ThirdParty/)" />
     <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
-    <import index="kscp" ref="39983771-4e9b-401b-a1a9-1da6c777c843/java:com.google.common.hash(MPS.ThirdParty/)" />
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
-    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="7x0h" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:com.fasterxml.jackson.core.type(com.mpsbasics.langchain4j/)" />
-    <import index="7k8g" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:com.fasterxml.jackson.databind(com.mpsbasics.langchain4j/)" />
+    <import index="7k8f" ref="033ccb15-c42a-4e5a-82f2-5fe5cdc5fd43/java:com.fasterxml.jackson.databind(com.mpsbasics.langchain4j/)" />
     <import index="7tob" ref="r:ab86c3d1-1bb1-4489-8c79-6707606ec9a4(com.mpsbasics.langchain4j.pluginSolution.plugin)" />
+    <import index="8oaq" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:org.apache.commons.io(MPS.IDEA.Modules/)" />
+    <import index="kscp" ref="b00f36f0-49b7-456c-8405-740447ebb192/java:com.google.common.hash(MPS.IDEA.Modules/)" />
+    <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -63,6 +60,9 @@
         <child id="1238857764950" name="tuple" index="1LFl5Q" />
         <child id="1238857834412" name="index" index="1LF_Uc" />
       </concept>
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -273,7 +273,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -807,7 +806,7 @@
               <node concept="37vLTw" id="3rArG1B0qtN" role="2Oq$k0">
                 <ref role="3cqZAo" node="4S6651mFK1e" resolve="chatModelProvider" />
               </node>
-              <node concept="2qgKlT" id="3rArG1B0tzp" role="2OqNvi">
+              <node concept="3zqWPK" id="5WfAYZdQLAa" role="2OqNvi">
                 <ref role="37wK5l" to="zpwy:3rArG1B0e$2" resolve="getEmbeddingModel" />
               </node>
             </node>
@@ -889,7 +888,7 @@
                                   <node concept="37vLTw" id="5Ux4Lu38ZCW" role="2Oq$k0">
                                     <ref role="3cqZAo" node="5Ux4Lu38Zd3" resolve="it" />
                                   </node>
-                                  <node concept="2qgKlT" id="5Ux4Lu392rL" role="2OqNvi">
+                                  <node concept="3zqWPK" id="5WfAYZdQLAc" role="2OqNvi">
                                     <ref role="37wK5l" to="zpwy:5Ux4Lu37fyQ" resolve="getTextSegments" />
                                   </node>
                                 </node>
@@ -1749,7 +1748,7 @@
                         <node concept="37vLTw" id="2Mi1G8jd9Bq" role="2Oq$k0">
                           <ref role="3cqZAo" node="2Mi1G8jd9qt" resolve="it" />
                         </node>
-                        <node concept="2qgKlT" id="2Mi1G8jdakT" role="2OqNvi">
+                        <node concept="3zqWPK" id="5WfAYZdQLAe" role="2OqNvi">
                           <ref role="37wK5l" to="vdrq:2iG$EWuTXv2" resolve="representAsText" />
                         </node>
                       </node>
@@ -1819,19 +1818,19 @@
                 <node concept="37vLTw" id="5UGnlYWq9$3" role="2Oq$k0">
                   <ref role="3cqZAo" node="5UGnlYWq9zP" resolve="answerText" />
                 </node>
-                <node concept="2qgKlT" id="5UGnlYWq9$4" role="2OqNvi">
+                <node concept="3zqWPK" id="5WfAYZdQLAg" role="2OqNvi">
                   <ref role="37wK5l" to="vdrq:7q4YwcerggR" resolve="addLine" />
-                  <node concept="2pJPEk" id="5UGnlYWq9$5" role="37wK5m">
-                    <node concept="2pJPED" id="5UGnlYWq9$6" role="2pJPEn">
+                  <node concept="2pJPEk" id="5WfAYZdQLAi" role="37wK5m">
+                    <node concept="2pJPED" id="5WfAYZdQLAj" role="2pJPEn">
                       <ref role="2pJxaS" to="zqge:2cLqkTm6J5A" resolve="Line" />
-                      <node concept="2pIpSj" id="5UGnlYWq9$7" role="2pJxcM">
+                      <node concept="2pIpSj" id="5WfAYZdQLAk" role="2pJxcM">
                         <ref role="2pIpSl" to="zqge:2cLqkTm6J5B" resolve="elements" />
-                        <node concept="2pJPED" id="5UGnlYWq9$8" role="28nt2d">
+                        <node concept="2pJPED" id="5WfAYZdQLAl" role="28nt2d">
                           <ref role="2pJxaS" to="zqge:8D0iRqSPW4" resolve="Word" />
-                          <node concept="2pJxcG" id="5UGnlYWq9$9" role="2pJxcM">
+                          <node concept="2pJxcG" id="5WfAYZdQLAm" role="2pJxcM">
                             <ref role="2pJxcJ" to="zqge:8D0iRqSPW5" resolve="value" />
-                            <node concept="WxPPo" id="5UGnlYWq9$a" role="28ntcv">
-                              <node concept="2GrUjf" id="5UGnlYWq9$b" role="WxPPp">
+                            <node concept="WxPPo" id="5WfAYZdQLAn" role="28ntcv">
+                              <node concept="2GrUjf" id="5WfAYZdQLAo" role="WxPPp">
                                 <ref role="2Gs0qQ" node="5UGnlYWq9zV" resolve="l" />
                               </node>
                             </node>
@@ -1985,12 +1984,12 @@
               <node concept="3cpWsn" id="6cEB6OFcINq" role="3cpWs9">
                 <property role="TrG5h" value="mapper" />
                 <node concept="3uibUv" id="6cEB6OFcINr" role="1tU5fm">
-                  <ref role="3uigEE" to="7k8g:~ObjectMapper" resolve="ObjectMapper" />
+                  <ref role="3uigEE" to="7k8f:~ObjectMapper" resolve="ObjectMapper" />
                 </node>
                 <node concept="2ShNRf" id="6cEB6OFcJWl" role="33vP2m">
                   <node concept="1pGfFk" id="6cEB6OFcNVW" role="2ShVmc">
                     <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="7k8g:~ObjectMapper.&lt;init&gt;()" resolve="ObjectMapper" />
+                    <ref role="37wK5l" to="7k8f:~ObjectMapper.&lt;init&gt;()" resolve="ObjectMapper" />
                   </node>
                 </node>
               </node>
@@ -2071,7 +2070,7 @@
                                 <ref role="3cqZAo" node="6cEB6OFcINq" resolve="mapper" />
                               </node>
                               <node concept="liA8E" id="6k97aKdqcsI" role="2OqNvi">
-                                <ref role="37wK5l" to="7k8g:~ObjectMapper.readValue(java.io.File,com.fasterxml.jackson.core.type.TypeReference)" resolve="readValue" />
+                                <ref role="37wK5l" to="7k8f:~ObjectMapper.readValue(java.io.File,com.fasterxml.jackson.core.type.TypeReference)" resolve="readValue" />
                                 <node concept="2GrUjf" id="6k97aKdrtkf" role="37wK5m">
                                   <ref role="2Gs0qQ" node="6k97aKdqsOI" resolve="crtCacheFile" />
                                 </node>
@@ -2788,12 +2787,12 @@
                   <node concept="3cpWsn" id="4FDL7okGw4_" role="3cpWs9">
                     <property role="TrG5h" value="mapper" />
                     <node concept="3uibUv" id="4FDL7okGw4A" role="1tU5fm">
-                      <ref role="3uigEE" to="7k8g:~ObjectMapper" resolve="ObjectMapper" />
+                      <ref role="3uigEE" to="7k8f:~ObjectMapper" resolve="ObjectMapper" />
                     </node>
                     <node concept="2ShNRf" id="4FDL7okGw4B" role="33vP2m">
                       <node concept="1pGfFk" id="4FDL7okGw4C" role="2ShVmc">
                         <property role="373rjd" value="true" />
-                        <ref role="37wK5l" to="7k8g:~ObjectMapper.&lt;init&gt;()" resolve="ObjectMapper" />
+                        <ref role="37wK5l" to="7k8f:~ObjectMapper.&lt;init&gt;()" resolve="ObjectMapper" />
                       </node>
                     </node>
                   </node>
@@ -2805,11 +2804,11 @@
                         <ref role="3cqZAo" node="4FDL7okGw4_" resolve="mapper" />
                       </node>
                       <node concept="liA8E" id="4FDL7okGw4H" role="2OqNvi">
-                        <ref role="37wK5l" to="7k8g:~ObjectMapper.writerWithDefaultPrettyPrinter()" resolve="writerWithDefaultPrettyPrinter" />
+                        <ref role="37wK5l" to="7k8f:~ObjectMapper.writerWithDefaultPrettyPrinter()" resolve="writerWithDefaultPrettyPrinter" />
                       </node>
                     </node>
                     <node concept="liA8E" id="4FDL7okGw4I" role="2OqNvi">
-                      <ref role="37wK5l" to="7k8g:~ObjectWriter.writeValue(java.io.File,java.lang.Object)" resolve="writeValue" />
+                      <ref role="37wK5l" to="7k8f:~ObjectWriter.writeValue(java.io.File,java.lang.Object)" resolve="writeValue" />
                       <node concept="2OqwBi" id="4FDL7okGw4J" role="37wK5m">
                         <node concept="37vLTw" id="4FDL7okGw4K" role="2Oq$k0">
                           <ref role="3cqZAo" node="7NXHS$vhy4Z" resolve="embeddingsCacheFile" />

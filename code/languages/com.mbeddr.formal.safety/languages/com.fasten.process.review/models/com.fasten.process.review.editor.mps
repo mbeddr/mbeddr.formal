@@ -22,6 +22,9 @@
     <import index="d7h3" ref="r:9c09e837-3eca-4de1-b68b-e893b3a7ba52(com.fasten.process.review.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
@@ -212,7 +215,6 @@
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1179168000618" name="jetbrains.mps.lang.smodel.structure.Node_GetIndexInParentOperation" flags="nn" index="2bSWHS" />
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
@@ -396,7 +398,7 @@
             <node concept="3clFbF" id="5t37uj6CSZT" role="3cqZAp">
               <node concept="2OqwBi" id="5t37uj6CSZU" role="3clFbG">
                 <node concept="pncrf" id="5t37uj6CSZV" role="2Oq$k0" />
-                <node concept="2qgKlT" id="5t37uj6CSZW" role="2OqNvi">
+                <node concept="3zqWPK" id="4oGkhCURGNF" role="2OqNvi">
                   <ref role="37wK5l" to="d7h3:5t37uj6_F8F" resolve="getColor" />
                 </node>
               </node>
@@ -421,7 +423,7 @@
                 <node concept="3clFbF" id="5t37uj6FMYI" role="3cqZAp">
                   <node concept="2OqwBi" id="5t37uj6FMYK" role="3clFbG">
                     <node concept="pncrf" id="5t37uj6FMYL" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="5t37uj6FMYM" role="2OqNvi">
+                    <node concept="3zqWPK" id="4oGkhCURGNH" role="2OqNvi">
                       <ref role="37wK5l" to="d7h3:5t37uj6FcTu" resolve="index" />
                     </node>
                   </node>
@@ -504,7 +506,7 @@
                 <node concept="3clFbF" id="5t37uj6F2J8" role="3cqZAp">
                   <node concept="2OqwBi" id="5t37uj6Ffo$" role="3clFbG">
                     <node concept="pncrf" id="5t37uj6Ffo_" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="5t37uj6FfoA" role="2OqNvi">
+                    <node concept="3zqWPK" id="4oGkhCURGNJ" role="2OqNvi">
                       <ref role="37wK5l" to="d7h3:5t37uj6FcTu" resolve="index" />
                     </node>
                   </node>

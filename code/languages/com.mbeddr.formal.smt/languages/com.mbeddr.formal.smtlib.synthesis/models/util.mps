@@ -7,7 +7,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -144,17 +144,11 @@
       <concept id="6451706574537082687" name="com.mbeddr.mpsutil.blutil.structure.ShortStaticMethodCall" flags="ng" index="NRdvd" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
@@ -867,9 +861,36 @@
         </node>
       </node>
       <node concept="P$JXv" id="1y75Pbzy1ub" role="lGtFl">
-        <node concept="TZ5HA" id="1y75Pbzy1u9" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75Pbzy1ua" role="1dT_Ay">
-            <property role="1dT_AB" value="Replaces Nary altrnatives from this term with cascades of if-then-else" />
+        <node concept="1PaTwC" id="2nacnue1GTm" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GTn" role="1PaTwD">
+            <property role="3oM_SC" value="Replaces" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTo" role="1PaTwD">
+            <property role="3oM_SC" value="Nary" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTp" role="1PaTwD">
+            <property role="3oM_SC" value="altrnatives" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTq" role="1PaTwD">
+            <property role="3oM_SC" value="from" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTr" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTs" role="1PaTwD">
+            <property role="3oM_SC" value="term" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTt" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTu" role="1PaTwD">
+            <property role="3oM_SC" value="cascades" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTv" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTw" role="1PaTwD">
+            <property role="3oM_SC" value="if-then-else" />
           </node>
         </node>
       </node>
@@ -1186,9 +1207,33 @@
         </node>
       </node>
       <node concept="P$JXv" id="1y75Pbzy1ue" role="lGtFl">
-        <node concept="TZ5HA" id="1y75Pbzy1uc" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75Pbzy1ud" role="1dT_Ay">
-            <property role="1dT_AB" value="Replaces an ITE-nary with a cascaded tree of ITEs." />
+        <node concept="1PaTwC" id="2nacnue1GTx" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GTy" role="1PaTwD">
+            <property role="3oM_SC" value="Replaces" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTz" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GT$" role="1PaTwD">
+            <property role="3oM_SC" value="ITE-nary" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GT_" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTA" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTB" role="1PaTwD">
+            <property role="3oM_SC" value="cascaded" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTC" role="1PaTwD">
+            <property role="3oM_SC" value="tree" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTD" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GTE" role="1PaTwD">
+            <property role="3oM_SC" value="ITEs." />
           </node>
         </node>
       </node>
@@ -1201,9 +1246,15 @@
     <node concept="2tJIrI" id="7vEzmJ3C6uF" role="jymVt" />
     <node concept="3Tm1VV" id="104dc5EbsRp" role="1B3o_S" />
     <node concept="3UR2Jj" id="1y75Pbzy1uh" role="lGtFl">
-      <node concept="TZ5HA" id="1y75Pbzy1uf" role="TZ5H$">
-        <node concept="1dT_AC" id="1y75Pbzy1ug" role="1dT_Ay">
-          <property role="1dT_AB" value="Synthethiser for terms." />
+      <node concept="1PaTwC" id="2nacnue1GTi" role="1Vez_I">
+        <node concept="3oM_SD" id="2nacnue1GTj" role="1PaTwD">
+          <property role="3oM_SC" value="Synthethiser" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GTk" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GTl" role="1PaTwD">
+          <property role="3oM_SC" value="terms." />
         </node>
       </node>
     </node>

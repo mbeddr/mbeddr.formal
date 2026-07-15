@@ -9,7 +9,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension" version="2" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
@@ -176,17 +176,11 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157993911077" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitProperty" flags="ng" index="2pJxcG">
@@ -284,9 +278,24 @@
       <node concept="3Tm1VV" id="3fsZMFLDimy" role="1B3o_S" />
       <node concept="10Oyi0" id="3fsZMFLDimo" role="3clF45" />
       <node concept="P$JXv" id="1y75Pbzy1$P" role="lGtFl">
-        <node concept="TZ5HA" id="1y75Pbzy1$N" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75Pbzy1$O" role="1dT_Ay">
-            <property role="1dT_AB" value="Number of steps of this trace." />
+        <node concept="1PaTwC" id="2nacnue1HgA" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1HgB" role="1PaTwD">
+            <property role="3oM_SC" value="Number" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgC" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgD" role="1PaTwD">
+            <property role="3oM_SC" value="steps" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgE" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgF" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgG" role="1PaTwD">
+            <property role="3oM_SC" value="trace." />
           </node>
         </node>
       </node>
@@ -308,9 +317,24 @@
         </node>
       </node>
       <node concept="P$JXv" id="1y75Pbzy1$S" role="lGtFl">
-        <node concept="TZ5HA" id="1y75Pbzy1$Q" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75Pbzy1$R" role="1dT_Ay">
-            <property role="1dT_AB" value="Nodes-to-values map for the current step." />
+        <node concept="1PaTwC" id="2nacnue1HgH" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1HgI" role="1PaTwD">
+            <property role="3oM_SC" value="Nodes-to-values" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgJ" role="1PaTwD">
+            <property role="3oM_SC" value="map" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgK" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgL" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgM" role="1PaTwD">
+            <property role="3oM_SC" value="current" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgN" role="1PaTwD">
+            <property role="3oM_SC" value="step." />
           </node>
         </node>
       </node>
@@ -323,9 +347,60 @@
       <node concept="3Tm1VV" id="1EKbsQR7vyS" role="1B3o_S" />
       <node concept="3Tqbb2" id="1EKbsQR7vxR" role="3clF45" />
       <node concept="P$JXv" id="1y75Pbzy1$V" role="lGtFl">
-        <node concept="TZ5HA" id="1y75Pbzy1$T" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75Pbzy1$U" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the node which represents the entry in the simulation. Simulation bar will be attached to this node." />
+        <node concept="1PaTwC" id="2nacnue1HgO" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1HgP" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgQ" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgR" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgS" role="1PaTwD">
+            <property role="3oM_SC" value="which" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgT" role="1PaTwD">
+            <property role="3oM_SC" value="represents" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgU" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgV" role="1PaTwD">
+            <property role="3oM_SC" value="entry" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgW" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgX" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgY" role="1PaTwD">
+            <property role="3oM_SC" value="simulation." />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HgZ" role="1PaTwD">
+            <property role="3oM_SC" value="Simulation" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hh0" role="1PaTwD">
+            <property role="3oM_SC" value="bar" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hh1" role="1PaTwD">
+            <property role="3oM_SC" value="will" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hh2" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hh3" role="1PaTwD">
+            <property role="3oM_SC" value="attached" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hh4" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hh5" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hh6" role="1PaTwD">
+            <property role="3oM_SC" value="node." />
           </node>
         </node>
       </node>
@@ -333,9 +408,21 @@
     <node concept="3Tm1VV" id="3fsZMFLDils" role="1B3o_S" />
     <node concept="2tJIrI" id="3fsZMFLDuAG" role="jymVt" />
     <node concept="3UR2Jj" id="1y75Pbzy1$Y" role="lGtFl">
-      <node concept="TZ5HA" id="1y75Pbzy1$W" role="TZ5H$">
-        <node concept="1dT_AC" id="1y75Pbzy1$X" role="1dT_Ay">
-          <property role="1dT_AB" value="Interface for a simulation trace." />
+      <node concept="1PaTwC" id="2nacnue1Hgr" role="1Vez_I">
+        <node concept="3oM_SD" id="2nacnue1Hgs" role="1PaTwD">
+          <property role="3oM_SC" value="Interface" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1Hgt" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1Hgu" role="1PaTwD">
+          <property role="3oM_SC" value="a" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1Hgv" role="1PaTwD">
+          <property role="3oM_SC" value="simulation" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1Hgw" role="1PaTwD">
+          <property role="3oM_SC" value="trace." />
         </node>
       </node>
     </node>
@@ -502,9 +589,30 @@
         </node>
       </node>
       <node concept="P$JXv" id="1y75Pbzy1_1" role="lGtFl">
-        <node concept="TZ5HA" id="1y75Pbzy1$Z" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75Pbzy1_0" role="1dT_Ay">
-            <property role="1dT_AB" value="Registers a simulation trace on a node entry." />
+        <node concept="1PaTwC" id="2nacnue1Hh7" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1Hh8" role="1PaTwD">
+            <property role="3oM_SC" value="Registers" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hh9" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hha" role="1PaTwD">
+            <property role="3oM_SC" value="simulation" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhb" role="1PaTwD">
+            <property role="3oM_SC" value="trace" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhc" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhd" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhe" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhf" role="1PaTwD">
+            <property role="3oM_SC" value="entry." />
           </node>
         </node>
       </node>
@@ -536,9 +644,30 @@
         <node concept="3Tqbb2" id="2xeYpNCxElK" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="1y75Pbzy1_4" role="lGtFl">
-        <node concept="TZ5HA" id="1y75Pbzy1_2" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75Pbzy1_3" role="1dT_Ay">
-            <property role="1dT_AB" value="Returns the simulation trace attached to this node." />
+        <node concept="1PaTwC" id="2nacnue1Hhg" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1Hhh" role="1PaTwD">
+            <property role="3oM_SC" value="Returns" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhi" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhj" role="1PaTwD">
+            <property role="3oM_SC" value="simulation" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhk" role="1PaTwD">
+            <property role="3oM_SC" value="trace" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhl" role="1PaTwD">
+            <property role="3oM_SC" value="attached" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhm" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhn" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hho" role="1PaTwD">
+            <property role="3oM_SC" value="node." />
           </node>
         </node>
       </node>
@@ -562,18 +691,36 @@
       <node concept="3Tm1VV" id="2QUcAU24NW2" role="1B3o_S" />
       <node concept="3cqZAl" id="2QUcAU24O0o" role="3clF45" />
       <node concept="P$JXv" id="1y75Pbzy1_7" role="lGtFl">
-        <node concept="TZ5HA" id="1y75Pbzy1_5" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75Pbzy1_6" role="1dT_Ay">
-            <property role="1dT_AB" value="Clears all simulation traces." />
+        <node concept="1PaTwC" id="2nacnue1Hhp" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1Hhq" role="1PaTwD">
+            <property role="3oM_SC" value="Clears" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhr" role="1PaTwD">
+            <property role="3oM_SC" value="all" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hhs" role="1PaTwD">
+            <property role="3oM_SC" value="simulation" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hht" role="1PaTwD">
+            <property role="3oM_SC" value="traces." />
           </node>
         </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="2xeYpNCxAqb" role="1B3o_S" />
     <node concept="3UR2Jj" id="1y75Pbzy1_a" role="lGtFl">
-      <node concept="TZ5HA" id="1y75Pbzy1_8" role="TZ5H$">
-        <node concept="1dT_AC" id="1y75Pbzy1_9" role="1dT_Ay">
-          <property role="1dT_AB" value="Registry of simulation traces." />
+      <node concept="1PaTwC" id="2nacnue1Hgx" role="1Vez_I">
+        <node concept="3oM_SD" id="2nacnue1Hgy" role="1PaTwD">
+          <property role="3oM_SC" value="Registry" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1Hgz" role="1PaTwD">
+          <property role="3oM_SC" value="of" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1Hg$" role="1PaTwD">
+          <property role="3oM_SC" value="simulation" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1Hg_" role="1PaTwD">
+          <property role="3oM_SC" value="traces." />
         </node>
       </node>
     </node>

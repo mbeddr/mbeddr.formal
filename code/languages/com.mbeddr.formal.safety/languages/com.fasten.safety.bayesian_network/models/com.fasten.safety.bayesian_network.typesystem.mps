@@ -11,6 +11,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -196,7 +199,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
       </concept>
@@ -307,7 +309,7 @@
                 <node concept="2GrUjf" id="3sgpJkbn5Wz" role="2Oq$k0">
                   <ref role="2Gs0qQ" node="3sgpJkbn541" resolve="c" />
                 </node>
-                <node concept="2qgKlT" id="3sgpJkbn6qP" role="2OqNvi">
+                <node concept="3zqWPK" id="4oGkhCURGN7" role="2OqNvi">
                   <ref role="37wK5l" to="5l7z:6oAzR4aNs6y" resolve="valueAsFloat" />
                 </node>
               </node>
@@ -426,7 +428,7 @@
             <node concept="1YBJjd" id="6oAzR4aO3eZ" role="2Oq$k0">
               <ref role="1YBMHb" node="6oAzR4aO3eC" resolve="node" />
             </node>
-            <node concept="2qgKlT" id="6oAzR4aO3EA" role="2OqNvi">
+            <node concept="3zqWPK" id="4oGkhCURGN9" role="2OqNvi">
               <ref role="37wK5l" to="5l7z:6oAzR4aNCbx" resolve="nodesOnWhichThisDepends" />
             </node>
           </node>
@@ -848,7 +850,7 @@
                 <node concept="37vLTw" id="6oAzR4b1FPF" role="2Oq$k0">
                   <ref role="3cqZAo" node="6oAzR4b1AZy" resolve="cpc" />
                 </node>
-                <node concept="2qgKlT" id="6oAzR4b1D5L" role="2OqNvi">
+                <node concept="3zqWPK" id="4oGkhCURGNb" role="2OqNvi">
                   <ref role="37wK5l" to="5l7z:6oAzR4aOibo" resolve="upstreamCategories" />
                 </node>
               </node>

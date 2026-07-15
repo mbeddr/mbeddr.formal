@@ -17,6 +17,9 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
@@ -149,7 +152,6 @@
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -481,7 +483,7 @@
                         </node>
                         <node concept="2OqwBi" id="2TaO3kY_zOZ" role="37wK5m">
                           <node concept="pncrf" id="2TaO3kY_zCl" role="2Oq$k0" />
-                          <node concept="2qgKlT" id="2TaO3kY_$ck" role="2OqNvi">
+                          <node concept="3zqWPK" id="4oGkhCURGEB" role="2OqNvi">
                             <ref role="37wK5l" to="b64w:2TaO3kY_eI6" resolve="failureRate" />
                           </node>
                         </node>
@@ -625,7 +627,7 @@
                       <node concept="10P55v" id="2TaO3kYAPob" role="1tU5fm" />
                       <node concept="2OqwBi" id="2TaO3kYAPt0" role="33vP2m">
                         <node concept="pncrf" id="2TaO3kYAPt1" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="2TaO3kYAPt2" role="2OqNvi">
+                        <node concept="3zqWPK" id="4oGkhCURGED" role="2OqNvi">
                           <ref role="37wK5l" to="b64w:2TaO3kY_eI6" resolve="failureRate" />
                         </node>
                       </node>
@@ -845,7 +847,7 @@
                       </node>
                       <node concept="2OqwBi" id="49Kp96$pxnR" role="37wK5m">
                         <node concept="pncrf" id="49Kp96$pxnS" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="49Kp96$pxnT" role="2OqNvi">
+                        <node concept="3zqWPK" id="4oGkhCURGEF" role="2OqNvi">
                           <ref role="37wK5l" to="b64w:49Kp96$pr8L" resolve="latentMultiPointFailureRate" />
                         </node>
                       </node>

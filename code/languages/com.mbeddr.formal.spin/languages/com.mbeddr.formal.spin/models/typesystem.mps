@@ -11,6 +11,9 @@
     <import index="o3hv" ref="r:b3500a5a-8007-441a-b8a4-ba1b48ead2e8(com.mbeddr.formal.spin.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -96,7 +99,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -168,13 +170,13 @@
                     <ref role="3Tt5mk" to="o3hv:26dfgZm48FZ" resolve="postfixTypeQualifier" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="26dfgZm6EkA" role="2OqNvi">
+                <node concept="3zqWPK" id="5WfAYZdS0xa" role="2OqNvi">
                   <ref role="37wK5l" to="oqu9:26dfgZm5YCG" resolve="computeType" />
-                  <node concept="2OqwBi" id="26dfgZm6ECk" role="37wK5m">
-                    <node concept="1YBJjd" id="26dfgZm6EoS" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5WfAYZdS0xc" role="37wK5m">
+                    <node concept="1YBJjd" id="5WfAYZdS0xd" role="2Oq$k0">
                       <ref role="1YBMHb" node="6fYDdj_cOAY" resolve="iVariableDeclaration" />
                     </node>
-                    <node concept="3TrEf2" id="26dfgZm6EWd" role="2OqNvi">
+                    <node concept="3TrEf2" id="5WfAYZdS0xe" role="2OqNvi">
                       <ref role="3Tt5mk" to="o3hv:1ZejHLlNdng" resolve="tpe" />
                     </node>
                   </node>
