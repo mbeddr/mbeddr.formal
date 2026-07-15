@@ -34,6 +34,7 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1080223426719" name="jetbrains.mps.baseLanguage.structure.OrExpression" flags="nn" index="22lmx$" />
@@ -136,7 +137,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC">
         <reference id="1139880128956" name="concept" index="1A9B2P" />
       </concept>
@@ -476,12 +476,12 @@
                         <node concept="2GrUjf" id="4pkEwgiY$Bl" role="2Oq$k0">
                           <ref role="2Gs0qQ" node="4pkEwgiYzJn" resolve="s" />
                         </node>
-                        <node concept="2qgKlT" id="4pkEwgiYAyo" role="2OqNvi">
+                        <node concept="3zqWPK" id="5WfAYZdRUcA" role="2OqNvi">
                           <ref role="37wK5l" node="4pkEwgiUS8k" resolve="doFlattenSubconditions" />
-                          <node concept="37vLTw" id="4pkEwgiYAyr" role="37wK5m">
+                          <node concept="37vLTw" id="5WfAYZdRUcC" role="37wK5m">
                             <ref role="3cqZAo" node="4pkEwgiUS8S" resolve="results" />
                           </node>
-                          <node concept="37vLTw" id="4pkEwgiYA_k" role="37wK5m">
+                          <node concept="37vLTw" id="5WfAYZdRUcD" role="37wK5m">
                             <ref role="3cqZAo" node="4pkEwgiUS93" resolve="newPath" />
                           </node>
                         </node>
@@ -1704,9 +1704,9 @@
         <node concept="3clFbF" id="5$Mxnm$smtH" role="3cqZAp">
           <node concept="2OqwBi" id="5$Mxnm$smAl" role="3clFbG">
             <node concept="13iPFW" id="5$Mxnm$smtG" role="2Oq$k0" />
-            <node concept="2qgKlT" id="5$Mxnm$snbN" role="2OqNvi">
+            <node concept="3zqWPK" id="5WfAYZdRUcE" role="2OqNvi">
               <ref role="37wK5l" node="l_5LCC95pQ" resolve="addOutputVariable" />
-              <node concept="3cmrfG" id="5$Mxnm$t5FF" role="37wK5m">
+              <node concept="3cmrfG" id="5WfAYZdRUcG" role="37wK5m">
                 <property role="3cmrfH" value="0" />
               </node>
             </node>
