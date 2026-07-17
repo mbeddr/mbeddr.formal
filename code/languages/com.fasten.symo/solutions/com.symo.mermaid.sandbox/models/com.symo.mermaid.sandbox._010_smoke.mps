@@ -16,7 +16,6 @@
         <property id="1983696557348880118" name="displayStrategy" index="1ptBXO" />
         <property id="7010306974508897303" name="rawSvgContent" index="1Rg$$q" />
         <property id="7010306974508907508" name="hashcodeOfLastSave" index="1RgArT" />
-        <property id="7010306974508907507" name="savePictureInModel" index="1RgArY" />
         <child id="1589299685874047367" name="content" index="349WCz" />
       </concept>
       <concept id="1538964454045129178" name="com.symo.mermaid.structure.MermaidPieDiagram" flags="ng" index="1K2TBu" />
@@ -32,6 +31,7 @@
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
       <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
+        <property id="6328114375520539774" name="bold" index="1X82S1" />
       </concept>
       <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
         <child id="2535923850359210936" name="lines" index="1PaQFQ" />
@@ -46,12 +46,10 @@
     <node concept="1K2TBu" id="1oekUji7K1C" role="1K2TBo">
       <property role="145Srp" value="100" />
       <property role="TrG5h" value="mini_pie" />
-      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <property role="1Rg$$q" value="C:\Users\G12JLC3\AppData\Local\Temp\mermaid-viewer\output.svg" />
-      <property role="1RgArT" value="-503850886" />
-      <property role="1RgArY" value="true" />
+      <property role="1RgArT" value="-2120805809" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="34aC2Y" id="1oekUjicab0" role="349WCz" />
-      <node concept="34aC2Y" id="1oekUjicab1" role="349WCz" />
       <node concept="34aC2Y" id="659BgOm49Kh" role="349WCz" />
       <node concept="34aC2Y" id="659BgOm49Kk" role="349WCz" />
       <node concept="349ntE" id="1oekUjibzAd" role="349WCz">
@@ -63,7 +61,7 @@
             <node concept="3oM_SD" id="1oekUjibIt1" role="1PaTwD">
               <property role="3oM_SC" value="title" />
             </node>
-            <node concept="3oM_SD" id="1oekUjibIt2" role="1PaTwD">
+            <node concept="3oM_SD" id="4ocb1hl15YB" role="1PaTwD">
               <property role="3oM_SC" value="NETFLIX" />
             </node>
             <node concept="3oM_SD" id="1oekUjibIt3" role="1PaTwD">
@@ -95,7 +93,7 @@
             </node>
           </node>
           <node concept="1PaTwC" id="1oekUjibItx" role="1PaQFQ">
-            <node concept="3oM_SD" id="1oekUjibItw" role="1PaTwD">
+            <node concept="3oM_SD" id="4ocb1hl2s6I" role="1PaTwD">
               <property role="3oM_SC" value="" />
             </node>
           </node>
@@ -119,7 +117,7 @@
               <property role="3oM_SC" value=":" />
             </node>
             <node concept="3oM_SD" id="1oekUjibIth" role="1PaTwD">
-              <property role="3oM_SC" value="70" />
+              <property role="3oM_SC" value="30" />
             </node>
           </node>
           <node concept="1PaTwC" id="1oekUjibIuF" role="1PaQFQ">
@@ -139,7 +137,186 @@
               <property role="3oM_SC" value=":" />
             </node>
             <node concept="3oM_SD" id="1oekUjibItv" role="1PaTwD">
-              <property role="3oM_SC" value="10" />
+              <property role="3oM_SC" value="130" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1K5fmX" id="5y27EElswkG">
+    <property role="TrG5h" value="_020_big_diagram" />
+    <node concept="1K2TBu" id="5y27EElswkH" role="1K2TBo">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="big_diagram" />
+      <property role="1Rg$$q" value="C:\Users\G12JLC3\AppData\Local\Temp\mermaid-viewer\output.svg" />
+      <property role="1RgArT" value="-1841256404" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="34aC2Y" id="5y27EElswkI" role="349WCz" />
+      <node concept="34aC2Y" id="5y27EElswkJ" role="349WCz" />
+      <node concept="34aC2Y" id="5y27EElswkK" role="349WCz" />
+      <node concept="349ntE" id="5y27EElswkL" role="349WCz">
+        <node concept="1Pa9Pv" id="5y27EElzVnU" role="349ntQ">
+          <node concept="1PaTwC" id="5y27EElzVnV" role="1PaQFQ">
+            <node concept="3oM_SD" id="5y27EElzVnX" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="5y27EElzVo7" role="1PaQFQ">
+            <node concept="3oM_SD" id="5y27EElzVo8" role="1PaTwD">
+              <property role="3oM_SC" value="flowchart" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVo9" role="1PaTwD">
+              <property role="3oM_SC" value="LR" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="5y27EElzVoa" role="1PaQFQ">
+            <node concept="3oM_SD" id="5y27EElzVob" role="1PaTwD">
+              <property role="3oM_SC" value="subgraph" />
+            </node>
+            <node concept="3oM_SD" id="4ocb1hl2s6J" role="1PaTwD">
+              <property role="3oM_SC" value="&quot;One&quot;" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="5y27EElzVod" role="1PaQFQ">
+            <node concept="3oM_SD" id="5y27EElzVoe" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVof" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVog" role="1PaTwD">
+              <property role="3oM_SC" value="a(&quot;`The" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoh" role="1PaTwD">
+              <property role="3oM_SC" value="cxat" />
+              <property role="1X82S1" value="true" />
+            </node>
+            <node concept="3oM_SD" id="4ocb1hl1bSi" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="5y27EElzVoi" role="1PaQFQ">
+            <node concept="3oM_SD" id="5y27EElzVoj" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVok" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVol" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVom" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVon" role="1PaTwD">
+              <property role="3oM_SC" value="hat`&quot;)" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoo" role="1PaTwD">
+              <property role="3oM_SC" value="--" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVop" role="1PaTwD">
+              <property role="3oM_SC" value="&quot;edge" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoq" role="1PaTwD">
+              <property role="3oM_SC" value="label&quot;" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVor" role="1PaTwD">
+              <property role="3oM_SC" value="--&gt;" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVos" role="1PaTwD">
+              <property role="3oM_SC" value="b{{&quot;`The" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVot" role="1PaTwD">
+              <property role="3oM_SC" value="**dog**" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVou" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVov" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVow" role="1PaTwD">
+              <property role="3oM_SC" value="hog`&quot;}}" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="5y27EElzVox" role="1PaQFQ">
+            <node concept="3oM_SD" id="5y27EElzVoy" role="1PaTwD">
+              <property role="3oM_SC" value="end" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="5y27EElzVoz" role="1PaQFQ">
+            <node concept="3oM_SD" id="5y27EElzVo$" role="1PaTwD">
+              <property role="3oM_SC" value="subgraph" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVo_" role="1PaTwD">
+              <property role="3oM_SC" value="&quot;`**Two**`&quot;" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="5y27EElzVoA" role="1PaQFQ">
+            <node concept="3oM_SD" id="5y27EElzVoB" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoC" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoD" role="1PaTwD">
+              <property role="3oM_SC" value="c(&quot;`The" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoE" role="1PaTwD">
+              <property role="3oM_SC" value="**cat**" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="5y27EElzVoF" role="1PaQFQ">
+            <node concept="3oM_SD" id="5y27EElzVoG" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoH" role="1PaTwD">
+              <property role="3oM_SC" value="" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoI" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoJ" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoK" role="1PaTwD">
+              <property role="3oM_SC" value="hat`&quot;)" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoL" role="1PaTwD">
+              <property role="3oM_SC" value="--" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoM" role="1PaTwD">
+              <property role="3oM_SC" value="&quot;`Bold" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoN" role="1PaTwD">
+              <property role="3oM_SC" value="**edge" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoO" role="1PaTwD">
+              <property role="3oM_SC" value="label**`&quot;" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoP" role="1PaTwD">
+              <property role="3oM_SC" value="--&gt;" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoQ" role="1PaTwD">
+              <property role="3oM_SC" value="d(&quot;The" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoR" role="1PaTwD">
+              <property role="3oM_SC" value="dog" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoS" role="1PaTwD">
+              <property role="3oM_SC" value="in" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoT" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="5y27EElzVoU" role="1PaTwD">
+              <property role="3oM_SC" value="hog&quot;)" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="5y27EElzVoV" role="1PaQFQ">
+            <node concept="3oM_SD" id="5y27EElzVoW" role="1PaTwD">
+              <property role="3oM_SC" value="end" />
             </node>
           </node>
         </node>
