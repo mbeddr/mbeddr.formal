@@ -138,7 +138,7 @@ jobs:
 
     - name: Publish FASTEN-Windows RCP to Github Packages
       run: |
-        ./gradlew publishFASTEN_WIN_RCPPublicationToGitHubPackagesRepository \
+        ./gradlew --info publishFASTEN_WIN_RCPPublicationToGitHubPackagesRepository \
           -Pgpr.user=${{ github.actor }} \
           -Pgpr.token=${{ secrets.GITHUB_TOKEN }} \
 
