@@ -40,6 +40,9 @@
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
+      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb">
+        <property id="1083066089218" name="constraint" index="FLfZY" />
+      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -87,7 +90,7 @@
     <property role="TrG5h" value="MermaidRoot" />
     <property role="19KtqR" value="true" />
     <property role="34LRSv" value="Mermaid Root" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="1lrw0h_k1Bs" role="1TKVEi">
       <property role="IQ2ns" value="1538964454045129180" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -132,14 +135,14 @@
       <property role="20kJfa" value="content" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="1oekUjiapA5" resolve="IMermaidPieDiagramContent" />
-      <ref role="20ksaX" node="1oekUjiapA7" />
+      <ref role="20ksaX" node="1oekUjiapA7" resolve="content" />
     </node>
   </node>
   <node concept="1TIwiD" id="1oekUji9dcq">
     <property role="EcuMT" value="1589299685873734426" />
     <property role="TrG5h" value="MermaidEmptyLine" />
     <property role="3GE5qa" value="base" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1oekUji9dcr" role="PzmwI">
       <ref role="PrY4T" node="1lrw0h_k1Bp" resolve="IMermaidRootContent" />
     </node>
@@ -152,7 +155,7 @@
     <property role="TrG5h" value="MermaidDiagramBase" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="base" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1oekUji9izV" role="PzmwI">
       <ref role="PrY4T" node="1lrw0h_k1Bp" resolve="IMermaidRootContent" />
     </node>
@@ -163,6 +166,11 @@
       <property role="IQ2nx" value="8400506447498256066" />
       <property role="TrG5h" value="zoom" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="2CJhEpPxcE5" role="1TKVEl">
+      <property role="IQ2nx" value="3039725954248526469" />
+      <property role="TrG5h" value="scale" />
+      <ref role="AX2Wp" node="i2E8K1n" resolve="_PositiveFloatOrInteger_String" />
     </node>
     <node concept="1TJgyi" id="1I7wo92WvVQ" role="1TKVEl">
       <property role="IQ2nx" value="1983696557348880118" />
@@ -232,9 +240,12 @@
     <property role="TrG5h" value="MermaidGenericPlainText" />
     <property role="34LRSv" value="#" />
     <property role="R4oN_" value="plain text" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="1oekUjiaMjf" role="PzmwI">
       <ref role="PrY4T" node="1oekUjiapA5" resolve="IMermaidPieDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="2CJhEpPyCOs" role="PzmwI">
+      <ref role="PrY4T" node="2CJhEpPyCOo" resolve="IMermaidClassDiagramContent" />
     </node>
     <node concept="1TJgyj" id="1oekUjiaMji" role="1TKVEi">
       <property role="IQ2ns" value="1589299685874148562" />
@@ -242,6 +253,56 @@
       <property role="20kJfa" value="text" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
+    </node>
+  </node>
+  <node concept="Az7Fb" id="i2E8K1n">
+    <property role="TrG5h" value="_PositiveFloatOrInteger_String" />
+    <property role="FLfZY" value="[0-9]+\\.?[0-9]*" />
+    <property role="3GE5qa" value="base" />
+    <property role="3F6X1D" value="1239805001815" />
+  </node>
+  <node concept="PlHQZ" id="2CJhEpPyCOo">
+    <property role="EcuMT" value="3039725954248903960" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="IMermaidClassDiagramContent" />
+    <node concept="PrWs8" id="2CJhEpPyCOp" role="PrDN$">
+      <ref role="PrY4T" node="1oekUji9oVj" resolve="IMermaidDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2CJhEpPyCOq">
+    <property role="EcuMT" value="3039725954248903962" />
+    <property role="TrG5h" value="MermaidClassDiagram" />
+    <property role="34LRSv" value="class diagram" />
+    <ref role="1TJDcQ" node="1oekUji9izU" resolve="MermaidDiagramBase" />
+    <node concept="1TJgyj" id="2CJhEpPyCOr" role="1TKVEi">
+      <property role="IQ2ns" value="3039725954248903963" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2CJhEpPyCOo" resolve="IMermaidClassDiagramContent" />
+      <ref role="20ksaX" node="1oekUjiapA7" resolve="content" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2CJhEpPyCOu">
+    <property role="EcuMT" value="3039725954248903966" />
+    <property role="TrG5h" value="MermaidFlowchartDiagram" />
+    <property role="34LRSv" value="flowchart diagram" />
+    <ref role="1TJDcQ" node="1oekUji9izU" resolve="MermaidDiagramBase" />
+    <node concept="1TJgyj" id="2CJhEpPyCOv" role="1TKVEi">
+      <property role="IQ2ns" value="3039725954248903967" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="content" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2CJhEpPyCOw" resolve="IMermaidFlowchartDiagramContent" />
+      <ref role="20ksaX" node="1oekUjiapA7" resolve="content" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2CJhEpPyCOw">
+    <property role="EcuMT" value="3039725954248903968" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="IMermaidFlowchartDiagramContent" />
+    <node concept="PrWs8" id="2CJhEpPyCOx" role="PrDN$">
+      <ref role="PrY4T" node="1oekUji9oVj" resolve="IMermaidDiagramContent" />
     </node>
   </node>
 </model>
