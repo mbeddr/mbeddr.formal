@@ -577,6 +577,9 @@
       <node concept="m$_yC" id="7a7$evTWI7Z" role="m$_yJ">
         <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
       </node>
+      <node concept="m$_yC" id="57f9NB4_gYr" role="m$_yJ">
+        <ref role="m$_y1" to="90a9:4be$WTb1MZD" />
+      </node>
     </node>
     <node concept="m$_wf" id="6hyv0iVPlE5" role="3989C9">
       <property role="m$_wk" value="fasten.base" />
@@ -1240,6 +1243,91 @@
             </node>
             <node concept="3qWCbU" id="7a7$evTWAD5" role="3LXTna">
               <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1E1JtD" id="57f9NB4_evH" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="3LESm3" value="bfd5bd6b-5453-42b3-96c5-d56ee3f49d9d" />
+        <property role="TrG5h" value="com.symo.mermaid" />
+        <node concept="1BupzO" id="57f9NB4_evJ" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1HemKv" value="true" />
+          <property role="1Hdu6h" value="true" />
+          <node concept="3LXTmp" id="57f9NB4_evM" role="1HemKq">
+            <node concept="398BVA" id="57f9NB4_evO" role="3LXTmr">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="57f9NB4_evP" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="57f9NB4_evQ" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.mermaid" />
+                  <node concept="2Ry0Ak" id="57f9NB4_evR" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="57f9NB4_evS" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="57f9NB4_evT" role="3bR31x">
+          <node concept="3LXTmp" id="57f9NB4_evW" role="3rtmxm">
+            <node concept="398BVA" id="57f9NB4_evY" role="3LXTmr">
+              <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+              <node concept="2Ry0Ak" id="57f9NB4_evZ" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="57f9NB4_ew0" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.mermaid" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="57f9NB4_ew1" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="57f9NB4_ew2" role="3bR37C">
+          <node concept="3bR9La" id="57f9NB4_ew4" role="1SiIV1">
+            <ref role="3bR37D" node="7a7$evTWyYR" resolve="com.symo.plantuml.lib" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="57f9NB4_ew5" role="3bR37C">
+          <node concept="3bR9La" id="57f9NB4_ew7" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="57f9NB4_ew8" role="3bR37C">
+          <node concept="3bR9La" id="57f9NB4_ewa" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="57f9NB4_ewb" role="3bR37C">
+          <node concept="3bR9La" id="57f9NB4_ewd" role="1SiIV1">
+            <ref role="3bR37D" to="k3fp:4lJSf3LkfPw" resolve="com.mpsbasics.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="57f9NB4_ewe" role="3bR37C">
+          <node concept="3bR9La" id="57f9NB4_ewg" role="1SiIV1">
+            <ref role="3bR37D" node="7a7$evTWmur" resolve="com.symo.plantuml" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="57f9NB4_ewh" role="3bR37C">
+          <node concept="3bR9La" id="57f9NB4_ewj" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
+        <node concept="398BVA" id="57f9NB4_ewk" role="3LF7KH">
+          <ref role="398BVh" node="7a7$evTWnQq" resolve="symo.code" />
+          <node concept="2Ry0Ak" id="57f9NB4_ewl" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="57f9NB4_ewm" role="2Ry0An">
+              <property role="2Ry0Am" value="com.symo.mermaid" />
+              <node concept="2Ry0Ak" id="57f9NB4_ewn" role="2Ry0An">
+                <property role="2Ry0Am" value="com.symo.mermaid.mpl" />
+              </node>
             </node>
           </node>
         </node>

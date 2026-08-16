@@ -1580,6 +1580,91 @@
           <ref role="3LEDTV" node="7JbQva7QNLT" resolve="com.symo.plantuml.ext" />
         </node>
       </node>
+      <node concept="1E1JtD" id="57f9NB4v$ui" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="3LESm3" value="bfd5bd6b-5453-42b3-96c5-d56ee3f49d9d" />
+        <property role="TrG5h" value="com.symo.mermaid" />
+        <node concept="1BupzO" id="57f9NB4v$uk" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1HemKv" value="true" />
+          <property role="1Hdu6h" value="true" />
+          <node concept="3LXTmp" id="57f9NB4v$un" role="1HemKq">
+            <node concept="398BVA" id="57f9NB4v$up" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="57f9NB4v$uq" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="57f9NB4v$ur" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.mermaid" />
+                  <node concept="2Ry0Ak" id="57f9NB4v$us" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="57f9NB4v$ut" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="57f9NB4v$uu" role="3bR31x">
+          <node concept="3LXTmp" id="57f9NB4v$ux" role="3rtmxm">
+            <node concept="398BVA" id="57f9NB4v$uz" role="3LXTmr">
+              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+              <node concept="2Ry0Ak" id="57f9NB4v$u$" role="iGT6I">
+                <property role="2Ry0Am" value="languages" />
+                <node concept="2Ry0Ak" id="57f9NB4v$u_" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.symo.mermaid" />
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="57f9NB4v$uA" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="57f9NB4v$uB" role="3bR37C">
+          <node concept="3bR9La" id="57f9NB4v$uD" role="1SiIV1">
+            <ref role="3bR37D" node="3fV34643kGS" resolve="com.symo.plantuml.lib" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="57f9NB4v$uE" role="3bR37C">
+          <node concept="3bR9La" id="57f9NB4v$uG" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:PE3B26QCrP" resolve="org.apache.commons" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="57f9NB4v$uH" role="3bR37C">
+          <node concept="3bR9La" id="57f9NB4v$uJ" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIZ" resolve="MPS.Editor" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="57f9NB4v$uK" role="3bR37C">
+          <node concept="3bR9La" id="57f9NB4v$uM" role="1SiIV1">
+            <ref role="3bR37D" to="k3fp:4lJSf3LkfPw" resolve="com.mpsbasics.core" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="57f9NB4v$uN" role="3bR37C">
+          <node concept="3bR9La" id="57f9NB4v$uP" role="1SiIV1">
+            <ref role="3bR37D" node="3fV34643ilv" resolve="com.symo.plantuml" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="57f9NB4v$uQ" role="3bR37C">
+          <node concept="3bR9La" id="57f9NB4v$uS" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:3HV74$ebibC" resolve="jetbrains.mps.lang.text" />
+          </node>
+        </node>
+        <node concept="398BVA" id="57f9NB4v$uT" role="3LF7KH">
+          <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
+          <node concept="2Ry0Ak" id="57f9NB4v$uU" role="iGT6I">
+            <property role="2Ry0Am" value="languages" />
+            <node concept="2Ry0Ak" id="57f9NB4v$uV" role="2Ry0An">
+              <property role="2Ry0Am" value="com.symo.mermaid" />
+              <node concept="2Ry0Ak" id="57f9NB4v$uW" role="2Ry0An">
+                <property role="2Ry0Am" value="com.symo.mermaid.mpl" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2G$12M" id="7he_lUumCVe" role="3989C9">
       <property role="TrG5h" value="com.mbeddr.formal.req" />
