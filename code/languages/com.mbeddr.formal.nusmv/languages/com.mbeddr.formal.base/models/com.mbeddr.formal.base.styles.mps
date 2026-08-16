@@ -274,7 +274,7 @@
               </node>
               <node concept="10M0yZ" id="8xY_Ih_9qv" role="37wK5m">
                 <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
-                <ref role="3cqZAo" to="z60i:~Color.BLACK" resolve="BLACK" />
+                <ref role="3cqZAo" to="z60i:~Color.LIGHT_GRAY" resolve="LIGHT_GRAY" />
               </node>
             </node>
           </node>
