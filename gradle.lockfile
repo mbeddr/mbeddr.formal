@@ -1,6 +1,7 @@
 # This is a Gradle generated file for dependency locking.
 # Manual edits can break the build and are not advised.
 # This file is expected to be part of source control.
+# To regenerate this file, run: ./gradlew :dependencies --write-locks
 antlr:antlr:2.7.7=docx4j
 com.atlassian.event:atlassian-event:6.0.0=jira
 com.atlassian.httpclient:atlassian-httpclient-api:4.0.1=jira
@@ -20,7 +21,7 @@ com.google.guava:guava:32.1.3-jre=jira
 com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava=jira
 com.jetbrains.jdk:jbr_jcef:25.0.2-b329.117=jbrLinux,jbrMac,jbrMacAarch,jbrWin
 com.knuddels:jtokkit:1.1.0=langchain4j
-com.mbeddr:platform:2026.1.26532.5b4aae7=languageLibs
+com.mbeddr:platform:2026.1.26558.6f8b7c1=languageLibs
 com.sun.xml.bind:jaxb-core:4.0.6=docx4j
 com.sun.xml.bind:jaxb-xjc:4.0.6=docx4j
 com.thoughtworks.qdox:qdox:1.12.1=docx4j
