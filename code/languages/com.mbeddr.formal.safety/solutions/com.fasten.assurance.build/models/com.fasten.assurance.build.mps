@@ -578,7 +578,7 @@
         <ref role="m$_y1" to="90a9:F1NWDqr5lJ" resolve="de.itemis.mps.grammarcells" />
       </node>
       <node concept="m$_yC" id="57f9NB4_gYr" role="m$_yJ">
-        <ref role="m$_y1" to="90a9:4be$WTb1MZD" />
+        <ref role="m$_y1" to="90a9:4be$WTb1MZD" resolve="de.itemis.mps.editor.diagram" />
       </node>
     </node>
     <node concept="m$_wf" id="6hyv0iVPlE5" role="3989C9">
