@@ -126,7 +126,7 @@ configurations {
         
         // ToDo: temporary hardcoded to enable build
         //languageLibs("com.mbeddr:platform:$platformVersion")
-        languageLibs("com.mbeddr:platform:2026.1.26529.78a4a5d")
+        languageLibs("com.mbeddr:platform:2026.1.26558.6f8b7c1")
         languageLibs("org.mpsqa:all-in-one:$platformVersion")
         
         plantUML("org.apache.xmlgraphics:batik-all:1.18")
