@@ -192,7 +192,7 @@
             <node concept="2OqwBi" id="2qHrqKSBQsj" role="2Oq$k0">
               <node concept="13iPFW" id="2qHrqKSBQ3o" role="2Oq$k0" />
               <node concept="3TrEf2" id="2qHrqKSBRda" role="2OqNvi">
-                <ref role="3Tt5mk" to="oqaz:1oekUjiaMji" />
+                <ref role="3Tt5mk" to="oqaz:1oekUjiaMji" resolve="text" />
               </node>
             </node>
             <node concept="3Tsc0h" id="2qHrqKSBRJb" role="2OqNvi">
@@ -260,6 +260,40 @@
         </node>
       </node>
       <node concept="17QB3L" id="1oekUjibgSG" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="2CJhEpPySY1">
+    <property role="3GE5qa" value="base" />
+    <ref role="13h7C2" to="oqaz:1oekUji9izU" resolve="MermaidDiagramBase" />
+    <node concept="13hLZK" id="2CJhEpPySY2" role="13h7CW">
+      <node concept="3clFbS" id="2CJhEpPySY3" role="2VODD2">
+        <node concept="3clFbF" id="2CJhEpPySYl" role="3cqZAp">
+          <node concept="37vLTI" id="2CJhEpPyUr1" role="3clFbG">
+            <node concept="3cmrfG" id="2CJhEpPyUrj" role="37vLTx">
+              <property role="3cmrfH" value="100" />
+            </node>
+            <node concept="2OqwBi" id="2CJhEpPyTap" role="37vLTJ">
+              <node concept="13iPFW" id="2CJhEpPySYk" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2CJhEpPyTnW" role="2OqNvi">
+                <ref role="3TsBF5" to="oqaz:7ikA1GKwLV2" resolve="zoom" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2CJhEpPyUsv" role="3cqZAp">
+          <node concept="37vLTI" id="2CJhEpPyVd3" role="3clFbG">
+            <node concept="Xl_RD" id="2CJhEpPyVdB" role="37vLTx">
+              <property role="Xl_RC" value="1" />
+            </node>
+            <node concept="2OqwBi" id="2CJhEpPyUt2" role="37vLTJ">
+              <node concept="13iPFW" id="2CJhEpPyUst" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2CJhEpPyUHQ" role="2OqNvi">
+                <ref role="3TsBF5" to="oqaz:2CJhEpPxcE5" resolve="scale" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>
