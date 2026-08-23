@@ -9,7 +9,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="3" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -184,14 +184,8 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="446c26eb-2b7b-4bf0-9b35-f83fa582753e" name="jetbrains.mps.lang.modelapi">
@@ -598,9 +592,54 @@
       <node concept="3Tm6S6" id="44HlJomgZJ9" role="1B3o_S" />
       <node concept="3clFbT" id="44HlJomgZJb" role="33vP2m" />
       <node concept="z59LJ" id="1y75PbzycUA" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycU$" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycU_" role="1dT_Ay">
-            <property role="1dT_AB" value="This should be normally FALSE since the grammar should be good enough to parse our tests." />
+        <node concept="1PaTwC" id="2nacnue1GK_" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GKA" role="1PaTwD">
+            <property role="3oM_SC" value="This" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKB" role="1PaTwD">
+            <property role="3oM_SC" value="should" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKC" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKD" role="1PaTwD">
+            <property role="3oM_SC" value="normally" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKE" role="1PaTwD">
+            <property role="3oM_SC" value="FALSE" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKF" role="1PaTwD">
+            <property role="3oM_SC" value="since" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKG" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKH" role="1PaTwD">
+            <property role="3oM_SC" value="grammar" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKI" role="1PaTwD">
+            <property role="3oM_SC" value="should" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKJ" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKK" role="1PaTwD">
+            <property role="3oM_SC" value="good" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKL" role="1PaTwD">
+            <property role="3oM_SC" value="enough" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKM" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKN" role="1PaTwD">
+            <property role="3oM_SC" value="parse" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKO" role="1PaTwD">
+            <property role="3oM_SC" value="our" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKP" role="1PaTwD">
+            <property role="3oM_SC" value="tests." />
           </node>
         </node>
       </node>

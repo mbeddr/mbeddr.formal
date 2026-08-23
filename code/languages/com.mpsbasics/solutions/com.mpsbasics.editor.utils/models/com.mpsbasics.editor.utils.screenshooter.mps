@@ -6,7 +6,7 @@
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging" version="0" />
@@ -266,16 +266,10 @@
       </concept>
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
@@ -1552,9 +1546,27 @@
       </node>
     </node>
     <node concept="3UR2Jj" id="696iakw4CS" role="lGtFl">
-      <node concept="TZ5HA" id="696iakw4CT" role="TZ5H$">
-        <node concept="1dT_AC" id="696iakw4CU" role="1dT_Ay">
-          <property role="1dT_AB" value="Class copied from com.mbeddr.core.base.pluginSolution to avoid dependencies." />
+      <node concept="1PaTwC" id="2nacnue1GB6" role="1Vez_I">
+        <node concept="3oM_SD" id="2nacnue1GB7" role="1PaTwD">
+          <property role="3oM_SC" value="Class" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GB8" role="1PaTwD">
+          <property role="3oM_SC" value="copied" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GB9" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GBa" role="1PaTwD">
+          <property role="3oM_SC" value="com.mbeddr.core.base.pluginSolution" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GBb" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GBc" role="1PaTwD">
+          <property role="3oM_SC" value="avoid" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GBd" role="1PaTwD">
+          <property role="3oM_SC" value="dependencies." />
         </node>
       </node>
     </node>
@@ -2754,9 +2766,33 @@
       <node concept="3Tm1VV" id="7tcNvKIKI4m" role="1B3o_S" />
     </node>
     <node concept="3UR2Jj" id="696iakw3AT" role="lGtFl">
-      <node concept="TZ5HA" id="696iakw3AU" role="TZ5H$">
-        <node concept="1dT_AC" id="696iakw3AV" role="1dT_Ay">
-          <property role="1dT_AB" value="Class copied and adapted from com.mbeddr.core.base.pluginSolution to avoid dependencies." />
+      <node concept="1PaTwC" id="2nacnue1GBe" role="1Vez_I">
+        <node concept="3oM_SD" id="2nacnue1GBf" role="1PaTwD">
+          <property role="3oM_SC" value="Class" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GBg" role="1PaTwD">
+          <property role="3oM_SC" value="copied" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GBh" role="1PaTwD">
+          <property role="3oM_SC" value="and" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GBi" role="1PaTwD">
+          <property role="3oM_SC" value="adapted" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GBj" role="1PaTwD">
+          <property role="3oM_SC" value="from" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GBk" role="1PaTwD">
+          <property role="3oM_SC" value="com.mbeddr.core.base.pluginSolution" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GBl" role="1PaTwD">
+          <property role="3oM_SC" value="to" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GBm" role="1PaTwD">
+          <property role="3oM_SC" value="avoid" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1GBn" role="1PaTwD">
+          <property role="3oM_SC" value="dependencies." />
         </node>
       </node>
     </node>

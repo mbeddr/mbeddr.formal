@@ -22,6 +22,7 @@
       </concept>
       <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n">
@@ -106,6 +107,21 @@
           <property role="3PKj8l" value="FFFFFF" />
         </node>
         <node concept="3PKj8D" id="7TjUbLQ451F" role="3PKjnB">
+          <property role="3PKj8l" value="FF0000" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2nacnue1Gy3" role="2rmM5M">
+        <property role="1irPi9" value="H" />
+        <node concept="3PKj8D" id="2nacnue1Gy4" role="3PKjny">
+          <property role="3PKj8l" value="987654" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="2nacnue1Gy5" role="2rmM5M">
+        <property role="1irPjQ" value="1ng4Vf3UMuc/medium" />
+        <node concept="3PKj8D" id="2nacnue1Gy6" role="3PKjn_">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+        <node concept="3PKj8D" id="2nacnue1Gy7" role="3PKjnB">
           <property role="3PKj8l" value="FF0000" />
         </node>
       </node>
@@ -212,6 +228,12 @@
       <node concept="1irPie" id="3mASqMCcrta" role="1irR9h">
         <property role="1irPi9" value="▣" />
         <node concept="3PKj8D" id="3mASqMCcrtf" role="3PKjny">
+          <property role="3PKj8l" value="987654" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2nacnue1Gy8" role="2rmM5M">
+        <property role="1irPi9" value="▣" />
+        <node concept="3PKj8D" id="2nacnue1Gy9" role="3PKjny">
           <property role="3PKj8l" value="987654" />
         </node>
       </node>

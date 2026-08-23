@@ -14,7 +14,7 @@
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="0" />
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="ekwn" ref="r:9832fb5f-2578-4b58-8014-a5de79da988e(jetbrains.mps.ide.editor.actions)" />
@@ -108,6 +108,9 @@
       <concept id="1217413147516" name="jetbrains.mps.lang.plugin.structure.ActionParameter" flags="ngI" index="1NuADB">
         <child id="5538333046911298738" name="condition" index="1oa70y" />
       </concept>
+    </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone">
       <concept id="481983775135178851" name="jetbrains.mps.lang.plugin.standalone.structure.ApplicationPluginInitBlock" flags="in" index="2uRRBj" />
@@ -368,14 +371,8 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers">
@@ -394,7 +391,6 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="5045161044515397667" name="jetbrains.mps.lang.smodel.structure.Node_PointerOperation" flags="ng" index="iZEcu" />
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1883223317721008708" name="jetbrains.mps.lang.smodel.structure.IfInstanceOfStatement" flags="nn" index="Jncv_">
@@ -1134,7 +1130,7 @@
                         <node concept="37vLTw" id="4w58iiKuQb7" role="2Oq$k0">
                           <ref role="3cqZAo" node="4w58iiKuuCu" resolve="myRoot" />
                         </node>
-                        <node concept="2qgKlT" id="60zS9AZgMBf" role="2OqNvi">
+                        <node concept="3zqWPK" id="5WfAYZdRU78" role="2OqNvi">
                           <ref role="37wK5l" to="w873:60zS9AZgLAV" resolve="structure" />
                         </node>
                       </node>
@@ -1915,7 +1911,7 @@
                               <node concept="Jnkvi" id="1V8XF6Fe5R6" role="2Oq$k0">
                                 <ref role="1M0zk5" node="1V8XF6FdyRp" resolve="hs" />
                               </node>
-                              <node concept="2qgKlT" id="5mW_a0OEJ2u" role="2OqNvi">
+                              <node concept="3zqWPK" id="5WfAYZdRU7a" role="2OqNvi">
                                 <ref role="37wK5l" to="w873:4_dTlOOCDAW" resolve="subStructure" />
                               </node>
                             </node>
@@ -3692,14 +3688,71 @@
         </node>
       </node>
       <node concept="z59LJ" id="49cZsxqJrp9" role="lGtFl">
-        <node concept="TZ5HA" id="49cZsxqJrpa" role="TZ5H$">
-          <node concept="1dT_AC" id="49cZsxqJrpb" role="1dT_Ay">
-            <property role="1dT_AB" value="The name of the action with an optional mnemonic indicated by a leading underscore in the string." />
+        <node concept="1PaTwC" id="2nacnue1GKS" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GKT" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKU" role="1PaTwD">
+            <property role="3oM_SC" value="name" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKV" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKW" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKX" role="1PaTwD">
+            <property role="3oM_SC" value="action" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKY" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GKZ" role="1PaTwD">
+            <property role="3oM_SC" value="an" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GL0" role="1PaTwD">
+            <property role="3oM_SC" value="optional" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GL1" role="1PaTwD">
+            <property role="3oM_SC" value="mnemonic" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GL2" role="1PaTwD">
+            <property role="3oM_SC" value="indicated" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GL3" role="1PaTwD">
+            <property role="3oM_SC" value="by" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GL4" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GL5" role="1PaTwD">
+            <property role="3oM_SC" value="leading" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GL6" role="1PaTwD">
+            <property role="3oM_SC" value="underscore" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GL7" role="1PaTwD">
+            <property role="3oM_SC" value="in" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GL8" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GL9" role="1PaTwD">
+            <property role="3oM_SC" value="string." />
           </node>
         </node>
-        <node concept="TZ5HA" id="49cZsxqJrEu" role="TZ5H$">
-          <node concept="1dT_AC" id="49cZsxqJrEv" role="1dT_Ay">
-            <property role="1dT_AB" value="Example: &quot;New _Feature List&quot;" />
+        <node concept="1PaTwC" id="2nacnue1GLa" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GLb" role="1PaTwD">
+            <property role="3oM_SC" value="Example:" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLc" role="1PaTwD">
+            <property role="3oM_SC" value="&quot;New" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLd" role="1PaTwD">
+            <property role="3oM_SC" value="_Feature" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLe" role="1PaTwD">
+            <property role="3oM_SC" value="List&quot;" />
           </node>
         </node>
       </node>
@@ -3721,9 +3774,30 @@
         </node>
       </node>
       <node concept="z59LJ" id="49cZsxqJrVG" role="lGtFl">
-        <node concept="TZ5HA" id="49cZsxqJrVH" role="TZ5H$">
-          <node concept="1dT_AC" id="49cZsxqJrVI" role="1dT_Ay">
-            <property role="1dT_AB" value="The concept of the root node being created." />
+        <node concept="1PaTwC" id="2nacnue1GLf" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GLg" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLh" role="1PaTwD">
+            <property role="3oM_SC" value="concept" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLi" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLj" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLk" role="1PaTwD">
+            <property role="3oM_SC" value="root" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLl" role="1PaTwD">
+            <property role="3oM_SC" value="node" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLm" role="1PaTwD">
+            <property role="3oM_SC" value="being" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLn" role="1PaTwD">
+            <property role="3oM_SC" value="created." />
           </node>
         </node>
       </node>
@@ -3735,9 +3809,45 @@
         <ref role="3uigEE" to="lui2:~SModuleReference" resolve="SModuleReference" />
       </node>
       <node concept="z59LJ" id="7A06dcUG8C3" role="lGtFl">
-        <node concept="TZ5HA" id="7A06dcUG8C4" role="TZ5H$">
-          <node concept="1dT_AC" id="7A06dcUG8C5" role="1dT_Ay">
-            <property role="1dT_AB" value="The devkit to be used on th model when this root is instantiated." />
+        <node concept="1PaTwC" id="2nacnue1GLo" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GLp" role="1PaTwD">
+            <property role="3oM_SC" value="The" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLq" role="1PaTwD">
+            <property role="3oM_SC" value="devkit" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLr" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLs" role="1PaTwD">
+            <property role="3oM_SC" value="be" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLt" role="1PaTwD">
+            <property role="3oM_SC" value="used" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLu" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLv" role="1PaTwD">
+            <property role="3oM_SC" value="th" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLw" role="1PaTwD">
+            <property role="3oM_SC" value="model" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLx" role="1PaTwD">
+            <property role="3oM_SC" value="when" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLy" role="1PaTwD">
+            <property role="3oM_SC" value="this" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GLz" role="1PaTwD">
+            <property role="3oM_SC" value="root" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GL$" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GL_" role="1PaTwD">
+            <property role="3oM_SC" value="instantiated." />
           </node>
         </node>
       </node>

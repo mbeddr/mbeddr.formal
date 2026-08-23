@@ -33,6 +33,9 @@
     <import index="1njx" ref="1144260c-e9a5-49a2-9add-39a1a1a7077e/java:com.mxgraph.view(de.itemis.mps.editor.diagram.runtime/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
@@ -456,7 +459,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -2725,7 +2727,7 @@
                   <ref role="3cqZAo" node="71RA3dHyMwk" resolve="ni" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="3HVC1H6WdOt" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGKw" role="2OqNvi">
                 <ref role="37wK5l" to="a6vc:3HVC1H6VVtU" resolve="paletteFolderName" />
               </node>
             </node>
@@ -3373,7 +3375,7 @@
                   <ref role="3Tt5mk" to="bewr:EZNLLOzTTM" resolve="description" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="2LDKh2uEhQy" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGKy" role="2OqNvi">
                 <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
               </node>
             </node>

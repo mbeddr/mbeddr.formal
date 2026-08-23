@@ -38,6 +38,9 @@
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
@@ -467,7 +470,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -4050,7 +4052,7 @@
                                   <node concept="37vLTw" id="43FRfGJOAXO" role="2Oq$k0">
                                     <ref role="3cqZAo" node="43FRfGJOAX7" resolve="fromDef" />
                                   </node>
-                                  <node concept="2qgKlT" id="2mjHtwTLsnS" role="2OqNvi">
+                                  <node concept="3zqWPK" id="5WfAYZdRU4b" role="2OqNvi">
                                     <ref role="37wK5l" to="irze:2mjHtwTKZMe" resolve="createOutputPortRefDotTarget" />
                                   </node>
                                 </node>
@@ -4893,7 +4895,7 @@
                                     <node concept="37vLTw" id="43FRfGJSuZR" role="2Oq$k0">
                                       <ref role="3cqZAo" node="43FRfGJS8NC" resolve="sourcePort" />
                                     </node>
-                                    <node concept="2qgKlT" id="3iZarOHZSBy" role="2OqNvi">
+                                    <node concept="3zqWPK" id="5WfAYZdRU4d" role="2OqNvi">
                                       <ref role="37wK5l" to="irze:2mjHtwTKZMe" resolve="createOutputPortRefDotTarget" />
                                     </node>
                                   </node>

@@ -24,6 +24,9 @@
     <import index="ifn4" ref="71bb25aa-20fa-4c18-8954-1b176576f52d/java:jakarta.xml.bind(com.mpsbasics.docx4j.lib/)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
@@ -155,7 +158,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -567,7 +569,7 @@
                         <ref role="3Tt5mk" to="2c95:2TZO3DbvcWd" resolve="text" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="7YjSMFlyl2L" role="2OqNvi">
+                    <node concept="3zqWPK" id="4oGkhCURGDD" role="2OqNvi">
                       <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
                     </node>
                   </node>
@@ -986,7 +988,7 @@
                                     <ref role="3Tt5mk" to="2c95:4E$PniRJOs_" resolve="text" />
                                   </node>
                                 </node>
-                                <node concept="2qgKlT" id="4ziKDEnfJIt" role="2OqNvi">
+                                <node concept="3zqWPK" id="4oGkhCURGDF" role="2OqNvi">
                                   <ref role="37wK5l" to="hwgx:6byLOcR3jNg" resolve="asTextString" />
                                 </node>
                               </node>
@@ -1107,7 +1109,7 @@
                         <ref role="3Tt5mk" to="2c95:627_yy34G16" resolve="codeptr" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="7YjSMFlxZBp" role="2OqNvi">
+                    <node concept="3zqWPK" id="4oGkhCURGDH" role="2OqNvi">
                       <ref role="37wK5l" to="4gky:2mOlJ4sbLi5" resolve="targetNode" />
                     </node>
                   </node>
@@ -1132,7 +1134,7 @@
                         <ref role="3Tt5mk" to="vs0r:7gVrg_0tw6n" resolve="text" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="7YjSMFlxZXF" role="2OqNvi">
+                    <node concept="3zqWPK" id="4oGkhCURGDJ" role="2OqNvi">
                       <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
                     </node>
                   </node>
@@ -1494,7 +1496,7 @@
                                       <ref role="3Tt5mk" to="2c95:519ky_SlYNb" resolve="text" />
                                     </node>
                                   </node>
-                                  <node concept="2qgKlT" id="2321JT9hJyA" role="2OqNvi">
+                                  <node concept="3zqWPK" id="4oGkhCURGDL" role="2OqNvi">
                                     <ref role="37wK5l" to="hwgx:6byLOcR3jNg" resolve="asTextString" />
                                   </node>
                                 </node>
@@ -1615,7 +1617,7 @@
                         <ref role="3Tt5mk" to="2c95:5yxqZJwzQtY" resolve="resource" />
                       </node>
                     </node>
-                    <node concept="2qgKlT" id="2321JT9kw_e" role="2OqNvi">
+                    <node concept="3zqWPK" id="4oGkhCURGDN" role="2OqNvi">
                       <ref role="37wK5l" to="4gky:5yxqZJwzQzV" resolve="getEditTimeFileName" />
                     </node>
                   </node>

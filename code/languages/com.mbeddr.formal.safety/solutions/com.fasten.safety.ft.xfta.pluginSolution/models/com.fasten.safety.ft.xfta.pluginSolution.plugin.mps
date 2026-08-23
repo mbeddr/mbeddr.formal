@@ -6,7 +6,7 @@
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
-    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="3" />
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="4" />
   </languages>
   <imports>
     <import index="qofe" ref="r:6e99ad70-095a-4dfc-9cd7-6fd79b5cd071(com.fasten.safety.ft.xfta.pluginSolution.runner)" />
@@ -35,6 +35,7 @@
       </concept>
       <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="2756621024541675105" name="jetbrains.mps.lang.resources.structure.Rect" flags="ng" index="1irR9m" />
@@ -537,6 +538,20 @@
           <property role="3PKj8l" value="FF0000" />
         </node>
         <node concept="3PKj8D" id="2MppyJmTSDg" role="3PKjnB">
+          <property role="3PKj8l" value="111111" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2nacnue1G$q" role="2rmM5M">
+        <property role="1irPi9" value="X" />
+        <node concept="3PKj8D" id="2nacnue1G$r" role="3PKjny">
+          <property role="3PKj8l" value="4444FF" />
+        </node>
+      </node>
+      <node concept="1irR9m" id="2nacnue1G$s" role="2rmM5M">
+        <node concept="3PKj8D" id="2nacnue1G$t" role="3PKjn_">
+          <property role="3PKj8l" value="FF0000" />
+        </node>
+        <node concept="3PKj8D" id="2nacnue1G$u" role="3PKjnB">
           <property role="3PKj8l" value="111111" />
         </node>
       </node>

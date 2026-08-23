@@ -31,6 +31,7 @@
         <reference id="5299096511375896640" name="superConcept" index="3eA5LN" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -110,7 +111,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -233,15 +233,15 @@
             <node concept="13iAh5" id="3RNDPbM0qzt" role="2Oq$k0">
               <ref role="3eA5LN" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
             </node>
-            <node concept="2qgKlT" id="3RNDPbM0qzu" role="2OqNvi">
+            <node concept="3zqWPK" id="5WfAYZdS0sF" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:52_Geb4QFgX" resolve="getScope" />
-              <node concept="37vLTw" id="3RNDPbM0qzp" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sH" role="37wK5m">
                 <ref role="3cqZAo" node="3RNDPbM0qzi" resolve="kind" />
               </node>
-              <node concept="37vLTw" id="3RNDPbM0qzq" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sI" role="37wK5m">
                 <ref role="3cqZAo" node="3RNDPbM0qzk" resolve="link" />
               </node>
-              <node concept="37vLTw" id="3RNDPbM0qzr" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sJ" role="37wK5m">
                 <ref role="3cqZAo" node="3RNDPbM0qzm" resolve="index" />
               </node>
             </node>
@@ -313,12 +313,12 @@
             <node concept="13iAh5" id="3RNDPbM2bte" role="2Oq$k0">
               <ref role="3eA5LN" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
             </node>
-            <node concept="2qgKlT" id="3RNDPbM2btf" role="2OqNvi">
+            <node concept="3zqWPK" id="5WfAYZdS0sK" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
-              <node concept="37vLTw" id="3RNDPbM2btb" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sM" role="37wK5m">
                 <ref role="3cqZAo" node="3RNDPbM2bt6" resolve="kind" />
               </node>
-              <node concept="37vLTw" id="3RNDPbM2btc" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sN" role="37wK5m">
                 <ref role="3cqZAo" node="3RNDPbM2bt8" resolve="child" />
               </node>
             </node>
@@ -392,12 +392,12 @@
             <node concept="13iAh5" id="3RNDPbM2UCy" role="2Oq$k0">
               <ref role="3eA5LN" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
             </node>
-            <node concept="2qgKlT" id="3RNDPbM2UCz" role="2OqNvi">
+            <node concept="3zqWPK" id="5WfAYZdS0sO" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
-              <node concept="37vLTw" id="3RNDPbM2UCv" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sQ" role="37wK5m">
                 <ref role="3cqZAo" node="3RNDPbM2UCq" resolve="kind" />
               </node>
-              <node concept="37vLTw" id="3RNDPbM2UCw" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sR" role="37wK5m">
                 <ref role="3cqZAo" node="3RNDPbM2UCs" resolve="child" />
               </node>
             </node>
@@ -484,15 +484,15 @@
             <node concept="13iAh5" id="3RNDPbM4UGV" role="2Oq$k0">
               <ref role="3eA5LN" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
             </node>
-            <node concept="2qgKlT" id="3RNDPbM4UGW" role="2OqNvi">
+            <node concept="3zqWPK" id="5WfAYZdS0sS" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:52_Geb4QFgX" resolve="getScope" />
-              <node concept="37vLTw" id="3RNDPbM4UGX" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sU" role="37wK5m">
                 <ref role="3cqZAo" node="3RNDPbM4UH0" resolve="kind" />
               </node>
-              <node concept="37vLTw" id="3RNDPbM4UGY" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sV" role="37wK5m">
                 <ref role="3cqZAo" node="3RNDPbM4UH2" resolve="link" />
               </node>
-              <node concept="37vLTw" id="3RNDPbM4UGZ" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sW" role="37wK5m">
                 <ref role="3cqZAo" node="3RNDPbM4UH4" resolve="index" />
               </node>
             </node>
@@ -568,12 +568,12 @@
             <node concept="13iAh5" id="1h8BwgBGhyX" role="2Oq$k0">
               <ref role="3eA5LN" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
             </node>
-            <node concept="2qgKlT" id="1h8BwgBGhyY" role="2OqNvi">
+            <node concept="3zqWPK" id="5WfAYZdS0sX" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
-              <node concept="37vLTw" id="1h8BwgBGhyU" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sZ" role="37wK5m">
                 <ref role="3cqZAo" node="1h8BwgBGhyP" resolve="kind" />
               </node>
-              <node concept="37vLTw" id="1h8BwgBGhyV" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0t0" role="37wK5m">
                 <ref role="3cqZAo" node="1h8BwgBGhyR" resolve="child" />
               </node>
             </node>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectLibraryManager">
+    <option name="libraries">
+      <map>
+        <entry key="base">
+          <value>
+            <Library>
+              <option name="name" value="base" />
+              <option name="path" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.nusmv" />
+            </Library>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
