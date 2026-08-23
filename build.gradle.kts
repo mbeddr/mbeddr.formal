@@ -21,9 +21,9 @@ plugins {
 }
 
 val jbrVers = "25.0.2-b329.117"
-val jbrWindowsVers = "jbr_jcef-25.0.2-b329.117-windows-x64"
-val jbrLinuxVers = "jbr_jcef-25.0.2-b329.117-linux-x64"
-val jbrMacAarchVers = "jbr_jcef-25.0.2-b329.117-osx-aarch64"
+val jbrWindowsVers = "jbr_jcef-25.0.2-windows-x64-b329.117"
+val jbrLinuxVers = "jbr_jcef-25.0.2-linux-x64-b329.117"
+val jbrMacAarchVers = "jbr_jcef-25.0.2-osx-aarch64-b329.117"
 
 downloadJbr {
     jbrVersion = jbrVers
