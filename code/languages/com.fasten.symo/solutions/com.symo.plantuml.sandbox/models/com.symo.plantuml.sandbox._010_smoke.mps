@@ -2810,10 +2810,11 @@
     </node>
   </node>
   <node concept="1pqNnw" id="2kArA_Co09i">
-    <property role="TrG5h" value="_060_activity_diagram_break" />
+    <property role="TrG5h" value="_059_activity_diagram_break" />
     <node concept="11cB79" id="2kArA_Co09j" role="1pqCw0">
       <property role="145Srp" value="100" />
       <property role="TrG5h" value="activity break" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA_Co09n" role="1pqCzW" />
       <node concept="11cB78" id="2kArA_Co09o" role="1pqCzW" />
       <node concept="13VZ7R" id="2kArA_Co09p" role="1pqCzW">
