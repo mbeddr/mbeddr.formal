@@ -116,7 +116,7 @@
         <child id="2676948427490809736" name="condition" index="13xNBx" />
       </concept>
       <concept id="2676948427496118979" name="com.symo.plantuml.structure.PlantUmlActivityCase" flags="ng" index="13P3iE">
-        <property id="2676948427496118983" name="label" index="13P3iI" />
+        <child id="2676948427512626111" name="condition" index="12M5nm" />
         <child id="2676948427496118984" name="body" index="13P3ix" />
       </concept>
       <concept id="2676948427496118978" name="com.symo.plantuml.structure.PlantUmlActivitySwitch" flags="ng" index="13P3iF">
@@ -2612,18 +2612,22 @@
         <node concept="10je4U" id="2kArA_B6QFu" role="13P3iH">
           <property role="10je4W" value="test?" />
         </node>
-        <node concept="13P3iE" id="2kArA_B6QFv" role="13P3iG">
-          <property role="13P3iI" value="condition A" />
-          <node concept="11cB7a" id="2kArA_B6QFw" role="13P3ix">
-            <node concept="11pPRA" id="2kArA_B6QFy" role="11pLMz">
+        <node concept="13P3iE" id="2kArA_C6aH2" role="13P3iG">
+          <node concept="10je4U" id="2kArA_C6aH3" role="12M5nm">
+            <property role="10je4W" value="condition A" />
+          </node>
+          <node concept="11cB7a" id="2kArA_C6aH4" role="13P3ix">
+            <node concept="11pPRA" id="2kArA_C6aH6" role="11pLMz">
               <property role="11pPRS" value="Text 1" />
             </node>
           </node>
         </node>
-        <node concept="13P3iE" id="2kArA_B6QFz" role="13P3iG">
-          <property role="13P3iI" value="condition B" />
-          <node concept="11cB7a" id="2kArA_B6QF$" role="13P3ix">
-            <node concept="11pPRA" id="2kArA_B6QFA" role="11pLMz">
+        <node concept="13P3iE" id="2kArA_C6aH7" role="13P3iG">
+          <node concept="10je4U" id="2kArA_C6aH8" role="12M5nm">
+            <property role="10je4W" value="condition B" />
+          </node>
+          <node concept="11cB7a" id="2kArA_C6aH9" role="13P3ix">
+            <node concept="11pPRA" id="2kArA_C6aHb" role="11pLMz">
               <property role="11pPRS" value="Text 2" />
             </node>
           </node>
