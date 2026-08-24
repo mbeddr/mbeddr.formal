@@ -97,6 +97,10 @@
         <child id="2676948427500610648" name="againBranches" index="1248CL" />
         <child id="2676948427500610647" name="body" index="1248CY" />
       </concept>
+      <concept id="2676948427504287969" name="com.symo.plantuml.structure.PlantUmlActivityPartition" flags="ng" index="12imU8">
+        <property id="2676948427504287970" name="name" index="12imUb" />
+        <child id="2676948427504287971" name="body" index="12imUa" />
+      </concept>
       <concept id="2676948427490809733" name="com.symo.plantuml.structure.PlantUmlActivityWhile" flags="ng" index="13xNBG">
         <property id="2676948427490809735" name="endLabel" index="13xNBI" />
         <property id="2676948427490809734" name="isLabel" index="13xNBJ" />
@@ -2626,6 +2630,7 @@
     <node concept="11cB79" id="2kArA_BogXM" role="1pqCw0">
       <property role="145Srp" value="100" />
       <property role="TrG5h" value="activity fork split" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA_BogXQ" role="1pqCzW" />
       <node concept="11cB78" id="2kArA_BogXR" role="1pqCzW" />
       <node concept="1248CB" id="2kArA_BogXS" role="1pqCzW">
@@ -2659,6 +2664,38 @@
       </node>
       <node concept="11cB7b" id="2kArA_BogY8" role="1pqCzW" />
       <node concept="1pqCE1" id="2kArA_BogY9" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_BAjM2">
+    <property role="TrG5h" value="_057_activity_diagram_partition" />
+    <node concept="11cB79" id="2kArA_BAjM3" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity partition" />
+      <node concept="1pqCwu" id="2kArA_BAjM7" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_BAjM8" role="1pqCzW" />
+      <node concept="12imU8" id="2kArA_BAjM9" role="1pqCzW">
+        <property role="12imUb" value="Input Interface" />
+        <node concept="11cB7a" id="2kArA_BAjMa" role="12imUa">
+          <node concept="11pPRA" id="2kArA_BAjMc" role="11pLMz">
+            <property role="11pPRS" value="read config file" />
+          </node>
+        </node>
+        <node concept="11cB7a" id="2kArA_BAjMd" role="12imUa">
+          <node concept="11pPRA" id="2kArA_BAjMf" role="11pLMz">
+            <property role="11pPRS" value="init internal variable" />
+          </node>
+        </node>
+      </node>
+      <node concept="12imU8" id="2kArA_BAjMg" role="1pqCzW">
+        <property role="12imUb" value="Running" />
+        <node concept="11cB7a" id="2kArA_BAjMh" role="12imUa">
+          <node concept="11pPRA" id="2kArA_BAjMj" role="11pLMz">
+            <property role="11pPRS" value="wait for user interaction" />
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_BAjMk" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_BAjMl" role="1pqCzW" />
     </node>
   </node>
 </model>

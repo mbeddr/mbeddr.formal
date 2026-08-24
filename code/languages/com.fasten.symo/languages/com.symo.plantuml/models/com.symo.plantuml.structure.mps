@@ -2244,5 +2244,28 @@
       <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2kArA_BrK3x">
+    <property role="EcuMT" value="2676948427504287969" />
+    <property role="TrG5h" value="PlantUmlActivityPartition" />
+    <property role="34LRSv" value="" />
+    <property role="R4oN_" value="PlantUML activity partition (visual grouping)" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2kArA_BrK3y" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427504287970" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2kArA_BrK3z" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427504287971" />
+      <property role="20kJfa" value="body" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="2kArA_BrK3$" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
 </model>
 

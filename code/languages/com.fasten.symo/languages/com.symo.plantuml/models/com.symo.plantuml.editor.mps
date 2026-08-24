@@ -4434,5 +4434,61 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2kArA_ByNin">
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1XX52x" to="udwj:2kArA_BrK3x" />
+    <node concept="3EZMnI" id="2kArA_ByNj0" role="2wV5jI">
+      <node concept="l2Vlx" id="2kArA_ByNj1" role="2iSdaV" />
+      <node concept="3F0ifn" id="2kArA_ByNj2" role="3EZMnx">
+        <property role="3F0ifm" value="partition" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0ifn" id="2kArA_ByNj3" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <node concept="11LMrY" id="2kArA_ByNj4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2kArA_ByNj5" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:2kArA_BrK3y" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2kArA_ByNj6" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <node concept="11L4FC" id="2kArA_ByNj7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2kArA_ByNj8" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
+      <node concept="3F2HdR" id="2kArA_ByNj9" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:2kArA_BrK3z" />
+        <node concept="2iRkQZ" id="2kArA_ByNja" role="2czzBx" />
+        <node concept="4$FPG" id="2kArA_ByNjb" role="4_6I_">
+          <node concept="3clFbS" id="2kArA_ByNjd" role="2VODD2">
+            <node concept="3clFbF" id="2kArA_ByNje" role="3cqZAp">
+              <node concept="2pJPEk" id="2kArA_ByNjg" role="3clFbG">
+                <node concept="2pJPED" id="2kArA_ByNji" role="2pJPEn">
+                  <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="pVoyu" id="2kArA_ByNjj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2kArA_ByNjk" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="2kArA_ByNjl" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="pVoyu" id="2kArA_ByNjm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
