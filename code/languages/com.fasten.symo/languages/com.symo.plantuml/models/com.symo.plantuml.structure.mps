@@ -2081,5 +2081,39 @@
       <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2kArA_AMpYu">
+    <property role="EcuMT" value="2676948427493449630" />
+    <property role="TrG5h" value="PlantUmlActivityRepeat" />
+    <property role="34LRSv" value="" />
+    <property role="R4oN_" value="PlantUML activity repeat/repeat-while loop" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2kArA_AMpYv" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427493449631" />
+      <property role="TrG5h" value="isLabel" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2kArA_AMpYw" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427493449632" />
+      <property role="TrG5h" value="notLabel" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2kArA_AMpYx" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427493449633" />
+      <property role="20kJfa" value="body" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+    <node concept="1TJgyj" id="2kArA_AMpYy" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427493449634" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="2kArA__qCXk" resolve="IPlantUmlCondition" />
+    </node>
+    <node concept="PrWs8" id="2kArA_AMpYz" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
 </model>
 

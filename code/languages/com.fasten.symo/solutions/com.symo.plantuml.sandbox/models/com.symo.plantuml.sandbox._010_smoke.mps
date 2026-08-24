@@ -88,6 +88,12 @@
         <child id="2676948427490809737" name="body" index="13xNBw" />
         <child id="2676948427490809736" name="condition" index="13xNBx" />
       </concept>
+      <concept id="2676948427493449630" name="com.symo.plantuml.structure.PlantUmlActivityRepeat" flags="ng" index="13VZ7R">
+        <property id="2676948427493449632" name="notLabel" index="13VZ79" />
+        <property id="2676948427493449631" name="isLabel" index="13VZ7Q" />
+        <child id="2676948427493449633" name="body" index="13VZ78" />
+        <child id="2676948427493449634" name="condition" index="13VZ7b" />
+      </concept>
       <concept id="8400506447497059002" name="com.symo.plantuml.structure.SkinparamCommand" flags="ng" index="14T4ax">
         <child id="8400506447497059019" name="parameter" index="14T4bg" />
       </concept>
@@ -2533,6 +2539,29 @@
       </node>
       <node concept="11cB7b" id="2kArA_AJ2WA" role="1pqCzW" />
       <node concept="1pqCE1" id="2kArA_AJ2WB" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_ATdcf">
+    <property role="TrG5h" value="_054_activity_diagram_repeat" />
+    <node concept="11cB79" id="2kArA_ATdcg" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity repeat" />
+      <node concept="1pqCwu" id="2kArA_ATdck" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_ATdcl" role="1pqCzW" />
+      <node concept="13VZ7R" id="2kArA_ATdcm" role="1pqCzW">
+        <property role="13VZ7Q" value="yes" />
+        <property role="13VZ79" value="no" />
+        <node concept="11cB7a" id="2kArA_ATdcn" role="13VZ78">
+          <node concept="11pPRA" id="2kArA_ATdcp" role="11pLMz">
+            <property role="11pPRS" value="read data" />
+          </node>
+        </node>
+        <node concept="10je4U" id="2kArA_ATdcq" role="13VZ7b">
+          <property role="10je4W" value="more data?" />
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_ATdcr" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_ATdcs" role="1pqCzW" />
     </node>
   </node>
 </model>
