@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml" version="-1" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports />
   <registry>
@@ -1005,7 +1006,7 @@
     <node concept="c$xRF" id="q$1bLSxR_z" role="1pqCw0" />
     <node concept="c$xRF" id="2qHrqKSD7oT" role="1pqCw0" />
     <node concept="1YE28Q" id="2qHrqKSD7oU" role="1pqCw0">
-      <property role="145Srp" value="100" />
+      <property role="145Srp" value="70" />
       <property role="TrG5h" value="plain_text_sequence_diagram" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="uemj4" id="2qHrqKSD7oW" role="1pqCzW">
@@ -2763,6 +2764,47 @@
       </node>
       <node concept="12wihC" id="2kArA_BS1R8" role="1pqCzW" />
       <node concept="1pqCE1" id="2kArA_BS1R9" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_Cdg$X">
+    <property role="TrG5h" value="_059_activity_diagram_note" />
+    <node concept="11cB79" id="2kArA_Cdg$Y" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity note" />
+      <node concept="1pqCwu" id="2kArA_Cdg_2" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_Cdg_3" role="1pqCzW" />
+      <node concept="11cB7a" id="2kArA_Cdg_4" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_Cdg_6" role="11pLMz">
+          <property role="11pPRS" value="process request" />
+        </node>
+      </node>
+      <node concept="1oxsuH" id="2kArA_Cdg_7" role="1pqCzW">
+        <property role="1oxspX" value="1I7wo930$vW/right" />
+        <node concept="1Pa9Pv" id="2kArA_Cdg_9" role="1oxsuN">
+          <node concept="1PaTwC" id="2kArA_Cdg_a" role="1PaQFQ">
+            <node concept="3oM_SD" id="2kArA_Cdg_c" role="1PaTwD">
+              <property role="3oM_SC" value="This" />
+            </node>
+            <node concept="3oM_SD" id="2kArA_Cdg_d" role="1PaTwD">
+              <property role="3oM_SC" value="step" />
+            </node>
+            <node concept="3oM_SD" id="2kArA_Cdg_e" role="1PaTwD">
+              <property role="3oM_SC" value="may" />
+            </node>
+            <node concept="3oM_SD" id="2kArA_Cdg_f" role="1PaTwD">
+              <property role="3oM_SC" value="take" />
+            </node>
+            <node concept="3oM_SD" id="2kArA_Cdg_g" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="2kArA_Cdg_h" role="1PaTwD">
+              <property role="3oM_SC" value="while" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_Cdg_i" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_Cdg_j" role="1pqCzW" />
     </node>
   </node>
 </model>

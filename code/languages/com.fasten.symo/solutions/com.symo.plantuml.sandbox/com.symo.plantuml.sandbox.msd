@@ -15,6 +15,7 @@
     <language slang="l:6f31bc85-cbcc-4dcf-ada4-35da43e6832c:com.symo.plantuml" version="0" />
     <language slang="l:c7f99e92-818b-4094-a2f9-369356a5259c:com.symo.plantuml.ext" version="0" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
+    <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
   </languageVersions>
   <dependencyVersions>
     <module reference="377bf088-4ffc-48ac-910f-fb1c66ffa60e(com.symo.plantuml.lib)" version="0" />
