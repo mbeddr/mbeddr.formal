@@ -63,6 +63,16 @@
       <concept id="2676948427450954639" name="com.symo.plantuml.structure.PlantUmlActivityActionTextSpec" flags="ng" index="11pPRA">
         <property id="2676948427450954641" name="text" index="11pPRS" />
       </concept>
+      <concept id="2676948427457692845" name="com.symo.plantuml.structure.PlantUmlActivityIf" flags="ng" index="11zAF4">
+        <property id="2676948427457692849" name="thenLabel" index="11zAFo" />
+        <property id="2676948427457692848" name="condition" index="11zAFp" />
+        <child id="2676948427461088178" name="thenBody" index="11ZrRr" />
+        <child id="2676948427461088181" name="elseBranch" index="11ZrRs" />
+      </concept>
+      <concept id="2676948427457692846" name="com.symo.plantuml.structure.PlantUmlActivityElse" flags="ng" index="11zAF7">
+        <property id="2676948427457692851" name="label" index="11zAFq" />
+        <child id="2676948427461088184" name="body" index="11ZrRh" />
+      </concept>
       <concept id="8400506447497059002" name="com.symo.plantuml.structure.SkinparamCommand" flags="ng" index="14T4ax">
         <child id="8400506447497059019" name="parameter" index="14T4bg" />
       </concept>
@@ -2401,6 +2411,35 @@
       </node>
       <node concept="11cB7b" id="2kArA_$9W$w" role="1pqCzW" />
       <node concept="1pqCE1" id="2kArA_$9W$x" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA__0GID">
+    <property role="TrG5h" value="_051_activity_diagram_if_else" />
+    <node concept="11cB79" id="2kArA__0GIE" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity if else" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA__0GII" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA__0GIJ" role="1pqCzW" />
+      <node concept="11zAF4" id="2kArA__0GIK" role="1pqCzW">
+        <property role="11zAFp" value="x &gt; 0" />
+        <property role="11zAFo" value="yes" />
+        <node concept="11cB7a" id="2kArA__0GIL" role="11ZrRr">
+          <node concept="11pPRA" id="2kArA__0GIN" role="11pLMz">
+            <property role="11pPRS" value="do something" />
+          </node>
+        </node>
+        <node concept="11zAF7" id="2kArA__0GIO" role="11ZrRs">
+          <property role="11zAFq" value="no" />
+          <node concept="11cB7a" id="2kArA__0GIP" role="11ZrRh">
+            <node concept="11pPRA" id="2kArA__0GIR" role="11pLMz">
+              <property role="11pPRS" value="do something else" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA__0GIS" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA__0GIT" role="1pqCzW" />
     </node>
   </node>
 </model>

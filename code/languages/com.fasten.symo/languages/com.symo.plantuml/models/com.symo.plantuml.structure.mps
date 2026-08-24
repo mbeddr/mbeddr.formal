@@ -724,6 +724,9 @@
     <node concept="PrWs8" id="q$1bLS3cJL" role="PzmwI">
       <ref role="PrY4T" node="q$1bLS32qf" resolve="IPlantUmlSequenceDiagramContent" />
     </node>
+    <node concept="PrWs8" id="2kArA__3Vrc" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6BNnCp_onfs">
     <property role="EcuMT" value="7634549724642636764" />
@@ -1931,6 +1934,60 @@
     <property role="TrG5h" value="IPlantUmlActivityActionSpec" />
     <property role="R4oN_" value="Something that can serve as the specification/label of an activity action" />
     <property role="3GE5qa" value="diagram.uml.activity" />
+  </node>
+  <node concept="1TIwiD" id="2kArA_$E0iH">
+    <property role="EcuMT" value="2676948427457692845" />
+    <property role="TrG5h" value="PlantUmlActivityIf" />
+    <property role="34LRSv" value="if" />
+    <property role="R4oN_" value="if (condition) then (label)" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="2kArA_$E0iK" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427457692848" />
+      <property role="TrG5h" value="condition" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="2kArA_$E0iL" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427457692849" />
+      <property role="TrG5h" value="thenLabel" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2kArA_$E0iM" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+    <node concept="1TJgyj" id="2kArA_$QXeM" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427461088178" />
+      <property role="20kJfa" value="thenBody" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+    <node concept="1TJgyj" id="2kArA_$QXeP" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427461088181" />
+      <property role="20kJfa" value="elseBranch" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="2kArA_$E0iI" resolve="PlantUmlActivityElse" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA_$E0iI">
+    <property role="EcuMT" value="2676948427457692846" />
+    <property role="TrG5h" value="PlantUmlActivityElse" />
+    <property role="34LRSv" value="else" />
+    <property role="R4oN_" value="else (label)" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="2kArA_$E0iN" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427457692851" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2kArA_$QXeS" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427461088184" />
+      <property role="20kJfa" value="body" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
   </node>
 </model>
 
