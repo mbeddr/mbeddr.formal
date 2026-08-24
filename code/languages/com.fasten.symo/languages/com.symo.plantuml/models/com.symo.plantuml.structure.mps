@@ -1847,5 +1847,90 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2kArA_$51Yw">
+    <property role="EcuMT" value="2676948427448000416" />
+    <property role="TrG5h" value="PlantUmlActivityDiagram" />
+    <property role="34LRSv" value="activity diagram" />
+    <property role="R4oN_" value="PlantUML activity diagram" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" node="1I7wo92Vg_W" resolve="PlantUmlDiagramBase" />
+    <node concept="1TJgyj" id="2kArA_$9W$y" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427449288994" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+      <ref role="20ksaX" node="1I7wo92Vg_Y" resolve="content" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA_$51Yx">
+    <property role="EcuMT" value="2676948427448000417" />
+    <property role="TrG5h" value="PlantUmlActivityStart" />
+    <property role="34LRSv" value="start" />
+    <property role="R4oN_" value="start" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2kArA_$51Y_" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA_$51Yy">
+    <property role="EcuMT" value="2676948427448000418" />
+    <property role="TrG5h" value="PlantUmlActivityStop" />
+    <property role="34LRSv" value="stop" />
+    <property role="R4oN_" value="stop" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2kArA_$51YA" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA_$51Yz">
+    <property role="EcuMT" value="2676948427448000419" />
+    <property role="TrG5h" value="PlantUmlActivityAction" />
+    <property role="34LRSv" value=":" />
+    <property role="R4oN_" value="activity action, e.g. :Do something;" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2kArA_$51YC" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+    <node concept="1TJgyj" id="2kArA_$gnba" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427450970826" />
+      <property role="20kJfa" value="spec" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="2kArA_$gjeg" resolve="IPlantUmlActivityActionSpec" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2kArA_$51Y$">
+    <property role="EcuMT" value="2676948427448000420" />
+    <property role="TrG5h" value="IPlantUmlActivityDiagramContent" />
+    <property role="R4oN_" value="Marker interface for nodes that can appear inside a PlantUML activity diagram" />
+    <property role="3GE5qa" value="base" />
+    <node concept="PrWs8" id="2kArA_$51YD" role="PrDN$">
+      <ref role="PrY4T" node="1I7wo92Vg_Z" resolve="IPlantUmlDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA_$gjef">
+    <property role="EcuMT" value="2676948427450954639" />
+    <property role="TrG5h" value="PlantUmlActivityActionTextSpec" />
+    <property role="R4oN_" value="a plain text activity specification" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2kArA_$gjeh" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427450954641" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2kArA_$gjei" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$gjeg" resolve="IPlantUmlActivityActionSpec" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2kArA_$gjeg">
+    <property role="EcuMT" value="2676948427450954640" />
+    <property role="TrG5h" value="IPlantUmlActivityActionSpec" />
+    <property role="R4oN_" value="Something that can serve as the specification/label of an activity action" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+  </node>
 </model>
 

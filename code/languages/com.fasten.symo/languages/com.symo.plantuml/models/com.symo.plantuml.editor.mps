@@ -7,6 +7,7 @@
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -3600,6 +3601,75 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2kArA_$d6vz">
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1XX52x" to="udwj:2kArA_$51Yx" />
+    <node concept="3EZMnI" id="2kArA_$d6v_" role="2wV5jI">
+      <node concept="l2Vlx" id="2kArA_$d6vA" role="2iSdaV" />
+      <node concept="3F0ifn" id="2kArA_$d6vB" role="3EZMnx">
+        <property role="3F0ifm" value="start" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2kArA_$d6vE">
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1XX52x" to="udwj:2kArA_$51Yy" />
+    <node concept="3EZMnI" id="2kArA_$d6vG" role="2wV5jI">
+      <node concept="l2Vlx" id="2kArA_$d6vH" role="2iSdaV" />
+      <node concept="3F0ifn" id="2kArA_$d6vI" role="3EZMnx">
+        <property role="3F0ifm" value="stop" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2kArA_$d6vL">
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1XX52x" to="udwj:2kArA_$51Yz" />
+    <node concept="3EZMnI" id="2kArA_$d6vN" role="2wV5jI">
+      <node concept="l2Vlx" id="2kArA_$d6vO" role="2iSdaV" />
+      <node concept="3F0ifn" id="2kArA_$d6vP" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+      </node>
+      <node concept="3F1sOY" id="2kArA_$jymG" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:2kArA_$gnba" />
+      </node>
+      <node concept="3F0ifn" id="2kArA_$d6vX" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="2kArA_$d6wd">
+    <property role="TrG5h" value="PlantUmlTextualEditorActivityDiagram" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1XX52x" to="udwj:2kArA_$51Yw" resolve="PlantUmlActivityDiagram" />
+    <node concept="1PE4EZ" id="2kArA_$d6wf" role="1PM95z">
+      <ref role="1PE7su" node="6CyxyHhVZuv" resolve="PlantUmlTextualEditorComponentBase" />
+    </node>
+    <node concept="3F2HdR" id="2kArA_$d6wg" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:2kArA_$9W$y" />
+      <node concept="4$FPG" id="2kArA_$d6wh" role="4_6I_">
+        <node concept="3clFbS" id="2kArA_$d6wj" role="2VODD2">
+          <node concept="3clFbF" id="2kArA_$d6wk" role="3cqZAp">
+            <node concept="2pJPEk" id="2kArA_$d6wm" role="3clFbG">
+              <node concept="2pJPED" id="2kArA_$d6wo" role="2pJPEn">
+                <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="2kArA_$d6wp" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2kArA_$jymx">
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1XX52x" to="udwj:2kArA_$gjef" />
+    <node concept="3EZMnI" id="2kArA_$jymz" role="2wV5jI">
+      <node concept="l2Vlx" id="2kArA_$jym$" role="2iSdaV" />
+      <node concept="3F0A7n" id="2kArA_$jymB" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:2kArA_$gjeh" />
       </node>
     </node>
   </node>
