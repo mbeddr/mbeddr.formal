@@ -727,6 +727,9 @@
     <node concept="PrWs8" id="2kArA__3Vrc" role="PzmwI">
       <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
     </node>
+    <node concept="PrWs8" id="2kArA__kaR9" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLT8dmM" resolve="IPlantUmlStatemachineDiagramContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6BNnCp_onfs">
     <property role="EcuMT" value="7634549724642636764" />
