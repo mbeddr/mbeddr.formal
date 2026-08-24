@@ -2159,5 +2159,90 @@
       <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2kArA_BdIhe">
+    <property role="EcuMT" value="2676948427500610638" />
+    <property role="TrG5h" value="PlantUmlActivityFork" />
+    <property role="34LRSv" value="" />
+    <property role="R4oN_" value="PlantUML activity fork/fork again/end fork (parallel processing)" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2kArA_BdIhi" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427500610642" />
+      <property role="TrG5h" value="endLabel" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2kArA_BdIhj" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427500610643" />
+      <property role="20kJfa" value="body" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+    <node concept="1TJgyj" id="2kArA_BdIhk" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427500610644" />
+      <property role="20kJfa" value="againBranches" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_BdIhf" resolve="PlantUmlActivityForkBranch" />
+    </node>
+    <node concept="PrWs8" id="2kArA_BdIhl" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA_BdIhf">
+    <property role="EcuMT" value="2676948427500610639" />
+    <property role="TrG5h" value="PlantUmlActivityForkBranch" />
+    <property role="34LRSv" value="" />
+    <property role="R4oN_" value="PlantUML activity fork again branch" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2kArA_BdIhm" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427500610646" />
+      <property role="20kJfa" value="body" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA_BdIhg">
+    <property role="EcuMT" value="2676948427500610640" />
+    <property role="TrG5h" value="PlantUmlActivitySplit" />
+    <property role="34LRSv" value="" />
+    <property role="R4oN_" value="PlantUML activity split/split again/end split (independent paths)" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2kArA_BdIhn" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427500610647" />
+      <property role="20kJfa" value="body" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+    <node concept="1TJgyj" id="2kArA_BdIho" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427500610648" />
+      <property role="20kJfa" value="againBranches" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_BdIhh" resolve="PlantUmlActivitySplitBranch" />
+    </node>
+    <node concept="PrWs8" id="2kArA_BdIhp" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA_BdIhh">
+    <property role="EcuMT" value="2676948427500610641" />
+    <property role="TrG5h" value="PlantUmlActivitySplitBranch" />
+    <property role="34LRSv" value="" />
+    <property role="R4oN_" value="PlantUML activity split again branch" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2kArA_BdIhq" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427500610650" />
+      <property role="20kJfa" value="body" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
 </model>
 

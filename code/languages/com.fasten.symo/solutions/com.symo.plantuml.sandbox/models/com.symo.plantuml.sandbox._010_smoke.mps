@@ -82,6 +82,21 @@
         <property id="2676948427457692851" name="label" index="11zAFq" />
         <child id="2676948427461088184" name="body" index="11ZrRh" />
       </concept>
+      <concept id="2676948427500610639" name="com.symo.plantuml.structure.PlantUmlActivityForkBranch" flags="ng" index="1248CA">
+        <child id="2676948427500610646" name="body" index="1248CZ" />
+      </concept>
+      <concept id="2676948427500610638" name="com.symo.plantuml.structure.PlantUmlActivityFork" flags="ng" index="1248CB">
+        <property id="2676948427500610642" name="endLabel" index="1248CV" />
+        <child id="2676948427500610643" name="body" index="1248CU" />
+        <child id="2676948427500610644" name="againBranches" index="1248CX" />
+      </concept>
+      <concept id="2676948427500610641" name="com.symo.plantuml.structure.PlantUmlActivitySplitBranch" flags="ng" index="1248CS">
+        <child id="2676948427500610650" name="body" index="1248CN" />
+      </concept>
+      <concept id="2676948427500610640" name="com.symo.plantuml.structure.PlantUmlActivitySplit" flags="ng" index="1248CT">
+        <child id="2676948427500610648" name="againBranches" index="1248CL" />
+        <child id="2676948427500610647" name="body" index="1248CY" />
+      </concept>
       <concept id="2676948427490809733" name="com.symo.plantuml.structure.PlantUmlActivityWhile" flags="ng" index="13xNBG">
         <property id="2676948427490809735" name="endLabel" index="13xNBI" />
         <property id="2676948427490809734" name="isLabel" index="13xNBJ" />
@@ -2604,6 +2619,46 @@
       </node>
       <node concept="11cB7b" id="2kArA_B6QFB" role="1pqCzW" />
       <node concept="1pqCE1" id="2kArA_B6QFC" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_BogXL">
+    <property role="TrG5h" value="_056_activity_diagram_fork_split" />
+    <node concept="11cB79" id="2kArA_BogXM" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity fork split" />
+      <node concept="1pqCwu" id="2kArA_BogXQ" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_BogXR" role="1pqCzW" />
+      <node concept="1248CB" id="2kArA_BogXS" role="1pqCzW">
+        <property role="1248CV" value="and" />
+        <node concept="11cB7a" id="2kArA_BogXT" role="1248CU">
+          <node concept="11pPRA" id="2kArA_BogXV" role="11pLMz">
+            <property role="11pPRS" value="action 1" />
+          </node>
+        </node>
+        <node concept="1248CA" id="2kArA_BogXW" role="1248CX">
+          <node concept="11cB7a" id="2kArA_BogXX" role="1248CZ">
+            <node concept="11pPRA" id="2kArA_BogXZ" role="11pLMz">
+              <property role="11pPRS" value="action 2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1248CT" id="2kArA_BogY0" role="1pqCzW">
+        <node concept="11cB7a" id="2kArA_BogY1" role="1248CY">
+          <node concept="11pPRA" id="2kArA_BogY3" role="11pLMz">
+            <property role="11pPRS" value="A" />
+          </node>
+        </node>
+        <node concept="1248CS" id="2kArA_BogY4" role="1248CL">
+          <node concept="11cB7a" id="2kArA_BogY5" role="1248CN">
+            <node concept="11pPRA" id="2kArA_BogY7" role="11pLMz">
+              <property role="11pPRS" value="B" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_BogY8" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_BogY9" role="1pqCzW" />
     </node>
   </node>
 </model>
