@@ -2325,5 +2325,16 @@
       <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2kArA_CgMNn">
+    <property role="EcuMT" value="2676948427518192855" />
+    <property role="TrG5h" value="PlantUmlActivityBreak" />
+    <property role="34LRSv" value="break" />
+    <property role="R4oN_" value="PlantUML activity break (exit a repeat loop early)" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2kArA_CgMNo" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
 </model>
 

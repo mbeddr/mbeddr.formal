@@ -4534,5 +4534,13 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="2kArA_Ckr4R">
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1XX52x" to="udwj:2kArA_CgMNn" />
+    <node concept="3F0ifn" id="2kArA_Ckr53" role="2wV5jI">
+      <property role="3F0ifm" value="break" />
+      <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+    </node>
+  </node>
 </model>
 

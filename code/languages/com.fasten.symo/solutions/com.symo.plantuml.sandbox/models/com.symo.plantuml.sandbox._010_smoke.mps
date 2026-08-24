@@ -139,6 +139,7 @@
       <concept id="8400506447496619781" name="com.symo.plantuml.structure.PackageDeclaration" flags="ng" index="14ZFWu">
         <child id="8400506447496650874" name="content" index="14Zzxx" />
       </concept>
+      <concept id="2676948427518192855" name="com.symo.plantuml.structure.PlantUmlActivityBreak" flags="ng" index="1dpkaY" />
       <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
         <child id="521530426072143424" name="substructure" index="3eE$XC" />
       </concept>
@@ -2771,6 +2772,7 @@
     <node concept="11cB79" id="2kArA_Cdg$Y" role="1pqCw0">
       <property role="145Srp" value="100" />
       <property role="TrG5h" value="activity note" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA_Cdg_2" role="1pqCzW" />
       <node concept="11cB78" id="2kArA_Cdg_3" role="1pqCzW" />
       <node concept="11cB7a" id="2kArA_Cdg_4" role="1pqCzW">
@@ -2805,6 +2807,49 @@
       </node>
       <node concept="11cB7b" id="2kArA_Cdg_i" role="1pqCzW" />
       <node concept="1pqCE1" id="2kArA_Cdg_j" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_Co09i">
+    <property role="TrG5h" value="_060_activity_diagram_break" />
+    <node concept="11cB79" id="2kArA_Co09j" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity break" />
+      <node concept="1pqCwu" id="2kArA_Co09n" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_Co09o" role="1pqCzW" />
+      <node concept="13VZ7R" id="2kArA_Co09p" role="1pqCzW">
+        <node concept="11cB7a" id="2kArA_Co09q" role="13VZ78">
+          <node concept="11pPRA" id="2kArA_Co09s" role="11pLMz">
+            <property role="11pPRS" value="test something" />
+          </node>
+        </node>
+        <node concept="11zAF4" id="2kArA_Co09t" role="13VZ78">
+          <property role="11zAFo" value="no" />
+          <node concept="10je4U" id="2kArA_Co09u" role="10jbVN">
+            <property role="10je4W" value="something went wrong?" />
+          </node>
+          <node concept="11cB7a" id="2kArA_Co09v" role="11ZrRr">
+            <node concept="11pPRA" id="2kArA_Co09x" role="11pLMz">
+              <property role="11pPRS" value="OK" />
+            </node>
+          </node>
+          <node concept="1dpkaY" id="2kArA_Co09y" role="11ZrRr" />
+        </node>
+        <node concept="11cB7a" id="2kArA_Co09z" role="13VZ78">
+          <node concept="11pPRA" id="2kArA_Co09_" role="11pLMz">
+            <property role="11pPRS" value="alert error" />
+          </node>
+        </node>
+        <node concept="10je4U" id="2kArA_Co09A" role="13VZ7b">
+          <property role="10je4W" value="something went wrong?" />
+        </node>
+      </node>
+      <node concept="11cB7a" id="2kArA_Co09B" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_Co09D" role="11pLMz">
+          <property role="11pPRS" value="success" />
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_Co09E" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_Co09F" role="1pqCzW" />
     </node>
   </node>
 </model>

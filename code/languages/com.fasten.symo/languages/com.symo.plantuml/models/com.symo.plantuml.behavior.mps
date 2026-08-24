@@ -6036,5 +6036,24 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="2kArA_CgRod">
+    <ref role="13h7C2" to="udwj:2kArA_CgMNn" resolve="PlantUmlActivityBreak" />
+    <node concept="13hLZK" id="2kArA_CgRog" role="13h7CW">
+      <node concept="3clFbS" id="2kArA_CgRoi" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="2kArA_CgRoj" role="13h7CS">
+      <property role="TrG5h" value="text" />
+      <property role="13i0it" value="true" />
+      <ref role="13i0hy" node="1I7wo92VgIo" resolve="text" />
+      <node concept="17QB3L" id="2kArA_CgRon" role="3clF45" />
+      <node concept="3clFbS" id="2kArA_CgRoo" role="3clF47">
+        <node concept="3cpWs6" id="2kArA_CgRop" role="3cqZAp">
+          <node concept="Xl_RD" id="2kArA_CgRoq" role="3cqZAk">
+            <property role="Xl_RC" value="break" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
