@@ -2853,5 +2853,108 @@
       <node concept="1pqCE1" id="2kArA_Co09F" role="1pqCzW" />
     </node>
   </node>
+  <node concept="1pqNnw" id="2kArA_Co0aw">
+    <property role="TrG5h" value="_059_activity_diagram_note_placements" />
+    <node concept="11cB79" id="2kArA_Co0ax" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity note placements" />
+      <node concept="1pqCwu" id="2kArA_Co0a_" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_Co0aA" role="1pqCzW" />
+      <node concept="12imU8" id="2kArA_Co0aB" role="1pqCzW">
+        <property role="12imUb" value="Process" />
+        <node concept="11cB7a" id="2kArA_Co0aC" role="12imUa">
+          <node concept="11pPRA" id="2kArA_Co0aE" role="11pLMz">
+            <property role="11pPRS" value="step one" />
+          </node>
+        </node>
+        <node concept="1oxsuH" id="2kArA_Co0aF" role="12imUa">
+          <property role="1oxspX" value="1I7wo930$vW/right" />
+          <node concept="1Pa9Pv" id="2kArA_Co0aH" role="1oxsuN">
+            <node concept="1PaTwC" id="2kArA_Co0aI" role="1PaQFQ">
+              <node concept="3oM_SD" id="2kArA_Co0aK" role="1PaTwD">
+                <property role="3oM_SC" value="applies" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0aL" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0aM" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0aN" role="1PaTwD">
+                <property role="3oM_SC" value="partition" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11zAF4" id="2kArA_Co0aO" role="1pqCzW">
+        <property role="11zAFo" value="yes" />
+        <node concept="10je4U" id="2kArA_Co0aP" role="10jbVN">
+          <property role="10je4W" value="need retry?" />
+        </node>
+        <node concept="11cB7a" id="2kArA_Co0aQ" role="11ZrRr">
+          <node concept="11pPRA" id="2kArA_Co0aS" role="11pLMz">
+            <property role="11pPRS" value="retry" />
+          </node>
+        </node>
+        <node concept="1oxsuH" id="2kArA_Co0aT" role="11ZrRr">
+          <property role="1oxspX" value="1I7wo930$vW/right" />
+          <node concept="1Pa9Pv" id="2kArA_Co0aV" role="1oxsuN">
+            <node concept="1PaTwC" id="2kArA_Co0aW" role="1PaQFQ">
+              <node concept="3oM_SD" id="2kArA_Co0aY" role="1PaTwD">
+                <property role="3oM_SC" value="applies" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0aZ" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0b0" role="1PaTwD">
+                <property role="3oM_SC" value="an" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0b1" role="1PaTwD">
+                <property role="3oM_SC" value="if" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0b2" role="1PaTwD">
+                <property role="3oM_SC" value="branch" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="13VZ7R" id="2kArA_Co0b3" role="1pqCzW">
+        <node concept="11cB7a" id="2kArA_Co0b4" role="13VZ78">
+          <node concept="11pPRA" id="2kArA_Co0b6" role="11pLMz">
+            <property role="11pPRS" value="poll" />
+          </node>
+        </node>
+        <node concept="1oxsuH" id="2kArA_Co0b7" role="13VZ78">
+          <property role="1oxspX" value="1I7wo930$vW/right" />
+          <node concept="1Pa9Pv" id="2kArA_Co0b9" role="1oxsuN">
+            <node concept="1PaTwC" id="2kArA_Co0ba" role="1PaQFQ">
+              <node concept="3oM_SD" id="2kArA_Co0bc" role="1PaTwD">
+                <property role="3oM_SC" value="applies" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0bd" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0be" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0bf" role="1PaTwD">
+                <property role="3oM_SC" value="loop" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0bg" role="1PaTwD">
+                <property role="3oM_SC" value="body" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="10je4U" id="2kArA_Co0bh" role="13VZ7b">
+          <property role="10je4W" value="done?" />
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_Co0bi" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_Co0bj" role="1pqCzW" />
+    </node>
+  </node>
 </model>
 
