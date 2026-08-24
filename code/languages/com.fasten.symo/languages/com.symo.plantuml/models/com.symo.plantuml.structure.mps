@@ -2267,5 +2267,59 @@
       <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2kArA_BDOC1">
+    <property role="EcuMT" value="2676948427507976705" />
+    <property role="TrG5h" value="PlantUmlActivityDetach" />
+    <property role="34LRSv" value="detach" />
+    <property role="R4oN_" value="PlantUML activity detach (silently end a flow, no stop bubble)" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2kArA_BDOC5" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA_BDOC2">
+    <property role="EcuMT" value="2676948427507976706" />
+    <property role="TrG5h" value="PlantUmlActivityKill" />
+    <property role="34LRSv" value="kill" />
+    <property role="R4oN_" value="PlantUML activity kill (end a flow with a kill marker)" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2kArA_BDOC6" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA_BDOC3">
+    <property role="EcuMT" value="2676948427507976707" />
+    <property role="TrG5h" value="PlantUmlActivityLabel" />
+    <property role="34LRSv" value="label" />
+    <property role="R4oN_" value="PlantUML activity label (named anchor point for goto)" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2kArA_BDOC7" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427507976711" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2kArA_BDOC8" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA_BDOC4">
+    <property role="EcuMT" value="2676948427507976708" />
+    <property role="TrG5h" value="PlantUmlActivityGoto" />
+    <property role="34LRSv" value="goto" />
+    <property role="R4oN_" value="PlantUML activity goto (experimental jump to a label)" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2kArA_BDOC9" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427507976713" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2kArA_BDOCa" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
 </model>
 

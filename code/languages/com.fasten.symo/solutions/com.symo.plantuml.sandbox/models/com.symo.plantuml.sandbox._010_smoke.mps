@@ -101,6 +101,14 @@
         <property id="2676948427504287970" name="name" index="12imUb" />
         <child id="2676948427504287971" name="body" index="12imUa" />
       </concept>
+      <concept id="2676948427507976705" name="com.symo.plantuml.structure.PlantUmlActivityDetach" flags="ng" index="12wihC" />
+      <concept id="2676948427507976707" name="com.symo.plantuml.structure.PlantUmlActivityLabel" flags="ng" index="12wihE">
+        <property id="2676948427507976711" name="name" index="12wihI" />
+      </concept>
+      <concept id="2676948427507976706" name="com.symo.plantuml.structure.PlantUmlActivityKill" flags="ng" index="12wihF" />
+      <concept id="2676948427507976708" name="com.symo.plantuml.structure.PlantUmlActivityGoto" flags="ng" index="12wihH">
+        <property id="2676948427507976713" name="name" index="12wihw" />
+      </concept>
       <concept id="2676948427490809733" name="com.symo.plantuml.structure.PlantUmlActivityWhile" flags="ng" index="13xNBG">
         <property id="2676948427490809735" name="endLabel" index="13xNBI" />
         <property id="2676948427490809734" name="isLabel" index="13xNBJ" />
@@ -2671,6 +2679,7 @@
     <node concept="11cB79" id="2kArA_BAjM3" role="1pqCw0">
       <property role="145Srp" value="100" />
       <property role="TrG5h" value="activity partition" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA_BAjM7" role="1pqCzW" />
       <node concept="11cB78" id="2kArA_BAjM8" role="1pqCzW" />
       <node concept="12imU8" id="2kArA_BAjM9" role="1pqCzW">
@@ -2696,6 +2705,60 @@
       </node>
       <node concept="11cB7b" id="2kArA_BAjMk" role="1pqCzW" />
       <node concept="1pqCE1" id="2kArA_BAjMl" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_BS1QH">
+    <property role="TrG5h" value="_058_activity_diagram_label_goto_detach_kill" />
+    <node concept="11cB79" id="2kArA_BS1QI" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity label goto detach kill" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_BS1QM" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_BS1QN" role="1pqCzW" />
+      <node concept="11cB7a" id="2kArA_BS1QO" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_BS1QQ" role="11pLMz">
+          <property role="11pPRS" value="read data" />
+        </node>
+      </node>
+      <node concept="12wihE" id="2kArA_BS1QR" role="1pqCzW">
+        <property role="12wihI" value="retry" />
+      </node>
+      <node concept="11zAF4" id="2kArA_BS1QS" role="1pqCzW">
+        <property role="11zAFo" value="yes" />
+        <node concept="10je4U" id="2kArA_BS1QT" role="10jbVN">
+          <property role="10je4W" value="data corrupted?" />
+        </node>
+        <node concept="11cB7a" id="2kArA_BS1QU" role="11ZrRr">
+          <node concept="11pPRA" id="2kArA_BS1QW" role="11pLMz">
+            <property role="11pPRS" value="log error" />
+          </node>
+        </node>
+        <node concept="12wihF" id="2kArA_BS1QX" role="11ZrRr" />
+        <node concept="11zAF7" id="2kArA_BS1QY" role="11ZrRs">
+          <property role="11zAFq" value="no" />
+          <node concept="11cB7a" id="2kArA_BS1QZ" role="11ZrRh">
+            <node concept="11pPRA" id="2kArA_BS1R1" role="11pLMz">
+              <property role="11pPRS" value="process data" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11zAF4" id="2kArA_BS1R2" role="1pqCzW">
+        <property role="11zAFo" value="yes" />
+        <node concept="10je4U" id="2kArA_BS1R3" role="10jbVN">
+          <property role="10je4W" value="need retry?" />
+        </node>
+        <node concept="12wihH" id="2kArA_BS1R4" role="11ZrRr">
+          <property role="12wihw" value="retry" />
+        </node>
+      </node>
+      <node concept="11cB7a" id="2kArA_BS1R5" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_BS1R7" role="11pLMz">
+          <property role="11pPRS" value="cleanup" />
+        </node>
+      </node>
+      <node concept="12wihC" id="2kArA_BS1R8" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_BS1R9" role="1pqCzW" />
     </node>
   </node>
 </model>
