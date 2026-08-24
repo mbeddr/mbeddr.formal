@@ -88,6 +88,14 @@
         <child id="2676948427490809737" name="body" index="13xNBw" />
         <child id="2676948427490809736" name="condition" index="13xNBx" />
       </concept>
+      <concept id="2676948427496118979" name="com.symo.plantuml.structure.PlantUmlActivityCase" flags="ng" index="13P3iE">
+        <property id="2676948427496118983" name="label" index="13P3iI" />
+        <child id="2676948427496118984" name="body" index="13P3ix" />
+      </concept>
+      <concept id="2676948427496118978" name="com.symo.plantuml.structure.PlantUmlActivitySwitch" flags="ng" index="13P3iF">
+        <child id="2676948427496118981" name="cases" index="13P3iG" />
+        <child id="2676948427496118980" name="condition" index="13P3iH" />
+      </concept>
       <concept id="2676948427493449630" name="com.symo.plantuml.structure.PlantUmlActivityRepeat" flags="ng" index="13VZ7R">
         <property id="2676948427493449632" name="notLabel" index="13VZ79" />
         <property id="2676948427493449631" name="isLabel" index="13VZ7Q" />
@@ -2563,6 +2571,38 @@
       </node>
       <node concept="11cB7b" id="2kArA_ATdcr" role="1pqCzW" />
       <node concept="1pqCE1" id="2kArA_ATdcs" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_B6QFm">
+    <property role="TrG5h" value="_055_activity_diagram_switch" />
+    <node concept="11cB79" id="2kArA_B6QFn" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity switch" />
+      <node concept="1pqCwu" id="2kArA_B6QFr" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_B6QFs" role="1pqCzW" />
+      <node concept="13P3iF" id="2kArA_B6QFt" role="1pqCzW">
+        <node concept="10je4U" id="2kArA_B6QFu" role="13P3iH">
+          <property role="10je4W" value="test?" />
+        </node>
+        <node concept="13P3iE" id="2kArA_B6QFv" role="13P3iG">
+          <property role="13P3iI" value="condition A" />
+          <node concept="11cB7a" id="2kArA_B6QFw" role="13P3ix">
+            <node concept="11pPRA" id="2kArA_B6QFy" role="11pLMz">
+              <property role="11pPRS" value="Text 1" />
+            </node>
+          </node>
+        </node>
+        <node concept="13P3iE" id="2kArA_B6QFz" role="13P3iG">
+          <property role="13P3iI" value="condition B" />
+          <node concept="11cB7a" id="2kArA_B6QF$" role="13P3ix">
+            <node concept="11pPRA" id="2kArA_B6QFA" role="11pLMz">
+              <property role="11pPRS" value="Text 2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_B6QFB" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_B6QFC" role="1pqCzW" />
     </node>
   </node>
 </model>

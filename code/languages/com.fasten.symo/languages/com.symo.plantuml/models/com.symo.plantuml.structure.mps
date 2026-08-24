@@ -2115,5 +2115,49 @@
       <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2kArA_AW_F2">
+    <property role="EcuMT" value="2676948427496118978" />
+    <property role="TrG5h" value="PlantUmlActivitySwitch" />
+    <property role="34LRSv" value="" />
+    <property role="R4oN_" value="PlantUML activity switch/case/endswitch" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2kArA_AW_F4" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427496118980" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="2kArA__qCXk" resolve="IPlantUmlCondition" />
+    </node>
+    <node concept="1TJgyj" id="2kArA_AW_F5" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427496118981" />
+      <property role="20kJfa" value="cases" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_AW_F3" resolve="PlantUmlActivityCase" />
+    </node>
+    <node concept="PrWs8" id="2kArA_AW_F6" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA_AW_F3">
+    <property role="EcuMT" value="2676948427496118979" />
+    <property role="TrG5h" value="PlantUmlActivityCase" />
+    <property role="34LRSv" value="" />
+    <property role="R4oN_" value="PlantUML activity switch case branch" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="2kArA_AW_F7" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427496118983" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2kArA_AW_F8" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427496118984" />
+      <property role="20kJfa" value="body" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
 </model>
 
