@@ -54,6 +54,14 @@
       <concept id="8677912475548557093" name="com.symo.plantuml.structure.ArrowLeftLine" flags="ng" index="TrFLe" />
       <concept id="8677912475548557092" name="com.symo.plantuml.structure.ArrowLine" flags="ng" index="TrFLf" />
       <concept id="7647822637844199905" name="com.symo.plantuml.structure.PlantUmlUsecaseDiagram" flags="ng" index="VLBZa" />
+      <concept id="2676948427470442323" name="com.symo.plantuml.structure.PlantUmlTextualCondition" flags="ng" index="10je4U">
+        <property id="2676948427470442325" name="text" index="10je4W" />
+      </concept>
+      <concept id="2676948427474722363" name="com.symo.plantuml.structure.PlantUmlActivityElseIf" flags="ng" index="10zr1i">
+        <property id="2676948427474722364" name="thenLabel" index="10zr1l" />
+        <child id="2676948427474739188" name="condition" index="10yB6t" />
+        <child id="2676948427474739191" name="body" index="10yB6u" />
+      </concept>
       <concept id="2676948427448000417" name="com.symo.plantuml.structure.PlantUmlActivityStart" flags="ng" index="11cB78" />
       <concept id="2676948427448000416" name="com.symo.plantuml.structure.PlantUmlActivityDiagram" flags="ng" index="11cB79" />
       <concept id="2676948427448000419" name="com.symo.plantuml.structure.PlantUmlActivityAction" flags="ng" index="11cB7a">
@@ -65,7 +73,8 @@
       </concept>
       <concept id="2676948427457692845" name="com.symo.plantuml.structure.PlantUmlActivityIf" flags="ng" index="11zAF4">
         <property id="2676948427457692849" name="thenLabel" index="11zAFo" />
-        <property id="2676948427457692848" name="condition" index="11zAFp" />
+        <child id="2676948427470459034" name="condition" index="10jbVN" />
+        <child id="2676948427474739194" name="elseIfBranches" index="10yB6j" />
         <child id="2676948427461088178" name="thenBody" index="11ZrRr" />
         <child id="2676948427461088181" name="elseBranch" index="11ZrRs" />
       </concept>
@@ -2421,18 +2430,20 @@
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA__0GII" role="1pqCzW" />
       <node concept="11cB78" id="2kArA__0GIJ" role="1pqCzW" />
-      <node concept="11zAF4" id="2kArA__0GIK" role="1pqCzW">
-        <property role="11zAFp" value="x &gt; 0" />
+      <node concept="11zAF4" id="2kArA__$rZI" role="1pqCzW">
         <property role="11zAFo" value="yes" />
-        <node concept="11cB7a" id="2kArA__0GIL" role="11ZrRr">
-          <node concept="11pPRA" id="2kArA__0GIN" role="11pLMz">
+        <node concept="10je4U" id="2kArA__$rZK" role="10jbVN">
+          <property role="10je4W" value="x &gt; 0" />
+        </node>
+        <node concept="11cB7a" id="2kArA__$rZL" role="11ZrRr">
+          <node concept="11pPRA" id="2kArA__$rZN" role="11pLMz">
             <property role="11pPRS" value="do something" />
           </node>
         </node>
-        <node concept="11zAF7" id="2kArA__0GIO" role="11ZrRs">
+        <node concept="11zAF7" id="2kArA__$rZO" role="11ZrRs">
           <property role="11zAFq" value="no" />
-          <node concept="11cB7a" id="2kArA__0GIP" role="11ZrRh">
-            <node concept="11pPRA" id="2kArA__0GIR" role="11pLMz">
+          <node concept="11cB7a" id="2kArA__$rZP" role="11ZrRh">
+            <node concept="11pPRA" id="2kArA__$rZR" role="11pLMz">
               <property role="11pPRS" value="do something else" />
             </node>
           </node>
@@ -2440,6 +2451,58 @@
       </node>
       <node concept="11cB7b" id="2kArA__0GIS" role="1pqCzW" />
       <node concept="1pqCE1" id="2kArA__0GIT" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA__OPsC">
+    <property role="TrG5h" value="_052_activity_diagram_elseif" />
+    <node concept="11cB79" id="2kArA__OPsD" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity elseif" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA__OPsH" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA__OPsI" role="1pqCzW" />
+      <node concept="11zAF4" id="2kArA__OPsJ" role="1pqCzW">
+        <property role="11zAFo" value="yes" />
+        <node concept="10je4U" id="2kArA__OPsL" role="10jbVN">
+          <property role="10je4W" value="x == 1" />
+        </node>
+        <node concept="11cB7a" id="2kArA__OPsM" role="11ZrRr">
+          <node concept="11pPRA" id="2kArA__OPsO" role="11pLMz">
+            <property role="11pPRS" value="handle one" />
+          </node>
+        </node>
+        <node concept="10zr1i" id="2kArA__OPsP" role="10yB6j">
+          <property role="10zr1l" value="yes" />
+          <node concept="10je4U" id="2kArA__OPsR" role="10yB6t">
+            <property role="10je4W" value="x == 2" />
+          </node>
+          <node concept="11cB7a" id="2kArA__OPsS" role="10yB6u">
+            <node concept="11pPRA" id="2kArA__OPsU" role="11pLMz">
+              <property role="11pPRS" value="handle two" />
+            </node>
+          </node>
+        </node>
+        <node concept="10zr1i" id="2kArA__OPsV" role="10yB6j">
+          <node concept="10je4U" id="2kArA__OPsX" role="10yB6t">
+            <property role="10je4W" value="x == 3" />
+          </node>
+          <node concept="11cB7a" id="2kArA__OPsY" role="10yB6u">
+            <node concept="11pPRA" id="2kArA__OPt0" role="11pLMz">
+              <property role="11pPRS" value="handle three" />
+            </node>
+          </node>
+        </node>
+        <node concept="11zAF7" id="2kArA__OPt1" role="11ZrRs">
+          <property role="11zAFq" value="no" />
+          <node concept="11cB7a" id="2kArA__OPt2" role="11ZrRh">
+            <node concept="11pPRA" id="2kArA__OPt4" role="11pLMz">
+              <property role="11pPRS" value="handle default" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA__OPt5" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA__OPt6" role="1pqCzW" />
     </node>
   </node>
 </model>

@@ -1945,11 +1945,6 @@
     <property role="R4oN_" value="if (condition) then (label)" />
     <property role="3GE5qa" value="diagram.uml.activity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
-    <node concept="1TJgyi" id="2kArA_$E0iK" role="1TKVEl">
-      <property role="IQ2nx" value="2676948427457692848" />
-      <property role="TrG5h" value="condition" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="2kArA_$E0iL" role="1TKVEl">
       <property role="IQ2nx" value="2676948427457692849" />
       <property role="TrG5h" value="thenLabel" />
@@ -1971,6 +1966,19 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="2kArA_$E0iI" resolve="PlantUmlActivityElse" />
     </node>
+    <node concept="1TJgyj" id="2kArA__qH2q" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427470459034" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="2kArA__qCXk" resolve="IPlantUmlCondition" />
+    </node>
+    <node concept="1TJgyj" id="2kArA__F1ZU" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427474739194" />
+      <property role="20kJfa" value="elseIfBranches" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA__EXSV" resolve="PlantUmlActivityElseIf" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2kArA_$E0iI">
     <property role="EcuMT" value="2676948427457692846" />
@@ -1986,6 +1994,53 @@
     </node>
     <node concept="1TJgyj" id="2kArA_$QXeS" role="1TKVEi">
       <property role="IQ2ns" value="2676948427461088184" />
+      <property role="20kJfa" value="body" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2kArA__qCXj">
+    <property role="EcuMT" value="2676948427470442323" />
+    <property role="TrG5h" value="PlantUmlTextualCondition" />
+    <property role="R4oN_" value="a plain text condition" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="2kArA__qCXl" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427470442325" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2kArA__qCXm" role="PzmwI">
+      <ref role="PrY4T" node="2kArA__qCXk" resolve="IPlantUmlCondition" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2kArA__qCXk">
+    <property role="EcuMT" value="2676948427470442324" />
+    <property role="TrG5h" value="IPlantUmlCondition" />
+    <property role="R4oN_" value="Something that can serve as a boolean condition expression" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+  </node>
+  <node concept="1TIwiD" id="2kArA__EXSV">
+    <property role="EcuMT" value="2676948427474722363" />
+    <property role="TrG5h" value="PlantUmlActivityElseIf" />
+    <property role="34LRSv" value="elseif" />
+    <property role="R4oN_" value="elseif (condition) then (label)" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="2kArA__EXSW" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427474722364" />
+      <property role="TrG5h" value="thenLabel" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="2kArA__F1ZO" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427474739188" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="2kArA__qCXk" resolve="IPlantUmlCondition" />
+    </node>
+    <node concept="1TJgyj" id="2kArA__F1ZR" role="1TKVEi">
+      <property role="IQ2ns" value="2676948427474739191" />
       <property role="20kJfa" value="body" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />

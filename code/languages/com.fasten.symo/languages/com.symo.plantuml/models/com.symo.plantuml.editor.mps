@@ -9,6 +9,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -459,6 +460,7 @@
       </concept>
       <concept id="1227022210526" name="jetbrains.mps.baseLanguage.collections.structure.ClearAllElementsOperation" flags="nn" index="2Kehj3" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="24kQdi" id="1I7wo92VgA6">
@@ -3612,34 +3614,36 @@
   </node>
   <node concept="24kQdi" id="2kArA_$d6vz">
     <property role="3GE5qa" value="diagram.uml.activity" />
-    <ref role="1XX52x" to="udwj:2kArA_$51Yx" />
+    <ref role="1XX52x" to="udwj:2kArA_$51Yx" resolve="PlantUmlActivityStart" />
     <node concept="3EZMnI" id="2kArA_$d6v_" role="2wV5jI">
       <node concept="l2Vlx" id="2kArA_$d6vA" role="2iSdaV" />
       <node concept="3F0ifn" id="2kArA_$d6vB" role="3EZMnx">
         <property role="3F0ifm" value="start" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="2kArA_$d6vE">
     <property role="3GE5qa" value="diagram.uml.activity" />
-    <ref role="1XX52x" to="udwj:2kArA_$51Yy" />
+    <ref role="1XX52x" to="udwj:2kArA_$51Yy" resolve="PlantUmlActivityStop" />
     <node concept="3EZMnI" id="2kArA_$d6vG" role="2wV5jI">
       <node concept="l2Vlx" id="2kArA_$d6vH" role="2iSdaV" />
       <node concept="3F0ifn" id="2kArA_$d6vI" role="3EZMnx">
         <property role="3F0ifm" value="stop" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="2kArA_$d6vL">
     <property role="3GE5qa" value="diagram.uml.activity" />
-    <ref role="1XX52x" to="udwj:2kArA_$51Yz" />
+    <ref role="1XX52x" to="udwj:2kArA_$51Yz" resolve="PlantUmlActivityAction" />
     <node concept="3EZMnI" id="2kArA_$d6vN" role="2wV5jI">
       <node concept="l2Vlx" id="2kArA_$d6vO" role="2iSdaV" />
       <node concept="3F0ifn" id="2kArA_$d6vP" role="3EZMnx">
         <property role="3F0ifm" value=":" />
       </node>
       <node concept="3F1sOY" id="2kArA_$jymG" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:2kArA_$gnba" />
+        <ref role="1NtTu8" to="udwj:2kArA_$gnba" resolve="spec" />
       </node>
       <node concept="3F0ifn" id="2kArA_$d6vX" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -3654,13 +3658,13 @@
       <ref role="1PE7su" node="6CyxyHhVZuv" resolve="PlantUmlTextualEditorComponentBase" />
     </node>
     <node concept="3F2HdR" id="2kArA_$d6wg" role="2wV5jI">
-      <ref role="1NtTu8" to="udwj:2kArA_$9W$y" />
+      <ref role="1NtTu8" to="udwj:2kArA_$9W$y" resolve="content" />
       <node concept="4$FPG" id="2kArA_$d6wh" role="4_6I_">
         <node concept="3clFbS" id="2kArA_$d6wj" role="2VODD2">
           <node concept="3clFbF" id="2kArA_$d6wk" role="3cqZAp">
             <node concept="2pJPEk" id="2kArA_$d6wm" role="3clFbG">
               <node concept="2pJPED" id="2kArA_$d6wo" role="2pJPEn">
-                <ref role="2pJxaS" to="udwj:6BNnCp_okdH" />
+                <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
               </node>
             </node>
           </node>
@@ -3671,51 +3675,102 @@
   </node>
   <node concept="24kQdi" id="2kArA_$jymx">
     <property role="3GE5qa" value="diagram.uml.activity" />
-    <ref role="1XX52x" to="udwj:2kArA_$gjef" />
+    <ref role="1XX52x" to="udwj:2kArA_$gjef" resolve="PlantUmlActivityActionTextSpec" />
     <node concept="3EZMnI" id="2kArA_$jymz" role="2wV5jI">
       <node concept="l2Vlx" id="2kArA_$jym$" role="2iSdaV" />
       <node concept="3F0A7n" id="2kArA_$jymB" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:2kArA_$gjeh" />
+        <ref role="1NtTu8" to="udwj:2kArA_$gjeh" resolve="text" />
       </node>
     </node>
   </node>
   <node concept="24kQdi" id="2kArA_$KwwY">
     <property role="3GE5qa" value="diagram.uml.activity" />
-    <ref role="1XX52x" to="udwj:2kArA_$E0iH" />
+    <ref role="1XX52x" to="udwj:2kArA_$E0iH" resolve="PlantUmlActivityIf" />
     <node concept="3EZMnI" id="2kArA_$Kwx0" role="2wV5jI">
       <node concept="l2Vlx" id="2kArA_$Kwx1" role="2iSdaV" />
       <node concept="3F0ifn" id="2kArA_$Kwx2" role="3EZMnx">
         <property role="3F0ifm" value="if" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
       </node>
       <node concept="3F0ifn" id="2kArA_$Kwxs" role="3EZMnx">
         <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" />
+        <node concept="11LMrY" id="2kArA_ArapN" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="2kArA_Auspu" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
       </node>
-      <node concept="3F0A7n" id="2kArA_$Kwx5" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:2kArA_$E0iK" />
+      <node concept="3F1sOY" id="2kArA__xbds" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:2kArA__qH2q" resolve="condition" />
       </node>
       <node concept="3F0ifn" id="2kArA_$Kwx_" role="3EZMnx">
         <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" />
       </node>
       <node concept="3F0ifn" id="2kArA_$Kwxv" role="3EZMnx">
         <property role="3F0ifm" value="then" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
       </node>
       <node concept="3F0ifn" id="2kArA_$KwxF" role="3EZMnx">
         <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" />
+        <node concept="11LMrY" id="2kArA_ArapQ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="2kArA_AxJ4C" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
       </node>
       <node concept="3F0A7n" id="2kArA_$Kwx8" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:2kArA_$E0iL" />
+        <ref role="1NtTu8" to="udwj:2kArA_$E0iL" resolve="thenLabel" />
       </node>
       <node concept="3F0ifn" id="2kArA_$KwxI" role="3EZMnx">
         <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" />
+      </node>
+      <node concept="3F2HdR" id="2kArA__LzEq" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:2kArA__F1ZU" resolve="elseIfBranches" />
+        <node concept="4$FPG" id="2kArA__LzEr" role="4_6I_">
+          <node concept="3clFbS" id="2kArA__LzEt" role="2VODD2">
+            <node concept="3clFbF" id="2kArA__LzEu" role="3cqZAp">
+              <node concept="2pJPEk" id="2kArA__LzEw" role="3clFbG">
+                <node concept="2pJPED" id="2kArA__LzEy" role="2pJPEn">
+                  <ref role="2pJxaS" to="udwj:2kArA__EXSV" resolve="PlantUmlActivityElseIf" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="2kArA__LzEz" role="2czzBx" />
+        <node concept="pVoyu" id="2kArA__LzE$" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pkWqt" id="2kArA__OPtk" role="pqm2j">
+          <node concept="3clFbS" id="2kArA__OPtm" role="2VODD2">
+            <node concept="3cpWs6" id="2kArA__OPtn" role="3cqZAp">
+              <node concept="2OqwBi" id="2kArA__OPto" role="3cqZAk">
+                <node concept="2OqwBi" id="2kArA__OPtr" role="2Oq$k0">
+                  <node concept="pncrf" id="2kArA__OPtu" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="2kArA__OPtv" role="2OqNvi">
+                    <ref role="3TtcxE" to="udwj:2kArA__F1ZU" resolve="elseIfBranches" />
+                  </node>
+                </node>
+                <node concept="3GX2aA" id="2kArA__OPtw" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F2HdR" id="2kArA_$Xtlq" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:2kArA_$QXeM" />
+        <ref role="1NtTu8" to="udwj:2kArA_$QXeM" resolve="thenBody" />
         <node concept="4$FPG" id="2kArA_$Xtlr" role="4_6I_">
           <node concept="3clFbS" id="2kArA_$Xtlt" role="2VODD2">
             <node concept="3clFbF" id="2kArA_$Xtlu" role="3cqZAp">
               <node concept="2pJPEk" id="2kArA_$Xtlw" role="3clFbG">
                 <node concept="2pJPED" id="2kArA_$Xtly" role="2pJPEn">
-                  <ref role="2pJxaS" to="udwj:6BNnCp_okdH" />
+                  <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
                 </node>
               </node>
             </node>
@@ -3730,7 +3785,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="2kArA_$XtlC" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:2kArA_$QXeP" />
+        <ref role="1NtTu8" to="udwj:2kArA_$QXeP" resolve="elseBranch" />
         <node concept="pVoyu" id="2kArA_$XtlD" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -3741,7 +3796,7 @@
                 <node concept="2OqwBi" id="2kArA__apTf" role="2Oq$k0">
                   <node concept="pncrf" id="2kArA__apTi" role="2Oq$k0" />
                   <node concept="3TrEf2" id="2kArA__apTj" role="2OqNvi">
-                    <ref role="3Tt5mk" to="udwj:2kArA_$QXeP" />
+                    <ref role="3Tt5mk" to="udwj:2kArA_$QXeP" resolve="elseBranch" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="2kArA__apTk" role="2OqNvi" />
@@ -3752,6 +3807,7 @@
       </node>
       <node concept="3F0ifn" id="2kArA_$XtlG" role="3EZMnx">
         <property role="3F0ifm" value="endif" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
         <node concept="pVoyu" id="2kArA_$XtlH" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
@@ -3760,29 +3816,38 @@
   </node>
   <node concept="24kQdi" id="2kArA_$Kwxb">
     <property role="3GE5qa" value="diagram.uml.activity" />
-    <ref role="1XX52x" to="udwj:2kArA_$E0iI" />
+    <ref role="1XX52x" to="udwj:2kArA_$E0iI" resolve="PlantUmlActivityElse" />
     <node concept="3EZMnI" id="2kArA_$Kwxd" role="2wV5jI">
       <node concept="l2Vlx" id="2kArA_$Kwxe" role="2iSdaV" />
       <node concept="3F0ifn" id="2kArA_$Kwxf" role="3EZMnx">
         <property role="3F0ifm" value="else" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
       </node>
       <node concept="3F0ifn" id="2kArA_$Kwxy" role="3EZMnx">
         <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" />
+        <node concept="11LMrY" id="2kArA_ArapT" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="2kArA_AxJ4F" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
       </node>
       <node concept="3F0A7n" id="2kArA_$Kwxi" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:2kArA_$E0iN" />
+        <ref role="1NtTu8" to="udwj:2kArA_$E0iN" resolve="label" />
       </node>
       <node concept="3F0ifn" id="2kArA_$KwxC" role="3EZMnx">
         <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" />
       </node>
       <node concept="3F2HdR" id="2kArA_$XtlK" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:2kArA_$QXeS" />
+        <ref role="1NtTu8" to="udwj:2kArA_$QXeS" resolve="body" />
         <node concept="4$FPG" id="2kArA_$XtlL" role="4_6I_">
           <node concept="3clFbS" id="2kArA_$XtlN" role="2VODD2">
             <node concept="3clFbF" id="2kArA_$XtlO" role="3cqZAp">
               <node concept="2pJPEk" id="2kArA_$XtlQ" role="3clFbG">
                 <node concept="2pJPED" id="2kArA_$XtlS" role="2pJPEn">
-                  <ref role="2pJxaS" to="udwj:6BNnCp_okdH" />
+                  <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
                 </node>
               </node>
             </node>
@@ -3793,6 +3858,86 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="lj46D" id="2kArA_$XtlV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2kArA__xbdv">
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1XX52x" to="udwj:2kArA__qCXj" resolve="PlantUmlTextualCondition" />
+    <node concept="3EZMnI" id="2kArA__xbdx" role="2wV5jI">
+      <node concept="l2Vlx" id="2kArA__xbdy" role="2iSdaV" />
+      <node concept="3F0A7n" id="2kArA__xbd_" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:2kArA__qCXl" resolve="text" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2kArA__LzDE">
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1XX52x" to="udwj:2kArA__EXSV" resolve="PlantUmlActivityElseIf" />
+    <node concept="3EZMnI" id="2kArA__LzE2" role="2wV5jI">
+      <node concept="l2Vlx" id="2kArA__LzE3" role="2iSdaV" />
+      <node concept="3F0ifn" id="2kArA__LzE4" role="3EZMnx">
+        <property role="3F0ifm" value="elseif" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0ifn" id="2kArA__LzE5" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" />
+        <node concept="11LMrY" id="2kArA_ArapW" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="2kArA_AxJ4I" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="2kArA__LzE6" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:2kArA__F1ZO" resolve="condition" />
+      </node>
+      <node concept="3F0ifn" id="2kArA__LzE7" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" />
+      </node>
+      <node concept="3F0ifn" id="2kArA__LzE8" role="3EZMnx">
+        <property role="3F0ifm" value="then" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0ifn" id="2kArA__LzE9" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" />
+        <node concept="11LMrY" id="2kArA_ArapZ" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11L4FC" id="2kArA_AxJ4L" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2kArA__LzEa" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:2kArA__EXSW" resolve="thenLabel" />
+      </node>
+      <node concept="3F0ifn" id="2kArA__LzEb" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" />
+      </node>
+      <node concept="3F2HdR" id="2kArA__LzEc" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:2kArA__F1ZR" resolve="body" />
+        <node concept="4$FPG" id="2kArA__LzEd" role="4_6I_">
+          <node concept="3clFbS" id="2kArA__LzEf" role="2VODD2">
+            <node concept="3clFbF" id="2kArA__LzEg" role="3cqZAp">
+              <node concept="2pJPEk" id="2kArA__LzEi" role="3clFbG">
+                <node concept="2pJPED" id="2kArA__LzEk" role="2pJPEn">
+                  <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2iRkQZ" id="2kArA__LzEl" role="2czzBx" />
+        <node concept="pVoyu" id="2kArA__LzEm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="2kArA__LzEn" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
       </node>
