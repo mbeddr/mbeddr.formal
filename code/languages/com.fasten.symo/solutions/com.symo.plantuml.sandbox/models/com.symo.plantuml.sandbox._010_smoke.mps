@@ -2546,6 +2546,7 @@
     <node concept="11cB79" id="2kArA_ATdcg" role="1pqCw0">
       <property role="145Srp" value="100" />
       <property role="TrG5h" value="activity repeat" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA_ATdck" role="1pqCzW" />
       <node concept="11cB78" id="2kArA_ATdcl" role="1pqCzW" />
       <node concept="13VZ7R" id="2kArA_ATdcm" role="1pqCzW">
