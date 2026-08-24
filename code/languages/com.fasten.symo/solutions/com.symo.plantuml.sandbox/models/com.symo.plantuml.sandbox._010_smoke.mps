@@ -82,6 +82,12 @@
         <property id="2676948427457692851" name="label" index="11zAFq" />
         <child id="2676948427461088184" name="body" index="11ZrRh" />
       </concept>
+      <concept id="2676948427490809733" name="com.symo.plantuml.structure.PlantUmlActivityWhile" flags="ng" index="13xNBG">
+        <property id="2676948427490809735" name="endLabel" index="13xNBI" />
+        <property id="2676948427490809734" name="isLabel" index="13xNBJ" />
+        <child id="2676948427490809737" name="body" index="13xNBw" />
+        <child id="2676948427490809736" name="condition" index="13xNBx" />
+      </concept>
       <concept id="8400506447497059002" name="com.symo.plantuml.structure.SkinparamCommand" flags="ng" index="14T4ax">
         <child id="8400506447497059019" name="parameter" index="14T4bg" />
       </concept>
@@ -2503,6 +2509,30 @@
       </node>
       <node concept="11cB7b" id="2kArA__OPt5" role="1pqCzW" />
       <node concept="1pqCE1" id="2kArA__OPt6" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_AJ2Wq">
+    <property role="TrG5h" value="_053_activity_diagram_while" />
+    <node concept="11cB79" id="2kArA_AJ2Wr" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity while" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_AJ2Wv" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_AJ2Ww" role="1pqCzW" />
+      <node concept="13xNBG" id="2kArA_AJ2Wx" role="1pqCzW">
+        <property role="13xNBJ" value="yes" />
+        <property role="13xNBI" value="no" />
+        <node concept="10je4U" id="2kArA_AJ2Wy" role="13xNBx">
+          <property role="10je4W" value="x &lt; 10" />
+        </node>
+        <node concept="11cB7a" id="2kArA_AJ2Wz" role="13xNBw">
+          <node concept="11pPRA" id="2kArA_AJ2W_" role="11pLMz">
+            <property role="11pPRS" value="increment x" />
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_AJ2WA" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_AJ2WB" role="1pqCzW" />
     </node>
   </node>
 </model>
