@@ -2578,6 +2578,7 @@
     <node concept="11cB79" id="2kArA_B6QFn" role="1pqCw0">
       <property role="145Srp" value="100" />
       <property role="TrG5h" value="activity switch" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA_B6QFr" role="1pqCzW" />
       <node concept="11cB78" id="2kArA_B6QFs" role="1pqCzW" />
       <node concept="13P3iF" id="2kArA_B6QFt" role="1pqCzW">
