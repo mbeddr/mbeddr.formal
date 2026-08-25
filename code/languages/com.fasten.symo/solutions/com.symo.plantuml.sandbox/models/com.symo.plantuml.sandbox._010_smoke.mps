@@ -2693,6 +2693,7 @@
       <node concept="11cB78" id="2kArA_BAjM8" role="1pqCzW" />
       <node concept="12imU8" id="2kArA_BAjM9" role="1pqCzW">
         <property role="12imUb" value="Input Interface" />
+        <property role="TrG5h" value="Input Interface" />
         <node concept="11cB7a" id="2kArA_BAjMa" role="12imUa">
           <node concept="11pPRA" id="2kArA_BAjMc" role="11pLMz">
             <property role="11pPRS" value="read config file" />
@@ -2706,6 +2707,7 @@
       </node>
       <node concept="12imU8" id="2kArA_BAjMg" role="1pqCzW">
         <property role="12imUb" value="Running" />
+        <property role="TrG5h" value="Running" />
         <node concept="11cB7a" id="2kArA_BAjMh" role="12imUa">
           <node concept="11pPRA" id="2kArA_BAjMj" role="11pLMz">
             <property role="11pPRS" value="wait for user interaction" />
@@ -2866,6 +2868,7 @@
       <node concept="11cB78" id="2kArA_Co0aA" role="1pqCzW" />
       <node concept="12imU8" id="2kArA_Co0aB" role="1pqCzW">
         <property role="12imUb" value="Process" />
+        <property role="TrG5h" value="Process" />
         <node concept="11cB7a" id="2kArA_Co0aC" role="12imUa">
           <node concept="11pPRA" id="2kArA_Co0aE" role="11pLMz">
             <property role="11pPRS" value="step one" />
@@ -2966,9 +2969,11 @@
     <node concept="11cB79" id="2kArA_CAhYX" role="1pqCw0">
       <property role="145Srp" value="100" />
       <property role="TrG5h" value="activity swimlane" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA_CAhZ1" role="1pqCzW" />
       <node concept="1dhAMX" id="2kArA_CAhZ2" role="1pqCzW">
         <property role="1dhAMW" value="Swimlane1" />
+        <property role="TrG5h" value="Swimlane1" />
       </node>
       <node concept="11cB78" id="2kArA_CAhZ3" role="1pqCzW" />
       <node concept="11cB7a" id="2kArA_CAhZ4" role="1pqCzW">
@@ -2979,6 +2984,7 @@
       <node concept="1dhAMX" id="2kArA_CAhZ7" role="1pqCzW">
         <property role="1dhAMW" value="Swimlane2" />
         <property role="1ZmCJ5" value="AntiqueWhite" />
+        <property role="TrG5h" value="Swimlane2" />
       </node>
       <node concept="11cB7a" id="2kArA_CAhZ8" role="1pqCzW">
         <node concept="11pPRA" id="2kArA_CAhZa" role="11pLMz">
@@ -2992,6 +2998,7 @@
       </node>
       <node concept="1dhAMX" id="2kArA_CAhZe" role="1pqCzW">
         <property role="1dhAMW" value="Swimlane1" />
+        <property role="TrG5h" value="Swimlane1" />
       </node>
       <node concept="11cB7a" id="2kArA_CAhZf" role="1pqCzW">
         <node concept="11pPRA" id="2kArA_CAhZh" role="11pLMz">
