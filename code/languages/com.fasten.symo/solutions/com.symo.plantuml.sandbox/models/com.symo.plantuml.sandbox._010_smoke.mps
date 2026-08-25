@@ -2467,6 +2467,12 @@
           <property role="11pPRS" value="do something else" />
         </node>
       </node>
+      <node concept="11cB7a" id="29l0aZ_RD3A" role="1pqCzW">
+        <property role="1ZmCJ5" value="lightblue" />
+        <node concept="11pPRA" id="29l0aZ_RD3C" role="11pLMz">
+          <property role="11pPRS" value="do something colored" />
+        </node>
+      </node>
       <node concept="11cB7b" id="2kArA_$9W$w" role="1pqCzW" />
       <node concept="1pqCE1" id="2kArA_$9W$x" role="1pqCzW" />
     </node>

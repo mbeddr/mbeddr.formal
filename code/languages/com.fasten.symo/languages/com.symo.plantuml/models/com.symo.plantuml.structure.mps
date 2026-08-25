@@ -1915,6 +1915,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="2kArA_$gjeg" resolve="IPlantUmlActivityActionSpec" />
     </node>
+    <node concept="PrWs8" id="29l0aZ_GIH7" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
+    </node>
   </node>
   <node concept="PlHQZ" id="2kArA_$51Y$">
     <property role="EcuMT" value="2676948427448000420" />
