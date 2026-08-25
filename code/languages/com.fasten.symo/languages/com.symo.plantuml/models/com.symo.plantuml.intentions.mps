@@ -40,6 +40,7 @@
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
       </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
+      <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -564,6 +565,51 @@
             </node>
             <node concept="WFELt" id="2kArA__S8Cy" role="2OqNvi">
               <ref role="1A0vxQ" to="udwj:2kArA__EXSV" resolve="PlantUmlActivityElseIf" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="2kArA_CHrI4">
+    <property role="TrG5h" value="addColor" />
+    <ref role="2ZfgGC" to="udwj:2kArA_Co0bk" resolve="PlantUmlActivitySwimlane" />
+    <node concept="2S6ZIM" id="2kArA_CHrI9" role="2ZfVej">
+      <node concept="3clFbS" id="2kArA_CHrIb" role="2VODD2">
+        <node concept="3cpWs6" id="2kArA_CHrIc" role="3cqZAp">
+          <node concept="Xl_RD" id="2kArA_CHrId" role="3cqZAk">
+            <property role="Xl_RC" value="Add Color" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="2kArA_CHrIe" role="2ZfVeh">
+      <node concept="3clFbS" id="2kArA_CHrIg" role="2VODD2">
+        <node concept="3cpWs6" id="2kArA_CHrIh" role="3cqZAp">
+          <node concept="2OqwBi" id="2kArA_CHrIi" role="3cqZAk">
+            <node concept="2OqwBi" id="2kArA_CHrIl" role="2Oq$k0">
+              <node concept="2Sf5sV" id="2kArA_CHrIo" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2kArA_CHrIp" role="2OqNvi">
+                <ref role="3TsBF5" to="udwj:q$1bLTZCXT" resolve="color" />
+              </node>
+            </node>
+            <node concept="17RlXB" id="2kArA_CHrIq" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="2kArA_CHrIr" role="2ZfgGD">
+      <node concept="3clFbS" id="2kArA_CHrIt" role="2VODD2">
+        <node concept="3clFbF" id="2kArA_CHrIu" role="3cqZAp">
+          <node concept="37vLTI" id="2kArA_CHrIw" role="3clFbG">
+            <node concept="2OqwBi" id="2kArA_CHrIz" role="37vLTJ">
+              <node concept="2Sf5sV" id="2kArA_CHrIA" role="2Oq$k0" />
+              <node concept="3TrcHB" id="2kArA_CHrIB" role="2OqNvi">
+                <ref role="3TsBF5" to="udwj:q$1bLTZCXT" resolve="color" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="2kArA_CHrIC" role="37vLTx">
+              <property role="Xl_RC" value="black" />
             </node>
           </node>
         </node>
