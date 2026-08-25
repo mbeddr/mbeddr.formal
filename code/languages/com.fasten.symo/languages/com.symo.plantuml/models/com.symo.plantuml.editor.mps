@@ -4542,5 +4542,61 @@
       <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
     </node>
   </node>
+  <node concept="24kQdi" id="2kArA_CyHNs">
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1XX52x" to="udwj:2kArA_Co0bk" />
+    <node concept="3EZMnI" id="2kArA_CyHO2" role="2wV5jI">
+      <node concept="3F0ifn" id="2kArA_CyHO3" role="3EZMnx">
+        <property role="3F0ifm" value="|" />
+        <node concept="11LMrY" id="2kArA_CyHO4" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="2kArA_CyHO5" role="3EZMnx">
+        <node concept="3F0ifn" id="2kArA_CyHO6" role="3EZMnx">
+          <property role="3F0ifm" value="#" />
+          <node concept="11LMrY" id="2kArA_CyHO7" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="2kArA_CyHO8" role="3EZMnx">
+          <ref role="1NtTu8" to="udwj:q$1bLTZCXT" resolve="color" />
+        </node>
+        <node concept="3F0ifn" id="2kArA_CyHO9" role="3EZMnx">
+          <property role="3F0ifm" value="|" />
+          <node concept="11L4FC" id="2kArA_CyHOa" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="11LMrY" id="2kArA_CyHOb" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="pkWqt" id="2kArA_CyHOc" role="pqm2j">
+          <node concept="3clFbS" id="2kArA_CyHOe" role="2VODD2">
+            <node concept="3cpWs6" id="2kArA_CyHOf" role="3cqZAp">
+              <node concept="2OqwBi" id="2kArA_CyHOg" role="3cqZAk">
+                <node concept="2OqwBi" id="2kArA_CyHOj" role="2Oq$k0">
+                  <node concept="pncrf" id="2kArA_CyHOm" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="2kArA_CyHOn" role="2OqNvi">
+                    <ref role="3TsBF5" to="udwj:q$1bLTZCXT" resolve="color" />
+                  </node>
+                </node>
+                <node concept="17RvpY" id="2kArA_CyHOo" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="2kArA_CyHOp" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:2kArA_Co0bl" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="2kArA_CyHOq" role="3EZMnx">
+        <property role="3F0ifm" value="|" />
+        <node concept="11L4FC" id="2kArA_CyHOr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

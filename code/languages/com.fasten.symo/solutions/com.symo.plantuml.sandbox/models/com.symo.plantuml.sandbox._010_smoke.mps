@@ -139,6 +139,9 @@
       <concept id="8400506447496619781" name="com.symo.plantuml.structure.PackageDeclaration" flags="ng" index="14ZFWu">
         <child id="8400506447496650874" name="content" index="14Zzxx" />
       </concept>
+      <concept id="2676948427520082644" name="com.symo.plantuml.structure.PlantUmlActivitySwimlane" flags="ng" index="1dhAMX">
+        <property id="2676948427520082645" name="name" index="1dhAMW" />
+      </concept>
       <concept id="2676948427518192855" name="com.symo.plantuml.structure.PlantUmlActivityBreak" flags="ng" index="1dpkaY" />
       <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
         <child id="521530426072143424" name="substructure" index="3eE$XC" />
@@ -2858,6 +2861,7 @@
     <node concept="11cB79" id="2kArA_Co0ax" role="1pqCw0">
       <property role="145Srp" value="100" />
       <property role="TrG5h" value="activity note placements" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA_Co0a_" role="1pqCzW" />
       <node concept="11cB78" id="2kArA_Co0aA" role="1pqCzW" />
       <node concept="12imU8" id="2kArA_Co0aB" role="1pqCzW">
@@ -2921,6 +2925,7 @@
         </node>
       </node>
       <node concept="13VZ7R" id="2kArA_Co0b3" role="1pqCzW">
+        <property role="13VZ7Q" value="d" />
         <node concept="11cB7a" id="2kArA_Co0b4" role="13VZ78">
           <node concept="11pPRA" id="2kArA_Co0b6" role="11pLMz">
             <property role="11pPRS" value="poll" />
@@ -2954,6 +2959,47 @@
       </node>
       <node concept="11cB7b" id="2kArA_Co0bi" role="1pqCzW" />
       <node concept="1pqCE1" id="2kArA_Co0bj" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_CAhYW">
+    <property role="TrG5h" value="_059_activity_diagram_swimlane" />
+    <node concept="11cB79" id="2kArA_CAhYX" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity swimlane" />
+      <node concept="1pqCwu" id="2kArA_CAhZ1" role="1pqCzW" />
+      <node concept="1dhAMX" id="2kArA_CAhZ2" role="1pqCzW">
+        <property role="1dhAMW" value="Swimlane1" />
+      </node>
+      <node concept="11cB78" id="2kArA_CAhZ3" role="1pqCzW" />
+      <node concept="11cB7a" id="2kArA_CAhZ4" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_CAhZ6" role="11pLMz">
+          <property role="11pPRS" value="foo1" />
+        </node>
+      </node>
+      <node concept="1dhAMX" id="2kArA_CAhZ7" role="1pqCzW">
+        <property role="1dhAMW" value="Swimlane2" />
+        <property role="1ZmCJ5" value="AntiqueWhite" />
+      </node>
+      <node concept="11cB7a" id="2kArA_CAhZ8" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_CAhZa" role="11pLMz">
+          <property role="11pPRS" value="foo2" />
+        </node>
+      </node>
+      <node concept="11cB7a" id="2kArA_CAhZb" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_CAhZd" role="11pLMz">
+          <property role="11pPRS" value="foo3" />
+        </node>
+      </node>
+      <node concept="1dhAMX" id="2kArA_CAhZe" role="1pqCzW">
+        <property role="1dhAMW" value="Swimlane1" />
+      </node>
+      <node concept="11cB7a" id="2kArA_CAhZf" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_CAhZh" role="11pLMz">
+          <property role="11pPRS" value="foo4" />
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_CAhZi" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_CAhZj" role="1pqCzW" />
     </node>
   </node>
 </model>

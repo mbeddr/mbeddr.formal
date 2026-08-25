@@ -2336,5 +2336,23 @@
       <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
     </node>
   </node>
+  <node concept="1TIwiD" id="2kArA_Co0bk">
+    <property role="EcuMT" value="2676948427520082644" />
+    <property role="TrG5h" value="PlantUmlActivitySwimlane" />
+    <property role="R4oN_" value="activity swimlane switch, e.g. |Name| or |#color|Name|" />
+    <property role="3GE5qa" value="diagram.uml.activity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="2kArA_Co0bl" role="1TKVEl">
+      <property role="IQ2nx" value="2676948427520082645" />
+      <property role="TrG5h" value="name" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="2kArA_Co0bm" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="2kArA_Co0bn" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
+    </node>
+  </node>
 </model>
 
