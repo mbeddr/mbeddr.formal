@@ -468,7 +468,7 @@
     <property role="3GE5qa" value="diagram.common" />
     <property role="TrG5h" value="Note" />
     <property role="34LRSv" value="note" />
-    <property role="R4oN_" value="PlantUML note (position, optional attached element, optional color) — floats near a diagram element or the flow; reused across component, sequence, usecase, statemachine, and activity diagrams" />
+    <property role="R4oN_" value="PlantUML note (optional position, attached element, and color)" />
     <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
     <node concept="1TJgyj" id="1I7wo930$oL" role="1TKVEi">
       <property role="IQ2ns" value="1983696557349946929" />
