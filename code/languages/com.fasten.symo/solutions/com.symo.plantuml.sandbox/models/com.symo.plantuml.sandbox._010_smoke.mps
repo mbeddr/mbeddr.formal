@@ -99,7 +99,6 @@
         <child id="2676948427500610647" name="body" index="1248CY" />
       </concept>
       <concept id="2676948427504287969" name="com.symo.plantuml.structure.PlantUmlActivityPartition" flags="ng" index="12imU8">
-        <property id="2676948427504287970" name="name" index="12imUb" />
         <child id="2676948427504287971" name="body" index="12imUa" />
       </concept>
       <concept id="2676948427507976705" name="com.symo.plantuml.structure.PlantUmlActivityDetach" flags="ng" index="12wihC" />
@@ -139,9 +138,7 @@
       <concept id="8400506447496619781" name="com.symo.plantuml.structure.PackageDeclaration" flags="ng" index="14ZFWu">
         <child id="8400506447496650874" name="content" index="14Zzxx" />
       </concept>
-      <concept id="2676948427520082644" name="com.symo.plantuml.structure.PlantUmlActivitySwimlane" flags="ng" index="1dhAMX">
-        <property id="2676948427520082645" name="name" index="1dhAMW" />
-      </concept>
+      <concept id="2676948427520082644" name="com.symo.plantuml.structure.PlantUmlActivitySwimlane" flags="ng" index="1dhAMX" />
       <concept id="2676948427518192855" name="com.symo.plantuml.structure.PlantUmlActivityBreak" flags="ng" index="1dpkaY" />
       <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
         <child id="521530426072143424" name="substructure" index="3eE$XC" />
@@ -2691,25 +2688,23 @@
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA_BAjM7" role="1pqCzW" />
       <node concept="11cB78" id="2kArA_BAjM8" role="1pqCzW" />
-      <node concept="12imU8" id="2kArA_BAjM9" role="1pqCzW">
-        <property role="12imUb" value="Input Interface" />
+      <node concept="12imU8" id="2kArA_CHrH7" role="1pqCzW">
         <property role="TrG5h" value="Input Interface" />
-        <node concept="11cB7a" id="2kArA_BAjMa" role="12imUa">
-          <node concept="11pPRA" id="2kArA_BAjMc" role="11pLMz">
+        <node concept="11cB7a" id="2kArA_CHrH8" role="12imUa">
+          <node concept="11pPRA" id="2kArA_CHrHa" role="11pLMz">
             <property role="11pPRS" value="read config file" />
           </node>
         </node>
-        <node concept="11cB7a" id="2kArA_BAjMd" role="12imUa">
-          <node concept="11pPRA" id="2kArA_BAjMf" role="11pLMz">
+        <node concept="11cB7a" id="2kArA_CHrHb" role="12imUa">
+          <node concept="11pPRA" id="2kArA_CHrHd" role="11pLMz">
             <property role="11pPRS" value="init internal variable" />
           </node>
         </node>
       </node>
-      <node concept="12imU8" id="2kArA_BAjMg" role="1pqCzW">
-        <property role="12imUb" value="Running" />
+      <node concept="12imU8" id="2kArA_CHrHe" role="1pqCzW">
         <property role="TrG5h" value="Running" />
-        <node concept="11cB7a" id="2kArA_BAjMh" role="12imUa">
-          <node concept="11pPRA" id="2kArA_BAjMj" role="11pLMz">
+        <node concept="11cB7a" id="2kArA_CHrHf" role="12imUa">
+          <node concept="11pPRA" id="2kArA_CHrHh" role="11pLMz">
             <property role="11pPRS" value="wait for user interaction" />
           </node>
         </node>
@@ -2866,28 +2861,27 @@
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA_Co0a_" role="1pqCzW" />
       <node concept="11cB78" id="2kArA_Co0aA" role="1pqCzW" />
-      <node concept="12imU8" id="2kArA_Co0aB" role="1pqCzW">
-        <property role="12imUb" value="Process" />
+      <node concept="12imU8" id="2kArA_CHrHi" role="1pqCzW">
         <property role="TrG5h" value="Process" />
-        <node concept="11cB7a" id="2kArA_Co0aC" role="12imUa">
-          <node concept="11pPRA" id="2kArA_Co0aE" role="11pLMz">
+        <node concept="11cB7a" id="2kArA_CHrHj" role="12imUa">
+          <node concept="11pPRA" id="2kArA_CHrHl" role="11pLMz">
             <property role="11pPRS" value="step one" />
           </node>
         </node>
-        <node concept="1oxsuH" id="2kArA_Co0aF" role="12imUa">
+        <node concept="1oxsuH" id="2kArA_CHrHm" role="12imUa">
           <property role="1oxspX" value="1I7wo930$vW/right" />
-          <node concept="1Pa9Pv" id="2kArA_Co0aH" role="1oxsuN">
-            <node concept="1PaTwC" id="2kArA_Co0aI" role="1PaQFQ">
-              <node concept="3oM_SD" id="2kArA_Co0aK" role="1PaTwD">
+          <node concept="1Pa9Pv" id="2kArA_CHrHo" role="1oxsuN">
+            <node concept="1PaTwC" id="2kArA_CHrHp" role="1PaQFQ">
+              <node concept="3oM_SD" id="2kArA_CHrHr" role="1PaTwD">
                 <property role="3oM_SC" value="applies" />
               </node>
-              <node concept="3oM_SD" id="2kArA_Co0aL" role="1PaTwD">
+              <node concept="3oM_SD" id="2kArA_CHrHs" role="1PaTwD">
                 <property role="3oM_SC" value="inside" />
               </node>
-              <node concept="3oM_SD" id="2kArA_Co0aM" role="1PaTwD">
+              <node concept="3oM_SD" id="2kArA_CHrHt" role="1PaTwD">
                 <property role="3oM_SC" value="a" />
               </node>
-              <node concept="3oM_SD" id="2kArA_Co0aN" role="1PaTwD">
+              <node concept="3oM_SD" id="2kArA_CHrHu" role="1PaTwD">
                 <property role="3oM_SC" value="partition" />
               </node>
             </node>
@@ -2971,8 +2965,7 @@
       <property role="TrG5h" value="activity swimlane" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA_CAhZ1" role="1pqCzW" />
-      <node concept="1dhAMX" id="2kArA_CAhZ2" role="1pqCzW">
-        <property role="1dhAMW" value="Swimlane1" />
+      <node concept="1dhAMX" id="2kArA_CHrGG" role="1pqCzW">
         <property role="TrG5h" value="Swimlane1" />
       </node>
       <node concept="11cB78" id="2kArA_CAhZ3" role="1pqCzW" />
@@ -2981,10 +2974,9 @@
           <property role="11pPRS" value="foo1" />
         </node>
       </node>
-      <node concept="1dhAMX" id="2kArA_CAhZ7" role="1pqCzW">
-        <property role="1dhAMW" value="Swimlane2" />
-        <property role="1ZmCJ5" value="AntiqueWhite" />
+      <node concept="1dhAMX" id="2kArA_CHrGH" role="1pqCzW">
         <property role="TrG5h" value="Swimlane2" />
+        <property role="1ZmCJ5" value="AntiqueWhite" />
       </node>
       <node concept="11cB7a" id="2kArA_CAhZ8" role="1pqCzW">
         <node concept="11pPRA" id="2kArA_CAhZa" role="11pLMz">
@@ -2996,8 +2988,7 @@
           <property role="11pPRS" value="foo3" />
         </node>
       </node>
-      <node concept="1dhAMX" id="2kArA_CAhZe" role="1pqCzW">
-        <property role="1dhAMW" value="Swimlane1" />
+      <node concept="1dhAMX" id="2kArA_CHrGI" role="1pqCzW">
         <property role="TrG5h" value="Swimlane1" />
       </node>
       <node concept="11cB7a" id="2kArA_CAhZf" role="1pqCzW">
