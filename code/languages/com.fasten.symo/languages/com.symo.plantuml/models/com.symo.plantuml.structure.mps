@@ -1591,7 +1591,7 @@
     <property role="3GE5qa" value="diagram.common" />
     <property role="TrG5h" value="NoteOnLink" />
     <property role="34LRSv" value="note on link" />
-    <property role="R4oN_" value="PlantUML note attached to the most recently drawn link/transition (note &lt;position&gt; on link, optional color); extends Note" />
+    <property role="R4oN_" value="PlantUML note attached to the last-drawn link (optional color)" />
     <ref role="1TJDcQ" node="1I7wo930$oJ" resolve="Note" />
   </node>
   <node concept="1TIwiD" id="2qHrqKS_0_C">
