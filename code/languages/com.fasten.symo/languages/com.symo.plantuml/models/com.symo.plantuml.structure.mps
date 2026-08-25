@@ -734,6 +734,9 @@
     <node concept="PrWs8" id="2kArA__kaR9" role="PzmwI">
       <ref role="PrY4T" node="q$1bLT8dmM" resolve="IPlantUmlStatemachineDiagramContent" />
     </node>
+    <node concept="PrWs8" id="29l0aZAIJi7" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZArWEJ" resolve="IPlantUmlDeploymentDiagramContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6BNnCp_onfs">
     <property role="EcuMT" value="7634549724642636764" />
@@ -2357,6 +2360,131 @@
     </node>
     <node concept="PrWs8" id="2kArA_CAifl" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="25R3W" id="29l0aZArWEz">
+    <property role="3F6X1D" value="2473884325795318435" />
+    <property role="TrG5h" value="EPlantUmlDeploymentNodeKind" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1H5jkz" node="29l0aZArWE_" resolve="NODE" />
+    <node concept="25R33" id="29l0aZArWE_" role="25R1y">
+      <property role="3tVfz5" value="5438167565208578327" />
+      <property role="TrG5h" value="NODE" />
+      <property role="1L1pqM" value="node" />
+    </node>
+    <node concept="25R33" id="29l0aZArWEA" role="25R1y">
+      <property role="3tVfz5" value="1496229949336300303" />
+      <property role="TrG5h" value="CLOUD" />
+      <property role="1L1pqM" value="cloud" />
+    </node>
+    <node concept="25R33" id="29l0aZArWEB" role="25R1y">
+      <property role="3tVfz5" value="4011777239938795941" />
+      <property role="TrG5h" value="DATABASE" />
+      <property role="1L1pqM" value="database" />
+    </node>
+    <node concept="25R33" id="29l0aZArWEC" role="25R1y">
+      <property role="3tVfz5" value="7567340259758553706" />
+      <property role="TrG5h" value="STORAGE" />
+      <property role="1L1pqM" value="storage" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZArWEF">
+    <property role="EcuMT" value="2473884325795318443" />
+    <property role="TrG5h" value="PlantUmlDeploymentDiagram" />
+    <property role="34LRSv" value="deployment diagram" />
+    <property role="R4oN_" value="a PlantUML deployment diagram" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1TJDcQ" node="1I7wo92Vg_W" resolve="PlantUmlDiagramBase" />
+    <node concept="1TJgyj" id="29l0aZAs1tw" role="1TKVEi">
+      <property role="IQ2ns" value="2473884325795338080" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="29l0aZArWEJ" resolve="IPlantUmlDeploymentDiagramContent" />
+      <ref role="20ksaX" node="1I7wo92Vg_Y" resolve="content" />
+    </node>
+    <node concept="PrWs8" id="29l0aZAMRka" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZArWEG">
+    <property role="EcuMT" value="2473884325795318444" />
+    <property role="TrG5h" value="DeploymentNode" />
+    <property role="34LRSv" value="deployment node" />
+    <property role="R4oN_" value="a deployment container: node, cloud, database, or storage" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1TJDcQ" node="29l0aZAV7nB" />
+    <node concept="1TJgyi" id="29l0aZArWEK" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325795318448" />
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="29l0aZArWEz" resolve="EPlantUmlDeploymentNodeKind" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZArWEH">
+    <property role="EcuMT" value="2473884325795318445" />
+    <property role="TrG5h" value="DeploymentArtifact" />
+    <property role="34LRSv" value="artifact" />
+    <property role="R4oN_" value="a deployable artifact, e.g. artifact &quot;app.war&quot;" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1TJDcQ" node="29l0aZAV7nB" />
+  </node>
+  <node concept="1TIwiD" id="29l0aZArWEI">
+    <property role="EcuMT" value="2473884325795318446" />
+    <property role="TrG5h" value="PlantUmlDeploymentLink" />
+    <property role="R4oN_" value="a relationship between two deployment diagram elements" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1TJDcQ" node="6BNnCp_tb0t" resolve="AbstractPlantumlLinkBase" />
+    <node concept="PrWs8" id="29l0aZArWEN" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZArWEJ" resolve="IPlantUmlDeploymentDiagramContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="29l0aZArWEJ">
+    <property role="EcuMT" value="2473884325795318447" />
+    <property role="TrG5h" value="IPlantUmlDeploymentDiagramContent" />
+    <property role="R4oN_" value="Marker interface for nodes that can appear inside a PlantUML deployment diagram" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <node concept="PrWs8" id="29l0aZArWEO" role="PrDN$">
+      <ref role="PrY4T" node="1I7wo92Vg_Z" resolve="IPlantUmlDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZAV7nB">
+    <property role="EcuMT" value="2473884325803488743" />
+    <property role="TrG5h" value="DeploymentEntityBase" />
+    <property role="R4oN_" value="shared base for deployment diagram entities (node, artifact) that can be named, colored, and nested" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="29l0aZAV7nD" role="1TKVEi">
+      <property role="IQ2ns" value="2473884325803488745" />
+      <property role="20kJfa" value="substructure" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="29l0aZArWEJ" resolve="IPlantUmlDeploymentDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="29l0aZAV7nE" role="PzmwI">
+      <ref role="PrY4T" node="6CyxyHi9vWZ" resolve="INamedElementWithLongDescription" />
+    </node>
+    <node concept="PrWs8" id="29l0aZAV7nF" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
+    </node>
+    <node concept="PrWs8" id="29l0aZAV7nG" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZArWEJ" resolve="IPlantUmlDeploymentDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZAV7nC">
+    <property role="EcuMT" value="2473884325803488744" />
+    <property role="TrG5h" value="DeploymentEntityRef" />
+    <property role="R4oN_" value="a reference to a deployment diagram entity, used as a relationship endpoint" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="29l0aZAV7nH" role="1TKVEi">
+      <property role="IQ2ns" value="2473884325803488749" />
+      <property role="20kJfa" value="entity" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="29l0aZAV7nB" resolve="DeploymentEntityBase" />
+    </node>
+    <node concept="PrWs8" id="29l0aZAV7nI" role="PzmwI">
+      <ref role="PrY4T" node="1I7wo92Y2Ts" resolve="IChannelEndpoint" />
     </node>
   </node>
 </model>

@@ -4625,5 +4625,235 @@
       </node>
     </node>
   </node>
+  <node concept="PKFIW" id="29l0aZAIJiz">
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <property role="TrG5h" value="PlantUmlDeploymentDiagramTextualEditorComponent" />
+    <ref role="1XX52x" to="udwj:29l0aZArWEF" resolve="PlantUmlDeploymentDiagram" />
+    <node concept="1PE4EZ" id="29l0aZAIJi_" role="1PM95z">
+      <ref role="1PE7su" node="6CyxyHhVZuv" resolve="PlantUmlTextualEditorComponentBase" />
+    </node>
+    <node concept="3F2HdR" id="29l0aZAIJiA" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:29l0aZAs1tw" />
+      <node concept="4$FPG" id="29l0aZAIJiB" role="4_6I_">
+        <node concept="3clFbS" id="29l0aZAIJiD" role="2VODD2">
+          <node concept="3clFbF" id="29l0aZAIJiE" role="3cqZAp">
+            <node concept="2pJPEk" id="29l0aZAIJiG" role="3clFbG">
+              <node concept="2pJPED" id="29l0aZAIJiI" role="2pJPEn">
+                <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="29l0aZAIJiJ" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29l0aZAIJkk">
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <property role="TrG5h" value="DeploymentNode_Editor" />
+    <ref role="1XX52x" to="udwj:29l0aZArWEG" resolve="DeploymentNode" />
+    <node concept="3EZMnI" id="29l0aZAIJkm" role="2wV5jI">
+      <node concept="3F0A7n" id="29l0aZAIJkn" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZArWEK" resolve="kind" />
+      </node>
+      <node concept="3F0ifn" id="29l0aZAIJko" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <node concept="11LMrY" id="29l0aZAIJkp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="29l0aZAIJkq" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="29l0aZAIJkr" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <node concept="11L4FC" id="29l0aZAIJks" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="29l0aZAIJkt" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZAIJkv" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZAIJkw" role="3EZMnx">
+            <property role="3F0ifm" value="#" />
+            <node concept="11LMrY" id="29l0aZAIJkx" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F0A7n" id="29l0aZAIJky" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:q$1bLTZCXT" resolve="color" />
+          </node>
+          <node concept="2iRfu4" id="29l0aZAIJkz" role="2iSdaV" />
+        </node>
+        <node concept="ZYGn8" id="29l0aZAIJk$" role="ZWbT9">
+          <node concept="3clFbS" id="29l0aZAIJkA" role="2VODD2">
+            <node concept="3clFbF" id="29l0aZAIJkB" role="3cqZAp">
+              <node concept="Xl_RD" id="29l0aZAIJkD" role="3clFbG">
+                <property role="Xl_RC" value="#" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_tjkj" id="29l0aZAIJkE" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZAIJkG" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZAIJkH" role="3EZMnx">
+            <property role="3F0ifm" value="{" />
+            <node concept="ljvvj" id="29l0aZAIJkI" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F2HdR" id="29l0aZAIJkJ" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:29l0aZAV7nD" />
+            <node concept="4$FPG" id="29l0aZAIJkK" role="4_6I_">
+              <node concept="3clFbS" id="29l0aZAIJkM" role="2VODD2">
+                <node concept="3clFbF" id="29l0aZAIJkN" role="3cqZAp">
+                  <node concept="2pJPEk" id="29l0aZAIJkP" role="3clFbG">
+                    <node concept="2pJPED" id="29l0aZAIJkR" role="2pJPEn">
+                      <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="l2Vlx" id="29l0aZAIJkS" role="2czzBx" />
+            <node concept="ljvvj" id="29l0aZAIJkT" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="lj46D" id="29l0aZAIJkU" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="pj6Ft" id="29l0aZAIJkV" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="29l0aZAIJkW" role="3EZMnx">
+            <property role="3F0ifm" value="}" />
+          </node>
+          <node concept="l2Vlx" id="29l0aZAIJkX" role="2iSdaV" />
+        </node>
+        <node concept="ZYGn8" id="29l0aZAIJkY" role="ZWbT9">
+          <node concept="3clFbS" id="29l0aZAIJl0" role="2VODD2">
+            <node concept="3clFbF" id="29l0aZAIJl1" role="3cqZAp">
+              <node concept="Xl_RD" id="29l0aZAIJl3" role="3clFbG">
+                <property role="Xl_RC" value="{" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="29l0aZAIJl4" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29l0aZAIJl7">
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <property role="TrG5h" value="DeploymentArtifact_Editor" />
+    <ref role="1XX52x" to="udwj:29l0aZArWEH" resolve="DeploymentArtifact" />
+    <node concept="3EZMnI" id="29l0aZAIJl9" role="2wV5jI">
+      <node concept="3F0ifn" id="29l0aZAIJla" role="3EZMnx">
+        <property role="3F0ifm" value="artifact" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0ifn" id="29l0aZAIJlb" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <node concept="11LMrY" id="29l0aZAIJlc" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="29l0aZAIJld" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="29l0aZAIJle" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+        <node concept="11L4FC" id="29l0aZAIJlf" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="29l0aZAIJlg" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZAIJli" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZAIJlj" role="3EZMnx">
+            <property role="3F0ifm" value="#" />
+            <node concept="11LMrY" id="29l0aZAIJlk" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F0A7n" id="29l0aZAIJll" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:q$1bLTZCXT" resolve="color" />
+          </node>
+          <node concept="2iRfu4" id="29l0aZAIJlm" role="2iSdaV" />
+        </node>
+        <node concept="ZYGn8" id="29l0aZAIJln" role="ZWbT9">
+          <node concept="3clFbS" id="29l0aZAIJlp" role="2VODD2">
+            <node concept="3clFbF" id="29l0aZAIJlq" role="3cqZAp">
+              <node concept="Xl_RD" id="29l0aZAIJls" role="3clFbG">
+                <property role="Xl_RC" value="#" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_tjkj" id="29l0aZAIJlt" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZAIJlv" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZAIJlw" role="3EZMnx">
+            <property role="3F0ifm" value="{" />
+            <node concept="ljvvj" id="29l0aZAIJlx" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F2HdR" id="29l0aZAIJly" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:29l0aZAV7nD" />
+            <node concept="4$FPG" id="29l0aZAIJlz" role="4_6I_">
+              <node concept="3clFbS" id="29l0aZAIJl_" role="2VODD2">
+                <node concept="3clFbF" id="29l0aZAIJlA" role="3cqZAp">
+                  <node concept="2pJPEk" id="29l0aZAIJlC" role="3clFbG">
+                    <node concept="2pJPED" id="29l0aZAIJlE" role="2pJPEn">
+                      <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="l2Vlx" id="29l0aZAIJlF" role="2czzBx" />
+            <node concept="ljvvj" id="29l0aZAIJlG" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="lj46D" id="29l0aZAIJlH" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="pj6Ft" id="29l0aZAIJlI" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F0ifn" id="29l0aZAIJlJ" role="3EZMnx">
+            <property role="3F0ifm" value="}" />
+          </node>
+          <node concept="l2Vlx" id="29l0aZAIJlK" role="2iSdaV" />
+        </node>
+        <node concept="ZYGn8" id="29l0aZAIJlL" role="ZWbT9">
+          <node concept="3clFbS" id="29l0aZAIJlN" role="2VODD2">
+            <node concept="3clFbF" id="29l0aZAIJlO" role="3cqZAp">
+              <node concept="Xl_RD" id="29l0aZAIJlQ" role="3clFbG">
+                <property role="Xl_RC" value="{" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="29l0aZAIJlR" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29l0aZB8112">
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <property role="TrG5h" value="DeploymentEntityRef_Editor" />
+    <ref role="1XX52x" to="udwj:29l0aZAV7nC" resolve="DeploymentEntityRef" />
+    <node concept="1iCGBv" id="29l0aZB8114" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:29l0aZAV7nH" />
+      <node concept="1sVBvm" id="29l0aZB8117" role="1sWHZn">
+        <node concept="3F0A7n" id="29l0aZB8119" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

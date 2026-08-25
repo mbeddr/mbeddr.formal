@@ -129,6 +129,18 @@
         <child id="2676948427493449633" name="body" index="13VZ78" />
         <child id="2676948427493449634" name="condition" index="13VZ7b" />
       </concept>
+      <concept id="2473884325795318446" name="com.symo.plantuml.structure.PlantUmlDeploymentLink" flags="ng" index="34eGC1" />
+      <concept id="2473884325795318445" name="com.symo.plantuml.structure.DeploymentArtifact" flags="ng" index="34eGC2" />
+      <concept id="2473884325795318444" name="com.symo.plantuml.structure.DeploymentNode" flags="ng" index="34eGC3">
+        <property id="2473884325795318448" name="kind" index="34eGCv" />
+      </concept>
+      <concept id="2473884325795318443" name="com.symo.plantuml.structure.PlantUmlDeploymentDiagram" flags="ng" index="34eGC4" />
+      <concept id="2473884325803488744" name="com.symo.plantuml.structure.DeploymentEntityRef" flags="ng" index="34Inl7">
+        <reference id="2473884325803488749" name="entity" index="34Inl2" />
+      </concept>
+      <concept id="2473884325803488743" name="com.symo.plantuml.structure.DeploymentEntityBase" flags="ng" index="34Inl8">
+        <child id="2473884325803488745" name="substructure" index="34Inl6" />
+      </concept>
       <concept id="8400506447497059002" name="com.symo.plantuml.structure.SkinparamCommand" flags="ng" index="14T4ax">
         <child id="8400506447497059019" name="parameter" index="14T4bg" />
       </concept>
@@ -3057,6 +3069,36 @@
       </node>
       <node concept="11cB7b" id="29l0aZ_GbIF" role="1pqCzW" />
       <node concept="1pqCE1" id="29l0aZ_GbIG" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZAMRjO">
+    <property role="TrG5h" value="_060_deployment_diagram_simple" />
+    <node concept="34eGC4" id="29l0aZAMRjP" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="deployment simple" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZAMRjT" role="1pqCzW" />
+      <node concept="34eGC3" id="29l0aZB3QRp" role="1pqCzW">
+        <property role="TrG5h" value="ApplicationServer" />
+        <node concept="34eGC2" id="29l0aZB3QRq" role="34Inl6">
+          <property role="TrG5h" value="appWar" />
+        </node>
+      </node>
+      <node concept="34eGC3" id="29l0aZAMRjW" role="1pqCzW">
+        <property role="34eGCv" value="1j3FjoCvqGf/CLOUD" />
+        <property role="TrG5h" value="AWSCloud" />
+        <property role="1ZmCJ5" value="lightblue" />
+      </node>
+      <node concept="34eGC1" id="29l0aZAMRk3" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZB3QQf" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZB3QRp" resolve="ApplicationServer" />
+        </node>
+        <node concept="34Inl7" id="29l0aZB3QQg" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZAMRjW" resolve="AWSCloud" />
+        </node>
+        <node concept="TrFLf" id="29l0aZAMRk7" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZAMRjX" role="1pqCzW" />
     </node>
   </node>
 </model>
