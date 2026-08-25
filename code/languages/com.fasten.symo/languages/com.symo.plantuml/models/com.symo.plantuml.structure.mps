@@ -2053,7 +2053,7 @@
   <node concept="1TIwiD" id="2kArA_AClu5">
     <property role="EcuMT" value="2676948427490809733" />
     <property role="TrG5h" value="PlantUmlActivityWhile" />
-    <property role="34LRSv" value="" />
+    <property role="34LRSv" value="while" />
     <property role="R4oN_" value="PlantUML activity while/endwhile loop" />
     <property role="3GE5qa" value="diagram.uml.activity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -2087,7 +2087,7 @@
   <node concept="1TIwiD" id="2kArA_AMpYu">
     <property role="EcuMT" value="2676948427493449630" />
     <property role="TrG5h" value="PlantUmlActivityRepeat" />
-    <property role="34LRSv" value="" />
+    <property role="34LRSv" value="repeat" />
     <property role="R4oN_" value="PlantUML activity repeat/repeat-while loop" />
     <property role="3GE5qa" value="diagram.uml.activity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -2121,7 +2121,7 @@
   <node concept="1TIwiD" id="2kArA_AW_F2">
     <property role="EcuMT" value="2676948427496118978" />
     <property role="TrG5h" value="PlantUmlActivitySwitch" />
-    <property role="34LRSv" value="" />
+    <property role="34LRSv" value="switch" />
     <property role="R4oN_" value="PlantUML activity switch/case/endswitch" />
     <property role="3GE5qa" value="diagram.uml.activity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -2145,7 +2145,7 @@
   <node concept="1TIwiD" id="2kArA_AW_F3">
     <property role="EcuMT" value="2676948427496118979" />
     <property role="TrG5h" value="PlantUmlActivityCase" />
-    <property role="34LRSv" value="" />
+    <property role="34LRSv" value="case" />
     <property role="R4oN_" value="PlantUML activity switch case branch" />
     <property role="3GE5qa" value="diagram.uml.activity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -2166,7 +2166,7 @@
   <node concept="1TIwiD" id="2kArA_BdIhe">
     <property role="EcuMT" value="2676948427500610638" />
     <property role="TrG5h" value="PlantUmlActivityFork" />
-    <property role="34LRSv" value="" />
+    <property role="34LRSv" value="fork" />
     <property role="R4oN_" value="PlantUML activity fork/fork again/end fork (parallel processing)" />
     <property role="3GE5qa" value="diagram.uml.activity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -2196,7 +2196,7 @@
   <node concept="1TIwiD" id="2kArA_BdIhf">
     <property role="EcuMT" value="2676948427500610639" />
     <property role="TrG5h" value="PlantUmlActivityForkBranch" />
-    <property role="34LRSv" value="" />
+    <property role="34LRSv" value="fork again" />
     <property role="R4oN_" value="PlantUML activity fork again branch" />
     <property role="3GE5qa" value="diagram.uml.activity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -2211,7 +2211,7 @@
   <node concept="1TIwiD" id="2kArA_BdIhg">
     <property role="EcuMT" value="2676948427500610640" />
     <property role="TrG5h" value="PlantUmlActivitySplit" />
-    <property role="34LRSv" value="" />
+    <property role="34LRSv" value="split" />
     <property role="R4oN_" value="PlantUML activity split/split again/end split (independent paths)" />
     <property role="3GE5qa" value="diagram.uml.activity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -2236,7 +2236,7 @@
   <node concept="1TIwiD" id="2kArA_BdIhh">
     <property role="EcuMT" value="2676948427500610641" />
     <property role="TrG5h" value="PlantUmlActivitySplitBranch" />
-    <property role="34LRSv" value="" />
+    <property role="34LRSv" value="split again" />
     <property role="R4oN_" value="PlantUML activity split again branch" />
     <property role="3GE5qa" value="diagram.uml.activity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -2251,7 +2251,7 @@
   <node concept="1TIwiD" id="2kArA_BrK3x">
     <property role="EcuMT" value="2676948427504287969" />
     <property role="TrG5h" value="PlantUmlActivityPartition" />
-    <property role="34LRSv" value="" />
+    <property role="34LRSv" value="partition" />
     <property role="R4oN_" value="PlantUML activity partition (visual grouping)" />
     <property role="3GE5qa" value="diagram.uml.activity" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
@@ -2339,6 +2339,7 @@
     <property role="TrG5h" value="PlantUmlActivitySwimlane" />
     <property role="R4oN_" value="activity swimlane switch, e.g. |Name| or |#color|Name|" />
     <property role="3GE5qa" value="diagram.uml.activity" />
+    <property role="34LRSv" value="swimlane" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="2kArA_Co0bm" role="PzmwI">
       <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
