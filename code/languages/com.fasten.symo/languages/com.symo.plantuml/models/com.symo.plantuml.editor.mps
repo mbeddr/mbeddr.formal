@@ -4552,40 +4552,27 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
-      <node concept="3EZMnI" id="2kArA_CyHO5" role="3EZMnx">
-        <node concept="3F0ifn" id="2kArA_CyHO6" role="3EZMnx">
-          <property role="3F0ifm" value="#" />
-          <node concept="11LMrY" id="2kArA_CyHO7" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="3F0A7n" id="2kArA_CyHO8" role="3EZMnx">
-          <ref role="1NtTu8" to="udwj:q$1bLTZCXT" resolve="color" />
-          <ref role="1ERwB7" node="2kArA_CKY83" />
-        </node>
-        <node concept="3F0ifn" id="2kArA_CyHO9" role="3EZMnx">
-          <property role="3F0ifm" value="|" />
-          <node concept="11L4FC" id="2kArA_CyHOa" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-          <node concept="11LMrY" id="2kArA_CyHOb" role="3F10Kt">
-            <property role="VOm3f" value="true" />
-          </node>
-        </node>
-        <node concept="pkWqt" id="2kArA_CyHOc" role="pqm2j">
-          <node concept="3clFbS" id="2kArA_CyHOe" role="2VODD2">
-            <node concept="3cpWs6" id="2kArA_CyHOf" role="3cqZAp">
-              <node concept="2OqwBi" id="2kArA_CyHOg" role="3cqZAk">
-                <node concept="2OqwBi" id="2kArA_CyHOj" role="2Oq$k0">
-                  <node concept="pncrf" id="2kArA_CyHOm" role="2Oq$k0" />
-                  <node concept="3TrcHB" id="2kArA_CyHOn" role="2OqNvi">
-                    <ref role="3TsBF5" to="udwj:q$1bLTZCXT" resolve="color" />
-                  </node>
-                </node>
-                <node concept="17RvpY" id="2kArA_CyHOo" role="2OqNvi" />
-              </node>
+      <node concept="_tjkj" id="2kArA_D9TSo" role="3EZMnx">
+        <node concept="3EZMnI" id="2kArA_D9TSq" role="_tjki">
+          <node concept="3F0ifn" id="2kArA_D9TSr" role="3EZMnx">
+            <property role="3F0ifm" value="#" />
+            <node concept="11LMrY" id="2kArA_D9TSs" role="3F10Kt">
+              <property role="VOm3f" value="true" />
             </node>
           </node>
+          <node concept="3F0A7n" id="2kArA_D9TSt" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:q$1bLTZCXT" resolve="color" />
+          </node>
+          <node concept="3F0ifn" id="2kArA_D9TSu" role="3EZMnx">
+            <property role="3F0ifm" value="|" />
+            <node concept="11L4FC" id="2kArA_D9TSv" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+            <node concept="11LMrY" id="2kArA_D9TSw" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="2kArA_D9TSx" role="2iSdaV" />
         </node>
       </node>
       <node concept="3F0A7n" id="2kArA_CyHOp" role="3EZMnx">
@@ -4595,28 +4582,6 @@
         <property role="3F0ifm" value="|" />
         <node concept="11L4FC" id="2kArA_CyHOr" role="3F10Kt">
           <property role="VOm3f" value="true" />
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="1h_SRR" id="2kArA_CKY83">
-    <property role="TrG5h" value="PlantUmlActivitySwimlane_Color_ActionMap" />
-    <ref role="1h_SK9" to="udwj:2kArA_Co0bk" resolve="PlantUmlActivitySwimlane" />
-    <node concept="1hA7zw" id="2kArA_COya$" role="1h_SK8">
-      <property role="1hAc7j" value="g_hAxAO/delete_action_id" />
-      <node concept="1hAIg9" id="2kArA_COyaB" role="1hA7z_">
-        <node concept="3clFbS" id="2kArA_COyaD" role="2VODD2">
-          <node concept="3clFbF" id="2kArA_COyaE" role="3cqZAp">
-            <node concept="37vLTI" id="2kArA_COyaG" role="3clFbG">
-              <node concept="2OqwBi" id="2kArA_COyaJ" role="37vLTJ">
-                <node concept="0IXxy" id="2kArA_COyaM" role="2Oq$k0" />
-                <node concept="3TrcHB" id="2kArA_COyaN" role="2OqNvi">
-                  <ref role="3TsBF5" to="udwj:q$1bLTZCXT" resolve="color" />
-                </node>
-              </node>
-              <node concept="10Nm6u" id="2kArA_COyaO" role="37vLTx" />
-            </node>
-          </node>
         </node>
       </node>
     </node>
