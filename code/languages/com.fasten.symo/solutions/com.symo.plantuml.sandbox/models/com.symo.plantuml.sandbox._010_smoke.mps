@@ -3073,32 +3073,74 @@
   </node>
   <node concept="1pqNnw" id="29l0aZAMRjO">
     <property role="TrG5h" value="_060_deployment_diagram_simple" />
-    <node concept="34eGC4" id="29l0aZAMRjP" role="1pqCw0">
-      <property role="145Srp" value="100" />
+    <node concept="34eGC4" id="29l0aZBp08G" role="1pqCw0">
+      <property role="145Srp" value="70" />
       <property role="TrG5h" value="deployment simple" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
-      <node concept="1pqCwu" id="29l0aZAMRjT" role="1pqCzW" />
-      <node concept="34eGC3" id="29l0aZB3QRp" role="1pqCzW">
-        <property role="TrG5h" value="ApplicationServer" />
-        <node concept="34eGC2" id="29l0aZB3QRq" role="34Inl6">
-          <property role="TrG5h" value="appWar" />
+      <node concept="1pqCwu" id="29l0aZBp08K" role="1pqCzW" />
+      <node concept="34eGC3" id="29l0aZBp08L" role="1pqCzW">
+        <property role="TrG5h" value="ClientMachine" />
+        <property role="2ywBW2" value="client" />
+        <node concept="34eGC2" id="29l0aZBp08M" role="34Inl6">
+          <property role="TrG5h" value="browser" />
         </node>
       </node>
-      <node concept="34eGC3" id="29l0aZAMRjW" role="1pqCzW">
+      <node concept="34eGC3" id="29l0aZBp08N" role="1pqCzW">
+        <property role="TrG5h" value="WebServer" />
+        <property role="2ywBW2" value="web" />
+        <node concept="34eGC2" id="29l0aZBp08O" role="34Inl6">
+          <property role="TrG5h" value="webapp" />
+        </node>
+        <node concept="34eGC3" id="29l0aZBp08P" role="34Inl6">
+          <property role="34eGCv" value="29l0aZBcbtB/FOLDER" />
+          <property role="TrG5h" value="config" />
+          <node concept="34eGC2" id="29l0aZBp08Q" role="34Inl6">
+            <property role="TrG5h" value="appProperties" />
+          </node>
+        </node>
+      </node>
+      <node concept="34eGC3" id="29l0aZBp08R" role="1pqCzW">
+        <property role="34eGCv" value="3uGGyjSz8A_/DATABASE" />
+        <property role="TrG5h" value="DatabaseServer" />
+        <property role="2ywBW2" value="db" />
+        <node concept="34eGC2" id="29l0aZBp08S" role="34Inl6">
+          <property role="TrG5h" value="schema" />
+        </node>
+      </node>
+      <node concept="34eGC3" id="29l0aZBp08T" role="1pqCzW">
         <property role="34eGCv" value="1j3FjoCvqGf/CLOUD" />
-        <property role="TrG5h" value="AWSCloud" />
+        <property role="TrG5h" value="PaymentGateway" />
+        <property role="2ywBW2" value="payment" />
         <property role="1ZmCJ5" value="lightblue" />
       </node>
-      <node concept="34eGC1" id="29l0aZAMRk3" role="1pqCzW">
-        <node concept="34Inl7" id="29l0aZB3QQf" role="1pvUZv">
-          <ref role="34Inl2" node="29l0aZB3QRp" resolve="ApplicationServer" />
+      <node concept="34eGC1" id="29l0aZBp090" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZBp092" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZBp08L" resolve="ClientMachine" />
         </node>
-        <node concept="34Inl7" id="29l0aZB3QQg" role="1pvUZs">
-          <ref role="34Inl2" node="29l0aZAMRjW" resolve="AWSCloud" />
+        <node concept="34Inl7" id="29l0aZBp093" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZBp08N" resolve="WebServer" />
         </node>
-        <node concept="TrFLf" id="29l0aZAMRk7" role="S$pns" />
+        <node concept="TrFLf" id="29l0aZBp094" role="S$pns" />
       </node>
-      <node concept="1pqCE1" id="29l0aZAMRjX" role="1pqCzW" />
+      <node concept="34eGC1" id="29l0aZBp095" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZBp097" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZBp08N" resolve="WebServer" />
+        </node>
+        <node concept="34Inl7" id="29l0aZBp098" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZBp08R" resolve="DatabaseServer" />
+        </node>
+        <node concept="TrFLf" id="29l0aZBp099" role="S$pns" />
+      </node>
+      <node concept="34eGC1" id="29l0aZBp09a" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZBp09c" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZBp08N" resolve="WebServer" />
+        </node>
+        <node concept="34Inl7" id="29l0aZBp09d" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZBp08T" resolve="PaymentGateway" />
+        </node>
+        <node concept="TrFLf" id="29l0aZBp09e" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZBp08U" role="1pqCzW" />
     </node>
   </node>
 </model>

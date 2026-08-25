@@ -2387,6 +2387,41 @@
       <property role="TrG5h" value="STORAGE" />
       <property role="1L1pqM" value="storage" />
     </node>
+    <node concept="25R33" id="29l0aZBcbtx" role="25R1y">
+      <property role="3tVfz5" value="2473884325807961953" />
+      <property role="TrG5h" value="FRAME" />
+      <property role="1L1pqM" value="frame" />
+    </node>
+    <node concept="25R33" id="29l0aZBcbt$" role="25R1y">
+      <property role="3tVfz5" value="2473884325807961956" />
+      <property role="TrG5h" value="PACKAGE" />
+      <property role="1L1pqM" value="package" />
+    </node>
+    <node concept="25R33" id="29l0aZBcbtB" role="25R1y">
+      <property role="3tVfz5" value="2473884325807961959" />
+      <property role="TrG5h" value="FOLDER" />
+      <property role="1L1pqM" value="folder" />
+    </node>
+    <node concept="25R33" id="29l0aZBcbtE" role="25R1y">
+      <property role="3tVfz5" value="2473884325807961962" />
+      <property role="TrG5h" value="FILE" />
+      <property role="1L1pqM" value="file" />
+    </node>
+    <node concept="25R33" id="29l0aZBcbtH" role="25R1y">
+      <property role="3tVfz5" value="2473884325807961965" />
+      <property role="TrG5h" value="CARD" />
+      <property role="1L1pqM" value="card" />
+    </node>
+    <node concept="25R33" id="29l0aZBcbtK" role="25R1y">
+      <property role="3tVfz5" value="2473884325807961968" />
+      <property role="TrG5h" value="RECTANGLE" />
+      <property role="1L1pqM" value="rectangle" />
+    </node>
+    <node concept="25R33" id="29l0aZBcbtN" role="25R1y">
+      <property role="3tVfz5" value="2473884325807961971" />
+      <property role="TrG5h" value="HEXAGON" />
+      <property role="1L1pqM" value="hexagon" />
+    </node>
   </node>
   <node concept="1TIwiD" id="29l0aZArWEF">
     <property role="EcuMT" value="2473884325795318443" />
@@ -2469,6 +2504,9 @@
     </node>
     <node concept="PrWs8" id="29l0aZAV7nG" role="PzmwI">
       <ref role="PrY4T" node="29l0aZArWEJ" resolve="IPlantUmlDeploymentDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="29l0aZBcbtt" role="PzmwI">
+      <ref role="PrY4T" node="6AkCKBb5_x6" resolve="IHaveAlias" />
     </node>
   </node>
   <node concept="1TIwiD" id="29l0aZAV7nC">
