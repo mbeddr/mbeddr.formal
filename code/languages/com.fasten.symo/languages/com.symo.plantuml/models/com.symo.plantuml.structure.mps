@@ -468,6 +468,7 @@
     <property role="3GE5qa" value="diagram.common" />
     <property role="TrG5h" value="Note" />
     <property role="34LRSv" value="note" />
+    <property role="R4oN_" value="PlantUML note (position, optional attached element, optional color) — floats near a diagram element or the flow; reused across component, sequence, usecase, statemachine, and activity diagrams" />
     <ref role="1TJDcQ" node="1I7wo92VgAu" resolve="PlantUmlCommandBase" />
     <node concept="1TJgyj" id="1I7wo930$oL" role="1TKVEi">
       <property role="IQ2ns" value="1983696557349946929" />
@@ -1590,6 +1591,7 @@
     <property role="3GE5qa" value="diagram.common" />
     <property role="TrG5h" value="NoteOnLink" />
     <property role="34LRSv" value="note on link" />
+    <property role="R4oN_" value="PlantUML note attached to the most recently drawn link/transition (note &lt;position&gt; on link, optional color); extends Note" />
     <ref role="1TJDcQ" node="1I7wo930$oJ" resolve="Note" />
   </node>
   <node concept="1TIwiD" id="2qHrqKS_0_C">
