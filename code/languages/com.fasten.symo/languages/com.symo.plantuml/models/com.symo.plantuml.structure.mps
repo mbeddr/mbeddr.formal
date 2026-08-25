@@ -1623,6 +1623,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
     </node>
+    <node concept="PrWs8" id="29l0aZ_CBit" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="40kNClyHR47">
     <property role="EcuMT" value="4617542590243762439" />

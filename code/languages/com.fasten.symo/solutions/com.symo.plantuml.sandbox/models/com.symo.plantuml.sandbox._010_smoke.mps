@@ -3000,5 +3000,58 @@
       <node concept="1pqCE1" id="2kArA_CAhZj" role="1pqCzW" />
     </node>
   </node>
+  <node concept="1pqNnw" id="29l0aZ_GbIr">
+    <property role="TrG5h" value="_050_activity_diagram_plain_text" />
+    <node concept="11cB79" id="29l0aZ_GbIs" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity plain text" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZ_GbIw" role="1pqCzW" />
+      <node concept="11cB78" id="29l0aZ_GbIx" role="1pqCzW" />
+      <node concept="11cB7a" id="29l0aZ_GbIy" role="1pqCzW">
+        <node concept="11pPRA" id="29l0aZ_GbI$" role="11pLMz">
+          <property role="11pPRS" value="do something modeled" />
+        </node>
+      </node>
+      <node concept="uemj4" id="29l0aZ_GbI_" role="1pqCzW">
+        <node concept="1Pa9Pv" id="29l0aZ_GbIH" role="uemj3">
+          <node concept="1PaTwC" id="29l0aZ_GbII" role="1PaQFQ">
+            <node concept="3oM_SD" id="29l0aZ_GbIK" role="1PaTwD">
+              <property role="3oM_SC" value="#lightblue:do" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIL" role="1PaTwD">
+              <property role="3oM_SC" value="something" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIM" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIN" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIO" role="1PaTwD">
+              <property role="3oM_SC" value="color," />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIP" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIQ" role="1PaTwD">
+              <property role="3oM_SC" value="yet" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIR" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIS" role="1PaTwD">
+              <property role="3oM_SC" value="modeled" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIT" role="1PaTwD">
+              <property role="3oM_SC" value="feature;" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="29l0aZ_GbIF" role="1pqCzW" />
+      <node concept="1pqCE1" id="29l0aZ_GbIG" role="1pqCzW" />
+    </node>
+  </node>
 </model>
 
