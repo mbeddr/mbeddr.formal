@@ -1955,7 +1955,7 @@
     <property role="34LRSv" value="if" />
     <property role="R4oN_" value="if (condition) then (label)" />
     <property role="3GE5qa" value="diagram.uml.activity" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2kArA_$E0iL" role="1TKVEl">
       <property role="IQ2nx" value="2676948427457692849" />
       <property role="TrG5h" value="thenLabel" />
@@ -1997,7 +1997,7 @@
     <property role="34LRSv" value="else" />
     <property role="R4oN_" value="else (label)" />
     <property role="3GE5qa" value="diagram.uml.activity" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2kArA_$E0iN" role="1TKVEl">
       <property role="IQ2nx" value="2676948427457692851" />
       <property role="TrG5h" value="label" />
@@ -2016,7 +2016,7 @@
     <property role="TrG5h" value="PlantUmlTextualCondition" />
     <property role="R4oN_" value="a plain text condition" />
     <property role="3GE5qa" value="diagram.uml.activity" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2kArA__qCXl" role="1TKVEl">
       <property role="IQ2nx" value="2676948427470442325" />
       <property role="TrG5h" value="text" />
@@ -2038,7 +2038,7 @@
     <property role="34LRSv" value="elseif" />
     <property role="R4oN_" value="elseif (condition) then (label)" />
     <property role="3GE5qa" value="diagram.uml.activity" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="2kArA__EXSW" role="1TKVEl">
       <property role="IQ2nx" value="2676948427474722364" />
       <property role="TrG5h" value="thenLabel" />
@@ -2348,7 +2348,7 @@
     <property role="R4oN_" value="activity swimlane switch, e.g. |Name| or |#color|Name|" />
     <property role="3GE5qa" value="diagram.uml.activity" />
     <property role="34LRSv" value="swimlane" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2kArA_Co0bm" role="PzmwI">
       <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
     </node>
