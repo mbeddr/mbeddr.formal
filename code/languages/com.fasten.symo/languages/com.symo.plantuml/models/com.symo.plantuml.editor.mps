@@ -45,8 +45,10 @@
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1597643335227097138" name="jetbrains.mps.lang.editor.structure.QueryFunctionParameter_TransformationMenu_node" flags="ng" index="7Obwk" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
@@ -4902,7 +4904,7 @@
   </node>
   <node concept="24kQdi" id="29l0aZCm_wr">
     <property role="3GE5qa" value="diagram.uml.deployment" />
-    <ref role="1XX52x" to="udwj:29l0aZCmwsg" />
+    <ref role="1XX52x" to="udwj:29l0aZCmwsg" resolve="DeploymentPort" />
     <node concept="3EZMnI" id="29l0aZCm_wG" role="2wV5jI">
       <node concept="3F0A7n" id="29l0aZCm_wH" role="3EZMnx">
         <ref role="1NtTu8" to="udwj:29l0aZCmwsj" resolve="kind" />
@@ -4962,7 +4964,7 @@
   </node>
   <node concept="24kQdi" id="29l0aZCw4yy">
     <property role="3GE5qa" value="diagram.uml.class" />
-    <ref role="1XX52x" to="udwj:29l0aZCvY2w" />
+    <ref role="1XX52x" to="udwj:29l0aZCvY2w" resolve="ClassDeclaration" />
     <node concept="3EZMnI" id="29l0aZCE5g7" role="2wV5jI">
       <node concept="3F0ifn" id="29l0aZCE5g8" role="3EZMnx">
         <property role="3F0ifm" value="class" />
@@ -5011,6 +5013,25 @@
         </node>
       </node>
       <node concept="l2Vlx" id="29l0aZCE5gy" role="2iSdaV" />
+      <node concept="3F0ifn" id="29l0aZDzFpj" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
+      <node concept="3F2HdR" id="29l0aZDzFpm" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZDiUiX" resolve="members" />
+        <node concept="2iRkQZ" id="29l0aZDzFpn" role="2czzBx" />
+        <node concept="pVoyu" id="29l0aZDzFpo" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="29l0aZDzFpp" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="29l0aZDzFps" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="pVoyu" id="29l0aZDzFpt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="PKFIW" id="29l0aZCw4zi">
@@ -5038,10 +5059,10 @@
   </node>
   <node concept="24kQdi" id="29l0aZDdg9C">
     <property role="3GE5qa" value="diagram.uml.class" />
-    <ref role="1XX52x" to="udwj:29l0aZCvY2J" />
+    <ref role="1XX52x" to="udwj:29l0aZCvY2J" resolve="PlantUmlClassLink" />
     <node concept="3EZMnI" id="29l0aZDdga$" role="2wV5jI">
       <node concept="3F1sOY" id="29l0aZDdga_" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:1I7wo92Y2Tt" />
+        <ref role="1NtTu8" to="udwj:1I7wo92Y2Tt" resolve="source" />
       </node>
       <node concept="_tjkj" id="29l0aZDdgaA" role="3EZMnx">
         <node concept="3EZMnI" id="29l0aZDdgaC" role="_tjki">
@@ -5064,7 +5085,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="29l0aZDdgaJ" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:7xI8QH0ZVqR" />
+        <ref role="1NtTu8" to="udwj:7xI8QH0ZVqR" resolve="linkType" />
       </node>
       <node concept="_tjkj" id="29l0aZDdgaK" role="3EZMnx">
         <node concept="3EZMnI" id="29l0aZDdgaM" role="_tjki">
@@ -5087,7 +5108,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="29l0aZDdgaT" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:1I7wo92Y2Tu" />
+        <ref role="1NtTu8" to="udwj:1I7wo92Y2Tu" resolve="target" />
       </node>
       <node concept="_tjkj" id="29l0aZDdgaU" role="3EZMnx">
         <node concept="3EZMnI" id="29l0aZDdgaW" role="_tjki">
@@ -5102,6 +5123,92 @@
         </node>
       </node>
       <node concept="2iRfu4" id="29l0aZDdgb1" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29l0aZDzFoa">
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1XX52x" to="udwj:29l0aZDiOPn" resolve="ClassField" />
+    <node concept="3EZMnI" id="29l0aZDzFox" role="2wV5jI">
+      <node concept="3F0A7n" id="29l0aZDzFoy" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZDiOPr" resolve="visibility" />
+      </node>
+      <node concept="3F0A7n" id="29l0aZDzFoz" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="29l0aZDzFo$" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZDzFoA" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZDzFoB" role="3EZMnx">
+            <property role="3F0ifm" value=":" />
+          </node>
+          <node concept="3F0A7n" id="29l0aZDzFoC" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:29l0aZDiOPq" resolve="type" />
+          </node>
+          <node concept="2iRfu4" id="29l0aZDzFoD" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="29l0aZDzFoE" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29l0aZDzFoH">
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1XX52x" to="udwj:29l0aZDiOPo" resolve="ClassMethod" />
+    <node concept="3EZMnI" id="29l0aZDzFp5" role="2wV5jI">
+      <node concept="3F0A7n" id="29l0aZDzFp6" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZDiOPv" resolve="visibility" />
+      </node>
+      <node concept="3F0A7n" id="29l0aZDzFp7" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="29l0aZE1tPm" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+        <node concept="11LMrY" id="29l0aZEjkeS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="29l0aZE1tY_" role="3EZMnx">
+        <property role="2czwfO" value=", " />
+        <ref role="1NtTu8" to="udwj:29l0aZDPACJ" resolve="parameters" />
+        <node concept="2iRfu4" id="29l0aZE1tYA" role="2czzBx" />
+        <node concept="3F0ifn" id="29l0aZE7$7p" role="2czzBI" />
+      </node>
+      <node concept="3F0ifn" id="29l0aZE1u7t" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+      </node>
+      <node concept="_tjkj" id="29l0aZDzFp9" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZDzFpb" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZDzFpc" role="3EZMnx">
+            <property role="3F0ifm" value=":" />
+          </node>
+          <node concept="3F0A7n" id="29l0aZDzFpd" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:29l0aZDiOPu" resolve="returnType" />
+          </node>
+          <node concept="2iRfu4" id="29l0aZDzFpe" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="29l0aZDzFpf" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29l0aZE1tvc">
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1XX52x" to="udwj:29l0aZDPwWJ" resolve="MethodParameter" />
+    <node concept="3EZMnI" id="29l0aZE1tCP" role="2wV5jI">
+      <node concept="3F0A7n" id="29l0aZE1tCQ" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="29l0aZE1tCR" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZE1tCT" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZE1tCU" role="3EZMnx">
+            <property role="3F0ifm" value=":" />
+          </node>
+          <node concept="3F0A7n" id="29l0aZE1tCV" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:29l0aZDPwWK" resolve="type" />
+          </node>
+          <node concept="2iRfu4" id="29l0aZE1tCW" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="29l0aZE1tCX" role="2iSdaV" />
     </node>
   </node>
 </model>

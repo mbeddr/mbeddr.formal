@@ -164,7 +164,9 @@
       <concept id="2473884325829927082" name="com.symo.plantuml.structure.ClassRef" flags="ng" index="3aaI05">
         <reference id="2473884325829927084" name="class" index="3aaI03" />
       </concept>
-      <concept id="2473884325829927072" name="com.symo.plantuml.structure.ClassDeclaration" flags="ng" index="3aaI0f" />
+      <concept id="2473884325829927072" name="com.symo.plantuml.structure.ClassDeclaration" flags="ng" index="3aaI0f">
+        <child id="2473884325843281085" name="members" index="3b7Egi" />
+      </concept>
       <concept id="2473884325829927094" name="com.symo.plantuml.structure.AssociationLine" flags="ng" index="3aaI0p" />
       <concept id="2473884325829927091" name="com.symo.plantuml.structure.ExtensionLine" flags="ng" index="3aaI0s" />
       <concept id="2473884325829927062" name="com.symo.plantuml.structure.PlantUmlClassDiagram" flags="ng" index="3aaI0T" />
@@ -172,6 +174,18 @@
       <concept id="2473884325837798797" name="com.symo.plantuml.structure.RealizationLine" flags="ng" index="3aCJOy" />
       <concept id="2473884325837798796" name="com.symo.plantuml.structure.AggregationLine" flags="ng" index="3aCJOz" />
       <concept id="2473884325837798795" name="com.symo.plantuml.structure.CompositionLine" flags="ng" index="3aCJO$" />
+      <concept id="2473884325843258712" name="com.symo.plantuml.structure.ClassMethod" flags="ng" index="3b7$RR">
+        <property id="2473884325843258719" name="visibility" index="3b7$RK" />
+        <property id="2473884325843258718" name="returnType" index="3b7$RL" />
+        <child id="2473884325852375599" name="parameters" index="3bwQE0" />
+      </concept>
+      <concept id="2473884325843258711" name="com.symo.plantuml.structure.ClassField" flags="ng" index="3b7$RS">
+        <property id="2473884325843258715" name="visibility" index="3b7$RO" />
+        <property id="2473884325843258714" name="type" index="3b7$RP" />
+      </concept>
+      <concept id="2473884325852352303" name="com.symo.plantuml.structure.MethodParameter" flags="ng" index="3bwKY0">
+        <property id="2473884325852352304" name="type" index="3bwKYv" />
+      </concept>
       <concept id="2676948427520082644" name="com.symo.plantuml.structure.PlantUmlActivitySwimlane" flags="ng" index="1dhAMX" />
       <concept id="2676948427518192855" name="com.symo.plantuml.structure.PlantUmlActivityBreak" flags="ng" index="1dpkaY" />
       <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
@@ -3480,6 +3494,63 @@
         <node concept="3aaI0p" id="29l0aZDiNQH" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="29l0aZDiNQI" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZDzEZC">
+    <property role="TrG5h" value="_074_class_diagram_members" />
+    <node concept="3aaI0T" id="29l0aZDzEZD" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class members" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZDzEZH" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZDzEZI" role="1pqCzW">
+        <property role="TrG5h" value="BankAccount" />
+        <node concept="3b7$RS" id="29l0aZDzEZJ" role="3b7Egi">
+          <property role="TrG5h" value="balance" />
+          <property role="3b7$RP" value="double" />
+          <property role="3b7$RO" value="1sW5M_KSDqm/PRIVATE" />
+        </node>
+        <node concept="3b7$RS" id="29l0aZDzEZK" role="3b7Egi">
+          <property role="TrG5h" value="owner" />
+          <property role="3b7$RP" value="String" />
+          <property role="3b7$RO" value="DpojQOR$G4/PUBLIC" />
+        </node>
+        <node concept="3b7$RR" id="29l0aZDzEZL" role="3b7Egi">
+          <property role="TrG5h" value="BankAccount" />
+          <property role="3b7$RK" value="DpojQOR$G4/PUBLIC" />
+        </node>
+        <node concept="3b7$RR" id="29l0aZDzEZM" role="3b7Egi">
+          <property role="TrG5h" value="getBalance" />
+          <property role="3b7$RL" value="double" />
+          <property role="3b7$RK" value="DpojQOR$G4/PUBLIC" />
+        </node>
+        <node concept="3b7$RR" id="29l0aZDzEZN" role="3b7Egi">
+          <property role="TrG5h" value="validate" />
+          <property role="3b7$RL" value="boolean" />
+          <property role="3b7$RK" value="1sW5M_KSDqm/PRIVATE" />
+        </node>
+        <node concept="3b7$RR" id="29l0aZE7zAQ" role="3b7Egi">
+          <property role="TrG5h" value="deposit" />
+          <property role="3b7$RL" value="void" />
+          <node concept="3bwKY0" id="29l0aZE7zAR" role="3bwQE0">
+            <property role="TrG5h" value="amount" />
+            <property role="3bwKYv" value="double" />
+          </node>
+        </node>
+        <node concept="3b7$RR" id="29l0aZE7zKg" role="3b7Egi">
+          <property role="TrG5h" value="transfer" />
+          <property role="3b7$RL" value="boolean" />
+          <node concept="3bwKY0" id="29l0aZE7zKh" role="3bwQE0">
+            <property role="TrG5h" value="amount" />
+            <property role="3bwKYv" value="double" />
+          </node>
+          <node concept="3bwKY0" id="29l0aZE7zKi" role="3bwQE0">
+            <property role="TrG5h" value="to" />
+            <property role="3bwKYv" value="BankAccount" />
+          </node>
+        </node>
+      </node>
+      <node concept="1pqCE1" id="29l0aZDzEZO" role="1pqCzW" />
     </node>
   </node>
 </model>

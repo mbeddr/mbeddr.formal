@@ -64,6 +64,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
@@ -217,13 +218,52 @@
       <node concept="QB0g5" id="6BNnCp_mjQ9" role="QCWH9">
         <node concept="3clFbS" id="6BNnCp_mjQa" role="2VODD2">
           <node concept="3clFbF" id="6BNnCp_mk4J" role="3cqZAp">
-            <node concept="3fqX7Q" id="6BNnCp_mpr7" role="3clFbG">
-              <node concept="2OqwBi" id="6BNnCp_mpr9" role="3fr31v">
-                <node concept="1Wqviy" id="6BNnCp_mpra" role="2Oq$k0" />
-                <node concept="liA8E" id="6BNnCp_mprb" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
-                  <node concept="Xl_RD" id="6BNnCp_mprc" role="37wK5m">
-                    <property role="Xl_RC" value=" " />
+            <node concept="1Wc70l" id="29l0aZEp0cN" role="3clFbG">
+              <node concept="1Wc70l" id="29l0aZEoZmL" role="3uHU7B">
+                <node concept="1Wc70l" id="29l0aZDPv0x" role="3uHU7B">
+                  <node concept="3fqX7Q" id="6BNnCp_mpr7" role="3uHU7B">
+                    <node concept="2OqwBi" id="6BNnCp_mpr9" role="3fr31v">
+                      <node concept="1Wqviy" id="6BNnCp_mpra" role="2Oq$k0" />
+                      <node concept="liA8E" id="6BNnCp_mprb" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                        <node concept="Xl_RD" id="6BNnCp_mprc" role="37wK5m">
+                          <property role="Xl_RC" value=" " />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3fqX7Q" id="29l0aZDPv9U" role="3uHU7w">
+                    <node concept="2OqwBi" id="29l0aZDPv9V" role="3fr31v">
+                      <node concept="1Wqviy" id="29l0aZDPv9W" role="2Oq$k0" />
+                      <node concept="liA8E" id="29l0aZDPv9X" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                        <node concept="Xl_RD" id="29l0aZDPv9Y" role="37wK5m">
+                          <property role="Xl_RC" value=":" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="29l0aZEoZwW" role="3uHU7w">
+                  <node concept="2OqwBi" id="29l0aZEoZwX" role="3fr31v">
+                    <node concept="1Wqviy" id="29l0aZEoZwY" role="2Oq$k0" />
+                    <node concept="liA8E" id="29l0aZEoZwZ" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                      <node concept="Xl_RD" id="29l0aZEoZx0" role="37wK5m">
+                        <property role="Xl_RC" value="," />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="29l0aZEp0gB" role="3uHU7w">
+                <node concept="2OqwBi" id="29l0aZEp0gC" role="3fr31v">
+                  <node concept="1Wqviy" id="29l0aZEp0gD" role="2Oq$k0" />
+                  <node concept="liA8E" id="29l0aZEp0gE" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                    <node concept="Xl_RD" id="29l0aZEp0gF" role="37wK5m">
+                      <property role="Xl_RC" value=";" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -430,7 +470,7 @@
     <property role="TrG5h" value="DeploymentEntityRef_Constraints" />
     <ref role="1M2myG" to="udwj:29l0aZAV7nC" resolve="DeploymentEntityRef" />
     <node concept="1N5Pfh" id="29l0aZCdeuQ" role="1Mr941">
-      <ref role="1N5Vy1" to="udwj:29l0aZAV7nH" />
+      <ref role="1N5Vy1" to="udwj:29l0aZAV7nH" resolve="entity" />
       <node concept="1dDu$B" id="29l0aZCdeuR" role="1N6uqs">
         <ref role="1dDu$A" to="udwj:29l0aZAV7nB" resolve="DeploymentEntityBase" />
       </node>
@@ -453,6 +493,56 @@
       <ref role="1N5Vy1" to="udwj:29l0aZCvY2G" resolve="class" />
       <node concept="1dDu$B" id="29l0aZCw4Ck" role="1N6uqs">
         <ref role="1dDu$A" to="udwj:29l0aZCvY2w" resolve="ClassDeclaration" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="29l0aZEp0Rx">
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1M2myG" to="udwj:29l0aZDPwWJ" resolve="MethodParameter" />
+    <node concept="EnEH3" id="29l0aZEp0Ry" role="1MhHOB">
+      <ref role="EomxK" to="udwj:29l0aZDPwWK" resolve="type" />
+      <node concept="QB0g5" id="29l0aZEp0WN" role="QCWH9">
+        <node concept="3clFbS" id="29l0aZEp0WO" role="2VODD2">
+          <node concept="3clFbF" id="29l0aZEp14h" role="3cqZAp">
+            <node concept="1Wc70l" id="29l0aZEp14j" role="3clFbG">
+              <node concept="1Wc70l" id="29l0aZEp14k" role="3uHU7B">
+                <node concept="3fqX7Q" id="29l0aZEp14l" role="3uHU7B">
+                  <node concept="2OqwBi" id="29l0aZEp14m" role="3fr31v">
+                    <node concept="1Wqviy" id="29l0aZEp14n" role="2Oq$k0" />
+                    <node concept="liA8E" id="29l0aZEp14o" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                      <node concept="Xl_RD" id="29l0aZEp14p" role="37wK5m">
+                        <property role="Xl_RC" value=" " />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="29l0aZEp14q" role="3uHU7w">
+                  <node concept="2OqwBi" id="29l0aZEp14r" role="3fr31v">
+                    <node concept="1Wqviy" id="29l0aZEp14s" role="2Oq$k0" />
+                    <node concept="liA8E" id="29l0aZEp14t" role="2OqNvi">
+                      <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                      <node concept="Xl_RD" id="29l0aZEp14u" role="37wK5m">
+                        <property role="Xl_RC" value=":" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="29l0aZEp14v" role="3uHU7w">
+                <node concept="2OqwBi" id="29l0aZEp14w" role="3fr31v">
+                  <node concept="1Wqviy" id="29l0aZEp14x" role="2Oq$k0" />
+                  <node concept="liA8E" id="29l0aZEp14y" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                    <node concept="Xl_RD" id="29l0aZEp14z" role="37wK5m">
+                      <property role="Xl_RC" value="," />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
