@@ -14,7 +14,7 @@
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
-    <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" implicit="true" />
+    <import index="udwj" ref="r:3cfd1ac4-92be-4123-8876-78cf444bfbcb(com.symo.plantuml.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
@@ -127,6 +127,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -420,6 +423,16 @@
       <ref role="1N5Vy1" to="udwj:40kNClyKOBZ" resolve="port" />
       <node concept="1dDu$B" id="40kNClyKOKE" role="1N6uqs">
         <ref role="1dDu$A" to="udwj:40kNClyHR47" resolve="PortDeclaration" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="29l0aZCdeuP">
+    <property role="TrG5h" value="DeploymentEntityRef_Constraints" />
+    <ref role="1M2myG" to="udwj:29l0aZAV7nC" resolve="DeploymentEntityRef" />
+    <node concept="1N5Pfh" id="29l0aZCdeuQ" role="1Mr941">
+      <ref role="1N5Vy1" to="udwj:29l0aZAV7nH" />
+      <node concept="1dDu$B" id="29l0aZCdeuR" role="1N6uqs">
+        <ref role="1dDu$A" to="udwj:29l0aZAV7nB" resolve="DeploymentEntityBase" />
       </node>
     </node>
   </node>
