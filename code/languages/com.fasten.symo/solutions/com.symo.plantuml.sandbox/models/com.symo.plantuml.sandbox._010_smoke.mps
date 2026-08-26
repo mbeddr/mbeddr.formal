@@ -3402,5 +3402,37 @@
       <node concept="1pqCE1" id="29l0aZCY5rm" role="1pqCzW" />
     </node>
   </node>
+  <node concept="1pqNnw" id="29l0aZD39z6">
+    <property role="TrG5h" value="_072_class_diagram_notes" />
+    <node concept="3aaI0T" id="29l0aZD39z7" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class notes" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZD39zb" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZD39zc" role="1pqCzW">
+        <property role="TrG5h" value="Robot" />
+      </node>
+      <node concept="1oxsuH" id="29l0aZD39zd" role="1pqCzW">
+        <property role="1oxspX" value="1I7wo930$vW/right" />
+        <node concept="1Pa9Pv" id="29l0aZD39zf" role="1oxsuN">
+          <node concept="1PaTwC" id="29l0aZD39zg" role="1PaQFQ">
+            <node concept="3oM_SD" id="29l0aZD39zi" role="1PaTwD">
+              <property role="3oM_SC" value="Autonomous" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZD39zj" role="1PaTwD">
+              <property role="3oM_SC" value="navigation" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZD39zk" role="1PaTwD">
+              <property role="3oM_SC" value="unit" />
+            </node>
+          </node>
+        </node>
+        <node concept="3aaI05" id="29l0aZD39zl" role="1oxsAa">
+          <ref role="3aaI03" node="29l0aZD39zc" resolve="Robot" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="29l0aZD39zm" role="1pqCzW" />
+    </node>
+  </node>
 </model>
 

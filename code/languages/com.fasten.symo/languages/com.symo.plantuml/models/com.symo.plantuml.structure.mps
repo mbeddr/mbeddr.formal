@@ -509,6 +509,9 @@
     <node concept="PrWs8" id="29l0aZC8_q1" role="PzmwI">
       <ref role="PrY4T" node="29l0aZArWEJ" resolve="IPlantUmlDeploymentDiagramContent" />
     </node>
+    <node concept="PrWs8" id="29l0aZCY6k3" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZCvY2f" resolve="IPlantUmlClassDiagramContent" />
+    </node>
   </node>
   <node concept="25R3W" id="1I7wo930$vU">
     <property role="3F6X1D" value="1983696557349947386" />
