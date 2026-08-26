@@ -2595,5 +2595,95 @@
       <ref role="20lvS9" node="29l0aZCmwsg" resolve="DeploymentPort" />
     </node>
   </node>
+  <node concept="PlHQZ" id="29l0aZCvY2f">
+    <property role="EcuMT" value="2473884325829927055" />
+    <property role="TrG5h" value="IPlantUmlClassDiagramContent" />
+    <property role="R4oN_" value="Marker interface for nodes that can appear inside a PlantUML class diagram" />
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <node concept="PrWs8" id="29l0aZCvY2g" role="PrDN$">
+      <ref role="PrY4T" node="1I7wo92Vg_Z" resolve="IPlantUmlDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZCvY2m">
+    <property role="EcuMT" value="2473884325829927062" />
+    <property role="TrG5h" value="PlantUmlClassDiagram" />
+    <property role="34LRSv" value="class diagram" />
+    <property role="R4oN_" value="a PlantUML class diagram" />
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1TJDcQ" node="1I7wo92Vg_W" resolve="PlantUmlDiagramBase" />
+    <node concept="PrWs8" id="29l0aZCvY2n" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="29l0aZCvY2o" role="1TKVEi">
+      <property role="IQ2ns" value="2473884325829927064" />
+      <property role="20kJfa" value="content" />
+      <property role="TrG5h" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="29l0aZCvY2f" resolve="IPlantUmlClassDiagramContent" />
+      <ref role="20ksaX" node="1I7wo92Vg_Y" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZCvY2w">
+    <property role="EcuMT" value="2473884325829927072" />
+    <property role="TrG5h" value="ClassDeclaration" />
+    <property role="R4oN_" value="a PlantUML class box" />
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <property role="34LRSv" value="class" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="29l0aZCvY2x" role="PzmwI">
+      <ref role="PrY4T" node="6CyxyHi9vWZ" resolve="INamedElementWithLongDescription" />
+    </node>
+    <node concept="PrWs8" id="29l0aZCvY2y" role="PzmwI">
+      <ref role="PrY4T" node="6AkCKBb5_x6" resolve="IHaveAlias" />
+    </node>
+    <node concept="PrWs8" id="29l0aZCvY2z" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
+    </node>
+    <node concept="PrWs8" id="29l0aZCvY2$" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZCvY2f" resolve="IPlantUmlClassDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZCvY2E">
+    <property role="EcuMT" value="2473884325829927082" />
+    <property role="TrG5h" value="ClassRef" />
+    <property role="R4oN_" value="a reference to a class, used as a relationship endpoint" />
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="29l0aZCvY2F" role="PzmwI">
+      <ref role="PrY4T" node="1I7wo92Y2Ts" resolve="IChannelEndpoint" />
+    </node>
+    <node concept="1TJgyj" id="29l0aZCvY2G" role="1TKVEi">
+      <property role="IQ2ns" value="2473884325829927084" />
+      <property role="20kJfa" value="class" />
+      <property role="TrG5h" value="class" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="29l0aZCvY2w" resolve="ClassDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZCvY2J">
+    <property role="EcuMT" value="2473884325829927087" />
+    <property role="TrG5h" value="PlantUmlClassLink" />
+    <property role="R4oN_" value="a relationship between two classes" />
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1TJDcQ" node="6BNnCp_tb0t" resolve="AbstractPlantumlLinkBase" />
+    <node concept="PrWs8" id="29l0aZCvY2K" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZCvY2f" resolve="IPlantUmlClassDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZCvY2N">
+    <property role="EcuMT" value="2473884325829927091" />
+    <property role="TrG5h" value="ExtensionLine" />
+    <property role="34LRSv" value="--|&gt;" />
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1TJDcQ" node="7xI8QH0ZYAn" resolve="LinkTypeBase" />
+  </node>
+  <node concept="1TIwiD" id="29l0aZCvY2Q">
+    <property role="EcuMT" value="2473884325829927094" />
+    <property role="TrG5h" value="AssociationLine" />
+    <property role="34LRSv" value="--" />
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1TJDcQ" node="7xI8QH0ZYAn" resolve="LinkTypeBase" />
+  </node>
 </model>
 

@@ -157,6 +157,14 @@
         <property id="2473884325827446547" name="kind" index="3a3KuW" />
       </concept>
       <concept id="2473884325826231427" name="com.symo.plantuml.structure.PlantUmlLeftToRightDirection" flags="ng" index="3a4BKG" />
+      <concept id="2473884325829927087" name="com.symo.plantuml.structure.PlantUmlClassLink" flags="ng" index="3aaI00" />
+      <concept id="2473884325829927082" name="com.symo.plantuml.structure.ClassRef" flags="ng" index="3aaI05">
+        <reference id="2473884325829927084" name="class" index="3aaI03" />
+      </concept>
+      <concept id="2473884325829927072" name="com.symo.plantuml.structure.ClassDeclaration" flags="ng" index="3aaI0f" />
+      <concept id="2473884325829927094" name="com.symo.plantuml.structure.AssociationLine" flags="ng" index="3aaI0p" />
+      <concept id="2473884325829927091" name="com.symo.plantuml.structure.ExtensionLine" flags="ng" index="3aaI0s" />
+      <concept id="2473884325829927062" name="com.symo.plantuml.structure.PlantUmlClassDiagram" flags="ng" index="3aaI0T" />
       <concept id="2676948427520082644" name="com.symo.plantuml.structure.PlantUmlActivitySwimlane" flags="ng" index="1dhAMX" />
       <concept id="2676948427518192855" name="com.symo.plantuml.structure.PlantUmlActivityBreak" flags="ng" index="1dpkaY" />
       <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
@@ -3279,6 +3287,45 @@
         <node concept="TrFLf" id="29l0aZCrhkN" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="29l0aZCrhkO" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZC$PpA">
+    <property role="TrG5h" value="_070_class_diagram_simple" />
+    <node concept="3aaI0T" id="29l0aZC$PpB" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class simple" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZC$PpF" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZC$PpG" role="1pqCzW">
+        <property role="TrG5h" value="Animal" />
+        <property role="1ZmCJ5" value="red" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZC$PpH" role="1pqCzW">
+        <property role="TrG5h" value="Dog" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZC$PpI" role="1pqCzW">
+        <property role="TrG5h" value="Zookeeper" />
+        <property role="2ywBW2" value="zk" />
+      </node>
+      <node concept="3aaI00" id="29l0aZC$PpJ" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZC$PpL" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZC$PpH" resolve="Dog" />
+        </node>
+        <node concept="3aaI05" id="29l0aZC$PpM" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZC$PpG" resolve="Animal" />
+        </node>
+        <node concept="3aaI0s" id="29l0aZC$PpN" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZC$PpO" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZC$PpR" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZC$PpG" resolve="Animal" />
+        </node>
+        <node concept="3aaI0p" id="29l0aZC$PpS" role="S$pns" />
+        <node concept="3aaI05" id="29l0aZCJ9B8" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZC$PpI" resolve="Zookeeper" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="29l0aZC$PpT" role="1pqCzW" />
     </node>
   </node>
 </model>
