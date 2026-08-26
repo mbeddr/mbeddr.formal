@@ -150,6 +150,7 @@
       <concept id="8400506447496619781" name="com.symo.plantuml.structure.PackageDeclaration" flags="ng" index="14ZFWu">
         <child id="8400506447496650874" name="content" index="14Zzxx" />
       </concept>
+      <concept id="2473884325863272373" name="com.symo.plantuml.structure.EnumLiteral" flags="ng" index="38aqWq" />
       <concept id="2473884325827446553" name="com.symo.plantuml.structure.DeploymentPortRef" flags="ng" index="3a3KuQ">
         <reference id="2473884325827446555" name="port" index="3a3KuO" />
       </concept>
@@ -165,6 +166,7 @@
         <reference id="2473884325829927084" name="class" index="3aaI03" />
       </concept>
       <concept id="2473884325829927072" name="com.symo.plantuml.structure.ClassDeclaration" flags="ng" index="3aaI0f">
+        <property id="2473884325863272366" name="kind" index="38aqW1" />
         <child id="2473884325843281085" name="members" index="3b7Egi" />
       </concept>
       <concept id="2473884325829927094" name="com.symo.plantuml.structure.AssociationLine" flags="ng" index="3aaI0p" />
@@ -3551,6 +3553,62 @@
         </node>
       </node>
       <node concept="1pqCE1" id="29l0aZDzEZO" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZELy00">
+    <property role="TrG5h" value="_075_class_diagram_kinds" />
+    <node concept="3aaI0T" id="29l0aZELy01" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class kinds" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZELy05" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZELy06" role="1pqCzW">
+        <property role="TrG5h" value="Shape" />
+        <property role="38aqW1" value="2S3nKTOTbmi/INTERFACE" />
+        <node concept="3b7$RR" id="29l0aZELy07" role="3b7Egi">
+          <property role="TrG5h" value="draw" />
+          <property role="3b7$RL" value="void" />
+        </node>
+      </node>
+      <node concept="3aaI0f" id="29l0aZELy08" role="1pqCzW">
+        <property role="TrG5h" value="AbstractAnimal" />
+        <property role="38aqW1" value="2dObjI3lQDp/ABSTRACT_CLASS" />
+        <node concept="3b7$RS" id="29l0aZELy09" role="3b7Egi">
+          <property role="TrG5h" value="name" />
+          <property role="3b7$RP" value="String" />
+          <property role="3b7$RO" value="4y40N5FHI4U/PROTECTED" />
+        </node>
+        <node concept="3b7$RR" id="29l0aZELy0a" role="3b7Egi">
+          <property role="TrG5h" value="makeSound" />
+          <property role="3b7$RL" value="void" />
+        </node>
+      </node>
+      <node concept="3aaI0f" id="29l0aZELy0b" role="1pqCzW">
+        <property role="TrG5h" value="Direction" />
+        <property role="38aqW1" value="43wZHvidjT5/ENUM" />
+        <node concept="38aqWq" id="29l0aZELy0c" role="3b7Egi">
+          <property role="TrG5h" value="NORTH" />
+        </node>
+        <node concept="38aqWq" id="29l0aZELy0d" role="3b7Egi">
+          <property role="TrG5h" value="SOUTH" />
+        </node>
+        <node concept="38aqWq" id="29l0aZELy0e" role="3b7Egi">
+          <property role="TrG5h" value="EAST" />
+        </node>
+        <node concept="38aqWq" id="29l0aZELy0f" role="3b7Egi">
+          <property role="TrG5h" value="WEST" />
+        </node>
+      </node>
+      <node concept="3aaI00" id="29l0aZELy0g" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZELy0i" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZELy08" resolve="AbstractAnimal" />
+        </node>
+        <node concept="3aaI05" id="29l0aZELy0j" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZELy06" resolve="Shape" />
+        </node>
+        <node concept="3aCJOy" id="29l0aZELy0k" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZELy0l" role="1pqCzW" />
     </node>
   </node>
 </model>

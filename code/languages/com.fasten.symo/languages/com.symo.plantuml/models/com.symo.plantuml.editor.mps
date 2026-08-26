@@ -4966,8 +4966,8 @@
     <property role="3GE5qa" value="diagram.uml.class" />
     <ref role="1XX52x" to="udwj:29l0aZCvY2w" resolve="ClassDeclaration" />
     <node concept="3EZMnI" id="29l0aZCE5g7" role="2wV5jI">
-      <node concept="3F0ifn" id="29l0aZCE5g8" role="3EZMnx">
-        <property role="3F0ifm" value="class" />
+      <node concept="3F0A7n" id="29l0aZEFqDl" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZEvaYI" resolve="kind" />
       </node>
       <node concept="3F0A7n" id="29l0aZCE5g9" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -5209,6 +5209,13 @@
         </node>
       </node>
       <node concept="2iRfu4" id="29l0aZE1tCX" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29l0aZEFqDp">
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1XX52x" to="udwj:29l0aZEvaYP" />
+    <node concept="3F0A7n" id="29l0aZEFqDy" role="2wV5jI">
+      <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
   </node>
 </model>

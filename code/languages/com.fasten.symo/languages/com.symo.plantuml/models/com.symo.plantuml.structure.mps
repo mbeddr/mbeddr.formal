@@ -2653,6 +2653,11 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="29l0aZDiOPp" resolve="IPlantUmlClassMember" />
     </node>
+    <node concept="1TJgyi" id="29l0aZEvaYI" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325863272366" />
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="29l0aZEvaY_" resolve="EPlantUmlClassKind" />
+    </node>
   </node>
   <node concept="1TIwiD" id="29l0aZCvY2E">
     <property role="EcuMT" value="2473884325829927082" />
@@ -2841,6 +2846,45 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="PrWs8" id="29l0aZDPwWL" role="PzmwI">
+      <ref role="PrY4T" node="6CyxyHi9vWZ" resolve="INamedElementWithLongDescription" />
+    </node>
+  </node>
+  <node concept="25R3W" id="29l0aZEvaY_">
+    <property role="3F6X1D" value="2473884325863272357" />
+    <property role="TrG5h" value="EPlantUmlClassKind" />
+    <ref role="1H5jkz" node="29l0aZEvaYB" resolve="CLASS" />
+    <node concept="25R33" id="29l0aZEvaYB" role="25R1y">
+      <property role="3tVfz5" value="8001557693371047628" />
+      <property role="TrG5h" value="CLASS" />
+      <property role="1L1pqM" value="class" />
+    </node>
+    <node concept="25R33" id="29l0aZEvaYC" role="25R1y">
+      <property role="3tVfz5" value="3315598266370143634" />
+      <property role="TrG5h" value="INTERFACE" />
+      <property role="1L1pqM" value="interface" />
+    </node>
+    <node concept="25R33" id="29l0aZEvaYD" role="25R1y">
+      <property role="3tVfz5" value="2554716622255778393" />
+      <property role="TrG5h" value="ABSTRACT_CLASS" />
+      <property role="1L1pqM" value="abstract class" />
+    </node>
+    <node concept="25R33" id="29l0aZEvaYE" role="25R1y">
+      <property role="3tVfz5" value="4675016616108703301" />
+      <property role="TrG5h" value="ENUM" />
+      <property role="1L1pqM" value="enum" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZEvaYP">
+    <property role="EcuMT" value="2473884325863272373" />
+    <property role="TrG5h" value="EnumLiteral" />
+    <property role="34LRSv" value="literal" />
+    <property role="R4oN_" value="a value inside a PlantUML enum body" />
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="29l0aZEvaYQ" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZDiOPp" resolve="IPlantUmlClassMember" />
+    </node>
+    <node concept="PrWs8" id="29l0aZEvaYR" role="PzmwI">
       <ref role="PrY4T" node="6CyxyHi9vWZ" resolve="INamedElementWithLongDescription" />
     </node>
   </node>
