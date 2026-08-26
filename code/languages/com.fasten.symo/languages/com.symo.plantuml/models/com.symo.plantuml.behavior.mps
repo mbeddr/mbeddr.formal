@@ -6608,6 +6608,36 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="29l0aZCm_xe" role="3cqZAp">
+          <node concept="2OqwBi" id="29l0aZCm_xh" role="3clFbw">
+            <node concept="37vLTw" id="29l0aZCm_xk" role="2Oq$k0">
+              <ref role="3cqZAo" node="29l0aZAMRlb" resolve="kind" />
+            </node>
+            <node concept="2Zo12i" id="29l0aZCm_xl" role="2OqNvi">
+              <node concept="chp4Y" id="29l0aZCm_xn" role="2Zo12j">
+                <ref role="cht4Q" to="udwj:29l0aZCmwsg" resolve="DeploymentPort" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="29l0aZCm_xo" role="3clFbx">
+            <node concept="3cpWs6" id="29l0aZCm_xp" role="3cqZAp">
+              <node concept="2YIFZM" id="29l0aZCm_xq" role="3cqZAk">
+                <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+                <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                <node concept="2OqwBi" id="29l0aZCm_xr" role="37wK5m">
+                  <node concept="13iPFW" id="29l0aZCm_xu" role="2Oq$k0" />
+                  <node concept="2Rf3mk" id="29l0aZCm_xv" role="2OqNvi">
+                    <node concept="1xMEDy" id="29l0aZCm_xy" role="1xVPHs">
+                      <node concept="chp4Y" id="29l0aZCm_x$" role="ri$Ld">
+                        <ref role="cht4Q" to="udwj:29l0aZCmwsg" resolve="DeploymentPort" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="29l0aZAMRlD" role="3cqZAp">
           <node concept="2OqwBi" id="29l0aZAMRlF" role="3clFbG">
             <node concept="13iAh5" id="29l0aZAMRlI" role="2Oq$k0">
@@ -6704,6 +6734,75 @@
         <node concept="3clFbF" id="29l0aZChRMk" role="3cqZAp">
           <node concept="Xl_RD" id="29l0aZChRMm" role="3clFbG">
             <property role="Xl_RC" value="left to right direction" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="29l0aZCmwt2">
+    <property role="TrG5h" value="DeploymentPort_Behavior" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="13h7C2" to="udwj:29l0aZCmwsg" resolve="DeploymentPort" />
+    <node concept="13hLZK" id="29l0aZCmwt5" role="13h7CW">
+      <node concept="3clFbS" id="29l0aZCmwt7" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="29l0aZCmwt8" role="13h7CS">
+      <property role="TrG5h" value="text" />
+      <ref role="13i0hy" node="1I7wo92VgIo" resolve="text" />
+      <node concept="17QB3L" id="29l0aZCmwtc" role="3clF45" />
+      <node concept="3Tm1VV" id="29l0aZCmwtd" role="1B3o_S" />
+      <node concept="3clFbS" id="29l0aZCmwte" role="3clF47">
+        <node concept="3clFbF" id="29l0aZCmwtf" role="3cqZAp">
+          <node concept="3cpWs3" id="29l0aZCmwth" role="3clFbG">
+            <node concept="3cpWs3" id="29l0aZCmwtk" role="3uHU7B">
+              <node concept="2OqwBi" id="29l0aZCmwtn" role="3uHU7B">
+                <node concept="2OqwBi" id="29l0aZCmwtq" role="2Oq$k0">
+                  <node concept="13iPFW" id="29l0aZCmwtt" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="29l0aZCmwtu" role="2OqNvi">
+                    <ref role="3TsBF5" to="udwj:29l0aZCmwsj" resolve="kind" />
+                  </node>
+                </node>
+                <node concept="1XCIdh" id="29l0aZCmwtv" role="2OqNvi" />
+              </node>
+              <node concept="Xl_RD" id="29l0aZCmwtw" role="3uHU7w">
+                <property role="Xl_RC" value=" " />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="29l0aZCmwtx" role="3uHU7w">
+              <node concept="13iPFW" id="29l0aZCmwt$" role="2Oq$k0" />
+              <node concept="3TrcHB" id="29l0aZCmwt_" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="29l0aZCmwug">
+    <property role="TrG5h" value="DeploymentPortRef_Behavior" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="13h7C2" to="udwj:29l0aZCmwsp" resolve="DeploymentPortRef" />
+    <node concept="13hLZK" id="29l0aZCmwuj" role="13h7CW">
+      <node concept="3clFbS" id="29l0aZCmwul" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="29l0aZCmwum" role="13h7CS">
+      <property role="TrG5h" value="text" />
+      <ref role="13i0hy" node="1I7wo92YLnv" resolve="text" />
+      <node concept="17QB3L" id="29l0aZCmwuq" role="3clF45" />
+      <node concept="3Tm1VV" id="29l0aZCmwur" role="1B3o_S" />
+      <node concept="3clFbS" id="29l0aZCmwus" role="3clF47">
+        <node concept="3clFbF" id="29l0aZCmwut" role="3cqZAp">
+          <node concept="2OqwBi" id="29l0aZCmwuv" role="3clFbG">
+            <node concept="2OqwBi" id="29l0aZCmwuy" role="2Oq$k0">
+              <node concept="13iPFW" id="29l0aZCmwu_" role="2Oq$k0" />
+              <node concept="3TrEf2" id="29l0aZCmwuA" role="2OqNvi">
+                <ref role="3Tt5mk" to="udwj:29l0aZCmwsr" resolve="port" />
+              </node>
+            </node>
+            <node concept="3TrcHB" id="29l0aZCmwuB" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
           </node>
         </node>
       </node>

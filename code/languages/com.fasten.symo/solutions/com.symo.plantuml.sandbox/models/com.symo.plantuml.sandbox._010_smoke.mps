@@ -150,6 +150,12 @@
       <concept id="8400506447496619781" name="com.symo.plantuml.structure.PackageDeclaration" flags="ng" index="14ZFWu">
         <child id="8400506447496650874" name="content" index="14Zzxx" />
       </concept>
+      <concept id="2473884325827446553" name="com.symo.plantuml.structure.DeploymentPortRef" flags="ng" index="3a3KuQ">
+        <reference id="2473884325827446555" name="port" index="3a3KuO" />
+      </concept>
+      <concept id="2473884325827446544" name="com.symo.plantuml.structure.DeploymentPort" flags="ng" index="3a3KuZ">
+        <property id="2473884325827446547" name="kind" index="3a3KuW" />
+      </concept>
       <concept id="2473884325826231427" name="com.symo.plantuml.structure.PlantUmlLeftToRightDirection" flags="ng" index="3a4BKG" />
       <concept id="2676948427520082644" name="com.symo.plantuml.structure.PlantUmlActivitySwimlane" flags="ng" index="1dhAMX" />
       <concept id="2676948427518192855" name="com.symo.plantuml.structure.PlantUmlActivityBreak" flags="ng" index="1dpkaY" />
@@ -3228,6 +3234,51 @@
         <node concept="TrFLf" id="29l0aZCmuFz" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="29l0aZCmuF$" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZCrhkv">
+    <property role="TrG5h" value="_063_deployment_diagram_ports" />
+    <node concept="34eGC4" id="29l0aZCrhkw" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="deployment ports" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZCrhk$" role="1pqCzW" />
+      <node concept="34eGC3" id="29l0aZCrhk_" role="1pqCzW">
+        <property role="TrG5h" value="Gateway" />
+        <node concept="3a3KuZ" id="29l0aZCrhkA" role="34Inl6">
+          <property role="TrG5h" value="in1" />
+          <property role="3a3KuW" value="29l0aZCmwsa/PORT_IN" />
+        </node>
+        <node concept="3a3KuZ" id="29l0aZCrhkB" role="34Inl6">
+          <property role="TrG5h" value="out1" />
+          <property role="3a3KuW" value="29l0aZCmwsb/PORT_OUT" />
+        </node>
+      </node>
+      <node concept="34eGC3" id="29l0aZCrhkC" role="1pqCzW">
+        <property role="TrG5h" value="Client" />
+      </node>
+      <node concept="34eGC3" id="29l0aZCrhkD" role="1pqCzW">
+        <property role="TrG5h" value="Backend" />
+      </node>
+      <node concept="34eGC1" id="29l0aZCrhkE" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZCrhkG" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZCrhkC" resolve="Client" />
+        </node>
+        <node concept="3a3KuQ" id="29l0aZCrhkH" role="1pvUZs">
+          <ref role="3a3KuO" node="29l0aZCrhkA" resolve="in1" />
+        </node>
+        <node concept="TrFLf" id="29l0aZCrhkI" role="S$pns" />
+      </node>
+      <node concept="34eGC1" id="29l0aZCrhkJ" role="1pqCzW">
+        <node concept="3a3KuQ" id="29l0aZCrhkL" role="1pvUZv">
+          <ref role="3a3KuO" node="29l0aZCrhkB" resolve="out1" />
+        </node>
+        <node concept="34Inl7" id="29l0aZCrhkM" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZCrhkD" resolve="Backend" />
+        </node>
+        <node concept="TrFLf" id="29l0aZCrhkN" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZCrhkO" role="1pqCzW" />
     </node>
   </node>
 </model>

@@ -2539,5 +2539,61 @@
       <ref role="PrY4T" node="29l0aZArWEJ" resolve="IPlantUmlDeploymentDiagramContent" />
     </node>
   </node>
+  <node concept="25R3W" id="29l0aZCmws7">
+    <property role="3F6X1D" value="2473884325827446535" />
+    <property role="TrG5h" value="EPlantUmlPortKind" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1H5jkz" node="29l0aZCmws9" />
+    <node concept="25R33" id="29l0aZCmws9" role="25R1y">
+      <property role="3tVfz5" value="2473884325827446537" />
+      <property role="TrG5h" value="PORT" />
+      <property role="1L1pqM" value="port" />
+    </node>
+    <node concept="25R33" id="29l0aZCmwsa" role="25R1y">
+      <property role="3tVfz5" value="2473884325827446538" />
+      <property role="TrG5h" value="PORT_IN" />
+      <property role="1L1pqM" value="portin" />
+    </node>
+    <node concept="25R33" id="29l0aZCmwsb" role="25R1y">
+      <property role="3tVfz5" value="2473884325827446539" />
+      <property role="TrG5h" value="PORT_OUT" />
+      <property role="1L1pqM" value="portout" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZCmwsg">
+    <property role="EcuMT" value="2473884325827446544" />
+    <property role="TrG5h" value="DeploymentPort" />
+    <property role="R4oN_" value="a named connection point (port/portin/portout) declared inside a deployment node" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="29l0aZCmwsh" role="PzmwI">
+      <ref role="PrY4T" node="6CyxyHi9vWZ" resolve="INamedElementWithLongDescription" />
+    </node>
+    <node concept="PrWs8" id="29l0aZCmwsi" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZArWEJ" resolve="IPlantUmlDeploymentDiagramContent" />
+    </node>
+    <node concept="1TJgyi" id="29l0aZCmwsj" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325827446547" />
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="29l0aZCmws7" resolve="EPlantUmlPortKind" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZCmwsp">
+    <property role="EcuMT" value="2473884325827446553" />
+    <property role="TrG5h" value="DeploymentPortRef" />
+    <property role="R4oN_" value="a reference to a deployment port, used as a relationship endpoint" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="29l0aZCmwsq" role="PzmwI">
+      <ref role="PrY4T" node="1I7wo92Y2Ts" resolve="IChannelEndpoint" />
+    </node>
+    <node concept="1TJgyj" id="29l0aZCmwsr" role="1TKVEi">
+      <property role="IQ2ns" value="2473884325827446555" />
+      <property role="20kJfa" value="port" />
+      <property role="TrG5h" value="port" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="29l0aZCmwsg" resolve="DeploymentPort" />
+    </node>
+  </node>
 </model>
 

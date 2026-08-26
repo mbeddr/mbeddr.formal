@@ -4879,5 +4879,32 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="29l0aZCmwuU">
+    <property role="TrG5h" value="DeploymentPortRef_Editor" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1XX52x" to="udwj:29l0aZCmwsp" resolve="DeploymentPortRef" />
+    <node concept="1iCGBv" id="29l0aZCmwuW" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:29l0aZCmwsr" resolve="port" />
+      <node concept="1sVBvm" id="29l0aZCmwuZ" role="1sWHZn">
+        <node concept="3F0A7n" id="29l0aZCmwv1" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="29l0aZCm_wr">
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1XX52x" to="udwj:29l0aZCmwsg" />
+    <node concept="3EZMnI" id="29l0aZCm_wG" role="2wV5jI">
+      <node concept="3F0A7n" id="29l0aZCm_wH" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZCmwsj" resolve="kind" />
+      </node>
+      <node concept="3F0A7n" id="29l0aZCm_wI" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="l2Vlx" id="29l0aZCm_wJ" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

@@ -436,5 +436,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="29l0aZCm_wM">
+    <property role="TrG5h" value="DeploymentPortRef_Constraints" />
+    <ref role="1M2myG" to="udwj:29l0aZCmwsp" resolve="DeploymentPortRef" />
+    <node concept="1N5Pfh" id="29l0aZCm_wN" role="1Mr941">
+      <ref role="1N5Vy1" to="udwj:29l0aZCmwsr" resolve="port" />
+      <node concept="1dDu$B" id="29l0aZCm_wO" role="1N6uqs">
+        <ref role="1dDu$A" to="udwj:29l0aZCmwsg" resolve="DeploymentPort" />
+      </node>
+    </node>
+  </node>
 </model>
 
