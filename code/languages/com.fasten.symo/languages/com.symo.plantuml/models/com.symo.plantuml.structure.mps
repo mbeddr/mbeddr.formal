@@ -2528,5 +2528,16 @@
       <ref role="PrY4T" node="1I7wo92Y2Ts" resolve="IChannelEndpoint" />
     </node>
   </node>
+  <node concept="1TIwiD" id="29l0aZChRM3">
+    <property role="EcuMT" value="2473884325826231427" />
+    <property role="TrG5h" value="PlantUmlLeftToRightDirection" />
+    <property role="34LRSv" value="left to right direction" />
+    <property role="R4oN_" value="switch this diagram's layout to left-to-right (PlantUML default is top-to-bottom)" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="29l0aZChRM4" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZArWEJ" resolve="IPlantUmlDeploymentDiagramContent" />
+    </node>
+  </node>
 </model>
 

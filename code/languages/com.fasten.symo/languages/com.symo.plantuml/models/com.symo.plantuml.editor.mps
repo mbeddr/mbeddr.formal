@@ -4869,5 +4869,15 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="29l0aZChRMp">
+    <property role="TrG5h" value="PlantUmlLeftToRightDirection_Editor" />
+    <property role="3GE5qa" value="diagram.uml.deployment" />
+    <ref role="1XX52x" to="udwj:29l0aZChRM3" resolve="PlantUmlLeftToRightDirection" />
+    <node concept="3F0ifn" id="29l0aZChRMr" role="2wV5jI">
+      <node concept="VPxyj" id="29l0aZChRMs" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
 </model>
 

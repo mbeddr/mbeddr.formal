@@ -150,6 +150,7 @@
       <concept id="8400506447496619781" name="com.symo.plantuml.structure.PackageDeclaration" flags="ng" index="14ZFWu">
         <child id="8400506447496650874" name="content" index="14Zzxx" />
       </concept>
+      <concept id="2473884325826231427" name="com.symo.plantuml.structure.PlantUmlLeftToRightDirection" flags="ng" index="3a4BKG" />
       <concept id="2676948427520082644" name="com.symo.plantuml.structure.PlantUmlActivitySwimlane" flags="ng" index="1dhAMX" />
       <concept id="2676948427518192855" name="com.symo.plantuml.structure.PlantUmlActivityBreak" flags="ng" index="1dpkaY" />
       <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
@@ -3163,6 +3164,70 @@
         <node concept="TrFLf" id="29l0aZBp09e" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="29l0aZBp08U" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZCmuF5">
+    <property role="TrG5h" value="_062_deployment_diagram_left_to_right" />
+    <node concept="34eGC4" id="29l0aZCmuF6" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="deployment left to right" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZCmuFa" role="1pqCzW" />
+      <node concept="3a4BKG" id="29l0aZCmws5" role="1pqCzW" />
+      <node concept="34eGC3" id="29l0aZCmuFc" role="1pqCzW">
+        <property role="TrG5h" value="LoadBalancer" />
+        <property role="2ywBW2" value="lb" />
+      </node>
+      <node concept="34eGC3" id="29l0aZCmuFd" role="1pqCzW">
+        <property role="TrG5h" value="AppServer1" />
+        <property role="2ywBW2" value="app1" />
+      </node>
+      <node concept="34eGC3" id="29l0aZCmuFe" role="1pqCzW">
+        <property role="TrG5h" value="AppServer2" />
+        <property role="2ywBW2" value="app2" />
+      </node>
+      <node concept="34eGC3" id="29l0aZCmuFf" role="1pqCzW">
+        <property role="34eGCv" value="3uGGyjSz8A_/DATABASE" />
+        <property role="TrG5h" value="Database" />
+        <property role="2ywBW2" value="db" />
+      </node>
+      <node concept="34eGC1" id="29l0aZCmuFg" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZCmuFi" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZCmuFc" resolve="LoadBalancer" />
+        </node>
+        <node concept="34Inl7" id="29l0aZCmuFj" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZCmuFd" resolve="AppServer1" />
+        </node>
+        <node concept="TrFLf" id="29l0aZCmuFk" role="S$pns" />
+      </node>
+      <node concept="34eGC1" id="29l0aZCmuFl" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZCmuFn" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZCmuFc" resolve="LoadBalancer" />
+        </node>
+        <node concept="34Inl7" id="29l0aZCmuFo" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZCmuFe" resolve="AppServer2" />
+        </node>
+        <node concept="TrFLf" id="29l0aZCmuFp" role="S$pns" />
+      </node>
+      <node concept="34eGC1" id="29l0aZCmuFq" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZCmuFs" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZCmuFd" resolve="AppServer1" />
+        </node>
+        <node concept="34Inl7" id="29l0aZCmuFt" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZCmuFf" resolve="Database" />
+        </node>
+        <node concept="TrFLf" id="29l0aZCmuFu" role="S$pns" />
+      </node>
+      <node concept="34eGC1" id="29l0aZCmuFv" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZCmuFx" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZCmuFe" resolve="AppServer2" />
+        </node>
+        <node concept="34Inl7" id="29l0aZCmuFy" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZCmuFf" resolve="Database" />
+        </node>
+        <node concept="TrFLf" id="29l0aZCmuFz" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZCmuF$" role="1pqCzW" />
     </node>
   </node>
 </model>
