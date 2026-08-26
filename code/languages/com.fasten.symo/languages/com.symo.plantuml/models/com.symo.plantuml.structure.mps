@@ -2685,5 +2685,37 @@
     <property role="3GE5qa" value="diagram.uml.class" />
     <ref role="1TJDcQ" node="7xI8QH0ZYAn" resolve="LinkTypeBase" />
   </node>
+  <node concept="1TIwiD" id="29l0aZCXZQb">
+    <property role="EcuMT" value="2473884325837798795" />
+    <property role="TrG5h" value="CompositionLine" />
+    <property role="34LRSv" value="*--" />
+    <property role="R4oN_" value="a PlantUML class composition relationship (filled diamond)" />
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1TJDcQ" node="7xI8QH0ZYAn" resolve="LinkTypeBase" />
+  </node>
+  <node concept="1TIwiD" id="29l0aZCXZQc">
+    <property role="EcuMT" value="2473884325837798796" />
+    <property role="TrG5h" value="AggregationLine" />
+    <property role="34LRSv" value="o--" />
+    <property role="R4oN_" value="a PlantUML class aggregation relationship (hollow diamond)" />
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1TJDcQ" node="7xI8QH0ZYAn" resolve="LinkTypeBase" />
+  </node>
+  <node concept="1TIwiD" id="29l0aZCXZQd">
+    <property role="EcuMT" value="2473884325837798797" />
+    <property role="TrG5h" value="RealizationLine" />
+    <property role="34LRSv" value="..|&gt;" />
+    <property role="R4oN_" value="a PlantUML interface realization relationship (dashed, hollow triangle)" />
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1TJDcQ" node="7xI8QH0ZYAn" resolve="LinkTypeBase" />
+  </node>
+  <node concept="1TIwiD" id="29l0aZCXZQe">
+    <property role="EcuMT" value="2473884325837798798" />
+    <property role="TrG5h" value="DependencyLine" />
+    <property role="34LRSv" value="..&gt;" />
+    <property role="R4oN_" value="a PlantUML dependency relationship (dashed arrow)" />
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1TJDcQ" node="7xI8QH0ZYAn" resolve="LinkTypeBase" />
+  </node>
 </model>
 

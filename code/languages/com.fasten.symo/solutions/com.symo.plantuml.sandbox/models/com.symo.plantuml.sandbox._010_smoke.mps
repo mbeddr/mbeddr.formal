@@ -165,6 +165,10 @@
       <concept id="2473884325829927094" name="com.symo.plantuml.structure.AssociationLine" flags="ng" index="3aaI0p" />
       <concept id="2473884325829927091" name="com.symo.plantuml.structure.ExtensionLine" flags="ng" index="3aaI0s" />
       <concept id="2473884325829927062" name="com.symo.plantuml.structure.PlantUmlClassDiagram" flags="ng" index="3aaI0T" />
+      <concept id="2473884325837798798" name="com.symo.plantuml.structure.DependencyLine" flags="ng" index="3aCJOx" />
+      <concept id="2473884325837798797" name="com.symo.plantuml.structure.RealizationLine" flags="ng" index="3aCJOy" />
+      <concept id="2473884325837798796" name="com.symo.plantuml.structure.AggregationLine" flags="ng" index="3aCJOz" />
+      <concept id="2473884325837798795" name="com.symo.plantuml.structure.CompositionLine" flags="ng" index="3aCJO$" />
       <concept id="2676948427520082644" name="com.symo.plantuml.structure.PlantUmlActivitySwimlane" flags="ng" index="1dhAMX" />
       <concept id="2676948427518192855" name="com.symo.plantuml.structure.PlantUmlActivityBreak" flags="ng" index="1dpkaY" />
       <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
@@ -3326,6 +3330,76 @@
         </node>
       </node>
       <node concept="1pqCE1" id="29l0aZC$PpT" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZCY5qO">
+    <property role="TrG5h" value="_071_class_diagram_relationships" />
+    <node concept="3aaI0T" id="29l0aZCY5qP" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class relationships" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZCY5qT" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZCY5qU" role="1pqCzW">
+        <property role="TrG5h" value="Flyable" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5qV" role="1pqCzW">
+        <property role="TrG5h" value="Duck" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5qW" role="1pqCzW">
+        <property role="TrG5h" value="House" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5qX" role="1pqCzW">
+        <property role="TrG5h" value="Room" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5qY" role="1pqCzW">
+        <property role="TrG5h" value="Team" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5qZ" role="1pqCzW">
+        <property role="TrG5h" value="Player" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5r0" role="1pqCzW">
+        <property role="TrG5h" value="Service" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5r1" role="1pqCzW">
+        <property role="TrG5h" value="Logger" />
+      </node>
+      <node concept="3aaI00" id="29l0aZCY5r2" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZCY5r4" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZCY5qV" resolve="Duck" />
+        </node>
+        <node concept="3aaI05" id="29l0aZCY5r5" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZCY5qU" resolve="Flyable" />
+        </node>
+        <node concept="3aCJOy" id="29l0aZCY5r6" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZCY5r7" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZCY5r9" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZCY5qW" resolve="House" />
+        </node>
+        <node concept="3aaI05" id="29l0aZCY5ra" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZCY5qX" resolve="Room" />
+        </node>
+        <node concept="3aCJO$" id="29l0aZCY5rb" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZCY5rc" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZCY5re" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZCY5qY" resolve="Team" />
+        </node>
+        <node concept="3aaI05" id="29l0aZCY5rf" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZCY5qZ" resolve="Player" />
+        </node>
+        <node concept="3aCJOz" id="29l0aZCY5rg" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZCY5rh" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZCY5rj" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZCY5r0" resolve="Service" />
+        </node>
+        <node concept="3aaI05" id="29l0aZCY5rk" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZCY5r1" resolve="Logger" />
+        </node>
+        <node concept="3aCJOx" id="29l0aZCY5rl" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZCY5rm" role="1pqCzW" />
     </node>
   </node>
 </model>
