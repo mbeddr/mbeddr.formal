@@ -157,7 +157,10 @@
         <property id="2473884325827446547" name="kind" index="3a3KuW" />
       </concept>
       <concept id="2473884325826231427" name="com.symo.plantuml.structure.PlantUmlLeftToRightDirection" flags="ng" index="3a4BKG" />
-      <concept id="2473884325829927087" name="com.symo.plantuml.structure.PlantUmlClassLink" flags="ng" index="3aaI00" />
+      <concept id="2473884325829927087" name="com.symo.plantuml.structure.PlantUmlClassLink" flags="ng" index="3aaI00">
+        <property id="2473884325839153334" name="targetMultiplicity" index="3bmqwp" />
+        <property id="2473884325839153329" name="sourceMultiplicity" index="3bmqwu" />
+      </concept>
       <concept id="2473884325829927082" name="com.symo.plantuml.structure.ClassRef" flags="ng" index="3aaI05">
         <reference id="2473884325829927084" name="class" index="3aaI03" />
       </concept>
@@ -3432,6 +3435,51 @@
         </node>
       </node>
       <node concept="1pqCE1" id="29l0aZD39zm" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZDiNQq">
+    <property role="TrG5h" value="_073_class_diagram_multiplicity" />
+    <node concept="3aaI0T" id="29l0aZDiNQr" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class multiplicity" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZDiNQv" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZDiNQw" role="1pqCzW">
+        <property role="TrG5h" value="Order" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZDiNQx" role="1pqCzW">
+        <property role="TrG5h" value="OrderLine" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZDiNQy" role="1pqCzW">
+        <property role="TrG5h" value="Student" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZDiNQz" role="1pqCzW">
+        <property role="TrG5h" value="Course" />
+      </node>
+      <node concept="3aaI00" id="29l0aZDiNQ$" role="1pqCzW">
+        <property role="3bmqwu" value="1" />
+        <property role="3bmqwp" value="many" />
+        <node concept="3aaI05" id="29l0aZDiNQA" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZDiNQw" resolve="Order" />
+        </node>
+        <node concept="3aaI05" id="29l0aZDiNQB" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZDiNQx" resolve="OrderLine" />
+        </node>
+        <node concept="3aCJO$" id="29l0aZDiNQC" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZDiNQD" role="1pqCzW">
+        <property role="3bmqwu" value="0..*" />
+        <property role="3bmqwp" value="1..*" />
+        <property role="1pvUZN" value="enrolls" />
+        <node concept="3aaI05" id="29l0aZDiNQF" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZDiNQy" resolve="Student" />
+        </node>
+        <node concept="3aaI05" id="29l0aZDiNQG" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZDiNQz" resolve="Course" />
+        </node>
+        <node concept="3aaI0p" id="29l0aZDiNQH" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZDiNQI" role="1pqCzW" />
     </node>
   </node>
 </model>

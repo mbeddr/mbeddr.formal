@@ -2673,6 +2673,16 @@
     <node concept="PrWs8" id="29l0aZCvY2K" role="PzmwI">
       <ref role="PrY4T" node="29l0aZCvY2f" resolve="IPlantUmlClassDiagramContent" />
     </node>
+    <node concept="1TJgyi" id="29l0aZD3ayL" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325839153329" />
+      <property role="TrG5h" value="sourceMultiplicity" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="29l0aZD3ayQ" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325839153334" />
+      <property role="TrG5h" value="targetMultiplicity" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="29l0aZCvY2N">
     <property role="EcuMT" value="2473884325829927091" />

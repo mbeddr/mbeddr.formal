@@ -5036,5 +5036,73 @@
       <node concept="2iRkQZ" id="29l0aZCw4zu" role="2czzBx" />
     </node>
   </node>
+  <node concept="24kQdi" id="29l0aZDdg9C">
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1XX52x" to="udwj:29l0aZCvY2J" />
+    <node concept="3EZMnI" id="29l0aZDdga$" role="2wV5jI">
+      <node concept="3F1sOY" id="29l0aZDdga_" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:1I7wo92Y2Tt" />
+      </node>
+      <node concept="_tjkj" id="29l0aZDdgaA" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZDdgaC" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZDdgaD" role="3EZMnx">
+            <property role="3F0ifm" value="&quot;" />
+            <node concept="11LMrY" id="29l0aZDdgaE" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F0A7n" id="29l0aZDdgaF" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:29l0aZD3ayL" resolve="sourceMultiplicity" />
+          </node>
+          <node concept="3F0ifn" id="29l0aZDdgaG" role="3EZMnx">
+            <property role="3F0ifm" value="&quot;" />
+            <node concept="11L4FC" id="29l0aZDdgaH" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="29l0aZDdgaI" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="29l0aZDdgaJ" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:7xI8QH0ZVqR" />
+      </node>
+      <node concept="_tjkj" id="29l0aZDdgaK" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZDdgaM" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZDdgaN" role="3EZMnx">
+            <property role="3F0ifm" value="&quot;" />
+            <node concept="11LMrY" id="29l0aZDdgaO" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F0A7n" id="29l0aZDdgaP" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:29l0aZD3ayQ" resolve="targetMultiplicity" />
+          </node>
+          <node concept="3F0ifn" id="29l0aZDdgaQ" role="3EZMnx">
+            <property role="3F0ifm" value="&quot;" />
+            <node concept="11L4FC" id="29l0aZDdgaR" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="29l0aZDdgaS" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="29l0aZDdgaT" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:1I7wo92Y2Tu" />
+      </node>
+      <node concept="_tjkj" id="29l0aZDdgaU" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZDdgaW" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZDdgaX" role="3EZMnx">
+            <property role="3F0ifm" value=":" />
+          </node>
+          <node concept="3F0A7n" id="29l0aZDdgaY" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:1I7wo92Y2TL" resolve="channelName" />
+          </node>
+          <node concept="2iRfu4" id="29l0aZDdgaZ" role="2iSdaV" />
+          <node concept="VPM3Z" id="29l0aZDdgb0" role="3F10Kt" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="29l0aZDdgb1" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
