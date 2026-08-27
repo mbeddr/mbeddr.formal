@@ -5401,5 +5401,139 @@
       <node concept="l2Vlx" id="29l0aZFglEw" role="2iSdaV" />
     </node>
   </node>
+  <node concept="PKFIW" id="29l0aZInBJy">
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <property role="TrG5h" value="PlantUmlTimingDiagramTextualEditorComponent" />
+    <ref role="1XX52x" to="udwj:29l0aZI8q_E" resolve="PlantUmlTimingDiagram" />
+    <node concept="1PE4EZ" id="29l0aZInBJ$" role="1PM95z">
+      <ref role="1PE7su" node="6CyxyHhVZuv" resolve="PlantUmlTextualEditorComponentBase" />
+    </node>
+    <node concept="3F2HdR" id="29l0aZInBJ_" role="2wV5jI">
+      <ref role="1NtTu8" to="udwj:29l0aZI8wwE" resolve="content" />
+      <node concept="4$FPG" id="29l0aZInBJA" role="4_6I_">
+        <node concept="3clFbS" id="29l0aZInBJC" role="2VODD2">
+          <node concept="3clFbF" id="29l0aZInBJD" role="3cqZAp">
+            <node concept="2pJPEk" id="29l0aZInBJF" role="3clFbG">
+              <node concept="2pJPED" id="29l0aZInBJH" role="2pJPEn">
+                <ref role="2pJxaS" to="udwj:6BNnCp_okdH" resolve="PlantUmlEmptyLine" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="29l0aZInBJI" role="2czzBx" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29l0aZInBOY">
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <property role="TrG5h" value="TimingParticipant_Editor" />
+    <ref role="1XX52x" to="udwj:29l0aZI8q_F" resolve="TimingParticipant" />
+    <node concept="3EZMnI" id="29l0aZInBP0" role="2wV5jI">
+      <node concept="3F0A7n" id="29l0aZInBP1" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZI8q_K" resolve="kind" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0A7n" id="29l0aZInBP2" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="29l0aZInBP3" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZInBP5" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZInBP6" role="3EZMnx">
+            <property role="3F0ifm" value="as" />
+          </node>
+          <node concept="3F0A7n" id="29l0aZInBP7" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:6AkCKBb5HKb" resolve="aliasString" />
+          </node>
+          <node concept="2iRfu4" id="29l0aZInBP8" role="2iSdaV" />
+        </node>
+        <node concept="ZYGn8" id="29l0aZInBP9" role="ZWbT9">
+          <node concept="3clFbS" id="29l0aZInBPb" role="2VODD2">
+            <node concept="3clFbF" id="29l0aZInBPc" role="3cqZAp">
+              <node concept="Xl_RD" id="29l0aZInBPe" role="3clFbG">
+                <property role="Xl_RC" value="as" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="29l0aZInBPf" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29l0aZInBRA">
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <property role="TrG5h" value="TimingStateAssignment_Editor" />
+    <ref role="1XX52x" to="udwj:29l0aZI8q_G" resolve="TimingStateAssignment" />
+    <node concept="3EZMnI" id="29l0aZInBRC" role="2wV5jI">
+      <node concept="1iCGBv" id="29l0aZInBRQ" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZI8q_P" resolve="participant" />
+        <node concept="1sVBvm" id="29l0aZInBRZ" role="1sWHZn">
+          <node concept="1HlG4h" id="29l0aZInBS1" role="2wV5jI">
+            <node concept="1HfYo3" id="29l0aZInBS5" role="1HlULh">
+              <node concept="3TQlhw" id="29l0aZInBS8" role="1Hhtcw">
+                <node concept="3clFbS" id="29l0aZInBSa" role="2VODD2">
+                  <node concept="3clFbJ" id="29l0aZInBSb" role="3cqZAp">
+                    <node concept="2OqwBi" id="29l0aZInBSe" role="3clFbw">
+                      <node concept="2OqwBi" id="29l0aZInBSh" role="2Oq$k0">
+                        <node concept="pncrf" id="29l0aZInBSk" role="2Oq$k0" />
+                        <node concept="3TrcHB" id="29l0aZInBSl" role="2OqNvi">
+                          <ref role="3TsBF5" to="udwj:6AkCKBb5HKb" resolve="aliasString" />
+                        </node>
+                      </node>
+                      <node concept="17RvpY" id="29l0aZInBSm" role="2OqNvi" />
+                    </node>
+                    <node concept="3clFbS" id="29l0aZInBSn" role="3clFbx">
+                      <node concept="3cpWs6" id="29l0aZInBSo" role="3cqZAp">
+                        <node concept="2OqwBi" id="29l0aZInBSp" role="3cqZAk">
+                          <node concept="pncrf" id="29l0aZInBSs" role="2Oq$k0" />
+                          <node concept="3TrcHB" id="29l0aZInBSt" role="2OqNvi">
+                            <ref role="3TsBF5" to="udwj:6AkCKBb5HKb" resolve="aliasString" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3clFbF" id="29l0aZInBSu" role="3cqZAp">
+                    <node concept="2OqwBi" id="29l0aZInBSw" role="3clFbG">
+                      <node concept="pncrf" id="29l0aZInBSz" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="29l0aZInBS$" role="2OqNvi">
+                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="29l0aZInBRE" role="3EZMnx">
+        <property role="3F0ifm" value="is" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0A7n" id="29l0aZInBRF" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZI8q_O" resolve="state" />
+      </node>
+      <node concept="2iRfu4" id="29l0aZInBRG" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="29l0aZInCag">
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <property role="TrG5h" value="TimeMark_Editor" />
+    <ref role="1XX52x" to="udwj:29l0aZI8q_H" resolve="TimeMark" />
+    <node concept="3EZMnI" id="29l0aZInCai" role="2wV5jI">
+      <node concept="3F0ifn" id="29l0aZInCaj" role="3EZMnx">
+        <property role="3F0ifm" value="@" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0A7n" id="29l0aZInCak" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZI8q_R" resolve="time" />
+      </node>
+      <node concept="3F2HdR" id="29l0aZInCal" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZI8q_S" resolve="assignments" />
+        <node concept="2iRkQZ" id="29l0aZInCam" role="2czzBx" />
+      </node>
+      <node concept="2iRkQZ" id="29l0aZInCan" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

@@ -200,6 +200,18 @@
       <concept id="2473884325852352303" name="com.symo.plantuml.structure.MethodParameter" flags="ng" index="3bwKY0">
         <property id="2473884325852352304" name="type" index="3bwKYv" />
       </concept>
+      <concept id="2473884325924415853" name="com.symo.plantuml.structure.TimeMark" flags="ng" index="3ctaB2">
+        <property id="2473884325924415863" name="time" index="3ctaBo" />
+        <child id="2473884325924415864" name="assignments" index="3ctaBn" />
+      </concept>
+      <concept id="2473884325924415852" name="com.symo.plantuml.structure.TimingStateAssignment" flags="ng" index="3ctaB3">
+        <property id="2473884325924415860" name="state" index="3ctaBr" />
+        <reference id="2473884325924415861" name="participant" index="3ctaBq" />
+      </concept>
+      <concept id="2473884325924415851" name="com.symo.plantuml.structure.TimingParticipant" flags="ng" index="3ctaB4">
+        <property id="2473884325924415856" name="kind" index="3ctaBv" />
+      </concept>
+      <concept id="2473884325924415850" name="com.symo.plantuml.structure.PlantUmlTimingDiagram" flags="ng" index="3ctaB5" />
       <concept id="2676948427520082644" name="com.symo.plantuml.structure.PlantUmlActivitySwimlane" flags="ng" index="1dhAMX" />
       <concept id="2676948427518192855" name="com.symo.plantuml.structure.PlantUmlActivityBreak" flags="ng" index="1dpkaY" />
       <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
@@ -3771,6 +3783,51 @@
         <property role="TrG5h" value="Plain" />
       </node>
       <node concept="1pqCE1" id="29l0aZI0QSv" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZIBaKC">
+    <property role="TrG5h" value="_080_timing_diagram_basic" />
+    <node concept="3ctaB5" id="29l0aZIBaKD" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing basic" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZIBaKH" role="1pqCzW" />
+      <node concept="3ctaB4" id="29l0aZIBaKI" role="1pqCzW">
+        <property role="TrG5h" value="Foo" />
+        <property role="2ywBW2" value="A" />
+      </node>
+      <node concept="3ctaB4" id="29l0aZIBaKJ" role="1pqCzW">
+        <property role="TrG5h" value="Bar" />
+        <property role="2ywBW2" value="B" />
+        <property role="3ctaBv" value="2UqZwjNgH0Z/CONCISE" />
+      </node>
+      <node concept="3ctaB3" id="29l0aZIBaKL" role="1pqCzW">
+        <property role="3ctaBr" value="Idle" />
+        <ref role="3ctaBq" node="29l0aZIBaKI" resolve="Foo" />
+      </node>
+      <node concept="3ctaB3" id="29l0aZIBaKM" role="1pqCzW">
+        <property role="3ctaBr" value="Off" />
+        <ref role="3ctaBq" node="29l0aZIBaKJ" resolve="Bar" />
+      </node>
+      <node concept="3ctaB2" id="29l0aZIBaKN" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="29l0aZIBaKO" role="3ctaBn">
+          <property role="3ctaBr" value="Running" />
+          <ref role="3ctaBq" node="29l0aZIBaKI" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="29l0aZIBaKP" role="1pqCzW">
+        <property role="3ctaBo" value="200" />
+        <node concept="3ctaB3" id="29l0aZIBaKQ" role="3ctaBn">
+          <property role="3ctaBr" value="Idle" />
+          <ref role="3ctaBq" node="29l0aZIBaKI" resolve="Foo" />
+        </node>
+        <node concept="3ctaB3" id="29l0aZIBaKR" role="3ctaBn">
+          <property role="3ctaBr" value="On" />
+          <ref role="3ctaBq" node="29l0aZIBaKJ" resolve="Bar" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="29l0aZIBaKK" role="1pqCzW" />
     </node>
   </node>
 </model>

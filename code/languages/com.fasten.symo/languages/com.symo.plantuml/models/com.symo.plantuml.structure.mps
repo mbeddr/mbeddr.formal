@@ -1162,6 +1162,7 @@
     <property role="EcuMT" value="478512667928725662" />
     <property role="TrG5h" value="PlainTextSequenceDiagramMessagePayload" />
     <property role="34LRSv" value="plain text" />
+    <property role="3GE5qa" value="diagram.uml.sequence" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="q$1bLSqCyv" role="1TKVEl">
       <property role="IQ2nx" value="478512667928725663" />
@@ -2775,6 +2776,7 @@
   <node concept="25R3W" id="29l0aZDiOPe">
     <property role="3F6X1D" value="2473884325843258702" />
     <property role="TrG5h" value="EPlantUmlVisibility" />
+    <property role="3GE5qa" value="diagram.uml.component" />
     <ref role="1H5jkz" node="29l0aZDiOPh" resolve="PUBLIC" />
     <node concept="25R33" id="29l0aZDiOPg" role="25R1y">
       <property role="3tVfz5" value="2751499793835506944" />
@@ -2897,6 +2899,7 @@
   <node concept="25R3W" id="29l0aZEvaY_">
     <property role="3F6X1D" value="2473884325863272357" />
     <property role="TrG5h" value="EPlantUmlClassKind" />
+    <property role="3GE5qa" value="diagram.uml.component" />
     <ref role="1H5jkz" node="29l0aZEvaYB" resolve="CLASS" />
     <node concept="25R33" id="29l0aZEvaYB" role="25R1y">
       <property role="3tVfz5" value="8001557693371047628" />
@@ -2936,6 +2939,7 @@
   <node concept="25R3W" id="29l0aZFgePN">
     <property role="3F6X1D" value="2473884325876133235" />
     <property role="TrG5h" value="EPlantUmlPackageKind" />
+    <property role="3GE5qa" value="diagram.uml.class" />
     <ref role="1H5jkz" node="29l0aZFgePP" resolve="PACKAGE" />
     <node concept="25R33" id="29l0aZFgePP" role="25R1y">
       <property role="3tVfz5" value="219413291457489718" />
@@ -2977,6 +2981,7 @@
   <node concept="25R3W" id="29l0aZGyUJv">
     <property role="3F6X1D" value="2473884325897808863" />
     <property role="TrG5h" value="EPlantUmlLineStyle" />
+    <property role="3GE5qa" value="diagram.uml.class" />
     <ref role="1H5jkz" node="29l0aZGyUJx" resolve="NONE" />
     <node concept="25R33" id="29l0aZGyUJx" role="25R1y">
       <property role="3tVfz5" value="3372609131832995724" />
@@ -3001,6 +3006,117 @@
       <property role="3tVfz5" value="2872944061024011149" />
       <property role="TrG5h" value="HIDDEN" />
       <property role="1L1pqM" value="hidden" />
+    </node>
+  </node>
+  <node concept="25R3W" id="29l0aZI8q_w">
+    <property role="3F6X1D" value="2473884325924415840" />
+    <property role="TrG5h" value="EPlantUmlTimingParticipantKind" />
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <ref role="1H5jkz" node="29l0aZI8q_y" resolve="ROBUST" />
+    <node concept="25R33" id="29l0aZI8q_y" role="25R1y">
+      <property role="3tVfz5" value="4390080202077712001" />
+      <property role="TrG5h" value="ROBUST" />
+      <property role="1L1pqM" value="robust" />
+    </node>
+    <node concept="25R33" id="29l0aZI8q_z" role="25R1y">
+      <property role="3tVfz5" value="3358275769372692543" />
+      <property role="TrG5h" value="CONCISE" />
+      <property role="1L1pqM" value="concise" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZI8q_E">
+    <property role="EcuMT" value="2473884325924415850" />
+    <property role="TrG5h" value="PlantUmlTimingDiagram" />
+    <property role="34LRSv" value="timing diagram" />
+    <property role="R4oN_" value="a PlantUML timing diagram" />
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <ref role="1TJDcQ" node="1I7wo92Vg_W" resolve="PlantUmlDiagramBase" />
+    <node concept="PrWs8" id="29l0aZI8q_J" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="29l0aZI8wwE" role="1TKVEi">
+      <property role="IQ2ns" value="2473884325924440106" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="TrG5h" value="content" />
+      <ref role="20lvS9" node="29l0aZI8q_I" resolve="IPlantUmlTimingDiagramContent" />
+      <ref role="20ksaX" node="1I7wo92Vg_Y" resolve="content" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZI8q_F">
+    <property role="EcuMT" value="2473884325924415851" />
+    <property role="TrG5h" value="TimingParticipant" />
+    <property role="34LRSv" value="timing participant" />
+    <property role="R4oN_" value="a lane in a PlantUML timing diagram (robust or concise)" />
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="29l0aZI8q_K" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325924415856" />
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="29l0aZI8q_w" resolve="EPlantUmlTimingParticipantKind" />
+    </node>
+    <node concept="PrWs8" id="29l0aZI8q_L" role="PzmwI">
+      <ref role="PrY4T" node="6CyxyHi9vWZ" resolve="INamedElementWithLongDescription" />
+    </node>
+    <node concept="PrWs8" id="29l0aZI8q_M" role="PzmwI">
+      <ref role="PrY4T" node="6AkCKBb5_x6" resolve="IHaveAlias" />
+    </node>
+    <node concept="PrWs8" id="29l0aZI8q_N" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZI8q_I" resolve="IPlantUmlTimingDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZI8q_G">
+    <property role="EcuMT" value="2473884325924415852" />
+    <property role="TrG5h" value="TimingStateAssignment" />
+    <property role="34LRSv" value="is" />
+    <property role="R4oN_" value="sets a timing participant's state (at time 0, or inside a TimeMark)" />
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="29l0aZI8q_O" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325924415860" />
+      <property role="TrG5h" value="state" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="29l0aZI8q_P" role="1TKVEi">
+      <property role="IQ2ns" value="2473884325924415861" />
+      <property role="20kJfa" value="participant" />
+      <ref role="20lvS9" node="29l0aZI8q_F" resolve="TimingParticipant" />
+    </node>
+    <node concept="PrWs8" id="29l0aZI8q_Q" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZI8q_I" resolve="IPlantUmlTimingDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="29l0aZI8q_H">
+    <property role="EcuMT" value="2473884325924415853" />
+    <property role="TrG5h" value="TimeMark" />
+    <property role="34LRSv" value="@" />
+    <property role="R4oN_" value="a @&lt;time&gt; marker introducing one or more state changes" />
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="29l0aZI8q_R" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325924415863" />
+      <property role="TrG5h" value="time" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="29l0aZI8q_S" role="1TKVEi">
+      <property role="IQ2ns" value="2473884325924415864" />
+      <property role="20kJfa" value="assignments" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="29l0aZI8q_G" resolve="TimingStateAssignment" />
+    </node>
+    <node concept="PrWs8" id="29l0aZI8q_T" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZI8q_I" resolve="IPlantUmlTimingDiagramContent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="29l0aZI8q_I">
+    <property role="EcuMT" value="2473884325924415854" />
+    <property role="TrG5h" value="IPlantUmlTimingDiagramContent" />
+    <property role="R4oN_" value="Marker interface for nodes that can appear inside a PlantUML timing diagram" />
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <node concept="PrWs8" id="29l0aZI8q_U" role="PrDN$">
+      <ref role="PrY4T" node="1I7wo92Vg_Z" resolve="IPlantUmlDiagramContent" />
     </node>
   </node>
 </model>
