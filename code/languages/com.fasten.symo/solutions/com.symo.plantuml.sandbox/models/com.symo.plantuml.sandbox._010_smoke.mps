@@ -202,6 +202,7 @@
       </concept>
       <concept id="2473884325924415853" name="com.symo.plantuml.structure.TimeMark" flags="ng" index="3ctaB2">
         <property id="2473884325924415863" name="time" index="3ctaBo" />
+        <property id="4301536924910768341" name="relative" index="3meB7v" />
         <child id="2473884325924415864" name="assignments" index="3ctaBn" />
       </concept>
       <concept id="2473884325924415852" name="com.symo.plantuml.structure.TimingStateAssignment" flags="ng" index="3ctaB3">
@@ -4008,43 +4009,84 @@
       </node>
       <node concept="3ctaB3" id="3IM8gFHy47D" role="1pqCzW">
         <property role="3ctaBr" value="0" />
-        <ref role="3ctaBq" node="3IM8gFHy47A" />
+        <ref role="3ctaBq" node="3IM8gFHy47A" resolve="Clock" />
       </node>
       <node concept="3ctaB3" id="3IM8gFHy47E" role="1pqCzW">
         <property role="3ctaBr" value="Idle" />
-        <ref role="3ctaBq" node="3IM8gFHy47B" />
+        <ref role="3ctaBq" node="3IM8gFHy47B" resolve="Data" />
       </node>
       <node concept="3ctaB3" id="3IM8gFHy47F" role="1pqCzW">
         <property role="3ctaBr" value="Ready" />
-        <ref role="3ctaBq" node="3IM8gFHy47C" />
+        <ref role="3ctaBq" node="3IM8gFHy47C" resolve="CPU" />
       </node>
       <node concept="3ctaB2" id="3IM8gFHy47G" role="1pqCzW">
         <property role="3ctaBo" value="100" />
         <node concept="3ctaB3" id="3IM8gFHy47H" role="3ctaBn">
           <property role="3ctaBr" value="1" />
-          <ref role="3ctaBq" node="3IM8gFHy47A" />
+          <ref role="3ctaBq" node="3IM8gFHy47A" resolve="Clock" />
         </node>
         <node concept="3ctaB3" id="3IM8gFHy47I" role="3ctaBn">
           <property role="3ctaBr" value="Active" />
-          <ref role="3ctaBq" node="3IM8gFHy47B" />
+          <ref role="3ctaBq" node="3IM8gFHy47B" resolve="Data" />
         </node>
       </node>
       <node concept="3ctaB2" id="3IM8gFHy47J" role="1pqCzW">
         <property role="3ctaBo" value="200" />
         <node concept="3ctaB3" id="3IM8gFHy47K" role="3ctaBn">
           <property role="3ctaBr" value="0" />
-          <ref role="3ctaBq" node="3IM8gFHy47A" />
+          <ref role="3ctaBq" node="3IM8gFHy47A" resolve="Clock" />
         </node>
         <node concept="3ctaB3" id="3IM8gFHy47L" role="3ctaBn">
           <property role="3ctaBr" value="Idle" />
-          <ref role="3ctaBq" node="3IM8gFHy47B" />
+          <ref role="3ctaBq" node="3IM8gFHy47B" resolve="Data" />
         </node>
         <node concept="3ctaB3" id="3IM8gFHy47M" role="3ctaBn">
           <property role="3ctaBr" value="Busy" />
-          <ref role="3ctaBq" node="3IM8gFHy47C" />
+          <ref role="3ctaBq" node="3IM8gFHy47C" resolve="CPU" />
         </node>
       </node>
       <node concept="1pqCE1" id="3IM8gFHy47N" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="3IM8gFHE3u2">
+    <property role="TrG5h" value="_085_timing_diagram_relative_time" />
+    <node concept="3ctaB5" id="3IM8gFHE3u3" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing relative time" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="3IM8gFHE3u7" role="1pqCzW" />
+      <node concept="3ctaB4" id="3IM8gFHE3u8" role="1pqCzW">
+        <property role="TrG5h" value="Foo" />
+        <property role="2ywBW2" value="A" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFHE3u9" role="1pqCzW">
+        <property role="3ctaBr" value="Idle" />
+        <ref role="3ctaBq" node="3IM8gFHE3u8" resolve="Foo" />
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHE3ua" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="3IM8gFHE3ub" role="3ctaBn">
+          <property role="3ctaBr" value="Running" />
+          <ref role="3ctaBq" node="3IM8gFHE3u8" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHE3uc" role="1pqCzW">
+        <property role="3ctaBo" value="50" />
+        <property role="3meB7v" value="true" />
+        <node concept="3ctaB3" id="3IM8gFHE3ud" role="3ctaBn">
+          <property role="3ctaBr" value="Idle" />
+          <ref role="3ctaBq" node="3IM8gFHE3u8" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHE3V2" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <property role="3meB7v" value="true" />
+        <node concept="3ctaB3" id="3IM8gFHE3V5" role="3ctaBn">
+          <property role="3ctaBr" value="Running" />
+          <ref role="3ctaBq" node="3IM8gFHE3u8" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="3IM8gFHE3ue" role="1pqCzW" />
     </node>
   </node>
 </model>
