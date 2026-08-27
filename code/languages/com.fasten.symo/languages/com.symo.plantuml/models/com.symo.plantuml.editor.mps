@@ -5236,5 +5236,38 @@
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
   </node>
+  <node concept="24kQdi" id="29l0aZFglEk">
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1XX52x" to="udwj:29l0aZFgePU" resolve="PlantUmlPackage" />
+    <node concept="3EZMnI" id="29l0aZFglEm" role="2wV5jI">
+      <node concept="3F0A7n" id="29l0aZFglEn" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZFgePV" resolve="kind" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0A7n" id="29l0aZFglEo" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="29l0aZFglEp" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+      </node>
+      <node concept="3F2HdR" id="29l0aZFglEq" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:29l0aZFgePW" />
+        <node concept="2iRkQZ" id="29l0aZFglEr" role="2czzBx" />
+        <node concept="pVoyu" id="29l0aZFglEs" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="29l0aZFglEt" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="29l0aZFglEu" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <node concept="pVoyu" id="29l0aZFglEv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="29l0aZFglEw" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

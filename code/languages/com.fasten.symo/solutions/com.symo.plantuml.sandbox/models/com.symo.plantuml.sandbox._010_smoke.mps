@@ -151,6 +151,10 @@
         <child id="8400506447496650874" name="content" index="14Zzxx" />
       </concept>
       <concept id="2473884325863272373" name="com.symo.plantuml.structure.EnumLiteral" flags="ng" index="38aqWq" />
+      <concept id="2473884325876133242" name="com.symo.plantuml.structure.PlantUmlPackage" flags="ng" index="395uRl">
+        <property id="2473884325876133243" name="kind" index="395uRk" />
+        <child id="2473884325876133244" name="content" index="395uRj" />
+      </concept>
       <concept id="2473884325827446553" name="com.symo.plantuml.structure.DeploymentPortRef" flags="ng" index="3a3KuQ">
         <reference id="2473884325827446555" name="port" index="3a3KuO" />
       </concept>
@@ -3618,6 +3622,54 @@
         <node concept="3aCJOy" id="29l0aZELy0k" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="29l0aZELy0l" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZFmwCq">
+    <property role="TrG5h" value="_076_class_diagram_packages" />
+    <node concept="3aaI0T" id="29l0aZFmwCr" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class packages" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZFmwCv" role="1pqCzW" />
+      <node concept="395uRl" id="29l0aZFmwCw" role="1pqCzW">
+        <property role="TrG5h" value="com.example.model" />
+        <node concept="3aaI0f" id="29l0aZFmwCx" role="395uRj">
+          <property role="TrG5h" value="Order" />
+        </node>
+        <node concept="3aaI0f" id="29l0aZFmwCy" role="395uRj">
+          <property role="TrG5h" value="Customer" />
+        </node>
+      </node>
+      <node concept="395uRl" id="29l0aZFmwCz" role="1pqCzW">
+        <property role="TrG5h" value="com.example.service" />
+        <property role="395uRk" value="7TiU5$Oy_en/NAMESPACE" />
+        <node concept="3aaI0f" id="29l0aZFmwC$" role="395uRj">
+          <property role="TrG5h" value="OrderService" />
+        </node>
+      </node>
+      <node concept="395uRl" id="29l0aZFyTfp" role="1pqCzW">
+        <property role="TrG5h" value="dd" />
+        <property role="395uRk" value="7TiU5$Oy_en/NAMESPACE" />
+      </node>
+      <node concept="3aaI00" id="29l0aZFmwC_" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZFmwCB" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZFmwC$" resolve="OrderService" />
+        </node>
+        <node concept="3aaI05" id="29l0aZFmwCC" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZFmwCx" resolve="Order" />
+        </node>
+        <node concept="3aCJOx" id="29l0aZFmwCD" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZFmwCE" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZFmwCG" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZFmwCx" resolve="Order" />
+        </node>
+        <node concept="3aaI05" id="29l0aZFmwCH" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZFmwCy" resolve="Customer" />
+        </node>
+        <node concept="3aaI0p" id="29l0aZFmwCI" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZFmwCJ" role="1pqCzW" />
     </node>
   </node>
 </model>
