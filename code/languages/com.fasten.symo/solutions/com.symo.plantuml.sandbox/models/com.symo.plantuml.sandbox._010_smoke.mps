@@ -3985,5 +3985,67 @@
       <node concept="1pqCE1" id="3IM8gFHa9MK" role="1pqCzW" />
     </node>
   </node>
+  <node concept="1pqNnw" id="3IM8gFHy3C$">
+    <property role="TrG5h" value="_084_timing_diagram_binary" />
+    <node concept="3ctaB5" id="3IM8gFHy47x" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing binary" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="3IM8gFHy47_" role="1pqCzW" />
+      <node concept="3ctaB4" id="3IM8gFHy47A" role="1pqCzW">
+        <property role="TrG5h" value="Clock" />
+        <property role="2ywBW2" value="CLK" />
+        <property role="3ctaBv" value="3IM8gFHq5RG/BINARY" />
+      </node>
+      <node concept="3ctaB4" id="3IM8gFHy47B" role="1pqCzW">
+        <property role="TrG5h" value="Data" />
+        <property role="2ywBW2" value="D" />
+        <property role="3ctaBv" value="2UqZwjNgH0Z/CONCISE" />
+      </node>
+      <node concept="3ctaB4" id="3IM8gFHy47C" role="1pqCzW">
+        <property role="TrG5h" value="CPU" />
+        <property role="2ywBW2" value="C" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFHy47D" role="1pqCzW">
+        <property role="3ctaBr" value="0" />
+        <ref role="3ctaBq" node="3IM8gFHy47A" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFHy47E" role="1pqCzW">
+        <property role="3ctaBr" value="Idle" />
+        <ref role="3ctaBq" node="3IM8gFHy47B" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFHy47F" role="1pqCzW">
+        <property role="3ctaBr" value="Ready" />
+        <ref role="3ctaBq" node="3IM8gFHy47C" />
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHy47G" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="3IM8gFHy47H" role="3ctaBn">
+          <property role="3ctaBr" value="1" />
+          <ref role="3ctaBq" node="3IM8gFHy47A" />
+        </node>
+        <node concept="3ctaB3" id="3IM8gFHy47I" role="3ctaBn">
+          <property role="3ctaBr" value="Active" />
+          <ref role="3ctaBq" node="3IM8gFHy47B" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHy47J" role="1pqCzW">
+        <property role="3ctaBo" value="200" />
+        <node concept="3ctaB3" id="3IM8gFHy47K" role="3ctaBn">
+          <property role="3ctaBr" value="0" />
+          <ref role="3ctaBq" node="3IM8gFHy47A" />
+        </node>
+        <node concept="3ctaB3" id="3IM8gFHy47L" role="3ctaBn">
+          <property role="3ctaBr" value="Idle" />
+          <ref role="3ctaBq" node="3IM8gFHy47B" />
+        </node>
+        <node concept="3ctaB3" id="3IM8gFHy47M" role="3ctaBn">
+          <property role="3ctaBr" value="Busy" />
+          <ref role="3ctaBq" node="3IM8gFHy47C" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="3IM8gFHy47N" role="1pqCzW" />
+    </node>
+  </node>
 </model>
 

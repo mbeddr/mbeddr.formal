@@ -3026,6 +3026,11 @@
       <property role="TrG5h" value="CONCISE" />
       <property role="1L1pqM" value="concise" />
     </node>
+    <node concept="25R33" id="3IM8gFHq5RG" role="25R1y">
+      <property role="3tVfz5" value="4301536924908674540" />
+      <property role="TrG5h" value="BINARY" />
+      <property role="1L1pqM" value="binary" />
+    </node>
   </node>
   <node concept="1TIwiD" id="29l0aZI8q_E">
     <property role="EcuMT" value="2473884325924415850" />
