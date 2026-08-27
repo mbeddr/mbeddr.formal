@@ -474,5 +474,67 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="29l0aZHs4Da">
+    <property role="3GE5qa" value="diagram.uml.class" />
+    <ref role="1M2myG" to="udwj:29l0aZCvY2w" resolve="ClassDeclaration" />
+    <node concept="EnEH3" id="29l0aZHs4Dn" role="1MhHOB">
+      <ref role="EomxK" to="udwj:29l0aZGyUJD" resolve="lineColor" />
+      <node concept="QB0g5" id="29l0aZHs4Do" role="QCWH9">
+        <node concept="3clFbS" id="29l0aZHs4Dq" role="2VODD2">
+          <node concept="3clFbF" id="29l0aZHs4Dr" role="3cqZAp">
+            <node concept="2OqwBi" id="29l0aZHs4Dt" role="3clFbG">
+              <node concept="1Wqviy" id="29l0aZHs4Dw" role="2Oq$k0" />
+              <node concept="liA8E" id="29l0aZHs4Dx" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="29l0aZHs4Dy" role="37wK5m">
+                  <property role="Xl_RC" value="[^ ]*" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="EnEH3" id="29l0aZHs4Dz" role="1MhHOB">
+      <ref role="EomxK" to="udwj:29l0aZGyUJL" resolve="textColor" />
+      <node concept="QB0g5" id="29l0aZHs4D$" role="QCWH9">
+        <node concept="3clFbS" id="29l0aZHs4DA" role="2VODD2">
+          <node concept="3clFbF" id="29l0aZHs4DB" role="3cqZAp">
+            <node concept="2OqwBi" id="29l0aZHs4DD" role="3clFbG">
+              <node concept="1Wqviy" id="29l0aZHs4DG" role="2Oq$k0" />
+              <node concept="liA8E" id="29l0aZHs4DH" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="29l0aZHs4DI" role="37wK5m">
+                  <property role="Xl_RC" value="[^ ]*" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="29l0aZHEGvV">
+    <property role="3GE5qa" value="base" />
+    <ref role="1M2myG" to="udwj:q$1bLTZCXS" resolve="IPlantUmlEntityWithColor" />
+    <node concept="EnEH3" id="29l0aZHEGYc" role="1MhHOB">
+      <ref role="EomxK" to="udwj:q$1bLTZCXT" resolve="color" />
+      <node concept="QB0g5" id="29l0aZHEGYd" role="QCWH9">
+        <node concept="3clFbS" id="29l0aZHEGYe" role="2VODD2">
+          <node concept="3clFbF" id="29l0aZHEGYf" role="3cqZAp">
+            <node concept="2OqwBi" id="29l0aZHEGYg" role="3clFbG">
+              <node concept="1Wqviy" id="29l0aZHEGYh" role="2Oq$k0" />
+              <node concept="liA8E" id="29l0aZHEGYi" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="29l0aZHEGYj" role="37wK5m">
+                  <property role="Xl_RC" value="[^ ]*" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

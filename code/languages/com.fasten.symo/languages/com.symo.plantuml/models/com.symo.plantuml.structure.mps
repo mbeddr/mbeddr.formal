@@ -2658,6 +2658,21 @@
       <property role="TrG5h" value="kind" />
       <ref role="AX2Wp" node="29l0aZEvaY_" resolve="EPlantUmlClassKind" />
     </node>
+    <node concept="1TJgyi" id="29l0aZGyUJD" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325897808873" />
+      <property role="TrG5h" value="lineColor" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="29l0aZGyUJH" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325897808877" />
+      <property role="TrG5h" value="lineStyle" />
+      <ref role="AX2Wp" node="29l0aZGyUJv" resolve="EPlantUmlLineStyle" />
+    </node>
+    <node concept="1TJgyi" id="29l0aZGyUJL" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325897808881" />
+      <property role="TrG5h" value="textColor" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="29l0aZCvY2E">
     <property role="EcuMT" value="2473884325829927082" />
@@ -2952,6 +2967,35 @@
     </node>
     <node concept="PrWs8" id="29l0aZFgePY" role="PzmwI">
       <ref role="PrY4T" node="29l0aZCvY2f" resolve="IPlantUmlClassDiagramContent" />
+    </node>
+  </node>
+  <node concept="25R3W" id="29l0aZGyUJv">
+    <property role="3F6X1D" value="2473884325897808863" />
+    <property role="TrG5h" value="EPlantUmlLineStyle" />
+    <ref role="1H5jkz" node="29l0aZGyUJx" resolve="NONE" />
+    <node concept="25R33" id="29l0aZGyUJx" role="25R1y">
+      <property role="3tVfz5" value="3372609131832995724" />
+      <property role="TrG5h" value="NONE" />
+    </node>
+    <node concept="25R33" id="29l0aZGyUJy" role="25R1y">
+      <property role="3tVfz5" value="3686387733885108605" />
+      <property role="TrG5h" value="DASHED" />
+      <property role="1L1pqM" value="dashed" />
+    </node>
+    <node concept="25R33" id="29l0aZGyUJz" role="25R1y">
+      <property role="3tVfz5" value="1220041812073807674" />
+      <property role="TrG5h" value="DOTTED" />
+      <property role="1L1pqM" value="dotted" />
+    </node>
+    <node concept="25R33" id="29l0aZGyUJ$" role="25R1y">
+      <property role="3tVfz5" value="5972990333377702336" />
+      <property role="TrG5h" value="BOLD" />
+      <property role="1L1pqM" value="bold" />
+    </node>
+    <node concept="25R33" id="29l0aZGyUJ_" role="25R1y">
+      <property role="3tVfz5" value="2872944061024011149" />
+      <property role="TrG5h" value="HIDDEN" />
+      <property role="1L1pqM" value="hidden" />
     </node>
   </node>
 </model>

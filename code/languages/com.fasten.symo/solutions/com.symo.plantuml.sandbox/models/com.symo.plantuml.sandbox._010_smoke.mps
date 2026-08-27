@@ -173,6 +173,9 @@
       </concept>
       <concept id="2473884325829927072" name="com.symo.plantuml.structure.ClassDeclaration" flags="ng" index="3aaI0f">
         <property id="2473884325863272366" name="kind" index="38aqW1" />
+        <property id="2473884325897808877" name="lineStyle" index="3eREH2" />
+        <property id="2473884325897808873" name="lineColor" index="3eREH6" />
+        <property id="2473884325897808881" name="textColor" index="3eREHu" />
         <child id="2473884325843281085" name="members" index="3b7Egi" />
       </concept>
       <concept id="2473884325829927094" name="com.symo.plantuml.structure.AssociationLine" flags="ng" index="3aaI0p" />
@@ -3718,6 +3721,31 @@
         <node concept="3aaI0p" id="29l0aZFWcag" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="29l0aZFWcah" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZGRzYn">
+    <property role="TrG5h" value="_078_class_diagram_styling" />
+    <node concept="3aaI0T" id="29l0aZGRzYo" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class styling" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZGRzYs" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZGRzYt" role="1pqCzW">
+        <property role="TrG5h" value="StyledFull" />
+        <property role="1ZmCJ5" value="palegreen" />
+        <property role="3eREH6" value="red" />
+        <property role="3eREH2" value="5b$kKZrOuB0/BOLD" />
+        <property role="3eREHu" value="blue" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZGRzYu" role="1pqCzW">
+        <property role="TrG5h" value="StyledLineOnly" />
+        <property role="3eREH6" value="orange" />
+        <property role="3eREH2" value="3cCFxNm_45X/DASHED" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZGRzYv" role="1pqCzW">
+        <property role="TrG5h" value="Plain" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZGRzYw" role="1pqCzW" />
     </node>
   </node>
 </model>
