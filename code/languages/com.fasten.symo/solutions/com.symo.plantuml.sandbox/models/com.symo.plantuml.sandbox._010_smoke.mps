@@ -163,6 +163,8 @@
       </concept>
       <concept id="2473884325826231427" name="com.symo.plantuml.structure.PlantUmlLeftToRightDirection" flags="ng" index="3a4BKG" />
       <concept id="2473884325829927087" name="com.symo.plantuml.structure.PlantUmlClassLink" flags="ng" index="3aaI00">
+        <property id="2473884325881025504" name="targetRole" index="39RDdf" />
+        <property id="2473884325881025500" name="sourceRole" index="39RDdN" />
         <property id="2473884325839153334" name="targetMultiplicity" index="3bmqwp" />
         <property id="2473884325839153329" name="sourceMultiplicity" index="3bmqwu" />
       </concept>
@@ -3670,6 +3672,52 @@
         <node concept="3aaI0p" id="29l0aZFmwCI" role="S$pns" />
       </node>
       <node concept="1pqCE1" id="29l0aZFmwCJ" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZFWc9X">
+    <property role="TrG5h" value="_077_class_diagram_roles" />
+    <node concept="3aaI0T" id="29l0aZFWc9Y" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class roles" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZFWca2" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZFWca3" role="1pqCzW">
+        <property role="TrG5h" value="User" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZFWca4" role="1pqCzW">
+        <property role="TrG5h" value="Item" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZFWca5" role="1pqCzW">
+        <property role="TrG5h" value="Order" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZFWca6" role="1pqCzW">
+        <property role="TrG5h" value="Customer" />
+      </node>
+      <node concept="3aaI00" id="29l0aZFWca7" role="1pqCzW">
+        <property role="39RDdN" value="owner" />
+        <property role="39RDdf" value="items" />
+        <node concept="3aaI05" id="29l0aZFWca9" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZFWca3" resolve="User" />
+        </node>
+        <node concept="3aaI05" id="29l0aZFWcaa" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZFWca4" resolve="Item" />
+        </node>
+        <node concept="3aaI0p" id="29l0aZFWcab" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZFWcac" role="1pqCzW">
+        <property role="39RDdN" value="placedBy" />
+        <property role="3bmqwu" value="1" />
+        <property role="39RDdf" value="orders" />
+        <property role="3bmqwp" value="0..n" />
+        <node concept="3aaI05" id="29l0aZFWcae" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZFWca5" resolve="Order" />
+        </node>
+        <node concept="3aaI05" id="29l0aZFWcaf" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZFWca6" resolve="Customer" />
+        </node>
+        <node concept="3aaI0p" id="29l0aZFWcag" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZFWcah" role="1pqCzW" />
     </node>
   </node>
 </model>

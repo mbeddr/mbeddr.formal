@@ -2695,6 +2695,16 @@
       <property role="TrG5h" value="targetMultiplicity" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="29l0aZFyTfs" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325881025500" />
+      <property role="TrG5h" value="sourceRole" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="29l0aZFyTfw" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325881025504" />
+      <property role="TrG5h" value="targetRole" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="29l0aZCvY2N">
     <property role="EcuMT" value="2473884325829927091" />

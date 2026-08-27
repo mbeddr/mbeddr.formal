@@ -4970,7 +4970,7 @@
     <node concept="3EZMnI" id="29l0aZCE5g7" role="2wV5jI">
       <node concept="3F0A7n" id="29l0aZEFqDl" role="3EZMnx">
         <ref role="1NtTu8" to="udwj:29l0aZEvaYI" resolve="kind" />
-        <ref role="1k5W1q" node="1I7wo92Xwi0" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
       </node>
       <node concept="3F0A7n" id="29l0aZCE5g9" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -5067,6 +5067,26 @@
       <node concept="3F1sOY" id="29l0aZDdga_" role="3EZMnx">
         <ref role="1NtTu8" to="udwj:1I7wo92Y2Tt" resolve="source" />
       </node>
+      <node concept="_tjkj" id="29l0aZFPyuL" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZFPyuN" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZFPyuO" role="3EZMnx">
+            <property role="3F0ifm" value="&quot;" />
+            <node concept="11LMrY" id="29l0aZFPyuP" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F0A7n" id="29l0aZFPyuQ" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:29l0aZFyTfs" resolve="sourceRole" />
+          </node>
+          <node concept="3F0ifn" id="29l0aZFPyuR" role="3EZMnx">
+            <property role="3F0ifm" value="&quot;" />
+            <node concept="11L4FC" id="29l0aZFPyuS" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="29l0aZFPyuT" role="2iSdaV" />
+        </node>
+      </node>
       <node concept="_tjkj" id="29l0aZDdgaA" role="3EZMnx">
         <node concept="3EZMnI" id="29l0aZDdgaC" role="_tjki">
           <node concept="3F0ifn" id="29l0aZDdgaD" role="3EZMnx">
@@ -5089,6 +5109,26 @@
       </node>
       <node concept="3F1sOY" id="29l0aZDdgaJ" role="3EZMnx">
         <ref role="1NtTu8" to="udwj:7xI8QH0ZVqR" resolve="linkType" />
+      </node>
+      <node concept="_tjkj" id="29l0aZFPyv6" role="3EZMnx">
+        <node concept="3EZMnI" id="29l0aZFPyv8" role="_tjki">
+          <node concept="3F0ifn" id="29l0aZFPyv9" role="3EZMnx">
+            <property role="3F0ifm" value="&quot;" />
+            <node concept="11LMrY" id="29l0aZFPyva" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="3F0A7n" id="29l0aZFPyvb" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:29l0aZFyTfw" resolve="targetRole" />
+          </node>
+          <node concept="3F0ifn" id="29l0aZFPyvc" role="3EZMnx">
+            <property role="3F0ifm" value="&quot;" />
+            <node concept="11L4FC" id="29l0aZFPyvd" role="3F10Kt">
+              <property role="VOm3f" value="true" />
+            </node>
+          </node>
+          <node concept="2iRfu4" id="29l0aZFPyve" role="2iSdaV" />
+        </node>
       </node>
       <node concept="_tjkj" id="29l0aZDdgaK" role="3EZMnx">
         <node concept="3EZMnI" id="29l0aZDdgaM" role="_tjki">
@@ -5138,7 +5178,7 @@
       <node concept="1kHk_G" id="29l0aZF3XUv" role="3EZMnx">
         <property role="ZjSer" value="{static}" />
         <ref role="1NtTu8" to="udwj:29l0aZELz4G" resolve="isStatic" />
-        <ref role="1k5W1q" node="1I7wo92Xwi0" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
       </node>
       <node concept="3F0A7n" id="29l0aZDzFoz" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -5167,12 +5207,12 @@
       <node concept="1kHk_G" id="29l0aZF3XU$" role="3EZMnx">
         <property role="ZjSer" value="{static}" />
         <ref role="1NtTu8" to="udwj:29l0aZELz4K" resolve="isStatic" />
-        <ref role="1k5W1q" node="1I7wo92Xwi0" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
       </node>
       <node concept="1kHk_G" id="29l0aZF3XUD" role="3EZMnx">
         <property role="ZjSer" value="{abstract}" />
         <ref role="1NtTu8" to="udwj:29l0aZELz4O" resolve="isAbstract" />
-        <ref role="1k5W1q" node="1I7wo92Xwi0" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
       </node>
       <node concept="3F0A7n" id="29l0aZDzFp7" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -5231,7 +5271,7 @@
   </node>
   <node concept="24kQdi" id="29l0aZEFqDp">
     <property role="3GE5qa" value="diagram.uml.class" />
-    <ref role="1XX52x" to="udwj:29l0aZEvaYP" />
+    <ref role="1XX52x" to="udwj:29l0aZEvaYP" resolve="EnumLiteral" />
     <node concept="3F0A7n" id="29l0aZEFqDy" role="2wV5jI">
       <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
     </node>
@@ -5251,7 +5291,7 @@
         <property role="3F0ifm" value="{" />
       </node>
       <node concept="3F2HdR" id="29l0aZFglEq" role="3EZMnx">
-        <ref role="1NtTu8" to="udwj:29l0aZFgePW" />
+        <ref role="1NtTu8" to="udwj:29l0aZFgePW" resolve="content" />
         <node concept="2iRkQZ" id="29l0aZFglEr" role="2czzBx" />
         <node concept="pVoyu" id="29l0aZFglEs" role="3F10Kt">
           <property role="VOm3f" value="true" />
