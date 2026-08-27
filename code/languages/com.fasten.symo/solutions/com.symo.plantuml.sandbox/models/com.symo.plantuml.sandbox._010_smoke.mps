@@ -176,6 +176,7 @@
         <property id="2473884325897808877" name="lineStyle" index="3eREH2" />
         <property id="2473884325897808873" name="lineColor" index="3eREH6" />
         <property id="2473884325897808881" name="textColor" index="3eREHu" />
+        <property id="2473884325916634816" name="stereotype" index="3fZYTJ" />
         <child id="2473884325843281085" name="members" index="3b7Egi" />
       </concept>
       <concept id="2473884325829927094" name="com.symo.plantuml.structure.AssociationLine" flags="ng" index="3aaI0p" />
@@ -3746,6 +3747,30 @@
         <property role="TrG5h" value="Plain" />
       </node>
       <node concept="1pqCE1" id="29l0aZGRzYw" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZI0QSm">
+    <property role="TrG5h" value="_079_class_diagram_stereotypes" />
+    <node concept="3aaI0T" id="29l0aZI0QSn" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class stereotypes" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZI0QSr" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZI0QSs" role="1pqCzW">
+        <property role="TrG5h" value="Order" />
+        <property role="2ywBW2" value="O" />
+        <property role="3fZYTJ" value="Entity" />
+        <property role="1ZmCJ5" value="palegreen" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZI0QSt" role="1pqCzW">
+        <property role="TrG5h" value="Runnable" />
+        <property role="38aqW1" value="2S3nKTOTbmi/INTERFACE" />
+        <property role="3fZYTJ" value="Interface" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZI0QSu" role="1pqCzW">
+        <property role="TrG5h" value="Plain" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZI0QSv" role="1pqCzW" />
     </node>
   </node>
 </model>

@@ -2673,6 +2673,11 @@
       <property role="TrG5h" value="textColor" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="29l0aZHEIV0" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325916634816" />
+      <property role="TrG5h" value="stereotype" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="29l0aZCvY2E">
     <property role="EcuMT" value="2473884325829927082" />
