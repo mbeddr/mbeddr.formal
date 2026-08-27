@@ -3904,5 +3904,37 @@
       <node concept="1pqCE1" id="3IM8gFH29II" role="1pqCzW" />
     </node>
   </node>
+  <node concept="1pqNnw" id="3IM8gFH2aK_">
+    <property role="TrG5h" value="_082_timing_diagram_undefined_state" />
+    <node concept="3ctaB5" id="3IM8gFH2aKA" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing undefined state" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="3IM8gFH2aKE" role="1pqCzW" />
+      <node concept="3ctaB4" id="3IM8gFH2aKF" role="1pqCzW">
+        <property role="TrG5h" value="Foo" />
+        <property role="2ywBW2" value="A" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFH2aKG" role="1pqCzW">
+        <property role="3ctaBr" value="{-}" />
+        <ref role="3ctaBq" node="3IM8gFH2aKF" />
+      </node>
+      <node concept="3ctaB2" id="3IM8gFH2aKH" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="3IM8gFH2aKI" role="3ctaBn">
+          <property role="3ctaBr" value="Running" />
+          <ref role="3ctaBq" node="3IM8gFH2aKF" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="3IM8gFH2aKJ" role="1pqCzW">
+        <property role="3ctaBo" value="200" />
+        <node concept="3ctaB3" id="3IM8gFH2aKK" role="3ctaBn">
+          <property role="3ctaBr" value="{-}" />
+          <ref role="3ctaBq" node="3IM8gFH2aKF" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="3IM8gFH2aKL" role="1pqCzW" />
+    </node>
+  </node>
 </model>
 
