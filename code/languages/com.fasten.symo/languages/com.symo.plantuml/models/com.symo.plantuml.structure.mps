@@ -512,6 +512,9 @@
     <node concept="PrWs8" id="29l0aZCY6k3" role="PzmwI">
       <ref role="PrY4T" node="29l0aZCvY2f" resolve="IPlantUmlClassDiagramContent" />
     </node>
+    <node concept="PrWs8" id="3IM8gFGUnU8" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZI8q_I" resolve="IPlantUmlTimingDiagramContent" />
+    </node>
   </node>
   <node concept="25R3W" id="1I7wo930$vU">
     <property role="3F6X1D" value="1983696557349947386" />
@@ -3117,6 +3120,23 @@
     <property role="3GE5qa" value="diagram.uml.timing" />
     <node concept="PrWs8" id="29l0aZI8q_U" role="PrDN$">
       <ref role="PrY4T" node="1I7wo92Vg_Z" resolve="IPlantUmlDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFGUnU3">
+    <property role="EcuMT" value="4301536924900359811" />
+    <property role="TrG5h" value="TimingParticipantRef" />
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <property role="R4oN_" value="a reference to a timing participant, used as a note's annotated object" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3IM8gFGUnU4" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLSNL5J" resolve="IPlantUmlNoteReferenceObject" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFGUnU5" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924900359813" />
+      <property role="20kJfa" value="participant" />
+      <property role="TrG5h" value="participant" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="29l0aZI8q_F" resolve="TimingParticipant" />
     </node>
   </node>
 </model>

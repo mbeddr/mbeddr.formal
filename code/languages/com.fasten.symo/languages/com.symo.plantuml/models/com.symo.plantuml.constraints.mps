@@ -546,5 +546,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3IM8gFGUolZ">
+    <property role="TrG5h" value="TimingParticipantRef_Constraints" />
+    <ref role="1M2myG" to="udwj:3IM8gFGUnU3" resolve="TimingParticipantRef" />
+    <node concept="1N5Pfh" id="3IM8gFGUom0" role="1Mr941">
+      <ref role="1N5Vy1" to="udwj:3IM8gFGUnU5" resolve="participant" />
+      <node concept="1dDu$B" id="3IM8gFGUom1" role="1N6uqs">
+        <ref role="1dDu$A" to="udwj:29l0aZI8q_F" resolve="TimingParticipant" />
+      </node>
+    </node>
+  </node>
 </model>
 

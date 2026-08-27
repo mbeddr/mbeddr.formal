@@ -224,6 +224,9 @@
       <concept id="1822469624834794620" name="com.symo.plantuml.structure.StartMindmapCommand" flags="ng" index="3jvh8b" />
       <concept id="1822469624834794667" name="com.symo.plantuml.structure.EndMindmapCommand" flags="ng" index="3jvhbs" />
       <concept id="1822469624834794777" name="com.symo.plantuml.structure.PlantUmlMindmapDiagram" flags="ng" index="3jvhdI" />
+      <concept id="4301536924900359811" name="com.symo.plantuml.structure.TimingParticipantRef" flags="ng" index="3nmPY9">
+        <reference id="4301536924900359813" name="participant" index="3nmPYf" />
+      </concept>
       <concept id="1983696557349946927" name="com.symo.plantuml.structure.Note" flags="ng" index="1oxsuH">
         <property id="1983696557349947391" name="position" index="1oxspX" />
         <child id="1983696557349946929" name="text" index="1oxsuN" />
@@ -3828,6 +3831,77 @@
         </node>
       </node>
       <node concept="1pqCE1" id="29l0aZIBaKK" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="3IM8gFH29Ie">
+    <property role="TrG5h" value="_081_timing_diagram_notes" />
+    <node concept="3ctaB5" id="3IM8gFH29If" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing notes" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="3IM8gFH29Ij" role="1pqCzW" />
+      <node concept="3ctaB4" id="3IM8gFH29Ik" role="1pqCzW">
+        <property role="TrG5h" value="Bar" />
+        <property role="2ywBW2" value="B" />
+        <property role="3ctaBv" value="2UqZwjNgH0Z/CONCISE" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFH29Il" role="1pqCzW">
+        <property role="3ctaBr" value="Off" />
+        <ref role="3ctaBq" node="3IM8gFH29Ik" />
+      </node>
+      <node concept="1oxsuH" id="3IM8gFH29Im" role="1pqCzW">
+        <node concept="1Pa9Pv" id="3IM8gFH29Io" role="1oxsuN">
+          <node concept="1PaTwC" id="3IM8gFH29Ip" role="1PaQFQ">
+            <node concept="3oM_SD" id="3IM8gFH29Ir" role="1PaTwD">
+              <property role="3oM_SC" value="Bar" />
+            </node>
+            <node concept="3oM_SD" id="3IM8gFH29Is" role="1PaTwD">
+              <property role="3oM_SC" value="starts" />
+            </node>
+            <node concept="3oM_SD" id="3IM8gFH29It" role="1PaTwD">
+              <property role="3oM_SC" value="off" />
+            </node>
+          </node>
+        </node>
+        <node concept="3nmPY9" id="3IM8gFH29Iu" role="1oxsAa">
+          <ref role="3nmPYf" node="3IM8gFH29Ik" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="3IM8gFH29Iv" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="3IM8gFH29Iw" role="3ctaBn">
+          <property role="3ctaBr" value="On" />
+          <ref role="3ctaBq" node="3IM8gFH29Ik" />
+        </node>
+      </node>
+      <node concept="1oxsuH" id="3IM8gFH29Ix" role="1pqCzW">
+        <property role="1oxspX" value="1I7wo930$vX/bottom" />
+        <node concept="1Pa9Pv" id="3IM8gFH29Iz" role="1oxsuN">
+          <node concept="1PaTwC" id="3IM8gFH29I$" role="1PaQFQ">
+            <node concept="3oM_SD" id="3IM8gFH29IA" role="1PaTwD">
+              <property role="3oM_SC" value="Bar" />
+            </node>
+            <node concept="3oM_SD" id="3IM8gFH29IB" role="1PaTwD">
+              <property role="3oM_SC" value="switches" />
+            </node>
+            <node concept="3oM_SD" id="3IM8gFH29IC" role="1PaTwD">
+              <property role="3oM_SC" value="on" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="3IM8gFH29ID" role="1PaQFQ">
+            <node concept="3oM_SD" id="3IM8gFH29IF" role="1PaTwD">
+              <property role="3oM_SC" value="at" />
+            </node>
+            <node concept="3oM_SD" id="3IM8gFH29IG" role="1PaTwD">
+              <property role="3oM_SC" value="t=100" />
+            </node>
+          </node>
+        </node>
+        <node concept="3nmPY9" id="3IM8gFH29IH" role="1oxsAa">
+          <ref role="3nmPYf" node="3IM8gFH29Ik" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="3IM8gFH29II" role="1pqCzW" />
     </node>
   </node>
 </model>
