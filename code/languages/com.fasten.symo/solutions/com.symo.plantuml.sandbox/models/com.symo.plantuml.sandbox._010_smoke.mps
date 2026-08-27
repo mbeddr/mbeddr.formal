@@ -177,11 +177,13 @@
       <concept id="2473884325837798796" name="com.symo.plantuml.structure.AggregationLine" flags="ng" index="3aCJOz" />
       <concept id="2473884325837798795" name="com.symo.plantuml.structure.CompositionLine" flags="ng" index="3aCJO$" />
       <concept id="2473884325843258712" name="com.symo.plantuml.structure.ClassMethod" flags="ng" index="3b7$RR">
+        <property id="2473884325868089652" name="isAbstract" index="38$N6r" />
         <property id="2473884325843258719" name="visibility" index="3b7$RK" />
         <property id="2473884325843258718" name="returnType" index="3b7$RL" />
         <child id="2473884325852375599" name="parameters" index="3bwQE0" />
       </concept>
       <concept id="2473884325843258711" name="com.symo.plantuml.structure.ClassField" flags="ng" index="3b7$RS">
+        <property id="2473884325868089644" name="isStatic" index="38$N63" />
         <property id="2473884325843258715" name="visibility" index="3b7$RO" />
         <property id="2473884325843258714" name="type" index="3b7$RP" />
       </concept>
@@ -3507,6 +3509,12 @@
       <node concept="1pqCwu" id="29l0aZDzEZH" role="1pqCzW" />
       <node concept="3aaI0f" id="29l0aZDzEZI" role="1pqCzW">
         <property role="TrG5h" value="BankAccount" />
+        <node concept="3b7$RS" id="29l0aZF3Xy5" role="3b7Egi">
+          <property role="TrG5h" value="instanceCount" />
+          <property role="3b7$RP" value="int" />
+          <property role="3b7$RO" value="1sW5M_KSDqm/PRIVATE" />
+          <property role="38$N63" value="true" />
+        </node>
         <node concept="3b7$RS" id="29l0aZDzEZJ" role="3b7Egi">
           <property role="TrG5h" value="balance" />
           <property role="3b7$RP" value="double" />
@@ -3581,6 +3589,7 @@
         <node concept="3b7$RR" id="29l0aZELy0a" role="3b7Egi">
           <property role="TrG5h" value="makeSound" />
           <property role="3b7$RL" value="void" />
+          <property role="38$N6r" value="true" />
         </node>
       </node>
       <node concept="3aaI0f" id="29l0aZELy0b" role="1pqCzW">

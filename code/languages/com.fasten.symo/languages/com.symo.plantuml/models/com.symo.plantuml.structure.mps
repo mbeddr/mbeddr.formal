@@ -2795,6 +2795,11 @@
     <node concept="PrWs8" id="29l0aZDiOPt" role="PzmwI">
       <ref role="PrY4T" node="6CyxyHi9vWZ" />
     </node>
+    <node concept="1TJgyi" id="29l0aZELz4G" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325868089644" />
+      <property role="TrG5h" value="isStatic" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="29l0aZDiOPo">
     <property role="EcuMT" value="2473884325843258712" />
@@ -2825,6 +2830,16 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="29l0aZDPwWJ" resolve="MethodParameter" />
+    </node>
+    <node concept="1TJgyi" id="29l0aZELz4K" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325868089648" />
+      <property role="TrG5h" value="isStatic" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="29l0aZELz4O" role="1TKVEl">
+      <property role="IQ2nx" value="2473884325868089652" />
+      <property role="TrG5h" value="isAbstract" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="PlHQZ" id="29l0aZDiOPp">

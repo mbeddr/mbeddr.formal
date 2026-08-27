@@ -391,7 +391,9 @@
         <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
       <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
-      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G" />
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
+        <property id="7617962380315063287" name="flagText" index="ZjSer" />
+      </concept>
       <concept id="7363578995839435357" name="com.mbeddr.mpsutil.grammarcells.structure.WrapperCell" flags="ng" index="1kIj98">
         <child id="7363578995839435358" name="wrapped" index="1kIj9b" />
       </concept>
@@ -4968,6 +4970,7 @@
     <node concept="3EZMnI" id="29l0aZCE5g7" role="2wV5jI">
       <node concept="3F0A7n" id="29l0aZEFqDl" role="3EZMnx">
         <ref role="1NtTu8" to="udwj:29l0aZEvaYI" resolve="kind" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" />
       </node>
       <node concept="3F0A7n" id="29l0aZCE5g9" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -5132,6 +5135,11 @@
       <node concept="3F0A7n" id="29l0aZDzFoy" role="3EZMnx">
         <ref role="1NtTu8" to="udwj:29l0aZDiOPr" resolve="visibility" />
       </node>
+      <node concept="1kHk_G" id="29l0aZF3XUv" role="3EZMnx">
+        <property role="ZjSer" value="{static}" />
+        <ref role="1NtTu8" to="udwj:29l0aZELz4G" resolve="isStatic" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" />
+      </node>
       <node concept="3F0A7n" id="29l0aZDzFoz" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
@@ -5155,6 +5163,16 @@
     <node concept="3EZMnI" id="29l0aZDzFp5" role="2wV5jI">
       <node concept="3F0A7n" id="29l0aZDzFp6" role="3EZMnx">
         <ref role="1NtTu8" to="udwj:29l0aZDiOPv" resolve="visibility" />
+      </node>
+      <node concept="1kHk_G" id="29l0aZF3XU$" role="3EZMnx">
+        <property role="ZjSer" value="{static}" />
+        <ref role="1NtTu8" to="udwj:29l0aZELz4K" resolve="isStatic" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" />
+      </node>
+      <node concept="1kHk_G" id="29l0aZF3XUD" role="3EZMnx">
+        <property role="ZjSer" value="{abstract}" />
+        <ref role="1NtTu8" to="udwj:29l0aZELz4O" resolve="isAbstract" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" />
       </node>
       <node concept="3F0A7n" id="29l0aZDzFp7" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
