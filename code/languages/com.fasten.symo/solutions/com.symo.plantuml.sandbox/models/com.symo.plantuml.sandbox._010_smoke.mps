@@ -1816,6 +1816,9 @@
       <property role="TrG5h" value="statemachine simple" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="q$1bLTdbrY" role="1pqCzW" />
+      <node concept="1Yfh69" id="3IM8gFIiTGc" role="1pqCzW">
+        <property role="1Yfh67" value="Statemachine Simple" />
+      </node>
       <node concept="1Zxd49" id="q$1bLTftug" role="1pqCzW">
         <property role="TrG5h" value="Init" />
       </node>
@@ -2550,6 +2553,9 @@
       <property role="TrG5h" value="activity simple" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="2kArA_$9W$s" role="1pqCzW" />
+      <node concept="1Yfh69" id="3IM8gFIiTGd" role="1pqCzW">
+        <property role="1Yfh67" value="Activity Simple" />
+      </node>
       <node concept="11cB78" id="2kArA_$9W$t" role="1pqCzW" />
       <node concept="11cB7a" id="2kArA_$z_Y8" role="1pqCzW">
         <node concept="11pPRA" id="2kArA_$z_Ya" role="11pLMz">
@@ -3160,6 +3166,9 @@
       <property role="TrG5h" value="deployment simple" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="29l0aZBp08K" role="1pqCzW" />
+      <node concept="1Yfh69" id="3IM8gFIiTGe" role="1pqCzW">
+        <property role="1Yfh67" value="Deployment Simple" />
+      </node>
       <node concept="34eGC3" id="29l0aZBp08L" role="1pqCzW">
         <property role="TrG5h" value="ClientMachine" />
         <property role="2ywBW2" value="client" />
@@ -3363,6 +3372,9 @@
       <property role="TrG5h" value="class simple" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="29l0aZC$PpF" role="1pqCzW" />
+      <node concept="1Yfh69" id="3IM8gFIiTGf" role="1pqCzW">
+        <property role="1Yfh67" value="Class Simple" />
+      </node>
       <node concept="3aaI0f" id="29l0aZC$PpG" role="1pqCzW">
         <property role="TrG5h" value="Animal" />
         <property role="1ZmCJ5" value="red" />
@@ -3812,6 +3824,9 @@
       <property role="TrG5h" value="timing basic" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="29l0aZIBaKH" role="1pqCzW" />
+      <node concept="1Yfh69" id="3IM8gFIiTGg" role="1pqCzW">
+        <property role="1Yfh67" value="Timing Basic" />
+      </node>
       <node concept="3ctaB4" id="29l0aZIBaKI" role="1pqCzW">
         <property role="TrG5h" value="Foo" />
         <property role="2ywBW2" value="A" />

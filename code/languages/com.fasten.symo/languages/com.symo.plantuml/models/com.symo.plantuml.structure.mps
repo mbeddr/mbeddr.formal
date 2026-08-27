@@ -1303,6 +1303,21 @@
       <property role="TrG5h" value="text" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="PrWs8" id="3IM8gFIa_bQ" role="PzmwI">
+      <ref role="PrY4T" node="2kArA_$51Y$" resolve="IPlantUmlActivityDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIa_bU" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZCvY2f" resolve="IPlantUmlClassDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIa_bY" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZArWEJ" resolve="IPlantUmlDeploymentDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIa_c2" role="PzmwI">
+      <ref role="PrY4T" node="q$1bLT8dmM" resolve="IPlantUmlStatemachineDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIa_c6" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZI8q_I" resolve="IPlantUmlTimingDiagramContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="q$1bLSCbQn">
     <property role="EcuMT" value="478512667932278167" />
