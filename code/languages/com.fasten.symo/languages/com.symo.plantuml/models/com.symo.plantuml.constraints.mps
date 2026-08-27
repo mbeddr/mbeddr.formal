@@ -566,5 +566,27 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3IM8gFHTUgR">
+    <property role="TrG5h" value="TimingHighlight_Constraints" />
+    <ref role="1M2myG" to="udwj:3IM8gFHLzsy" resolve="TimingHighlight" />
+    <node concept="EnEH3" id="3IM8gFHTUgS" role="1MhHOB">
+      <ref role="EomxK" to="udwj:3IM8gFHLzsA" resolve="color" />
+      <node concept="QB0g5" id="3IM8gFHTUgT" role="QCWH9">
+        <node concept="3clFbS" id="3IM8gFHTUgV" role="2VODD2">
+          <node concept="3clFbF" id="3IM8gFHTUgW" role="3cqZAp">
+            <node concept="2OqwBi" id="3IM8gFHTUgY" role="3clFbG">
+              <node concept="1Wqviy" id="3IM8gFHTUh1" role="2Oq$k0" />
+              <node concept="liA8E" id="3IM8gFHTUh2" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="3IM8gFHTUh3" role="37wK5m">
+                  <property role="Xl_RC" value="[^ :]*" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

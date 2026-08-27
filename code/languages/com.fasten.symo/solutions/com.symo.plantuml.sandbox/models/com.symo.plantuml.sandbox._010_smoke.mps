@@ -225,6 +225,16 @@
       <concept id="1822469624834794620" name="com.symo.plantuml.structure.StartMindmapCommand" flags="ng" index="3jvh8b" />
       <concept id="1822469624834794667" name="com.symo.plantuml.structure.EndMindmapCommand" flags="ng" index="3jvhbs" />
       <concept id="1822469624834794777" name="com.symo.plantuml.structure.PlantUmlMindmapDiagram" flags="ng" index="3jvhdI" />
+      <concept id="4301536924914824988" name="com.symo.plantuml.structure.TimingScaleCommand" flags="ng" index="3mt1om">
+        <property id="4301536924914824990" name="unitFactor" index="3mt1ok" />
+        <property id="4301536924914824991" name="pixels" index="3mt1ol" />
+      </concept>
+      <concept id="4301536924914824994" name="com.symo.plantuml.structure.TimingHighlight" flags="ng" index="3mt1oC">
+        <property id="4301536924914824998" name="color" index="3mt1oG" />
+        <property id="4301536924914824999" name="label" index="3mt1oH" />
+        <property id="4301536924914824996" name="fromTime" index="3mt1oI" />
+        <property id="4301536924914824997" name="toTime" index="3mt1oJ" />
+      </concept>
       <concept id="4301536924902404961" name="com.symo.plantuml.structure.TimingInterval" flags="ng" index="3mID9F">
         <property id="4301536924902404966" name="label" index="3mID9G" />
         <property id="4301536924902404964" name="fromTime" index="3mID9I" />
@@ -4087,6 +4097,48 @@
         </node>
       </node>
       <node concept="1pqCE1" id="3IM8gFHE3ue" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="3IM8gFHTTkj">
+    <property role="TrG5h" value="_086_timing_diagram_scale_and_highlight" />
+    <node concept="3ctaB5" id="3IM8gFHTTkk" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing scale and highlight" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="3IM8gFHTTko" role="1pqCzW" />
+      <node concept="3mt1om" id="3IM8gFHTTkp" role="1pqCzW">
+        <property role="3mt1ok" value="100" />
+        <property role="3mt1ol" value="60" />
+      </node>
+      <node concept="3ctaB4" id="3IM8gFHTTkq" role="1pqCzW">
+        <property role="TrG5h" value="Foo" />
+        <property role="2ywBW2" value="A" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFHTTkr" role="1pqCzW">
+        <property role="3ctaBr" value="Idle" />
+        <ref role="3ctaBq" node="3IM8gFHTTkq" resolve="Foo" />
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHTTks" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="3IM8gFHTTkt" role="3ctaBn">
+          <property role="3ctaBr" value="Running" />
+          <ref role="3ctaBq" node="3IM8gFHTTkq" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHTTku" role="1pqCzW">
+        <property role="3ctaBo" value="200" />
+        <node concept="3ctaB3" id="3IM8gFHTTkv" role="3ctaBn">
+          <property role="3ctaBr" value="Idle" />
+          <ref role="3ctaBq" node="3IM8gFHTTkq" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="3mt1oC" id="3IM8gFHTTkw" role="1pqCzW">
+        <property role="3mt1oI" value="100" />
+        <property role="3mt1oJ" value="200" />
+        <property role="3mt1oG" value="Gold" />
+        <property role="3mt1oH" value="Description" />
+      </node>
+      <node concept="1pqCE1" id="3IM8gFHTTkx" role="1pqCzW" />
     </node>
   </node>
 </model>

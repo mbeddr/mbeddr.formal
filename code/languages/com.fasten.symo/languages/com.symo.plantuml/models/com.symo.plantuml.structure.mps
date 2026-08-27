@@ -3182,5 +3182,57 @@
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3IM8gFHLzss">
+    <property role="EcuMT" value="4301536924914824988" />
+    <property role="TrG5h" value="TimingScaleCommand" />
+    <property role="34LRSv" value="scale" />
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <property role="R4oN_" value="scales the time axis: 'scale &lt;unitFactor&gt; as &lt;pixels&gt; pixels'" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3IM8gFHLzst" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZI8q_I" resolve="IPlantUmlTimingDiagramContent" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFHLzsu" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924914824990" />
+      <property role="TrG5h" value="unitFactor" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFHLzsv" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924914824991" />
+      <property role="TrG5h" value="pixels" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFHLzsy">
+    <property role="EcuMT" value="4301536924914824994" />
+    <property role="TrG5h" value="TimingHighlight" />
+    <property role="34LRSv" value="highlight" />
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <property role="R4oN_" value="highlights a time range: 'highlight &lt;from&gt; to &lt;to&gt; [#color] [: label]'" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3IM8gFHLzsz" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZI8q_I" resolve="IPlantUmlTimingDiagramContent" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFHLzs$" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924914824996" />
+      <property role="TrG5h" value="fromTime" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFHLzs_" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924914824997" />
+      <property role="TrG5h" value="toTime" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFHLzsA" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924914824998" />
+      <property role="TrG5h" value="color" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFHLzsB" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924914824999" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

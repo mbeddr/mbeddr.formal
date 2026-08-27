@@ -5676,5 +5676,93 @@
       <node concept="2iRfu4" id="3IM8gFH2bDL" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3IM8gFHL$5C">
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <property role="TrG5h" value="TimingScaleCommand_Editor" />
+    <ref role="1XX52x" to="udwj:3IM8gFHLzss" resolve="TimingScaleCommand" />
+    <node concept="3EZMnI" id="3IM8gFHL$5E" role="2wV5jI">
+      <node concept="3F0ifn" id="3IM8gFHL$5F" role="3EZMnx">
+        <property role="3F0ifm" value="scale" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFHL$5G" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:3IM8gFHLzsu" resolve="unitFactor" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFHL$5H" role="3EZMnx">
+        <property role="3F0ifm" value="as" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFHL$5I" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:3IM8gFHLzsv" resolve="pixels" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFHL$5J" role="3EZMnx">
+        <property role="3F0ifm" value="pixels" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="2iRfu4" id="3IM8gFHL$5K" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFHL$5N">
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <property role="TrG5h" value="TimingHighlight_Editor" />
+    <ref role="1XX52x" to="udwj:3IM8gFHLzsy" resolve="TimingHighlight" />
+    <node concept="3EZMnI" id="3IM8gFHL$5P" role="2wV5jI">
+      <node concept="3F0ifn" id="3IM8gFHL$5Q" role="3EZMnx">
+        <property role="3F0ifm" value="highlight" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFHL$5R" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:3IM8gFHLzs$" resolve="fromTime" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFHL$5S" role="3EZMnx">
+        <property role="3F0ifm" value="to" />
+        <ref role="1k5W1q" node="1I7wo92Xwi0" resolve="PlantUmlKeyword" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFHL$5T" role="3EZMnx">
+        <ref role="1NtTu8" to="udwj:3IM8gFHLzs_" resolve="toTime" />
+      </node>
+      <node concept="_tjkj" id="3IM8gFHL$5U" role="3EZMnx">
+        <node concept="3EZMnI" id="3IM8gFHL$5W" role="_tjki">
+          <node concept="3F0ifn" id="3IM8gFHL$5X" role="3EZMnx">
+            <property role="3F0ifm" value="#" />
+          </node>
+          <node concept="3F0A7n" id="3IM8gFHL$5Y" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:3IM8gFHLzsA" resolve="color" />
+          </node>
+          <node concept="2iRfu4" id="3IM8gFHL$5Z" role="2iSdaV" />
+        </node>
+        <node concept="ZYGn8" id="3IM8gFHL$60" role="ZWbT9">
+          <node concept="3clFbS" id="3IM8gFHL$62" role="2VODD2">
+            <node concept="3clFbF" id="3IM8gFHL$63" role="3cqZAp">
+              <node concept="Xl_RD" id="3IM8gFHL$65" role="3clFbG">
+                <property role="Xl_RC" value="#" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="_tjkj" id="3IM8gFHL$66" role="3EZMnx">
+        <node concept="3EZMnI" id="3IM8gFHL$68" role="_tjki">
+          <node concept="3F0ifn" id="3IM8gFHL$69" role="3EZMnx">
+            <property role="3F0ifm" value=":" />
+          </node>
+          <node concept="3F0A7n" id="3IM8gFHL$6a" role="3EZMnx">
+            <ref role="1NtTu8" to="udwj:3IM8gFHLzsB" resolve="label" />
+          </node>
+          <node concept="2iRfu4" id="3IM8gFHL$6b" role="2iSdaV" />
+        </node>
+        <node concept="ZYGn8" id="3IM8gFHL$6c" role="ZWbT9">
+          <node concept="3clFbS" id="3IM8gFHL$6e" role="2VODD2">
+            <node concept="3clFbF" id="3IM8gFHL$6f" role="3cqZAp">
+              <node concept="Xl_RD" id="3IM8gFHL$6h" role="3clFbG">
+                <property role="Xl_RC" value=":" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="3IM8gFHL$6i" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
