@@ -34,6 +34,9 @@
     <import index="oqcp" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.imageio(JDK/)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
       <concept id="1402906326895675325" name="jetbrains.mps.lang.editor.structure.CellActionMap_FunctionParm_selectedNode" flags="nn" index="0IXxy" />
@@ -420,7 +423,6 @@
       <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
         <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143224066846" name="jetbrains.mps.lang.smodel.structure.Node_InsertNextSiblingOperation" flags="nn" index="HtI8k">
         <child id="1143224066849" name="insertedNode" index="HtI8F" />
       </concept>
@@ -1863,6 +1865,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="q$1bLSqCzD">
+    <property role="3GE5qa" value="diagram.uml.sequence" />
     <ref role="1XX52x" to="udwj:q$1bLSqCyu" resolve="PlainTextSequenceDiagramMessagePayload" />
     <node concept="3F0A7n" id="q$1bLSqCzF" role="2wV5jI">
       <ref role="1NtTu8" to="udwj:q$1bLSqCyv" resolve="text" />
@@ -1908,7 +1911,7 @@
             <node concept="3clFbF" id="q$1bLSJcC3" role="3cqZAp">
               <node concept="2OqwBi" id="q$1bLSJd4I" role="3clFbG">
                 <node concept="pncrf" id="q$1bLSJcC2" role="2Oq$k0" />
-                <node concept="2qgKlT" id="q$1bLSJdYP" role="2OqNvi">
+                <node concept="3zqWPK" id="3IM8gFGDxS3" role="2OqNvi">
                   <ref role="37wK5l" to="lc7h:q$1bLSIUJd" resolve="hasEndKeyword" />
                 </node>
               </node>
@@ -3369,7 +3372,7 @@
                     <node concept="2GrUjf" id="1I7wo92WgLy" role="2Oq$k0">
                       <ref role="2Gs0qQ" node="1I7wo92Wb2t" resolve="c" />
                     </node>
-                    <node concept="2qgKlT" id="1I7wo92WihM" role="2OqNvi">
+                    <node concept="3zqWPK" id="3IM8gFGDxS5" role="2OqNvi">
                       <ref role="37wK5l" to="lc7h:1I7wo92VgIo" resolve="text" />
                     </node>
                   </node>
