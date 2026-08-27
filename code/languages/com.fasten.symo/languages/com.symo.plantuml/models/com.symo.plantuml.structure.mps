@@ -3139,5 +3139,38 @@
       <ref role="20lvS9" node="29l0aZI8q_F" resolve="TimingParticipant" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3IM8gFH2bdx">
+    <property role="EcuMT" value="4301536924902404961" />
+    <property role="TrG5h" value="TimingInterval" />
+    <property role="3GE5qa" value="diagram.uml.timing" />
+    <property role="R4oN_" value="a labeled time-interval arrow spanning two points on a participant's timeline" />
+    <property role="34LRSv" value="&lt;-&gt;" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3IM8gFH2bdy" role="PzmwI">
+      <ref role="PrY4T" node="29l0aZI8q_I" resolve="IPlantUmlTimingDiagramContent" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFH2bdz" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924902404963" />
+      <property role="20kJfa" value="participant" />
+      <property role="TrG5h" value="participant" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="29l0aZI8q_F" resolve="TimingParticipant" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFH2bd$" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924902404964" />
+      <property role="TrG5h" value="fromTime" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFH2bd_" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924902404965" />
+      <property role="TrG5h" value="toTime" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFH2bdA" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924902404966" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

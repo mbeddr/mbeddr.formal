@@ -224,6 +224,12 @@
       <concept id="1822469624834794620" name="com.symo.plantuml.structure.StartMindmapCommand" flags="ng" index="3jvh8b" />
       <concept id="1822469624834794667" name="com.symo.plantuml.structure.EndMindmapCommand" flags="ng" index="3jvhbs" />
       <concept id="1822469624834794777" name="com.symo.plantuml.structure.PlantUmlMindmapDiagram" flags="ng" index="3jvhdI" />
+      <concept id="4301536924902404961" name="com.symo.plantuml.structure.TimingInterval" flags="ng" index="3mID9F">
+        <property id="4301536924902404966" name="label" index="3mID9G" />
+        <property id="4301536924902404964" name="fromTime" index="3mID9I" />
+        <property id="4301536924902404965" name="toTime" index="3mID9J" />
+        <reference id="4301536924902404963" name="participant" index="3mID9D" />
+      </concept>
       <concept id="4301536924900359811" name="com.symo.plantuml.structure.TimingParticipantRef" flags="ng" index="3nmPY9">
         <reference id="4301536924900359813" name="participant" index="3nmPYf" />
       </concept>
@@ -3847,7 +3853,7 @@
       </node>
       <node concept="3ctaB3" id="3IM8gFH29Il" role="1pqCzW">
         <property role="3ctaBr" value="Off" />
-        <ref role="3ctaBq" node="3IM8gFH29Ik" />
+        <ref role="3ctaBq" node="3IM8gFH29Ik" resolve="Bar" />
       </node>
       <node concept="1oxsuH" id="3IM8gFH29Im" role="1pqCzW">
         <node concept="1Pa9Pv" id="3IM8gFH29Io" role="1oxsuN">
@@ -3864,14 +3870,14 @@
           </node>
         </node>
         <node concept="3nmPY9" id="3IM8gFH29Iu" role="1oxsAa">
-          <ref role="3nmPYf" node="3IM8gFH29Ik" />
+          <ref role="3nmPYf" node="3IM8gFH29Ik" resolve="Bar" />
         </node>
       </node>
       <node concept="3ctaB2" id="3IM8gFH29Iv" role="1pqCzW">
         <property role="3ctaBo" value="100" />
         <node concept="3ctaB3" id="3IM8gFH29Iw" role="3ctaBn">
           <property role="3ctaBr" value="On" />
-          <ref role="3ctaBq" node="3IM8gFH29Ik" />
+          <ref role="3ctaBq" node="3IM8gFH29Ik" resolve="Bar" />
         </node>
       </node>
       <node concept="1oxsuH" id="3IM8gFH29Ix" role="1pqCzW">
@@ -3898,7 +3904,7 @@
           </node>
         </node>
         <node concept="3nmPY9" id="3IM8gFH29IH" role="1oxsAa">
-          <ref role="3nmPYf" node="3IM8gFH29Ik" />
+          <ref role="3nmPYf" node="3IM8gFH29Ik" resolve="Bar" />
         </node>
       </node>
       <node concept="1pqCE1" id="3IM8gFH29II" role="1pqCzW" />
@@ -3917,23 +3923,66 @@
       </node>
       <node concept="3ctaB3" id="3IM8gFH2aKG" role="1pqCzW">
         <property role="3ctaBr" value="{-}" />
-        <ref role="3ctaBq" node="3IM8gFH2aKF" />
+        <ref role="3ctaBq" node="3IM8gFH2aKF" resolve="Foo" />
       </node>
       <node concept="3ctaB2" id="3IM8gFH2aKH" role="1pqCzW">
         <property role="3ctaBo" value="100" />
         <node concept="3ctaB3" id="3IM8gFH2aKI" role="3ctaBn">
           <property role="3ctaBr" value="Running" />
-          <ref role="3ctaBq" node="3IM8gFH2aKF" />
+          <ref role="3ctaBq" node="3IM8gFH2aKF" resolve="Foo" />
         </node>
       </node>
       <node concept="3ctaB2" id="3IM8gFH2aKJ" role="1pqCzW">
         <property role="3ctaBo" value="200" />
         <node concept="3ctaB3" id="3IM8gFH2aKK" role="3ctaBn">
           <property role="3ctaBr" value="{-}" />
-          <ref role="3ctaBq" node="3IM8gFH2aKF" />
+          <ref role="3ctaBq" node="3IM8gFH2aKF" resolve="Foo" />
         </node>
       </node>
       <node concept="1pqCE1" id="3IM8gFH2aKL" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="3IM8gFHa9Mz">
+    <property role="TrG5h" value="_083_timing_diagram_intervals" />
+    <node concept="3ctaB5" id="3IM8gFHa9M$" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing intervals" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="3IM8gFHa9MC" role="1pqCzW" />
+      <node concept="3ctaB4" id="3IM8gFHa9MD" role="1pqCzW">
+        <property role="TrG5h" value="Bar" />
+        <property role="2ywBW2" value="B" />
+        <property role="3ctaBv" value="2UqZwjNgH0Z/CONCISE" />
+      </node>
+      <node concept="c$xRF" id="3IM8gFHi81f" role="1pqCzW" />
+      <node concept="3ctaB3" id="3IM8gFHa9ME" role="1pqCzW">
+        <property role="3ctaBr" value="Off" />
+        <ref role="3ctaBq" node="3IM8gFHa9MD" resolve="Bar" />
+      </node>
+      <node concept="c$xRF" id="3IM8gFHi81c" role="1pqCzW" />
+      <node concept="3ctaB2" id="3IM8gFHa9MF" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="3IM8gFHa9MG" role="3ctaBn">
+          <property role="3ctaBr" value="On" />
+          <ref role="3ctaBq" node="3IM8gFHa9MD" resolve="Bar" />
+        </node>
+      </node>
+      <node concept="c$xRF" id="3IM8gFHi81d" role="1pqCzW" />
+      <node concept="3ctaB2" id="3IM8gFHa9MH" role="1pqCzW">
+        <property role="3ctaBo" value="200" />
+        <node concept="3ctaB3" id="3IM8gFHa9MI" role="3ctaBn">
+          <property role="3ctaBr" value="Off" />
+          <ref role="3ctaBq" node="3IM8gFHa9MD" resolve="Bar" />
+        </node>
+      </node>
+      <node concept="c$xRF" id="3IM8gFHi81h" role="1pqCzW" />
+      <node concept="3mID9F" id="3IM8gFHa9MJ" role="1pqCzW">
+        <property role="3mID9I" value="100" />
+        <property role="3mID9J" value="200" />
+        <property role="3mID9G" value="on-time" />
+        <ref role="3mID9D" node="3IM8gFHa9MD" resolve="Bar" />
+      </node>
+      <node concept="1pqCE1" id="3IM8gFHa9MK" role="1pqCzW" />
     </node>
   </node>
 </model>
