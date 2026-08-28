@@ -292,6 +292,7 @@
     <property role="EcuMT" value="3039725954248903962" />
     <property role="TrG5h" value="MermaidClassDiagram" />
     <property role="34LRSv" value="class diagram" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
     <ref role="1TJDcQ" node="1oekUji9izU" resolve="MermaidDiagramBase" />
     <node concept="1TJgyj" id="2CJhEpPyCOr" role="1TKVEi">
       <property role="IQ2ns" value="3039725954248903963" />
@@ -300,6 +301,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="2CJhEpPyCOo" resolve="IMermaidClassDiagramContent" />
       <ref role="20ksaX" node="1oekUjiapA7" resolve="content" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIN7s$" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
   <node concept="1TIwiD" id="2CJhEpPyCOu">
@@ -513,6 +517,7 @@
   <node concept="25R3W" id="3IM8gFIE$HU">
     <property role="3F6X1D" value="4301536924929772410" />
     <property role="TrG5h" value="EMermaidFlowchartArrowType" />
+    <property role="3GE5qa" value="diagram.mermaid.flowchart" />
     <ref role="1H5jkz" node="3IM8gFIE$HW" resolve="SOLID" />
     <node concept="25R33" id="3IM8gFIE$HW" role="25R1y">
       <property role="3tVfz5" value="1078119355981439492" />
@@ -539,7 +544,7 @@
     <property role="EcuMT" value="4301536924930189180" />
     <property role="TrG5h" value="MermaidFlowchartNodeRef" />
     <property role="3GE5qa" value="diagram.mermaid.flowchart" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3IM8gFIGatX" role="1TKVEi">
       <property role="IQ2ns" value="4301536924930189181" />
       <property role="20kJfa" value="node" />
@@ -555,7 +560,7 @@
     <property role="TrG5h" value="MermaidFlowchartSubgraph" />
     <property role="34LRSv" value="subgraph" />
     <property role="3GE5qa" value="diagram.mermaid.flowchart" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="3IM8gFIITbg" role="1TKVEl">
       <property role="IQ2nx" value="4301536924930904784" />
       <property role="TrG5h" value="title" />
@@ -580,6 +585,182 @@
     <property role="TrG5h" value="IMermaidFlowchartEdgeEndpoint" />
     <property role="R4oN_" value="an edge from/to endpoint: either a reference to an existing node or an inline node declaration" />
     <property role="3GE5qa" value="diagram.mermaid.flowchart" />
+  </node>
+  <node concept="25R3W" id="3IM8gFIN6qt">
+    <property role="3F6X1D" value="4301536924932007581" />
+    <property role="TrG5h" value="EMermaidClassRelationshipKind" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1H5jkz" node="3IM8gFIN6qv" resolve="INHERITANCE" />
+    <node concept="25R33" id="3IM8gFIN6qv" role="25R1y">
+      <property role="3tVfz5" value="1799725800528026588" />
+      <property role="TrG5h" value="INHERITANCE" />
+      <property role="1L1pqM" value="Inheritance &lt;|--" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFIN6qy">
+    <property role="EcuMT" value="4301536924932007586" />
+    <property role="TrG5h" value="MermaidClassDiagramStart" />
+    <property role="34LRSv" value="classDiagram" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3IM8gFIN6qB" role="PzmwI">
+      <ref role="PrY4T" node="2CJhEpPyCOo" resolve="IMermaidClassDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFIN6qz">
+    <property role="EcuMT" value="4301536924932007587" />
+    <property role="TrG5h" value="MermaidClassDeclaration" />
+    <property role="34LRSv" value="class" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3IM8gFIN6qC" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924932007592" />
+      <property role="20kJfa" value="members" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3IM8gFIRmj4" resolve="MermaidClassMemberBase" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIN6qD" role="PzmwI">
+      <ref role="PrY4T" node="2CJhEpPyCOo" resolve="IMermaidClassDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIN6qE" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFIN6q_">
+    <property role="EcuMT" value="4301536924932007589" />
+    <property role="TrG5h" value="MermaidClassRelationshipRef" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="3IM8gFIN6qG" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924932007596" />
+      <property role="20kJfa" value="class" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3IM8gFIN6qz" resolve="MermaidClassDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFIN6qA">
+    <property role="EcuMT" value="4301536924932007590" />
+    <property role="TrG5h" value="MermaidClassRelationship" />
+    <property role="34LRSv" value="relationship" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3IM8gFIN6qH" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924932007597" />
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="3IM8gFIN6qt" resolve="EMermaidClassRelationshipKind" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFIN6qI" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924932007598" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFIN6qJ" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924932007599" />
+      <property role="20kJfa" value="from" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3IM8gFIN6q_" resolve="MermaidClassRelationshipRef" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFIN6qK" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924932007600" />
+      <property role="20kJfa" value="to" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3IM8gFIN6q_" resolve="MermaidClassRelationshipRef" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIN6qL" role="PzmwI">
+      <ref role="PrY4T" node="2CJhEpPyCOo" resolve="IMermaidClassDiagramContent" />
+    </node>
+  </node>
+  <node concept="25R3W" id="3IM8gFIRmiW">
+    <property role="3F6X1D" value="4301536924933121212" />
+    <property role="TrG5h" value="EMermaidVisibility" />
+    <ref role="1H5jkz" node="3IM8gFIRmiY" resolve="PUBLIC" />
+    <node concept="25R33" id="3IM8gFIRmiY" role="25R1y">
+      <property role="3tVfz5" value="933858131204225833" />
+      <property role="TrG5h" value="PUBLIC" />
+      <property role="1L1pqM" value="+" />
+    </node>
+    <node concept="25R33" id="3IM8gFIRmiZ" role="25R1y">
+      <property role="3tVfz5" value="7808151201412838827" />
+      <property role="TrG5h" value="PRIVATE" />
+      <property role="1L1pqM" value="-" />
+    </node>
+    <node concept="25R33" id="3IM8gFIRmj0" role="25R1y">
+      <property role="3tVfz5" value="8006565748934927820" />
+      <property role="TrG5h" value="PROTECTED" />
+      <property role="1L1pqM" value="#" />
+    </node>
+    <node concept="25R33" id="3IM8gFIRmj1" role="25R1y">
+      <property role="3tVfz5" value="7855390754131948489" />
+      <property role="TrG5h" value="PACKAGE" />
+      <property role="1L1pqM" value="~" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFIRmj4">
+    <property role="EcuMT" value="4301536924933121220" />
+    <property role="TrG5h" value="MermaidClassMemberBase" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3IM8gFIRmj8" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924933121224" />
+      <property role="TrG5h" value="visibility" />
+      <ref role="AX2Wp" node="3IM8gFIRmiW" resolve="EMermaidVisibility" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFIRmj5">
+    <property role="EcuMT" value="4301536924933121221" />
+    <property role="TrG5h" value="MermaidClassAttribute" />
+    <property role="34LRSv" value="attribute" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1TJDcQ" node="3IM8gFIRmj4" resolve="MermaidClassMemberBase" />
+    <node concept="1TJgyi" id="3IM8gFIRmj9" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924933121225" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIRmja" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFIRmj6">
+    <property role="EcuMT" value="4301536924933121222" />
+    <property role="TrG5h" value="MermaidClassMethodParameter" />
+    <property role="34LRSv" value="parameter" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3IM8gFIRmjb" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924933121227" />
+      <property role="TrG5h" value="type" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIRmjc" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFIRmj7">
+    <property role="EcuMT" value="4301536924933121223" />
+    <property role="TrG5h" value="MermaidClassMethod" />
+    <property role="34LRSv" value="method" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1TJDcQ" node="3IM8gFIRmj4" resolve="MermaidClassMemberBase" />
+    <node concept="1TJgyi" id="3IM8gFIRmjd" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924933121229" />
+      <property role="TrG5h" value="returnType" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFIRmje" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924933121230" />
+      <property role="20kJfa" value="parameters" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3IM8gFIRmj6" resolve="MermaidClassMethodParameter" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIRmjf" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

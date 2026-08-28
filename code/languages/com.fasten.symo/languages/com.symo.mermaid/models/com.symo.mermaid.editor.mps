@@ -52,8 +52,11 @@
       </concept>
       <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
+        <property id="1156252885376" name="separatorLayoutConstraint" index="Q2I2d" />
         <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
+        <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
       </concept>
       <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
       <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
@@ -315,7 +318,9 @@
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+        <child id="8945098465480008160" name="transformationText" index="ZWbT9" />
       </concept>
+      <concept id="8945098465480383073" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell_TransformationText" flags="ig" index="ZYGn8" />
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
@@ -3562,6 +3567,7 @@
   </node>
   <node concept="PKFIW" id="2CJhEpPyCR0">
     <property role="TrG5h" value="MermaidDiagramClassDiagramTextualEditorComponent" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
     <ref role="1XX52x" to="oqaz:2CJhEpPyCOq" resolve="MermaidClassDiagram" />
     <node concept="3F2HdR" id="2CJhEpPyCR1" role="2wV5jI">
       <ref role="1NtTu8" to="oqaz:2CJhEpPyCOr" resolve="content" />
@@ -3695,7 +3701,7 @@
     <ref role="1XX52x" to="oqaz:3IM8gFID1YE" resolve="MermaidFlowchartEdge" />
     <node concept="3EZMnI" id="3IM8gFIDfs_" role="2wV5jI">
       <node concept="3F1sOY" id="3IM8gFIGG5l" role="3EZMnx">
-        <ref role="1NtTu8" to="oqaz:3IM8gFIGbg1" />
+        <ref role="1NtTu8" to="oqaz:3IM8gFIGbg1" resolve="from" />
       </node>
       <node concept="3F0ifn" id="3IM8gFIDfsG" role="3EZMnx">
         <property role="3F0ifm" value="--&gt;" />
@@ -3724,7 +3730,7 @@
         </node>
       </node>
       <node concept="3F1sOY" id="3IM8gFIGG5p" role="3EZMnx">
-        <ref role="1NtTu8" to="oqaz:3IM8gFIGbg4" />
+        <ref role="1NtTu8" to="oqaz:3IM8gFIGbg4" resolve="to" />
       </node>
       <node concept="2iRfu4" id="3IM8gFIDfsO" role="2iSdaV" />
     </node>
@@ -3741,7 +3747,7 @@
     <property role="3GE5qa" value="diagram.mermaid.flowchart" />
     <ref role="1XX52x" to="oqaz:3IM8gFIGatW" resolve="MermaidFlowchartNodeRef" />
     <node concept="1iCGBv" id="3IM8gFIGG5b" role="2wV5jI">
-      <ref role="1NtTu8" to="oqaz:3IM8gFIGatX" />
+      <ref role="1NtTu8" to="oqaz:3IM8gFIGatX" resolve="node" />
       <node concept="1sVBvm" id="3IM8gFIGG5e" role="1sWHZn">
         <ref role="1XX52x" to="oqaz:3IM8gFID1YD" resolve="MermaidFlowchartNode" />
         <node concept="3F0A7n" id="3IM8gFIGG5g" role="2wV5jI">
@@ -3780,13 +3786,177 @@
         <node concept="2iRfu4" id="3IM8gFIJtCy" role="2iSdaV" />
       </node>
       <node concept="3F2HdR" id="3IM8gFIJtCz" role="3EZMnx">
-        <ref role="1NtTu8" to="oqaz:3IM8gFIITbh" />
+        <ref role="1NtTu8" to="oqaz:3IM8gFIITbh" resolve="content" />
         <node concept="2iRkQZ" id="3IM8gFIJtC$" role="2czzBx" />
       </node>
       <node concept="3F0ifn" id="3IM8gFIJtC_" role="3EZMnx">
         <property role="3F0ifm" value="end" />
       </node>
       <node concept="2iRkQZ" id="3IM8gFIJtCA" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFIO$eb">
+    <property role="TrG5h" value="MermaidClassDiagramStart_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1XX52x" to="oqaz:3IM8gFIN6qy" resolve="MermaidClassDiagramStart" />
+    <node concept="3F0ifn" id="3IM8gFIO$ed" role="2wV5jI">
+      <property role="3F0ifm" value="classDiagram" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFIO$ee">
+    <property role="TrG5h" value="MermaidClassDeclaration_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1XX52x" to="oqaz:3IM8gFIN6qz" resolve="MermaidClassDeclaration" />
+    <node concept="3EZMnI" id="3IM8gFIO$eg" role="2wV5jI">
+      <node concept="3EZMnI" id="3IM8gFIQuic" role="3EZMnx">
+        <node concept="2iRfu4" id="3IM8gFIQuid" role="2iSdaV" />
+        <node concept="3F0ifn" id="3IM8gFIO$eh" role="3EZMnx">
+          <property role="3F0ifm" value="class " />
+        </node>
+        <node concept="3F0A7n" id="3IM8gFIO$ei" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="3F0ifn" id="3IM8gFIO$ej" role="3EZMnx">
+          <property role="3F0ifm" value="{" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="3IM8gFIQuie" role="3EZMnx">
+        <node concept="2iRfu4" id="3IM8gFIQuif" role="2iSdaV" />
+        <node concept="3XFhqQ" id="3IM8gFIQuih" role="3EZMnx" />
+        <node concept="3F2HdR" id="3IM8gFIO$ek" role="3EZMnx">
+          <ref role="1NtTu8" to="oqaz:3IM8gFIN6qC" resolve="members" />
+          <node concept="2iRkQZ" id="3IM8gFIO$el" role="2czzBx" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3IM8gFIO$em" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+      </node>
+      <node concept="2iRkQZ" id="3IM8gFIO$en" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFIO$er">
+    <property role="TrG5h" value="MermaidClassRelationshipRef_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1XX52x" to="oqaz:3IM8gFIN6q_" resolve="MermaidClassRelationshipRef" />
+    <node concept="1iCGBv" id="3IM8gFIO$et" role="2wV5jI">
+      <ref role="1NtTu8" to="oqaz:3IM8gFIN6qG" resolve="class" />
+      <node concept="1sVBvm" id="3IM8gFIO$ew" role="1sWHZn">
+        <ref role="1XX52x" to="oqaz:3IM8gFIN6qz" resolve="MermaidClassDeclaration" />
+        <node concept="3F0A7n" id="3IM8gFIO$ey" role="2wV5jI">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFIO$ez">
+    <property role="TrG5h" value="MermaidClassRelationship_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1XX52x" to="oqaz:3IM8gFIN6qA" resolve="MermaidClassRelationship" />
+    <node concept="3EZMnI" id="3IM8gFIO$e_" role="2wV5jI">
+      <node concept="3F1sOY" id="3IM8gFIO$eA" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFIN6qJ" resolve="from" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFIO$eB" role="3EZMnx">
+        <property role="3F0ifm" value=" &lt;|-- " />
+      </node>
+      <node concept="3F1sOY" id="3IM8gFIO$eC" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFIN6qK" resolve="to" />
+      </node>
+      <node concept="_tjkj" id="3IM8gFIO$eD" role="3EZMnx">
+        <node concept="3EZMnI" id="3IM8gFIO$eF" role="_tjki">
+          <node concept="3F0ifn" id="3IM8gFIO$eG" role="3EZMnx">
+            <property role="3F0ifm" value=":" />
+          </node>
+          <node concept="3F0A7n" id="3IM8gFIO$eH" role="3EZMnx">
+            <ref role="1NtTu8" to="oqaz:3IM8gFIN6qI" resolve="label" />
+          </node>
+          <node concept="2iRfu4" id="3IM8gFIO$eI" role="2iSdaV" />
+        </node>
+        <node concept="ZYGn8" id="3IM8gFJ00TC" role="ZWbT9">
+          <node concept="3clFbS" id="3IM8gFJ00TE" role="2VODD2">
+            <node concept="3clFbF" id="3IM8gFJ00TF" role="3cqZAp">
+              <node concept="Xl_RD" id="3IM8gFJ00TH" role="3clFbG">
+                <property role="Xl_RC" value=":" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="3IM8gFIO$eJ" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFITeNv">
+    <property role="TrG5h" value="MermaidClassAttribute_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1XX52x" to="oqaz:3IM8gFIRmj5" resolve="MermaidClassAttribute" />
+    <node concept="3EZMnI" id="3IM8gFITeNx" role="2wV5jI">
+      <node concept="3F0A7n" id="3IM8gFITeNy" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFIRmj8" resolve="visibility" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFITeNz" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFIRmj9" resolve="type" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFITeN$" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="3IM8gFITeN_" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFITeNA">
+    <property role="TrG5h" value="MermaidClassMethodParameter_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1XX52x" to="oqaz:3IM8gFIRmj6" resolve="MermaidClassMethodParameter" />
+    <node concept="3EZMnI" id="3IM8gFITeNC" role="2wV5jI">
+      <node concept="3F0A7n" id="3IM8gFITeND" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFIRmjb" resolve="type" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFITeNE" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="3IM8gFITeNF" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFITeNG">
+    <property role="TrG5h" value="MermaidClassMethod_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.class" />
+    <ref role="1XX52x" to="oqaz:3IM8gFIRmj7" resolve="MermaidClassMethod" />
+    <node concept="3EZMnI" id="3IM8gFITeNI" role="2wV5jI">
+      <node concept="3F0A7n" id="3IM8gFITeNJ" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFIRmj8" resolve="visibility" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFITeNK" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFITeNL" role="3EZMnx">
+        <property role="3F0ifm" value="(" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+        <node concept="11LMrY" id="3IM8gFIWKiC" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="3IM8gFITeNM" role="3EZMnx">
+        <property role="2czwfO" value=", " />
+        <property role="Q2I2d" value="g$1Qtxb/punctuation" />
+        <ref role="1NtTu8" to="oqaz:3IM8gFIRmje" resolve="parameters" />
+        <node concept="2iRfu4" id="3IM8gFITeNN" role="2czzBx" />
+        <node concept="3F0ifn" id="3IM8gFIXPVn" role="2czzBI" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFITeNO" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+      </node>
+      <node concept="_tjkj" id="3IM8gFITeNP" role="3EZMnx">
+        <node concept="3EZMnI" id="3IM8gFITeNR" role="_tjki">
+          <node concept="3F0ifn" id="3IM8gFITeNS" role="3EZMnx">
+            <property role="3F0ifm" value=" " />
+          </node>
+          <node concept="3F0A7n" id="3IM8gFITeNT" role="3EZMnx">
+            <ref role="1NtTu8" to="oqaz:3IM8gFIRmjd" resolve="returnType" />
+          </node>
+          <node concept="2iRfu4" id="3IM8gFITeNU" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="3IM8gFITeNV" role="2iSdaV" />
     </node>
   </node>
 </model>
