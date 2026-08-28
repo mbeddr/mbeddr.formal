@@ -411,6 +411,21 @@
       <property role="TrG5h" value="DIAMOND" />
       <property role="1L1pqM" value="Diamond { }" />
     </node>
+    <node concept="25R33" id="3IM8gFIE$HL" role="25R1y">
+      <property role="3tVfz5" value="rounded_v1" />
+      <property role="TrG5h" value="ROUNDED" />
+      <property role="1L1pqM" value="Rounded ( )" />
+    </node>
+    <node concept="25R33" id="3IM8gFIE$HO" role="25R1y">
+      <property role="3tVfz5" value="stadium_v1" />
+      <property role="TrG5h" value="STADIUM" />
+      <property role="1L1pqM" value="Stadium ([ ])" />
+    </node>
+    <node concept="25R33" id="3IM8gFIE$HR" role="25R1y">
+      <property role="3tVfz5" value="circle_v1" />
+      <property role="TrG5h" value="CIRCLE" />
+      <property role="1L1pqM" value="Circle (( ))" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFID1YC">
     <property role="EcuMT" value="4301536924929367976" />
@@ -475,6 +490,36 @@
     </node>
     <node concept="PrWs8" id="3IM8gFID1YO" role="PzmwI">
       <ref role="PrY4T" node="2CJhEpPyCOw" resolve="IMermaidFlowchartDiagramContent" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFIE$I2" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924929772418" />
+      <property role="TrG5h" value="arrowType" />
+      <ref role="AX2Wp" node="3IM8gFIE$HU" resolve="EMermaidFlowchartArrowType" />
+    </node>
+  </node>
+  <node concept="25R3W" id="3IM8gFIE$HU">
+    <property role="3F6X1D" value="4301536924929772410" />
+    <property role="TrG5h" value="EMermaidFlowchartArrowType" />
+    <ref role="1H5jkz" node="3IM8gFIE$HW" resolve="SOLID" />
+    <node concept="25R33" id="3IM8gFIE$HW" role="25R1y">
+      <property role="3tVfz5" value="1078119355981439492" />
+      <property role="TrG5h" value="SOLID" />
+      <property role="1L1pqM" value="Solid ( --&gt; )" />
+    </node>
+    <node concept="25R33" id="3IM8gFIE$HX" role="25R1y">
+      <property role="3tVfz5" value="5436753649553105503" />
+      <property role="TrG5h" value="DOTTED" />
+      <property role="1L1pqM" value="Dotted ( -.-&gt; )" />
+    </node>
+    <node concept="25R33" id="3IM8gFIE$HY" role="25R1y">
+      <property role="3tVfz5" value="7088038916659428129" />
+      <property role="TrG5h" value="THICK" />
+      <property role="1L1pqM" value="Thick ( ==&gt; )" />
+    </node>
+    <node concept="25R33" id="3IM8gFIE$HZ" role="25R1y">
+      <property role="3tVfz5" value="8518526038428922433" />
+      <property role="TrG5h" value="OPEN" />
+      <property role="1L1pqM" value="Open link ( --- )" />
     </node>
   </node>
 </model>

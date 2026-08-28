@@ -30,6 +30,7 @@
       <concept id="4301536924929104369" name="com.symo.mermaid.structure.MermaidPieStart" flags="ng" index="3l4zzV" />
       <concept id="4301536924929367978" name="com.symo.mermaid.structure.MermaidFlowchartEdge" flags="ng" index="3l5zUw">
         <property id="4301536924929367985" name="label" index="3l5zUV" />
+        <property id="4301536924929772418" name="arrowType" index="3l66E8" />
         <reference id="4301536924929367986" name="from" index="3l5zUS" />
         <reference id="4301536924929367987" name="to" index="3l5zUT" />
       </concept>
@@ -1103,8 +1104,20 @@
       </node>
       <node concept="3l5zUw" id="3IM8gFIDxVR" role="349WCz">
         <property role="3l5zUV" value="No" />
+        <property role="3l66E8" value="4HNeEesUY9v/DOTTED" />
         <ref role="3l5zUS" node="3IM8gFIDxVN" resolve="B" />
         <ref role="3l5zUT" node="3IM8gFIDxVM" resolve="A" />
+      </node>
+      <node concept="3l5zUz" id="3IM8gFIFDRM" role="349WCz">
+        <property role="TrG5h" value="D" />
+        <property role="3l5zUB" value="Done" />
+        <property role="3l5zU$" value="3IM8gFIE$HO/STADIUM" />
+      </node>
+      <node concept="3l5zUw" id="3IM8gFIFDRN" role="349WCz">
+        <property role="3l5zUV" value="Finish" />
+        <property role="3l66E8" value="69tLtsPCjGx/THICK" />
+        <ref role="3l5zUS" node="3IM8gFIDxVO" resolve="C" />
+        <ref role="3l5zUT" node="3IM8gFIFDRM" resolve="D" />
       </node>
     </node>
   </node>
