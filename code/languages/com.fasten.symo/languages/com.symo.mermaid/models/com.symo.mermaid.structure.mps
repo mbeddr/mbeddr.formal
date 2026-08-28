@@ -539,5 +539,30 @@
       <ref role="20lvS9" node="3IM8gFID1YD" resolve="MermaidFlowchartNode" />
     </node>
   </node>
+  <node concept="1TIwiD" id="3IM8gFIITbf">
+    <property role="EcuMT" value="4301536924930904783" />
+    <property role="TrG5h" value="MermaidFlowchartSubgraph" />
+    <property role="34LRSv" value="subgraph" />
+    <property role="3GE5qa" value="diagram.mermaid.flowchart" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="3IM8gFIITbg" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924930904784" />
+      <property role="TrG5h" value="title" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFIITbh" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924930904785" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="2CJhEpPyCOw" resolve="IMermaidFlowchartDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIITbi" role="PzmwI">
+      <ref role="PrY4T" node="2CJhEpPyCOw" resolve="IMermaidFlowchartDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIITbj" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
 </model>
 

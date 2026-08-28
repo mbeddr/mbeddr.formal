@@ -3751,5 +3751,43 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="3IM8gFIJtCl">
+    <property role="TrG5h" value="MermaidFlowchartSubgraph_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.flowchart" />
+    <ref role="1XX52x" to="oqaz:3IM8gFIITbf" resolve="MermaidFlowchartSubgraph" />
+    <node concept="3EZMnI" id="3IM8gFIJtCn" role="2wV5jI">
+      <node concept="3EZMnI" id="3IM8gFIJtCo" role="3EZMnx">
+        <node concept="3F0ifn" id="3IM8gFIJtCp" role="3EZMnx">
+          <property role="3F0ifm" value="subgraph " />
+        </node>
+        <node concept="3F0A7n" id="3IM8gFIJtCq" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="_tjkj" id="3IM8gFIJtCr" role="3EZMnx">
+          <node concept="3EZMnI" id="3IM8gFIJtCt" role="_tjki">
+            <node concept="3F0ifn" id="3IM8gFIJtCu" role="3EZMnx">
+              <property role="3F0ifm" value="[" />
+            </node>
+            <node concept="3F0A7n" id="3IM8gFIJtCv" role="3EZMnx">
+              <ref role="1NtTu8" to="oqaz:3IM8gFIITbg" resolve="title" />
+            </node>
+            <node concept="3F0ifn" id="3IM8gFIJtCw" role="3EZMnx">
+              <property role="3F0ifm" value="]" />
+            </node>
+            <node concept="2iRfu4" id="3IM8gFIJtCx" role="2iSdaV" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="3IM8gFIJtCy" role="2iSdaV" />
+      </node>
+      <node concept="3F2HdR" id="3IM8gFIJtCz" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFIITbh" />
+        <node concept="2iRkQZ" id="3IM8gFIJtC$" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFIJtC_" role="3EZMnx">
+        <property role="3F0ifm" value="end" />
+      </node>
+      <node concept="2iRkQZ" id="3IM8gFIJtCA" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 
