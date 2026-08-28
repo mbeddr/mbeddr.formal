@@ -429,6 +429,11 @@
       <property role="TrG5h" value="CIRCLE" />
       <property role="1L1pqM" value="Circle (( ))" />
     </node>
+    <node concept="25R33" id="3IM8gFIKcaK" role="25R1y">
+      <property role="3tVfz5" value="cylinder_v1" />
+      <property role="TrG5h" value="CYLINDER" />
+      <property role="1L1pqM" value="Cylinder [( )]" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFID1YC">
     <property role="EcuMT" value="4301536924929367976" />
