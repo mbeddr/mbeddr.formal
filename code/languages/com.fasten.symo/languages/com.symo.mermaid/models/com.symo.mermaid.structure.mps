@@ -596,6 +596,31 @@
       <property role="TrG5h" value="INHERITANCE" />
       <property role="1L1pqM" value="Inheritance &lt;|--" />
     </node>
+    <node concept="25R33" id="3IM8gFJ16oQ" role="25R1y">
+      <property role="3tVfz5" value="composition_v1" />
+      <property role="TrG5h" value="COMPOSITION" />
+      <property role="1L1pqM" value="Composition *--" />
+    </node>
+    <node concept="25R33" id="3IM8gFJ16oU" role="25R1y">
+      <property role="3tVfz5" value="aggregation_v1" />
+      <property role="TrG5h" value="AGGREGATION" />
+      <property role="1L1pqM" value="Aggregation o--" />
+    </node>
+    <node concept="25R33" id="3IM8gFJ16oY" role="25R1y">
+      <property role="3tVfz5" value="association_v1" />
+      <property role="TrG5h" value="ASSOCIATION" />
+      <property role="1L1pqM" value="Association --&gt;" />
+    </node>
+    <node concept="25R33" id="3IM8gFJ16p2" role="25R1y">
+      <property role="3tVfz5" value="dependency_v1" />
+      <property role="TrG5h" value="DEPENDENCY" />
+      <property role="1L1pqM" value="Dependency ..&gt;" />
+    </node>
+    <node concept="25R33" id="3IM8gFJ16p6" role="25R1y">
+      <property role="3tVfz5" value="realization_v1" />
+      <property role="TrG5h" value="REALIZATION" />
+      <property role="1L1pqM" value="Realization ..|&gt;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFIN6qy">
     <property role="EcuMT" value="4301536924932007586" />
@@ -625,6 +650,11 @@
     </node>
     <node concept="PrWs8" id="3IM8gFIN6qE" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFJ16pa" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924935677514" />
+      <property role="TrG5h" value="stereotype" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFIN6q_">

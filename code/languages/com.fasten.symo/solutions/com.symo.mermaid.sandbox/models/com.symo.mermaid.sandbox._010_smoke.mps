@@ -61,10 +61,12 @@
       </concept>
       <concept id="4301536924932007586" name="com.symo.mermaid.structure.MermaidClassDiagramStart" flags="ng" index="3lv$uC" />
       <concept id="4301536924932007587" name="com.symo.mermaid.structure.MermaidClassDeclaration" flags="ng" index="3lv$uD">
+        <property id="4301536924935677514" name="stereotype" index="3kH$t0" />
         <child id="4301536924932007592" name="members" index="3lv$uy" />
       </concept>
       <concept id="4301536924932007590" name="com.symo.mermaid.structure.MermaidClassRelationship" flags="ng" index="3lv$uG">
         <property id="4301536924932007598" name="label" index="3lv$u$" />
+        <property id="4301536924932007597" name="kind" index="3lv$uB" />
         <child id="4301536924932007599" name="from" index="3lv$u_" />
         <child id="4301536924932007600" name="to" index="3lv$uU" />
       </concept>
@@ -1423,6 +1425,109 @@
         </node>
       </node>
       <node concept="34aC2Y" id="3IM8gFIYVyC" role="349WCz" />
+    </node>
+  </node>
+  <node concept="1K5fmX" id="3IM8gFJ60v_">
+    <property role="TrG5h" value="_032_class_diagram_relationships" />
+    <node concept="1vDsIW" id="3IM8gFJ60vA" role="1K2TBo">
+      <property role="145Srp" value="100" />
+      <property role="1vESKz" value="1" />
+      <property role="TrG5h" value="vehicle_class_diagram" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="3lv$uC" id="3IM8gFJ60vB" role="349WCz" />
+      <node concept="3lv$uD" id="3IM8gFJ60vC" role="349WCz">
+        <property role="TrG5h" value="Vehicle" />
+        <property role="3kH$t0" value="abstract" />
+        <node concept="3lrOnd" id="3IM8gFJ60vD" role="3lv$uy">
+          <property role="TrG5h" value="move" />
+          <property role="3lrOn7" value="void" />
+        </node>
+      </node>
+      <node concept="3lv$uD" id="3IM8gFJ60vE" role="349WCz">
+        <property role="TrG5h" value="Car" />
+        <node concept="3lrOnd" id="3IM8gFJ60vF" role="3lv$uy">
+          <property role="TrG5h" value="honk" />
+          <property role="3lrOn7" value="void" />
+        </node>
+      </node>
+      <node concept="3lv$uD" id="3IM8gFJ60vG" role="349WCz">
+        <property role="TrG5h" value="Engine" />
+        <node concept="3lrOnd" id="3IM8gFJ60vH" role="3lv$uy">
+          <property role="TrG5h" value="start" />
+          <property role="3lrOn7" value="void" />
+        </node>
+      </node>
+      <node concept="3lv$uD" id="3IM8gFJ60vI" role="349WCz">
+        <property role="TrG5h" value="Wheel" />
+      </node>
+      <node concept="3lv$uD" id="3IM8gFJ60vJ" role="349WCz">
+        <property role="TrG5h" value="Driver" />
+      </node>
+      <node concept="3lv$uD" id="3IM8gFJ60vK" role="349WCz">
+        <property role="TrG5h" value="Road" />
+      </node>
+      <node concept="3lv$uD" id="3IM8gFJ60vL" role="349WCz">
+        <property role="TrG5h" value="Drivable" />
+        <property role="3kH$t0" value="interface" />
+        <node concept="3lrOnd" id="3IM8gFJ60vM" role="3lv$uy">
+          <property role="TrG5h" value="drive" />
+          <property role="3lrOn7" value="void" />
+        </node>
+      </node>
+      <node concept="3lv$uG" id="3IM8gFJ60vN" role="349WCz">
+        <node concept="3lv$uJ" id="3IM8gFJ60vQ" role="3lv$u_">
+          <ref role="3lv$uA" node="3IM8gFJ60vC" resolve="Vehicle" />
+        </node>
+        <node concept="3lv$uJ" id="3IM8gFJ60vR" role="3lv$uU">
+          <ref role="3lv$uA" node="3IM8gFJ60vE" resolve="Car" />
+        </node>
+      </node>
+      <node concept="3lv$uG" id="3IM8gFJ60vS" role="349WCz">
+        <property role="3lv$uB" value="3IM8gFJ16oQ/COMPOSITION" />
+        <node concept="3lv$uJ" id="3IM8gFJ60vV" role="3lv$u_">
+          <ref role="3lv$uA" node="3IM8gFJ60vE" resolve="Car" />
+        </node>
+        <node concept="3lv$uJ" id="3IM8gFJ60vW" role="3lv$uU">
+          <ref role="3lv$uA" node="3IM8gFJ60vG" resolve="Engine" />
+        </node>
+      </node>
+      <node concept="3lv$uG" id="3IM8gFJ60vX" role="349WCz">
+        <property role="3lv$uB" value="3IM8gFJ16oU/AGGREGATION" />
+        <node concept="3lv$uJ" id="3IM8gFJ60w0" role="3lv$u_">
+          <ref role="3lv$uA" node="3IM8gFJ60vE" resolve="Car" />
+        </node>
+        <node concept="3lv$uJ" id="3IM8gFJ60w1" role="3lv$uU">
+          <ref role="3lv$uA" node="3IM8gFJ60vI" resolve="Wheel" />
+        </node>
+      </node>
+      <node concept="3lv$uG" id="3IM8gFJ60w2" role="349WCz">
+        <property role="3lv$uB" value="3IM8gFJ16oY/ASSOCIATION" />
+        <node concept="3lv$uJ" id="3IM8gFJ60w5" role="3lv$u_">
+          <ref role="3lv$uA" node="3IM8gFJ60vJ" resolve="Driver" />
+        </node>
+        <node concept="3lv$uJ" id="3IM8gFJ60w6" role="3lv$uU">
+          <ref role="3lv$uA" node="3IM8gFJ60vE" resolve="Car" />
+        </node>
+      </node>
+      <node concept="3lv$uG" id="3IM8gFJ60w7" role="349WCz">
+        <property role="3lv$uB" value="3IM8gFJ16p2/DEPENDENCY" />
+        <property role="3lv$u$" value="uses" />
+        <node concept="3lv$uJ" id="3IM8gFJ60wa" role="3lv$u_">
+          <ref role="3lv$uA" node="3IM8gFJ60vE" resolve="Car" />
+        </node>
+        <node concept="3lv$uJ" id="3IM8gFJ60wb" role="3lv$uU">
+          <ref role="3lv$uA" node="3IM8gFJ60vK" resolve="Road" />
+        </node>
+      </node>
+      <node concept="3lv$uG" id="3IM8gFJ60wc" role="349WCz">
+        <property role="3lv$uB" value="3IM8gFJ16p6/REALIZATION" />
+        <node concept="3lv$uJ" id="3IM8gFJ60wf" role="3lv$u_">
+          <ref role="3lv$uA" node="3IM8gFJ60vE" resolve="Car" />
+        </node>
+        <node concept="3lv$uJ" id="3IM8gFJ60wg" role="3lv$uU">
+          <ref role="3lv$uA" node="3IM8gFJ60vL" resolve="Drivable" />
+        </node>
+      </node>
     </node>
   </node>
 </model>

@@ -3820,6 +3820,24 @@
           <property role="3F0ifm" value="{" />
         </node>
       </node>
+      <node concept="3EZMnI" id="3IM8gFJ4FHs" role="3EZMnx">
+        <node concept="3XFhqQ" id="3IM8gFJ4FHt" role="3EZMnx" />
+        <node concept="_tjkj" id="3IM8gFJ4FHu" role="3EZMnx">
+          <node concept="3EZMnI" id="3IM8gFJ4FHw" role="_tjki">
+            <node concept="3F0ifn" id="3IM8gFJ4FHx" role="3EZMnx">
+              <property role="3F0ifm" value="&lt;&lt;" />
+            </node>
+            <node concept="3F0A7n" id="3IM8gFJ4FHy" role="3EZMnx">
+              <ref role="1NtTu8" to="oqaz:3IM8gFJ16pa" resolve="stereotype" />
+            </node>
+            <node concept="3F0ifn" id="3IM8gFJ4FHz" role="3EZMnx">
+              <property role="3F0ifm" value="&gt;&gt;" />
+            </node>
+            <node concept="2iRfu4" id="3IM8gFJ4FH$" role="2iSdaV" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="3IM8gFJ4FH_" role="2iSdaV" />
+      </node>
       <node concept="3EZMnI" id="3IM8gFIQuie" role="3EZMnx">
         <node concept="2iRfu4" id="3IM8gFIQuif" role="2iSdaV" />
         <node concept="3XFhqQ" id="3IM8gFIQuih" role="3EZMnx" />
