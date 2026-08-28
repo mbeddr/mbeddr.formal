@@ -1296,5 +1296,46 @@
       </node>
     </node>
   </node>
+  <node concept="1K5fmX" id="3IM8gFIN3bo">
+    <property role="TrG5h" value="_024_flowchart_inline_declare_diagram" />
+    <node concept="1vDsIS" id="3IM8gFIN3bp" role="1K2TBo">
+      <property role="145Srp" value="100" />
+      <property role="1vESKz" value="1" />
+      <property role="TrG5h" value="inline_declare_showcase" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="3l5zUy" id="3IM8gFIN3bq" role="349WCz" />
+      <node concept="3l5zUw" id="3IM8gFIN3br" role="349WCz">
+        <node concept="3l5zUz" id="3IM8gFIN3bu" role="3l0Dkb">
+          <property role="TrG5h" value="IA" />
+          <property role="3l5zUB" value="Start" />
+        </node>
+        <node concept="3l5zUz" id="3IM8gFIN3bv" role="3l0Dke">
+          <property role="TrG5h" value="IB" />
+          <property role="3l5zUB" value="Decision" />
+          <property role="3l5zU$" value="5cFfRJdfMxN/DIAMOND" />
+        </node>
+      </node>
+      <node concept="3l5zUw" id="3IM8gFIN3bw" role="349WCz">
+        <property role="3l5zUV" value="Yes" />
+        <node concept="3l0CpQ" id="3IM8gFIN3bz" role="3l0Dkb">
+          <ref role="3l0CpR" node="3IM8gFIN3bv" resolve="IB" />
+        </node>
+        <node concept="3l5zUz" id="3IM8gFIN3b$" role="3l0Dke">
+          <property role="TrG5h" value="IC" />
+          <property role="3l5zUB" value="Yes" />
+        </node>
+      </node>
+      <node concept="3l5zUw" id="3IM8gFIN3b_" role="349WCz">
+        <property role="3l5zUV" value="No" />
+        <node concept="3l0CpQ" id="3IM8gFIN3bC" role="3l0Dkb">
+          <ref role="3l0CpR" node="3IM8gFIN3bv" resolve="IB" />
+        </node>
+        <node concept="3l5zUz" id="3IM8gFIN3bD" role="3l0Dke">
+          <property role="TrG5h" value="ID" />
+          <property role="3l5zUB" value="No" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

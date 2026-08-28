@@ -472,6 +472,9 @@
     <node concept="PrWs8" id="3IM8gFID1YK" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="3IM8gFIKV8S" role="PzmwI">
+      <ref role="PrY4T" node="3IM8gFIKUiP" resolve="IMermaidFlowchartEdgeEndpoint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFID1YE">
     <property role="EcuMT" value="4301536924929367978" />
@@ -497,14 +500,14 @@
       <property role="20kJfa" value="from" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3IM8gFIGatW" resolve="MermaidFlowchartNodeRef" />
+      <ref role="20lvS9" node="3IM8gFIKUiP" resolve="IMermaidFlowchartEdgeEndpoint" />
     </node>
     <node concept="1TJgyj" id="3IM8gFIGbg4" role="1TKVEi">
       <property role="IQ2ns" value="4301536924930192388" />
       <property role="20kJfa" value="to" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3IM8gFIGatW" resolve="MermaidFlowchartNodeRef" />
+      <ref role="20lvS9" node="3IM8gFIKUiP" resolve="IMermaidFlowchartEdgeEndpoint" />
     </node>
   </node>
   <node concept="25R3W" id="3IM8gFIE$HU">
@@ -543,6 +546,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3IM8gFID1YD" resolve="MermaidFlowchartNode" />
     </node>
+    <node concept="PrWs8" id="3IM8gFIKV8V" role="PzmwI">
+      <ref role="PrY4T" node="3IM8gFIKUiP" resolve="IMermaidFlowchartEdgeEndpoint" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFIITbf">
     <property role="EcuMT" value="4301536924930904783" />
@@ -568,6 +574,12 @@
     <node concept="PrWs8" id="3IM8gFIITbj" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="3IM8gFIKUiP">
+    <property role="EcuMT" value="4301536924931433653" />
+    <property role="TrG5h" value="IMermaidFlowchartEdgeEndpoint" />
+    <property role="R4oN_" value="an edge from/to endpoint: either a reference to an existing node or an inline node declaration" />
+    <property role="3GE5qa" value="diagram.mermaid.flowchart" />
   </node>
 </model>
 
