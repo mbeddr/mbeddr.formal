@@ -8,6 +8,7 @@
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -78,10 +79,15 @@
       <concept id="1103016434866" name="jetbrains.mps.lang.editor.structure.CellModel_JComponent" flags="sg" stub="8104358048506731196" index="3gTLQM">
         <child id="1176475119347" name="componentProvider" index="3FoqZy" />
       </concept>
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ngI" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389214265" name="jetbrains.mps.lang.editor.structure.EditorCellModel" flags="ng" index="3EYTF0">
@@ -300,6 +306,11 @@
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199569711397" name="jetbrains.mps.baseLanguage.closures.structure.ClosureLiteral" flags="nn" index="1bVj0M">
         <child id="1199569916463" name="body" index="1bW5cS" />
+      </concept>
+    </language>
+    <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
+        <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
@@ -3537,6 +3548,7 @@
   </node>
   <node concept="PKFIW" id="1oekUjiaDgx">
     <property role="TrG5h" value="MermaidDiagramPieTextualEditorComponent" />
+    <property role="3GE5qa" value="diagram.mermaid.pie" />
     <ref role="1XX52x" to="oqaz:1lrw0h_k1Bq" resolve="MermaidPieDiagram" />
     <node concept="3F2HdR" id="1oekUjiaDg$" role="2wV5jI">
       <ref role="1NtTu8" to="oqaz:1oekUjiapA8" resolve="content" />
@@ -3594,6 +3606,7 @@
   </node>
   <node concept="PKFIW" id="2CJhEpPyCTs">
     <property role="TrG5h" value="MermaidDiagramFlowchartTextualEditorComponent" />
+    <property role="3GE5qa" value="diagram.mermaid.flowchart" />
     <ref role="1XX52x" to="oqaz:2CJhEpPyCOu" resolve="MermaidFlowchartDiagram" />
     <node concept="3F2HdR" id="2CJhEpPyCTt" role="2wV5jI">
       <ref role="1NtTu8" to="oqaz:2CJhEpPyCOv" resolve="content" />
@@ -3659,6 +3672,95 @@
         <ref role="1NtTu8" to="oqaz:3IM8gFIC1BS" resolve="value" />
       </node>
       <node concept="2iRfu4" id="3IM8gFICen9" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFIDfsk">
+    <property role="TrG5h" value="MermaidFlowchartStart_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.flowchart" />
+    <ref role="1XX52x" to="oqaz:3IM8gFID1YC" resolve="MermaidFlowchartStart" />
+    <node concept="3EZMnI" id="3IM8gFIDfsm" role="2wV5jI">
+      <node concept="3F0ifn" id="3IM8gFIDfsn" role="3EZMnx">
+        <property role="3F0ifm" value="flowchart" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFIDfso" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFID1YF" resolve="direction" />
+      </node>
+      <node concept="2iRfu4" id="3IM8gFIDfsp" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFIDfsq">
+    <property role="TrG5h" value="MermaidFlowchartNode_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.flowchart" />
+    <ref role="1XX52x" to="oqaz:3IM8gFID1YD" resolve="MermaidFlowchartNode" />
+    <node concept="3EZMnI" id="3IM8gFIDfss" role="2wV5jI">
+      <node concept="3F0A7n" id="3IM8gFIDfst" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFIDfsu" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFID1YI" resolve="shape" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFIDfsv" role="3EZMnx">
+        <property role="3F0ifm" value="[" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFIDfsw" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFID1YH" resolve="label" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFIDfsx" role="3EZMnx">
+        <property role="3F0ifm" value="]" />
+      </node>
+      <node concept="2iRfu4" id="3IM8gFIDfsy" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFIDfsz">
+    <property role="TrG5h" value="MermaidFlowchartEdge_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.flowchart" />
+    <ref role="1XX52x" to="oqaz:3IM8gFID1YE" resolve="MermaidFlowchartEdge" />
+    <node concept="3EZMnI" id="3IM8gFIDfs_" role="2wV5jI">
+      <node concept="1iCGBv" id="3IM8gFIDfsA" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFID1YM" resolve="from" />
+        <node concept="1sVBvm" id="3IM8gFIDfsD" role="1sWHZn">
+          <ref role="1XX52x" to="oqaz:3IM8gFID1YD" resolve="MermaidFlowchartNode" />
+          <node concept="3F0A7n" id="3IM8gFIDfsF" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3IM8gFIDfsG" role="3EZMnx">
+        <property role="3F0ifm" value="--&gt;" />
+      </node>
+      <node concept="_tjkj" id="3IM8gFIDyop" role="3EZMnx">
+        <node concept="3EZMnI" id="3IM8gFIDyor" role="_tjki">
+          <node concept="3F0ifn" id="3IM8gFIDyos" role="3EZMnx">
+            <property role="3F0ifm" value="|" />
+          </node>
+          <node concept="3F0A7n" id="3IM8gFIDyot" role="3EZMnx">
+            <ref role="1NtTu8" to="oqaz:3IM8gFID1YL" resolve="label" />
+          </node>
+          <node concept="3F0ifn" id="3IM8gFIDyou" role="3EZMnx">
+            <property role="3F0ifm" value="|" />
+          </node>
+          <node concept="2iRfu4" id="3IM8gFIDyov" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="3IM8gFIDfsI" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFID1YN" resolve="to" />
+        <node concept="1sVBvm" id="3IM8gFIDfsL" role="1sWHZn">
+          <ref role="1XX52x" to="oqaz:3IM8gFID1YD" resolve="MermaidFlowchartNode" />
+          <node concept="3F0A7n" id="3IM8gFIDfsN" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="2iRfu4" id="3IM8gFIDfsO" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="3IM8gFIE3rf">
+    <property role="TrG5h" value="DummyForGrammarCells" />
+    <ref role="1XX52x" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="3F0ifn" id="3IM8gFIE3rh" role="2wV5jI">
+      <property role="3F0ifm" value="Workaround to fix contributions to BaseConcept generated by grammarCells." />
     </node>
   </node>
 </model>
