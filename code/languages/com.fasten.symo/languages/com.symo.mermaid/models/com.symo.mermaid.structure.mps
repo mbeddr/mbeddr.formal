@@ -656,6 +656,9 @@
       <property role="TrG5h" value="stereotype" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="PrWs8" id="3IM8gFJ66t_" role="PzmwI">
+      <ref role="PrY4T" node="3IM8gFJ63ZS" resolve="IMermaidNoteReferenceObject" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFIN6q_">
     <property role="EcuMT" value="4301536924932007589" />
@@ -790,6 +793,36 @@
     </node>
     <node concept="PrWs8" id="3IM8gFIRmjf" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3IM8gFJ63ZS">
+    <property role="EcuMT" value="4301536924936978424" />
+    <property role="TrG5h" value="IMermaidNoteReferenceObject" />
+    <property role="R4oN_" value="marker for anything a MermaidNote can be attached to, across any diagram type" />
+    <property role="3GE5qa" value="base" />
+    <node concept="PrWs8" id="3IM8gFJ63ZT" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFJ65dF">
+    <property role="EcuMT" value="4301536924936983403" />
+    <property role="TrG5h" value="MermaidNote" />
+    <property role="34LRSv" value="note" />
+    <property role="R4oN_" value="a free-floating or attached note, reusable across any diagram that supports notes" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="3IM8gFJ65dG" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924936983404" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFJ65dH" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924936983405" />
+      <property role="20kJfa" value="for" />
+      <ref role="20lvS9" node="3IM8gFJ63ZS" resolve="IMermaidNoteReferenceObject" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFJ65dI" role="PzmwI">
+      <ref role="PrY4T" node="2CJhEpPyCOo" resolve="IMermaidClassDiagramContent" />
     </node>
   </node>
 </model>

@@ -20,6 +20,10 @@
         <property id="7010306974508907507" name="savePictureInModel" index="1RgArY" />
         <child id="1589299685874047367" name="content" index="349WCz" />
       </concept>
+      <concept id="4301536924936983403" name="com.symo.mermaid.structure.MermaidNote" flags="ng" index="3kEB9x">
+        <property id="4301536924936983404" name="text" index="3kEB9A" />
+        <reference id="4301536924936983405" name="for" index="3kEB9B" />
+      </concept>
       <concept id="4301536924930189180" name="com.symo.mermaid.structure.MermaidFlowchartNodeRef" flags="ng" index="3l0CpQ">
         <reference id="4301536924930189181" name="node" index="3l0CpR" />
       </concept>
@@ -1526,6 +1530,37 @@
         </node>
         <node concept="3lv$uJ" id="3IM8gFJ60wg" role="3lv$uU">
           <ref role="3lv$uA" node="3IM8gFJ60vL" resolve="Drivable" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1K5fmX" id="3IM8gFJaen0">
+    <property role="TrG5h" value="_033_class_diagram_notes" />
+    <node concept="1vDsIW" id="3IM8gFJaen1" role="1K2TBo">
+      <property role="145Srp" value="100" />
+      <property role="1vESKz" value="1" />
+      <property role="TrG5h" value="notes_class_diagram" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="3lv$uC" id="3IM8gFJaen2" role="349WCz" />
+      <node concept="3lv$uD" id="3IM8gFJaen3" role="349WCz">
+        <property role="TrG5h" value="Animal" />
+      </node>
+      <node concept="3lv$uD" id="3IM8gFJaen4" role="349WCz">
+        <property role="TrG5h" value="Dog" />
+      </node>
+      <node concept="3kEB9x" id="3IM8gFJaen5" role="349WCz">
+        <property role="3kEB9A" value="This is a general note" />
+      </node>
+      <node concept="3kEB9x" id="3IM8gFJaen6" role="349WCz">
+        <property role="3kEB9A" value="Animals are living organisms" />
+        <ref role="3kEB9B" node="3IM8gFJaen3" />
+      </node>
+      <node concept="3lv$uG" id="3IM8gFJaen7" role="349WCz">
+        <node concept="3lv$uJ" id="3IM8gFJaena" role="3lv$u_">
+          <ref role="3lv$uA" node="3IM8gFJaen3" resolve="Animal" />
+        </node>
+        <node concept="3lv$uJ" id="3IM8gFJaenb" role="3lv$uU">
+          <ref role="3lv$uA" node="3IM8gFJaen4" resolve="Dog" />
         </node>
       </node>
     </node>

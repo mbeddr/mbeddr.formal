@@ -347,11 +347,15 @@
       <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
         <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
+      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
+        <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
       <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
         <reference id="1138056546658" name="link" index="3TtcxE" />
@@ -3975,6 +3979,56 @@
         </node>
       </node>
       <node concept="2iRfu4" id="3IM8gFITeNV" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFJ8L4T">
+    <property role="TrG5h" value="MermaidNote_Editor" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1XX52x" to="oqaz:3IM8gFJ65dF" resolve="MermaidNote" />
+    <node concept="3EZMnI" id="3IM8gFJ8L4V" role="2wV5jI">
+      <node concept="3F0ifn" id="3IM8gFJ8L4W" role="3EZMnx">
+        <property role="3F0ifm" value="note " />
+      </node>
+      <node concept="3EZMnI" id="3IM8gFJ8Qsr" role="3EZMnx">
+        <node concept="3F0ifn" id="3IM8gFJ8Qss" role="3EZMnx">
+          <property role="3F0ifm" value="for " />
+        </node>
+        <node concept="1iCGBv" id="3IM8gFJ8Qst" role="3EZMnx">
+          <ref role="1NtTu8" to="oqaz:3IM8gFJ65dH" />
+          <node concept="1sVBvm" id="3IM8gFJ8Qsw" role="1sWHZn">
+            <ref role="1XX52x" to="oqaz:3IM8gFJ63ZS" resolve="IMermaidNoteReferenceObject" />
+            <node concept="3F0A7n" id="3IM8gFJ8Qsy" role="2wV5jI">
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRfu4" id="3IM8gFJ8Qsz" role="2iSdaV" />
+        <node concept="pkWqt" id="3IM8gFJ8Qs$" role="pqm2j">
+          <node concept="3clFbS" id="3IM8gFJ8QsA" role="2VODD2">
+            <node concept="3clFbF" id="3IM8gFJ8QsB" role="3cqZAp">
+              <node concept="2OqwBi" id="3IM8gFJ8QsD" role="3clFbG">
+                <node concept="2OqwBi" id="3IM8gFJ8QsG" role="2Oq$k0">
+                  <node concept="pncrf" id="3IM8gFJ8QsJ" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3IM8gFJ8QsK" role="2OqNvi">
+                    <ref role="3Tt5mk" to="oqaz:3IM8gFJ65dH" />
+                  </node>
+                </node>
+                <node concept="3x8VRR" id="3IM8gFJ8QsL" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3IM8gFJ8L58" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFJ8L59" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJ65dG" resolve="text" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFJ8L5a" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+      </node>
+      <node concept="2iRfu4" id="3IM8gFJ8L5b" role="2iSdaV" />
     </node>
   </node>
 </model>
