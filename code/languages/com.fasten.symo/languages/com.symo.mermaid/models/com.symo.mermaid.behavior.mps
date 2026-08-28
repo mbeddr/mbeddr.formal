@@ -4,6 +4,7 @@
   <languages>
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -77,6 +78,10 @@
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
+      <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
+        <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -88,6 +93,10 @@
       <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
+      </concept>
+      <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <child id="1081773367579" name="rightExpression" index="3uHU7w" />
+        <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ngI" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
@@ -289,6 +298,98 @@
               <node concept="13iPFW" id="2CJhEpPyUst" role="2Oq$k0" />
               <node concept="3TrcHB" id="2CJhEpPyUHQ" role="2OqNvi">
                 <ref role="3TsBF5" to="oqaz:2CJhEpPxcE5" resolve="scale" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3IM8gFIC9hq">
+    <property role="TrG5h" value="MermaidPieStart_Behavior" />
+    <property role="3GE5qa" value="diagram.mermaid.pie" />
+    <ref role="13h7C2" to="oqaz:3IM8gFIC1BL" resolve="MermaidPieStart" />
+    <node concept="13hLZK" id="3IM8gFIC9ht" role="13h7CW">
+      <node concept="3clFbS" id="3IM8gFIC9hv" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3IM8gFIC9hw" role="13h7CS">
+      <property role="TrG5h" value="text" />
+      <ref role="13i0hy" node="1oekUjiaMi8" resolve="text" />
+      <node concept="17QB3L" id="3IM8gFIC9h$" role="3clF45" />
+      <node concept="3Tm1VV" id="3IM8gFIC9h_" role="1B3o_S" />
+      <node concept="3clFbS" id="3IM8gFIC9hA" role="3clF47">
+        <node concept="3cpWs6" id="3IM8gFIC9hB" role="3cqZAp">
+          <node concept="Xl_RD" id="3IM8gFIC9hC" role="3cqZAk">
+            <property role="Xl_RC" value="pie" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3IM8gFIC9hD">
+    <property role="TrG5h" value="MermaidPieTitle_Behavior" />
+    <property role="3GE5qa" value="diagram.mermaid.pie" />
+    <ref role="13h7C2" to="oqaz:3IM8gFIC1BM" resolve="MermaidPieTitle" />
+    <node concept="13hLZK" id="3IM8gFIC9hG" role="13h7CW">
+      <node concept="3clFbS" id="3IM8gFIC9hI" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3IM8gFIC9hJ" role="13h7CS">
+      <property role="TrG5h" value="text" />
+      <ref role="13i0hy" node="1oekUjiaMi8" resolve="text" />
+      <node concept="17QB3L" id="3IM8gFIC9hN" role="3clF45" />
+      <node concept="3Tm1VV" id="3IM8gFIC9hO" role="1B3o_S" />
+      <node concept="3clFbS" id="3IM8gFIC9hP" role="3clF47">
+        <node concept="3cpWs6" id="3IM8gFIC9hQ" role="3cqZAp">
+          <node concept="3cpWs3" id="3IM8gFIC9hR" role="3cqZAk">
+            <node concept="Xl_RD" id="3IM8gFIC9hU" role="3uHU7B">
+              <property role="Xl_RC" value="title " />
+            </node>
+            <node concept="2OqwBi" id="3IM8gFIC9hV" role="3uHU7w">
+              <node concept="13iPFW" id="3IM8gFIC9hY" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3IM8gFIC9hZ" role="2OqNvi">
+                <ref role="3TsBF5" to="oqaz:3IM8gFIC1BP" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3IM8gFIC9i0">
+    <property role="TrG5h" value="MermaidPieSlice_Behavior" />
+    <property role="3GE5qa" value="diagram.mermaid.pie" />
+    <ref role="13h7C2" to="oqaz:3IM8gFIC1BN" resolve="MermaidPieSlice" />
+    <node concept="13hLZK" id="3IM8gFIC9i3" role="13h7CW">
+      <node concept="3clFbS" id="3IM8gFIC9i5" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3IM8gFIC9i6" role="13h7CS">
+      <property role="TrG5h" value="text" />
+      <ref role="13i0hy" node="1oekUjiaMi8" resolve="text" />
+      <node concept="17QB3L" id="3IM8gFIC9ia" role="3clF45" />
+      <node concept="3Tm1VV" id="3IM8gFIC9ib" role="1B3o_S" />
+      <node concept="3clFbS" id="3IM8gFIC9ic" role="3clF47">
+        <node concept="3cpWs6" id="3IM8gFIC9id" role="3cqZAp">
+          <node concept="3cpWs3" id="3IM8gFIC9ie" role="3cqZAk">
+            <node concept="3cpWs3" id="3IM8gFIC9ih" role="3uHU7B">
+              <node concept="3cpWs3" id="3IM8gFIC9ik" role="3uHU7B">
+                <node concept="Xl_RD" id="3IM8gFIC9in" role="3uHU7B">
+                  <property role="Xl_RC" value="\&quot;" />
+                </node>
+                <node concept="2OqwBi" id="3IM8gFIC9io" role="3uHU7w">
+                  <node concept="13iPFW" id="3IM8gFIC9ir" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="3IM8gFIC9is" role="2OqNvi">
+                    <ref role="3TsBF5" to="oqaz:3IM8gFIC1BR" resolve="label" />
+                  </node>
+                </node>
+              </node>
+              <node concept="Xl_RD" id="3IM8gFIC9it" role="3uHU7w">
+                <property role="Xl_RC" value="\&quot; : " />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3IM8gFIC9iu" role="3uHU7w">
+              <node concept="13iPFW" id="3IM8gFIC9ix" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3IM8gFIC9iy" role="2OqNvi">
+                <ref role="3TsBF5" to="oqaz:3IM8gFIC1BS" resolve="value" />
               </node>
             </node>
           </node>

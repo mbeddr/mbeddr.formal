@@ -269,6 +269,9 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" to="zqge:2cLqkTm6vgh" resolve="Text" />
     </node>
+    <node concept="PrWs8" id="3IM8gFIC6Y5" role="PzmwI">
+      <ref role="PrY4T" node="2CJhEpPyCOw" resolve="IMermaidFlowchartDiagramContent" />
+    </node>
   </node>
   <node concept="Az7Fb" id="i2E8K1n">
     <property role="TrG5h" value="_PositiveFloatOrInteger_String" />
@@ -318,6 +321,51 @@
     <property role="TrG5h" value="IMermaidFlowchartDiagramContent" />
     <node concept="PrWs8" id="2CJhEpPyCOx" role="PrDN$">
       <ref role="PrY4T" node="1oekUji9oVj" resolve="IMermaidDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFIC1BL">
+    <property role="EcuMT" value="4301536924929104369" />
+    <property role="TrG5h" value="MermaidPieStart" />
+    <property role="34LRSv" value="pie" />
+    <property role="3GE5qa" value="diagram.mermaid.pie" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3IM8gFIC1BO" role="PzmwI">
+      <ref role="PrY4T" node="1oekUjiapA5" resolve="IMermaidPieDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFIC1BM">
+    <property role="EcuMT" value="4301536924929104370" />
+    <property role="TrG5h" value="MermaidPieTitle" />
+    <property role="34LRSv" value="title" />
+    <property role="3GE5qa" value="diagram.mermaid.pie" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="3IM8gFIC1BP" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924929104373" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIC1BQ" role="PzmwI">
+      <ref role="PrY4T" node="1oekUjiapA5" resolve="IMermaidPieDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFIC1BN">
+    <property role="EcuMT" value="4301536924929104371" />
+    <property role="TrG5h" value="MermaidPieSlice" />
+    <property role="34LRSv" value="pie slice" />
+    <property role="3GE5qa" value="diagram.mermaid.pie" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="3IM8gFIC1BR" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924929104375" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFIC1BS" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924929104376" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" node="i2E8K1n" resolve="_PositiveFloatOrInteger_String" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFIC1BT" role="PzmwI">
+      <ref role="PrY4T" node="1oekUjiapA5" resolve="IMermaidPieDiagramContent" />
     </node>
   </node>
 </model>

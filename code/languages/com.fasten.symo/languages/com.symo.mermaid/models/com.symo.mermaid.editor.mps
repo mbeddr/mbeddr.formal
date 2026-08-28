@@ -7,6 +7,7 @@
     <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <use id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access" version="0" />
     <use id="f89904fb-9486-43a1-865e-5ad0375a8a88" name="de.itemis.mps.editor.bool" version="0" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -2385,6 +2386,42 @@
                 </node>
               </node>
             </node>
+            <node concept="3cpWs8" id="3IM8gFIBp6c" role="3cqZAp">
+              <node concept="3cpWsn" id="3IM8gFIBp6f" role="3cpWs9">
+                <property role="TrG5h" value="puppeteerConfigFile" />
+                <node concept="3uibUv" id="3IM8gFIBp6h" role="1tU5fm">
+                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                </node>
+                <node concept="2ShNRf" id="3IM8gFIBp6i" role="33vP2m">
+                  <node concept="1pGfFk" id="3IM8gFIBp6k" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String,java.lang.String)" resolve="File" />
+                    <node concept="37vLTw" id="3IM8gFIBp6l" role="37wK5m">
+                      <ref role="3cqZAo" node="1lrw0h_lIqm" resolve="tempDir" />
+                    </node>
+                    <node concept="Xl_RD" id="3IM8gFIBp6m" role="37wK5m">
+                      <property role="Xl_RC" value="puppeteer_config.json" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3IM8gFIBtEn" role="3cqZAp">
+              <node concept="2YIFZM" id="3IM8gFIBtEp" role="3clFbG">
+                <ref role="1Pybhc" to="8oaq:~FileUtils" resolve="FileUtils" />
+                <ref role="37wK5l" to="8oaq:~FileUtils.writeStringToFile(java.io.File,java.lang.String,java.nio.charset.Charset)" resolve="writeStringToFile" />
+                <node concept="37vLTw" id="3IM8gFIBtEq" role="37wK5m">
+                  <ref role="3cqZAo" node="3IM8gFIBp6f" resolve="puppeteerConfigFile" />
+                </node>
+                <node concept="Xl_RD" id="3IM8gFIBtEr" role="37wK5m">
+                  <property role="Xl_RC" value="{\&quot;args\&quot;:[\&quot;--no-sandbox\&quot;]}" />
+                </node>
+                <node concept="10M0yZ" id="3IM8gFIBtEs" role="37wK5m">
+                  <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
+                  <ref role="3cqZAo" to="7x5y:~StandardCharsets.UTF_8" resolve="UTF_8" />
+                </node>
+              </node>
+            </node>
             <node concept="3clFbH" id="5y27EElzyGo" role="3cqZAp" />
             <node concept="3SKdUt" id="1lrw0h_l2e_" role="3cqZAp">
               <node concept="1PaTwC" id="1lrw0h_l2eA" role="1aUNEU">
@@ -2486,7 +2523,7 @@
                 <node concept="liA8E" id="1lrw0h_l9k8" role="2OqNvi">
                   <ref role="37wK5l" to="wyt6:~ProcessBuilder.command(java.lang.String...)" resolve="command" />
                   <node concept="Xl_RD" id="1lrw0h_l9k9" role="37wK5m">
-                    <property role="Xl_RC" value="mmdc.cmd" />
+                    <property role="Xl_RC" value="mmdc" />
                   </node>
                   <node concept="Xl_RD" id="1lrw0h_l9ka" role="37wK5m">
                     <property role="Xl_RC" value="-i" />
@@ -2533,6 +2570,17 @@
                   <node concept="37vLTw" id="cYpNTD0ghF" role="37wK5m">
                     <ref role="3cqZAo" node="cYpNTD00ov" resolve="backgroundColor" />
                   </node>
+                  <node concept="Xl_RD" id="3IM8gFIBxuT" role="37wK5m">
+                    <property role="Xl_RC" value="-p" />
+                  </node>
+                  <node concept="2OqwBi" id="3IM8gFIBEu9" role="37wK5m">
+                    <node concept="37vLTw" id="3IM8gFIBEuc" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3IM8gFIBp6f" resolve="puppeteerConfigFile" />
+                    </node>
+                    <node concept="liA8E" id="3IM8gFIBEud" role="2OqNvi">
+                      <ref role="37wK5l" to="guwi:~File.getAbsolutePath()" resolve="getAbsolutePath" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -2557,7 +2605,7 @@
                             <node concept="3cpWs3" id="4ocb1hkVYBo" role="3uHU7B">
                               <node concept="3cpWs3" id="4ocb1hkVWN3" role="3uHU7B">
                                 <node concept="Xl_RD" id="4ocb1hkVR9o" role="3uHU7B">
-                                  <property role="Xl_RC" value="mmdc.cmd -i " />
+                                  <property role="Xl_RC" value="mmdc -i " />
                                 </node>
                                 <node concept="2OqwBi" id="4ocb1hkVXzd" role="3uHU7w">
                                   <node concept="37vLTw" id="4ocb1hkVXze" role="2Oq$k0">
@@ -3570,6 +3618,48 @@
     <property role="3GE5qa" value="base" />
     <ref role="aqKnT" to="oqaz:1oekUji9dcq" resolve="MermaidEmptyLine" />
     <node concept="22hDWj" id="2CJhEpPyKmQ" role="22hAXT" />
+  </node>
+  <node concept="24kQdi" id="3IM8gFICemT">
+    <property role="TrG5h" value="MermaidPieStart_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.pie" />
+    <ref role="1XX52x" to="oqaz:3IM8gFIC1BL" resolve="MermaidPieStart" />
+    <node concept="3F0ifn" id="3IM8gFICemV" role="2wV5jI">
+      <property role="3F0ifm" value="pie" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFICemW">
+    <property role="TrG5h" value="MermaidPieTitle_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.pie" />
+    <ref role="1XX52x" to="oqaz:3IM8gFIC1BM" resolve="MermaidPieTitle" />
+    <node concept="3EZMnI" id="3IM8gFICemY" role="2wV5jI">
+      <node concept="3F0ifn" id="3IM8gFICemZ" role="3EZMnx">
+        <property role="3F0ifm" value="title" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFICen0" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFIC1BP" resolve="text" />
+      </node>
+      <node concept="2iRfu4" id="3IM8gFICen1" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFICen2">
+    <property role="TrG5h" value="MermaidPieSlice_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.pie" />
+    <ref role="1XX52x" to="oqaz:3IM8gFIC1BN" resolve="MermaidPieSlice" />
+    <node concept="3EZMnI" id="3IM8gFICen4" role="2wV5jI">
+      <node concept="3F0ifn" id="3IM8gFICen5" role="3EZMnx">
+        <property role="3F0ifm" value="&quot;" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFICen6" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFIC1BR" resolve="label" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFICen7" role="3EZMnx">
+        <property role="3F0ifm" value="&quot; : " />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFICen8" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFIC1BS" resolve="value" />
+      </node>
+      <node concept="2iRfu4" id="3IM8gFICen9" role="2iSdaV" />
+    </node>
   </node>
 </model>
 
