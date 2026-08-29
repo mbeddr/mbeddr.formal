@@ -1031,5 +1031,47 @@
       <ref role="PrY4T" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
     </node>
   </node>
+  <node concept="25R3W" id="3IM8gFJm7Ok">
+    <property role="3F6X1D" value="4301536924941188372" />
+    <property role="TrG5h" value="EMermaidSequenceFragmentKind" />
+    <ref role="1H5jkz" node="3IM8gFJm7Om" resolve="LOOP" />
+    <node concept="25R33" id="3IM8gFJm7Om" role="25R1y">
+      <property role="3tVfz5" value="2845759801874067667" />
+      <property role="TrG5h" value="LOOP" />
+      <property role="1L1pqM" value="loop" />
+    </node>
+    <node concept="25R33" id="3IM8gFJm7On" role="25R1y">
+      <property role="3tVfz5" value="8718453970720576240" />
+      <property role="TrG5h" value="OPT" />
+      <property role="1L1pqM" value="opt" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFJm7Oq">
+    <property role="EcuMT" value="4301536924941188378" />
+    <property role="TrG5h" value="MermaidSequenceFragment" />
+    <property role="R4oN_" value="a loop/opt single-block fragment wrapping nested sequence content" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3IM8gFJm7Or" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924941188379" />
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="3IM8gFJm7Ok" resolve="EMermaidSequenceFragmentKind" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFJm7Os" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924941188380" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFJm7Ot" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924941188381" />
+      <property role="20kJfa" value="fragmentContent" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFJm7Ou" role="PzmwI">
+      <ref role="PrY4T" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
+    </node>
+  </node>
 </model>
 

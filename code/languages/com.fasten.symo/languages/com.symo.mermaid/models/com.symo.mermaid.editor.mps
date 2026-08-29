@@ -10,6 +10,7 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -27,7 +28,6 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
-    <import index="85xj" ref="r:c54e8620-02ce-447b-add3-cc9dc7547dc1(com.symo.plantuml.editor)" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
     <import index="6sl7" ref="r:29d5c1cd-33f2-4ddf-8d68-a9449450706d(com.symo.mermaid.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
@@ -39,6 +39,7 @@
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="ughz" ref="377bf088-4ffc-48ac-910f-fb1c66ffa60e/java:org.w3c.dom.svg(com.symo.plantuml.lib/)" implicit="true" />
+    <import index="85xj" ref="r:c54e8620-02ce-447b-add3-cc9dc7547dc1(com.symo.plantuml.editor)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -3994,7 +3995,7 @@
           <property role="3F0ifm" value="for " />
         </node>
         <node concept="1iCGBv" id="3IM8gFJ8Qst" role="3EZMnx">
-          <ref role="1NtTu8" to="oqaz:3IM8gFJ65dH" />
+          <ref role="1NtTu8" to="oqaz:3IM8gFJ65dH" resolve="for" />
           <node concept="1sVBvm" id="3IM8gFJ8Qsw" role="1sWHZn">
             <ref role="1XX52x" to="oqaz:3IM8gFJ63ZS" resolve="IMermaidNoteReferenceObject" />
             <node concept="3F0A7n" id="3IM8gFJ8Qsy" role="2wV5jI">
@@ -4010,7 +4011,7 @@
                 <node concept="2OqwBi" id="3IM8gFJ8QsG" role="2Oq$k0">
                   <node concept="pncrf" id="3IM8gFJ8QsJ" role="2Oq$k0" />
                   <node concept="3TrEf2" id="3IM8gFJ8QsK" role="2OqNvi">
-                    <ref role="3Tt5mk" to="oqaz:3IM8gFJ65dH" />
+                    <ref role="3Tt5mk" to="oqaz:3IM8gFJ65dH" resolve="for" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="3IM8gFJ8QsL" role="2OqNvi" />
@@ -4058,7 +4059,7 @@
     <property role="3GE5qa" value="diagram.mermaid.sequence" />
     <ref role="1XX52x" to="oqaz:3IM8gFJagwD" resolve="MermaidSequenceParticipantRef" />
     <node concept="1iCGBv" id="3IM8gFJbEyn" role="2wV5jI">
-      <ref role="1NtTu8" to="oqaz:3IM8gFJagwK" />
+      <ref role="1NtTu8" to="oqaz:3IM8gFJagwK" resolve="participant" />
       <node concept="1sVBvm" id="3IM8gFJbEyq" role="1sWHZn">
         <ref role="1XX52x" to="oqaz:3IM8gFJagwC" resolve="MermaidSequenceParticipant" />
         <node concept="3F0A7n" id="3IM8gFJbEys" role="2wV5jI">
@@ -4073,7 +4074,7 @@
     <ref role="1XX52x" to="oqaz:3IM8gFJagwE" resolve="MermaidSequenceMessage" />
     <node concept="3EZMnI" id="3IM8gFJbEyv" role="2wV5jI">
       <node concept="3F1sOY" id="3IM8gFJbEyw" role="3EZMnx">
-        <ref role="1NtTu8" to="oqaz:3IM8gFJagwN" />
+        <ref role="1NtTu8" to="oqaz:3IM8gFJagwN" resolve="from" />
       </node>
       <node concept="3F0A7n" id="3IM8gFJj39L" role="3EZMnx">
         <ref role="1NtTu8" to="oqaz:3IM8gFJagwM" resolve="arrowType" />
@@ -4085,7 +4086,7 @@
         <ref role="1NtTu8" to="oqaz:3IM8gFJhAH2" resolve="deactivate" />
       </node>
       <node concept="3F1sOY" id="3IM8gFJbEyy" role="3EZMnx">
-        <ref role="1NtTu8" to="oqaz:3IM8gFJagwO" />
+        <ref role="1NtTu8" to="oqaz:3IM8gFJagwO" resolve="to" />
       </node>
       <node concept="3F0ifn" id="3IM8gFJbEyz" role="3EZMnx">
         <property role="3F0ifm" value=": " />
@@ -4104,8 +4105,19 @@
       <ref role="1PE7su" node="1oekUji9Cms" resolve="MermaidTextualEditorComponentBase" />
     </node>
     <node concept="3F2HdR" id="3IM8gFJd7Vy" role="2wV5jI">
-      <ref role="1NtTu8" to="oqaz:3IM8gFJagwF" />
+      <ref role="1NtTu8" to="oqaz:3IM8gFJagwF" resolve="content" />
       <node concept="2iRkQZ" id="3IM8gFJd7Vz" role="2czzBx" />
+      <node concept="4$FPG" id="3IM8gFJqLoA" role="4_6I_">
+        <node concept="3clFbS" id="3IM8gFJqLoC" role="2VODD2">
+          <node concept="3clFbF" id="3IM8gFJqLoD" role="3cqZAp">
+            <node concept="2pJPEk" id="3IM8gFJqLoF" role="3clFbG">
+              <node concept="2pJPED" id="3IM8gFJqLoH" role="2pJPEn">
+                <ref role="2pJxaS" to="oqaz:1oekUji9dcq" resolve="MermaidEmptyLine" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3IM8gFJk_Qi">
@@ -4122,7 +4134,7 @@
         <property role="3F0ifm" value=" " />
       </node>
       <node concept="3F1sOY" id="3IM8gFJk_Qp" role="3EZMnx">
-        <ref role="1NtTu8" to="oqaz:3IM8gFJkzeb" />
+        <ref role="1NtTu8" to="oqaz:3IM8gFJkzeb" resolve="participant1" />
       </node>
       <node concept="3EZMnI" id="3IM8gFJk_Qq" role="3EZMnx">
         <node concept="2iRfu4" id="3IM8gFJk_Qr" role="2iSdaV" />
@@ -4133,7 +4145,7 @@
                 <node concept="2OqwBi" id="3IM8gFJk_Q$" role="2Oq$k0">
                   <node concept="pncrf" id="3IM8gFJk_QB" role="2Oq$k0" />
                   <node concept="3TrEf2" id="3IM8gFJk_QC" role="2OqNvi">
-                    <ref role="3Tt5mk" to="oqaz:3IM8gFJkzec" />
+                    <ref role="3Tt5mk" to="oqaz:3IM8gFJkzec" resolve="participant2" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="3IM8gFJk_QD" role="2OqNvi" />
@@ -4145,7 +4157,7 @@
           <property role="3F0ifm" value="," />
         </node>
         <node concept="3F1sOY" id="3IM8gFJk_QF" role="3EZMnx">
-          <ref role="1NtTu8" to="oqaz:3IM8gFJkzec" />
+          <ref role="1NtTu8" to="oqaz:3IM8gFJkzec" resolve="participant2" />
         </node>
       </node>
       <node concept="3F0ifn" id="3IM8gFJk_QG" role="3EZMnx">
@@ -4153,6 +4165,42 @@
       </node>
       <node concept="3F0A7n" id="3IM8gFJk_QH" role="3EZMnx">
         <ref role="1NtTu8" to="oqaz:3IM8gFJkze9" resolve="text" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFJpeek">
+    <ref role="1XX52x" to="oqaz:3IM8gFJm7Oq" resolve="MermaidSequenceFragment" />
+    <node concept="3EZMnI" id="3IM8gFJpeem" role="2wV5jI">
+      <node concept="2iRkQZ" id="3IM8gFJpeen" role="2iSdaV" />
+      <node concept="3EZMnI" id="3IM8gFJpeeo" role="3EZMnx">
+        <node concept="2iRfu4" id="3IM8gFJpeep" role="2iSdaV" />
+        <node concept="3F0A7n" id="3IM8gFJpeeq" role="3EZMnx">
+          <ref role="1NtTu8" to="oqaz:3IM8gFJm7Or" resolve="kind" />
+        </node>
+        <node concept="3F0ifn" id="3IM8gFJpeer" role="3EZMnx">
+          <property role="3F0ifm" value=" " />
+        </node>
+        <node concept="3F0A7n" id="3IM8gFJpees" role="3EZMnx">
+          <ref role="1NtTu8" to="oqaz:3IM8gFJm7Os" resolve="label" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="3IM8gFJpeet" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJm7Ot" resolve="fragmentContent" />
+        <node concept="2iRkQZ" id="3IM8gFJpeeu" role="2czzBx" />
+        <node concept="4$FPG" id="3IM8gFJskqP" role="4_6I_">
+          <node concept="3clFbS" id="3IM8gFJskqQ" role="2VODD2">
+            <node concept="3clFbF" id="3IM8gFJskto" role="3cqZAp">
+              <node concept="2pJPEk" id="3IM8gFJsktm" role="3clFbG">
+                <node concept="2pJPED" id="3IM8gFJsktn" role="2pJPEn">
+                  <ref role="2pJxaS" to="oqaz:1oekUji9dcq" resolve="MermaidEmptyLine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3IM8gFJpeev" role="3EZMnx">
+        <property role="3F0ifm" value="end" />
       </node>
     </node>
   </node>
