@@ -11,6 +11,7 @@
     <use id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells" version="2" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="5" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -116,10 +117,17 @@
       <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
       <concept id="1073390211982" name="jetbrains.mps.lang.editor.structure.CellModel_RefNodeList" flags="sg" stub="2794558372793454595" index="3F2HdR" />
       <concept id="1176474535556" name="jetbrains.mps.lang.editor.structure.QueryFunction_JComponent" flags="in" index="3Fmcul" />
+      <concept id="1225898583838" name="jetbrains.mps.lang.editor.structure.ReadOnlyModelAccessor" flags="ng" index="1HfYo3">
+        <child id="1225898971709" name="getter" index="1Hhtcw" />
+      </concept>
+      <concept id="1225900081164" name="jetbrains.mps.lang.editor.structure.CellModel_ReadOnlyModelAccessor" flags="sg" stub="3708815482283559694" index="1HlG4h">
+        <child id="1225900141900" name="modelAccessor" index="1HlULh" />
+      </concept>
       <concept id="7033942394256351208" name="jetbrains.mps.lang.editor.structure.EditorComponentDeclarationReference" flags="ng" index="1PE4EZ">
         <reference id="7033942394256351817" name="editorComponent" index="1PE7su" />
       </concept>
       <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
+      <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
@@ -291,6 +299,11 @@
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="8356039341262087992" name="line" index="1aUNEU" />
       </concept>
@@ -348,7 +361,17 @@
       <concept id="4705942098322467729" name="jetbrains.mps.lang.smodel.structure.EnumMemberReference" flags="ng" index="21nZrQ">
         <reference id="4705942098322467736" name="decl" index="21nZrZ" />
       </concept>
+      <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
+        <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
+      </concept>
+      <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
+        <child id="1144104376918" name="parameter" index="1xVPHs" />
+      </concept>
+      <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
+      <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
+        <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
+      </concept>
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -400,6 +423,7 @@
         <child id="1197683475734" name="valueType" index="3rvSg0" />
       </concept>
       <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV" />
+      <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1197932370469" name="jetbrains.mps.baseLanguage.collections.structure.MapElement" flags="nn" index="3EllGN">
         <child id="1197932505799" name="map" index="3ElQJh" />
         <child id="1197932525128" name="key" index="3ElVtu" />
@@ -4200,6 +4224,150 @@
         </node>
       </node>
       <node concept="3F0ifn" id="3IM8gFJpeev" role="3EZMnx">
+        <property role="3F0ifm" value="end" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFJu6Bd">
+    <ref role="1XX52x" to="oqaz:3IM8gFJsudQ" resolve="MermaidSequenceFragmentBranch" />
+    <node concept="3EZMnI" id="3IM8gFJu6Bf" role="2wV5jI">
+      <node concept="2iRkQZ" id="3IM8gFJu6Bg" role="2iSdaV" />
+      <node concept="3EZMnI" id="3IM8gFJu6Bh" role="3EZMnx">
+        <node concept="2iRfu4" id="3IM8gFJu6Bi" role="2iSdaV" />
+        <node concept="1HlG4h" id="3IM8gFJu6Bj" role="3EZMnx">
+          <node concept="1HfYo3" id="3IM8gFJu6Bn" role="1HlULh">
+            <node concept="3TQlhw" id="3IM8gFJu6Bq" role="1Hhtcw">
+              <node concept="3clFbS" id="3IM8gFJu6Bs" role="2VODD2">
+                <node concept="3clFbJ" id="3IM8gFJu6Bt" role="3cqZAp">
+                  <node concept="3clFbC" id="3IM8gFJu6Bw" role="3clFbw">
+                    <node concept="2OqwBi" id="3IM8gFJu6Bz" role="3uHU7B">
+                      <node concept="2OqwBi" id="3IM8gFJu6BA" role="2Oq$k0">
+                        <node concept="2OqwBi" id="3IM8gFJu6BD" role="2Oq$k0">
+                          <node concept="pncrf" id="3IM8gFJu6BG" role="2Oq$k0" />
+                          <node concept="2Xjw5R" id="3IM8gFJu6BH" role="2OqNvi">
+                            <node concept="1xMEDy" id="3IM8gFJu6BK" role="1xVPHs">
+                              <node concept="chp4Y" id="3IM8gFJu6BM" role="ri$Ld">
+                                <ref role="cht4Q" to="oqaz:3IM8gFJsudR" resolve="MermaidSequenceMultiBranchFragment" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3Tsc0h" id="3IM8gFJu6BN" role="2OqNvi">
+                          <ref role="3TtcxE" to="oqaz:3IM8gFJsudV" resolve="branches" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="3IM8gFJu6BO" role="2OqNvi" />
+                    </node>
+                    <node concept="pncrf" id="3IM8gFJu6BP" role="3uHU7w" />
+                  </node>
+                  <node concept="3clFbS" id="3IM8gFJu6BQ" role="3clFbx">
+                    <node concept="3cpWs6" id="3IM8gFJu6BR" role="3cqZAp">
+                      <node concept="3K4zz7" id="3IM8gFJu6BS" role="3cqZAk">
+                        <node concept="2OqwBi" id="3IM8gFJu6BW" role="3K4Cdx">
+                          <node concept="2OqwBi" id="3IM8gFJu6BZ" role="2Oq$k0">
+                            <node concept="2OqwBi" id="3IM8gFJu6C2" role="2Oq$k0">
+                              <node concept="pncrf" id="3IM8gFJu6C5" role="2Oq$k0" />
+                              <node concept="2Xjw5R" id="3IM8gFJu6C6" role="2OqNvi">
+                                <node concept="1xMEDy" id="3IM8gFJu6C9" role="1xVPHs">
+                                  <node concept="chp4Y" id="3IM8gFJu6Cb" role="ri$Ld">
+                                    <ref role="cht4Q" to="oqaz:3IM8gFJsudR" resolve="MermaidSequenceMultiBranchFragment" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3TrcHB" id="3IM8gFJu6Cc" role="2OqNvi">
+                              <ref role="3TsBF5" to="oqaz:3IM8gFJsudU" resolve="kind" />
+                            </node>
+                          </node>
+                          <node concept="21noJN" id="3IM8gFJu6Cd" role="2OqNvi">
+                            <node concept="21nZrQ" id="3IM8gFJu6Cf" role="21noJM">
+                              <ref role="21nZrZ" to="oqaz:3IM8gFJsudM" resolve="ALT" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="3IM8gFJu6Cg" role="3K4E3e">
+                          <property role="Xl_RC" value="alt" />
+                        </node>
+                        <node concept="Xl_RD" id="3IM8gFJu6Ch" role="3K4GZi">
+                          <property role="Xl_RC" value="par" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="9aQIb" id="3IM8gFJu6Ci" role="9aQIa">
+                    <node concept="3clFbS" id="3IM8gFJu6Ck" role="9aQI4">
+                      <node concept="3cpWs6" id="3IM8gFJu6Cl" role="3cqZAp">
+                        <node concept="3K4zz7" id="3IM8gFJu6Cm" role="3cqZAk">
+                          <node concept="2OqwBi" id="3IM8gFJu6Cq" role="3K4Cdx">
+                            <node concept="2OqwBi" id="3IM8gFJu6Ct" role="2Oq$k0">
+                              <node concept="2OqwBi" id="3IM8gFJu6Cw" role="2Oq$k0">
+                                <node concept="pncrf" id="3IM8gFJu6Cz" role="2Oq$k0" />
+                                <node concept="2Xjw5R" id="3IM8gFJu6C$" role="2OqNvi">
+                                  <node concept="1xMEDy" id="3IM8gFJu6CB" role="1xVPHs">
+                                    <node concept="chp4Y" id="3IM8gFJu6CD" role="ri$Ld">
+                                      <ref role="cht4Q" to="oqaz:3IM8gFJsudR" resolve="MermaidSequenceMultiBranchFragment" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3TrcHB" id="3IM8gFJu6CE" role="2OqNvi">
+                                <ref role="3TsBF5" to="oqaz:3IM8gFJsudU" resolve="kind" />
+                              </node>
+                            </node>
+                            <node concept="21noJN" id="3IM8gFJu6CF" role="2OqNvi">
+                              <node concept="21nZrQ" id="3IM8gFJu6CH" role="21noJM">
+                                <ref role="21nZrZ" to="oqaz:3IM8gFJsudM" resolve="ALT" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="3IM8gFJu6CI" role="3K4E3e">
+                            <property role="Xl_RC" value="else" />
+                          </node>
+                          <node concept="Xl_RD" id="3IM8gFJu6CJ" role="3K4GZi">
+                            <property role="Xl_RC" value="and" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3F0ifn" id="3IM8gFJu6CK" role="3EZMnx">
+          <property role="3F0ifm" value=" " />
+        </node>
+        <node concept="3F0A7n" id="3IM8gFJu6CL" role="3EZMnx">
+          <ref role="1NtTu8" to="oqaz:3IM8gFJsudS" resolve="label" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="3IM8gFJu6CM" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJsudT" resolve="branchContent" />
+        <node concept="2iRkQZ" id="3IM8gFJu6CN" role="2czzBx" />
+        <node concept="4$FPG" id="3IM8gFJvHvI" role="4_6I_">
+          <node concept="3clFbS" id="3IM8gFJvHvJ" role="2VODD2">
+            <node concept="3clFbF" id="3IM8gFJvHyt" role="3cqZAp">
+              <node concept="2pJPEk" id="3IM8gFJvHyr" role="3clFbG">
+                <node concept="2pJPED" id="3IM8gFJvHys" role="2pJPEn">
+                  <ref role="2pJxaS" to="oqaz:1oekUji9dcq" resolve="MermaidEmptyLine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFJu6DX">
+    <ref role="1XX52x" to="oqaz:3IM8gFJsudR" resolve="MermaidSequenceMultiBranchFragment" />
+    <node concept="3EZMnI" id="3IM8gFJu6DZ" role="2wV5jI">
+      <node concept="2iRkQZ" id="3IM8gFJu6E0" role="2iSdaV" />
+      <node concept="3F2HdR" id="3IM8gFJu6E1" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJsudV" resolve="branches" />
+        <node concept="2iRkQZ" id="3IM8gFJu6E2" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFJu6E3" role="3EZMnx">
         <property role="3F0ifm" value="end" />
       </node>
     </node>

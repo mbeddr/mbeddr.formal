@@ -165,6 +165,9 @@
     <node concept="PrWs8" id="1oekUji9oVk" role="PzmwI">
       <ref role="PrY4T" node="1oekUji9oVj" resolve="IMermaidDiagramContent" />
     </node>
+    <node concept="PrWs8" id="3IM8gFJxcmF" role="PzmwI">
+      <ref role="PrY4T" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="1oekUji9izU">
     <property role="EcuMT" value="1589299685873756410" />
@@ -1070,6 +1073,62 @@
       <ref role="20lvS9" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
     </node>
     <node concept="PrWs8" id="3IM8gFJm7Ou" role="PzmwI">
+      <ref role="PrY4T" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
+    </node>
+  </node>
+  <node concept="25R3W" id="3IM8gFJsudK">
+    <property role="3F6X1D" value="4301536924942852976" />
+    <property role="TrG5h" value="EMermaidSequenceMultiBranchKind" />
+    <ref role="1H5jkz" node="3IM8gFJsudM" resolve="ALT" />
+    <node concept="25R33" id="3IM8gFJsudM" role="25R1y">
+      <property role="3tVfz5" value="7747326644472742908" />
+      <property role="TrG5h" value="ALT" />
+      <property role="1L1pqM" value="alt/else" />
+    </node>
+    <node concept="25R33" id="3IM8gFJsudN" role="25R1y">
+      <property role="3tVfz5" value="1121067484870663887" />
+      <property role="TrG5h" value="PAR" />
+      <property role="1L1pqM" value="par/and" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFJsudQ">
+    <property role="EcuMT" value="4301536924942852982" />
+    <property role="TrG5h" value="MermaidSequenceFragmentBranch" />
+    <property role="R4oN_" value="one labeled branch of an alt/par multi-branch fragment" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3IM8gFJsudS" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924942852984" />
+      <property role="TrG5h" value="label" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFJsudT" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924942852985" />
+      <property role="20kJfa" value="branchContent" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFJsudR">
+    <property role="EcuMT" value="4301536924942852983" />
+    <property role="TrG5h" value="MermaidSequenceMultiBranchFragment" />
+    <property role="R4oN_" value="an alt/par multi-branch fragment" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3IM8gFJsudU" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924942852986" />
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="3IM8gFJsudK" resolve="EMermaidSequenceMultiBranchKind" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFJsudV" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924942852987" />
+      <property role="20kJfa" value="branches" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="3IM8gFJsudQ" resolve="MermaidSequenceFragmentBranch" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFJsudW" role="PzmwI">
       <ref role="PrY4T" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
     </node>
   </node>
