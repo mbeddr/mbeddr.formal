@@ -117,5 +117,16 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="3IM8gFJbExG">
+    <property role="TrG5h" value="MermaidSequenceParticipantRef_Constraints" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="1M2myG" to="oqaz:3IM8gFJagwD" resolve="MermaidSequenceParticipantRef" />
+    <node concept="1N5Pfh" id="3IM8gFJbExH" role="1Mr941">
+      <ref role="1N5Vy1" to="oqaz:3IM8gFJagwK" />
+      <node concept="1dDu$B" id="3IM8gFJbExI" role="1N6uqs">
+        <ref role="1dDu$A" to="oqaz:3IM8gFJagwC" resolve="MermaidSequenceParticipant" />
+      </node>
+    </node>
+  </node>
 </model>
 

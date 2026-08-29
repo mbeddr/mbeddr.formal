@@ -2161,5 +2161,186 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="3IM8gFJahZh">
+    <property role="TrG5h" value="MermaidSequenceDiagramStart_Behavior" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="13h7C2" to="oqaz:3IM8gFJagwB" resolve="MermaidSequenceDiagramStart" />
+    <node concept="13hLZK" id="3IM8gFJahZk" role="13h7CW">
+      <node concept="3clFbS" id="3IM8gFJahZm" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3IM8gFJahZn" role="13h7CS">
+      <property role="TrG5h" value="text" />
+      <ref role="13i0hy" node="1oekUjiaMi8" resolve="text" />
+      <node concept="17QB3L" id="3IM8gFJahZr" role="3clF45" />
+      <node concept="3Tm1VV" id="3IM8gFJahZs" role="1B3o_S" />
+      <node concept="3clFbS" id="3IM8gFJahZt" role="3clF47">
+        <node concept="3cpWs6" id="3IM8gFJahZu" role="3cqZAp">
+          <node concept="Xl_RD" id="3IM8gFJahZv" role="3cqZAk">
+            <property role="Xl_RC" value="sequenceDiagram" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3IM8gFJahZw">
+    <property role="TrG5h" value="MermaidSequenceParticipant_Behavior" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="13h7C2" to="oqaz:3IM8gFJagwC" resolve="MermaidSequenceParticipant" />
+    <node concept="13hLZK" id="3IM8gFJahZz" role="13h7CW">
+      <node concept="3clFbS" id="3IM8gFJahZ_" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3IM8gFJahZA" role="13h7CS">
+      <property role="TrG5h" value="text" />
+      <ref role="13i0hy" node="1oekUjiaMi8" resolve="text" />
+      <node concept="17QB3L" id="3IM8gFJahZE" role="3clF45" />
+      <node concept="3Tm1VV" id="3IM8gFJahZF" role="1B3o_S" />
+      <node concept="3clFbS" id="3IM8gFJahZG" role="3clF47">
+        <node concept="3cpWs6" id="3IM8gFJahZH" role="3cqZAp">
+          <node concept="3cpWs3" id="3IM8gFJahZI" role="3cqZAk">
+            <node concept="Xl_RD" id="3IM8gFJahZL" role="3uHU7B">
+              <property role="Xl_RC" value="participant " />
+            </node>
+            <node concept="2OqwBi" id="3IM8gFJahZM" role="3uHU7w">
+              <node concept="13iPFW" id="3IM8gFJahZP" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3IM8gFJahZQ" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3IM8gFJahZR">
+    <property role="TrG5h" value="MermaidSequenceMessage_Behavior" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="13h7C2" to="oqaz:3IM8gFJagwE" resolve="MermaidSequenceMessage" />
+    <node concept="13hLZK" id="3IM8gFJahZU" role="13h7CW">
+      <node concept="3clFbS" id="3IM8gFJahZW" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3IM8gFJahZX" role="13h7CS">
+      <property role="TrG5h" value="text" />
+      <ref role="13i0hy" node="1oekUjiaMi8" resolve="text" />
+      <node concept="17QB3L" id="3IM8gFJai01" role="3clF45" />
+      <node concept="3Tm1VV" id="3IM8gFJai02" role="1B3o_S" />
+      <node concept="3clFbS" id="3IM8gFJai03" role="3clF47">
+        <node concept="3cpWs6" id="3IM8gFJai04" role="3cqZAp">
+          <node concept="3cpWs3" id="3IM8gFJai05" role="3cqZAk">
+            <node concept="3cpWs3" id="3IM8gFJai08" role="3uHU7B">
+              <node concept="3cpWs3" id="3IM8gFJai0b" role="3uHU7B">
+                <node concept="3cpWs3" id="3IM8gFJai0e" role="3uHU7B">
+                  <node concept="2OqwBi" id="3IM8gFJai0h" role="3uHU7B">
+                    <node concept="2OqwBi" id="3IM8gFJai0k" role="2Oq$k0">
+                      <node concept="2OqwBi" id="3IM8gFJai0n" role="2Oq$k0">
+                        <node concept="13iPFW" id="3IM8gFJai0q" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="3IM8gFJai0r" role="2OqNvi">
+                          <ref role="3Tt5mk" to="oqaz:3IM8gFJagwN" />
+                        </node>
+                      </node>
+                      <node concept="3TrEf2" id="3IM8gFJai0s" role="2OqNvi">
+                        <ref role="3Tt5mk" to="oqaz:3IM8gFJagwK" />
+                      </node>
+                    </node>
+                    <node concept="3TrcHB" id="3IM8gFJai0t" role="2OqNvi">
+                      <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="3IM8gFJai0u" role="3uHU7w">
+                    <property role="Xl_RC" value="-&gt;&gt;" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="3IM8gFJai0v" role="3uHU7w">
+                  <node concept="2OqwBi" id="3IM8gFJai0y" role="2Oq$k0">
+                    <node concept="2OqwBi" id="3IM8gFJai0_" role="2Oq$k0">
+                      <node concept="13iPFW" id="3IM8gFJai0C" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="3IM8gFJai0D" role="2OqNvi">
+                        <ref role="3Tt5mk" to="oqaz:3IM8gFJagwO" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="3IM8gFJai0E" role="2OqNvi">
+                      <ref role="3Tt5mk" to="oqaz:3IM8gFJagwK" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="3IM8gFJai0F" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="Xl_RD" id="3IM8gFJai0G" role="3uHU7w">
+                <property role="Xl_RC" value=": " />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3IM8gFJai0H" role="3uHU7w">
+              <node concept="13iPFW" id="3IM8gFJai0K" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3IM8gFJai0L" role="2OqNvi">
+                <ref role="3TsBF5" to="oqaz:3IM8gFJagwL" resolve="text" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="3IM8gFJai2h">
+    <property role="TrG5h" value="MermaidSequenceDiagram_Behavior" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="13h7C2" to="oqaz:3IM8gFJagwA" resolve="MermaidSequenceDiagram" />
+    <node concept="13hLZK" id="3IM8gFJai2k" role="13h7CW">
+      <node concept="3clFbS" id="3IM8gFJai2m" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3IM8gFJai2n" role="13h7CS">
+      <property role="TrG5h" value="getScope" />
+      <ref role="13i0hy" to="tpcu:52_Geb4QDV$" resolve="getScope" />
+      <node concept="3uibUv" id="3IM8gFJai2r" role="3clF45">
+        <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+      </node>
+      <node concept="3Tm1VV" id="3IM8gFJai2s" role="1B3o_S" />
+      <node concept="37vLTG" id="3IM8gFJai2t" role="3clF46">
+        <property role="TrG5h" value="kind" />
+        <property role="2Lvdk3" value="kind" />
+        <node concept="3bZ5Sz" id="3IM8gFJai2v" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3IM8gFJai2w" role="3clF46">
+        <property role="TrG5h" value="child" />
+        <property role="2Lvdk3" value="child" />
+        <node concept="3Tqbb2" id="3IM8gFJai2y" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="3IM8gFJai2z" role="3clF47">
+        <node concept="3clFbJ" id="3IM8gFJai2$" role="3cqZAp">
+          <node concept="2OqwBi" id="3IM8gFJai2B" role="3clFbw">
+            <node concept="37vLTw" id="3IM8gFJai2E" role="2Oq$k0">
+              <ref role="3cqZAo" node="3IM8gFJai2t" resolve="kind" />
+            </node>
+            <node concept="2Zo12i" id="3IM8gFJai2F" role="2OqNvi">
+              <node concept="chp4Y" id="3IM8gFJai2H" role="2Zo12j">
+                <ref role="cht4Q" to="oqaz:3IM8gFJagwC" resolve="MermaidSequenceParticipant" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="3IM8gFJai2I" role="3clFbx">
+            <node concept="3cpWs6" id="3IM8gFJai2J" role="3cqZAp">
+              <node concept="2YIFZM" id="3IM8gFJai2K" role="3cqZAk">
+                <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
+                <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
+                <node concept="2OqwBi" id="3IM8gFJai2L" role="37wK5m">
+                  <node concept="13iPFW" id="3IM8gFJai2O" role="2Oq$k0" />
+                  <node concept="2Rf3mk" id="3IM8gFJai2P" role="2OqNvi">
+                    <node concept="1xMEDy" id="3IM8gFJai2S" role="1xVPHs">
+                      <node concept="chp4Y" id="3IM8gFJai2U" role="ri$Ld">
+                        <ref role="cht4Q" to="oqaz:3IM8gFJagwC" resolve="MermaidSequenceParticipant" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3IM8gFJai2V" role="3cqZAp">
+          <node concept="iy90A" id="3IM8gFJai2W" role="3cqZAk" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

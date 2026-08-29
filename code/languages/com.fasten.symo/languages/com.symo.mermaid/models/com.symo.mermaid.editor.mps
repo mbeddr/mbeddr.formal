@@ -4031,5 +4031,76 @@
       <node concept="2iRfu4" id="3IM8gFJ8L5b" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3IM8gFJbEyc">
+    <property role="TrG5h" value="MermaidSequenceDiagramStart_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="1XX52x" to="oqaz:3IM8gFJagwB" resolve="MermaidSequenceDiagramStart" />
+    <node concept="3F0ifn" id="3IM8gFJbEye" role="2wV5jI">
+      <property role="3F0ifm" value="sequenceDiagram" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFJbEyf">
+    <property role="TrG5h" value="MermaidSequenceParticipant_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="1XX52x" to="oqaz:3IM8gFJagwC" resolve="MermaidSequenceParticipant" />
+    <node concept="3EZMnI" id="3IM8gFJbEyh" role="2wV5jI">
+      <node concept="3F0ifn" id="3IM8gFJbEyi" role="3EZMnx">
+        <property role="3F0ifm" value="participant " />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFJbEyj" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="2iRfu4" id="3IM8gFJbEyk" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFJbEyl">
+    <property role="TrG5h" value="MermaidSequenceParticipantRef_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="1XX52x" to="oqaz:3IM8gFJagwD" resolve="MermaidSequenceParticipantRef" />
+    <node concept="1iCGBv" id="3IM8gFJbEyn" role="2wV5jI">
+      <ref role="1NtTu8" to="oqaz:3IM8gFJagwK" />
+      <node concept="1sVBvm" id="3IM8gFJbEyq" role="1sWHZn">
+        <ref role="1XX52x" to="oqaz:3IM8gFJagwC" resolve="MermaidSequenceParticipant" />
+        <node concept="3F0A7n" id="3IM8gFJbEys" role="2wV5jI">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFJbEyt">
+    <property role="TrG5h" value="MermaidSequenceMessage_Editor" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="1XX52x" to="oqaz:3IM8gFJagwE" resolve="MermaidSequenceMessage" />
+    <node concept="3EZMnI" id="3IM8gFJbEyv" role="2wV5jI">
+      <node concept="3F1sOY" id="3IM8gFJbEyw" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJagwN" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFJbEyx" role="3EZMnx">
+        <property role="3F0ifm" value="-&gt;&gt;" />
+      </node>
+      <node concept="3F1sOY" id="3IM8gFJbEyy" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJagwO" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFJbEyz" role="3EZMnx">
+        <property role="3F0ifm" value=": " />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFJbEy$" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJagwL" resolve="text" />
+      </node>
+      <node concept="2iRfu4" id="3IM8gFJbEy_" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="3IM8gFJd7Vv">
+    <property role="TrG5h" value="MermaidDiagramSequenceTextualEditorComponent" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="1XX52x" to="oqaz:3IM8gFJagwA" resolve="MermaidSequenceDiagram" />
+    <node concept="1PE4EZ" id="3IM8gFJd7Vx" role="1PM95z">
+      <ref role="1PE7su" node="1oekUji9Cms" resolve="MermaidTextualEditorComponentBase" />
+    </node>
+    <node concept="3F2HdR" id="3IM8gFJd7Vy" role="2wV5jI">
+      <ref role="1NtTu8" to="oqaz:3IM8gFJagwF" />
+      <node concept="2iRkQZ" id="3IM8gFJd7Vz" role="2czzBx" />
+    </node>
+  </node>
 </model>
 
