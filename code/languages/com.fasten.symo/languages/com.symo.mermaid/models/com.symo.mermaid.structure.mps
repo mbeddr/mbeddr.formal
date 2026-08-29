@@ -929,6 +929,11 @@
       <property role="TrG5h" value="kind" />
       <ref role="AX2Wp" node="3IM8gFJBHK8" resolve="EMermaidSequenceParticipantKind" />
     </node>
+    <node concept="1TJgyi" id="3IM8gFJEYp4" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924946654788" />
+      <property role="TrG5h" value="displayName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFJagwD">
     <property role="EcuMT" value="4301536924938078249" />
