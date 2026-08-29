@@ -1939,5 +1939,58 @@
       </node>
     </node>
   </node>
+  <node concept="1K5fmX" id="3IM8gFJ$pxc">
+    <property role="TrG5h" value="_045_sequence_diagram_rect" />
+    <node concept="3kAM$G" id="3IM8gFJ$pxd" role="1K2TBo">
+      <property role="145Srp" value="100" />
+      <property role="1vESKz" value="1" />
+      <property role="TrG5h" value="rect_showcase" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="3kAM$H" id="3IM8gFJ$pxe" role="349WCz" />
+      <node concept="3kAM$y" id="3IM8gFJ$pxf" role="349WCz">
+        <property role="TrG5h" value="Alice" />
+      </node>
+      <node concept="3kAM$y" id="3IM8gFJ$pxg" role="349WCz">
+        <property role="TrG5h" value="Bob" />
+      </node>
+      <node concept="34aC2Y" id="3IM8gFJ$qle" role="349WCz" />
+      <node concept="3kU_Kg" id="3IM8gFJ$pxh" role="349WCz">
+        <property role="3kU_Kh" value="3IM8gFJxed9/RECT" />
+        <property role="3kU_Km" value="rgb(191, 223, 255)" />
+        <node concept="3kAM$w" id="3IM8gFJ$pxi" role="3kU_Kn">
+          <property role="3kAM$V" value="hello" />
+          <node concept="3kAM$z" id="3IM8gFJ$pxl" role="3kAM$T">
+            <ref role="3kAM$U" node="3IM8gFJ$pxf" resolve="Alice" />
+          </node>
+          <node concept="3kAM$z" id="3IM8gFJ$pxm" role="3kAM$Y">
+            <ref role="3kAM$U" node="3IM8gFJ$pxg" resolve="Bob" />
+          </node>
+        </node>
+        <node concept="3kAM$w" id="3IM8gFJ$pxn" role="3kU_Kn">
+          <property role="3kAM$V" value="hi" />
+          <node concept="3kAM$z" id="3IM8gFJ$pxq" role="3kAM$T">
+            <ref role="3kAM$U" node="3IM8gFJ$pxg" resolve="Bob" />
+          </node>
+          <node concept="3kAM$z" id="3IM8gFJ$pxr" role="3kAM$Y">
+            <ref role="3kAM$U" node="3IM8gFJ$pxf" resolve="Alice" />
+          </node>
+        </node>
+      </node>
+      <node concept="34aC2Y" id="3IM8gFJ$qlf" role="349WCz" />
+      <node concept="3kU_Kg" id="3IM8gFJ$pxs" role="349WCz">
+        <property role="3kU_Kh" value="3IM8gFJxed9/RECT" />
+        <property role="3kU_Km" value="rgba(255, 200, 200, 0.5)" />
+        <node concept="3kAM$w" id="3IM8gFJ$pxt" role="3kU_Kn">
+          <property role="3kAM$V" value="another one" />
+          <node concept="3kAM$z" id="3IM8gFJ$pxw" role="3kAM$T">
+            <ref role="3kAM$U" node="3IM8gFJ$pxf" resolve="Alice" />
+          </node>
+          <node concept="3kAM$z" id="3IM8gFJ$pxx" role="3kAM$Y">
+            <ref role="3kAM$U" node="3IM8gFJ$pxg" resolve="Bob" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

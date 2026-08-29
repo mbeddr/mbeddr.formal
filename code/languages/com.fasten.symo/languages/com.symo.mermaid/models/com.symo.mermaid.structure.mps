@@ -1048,6 +1048,11 @@
       <property role="TrG5h" value="OPT" />
       <property role="1L1pqM" value="opt" />
     </node>
+    <node concept="25R33" id="3IM8gFJxed9" role="25R1y">
+      <property role="3tVfz5" value="4301536924944098121" />
+      <property role="TrG5h" value="RECT" />
+      <property role="1L1pqM" value="rect &lt;color&gt;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFJm7Oq">
     <property role="EcuMT" value="4301536924941188378" />
