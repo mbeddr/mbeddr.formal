@@ -3213,5 +3213,67 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="3IM8gFJJQQS">
+    <ref role="13h7C2" to="oqaz:3IM8gFJJOVS" resolve="MermaidSequenceActivation" />
+    <node concept="13hLZK" id="3IM8gFJJQQV" role="13h7CW">
+      <node concept="3clFbS" id="3IM8gFJJQQX" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="3IM8gFJJQQY" role="13h7CS">
+      <property role="TrG5h" value="text" />
+      <ref role="13i0hy" node="1oekUjiaMi8" resolve="text" />
+      <node concept="17QB3L" id="3IM8gFJJQR2" role="3clF45" />
+      <node concept="3Tm1VV" id="3IM8gFJJQR3" role="1B3o_S" />
+      <node concept="3clFbS" id="3IM8gFJJQR4" role="3clF47">
+        <node concept="3cpWs6" id="3IM8gFJJQR5" role="3cqZAp">
+          <node concept="3cpWs3" id="3IM8gFJJQR6" role="3cqZAk">
+            <node concept="3cpWs3" id="3IM8gFJJQR9" role="3uHU7B">
+              <node concept="1eOMI4" id="3IM8gFJJQRc" role="3uHU7B">
+                <node concept="3K4zz7" id="3IM8gFJJQRe" role="1eOMHV">
+                  <node concept="2OqwBi" id="3IM8gFJJQRi" role="3K4Cdx">
+                    <node concept="2OqwBi" id="3IM8gFJJQRl" role="2Oq$k0">
+                      <node concept="13iPFW" id="3IM8gFJJQRo" role="2Oq$k0" />
+                      <node concept="3TrcHB" id="3IM8gFJJQRp" role="2OqNvi">
+                        <ref role="3TsBF5" to="oqaz:3IM8gFJJOVT" resolve="kind" />
+                      </node>
+                    </node>
+                    <node concept="21noJN" id="3IM8gFJJQRq" role="2OqNvi">
+                      <node concept="21nZrQ" id="3IM8gFJJQRs" role="21noJM">
+                        <ref role="21nZrZ" to="oqaz:3IM8gFJJOVL" resolve="ACTIVATE" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="3IM8gFJJQRt" role="3K4E3e">
+                    <property role="Xl_RC" value="activate" />
+                  </node>
+                  <node concept="Xl_RD" id="3IM8gFJJQRu" role="3K4GZi">
+                    <property role="Xl_RC" value="deactivate" />
+                  </node>
+                </node>
+              </node>
+              <node concept="Xl_RD" id="3IM8gFJJQRv" role="3uHU7w">
+                <property role="Xl_RC" value=" " />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3IM8gFJJQRw" role="3uHU7w">
+              <node concept="2OqwBi" id="3IM8gFJJQRz" role="2Oq$k0">
+                <node concept="2OqwBi" id="3IM8gFJJQRA" role="2Oq$k0">
+                  <node concept="13iPFW" id="3IM8gFJJQRD" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="3IM8gFJJQRE" role="2OqNvi">
+                    <ref role="3Tt5mk" to="oqaz:3IM8gFJJOVU" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="3IM8gFJJQRF" role="2OqNvi">
+                  <ref role="3Tt5mk" to="oqaz:3IM8gFJagwK" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="3IM8gFJJQRG" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -3491,5 +3491,21 @@
       <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
     </node>
   </node>
+  <node concept="24kQdi" id="3IM8gFJLvjQ">
+    <ref role="1XX52x" to="oqaz:3IM8gFJJOVS" resolve="MermaidSequenceActivation" />
+    <node concept="3EZMnI" id="3IM8gFJLvjS" role="2wV5jI">
+      <node concept="2iRfu4" id="3IM8gFJLvjT" role="2iSdaV" />
+      <node concept="3F0A7n" id="3IM8gFJLvjU" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJJOVT" resolve="kind" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFJLvjV" role="3EZMnx">
+        <property role="3F0ifm" value=" " />
+      </node>
+      <node concept="3F1sOY" id="3IM8gFJLvjW" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJJOVU" />
+      </node>
+    </node>
+  </node>
 </model>
 

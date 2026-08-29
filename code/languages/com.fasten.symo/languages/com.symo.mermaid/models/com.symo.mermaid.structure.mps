@@ -1182,5 +1182,42 @@
       <ref role="PrY4T" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
     </node>
   </node>
+  <node concept="25R3W" id="3IM8gFJJOVJ">
+    <property role="3F6X1D" value="4301536924947926767" />
+    <property role="TrG5h" value="EMermaidSequenceActivationKind" />
+    <ref role="1H5jkz" node="3IM8gFJJOVL" resolve="ACTIVATE" />
+    <node concept="25R33" id="3IM8gFJJOVL" role="25R1y">
+      <property role="3tVfz5" value="5237641675413071029" />
+      <property role="TrG5h" value="ACTIVATE" />
+      <property role="1L1pqM" value="activate" />
+    </node>
+    <node concept="25R33" id="3IM8gFJJOVM" role="25R1y">
+      <property role="3tVfz5" value="8424517199947177626" />
+      <property role="TrG5h" value="DEACTIVATE" />
+      <property role="1L1pqM" value="deactivate" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFJJOVS">
+    <property role="EcuMT" value="4301536924947926776" />
+    <property role="TrG5h" value="MermaidSequenceActivation" />
+    <property role="R4oN_" value="a standalone activate/deactivate statement" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3IM8gFJJOVT" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924947926777" />
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="3IM8gFJJOVJ" resolve="EMermaidSequenceActivationKind" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFJJOVU" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924947926778" />
+      <property role="20kJfa" value="participant" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3IM8gFJagwD" resolve="MermaidSequenceParticipantRef" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFJJOVV" role="PzmwI">
+      <ref role="PrY4T" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
+    </node>
+  </node>
 </model>
 
