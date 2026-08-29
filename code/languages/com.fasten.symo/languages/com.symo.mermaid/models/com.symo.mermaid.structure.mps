@@ -978,5 +978,58 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="25R3W" id="3IM8gFJkze1">
+    <property role="3F6X1D" value="4301536924940776321" />
+    <property role="TrG5h" value="EMermaidSequenceNotePosition" />
+    <ref role="1H5jkz" node="3IM8gFJkze3" resolve="LEFT_OF" />
+    <node concept="25R33" id="3IM8gFJkze3" role="25R1y">
+      <property role="3tVfz5" value="5364792945655733201" />
+      <property role="TrG5h" value="LEFT_OF" />
+      <property role="1L1pqM" value="left of" />
+    </node>
+    <node concept="25R33" id="3IM8gFJkze4" role="25R1y">
+      <property role="3tVfz5" value="682104138267163285" />
+      <property role="TrG5h" value="RIGHT_OF" />
+      <property role="1L1pqM" value="right of" />
+    </node>
+    <node concept="25R33" id="3IM8gFJkze5" role="25R1y">
+      <property role="3tVfz5" value="829565548926266758" />
+      <property role="TrG5h" value="OVER" />
+      <property role="1L1pqM" value="over" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFJkze8">
+    <property role="EcuMT" value="4301536924940776328" />
+    <property role="TrG5h" value="MermaidSequenceNote" />
+    <property role="R4oN_" value="a Note left of/right of/over one or two participants" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="3IM8gFJkze9" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924940776329" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFJkzea" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924940776330" />
+      <property role="TrG5h" value="position" />
+      <ref role="AX2Wp" node="3IM8gFJkze1" resolve="EMermaidSequenceNotePosition" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFJkzeb" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924940776331" />
+      <property role="20kJfa" value="participant1" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3IM8gFJagwD" resolve="MermaidSequenceParticipantRef" />
+    </node>
+    <node concept="1TJgyj" id="3IM8gFJkzec" role="1TKVEi">
+      <property role="IQ2ns" value="4301536924940776332" />
+      <property role="20kJfa" value="participant2" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3IM8gFJagwD" resolve="MermaidSequenceParticipantRef" />
+    </node>
+    <node concept="PrWs8" id="3IM8gFJkzed" role="PzmwI">
+      <ref role="PrY4T" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
+    </node>
+  </node>
 </model>
 

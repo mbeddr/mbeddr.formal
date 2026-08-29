@@ -38,6 +38,12 @@
         <property id="4301536924936983404" name="text" index="3kEB9A" />
         <reference id="4301536924936983405" name="for" index="3kEB9B" />
       </concept>
+      <concept id="4301536924940776328" name="com.symo.mermaid.structure.MermaidSequenceNote" flags="ng" index="3kS1a2">
+        <property id="4301536924940776330" name="position" index="3kS1a0" />
+        <property id="4301536924940776329" name="text" index="3kS1a3" />
+        <child id="4301536924940776331" name="participant1" index="3kS1a1" />
+        <child id="4301536924940776332" name="participant2" index="3kS1a6" />
+      </concept>
       <concept id="4301536924930189180" name="com.symo.mermaid.structure.MermaidFlowchartNodeRef" flags="ng" index="3l0CpQ">
         <reference id="4301536924930189181" name="node" index="3l0CpR" />
       </concept>
@@ -1731,6 +1737,63 @@
         </node>
         <node concept="3kAM$z" id="3IM8gFJkxtQ" role="3kAM$Y">
           <ref role="3kAM$U" node="3IM8gFJkxt3" resolve="Alice" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1K5fmX" id="3IM8gFJm66V">
+    <property role="TrG5h" value="_042_sequence_diagram_notes" />
+    <node concept="3kAM$G" id="3IM8gFJm66W" role="1K2TBo">
+      <property role="145Srp" value="70" />
+      <property role="1vESKz" value="1" />
+      <property role="TrG5h" value="notes_showcase" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="3kAM$H" id="3IM8gFJm66X" role="349WCz" />
+      <node concept="3kAM$y" id="3IM8gFJm66Y" role="349WCz">
+        <property role="TrG5h" value="Alice" />
+      </node>
+      <node concept="3kAM$y" id="3IM8gFJm66Z" role="349WCz">
+        <property role="TrG5h" value="Bob" />
+      </node>
+      <node concept="3kS1a2" id="3IM8gFJm670" role="349WCz">
+        <property role="3kS1a3" value="initial note" />
+        <node concept="3kAM$z" id="3IM8gFJm672" role="3kS1a1">
+          <ref role="3kAM$U" node="3IM8gFJm66Y" resolve="Alice" />
+        </node>
+      </node>
+      <node concept="3kS1a2" id="3IM8gFJm673" role="349WCz">
+        <property role="3kS1a3" value="right note" />
+        <property role="3kS1a0" value="_RkxAdffEl/RIGHT_OF" />
+        <node concept="3kAM$z" id="3IM8gFJm675" role="3kS1a1">
+          <ref role="3kAM$U" node="3IM8gFJm66Z" resolve="Bob" />
+        </node>
+      </node>
+      <node concept="3kS1a2" id="3IM8gFJm676" role="349WCz">
+        <property role="3kS1a3" value="spanning note" />
+        <property role="3kS1a0" value="I3dnyPDIQ6/OVER" />
+        <node concept="3kAM$z" id="3IM8gFJm678" role="3kS1a1">
+          <ref role="3kAM$U" node="3IM8gFJm66Y" resolve="Alice" />
+        </node>
+        <node concept="3kAM$z" id="3IM8gFJm679" role="3kS1a6">
+          <ref role="3kAM$U" node="3IM8gFJm66Z" resolve="Bob" />
+        </node>
+      </node>
+      <node concept="3kAM$w" id="3IM8gFJm67a" role="349WCz">
+        <property role="3kAM$V" value="hello" />
+        <node concept="3kAM$z" id="3IM8gFJm67d" role="3kAM$T">
+          <ref role="3kAM$U" node="3IM8gFJm66Y" resolve="Alice" />
+        </node>
+        <node concept="3kAM$z" id="3IM8gFJm67e" role="3kAM$Y">
+          <ref role="3kAM$U" node="3IM8gFJm66Z" resolve="Bob" />
+        </node>
+      </node>
+      <node concept="3kAM$w" id="3IM8gFJm67f" role="349WCz">
+        <property role="3kAM$V" value="self note" />
+        <node concept="3kAM$z" id="3IM8gFJm67i" role="3kAM$T">
+          <ref role="3kAM$U" node="3IM8gFJm66Y" resolve="Alice" />
+        </node>
+        <node concept="3kAM$z" id="3IM8gFJm67j" role="3kAM$Y">
+          <ref role="3kAM$U" node="3IM8gFJm66Y" resolve="Alice" />
         </node>
       </node>
     </node>
