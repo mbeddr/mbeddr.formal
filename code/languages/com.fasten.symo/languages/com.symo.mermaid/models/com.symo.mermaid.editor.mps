@@ -4075,8 +4075,14 @@
       <node concept="3F1sOY" id="3IM8gFJbEyw" role="3EZMnx">
         <ref role="1NtTu8" to="oqaz:3IM8gFJagwN" />
       </node>
-      <node concept="3F0ifn" id="3IM8gFJbEyx" role="3EZMnx">
-        <property role="3F0ifm" value="-&gt;&gt;" />
+      <node concept="3F0A7n" id="3IM8gFJj39L" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJagwM" resolve="arrowType" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFJj39O" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJhAGZ" resolve="activate" />
+      </node>
+      <node concept="3F0A7n" id="3IM8gFJj39R" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJhAH2" resolve="deactivate" />
       </node>
       <node concept="3F1sOY" id="3IM8gFJbEyy" role="3EZMnx">
         <ref role="1NtTu8" to="oqaz:3IM8gFJagwO" />

@@ -845,6 +845,41 @@
       <property role="TrG5h" value="SOLID_ARROW" />
       <property role="1L1pqM" value="Solid Arrow -&gt;&gt;" />
     </node>
+    <node concept="25R33" id="3IM8gFJhAGE" role="25R1y">
+      <property role="3tVfz5" value="4301536924940004138" />
+      <property role="TrG5h" value="SOLID_NO_ARROW" />
+      <property role="1L1pqM" value="Solid line -&gt;" />
+    </node>
+    <node concept="25R33" id="3IM8gFJhAGH" role="25R1y">
+      <property role="3tVfz5" value="4301536924940004141" />
+      <property role="TrG5h" value="DASHED_NO_ARROW" />
+      <property role="1L1pqM" value="Dashed line --&gt;" />
+    </node>
+    <node concept="25R33" id="3IM8gFJhAGK" role="25R1y">
+      <property role="3tVfz5" value="4301536924940004144" />
+      <property role="TrG5h" value="DASHED_ARROW" />
+      <property role="1L1pqM" value="Dashed Arrow --&gt;&gt;" />
+    </node>
+    <node concept="25R33" id="3IM8gFJhAGN" role="25R1y">
+      <property role="3tVfz5" value="4301536924940004147" />
+      <property role="TrG5h" value="SOLID_CROSS" />
+      <property role="1L1pqM" value="Solid Cross -x (lost)" />
+    </node>
+    <node concept="25R33" id="3IM8gFJhAGQ" role="25R1y">
+      <property role="3tVfz5" value="4301536924940004150" />
+      <property role="TrG5h" value="DASHED_CROSS" />
+      <property role="1L1pqM" value="Dashed Cross --x (lost)" />
+    </node>
+    <node concept="25R33" id="3IM8gFJhAGT" role="25R1y">
+      <property role="3tVfz5" value="4301536924940004153" />
+      <property role="TrG5h" value="SOLID_OPEN" />
+      <property role="1L1pqM" value="Solid Async -) " />
+    </node>
+    <node concept="25R33" id="3IM8gFJhAGW" role="25R1y">
+      <property role="3tVfz5" value="4301536924940004156" />
+      <property role="TrG5h" value="DASHED_OPEN" />
+      <property role="1L1pqM" value="Dashed Async --)" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFJagwA">
     <property role="EcuMT" value="4301536924938078246" />
@@ -931,6 +966,16 @@
     </node>
     <node concept="PrWs8" id="3IM8gFJagwP" role="PzmwI">
       <ref role="PrY4T" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFJhAGZ" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924940004159" />
+      <property role="TrG5h" value="activate" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFJhAH2" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924940004162" />
+      <property role="TrG5h" value="deactivate" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
