@@ -3092,9 +3092,12 @@
     <property role="3GE5qa" value="diagram.mermaid.sequence" />
     <ref role="1XX52x" to="oqaz:3IM8gFJagwC" resolve="MermaidSequenceParticipant" />
     <node concept="3EZMnI" id="3IM8gFJbEyh" role="2wV5jI">
-      <node concept="3F0ifn" id="3IM8gFJbEyi" role="3EZMnx">
-        <property role="3F0ifm" value="participant " />
-        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
+      <node concept="3F0A7n" id="3IM8gFJDlID" role="3EZMnx">
+        <ref role="1NtTu8" to="oqaz:3IM8gFJBHKq" resolve="kind" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0ifn" id="3IM8gFJDlIJ" role="3EZMnx">
+        <property role="3F0ifm" value=" " />
       </node>
       <node concept="3F0A7n" id="3IM8gFJbEyj" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -3317,8 +3320,35 @@
                         <node concept="Xl_RD" id="3IM8gFJu6Cg" role="3K4E3e">
                           <property role="Xl_RC" value="alt" />
                         </node>
-                        <node concept="Xl_RD" id="3IM8gFJu6Ch" role="3K4GZi">
-                          <property role="Xl_RC" value="par" />
+                        <node concept="3K4zz7" id="3IM8gFJBJCP" role="3K4GZi">
+                          <node concept="2OqwBi" id="3IM8gFJBJCT" role="3K4Cdx">
+                            <node concept="2OqwBi" id="3IM8gFJBJCW" role="2Oq$k0">
+                              <node concept="2OqwBi" id="3IM8gFJBJCZ" role="2Oq$k0">
+                                <node concept="pncrf" id="3IM8gFJBJD2" role="2Oq$k0" />
+                                <node concept="2Xjw5R" id="3IM8gFJBJD3" role="2OqNvi">
+                                  <node concept="1xMEDy" id="3IM8gFJBJD6" role="1xVPHs">
+                                    <node concept="chp4Y" id="3IM8gFJBJD8" role="ri$Ld">
+                                      <ref role="cht4Q" to="oqaz:3IM8gFJsudR" resolve="MermaidSequenceMultiBranchFragment" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3TrcHB" id="3IM8gFJBJD9" role="2OqNvi">
+                                <ref role="3TsBF5" to="oqaz:3IM8gFJsudU" resolve="kind" />
+                              </node>
+                            </node>
+                            <node concept="21noJN" id="3IM8gFJBJDa" role="2OqNvi">
+                              <node concept="21nZrQ" id="3IM8gFJBJDc" role="21noJM">
+                                <ref role="21nZrZ" to="oqaz:3IM8gFJsudN" resolve="PAR" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="Xl_RD" id="3IM8gFJBJDd" role="3K4E3e">
+                            <property role="Xl_RC" value="par" />
+                          </node>
+                          <node concept="Xl_RD" id="3IM8gFJBJDe" role="3K4GZi">
+                            <property role="Xl_RC" value="critical" />
+                          </node>
                         </node>
                       </node>
                     </node>
@@ -3352,8 +3382,35 @@
                           <node concept="Xl_RD" id="3IM8gFJu6CI" role="3K4E3e">
                             <property role="Xl_RC" value="else" />
                           </node>
-                          <node concept="Xl_RD" id="3IM8gFJu6CJ" role="3K4GZi">
-                            <property role="Xl_RC" value="and" />
+                          <node concept="3K4zz7" id="3IM8gFJBJTY" role="3K4GZi">
+                            <node concept="2OqwBi" id="3IM8gFJBJU2" role="3K4Cdx">
+                              <node concept="2OqwBi" id="3IM8gFJBJU5" role="2Oq$k0">
+                                <node concept="2OqwBi" id="3IM8gFJBJU8" role="2Oq$k0">
+                                  <node concept="pncrf" id="3IM8gFJBJUb" role="2Oq$k0" />
+                                  <node concept="2Xjw5R" id="3IM8gFJBJUc" role="2OqNvi">
+                                    <node concept="1xMEDy" id="3IM8gFJBJUf" role="1xVPHs">
+                                      <node concept="chp4Y" id="3IM8gFJBJUh" role="ri$Ld">
+                                        <ref role="cht4Q" to="oqaz:3IM8gFJsudR" resolve="MermaidSequenceMultiBranchFragment" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="3TrcHB" id="3IM8gFJBJUi" role="2OqNvi">
+                                  <ref role="3TsBF5" to="oqaz:3IM8gFJsudU" resolve="kind" />
+                                </node>
+                              </node>
+                              <node concept="21noJN" id="3IM8gFJBJUj" role="2OqNvi">
+                                <node concept="21nZrQ" id="3IM8gFJBJUl" role="21noJM">
+                                  <ref role="21nZrZ" to="oqaz:3IM8gFJsudN" resolve="PAR" />
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="3IM8gFJBJUm" role="3K4E3e">
+                              <property role="Xl_RC" value="and" />
+                            </node>
+                            <node concept="Xl_RD" id="3IM8gFJBJUn" role="3K4GZi">
+                              <property role="Xl_RC" value="option" />
+                            </node>
                           </node>
                         </node>
                       </node>
@@ -3400,6 +3457,13 @@
         <property role="3F0ifm" value="end" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3IM8gFJDlIS">
+    <ref role="1XX52x" to="oqaz:3IM8gFJBHKz" resolve="MermaidSequenceAutonumber" />
+    <node concept="3F0ifn" id="3IM8gFJDlIU" role="2wV5jI">
+      <property role="3F0ifm" value="autonumber" />
+      <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
     </node>
   </node>
 </model>

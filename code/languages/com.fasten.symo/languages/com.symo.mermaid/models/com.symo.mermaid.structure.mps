@@ -924,6 +924,11 @@
     <node concept="PrWs8" id="3IM8gFJagwJ" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="3IM8gFJBHKq" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924945800218" />
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="3IM8gFJBHK8" resolve="EMermaidSequenceParticipantKind" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFJagwD">
     <property role="EcuMT" value="4301536924938078249" />
@@ -1053,6 +1058,11 @@
       <property role="TrG5h" value="RECT" />
       <property role="1L1pqM" value="rect &lt;color&gt;" />
     </node>
+    <node concept="25R33" id="3IM8gFJBHKh" role="25R1y">
+      <property role="3tVfz5" value="4301536924945800209" />
+      <property role="TrG5h" value="BREAK" />
+      <property role="1L1pqM" value="break &lt;label&gt;" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFJm7Oq">
     <property role="EcuMT" value="4301536924941188378" />
@@ -1095,6 +1105,11 @@
       <property role="TrG5h" value="PAR" />
       <property role="1L1pqM" value="par/and" />
     </node>
+    <node concept="25R33" id="3IM8gFJBHKk" role="25R1y">
+      <property role="3tVfz5" value="4301536924945800212" />
+      <property role="TrG5h" value="CRITICAL" />
+      <property role="1L1pqM" value="critical/option" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3IM8gFJsudQ">
     <property role="EcuMT" value="4301536924942852982" />
@@ -1134,6 +1149,31 @@
       <ref role="20lvS9" node="3IM8gFJsudQ" resolve="MermaidSequenceFragmentBranch" />
     </node>
     <node concept="PrWs8" id="3IM8gFJsudW" role="PzmwI">
+      <ref role="PrY4T" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
+    </node>
+  </node>
+  <node concept="25R3W" id="3IM8gFJBHK8">
+    <property role="3F6X1D" value="4301536924945800200" />
+    <property role="TrG5h" value="EMermaidSequenceParticipantKind" />
+    <ref role="1H5jkz" node="3IM8gFJBHKa" resolve="PARTICIPANT" />
+    <node concept="25R33" id="3IM8gFJBHKa" role="25R1y">
+      <property role="3tVfz5" value="1898542067508403021" />
+      <property role="TrG5h" value="PARTICIPANT" />
+      <property role="1L1pqM" value="participant" />
+    </node>
+    <node concept="25R33" id="3IM8gFJBHKb" role="25R1y">
+      <property role="3tVfz5" value="4421773469489379969" />
+      <property role="TrG5h" value="ACTOR" />
+      <property role="1L1pqM" value="actor" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3IM8gFJBHKz">
+    <property role="EcuMT" value="4301536924945800227" />
+    <property role="TrG5h" value="MermaidSequenceAutonumber" />
+    <property role="R4oN_" value="the autonumber directive, auto-numbering subsequent messages" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3IM8gFJBHK$" role="PzmwI">
       <ref role="PrY4T" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
     </node>
   </node>
