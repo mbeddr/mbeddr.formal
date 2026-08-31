@@ -994,6 +994,7 @@
   <node concept="25R3W" id="3IM8gFJkze1">
     <property role="3F6X1D" value="4301536924940776321" />
     <property role="TrG5h" value="EMermaidSequenceNotePosition" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
     <ref role="1H5jkz" node="3IM8gFJkze3" resolve="LEFT_OF" />
     <node concept="25R33" id="3IM8gFJkze3" role="25R1y">
       <property role="3tVfz5" value="5364792945655733201" />
@@ -1047,6 +1048,7 @@
   <node concept="25R3W" id="3IM8gFJm7Ok">
     <property role="3F6X1D" value="4301536924941188372" />
     <property role="TrG5h" value="EMermaidSequenceFragmentKind" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
     <ref role="1H5jkz" node="3IM8gFJm7Om" resolve="LOOP" />
     <node concept="25R33" id="3IM8gFJm7Om" role="25R1y">
       <property role="3tVfz5" value="2845759801874067667" />
@@ -1099,6 +1101,7 @@
   <node concept="25R3W" id="3IM8gFJsudK">
     <property role="3F6X1D" value="4301536924942852976" />
     <property role="TrG5h" value="EMermaidSequenceMultiBranchKind" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
     <ref role="1H5jkz" node="3IM8gFJsudM" resolve="ALT" />
     <node concept="25R33" id="3IM8gFJsudM" role="25R1y">
       <property role="3tVfz5" value="7747326644472742908" />
@@ -1160,6 +1163,7 @@
   <node concept="25R3W" id="3IM8gFJBHK8">
     <property role="3F6X1D" value="4301536924945800200" />
     <property role="TrG5h" value="EMermaidSequenceParticipantKind" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
     <ref role="1H5jkz" node="3IM8gFJBHKa" resolve="PARTICIPANT" />
     <node concept="25R33" id="3IM8gFJBHKa" role="25R1y">
       <property role="3tVfz5" value="1898542067508403021" />
@@ -1181,10 +1185,21 @@
     <node concept="PrWs8" id="3IM8gFJBHK$" role="PzmwI">
       <ref role="PrY4T" node="3IM8gFJaffa" resolve="IMermaidSequenceDiagramContent" />
     </node>
+    <node concept="1TJgyi" id="3IM8gFJN8P3" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924948794691" />
+      <property role="TrG5h" value="start" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="3IM8gFJN8Pf" role="1TKVEl">
+      <property role="IQ2nx" value="4301536924948794703" />
+      <property role="TrG5h" value="step" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="25R3W" id="3IM8gFJJOVJ">
     <property role="3F6X1D" value="4301536924947926767" />
     <property role="TrG5h" value="EMermaidSequenceActivationKind" />
+    <property role="3GE5qa" value="diagram.mermaid.sequence" />
     <ref role="1H5jkz" node="3IM8gFJJOVL" resolve="ACTIVATE" />
     <node concept="25R33" id="3IM8gFJJOVL" role="25R1y">
       <property role="3tVfz5" value="5237641675413071029" />

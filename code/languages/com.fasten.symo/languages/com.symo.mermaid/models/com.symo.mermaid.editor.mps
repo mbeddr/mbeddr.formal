@@ -3486,9 +3486,34 @@
   </node>
   <node concept="24kQdi" id="3IM8gFJDlIS">
     <ref role="1XX52x" to="oqaz:3IM8gFJBHKz" resolve="MermaidSequenceAutonumber" />
-    <node concept="3F0ifn" id="3IM8gFJDlIU" role="2wV5jI">
-      <property role="3F0ifm" value="autonumber" />
-      <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+    <node concept="3EZMnI" id="3rKXu8MLZnN" role="2wV5jI">
+      <node concept="2iRfu4" id="3rKXu8MLZnO" role="2iSdaV" />
+      <node concept="3F0ifn" id="3rKXu8MLZnP" role="3EZMnx">
+        <property role="3F0ifm" value="autonumber" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="_tjkj" id="3rKXu8MLZnQ" role="3EZMnx">
+        <node concept="3EZMnI" id="3rKXu8MLZnS" role="_tjki">
+          <node concept="2iRfu4" id="3rKXu8MLZnT" role="2iSdaV" />
+          <node concept="3F0ifn" id="3rKXu8MLZnU" role="3EZMnx">
+            <property role="3F0ifm" value=" " />
+          </node>
+          <node concept="3F0A7n" id="3rKXu8MLZnV" role="3EZMnx">
+            <ref role="1NtTu8" to="oqaz:3IM8gFJN8P3" resolve="start" />
+          </node>
+        </node>
+      </node>
+      <node concept="_tjkj" id="3rKXu8MLZnW" role="3EZMnx">
+        <node concept="3EZMnI" id="3rKXu8MLZnY" role="_tjki">
+          <node concept="2iRfu4" id="3rKXu8MLZnZ" role="2iSdaV" />
+          <node concept="3F0ifn" id="3rKXu8MLZo0" role="3EZMnx">
+            <property role="3F0ifm" value=" " />
+          </node>
+          <node concept="3F0A7n" id="3rKXu8MLZo1" role="3EZMnx">
+            <ref role="1NtTu8" to="oqaz:3IM8gFJN8Pf" resolve="step" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="3IM8gFJLvjQ">
