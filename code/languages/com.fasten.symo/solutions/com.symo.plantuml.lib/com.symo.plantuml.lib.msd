@@ -4,8 +4,6 @@
     <modelRoot contentPath="${module}/lib" type="java_classes">
       <sourceRoot location="batik-all.jar" />
       <sourceRoot location="plantuml-epl.jar" />
-      <sourceRoot location="xml-apis-ext.jar" />
-      <sourceRoot location="xmlgraphics-commons.jar" />
     </modelRoot>
   </models>
   <facets>
