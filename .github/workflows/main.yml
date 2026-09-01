@@ -50,12 +50,12 @@ jobs:
 
     - name: Build Languages
       run: |
-        xvfb-run ./gradlew build_all_languages --parallel \
+        xvfb-run ./gradlew build_all_languages \
           -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
 
     - name: Run migrations
       run: |
-        ./gradlew migrate remigrate -x build_all_languages --parallel \
+        ./gradlew migrate remigrate -x build_all_languages \
           -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
 
     - name: Check for dirty files
@@ -72,7 +72,7 @@ jobs:
 
     - name: Check Models
       run: |
-        xvfb-run ./gradlew check -x build_all_languages -x build_allScripts -x build_mpsbasics_languages -x build_formal_languages --parallel \
+        xvfb-run ./gradlew check -x build_all_languages -x build_allScripts -x build_mpsbasics_languages -x build_formal_languages \
           -Pgpr.user=${{github.actor}} -Pgpr.token=${{ secrets.GITHUB_TOKEN }}
 
     - name: Publish test report
