@@ -17,6 +17,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="suqv" ref="r:9a28b49a-e98c-4186-a7e1-7e782b3f4fc3(de.itemis.mps.editor.diagram.layout.structure)" />
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
+    <import index="8dji" ref="r:4cbaab0d-7585-43dd-b5bf-b426a62bbc78(com.mpsbasics.test.utils.temp_model)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -135,10 +136,6 @@
       </concept>
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
-      </concept>
-      <concept id="4065387505485742666" name="jetbrains.mps.lang.smodel.structure.ModelPointer_ResolveOperation" flags="ng" index="2yCiCJ" />
-      <concept id="4065387505485742749" name="jetbrains.mps.lang.smodel.structure.AbstractPointerResolveOperation" flags="ng" index="2yCiFS">
-        <child id="3648723375513868575" name="repositoryArg" index="Vysub" />
       </concept>
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
@@ -2313,20 +2310,15 @@
     <node concept="2YIFZL" id="6K99IwmrXDb" role="jymVt">
       <property role="TrG5h" value="getModel" />
       <node concept="3clFbS" id="6K99IwmrXDe" role="3clF47">
-        <node concept="3clFbF" id="6K99IwmrXFC" role="3cqZAp">
-          <node concept="2OqwBi" id="6K99IwmrXMP" role="3clFbG">
-            <node concept="37vLTw" id="6K99IwmrXFB" role="2Oq$k0">
-              <ref role="3cqZAo" node="6K99IwmrXDI" resolve="mptr" />
+        <node concept="3clFbF" id="6AaHZIjETrj" role="3cqZAp">
+          <node concept="2YIFZM" id="6AaHZIjETwj" role="3clFbG">
+            <ref role="37wK5l" to="8dji:16dr8Qym1WE" resolve="createTransientModelAndCopyRoots" />
+            <ref role="1Pybhc" to="8dji:3rKXu8MPdku" resolve="TransientModelHelper" />
+            <node concept="37vLTw" id="6AaHZIjETAz" role="37wK5m">
+              <ref role="3cqZAo" node="6K99IwmrXEn" resolve="p" />
             </node>
-            <node concept="2yCiCJ" id="6K99IwmrXU$" role="2OqNvi">
-              <node concept="2OqwBi" id="6K99IwmrY9a" role="Vysub">
-                <node concept="37vLTw" id="6K99IwmrXWB" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6K99IwmrXEn" resolve="p" />
-                </node>
-                <node concept="liA8E" id="6K99IwmrY$S" role="2OqNvi">
-                  <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
-                </node>
-              </node>
+            <node concept="37vLTw" id="6AaHZIjETLA" role="37wK5m">
+              <ref role="3cqZAo" node="6K99IwmrXDI" resolve="mptr" />
             </node>
           </node>
         </node>
