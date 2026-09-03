@@ -462,7 +462,7 @@
           <node concept="3cpWsn" id="48wMG3e5DZ8" role="1Duv9x">
             <property role="TrG5h" value="root" />
             <node concept="3uibUv" id="48wMG3e5DZa" role="1tU5fm">
-              <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
             </node>
           </node>
           <node concept="3clFbS" id="48wMG3e5DYT" role="2LFqv$">
