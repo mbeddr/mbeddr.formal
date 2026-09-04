@@ -16325,21 +16325,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="1$9jWFVFLzg" role="3bR37C">
-          <node concept="3bR9La" id="1$9jWFVFLzh" role="1SiIV1">
-            <ref role="3bR37D" node="73rWdFZqGo8" resolve="com.fasten.safety.ft" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1$9jWFVFLzi" role="3bR37C">
-          <node concept="3bR9La" id="1$9jWFVFLzj" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
-          </node>
-        </node>
-        <node concept="1SiIV0" id="1$9jWFVFLzk" role="3bR37C">
-          <node concept="3bR9La" id="1$9jWFVFLzl" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="1$9jWFVFLzm" role="3bR37C">
           <node concept="3bR9La" id="1$9jWFVFLzn" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
@@ -16602,6 +16587,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="48wMG3e1Uqe" role="3bR37C">
+          <node concept="3bR9La" id="48wMG3e1Uqf" role="1SiIV1">
+            <ref role="3bR37D" to="k3fp:16dr8Qynsem" resolve="com.mpsbasics.test.utils" />
           </node>
         </node>
       </node>
@@ -17657,6 +17647,11 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="48wMG3e1Usw" role="3bR37C">
+          <node concept="3bR9La" id="48wMG3e1Usx" role="1SiIV1">
+            <ref role="3bR37D" to="k3fp:16dr8Qynsem" resolve="com.mpsbasics.test.utils" />
           </node>
         </node>
       </node>
