@@ -345,6 +345,16 @@ tasks {
         dependsOn(resolvePDFBox)
         from({ configurations["languageLibs"].resolve().map(::zipTree) })
         into(dependenciesDir)
+        // de.q60.shadowmodels is bundled in com.mbeddr:platform but unused by any FASTEN language (verified via
+        // full module dependency graph); it only adds noise via SM_CommandHelper's project-lifecycle listener.
+        exclude("com.mbeddr.platform/de.q60.shadowmodels*/**")
+        // The following are also bundled in com.mbeddr:platform but unused anywhere in FASTEN (verified via
+        // module dependency graph + full-text search across code/, and empirically isolated one-by-one against
+        // generateSafetyTutorial). de.itemis.mps.utils was excluded from this list after isolation testing showed
+        // it is actually needed (breaks generateSafetyTutorial) despite the earlier signals suggesting otherwise.
+        exclude("com.mbeddr.platform/com.mbeddr.mpsutil.ecore/**")
+        exclude("com.mbeddr.platform/org.mockito/**")
+        exclude("com.mbeddr.platform/org.modelix.model.api/**")
     }
 
     // "com.fasten.safety.rcp.pluginSolution" makes use of the mbeddr actionsfilter plugin.
