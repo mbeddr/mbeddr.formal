@@ -355,6 +355,8 @@ tasks {
         exclude("com.mbeddr.platform/com.mbeddr.mpsutil.ecore/**")
         exclude("com.mbeddr.platform/org.mockito/**")
         exclude("com.mbeddr.platform/org.modelix.model.api/**")
+        // TEMPORARY test candidate, not yet verified.
+        exclude("com.mbeddr.platform/com.mbeddr.mpsutil.jfreechart/**")
     }
 
     // "com.fasten.safety.rcp.pluginSolution" makes use of the mbeddr actionsfilter plugin.
