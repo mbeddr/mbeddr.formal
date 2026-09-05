@@ -11,22 +11,22 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="zf81" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.net(JDK/)" />
     <import index="7x5y" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.charset(JDK/)" />
-    <import index="kkt5" ref="26c1950b-9e06-4bbd-80dd-92939e6ea96c/java:com.github.weisj.jsvg.parser(com.mpsbasic.editor.svg_viewer.sandbox/)" />
-    <import index="hfck" ref="26c1950b-9e06-4bbd-80dd-92939e6ea96c/java:com.github.weisj.jsvg(com.mpsbasic.editor.svg_viewer.sandbox/)" />
-    <import index="ftr3" ref="26c1950b-9e06-4bbd-80dd-92939e6ea96c/java:com.github.weisj.jsvg.view(com.mpsbasic.editor.svg_viewer.sandbox/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
-    <import index="e1q2" ref="26c1950b-9e06-4bbd-80dd-92939e6ea96c/java:org.eclipse.elk.core(com.mpsbasic.editor.svg_viewer.sandbox/)" />
-    <import index="pplq" ref="26c1950b-9e06-4bbd-80dd-92939e6ea96c/java:org.eclipse.elk.core.data(com.mpsbasic.editor.svg_viewer.sandbox/)" />
-    <import index="gwyy" ref="26c1950b-9e06-4bbd-80dd-92939e6ea96c/java:org.eclipse.elk.core.options(com.mpsbasic.editor.svg_viewer.sandbox/)" />
-    <import index="y7q" ref="26c1950b-9e06-4bbd-80dd-92939e6ea96c/java:org.eclipse.elk.core.util(com.mpsbasic.editor.svg_viewer.sandbox/)" />
-    <import index="8ob7" ref="26c1950b-9e06-4bbd-80dd-92939e6ea96c/java:org.eclipse.elk.graph(com.mpsbasic.editor.svg_viewer.sandbox/)" />
-    <import index="m1h9" ref="26c1950b-9e06-4bbd-80dd-92939e6ea96c/java:org.eclipse.elk.graph.util(com.mpsbasic.editor.svg_viewer.sandbox/)" />
-    <import index="u8j" ref="26c1950b-9e06-4bbd-80dd-92939e6ea96c/java:org.eclipse.elk.alg.layered.options(com.mpsbasic.editor.svg_viewer.sandbox/)" />
-    <import index="voxa" ref="26c1950b-9e06-4bbd-80dd-92939e6ea96c/java:org.eclipse.elk.graph.properties(com.mpsbasic.editor.svg_viewer.sandbox/)" />
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="fbzs" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.geom(JDK/)" />
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
+    <import index="s6nb" ref="r:f80142d0-1750-489d-858a-e9fd8b656217(com.mpsbasics.editor.svg_viewer.rt.runtime)" />
+    <import index="8ob7" ref="6e7a3b37-cbf2-4ae5-ac73-9ba530ddca94/java:org.eclipse.elk.graph(com.mpsbasics.editor.svg_viewer.rt/)" />
+    <import index="voxa" ref="6e7a3b37-cbf2-4ae5-ac73-9ba530ddca94/java:org.eclipse.elk.graph.properties(com.mpsbasics.editor.svg_viewer.rt/)" />
+    <import index="hfck" ref="6e7a3b37-cbf2-4ae5-ac73-9ba530ddca94/java:com.github.weisj.jsvg(com.mpsbasics.editor.svg_viewer.rt/)" />
+    <import index="kkt5" ref="6e7a3b37-cbf2-4ae5-ac73-9ba530ddca94/java:com.github.weisj.jsvg.parser(com.mpsbasics.editor.svg_viewer.rt/)" />
+    <import index="gwyy" ref="6e7a3b37-cbf2-4ae5-ac73-9ba530ddca94/java:org.eclipse.elk.core.options(com.mpsbasics.editor.svg_viewer.rt/)" />
+    <import index="u8j" ref="6e7a3b37-cbf2-4ae5-ac73-9ba530ddca94/java:org.eclipse.elk.alg.layered.options(com.mpsbasics.editor.svg_viewer.rt/)" />
+    <import index="e1q2" ref="6e7a3b37-cbf2-4ae5-ac73-9ba530ddca94/java:org.eclipse.elk.core(com.mpsbasics.editor.svg_viewer.rt/)" />
+    <import index="y7q" ref="6e7a3b37-cbf2-4ae5-ac73-9ba530ddca94/java:org.eclipse.elk.core.util(com.mpsbasics.editor.svg_viewer.rt/)" />
+    <import index="pplq" ref="6e7a3b37-cbf2-4ae5-ac73-9ba530ddca94/java:org.eclipse.elk.core.data(com.mpsbasics.editor.svg_viewer.rt/)" />
+    <import index="m1h9" ref="6e7a3b37-cbf2-4ae5-ac73-9ba530ddca94/java:org.eclipse.elk.graph.util(com.mpsbasics.editor.svg_viewer.rt/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -258,14 +258,14 @@
         <node concept="3clFbF" id="53AnhGy6RC7" role="3cqZAp">
           <node concept="2OqwBi" id="53AnhGy6Tv8" role="3clFbG">
             <node concept="2YIFZM" id="53AnhGy6Se0" role="2Oq$k0">
-              <ref role="1Pybhc" to="pplq:~LayoutMetaDataService" resolve="LayoutMetaDataService" />
-              <ref role="37wK5l" to="pplq:~LayoutMetaDataService.getInstance()" resolve="getInstance" />
+              <ref role="1Pybhc" to="pplq:~LayoutMetaDataService" />
+              <ref role="37wK5l" to="pplq:~LayoutMetaDataService.getInstance()" />
             </node>
             <node concept="liA8E" id="53AnhGy6Tv9" role="2OqNvi">
-              <ref role="37wK5l" to="pplq:~LayoutMetaDataService.registerLayoutMetaDataProviders(org.eclipse.elk.core.data.ILayoutMetaDataProvider...)" resolve="registerLayoutMetaDataProviders" />
+              <ref role="37wK5l" to="pplq:~LayoutMetaDataService.registerLayoutMetaDataProviders(org.eclipse.elk.core.data.ILayoutMetaDataProvider...)" />
               <node concept="2ShNRf" id="53AnhGy6Tva" role="37wK5m">
                 <node concept="1pGfFk" id="53AnhGy6Tvb" role="2ShVmc">
-                  <ref role="37wK5l" to="u8j:~LayeredMetaDataProvider.&lt;init&gt;()" resolve="LayeredMetaDataProvider" />
+                  <ref role="37wK5l" to="u8j:~LayeredMetaDataProvider.&lt;init&gt;()" />
                 </node>
               </node>
             </node>
@@ -275,11 +275,11 @@
           <node concept="3cpWsn" id="53AnhGy6RCb" role="3cpWs9">
             <property role="TrG5h" value="root" />
             <node concept="3uibUv" id="53AnhGy6RCd" role="1tU5fm">
-              <ref role="3uigEE" to="8ob7:~ElkNode" resolve="org.eclipse.elk.graph.ElkNode" />
+              <ref role="3uigEE" to="8ob7:~ElkNode" resolve="ElkNode" />
             </node>
             <node concept="2YIFZM" id="53AnhGy6Se6" role="33vP2m">
-              <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" resolve="ElkGraphUtil" />
-              <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createGraph()" resolve="createGraph" />
+              <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" />
+              <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createGraph()" />
             </node>
           </node>
         </node>
@@ -291,12 +291,12 @@
             <node concept="liA8E" id="53AnhGy6Tvo" role="2OqNvi">
               <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
               <node concept="10M0yZ" id="53AnhGy6WWS" role="37wK5m">
-                <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                <ref role="3cqZAo" to="gwyy:~CoreOptions.ALGORITHM" resolve="ALGORITHM" />
+                <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                <ref role="3cqZAo" to="gwyy:~CoreOptions.ALGORITHM" />
               </node>
               <node concept="10M0yZ" id="53AnhGy6WWV" role="37wK5m">
-                <ref role="1PxDUh" to="u8j:~LayeredOptions" resolve="LayeredOptions" />
-                <ref role="3cqZAo" to="u8j:~LayeredOptions.ALGORITHM_ID" resolve="ALGORITHM_ID" />
+                <ref role="1PxDUh" to="u8j:~LayeredOptions" />
+                <ref role="3cqZAo" to="u8j:~LayeredOptions.ALGORITHM_ID" />
               </node>
             </node>
           </node>
@@ -309,12 +309,12 @@
             <node concept="liA8E" id="53AnhGy6TvB" role="2OqNvi">
               <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
               <node concept="10M0yZ" id="53AnhGy6WWY" role="37wK5m">
-                <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                <ref role="3cqZAo" to="gwyy:~CoreOptions.DIRECTION" resolve="DIRECTION" />
+                <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                <ref role="3cqZAo" to="gwyy:~CoreOptions.DIRECTION" />
               </node>
               <node concept="Rm8GO" id="53AnhGy6WX1" role="37wK5m">
-                <ref role="1Px2BO" to="gwyy:~Direction" resolve="Direction" />
-                <ref role="Rm8GQ" to="gwyy:~Direction.RIGHT" resolve="RIGHT" />
+                <ref role="1Px2BO" to="gwyy:~Direction" />
+                <ref role="Rm8GQ" to="gwyy:~Direction.RIGHT" />
               </node>
             </node>
           </node>
@@ -327,8 +327,8 @@
             <node concept="liA8E" id="53AnhGy6TvQ" role="2OqNvi">
               <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
               <node concept="10M0yZ" id="53AnhGy6WX4" role="37wK5m">
-                <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_NODE_NODE" resolve="SPACING_NODE_NODE" />
+                <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_NODE_NODE" />
               </node>
               <node concept="3b6qkQ" id="53AnhGy6TvS" role="37wK5m">
                 <property role="$nhwW" value="60.0" />
@@ -344,12 +344,12 @@
             <node concept="liA8E" id="53AnhGy6Tw5" role="2OqNvi">
               <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
               <node concept="10M0yZ" id="53AnhGy6WX7" role="37wK5m">
-                <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                <ref role="3cqZAo" to="gwyy:~CoreOptions.EDGE_LABELS_PLACEMENT" resolve="EDGE_LABELS_PLACEMENT" />
+                <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                <ref role="3cqZAo" to="gwyy:~CoreOptions.EDGE_LABELS_PLACEMENT" />
               </node>
               <node concept="Rm8GO" id="53AnhGy6WXa" role="37wK5m">
-                <ref role="1Px2BO" to="gwyy:~EdgeLabelPlacement" resolve="EdgeLabelPlacement" />
-                <ref role="Rm8GQ" to="gwyy:~EdgeLabelPlacement.CENTER" resolve="CENTER" />
+                <ref role="1Px2BO" to="gwyy:~EdgeLabelPlacement" />
+                <ref role="Rm8GQ" to="gwyy:~EdgeLabelPlacement.CENTER" />
               </node>
             </node>
           </node>
@@ -362,8 +362,8 @@
             <node concept="liA8E" id="53AnhGy6Twk" role="2OqNvi">
               <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
               <node concept="10M0yZ" id="53AnhGy6WXd" role="37wK5m">
-                <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_EDGE_EDGE" resolve="SPACING_EDGE_EDGE" />
+                <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_EDGE_EDGE" />
               </node>
               <node concept="3b6qkQ" id="53AnhGy6Twm" role="37wK5m">
                 <property role="$nhwW" value="8.0" />
@@ -379,8 +379,8 @@
             <node concept="liA8E" id="53AnhGy6Twz" role="2OqNvi">
               <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
               <node concept="10M0yZ" id="53AnhGy6WXg" role="37wK5m">
-                <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_EDGE_LABEL" resolve="SPACING_EDGE_LABEL" />
+                <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_EDGE_LABEL" />
               </node>
               <node concept="3b6qkQ" id="53AnhGy6Tw_" role="37wK5m">
                 <property role="$nhwW" value="4.0" />
@@ -396,8 +396,8 @@
             <node concept="liA8E" id="53AnhGy6TwM" role="2OqNvi">
               <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
               <node concept="10M0yZ" id="53AnhGy6WXj" role="37wK5m">
-                <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_LABEL_LABEL" resolve="SPACING_LABEL_LABEL" />
+                <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_LABEL_LABEL" />
               </node>
               <node concept="3b6qkQ" id="53AnhGy6TwO" role="37wK5m">
                 <property role="$nhwW" value="4.0" />
@@ -413,8 +413,8 @@
             <node concept="liA8E" id="53AnhGy6Tx1" role="2OqNvi">
               <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
               <node concept="10M0yZ" id="53AnhGy6WXm" role="37wK5m">
-                <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_PORT_PORT" resolve="SPACING_PORT_PORT" />
+                <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_PORT_PORT" />
               </node>
               <node concept="3b6qkQ" id="53AnhGy6Tx3" role="37wK5m">
                 <property role="$nhwW" value="8.0" />
@@ -430,12 +430,12 @@
             <node concept="liA8E" id="53AnhGy6Txg" role="2OqNvi">
               <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
               <node concept="10M0yZ" id="53AnhGy6WXp" role="37wK5m">
-                <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                <ref role="3cqZAo" to="gwyy:~CoreOptions.PORT_LABELS_PLACEMENT" resolve="PORT_LABELS_PLACEMENT" />
+                <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                <ref role="3cqZAo" to="gwyy:~CoreOptions.PORT_LABELS_PLACEMENT" />
               </node>
               <node concept="2YIFZM" id="53AnhGy6WXs" role="37wK5m">
-                <ref role="1Pybhc" to="gwyy:~PortLabelPlacement" resolve="PortLabelPlacement" />
-                <ref role="37wK5l" to="gwyy:~PortLabelPlacement.outside()" resolve="outside" />
+                <ref role="1Pybhc" to="gwyy:~PortLabelPlacement" />
+                <ref role="37wK5l" to="gwyy:~PortLabelPlacement.outside()" />
               </node>
             </node>
           </node>
@@ -448,8 +448,8 @@
             <node concept="liA8E" id="53AnhGy6Txv" role="2OqNvi">
               <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
               <node concept="10M0yZ" id="53AnhGy6WXv" role="37wK5m">
-                <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_LABEL_PORT_HORIZONTAL" resolve="SPACING_LABEL_PORT_HORIZONTAL" />
+                <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_LABEL_PORT_HORIZONTAL" />
               </node>
               <node concept="3b6qkQ" id="53AnhGy6Txx" role="37wK5m">
                 <property role="$nhwW" value="3.0" />
@@ -533,11 +533,11 @@
           <node concept="3cpWsn" id="53AnhGy6RDh" role="3cpWs9">
             <property role="TrG5h" value="blueNode" />
             <node concept="3uibUv" id="53AnhGy6RDj" role="1tU5fm">
-              <ref role="3uigEE" to="8ob7:~ElkNode" resolve="org.eclipse.elk.graph.ElkNode" />
+              <ref role="3uigEE" to="8ob7:~ElkNode" resolve="ElkNode" />
             </node>
             <node concept="2YIFZM" id="53AnhGy6SfA" role="33vP2m">
-              <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" resolve="ElkGraphUtil" />
-              <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createNode(org.eclipse.elk.graph.ElkNode)" resolve="createNode" />
+              <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" />
+              <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createNode(org.eclipse.elk.graph.ElkNode)" />
               <node concept="37vLTw" id="53AnhGy6SfB" role="37wK5m">
                 <ref role="3cqZAo" node="53AnhGy6RCb" resolve="root" />
               </node>
@@ -581,12 +581,12 @@
             <node concept="liA8E" id="53AnhGy6Tyb" role="2OqNvi">
               <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
               <node concept="10M0yZ" id="53AnhGy6WXy" role="37wK5m">
-                <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                <ref role="3cqZAo" to="gwyy:~CoreOptions.PORT_CONSTRAINTS" resolve="PORT_CONSTRAINTS" />
+                <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                <ref role="3cqZAo" to="gwyy:~CoreOptions.PORT_CONSTRAINTS" />
               </node>
               <node concept="Rm8GO" id="53AnhGy6WX_" role="37wK5m">
-                <ref role="1Px2BO" to="gwyy:~PortConstraints" resolve="PortConstraints" />
-                <ref role="Rm8GQ" to="gwyy:~PortConstraints.FIXED_SIDE" resolve="FIXED_SIDE" />
+                <ref role="1Px2BO" to="gwyy:~PortConstraints" />
+                <ref role="Rm8GQ" to="gwyy:~PortConstraints.FIXED_SIDE" />
               </node>
             </node>
           </node>
@@ -595,11 +595,11 @@
           <node concept="3cpWsn" id="53AnhGy6RDx" role="3cpWs9">
             <property role="TrG5h" value="redNode" />
             <node concept="3uibUv" id="53AnhGy6RDz" role="1tU5fm">
-              <ref role="3uigEE" to="8ob7:~ElkNode" resolve="org.eclipse.elk.graph.ElkNode" />
+              <ref role="3uigEE" to="8ob7:~ElkNode" resolve="ElkNode" />
             </node>
             <node concept="2YIFZM" id="53AnhGy6SfV" role="33vP2m">
-              <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" resolve="ElkGraphUtil" />
-              <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createNode(org.eclipse.elk.graph.ElkNode)" resolve="createNode" />
+              <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" />
+              <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createNode(org.eclipse.elk.graph.ElkNode)" />
               <node concept="37vLTw" id="53AnhGy6SfW" role="37wK5m">
                 <ref role="3cqZAo" node="53AnhGy6RCb" resolve="root" />
               </node>
@@ -643,12 +643,12 @@
             <node concept="liA8E" id="53AnhGy6TyR" role="2OqNvi">
               <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
               <node concept="10M0yZ" id="53AnhGy6WXC" role="37wK5m">
-                <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                <ref role="3cqZAo" to="gwyy:~CoreOptions.PORT_CONSTRAINTS" resolve="PORT_CONSTRAINTS" />
+                <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                <ref role="3cqZAo" to="gwyy:~CoreOptions.PORT_CONSTRAINTS" />
               </node>
               <node concept="Rm8GO" id="53AnhGy6WXF" role="37wK5m">
-                <ref role="1Px2BO" to="gwyy:~PortConstraints" resolve="PortConstraints" />
-                <ref role="Rm8GQ" to="gwyy:~PortConstraints.FIXED_SIDE" resolve="FIXED_SIDE" />
+                <ref role="1Px2BO" to="gwyy:~PortConstraints" />
+                <ref role="Rm8GQ" to="gwyy:~PortConstraints.FIXED_SIDE" />
               </node>
             </node>
           </node>
@@ -659,7 +659,7 @@
             <node concept="3uibUv" id="53AnhGy6RDN" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="53AnhGy6RDO" role="11_B2D">
-                <ref role="3uigEE" to="8ob7:~ElkEdge" resolve="org.eclipse.elk.graph.ElkEdge" />
+                <ref role="3uigEE" to="8ob7:~ElkEdge" resolve="ElkEdge" />
               </node>
             </node>
             <node concept="2ShNRf" id="53AnhGy6Sge" role="33vP2m">
@@ -679,7 +679,7 @@
             <node concept="3uibUv" id="53AnhGy6RDT" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="53AnhGy6RDU" role="11_B2D">
-                <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="org.eclipse.elk.graph.ElkLabel" />
+                <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="ElkLabel" />
               </node>
             </node>
             <node concept="2ShNRf" id="53AnhGy6Sgl" role="33vP2m">
@@ -699,7 +699,7 @@
             <node concept="3uibUv" id="53AnhGy6RDZ" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="53AnhGy6RE0" role="11_B2D">
-                <ref role="3uigEE" to="8ob7:~ElkPort" resolve="org.eclipse.elk.graph.ElkPort" />
+                <ref role="3uigEE" to="8ob7:~ElkPort" resolve="ElkPort" />
               </node>
             </node>
             <node concept="2ShNRf" id="53AnhGy6Sgs" role="33vP2m">
@@ -719,7 +719,7 @@
             <node concept="3uibUv" id="53AnhGy6RE5" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="53AnhGy6RE6" role="11_B2D">
-                <ref role="3uigEE" to="8ob7:~ElkPort" resolve="org.eclipse.elk.graph.ElkPort" />
+                <ref role="3uigEE" to="8ob7:~ElkPort" resolve="ElkPort" />
               </node>
             </node>
             <node concept="2ShNRf" id="53AnhGy6Sgz" role="33vP2m">
@@ -779,7 +779,7 @@
             <node concept="3uibUv" id="53AnhGy6REn" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="53AnhGy6REo" role="11_B2D">
-                <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="org.eclipse.elk.graph.ElkLabel" />
+                <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="ElkLabel" />
               </node>
             </node>
             <node concept="2ShNRf" id="53AnhGy6SgS" role="33vP2m">
@@ -799,7 +799,7 @@
             <node concept="3uibUv" id="53AnhGy6REt" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="53AnhGy6REu" role="11_B2D">
-                <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="org.eclipse.elk.graph.ElkLabel" />
+                <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="ElkLabel" />
               </node>
             </node>
             <node concept="2ShNRf" id="53AnhGy6SgZ" role="33vP2m">
@@ -842,11 +842,11 @@
               <node concept="3cpWsn" id="53AnhGy6REI" role="3cpWs9">
                 <property role="TrG5h" value="outputPort" />
                 <node concept="3uibUv" id="53AnhGy6REK" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkPort" resolve="org.eclipse.elk.graph.ElkPort" />
+                  <ref role="3uigEE" to="8ob7:~ElkPort" resolve="ElkPort" />
                 </node>
                 <node concept="2YIFZM" id="53AnhGy6Shd" role="33vP2m">
-                  <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" resolve="ElkGraphUtil" />
-                  <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createPort(org.eclipse.elk.graph.ElkNode)" resolve="createPort" />
+                  <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" />
+                  <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createPort(org.eclipse.elk.graph.ElkNode)" />
                   <node concept="37vLTw" id="53AnhGy6She" role="37wK5m">
                     <ref role="3cqZAo" node="53AnhGy6RDh" resolve="blueNode" />
                   </node>
@@ -877,12 +877,12 @@
                 <node concept="liA8E" id="53AnhGy6Tzl" role="2OqNvi">
                   <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
                   <node concept="10M0yZ" id="53AnhGy6WXI" role="37wK5m">
-                    <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                    <ref role="3cqZAo" to="gwyy:~CoreOptions.PORT_SIDE" resolve="PORT_SIDE" />
+                    <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                    <ref role="3cqZAo" to="gwyy:~CoreOptions.PORT_SIDE" />
                   </node>
                   <node concept="Rm8GO" id="53AnhGy6WXL" role="37wK5m">
-                    <ref role="1Px2BO" to="gwyy:~PortSide" resolve="PortSide" />
-                    <ref role="Rm8GQ" to="gwyy:~PortSide.EAST" resolve="EAST" />
+                    <ref role="1Px2BO" to="gwyy:~PortSide" />
+                    <ref role="Rm8GQ" to="gwyy:~PortSide.EAST" />
                   </node>
                 </node>
               </node>
@@ -925,11 +925,11 @@
               <node concept="3cpWsn" id="53AnhGy6RF6" role="3cpWs9">
                 <property role="TrG5h" value="outputPortLabel" />
                 <node concept="3uibUv" id="53AnhGy6RF8" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="org.eclipse.elk.graph.ElkLabel" />
+                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="ElkLabel" />
                 </node>
                 <node concept="2YIFZM" id="53AnhGy6Shy" role="33vP2m">
-                  <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" resolve="ElkGraphUtil" />
-                  <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createLabel(java.lang.String,org.eclipse.elk.graph.ElkGraphElement)" resolve="createLabel" />
+                  <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" />
+                  <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createLabel(java.lang.String,org.eclipse.elk.graph.ElkGraphElement)" />
                   <node concept="37vLTw" id="53AnhGy6Shz" role="37wK5m">
                     <ref role="3cqZAo" node="53AnhGy6REV" resolve="outputPortName" />
                   </node>
@@ -974,11 +974,11 @@
               <node concept="3cpWsn" id="53AnhGy6RFk" role="3cpWs9">
                 <property role="TrG5h" value="inputPort" />
                 <node concept="3uibUv" id="53AnhGy6RFm" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkPort" resolve="org.eclipse.elk.graph.ElkPort" />
+                  <ref role="3uigEE" to="8ob7:~ElkPort" resolve="ElkPort" />
                 </node>
                 <node concept="2YIFZM" id="53AnhGy6ShL" role="33vP2m">
-                  <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" resolve="ElkGraphUtil" />
-                  <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createPort(org.eclipse.elk.graph.ElkNode)" resolve="createPort" />
+                  <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" />
+                  <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createPort(org.eclipse.elk.graph.ElkNode)" />
                   <node concept="37vLTw" id="53AnhGy6ShM" role="37wK5m">
                     <ref role="3cqZAo" node="53AnhGy6RDx" resolve="redNode" />
                   </node>
@@ -1009,12 +1009,12 @@
                 <node concept="liA8E" id="53AnhGy6T$k" role="2OqNvi">
                   <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
                   <node concept="10M0yZ" id="53AnhGy6WXS" role="37wK5m">
-                    <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
-                    <ref role="3cqZAo" to="gwyy:~CoreOptions.PORT_SIDE" resolve="PORT_SIDE" />
+                    <ref role="1PxDUh" to="gwyy:~CoreOptions" />
+                    <ref role="3cqZAo" to="gwyy:~CoreOptions.PORT_SIDE" />
                   </node>
                   <node concept="Rm8GO" id="53AnhGy6WXV" role="37wK5m">
-                    <ref role="1Px2BO" to="gwyy:~PortSide" resolve="PortSide" />
-                    <ref role="Rm8GQ" to="gwyy:~PortSide.WEST" resolve="WEST" />
+                    <ref role="1Px2BO" to="gwyy:~PortSide" />
+                    <ref role="Rm8GQ" to="gwyy:~PortSide.WEST" />
                   </node>
                 </node>
               </node>
@@ -1057,11 +1057,11 @@
               <node concept="3cpWsn" id="53AnhGy6RFG" role="3cpWs9">
                 <property role="TrG5h" value="inputPortLabel" />
                 <node concept="3uibUv" id="53AnhGy6RFI" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="org.eclipse.elk.graph.ElkLabel" />
+                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="ElkLabel" />
                 </node>
                 <node concept="2YIFZM" id="53AnhGy6Si6" role="33vP2m">
-                  <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" resolve="ElkGraphUtil" />
-                  <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createLabel(java.lang.String,org.eclipse.elk.graph.ElkGraphElement)" resolve="createLabel" />
+                  <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" />
+                  <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createLabel(java.lang.String,org.eclipse.elk.graph.ElkGraphElement)" />
                   <node concept="37vLTw" id="53AnhGy6Si7" role="37wK5m">
                     <ref role="3cqZAo" node="53AnhGy6RFx" resolve="inputPortName" />
                   </node>
@@ -1106,11 +1106,11 @@
               <node concept="3cpWsn" id="53AnhGy6RFU" role="3cpWs9">
                 <property role="TrG5h" value="edge" />
                 <node concept="3uibUv" id="53AnhGy6RFW" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkEdge" resolve="org.eclipse.elk.graph.ElkEdge" />
+                  <ref role="3uigEE" to="8ob7:~ElkEdge" resolve="ElkEdge" />
                 </node>
                 <node concept="2YIFZM" id="53AnhGy6Sil" role="33vP2m">
-                  <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" resolve="ElkGraphUtil" />
-                  <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createSimpleEdge(org.eclipse.elk.graph.ElkConnectableShape,org.eclipse.elk.graph.ElkConnectableShape)" resolve="createSimpleEdge" />
+                  <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" />
+                  <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createSimpleEdge(org.eclipse.elk.graph.ElkConnectableShape,org.eclipse.elk.graph.ElkConnectableShape)" />
                   <node concept="37vLTw" id="53AnhGy6Sim" role="37wK5m">
                     <ref role="3cqZAo" node="53AnhGy6REI" resolve="outputPort" />
                   </node>
@@ -1124,11 +1124,11 @@
               <node concept="3cpWsn" id="53AnhGy6RG0" role="3cpWs9">
                 <property role="TrG5h" value="label" />
                 <node concept="3uibUv" id="53AnhGy6RG2" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="org.eclipse.elk.graph.ElkLabel" />
+                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="ElkLabel" />
                 </node>
                 <node concept="2YIFZM" id="53AnhGy6Siq" role="33vP2m">
-                  <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" resolve="ElkGraphUtil" />
-                  <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createLabel(java.lang.String,org.eclipse.elk.graph.ElkGraphElement)" resolve="createLabel" />
+                  <ref role="1Pybhc" to="m1h9:~ElkGraphUtil" />
+                  <ref role="37wK5l" to="m1h9:~ElkGraphUtil.createLabel(java.lang.String,org.eclipse.elk.graph.ElkGraphElement)" />
                   <node concept="AH0OO" id="53AnhGy6Sir" role="37wK5m">
                     <node concept="37vLTw" id="53AnhGy6Sis" role="AHHXb">
                       <ref role="3cqZAo" node="53AnhGy6RCR" resolve="connectionLabels" />
@@ -1289,17 +1289,17 @@
           <node concept="2OqwBi" id="53AnhGy6TRZ" role="3clFbG">
             <node concept="2ShNRf" id="53AnhGy6Sjs" role="2Oq$k0">
               <node concept="1pGfFk" id="53AnhGy6Sju" role="2ShVmc">
-                <ref role="37wK5l" to="e1q2:~RecursiveGraphLayoutEngine.&lt;init&gt;()" resolve="RecursiveGraphLayoutEngine" />
+                <ref role="37wK5l" to="e1q2:~RecursiveGraphLayoutEngine.&lt;init&gt;()" />
               </node>
             </node>
             <node concept="liA8E" id="53AnhGy6TS0" role="2OqNvi">
-              <ref role="37wK5l" to="e1q2:~RecursiveGraphLayoutEngine.layout(org.eclipse.elk.graph.ElkNode,org.eclipse.elk.core.util.IElkProgressMonitor)" resolve="layout" />
+              <ref role="37wK5l" to="e1q2:~RecursiveGraphLayoutEngine.layout(org.eclipse.elk.graph.ElkNode,org.eclipse.elk.core.util.IElkProgressMonitor)" />
               <node concept="37vLTw" id="53AnhGy6TS1" role="37wK5m">
                 <ref role="3cqZAo" node="53AnhGy6RCb" resolve="root" />
               </node>
               <node concept="2ShNRf" id="53AnhGy6TS2" role="37wK5m">
                 <node concept="1pGfFk" id="53AnhGy6TS3" role="2ShVmc">
-                  <ref role="37wK5l" to="y7q:~BasicProgressMonitor.&lt;init&gt;()" resolve="BasicProgressMonitor" />
+                  <ref role="37wK5l" to="y7q:~BasicProgressMonitor.&lt;init&gt;()" />
                 </node>
               </node>
             </node>
@@ -1438,7 +1438,7 @@
               <node concept="3cpWsn" id="53AnhGy6RHl" role="3cpWs9">
                 <property role="TrG5h" value="section" />
                 <node concept="3uibUv" id="53AnhGy6RHn" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkEdgeSection" resolve="org.eclipse.elk.graph.ElkEdgeSection" />
+                  <ref role="3uigEE" to="8ob7:~ElkEdgeSection" resolve="ElkEdgeSection" />
                 </node>
                 <node concept="2OqwBi" id="53AnhGy6ZZO" role="33vP2m">
                   <node concept="2OqwBi" id="53AnhGy6X1O" role="2Oq$k0">
@@ -1546,7 +1546,7 @@
               <node concept="3cpWsn" id="53AnhGy6RHW" role="1Duv9x">
                 <property role="TrG5h" value="bendPoint" />
                 <node concept="3uibUv" id="53AnhGy6RHY" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkBendPoint" resolve="org.eclipse.elk.graph.ElkBendPoint" />
+                  <ref role="3uigEE" to="8ob7:~ElkBendPoint" resolve="ElkBendPoint" />
                 </node>
               </node>
               <node concept="3clFbS" id="53AnhGy6RHJ" role="2LFqv$">
@@ -1600,7 +1600,7 @@
               <node concept="3cpWsn" id="53AnhGy6RI0" role="3cpWs9">
                 <property role="TrG5h" value="label" />
                 <node concept="3uibUv" id="53AnhGy6RI2" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="org.eclipse.elk.graph.ElkLabel" />
+                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="ElkLabel" />
                 </node>
                 <node concept="2OqwBi" id="53AnhGy6U0e" role="33vP2m">
                   <node concept="37vLTw" id="53AnhGy6SkF" role="2Oq$k0">
@@ -2214,7 +2214,7 @@
               <node concept="3uibUv" id="53AnhGy6RKG" role="11_B2D">
                 <ref role="3uigEE" to="33ny:~List" resolve="List" />
                 <node concept="3uibUv" id="53AnhGy6RKH" role="11_B2D">
-                  <ref role="3uigEE" to="fbzs:~Point2D$Double" resolve="Point2D.Double" />
+                  <ref role="3uigEE" to="fbzs:~Point2D$Double" />
                 </node>
               </node>
             </node>
@@ -2225,7 +2225,7 @@
                 <node concept="3uibUv" id="53AnhGy6SpM" role="1pMfVU">
                   <ref role="3uigEE" to="33ny:~List" resolve="List" />
                   <node concept="3uibUv" id="53AnhGy6SpN" role="11_B2D">
-                    <ref role="3uigEE" to="fbzs:~Point2D$Double" resolve="Point2D.Double" />
+                    <ref role="3uigEE" to="fbzs:~Point2D$Double" />
                   </node>
                 </node>
               </node>
@@ -2260,7 +2260,7 @@
             <node concept="3uibUv" id="53AnhGy6RKT" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="53AnhGy6RKU" role="11_B2D">
-                <ref role="3uigEE" to="fbzs:~Rectangle2D$Double" resolve="Rectangle2D.Double" />
+                <ref role="3uigEE" to="fbzs:~Rectangle2D$Double" />
               </node>
             </node>
             <node concept="2ShNRf" id="53AnhGy6SpV" role="33vP2m">
@@ -2268,7 +2268,7 @@
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
                 <node concept="3uibUv" id="53AnhGy6Sq1" role="1pMfVU">
-                  <ref role="3uigEE" to="fbzs:~Rectangle2D$Double" resolve="Rectangle2D.Double" />
+                  <ref role="3uigEE" to="fbzs:~Rectangle2D$Double" />
                 </node>
               </node>
             </node>
@@ -2323,7 +2323,7 @@
             <node concept="3uibUv" id="53AnhGy6RLb" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="53AnhGy6RLc" role="11_B2D">
-                <ref role="3uigEE" to="fbzs:~Rectangle2D$Double" resolve="Rectangle2D.Double" />
+                <ref role="3uigEE" to="fbzs:~Rectangle2D$Double" />
               </node>
             </node>
             <node concept="2ShNRf" id="53AnhGy6Sqg" role="33vP2m">
@@ -2331,7 +2331,7 @@
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
                 <node concept="3uibUv" id="53AnhGy6Sqm" role="1pMfVU">
-                  <ref role="3uigEE" to="fbzs:~Rectangle2D$Double" resolve="Rectangle2D.Double" />
+                  <ref role="3uigEE" to="fbzs:~Rectangle2D$Double" />
                 </node>
               </node>
             </node>
@@ -2417,7 +2417,7 @@
               <node concept="3cpWsn" id="53AnhGy6RLE" role="3cpWs9">
                 <property role="TrG5h" value="section" />
                 <node concept="3uibUv" id="53AnhGy6RLG" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkEdgeSection" resolve="org.eclipse.elk.graph.ElkEdgeSection" />
+                  <ref role="3uigEE" to="8ob7:~ElkEdgeSection" resolve="ElkEdgeSection" />
                 </node>
                 <node concept="2OqwBi" id="53AnhGy7048" role="33vP2m">
                   <node concept="2OqwBi" id="53AnhGy6Xiu" role="2Oq$k0">
@@ -2451,7 +2451,7 @@
                 <node concept="3uibUv" id="53AnhGy6RLO" role="1tU5fm">
                   <ref role="3uigEE" to="33ny:~List" resolve="List" />
                   <node concept="3uibUv" id="53AnhGy6RLP" role="11_B2D">
-                    <ref role="3uigEE" to="fbzs:~Point2D$Double" resolve="Point2D.Double" />
+                    <ref role="3uigEE" to="fbzs:~Point2D$Double" />
                   </node>
                 </node>
                 <node concept="2ShNRf" id="53AnhGy6Sr3" role="33vP2m">
@@ -2459,7 +2459,7 @@
                     <property role="373rjd" value="true" />
                     <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
                     <node concept="3uibUv" id="53AnhGy6Sr9" role="1pMfVU">
-                      <ref role="3uigEE" to="fbzs:~Point2D$Double" resolve="Point2D.Double" />
+                      <ref role="3uigEE" to="fbzs:~Point2D$Double" />
                     </node>
                   </node>
                 </node>
@@ -2474,7 +2474,7 @@
                   <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="2ShNRf" id="53AnhGy6Xiw" role="37wK5m">
                     <node concept="1pGfFk" id="53AnhGy6X$i" role="2ShVmc">
-                      <ref role="37wK5l" to="fbzs:~Point2D$Double.&lt;init&gt;(double,double)" resolve="Point2D.Double" />
+                      <ref role="37wK5l" to="fbzs:~Point2D$Double.&lt;init&gt;(double,double)" />
                       <node concept="3cpWs3" id="53AnhGy6X$j" role="37wK5m">
                         <node concept="37vLTw" id="53AnhGy6X$k" role="3uHU7B">
                           <ref role="3cqZAo" node="53AnhGy6RGK" resolve="padding" />
@@ -2518,7 +2518,7 @@
               <node concept="3cpWsn" id="53AnhGy6RMd" role="1Duv9x">
                 <property role="TrG5h" value="bendPoint" />
                 <node concept="3uibUv" id="53AnhGy6RMf" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkBendPoint" resolve="org.eclipse.elk.graph.ElkBendPoint" />
+                  <ref role="3uigEE" to="8ob7:~ElkBendPoint" resolve="ElkBendPoint" />
                 </node>
               </node>
               <node concept="3clFbS" id="53AnhGy6RM3" role="2LFqv$">
@@ -2531,7 +2531,7 @@
                       <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                       <node concept="2ShNRf" id="53AnhGy6X$p" role="37wK5m">
                         <node concept="1pGfFk" id="53AnhGy6XQb" role="2ShVmc">
-                          <ref role="37wK5l" to="fbzs:~Point2D$Double.&lt;init&gt;(double,double)" resolve="Point2D.Double" />
+                          <ref role="37wK5l" to="fbzs:~Point2D$Double.&lt;init&gt;(double,double)" />
                           <node concept="3cpWs3" id="53AnhGy6XQc" role="37wK5m">
                             <node concept="37vLTw" id="53AnhGy6XQd" role="3uHU7B">
                               <ref role="3cqZAo" node="53AnhGy6RGK" resolve="padding" />
@@ -2574,7 +2574,7 @@
                   <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="2ShNRf" id="53AnhGy6XQi" role="37wK5m">
                     <node concept="1pGfFk" id="53AnhGy6Y84" role="2ShVmc">
-                      <ref role="37wK5l" to="fbzs:~Point2D$Double.&lt;init&gt;(double,double)" resolve="Point2D.Double" />
+                      <ref role="37wK5l" to="fbzs:~Point2D$Double.&lt;init&gt;(double,double)" />
                       <node concept="3cpWs3" id="53AnhGy6Y85" role="37wK5m">
                         <node concept="37vLTw" id="53AnhGy6Y86" role="3uHU7B">
                           <ref role="3cqZAo" node="53AnhGy6RGK" resolve="padding" />
@@ -2681,7 +2681,7 @@
                   <node concept="3cpWsn" id="53AnhGy6RMN" role="3cpWs9">
                     <property role="TrG5h" value="point" />
                     <node concept="3uibUv" id="53AnhGy6RMP" role="1tU5fm">
-                      <ref role="3uigEE" to="fbzs:~Point2D$Double" resolve="Point2D.Double" />
+                      <ref role="3uigEE" to="fbzs:~Point2D$Double" />
                     </node>
                     <node concept="2OqwBi" id="53AnhGy6UPv" role="33vP2m">
                       <node concept="37vLTw" id="53AnhGy6Ss7" role="2Oq$k0">
@@ -2791,7 +2791,7 @@
               <node concept="3cpWsn" id="53AnhGy6RNd" role="3cpWs9">
                 <property role="TrG5h" value="label" />
                 <node concept="3uibUv" id="53AnhGy6RNf" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="org.eclipse.elk.graph.ElkLabel" />
+                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="ElkLabel" />
                 </node>
                 <node concept="2OqwBi" id="53AnhGy6UST" role="33vP2m">
                   <node concept="37vLTw" id="53AnhGy6Std" role="2Oq$k0">
@@ -2815,7 +2815,7 @@
                   <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="2ShNRf" id="53AnhGy6Ya1" role="37wK5m">
                     <node concept="1pGfFk" id="53AnhGy6YrO" role="2ShVmc">
-                      <ref role="37wK5l" to="fbzs:~Rectangle2D$Double.&lt;init&gt;(double,double,double,double)" resolve="Rectangle2D.Double" />
+                      <ref role="37wK5l" to="fbzs:~Rectangle2D$Double.&lt;init&gt;(double,double,double,double)" />
                       <node concept="3cpWs3" id="53AnhGy6YrP" role="37wK5m">
                         <node concept="37vLTw" id="53AnhGy6YrQ" role="3uHU7B">
                           <ref role="3cqZAo" node="53AnhGy6RGK" resolve="padding" />
@@ -2867,7 +2867,7 @@
               <node concept="3cpWsn" id="53AnhGy6RNt" role="3cpWs9">
                 <property role="TrG5h" value="outputPort" />
                 <node concept="3uibUv" id="53AnhGy6RNv" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkPort" resolve="org.eclipse.elk.graph.ElkPort" />
+                  <ref role="3uigEE" to="8ob7:~ElkPort" resolve="ElkPort" />
                 </node>
                 <node concept="2OqwBi" id="53AnhGy6UXF" role="33vP2m">
                   <node concept="37vLTw" id="53AnhGy6Stv" role="2Oq$k0">
@@ -3101,7 +3101,7 @@
               <node concept="3cpWsn" id="53AnhGy6ROo" role="3cpWs9">
                 <property role="TrG5h" value="outputPortLabel" />
                 <node concept="3uibUv" id="53AnhGy6ROq" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="org.eclipse.elk.graph.ElkLabel" />
+                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="ElkLabel" />
                 </node>
                 <node concept="2OqwBi" id="53AnhGy6V7h" role="33vP2m">
                   <node concept="37vLTw" id="53AnhGy6Svo" role="2Oq$k0">
@@ -3125,7 +3125,7 @@
                   <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="2ShNRf" id="53AnhGy6Yua" role="37wK5m">
                     <node concept="1pGfFk" id="53AnhGy6YWP" role="2ShVmc">
-                      <ref role="37wK5l" to="fbzs:~Rectangle2D$Double.&lt;init&gt;(double,double,double,double)" resolve="Rectangle2D.Double" />
+                      <ref role="37wK5l" to="fbzs:~Rectangle2D$Double.&lt;init&gt;(double,double,double,double)" />
                       <node concept="3cpWs3" id="53AnhGy6YWQ" role="37wK5m">
                         <node concept="37vLTw" id="53AnhGy6YWR" role="3uHU7B">
                           <ref role="3cqZAo" node="53AnhGy6RNy" resolve="outX" />
@@ -3190,7 +3190,7 @@
               <node concept="3cpWsn" id="53AnhGy6ROF" role="3cpWs9">
                 <property role="TrG5h" value="inputPort" />
                 <node concept="3uibUv" id="53AnhGy6ROH" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkPort" resolve="org.eclipse.elk.graph.ElkPort" />
+                  <ref role="3uigEE" to="8ob7:~ElkPort" resolve="ElkPort" />
                 </node>
                 <node concept="2OqwBi" id="53AnhGy6Veo" role="33vP2m">
                   <node concept="37vLTw" id="53AnhGy6SvJ" role="2Oq$k0">
@@ -3424,7 +3424,7 @@
               <node concept="3cpWsn" id="53AnhGy6RPA" role="3cpWs9">
                 <property role="TrG5h" value="inputPortLabel" />
                 <node concept="3uibUv" id="53AnhGy6RPC" role="1tU5fm">
-                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="org.eclipse.elk.graph.ElkLabel" />
+                  <ref role="3uigEE" to="8ob7:~ElkLabel" resolve="ElkLabel" />
                 </node>
                 <node concept="2OqwBi" id="53AnhGy6VnY" role="33vP2m">
                   <node concept="37vLTw" id="53AnhGy6SxC" role="2Oq$k0">
@@ -3448,7 +3448,7 @@
                   <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
                   <node concept="2ShNRf" id="53AnhGy6YZb" role="37wK5m">
                     <node concept="1pGfFk" id="53AnhGy6ZtQ" role="2ShVmc">
-                      <ref role="37wK5l" to="fbzs:~Rectangle2D$Double.&lt;init&gt;(double,double,double,double)" resolve="Rectangle2D.Double" />
+                      <ref role="37wK5l" to="fbzs:~Rectangle2D$Double.&lt;init&gt;(double,double,double,double)" />
                       <node concept="3cpWs3" id="53AnhGy6ZtR" role="37wK5m">
                         <node concept="37vLTw" id="53AnhGy6ZtS" role="3uHU7B">
                           <ref role="3cqZAo" node="53AnhGy6ROK" resolve="inX" />
@@ -4045,7 +4045,7 @@
             <property role="TrG5h" value="documentHolder" />
             <node concept="10Q1$e" id="53AnhGy6RSt" role="1tU5fm">
               <node concept="3uibUv" id="53AnhGy6RSs" role="10Q1$1">
-                <ref role="3uigEE" to="hfck:~SVGDocument" resolve="com.github.weisj.jsvg.SVGDocument" />
+                <ref role="3uigEE" to="hfck:~SVGDocument" resolve="SVGDocument" />
               </node>
             </node>
             <node concept="2ShNRf" id="53AnhGy6RSy" role="33vP2m">
@@ -4056,7 +4056,7 @@
                   </node>
                 </node>
                 <node concept="3uibUv" id="53AnhGy6RSu" role="3$_nBY">
-                  <ref role="3uigEE" to="hfck:~SVGDocument" resolve="com.github.weisj.jsvg.SVGDocument" />
+                  <ref role="3uigEE" to="hfck:~SVGDocument" resolve="SVGDocument" />
                 </node>
               </node>
             </node>
@@ -4799,7 +4799,7 @@
                             <node concept="3cpWsn" id="53AnhGy6RW_" role="3cpWs9">
                               <property role="TrG5h" value="box" />
                               <node concept="3uibUv" id="53AnhGy6RWB" role="1tU5fm">
-                                <ref role="3uigEE" to="fbzs:~Rectangle2D$Double" resolve="Rectangle2D.Double" />
+                                <ref role="3uigEE" to="fbzs:~Rectangle2D$Double" />
                               </node>
                               <node concept="2OqwBi" id="53AnhGy6VVv" role="33vP2m">
                                 <node concept="37vLTw" id="53AnhGy6SCQ" role="2Oq$k0">
@@ -5117,7 +5117,7 @@
                             <node concept="3cpWsn" id="53AnhGy6RXS" role="3cpWs9">
                               <property role="TrG5h" value="box" />
                               <node concept="3uibUv" id="53AnhGy6RXU" role="1tU5fm">
-                                <ref role="3uigEE" to="fbzs:~Rectangle2D$Double" resolve="Rectangle2D.Double" />
+                                <ref role="3uigEE" to="fbzs:~Rectangle2D$Double" />
                               </node>
                               <node concept="2OqwBi" id="53AnhGy6W5p" role="33vP2m">
                                 <node concept="37vLTw" id="53AnhGy6SGj" role="2Oq$k0">
@@ -5514,7 +5514,7 @@
                                     <node concept="3uibUv" id="53AnhGy6S14" role="1tU5fm">
                                       <ref role="3uigEE" to="33ny:~List" resolve="List" />
                                       <node concept="3uibUv" id="53AnhGy6S15" role="11_B2D">
-                                        <ref role="3uigEE" to="fbzs:~Point2D$Double" resolve="Point2D.Double" />
+                                        <ref role="3uigEE" to="fbzs:~Point2D$Double" />
                                       </node>
                                     </node>
                                     <node concept="2OqwBi" id="53AnhGy6WdK" role="33vP2m">
@@ -5579,7 +5579,7 @@
                                       <node concept="3cpWsn" id="53AnhGy6S1r" role="3cpWs9">
                                         <property role="TrG5h" value="point" />
                                         <node concept="3uibUv" id="53AnhGy6S1t" role="1tU5fm">
-                                          <ref role="3uigEE" to="fbzs:~Point2D$Double" resolve="Point2D.Double" />
+                                          <ref role="3uigEE" to="fbzs:~Point2D$Double" />
                                         </node>
                                         <node concept="2OqwBi" id="53AnhGy6Wir" role="33vP2m">
                                           <node concept="37vLTw" id="53AnhGy6SLr" role="2Oq$k0">
@@ -6195,7 +6195,7 @@
                             <node concept="3cpWsn" id="53AnhGy6S2p" role="3cpWs9">
                               <property role="TrG5h" value="loader" />
                               <node concept="3uibUv" id="53AnhGy6S2r" role="1tU5fm">
-                                <ref role="3uigEE" to="kkt5:~SVGLoader" resolve="com.github.weisj.jsvg.parser.SVGLoader" />
+                                <ref role="3uigEE" to="kkt5:~SVGLoader" resolve="SVGLoader" />
                               </node>
                               <node concept="2ShNRf" id="53AnhGy6SSR" role="33vP2m">
                                 <node concept="1pGfFk" id="53AnhGy6SSS" role="2ShVmc">
@@ -7023,7 +7023,7 @@
                               <node concept="3uibUv" id="53AnhGy6S77" role="1tU5fm">
                                 <ref role="3uigEE" to="33ny:~List" resolve="List" />
                                 <node concept="3uibUv" id="53AnhGy6S78" role="11_B2D">
-                                  <ref role="3uigEE" to="fbzs:~Point2D$Double" resolve="Point2D.Double" />
+                                  <ref role="3uigEE" to="fbzs:~Point2D$Double" />
                                 </node>
                               </node>
                               <node concept="2OqwBi" id="53AnhGy6WHn" role="33vP2m">
@@ -7082,7 +7082,7 @@
                                 <node concept="3cpWsn" id="53AnhGy6S7u" role="3cpWs9">
                                   <property role="TrG5h" value="from" />
                                   <node concept="3uibUv" id="53AnhGy6S7w" role="1tU5fm">
-                                    <ref role="3uigEE" to="fbzs:~Point2D$Double" resolve="Point2D.Double" />
+                                    <ref role="3uigEE" to="fbzs:~Point2D$Double" />
                                   </node>
                                   <node concept="2OqwBi" id="53AnhGy6WM0" role="33vP2m">
                                     <node concept="37vLTw" id="53AnhGy6SWe" role="2Oq$k0">
@@ -7101,7 +7101,7 @@
                                 <node concept="3cpWsn" id="53AnhGy6S7z" role="3cpWs9">
                                   <property role="TrG5h" value="to" />
                                   <node concept="3uibUv" id="53AnhGy6S7_" role="1tU5fm">
-                                    <ref role="3uigEE" to="fbzs:~Point2D$Double" resolve="Point2D.Double" />
+                                    <ref role="3uigEE" to="fbzs:~Point2D$Double" />
                                   </node>
                                   <node concept="2OqwBi" id="53AnhGy6WOl" role="33vP2m">
                                     <node concept="37vLTw" id="53AnhGy6SWl" role="2Oq$k0">
@@ -7827,6 +7827,315 @@
       </node>
       <node concept="3Tm1VV" id="53AnhGy6SaY" role="1B3o_S" />
       <node concept="3cqZAl" id="53AnhGy6SaZ" role="3clF45" />
+    </node>
+  </node>
+  <node concept="312cEu" id="7JXu42klerC">
+    <property role="TrG5h" value="RuntimeDemo" />
+    <node concept="3Tm1VV" id="7JXu42klerD" role="1B3o_S" />
+    <node concept="2YIFZL" id="7JXu42klerE" role="jymVt">
+      <property role="TrG5h" value="main" />
+      <node concept="37vLTG" id="7JXu42klerF" role="3clF46">
+        <property role="TrG5h" value="args" />
+        <node concept="10Q1$e" id="7JXu42klerH" role="1tU5fm">
+          <node concept="3uibUv" id="7JXu42klerG" role="10Q1$1">
+            <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbS" id="7JXu42klerI" role="3clF47">
+        <node concept="3cpWs8" id="7JXu42klerK" role="3cqZAp">
+          <node concept="3cpWsn" id="7JXu42klerJ" role="3cpWs9">
+            <property role="TrG5h" value="graph" />
+            <node concept="3uibUv" id="7JXu42klerL" role="1tU5fm">
+              <ref role="3uigEE" to="s6nb:7JXu42kiflE" resolve="SvgGraphModel" />
+            </node>
+            <node concept="2ShNRf" id="7JXu42klesV" role="33vP2m">
+              <node concept="1pGfFk" id="7JXu42klesX" role="2ShVmc">
+                <ref role="37wK5l" to="s6nb:7JXu42kiflQ" resolve="SvgGraphModel" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7JXu42klerN" role="3cqZAp">
+          <node concept="2OqwBi" id="7JXu42klePK" role="3clFbG">
+            <node concept="2OqwBi" id="7JXu42klet1" role="2Oq$k0">
+              <node concept="37vLTw" id="7JXu42klet0" role="2Oq$k0">
+                <ref role="3cqZAo" node="7JXu42klerJ" resolve="graph" />
+              </node>
+              <node concept="2OwXpG" id="7JXu42klet2" role="2OqNvi">
+                <ref role="2Oxat5" to="s6nb:7JXu42kiflG" resolve="nodes" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7JXu42klePL" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+              <node concept="2ShNRf" id="7JXu42klf23" role="37wK5m">
+                <node concept="1pGfFk" id="7JXu42klf2f" role="2ShVmc">
+                  <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
+                  <node concept="Xl_RD" id="7JXu42klf2g" role="37wK5m">
+                    <property role="Xl_RC" value="a" />
+                  </node>
+                  <node concept="Xl_RD" id="7JXu42klf2h" role="37wK5m">
+                    <property role="Xl_RC" value="Start" />
+                  </node>
+                  <node concept="3cmrfG" id="7JXu42klf2i" role="37wK5m">
+                    <property role="3cmrfH" value="80" />
+                  </node>
+                  <node concept="3cmrfG" id="7JXu42klf2j" role="37wK5m">
+                    <property role="3cmrfH" value="40" />
+                  </node>
+                  <node concept="Xl_RD" id="7JXu42klf2k" role="37wK5m">
+                    <property role="Xl_RC" value="rect" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7JXu42klerV" role="3cqZAp">
+          <node concept="2OqwBi" id="7JXu42kleSp" role="3clFbG">
+            <node concept="2OqwBi" id="7JXu42kletd" role="2Oq$k0">
+              <node concept="37vLTw" id="7JXu42kletc" role="2Oq$k0">
+                <ref role="3cqZAo" node="7JXu42klerJ" resolve="graph" />
+              </node>
+              <node concept="2OwXpG" id="7JXu42klete" role="2OqNvi">
+                <ref role="2Oxat5" to="s6nb:7JXu42kiflG" resolve="nodes" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7JXu42kleSq" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+              <node concept="2ShNRf" id="7JXu42klf2l" role="37wK5m">
+                <node concept="1pGfFk" id="7JXu42klf2x" role="2ShVmc">
+                  <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
+                  <node concept="Xl_RD" id="7JXu42klf2y" role="37wK5m">
+                    <property role="Xl_RC" value="b" />
+                  </node>
+                  <node concept="Xl_RD" id="7JXu42klf2z" role="37wK5m">
+                    <property role="Xl_RC" value="Process" />
+                  </node>
+                  <node concept="3cmrfG" id="7JXu42klf2$" role="37wK5m">
+                    <property role="3cmrfH" value="90" />
+                  </node>
+                  <node concept="3cmrfG" id="7JXu42klf2_" role="37wK5m">
+                    <property role="3cmrfH" value="40" />
+                  </node>
+                  <node concept="Xl_RD" id="7JXu42klf2A" role="37wK5m">
+                    <property role="Xl_RC" value="rect" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7JXu42kles3" role="3cqZAp">
+          <node concept="2OqwBi" id="7JXu42kleV2" role="3clFbG">
+            <node concept="2OqwBi" id="7JXu42kletp" role="2Oq$k0">
+              <node concept="37vLTw" id="7JXu42kleto" role="2Oq$k0">
+                <ref role="3cqZAo" node="7JXu42klerJ" resolve="graph" />
+              </node>
+              <node concept="2OwXpG" id="7JXu42kletq" role="2OqNvi">
+                <ref role="2Oxat5" to="s6nb:7JXu42kiflG" resolve="nodes" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7JXu42kleV3" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+              <node concept="2ShNRf" id="7JXu42klf2B" role="37wK5m">
+                <node concept="1pGfFk" id="7JXu42klf2N" role="2ShVmc">
+                  <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
+                  <node concept="Xl_RD" id="7JXu42klf2O" role="37wK5m">
+                    <property role="Xl_RC" value="c" />
+                  </node>
+                  <node concept="Xl_RD" id="7JXu42klf2P" role="37wK5m">
+                    <property role="Xl_RC" value="End" />
+                  </node>
+                  <node concept="3cmrfG" id="7JXu42klf2Q" role="37wK5m">
+                    <property role="3cmrfH" value="80" />
+                  </node>
+                  <node concept="3cmrfG" id="7JXu42klf2R" role="37wK5m">
+                    <property role="3cmrfH" value="40" />
+                  </node>
+                  <node concept="Xl_RD" id="7JXu42klf2S" role="37wK5m">
+                    <property role="Xl_RC" value="ellipse" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7JXu42klesb" role="3cqZAp">
+          <node concept="2OqwBi" id="7JXu42kleXF" role="3clFbG">
+            <node concept="2OqwBi" id="7JXu42klet_" role="2Oq$k0">
+              <node concept="37vLTw" id="7JXu42klet$" role="2Oq$k0">
+                <ref role="3cqZAo" node="7JXu42klerJ" resolve="graph" />
+              </node>
+              <node concept="2OwXpG" id="7JXu42kletA" role="2OqNvi">
+                <ref role="2Oxat5" to="s6nb:7JXu42kiflL" resolve="edges" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7JXu42kleXG" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+              <node concept="2ShNRf" id="7JXu42klf2T" role="37wK5m">
+                <node concept="1pGfFk" id="7JXu42klf35" role="2ShVmc">
+                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" resolve="SvgEdgeModel" />
+                  <node concept="Xl_RD" id="7JXu42klf36" role="37wK5m">
+                    <property role="Xl_RC" value="e1" />
+                  </node>
+                  <node concept="Xl_RD" id="7JXu42klf37" role="37wK5m">
+                    <property role="Xl_RC" value="a" />
+                  </node>
+                  <node concept="Xl_RD" id="7JXu42klf38" role="37wK5m">
+                    <property role="Xl_RC" value="b" />
+                  </node>
+                  <node concept="Xl_RD" id="7JXu42klf39" role="37wK5m">
+                    <property role="Xl_RC" value="next" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7JXu42klesi" role="3cqZAp">
+          <node concept="2OqwBi" id="7JXu42klf0j" role="3clFbG">
+            <node concept="2OqwBi" id="7JXu42kletK" role="2Oq$k0">
+              <node concept="37vLTw" id="7JXu42kletJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="7JXu42klerJ" resolve="graph" />
+              </node>
+              <node concept="2OwXpG" id="7JXu42kletL" role="2OqNvi">
+                <ref role="2Oxat5" to="s6nb:7JXu42kiflL" resolve="edges" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7JXu42klf0k" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+              <node concept="2ShNRf" id="7JXu42klf3a" role="37wK5m">
+                <node concept="1pGfFk" id="7JXu42klf3m" role="2ShVmc">
+                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" resolve="SvgEdgeModel" />
+                  <node concept="Xl_RD" id="7JXu42klf3n" role="37wK5m">
+                    <property role="Xl_RC" value="e2" />
+                  </node>
+                  <node concept="Xl_RD" id="7JXu42klf3o" role="37wK5m">
+                    <property role="Xl_RC" value="b" />
+                  </node>
+                  <node concept="Xl_RD" id="7JXu42klf3p" role="37wK5m">
+                    <property role="Xl_RC" value="c" />
+                  </node>
+                  <node concept="Xl_RD" id="7JXu42klf3q" role="37wK5m">
+                    <property role="Xl_RC" value="done" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7JXu42klesq" role="3cqZAp">
+          <node concept="3cpWsn" id="7JXu42klesp" role="3cpWs9">
+            <property role="TrG5h" value="component" />
+            <node concept="3uibUv" id="7JXu42klesr" role="1tU5fm">
+              <ref role="3uigEE" to="s6nb:7JXu42krEm4" resolve="SvgViewComponent" />
+            </node>
+            <node concept="2YIFZM" id="7JXu42kletU" role="33vP2m">
+              <ref role="1Pybhc" to="s6nb:7JXu42kkzH6" resolve="SvgViewerRuntime" />
+              <ref role="37wK5l" to="s6nb:7JXu42kkzH8" resolve="render" />
+              <node concept="37vLTw" id="7JXu42kletV" role="37wK5m">
+                <ref role="3cqZAo" node="7JXu42klerJ" resolve="graph" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7JXu42klesv" role="3cqZAp">
+          <node concept="3cpWsn" id="7JXu42klesu" role="3cpWs9">
+            <property role="TrG5h" value="frame" />
+            <node concept="3uibUv" id="7JXu42klesw" role="1tU5fm">
+              <ref role="3uigEE" to="dxuu:~JFrame" resolve="JFrame" />
+            </node>
+            <node concept="2ShNRf" id="7JXu42kletW" role="33vP2m">
+              <node concept="1pGfFk" id="7JXu42kle$9" role="2ShVmc">
+                <ref role="37wK5l" to="dxuu:~JFrame.&lt;init&gt;(java.lang.String)" resolve="JFrame" />
+                <node concept="Xl_RD" id="7JXu42kle$a" role="37wK5m">
+                  <property role="Xl_RC" value="SVG Viewer Runtime Demo" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7JXu42klesz" role="3cqZAp">
+          <node concept="2OqwBi" id="7JXu42klf0A" role="3clFbG">
+            <node concept="37vLTw" id="7JXu42kle$d" role="2Oq$k0">
+              <ref role="3cqZAo" node="7JXu42klesu" resolve="frame" />
+            </node>
+            <node concept="liA8E" id="7JXu42klf0B" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JFrame.setDefaultCloseOperation(int)" resolve="setDefaultCloseOperation" />
+              <node concept="10M0yZ" id="7JXu42klf3t" role="37wK5m">
+                <ref role="1PxDUh" to="dxuu:~WindowConstants" resolve="WindowConstants" />
+                <ref role="3cqZAo" to="dxuu:~WindowConstants.EXIT_ON_CLOSE" resolve="EXIT_ON_CLOSE" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7JXu42klesA" role="3cqZAp">
+          <node concept="2OqwBi" id="7JXu42klf3U" role="3clFbG">
+            <node concept="2OqwBi" id="7JXu42klf11" role="2Oq$k0">
+              <node concept="37vLTw" id="7JXu42kle$q" role="2Oq$k0">
+                <ref role="3cqZAo" node="7JXu42klesu" resolve="frame" />
+              </node>
+              <node concept="liA8E" id="7JXu42klf12" role="2OqNvi">
+                <ref role="37wK5l" to="dxuu:~JFrame.getContentPane()" resolve="getContentPane" />
+              </node>
+            </node>
+            <node concept="liA8E" id="7JXu42klf3V" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
+              <node concept="2ShNRf" id="7JXu42klf3W" role="37wK5m">
+                <node concept="1pGfFk" id="7JXu42klf3X" role="2ShVmc">
+                  <ref role="37wK5l" to="dxuu:~JScrollPane.&lt;init&gt;(java.awt.Component)" resolve="JScrollPane" />
+                  <node concept="37vLTw" id="7JXu42klf3Y" role="37wK5m">
+                    <ref role="3cqZAo" node="7JXu42klesp" resolve="component" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7JXu42klesF" role="3cqZAp">
+          <node concept="2OqwBi" id="7JXu42klf1k" role="3clFbG">
+            <node concept="37vLTw" id="7JXu42kleN1" role="2Oq$k0">
+              <ref role="3cqZAo" node="7JXu42klesu" resolve="frame" />
+            </node>
+            <node concept="liA8E" id="7JXu42klf1l" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Window.setSize(int,int)" resolve="setSize" />
+              <node concept="3cmrfG" id="7JXu42klf1m" role="37wK5m">
+                <property role="3cmrfH" value="500" />
+              </node>
+              <node concept="3cmrfG" id="7JXu42klf1n" role="37wK5m">
+                <property role="3cmrfH" value="400" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7JXu42klesJ" role="3cqZAp">
+          <node concept="2OqwBi" id="7JXu42klf1G" role="3clFbG">
+            <node concept="37vLTw" id="7JXu42kleN7" role="2Oq$k0">
+              <ref role="3cqZAo" node="7JXu42klesu" resolve="frame" />
+            </node>
+            <node concept="liA8E" id="7JXu42klf1H" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Window.setLocationRelativeTo(java.awt.Component)" resolve="setLocationRelativeTo" />
+              <node concept="10Nm6u" id="7JXu42klf1I" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7JXu42klesM" role="3cqZAp">
+          <node concept="2OqwBi" id="7JXu42klf20" role="3clFbG">
+            <node concept="37vLTw" id="7JXu42kleNc" role="2Oq$k0">
+              <ref role="3cqZAo" node="7JXu42klesu" resolve="frame" />
+            </node>
+            <node concept="liA8E" id="7JXu42klf21" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Window.setVisible(boolean)" resolve="setVisible" />
+              <node concept="3clFbT" id="7JXu42klf22" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="7JXu42klesP" role="1B3o_S" />
+      <node concept="3cqZAl" id="7JXu42klesQ" role="3clF45" />
     </node>
   </node>
 </model>
