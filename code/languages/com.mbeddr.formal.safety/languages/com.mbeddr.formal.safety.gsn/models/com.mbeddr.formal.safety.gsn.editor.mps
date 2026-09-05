@@ -13,6 +13,8 @@
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
     <use id="1919c723-b60b-4592-9318-9ce96d91da44" name="de.itemis.mps.editor.celllayout" version="0" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -53,10 +55,13 @@
     <import index="b19z" ref="r:11a68676-9d63-4e1c-b920-59aefe77def3(com.mbeddr.formal.base.structure)" />
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" />
     <import index="oroz" ref="r:dba7efaf-6d1d-4f64-8546-01563c9e7aae(com.mpsbasics.editor.utils.editor_cells)" />
-    <import index="88j9" ref="r:20c4aa5c-ab36-4815-af32-01895ee9c2f5(de.itemis.mps.editor.diagram.editor)" implicit="true" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
-    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
-    <import index="w873" ref="r:0de03bcd-6ad8-423c-b85e-ae3dd18ed2b3(com.mbeddr.formal.base.behavior)" implicit="true" />
+    <import index="4p95" ref="r:567b5936-84e7-4bfd-a79c-452e2eb73b3c(com.mpsbasics.editor.utils.performance)" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" />
+    <import index="w873" ref="r:0de03bcd-6ad8-423c-b85e-ae3dd18ed2b3(com.mbeddr.formal.base.behavior)" />
+    <import index="88j9" ref="r:20c4aa5c-ab36-4815-af32-01895ee9c2f5(de.itemis.mps.editor.diagram.editor)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="uzhr" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.diagnostic(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
@@ -834,6 +839,7 @@
         <child id="4611582986551314344" name="requestedType" index="UnYnz" />
       </concept>
       <concept id="1160666733551" name="jetbrains.mps.baseLanguage.collections.structure.AddAllElementsOperation" flags="nn" index="X8dFx" />
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="3055999550620853964" name="jetbrains.mps.baseLanguage.collections.structure.RemoveWhereOperation" flags="nn" index="1aUR6E" />
       <concept id="1201792049884" name="jetbrains.mps.baseLanguage.collections.structure.TranslateOperation" flags="nn" index="3goQfb" />
       <concept id="1201872418428" name="jetbrains.mps.baseLanguage.collections.structure.GetKeysOperation" flags="nn" index="3lbrtF" />
@@ -932,6 +938,40 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="3GRi4m$qQ5t" role="2iSdaV" />
+      <node concept="pkWqt" id="7OFgsunKnYL" role="pqm2j">
+        <node concept="3clFbS" id="7OFgsunKnYM" role="2VODD2">
+          <node concept="3clFbJ" id="7OFgsunKoev" role="3cqZAp">
+            <node concept="3clFbS" id="7OFgsunKoex" role="3clFbx">
+              <node concept="3clFbF" id="7OFgsunKoEb" role="3cqZAp">
+                <node concept="2YIFZM" id="7OFgsunKoUt" role="3clFbG">
+                  <ref role="37wK5l" to="4p95:5n$6p7WN70j" resolve="disableVcsHighlighter" />
+                  <ref role="1Pybhc" to="4p95:5n$6p7WMZoz" resolve="VcsHighlighterDisabler" />
+                  <node concept="1Q80Hx" id="7OFgsunKqsz" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3eOSWO" id="7OFgsunKEkv" role="3clFbw">
+              <node concept="3cmrfG" id="7OFgsunKEp8" role="3uHU7w">
+                <property role="3cmrfH" value="100" />
+              </node>
+              <node concept="2OqwBi" id="7OFgsunK$9I" role="3uHU7B">
+                <node concept="2OqwBi" id="7OFgsunKqQU" role="2Oq$k0">
+                  <node concept="pncrf" id="7OFgsunKqyo" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="7OFgsunKwVv" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="7OFgsunKCCA" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7OFgsunKELV" role="3cqZAp">
+            <node concept="3clFbT" id="7OFgsunKELU" role="3clFbG">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="PMmxH" id="3ydH56R7Q$p" role="6VMZX">
       <ref role="PMmxG" node="3ydH56R7QiE" resolve="GoalStructureInInspector_EditorComponent" />
@@ -6534,6 +6574,40 @@
         <ref role="PMmxG" node="4UQF4xbK33B" resolve="GoalStructureQueryListBasedEditorComponent" />
       </node>
       <node concept="2iRkQZ" id="5uFV_KKBj0q" role="2iSdaV" />
+      <node concept="pkWqt" id="7OFgsunOgX7" role="pqm2j">
+        <node concept="3clFbS" id="7OFgsunOgX8" role="2VODD2">
+          <node concept="3clFbJ" id="5n$6p7WPTKy" role="3cqZAp">
+            <node concept="3clFbS" id="5n$6p7WPTK$" role="3clFbx">
+              <node concept="3clFbF" id="5n$6p7WQoX7" role="3cqZAp">
+                <node concept="2YIFZM" id="5n$6p7WQprA" role="3clFbG">
+                  <ref role="37wK5l" to="4p95:5n$6p7WN70j" resolve="disableVcsHighlighter" />
+                  <ref role="1Pybhc" to="4p95:5n$6p7WMZoz" resolve="VcsHighlighterDisabler" />
+                  <node concept="1Q80Hx" id="5n$6p7WQpGU" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3eOSWO" id="5n$6p7WQ3qL" role="3clFbw">
+              <node concept="3cmrfG" id="5n$6p7WQ3uS" role="3uHU7w">
+                <property role="3cmrfH" value="100" />
+              </node>
+              <node concept="2OqwBi" id="5n$6p7WPXtM" role="3uHU7B">
+                <node concept="2OqwBi" id="5n$6p7WPU9T" role="2Oq$k0">
+                  <node concept="pncrf" id="5n$6p7WPTNa" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="5n$6p7WTYFx" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="5n$6p7WQ1Zt" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="5n$6p7WQpPY" role="3cqZAp">
+            <node concept="3clFbT" id="5n$6p7WQpPX" role="3clFbG">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2aJ2om" id="5uFV_KKBkOT" role="CpUAK">
       <ref role="2$4xQ3" node="5uFV_KKBhnn" resolve="GOAL_STRUCTURE_TEXTUAL" />
@@ -11044,6 +11118,40 @@
         <ref role="PMmxG" node="4UQF4xbK33B" resolve="GoalStructureQueryListBasedEditorComponent" />
       </node>
       <node concept="2iRkQZ" id="7olAlesPk0L" role="2iSdaV" />
+      <node concept="pkWqt" id="7OFgsunPwGQ" role="pqm2j">
+        <node concept="3clFbS" id="7OFgsunPwGR" role="2VODD2">
+          <node concept="3clFbJ" id="7OFgsunPwSp" role="3cqZAp">
+            <node concept="3clFbS" id="7OFgsunPwSq" role="3clFbx">
+              <node concept="3clFbF" id="7OFgsunPwSr" role="3cqZAp">
+                <node concept="2YIFZM" id="7OFgsunPwSs" role="3clFbG">
+                  <ref role="37wK5l" to="4p95:5n$6p7WN70j" resolve="disableVcsHighlighter" />
+                  <ref role="1Pybhc" to="4p95:5n$6p7WMZoz" resolve="VcsHighlighterDisabler" />
+                  <node concept="1Q80Hx" id="7OFgsunPwSt" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3eOSWO" id="7OFgsunPwSu" role="3clFbw">
+              <node concept="3cmrfG" id="7OFgsunPwSv" role="3uHU7w">
+                <property role="3cmrfH" value="100" />
+              </node>
+              <node concept="2OqwBi" id="7OFgsunPwSw" role="3uHU7B">
+                <node concept="2OqwBi" id="7OFgsunPwSx" role="2Oq$k0">
+                  <node concept="pncrf" id="7OFgsunPwSy" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="7OFgsunPwSz" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="7OFgsunPwS$" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7OFgsunPwS_" role="3cqZAp">
+            <node concept="3clFbT" id="7OFgsunPwSA" role="3clFbG">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="PMmxH" id="3ydH56R8Uk2" role="6VMZX">
       <ref role="PMmxG" node="3ydH56R7QiE" resolve="GoalStructureInInspector_EditorComponent" />
@@ -12398,6 +12506,40 @@
         </node>
       </node>
       <node concept="2iRkQZ" id="4Cms47V7bQG" role="2iSdaV" />
+      <node concept="pkWqt" id="7OFgsunPyk6" role="pqm2j">
+        <node concept="3clFbS" id="7OFgsunPyk7" role="2VODD2">
+          <node concept="3clFbJ" id="7OFgsunPys4" role="3cqZAp">
+            <node concept="3clFbS" id="7OFgsunPys5" role="3clFbx">
+              <node concept="3clFbF" id="7OFgsunPys6" role="3cqZAp">
+                <node concept="2YIFZM" id="7OFgsunPys7" role="3clFbG">
+                  <ref role="37wK5l" to="4p95:5n$6p7WN70j" resolve="disableVcsHighlighter" />
+                  <ref role="1Pybhc" to="4p95:5n$6p7WMZoz" resolve="VcsHighlighterDisabler" />
+                  <node concept="1Q80Hx" id="7OFgsunPys8" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3eOSWO" id="7OFgsunPys9" role="3clFbw">
+              <node concept="3cmrfG" id="7OFgsunPysa" role="3uHU7w">
+                <property role="3cmrfH" value="100" />
+              </node>
+              <node concept="2OqwBi" id="7OFgsunPysb" role="3uHU7B">
+                <node concept="2OqwBi" id="7OFgsunPysc" role="2Oq$k0">
+                  <node concept="pncrf" id="7OFgsunPysd" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="7OFgsunPyse" role="2OqNvi">
+                    <ref role="3TtcxE" to="py52:3GRi4m$qPV0" resolve="content" />
+                  </node>
+                </node>
+                <node concept="34oBXx" id="7OFgsunPysf" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7OFgsunPysg" role="3cqZAp">
+            <node concept="3clFbT" id="7OFgsunPysh" role="3clFbG">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2aJ2om" id="4Cms47V7voF" role="CpUAK">
       <ref role="2$4xQ3" node="4Cms47V74xp" resolve="GOAL_STRUCTURE_TREE_TABLE" />

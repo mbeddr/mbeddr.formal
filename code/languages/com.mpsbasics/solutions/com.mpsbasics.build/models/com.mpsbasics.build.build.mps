@@ -1497,11 +1497,6 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="16dr8Qynset" role="3bR37C">
-          <node concept="3bR9La" id="16dr8Qynseu" role="1SiIV1">
-            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
-          </node>
-        </node>
         <node concept="1SiIV0" id="16dr8Qynsex" role="3bR37C">
           <node concept="3bR9La" id="16dr8Qynsey" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
@@ -1638,6 +1633,11 @@
         <node concept="1SiIV0" id="2i2e8U1mEgx" role="3bR37C">
           <node concept="3bR9La" id="2i2e8U1mEgy" role="1SiIV1">
             <ref role="3bR37D" to="90a9:6bkzxtWPDx1" resolve="de.itemis.stubs.batik" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4tlZZBq6GA8" role="3bR37C">
+          <node concept="3bR9La" id="4tlZZBq6GA9" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:39HJr_hyEzS" resolve="jetbrains.mps.ide.vcs.platform" />
           </node>
         </node>
       </node>
@@ -3354,15 +3354,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2sgV4H" id="4oT$_WGcUdW" role="1l3spa">
-      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
-      <node concept="398BVA" id="4oT$_WGcUdX" role="2JcizS">
-        <ref role="398BVh" node="5gFsbf33UIa" resolve="dependencies.root" />
-        <node concept="2Ry0Ak" id="4oT$_WGcUdY" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>
