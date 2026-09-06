@@ -29,7 +29,7 @@
   <node concept="3IRL9o" id="7JXu42lc2Ib">
     <property role="TrG5h" value="Demo" />
     <node concept="3IQu7A" id="7JXu42lc2Ic" role="3IQ7ie">
-      <property role="TrG5h" value="Producer123" />
+      <property role="TrG5h" value="Producer" />
       <node concept="3IQu7E" id="7JXu42lc2Id" role="3IQu7G">
         <property role="TrG5h" value="out" />
       </node>

@@ -49,6 +49,7 @@
       <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
         <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534370425" name="jetbrains.mps.baseLanguage.structure.IntegerType" flags="in" index="10Oyi0" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
@@ -477,6 +478,7 @@
                 <node concept="37vLTw" id="7JXu42knfQ4" role="37wK5m">
                   <ref role="3cqZAo" node="7JXu42knfPw" resolve="graph" />
                 </node>
+                <node concept="10Nm6u" id="2W2tyeSn79V" role="37wK5m" />
               </node>
             </node>
           </node>

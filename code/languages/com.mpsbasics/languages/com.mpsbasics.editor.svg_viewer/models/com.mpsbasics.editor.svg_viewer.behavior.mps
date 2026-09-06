@@ -672,6 +672,13 @@
       <property role="13i0it" value="true" />
       <node concept="17QB3L" id="7JXu42kNoQQ" role="3clF45" />
       <node concept="3Tm1VV" id="7JXu42kNoQR" role="1B3o_S" />
+      <node concept="3clFbS" id="2W2tyeSmzK$" role="3clF47">
+        <node concept="3cpWs6" id="2W2tyeSnMg6" role="3cqZAp">
+          <node concept="Xl_RD" id="2W2tyeSnMg7" role="3cqZAk">
+            <property role="Xl_RC" value="rect" />
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="13h7C7" id="7JXu42kNtTm">
