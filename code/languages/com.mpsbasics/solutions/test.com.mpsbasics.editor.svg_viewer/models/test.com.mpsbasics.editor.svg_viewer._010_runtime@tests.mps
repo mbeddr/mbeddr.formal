@@ -178,7 +178,7 @@
           <node concept="3clFbF" id="7JXu42kn4Tx" role="3cqZAp">
             <node concept="2YIFZM" id="7JXu42kn4Uq" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7JXu42kiiFQ" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7JXu42kONOj" resolve="layout" />
               <node concept="37vLTw" id="7JXu42kn4Ur" role="37wK5m">
                 <ref role="3cqZAo" node="7JXu42kn4Tt" resolve="graph" />
               </node>
@@ -335,7 +335,7 @@
           <node concept="3clFbF" id="7JXu42knai8" role="3cqZAp">
             <node concept="2YIFZM" id="7JXu42knaj0" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7JXu42kiiFQ" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7JXu42kONOj" resolve="layout" />
               <node concept="37vLTw" id="7JXu42knaj1" role="37wK5m">
                 <ref role="3cqZAo" node="7JXu42knai4" resolve="graph" />
               </node>
@@ -349,7 +349,7 @@
               </node>
               <node concept="2YIFZM" id="7JXu42knaj4" role="33vP2m">
                 <ref role="1Pybhc" to="s6nb:7JXu42ki_zC" resolve="SvgWriter" />
-                <ref role="37wK5l" to="s6nb:7JXu42ki_zE" resolve="write" />
+                <ref role="37wK5l" to="s6nb:7JXu42kRxvT" resolve="write" />
                 <node concept="37vLTw" id="7JXu42knaj5" role="37wK5m">
                   <ref role="3cqZAo" node="7JXu42knai4" resolve="graph" />
                 </node>
@@ -563,7 +563,7 @@
             </node>
             <node concept="2ShNRf" id="7JXu42km24C" role="33vP2m">
               <node concept="1pGfFk" id="7JXu42km24E" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kiflQ" />
+                <ref role="37wK5l" to="s6nb:7JXu42kiflQ" resolve="SvgGraphModel" />
               </node>
             </node>
           </node>
@@ -582,7 +582,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7JXu42km2iK" role="37wK5m">
                 <node concept="1pGfFk" id="7JXu42km2iW" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kierK" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
                   <node concept="Xl_RD" id="7JXu42km2iX" role="37wK5m">
                     <property role="Xl_RC" value="n1" />
                   </node>
@@ -617,7 +617,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7JXu42km2j2" role="37wK5m">
                 <node concept="1pGfFk" id="7JXu42km2je" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kierK" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
                   <node concept="Xl_RD" id="7JXu42km2jf" role="37wK5m">
                     <property role="Xl_RC" value="n2" />
                   </node>
@@ -652,7 +652,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7JXu42km2jk" role="37wK5m">
                 <node concept="1pGfFk" id="7JXu42km2jw" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kierK" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
                   <node concept="Xl_RD" id="7JXu42km2jx" role="37wK5m">
                     <property role="Xl_RC" value="n3" />
                   </node>
@@ -687,7 +687,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7JXu42km2jA" role="37wK5m">
                 <node concept="1pGfFk" id="7JXu42km2jM" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" resolve="SvgEdgeModel" />
                   <node concept="Xl_RD" id="7JXu42km2jN" role="37wK5m">
                     <property role="Xl_RC" value="e1" />
                   </node>
@@ -719,7 +719,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7JXu42km2jR" role="37wK5m">
                 <node concept="1pGfFk" id="7JXu42km2k3" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" resolve="SvgEdgeModel" />
                   <node concept="Xl_RD" id="7JXu42km2k4" role="37wK5m">
                     <property role="Xl_RC" value="e2" />
                   </node>
