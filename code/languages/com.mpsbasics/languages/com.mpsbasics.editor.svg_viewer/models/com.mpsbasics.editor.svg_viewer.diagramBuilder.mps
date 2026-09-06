@@ -12,6 +12,7 @@
     <import index="s6nb" ref="r:f80142d0-1750-489d-858a-e9fd8b656217(com.mpsbasics.editor.svg_viewer.rt.runtime)" />
     <import index="3b3v" ref="r:e0b0a2bb-c9fb-4076-9843-79b2050e9884(com.mpsbasics.editor.svg_viewer.behavior)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -382,7 +383,16 @@
             <node concept="37vLTw" id="7JXu42laEfz" role="37wK5m">
               <ref role="3cqZAo" node="7JXu42laEfp" resolve="graph" />
             </node>
+            <node concept="37vLTw" id="5GheoLnJOGd" role="37wK5m">
+              <ref role="3cqZAo" node="5GheoLnJOFZ" resolve="editorContext" />
+            </node>
           </node>
+        </node>
+      </node>
+      <node concept="37vLTG" id="5GheoLnJOFZ" role="3clF46">
+        <property role="TrG5h" value="editorContext" />
+        <node concept="3uibUv" id="5GheoLnJOG1" role="1tU5fm">
+          <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
         </node>
       </node>
     </node>
@@ -498,7 +508,7 @@
                             <ref role="3cqZAo" node="7JXu42laC_4" resolve="diagram" />
                           </node>
                           <node concept="3Tsc0h" id="7JXu42laFR0" role="2OqNvi">
-                            <ref role="3TtcxE" to="g2od:7JXu42kL_3y" />
+                            <ref role="3TtcxE" to="g2od:7JXu42kL_3y" resolve="node" />
                           </node>
                         </node>
                         <node concept="TSZUe" id="7JXu42laFR1" role="2OqNvi">

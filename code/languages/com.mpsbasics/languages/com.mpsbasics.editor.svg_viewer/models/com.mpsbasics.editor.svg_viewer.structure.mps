@@ -6,7 +6,7 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -60,7 +60,7 @@
     <property role="TrG5h" value="SvgNode" />
     <property role="34LRSv" value="svg node" />
     <property role="R4oN_" value="A rendered box in an SVG diagram" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7JXu42kL_3o" role="1TKVEl">
       <property role="IQ2nx" value="8934429454542196952" />
       <property role="TrG5h" value="label" />
@@ -114,7 +114,7 @@
     <property role="TrG5h" value="SvgEdge" />
     <property role="34LRSv" value="svg edge" />
     <property role="R4oN_" value="A connector between two SvgNode boxes" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7JXu42kL_3v" role="1TKVEl">
       <property role="IQ2nx" value="8934429454542196959" />
       <property role="TrG5h" value="label" />
@@ -130,6 +130,12 @@
       <property role="20kJfa" value="to" />
       <ref role="20lvS9" node="7JXu42kShmF" resolve="ISvgConnectable" />
     </node>
+    <node concept="1TJgyj" id="7JXu42ldUuq" role="1TKVEi">
+      <property role="IQ2ns" value="8934429454549624730" />
+      <property role="20kJfa" value="target" />
+      <property role="TrG5h" value="target" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JXu42kL_3n">
     <property role="EcuMT" value="8934429454542196951" />
@@ -137,7 +143,7 @@
     <property role="34LRSv" value="svg diagram" />
     <property role="R4oN_" value="A diagram rendered to SVG, made of SvgNode boxes and SvgEdge connectors" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7JXu42kL_3y" role="1TKVEi">
       <property role="IQ2ns" value="8934429454542196962" />
       <property role="20kJfa" value="node" />
@@ -161,7 +167,7 @@
     <property role="TrG5h" value="SvgShapeBase" />
     <property role="R4oN_" value="Base concept for the shape of an SvgNode box; extend to add custom shape kinds" />
     <property role="R5$K7" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7JXu42kMTiS">
     <property role="EcuMT" value="8934429454542542008" />
@@ -215,7 +221,7 @@
   <node concept="1TIwiD" id="7JXu42kSm_6">
     <property role="EcuMT" value="8934429454543972678" />
     <property role="TrG5h" value="SvgPort" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7JXu42kSm_7" role="1TKVEl">
       <property role="IQ2nx" value="8934429454543972679" />
       <property role="TrG5h" value="label" />
@@ -231,6 +237,12 @@
       <property role="IQ2nx" value="8934429454544016451" />
       <property role="TrG5h" value="side" />
       <ref role="AX2Wp" node="7JXu42kSc8b" resolve="SvgPortSide" />
+    </node>
+    <node concept="1TJgyj" id="7JXu42lef2h" role="1TKVEi">
+      <property role="IQ2ns" value="8934429454549708945" />
+      <property role="20kJfa" value="target" />
+      <property role="TrG5h" value="target" />
+      <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
   </node>
 </model>
