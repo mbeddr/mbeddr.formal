@@ -29,7 +29,7 @@
   <node concept="3IRL9o" id="7JXu42lc2Ib">
     <property role="TrG5h" value="Demo" />
     <node concept="3IQu7A" id="7JXu42lc2Ic" role="3IQ7ie">
-      <property role="TrG5h" value="Producer" />
+      <property role="TrG5h" value="Producer123" />
       <node concept="3IQu7E" id="7JXu42lc2Id" role="3IQu7G">
         <property role="TrG5h" value="out" />
       </node>
@@ -43,7 +43,13 @@
     <node concept="3IQu7H" id="7JXu42lc4R5" role="3IQ7ie">
       <property role="TrG5h" value="Producer-to-Consumer" />
       <ref role="3IQu7J" node="7JXu42lc2Id" resolve="out" />
-      <ref role="3IQu7K" node="7JXu42lc2If" resolve="in" />
+      <ref role="3IQu7K" node="2W2tyeSfU4E" resolve="inPortOfThirdComponent" />
+    </node>
+    <node concept="3IQu7A" id="2W2tyeSfU4C" role="3IQ7ie">
+      <property role="TrG5h" value="ThirdComp" />
+      <node concept="3IQu7E" id="2W2tyeSfU4E" role="3IQu7F">
+        <property role="TrG5h" value="inPortOfThirdComponent" />
+      </node>
     </node>
   </node>
 </model>
