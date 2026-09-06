@@ -2,10 +2,11 @@
 <model ref="r:5c1bdcec-8d52-4f1a-a319-a97a482d0774(com.mpsbasics.editor.svg_viewer.demolan.structure)">
   <persistence version="9" />
   <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -46,6 +47,14 @@
     <node concept="PrWs8" id="7JXu42l99AC" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="7JXu42l9gNe" role="1TKVEi">
+      <property role="IQ2ns" value="8934429454548405454" />
+      <property role="20kJfa" value="content" />
+      <property role="TrG5h" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7JXu42l99AD" resolve="IArchitectureContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JXu42l99AA">
     <property role="EcuMT" value="8934429454548375974" />
@@ -69,6 +78,7 @@
       <property role="IQ2ns" value="8934429454548375987" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="children" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7JXu42l99AD" resolve="IArchitectureContent" />
     </node>
     <node concept="PrWs8" id="7JXu42l99AL" role="PzmwI">
@@ -86,6 +96,9 @@
     <property role="EcuMT" value="8934429454548375978" />
     <property role="TrG5h" value="Port" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7JXu42l9ial" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JXu42l99AH">
     <property role="EcuMT" value="8934429454548375981" />
@@ -96,14 +109,14 @@
     </node>
     <node concept="1TJgyj" id="7JXu42l99AJ" role="1TKVEi">
       <property role="IQ2ns" value="8934429454548375983" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="sourcePort" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7JXu42l99AE" resolve="Port" />
     </node>
     <node concept="1TJgyj" id="7JXu42l99AK" role="1TKVEi">
       <property role="IQ2ns" value="8934429454548375984" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="targetPort" />
+      <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7JXu42l99AE" resolve="Port" />
     </node>
   </node>
