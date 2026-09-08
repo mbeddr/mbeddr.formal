@@ -5,6 +5,43 @@ diagrams rendered to **SVG** and displayed read-only inside the MPS editor —
 the visualization counterpart to `de.itemis.mps.editor.diagram` (MPS-extensions),
 which is editable and JGraph-based. This one is view-only.
 
+Broader framing: this is meant to be generic infrastructure, not a diagram
+language for one DSL. Any language engineer building a DSL (SysML-style
+architecture/block diagrams, statemachines, activity diagrams, GSN or
+Eliminative Argumentation argument trees, org-chart-style relation diagrams,
+etc.) should be able to plug their own concepts into the same runtime by
+supplying an `SvgContentMapping` set, without svg_viewer itself knowing
+anything about their DSL. A further-out, not-yet-scoped direction is
+end-user-authored visualization for model exploration/immersion (in the style
+of Glamorous Toolkit), as opposed to visualizations authored by the language
+engineer at design time.
+
+## Status update
+
+The implementation has moved past what the phases below describe:
+
+- The flat "`SvgDiagram` holds `SvgNode`/`SvgEdge` children directly" structure
+  from Phase 2 was superseded by a mapping-driven architecture:
+  `SvgContentMapping` (`matches`/`buildNode`/`buildPorts`/`childrenQuery`/
+  `buildEdge`) lets a DSL project arbitrary domain nodes onto the generic
+  `SvgNode`/`SvgEdge`/`SvgPort` model; `SvgDiagramBuilder` walks domain content
+  through a list of mappings (`findMapping`) to assemble the diagram. This is
+  what makes the "generic infra for many DSLs" framing above actually work,
+  and is more general than the "Generic Box/Edge Query" idea Phase 2 deferred.
+- Ports (`SvgPort`, `ISvgConnectable`, `SvgPortSide`) are implemented, not
+  deferred.
+- Click-to-select on a diagram element, with Inspector focus on the
+  corresponding source node (including surviving a rebuild) and a selection
+  highlight overlay, are implemented — this is beyond Phase 4 "polish" and
+  wasn't anticipated in the phases below.
+- Layout is ELK's layered algorithm (`org.eclipse.elk.alg.layered`) via
+  `RecursiveGraphLayoutEngine`, matching the Stack section below.
+
+Phases 0–4 below are kept for historical/pipeline-shape context. Treat the
+"Deliberately deferred" list under Phase 2 as superseded by the status above
+where it overlaps, and see "Future work" at the end of this file for topics
+raised after Phase 3 that the phases below don't cover at all.
+
 ## Modules involved
 
 - `com.mpsbasics.editor.svg_viewer` — the language (structure/behavior/editor/etc.)
@@ -148,3 +185,54 @@ demo of the actual DSL before Phase 3 exists.
 Once the component cell is wired into a demolan editor, the demolan sandbox
 becomes the live demo. Keep the file-dump helper around anyway — useful for
 fast iteration without reopening editors.
+
+## Future work (not yet scoped into phases)
+
+### Hierarchical / nested layout for composite structures
+
+Needed for e.g. a statemachine's composite (nested) states, a GSN sub-tree
+shown as a container, or package/module nesting in an architecture diagram.
+
+- ELK's layered algorithm supports this natively: any `ElkNode` can contain
+  child `ElkNode`s, and `RecursiveGraphLayoutEngine` (already what
+  `ElkLayoutEngine` calls) is designed to walk that containment tree — lay out
+  each compound node's children first, size the parent to fit them plus
+  insets, then lay out the parent's own level. The `hierarchyHandling` layout
+  option (`INHERIT`/`INCLUDE_CHILDREN`/`SEPARATE_CHILDREN`) controls whether a
+  container's children share the parent level's layout (needed for edges that
+  cross a composite boundary) or are laid out independently. Hierarchical
+  (cross-boundary) edges are supported too.
+- Current gap: `svg_viewer.rt` only ever creates `ElkNode`s as flat siblings
+  under one root — nothing nests one under another. On the language side,
+  `SvgNode` has no containment link for child `SvgNode`s; only `SvgDiagram`
+  holds a flat `node`/`edge` list.
+- To support this: (1) give `SvgNode` its own nested `node` child link (or
+  generalize the existing containment role so both `SvgDiagram` and `SvgNode`
+  can hold nested nodes), plus a way to opt into `hierarchyHandling`; (2) in
+  the runtime, nest child `ElkNode`s under their parent's `ElkNode` (not the
+  diagram root) and set container insets/padding so ELK reserves room for the
+  composite's own border + label; (3) `SvgWriter` needs to draw containers
+  before children, offsetting by the parent's laid-out x/y.
+
+### Notation-specific shape vocabulary
+
+Shapes today are generic (`SvgShapeRect`/`SvgShapeRoundedRect`/
+`SvgShapeEllipse`). Idioms specific to a notation — decision diamonds and
+swimlanes (activity diagrams), distinct goal/strategy/solution/context shapes
+(GSN), SysML block compartments — aren't expressible yet without a DSL author
+hand-rolling raw SVG in their mapping's `buildNode`. Worth deciding whether
+more shapes belong in `svg_viewer.structure` itself (shared across DSLs) vs.
+a documented escape hatch for custom shape rendering per mapping.
+
+### Styling / theming API
+
+Styling today is per-node `fill`/`stroke` properties only. There's no shared
+style-class concept a DSL could define once and reuse across many nodes/
+diagrams (contrast with `com.symo.plantuml`'s `StyleClass` reuse pattern).
+
+### End-user-authored visualization
+
+Explicitly out of scope for now (see the broader framing above) — a future
+direction where end users, not language engineers, define or tweak
+visualizations for models they're exploring, in the style of Glamorous
+Toolkit. No design started.
