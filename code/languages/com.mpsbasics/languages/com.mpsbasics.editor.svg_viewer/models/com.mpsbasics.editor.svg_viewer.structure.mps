@@ -306,6 +306,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="2W2tyeS$RxS" resolve="SvgDiagramNodePorts_BLQuery" />
     </node>
+    <node concept="1TJgyj" id="3MSqLL2NsSF" role="1TKVEi">
+      <property role="IQ2ns" value="4375364807114477099" />
+      <property role="20kJfa" value="edgeMapping" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MSqLL2NqBK" resolve="SvgDiagramNode_EdgeMappingFunction" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2W2tyeS$RxS">
     <property role="EcuMT" value="3387399765528639608" />
@@ -332,6 +338,37 @@
     <property role="TrG5h" value="SvgDiagramNode_MappingFunction" />
     <property role="3GE5qa" value="svg_dsl2baselan_builder" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="3MSqLL2NqBK">
+    <property role="EcuMT" value="4375364807114467824" />
+    <property role="TrG5h" value="SvgDiagramNode_EdgeMappingFunction" />
+    <property role="3GE5qa" value="svg_dsl2baselan_builder" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="3MSqLL2Osw9">
+    <property role="EcuMT" value="4375364807114737673" />
+    <property role="TrG5h" value="Parameter_Registry" />
+    <property role="34LRSv" value="registry" />
+    <property role="3GE5qa" value="svg_dsl2baselan_builder" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="3MSqLL2Oswa">
+    <property role="EcuMT" value="4375364807114737674" />
+    <property role="TrG5h" value="Parameter_AllDomainNodes" />
+    <property role="34LRSv" value="allNodes" />
+    <property role="3GE5qa" value="svg_dsl2baselan_builder" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="3MSqLL2Oswb">
+    <property role="EcuMT" value="4375364807114737675" />
+    <property role="TrG5h" value="SvgEdgeSynthesizer" />
+    <property role="R4oN_" value="Synthesizes additional SvgEdges once per diagram render, from the fully-populated connectable registry, independent of any single matched domain node" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="svg_dsl2baselan_builder" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+    <node concept="PrWs8" id="3MSqLL2Oswc" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 

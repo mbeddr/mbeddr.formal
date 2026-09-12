@@ -3,12 +3,14 @@
   <persistence version="9" />
   <languages>
     <use id="d7706f63-9be2-479c-a3da-ae92af1e64d5" name="jetbrains.mps.lang.generator.generationContext" version="2" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="9j4p" ref="r:01e2deed-15c4-4291-8444-512f12cda84a(com.mpsbasics.editor.svg_viewer.generator.templates@generator)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
-    <import index="g2od" ref="r:78bb8cb4-be0c-474b-ab43-9918cf7e596a(com.mpsbasics.editor.svg_viewer.structure)" implicit="true" />
+    <import index="g2od" ref="r:78bb8cb4-be0c-474b-ab43-9918cf7e596a(com.mpsbasics.editor.svg_viewer.structure)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -70,6 +72,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1196978630214" name="jetbrains.mps.lang.core.structure.IResolveInfo" flags="ngI" index="2Lv6Xg">
+        <property id="1196978656277" name="resolveInfo" index="2Lvdk3" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -147,6 +152,75 @@
     </node>
     <node concept="2tJIrI" id="2W2tyeSNqH2" role="jymVt" />
     <node concept="3Tm1VV" id="2W2tyeSIkDa" role="1B3o_S" />
+    <node concept="2YIFZL" id="3MSqLL2PJGc" role="jymVt">
+      <property role="TrG5h" value="synthesizerProviderClassName" />
+      <property role="2Lvdk3" value="synthesizerProviderClassName" />
+      <node concept="17QB3L" id="3MSqLL2PJGg" role="3clF45" />
+      <node concept="37vLTG" id="3MSqLL2PJGh" role="3clF46">
+        <property role="TrG5h" value="aNode" />
+        <property role="2Lvdk3" value="aNode" />
+        <node concept="3Tqbb2" id="3MSqLL2PJGj" role="1tU5fm">
+          <ref role="ehGHo" to="g2od:3MSqLL2Oswb" resolve="SvgEdgeSynthesizer" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3MSqLL2PJGk" role="3clF47">
+        <node concept="3clFbF" id="3MSqLL2PJGl" role="3cqZAp">
+          <node concept="3cpWs3" id="3MSqLL2PJGn" role="3clFbG">
+            <node concept="Xl_RD" id="3MSqLL2PJGq" role="3uHU7B">
+              <property role="Xl_RC" value="EdgeSynthesizerProvider_" />
+            </node>
+            <node concept="2OqwBi" id="3MSqLL2PJGr" role="3uHU7w">
+              <node concept="37vLTw" id="3MSqLL2PJGu" role="2Oq$k0">
+                <ref role="3cqZAo" node="3MSqLL2PJGh" resolve="aNode" />
+              </node>
+              <node concept="3TrcHB" id="3MSqLL2PJGv" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3MSqLL2PJGw" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="3MSqLL2PJWm" role="jymVt">
+      <property role="TrG5h" value="synthesizerProviderFqClassName" />
+      <property role="2Lvdk3" value="synthesizerProviderFqClassName" />
+      <node concept="17QB3L" id="3MSqLL2PJWq" role="3clF45" />
+      <node concept="37vLTG" id="3MSqLL2PJWr" role="3clF46">
+        <property role="TrG5h" value="aNode" />
+        <property role="2Lvdk3" value="aNode" />
+        <node concept="3Tqbb2" id="3MSqLL2PJWt" role="1tU5fm">
+          <ref role="ehGHo" to="g2od:3MSqLL2Oswb" resolve="SvgEdgeSynthesizer" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3MSqLL2PJWu" role="3clF47">
+        <node concept="3clFbF" id="3MSqLL2PJWv" role="3cqZAp">
+          <node concept="3cpWs3" id="3MSqLL2PJWx" role="3clFbG">
+            <node concept="3cpWs3" id="3MSqLL2PJW$" role="3uHU7B">
+              <node concept="2OqwBi" id="3MSqLL2PJWB" role="3uHU7B">
+                <node concept="2OqwBi" id="3MSqLL2PJWE" role="2Oq$k0">
+                  <node concept="37vLTw" id="3MSqLL2PJWH" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3MSqLL2PJWr" resolve="aNode" />
+                  </node>
+                  <node concept="I4A8Y" id="3MSqLL2PJWI" role="2OqNvi" />
+                </node>
+                <node concept="LkI2h" id="3MSqLL2PJWJ" role="2OqNvi" />
+              </node>
+              <node concept="Xl_RD" id="3MSqLL2PJWK" role="3uHU7w">
+                <property role="Xl_RC" value="." />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="3MSqLL2PJWL" role="3uHU7w">
+              <ref role="37wK5l" node="3MSqLL2PJGc" resolve="synthesizerProviderClassName" />
+              <node concept="37vLTw" id="3MSqLL2PJWM" role="37wK5m">
+                <ref role="3cqZAo" node="3MSqLL2PJWr" resolve="aNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3MSqLL2PJWN" role="1B3o_S" />
+    </node>
   </node>
 </model>
 

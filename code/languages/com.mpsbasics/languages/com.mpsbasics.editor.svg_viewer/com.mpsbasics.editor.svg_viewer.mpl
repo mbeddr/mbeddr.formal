@@ -27,6 +27,8 @@
       <dependencies>
         <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
         <dependency reexport="false">f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)</dependency>
+        <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+        <dependency reexport="false">fd392034-7849-419d-9071-12563d152375(jetbrains.mps.baseLanguage.closures)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -86,6 +88,7 @@
     <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
     <dependency reexport="false">fa13cc63-c476-4d46-9c96-d53670abe7bc(de.itemis.mps.editor.diagram)</dependency>
     <dependency reexport="false">de9578c1-c7f7-46a0-b834-48f0093901e7(com.mpsbasics.editor.svg_viewer.generator)</dependency>
+    <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
