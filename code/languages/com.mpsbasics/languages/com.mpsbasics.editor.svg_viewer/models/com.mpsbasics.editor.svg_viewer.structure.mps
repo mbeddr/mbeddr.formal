@@ -7,6 +7,9 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
+    <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -50,6 +53,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -60,6 +66,7 @@
     <property role="TrG5h" value="SvgNode" />
     <property role="34LRSv" value="svg node" />
     <property role="R4oN_" value="A rendered box in an SVG diagram" />
+    <property role="3GE5qa" value="svg_baselan" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7JXu42kL_3o" role="1TKVEl">
       <property role="IQ2nx" value="8934429454542196952" />
@@ -114,6 +121,7 @@
     <property role="TrG5h" value="SvgEdge" />
     <property role="34LRSv" value="svg edge" />
     <property role="R4oN_" value="A connector between two SvgNode boxes" />
+    <property role="3GE5qa" value="svg_baselan" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7JXu42kL_3v" role="1TKVEl">
       <property role="IQ2nx" value="8934429454542196959" />
@@ -143,6 +151,7 @@
     <property role="34LRSv" value="svg diagram" />
     <property role="R4oN_" value="A diagram rendered to SVG, made of SvgNode boxes and SvgEdge connectors" />
     <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="svg_baselan" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7JXu42kL_3y" role="1TKVEi">
       <property role="IQ2ns" value="8934429454542196962" />
@@ -167,6 +176,7 @@
     <property role="TrG5h" value="SvgShapeBase" />
     <property role="R4oN_" value="Base concept for the shape of an SvgNode box; extend to add custom shape kinds" />
     <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="svg_baselan" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="1TIwiD" id="7JXu42kMTiS">
@@ -174,6 +184,7 @@
     <property role="TrG5h" value="SvgShapeRect" />
     <property role="34LRSv" value="rect" />
     <property role="R4oN_" value="A rectangular box shape" />
+    <property role="3GE5qa" value="svg_baselan" />
     <ref role="1TJDcQ" node="7JXu42kMTiR" resolve="SvgShapeBase" />
   </node>
   <node concept="1TIwiD" id="7JXu42kMTiT">
@@ -181,6 +192,7 @@
     <property role="TrG5h" value="SvgShapeRoundedRect" />
     <property role="34LRSv" value="rounded rect" />
     <property role="R4oN_" value="A rectangular box shape with rounded corners" />
+    <property role="3GE5qa" value="svg_baselan" />
     <ref role="1TJDcQ" node="7JXu42kMTiR" resolve="SvgShapeBase" />
   </node>
   <node concept="1TIwiD" id="7JXu42kMTiU">
@@ -188,11 +200,13 @@
     <property role="TrG5h" value="SvgShapeEllipse" />
     <property role="34LRSv" value="ellipse" />
     <property role="R4oN_" value="An elliptical box shape" />
+    <property role="3GE5qa" value="svg_baselan" />
     <ref role="1TJDcQ" node="7JXu42kMTiR" resolve="SvgShapeBase" />
   </node>
   <node concept="25R3W" id="7JXu42kSc8b">
     <property role="3F6X1D" value="8934429454543929867" />
     <property role="TrG5h" value="SvgPortSide" />
+    <property role="3GE5qa" value="svg_baselan" />
     <node concept="25R33" id="7JXu42kSc8d" role="25R1y">
       <property role="3tVfz5" value="3751922877814001583" />
       <property role="TrG5h" value="north" />
@@ -217,10 +231,12 @@
   <node concept="PlHQZ" id="7JXu42kShmF">
     <property role="EcuMT" value="8934429454543951275" />
     <property role="TrG5h" value="ISvgConnectable" />
+    <property role="3GE5qa" value="svg_baselan" />
   </node>
   <node concept="1TIwiD" id="7JXu42kSm_6">
     <property role="EcuMT" value="8934429454543972678" />
     <property role="TrG5h" value="SvgPort" />
+    <property role="3GE5qa" value="svg_baselan" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7JXu42kSm_7" role="1TKVEl">
       <property role="IQ2nx" value="8934429454543972679" />
@@ -244,6 +260,72 @@
       <property role="TrG5h" value="target" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="2W2tyeS$hfL">
+    <property role="EcuMT" value="3387399765528482801" />
+    <property role="TrG5h" value="CellModel_SvgDiagram" />
+    <property role="3GE5qa" value="svg_editor" />
+    <ref role="1TJDcQ" to="tpc2:fBEYTCT" resolve="EditorCellModel" />
+    <node concept="1TJgyj" id="2W2tyeS$L7G" role="1TKVEi">
+      <property role="IQ2ns" value="3387399765528613356" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="content" />
+      <ref role="20lvS9" node="2W2tyeS$LhP" resolve="SvgDiagramContent_BLQuery" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2W2tyeS$LhP">
+    <property role="EcuMT" value="3387399765528614005" />
+    <property role="TrG5h" value="SvgDiagramContent_BLQuery" />
+    <property role="3GE5qa" value="svg_editor" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="2W2tyeS$PeO">
+    <property role="EcuMT" value="3387399765528630196" />
+    <property role="TrG5h" value="SvgDiagramNode" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="svg_dsl2baselan_builder" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="2W2tyeSIBV7" role="1TKVEi">
+      <property role="IQ2ns" value="3387399765531197127" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="conceptExpression" />
+      <ref role="20lvS9" to="tp25:2iMJRNxweHk" resolve="ConceptIdRefExpression" />
+    </node>
+    <node concept="1TJgyj" id="2W2tyeSJKyS" role="1TKVEi">
+      <property role="IQ2ns" value="3387399765531494584" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="nodeMapping" />
+      <ref role="20lvS9" node="2W2tyeSJKYJ" resolve="SvgDiagramNode_MappingFunction" />
+    </node>
+    <node concept="PrWs8" id="2W2tyeSS7E_" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2W2tyeS$RxS">
+    <property role="EcuMT" value="3387399765528639608" />
+    <property role="TrG5h" value="SvgDiagramNodePorts_BLQuery" />
+    <property role="3GE5qa" value="svg_dsl2baselan_builder" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="2W2tyeS$Tol">
+    <property role="EcuMT" value="3387399765528647189" />
+    <property role="TrG5h" value="Parameter_DslNode" />
+    <property role="34LRSv" value="dslNode" />
+    <property role="3GE5qa" value="svg_dsl2baselan_builder" />
+    <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+  </node>
+  <node concept="1TIwiD" id="2W2tyeSJfQs">
+    <property role="EcuMT" value="3387399765531360668" />
+    <property role="TrG5h" value="Parameter_MyNode" />
+    <property role="34LRSv" value="myNode" />
+    <property role="3GE5qa" value="svg_editor" />
+    <ref role="1TJDcQ" node="2W2tyeS$Tol" resolve="Parameter_DslNode" />
+  </node>
+  <node concept="1TIwiD" id="2W2tyeSJKYJ">
+    <property role="EcuMT" value="3387399765531496367" />
+    <property role="TrG5h" value="SvgDiagramNode_MappingFunction" />
+    <property role="3GE5qa" value="svg_dsl2baselan_builder" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
 

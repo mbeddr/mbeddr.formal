@@ -15,11 +15,15 @@
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -108,7 +112,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
@@ -245,6 +248,7 @@
   <node concept="312cEu" id="7JXu42laAe2">
     <property role="TrG5h" value="SvgDiagramBuilder" />
     <node concept="3Tm1VV" id="7JXu42laC$D" role="1B3o_S" />
+    <node concept="2tJIrI" id="2W2tyeSVeaO" role="jymVt" />
     <node concept="2YIFZL" id="7JXu42laC$E" role="jymVt">
       <property role="TrG5h" value="render" />
       <node concept="3Tm1VV" id="7JXu42laC$I" role="1B3o_S" />
@@ -370,7 +374,7 @@
               <node concept="37vLTw" id="7JXu42laEfv" role="2Oq$k0">
                 <ref role="3cqZAo" node="7JXu42laEez" resolve="diagram" />
               </node>
-              <node concept="2qgKlT" id="7JXu42laEfw" role="2OqNvi">
+              <node concept="3zqWPK" id="2W2tyeSI1dQ" role="2OqNvi">
                 <ref role="37wK5l" to="3b3v:7JXu42kLWGu" resolve="buildGraphModel" />
               </node>
             </node>
@@ -396,6 +400,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="2W2tyeSVcaf" role="jymVt" />
     <node concept="2YIFZL" id="7JXu42laC$V" role="jymVt">
       <property role="TrG5h" value="buildContent" />
       <node concept="3Tm6S6" id="7JXu42laC$Z" role="1B3o_S" />
@@ -633,6 +638,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="2W2tyeSVcP6" role="jymVt" />
     <node concept="2YIFZL" id="7JXu42laC_k" role="jymVt">
       <property role="TrG5h" value="buildEdges" />
       <node concept="3Tm6S6" id="7JXu42laC_o" role="1B3o_S" />
@@ -790,6 +796,7 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="2W2tyeSVdvX" role="jymVt" />
     <node concept="2YIFZL" id="7JXu42laC_H" role="jymVt">
       <property role="TrG5h" value="findMapping" />
       <node concept="3Tm6S6" id="7JXu42laC_L" role="1B3o_S" />
