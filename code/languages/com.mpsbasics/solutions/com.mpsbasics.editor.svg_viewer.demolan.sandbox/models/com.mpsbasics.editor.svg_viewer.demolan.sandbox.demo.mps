@@ -15,6 +15,7 @@
       <concept id="8934429454548375974" name="com.mpsbasics.editor.svg_viewer.demolan.structure.Component" flags="ng" index="3IQu7A">
         <child id="8934429454548375979" name="inPorts" index="3IQu7F" />
         <child id="8934429454548375980" name="outPorts" index="3IQu7G" />
+        <child id="8934429454548375987" name="children" index="3IQu7N" />
       </concept>
       <concept id="8934429454548375978" name="com.mpsbasics.editor.svg_viewer.demolan.structure.Port" flags="ng" index="3IQu7E" />
       <concept id="8934429454548375981" name="com.mpsbasics.editor.svg_viewer.demolan.structure.Connection" flags="ng" index="3IQu7H">
@@ -33,6 +34,31 @@
       <node concept="3IQu7E" id="7JXu42lc2Id" role="3IQu7G">
         <property role="TrG5h" value="out" />
       </node>
+      <node concept="3IQu7A" id="7IsGrgJtQ8t" role="3IQu7N">
+        <property role="TrG5h" value="Doer" />
+        <node concept="3IQu7E" id="7IsGrgJtQ8u" role="3IQu7G">
+          <property role="TrG5h" value="out" />
+        </node>
+      </node>
+      <node concept="3IQu7A" id="7IsGrgJtQUE" role="3IQu7N">
+        <property role="TrG5h" value="Checker" />
+        <node concept="3IQu7E" id="7IsGrgJtQUF" role="3IQu7F">
+          <property role="TrG5h" value="in" />
+        </node>
+        <node concept="3IQu7E" id="7IsGrgJtQUG" role="3IQu7G">
+          <property role="TrG5h" value="out" />
+        </node>
+      </node>
+      <node concept="3IQu7H" id="7IsGrgJtRGW" role="3IQu7N">
+        <property role="TrG5h" value="Doer-to-Checker" />
+        <ref role="3IQu7J" node="7IsGrgJtQ8u" resolve="out" />
+        <ref role="3IQu7K" node="7IsGrgJtQUF" resolve="in" />
+      </node>
+      <node concept="3IQu7H" id="7IsGrgJtSvd" role="3IQu7N">
+        <property role="TrG5h" value="Checker-to-ProducerOut" />
+        <ref role="3IQu7J" node="7IsGrgJtQUG" resolve="out" />
+        <ref role="3IQu7K" node="7JXu42lc2Id" resolve="out" />
+      </node>
     </node>
     <node concept="3IQu7A" id="7JXu42lc2Ie" role="3IQ7ie">
       <property role="TrG5h" value="Consumer" />
@@ -50,6 +76,11 @@
       <node concept="3IQu7E" id="2W2tyeSfU4E" role="3IQu7F">
         <property role="TrG5h" value="inPortOfThirdComponent" />
       </node>
+    </node>
+    <node concept="3IQu7H" id="7IsGrgJtOo8" role="3IQ7ie">
+      <property role="TrG5h" value="Producer-to-ConsumerIn" />
+      <ref role="3IQu7J" node="7JXu42lc2Id" resolve="out" />
+      <ref role="3IQu7K" node="7JXu42lc2If" resolve="in" />
     </node>
   </node>
 </model>

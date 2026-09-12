@@ -115,6 +115,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7JXu42kSm_6" resolve="SvgPort" />
     </node>
+    <node concept="1TJgyj" id="7IsGrgJtXWw" role="1TKVEi">
+      <property role="IQ2ns" value="8907189550480613152" />
+      <property role="20kJfa" value="node" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7JXu42kL_3l" resolve="SvgNode" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JXu42kL_3m">
     <property role="EcuMT" value="8934429454542196950" />
@@ -312,6 +319,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3MSqLL2NqBK" resolve="SvgDiagramNode_EdgeMappingFunction" />
     </node>
+    <node concept="1TJgyj" id="7IsGrgJHdo6" role="1TKVEi">
+      <property role="IQ2ns" value="8907189550484608518" />
+      <property role="20kJfa" value="childrenMapping" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="7IsGrgJHaZM" resolve="SvgDiagramNode_ChildrenBLQuery" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2W2tyeS$RxS">
     <property role="EcuMT" value="3387399765528639608" />
@@ -369,6 +382,13 @@
     <node concept="PrWs8" id="3MSqLL2Oswc" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7IsGrgJHaZM">
+    <property role="EcuMT" value="8907189550484598770" />
+    <property role="TrG5h" value="SvgDiagramNode_ChildrenBLQuery" />
+    <property role="R4oN_" value="query returning the nested child domain nodes for a diagram node mapping" />
+    <property role="3GE5qa" value="svg_dsl2baselan_builder" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
 

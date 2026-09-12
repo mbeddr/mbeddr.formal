@@ -218,6 +218,7 @@
       <concept id="3387399765528630196" name="com.mpsbasics.editor.svg_viewer.structure.SvgDiagramNode" flags="ng" index="2n$imn">
         <child id="3387399765531197127" name="conceptExpression" index="2nI0z$" />
         <child id="3387399765531494584" name="nodeMapping" index="2nJnUr" />
+        <child id="8907189550484608518" name="childrenMapping" index="1ka6uM" />
         <child id="4375364807114477099" name="edgeMapping" index="1YtqkR" />
         <child id="4375364807113938774" name="portMapping" index="1YvvLa" />
       </concept>
@@ -228,6 +229,7 @@
       </concept>
       <concept id="3387399765531496367" name="com.mpsbasics.editor.svg_viewer.structure.SvgDiagramNode_MappingFunction" flags="ig" index="2nJnAc" />
       <concept id="3387399765531360668" name="com.mpsbasics.editor.svg_viewer.structure.Parameter_MyNode" flags="ng" index="2nJCIZ" />
+      <concept id="8907189550484598770" name="com.mpsbasics.editor.svg_viewer.structure.SvgDiagramNode_ChildrenBLQuery" flags="ig" index="1ka1T6" />
       <concept id="4375364807114737673" name="com.mpsbasics.editor.svg_viewer.structure.Parameter_Registry" flags="ng" index="1Yqqcl" />
       <concept id="4375364807114467824" name="com.mpsbasics.editor.svg_viewer.structure.SvgDiagramNode_EdgeMappingFunction" flags="ig" index="1YtsbG" />
     </language>
@@ -656,6 +658,18 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1ka1T6" id="7IsGrgJIiWy" role="1ka6uM">
+      <node concept="3clFbS" id="7IsGrgJIiW$" role="2VODD2">
+        <node concept="3clFbF" id="7IsGrgJIiW_" role="3cqZAp">
+          <node concept="2OqwBi" id="7IsGrgJIiWB" role="3clFbG">
+            <node concept="2n$u0Q" id="7IsGrgJIiWE" role="2Oq$k0" />
+            <node concept="3Tsc0h" id="7IsGrgJIiWF" role="2OqNvi">
+              <ref role="3TtcxE" to="8dfc:7JXu42l99AN" />
             </node>
           </node>
         </node>
