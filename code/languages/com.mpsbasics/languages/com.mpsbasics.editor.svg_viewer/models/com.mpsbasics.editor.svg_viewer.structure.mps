@@ -300,6 +300,12 @@
     <node concept="PrWs8" id="2W2tyeSS7E_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyj" id="3MSqLL2Lptm" role="1TKVEi">
+      <property role="IQ2ns" value="4375364807113938774" />
+      <property role="20kJfa" value="portMapping" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="2W2tyeS$RxS" resolve="SvgDiagramNodePorts_BLQuery" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2W2tyeS$RxS">
     <property role="EcuMT" value="3387399765528639608" />
