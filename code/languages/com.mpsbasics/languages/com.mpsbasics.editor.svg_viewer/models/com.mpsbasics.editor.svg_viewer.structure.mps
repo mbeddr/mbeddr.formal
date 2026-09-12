@@ -122,6 +122,11 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7JXu42kL_3l" resolve="SvgNode" />
     </node>
+    <node concept="1TJgyi" id="7IsGrgJJ9Zf" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550485118927" />
+      <property role="TrG5h" value="strokeWidth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JXu42kL_3m">
     <property role="EcuMT" value="8934429454542196950" />
@@ -150,6 +155,16 @@
       <property role="20kJfa" value="target" />
       <property role="TrG5h" value="target" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgJJaCw" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550485121568" />
+      <property role="TrG5h" value="stroke" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgJJaKT" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550485122105" />
+      <property role="TrG5h" value="strokeWidth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JXu42kL_3n">
@@ -266,6 +281,21 @@
       <property role="20kJfa" value="target" />
       <property role="TrG5h" value="target" />
       <ref role="20lvS9" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgJJaab" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550485119627" />
+      <property role="TrG5h" value="fill" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgJJaiA" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550485120166" />
+      <property role="TrG5h" value="stroke" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgJJatz" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550485120867" />
+      <property role="TrG5h" value="strokeWidth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="2W2tyeS$hfL">
