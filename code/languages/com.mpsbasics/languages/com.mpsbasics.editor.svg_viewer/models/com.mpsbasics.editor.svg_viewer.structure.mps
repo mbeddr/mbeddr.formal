@@ -127,6 +127,13 @@
       <property role="TrG5h" value="strokeWidth" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyj" id="7IsGrgKlZrM" role="1TKVEi">
+      <property role="IQ2ns" value="8907189550495299314" />
+      <property role="20kJfa" value="marker" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="7IsGrgKlY69" resolve="SvgMarker" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JXu42kL_3m">
     <property role="EcuMT" value="8934429454542196950" />
@@ -419,6 +426,70 @@
     <property role="R4oN_" value="query returning the nested child domain nodes for a diagram node mapping" />
     <property role="3GE5qa" value="svg_dsl2baselan_builder" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="7IsGrgKlY69">
+    <property role="EcuMT" value="8907189550495293833" />
+    <property role="TrG5h" value="SvgMarker" />
+    <property role="34LRSv" value="svg marker" />
+    <property role="R4oN_" value="A small decorative annotation attached to a corner of an SvgNode" />
+    <property role="3GE5qa" value="svg_baselan" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7IsGrgKlY6a" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550495293834" />
+      <property role="TrG5h" value="position" />
+      <ref role="AX2Wp" node="7IsGrgKtIbg" resolve="ESvgMarkerPosition" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgKlY6c" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550495293836" />
+      <property role="TrG5h" value="size" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgKlY6d" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550495293837" />
+      <property role="TrG5h" value="fill" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgKlY6e" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550495293838" />
+      <property role="TrG5h" value="stroke" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgKlY6f" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550495293839" />
+      <property role="TrG5h" value="strokeWidth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="7IsGrgKrURZ" role="1TKVEi">
+      <property role="IQ2ns" value="8907189550496853503" />
+      <property role="20kJfa" value="shape" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="7JXu42kMTiR" resolve="SvgShapeBase" />
+    </node>
+  </node>
+  <node concept="25R3W" id="7IsGrgKtIbg">
+    <property role="3F6X1D" value="8907189550497325776" />
+    <property role="TrG5h" value="ESvgMarkerPosition" />
+    <property role="3GE5qa" value="svg_baselan" />
+    <node concept="25R33" id="7IsGrgKtIbi" role="25R1y">
+      <property role="3tVfz5" value="4091597096453740095" />
+      <property role="TrG5h" value="topLeft" />
+      <property role="1L1pqM" value="topLeft" />
+    </node>
+    <node concept="25R33" id="7IsGrgKtIbj" role="25R1y">
+      <property role="3tVfz5" value="434199006670006009" />
+      <property role="TrG5h" value="topRight" />
+      <property role="1L1pqM" value="topRight" />
+    </node>
+    <node concept="25R33" id="7IsGrgKtIbk" role="25R1y">
+      <property role="3tVfz5" value="4257164371838693803" />
+      <property role="TrG5h" value="bottomLeft" />
+      <property role="1L1pqM" value="bottomLeft" />
+    </node>
+    <node concept="25R33" id="7IsGrgKtIbl" role="25R1y">
+      <property role="3tVfz5" value="8192389685631288192" />
+      <property role="TrG5h" value="bottomRight" />
+      <property role="1L1pqM" value="bottomRight" />
+    </node>
   </node>
 </model>
 
