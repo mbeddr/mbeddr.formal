@@ -1445,6 +1445,74 @@
                     </node>
                   </node>
                 </node>
+                <node concept="3clFbF" id="7IsGrgKFvFq" role="3cqZAp">
+                  <node concept="2OqwBi" id="7IsGrgKFvGd" role="3clFbG">
+                    <node concept="37vLTw" id="7IsGrgKFvFG" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7IsGrgJWJrQ" resolve="elkNode" />
+                    </node>
+                    <node concept="liA8E" id="7IsGrgKFvGe" role="2OqNvi">
+                      <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
+                      <node concept="10M0yZ" id="7IsGrgKFvH0" role="37wK5m">
+                        <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
+                        <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_NODE_NODE" resolve="SPACING_NODE_NODE" />
+                      </node>
+                      <node concept="3b6qkQ" id="7IsGrgKFvGg" role="37wK5m">
+                        <property role="$nhwW" value="60.0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="7IsGrgKFvFu" role="3cqZAp">
+                  <node concept="2OqwBi" id="7IsGrgKFvGs" role="3clFbG">
+                    <node concept="37vLTw" id="7IsGrgKFvFM" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7IsGrgJWJrQ" resolve="elkNode" />
+                    </node>
+                    <node concept="liA8E" id="7IsGrgKFvGt" role="2OqNvi">
+                      <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
+                      <node concept="10M0yZ" id="7IsGrgKFvH3" role="37wK5m">
+                        <ref role="1PxDUh" to="u8j:~LayeredOptions" resolve="LayeredOptions" />
+                        <ref role="3cqZAo" to="u8j:~LayeredOptions.SPACING_NODE_NODE_BETWEEN_LAYERS" resolve="SPACING_NODE_NODE_BETWEEN_LAYERS" />
+                      </node>
+                      <node concept="3b6qkQ" id="7IsGrgKFvGv" role="37wK5m">
+                        <property role="$nhwW" value="60.0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="7IsGrgKFvFy" role="3cqZAp">
+                  <node concept="2OqwBi" id="7IsGrgKFvGF" role="3clFbG">
+                    <node concept="37vLTw" id="7IsGrgKFvFS" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7IsGrgJWJrQ" resolve="elkNode" />
+                    </node>
+                    <node concept="liA8E" id="7IsGrgKFvGG" role="2OqNvi">
+                      <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
+                      <node concept="10M0yZ" id="7IsGrgKFvH6" role="37wK5m">
+                        <ref role="1PxDUh" to="gwyy:~CoreOptions" resolve="CoreOptions" />
+                        <ref role="3cqZAo" to="gwyy:~CoreOptions.SPACING_EDGE_NODE" resolve="SPACING_EDGE_NODE" />
+                      </node>
+                      <node concept="3b6qkQ" id="7IsGrgKFvGI" role="37wK5m">
+                        <property role="$nhwW" value="30.0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="7IsGrgKFvFA" role="3cqZAp">
+                  <node concept="2OqwBi" id="7IsGrgKFvGU" role="3clFbG">
+                    <node concept="37vLTw" id="7IsGrgKFvFY" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7IsGrgJWJrQ" resolve="elkNode" />
+                    </node>
+                    <node concept="liA8E" id="7IsGrgKFvGV" role="2OqNvi">
+                      <ref role="37wK5l" to="voxa:~IPropertyHolder.setProperty(org.eclipse.elk.graph.properties.IProperty,java.lang.Object)" resolve="setProperty" />
+                      <node concept="10M0yZ" id="7IsGrgKFvH9" role="37wK5m">
+                        <ref role="1PxDUh" to="u8j:~LayeredOptions" resolve="LayeredOptions" />
+                        <ref role="3cqZAo" to="u8j:~LayeredOptions.SPACING_EDGE_NODE_BETWEEN_LAYERS" resolve="SPACING_EDGE_NODE_BETWEEN_LAYERS" />
+                      </node>
+                      <node concept="3b6qkQ" id="7IsGrgKFvGX" role="37wK5m">
+                        <property role="$nhwW" value="30.0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
             <node concept="3clFbF" id="7IsGrgJWJsi" role="3cqZAp">
