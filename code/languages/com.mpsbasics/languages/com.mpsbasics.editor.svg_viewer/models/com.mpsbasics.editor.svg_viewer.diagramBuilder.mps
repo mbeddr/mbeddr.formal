@@ -14,6 +14,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
     <import index="cigw" ref="r:62008b6e-7cb2-47d8-9fce-9f8efc8641b8(com.mpsbasics.editor.svg_viewer.registry)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -422,8 +423,8 @@
     <node concept="2YIFZL" id="7JXu42laC$E" role="jymVt">
       <property role="TrG5h" value="render" />
       <node concept="3Tm1VV" id="7JXu42laC$I" role="1B3o_S" />
-      <node concept="3uibUv" id="7JXu42laC$J" role="3clF45">
-        <ref role="3uigEE" to="s6nb:7JXu42krEm4" resolve="SvgViewComponent" />
+      <node concept="3uibUv" id="7IsGrgKOeca" role="3clF45">
+        <ref role="3uigEE" to="dxuu:~JComponent" />
       </node>
       <node concept="37vLTG" id="7JXu42laC$K" role="3clF46">
         <property role="TrG5h" value="topLevelContent" />
@@ -663,7 +664,7 @@
         <node concept="3cpWs6" id="7JXu42laEfx" role="3cqZAp">
           <node concept="2YIFZM" id="7JXu42laEfy" role="3cqZAk">
             <ref role="1Pybhc" to="s6nb:7JXu42kkzH6" resolve="SvgViewerRuntime" />
-            <ref role="37wK5l" to="s6nb:7JXu42kkzH8" resolve="render" />
+            <ref role="37wK5l" to="s6nb:7IsGrgKNXka" />
             <node concept="37vLTw" id="7JXu42laEfz" role="37wK5m">
               <ref role="3cqZAo" node="7JXu42laEfp" resolve="graph" />
             </node>

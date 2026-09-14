@@ -16,6 +16,7 @@
     <import index="jgjw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.security(JDK/)" />
     <import index="hyam" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt.event(JDK/)" />
     <import index="t6h5" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang.reflect(JDK/)" />
+    <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -497,12 +498,12 @@
           <node concept="3cpWs8" id="7JXu42knfP_" role="3cqZAp">
             <node concept="3cpWsn" id="7JXu42knfP$" role="3cpWs9">
               <property role="TrG5h" value="component" />
-              <node concept="3uibUv" id="7JXu42knfPA" role="1tU5fm">
-                <ref role="3uigEE" to="s6nb:7JXu42krEm4" resolve="SvgViewComponent" />
+              <node concept="3uibUv" id="7IsGrgKOpA5" role="1tU5fm">
+                <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
               </node>
               <node concept="2YIFZM" id="7JXu42knfQ3" role="33vP2m">
                 <ref role="1Pybhc" to="s6nb:7JXu42kkzH6" resolve="SvgViewerRuntime" />
-                <ref role="37wK5l" to="s6nb:7JXu42kkzH8" resolve="render" />
+                <ref role="37wK5l" to="s6nb:7IsGrgKNXka" />
                 <node concept="37vLTw" id="7JXu42knfQ4" role="37wK5m">
                   <ref role="3cqZAo" node="7JXu42knfPw" resolve="graph" />
                 </node>
@@ -521,7 +522,7 @@
                   <ref role="3cqZAo" node="7JXu42knfP$" resolve="component" />
                 </node>
                 <node concept="liA8E" id="7JXu42knfQt" role="2OqNvi">
-                  <ref role="37wK5l" to="s6nb:7JXu42krErq" resolve="getPreferredSize" />
+                  <ref role="37wK5l" to="dxuu:~JComponent.getPreferredSize()" />
                 </node>
               </node>
             </node>
@@ -2058,7 +2059,7 @@
               </node>
               <node concept="2ShNRf" id="7IsGrgKdVAN" role="33vP2m">
                 <node concept="1pGfFk" id="7IsGrgKdVB2" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:5GheoLnzI0K" />
+                  <ref role="37wK5l" to="s6nb:7IsGrgKMjlM" />
                   <node concept="37vLTw" id="7IsGrgKdVB3" role="37wK5m">
                     <ref role="3cqZAo" node="7IsGrgKcaaB" resolve="svg" />
                   </node>
@@ -2349,7 +2350,7 @@
               </node>
               <node concept="2ShNRf" id="7IsGrgKcRDw" role="33vP2m">
                 <node concept="1pGfFk" id="7IsGrgKcRDJ" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:5GheoLnzI0K" />
+                  <ref role="37wK5l" to="s6nb:7IsGrgKMjlM" />
                   <node concept="37vLTw" id="7IsGrgKcRDK" role="37wK5m">
                     <ref role="3cqZAo" node="7IsGrgKcRBO" resolve="svg" />
                   </node>
