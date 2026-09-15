@@ -32,10 +32,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
-        <property id="1225118929411" name="build" index="YLPcu" />
-        <property id="1225118933224" name="comment" index="YLQ7P" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -61,9 +57,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -151,28 +144,6 @@
     <property role="TrG5h" value="ModelCheckConceptFunctionParameter_node" />
     <property role="34LRSv" value="node" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
-  </node>
-  <node concept="1TIwiD" id="y1G8y68MHa">
-    <property role="EcuMT" value="612965124711590730" />
-    <property role="TrG5h" value="ModelElementWord_old" />
-    <property role="34LRSv" value="@model-element" />
-    <property role="R4oN_" value="named model element reference" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="y1G8y68MHb" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-    <node concept="1TJgyj" id="y1G8y68MHd" role="1TKVEi">
-      <property role="IQ2ns" value="612965124711590733" />
-      <property role="20kJfa" value="node_old" />
-      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
-      <node concept="asaX9" id="6FJpOMAQ8Xz" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;com.mpsbasics.words.generic.structure.ModelElementWord&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="6FJpOMAQ8Xl" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mpsbasics.words.generic&quot;" />
-      <property role="YLPcu" value="2025.02.01" />
-    </node>
   </node>
   <node concept="PlHQZ" id="2FavYGw2760">
     <property role="EcuMT" value="3083417542719992192" />
