@@ -51,7 +51,7 @@
       </concept>
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
-      <concept id="1225271221393" name="jetbrains.mps.baseLanguage.structure.NPENotEqualsExpression" flags="nn" index="17QLQc" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -259,7 +259,7 @@
                     </node>
                     <node concept="3clFbS" id="2Q2FoN6gBBp" role="3clF47">
                       <node concept="3clFbF" id="2Q2FoN6gGMa" role="3cqZAp">
-                        <node concept="17QLQc" id="2Q2FoN6gKrN" role="3clFbG">
+                        <node concept="17R0WA" id="2_t2FfY0Cpj" role="3clFbG">
                           <node concept="2OqwBi" id="2Q2FoN6gHnc" role="3uHU7B">
                             <node concept="37vLTw" id="2Q2FoN6gGM9" role="2Oq$k0">
                               <ref role="3cqZAo" node="2Q2FoN6gBBm" resolve="node" />
