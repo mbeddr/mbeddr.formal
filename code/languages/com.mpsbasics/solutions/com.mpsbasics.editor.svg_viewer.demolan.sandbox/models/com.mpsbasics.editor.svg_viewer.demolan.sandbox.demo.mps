@@ -10502,5 +10502,66 @@
       <ref role="3IQu7K" node="7IsGrgKYjHE" resolve="B114_in" />
     </node>
   </node>
+  <node concept="3IRL9o" id="7IsGrgLipo$">
+    <property role="TrG5h" value="Demo_ComponentArchitecture_Simple" />
+    <node concept="3IQu7A" id="7IsGrgLirUk" role="3IQ7ie">
+      <property role="TrG5h" value="Src1" />
+      <node concept="3IQu7E" id="7IsGrgLiu3e" role="3IQu7G">
+        <property role="TrG5h" value="out1_1" />
+      </node>
+      <node concept="3IQu7E" id="7IsGrgLius7" role="3IQu7G">
+        <property role="TrG5h" value="out1_2" />
+      </node>
+    </node>
+    <node concept="3IQu7A" id="7IsGrgLis6N" role="3IQ7ie">
+      <property role="TrG5h" value="Tar1" />
+      <node concept="3IQu7E" id="7IsGrgLiwLo" role="3IQu7F">
+        <property role="TrG5h" value="in1_1" />
+      </node>
+    </node>
+    <node concept="3IQu7H" id="7IsGrgLiy8u" role="3IQ7ie">
+      <property role="TrG5h" value="conn1" />
+      <ref role="3IQu7J" node="7IsGrgLiu3e" resolve="out1_1" />
+      <ref role="3IQu7K" node="7IsGrgLiwLo" resolve="in1_1" />
+    </node>
+    <node concept="3IQu7H" id="7IsGrgLi$hk" role="3IQ7ie">
+      <property role="TrG5h" value="conn2" />
+      <ref role="3IQu7J" node="7IsGrgLius7" resolve="out1_2" />
+      <ref role="3IQu7K" node="7IsGrgLiwLo" resolve="in1_1" />
+    </node>
+    <node concept="3IQu7A" id="7IsGrgLiGcy" role="3IQ7ie">
+      <property role="TrG5h" value="Src2" />
+      <node concept="3IQu7E" id="7IsGrgLiGcz" role="3IQu7G">
+        <property role="TrG5h" value="out2_1" />
+      </node>
+      <node concept="3IQu7E" id="7IsGrgLiGc$" role="3IQu7G">
+        <property role="TrG5h" value="out2_2" />
+      </node>
+      <node concept="3IQu7E" id="7IsGrgLiHqZ" role="3IQu7G">
+        <property role="TrG5h" value="out2_3" />
+      </node>
+    </node>
+    <node concept="3IQu7A" id="7IsGrgLiGcw" role="3IQ7ie">
+      <property role="TrG5h" value="Tar2" />
+      <node concept="3IQu7E" id="7IsGrgLiGcx" role="3IQu7F">
+        <property role="TrG5h" value="in2_1" />
+      </node>
+    </node>
+    <node concept="3IQu7H" id="7IsGrgLiGcv" role="3IQ7ie">
+      <property role="TrG5h" value="conn2_1" />
+      <ref role="3IQu7J" node="7IsGrgLiGcz" resolve="out2_1" />
+      <ref role="3IQu7K" node="7IsGrgLiGcx" resolve="in2_1" />
+    </node>
+    <node concept="3IQu7H" id="7IsGrgLiGcu" role="3IQ7ie">
+      <property role="TrG5h" value="conn2_2" />
+      <ref role="3IQu7J" node="7IsGrgLiGc$" resolve="out2_2" />
+      <ref role="3IQu7K" node="7IsGrgLiGcx" resolve="in2_1" />
+    </node>
+    <node concept="3IQu7H" id="7IsGrgLiJ7$" role="3IQ7ie">
+      <property role="TrG5h" value="conn2_3" />
+      <ref role="3IQu7J" node="7IsGrgLiHqZ" resolve="out2_3" />
+      <ref role="3IQu7K" node="7IsGrgLiGcx" resolve="in2_1" />
+    </node>
+  </node>
 </model>
 
