@@ -379,7 +379,7 @@
               </node>
               <node concept="2YIFZM" id="7JXu42knaj4" role="33vP2m">
                 <ref role="1Pybhc" to="s6nb:7JXu42ki_zC" resolve="SvgWriter" />
-                <ref role="37wK5l" to="s6nb:7IsGrgK8fSa" resolve="write" />
+                <ref role="37wK5l" to="s6nb:7IsGrgLUGLK" resolve="write" />
                 <node concept="37vLTw" id="7JXu42knaj5" role="37wK5m">
                   <ref role="3cqZAo" node="7JXu42knai4" resolve="graph" />
                 </node>
@@ -457,7 +457,7 @@
           </node>
           <node concept="3vlDli" id="7JXu42koUxK" role="3cqZAp">
             <node concept="3cmrfG" id="7JXu42koUxN" role="3tpDZB">
-              <property role="3cmrfH" value="3" />
+              <property role="3cmrfH" value="5" />
             </node>
             <node concept="37vLTw" id="7JXu42koUxO" role="3tpDZA">
               <ref role="3cqZAo" node="7JXu42knaig" resolve="rectCount" />
@@ -503,7 +503,7 @@
               </node>
               <node concept="2YIFZM" id="7JXu42knfQ3" role="33vP2m">
                 <ref role="1Pybhc" to="s6nb:7JXu42kkzH6" resolve="SvgViewerRuntime" />
-                <ref role="37wK5l" to="s6nb:7IsGrgKNXka" />
+                <ref role="37wK5l" to="s6nb:7IsGrgKNXka" resolve="render" />
                 <node concept="37vLTw" id="7JXu42knfQ4" role="37wK5m">
                   <ref role="3cqZAo" node="7JXu42knfPw" resolve="graph" />
                 </node>
@@ -522,7 +522,7 @@
                   <ref role="3cqZAo" node="7JXu42knfP$" resolve="component" />
                 </node>
                 <node concept="liA8E" id="7JXu42knfQt" role="2OqNvi">
-                  <ref role="37wK5l" to="dxuu:~JComponent.getPreferredSize()" />
+                  <ref role="37wK5l" to="dxuu:~JComponent.getPreferredSize()" resolve="getPreferredSize" />
                 </node>
               </node>
             </node>
@@ -1026,7 +1026,7 @@
               </node>
               <node concept="2YIFZM" id="7IsGrgJMWOM" role="33vP2m">
                 <ref role="1Pybhc" to="s6nb:7JXu42ki_zC" resolve="SvgWriter" />
-                <ref role="37wK5l" to="s6nb:7IsGrgK8fSa" resolve="write" />
+                <ref role="37wK5l" to="s6nb:7IsGrgLUGLK" resolve="write" />
                 <node concept="37vLTw" id="7IsGrgJMWON" role="37wK5m">
                   <ref role="3cqZAo" node="7IsGrgJMWO3" resolve="graph" />
                 </node>
@@ -1159,7 +1159,7 @@
               </node>
               <node concept="2YIFZM" id="7IsGrgJT0Rp" role="33vP2m">
                 <ref role="1Pybhc" to="s6nb:7JXu42ki_zC" resolve="SvgWriter" />
-                <ref role="37wK5l" to="s6nb:7IsGrgK8fSa" resolve="write" />
+                <ref role="37wK5l" to="s6nb:7IsGrgLUGLK" resolve="write" />
                 <node concept="37vLTw" id="7IsGrgJT0Rq" role="37wK5m">
                   <ref role="3cqZAo" node="7IsGrgJT0Qt" resolve="graph" />
                 </node>
@@ -1581,7 +1581,7 @@
               </node>
               <node concept="2YIFZM" id="7IsGrgJZiP6" role="33vP2m">
                 <ref role="1Pybhc" to="s6nb:7JXu42ki_zC" resolve="SvgWriter" />
-                <ref role="37wK5l" to="s6nb:7IsGrgK8fSa" resolve="write" />
+                <ref role="37wK5l" to="s6nb:7IsGrgLUGLK" resolve="write" />
                 <node concept="37vLTw" id="7IsGrgJZiP7" role="37wK5m">
                   <ref role="3cqZAo" node="7IsGrgJZiOm" resolve="graph" />
                 </node>
@@ -1709,7 +1709,7 @@
               </node>
               <node concept="2YIFZM" id="7IsGrgK78uH" role="33vP2m">
                 <ref role="1Pybhc" to="s6nb:7JXu42ki_zC" resolve="SvgWriter" />
-                <ref role="37wK5l" to="s6nb:7IsGrgK8fSa" resolve="write" />
+                <ref role="37wK5l" to="s6nb:7IsGrgLUGLK" resolve="write" />
                 <node concept="37vLTw" id="7IsGrgK78uI" role="37wK5m">
                   <ref role="3cqZAo" node="7IsGrgK78sK" resolve="graph" />
                 </node>
@@ -2044,7 +2044,7 @@
               </node>
               <node concept="2YIFZM" id="7IsGrgKcaci" role="33vP2m">
                 <ref role="1Pybhc" to="s6nb:7JXu42ki_zC" resolve="SvgWriter" />
-                <ref role="37wK5l" to="s6nb:7IsGrgK8fSa" resolve="write" />
+                <ref role="37wK5l" to="s6nb:7IsGrgLUGLK" resolve="write" />
                 <node concept="37vLTw" id="7IsGrgKcacj" role="37wK5m">
                   <ref role="3cqZAo" node="7IsGrgKcaaw" resolve="graph" />
                 </node>
@@ -2059,7 +2059,7 @@
               </node>
               <node concept="2ShNRf" id="7IsGrgKdVAN" role="33vP2m">
                 <node concept="1pGfFk" id="7IsGrgKdVB2" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7IsGrgKMjlM" />
+                  <ref role="37wK5l" to="s6nb:7IsGrgKMjlM" resolve="SvgViewComponent" />
                   <node concept="37vLTw" id="7IsGrgKdVB3" role="37wK5m">
                     <ref role="3cqZAo" node="7IsGrgKcaaB" resolve="svg" />
                   </node>
@@ -2335,7 +2335,7 @@
               </node>
               <node concept="2YIFZM" id="7IsGrgKcRDu" role="33vP2m">
                 <ref role="1Pybhc" to="s6nb:7JXu42ki_zC" resolve="SvgWriter" />
-                <ref role="37wK5l" to="s6nb:7IsGrgK8fSa" resolve="write" />
+                <ref role="37wK5l" to="s6nb:7IsGrgLUGLK" resolve="write" />
                 <node concept="37vLTw" id="7IsGrgKcRDv" role="37wK5m">
                   <ref role="3cqZAo" node="7IsGrgKcRBH" resolve="graph" />
                 </node>
@@ -2350,7 +2350,7 @@
               </node>
               <node concept="2ShNRf" id="7IsGrgKcRDw" role="33vP2m">
                 <node concept="1pGfFk" id="7IsGrgKcRDJ" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7IsGrgKMjlM" />
+                  <ref role="37wK5l" to="s6nb:7IsGrgKMjlM" resolve="SvgViewComponent" />
                   <node concept="37vLTw" id="7IsGrgKcRDK" role="37wK5m">
                     <ref role="3cqZAo" node="7IsGrgKcRBO" resolve="svg" />
                   </node>
@@ -2676,7 +2676,7 @@
             </node>
             <node concept="2ShNRf" id="7JXu42km24C" role="33vP2m">
               <node concept="1pGfFk" id="7JXu42km24E" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kiflQ" />
+                <ref role="37wK5l" to="s6nb:7JXu42kiflQ" resolve="SvgGraphModel" />
               </node>
             </node>
           </node>
@@ -2695,7 +2695,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7JXu42km2iK" role="37wK5m">
                 <node concept="1pGfFk" id="7JXu42km2iW" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kierK" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
                   <node concept="Xl_RD" id="7JXu42km2iX" role="37wK5m">
                     <property role="Xl_RC" value="n1" />
                   </node>
@@ -2730,7 +2730,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7JXu42km2j2" role="37wK5m">
                 <node concept="1pGfFk" id="7JXu42km2je" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kierK" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
                   <node concept="Xl_RD" id="7JXu42km2jf" role="37wK5m">
                     <property role="Xl_RC" value="n2" />
                   </node>
@@ -2765,7 +2765,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7JXu42km2jk" role="37wK5m">
                 <node concept="1pGfFk" id="7JXu42km2jw" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kierK" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
                   <node concept="Xl_RD" id="7JXu42km2jx" role="37wK5m">
                     <property role="Xl_RC" value="n3" />
                   </node>
@@ -2800,7 +2800,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7JXu42km2jA" role="37wK5m">
                 <node concept="1pGfFk" id="7JXu42km2jM" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" resolve="SvgEdgeModel" />
                   <node concept="Xl_RD" id="7JXu42km2jN" role="37wK5m">
                     <property role="Xl_RC" value="e1" />
                   </node>
@@ -2832,7 +2832,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7JXu42km2jR" role="37wK5m">
                 <node concept="1pGfFk" id="7JXu42km2k3" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" resolve="SvgEdgeModel" />
                   <node concept="Xl_RD" id="7JXu42km2k4" role="37wK5m">
                     <property role="Xl_RC" value="e2" />
                   </node>
@@ -2977,7 +2977,7 @@
             </node>
             <node concept="2ShNRf" id="7IsGrgJGDYn" role="33vP2m">
               <node concept="1pGfFk" id="7IsGrgJGDYp" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kiflQ" />
+                <ref role="37wK5l" to="s6nb:7JXu42kiflQ" resolve="SvgGraphModel" />
               </node>
             </node>
           </node>
@@ -2996,7 +2996,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7IsGrgJGEnW" role="37wK5m">
                 <node concept="1pGfFk" id="7IsGrgJGEo8" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kierK" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
                   <node concept="Xl_RD" id="7IsGrgJGEo9" role="37wK5m">
                     <property role="Xl_RC" value="producer" />
                   </node>
@@ -3025,7 +3025,7 @@
             </node>
             <node concept="2ShNRf" id="7IsGrgJGDYA" role="33vP2m">
               <node concept="1pGfFk" id="7IsGrgJGDYM" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kierK" />
+                <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
                 <node concept="Xl_RD" id="7IsGrgJGDYN" role="37wK5m">
                   <property role="Xl_RC" value="doer" />
                 </node>
@@ -3086,7 +3086,7 @@
             </node>
             <node concept="2ShNRf" id="7IsGrgJGDZ4" role="33vP2m">
               <node concept="1pGfFk" id="7IsGrgJGDZg" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kierK" />
+                <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
                 <node concept="Xl_RD" id="7IsGrgJGDZh" role="37wK5m">
                   <property role="Xl_RC" value="checker" />
                 </node>
@@ -3153,7 +3153,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7IsGrgJGEoe" role="37wK5m">
                 <node concept="1pGfFk" id="7IsGrgJGEoq" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kOktP" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kOktP" resolve="SvgPortModel" />
                   <node concept="Xl_RD" id="7IsGrgJGEor" role="37wK5m">
                     <property role="Xl_RC" value="doer_out" />
                   </node>
@@ -3185,7 +3185,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7IsGrgJGEov" role="37wK5m">
                 <node concept="1pGfFk" id="7IsGrgJGEoF" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kOktP" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kOktP" resolve="SvgPortModel" />
                   <node concept="Xl_RD" id="7IsGrgJGEoG" role="37wK5m">
                     <property role="Xl_RC" value="checker_in" />
                   </node>
@@ -3217,7 +3217,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7IsGrgJGEoK" role="37wK5m">
                 <node concept="1pGfFk" id="7IsGrgJGEoW" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kOktP" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kOktP" resolve="SvgPortModel" />
                   <node concept="Xl_RD" id="7IsGrgJGEoX" role="37wK5m">
                     <property role="Xl_RC" value="checker_out" />
                   </node>
@@ -3249,7 +3249,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7IsGrgJGEp1" role="37wK5m">
                 <node concept="1pGfFk" id="7IsGrgJGEpd" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kOktP" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kOktP" resolve="SvgPortModel" />
                   <node concept="Xl_RD" id="7IsGrgJGEpe" role="37wK5m">
                     <property role="Xl_RC" value="producer_out" />
                   </node>
@@ -3281,7 +3281,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7IsGrgJGEpi" role="37wK5m">
                 <node concept="1pGfFk" id="7IsGrgJGEpu" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" resolve="SvgEdgeModel" />
                   <node concept="Xl_RD" id="7IsGrgJGEpv" role="37wK5m">
                     <property role="Xl_RC" value="e1" />
                   </node>
@@ -3311,7 +3311,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7IsGrgJGEpz" role="37wK5m">
                 <node concept="1pGfFk" id="7IsGrgJGEpJ" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" />
+                  <ref role="37wK5l" to="s6nb:7JXu42kieKu" resolve="SvgEdgeModel" />
                   <node concept="Xl_RD" id="7IsGrgJGEpK" role="37wK5m">
                     <property role="Xl_RC" value="e2" />
                   </node>
@@ -3349,7 +3349,7 @@
             </node>
             <node concept="2ShNRf" id="7IsGrgJMOnR" role="33vP2m">
               <node concept="1pGfFk" id="7IsGrgJMOnT" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kiflQ" />
+                <ref role="37wK5l" to="s6nb:7JXu42kiflQ" resolve="SvgGraphModel" />
               </node>
             </node>
           </node>
@@ -3362,7 +3362,7 @@
             </node>
             <node concept="2ShNRf" id="7IsGrgJMOnU" role="33vP2m">
               <node concept="1pGfFk" id="7IsGrgJMOo6" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kierK" />
+                <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
                 <node concept="Xl_RD" id="7IsGrgJMOo7" role="37wK5m">
                   <property role="Xl_RC" value="n1" />
                 </node>
@@ -3453,7 +3453,7 @@
             </node>
             <node concept="2ShNRf" id="7IsGrgJMOoy" role="33vP2m">
               <node concept="1pGfFk" id="7IsGrgJMOoI" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kOktP" />
+                <ref role="37wK5l" to="s6nb:7JXu42kOktP" resolve="SvgPortModel" />
                 <node concept="Xl_RD" id="7IsGrgJMOoJ" role="37wK5m">
                   <property role="Xl_RC" value="p1" />
                 </node>
@@ -3541,7 +3541,7 @@
             </node>
             <node concept="2ShNRf" id="7IsGrgJMOp9" role="33vP2m">
               <node concept="1pGfFk" id="7IsGrgJMOpl" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kieKu" />
+                <ref role="37wK5l" to="s6nb:7JXu42kieKu" resolve="SvgEdgeModel" />
                 <node concept="Xl_RD" id="7IsGrgJMOpm" role="37wK5m">
                   <property role="Xl_RC" value="e1" />
                 </node>
@@ -3626,7 +3626,7 @@
             </node>
             <node concept="2ShNRf" id="7IsGrgJSRZx" role="33vP2m">
               <node concept="1pGfFk" id="7IsGrgJSRZz" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kiflQ" />
+                <ref role="37wK5l" to="s6nb:7JXu42kiflQ" resolve="SvgGraphModel" />
               </node>
             </node>
           </node>
@@ -3639,7 +3639,7 @@
             </node>
             <node concept="2ShNRf" id="7IsGrgJSRZ$" role="33vP2m">
               <node concept="1pGfFk" id="7IsGrgJSRZK" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kierK" />
+                <ref role="37wK5l" to="s6nb:7JXu42kierK" resolve="SvgNodeModel" />
                 <node concept="Xl_RD" id="7IsGrgJSRZL" role="37wK5m">
                   <property role="Xl_RC" value="n1" />
                 </node>
@@ -3685,7 +3685,7 @@
             </node>
             <node concept="2ShNRf" id="7IsGrgJSRZX" role="33vP2m">
               <node concept="1pGfFk" id="7IsGrgJSS09" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kOktP" />
+                <ref role="37wK5l" to="s6nb:7JXu42kOktP" resolve="SvgPortModel" />
                 <node concept="Xl_RD" id="7IsGrgJSS0a" role="37wK5m">
                   <property role="Xl_RC" value="west1" />
                 </node>
@@ -3728,7 +3728,7 @@
             </node>
             <node concept="2ShNRf" id="7IsGrgJSS0l" role="33vP2m">
               <node concept="1pGfFk" id="7IsGrgJSS0x" role="2ShVmc">
-                <ref role="37wK5l" to="s6nb:7JXu42kOktP" />
+                <ref role="37wK5l" to="s6nb:7JXu42kOktP" resolve="SvgPortModel" />
                 <node concept="Xl_RD" id="7IsGrgJSS0y" role="37wK5m">
                   <property role="Xl_RC" value="east1" />
                 </node>
