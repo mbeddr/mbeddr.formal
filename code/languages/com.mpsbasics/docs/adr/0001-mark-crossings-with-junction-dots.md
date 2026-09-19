@@ -70,7 +70,15 @@ committed separately at `304ffc8f`.
   routes — for diagrams with many edges converging on one point, the dot communicates "something
   overlaps here" but not how many edges or which ones. Acceptable trade-off given the rejected
   alternatives' downsides.
-* Follow-up label-positioning work (segment-clamped label placement, white background rects behind
-  labels) was needed on top of this to keep connection/port labels from overlapping each other or
-  the routed lines — see the `_010_test_channels_labels` test in
-  `test.com.mpsbasics.editor.svg_viewer` for the regression coverage.
+* Follow-up label-positioning work was needed on top of this to keep connection labels from
+  overlapping each other, port labels, or the routed lines — see the `_010_test_channels_labels`
+  test in `test.com.mpsbasics.editor.svg_viewer` for the regression coverage. The first pass at
+  this (segment-clamped hand-computed offsets in `SvgWriter`, plus a white background rect behind
+  each label) reintroduced exactly the kind of bespoke per-case geometry this ADR set out to avoid,
+  and it showed: it fixed a label crossing its own edge but not a *different* edge crossing the
+  label, because `ElkLayoutEngine` never told ELK the label needed space in the first place. This
+  was superseded by giving each labeled edge a real `ElkLabel` (`EDGE_LABELS_PLACEMENT = CENTER`,
+  with `SPACING_EDGE_LABEL`/`SPACING_LABEL_LABEL` hints) so ELK reserves room for it during layout
+  the same way it already does for port labels, and reading back ELK's own computed label
+  position/size afterward instead of computing one by hand — restoring the option (c) principle for
+  labels, not just junction points.
