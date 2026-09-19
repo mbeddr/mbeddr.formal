@@ -16,6 +16,7 @@
     <import index="f6lw" ref="r:37c92d4f-29c0-4f3d-a794-4c63e2c57125(com.mpsbasics.editor.svg_viewer.diagramBuilder)" />
     <import index="44ux" ref="r:4869ab90-ef53-4e76-ba28-ea71e8a1250e(com.mpsbasics.editor.svg_viewer.demolan.diagramMapping)" />
     <import index="8dfc" ref="r:5c1bdcec-8d52-4f1a-a319-a97a482d0774(com.mpsbasics.editor.svg_viewer.demolan.structure)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -236,7 +237,7 @@
         <node concept="3clFbF" id="7IsGrgMbBB8" role="3cqZAp">
           <node concept="2YIFZM" id="7IsGrgMbBCy" role="3clFbG">
             <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-            <ref role="37wK5l" to="s6nb:7IsGrgJWJqf" resolve="layout" />
+            <ref role="37wK5l" to="s6nb:7IsGrgMGV8F" resolve="layout" />
             <node concept="37vLTw" id="7IsGrgMbBCz" role="37wK5m">
               <ref role="3cqZAo" node="7IsGrgMcuE3" resolve="graph" />
             </node>
@@ -248,14 +249,14 @@
             <property role="TrG5h" value="box2Label" />
             <node concept="3rvAFt" id="7IsGrgMkVPv" role="1tU5fm">
               <node concept="3uibUv" id="7IsGrgMl0ww" role="3rvQeY">
-                <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="SvgWriter.LabelBox" />
+                <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="LabelBox" />
               </node>
               <node concept="17QB3L" id="7IsGrgMlcXf" role="3rvSg0" />
             </node>
             <node concept="2ShNRf" id="7IsGrgMlfU$" role="33vP2m">
               <node concept="3rGOSV" id="7IsGrgMlfRT" role="2ShVmc">
                 <node concept="3uibUv" id="7IsGrgMlfRU" role="3rHrn6">
-                  <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="SvgWriter.LabelBox" />
+                  <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="LabelBox" />
                 </node>
                 <node concept="17QB3L" id="7IsGrgMlfRV" role="3rHtpV" />
               </node>
@@ -268,7 +269,7 @@
             <node concept="3uibUv" id="7IsGrgMbBBd" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="7IsGrgMbBBe" role="11_B2D">
-                <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="SvgWriter.LabelBox" />
+                <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="LabelBox" />
               </node>
             </node>
             <node concept="2ShNRf" id="7IsGrgMbBC$" role="33vP2m">
@@ -276,7 +277,7 @@
                 <property role="373rjd" value="true" />
                 <ref role="37wK5l" to="33ny:~ArrayList.&lt;init&gt;()" resolve="ArrayList" />
                 <node concept="3uibUv" id="7IsGrgMbBCE" role="1pMfVU">
-                  <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="SvgWriter.LabelBox" />
+                  <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="LabelBox" />
                 </node>
               </node>
             </node>
@@ -302,11 +303,11 @@
               <node concept="3cpWsn" id="7IsGrgMbBBk" role="3cpWs9">
                 <property role="TrG5h" value="box" />
                 <node concept="3uibUv" id="7IsGrgMbBBm" role="1tU5fm">
-                  <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="SvgWriter.LabelBox" />
+                  <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="LabelBox" />
                 </node>
                 <node concept="2YIFZM" id="7IsGrgMbBCI" role="33vP2m">
                   <ref role="1Pybhc" to="s6nb:7JXu42ki_zC" resolve="SvgWriter" />
-                  <ref role="37wK5l" to="s6nb:7IsGrgM67zp" resolve="edgeLabelBox" />
+                  <ref role="37wK5l" to="s6nb:7IsGrgMxZgu" resolve="edgeLabelBox" />
                   <node concept="37vLTw" id="7IsGrgMbBCJ" role="37wK5m">
                     <ref role="3cqZAo" node="7IsGrgMbBBy" resolve="e" />
                   </node>
@@ -379,11 +380,11 @@
               <node concept="3cpWsn" id="7IsGrgMbBBD" role="3cpWs9">
                 <property role="TrG5h" value="box" />
                 <node concept="3uibUv" id="7IsGrgMbBBF" role="1tU5fm">
-                  <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="SvgWriter.LabelBox" />
+                  <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="LabelBox" />
                 </node>
                 <node concept="2YIFZM" id="7IsGrgMbBCQ" role="33vP2m">
                   <ref role="1Pybhc" to="s6nb:7JXu42ki_zC" resolve="SvgWriter" />
-                  <ref role="37wK5l" to="s6nb:7IsGrgM67Bw" resolve="portLabelBox" />
+                  <ref role="37wK5l" to="s6nb:7IsGrgMAR6l" resolve="portLabelBox" />
                   <node concept="37vLTw" id="7IsGrgMbBCR" role="37wK5m">
                     <ref role="3cqZAo" node="7IsGrgMbBBR" resolve="p" />
                   </node>
@@ -498,7 +499,7 @@
                   <node concept="3cpWsn" id="7IsGrgMmoIH" role="3cpWs9">
                     <property role="TrG5h" value="firstBox" />
                     <node concept="3uibUv" id="7IsGrgMmo6j" role="1tU5fm">
-                      <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="SvgWriter.LabelBox" />
+                      <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="LabelBox" />
                     </node>
                     <node concept="2OqwBi" id="7IsGrgMmoII" role="33vP2m">
                       <node concept="37vLTw" id="7IsGrgMmoIJ" role="2Oq$k0">
@@ -517,7 +518,7 @@
                   <node concept="3cpWsn" id="7IsGrgMmtV7" role="3cpWs9">
                     <property role="TrG5h" value="secondBox" />
                     <node concept="3uibUv" id="7IsGrgMmtfm" role="1tU5fm">
-                      <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="SvgWriter.LabelBox" />
+                      <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="LabelBox" />
                     </node>
                     <node concept="2OqwBi" id="7IsGrgMmtV8" role="33vP2m">
                       <node concept="37vLTw" id="7IsGrgMmtV9" role="2Oq$k0">
@@ -696,7 +697,7 @@
                   <node concept="3cpWsn" id="7IsGrgMgUFt" role="1Duv9x">
                     <property role="TrG5h" value="box" />
                     <node concept="3uibUv" id="7IsGrgMgUFv" role="1tU5fm">
-                      <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="SvgWriter.LabelBox" />
+                      <ref role="3uigEE" to="s6nb:7IsGrgM67yJ" resolve="LabelBox" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="7IsGrgMgUFg" role="2LFqv$">
