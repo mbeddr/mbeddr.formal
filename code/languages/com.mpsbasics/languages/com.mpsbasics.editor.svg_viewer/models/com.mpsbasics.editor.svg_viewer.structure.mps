@@ -18,6 +18,7 @@
         <property id="672037151186491528" name="presentation" index="1L1pqM" />
       </concept>
       <concept id="3348158742936976479" name="jetbrains.mps.lang.structure.structure.EnumerationDeclaration" flags="ng" index="25R3W">
+        <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
@@ -198,6 +199,12 @@
     </node>
     <node concept="PrWs8" id="7JXu42kL_3$" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyj" id="7IsGrgMQQdY" role="1TKVEi">
+      <property role="IQ2ns" value="8907189550537466750" />
+      <property role="20kJfa" value="layout" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="7IsGrgMQFvE" resolve="SvgLayoutBase" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JXu42kMTiR">
@@ -489,6 +496,78 @@
       <property role="3tVfz5" value="8192389685631288192" />
       <property role="TrG5h" value="bottomRight" />
       <property role="1L1pqM" value="bottomRight" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7IsGrgMJOQm">
+    <property role="EcuMT" value="8907189550535626134" />
+    <property role="TrG5h" value="SvgShapeParallelogram" />
+    <property role="34LRSv" value="parallelogram" />
+    <property role="3GE5qa" value="svg_baselan" />
+    <ref role="1TJDcQ" node="7JXu42kMTiR" resolve="SvgShapeBase" />
+  </node>
+  <node concept="25R3W" id="7IsGrgMQE2J">
+    <property role="3F6X1D" value="8907189550537416879" />
+    <property role="TrG5h" value="SvgLayoutDirection" />
+    <property role="3GE5qa" value="svg_baselan.layout" />
+    <ref role="1H5jkz" node="7IsGrgMQE2L" resolve="down" />
+    <node concept="25R33" id="7IsGrgMQE2L" role="25R1y">
+      <property role="3tVfz5" value="5163259375487918430" />
+      <property role="TrG5h" value="down" />
+      <property role="1L1pqM" value="down" />
+    </node>
+    <node concept="25R33" id="7IsGrgMQE2M" role="25R1y">
+      <property role="3tVfz5" value="1114567068345479208" />
+      <property role="TrG5h" value="up" />
+      <property role="1L1pqM" value="up" />
+    </node>
+    <node concept="25R33" id="7IsGrgMQE2N" role="25R1y">
+      <property role="3tVfz5" value="4887573439531071660" />
+      <property role="TrG5h" value="left" />
+      <property role="1L1pqM" value="left" />
+    </node>
+    <node concept="25R33" id="7IsGrgMQE2O" role="25R1y">
+      <property role="3tVfz5" value="5368113370787220484" />
+      <property role="TrG5h" value="right" />
+      <property role="1L1pqM" value="right" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7IsGrgMQFvE">
+    <property role="EcuMT" value="8907189550537422826" />
+    <property role="TrG5h" value="SvgLayoutBase" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="svg_baselan.layout" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="7IsGrgMQKOa">
+    <property role="EcuMT" value="8907189550537444618" />
+    <property role="TrG5h" value="SvgLayoutHierarchical" />
+    <property role="34LRSv" value="hierarchical layout" />
+    <property role="3GE5qa" value="svg_baselan.layout" />
+    <ref role="1TJDcQ" node="7IsGrgMQFvE" resolve="SvgLayoutBase" />
+    <node concept="1TJgyi" id="7IsGrgMQKOb" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550537444619" />
+      <property role="TrG5h" value="direction" />
+      <ref role="AX2Wp" node="7IsGrgMQE2J" resolve="SvgLayoutDirection" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgMQKOc" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550537444620" />
+      <property role="TrG5h" value="nodeSpacing" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgMQKOd" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550537444621" />
+      <property role="TrG5h" value="layerSpacing" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgMQKOe" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550537444622" />
+      <property role="TrG5h" value="edgeNodeSpacing" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="7IsGrgMQKOf" role="1TKVEl">
+      <property role="IQ2nx" value="8907189550537444623" />
+      <property role="TrG5h" value="edgeSpacing" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>

@@ -16,6 +16,7 @@
     <dependency reexport="false">d65295a5-39df-4441-9b2d-26081bdc4b4f(com.mpsbasics.editor.svg_viewer)</dependency>
     <dependency reexport="false">6e7a3b37-cbf2-4ae5-ac73-9ba530ddca94(com.mpsbasics.editor.svg_viewer.rt)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
+    <dependency reexport="false">c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d65295a5-39df-4441-9b2d-26081bdc4b4f:com.mpsbasics.editor.svg_viewer" version="0" />
@@ -77,6 +78,7 @@
     <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
     <module reference="7866978e-a0f0-4cc7-81bc-4d213d9375e1(jetbrains.mps.lang.smodel)" version="1" />
     <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
+    <module reference="c7fb639f-be78-4307-89b0-b5959c3fa8c8(jetbrains.mps.lang.text)" version="0" />
     <module reference="9ded098b-ad6a-4657-bfd9-48636cfe8bc3(jetbrains.mps.lang.traceable)" version="0" />
   </dependencyVersions>
   <extendedLanguages />

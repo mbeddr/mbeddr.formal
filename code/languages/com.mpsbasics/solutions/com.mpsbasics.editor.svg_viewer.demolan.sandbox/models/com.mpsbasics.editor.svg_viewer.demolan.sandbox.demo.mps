@@ -12,6 +12,18 @@
       </concept>
     </language>
     <language id="1d5b3929-98e5-452c-837b-51a176dab9f8" name="com.mpsbasics.editor.svg_viewer.demolan">
+      <concept id="8907189550535448465" name="com.mpsbasics.editor.svg_viewer.demolan.structure.Goal" flags="ng" index="1982o_" />
+      <concept id="8907189550535443600" name="com.mpsbasics.editor.svg_viewer.demolan.structure.GoalStructure" flags="ng" index="1983k$">
+        <child id="8907189550535447330" name="entities" index="1982am" />
+        <child id="8907189550535620211" name="connections" index="198Sv7" />
+      </concept>
+      <concept id="8907189550535487552" name="com.mpsbasics.editor.svg_viewer.demolan.structure.GoalStructureConnectionBase" flags="ng" index="198o7O">
+        <reference id="8907189550535489822" name="source" index="198oyE" />
+        <reference id="8907189550535490471" name="target" index="198oCj" />
+      </concept>
+      <concept id="8907189550535488687" name="com.mpsbasics.editor.svg_viewer.demolan.structure.SupportedBy" flags="ng" index="198okr" />
+      <concept id="8907189550535484634" name="com.mpsbasics.editor.svg_viewer.demolan.structure.Solution" flags="ng" index="198plI" />
+      <concept id="8907189550535483175" name="com.mpsbasics.editor.svg_viewer.demolan.structure.Strategy" flags="ng" index="198qUj" />
       <concept id="8907189550493840468" name="com.mpsbasics.editor.svg_viewer.demolan.structure.State" flags="ng" index="1bRgnw">
         <property id="8907189550493842857" name="doAction" index="1bRgKt" />
         <property id="8907189550493846042" name="initial" index="1bRnII" />
@@ -10561,6 +10573,47 @@
       <property role="TrG5h" value="conn2_3" />
       <ref role="3IQu7J" node="7IsGrgLiHqZ" resolve="out2_3" />
       <ref role="3IQu7K" node="7IsGrgLiGcx" resolve="in2_1" />
+    </node>
+  </node>
+  <node concept="1983k$" id="7IsGrgMPNAn">
+    <property role="TrG5h" value="Demo_GoalStructure_Simple" />
+    <node concept="1982o_" id="7IsGrgMPNAo" role="1982am">
+      <property role="TrG5h" value="G1: System is acceptably safe to operate" />
+    </node>
+    <node concept="198qUj" id="7IsGrgMPNAp" role="1982am">
+      <property role="TrG5h" value="S1: Argument over each identified hazard" />
+    </node>
+    <node concept="1982o_" id="7IsGrgMPNAq" role="1982am">
+      <property role="TrG5h" value="G2: Hazard H1 (overheating) mitigated" />
+    </node>
+    <node concept="1982o_" id="7IsGrgMPNAr" role="1982am">
+      <property role="TrG5h" value="G3: Hazard H2 (loss of braking) mitigated" />
+    </node>
+    <node concept="198plI" id="7IsGrgMPNAs" role="1982am">
+      <property role="TrG5h" value="Sn1: Fault tree analysis" />
+    </node>
+    <node concept="198plI" id="7IsGrgMPNAt" role="1982am">
+      <property role="TrG5h" value="Sn2: Bench test report" />
+    </node>
+    <node concept="198okr" id="7IsGrgMPNAu" role="198Sv7">
+      <ref role="198oyE" node="7IsGrgMPNAo" resolve="G1: System is acceptably safe to operate" />
+      <ref role="198oCj" node="7IsGrgMPNAp" resolve="S1: Argument over each identified hazard" />
+    </node>
+    <node concept="198okr" id="7IsGrgMPNAv" role="198Sv7">
+      <ref role="198oyE" node="7IsGrgMPNAp" resolve="S1: Argument over each identified hazard" />
+      <ref role="198oCj" node="7IsGrgMPNAq" resolve="G2: Hazard H1 (overheating) mitigated" />
+    </node>
+    <node concept="198okr" id="7IsGrgMPNAw" role="198Sv7">
+      <ref role="198oyE" node="7IsGrgMPNAp" resolve="S1: Argument over each identified hazard" />
+      <ref role="198oCj" node="7IsGrgMPNAr" resolve="G3: Hazard H2 (loss of braking) mitigated" />
+    </node>
+    <node concept="198okr" id="7IsGrgMPNAx" role="198Sv7">
+      <ref role="198oyE" node="7IsGrgMPNAq" resolve="G2: Hazard H1 (overheating) mitigated" />
+      <ref role="198oCj" node="7IsGrgMPNAs" resolve="Sn1: Fault tree analysis" />
+    </node>
+    <node concept="198okr" id="7IsGrgMPNAy" role="198Sv7">
+      <ref role="198oyE" node="7IsGrgMPNAr" resolve="G3: Hazard H2 (loss of braking) mitigated" />
+      <ref role="198oCj" node="7IsGrgMPNAt" resolve="Sn2: Bench test report" />
     </node>
   </node>
 </model>

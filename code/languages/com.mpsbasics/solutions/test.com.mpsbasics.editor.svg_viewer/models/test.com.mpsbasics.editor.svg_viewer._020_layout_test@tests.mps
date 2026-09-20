@@ -237,7 +237,7 @@
         <node concept="3clFbF" id="7IsGrgMbBB8" role="3cqZAp">
           <node concept="2YIFZM" id="7IsGrgMbBCy" role="3clFbG">
             <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-            <ref role="37wK5l" to="s6nb:7IsGrgMGV8F" resolve="layout" />
+            <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
             <node concept="37vLTw" id="7IsGrgMbBCz" role="37wK5m">
               <ref role="3cqZAo" node="7IsGrgMcuE3" resolve="graph" />
             </node>

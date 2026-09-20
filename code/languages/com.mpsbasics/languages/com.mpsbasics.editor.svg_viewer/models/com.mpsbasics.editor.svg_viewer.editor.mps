@@ -53,6 +53,9 @@
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
     </language>
   </registry>
   <node concept="24kQdi" id="2W2tyeSIVSU">
@@ -112,7 +115,7 @@
           <property role="3F0ifm" value="map ports:" />
         </node>
         <node concept="3F1sOY" id="3MSqLL2LIjL" role="3EZMnx">
-          <ref role="1NtTu8" to="g2od:3MSqLL2Lptm" />
+          <ref role="1NtTu8" to="g2od:3MSqLL2Lptm" resolve="portMapping" />
         </node>
         <node concept="2iRfu4" id="3MSqLL2LIjM" role="2iSdaV" />
         <node concept="VPM3Z" id="3MSqLL2LIjN" role="3F10Kt" />
@@ -123,7 +126,7 @@
           <property role="3F0ifm" value="map edge:" />
         </node>
         <node concept="3F1sOY" id="3MSqLL2NDRa" role="3EZMnx">
-          <ref role="1NtTu8" to="g2od:3MSqLL2NsSF" />
+          <ref role="1NtTu8" to="g2od:3MSqLL2NsSF" resolve="edgeMapping" />
         </node>
         <node concept="2iRfu4" id="3MSqLL2NDRb" role="2iSdaV" />
         <node concept="VPM3Z" id="3MSqLL2NDRc" role="3F10Kt" />
@@ -134,10 +137,77 @@
           <property role="3F0ifm" value="map children:" />
         </node>
         <node concept="3F1sOY" id="7IsGrgJHYgp" role="3EZMnx">
-          <ref role="1NtTu8" to="g2od:7IsGrgJHdo6" />
+          <ref role="1NtTu8" to="g2od:7IsGrgJHdo6" resolve="childrenMapping" />
         </node>
         <node concept="2iRfu4" id="7IsGrgJHYgq" role="2iSdaV" />
         <node concept="VPM3Z" id="7IsGrgJHYgr" role="3F10Kt" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7IsGrgMR9vx">
+    <property role="TrG5h" value="SvgLayoutHierarchical_Editor" />
+    <property role="3GE5qa" value="svg_baselan.layout" />
+    <ref role="1XX52x" to="g2od:7IsGrgMQKOa" resolve="SvgLayoutHierarchical" />
+    <node concept="3EZMnI" id="7IsGrgMWoZH" role="2wV5jI">
+      <node concept="2iRkQZ" id="7IsGrgMWoZI" role="2iSdaV" />
+      <node concept="3EZMnI" id="7IsGrgMR9vz" role="3EZMnx">
+        <node concept="2iRfu4" id="7IsGrgMR9v$" role="2iSdaV" />
+        <node concept="3F0ifn" id="7IsGrgMR9v_" role="3EZMnx">
+          <property role="3F0ifm" value="hierarchical layout" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7IsGrgMWpjZ" role="3EZMnx">
+        <node concept="2iRfu4" id="7IsGrgMWpk0" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7IsGrgMWpD4" role="3EZMnx" />
+        <node concept="3F0ifn" id="7IsGrgMWpk1" role="3EZMnx">
+          <property role="3F0ifm" value="direction:" />
+        </node>
+        <node concept="3F0A7n" id="7IsGrgMWpk2" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:7IsGrgMQKOb" resolve="direction" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7IsGrgMWpkc" role="3EZMnx">
+        <node concept="2iRfu4" id="7IsGrgMWpkd" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7IsGrgMWqpd" role="3EZMnx" />
+        <node concept="3F0ifn" id="7IsGrgMWpkg" role="3EZMnx">
+          <property role="3F0ifm" value="nodeSpacing:" />
+        </node>
+        <node concept="3F0A7n" id="7IsGrgMWpkh" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:7IsGrgMQKOc" resolve="nodeSpacing" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7IsGrgMWpkp" role="3EZMnx">
+        <node concept="2iRfu4" id="7IsGrgMWpkq" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7IsGrgMWqwQ" role="3EZMnx" />
+        <node concept="3F0ifn" id="7IsGrgMWpkv" role="3EZMnx">
+          <property role="3F0ifm" value="layerSpacing:" />
+        </node>
+        <node concept="3F0A7n" id="7IsGrgMWpkw" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:7IsGrgMQKOd" resolve="layerSpacing" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7IsGrgMWpkA" role="3EZMnx">
+        <node concept="2iRfu4" id="7IsGrgMWpkB" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7IsGrgMWryI" role="3EZMnx" />
+        <node concept="3F0ifn" id="7IsGrgMWpkI" role="3EZMnx">
+          <property role="3F0ifm" value="edgeNodeSpacing:" />
+        </node>
+        <node concept="3F0A7n" id="7IsGrgMWpkJ" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:7IsGrgMQKOe" resolve="edgeNodeSpacing" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7IsGrgMWslo" role="3EZMnx">
+        <node concept="2iRfu4" id="7IsGrgMWslp" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7IsGrgMWslq" role="3EZMnx" />
+        <node concept="3F0ifn" id="7IsGrgMWslt" role="3EZMnx">
+          <property role="3F0ifm" value="edgeSpacing:" />
+        </node>
+        <node concept="3F0A7n" id="7IsGrgMWslu" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:7IsGrgMQKOf" resolve="edgeSpacing" />
+        </node>
+        <node concept="3F0ifn" id="7IsGrgMWslv" role="3EZMnx">
+          <property role="3F0ifm" value="]" />
+        </node>
       </node>
     </node>
   </node>
