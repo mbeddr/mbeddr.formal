@@ -218,7 +218,7 @@
           <node concept="3clFbF" id="7JXu42kn4Tx" role="3cqZAp">
             <node concept="2YIFZM" id="7JXu42kn4Uq" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7JXu42kn4Ur" role="37wK5m">
                 <ref role="3cqZAo" node="7JXu42kn4Tt" resolve="graph" />
               </node>
@@ -375,7 +375,7 @@
           <node concept="3clFbF" id="7JXu42knai8" role="3cqZAp">
             <node concept="2YIFZM" id="7JXu42knaj0" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7JXu42knaj1" role="37wK5m">
                 <ref role="3cqZAo" node="7JXu42knai4" resolve="graph" />
               </node>
@@ -610,7 +610,7 @@
           <node concept="3clFbF" id="7IsGrgJGMLU" role="3cqZAp">
             <node concept="2YIFZM" id="7IsGrgJGMN$" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7IsGrgJGMN_" role="37wK5m">
                 <ref role="3cqZAo" node="7IsGrgJGMLQ" resolve="graph" />
               </node>
@@ -1022,7 +1022,7 @@
           <node concept="3clFbF" id="7IsGrgJMWO7" role="3cqZAp">
             <node concept="2YIFZM" id="7IsGrgJMWOI" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7IsGrgJMWOJ" role="37wK5m">
                 <ref role="3cqZAo" node="7IsGrgJMWO3" resolve="graph" />
               </node>
@@ -1155,7 +1155,7 @@
           <node concept="3clFbF" id="7IsGrgMIiRa" role="3cqZAp">
             <node concept="2YIFZM" id="7IsGrgMIiSn" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7IsGrgMIiSo" role="37wK5m">
                 <ref role="3cqZAo" node="7IsGrgMIiR6" resolve="graph" />
               </node>
@@ -1376,7 +1376,7 @@
           <node concept="3clFbF" id="7IsGrgJUI8W" role="3cqZAp">
             <node concept="2YIFZM" id="7IsGrgJUIaE" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7IsGrgJUIaF" role="37wK5m">
                 <ref role="3cqZAo" node="7IsGrgJUI8S" resolve="graph" />
               </node>
@@ -1527,7 +1527,7 @@
           <node concept="3clFbF" id="7IsGrgJUI9J" role="3cqZAp">
             <node concept="2YIFZM" id="7IsGrgJUIbc" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7IsGrgJUIbd" role="37wK5m">
                 <ref role="3cqZAo" node="7IsGrgJUI9F" resolve="nestedGraph" />
               </node>
@@ -1618,7 +1618,7 @@
           <node concept="3clFbF" id="7IsGrgJZiOq" role="3cqZAp">
             <node concept="2YIFZM" id="7IsGrgJZiP2" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7IsGrgJZiP3" role="37wK5m">
                 <ref role="3cqZAo" node="7IsGrgJZiOm" resolve="graph" />
               </node>
@@ -1746,7 +1746,7 @@
           <node concept="3clFbF" id="7IsGrgK78sO" role="3cqZAp">
             <node concept="2YIFZM" id="7IsGrgK78uD" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7IsGrgK78uE" role="37wK5m">
                 <ref role="3cqZAo" node="7IsGrgK78sK" resolve="graph" />
               </node>
@@ -2081,7 +2081,7 @@
           <node concept="3clFbF" id="7IsGrgKcaa$" role="3cqZAp">
             <node concept="2YIFZM" id="7IsGrgKcace" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7IsGrgKcacf" role="37wK5m">
                 <ref role="3cqZAo" node="7IsGrgKcaaw" resolve="graph" />
               </node>
@@ -2372,7 +2372,7 @@
           <node concept="3clFbF" id="7IsGrgKcRBL" role="3cqZAp">
             <node concept="2YIFZM" id="7IsGrgKcRDq" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7IsGrgKcRDr" role="37wK5m">
                 <ref role="3cqZAo" node="7IsGrgKcRBH" resolve="graph" />
               </node>
@@ -2735,7 +2735,7 @@
           <node concept="3clFbF" id="7IsGrgMQ5Ab" role="3cqZAp">
             <node concept="2YIFZM" id="7IsGrgMQ5Ad" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7IsGrgMQ5Ae" role="37wK5m">
                 <ref role="3cqZAo" node="7IsGrgMQ5A7" resolve="graph" />
               </node>
@@ -2895,7 +2895,7 @@
               </node>
               <node concept="2ShNRf" id="7IsGrgMZPTl" role="37vLTx">
                 <node concept="1pGfFk" id="7IsGrgMZPTn" role="2ShVmc">
-                  <ref role="37wK5l" to="s6nb:7IsGrgMZblD" resolve="GraphLayoutHierarchical" />
+                  <ref role="37wK5l" to="s6nb:7IsGrgMZblD" />
                 </node>
               </node>
             </node>
@@ -2930,7 +2930,7 @@
           <node concept="3clFbF" id="7IsGrgMVLSa" role="3cqZAp">
             <node concept="2YIFZM" id="7IsGrgMVLSc" role="3clFbG">
               <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
-              <ref role="37wK5l" to="s6nb:7IsGrgMXW7h" resolve="layout" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
               <node concept="37vLTw" id="7IsGrgMVLSd" role="37wK5m">
                 <ref role="3cqZAo" node="7IsGrgMVLRV" resolve="graph" />
               </node>
@@ -3013,6 +3013,193 @@
             <node concept="3_1$Yv" id="7IsGrgMVLT0" role="3_9lra">
               <node concept="Xl_RD" id="7IsGrgMVLT1" role="3_1BAH">
                 <property role="Xl_RC" value="hierarchical DOWN layout: n2 should be well below n1, not beside it" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3s$Bmu" id="7IsGrgNauXx" role="3s_gse">
+        <property role="3s$Bm0" value="testBodyTextWrapsAndGrowsBox" />
+        <property role="TrG5h" value="test_testBodyTextWrapsAndGrowsBox" />
+        <node concept="3cqZAl" id="7IsGrgNauX_" role="3clF45" />
+        <node concept="3clFbS" id="7IsGrgNauXA" role="3clF47">
+          <node concept="3cpWs8" id="7IsGrgNav7U" role="3cqZAp">
+            <node concept="3cpWsn" id="7IsGrgNav7T" role="3cpWs9">
+              <property role="TrG5h" value="graph" />
+              <node concept="3uibUv" id="7IsGrgNav7V" role="1tU5fm">
+                <ref role="3uigEE" to="s6nb:7JXu42kiflE" resolve="SvgGraphModel" />
+              </node>
+              <node concept="2ShNRf" id="7IsGrgNav8N" role="33vP2m">
+                <node concept="1pGfFk" id="7IsGrgNav8P" role="2ShVmc">
+                  <ref role="37wK5l" to="s6nb:7JXu42kiflQ" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="7IsGrgNav7Y" role="3cqZAp">
+            <node concept="3cpWsn" id="7IsGrgNav7X" role="3cpWs9">
+              <property role="TrG5h" value="n1" />
+              <node concept="3uibUv" id="7IsGrgNav7Z" role="1tU5fm">
+                <ref role="3uigEE" to="s6nb:7JXu42kiera" resolve="SvgNodeModel" />
+              </node>
+              <node concept="2ShNRf" id="7IsGrgNav8Q" role="33vP2m">
+                <node concept="1pGfFk" id="7IsGrgNav92" role="2ShVmc">
+                  <ref role="37wK5l" to="s6nb:7JXu42kierK" />
+                  <node concept="Xl_RD" id="7IsGrgNav93" role="37wK5m">
+                    <property role="Xl_RC" value="n1" />
+                  </node>
+                  <node concept="Xl_RD" id="7IsGrgNav94" role="37wK5m">
+                    <property role="Xl_RC" value="G1" />
+                  </node>
+                  <node concept="3cmrfG" id="7IsGrgNav95" role="37wK5m">
+                    <property role="3cmrfH" value="170" />
+                  </node>
+                  <node concept="3cmrfG" id="7IsGrgNav96" role="37wK5m">
+                    <property role="3cmrfH" value="70" />
+                  </node>
+                  <node concept="Xl_RD" id="7IsGrgNav97" role="37wK5m">
+                    <property role="Xl_RC" value="rect" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7IsGrgNav86" role="3cqZAp">
+            <node concept="37vLTI" id="7IsGrgNav87" role="3clFbG">
+              <node concept="2OqwBi" id="7IsGrgNav9b" role="37vLTJ">
+                <node concept="37vLTw" id="7IsGrgNav9a" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7IsGrgNav7X" resolve="n1" />
+                </node>
+                <node concept="2OwXpG" id="7IsGrgNav9c" role="2OqNvi">
+                  <ref role="2Oxat5" to="s6nb:7IsGrgN28nn" resolve="bodyText" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="7IsGrgNav89" role="37vLTx">
+                <property role="Xl_RC" value="This is a long goal statement that should wrap across several lines inside the box" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7IsGrgNav8a" role="3cqZAp">
+            <node concept="2OqwBi" id="7IsGrgNavc6" role="3clFbG">
+              <node concept="2OqwBi" id="7IsGrgNav9g" role="2Oq$k0">
+                <node concept="37vLTw" id="7IsGrgNav9f" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7IsGrgNav7T" resolve="graph" />
+                </node>
+                <node concept="2OwXpG" id="7IsGrgNav9h" role="2OqNvi">
+                  <ref role="2Oxat5" to="s6nb:7JXu42kiflG" resolve="nodes" />
+                </node>
+              </node>
+              <node concept="liA8E" id="7IsGrgNavc7" role="2OqNvi">
+                <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
+                <node concept="37vLTw" id="7IsGrgNavc8" role="37wK5m">
+                  <ref role="3cqZAo" node="7IsGrgNav7X" resolve="n1" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="7IsGrgNav8e" role="3cqZAp">
+            <node concept="3cpWsn" id="7IsGrgNav8d" role="3cpWs9">
+              <property role="TrG5h" value="originalHeight" />
+              <node concept="10P55v" id="7IsGrgNav8f" role="1tU5fm" />
+              <node concept="2OqwBi" id="7IsGrgNav9n" role="33vP2m">
+                <node concept="37vLTw" id="7IsGrgNav9m" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7IsGrgNav7X" resolve="n1" />
+                </node>
+                <node concept="2OwXpG" id="7IsGrgNav9o" role="2OqNvi">
+                  <ref role="2Oxat5" to="s6nb:7JXu42kiero" resolve="height" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="7IsGrgNav8h" role="3cqZAp">
+            <node concept="2YIFZM" id="7IsGrgNav9r" role="3clFbG">
+              <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
+              <node concept="37vLTw" id="7IsGrgNav9s" role="37wK5m">
+                <ref role="3cqZAo" node="7IsGrgNav7T" resolve="graph" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="7IsGrgNav8l" role="3cqZAp">
+            <node concept="3cpWsn" id="7IsGrgNav8k" role="3cpWs9">
+              <property role="TrG5h" value="boxGrew" />
+              <node concept="10P_77" id="7IsGrgNav8m" role="1tU5fm" />
+              <node concept="3eOSWO" id="7IsGrgNav8n" role="33vP2m">
+                <node concept="2OqwBi" id="7IsGrgNav9w" role="3uHU7B">
+                  <node concept="37vLTw" id="7IsGrgNav9v" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7IsGrgNav7X" resolve="n1" />
+                  </node>
+                  <node concept="2OwXpG" id="7IsGrgNav9x" role="2OqNvi">
+                    <ref role="2Oxat5" to="s6nb:7JXu42kiero" resolve="height" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="7IsGrgNav8p" role="3uHU7w">
+                  <ref role="3cqZAo" node="7IsGrgNav8d" resolve="originalHeight" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="7IsGrgNav8r" role="3cqZAp">
+            <node concept="3cpWsn" id="7IsGrgNav8q" role="3cpWs9">
+              <property role="TrG5h" value="svg" />
+              <node concept="3uibUv" id="7IsGrgNav8s" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+              </node>
+              <node concept="2YIFZM" id="7IsGrgNav9$" role="33vP2m">
+                <ref role="1Pybhc" to="s6nb:7JXu42ki_zC" resolve="SvgWriter" />
+                <ref role="37wK5l" to="s6nb:7IsGrgLUGLK" resolve="write" />
+                <node concept="37vLTw" id="7IsGrgNav9_" role="37wK5m">
+                  <ref role="3cqZAo" node="7IsGrgNav7T" resolve="graph" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="7IsGrgNav8w" role="3cqZAp">
+            <node concept="3cpWsn" id="7IsGrgNav8v" role="3cpWs9">
+              <property role="TrG5h" value="textCount" />
+              <node concept="10Oyi0" id="7IsGrgNav8x" role="1tU5fm" />
+              <node concept="1rXfSq" id="7IsGrgNav8y" role="33vP2m">
+                <ref role="37wK5l" node="7JXu42km3YM" resolve="countOccurrences" />
+                <node concept="37vLTw" id="7IsGrgNav8z" role="37wK5m">
+                  <ref role="3cqZAo" node="7IsGrgNav8q" resolve="svg" />
+                </node>
+                <node concept="Xl_RD" id="7IsGrgNav8$" role="37wK5m">
+                  <property role="Xl_RC" value="&lt;text" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="7IsGrgNav8A" role="3cqZAp">
+            <node concept="3cpWsn" id="7IsGrgNav8_" role="3cpWs9">
+              <property role="TrG5h" value="multipleTextLines" />
+              <node concept="10P_77" id="7IsGrgNav8B" role="1tU5fm" />
+              <node concept="2d3UOw" id="7IsGrgNav8C" role="33vP2m">
+                <node concept="37vLTw" id="7IsGrgNav8D" role="3uHU7B">
+                  <ref role="3cqZAo" node="7IsGrgNav8v" resolve="textCount" />
+                </node>
+                <node concept="3cmrfG" id="7IsGrgNav8E" role="3uHU7w">
+                  <property role="3cmrfH" value="4" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="7IsGrgNaKR6" role="3cqZAp">
+            <node concept="37vLTw" id="7IsGrgNaKR8" role="3vwVQn">
+              <ref role="3cqZAo" node="7IsGrgNav8k" resolve="boxGrew" />
+            </node>
+            <node concept="3_1$Yv" id="7IsGrgNaKR9" role="3_9lra">
+              <node concept="Xl_RD" id="7IsGrgNaKRa" role="3_1BAH">
+                <property role="Xl_RC" value="box should grow taller to fit the wrapped bodyText" />
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="7IsGrgNaL1s" role="3cqZAp">
+            <node concept="37vLTw" id="7IsGrgNaL1u" role="3vwVQn">
+              <ref role="3cqZAo" node="7IsGrgNav8_" resolve="multipleTextLines" />
+            </node>
+            <node concept="3_1$Yv" id="7IsGrgNaL1v" role="3_9lra">
+              <node concept="Xl_RD" id="7IsGrgNaL1w" role="3_1BAH">
+                <property role="Xl_RC" value="bodyText should render as several wrapped text lines, not one" />
               </node>
             </node>
           </node>

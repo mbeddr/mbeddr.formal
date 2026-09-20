@@ -3,12 +3,24 @@
   <persistence version="9" />
   <languages>
     <use id="1d5b3929-98e5-452c-837b-51a176dab9f8" name="com.mpsbasics.editor.svg_viewer.demolan" version="0" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports />
   <registry>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359206929" name="jetbrains.mps.lang.text.structure.Text" flags="nn" index="1Pa9Pv">
+        <child id="2535923850359210936" name="lines" index="1PaQFQ" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="1d5b3929-98e5-452c-837b-51a176dab9f8" name="com.mpsbasics.editor.svg_viewer.demolan">
@@ -23,6 +35,9 @@
       </concept>
       <concept id="8907189550535488687" name="com.mpsbasics.editor.svg_viewer.demolan.structure.SupportedBy" flags="ng" index="198okr" />
       <concept id="8907189550535484634" name="com.mpsbasics.editor.svg_viewer.demolan.structure.Solution" flags="ng" index="198plI" />
+      <concept id="8907189550535480581" name="com.mpsbasics.editor.svg_viewer.demolan.structure.GoalStructureEntityBase" flags="ng" index="198qiL">
+        <child id="8907189550535449439" name="description" index="1982FF" />
+      </concept>
       <concept id="8907189550535483175" name="com.mpsbasics.editor.svg_viewer.demolan.structure.Strategy" flags="ng" index="198qUj" />
       <concept id="8907189550493840468" name="com.mpsbasics.editor.svg_viewer.demolan.structure.State" flags="ng" index="1bRgnw">
         <property id="8907189550493842857" name="doAction" index="1bRgKt" />
@@ -10577,43 +10592,199 @@
   </node>
   <node concept="1983k$" id="7IsGrgMPNAn">
     <property role="TrG5h" value="Demo_GoalStructure_Simple" />
-    <node concept="1982o_" id="7IsGrgMPNAo" role="1982am">
-      <property role="TrG5h" value="G1: System is acceptably safe to operate" />
+    <node concept="1982o_" id="7IsGrgNfkLL" role="1982am">
+      <property role="TrG5h" value="G1" />
+      <node concept="1Pa9Pv" id="7IsGrgNfkLM" role="1982FF">
+        <node concept="1PaTwC" id="7IsGrgNfkLN" role="1PaQFQ">
+          <node concept="3oM_SD" id="7IsGrgNfkLP" role="1PaTwD">
+            <property role="3oM_SC" value="System" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkLQ" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkLR" role="1PaTwD">
+            <property role="3oM_SC" value="acceptably" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkLS" role="1PaTwD">
+            <property role="3oM_SC" value="safe" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkLT" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkLU" role="1PaTwD">
+            <property role="3oM_SC" value="operate" />
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="198qUj" id="7IsGrgMPNAp" role="1982am">
-      <property role="TrG5h" value="S1: Argument over each identified hazard" />
+    <node concept="198qUj" id="7IsGrgNfkLV" role="1982am">
+      <property role="TrG5h" value="S1" />
+      <node concept="1Pa9Pv" id="7IsGrgNfkLW" role="1982FF">
+        <node concept="1PaTwC" id="7IsGrgNfkLX" role="1PaQFQ">
+          <node concept="3oM_SD" id="7IsGrgNfkLZ" role="1PaTwD">
+            <property role="3oM_SC" value="Argument" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkM0" role="1PaTwD">
+            <property role="3oM_SC" value="over" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkM1" role="1PaTwD">
+            <property role="3oM_SC" value="each" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkM2" role="1PaTwD">
+            <property role="3oM_SC" value="identified" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkM3" role="1PaTwD">
+            <property role="3oM_SC" value="hazard" />
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="1982o_" id="7IsGrgMPNAq" role="1982am">
-      <property role="TrG5h" value="G2: Hazard H1 (overheating) mitigated" />
+    <node concept="1982o_" id="7IsGrgNfkM4" role="1982am">
+      <property role="TrG5h" value="G2" />
+      <node concept="1Pa9Pv" id="7IsGrgNfkM5" role="1982FF">
+        <node concept="1PaTwC" id="7IsGrgNfkM6" role="1PaQFQ">
+          <node concept="3oM_SD" id="7IsGrgNfkM8" role="1PaTwD">
+            <property role="3oM_SC" value="Hazard" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkM9" role="1PaTwD">
+            <property role="3oM_SC" value="H1," />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMa" role="1PaTwD">
+            <property role="3oM_SC" value="overheating" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMb" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMc" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMd" role="1PaTwD">
+            <property role="3oM_SC" value="main" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMe" role="1PaTwD">
+            <property role="3oM_SC" value="battery" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMf" role="1PaTwD">
+            <property role="3oM_SC" value="pack," />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMg" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMh" role="1PaTwD">
+            <property role="3oM_SC" value="adequately" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMi" role="1PaTwD">
+            <property role="3oM_SC" value="mitigated" />
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="1982o_" id="7IsGrgMPNAr" role="1982am">
-      <property role="TrG5h" value="G3: Hazard H2 (loss of braking) mitigated" />
+    <node concept="1982o_" id="7IsGrgNfkMj" role="1982am">
+      <property role="TrG5h" value="G3" />
+      <node concept="1Pa9Pv" id="7IsGrgNfkMk" role="1982FF">
+        <node concept="1PaTwC" id="7IsGrgNfkMl" role="1PaQFQ">
+          <node concept="3oM_SD" id="7IsGrgNfkMn" role="1PaTwD">
+            <property role="3oM_SC" value="Hazard" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMo" role="1PaTwD">
+            <property role="3oM_SC" value="H2," />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMp" role="1PaTwD">
+            <property role="3oM_SC" value="loss" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMq" role="1PaTwD">
+            <property role="3oM_SC" value="of" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMr" role="1PaTwD">
+            <property role="3oM_SC" value="braking" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMs" role="1PaTwD">
+            <property role="3oM_SC" value="effectiveness," />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMt" role="1PaTwD">
+            <property role="3oM_SC" value="is" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMu" role="1PaTwD">
+            <property role="3oM_SC" value="adequately" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMv" role="1PaTwD">
+            <property role="3oM_SC" value="mitigated" />
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="198plI" id="7IsGrgMPNAs" role="1982am">
-      <property role="TrG5h" value="Sn1: Fault tree analysis" />
+    <node concept="198plI" id="7IsGrgNfkMw" role="1982am">
+      <property role="TrG5h" value="Sn1" />
+      <node concept="1Pa9Pv" id="7IsGrgNfkMx" role="1982FF">
+        <node concept="1PaTwC" id="7IsGrgNfkMy" role="1PaQFQ">
+          <node concept="3oM_SD" id="7IsGrgNfkM$" role="1PaTwD">
+            <property role="3oM_SC" value="Fault" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkM_" role="1PaTwD">
+            <property role="3oM_SC" value="tree" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMA" role="1PaTwD">
+            <property role="3oM_SC" value="analysis" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMB" role="1PaTwD">
+            <property role="3oM_SC" value="report" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMC" role="1PaTwD">
+            <property role="3oM_SC" value="FTA-042" />
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="198plI" id="7IsGrgMPNAt" role="1982am">
-      <property role="TrG5h" value="Sn2: Bench test report" />
+    <node concept="198plI" id="7IsGrgNfkMD" role="1982am">
+      <property role="TrG5h" value="Sn2" />
+      <node concept="1Pa9Pv" id="7IsGrgNfkME" role="1982FF">
+        <node concept="1PaTwC" id="7IsGrgNfkMF" role="1PaQFQ">
+          <node concept="3oM_SD" id="7IsGrgNfkMH" role="1PaTwD">
+            <property role="3oM_SC" value="Bench" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMI" role="1PaTwD">
+            <property role="3oM_SC" value="test" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMJ" role="1PaTwD">
+            <property role="3oM_SC" value="report" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMK" role="1PaTwD">
+            <property role="3oM_SC" value="BTR-017" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkML" role="1PaTwD">
+            <property role="3oM_SC" value="covering" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMM" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMN" role="1PaTwD">
+            <property role="3oM_SC" value="braking" />
+          </node>
+          <node concept="3oM_SD" id="7IsGrgNfkMO" role="1PaTwD">
+            <property role="3oM_SC" value="subsystem" />
+          </node>
+        </node>
+      </node>
     </node>
-    <node concept="198okr" id="7IsGrgMPNAu" role="198Sv7">
-      <ref role="198oyE" node="7IsGrgMPNAo" resolve="G1: System is acceptably safe to operate" />
-      <ref role="198oCj" node="7IsGrgMPNAp" resolve="S1: Argument over each identified hazard" />
+    <node concept="198okr" id="7IsGrgNfkMP" role="198Sv7">
+      <ref role="198oyE" node="7IsGrgNfkLL" resolve="G1" />
+      <ref role="198oCj" node="7IsGrgNfkLV" resolve="S1" />
     </node>
-    <node concept="198okr" id="7IsGrgMPNAv" role="198Sv7">
-      <ref role="198oyE" node="7IsGrgMPNAp" resolve="S1: Argument over each identified hazard" />
-      <ref role="198oCj" node="7IsGrgMPNAq" resolve="G2: Hazard H1 (overheating) mitigated" />
+    <node concept="198okr" id="7IsGrgNfkMQ" role="198Sv7">
+      <ref role="198oyE" node="7IsGrgNfkLV" resolve="S1" />
+      <ref role="198oCj" node="7IsGrgNfkM4" resolve="G2" />
     </node>
-    <node concept="198okr" id="7IsGrgMPNAw" role="198Sv7">
-      <ref role="198oyE" node="7IsGrgMPNAp" resolve="S1: Argument over each identified hazard" />
-      <ref role="198oCj" node="7IsGrgMPNAr" resolve="G3: Hazard H2 (loss of braking) mitigated" />
+    <node concept="198okr" id="7IsGrgNfkMR" role="198Sv7">
+      <ref role="198oyE" node="7IsGrgNfkLV" resolve="S1" />
+      <ref role="198oCj" node="7IsGrgNfkMj" resolve="G3" />
     </node>
-    <node concept="198okr" id="7IsGrgMPNAx" role="198Sv7">
-      <ref role="198oyE" node="7IsGrgMPNAq" resolve="G2: Hazard H1 (overheating) mitigated" />
-      <ref role="198oCj" node="7IsGrgMPNAs" resolve="Sn1: Fault tree analysis" />
+    <node concept="198okr" id="7IsGrgNfkMS" role="198Sv7">
+      <ref role="198oyE" node="7IsGrgNfkM4" resolve="G2" />
+      <ref role="198oCj" node="7IsGrgNfkMw" resolve="Sn1" />
     </node>
-    <node concept="198okr" id="7IsGrgMPNAy" role="198Sv7">
-      <ref role="198oyE" node="7IsGrgMPNAr" resolve="G3: Hazard H2 (loss of braking) mitigated" />
-      <ref role="198oCj" node="7IsGrgMPNAt" resolve="Sn2: Bench test report" />
+    <node concept="198okr" id="7IsGrgNfkMT" role="198Sv7">
+      <ref role="198oyE" node="7IsGrgNfkMj" resolve="G3" />
+      <ref role="198oCj" node="7IsGrgNfkMD" resolve="Sn2" />
     </node>
   </node>
 </model>
