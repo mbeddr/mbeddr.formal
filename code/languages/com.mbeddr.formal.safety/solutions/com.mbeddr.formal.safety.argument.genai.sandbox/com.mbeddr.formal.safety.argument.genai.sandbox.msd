@@ -25,7 +25,6 @@
   </languageVersions>
   <dependencyVersions>
     <module reference="d2b33f3e-5932-45b5-b063-f3e859abfbe3(com.mbeddr.formal.safety.argument.genai.sandbox)" version="0" />
-    <module reference="7a642ffb-bd05-4e8c-b81a-08fde9a204ba(com.mbeddr.formal.safety.tutorial)" version="0" />
   </dependencyVersions>
 </solution>
 

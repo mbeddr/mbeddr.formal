@@ -1063,7 +1063,7 @@
           </node>
         </node>
         <node concept="Xl_RD" id="4_xuXPD2Uxk" role="2MkJ7o">
-          <property role="Xl_RC" value="bounds are fixed" />
+          <property role="Xl_RC" value="Page settings bottom right bounds do not have expected position. Please open the editor to trigger page settings bounds refresh!" />
         </node>
         <node concept="1YBJjd" id="4_xuXPD2Vkn" role="1urrMF">
           <ref role="1YBMHb" node="4_xuXPD0ocV" resolve="pageSettingsBottomRight" />

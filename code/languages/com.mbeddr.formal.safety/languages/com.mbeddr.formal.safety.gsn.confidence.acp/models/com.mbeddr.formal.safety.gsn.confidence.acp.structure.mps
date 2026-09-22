@@ -31,9 +31,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
-        <property id="1225118929411" name="build" index="YLPcu" />
-      </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
@@ -58,9 +55,6 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -85,14 +79,6 @@
     <property role="34LRSv" value="confidence argument" />
     <property role="R4oN_" value="an argument about the confidence in a claim" />
     <ref role="1TJDcQ" to="q1zg:2K8T9FD2QBL" resolve="SpecialArgumentBase" />
-    <node concept="1TJgyj" id="4lbNCDmPWRO" role="1TKVEi">
-      <property role="IQ2ns" value="4993311705428119028" />
-      <property role="20kJfa" value="acp" />
-      <ref role="20lvS9" node="3bh1RFvGk3g" resolve="AssuranceClaimPoint" />
-      <node concept="asaX9" id="4dQiu9mXSj4" role="lGtFl">
-        <property role="YLPcu" value="2025.04.18" />
-      </node>
-    </node>
     <node concept="1irR5M" id="1XJsHce2Un6" role="rwd14">
       <property role="2$rrk2" value="1" />
       <node concept="1irR9n" id="1XJsHce2V90" role="1irR9h">
