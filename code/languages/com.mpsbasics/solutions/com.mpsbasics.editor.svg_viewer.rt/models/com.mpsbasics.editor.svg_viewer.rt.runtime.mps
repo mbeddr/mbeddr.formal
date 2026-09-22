@@ -18808,6 +18808,32 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6GPJ2rryDvH" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rryDwg" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rryDvO" role="2Oq$k0">
+              <ref role="3cqZAo" node="6GPJ2rrqECz" resolve="searchField" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rryDwh" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JTextField.setFont(java.awt.Font)" resolve="setFont" />
+              <node concept="37vLTw" id="6GPJ2rryDwi" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrwYWs" resolve="compactFont" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rryDvK" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rryDxg" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rryDvS" role="2Oq$k0">
+              <ref role="3cqZAo" node="6GPJ2rrqECD" resolve="searchMatchLabel" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rryDxh" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
+              <node concept="37vLTw" id="6GPJ2rryDxi" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrwYWs" resolve="compactFont" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="7IsGrgKWIa6" role="3cqZAp">
           <node concept="2OqwBi" id="7IsGrgKWM6f" role="3clFbG">
             <node concept="37vLTw" id="7IsGrgKWLQs" role="2Oq$k0">
@@ -19828,10 +19854,10 @@
       <node concept="3uibUv" id="6GPJ2rrqEC_" role="1tU5fm">
         <ref role="3uigEE" to="dxuu:~JTextField" resolve="JTextField" />
       </node>
-      <node concept="2ShNRf" id="6GPJ2rrqECJ" role="33vP2m">
-        <node concept="1pGfFk" id="6GPJ2rrqHSk" role="2ShVmc">
+      <node concept="2ShNRf" id="6GPJ2rr$13v" role="33vP2m">
+        <node concept="1pGfFk" id="6GPJ2rr$13N" role="2ShVmc">
           <ref role="37wK5l" to="dxuu:~JTextField.&lt;init&gt;(int)" resolve="JTextField" />
-          <node concept="3cmrfG" id="6GPJ2rrqHSl" role="37wK5m">
+          <node concept="3cmrfG" id="6GPJ2rr$13O" role="37wK5m">
             <property role="3cmrfH" value="12" />
           </node>
         </node>
