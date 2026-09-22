@@ -88,10 +88,6 @@
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
-      <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
-      <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
-        <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
     </language>
   </registry>
   <node concept="24kQdi" id="3bh1RFvGk3D">
@@ -203,30 +199,6 @@
         <node concept="3F0ifn" id="4lbNCDmQ1PR" role="3EZMnx">
           <property role="3F0ifm" value="Confidence argument for ACPs:" />
           <ref role="1k5W1q" to="xnej:KwKRgpDZHZ" resolve="FASTENBaseLanguageKeyword" />
-        </node>
-        <node concept="1iCGBv" id="4lbNCDmQ26E" role="3EZMnx">
-          <ref role="1NtTu8" to="kqaf:4lbNCDmPWRO" resolve="acp" />
-          <node concept="1sVBvm" id="4lbNCDmQ26G" role="1sWHZn">
-            <node concept="3F0A7n" id="4lbNCDmQ26O" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
-          <node concept="pkWqt" id="4dQiu9mXSDF" role="pqm2j">
-            <node concept="3clFbS" id="4dQiu9mXSDG" role="2VODD2">
-              <node concept="3clFbF" id="4dQiu9mXSSB" role="3cqZAp">
-                <node concept="2OqwBi" id="4dQiu9mXWWh" role="3clFbG">
-                  <node concept="2OqwBi" id="4dQiu9mXTvK" role="2Oq$k0">
-                    <node concept="pncrf" id="4dQiu9mXSSA" role="2Oq$k0" />
-                    <node concept="3TrEf2" id="4dQiu9mXWEP" role="2OqNvi">
-                      <ref role="3Tt5mk" to="kqaf:4lbNCDmPWRO" resolve="acp" />
-                    </node>
-                  </node>
-                  <node concept="3x8VRR" id="4dQiu9mXXLG" role="2OqNvi" />
-                </node>
-              </node>
-            </node>
-          </node>
         </node>
         <node concept="3F2HdR" id="4dQiu9mYBNL" role="3EZMnx">
           <property role="2czwfO" value="," />
