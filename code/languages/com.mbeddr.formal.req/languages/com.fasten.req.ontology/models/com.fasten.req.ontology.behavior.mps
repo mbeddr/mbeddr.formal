@@ -29,6 +29,7 @@
         <reference id="5299096511375896640" name="superConcept" index="3eA5LN" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -82,7 +83,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1171323947159" name="jetbrains.mps.lang.smodel.structure.Model_NodesOperation" flags="nn" index="2SmgA7">
         <child id="1758937410080001570" name="conceptArgument" index="1dBWTz" />
@@ -167,12 +167,12 @@
             <node concept="13iAh5" id="1h8BwgBGhyX" role="2Oq$k0">
               <ref role="3eA5LN" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
             </node>
-            <node concept="2qgKlT" id="1h8BwgBGhyY" role="2OqNvi">
+            <node concept="3zqWPK" id="5WfAYZdS0s_" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
-              <node concept="37vLTw" id="1h8BwgBGhyU" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sB" role="37wK5m">
                 <ref role="3cqZAo" node="1h8BwgBGhyP" resolve="kind" />
               </node>
-              <node concept="37vLTw" id="1h8BwgBGhyV" role="37wK5m">
+              <node concept="37vLTw" id="5WfAYZdS0sC" role="37wK5m">
                 <ref role="3cqZAo" node="1h8BwgBGhyR" resolve="child" />
               </node>
             </node>
@@ -242,7 +242,7 @@
                       <ref role="3Tt5mk" to="6wa3:3Jn$RV31w1r" resolve="superConcept" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="6AHcWlQr4fS" role="2OqNvi">
+                  <node concept="3zqWPK" id="5WfAYZdS0sD" role="2OqNvi">
                     <ref role="37wK5l" node="6AHcWlQqW0G" resolve="getAllRelations" />
                   </node>
                 </node>

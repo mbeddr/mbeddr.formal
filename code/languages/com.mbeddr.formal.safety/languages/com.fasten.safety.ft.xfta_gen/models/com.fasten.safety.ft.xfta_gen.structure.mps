@@ -17,6 +17,7 @@
       </concept>
       <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="1860120738943552477" name="jetbrains.mps.lang.resources.structure.ColorLiteral" flags="ng" index="3PKj8D">
@@ -102,6 +103,12 @@
       <node concept="1irPie" id="3US$zqcc$Az" role="1irR9h">
         <property role="1irPi9" value="X" />
         <node concept="3PKj8D" id="3US$zqcc$AA" role="3PKjny">
+          <property role="3PKj8l" value="4444FF" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2nacnue1Gyd" role="2rmM5M">
+        <property role="1irPi9" value="X" />
+        <node concept="3PKj8D" id="2nacnue1Gye" role="3PKjny">
           <property role="3PKj8l" value="4444FF" />
         </node>
       </node>

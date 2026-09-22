@@ -23,6 +23,7 @@
       </concept>
       <concept id="2756621024541674821" name="jetbrains.mps.lang.resources.structure.TextIcon" flags="ng" index="1irR5M">
         <property id="1358878980655415353" name="iconId" index="2$rrk2" />
+        <child id="8984883884167239995" name="newuiLayers" index="2rmM5M" />
         <child id="2756621024541675110" name="layers" index="1irR9h" />
       </concept>
       <concept id="2756621024541675104" name="jetbrains.mps.lang.resources.structure.Circle" flags="ng" index="1irR9n" />
@@ -137,6 +138,17 @@
       <node concept="1irPie" id="3f8ZVRYhwmM" role="1irR9h">
         <property role="1irPi9" value="B" />
         <node concept="3PKj8D" id="3f8ZVRYhwmT" role="3PKjny">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="2nacnue1Gz5" role="2rmM5M">
+        <node concept="3PKj8D" id="2nacnue1Gz6" role="3PKjn_">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2nacnue1Gz7" role="2rmM5M">
+        <property role="1irPi9" value="B" />
+        <node concept="3PKj8D" id="2nacnue1Gz8" role="3PKjny">
           <property role="3PKj8l" value="FFFFFF" />
         </node>
       </node>
@@ -379,6 +391,20 @@
       <node concept="1irPie" id="2l56qoH7SIv" role="1irR9h">
         <property role="1irPi9" value="S" />
         <node concept="3PKj8D" id="2l56qoH7SIy" role="3PKjny">
+          <property role="3PKj8l" value="44FF44" />
+        </node>
+      </node>
+      <node concept="1irR9n" id="2nacnue1Gz9" role="2rmM5M">
+        <node concept="3PKj8D" id="2nacnue1Gza" role="3PKjn_">
+          <property role="3PKj8l" value="FFFFFF" />
+        </node>
+        <node concept="3PKj8D" id="2nacnue1Gzb" role="3PKjnB">
+          <property role="3PKj8l" value="000000" />
+        </node>
+      </node>
+      <node concept="1irPie" id="2nacnue1Gzc" role="2rmM5M">
+        <property role="1irPi9" value="S" />
+        <node concept="3PKj8D" id="2nacnue1Gzd" role="3PKjny">
           <property role="3PKj8l" value="44FF44" />
         </node>
       </node>

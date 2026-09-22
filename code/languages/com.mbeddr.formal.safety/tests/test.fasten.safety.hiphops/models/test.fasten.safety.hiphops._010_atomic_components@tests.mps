@@ -39,6 +39,9 @@
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
     </language>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
@@ -170,7 +173,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -261,7 +263,7 @@
               <node concept="3xONca" id="3bh1RFvF4mI" role="2Oq$k0">
                 <ref role="3xOPvv" node="3bh1RFvF47v" resolve="propagation_logic" />
               </node>
-              <node concept="2qgKlT" id="62cfieEL$oe" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGIp" role="2OqNvi">
                 <ref role="37wK5l" to="lr73:1TeaL8RddbY" resolve="computeFaultTree" />
               </node>
             </node>
@@ -338,7 +340,7 @@
               <node concept="37vLTw" id="3bh1RFvFC_Y" role="2Oq$k0">
                 <ref role="3cqZAo" node="62cfieEL$ob" resolve="ft" />
               </node>
-              <node concept="2qgKlT" id="2s9yRNfqiPL" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGIr" role="2OqNvi">
                 <ref role="37wK5l" to="fazf:2s9yRNfoqAa" resolve="elements" />
               </node>
             </node>
@@ -361,7 +363,7 @@
                     <node concept="37vLTw" id="3bh1RFvFUa5" role="2Oq$k0">
                       <ref role="3cqZAo" node="62cfieEL$ob" resolve="ft" />
                     </node>
-                    <node concept="2qgKlT" id="2s9yRNfqiRl" role="2OqNvi">
+                    <node concept="3zqWPK" id="4oGkhCURGIt" role="2OqNvi">
                       <ref role="37wK5l" to="fazf:2s9yRNfoqAa" resolve="elements" />
                     </node>
                   </node>
@@ -438,7 +440,7 @@
               <node concept="37vLTw" id="3bh1RFvFGIc" role="2Oq$k0">
                 <ref role="3cqZAo" node="62cfieEL$ob" resolve="ft" />
               </node>
-              <node concept="2qgKlT" id="2s9yRNfqoVU" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGIv" role="2OqNvi">
                 <ref role="37wK5l" to="fazf:2s9yRNforA0" resolve="connections" />
               </node>
             </node>
@@ -626,7 +628,7 @@
               <node concept="3xONca" id="5g1NREKP_sW" role="2Oq$k0">
                 <ref role="3xOPvv" node="5g1NREKP_iM" resolve="ifmea_to_transform" />
               </node>
-              <node concept="2qgKlT" id="5g1NREKPzI9" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGIx" role="2OqNvi">
                 <ref role="37wK5l" to="lr73:1TeaL8RddbY" resolve="computeFaultTree" />
               </node>
             </node>
@@ -944,7 +946,7 @@
               <node concept="3xONca" id="5N87GIKidtr" role="2Oq$k0">
                 <ref role="3xOPvv" node="5N87GIKiduL" resolve="propagation_logic" />
               </node>
-              <node concept="2qgKlT" id="5N87GIKidts" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGIz" role="2OqNvi">
                 <ref role="37wK5l" to="lr73:1TeaL8RddbY" resolve="computeFaultTree" />
               </node>
             </node>
@@ -1021,7 +1023,7 @@
               <node concept="37vLTw" id="5N87GIKidtQ" role="2Oq$k0">
                 <ref role="3cqZAo" node="5N87GIKidto" resolve="ft" />
               </node>
-              <node concept="2qgKlT" id="2s9yRNfqjox" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGI_" role="2OqNvi">
                 <ref role="37wK5l" to="fazf:2s9yRNfoqAa" resolve="elements" />
               </node>
             </node>
@@ -1037,7 +1039,7 @@
               <node concept="37vLTw" id="5N87GIKiduy" role="2Oq$k0">
                 <ref role="3cqZAo" node="5N87GIKidto" resolve="ft" />
               </node>
-              <node concept="2qgKlT" id="2s9yRNfqjq5" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGIB" role="2OqNvi">
                 <ref role="37wK5l" to="fazf:2s9yRNforA0" resolve="connections" />
               </node>
             </node>

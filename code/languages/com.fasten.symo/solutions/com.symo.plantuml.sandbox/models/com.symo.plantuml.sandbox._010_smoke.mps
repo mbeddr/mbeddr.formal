@@ -3,6 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="6f31bc85-cbcc-4dcf-ada4-35da43e6832c" name="com.symo.plantuml" version="-1" />
+    <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
   </languages>
   <imports />
   <registry>
@@ -54,6 +55,92 @@
       <concept id="8677912475548557093" name="com.symo.plantuml.structure.ArrowLeftLine" flags="ng" index="TrFLe" />
       <concept id="8677912475548557092" name="com.symo.plantuml.structure.ArrowLine" flags="ng" index="TrFLf" />
       <concept id="7647822637844199905" name="com.symo.plantuml.structure.PlantUmlUsecaseDiagram" flags="ng" index="VLBZa" />
+      <concept id="2676948427470442323" name="com.symo.plantuml.structure.PlantUmlTextualCondition" flags="ng" index="10je4U">
+        <property id="2676948427470442325" name="text" index="10je4W" />
+      </concept>
+      <concept id="2676948427474722363" name="com.symo.plantuml.structure.PlantUmlActivityElseIf" flags="ng" index="10zr1i">
+        <property id="2676948427474722364" name="thenLabel" index="10zr1l" />
+        <child id="2676948427474739188" name="condition" index="10yB6t" />
+        <child id="2676948427474739191" name="body" index="10yB6u" />
+      </concept>
+      <concept id="2676948427448000417" name="com.symo.plantuml.structure.PlantUmlActivityStart" flags="ng" index="11cB78" />
+      <concept id="2676948427448000416" name="com.symo.plantuml.structure.PlantUmlActivityDiagram" flags="ng" index="11cB79" />
+      <concept id="2676948427448000419" name="com.symo.plantuml.structure.PlantUmlActivityAction" flags="ng" index="11cB7a">
+        <child id="2676948427450970826" name="spec" index="11pLMz" />
+      </concept>
+      <concept id="2676948427448000418" name="com.symo.plantuml.structure.PlantUmlActivityStop" flags="ng" index="11cB7b" />
+      <concept id="2676948427450954639" name="com.symo.plantuml.structure.PlantUmlActivityActionTextSpec" flags="ng" index="11pPRA">
+        <property id="2676948427450954641" name="text" index="11pPRS" />
+      </concept>
+      <concept id="2676948427457692845" name="com.symo.plantuml.structure.PlantUmlActivityIf" flags="ng" index="11zAF4">
+        <property id="2676948427457692849" name="thenLabel" index="11zAFo" />
+        <child id="2676948427470459034" name="condition" index="10jbVN" />
+        <child id="2676948427474739194" name="elseIfBranches" index="10yB6j" />
+        <child id="2676948427461088178" name="thenBody" index="11ZrRr" />
+        <child id="2676948427461088181" name="elseBranch" index="11ZrRs" />
+      </concept>
+      <concept id="2676948427457692846" name="com.symo.plantuml.structure.PlantUmlActivityElse" flags="ng" index="11zAF7">
+        <property id="2676948427457692851" name="label" index="11zAFq" />
+        <child id="2676948427461088184" name="body" index="11ZrRh" />
+      </concept>
+      <concept id="2676948427500610639" name="com.symo.plantuml.structure.PlantUmlActivityForkBranch" flags="ng" index="1248CA">
+        <child id="2676948427500610646" name="body" index="1248CZ" />
+      </concept>
+      <concept id="2676948427500610638" name="com.symo.plantuml.structure.PlantUmlActivityFork" flags="ng" index="1248CB">
+        <property id="2676948427500610642" name="endLabel" index="1248CV" />
+        <child id="2676948427500610643" name="body" index="1248CU" />
+        <child id="2676948427500610644" name="againBranches" index="1248CX" />
+      </concept>
+      <concept id="2676948427500610641" name="com.symo.plantuml.structure.PlantUmlActivitySplitBranch" flags="ng" index="1248CS">
+        <child id="2676948427500610650" name="body" index="1248CN" />
+      </concept>
+      <concept id="2676948427500610640" name="com.symo.plantuml.structure.PlantUmlActivitySplit" flags="ng" index="1248CT">
+        <child id="2676948427500610648" name="againBranches" index="1248CL" />
+        <child id="2676948427500610647" name="body" index="1248CY" />
+      </concept>
+      <concept id="2676948427504287969" name="com.symo.plantuml.structure.PlantUmlActivityPartition" flags="ng" index="12imU8">
+        <child id="2676948427504287971" name="body" index="12imUa" />
+      </concept>
+      <concept id="2676948427507976705" name="com.symo.plantuml.structure.PlantUmlActivityDetach" flags="ng" index="12wihC" />
+      <concept id="2676948427507976707" name="com.symo.plantuml.structure.PlantUmlActivityLabel" flags="ng" index="12wihE">
+        <property id="2676948427507976711" name="name" index="12wihI" />
+      </concept>
+      <concept id="2676948427507976706" name="com.symo.plantuml.structure.PlantUmlActivityKill" flags="ng" index="12wihF" />
+      <concept id="2676948427507976708" name="com.symo.plantuml.structure.PlantUmlActivityGoto" flags="ng" index="12wihH">
+        <property id="2676948427507976713" name="name" index="12wihw" />
+      </concept>
+      <concept id="2676948427490809733" name="com.symo.plantuml.structure.PlantUmlActivityWhile" flags="ng" index="13xNBG">
+        <property id="2676948427490809735" name="endLabel" index="13xNBI" />
+        <property id="2676948427490809734" name="isLabel" index="13xNBJ" />
+        <child id="2676948427490809737" name="body" index="13xNBw" />
+        <child id="2676948427490809736" name="condition" index="13xNBx" />
+      </concept>
+      <concept id="2676948427496118979" name="com.symo.plantuml.structure.PlantUmlActivityCase" flags="ng" index="13P3iE">
+        <child id="2676948427512626111" name="condition" index="12M5nm" />
+        <child id="2676948427496118984" name="body" index="13P3ix" />
+      </concept>
+      <concept id="2676948427496118978" name="com.symo.plantuml.structure.PlantUmlActivitySwitch" flags="ng" index="13P3iF">
+        <child id="2676948427496118981" name="cases" index="13P3iG" />
+        <child id="2676948427496118980" name="condition" index="13P3iH" />
+      </concept>
+      <concept id="2676948427493449630" name="com.symo.plantuml.structure.PlantUmlActivityRepeat" flags="ng" index="13VZ7R">
+        <property id="2676948427493449632" name="notLabel" index="13VZ79" />
+        <property id="2676948427493449631" name="isLabel" index="13VZ7Q" />
+        <child id="2676948427493449633" name="body" index="13VZ78" />
+        <child id="2676948427493449634" name="condition" index="13VZ7b" />
+      </concept>
+      <concept id="2473884325795318446" name="com.symo.plantuml.structure.PlantUmlDeploymentLink" flags="ng" index="34eGC1" />
+      <concept id="2473884325795318445" name="com.symo.plantuml.structure.DeploymentArtifact" flags="ng" index="34eGC2" />
+      <concept id="2473884325795318444" name="com.symo.plantuml.structure.DeploymentNode" flags="ng" index="34eGC3">
+        <property id="2473884325795318448" name="kind" index="34eGCv" />
+      </concept>
+      <concept id="2473884325795318443" name="com.symo.plantuml.structure.PlantUmlDeploymentDiagram" flags="ng" index="34eGC4" />
+      <concept id="2473884325803488744" name="com.symo.plantuml.structure.DeploymentEntityRef" flags="ng" index="34Inl7">
+        <reference id="2473884325803488749" name="entity" index="34Inl2" />
+      </concept>
+      <concept id="2473884325803488743" name="com.symo.plantuml.structure.DeploymentEntityBase" flags="ng" index="34Inl8">
+        <child id="2473884325803488745" name="substructure" index="34Inl6" />
+      </concept>
       <concept id="8400506447497059002" name="com.symo.plantuml.structure.SkinparamCommand" flags="ng" index="14T4ax">
         <child id="8400506447497059019" name="parameter" index="14T4bg" />
       </concept>
@@ -63,6 +150,71 @@
       <concept id="8400506447496619781" name="com.symo.plantuml.structure.PackageDeclaration" flags="ng" index="14ZFWu">
         <child id="8400506447496650874" name="content" index="14Zzxx" />
       </concept>
+      <concept id="2473884325863272373" name="com.symo.plantuml.structure.EnumLiteral" flags="ng" index="38aqWq" />
+      <concept id="2473884325876133242" name="com.symo.plantuml.structure.PlantUmlPackage" flags="ng" index="395uRl">
+        <property id="2473884325876133243" name="kind" index="395uRk" />
+        <child id="2473884325876133244" name="content" index="395uRj" />
+      </concept>
+      <concept id="2473884325827446553" name="com.symo.plantuml.structure.DeploymentPortRef" flags="ng" index="3a3KuQ">
+        <reference id="2473884325827446555" name="port" index="3a3KuO" />
+      </concept>
+      <concept id="2473884325827446544" name="com.symo.plantuml.structure.DeploymentPort" flags="ng" index="3a3KuZ">
+        <property id="2473884325827446547" name="kind" index="3a3KuW" />
+      </concept>
+      <concept id="2473884325826231427" name="com.symo.plantuml.structure.PlantUmlLeftToRightDirection" flags="ng" index="3a4BKG" />
+      <concept id="2473884325829927087" name="com.symo.plantuml.structure.PlantUmlClassLink" flags="ng" index="3aaI00">
+        <property id="2473884325881025504" name="targetRole" index="39RDdf" />
+        <property id="2473884325881025500" name="sourceRole" index="39RDdN" />
+        <property id="2473884325839153334" name="targetMultiplicity" index="3bmqwp" />
+        <property id="2473884325839153329" name="sourceMultiplicity" index="3bmqwu" />
+      </concept>
+      <concept id="2473884325829927082" name="com.symo.plantuml.structure.ClassRef" flags="ng" index="3aaI05">
+        <reference id="2473884325829927084" name="class" index="3aaI03" />
+      </concept>
+      <concept id="2473884325829927072" name="com.symo.plantuml.structure.ClassDeclaration" flags="ng" index="3aaI0f">
+        <property id="2473884325863272366" name="kind" index="38aqW1" />
+        <property id="2473884325897808877" name="lineStyle" index="3eREH2" />
+        <property id="2473884325897808873" name="lineColor" index="3eREH6" />
+        <property id="2473884325897808881" name="textColor" index="3eREHu" />
+        <property id="2473884325916634816" name="stereotype" index="3fZYTJ" />
+        <child id="2473884325843281085" name="members" index="3b7Egi" />
+      </concept>
+      <concept id="2473884325829927094" name="com.symo.plantuml.structure.AssociationLine" flags="ng" index="3aaI0p" />
+      <concept id="2473884325829927091" name="com.symo.plantuml.structure.ExtensionLine" flags="ng" index="3aaI0s" />
+      <concept id="2473884325829927062" name="com.symo.plantuml.structure.PlantUmlClassDiagram" flags="ng" index="3aaI0T" />
+      <concept id="2473884325837798798" name="com.symo.plantuml.structure.DependencyLine" flags="ng" index="3aCJOx" />
+      <concept id="2473884325837798797" name="com.symo.plantuml.structure.RealizationLine" flags="ng" index="3aCJOy" />
+      <concept id="2473884325837798796" name="com.symo.plantuml.structure.AggregationLine" flags="ng" index="3aCJOz" />
+      <concept id="2473884325837798795" name="com.symo.plantuml.structure.CompositionLine" flags="ng" index="3aCJO$" />
+      <concept id="2473884325843258712" name="com.symo.plantuml.structure.ClassMethod" flags="ng" index="3b7$RR">
+        <property id="2473884325868089652" name="isAbstract" index="38$N6r" />
+        <property id="2473884325843258719" name="visibility" index="3b7$RK" />
+        <property id="2473884325843258718" name="returnType" index="3b7$RL" />
+        <child id="2473884325852375599" name="parameters" index="3bwQE0" />
+      </concept>
+      <concept id="2473884325843258711" name="com.symo.plantuml.structure.ClassField" flags="ng" index="3b7$RS">
+        <property id="2473884325868089644" name="isStatic" index="38$N63" />
+        <property id="2473884325843258715" name="visibility" index="3b7$RO" />
+        <property id="2473884325843258714" name="type" index="3b7$RP" />
+      </concept>
+      <concept id="2473884325852352303" name="com.symo.plantuml.structure.MethodParameter" flags="ng" index="3bwKY0">
+        <property id="2473884325852352304" name="type" index="3bwKYv" />
+      </concept>
+      <concept id="2473884325924415853" name="com.symo.plantuml.structure.TimeMark" flags="ng" index="3ctaB2">
+        <property id="2473884325924415863" name="time" index="3ctaBo" />
+        <property id="4301536924910768341" name="relative" index="3meB7v" />
+        <child id="2473884325924415864" name="assignments" index="3ctaBn" />
+      </concept>
+      <concept id="2473884325924415852" name="com.symo.plantuml.structure.TimingStateAssignment" flags="ng" index="3ctaB3">
+        <property id="2473884325924415860" name="state" index="3ctaBr" />
+        <reference id="2473884325924415861" name="participant" index="3ctaBq" />
+      </concept>
+      <concept id="2473884325924415851" name="com.symo.plantuml.structure.TimingParticipant" flags="ng" index="3ctaB4">
+        <property id="2473884325924415856" name="kind" index="3ctaBv" />
+      </concept>
+      <concept id="2473884325924415850" name="com.symo.plantuml.structure.PlantUmlTimingDiagram" flags="ng" index="3ctaB5" />
+      <concept id="2676948427520082644" name="com.symo.plantuml.structure.PlantUmlActivitySwimlane" flags="ng" index="1dhAMX" />
+      <concept id="2676948427518192855" name="com.symo.plantuml.structure.PlantUmlActivityBreak" flags="ng" index="1dpkaY" />
       <concept id="521530426072143421" name="com.symo.plantuml.structure.ComponentDeclarationBase" flags="ng" index="3eE$Wl">
         <child id="521530426072143424" name="substructure" index="3eE$XC" />
       </concept>
@@ -73,6 +225,25 @@
       <concept id="1822469624834794620" name="com.symo.plantuml.structure.StartMindmapCommand" flags="ng" index="3jvh8b" />
       <concept id="1822469624834794667" name="com.symo.plantuml.structure.EndMindmapCommand" flags="ng" index="3jvhbs" />
       <concept id="1822469624834794777" name="com.symo.plantuml.structure.PlantUmlMindmapDiagram" flags="ng" index="3jvhdI" />
+      <concept id="4301536924914824988" name="com.symo.plantuml.structure.TimingScaleCommand" flags="ng" index="3mt1om">
+        <property id="4301536924914824990" name="unitFactor" index="3mt1ok" />
+        <property id="4301536924914824991" name="pixels" index="3mt1ol" />
+      </concept>
+      <concept id="4301536924914824994" name="com.symo.plantuml.structure.TimingHighlight" flags="ng" index="3mt1oC">
+        <property id="4301536924914824998" name="color" index="3mt1oG" />
+        <property id="4301536924914824999" name="label" index="3mt1oH" />
+        <property id="4301536924914824996" name="fromTime" index="3mt1oI" />
+        <property id="4301536924914824997" name="toTime" index="3mt1oJ" />
+      </concept>
+      <concept id="4301536924902404961" name="com.symo.plantuml.structure.TimingInterval" flags="ng" index="3mID9F">
+        <property id="4301536924902404966" name="label" index="3mID9G" />
+        <property id="4301536924902404964" name="fromTime" index="3mID9I" />
+        <property id="4301536924902404965" name="toTime" index="3mID9J" />
+        <reference id="4301536924902404963" name="participant" index="3mID9D" />
+      </concept>
+      <concept id="4301536924900359811" name="com.symo.plantuml.structure.TimingParticipantRef" flags="ng" index="3nmPY9">
+        <reference id="4301536924900359813" name="participant" index="3nmPYf" />
+      </concept>
       <concept id="1983696557349946927" name="com.symo.plantuml.structure.Note" flags="ng" index="1oxsuH">
         <property id="1983696557349947391" name="position" index="1oxspX" />
         <child id="1983696557349946929" name="text" index="1oxsuN" />
@@ -930,7 +1101,7 @@
     <node concept="c$xRF" id="q$1bLSxR_z" role="1pqCw0" />
     <node concept="c$xRF" id="2qHrqKSD7oT" role="1pqCw0" />
     <node concept="1YE28Q" id="2qHrqKSD7oU" role="1pqCw0">
-      <property role="145Srp" value="100" />
+      <property role="145Srp" value="70" />
       <property role="TrG5h" value="plain_text_sequence_diagram" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="uemj4" id="2qHrqKSD7oW" role="1pqCzW">
@@ -1645,6 +1816,9 @@
       <property role="TrG5h" value="statemachine simple" />
       <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
       <node concept="1pqCwu" id="q$1bLTdbrY" role="1pqCzW" />
+      <node concept="1Yfh69" id="3IM8gFIiTGc" role="1pqCzW">
+        <property role="1Yfh67" value="Statemachine Simple" />
+      </node>
       <node concept="1Zxd49" id="q$1bLTftug" role="1pqCzW">
         <property role="TrG5h" value="Init" />
       </node>
@@ -2370,6 +2544,1616 @@
         </node>
       </node>
       <node concept="1pqCE1" id="4_rWrCMfuRI" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_$9W$n">
+    <property role="TrG5h" value="_050_activity_diagram_simple" />
+    <node concept="11cB79" id="2kArA_$9W$o" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity simple" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_$9W$s" role="1pqCzW" />
+      <node concept="1Yfh69" id="3IM8gFIiTGd" role="1pqCzW">
+        <property role="1Yfh67" value="Activity Simple" />
+      </node>
+      <node concept="11cB78" id="2kArA_$9W$t" role="1pqCzW" />
+      <node concept="11cB7a" id="2kArA_$z_Y8" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_$z_Ya" role="11pLMz">
+          <property role="11pPRS" value="do something" />
+        </node>
+      </node>
+      <node concept="11cB7a" id="2kArA_$z_Yb" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_$z_Yd" role="11pLMz">
+          <property role="11pPRS" value="do something else" />
+        </node>
+      </node>
+      <node concept="11cB7a" id="29l0aZ_RD3A" role="1pqCzW">
+        <property role="1ZmCJ5" value="lightblue" />
+        <node concept="11pPRA" id="29l0aZ_RD3C" role="11pLMz">
+          <property role="11pPRS" value="do something colored" />
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_$9W$w" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_$9W$x" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA__0GID">
+    <property role="TrG5h" value="_051_activity_diagram_if_else" />
+    <node concept="11cB79" id="2kArA__0GIE" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity if else" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA__0GII" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA__0GIJ" role="1pqCzW" />
+      <node concept="11zAF4" id="2kArA__$rZI" role="1pqCzW">
+        <property role="11zAFo" value="yes" />
+        <node concept="10je4U" id="2kArA__$rZK" role="10jbVN">
+          <property role="10je4W" value="x &gt; 0" />
+        </node>
+        <node concept="11cB7a" id="2kArA__$rZL" role="11ZrRr">
+          <node concept="11pPRA" id="2kArA__$rZN" role="11pLMz">
+            <property role="11pPRS" value="do something" />
+          </node>
+        </node>
+        <node concept="11zAF7" id="2kArA__$rZO" role="11ZrRs">
+          <property role="11zAFq" value="no" />
+          <node concept="11cB7a" id="2kArA__$rZP" role="11ZrRh">
+            <node concept="11pPRA" id="2kArA__$rZR" role="11pLMz">
+              <property role="11pPRS" value="do something else" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA__0GIS" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA__0GIT" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA__OPsC">
+    <property role="TrG5h" value="_052_activity_diagram_elseif" />
+    <node concept="11cB79" id="2kArA__OPsD" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity elseif" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA__OPsH" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA__OPsI" role="1pqCzW" />
+      <node concept="11zAF4" id="2kArA__OPsJ" role="1pqCzW">
+        <property role="11zAFo" value="yes" />
+        <node concept="10je4U" id="2kArA__OPsL" role="10jbVN">
+          <property role="10je4W" value="x == 1" />
+        </node>
+        <node concept="11cB7a" id="2kArA__OPsM" role="11ZrRr">
+          <node concept="11pPRA" id="2kArA__OPsO" role="11pLMz">
+            <property role="11pPRS" value="handle one" />
+          </node>
+        </node>
+        <node concept="10zr1i" id="2kArA__OPsP" role="10yB6j">
+          <property role="10zr1l" value="yes" />
+          <node concept="10je4U" id="2kArA__OPsR" role="10yB6t">
+            <property role="10je4W" value="x == 2" />
+          </node>
+          <node concept="11cB7a" id="2kArA__OPsS" role="10yB6u">
+            <node concept="11pPRA" id="2kArA__OPsU" role="11pLMz">
+              <property role="11pPRS" value="handle two" />
+            </node>
+          </node>
+        </node>
+        <node concept="10zr1i" id="2kArA__OPsV" role="10yB6j">
+          <node concept="10je4U" id="2kArA__OPsX" role="10yB6t">
+            <property role="10je4W" value="x == 3" />
+          </node>
+          <node concept="11cB7a" id="2kArA__OPsY" role="10yB6u">
+            <node concept="11pPRA" id="2kArA__OPt0" role="11pLMz">
+              <property role="11pPRS" value="handle three" />
+            </node>
+          </node>
+        </node>
+        <node concept="11zAF7" id="2kArA__OPt1" role="11ZrRs">
+          <property role="11zAFq" value="no" />
+          <node concept="11cB7a" id="2kArA__OPt2" role="11ZrRh">
+            <node concept="11pPRA" id="2kArA__OPt4" role="11pLMz">
+              <property role="11pPRS" value="handle default" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA__OPt5" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA__OPt6" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_AJ2Wq">
+    <property role="TrG5h" value="_053_activity_diagram_while" />
+    <node concept="11cB79" id="2kArA_AJ2Wr" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity while" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_AJ2Wv" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_AJ2Ww" role="1pqCzW" />
+      <node concept="13xNBG" id="2kArA_AJ2Wx" role="1pqCzW">
+        <property role="13xNBJ" value="yes" />
+        <property role="13xNBI" value="no" />
+        <node concept="10je4U" id="2kArA_AJ2Wy" role="13xNBx">
+          <property role="10je4W" value="x &lt; 10" />
+        </node>
+        <node concept="11cB7a" id="2kArA_AJ2Wz" role="13xNBw">
+          <node concept="11pPRA" id="2kArA_AJ2W_" role="11pLMz">
+            <property role="11pPRS" value="increment x" />
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_AJ2WA" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_AJ2WB" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_ATdcf">
+    <property role="TrG5h" value="_054_activity_diagram_repeat" />
+    <node concept="11cB79" id="2kArA_ATdcg" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity repeat" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_ATdck" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_ATdcl" role="1pqCzW" />
+      <node concept="13VZ7R" id="2kArA_ATdcm" role="1pqCzW">
+        <property role="13VZ7Q" value="yes" />
+        <property role="13VZ79" value="no" />
+        <node concept="11cB7a" id="2kArA_ATdcn" role="13VZ78">
+          <node concept="11pPRA" id="2kArA_ATdcp" role="11pLMz">
+            <property role="11pPRS" value="read data" />
+          </node>
+        </node>
+        <node concept="10je4U" id="2kArA_ATdcq" role="13VZ7b">
+          <property role="10je4W" value="more data?" />
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_ATdcr" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_ATdcs" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_B6QFm">
+    <property role="TrG5h" value="_055_activity_diagram_switch" />
+    <node concept="11cB79" id="2kArA_B6QFn" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity switch" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_B6QFr" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_B6QFs" role="1pqCzW" />
+      <node concept="13P3iF" id="2kArA_B6QFt" role="1pqCzW">
+        <node concept="10je4U" id="2kArA_B6QFu" role="13P3iH">
+          <property role="10je4W" value="test?" />
+        </node>
+        <node concept="13P3iE" id="2kArA_C6aH2" role="13P3iG">
+          <node concept="10je4U" id="2kArA_C6aH3" role="12M5nm">
+            <property role="10je4W" value="condition A" />
+          </node>
+          <node concept="11cB7a" id="2kArA_C6aH4" role="13P3ix">
+            <node concept="11pPRA" id="2kArA_C6aH6" role="11pLMz">
+              <property role="11pPRS" value="Text 1" />
+            </node>
+          </node>
+        </node>
+        <node concept="13P3iE" id="2kArA_C6aH7" role="13P3iG">
+          <node concept="10je4U" id="2kArA_C6aH8" role="12M5nm">
+            <property role="10je4W" value="condition B" />
+          </node>
+          <node concept="11cB7a" id="2kArA_C6aH9" role="13P3ix">
+            <node concept="11pPRA" id="2kArA_C6aHb" role="11pLMz">
+              <property role="11pPRS" value="Text 2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_B6QFB" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_B6QFC" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_BogXL">
+    <property role="TrG5h" value="_056_activity_diagram_fork_split" />
+    <node concept="11cB79" id="2kArA_BogXM" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity fork split" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_BogXQ" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_BogXR" role="1pqCzW" />
+      <node concept="1248CB" id="2kArA_BogXS" role="1pqCzW">
+        <property role="1248CV" value="and" />
+        <node concept="11cB7a" id="2kArA_BogXT" role="1248CU">
+          <node concept="11pPRA" id="2kArA_BogXV" role="11pLMz">
+            <property role="11pPRS" value="action 1" />
+          </node>
+        </node>
+        <node concept="1248CA" id="2kArA_BogXW" role="1248CX">
+          <node concept="11cB7a" id="2kArA_BogXX" role="1248CZ">
+            <node concept="11pPRA" id="2kArA_BogXZ" role="11pLMz">
+              <property role="11pPRS" value="action 2" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1248CT" id="2kArA_BogY0" role="1pqCzW">
+        <node concept="11cB7a" id="2kArA_BogY1" role="1248CY">
+          <node concept="11pPRA" id="2kArA_BogY3" role="11pLMz">
+            <property role="11pPRS" value="A" />
+          </node>
+        </node>
+        <node concept="1248CS" id="2kArA_BogY4" role="1248CL">
+          <node concept="11cB7a" id="2kArA_BogY5" role="1248CN">
+            <node concept="11pPRA" id="2kArA_BogY7" role="11pLMz">
+              <property role="11pPRS" value="B" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_BogY8" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_BogY9" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_BAjM2">
+    <property role="TrG5h" value="_057_activity_diagram_partition" />
+    <node concept="11cB79" id="2kArA_BAjM3" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity partition" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_BAjM7" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_BAjM8" role="1pqCzW" />
+      <node concept="12imU8" id="2kArA_CHrH7" role="1pqCzW">
+        <property role="TrG5h" value="Input Interface" />
+        <node concept="11cB7a" id="2kArA_CHrH8" role="12imUa">
+          <node concept="11pPRA" id="2kArA_CHrHa" role="11pLMz">
+            <property role="11pPRS" value="read config file" />
+          </node>
+        </node>
+        <node concept="11cB7a" id="2kArA_CHrHb" role="12imUa">
+          <node concept="11pPRA" id="2kArA_CHrHd" role="11pLMz">
+            <property role="11pPRS" value="init internal variable" />
+          </node>
+        </node>
+      </node>
+      <node concept="12imU8" id="2kArA_CHrHe" role="1pqCzW">
+        <property role="TrG5h" value="Running" />
+        <node concept="11cB7a" id="2kArA_CHrHf" role="12imUa">
+          <node concept="11pPRA" id="2kArA_CHrHh" role="11pLMz">
+            <property role="11pPRS" value="wait for user interaction" />
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_BAjMk" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_BAjMl" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_BS1QH">
+    <property role="TrG5h" value="_058_activity_diagram_label_goto_detach_kill" />
+    <node concept="11cB79" id="2kArA_BS1QI" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity label goto detach kill" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_BS1QM" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_BS1QN" role="1pqCzW" />
+      <node concept="11cB7a" id="2kArA_BS1QO" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_BS1QQ" role="11pLMz">
+          <property role="11pPRS" value="read data" />
+        </node>
+      </node>
+      <node concept="12wihE" id="2kArA_BS1QR" role="1pqCzW">
+        <property role="12wihI" value="retry" />
+      </node>
+      <node concept="11zAF4" id="2kArA_BS1QS" role="1pqCzW">
+        <property role="11zAFo" value="yes" />
+        <node concept="10je4U" id="2kArA_BS1QT" role="10jbVN">
+          <property role="10je4W" value="data corrupted?" />
+        </node>
+        <node concept="11cB7a" id="2kArA_BS1QU" role="11ZrRr">
+          <node concept="11pPRA" id="2kArA_BS1QW" role="11pLMz">
+            <property role="11pPRS" value="log error" />
+          </node>
+        </node>
+        <node concept="12wihF" id="2kArA_BS1QX" role="11ZrRr" />
+        <node concept="11zAF7" id="2kArA_BS1QY" role="11ZrRs">
+          <property role="11zAFq" value="no" />
+          <node concept="11cB7a" id="2kArA_BS1QZ" role="11ZrRh">
+            <node concept="11pPRA" id="2kArA_BS1R1" role="11pLMz">
+              <property role="11pPRS" value="process data" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11zAF4" id="2kArA_BS1R2" role="1pqCzW">
+        <property role="11zAFo" value="yes" />
+        <node concept="10je4U" id="2kArA_BS1R3" role="10jbVN">
+          <property role="10je4W" value="need retry?" />
+        </node>
+        <node concept="12wihH" id="2kArA_BS1R4" role="11ZrRr">
+          <property role="12wihw" value="retry" />
+        </node>
+      </node>
+      <node concept="11cB7a" id="2kArA_BS1R5" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_BS1R7" role="11pLMz">
+          <property role="11pPRS" value="cleanup" />
+        </node>
+      </node>
+      <node concept="12wihC" id="2kArA_BS1R8" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_BS1R9" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_Cdg$X">
+    <property role="TrG5h" value="_059_activity_diagram_note" />
+    <node concept="11cB79" id="2kArA_Cdg$Y" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity note" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_Cdg_2" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_Cdg_3" role="1pqCzW" />
+      <node concept="11cB7a" id="2kArA_Cdg_4" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_Cdg_6" role="11pLMz">
+          <property role="11pPRS" value="process request" />
+        </node>
+      </node>
+      <node concept="1oxsuH" id="2kArA_Cdg_7" role="1pqCzW">
+        <property role="1oxspX" value="1I7wo930$vW/right" />
+        <node concept="1Pa9Pv" id="2kArA_Cdg_9" role="1oxsuN">
+          <node concept="1PaTwC" id="2kArA_Cdg_a" role="1PaQFQ">
+            <node concept="3oM_SD" id="2kArA_Cdg_c" role="1PaTwD">
+              <property role="3oM_SC" value="This" />
+            </node>
+            <node concept="3oM_SD" id="2kArA_Cdg_d" role="1PaTwD">
+              <property role="3oM_SC" value="step" />
+            </node>
+            <node concept="3oM_SD" id="2kArA_Cdg_e" role="1PaTwD">
+              <property role="3oM_SC" value="may" />
+            </node>
+            <node concept="3oM_SD" id="2kArA_Cdg_f" role="1PaTwD">
+              <property role="3oM_SC" value="take" />
+            </node>
+            <node concept="3oM_SD" id="2kArA_Cdg_g" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="2kArA_Cdg_h" role="1PaTwD">
+              <property role="3oM_SC" value="while" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_Cdg_i" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_Cdg_j" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_Co09i">
+    <property role="TrG5h" value="_059_activity_diagram_break" />
+    <node concept="11cB79" id="2kArA_Co09j" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity break" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_Co09n" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_Co09o" role="1pqCzW" />
+      <node concept="13VZ7R" id="2kArA_Co09p" role="1pqCzW">
+        <node concept="11cB7a" id="2kArA_Co09q" role="13VZ78">
+          <node concept="11pPRA" id="2kArA_Co09s" role="11pLMz">
+            <property role="11pPRS" value="test something" />
+          </node>
+        </node>
+        <node concept="11zAF4" id="2kArA_Co09t" role="13VZ78">
+          <property role="11zAFo" value="no" />
+          <node concept="10je4U" id="2kArA_Co09u" role="10jbVN">
+            <property role="10je4W" value="something went wrong?" />
+          </node>
+          <node concept="11cB7a" id="2kArA_Co09v" role="11ZrRr">
+            <node concept="11pPRA" id="2kArA_Co09x" role="11pLMz">
+              <property role="11pPRS" value="OK" />
+            </node>
+          </node>
+          <node concept="1dpkaY" id="2kArA_Co09y" role="11ZrRr" />
+        </node>
+        <node concept="11cB7a" id="2kArA_Co09z" role="13VZ78">
+          <node concept="11pPRA" id="2kArA_Co09_" role="11pLMz">
+            <property role="11pPRS" value="alert error" />
+          </node>
+        </node>
+        <node concept="10je4U" id="2kArA_Co09A" role="13VZ7b">
+          <property role="10je4W" value="something went wrong?" />
+        </node>
+      </node>
+      <node concept="11cB7a" id="2kArA_Co09B" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_Co09D" role="11pLMz">
+          <property role="11pPRS" value="success" />
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_Co09E" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_Co09F" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_Co0aw">
+    <property role="TrG5h" value="_059_activity_diagram_note_placements" />
+    <node concept="11cB79" id="2kArA_Co0ax" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity note placements" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_Co0a_" role="1pqCzW" />
+      <node concept="11cB78" id="2kArA_Co0aA" role="1pqCzW" />
+      <node concept="12imU8" id="2kArA_CHrHi" role="1pqCzW">
+        <property role="TrG5h" value="Process" />
+        <node concept="11cB7a" id="2kArA_CHrHj" role="12imUa">
+          <node concept="11pPRA" id="2kArA_CHrHl" role="11pLMz">
+            <property role="11pPRS" value="step one" />
+          </node>
+        </node>
+        <node concept="1oxsuH" id="2kArA_CHrHm" role="12imUa">
+          <property role="1oxspX" value="1I7wo930$vW/right" />
+          <node concept="1Pa9Pv" id="2kArA_CHrHo" role="1oxsuN">
+            <node concept="1PaTwC" id="2kArA_CHrHp" role="1PaQFQ">
+              <node concept="3oM_SD" id="2kArA_CHrHr" role="1PaTwD">
+                <property role="3oM_SC" value="applies" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_CHrHs" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_CHrHt" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_CHrHu" role="1PaTwD">
+                <property role="3oM_SC" value="partition" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11zAF4" id="2kArA_Co0aO" role="1pqCzW">
+        <property role="11zAFo" value="yes" />
+        <node concept="10je4U" id="2kArA_Co0aP" role="10jbVN">
+          <property role="10je4W" value="need retry?" />
+        </node>
+        <node concept="11cB7a" id="2kArA_Co0aQ" role="11ZrRr">
+          <node concept="11pPRA" id="2kArA_Co0aS" role="11pLMz">
+            <property role="11pPRS" value="retry" />
+          </node>
+        </node>
+        <node concept="1oxsuH" id="2kArA_Co0aT" role="11ZrRr">
+          <property role="1oxspX" value="1I7wo930$vW/right" />
+          <node concept="1Pa9Pv" id="2kArA_Co0aV" role="1oxsuN">
+            <node concept="1PaTwC" id="2kArA_Co0aW" role="1PaQFQ">
+              <node concept="3oM_SD" id="2kArA_Co0aY" role="1PaTwD">
+                <property role="3oM_SC" value="applies" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0aZ" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0b0" role="1PaTwD">
+                <property role="3oM_SC" value="an" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0b1" role="1PaTwD">
+                <property role="3oM_SC" value="if" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0b2" role="1PaTwD">
+                <property role="3oM_SC" value="branch" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="13VZ7R" id="2kArA_Co0b3" role="1pqCzW">
+        <property role="13VZ7Q" value="d" />
+        <node concept="11cB7a" id="2kArA_Co0b4" role="13VZ78">
+          <node concept="11pPRA" id="2kArA_Co0b6" role="11pLMz">
+            <property role="11pPRS" value="poll" />
+          </node>
+        </node>
+        <node concept="1oxsuH" id="2kArA_Co0b7" role="13VZ78">
+          <property role="1oxspX" value="1I7wo930$vW/right" />
+          <node concept="1Pa9Pv" id="2kArA_Co0b9" role="1oxsuN">
+            <node concept="1PaTwC" id="2kArA_Co0ba" role="1PaQFQ">
+              <node concept="3oM_SD" id="2kArA_Co0bc" role="1PaTwD">
+                <property role="3oM_SC" value="applies" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0bd" role="1PaTwD">
+                <property role="3oM_SC" value="inside" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0be" role="1PaTwD">
+                <property role="3oM_SC" value="a" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0bf" role="1PaTwD">
+                <property role="3oM_SC" value="loop" />
+              </node>
+              <node concept="3oM_SD" id="2kArA_Co0bg" role="1PaTwD">
+                <property role="3oM_SC" value="body" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="10je4U" id="2kArA_Co0bh" role="13VZ7b">
+          <property role="10je4W" value="done?" />
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_Co0bi" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_Co0bj" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="2kArA_CAhYW">
+    <property role="TrG5h" value="_059_activity_diagram_swimlane" />
+    <node concept="11cB79" id="2kArA_CAhYX" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity swimlane" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="2kArA_CAhZ1" role="1pqCzW" />
+      <node concept="1dhAMX" id="2kArA_CHrGG" role="1pqCzW">
+        <property role="TrG5h" value="Swimlane1" />
+      </node>
+      <node concept="11cB78" id="2kArA_CAhZ3" role="1pqCzW" />
+      <node concept="11cB7a" id="2kArA_CAhZ4" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_CAhZ6" role="11pLMz">
+          <property role="11pPRS" value="foo1" />
+        </node>
+      </node>
+      <node concept="1dhAMX" id="2kArA_CHrGH" role="1pqCzW">
+        <property role="TrG5h" value="Swimlane2" />
+        <property role="1ZmCJ5" value="AntiqueWhite" />
+      </node>
+      <node concept="11cB7a" id="2kArA_CAhZ8" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_CAhZa" role="11pLMz">
+          <property role="11pPRS" value="foo2" />
+        </node>
+      </node>
+      <node concept="11cB7a" id="2kArA_CAhZb" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_CAhZd" role="11pLMz">
+          <property role="11pPRS" value="foo3" />
+        </node>
+      </node>
+      <node concept="1dhAMX" id="2kArA_CHrGI" role="1pqCzW">
+        <property role="TrG5h" value="Swimlane1" />
+      </node>
+      <node concept="11cB7a" id="2kArA_CAhZf" role="1pqCzW">
+        <node concept="11pPRA" id="2kArA_CAhZh" role="11pLMz">
+          <property role="11pPRS" value="foo4" />
+        </node>
+      </node>
+      <node concept="11cB7b" id="2kArA_CAhZi" role="1pqCzW" />
+      <node concept="1pqCE1" id="2kArA_CAhZj" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZ_GbIr">
+    <property role="TrG5h" value="_050_activity_diagram_plain_text" />
+    <node concept="11cB79" id="29l0aZ_GbIs" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="activity plain text" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZ_GbIw" role="1pqCzW" />
+      <node concept="11cB78" id="29l0aZ_GbIx" role="1pqCzW" />
+      <node concept="11cB7a" id="29l0aZ_GbIy" role="1pqCzW">
+        <node concept="11pPRA" id="29l0aZ_GbI$" role="11pLMz">
+          <property role="11pPRS" value="do something modeled" />
+        </node>
+      </node>
+      <node concept="uemj4" id="29l0aZ_GbI_" role="1pqCzW">
+        <node concept="1Pa9Pv" id="29l0aZ_GbIH" role="uemj3">
+          <node concept="1PaTwC" id="29l0aZ_GbII" role="1PaQFQ">
+            <node concept="3oM_SD" id="29l0aZ_GbIK" role="1PaTwD">
+              <property role="3oM_SC" value="#lightblue:do" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIL" role="1PaTwD">
+              <property role="3oM_SC" value="something" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIM" role="1PaTwD">
+              <property role="3oM_SC" value="with" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIN" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIO" role="1PaTwD">
+              <property role="3oM_SC" value="color," />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIP" role="1PaTwD">
+              <property role="3oM_SC" value="not" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIQ" role="1PaTwD">
+              <property role="3oM_SC" value="yet" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIR" role="1PaTwD">
+              <property role="3oM_SC" value="a" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIS" role="1PaTwD">
+              <property role="3oM_SC" value="modeled" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZ_GbIT" role="1PaTwD">
+              <property role="3oM_SC" value="feature;" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="11cB7b" id="29l0aZ_GbIF" role="1pqCzW" />
+      <node concept="1pqCE1" id="29l0aZ_GbIG" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZAMRjO">
+    <property role="TrG5h" value="_060_deployment_diagram_simple" />
+    <node concept="34eGC4" id="29l0aZBp08G" role="1pqCw0">
+      <property role="145Srp" value="90" />
+      <property role="TrG5h" value="deployment simple" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZBp08K" role="1pqCzW" />
+      <node concept="1Yfh69" id="3IM8gFIiTGe" role="1pqCzW">
+        <property role="1Yfh67" value="Deployment Simple" />
+      </node>
+      <node concept="34eGC3" id="29l0aZBp08L" role="1pqCzW">
+        <property role="TrG5h" value="ClientMachine" />
+        <property role="2ywBW2" value="client" />
+        <node concept="34eGC2" id="29l0aZBp08M" role="34Inl6">
+          <property role="TrG5h" value="browser" />
+        </node>
+      </node>
+      <node concept="34eGC3" id="29l0aZBp08N" role="1pqCzW">
+        <property role="TrG5h" value="WebServer" />
+        <property role="2ywBW2" value="web" />
+        <node concept="34eGC2" id="29l0aZBp08O" role="34Inl6">
+          <property role="TrG5h" value="webapp" />
+        </node>
+        <node concept="34eGC3" id="29l0aZBp08P" role="34Inl6">
+          <property role="34eGCv" value="29l0aZBcbtB/FOLDER" />
+          <property role="TrG5h" value="config" />
+          <node concept="34eGC2" id="29l0aZBp08Q" role="34Inl6">
+            <property role="TrG5h" value="appProperties" />
+          </node>
+        </node>
+      </node>
+      <node concept="1oxsuH" id="29l0aZCdd0Z" role="1pqCzW">
+        <property role="1oxspX" value="1I7wo930$vW/right" />
+        <node concept="1Pa9Pv" id="29l0aZCdd11" role="1oxsuN">
+          <node concept="1PaTwC" id="29l0aZCdd12" role="1PaQFQ">
+            <node concept="3oM_SD" id="29l0aZCdd14" role="1PaTwD">
+              <property role="3oM_SC" value="Runs" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZCdd15" role="1PaTwD">
+              <property role="3oM_SC" value="the" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZCdd16" role="1PaTwD">
+              <property role="3oM_SC" value="Java" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZCdd17" role="1PaTwD">
+              <property role="3oM_SC" value="backend" />
+            </node>
+          </node>
+        </node>
+        <node concept="34Inl7" id="29l0aZCdd18" role="1oxsAa">
+          <ref role="34Inl2" node="29l0aZBp08N" resolve="WebServer" />
+        </node>
+      </node>
+      <node concept="34eGC3" id="29l0aZBp08R" role="1pqCzW">
+        <property role="34eGCv" value="3uGGyjSz8A_/DATABASE" />
+        <property role="TrG5h" value="DatabaseServer" />
+        <property role="2ywBW2" value="db" />
+        <node concept="34eGC2" id="29l0aZBp08S" role="34Inl6">
+          <property role="TrG5h" value="schema" />
+        </node>
+      </node>
+      <node concept="34eGC3" id="29l0aZBp08T" role="1pqCzW">
+        <property role="34eGCv" value="1j3FjoCvqGf/CLOUD" />
+        <property role="TrG5h" value="PaymentGateway" />
+        <property role="2ywBW2" value="payment" />
+        <property role="1ZmCJ5" value="lightblue" />
+      </node>
+      <node concept="34eGC1" id="29l0aZBp090" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZBp092" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZBp08L" resolve="ClientMachine" />
+        </node>
+        <node concept="34Inl7" id="29l0aZBp093" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZBp08N" resolve="WebServer" />
+        </node>
+        <node concept="TrFLf" id="29l0aZBp094" role="S$pns" />
+      </node>
+      <node concept="34eGC1" id="29l0aZBp095" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZBp097" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZBp08N" resolve="WebServer" />
+        </node>
+        <node concept="34Inl7" id="29l0aZBp098" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZBp08R" resolve="DatabaseServer" />
+        </node>
+        <node concept="TrFLf" id="29l0aZBp099" role="S$pns" />
+      </node>
+      <node concept="34eGC1" id="29l0aZBp09a" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZBp09c" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZBp08N" resolve="WebServer" />
+        </node>
+        <node concept="34Inl7" id="29l0aZBp09d" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZBp08T" resolve="PaymentGateway" />
+        </node>
+        <node concept="TrFLf" id="29l0aZBp09e" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZBp08U" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZCmuF5">
+    <property role="TrG5h" value="_062_deployment_diagram_left_to_right" />
+    <node concept="34eGC4" id="29l0aZCmuF6" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="deployment left to right" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZCmuFa" role="1pqCzW" />
+      <node concept="3a4BKG" id="29l0aZCmws5" role="1pqCzW" />
+      <node concept="34eGC3" id="29l0aZCmuFc" role="1pqCzW">
+        <property role="TrG5h" value="LoadBalancer" />
+        <property role="2ywBW2" value="lb" />
+      </node>
+      <node concept="34eGC3" id="29l0aZCmuFd" role="1pqCzW">
+        <property role="TrG5h" value="AppServer1" />
+        <property role="2ywBW2" value="app1" />
+      </node>
+      <node concept="34eGC3" id="29l0aZCmuFe" role="1pqCzW">
+        <property role="TrG5h" value="AppServer2" />
+        <property role="2ywBW2" value="app2" />
+      </node>
+      <node concept="34eGC3" id="29l0aZCmuFf" role="1pqCzW">
+        <property role="34eGCv" value="3uGGyjSz8A_/DATABASE" />
+        <property role="TrG5h" value="Database" />
+        <property role="2ywBW2" value="db" />
+      </node>
+      <node concept="34eGC1" id="29l0aZCmuFg" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZCmuFi" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZCmuFc" resolve="LoadBalancer" />
+        </node>
+        <node concept="34Inl7" id="29l0aZCmuFj" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZCmuFd" resolve="AppServer1" />
+        </node>
+        <node concept="TrFLf" id="29l0aZCmuFk" role="S$pns" />
+      </node>
+      <node concept="34eGC1" id="29l0aZCmuFl" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZCmuFn" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZCmuFc" resolve="LoadBalancer" />
+        </node>
+        <node concept="34Inl7" id="29l0aZCmuFo" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZCmuFe" resolve="AppServer2" />
+        </node>
+        <node concept="TrFLf" id="29l0aZCmuFp" role="S$pns" />
+      </node>
+      <node concept="34eGC1" id="29l0aZCmuFq" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZCmuFs" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZCmuFd" resolve="AppServer1" />
+        </node>
+        <node concept="34Inl7" id="29l0aZCmuFt" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZCmuFf" resolve="Database" />
+        </node>
+        <node concept="TrFLf" id="29l0aZCmuFu" role="S$pns" />
+      </node>
+      <node concept="34eGC1" id="29l0aZCmuFv" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZCmuFx" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZCmuFe" resolve="AppServer2" />
+        </node>
+        <node concept="34Inl7" id="29l0aZCmuFy" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZCmuFf" resolve="Database" />
+        </node>
+        <node concept="TrFLf" id="29l0aZCmuFz" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZCmuF$" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZCrhkv">
+    <property role="TrG5h" value="_063_deployment_diagram_ports" />
+    <node concept="34eGC4" id="29l0aZCrhkw" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="deployment ports" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZCrhk$" role="1pqCzW" />
+      <node concept="34eGC3" id="29l0aZCrhk_" role="1pqCzW">
+        <property role="TrG5h" value="Gateway" />
+        <node concept="3a3KuZ" id="29l0aZCrhkA" role="34Inl6">
+          <property role="TrG5h" value="in1" />
+          <property role="3a3KuW" value="29l0aZCmwsa/PORT_IN" />
+        </node>
+        <node concept="3a3KuZ" id="29l0aZCrhkB" role="34Inl6">
+          <property role="TrG5h" value="out1" />
+          <property role="3a3KuW" value="29l0aZCmwsb/PORT_OUT" />
+        </node>
+      </node>
+      <node concept="34eGC3" id="29l0aZCrhkC" role="1pqCzW">
+        <property role="TrG5h" value="Client" />
+      </node>
+      <node concept="34eGC3" id="29l0aZCrhkD" role="1pqCzW">
+        <property role="TrG5h" value="Backend" />
+      </node>
+      <node concept="34eGC1" id="29l0aZCrhkE" role="1pqCzW">
+        <node concept="34Inl7" id="29l0aZCrhkG" role="1pvUZv">
+          <ref role="34Inl2" node="29l0aZCrhkC" resolve="Client" />
+        </node>
+        <node concept="3a3KuQ" id="29l0aZCrhkH" role="1pvUZs">
+          <ref role="3a3KuO" node="29l0aZCrhkA" resolve="in1" />
+        </node>
+        <node concept="TrFLf" id="29l0aZCrhkI" role="S$pns" />
+      </node>
+      <node concept="34eGC1" id="29l0aZCrhkJ" role="1pqCzW">
+        <node concept="3a3KuQ" id="29l0aZCrhkL" role="1pvUZv">
+          <ref role="3a3KuO" node="29l0aZCrhkB" resolve="out1" />
+        </node>
+        <node concept="34Inl7" id="29l0aZCrhkM" role="1pvUZs">
+          <ref role="34Inl2" node="29l0aZCrhkD" resolve="Backend" />
+        </node>
+        <node concept="TrFLf" id="29l0aZCrhkN" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZCrhkO" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZC$PpA">
+    <property role="TrG5h" value="_070_class_diagram_simple" />
+    <node concept="3aaI0T" id="29l0aZC$PpB" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class simple" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZC$PpF" role="1pqCzW" />
+      <node concept="1Yfh69" id="3IM8gFIiTGf" role="1pqCzW">
+        <property role="1Yfh67" value="Class Simple" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZC$PpG" role="1pqCzW">
+        <property role="TrG5h" value="Animal" />
+        <property role="1ZmCJ5" value="red" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZC$PpH" role="1pqCzW">
+        <property role="TrG5h" value="Dog" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZC$PpI" role="1pqCzW">
+        <property role="TrG5h" value="Zookeeper" />
+        <property role="2ywBW2" value="zk" />
+      </node>
+      <node concept="3aaI00" id="29l0aZC$PpJ" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZC$PpL" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZC$PpH" resolve="Dog" />
+        </node>
+        <node concept="3aaI05" id="29l0aZC$PpM" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZC$PpG" resolve="Animal" />
+        </node>
+        <node concept="3aaI0s" id="29l0aZC$PpN" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZC$PpO" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZC$PpR" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZC$PpG" resolve="Animal" />
+        </node>
+        <node concept="3aaI0p" id="29l0aZC$PpS" role="S$pns" />
+        <node concept="3aaI05" id="29l0aZCJ9B8" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZC$PpI" resolve="Zookeeper" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="29l0aZC$PpT" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZCY5qO">
+    <property role="TrG5h" value="_071_class_diagram_relationships" />
+    <node concept="3aaI0T" id="29l0aZCY5qP" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class relationships" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZCY5qT" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZCY5qU" role="1pqCzW">
+        <property role="TrG5h" value="Flyable" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5qV" role="1pqCzW">
+        <property role="TrG5h" value="Duck" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5qW" role="1pqCzW">
+        <property role="TrG5h" value="House" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5qX" role="1pqCzW">
+        <property role="TrG5h" value="Room" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5qY" role="1pqCzW">
+        <property role="TrG5h" value="Team" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5qZ" role="1pqCzW">
+        <property role="TrG5h" value="Player" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5r0" role="1pqCzW">
+        <property role="TrG5h" value="Service" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZCY5r1" role="1pqCzW">
+        <property role="TrG5h" value="Logger" />
+      </node>
+      <node concept="3aaI00" id="29l0aZCY5r2" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZCY5r4" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZCY5qV" resolve="Duck" />
+        </node>
+        <node concept="3aaI05" id="29l0aZCY5r5" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZCY5qU" resolve="Flyable" />
+        </node>
+        <node concept="3aCJOy" id="29l0aZCY5r6" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZCY5r7" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZCY5r9" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZCY5qW" resolve="House" />
+        </node>
+        <node concept="3aaI05" id="29l0aZCY5ra" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZCY5qX" resolve="Room" />
+        </node>
+        <node concept="3aCJO$" id="29l0aZCY5rb" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZCY5rc" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZCY5re" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZCY5qY" resolve="Team" />
+        </node>
+        <node concept="3aaI05" id="29l0aZCY5rf" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZCY5qZ" resolve="Player" />
+        </node>
+        <node concept="3aCJOz" id="29l0aZCY5rg" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZCY5rh" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZCY5rj" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZCY5r0" resolve="Service" />
+        </node>
+        <node concept="3aaI05" id="29l0aZCY5rk" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZCY5r1" resolve="Logger" />
+        </node>
+        <node concept="3aCJOx" id="29l0aZCY5rl" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZCY5rm" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZD39z6">
+    <property role="TrG5h" value="_072_class_diagram_notes" />
+    <node concept="3aaI0T" id="29l0aZD39z7" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class notes" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZD39zb" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZD39zc" role="1pqCzW">
+        <property role="TrG5h" value="Robot" />
+      </node>
+      <node concept="1oxsuH" id="29l0aZD39zd" role="1pqCzW">
+        <property role="1oxspX" value="1I7wo930$vW/right" />
+        <node concept="1Pa9Pv" id="29l0aZD39zf" role="1oxsuN">
+          <node concept="1PaTwC" id="29l0aZD39zg" role="1PaQFQ">
+            <node concept="3oM_SD" id="29l0aZD39zi" role="1PaTwD">
+              <property role="3oM_SC" value="Autonomous" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZD39zj" role="1PaTwD">
+              <property role="3oM_SC" value="navigation" />
+            </node>
+            <node concept="3oM_SD" id="29l0aZD39zk" role="1PaTwD">
+              <property role="3oM_SC" value="unit" />
+            </node>
+          </node>
+        </node>
+        <node concept="3aaI05" id="29l0aZD39zl" role="1oxsAa">
+          <ref role="3aaI03" node="29l0aZD39zc" resolve="Robot" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="29l0aZD39zm" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZDiNQq">
+    <property role="TrG5h" value="_073_class_diagram_multiplicity" />
+    <node concept="3aaI0T" id="29l0aZDiNQr" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class multiplicity" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZDiNQv" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZDiNQw" role="1pqCzW">
+        <property role="TrG5h" value="Order" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZDiNQx" role="1pqCzW">
+        <property role="TrG5h" value="OrderLine" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZDiNQy" role="1pqCzW">
+        <property role="TrG5h" value="Student" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZDiNQz" role="1pqCzW">
+        <property role="TrG5h" value="Course" />
+      </node>
+      <node concept="3aaI00" id="29l0aZDiNQ$" role="1pqCzW">
+        <property role="3bmqwu" value="1" />
+        <property role="3bmqwp" value="many" />
+        <node concept="3aaI05" id="29l0aZDiNQA" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZDiNQw" resolve="Order" />
+        </node>
+        <node concept="3aaI05" id="29l0aZDiNQB" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZDiNQx" resolve="OrderLine" />
+        </node>
+        <node concept="3aCJO$" id="29l0aZDiNQC" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZDiNQD" role="1pqCzW">
+        <property role="3bmqwu" value="0..*" />
+        <property role="3bmqwp" value="1..*" />
+        <property role="1pvUZN" value="enrolls" />
+        <node concept="3aaI05" id="29l0aZDiNQF" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZDiNQy" resolve="Student" />
+        </node>
+        <node concept="3aaI05" id="29l0aZDiNQG" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZDiNQz" resolve="Course" />
+        </node>
+        <node concept="3aaI0p" id="29l0aZDiNQH" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZDiNQI" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZDzEZC">
+    <property role="TrG5h" value="_074_class_diagram_members" />
+    <node concept="3aaI0T" id="29l0aZDzEZD" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class members" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZDzEZH" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZDzEZI" role="1pqCzW">
+        <property role="TrG5h" value="BankAccount" />
+        <node concept="3b7$RS" id="29l0aZF3Xy5" role="3b7Egi">
+          <property role="TrG5h" value="instanceCount" />
+          <property role="3b7$RP" value="int" />
+          <property role="3b7$RO" value="1sW5M_KSDqm/PRIVATE" />
+          <property role="38$N63" value="true" />
+        </node>
+        <node concept="3b7$RS" id="29l0aZDzEZJ" role="3b7Egi">
+          <property role="TrG5h" value="balance" />
+          <property role="3b7$RP" value="double" />
+          <property role="3b7$RO" value="1sW5M_KSDqm/PRIVATE" />
+        </node>
+        <node concept="3b7$RS" id="29l0aZDzEZK" role="3b7Egi">
+          <property role="TrG5h" value="owner" />
+          <property role="3b7$RP" value="String" />
+          <property role="3b7$RO" value="DpojQOR$G4/PUBLIC" />
+        </node>
+        <node concept="3b7$RR" id="29l0aZDzEZL" role="3b7Egi">
+          <property role="TrG5h" value="BankAccount" />
+          <property role="3b7$RK" value="DpojQOR$G4/PUBLIC" />
+        </node>
+        <node concept="3b7$RR" id="29l0aZDzEZM" role="3b7Egi">
+          <property role="TrG5h" value="getBalance" />
+          <property role="3b7$RL" value="double" />
+          <property role="3b7$RK" value="DpojQOR$G4/PUBLIC" />
+        </node>
+        <node concept="3b7$RR" id="29l0aZDzEZN" role="3b7Egi">
+          <property role="TrG5h" value="validate" />
+          <property role="3b7$RL" value="boolean" />
+          <property role="3b7$RK" value="1sW5M_KSDqm/PRIVATE" />
+        </node>
+        <node concept="3b7$RR" id="29l0aZE7zAQ" role="3b7Egi">
+          <property role="TrG5h" value="deposit" />
+          <property role="3b7$RL" value="void" />
+          <node concept="3bwKY0" id="29l0aZE7zAR" role="3bwQE0">
+            <property role="TrG5h" value="amount" />
+            <property role="3bwKYv" value="double" />
+          </node>
+        </node>
+        <node concept="3b7$RR" id="29l0aZE7zKg" role="3b7Egi">
+          <property role="TrG5h" value="transfer" />
+          <property role="3b7$RL" value="boolean" />
+          <node concept="3bwKY0" id="29l0aZE7zKh" role="3bwQE0">
+            <property role="TrG5h" value="amount" />
+            <property role="3bwKYv" value="double" />
+          </node>
+          <node concept="3bwKY0" id="29l0aZE7zKi" role="3bwQE0">
+            <property role="TrG5h" value="to" />
+            <property role="3bwKYv" value="BankAccount" />
+          </node>
+        </node>
+      </node>
+      <node concept="1pqCE1" id="29l0aZDzEZO" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZELy00">
+    <property role="TrG5h" value="_075_class_diagram_kinds" />
+    <node concept="3aaI0T" id="29l0aZELy01" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class kinds" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZELy05" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZELy06" role="1pqCzW">
+        <property role="TrG5h" value="Shape" />
+        <property role="38aqW1" value="2S3nKTOTbmi/INTERFACE" />
+        <node concept="3b7$RR" id="29l0aZELy07" role="3b7Egi">
+          <property role="TrG5h" value="draw" />
+          <property role="3b7$RL" value="void" />
+        </node>
+      </node>
+      <node concept="3aaI0f" id="29l0aZELy08" role="1pqCzW">
+        <property role="TrG5h" value="AbstractAnimal" />
+        <property role="38aqW1" value="2dObjI3lQDp/ABSTRACT_CLASS" />
+        <node concept="3b7$RS" id="29l0aZELy09" role="3b7Egi">
+          <property role="TrG5h" value="name" />
+          <property role="3b7$RP" value="String" />
+          <property role="3b7$RO" value="4y40N5FHI4U/PROTECTED" />
+        </node>
+        <node concept="3b7$RR" id="29l0aZELy0a" role="3b7Egi">
+          <property role="TrG5h" value="makeSound" />
+          <property role="3b7$RL" value="void" />
+          <property role="38$N6r" value="true" />
+        </node>
+      </node>
+      <node concept="3aaI0f" id="29l0aZELy0b" role="1pqCzW">
+        <property role="TrG5h" value="Direction" />
+        <property role="38aqW1" value="43wZHvidjT5/ENUM" />
+        <node concept="38aqWq" id="29l0aZELy0c" role="3b7Egi">
+          <property role="TrG5h" value="NORTH" />
+        </node>
+        <node concept="38aqWq" id="29l0aZELy0d" role="3b7Egi">
+          <property role="TrG5h" value="SOUTH" />
+        </node>
+        <node concept="38aqWq" id="29l0aZELy0e" role="3b7Egi">
+          <property role="TrG5h" value="EAST" />
+        </node>
+        <node concept="38aqWq" id="29l0aZELy0f" role="3b7Egi">
+          <property role="TrG5h" value="WEST" />
+        </node>
+      </node>
+      <node concept="3aaI00" id="29l0aZELy0g" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZELy0i" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZELy08" resolve="AbstractAnimal" />
+        </node>
+        <node concept="3aaI05" id="29l0aZELy0j" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZELy06" resolve="Shape" />
+        </node>
+        <node concept="3aCJOy" id="29l0aZELy0k" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZELy0l" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZFmwCq">
+    <property role="TrG5h" value="_076_class_diagram_packages" />
+    <node concept="3aaI0T" id="29l0aZFmwCr" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class packages" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZFmwCv" role="1pqCzW" />
+      <node concept="395uRl" id="29l0aZFmwCw" role="1pqCzW">
+        <property role="TrG5h" value="com.example.model" />
+        <node concept="3aaI0f" id="29l0aZFmwCx" role="395uRj">
+          <property role="TrG5h" value="Order" />
+        </node>
+        <node concept="3aaI0f" id="29l0aZFmwCy" role="395uRj">
+          <property role="TrG5h" value="Customer" />
+        </node>
+      </node>
+      <node concept="395uRl" id="29l0aZFmwCz" role="1pqCzW">
+        <property role="TrG5h" value="com.example.service" />
+        <property role="395uRk" value="7TiU5$Oy_en/NAMESPACE" />
+        <node concept="3aaI0f" id="29l0aZFmwC$" role="395uRj">
+          <property role="TrG5h" value="OrderService" />
+        </node>
+      </node>
+      <node concept="395uRl" id="29l0aZFyTfp" role="1pqCzW">
+        <property role="TrG5h" value="dd" />
+        <property role="395uRk" value="7TiU5$Oy_en/NAMESPACE" />
+      </node>
+      <node concept="3aaI00" id="29l0aZFmwC_" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZFmwCB" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZFmwC$" resolve="OrderService" />
+        </node>
+        <node concept="3aaI05" id="29l0aZFmwCC" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZFmwCx" resolve="Order" />
+        </node>
+        <node concept="3aCJOx" id="29l0aZFmwCD" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZFmwCE" role="1pqCzW">
+        <node concept="3aaI05" id="29l0aZFmwCG" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZFmwCx" resolve="Order" />
+        </node>
+        <node concept="3aaI05" id="29l0aZFmwCH" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZFmwCy" resolve="Customer" />
+        </node>
+        <node concept="3aaI0p" id="29l0aZFmwCI" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZFmwCJ" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZFWc9X">
+    <property role="TrG5h" value="_077_class_diagram_roles" />
+    <node concept="3aaI0T" id="29l0aZFWc9Y" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class roles" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZFWca2" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZFWca3" role="1pqCzW">
+        <property role="TrG5h" value="User" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZFWca4" role="1pqCzW">
+        <property role="TrG5h" value="Item" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZFWca5" role="1pqCzW">
+        <property role="TrG5h" value="Order" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZFWca6" role="1pqCzW">
+        <property role="TrG5h" value="Customer" />
+      </node>
+      <node concept="3aaI00" id="29l0aZFWca7" role="1pqCzW">
+        <property role="39RDdN" value="owner" />
+        <property role="39RDdf" value="items" />
+        <node concept="3aaI05" id="29l0aZFWca9" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZFWca3" resolve="User" />
+        </node>
+        <node concept="3aaI05" id="29l0aZFWcaa" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZFWca4" resolve="Item" />
+        </node>
+        <node concept="3aaI0p" id="29l0aZFWcab" role="S$pns" />
+      </node>
+      <node concept="3aaI00" id="29l0aZFWcac" role="1pqCzW">
+        <property role="39RDdN" value="placedBy" />
+        <property role="3bmqwu" value="1" />
+        <property role="39RDdf" value="orders" />
+        <property role="3bmqwp" value="0..n" />
+        <node concept="3aaI05" id="29l0aZFWcae" role="1pvUZv">
+          <ref role="3aaI03" node="29l0aZFWca5" resolve="Order" />
+        </node>
+        <node concept="3aaI05" id="29l0aZFWcaf" role="1pvUZs">
+          <ref role="3aaI03" node="29l0aZFWca6" resolve="Customer" />
+        </node>
+        <node concept="3aaI0p" id="29l0aZFWcag" role="S$pns" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZFWcah" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZGRzYn">
+    <property role="TrG5h" value="_078_class_diagram_styling" />
+    <node concept="3aaI0T" id="29l0aZGRzYo" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class styling" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZGRzYs" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZGRzYt" role="1pqCzW">
+        <property role="TrG5h" value="StyledFull" />
+        <property role="1ZmCJ5" value="palegreen" />
+        <property role="3eREH6" value="red" />
+        <property role="3eREH2" value="5b$kKZrOuB0/BOLD" />
+        <property role="3eREHu" value="blue" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZGRzYu" role="1pqCzW">
+        <property role="TrG5h" value="StyledLineOnly" />
+        <property role="3eREH6" value="orange" />
+        <property role="3eREH2" value="3cCFxNm_45X/DASHED" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZGRzYv" role="1pqCzW">
+        <property role="TrG5h" value="Plain" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZGRzYw" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZI0QSm">
+    <property role="TrG5h" value="_079_class_diagram_stereotypes" />
+    <node concept="3aaI0T" id="29l0aZI0QSn" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="class stereotypes" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZI0QSr" role="1pqCzW" />
+      <node concept="3aaI0f" id="29l0aZI0QSs" role="1pqCzW">
+        <property role="TrG5h" value="Order" />
+        <property role="2ywBW2" value="O" />
+        <property role="3fZYTJ" value="Entity" />
+        <property role="1ZmCJ5" value="palegreen" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZI0QSt" role="1pqCzW">
+        <property role="TrG5h" value="Runnable" />
+        <property role="38aqW1" value="2S3nKTOTbmi/INTERFACE" />
+        <property role="3fZYTJ" value="Interface" />
+      </node>
+      <node concept="3aaI0f" id="29l0aZI0QSu" role="1pqCzW">
+        <property role="TrG5h" value="Plain" />
+      </node>
+      <node concept="1pqCE1" id="29l0aZI0QSv" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="29l0aZIBaKC">
+    <property role="TrG5h" value="_080_timing_diagram_basic" />
+    <node concept="3ctaB5" id="29l0aZIBaKD" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing basic" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="29l0aZIBaKH" role="1pqCzW" />
+      <node concept="1Yfh69" id="3IM8gFIiTGg" role="1pqCzW">
+        <property role="1Yfh67" value="Timing Basic" />
+      </node>
+      <node concept="3ctaB4" id="29l0aZIBaKI" role="1pqCzW">
+        <property role="TrG5h" value="Foo" />
+        <property role="2ywBW2" value="A" />
+      </node>
+      <node concept="3ctaB4" id="29l0aZIBaKJ" role="1pqCzW">
+        <property role="TrG5h" value="Bar" />
+        <property role="2ywBW2" value="B" />
+        <property role="3ctaBv" value="2UqZwjNgH0Z/CONCISE" />
+      </node>
+      <node concept="3ctaB3" id="29l0aZIBaKL" role="1pqCzW">
+        <property role="3ctaBr" value="Idle" />
+        <ref role="3ctaBq" node="29l0aZIBaKI" resolve="Foo" />
+      </node>
+      <node concept="3ctaB3" id="29l0aZIBaKM" role="1pqCzW">
+        <property role="3ctaBr" value="Off" />
+        <ref role="3ctaBq" node="29l0aZIBaKJ" resolve="Bar" />
+      </node>
+      <node concept="3ctaB2" id="29l0aZIBaKN" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="29l0aZIBaKO" role="3ctaBn">
+          <property role="3ctaBr" value="Running" />
+          <ref role="3ctaBq" node="29l0aZIBaKI" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="29l0aZIBaKP" role="1pqCzW">
+        <property role="3ctaBo" value="200" />
+        <node concept="3ctaB3" id="29l0aZIBaKQ" role="3ctaBn">
+          <property role="3ctaBr" value="Idle" />
+          <ref role="3ctaBq" node="29l0aZIBaKI" resolve="Foo" />
+        </node>
+        <node concept="3ctaB3" id="29l0aZIBaKR" role="3ctaBn">
+          <property role="3ctaBr" value="On" />
+          <ref role="3ctaBq" node="29l0aZIBaKJ" resolve="Bar" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="29l0aZIBaKK" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="3IM8gFH29Ie">
+    <property role="TrG5h" value="_081_timing_diagram_notes" />
+    <node concept="3ctaB5" id="3IM8gFH29If" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing notes" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="3IM8gFH29Ij" role="1pqCzW" />
+      <node concept="3ctaB4" id="3IM8gFH29Ik" role="1pqCzW">
+        <property role="TrG5h" value="Bar" />
+        <property role="2ywBW2" value="B" />
+        <property role="3ctaBv" value="2UqZwjNgH0Z/CONCISE" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFH29Il" role="1pqCzW">
+        <property role="3ctaBr" value="Off" />
+        <ref role="3ctaBq" node="3IM8gFH29Ik" resolve="Bar" />
+      </node>
+      <node concept="1oxsuH" id="3IM8gFH29Im" role="1pqCzW">
+        <node concept="1Pa9Pv" id="3IM8gFH29Io" role="1oxsuN">
+          <node concept="1PaTwC" id="3IM8gFH29Ip" role="1PaQFQ">
+            <node concept="3oM_SD" id="3IM8gFH29Ir" role="1PaTwD">
+              <property role="3oM_SC" value="Bar" />
+            </node>
+            <node concept="3oM_SD" id="3IM8gFH29Is" role="1PaTwD">
+              <property role="3oM_SC" value="starts" />
+            </node>
+            <node concept="3oM_SD" id="3IM8gFH29It" role="1PaTwD">
+              <property role="3oM_SC" value="off" />
+            </node>
+          </node>
+        </node>
+        <node concept="3nmPY9" id="3IM8gFH29Iu" role="1oxsAa">
+          <ref role="3nmPYf" node="3IM8gFH29Ik" resolve="Bar" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="3IM8gFH29Iv" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="3IM8gFH29Iw" role="3ctaBn">
+          <property role="3ctaBr" value="On" />
+          <ref role="3ctaBq" node="3IM8gFH29Ik" resolve="Bar" />
+        </node>
+      </node>
+      <node concept="1oxsuH" id="3IM8gFH29Ix" role="1pqCzW">
+        <property role="1oxspX" value="1I7wo930$vX/bottom" />
+        <node concept="1Pa9Pv" id="3IM8gFH29Iz" role="1oxsuN">
+          <node concept="1PaTwC" id="3IM8gFH29I$" role="1PaQFQ">
+            <node concept="3oM_SD" id="3IM8gFH29IA" role="1PaTwD">
+              <property role="3oM_SC" value="Bar" />
+            </node>
+            <node concept="3oM_SD" id="3IM8gFH29IB" role="1PaTwD">
+              <property role="3oM_SC" value="switches" />
+            </node>
+            <node concept="3oM_SD" id="3IM8gFH29IC" role="1PaTwD">
+              <property role="3oM_SC" value="on" />
+            </node>
+          </node>
+          <node concept="1PaTwC" id="3IM8gFH29ID" role="1PaQFQ">
+            <node concept="3oM_SD" id="3IM8gFH29IF" role="1PaTwD">
+              <property role="3oM_SC" value="at" />
+            </node>
+            <node concept="3oM_SD" id="3IM8gFH29IG" role="1PaTwD">
+              <property role="3oM_SC" value="t=100" />
+            </node>
+          </node>
+        </node>
+        <node concept="3nmPY9" id="3IM8gFH29IH" role="1oxsAa">
+          <ref role="3nmPYf" node="3IM8gFH29Ik" resolve="Bar" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="3IM8gFH29II" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="3IM8gFH2aK_">
+    <property role="TrG5h" value="_082_timing_diagram_undefined_state" />
+    <node concept="3ctaB5" id="3IM8gFH2aKA" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing undefined state" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="3IM8gFH2aKE" role="1pqCzW" />
+      <node concept="3ctaB4" id="3IM8gFH2aKF" role="1pqCzW">
+        <property role="TrG5h" value="Foo" />
+        <property role="2ywBW2" value="A" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFH2aKG" role="1pqCzW">
+        <property role="3ctaBr" value="{-}" />
+        <ref role="3ctaBq" node="3IM8gFH2aKF" resolve="Foo" />
+      </node>
+      <node concept="3ctaB2" id="3IM8gFH2aKH" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="3IM8gFH2aKI" role="3ctaBn">
+          <property role="3ctaBr" value="Running" />
+          <ref role="3ctaBq" node="3IM8gFH2aKF" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="3IM8gFH2aKJ" role="1pqCzW">
+        <property role="3ctaBo" value="200" />
+        <node concept="3ctaB3" id="3IM8gFH2aKK" role="3ctaBn">
+          <property role="3ctaBr" value="{-}" />
+          <ref role="3ctaBq" node="3IM8gFH2aKF" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="3IM8gFH2aKL" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="3IM8gFHa9Mz">
+    <property role="TrG5h" value="_083_timing_diagram_intervals" />
+    <node concept="3ctaB5" id="3IM8gFHa9M$" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing intervals" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="3IM8gFHa9MC" role="1pqCzW" />
+      <node concept="3ctaB4" id="3IM8gFHa9MD" role="1pqCzW">
+        <property role="TrG5h" value="Bar" />
+        <property role="2ywBW2" value="B" />
+        <property role="3ctaBv" value="2UqZwjNgH0Z/CONCISE" />
+      </node>
+      <node concept="c$xRF" id="3IM8gFHi81f" role="1pqCzW" />
+      <node concept="3ctaB3" id="3IM8gFHa9ME" role="1pqCzW">
+        <property role="3ctaBr" value="Off" />
+        <ref role="3ctaBq" node="3IM8gFHa9MD" resolve="Bar" />
+      </node>
+      <node concept="c$xRF" id="3IM8gFHi81c" role="1pqCzW" />
+      <node concept="3ctaB2" id="3IM8gFHa9MF" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="3IM8gFHa9MG" role="3ctaBn">
+          <property role="3ctaBr" value="On" />
+          <ref role="3ctaBq" node="3IM8gFHa9MD" resolve="Bar" />
+        </node>
+      </node>
+      <node concept="c$xRF" id="3IM8gFHi81d" role="1pqCzW" />
+      <node concept="3ctaB2" id="3IM8gFHa9MH" role="1pqCzW">
+        <property role="3ctaBo" value="200" />
+        <node concept="3ctaB3" id="3IM8gFHa9MI" role="3ctaBn">
+          <property role="3ctaBr" value="Off" />
+          <ref role="3ctaBq" node="3IM8gFHa9MD" resolve="Bar" />
+        </node>
+      </node>
+      <node concept="c$xRF" id="3IM8gFHi81h" role="1pqCzW" />
+      <node concept="3mID9F" id="3IM8gFHa9MJ" role="1pqCzW">
+        <property role="3mID9I" value="100" />
+        <property role="3mID9J" value="200" />
+        <property role="3mID9G" value="on-time" />
+        <ref role="3mID9D" node="3IM8gFHa9MD" resolve="Bar" />
+      </node>
+      <node concept="1pqCE1" id="3IM8gFHa9MK" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="3IM8gFHy3C$">
+    <property role="TrG5h" value="_084_timing_diagram_binary" />
+    <node concept="3ctaB5" id="3IM8gFHy47x" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing binary" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="3IM8gFHy47_" role="1pqCzW" />
+      <node concept="3ctaB4" id="3IM8gFHy47A" role="1pqCzW">
+        <property role="TrG5h" value="Clock" />
+        <property role="2ywBW2" value="CLK" />
+        <property role="3ctaBv" value="3IM8gFHq5RG/BINARY" />
+      </node>
+      <node concept="3ctaB4" id="3IM8gFHy47B" role="1pqCzW">
+        <property role="TrG5h" value="Data" />
+        <property role="2ywBW2" value="D" />
+        <property role="3ctaBv" value="2UqZwjNgH0Z/CONCISE" />
+      </node>
+      <node concept="3ctaB4" id="3IM8gFHy47C" role="1pqCzW">
+        <property role="TrG5h" value="CPU" />
+        <property role="2ywBW2" value="C" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFHy47D" role="1pqCzW">
+        <property role="3ctaBr" value="0" />
+        <ref role="3ctaBq" node="3IM8gFHy47A" resolve="Clock" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFHy47E" role="1pqCzW">
+        <property role="3ctaBr" value="Idle" />
+        <ref role="3ctaBq" node="3IM8gFHy47B" resolve="Data" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFHy47F" role="1pqCzW">
+        <property role="3ctaBr" value="Ready" />
+        <ref role="3ctaBq" node="3IM8gFHy47C" resolve="CPU" />
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHy47G" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="3IM8gFHy47H" role="3ctaBn">
+          <property role="3ctaBr" value="1" />
+          <ref role="3ctaBq" node="3IM8gFHy47A" resolve="Clock" />
+        </node>
+        <node concept="3ctaB3" id="3IM8gFHy47I" role="3ctaBn">
+          <property role="3ctaBr" value="Active" />
+          <ref role="3ctaBq" node="3IM8gFHy47B" resolve="Data" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHy47J" role="1pqCzW">
+        <property role="3ctaBo" value="200" />
+        <node concept="3ctaB3" id="3IM8gFHy47K" role="3ctaBn">
+          <property role="3ctaBr" value="0" />
+          <ref role="3ctaBq" node="3IM8gFHy47A" resolve="Clock" />
+        </node>
+        <node concept="3ctaB3" id="3IM8gFHy47L" role="3ctaBn">
+          <property role="3ctaBr" value="Idle" />
+          <ref role="3ctaBq" node="3IM8gFHy47B" resolve="Data" />
+        </node>
+        <node concept="3ctaB3" id="3IM8gFHy47M" role="3ctaBn">
+          <property role="3ctaBr" value="Busy" />
+          <ref role="3ctaBq" node="3IM8gFHy47C" resolve="CPU" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="3IM8gFHy47N" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="3IM8gFHE3u2">
+    <property role="TrG5h" value="_085_timing_diagram_relative_time" />
+    <node concept="3ctaB5" id="3IM8gFHE3u3" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing relative time" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="3IM8gFHE3u7" role="1pqCzW" />
+      <node concept="3ctaB4" id="3IM8gFHE3u8" role="1pqCzW">
+        <property role="TrG5h" value="Foo" />
+        <property role="2ywBW2" value="A" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFHE3u9" role="1pqCzW">
+        <property role="3ctaBr" value="Idle" />
+        <ref role="3ctaBq" node="3IM8gFHE3u8" resolve="Foo" />
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHE3ua" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="3IM8gFHE3ub" role="3ctaBn">
+          <property role="3ctaBr" value="Running" />
+          <ref role="3ctaBq" node="3IM8gFHE3u8" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHE3uc" role="1pqCzW">
+        <property role="3ctaBo" value="50" />
+        <property role="3meB7v" value="true" />
+        <node concept="3ctaB3" id="3IM8gFHE3ud" role="3ctaBn">
+          <property role="3ctaBr" value="Idle" />
+          <ref role="3ctaBq" node="3IM8gFHE3u8" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHE3V2" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <property role="3meB7v" value="true" />
+        <node concept="3ctaB3" id="3IM8gFHE3V5" role="3ctaBn">
+          <property role="3ctaBr" value="Running" />
+          <ref role="3ctaBq" node="3IM8gFHE3u8" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="1pqCE1" id="3IM8gFHE3ue" role="1pqCzW" />
+    </node>
+  </node>
+  <node concept="1pqNnw" id="3IM8gFHTTkj">
+    <property role="TrG5h" value="_086_timing_diagram_scale_and_highlight" />
+    <node concept="3ctaB5" id="3IM8gFHTTkk" role="1pqCw0">
+      <property role="145Srp" value="100" />
+      <property role="TrG5h" value="timing scale and highlight" />
+      <property role="1ptBXO" value="1I7wo92WvVO/TEXT_AND_DIAGRAM" />
+      <node concept="1pqCwu" id="3IM8gFHTTko" role="1pqCzW" />
+      <node concept="3mt1om" id="3IM8gFHTTkp" role="1pqCzW">
+        <property role="3mt1ok" value="100" />
+        <property role="3mt1ol" value="60" />
+      </node>
+      <node concept="3ctaB4" id="3IM8gFHTTkq" role="1pqCzW">
+        <property role="TrG5h" value="Foo" />
+        <property role="2ywBW2" value="A" />
+      </node>
+      <node concept="3ctaB3" id="3IM8gFHTTkr" role="1pqCzW">
+        <property role="3ctaBr" value="Idle" />
+        <ref role="3ctaBq" node="3IM8gFHTTkq" resolve="Foo" />
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHTTks" role="1pqCzW">
+        <property role="3ctaBo" value="100" />
+        <node concept="3ctaB3" id="3IM8gFHTTkt" role="3ctaBn">
+          <property role="3ctaBr" value="Running" />
+          <ref role="3ctaBq" node="3IM8gFHTTkq" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="3ctaB2" id="3IM8gFHTTku" role="1pqCzW">
+        <property role="3ctaBo" value="200" />
+        <node concept="3ctaB3" id="3IM8gFHTTkv" role="3ctaBn">
+          <property role="3ctaBr" value="Idle" />
+          <ref role="3ctaBq" node="3IM8gFHTTkq" resolve="Foo" />
+        </node>
+      </node>
+      <node concept="3mt1oC" id="3IM8gFHTTkw" role="1pqCzW">
+        <property role="3mt1oI" value="100" />
+        <property role="3mt1oJ" value="200" />
+        <property role="3mt1oG" value="Gold" />
+        <property role="3mt1oH" value="Description" />
+      </node>
+      <node concept="1pqCE1" id="3IM8gFHTTkx" role="1pqCzW" />
     </node>
   </node>
 </model>

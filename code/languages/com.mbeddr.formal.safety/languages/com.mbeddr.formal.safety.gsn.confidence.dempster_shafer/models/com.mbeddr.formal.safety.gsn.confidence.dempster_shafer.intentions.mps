@@ -16,6 +16,9 @@
     <import index="6oah" ref="r:c3ace323-0a57-4f8d-b471-fad629604601(com.mbeddr.formal.safety.gsn.confidence.dempster_shafer.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
         <child id="1082485599096" name="statements" index="9aQI4" />
@@ -216,7 +219,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
         <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
       </concept>
@@ -346,7 +348,7 @@
                             <node concept="37vLTw" id="1HYO_kn5R52" role="2Oq$k0">
                               <ref role="3cqZAo" node="2hED36FpCxj" resolve="it" />
                             </node>
-                            <node concept="2qgKlT" id="1HYO_kn5TaZ" role="2OqNvi">
+                            <node concept="3zqWPK" id="4oGkhCURGKI" role="2OqNvi">
                               <ref role="37wK5l" to="89jy:71GfFl7iCHN" resolve="getInboundConnections" />
                             </node>
                           </node>
@@ -851,7 +853,7 @@
               <node concept="37vLTw" id="7E7BxAj_Swn" role="2Oq$k0">
                 <ref role="3cqZAo" node="7E7BxAj_SsZ" resolve="g" />
               </node>
-              <node concept="2qgKlT" id="7E7BxAj_Swo" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGKK" role="2OqNvi">
                 <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
               </node>
             </node>
@@ -903,7 +905,7 @@
                   <node concept="37vLTw" id="7E7BxAjAjcJ" role="2Oq$k0">
                     <ref role="3cqZAo" node="7E7BxAj_Swu" resolve="child" />
                   </node>
-                  <node concept="2qgKlT" id="7E7BxAjB7XQ" role="2OqNvi">
+                  <node concept="3zqWPK" id="4oGkhCURGKM" role="2OqNvi">
                     <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
                   </node>
                 </node>
@@ -934,7 +936,7 @@
                       <node concept="37vLTw" id="333XAMOAAbp" role="2Oq$k0">
                         <ref role="3cqZAo" node="7E7BxAj_Swu" resolve="child" />
                       </node>
-                      <node concept="2qgKlT" id="333XAMOABXT" role="2OqNvi">
+                      <node concept="3zqWPK" id="4oGkhCURGKO" role="2OqNvi">
                         <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
                       </node>
                     </node>
@@ -1284,7 +1286,7 @@
               <node concept="37vLTw" id="XPkLuuoEKQ" role="2Oq$k0">
                 <ref role="3cqZAo" node="XPkLuumS3d" resolve="gseb" />
               </node>
-              <node concept="2qgKlT" id="XPkLuuoEKR" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGKQ" role="2OqNvi">
                 <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
               </node>
             </node>
@@ -1482,7 +1484,7 @@
               <node concept="37vLTw" id="XPkLuunnMY" role="2Oq$k0">
                 <ref role="3cqZAo" node="XPkLuunnhv" resolve="gseb" />
               </node>
-              <node concept="2qgKlT" id="XPkLuunoom" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGKS" role="2OqNvi">
                 <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
               </node>
             </node>
@@ -2397,7 +2399,7 @@
               <node concept="37vLTw" id="XPkLuupasp" role="2Oq$k0">
                 <ref role="3cqZAo" node="XPkLuupat4" resolve="gseb" />
               </node>
-              <node concept="2qgKlT" id="XPkLuupasq" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGKU" role="2OqNvi">
                 <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
               </node>
             </node>
@@ -2602,7 +2604,7 @@
               <node concept="37vLTw" id="XPkLuupatd" role="2Oq$k0">
                 <ref role="3cqZAo" node="XPkLuupatT" resolve="gseb" />
               </node>
-              <node concept="2qgKlT" id="XPkLuupate" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGKW" role="2OqNvi">
                 <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
               </node>
             </node>
@@ -3555,7 +3557,7 @@
                 <node concept="37vLTw" id="2vP6RvEY4R2" role="2Oq$k0">
                   <ref role="3cqZAo" node="2vP6RvEY4R5" resolve="gseb" />
                 </node>
-                <node concept="2qgKlT" id="2vP6RvEY4R3" role="2OqNvi">
+                <node concept="3zqWPK" id="4oGkhCURGKY" role="2OqNvi">
                   <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
                 </node>
               </node>
@@ -3624,7 +3626,7 @@
               <node concept="37vLTw" id="XPkLuuqUDG" role="2Oq$k0">
                 <ref role="3cqZAo" node="XPkLuuqUE_" resolve="gseb" />
               </node>
-              <node concept="2qgKlT" id="XPkLuuqUDH" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGL0" role="2OqNvi">
                 <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
               </node>
             </node>
@@ -3932,7 +3934,7 @@
               <node concept="37vLTw" id="XPkLuuqUFZ" role="2Oq$k0">
                 <ref role="3cqZAo" node="XPkLuuqUGE" resolve="gseb" />
               </node>
-              <node concept="2qgKlT" id="XPkLuuqUG0" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGL2" role="2OqNvi">
                 <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
               </node>
             </node>
@@ -4889,7 +4891,7 @@
               <node concept="37vLTw" id="XPkLuuqUGY" role="2Oq$k0">
                 <ref role="3cqZAo" node="XPkLuuqUHF" resolve="gseb" />
               </node>
-              <node concept="2qgKlT" id="XPkLuuqUGZ" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGL4" role="2OqNvi">
                 <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
               </node>
             </node>
@@ -5204,7 +5206,7 @@
               <node concept="37vLTw" id="XPkLuuqUHO" role="2Oq$k0">
                 <ref role="3cqZAo" node="XPkLuuqUIv" resolve="gseb" />
               </node>
-              <node concept="2qgKlT" id="XPkLuuqUHP" role="2OqNvi">
+              <node concept="3zqWPK" id="4oGkhCURGL6" role="2OqNvi">
                 <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
               </node>
             </node>
@@ -6197,7 +6199,7 @@
                 <node concept="37vLTw" id="XPkLuuqUJ4" role="2Oq$k0">
                   <ref role="3cqZAo" node="XPkLuuqUJ7" resolve="gseb" />
                 </node>
-                <node concept="2qgKlT" id="XPkLuuqUJ5" role="2OqNvi">
+                <node concept="3zqWPK" id="4oGkhCURGL8" role="2OqNvi">
                   <ref role="37wK5l" to="89jy:71GfFl7iFX5" resolve="getOutboundConnections" />
                 </node>
               </node>

@@ -21,6 +21,9 @@
     <import index="tbr6" ref="r:6a005c26-87c0-43c4-8cf3-49ffba1099df(de.slisson.mps.richtext.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
@@ -224,7 +227,6 @@
       <concept id="4900677560559655527" name="de.itemis.mps.editor.bool.structure.CellModel_Checkbox" flags="sg" stub="416014060004381438" index="27S6Sx" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171999116870" name="jetbrains.mps.lang.smodel.structure.Node_IsNullOperation" flags="nn" index="3w_OXm" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -547,7 +549,7 @@
                           <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
                         </node>
                       </node>
-                      <node concept="2qgKlT" id="7PfkaM4Hcdn" role="2OqNvi">
+                      <node concept="3zqWPK" id="4oGkhCURGLB" role="2OqNvi">
                         <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
                       </node>
                     </node>
@@ -560,7 +562,7 @@
                             <ref role="3Tt5mk" to="py52:3GRi4m$qYoV" resolve="text" />
                           </node>
                         </node>
-                        <node concept="2qgKlT" id="7PfkaM4Hcdt" role="2OqNvi">
+                        <node concept="3zqWPK" id="4oGkhCURGLD" role="2OqNvi">
                           <ref role="37wK5l" to="tbr6:3Q5enzfMT4l" resolve="asTextString" />
                         </node>
                       </node>

@@ -24,6 +24,7 @@
     <import index="4nm9" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.project(MPS.IDEA/)" />
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
+    <import index="jtsr" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.project(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -558,7 +559,7 @@
                           <ref role="3cqZAo" node="1QZ5YZoamFr" resolve="it" />
                         </node>
                         <node concept="liA8E" id="y1G8y66xb6" role="2OqNvi">
-                          <ref role="37wK5l" to="z1c3:~IProject.getProjectModules()" resolve="getProjectModules" />
+                          <ref role="37wK5l" to="jtsr:~Project.getProjectModules()" resolve="getProjectModules" />
                         </node>
                       </node>
                       <node concept="liA8E" id="y1G8y66xb7" role="2OqNvi">

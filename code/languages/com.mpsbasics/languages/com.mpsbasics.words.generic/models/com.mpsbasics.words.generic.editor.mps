@@ -16,6 +16,9 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
@@ -152,7 +155,6 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
@@ -219,9 +221,9 @@
             <node concept="3clFbF" id="56pBK14w_fO" role="3cqZAp">
               <node concept="2OqwBi" id="56pBK14w_sV" role="3clFbG">
                 <node concept="7Obwk" id="56pBK14y3p8" role="2Oq$k0" />
-                <node concept="2qgKlT" id="56pBK14w_J4" role="2OqNvi">
+                <node concept="3zqWPK" id="5WfAYZdQLAy" role="2OqNvi">
                   <ref role="37wK5l" to="i7xf:56pBK14wzNn" resolve="getConcepts" />
-                  <node concept="1rpKSd" id="56pBK14y3pe" role="37wK5m" />
+                  <node concept="1rpKSd" id="5WfAYZdQLA$" role="37wK5m" />
                 </node>
               </node>
             </node>
