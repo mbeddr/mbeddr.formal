@@ -14,37 +14,7 @@
       <sourceRoot path="${module}/lib/org.eclipse.elk.graph.jar" />
     </modelRoot>
     <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/org.eclipse.elk.alg.common.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
       <sourceRoot path="${module}/lib/org.eclipse.elk.alg.layered.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/org.eclipse.emf.common.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/org.eclipse.emf.ecore.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/org.eclipse.emf.ecore.xmi.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/guava.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/failureaccess.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/listenablefuture.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/jspecify.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/error_prone_annotations.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/j2objc-annotations.jar" />
     </modelRoot>
   </models>
   <facets>
