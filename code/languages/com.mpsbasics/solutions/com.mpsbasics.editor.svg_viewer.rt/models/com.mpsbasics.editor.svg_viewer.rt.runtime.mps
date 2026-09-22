@@ -64,6 +64,9 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
+      <concept id="5279705229678483897" name="jetbrains.mps.baseLanguage.structure.FloatingPointFloatConstant" flags="nn" index="2$xPTn">
+        <property id="5279705229678483899" name="value" index="2$xPTl" />
+      </concept>
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
@@ -18649,6 +18652,159 @@
             <node concept="liA8E" id="7IsGrgKWM4o" role="2OqNvi">
               <ref role="37wK5l" to="z60i:~Component.setFocusable(boolean)" resolve="setFocusable" />
               <node concept="3clFbT" id="7IsGrgKWM4p" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6GPJ2rrwYWt" role="3cqZAp">
+          <node concept="3cpWsn" id="6GPJ2rrwYWs" role="3cpWs9">
+            <property role="TrG5h" value="compactFont" />
+            <node concept="3uibUv" id="6GPJ2rrwYWu" role="1tU5fm">
+              <ref role="3uigEE" to="z60i:~Font" resolve="java.awt.Font" />
+            </node>
+            <node concept="2OqwBi" id="6GPJ2rrwZ8J" role="33vP2m">
+              <node concept="2OqwBi" id="6GPJ2rrwZ0n" role="2Oq$k0">
+                <node concept="37vLTw" id="6GPJ2rrwYXb" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7IsGrgKMU1c" resolve="zoomOutButton" />
+                </node>
+                <node concept="liA8E" id="6GPJ2rrwZ0o" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Component.getFont()" resolve="getFont" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6GPJ2rrwZ8K" role="2OqNvi">
+                <ref role="37wK5l" to="z60i:~Font.deriveFont(float)" resolve="deriveFont" />
+                <node concept="2$xPTn" id="6GPJ2rrwZ8L" role="37wK5m">
+                  <property role="2$xPTl" value="10.0f" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rrwYWy" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rrwZ22" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rrwYXe" role="2Oq$k0">
+              <ref role="3cqZAo" node="7IsGrgKMU1c" resolve="zoomOutButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rrwZ23" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
+              <node concept="37vLTw" id="6GPJ2rrwZ24" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrwYWs" resolve="compactFont" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rrwYW_" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rrwZ3I" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rrwYXi" role="2Oq$k0">
+              <ref role="3cqZAo" node="7IsGrgKMU1i" resolve="zoomResetButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rrwZ3J" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
+              <node concept="37vLTw" id="6GPJ2rrwZ3K" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrwYWs" resolve="compactFont" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rrwYWC" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rrwZ5q" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rrwYXm" role="2Oq$k0">
+              <ref role="3cqZAo" node="7IsGrgKMU1o" resolve="zoomInButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rrwZ5r" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
+              <node concept="37vLTw" id="6GPJ2rrwZ5s" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrwYWs" resolve="compactFont" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rrwYWF" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rrwZ76" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rrwYXq" role="2Oq$k0">
+              <ref role="3cqZAo" node="7IsGrgKMU1u" resolve="maximizeButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rrwZ77" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
+              <node concept="37vLTw" id="6GPJ2rrwZ78" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrwYWs" resolve="compactFont" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6GPJ2rrwYWJ" role="3cqZAp">
+          <node concept="3cpWsn" id="6GPJ2rrwYWI" role="3cpWs9">
+            <property role="TrG5h" value="compactMargin" />
+            <node concept="3uibUv" id="6GPJ2rrwYWK" role="1tU5fm">
+              <ref role="3uigEE" to="z60i:~Insets" resolve="java.awt.Insets" />
+            </node>
+            <node concept="2ShNRf" id="6GPJ2rrwYXt" role="33vP2m">
+              <node concept="1pGfFk" id="6GPJ2rrwYXD" role="2ShVmc">
+                <ref role="37wK5l" to="z60i:~Insets.&lt;init&gt;(int,int,int,int)" resolve="Insets" />
+                <node concept="3cmrfG" id="6GPJ2rrwYXE" role="37wK5m">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="3cmrfG" id="6GPJ2rrwYXF" role="37wK5m">
+                  <property role="3cmrfH" value="4" />
+                </node>
+                <node concept="3cmrfG" id="6GPJ2rrwYXG" role="37wK5m">
+                  <property role="3cmrfH" value="1" />
+                </node>
+                <node concept="3cmrfG" id="6GPJ2rrwYXH" role="37wK5m">
+                  <property role="3cmrfH" value="4" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rrwYWQ" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rrwZ7q" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rrwYXJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="7IsGrgKMU1c" resolve="zoomOutButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rrwZ7r" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setMargin(java.awt.Insets)" resolve="setMargin" />
+              <node concept="37vLTw" id="6GPJ2rrwZ7s" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrwYWI" resolve="compactMargin" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rrwYWT" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rrwZ7I" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rrwYXN" role="2Oq$k0">
+              <ref role="3cqZAo" node="7IsGrgKMU1i" resolve="zoomResetButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rrwZ7J" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setMargin(java.awt.Insets)" resolve="setMargin" />
+              <node concept="37vLTw" id="6GPJ2rrwZ7K" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrwYWI" resolve="compactMargin" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rrwYWW" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rrwZ82" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rrwYXR" role="2Oq$k0">
+              <ref role="3cqZAo" node="7IsGrgKMU1o" resolve="zoomInButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rrwZ83" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setMargin(java.awt.Insets)" resolve="setMargin" />
+              <node concept="37vLTw" id="6GPJ2rrwZ84" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrwYWI" resolve="compactMargin" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rrwYWZ" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rrwZ8m" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rrwYXV" role="2Oq$k0">
+              <ref role="3cqZAo" node="7IsGrgKMU1u" resolve="maximizeButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rrwZ8n" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setMargin(java.awt.Insets)" resolve="setMargin" />
+              <node concept="37vLTw" id="6GPJ2rrwZ8o" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrwYWI" resolve="compactMargin" />
+              </node>
             </node>
           </node>
         </node>
