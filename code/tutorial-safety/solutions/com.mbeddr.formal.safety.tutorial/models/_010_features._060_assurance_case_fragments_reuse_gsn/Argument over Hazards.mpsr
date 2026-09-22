@@ -14,7 +14,6 @@
       <concept id="2392944874760086914" name="com.mbeddr.formal.safety.gsn.ext.structure.IGsnConnectionPattern" flags="ngI" index="1a7XsH">
         <property id="2392944874759792243" name="max" index="1a4Pjs" />
         <property id="2392944874759792241" name="min" index="1a4Pju" />
-        <child id="6452540484739588948" name="explanation" index="qdIgQ" />
       </concept>
       <concept id="8790599356044273577" name="com.mbeddr.formal.safety.gsn.ext.structure.OrEntity" flags="ng" index="1idpKz" />
       <concept id="1629165016568013899" name="com.mbeddr.formal.safety.gsn.ext.structure.PatternDefinition" flags="ng" index="1VB52S" />
@@ -279,10 +278,10 @@
       <node concept="37mRIm" id="5K95X1ycUW4" role="37mRID">
         <property role="37mO49" value="6631858110047956722" />
         <node concept="gqqVs" id="5K95X1ycUW3" role="37mO4d">
-          <property role="gqqTZ" value="56.25" />
+          <property role="gqqTZ" value="37.0" />
           <property role="gqqTW" value="234.0" />
-          <property role="gqqTX" value="132.0" />
-          <property role="gqqTy" value="60.0" />
+          <property role="gqqTX" value="116.0" />
+          <property role="gqqTy" value="57.0" />
         </node>
       </node>
     </node>
@@ -421,11 +420,6 @@
       <property role="1a4Pjs" value="n" />
       <ref role="3VeSjP" node="4FEga0FTsUZ" resolve="St01_Haz" />
       <ref role="3VeSjQ" node="4FEga0FTt8B" resolve="GHaz_i" />
-      <node concept="19SGf9" id="4FEga0FTtbu" role="qdIgQ">
-        <node concept="19SUe$" id="4FEga0FTtbv" role="19SJt6">
-          <property role="19SUeA" value="For all hazards from hazard&#10;list. " />
-        </node>
-      </node>
       <node concept="2a1zyT" id="5K95X1ycUVM" role="lGtFl">
         <node concept="19SGf9" id="5K95X1ycUVN" role="2a01MA">
           <node concept="19SUe$" id="5K95X1ycUVO" role="19SJt6">

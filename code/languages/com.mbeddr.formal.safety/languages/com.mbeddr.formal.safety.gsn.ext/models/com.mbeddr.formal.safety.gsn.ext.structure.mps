@@ -32,10 +32,6 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
-      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
-        <property id="1225118929411" name="build" index="YLPcu" />
-        <property id="1225118933224" name="comment" index="YLQ7P" />
-      </concept>
       <concept id="6054523464627964745" name="jetbrains.mps.lang.structure.structure.AttributeInfo_AttributedConcept" flags="ng" index="trNpa">
         <reference id="6054523464627965081" name="concept" index="trN6q" />
       </concept>
@@ -203,16 +199,6 @@
       <property role="IQ2nx" value="2392944874759792243" />
       <property role="TrG5h" value="max" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyj" id="5Ac1Q93IIdk" role="1TKVEi">
-      <property role="IQ2ns" value="6452540484739588948" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="explanation" />
-      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-      <node concept="asaX9" id="5K95X1y12dH" role="lGtFl">
-        <property role="YLQ7P" value="explanation is migrated to GsnPatternConnectionExplanation" />
-        <property role="YLPcu" value="2025.05.06" />
-      </node>
     </node>
   </node>
   <node concept="1TIwiD" id="35$gPpxbZQ_">
@@ -451,16 +437,6 @@
     <property role="TrG5h" value="AbstractReusableArgumentFragmentsContainer" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="py52:3GRi4m$qNsQ" resolve="GoalStructure" />
-    <node concept="1TJgyj" id="x1FXqHS9Y" role="1TKVEi">
-      <property role="IQ2ns" value="9296093161947774" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="explanation" />
-      <ref role="20lvS9" to="87nw:2dWzqxEB$Tx" resolve="Text" />
-      <node concept="asaX9" id="2Gadht9GpMN" role="lGtFl">
-        <property role="YLPcu" value="2025.05.04" />
-        <property role="YLQ7P" value="Use the documentation associated to goal structures." />
-      </node>
-    </node>
     <node concept="1TJgyj" id="x1FXqHSaO" role="1TKVEi">
       <property role="IQ2ns" value="9296093161947828" />
       <property role="20kJfa" value="documentationRef" />
@@ -468,37 +444,6 @@
     </node>
     <node concept="PrWs8" id="58QADzT1PK0" role="PzmwI">
       <ref role="PrY4T" to="py52:58QADzT1PJZ" resolve="IContainerOfReusableArgumentFragments" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="56pBK14tHBo">
-    <property role="EcuMT" value="5879905612006349272" />
-    <property role="3GE5qa" value="words" />
-    <property role="TrG5h" value="GenericNamedModelElementRefWord_old" />
-    <property role="R4oN_" value="typed model element reference" />
-    <property role="34LRSv" value="@model-element" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="PrWs8" id="56pBK14tHBp" role="PzmwI">
-      <ref role="PrY4T" to="87nw:2dWzqxEBBFG" resolve="IWord" />
-    </node>
-    <node concept="1TJgyi" id="56pBK14tHBt" role="1TKVEl">
-      <property role="IQ2nx" value="5879905612006349277" />
-      <property role="TrG5h" value="type_old" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-      <node concept="asaX9" id="6FJpOMAQ8WE" role="lGtFl">
-        <property role="YLQ7P" value="The property was moved to concept &quot;com.mpsbasics.words.generic.structure.GenericNamedModelElementRefWord&quot;" />
-      </node>
-    </node>
-    <node concept="1TJgyj" id="56pBK14tHBv" role="1TKVEi">
-      <property role="IQ2ns" value="5879905612006349279" />
-      <property role="20kJfa" value="elem_old" />
-      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
-      <node concept="asaX9" id="6FJpOMAQ8WP" role="lGtFl">
-        <property role="YLQ7P" value="The link was moved to concept &quot;com.mpsbasics.words.generic.structure.GenericNamedModelElementRefWord&quot;" />
-      </node>
-    </node>
-    <node concept="asaX9" id="6FJpOMAQ8Ws" role="lGtFl">
-      <property role="YLQ7P" value="The concept was moved to language &quot;com.mpsbasics.words.generic&quot;" />
-      <property role="YLPcu" value="2025.02.01" />
     </node>
   </node>
   <node concept="1TIwiD" id="18O4bIocyw2">
