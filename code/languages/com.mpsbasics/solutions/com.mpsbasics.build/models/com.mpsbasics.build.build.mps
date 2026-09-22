@@ -1481,6 +1481,81 @@
           </node>
         </node>
       </node>
+      <node concept="1E1JtA" id="16dr8Qynsem" role="2G$12L">
+        <property role="BnDLt" value="true" />
+        <property role="TrG5h" value="com.mpsbasics.test.utils" />
+        <property role="3LESm3" value="d3281489-b160-47ab-bc37-ef66360e3d79" />
+        <node concept="398BVA" id="16dr8Qynsen" role="3LF7KH">
+          <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+          <node concept="2Ry0Ak" id="16dr8Qynseo" role="iGT6I">
+            <property role="2Ry0Am" value="solutions" />
+            <node concept="2Ry0Ak" id="16dr8Qynsep" role="2Ry0An">
+              <property role="2Ry0Am" value="com.mpsbasics.test.utils" />
+              <node concept="2Ry0Ak" id="16dr8QynsHG" role="2Ry0An">
+                <property role="2Ry0Am" value="com.mpsbasics.test.utils.msd" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="16dr8Qynset" role="3bR37C">
+          <node concept="3bR9La" id="16dr8Qynseu" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="16dr8Qynsex" role="3bR37C">
+          <node concept="3bR9La" id="16dr8Qynsey" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1TaHNgiIbIQ" resolve="MPS.Core" />
+          </node>
+        </node>
+        <node concept="1BupzO" id="16dr8Qynsez" role="3bR31x">
+          <property role="3ZfqAx" value="models" />
+          <property role="1Hdu6h" value="true" />
+          <property role="1HemKv" value="true" />
+          <node concept="3LXTmp" id="16dr8QyntdD" role="1HemKq">
+            <node concept="398BVA" id="16dr8Qyntdq" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="16dr8Qyntdr" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="16dr8Qyntds" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.test.utils" />
+                  <node concept="2Ry0Ak" id="16dr8Qyntdt" role="2Ry0An">
+                    <property role="2Ry0Am" value="models" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3qWCbU" id="16dr8QyntdE" role="3LXTna">
+              <property role="3qWCbO" value="**/*.mps, **/*.mpsr, **/.model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3rtmxn" id="16dr8QynseE" role="3bR31x">
+          <node concept="3LXTmp" id="16dr8QynseF" role="3rtmxm">
+            <node concept="3qWCbU" id="16dr8QynseG" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="16dr8QynseH" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="16dr8QynseI" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="16dr8QyntJB" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.test.utils" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="16dr8Qyntdm" role="3bR37C">
+          <node concept="3bR9La" id="16dr8Qyntdn" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1H905DlDUSw" resolve="MPS.OpenAPI" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="16dr8Qyntdo" role="3bR37C">
+          <node concept="3bR9La" id="16dr8Qyntdp" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:rD7wKO6k$" resolve="MPS.Generator" />
+          </node>
+        </node>
+      </node>
       <node concept="1E1JtA" id="2u7UHDCnRuK" role="2G$12L">
         <property role="BnDLt" value="true" />
         <property role="TrG5h" value="com.mpsbasics.editor.utils" />
