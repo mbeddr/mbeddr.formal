@@ -29,10 +29,22 @@
       <sourceRoot path="${module}/lib/org.eclipse.emf.ecore.xmi.jar" />
     </modelRoot>
     <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/org.eclipse.xtext.xbase.lib.jar" />
+      <sourceRoot path="${module}/lib/guava.jar" />
     </modelRoot>
     <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/guava.jar" />
+      <sourceRoot path="${module}/lib/failureaccess.jar" />
+    </modelRoot>
+    <modelRoot type="java_classes">
+      <sourceRoot path="${module}/lib/listenablefuture.jar" />
+    </modelRoot>
+    <modelRoot type="java_classes">
+      <sourceRoot path="${module}/lib/jspecify.jar" />
+    </modelRoot>
+    <modelRoot type="java_classes">
+      <sourceRoot path="${module}/lib/error_prone_annotations.jar" />
+    </modelRoot>
+    <modelRoot type="java_classes">
+      <sourceRoot path="${module}/lib/j2objc-annotations.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -46,8 +58,12 @@
       <library location="${module}/lib/org.eclipse.emf.common.jar" />
       <library location="${module}/lib/org.eclipse.emf.ecore.jar" />
       <library location="${module}/lib/org.eclipse.emf.ecore.xmi.jar" />
-      <library location="${module}/lib/org.eclipse.xtext.xbase.lib.jar" />
       <library location="${module}/lib/guava.jar" />
+      <library location="${module}/lib/failureaccess.jar" />
+      <library location="${module}/lib/listenablefuture.jar" />
+      <library location="${module}/lib/jspecify.jar" />
+      <library location="${module}/lib/error_prone_annotations.jar" />
+      <library location="${module}/lib/j2objc-annotations.jar" />
     </facet>
   </facets>
   <dependencies>
