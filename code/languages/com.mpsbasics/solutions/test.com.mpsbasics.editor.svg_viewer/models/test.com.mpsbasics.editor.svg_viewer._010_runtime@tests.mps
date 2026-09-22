@@ -3460,6 +3460,122 @@
           </node>
         </node>
       </node>
+      <node concept="3s$Bmu" id="6GPJ2rrAYa0" role="3s_gse">
+        <property role="3s$Bm0" value="testGetSvgTextReturnsValidSvg" />
+        <property role="TrG5h" value="test_testGetSvgTextReturnsValidSvg" />
+        <node concept="3cqZAl" id="6GPJ2rrAYa4" role="3clF45" />
+        <node concept="3clFbS" id="6GPJ2rrAYa5" role="3clF47">
+          <node concept="3cpWs8" id="6GPJ2rrAYm$" role="3cqZAp">
+            <node concept="3cpWsn" id="6GPJ2rrAYmz" role="3cpWs9">
+              <property role="TrG5h" value="graph" />
+              <node concept="3uibUv" id="6GPJ2rrAYm_" role="1tU5fm">
+                <ref role="3uigEE" to="s6nb:7JXu42kiflE" resolve="SvgGraphModel" />
+              </node>
+              <node concept="1rXfSq" id="6GPJ2rrAYmA" role="33vP2m">
+                <ref role="37wK5l" node="7JXu42km23S" resolve="createSampleGraph" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbF" id="6GPJ2rrAYmB" role="3cqZAp">
+            <node concept="2YIFZM" id="6GPJ2rrAYna" role="3clFbG">
+              <ref role="1Pybhc" to="s6nb:7JXu42kiiFv" resolve="ElkLayoutEngine" />
+              <ref role="37wK5l" to="s6nb:7IsGrgNbN1l" resolve="layout" />
+              <node concept="37vLTw" id="6GPJ2rrAYnb" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrAYmz" resolve="graph" />
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="6GPJ2rrAYmF" role="3cqZAp">
+            <node concept="3cpWsn" id="6GPJ2rrAYmE" role="3cpWs9">
+              <property role="TrG5h" value="view" />
+              <node concept="3uibUv" id="6GPJ2rrAYmG" role="1tU5fm">
+                <ref role="3uigEE" to="s6nb:7JXu42krEm4" resolve="SvgViewComponent" />
+              </node>
+              <node concept="2ShNRf" id="6GPJ2rrAYnc" role="33vP2m">
+                <node concept="1pGfFk" id="6GPJ2rrAYnt" role="2ShVmc">
+                  <ref role="37wK5l" to="s6nb:7IsGrgKMjlM" resolve="SvgViewComponent" />
+                  <node concept="2YIFZM" id="6GPJ2rrAYnM" role="37wK5m">
+                    <ref role="1Pybhc" to="s6nb:7JXu42ki_zC" resolve="SvgWriter" />
+                    <ref role="37wK5l" to="s6nb:7IsGrgLUGLK" resolve="write" />
+                    <node concept="37vLTw" id="6GPJ2rrAYnN" role="37wK5m">
+                      <ref role="3cqZAo" node="6GPJ2rrAYmz" resolve="graph" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="6GPJ2rrAYnw" role="37wK5m">
+                    <ref role="3cqZAo" node="6GPJ2rrAYmz" resolve="graph" />
+                  </node>
+                  <node concept="10Nm6u" id="6GPJ2rrAYnx" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="6GPJ2rrAYmN" role="3cqZAp">
+            <node concept="3cpWsn" id="6GPJ2rrAYmM" role="3cpWs9">
+              <property role="TrG5h" value="svg" />
+              <node concept="3uibUv" id="6GPJ2rrAYmO" role="1tU5fm">
+                <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+              </node>
+              <node concept="2OqwBi" id="6GPJ2rrAYnZ" role="33vP2m">
+                <node concept="37vLTw" id="6GPJ2rrAYn$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6GPJ2rrAYmE" resolve="view" />
+                </node>
+                <node concept="liA8E" id="6GPJ2rrAYo0" role="2OqNvi">
+                  <ref role="37wK5l" to="s6nb:6GPJ2rr_cYS" resolve="getSvgText" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="6GPJ2rrAYmR" role="3cqZAp">
+            <node concept="3cpWsn" id="6GPJ2rrAYmQ" role="3cpWs9">
+              <property role="TrG5h" value="startsWithSvgTag" />
+              <node concept="10P_77" id="6GPJ2rrAYmS" role="1tU5fm" />
+              <node concept="2OqwBi" id="6GPJ2rrAYof" role="33vP2m">
+                <node concept="37vLTw" id="6GPJ2rrAYnC" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6GPJ2rrAYmM" resolve="svg" />
+                </node>
+                <node concept="liA8E" id="6GPJ2rrAYog" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.startsWith(java.lang.String)" resolve="startsWith" />
+                  <node concept="Xl_RD" id="6GPJ2rrAYoh" role="37wK5m">
+                    <property role="Xl_RC" value="&lt;svg" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3cpWs8" id="6GPJ2rrAYmW" role="3cqZAp">
+            <node concept="3cpWsn" id="6GPJ2rrAYmV" role="3cpWs9">
+              <property role="TrG5h" value="containsN1Label" />
+              <node concept="10P_77" id="6GPJ2rrAYmX" role="1tU5fm" />
+              <node concept="2OqwBi" id="6GPJ2rrAYow" role="33vP2m">
+                <node concept="37vLTw" id="6GPJ2rrAYnH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6GPJ2rrAYmM" resolve="svg" />
+                </node>
+                <node concept="liA8E" id="6GPJ2rrAYox" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                  <node concept="Xl_RD" id="6GPJ2rrAYoy" role="37wK5m">
+                    <property role="Xl_RC" value="N1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3vwNmj" id="6GPJ2rrBgIP" role="3cqZAp">
+            <node concept="1Wc70l" id="6GPJ2rrBgVq" role="3vwVQn">
+              <node concept="37vLTw" id="6GPJ2rrBgVr" role="3uHU7B">
+                <ref role="3cqZAo" node="6GPJ2rrAYmQ" resolve="startsWithSvgTag" />
+              </node>
+              <node concept="37vLTw" id="6GPJ2rrBgVs" role="3uHU7w">
+                <ref role="3cqZAo" node="6GPJ2rrAYmV" resolve="containsN1Label" />
+              </node>
+            </node>
+            <node concept="3_1$Yv" id="6GPJ2rrBgIS" role="3_9lra">
+              <node concept="Xl_RD" id="6GPJ2rrBgIT" role="3_1BAH">
+                <property role="Xl_RC" value="getSvgText() should return valid, non-relayouted SVG matching the graph" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3clFb_" id="7JXu42km23S" role="jymVt">
       <property role="TrG5h" value="createSampleGraph" />

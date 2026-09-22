@@ -46,6 +46,8 @@
     <import index="alof" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.project(MPS.Platform/)" />
     <import index="gsia" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.event(JDK/)" />
     <import index="r791" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.text(JDK/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
+    <import index="jlyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.filechooser(JDK/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -105,7 +107,9 @@
         <child id="1145553007750" name="creator" index="2ShVmc" />
       </concept>
       <concept id="1070462154015" name="jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" flags="ig" index="Wx3nA" />
-      <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P" />
+      <concept id="1070475354124" name="jetbrains.mps.baseLanguage.structure.ThisExpression" flags="nn" index="Xjq3P">
+        <reference id="1182955020723" name="classConcept" index="1HBi2w" />
+      </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
@@ -18224,6 +18228,24 @@
       <node concept="3Tm6S6" id="6GPJ2rrtls6" role="1B3o_S" />
       <node concept="3cqZAl" id="6GPJ2rrtls7" role="3clF45" />
     </node>
+    <node concept="3clFb_" id="6GPJ2rr_cYS" role="jymVt">
+      <property role="TrG5h" value="getSvgText" />
+      <node concept="3clFbS" id="6GPJ2rr_cYT" role="3clF47">
+        <node concept="3cpWs6" id="6GPJ2rr_cYU" role="3cqZAp">
+          <node concept="2YIFZM" id="6GPJ2rr_cZ3" role="3cqZAk">
+            <ref role="1Pybhc" node="7JXu42ki_zC" resolve="SvgWriter" />
+            <ref role="37wK5l" node="7IsGrgLUGLK" resolve="write" />
+            <node concept="37vLTw" id="6GPJ2rr_cZ4" role="37wK5m">
+              <ref role="3cqZAo" node="5GheoLnxRPJ" resolve="graph" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6GPJ2rr_cYX" role="1B3o_S" />
+      <node concept="3uibUv" id="6GPJ2rr_cYY" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+    </node>
   </node>
   <node concept="312cEu" id="7JXu42kOktr">
     <property role="TrG5h" value="SvgPortModel" />
@@ -19125,6 +19147,349 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6GPJ2rr_RIb" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rr_RO7" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rr_RJK" role="2Oq$k0">
+              <ref role="3cqZAo" node="6GPJ2rr_EBn" resolve="saveButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rr_RO8" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Component.setFocusable(boolean)" resolve="setFocusable" />
+              <node concept="3clFbT" id="6GPJ2rr_RO9" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rr_RIe" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rr_RPN" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rr_RJO" role="2Oq$k0">
+              <ref role="3cqZAo" node="6GPJ2rr_EBn" resolve="saveButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rr_RPO" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setFont(java.awt.Font)" resolve="setFont" />
+              <node concept="37vLTw" id="6GPJ2rr_RPP" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrwYWs" resolve="compactFont" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rr_RIh" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rr_RQ7" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rr_RJS" role="2Oq$k0">
+              <ref role="3cqZAo" node="6GPJ2rr_EBn" resolve="saveButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rr_RQ8" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.setMargin(java.awt.Insets)" resolve="setMargin" />
+              <node concept="37vLTw" id="6GPJ2rr_RQ9" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rrwYWI" resolve="compactMargin" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rr_RIk" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rr_RRZ" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rr_RJW" role="2Oq$k0">
+              <ref role="3cqZAo" node="6GPJ2rr_EBn" resolve="saveButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rr_RS0" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~JComponent.setToolTipText(java.lang.String)" resolve="setToolTipText" />
+              <node concept="Xl_RD" id="6GPJ2rr_RS1" role="37wK5m">
+                <property role="Xl_RC" value="Save diagram as SVG file" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rr_RIn" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rr_RSN" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rr_RK0" role="2Oq$k0">
+              <ref role="3cqZAo" node="6GPJ2rr_EBn" resolve="saveButton" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rr_RSO" role="2OqNvi">
+              <ref role="37wK5l" to="dxuu:~AbstractButton.addActionListener(java.awt.event.ActionListener)" resolve="addActionListener" />
+              <node concept="2ShNRf" id="6GPJ2rr_RSP" role="37wK5m">
+                <node concept="YeOm9" id="6GPJ2rr_RSQ" role="2ShVmc">
+                  <node concept="1Y3b0j" id="6GPJ2rr_RSR" role="YeSDq">
+                    <ref role="1Y3XeK" to="hyam:~ActionListener" resolve="ActionListener" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3clFb_" id="6GPJ2rr_RSS" role="jymVt">
+                      <property role="TrG5h" value="actionPerformed" />
+                      <node concept="37vLTG" id="6GPJ2rr_RST" role="3clF46">
+                        <property role="TrG5h" value="e" />
+                        <node concept="3uibUv" id="6GPJ2rr_RSU" role="1tU5fm">
+                          <ref role="3uigEE" to="hyam:~ActionEvent" resolve="ActionEvent" />
+                        </node>
+                      </node>
+                      <node concept="3clFbS" id="6GPJ2rr_RSV" role="3clF47">
+                        <node concept="3cpWs8" id="6GPJ2rr_RSW" role="3cqZAp">
+                          <node concept="3cpWsn" id="6GPJ2rr_RSX" role="3cpWs9">
+                            <property role="TrG5h" value="chooser" />
+                            <node concept="3uibUv" id="6GPJ2rr_RSY" role="1tU5fm">
+                              <ref role="3uigEE" to="dxuu:~JFileChooser" resolve="JFileChooser" />
+                            </node>
+                            <node concept="2ShNRf" id="6GPJ2rr_RVh" role="33vP2m">
+                              <node concept="1pGfFk" id="6GPJ2rr_RVn" role="2ShVmc">
+                                <ref role="37wK5l" to="dxuu:~JFileChooser.&lt;init&gt;()" resolve="JFileChooser" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="6GPJ2rr_RT0" role="3cqZAp">
+                          <node concept="2OqwBi" id="6GPJ2rr_UpM" role="3clFbG">
+                            <node concept="37vLTw" id="6GPJ2rr_RVr" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6GPJ2rr_RSX" resolve="chooser" />
+                            </node>
+                            <node concept="liA8E" id="6GPJ2rr_UpN" role="2OqNvi">
+                              <ref role="37wK5l" to="dxuu:~JFileChooser.setDialogTitle(java.lang.String)" resolve="setDialogTitle" />
+                              <node concept="Xl_RD" id="6GPJ2rr_UpO" role="37wK5m">
+                                <property role="Xl_RC" value="Save Diagram as SVG" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="6GPJ2rr_RT3" role="3cqZAp">
+                          <node concept="2OqwBi" id="6GPJ2rr_Uqf" role="3clFbG">
+                            <node concept="37vLTw" id="6GPJ2rr_RVx" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6GPJ2rr_RSX" resolve="chooser" />
+                            </node>
+                            <node concept="liA8E" id="6GPJ2rr_Uqg" role="2OqNvi">
+                              <ref role="37wK5l" to="dxuu:~JFileChooser.setSelectedFile(java.io.File)" resolve="setSelectedFile" />
+                              <node concept="2ShNRf" id="6GPJ2rr_Ut0" role="37wK5m">
+                                <node concept="1pGfFk" id="6GPJ2rr_UD3" role="2ShVmc">
+                                  <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.lang.String)" resolve="File" />
+                                  <node concept="Xl_RD" id="6GPJ2rr_UD4" role="37wK5m">
+                                    <property role="Xl_RC" value="diagram.svg" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="6GPJ2rr_RT7" role="3cqZAp">
+                          <node concept="2OqwBi" id="6GPJ2rr_UqY" role="3clFbG">
+                            <node concept="37vLTw" id="6GPJ2rr_RVC" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6GPJ2rr_RSX" resolve="chooser" />
+                            </node>
+                            <node concept="liA8E" id="6GPJ2rr_UqZ" role="2OqNvi">
+                              <ref role="37wK5l" to="dxuu:~JFileChooser.setFileFilter(javax.swing.filechooser.FileFilter)" resolve="setFileFilter" />
+                              <node concept="2ShNRf" id="6GPJ2rr_UIU" role="37wK5m">
+                                <node concept="1pGfFk" id="6GPJ2rr_UJ5" role="2ShVmc">
+                                  <ref role="37wK5l" to="jlyv:~FileNameExtensionFilter.&lt;init&gt;(java.lang.String,java.lang.String...)" resolve="FileNameExtensionFilter" />
+                                  <node concept="Xl_RD" id="6GPJ2rr_UJ6" role="37wK5m">
+                                    <property role="Xl_RC" value="SVG files (*.svg)" />
+                                  </node>
+                                  <node concept="Xl_RD" id="6GPJ2rr_UJ7" role="37wK5m">
+                                    <property role="Xl_RC" value="svg" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3cpWs8" id="6GPJ2rr_RTc" role="3cqZAp">
+                          <node concept="3cpWsn" id="6GPJ2rr_RTd" role="3cpWs9">
+                            <property role="TrG5h" value="result" />
+                            <node concept="10Oyi0" id="6GPJ2rr_RTe" role="1tU5fm" />
+                            <node concept="2OqwBi" id="6GPJ2rr_Urt" role="33vP2m">
+                              <node concept="37vLTw" id="6GPJ2rr_RVK" role="2Oq$k0">
+                                <ref role="3cqZAo" node="6GPJ2rr_RSX" resolve="chooser" />
+                              </node>
+                              <node concept="liA8E" id="6GPJ2rr_Uru" role="2OqNvi">
+                                <ref role="37wK5l" to="dxuu:~JFileChooser.showSaveDialog(java.awt.Component)" resolve="showSaveDialog" />
+                                <node concept="Xjq3P" id="6GPJ2rr_Urv" role="37wK5m">
+                                  <ref role="1HBi2w" node="7IsGrgKMU11" resolve="SvgCanvasComponent" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbJ" id="6GPJ2rr_RTh" role="3cqZAp">
+                          <node concept="3clFbC" id="6GPJ2rr_RTi" role="3clFbw">
+                            <node concept="37vLTw" id="6GPJ2rr_RTj" role="3uHU7B">
+                              <ref role="3cqZAo" node="6GPJ2rr_RTd" resolve="result" />
+                            </node>
+                            <node concept="10M0yZ" id="6GPJ2rr_RVQ" role="3uHU7w">
+                              <ref role="1PxDUh" to="dxuu:~JFileChooser" resolve="JFileChooser" />
+                              <ref role="3cqZAo" to="dxuu:~JFileChooser.APPROVE_OPTION" resolve="APPROVE_OPTION" />
+                            </node>
+                          </node>
+                          <node concept="3clFbS" id="6GPJ2rr_RTl" role="3clFbx">
+                            <node concept="3cpWs8" id="6GPJ2rr_RTm" role="3cqZAp">
+                              <node concept="3cpWsn" id="6GPJ2rr_RTn" role="3cpWs9">
+                                <property role="TrG5h" value="file" />
+                                <node concept="3uibUv" id="6GPJ2rr_RTo" role="1tU5fm">
+                                  <ref role="3uigEE" to="guwi:~File" resolve="File" />
+                                </node>
+                                <node concept="2OqwBi" id="6GPJ2rr_UrU" role="33vP2m">
+                                  <node concept="37vLTw" id="6GPJ2rr_RVU" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="6GPJ2rr_RSX" resolve="chooser" />
+                                  </node>
+                                  <node concept="liA8E" id="6GPJ2rr_UrV" role="2OqNvi">
+                                    <ref role="37wK5l" to="dxuu:~JFileChooser.getSelectedFile()" resolve="getSelectedFile" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3clFbJ" id="6GPJ2rr_RTq" role="3cqZAp">
+                              <node concept="3fqX7Q" id="6GPJ2rr_RTr" role="3clFbw">
+                                <node concept="1eOMI4" id="6GPJ2rr_RTs" role="3fr31v">
+                                  <node concept="2OqwBi" id="6GPJ2rr_ULO" role="1eOMHV">
+                                    <node concept="2OqwBi" id="6GPJ2rr_UJS" role="2Oq$k0">
+                                      <node concept="2OqwBi" id="6GPJ2rr_Usl" role="2Oq$k0">
+                                        <node concept="37vLTw" id="6GPJ2rr_RWf" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="6GPJ2rr_RTn" resolve="file" />
+                                        </node>
+                                        <node concept="liA8E" id="6GPJ2rr_Usm" role="2OqNvi">
+                                          <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="6GPJ2rr_UJT" role="2OqNvi">
+                                        <ref role="37wK5l" to="wyt6:~String.toLowerCase()" resolve="toLowerCase" />
+                                      </node>
+                                    </node>
+                                    <node concept="liA8E" id="6GPJ2rr_ULP" role="2OqNvi">
+                                      <ref role="37wK5l" to="wyt6:~String.endsWith(java.lang.String)" resolve="endsWith" />
+                                      <node concept="Xl_RD" id="6GPJ2rr_ULQ" role="37wK5m">
+                                        <property role="Xl_RC" value=".svg" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbS" id="6GPJ2rr_RTx" role="3clFbx">
+                                <node concept="3clFbF" id="6GPJ2rr_RTy" role="3cqZAp">
+                                  <node concept="37vLTI" id="6GPJ2rr_RTz" role="3clFbG">
+                                    <node concept="37vLTw" id="6GPJ2rr_RT$" role="37vLTJ">
+                                      <ref role="3cqZAo" node="6GPJ2rr_RTn" resolve="file" />
+                                    </node>
+                                    <node concept="2ShNRf" id="6GPJ2rr_RWh" role="37vLTx">
+                                      <node concept="1pGfFk" id="6GPJ2rr_RWW" role="2ShVmc">
+                                        <ref role="37wK5l" to="guwi:~File.&lt;init&gt;(java.io.File,java.lang.String)" resolve="File" />
+                                        <node concept="2OqwBi" id="6GPJ2rr_UK3" role="37wK5m">
+                                          <node concept="37vLTw" id="6GPJ2rr_Usq" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="6GPJ2rr_RTn" resolve="file" />
+                                          </node>
+                                          <node concept="liA8E" id="6GPJ2rr_UK4" role="2OqNvi">
+                                            <ref role="37wK5l" to="guwi:~File.getParentFile()" resolve="getParentFile" />
+                                          </node>
+                                        </node>
+                                        <node concept="3cpWs3" id="6GPJ2rr_RWY" role="37wK5m">
+                                          <node concept="2OqwBi" id="6GPJ2rr_UKe" role="3uHU7B">
+                                            <node concept="37vLTw" id="6GPJ2rr_Usv" role="2Oq$k0">
+                                              <ref role="3cqZAo" node="6GPJ2rr_RTn" resolve="file" />
+                                            </node>
+                                            <node concept="liA8E" id="6GPJ2rr_UKf" role="2OqNvi">
+                                              <ref role="37wK5l" to="guwi:~File.getName()" resolve="getName" />
+                                            </node>
+                                          </node>
+                                          <node concept="Xl_RD" id="6GPJ2rr_RX0" role="3uHU7w">
+                                            <property role="Xl_RC" value=".svg" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                            <node concept="3J1_TO" id="6GPJ2rr_RTE" role="3cqZAp">
+                              <node concept="3uVAMA" id="6GPJ2rr_RTF" role="1zxBo5">
+                                <node concept="3clFbS" id="6GPJ2rr_RTG" role="1zc67A">
+                                  <node concept="3clFbF" id="6GPJ2rr_RTH" role="3cqZAp">
+                                    <node concept="2YIFZM" id="6GPJ2rr_RX4" role="3clFbG">
+                                      <ref role="1Pybhc" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                      <ref role="37wK5l" to="dxuu:~JOptionPane.showMessageDialog(java.awt.Component,java.lang.Object,java.lang.String,int)" resolve="showMessageDialog" />
+                                      <node concept="Xjq3P" id="6GPJ2rr_RX5" role="37wK5m">
+                                        <ref role="1HBi2w" node="7IsGrgKMU11" resolve="SvgCanvasComponent" />
+                                      </node>
+                                      <node concept="3cpWs3" id="6GPJ2rr_RX6" role="37wK5m">
+                                        <node concept="Xl_RD" id="6GPJ2rr_RX7" role="3uHU7B">
+                                          <property role="Xl_RC" value="Failed to save SVG file: " />
+                                        </node>
+                                        <node concept="2OqwBi" id="6GPJ2rr_UKu" role="3uHU7w">
+                                          <node concept="37vLTw" id="6GPJ2rr_Us$" role="2Oq$k0">
+                                            <ref role="3cqZAo" node="6GPJ2rr_RTP" resolve="ex" />
+                                          </node>
+                                          <node concept="liA8E" id="6GPJ2rr_UKv" role="2OqNvi">
+                                            <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                                          </node>
+                                        </node>
+                                      </node>
+                                      <node concept="Xl_RD" id="6GPJ2rr_RX9" role="37wK5m">
+                                        <property role="Xl_RC" value="Save Error" />
+                                      </node>
+                                      <node concept="10M0yZ" id="6GPJ2rr_UsD" role="37wK5m">
+                                        <ref role="1PxDUh" to="dxuu:~JOptionPane" resolve="JOptionPane" />
+                                        <ref role="3cqZAo" to="dxuu:~JOptionPane.ERROR_MESSAGE" resolve="ERROR_MESSAGE" />
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="XOnhg" id="6GPJ2rr_RTP" role="1zc67B">
+                                  <property role="TrG5h" value="ex" />
+                                  <node concept="nSUau" id="6GPJ2rr_RTQ" role="1tU5fm">
+                                    <node concept="3uibUv" id="6GPJ2rr_RTR" role="nSUat">
+                                      <ref role="3uigEE" to="guwi:~IOException" resolve="IOException" />
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                              <node concept="3clFbS" id="6GPJ2rr_RTS" role="1zxBo7">
+                                <node concept="3clFbF" id="6GPJ2rr_RTT" role="3cqZAp">
+                                  <node concept="2YIFZM" id="6GPJ2rr_Up2" role="3clFbG">
+                                    <ref role="1Pybhc" to="eoo2:~Files" resolve="Files" />
+                                    <ref role="37wK5l" to="eoo2:~Files.write(java.nio.file.Path,byte[],java.nio.file.OpenOption...)" resolve="write" />
+                                    <node concept="2OqwBi" id="6GPJ2rr_UKD" role="37wK5m">
+                                      <node concept="37vLTw" id="6GPJ2rr_UsH" role="2Oq$k0">
+                                        <ref role="3cqZAo" node="6GPJ2rr_RTn" resolve="file" />
+                                      </node>
+                                      <node concept="liA8E" id="6GPJ2rr_UKE" role="2OqNvi">
+                                        <ref role="37wK5l" to="guwi:~File.toPath()" resolve="toPath" />
+                                      </node>
+                                    </node>
+                                    <node concept="2OqwBi" id="6GPJ2rr_UMi" role="37wK5m">
+                                      <node concept="2OqwBi" id="6GPJ2rr_UL0" role="2Oq$k0">
+                                        <node concept="37vLTw" id="6GPJ2rr_UsU" role="2Oq$k0">
+                                          <ref role="3cqZAo" node="7IsGrgKWI9G" resolve="view" />
+                                        </node>
+                                        <node concept="liA8E" id="6GPJ2rr_UL1" role="2OqNvi">
+                                          <ref role="37wK5l" node="6GPJ2rr_cYS" resolve="getSvgText" />
+                                        </node>
+                                      </node>
+                                      <node concept="liA8E" id="6GPJ2rr_UMj" role="2OqNvi">
+                                        <ref role="37wK5l" to="wyt6:~String.getBytes(java.nio.charset.Charset)" resolve="getBytes" />
+                                        <node concept="10M0yZ" id="6GPJ2rr_UMk" role="37wK5m">
+                                          <ref role="1PxDUh" to="7x5y:~StandardCharsets" resolve="StandardCharsets" />
+                                          <ref role="3cqZAo" to="7x5y:~StandardCharsets.UTF_8" resolve="UTF_8" />
+                                        </node>
+                                      </node>
+                                    </node>
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3Tm1VV" id="6GPJ2rr_RTZ" role="1B3o_S" />
+                      <node concept="3cqZAl" id="6GPJ2rr_RU0" role="3clF45" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6GPJ2rr_RJF" role="3cqZAp">
+          <node concept="2OqwBi" id="6GPJ2rr_RVe" role="3clFbG">
+            <node concept="37vLTw" id="6GPJ2rr_RLf" role="2Oq$k0">
+              <ref role="3cqZAo" node="7IsGrgKWIb6" resolve="toolbar" />
+            </node>
+            <node concept="liA8E" id="6GPJ2rr_RVf" role="2OqNvi">
+              <ref role="37wK5l" to="z60i:~Container.add(java.awt.Component)" resolve="add" />
+              <node concept="37vLTw" id="6GPJ2rr_RVg" role="37wK5m">
+                <ref role="3cqZAo" node="6GPJ2rr_EBn" resolve="saveButton" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="6GPJ2rrqQnB" role="3cqZAp">
           <node concept="2OqwBi" id="6GPJ2rrqQJV" role="3clFbG">
             <node concept="37vLTw" id="6GPJ2rrqQHo" role="2Oq$k0">
@@ -19879,6 +20244,22 @@
         </node>
       </node>
       <node concept="3Tm6S6" id="6GPJ2rrqECI" role="1B3o_S" />
+    </node>
+    <node concept="312cEg" id="6GPJ2rr_EBn" role="jymVt">
+      <property role="TrG5h" value="saveButton" />
+      <property role="3TUv4t" value="true" />
+      <node concept="3uibUv" id="6GPJ2rr_EBp" role="1tU5fm">
+        <ref role="3uigEE" to="dxuu:~JButton" resolve="JButton" />
+      </node>
+      <node concept="2ShNRf" id="6GPJ2rr_EBt" role="33vP2m">
+        <node concept="1pGfFk" id="6GPJ2rr_ENv" role="2ShVmc">
+          <ref role="37wK5l" to="dxuu:~JButton.&lt;init&gt;(java.lang.String)" resolve="JButton" />
+          <node concept="Xl_RD" id="6GPJ2rr_ENw" role="37wK5m">
+            <property role="Xl_RC" value="Save" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6GPJ2rr_EBs" role="1B3o_S" />
     </node>
   </node>
   <node concept="312cEu" id="7IsGrgMWT2k">
