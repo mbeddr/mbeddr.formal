@@ -19,6 +19,7 @@
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="extx" ref="r:6731df3a-0697-42bd-851e-15c8e9cc608a(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.elk)" />
+    <import index="aqr4" ref="r:38dba979-ec9a-4aa0-a049-504839bf1e61(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.treemap)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -36,6 +37,9 @@
       <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
       <concept id="1239714755177" name="jetbrains.mps.baseLanguage.structure.AbstractUnaryNumberOperation" flags="nn" index="2$Kvd9">
         <child id="1239714902950" name="expression" index="2$L3a6" />
+      </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
@@ -96,6 +100,9 @@
       </concept>
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
+      </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT">
+        <property id="1068580123138" name="value" index="3clFbU" />
       </concept>
       <concept id="1068580123140" name="jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" flags="ig" index="3clFbW" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
@@ -1780,6 +1787,38 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="5qYffcVdiZ8" role="3cqZAp">
+          <node concept="37vLTw" id="5qYffcVdiZ9" role="3clFbw">
+            <ref role="3cqZAo" node="5qYffcVd0tW" resolve="nextUseTreemapLayout" />
+          </node>
+          <node concept="3clFbS" id="5qYffcVdiZb" role="3clFbx">
+            <node concept="3clFbF" id="5qYffcVdiZc" role="3cqZAp">
+              <node concept="37vLTI" id="5qYffcVdiZd" role="3clFbG">
+                <node concept="2OqwBi" id="5qYffcVdj2Z" role="37vLTJ">
+                  <node concept="37vLTw" id="5qYffcVdj2Y" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7JXu42laEfp" resolve="graph" />
+                  </node>
+                  <node concept="2OwXpG" id="5qYffcVdj30" role="2OqNvi">
+                    <ref role="2Oxat5" to="s6nb:7IsGrgMXhgd" resolve="layout" />
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="5qYffcVdj31" role="37vLTx">
+                  <node concept="HV5vD" id="5qYffcVdj33" role="2ShVmc">
+                    <ref role="HV5vE" to="aqr4:5qYffcVceZo" resolve="GraphLayoutTreemap" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5qYffcVdiZg" role="3cqZAp">
+              <node concept="37vLTI" id="5qYffcVdiZh" role="3clFbG">
+                <node concept="37vLTw" id="5qYffcVdiZi" role="37vLTJ">
+                  <ref role="3cqZAo" node="5qYffcVd0tW" resolve="nextUseTreemapLayout" />
+                </node>
+                <node concept="3clFbT" id="5qYffcVdiZj" role="37vLTx" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="7IsGrgM4OZv" role="3cqZAp">
           <node concept="37vLTw" id="7IsGrgM4OZw" role="3cqZAk">
             <ref role="3cqZAo" node="7JXu42laEfp" resolve="graph" />
@@ -1958,6 +1997,29 @@
       </node>
       <node concept="3Tm1VV" id="7IsGrgMUmUO" role="1B3o_S" />
       <node concept="3cqZAl" id="7IsGrgMUmUP" role="3clF45" />
+    </node>
+    <node concept="Wx3nA" id="5qYffcVd0tW" role="jymVt">
+      <property role="TrG5h" value="nextUseTreemapLayout" />
+      <node concept="10P_77" id="5qYffcVd0tX" role="1tU5fm" />
+      <node concept="3clFbT" id="5qYffcVd0tY" role="33vP2m" />
+      <node concept="3Tm6S6" id="5qYffcVd0tZ" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="5qYffcVd9GW" role="jymVt">
+      <property role="TrG5h" value="useTreemapLayout" />
+      <node concept="3clFbS" id="5qYffcVd9GX" role="3clF47">
+        <node concept="3clFbF" id="5qYffcVd9GY" role="3cqZAp">
+          <node concept="37vLTI" id="5qYffcVd9GZ" role="3clFbG">
+            <node concept="37vLTw" id="5qYffcVd9H0" role="37vLTJ">
+              <ref role="3cqZAo" node="5qYffcVd0tW" resolve="nextUseTreemapLayout" />
+            </node>
+            <node concept="3clFbT" id="5qYffcVd9H1" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5qYffcVd9H2" role="1B3o_S" />
+      <node concept="3cqZAl" id="5qYffcVd9H3" role="3clF45" />
     </node>
   </node>
 </model>

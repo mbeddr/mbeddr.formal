@@ -140,6 +140,11 @@
       <property role="TrG5h" value="bodyText" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="5qYffcVbsy7" role="1TKVEl">
+      <property role="IQ2nx" value="6250500348204402823" />
+      <property role="TrG5h" value="weight" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JXu42kL_3m">
     <property role="EcuMT" value="8934429454542196950" />

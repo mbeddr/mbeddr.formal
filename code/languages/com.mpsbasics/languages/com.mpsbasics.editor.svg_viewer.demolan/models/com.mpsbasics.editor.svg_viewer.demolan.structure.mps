@@ -13,6 +13,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
         <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
@@ -303,6 +304,52 @@
     <property role="3GE5qa" value="goal_structures" />
     <property role="TrG5h" value="SupportedBy" />
     <ref role="1TJDcQ" node="7IsGrgMJj10" resolve="GoalStructureConnectionBase" />
+  </node>
+  <node concept="1TIwiD" id="5qYffcVam0i">
+    <property role="EcuMT" value="6250500348204113938" />
+    <property role="TrG5h" value="ModelsOfProjectTreeMap" />
+    <property role="19KtqR" value="true" />
+    <property role="3GE5qa" value="treemap" />
+    <property role="R5$K7" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="5qYffcVaVGC" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="5qYffcVbtMm" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5qYffcVbsLn">
+    <property role="EcuMT" value="6250500348204403799" />
+    <property role="TrG5h" value="ProjectModule" />
+    <property role="R4oN_" value="A project module, populated at render time from the live MPS project for the treemap diagram" />
+    <property role="3GE5qa" value="treemap" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyj" id="5qYffcVbsLp" role="1TKVEi">
+      <property role="IQ2ns" value="6250500348204403801" />
+      <property role="20kJfa" value="models" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5qYffcVbsLo" resolve="ProjectModel" />
+    </node>
+    <node concept="PrWs8" id="5qYffcVbsLq" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5qYffcVbsLo">
+    <property role="EcuMT" value="6250500348204403800" />
+    <property role="TrG5h" value="ProjectModel" />
+    <property role="R4oN_" value="A project model, populated at render time from the live MPS project for the treemap diagram" />
+    <property role="3GE5qa" value="treemap" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="5qYffcVbsLr" role="1TKVEl">
+      <property role="IQ2nx" value="6250500348204403803" />
+      <property role="TrG5h" value="rootCount" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="5qYffcVbsLs" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 
