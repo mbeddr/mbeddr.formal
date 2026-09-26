@@ -333,6 +333,12 @@
       <property role="20kJfa" value="content" />
       <ref role="20lvS9" node="2W2tyeS$LhP" resolve="SvgDiagramContent_BLQuery" />
     </node>
+    <node concept="1TJgyj" id="5qYffcW899H" role="1TKVEi">
+      <property role="IQ2ns" value="6250500348220314221" />
+      <property role="20kJfa" value="layout" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="5qYffcW83GK" resolve="SvgDiagramLayout_BLQuery" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2W2tyeS$LhP">
     <property role="EcuMT" value="3387399765528614005" />
@@ -579,6 +585,13 @@
       <property role="TrG5h" value="edgeSpacing" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="5qYffcW83GK">
+    <property role="EcuMT" value="6250500348220291888" />
+    <property role="TrG5h" value="SvgDiagramLayout_BLQuery" />
+    <property role="R4oN_" value="optional layout-factory query for CellModel_SvgDiagram; returns a GraphLayoutBase or null for the default" />
+    <property role="3GE5qa" value="svg_editor" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
 

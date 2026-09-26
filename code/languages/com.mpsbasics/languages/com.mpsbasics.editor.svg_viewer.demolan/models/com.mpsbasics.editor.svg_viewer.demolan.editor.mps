@@ -22,7 +22,10 @@
     <import index="exr9" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.nodeEditor(MPS.Editor/)" />
     <import index="f4zo" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor.cells(MPS.Editor/)" />
     <import index="nr2q" ref="r:16d0d19e-6709-43b6-8a52-426a84be4e90(com.mpsbasics.editor.svg_viewer.demolan.projectStructureBuilder)" />
-    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" />
+    <import index="rvcy" ref="r:4bea2668-c309-4427-8e9d-442757efe3ea(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.scatter)" />
+    <import index="aqr4" ref="r:38dba979-ec9a-4aa0-a049-504839bf1e61(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.treemap)" />
+    <import index="extx" ref="r:6731df3a-0697-42bd-851e-15c8e9cc608a(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.elk)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -81,9 +84,15 @@
         <child id="1068498886295" name="lValue" index="37vLTJ" />
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
+      </concept>
+      <concept id="1197029447546" name="jetbrains.mps.baseLanguage.structure.FieldReferenceOperation" flags="nn" index="2OwXpG">
+        <reference id="1197029500499" name="fieldDeclaration" index="2Oxat5" />
       </concept>
       <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
         <child id="1145553007750" name="creator" index="2ShVmc" />
@@ -154,6 +163,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <property id="1211504562189" name="nestedName" index="jj94n" />
@@ -272,10 +282,12 @@
       <concept id="3387399765528647189" name="com.mpsbasics.editor.svg_viewer.structure.Parameter_DslNode" flags="ng" index="2n$u0Q" />
       <concept id="3387399765528482801" name="com.mpsbasics.editor.svg_viewer.structure.CellModel_SvgDiagram" flags="ng" index="2n$Qni">
         <child id="3387399765528613356" name="content" index="2n$mvf" />
+        <child id="6250500348220314221" name="layout" index="1EBEUu" />
       </concept>
       <concept id="3387399765531496367" name="com.mpsbasics.editor.svg_viewer.structure.SvgDiagramNode_MappingFunction" flags="ig" index="2nJnAc" />
       <concept id="3387399765531360668" name="com.mpsbasics.editor.svg_viewer.structure.Parameter_MyNode" flags="ng" index="2nJCIZ" />
       <concept id="8907189550484598770" name="com.mpsbasics.editor.svg_viewer.structure.SvgDiagramNode_ChildrenBLQuery" flags="ig" index="1ka1T6" />
+      <concept id="6250500348220291888" name="com.mpsbasics.editor.svg_viewer.structure.SvgDiagramLayout_BLQuery" flags="ig" index="1EBwv3" />
       <concept id="4375364807114737673" name="com.mpsbasics.editor.svg_viewer.structure.Parameter_Registry" flags="ng" index="1Yqqcl" />
       <concept id="4375364807114467824" name="com.mpsbasics.editor.svg_viewer.structure.SvgDiagramNode_EdgeMappingFunction" flags="ig" index="1YtsbG" />
     </language>
@@ -381,6 +393,7 @@
                     <ref role="3cqZAo" node="7JXu42lbKmf" resolve="mappings" />
                   </node>
                   <node concept="1Q80Hx" id="5GheoLnJQIC" role="37wK5m" />
+                  <node concept="10Nm6u" id="5qYffcW94se" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -1523,15 +1536,6 @@
       <node concept="2n$Qni" id="7IsGrgMOVm9" role="3EZMnx">
         <node concept="2n$m9m" id="7IsGrgMOVma" role="2n$mvf">
           <node concept="3clFbS" id="7IsGrgMOVmc" role="2VODD2">
-            <node concept="3clFbF" id="7IsGrgMULcd" role="3cqZAp">
-              <node concept="2YIFZM" id="7IsGrgMULcg" role="3clFbG">
-                <ref role="1Pybhc" to="f6lw:7JXu42laAe2" resolve="SvgDiagramBuilder" />
-                <ref role="37wK5l" to="f6lw:7IsGrgMUmU3" resolve="useHierarchicalLayout" />
-                <node concept="Xl_RD" id="7IsGrgMULch" role="37wK5m">
-                  <property role="Xl_RC" value="down" />
-                </node>
-              </node>
-            </node>
             <node concept="3clFbF" id="7IsGrgMOVmd" role="3cqZAp">
               <node concept="2OqwBi" id="7IsGrgMOVmf" role="3clFbG">
                 <node concept="2OqwBi" id="7IsGrgMOVmi" role="2Oq$k0">
@@ -1548,6 +1552,43 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1EBwv3" id="5qYffcWdfy$" role="1EBEUu">
+          <node concept="3clFbS" id="5qYffcWdiBq" role="2VODD2">
+            <node concept="3cpWs8" id="5qYffcWdxAF" role="3cqZAp">
+              <node concept="3cpWsn" id="5qYffcWdxAE" role="3cpWs9">
+                <property role="TrG5h" value="layout" />
+                <node concept="3uibUv" id="5qYffcWdxAG" role="1tU5fm">
+                  <ref role="3uigEE" to="extx:7IsGrgMWYou" resolve="ElkGraphLayoutHierarchical" />
+                </node>
+                <node concept="2ShNRf" id="5qYffcWdxAO" role="33vP2m">
+                  <node concept="1pGfFk" id="5qYffcWdxAQ" role="2ShVmc">
+                    <ref role="37wK5l" to="extx:7IsGrgMZblD" resolve="ElkGraphLayoutHierarchical" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5qYffcWdxAI" role="3cqZAp">
+              <node concept="37vLTI" id="5qYffcWdxAJ" role="3clFbG">
+                <node concept="2OqwBi" id="5qYffcWdxAS" role="37vLTJ">
+                  <node concept="37vLTw" id="5qYffcWdxAR" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5qYffcWdxAE" resolve="layout" />
+                  </node>
+                  <node concept="2OwXpG" id="5qYffcWdxAT" role="2OqNvi">
+                    <ref role="2Oxat5" to="extx:7IsGrgMX3HM" resolve="direction" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="5qYffcWdxAL" role="37vLTx">
+                  <property role="Xl_RC" value="down" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="5qYffcWdxAM" role="3cqZAp">
+              <node concept="37vLTw" id="5qYffcWdxAN" role="3cqZAk">
+                <ref role="3cqZAo" node="5qYffcWdxAE" resolve="layout" />
               </node>
             </node>
           </node>
@@ -2207,37 +2248,43 @@
       <node concept="2n$Qni" id="5qYffcVaY9Y" role="3EZMnx">
         <node concept="2n$m9m" id="5qYffcVaY9Z" role="2n$mvf">
           <node concept="3clFbS" id="5qYffcVaYa0" role="2VODD2">
-            <node concept="3clFbJ" id="5qYffcW50HC" role="3cqZAp">
-              <node concept="3clFbS" id="5qYffcW50HE" role="3clFbx">
-                <node concept="3clFbF" id="5qYffcVggf$" role="3cqZAp">
-                  <node concept="2YIFZM" id="5qYffcVggfA" role="3clFbG">
-                    <ref role="1Pybhc" to="f6lw:7JXu42laAe2" resolve="SvgDiagramBuilder" />
-                    <ref role="37wK5l" to="f6lw:5qYffcW1r5j" resolve="useScatterLayout" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="5qYffcW54cY" role="3clFbw">
-                <node concept="2nJCIZ" id="5qYffcW52B5" role="2Oq$k0" />
-                <node concept="3TrcHB" id="5qYffcW56fd" role="2OqNvi">
-                  <ref role="3TsBF5" to="8dfc:5qYffcW4Llr" resolve="useScatterLayout" />
-                </node>
-              </node>
-              <node concept="9aQIb" id="5qYffcW59_E" role="9aQIa">
-                <node concept="3clFbS" id="5qYffcW59_F" role="9aQI4">
-                  <node concept="3clFbF" id="5qYffcW5nnd" role="3cqZAp">
-                    <node concept="2YIFZM" id="5qYffcW5rze" role="3clFbG">
-                      <ref role="37wK5l" to="f6lw:5qYffcVd9GW" resolve="useTreemapLayout" />
-                      <ref role="1Pybhc" to="f6lw:7JXu42laAe2" resolve="SvgDiagramBuilder" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs6" id="5qYffcVgg_H" role="3cqZAp">
               <node concept="2YIFZM" id="5qYffcVgg_I" role="3cqZAk">
                 <ref role="1Pybhc" to="nr2q:5qYffcVfuJy" resolve="ProjectStructureBuilder" />
                 <ref role="37wK5l" to="nr2q:5qYffcVfx3A" resolve="buildProjectModules" />
                 <node concept="2nJCIZ" id="5qYffcVgh1n" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1EBwv3" id="5qYffcWcUCJ" role="1EBEUu">
+          <node concept="3clFbS" id="5qYffcWcXTI" role="2VODD2">
+            <node concept="3clFbJ" id="5qYffcWd6Da" role="3cqZAp">
+              <node concept="2OqwBi" id="5qYffcWd8LS" role="3clFbw">
+                <node concept="2nJCIZ" id="5qYffcWd8LV" role="2Oq$k0" />
+                <node concept="3TrcHB" id="5qYffcWd8LW" role="2OqNvi">
+                  <ref role="3TsBF5" to="8dfc:5qYffcW4Llr" resolve="useScatterLayout" />
+                </node>
+              </node>
+              <node concept="9aQIb" id="5qYffcWd6Dg" role="9aQIa">
+                <node concept="3clFbS" id="5qYffcWd6Dh" role="9aQI4">
+                  <node concept="3cpWs6" id="5qYffcWd6Di" role="3cqZAp">
+                    <node concept="2ShNRf" id="5qYffcWd6Dk" role="3cqZAk">
+                      <node concept="HV5vD" id="5qYffcWd6Dm" role="2ShVmc">
+                        <ref role="HV5vE" to="aqr4:5qYffcVceZo" resolve="GraphLayoutTreemap" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="5qYffcWd6Dd" role="3clFbx">
+                <node concept="3cpWs6" id="5qYffcWd6De" role="3cqZAp">
+                  <node concept="2ShNRf" id="5qYffcWd6Dn" role="3cqZAk">
+                    <node concept="HV5vD" id="5qYffcWd6Dp" role="2ShVmc">
+                      <ref role="HV5vE" to="rvcy:5qYffcW0hYV" resolve="GraphLayoutScatter" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

@@ -478,6 +478,9 @@
               <node concept="37vLTw" id="7IsGrgM4VNf" role="37wK5m">
                 <ref role="3cqZAo" node="7JXu42laC$P" resolve="mappings" />
               </node>
+              <node concept="37vLTw" id="5qYffcW8PCV" role="37wK5m">
+                <ref role="3cqZAo" node="5qYffcW8MC8" resolve="layoutOverride" />
+              </node>
             </node>
           </node>
         </node>
@@ -498,6 +501,12 @@
         <property role="TrG5h" value="editorContext" />
         <node concept="3uibUv" id="5GheoLnJOG1" role="1tU5fm">
           <ref role="3uigEE" to="cj4x:~EditorContext" resolve="EditorContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5qYffcW8MC8" role="3clF46">
+        <property role="TrG5h" value="layoutOverride" />
+        <node concept="3uibUv" id="5qYffcW8MCa" role="1tU5fm">
+          <ref role="3uigEE" to="s6nb:7IsGrgMWT2k" resolve="GraphLayoutBase" />
         </node>
       </node>
     </node>
@@ -1617,6 +1626,36 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="5qYffcW8_eR" role="3cqZAp">
+          <node concept="3y3z36" id="5qYffcW8_eS" role="3clFbw">
+            <node concept="37vLTw" id="5qYffcW8_eT" role="3uHU7B">
+              <ref role="3cqZAo" node="5qYffcW8ye3" resolve="layoutOverride" />
+            </node>
+            <node concept="10Nm6u" id="5qYffcW8_eU" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5qYffcW8_eW" role="3clFbx">
+            <node concept="3clFbF" id="5qYffcW8_eX" role="3cqZAp">
+              <node concept="37vLTI" id="5qYffcW8_eY" role="3clFbG">
+                <node concept="2OqwBi" id="5qYffcW8_gi" role="37vLTJ">
+                  <node concept="37vLTw" id="5qYffcW8_gh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7JXu42laEfp" resolve="graph" />
+                  </node>
+                  <node concept="2OwXpG" id="5qYffcW8_gj" role="2OqNvi">
+                    <ref role="2Oxat5" to="s6nb:7IsGrgMXhgd" resolve="layout" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="5qYffcW8_f0" role="37vLTx">
+                  <ref role="3cqZAo" node="5qYffcW8ye3" resolve="layoutOverride" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="5qYffcW8_f1" role="3cqZAp">
+              <node concept="37vLTw" id="5qYffcW8_f2" role="3cqZAk">
+                <ref role="3cqZAo" node="7JXu42laEfp" resolve="graph" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="7IsGrgMZigu" role="3cqZAp">
           <node concept="3y3z36" id="7IsGrgMZigv" role="3clFbw">
             <node concept="37vLTw" id="7IsGrgMZigw" role="3uHU7B">
@@ -1859,6 +1898,12 @@
       <node concept="3Tm1VV" id="7IsGrgM4vMP" role="1B3o_S" />
       <node concept="3uibUv" id="7IsGrgM4vMQ" role="3clF45">
         <ref role="3uigEE" to="s6nb:7JXu42kiflE" resolve="SvgGraphModel" />
+      </node>
+      <node concept="37vLTG" id="5qYffcW8ye3" role="3clF46">
+        <property role="TrG5h" value="layoutOverride" />
+        <node concept="3uibUv" id="5qYffcW8ye5" role="1tU5fm">
+          <ref role="3uigEE" to="s6nb:7IsGrgMWT2k" resolve="GraphLayoutBase" />
+        </node>
       </node>
     </node>
     <node concept="Wx3nA" id="7IsGrgMUmTF" role="jymVt">
