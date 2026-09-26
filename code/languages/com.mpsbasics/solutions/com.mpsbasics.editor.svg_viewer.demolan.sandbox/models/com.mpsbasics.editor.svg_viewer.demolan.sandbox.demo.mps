@@ -53,7 +53,9 @@
         <reference id="8907189550493854801" name="targetState" index="1bRlR_" />
         <reference id="8907189550493850820" name="sourceState" index="1bRmPK" />
       </concept>
-      <concept id="6250500348204113938" name="com.mpsbasics.editor.svg_viewer.demolan.structure.ModelsOfProjectTreeMap" flags="ng" index="1H_PNx" />
+      <concept id="6250500348204113938" name="com.mpsbasics.editor.svg_viewer.demolan.structure.ModelsOfProjectTreeMap" flags="ng" index="1H_PNx">
+        <property id="6250500348219430235" name="useScatterLayout" index="1EFiAC" />
+      </concept>
       <concept id="8934429454548375974" name="com.mpsbasics.editor.svg_viewer.demolan.structure.Component" flags="ng" index="3IQu7A">
         <child id="8934429454548375979" name="inPorts" index="3IQu7F" />
         <child id="8934429454548375980" name="outPorts" index="3IQu7G" />
@@ -10790,6 +10792,7 @@
   </node>
   <node concept="1H_PNx" id="5qYffcVhd4r">
     <property role="TrG5h" value="Demo_ModelsOfProjectTreeMap" />
+    <property role="1EFiAC" value="true" />
   </node>
 </model>
 

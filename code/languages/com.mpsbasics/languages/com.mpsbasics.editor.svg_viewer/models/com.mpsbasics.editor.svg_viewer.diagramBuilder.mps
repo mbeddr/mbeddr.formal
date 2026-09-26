@@ -20,6 +20,7 @@
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="extx" ref="r:6731df3a-0697-42bd-851e-15c8e9cc608a(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.elk)" />
     <import index="aqr4" ref="r:38dba979-ec9a-4aa0-a049-504839bf1e61(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.treemap)" />
+    <import index="rvcy" ref="r:4bea2668-c309-4427-8e9d-442757efe3ea(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.scatter)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -501,8 +502,6 @@
       </node>
     </node>
     <node concept="2tJIrI" id="2W2tyeSVcaf" role="jymVt" />
-    <node concept="2tJIrI" id="2W2tyeSVcP6" role="jymVt" />
-    <node concept="2tJIrI" id="2W2tyeSVdvX" role="jymVt" />
     <node concept="2YIFZL" id="3MSqLL2OMsr" role="jymVt">
       <property role="TrG5h" value="registerConnectable" />
       <property role="2Lvdk3" value="registerConnectable" />
@@ -1819,6 +1818,38 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="5qYffcW1Ahw" role="3cqZAp">
+          <node concept="37vLTw" id="5qYffcW1Ahx" role="3clFbw">
+            <ref role="3cqZAo" node="5qYffcW1gmL" resolve="nextUseScatterLayout" />
+          </node>
+          <node concept="3clFbS" id="5qYffcW1Ahz" role="3clFbx">
+            <node concept="3clFbF" id="5qYffcW1Ah$" role="3cqZAp">
+              <node concept="37vLTI" id="5qYffcW1Ah_" role="3clFbG">
+                <node concept="2OqwBi" id="5qYffcW1Aln" role="37vLTJ">
+                  <node concept="37vLTw" id="5qYffcW1Alm" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7JXu42laEfp" resolve="graph" />
+                  </node>
+                  <node concept="2OwXpG" id="5qYffcW1Alo" role="2OqNvi">
+                    <ref role="2Oxat5" to="s6nb:7IsGrgMXhgd" resolve="layout" />
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="5qYffcW1Alp" role="37vLTx">
+                  <node concept="HV5vD" id="5qYffcW1Alr" role="2ShVmc">
+                    <ref role="HV5vE" to="rvcy:5qYffcW0hYV" resolve="GraphLayoutScatter" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5qYffcW1AhC" role="3cqZAp">
+              <node concept="37vLTI" id="5qYffcW1AhD" role="3clFbG">
+                <node concept="37vLTw" id="5qYffcW1AhE" role="37vLTJ">
+                  <ref role="3cqZAo" node="5qYffcW1gmL" resolve="nextUseScatterLayout" />
+                </node>
+                <node concept="3clFbT" id="5qYffcW1AhF" role="37vLTx" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="7IsGrgM4OZv" role="3cqZAp">
           <node concept="37vLTw" id="7IsGrgM4OZw" role="3cqZAk">
             <ref role="3cqZAo" node="7JXu42laEfp" resolve="graph" />
@@ -2020,6 +2051,29 @@
       </node>
       <node concept="3Tm1VV" id="5qYffcVd9H2" role="1B3o_S" />
       <node concept="3cqZAl" id="5qYffcVd9H3" role="3clF45" />
+    </node>
+    <node concept="Wx3nA" id="5qYffcW1gmL" role="jymVt">
+      <property role="TrG5h" value="nextUseScatterLayout" />
+      <node concept="10P_77" id="5qYffcW1gmM" role="1tU5fm" />
+      <node concept="3clFbT" id="5qYffcW1gmN" role="33vP2m" />
+      <node concept="3Tm6S6" id="5qYffcW1gmO" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="5qYffcW1r5j" role="jymVt">
+      <property role="TrG5h" value="useScatterLayout" />
+      <node concept="3clFbS" id="5qYffcW1r5k" role="3clF47">
+        <node concept="3clFbF" id="5qYffcW1r5l" role="3cqZAp">
+          <node concept="37vLTI" id="5qYffcW1r5m" role="3clFbG">
+            <node concept="37vLTw" id="5qYffcW1r5n" role="37vLTJ">
+              <ref role="3cqZAo" node="5qYffcW1gmL" resolve="nextUseScatterLayout" />
+            </node>
+            <node concept="3clFbT" id="5qYffcW1r5o" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5qYffcW1r5p" role="1B3o_S" />
+      <node concept="3cqZAl" id="5qYffcW1r5q" role="3clF45" />
     </node>
   </node>
 </model>

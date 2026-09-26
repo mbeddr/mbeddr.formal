@@ -318,13 +318,18 @@
     <node concept="PrWs8" id="5qYffcVbtMm" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="5qYffcW4Llr" role="1TKVEl">
+      <property role="IQ2nx" value="6250500348219430235" />
+      <property role="TrG5h" value="useScatterLayout" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5qYffcVbsLn">
     <property role="EcuMT" value="6250500348204403799" />
     <property role="TrG5h" value="ProjectModule" />
     <property role="R4oN_" value="A project module, populated at render time from the live MPS project for the treemap diagram" />
     <property role="3GE5qa" value="treemap" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="5qYffcVbsLp" role="1TKVEi">
       <property role="IQ2ns" value="6250500348204403801" />
       <property role="20kJfa" value="models" />
@@ -341,7 +346,7 @@
     <property role="TrG5h" value="ProjectModel" />
     <property role="R4oN_" value="A project model, populated at render time from the live MPS project for the treemap diagram" />
     <property role="3GE5qa" value="treemap" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="5qYffcVbsLr" role="1TKVEl">
       <property role="IQ2nx" value="6250500348204403803" />
       <property role="TrG5h" value="rootCount" />
@@ -349,6 +354,11 @@
     </node>
     <node concept="PrWs8" id="5qYffcVbsLs" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="1TJgyi" id="5qYffcVPUcE" role="1TKVEl">
+      <property role="IQ2nx" value="6250500348215534378" />
+      <property role="TrG5h" value="totalNodeCount" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
 </model>
