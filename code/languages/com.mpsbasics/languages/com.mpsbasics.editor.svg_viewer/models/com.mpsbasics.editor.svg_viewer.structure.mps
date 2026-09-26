@@ -140,10 +140,11 @@
       <property role="TrG5h" value="bodyText" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="5qYffcVbsy7" role="1TKVEl">
-      <property role="IQ2nx" value="6250500348204402823" />
-      <property role="TrG5h" value="weight" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    <node concept="1TJgyj" id="5qYffcWfHgq" role="1TKVEi">
+      <property role="IQ2ns" value="6250500348222297114" />
+      <property role="20kJfa" value="layoutInfo" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="5qYffcWfBDx" resolve="AbstractSvgNodeSpecificLayoutInfo" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JXu42kL_3m">
@@ -592,6 +593,26 @@
     <property role="R4oN_" value="optional layout-factory query for CellModel_SvgDiagram; returns a GraphLayoutBase or null for the default" />
     <property role="3GE5qa" value="svg_editor" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="5qYffcWfBDx">
+    <property role="EcuMT" value="6250500348222274145" />
+    <property role="TrG5h" value="AbstractSvgNodeSpecificLayoutInfo" />
+    <property role="R4oN_" value="pluggable, layout-algorithm-specific per-node data attached to an SvgNode; subclass per algorithm (e.g. treemap weight) instead of widening SvgNode itself" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="svg_editor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+  </node>
+  <node concept="1TIwiD" id="5qYffcWfBDy">
+    <property role="EcuMT" value="6250500348222274146" />
+    <property role="TrG5h" value="TreemapNodeLayoutInfo" />
+    <property role="R4oN_" value="per-node data the squarified treemap layout needs: relative area weight" />
+    <property role="3GE5qa" value="svg_editor" />
+    <ref role="1TJDcQ" node="5qYffcWfBDx" resolve="AbstractSvgNodeSpecificLayoutInfo" />
+    <node concept="1TJgyi" id="5qYffcWfBDz" role="1TKVEl">
+      <property role="IQ2nx" value="6250500348222274147" />
+      <property role="TrG5h" value="weight" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
   </node>
 </model>
 

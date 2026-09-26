@@ -539,15 +539,12 @@
       </node>
       <node concept="3Tm1VV" id="7IsGrgN28nq" role="1B3o_S" />
     </node>
-    <node concept="312cEg" id="5qYffcVcdQ8" role="jymVt">
-      <property role="TrG5h" value="weight" />
-      <node concept="10P55v" id="5qYffcVcdQa" role="1tU5fm" />
-      <node concept="1ZRNhn" id="5qYffcVcdQb" role="33vP2m">
-        <node concept="3cmrfG" id="5qYffcVcdQc" role="2$L3a6">
-          <property role="3cmrfH" value="1" />
-        </node>
+    <node concept="312cEg" id="5qYffcWgiOi" role="jymVt">
+      <property role="TrG5h" value="layoutInfo" />
+      <node concept="3uibUv" id="5qYffcWgiOk" role="1tU5fm">
+        <ref role="3uigEE" node="5qYffcWg6DI" resolve="AbstractSvgNodeSpecificLayoutInfo" />
       </node>
-      <node concept="3Tm1VV" id="5qYffcVcdQd" role="1B3o_S" />
+      <node concept="3Tm1VV" id="5qYffcWgiOl" role="1B3o_S" />
     </node>
   </node>
   <node concept="312cEu" id="7JXu42kieK7">
@@ -15376,6 +15373,11 @@
         </node>
       </node>
     </node>
+  </node>
+  <node concept="312cEu" id="5qYffcWg6DI">
+    <property role="TrG5h" value="AbstractSvgNodeSpecificLayoutInfo" />
+    <property role="1sVAO0" value="true" />
+    <node concept="3Tm1VV" id="5qYffcWg6DJ" role="1B3o_S" />
   </node>
 </model>
 
