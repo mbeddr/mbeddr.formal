@@ -18,6 +18,7 @@
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
+    <import index="extx" ref="r:6731df3a-0697-42bd-851e-15c8e9cc608a(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.elk)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -436,7 +437,7 @@
       <property role="TrG5h" value="render" />
       <node concept="3Tm1VV" id="7JXu42laC$I" role="1B3o_S" />
       <node concept="3uibUv" id="7IsGrgKOeca" role="3clF45">
-        <ref role="3uigEE" to="dxuu:~JComponent" />
+        <ref role="3uigEE" to="dxuu:~JComponent" resolve="JComponent" />
       </node>
       <node concept="37vLTG" id="7JXu42laC$K" role="3clF46">
         <property role="TrG5h" value="topLevelContent" />
@@ -475,9 +476,9 @@
         <node concept="3cpWs6" id="7JXu42laEfx" role="3cqZAp">
           <node concept="2YIFZM" id="7JXu42laEfy" role="3cqZAk">
             <ref role="1Pybhc" to="s6nb:7JXu42kkzH6" resolve="SvgViewerRuntime" />
-            <ref role="37wK5l" to="s6nb:7IsGrgKNXka" />
+            <ref role="37wK5l" to="s6nb:7IsGrgKNXka" resolve="render" />
             <node concept="37vLTw" id="7JXu42laEfz" role="37wK5m">
-              <ref role="3cqZAo" node="7IsGrgM4VNa" />
+              <ref role="3cqZAo" node="7IsGrgM4VNa" resolve="graph" />
             </node>
             <node concept="37vLTw" id="5GheoLnJOGd" role="37wK5m">
               <ref role="3cqZAo" node="5GheoLnJOFZ" resolve="editorContext" />
@@ -1047,7 +1048,7 @@
                 <node concept="3clFbJ" id="7JXu42laFQI" role="3cqZAp">
                   <node concept="2OqwBi" id="7JXu42laFQL" role="3clFbw">
                     <node concept="37vLTw" id="7JXu42laFQO" role="2Oq$k0">
-                      <ref role="3cqZAo" node="7IsGrgJv1Ip" />
+                      <ref role="3cqZAo" node="7IsGrgJv1Ip" resolve="createdSvgNode" />
                     </node>
                     <node concept="3x8VRR" id="7JXu42laFQP" role="2OqNvi" />
                   </node>
@@ -1067,7 +1068,7 @@
                                 <ref role="3cqZAo" node="7IsGrgJv0NB" resolve="parentSvgNode" />
                               </node>
                               <node concept="3Tsc0h" id="7IsGrgJv6PQ" role="2OqNvi">
-                                <ref role="3TtcxE" to="g2od:7IsGrgJtXWw" />
+                                <ref role="3TtcxE" to="g2od:7IsGrgJtXWw" resolve="node" />
                               </node>
                             </node>
                             <node concept="TSZUe" id="7IsGrgJv6PR" role="2OqNvi">
@@ -1087,7 +1088,7 @@
                                   <ref role="3cqZAo" node="3MSqLL32jST" resolve="diagram" />
                                 </node>
                                 <node concept="3Tsc0h" id="7IsGrgJv6Q6" role="2OqNvi">
-                                  <ref role="3TtcxE" to="g2od:7JXu42kL_3y" />
+                                  <ref role="3TtcxE" to="g2od:7JXu42kL_3y" resolve="node" />
                                 </node>
                               </node>
                               <node concept="TSZUe" id="7IsGrgJv6Q7" role="2OqNvi">
@@ -1114,7 +1115,7 @@
                           <ref role="3cqZAo" node="3MSqLL2OM7V" resolve="SELF_KEY" />
                         </node>
                         <node concept="37vLTw" id="3MSqLL2OZtR" role="37wK5m">
-                          <ref role="3cqZAo" node="7IsGrgJv1Ip" />
+                          <ref role="3cqZAo" node="7IsGrgJv1Ip" resolve="createdSvgNode" />
                         </node>
                       </node>
                     </node>
@@ -1146,7 +1147,7 @@
                                 <ref role="3cqZAo" node="3MSqLL33sOP" resolve="domainNode" />
                               </node>
                               <node concept="37vLTw" id="7JXu42laFRC" role="1BdPVh">
-                                <ref role="3cqZAo" node="7IsGrgJv1Ip" />
+                                <ref role="3cqZAo" node="7IsGrgJv1Ip" resolve="createdSvgNode" />
                               </node>
                               <node concept="37vLTw" id="7JXu42laFRD" role="1BdPVh">
                                 <ref role="3cqZAo" node="3MSqLL32fSp" resolve="registry" />
@@ -1378,7 +1379,7 @@
         <node concept="3uibUv" id="7IsGrgM4vMH" role="1tU5fm">
           <ref role="3uigEE" to="wyt6:~Iterable" resolve="Iterable" />
           <node concept="3uibUv" id="7IsGrgM4vMI" role="11_B2D">
-            <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
           </node>
         </node>
       </node>
@@ -1440,7 +1441,7 @@
                   <ref role="3cqZAo" node="7JXu42laEez" resolve="diagram" />
                 </node>
                 <node concept="37vLTw" id="3MSqLL349oJ" role="37wK5m">
-                  <ref role="3cqZAo" node="7IsGrgM4vMJ" />
+                  <ref role="3cqZAo" node="7IsGrgM4vMJ" resolve="mappings" />
                 </node>
                 <node concept="37vLTw" id="3MSqLL349oK" role="37wK5m">
                   <ref role="3cqZAo" node="7JXu42laEeI" resolve="registry" />
@@ -1457,7 +1458,7 @@
             <property role="TrG5h" value="c" />
           </node>
           <node concept="37vLTw" id="7JXu42laEeZ" role="2GsD0m">
-            <ref role="3cqZAo" node="7IsGrgM4vMG" />
+            <ref role="3cqZAo" node="7IsGrgM4vMG" resolve="topLevelContent" />
           </node>
           <node concept="3clFbS" id="7JXu42laEf0" role="2LFqv$">
             <node concept="3clFbF" id="7JXu42laEf1" role="3cqZAp">
@@ -1481,7 +1482,7 @@
             <property role="TrG5h" value="c2" />
           </node>
           <node concept="37vLTw" id="7JXu42laEfd" role="2GsD0m">
-            <ref role="3cqZAo" node="7IsGrgM4vMG" />
+            <ref role="3cqZAo" node="7IsGrgM4vMG" resolve="topLevelContent" />
           </node>
           <node concept="3clFbS" id="7JXu42laEfe" role="2LFqv$">
             <node concept="3clFbF" id="7JXu42laEff" role="3cqZAp">
@@ -1523,7 +1524,7 @@
             <property role="2Lvdk3" value="c3" />
           </node>
           <node concept="37vLTw" id="3MSqLL2PYJF" role="2GsD0m">
-            <ref role="3cqZAo" node="7IsGrgM4vMG" />
+            <ref role="3cqZAo" node="7IsGrgM4vMG" resolve="topLevelContent" />
           </node>
           <node concept="3clFbS" id="3MSqLL2PYJG" role="2LFqv$">
             <node concept="3clFbF" id="3MSqLL2PYJH" role="3cqZAp">
@@ -1622,11 +1623,11 @@
               <node concept="3cpWsn" id="7IsGrgMZig$" role="3cpWs9">
                 <property role="TrG5h" value="layoutConfig" />
                 <node concept="3uibUv" id="7IsGrgMZigA" role="1tU5fm">
-                  <ref role="3uigEE" to="s6nb:7IsGrgMWYou" resolve="GraphLayoutHierarchical" />
+                  <ref role="3uigEE" to="extx:7IsGrgMWYou" resolve="ElkGraphLayoutHierarchical" />
                 </node>
                 <node concept="2ShNRf" id="7IsGrgMZiuM" role="33vP2m">
                   <node concept="1pGfFk" id="7IsGrgMZiuO" role="2ShVmc">
-                    <ref role="37wK5l" to="s6nb:7IsGrgMZblD" resolve="GraphLayoutHierarchical" />
+                    <ref role="37wK5l" to="extx:7IsGrgMZblD" resolve="ElkGraphLayoutHierarchical" />
                   </node>
                 </node>
               </node>
@@ -1638,7 +1639,7 @@
                     <ref role="3cqZAo" node="7IsGrgMZig$" resolve="layoutConfig" />
                   </node>
                   <node concept="2OwXpG" id="7IsGrgMZiw5" role="2OqNvi">
-                    <ref role="2Oxat5" to="s6nb:7IsGrgMX3HM" resolve="direction" />
+                    <ref role="2Oxat5" to="extx:7IsGrgMX3HM" resolve="direction" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="7IsGrgMZigF" role="37vLTx">
@@ -1653,7 +1654,7 @@
                     <ref role="3cqZAo" node="7IsGrgMZig$" resolve="layoutConfig" />
                   </node>
                   <node concept="2OwXpG" id="7IsGrgMZixm" role="2OqNvi">
-                    <ref role="2Oxat5" to="s6nb:7IsGrgMX3HQ" resolve="nodeSpacing" />
+                    <ref role="2Oxat5" to="extx:7IsGrgMX3HQ" resolve="nodeSpacing" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="7IsGrgMZigJ" role="37vLTx">
@@ -1668,7 +1669,7 @@
                     <ref role="3cqZAo" node="7IsGrgMZig$" resolve="layoutConfig" />
                   </node>
                   <node concept="2OwXpG" id="7IsGrgMZiyB" role="2OqNvi">
-                    <ref role="2Oxat5" to="s6nb:7IsGrgMX3HW" resolve="layerSpacing" />
+                    <ref role="2Oxat5" to="extx:7IsGrgMX3HW" resolve="layerSpacing" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="7IsGrgMZigN" role="37vLTx">
@@ -1683,7 +1684,7 @@
                     <ref role="3cqZAo" node="7IsGrgMZig$" resolve="layoutConfig" />
                   </node>
                   <node concept="2OwXpG" id="7IsGrgMZizS" role="2OqNvi">
-                    <ref role="2Oxat5" to="s6nb:7IsGrgMX3I2" resolve="edgeNodeSpacing" />
+                    <ref role="2Oxat5" to="extx:7IsGrgMX3I2" resolve="edgeNodeSpacing" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="7IsGrgMZigR" role="37vLTx">
@@ -1698,7 +1699,7 @@
                     <ref role="3cqZAo" node="7IsGrgMZig$" resolve="layoutConfig" />
                   </node>
                   <node concept="2OwXpG" id="7IsGrgMZi_9" role="2OqNvi">
-                    <ref role="2Oxat5" to="s6nb:7IsGrgMX3I8" resolve="edgeSpacing" />
+                    <ref role="2Oxat5" to="extx:7IsGrgMX3I8" resolve="edgeSpacing" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="7IsGrgMZigV" role="37vLTx">

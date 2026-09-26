@@ -19,6 +19,7 @@
     <import index="tpc2" ref="r:00000000-0000-4000-0000-011c8959029e(jetbrains.mps.lang.editor.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
+    <import index="extx" ref="r:6731df3a-0697-42bd-851e-15c8e9cc608a(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.elk)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -471,12 +472,12 @@
                 <property role="TrG5h" value="layoutConfig" />
                 <property role="2Lvdk3" value="layoutConfig" />
                 <node concept="3uibUv" id="7IsGrgMZbHc" role="1tU5fm">
-                  <ref role="3uigEE" to="s6nb:7IsGrgMWYou" resolve="GraphLayoutHierarchical" />
+                  <ref role="3uigEE" to="extx:7IsGrgMWYou" resolve="ElkGraphLayoutHierarchical" />
                 </node>
                 <node concept="2ShNRf" id="7IsGrgMZbHd" role="33vP2m">
                   <node concept="1pGfFk" id="7IsGrgMZbHf" role="2ShVmc">
                     <property role="373rjd" value="true" />
-                    <ref role="37wK5l" to="s6nb:7IsGrgMZblD" />
+                    <ref role="37wK5l" to="extx:7IsGrgMZblD" resolve="ElkGraphLayoutHierarchical" />
                   </node>
                 </node>
               </node>
@@ -488,7 +489,7 @@
                     <ref role="3cqZAo" node="7IsGrgMZbHa" resolve="layoutConfig" />
                   </node>
                   <node concept="2OwXpG" id="7IsGrgMZbHp" role="2OqNvi">
-                    <ref role="2Oxat5" to="s6nb:7IsGrgMX3HM" resolve="direction" />
+                    <ref role="2Oxat5" to="extx:7IsGrgMX3HM" resolve="direction" />
                   </node>
                 </node>
                 <node concept="2OqwBi" id="7IsGrgMZbHq" role="37vLTx">
@@ -526,7 +527,7 @@
                         <ref role="3cqZAo" node="7IsGrgMZbHa" resolve="layoutConfig" />
                       </node>
                       <node concept="2OwXpG" id="7IsGrgMZbHT" role="2OqNvi">
-                        <ref role="2Oxat5" to="s6nb:7IsGrgMX3HQ" resolve="nodeSpacing" />
+                        <ref role="2Oxat5" to="extx:7IsGrgMX3HQ" resolve="nodeSpacing" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="7IsGrgMZbHU" role="37vLTx">
@@ -563,7 +564,7 @@
                         <ref role="3cqZAo" node="7IsGrgMZbHa" resolve="layoutConfig" />
                       </node>
                       <node concept="2OwXpG" id="7IsGrgMZbIl" role="2OqNvi">
-                        <ref role="2Oxat5" to="s6nb:7IsGrgMX3HW" resolve="layerSpacing" />
+                        <ref role="2Oxat5" to="extx:7IsGrgMX3HW" resolve="layerSpacing" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="7IsGrgMZbIm" role="37vLTx">
@@ -600,7 +601,7 @@
                         <ref role="3cqZAo" node="7IsGrgMZbHa" resolve="layoutConfig" />
                       </node>
                       <node concept="2OwXpG" id="7IsGrgMZbIL" role="2OqNvi">
-                        <ref role="2Oxat5" to="s6nb:7IsGrgMX3I2" resolve="edgeNodeSpacing" />
+                        <ref role="2Oxat5" to="extx:7IsGrgMX3I2" resolve="edgeNodeSpacing" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="7IsGrgMZbIM" role="37vLTx">
@@ -637,7 +638,7 @@
                         <ref role="3cqZAo" node="7IsGrgMZbHa" resolve="layoutConfig" />
                       </node>
                       <node concept="2OwXpG" id="7IsGrgMZbJd" role="2OqNvi">
-                        <ref role="2Oxat5" to="s6nb:7IsGrgMX3I8" resolve="edgeSpacing" />
+                        <ref role="2Oxat5" to="extx:7IsGrgMX3I8" resolve="edgeSpacing" />
                       </node>
                     </node>
                     <node concept="2OqwBi" id="7IsGrgMZbJe" role="37vLTx">
