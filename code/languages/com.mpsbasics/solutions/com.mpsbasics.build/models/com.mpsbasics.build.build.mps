@@ -116,9 +116,6 @@
       <concept id="1500819558095907805" name="jetbrains.mps.build.mps.structure.BuildMps_Group" flags="ng" index="2G$12M">
         <child id="1500819558095907806" name="modules" index="2G$12L" />
       </concept>
-      <concept id="1265949165890536423" name="jetbrains.mps.build.mps.structure.BuildMpsLayout_ModuleJars" flags="ng" index="L2wRC">
-        <reference id="1265949165890536425" name="module" index="L2wRA" />
-      </concept>
       <concept id="868032131020265945" name="jetbrains.mps.build.mps.structure.BuildMPSPlugin" flags="ng" index="3b7kt6" />
       <concept id="5253498789149381388" name="jetbrains.mps.build.mps.structure.BuildMps_Module" flags="ng" index="3bQrTs">
         <child id="5253498789149547825" name="sources" index="3bR31x" />
@@ -296,6 +293,20 @@
               </node>
             </node>
           </node>
+          <node concept="2HvfSZ" id="5qYffcULCFh" role="39821P">
+            <node concept="398BVA" id="5qYffcULCFj" role="2HvfZ0">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="5qYffcULCFk" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="5qYffcULCFl" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.editor.svg_viewer.rt" />
+                  <node concept="2Ry0Ak" id="5qYffcULCFm" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="pUk6x" id="6hyv0iVPlGX" role="pUk7w" />
       </node>
@@ -306,80 +317,6 @@
       <node concept="m$_wl" id="4oT$_WGcUcB" role="39821P">
         <ref role="m_rDy" node="5gFsbf342Kk" resolve="com.mpsbasics.build" />
         <node concept="pUk6x" id="4oT$_WGcUcC" role="pUk7w" />
-      </node>
-      <node concept="m$_wl" id="4oT$_WGcUd2" role="39821P">
-        <ref role="m_rDy" node="6hyv0iVPlE4" resolve="com.mpsbasics" />
-        <node concept="398223" id="4oT$_WGcUd3" role="39821P">
-          <node concept="3_J27D" id="4oT$_WGcUd4" role="Nbhlr">
-            <node concept="3Mxwew" id="4oT$_WGcUd5" role="3MwsjC">
-              <property role="3MwjfP" value="lib" />
-            </node>
-          </node>
-          <node concept="2HvfSZ" id="4oT$_WGcUd6" role="39821P">
-            <node concept="398BVA" id="4oT$_WGcUd7" role="2HvfZ0">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="4oT$_WGcUd8" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="4oT$_WGcUd9" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mpsbasics.docx4j.lib" />
-                  <node concept="2Ry0Ak" id="4oT$_WGcUda" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2HvfSZ" id="4oT$_WGcUdb" role="39821P">
-            <node concept="398BVA" id="4oT$_WGcUdc" role="2HvfZ0">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="4oT$_WGcUdd" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="4oT$_WGcUde" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mpsbasics.pdfbox" />
-                  <node concept="2Ry0Ak" id="4oT$_WGcUdf" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2HvfSZ" id="4oT$_WGcUdg" role="39821P">
-            <node concept="398BVA" id="4oT$_WGcUdh" role="2HvfZ0">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="4oT$_WGcUdi" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="4oT$_WGcUdj" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mpsbasics.jira.pluginSolution" />
-                  <node concept="2Ry0Ak" id="4oT$_WGcUdk" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="2HvfSZ" id="4oT$_WGcUdl" role="39821P">
-            <node concept="398BVA" id="4oT$_WGcUdm" role="2HvfZ0">
-              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
-              <node concept="2Ry0Ak" id="4oT$_WGcUdn" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="4oT$_WGcUdo" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.mpsbasics.langchain4j" />
-                  <node concept="2Ry0Ak" id="4oT$_WGcUdp" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="pUk6x" id="4oT$_WGcUdq" role="pUk7w" />
-      </node>
-      <node concept="m$_wl" id="4oT$_WGcUdt" role="39821P">
-        <ref role="m_rDy" node="2MrvZqtDklV" resolve="com.mpsbasics.testutils" />
-        <node concept="pUk6x" id="4oT$_WGcUdu" role="pUk7w" />
-      </node>
-      <node concept="L2wRC" id="wUJmWCwVZN" role="39821P">
-        <ref role="L2wRA" node="5jdn85oHU1h" resolve="com.mpsbasics.build" />
       </node>
     </node>
     <node concept="2_Ic$z" id="4N7LxkPJhG0" role="3989C9">
@@ -3421,14 +3358,15 @@
         </node>
         <node concept="1SiIV0" id="7kO3aTg2$Ju" role="3bR37C">
           <node concept="1BurEX" id="7kO3aTg2$Jw" role="1SiIV1">
-            <node concept="55IIr" id="7kO3aTg2SnC" role="1BurEY">
-              <node concept="2Ry0Ak" id="7kO3aTg2SnD" role="iGT6I">
+            <node concept="398BVA" id="5qYffcULJBU" role="1BurEY">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="5qYffcULJBV" role="iGT6I">
                 <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="7kO3aTg2SnE" role="2Ry0An">
+                <node concept="2Ry0Ak" id="5qYffcULJBW" role="2Ry0An">
                   <property role="2Ry0Am" value="com.mpsbasics.editor.svg_viewer.rt" />
-                  <node concept="2Ry0Ak" id="7kO3aTg2SnF" role="2Ry0An">
+                  <node concept="2Ry0Ak" id="5qYffcULJBX" role="2Ry0An">
                     <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="7kO3aTg2SnG" role="2Ry0An">
+                    <node concept="2Ry0Ak" id="5qYffcULJBY" role="2Ry0An">
                       <property role="2Ry0Am" value="jsvg.jar" />
                     </node>
                   </node>

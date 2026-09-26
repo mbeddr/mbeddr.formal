@@ -4,17 +4,11 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot path="${module}/models" />
     </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/jsvg.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/org.eclipse.elk.core.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/org.eclipse.elk.graph.jar" />
-    </modelRoot>
-    <modelRoot type="java_classes">
-      <sourceRoot path="${module}/lib/org.eclipse.elk.alg.layered.jar" />
+    <modelRoot contentPath="${module}/lib" type="java_classes">
+      <sourceRoot location="jsvg.jar" />
+      <sourceRoot location="org.eclipse.elk.core.jar" />
+      <sourceRoot location="org.eclipse.elk.graph.jar" />
+      <sourceRoot location="org.eclipse.elk.alg.layered.jar" />
     </modelRoot>
   </models>
   <facets>
