@@ -30,6 +30,7 @@
     <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
     <import index="jlyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing.filechooser(JDK/)" />
     <import index="extx" ref="r:6731df3a-0697-42bd-851e-15c8e9cc608a(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.elk)" />
+    <import index="lzb2" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.ui(MPS.IDEA/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -1250,8 +1251,29 @@
             </node>
             <node concept="liA8E" id="7IsGrgLUGTz" role="2OqNvi">
               <ref role="37wK5l" to="wyt6:~StringBuilder.append(java.lang.String)" resolve="append" />
-              <node concept="Xl_RD" id="7IsGrgLUGT$" role="37wK5m">
-                <property role="Xl_RC" value="&lt;defs&gt;&lt;marker id=\&quot;arrow\&quot; viewBox=\&quot;0 0 10 10\&quot; refX=\&quot;9\&quot; refY=\&quot;5\&quot; markerWidth=\&quot;6\&quot; markerHeight=\&quot;6\&quot; orient=\&quot;auto-start-reverse\&quot;&gt;&lt;path d=\&quot;M 0 0 L 10 5 L 0 10 z\&quot; fill=\&quot;#333333\&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;\n" />
+              <node concept="3cpWs3" id="ALyYuEsq95" role="37wK5m">
+                <node concept="3cpWs3" id="ALyYuEsq98" role="3uHU7B">
+                  <node concept="Xl_RD" id="ALyYuEsq9b" role="3uHU7B">
+                    <property role="Xl_RC" value="&lt;defs&gt;&lt;marker id=\&quot;arrow\&quot; viewBox=\&quot;0 0 10 10\&quot; refX=\&quot;9\&quot; refY=\&quot;5\&quot; markerWidth=\&quot;6\&quot; markerHeight=\&quot;6\&quot; orient=\&quot;auto-start-reverse\&quot;&gt;&lt;path d=\&quot;M 0 0 L 10 5 L 0 10 z\&quot; fill=\&quot;" />
+                  </node>
+                  <node concept="1eOMI4" id="ALyYuEsq9c" role="3uHU7w">
+                    <node concept="3K4zz7" id="ALyYuEsq9e" role="1eOMHV">
+                      <node concept="2YIFZM" id="ALyYuEsq9i" role="3K4Cdx">
+                        <ref role="1Pybhc" node="7JXu42ki_zC" resolve="SvgWriter" />
+                        <ref role="37wK5l" node="ALyYuEnakk" resolve="isDarkTheme" />
+                      </node>
+                      <node concept="Xl_RD" id="ALyYuEsq9j" role="3K4E3e">
+                        <property role="Xl_RC" value="#bbbbbb" />
+                      </node>
+                      <node concept="Xl_RD" id="ALyYuEsq9k" role="3K4GZi">
+                        <property role="Xl_RC" value="#333333" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="ALyYuEsq9l" role="3uHU7w">
+                  <property role="Xl_RC" value="\&quot;/&gt;&lt;/marker&gt;&lt;/defs&gt;&#10;" />
+                </node>
               </node>
             </node>
           </node>
@@ -6641,6 +6663,23 @@
       <node concept="3uibUv" id="5qYffcVNeEY" role="3clF45">
         <ref role="3uigEE" to="wyt6:~String" resolve="String" />
       </node>
+    </node>
+    <node concept="2YIFZL" id="ALyYuEnakk" role="jymVt">
+      <property role="TrG5h" value="isDarkTheme" />
+      <node concept="3clFbS" id="ALyYuEnakl" role="3clF47">
+        <node concept="3cpWs6" id="ALyYuEnakm" role="3cqZAp">
+          <node concept="3fqX7Q" id="ALyYuEnakn" role="3cqZAk">
+            <node concept="1eOMI4" id="ALyYuEnakp" role="3fr31v">
+              <node concept="2YIFZM" id="ALyYuEnaku" role="1eOMHV">
+                <ref role="1Pybhc" to="lzb2:~JBColor" resolve="JBColor" />
+                <ref role="37wK5l" to="lzb2:~JBColor.isBright()" resolve="isBright" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="ALyYuEnakq" role="1B3o_S" />
+      <node concept="10P_77" id="ALyYuEnakr" role="3clF45" />
     </node>
   </node>
   <node concept="312cEu" id="7JXu42kkzH6">
