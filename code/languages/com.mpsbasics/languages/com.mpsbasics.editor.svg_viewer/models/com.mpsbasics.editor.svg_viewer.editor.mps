@@ -92,6 +92,23 @@
           <property role="VOm3f" value="true" />
         </node>
       </node>
+      <node concept="3EZMnI" id="ALyYuEcI8z" role="3EZMnx">
+        <node concept="3F0ifn" id="ALyYuEcI8$" role="3EZMnx">
+          <property role="3F0ifm" value="canvas size:" />
+        </node>
+        <node concept="3F1sOY" id="ALyYuEcI8_" role="3EZMnx">
+          <property role="39s7Ar" value="true" />
+          <property role="1$x2rV" value="default 640x480" />
+          <ref role="1NtTu8" to="g2od:ALyYuE7Pcc" resolve="canvasSize" />
+          <node concept="ljvvj" id="ALyYuEcI8A" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="ALyYuEcI8B" role="2iSdaV" />
+        <node concept="VPXOz" id="ALyYuEcI8C" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
       <node concept="VPXOz" id="5qYffcWf1Pk" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>

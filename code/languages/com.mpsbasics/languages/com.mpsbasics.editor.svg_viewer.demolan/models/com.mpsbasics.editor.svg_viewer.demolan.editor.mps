@@ -26,6 +26,7 @@
     <import index="rvcy" ref="r:4bea2668-c309-4427-8e9d-442757efe3ea(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.scatter)" />
     <import index="aqr4" ref="r:38dba979-ec9a-4aa0-a049-504839bf1e61(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.treemap)" />
     <import index="extx" ref="r:6731df3a-0697-42bd-851e-15c8e9cc608a(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.elk)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -282,10 +283,12 @@
       <concept id="3387399765528647189" name="com.mpsbasics.editor.svg_viewer.structure.Parameter_DslNode" flags="ng" index="2n$u0Q" />
       <concept id="3387399765528482801" name="com.mpsbasics.editor.svg_viewer.structure.CellModel_SvgDiagram" flags="ng" index="2n$Qni">
         <child id="3387399765528613356" name="content" index="2n$mvf" />
+        <child id="698493244327023372" name="canvasSize" index="2zFHzF" />
         <child id="6250500348220314221" name="layout" index="1EBEUu" />
       </concept>
       <concept id="3387399765531496367" name="com.mpsbasics.editor.svg_viewer.structure.SvgDiagramNode_MappingFunction" flags="ig" index="2nJnAc" />
       <concept id="3387399765531360668" name="com.mpsbasics.editor.svg_viewer.structure.Parameter_MyNode" flags="ng" index="2nJCIZ" />
+      <concept id="698493244326995292" name="com.mpsbasics.editor.svg_viewer.structure.SvgDiagramCanvasSize_BLQuery" flags="ig" index="2zFQUV" />
       <concept id="8907189550484598770" name="com.mpsbasics.editor.svg_viewer.structure.SvgDiagramNode_ChildrenBLQuery" flags="ig" index="1ka1T6" />
       <concept id="6250500348220291888" name="com.mpsbasics.editor.svg_viewer.structure.SvgDiagramLayout_BLQuery" flags="ig" index="1EBwv3" />
       <concept id="4375364807114737673" name="com.mpsbasics.editor.svg_viewer.structure.Parameter_Registry" flags="ng" index="1Yqqcl" />
@@ -394,6 +397,7 @@
                   </node>
                   <node concept="1Q80Hx" id="5GheoLnJQIC" role="37wK5m" />
                   <node concept="10Nm6u" id="5qYffcW94se" role="37wK5m" />
+                  <node concept="10Nm6u" id="ALyYuE9yxh" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -1026,6 +1030,24 @@
                 <node concept="2nJCIZ" id="7IsGrgKgE0W" role="2Oq$k0" />
                 <node concept="3Tsc0h" id="7IsGrgKgE0X" role="2OqNvi">
                   <ref role="3TtcxE" to="8dfc:7IsGrgKgxvt" resolve="content" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2zFQUV" id="ALyYuEdeBR" role="2zFHzF">
+          <node concept="3clFbS" id="ALyYuEdeBS" role="2VODD2">
+            <node concept="3clFbF" id="ALyYuEdeWe" role="3cqZAp">
+              <node concept="2ShNRf" id="ALyYuEdeWc" role="3clFbG">
+                <node concept="1pGfFk" id="ALyYuEdgn9" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                  <node concept="3cmrfG" id="ALyYuEdgs0" role="37wK5m">
+                    <property role="3cmrfH" value="1024" />
+                  </node>
+                  <node concept="3cmrfG" id="ALyYuEdiJw" role="37wK5m">
+                    <property role="3cmrfH" value="900" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -2289,6 +2311,24 @@
             </node>
           </node>
         </node>
+        <node concept="2zFQUV" id="ALyYuEbTta" role="2zFHzF">
+          <node concept="3clFbS" id="ALyYuEbTtc" role="2VODD2">
+            <node concept="3cpWs6" id="ALyYuEbTtd" role="3cqZAp">
+              <node concept="2ShNRf" id="ALyYuEbTte" role="3cqZAk">
+                <node concept="1pGfFk" id="ALyYuEbTtg" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="z60i:~Dimension.&lt;init&gt;(int,int)" resolve="Dimension" />
+                  <node concept="3cmrfG" id="ALyYuEbTth" role="37wK5m">
+                    <property role="3cmrfH" value="1000" />
+                  </node>
+                  <node concept="3cmrfG" id="ALyYuEbTti" role="37wK5m">
+                    <property role="3cmrfH" value="700" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
   </node>
@@ -2459,7 +2499,7 @@
                 </node>
               </node>
               <node concept="2pIpSj" id="5qYffcWhPie" role="2pJxcM">
-                <ref role="2pIpSl" to="g2od:5qYffcWfHgq" />
+                <ref role="2pIpSl" to="g2od:5qYffcWfHgq" resolve="layoutInfo" />
                 <node concept="2pJPED" id="5qYffcWhPig" role="28nt2d">
                   <ref role="2pJxaS" to="g2od:5qYffcWfBDy" resolve="TreemapNodeLayoutInfo" />
                   <node concept="2pJxcG" id="5qYffcWhPih" role="2pJxcM">

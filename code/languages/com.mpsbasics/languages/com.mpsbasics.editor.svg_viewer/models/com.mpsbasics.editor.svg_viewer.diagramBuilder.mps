@@ -21,6 +21,7 @@
     <import index="extx" ref="r:6731df3a-0697-42bd-851e-15c8e9cc608a(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.elk)" />
     <import index="aqr4" ref="r:38dba979-ec9a-4aa0-a049-504839bf1e61(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.treemap)" />
     <import index="rvcy" ref="r:4bea2668-c309-4427-8e9d-442757efe3ea(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.scatter)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -494,6 +495,9 @@
             <node concept="37vLTw" id="5GheoLnJOGd" role="37wK5m">
               <ref role="3cqZAo" node="5GheoLnJOFZ" resolve="editorContext" />
             </node>
+            <node concept="37vLTw" id="ALyYuE9k7h" role="37wK5m">
+              <ref role="3cqZAo" node="ALyYuE9g0P" resolve="canvasSizeOverride" />
+            </node>
           </node>
         </node>
       </node>
@@ -507,6 +511,12 @@
         <property role="TrG5h" value="layoutOverride" />
         <node concept="3uibUv" id="5qYffcW8MCa" role="1tU5fm">
           <ref role="3uigEE" to="s6nb:7IsGrgMWT2k" resolve="GraphLayoutBase" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="ALyYuE9g0P" role="3clF46">
+        <property role="TrG5h" value="canvasSizeOverride" />
+        <node concept="3uibUv" id="ALyYuE9g0R" role="1tU5fm">
+          <ref role="3uigEE" to="z60i:~Dimension" resolve="Dimension" />
         </node>
       </node>
     </node>

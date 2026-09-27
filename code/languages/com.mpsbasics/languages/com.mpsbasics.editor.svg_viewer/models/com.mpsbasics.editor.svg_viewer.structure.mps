@@ -340,6 +340,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="5qYffcW83GK" resolve="SvgDiagramLayout_BLQuery" />
     </node>
+    <node concept="1TJgyj" id="ALyYuE7Pcc" role="1TKVEi">
+      <property role="IQ2ns" value="698493244327023372" />
+      <property role="20kJfa" value="canvasSize" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="ALyYuE7Ils" resolve="SvgDiagramCanvasSize_BLQuery" />
+    </node>
   </node>
   <node concept="1TIwiD" id="2W2tyeS$LhP">
     <property role="EcuMT" value="3387399765528614005" />
@@ -613,6 +619,12 @@
       <property role="TrG5h" value="weight" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="ALyYuE7Ils">
+    <property role="EcuMT" value="698493244326995292" />
+    <property role="TrG5h" value="SvgDiagramCanvasSize_BLQuery" />
+    <property role="R4oN_" value="Optional per-diagram query returning the embedded viewer's initial on-screen java.awt.Dimension" />
+    <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
   </node>
 </model>
 

@@ -21,6 +21,7 @@
     <import index="tp25" ref="r:00000000-0000-4000-0000-011c89590301(jetbrains.mps.lang.smodel.structure)" />
     <import index="extx" ref="r:6731df3a-0697-42bd-851e-15c8e9cc608a(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.elk)" />
     <import index="aqr4" ref="r:38dba979-ec9a-4aa0-a049-504839bf1e61(com.mpsbasics.editor.svg_viewer.rt.runtime.layout.treemap)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -2306,6 +2307,52 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="5qYffcWg$EB" role="1B3o_S" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="ALyYuE8g5s">
+    <property role="TrG5h" value="SvgDiagramCanvasSize_BLQuery_Behavior" />
+    <ref role="13h7C2" to="g2od:ALyYuE7Ils" resolve="SvgDiagramCanvasSize_BLQuery" />
+    <node concept="13hLZK" id="ALyYuE8g5v" role="13h7CW">
+      <node concept="3clFbS" id="ALyYuE8g5x" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="ALyYuE8g5y" role="13h7CS">
+      <property role="TrG5h" value="getExpectedReturnType" />
+      <ref role="13i0hy" to="tpek:hEwIGRD" resolve="getExpectedReturnType" />
+      <node concept="3Tqbb2" id="ALyYuE8g5A" role="3clF45" />
+      <node concept="3clFbS" id="ALyYuE8g5B" role="3clF47">
+        <node concept="3clFbF" id="ALyYuE8g5C" role="3cqZAp">
+          <node concept="2c44tf" id="ALyYuE8g5E" role="3clFbG">
+            <node concept="3uibUv" id="ALyYuE8g5G" role="2c44tc">
+              <ref role="3uigEE" to="z60i:~Dimension" resolve="Dimension" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="ALyYuE8g5H" role="1B3o_S" />
+    </node>
+    <node concept="13i0hz" id="ALyYuE8g5I" role="13h7CS">
+      <property role="TrG5h" value="getParameterConcepts" />
+      <ref role="13i0hy" to="tpek:2xELmDxyi2v" resolve="getParameterConcepts" />
+      <node concept="_YKpA" id="ALyYuE8g5M" role="3clF45">
+        <node concept="3bZ5Sz" id="ALyYuE8g5O" role="_ZDj9">
+          <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="ALyYuE8g5P" role="3clF47">
+        <node concept="3clFbF" id="ALyYuE8g5Q" role="3cqZAp">
+          <node concept="2ShNRf" id="ALyYuE8g5S" role="3clFbG">
+            <node concept="Tc6Ow" id="ALyYuE8g5U" role="2ShVmc">
+              <node concept="3bZ5Sz" id="ALyYuE8g5V" role="HW$YZ">
+                <ref role="3bZ5Sy" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
+              </node>
+              <node concept="35c_gC" id="ALyYuE8g5W" role="HW$Y0">
+                <ref role="35c_gD" to="g2od:2W2tyeSJfQs" resolve="Parameter_MyNode" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="ALyYuE8g5X" role="1B3o_S" />
     </node>
   </node>
 </model>
