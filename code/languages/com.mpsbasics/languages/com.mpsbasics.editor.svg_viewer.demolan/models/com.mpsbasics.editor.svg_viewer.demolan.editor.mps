@@ -1575,7 +1575,7 @@
         </node>
       </node>
       <node concept="3F0ifn" id="7IsGrgMOVm8" role="3EZMnx">
-        <property role="3F0ifm" value="GSN diagram:" />
+        <property role="3F0ifm" value="GSN diagram (hierarchical layout):" />
       </node>
       <node concept="2n$Qni" id="7IsGrgMOVm9" role="3EZMnx">
         <node concept="2n$m9m" id="7IsGrgMOVma" role="2n$mvf">
@@ -1633,6 +1633,86 @@
             <node concept="3cpWs6" id="5qYffcWdxAM" role="3cqZAp">
               <node concept="37vLTw" id="5qYffcWdxAN" role="3cqZAk">
                 <ref role="3cqZAo" node="5qYffcWdxAE" resolve="layout" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="ALyYuEwq0B" role="3EZMnx">
+        <property role="3F0ifm" value="GSN diagram (tree layout):" />
+      </node>
+      <node concept="2n$Qni" id="ALyYuEwq4d" role="3EZMnx">
+        <node concept="2n$m9m" id="ALyYuEwq4e" role="2n$mvf">
+          <node concept="3clFbS" id="ALyYuEwq4g" role="2VODD2">
+            <node concept="3clFbF" id="ALyYuEwq4h" role="3cqZAp">
+              <node concept="2OqwBi" id="ALyYuEwq4j" role="3clFbG">
+                <node concept="2OqwBi" id="ALyYuEwq4m" role="2Oq$k0">
+                  <node concept="2nJCIZ" id="ALyYuEwq4p" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="ALyYuEwq4q" role="2OqNvi">
+                    <ref role="3TtcxE" to="8dfc:7IsGrgMJ9cy" resolve="entities" />
+                  </node>
+                </node>
+                <node concept="3QWeyG" id="ALyYuEwq4r" role="2OqNvi">
+                  <node concept="2OqwBi" id="ALyYuEwq4t" role="576Qk">
+                    <node concept="2nJCIZ" id="ALyYuEwq4w" role="2Oq$k0" />
+                    <node concept="3Tsc0h" id="ALyYuEwq4x" role="2OqNvi">
+                      <ref role="3TtcxE" to="8dfc:7IsGrgMJNpN" resolve="connections" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1EBwv3" id="ALyYuEwq4y" role="1EBEUu">
+          <node concept="3clFbS" id="ALyYuEwq4$" role="2VODD2">
+            <node concept="3cpWs8" id="ALyYuEx5nV" role="3cqZAp">
+              <node concept="3cpWsn" id="ALyYuEx5nY" role="3cpWs9">
+                <property role="TrG5h" value="layout" />
+                <node concept="3uibUv" id="ALyYuEx5o0" role="1tU5fm">
+                  <ref role="3uigEE" to="extx:ALyYuEusTx" resolve="ElkGraphLayoutTree" />
+                </node>
+                <node concept="2ShNRf" id="ALyYuEx5o1" role="33vP2m">
+                  <node concept="1pGfFk" id="ALyYuEx5o3" role="2ShVmc">
+                    <property role="373rjd" value="true" />
+                    <ref role="37wK5l" to="extx:ALyYuEusT_" resolve="ElkGraphLayoutTree" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="ALyYuEx5Wa" role="3cqZAp">
+              <node concept="37vLTI" id="ALyYuEx5Wc" role="3clFbG">
+                <node concept="2OqwBi" id="ALyYuEx5Wf" role="37vLTJ">
+                  <node concept="37vLTw" id="ALyYuEx5Wi" role="2Oq$k0">
+                    <ref role="3cqZAo" node="ALyYuEx5nY" resolve="layout" />
+                  </node>
+                  <node concept="2OwXpG" id="ALyYuEx5Wj" role="2OqNvi">
+                    <ref role="2Oxat5" to="extx:ALyYuEusTG" resolve="direction" />
+                  </node>
+                </node>
+                <node concept="Xl_RD" id="ALyYuEx5Wk" role="37vLTx">
+                  <property role="Xl_RC" value="down" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="ALyYuExM5d" role="3cqZAp">
+              <node concept="37vLTI" id="ALyYuExM5f" role="3clFbG">
+                <node concept="2OqwBi" id="ALyYuExM5i" role="37vLTJ">
+                  <node concept="37vLTw" id="ALyYuExM5l" role="2Oq$k0">
+                    <ref role="3cqZAo" node="ALyYuEx5nY" resolve="layout" />
+                  </node>
+                  <node concept="2OwXpG" id="ALyYuExM5m" role="2OqNvi">
+                    <ref role="2Oxat5" to="extx:ALyYuEusTL" resolve="nodeSpacing" />
+                  </node>
+                </node>
+                <node concept="3cmrfG" id="ALyYuExM5n" role="37vLTx">
+                  <property role="3cmrfH" value="60" />
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="ALyYuEwq4_" role="3cqZAp">
+              <node concept="37vLTw" id="ALyYuEx6xw" role="3cqZAk">
+                <ref role="3cqZAo" node="ALyYuEx5nY" resolve="layout" />
               </node>
             </node>
           </node>

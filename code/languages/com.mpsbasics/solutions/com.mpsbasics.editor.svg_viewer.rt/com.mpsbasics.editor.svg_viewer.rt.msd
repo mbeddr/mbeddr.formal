@@ -9,6 +9,7 @@
       <sourceRoot location="org.eclipse.elk.core.jar" />
       <sourceRoot location="org.eclipse.elk.graph.jar" />
       <sourceRoot location="org.eclipse.elk.alg.layered.jar" />
+      <sourceRoot location="org.eclipse.elk.alg.mrtree.jar" />
       <sourceRoot location="org.eclipse.emf.common.jar" />
     </modelRoot>
   </models>
@@ -20,6 +21,8 @@
       <library location="${module}/lib/org.eclipse.elk.graph.jar" />
       <library location="${module}/lib/org.eclipse.elk.alg.common.jar" />
       <library location="${module}/lib/org.eclipse.elk.alg.layered.jar" />
+      <library location="${module}/lib/org.eclipse.elk.alg.mrtree.jar" />
+      <library location="${module}/lib/org.eclipse.xtext.xbase.lib.jar" />
       <library location="${module}/lib/org.eclipse.emf.common.jar" />
       <library location="${module}/lib/org.eclipse.emf.ecore.jar" />
       <library location="${module}/lib/org.eclipse.emf.ecore.xmi.jar" />
