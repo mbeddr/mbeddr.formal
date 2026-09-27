@@ -206,7 +206,6 @@
       <concept id="1237909114519" name="jetbrains.mps.baseLanguage.collections.structure.GetValuesOperation" flags="nn" index="T8wYR" />
       <concept id="1160600644654" name="jetbrains.mps.baseLanguage.collections.structure.ListCreatorWithInit" flags="nn" index="Tc6Ow" />
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
-      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1197683403723" name="jetbrains.mps.baseLanguage.collections.structure.MapType" flags="in" index="3rvAFt">
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
@@ -348,20 +347,6 @@
                 </node>
               </node>
             </node>
-            <node concept="2xdQw9" id="2W2tyeT04Yf" role="3cqZAp">
-              <property role="2xdLsb" value="gZ5fh_4/error" />
-              <node concept="3cpWs3" id="2W2tyeT04Yg" role="9lYJi">
-                <node concept="2OqwBi" id="2W2tyeT07xu" role="3uHU7w">
-                  <node concept="37vLTw" id="2W2tyeT04Yh" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2W2tyeSYSMe" resolve="diagramNodes" />
-                  </node>
-                  <node concept="34oBXx" id="2W2tyeT08ru" role="2OqNvi" />
-                </node>
-                <node concept="Xl_RD" id="2W2tyeT04Yi" role="3uHU7B">
-                  <property role="Xl_RC" value="diag nodes: " />
-                </node>
-              </node>
-            </node>
             <node concept="2Gpval" id="2W2tyeSYTUH" role="3cqZAp">
               <node concept="2GrKxI" id="2W2tyeSYTUJ" role="2Gsz3X">
                 <property role="TrG5h" value="dn" />
@@ -472,17 +457,6 @@
                           <node concept="2GrUjf" id="2W2tyeSZUqo" role="37wK5m">
                             <ref role="2Gs0qQ" node="2W2tyeSYTUJ" resolve="dn" />
                           </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2xdQw9" id="2W2tyeSZYbC" role="3cqZAp">
-                      <property role="2xdLsb" value="gZ5fh_4/error" />
-                      <node concept="3cpWs3" id="2W2tyeSZZDI" role="9lYJi">
-                        <node concept="37vLTw" id="2W2tyeT004G" role="3uHU7w">
-                          <ref role="3cqZAo" node="2W2tyeSZUqm" resolve="fqMappingProviderClassName" />
-                        </node>
-                        <node concept="Xl_RD" id="2W2tyeSZYbE" role="3uHU7B">
-                          <property role="Xl_RC" value="prov name: " />
                         </node>
                       </node>
                     </node>

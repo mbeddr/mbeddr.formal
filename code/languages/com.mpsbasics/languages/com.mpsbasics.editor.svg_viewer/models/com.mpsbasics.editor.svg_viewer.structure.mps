@@ -146,6 +146,11 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="5qYffcWfBDx" resolve="AbstractSvgNodeSpecificLayoutInfo" />
     </node>
+    <node concept="1TJgyj" id="ALyYuEe93n" role="1TKVEi">
+      <property role="IQ2ns" value="698493244328677591" />
+      <property role="20kJfa" value="styleClass" />
+      <ref role="20lvS9" node="ALyYuEe7H2" resolve="SvgStyleClass" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JXu42kL_3m">
     <property role="EcuMT" value="8934429454542196950" />
@@ -625,6 +630,32 @@
     <property role="TrG5h" value="SvgDiagramCanvasSize_BLQuery" />
     <property role="R4oN_" value="Optional per-diagram query returning the embedded viewer's initial on-screen java.awt.Dimension" />
     <ref role="1TJDcQ" to="tpee:gyVMwX8" resolve="ConceptFunction" />
+  </node>
+  <node concept="1TIwiD" id="ALyYuEe7H2">
+    <property role="EcuMT" value="698493244328672066" />
+    <property role="TrG5h" value="SvgStyleClass" />
+    <property role="34LRSv" value="svg style" />
+    <property role="R4oN_" value="A reusable, named fill/stroke/strokeWidth style referenced from SvgNode.styleClass" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="ALyYuEe7H3" role="1TKVEl">
+      <property role="IQ2nx" value="698493244328672067" />
+      <property role="TrG5h" value="fill" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="ALyYuEe7H4" role="1TKVEl">
+      <property role="IQ2nx" value="698493244328672068" />
+      <property role="TrG5h" value="stroke" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="ALyYuEe7H5" role="1TKVEl">
+      <property role="IQ2nx" value="698493244328672069" />
+      <property role="TrG5h" value="strokeWidth" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="PrWs8" id="ALyYuEe7H6" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
   </node>
 </model>
 
