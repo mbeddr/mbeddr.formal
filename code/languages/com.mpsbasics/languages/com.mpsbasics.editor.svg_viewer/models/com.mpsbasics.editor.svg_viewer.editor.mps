@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model ref="r:ae32cfbd-79ae-4cce-b484-e2ab3bd9ef6f(com.mpsbasics.editor.svg_viewer.editor)">
+  <persistence version="9" />
+  <languages>
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
+    <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
+    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+  </languages>
+  <imports>
+    <import index="g2od" ref="r:78bb8cb4-be0c-474b-ab43-9918cf7e596a(com.mpsbasics.editor.svg_viewer.structure)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+  </imports>
+  <registry>
+    <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
+      <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
+      <concept id="1106270549637" name="jetbrains.mps.lang.editor.structure.CellLayout_Horizontal" flags="nn" index="2iRfu4" />
+      <concept id="1106270571710" name="jetbrains.mps.lang.editor.structure.CellLayout_Vertical" flags="nn" index="2iRkQZ" />
+      <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
+      <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="1237385578942" name="jetbrains.mps.lang.editor.structure.IndentLayoutOnNewLineStyleClassItem" flags="ln" index="pVoyu" />
+      <concept id="1080736578640" name="jetbrains.mps.lang.editor.structure.BaseEditorComponent" flags="ig" index="2wURMF">
+        <child id="1080736633877" name="cellModel" index="2wV5jI" />
+      </concept>
+      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
+        <property id="1186414551515" name="flag" index="VOm3f" />
+      </concept>
+      <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
+      <concept id="1186414976055" name="jetbrains.mps.lang.editor.structure.DrawBorderStyleClassItem" flags="ln" index="VPXOz" />
+      <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1214560368769" name="emptyNoTargetText" index="39s7Ar" />
+        <property id="1139852716018" name="noTargetText" index="1$x2rV" />
+        <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
+      </concept>
+      <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
+        <child id="1106270802874" name="cellLayout" index="2iSdaV" />
+        <child id="1073389446424" name="childCellModel" index="3EZMnx" />
+      </concept>
+      <concept id="1073389577006" name="jetbrains.mps.lang.editor.structure.CellModel_Constant" flags="sn" stub="3610246225209162225" index="3F0ifn">
+        <property id="1073389577007" name="text" index="3F0ifm" />
+      </concept>
+      <concept id="1073389658414" name="jetbrains.mps.lang.editor.structure.CellModel_Property" flags="sg" stub="730538219796134133" index="3F0A7n" />
+      <concept id="1219418625346" name="jetbrains.mps.lang.editor.structure.IStyleContainer" flags="ngI" index="3F0Thp">
+        <child id="1219418656006" name="styleItem" index="3F10Kt" />
+      </concept>
+      <concept id="1073389882823" name="jetbrains.mps.lang.editor.structure.CellModel_RefNode" flags="sg" stub="730538219795960754" index="3F1sOY" />
+      <concept id="1198256887712" name="jetbrains.mps.lang.editor.structure.CellModel_Indent" flags="ng" index="3XFhqQ" />
+      <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
+        <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="24kQdi" id="2W2tyeSIVSU">
+    <property role="3GE5qa" value="svg_editor" />
+    <ref role="1XX52x" to="g2od:2W2tyeS$hfL" resolve="CellModel_SvgDiagram" />
+    <node concept="3EZMnI" id="5qYffcWeN2o" role="2wV5jI">
+      <node concept="2iRkQZ" id="5qYffcWeN2p" role="2iSdaV" />
+      <node concept="3EZMnI" id="2W2tyeSIW5C" role="3EZMnx">
+        <node concept="3F0ifn" id="2W2tyeSJ33x" role="3EZMnx">
+          <property role="3F0ifm" value="diagram content:" />
+        </node>
+        <node concept="3F1sOY" id="2W2tyeSIWip" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:2W2tyeS$L7G" resolve="content" />
+          <node concept="ljvvj" id="2W2tyeSIWxE" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="2W2tyeSIW5F" role="2iSdaV" />
+        <node concept="VPXOz" id="5qYffcWf3Or" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="5qYffcWeOP4" role="3EZMnx">
+        <node concept="3F0ifn" id="5qYffcWeOP5" role="3EZMnx">
+          <property role="3F0ifm" value="layout:" />
+        </node>
+        <node concept="3F1sOY" id="5qYffcWeOP6" role="3EZMnx">
+          <property role="39s7Ar" value="true" />
+          <property role="1$x2rV" value="ELK hierarchical layout (with default values)" />
+          <ref role="1NtTu8" to="g2od:5qYffcW899H" resolve="layout" />
+          <node concept="ljvvj" id="5qYffcWeOP7" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="5qYffcWeOP8" role="2iSdaV" />
+        <node concept="VPXOz" id="5qYffcWf5ZY" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="ALyYuEcI8z" role="3EZMnx">
+        <node concept="3F0ifn" id="ALyYuEcI8$" role="3EZMnx">
+          <property role="3F0ifm" value="canvas size:" />
+        </node>
+        <node concept="3F1sOY" id="ALyYuEcI8_" role="3EZMnx">
+          <property role="39s7Ar" value="true" />
+          <property role="1$x2rV" value="default 640x480" />
+          <ref role="1NtTu8" to="g2od:ALyYuE7Pcc" resolve="canvasSize" />
+          <node concept="ljvvj" id="ALyYuEcI8A" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2iRfu4" id="ALyYuEcI8B" role="2iSdaV" />
+        <node concept="VPXOz" id="ALyYuEcI8C" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="VPXOz" id="5qYffcWf1Pk" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="2W2tyeSJMmL">
+    <property role="3GE5qa" value="svg_dsl2baselan_builder" />
+    <ref role="1XX52x" to="g2od:2W2tyeS$PeO" resolve="SvgDiagramNode" />
+    <node concept="3EZMnI" id="2W2tyeSJMup" role="2wV5jI">
+      <node concept="3EZMnI" id="2W2tyeSS8Pf" role="3EZMnx">
+        <node concept="VPM3Z" id="2W2tyeSS8Ph" role="3F10Kt" />
+        <node concept="3F0ifn" id="2W2tyeSS9ed" role="3EZMnx">
+          <property role="3F0ifm" value="mapping id:" />
+        </node>
+        <node concept="3F0A7n" id="2W2tyeSS9Ba" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+        <node concept="2iRfu4" id="2W2tyeSS8Pk" role="2iSdaV" />
+      </node>
+      <node concept="3EZMnI" id="2W2tyeSJMHF" role="3EZMnx">
+        <node concept="2iRfu4" id="2W2tyeSJMHG" role="2iSdaV" />
+        <node concept="3F0ifn" id="2W2tyeSJMut" role="3EZMnx">
+          <property role="3F0ifm" value="mapping definition for:" />
+        </node>
+        <node concept="3F1sOY" id="2W2tyeSJMKg" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:2W2tyeSIBV7" resolve="conceptExpression" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="2W2tyeSJMUr" role="3EZMnx">
+        <node concept="VPM3Z" id="2W2tyeSJMUt" role="3F10Kt" />
+        <node concept="3XFhqQ" id="2W2tyeSJMX3" role="3EZMnx" />
+        <node concept="3F0ifn" id="2W2tyeSJN9M" role="3EZMnx">
+          <property role="3F0ifm" value="map node:" />
+        </node>
+        <node concept="3F1sOY" id="2W2tyeSJNmv" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:2W2tyeSJKyS" resolve="nodeMapping" />
+        </node>
+        <node concept="2iRfu4" id="2W2tyeSJMUw" role="2iSdaV" />
+      </node>
+      <node concept="2iRkQZ" id="2W2tyeSJMus" role="2iSdaV" />
+      <node concept="3EZMnI" id="3MSqLL2LIjI" role="3EZMnx">
+        <node concept="3XFhqQ" id="3MSqLL2LIjJ" role="3EZMnx" />
+        <node concept="3F0ifn" id="3MSqLL2LIjK" role="3EZMnx">
+          <property role="3F0ifm" value="map ports:" />
+        </node>
+        <node concept="3F1sOY" id="3MSqLL2LIjL" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:3MSqLL2Lptm" resolve="portMapping" />
+        </node>
+        <node concept="2iRfu4" id="3MSqLL2LIjM" role="2iSdaV" />
+        <node concept="VPM3Z" id="3MSqLL2LIjN" role="3F10Kt" />
+      </node>
+      <node concept="3EZMnI" id="3MSqLL2NDR7" role="3EZMnx">
+        <node concept="3XFhqQ" id="3MSqLL2NDR8" role="3EZMnx" />
+        <node concept="3F0ifn" id="3MSqLL2NDR9" role="3EZMnx">
+          <property role="3F0ifm" value="map edge:" />
+        </node>
+        <node concept="3F1sOY" id="3MSqLL2NDRa" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:3MSqLL2NsSF" resolve="edgeMapping" />
+        </node>
+        <node concept="2iRfu4" id="3MSqLL2NDRb" role="2iSdaV" />
+        <node concept="VPM3Z" id="3MSqLL2NDRc" role="3F10Kt" />
+      </node>
+      <node concept="3EZMnI" id="7IsGrgJHYgm" role="3EZMnx">
+        <node concept="3XFhqQ" id="7IsGrgJHYgn" role="3EZMnx" />
+        <node concept="3F0ifn" id="7IsGrgJHYgo" role="3EZMnx">
+          <property role="3F0ifm" value="map children:" />
+        </node>
+        <node concept="3F1sOY" id="7IsGrgJHYgp" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:7IsGrgJHdo6" resolve="childrenMapping" />
+        </node>
+        <node concept="2iRfu4" id="7IsGrgJHYgq" role="2iSdaV" />
+        <node concept="VPM3Z" id="7IsGrgJHYgr" role="3F10Kt" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7IsGrgMR9vx">
+    <property role="TrG5h" value="SvgLayoutHierarchical_Editor" />
+    <property role="3GE5qa" value="svg_baselan.layout" />
+    <ref role="1XX52x" to="g2od:7IsGrgMQKOa" resolve="SvgLayoutHierarchical" />
+    <node concept="3EZMnI" id="7IsGrgMWoZH" role="2wV5jI">
+      <node concept="2iRkQZ" id="7IsGrgMWoZI" role="2iSdaV" />
+      <node concept="3EZMnI" id="7IsGrgMR9vz" role="3EZMnx">
+        <node concept="2iRfu4" id="7IsGrgMR9v$" role="2iSdaV" />
+        <node concept="3F0ifn" id="7IsGrgMR9v_" role="3EZMnx">
+          <property role="3F0ifm" value="hierarchical layout" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7IsGrgMWpjZ" role="3EZMnx">
+        <node concept="2iRfu4" id="7IsGrgMWpk0" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7IsGrgMWpD4" role="3EZMnx" />
+        <node concept="3F0ifn" id="7IsGrgMWpk1" role="3EZMnx">
+          <property role="3F0ifm" value="direction:" />
+        </node>
+        <node concept="3F0A7n" id="7IsGrgMWpk2" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:7IsGrgMQKOb" resolve="direction" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7IsGrgMWpkc" role="3EZMnx">
+        <node concept="2iRfu4" id="7IsGrgMWpkd" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7IsGrgMWqpd" role="3EZMnx" />
+        <node concept="3F0ifn" id="7IsGrgMWpkg" role="3EZMnx">
+          <property role="3F0ifm" value="nodeSpacing:" />
+        </node>
+        <node concept="3F0A7n" id="7IsGrgMWpkh" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:7IsGrgMQKOc" resolve="nodeSpacing" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7IsGrgMWpkp" role="3EZMnx">
+        <node concept="2iRfu4" id="7IsGrgMWpkq" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7IsGrgMWqwQ" role="3EZMnx" />
+        <node concept="3F0ifn" id="7IsGrgMWpkv" role="3EZMnx">
+          <property role="3F0ifm" value="layerSpacing:" />
+        </node>
+        <node concept="3F0A7n" id="7IsGrgMWpkw" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:7IsGrgMQKOd" resolve="layerSpacing" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7IsGrgMWpkA" role="3EZMnx">
+        <node concept="2iRfu4" id="7IsGrgMWpkB" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7IsGrgMWryI" role="3EZMnx" />
+        <node concept="3F0ifn" id="7IsGrgMWpkI" role="3EZMnx">
+          <property role="3F0ifm" value="edgeNodeSpacing:" />
+        </node>
+        <node concept="3F0A7n" id="7IsGrgMWpkJ" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:7IsGrgMQKOe" resolve="edgeNodeSpacing" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="7IsGrgMWslo" role="3EZMnx">
+        <node concept="2iRfu4" id="7IsGrgMWslp" role="2iSdaV" />
+        <node concept="3XFhqQ" id="7IsGrgMWslq" role="3EZMnx" />
+        <node concept="3F0ifn" id="7IsGrgMWslt" role="3EZMnx">
+          <property role="3F0ifm" value="edgeSpacing:" />
+        </node>
+        <node concept="3F0A7n" id="7IsGrgMWslu" role="3EZMnx">
+          <ref role="1NtTu8" to="g2od:7IsGrgMQKOf" resolve="edgeSpacing" />
+        </node>
+        <node concept="3F0ifn" id="7IsGrgMWslv" role="3EZMnx">
+          <property role="3F0ifm" value="]" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="ALyYuEesB_">
+    <ref role="1XX52x" to="g2od:ALyYuEe7H2" resolve="SvgStyleClass" />
+    <node concept="3EZMnI" id="ALyYuEesBB" role="2wV5jI">
+      <node concept="l2Vlx" id="ALyYuEesBC" role="2iSdaV" />
+      <node concept="3F0ifn" id="ALyYuEesBD" role="3EZMnx">
+        <property role="3F0ifm" value="svg style" />
+      </node>
+      <node concept="3F0ifn" id="ALyYuEesBE" role="3EZMnx">
+        <property role="3F0ifm" value="Name:" />
+        <node concept="pVoyu" id="ALyYuEesBF" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="ALyYuEesBG" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="ALyYuEesBH" role="3EZMnx">
+        <property role="3F0ifm" value="fill:" />
+        <node concept="pVoyu" id="ALyYuEesBI" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="ALyYuEesBJ" role="3EZMnx">
+        <ref role="1NtTu8" to="g2od:ALyYuEe7H3" resolve="fill" />
+      </node>
+      <node concept="3F0ifn" id="ALyYuEesBK" role="3EZMnx">
+        <property role="3F0ifm" value="stroke:" />
+        <node concept="pVoyu" id="ALyYuEesBL" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="ALyYuEesBM" role="3EZMnx">
+        <ref role="1NtTu8" to="g2od:ALyYuEe7H4" resolve="stroke" />
+      </node>
+      <node concept="3F0ifn" id="ALyYuEesBN" role="3EZMnx">
+        <property role="3F0ifm" value="strokeWidth:" />
+        <node concept="pVoyu" id="ALyYuEesBO" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0A7n" id="ALyYuEesBP" role="3EZMnx">
+        <ref role="1NtTu8" to="g2od:ALyYuEe7H5" resolve="strokeWidth" />
+      </node>
+    </node>
+  </node>
+</model>
+

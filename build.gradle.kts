@@ -111,6 +111,8 @@ configurations {
         isTransitive = false
     }
 
+    val svgViewer by creating
+
     // includes also junit tasks support
     val antLib by creating {
         isCanBeConsumed = false
@@ -160,6 +162,20 @@ configurations {
         pdfbox("io.github.openhtmltopdf:openhtmltopdf-core:1.1.23")
         pdfbox("io.github.openhtmltopdf:openhtmltopdf-pdfbox:1.1.23")
         pdfbox("org.apache.pdfbox:xmpbox:3.0.1")
+
+        // SVG rendering + ELK graph layout used by com.mpsbasics.editor.svg_viewer.rt.
+        // Kept transitive (unlike the isTransitive=false configs above) so Gradle's own
+        // dependency graph decides which ELK/EMF/Guava/Xtend support jars are actually needed,
+        // rather than us hand-curating that list.
+        svgViewer("com.github.weisj:jsvg:2.1.0")
+        svgViewer("org.eclipse.elk:org.eclipse.elk.core:0.12.0")
+        svgViewer("org.eclipse.elk:org.eclipse.elk.graph:0.12.0")
+        svgViewer("org.eclipse.elk:org.eclipse.elk.alg.layered:0.12.0")
+        svgViewer("org.eclipse.elk:org.eclipse.elk.alg.mrtree:0.12.0")
+        // Not a transitive dependency of any of the above per their published POMs, even though
+        // elk.alg.layered's and elk.alg.mrtree's own Xtend-generated static initializers need it
+        // at runtime (an OSGi/Maven metadata gap in those artifacts) - declared explicitly here.
+        svgViewer("org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.43.0")
 
         antLib("org.apache.ant:ant-junit:1.10.6")
         jbrWin("com.jetbrains.jdk:jbr_jcef:$jbrVers:windows-x64@tgz")
@@ -322,6 +338,12 @@ val resolvePDFBox = createSyncTask(
     destinationDir = file("code/languages/com.mpsbasics/solutions/com.mpsbasics.pdfbox/lib")
 )
 
+val resolveSvgViewer = createSyncTask(
+    taskName = "resolveSvgViewer",
+    configurationName = "svgViewer",
+    destinationDir = file("code/languages/com.mpsbasics/solutions/com.mpsbasics.editor.svg_viewer.rt/lib")
+)
+
 tasks {
     val configureJava by registering {
         dependsOn(downloadJbr)
@@ -343,6 +365,7 @@ tasks {
         dependsOn(resolveZ3)
         dependsOn(resolveJira)
         dependsOn(resolvePDFBox)
+        dependsOn(resolveSvgViewer)
         from({ configurations["languageLibs"].resolve().map(::zipTree) })
         into(dependenciesDir)
         // de.q60.shadowmodels is bundled in com.mbeddr:platform but unused by any FASTEN language (verified via
