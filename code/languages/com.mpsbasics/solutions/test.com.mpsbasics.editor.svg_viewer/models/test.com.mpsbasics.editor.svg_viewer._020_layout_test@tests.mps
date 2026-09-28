@@ -805,13 +805,13 @@
         </node>
         <node concept="3IQu7H" id="7IsGrgLiy8u" role="3IQ7ie">
           <property role="TrG5h" value="conn1" />
-          <ref role="3IQu7J" node="7IsGrgLiu3e" resolve="out1_1" />
-          <ref role="3IQu7K" node="7IsGrgLiwLo" resolve="in1_1" />
+          <ref role="3IQu7J" node="7IsGrgLiu3e" />
+          <ref role="3IQu7K" node="7IsGrgLiwLo" />
         </node>
         <node concept="3IQu7H" id="7IsGrgLi$hk" role="3IQ7ie">
           <property role="TrG5h" value="conn2" />
-          <ref role="3IQu7J" node="7IsGrgLius7" resolve="out1_2" />
-          <ref role="3IQu7K" node="7IsGrgLiwLo" resolve="in1_1" />
+          <ref role="3IQu7J" node="7IsGrgLius7" />
+          <ref role="3IQu7K" node="7IsGrgLiwLo" />
         </node>
         <node concept="3IQu7A" id="7IsGrgLiGcy" role="3IQ7ie">
           <property role="TrG5h" value="Src2" />
@@ -833,18 +833,18 @@
         </node>
         <node concept="3IQu7H" id="7IsGrgLiGcv" role="3IQ7ie">
           <property role="TrG5h" value="conn2_1" />
-          <ref role="3IQu7J" node="7IsGrgLiGcz" resolve="out2_1" />
-          <ref role="3IQu7K" node="7IsGrgLiGcx" resolve="in2_1" />
+          <ref role="3IQu7J" node="7IsGrgLiGcz" />
+          <ref role="3IQu7K" node="7IsGrgLiGcx" />
         </node>
         <node concept="3IQu7H" id="7IsGrgLiGcu" role="3IQ7ie">
           <property role="TrG5h" value="conn2_2" />
-          <ref role="3IQu7J" node="7IsGrgLiGc$" resolve="out2_2" />
-          <ref role="3IQu7K" node="7IsGrgLiGcx" resolve="in2_1" />
+          <ref role="3IQu7J" node="7IsGrgLiGc$" />
+          <ref role="3IQu7K" node="7IsGrgLiGcx" />
         </node>
         <node concept="3IQu7H" id="7IsGrgLiJ7$" role="3IQ7ie">
           <property role="TrG5h" value="conn2_3" />
-          <ref role="3IQu7J" node="7IsGrgLiHqZ" resolve="out2_3" />
-          <ref role="3IQu7K" node="7IsGrgLiGcx" resolve="in2_1" />
+          <ref role="3IQu7J" node="7IsGrgLiHqZ" />
+          <ref role="3IQu7K" node="7IsGrgLiGcx" />
         </node>
         <node concept="3xLA65" id="7IsGrgM3Nsw" role="lGtFl">
           <property role="TrG5h" value="_010_channels_labels" />
