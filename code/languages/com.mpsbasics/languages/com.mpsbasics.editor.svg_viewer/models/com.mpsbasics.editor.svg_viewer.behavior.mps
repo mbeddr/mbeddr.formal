@@ -1004,7 +1004,7 @@
                 <ref role="3cqZAo" node="7IsGrgJu$6W" resolve="n" />
               </node>
               <node concept="3TrEf2" id="ALyYuEeNzm" role="2OqNvi">
-                <ref role="3Tt5mk" to="g2od:ALyYuEe93n" />
+                <ref role="3Tt5mk" to="g2od:ALyYuEe93n" resolve="styleClass" />
               </node>
             </node>
             <node concept="10Nm6u" id="ALyYuEeNzn" role="3uHU7w" />
@@ -1026,7 +1026,7 @@
                       <ref role="3cqZAo" node="7IsGrgJu$6W" resolve="n" />
                     </node>
                     <node concept="3TrEf2" id="ALyYuEeNzE" role="2OqNvi">
-                      <ref role="3Tt5mk" to="g2od:ALyYuEe93n" />
+                      <ref role="3Tt5mk" to="g2od:ALyYuEe93n" resolve="styleClass" />
                     </node>
                   </node>
                   <node concept="3TrcHB" id="ALyYuEeNzF" role="2OqNvi">
@@ -1051,7 +1051,7 @@
                       <ref role="3cqZAo" node="7IsGrgJu$6W" resolve="n" />
                     </node>
                     <node concept="3TrEf2" id="ALyYuEeNzX" role="2OqNvi">
-                      <ref role="3Tt5mk" to="g2od:ALyYuEe93n" />
+                      <ref role="3Tt5mk" to="g2od:ALyYuEe93n" resolve="styleClass" />
                     </node>
                   </node>
                   <node concept="3TrcHB" id="ALyYuEeNzY" role="2OqNvi">
@@ -1076,7 +1076,7 @@
                       <ref role="3cqZAo" node="7IsGrgJu$6W" resolve="n" />
                     </node>
                     <node concept="3TrEf2" id="ALyYuEeN$g" role="2OqNvi">
-                      <ref role="3Tt5mk" to="g2od:ALyYuEe93n" />
+                      <ref role="3Tt5mk" to="g2od:ALyYuEe93n" resolve="styleClass" />
                     </node>
                   </node>
                   <node concept="3TrcHB" id="ALyYuEeN$h" role="2OqNvi">
@@ -1231,7 +1231,7 @@
                     <ref role="3cqZAo" node="7IsGrgJu$6W" resolve="n" />
                   </node>
                   <node concept="3TrEf2" id="5qYffcWh0S4" role="2OqNvi">
-                    <ref role="3Tt5mk" to="g2od:5qYffcWfHgq" />
+                    <ref role="3Tt5mk" to="g2od:5qYffcWfHgq" resolve="layoutInfo" />
                   </node>
                 </node>
                 <node concept="3x8VRR" id="5qYffcWh0S5" role="2OqNvi" />
@@ -1242,7 +1242,7 @@
                     <ref role="3cqZAo" node="7IsGrgJu$6W" resolve="n" />
                   </node>
                   <node concept="3TrEf2" id="5qYffcWh0Sd" role="2OqNvi">
-                    <ref role="3Tt5mk" to="g2od:5qYffcWfHgq" />
+                    <ref role="3Tt5mk" to="g2od:5qYffcWfHgq" resolve="layoutInfo" />
                   </node>
                 </node>
                 <node concept="3zqWPK" id="5qYffcWh0Se" role="2OqNvi">
@@ -2331,7 +2331,7 @@
   </node>
   <node concept="13h7C7" id="5qYffcWbBd3">
     <property role="TrG5h" value="SvgDiagramLayout_BLQuery_Behavior" />
-    <ref role="13h7C2" to="g2od:5qYffcW83GK" />
+    <ref role="13h7C2" to="g2od:5qYffcW83GK" resolve="SvgDiagramLayout_BLQuery" />
     <node concept="13hLZK" id="5qYffcWbBd4" role="13h7CW">
       <node concept="3clFbS" id="5qYffcWbBd5" role="2VODD2" />
     </node>
@@ -2377,7 +2377,7 @@
   </node>
   <node concept="13h7C7" id="5qYffcWglzO">
     <property role="TrG5h" value="AbstractSvgNodeSpecificLayoutInfo_Behavior" />
-    <ref role="13h7C2" to="g2od:5qYffcWfBDx" />
+    <ref role="13h7C2" to="g2od:5qYffcWfBDx" resolve="AbstractSvgNodeSpecificLayoutInfo" />
     <node concept="13hLZK" id="5qYffcWglzP" role="13h7CW">
       <node concept="3clFbS" id="5qYffcWglzQ" role="2VODD2" />
     </node>
@@ -2394,7 +2394,7 @@
   </node>
   <node concept="13h7C7" id="5qYffcWgtJR">
     <property role="TrG5h" value="TreemapNodeLayoutInfo_Behavior" />
-    <ref role="13h7C2" to="g2od:5qYffcWfBDy" />
+    <ref role="13h7C2" to="g2od:5qYffcWfBDy" resolve="TreemapNodeLayoutInfo" />
     <node concept="13hLZK" id="5qYffcWgtJS" role="13h7CW">
       <node concept="3clFbS" id="5qYffcWgtJT" role="2VODD2" />
     </node>
@@ -2415,7 +2415,7 @@
             <node concept="2ShNRf" id="5qYffcWg$Ej" role="33vP2m">
               <node concept="1pGfFk" id="5qYffcWg$El" role="2ShVmc">
                 <property role="373rjd" value="true" />
-                <ref role="37wK5l" to="aqr4:5qYffcWgyME" />
+                <ref role="37wK5l" to="aqr4:5qYffcWgyME" resolve="TreemapNodeLayoutInfo" />
               </node>
             </node>
           </node>

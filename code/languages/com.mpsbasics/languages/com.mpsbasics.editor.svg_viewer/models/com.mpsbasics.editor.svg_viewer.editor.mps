@@ -254,7 +254,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="ALyYuEesB_">
-    <ref role="1XX52x" to="g2od:ALyYuEe7H2" />
+    <ref role="1XX52x" to="g2od:ALyYuEe7H2" resolve="SvgStyleClass" />
     <node concept="3EZMnI" id="ALyYuEesBB" role="2wV5jI">
       <node concept="l2Vlx" id="ALyYuEesBC" role="2iSdaV" />
       <node concept="3F0ifn" id="ALyYuEesBD" role="3EZMnx">
@@ -267,7 +267,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="ALyYuEesBG" role="3EZMnx">
-        <ref role="1NtTu8" to="tpck:h0TrG11" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="3F0ifn" id="ALyYuEesBH" role="3EZMnx">
         <property role="3F0ifm" value="fill:" />
@@ -276,7 +276,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="ALyYuEesBJ" role="3EZMnx">
-        <ref role="1NtTu8" to="g2od:ALyYuEe7H3" />
+        <ref role="1NtTu8" to="g2od:ALyYuEe7H3" resolve="fill" />
       </node>
       <node concept="3F0ifn" id="ALyYuEesBK" role="3EZMnx">
         <property role="3F0ifm" value="stroke:" />
@@ -285,7 +285,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="ALyYuEesBM" role="3EZMnx">
-        <ref role="1NtTu8" to="g2od:ALyYuEe7H4" />
+        <ref role="1NtTu8" to="g2od:ALyYuEe7H4" resolve="stroke" />
       </node>
       <node concept="3F0ifn" id="ALyYuEesBN" role="3EZMnx">
         <property role="3F0ifm" value="strokeWidth:" />
@@ -294,7 +294,7 @@
         </node>
       </node>
       <node concept="3F0A7n" id="ALyYuEesBP" role="3EZMnx">
-        <ref role="1NtTu8" to="g2od:ALyYuEe7H5" />
+        <ref role="1NtTu8" to="g2od:ALyYuEe7H5" resolve="strokeWidth" />
       </node>
     </node>
   </node>

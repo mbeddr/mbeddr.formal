@@ -190,7 +190,7 @@
     <property role="TrG5h" value="GraphLayoutTreemap" />
     <node concept="3Tm1VV" id="5qYffcVceZp" role="1B3o_S" />
     <node concept="3uibUv" id="5qYffcVceZq" role="1zkMxy">
-      <ref role="3uigEE" to="s6nb:7IsGrgMWT2k" />
+      <ref role="3uigEE" to="s6nb:7IsGrgMWT2k" resolve="GraphLayoutBase" />
     </node>
     <node concept="312cEg" id="5qYffcVcY$0" role="jymVt">
       <property role="TrG5h" value="canvasWidth" />
@@ -233,8 +233,8 @@
       <node concept="3clFbS" id="5qYffcVcZj$" role="3clF47">
         <node concept="3clFbF" id="5qYffcVcZj_" role="3cqZAp">
           <node concept="2YIFZM" id="5qYffcVcZjH" role="3clFbG">
-            <ref role="1Pybhc" node="5qYffcVejMk" />
-            <ref role="37wK5l" node="5qYffcVejMq" />
+            <ref role="1Pybhc" node="5qYffcVejMk" resolve="TreemapLayoutEngine" />
+            <ref role="37wK5l" node="5qYffcVejMq" resolve="layout" />
             <node concept="37vLTw" id="5qYffcVcZjI" role="37wK5m">
               <ref role="3cqZAo" node="5qYffcVcZjy" resolve="graph" />
             </node>

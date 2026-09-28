@@ -3655,6 +3655,22 @@
             </node>
           </node>
         </node>
+        <node concept="3rtmxn" id="7zm4_ZqhR$7" role="3bR31x">
+          <node concept="3LXTmp" id="7zm4_ZqhR$8" role="3rtmxm">
+            <node concept="3qWCbU" id="7zm4_ZqhR$9" role="3LXTna">
+              <property role="3qWCbO" value="icons/**, resources/**" />
+            </node>
+            <node concept="398BVA" id="7zm4_ZqhR$a" role="3LXTmr">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="7zm4_ZqhR$b" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="7zm4_ZqhR$c" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.editor.svg_viewer.rt" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="2MrvZqtGQDM" role="3989C9">

@@ -160,7 +160,7 @@
     <property role="TrG5h" value="GraphLayoutScatter" />
     <node concept="3Tm1VV" id="5qYffcW0hYW" role="1B3o_S" />
     <node concept="3uibUv" id="5qYffcW0j_Q" role="1zkMxy">
-      <ref role="3uigEE" to="s6nb:7IsGrgMWT2k" />
+      <ref role="3uigEE" to="s6nb:7IsGrgMWT2k" resolve="GraphLayoutBase" />
     </node>
     <node concept="312cEg" id="5qYffcW0pBd" role="jymVt">
       <property role="TrG5h" value="canvasWidth" />
@@ -599,7 +599,7 @@
                   <node concept="10P55v" id="5qYffcW0vuH" role="10Q1$1" />
                 </node>
                 <node concept="1rXfSq" id="5qYffcW0vuJ" role="33vP2m">
-                  <ref role="37wK5l" node="5qYffcW0HIz" />
+                  <ref role="37wK5l" node="5qYffcW0HIz" resolve="packShelves" />
                   <node concept="37vLTw" id="5qYffcW0vuK" role="37wK5m">
                     <ref role="3cqZAo" node="5qYffcW0vuq" resolve="children" />
                   </node>
@@ -698,7 +698,7 @@
         </node>
         <node concept="3clFbF" id="5qYffcW0vvj" role="3cqZAp">
           <node concept="1rXfSq" id="5qYffcW0vvk" role="3clFbG">
-            <ref role="37wK5l" node="5qYffcW0HIz" />
+            <ref role="37wK5l" node="5qYffcW0HIz" resolve="packShelves" />
             <node concept="37vLTw" id="5qYffcW0vvl" role="37wK5m">
               <ref role="3cqZAo" node="5qYffcW0vtB" resolve="topLevel" />
             </node>
