@@ -3617,6 +3617,44 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="ALyYuEKw8r" role="3bR37C">
+          <node concept="1BurEX" id="ALyYuEKw8t" role="1SiIV1">
+            <node concept="398BVA" id="ALyYuEKw8v" role="1BurEY">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="ALyYuEKw8w" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="ALyYuEKw8x" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.editor.svg_viewer.rt" />
+                  <node concept="2Ry0Ak" id="ALyYuEKw8y" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="ALyYuEKw8z" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.elk.alg.mrtree.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="ALyYuEKFj2" role="3bR37C">
+          <node concept="1BurEX" id="ALyYuEKFj4" role="1SiIV1">
+            <node concept="398BVA" id="ALyYuEKFj6" role="1BurEY">
+              <ref role="398BVh" node="6mm$FLYQyYs" resolve="mpsbasics.code" />
+              <node concept="2Ry0Ak" id="ALyYuEKFj7" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="ALyYuEKFj8" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.mpsbasics.editor.svg_viewer.rt" />
+                  <node concept="2Ry0Ak" id="ALyYuEKFj9" role="2Ry0An">
+                    <property role="2Ry0Am" value="lib" />
+                    <node concept="2Ry0Ak" id="ALyYuEKFja" role="2Ry0An">
+                      <property role="2Ry0Am" value="org.eclipse.xtext.xbase.lib.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2G$12M" id="2MrvZqtGQDM" role="3989C9">
