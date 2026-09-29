@@ -3,11 +3,83 @@
   <component name="ProjectLibraryManager">
     <option name="libraries">
       <map>
+        <entry key="cprover">
+          <value>
+            <Library>
+              <option name="name" value="cprover" />
+              <option name="path" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.cprover" />
+            </Library>
+          </value>
+        </entry>
         <entry key="dependencies">
           <value>
             <Library>
               <option name="name" value="dependencies" />
               <option name="path" value="${mbeddr.formal.home}/build/dependencies" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="mpsbasics">
+          <value>
+            <Library>
+              <option name="name" value="mpsbasics" />
+              <option name="path" value="${mbeddr.formal.home}/code/languages/com.mpsbasics" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="nusmv">
+          <value>
+            <Library>
+              <option name="name" value="nusmv" />
+              <option name="path" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.nusmv" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="prism">
+          <value>
+            <Library>
+              <option name="name" value="prism" />
+              <option name="path" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.prism" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="req">
+          <value>
+            <Library>
+              <option name="name" value="req" />
+              <option name="path" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.req" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="safety">
+          <value>
+            <Library>
+              <option name="name" value="safety" />
+              <option name="path" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.safety" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="smt">
+          <value>
+            <Library>
+              <option name="name" value="smt" />
+              <option name="path" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.smt" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="spin">
+          <value>
+            <Library>
+              <option name="name" value="spin" />
+              <option name="path" value="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.spin" />
+            </Library>
+          </value>
+        </entry>
+        <entry key="symo">
+          <value>
+            <Library>
+              <option name="name" value="symo" />
+              <option name="path" value="${mbeddr.formal.home}/code/languages/com.fasten.symo" />
             </Library>
           </value>
         </entry>
