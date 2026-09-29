@@ -114,10 +114,15 @@ These `mps-*` skills and this guide were installed by the `mps_mcp_initialize_pr
 
 ## Project-Specific Notes
 
-<!-- Replace this comment with details specific to this project, for example:
-  - key module and language names
-  - entry-point models or root nodes an agent should know about
-  - domain or business context useful for understanding the models
-  - project conventions (naming, structure, generator pipeline)
-  - anything else that helps an agent orient itself quickly in this codebase
--->
+**Repo structure.** See the README's "Project Structure" section for the human-readable summary of
+how `code/languages/` is organized (`com.mpsbasics`, `com.fasten.symo`, the end-user domain
+languages, `com.mbeddr.formal.repo_admin`). For the enforced, authoritative dependency graph, open
+`com.fasten.meta.architecture` (a root node in the `com.fasten.meta.architecture` solution, part of
+the `repo_admin` MPS project) via MPS MCP tools rather than trusting the README summary alone — it is
+more granular and is what `repo_admin`'s linters actually check against.
+
+**Accumulated gotchas.** `docs/agents/mps-gotchas.md` collects non-obvious MPS-authoring and
+`mps_mcp_*` tool behavior discovered while working in this repo (newest first). Check it before
+spending time rediscovering a known trap, and add a new entry there (not to personal/session memory)
+whenever you hit one that isn't already recorded. `docs/agents/TODO.md` tracks open investigations in
+the same spirit.
