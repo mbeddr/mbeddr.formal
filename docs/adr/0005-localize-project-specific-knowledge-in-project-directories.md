@@ -28,9 +28,9 @@ location had actually been established anywhere in the repo.
   project, not be entangled with unrelated projects' concerns.
 * A contributor (human or agent) working in one project's directory shouldn't need to read or
   filter past another project's ADRs, gotchas, or skills to find what's relevant.
-* Claude Code already resolves **directory-scoped skills** by path prefix, picking the most
-  specific one whose directory contains the files being worked on — project-local skill folders
-  are a first-class, already-supported mechanism, not a workaround.
+* A contributor working inside a project directory should find that project's own ADRs/TODOs by
+  simply looking in `docs/adr/`/`docs/agents/` relative to where they're working, without needing to
+  know the root location exists at all.
 * Project-local docs get reviewed and versioned alongside that project's own code changes in the
   same PRs, rather than requiring a separate, easy-to-forget root-level update.
 * Root-level docs should stay small enough to be genuinely cross-cutting and worth every
@@ -65,11 +65,20 @@ project's own domain and generator pipeline. Concretely:
   behavior, regardless of which project's work surfaced it. No project-local gotchas file.
 * **`<project>/docs/agents/TODO.md`** — that project's own open investigations (e.g. a performance
   issue in that project's generator, or a missing checking rule — see below).
-* **`<project>/.claude/skills/<dsl-name>-dsl/`** (or `.agents/skills/`) — one skill folder per DSL
-  hosted in that project, generated/refreshed via the `mps-dsl-memory` skill, relying on Claude
-  Code's existing most-specific-wins directory-scoped skill resolution. This is reference material
-  about what that DSL's own concepts *are* (structure, aliases, sandbox examples, blueprint
-  patterns) — not about how MPS itself behaves.
+* **Root `.claude/skills/<dsl-name>-dsl/`** (or `.agents/skills/`) — **exception to the localization
+  principle above.** DSL skills are reference material about what a specific DSL's own concepts
+  *are* (structure, aliases, sandbox examples, blueprint patterns), and are exactly the kind of
+  knowledge that would otherwise belong inside that DSL's owning project's directory. But they are
+  produced and discovered by JetBrains-authored tooling we should not fight: `mps-dsl-memory`'s
+  documented output path and `mps-mcp-workflow`'s own glob-based discovery of existing DSL skills
+  both hard-code the repo root (`mps_mcp_initialize_project_for_agents` explicitly installs into
+  "the repository/workspace root... which may be an ancestor of the MPS project directory"). These
+  tools couple a skill to its owning project by **name** (`plantuml-dsl`, `mermaid-dsl`, ...), not by
+  directory nesting — Claude Code's directory-scoped skill resolution (which would otherwise make a
+  project-local placement attractive) isn't part of their contract, so placing a DSL skill inside a
+  project directory would make it invisible to `mps-mcp-workflow`'s own discovery mechanism for no
+  real localization benefit. DSL skills therefore stay at the root, named per DSL, while everything
+  else in this ADR stays project-local.
 
 **A model that passes its checks should generate syntactically correct downstream artifacts.** A
 language that generates external text for a real consuming tool (PlantUML, SMV, C, Promela, ...) can
@@ -98,6 +107,9 @@ concepts, generated syntax, or generator pipeline (→ that project's ADRs/TODOs
   turn out to generalize across projects and sit stuck in a project-local ADR rather than being
   promoted to root. Mitigate by periodically reviewing project-local ADRs as promotion candidates
   when a second, independent project hits the same issue.
-* Negative: more scaffolding per project — each project needs its own `docs/adr/`, `docs/agents/TODO.md`,
-  and (if it hosts DSLs) `.claude/skills/<dsl>-dsl/` set up once, rather than one shared root
-  location. Accepted trade-off for the coupling/cohesion benefit.
+* Negative: more scaffolding per project — each project needs its own `docs/adr/` and
+  `docs/agents/TODO.md` set up once, rather than one shared root location. Accepted trade-off for
+  the coupling/cohesion benefit.
+* Negative: DSL skills remain at the root rather than fully localized, so the stated principle has
+  one explicit, documented exception rather than applying uniformly — accepted because fighting the
+  JetBrains-authored tooling's own discovery contract would cost more than it buys.

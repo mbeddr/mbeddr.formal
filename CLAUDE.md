@@ -132,7 +132,9 @@ whenever you hit one that isn't already recorded.
 design decisions and open investigations specific to one project's own domain/generator pipeline
 belong inside that project's own directory, not at the repo root: `<project>/docs/adr/` for
 project-specific decisions, `<project>/docs/agents/TODO.md` for that project's own open
-investigations (root `docs/agents/TODO.md` is only for cross-project investigations), and
-`<project>/.claude/skills/<dsl-name>-dsl/` for DSL-specific reference material (via the
-`mps-dsl-memory` skill). Check for a project-local `docs/agents/TODO.md` and `docs/adr/` when
-working inside a specific project directory.
+investigations (root `docs/agents/TODO.md` is only for cross-project investigations). Check for a
+project-local `docs/agents/TODO.md` and `docs/adr/` when working inside a specific project
+directory. DSL-specific skills (via `mps-dsl-memory`) are the one documented exception and stay at
+the root (`.claude/skills/<dsl-name>-dsl/` / `.agents/skills/<dsl-name>-dsl/`) per the existing
+"Project-Local DSL Skills" section above — JetBrains' own tooling discovers them there by name, not
+by directory nesting.
