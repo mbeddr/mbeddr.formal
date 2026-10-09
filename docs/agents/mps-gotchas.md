@@ -1,9 +1,14 @@
 # MPS / MCP Tooling Gotchas
 
 Running notes on non-obvious MPS-authoring or `mps_mcp_*` tool behavior discovered while working
-in this repo — not project decisions (those belong in `docs/adr/` or a component-local
-`docs/adr/`), just things that cost time to figure out once and shouldn't cost time twice. Newest
-entries at the top. See also `docs/agents/TODO.md` for open investigations.
+in this repo — not project decisions (those belong in `docs/adr/` or a project-local `docs/adr/`),
+just things that cost time to figure out once and shouldn't cost time twice. This file is the
+single home for such gotchas regardless of which project's work surfaced them — the underlying
+mechanism is a fact about the MPS platform or MCP tooling, not about any one project's domain, so it
+stays centralized even though project-local `docs/adr/` and `docs/agents/TODO.md` exist for
+knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-project-specific-knowledge-in-project-directories.md)
+for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
+project's own) for open investigations.
 
 ## Fast `Project` lookup from an `EditorCell`/`EditorContext` (2026-09-29)
 
@@ -468,6 +473,62 @@ inserting members via `contextNodeRef`); the model-reference key is `insert.mode
 (`java.util.Map`, not `Map`) — the parser doesn't consult the model's own imports/used-languages for
 implicit simple-name resolution the way MPS's own editor completion does.
 
+## Structural checks don't validate generated text against its real downstream consumer (2026-08-25)
+
+`mps_mcp_check_root_node_problems` (and any plain typesystem/constraints check) only validates MPS
+model/behavior correctness — it has zero visibility into whether text a language generates for a real
+external consumer (PlantUML, SMV, C, Promela, or any other target a TextGen/behavior method produces)
+is actually accepted by that consumer's own parser/renderer. A construct can pass every MPS check
+cleanly and still produce output the real downstream tool rejects, with no error surfaced anywhere in
+MPS — a generated-text correctness gap, invisible by construction to model-level validation.
+
+**This is a real gap in that language's own checking rules, not an acceptable permanent state.** A
+model that passes its checks should generate syntactically correct downstream artifacts. When such a
+gap is confirmed, the right fix is to add a proper checking rule (a `NonTypesystemRule` or similar, in
+the language's constraints/typesystem aspect — see the `mps-aspect-typesystem` skill) that enforces the
+real downstream constraint at the model level, not to just document a manual verification workaround
+and rely on tribal knowledge to avoid it in the future.
+
+**How to find these gaps in the first place:** validate the actual generated text against the real
+downstream tool directly, not just MPS-side checks. If the target tool ships as a bundled jar/binary in
+the repo (e.g. a vendored `*.jar` used by the language's own converter), run it standalone against the
+generated text — a `-checkonly`/equivalent flag gives a clean pass/fail, and a verbose/plain-text output
+mode typically gives the exact failing line and token, far more precise than whatever the MPS-side
+converter's own error handling surfaces (which can be as unhelpful as a debug-only log swallowing the
+real exception). To extract the real generated text from a live node for this kind of check, drive it
+through the MPS Console rather than `print_node` — see the `print_node` PLAIN TEXT/HTML entry above for
+why the editor projection isn't a reliable proxy for generated output.
+
+Until a missing checking rule is actually added, the confirmed gap belongs in that project's own
+`docs/agents/TODO.md`, not just in a comment or tribal memory.
+
+## Don't reuse a sibling family's own concrete base/ref concept to satisfy an inherited type constraint (2026-08-25)
+
+When a new concept needs "the same shape" as an existing, unrelated family's concept (name, color,
+nesting, usable as a relationship/reference endpoint), reuse the **generic, cross-cutting interfaces**
+that shape is built from — but do not extend that other family's own concrete base class or reuse its
+dedicated reference concept, even when it looks structurally generic. Doing so can force the new
+concept to also implement that other family's own marker interface, just to satisfy an inherited
+link's type constraint (e.g. a `substructure` child link typed to the other family's marker
+interface) — which makes the new concept a structurally legal child in contexts designed for the
+other family entirely, which is semantically wrong and purely an artifact of the inherited link's
+typing, not an intended capability.
+
+The tempting alternative — retargeting/narrowing the inherited link to a more specific interface — can
+fail outright with `"link target must be a subconcept of specialized link's target"`: MPS requires a
+specialized link's target to be a genuine subtype of the inherited link's target, and two sibling
+families' marker interfaces are typically siblings, not related by subtyping.
+
+**How to apply:** for a new member of a family of structurally-similar-but-semantically-distinct
+concepts (e.g. sibling diagram/declaration kinds in the same language), give it its own dedicated
+abstract base in its own namespace, implementing only the truly generic shared interfaces plus its own
+family's marker interface, owning its own untangled containment link — and a dedicated reference
+concept for use as a relationship/reference endpoint, mirroring the existing per-family pattern rather
+than reusing another family's. Base classes and interfaces that were designed family-agnostic from the
+start remain excellent reuse targets precisely because they were built for exactly this — the lesson is
+not "avoid reuse," it's "don't reuse a sibling family's own concrete classes, only its genuinely shared
+abstractions."
+
 ## Use `ThisNodeExpression`, not baseLanguage's `ThisExpression`, for "this" in behavior bodies (2026-08-25)
 
 Inside a behavior-aspect method or constructor body, the correct node for "this" is
@@ -660,6 +721,35 @@ return value or assignment rvalue on its own), wrap it in
 Cheapest fix once hit: `mps_mcp_update_node SET CHILD` on the ternary node's own ref, replacing it with
 `{ParenthesizedExpression: {expression: <same ternary>}}` — no need to touch the surrounding
 expression. Consider wrapping proactively any time a ternary is JSON-built as a binary operand.
+
+## Two unrelated `IsNotEmptyOperation` concepts share the same short name (2026-08-23)
+
+There are two distinct, unrelated concepts both surfacing as `.isNotEmpty`:
+`jetbrains.mps.baseLanguage.structure.IsNotEmptyOperation` (for `string`) and
+`jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation` (for sequences). Using the
+collections one on a string property passes structural checks but fails compilation ("not available
+here") — the two are easy to conflate since they share a name and a surface operation, but target
+completely different operand types.
+
+**How to apply:** when hand-building a JSON blueprint for `.isNotEmpty` (or any other
+same-named-but-different-package operation), pick the concept matching the operand's actual static
+type, not just the one found first by name — verify the exact concept's full qualified name via
+`get_concept_details` before reusing it on a differently-typed operand than the one it was last used
+for.
+
+## Plain-name reference resolution is unsafe for common feature names (2026-08-23)
+
+Plain-name reference resolution (e.g. `{"role": "property", "target": "name"}`) for
+`SPropertyAccess.property` / `SLinkAccess.link` / `SLinkListAccess.link` is unsafe when the name is
+common across many concepts (`body`, `condition`, `name`, `target`, ...) — it can silently resolve to
+the wrong feature of a similarly-named one, or fail with "Unresolved reference," rather than reliably
+targeting the specific feature intended.
+
+**How to apply:** for any such reference where the name is common, don't rely on plain-name
+resolution — harvest the exact feature's `sourceNode` ref via `mps_mcp_get_concept_details` and pass
+that explicit `r:...` ref instead. This is specific to feature references; local variables and
+`foreach` loop variables are safe to reference by plain name (`VariableReference`/
+`ForEachVariableReference` targeting a declaration in the same method body resolve correctly).
 
 ## `CellModel_RefCell` requires a mandatory `editorComponent` child (2026-08-23)
 

@@ -122,7 +122,17 @@ the `repo_admin` MPS project) via MPS MCP tools rather than trusting the README 
 more granular and is what `repo_admin`'s linters actually check against.
 
 **Accumulated gotchas.** `docs/agents/mps-gotchas.md` collects non-obvious MPS-authoring and
-`mps_mcp_*` tool behavior discovered while working in this repo (newest first). Check it before
-spending time rediscovering a known trap, and add a new entry there (not to personal/session memory)
-whenever you hit one that isn't already recorded. `docs/agents/TODO.md` tracks open investigations in
-the same spirit.
+`mps_mcp_*` tool behavior discovered while working in this repo (newest first) — the single home for
+this regardless of which project's work surfaced it, since it's a fact about the MPS platform/MCP
+tooling, not about any one project's domain. Check it before spending time rediscovering a known
+trap, and add a new entry there (not to personal/session memory, and not to a project-local file)
+whenever you hit one that isn't already recorded.
+
+**Project-local knowledge.** Per [ADR 0005](docs/adr/0005-localize-project-specific-knowledge-in-project-directories.md),
+design decisions and open investigations specific to one project's own domain/generator pipeline
+belong inside that project's own directory, not at the repo root: `<project>/docs/adr/` for
+project-specific decisions, `<project>/docs/agents/TODO.md` for that project's own open
+investigations (root `docs/agents/TODO.md` is only for cross-project investigations), and
+`<project>/.claude/skills/<dsl-name>-dsl/` for DSL-specific reference material (via the
+`mps-dsl-memory` skill). Check for a project-local `docs/agents/TODO.md` and `docs/adr/` when
+working inside a specific project directory.
