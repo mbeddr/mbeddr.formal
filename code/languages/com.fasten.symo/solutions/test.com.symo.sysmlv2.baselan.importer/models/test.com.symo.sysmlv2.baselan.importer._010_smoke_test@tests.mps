@@ -5,12 +5,27 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
   </languages>
   <imports>
     <import index="p3ir" ref="e62ef9c8-3912-4804-90f3-0907cb700273/java:org.antlr.v4.runtime(com.symo.sysmlv2.baselan.importer/)" />
     <import index="guqe" ref="e62ef9c8-3912-4804-90f3-0907cb700273/java:com.symo.sysmlv2.baselan.importer.antlr(com.symo.sysmlv2.baselan.importer/)" />
+    <import index="5rf1" ref="r:46502bdd-1e0c-47cf-8eed-483f76d95b20(com.symo.sysmlv2.baselan.structure)" />
+    <import index="uj5z" ref="r:3614c828-91c8-4645-a104-ddb59784795f(com.symo.sysmlv2.baselan.importer.main)" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
+    <import index="tqvn" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.tempmodel(MPS.Core/)" />
+    <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
   </imports>
   <registry>
+    <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
+        <property id="2616911529524314943" name="accessMode" index="3DII0k" />
+        <child id="1217501895093" name="testMethods" index="1SL9yI" />
+      </concept>
+      <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -45,6 +60,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
         <property id="1068580320021" name="value" index="3cmrfH" />
       </concept>
@@ -67,6 +83,9 @@
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
+      <concept id="7080278351417106679" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertIsNotNull" flags="nn" index="2Hmddi">
+        <child id="7080278351417106681" name="expression" index="2Hmdds" />
+      </concept>
       <concept id="1171931690126" name="jetbrains.mps.baseLanguage.unitTest.structure.TestMethod" flags="ig" index="3s$Bmu">
         <property id="1171931690128" name="methodName" index="3s$Bm0" />
       </concept>
@@ -82,6 +101,9 @@
         <child id="8427750732757990724" name="expected" index="3tpDZB" />
       </concept>
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
+      <concept id="1171981022339" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertTrue" flags="nn" index="3vwNmj">
+        <child id="1171981057159" name="condition" index="3vwVQn" />
+      </concept>
       <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
         <child id="1172073511101" name="message" index="3_1BAH" />
       </concept>
@@ -89,10 +111,26 @@
         <child id="1172075534298" name="message" index="3_9lra" />
       </concept>
     </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
+      <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
+        <reference id="1138056395725" name="property" index="3TsBF5" />
+      </concept>
+      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
+        <reference id="1138056546658" name="link" index="3TtcxE" />
+      </concept>
+      <concept id="1228341669568" name="jetbrains.mps.lang.smodel.structure.Node_DetachOperation" flags="nn" index="3YRAZt" />
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
+    </language>
+    <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
     </language>
   </registry>
   <node concept="3s_ewN" id="5J6U0gsISiQ">
@@ -111,8 +149,8 @@
                 <ref role="3uigEE" to="p3ir:~CharStream" resolve="CharStream" />
               </node>
               <node concept="2YIFZM" id="5J6U0gsMVkn" role="33vP2m">
-                <ref role="1Pybhc" to="p3ir:~CharStreams" />
-                <ref role="37wK5l" to="p3ir:~CharStreams.fromString(java.lang.String)" />
+                <ref role="1Pybhc" to="p3ir:~CharStreams" resolve="CharStreams" />
+                <ref role="37wK5l" to="p3ir:~CharStreams.fromString(java.lang.String)" resolve="fromString" />
                 <node concept="Xl_RD" id="5J6U0gsMVko" role="37wK5m">
                   <property role="Xl_RC" value="" />
                 </node>
@@ -127,7 +165,7 @@
               </node>
               <node concept="2ShNRf" id="5J6U0gsMVkp" role="33vP2m">
                 <node concept="1pGfFk" id="5J6U0gsMVkB" role="2ShVmc">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Lexer.&lt;init&gt;(org.antlr.v4.runtime.CharStream)" />
+                  <ref role="37wK5l" to="guqe:~SysMLv2Lexer.&lt;init&gt;(org.antlr.v4.runtime.CharStream)" resolve="SysMLv2Lexer" />
                   <node concept="37vLTw" id="5J6U0gsMVkC" role="37wK5m">
                     <ref role="3cqZAo" node="5J6U0gsMVjy" resolve="chars" />
                   </node>
@@ -143,7 +181,7 @@
               </node>
               <node concept="2ShNRf" id="5J6U0gsMVkD" role="33vP2m">
                 <node concept="1pGfFk" id="5J6U0gsMVtS" role="2ShVmc">
-                  <ref role="37wK5l" to="p3ir:~CommonTokenStream.&lt;init&gt;(org.antlr.v4.runtime.TokenSource)" />
+                  <ref role="37wK5l" to="p3ir:~CommonTokenStream.&lt;init&gt;(org.antlr.v4.runtime.TokenSource)" resolve="CommonTokenStream" />
                   <node concept="37vLTw" id="5J6U0gsMVtT" role="37wK5m">
                     <ref role="3cqZAo" node="5J6U0gsMVjB" resolve="lexer" />
                   </node>
@@ -159,7 +197,7 @@
               </node>
               <node concept="2ShNRf" id="5J6U0gsMVtU" role="33vP2m">
                 <node concept="1pGfFk" id="5J6U0gsMVwf" role="2ShVmc">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser.&lt;init&gt;(org.antlr.v4.runtime.TokenStream)" />
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser.&lt;init&gt;(org.antlr.v4.runtime.TokenStream)" resolve="SysMLv2Parser" />
                   <node concept="37vLTw" id="5J6U0gsMVwg" role="37wK5m">
                     <ref role="3cqZAo" node="5J6U0gsMVjG" resolve="tokens" />
                   </node>
@@ -194,6 +232,96 @@
                 <property role="Xl_RC" value="starting the parser on an empty input should not report any syntax errors" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5PDtixSUbMk">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_020_ImportEmptyFileTest" />
+    <node concept="1LZb2c" id="5PDtixSUbMl" role="1SL9yI">
+      <property role="TrG5h" value="testImportEmptyFile" />
+      <node concept="3cqZAl" id="5PDtixSUbMo" role="3clF45" />
+      <node concept="3clFbS" id="5PDtixSUbMp" role="3clF47">
+        <node concept="3cpWs8" id="5PDtixT1mA4" role="3cqZAp">
+          <node concept="3cpWsn" id="5PDtixT1mA5" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="H_c77" id="5PDtixT1mNg" role="1tU5fm" />
+            <node concept="2OqwBi" id="5PDtixT1mA6" role="33vP2m">
+              <node concept="2YIFZM" id="5PDtixT1mA7" role="2Oq$k0">
+                <ref role="37wK5l" to="tqvn:~TemporaryModels.getInstance()" resolve="getInstance" />
+                <ref role="1Pybhc" to="tqvn:~TemporaryModels" resolve="TemporaryModels" />
+              </node>
+              <node concept="liA8E" id="5PDtixT1mA8" role="2OqNvi">
+                <ref role="37wK5l" to="tqvn:~TemporaryModels.createEditable(boolean,jetbrains.mps.smodel.tempmodel.TempModuleOptions)" resolve="createEditable" />
+                <node concept="3clFbT" id="5PDtixT1mA9" role="37wK5m" />
+                <node concept="2YIFZM" id="5PDtixT1mAa" role="37wK5m">
+                  <ref role="37wK5l" to="tqvn:~TempModuleOptions.forDefaultModule()" resolve="forDefaultModule" />
+                  <ref role="1Pybhc" to="tqvn:~TempModuleOptions" resolve="TempModuleOptions" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5PDtixSUbMq" role="3cqZAp">
+          <node concept="3cpWsn" id="5PDtixSUbMt" role="3cpWs9">
+            <property role="TrG5h" value="file" />
+            <node concept="3Tqbb2" id="5PDtixSUbMv" role="1tU5fm">
+              <ref role="ehGHo" to="5rf1:3DMRBeFsYdC" resolve="SysMLv2File" />
+            </node>
+            <node concept="2YIFZM" id="5PDtixSUbMw" role="33vP2m">
+              <ref role="1Pybhc" to="uj5z:5PDtixSTyh2" resolve="SysMLv2Importer" />
+              <ref role="37wK5l" to="uj5z:5PDtixSTyh4" resolve="importText" />
+              <node concept="Xl_RD" id="5PDtixSUbMx" role="37wK5m">
+                <property role="Xl_RC" value="" />
+              </node>
+              <node concept="Xl_RD" id="5PDtixSUbMy" role="37wK5m">
+                <property role="Xl_RC" value="EmptyFile" />
+              </node>
+              <node concept="37vLTw" id="5PDtixT1mUp" role="37wK5m">
+                <ref role="3cqZAo" node="5PDtixT1mA5" resolve="tmp" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2Hmddi" id="5PDtixSUbM_" role="3cqZAp">
+          <node concept="37vLTw" id="5PDtixSUbMB" role="2Hmdds">
+            <ref role="3cqZAo" node="5PDtixSUbMt" resolve="file" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="5PDtixSUbMC" role="3cqZAp">
+          <node concept="Xl_RD" id="5PDtixSUbMF" role="3tpDZB">
+            <property role="Xl_RC" value="EmptyFile" />
+          </node>
+          <node concept="2OqwBi" id="5PDtixSUbMG" role="3tpDZA">
+            <node concept="37vLTw" id="5PDtixSUbMJ" role="2Oq$k0">
+              <ref role="3cqZAo" node="5PDtixSUbMt" resolve="file" />
+            </node>
+            <node concept="3TrcHB" id="5PDtixSUbMK" role="2OqNvi">
+              <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="5PDtixSUbML" role="3cqZAp">
+          <node concept="2OqwBi" id="5PDtixSUbMN" role="3vwVQn">
+            <node concept="2OqwBi" id="5PDtixSUbMQ" role="2Oq$k0">
+              <node concept="37vLTw" id="5PDtixSUbMT" role="2Oq$k0">
+                <ref role="3cqZAo" node="5PDtixSUbMt" resolve="file" />
+              </node>
+              <node concept="3Tsc0h" id="5PDtixSUbMU" role="2OqNvi">
+                <ref role="3TtcxE" to="5rf1:3DMRBeFsYdJ" resolve="content" />
+              </node>
+            </node>
+            <node concept="1v1jN8" id="5PDtixSUbMV" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5PDtixSUbMW" role="3cqZAp">
+          <node concept="2OqwBi" id="5PDtixSUbMY" role="3clFbG">
+            <node concept="37vLTw" id="5PDtixSUbN1" role="2Oq$k0">
+              <ref role="3cqZAo" node="5PDtixSUbMt" resolve="file" />
+            </node>
+            <node concept="3YRAZt" id="5PDtixSUbN2" role="2OqNvi" />
           </node>
         </node>
       </node>

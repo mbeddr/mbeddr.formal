@@ -10,6 +10,54 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## `BTestCase` (plain JUnit) can't create/manipulate live `SNode`s — core platform singletons are null in its run harness; use `NodesTestCase` instead (2026-10-10)
+
+A `BTestCase` test method that creates an actual MPS node at runtime — even a trivially detached
+one via plain `new node<C>()`, or a model-attached one via `model.new root node<C>()` — fails with
+a `NullPointerException` when run via the "JUnit Tests" run configuration, pointing at a `null`
+platform singleton:
+- Detached creation (`SNodeCreator`/`new node<C>()`): `NodeIdentityComponent.getInstance()` returns
+  null inside `SModelOperations.createNewNode`.
+- Model-attached creation (`Model_CreateNewRootNodeOperation`) needs a real `SModel` operand. Even
+  obtaining one via `jetbrains.mps.smodel.MPSModuleRepository.getInstance()` (passed as the `repo`
+  child of a `ModelReferenceExpression` to resolve a model by name/stereotype) doesn't help — the
+  singleton itself resolves to something whose internal repository field is still `null`
+  (`ModuleRepositoryFacade.getModelsByName` NPEs on `this.myRepo`).
+
+Both are symptoms of the same cause: **the "JUnit Tests" harness for a plain `BTestCase` does not
+bootstrap the full MPS platform** (no live module/model repository, no node-identity service) —
+consistent with `BTestCase` being documented for testing *hand-written Java/Kotlin runtime code*,
+not for exercising smodel/node-manipulation logic. Compiling and even `check_root_node_problems`
+pass cleanly; only the actual JUnit run fails, so this surfaces late.
+
+**How to apply:** for any test that creates, inserts, or otherwise manipulates a real `SNode`/
+`SModel` at runtime (e.g. testing an importer, a refactoring, a generator utility invoked
+standalone), use **`NodesTestCase`** (`testMethods` → `SimpleNodeTest`, not `TestMethodList` →
+`TestMethod`) instead of `BTestCase` — its run harness does properly initialize these platform
+services, confirmed by the identical node-creation statements (including the same
+`ModelReferenceExpression`/`MPSModuleRepository.getInstance()` pattern for resolving a model by
+name) succeeding there with no changes beyond the surrounding test-case shape. Reserve `BTestCase`
+for tests that only call plain Java/library code with no MPS model interaction (e.g. an ANTLR
+parser's own `getNumberOfSyntaxErrors()` — ordinary Java objects, no `SNode` involved).
+
+## `mps_mcp_parse_java_and_insert` in `child` mode can silently produce a detached orphan instead of attaching, for an `Expression` role the parser doesn't natively recognize (2026-10-10)
+
+Calling it with `mode: "child"` targeting an optional (`0..1`) `Expression`-typed role that isn't
+plain-Java-shaped (e.g. `ModelReferenceExpression.repo`, which semantically wants an `SRepository`
+expression) can return a success envelope whose own fields already reveal the problem —
+`"isRoot": true` with empty `parentReference`/`modelReference`/`moduleReference` — meaning the
+parsed expression was never actually spliced into the requested slot. `check_root_node_problems`
+on the real root then shows the intended parent's role as still empty, while the "inserted" node
+floats disconnected (and may not even persist — re-querying it by the reference returned in the
+tool's own response can come back `NOT_FOUND`).
+
+**How to apply:** don't trust a `mode: "child"` insert at face value for an uncommon `Expression`
+slot — check the response's own `isRoot`/`parentReference` fields (a real child attachment has
+`isRoot: false` and a non-empty `parentReference`). If it looks orphaned, redo the insert as a
+plain `mps_mcp_update_node ADD CHILD` with a hand-built JSON blueprint instead (reusing the
+same resolved `classConcept`/`baseMethodDeclaration` refs from the orphan's own printout) — that
+path attaches reliably.
+
 ## A `java_classes` stub model bakes in classifier refs as of its *first* scan — adding a dependency afterward doesn't retroactively fix them (2026-10-10)
 
 Wrapping a third-party jar as a `java_classes` modelRoot (the `docx4j.lib`/`plantuml.lib` pattern:

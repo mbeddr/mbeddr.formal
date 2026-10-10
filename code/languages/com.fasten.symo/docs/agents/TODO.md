@@ -149,6 +149,36 @@ must compare parsed models, not raw text.
 **Per-iteration recipe**: grammar rules → `structure` → importer visitor → minimal `editor` →
 `textGen` (round-trip) → fixture in `.sandbox` → tests in both `test.*` solutions →
 `check_root_node_problems` clean. Planned sequence: (0) toolchain + fixed grammar — **done**; (1)
-empty file; (2) `package` declarations (recursive `packageBodyElement`); (3) `import`; (4)
-`part def` (empty body); (5) full `camera.sysml`; then `toaster-system.sysml`/`vehicle-model.sysml`
-as later milestones, decided iteration-by-iteration rather than front-loaded.
+empty file — **done**; (2) `package` declarations (recursive `packageBodyElement`); (3) `import`;
+(4) `part def` (empty body); (5) full `camera.sysml`; then
+`toaster-system.sysml`/`vehicle-model.sysml` as later milestones, decided iteration-by-iteration
+rather than front-loaded.
+
+**Iteration 1 done (2026-10-10) — empty file**: `SysMLv2Importer.importText(String text, String
+fileName, model targetModel)` in `com.symo.sysmlv2.baselan.importer.main` parses `text`, throws if
+`parser.getNumberOfSyntaxErrors() > 0`, else creates a `SysMLv2File` root node (named `fileName`)
+in `targetModel` via `model.new root node<SysMLv2File>()` (`Model_CreateNewRootNodeOperation`) and
+returns it. Also added: a minimal scaffolded `editor` for `SysMLv2File` (name + `content` list);
+a `textGen` aspect (`com.symo.sysmlv2.baselan.textGen`, new model) with `SysMLv2File_TextGen`
+(`extension` returns `"sysml"`; body appends `$list{node.content}`, delegating to each content
+item's own textgen — inert for now since `content` is always empty this iteration, but this *is*
+the real serialization logic, not speculative, so it stays rather than being deferred); an example
+`SysMLv2File` named `EmptyFile` inserted directly into `com.symo.sysmlv2.baselan.sandbox._010_smoke`
+(hand-authored to match the import result for this trivial all-empty case, not produced by actually
+running the importer — a real run-the-importer-against-a-fixture pipeline is deferred to whenever a
+later iteration's content is non-trivial enough to make that worthwhile).
+
+**Test placement pitfall hit and resolved**: the obvious place for the import test looked like the
+existing `_010_test_sysmlv2_toolchain_Test` `BTestCase` (same `_010_smoke_test@tests` model as the
+iteration-0 toolchain check, by request) — but a `BTestCase` test method that creates a live
+`SNode` (either detached `new node<C>()` or model-attached `model.new root node<C>()`) NPEs at
+runtime on a null platform singleton (`NodeIdentityComponent`, or an uninitialized
+`MPSModuleRepository`) — see the new `mps-gotchas.md` entry. Fixed by adding a **`NodesTestCase`**
+(`ImportEmptyFileTest`, `SimpleNodeTest` method `testImportEmptyFile`) — still in the same
+`_010_smoke_test@tests` model, just a different root concept — whose run harness does properly
+initialize those services. The test resolves its own containing model at runtime via a
+`ModelReferenceExpression` (by name + `"tests"` stereotype, `repo` =
+`MPSModuleRepository.getInstance()`) and `.detach`es the created node at the end so repeated runs
+stay idempotent (verified: ran twice back to back, model root count unchanged at 2). Registered as
+JUnit config `_020_test_sysmlv2_import_empty_file`, alongside the existing
+`_010_test_sysmlv2_toolchain` — both green.

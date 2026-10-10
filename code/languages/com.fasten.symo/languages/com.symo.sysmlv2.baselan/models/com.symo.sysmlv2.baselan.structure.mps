@@ -57,7 +57,7 @@
   </node>
   <node concept="1TIwiD" id="3DMRBeFsYdF">
     <property role="EcuMT" value="4211673189923939179" />
-    <property role="TrG5h" value="EmptyLine" />
+    <property role="TrG5h" value="SysMLv2EmptyLine" />
     <property role="3GE5qa" value="base" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3DMRBeFsYdI" role="PzmwI">
