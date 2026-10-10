@@ -10,6 +10,65 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## A `java_classes` stub model bakes in classifier refs as of its *first* scan — adding a dependency afterward doesn't retroactively fix them (2026-10-10)
+
+Wrapping a third-party jar as a `java_classes` modelRoot (the `docx4j.lib`/`plantuml.lib` pattern:
+`<modelRoot type="java_classes"><sourceRoot location="foo.jar"/></modelRoot>` + a matching facet
+`<library>` entry) only resolves the jar's own cross-references (e.g. a method parameter typed
+`java.lang.String`) against whatever the hosting module already depended on **at the moment the jar
+was first scanned**. Creating the solution, adding the jar, and reloading *before* also adding the
+`JDK` dependency leaves every JDK-typed reference inside the stub model permanently serialized as
+`targetReference: "null/~String"` (`print_node` on the affected member shows a child
+`ClassifierType` named literally `"?no classifier?"` with `targetReference: "null/~String"`). This
+then surfaces downstream as confusing, seemingly-unrelated typesystem errors on code that merely
+*calls* the jar's methods — `"Error: String is not a subtype of ?no classifier?"`,
+`"Error: Incompatible method signature"` — and even further downstream, methods declaring
+`throws SomeRuntimeException` (ANTLR4's generated parser rule methods declare
+`throws RecognitionException`, which genuinely extends `RuntimeException`) get wrongly flagged
+`"Error: uncaught exceptions: ..."`, because the typesystem's checked-exception exemption also
+depends on correctly resolving the exception class's supertype chain — which fails for the same
+reason. Merely adding the missing dependency (e.g. `JDK`) afterward and calling
+`mps_mcp_reload_all` does **not** fix already-baked-in stub references — the stub model isn't
+re-scanned just because the owning module's dependency list changed.
+
+**How to apply:** before wrapping any jar as `java_classes`, add every dependency the jar's own
+*public API surface* needs to resolve (at minimum `JDK`, mirroring existing `*.lib` solutions in
+this repo) to the hosting module **first**, then add the `java_classes` modelRoot + `<library>`
+entry, then `reload_all` once. If you discover the dependency was missing after the fact: remove
+the `java_classes` modelRoot + `<library>` entries entirely, `reload_all` (clears the stale stub
+model), re-add them now that the dependency is present, `reload_all` again. Verify with
+`mps_mcp_print_node(deep=true)` on a representative stub member before trusting it — look for any
+`"?no classifier?"` node or a `targetReference` starting with `"null/"`. This compounds with the
+existing "repeated `java_classes` churn can freeze MPS" gotcha below — converge on the *dependency
+list* first (not just the jar list) before doing this remove/re-add cycle, so it only needs to
+happen once.
+
+## A structural MCP write can pop a confirmation dialog that blocks every project-model MCP call until dismissed — not necessarily a genuine freeze (2026-10-10)
+
+`mps_mcp_create_module`, `mps_mcp_module_dependency` (ADD), and a `java_classes`/`<library>`
+modelRoot hand-edit followed by `mps_mcp_reload_all` can each pop an MPS confirmation dialog (seen:
+after creating a new Solution module; after adding a module dependency) that blocks the IDE's
+single read/write lock — every subsequent MCP call that needs the project model
+(`mps_mcp_get_project_structure`, `mps_mcp_reload_all`, `mps_mcp_print_node`, ...) times out, even
+against modules unrelated to the triggering change, **while** a call that doesn't touch the project
+model (`mps_mcp_list_open_projects`) keeps answering normally. That split — lightweight calls fine,
+project-model calls all timing out — is the signal to check for a dialog rather than assume a
+genuine hang; the existing "repeated `java_classes` churn" gotcha below describes the *other* case
+(a real freeze, confirmed by `get_project_structure` *also* timing out, which it does here too —
+the distinguishing test is whether `list_open_projects` still answers, not whether the heavier call
+times out). Restarting MPS is unnecessary in the dialog case — just ask the user to find and
+dismiss it (it can be behind the main window); the very next call then succeeds immediately.
+
+**Side effect to watch for:** if a `.msd`/`.mpl` hand-edit is made and a subsequent MCP call hits
+this dialog-wait before MPS has re-read the file from disk, MPS can flush its own (pre-edit)
+in-memory descriptor back to disk once the dialog resolves, **silently reverting the hand-edit**
+(observed: a `java_classes` modelRoot + `<library>` addition disappeared from the file, and
+`<languageVersions/>` was reset empty, after exactly this sequence). **How to apply:** after any
+`.msd`/`.mpl` hand-edit, if the following tool call times out and a dialog turns out to be the
+cause, re-read the edited file from disk once the dialog is cleared and the call succeeds — don't
+assume the edit survived; redo it if it didn't, then reload once more without interleaving other
+structural changes.
+
 ## Fast `Project` lookup from an `EditorCell`/`EditorContext` (2026-09-29)
 
 Getting an IDEA `Project` from MPS editor-aspect code — cell constructors, cell actions, editor-query

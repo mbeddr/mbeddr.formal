@@ -47,3 +47,108 @@ Still to investigate:
   be made to work without per-jar granularity limitations.
 - Whether heap usage grows further/leaks across repeated make/rebuild or reload cycles within one
   IDE session (not just a one-time baseline snapshot).
+
+## SysML v2 textual importer (`com.symo.sysmlv2.baselan`) — iteration plan (2026-10-10)
+
+Building a SysML v2 textual-syntax importer, iteratively, from the skeleton already in place
+(language `com.symo.sysmlv2.baselan`, solutions `com.symo.sysmlv2.baselan.importer` and
+`.sandbox`, tests `test.com.symo.sysmlv2.baselan[.importer]`).
+
+**Grammar source was corrupted, now fixed.** The committed `grammar/SysMLv2Lexer.g4` /
+`SysMLv2Parser.g4` were saved GitHub HTML pages, not raw grammar text — discovered via the page's
+own `<title>`/`og:url` metadata, which named the real origin:
+[antlr/grammars-v4](https://github.com/antlr/grammars-v4), path `sysml-v2/`, `master` branch, MIT
+license, derived from the OMG SysML v2 KEBNF spec. Replaced both files with the verified raw
+content and added `grammar/README.md` (copied from upstream) recording provenance/license/entry
+point. Upstream entry rule is `rootNamespace : packageBodyElement* EOF` — an empty file is valid
+syntax, making it the true "hello world" fixture. Upstream also ships
+`examples/{camera,toaster-system,vehicle-model}.sysml` as later-iteration milestones (even the
+smallest, `camera.sysml`, already needs imports + `part def` + `perform action`, so it's not an
+early target).
+
+**Lexer discards formatting with no hidden channel**: `WS` and `//` line-comments are `-> skip`
+(not even hidden-channel), so blank-line/`//`-comment round-trip is NOT recoverable from the
+grammar as-is — would require forking the vendored lexer to route those to a hidden channel. The
+existing `EmptyLine` concept (`ISysMLv2FileContent`) is being **kept** as an explicit deferred
+milestone for that lexer fork, not removed. `/* ... */` block comments (`REGULAR_COMMENT`) are
+real tokens already consumed by `comment`/`doc`/`rep` rules — those map to SysML's first-class
+`Comment`/`Documentation`/`TextualRepresentation` elements, a distinct (non-deferred) later
+iteration.
+
+**Toolchain — iteration 0 done (2026-10-10)**: no ANTLR4 (only ANTLR2 jars, used by docx4j) existed
+in the repo. MPS has no model-root type for compiling plain checked-in `.java` source (confirmed by
+enumerating `ModelRoot` implementations in `mps-persistence.jar`: only `JavaClassStubsModelRoot` /
+`JDKClassStubModelRoot`, both binary-jar stub readers — no source-compiling equivalent), so "keep
+the generated source readable AND have MPS compile it" resolves to: vendor
+`antlr4-runtime-4.13.2.jar` + `sysmlv2-grammar.jar`, both wired directly into
+`com.symo.sysmlv2.baselan.importer` itself (`com.mpsbasics.docx4j.lib`/`com.symo.plantuml.lib`
+third-party-jar pattern — `java_classes` modelRoot + facet `<library>` entries under `lib/` — but
+inlined into this solution rather than a separate `*.lib` solution, by request: fewer modules for a
+single-consumer jar pair). Needs **the `JDK` module dependency to already be present before the
+jar is first scanned** — see the `mps-gotchas.md` entry on stub models baking in classifier refs as
+of first-scan time (hit once when this lived in a separate `.lib` solution created without `JDK`;
+avoided on the second pass by adding `JDK` first).
+
+**Grammar build is now Gradle, not a shell script (2026-10-10, by request)**: the original
+`grammar/regenerate.sh` (hand-rolled `curl`/`java -jar antlr4-complete.jar`/`javac`/`jar`) is gone,
+replaced by a proper Gradle subproject, `:sysmlv2-grammar`
+(`code/languages/com.fasten.symo/solutions/com.symo.sysmlv2.baselan.importer/grammar-build/` —
+briefly moved to the `com.fasten.symo` project root and then moved back, by request: nesting it
+inside the importer solution it builds for was judged to better preserve MPS project structure
+conventions than hoisting it out for hypothetical future reuse — registered in the repo-root
+`settings.gradle`) using Gradle's built-in `antlr` plugin. ANTLR4 is
+now a normal Gradle dependency (`antlr("org.antlr:antlr4:4.13.2")` for the tool,
+`api("org.antlr:antlr4-runtime:4.13.2")` for the runtime, both resolved from Maven Central — no
+more manual jar downloads). The `.g4` grammar files moved to the Gradle-conventional
+`grammar-build/src/main/antlr/` (there is no more separate `grammar/` directory at all — the old
+`grammar/README.md` provenance doc moved to `grammar-build/README.md`). `generateGrammarSource` is
+configured with `-visitor -no-listener -package com.symo.sysmlv2.baselan.importer.antlr`; a custom
+`copyToMps` Sync task vendors the resulting `sysmlv2-grammar.jar` (this subproject's own `jar`
+output) plus `antlr4-runtime-4.13.2.jar` (filtered out of `runtimeClasspath` by name — that
+classpath also resolves the ANTLR4 *tool*'s own transitive deps (ST4, antlr3 runtime, icu4j,
+treelayout) via the plugin's `antlr` configuration, which MPS never needs) straight into
+`com.symo.sysmlv2.baselan.importer/lib/`. Run `./gradlew :sysmlv2-grammar:copyToMps` from the repo
+root whenever the grammar changes, then rebuild `com.symo.sysmlv2.baselan.importer` in MPS. Not
+wired into the root `setup`/`resolveLanguageLibs` task chain (unlike `resolvePlantUML` et al.) —
+left standalone since `com.fasten.symo` is explicitly excluded from the Ant-based
+`build_formal_languages` migration; wiring it in is a reasonable follow-up if wanted. Validated
+three times total: standalone (plain `javac`/`java`, outside MPS, before the Gradle migration —
+zero syntax errors parsing `rootNamespace` on an empty file and all three upstream
+`examples/*.sysml`);
+inside MPS via a throwaway `SysMLv2ToolchainSmokeTest` `ClassConcept` in
+`com.symo.sysmlv2.baselan.importer.main` (zero errors on empty + `camera.sysml`, then deleted once
+the real test below existed — `.main` is reserved for the real importer entry point, not
+scaffolding); and as a proper, permanent `BTestCase` — `test_testParserStart` in
+`test.com.symo.sysmlv2.baselan.importer._010_smoke_test@tests` (`test.com.symo.sysmlv2.baselan.importer`
+solution, wired with dependencies on `.importer` and `JDK` only — no separate lib module to depend
+on anymore) — asserts `parser.getNumberOfSyntaxErrors() == 0` after `rootNamespace()` on an empty
+string. Runs green via a registered `JUnit Tests` config (`_010_test_sysmlv2_toolchain`). This is
+the permanent toolchain-health check iteration 1 builds on top of.
+
+**Note on consolidating a jar-wrapping solution into its sole consumer**: if you later merge a
+separate `*.lib` solution's `java_classes` modelRoot into the module that was its only consumer
+(as done here), any *existing* BaseLanguage references into the old jar-wrapping module's stub
+classes (e.g. `ClassCreator.baseMethodDeclaration`, `StaticMethodCall.classConcept`/
+`baseMethodDeclaration`) go dangling — the classes now live under a different module uuid in the
+persistent ref, even though the package/class/method names are unchanged. `mps_mcp_alter_nodes
+FIX_REFERENCES` (pass `{"nodeReference": "..."}`) fixes the simpler ones (plain classifier `type`
+refs) but not constructor/method refs — those need a manual `mps_mcp_update_node SET REFERENCE`
+batch, swapping the old module-uuid prefix for the new one in each `targetReference` (the package
+path segment also changes from `(old-module-name/)` to `(new-module-name/)`). `MAKE rebuild=true`
+surfaces exactly which refs are still broken via its `textgen error: 'Target node is null ...'`
+output.
+
+**Validation strategy**: each iteration gets a `textGen` aspect alongside `structure`, producing a
+*semantic* round-trip check (import text → model → regenerate text → re-import → compare models),
+not a byte-level diff against arbitrary input formatting — SysML's textual syntax is
+whitespace/style-insensitive, so diffing regenerated text against a hand-authored fixture is only
+valid while the fixture is written in the textgen's own canonical style. Once real upstream
+examples (`camera.sysml` etc., different formatting conventions) are imported, round-tripping
+must compare parsed models, not raw text.
+
+**Per-iteration recipe**: grammar rules → `structure` → importer visitor → minimal `editor` →
+`textGen` (round-trip) → fixture in `.sandbox` → tests in both `test.*` solutions →
+`check_root_node_problems` clean. Planned sequence: (0) toolchain + fixed grammar — **done**; (1)
+empty file; (2) `package` declarations (recursive `packageBodyElement`); (3) `import`; (4)
+`part def` (empty body); (5) full `camera.sysml`; then `toaster-system.sysml`/`vehicle-model.sysml`
+as later milestones, decided iteration-by-iteration rather than front-loaded.
