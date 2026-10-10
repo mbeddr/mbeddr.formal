@@ -128,6 +128,13 @@ tooling, not about any one project's domain. Check it before spending time redis
 trap, and add a new entry there (not to personal/session memory, and not to a project-local file)
 whenever you hit one that isn't already recorded.
 
+**MPS idioms.** `docs/idioms/` collects reusable MPS design/modeling *techniques* — one file per
+idiom, independent of whether they were a decision (ADR) or a trap (gotcha); see `docs/idioms/README.md`
+for the index and the three-way test. Check it when designing a new structural pattern (e.g. a slot
+that needs to support both referencing and inline-declaring) before inventing one from scratch, and
+add a new file there (self-contained, minimal cross-references, so it can be copied into another MPS
+project) when you land on a genuinely reusable technique — not a one-off fix specific to one project.
+
 **Project-local knowledge.** Per [ADR 0005](docs/adr/0005-localize-project-specific-knowledge-in-project-directories.md),
 design decisions and open investigations specific to one project's own domain/generator pipeline
 belong inside that project's own directory, not at the repo root: `<project>/docs/adr/` for

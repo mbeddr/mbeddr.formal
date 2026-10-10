@@ -144,20 +144,6 @@ before declaring the edit done. Prefer a single-child surgical `SET CHILD` (e.g.
 `returnType`) over a whole-node `replace` whenever only part of a node needs to change — it keeps the
 original ID and avoids this class of dangling reference entirely.
 
-## `OptionalCell` auto-shows/hides from a string property's nullability only (2026-08-31)
-
-`com.mbeddr.mpsutil.grammarcells.structure.OptionalCell` wrapping a plain `CellModel_Property` for a
-**string** property needs no explicit `renderingCondition` at all — it auto-derives visibility from
-whether the property is null, plus gives standard keyboard insert/delete for free. The catch: this
-only works because the property is nullable. `integer`/`boolean` properties are never null (they
-default to `0`/`false`), so `OptionalCell` around one has nothing to key visibility off.
-
-**How to apply:** for an optional numeric field, don't model it as `int` plus a redundant `hasX`
-boolean. Instead make the property a regex-constrained **string** (`NodePropertyConstraint` validator,
-e.g. `[0-9]+`) — naturally nullable, lets `OptionalCell` work with zero extra plumbing, and still
-validates input shape. Remember the validator must accept `null` too
-(`propertyValue == null || propertyValue.matches(...)`) or clearing the field becomes impossible.
-
 ## `SLinkAccess` vs `SLinkListAccess` — check cardinality before picking one (2026-08-29)
 
 `jetbrains.mps.lang.smodel.structure.SLinkAccess` is for single-cardinality links (`0..1`/`1`) and
@@ -247,6 +233,18 @@ first, then the referencing node), or insert with plain names and immediately fo
 on that specific reference to confirm it isn't dangling — a clean dry run is not sufficient evidence
 here. Fix: `mps_mcp_update_node SET REFERENCE` with the sibling's real ref.
 
+**Two further wrinkles, both confirmed directly:** (1) local name-based resolution is not reliably
+guaranteed even for a *constrained* reference role in a bulk `insert_root_node_from_json` call — the
+identical pattern worked with zero warnings in one insert and needed a `SET REFERENCE` repoint for
+another, equally-valid-looking insert the same day, root cause not isolated. Always check the insert
+response's `fixReferences.stillBroken` count rather than assuming either outcome. (2) Local-blueprint
+name resolution for a reference role appears scoped to the **whole containing model**, not just the
+blueprint being inserted — if the same name already exists elsewhere in that model (e.g. an unrelated
+sibling diagram sharing one model), the reference can silently fail to resolve (`stillBroken` > 0) even
+though nothing in the local blueprint itself is ambiguous. Give every referenceable node a name unique
+across the whole containing model when building new content via a single bulk insert, or build via
+scoped `ADD CHILD` calls into one existing diagram instead.
+
 ## Multi-statement console `BLCommand` blocks can return no response (2026-08-28)
 
 When validating generated output via the MPS Console MCP tools, a multi-statement `BLCommand` (e.g.
@@ -333,6 +331,14 @@ stray extra sibling node with an empty auto-created child — even though the bl
 specified one node. Quotations/JSON blueprints are not reliably guaranteed to bypass constructors for
 this operation shape.
 
+**Orphaning also applies to containment children, not just properties/references.** Deleting or
+retargeting a concept's own child-link override (e.g. removing a narrowed `substructure` link so the
+concept falls back to an inherited one) does not migrate or clear children that were already inserted
+under the old role — they become invisible to a shallow `print_node` (`children: []`, no error) even
+though the raw data is still physically present in the model. `check_root_node_problems` on the
+*language* side stays clean throughout (it validates the concept declarations, not stale instance
+data); only the live MPS editor, or a deep `print_node`, surfaces it.
+
 **How to apply:** after any structural role deletion, treat every existing instance as carrying
 invisible orphaned data and fix it via full-node replace (`mps_mcp_update_node SET CHILD` with a
 complete fresh blueprint, reconstructed from a prior deep `print_node`) rather than trying to patch the
@@ -348,6 +354,80 @@ ADD, SET."`. To delete a child, use `SET`×`CHILD` with the `childJson` paramete
 call entirely**. Passing the literal string `"null"` fails with `"Input is neither a valid JSON
 object/array nor an existing file path: 'null'"` — the tool wants the parameter absent, not
 present-with-a-null-value.
+
+## `get_concept_details` can serve a stale or incomplete descriptor after a structural edit (2026-08-28)
+
+After a structural change (e.g. swapping a `references` link for a `children` link of the same role
+name), `mps_mcp_get_concept_details` can keep reporting the **pre-change** shape — still showing the
+old link under `"references"` — until a successful `mps_mcp_alter_nodes MAKE` actually runs. The
+correct, current data is visible immediately via `mps_mcp_print_node` on the raw `ConceptDeclaration`
+node; `get_concept_details` lags behind until a rebuild catches up (consistent with its own documented
+`"runtime_stale"`/hollow-descriptor caveat after `CREATE_CONCEPTS`, but observed here for an ordinary
+`UPDATE_CONCEPT_*` edit too, not just right after creation).
+
+Separately, `get_concept_details` can also fail to clearly distinguish a concept's **own**
+narrowed/overriding link from one it merely **inherits** — it lists only the resulting property/child
+set, without flagging that a same-named link is actually a fresh declaration on this concept (via
+`specializedLink`) rather than the ancestor's. Confirmed by comparing `get_concept_details` output
+against a raw `print_node` on the structure declaration, which showed a distinct, concept-owned link
+the summary view didn't call out.
+
+**How to apply:** don't trust `get_concept_details` immediately after a structural edit that hasn't yet
+been followed by a successful MAKE — cross-check with `print_node` on the raw `ConceptDeclaration` if
+something looks unchanged. When it matters whether a link is inherited or the concept's own override
+(e.g. before building a `RefNodeList`/`SLinkListAccess` against it), read the raw structure declaration
+directly rather than relying on `get_concept_details`'s summarized view.
+
+## Add an interface to an existing concept via a raw `ADD CHILD`, not `alter_structure` (2026-08-28)
+
+There is no `mps_mcp_alter_structure` operation for adding (or removing) an `implements` entry on an
+**already-existing** concept — only `CREATE_CONCEPTS`'s interface options apply at creation time.
+
+**How to apply:** add the interface directly via `mps_mcp_update_node` `ADD`×`CHILD` on the concept's
+own `ConceptDeclaration` node, role `implements`, with an `InterfaceConceptReference` child referencing
+the interface (inner reference role `intfc`):
+```json
+{"concept":"jetbrains.mps.lang.structure.structure.InterfaceConceptReference","references":[{"role":"intfc","target":"<interface ref>"}]}
+```
+This is the same technique needed to remove an `implements` entry (delete the matching
+`InterfaceConceptReference` child) — there's no dedicated structure-level operation for either
+direction.
+
+## Add a member to an existing enum via `ADD CHILD`, not `CREATE_ENUM` (2026-08-28)
+
+`mps_mcp_alter_structure`'s `CREATE_ENUM` only creates a brand-new `EnumerationDeclaration` from
+scratch — there is no "add a member to an existing enum" operation.
+
+**How to apply:** add a new `EnumerationMemberDeclaration` directly via `mps_mcp_update_node`
+`ADD`×`CHILD` on the enum root's `members` role. The member's property names are `name`,
+`presentation`, and `memberId` — **not** `memberName`/`externalValue`/`internalValue` (those don't
+exist on `EnumerationMemberDeclaration` and fail with `"Unknown property"`). Confirm the exact property
+names by printing an existing member first if unsure.
+
+## Calling a method via an interface the receiver doesn't implement throws only at runtime (2026-08-27)
+
+Similar to, but distinct from, the `overriddenMethod` gotcha above: pointing a
+`Node_ConceptMethodCall.baseMethodDeclaration` at an interface's abstract method declaration, then
+calling it on a receiver whose concept does **not** implement that interface, passes
+`check_root_node_problems` and a clean rebuild — but throws `java.lang.IllegalArgumentException` the
+instant it's actually invoked, for the same underlying reason (reflection-based virtual dispatch
+requires the receiver's real class hierarchy to contain the method's declaring class). This commonly
+surfaces when a family of related concepts has *some* members implementing a shared interface and
+others not, and a caller invokes the shared method generically across the whole family without
+checking which members actually implement it.
+
+**How to apply:** before calling a behavior method generically across a family of concepts, confirm
+every concept you'll actually call it on implements the interface/class declaring that method — don't
+assume structural similarity implies the same interface. If some family members genuinely don't
+implement it, call it only on the subset that does (filter by concept/interface first), or route
+through each member's own narrower method instead of one shared call site.
+
+**A related, partially-caught variant:** calling a method on an operand whose *static* type only
+*inherits* the method from a distant ancestor (no concrete override anywhere between the operand's own
+type and that ancestor) can throw the same runtime `IllegalArgumentException` — but this sub-case is
+sometimes flagged in advance by `check_root_node_problems` as `"reference ... is out of search scope"`
+on the method-call reference itself. Treat that warning as a real, actionable signal and fix the call
+before running it — don't dismiss it and try anyway.
 
 ## A local-variable reference can't target a sibling declared in the same blueprint (2026-08-27)
 
@@ -407,6 +487,67 @@ editor/behavior/constraints roots show up as usages of the concept declaration, 
 is wrong with the name index. If a real disk/IDE mismatch is suspected, verify independently via `git
 status`/`git show HEAD:<path>` before spending time on IDE/MCP restarts.
 
+## `CREATE_ENUM` with `dryRun: true` can still create the enum for real (2026-08-27)
+
+A `mps_mcp_alter_structure` `CREATE_ENUM` call with `dryRun: true` was observed to create the enum in
+the model anyway — a later "real" (non-dry-run) call for the same enum then failed with "already
+exists," and `mps_mcp_search_root_node_by_name` confirmed the enum was already present with exactly
+the dry run's members. A parallel `CREATE_CONCEPTS` dry run in the same session did **not** leak, so
+this looks specific to `CREATE_ENUM`.
+
+**How to apply:** don't fully trust `dryRun` on `CREATE_ENUM`. If a subsequent real call reports
+"already exists," check `mps_mcp_search_root_node_by_name` for the enum before fighting the
+duplicate-name error — the dry run's own output is probably already what you wanted, just created a
+call earlier than expected.
+
+## `conceptShortDescription` is the real property name for a concept's own documentation (2026-08-27)
+
+A concept's documentation (surfaced as `shortDescription` in `get_concept_details`'s summary output) is
+stored as a property literally named `conceptShortDescription` on the `ConceptDeclaration` node —
+distinct from `BaseConcept.shortDescription` (an inherited per-*instance* property every node has, not
+for concept-level docs) and from `documentation` (a separate `DocumentedNodeAnnotation` child).
+`CREATE_CONCEPTS`'s `shortDescription` JSON field writes to this property at creation time, but
+`get_concept_details`'s own summary field doesn't reveal the underlying property name for an
+*existing* concept.
+
+**How to apply:** to add or fix a concept's documentation after creation, use `mps_mcp_update_node SET
+PROPERTY` with `propertyName: "conceptShortDescription"` directly on the `ConceptDeclaration` node. If
+unsure of the exact property name, print an already-documented sibling concept's raw node and compare
+its property list.
+
+## An enum member's `enumPresentation: ""` is silently dropped, not stored as empty (2026-08-27)
+
+Creating or setting an `EnumerationMemberDeclaration`'s `presentation` to the empty string (`""`) —
+intended for a member that should render as invisible/empty text — doesn't stick. `CREATE_ENUM`'s
+`enumPresentation: ""` silently omits the property entirely rather than storing an empty string, and a
+later direct `mps_mcp_update_node SET PROPERTY` to `""` doesn't fix it either (confirmed independently
+— this looks like a genuine tool-level normalization of `""` to "absent," not model corruption). The
+member then falls back to its default presentation (its own uppercase constant name), which can
+silently break generated output for any behavior code that trusts `.presentation` being empty for that
+member — confirmed as a real regression: every instance using the enum rendered an unwanted literal
+member name into generated text, with no error anywhere.
+
+**How to apply:** never trust an enum member's `.presentation` being empty based on intent alone —
+check the actual stored `EnumerationMemberDeclaration` node's properties first (`print_node` on it; if
+there's no `presentation` property listed at all, the member will render as its raw name, not blank).
+For behavior code that needs to treat a specific member as "renders as nothing," gate on identity
+instead of presentation text: `jetbrains.mps.lang.smodel.structure.EnumMember_IsOperation` (child role
+`member`, an `EnumMemberReference` targeting the specific `EnumerationMemberDeclaration`) — substitute
+`""` when true, fall through to `.presentation` otherwise.
+
+## A `string` property never explicitly set reads back as `null`, not `""` (2026-08-27)
+
+`jetbrains.mps.lang.smodel.structure.SPropertyOperations.getString(node, prop)` (the underlying read
+for a plain `SPropertyAccess` on a `string` property) returns `null` — not an empty string — when the
+property was never explicitly set on that node (e.g. a hand-JSON-inserted node that only sets some of
+its string properties). Calling any `String` instance method on such a value NPEs.
+
+**How to apply:** never assume a `string`-typed property is guaranteed non-null just because
+hand-authored sandbox/test examples happen to set every field. Null-coalesce before use: `(x == null)
+? "" : x` (`TernaryOperatorExpression` + `EqualsExpression`/`NullLiteral`), or reach for
+`IsNotEmptyOperation` (which reduces to a null-safe check) rather than calling a `String` method
+directly on a possibly-unset property.
+
 ## An `IConceptAspect` root needs its own aspect-stereotype model (2026-08-26)
 
 A concept implementing `IConceptAspect` (e.g. `com.mbeddr.mpsutil.modellisteners.structure.ConceptModelListeners`,
@@ -427,21 +568,46 @@ stereotype-matching aspect model for the target language (e.g. a `listeners`-ste
 plain default model may not enforce the same check — worth checking as a simpler path if a dedicated
 aspect model is impractical, but verify rather than assume it works.
 
-## `getPresentation()` is separate from a concept's own text-generation method (2026-08-26)
+## A concept missing a required interface method override fails visibly, unlike a bad `baseMethodDeclaration` (2026-08-26)
 
-A concept that already falls back to an alias/short-name property inside its own text-generation
-method (e.g. for generated output) does **not** automatically show that alias in the MPS
-auto-completion/substitute menu. Completion presentation is driven by `BaseConcept.getPresentation()`
-(virtual, declared in `jetbrains.mps.lang.core.behavior`), which by default returns the `name` property
-for `INamedConcept`s — a completely separate override point.
+Contrast with the `overriddenMethod`/interface-mismatch gotchas above: if a concrete concept
+implements an interface that declares an abstract method (e.g. a diagram-content interface's `text()`)
+but never adds its own matching `ConceptMethodDeclaration` override, MPS reports a real, visible error
+— `"does not implement some abstract methods"` — and the concept gets no editor at all. This is a
+genuine structural check that catches the problem at generation time, unlike the
+`overriddenMethod`-points-at-the-wrong-interface or `baseMethodDeclaration`-call-on-a-non-implementing-receiver
+cases (both of which only throw `IllegalArgumentException` at runtime, invisible to
+`check_root_node_problems`).
 
-**How to apply:** whenever a concept carries an alias-like short-name interface, also add a
-`getPresentation()` override on its behavior: return the alias when non-empty, else `return
-super.getPresentation();` (plain unqualified `SuperNodeExpression` when the concept extends
-`BaseConcept` directly). If the concept has no `ConceptBehavior` root yet, create one — declaring the
-override on a shared abstract base covers concrete subconcepts via virtual dispatch. Verify via
-console: print `it.name + " -> " + it.getPresentation()` over instances and confirm aliased nodes show
-`name -> alias`.
+**How to apply:** if a newly-`implements`-ed interface's abstract method is simply never overridden at
+all, expect a clear, immediate, visible error — this is not the silent class of bug the related
+runtime-only entries describe. Don't confuse "forgot to add an override at all" (caught immediately)
+with "override/call points at an interface the receiver doesn't genuinely implement" (caught only at
+runtime).
+
+## A property set to its enum's declared default value doesn't appear in `print_node`'s properties list (2026-08-26)
+
+An enum-typed property holding its own declared **default** member (e.g. `kind = NODE` where `NODE` is
+the enum's default) doesn't show up in `mps_mcp_print_node`'s `properties` array at all — only a
+non-default value shows explicitly (e.g. `kind = CLOUD` appears as `"<shortDatatypeId>/CLOUD"`). This
+is not a bug or data loss — the runtime correctly falls back to the declared default when reading it —
+but it can look exactly like a lost/unset property mid-debugging.
+
+**How to apply:** before concluding an enum property's value was lost or never written, check whether
+the property's current value simply equals the enum's own default — that's the expected serialization
+behavior, not evidence of a problem.
+
+## Writing an enum property accepts the plain member name; `print_node` displays a different, read-only form (2026-08-26)
+
+`mps_mcp_update_node SET PROPERTY` on an enum-typed property accepts the plain member name directly as
+a string (e.g. `"PORT_IN"`, `"CLOUD"`) — no need to reverse-engineer or reproduce the compact
+`<shortDatatypeId>/<MEMBER>` encoding that `mps_mcp_print_node` *displays* existing enum values as
+(e.g. `"3uGGyjSz8A_/DATABASE"`). That compact form is read-only presentation, not a required write
+format.
+
+**How to apply:** when setting an enum property via `SET PROPERTY`, just pass the bare member name as
+written in the `EnumerationDeclaration`'s own member list — don't try to construct or copy the
+`shortDatatypeId/MEMBER` form seen in a prior `print_node` read.
 
 ## `mps_mcp_parse_java_and_insert` can't handle MPS-specific smodel syntax (2026-08-26)
 
@@ -501,6 +667,19 @@ why the editor projection isn't a reliable proxy for generated output.
 
 Until a missing checking rule is actually added, the confirmed gap belongs in that project's own
 `docs/agents/TODO.md`, not just in a comment or tribal memory.
+
+## Use `PrintTextExpression`, not a bare expression statement, to print a console result (2026-08-25)
+
+A trailing bare `ExpressionStatement` wrapping a `VariableReference` (or any expression) inside a
+console `BLCommand`/`BLExpression` block fails `check_root_node_problems` with `"Not a legal
+statement, the expression value should be used or returned"` — even though the whole point of a
+console command is often to surface a computed value. This is a real statement-legality rule, not a
+print-vs-return styling preference, and it applies inside a `{ }` block just as much as at top level.
+
+**How to apply:** to print a value from a console command (e.g. generated text accumulated via a
+`foreach`), wrap it in `jetbrains.mps.console.base.structure.PrintTextExpression` (`#printText`) — or
+the equivalent `#print`/`#show` form for a node — rather than leaving a bare expression as the last
+statement. Read the result back via `mps_mcp_get_console_history(includeResponses=true)`.
 
 ## Don't reuse a sibling family's own concrete base/ref concept to satisfy an inherited type constraint (2026-08-25)
 
@@ -642,20 +821,6 @@ with `rightExpression = NullLiteral`. Reserve `Node_IsNotNullOperation`/`Node_Is
 actual node-typed expressions. When writing both kinds of null-check in the same method, use two
 distinct helper builders rather than one shared one.
 
-## A cell's own local `styleItem` overrides the same kind inherited via `parentStyleClass` (2026-08-24)
-
-An `EditorCellModel` can have both a `parentStyleClass` reference (inheriting a shared `StyleClass`'s
-items) and its own local `styleItem` children at the same time. When a local item and an inherited item
-are of the same `StyleClassItem` concept, the local one wins for that cell — it doesn't need to match
-the inherited value, so setting the opposite value cleanly cancels just that one aspect while every
-other item from the shared class still applies.
-
-**How to apply:** when a shared `StyleClass` is almost right for a cell but one item needs flipping,
-don't fork the shared class or duplicate all its items locally — add just the one overriding item (same
-concept, opposite value) directly on the cell's own `styleItem` list. Verify by printing the specific
-construct node (not a diagram/root with a multi-column display) as PLAIN TEXT and reading the actual
-result.
-
 ## `mps_mcp_scaffold_editor`'s `keywordStyle` can emit a structurally broken style cell (2026-08-24)
 
 `mps_mcp_scaffold_editor`, when styling a keyword cell via its `keywordStyle` option, can sometimes use
@@ -688,6 +853,31 @@ always-visible keyword, set `conceptAlias` on the concept **before** scaffolding
 concept node itself). If a marker+SubstituteMenu pair was already scaffolded before noticing, replacing
 the cell wholesale leaves the auto-created `SubstituteMenu` root orphaned — check with `FIND_USAGES` and
 delete it if zero usages are found.
+
+## Filter a large `get_concept_details` language-wide dump with `jq`, don't read it raw (2026-08-25)
+
+Calling `mps_mcp_get_concept_details` with a whole language's `languageRefs` (rather than specific
+concepts) on a large, mature language can produce an enormous payload (hundreds of KB, saved to a temp
+file) — reading it directly would consume a large fraction of the context budget for information
+that's mostly redundant per-concept schema detail.
+
+**How to apply:** when auditing or scanning a whole language (e.g. "which concepts are missing an
+alias/description"), pull the result into a small `jq` (or equivalent) filter that extracts just the
+fields actually needed — e.g. `name`, `conceptAlias`, `shortDescription`, `isAbstract`,
+`isInterfaceConcept` — into a compact table, rather than reading the full per-concept
+property/child/reference detail for every concept in the language.
+
+## A `CellActionMapDeclaration` with only `delete_action_id` also fires on Backspace (2026-08-25)
+
+Defining a `CellActionMapDeclaration` with `actionId: delete_action_id` (and no separate backspace
+action, no `canExecuteFunction`) is sufficient for both Delete **and** Backspace to trigger the same
+`executeFunction` — `check_root_node_problems` itself confirms this with an info-level note ("This
+action will also be used for BACKSPACE, unless BACKSPACE is defined or imported"). No need to define a
+mirrored backspace action unless Backspace should behave differently from Delete.
+
+**How to apply:** for a simple "clear this property/child via Delete or Backspace" action map, define
+only the `delete_action_id` handler — don't add a redundant explicit Backspace handler or an
+unnecessary `canExecuteFunction` guard unless the two keys genuinely need different behavior.
 
 ## A `StringLiteral` embedding a literal quote needs doubled JSON escaping (2026-08-24)
 
@@ -722,6 +912,12 @@ Cheapest fix once hit: `mps_mcp_update_node SET CHILD` on the ternary node's own
 `{ParenthesizedExpression: {expression: <same ternary>}}` — no need to touch the surrounding
 expression. Consider wrapping proactively any time a ternary is JSON-built as a binary operand.
 
+**Clarification:** the rule applies specifically to a ternary used as an *operand* of a binary
+operation (e.g. one side of a `PlusExpression`). A bare, unparenthesized ternary is fine as the sole
+right-hand value of a `PlusAssignmentExpression`/`AssignmentExpression` (`result += cond ? a : b;`) —
+that is not "an operand of a binary operation" in the sense this rule means, and wrapping it there is
+unnecessary.
+
 ## Two unrelated `IsNotEmptyOperation` concepts share the same short name (2026-08-23)
 
 There are two distinct, unrelated concepts both surfacing as `.isNotEmpty`:
@@ -736,6 +932,17 @@ same-named-but-different-package operation), pick the concept matching the opera
 type, not just the one found first by name — verify the exact concept's full qualified name via
 `get_concept_details` before reusing it on a differently-typed operand than the one it was last used
 for.
+
+**Extra wrinkle:** even the *correct* string-typed `IsNotEmptyOperation` can occasionally fail to
+compile (`"cannot find symbol: method isNotEmpty() ... class java.lang.String"`) when freshly
+hand-inserted via JSON, even though the identical concept on a structurally-similar expression
+elsewhere in the same model compiles and runs fine — suspected cause is a reduction/typesystem pass a
+hand-inserted node hasn't been through, unlike one shaped via the editor's own typecheck-and-fix flow.
+`check_root_node_problems` correctly flags this case in advance ("Error: not available here") — treat
+that as the real signal, not stale-index noise (the stale-index gotcha elsewhere in this file is about
+search/discovery tools, not structural validation checks). Workaround: call the real
+`java.lang.String` method directly (`.length() > 0` instead of `.isNotEmpty`) via an
+`InstanceMethodCallOperation` targeting the JDK method's persistent ref.
 
 ## Plain-name reference resolution is unsafe for common feature names (2026-08-23)
 

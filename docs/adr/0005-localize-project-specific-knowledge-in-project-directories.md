@@ -63,6 +63,14 @@ project's own domain and generator pipeline. Concretely:
   that project's domain).
 * **Root `docs/agents/mps-gotchas.md`** — the single home for all MPS-authoring / `mps_mcp_*` tool
   behavior, regardless of which project's work surfaced it. No project-local gotchas file.
+* **Root `docs/idioms/<name>.md`** — reusable MPS design/modeling *techniques*, one per file,
+  distinct from both of the above: not a decision made among trade-offs (ADR) and not a trap someone
+  got bitten by (gotcha), just a positive, reusable pattern worth applying proactively. Like gotchas,
+  these are facts about the MPS platform's own modeling mechanics, not any one project's domain, so
+  they stay centralized at the root regardless of which project's work surfaced them. Kept
+  deliberately self-contained (minimal cross-references back into this repo) so a file can be copied
+  wholesale into another MPS project. See `docs/idioms/README.md` for the index and the fuller
+  three-way test.
 * **`<project>/docs/agents/TODO.md`** — that project's own open investigations (e.g. a performance
   issue in that project's generator, or a missing checking rule — see below).
 * **Root `.claude/skills/<dsl-name>-dsl/`** (or `.agents/skills/`) — **exception to the localization
@@ -91,8 +99,13 @@ enforcing the real constraint, not to just document a manual verification workar
 the confirmed gap is itself a project-local TODO.
 
 The test for "root" vs. "project-local": is this a fact about the MPS platform / MCP tooling itself
-(→ root gotchas, regardless of origin project), or does it depend on one project's own domain
-concepts, generated syntax, or generator pipeline (→ that project's ADRs/TODOs/skills)?
+(→ root gotchas or idioms, regardless of origin project), or does it depend on one project's own
+domain concepts, generated syntax, or generator pipeline (→ that project's ADRs/TODOs/skills)? Within
+the root-level, platform-fact bucket, a second test picks gotcha vs. idiom vs. (rarely) a root ADR: a
+trap someone got bitten by, where the lesson is "don't do X" → gotcha; a positive, reusable technique
+worth applying proactively → idiom; a genuine choice made among alternatives with trade-offs,
+independent of any one project → root ADR (rare — most such choices turn out to be project-specific,
+per the 0001–0004 precedent above).
 
 ### Consequences
 
