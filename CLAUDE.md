@@ -114,10 +114,34 @@ These `mps-*` skills and this guide were installed by the `mps_mcp_initialize_pr
 
 ## Project-Specific Notes
 
-<!-- Replace this comment with details specific to this project, for example:
-  - key module and language names
-  - entry-point models or root nodes an agent should know about
-  - domain or business context useful for understanding the models
-  - project conventions (naming, structure, generator pipeline)
-  - anything else that helps an agent orient itself quickly in this codebase
--->
+**Repo structure.** See the README's "Project Structure" section for the human-readable summary of
+how `code/languages/` is organized (`com.mpsbasics`, `com.fasten.symo`, the end-user domain
+languages, `com.mbeddr.formal.repo_admin`). For the enforced, authoritative dependency graph, open
+`com.fasten.meta.architecture` (a root node in the `com.fasten.meta.architecture` solution, part of
+the `repo_admin` MPS project) via MPS MCP tools rather than trusting the README summary alone — it is
+more granular and is what `repo_admin`'s linters actually check against.
+
+**Accumulated gotchas.** `docs/agents/mps-gotchas.md` collects non-obvious MPS-authoring and
+`mps_mcp_*` tool behavior discovered while working in this repo (newest first) — the single home for
+this regardless of which project's work surfaced it, since it's a fact about the MPS platform/MCP
+tooling, not about any one project's domain. Check it before spending time rediscovering a known
+trap, and add a new entry there (not to personal/session memory, and not to a project-local file)
+whenever you hit one that isn't already recorded.
+
+**MPS idioms.** `docs/idioms/` collects reusable MPS design/modeling *techniques* — one file per
+idiom, independent of whether they were a decision (ADR) or a trap (gotcha); see `docs/idioms/README.md`
+for the index and the three-way test. Check it when designing a new structural pattern (e.g. a slot
+that needs to support both referencing and inline-declaring) before inventing one from scratch, and
+add a new file there (self-contained, minimal cross-references, so it can be copied into another MPS
+project) when you land on a genuinely reusable technique — not a one-off fix specific to one project.
+
+**Project-local knowledge.** Per [ADR 0005](docs/adr/0005-localize-project-specific-knowledge-in-project-directories.md),
+design decisions and open investigations specific to one project's own domain/generator pipeline
+belong inside that project's own directory, not at the repo root: `<project>/docs/adr/` for
+project-specific decisions, `<project>/docs/agents/TODO.md` for that project's own open
+investigations (root `docs/agents/TODO.md` is only for cross-project investigations). Check for a
+project-local `docs/agents/TODO.md` and `docs/adr/` when working inside a specific project
+directory. DSL-specific skills (via `mps-dsl-memory`) are the one documented exception and stay at
+the root (`.claude/skills/<dsl-name>-dsl/` / `.agents/skills/<dsl-name>-dsl/`) per the existing
+"Project-Local DSL Skills" section above — JetBrains' own tooling discovers them there by name, not
+by directory nesting.

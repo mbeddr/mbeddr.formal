@@ -23,7 +23,6 @@
       </concept>
       <concept id="7834852478394603494" name="org.mpsqa.arch.structure.ArchSpecification" flags="ng" index="mXAGR">
         <property id="3527166873307665737" name="regexForModulesNamesToWhitelist" index="1jX5rs" />
-        <property id="6023394733339224343" name="reportErrorWhenNotAllProjectModulesAreConsidered" index="3HcWMf" />
         <child id="7834852478394603499" name="content" index="mXAGU" />
       </concept>
       <concept id="276423752595634026" name="org.mpsqa.arch.structure.EmptyLine" flags="ng" index="Z9REq" />
@@ -72,7 +71,6 @@
   <node concept="mXAGR" id="41Pak$lD7us">
     <property role="TrG5h" value="fasten_safety_architecture" />
     <property role="1jX5rs" value="^.*(sandbox|build)$" />
-    <property role="3HcWMf" value="true" />
     <node concept="mXAGQ" id="1a4oUCoJRzU" role="mXAGU">
       <property role="TrG5h" value="requirements_lancomp" />
       <node concept="mXA1B" id="7k4FpArLGyA" role="mXAiC">
@@ -480,6 +478,9 @@
           </node>
           <node concept="mXAj4" id="7k4FpArMhGL" role="mXvOw">
             <ref role="mXAj7" node="7k4FpArLGGj" resolve="fasten_base_languages" />
+          </node>
+          <node concept="mXAj4" id="3DMRBeFqHe$" role="mXvOw">
+            <ref role="mXAj7" node="1a4oUCoJRK1" resolve="hazards_lancomp" />
           </node>
         </node>
         <node concept="mXxR0" id="7k4FpArLGA3" role="mXAiC">
