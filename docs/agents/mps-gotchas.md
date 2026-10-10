@@ -10,6 +10,52 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## `NodesTestCase.accessMode="command"` self-deadlocks a test that blocks on an async engine's `Future.get()` — EDT holds the write lock the async worker needs a read permit for (2026-10-10)
+
+A `SimpleNodeTest` with `accessMode="command"` runs its **entire method body** on the EDT under
+the write lock (`ExecuteCommandStatement`/`command{}` semantics applied to the whole test, not just
+a block inside it). If that body calls into an API that does its own work asynchronously on worker
+threads and then blocks the calling thread waiting for the result — e.g.
+`jetbrains.mps.text.TextGeneratorEngine.generateText(model)` returns a `Future<TextGenResult>` and
+the test does `.get(timeout, unit)` — the test freezes MPS solid: the EDT (holding the write lock)
+blocks on the future; the engine's worker thread (`textgen-thread-N`) can never acquire the read
+permit it needs to do its work, because the write lock it's waiting to be released is held by the
+very EDT thread that's blocked waiting for it. Confirmed via thread-dump analysis (3-thread cycle:
+`AWT-EventQueue-0` → `Future.get` → `textgen-thread-1` → blocked acquiring read permit → never
+released because the EDT never reaches the point of releasing the write lock). Compiles clean,
+`check_root_node_problems` passes, only a live run hangs — so it surfaces late and looks like "MPS
+froze" with no obvious cause.
+
+**How to apply:** for a `NodesTestCase` method that both (a) mutates/creates nodes and (b) calls an
+async engine that does its own locking internally, don't put the whole method under
+`accessMode="command"`. Instead set `accessMode="none"` and wrap each concern in the narrowest
+correct primitive by hand:
+- Mutating statements (anything needing a **write** action, e.g.
+  `TemporaryModels.getInstance().createEditable(...)`, `SysMLv2Importer.importText(...)`,
+  `TemporaryModels.getInstance().dispose(...)`) go inside a plain `command { ... }` block — but
+  `ExecuteCommandStatement` asserts `ThreadingAssertions.assertEventDispatchThread`, so when the
+  surrounding `accessMode="none"` test runs on a background pooled thread (not the EDT), wrap the
+  whole `command{}` block in
+  `ApplicationManager.getApplication().invokeAndWait(new Runnable() { public void run() { command { ... } } });`
+  (plain Java via `mps_mcp_parse_java_and_insert`, needs a model dependency on
+  `498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)` for
+  `ApplicationManager` — find it with `mps_mcp_search_root_node_by_name(scope: "all")`, since
+  `mps_mcp_search_concepts` doesn't search Java stub classes). MPS's generator handles the Java
+  effectively-final-capture requirement automatically — no manual array-holder workaround needed.
+- A call into an async engine that itself only needs a **read** lock (like
+  `TextGeneratorEngine.generateText`, which does synchronous read-access work before dispatching to
+  worker threads that take their own read actions) goes inside `read action { ... }`
+  (`ExecuteLightweightCommandStatement`) instead — this maps to `runReadAction`, which does **not**
+  require the EDT, so it needs no `invokeAndWait` wrapping and can run directly from the
+  `accessMode="none"` test's background thread.
+- Declare the result variable (`string generateText;`) outside the `read action` block with no
+  initializer, then assign it inside — `ExecuteLightweightCommandStatement`'s body is a statement
+  list, not an expression, so it can't be used as an initializer directly.
+
+The general rule: `command{}` (write lock) is EDT-only; `read action{}` (read lock) works from any
+thread; `accessMode="command"` on the whole test method is only safe when nothing in the body ever
+blocks waiting on another thread that itself needs a lock the EDT is holding.
+
 ## `BTestCase` (plain JUnit) can't create/manipulate live `SNode`s — core platform singletons are null in its run harness; use `NodesTestCase` instead (2026-10-10)
 
 A `BTestCase` test method that creates an actual MPS node at runtime — even a trivially detached
@@ -57,6 +103,21 @@ slot — check the response's own `isRoot`/`parentReference` fields (a real chil
 plain `mps_mcp_update_node ADD CHILD` with a hand-built JSON blueprint instead (reusing the
 same resolved `classConcept`/`baseMethodDeclaration` refs from the orphan's own printout) — that
 path attaches reliably.
+
+**Addendum:** the returned `isRoot: true` node and the node that actually lands in the tree can be
+two *different* nodes entirely — not just "the reported node is a disconnected copy of what you
+wanted." Chaining a `mode: "replace"` on a multi-segment `DotExpression` (e.g. replacing
+`x.getBytes().toString()` with `new String(x.getBytes())`) returned an orphaned `UnknownNew`, yet
+the real parent slot ended up correctly holding a `GenericNewExpression` — yet that real
+`ClassCreator` had an *empty* `actualArgument` list instead of the parsed argument. Retrying with a
+`mode: "child"` insert targeting `actualArgument` again reported another orphaned
+`UnknownInstanceMethodCall`, yet the real slot this time ended up with a **correctly-resolved**
+`DotExpression` argument chain. Net effect: never trust either the reported ref or a single
+before/after diff — after any insert into an ambiguous `Expression` slot, re-print the *actual*
+parent node (not the tool's returned ref) and inspect its real children/references before deciding
+whether to redo anything; what's broken may not be what the response implies is broken (e.g. here
+the real bug ended up being a wrong overload (`String()` instead of `String(byte[])`) picked for
+`ClassCreator.baseMethodDeclaration`, fixed with a plain `SET REFERENCE`, not a redo of the insert).
 
 ## A `java_classes` stub model bakes in classifier refs as of its *first* scan — adding a dependency afterward doesn't retroactively fix them (2026-10-10)
 
