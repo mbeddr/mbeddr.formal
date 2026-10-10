@@ -11,7 +11,6 @@
     </facet>
   </facets>
   <dependencies>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
     <dependency reexport="false">e62ef9c8-3912-4804-90f3-0907cb700273(com.symo.sysmlv2.baselan.importer)</dependency>
   </dependencies>
   <languageVersions>
@@ -23,7 +22,6 @@
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
-    <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="e62ef9c8-3912-4804-90f3-0907cb700273(com.symo.sysmlv2.baselan.importer)" version="0" />
     <module reference="8137901c-bda1-494d-9da5-14e8aa1b1aed(com.symo.sysmlv2.baselan.importer.lib)" version="0" />
     <module reference="81eec215-f2aa-44a8-8fa3-d2de52ab55e8(test.com.symo.sysmlv2.baselan.importer)" version="0" />

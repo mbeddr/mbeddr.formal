@@ -7,10 +7,8 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports>
-    <import index="p3ir" ref="8137901c-bda1-494d-9da5-14e8aa1b1aed/java:org.antlr.v4.runtime(com.symo.sysmlv2.baselan.importer.lib/)" />
-    <import index="guqe" ref="8137901c-bda1-494d-9da5-14e8aa1b1aed/java:com.symo.sysmlv2.baselan.importer.antlr(com.symo.sysmlv2.baselan.importer.lib/)" />
-    <import index="p3is" ref="e62ef9c8-3912-4804-90f3-0907cb700273/java:org.antlr.v4.runtime(com.symo.sysmlv2.baselan.importer/)" />
-    <import index="guqf" ref="e62ef9c8-3912-4804-90f3-0907cb700273/java:com.symo.sysmlv2.baselan.importer.antlr(com.symo.sysmlv2.baselan.importer/)" />
+    <import index="p3ir" ref="e62ef9c8-3912-4804-90f3-0907cb700273/java:org.antlr.v4.runtime(com.symo.sysmlv2.baselan.importer/)" />
+    <import index="guqe" ref="e62ef9c8-3912-4804-90f3-0907cb700273/java:com.symo.sysmlv2.baselan.importer.antlr(com.symo.sysmlv2.baselan.importer/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -110,11 +108,11 @@
             <node concept="3cpWsn" id="5J6U0gsMVjy" role="3cpWs9">
               <property role="TrG5h" value="chars" />
               <node concept="3uibUv" id="5J6U0gsMVj$" role="1tU5fm">
-                <ref role="3uigEE" to="p3is:~CharStream" resolve="CharStream" />
+                <ref role="3uigEE" to="p3ir:~CharStream" resolve="CharStream" />
               </node>
               <node concept="2YIFZM" id="5J6U0gsMVkn" role="33vP2m">
-                <ref role="1Pybhc" to="p3is:~CharStreams" />
-                <ref role="37wK5l" to="p3is:~CharStreams.fromString(java.lang.String)" />
+                <ref role="1Pybhc" to="p3ir:~CharStreams" />
+                <ref role="37wK5l" to="p3ir:~CharStreams.fromString(java.lang.String)" />
                 <node concept="Xl_RD" id="5J6U0gsMVko" role="37wK5m">
                   <property role="Xl_RC" value="" />
                 </node>
@@ -125,11 +123,11 @@
             <node concept="3cpWsn" id="5J6U0gsMVjB" role="3cpWs9">
               <property role="TrG5h" value="lexer" />
               <node concept="3uibUv" id="5J6U0gsMVjD" role="1tU5fm">
-                <ref role="3uigEE" to="guqf:~SysMLv2Lexer" resolve="SysMLv2Lexer" />
+                <ref role="3uigEE" to="guqe:~SysMLv2Lexer" resolve="SysMLv2Lexer" />
               </node>
               <node concept="2ShNRf" id="5J6U0gsMVkp" role="33vP2m">
                 <node concept="1pGfFk" id="5J6U0gsMVkB" role="2ShVmc">
-                  <ref role="37wK5l" to="guqf:~SysMLv2Lexer.&lt;init&gt;(org.antlr.v4.runtime.CharStream)" />
+                  <ref role="37wK5l" to="guqe:~SysMLv2Lexer.&lt;init&gt;(org.antlr.v4.runtime.CharStream)" />
                   <node concept="37vLTw" id="5J6U0gsMVkC" role="37wK5m">
                     <ref role="3cqZAo" node="5J6U0gsMVjy" resolve="chars" />
                   </node>
@@ -141,11 +139,11 @@
             <node concept="3cpWsn" id="5J6U0gsMVjG" role="3cpWs9">
               <property role="TrG5h" value="tokens" />
               <node concept="3uibUv" id="5J6U0gsMVjI" role="1tU5fm">
-                <ref role="3uigEE" to="p3is:~CommonTokenStream" resolve="CommonTokenStream" />
+                <ref role="3uigEE" to="p3ir:~CommonTokenStream" resolve="CommonTokenStream" />
               </node>
               <node concept="2ShNRf" id="5J6U0gsMVkD" role="33vP2m">
                 <node concept="1pGfFk" id="5J6U0gsMVtS" role="2ShVmc">
-                  <ref role="37wK5l" to="p3is:~CommonTokenStream.&lt;init&gt;(org.antlr.v4.runtime.TokenSource)" />
+                  <ref role="37wK5l" to="p3ir:~CommonTokenStream.&lt;init&gt;(org.antlr.v4.runtime.TokenSource)" />
                   <node concept="37vLTw" id="5J6U0gsMVtT" role="37wK5m">
                     <ref role="3cqZAo" node="5J6U0gsMVjB" resolve="lexer" />
                   </node>
@@ -157,11 +155,11 @@
             <node concept="3cpWsn" id="5J6U0gsMVjL" role="3cpWs9">
               <property role="TrG5h" value="parser" />
               <node concept="3uibUv" id="5J6U0gsMVjN" role="1tU5fm">
-                <ref role="3uigEE" to="guqf:~SysMLv2Parser" resolve="SysMLv2Parser" />
+                <ref role="3uigEE" to="guqe:~SysMLv2Parser" resolve="SysMLv2Parser" />
               </node>
               <node concept="2ShNRf" id="5J6U0gsMVtU" role="33vP2m">
                 <node concept="1pGfFk" id="5J6U0gsMVwf" role="2ShVmc">
-                  <ref role="37wK5l" to="guqf:~SysMLv2Parser.&lt;init&gt;(org.antlr.v4.runtime.TokenStream)" />
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser.&lt;init&gt;(org.antlr.v4.runtime.TokenStream)" />
                   <node concept="37vLTw" id="5J6U0gsMVwg" role="37wK5m">
                     <ref role="3cqZAo" node="5J6U0gsMVjG" resolve="tokens" />
                   </node>
@@ -175,7 +173,7 @@
                 <ref role="3cqZAo" node="5J6U0gsMVjL" resolve="parser" />
               </node>
               <node concept="liA8E" id="5J6U0gsMVwJ" role="2OqNvi">
-                <ref role="37wK5l" to="guqf:~SysMLv2Parser.rootNamespace()" resolve="rootNamespace" />
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser.rootNamespace()" resolve="rootNamespace" />
               </node>
             </node>
           </node>
@@ -188,7 +186,7 @@
                 <ref role="3cqZAo" node="5J6U0gsMVjL" resolve="parser" />
               </node>
               <node concept="liA8E" id="5J6U0gsMWnp" role="2OqNvi">
-                <ref role="37wK5l" to="p3is:~Parser.getNumberOfSyntaxErrors()" resolve="getNumberOfSyntaxErrors" />
+                <ref role="37wK5l" to="p3ir:~Parser.getNumberOfSyntaxErrors()" resolve="getNumberOfSyntaxErrors" />
               </node>
             </node>
             <node concept="3_1$Yv" id="5J6U0gsMWnq" role="3_9lra">
