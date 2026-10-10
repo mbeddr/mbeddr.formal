@@ -9,12 +9,17 @@
       <modulePath path="$PROJECT_DIR$/languages/com.symo.plantuml.ext/com.symo.plantuml.ext.mpl" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/languages/com.symo.plantuml/com.symo.plantuml.mpl" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/languages/com.symo.sysml.ibd/com.symo.sysml.ibd.mpl" folder="" />
+      <modulePath path="$PROJECT_DIR$/languages/com.symo.sysmlv2.baselan/com.symo.sysmlv2.baselan.mpl" folder="sysmlv2" />
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.symo.hw.sandbox/com.fasten.symo.hw.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.mermaid.sandbox/com.symo.mermaid.sandbox.msd" folder="mermaid" />
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.plantuml.lib/com.symo.plantuml.lib.msd" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.plantuml.sandbox/com.symo.plantuml.sandbox.msd" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.sysml.ibd.sandbox/com.symo.sysml.ibd.sandbox.msd" folder="" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.symo.sysmlv2.baselan.importer/com.symo.sysmlv2.baselan.importer.msd" folder="sysmlv2" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.symo.sysmlv2.baselan.sandbox/com.symo.sysmlv2.baselan.sandbox.msd" folder="sysmlv2" />
       <modulePath path="$PROJECT_DIR$/solutions/test.com.symo.plantuml/test.com.symo.plantuml.msd" folder="plantuml" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.com.symo.sysmlv2.baselan.importer/test.com.symo.sysmlv2.baselan.importer.msd" folder="sysmlv2" />
+      <modulePath path="$PROJECT_DIR$/solutions/test.com.symo.sysmlv2.baselan/test.com.symo.sysmlv2.baselan.msd" folder="sysmlv2" />
       <modulePath path="${mbeddr.formal.home}/code/languages/com.mbeddr.formal.repo_admin/solutions/com.fasten.meta.linters/com.fasten.meta.linters.msd" folder="_000_meta" />
     </projectModules>
   </component>
