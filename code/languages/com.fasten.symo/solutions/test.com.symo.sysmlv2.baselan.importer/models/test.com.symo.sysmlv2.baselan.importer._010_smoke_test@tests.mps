@@ -185,6 +185,7 @@
       </concept>
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <child id="8930763252717678425" name="type" index="8EhU5" />
+        <child id="7140692429570903510" name="direction" index="3xZtwS" />
       </concept>
       <concept id="8930763252717678342" name="com.symo.sysmlv2.baselan.structure.SysMLv2Multiplicity" flags="ng" index="8EhVq">
         <property id="8930763252717678344" name="upper" index="8EhVk" />
@@ -202,6 +203,22 @@
       </concept>
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
+      </concept>
+      <concept id="7140692429570900090" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureDirection" flags="ng" index="3xZtmk">
+        <property id="7140692429570900105" name="kind" index="3xZtlB" />
+      </concept>
+      <concept id="7140692429570900088" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinitionRef" flags="ng" index="3xZtmm">
+        <property id="7140692429570900096" name="portDefinitionName" index="3xZtlI" />
+      </concept>
+      <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
+        <property id="7140692429570900098" name="conjugated" index="3xZtlG" />
+        <child id="7140692429570900100" name="multiplicity" index="3xZtlE" />
+        <child id="7140692429570900101" name="type" index="3xZtlF" />
+        <child id="7140692429570900099" name="direction" index="3xZtlH" />
+      </concept>
+      <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
+        <child id="7140692429570900092" name="specializes" index="3xZtmi" />
+        <child id="7140692429570900093" name="content" index="3xZtmj" />
       </concept>
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
         <property id="4430087627524899785" name="importedName" index="3Z0PrK" />
@@ -1401,6 +1418,78 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6coPuU2T1p3" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="6coPuU2YyPg" role="jymVt">
+      <property role="TrG5h" value="reifyPortDefinitionRefs" />
+      <node concept="3cqZAl" id="6coPuU2YyPk" role="3clF45" />
+      <node concept="37vLTG" id="6coPuU2YyPl" role="3clF46">
+        <property role="3TUv4t" value="true" />
+        <property role="TrG5h" value="m" />
+        <node concept="H_c77" id="6coPuU2YyPn" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6coPuU2YyPo" role="3clF46">
+        <property role="3TUv4t" value="true" />
+        <property role="TrG5h" value="proj" />
+        <node concept="3uibUv" id="6coPuU2YyPq" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6coPuU2YyPr" role="3clF47">
+        <node concept="3clFbF" id="6coPuU2YyPs" role="3cqZAp">
+          <node concept="2OqwBi" id="6coPuU2YyPu" role="3clFbG">
+            <node concept="2YIFZM" id="6coPuU2YyPx" role="2Oq$k0">
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+            </node>
+            <node concept="liA8E" id="6coPuU2YyPy" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeAndWait(java.lang.Runnable)" resolve="invokeAndWait" />
+              <node concept="2ShNRf" id="6coPuU2YyPz" role="37wK5m">
+                <node concept="YeOm9" id="6coPuU2YyP_" role="2ShVmc">
+                  <node concept="1Y3b0j" id="6coPuU2YyPC" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <property role="373rjd" value="true" />
+                    <property role="jj94n" value="Anonymous in reifyPartDefinitionRefs() in TestUtils" />
+                    <property role="TrG5h" value="Runnable$anonymous" />
+                    <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3clFb_" id="6coPuU2YyPE" role="jymVt">
+                      <property role="TrG5h" value="run" />
+                      <node concept="3cqZAl" id="6coPuU2YyPI" role="3clF45" />
+                      <node concept="3clFbS" id="6coPuU2YyPJ" role="3clF47">
+                        <node concept="1QHqEO" id="6coPuU2YyPK" role="3cqZAp">
+                          <node concept="1QHqEC" id="6coPuU2YyPN" role="1QHqEI">
+                            <node concept="3clFbS" id="6coPuU2YyPP" role="1bW5cS">
+                              <node concept="3clFbF" id="6coPuU2YyPQ" role="3cqZAp">
+                                <node concept="2YIFZM" id="6coPuU2YyPS" role="3clFbG">
+                                  <ref role="1Pybhc" to="uj5z:7JKstLNlJ4o" resolve="SysMLv2TypeReifier" />
+                                  <ref role="37wK5l" to="uj5z:6coPuU2YynB" resolve="reifyPortDefinitionRefs" />
+                                  <node concept="37vLTw" id="6coPuU2YyPT" role="37wK5m">
+                                    <ref role="3cqZAo" node="6coPuU2YyPl" resolve="m" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="6coPuU2YyPU" role="ukAjM">
+                            <node concept="37vLTw" id="6coPuU2YyPX" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6coPuU2YyPo" resolve="proj" />
+                            </node>
+                            <node concept="liA8E" id="6coPuU2YyPY" role="2OqNvi">
+                              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3Tm1VV" id="6coPuU2YyPZ" role="1B3o_S" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6coPuU2YyQ0" role="1B3o_S" />
     </node>
   </node>
   <node concept="1lH9Xt" id="3PUPjB2qhEE">
@@ -3071,6 +3160,515 @@
               <ref role="3cqZAo" node="6coPuU2T2Ct" resolve="m" />
             </node>
             <node concept="1jxXqW" id="6coPuU2T2DZ" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="6coPuU2Zp9E">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_100_PortsTest" />
+    <node concept="1qefOq" id="6coPuU2Zp9F" role="1SKRRt">
+      <node concept="2h0jOr" id="6coPuU2Zp9H" role="1qenE9">
+        <property role="TrG5h" value="PortsFile" />
+        <node concept="8EhVW" id="6coPuU2Zp9I" role="2h0jOs">
+          <property role="TrG5h" value="Voltage" />
+        </node>
+        <node concept="3xZtmp" id="6coPuU2Zp9J" role="2h0jOs">
+          <property role="TrG5h" value="PowerPort" />
+          <node concept="8EhU9" id="6coPuU2Zp9K" role="3xZtmj">
+            <property role="TrG5h" value="voltage" />
+            <node concept="3xZtmk" id="6coPuU2Zp9L" role="3xZtwS" />
+            <node concept="8EhVB" id="6coPuU2Zp9M" role="8EhU5">
+              <property role="8EhVw" value="Voltage" />
+            </node>
+          </node>
+          <node concept="8EhU9" id="6coPuU2Zp9N" role="3xZtmj">
+            <property role="TrG5h" value="current" />
+            <node concept="3xZtmk" id="6coPuU2Zp9O" role="3xZtwS">
+              <property role="3xZtlB" value="3th7jSwWnJl/out" />
+            </node>
+          </node>
+        </node>
+        <node concept="3xZtmp" id="6coPuU2Zp9P" role="2h0jOs">
+          <property role="TrG5h" value="DataPort" />
+          <node concept="3xZtmm" id="6coPuU2Zp9Q" role="3xZtmi">
+            <property role="3xZtlI" value="PowerPort" />
+          </node>
+          <node concept="3xZtmn" id="6coPuU2Zp9R" role="3xZtmj">
+            <property role="TrG5h" value="lane" />
+            <node concept="3xZtmk" id="6coPuU2Zp9S" role="3xZtlH">
+              <property role="3xZtlB" value="mwptYtLWO0/inout" />
+            </node>
+            <node concept="3xZtmm" id="6coPuU2Zp9T" role="3xZtlF">
+              <property role="3xZtlI" value="PowerPort" />
+            </node>
+          </node>
+        </node>
+        <node concept="3ZUotO" id="6coPuU2Zp9U" role="2h0jOs">
+          <property role="TrG5h" value="Battery" />
+          <node concept="3xZtmn" id="6coPuU2Zp9V" role="3ZUouT">
+            <property role="TrG5h" value="supply" />
+            <node concept="3xZtmk" id="6coPuU2Zp9W" role="3xZtlH">
+              <property role="3xZtlB" value="3th7jSwWnJl/out" />
+            </node>
+            <node concept="3xZtmm" id="6coPuU2Zp9X" role="3xZtlF">
+              <property role="3xZtlI" value="PowerPort" />
+            </node>
+          </node>
+          <node concept="3xZtmn" id="6coPuU2Zp9Y" role="3ZUouT">
+            <property role="TrG5h" value="charge" />
+            <property role="3xZtlG" value="true" />
+            <node concept="3xZtmk" id="6coPuU2Zp9Z" role="3xZtlH" />
+            <node concept="3xZtmm" id="6coPuU2Zpa0" role="3xZtlF">
+              <property role="3xZtlI" value="PowerPort" />
+            </node>
+          </node>
+          <node concept="3xZtmn" id="6coPuU2Zpa1" role="3ZUouT">
+            <property role="TrG5h" value="taps" />
+            <node concept="8EhVq" id="6coPuU2Zpa2" role="3xZtlE">
+              <property role="8EhVr" value="2" />
+              <property role="8EhVk" value="2" />
+            </node>
+            <node concept="3xZtmm" id="6coPuU2Zpa3" role="3xZtlF">
+              <property role="3xZtlI" value="DataPort" />
+            </node>
+          </node>
+          <node concept="3xZtmn" id="6coPuU2Zpa4" role="3ZUouT">
+            <property role="TrG5h" value="spare" />
+          </node>
+        </node>
+        <node concept="3xLA65" id="6coPuU2Zpa5" role="lGtFl">
+          <property role="TrG5h" value="portsFile" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6coPuU2Zpa6" role="1SL9yI">
+      <property role="TrG5h" value="testImportPorts" />
+      <node concept="3cqZAl" id="6coPuU2Zpa9" role="3clF45" />
+      <node concept="3clFbS" id="6coPuU2Zpaa" role="3clF47">
+        <node concept="3cpWs8" id="6coPuU2Zpab" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2Zpae" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="17QB3L" id="6coPuU2Zpag" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2Zpah" role="3cqZAp">
+          <node concept="37vLTI" id="6coPuU2Zpaj" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2Zpam" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2Zpan" role="37vLTx">
+              <property role="Xl_RC" value="attribute def Voltage;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2Zpao" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2Zpaq" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2Zpat" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2Zpau" role="37vLTx">
+              <property role="Xl_RC" value="port def PowerPort {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2Zpav" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2Zpax" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2Zpa$" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2Zpa_" role="37vLTx">
+              <property role="Xl_RC" value="  in attribute voltage : Voltage;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2ZpaA" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2ZpaC" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2ZpaF" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2ZpaG" role="37vLTx">
+              <property role="Xl_RC" value="  out attribute current;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2ZpaH" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2ZpaJ" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2ZpaM" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2ZpaN" role="37vLTx">
+              <property role="Xl_RC" value="}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2ZpaO" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2ZpaQ" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2ZpaT" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2ZpaU" role="37vLTx">
+              <property role="Xl_RC" value="port def DataPort specializes PowerPort {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2ZpaV" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2ZpaX" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2Zpb0" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2Zpb1" role="37vLTx">
+              <property role="Xl_RC" value="  inout port lane : PowerPort;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2Zpb2" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2Zpb4" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2Zpb7" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2Zpb8" role="37vLTx">
+              <property role="Xl_RC" value="}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2Zpb9" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2Zpbb" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2Zpbe" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2Zpbf" role="37vLTx">
+              <property role="Xl_RC" value="part def Battery {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2Zpbg" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2Zpbi" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2Zpbl" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2Zpbm" role="37vLTx">
+              <property role="Xl_RC" value="  out port supply : PowerPort;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2Zpbn" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2Zpbp" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2Zpbs" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2Zpbt" role="37vLTx">
+              <property role="Xl_RC" value="  in port charge : ~PowerPort;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2Zpbu" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2Zpbw" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2Zpbz" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2Zpb$" role="37vLTx">
+              <property role="Xl_RC" value="  port taps[2] : DataPort;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2Zpb_" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2ZpbB" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2ZpbE" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2ZpbF" role="37vLTx">
+              <property role="Xl_RC" value="  port spare;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2ZpbG" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2ZpbI" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2ZpbL" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2ZpbM" role="37vLTx">
+              <property role="Xl_RC" value="}" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6coPuU2ZpbN" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2ZpbQ" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="6coPuU2ZpbS" role="1tU5fm" />
+            <node concept="2YIFZM" id="6coPuU2ZpbT" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="6coPuU2ZpbU" role="37wK5m">
+                <ref role="3cqZAo" node="6coPuU2Zpae" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6coPuU2ZpbV" role="37wK5m">
+                <property role="Xl_RC" value="PortsFile" />
+              </node>
+              <node concept="1jxXqW" id="6coPuU2ZpbW" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2ZpbX" role="3cqZAp">
+          <node concept="2YIFZM" id="6coPuU2ZpbZ" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="6coPuU2Zpc0" role="37wK5m">
+              <ref role="3cqZAo" node="6coPuU2ZpbQ" resolve="m" />
+            </node>
+            <node concept="3xONca" id="6coPuU2Zpc1" role="37wK5m">
+              <ref role="3xOPvv" node="6coPuU2Zpa5" resolve="portsFile" />
+            </node>
+            <node concept="1jxXqW" id="6coPuU2Zpc2" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2Zpc3" role="3cqZAp">
+          <node concept="2YIFZM" id="6coPuU2Zpc5" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="6coPuU2Zpc6" role="37wK5m">
+              <ref role="3cqZAo" node="6coPuU2ZpbQ" resolve="m" />
+            </node>
+            <node concept="1jxXqW" id="6coPuU2Zpc7" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6coPuU2Zpc8" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripPorts" />
+      <node concept="3cqZAl" id="6coPuU2Zpcb" role="3clF45" />
+      <node concept="3clFbS" id="6coPuU2Zpcc" role="3clF47">
+        <node concept="3cpWs8" id="6coPuU2Zpcd" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2Zpcg" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="17QB3L" id="6coPuU2Zpci" role="1tU5fm" />
+            <node concept="Xl_RD" id="6coPuU2Zpcj" role="33vP2m">
+              <property role="Xl_RC" value="attribute def Voltage {&#10;}&#10;port def PowerPort {&#10;  in attribute voltage : Voltage;&#10;  out attribute current;&#10;}&#10;port def DataPort :&gt; PowerPort {&#10;  inout port lane : PowerPort;&#10;}&#10;part def Battery {&#10;  out port supply : PowerPort;&#10;  in port charge : ~PowerPort;&#10;  port taps[2] : DataPort;&#10;  port spare;&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6coPuU2Zpck" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2Zpcn" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <node concept="17QB3L" id="6coPuU2Zpcp" role="1tU5fm" />
+            <node concept="2YIFZM" id="6coPuU2Zpcq" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="6coPuU2Zpcr" role="37wK5m">
+                <ref role="3cqZAo" node="6coPuU2Zpcg" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6coPuU2Zpcs" role="37wK5m">
+                <property role="Xl_RC" value="PortsFile" />
+              </node>
+              <node concept="1jxXqW" id="6coPuU2Zpct" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="6coPuU2Zpcu" role="3cqZAp">
+          <node concept="37vLTw" id="6coPuU2Zpcx" role="3tpDZB">
+            <ref role="3cqZAo" node="6coPuU2Zpcg" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="6coPuU2Zpcy" role="3tpDZA">
+            <ref role="3cqZAo" node="6coPuU2Zpcn" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6coPuU2Zpcz" role="1SL9yI">
+      <property role="TrG5h" value="testReifyResolvesPortTypesAndSpecializations" />
+      <node concept="3cqZAl" id="6coPuU2ZpcA" role="3clF45" />
+      <node concept="3clFbS" id="6coPuU2ZpcB" role="3clF47">
+        <node concept="3cpWs8" id="6coPuU2ZpcC" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2ZpcF" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="6coPuU2ZpcH" role="1tU5fm" />
+            <node concept="2YIFZM" id="6coPuU2ZpcI" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="Xl_RD" id="6coPuU2ZpcJ" role="37wK5m">
+                <property role="Xl_RC" value="part def Battery {&#10;  in port charge : ~PowerPort;&#10;}&#10;port def PowerPort;&#10;port def DataPort :&gt; PowerPort;&#10;" />
+              </node>
+              <node concept="Xl_RD" id="6coPuU2ZpcK" role="37wK5m">
+                <property role="Xl_RC" value="ReifyPortsFile" />
+              </node>
+              <node concept="1jxXqW" id="6coPuU2ZpcL" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2ZpcM" role="3cqZAp">
+          <node concept="2YIFZM" id="6coPuU2ZpcO" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6coPuU2YyPg" resolve="reifyPortDefinitionRefs" />
+            <node concept="37vLTw" id="6coPuU2ZpcP" role="37wK5m">
+              <ref role="3cqZAo" node="6coPuU2ZpcF" resolve="m" />
+            </node>
+            <node concept="1jxXqW" id="6coPuU2ZpcQ" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="1QHqEK" id="6coPuU2ZpcR" role="3cqZAp">
+          <node concept="1QHqEC" id="6coPuU2ZpcU" role="1QHqEI">
+            <node concept="3clFbS" id="6coPuU2ZpcW" role="1bW5cS">
+              <node concept="3cpWs8" id="6coPuU2ZpcX" role="3cqZAp">
+                <node concept="3cpWsn" id="6coPuU2Zpd0" role="3cpWs9">
+                  <property role="TrG5h" value="charge" />
+                  <node concept="3Tqbb2" id="6coPuU2Zpd2" role="1tU5fm">
+                    <ref role="ehGHo" to="5rf1:6coPuU2Tg1T" resolve="SysMLv2PortUsage" />
+                  </node>
+                  <node concept="1PxgMI" id="6coPuU2Zpd3" role="33vP2m">
+                    <node concept="2OqwBi" id="6coPuU2Zpd6" role="1m5AlR">
+                      <node concept="2OqwBi" id="6coPuU2Zpd9" role="2Oq$k0">
+                        <node concept="1PxgMI" id="6coPuU2Zpdc" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6coPuU2Zpdf" role="1m5AlR">
+                            <node concept="2OqwBi" id="6coPuU2Zpdi" role="2Oq$k0">
+                              <node concept="2OqwBi" id="6coPuU2Zpdl" role="2Oq$k0">
+                                <node concept="2OqwBi" id="6coPuU2Zpdo" role="2Oq$k0">
+                                  <node concept="37vLTw" id="6coPuU2Zpdr" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="6coPuU2ZpcF" resolve="m" />
+                                  </node>
+                                  <node concept="2RRcyG" id="6coPuU2Zpds" role="2OqNvi">
+                                    <node concept="chp4Y" id="6coPuU2Zpdt" role="3MHsoP">
+                                      <ref role="cht4Q" to="5rf1:3DMRBeFsYdC" resolve="SysMLv2File" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="1uHKPH" id="6coPuU2Zpdu" role="2OqNvi" />
+                              </node>
+                              <node concept="3Tsc0h" id="6coPuU2Zpdv" role="2OqNvi">
+                                <ref role="3TtcxE" to="5rf1:3DMRBeFsYdJ" />
+                              </node>
+                            </node>
+                            <node concept="1uHKPH" id="6coPuU2Zpdw" role="2OqNvi" />
+                          </node>
+                          <node concept="chp4Y" id="6coPuU2Zpdx" role="3oSUPX">
+                            <ref role="cht4Q" to="5rf1:3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
+                          </node>
+                        </node>
+                        <node concept="3Tsc0h" id="6coPuU2Zpdy" role="2OqNvi">
+                          <ref role="3TtcxE" to="5rf1:3PUPjB2$Pa0" resolve="content" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="6coPuU2Zpdz" role="2OqNvi" />
+                    </node>
+                    <node concept="chp4Y" id="6coPuU2Zpd$" role="3oSUPX">
+                      <ref role="cht4Q" to="5rf1:6coPuU2Tg1T" resolve="SysMLv2PortUsage" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="6coPuU2Zpd_" role="3cqZAp">
+                <node concept="3cpWsn" id="6coPuU2ZpdC" role="3cpWs9">
+                  <property role="TrG5h" value="dataPort" />
+                  <node concept="3Tqbb2" id="6coPuU2ZpdE" role="1tU5fm">
+                    <ref role="ehGHo" to="5rf1:6coPuU2Tg1R" resolve="SysMLv2PortDefinition" />
+                  </node>
+                  <node concept="1PxgMI" id="6coPuU2ZpdF" role="33vP2m">
+                    <node concept="2OqwBi" id="6coPuU2ZpdI" role="1m5AlR">
+                      <node concept="2OqwBi" id="6coPuU2ZpdL" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6coPuU2ZpdO" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6coPuU2ZpdR" role="2Oq$k0">
+                            <node concept="37vLTw" id="6coPuU2ZpdU" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6coPuU2ZpcF" resolve="m" />
+                            </node>
+                            <node concept="2RRcyG" id="6coPuU2ZpdV" role="2OqNvi">
+                              <node concept="chp4Y" id="6coPuU2ZpdW" role="3MHsoP">
+                                <ref role="cht4Q" to="5rf1:3DMRBeFsYdC" resolve="SysMLv2File" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1uHKPH" id="6coPuU2ZpdX" role="2OqNvi" />
+                        </node>
+                        <node concept="3Tsc0h" id="6coPuU2ZpdY" role="2OqNvi">
+                          <ref role="3TtcxE" to="5rf1:3DMRBeFsYdJ" />
+                        </node>
+                      </node>
+                      <node concept="1yVyf7" id="6coPuU2ZpdZ" role="2OqNvi" />
+                    </node>
+                    <node concept="chp4Y" id="6coPuU2Zpe0" role="3oSUPX">
+                      <ref role="cht4Q" to="5rf1:6coPuU2Tg1R" resolve="SysMLv2PortDefinition" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3vlDli" id="6coPuU2Zpe1" role="3cqZAp">
+                <node concept="Xl_RD" id="6coPuU2Zpe4" role="3tpDZB">
+                  <property role="Xl_RC" value="PowerPort" />
+                </node>
+                <node concept="2OqwBi" id="6coPuU2Zpe5" role="3tpDZA">
+                  <node concept="2OqwBi" id="6coPuU2Zpe8" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6coPuU2Zpeb" role="2Oq$k0">
+                      <node concept="37vLTw" id="6coPuU2Zpee" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6coPuU2Zpd0" resolve="charge" />
+                      </node>
+                      <node concept="3TrEf2" id="6coPuU2Zpef" role="2OqNvi">
+                        <ref role="3Tt5mk" to="5rf1:6coPuU2Tg25" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="6coPuU2Zpeg" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5rf1:6coPuU2Tg21" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="6coPuU2Zpeh" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3vlDli" id="6coPuU2Zpei" role="3cqZAp">
+                <node concept="3clFbT" id="6coPuU2Zpel" role="3tpDZB">
+                  <property role="3clFbU" value="true" />
+                </node>
+                <node concept="2OqwBi" id="6coPuU2Zpem" role="3tpDZA">
+                  <node concept="37vLTw" id="6coPuU2Zpep" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6coPuU2Zpd0" resolve="charge" />
+                  </node>
+                  <node concept="3TrcHB" id="6coPuU2Zpeq" role="2OqNvi">
+                    <ref role="3TsBF5" to="5rf1:6coPuU2Tg22" resolve="conjugated" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3vlDli" id="6coPuU2Zper" role="3cqZAp">
+                <node concept="Xl_RD" id="6coPuU2Zpeu" role="3tpDZB">
+                  <property role="Xl_RC" value="PowerPort" />
+                </node>
+                <node concept="2OqwBi" id="6coPuU2Zpev" role="3tpDZA">
+                  <node concept="2OqwBi" id="6coPuU2Zpey" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6coPuU2Zpe_" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6coPuU2ZpeC" role="2Oq$k0">
+                        <node concept="37vLTw" id="6coPuU2ZpeF" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6coPuU2ZpdC" resolve="dataPort" />
+                        </node>
+                        <node concept="3Tsc0h" id="6coPuU2ZpeG" role="2OqNvi">
+                          <ref role="3TtcxE" to="5rf1:6coPuU2Tg1W" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="6coPuU2ZpeH" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrEf2" id="6coPuU2ZpeI" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5rf1:6coPuU2Tg21" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="6coPuU2ZpeJ" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6coPuU2ZpeK" role="ukAjM">
+            <node concept="1jxXqW" id="6coPuU2ZpeN" role="2Oq$k0" />
+            <node concept="liA8E" id="6coPuU2ZpeO" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2ZpeP" role="3cqZAp">
+          <node concept="2YIFZM" id="6coPuU2ZpeR" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="6coPuU2ZpeS" role="37wK5m">
+              <ref role="3cqZAo" node="6coPuU2ZpcF" resolve="m" />
+            </node>
+            <node concept="1jxXqW" id="6coPuU2ZpeT" role="37wK5m" />
           </node>
         </node>
       </node>

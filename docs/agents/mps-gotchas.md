@@ -10,6 +10,30 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## A grammarcells `FlagCell` inside an `OptionalCell` hijacks the optional's visibility — its `renderingCondition` is ignored (2026-10-11)
+
+Putting a `com.mbeddr.mpsutil.grammarcells` `FlagCell` (e.g. `flag{ conjugated }` rendering `~`) inside an
+`OptionalCell`'s option collection — `optional [> : flag{ conjugated } % type % <]` — makes the whole
+optional render only when the *flag property* is true, even though the optional has an explicit
+`renderingCondition` (`node.type != null`). Nodes with a type but `conjugated == false` silently lose
+the `: Type` segment in the editor projection; `check_root_node_problems` reports nothing and generated
+text is unaffected, so only the projection (`print_node` PLAIN TEXT on a sandbox node) shows it.
+
+**How to apply:** don't nest a `FlagCell` inside an `OptionalCell`. For an optional marker inside an
+optional segment, use a plain `CellModel_Constant` with its own `renderingCondition` on the boolean, and
+expose the boolean for editing in the inspector (or via an intention) instead.
+
+## Re-inserting a `print_node` dump can materialise style-item flags the original didn't store (2026-10-11)
+
+Cloning an editor root by converting its `print_node` JSON into a blueprint and inserting it
+(`mps_mcp_insert_root_node_from_json`) produced a `PunctuationLeftStyleClassItem` with `flag = "true"`
+where the original node had no `flag` property at all — so the clone rendered `Name{` while the original
+rendered `Name {`. The blueprint itself did not contain `flag`; the insert populated it.
+
+**How to apply:** after cloning an editor (or any root carrying style items) via blueprint, diff the
+clone's compact tree against the original's and compare the editor projection of a sample node; clear
+stray properties with `mps_mcp_update_node` `SET PROPERTY` `[ref, "flag", null]`.
+
 ## Snapshotting a node as a JSON blueprint (to delete-and-later-reinsert it) must use the plain **name**, not the copied `targetReference`, for any `VariableReference`/`ForEachVariableReference` whose declaration lives in the same snapshot (2026-10-12)
 
 When splitting one git history into several commits by temporarily removing a feature from the live

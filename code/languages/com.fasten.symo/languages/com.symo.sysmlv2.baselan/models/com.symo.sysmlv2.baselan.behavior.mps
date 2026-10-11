@@ -24,6 +24,10 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
+        <child id="1068498886297" name="rValue" index="37vLTx" />
+        <child id="1068498886295" name="lValue" index="37vLTJ" />
+      </concept>
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -34,10 +38,14 @@
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
+      <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
         <child id="1068580123135" name="body" index="3clF47" />
+      </concept>
+      <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
+        <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
@@ -46,6 +54,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580123137" name="jetbrains.mps.baseLanguage.structure.BooleanConstant" flags="nn" index="3clFbT" />
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
@@ -72,6 +81,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
@@ -79,6 +91,7 @@
   </registry>
   <node concept="13h7C7" id="7JKstLNl8gK">
     <property role="TrG5h" value="SysMLv2PartDefinitionRef" />
+    <property role="3GE5qa" value="part" />
     <ref role="13h7C2" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
     <node concept="13hLZK" id="7JKstLNl8gN" role="13h7CW">
       <node concept="3clFbS" id="7JKstLNl8gP" role="2VODD2" />
@@ -127,6 +140,7 @@
   </node>
   <node concept="13h7C7" id="2d_6cEDDSVI">
     <property role="TrG5h" value="SysMLv2AttributeDefinitionRef" />
+    <property role="3GE5qa" value="part.attribute" />
     <ref role="13h7C2" to="5rf1:7JKstLNmmWV" resolve="SysMLv2AttributeDefinitionRef" />
     <node concept="13hLZK" id="2d_6cEDDSVL" role="13h7CW">
       <node concept="3clFbS" id="2d_6cEDDSVN" role="2VODD2" />
@@ -175,6 +189,7 @@
   </node>
   <node concept="13h7C7" id="6coPuU2NmDk">
     <property role="TrG5h" value="SysMLv2Multiplicity_Behavior" />
+    <property role="3GE5qa" value="part.base" />
     <ref role="13h7C2" to="5rf1:6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
     <node concept="13hLZK" id="6coPuU2NmDn" role="13h7CW">
       <node concept="3clFbS" id="6coPuU2NmDp" role="2VODD2" />
@@ -204,6 +219,74 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6coPuU2NmDJ" role="1B3o_S" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6coPuU2TFPE">
+    <property role="TrG5h" value="SysMLv2PartDefinitionRef_Behavior" />
+    <property role="3GE5qa" value="part.port" />
+    <ref role="13h7C2" to="5rf1:6coPuU2Tg1S" resolve="SysMLv2PortDefinitionRef" />
+    <node concept="13hLZK" id="6coPuU2TFPH" role="13h7CW">
+      <node concept="3clFbS" id="6coPuU2TFPJ" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6coPuU2TFPK" role="13h7CS">
+      <property role="TrG5h" value="getEffectiveName" />
+      <node concept="17QB3L" id="6coPuU2TFPO" role="3clF45" />
+      <node concept="3clFbS" id="6coPuU2TFPP" role="3clF47">
+        <node concept="3clFbJ" id="6coPuU2TFPQ" role="3cqZAp">
+          <node concept="3y3z36" id="6coPuU2TFPT" role="3clFbw">
+            <node concept="2OqwBi" id="6coPuU2TFPW" role="3uHU7B">
+              <node concept="13iPFW" id="6coPuU2TFPZ" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6coPuU2TFQ0" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6coPuU2Tg21" resolve="definition" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="6coPuU2TFQ1" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="6coPuU2TFQ2" role="3clFbx">
+            <node concept="3cpWs6" id="6coPuU2TFQ3" role="3cqZAp">
+              <node concept="2OqwBi" id="6coPuU2TFQ4" role="3cqZAk">
+                <node concept="2OqwBi" id="6coPuU2TFQ7" role="2Oq$k0">
+                  <node concept="13iPFW" id="6coPuU2TFQa" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6coPuU2TFQb" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5rf1:6coPuU2Tg21" resolve="definition" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="6coPuU2TFQc" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6coPuU2TFQd" role="3cqZAp">
+          <node concept="2OqwBi" id="6coPuU2TFQe" role="3cqZAk">
+            <node concept="13iPFW" id="6coPuU2TFQh" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6coPuU2TFQi" role="2OqNvi">
+              <ref role="3TsBF5" to="5rf1:6coPuU2Tg20" resolve="portDefinitionName" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6coPuU2TFQj" role="1B3o_S" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="6coPuU30YYc">
+    <property role="3GE5qa" value="part.port" />
+    <ref role="13h7C2" to="5rf1:6coPuU2Tg1T" resolve="SysMLv2PortUsage" />
+    <node concept="13hLZK" id="6coPuU30YYd" role="13h7CW">
+      <node concept="3clFbS" id="6coPuU30YYe" role="2VODD2">
+        <node concept="3clFbF" id="6coPuU30YYw" role="3cqZAp">
+          <node concept="37vLTI" id="6coPuU3102z" role="3clFbG">
+            <node concept="3clFbT" id="6coPuU3102S" role="37vLTx" />
+            <node concept="2OqwBi" id="6coPuU30Zag" role="37vLTJ">
+              <node concept="13iPFW" id="6coPuU30YYv" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6coPuU30Z$E" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6coPuU2Tg22" resolve="conjugated" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

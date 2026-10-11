@@ -735,3 +735,42 @@ Sandbox `_090_Specialization`; new `_090_SpecializationTest` (`testImportSpecial
 **Still deferred**: constraints-aspect scope for the `definition` reference of both ref concepts
 (manual editing in MPS still gets no completion over candidate defs); the `name;` short-form
 decision for body-less defs; cyclic specialization (`A :> B`, `B :> A`) isn't checked anywhere.
+
+**Iteration 9 (2026-10-11) — ports (`port def` / `port` usage, direction, conjugation)**: new
+concepts `SysMLv2PortDefinition` (`port def`, `ISysMLv2FileContent`, `specializes:
+SysMLv2PortDefinitionRef[0..n]` + `content: ISysMLv2PortBodyContent[0..n]` — same shape as part/attribute
+defs incl. iteration 8's specialization), `SysMLv2PortDefinitionRef` (third copy of the
+`<name>Ref`-with-fallback-name pattern, own behavior/editor/textgen), `SysMLv2PortUsage` (`port`;
+implements `ISysMLv2PartBodyContent` and `ISysMLv2PortBodyContent`; children `direction`,
+`multiplicity`, `type`; boolean `conjugated`), `SysMLv2FeatureDirection` (single enum property `kind`
+of new enum `SysMLv2FeatureDirectionKind` = `in`/`out`/`inout`, held as an optional *child* so "no
+direction" is just an absent child rather than a magic enum member), and interface
+`ISysMLv2PortBodyContent` (implemented by `SysMLv2PortUsage`, `SysMLv2AttributeUsage`,
+`SysMLv2EmptyLine`). No `content` link on `SysMLv2PortUsage` (unlike part/attribute usage's unused
+placeholder) — usage bodies are still rejected by the importer.
+
+**Scope extension, flagged for review**: `SysMLv2AttributeUsage` also gained the optional `direction`
+child (`in attribute voltage : Voltage;`) — directed attributes are the main content of real port
+definitions, so ports without it would have been nearly empty. Part usages still reject a direction
+prefix. Direction parsing is a shared plain-Java helper `extractDirection(BasicUsagePrefixContext)`
+that also rejects `ref`/`derived`/`abstract`/`variation`/`constant` explicitly.
+
+Importer: `visitPortDefinition` (cloned from `visitAttributeDefinition`) rejects any body element that
+isn't an `ISysMLv2PortBodyContent` (e.g. a part usage) with an explicit "Unsupported" error instead of a
+`NodeCastException`; `visitPortUsage` (cloned from `visitPartUsage`) handles `~Type`
+(`conjugatedPortTyping`) by setting `conjugated` — set only when true, so non-conjugated imports match
+editor-created nodes that never touched the property. Dispatch added in `visitDefinitionElement` and
+`visitStructureUsageElement`. Reifier: `reifyPortDefinitionRefs` + `TestUtils` wrapper. Textgen
+canonical forms: `in port p : ~P;`, `port def Q :> P {`. Editor: `optional % direction %` prefix on
+port and attribute usages; `~` is a constant shown only when `conjugated` (toggle it in the
+inspector) — a grammarcells `FlagCell` was tried first but breaks the surrounding optional cell (see
+root `mps-gotchas.md`).
+
+Sandbox `_100_Ports`; `_100_PortsTest` (`testImportPorts` — uses `specializes` and `;` variants;
+`testRoundtripPorts`; `testReifyResolvesPortTypesAndSpecializations` — forward ref + conjugated),
+run config `_100_test_sysmlv2_ports`. Full suite (`_020`–`_100`, 23 tests) green.
+
+**Still deferred**: conjugation is not editable inline (inspector only); `port def` bodies don't accept
+`item` usages yet (common in real models, needs `item def`/`item` first); no test for the
+"part usage inside port def" rejection path (the `parseFileIntoModel` EDT hop makes exception
+assertions awkward); scopes for the ref concepts' `definition` link still missing.

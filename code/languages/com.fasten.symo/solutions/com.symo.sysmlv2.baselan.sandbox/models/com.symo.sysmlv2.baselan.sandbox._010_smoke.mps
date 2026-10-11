@@ -12,6 +12,7 @@
       </concept>
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <child id="8930763252717678425" name="type" index="8EhU5" />
+        <child id="7140692429570903510" name="direction" index="3xZtwS" />
       </concept>
       <concept id="8930763252717678342" name="com.symo.sysmlv2.baselan.structure.SysMLv2Multiplicity" flags="ng" index="8EhVq">
         <property id="8930763252717678344" name="upper" index="8EhVk" />
@@ -29,6 +30,22 @@
       </concept>
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
+      </concept>
+      <concept id="7140692429570900090" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureDirection" flags="ng" index="3xZtmk">
+        <property id="7140692429570900105" name="kind" index="3xZtlB" />
+      </concept>
+      <concept id="7140692429570900088" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinitionRef" flags="ng" index="3xZtmm">
+        <property id="7140692429570900096" name="portDefinitionName" index="3xZtlI" />
+      </concept>
+      <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
+        <property id="7140692429570900098" name="conjugated" index="3xZtlG" />
+        <child id="7140692429570900100" name="multiplicity" index="3xZtlE" />
+        <child id="7140692429570900101" name="type" index="3xZtlF" />
+        <child id="7140692429570900099" name="direction" index="3xZtlH" />
+      </concept>
+      <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
+        <child id="7140692429570900092" name="specializes" index="3xZtmi" />
+        <child id="7140692429570900093" name="content" index="3xZtmj" />
       </concept>
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
         <property id="4430087627524899785" name="importedName" index="3Z0PrK" />
@@ -160,6 +177,74 @@
       <property role="TrG5h" value="MassValue" />
       <node concept="8EhVB" id="6coPuU2T2zS" role="3xKGGC">
         <property role="8EhVw" value="Quantity" />
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="6coPuU2Zp9i">
+    <property role="TrG5h" value="_100_Ports" />
+    <node concept="8EhVW" id="6coPuU2Zp9j" role="2h0jOs">
+      <property role="TrG5h" value="Voltage" />
+    </node>
+    <node concept="3xZtmp" id="6coPuU2Zp9k" role="2h0jOs">
+      <property role="TrG5h" value="PowerPort" />
+      <node concept="8EhU9" id="6coPuU2Zp9l" role="3xZtmj">
+        <property role="TrG5h" value="voltage" />
+        <node concept="3xZtmk" id="6coPuU2Zp9m" role="3xZtwS" />
+        <node concept="8EhVB" id="6coPuU2Zp9n" role="8EhU5">
+          <property role="8EhVw" value="Voltage" />
+        </node>
+      </node>
+      <node concept="8EhU9" id="6coPuU2Zp9o" role="3xZtmj">
+        <property role="TrG5h" value="current" />
+        <node concept="3xZtmk" id="6coPuU2Zp9p" role="3xZtwS">
+          <property role="3xZtlB" value="3th7jSwWnJl/out" />
+        </node>
+      </node>
+    </node>
+    <node concept="3xZtmp" id="6coPuU2Zp9q" role="2h0jOs">
+      <property role="TrG5h" value="DataPort" />
+      <node concept="3xZtmm" id="6coPuU2Zp9r" role="3xZtmi">
+        <property role="3xZtlI" value="PowerPort" />
+      </node>
+      <node concept="3xZtmn" id="6coPuU2Zp9s" role="3xZtmj">
+        <property role="TrG5h" value="lane" />
+        <node concept="3xZtmk" id="6coPuU2Zp9t" role="3xZtlH">
+          <property role="3xZtlB" value="mwptYtLWO0/inout" />
+        </node>
+        <node concept="3xZtmm" id="6coPuU2Zp9u" role="3xZtlF">
+          <property role="3xZtlI" value="PowerPort" />
+        </node>
+      </node>
+    </node>
+    <node concept="3ZUotO" id="6coPuU2Zp9v" role="2h0jOs">
+      <property role="TrG5h" value="Battery" />
+      <node concept="3xZtmn" id="6coPuU2Zp9w" role="3ZUouT">
+        <property role="TrG5h" value="supply" />
+        <property role="3xZtlG" value="true" />
+        <node concept="3xZtmk" id="6coPuU2Zp9x" role="3xZtlH">
+          <property role="3xZtlB" value="3th7jSwWnJl/out" />
+        </node>
+      </node>
+      <node concept="3xZtmn" id="6coPuU2Zp9z" role="3ZUouT">
+        <property role="TrG5h" value="charge" />
+        <property role="3xZtlG" value="true" />
+        <node concept="3xZtmk" id="6coPuU2Zp9$" role="3xZtlH" />
+        <node concept="3xZtmm" id="6coPuU2Zp9_" role="3xZtlF">
+          <property role="3xZtlI" value="PowerPort" />
+        </node>
+      </node>
+      <node concept="3xZtmn" id="6coPuU2Zp9A" role="3ZUouT">
+        <property role="TrG5h" value="taps" />
+        <node concept="8EhVq" id="6coPuU2Zp9B" role="3xZtlE">
+          <property role="8EhVr" value="2" />
+          <property role="8EhVk" value="2" />
+        </node>
+        <node concept="3xZtmm" id="6coPuU2Zp9C" role="3xZtlF">
+          <property role="3xZtlI" value="DataPort" />
+        </node>
+      </node>
+      <node concept="3xZtmn" id="6coPuU2Zp9D" role="3ZUouT">
+        <property role="TrG5h" value="spare" />
       </node>
     </node>
   </node>
