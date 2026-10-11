@@ -10,8 +10,14 @@
       <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
         <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
       </concept>
+      <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
+        <child id="8930763252717678425" name="type" index="8EhU5" />
+      </concept>
+      <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
+        <property id="8930763252717678396" name="attributeDefinitionName" index="8EhVw" />
+      </concept>
+      <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW" />
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z">
-        <property id="8930763252716192306" name="typedBy" index="8GFfI" />
         <child id="8930763252717288847" name="type" index="8CKLj" />
       </concept>
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
@@ -72,10 +78,27 @@
       <property role="TrG5h" value="Car" />
       <node concept="8GF0z" id="7JKstLNkCNW" role="3ZUouT">
         <property role="TrG5h" value="engine" />
-        <property role="8GFfI" value="Engine" />
         <node concept="8CKM2" id="7JKstLNlN8h" role="8CKLj">
           <property role="8CKM3" value="Engine" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="2d_6cEDNUxh">
+    <property role="TrG5h" value="_080_Attributes" />
+    <node concept="8EhVW" id="2d_6cEDNUxj" role="2h0jOs">
+      <property role="TrG5h" value="Real" />
+    </node>
+    <node concept="3ZUotO" id="2d_6cEDNUxk" role="2h0jOs">
+      <property role="TrG5h" value="Car" />
+      <node concept="8EhU9" id="2d_6cEDNUxq" role="3ZUouT">
+        <property role="TrG5h" value="mass" />
+        <node concept="8EhVB" id="2d_6cEDNUxr" role="8EhU5">
+          <property role="8EhVw" value="Real" />
+        </node>
+      </node>
+      <node concept="8EhU9" id="2d_6cEDNUxs" role="3ZUouT">
+        <property role="TrG5h" value="count" />
       </node>
     </node>
   </node>

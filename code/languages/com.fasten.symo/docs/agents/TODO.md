@@ -532,3 +532,119 @@ building a `jetbrains.mps.scope.Scope` from a plain node sequence inside a
 didn't seem worth the detour given the reifier already delivers the requested behavior
 programmatically. Worth revisiting if/when manual editing of `.sysmlv2` files directly in MPS (rather
 than only via text import) becomes a real usage path.
+
+**Iteration 7a (2026-10-12) — `attribute def`/`attribute usage`**: new `SysMLv2AttributeDefinition`
+and `SysMLv2AttributeUsage` concepts mirroring `SysMLv2PartDefinition`/`SysMLv2PartUsage`'s shape
+exactly, plus a **deliberately duplicated** `SysMLv2AttributeDefinitionRef` (same
+`<name>Ref`-with-fallback-property pattern as `SysMLv2PartDefinitionRef`, not a shared/generalized
+type-ref concept) — chosen over generalizing because the user had explicitly named
+`SysMLv2PartDefinitionRef` in the iteration-6 design discussion, and duplicating a ~4-field concept
+is cheaper than the risk of silently reshaping something the user already signed off on; flagged
+here for the user's cross-check rather than decided unilaterally as final. (Multiplicity on `part
+usage`, built in the same work session, is tracked as its own increment — see further down, committed
+separately.)
+
+**New gotcha hit and recorded in the root `mps-gotchas.md`** (general MCP/MPS-platform fact): a
+`NodesTestCase` root created via `mps_mcp_create_root_node` does **not** default its `accessMode`
+property to `"none"` the way existing hand-authored test roots in this suite (e.g. `_060_PartUsageTest`)
+happen to have — left at the tool's actual default, the whole generated test body runs under an
+EDT-held write lock (`BaseTestBody.runWithinCommand`), which deterministically deadlocks any call
+into `RoundtripTestUtils`'s `TextGeneratorEngine`-backed helper for exactly 30 seconds before the
+`Future.get` timeout gets turned into a bare `null` by the helper's catch block — surfacing as a
+confusing `expected:<...> but was:<null>` with no hint it's a threading issue. Fixed by explicitly
+`SET PROPERTY accessMode = "none"` on the new root right after creating it, before adding test
+methods.
+
+Structure/behavior/editor/textGen/importer all updated for the new attribute concepts; sandbox
+fixture `_080_Attributes` (`attribute def Real {}` / `part def Car { attribute mass: Real; attribute
+count; }`) added; new `_080_AttributesTest` (`testImportAttributes`, `testRoundtripAttributes`),
+registered as `_080_test_sysmlv2_attributes`, green alongside `_020`–`_070` (confirmed via "Tests
+in '_010_smoke_test@tests'", full suite exit code 0). Also discovered while reading the existing
+textgen for defs: an empty-content `part def`/`attribute def` renders as `name {\n}` (braces, no
+special-cased `name;` short form) — the importer/grammar accept the `;`-terminated short form as
+input, but textgen always round-trips it to the brace form; worth a future decision on whether to
+add the short-form-preserving special case or leave brace-only as the canonical generated style.
+
+**Follow-up during cross-check (2026-10-12) — narrowed `content` interfaces, closing a structural
+over-permissiveness the user caught**: the user pointed out that `SysMLv2AttributeDefinition.content`
+being typed `ISysMLv2FileContent` meant the editor would structurally accept a nested `package`
+(or any other file-level construct) inside an attribute def's body, which makes no sense. The same
+flaw turned out to apply three more places, all sharing one root cause (every content-bearing
+concept had been typed against the single flat `ISysMLv2FileContent` interface used for file/package
+top-level content): `SysMLv2PartDefinition.content`, and — discovered while auditing, not something
+either of us had flagged yet — `SysMLv2PartUsage.content` and `SysMLv2AttributeUsage.content` (both
+already structurally present from mirroring the definition shape, though the importer never
+populates them — it rejects any non-empty usage body outright).
+
+Fixed by splitting `ISysMLv2FileContent` into three tiers instead of one flat interface:
+`ISysMLv2FileContent` now stays implemented only by `SysMLv2Package`/`SysMLv2PartDefinition`/
+`SysMLv2AttributeDefinition` (definition-level, valid at file/package top level) — `SysMLv2PartUsage`
+and `SysMLv2AttributeUsage` no longer implement it. Two new interfaces: `ISysMLv2PartBodyContent`
+(implemented by `SysMLv2PartUsage` + `SysMLv2AttributeUsage` — a part's body may contain either kind
+of usage) and `ISysMLv2AttributeBodyContent` (implemented by `SysMLv2AttributeUsage` only — an
+attribute's body may only contain further attribute usages). `SysMLv2PartDefinition.content` and
+`SysMLv2PartUsage.content` are now typed `ISysMLv2PartBodyContent`; `SysMLv2AttributeDefinition.content`
+and `SysMLv2AttributeUsage.content` are now typed `ISysMLv2AttributeBodyContent`. `SysMLv2Package.content`
+is unchanged (still `ISysMLv2FileContent`, correctly).
+
+This broke two hand-built `SNodeTypeCastExpression`s in the importer (`visitPartDefinition` and
+`visitAttributeDefinition`, each doing `pd.content.add(childNode:ISysMLv2FileContent)` /
+`ad.content.add(childNode:ISysMLv2FileContent)`) — `check_root_node_problems` stayed clean (a cast's
+target concept isn't itself a typesystem error) but `_060_PartUsageTest` failed at runtime with a
+`NodeCastException` once rebuilt, since `SysMLv2PartUsage` no longer satisfies `ISysMLv2FileContent`.
+Fixed by retargeting each cast's `RefConcept_Reference.conceptDeclaration` to the matching new
+interface (`ISysMLv2PartBodyContent` / `ISysMLv2AttributeBodyContent`) via `mps_mcp_update_node` `SET
+REFERENCE` — a cast's target type isn't visible to static structural validation the way a link's type
+is, so a check-clean result after a structural retyping doesn't guarantee runtime-safe hand-built
+casts elsewhere; worth a generic note for future interface-narrowing refactors in this repo. Full
+suite (`_020`–`_080`) green again after the fix.
+
+**Second follow-up during cross-check (2026-10-12) — `SysMLv2EmptyLine` implements all three content
+interfaces, editor element factories added for the two new content lists**: the user asked for
+`SysMLv2EmptyLine` to implement `ISysMLv2PartBodyContent` and `ISysMLv2AttributeBodyContent` too (on
+top of its existing `ISysMLv2FileContent`), so a blank line is substitutable in a part/attribute
+definition's body the same way it already is at file level — straightforward, two new `implements`
+entries, no behavior/textgen changes needed (`SysMLv2EmptyLine` has no textgen/behavior of its own
+beyond rendering nothing). The second half of the ask — "the element factory for content shall
+return an empty line, similar to how it is done at file level" — pointed at a specific existing
+mechanism: `SysMLv2File_Editor`'s `content` `CellModel_RefNodeList` has a `nodeFactory`
+(`QueryFunction_NodeFactory` building `new SysMLv2EmptyLine()` via a light quotation) that makes
+pressing Enter on a blank list row create an empty line directly, instead of popping the substitute
+menu. Checked whether `SysMLv2PartDefinition_Editor`/`SysMLv2AttributeDefinition_Editor`'s own
+`content` lists had one — neither did (added at the same time as `SysMLv2PartUsage`/
+`SysMLv2AttributeUsage` support, with no nodeFactory copied over) — so added the identical
+nodeFactory to both. Also checked `SysMLv2PartUsage_Editor`/`SysMLv2AttributeUsage_Editor`: neither
+renders a `content` cell in the editor at all (their `content` link exists structurally, mirroring
+the definition shape, but nothing — not the editor, not the importer, which explicitly rejects a
+non-empty usage body — exercises it yet), so there was nothing to add a node factory to there; left
+as-is, consistent with that link being a known not-yet-wired-up structural placeholder. Full suite
+green after rebuild.
+
+**Third follow-up during cross-check (2026-10-12) — test naming/content cleanup for the attributes
+side of the split**: the user pointed out that the original combined test was testing two unrelated
+things at once, and that multiplicity reads conceptually as an extension of *part usage*
+specifically, not a property of "attributes" as a topic. `_080_MultiplicityAndAttributes` (sandbox)
+and `_080_MultiplicityAndAttributesTest` were renamed to `_080_Attributes` / `_080_AttributesTest`
+(methods `testImportAttributes`/`testRoundtripAttributes`, run config
+`_080_test_sysmlv2_attributes`) and stripped down to attributes only: dropped the `Engine` part
+definition and the `engines`/`wheels` part usages entirely (no part usage at all in this fixture
+now), and dropped `count`'s multiplicity child so it's a plain untyped attribute usage (`attribute
+count;`) sitting alongside the typed one (`attribute mass : Real;`). The import-test source text is
+built the same multi-line way `_030`'s `testImportNestedPackage` does (`string content;` then one
+`content = "...";` plus a `content += "...";` per source line), per the user's request to make this
+test's input easier to read in the editor. Old run config
+`_080_test_sysmlv2_multiplicity_and_attributes` is now a stale duplicate (same underlying test root,
+old name) — `mps_mcp_create_run_configuration` has no companion delete tool reachable from here, so
+it's left for the user to remove by hand in the IDE's Run Configurations dialog if desired; harmless
+either way since it still points at a valid (renamed) test. Multiplicity coverage (including the
+`_060_PartUsageTest` extension) is a separate increment — see further down.
+
+Full suite (`_020`–`_080`) green after rebuild.
+
+**Committed separately, per user request**: this iteration's attribute-def/attribute-usage work and
+its companion multiplicity-on-part-usage work were implemented together in one session but are being
+committed as two separate commits, one per concern — this entry (iteration 7a) covers the attributes
+half; see the multiplicity entry (iteration 7b) further down for the other half and for how the
+split itself was carried out at the live-model level (temporarily removing all multiplicity-specific
+nodes, verifying the attributes-only state, committing, then restoring multiplicity for the second
+commit).

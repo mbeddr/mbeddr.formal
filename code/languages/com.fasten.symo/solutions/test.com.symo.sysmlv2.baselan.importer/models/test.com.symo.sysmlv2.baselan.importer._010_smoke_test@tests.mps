@@ -182,8 +182,14 @@
       <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
         <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
       </concept>
+      <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
+        <child id="8930763252717678425" name="type" index="8EhU5" />
+      </concept>
+      <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
+        <property id="8930763252717678396" name="attributeDefinitionName" index="8EhVw" />
+      </concept>
+      <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW" />
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z">
-        <property id="8930763252716192306" name="typedBy" index="8GFfI" />
         <child id="8930763252717288847" name="type" index="8CKLj" />
       </concept>
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
@@ -1776,7 +1782,6 @@
           <property role="TrG5h" value="Car" />
           <node concept="8GF0z" id="7JKstLNkCTQ" role="3ZUouT">
             <property role="TrG5h" value="engine" />
-            <property role="8GFfI" value="Engine" />
             <node concept="8CKM2" id="7JKstLNlNdY" role="8CKLj">
               <property role="8CKM3" value="Engine" />
             </node>
@@ -1790,45 +1795,83 @@
     <node concept="1LZb2c" id="7JKstLNkCTS" role="1SL9yI">
       <property role="TrG5h" value="testImportPartUsage" />
       <node concept="3cqZAl" id="7JKstLNkCTV" role="3clF45" />
-      <node concept="3clFbS" id="7JKstLNkCTW" role="3clF47">
-        <node concept="3cpWs8" id="7JKstLNkCTX" role="3cqZAp">
-          <node concept="3cpWsn" id="7JKstLNkCU0" role="3cpWs9">
+      <node concept="3clFbS" id="6coPuU2K2CR" role="3clF47">
+        <node concept="3cpWs8" id="6coPuU2K2CS" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2K2CV" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="6coPuU2K2CX" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2K2CY" role="3cqZAp">
+          <node concept="37vLTI" id="6coPuU2K2D0" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2K2D3" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2K2CV" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2K2D4" role="37vLTx">
+              <property role="Xl_RC" value="part def Car {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2K2D5" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2K2D7" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2K2Da" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2K2CV" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2K2Db" role="37vLTx">
+              <property role="Xl_RC" value="  part engine : Engine;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2K2Dq" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2K2Ds" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2K2Dv" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2K2CV" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2K2Dw" role="37vLTx">
+              <property role="Xl_RC" value="}" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6coPuU2K2Dx" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2K2D$" role="3cpWs9">
             <property role="TrG5h" value="tmp" />
-            <node concept="H_c77" id="7JKstLNkCU2" role="1tU5fm" />
-            <node concept="2YIFZM" id="7JKstLNkCU3" role="33vP2m">
+            <property role="2Lvdk3" value="tmp" />
+            <node concept="H_c77" id="6coPuU2K2DA" role="1tU5fm" />
+            <node concept="2YIFZM" id="6coPuU2K2DB" role="33vP2m">
               <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
               <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
-              <node concept="Xl_RD" id="7JKstLNkCU4" role="37wK5m">
-                <property role="Xl_RC" value="part def Car { part engine : Engine; }" />
+              <node concept="37vLTw" id="6coPuU2K2DC" role="37wK5m">
+                <ref role="3cqZAo" node="6coPuU2K2CV" resolve="content" />
               </node>
-              <node concept="Xl_RD" id="7JKstLNkCU5" role="37wK5m">
+              <node concept="Xl_RD" id="6coPuU2K2DD" role="37wK5m">
                 <property role="Xl_RC" value="PartUsageFile" />
               </node>
-              <node concept="1jxXqW" id="7JKstLNkCU6" role="37wK5m" />
+              <node concept="1jxXqW" id="6coPuU2K2DE" role="37wK5m" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7JKstLNkCU7" role="3cqZAp">
-          <node concept="2YIFZM" id="7JKstLNkCU9" role="3clFbG">
+        <node concept="3clFbF" id="6coPuU2K2DF" role="3cqZAp">
+          <node concept="2YIFZM" id="6coPuU2K2DH" role="3clFbG">
             <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
             <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
-            <node concept="37vLTw" id="7JKstLNkCUa" role="37wK5m">
-              <ref role="3cqZAo" node="7JKstLNkCU0" resolve="tmp" />
+            <node concept="37vLTw" id="6coPuU2K2DI" role="37wK5m">
+              <ref role="3cqZAo" node="6coPuU2K2D$" resolve="tmp" />
             </node>
-            <node concept="3xONca" id="7JKstLNkCUb" role="37wK5m">
-              <ref role="3xOPvv" node="7JKstLNkOR0" />
+            <node concept="3xONca" id="6coPuU2K2DJ" role="37wK5m">
+              <ref role="3xOPvv" node="7JKstLNkOR0" resolve="car_partdef" />
             </node>
-            <node concept="1jxXqW" id="7JKstLNkCUc" role="37wK5m" />
+            <node concept="1jxXqW" id="6coPuU2K2DK" role="37wK5m" />
           </node>
         </node>
-        <node concept="3clFbF" id="7JKstLNkCUd" role="3cqZAp">
-          <node concept="2YIFZM" id="7JKstLNkCUf" role="3clFbG">
+        <node concept="3clFbF" id="6coPuU2K2DL" role="3cqZAp">
+          <node concept="2YIFZM" id="6coPuU2K2DN" role="3clFbG">
             <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
             <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
-            <node concept="37vLTw" id="7JKstLNkCUg" role="37wK5m">
-              <ref role="3cqZAo" node="7JKstLNkCU0" resolve="tmp" />
+            <node concept="37vLTw" id="6coPuU2K2DO" role="37wK5m">
+              <ref role="3cqZAo" node="6coPuU2K2D$" resolve="tmp" />
             </node>
-            <node concept="1jxXqW" id="7JKstLNkCUh" role="37wK5m" />
+            <node concept="1jxXqW" id="6coPuU2K2DP" role="37wK5m" />
           </node>
         </node>
       </node>
@@ -1939,7 +1982,7 @@
                                 <node concept="1uHKPH" id="7JKstLNmguA" role="2OqNvi" />
                               </node>
                               <node concept="3Tsc0h" id="7JKstLNmguB" role="2OqNvi">
-                                <ref role="3TtcxE" to="5rf1:3DMRBeFsYdJ" />
+                                <ref role="3TtcxE" to="5rf1:3DMRBeFsYdJ" resolve="content" />
                               </node>
                             </node>
                             <node concept="1uHKPH" id="7JKstLNmguC" role="2OqNvi" />
@@ -2087,7 +2130,7 @@
                                 <node concept="1uHKPH" id="7JKstLNmgwk" role="2OqNvi" />
                               </node>
                               <node concept="3Tsc0h" id="7JKstLNmgwl" role="2OqNvi">
-                                <ref role="3TtcxE" to="5rf1:3DMRBeFsYdJ" />
+                                <ref role="3TtcxE" to="5rf1:3DMRBeFsYdJ" resolve="content" />
                               </node>
                             </node>
                             <node concept="1uHKPH" id="7JKstLNmgwm" role="2OqNvi" />
@@ -2164,6 +2207,189 @@
               <ref role="3cqZAo" node="7JKstLNmgvx" resolve="m" />
             </node>
             <node concept="1jxXqW" id="7JKstLNmgx2" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="2d_6cEDNVbO">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_080_AttributesTest" />
+    <node concept="1qefOq" id="2d_6cEDNVca" role="1SKRRt">
+      <node concept="2h0jOr" id="2d_6cEDNVcc" role="1qenE9">
+        <property role="TrG5h" value="AttributesFile" />
+        <node concept="8EhVW" id="2d_6cEDNVce" role="2h0jOs">
+          <property role="TrG5h" value="Real" />
+        </node>
+        <node concept="3ZUotO" id="2d_6cEDNVcf" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="8EhU9" id="2d_6cEDNVcl" role="3ZUouT">
+            <property role="TrG5h" value="mass" />
+            <node concept="8EhVB" id="2d_6cEDNVcm" role="8EhU5">
+              <property role="8EhVw" value="Real" />
+            </node>
+          </node>
+          <node concept="8EhU9" id="2d_6cEDNVcn" role="3ZUouT">
+            <property role="TrG5h" value="count" />
+          </node>
+        </node>
+        <node concept="3xLA65" id="2d_6cEDNVcp" role="lGtFl">
+          <property role="TrG5h" value="attrFile" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2d_6cEDNVdu" role="1SL9yI">
+      <property role="TrG5h" value="testImportAttributes" />
+      <node concept="3cqZAl" id="2d_6cEDNVdx" role="3clF45" />
+      <node concept="3clFbS" id="6coPuU2K84g" role="3clF47">
+        <node concept="3cpWs8" id="6coPuU2K84h" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2K84k" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="6coPuU2K84m" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2K84n" role="3cqZAp">
+          <node concept="37vLTI" id="6coPuU2K84p" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2K84s" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2K84k" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2K84t" role="37vLTx">
+              <property role="Xl_RC" value="attribute def Real {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2K84u" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2K84w" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2K84z" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2K84k" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2K84$" role="37vLTx">
+              <property role="Xl_RC" value="}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2K84_" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2K84B" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2K84E" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2K84k" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2K84F" role="37vLTx">
+              <property role="Xl_RC" value="part def Car {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2K84G" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2K84I" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2K84L" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2K84k" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2K84M" role="37vLTx">
+              <property role="Xl_RC" value="  attribute mass : Real;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2K84N" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2K84P" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2K84S" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2K84k" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2K84T" role="37vLTx">
+              <property role="Xl_RC" value="  attribute count;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2K84U" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU2K84W" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU2K84Z" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU2K84k" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU2K850" role="37vLTx">
+              <property role="Xl_RC" value="}" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6coPuU2K851" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2K854" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <property role="2Lvdk3" value="m" />
+            <node concept="H_c77" id="6coPuU2K856" role="1tU5fm" />
+            <node concept="2YIFZM" id="6coPuU2K857" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="6coPuU2K858" role="37wK5m">
+                <ref role="3cqZAo" node="6coPuU2K84k" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6coPuU2K859" role="37wK5m">
+                <property role="Xl_RC" value="AttributesFile" />
+              </node>
+              <node concept="1jxXqW" id="6coPuU2K85a" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2K85b" role="3cqZAp">
+          <node concept="2YIFZM" id="6coPuU2K85d" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="6coPuU2K85e" role="37wK5m">
+              <ref role="3cqZAo" node="6coPuU2K854" resolve="m" />
+            </node>
+            <node concept="3xONca" id="6coPuU2K85f" role="37wK5m">
+              <ref role="3xOPvv" node="2d_6cEDNVcp" resolve="attrFile" />
+            </node>
+            <node concept="1jxXqW" id="6coPuU2K85g" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU2K85h" role="3cqZAp">
+          <node concept="2YIFZM" id="6coPuU2K85j" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="6coPuU2K85k" role="37wK5m">
+              <ref role="3cqZAo" node="6coPuU2K854" resolve="m" />
+            </node>
+            <node concept="1jxXqW" id="6coPuU2K85l" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2d_6cEDNVfw" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripAttributes" />
+      <node concept="3cqZAl" id="2d_6cEDNVfz" role="3clF45" />
+      <node concept="3clFbS" id="2d_6cEDNVf$" role="3clF47">
+        <node concept="3cpWs8" id="2d_6cEDNVf_" role="3cqZAp">
+          <node concept="3cpWsn" id="2d_6cEDNVfC" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="2d_6cEDNVfE" role="1tU5fm" />
+            <node concept="Xl_RD" id="2d_6cEDNVfF" role="33vP2m">
+              <property role="Xl_RC" value="attribute def Real {&#10;}&#10;part def Car {&#10;  attribute mass : Real;&#10;  attribute count;&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2d_6cEDNVfG" role="3cqZAp">
+          <node concept="3cpWsn" id="2d_6cEDNVfJ" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="17QB3L" id="2d_6cEDNVfL" role="1tU5fm" />
+            <node concept="2YIFZM" id="2d_6cEDNVfM" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="2d_6cEDNVfN" role="37wK5m">
+                <ref role="3cqZAo" node="2d_6cEDNVfC" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="2d_6cEDNVfO" role="37wK5m">
+                <property role="Xl_RC" value="AttributesFile" />
+              </node>
+              <node concept="1jxXqW" id="2d_6cEDNVfP" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="2d_6cEDNVfQ" role="3cqZAp">
+          <node concept="37vLTw" id="2d_6cEDNVfT" role="3tpDZB">
+            <ref role="3cqZAo" node="2d_6cEDNVfC" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="2d_6cEDNVfU" role="3tpDZA">
+            <ref role="3cqZAo" node="2d_6cEDNVfJ" resolve="generateText" />
           </node>
         </node>
       </node>
