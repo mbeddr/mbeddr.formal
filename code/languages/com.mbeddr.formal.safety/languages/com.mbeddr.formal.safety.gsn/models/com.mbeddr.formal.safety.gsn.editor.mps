@@ -8805,12 +8805,13 @@
             <node concept="37vLTw" id="6G8t3lLt4eg" role="2Oq$k0">
               <ref role="3cqZAo" node="6G8t3lLt2wp" resolve="allConnectionsInCurrentGoalStructure" />
             </node>
-            <node concept="X8dFx" id="6G8t3lLt6gt" role="2OqNvi">
-              <node concept="2OqwBi" id="6G8t3lLt7T7" role="25WWJ7">
-                <node concept="37vLTw" id="6G8t3lLt6Tu" role="2Oq$k0">
+            <node concept="liA8E" id="7JKstLNaESt" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
+              <node concept="2OqwBi" id="7JKstLNaJN4" role="37wK5m">
+                <node concept="37vLTw" id="7JKstLNaIQj" role="2Oq$k0">
                   <ref role="3cqZAo" node="5hChJZtpC7H" resolve="gs" />
                 </node>
-                <node concept="3Tsc0h" id="6G8t3lLt8f3" role="2OqNvi">
+                <node concept="3Tsc0h" id="7JKstLNaMWJ" role="2OqNvi">
                   <ref role="3TtcxE" to="py52:3GRi4m$sIHx" resolve="connections" />
                 </node>
               </node>
@@ -8822,8 +8823,9 @@
             <node concept="37vLTw" id="5hChJZtqv4$" role="2Oq$k0">
               <ref role="3cqZAo" node="5hChJZtqqRa" resolve="allConnectionsInScope" />
             </node>
-            <node concept="X8dFx" id="5hChJZtq$DC" role="2OqNvi">
-              <node concept="37vLTw" id="5hChJZtq_9x" role="25WWJ7">
+            <node concept="liA8E" id="7JKstLNaS4D" role="2OqNvi">
+              <ref role="37wK5l" to="33ny:~List.addAll(java.util.Collection)" resolve="addAll" />
+              <node concept="37vLTw" id="7JKstLNaVxd" role="37wK5m">
                 <ref role="3cqZAo" node="6G8t3lLt2wp" resolve="allConnectionsInCurrentGoalStructure" />
               </node>
             </node>
