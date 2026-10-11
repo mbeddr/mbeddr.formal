@@ -162,6 +162,13 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
     </node>
+    <node concept="1TJgyj" id="6coPuU2Locb" role="1TKVEi">
+      <property role="IQ2ns" value="8930763252717678429" />
+      <property role="20kJfa" value="multiplicity" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="TrG5h" value="multiplicity" />
+      <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNkRPu">
     <property role="EcuMT" value="8930763252717288798" />
@@ -244,6 +251,13 @@
     <node concept="PrWs8" id="6coPuU2Bx21" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
     </node>
+    <node concept="1TJgyj" id="6coPuU2LonF" role="1TKVEi">
+      <property role="IQ2ns" value="8930763252717678426" />
+      <property role="20kJfa" value="multiplicity" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="TrG5h" value="multiplicity" />
+      <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6coPuU2Bx1J">
     <property role="EcuMT" value="7140692429566251119" />
@@ -254,6 +268,21 @@
     <property role="EcuMT" value="7140692429566251122" />
     <property role="TrG5h" value="ISysMLv2AttributeBodyContent" />
     <property role="3GE5qa" value="base" />
+  </node>
+  <node concept="1TIwiD" id="6coPuU2Lo0D">
+    <property role="EcuMT" value="8930763252717678342" />
+    <property role="TrG5h" value="SysMLv2Multiplicity" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6coPuU2Lo0E" role="1TKVEl">
+      <property role="IQ2nx" value="8930763252717678343" />
+      <property role="TrG5h" value="lower" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="6coPuU2Lo0F" role="1TKVEl">
+      <property role="IQ2nx" value="8930763252717678344" />
+      <property role="TrG5h" value="upper" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
 </model>
 

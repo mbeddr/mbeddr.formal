@@ -644,7 +644,58 @@ Full suite (`_020`–`_080`) green after rebuild.
 **Committed separately, per user request**: this iteration's attribute-def/attribute-usage work and
 its companion multiplicity-on-part-usage work were implemented together in one session but are being
 committed as two separate commits, one per concern — this entry (iteration 7a) covers the attributes
-half; see the multiplicity entry (iteration 7b) further down for the other half and for how the
-split itself was carried out at the live-model level (temporarily removing all multiplicity-specific
-nodes, verifying the attributes-only state, committing, then restoring multiplicity for the second
-commit).
+half; see the multiplicity entry (iteration 7b) immediately below for the other half.
+
+**Iteration 7b (2026-10-12) — multiplicity on `part usage` (and `attribute usage`)**: new shared
+concept `SysMLv2Multiplicity` (`lower`/`upper: string`) referenced by a single `multiplicity: 0..1`
+child link on **both** `SysMLv2PartUsage` and `SysMLv2AttributeUsage` — it carries no usage-specific
+semantics, so one concept covers `part engines[2];` and the (unbounded-range) `part wheels[0..4];`
+forms, and the identical attribute-usage forms. Behavior method `SysMLv2Multiplicity.isSingleValue():
+boolean` (`lower.equals(upper)`) is the single source of truth the editor (`CellModel_Alternation`,
+`[n]` vs `[lo..hi]`) and textgen both call rather than duplicating the check. Dedicated test coverage
+lives in `_060_PartUsageTest` (extended, not replaced, per the user's framing that multiplicity is
+conceptually an extension of part usage): `Car` now has three members — the original `engine :
+Engine` (type only), plus `engines[2] : Engine` (type + single-value multiplicity) and `wheels[0..4]`
+(range multiplicity, no type) — covering all three type/multiplicity combinations. The import-test
+source text is built the multi-line way (`string content;` then `content = "...";` plus one
+`content += "...";` per line), matching `_030`'s `testImportNestedPackage` style per the user's
+request. `SysMLv2AttributeUsage` gets the identical `multiplicity` link/editor/textgen support at
+the same time, for structural symmetry with part usage, though it has no dedicated test of its own —
+`_080_AttributesTest` deliberately stays multiplicity-free, per the attributes commit's test split.
+
+**Latent bug found and fixed while adding multiplicity, predating this iteration**: `visitPartUsage`
+(and the grammar) allow a `featureSpecializationPart` with **zero** `featureSpecialization`s when
+only a `multiplicityPart` is present (e.g. `part wheels[0..4];` — multiplicity but no type) — the
+existing `size() != 1` guard treated that as an error ("more than one type"), which was simply wrong
+for the zero case; it needed to be `if (size() > 1) throw; if (size() == 1) { extract type }`,
+leaving `typedByName` (now the `type` ref) null otherwise. Fixed in both `visitPartUsage` and
+`visitAttributeUsage`. Caught by hand-tracing the grammar while adding multiplicity extraction, not
+by a failing test — no existing fixture before this exercised a usage with multiplicity and no type.
+
+**How the two-commit split was actually carried out**: since MPS models are opaque per-file XML
+blobs and this session's earlier edits (several whole-subtree `SET CHILD` replacements) made the raw
+git diff useless for hunk-level splitting, the split was done at the *live model* level instead —
+snapshot every multiplicity-specific node (concept, two links, behavior/editor/textGen roots, the two
+editor cells, the two textgen `if`s, the importer helper methods and the multiplicity-handling
+statements inside `visitPartUsage`/`visitAttributeUsage`, and the `_060` sandbox/test fixture
+additions) as JSON blueprints, delete them all, verify the resulting "attributes-only" state compiles
+and passes the full suite, commit that as the first commit, then re-insert every snapshot (remapping
+any cross-reference that pointed at a node recreated in this pass — fresh inserts always get new
+persistent ids, so a blueprint's old target ids go stale) to reconstruct multiplicity support for
+this, the second commit. Two mistakes surfaced and were fixed along the way, both now worth knowing
+for next time: (1) a hand-built "snapshot → blueprint" transform that copies `VariableReference`'s
+`targetReference` verbatim breaks the moment the *referenced* declaration is itself part of the same
+re-inserted subtree (new insert = new id = the copied old-id reference goes dangling) — the fix is
+to use the plain variable **name** (`target: "<name>"`, letting MPS re-resolve by name against the
+freshly created sibling) for `VariableReference`/`ForEachVariableReference`, while still using the
+real persistent id for every other reference role (concepts, methods, links — things *not* being
+recreated in the same batch); (2) a manual index-vs-ref mapping mistake (misreading which
+`LocalVariableDeclarationStatement` index corresponded to `multBounds` vs `specPart` in
+`visitAttributeUsage`) deleted the wrong declaration on the first pass, leaving a dangling
+`VariableReference` that rendered as blank (`if ( != null)`) in the generated Java — caught by
+re-reading the method's plain-text form after the "attributes-only" deletions and comparing it
+against the known-good `visitPartUsage` shape, not by `check_root_node_problems` (which stayed clean
+throughout, since a dangling reference inside an otherwise well-formed tree isn't a structural
+error).
+
+Full suite (`_020`–`_080`) green after rebuild and after restoration.

@@ -13,12 +13,17 @@
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <child id="8930763252717678425" name="type" index="8EhU5" />
       </concept>
+      <concept id="8930763252717678342" name="com.symo.sysmlv2.baselan.structure.SysMLv2Multiplicity" flags="ng" index="8EhVq">
+        <property id="8930763252717678344" name="upper" index="8EhVk" />
+        <property id="8930763252717678343" name="lower" index="8EhVr" />
+      </concept>
       <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
         <property id="8930763252717678396" name="attributeDefinitionName" index="8EhVw" />
       </concept>
       <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW" />
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z">
         <child id="8930763252717288847" name="type" index="8CKLj" />
+        <child id="8930763252717678429" name="multiplicity" index="8EhU1" />
       </concept>
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
@@ -80,6 +85,23 @@
         <property role="TrG5h" value="engine" />
         <node concept="8CKM2" id="7JKstLNlN8h" role="8CKLj">
           <property role="8CKM3" value="Engine" />
+        </node>
+      </node>
+      <node concept="8GF0z" id="6coPuU2Q2BK" role="3ZUouT">
+        <property role="TrG5h" value="engines" />
+        <node concept="8CKM2" id="6coPuU2Q2BL" role="8CKLj">
+          <property role="8CKM3" value="Engine" />
+        </node>
+        <node concept="8EhVq" id="6coPuU2Q2BM" role="8EhU1">
+          <property role="8EhVr" value="2" />
+          <property role="8EhVk" value="2" />
+        </node>
+      </node>
+      <node concept="8GF0z" id="6coPuU2Q2N7" role="3ZUouT">
+        <property role="TrG5h" value="wheels" />
+        <node concept="8EhVq" id="6coPuU2Q2N8" role="8EhU1">
+          <property role="8EhVr" value="0" />
+          <property role="8EhVk" value="4" />
         </node>
       </node>
     </node>

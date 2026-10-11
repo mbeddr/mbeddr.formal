@@ -27,6 +27,10 @@
       </concept>
       <concept id="4836112446988635817" name="jetbrains.mps.baseLanguage.structure.UndefinedType" flags="in" index="2jxLKc" />
       <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
+      <concept id="1173175405605" name="jetbrains.mps.baseLanguage.structure.ArrayAccessExpression" flags="nn" index="AH0OO">
+        <child id="1173175577737" name="index" index="AHEQo" />
+        <child id="1173175590490" name="array" index="AHHXb" />
+      </concept>
       <concept id="1188207840427" name="jetbrains.mps.baseLanguage.structure.AnnotationInstance" flags="nn" index="2AHcQZ">
         <reference id="1188208074048" name="annotation" index="2AI5Lk" />
       </concept>
@@ -58,6 +62,9 @@
         <child id="1164991057263" name="throwable" index="YScLw" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
+        <child id="1070534760952" name="componentType" index="10Q1$1" />
+      </concept>
       <concept id="1070534934090" name="jetbrains.mps.baseLanguage.structure.CastExpression" flags="nn" index="10QFUN">
         <child id="1070534934091" name="type" index="10QFUM" />
         <child id="1070534934092" name="expression" index="10QFUP" />
@@ -67,6 +74,9 @@
       </concept>
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1513279640923991009" name="jetbrains.mps.baseLanguage.structure.IGenericClassCreator" flags="ngI" index="366HgL">
+        <property id="1513279640906337053" name="inferTypeParams" index="373rjd" />
       </concept>
       <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
         <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
@@ -113,6 +123,10 @@
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
+      <concept id="1154542696413" name="jetbrains.mps.baseLanguage.structure.ArrayCreatorWithInitializer" flags="nn" index="3g6Rrh">
+        <child id="1154542793668" name="componentType" index="3g7fb8" />
+        <child id="1154542803372" name="initValue" index="3g7hyw" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -121,6 +135,7 @@
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
+      <concept id="7812454656619025412" name="jetbrains.mps.baseLanguage.structure.LocalMethodCall" flags="nn" index="1rXfSq" />
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
         <reference id="1107535924139" name="classifier" index="3uigEE" />
         <child id="1109201940907" name="parameter" index="11_B2D" />
@@ -139,7 +154,13 @@
       <concept id="1144230876926" name="jetbrains.mps.baseLanguage.structure.AbstractForStatement" flags="nn" index="1DupvO">
         <child id="1144230900587" name="variable" index="1Duv9x" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
       <concept id="1146644602865" name="jetbrains.mps.baseLanguage.structure.PublicVisibility" flags="nn" index="3Tm1VV" />
+      <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
@@ -1586,7 +1607,7 @@
                       <ref role="3cqZAo" node="7JKstLNi724" resolve="childNode" />
                     </node>
                     <node concept="chp4Y" id="7JKstLNiulE" role="3oSUPX">
-                      <ref role="cht4Q" to="5rf1:6coPuU2Bx1J" />
+                      <ref role="cht4Q" to="5rf1:6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
                     </node>
                   </node>
                 </node>
@@ -2189,6 +2210,17 @@
             <node concept="10Nm6u" id="2d_6cEDJpfa" role="33vP2m" />
           </node>
         </node>
+        <node concept="3cpWs8" id="6coPuU2No6D" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2No6G" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="multBounds" />
+            <property role="2Lvdk3" value="multBounds" />
+            <node concept="10Nm6u" id="6coPuU2No6I" role="33vP2m" />
+            <node concept="10Q1$e" id="6coPuU2No6J" role="1tU5fm">
+              <node concept="17QB3L" id="6coPuU2No6L" role="10Q1$1" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="2d_6cEDJpfh" role="3cqZAp">
           <node concept="3cpWsn" id="2d_6cEDJpfg" role="3cpWs9">
             <property role="TrG5h" value="specPart" />
@@ -2213,6 +2245,47 @@
             <node concept="10Nm6u" id="2d_6cEDJpfn" role="3uHU7w" />
           </node>
           <node concept="3clFbS" id="2d_6cEDJpfp" role="3clFbx">
+            <node concept="3cpWs8" id="6coPuU2Noif" role="3cqZAp">
+              <node concept="3cpWsn" id="6coPuU2Noii" role="3cpWs9">
+                <property role="OYnhT" value="local variable" />
+                <property role="TrG5h" value="multPart" />
+                <property role="2Lvdk3" value="multPart" />
+                <node concept="2OqwBi" id="6coPuU2Noik" role="33vP2m">
+                  <node concept="37vLTw" id="6coPuU2Noin" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2d_6cEDJpfg" resolve="specPart" />
+                  </node>
+                  <node concept="liA8E" id="6coPuU2Noio" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$FeatureSpecializationPartContext.multiplicityPart()" resolve="multiplicityPart" />
+                  </node>
+                </node>
+                <node concept="3uibUv" id="6coPuU2Noip" role="1tU5fm">
+                  <ref role="3uigEE" to="guqe:~SysMLv2Parser$MultiplicityPartContext" resolve="SysMLv2Parser.MultiplicityPartContext" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="6coPuU2Nozx" role="3cqZAp">
+              <node concept="3y3z36" id="6coPuU2Noz$" role="3clFbw">
+                <node concept="37vLTw" id="6coPuU2NozB" role="3uHU7B">
+                  <ref role="3cqZAo" node="6coPuU2Noii" resolve="multPart" />
+                </node>
+                <node concept="10Nm6u" id="6coPuU2NozC" role="3uHU7w" />
+              </node>
+              <node concept="3clFbS" id="6coPuU2NozD" role="3clFbx">
+                <node concept="3clFbF" id="6coPuU2NozE" role="3cqZAp">
+                  <node concept="37vLTI" id="6coPuU2NozG" role="3clFbG">
+                    <node concept="37vLTw" id="6coPuU2NozJ" role="37vLTJ">
+                      <ref role="3cqZAo" node="6coPuU2No6G" resolve="multBounds" />
+                    </node>
+                    <node concept="1rXfSq" id="6coPuU2NozK" role="37vLTx">
+                      <ref role="37wK5l" node="6coPuU2MF3X" resolve="extractMultiplicityBounds" />
+                      <node concept="37vLTw" id="6coPuU2NozL" role="37wK5m">
+                        <ref role="3cqZAo" node="6coPuU2Noii" resolve="multPart" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="2d_6cEDJpfD" role="3cqZAp">
               <node concept="3eOSWO" id="2d_6cEDJpfE" role="3clFbw">
                 <node concept="2OqwBi" id="2d_6cEDJwUs" role="3uHU7B">
@@ -2610,6 +2683,88 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="6coPuU2Non7" role="3cqZAp">
+          <node concept="3y3z36" id="6coPuU2Nona" role="3clFbw">
+            <node concept="37vLTw" id="6coPuU2Nond" role="3uHU7B">
+              <ref role="3cqZAo" node="6coPuU2No6G" resolve="multBounds" />
+            </node>
+            <node concept="10Nm6u" id="6coPuU2None" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="6coPuU2Nonf" role="3clFbx">
+            <node concept="3cpWs8" id="6coPuU2Nong" role="3cqZAp">
+              <node concept="3cpWsn" id="6coPuU2Nonj" role="3cpWs9">
+                <property role="OYnhT" value="local variable" />
+                <property role="TrG5h" value="mult" />
+                <property role="2Lvdk3" value="mult" />
+                <node concept="2ShNRf" id="6coPuU2Nonl" role="33vP2m">
+                  <node concept="3zrR0B" id="6coPuU2Nonn" role="2ShVmc">
+                    <node concept="3Tqbb2" id="6coPuU2Nonp" role="3zrR0E">
+                      <ref role="ehGHo" to="5rf1:6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tqbb2" id="6coPuU2Nonq" role="1tU5fm">
+                  <ref role="ehGHo" to="5rf1:6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6coPuU2Nonr" role="3cqZAp">
+              <node concept="37vLTI" id="6coPuU2Nont" role="3clFbG">
+                <node concept="2OqwBi" id="6coPuU2Nonw" role="37vLTJ">
+                  <node concept="37vLTw" id="6coPuU2Nonz" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6coPuU2Nonj" resolve="mult" />
+                  </node>
+                  <node concept="3TrcHB" id="6coPuU2Non$" role="2OqNvi">
+                    <ref role="3TsBF5" to="5rf1:6coPuU2Lo0E" resolve="lower" />
+                  </node>
+                </node>
+                <node concept="AH0OO" id="6coPuU2Non_" role="37vLTx">
+                  <node concept="37vLTw" id="6coPuU2NonC" role="AHHXb">
+                    <ref role="3cqZAo" node="6coPuU2No6G" resolve="multBounds" />
+                  </node>
+                  <node concept="3cmrfG" id="6coPuU2NonD" role="AHEQo">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6coPuU2NonE" role="3cqZAp">
+              <node concept="37vLTI" id="6coPuU2NonG" role="3clFbG">
+                <node concept="2OqwBi" id="6coPuU2NonJ" role="37vLTJ">
+                  <node concept="37vLTw" id="6coPuU2NonM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6coPuU2Nonj" resolve="mult" />
+                  </node>
+                  <node concept="3TrcHB" id="6coPuU2NonN" role="2OqNvi">
+                    <ref role="3TsBF5" to="5rf1:6coPuU2Lo0F" resolve="upper" />
+                  </node>
+                </node>
+                <node concept="AH0OO" id="6coPuU2NonO" role="37vLTx">
+                  <node concept="37vLTw" id="6coPuU2NonR" role="AHHXb">
+                    <ref role="3cqZAo" node="6coPuU2No6G" resolve="multBounds" />
+                  </node>
+                  <node concept="3cmrfG" id="6coPuU2NonS" role="AHEQo">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6coPuU2NonT" role="3cqZAp">
+              <node concept="37vLTI" id="6coPuU2NonV" role="3clFbG">
+                <node concept="2OqwBi" id="6coPuU2NonY" role="37vLTJ">
+                  <node concept="37vLTw" id="6coPuU2Noo1" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2d_6cEDKaV2" resolve="pu" />
+                  </node>
+                  <node concept="3TrEf2" id="6coPuU2Noo2" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5rf1:6coPuU2Locb" resolve="multiplicity" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6coPuU2Noo3" role="37vLTx">
+                  <ref role="3cqZAo" node="6coPuU2Nonj" resolve="mult" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="2d_6cEDKaVZ" role="3cqZAp">
           <node concept="3y3z36" id="2d_6cEDKaW2" role="3clFbw">
             <node concept="37vLTw" id="2d_6cEDKaW5" role="3uHU7B">
@@ -2936,7 +3091,7 @@
           <node concept="3cpWsn" id="2d_6cEDG$hv" role="1Duv9x">
             <property role="TrG5h" value="item" />
             <node concept="3uibUv" id="2d_6cEDG$hx" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext" resolve="DefinitionBodyItemContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext" resolve="SysMLv2Parser.DefinitionBodyItemContext" />
             </node>
           </node>
           <node concept="2OqwBi" id="2d_6cEDG$hy" role="1DdaDG">
@@ -2982,7 +3137,7 @@
                       <ref role="3cqZAo" node="2d_6cEDG$hF" resolve="childNode" />
                     </node>
                     <node concept="chp4Y" id="2d_6cEDG$i4" role="3oSUPX">
-                      <ref role="cht4Q" to="5rf1:6coPuU2Bx1M" />
+                      <ref role="cht4Q" to="5rf1:6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
                     </node>
                   </node>
                 </node>
@@ -3424,6 +3579,17 @@
             <node concept="10Nm6u" id="2d_6cEDLy1_" role="33vP2m" />
           </node>
         </node>
+        <node concept="3cpWs8" id="6coPuU2Ocw9" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2Ocwc" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="multBounds" />
+            <property role="2Lvdk3" value="multBounds" />
+            <node concept="10Nm6u" id="6coPuU2Ocwe" role="33vP2m" />
+            <node concept="10Q1$e" id="6coPuU2Ocwf" role="1tU5fm">
+              <node concept="17QB3L" id="6coPuU2Ocwh" role="10Q1$1" />
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6coPuU2K_Ar" role="3cqZAp">
           <node concept="3cpWsn" id="6coPuU2K_Au" role="3cpWs9">
             <property role="OYnhT" value="local variable" />
@@ -3438,24 +3604,65 @@
               </node>
             </node>
             <node concept="3uibUv" id="6coPuU2K_A_" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$FeatureSpecializationPartContext" resolve="FeatureSpecializationPartContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$FeatureSpecializationPartContext" resolve="SysMLv2Parser.FeatureSpecializationPartContext" />
             </node>
           </node>
         </node>
         <node concept="3clFbJ" id="2d_6cEDLy1J" role="3cqZAp">
           <node concept="3y3z36" id="2d_6cEDLy1K" role="3clFbw">
             <node concept="37vLTw" id="2d_6cEDLy1L" role="3uHU7B">
-              <ref role="3cqZAo" node="6coPuU2K_Au" />
+              <ref role="3cqZAo" node="6coPuU2K_Au" resolve="specPart" />
             </node>
             <node concept="10Nm6u" id="2d_6cEDLy1M" role="3uHU7w" />
           </node>
           <node concept="3clFbS" id="2d_6cEDLy1O" role="3clFbx">
+            <node concept="3cpWs8" id="6coPuU2Np2u" role="3cqZAp">
+              <node concept="3cpWsn" id="6coPuU2Np2x" role="3cpWs9">
+                <property role="OYnhT" value="local variable" />
+                <property role="TrG5h" value="multPart" />
+                <property role="2Lvdk3" value="multPart" />
+                <node concept="2OqwBi" id="6coPuU2Np2z" role="33vP2m">
+                  <node concept="37vLTw" id="6coPuU2Np2A" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6coPuU2K_Au" resolve="specPart" />
+                  </node>
+                  <node concept="liA8E" id="6coPuU2Np2B" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$FeatureSpecializationPartContext.multiplicityPart()" resolve="multiplicityPart" />
+                  </node>
+                </node>
+                <node concept="3uibUv" id="6coPuU2Np2C" role="1tU5fm">
+                  <ref role="3uigEE" to="guqe:~SysMLv2Parser$MultiplicityPartContext" resolve="SysMLv2Parser.MultiplicityPartContext" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="6coPuU2Np7a" role="3cqZAp">
+              <node concept="3y3z36" id="6coPuU2Np7d" role="3clFbw">
+                <node concept="37vLTw" id="6coPuU2Np7g" role="3uHU7B">
+                  <ref role="3cqZAo" node="6coPuU2Np2x" resolve="multPart" />
+                </node>
+                <node concept="10Nm6u" id="6coPuU2Np7h" role="3uHU7w" />
+              </node>
+              <node concept="3clFbS" id="6coPuU2Np7i" role="3clFbx">
+                <node concept="3clFbF" id="6coPuU2Np7j" role="3cqZAp">
+                  <node concept="37vLTI" id="6coPuU2Np7l" role="3clFbG">
+                    <node concept="37vLTw" id="6coPuU2Np7o" role="37vLTJ">
+                      <ref role="3cqZAo" node="6coPuU2Ocwc" resolve="multBounds" />
+                    </node>
+                    <node concept="1rXfSq" id="6coPuU2Np7p" role="37vLTx">
+                      <ref role="37wK5l" node="6coPuU2MF3X" resolve="extractMultiplicityBounds" />
+                      <node concept="37vLTw" id="6coPuU2Np7q" role="37wK5m">
+                        <ref role="3cqZAo" node="6coPuU2Np2x" resolve="multPart" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="2d_6cEDLy24" role="3cqZAp">
               <node concept="3eOSWO" id="2d_6cEDLy25" role="3clFbw">
                 <node concept="2OqwBi" id="2d_6cEDLE7Y" role="3uHU7B">
                   <node concept="2OqwBi" id="2d_6cEDLDTN" role="2Oq$k0">
                     <node concept="37vLTw" id="2d_6cEDLAfk" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6coPuU2K_Au" />
+                      <ref role="3cqZAo" node="6coPuU2K_Au" resolve="specPart" />
                     </node>
                     <node concept="liA8E" id="2d_6cEDLDTO" role="2OqNvi">
                       <ref role="37wK5l" to="guqe:~SysMLv2Parser$FeatureSpecializationPartContext.featureSpecialization()" resolve="featureSpecialization" />
@@ -3487,7 +3694,7 @@
                 <node concept="2OqwBi" id="2d_6cEDLEbf" role="3uHU7B">
                   <node concept="2OqwBi" id="2d_6cEDLDU7" role="2Oq$k0">
                     <node concept="37vLTw" id="2d_6cEDLA$0" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6coPuU2K_Au" />
+                      <ref role="3cqZAo" node="6coPuU2K_Au" resolve="specPart" />
                     </node>
                     <node concept="liA8E" id="2d_6cEDLDU8" role="2OqNvi">
                       <ref role="37wK5l" to="guqe:~SysMLv2Parser$FeatureSpecializationPartContext.featureSpecialization()" resolve="featureSpecialization" />
@@ -3510,7 +3717,7 @@
                     </node>
                     <node concept="2OqwBi" id="2d_6cEDLDUj" role="33vP2m">
                       <node concept="37vLTw" id="2d_6cEDLAMn" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6coPuU2K_Au" />
+                        <ref role="3cqZAo" node="6coPuU2K_Au" resolve="specPart" />
                       </node>
                       <node concept="liA8E" id="2d_6cEDLDUk" role="2OqNvi">
                         <ref role="37wK5l" to="guqe:~SysMLv2Parser$FeatureSpecializationPartContext.featureSpecialization(int)" resolve="featureSpecialization" />
@@ -3847,6 +4054,88 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="6coPuU2NqCS" role="3cqZAp">
+          <node concept="3y3z36" id="6coPuU2NqCV" role="3clFbw">
+            <node concept="37vLTw" id="6coPuU2NqCY" role="3uHU7B">
+              <ref role="3cqZAo" node="6coPuU2Ocwc" resolve="multBounds" />
+            </node>
+            <node concept="10Nm6u" id="6coPuU2NqCZ" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="6coPuU2NqD0" role="3clFbx">
+            <node concept="3cpWs8" id="6coPuU2NqD1" role="3cqZAp">
+              <node concept="3cpWsn" id="6coPuU2NqD4" role="3cpWs9">
+                <property role="OYnhT" value="local variable" />
+                <property role="TrG5h" value="mult" />
+                <property role="2Lvdk3" value="mult" />
+                <node concept="2ShNRf" id="6coPuU2NqD6" role="33vP2m">
+                  <node concept="3zrR0B" id="6coPuU2NqD8" role="2ShVmc">
+                    <node concept="3Tqbb2" id="6coPuU2NqDa" role="3zrR0E">
+                      <ref role="ehGHo" to="5rf1:6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tqbb2" id="6coPuU2NqDb" role="1tU5fm">
+                  <ref role="ehGHo" to="5rf1:6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6coPuU2NqDc" role="3cqZAp">
+              <node concept="37vLTI" id="6coPuU2NqDe" role="3clFbG">
+                <node concept="2OqwBi" id="6coPuU2NqDh" role="37vLTJ">
+                  <node concept="37vLTw" id="6coPuU2NqDk" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6coPuU2NqD4" resolve="mult" />
+                  </node>
+                  <node concept="3TrcHB" id="6coPuU2NqDl" role="2OqNvi">
+                    <ref role="3TsBF5" to="5rf1:6coPuU2Lo0E" resolve="lower" />
+                  </node>
+                </node>
+                <node concept="AH0OO" id="6coPuU2NqDm" role="37vLTx">
+                  <node concept="37vLTw" id="6coPuU2NqDp" role="AHHXb">
+                    <ref role="3cqZAo" node="6coPuU2Ocwc" resolve="multBounds" />
+                  </node>
+                  <node concept="3cmrfG" id="6coPuU2NqDq" role="AHEQo">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6coPuU2NqDr" role="3cqZAp">
+              <node concept="37vLTI" id="6coPuU2NqDt" role="3clFbG">
+                <node concept="2OqwBi" id="6coPuU2NqDw" role="37vLTJ">
+                  <node concept="37vLTw" id="6coPuU2NqDz" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6coPuU2NqD4" resolve="mult" />
+                  </node>
+                  <node concept="3TrcHB" id="6coPuU2NqD$" role="2OqNvi">
+                    <ref role="3TsBF5" to="5rf1:6coPuU2Lo0F" resolve="upper" />
+                  </node>
+                </node>
+                <node concept="AH0OO" id="6coPuU2NqD_" role="37vLTx">
+                  <node concept="37vLTw" id="6coPuU2NqDC" role="AHHXb">
+                    <ref role="3cqZAo" node="6coPuU2Ocwc" resolve="multBounds" />
+                  </node>
+                  <node concept="3cmrfG" id="6coPuU2NqDD" role="AHEQo">
+                    <property role="3cmrfH" value="1" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6coPuU2NqDE" role="3cqZAp">
+              <node concept="37vLTI" id="6coPuU2NqDG" role="3clFbG">
+                <node concept="2OqwBi" id="6coPuU2NqDJ" role="37vLTJ">
+                  <node concept="37vLTw" id="6coPuU2NqDM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="2d_6cEDMrT6" resolve="au" />
+                  </node>
+                  <node concept="3TrEf2" id="6coPuU2NqDN" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5rf1:6coPuU2LonF" resolve="multiplicity" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6coPuU2NqDO" role="37vLTx">
+                  <ref role="3cqZAo" node="6coPuU2NqD4" resolve="mult" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="2d_6cEDMrUo" role="3cqZAp">
           <node concept="3y3z36" id="2d_6cEDMrUr" role="3clFbw">
             <node concept="37vLTw" id="2d_6cEDMrUu" role="3uHU7B">
@@ -3912,6 +4201,345 @@
       <node concept="3uibUv" id="2d_6cEDLy3Q" role="3clF45">
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
+    </node>
+    <node concept="2YIFZL" id="6coPuU2M2ab" role="jymVt">
+      <property role="TrG5h" value="extractMultiplicityBoundText" />
+      <property role="2Lvdk3" value="extractMultiplicityBoundText" />
+      <node concept="17QB3L" id="6coPuU2M2af" role="3clF45" />
+      <node concept="37vLTG" id="6coPuU2M2ag" role="3clF46">
+        <property role="TrG5h" value="member" />
+        <property role="2Lvdk3" value="member" />
+        <node concept="3uibUv" id="6coPuU2M2ai" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$MultiplicityExpressionMemberContext" resolve="SysMLv2Parser.MultiplicityExpressionMemberContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6coPuU2M2aj" role="3clF47">
+        <node concept="3clFbJ" id="6coPuU2M2ak" role="3cqZAp">
+          <node concept="3y3z36" id="6coPuU2M2an" role="3clFbw">
+            <node concept="2OqwBi" id="6coPuU2M2aq" role="3uHU7B">
+              <node concept="37vLTw" id="6coPuU2M2at" role="2Oq$k0">
+                <ref role="3cqZAo" node="6coPuU2M2ag" resolve="member" />
+              </node>
+              <node concept="liA8E" id="6coPuU2M2au" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MultiplicityExpressionMemberContext.featureReferenceExpression()" resolve="featureReferenceExpression" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="6coPuU2M2av" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="6coPuU2M2aw" role="3clFbx">
+            <node concept="YS8fn" id="6coPuU2M2ax" role="3cqZAp">
+              <node concept="2ShNRf" id="6coPuU2M2az" role="YScLw">
+                <node concept="1pGfFk" id="6coPuU2M2a_" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="6coPuU2M2aA" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: feature-reference multiplicity bound" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6coPuU2M2aB" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2M2aE" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="lit" />
+            <property role="2Lvdk3" value="lit" />
+            <node concept="2OqwBi" id="6coPuU2M2aG" role="33vP2m">
+              <node concept="37vLTw" id="6coPuU2M2aJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="6coPuU2M2ag" resolve="member" />
+              </node>
+              <node concept="liA8E" id="6coPuU2M2aK" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MultiplicityExpressionMemberContext.literalExpression()" resolve="literalExpression" />
+              </node>
+            </node>
+            <node concept="3uibUv" id="6coPuU2M2aL" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$LiteralExpressionContext" resolve="SysMLv2Parser.LiteralExpressionContext" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6coPuU2M2aM" role="3cqZAp">
+          <node concept="3y3z36" id="6coPuU2M2aP" role="3clFbw">
+            <node concept="2OqwBi" id="6coPuU2M2aS" role="3uHU7B">
+              <node concept="37vLTw" id="6coPuU2M2aV" role="2Oq$k0">
+                <ref role="3cqZAo" node="6coPuU2M2aE" resolve="lit" />
+              </node>
+              <node concept="liA8E" id="6coPuU2M2aW" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$LiteralExpressionContext.literalInteger()" resolve="literalInteger" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="6coPuU2M2aX" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="6coPuU2M2aY" role="3clFbx">
+            <node concept="3cpWs6" id="6coPuU2M2aZ" role="3cqZAp">
+              <node concept="2OqwBi" id="6coPuU2M2b0" role="3cqZAk">
+                <node concept="2OqwBi" id="6coPuU2M2b3" role="2Oq$k0">
+                  <node concept="2OqwBi" id="6coPuU2M2b6" role="2Oq$k0">
+                    <node concept="37vLTw" id="6coPuU2M2b9" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6coPuU2M2aE" resolve="lit" />
+                    </node>
+                    <node concept="liA8E" id="6coPuU2M2ba" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$LiteralExpressionContext.literalInteger()" resolve="literalInteger" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6coPuU2M2bb" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$LiteralIntegerContext.INTEGER()" resolve="INTEGER" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6coPuU2M2bc" role="2OqNvi">
+                  <ref role="37wK5l" to="6xeh:~ParseTree.getText()" resolve="getText" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6coPuU2M2bd" role="3cqZAp">
+          <node concept="3y3z36" id="6coPuU2M2bg" role="3clFbw">
+            <node concept="2OqwBi" id="6coPuU2M2bj" role="3uHU7B">
+              <node concept="37vLTw" id="6coPuU2M2bm" role="2Oq$k0">
+                <ref role="3cqZAo" node="6coPuU2M2aE" resolve="lit" />
+              </node>
+              <node concept="liA8E" id="6coPuU2M2bn" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$LiteralExpressionContext.literalInfinity()" resolve="literalInfinity" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="6coPuU2M2bo" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="6coPuU2M2bp" role="3clFbx">
+            <node concept="3cpWs6" id="6coPuU2M2bq" role="3cqZAp">
+              <node concept="Xl_RD" id="6coPuU2M2br" role="3cqZAk">
+                <property role="Xl_RC" value="*" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="YS8fn" id="6coPuU2M2bs" role="3cqZAp">
+          <node concept="2ShNRf" id="6coPuU2M2bu" role="YScLw">
+            <node concept="1pGfFk" id="6coPuU2M2bw" role="2ShVmc">
+              <property role="373rjd" value="true" />
+              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+              <node concept="Xl_RD" id="6coPuU2M2bx" role="37wK5m">
+                <property role="Xl_RC" value="Unsupported SysML v2 construct: non-integer/non-infinity multiplicity bound" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6coPuU2M2by" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="6coPuU2MF3X" role="jymVt">
+      <property role="TrG5h" value="extractMultiplicityBounds" />
+      <property role="2Lvdk3" value="extractMultiplicityBounds" />
+      <node concept="10Q1$e" id="6coPuU2MF41" role="3clF45">
+        <node concept="17QB3L" id="6coPuU2MF43" role="10Q1$1" />
+      </node>
+      <node concept="37vLTG" id="6coPuU2MF44" role="3clF46">
+        <property role="TrG5h" value="multPart" />
+        <property role="2Lvdk3" value="multPart" />
+        <node concept="3uibUv" id="6coPuU2MF46" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$MultiplicityPartContext" resolve="SysMLv2Parser.MultiplicityPartContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6coPuU2MF47" role="3clF47">
+        <node concept="3clFbJ" id="6coPuU2MF48" role="3cqZAp">
+          <node concept="22lmx$" id="6coPuU2MF4b" role="3clFbw">
+            <node concept="3y3z36" id="6coPuU2MF4e" role="3uHU7B">
+              <node concept="2OqwBi" id="6coPuU2MF4h" role="3uHU7B">
+                <node concept="37vLTw" id="6coPuU2MF4k" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6coPuU2MF44" resolve="multPart" />
+                </node>
+                <node concept="liA8E" id="6coPuU2MF4l" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$MultiplicityPartContext.ORDERED()" resolve="ORDERED" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="6coPuU2MF4m" role="3uHU7w" />
+            </node>
+            <node concept="3y3z36" id="6coPuU2MF4n" role="3uHU7w">
+              <node concept="2OqwBi" id="6coPuU2MF4q" role="3uHU7B">
+                <node concept="37vLTw" id="6coPuU2MF4t" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6coPuU2MF44" resolve="multPart" />
+                </node>
+                <node concept="liA8E" id="6coPuU2MF4u" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$MultiplicityPartContext.NONUNIQUE()" resolve="NONUNIQUE" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="6coPuU2MF4v" role="3uHU7w" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6coPuU2MF4w" role="3clFbx">
+            <node concept="YS8fn" id="6coPuU2MF4x" role="3cqZAp">
+              <node concept="2ShNRf" id="6coPuU2MF4z" role="YScLw">
+                <node concept="1pGfFk" id="6coPuU2MF4_" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="6coPuU2MF4A" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: ordered/nonunique multiplicity" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6coPuU2MF4B" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2MF4E" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="ownedMult" />
+            <property role="2Lvdk3" value="ownedMult" />
+            <node concept="2OqwBi" id="6coPuU2MF4G" role="33vP2m">
+              <node concept="37vLTw" id="6coPuU2MF4J" role="2Oq$k0">
+                <ref role="3cqZAo" node="6coPuU2MF44" resolve="multPart" />
+              </node>
+              <node concept="liA8E" id="6coPuU2MF4K" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MultiplicityPartContext.ownedMultiplicity()" resolve="ownedMultiplicity" />
+              </node>
+            </node>
+            <node concept="3uibUv" id="6coPuU2MF4L" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$OwnedMultiplicityContext" resolve="SysMLv2Parser.OwnedMultiplicityContext" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6coPuU2MF4M" role="3cqZAp">
+          <node concept="3clFbC" id="6coPuU2MF4P" role="3clFbw">
+            <node concept="37vLTw" id="6coPuU2MF4S" role="3uHU7B">
+              <ref role="3cqZAo" node="6coPuU2MF4E" resolve="ownedMult" />
+            </node>
+            <node concept="10Nm6u" id="6coPuU2MF4T" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="6coPuU2MF4U" role="3clFbx">
+            <node concept="YS8fn" id="6coPuU2MF4V" role="3cqZAp">
+              <node concept="2ShNRf" id="6coPuU2MF4X" role="YScLw">
+                <node concept="1pGfFk" id="6coPuU2MF4Z" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="6coPuU2MF50" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: multiplicity without bounds" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6coPuU2MF51" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2MF54" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="bounds" />
+            <property role="2Lvdk3" value="bounds" />
+            <node concept="2OqwBi" id="6coPuU2MF56" role="33vP2m">
+              <node concept="2OqwBi" id="6coPuU2MF59" role="2Oq$k0">
+                <node concept="37vLTw" id="6coPuU2MF5c" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6coPuU2MF4E" resolve="ownedMult" />
+                </node>
+                <node concept="liA8E" id="6coPuU2MF5d" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OwnedMultiplicityContext.ownedMultiplicityRange()" resolve="ownedMultiplicityRange" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6coPuU2MF5e" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$OwnedMultiplicityRangeContext.multiplicityBounds()" resolve="multiplicityBounds" />
+              </node>
+            </node>
+            <node concept="3uibUv" id="6coPuU2MF5f" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$MultiplicityBoundsContext" resolve="SysMLv2Parser.MultiplicityBoundsContext" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6coPuU2MF5g" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2MF5j" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="members" />
+            <property role="2Lvdk3" value="members" />
+            <node concept="2OqwBi" id="6coPuU2MF5l" role="33vP2m">
+              <node concept="37vLTw" id="6coPuU2MF5o" role="2Oq$k0">
+                <ref role="3cqZAo" node="6coPuU2MF54" resolve="bounds" />
+              </node>
+              <node concept="liA8E" id="6coPuU2MF5p" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MultiplicityBoundsContext.multiplicityExpressionMember()" resolve="multiplicityExpressionMember" />
+              </node>
+            </node>
+            <node concept="3uibUv" id="6coPuU2MF5q" role="1tU5fm">
+              <ref role="3uigEE" to="33ny:~List" resolve="List" />
+              <node concept="3uibUv" id="6coPuU2MF5r" role="11_B2D">
+                <ref role="3uigEE" to="guqe:~SysMLv2Parser$MultiplicityExpressionMemberContext" resolve="SysMLv2Parser.MultiplicityExpressionMemberContext" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6coPuU2MF5s" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2MF5v" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="lower" />
+            <property role="2Lvdk3" value="lower" />
+            <node concept="1rXfSq" id="6coPuU2MF5x" role="33vP2m">
+              <ref role="37wK5l" node="6coPuU2M2ab" resolve="extractMultiplicityBoundText" />
+              <node concept="2OqwBi" id="6coPuU2MF5y" role="37wK5m">
+                <node concept="37vLTw" id="6coPuU2MF5_" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6coPuU2MF5j" resolve="members" />
+                </node>
+                <node concept="liA8E" id="6coPuU2MF5A" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                  <node concept="3cmrfG" id="6coPuU2MF5B" role="37wK5m">
+                    <property role="3cmrfH" value="0" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="17QB3L" id="6coPuU2MF5C" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6coPuU2MF5D" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU2MF5G" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="upper" />
+            <property role="2Lvdk3" value="upper" />
+            <node concept="3K4zz7" id="6coPuU2MF5I" role="33vP2m">
+              <node concept="3clFbC" id="6coPuU2MF5M" role="3K4Cdx">
+                <node concept="2OqwBi" id="6coPuU2MF5P" role="3uHU7B">
+                  <node concept="37vLTw" id="6coPuU2MF5S" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6coPuU2MF5j" resolve="members" />
+                  </node>
+                  <node concept="liA8E" id="6coPuU2MF5T" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
+                  </node>
+                </node>
+                <node concept="3cmrfG" id="6coPuU2MF5U" role="3uHU7w">
+                  <property role="3cmrfH" value="2" />
+                </node>
+              </node>
+              <node concept="1rXfSq" id="6coPuU2MF5V" role="3K4E3e">
+                <ref role="37wK5l" node="6coPuU2M2ab" resolve="extractMultiplicityBoundText" />
+                <node concept="2OqwBi" id="6coPuU2MF5W" role="37wK5m">
+                  <node concept="37vLTw" id="6coPuU2MF5Z" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6coPuU2MF5j" resolve="members" />
+                  </node>
+                  <node concept="liA8E" id="6coPuU2MF60" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                    <node concept="3cmrfG" id="6coPuU2MF61" role="37wK5m">
+                      <property role="3cmrfH" value="1" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="37vLTw" id="6coPuU2MF62" role="3K4GZi">
+                <ref role="3cqZAo" node="6coPuU2MF5v" resolve="lower" />
+              </node>
+            </node>
+            <node concept="17QB3L" id="6coPuU2MF63" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6coPuU2MF64" role="3cqZAp">
+          <node concept="2ShNRf" id="6coPuU2MF65" role="3cqZAk">
+            <node concept="3g6Rrh" id="6coPuU2MF67" role="2ShVmc">
+              <node concept="17QB3L" id="6coPuU2MF69" role="3g7fb8" />
+              <node concept="37vLTw" id="6coPuU2MF6a" role="3g7hyw">
+                <ref role="3cqZAo" node="6coPuU2MF5v" resolve="lower" />
+              </node>
+              <node concept="37vLTw" id="6coPuU2MF6b" role="3g7hyw">
+                <ref role="3cqZAo" node="6coPuU2MF5G" resolve="upper" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6coPuU2MF6c" role="1B3o_S" />
     </node>
   </node>
   <node concept="312cEu" id="7JKstLNlJ4o">

@@ -24,6 +24,7 @@
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
+      <concept id="1202948039474" name="jetbrains.mps.baseLanguage.structure.InstanceMethodCallOperation" flags="nn" index="liA8E" />
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
@@ -32,6 +33,7 @@
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
@@ -46,6 +48,10 @@
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -165,6 +171,39 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6coPuU2NmDk">
+    <property role="TrG5h" value="SysMLv2Multiplicity_Behavior" />
+    <ref role="13h7C2" to="5rf1:6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+    <node concept="13hLZK" id="6coPuU2NmDn" role="13h7CW">
+      <node concept="3clFbS" id="6coPuU2NmDp" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6coPuU2NmDq" role="13h7CS">
+      <property role="TrG5h" value="isSingleValue" />
+      <node concept="10P_77" id="6coPuU2NmDu" role="3clF45" />
+      <node concept="3clFbS" id="6coPuU2NmDv" role="3clF47">
+        <node concept="3cpWs6" id="6coPuU2NmDw" role="3cqZAp">
+          <node concept="2OqwBi" id="6coPuU2NmDx" role="3cqZAk">
+            <node concept="2OqwBi" id="6coPuU2NmD$" role="2Oq$k0">
+              <node concept="13iPFW" id="6coPuU2NmDB" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6coPuU2NmDC" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6coPuU2Lo0E" resolve="lower" />
+              </node>
+            </node>
+            <node concept="liA8E" id="6coPuU2NmDD" role="2OqNvi">
+              <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+              <node concept="2OqwBi" id="6coPuU2NmDE" role="37wK5m">
+                <node concept="13iPFW" id="6coPuU2NmDH" role="2Oq$k0" />
+                <node concept="3TrcHB" id="6coPuU2NmDI" role="2OqNvi">
+                  <ref role="3TsBF5" to="5rf1:6coPuU2Lo0F" resolve="upper" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6coPuU2NmDJ" role="1B3o_S" />
     </node>
   </node>
 </model>

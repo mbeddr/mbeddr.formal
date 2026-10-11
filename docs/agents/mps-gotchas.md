@@ -10,6 +10,29 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## Snapshotting a node as a JSON blueprint (to delete-and-later-reinsert it) must use the plain **name**, not the copied `targetReference`, for any `VariableReference`/`ForEachVariableReference` whose declaration lives in the same snapshot (2026-10-12)
+
+When splitting one git history into several commits by temporarily removing a feature from the live
+model, snapshotting it as a `print_node` dump, and later re-inserting that dump as a fresh blueprint
+(`mps_mcp_insert_root_node_from_json` / `ADD CHILD`), a generic "dump → blueprint" transform that
+copies every reference's `targetReference` verbatim silently breaks any `VariableReference` (or
+`ForEachVariableReference`) whose target declaration (a local variable, parameter, or foreach
+variable) is *itself* part of the same snapshot. A fresh insert always allocates new persistent ids
+for the whole subtree — including that declaration — so the copied old id in the reference goes
+dangling. `check_root_node_problems` does **not** catch this (the tree is structurally well-formed);
+it only surfaces as a visibly blank operand in the generated Java (e.g. `if ( != null)`) or in a
+`mps_mcp_print_node` plain-text dump, since the renderer prints nothing for an unresolved reference
+target rather than erroring.
+
+**How to apply:** when building a generic snapshot-to-blueprint transformer for this purpose, for
+`VariableReference.variableDeclaration` and `ForEachVariableReference.variable` specifically, emit
+`{"role": ..., "target": "<plain name>"}` — the same plain-name auto-resolution the insert tools
+already support for "an unambiguous local ref" — instead of the node-id form, so each reference
+re-resolves by name against whichever sibling node the same insert just (re)created, regardless of
+its new id. Keep using the real persistent id (`targetReference`) for every other reference role
+(concepts, methods, links, interfaces) whose target is *not* being recreated in the same batch — the
+plain-name trick only matters for intra-subtree self-references.
+
 ## `mps_mcp_create_root_node`'s `NodesTestCase` default `accessMode` isn't `"none"` — a test calling an async engine (e.g. `TextGeneratorEngine`) deadlocks for exactly 30s and reports the result as `null` (2026-10-12)
 
 A `NodesTestCase` root created via `mps_mcp_create_root_node` (no explicit `accessMode` property set) does **not** default to `accessMode="none"` the way a hand-authored one in the IDE typically does. Left at its actual default, the generated test body runs entirely inside `BaseTestBody.runWithinCommand` — on the EDT, holding the write lock — for the whole method, not just mutating statements. A test that calls a helper wrapping an async engine with its own worker-thread pool (e.g. `jetbrains.mps.text.TextGeneratorEngine.generateText(model)`, returning a `Future<TextGenResult>` that the helper blocks on via `.get(30, TimeUnit.SECONDS)`) then hits the exact deadlock described below ("self-deadlocks ... EDT holds the write lock"): the worker thread can never get the read permit it needs, the EDT is blocked in `.get()` waiting for it, and after exactly 30 seconds `FutureTask.get` throws `TimeoutException` (no message) — which a catch-and-return-`e.getMessage()` helper (as `RoundtripTestUtils.generateText` does) turns into a plain `null`, so the test fails with `expected:<...text...> but was:<null>` and gives no hint that it's a threading/timeout issue rather than a generation bug. The failure is deterministic and reproducible across reruns, and it is not model-content-specific — it is purely a property of the test root's `accessMode`.
