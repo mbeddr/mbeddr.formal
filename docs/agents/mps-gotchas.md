@@ -10,6 +10,355 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## No MCP node tool deletes a *root* node — use a console `#instances(...).where(...).forEach(n -> n.delete)` (2026-10-12)
+
+`mps_mcp_update_node` `SET CHILD` without `childJson` deletes a *child*, but on a root it fails with
+"has no parent (it might be a root node)", and no other `mps_mcp_*` node tool deletes roots. Working
+route: insert a console `BLExpression` `#instances(<RootConcept>).where({it => it.name.equals("X")}).forEach({n => n.delete; })`
+via `mps_mcp_insert_console_command_from_json` and run it with `mps_mcp_run_console_command`
+(`forEach`, not `refactor`, so no confirmation dialog stalls it). Afterwards
+`mps_mcp_search_root_node_by_name` may still list the deleted root (stale index) — confirm with
+`mps_mcp_print_node` on its reference, which returns `NOT_FOUND`.
+
+## Retargeting a child/reference link to an incompatible concept leaves existing uses silently invalid — the checkers report nothing (2026-10-12)
+
+After changing `SysMLv2PartDefinition.specializes` from `SysMLv2PartDefinitionRef[0..n]` to
+`SysMLv2ItemDefinitionRef[0..n]` (`mps_mcp_alter_structure UPDATE_CONCEPT_CHILD`, clean rebuild,
+`mps_mcp_reload_all`), `mps_mcp_check_root_node_problems` still reported **no problems** on: existing
+model nodes holding now-unassignable `SysMLv2PartDefinitionRef` children in that role, and
+BaseLanguage code doing `pd.specializes.add(x)` with `x : node<SysMLv2PartDefinitionRef>`.
+Nothing flagged it; it would only have surfaced at runtime/in tests.
+
+**How to apply:** after retargeting a link, don't rely on the checkers — enumerate the affected uses
+yourself (scan `print_node` deep dumps for the old target concept/feature ids in the relevant role, in
+language aspects, importer/solution code, sandbox and test fixtures) and fix each one explicitly; then
+run the tests.
+
+## A grammarcells `FlagCell` inside an `OptionalCell` hijacks the optional's visibility — its `renderingCondition` is ignored (2026-10-11)
+
+Putting a `com.mbeddr.mpsutil.grammarcells` `FlagCell` (e.g. `flag{ conjugated }` rendering `~`) inside an
+`OptionalCell`'s option collection — `optional [> : flag{ conjugated } % type % <]` — makes the whole
+optional render only when the *flag property* is true, even though the optional has an explicit
+`renderingCondition` (`node.type != null`). Nodes with a type but `conjugated == false` silently lose
+the `: Type` segment in the editor projection; `check_root_node_problems` reports nothing and generated
+text is unaffected, so only the projection (`print_node` PLAIN TEXT on a sandbox node) shows it.
+
+**How to apply:** don't nest a `FlagCell` inside an `OptionalCell`. For an optional marker inside an
+optional segment, use a plain `CellModel_Constant` with its own `renderingCondition` on the boolean, and
+expose the boolean for editing in the inspector (or via an intention) instead.
+
+## Re-inserting a `print_node` dump can materialise style-item flags the original didn't store (2026-10-11)
+
+Cloning an editor root by converting its `print_node` JSON into a blueprint and inserting it
+(`mps_mcp_insert_root_node_from_json`) produced a `PunctuationLeftStyleClassItem` with `flag = "true"`
+where the original node had no `flag` property at all — so the clone rendered `Name{` while the original
+rendered `Name {`. The blueprint itself did not contain `flag`; the insert populated it.
+
+**How to apply:** after cloning an editor (or any root carrying style items) via blueprint, diff the
+clone's compact tree against the original's and compare the editor projection of a sample node; clear
+stray properties with `mps_mcp_update_node` `SET PROPERTY` `[ref, "flag", null]`.
+
+## Snapshotting a node as a JSON blueprint (to delete-and-later-reinsert it) must use the plain **name**, not the copied `targetReference`, for any `VariableReference`/`ForEachVariableReference` whose declaration lives in the same snapshot (2026-10-12)
+
+When splitting one git history into several commits by temporarily removing a feature from the live
+model, snapshotting it as a `print_node` dump, and later re-inserting that dump as a fresh blueprint
+(`mps_mcp_insert_root_node_from_json` / `ADD CHILD`), a generic "dump → blueprint" transform that
+copies every reference's `targetReference` verbatim silently breaks any `VariableReference` (or
+`ForEachVariableReference`) whose target declaration (a local variable, parameter, or foreach
+variable) is *itself* part of the same snapshot. A fresh insert always allocates new persistent ids
+for the whole subtree — including that declaration — so the copied old id in the reference goes
+dangling. `check_root_node_problems` does **not** catch this (the tree is structurally well-formed);
+it only surfaces as a visibly blank operand in the generated Java (e.g. `if ( != null)`) or in a
+`mps_mcp_print_node` plain-text dump, since the renderer prints nothing for an unresolved reference
+target rather than erroring.
+
+**How to apply:** when building a generic snapshot-to-blueprint transformer for this purpose, for
+`VariableReference.variableDeclaration` and `ForEachVariableReference.variable` specifically, emit
+`{"role": ..., "target": "<plain name>"}` — the same plain-name auto-resolution the insert tools
+already support for "an unambiguous local ref" — instead of the node-id form, so each reference
+re-resolves by name against whichever sibling node the same insert just (re)created, regardless of
+its new id. Keep using the real persistent id (`targetReference`) for every other reference role
+(concepts, methods, links, interfaces) whose target is *not* being recreated in the same batch — the
+plain-name trick only matters for intra-subtree self-references.
+
+## `mps_mcp_create_root_node`'s `NodesTestCase` default `accessMode` isn't `"none"` — a test calling an async engine (e.g. `TextGeneratorEngine`) deadlocks for exactly 30s and reports the result as `null` (2026-10-12)
+
+A `NodesTestCase` root created via `mps_mcp_create_root_node` (no explicit `accessMode` property set) does **not** default to `accessMode="none"` the way a hand-authored one in the IDE typically does. Left at its actual default, the generated test body runs entirely inside `BaseTestBody.runWithinCommand` — on the EDT, holding the write lock — for the whole method, not just mutating statements. A test that calls a helper wrapping an async engine with its own worker-thread pool (e.g. `jetbrains.mps.text.TextGeneratorEngine.generateText(model)`, returning a `Future<TextGenResult>` that the helper blocks on via `.get(30, TimeUnit.SECONDS)`) then hits the exact deadlock described below ("self-deadlocks ... EDT holds the write lock"): the worker thread can never get the read permit it needs, the EDT is blocked in `.get()` waiting for it, and after exactly 30 seconds `FutureTask.get` throws `TimeoutException` (no message) — which a catch-and-return-`e.getMessage()` helper (as `RoundtripTestUtils.generateText` does) turns into a plain `null`, so the test fails with `expected:<...text...> but was:<null>` and gives no hint that it's a threading/timeout issue rather than a generation bug. The failure is deterministic and reproducible across reruns, and it is not model-content-specific — it is purely a property of the test root's `accessMode`.
+
+**How to apply:** after `mps_mcp_create_root_node` for a `NodesTestCase` that will call a roundtrip/textgen helper (or any other async-engine-backed utility), explicitly `SET PROPERTY accessMode = "none"` on the root before adding test methods — don't assume the tool's default matches what a same-shaped existing test (copied by hand in the IDE) already has. Confirm by comparing `print_node` on your new root against a known-good sibling test root's `accessMode` value rather than assuming parity. Once set to `"none"`, the existing production-utility pattern (mutating calls wrapped in their own `command`+`invokeAndWait`, the async-engine call wrapped only in `read action{}`) runs correctly off-EDT with no further changes needed.
+
+## A `LinkDeclaration`'s `metaClass`/`sourceCardinality` enum properties silently stay at their default when set via a guessed encoded value (2026-10-12)
+
+Writing a JSON blueprint (or `mps_mcp_update_node` `SET PROPERTY`) for `jetbrains.mps.lang.structure.structure.LinkDeclaration`'s `metaClass` or `sourceCardinality` property using a guessed `"<prefix>/<member>"` string (e.g. `"fLJjDmT/aggregation"`, `"fLJekj5/_0__1"` — copying the *shape* of a value seen in a `print_node` dump of a different link) does not error. The insert/update call reports success, but the property silently reverts to its **default** (`aggregation` for `metaClass`, `_0__n` for `sourceCardinality`) instead of taking the intended value — there is no feedback that the write was rejected. This surfaces much later as a confusing editor/constraint error on an unrelated node (e.g. `CellModel_RefCell`/`CellModel_RefNode` reporting "multiple cardinality link is not applicable" or "out of search scope" on a link that looks, from its own `print_node` output, like it should be fine).
+
+**Root cause (partially understood):** these two properties are plain Java enums, not model-level `EnumerationDeclaration`s, so their persistent encoding isn't a freely-composable `<enumId>/<memberName>` pair the way a custom MPS enum's is — guessing the prefix from one member's dump and reusing it for another member of the same enum does not reliably work. `print_node` **omits an enum property from its output entirely when the stored value equals the datatype's default** — so after a failed/reverted write, the property simply vanishes from the dump rather than showing the wrong value, which looks deceptively like "nothing is set, must still need to be added" rather than "this was actively reverted."
+
+**How to apply:** set these two properties via `mps_mcp_update_node` `SET PROPERTY` using the **plain enum member name** as the value — `"reference"` / `"aggregation"` for `metaClass`, `"_0__1"` / `"_1"` / `"_0__n"` / `"_1__n"` for `sourceCardinality` — not a guessed prefixed string, and not through the initial JSON blueprint if avoidable. After writing, don't trust an unchanged `print_node` dump as confirmation — re-run `mps_mcp_check_root_node_problems` on a node that actually *uses* the link (an editor cell, a behavior/textgen access) to confirm the cardinality/kind took effect, since a correctly-defaulted property and a silently-reverted one both read the same way in isolation.
+
+## `command { … }` / `undo-transparent command { … }` statements inside a JUnit-launched `NodesTestCase` body require the EDT and throw off a pooled test thread — wrap the model-mutating call behind a hand-written utility that hops via `invokeAndWait` (2026-10-12)
+
+A `NodesTestCase` test method's body (with `accessMode="none"`, the common case for tests that otherwise self-wrap their own model access) runs on a JUnit worker thread, not the EDT. Writing the mutation directly inline as a DSL `command { ... }` or `undo-transparent command { ... }` block (`jetbrains.mps.lang.access.structure.ExecuteCommandStatement` / `ExecuteTransparentCommandStatement`) fails at runtime with `com.intellij.openapi.diagnostic.RuntimeExceptionWithAttachments: Access is allowed from Event Dispatch Thread (EDT) only` — both statement kinds assume they're invoked already on EDT; neither hops there itself. Setting the **test case's own** `accessMode` property to `"command"` does not fix this either — it does not visibly change the generated test body's threading at all in this MPS version. A plain `read action { ... }` block (`ExecuteLightweightCommandStatement`), by contrast, works fine off-EDT for pure reads (lightweight read locks don't require EDT) — so reads and writes need different handling.
+
+**How to apply:** for a test that must mutate a model (e.g. calling an importer/reifier utility) from a pooled JUnit thread: (1) put the mutating call in a **hand-written static Java utility method** (not inline in the test body) that itself does `ApplicationManager.getApplication().invokeAndWait(new Runnable() { public void run() { command with proj.getRepository() { <the actual mutation>; } } })` — i.e. explicitly hop to EDT via `invokeAndWait` *before* opening the command, mirroring the existing pattern in this repo's own `TestUtils.parseFileIntoModel`; (2) the anonymous `Runnable`'s overridden `run()` method needs explicit `public` visibility or MAKE fails with "Trying to assign weaker privileges"; (3) back in the test body, call that utility method directly (safe off-EDT) and then wrap any subsequent bare navigation/assertions over the model in a `read action` block instead of leaving them unwrapped, since even read-only navigation throws `IllegalModelAccessError: You can read model only inside read actions` outside of one. Key JDK/platform refs for building the `invokeAndWait` call by hand: `498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)/~ApplicationManager.getApplication%28%29`, `~Application.invokeAndWait%28java.lang.Runnable%29`, and the JDK's `~Runnable` / `~Object.<init>%28%29` for the anonymous class shell.
+
+## `mps_mcp_parse_java_and_insert` silently mis-parses `string`/`node<C>`/`x:C` as unresolved plain-Java types instead of erroring (2026-10-12)
+
+Writing MPS-smodel-flavored syntax directly in the `code` string passed to
+`mps_mcp_parse_java_and_insert` — the lowercase `string` primitive keyword, a `node<C>` generic
+local-variable type, or a bare `x:C` strict-cast expression — does **not** fail the call and does
+**not** produce the intended smodel concept. The parser treats all three as plain-Java constructs it
+doesn't recognize and inserts a structurally-valid-looking but semantically broken tree: `string`
+becomes a `ClassifierType` referencing an unresolved class literally named `string`; `node<C>`
+becomes a `ClassifierType` with an unresolved `node` classifier and `C` as a bogus type parameter;
+`x:C` inside an argument list gets swallowed into an `UnknownMethodReference`/`UnknownNew` shell with
+the real operand buried as a child. The call itself reports success with zero or only cosmetic
+"problems" at insert time — the breakage only shows up as a wall of `"Unresolved reference"` /
+`"?no classifier?"` / `"Abstract concept instance detected"` errors from a **subsequent**
+`mps_mcp_check_root_node_problems` call, which makes it easy to misdiagnose as a reference-fixup
+problem rather than a parse problem. This reproduces even in a method body that successfully used
+these exact smodel idioms when inserted via hand-built JSON earlier (e.g. editing an existing
+`node<SysMLv2Package> pkg = new node<SysMLv2Package>();` local is no evidence the *parser* can
+produce that shape — it may have been JSON-authored).
+
+**How to apply:** before calling `mps_mcp_parse_java_and_insert`, mentally split the method into (a)
+pure-Java control flow / `ctx.xxx()` navigation / `throw`/`if` — safe to parse as-is — and (b) any
+line that declares a `node<C>`/`nlist<C>`/`node-ptr<C>` local, assigns an smodel property/link
+(`x.name = ...`), or writes an `x:C`/`x as C` cast. For (b), either use `String`/`Object` as an inert
+placeholder in the parsed skeleton and patch the specific `LocalVariableDeclaration.type` /
+`.initializer` / `DotExpression.operation` children afterward via `mps_mcp_update_node` (`SET
+CHILD`), or skip the parser entirely for that statement and hand-build it as JSON per
+`mps-model-manipulation`'s `references/variable-declarations.md` (`SNodeType`/`SNodeCreator`) and
+`references/property-and-mutation-ops.md` (`SPropertyAccess`, `SLinkListAccess`,
+`AddElementOperation`). After patching, re-run `mps_mcp_check_root_node_problems` — a clean result
+confirms the swap landed on every broken node, not just the first one found.
+
+## `NodesTestCase.accessMode="command"` self-deadlocks a test that blocks on an async engine's `Future.get()` — EDT holds the write lock the async worker needs a read permit for (2026-10-10)
+
+A `SimpleNodeTest` with `accessMode="command"` runs its **entire method body** on the EDT under
+the write lock (`ExecuteCommandStatement`/`command{}` semantics applied to the whole test, not just
+a block inside it). If that body calls into an API that does its own work asynchronously on worker
+threads and then blocks the calling thread waiting for the result — e.g.
+`jetbrains.mps.text.TextGeneratorEngine.generateText(model)` returns a `Future<TextGenResult>` and
+the test does `.get(timeout, unit)` — the test freezes MPS solid: the EDT (holding the write lock)
+blocks on the future; the engine's worker thread (`textgen-thread-N`) can never acquire the read
+permit it needs to do its work, because the write lock it's waiting to be released is held by the
+very EDT thread that's blocked waiting for it. Confirmed via thread-dump analysis (3-thread cycle:
+`AWT-EventQueue-0` → `Future.get` → `textgen-thread-1` → blocked acquiring read permit → never
+released because the EDT never reaches the point of releasing the write lock). Compiles clean,
+`check_root_node_problems` passes, only a live run hangs — so it surfaces late and looks like "MPS
+froze" with no obvious cause.
+
+**How to apply:** for a `NodesTestCase` method that both (a) mutates/creates nodes and (b) calls an
+async engine that does its own locking internally, don't put the whole method under
+`accessMode="command"`. Instead set `accessMode="none"` and wrap each concern in the narrowest
+correct primitive by hand:
+- Mutating statements (anything needing a **write** action, e.g.
+  `TemporaryModels.getInstance().createEditable(...)`, `SysMLv2Importer.importText(...)`,
+  `TemporaryModels.getInstance().dispose(...)`) go inside a plain `command { ... }` block — but
+  `ExecuteCommandStatement` asserts `ThreadingAssertions.assertEventDispatchThread`, so when the
+  surrounding `accessMode="none"` test runs on a background pooled thread (not the EDT), wrap the
+  whole `command{}` block in
+  `ApplicationManager.getApplication().invokeAndWait(new Runnable() { public void run() { command { ... } } });`
+  (plain Java via `mps_mcp_parse_java_and_insert`, needs a model dependency on
+  `498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)` for
+  `ApplicationManager` — find it with `mps_mcp_search_root_node_by_name(scope: "all")`, since
+  `mps_mcp_search_concepts` doesn't search Java stub classes). MPS's generator handles the Java
+  effectively-final-capture requirement automatically — no manual array-holder workaround needed.
+- A call into an async engine that itself only needs a **read** lock (like
+  `TextGeneratorEngine.generateText`, which does synchronous read-access work before dispatching to
+  worker threads that take their own read actions) goes inside `read action { ... }`
+  (`ExecuteLightweightCommandStatement`) instead — this maps to `runReadAction`, which does **not**
+  require the EDT, so it needs no `invokeAndWait` wrapping and can run directly from the
+  `accessMode="none"` test's background thread.
+- Declare the result variable (`string generateText;`) outside the `read action` block with no
+  initializer, then assign it inside — `ExecuteLightweightCommandStatement`'s body is a statement
+  list, not an expression, so it can't be used as an initializer directly.
+
+The general rule: `command{}` (write lock) is EDT-only; `read action{}` (read lock) works from any
+thread; `accessMode="command"` on the whole test method is only safe when nothing in the body ever
+blocks waiting on another thread that itself needs a lock the EDT is holding.
+
+## `de.itemis.mps.compare`'s `assert node equals` crashes with an unrelated `IllegalModelAccessError` when the compared nodes genuinely differ — the crash is a plugin bug, not a clue; go find the real mismatch (2026-10-12)
+
+When `AssertNodeEquals` ("`assert node equals X and Y with options {...}`", surfaced via a shared
+helper like `TestUtils.checkFirstRoot`) finds its two operands **unequal**, it tries to render a
+side-by-side diff view (`DiffView.showNonEditibleDiff` → `cloneNode` → `addToTempModel` →
+`TemporaryModels.createEditable`) to produce a nicer failure message. Under a headless/batch JUnit
+run (not the interactive IDE), that diff-rendering path itself crashes with
+`jetbrains.mps.smodel.IllegalModelAccessError: You can write model only inside write actions` —
+because creating the temp model for the diff view needs a write action, but the comparison runs
+inside a `read action`. This exception **replaces** the real `ComparisonFailure` you'd otherwise
+get, so the stack trace tells you nothing about what actually differs — it only tells you that the
+two nodes are NOT equal (the crash path is only reached on inequality; equal comparisons never hit
+it, confirmed by other tests using the identical helper passing cleanly).
+
+**How to apply:** don't debug the stack trace itself — it's a dead end. Temporarily replace the
+`assert node equals ...` call with manual field-level `assert ... equals ...` statements (resolve
+the actual node via `model.roots(C).first` etc., same as the pre-`de.itemis.mps.compare` style) to
+locate which property/child actually differs, fix the fixture or the importer, then restore the
+`assert node equals ...` form once the real mismatch is fixed — the crash disappears once the nodes
+are actually equal. One common root cause specific to this plugin's idiom (see
+`docs/idioms/structural-node-equality-via-test-fixture.md`): the `TestNodeAnnotation` label was
+attached to the wrong node — e.g. a nested child instead of the root the comparison helper actually
+resolves — so the two sides being compared are different *concepts* entirely, not just different
+property values.
+
+## `node.linkList.add new(C)` (`LinkList_AddNewChildOperation`) rejects an `nlist<...>`-typed parameter even though its runtime type matches — use plain `.add(existingNode)` instead when the list came in as a parameter (2026-10-11)
+
+`LinkList_AddNewChildOperation` (`node.someLink.add new(ConcreteConcept)`) structurally requires its
+*operand* to be a literal `SLinkListAccess`-rooted `DotExpression` (`parentNode.someLink`) — not just
+anything whose MPS type happens to be `nlist<X>`. Passing an `nlist<ISomeInterface>` *parameter*
+(received from a caller, e.g. for a recursive helper that appends into whichever container the
+caller passed down) into `.add new(C)` fails `check_root_node_problems` with "Error: operation is
+not applicable to nlist<ISomeInterface>", even though the parameter's declared type is exactly the
+collection type the operation nominally targets.
+
+**How to apply:** when a list to append into is received as an `nlist<I>` parameter (rather than
+accessed inline via `parentNode.link`), don't try to create-and-attach in one step with `add new`.
+Instead: build the child node by itself (`new node<C>()` — note `SNodeCreator` must be wrapped in a
+`GenericNewExpression`, since it's an `AbstractCreator`, not an `Expression`, despite how the
+`mps-model-manipulation` skill's `property-and-mutation-ops.md` phrases it), set its properties and
+recurse into its own children while it's still detached, then attach it at the end with the plain
+collections `.add(childNode)` (`AddElementOperation`) — which works fine on an `nlist<I>` received as
+a parameter, since it's an ordinary collections append rather than the structurally-constrained
+create-and-attach sugar.
+
+## TextGen's `indent buffer` emits two spaces per depth level, not a tab (2026-10-11)
+
+The `mps-aspect-textgen` skill's `indentation-model.md` mental-model diagram states `indent buffer`
+emits `"\t" × buffer`. In practice (confirmed by a failing round-trip assertion — expected a literal
+`\t`, actual output had two spaces per nesting level) the default indentation unit is **two spaces**,
+not a tab character. The depth-counter semantics (`with indent`/`increase depth`/`decrease depth`
+only move the counter; `indent buffer` is what actually emits whitespace) are otherwise accurate —
+only the specific character(s) emitted per depth level is wrong in that doc.
+
+**How to apply:** when hand-authoring a fixture string that must byte-exact-match generated text
+(e.g. a round-trip test comparing `generateText(parse(fixture))` against `fixture` itself), use two
+spaces per nesting level, not `\t` — or better, generate the fixture once via the importer/textgen
+pipeline and copy the actual output into the test, rather than hand-guessing the whitespace.
+
+## `BTestCase` (plain JUnit) can't create/manipulate live `SNode`s — core platform singletons are null in its run harness; use `NodesTestCase` instead (2026-10-10)
+
+A `BTestCase` test method that creates an actual MPS node at runtime — even a trivially detached
+one via plain `new node<C>()`, or a model-attached one via `model.new root node<C>()` — fails with
+a `NullPointerException` when run via the "JUnit Tests" run configuration, pointing at a `null`
+platform singleton:
+- Detached creation (`SNodeCreator`/`new node<C>()`): `NodeIdentityComponent.getInstance()` returns
+  null inside `SModelOperations.createNewNode`.
+- Model-attached creation (`Model_CreateNewRootNodeOperation`) needs a real `SModel` operand. Even
+  obtaining one via `jetbrains.mps.smodel.MPSModuleRepository.getInstance()` (passed as the `repo`
+  child of a `ModelReferenceExpression` to resolve a model by name/stereotype) doesn't help — the
+  singleton itself resolves to something whose internal repository field is still `null`
+  (`ModuleRepositoryFacade.getModelsByName` NPEs on `this.myRepo`).
+
+Both are symptoms of the same cause: **the "JUnit Tests" harness for a plain `BTestCase` does not
+bootstrap the full MPS platform** (no live module/model repository, no node-identity service) —
+consistent with `BTestCase` being documented for testing *hand-written Java/Kotlin runtime code*,
+not for exercising smodel/node-manipulation logic. Compiling and even `check_root_node_problems`
+pass cleanly; only the actual JUnit run fails, so this surfaces late.
+
+**How to apply:** for any test that creates, inserts, or otherwise manipulates a real `SNode`/
+`SModel` at runtime (e.g. testing an importer, a refactoring, a generator utility invoked
+standalone), use **`NodesTestCase`** (`testMethods` → `SimpleNodeTest`, not `TestMethodList` →
+`TestMethod`) instead of `BTestCase` — its run harness does properly initialize these platform
+services, confirmed by the identical node-creation statements (including the same
+`ModelReferenceExpression`/`MPSModuleRepository.getInstance()` pattern for resolving a model by
+name) succeeding there with no changes beyond the surrounding test-case shape. Reserve `BTestCase`
+for tests that only call plain Java/library code with no MPS model interaction (e.g. an ANTLR
+parser's own `getNumberOfSyntaxErrors()` — ordinary Java objects, no `SNode` involved).
+
+## `mps_mcp_parse_java_and_insert` in `child` mode can silently produce a detached orphan instead of attaching, for an `Expression` role the parser doesn't natively recognize (2026-10-10)
+
+Calling it with `mode: "child"` targeting an optional (`0..1`) `Expression`-typed role that isn't
+plain-Java-shaped (e.g. `ModelReferenceExpression.repo`, which semantically wants an `SRepository`
+expression) can return a success envelope whose own fields already reveal the problem —
+`"isRoot": true` with empty `parentReference`/`modelReference`/`moduleReference` — meaning the
+parsed expression was never actually spliced into the requested slot. `check_root_node_problems`
+on the real root then shows the intended parent's role as still empty, while the "inserted" node
+floats disconnected (and may not even persist — re-querying it by the reference returned in the
+tool's own response can come back `NOT_FOUND`).
+
+**How to apply:** don't trust a `mode: "child"` insert at face value for an uncommon `Expression`
+slot — check the response's own `isRoot`/`parentReference` fields (a real child attachment has
+`isRoot: false` and a non-empty `parentReference`). If it looks orphaned, redo the insert as a
+plain `mps_mcp_update_node ADD CHILD` with a hand-built JSON blueprint instead (reusing the
+same resolved `classConcept`/`baseMethodDeclaration` refs from the orphan's own printout) — that
+path attaches reliably.
+
+**Addendum:** the returned `isRoot: true` node and the node that actually lands in the tree can be
+two *different* nodes entirely — not just "the reported node is a disconnected copy of what you
+wanted." Chaining a `mode: "replace"` on a multi-segment `DotExpression` (e.g. replacing
+`x.getBytes().toString()` with `new String(x.getBytes())`) returned an orphaned `UnknownNew`, yet
+the real parent slot ended up correctly holding a `GenericNewExpression` — yet that real
+`ClassCreator` had an *empty* `actualArgument` list instead of the parsed argument. Retrying with a
+`mode: "child"` insert targeting `actualArgument` again reported another orphaned
+`UnknownInstanceMethodCall`, yet the real slot this time ended up with a **correctly-resolved**
+`DotExpression` argument chain. Net effect: never trust either the reported ref or a single
+before/after diff — after any insert into an ambiguous `Expression` slot, re-print the *actual*
+parent node (not the tool's returned ref) and inspect its real children/references before deciding
+whether to redo anything; what's broken may not be what the response implies is broken (e.g. here
+the real bug ended up being a wrong overload (`String()` instead of `String(byte[])`) picked for
+`ClassCreator.baseMethodDeclaration`, fixed with a plain `SET REFERENCE`, not a redo of the insert).
+
+## A `java_classes` stub model bakes in classifier refs as of its *first* scan — adding a dependency afterward doesn't retroactively fix them (2026-10-10)
+
+Wrapping a third-party jar as a `java_classes` modelRoot (the `docx4j.lib`/`plantuml.lib` pattern:
+`<modelRoot type="java_classes"><sourceRoot location="foo.jar"/></modelRoot>` + a matching facet
+`<library>` entry) only resolves the jar's own cross-references (e.g. a method parameter typed
+`java.lang.String`) against whatever the hosting module already depended on **at the moment the jar
+was first scanned**. Creating the solution, adding the jar, and reloading *before* also adding the
+`JDK` dependency leaves every JDK-typed reference inside the stub model permanently serialized as
+`targetReference: "null/~String"` (`print_node` on the affected member shows a child
+`ClassifierType` named literally `"?no classifier?"` with `targetReference: "null/~String"`). This
+then surfaces downstream as confusing, seemingly-unrelated typesystem errors on code that merely
+*calls* the jar's methods — `"Error: String is not a subtype of ?no classifier?"`,
+`"Error: Incompatible method signature"` — and even further downstream, methods declaring
+`throws SomeRuntimeException` (ANTLR4's generated parser rule methods declare
+`throws RecognitionException`, which genuinely extends `RuntimeException`) get wrongly flagged
+`"Error: uncaught exceptions: ..."`, because the typesystem's checked-exception exemption also
+depends on correctly resolving the exception class's supertype chain — which fails for the same
+reason. Merely adding the missing dependency (e.g. `JDK`) afterward and calling
+`mps_mcp_reload_all` does **not** fix already-baked-in stub references — the stub model isn't
+re-scanned just because the owning module's dependency list changed.
+
+**How to apply:** before wrapping any jar as `java_classes`, add every dependency the jar's own
+*public API surface* needs to resolve (at minimum `JDK`, mirroring existing `*.lib` solutions in
+this repo) to the hosting module **first**, then add the `java_classes` modelRoot + `<library>`
+entry, then `reload_all` once. If you discover the dependency was missing after the fact: remove
+the `java_classes` modelRoot + `<library>` entries entirely, `reload_all` (clears the stale stub
+model), re-add them now that the dependency is present, `reload_all` again. Verify with
+`mps_mcp_print_node(deep=true)` on a representative stub member before trusting it — look for any
+`"?no classifier?"` node or a `targetReference` starting with `"null/"`. This compounds with the
+existing "repeated `java_classes` churn can freeze MPS" gotcha below — converge on the *dependency
+list* first (not just the jar list) before doing this remove/re-add cycle, so it only needs to
+happen once.
+
+## A structural MCP write can pop a confirmation dialog that blocks every project-model MCP call until dismissed — not necessarily a genuine freeze (2026-10-10)
+
+`mps_mcp_create_module`, `mps_mcp_module_dependency` (ADD), and a `java_classes`/`<library>`
+modelRoot hand-edit followed by `mps_mcp_reload_all` can each pop an MPS confirmation dialog (seen:
+after creating a new Solution module; after adding a module dependency) that blocks the IDE's
+single read/write lock — every subsequent MCP call that needs the project model
+(`mps_mcp_get_project_structure`, `mps_mcp_reload_all`, `mps_mcp_print_node`, ...) times out, even
+against modules unrelated to the triggering change, **while** a call that doesn't touch the project
+model (`mps_mcp_list_open_projects`) keeps answering normally. That split — lightweight calls fine,
+project-model calls all timing out — is the signal to check for a dialog rather than assume a
+genuine hang; the existing "repeated `java_classes` churn" gotcha below describes the *other* case
+(a real freeze, confirmed by `get_project_structure` *also* timing out, which it does here too —
+the distinguishing test is whether `list_open_projects` still answers, not whether the heavier call
+times out). Restarting MPS is unnecessary in the dialog case — just ask the user to find and
+dismiss it (it can be behind the main window); the very next call then succeeds immediately.
+
+**Side effect to watch for:** if a `.msd`/`.mpl` hand-edit is made and a subsequent MCP call hits
+this dialog-wait before MPS has re-read the file from disk, MPS can flush its own (pre-edit)
+in-memory descriptor back to disk once the dialog resolves, **silently reverting the hand-edit**
+(observed: a `java_classes` modelRoot + `<library>` addition disappeared from the file, and
+`<languageVersions/>` was reset empty, after exactly this sequence). **How to apply:** after any
+`.msd`/`.mpl` hand-edit, if the following tool call times out and a dialog turns out to be the
+cause, re-read the edited file from disk once the dialog is cleared and the call succeeds — don't
+assume the edit survived; redo it if it didn't, then reload once more without interleaving other
+structural changes.
+
 ## Fast `Project` lookup from an `EditorCell`/`EditorContext` (2026-09-29)
 
 Getting an IDEA `Project` from MPS editor-aspect code — cell constructors, cell actions, editor-query
@@ -430,6 +779,13 @@ on the method-call reference itself. Treat that warning as a real, actionable si
 before running it — don't dismiss it and try anyway.
 
 ## A local-variable reference can't target a sibling declared in the same blueprint (2026-08-27)
+
+> **Superseded (2026-10-11):** no longer true with the current MCP tooling. A `VariableReference` /
+> `ForEachVariableReference` given the plain variable **name** as `target` (`{"role": "variableDeclaration",
+> "target": "superRef"}`) resolves by scope against a sibling `LocalVariableDeclaration`, `ForEachVariable`,
+> parameter, or closure parameter created in the same `ADD CHILD` / `SET CHILD` blueprint — verified by
+> inspecting the resulting `targetReference`s, which all pointed at the freshly created declarations. See also
+> the 2026-10-12 snapshot entry above, which relies on the same behavior. The text below is kept for history.
 
 When building a multi-statement method body (or console command) via a single JSON blueprint, there is
 no supported syntax for a `LocalVariableReference`/`ForEachVariableReference` to point at a
