@@ -12,6 +12,7 @@
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -78,6 +79,7 @@
   <node concept="1TIwiD" id="3PUPjB2nMR4">
     <property role="EcuMT" value="4430087627523173828" />
     <property role="TrG5h" value="SysMLv2Package" />
+    <property role="34LRSv" value="package" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="3PUPjB2nMRp" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -97,6 +99,7 @@
   <node concept="1TIwiD" id="3PUPjB2ukTG">
     <property role="EcuMT" value="4430087627524886124" />
     <property role="TrG5h" value="SysMLv2Import" />
+    <property role="34LRSv" value="import" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" />
     <node concept="PrWs8" id="3PUPjB2umRI" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />

@@ -315,3 +315,22 @@ temporarily swapping in manual field-level asserts to isolate the real mismatch.
 `mps-gotchas.md` entry ("the crash is a plugin bug, not a clue") and folded into the idiom
 write-up's step 2 (label must sit on the same node the comparison helper resolves on the actual
 side, not a nested child) so this isn't rediscovered next iteration.
+
+**Two fixes requested by the user after reviewing iteration 3 (2026-10-12), now a standing
+convention**: (1) a concept that maps directly to a SysML v2 *keyword* should set that keyword as
+its `conceptAlias` (the `jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration` property
+— shows up as the concept's display name in intentions/palettes/etc.) — set `"package"` on
+`SysMLv2Package` and `"import"` on `SysMLv2Import` (neither had one before; both were showing their
+MPS concept name). (2) a concept's **editor** should mirror the textual notation it was imported
+from, not whatever the scaffolder produced by default. `SysMLv2Package_Editor`'s hand-built cell
+layout — `constant "package" (KeywordStyle)` → `{name}` property cell → `constant "{" (ParensStyle)`
+→ indented `%content%` ref-node-list → `constant "}" (ParensStyle)` — is the reference pattern to
+follow; the scaffolded `SysMLv2Import_Editor` just showed a generic `importedName: <value>` label
+form. Rebuilt it as `constant "import" (KeywordStyle)` → `{importedName}` property cell →
+`constant ";"`, confirmed by rendering the `_040_ImportStatement` sandbox node through the editor:
+`import A::B ;` (one cosmetic nit — a space before the `;` that the package editor's
+`ParensStyle`-wrapped `{`/`}` doesn't have either, since neither cell sets an explicit no-space
+styleItem; not worth chasing down for now). **Apply both going forward**: every new
+keyword-mapped concept gets a `conceptAlias`, and every new concept's editor is hand-built to mirror
+its construct's surface syntax from the start, not left as the scaffolder's generic
+property-label-per-field layout.
