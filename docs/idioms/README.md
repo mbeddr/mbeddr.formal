@@ -26,3 +26,4 @@ aspect quirks) — not restatements of general programming wisdom.
 - [Use `command { }`, not `write action { }`, for cross-editor refresh](command-for-cross-editor-refresh.md) — the only one of the two that goes through MPS's refresh-notification machinery.
 - [Pair an alias-like interface with a `getPresentation()` override](getpresentation-override-for-alias.md) — a `text()` fallback to an alias doesn't also drive completion-menu presentation.
 - [Override one aspect of a shared `StyleClass` with a local `styleItem`](local-style-item-overrides-shared-class.md) — don't fork the shared class just to flip one item.
+- [Compare against an expected fixture node with `de.itemis.mps.compare`](structural-node-equality-via-test-fixture.md) — for a `NodesTestCase` checking structure, diff a labeled `TestNode` fixture against the actual result in one assertion instead of asserting field-by-field.
