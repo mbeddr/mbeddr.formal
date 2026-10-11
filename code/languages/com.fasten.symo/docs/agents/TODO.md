@@ -182,3 +182,68 @@ initialize those services. The test resolves its own containing model at runtime
 stay idempotent (verified: ran twice back to back, model root count unchanged at 2). Registered as
 JUnit config `_020_test_sysmlv2_import_empty_file`, alongside the existing
 `_010_test_sysmlv2_toolchain` — both green.
+
+**Between iteration 1 and 2 (2026-10-10/11)**: the round-trip test deadlocked MPS
+(`accessMode="command"` blocking on `TextGeneratorEngine`'s async `Future.get()` while holding the
+EDT write lock the engine's own worker needed — see the `mps-gotchas.md` entry) and separately hit
+a `byte[].toString()` bug in the round-trip helper. Both fixed; `accessMode` moved to `"none"` with
+explicit `command{}`/`read action{}` wrapping. The user then refactored the test-support code for
+reuse: `TestUtils.parseFileIntoModel(content, fileName, proj): model` /
+`TestUtils.disposeTemporaryModel(model, proj)` hide the `invokeAndWait`+`command` boilerplate, and
+`RoundtripTestUtils.parseTextIntoModelAndGenerateText(content, fileName, proj): string` composes
+import + `read action` + generate + dispose into one call — iteration 2's tests build directly on
+these. (One bug introduced by that refactor was caught and fixed while building on it:
+`parseFileIntoModel` had hardcoded `""`/`"EmptyFile"` instead of using its own `content`/`fileName`
+parameters — innocuous while only the empty-file test existed, since both literals happened to
+match, but would have silently fed the empty-file text into every iteration-2 test otherwise.)
+
+**Iteration 2 done (2026-10-11) — `package` declarations, recursive**: new concept `SysMLv2Package`
+in `com.symo.sysmlv2.baselan.structure` (implements `INamedConcept` + `ISysMLv2FileContent`, has its
+own `content: 0..n ISysMLv2FileContent` link — same shape as `SysMLv2File`, enabling arbitrary
+nesting for free). Importer: `SysMLv2Importer.importPackageBodyElement(PackageBodyElementContext,
+nlist<ISysMLv2FileContent> container)` — a single self-recursive private static method, walking
+`packageMember → definitionElement → package_()` (note the trailing underscore: `package` is a Java
+keyword, so the vendored ANTLR grammar's ANTLR-generated ctx accessor is `package_()`, not
+`package()` — found via `javap` on the vendored jar's `.class` files, since no readable parser
+source is checked in). Builds the `SysMLv2Package` node via plain `SNodeCreator` (wrapped in
+`GenericNewExpression` — it is a *creator*, not an `Expression`, despite the model-manipulation
+skill's `property-and-mutation-ops.md` phrasing; attaches via **plain** `container.add(pkg)`
+(`AddElementOperation`) after the node is fully built (name + recursed content), not
+`container.add new(SysMLv2Package)` (`LinkList_AddNewChildOperation`) — the latter's typesystem
+specifically requires its operand to be a literal `SLinkListAccess`-rooted `DotExpression`, so it
+rejects an `nlist<ISysMLv2FileContent>`-typed *parameter* (passed down from a caller) with
+"operation is not applicable to nlist<...>" even though the runtime type is identical; this is worth
+a `mps-gotchas.md` entry if hit again on a different concept. Scope is deliberately narrow per the
+plan agreed before implementation: only a bare `package <name> { ... }` (plain `name`, not the
+`<short> long` alias form of `identification`; no anonymous packages); everything else a
+`packageBodyElement`/`definitionElement` can produce (visibility prefixes, `elementFilterMember`,
+`aliasMember`, `importRule`, `libraryPackage`, any non-`package` `definitionElement`) throws an
+explicit `RuntimeException("Unsupported SysML v2 construct: ...")` rather than silently dropping
+content — verified by construction (visible directly in the generated Java) rather than by a
+dedicated negative test, since exercising it would require the exception to propagate back out
+through `TestUtils`'s `invokeAndWait`/`command` wrapping, which isn't currently set up for that.
+
+`SysMLv2Package_TextGen` added to the `textGen` model; `SysMLv2File_TextGen` reworked from the
+inert iteration-1 `append $list{node.content}` into an explicit `foreach` with `indent buffer`/`\n`
+per item (collections `ForEachStatement`, not the BaseLanguage one — `node.content` is an
+`SLinkListAccess`-typed sequence) — this establishes the textgen convention going forward: each
+content item's own rule emits no leading/trailing newline, and the *container* (file or package)
+loop supplies `indent buffer` before and `\n` after every item, so nesting composes without a
+stray leading blank line at the top of the file. **`indent buffer` emits two spaces per depth
+level, not a tab** as the `mps-aspect-textgen` skill's `indentation-model.md` states — discovered by
+a failing round-trip assertion (expected `\t`, actual two spaces); recorded in the root
+`mps-gotchas.md` rather than hand-editing the skill file.
+
+Sandbox: `_020_EmptyPackage` (one empty package, `pack1`) was already added by the user directly in
+the editor (noticed mid-implementation — the new `SysMLv2Package` editor was live the moment the
+structure concept + scaffold existed, and they started using it); added `_030_NestedPackage` (two
+levels, `Outer`/`Inner`) to cover recursion. Tests: new `_030_ImportPackageTest` `NodesTestCase`
+(`accessMode="none"`, same pattern as `_020_ImportEmptyFileTest`) in the same `_010_smoke_test@tests`
+model — `testImportPackage`, `testImportNestedPackage` (via `TestUtils.parseFileIntoModel` +
+`read action` + `tmp.roots(SysMLv2File).first.content.first:SysMLv2Package` chains, one `.first` per
+nesting level — undercounting by one `.first` casts the *list* instead of an *element* and fails
+typechecking with "type node<X> is not comparable with nlist<...>", not a runtime error, so it's
+caught at `check_root_node_problems` time), `testRoundtripPackage`, `testRoundtripNestedPackage` (via
+`RoundtripTestUtils.parseTextIntoModelAndGenerateText`, byte-exact against the two-space-indent
+canonical form). Registered as JUnit config `_030_test_sysmlv2_import_package` — green, alongside
+the still-green `_010_test_sysmlv2_toolchain` and `_020_test_sysmlv2_import_empty_file`.

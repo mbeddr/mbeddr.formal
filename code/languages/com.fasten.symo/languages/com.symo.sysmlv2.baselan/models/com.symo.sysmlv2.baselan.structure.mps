@@ -2,10 +2,11 @@
 <model ref="r:46502bdd-1e0c-47cf-8eed-483f76d95b20(com.symo.sysmlv2.baselan.structure)">
   <persistence version="9" />
   <languages>
+    <use id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure" version="9" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
   </imports>
   <registry>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
@@ -68,6 +69,25 @@
     <property role="EcuMT" value="4211673189923939181" />
     <property role="TrG5h" value="ISysMLv2FileContent" />
     <property role="3GE5qa" value="base" />
+  </node>
+  <node concept="1TIwiD" id="3PUPjB2nMR4">
+    <property role="EcuMT" value="4430087627523173828" />
+    <property role="TrG5h" value="SysMLv2Package" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="PrWs8" id="3PUPjB2nMRp" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="3PUPjB2nMRJ" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="1TJgyj" id="3PUPjB2nMSo" role="1TKVEi">
+      <property role="IQ2ns" value="4430087627523173912" />
+      <property role="20kJfa" value="content" />
+      <property role="TrG5h" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
   </node>
 </model>
 

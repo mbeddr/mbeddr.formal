@@ -56,6 +56,40 @@ The general rule: `command{}` (write lock) is EDT-only; `read action{}` (read lo
 thread; `accessMode="command"` on the whole test method is only safe when nothing in the body ever
 blocks waiting on another thread that itself needs a lock the EDT is holding.
 
+## `node.linkList.add new(C)` (`LinkList_AddNewChildOperation`) rejects an `nlist<...>`-typed parameter even though its runtime type matches — use plain `.add(existingNode)` instead when the list came in as a parameter (2026-10-11)
+
+`LinkList_AddNewChildOperation` (`node.someLink.add new(ConcreteConcept)`) structurally requires its
+*operand* to be a literal `SLinkListAccess`-rooted `DotExpression` (`parentNode.someLink`) — not just
+anything whose MPS type happens to be `nlist<X>`. Passing an `nlist<ISomeInterface>` *parameter*
+(received from a caller, e.g. for a recursive helper that appends into whichever container the
+caller passed down) into `.add new(C)` fails `check_root_node_problems` with "Error: operation is
+not applicable to nlist<ISomeInterface>", even though the parameter's declared type is exactly the
+collection type the operation nominally targets.
+
+**How to apply:** when a list to append into is received as an `nlist<I>` parameter (rather than
+accessed inline via `parentNode.link`), don't try to create-and-attach in one step with `add new`.
+Instead: build the child node by itself (`new node<C>()` — note `SNodeCreator` must be wrapped in a
+`GenericNewExpression`, since it's an `AbstractCreator`, not an `Expression`, despite how the
+`mps-model-manipulation` skill's `property-and-mutation-ops.md` phrases it), set its properties and
+recurse into its own children while it's still detached, then attach it at the end with the plain
+collections `.add(childNode)` (`AddElementOperation`) — which works fine on an `nlist<I>` received as
+a parameter, since it's an ordinary collections append rather than the structurally-constrained
+create-and-attach sugar.
+
+## TextGen's `indent buffer` emits two spaces per depth level, not a tab (2026-10-11)
+
+The `mps-aspect-textgen` skill's `indentation-model.md` mental-model diagram states `indent buffer`
+emits `"\t" × buffer`. In practice (confirmed by a failing round-trip assertion — expected a literal
+`\t`, actual output had two spaces per nesting level) the default indentation unit is **two spaces**,
+not a tab character. The depth-counter semantics (`with indent`/`increase depth`/`decrease depth`
+only move the counter; `indent buffer` is what actually emits whitespace) are otherwise accurate —
+only the specific character(s) emitted per depth level is wrong in that doc.
+
+**How to apply:** when hand-authoring a fixture string that must byte-exact-match generated text
+(e.g. a round-trip test comparing `generateText(parse(fixture))` against `fixture` itself), use two
+spaces per nesting level, not `\t` — or better, generate the fixture once via the importer/textgen
+pipeline and copy the actual output into the test, rather than hand-guessing the whitespace.
+
 ## `BTestCase` (plain JUnit) can't create/manipulate live `SNode`s — core platform singletons are null in its run harness; use `NodesTestCase` instead (2026-10-10)
 
 A `BTestCase` test method that creates an actual MPS node at runtime — even a trivially detached
