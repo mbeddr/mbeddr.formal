@@ -10,6 +10,30 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## No MCP node tool deletes a *root* node — use a console `#instances(...).where(...).forEach(n -> n.delete)` (2026-10-12)
+
+`mps_mcp_update_node` `SET CHILD` without `childJson` deletes a *child*, but on a root it fails with
+"has no parent (it might be a root node)", and no other `mps_mcp_*` node tool deletes roots. Working
+route: insert a console `BLExpression` `#instances(<RootConcept>).where({it => it.name.equals("X")}).forEach({n => n.delete; })`
+via `mps_mcp_insert_console_command_from_json` and run it with `mps_mcp_run_console_command`
+(`forEach`, not `refactor`, so no confirmation dialog stalls it). Afterwards
+`mps_mcp_search_root_node_by_name` may still list the deleted root (stale index) — confirm with
+`mps_mcp_print_node` on its reference, which returns `NOT_FOUND`.
+
+## Retargeting a child/reference link to an incompatible concept leaves existing uses silently invalid — the checkers report nothing (2026-10-12)
+
+After changing `SysMLv2PartDefinition.specializes` from `SysMLv2PartDefinitionRef[0..n]` to
+`SysMLv2ItemDefinitionRef[0..n]` (`mps_mcp_alter_structure UPDATE_CONCEPT_CHILD`, clean rebuild,
+`mps_mcp_reload_all`), `mps_mcp_check_root_node_problems` still reported **no problems** on: existing
+model nodes holding now-unassignable `SysMLv2PartDefinitionRef` children in that role, and
+BaseLanguage code doing `pd.specializes.add(x)` with `x : node<SysMLv2PartDefinitionRef>`.
+Nothing flagged it; it would only have surfaced at runtime/in tests.
+
+**How to apply:** after retargeting a link, don't rely on the checkers — enumerate the affected uses
+yourself (scan `print_node` deep dumps for the old target concept/feature ids in the relevant role, in
+language aspects, importer/solution code, sandbox and test fixtures) and fix each one explicitly; then
+run the tests.
+
 ## A grammarcells `FlagCell` inside an `OptionalCell` hijacks the optional's visibility — its `renderingCondition` is ignored (2026-10-11)
 
 Putting a `com.mbeddr.mpsutil.grammarcells` `FlagCell` (e.g. `flag{ conjugated }` rendering `~`) inside an

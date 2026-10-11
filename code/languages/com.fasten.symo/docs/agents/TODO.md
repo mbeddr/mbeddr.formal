@@ -800,9 +800,43 @@ Sandbox `_110_Items`; `_110_ItemsTest` (`testImportItems` — `specializes`/`;` 
 `_110_test_sysmlv2_items`. Full suite (`_020`–`_110`, 26 tests) green. The cloned item-def editor hit
 the already-recorded "re-inserted style item gets `flag=true`" gotcha again (fixed the same way).
 
-**Observation for a future refactoring**: part/attribute/port/item now each carry an identical
-definition concept, `<X>DefinitionRef` concept, behavior, ref editor/textgen, definition
-editor/textgen, reifier method and `TestUtils` wrapper — the duplication is deliberate per the
-iteration-7a decision, but at four copies a shared abstract `SysMLv2Definition` /
-`SysMLv2DefinitionRef` (with the reifier keyed on the ref's expected definition concept) would remove
-most of it. Worth deciding before adding more definition kinds (actions, states, requirements).
+**Decision (2026-10-12) on the per-kind duplication — no shared generic `Definition`/`DefinitionRef`
+abstraction.** Discussed with the user after iteration 10: a generic abstraction would buy little
+(every subconcept would still need its own narrowed `content`/`specializes` links, MPS link
+specialization can only narrow, and a generic ref would lose the structural type safety — e.g. a port
+typed by a part def — that per-kind refs give for free), and the small per-kind editors/textgens are
+already diverging (port conjugation keymap). **Guiding principle, per the user: stay close to the
+SysML v2 metamodel** so future use cases aren't blocked by drift — introduce inheritance only where
+SysML itself has it, and centralise *name-resolution logic* (reifier now, constraints scopes later,
+qualified names/imports eventually) in one generic helper the next time it is touched, rather than
+abstracting the concepts.
+
+**Iteration 10b (2026-10-12) — `SysMLv2PartDefinition extends SysMLv2ItemDefinition` (SysML
+metamodel alignment)**: per the user, mirror SysML v2 directly — part def *is an* item def. A first
+attempt via a shared `ISysMLv2ItemDefinition` interface was rejected by the user in favour of real
+concept inheritance, with the wider part body handled by a constraint (see
+`docs/idioms/narrow-inherited-content-with-marker-interface.md`):
+
+- `SysMLv2PartDefinition` now **extends** `SysMLv2ItemDefinition` and inherits its `content :
+  ISysMLv2ItemBodyContent[0..n]` and `specializes : SysMLv2ItemDefinitionRef[0..n]` (its own two links
+  were removed after migrating all sandbox/test instances onto the inherited ones — 30 children moved,
+  ids and order preserved). So a part def may specialize part *or* item defs, `item x : SomePartDef`
+  resolves (`SysMLv2ItemDefinitionRef.definition : SysMLv2ItemDefinition` accepts part defs), and
+  `reifyItemDefinitionRefs` (`m.nodes(SysMLv2ItemDefinition)`) finds part defs too.
+- `SysMLv2PartUsage` and `SysMLv2PortUsage` now also implement `ISysMLv2ItemBodyContent` (to fit the
+  inherited `content` link) plus the new marker interface `ICanBelongOnlyToSysMLv2PartDefinition`,
+  whose `canBeChild` (in the previously empty `constraints` model) reads *"if the parent is an item
+  def, it must be a part def"* — deliberately not the stricter *"parent must be a part def"*, which
+  would also forbid `port` usages nested in `port def`s (used by `_100_Ports`). Verified with a
+  temporary probe: a part usage inside an item def is reported as "cannot be child", an item usage
+  is not. `visitItemDefinition` mirrors this with an explicit "part-specific element in item
+  definition body" error (constraints don't fire on programmatic `.add`).
+- `SysMLv2PartDefinitionRef` stays for part *usage* typing (part usages must be typed by part defs).
+  `ISysMLv2PartBodyContent` now only types `SysMLv2PartUsage.content` (the unused usage-body
+  placeholder).
+- New `_110_ItemsTest.testReifyPartDefinitionIsAnItemDefinition` (part def `:>` item def, item usage
+  typed by part def). Full suite 27 tests green.
+
+Open SysML-fidelity questions, not acted on: whether SysML permits an `item def` specializing a
+`part def` (structurally accepted and resolved now); whether port usages are legal inside item defs
+(currently rejected via the marker interface — revisit if SysML allows ports on items).

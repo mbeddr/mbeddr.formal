@@ -141,27 +141,12 @@
     <property role="TrG5h" value="SysMLv2PartDefinition" />
     <property role="34LRSv" value="part def" />
     <property role="3GE5qa" value="part" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
     <node concept="PrWs8" id="3PUPjB2$P9_" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="3PUPjB2$P9C" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
-    </node>
-    <node concept="1TJgyj" id="3PUPjB2$Pa0" role="1TKVEi">
-      <property role="IQ2ns" value="4430087627526591104" />
-      <property role="20kJfa" value="content" />
-      <property role="TrG5h" value="content" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
-    </node>
-    <node concept="1TJgyj" id="6coPuU2QxV3" role="1TKVEi">
-      <property role="IQ2ns" value="7140692429570186947" />
-      <property role="20kJfa" value="specializes" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNgG7Z">
@@ -197,6 +182,12 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="TrG5h" value="multiplicity" />
       <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+    </node>
+    <node concept="PrWs8" id="6coPuU39G2L" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6coPuU39G2P" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNkRPu">
@@ -442,6 +433,12 @@
     <node concept="PrWs8" id="6coPuU2Tg28" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
     </node>
+    <node concept="PrWs8" id="6coPuU39G2T" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6coPuU39G2X" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartDefinition" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU2Tg1U">
     <property role="EcuMT" value="7140692429570900090" />
@@ -549,6 +546,12 @@
     <property role="TrG5h" value="ISysMLv2ItemBodyContent" />
     <property role="R4oN_" value="element allowed in an item definition body" />
     <property role="3GE5qa" value="base" />
+  </node>
+  <node concept="PlHQZ" id="6coPuU39G2r">
+    <property role="EcuMT" value="7140692429575209115" />
+    <property role="TrG5h" value="ICanBelongOnlyToSysMLv2PartDefinition" />
+    <property role="R4oN_" value="part-specific body element: among item definitions, may only be owned by a part definition" />
+    <property role="3GE5qa" value="part.base" />
   </node>
 </model>
 

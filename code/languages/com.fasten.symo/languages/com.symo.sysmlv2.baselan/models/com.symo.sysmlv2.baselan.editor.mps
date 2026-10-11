@@ -304,7 +304,7 @@
           <node concept="3F2HdR" id="6coPuU2QTNp" role="3EZMnx">
             <property role="2czwfN" value="false" />
             <property role="2czwfO" value="," />
-            <ref role="1NtTu8" to="5rf1:6coPuU2QxV3" resolve="specializes" />
+            <ref role="1NtTu8" to="5rf1:6coPuU36dCf" />
             <node concept="l2Vlx" id="6coPuU2QTNq" role="2czzBx" />
           </node>
         </node>
@@ -315,7 +315,7 @@
                 <node concept="2OqwBi" id="6coPuU2QTNy" role="2Oq$k0">
                   <node concept="pncrf" id="6coPuU2QTN_" role="2Oq$k0" />
                   <node concept="3Tsc0h" id="6coPuU2QTNA" role="2OqNvi">
-                    <ref role="3TtcxE" to="5rf1:6coPuU2QxV3" resolve="specializes" />
+                    <ref role="3TtcxE" to="5rf1:6coPuU36dCf" />
                   </node>
                 </node>
                 <node concept="3GX2aA" id="6coPuU2QTNB" role="2OqNvi" />
@@ -330,7 +330,7 @@
         <node concept="11L4FC" id="6coPuU2JdOg" role="3F10Kt" />
       </node>
       <node concept="3F2HdR" id="3PUPjB2$T75" role="3EZMnx">
-        <ref role="1NtTu8" to="5rf1:3PUPjB2$Pa0" resolve="content" />
+        <ref role="1NtTu8" to="5rf1:6coPuU36dCg" />
         <node concept="l2Vlx" id="3PUPjB2$T76" role="2czzBx" />
         <node concept="pVoyu" id="3PUPjB2$T77" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -1095,7 +1095,7 @@
       <node concept="1iCGBv" id="6coPuU36OEX" role="1QoS34">
         <ref role="1NtTu8" to="5rf1:6coPuU36dCk" />
         <node concept="1sVBvm" id="6coPuU36OF0" role="1sWHZn">
-          <ref role="1XX52x" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
+          <ref role="1XX52x" to="5rf1:6coPuU36dCb" />
           <node concept="3F0A7n" id="6coPuU36OF2" role="2wV5jI">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
           </node>

@@ -1659,12 +1659,12 @@
                   <node concept="3cpWsn" id="6coPuU2REwd" role="3cpWs9">
                     <property role="TrG5h" value="superRef" />
                     <node concept="3Tqbb2" id="6coPuU2REwf" role="1tU5fm">
-                      <ref role="ehGHo" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
+                      <ref role="ehGHo" to="5rf1:6coPuU36dCc" />
                     </node>
                     <node concept="2ShNRf" id="6coPuU2REwg" role="33vP2m">
                       <node concept="3zrR0B" id="6coPuU2REwi" role="2ShVmc">
                         <node concept="3Tqbb2" id="6coPuU2REwk" role="3zrR0E">
-                          <ref role="ehGHo" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
+                          <ref role="ehGHo" to="5rf1:6coPuU36dCc" />
                         </node>
                       </node>
                     </node>
@@ -1677,7 +1677,7 @@
                         <ref role="3cqZAo" node="6coPuU2REwd" resolve="superRef" />
                       </node>
                       <node concept="3TrcHB" id="6coPuU2REwu" role="2OqNvi">
-                        <ref role="3TsBF5" to="5rf1:7JKstLNkRPv" resolve="partDefinitionName" />
+                        <ref role="3TsBF5" to="5rf1:6coPuU36dCj" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="6coPuU2REwv" role="37vLTx">
@@ -1692,7 +1692,7 @@
                         <ref role="3cqZAo" node="7JKstLNi71R" resolve="pd" />
                       </node>
                       <node concept="3Tsc0h" id="6coPuU2REwD" role="2OqNvi">
-                        <ref role="3TtcxE" to="5rf1:6coPuU2QxV3" />
+                        <ref role="3TtcxE" to="5rf1:6coPuU36dCf" />
                       </node>
                     </node>
                     <node concept="TSZUe" id="6coPuU2REwE" role="2OqNvi">
@@ -1746,7 +1746,7 @@
                     <ref role="3cqZAo" node="7JKstLNi71R" resolve="pd" />
                   </node>
                   <node concept="3Tsc0h" id="7JKstLNiulz" role="2OqNvi">
-                    <ref role="3TtcxE" to="5rf1:3PUPjB2$Pa0" resolve="content" />
+                    <ref role="3TtcxE" to="5rf1:6coPuU36dCg" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="7JKstLNiul$" role="2OqNvi">
@@ -1756,7 +1756,7 @@
                       <ref role="3cqZAo" node="7JKstLNi724" resolve="childNode" />
                     </node>
                     <node concept="chp4Y" id="7JKstLNiulE" role="3oSUPX">
-                      <ref role="cht4Q" to="5rf1:6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+                      <ref role="cht4Q" to="5rf1:6coPuU36dCe" />
                     </node>
                   </node>
                 </node>
@@ -6351,6 +6351,31 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbJ" id="6coPuU3aqP9" role="3cqZAp">
+              <node concept="2OqwBi" id="6coPuU3aqPc" role="3clFbw">
+                <node concept="37vLTw" id="6coPuU3aqPf" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6coPuU37xqO" resolve="childNode" />
+                </node>
+                <node concept="1mIQ4w" id="6coPuU3aqPg" role="2OqNvi">
+                  <node concept="chp4Y" id="6coPuU3aqPi" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartDefinition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="6coPuU3aqPj" role="3clFbx">
+                <node concept="YS8fn" id="6coPuU3aqPk" role="3cqZAp">
+                  <node concept="2ShNRf" id="6coPuU3aqPm" role="YScLw">
+                    <node concept="1pGfFk" id="6coPuU3aqPo" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                      <node concept="Xl_RD" id="6coPuU3aqPp" role="37wK5m">
+                        <property role="Xl_RC" value="Unsupported SysML v2 construct: part-specific element (part/port usage) in item definition body" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbF" id="6coPuU37xri" role="3cqZAp">
               <node concept="2OqwBi" id="6coPuU37xrk" role="3clFbG">
                 <node concept="2OqwBi" id="6coPuU37xrn" role="2Oq$k0">
@@ -8360,7 +8385,7 @@
                           </node>
                           <node concept="2SmgA7" id="6coPuU37zNw" role="2OqNvi">
                             <node concept="chp4Y" id="6coPuU37zNx" role="1dBWTz">
-                              <ref role="cht4Q" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
+                              <ref role="cht4Q" to="5rf1:6coPuU36dCb" />
                             </node>
                           </node>
                         </node>
@@ -8401,7 +8426,7 @@
                       <node concept="1uHKPH" id="6coPuU37zNX" role="2OqNvi" />
                     </node>
                     <node concept="3Tqbb2" id="6coPuU37zNY" role="1tU5fm">
-                      <ref role="ehGHo" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
+                      <ref role="ehGHo" to="5rf1:6coPuU36dCb" />
                     </node>
                   </node>
                 </node>

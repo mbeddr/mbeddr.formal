@@ -65,10 +65,7 @@
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
       </concept>
-      <concept id="4430087627526591053" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinition" flags="ng" index="3ZUotO">
-        <child id="7140692429570186947" name="specializes" index="3xKGGH" />
-        <child id="4430087627526591104" name="content" index="3ZUouT" />
-      </concept>
+      <concept id="4430087627526591053" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinition" flags="ng" index="3ZUotO" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -113,13 +110,13 @@
     </node>
     <node concept="3ZUotO" id="7JKstLNkCNV" role="2h0jOs">
       <property role="TrG5h" value="Car" />
-      <node concept="8GF0z" id="7JKstLNkCNW" role="3ZUouT">
+      <node concept="8GF0z" id="7JKstLNkCNW" role="3w00ZY">
         <property role="TrG5h" value="engine" />
         <node concept="8CKM2" id="7JKstLNlN8h" role="8CKLj">
           <property role="8CKM3" value="Engine" />
         </node>
       </node>
-      <node concept="8GF0z" id="6coPuU2Q2BK" role="3ZUouT">
+      <node concept="8GF0z" id="6coPuU2Q2BK" role="3w00ZY">
         <property role="TrG5h" value="engines" />
         <node concept="8CKM2" id="6coPuU2Q2BL" role="8CKLj">
           <property role="8CKM3" value="Engine" />
@@ -129,7 +126,7 @@
           <property role="8EhVk" value="2" />
         </node>
       </node>
-      <node concept="8GF0z" id="6coPuU2Q2N7" role="3ZUouT">
+      <node concept="8GF0z" id="6coPuU2Q2N7" role="3w00ZY">
         <property role="TrG5h" value="wheels" />
         <node concept="8EhVq" id="6coPuU2Q2N8" role="8EhU1">
           <property role="8EhVr" value="0" />
@@ -145,13 +142,13 @@
     </node>
     <node concept="3ZUotO" id="2d_6cEDNUxk" role="2h0jOs">
       <property role="TrG5h" value="Car" />
-      <node concept="8EhU9" id="2d_6cEDNUxq" role="3ZUouT">
+      <node concept="8EhU9" id="2d_6cEDNUxq" role="3w00ZY">
         <property role="TrG5h" value="mass" />
         <node concept="8EhVB" id="2d_6cEDNUxr" role="8EhU5">
           <property role="8EhVw" value="Real" />
         </node>
       </node>
-      <node concept="8EhU9" id="2d_6cEDNUxs" role="3ZUouT">
+      <node concept="8EhU9" id="2d_6cEDNUxs" role="3w00ZY">
         <property role="TrG5h" value="count" />
       </node>
     </node>
@@ -163,23 +160,23 @@
     </node>
     <node concept="3ZUotO" id="6coPuU2T2zJ" role="2h0jOs">
       <property role="TrG5h" value="ElectricVehicle" />
-      <node concept="8CKM2" id="6coPuU2T2zK" role="3xKGGH">
-        <property role="8CKM3" value="Vehicle" />
+      <node concept="3w00Zy" id="6coPuU38Chw" role="3w00Zx">
+        <property role="3w00ZX" value="Vehicle" />
       </node>
     </node>
     <node concept="3ZUotO" id="6coPuU2T2zL" role="2h0jOs">
       <property role="TrG5h" value="HybridVehicle" />
-      <node concept="8CKM2" id="6coPuU2T2zM" role="3xKGGH">
-        <property role="8CKM3" value="ElectricVehicle" />
+      <node concept="3w00Zy" id="6coPuU38Chx" role="3w00Zx">
+        <property role="3w00ZX" value="ElectricVehicle" />
       </node>
-      <node concept="8CKM2" id="6coPuU2T2zN" role="3xKGGH">
-        <property role="8CKM3" value="CombustionVehicle" />
+      <node concept="3w00Zy" id="6coPuU38Chy" role="3w00Zx">
+        <property role="3w00ZX" value="CombustionVehicle" />
       </node>
     </node>
     <node concept="3ZUotO" id="6coPuU2T2zO" role="2h0jOs">
       <property role="TrG5h" value="CombustionVehicle" />
-      <node concept="8CKM2" id="6coPuU2T2zP" role="3xKGGH">
-        <property role="8CKM3" value="Vehicle" />
+      <node concept="3w00Zy" id="6coPuU38Chz" role="3w00Zx">
+        <property role="3w00ZX" value="Vehicle" />
       </node>
     </node>
     <node concept="8EhVW" id="6coPuU2T2zQ" role="2h0jOs">
@@ -230,14 +227,14 @@
     </node>
     <node concept="3ZUotO" id="6coPuU2Zp9v" role="2h0jOs">
       <property role="TrG5h" value="Battery" />
-      <node concept="3xZtmn" id="6coPuU2Zp9w" role="3ZUouT">
+      <node concept="3xZtmn" id="6coPuU2Zp9w" role="3w00ZY">
         <property role="TrG5h" value="supply" />
         <property role="3xZtlG" value="true" />
         <node concept="3xZtmk" id="6coPuU2Zp9x" role="3xZtlH">
           <property role="3xZtlB" value="3th7jSwWnJl/out" />
         </node>
       </node>
-      <node concept="3xZtmn" id="6coPuU2Zp9z" role="3ZUouT">
+      <node concept="3xZtmn" id="6coPuU2Zp9z" role="3w00ZY">
         <property role="TrG5h" value="charge" />
         <property role="3xZtlG" value="true" />
         <node concept="3xZtmk" id="6coPuU2Zp9$" role="3xZtlH" />
@@ -245,7 +242,7 @@
           <property role="3xZtlI" value="PowerPort" />
         </node>
       </node>
-      <node concept="3xZtmn" id="6coPuU2Zp9A" role="3ZUouT">
+      <node concept="3xZtmn" id="6coPuU2Zp9A" role="3w00ZY">
         <property role="TrG5h" value="taps" />
         <node concept="8EhVq" id="6coPuU2Zp9B" role="3xZtlE">
           <property role="8EhVr" value="2" />
@@ -255,7 +252,7 @@
           <property role="3xZtlI" value="DataPort" />
         </node>
       </node>
-      <node concept="3xZtmn" id="6coPuU2Zp9D" role="3ZUouT">
+      <node concept="3xZtmn" id="6coPuU2Zp9D" role="3w00ZY">
         <property role="TrG5h" value="spare" />
       </node>
     </node>
@@ -297,7 +294,7 @@
     </node>
     <node concept="3ZUotO" id="6coPuU37EOb" role="2h0jOs">
       <property role="TrG5h" value="Tank" />
-      <node concept="3w00Zz" id="6coPuU37EOc" role="3ZUouT">
+      <node concept="3w00Zz" id="6coPuU37EOc" role="3w00ZY">
         <property role="TrG5h" value="contents" />
         <node concept="8EhVq" id="6coPuU37EOd" role="3w00ZS">
           <property role="8EhVr" value="0" />
@@ -307,7 +304,7 @@
           <property role="3w00ZX" value="Diesel" />
         </node>
       </node>
-      <node concept="3xZtmn" id="6coPuU37EOf" role="3ZUouT">
+      <node concept="3xZtmn" id="6coPuU37EOf" role="3w00ZY">
         <property role="TrG5h" value="outlet" />
         <node concept="3xZtmm" id="6coPuU37EOg" role="3xZtlF">
           <property role="3xZtlI" value="FuelPort" />
