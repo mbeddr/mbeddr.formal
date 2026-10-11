@@ -450,3 +450,85 @@ genuinely new kind of work for this language — first scope/typesystem pass), o
 structural and adding another widely-used leaf construct (e.g. `attribute usage`/`attribute def`,
 which mirrors `part`/`part def`'s shape closely) before tackling references. Worth explicitly
 deciding with the user rather than defaulting to (b) out of momentum.
+
+**Iteration 6 done (2026-10-12) — `SysMLv2PartDefinitionRef` smart reference + reifier**: took
+option (a) above, but shaped around a specific design the user asked for by name: a "smart
+reference" wrapper node rather than a bare `jetbrains.mps.lang.structure.structure.LinkDeclaration`
+reference directly on `SysMLv2PartUsage`. Rationale (the user's, confirmed during design
+discussion): the importer parses one file in isolation and can't guarantee the referenced
+`SysMLv2PartDefinition` already exists in the model at import time (forward references within the
+same file, or — once cross-file `SysMLv2Import` resolution exists — definitions in another file
+entirely), so the reference needs to degrade gracefully to a raw name instead of being a hard
+unresolved-reference error.
+
+New concept `SysMLv2PartDefinitionRef` (`BaseConcept`, not `INamedConcept` — the ref itself has no
+identity name, just a `partDefinitionName: string` fallback property and a `definition: 0..1 ->
+SysMLv2PartDefinition` reference). `SysMLv2PartUsage.typedBy` (the iteration-5 string property) is
+gone, replaced by a `type: 0..1 -> SysMLv2PartDefinitionRef` **child** (containment, not reference —
+the ref node is owned by the usage). Behavior method `SysMLv2PartDefinitionRef.getEffectiveName():
+string` (`definition != null ? definition.name : partDefinitionName`) is the single source of truth
+for "what name to show/generate" — both the editor and the textgen call it rather than duplicating
+the if/else.
+
+Editor: the first use of `jetbrains.mps.lang.editor.structure.CellModel_Alternation` in this
+language (`alternationCondition` + `ifTrueCellModel`/`ifFalseCellModel`) rather than two
+`OptionalCell`s, since the two renderings (resolved reference vs. raw fallback text) are mutually
+exclusive, not independently togglable. `ifTrueCellModel` is a `CellModel_RefCell` (not
+`CellModel_RefNode` — `definition` is a *reference* link, `RefNode` is for *child* links; mixing
+these up produces "single cardinality expected"/"out of search scope" errors that look unrelated to
+the real mistake) with a mandatory `editorComponent` (`InlineEditorComponent` showing the resolved
+target's `{name}`) per the already-recorded `CellModel_RefCell` gotcha; `ifFalseCellModel` is a
+plain `CellModel_Property` on `partDefinitionName`. Condition: `definition != null ||
+partDefinitionName.isEmpty` (`jetbrains.mps.baseLanguage.structure.IsEmptyOperation` — "string is
+null or empty", so no separate null check needed) — i.e. show the ref cell whenever there's
+something to resolve or editing an empty ref from scratch, and only fall back to the raw-text cell
+when there's leftover unresolved text and no reference.
+
+Importer: `visitPartUsage`'s tail now builds a `SysMLv2PartDefinitionRef` (with `partDefinitionName`
+set to the parsed type name, `definition` left null) instead of setting a property — pass 1 only,
+exactly as scoped. The **reifier** — "a traversal on the model after import into MPS, pure at MPS
+level" per the user's framing, explicitly decoupled from the importer itself — is a new static
+utility `SysMLv2TypeReifier.reifyPartDefinitionRefs(model m)`: walks `m.nodes(SysMLv2PartDefinitionRef)`
+(model-wide, not just top-level roots, since a part def can nest inside another part def's
+`content`), and for each unresolved one with a non-null `partDefinitionName`, looks up
+`m.nodes(SysMLv2PartDefinition).where { it => it.name.equals(ref.partDefinitionName) }.first` and
+sets `definition` if found — first-match on name collision, confirmed with the user as the deliberate
+policy (best-effort reification of possibly-incomplete input, not a strict compiler; checking rules
+to disallow duplicate part-def names in the same scope are flagged as separate future work, not
+blocking this). Being decoupled from the import pipeline, it's also trivially reusable later as a
+user-invokable "re-resolve types" action whenever the model changes, not just once right after
+import.
+
+**Two new gotchas hit and recorded in the root `mps-gotchas.md`** (both general MCP/MPS-platform
+facts, not specific to this project): (1) `LinkDeclaration.metaClass`/`sourceCardinality` enum
+properties silently stay at their *default* when set via a guessed `"<prefix>/<member>"` encoded
+string instead of erroring — `print_node` then omits the property entirely (since it equals the
+default), which reads as "not yet set" rather than "was reverted"; the fix is setting these two
+specific properties via `mps_mcp_update_node` `SET PROPERTY` with the **plain** enum member name
+(`"reference"`, `"_0__1"`, etc.), not a guessed prefixed value. (2) a `command`/`undo-transparent
+command` block written directly inline in a `NodesTestCase` body throws an EDT-only threading error
+when the test runs from a pooled JUnit thread (setting the test case's own `accessMode="command"`
+does *not* fix this) — the working pattern, copied from this project's own pre-existing
+`TestUtils.parseFileIntoModel`, is a hand-written static utility that explicitly hops to EDT via
+`ApplicationManager.getApplication().invokeAndWait(new Runnable() { ... command with
+proj.getRepository() { ... } ... })` *before* opening the command; added a matching
+`TestUtils.reifyPartDefinitionRefs(model, Project)` wrapper for this project's own tests to call
+instead of writing the EDT dance out at each call site. Bare navigation/assertions after the
+mutation still needed a separate `read action` block — only the write needs the EDT hop, reads work
+fine off-EDT inside `read action`.
+
+Sandbox `_060_PartUsage` and the `_060_PartUsageTest` import fixture both updated to carry the new
+`SysMLv2PartDefinitionRef` child instead of the removed `typedBy` property (deleting a structure
+property doesn't error on nodes that still set it — the property value is just silently dropped,
+which could otherwise mask a forgotten migration). New `_070_TypeReificationTest`
+(`testReifyResolvesExistingDefinition`, `testReifyLeavesUnresolvedWhenMissing`), registered as
+`_070_test_sysmlv2_type_reification`, green alongside `_010`–`_060`.
+
+**Intentionally deferred from this iteration**: a constraints-aspect scope for
+`SysMLv2PartDefinitionRef.definition` (so hand-editing the DSL directly in MPS gets real completion
+over candidate part defs, not just an importer-populated reference) — the concrete MPS API for
+building a `jetbrains.mps.scope.Scope` from a plain node sequence inside a
+`ConstraintFunction_ReferentSearchScope_Scope` body wasn't straightforward to find by exploration and
+didn't seem worth the detour given the reifier already delivers the requested behavior
+programmatically. Worth revisiting if/when manual editing of `.sysmlv2` files directly in MPS (rather
+than only via text import) becomes a real usage path.

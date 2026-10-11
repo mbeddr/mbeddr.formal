@@ -7,8 +7,12 @@
   <imports />
   <registry>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
+      <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
+        <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
+      </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z">
         <property id="8930763252716192306" name="typedBy" index="8GFfI" />
+        <child id="8930763252717288847" name="type" index="8CKLj" />
       </concept>
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
@@ -69,6 +73,9 @@
       <node concept="8GF0z" id="7JKstLNkCNW" role="3ZUouT">
         <property role="TrG5h" value="engine" />
         <property role="8GFfI" value="Engine" />
+        <node concept="8CKM2" id="7JKstLNlN8h" role="8CKLj">
+          <property role="8CKM3" value="Engine" />
+        </node>
       </node>
     </node>
   </node>
