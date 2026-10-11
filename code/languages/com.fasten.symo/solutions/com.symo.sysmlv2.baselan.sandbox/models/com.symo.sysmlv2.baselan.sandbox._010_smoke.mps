@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
+      <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z">
+        <property id="8930763252716192306" name="typedBy" index="8GFfI" />
+      </concept>
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
       </concept>
@@ -16,7 +19,9 @@
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
       </concept>
-      <concept id="4430087627526591053" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinition" flags="ng" index="3ZUotO" />
+      <concept id="4430087627526591053" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinition" flags="ng" index="3ZUotO">
+        <child id="4430087627526591104" name="content" index="3ZUouT" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -52,6 +57,19 @@
     <property role="TrG5h" value="_050_PartDefinition" />
     <node concept="3ZUotO" id="3PUPjB2A75t" role="2h0jOs">
       <property role="TrG5h" value="Engine" />
+    </node>
+  </node>
+  <node concept="2h0jOr" id="7JKstLNkCNT">
+    <property role="TrG5h" value="_060_PartUsage" />
+    <node concept="3ZUotO" id="7JKstLNkCNU" role="2h0jOs">
+      <property role="TrG5h" value="Engine" />
+    </node>
+    <node concept="3ZUotO" id="7JKstLNkCNV" role="2h0jOs">
+      <property role="TrG5h" value="Car" />
+      <node concept="8GF0z" id="7JKstLNkCNW" role="3ZUouT">
+        <property role="TrG5h" value="engine" />
+        <property role="8GFfI" value="Engine" />
+      </node>
     </node>
   </node>
 </model>

@@ -373,3 +373,80 @@ placement — were avoided by applying the lessons already recorded).
 (`part def Car { part engine : Engine; }`) — this is what actually makes `part def` useful in
 practice; `SysMLv2PartDefinition.content` is already shaped to receive it without further
 structural change.
+
+**Iteration 5 done (2026-10-12) — part usages with optional simple typing**: exactly the natural
+next step flagged above. New concept `SysMLv2PartUsage` (implements `INamedConcept` +
+`ISysMLv2FileContent`, `conceptAlias = "part"`, a `typedBy: string` property — not a real
+reference/link to the typing definition, deliberately; resolving `typedBy` to an actual
+`SysMLv2PartDefinition` node is out of scope until a scoping/typesystem pass is added — and the same
+`content: 0..n ISysMLv2FileContent` link every leaf-usable concept in this language carries, so a
+part usage can itself nest further body items later without another structural change). Grammar
+chain traced via `javap` on the vendored grammar jar (no readable parser source exists):
+`partDefinition → definition → definitionBody → definitionBodyItem → occurrenceUsageElement →
+structureUsageElement → partUsage → usage → usageDeclaration → featureSpecializationPart →
+featureSpecialization → typings → typedBy → featureTyping → ownedFeatureTyping → qualifiedName`.
+Scope is the simplest typed-or-untyped leaf usage: `part <name>;` / `part <name> : <Type>;` — no
+`occurrenceUsagePrefix` content (`ref`/`derived`/`abstract`/`individual`/`snapshot`/prefix
+metadata), no `multiplicityPart`, no more than one `featureSpecialization` (rejects
+`subsettings`/`references`/`crosses`/`redefinitions` and comma-chained multiple types), no
+`conjugatedPortTyping` (`~Type`) or relationship-bodied `TYPING ... { }` form, no dotted
+multi-segment `ownedFeatureTyping` (`A.B` — a different separator from the `::` qualified-name
+package syntax), no value assignment (`= ...`), no non-empty usage body; all throw the established
+"Unsupported SysML v2 construct" error. `visitPartDefinition` updated to actually loop
+`body.definitionBodyItem()` and recurse instead of requiring the body empty (the iteration-4
+placeholder restriction lifted); new `visitDefinitionBodyItem` → `visitOccurrenceUsageElement` →
+`visitStructureUsageElement` → `visitPartUsage` dispatch chain mirrors the grammar chain one
+visitor method per rule, same validate-every-slot-then-extract shape as `visitPartDefinition`.
+
+Editor: `SysMLv2PartUsage_Editor` is the first concept in this language needing a genuinely optional
+syntax fragment (the ` : Type` suffix only renders when `typedBy` is set) rather than an
+always-present property cell. Reached for `com.mbeddr.mpsutil.grammarcells.structure.OptionalCell`
+(`renderingCondition` + wrapped `option` cell) — ran straight into two already-recorded
+`mps-gotchas.md` traps from *other* projects and got through both without new debugging: the
+implicit "node" inside the `OptionalCell`'s `QueryFunction_NodeCondition` is the concept
+`jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node` (not a plain-Java identifier
+`mps_mcp_parse_java_and_insert` can resolve — several same-named `ConceptFunctionParameter_node`
+variants exist across languages; picked the `jetbrains.mps.lang.editor.structure` one matching the
+owning language), and using `OptionalCell` at all in this editor model triggered
+`"missing dependency on jetbrains.mps.lang.core"` from grammarcells' own
+`check_IActionGeneratingCell_NonTypesystemRule` — fixed with the documented `DummyForGrammarCells`
+`EditorComponentDeclaration` workaround (a throwaway root targeting `BaseConcept`), copied verbatim
+from `com.symo.mermaid.editor`'s existing copy of the same pattern. `SysMLv2PartUsage_TextGen`:
+`part ` + `${node.name}` + (`if (node.typedBy != null) { " : " + ${node.typedBy} }`) + `;` — the
+first textgen body in this language needing a conditional append; a plain `if`/`append` inside the
+`textGenBlock` body sufficed, no new textgen idiom needed beyond what `mps-aspect-textgen` already
+documents.
+
+**Pitfall hit while building this iteration's importer method, not previously hit in this
+project**: writing the smodel-flavored parts of `visitPartUsage` (`node<SysMLv2PartUsage> pu = new
+node<SysMLv2PartUsage>();`, `pu.name = ...`, `pu.content.add(...)`) directly as Java text passed to
+`mps_mcp_parse_java_and_insert` produced a method that reported zero problems *at insert time* but
+was structurally broken throughout — `string`/`node<C>` became unresolved plain-Java
+`ClassifierType`s, and the `x:C` cast argument got swallowed into an `UnknownMethodReference`. Fixed
+by keeping the Java-parseable validation/extraction logic (all the `ctx.xxx()` navigation and
+`throw`/`if` guards — zero smodel syntax, parses perfectly) as Java text, and hand-building the
+smodel-bearing tail (the `node<C>` local, its `SNodeCreator` initializer, the two property
+assignments, the conditional, and the `return`) as JSON appended statement-by-statement via
+`mps_mcp_update_node` (`ADD CHILD`/`SET CHILD`). Also hit the **same label-placement mistake**
+iteration 3 already documented and this project had since avoided twice (iterations 3 and 4): the
+`TestNodeAnnotation` for `_060_PartUsageTest` was first attached to the nested `SysMLv2PartUsage`'s
+containing `SysMLv2PartDefinition` rather than the outer `SysMLv2File` root that
+`TestUtils.checkFirstRoot`'s `m.roots(SysMLv2File).first` actually resolves against — caught this
+time by a normal `AssertionError` (not a plugin crash, since this project uses the simpler
+`TestUtils.checkFirstRoot` helper rather than `de.itemis.mps.compare` directly) reporting "Expected
+... SysMLv2PartDefinition, got ... SysMLv2File", which pinpointed the mismatch immediately. Both
+pitfalls are now documented generically in the root `mps-gotchas.md` (the parser one is new this
+iteration) so they transfer to other projects, not just re-reminders here.
+
+Sandbox: `_060_PartUsage` (`part def Engine;` + `part def Car { part engine : Engine; }`). Tests:
+new `_060_PartUsageTest` (`testImportPartUsage`, `testRoundtripPartUsage`), registered as
+`_060_test_sysmlv2_import_partusage`, green alongside `_010`–`_050`.
+
+**Natural next step (not part of this iteration)**: the language currently has no notion of
+*reference* resolution at all — `SysMLv2PartUsage.typedBy` is a bare string, and nothing checks it
+against an actual `SysMLv2PartDefinition` name in scope. The next meaningful increment is either (a)
+turning `typedBy` into a real reference with a constraints-aspect scope (most valuable, but a
+genuinely new kind of work for this language — first scope/typesystem pass), or (b) staying
+structural and adding another widely-used leaf construct (e.g. `attribute usage`/`attribute def`,
+which mirrors `part`/`part def`'s shape closely) before tackling references. Worth explicitly
+deciding with the user rather than defaulting to (b) out of momentum.

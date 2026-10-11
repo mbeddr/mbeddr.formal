@@ -10,6 +10,37 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## `mps_mcp_parse_java_and_insert` silently mis-parses `string`/`node<C>`/`x:C` as unresolved plain-Java types instead of erroring (2026-10-12)
+
+Writing MPS-smodel-flavored syntax directly in the `code` string passed to
+`mps_mcp_parse_java_and_insert` — the lowercase `string` primitive keyword, a `node<C>` generic
+local-variable type, or a bare `x:C` strict-cast expression — does **not** fail the call and does
+**not** produce the intended smodel concept. The parser treats all three as plain-Java constructs it
+doesn't recognize and inserts a structurally-valid-looking but semantically broken tree: `string`
+becomes a `ClassifierType` referencing an unresolved class literally named `string`; `node<C>`
+becomes a `ClassifierType` with an unresolved `node` classifier and `C` as a bogus type parameter;
+`x:C` inside an argument list gets swallowed into an `UnknownMethodReference`/`UnknownNew` shell with
+the real operand buried as a child. The call itself reports success with zero or only cosmetic
+"problems" at insert time — the breakage only shows up as a wall of `"Unresolved reference"` /
+`"?no classifier?"` / `"Abstract concept instance detected"` errors from a **subsequent**
+`mps_mcp_check_root_node_problems` call, which makes it easy to misdiagnose as a reference-fixup
+problem rather than a parse problem. This reproduces even in a method body that successfully used
+these exact smodel idioms when inserted via hand-built JSON earlier (e.g. editing an existing
+`node<SysMLv2Package> pkg = new node<SysMLv2Package>();` local is no evidence the *parser* can
+produce that shape — it may have been JSON-authored).
+
+**How to apply:** before calling `mps_mcp_parse_java_and_insert`, mentally split the method into (a)
+pure-Java control flow / `ctx.xxx()` navigation / `throw`/`if` — safe to parse as-is — and (b) any
+line that declares a `node<C>`/`nlist<C>`/`node-ptr<C>` local, assigns an smodel property/link
+(`x.name = ...`), or writes an `x:C`/`x as C` cast. For (b), either use `String`/`Object` as an inert
+placeholder in the parsed skeleton and patch the specific `LocalVariableDeclaration.type` /
+`.initializer` / `DotExpression.operation` children afterward via `mps_mcp_update_node` (`SET
+CHILD`), or skip the parser entirely for that statement and hand-build it as JSON per
+`mps-model-manipulation`'s `references/variable-declarations.md` (`SNodeType`/`SNodeCreator`) and
+`references/property-and-mutation-ops.md` (`SPropertyAccess`, `SLinkListAccess`,
+`AddElementOperation`). After patching, re-run `mps_mcp_check_root_node_problems` — a clean result
+confirms the swap landed on every broken node, not just the first one found.
+
 ## `NodesTestCase.accessMode="command"` self-deadlocks a test that blocks on an async engine's `Future.get()` — EDT holds the write lock the async worker needs a read permit for (2026-10-10)
 
 A `SimpleNodeTest` with `accessMode="command"` runs its **entire method body** on the EDT under

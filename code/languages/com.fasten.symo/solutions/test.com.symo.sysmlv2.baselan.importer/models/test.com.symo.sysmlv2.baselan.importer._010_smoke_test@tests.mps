@@ -170,6 +170,9 @@
       <concept id="8974276187400348177" name="jetbrains.mps.lang.access.structure.ExecuteCommandStatement" flags="nn" index="1QHqEO" />
     </language>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
+      <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z">
+        <property id="8930763252716192306" name="typedBy" index="8GFfI" />
+      </concept>
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
       </concept>
@@ -179,7 +182,9 @@
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
       </concept>
-      <concept id="4430087627526591053" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinition" flags="ng" index="3ZUotO" />
+      <concept id="4430087627526591053" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinition" flags="ng" index="3ZUotO">
+        <child id="4430087627526591104" name="content" index="3ZUouT" />
+      </concept>
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -1503,7 +1508,7 @@
               <ref role="3cqZAo" node="3PUPjB2vx_X" resolve="tmp" />
             </node>
             <node concept="3xONca" id="3PUPjB2vxA8" role="37wK5m">
-              <ref role="3xOPvv" node="3PUPjB2vDN$" />
+              <ref role="3xOPvv" node="3PUPjB2vDN$" resolve="import_ab" />
             </node>
             <node concept="1jxXqW" id="3PUPjB2vxA9" role="37wK5m" />
           </node>
@@ -1662,6 +1667,111 @@
           </node>
           <node concept="37vLTw" id="3PUPjB2A78s" role="3tpDZA">
             <ref role="3cqZAo" node="3PUPjB2A78h" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7JKstLNkCTL">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_060_PartUsageTest" />
+    <node concept="1qefOq" id="7JKstLNkCTM" role="1SKRRt">
+      <node concept="2h0jOr" id="7JKstLNkCTO" role="1qenE9">
+        <property role="TrG5h" value="PartUsageFile" />
+        <node concept="3ZUotO" id="7JKstLNkCTP" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="8GF0z" id="7JKstLNkCTQ" role="3ZUouT">
+            <property role="TrG5h" value="engine" />
+            <property role="8GFfI" value="Engine" />
+          </node>
+        </node>
+        <node concept="3xLA65" id="7JKstLNkOR0" role="lGtFl">
+          <property role="TrG5h" value="car_partdef" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="7JKstLNkCTS" role="1SL9yI">
+      <property role="TrG5h" value="testImportPartUsage" />
+      <node concept="3cqZAl" id="7JKstLNkCTV" role="3clF45" />
+      <node concept="3clFbS" id="7JKstLNkCTW" role="3clF47">
+        <node concept="3cpWs8" id="7JKstLNkCTX" role="3cqZAp">
+          <node concept="3cpWsn" id="7JKstLNkCU0" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="H_c77" id="7JKstLNkCU2" role="1tU5fm" />
+            <node concept="2YIFZM" id="7JKstLNkCU3" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="Xl_RD" id="7JKstLNkCU4" role="37wK5m">
+                <property role="Xl_RC" value="part def Car { part engine : Engine; }" />
+              </node>
+              <node concept="Xl_RD" id="7JKstLNkCU5" role="37wK5m">
+                <property role="Xl_RC" value="PartUsageFile" />
+              </node>
+              <node concept="1jxXqW" id="7JKstLNkCU6" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7JKstLNkCU7" role="3cqZAp">
+          <node concept="2YIFZM" id="7JKstLNkCU9" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="7JKstLNkCUa" role="37wK5m">
+              <ref role="3cqZAo" node="7JKstLNkCU0" resolve="tmp" />
+            </node>
+            <node concept="3xONca" id="7JKstLNkCUb" role="37wK5m">
+              <ref role="3xOPvv" node="7JKstLNkOR0" />
+            </node>
+            <node concept="1jxXqW" id="7JKstLNkCUc" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7JKstLNkCUd" role="3cqZAp">
+          <node concept="2YIFZM" id="7JKstLNkCUf" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="7JKstLNkCUg" role="37wK5m">
+              <ref role="3cqZAo" node="7JKstLNkCU0" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="7JKstLNkCUh" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="7JKstLNkCUi" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripPartUsage" />
+      <node concept="3cqZAl" id="7JKstLNkCUl" role="3clF45" />
+      <node concept="3clFbS" id="7JKstLNkCUm" role="3clF47">
+        <node concept="3cpWs8" id="7JKstLNkCUn" role="3cqZAp">
+          <node concept="3cpWsn" id="7JKstLNkCUq" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="17QB3L" id="7JKstLNkCUs" role="1tU5fm" />
+            <node concept="Xl_RD" id="7JKstLNkCUt" role="33vP2m">
+              <property role="Xl_RC" value="part def Car {&#10;  part engine : Engine;&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7JKstLNkCUu" role="3cqZAp">
+          <node concept="3cpWsn" id="7JKstLNkCUx" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <node concept="17QB3L" id="7JKstLNkCUz" role="1tU5fm" />
+            <node concept="2YIFZM" id="7JKstLNkCU$" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="7JKstLNkCU_" role="37wK5m">
+                <ref role="3cqZAo" node="7JKstLNkCUq" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="7JKstLNkCUA" role="37wK5m">
+                <property role="Xl_RC" value="PartUsageFile" />
+              </node>
+              <node concept="1jxXqW" id="7JKstLNkCUB" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="7JKstLNkCUC" role="3cqZAp">
+          <node concept="37vLTw" id="7JKstLNkCUF" role="3tpDZB">
+            <ref role="3cqZAo" node="7JKstLNkCUq" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="7JKstLNkCUG" role="3tpDZA">
+            <ref role="3cqZAo" node="7JKstLNkCUx" resolve="generateText" />
           </node>
         </node>
       </node>
