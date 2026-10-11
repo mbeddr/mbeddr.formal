@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:6b9c9a05-eaf7-4cd4-9058-5bfb06c56127(com.symo.sysmlv2.baselan.sandbox._010_smoke)" content="header">
-  <persistence version="9" />
-  <languages>
-    <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="0" />
-  </languages>
-  <imports />
-</model>
-
