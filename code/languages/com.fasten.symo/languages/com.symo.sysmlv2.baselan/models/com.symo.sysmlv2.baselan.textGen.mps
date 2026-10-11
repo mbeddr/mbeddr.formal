@@ -189,5 +189,29 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="3PUPjB2uwYP">
+    <property role="TrG5h" value="SysMLv2Import_TextGen" />
+    <ref role="WuzLi" to="5rf1:3PUPjB2ukTG" resolve="SysMLv2Import" />
+    <node concept="11bSqf" id="3PUPjB2uwYQ" role="11c4hB">
+      <node concept="3clFbS" id="3PUPjB2uwYS" role="2VODD2">
+        <node concept="lc7rE" id="3PUPjB2uwYT" role="3cqZAp">
+          <node concept="la8eA" id="3PUPjB2uwYV" role="lcghm">
+            <property role="lacIc" value="import " />
+          </node>
+          <node concept="l9hG8" id="3PUPjB2uwYW" role="lcghm">
+            <node concept="2OqwBi" id="3PUPjB2uwYY" role="lb14g">
+              <node concept="117lpO" id="3PUPjB2uwZ1" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3PUPjB2uwZ2" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:3PUPjB2uof9" resolve="importedName" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="3PUPjB2uwZ3" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -19,7 +19,12 @@ Instead:
    target concept, built with the normal MPS editor. This makes the expected shape visible and
    editable as a node, not reconstructed line-by-line in assertion code.
 2. Tag the fixture's root with a **label** via the "Add Test Node Label" intention
-   (`TestNodeAnnotation`, attached as an `smodelAttribute` on the fixture root).
+   (`TestNodeAnnotation`, attached as an `smodelAttribute` on the fixture root) — the label must sit
+   on the *same node your comparison helper resolves on the actual side* (e.g. the `SysMLv2File`
+   root, if `checkFirstRoot` compares `model.roots(SysMLv2File).first`), not on some nested child
+   inside it. Labeling a child instead of the root compares two nodes of different concepts
+   (`node<SysMLv2File>` vs whatever the child's concept is) — see the gotcha this produces in
+   `mps-gotchas.md`.
 3. In the test method, reference that label as `node<label>` (`TestNodeReference` under the hood)
    and compare it against the actual result with `de.itemis.mps.compare`'s **`assert node equals
    <expected> and <actual> with options { ... }`** (`AssertNodeEquals`) instead of a chain of

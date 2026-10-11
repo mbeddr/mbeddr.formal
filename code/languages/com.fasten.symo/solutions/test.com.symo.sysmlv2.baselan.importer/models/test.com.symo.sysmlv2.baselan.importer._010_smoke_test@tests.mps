@@ -173,6 +173,9 @@
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
       </concept>
+      <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
+        <property id="4430087627524899785" name="importedName" index="3Z0PrK" />
+      </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
       </concept>
@@ -1450,6 +1453,110 @@
           </node>
           <node concept="37vLTw" id="3PUPjB2qp00" role="3tpDZA">
             <ref role="3cqZAo" node="3PUPjB2qoZP" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3PUPjB2vxxt">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_040_ImportStatementTest" />
+    <node concept="1qefOq" id="3PUPjB2vx_r" role="1SKRRt">
+      <node concept="2h0jOr" id="3PUPjB2vx_t" role="1qenE9">
+        <property role="TrG5h" value="ImportFile" />
+        <node concept="3Z0THl" id="3PUPjB2vDNe" role="2h0jOs">
+          <property role="3Z0PrK" value="A::B" />
+        </node>
+        <node concept="3xLA65" id="3PUPjB2vDN$" role="lGtFl">
+          <property role="TrG5h" value="import_ab" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3PUPjB2vx_P" role="1SL9yI">
+      <property role="TrG5h" value="testImportImportStatement" />
+      <node concept="3cqZAl" id="3PUPjB2vx_S" role="3clF45" />
+      <node concept="3clFbS" id="3PUPjB2vx_T" role="3clF47">
+        <node concept="3cpWs8" id="3PUPjB2vx_U" role="3cqZAp">
+          <node concept="3cpWsn" id="3PUPjB2vx_X" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <property role="2Lvdk3" value="tmp" />
+            <node concept="H_c77" id="3PUPjB2vx_Z" role="1tU5fm" />
+            <node concept="2YIFZM" id="3PUPjB2vxA0" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="Xl_RD" id="3PUPjB2vxA1" role="37wK5m">
+                <property role="Xl_RC" value="import A::B;" />
+              </node>
+              <node concept="Xl_RD" id="3PUPjB2vxA2" role="37wK5m">
+                <property role="Xl_RC" value="ImportFile" />
+              </node>
+              <node concept="1jxXqW" id="3PUPjB2vxA3" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3PUPjB2vxA4" role="3cqZAp">
+          <node concept="2YIFZM" id="3PUPjB2vxA6" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="3PUPjB2vxA7" role="37wK5m">
+              <ref role="3cqZAo" node="3PUPjB2vx_X" resolve="tmp" />
+            </node>
+            <node concept="3xONca" id="3PUPjB2vxA8" role="37wK5m">
+              <ref role="3xOPvv" node="3PUPjB2vDN$" />
+            </node>
+            <node concept="1jxXqW" id="3PUPjB2vxA9" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3PUPjB2vxAa" role="3cqZAp">
+          <node concept="2YIFZM" id="3PUPjB2vxAc" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="3PUPjB2vxAd" role="37wK5m">
+              <ref role="3cqZAo" node="3PUPjB2vx_X" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3PUPjB2vxAe" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3PUPjB2vxBk" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripImportStatement" />
+      <node concept="3cqZAl" id="3PUPjB2vxBn" role="3clF45" />
+      <node concept="3clFbS" id="3PUPjB2vxBo" role="3clF47">
+        <node concept="3cpWs8" id="3PUPjB2vxBp" role="3cqZAp">
+          <node concept="3cpWsn" id="3PUPjB2vxBs" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="3PUPjB2vxBu" role="1tU5fm" />
+            <node concept="Xl_RD" id="3PUPjB2vxBv" role="33vP2m">
+              <property role="Xl_RC" value="import A::B;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3PUPjB2vxBw" role="3cqZAp">
+          <node concept="3cpWsn" id="3PUPjB2vxBz" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="17QB3L" id="3PUPjB2vxB_" role="1tU5fm" />
+            <node concept="2YIFZM" id="3PUPjB2vxBA" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="3PUPjB2vxBB" role="37wK5m">
+                <ref role="3cqZAo" node="3PUPjB2vxBs" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="3PUPjB2vxBC" role="37wK5m">
+                <property role="Xl_RC" value="ImportFile" />
+              </node>
+              <node concept="1jxXqW" id="3PUPjB2vxBD" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="3PUPjB2vxBE" role="3cqZAp">
+          <node concept="37vLTw" id="3PUPjB2vxBH" role="3tpDZB">
+            <ref role="3cqZAo" node="3PUPjB2vxBs" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="3PUPjB2vxBI" role="3tpDZA">
+            <ref role="3cqZAo" node="3PUPjB2vxBz" resolve="generateText" />
           </node>
         </node>
       </node>

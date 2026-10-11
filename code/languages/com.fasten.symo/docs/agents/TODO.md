@@ -280,3 +280,38 @@ see the new `docs/idioms/bridge-plain-java-snode-api-into-smodel.md` write-up. A
 null-check on `ctx.package_()` since `definitionElement`'s ~25 alternatives aren't grammar-labeled
 (no `#label` per alt), so the visitor doesn't auto-dispatch more granularly there than manual code
 did — worth remembering when iteration 4+ add more `definitionElement` alternatives.
+
+**Iteration 3 done (2026-10-12) — plain `import` statements**: new concept `SysMLv2Import`
+(implements `ISysMLv2FileContent`, one string property `importedName`) in
+`com.symo.sysmlv2.baselan.structure`. Grammar: `importRule: (visibilityIndicator)? IMPORT (ALL)?
+importDeclaration relationshipBody`, `importDeclaration: membershipImport | namespaceImport`,
+`membershipImport: qualifiedName (COLON_COLON STAR_STAR)?`, `relationshipBody: SEMI | LBRACE ... `.
+Scope is deliberately the single simplest form: bare `import <qualifiedName>;` — no visibility
+prefix on the import, no `all` modifier, no namespace/wildcard (`::*`) imports, no `::**` recursive
+suffix, no filter-package imports (need expressions, which don't exist in this importer at all),
+no brace-bodied `relationshipBody`; everything else throws the same "Unsupported SysML v2
+construct" as iteration 2's out-of-scope cases. The qualified name itself is stored as a **plain
+string** via `ctx.qualifiedName().getText()` (e.g. `"A::B"`) — there's no package-member
+resolution/scoping mechanism yet, so a real cross-reference isn't attempted; matches how
+`SysMLv2Package.name` is just a string today. `SysMLv2ImporterVisitor` extended with
+`visitImportRule`; `visitPackageBodyElement` now also checks `ctx.importRule() != null` and
+dispatches, alongside the existing `ctx.packageMember()` check.
+
+`SysMLv2Import_TextGen` added: `import ${node.importedName};`, no self newline (same leaf
+convention established in iteration 2). Sandbox: `_040_ImportStatement` (one file, one import).
+Tests: new `_040_ImportStatementTest` `NodesTestCase` using the `de.itemis.mps.compare` pattern —
+`testImportImportStatement`, `testRoundtripImportStatement` — registered as
+`_040_test_sysmlv2_import_statement`, green alongside `_010`/`_020`/`_030`.
+
+**Pitfall hit while building the `_040` fixture — wrong label placement, masked by a plugin crash**:
+the `TestNodeAnnotation` label was first attached to the nested `SysMLv2Import` content node instead
+of the `SysMLv2File` root that `TestUtils.checkFirstRoot` actually compares against — a copy-paste
+from iteration 2's pattern that got the attachment point wrong. This didn't surface as a normal
+`ComparisonFailure`; `de.itemis.mps.compare`'s diff-view rendering crashes with an unrelated
+`IllegalModelAccessError` whenever the two compared nodes are unequal (crash is a plugin bug when
+run under batch JUnit, not the IDE), so the real cause (comparing a `SysMLv2File` against a
+`SysMLv2Import` — different concepts entirely) was invisible from the stack trace. Diagnosed by
+temporarily swapping in manual field-level asserts to isolate the real mismatch. Recorded as a
+`mps-gotchas.md` entry ("the crash is a plugin bug, not a clue") and folded into the idiom
+write-up's step 2 (label must sit on the same node the comparison helper resolves on the actual
+side, not a nested child) so this isn't rediscovered next iteration.

@@ -56,6 +56,31 @@ The general rule: `command{}` (write lock) is EDT-only; `read action{}` (read lo
 thread; `accessMode="command"` on the whole test method is only safe when nothing in the body ever
 blocks waiting on another thread that itself needs a lock the EDT is holding.
 
+## `de.itemis.mps.compare`'s `assert node equals` crashes with an unrelated `IllegalModelAccessError` when the compared nodes genuinely differ — the crash is a plugin bug, not a clue; go find the real mismatch (2026-10-12)
+
+When `AssertNodeEquals` ("`assert node equals X and Y with options {...}`", surfaced via a shared
+helper like `TestUtils.checkFirstRoot`) finds its two operands **unequal**, it tries to render a
+side-by-side diff view (`DiffView.showNonEditibleDiff` → `cloneNode` → `addToTempModel` →
+`TemporaryModels.createEditable`) to produce a nicer failure message. Under a headless/batch JUnit
+run (not the interactive IDE), that diff-rendering path itself crashes with
+`jetbrains.mps.smodel.IllegalModelAccessError: You can write model only inside write actions` —
+because creating the temp model for the diff view needs a write action, but the comparison runs
+inside a `read action`. This exception **replaces** the real `ComparisonFailure` you'd otherwise
+get, so the stack trace tells you nothing about what actually differs — it only tells you that the
+two nodes are NOT equal (the crash path is only reached on inequality; equal comparisons never hit
+it, confirmed by other tests using the identical helper passing cleanly).
+
+**How to apply:** don't debug the stack trace itself — it's a dead end. Temporarily replace the
+`assert node equals ...` call with manual field-level `assert ... equals ...` statements (resolve
+the actual node via `model.roots(C).first` etc., same as the pre-`de.itemis.mps.compare` style) to
+locate which property/child actually differs, fix the fixture or the importer, then restore the
+`assert node equals ...` form once the real mismatch is fixed — the crash disappears once the nodes
+are actually equal. One common root cause specific to this plugin's idiom (see
+`docs/idioms/structural-node-equality-via-test-fixture.md`): the `TestNodeAnnotation` label was
+attached to the wrong node — e.g. a nested child instead of the root the comparison helper actually
+resolves — so the two sides being compared are different *concepts* entirely, not just different
+property values.
+
 ## `node.linkList.add new(C)` (`LinkList_AddNewChildOperation`) rejects an `nlist<...>`-typed parameter even though its runtime type matches — use plain `.add(existingNode)` instead when the list came in as a parameter (2026-10-11)
 
 `LinkList_AddNewChildOperation` (`node.someLink.add new(ConcreteConcept)`) structurally requires its

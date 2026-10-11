@@ -199,7 +199,7 @@
           <node concept="3cpWsn" id="5PDtixSTyhc" role="3cpWs9">
             <property role="TrG5h" value="chars" />
             <node concept="3uibUv" id="5PDtixSTyhe" role="1tU5fm">
-              <ref role="3uigEE" to="p3ir:~CharStream" resolve="org.antlr.v4.runtime.CharStream" />
+              <ref role="3uigEE" to="p3ir:~CharStream" resolve="CharStream" />
             </node>
             <node concept="2YIFZM" id="5PDtixSTyLu" role="33vP2m">
               <ref role="1Pybhc" to="p3ir:~CharStreams" resolve="CharStreams" />
@@ -214,7 +214,7 @@
           <node concept="3cpWsn" id="5PDtixSTyhh" role="3cpWs9">
             <property role="TrG5h" value="lexer" />
             <node concept="3uibUv" id="5PDtixSTyhj" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Lexer" resolve="com.symo.sysmlv2.baselan.importer.antlr.SysMLv2Lexer" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Lexer" resolve="SysMLv2Lexer" />
             </node>
             <node concept="2ShNRf" id="5PDtixSTyLw" role="33vP2m">
               <node concept="1pGfFk" id="5PDtixSTyLG" role="2ShVmc">
@@ -230,7 +230,7 @@
           <node concept="3cpWsn" id="5PDtixSTyhm" role="3cpWs9">
             <property role="TrG5h" value="tokens" />
             <node concept="3uibUv" id="5PDtixSTyho" role="1tU5fm">
-              <ref role="3uigEE" to="p3ir:~CommonTokenStream" resolve="org.antlr.v4.runtime.CommonTokenStream" />
+              <ref role="3uigEE" to="p3ir:~CommonTokenStream" resolve="CommonTokenStream" />
             </node>
             <node concept="2ShNRf" id="5PDtixSTyLI" role="33vP2m">
               <node concept="1pGfFk" id="5PDtixSTyLU" role="2ShVmc">
@@ -246,7 +246,7 @@
           <node concept="3cpWsn" id="5PDtixSTyhr" role="3cpWs9">
             <property role="TrG5h" value="parser" />
             <node concept="3uibUv" id="5PDtixSTyht" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser" resolve="com.symo.sysmlv2.baselan.importer.antlr.SysMLv2Parser" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser" resolve="SysMLv2Parser" />
             </node>
             <node concept="2ShNRf" id="5PDtixSTyLW" role="33vP2m">
               <node concept="1pGfFk" id="5PDtixSTyM7" role="2ShVmc">
@@ -262,7 +262,7 @@
           <node concept="3cpWsn" id="5PDtixSTyhw" role="3cpWs9">
             <property role="TrG5h" value="tree" />
             <node concept="3uibUv" id="5PDtixSTyhy" role="1tU5fm">
-              <ref role="3uigEE" to="p3ir:~ParserRuleContext" resolve="org.antlr.v4.runtime.ParserRuleContext" />
+              <ref role="3uigEE" to="p3ir:~ParserRuleContext" resolve="ParserRuleContext" />
             </node>
             <node concept="2OqwBi" id="5PDtixSTyMA" role="33vP2m">
               <node concept="37vLTw" id="5PDtixSTyMb" role="2Oq$k0">
@@ -326,7 +326,7 @@
           <node concept="37vLTI" id="5PDtixSTIY2" role="3clFbG">
             <node concept="2OqwBi" id="5PDtixSTIY5" role="37vLTJ">
               <node concept="37vLTw" id="5PDtixSTIY8" role="2Oq$k0">
-                <ref role="3cqZAo" node="5PDtixSU330" />
+                <ref role="3cqZAo" node="5PDtixSU330" resolve="file" />
               </node>
               <node concept="3TrcHB" id="5PDtixSTIY9" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
@@ -399,7 +399,7 @@
                     <ref role="3cqZAo" node="5PDtixSU330" resolve="file" />
                   </node>
                   <node concept="3Tsc0h" id="3PUPjB2t_xX" role="2OqNvi">
-                    <ref role="3TtcxE" to="5rf1:3DMRBeFsYdJ" />
+                    <ref role="3TtcxE" to="5rf1:3DMRBeFsYdJ" resolve="content" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="3PUPjB2t_xY" role="2OqNvi">
@@ -419,13 +419,13 @@
         </node>
         <node concept="3cpWs6" id="5PDtixSTJd0" role="3cqZAp">
           <node concept="37vLTw" id="5PDtixSTJd1" role="3cqZAk">
-            <ref role="3cqZAo" node="5PDtixSU330" />
+            <ref role="3cqZAo" node="5PDtixSU330" resolve="file" />
           </node>
         </node>
       </node>
       <node concept="3Tm1VV" id="5PDtixSTyhL" role="1B3o_S" />
       <node concept="3Tqbb2" id="5PDtixSTKNx" role="3clF45">
-        <ref role="ehGHo" to="5rf1:3DMRBeFsYdC" />
+        <ref role="ehGHo" to="5rf1:3DMRBeFsYdC" resolve="SysMLv2File" />
       </node>
       <node concept="37vLTG" id="5PDtixSU2O_" role="3clF46">
         <property role="TrG5h" value="targetModel" />
@@ -470,33 +470,70 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="3PUPjB2rVKP" role="3cqZAp">
-          <node concept="3clFbC" id="3PUPjB2rVKQ" role="3clFbw">
-            <node concept="37vLTw" id="3PUPjB2rVKR" role="3uHU7B">
+        <node concept="3clFbJ" id="3PUPjB2uCT9" role="3cqZAp">
+          <node concept="3y3z36" id="3PUPjB2uCTa" role="3clFbw">
+            <node concept="37vLTw" id="3PUPjB2uCTb" role="3uHU7B">
               <ref role="3cqZAo" node="3PUPjB2rVKL" resolve="member" />
             </node>
-            <node concept="10Nm6u" id="3PUPjB2rVKS" role="3uHU7w" />
+            <node concept="10Nm6u" id="3PUPjB2uCTc" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="3PUPjB2rVKU" role="3clFbx">
-            <node concept="YS8fn" id="3PUPjB2rVKX" role="3cqZAp">
-              <node concept="2ShNRf" id="3PUPjB2rVZr" role="YScLw">
-                <node concept="1pGfFk" id="3PUPjB2rW5A" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="3PUPjB2rW5B" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: non-package-member body element" />
+          <node concept="3clFbS" id="3PUPjB2uCTe" role="3clFbx">
+            <node concept="3cpWs6" id="3PUPjB2uCTf" role="3cqZAp">
+              <node concept="2OqwBi" id="3PUPjB2uD7J" role="3cqZAk">
+                <node concept="Xjq3P" id="3PUPjB2uCTh" role="2Oq$k0" />
+                <node concept="liA8E" id="3PUPjB2uD7K" role="2OqNvi">
+                  <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                  <node concept="37vLTw" id="3PUPjB2uD7L" role="37wK5m">
+                    <ref role="3cqZAo" node="3PUPjB2rVKL" resolve="member" />
                   </node>
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="3PUPjB2rVKY" role="3cqZAp">
-          <node concept="2OqwBi" id="3PUPjB2rWk4" role="3cqZAk">
-            <node concept="Xjq3P" id="3PUPjB2rVL0" role="2Oq$k0" />
-            <node concept="liA8E" id="3PUPjB2rWk5" role="2OqNvi">
-              <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
-              <node concept="37vLTw" id="3PUPjB2rWk6" role="37wK5m">
-                <ref role="3cqZAo" node="3PUPjB2rVKL" resolve="member" />
+        <node concept="3cpWs8" id="3PUPjB2uMOl" role="3cqZAp">
+          <node concept="3cpWsn" id="3PUPjB2uMOk" role="3cpWs9">
+            <property role="TrG5h" value="importRule" />
+            <node concept="3uibUv" id="3PUPjB2uMOm" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$ImportRuleContext" resolve="SysMLv2Parser.ImportRuleContext" />
+            </node>
+            <node concept="2OqwBi" id="3PUPjB2uNnL" role="33vP2m">
+              <node concept="37vLTw" id="3PUPjB2uN2U" role="2Oq$k0">
+                <ref role="3cqZAo" node="3PUPjB2rVKI" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="3PUPjB2uNnM" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$PackageBodyElementContext.importRule()" resolve="importRule" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3PUPjB2uMOo" role="3cqZAp">
+          <node concept="3y3z36" id="3PUPjB2uMOp" role="3clFbw">
+            <node concept="37vLTw" id="3PUPjB2uMOq" role="3uHU7B">
+              <ref role="3cqZAo" node="3PUPjB2uMOk" resolve="importRule" />
+            </node>
+            <node concept="10Nm6u" id="3PUPjB2uMOr" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="3PUPjB2uMOt" role="3clFbx">
+            <node concept="3cpWs6" id="3PUPjB2uMOu" role="3cqZAp">
+              <node concept="2OqwBi" id="3PUPjB2uNho" role="3cqZAk">
+                <node concept="Xjq3P" id="3PUPjB2uMOw" role="2Oq$k0" />
+                <node concept="liA8E" id="3PUPjB2uNhp" role="2OqNvi">
+                  <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                  <node concept="37vLTw" id="3PUPjB2uNhq" role="37wK5m">
+                    <ref role="3cqZAo" node="3PUPjB2uMOk" resolve="importRule" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="YS8fn" id="3PUPjB2uMO$" role="3cqZAp">
+          <node concept="2ShNRf" id="3PUPjB2uNhr" role="YScLw">
+            <node concept="1pGfFk" id="3PUPjB2uNnA" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+              <node concept="Xl_RD" id="3PUPjB2uNnB" role="37wK5m">
+                <property role="Xl_RC" value="Unsupported SysML v2 construct: element filter / alias member" />
               </node>
             </node>
           </node>
@@ -897,6 +934,224 @@
       </node>
       <node concept="3Tm1VV" id="3PUPjB2sdD5" role="1B3o_S" />
       <node concept="3uibUv" id="3PUPjB2sdD6" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="3PUPjB2v7dL" role="jymVt">
+      <property role="TrG5h" value="visitImportRule" />
+      <node concept="2AHcQZ" id="3PUPjB2v7dM" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="37vLTG" id="3PUPjB2v7dN" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="3PUPjB2v7dO" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$ImportRuleContext" resolve="SysMLv2Parser.ImportRuleContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3PUPjB2v7dP" role="3clF47">
+        <node concept="3clFbJ" id="3PUPjB2v7dQ" role="3cqZAp">
+          <node concept="3y3z36" id="3PUPjB2v7dR" role="3clFbw">
+            <node concept="2OqwBi" id="3PUPjB2v9iV" role="3uHU7B">
+              <node concept="37vLTw" id="3PUPjB2v7td" role="2Oq$k0">
+                <ref role="3cqZAo" node="3PUPjB2v7dN" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="3PUPjB2v9iW" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$ImportRuleContext.visibilityIndicator()" resolve="visibilityIndicator" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="3PUPjB2v7dT" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="3PUPjB2v7dV" role="3clFbx">
+            <node concept="YS8fn" id="3PUPjB2v7dY" role="3cqZAp">
+              <node concept="2ShNRf" id="3PUPjB2v7tf" role="YScLw">
+                <node concept="1pGfFk" id="3PUPjB2v7zq" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="3PUPjB2v7zr" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: visibility prefix on import" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3PUPjB2v7dZ" role="3cqZAp">
+          <node concept="3y3z36" id="3PUPjB2v7e0" role="3clFbw">
+            <node concept="2OqwBi" id="3PUPjB2v9j6" role="3uHU7B">
+              <node concept="37vLTw" id="3PUPjB2v7LL" role="2Oq$k0">
+                <ref role="3cqZAo" node="3PUPjB2v7dN" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="3PUPjB2v9j7" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$ImportRuleContext.ALL()" resolve="ALL" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="3PUPjB2v7e2" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="3PUPjB2v7e4" role="3clFbx">
+            <node concept="YS8fn" id="3PUPjB2v7e7" role="3cqZAp">
+              <node concept="2ShNRf" id="3PUPjB2v7LN" role="YScLw">
+                <node concept="1pGfFk" id="3PUPjB2v7RY" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="3PUPjB2v7RZ" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: import all modifier" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3PUPjB2v7e9" role="3cqZAp">
+          <node concept="3cpWsn" id="3PUPjB2v7e8" role="3cpWs9">
+            <property role="TrG5h" value="membershipImport" />
+            <node concept="3uibUv" id="3PUPjB2v7ea" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$MembershipImportContext" resolve="SysMLv2Parser.MembershipImportContext" />
+            </node>
+            <node concept="2OqwBi" id="3PUPjB2v9kL" role="33vP2m">
+              <node concept="2OqwBi" id="3PUPjB2v9jp" role="2Oq$k0">
+                <node concept="37vLTw" id="3PUPjB2v86t" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3PUPjB2v7dN" resolve="ctx" />
+                </node>
+                <node concept="liA8E" id="3PUPjB2v9jq" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$ImportRuleContext.importDeclaration()" resolve="importDeclaration" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3PUPjB2v9kM" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$ImportDeclarationContext.membershipImport()" resolve="membershipImport" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3PUPjB2v7ed" role="3cqZAp">
+          <node concept="3clFbC" id="3PUPjB2v7ee" role="3clFbw">
+            <node concept="37vLTw" id="3PUPjB2v7ef" role="3uHU7B">
+              <ref role="3cqZAo" node="3PUPjB2v7e8" resolve="membershipImport" />
+            </node>
+            <node concept="10Nm6u" id="3PUPjB2v7eg" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="3PUPjB2v7ei" role="3clFbx">
+            <node concept="YS8fn" id="3PUPjB2v7el" role="3cqZAp">
+              <node concept="2ShNRf" id="3PUPjB2v86v" role="YScLw">
+                <node concept="1pGfFk" id="3PUPjB2v8cE" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="3PUPjB2v8cF" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: namespace/wildcard import" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3PUPjB2v7em" role="3cqZAp">
+          <node concept="3y3z36" id="3PUPjB2v7en" role="3clFbw">
+            <node concept="2OqwBi" id="3PUPjB2v9j_" role="3uHU7B">
+              <node concept="37vLTw" id="3PUPjB2v8r1" role="2Oq$k0">
+                <ref role="3cqZAo" node="3PUPjB2v7e8" resolve="membershipImport" />
+              </node>
+              <node concept="liA8E" id="3PUPjB2v9jA" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MembershipImportContext.STAR_STAR()" resolve="STAR_STAR" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="3PUPjB2v7ep" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="3PUPjB2v7er" role="3clFbx">
+            <node concept="YS8fn" id="3PUPjB2v7eu" role="3cqZAp">
+              <node concept="2ShNRf" id="3PUPjB2v8r3" role="YScLw">
+                <node concept="1pGfFk" id="3PUPjB2v8xe" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="3PUPjB2v8xf" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: recursive import suffix" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="3PUPjB2v7ev" role="3cqZAp">
+          <node concept="3clFbC" id="3PUPjB2v7ew" role="3clFbw">
+            <node concept="2OqwBi" id="3PUPjB2v9l6" role="3uHU7B">
+              <node concept="2OqwBi" id="3PUPjB2v9jS" role="2Oq$k0">
+                <node concept="37vLTw" id="3PUPjB2v8JH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3PUPjB2v7dN" resolve="ctx" />
+                </node>
+                <node concept="liA8E" id="3PUPjB2v9jT" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$ImportRuleContext.relationshipBody()" resolve="relationshipBody" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3PUPjB2v9l7" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$RelationshipBodyContext.SEMI()" resolve="SEMI" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="3PUPjB2v7ez" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="3PUPjB2v7e_" role="3clFbx">
+            <node concept="YS8fn" id="3PUPjB2v7eC" role="3cqZAp">
+              <node concept="2ShNRf" id="3PUPjB2v8JJ" role="YScLw">
+                <node concept="1pGfFk" id="3PUPjB2v8PU" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="3PUPjB2v8PV" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: import body" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3PUPjB2v7eE" role="3cqZAp">
+          <node concept="3cpWsn" id="3PUPjB2v7eD" role="3cpWs9">
+            <property role="TrG5h" value="importedName" />
+            <node concept="17QB3L" id="3PUPjB2vwop" role="1tU5fm" />
+            <node concept="2OqwBi" id="3PUPjB2v9lu" role="33vP2m">
+              <node concept="2OqwBi" id="3PUPjB2v9kc" role="2Oq$k0">
+                <node concept="37vLTw" id="3PUPjB2v94p" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3PUPjB2v7e8" resolve="membershipImport" />
+                </node>
+                <node concept="liA8E" id="3PUPjB2v9kd" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$MembershipImportContext.qualifiedName()" resolve="qualifiedName" />
+                </node>
+              </node>
+              <node concept="liA8E" id="3PUPjB2v9lv" role="2OqNvi">
+                <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3PUPjB2v7eJ" role="3cqZAp">
+          <node concept="3cpWsn" id="3PUPjB2v7eI" role="3cpWs9">
+            <property role="TrG5h" value="imp" />
+            <node concept="3Tqbb2" id="3PUPjB2vl1e" role="1tU5fm">
+              <ref role="ehGHo" to="5rf1:3PUPjB2ukTG" resolve="SysMLv2Import" />
+            </node>
+            <node concept="2ShNRf" id="3PUPjB2vl4y" role="33vP2m">
+              <node concept="3zrR0B" id="3PUPjB2vl4$" role="2ShVmc">
+                <node concept="3Tqbb2" id="3PUPjB2vl4A" role="3zrR0E">
+                  <ref role="ehGHo" to="5rf1:3PUPjB2ukTG" resolve="SysMLv2Import" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3PUPjB2vl5O" role="3cqZAp">
+          <node concept="37vLTI" id="3PUPjB2vl5Q" role="3clFbG">
+            <node concept="2OqwBi" id="3PUPjB2vl5T" role="37vLTJ">
+              <node concept="37vLTw" id="3PUPjB2vl5W" role="2Oq$k0">
+                <ref role="3cqZAo" node="3PUPjB2v7eI" resolve="imp" />
+              </node>
+              <node concept="3TrcHB" id="3PUPjB2vl5X" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:3PUPjB2uof9" resolve="importedName" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="3PUPjB2vl5Y" role="37vLTx">
+              <ref role="3cqZAo" node="3PUPjB2v7eD" resolve="importedName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="3PUPjB2v7eO" role="3cqZAp">
+          <node concept="37vLTw" id="3PUPjB2v7eP" role="3cqZAk">
+            <ref role="3cqZAo" node="3PUPjB2v7eI" resolve="imp" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3PUPjB2v7eQ" role="1B3o_S" />
+      <node concept="3uibUv" id="3PUPjB2v7eR" role="3clF45">
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
     </node>
