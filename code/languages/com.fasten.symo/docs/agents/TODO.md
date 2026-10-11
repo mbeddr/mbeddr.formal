@@ -774,3 +774,35 @@ run config `_100_test_sysmlv2_ports`. Full suite (`_020`–`_100`, 23 tests) gre
 `item` usages yet (common in real models, needs `item def`/`item` first); no test for the
 "part usage inside port def" rejection path (the `parseFileIntoModel` EDT hop makes exception
 assertions awkward); scopes for the ref concepts' `definition` link still missing.
+
+**Iteration 10 (2026-10-11) — items (`item def` / `item` usage)**: new concepts
+`SysMLv2ItemDefinition` (`item def`, `ISysMLv2FileContent`, `specializes:
+SysMLv2ItemDefinitionRef[0..n]`, `content: ISysMLv2ItemBodyContent[0..n]`), `SysMLv2ItemDefinitionRef`
+(fourth copy of the `<name>Ref`-with-fallback-name pattern), `SysMLv2ItemUsage` (`item`; implements
+`ISysMLv2PartBodyContent`, `ISysMLv2PortBodyContent` and `ISysMLv2ItemBodyContent`; children
+`direction`, `multiplicity`, `type` — same shape as port usage minus conjugation), and interface
+`ISysMLv2ItemBodyContent` (implemented by `SysMLv2ItemUsage`, `SysMLv2AttributeUsage`,
+`SysMLv2EmptyLine`). So items can now appear in part defs (`item contents[0..1] : Diesel;`), as
+directed flow features in port defs (`out item fuel : Fuel;`), and nested in item defs. All new
+structure/behavior/editor/textgen roots live in virtual folder `part.item` (interface in `base`),
+following the folder layout the user introduced alongside iteration 9.
+
+Importer: `visitItemDefinition` (cloned from `visitPartDefinition` — same
+`occurrenceDefinitionPrefix` grammar shape — plus the explicit "element not allowed in item
+definition body" check port defs already have), `visitItemUsage` (cloned from `visitPortUsage` with
+the conjugation handling stripped), dispatch in `visitDefinitionElement`/`visitStructureUsageElement`.
+Reifier: `reifyItemDefinitionRefs` + `TestUtils` wrapper. Item refs resolve to item defs only — in
+SysML v2 a part def *is* an item def, so `item x : SomePartDef` is legal but stays unresolved here
+(fallback name only); revisit if/when a shared definition supertype is introduced.
+
+Sandbox `_110_Items`; `_110_ItemsTest` (`testImportItems` — `specializes`/`;` variants;
+`testRoundtripItems`; `testReifyResolvesItemTypesAndSpecializations` — forward ref), run config
+`_110_test_sysmlv2_items`. Full suite (`_020`–`_110`, 26 tests) green. The cloned item-def editor hit
+the already-recorded "re-inserted style item gets `flag=true`" gotcha again (fixed the same way).
+
+**Observation for a future refactoring**: part/attribute/port/item now each carry an identical
+definition concept, `<X>DefinitionRef` concept, behavior, ref editor/textgen, definition
+editor/textgen, reifier method and `TestUtils` wrapper — the duplication is deliberate per the
+iteration-7a decision, but at four copies a shared abstract `SysMLv2Definition` /
+`SysMLv2DefinitionRef` (with the reifier keyed on the ref's expected definition concept) would remove
+most of it. Worth deciding before adding more definition kinds (actions, states, requirements).

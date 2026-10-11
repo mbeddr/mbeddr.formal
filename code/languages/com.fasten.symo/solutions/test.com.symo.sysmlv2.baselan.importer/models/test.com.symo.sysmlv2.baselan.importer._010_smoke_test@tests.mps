@@ -204,6 +204,18 @@
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
       </concept>
+      <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
+        <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
+      </concept>
+      <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
+        <child id="7140692429574298134" name="multiplicity" index="3w00ZS" />
+        <child id="7140692429574298135" name="type" index="3w00ZT" />
+        <child id="7140692429574298133" name="direction" index="3w00ZV" />
+      </concept>
+      <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
+        <child id="7140692429574298127" name="specializes" index="3w00Zx" />
+        <child id="7140692429574298128" name="content" index="3w00ZY" />
+      </concept>
       <concept id="7140692429570900090" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureDirection" flags="ng" index="3xZtmk">
         <property id="7140692429570900105" name="kind" index="3xZtlB" />
       </concept>
@@ -1490,6 +1502,78 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6coPuU2YyQ0" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="6coPuU37$59" role="jymVt">
+      <property role="TrG5h" value="reifyItemDefinitionRefs" />
+      <node concept="3cqZAl" id="6coPuU37$5d" role="3clF45" />
+      <node concept="37vLTG" id="6coPuU37$5e" role="3clF46">
+        <property role="3TUv4t" value="true" />
+        <property role="TrG5h" value="m" />
+        <node concept="H_c77" id="6coPuU37$5g" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6coPuU37$5h" role="3clF46">
+        <property role="3TUv4t" value="true" />
+        <property role="TrG5h" value="proj" />
+        <node concept="3uibUv" id="6coPuU37$5j" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6coPuU37$5k" role="3clF47">
+        <node concept="3clFbF" id="6coPuU37$5l" role="3cqZAp">
+          <node concept="2OqwBi" id="6coPuU37$5n" role="3clFbG">
+            <node concept="2YIFZM" id="6coPuU37$5q" role="2Oq$k0">
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+            </node>
+            <node concept="liA8E" id="6coPuU37$5r" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeAndWait(java.lang.Runnable)" resolve="invokeAndWait" />
+              <node concept="2ShNRf" id="6coPuU37$5s" role="37wK5m">
+                <node concept="YeOm9" id="6coPuU37$5u" role="2ShVmc">
+                  <node concept="1Y3b0j" id="6coPuU37$5x" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <property role="373rjd" value="true" />
+                    <property role="jj94n" value="Anonymous in reifyPartDefinitionRefs() in TestUtils" />
+                    <property role="TrG5h" value="Runnable$anonymous" />
+                    <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3clFb_" id="6coPuU37$5z" role="jymVt">
+                      <property role="TrG5h" value="run" />
+                      <node concept="3cqZAl" id="6coPuU37$5B" role="3clF45" />
+                      <node concept="3clFbS" id="6coPuU37$5C" role="3clF47">
+                        <node concept="1QHqEO" id="6coPuU37$5D" role="3cqZAp">
+                          <node concept="1QHqEC" id="6coPuU37$5G" role="1QHqEI">
+                            <node concept="3clFbS" id="6coPuU37$5I" role="1bW5cS">
+                              <node concept="3clFbF" id="6coPuU37$5J" role="3cqZAp">
+                                <node concept="2YIFZM" id="6coPuU37$5L" role="3clFbG">
+                                  <ref role="1Pybhc" to="uj5z:7JKstLNlJ4o" resolve="SysMLv2TypeReifier" />
+                                  <ref role="37wK5l" to="uj5z:6coPuU37zMz" resolve="reifyItemDefinitionRefs" />
+                                  <node concept="37vLTw" id="6coPuU37$5M" role="37wK5m">
+                                    <ref role="3cqZAo" node="6coPuU37$5e" resolve="m" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="6coPuU37$5N" role="ukAjM">
+                            <node concept="37vLTw" id="6coPuU37$5Q" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6coPuU37$5h" resolve="proj" />
+                            </node>
+                            <node concept="liA8E" id="6coPuU37$5R" role="2OqNvi">
+                              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3Tm1VV" id="6coPuU37$5S" role="1B3o_S" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6coPuU37$5T" role="1B3o_S" />
     </node>
   </node>
   <node concept="1lH9Xt" id="3PUPjB2qhEE">
@@ -3669,6 +3753,477 @@
               <ref role="3cqZAo" node="6coPuU2ZpcF" resolve="m" />
             </node>
             <node concept="1jxXqW" id="6coPuU2ZpeT" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="6coPuU37EOh">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_110_ItemsTest" />
+    <node concept="1qefOq" id="6coPuU37EOi" role="1SKRRt">
+      <node concept="2h0jOr" id="6coPuU37EOk" role="1qenE9">
+        <property role="TrG5h" value="ItemsFile" />
+        <node concept="8EhVW" id="6coPuU37EOl" role="2h0jOs">
+          <property role="TrG5h" value="Mass" />
+        </node>
+        <node concept="3w00Z_" id="6coPuU37EOm" role="2h0jOs">
+          <property role="TrG5h" value="Fuel" />
+          <node concept="8EhU9" id="6coPuU37EOn" role="3w00ZY">
+            <property role="TrG5h" value="mass" />
+            <node concept="8EhVB" id="6coPuU37EOo" role="8EhU5">
+              <property role="8EhVw" value="Mass" />
+            </node>
+          </node>
+          <node concept="3w00Zz" id="6coPuU37EOp" role="3w00ZY">
+            <property role="TrG5h" value="additive" />
+          </node>
+        </node>
+        <node concept="3w00Z_" id="6coPuU37EOq" role="2h0jOs">
+          <property role="TrG5h" value="Diesel" />
+          <node concept="3w00Zy" id="6coPuU37EOr" role="3w00Zx">
+            <property role="3w00ZX" value="Fuel" />
+          </node>
+        </node>
+        <node concept="3xZtmp" id="6coPuU37EOs" role="2h0jOs">
+          <property role="TrG5h" value="FuelPort" />
+          <node concept="3w00Zz" id="6coPuU37EOt" role="3xZtmj">
+            <property role="TrG5h" value="fuel" />
+            <node concept="3xZtmk" id="6coPuU37EOu" role="3w00ZV">
+              <property role="3xZtlB" value="3th7jSwWnJl/out" />
+            </node>
+            <node concept="3w00Zy" id="6coPuU37EOv" role="3w00ZT">
+              <property role="3w00ZX" value="Fuel" />
+            </node>
+          </node>
+        </node>
+        <node concept="3ZUotO" id="6coPuU37EOw" role="2h0jOs">
+          <property role="TrG5h" value="Tank" />
+          <node concept="3w00Zz" id="6coPuU37EOx" role="3ZUouT">
+            <property role="TrG5h" value="contents" />
+            <node concept="8EhVq" id="6coPuU37EOy" role="3w00ZS">
+              <property role="8EhVr" value="0" />
+              <property role="8EhVk" value="1" />
+            </node>
+            <node concept="3w00Zy" id="6coPuU37EOz" role="3w00ZT">
+              <property role="3w00ZX" value="Diesel" />
+            </node>
+          </node>
+          <node concept="3xZtmn" id="6coPuU37EO$" role="3ZUouT">
+            <property role="TrG5h" value="outlet" />
+            <node concept="3xZtmm" id="6coPuU37EO_" role="3xZtlF">
+              <property role="3xZtlI" value="FuelPort" />
+            </node>
+          </node>
+        </node>
+        <node concept="3xLA65" id="6coPuU37EOA" role="lGtFl">
+          <property role="TrG5h" value="itemsFile" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6coPuU37EOB" role="1SL9yI">
+      <property role="TrG5h" value="testImportItems" />
+      <node concept="3cqZAl" id="6coPuU37EOE" role="3clF45" />
+      <node concept="3clFbS" id="6coPuU37EOF" role="3clF47">
+        <node concept="3cpWs8" id="6coPuU37EOG" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU37EOJ" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="17QB3L" id="6coPuU37EOL" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EOM" role="3cqZAp">
+          <node concept="37vLTI" id="6coPuU37EOO" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EOR" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EOS" role="37vLTx">
+              <property role="Xl_RC" value="attribute def Mass;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EOT" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU37EOV" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EOY" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EOZ" role="37vLTx">
+              <property role="Xl_RC" value="item def Fuel {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EP0" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU37EP2" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EP5" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EP6" role="37vLTx">
+              <property role="Xl_RC" value="  attribute mass : Mass;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EP7" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU37EP9" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EPc" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EPd" role="37vLTx">
+              <property role="Xl_RC" value="  item additive;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EPe" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU37EPg" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EPj" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EPk" role="37vLTx">
+              <property role="Xl_RC" value="}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EPl" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU37EPn" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EPq" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EPr" role="37vLTx">
+              <property role="Xl_RC" value="item def Diesel specializes Fuel;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EPs" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU37EPu" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EPx" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EPy" role="37vLTx">
+              <property role="Xl_RC" value="port def FuelPort {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EPz" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU37EP_" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EPC" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EPD" role="37vLTx">
+              <property role="Xl_RC" value="  out item fuel : Fuel;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EPE" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU37EPG" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EPJ" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EPK" role="37vLTx">
+              <property role="Xl_RC" value="}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EPL" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU37EPN" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EPQ" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EPR" role="37vLTx">
+              <property role="Xl_RC" value="part def Tank {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EPS" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU37EPU" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EPX" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EPY" role="37vLTx">
+              <property role="Xl_RC" value="  item contents[0..1] : Diesel;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EPZ" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU37EQ1" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EQ4" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EQ5" role="37vLTx">
+              <property role="Xl_RC" value="  port outlet : FuelPort;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EQ6" role="3cqZAp">
+          <node concept="d57v9" id="6coPuU37EQ8" role="3clFbG">
+            <node concept="37vLTw" id="6coPuU37EQb" role="37vLTJ">
+              <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6coPuU37EQc" role="37vLTx">
+              <property role="Xl_RC" value="}" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6coPuU37EQd" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU37EQg" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="6coPuU37EQi" role="1tU5fm" />
+            <node concept="2YIFZM" id="6coPuU37EQj" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="6coPuU37EQk" role="37wK5m">
+                <ref role="3cqZAo" node="6coPuU37EOJ" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6coPuU37EQl" role="37wK5m">
+                <property role="Xl_RC" value="ItemsFile" />
+              </node>
+              <node concept="1jxXqW" id="6coPuU37EQm" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EQn" role="3cqZAp">
+          <node concept="2YIFZM" id="6coPuU37EQp" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="6coPuU37EQq" role="37wK5m">
+              <ref role="3cqZAo" node="6coPuU37EQg" resolve="m" />
+            </node>
+            <node concept="3xONca" id="6coPuU37EQr" role="37wK5m">
+              <ref role="3xOPvv" node="6coPuU37EOA" resolve="itemsFile" />
+            </node>
+            <node concept="1jxXqW" id="6coPuU37EQs" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37EQt" role="3cqZAp">
+          <node concept="2YIFZM" id="6coPuU37EQv" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="6coPuU37EQw" role="37wK5m">
+              <ref role="3cqZAo" node="6coPuU37EQg" resolve="m" />
+            </node>
+            <node concept="1jxXqW" id="6coPuU37EQx" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6coPuU37EQy" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripItems" />
+      <node concept="3cqZAl" id="6coPuU37EQ_" role="3clF45" />
+      <node concept="3clFbS" id="6coPuU37EQA" role="3clF47">
+        <node concept="3cpWs8" id="6coPuU37EQB" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU37EQE" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="17QB3L" id="6coPuU37EQG" role="1tU5fm" />
+            <node concept="Xl_RD" id="6coPuU37EQH" role="33vP2m">
+              <property role="Xl_RC" value="attribute def Mass {&#10;}&#10;item def Fuel {&#10;  attribute mass : Mass;&#10;  item additive;&#10;}&#10;item def Diesel :&gt; Fuel {&#10;}&#10;port def FuelPort {&#10;  out item fuel : Fuel;&#10;}&#10;part def Tank {&#10;  item contents[0..1] : Diesel;&#10;  port outlet : FuelPort;&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6coPuU37EQI" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU37EQL" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <node concept="17QB3L" id="6coPuU37EQN" role="1tU5fm" />
+            <node concept="2YIFZM" id="6coPuU37EQO" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="6coPuU37EQP" role="37wK5m">
+                <ref role="3cqZAo" node="6coPuU37EQE" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6coPuU37EQQ" role="37wK5m">
+                <property role="Xl_RC" value="ItemsFile" />
+              </node>
+              <node concept="1jxXqW" id="6coPuU37EQR" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="6coPuU37EQS" role="3cqZAp">
+          <node concept="37vLTw" id="6coPuU37EQV" role="3tpDZB">
+            <ref role="3cqZAo" node="6coPuU37EQE" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="6coPuU37EQW" role="3tpDZA">
+            <ref role="3cqZAo" node="6coPuU37EQL" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6coPuU37EQX" role="1SL9yI">
+      <property role="TrG5h" value="testReifyResolvesItemTypesAndSpecializations" />
+      <node concept="3cqZAl" id="6coPuU37ER0" role="3clF45" />
+      <node concept="3clFbS" id="6coPuU37ER1" role="3clF47">
+        <node concept="3cpWs8" id="6coPuU37ER2" role="3cqZAp">
+          <node concept="3cpWsn" id="6coPuU37ER5" role="3cpWs9">
+            <property role="TrG5h" value="m" />
+            <node concept="H_c77" id="6coPuU37ER7" role="1tU5fm" />
+            <node concept="2YIFZM" id="6coPuU37ER8" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="Xl_RD" id="6coPuU37ER9" role="37wK5m">
+                <property role="Xl_RC" value="part def Tank {&#10;  item contents : Diesel;&#10;}&#10;item def Fuel;&#10;item def Diesel :&gt; Fuel;&#10;" />
+              </node>
+              <node concept="Xl_RD" id="6coPuU37ERa" role="37wK5m">
+                <property role="Xl_RC" value="ReifyItemsFile" />
+              </node>
+              <node concept="1jxXqW" id="6coPuU37ERb" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37ERc" role="3cqZAp">
+          <node concept="2YIFZM" id="6coPuU37ERe" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6coPuU37$59" resolve="reifyItemDefinitionRefs" />
+            <node concept="37vLTw" id="6coPuU37ERf" role="37wK5m">
+              <ref role="3cqZAo" node="6coPuU37ER5" resolve="m" />
+            </node>
+            <node concept="1jxXqW" id="6coPuU37ERg" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="1QHqEK" id="6coPuU37ERh" role="3cqZAp">
+          <node concept="1QHqEC" id="6coPuU37ERk" role="1QHqEI">
+            <node concept="3clFbS" id="6coPuU37ERm" role="1bW5cS">
+              <node concept="3cpWs8" id="6coPuU37ERn" role="3cqZAp">
+                <node concept="3cpWsn" id="6coPuU37ERq" role="3cpWs9">
+                  <property role="TrG5h" value="contents" />
+                  <node concept="3Tqbb2" id="6coPuU37ERs" role="1tU5fm">
+                    <ref role="ehGHo" to="5rf1:6coPuU36dCd" resolve="SysMLv2ItemUsage" />
+                  </node>
+                  <node concept="1PxgMI" id="6coPuU37ERt" role="33vP2m">
+                    <node concept="2OqwBi" id="6coPuU37ERw" role="1m5AlR">
+                      <node concept="2OqwBi" id="6coPuU37ERz" role="2Oq$k0">
+                        <node concept="1PxgMI" id="6coPuU37ERA" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6coPuU37ERD" role="1m5AlR">
+                            <node concept="2OqwBi" id="6coPuU37ERG" role="2Oq$k0">
+                              <node concept="2OqwBi" id="6coPuU37ERJ" role="2Oq$k0">
+                                <node concept="2OqwBi" id="6coPuU37ERM" role="2Oq$k0">
+                                  <node concept="37vLTw" id="6coPuU37ERP" role="2Oq$k0">
+                                    <ref role="3cqZAo" node="6coPuU37ER5" resolve="m" />
+                                  </node>
+                                  <node concept="2RRcyG" id="6coPuU37ERQ" role="2OqNvi">
+                                    <node concept="chp4Y" id="6coPuU37ERR" role="3MHsoP">
+                                      <ref role="cht4Q" to="5rf1:3DMRBeFsYdC" resolve="SysMLv2File" />
+                                    </node>
+                                  </node>
+                                </node>
+                                <node concept="1uHKPH" id="6coPuU37ERS" role="2OqNvi" />
+                              </node>
+                              <node concept="3Tsc0h" id="6coPuU37ERT" role="2OqNvi">
+                                <ref role="3TtcxE" to="5rf1:3DMRBeFsYdJ" />
+                              </node>
+                            </node>
+                            <node concept="1uHKPH" id="6coPuU37ERU" role="2OqNvi" />
+                          </node>
+                          <node concept="chp4Y" id="6coPuU37ERV" role="3oSUPX">
+                            <ref role="cht4Q" to="5rf1:3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
+                          </node>
+                        </node>
+                        <node concept="3Tsc0h" id="6coPuU37ERW" role="2OqNvi">
+                          <ref role="3TtcxE" to="5rf1:3PUPjB2$Pa0" resolve="content" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="6coPuU37ERX" role="2OqNvi" />
+                    </node>
+                    <node concept="chp4Y" id="6coPuU37ERY" role="3oSUPX">
+                      <ref role="cht4Q" to="5rf1:6coPuU36dCd" resolve="SysMLv2ItemUsage" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3cpWs8" id="6coPuU37ERZ" role="3cqZAp">
+                <node concept="3cpWsn" id="6coPuU37ES2" role="3cpWs9">
+                  <property role="TrG5h" value="diesel" />
+                  <node concept="3Tqbb2" id="6coPuU37ES4" role="1tU5fm">
+                    <ref role="ehGHo" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
+                  </node>
+                  <node concept="1PxgMI" id="6coPuU37ES5" role="33vP2m">
+                    <node concept="2OqwBi" id="6coPuU37ES8" role="1m5AlR">
+                      <node concept="2OqwBi" id="6coPuU37ESb" role="2Oq$k0">
+                        <node concept="2OqwBi" id="6coPuU37ESe" role="2Oq$k0">
+                          <node concept="2OqwBi" id="6coPuU37ESh" role="2Oq$k0">
+                            <node concept="37vLTw" id="6coPuU37ESk" role="2Oq$k0">
+                              <ref role="3cqZAo" node="6coPuU37ER5" resolve="m" />
+                            </node>
+                            <node concept="2RRcyG" id="6coPuU37ESl" role="2OqNvi">
+                              <node concept="chp4Y" id="6coPuU37ESm" role="3MHsoP">
+                                <ref role="cht4Q" to="5rf1:3DMRBeFsYdC" resolve="SysMLv2File" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="1uHKPH" id="6coPuU37ESn" role="2OqNvi" />
+                        </node>
+                        <node concept="3Tsc0h" id="6coPuU37ESo" role="2OqNvi">
+                          <ref role="3TtcxE" to="5rf1:3DMRBeFsYdJ" />
+                        </node>
+                      </node>
+                      <node concept="1yVyf7" id="6coPuU37ESp" role="2OqNvi" />
+                    </node>
+                    <node concept="chp4Y" id="6coPuU37ESq" role="3oSUPX">
+                      <ref role="cht4Q" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3vlDli" id="6coPuU37ESr" role="3cqZAp">
+                <node concept="Xl_RD" id="6coPuU37ESu" role="3tpDZB">
+                  <property role="Xl_RC" value="Diesel" />
+                </node>
+                <node concept="2OqwBi" id="6coPuU37ESv" role="3tpDZA">
+                  <node concept="2OqwBi" id="6coPuU37ESy" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6coPuU37ES_" role="2Oq$k0">
+                      <node concept="37vLTw" id="6coPuU37ESC" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6coPuU37ERq" resolve="contents" />
+                      </node>
+                      <node concept="3TrEf2" id="6coPuU37ESD" role="2OqNvi">
+                        <ref role="3Tt5mk" to="5rf1:6coPuU36dCn" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="6coPuU37ESE" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5rf1:6coPuU36dCk" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="6coPuU37ESF" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3vlDli" id="6coPuU37ESG" role="3cqZAp">
+                <node concept="Xl_RD" id="6coPuU37ESJ" role="3tpDZB">
+                  <property role="Xl_RC" value="Fuel" />
+                </node>
+                <node concept="2OqwBi" id="6coPuU37ESK" role="3tpDZA">
+                  <node concept="2OqwBi" id="6coPuU37ESN" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6coPuU37ESQ" role="2Oq$k0">
+                      <node concept="2OqwBi" id="6coPuU37EST" role="2Oq$k0">
+                        <node concept="37vLTw" id="6coPuU37ESW" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6coPuU37ES2" resolve="diesel" />
+                        </node>
+                        <node concept="3Tsc0h" id="6coPuU37ESX" role="2OqNvi">
+                          <ref role="3TtcxE" to="5rf1:6coPuU36dCf" />
+                        </node>
+                      </node>
+                      <node concept="1uHKPH" id="6coPuU37ESY" role="2OqNvi" />
+                    </node>
+                    <node concept="3TrEf2" id="6coPuU37ESZ" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5rf1:6coPuU36dCk" />
+                    </node>
+                  </node>
+                  <node concept="3TrcHB" id="6coPuU37ET0" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="2OqwBi" id="6coPuU37ET1" role="ukAjM">
+            <node concept="1jxXqW" id="6coPuU37ET4" role="2Oq$k0" />
+            <node concept="liA8E" id="6coPuU37ET5" role="2OqNvi">
+              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6coPuU37ET6" role="3cqZAp">
+          <node concept="2YIFZM" id="6coPuU37ET8" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="6coPuU37ET9" role="37wK5m">
+              <ref role="3cqZAo" node="6coPuU37ER5" resolve="m" />
+            </node>
+            <node concept="1jxXqW" id="6coPuU37ETa" role="37wK5m" />
           </node>
         </node>
       </node>

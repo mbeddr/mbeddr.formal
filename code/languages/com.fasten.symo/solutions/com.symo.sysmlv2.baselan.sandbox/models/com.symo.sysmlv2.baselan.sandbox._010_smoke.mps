@@ -31,6 +31,18 @@
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
       </concept>
+      <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
+        <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
+      </concept>
+      <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
+        <child id="7140692429574298134" name="multiplicity" index="3w00ZS" />
+        <child id="7140692429574298135" name="type" index="3w00ZT" />
+        <child id="7140692429574298133" name="direction" index="3w00ZV" />
+      </concept>
+      <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
+        <child id="7140692429574298127" name="specializes" index="3w00Zx" />
+        <child id="7140692429574298128" name="content" index="3w00ZY" />
+      </concept>
       <concept id="7140692429570900090" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureDirection" flags="ng" index="3xZtmk">
         <property id="7140692429570900105" name="kind" index="3xZtlB" />
       </concept>
@@ -245,6 +257,61 @@
       </node>
       <node concept="3xZtmn" id="6coPuU2Zp9D" role="3ZUouT">
         <property role="TrG5h" value="spare" />
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="6coPuU37ENZ">
+    <property role="TrG5h" value="_110_Items" />
+    <node concept="8EhVW" id="6coPuU37EO0" role="2h0jOs">
+      <property role="TrG5h" value="Mass" />
+    </node>
+    <node concept="3w00Z_" id="6coPuU37EO1" role="2h0jOs">
+      <property role="TrG5h" value="Fuel" />
+      <node concept="8EhU9" id="6coPuU37EO2" role="3w00ZY">
+        <property role="TrG5h" value="mass" />
+        <node concept="8EhVB" id="6coPuU37EO3" role="8EhU5">
+          <property role="8EhVw" value="Mass" />
+        </node>
+      </node>
+      <node concept="3w00Zz" id="6coPuU37EO4" role="3w00ZY">
+        <property role="TrG5h" value="additive" />
+      </node>
+    </node>
+    <node concept="3w00Z_" id="6coPuU37EO5" role="2h0jOs">
+      <property role="TrG5h" value="Diesel" />
+      <node concept="3w00Zy" id="6coPuU37EO6" role="3w00Zx">
+        <property role="3w00ZX" value="Fuel" />
+      </node>
+    </node>
+    <node concept="3xZtmp" id="6coPuU37EO7" role="2h0jOs">
+      <property role="TrG5h" value="FuelPort" />
+      <node concept="3w00Zz" id="6coPuU37EO8" role="3xZtmj">
+        <property role="TrG5h" value="fuel" />
+        <node concept="3xZtmk" id="6coPuU37EO9" role="3w00ZV">
+          <property role="3xZtlB" value="3th7jSwWnJl/out" />
+        </node>
+        <node concept="3w00Zy" id="6coPuU37EOa" role="3w00ZT">
+          <property role="3w00ZX" value="Fuel" />
+        </node>
+      </node>
+    </node>
+    <node concept="3ZUotO" id="6coPuU37EOb" role="2h0jOs">
+      <property role="TrG5h" value="Tank" />
+      <node concept="3w00Zz" id="6coPuU37EOc" role="3ZUouT">
+        <property role="TrG5h" value="contents" />
+        <node concept="8EhVq" id="6coPuU37EOd" role="3w00ZS">
+          <property role="8EhVr" value="0" />
+          <property role="8EhVk" value="1" />
+        </node>
+        <node concept="3w00Zy" id="6coPuU37EOe" role="3w00ZT">
+          <property role="3w00ZX" value="Diesel" />
+        </node>
+      </node>
+      <node concept="3xZtmn" id="6coPuU37EOf" role="3ZUouT">
+        <property role="TrG5h" value="outlet" />
+        <node concept="3xZtmm" id="6coPuU37EOg" role="3xZtlF">
+          <property role="3xZtlI" value="FuelPort" />
+        </node>
       </node>
     </node>
   </node>

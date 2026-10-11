@@ -289,5 +289,54 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="6coPuU36OD5">
+    <property role="3GE5qa" value="part.item" />
+    <property role="TrG5h" value="SysMLv2ItemDefinitionRef_Behavior" />
+    <ref role="13h7C2" to="5rf1:6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
+    <node concept="13hLZK" id="6coPuU36OD8" role="13h7CW">
+      <node concept="3clFbS" id="6coPuU36ODa" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="6coPuU36ODb" role="13h7CS">
+      <property role="TrG5h" value="getEffectiveName" />
+      <node concept="17QB3L" id="6coPuU36ODf" role="3clF45" />
+      <node concept="3clFbS" id="6coPuU36ODg" role="3clF47">
+        <node concept="3clFbJ" id="6coPuU36ODh" role="3cqZAp">
+          <node concept="3y3z36" id="6coPuU36ODk" role="3clFbw">
+            <node concept="2OqwBi" id="6coPuU36ODn" role="3uHU7B">
+              <node concept="13iPFW" id="6coPuU36ODq" role="2Oq$k0" />
+              <node concept="3TrEf2" id="6coPuU36ODr" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6coPuU36dCk" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="6coPuU36ODs" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="6coPuU36ODt" role="3clFbx">
+            <node concept="3cpWs6" id="6coPuU36ODu" role="3cqZAp">
+              <node concept="2OqwBi" id="6coPuU36ODv" role="3cqZAk">
+                <node concept="2OqwBi" id="6coPuU36ODy" role="2Oq$k0">
+                  <node concept="13iPFW" id="6coPuU36OD_" role="2Oq$k0" />
+                  <node concept="3TrEf2" id="6coPuU36ODA" role="2OqNvi">
+                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCk" />
+                  </node>
+                </node>
+                <node concept="3TrcHB" id="6coPuU36ODB" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6coPuU36ODC" role="3cqZAp">
+          <node concept="2OqwBi" id="6coPuU36ODD" role="3cqZAk">
+            <node concept="13iPFW" id="6coPuU36ODG" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6coPuU36ODH" role="2OqNvi">
+              <ref role="3TsBF5" to="5rf1:6coPuU36dCj" resolve="itemDefinitionName" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="6coPuU36ODI" role="1B3o_S" />
+    </node>
+  </node>
 </model>
 
