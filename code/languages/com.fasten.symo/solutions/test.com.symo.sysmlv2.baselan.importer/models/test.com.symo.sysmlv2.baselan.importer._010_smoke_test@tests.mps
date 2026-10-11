@@ -179,6 +179,7 @@
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
       </concept>
+      <concept id="4430087627526591053" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinition" flags="ng" index="3ZUotO" />
     </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="2524418899405758586" name="jetbrains.mps.baseLanguage.closures.structure.InferredClosureParameterDeclaration" flags="ig" index="gl6BB" />
@@ -1557,6 +1558,110 @@
           </node>
           <node concept="37vLTw" id="3PUPjB2vxBI" role="3tpDZA">
             <ref role="3cqZAo" node="3PUPjB2vxBz" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3PUPjB2A75N">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_050_PartDefinitionTest" />
+    <node concept="1qefOq" id="3PUPjB2A76u" role="1SKRRt">
+      <node concept="2h0jOr" id="3PUPjB2A76w" role="1qenE9">
+        <property role="TrG5h" value="PartDefFile" />
+        <node concept="3ZUotO" id="3PUPjB2A76x" role="2h0jOs">
+          <property role="TrG5h" value="Engine" />
+        </node>
+        <node concept="3xLA65" id="3PUPjB2A76y" role="lGtFl">
+          <property role="TrG5h" value="engine_partdef" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3PUPjB2A76S" role="1SL9yI">
+      <property role="TrG5h" value="testImportPartDefinition" />
+      <node concept="3cqZAl" id="3PUPjB2A76V" role="3clF45" />
+      <node concept="3clFbS" id="3PUPjB2A76W" role="3clF47">
+        <node concept="3cpWs8" id="3PUPjB2A76X" role="3cqZAp">
+          <node concept="3cpWsn" id="3PUPjB2A770" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <property role="2Lvdk3" value="tmp" />
+            <node concept="H_c77" id="3PUPjB2A772" role="1tU5fm" />
+            <node concept="2YIFZM" id="3PUPjB2A773" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="Xl_RD" id="3PUPjB2A774" role="37wK5m">
+                <property role="Xl_RC" value="part def Engine { }" />
+              </node>
+              <node concept="Xl_RD" id="3PUPjB2A775" role="37wK5m">
+                <property role="Xl_RC" value="PartDefFile" />
+              </node>
+              <node concept="1jxXqW" id="3PUPjB2A776" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3PUPjB2A777" role="3cqZAp">
+          <node concept="2YIFZM" id="3PUPjB2A779" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="3PUPjB2A77a" role="37wK5m">
+              <ref role="3cqZAo" node="3PUPjB2A770" resolve="tmp" />
+            </node>
+            <node concept="3xONca" id="3PUPjB2A77b" role="37wK5m">
+              <ref role="3xOPvv" node="3PUPjB2A76y" resolve="engine_partdef" />
+            </node>
+            <node concept="1jxXqW" id="3PUPjB2A77c" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3PUPjB2A77d" role="3cqZAp">
+          <node concept="2YIFZM" id="3PUPjB2A77f" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="3PUPjB2A77g" role="37wK5m">
+              <ref role="3cqZAo" node="3PUPjB2A770" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3PUPjB2A77h" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3PUPjB2A782" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripPartDefinition" />
+      <node concept="3cqZAl" id="3PUPjB2A785" role="3clF45" />
+      <node concept="3clFbS" id="3PUPjB2A786" role="3clF47">
+        <node concept="3cpWs8" id="3PUPjB2A787" role="3cqZAp">
+          <node concept="3cpWsn" id="3PUPjB2A78a" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="3PUPjB2A78c" role="1tU5fm" />
+            <node concept="Xl_RD" id="3PUPjB2A78d" role="33vP2m">
+              <property role="Xl_RC" value="part def Engine {&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3PUPjB2A78e" role="3cqZAp">
+          <node concept="3cpWsn" id="3PUPjB2A78h" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="17QB3L" id="3PUPjB2A78j" role="1tU5fm" />
+            <node concept="2YIFZM" id="3PUPjB2A78k" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="3PUPjB2A78l" role="37wK5m">
+                <ref role="3cqZAo" node="3PUPjB2A78a" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="3PUPjB2A78m" role="37wK5m">
+                <property role="Xl_RC" value="PartDefFile" />
+              </node>
+              <node concept="1jxXqW" id="3PUPjB2A78n" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="3PUPjB2A78o" role="3cqZAp">
+          <node concept="37vLTw" id="3PUPjB2A78r" role="3tpDZB">
+            <ref role="3cqZAo" node="3PUPjB2A78a" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="3PUPjB2A78s" role="3tpDZA">
+            <ref role="3cqZAo" node="3PUPjB2A78h" resolve="generateText" />
           </node>
         </node>
       </node>

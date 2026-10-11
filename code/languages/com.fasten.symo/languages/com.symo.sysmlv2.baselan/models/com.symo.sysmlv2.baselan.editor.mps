@@ -8,8 +8,8 @@
   </languages>
   <imports>
     <import index="1ks0" ref="r:3f04aa5b-eee7-48ea-a2c7-fc975c7f8656(com.mpsbasics.core.editor)" />
-    <import index="5rf1" ref="r:46502bdd-1e0c-47cf-8eed-483f76d95b20(com.symo.sysmlv2.baselan.structure)" implicit="true" />
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="5rf1" ref="r:46502bdd-1e0c-47cf-8eed-483f76d95b20(com.symo.sysmlv2.baselan.structure)" />
   </imports>
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
@@ -72,6 +72,11 @@
       </concept>
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
@@ -148,6 +153,41 @@
       <node concept="3F0ifn" id="3PUPjB2vGeE" role="3EZMnx">
         <property role="3F0ifm" value=";" />
         <ref role="1k5W1q" to="1ks0:hFDgi_W" resolve="Semicolon" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="3PUPjB2$T6Y">
+    <property role="TrG5h" value="SysMLv2PartDefinition_Editor" />
+    <ref role="1XX52x" to="5rf1:3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
+    <node concept="3EZMnI" id="3PUPjB2$T70" role="2wV5jI">
+      <node concept="l2Vlx" id="3PUPjB2$T71" role="2iSdaV" />
+      <node concept="3F0ifn" id="3PUPjB2$T72" role="3EZMnx">
+        <property role="3F0ifm" value="part def" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0A7n" id="3PUPjB2$T73" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="3PUPjB2$T74" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+      </node>
+      <node concept="3F2HdR" id="3PUPjB2$T75" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:3PUPjB2$Pa0" resolve="content" />
+        <node concept="l2Vlx" id="3PUPjB2$T76" role="2czzBx" />
+        <node concept="pVoyu" id="3PUPjB2$T77" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="3PUPjB2$T78" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="3PUPjB2$T79" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3PUPjB2$T7a" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
       </node>
     </node>
   </node>

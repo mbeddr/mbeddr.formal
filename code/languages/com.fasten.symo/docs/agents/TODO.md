@@ -334,3 +334,42 @@ styleItem; not worth chasing down for now). **Apply both going forward**: every 
 keyword-mapped concept gets a `conceptAlias`, and every new concept's editor is hand-built to mirror
 its construct's surface syntax from the start, not left as the scaffolder's generic
 property-label-per-field layout.
+
+**Iteration 4 done (2026-10-12) — `part def` (empty body)**: chosen over the other remaining
+grammar-planned constructs specifically because `part def` is SysML v2's primary structural building
+block (the "most widely used subset" framing the user gave for picking the next increment) — and
+because `partDefinition`/`attributeDefinition`/`occurrenceDefinition`/etc. all share the same
+`definitionPrefix`/`occurrenceDefinitionPrefix` → `DEF` → `definition` grammar shape, so building
+this one first establishes the shared "Definition" pattern once rather than each later definition
+kind redesigning it. New concept `SysMLv2PartDefinition` (implements `INamedConcept` +
+`ISysMLv2FileContent`, `conceptAlias = "part def"`, has the same `content: 0..n ISysMLv2FileContent`
+link pattern as `SysMLv2Package` even though it's always empty this iteration — so the *next*
+iteration, part usages inside the body, needs no structural change here). Grammar:
+`partDefinition: occurrenceDefinitionPrefix PART DEF definition`, `definition:
+definitionDeclaration definitionBody`, `definitionDeclaration: identification?
+subclassificationPart?`, `definitionBody: SEMI | LBRACE definitionBodyItem* RBRACE`. Scope is the
+single simplest form: `part def <name>;` / `part def <name> { }` — no `occurrenceDefinitionPrefix`
+content (`abstract`/`variation`/`individual`/prefix metadata), no `subclassificationPart` (`:>`/
+`specializes` — a whole relationship-resolution feature on its own), no non-empty
+`definitionBodyItem`s; all throw the established "Unsupported SysML v2 construct" error.
+`SysMLv2ImporterVisitor.visitDefinitionElement` extended with a second branch (`ctx.partDefinition()
+!= null`) alongside the existing `package_()` check; new `visitPartDefinition` follows the same
+structure as `visitPackage` (validate every optional grammar slot is absent/empty, extract the name
+via `identification`, build-and-return the node) minus the recursive body-import loop (deferred).
+
+Editor and textgen built by hand from the start this time (per the standing convention above), not
+scaffolded-then-fixed: `SysMLv2PartDefinition_Editor` mirrors `SysMLv2Package_Editor`'s cell layout
+exactly (`constant "part def" (KeywordStyle)` → `{name}` → `constant "{" (ParensStyle)` → indented
+`%content%` → `constant "}" (ParensStyle)`); `SysMLv2PartDefinition_TextGen` mirrors
+`SysMLv2Package_TextGen`'s body exactly (same `foreach`-with-`indent buffer` convention). Sandbox:
+`_050_PartDefinition` (one file, one part def named `Engine`). Tests: new `_050_PartDefinitionTest`
+using the `de.itemis.mps.compare` pattern from the start (label correctly placed on the `SysMLv2File`
+root this time, not a nested child) — `testImportPartDefinition`, `testRoundtripPartDefinition` —
+registered as `_050_test_sysmlv2_import_partdef`, green alongside `_010`–`_040` on the first run, no
+debugging detours this iteration (both prior pitfalls — missing `.first` before a cast, wrong label
+placement — were avoided by applying the lessons already recorded).
+
+**Natural next step (not part of this iteration)**: part *usages* inside a part definition's body
+(`part def Car { part engine : Engine; }`) — this is what actually makes `part def` useful in
+practice; `SysMLv2PartDefinition.content` is already shaped to receive it without further
+structural change.
