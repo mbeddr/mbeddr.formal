@@ -239,11 +239,44 @@ the editor (noticed mid-implementation — the new `SysMLv2Package` editor was l
 structure concept + scaffold existed, and they started using it); added `_030_NestedPackage` (two
 levels, `Outer`/`Inner`) to cover recursion. Tests: new `_030_ImportPackageTest` `NodesTestCase`
 (`accessMode="none"`, same pattern as `_020_ImportEmptyFileTest`) in the same `_010_smoke_test@tests`
-model — `testImportPackage`, `testImportNestedPackage` (via `TestUtils.parseFileIntoModel` +
-`read action` + `tmp.roots(SysMLv2File).first.content.first:SysMLv2Package` chains, one `.first` per
-nesting level — undercounting by one `.first` casts the *list* instead of an *element* and fails
-typechecking with "type node<X> is not comparable with nlist<...>", not a runtime error, so it's
-caught at `check_root_node_problems` time), `testRoundtripPackage`, `testRoundtripNestedPackage` (via
-`RoundtripTestUtils.parseTextIntoModelAndGenerateText`, byte-exact against the two-space-indent
-canonical form). Registered as JUnit config `_030_test_sysmlv2_import_package` — green, alongside
-the still-green `_010_test_sysmlv2_toolchain` and `_020_test_sysmlv2_import_empty_file`.
+model — `testImportPackage`, `testImportNestedPackage`, `testRoundtripPackage`,
+`testRoundtripNestedPackage`. Registered as JUnit config `_030_test_sysmlv2_import_package` — green,
+alongside the still-green `_010_test_sysmlv2_toolchain` and `_020_test_sysmlv2_import_empty_file`.
+
+**Test style refactored by the user (2026-10-11), to be the standard going forward**: the import
+tests originally asserted field-by-field via `tmp.roots(SysMLv2File).first.content.first:SysMLv2Package`
+chains (one `.first` per nesting level — undercounting by one `.first` casts the *list* instead of
+an *element* and fails typechecking with "type node<X> is not comparable with nlist<...>", not a
+runtime error, so it's caught at `check_root_node_problems` time). The user replaced this with:
+declare the expected node directly as a `TestNode` in the test case's `nodesToCheck` section, label
+it via the "Add Test Node Label" intention, then compare with `de.itemis.mps.compare`'s `assert node
+equals <expected> and <actual> with options {...}` (`AssertNodeEquals`) through a shared
+`TestUtils.checkFirstRoot(model, node<>, Project)` helper — one structural-diff assertion instead of
+N per-field ones. Also added a `_990_Witness@tests` model that `parseFileIntoModel` mirrors every
+parsed root into, purely for visual inspection in the editor. Full write-up (idiom, reusable beyond
+this project) at the repo-root `docs/idioms/structural-node-equality-via-test-fixture.md` — use this
+style for all future `NodesTestCase` structural checks, not the manual-chain style. The round-trip
+tests (`testRoundtripPackage`/`testRoundtripNestedPackage`) were left as plain string `assert ...
+equals ...` — comparing generated text has no node tree to diff, so this doesn't apply there.
+
+**Importer refactored from manual AST navigation to an ANTLR visitor (2026-10-11)**: replaced the
+self-recursive `SysMLv2Importer.importPackageBodyElement` (manual `packageMember →
+definitionElement → package_()` navigation, taking a `container` parameter to self-attach) with
+`SysMLv2ImporterVisitor extends SysMLv2ParserBaseVisitor<SNode>` (the grammar's Gradle build already
+generates this via `-visitor`), overriding `visitPackageBodyElement`/`visitPackageMember`/
+`visitDefinitionElement`/`visitPackage` — each a one-construct-per-method dispatcher/builder, per
+the project's own "per-iteration recipe" (which had said "importer visitor" from iteration 0 but
+iteration 2 didn't follow it). Each `visitXxx` **returns** its built node rather than attaching it
+into a passed-down container — `importText` and `visitPackage`'s own loop both just do
+`container.add(visitor.visit(child):ISysMLv2FileContent)` after the fact, which incidentally
+sidesteps the `LinkList_AddNewChildOperation`-rejects-nlist-parameter gotcha above entirely (plain
+`.add` was already the fix, but build-then-return-then-add is the more natural shape once visiting
+returns a value). The `SNode` (plain Java, not smodel `node<C>`) return type is required — ANTLR's
+visitor base class is plain-Java generic, and `node<C>` isn't a reifiable Java type usable as a
+generic argument — but bridging back into smodel needed nothing beyond the ordinary
+`SNodeTypeCastExpression` (`expr:C`) at each point a visit result feeds into an smodel operation;
+see the new `docs/idioms/bridge-plain-java-snode-api-into-smodel.md` write-up. All of `_010`/`_020`/
+`_030` still green after the refactor; `visitDefinitionElement`'s dispatch is still a manual
+null-check on `ctx.package_()` since `definitionElement`'s ~25 alternatives aren't grammar-labeled
+(no `#label` per alt), so the visitor doesn't auto-dispatch more granularly there than manual code
+did — worth remembering when iteration 4+ add more `definitionElement` alternatives.
