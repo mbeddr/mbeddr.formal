@@ -20,7 +20,9 @@
       <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
         <property id="8930763252717678396" name="attributeDefinitionName" index="8EhVw" />
       </concept>
-      <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW" />
+      <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW">
+        <child id="7140692429570186950" name="specializes" index="3xKGGC" />
+      </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z">
         <child id="8930763252717288847" name="type" index="8CKLj" />
         <child id="8930763252717678429" name="multiplicity" index="8EhU1" />
@@ -35,6 +37,7 @@
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
       </concept>
       <concept id="4430087627526591053" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinition" flags="ng" index="3ZUotO">
+        <child id="7140692429570186947" name="specializes" index="3xKGGH" />
         <child id="4430087627526591104" name="content" index="3ZUouT" />
       </concept>
     </language>
@@ -121,6 +124,42 @@
       </node>
       <node concept="8EhU9" id="2d_6cEDNUxs" role="3ZUouT">
         <property role="TrG5h" value="count" />
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="6coPuU2T2zH">
+    <property role="TrG5h" value="_090_Specialization" />
+    <node concept="3ZUotO" id="6coPuU2T2zI" role="2h0jOs">
+      <property role="TrG5h" value="Vehicle" />
+    </node>
+    <node concept="3ZUotO" id="6coPuU2T2zJ" role="2h0jOs">
+      <property role="TrG5h" value="ElectricVehicle" />
+      <node concept="8CKM2" id="6coPuU2T2zK" role="3xKGGH">
+        <property role="8CKM3" value="Vehicle" />
+      </node>
+    </node>
+    <node concept="3ZUotO" id="6coPuU2T2zL" role="2h0jOs">
+      <property role="TrG5h" value="HybridVehicle" />
+      <node concept="8CKM2" id="6coPuU2T2zM" role="3xKGGH">
+        <property role="8CKM3" value="ElectricVehicle" />
+      </node>
+      <node concept="8CKM2" id="6coPuU2T2zN" role="3xKGGH">
+        <property role="8CKM3" value="CombustionVehicle" />
+      </node>
+    </node>
+    <node concept="3ZUotO" id="6coPuU2T2zO" role="2h0jOs">
+      <property role="TrG5h" value="CombustionVehicle" />
+      <node concept="8CKM2" id="6coPuU2T2zP" role="3xKGGH">
+        <property role="8CKM3" value="Vehicle" />
+      </node>
+    </node>
+    <node concept="8EhVW" id="6coPuU2T2zQ" role="2h0jOs">
+      <property role="TrG5h" value="Quantity" />
+    </node>
+    <node concept="8EhVW" id="6coPuU2T2zR" role="2h0jOs">
+      <property role="TrG5h" value="MassValue" />
+      <node concept="8EhVB" id="6coPuU2T2zS" role="3xKGGC">
+        <property role="8EhVw" value="Quantity" />
       </node>
     </node>
   </node>

@@ -699,3 +699,39 @@ throughout, since a dangling reference inside an otherwise well-formed tree isn'
 error).
 
 Full suite (`_020`–`_080`) green after rebuild and after restoration.
+
+**Iteration 8 (2026-10-11) — definition specialization (`:>` / `specializes`) on `part def` and
+`attribute def`**: new `specializes: 0..n` child link on `SysMLv2PartDefinition`
+(`SysMLv2PartDefinitionRef`) and `SysMLv2AttributeDefinition` (`SysMLv2AttributeDefinitionRef`) —
+reusing the existing `<name>Ref`-with-fallback-name concepts, no new ref concept. A definition only
+specializes definitions of its own kind (part→part, attribute→attribute); the grammar would accept
+`part def X :> SomeAttributeDef`, which imports fine but then stays unresolved (fallback name only),
+pinned by `testReifyDoesNotCrossDefinitionKinds`. Importer: `visitPartDefinition`/
+`visitAttributeDefinition` no longer reject `subclassificationPart`; the check moved below the
+node's creation and now loops over a new plain-Java helper
+`extractSpecializationNames(SubclassificationPartContext): List<String>` (each
+`ownedSubclassification`'s `qualifiedName().getText()` — qualified names like `P::A` are accepted
+as an opaque string, same as part-usage typing already does; they just won't reify). Both keyword
+forms (`:>` and `specializes`) import to the same model; textgen always emits `:>` (canonical form,
+like the always-braces def body). TextGen: two new tiny `SysMLv2PartDefinitionRef_TextGen`/
+`SysMLv2AttributeDefinitionRef_TextGen` components (`append ${node.getEffectiveName()}`) so the def
+textgens can use `$list{node.specializes with , }`; the def textgens' trailing `" {"` constant moved
+into the following newline append so the optional `:> ...` segment can sit between name and brace.
+Editor: grammarcells `optional [> :> % specializes % <]` (horizontal list, `,` separator), same
+pattern as part usage's `optional [> : % type % <]`.
+
+**Gap from iteration 7a closed**: `SysMLv2TypeReifier` only had `reifyPartDefinitionRefs` —
+attribute-usage typing refs (`attribute mass : Real`) were never reified. Added
+`reifyAttributeDefinitionRefs` (same shape) plus the matching EDT-hopping
+`TestUtils.reifyAttributeDefinitionRefs` wrapper. Both reifiers walk *every* ref instance in the
+model, so they cover usage typing and definition specialization alike, including forward references
+(`HybridVehicle :> …, CombustionVehicle` declared before `CombustionVehicle`).
+
+Sandbox `_090_Specialization`; new `_090_SpecializationTest` (`testImportSpecialization` — mixes
+`:>`/`specializes` and `;`/`{}` input forms against one fixture; `testRoundtripSpecialization`;
+`testReifyResolvesSpecializations`; `testReifyDoesNotCrossDefinitionKinds`), run config
+`_090_test_sysmlv2_specialization`. Full suite (`_020`–`_090`, 20 tests) green.
+
+**Still deferred**: constraints-aspect scope for the `definition` reference of both ref concepts
+(manual editing in MPS still gets no completion over candidate defs); the `name;` short-form
+decision for body-less defs; cyclic specialization (`A :> B`, `B :> A`) isn't checked anywhere.

@@ -732,6 +732,13 @@ before running it — don't dismiss it and try anyway.
 
 ## A local-variable reference can't target a sibling declared in the same blueprint (2026-08-27)
 
+> **Superseded (2026-10-11):** no longer true with the current MCP tooling. A `VariableReference` /
+> `ForEachVariableReference` given the plain variable **name** as `target` (`{"role": "variableDeclaration",
+> "target": "superRef"}`) resolves by scope against a sibling `LocalVariableDeclaration`, `ForEachVariable`,
+> parameter, or closure parameter created in the same `ADD CHILD` / `SET CHILD` blueprint — verified by
+> inspecting the resulting `targetReference`s, which all pointed at the freshly created declarations. See also
+> the 2026-10-12 snapshot entry above, which relies on the same behavior. The text below is kept for history.
+
 When building a multi-statement method body (or console command) via a single JSON blueprint, there is
 no supported syntax for a `LocalVariableReference`/`ForEachVariableReference` to point at a
 `LocalVariableDeclaration` created earlier in the *same* blueprint. Invented placeholder strings (e.g.

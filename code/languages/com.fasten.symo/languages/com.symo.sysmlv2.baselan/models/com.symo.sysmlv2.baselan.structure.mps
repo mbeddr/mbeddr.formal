@@ -135,6 +135,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
     </node>
+    <node concept="1TJgyj" id="6coPuU2QxV3" role="1TKVEi">
+      <property role="IQ2ns" value="7140692429570186947" />
+      <property role="20kJfa" value="specializes" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNgG7Z">
     <property role="EcuMT" value="8930763252716192255" />
@@ -204,6 +211,13 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
+    <node concept="1TJgyj" id="6coPuU2QxV6" role="1TKVEi">
+      <property role="IQ2ns" value="7140692429570186950" />
+      <property role="20kJfa" value="specializes" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7JKstLNmmWV" resolve="SysMLv2AttributeDefinitionRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNmmWV">
