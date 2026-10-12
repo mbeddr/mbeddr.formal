@@ -840,3 +840,61 @@ concept inheritance, with the wider part body handled by a constraint (see
 Open SysML-fidelity questions, not acted on: whether SysML permits an `item def` specializing a
 `part def` (structurally accepted and resolved now); whether port usages are legal inside item defs
 (currently rejected via the marker interface — revisit if SysML allows ports on items).
+
+**Iteration 11 (2026-10-12) — subsetting (`:>` / `subsets`) and redefinition (`:>>` / `redefines`)
+on usages**: new abstract `SysMLv2Usage` (folder `base`, mirrors SysML's Feature/Usage) is now the
+superconcept of `SysMLv2PartUsage`, `SysMLv2AttributeUsage`, `SysMLv2PortUsage` and `SysMLv2ItemUsage`
+(previously `BaseConcept`; no link migration needed since `SysMLv2Usage` introduced only *new* links).
+It owns `subsets` and `redefines : SysMLv2FeatureRef[0..n]`; `SysMLv2FeatureRef` = fallback
+`featureName` (text as written, incl. `A::b` / `a.b`) + `feature : SysMLv2Usage[0..1]`. Anonymous
+usages are now accepted (SysML's dominant redefinition form `part :>> wheels;`): `name` stays null,
+textgen omits it, editors render it empty (`emptyNoTargetText`). Canonical textgen order:
+`[dir] kw [name][mult] [: [~]Type] [:> a, b] [:>> c];`.
+
+Importer: all four usage visitors now share four plain-Java helpers — `extractUsageName` (null for
+anonymous; rejects `<alias>`), `findTypingSpecialization` (the single typing clause; rejects
+`::>`/references and crosses, and a second typing clause), `extractSubsettingNames`,
+`extractRedefinitionNames` — replacing the old "exactly one featureSpecialization, which must be a
+typing" rule.
+
+Resolution: new `SysMLv2FeatureResolver.reifyFeatureRefs(model)` (+ `TestUtils` wrapper; run *after*
+the definition-ref reifiers, since it walks `specializes`). Follows SysML name lookup: a
+**redefinition** is looked up in the owning definition's supertypes only; a **subsetting** in the
+owning definition first (so a sibling's `:> wheels` finds the owner's own `:>> wheels`
+redefinition, which hides the inherited one), then its supertypes, transitively; an anonymous
+redefining usage is found under the name it redefines. Qualified names / feature chains are left
+unresolved. Written in smodel (a first version used plain Java over the openapi `SNode` API with
+string-based concept/role lookups — replaced at the user's request, see
+`docs/idioms/typed-smodel-access-not-string-lookups.md`): iteration via
+`m.nodes(SysMLv2FeatureRef)`, typed link/property access, and `isInstanceOf(...)` + casts to dispatch
+over the definition kinds (`contentOf` / `superDefinitionsOf` handle item — incl. part — attribute
+and port defs). First instance of the "centralise name resolution in one generic helper" decision.
+If more definition kinds arrive, consider an abstract `SysMLv2Definition` with virtual behavior
+methods (`features()`, `superDefinitions()`) instead of the per-kind `isInstanceOf` dispatch.
+
+Sandbox `_120_SubsettingRedefinition`; `_120_SubsettingRedefinitionTest` (import with
+`redefines`/`subsets` keywords, roundtrip, reification), run config
+`_120_test_sysmlv2_subsetting_redefinition`. Full suite 30 tests green.
+
+Not covered yet: keyword-less usages (`:>> mass = 1500;` — SysML's default reference usage), feature
+values (`= expr`), references (`::>`), conjugation of redefined ports, and validating that a
+redefinition actually targets an inherited feature of compatible kind.
+
+**Editor convention (2026-10-12, per the user)**: every `<X>Ref` concept that carries both a fallback
+name (filled by the importer, reified later) and a real reference projects the reference in its
+**inspector** (`<label>: ( %ref% -> {name} )`, name read-only) so a user can set or fix it by hand
+when reification couldn't. Applied to `SysMLv2ItemDefinitionRef` (by the user), and to
+`SysMLv2PartDefinitionRef`, `SysMLv2AttributeDefinitionRef`, `SysMLv2PortDefinitionRef` and
+`SysMLv2FeatureRef` (same shape, cloned). Any future `<X>Ref` should get the same inspector.
+
+**Sandbox references resolved (2026-10-12)**: all `_0x0`–`_120` sandbox examples now carry real
+references (26 refs: definition typing/specialization and feature subsetting/redefinition), set by
+running the reifiers once over the sandbox model from the MPS console (part/attribute/port/item
+definition refs first, then `SysMLv2FeatureResolver.reifyFeatureRefs`, which needs the resolved
+`specializes`). The fallback names are kept alongside. Doing this surfaced that a `SysMLv2FeatureRef`
+resolved to an *anonymous* redefining usage (`:> wheels` → `Car`'s own `part :>> wheels`) projected
+`<no name>` and would have generated `null`: fixed by a new `SysMLv2Usage.getEffectiveName()`
+behavior (own name, else the redefined feature's effective name — SysML's implicit naming of
+redefinitions), used by `SysMLv2FeatureRef.getEffectiveName()` (falls back to `featureName`), by the
+resolver (its private copy was removed), and the feature-ref editor now shows the reference cell only
+when the target has a name.

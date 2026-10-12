@@ -10,6 +10,18 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## A run configuration created via `mps_mcp_create_run_configuration` can vanish after a clean rebuild of the test module (2026-10-12)
+
+Twice (iterations 9 and 11), a `JUnit Tests` run config created with `mps_mcp_create_run_configuration`
+right after inserting a new `NodesTestCase` root was gone after the next `mps_mcp_alter_nodes MAKE`
+with `rebuild=true` on the test module: `execute_run_configuration` then fails with "Run configuration
+with name '…' not found", and `get_run_configurations` no longer lists it. Re-creating it after the
+rebuild works and it persists from then on.
+
+**How to apply:** create the run config for a new test root *after* the test module's clean rebuild,
+not before; if `execute_run_configuration` reports it missing, just re-create it (the call replaces by
+name, so it's idempotent).
+
 ## No MCP node tool deletes a *root* node — use a console `#instances(...).where(...).forEach(n -> n.delete)` (2026-10-12)
 
 `mps_mcp_update_node` `SET CHILD` without `childJson` deletes a *child*, but on a root it fails with

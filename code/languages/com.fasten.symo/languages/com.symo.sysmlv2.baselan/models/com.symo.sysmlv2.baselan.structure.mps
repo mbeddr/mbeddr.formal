@@ -24,6 +24,7 @@
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
         <property id="4628067390765907488" name="conceptShortDescription" index="R4oN_" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
@@ -154,7 +155,7 @@
     <property role="TrG5h" value="SysMLv2PartUsage" />
     <property role="34LRSv" value="part" />
     <property role="3GE5qa" value="part" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6coPuU3buuw" />
     <node concept="PrWs8" id="7JKstLNgG8n" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -257,7 +258,7 @@
     <property role="TrG5h" value="SysMLv2AttributeUsage" />
     <property role="34LRSv" value="attribute" />
     <property role="3GE5qa" value="part.attribute" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6coPuU3buuw" />
     <node concept="PrWs8" id="7JKstLNmmXm" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -400,7 +401,7 @@
     <property role="34LRSv" value="port" />
     <property role="R4oN_" value="SysML v2 port usage" />
     <property role="3GE5qa" value="part.port" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6coPuU3buuw" />
     <node concept="1TJgyi" id="6coPuU2Tg22" role="1TKVEl">
       <property role="IQ2nx" value="7140692429570900098" />
       <property role="TrG5h" value="conjugated" />
@@ -509,7 +510,7 @@
     <property role="34LRSv" value="item" />
     <property role="R4oN_" value="SysML v2 item usage" />
     <property role="3GE5qa" value="part.item" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="6coPuU3buuw" />
     <node concept="1TJgyj" id="6coPuU36dCl" role="1TKVEi">
       <property role="IQ2ns" value="7140692429574298133" />
       <property role="20kJfa" value="direction" />
@@ -552,6 +553,48 @@
     <property role="TrG5h" value="ICanBelongOnlyToSysMLv2PartDefinition" />
     <property role="R4oN_" value="part-specific body element: among item definitions, may only be owned by a part definition" />
     <property role="3GE5qa" value="part.base" />
+  </node>
+  <node concept="1TIwiD" id="6coPuU3buuw">
+    <property role="EcuMT" value="7140692429575677856" />
+    <property role="TrG5h" value="SysMLv2Usage" />
+    <property role="R4oN_" value="SysML v2 Usage (Feature): common supertype of all usages; owns subsetting and redefinition" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6coPuU3buuy" role="1TKVEi">
+      <property role="IQ2ns" value="7140692429575677858" />
+      <property role="20kJfa" value="subsets" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2FeatureRef" />
+    </node>
+    <node concept="1TJgyj" id="6coPuU3buuz" role="1TKVEi">
+      <property role="IQ2ns" value="7140692429575677859" />
+      <property role="20kJfa" value="redefines" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2FeatureRef" />
+    </node>
+    <node concept="PrWs8" id="6coPuU3buu$" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6coPuU3buux">
+    <property role="EcuMT" value="7140692429575677857" />
+    <property role="TrG5h" value="SysMLv2FeatureRef" />
+    <property role="R4oN_" value="reference to a feature (usage), with fallback name as written" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6coPuU3buu_" role="1TKVEl">
+      <property role="IQ2nx" value="7140692429575677861" />
+      <property role="TrG5h" value="featureName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="6coPuU3buuA" role="1TKVEi">
+      <property role="IQ2ns" value="7140692429575677862" />
+      <property role="20kJfa" value="feature" />
+      <ref role="20lvS9" node="6coPuU3buuw" resolve="SysMLv2Usage" />
+    </node>
   </node>
 </model>
 
