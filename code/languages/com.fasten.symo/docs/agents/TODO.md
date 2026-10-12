@@ -898,3 +898,33 @@ behavior (own name, else the redefined feature's effective name — SysML's impl
 redefinitions), used by `SysMLv2FeatureRef.getEffectiveName()` (falls back to `featureName`), by the
 resolver (its private copy was removed), and the feature-ref editor now shows the reference cell only
 when the target has a name.
+
+**Reification test convention (2026-10-12, set by the user in `_090_SpecializationTest`)**: reify
+tests no longer assert field-by-field. Each parses a source text, runs the reifier(s), and compares
+the *whole* result against an explicit expected fixture — a second labeled `TestNode` named
+`<x>_reified` whose references (`definition` / `feature`) are set by hand to the intended targets —
+via `TestUtils.checkFirstRoot`. The fixture shows at a glance what reification must produce, and the
+comparison catches both a missing reference ("Role definition is not expected") and a wrong target
+(`name (property) is different: expected 'CombustionVehicle' got 'ElectricVehicle'`). Deliberately
+unresolved cases are fixtures with *no* reference (`Ghost`, the cross-kind `Quantity`). Applied to all
+reify tests: `_070` (2), `_090` (2; the user's resolves test fixed — one ref pointed at the wrong
+sibling), `_100`, `_110` (2), `_120`. Any future reifier test should follow it.
+
+**Test-source layout convention (2026-10-12, per the user)**: every test source text is written one
+source line per statement — `string content;` then `content = "line\n";` and one `content += "line\n";`
+per further line (the style of `testImportPorts`) — never as a single long string literal full of `\n`.
+This applies to import, round-trip *and* reify tests, and to compact one-line sources too (e.g.
+`part def Car { part engine : Ghost; }` is written as three lines), so the MPS editor shows the input
+the way a reader would write it. Applied to all 17 affected tests in `_030`–`_120`.
+
+**Feature-ref lookup rule changed (2026-10-12, from the user's `_120` fixture)**: the user edited the
+expected `subsRedefFile_reified` fixture so that `part frontWheels :> wheels` inside `Car` points at the
+*declared* `Vehicle.wheels`, not at `Car`'s own anonymous redefinition `part :>> wheels` — which made
+`testReifyResolvesRedefinedAndSubsettedFeatures` fail (expected `wheels`, got `null` = the unnamed
+usage). Resolved in favour of the fixture: `SysMLv2FeatureResolver.findFeature` now matches the
+usage's *declared* name (`feature.name`) only, so anonymous redefinitions are skipped as lookup targets
+(they stay reachable through their own `redefines` ref). This replaces the "owner first, an anonymous
+redefinition answers to the redefined name" rule from the iteration-11 entry; the
+`SysMLv2Usage.getEffectiveName()` behavior is still used for *presentation* of a feature ref. Sandbox
+`_120` subset refs retargeted accordingly. If SysML's own scoping (implicit naming of redefining
+features, KerML effectiveName) is later needed instead, revisit — then the fixture must change back.

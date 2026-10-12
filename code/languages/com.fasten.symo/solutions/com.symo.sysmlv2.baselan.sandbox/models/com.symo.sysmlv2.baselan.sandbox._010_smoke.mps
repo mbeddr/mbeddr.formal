@@ -389,7 +389,7 @@
         <property role="TrG5h" value="frontWheels" />
         <node concept="3wdj9f" id="6coPuU3hCaz" role="3wdj9c">
           <property role="3wdj9b" value="wheels" />
-          <ref role="3wdj98" node="6coPuU3hCau" />
+          <ref role="3wdj98" node="6coPuU3hCan" />
         </node>
         <node concept="8EhVq" id="6coPuU3hCa$" role="8EhU1">
           <property role="8EhVr" value="2" />
@@ -404,7 +404,7 @@
         <property role="TrG5h" value="spare" />
         <node concept="3wdj9f" id="6coPuU3hCaB" role="3wdj9c">
           <property role="3wdj9b" value="wheels" />
-          <ref role="3wdj98" node="6coPuU3hCau" />
+          <ref role="3wdj98" node="6coPuU3hCan" />
         </node>
         <node concept="3wdj9f" id="6coPuU3hCaC" role="3wdj9c">
           <property role="3wdj9b" value="frontWheels" />
