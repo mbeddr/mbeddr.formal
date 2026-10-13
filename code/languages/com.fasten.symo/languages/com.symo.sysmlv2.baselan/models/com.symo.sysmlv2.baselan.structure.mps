@@ -29,7 +29,9 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -74,8 +76,8 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
-    <node concept="PrWs8" id="6coPuU3voPG" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    <node concept="PrWs8" id="4N4m7hrYNgV" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
     </node>
   </node>
   <node concept="1TIwiD" id="3DMRBeFsYdF">
@@ -116,8 +118,8 @@
     <node concept="PrWs8" id="3PUPjB2nMRJ" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
-    <node concept="PrWs8" id="6coPuU3qpbI" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    <node concept="PrWs8" id="4N4m7hrYNgY" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
     </node>
     <node concept="1TJgyj" id="3PUPjB2nMSo" role="1TKVEi">
       <property role="IQ2ns" value="4430087627523173912" />
@@ -240,6 +242,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7JKstLNmmWV" resolve="SysMLv2AttributeDefinitionRef" />
+    </node>
+    <node concept="PrWs8" id="4N4m7hrYNh4" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNmmWV">
@@ -383,6 +388,9 @@
     <node concept="PrWs8" id="6coPuU2Tg1Z" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
+    <node concept="PrWs8" id="4N4m7hrYNh7" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU2Tg1S">
     <property role="EcuMT" value="7140692429570900088" />
@@ -492,6 +500,9 @@
     <node concept="PrWs8" id="6coPuU36dCi" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
+    <node concept="PrWs8" id="4N4m7hrYNh1" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU36dCc">
     <property role="EcuMT" value="7140692429574298124" />
@@ -584,6 +595,9 @@
     <node concept="PrWs8" id="6coPuU3buu$" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="PrWs8" id="4N4m7hrYNha" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU3buux">
     <property role="EcuMT" value="7140692429575677857" />
@@ -600,6 +614,22 @@
       <property role="IQ2ns" value="7140692429575677862" />
       <property role="20kJfa" value="feature" />
       <ref role="20lvS9" node="6coPuU3buuw" resolve="SysMLv2Usage" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4N4m7hrYNgN">
+    <property role="EcuMT" value="5531643499100451891" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="ISysMLv2Namespace" />
+    <node concept="PrWs8" id="4N4m7hrYNgO" role="PrDN$">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4N4m7hrYNgR">
+    <property role="EcuMT" value="5531643499100451895" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="ISysMLv2FeatureOwner" />
+    <node concept="PrWs8" id="4N4m7hrYNgS" role="PrDN$">
+      <ref role="PrY4T" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
     </node>
   </node>
 </model>

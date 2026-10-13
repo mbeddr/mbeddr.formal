@@ -10,6 +10,22 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## `CompositeScope` detects ambiguity, it does not shadow; and `ScopeProvider.getScope` does not climb to the parent by itself (2026-10-13)
+
+Two facts that together made lexical scoping look right while being wrong:
+
+- The default `ScopeProvider.getScope(kind, child)` returns `null`. `Scope.getScope(...)` climbs only while providers
+  return `null`, so a provider that returns *any* non-null scope (even `CompositeScope(own, super.getScope(...))`, whose
+  `super` is that `null`) ends the climb: names of enclosing packages/files are silently not visible. To continue
+  outward you must call `Scope.getScope(this.parent, this, kind)` yourself.
+- `CompositeScope.resolve` returns `null` when two sub-scopes both resolve the name to *different* nodes
+  ("ambiguity"). It is therefore the wrong tool for nested namespaces: once you do chain the enclosing scope, an inner
+  `Wheel` and an outer `Wheel` make the reference unresolvable instead of the inner one winning.
+
+**How to apply:** for nested/shadowing namespaces build one flat `ListScope.forNamedElements(own ++ outerElements
+whose name is not already in own)` (outer elements via `outer.getAvailableElements(null)`), own first. The kernel here has
+no `HidingByNameScope`. Test it with a reference that must see an enclosing-only name *and* one that is shadowed.
+
 ## `Scope.getScope(...)` silently skips every node that doesn't *declare* `ScopeProvider` (2026-10-13)
 
 `BaseConcept` does **not** implement `ScopeProvider`. `Scope.getScope(node, fromChild, kind)` (and the
