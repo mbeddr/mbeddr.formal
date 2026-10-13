@@ -10,6 +10,38 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## `Scope.getScope(...)` silently skips every node that doesn't *declare* `ScopeProvider` (2026-10-13)
+
+`BaseConcept` does **not** implement `ScopeProvider`. `Scope.getScope(node, fromChild, kind)` (and the
+`inherited` scope factory) walk up the ancestors and only consult nodes that are `isInstanceOf(ScopeProvider)`.
+A `getScope` method written in a concept's behavior (`overrides ScopeProvider.getScope`) is therefore dead
+code until the concept also lists `ScopeProvider` under `implements`. Symptom: the scope comes back empty or
+`null` (an NPE at `scope.resolve(...)`) only for refs whose chain reaches such a concept, while refs under a
+concept that does implement it work. Seen with a root `SysMLv2File` that had the behavior but not the interface.
+
+**How to apply:** when adding a `getScope` behavior, add `ScopeProvider` to the concept's structure in the same
+step; and null-check the result of `Scope.getScope(...)` when calling it from plain code.
+
+## `node.isInstanceOf(...)` / `concept.isSubConceptOf(...)` accept a *dynamic* concept via `#expr#` (2026-10-13)
+
+The `conceptArgument` of those operations is an `IRefConceptArg`; besides the static `RefConcept_Reference`
+(`<ConceptName>`), `PoundExpression` (`# kind #`) lets a `concept<>` variable such as the `kind` parameter of
+`getScope` be used. That allows one generic `getScope` (`content.where({it => it.isInstanceOf(#kind#)})`)
+instead of one `if (kind.isSubConceptOf(X))` branch per target concept. Not discoverable from
+`get_concept_details` of the operation (it only lists `IRefConceptArg`); found via
+`query_structure GET_SUB_CONCEPTS` on that interface.
+
+## `NodesTestCase` nodes are children of the test root, not model roots; fixture compare matches reference targets by name only (2026-10-13)
+
+- Code that looks at `model.roots(X)` (e.g. a file-level scope that unions the top-level content of all
+  files in the model) sees **nothing** for nodes under a `NodesTestCase`'s `nodesToCheck` — the file is a child
+  of the `TestNode`. Test such logic with a parsed model (`TestUtils.parseFileIntoModel`, where files are roots),
+  and make scope providers include `this` explicitly so a lone file still works.
+- `AssertNodeEquals` (de.itemis.mps.compare) *does* follow references (a wrong target was caught, even in another
+  fixture), but it compares the target node's properties, so two same-named targets (e.g. an inner and an outer
+  `Wheel`) compare equal. To prove *which* one a reference picked, add an explicit assertion
+  (e.g. the target's container name).
+
 ## A run configuration created via `mps_mcp_create_run_configuration` can vanish after a clean rebuild of the test module (2026-10-12)
 
 Twice (iterations 9 and 11), a `JUnit Tests` run config created with `mps_mcp_create_run_configuration`

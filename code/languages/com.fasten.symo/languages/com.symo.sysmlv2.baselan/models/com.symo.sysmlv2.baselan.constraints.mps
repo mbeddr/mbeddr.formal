@@ -37,9 +37,17 @@
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
+      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
+        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
+      </concept>
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
+        <child id="1213100494875" name="referent" index="1Mr941" />
+      </concept>
+      <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
+        <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
+        <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -53,6 +61,9 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
       </concept>
     </language>
   </registry>
@@ -71,6 +82,49 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6coPuU3qLLR">
+    <property role="3GE5qa" value="part" />
+    <ref role="1M2myG" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
+    <node concept="1N5Pfh" id="6coPuU3qLMR" role="1Mr941">
+      <ref role="1N5Vy1" to="5rf1:7JKstLNkRPw" resolve="definition" />
+      <node concept="1dDu$B" id="6coPuU3qLS8" role="1N6uqs">
+        <ref role="1dDu$A" to="5rf1:3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6coPuU3rSs9">
+    <property role="3GE5qa" value="part.item" />
+    <property role="TrG5h" value="SysMLv2ItemDefinitionRef_Constraints" />
+    <ref role="1M2myG" to="5rf1:6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
+    <node concept="1N5Pfh" id="6coPuU3rSsa" role="1Mr941">
+      <ref role="1N5Vy1" to="5rf1:6coPuU36dCk" />
+      <node concept="1dDu$B" id="6coPuU3rSsb" role="1N6uqs">
+        <ref role="1dDu$A" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6coPuU3zrH5">
+    <property role="3GE5qa" value="part.attribute" />
+    <property role="TrG5h" value="SysMLv2AttributeDefinitionRef_Constraints" />
+    <ref role="1M2myG" to="5rf1:7JKstLNmmWV" resolve="SysMLv2AttributeDefinitionRef" />
+    <node concept="1N5Pfh" id="6coPuU3zrH6" role="1Mr941">
+      <ref role="1N5Vy1" to="5rf1:7JKstLNmmWX" resolve="definition" />
+      <node concept="1dDu$B" id="6coPuU3zrH7" role="1N6uqs">
+        <ref role="1dDu$A" to="5rf1:7JKstLNmmWw" resolve="SysMLv2AttributeDefinition" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6coPuU3zrHa">
+    <property role="3GE5qa" value="part.port" />
+    <property role="TrG5h" value="SysMLv2PortDefinitionRef_Constraints" />
+    <ref role="1M2myG" to="5rf1:6coPuU2Tg1S" resolve="SysMLv2PortDefinitionRef" />
+    <node concept="1N5Pfh" id="6coPuU3zrHb" role="1Mr941">
+      <ref role="1N5Vy1" to="5rf1:6coPuU2Tg21" />
+      <node concept="1dDu$B" id="6coPuU3zrHc" role="1N6uqs">
+        <ref role="1dDu$A" to="5rf1:6coPuU2Tg1R" resolve="SysMLv2PortDefinition" />
       </node>
     </node>
   </node>
