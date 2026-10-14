@@ -35,6 +35,9 @@
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
+      <concept id="8842732777748207592" name="jetbrains.mps.lang.structure.structure.SmartReferenceAttribute" flags="ng" index="RPilO">
+        <reference id="8842732777748207597" name="charactersticReference" index="RPilL" />
+      </concept>
       <concept id="1071489090640" name="jetbrains.mps.lang.structure.structure.ConceptDeclaration" flags="ig" index="1TIwiD">
         <property id="1096454100552" name="rootable" index="19KtqR" />
         <reference id="1071489389519" name="extends" index="1TJDcQ" />
@@ -55,6 +58,7 @@
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
@@ -157,6 +161,9 @@
     <node concept="PrWs8" id="3PUPjB2$P9C" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
+    <node concept="PrWs8" id="cvgDBNAW2X" role="PzmwI">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNgG7Z">
     <property role="EcuMT" value="8930763252716192255" />
@@ -165,7 +172,7 @@
     <property role="3GE5qa" value="part" />
     <ref role="1TJDcQ" node="6coPuU3buuw" resolve="SysMLv2Usage" />
     <node concept="PrWs8" id="7JKstLNgG8n" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
     </node>
     <node concept="PrWs8" id="7JKstLNgG8J" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
@@ -217,6 +224,9 @@
     </node>
     <node concept="PrWs8" id="4N4m7hs7Fm2" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+    </node>
+    <node concept="RPilO" id="cvgDBNz5Mz" role="lGtFl">
+      <ref role="RPilL" node="7JKstLNkRPw" resolve="definition" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNmmWw">
@@ -652,6 +662,14 @@
       <property role="IQ2ns" value="5531643499102778613" />
       <property role="20kJfa" value="namespace" />
       <ref role="20lvS9" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3tSWG0_KrpC">
+    <property role="EcuMT" value="3997211576372409960" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="ISysMLv2IdentifierNameConcept" />
+    <node concept="PrWs8" id="3tSWG0_KrpD" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>

@@ -5,10 +5,15 @@
     <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="6" />
     <use id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest" version="1" />
     <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="0" />
+    <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
   </languages>
   <imports />
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1228934484974" name="jetbrains.mps.lang.test.structure.PressKeyStatement" flags="nn" index="yd1bK">
+        <child id="1228934507814" name="keyStrokes" index="yd6KS" />
+      </concept>
       <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
         <property id="1883175908513350760" name="description" index="3YCmrE" />
         <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
@@ -27,6 +32,12 @@
       </concept>
       <concept id="1216989428737" name="jetbrains.mps.lang.test.structure.TestNode" flags="ng" index="1qefOq">
         <child id="1216989461394" name="nodeToCheck" index="1qenE9" />
+      </concept>
+    </language>
+    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1207318242772" name="jetbrains.mps.lang.plugin.structure.KeyMapKeystroke" flags="ng" index="pLAjd">
+        <property id="1207318242773" name="modifiers" index="pLAjc" />
+        <property id="1207318242774" name="keycode" index="pLAjf" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -66,7 +77,7 @@
     </language>
   </registry>
   <node concept="LiM7Y" id="3tSWG0_AXsB">
-    <property role="TrG5h" value="_010_fqNames_PartUsage" />
+    <property role="TrG5h" value="_010_Edit_PartUsage" />
     <property role="3YCmrE" value="checks the entering of a part usage" />
     <node concept="1qefOq" id="3tSWG0_AXsC" role="25YQCW">
       <node concept="2h0jOr" id="3tSWG0_AXsE" role="1qenE9">
@@ -80,13 +91,13 @@
         <node concept="2h0jOo" id="3tSWG0_AXsH" role="2h0jOs" />
         <node concept="3ZUotO" id="3tSWG0_CGii" role="2h0jOs">
           <property role="TrG5h" value="Car" />
-          <node concept="8GF0z" id="3tSWG0_CGik" role="3w00ZY">
-            <node concept="LIFWc" id="3tSWG0_CGil" role="lGtFl">
+          <node concept="2h0jOo" id="cvgDBNxYqN" role="3w00ZY">
+            <node concept="LIFWc" id="cvgDBNxYqO" role="lGtFl">
               <property role="ZRATv" value="true" />
               <property role="OXtK3" value="true" />
               <property role="p6zMq" value="0" />
               <property role="p6zMs" value="0" />
-              <property role="LIFWd" value="property_name" />
+              <property role="LIFWd" value="Constant_68dwa1_a" />
             </node>
           </node>
         </node>
@@ -95,7 +106,39 @@
     </node>
     <node concept="3clFbS" id="3tSWG0_CGin" role="LjaKd">
       <node concept="2TK7Tu" id="3tSWG0_CGim" role="3cqZAp">
+        <property role="2TTd_B" value="part engine" />
+      </node>
+      <node concept="yd1bK" id="3tSWG0_INQU" role="3cqZAp">
+        <node concept="pLAjd" id="3tSWG0_INQW" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="cvgDBNy5J1" role="3cqZAp">
+        <property role="2TTd_B" value="part engine2:" />
+      </node>
+      <node concept="yd1bK" id="cvgDBN$$C7" role="3cqZAp">
+        <node concept="pLAjd" id="cvgDBN$$C9" role="yd6KS">
+          <property role="pLAjf" value="VK_SPACE" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="cvgDBN$$mS" role="3cqZAp">
         <property role="2TTd_B" value="pack1::Engine" />
+      </node>
+      <node concept="yd1bK" id="cvgDBNDBqf" role="3cqZAp">
+        <node concept="pLAjd" id="cvgDBNDBqh" role="yd6KS">
+          <property role="pLAjc" value="ctrl" />
+          <property role="pLAjf" value="VK_SPACE" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="cvgDBNDBA2" role="3cqZAp">
+        <node concept="pLAjd" id="cvgDBNDBA4" role="yd6KS">
+          <property role="pLAjf" value="VK_DOWN" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="cvgDBNy6ql" role="3cqZAp">
+        <node concept="pLAjd" id="cvgDBNy6qn" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
       </node>
     </node>
     <node concept="1qefOq" id="3tSWG0_CGio" role="25YQFr">
@@ -110,8 +153,12 @@
         <node concept="2h0jOo" id="3tSWG0_CGis" role="2h0jOs" />
         <node concept="3ZUotO" id="3tSWG0_CGit" role="2h0jOs">
           <property role="TrG5h" value="Car" />
-          <node concept="8GF0z" id="3tSWG0_CGix" role="3w00ZY">
-            <node concept="8CKM2" id="3tSWG0_CGiy" role="8CKLj">
+          <node concept="8GF0z" id="cvgDBNxYqP" role="3w00ZY">
+            <property role="TrG5h" value="engine" />
+          </node>
+          <node concept="8GF0z" id="cvgDBNz5Mt" role="3w00ZY">
+            <property role="TrG5h" value="engine2" />
+            <node concept="8CKM2" id="cvgDBNz775" role="8CKLj">
               <ref role="gQIM1" node="3tSWG0_CGiq" resolve="pack1" />
               <ref role="8CKMW" node="3tSWG0_CGir" resolve="Engine" />
             </node>
