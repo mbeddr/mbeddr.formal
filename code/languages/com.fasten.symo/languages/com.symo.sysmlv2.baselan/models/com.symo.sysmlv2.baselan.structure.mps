@@ -215,6 +215,9 @@
       <property role="TrG5h" value="definition" />
       <ref role="20lvS9" node="3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
     </node>
+    <node concept="PrWs8" id="4N4m7hs7Fm2" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNmmWw">
     <property role="EcuMT" value="8930763252717678368" />
@@ -262,6 +265,9 @@
       <property role="20kJfa" value="definition" />
       <property role="TrG5h" value="definition" />
       <ref role="20lvS9" node="7JKstLNmmWw" resolve="SysMLv2AttributeDefinition" />
+    </node>
+    <node concept="PrWs8" id="4N4m7hs7Fm8" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNmmXl">
@@ -408,6 +414,9 @@
       <property role="20kJfa" value="definition" />
       <ref role="20lvS9" node="6coPuU2Tg1R" resolve="SysMLv2PortDefinition" />
     </node>
+    <node concept="PrWs8" id="4N4m7hs7Fmb" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU2Tg1T">
     <property role="EcuMT" value="7140692429570900089" />
@@ -520,6 +529,9 @@
       <property role="20kJfa" value="definition" />
       <ref role="20lvS9" node="6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
     </node>
+    <node concept="PrWs8" id="4N4m7hs7Fm5" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU36dCd">
     <property role="EcuMT" value="7140692429574298125" />
@@ -630,6 +642,16 @@
     <property role="TrG5h" value="ISysMLv2FeatureOwner" />
     <node concept="PrWs8" id="4N4m7hrYNgS" role="PrDN$">
       <ref role="PrY4T" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="4N4m7hs7FjO">
+    <property role="EcuMT" value="5531643499102778612" />
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="ISysMLv2QualifiedRef" />
+    <node concept="1TJgyj" id="4N4m7hs7FjP" role="1TKVEi">
+      <property role="IQ2ns" value="5531643499102778613" />
+      <property role="20kJfa" value="namespace" />
+      <ref role="20lvS9" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
     </node>
   </node>
 </model>

@@ -928,3 +928,24 @@ redefinition answers to the redefined name" rule from the iteration-11 entry; th
 `SysMLv2Usage.getEffectiveName()` behavior is still used for *presentation* of a feature ref. Sandbox
 `_120` subset refs retargeted accordingly. If SysML's own scoping (implicit naming of redefining
 features, KerML effectiveName) is later needed instead, revisit — then the fixture must change back.
+
+**Qualified names, explicit namespace reference (2026-10-14, not yet committed).** Modeled after BaseLanguage's
+`StaticMethodCall` (`classConcept . method`): every definition ref (`SysMLv2{Part,Item,Attribute,Port}DefinitionRef`)
+implements `ISysMLv2QualifiedRef`, which declares `namespace: 0..1 -> ISysMLv2Namespace` once; `definition` stays the
+last element and the raw fallback name stays for unresolved text. Pieces:
+- `ISysMLv2Namespace.getNestedNameInContext(context)` = BaseLanguage's `getNestedNameInContext`: the name of a
+  namespace relative to the place of the reference (drops leading segments that are ancestors of the ref; files are
+  never part of the path). Used by the editor's `ref. presentation` cell and by `getEffectiveName()` (textgen).
+- `ISysMLv2QualifiedRef.namespaceScope()`: a `DelegatingScope` over the lexical namespace scope, with `resolve`
+  (walks `A::B::C` through `ISysMLv2Namespace.memberScope`), `getAvailableElements` (all lexically visible namespaces
+  and their nested ones, via `collectNamespaces`) and `getReferenceText` (= `getNestedNameInContext`). Backs the
+  `namespace` link constraint. `definitionScope(kind)` = `namespace.memberScope(kind)` if set, else the lexical scope;
+  the four `definition` constraints are imperative and call it.
+- Reifier: `ISysMLv2QualifiedRef.reifyQualified(text, kind)` resolves the prefix, sets `namespace`, returns the member.
+- Editor: main cell `[namespace ::] definition` (namespace + `::` only when set); the inspector has a `namespace:` row
+  with the same presentation cell so a user can pick one with qualified-name completion. Typing a namespace directly in
+  the main cell is NOT supported yet (no optional/side-transform for it).
+Tests: `_130_NameScopingTest.testReifyQualifiedNames` (resolution + `namespace` refs + relative texts `Inner`,
+`Inner`, `Outer::Inner`). Not done: textgen round-trip test for qualified refs, a `ScopesTest` on the `namespace` link,
+quoted names, `$::`, feature chains, `SysMLv2FeatureRef`/`SysMLv2Import` reuse of `ISysMLv2QualifiedRef`, visibility,
+ambiguity checks. Imports plug into `localMembers()`/`memberScope()`.
