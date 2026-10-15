@@ -2,43 +2,11 @@
 <solution name="com.mpsbasics.docx4j.lib" uuid="71bb25aa-20fa-4c18-8954-1b176576f52d" moduleVersion="0">
   <models>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="angus-activation.jar" />
-      <sourceRoot location="angus-mail.jar" />
-      <sourceRoot location="antlr.jar" />
-      <sourceRoot location="antlr-runtime.jar" />
-      <sourceRoot location="checker-qual.jar" />
-      <sourceRoot location="commons-codec.jar" />
-      <sourceRoot location="commons-collections4.jar" />
-      <sourceRoot location="commons-compress.jar" />
-      <sourceRoot location="commons-io.jar" />
-      <sourceRoot location="commons-lang3.jar" />
-      <sourceRoot location="commons-logging.jar" />
       <sourceRoot location="docx4j-core.jar" />
-      <sourceRoot location="docx4j-JAXB-MOXy.jar" />
       <sourceRoot location="docx4j-openxml-objects.jar" />
       <sourceRoot location="docx4j-openxml-objects-pml.jar" />
       <sourceRoot location="docx4j-openxml-objects-sml.jar" />
-      <sourceRoot location="error_prone_annotations.jar" />
-      <sourceRoot location="fontbox.jar" />
-      <sourceRoot location="jakarta.activation-api.jar" />
-      <sourceRoot location="jakarta.mail-api.jar" />
       <sourceRoot location="jakarta.xml.bind-api.jar" />
-      <sourceRoot location="jaxb-core.jar" />
-      <sourceRoot location="jaxb-svg11.jar" />
-      <sourceRoot location="jaxb-xjc.jar" />
-      <sourceRoot location="jcl-over-slf4j.jar" />
-      <sourceRoot location="mbassador.jar" />
-      <sourceRoot location="org.eclipse.persistence.asm.jar" />
-      <sourceRoot location="org.eclipse.persistence.core.jar" />
-      <sourceRoot location="org.eclipse.persistence.moxy.jar" />
-      <sourceRoot location="pdfbox-io.jar" />
-      <sourceRoot location="qdox.jar" />
-      <sourceRoot location="SparseBitSet.jar" />
-      <sourceRoot location="stringtemplate.jar" />
-      <sourceRoot location="wmf2svg.jar" />
-      <sourceRoot location="xalan-interpretive.jar" />
-      <sourceRoot location="xalan-serializer.jar" />
-      <sourceRoot location="xmlgraphics-commons.jar" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes" />
   </models>
@@ -89,8 +57,9 @@
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
-    <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="3" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
+    <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
