@@ -3018,6 +3018,11 @@
             <ref role="3bR37D" node="6k97aKdvteW" resolve="com.mpsbasics.langchain4j.pluginSolution" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6SsBoSDqc2Y" role="3bR37C">
+          <node concept="3bR9La" id="6SsBoSDqc2Z" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:1ia2VB5guYy" resolve="MPS.IDEA" />
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="6k97aKdvteW" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -3352,32 +3357,6 @@
               </node>
             </node>
           </node>
-        </node>
-      </node>
-    </node>
-    <node concept="55IIr" id="4oT$_WGcUdL" role="auvoZ">
-      <node concept="2Ry0Ak" id="4oT$_WGcUdM" role="iGT6I">
-        <property role="2Ry0Am" value=".." />
-        <node concept="2Ry0Ak" id="4oT$_WGcUdN" role="2Ry0An">
-          <property role="2Ry0Am" value=".." />
-          <node concept="2Ry0Ak" id="4oT$_WGcUdO" role="2Ry0An">
-            <property role="2Ry0Am" value=".." />
-            <node concept="2Ry0Ak" id="4oT$_WGcUdP" role="2Ry0An">
-              <property role="2Ry0Am" value="build" />
-              <node concept="2Ry0Ak" id="4oT$_WGcUdQ" role="2Ry0An">
-                <property role="2Ry0Am" value="scripts" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2sgV4H" id="4oT$_WGcUdW" role="1l3spa">
-      <ref role="1l3spb" to="al5i:3AVJcIMlF8l" resolve="com.mbeddr.platform" />
-      <node concept="398BVA" id="4oT$_WGcUdX" role="2JcizS">
-        <ref role="398BVh" node="5gFsbf33UIa" resolve="dependencies.root" />
-        <node concept="2Ry0Ak" id="4oT$_WGcUdY" role="iGT6I">
-          <property role="2Ry0Am" value="com.mbeddr.platform" />
         </node>
       </node>
     </node>
