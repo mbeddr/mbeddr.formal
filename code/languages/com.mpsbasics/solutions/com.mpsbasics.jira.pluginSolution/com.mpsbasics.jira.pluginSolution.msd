@@ -5,26 +5,9 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="joda-time.jar" />
-      <sourceRoot location="jsr305.jar" />
-      <sourceRoot location="httpasyncclient.jar" />
-      <sourceRoot location="commons-logging.jar" />
-      <sourceRoot location="httpclient-cache.jar" />
-      <sourceRoot location="httpcore-nio.jar" />
-      <sourceRoot location="atlassian-httpclient-api.jar" />
-      <sourceRoot location="atlassian-event.jar" />
-      <sourceRoot location="httpcore.jar" />
       <sourceRoot location="jira-rest-java-client-core.jar" />
-      <sourceRoot location="guava.jar" />
-      <sourceRoot location="httpclient.jar" />
       <sourceRoot location="atlassian-util-concurrent.jar" />
-      <sourceRoot location="spring-beans.jar" />
-      <sourceRoot location="jersey-client.jar" />
-      <sourceRoot location="httpmime.jar" />
       <sourceRoot location="jira-rest-java-client-api.jar" />
-      <sourceRoot location="spring-core.jar" />
-      <sourceRoot location="httpasyncclient-cache.jar" />
-      <sourceRoot location="jettison.jar" />
     </modelRoot>
   </models>
   <facets>
@@ -59,8 +42,9 @@
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="2" />
-    <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <language slang="l:f2801650-65d5-424e-bb1b-463a8781b786:jetbrains.mps.baseLanguage.javadoc" version="3" />
     <language slang="l:ceab5195-25ea-4f22-9b92-103b95ca8c0c:jetbrains.mps.lang.core" version="2" />
+    <language slang="l:c7fb639f-be78-4307-89b0-b5959c3fa8c8:jetbrains.mps.lang.text" version="0" />
     <language slang="l:9ded098b-ad6a-4657-bfd9-48636cfe8bc3:jetbrains.mps.lang.traceable" version="0" />
   </languageVersions>
   <dependencyVersions>
