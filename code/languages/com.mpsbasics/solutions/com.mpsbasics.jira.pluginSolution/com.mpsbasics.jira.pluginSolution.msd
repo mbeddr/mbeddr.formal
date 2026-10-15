@@ -5,26 +5,9 @@
       <sourceRoot location="models" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="joda-time.jar" />
-      <sourceRoot location="jsr305.jar" />
-      <sourceRoot location="httpasyncclient.jar" />
-      <sourceRoot location="commons-logging.jar" />
-      <sourceRoot location="httpclient-cache.jar" />
-      <sourceRoot location="httpcore-nio.jar" />
-      <sourceRoot location="atlassian-httpclient-api.jar" />
-      <sourceRoot location="atlassian-event.jar" />
-      <sourceRoot location="httpcore.jar" />
       <sourceRoot location="jira-rest-java-client-core.jar" />
-      <sourceRoot location="guava.jar" />
-      <sourceRoot location="httpclient.jar" />
       <sourceRoot location="atlassian-util-concurrent.jar" />
-      <sourceRoot location="spring-beans.jar" />
-      <sourceRoot location="jersey-client.jar" />
-      <sourceRoot location="httpmime.jar" />
       <sourceRoot location="jira-rest-java-client-api.jar" />
-      <sourceRoot location="spring-core.jar" />
-      <sourceRoot location="httpasyncclient-cache.jar" />
-      <sourceRoot location="jettison.jar" />
     </modelRoot>
   </models>
   <facets>
