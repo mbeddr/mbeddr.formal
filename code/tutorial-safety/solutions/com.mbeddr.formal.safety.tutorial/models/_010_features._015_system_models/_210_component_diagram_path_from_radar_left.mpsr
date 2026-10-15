@@ -113,7 +113,7 @@
       </node>
       <node concept="c$xRF" id="1HEyn0wZcys" role="1pqCzW" />
       <node concept="1oxsuH" id="1HEyn0wZcxQ" role="1pqCzW">
-        <property role="1ZmCJ5" value="red " />
+        <property role="1ZmCJ5" value="red" />
         <node concept="1Pa9Pv" id="1HEyn0wZcxS" role="1oxsuN">
           <node concept="1PaTwC" id="1HEyn0wZcxU" role="1PaQFQ">
             <node concept="3oM_SD" id="1HEyn0wZcxV" role="1PaTwD">

@@ -911,11 +911,6 @@
             <ref role="3bR37D" to="k3fp:5jdn85oHU1h" resolve="com.mpsbasics.build" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4oT$_WGcEs8" role="3bR37C">
-          <node concept="3bR9La" id="4oT$_WGcEs9" role="1SiIV1">
-            <ref role="3bR37D" to="k3fp:5jdn85oHU1h" resolve="com.mpsbasics.build" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="2G$12M" id="7a7$evTWl$t" role="3989C9">
@@ -2032,11 +2027,6 @@
             <ref role="3bR37D" to="k3fp:2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
           </node>
         </node>
-        <node concept="1SiIV0" id="4oT$_WGcEsk" role="3bR37C">
-          <node concept="3bR9La" id="4oT$_WGcEsl" role="1SiIV1">
-            <ref role="3bR37D" to="k3fp:2u7UHDCnRuK" resolve="com.mpsbasics.editor.utils" />
-          </node>
-        </node>
       </node>
       <node concept="1E1JtD" id="6hyv0iVPlG4" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -2600,9 +2590,9 @@
             </node>
           </node>
         </node>
-        <node concept="1SiIV0" id="2_t3nDPzUt6" role="3bR37C">
-          <node concept="3bR9La" id="2_t3nDPzUt7" role="1SiIV1">
-            <ref role="3bR37D" to="90a9:3$A0JaN5bpX" resolve="MPS.ThirdParty" />
+        <node concept="1SiIV0" id="3nXTjEVBbLq" role="3bR37C">
+          <node concept="3bR9La" id="3nXTjEVBbLr" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:uqqfP8JWSl" resolve="MPS.IDEA.Modules" />
           </node>
         </node>
       </node>

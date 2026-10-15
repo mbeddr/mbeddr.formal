@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="5zyv" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent(JDK/)" />
@@ -106,22 +106,17 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
+      <concept id="6971016359099800069" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldSingleCommentLine" flags="ngI" index="2JaDLO">
+        <child id="6971016359099801474" name="commentBody" index="2JaDBN" />
       </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
-      <concept id="2217234381367049075" name="jetbrains.mps.baseLanguage.javadoc.structure.CodeInlineDocTag" flags="ng" index="VVOAv">
-        <child id="3106559687488741665" name="line" index="2Xj1qM" />
+      <concept id="5085607816306582224" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentTextElement" flags="ng" index="1Vtdud">
+        <child id="5085607816306582225" name="tag" index="1Vtduc" />
       </concept>
-      <concept id="8970989240999019145" name="jetbrains.mps.baseLanguage.javadoc.structure.InlineTagCommentLinePart" flags="ng" index="1dT_AA">
-        <child id="6962838954693749192" name="tag" index="qph3F" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
+      <concept id="5085607816306633585" name="jetbrains.mps.baseLanguage.javadoc.structure.CodeInlineDocTagTE" flags="ng" index="1VuTSG" />
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -129,6 +124,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
   </registry>
@@ -255,26 +258,77 @@
         <ref role="16sUi3" node="7yOrhoD$tn2" resolve="T" />
       </node>
       <node concept="P$JXv" id="6yl8m87fFor" role="lGtFl">
-        <node concept="TZ5HA" id="6yl8m87fFos" role="TZ5H$">
-          <node concept="1dT_AC" id="6yl8m87fFot" role="1dT_Ay">
-            <property role="1dT_AB" value="Run " />
+        <node concept="1PaTwC" id="2nacnue1GBM" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GBN" role="1PaTwD">
+            <property role="3oM_SC" value="Run" />
           </node>
-          <node concept="1dT_AA" id="6yl8m87fFFZ" role="1dT_Ay">
-            <node concept="VVOAv" id="6yl8m87fFG1" role="qph3F">
-              <node concept="TZ5HA" id="6yl8m87fFG3" role="2Xj1qM">
-                <node concept="1dT_AC" id="6yl8m87fFGl" role="1dT_Ay">
-                  <property role="1dT_AB" value="action" />
+          <node concept="1Vtdud" id="2nacnue1GBO" role="1PaTwD">
+            <node concept="1VuTSG" id="2nacnue1GBP" role="1Vtduc">
+              <node concept="1PaTwC" id="2nacnue1GBS" role="2JaDBN">
+                <node concept="3oM_SD" id="2nacnue1GBT" role="1PaTwD">
+                  <property role="3oM_SC" value="action" />
                 </node>
               </node>
             </node>
           </node>
-          <node concept="1dT_AC" id="6yl8m87fFFY" role="1dT_Ay">
-            <property role="1dT_AB" value=" while temporarily setting system properties that let JAXB find the correct factory" />
+          <node concept="3oM_SD" id="2nacnue1GBU" role="1PaTwD">
+            <property role="3oM_SC" value="while" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBV" role="1PaTwD">
+            <property role="3oM_SC" value="temporarily" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBW" role="1PaTwD">
+            <property role="3oM_SC" value="setting" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBX" role="1PaTwD">
+            <property role="3oM_SC" value="system" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBY" role="1PaTwD">
+            <property role="3oM_SC" value="properties" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GBZ" role="1PaTwD">
+            <property role="3oM_SC" value="that" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GC0" role="1PaTwD">
+            <property role="3oM_SC" value="let" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GC1" role="1PaTwD">
+            <property role="3oM_SC" value="JAXB" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GC2" role="1PaTwD">
+            <property role="3oM_SC" value="find" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GC3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GC4" role="1PaTwD">
+            <property role="3oM_SC" value="correct" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GC5" role="1PaTwD">
+            <property role="3oM_SC" value="factory" />
           </node>
         </node>
-        <node concept="TZ5HA" id="6yl8m87fG0O" role="TZ5H$">
-          <node concept="1dT_AC" id="6yl8m87fG0P" role="1dT_Ay">
-            <property role="1dT_AB" value="and XML parser for docx4j to work." />
+        <node concept="1PaTwC" id="2nacnue1GC6" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GC7" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GC8" role="1PaTwD">
+            <property role="3oM_SC" value="XML" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GC9" role="1PaTwD">
+            <property role="3oM_SC" value="parser" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCa" role="1PaTwD">
+            <property role="3oM_SC" value="for" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCb" role="1PaTwD">
+            <property role="3oM_SC" value="docx4j" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCc" role="1PaTwD">
+            <property role="3oM_SC" value="to" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GCd" role="1PaTwD">
+            <property role="3oM_SC" value="work." />
           </node>
         </node>
       </node>

@@ -10,6 +10,36 @@
 ## Versions
 - Get the [latest release](https://github.com/mbeddr/mbeddr.formal/releases)
 
+## Project Structure
+
+FASTEN is organized as several MPS projects under `code/languages/`:
+
+- **`com.mpsbasics`** — generic MPS-language-development utilities, not specific to any business
+  domain. Also bundles a few broader integrations (JIRA, GenAI/langchain4j, PDF import/export) that
+  aren't purely language-authoring tooling.
+- **`com.fasten.symo`** (SYstemsMOdeling) — generic systems-engineering abstractions usable across
+  projects: a base layer plus PlantUML-diagramming and SysML/hardware-modeling extensions.
+- **End-user-facing domain languages** — `com.mbeddr.formal.safety` (model-based safety engineering
+  and assurance, by far the most active), plus `com.mbeddr.formal.req`, `cprover`, `nusmv`, `prism`,
+  `smt`, `spin` (requirements and formal-methods backends).
+- **`com.mbeddr.formal.repo_admin`** — cross-cutting: linters plus a formal architecture description
+  (`com.fasten.meta.architecture`) enforcing dependency rules across the projects above. Nothing else
+  is allowed to depend on `repo_admin`'s own modules.
+
+Three tutorial projects (`code/tutorial`, `code/tutorial-mdcc`, `code/tutorial-safety`) demonstrate
+the end-user-facing functionality and contain no language definitions of their own.
+
+The enforced architecture is more granular than this summary — e.g. `safety` alone is six named
+sub-components, `symo` splits into a base layer with named extensions, and there's a documented
+"quarantine" component for known, accepted layering exceptions. Treat `com.fasten.meta.architecture`
+(open it via MPS MCP tools from the `repo_admin` project) as the authoritative source for the actual
+dependency graph — this summary is oriented for newcomers, not a substitute for it.
+
+One known wrinkle: the `fasten_base_languages` component — a shared foundation
+(`com.mbeddr.formal.base`, `.base.arch`, `.base.analyses`, `.base.tabular`, etc.) used by multiple
+domain languages — has no directory of its own; its modules currently live nested inside
+`code/languages/com.mbeddr.formal.nusmv/`.
+
 ## Building (from command line)
 
 For building FASTEN we have Gradle-based scripts which automatically manage all needed dependencies including MPS itself

@@ -5,14 +5,14 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="2avh" ref="r:d71bd9ec-2dae-496f-9887-8fb9facf61b7(com.mbeddr.formal.base.tooling.tools)" />
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
-    <import index="fhlc" ref="r:89fb4363-ec36-4a06-ac51-b284d265c631(com.mbeddr.formal.base.tooling.make)" />
     <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
+    <import index="fhlc" ref="r:89fb4363-ec36-4a06-ac51-b284d265c631(com.mbeddr.formal.base.tooling.make)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -106,15 +106,9 @@
       <concept id="1146644623116" name="jetbrains.mps.baseLanguage.structure.PrivateVisibility" flags="nn" index="3Tm6S6" />
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -126,6 +120,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -156,10 +158,10 @@
           <node concept="3cpWsn" id="4Hts7PYtZ_0" role="3cpWs9">
             <property role="TrG5h" value="verificationDirectory" />
             <node concept="17QB3L" id="4Hts7PYtZ_1" role="1tU5fm" />
-            <node concept="2YIFZM" id="4Hts7PYtZ_2" role="33vP2m">
-              <ref role="1Pybhc" to="fhlc:3AFGfkfpqfj" resolve="PathsUtils" />
+            <node concept="2YIFZM" id="sbnwpN4NtN" role="33vP2m">
               <ref role="37wK5l" to="fhlc:3hNQKr2Cac0" resolve="computePathToGeneratedDirectory" />
-              <node concept="37vLTw" id="4Hts7PYtZ_3" role="37wK5m">
+              <ref role="1Pybhc" to="fhlc:3AFGfkfpqfj" resolve="PathsUtils" />
+              <node concept="37vLTw" id="sbnwpN4NtO" role="37wK5m">
                 <ref role="3cqZAo" node="4Hts7PYtZ_I" resolve="m" />
               </node>
             </node>
@@ -263,9 +265,36 @@
         </node>
       </node>
       <node concept="P$JXv" id="1y75PbzycUD" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycUB" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycUC" role="1dT_Ay">
-            <property role="1dT_AB" value="Runs Prism on a given file and with additional arguments." />
+        <node concept="1PaTwC" id="2nacnue1GUf" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GUg" role="1PaTwD">
+            <property role="3oM_SC" value="Runs" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUh" role="1PaTwD">
+            <property role="3oM_SC" value="Prism" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUi" role="1PaTwD">
+            <property role="3oM_SC" value="on" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUj" role="1PaTwD">
+            <property role="3oM_SC" value="a" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUk" role="1PaTwD">
+            <property role="3oM_SC" value="given" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUl" role="1PaTwD">
+            <property role="3oM_SC" value="file" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUm" role="1PaTwD">
+            <property role="3oM_SC" value="and" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUn" role="1PaTwD">
+            <property role="3oM_SC" value="with" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUo" role="1PaTwD">
+            <property role="3oM_SC" value="additional" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUp" role="1PaTwD">
+            <property role="3oM_SC" value="arguments." />
           </node>
         </node>
       </node>
@@ -378,9 +407,12 @@
         </node>
       </node>
       <node concept="P$JXv" id="1y75PbzycUG" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycUE" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycUF" role="1dT_Ay">
-            <property role="1dT_AB" value="Rund Prism." />
+        <node concept="1PaTwC" id="2nacnue1GUq" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1GUr" role="1PaTwD">
+            <property role="3oM_SC" value="Rund" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1GUs" role="1PaTwD">
+            <property role="3oM_SC" value="Prism." />
           </node>
         </node>
       </node>

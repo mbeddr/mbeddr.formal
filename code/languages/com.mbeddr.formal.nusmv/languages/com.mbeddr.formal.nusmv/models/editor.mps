@@ -18,6 +18,9 @@
     <import index="ox2v" ref="r:9d0d3f45-3600-4f52-892b-d59f24c624ff(com.mbeddr.formal.base.expressions.behavior)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
@@ -205,7 +208,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -1432,7 +1434,7 @@
       <node concept="2ElW$n" id="7mSH3WnBhce" role="2El2Yn">
         <node concept="2OqwBi" id="6hWVnwAirH9" role="2EmURo">
           <node concept="2EmZKS" id="6hWVnwAirqe" role="2Oq$k0" />
-          <node concept="2qgKlT" id="6hWVnwAis7r" role="2OqNvi">
+          <node concept="3zqWPK" id="5WfAYZdRU5O" role="2OqNvi">
             <ref role="37wK5l" to="ox2v:5HxjapwgqKu" resolve="getPriolevel" />
           </node>
         </node>
@@ -1638,7 +1640,7 @@
       <node concept="2ElW$n" id="1ZsZb$iN6UV" role="2El2Yn">
         <node concept="2OqwBi" id="6Kf5KB6RKA0" role="2EmURo">
           <node concept="2EmZKS" id="6Kf5KB6RKli" role="2Oq$k0" />
-          <node concept="2qgKlT" id="6Kf5KB6RKVd" role="2OqNvi">
+          <node concept="3zqWPK" id="5WfAYZdRU5Q" role="2OqNvi">
             <ref role="37wK5l" to="ox2v:5HxjapwgqKu" resolve="getPriolevel" />
           </node>
         </node>
@@ -1978,7 +1980,7 @@
       <node concept="2ElW$n" id="69v0vu5IwUt" role="2El2Yn">
         <node concept="2OqwBi" id="69v0vu5IxdD" role="2EmURo">
           <node concept="2EmZKS" id="69v0vu5IwV3" role="2Oq$k0" />
-          <node concept="2qgKlT" id="69v0vu5Iy6M" role="2OqNvi">
+          <node concept="3zqWPK" id="5WfAYZdRU5S" role="2OqNvi">
             <ref role="37wK5l" to="ox2v:5HxjapwgqKu" resolve="getPriolevel" />
           </node>
         </node>
@@ -2010,7 +2012,7 @@
       <node concept="2ElW$n" id="69v0vu5I_ht" role="2El2Yn">
         <node concept="2OqwBi" id="69v0vu5I_A1" role="2EmURo">
           <node concept="2EmZKS" id="69v0vu5I_is" role="2Oq$k0" />
-          <node concept="2qgKlT" id="69v0vu5IA_6" role="2OqNvi">
+          <node concept="3zqWPK" id="5WfAYZdRU5U" role="2OqNvi">
             <ref role="37wK5l" to="ox2v:5HxjapwgqKu" resolve="getPriolevel" />
           </node>
         </node>
@@ -2048,7 +2050,7 @@
       <node concept="2ElW$n" id="69v0vu5Iytf" role="2El2Yn">
         <node concept="2OqwBi" id="69v0vu5IyLN" role="2EmURo">
           <node concept="2EmZKS" id="69v0vu5Iyue" role="2Oq$k0" />
-          <node concept="2qgKlT" id="69v0vu5IzKS" role="2OqNvi">
+          <node concept="3zqWPK" id="5WfAYZdRU5W" role="2OqNvi">
             <ref role="37wK5l" to="ox2v:5HxjapwgqKu" resolve="getPriolevel" />
           </node>
         </node>
@@ -2189,7 +2191,7 @@
       <node concept="2ElW$n" id="69v0vu5GCKg" role="2El2Yn">
         <node concept="2OqwBi" id="69v0vu5GFyz" role="2EmURo">
           <node concept="2EmZKS" id="69v0vu5GFeY" role="2Oq$k0" />
-          <node concept="2qgKlT" id="69v0vu5GGxC" role="2OqNvi">
+          <node concept="3zqWPK" id="5WfAYZdRU5Y" role="2OqNvi">
             <ref role="37wK5l" to="ox2v:5HxjapwgqKu" resolve="getPriolevel" />
           </node>
         </node>
@@ -2226,7 +2228,7 @@
       <node concept="2ElW$n" id="7V1Bqz6Uq57" role="2El2Yn">
         <node concept="2OqwBi" id="7V1Bqz6WUoZ" role="2EmURo">
           <node concept="2EmZKS" id="7V1Bqz6WU9M" role="2Oq$k0" />
-          <node concept="2qgKlT" id="7V1Bqz6WUKT" role="2OqNvi">
+          <node concept="3zqWPK" id="5WfAYZdRU60" role="2OqNvi">
             <ref role="37wK5l" to="ox2v:5HxjapwgqKu" resolve="getPriolevel" />
           </node>
         </node>

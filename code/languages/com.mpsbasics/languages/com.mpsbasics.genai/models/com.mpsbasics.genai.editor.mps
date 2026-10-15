@@ -21,6 +21,9 @@
     <import index="zqge" ref="r:59e90602-6655-4552-86eb-441a42a9a0e4(jetbrains.mps.lang.text.structure)" implicit="true" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="2000375450116454183" name="jetbrains.mps.lang.editor.structure.ISubstituteMenu" flags="ngI" index="22mbnS">
         <child id="414384289274416996" name="parts" index="3ft7WO" />
@@ -275,7 +278,6 @@
       <concept id="1138411891628" name="jetbrains.mps.lang.smodel.structure.SNodeOperation" flags="nn" index="eCIE_">
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
       <concept id="1172008320231" name="jetbrains.mps.lang.smodel.structure.Node_IsNotNullOperation" flags="nn" index="3x8VRR" />
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
@@ -1037,7 +1039,7 @@
                   <node concept="3clFbF" id="2Mi1G8ja8$i" role="3cqZAp">
                     <node concept="2OqwBi" id="2Mi1G8ja91r" role="3clFbG">
                       <node concept="3GMtW1" id="2Mi1G8ja8$h" role="2Oq$k0" />
-                      <node concept="2qgKlT" id="2Mi1G8ja9tF" role="2OqNvi">
+                      <node concept="3zqWPK" id="5WfAYZdQLAT" role="2OqNvi">
                         <ref role="37wK5l" to="zpwy:2Mi1G8ja7l1" resolve="getAvailableModelNames" />
                       </node>
                     </node>
@@ -1172,7 +1174,7 @@
                                       <node concept="37vLTw" id="5YEFBwyGSUI" role="2Oq$k0">
                                         <ref role="3cqZAo" node="5YEFBwyFWrY" resolve="ac" />
                                       </node>
-                                      <node concept="2qgKlT" id="5YEFBwyGUkm" role="2OqNvi">
+                                      <node concept="3zqWPK" id="5WfAYZdQLAV" role="2OqNvi">
                                         <ref role="37wK5l" to="zpwy:5YEFBwyGRqc" resolve="reInitializeWrapper" />
                                       </node>
                                     </node>

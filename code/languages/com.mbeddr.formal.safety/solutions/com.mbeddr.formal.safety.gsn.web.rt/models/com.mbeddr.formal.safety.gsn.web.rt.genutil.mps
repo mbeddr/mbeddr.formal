@@ -859,13 +859,21 @@
             </node>
             <node concept="2ShNRf" id="BfgvErhHBv" role="33vP2m">
               <node concept="1pGfFk" id="BfgvErhIVy" role="2ShVmc">
-                <ref role="37wK5l" to="ao3:~TextGeneratorEngine.&lt;init&gt;(jetbrains.mps.messages.IMessageHandler)" resolve="TextGeneratorEngine" />
+                <ref role="37wK5l" to="ao3:~TextGeneratorEngine.&lt;init&gt;(jetbrains.mps.messages.IMessageHandler,jetbrains.mps.components.ComponentHost)" resolve="TextGeneratorEngine" />
                 <node concept="2OqwBi" id="13CsAhVSOGu" role="37wK5m">
                   <node concept="liA8E" id="13CsAhVSOUH" role="2OqNvi">
                     <ref role="37wK5l" to="hfuk:7yGn3z4N4Nw" resolve="getMessageHandler" />
                   </node>
                   <node concept="37vLTw" id="7ZDAUtpFQRK" role="2Oq$k0">
                     <ref role="3cqZAo" node="7ZDAUtpFP69" resolve="session" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="29y63zp4SAj" role="37wK5m">
+                  <node concept="37vLTw" id="29y63zp4Shb" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7ZDAUtpFRJe" resolve="project" />
+                  </node>
+                  <node concept="liA8E" id="29y63zp4T5o" role="2OqNvi">
+                    <ref role="37wK5l" to="z1c4:~Project.getPlatform()" resolve="getPlatform" />
                   </node>
                 </node>
               </node>

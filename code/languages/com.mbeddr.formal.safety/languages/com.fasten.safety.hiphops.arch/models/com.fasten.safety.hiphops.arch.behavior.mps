@@ -33,6 +33,7 @@
         <reference id="5299096511375896640" name="superConcept" index="3eA5LN" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
@@ -98,7 +99,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
         <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
@@ -140,7 +140,7 @@
                       <ref role="3Tt5mk" to="zsc5:1TeaL8RddiD" resolve="interf" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="62cfieEP7Wx" role="2OqNvi">
+                  <node concept="3zqWPK" id="4oGkhCURGEP" role="2OqNvi">
                     <ref role="37wK5l" to="7wf3:7RhjhI7_2bQ" resolve="allPorts" />
                   </node>
                 </node>
@@ -163,12 +163,12 @@
             <node concept="13iAh5" id="1TeaL8ReWRY" role="2Oq$k0">
               <ref role="3eA5LN" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
             </node>
-            <node concept="2qgKlT" id="1TeaL8ReWRZ" role="2OqNvi">
+            <node concept="3zqWPK" id="4oGkhCURGER" role="2OqNvi">
               <ref role="37wK5l" to="tpcu:52_Geb4QDV$" resolve="getScope" />
-              <node concept="37vLTw" id="1TeaL8ReWRV" role="37wK5m">
+              <node concept="37vLTw" id="4oGkhCURGET" role="37wK5m">
                 <ref role="3cqZAo" node="1TeaL8ReWRQ" resolve="kind" />
               </node>
-              <node concept="37vLTw" id="1TeaL8ReWRW" role="37wK5m">
+              <node concept="37vLTw" id="4oGkhCURGEU" role="37wK5m">
                 <ref role="3cqZAo" node="1TeaL8ReWRS" resolve="child" />
               </node>
             </node>

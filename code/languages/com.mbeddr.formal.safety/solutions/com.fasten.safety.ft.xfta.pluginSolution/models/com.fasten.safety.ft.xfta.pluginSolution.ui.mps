@@ -4,7 +4,7 @@
   <languages>
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
-    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="2" />
+    <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
   </languages>
   <imports>
     <import index="dxuu" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:javax.swing(JDK/)" />
@@ -135,17 +135,11 @@
     </language>
     <language id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc">
       <concept id="6832197706140896242" name="jetbrains.mps.baseLanguage.javadoc.structure.FieldDocComment" flags="ng" index="z59LJ" />
-      <concept id="5349172909345501395" name="jetbrains.mps.baseLanguage.javadoc.structure.BaseDocComment" flags="ng" index="P$AiS">
-        <child id="8465538089690331502" name="body" index="TZ5H$" />
-      </concept>
       <concept id="5349172909345532724" name="jetbrains.mps.baseLanguage.javadoc.structure.MethodDocComment" flags="ng" index="P$JXv" />
-      <concept id="8465538089690331500" name="jetbrains.mps.baseLanguage.javadoc.structure.CommentLine" flags="ng" index="TZ5HA">
-        <child id="8970989240999019149" name="part" index="1dT_Ay" />
-      </concept>
-      <concept id="8970989240999019143" name="jetbrains.mps.baseLanguage.javadoc.structure.TextCommentLinePart" flags="ng" index="1dT_AC">
-        <property id="8970989240999019144" name="text" index="1dT_AB" />
-      </concept>
       <concept id="2068944020170241612" name="jetbrains.mps.baseLanguage.javadoc.structure.ClassifierDocComment" flags="ng" index="3UR2Jj" />
+      <concept id="5085607816302529296" name="jetbrains.mps.baseLanguage.javadoc.structure.IHoldCommentLines" flags="ngI" index="1VezTd">
+        <child id="5085607816302529587" name="commentBody" index="1Vez_I" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -154,6 +148,14 @@
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+    <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+        <property id="155656958578482949" name="value" index="3oM_SC" />
+      </concept>
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+        <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
@@ -183,9 +185,24 @@
         <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
       <node concept="z59LJ" id="1y75PbzycUP" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycUN" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycUO" role="1dT_Ay">
-            <property role="1dT_AB" value="Text area containing the raw output." />
+        <node concept="1PaTwC" id="2nacnue1Hpz" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1Hp$" role="1PaTwD">
+            <property role="3oM_SC" value="Text" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hp_" role="1PaTwD">
+            <property role="3oM_SC" value="area" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpA" role="1PaTwD">
+            <property role="3oM_SC" value="containing" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpB" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpC" role="1PaTwD">
+            <property role="3oM_SC" value="raw" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpD" role="1PaTwD">
+            <property role="3oM_SC" value="output." />
           </node>
         </node>
       </node>
@@ -201,9 +218,24 @@
         <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
       <node concept="z59LJ" id="1y75PbzycUS" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycUQ" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycUR" role="1dT_Ay">
-            <property role="1dT_AB" value="Text area containing the raw stderr." />
+        <node concept="1PaTwC" id="2nacnue1HpE" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1HpF" role="1PaTwD">
+            <property role="3oM_SC" value="Text" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpG" role="1PaTwD">
+            <property role="3oM_SC" value="area" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpH" role="1PaTwD">
+            <property role="3oM_SC" value="containing" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpI" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpJ" role="1PaTwD">
+            <property role="3oM_SC" value="raw" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpK" role="1PaTwD">
+            <property role="3oM_SC" value="stderr." />
           </node>
         </node>
       </node>
@@ -219,9 +251,24 @@
         <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
       <node concept="z59LJ" id="1y75PbzycUV" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycUT" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycUU" role="1dT_Ay">
-            <property role="1dT_AB" value="Text area containing the ran command." />
+        <node concept="1PaTwC" id="2nacnue1HpL" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1HpM" role="1PaTwD">
+            <property role="3oM_SC" value="Text" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpN" role="1PaTwD">
+            <property role="3oM_SC" value="area" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpO" role="1PaTwD">
+            <property role="3oM_SC" value="containing" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpP" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpQ" role="1PaTwD">
+            <property role="3oM_SC" value="ran" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpR" role="1PaTwD">
+            <property role="3oM_SC" value="command." />
           </node>
         </node>
       </node>
@@ -237,9 +284,24 @@
         <ref role="3uigEE" to="dxuu:~JTextArea" resolve="JTextArea" />
       </node>
       <node concept="z59LJ" id="1y75PbzycUY" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycUW" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycUX" role="1dT_Ay">
-            <property role="1dT_AB" value="Text area containing the lifted result." />
+        <node concept="1PaTwC" id="2nacnue1HpS" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1HpT" role="1PaTwD">
+            <property role="3oM_SC" value="Text" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpU" role="1PaTwD">
+            <property role="3oM_SC" value="area" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpV" role="1PaTwD">
+            <property role="3oM_SC" value="containing" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpW" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpX" role="1PaTwD">
+            <property role="3oM_SC" value="lifted" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1HpY" role="1PaTwD">
+            <property role="3oM_SC" value="result." />
           </node>
         </node>
       </node>
@@ -479,9 +541,9 @@
       </node>
       <node concept="3Tm1VV" id="6izRX53yf5q" role="1B3o_S" />
       <node concept="P$JXv" id="1y75PbzycV1" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycUZ" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycV0" role="1dT_Ay">
-            <property role="1dT_AB" value="Constructor." />
+        <node concept="1PaTwC" id="2nacnue1HpZ" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1Hq0" role="1PaTwD">
+            <property role="3oM_SC" value="Constructor." />
           </node>
         </node>
       </node>
@@ -617,9 +679,15 @@
         <node concept="17QB3L" id="4kcU3YrmuPd" role="1tU5fm" />
       </node>
       <node concept="P$JXv" id="1y75PbzycV4" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycV2" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycV3" role="1dT_Ay">
-            <property role="1dT_AB" value="Presents the output." />
+        <node concept="1PaTwC" id="2nacnue1Hq1" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1Hq2" role="1PaTwD">
+            <property role="3oM_SC" value="Presents" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hq3" role="1PaTwD">
+            <property role="3oM_SC" value="the" />
+          </node>
+          <node concept="3oM_SD" id="2nacnue1Hq4" role="1PaTwD">
+            <property role="3oM_SC" value="output." />
           </node>
         </node>
       </node>
@@ -652,18 +720,33 @@
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
       <node concept="P$JXv" id="1y75PbzycV7" role="lGtFl">
-        <node concept="TZ5HA" id="1y75PbzycV5" role="TZ5H$">
-          <node concept="1dT_AC" id="1y75PbzycV6" role="1dT_Ay">
-            <property role="1dT_AB" value="{@inheritDoc}" />
+        <node concept="1PaTwC" id="2nacnue1Hq5" role="1Vez_I">
+          <node concept="3oM_SD" id="2nacnue1Hq6" role="1PaTwD">
+            <property role="3oM_SC" value="{@inheritDoc}" />
           </node>
         </node>
       </node>
     </node>
     <node concept="3Tm1VV" id="6izRX53pUdd" role="1B3o_S" />
     <node concept="3UR2Jj" id="1y75PbzycVa" role="lGtFl">
-      <node concept="TZ5HA" id="1y75PbzycV8" role="TZ5H$">
-        <node concept="1dT_AC" id="1y75PbzycV9" role="1dT_Ay">
-          <property role="1dT_AB" value="UI for presenting the raw output." />
+      <node concept="1PaTwC" id="2nacnue1Hps" role="1Vez_I">
+        <node concept="3oM_SD" id="2nacnue1Hpt" role="1PaTwD">
+          <property role="3oM_SC" value="UI" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1Hpu" role="1PaTwD">
+          <property role="3oM_SC" value="for" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1Hpv" role="1PaTwD">
+          <property role="3oM_SC" value="presenting" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1Hpw" role="1PaTwD">
+          <property role="3oM_SC" value="the" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1Hpx" role="1PaTwD">
+          <property role="3oM_SC" value="raw" />
+        </node>
+        <node concept="3oM_SD" id="2nacnue1Hpy" role="1PaTwD">
+          <property role="3oM_SC" value="output." />
         </node>
       </node>
     </node>

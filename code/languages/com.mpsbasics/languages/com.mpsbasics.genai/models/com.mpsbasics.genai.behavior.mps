@@ -38,6 +38,7 @@
     <import index="z1c3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.project(MPS.Core/)" />
     <import index="5yhu" ref="r:019d0cc6-143d-4aa3-9dc5-d01fd5b71098(com.mpsbasics.editor.utils.notifications)" />
     <import index="vdrq" ref="r:85354f47-14fd-40e6-a7cc-2d1aa842c4cd(jetbrains.mps.lang.text.behavior)" implicit="true" />
+    <import index="jtsr" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.project(MPS.OpenAPI/)" implicit="true" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -54,6 +55,7 @@
         <reference id="1225194472831" name="overriddenMethod" index="13i0hy" />
       </concept>
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -219,7 +221,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145404486709" name="jetbrains.mps.lang.smodel.structure.SemanticDowncastExpression" flags="nn" index="2JrnkZ">
@@ -330,7 +331,7 @@
                   <ref role="3Tt5mk" to="uzku:75z86$f1VBh" resolve="location" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="5Ux4Lu36oJr" role="2OqNvi">
+              <node concept="3zqWPK" id="5WfAYZdQLA_" role="2OqNvi">
                 <ref role="37wK5l" to="48kf:5lKnBeAuKov" resolve="getCanonicalPath" />
               </node>
             </node>
@@ -951,7 +952,7 @@
                     <ref role="3Tt5mk" to="tp25:1Bs_61$ngwB" resolve="modelRef" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="3ODp2RoKV1f" role="2OqNvi">
+                <node concept="3zqWPK" id="5WfAYZdQLAB" role="2OqNvi">
                   <ref role="37wK5l" to="xlb7:1Bs_61$mvvu" resolve="toModelReference" />
                 </node>
               </node>
@@ -1055,7 +1056,7 @@
                     <ref role="3Tt5mk" to="tp25:1t9FffgebJ_" resolve="moduleId" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="3ODp2RoLUIX" role="2OqNvi">
+                <node concept="3zqWPK" id="5WfAYZdQLAD" role="2OqNvi">
                   <ref role="37wK5l" to="xlb7:1Bs_61$mqDd" resolve="toModuleReference" />
                 </node>
               </node>
@@ -1339,7 +1340,7 @@
                   <ref role="37wK5l" to="8s45:~OpenAiEmbeddingModel$OpenAiEmbeddingModelBuilder.baseUrl(java.lang.String)" resolve="baseUrl" />
                   <node concept="2OqwBi" id="5l3dUiRlzqL" role="37wK5m">
                     <node concept="13iPFW" id="3rArG1B0kYK" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="5l3dUiRl$3x" role="2OqNvi">
+                    <node concept="3zqWPK" id="5WfAYZdQLAF" role="2OqNvi">
                       <ref role="37wK5l" node="2Mi1G8jb0mr" resolve="getBaseUri" />
                     </node>
                   </node>
@@ -1429,16 +1430,16 @@
                   <ref role="3Tt5mk" to="tp25:6qMaajV39im" resolve="ref" />
                 </node>
               </node>
-              <node concept="2qgKlT" id="PCzh3eGF8S" role="2OqNvi">
+              <node concept="3zqWPK" id="5WfAYZdQLAH" role="2OqNvi">
                 <ref role="37wK5l" to="xlb7:46J8CTY3sAt" resolve="toNode" />
-                <node concept="2OqwBi" id="PCzh3eGFmN" role="37wK5m">
-                  <node concept="2JrnkZ" id="PCzh3eGFmO" role="2Oq$k0">
-                    <node concept="2OqwBi" id="PCzh3eGFmP" role="2JrQYb">
-                      <node concept="13iPFW" id="PCzh3eGFmQ" role="2Oq$k0" />
-                      <node concept="I4A8Y" id="PCzh3eGFmR" role="2OqNvi" />
+                <node concept="2OqwBi" id="5WfAYZdQLAJ" role="37wK5m">
+                  <node concept="2JrnkZ" id="5WfAYZdQLAK" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5WfAYZdQLAL" role="2JrQYb">
+                      <node concept="13iPFW" id="5WfAYZdQLAM" role="2Oq$k0" />
+                      <node concept="I4A8Y" id="5WfAYZdQLAN" role="2OqNvi" />
                     </node>
                   </node>
-                  <node concept="liA8E" id="PCzh3eGFmS" role="2OqNvi">
+                  <node concept="liA8E" id="5WfAYZdQLAO" role="2OqNvi">
                     <ref role="37wK5l" to="mhbf:~SModel.getRepository()" resolve="getRepository" />
                   </node>
                 </node>
@@ -1524,7 +1525,7 @@
                     <ref role="3Tt5mk" to="tp25:1Bs_61$ngwB" resolve="modelRef" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="2wdj7Oy8ijY" role="2OqNvi">
+                <node concept="3zqWPK" id="5WfAYZdQLAP" role="2OqNvi">
                   <ref role="37wK5l" to="xlb7:1Bs_61$mvvu" resolve="toModelReference" />
                 </node>
               </node>
@@ -1575,7 +1576,7 @@
                     <ref role="3Tt5mk" to="tp25:1t9FffgebJ_" resolve="moduleId" />
                   </node>
                 </node>
-                <node concept="2qgKlT" id="2wdj7OybQ93" role="2OqNvi">
+                <node concept="3zqWPK" id="5WfAYZdQLAR" role="2OqNvi">
                   <ref role="37wK5l" to="xlb7:1Bs_61$mqDd" resolve="toModuleReference" />
                 </node>
               </node>
@@ -2135,7 +2136,7 @@
               <ref role="3cqZAo" node="1Z3z4dL43rI" resolve="proj" />
             </node>
             <node concept="liA8E" id="1Z3z4dL4jqm" role="2OqNvi">
-              <ref role="37wK5l" to="z1c3:~IProject.getProjectModules()" resolve="getProjectModules" />
+              <ref role="37wK5l" to="jtsr:~Project.getProjectModules()" resolve="getProjectModules" />
             </node>
           </node>
           <node concept="3clFbS" id="1Z3z4dL4i1z" role="2LFqv$">

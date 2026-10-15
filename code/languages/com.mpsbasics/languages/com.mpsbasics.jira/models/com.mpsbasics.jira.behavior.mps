@@ -36,6 +36,7 @@
       <concept id="1225194413805" name="jetbrains.mps.lang.behavior.structure.ConceptConstructorDeclaration" flags="in" index="13hLZK" />
       <concept id="1225194472830" name="jetbrains.mps.lang.behavior.structure.ConceptMethodDeclaration" flags="ng" index="13i0hz" />
       <concept id="1225194691553" name="jetbrains.mps.lang.behavior.structure.ThisNodeExpression" flags="nn" index="13iPFW" />
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1082485599095" name="jetbrains.mps.baseLanguage.structure.BlockStatement" flags="nn" index="9aQIb">
@@ -151,7 +152,6 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143234257716" name="jetbrains.mps.lang.smodel.structure.Node_GetModelOperation" flags="nn" index="I4A8Y" />
       <concept id="1145383075378" name="jetbrains.mps.lang.smodel.structure.SNodeListType" flags="in" index="2I9FWS">
         <reference id="1145383142433" name="elementConcept" index="2I9WkF" />
@@ -319,7 +319,7 @@
                         </node>
                         <node concept="1uHKPH" id="4XyMOOGBuc8" role="2OqNvi" />
                       </node>
-                      <node concept="2qgKlT" id="4XyMOOGBuc9" role="2OqNvi">
+                      <node concept="3zqWPK" id="5WfAYZdQLBj" role="2OqNvi">
                         <ref role="37wK5l" node="4XyMOOGAMFg" resolve="getUsernameAndToken" />
                       </node>
                     </node>
@@ -336,13 +336,13 @@
                       <ref role="1Pybhc" to="paqs:7nUkRRPV194" resolve="JiraUpdaterUtils" />
                       <node concept="2OqwBi" id="4XyMOOGCHMF" role="37wK5m">
                         <node concept="13iPFW" id="4XyMOOGCL$g" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="4XyMOOGCHMH" role="2OqNvi">
+                        <node concept="3zqWPK" id="5WfAYZdQLBl" role="2OqNvi">
                           <ref role="37wK5l" node="2H3CssndvKB" resolve="jiraServerUrl" />
                         </node>
                       </node>
                       <node concept="2OqwBi" id="4XyMOOGCHMI" role="37wK5m">
                         <node concept="13iPFW" id="4XyMOOGCLNW" role="2Oq$k0" />
-                        <node concept="2qgKlT" id="4XyMOOGCHMK" role="2OqNvi">
+                        <node concept="3zqWPK" id="5WfAYZdQLBn" role="2OqNvi">
                           <ref role="37wK5l" node="2H3CssndyvP" resolve="jiraTicketId" />
                         </node>
                       </node>
