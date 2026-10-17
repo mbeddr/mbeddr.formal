@@ -10,6 +10,56 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## Grammar cells: never put a "show if" (`renderingCondition`) on an `OptionalCell` (2026-10-15)
+
+`com.mbeddr.mpsutil.grammarcells` `OptionalCell` already hides its content when the wrapped child or
+property is absent. When the content is absent, the optional cell also generates the side transform
+that creates it (for example typing `:` after a name to create `: type`). Adding a
+`renderingCondition` such as `node.type != null` looks redundant but breaks the
+transform. The typed text then lands in the neighbouring property cell (a usage's `name` becomes
+`mass: pack::Mass`), or the child is never created. Nothing reports an error.
+
+**How to apply:** leave `renderingCondition` empty on every `OptionalCell`. If typing into an
+optional slot "does nothing" in an editor test, check the optional cells for a show-if first. A
+`renderingCondition` on a plain constant or collection inside the optional cell is fine.
+
+## Editor tests: the `result` oracle is a sibling root of the `before` node — model-wide scopes see it (2026-10-15)
+
+An `EditorTestCase` runs in a `TempModel` holding **both** the `before` node and the `result` node
+as roots, side by side. Any scope that looks beyond the edited root — e.g.
+`model.roots(MyFile).selectMany(...)` for a cross-file / root-namespace lookup — therefore also sees
+the oracle's copy of every declaration. The oracle repeats the fixture's names, so each completion
+item appears twice. A pattern that should match uniquely then matches two items, and completion
+opens a popup instead of applying. The test fails with the reference still unset and no error. The
+item description shows the same `(TempModel_….<root>)` for both copies, which makes this easy to
+misread as a doubled substitute menu.
+
+**How to apply:** if completion in an editor test silently does nothing, dump the cell's
+`getSubstituteInfo().getMatchingActions(pattern, false)` (inside a read action) and the temp model's
+roots before suspecting menus or scopes. Workaround used in `com.fasten.symo`
+(`_010_Edit_PartUsage_02`): after `invoke action Complete_Action`, `press keys ENTER` to accept
+the first popup item. The fixture root comes before the oracle, so its node is listed first. This
+relies on that ordering, so don't use it where the order of equal items matters.
+
+## Editor tests: `press keys ENTER` / `ctrl+SPACE` do nothing in the editor — use `invoke action` (2026-10-14)
+
+`EditorTestCase`'s `press keys` feeds the key event straight into the editor component
+(`KeyEventsDispatcher` → `processKeyEvent` via reflection), bypassing IntelliJ's shortcut dispatch.
+The editor component itself only maps a few keys to cell actions (arrows-with-shift, Tab, Home/End,
+Page Up/Down, F1, typed Space → transforms). **Enter (insert new element) and Ctrl+Space (completion)
+are IDE actions** (`jetbrains.mps.ide.editor.actions.Insert_Action` / `Complete_Action`), so in a test
+they are silent no-ops: no error, the model just doesn't change, and the next `type` lands in the
+same cell. Easy to misread as a broken list handler or a broken scope. Once the completion popup is
+open, though, `press keys DOWN` / `ENTER` do reach the popup and work.
+
+**How to apply:** in editor tests write Enter-as-insert as `invoke action → by id:
+jetbrains.mps.ide.editor.actions.Insert_Action` and Ctrl+Space as `invoke action → by id:
+jetbrains.mps.ide.editor.actions.Complete_Action` (`InvokeActionStatement` +
+`BootstrapActionReference.actionId`). Keep `press keys` for typed text and for keys sent to an
+open popup. Separately: running editor tests in-IDE with mbeddr's `com.mbeddr.doc` plugin loaded logs
+`ProcessCanceledException`s from `DocumentationHandler` on the disposed test project, which turns a
+green assertion into `UncleanTestExecutionException`. That noise is unrelated to the test under work.
+
 ## `CompositeScope` detects ambiguity, it does not shadow; and `ScopeProvider.getScope` does not climb to the parent by itself (2026-10-13)
 
 Two facts that together made lexical scoping look right while being wrong:

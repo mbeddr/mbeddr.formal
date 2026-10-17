@@ -279,6 +279,9 @@
     <node concept="PrWs8" id="4N4m7hs7Fm8" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
     </node>
+    <node concept="RPilO" id="3kx1GVoqlMh" role="lGtFl">
+      <ref role="RPilL" node="7JKstLNmmWX" resolve="definition" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNmmXl">
     <property role="EcuMT" value="8930763252717678421" />
@@ -287,7 +290,7 @@
     <property role="3GE5qa" value="part.attribute" />
     <ref role="1TJDcQ" node="6coPuU3buuw" resolve="SysMLv2Usage" />
     <node concept="PrWs8" id="7JKstLNmmXm" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" node="3tSWG0_KrpC" />
     </node>
     <node concept="PrWs8" id="7JKstLNmmXn" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
@@ -427,6 +430,9 @@
     <node concept="PrWs8" id="4N4m7hs7Fmb" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
     </node>
+    <node concept="RPilO" id="3kx1GVoqlMk" role="lGtFl">
+      <ref role="RPilL" node="6coPuU2Tg21" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU2Tg1T">
     <property role="EcuMT" value="7140692429570900089" />
@@ -459,7 +465,7 @@
       <ref role="20lvS9" node="6coPuU2Tg1S" resolve="SysMLv2PortDefinitionRef" />
     </node>
     <node concept="PrWs8" id="6coPuU2Tg26" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" node="3tSWG0_KrpC" />
     </node>
     <node concept="PrWs8" id="6coPuU2Tg27" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
@@ -542,6 +548,9 @@
     <node concept="PrWs8" id="4N4m7hs7Fm5" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
     </node>
+    <node concept="RPilO" id="3kx1GVoqlMn" role="lGtFl">
+      <ref role="RPilL" node="6coPuU36dCk" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU36dCd">
     <property role="EcuMT" value="7140692429574298125" />
@@ -569,7 +578,7 @@
       <ref role="20lvS9" node="6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
     </node>
     <node concept="PrWs8" id="6coPuU36dCo" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" node="3tSWG0_KrpC" />
     </node>
     <node concept="PrWs8" id="6coPuU36dCp" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
@@ -652,6 +661,9 @@
     <property role="TrG5h" value="ISysMLv2FeatureOwner" />
     <node concept="PrWs8" id="4N4m7hrYNgS" role="PrDN$">
       <ref role="PrY4T" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
+    </node>
+    <node concept="PrWs8" id="3kx1GVosZNM" role="PrDN$">
+      <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
   </node>
   <node concept="PlHQZ" id="4N4m7hs7FjO">
