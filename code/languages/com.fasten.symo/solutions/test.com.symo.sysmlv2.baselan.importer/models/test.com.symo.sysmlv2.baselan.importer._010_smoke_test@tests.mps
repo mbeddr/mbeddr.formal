@@ -261,6 +261,11 @@
         <property id="6214786105868823570" name="elementName" index="1_pRsr" />
         <reference id="6214786105868823571" name="element" index="1_pRsq" />
       </concept>
+      <concept id="6214786105874793928" name="com.symo.sysmlv2.baselan.structure.SysMLv2TextualRepresentation" flags="ng" index="1_z1V1">
+        <property id="6214786105874793929" name="body" index="1_z1V0" />
+        <property id="6214786105874793931" name="bare" index="1_z1V2" />
+        <property id="6214786105874793930" name="language" index="1_z1V3" />
+      </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="6214786105868823585" name="locale" index="1_pRsC" />
         <property id="3828348643708195211" name="body" index="3HG_t5" />
@@ -7302,6 +7307,140 @@
           </node>
           <node concept="37vLTw" id="5oZmK$NBmGJ" role="3tpDZA">
             <ref role="3cqZAo" node="5oZmK$NBmG$" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5oZmK$NMUNW">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_160_TextualRepresentationTest" />
+    <node concept="1qefOq" id="5oZmK$NMUNX" role="1SKRRt">
+      <node concept="2h0jOr" id="5oZmK$NMUNZ" role="1qenE9">
+        <property role="TrG5h" value="RepFile" />
+        <node concept="1_z1V1" id="5oZmK$NMUO0" role="2h0jOs">
+          <property role="1_z1V0" value="self.capacity &gt; 0" />
+          <property role="1_z1V3" value="ocl" />
+          <property role="1_z1V2" value="true" />
+        </node>
+        <node concept="3Z9vzX" id="5oZmK$NMUO1" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="1_z1V1" id="5oZmK$NMUO2" role="3Z9vGx">
+            <property role="1_z1V0" value="self.mass &gt; 0" />
+            <property role="1_z1V3" value="ocl" />
+            <property role="1_z1V2" value="false" />
+            <property role="TrG5h" value="inOCL" />
+          </node>
+          <node concept="1_z1V1" id="5oZmK$NMUO3" role="3Z9vGx">
+            <property role="1_z1V0" value="Keyword only" />
+            <property role="1_z1V3" value="alf" />
+            <property role="1_z1V2" value="false" />
+          </node>
+          <node concept="3ZUotO" id="5oZmK$NMUO4" role="3Z9vGx">
+            <property role="TrG5h" value="A" />
+            <node concept="1_z1V1" id="5oZmK$NMUO5" role="3w00ZY">
+              <property role="1_z1V0" value="parameter Real m;" />
+              <property role="1_z1V3" value="modelica" />
+              <property role="1_z1V2" value="true" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_z1V1" id="5oZmK$NMUO6" role="2h0jOs">
+          <property role="1_z1V0" value="Line one&#10;Line two" />
+          <property role="1_z1V3" value="sysml" />
+          <property role="1_z1V2" value="false" />
+          <property role="TrG5h" value="R2" />
+        </node>
+        <node concept="3xLA65" id="5oZmK$NMUO7" role="lGtFl">
+          <property role="TrG5h" value="rep_file" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5oZmK$NMUO8" role="1SL9yI">
+      <property role="TrG5h" value="testImportTextualRepresentations" />
+      <node concept="3cqZAl" id="5oZmK$NMUOb" role="3clF45" />
+      <node concept="3clFbS" id="5oZmK$NMUOc" role="3clF47">
+        <node concept="3cpWs8" id="5oZmK$NMUOd" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NMUOg" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="5oZmK$NMUOi" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="Xl_RD" id="5oZmK$NMUOj" role="37wK5m">
+                <property role="Xl_RC" value="language \&quot;ocl\&quot; /* self.capacity &gt; 0 */&#10;package P {&#10;  rep inOCL language \&quot;ocl\&quot; /* self.mass &gt; 0 */&#10;  rep language \&quot;alf\&quot; /* Keyword only */&#10;  part def A {&#10;    language \&quot;modelica\&quot; /* parameter Real m; */&#10;  }&#10;}&#10;rep R2 language \&quot;sysml\&quot; /*&#10;  Line one&#10;  Line two&#10;*/&#10;" />
+              </node>
+              <node concept="Xl_RD" id="5oZmK$NMUOk" role="37wK5m">
+                <property role="Xl_RC" value="RepFile" />
+              </node>
+              <node concept="1jxXqW" id="5oZmK$NMUOl" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="5oZmK$NMUOm" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$NMUOn" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$NMUOp" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="5oZmK$NMUOq" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$NMUOg" resolve="tmp" />
+            </node>
+            <node concept="3xONca" id="5oZmK$NMUOr" role="37wK5m">
+              <ref role="3xOPvv" node="5oZmK$NMUO7" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$NMUOs" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$NMUOt" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$NMUOv" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="5oZmK$NMUOw" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$NMUOg" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$NMUOx" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5oZmK$NMUOy" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripTextualRepresentations" />
+      <node concept="3cqZAl" id="5oZmK$NMUO_" role="3clF45" />
+      <node concept="3clFbS" id="5oZmK$NMUOA" role="3clF47">
+        <node concept="3cpWs8" id="5oZmK$NMUOB" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NMUOE" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <node concept="Xl_RD" id="5oZmK$NMUOG" role="33vP2m">
+              <property role="Xl_RC" value="language \&quot;ocl\&quot; /* self.capacity &gt; 0 */&#10;package P {&#10;  rep inOCL language \&quot;ocl\&quot; /* self.mass &gt; 0 */&#10;  rep language \&quot;alf\&quot; /* Keyword only */&#10;  part def A {&#10;    language \&quot;modelica\&quot; /* parameter Real m; */&#10;  }&#10;}&#10;rep R2 language \&quot;sysml\&quot; /*&#10;  Line one&#10;  Line two&#10;*/&#10;" />
+            </node>
+            <node concept="17QB3L" id="5oZmK$NMUOH" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5oZmK$NMUOI" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NMUOL" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <node concept="2YIFZM" id="5oZmK$NMUON" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="5oZmK$NMUOO" role="37wK5m">
+                <ref role="3cqZAo" node="5oZmK$NMUOE" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="5oZmK$NMUOP" role="37wK5m">
+                <property role="Xl_RC" value="RepFile" />
+              </node>
+              <node concept="1jxXqW" id="5oZmK$NMUOQ" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="5oZmK$NMUOR" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="5oZmK$NMUOS" role="3cqZAp">
+          <node concept="37vLTw" id="5oZmK$NMUOV" role="3tpDZB">
+            <ref role="3cqZAo" node="5oZmK$NMUOE" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="5oZmK$NMUOW" role="3tpDZA">
+            <ref role="3cqZAo" node="5oZmK$NMUOL" resolve="generateText" />
           </node>
         </node>
       </node>

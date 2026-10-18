@@ -2176,5 +2176,163 @@
       <node concept="l2Vlx" id="5oZmK$NniNL" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="5oZmK$NGPz0">
+    <property role="3GE5qa" value="annotation" />
+    <property role="TrG5h" value="SysMLv2TextualRepresentation_Editor" />
+    <ref role="1XX52x" to="5rf1:5oZmK$NGOn8" resolve="SysMLv2TextualRepresentation" />
+    <node concept="3EZMnI" id="5oZmK$NGPz2" role="2wV5jI">
+      <node concept="3F0ifn" id="5oZmK$NGPz3" role="3EZMnx">
+        <property role="3F0ifm" value="rep" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+        <node concept="pkWqt" id="5oZmK$NGPz4" role="pqm2j">
+          <node concept="3clFbS" id="5oZmK$NGPz6" role="2VODD2">
+            <node concept="3cpWs6" id="5oZmK$NGPz7" role="3cqZAp">
+              <node concept="3fqX7Q" id="5oZmK$NGPz8" role="3cqZAk">
+                <node concept="2OqwBi" id="5oZmK$NGPza" role="3fr31v">
+                  <node concept="pncrf" id="5oZmK$NGPzd" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5oZmK$NGPze" role="2OqNvi">
+                    <ref role="3TsBF5" to="5rf1:5oZmK$NGOnb" resolve="bare" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="5oZmK$NGPzf" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3EZMnI" id="5oZmK$NGPzg" role="3EZMnx">
+        <node concept="3F0ifn" id="5oZmK$NGPzh" role="3EZMnx">
+          <property role="3F0ifm" value="language" />
+          <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+        </node>
+        <node concept="3F0ifn" id="5oZmK$NGPzi" role="3EZMnx">
+          <property role="3F0ifm" value="&quot;" />
+          <node concept="11LMrY" id="5oZmK$NGPzj" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="5oZmK$NGPzk" role="3EZMnx">
+          <ref role="1NtTu8" to="5rf1:5oZmK$NGOna" resolve="language" />
+        </node>
+        <node concept="3F0ifn" id="5oZmK$NGPzl" role="3EZMnx">
+          <property role="3F0ifm" value="&quot;" />
+          <node concept="11L4FC" id="5oZmK$NGPzm" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="5oZmK$NGPzn" role="2iSdaV" />
+      </node>
+      <node concept="3F0ifn" id="5oZmK$NGPzo" role="3EZMnx">
+        <property role="3F0ifm" value="/*" />
+      </node>
+      <node concept="2v7bAL" id="5oZmK$NGPzp" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:5oZmK$NGOn9" resolve="body" />
+        <node concept="ljvvj" id="5oZmK$NGPzq" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+          <node concept="3nzxsE" id="5oZmK$NGPzr" role="3n$kyP">
+            <node concept="3clFbS" id="5oZmK$NGPzt" role="2VODD2">
+              <node concept="3clFbF" id="5oZmK$NGPzu" role="3cqZAp">
+                <node concept="2OqwBi" id="5oZmK$NGPzw" role="3clFbG">
+                  <node concept="2OqwBi" id="5oZmK$NGPzz" role="2Oq$k0">
+                    <node concept="pncrf" id="5oZmK$NGPzA" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="5oZmK$NGPzB" role="2OqNvi">
+                      <ref role="3TsBF5" to="5rf1:5oZmK$NGOn9" resolve="body" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5oZmK$NGPzC" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                    <node concept="Xl_RD" id="5oZmK$NGPzD" role="37wK5m">
+                      <property role="Xl_RC" value="\n" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lj46D" id="5oZmK$NGPzE" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+          <node concept="3nzxsE" id="5oZmK$NGPzF" role="3n$kyP">
+            <node concept="3clFbS" id="5oZmK$NGPzH" role="2VODD2">
+              <node concept="3clFbF" id="5oZmK$NGPzI" role="3cqZAp">
+                <node concept="2OqwBi" id="5oZmK$NGPzK" role="3clFbG">
+                  <node concept="2OqwBi" id="5oZmK$NGPzN" role="2Oq$k0">
+                    <node concept="pncrf" id="5oZmK$NGPzQ" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="5oZmK$NGPzR" role="2OqNvi">
+                      <ref role="3TsBF5" to="5rf1:5oZmK$NGOn9" resolve="body" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5oZmK$NGPzS" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                    <node concept="Xl_RD" id="5oZmK$NGPzT" role="37wK5m">
+                      <property role="Xl_RC" value="\n" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5oZmK$NGPzU" role="3EZMnx">
+        <node concept="pVoyu" id="5oZmK$NGPzV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+          <node concept="3nzxsE" id="5oZmK$NGPzW" role="3n$kyP">
+            <node concept="3clFbS" id="5oZmK$NGPzY" role="2VODD2">
+              <node concept="3clFbF" id="5oZmK$NGPzZ" role="3cqZAp">
+                <node concept="2OqwBi" id="5oZmK$NGP$1" role="3clFbG">
+                  <node concept="2OqwBi" id="5oZmK$NGP$4" role="2Oq$k0">
+                    <node concept="pncrf" id="5oZmK$NGP$7" role="2Oq$k0" />
+                    <node concept="3TrcHB" id="5oZmK$NGP$8" role="2OqNvi">
+                      <ref role="3TsBF5" to="5rf1:5oZmK$NGOn9" resolve="body" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5oZmK$NGP$9" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                    <node concept="Xl_RD" id="5oZmK$NGP$a" role="37wK5m">
+                      <property role="Xl_RC" value="\n" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="5oZmK$NGP$b" role="3EZMnx">
+        <node concept="3XFhqQ" id="5oZmK$NGP$c" role="3EZMnx" />
+        <node concept="3XFhqQ" id="5oZmK$NGP$d" role="3EZMnx" />
+        <node concept="2iRfu4" id="5oZmK$NGP$e" role="2iSdaV" />
+        <node concept="pkWqt" id="5oZmK$NGP$f" role="pqm2j">
+          <node concept="3clFbS" id="5oZmK$NGP$h" role="2VODD2">
+            <node concept="3clFbF" id="5oZmK$NGP$i" role="3cqZAp">
+              <node concept="2OqwBi" id="5oZmK$NGP$k" role="3clFbG">
+                <node concept="2OqwBi" id="5oZmK$NGP$n" role="2Oq$k0">
+                  <node concept="pncrf" id="5oZmK$NGP$q" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="5oZmK$NGP$r" role="2OqNvi">
+                    <ref role="3TsBF5" to="5rf1:5oZmK$NGOn9" resolve="body" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5oZmK$NGP$s" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.contains(java.lang.CharSequence)" resolve="contains" />
+                  <node concept="Xl_RD" id="5oZmK$NGP$t" role="37wK5m">
+                    <property role="Xl_RC" value="\n" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VPM3Z" id="5oZmK$NGP$u" role="3F10Kt" />
+      </node>
+      <node concept="3F0ifn" id="5oZmK$NGP$v" role="3EZMnx">
+        <property role="3F0ifm" value="*/" />
+      </node>
+      <node concept="l2Vlx" id="5oZmK$NGP$w" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

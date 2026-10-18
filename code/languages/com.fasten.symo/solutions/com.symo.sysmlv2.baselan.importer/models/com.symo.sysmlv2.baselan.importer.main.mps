@@ -1490,6 +1490,43 @@
             </node>
           </node>
         </node>
+        <node concept="3cpWs8" id="5oZmK$NI_0r" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NI_0q" role="3cpWs9">
+            <property role="TrG5h" value="repCtx" />
+            <node concept="3uibUv" id="5oZmK$NI_0s" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$TextualRepresentationContext" resolve="SysMLv2Parser.TextualRepresentationContext" />
+            </node>
+            <node concept="2OqwBi" id="5oZmK$NI_tB" role="33vP2m">
+              <node concept="37vLTw" id="5oZmK$NI_eX" role="2Oq$k0">
+                <ref role="3cqZAo" node="3kx1GVoDMh2" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5oZmK$NI_tC" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$AnnotatingElementContext.textualRepresentation()" resolve="textualRepresentation" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5oZmK$NI_0u" role="3cqZAp">
+          <node concept="3y3z36" id="5oZmK$NI_0v" role="3clFbw">
+            <node concept="37vLTw" id="5oZmK$NI_0w" role="3uHU7B">
+              <ref role="3cqZAo" node="5oZmK$NI_0q" resolve="repCtx" />
+            </node>
+            <node concept="10Nm6u" id="5oZmK$NI_0x" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5oZmK$NI_0z" role="3clFbx">
+            <node concept="3cpWs6" id="5oZmK$NI_0$" role="3cqZAp">
+              <node concept="2OqwBi" id="5oZmK$NI_tr" role="3cqZAk">
+                <node concept="Xjq3P" id="5oZmK$NI_0A" role="2Oq$k0" />
+                <node concept="liA8E" id="5oZmK$NI_ts" role="2OqNvi">
+                  <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                  <node concept="37vLTw" id="5oZmK$NI_tt" role="37wK5m">
+                    <ref role="3cqZAo" node="5oZmK$NI_0q" resolve="repCtx" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="3kx1GVoDMh6" role="3cqZAp">
           <node concept="3cpWsn" id="3kx1GVoDMh5" role="3cpWs9">
             <property role="TrG5h" value="docCtx" />
@@ -1519,7 +1556,7 @@
                 <node concept="1pGfFk" id="3kx1GVoDMAA" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                   <node concept="Xl_RD" id="3kx1GVoDMAB" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: textual representation / metadata" />
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: metadata" />
                   </node>
                 </node>
               </node>
@@ -2027,6 +2064,191 @@
       </node>
       <node concept="3Tm1VV" id="5oZmK$NzlaN" role="1B3o_S" />
       <node concept="3uibUv" id="5oZmK$NzlaO" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5oZmK$NKHNZ" role="jymVt">
+      <property role="TrG5h" value="visitTextualRepresentation" />
+      <node concept="2AHcQZ" id="5oZmK$NKHO0" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="37vLTG" id="5oZmK$NKHO1" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="5oZmK$NKHO2" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$TextualRepresentationContext" resolve="SysMLv2Parser.TextualRepresentationContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5oZmK$NKHO3" role="3clF47">
+        <node concept="3cpWs8" id="5oZmK$NKHO5" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NKHO4" role="3cpWs9">
+            <property role="TrG5h" value="bodyText" />
+            <node concept="3uibUv" id="5oZmK$NKHO6" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="1rXfSq" id="5oZmK$NKHO7" role="33vP2m">
+              <ref role="37wK5l" node="5oZmK$Nr6GH" resolve="extractCommentText" />
+              <node concept="2OqwBi" id="5oZmK$NKK5A" role="37wK5m">
+                <node concept="2OqwBi" id="5oZmK$NKK4B" role="2Oq$k0">
+                  <node concept="37vLTw" id="5oZmK$NKJp7" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5oZmK$NKHO1" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="5oZmK$NKK4C" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$TextualRepresentationContext.REGULAR_COMMENT()" resolve="REGULAR_COMMENT" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5oZmK$NKK5B" role="2OqNvi">
+                  <ref role="37wK5l" to="6xeh:~ParseTree.getText()" resolve="getText" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5oZmK$NKHOb" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NKHOa" role="3cpWs9">
+            <property role="TrG5h" value="repName" />
+            <node concept="3uibUv" id="5oZmK$NKHOc" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="1rXfSq" id="5oZmK$NKHOd" role="33vP2m">
+              <ref role="37wK5l" node="5oZmK$Nr6Id" resolve="extractOptionalName" />
+              <node concept="2OqwBi" id="5oZmK$NKK4M" role="37wK5m">
+                <node concept="37vLTw" id="5oZmK$NKJBu" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5oZmK$NKHO1" resolve="ctx" />
+                </node>
+                <node concept="liA8E" id="5oZmK$NKK4N" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$TextualRepresentationContext.identification()" resolve="identification" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="5oZmK$NKHOf" role="37wK5m">
+                <property role="Xl_RC" value="textual representation" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5oZmK$NKHOh" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NKHOg" role="3cpWs9">
+            <property role="TrG5h" value="repLanguage" />
+            <node concept="3uibUv" id="5oZmK$NKHOi" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="1rXfSq" id="5oZmK$NKHOj" role="33vP2m">
+              <ref role="37wK5l" node="5oZmK$Nr6II" resolve="unquote" />
+              <node concept="2OqwBi" id="5oZmK$NKK5W" role="37wK5m">
+                <node concept="2OqwBi" id="5oZmK$NKK55" role="2Oq$k0">
+                  <node concept="37vLTw" id="5oZmK$NKJPX" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5oZmK$NKHO1" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="5oZmK$NKK56" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$TextualRepresentationContext.DOUBLE_STRING()" resolve="DOUBLE_STRING" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="5oZmK$NKK5X" role="2OqNvi">
+                  <ref role="37wK5l" to="6xeh:~ParseTree.getText()" resolve="getText" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5oZmK$NKHOn" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NKHOm" role="3cpWs9">
+            <property role="TrG5h" value="bare" />
+            <node concept="10P_77" id="5oZmK$NKHOo" role="1tU5fm" />
+            <node concept="3clFbC" id="5oZmK$NKHOp" role="33vP2m">
+              <node concept="2OqwBi" id="5oZmK$NKK5g" role="3uHU7B">
+                <node concept="37vLTw" id="5oZmK$NKK4k" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5oZmK$NKHO1" resolve="ctx" />
+                </node>
+                <node concept="liA8E" id="5oZmK$NKK5h" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$TextualRepresentationContext.REP()" resolve="REP" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="5oZmK$NKHOr" role="3uHU7w" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5oZmK$NMUN3" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NMUN6" role="3cpWs9">
+            <property role="TrG5h" value="repNode" />
+            <node concept="2ShNRf" id="5oZmK$NMUN8" role="33vP2m">
+              <node concept="3zrR0B" id="5oZmK$NMUNa" role="2ShVmc">
+                <node concept="3Tqbb2" id="5oZmK$NMUNc" role="3zrR0E">
+                  <ref role="ehGHo" to="5rf1:5oZmK$NGOn8" resolve="SysMLv2TextualRepresentation" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Tqbb2" id="5oZmK$NMUNd" role="1tU5fm">
+              <ref role="ehGHo" to="5rf1:5oZmK$NGOn8" resolve="SysMLv2TextualRepresentation" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$NMUNe" role="3cqZAp">
+          <node concept="37vLTI" id="5oZmK$NMUNg" role="3clFbG">
+            <node concept="2OqwBi" id="5oZmK$NMUNj" role="37vLTJ">
+              <node concept="37vLTw" id="5oZmK$NMUNm" role="2Oq$k0">
+                <ref role="3cqZAo" node="5oZmK$NMUN6" resolve="repNode" />
+              </node>
+              <node concept="3TrcHB" id="5oZmK$NMUNn" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:5oZmK$NGOn9" resolve="body" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="5oZmK$NMUNo" role="37vLTx">
+              <ref role="3cqZAo" node="5oZmK$NKHO4" resolve="bodyText" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$NMUNp" role="3cqZAp">
+          <node concept="37vLTI" id="5oZmK$NMUNr" role="3clFbG">
+            <node concept="2OqwBi" id="5oZmK$NMUNu" role="37vLTJ">
+              <node concept="37vLTw" id="5oZmK$NMUNx" role="2Oq$k0">
+                <ref role="3cqZAo" node="5oZmK$NMUN6" resolve="repNode" />
+              </node>
+              <node concept="3TrcHB" id="5oZmK$NMUNy" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="5oZmK$NMUNz" role="37vLTx">
+              <ref role="3cqZAo" node="5oZmK$NKHOa" resolve="repName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$NMUN$" role="3cqZAp">
+          <node concept="37vLTI" id="5oZmK$NMUNA" role="3clFbG">
+            <node concept="2OqwBi" id="5oZmK$NMUND" role="37vLTJ">
+              <node concept="37vLTw" id="5oZmK$NMUNG" role="2Oq$k0">
+                <ref role="3cqZAo" node="5oZmK$NMUN6" resolve="repNode" />
+              </node>
+              <node concept="3TrcHB" id="5oZmK$NMUNH" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:5oZmK$NGOna" resolve="language" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="5oZmK$NMUNI" role="37vLTx">
+              <ref role="3cqZAo" node="5oZmK$NKHOg" resolve="repLanguage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$NMUNJ" role="3cqZAp">
+          <node concept="37vLTI" id="5oZmK$NMUNL" role="3clFbG">
+            <node concept="2OqwBi" id="5oZmK$NMUNO" role="37vLTJ">
+              <node concept="37vLTw" id="5oZmK$NMUNR" role="2Oq$k0">
+                <ref role="3cqZAo" node="5oZmK$NMUN6" resolve="repNode" />
+              </node>
+              <node concept="3TrcHB" id="5oZmK$NMUNS" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:5oZmK$NGOnb" resolve="bare" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="5oZmK$NMUNT" role="37vLTx">
+              <ref role="3cqZAo" node="5oZmK$NKHOm" resolve="bare" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5oZmK$NMUNU" role="3cqZAp">
+          <node concept="37vLTw" id="5oZmK$NMUNV" role="3cqZAk">
+            <ref role="3cqZAo" node="5oZmK$NMUN6" resolve="repNode" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5oZmK$NKHOu" role="1B3o_S" />
+      <node concept="3uibUv" id="5oZmK$NKHOv" role="3clF45">
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
     </node>

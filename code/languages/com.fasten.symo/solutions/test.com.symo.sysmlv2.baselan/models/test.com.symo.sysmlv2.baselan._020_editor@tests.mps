@@ -7,6 +7,7 @@
     <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports />
   <registry>
@@ -95,6 +96,10 @@
       </concept>
       <concept id="6214786105868823569" name="com.symo.sysmlv2.baselan.structure.SysMLv2Comment" flags="ng" index="1_pRso">
         <property id="6214786105868823573" name="body" index="1_pRss" />
+      </concept>
+      <concept id="6214786105874793928" name="com.symo.sysmlv2.baselan.structure.SysMLv2TextualRepresentation" flags="ng" index="1_z1V1">
+        <property id="6214786105874793929" name="body" index="1_z1V0" />
+        <property id="6214786105874793930" name="language" index="1_z1V3" />
       </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
@@ -1022,6 +1027,65 @@
         </node>
       </node>
       <node concept="2TK7Tu" id="5oZmK$NDjnt" role="3cqZAp">
+        <property role="2TTd_B" value="Hello world" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="5oZmK$NNc3X">
+    <property role="3YCmrE" value="typing rep in a package creates a textual representation" />
+    <property role="TrG5h" value="_080_Reps_RepInPackage" />
+    <node concept="1qefOq" id="5oZmK$NNc3Y" role="25YQCW">
+      <node concept="2h0jOr" id="5oZmK$NNc40" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="5oZmK$NNc41" role="2h0jOs">
+          <property role="TrG5h" value="pack_080" />
+          <node concept="2h0jOo" id="5oZmK$NNc42" role="3Z9vGx">
+            <node concept="LIFWc" id="5oZmK$NNc43" role="lGtFl">
+              <property role="LIFWd" value="Constant_68dwa1_a" />
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5oZmK$NNc44" role="25YQFr">
+      <node concept="2h0jOr" id="5oZmK$NNc46" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="5oZmK$NNc47" role="2h0jOs">
+          <property role="TrG5h" value="pack_080" />
+          <node concept="1_z1V1" id="5oZmK$NNc48" role="3Z9vGx">
+            <property role="1_z1V0" value="Hello world" />
+            <property role="1_z1V3" value="ocl" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5oZmK$NNc49" role="LjaKd">
+      <node concept="2TK7Tu" id="5oZmK$NNc4a" role="3cqZAp">
+        <property role="2TTd_B" value="rep" />
+      </node>
+      <node concept="2HxZob" id="5oZmK$NNc4b" role="3cqZAp">
+        <node concept="3iKlGA" id="5oZmK$NNc4d" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="5oZmK$NNc4e" role="3cqZAp">
+        <node concept="pLAjd" id="5oZmK$NNc4g" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="5oZmK$NNc4h" role="3cqZAp">
+        <property role="2TTd_B" value="ocl" />
+      </node>
+      <node concept="yd1bK" id="5oZmK$NNc4i" role="3cqZAp">
+        <node concept="pLAjd" id="5oZmK$NNc4k" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="5oZmK$NNc4l" role="3cqZAp">
         <property role="2TTd_B" value="Hello world" />
       </node>
     </node>

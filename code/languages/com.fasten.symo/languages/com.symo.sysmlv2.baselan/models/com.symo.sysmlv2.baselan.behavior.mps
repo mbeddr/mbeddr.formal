@@ -3903,5 +3903,25 @@
       <node concept="3Tm1VV" id="5oZmK$Npn70" role="1B3o_S" />
     </node>
   </node>
+  <node concept="13h7C7" id="5oZmK$NGPy_">
+    <property role="3GE5qa" value="annotation" />
+    <property role="TrG5h" value="SysMLv2TextualRepresentation_Behavior" />
+    <ref role="13h7C2" to="5rf1:5oZmK$NGOn8" resolve="SysMLv2TextualRepresentation" />
+    <node concept="13hLZK" id="5oZmK$NGPyC" role="13h7CW">
+      <node concept="3clFbS" id="5oZmK$NGPyE" role="2VODD2">
+        <node concept="3clFbF" id="5oZmK$NGPyF" role="3cqZAp">
+          <node concept="37vLTI" id="5oZmK$NGPyH" role="3clFbG">
+            <node concept="2OqwBi" id="5oZmK$NGPyK" role="37vLTJ">
+              <node concept="13iPFW" id="5oZmK$NGPyN" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5oZmK$NGPyO" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:5oZmK$NGOn9" resolve="body" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="5oZmK$NGPyP" role="37vLTx" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

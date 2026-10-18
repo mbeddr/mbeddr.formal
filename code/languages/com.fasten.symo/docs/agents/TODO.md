@@ -990,3 +990,16 @@ named, locale, about, a named and localized doc, and a multi-line comment); edit
 `comment` the caret is in the (empty) name cell, so the `_060_Docs_*` and `_070_Comments_*` tests
 press TAB before typing the body. Not done: `<short>` names, `rep` (textual representation),
 metadata, and an editor test that types `about` / `locale`.
+
+**Iteration 14 (2026-10-18) — textual representation (`rep … language "…" /* … */`)**: follows
+`textualRepresentation : (REP identification?)? LANGUAGE DOUBLE_STRING REGULAR_COMMENT`. New concept
+`SysMLv2TextualRepresentation` (alias `rep`, same content interfaces as `SysMLv2Comment`, identifier
+name, properties `body` / `language` / `bare`); `bare` marks the short form without `rep` (and so
+without a name). Editor: `rep` keyword (hidden when `bare`), name cell, mandatory
+`language "{language}"`, multi-line body as for doc/comment. Textgen mirrors comment. Importer:
+`visitAnnotatingElement` dispatches `textualRepresentation`; `visitTextualRepresentation` reuses
+`extractCommentText` / `extractOptionalName` / `unquote`; only metadata stays unsupported. The body is
+kept as opaque text — no interpretation of any `language`. Tests: importer
+`_160_TextualRepresentationTest` (import + roundtrip: short form at file and part-def level, named,
+keyword-only, multi-line); editor `_080_Reps_RepInPackage` (type `rep`, Complete, TAB, language, TAB,
+body). Not done: completion for the short form (typing `language` on an empty line), metadata.

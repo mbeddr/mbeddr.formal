@@ -793,5 +793,46 @@
       <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5oZmK$NGOn8">
+    <property role="EcuMT" value="6214786105874793928" />
+    <property role="TrG5h" value="SysMLv2TextualRepresentation" />
+    <property role="34LRSv" value="rep" />
+    <property role="R4oN_" value="SysML v2 textual representation: [rep [name]] language &quot;..&quot; /* ... */" />
+    <property role="3GE5qa" value="annotation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5oZmK$NGOn9" role="1TKVEl">
+      <property role="IQ2nx" value="6214786105874793929" />
+      <property role="TrG5h" value="body" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5oZmK$NGOna" role="1TKVEl">
+      <property role="IQ2nx" value="6214786105874793930" />
+      <property role="TrG5h" value="language" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5oZmK$NGOnb" role="1TKVEl">
+      <property role="IQ2nx" value="6214786105874793931" />
+      <property role="TrG5h" value="bare" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NGOnc" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NGOnd" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NGOne" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NGOnf" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NGOng" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NGOnh" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+  </node>
 </model>
 
