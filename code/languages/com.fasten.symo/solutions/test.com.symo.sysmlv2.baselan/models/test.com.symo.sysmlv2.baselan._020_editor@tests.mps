@@ -7,6 +7,7 @@
     <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
+    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports />
   <registry>
@@ -26,6 +27,7 @@
       <concept id="1229194968594" name="jetbrains.mps.lang.test.structure.AnonymousCellAnnotation" flags="ng" index="LIFWc">
         <property id="6268941039745498163" name="selectionStart" index="p6zMq" />
         <property id="6268941039745498165" name="selectionEnd" index="p6zMs" />
+        <property id="1229194968596" name="caretPosition" index="LIFWa" />
         <property id="1229194968595" name="cellId" index="LIFWd" />
         <property id="1932269937152561478" name="useLabelSelection" index="OXtK3" />
         <property id="1229432188737" name="isLastPosition" index="ZRATv" />
@@ -60,7 +62,9 @@
       <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
         <reference id="8930763252717678397" name="definition" index="8EhVx" />
       </concept>
-      <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW" />
+      <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW">
+        <child id="7140692429570186950" name="specializes" index="3xKGGC" />
+      </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z">
         <child id="8930763252717288847" name="type" index="8CKLj" />
       </concept>
@@ -78,6 +82,7 @@
         <child id="7140692429574298135" name="type" index="3w00ZT" />
       </concept>
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
+        <child id="7140692429574298127" name="specializes" index="3w00Zx" />
         <child id="7140692429574298128" name="content" index="3w00ZY" />
       </concept>
       <concept id="7140692429570900088" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinitionRef" flags="ng" index="3xZtmm">
@@ -86,7 +91,9 @@
       <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
         <child id="7140692429570900101" name="type" index="3xZtlF" />
       </concept>
-      <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp" />
+      <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
+        <child id="7140692429570900092" name="specializes" index="3xZtmi" />
+      </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
       </concept>
@@ -102,7 +109,7 @@
     </language>
   </registry>
   <node concept="LiM7Y" id="3tSWG0_AXsB">
-    <property role="TrG5h" value="_010_Edit_PartUsage_01" />
+    <property role="TrG5h" value="_010_Parts_EditPartUsageSimple" />
     <property role="3YCmrE" value="checks the entering of a part usage" />
     <node concept="1qefOq" id="3tSWG0_AXsC" role="25YQCW">
       <node concept="2h0jOr" id="3tSWG0_AXsE" role="1qenE9">
@@ -155,7 +162,7 @@
     </node>
   </node>
   <node concept="LiM7Y" id="cvgDBNO4DZ">
-    <property role="TrG5h" value="_010_Edit_PartUsage_02" />
+    <property role="TrG5h" value="_010_Parts_EditPartUsageType" />
     <property role="3YCmrE" value="checks the entering of a part usage" />
     <node concept="1qefOq" id="cvgDBNO4E0" role="25YQCW">
       <node concept="2h0jOr" id="cvgDBNO4E1" role="1qenE9">
@@ -226,7 +233,7 @@
   </node>
   <node concept="LiM7Y" id="3kx1GVon0AF">
     <property role="3YCmrE" value="checks entering an attribute usage typed by a qualified attribute definition" />
-    <property role="TrG5h" value="_020_Edit_AttributeUsage_01" />
+    <property role="TrG5h" value="_020_Attributes_EditAttributeUsageType" />
     <node concept="1qefOq" id="3kx1GVon0AG" role="25YQCW">
       <node concept="2h0jOr" id="3kx1GVon0AI" role="1qenE9">
         <property role="TrG5h" value="demo" />
@@ -296,7 +303,7 @@
   </node>
   <node concept="LiM7Y" id="3kx1GVon0B9">
     <property role="3YCmrE" value="checks entering a port usage typed by a qualified port definition" />
-    <property role="TrG5h" value="_030_Edit_PortUsage_01" />
+    <property role="TrG5h" value="_030_Ports_EditPortUsageType" />
     <node concept="1qefOq" id="3kx1GVon0Ba" role="25YQCW">
       <node concept="2h0jOr" id="3kx1GVon0Bc" role="1qenE9">
         <property role="TrG5h" value="demo" />
@@ -366,7 +373,7 @@
   </node>
   <node concept="LiM7Y" id="3kx1GVon0BB">
     <property role="3YCmrE" value="checks entering an item usage typed by a qualified item definition" />
-    <property role="TrG5h" value="_040_Edit_ItemUsage_01" />
+    <property role="TrG5h" value="_040_Items_EditItemUsageType" />
     <node concept="1qefOq" id="3kx1GVon0BC" role="25YQCW">
       <node concept="2h0jOr" id="3kx1GVon0BE" role="1qenE9">
         <property role="TrG5h" value="demo" />
@@ -429,6 +436,270 @@
       </node>
       <node concept="yd1bK" id="3kx1GVon0C2" role="3cqZAp">
         <node concept="pLAjd" id="3kx1GVon0C4" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3kx1GVoujO$">
+    <property role="TrG5h" value="_010_Parts_PartDefSpecialisation" />
+    <property role="3YCmrE" value="checks adding a qualified specialization to a part definition" />
+    <node concept="1qefOq" id="3kx1GVoujO_" role="25YQCW">
+      <node concept="2h0jOr" id="3kx1GVoujOB" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVoujOC" role="2h0jOs">
+          <property role="TrG5h" value="pack_050_01" />
+          <node concept="3ZUotO" id="3kx1GVoujOD" role="3Z9vGx">
+            <property role="TrG5h" value="Vehicle" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVoujOE" role="2h0jOs" />
+        <node concept="3ZUotO" id="3kx1GVoujOF" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="LIFWc" id="3kx1GVoujOG" role="lGtFl">
+            <property role="LIFWd" value="property_name" />
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="3" />
+            <property role="p6zMs" value="3" />
+            <property role="LIFWa" value="3" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVoujOH" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="3kx1GVoujOI" role="25YQFr">
+      <node concept="2h0jOr" id="3kx1GVoujOK" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVoujOL" role="2h0jOs">
+          <property role="TrG5h" value="pack_050_01" />
+          <node concept="3ZUotO" id="3kx1GVoujOM" role="3Z9vGx">
+            <property role="TrG5h" value="Vehicle" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVoujON" role="2h0jOs" />
+        <node concept="3ZUotO" id="3kx1GVoujOO" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="3w00Zy" id="3kx1GVoujOP" role="3w00Zx">
+            <ref role="gQIM1" node="3kx1GVoujOL" />
+            <ref role="3w00ZU" node="3kx1GVoujOM" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVoujOQ" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3kx1GVoujOR" role="LjaKd">
+      <node concept="2TK7Tu" id="3kx1GVoujOS" role="3cqZAp">
+        <property role="2TTd_B" value=" :&gt; " />
+      </node>
+      <node concept="2TK7Tu" id="3kx1GVoujOT" role="3cqZAp">
+        <property role="2TTd_B" value="pack_050_01::Vehicle" />
+      </node>
+      <node concept="2HxZob" id="3kx1GVoujOU" role="3cqZAp">
+        <node concept="3iKlGA" id="3kx1GVoujOW" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="3kx1GVoujOX" role="3cqZAp">
+        <node concept="pLAjd" id="3kx1GVoujOZ" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3kx1GVovGdW">
+    <property role="TrG5h" value="_040_Items_ItemDefSpecialisation" />
+    <property role="3YCmrE" value="checks adding a qualified specialization to an item definition" />
+    <node concept="1qefOq" id="3kx1GVovGdX" role="25YQCW">
+      <node concept="2h0jOr" id="3kx1GVovGdZ" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVovGe0" role="2h0jOs">
+          <property role="TrG5h" value="pack_060_01" />
+          <node concept="3w00Z_" id="3kx1GVovGe1" role="3Z9vGx">
+            <property role="TrG5h" value="Fuel" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVovGe2" role="2h0jOs" />
+        <node concept="3w00Z_" id="3kx1GVovGe3" role="2h0jOs">
+          <property role="TrG5h" value="Diesel" />
+          <node concept="LIFWc" id="3kx1GVovGe4" role="lGtFl">
+            <property role="LIFWd" value="property_name" />
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="6" />
+            <property role="p6zMs" value="6" />
+            <property role="LIFWa" value="6" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVovGe5" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="3kx1GVovGe6" role="25YQFr">
+      <node concept="2h0jOr" id="3kx1GVovGe8" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVovGe9" role="2h0jOs">
+          <property role="TrG5h" value="pack_060_01" />
+          <node concept="3w00Z_" id="3kx1GVovGea" role="3Z9vGx">
+            <property role="TrG5h" value="Fuel" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVovGeb" role="2h0jOs" />
+        <node concept="3w00Z_" id="3kx1GVovGec" role="2h0jOs">
+          <property role="TrG5h" value="Diesel" />
+          <node concept="3w00Zy" id="3kx1GVovGed" role="3w00Zx">
+            <ref role="gQIM1" node="3kx1GVovGe9" />
+            <ref role="3w00ZU" node="3kx1GVovGea" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVovGee" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3kx1GVovGef" role="LjaKd">
+      <node concept="2TK7Tu" id="3kx1GVovGeg" role="3cqZAp">
+        <property role="2TTd_B" value=" :&gt; " />
+      </node>
+      <node concept="2TK7Tu" id="3kx1GVovGeh" role="3cqZAp">
+        <property role="2TTd_B" value="pack_060_01::Fuel" />
+      </node>
+      <node concept="2HxZob" id="3kx1GVovGei" role="3cqZAp">
+        <node concept="3iKlGA" id="3kx1GVovGek" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="3kx1GVovGel" role="3cqZAp">
+        <node concept="pLAjd" id="3kx1GVovGen" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3kx1GVovGeo">
+    <property role="TrG5h" value="_020_Attributes_AttributeDefSpecialisation" />
+    <property role="3YCmrE" value="checks adding a qualified specialization to an attribute definition" />
+    <node concept="1qefOq" id="3kx1GVovGep" role="25YQCW">
+      <node concept="2h0jOr" id="3kx1GVovGer" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVovGes" role="2h0jOs">
+          <property role="TrG5h" value="pack_070_01" />
+          <node concept="8EhVW" id="3kx1GVovGet" role="3Z9vGx">
+            <property role="TrG5h" value="Quantity" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVovGeu" role="2h0jOs" />
+        <node concept="8EhVW" id="3kx1GVovGev" role="2h0jOs">
+          <property role="TrG5h" value="Mass" />
+          <node concept="LIFWc" id="3kx1GVovGew" role="lGtFl">
+            <property role="LIFWd" value="property_name" />
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="4" />
+            <property role="p6zMs" value="4" />
+            <property role="LIFWa" value="4" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVovGex" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="3kx1GVovGey" role="25YQFr">
+      <node concept="2h0jOr" id="3kx1GVovGe$" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVovGe_" role="2h0jOs">
+          <property role="TrG5h" value="pack_070_01" />
+          <node concept="8EhVW" id="3kx1GVovGeA" role="3Z9vGx">
+            <property role="TrG5h" value="Quantity" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVovGeB" role="2h0jOs" />
+        <node concept="8EhVW" id="3kx1GVovGeC" role="2h0jOs">
+          <property role="TrG5h" value="Mass" />
+          <node concept="8EhVB" id="3kx1GVovGeD" role="3xKGGC">
+            <ref role="gQIM1" node="3kx1GVovGe_" />
+            <ref role="8EhVx" node="3kx1GVovGeA" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVovGeE" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3kx1GVovGeF" role="LjaKd">
+      <node concept="2TK7Tu" id="3kx1GVovGeG" role="3cqZAp">
+        <property role="2TTd_B" value=" :&gt; " />
+      </node>
+      <node concept="2TK7Tu" id="3kx1GVovGeH" role="3cqZAp">
+        <property role="2TTd_B" value="pack_070_01::Quantity" />
+      </node>
+      <node concept="2HxZob" id="3kx1GVovGeI" role="3cqZAp">
+        <node concept="3iKlGA" id="3kx1GVovGeK" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="3kx1GVovGeL" role="3cqZAp">
+        <node concept="pLAjd" id="3kx1GVovGeN" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3kx1GVovGeO">
+    <property role="TrG5h" value="_030_Ports_PortDefSpecialisation" />
+    <property role="3YCmrE" value="checks adding a qualified specialization to a port definition" />
+    <node concept="1qefOq" id="3kx1GVovGeP" role="25YQCW">
+      <node concept="2h0jOr" id="3kx1GVovGeR" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVovGeS" role="2h0jOs">
+          <property role="TrG5h" value="pack_080_01" />
+          <node concept="3xZtmp" id="3kx1GVovGeT" role="3Z9vGx">
+            <property role="TrG5h" value="FlowPort" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVovGeU" role="2h0jOs" />
+        <node concept="3xZtmp" id="3kx1GVovGeV" role="2h0jOs">
+          <property role="TrG5h" value="FuelPort" />
+          <node concept="LIFWc" id="3kx1GVovGeW" role="lGtFl">
+            <property role="LIFWd" value="property_name" />
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="8" />
+            <property role="p6zMs" value="8" />
+            <property role="LIFWa" value="8" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVovGeX" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="3kx1GVovGeY" role="25YQFr">
+      <node concept="2h0jOr" id="3kx1GVovGf0" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVovGf1" role="2h0jOs">
+          <property role="TrG5h" value="pack_080_01" />
+          <node concept="3xZtmp" id="3kx1GVovGf2" role="3Z9vGx">
+            <property role="TrG5h" value="FlowPort" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVovGf3" role="2h0jOs" />
+        <node concept="3xZtmp" id="3kx1GVovGf4" role="2h0jOs">
+          <property role="TrG5h" value="FuelPort" />
+          <node concept="3xZtmm" id="3kx1GVovGf5" role="3xZtmi">
+            <ref role="gQIM1" node="3kx1GVovGf1" />
+            <ref role="3xZtlJ" node="3kx1GVovGf2" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3kx1GVovGf6" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3kx1GVovGf7" role="LjaKd">
+      <node concept="2TK7Tu" id="3kx1GVovGf8" role="3cqZAp">
+        <property role="2TTd_B" value=" :&gt; " />
+      </node>
+      <node concept="2TK7Tu" id="3kx1GVovGf9" role="3cqZAp">
+        <property role="2TTd_B" value="pack_080_01::FlowPort" />
+      </node>
+      <node concept="2HxZob" id="3kx1GVovGfa" role="3cqZAp">
+        <node concept="3iKlGA" id="3kx1GVovGfc" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="3kx1GVovGfd" role="3cqZAp">
+        <node concept="pLAjd" id="3kx1GVovGff" role="yd6KS">
           <property role="pLAjf" value="VK_ENTER" />
         </node>
       </node>

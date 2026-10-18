@@ -117,7 +117,7 @@
     <property role="3GE5qa" value="package" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="3PUPjB2nMRp" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" node="3tSWG0_KrpC" />
     </node>
     <node concept="PrWs8" id="3PUPjB2nMRJ" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
@@ -156,7 +156,7 @@
     <property role="3GE5qa" value="part" />
     <ref role="1TJDcQ" node="6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
     <node concept="PrWs8" id="3PUPjB2$P9_" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" node="3tSWG0_KrpC" />
     </node>
     <node concept="PrWs8" id="3PUPjB2$P9C" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
@@ -236,7 +236,7 @@
     <property role="3GE5qa" value="part.attribute" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7JKstLNmmWx" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" node="3tSWG0_KrpC" />
     </node>
     <node concept="PrWs8" id="7JKstLNmmWy" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
@@ -402,7 +402,7 @@
       <ref role="20lvS9" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
     </node>
     <node concept="PrWs8" id="6coPuU2Tg1Y" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" node="3tSWG0_KrpC" />
     </node>
     <node concept="PrWs8" id="6coPuU2Tg1Z" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
@@ -520,7 +520,7 @@
       <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
     <node concept="PrWs8" id="6coPuU36dCh" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+      <ref role="PrY4T" node="3tSWG0_KrpC" />
     </node>
     <node concept="PrWs8" id="6coPuU36dCi" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
