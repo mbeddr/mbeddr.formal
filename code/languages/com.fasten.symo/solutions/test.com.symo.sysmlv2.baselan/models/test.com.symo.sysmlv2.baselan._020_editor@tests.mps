@@ -7,7 +7,6 @@
     <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports />
   <registry>
@@ -93,6 +92,9 @@
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
         <child id="7140692429570900092" name="specializes" index="3xZtmi" />
+      </concept>
+      <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
+        <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
@@ -740,6 +742,163 @@
         <node concept="3iKlGA" id="3kx1GVoypZP" role="3iKnsn">
           <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Insert_Action" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3kx1GVoJKJK">
+    <property role="TrG5h" value="_060_Docs_DocInPackage" />
+    <property role="3YCmrE" value="typing doc in a package creates a documentation element" />
+    <node concept="1qefOq" id="3kx1GVoJKJL" role="25YQCW">
+      <node concept="2h0jOr" id="3kx1GVoJKJN" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVoJKJO" role="2h0jOs">
+          <property role="TrG5h" value="pack_060" />
+          <node concept="2h0jOo" id="3kx1GVoJKJP" role="3Z9vGx">
+            <node concept="LIFWc" id="3kx1GVoJKJQ" role="lGtFl">
+              <property role="LIFWd" value="Constant_68dwa1_a" />
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3kx1GVoJKJR" role="25YQFr">
+      <node concept="2h0jOr" id="3kx1GVoJKJT" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVoJKJU" role="2h0jOs">
+          <property role="TrG5h" value="pack_060" />
+          <node concept="3HG_t4" id="3kx1GVoJKJV" role="3Z9vGx">
+            <property role="3HG_t5" value="Hello world" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="3kx1GVoJKJW" role="LjaKd">
+      <node concept="2TK7Tu" id="3kx1GVoJKJX" role="3cqZAp">
+        <property role="2TTd_B" value="doc" />
+      </node>
+      <node concept="2HxZob" id="5oZmK$NiZOr" role="3cqZAp">
+        <node concept="3iKlGA" id="5oZmK$NiZOt" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="3kx1GVoJKJY" role="3cqZAp">
+        <property role="2TTd_B" value="Hello world" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3kx1GVoJKJZ">
+    <property role="TrG5h" value="_060_Docs_DocInPartDef" />
+    <property role="3YCmrE" value="typing doc in a part definition body creates a documentation element" />
+    <node concept="1qefOq" id="3kx1GVoJKK0" role="25YQCW">
+      <node concept="2h0jOr" id="3kx1GVoJKK2" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVoJKK3" role="2h0jOs">
+          <property role="TrG5h" value="pack_060" />
+          <node concept="3ZUotO" id="3kx1GVoJKK4" role="3Z9vGx">
+            <property role="TrG5h" value="Car" />
+            <node concept="2h0jOo" id="3kx1GVoJKK5" role="3w00ZY">
+              <node concept="LIFWc" id="3kx1GVoJKK6" role="lGtFl">
+                <property role="LIFWd" value="Constant_68dwa1_a" />
+                <property role="ZRATv" value="true" />
+                <property role="OXtK3" value="true" />
+                <property role="p6zMq" value="0" />
+                <property role="p6zMs" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3kx1GVoJKK7" role="25YQFr">
+      <node concept="2h0jOr" id="3kx1GVoJKK9" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVoJKKa" role="2h0jOs">
+          <property role="TrG5h" value="pack_060" />
+          <node concept="3ZUotO" id="3kx1GVoJKKb" role="3Z9vGx">
+            <property role="TrG5h" value="Car" />
+            <node concept="3HG_t4" id="3kx1GVoJKKc" role="3w00ZY">
+              <property role="3HG_t5" value="Hello world" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="3kx1GVoJKKd" role="LjaKd">
+      <node concept="2TK7Tu" id="3kx1GVoJKKe" role="3cqZAp">
+        <property role="2TTd_B" value="doc" />
+      </node>
+      <node concept="2HxZob" id="5oZmK$NiZOu" role="3cqZAp">
+        <node concept="3iKlGA" id="5oZmK$NiZOw" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="3kx1GVoJKKf" role="3cqZAp">
+        <property role="2TTd_B" value="Hello world" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="5oZmK$NiZix">
+    <property role="TrG5h" value="_060_Docs_DocMultiLine" />
+    <property role="3YCmrE" value="typing a doc whose body spans three lines" />
+    <node concept="1qefOq" id="5oZmK$NiZiy" role="25YQCW">
+      <node concept="2h0jOr" id="5oZmK$NiZi$" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="5oZmK$NiZi_" role="2h0jOs">
+          <property role="TrG5h" value="pack_060" />
+          <node concept="2h0jOo" id="5oZmK$NiZiA" role="3Z9vGx">
+            <node concept="LIFWc" id="5oZmK$NiZiB" role="lGtFl">
+              <property role="LIFWd" value="Constant_68dwa1_a" />
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5oZmK$NiZiC" role="25YQFr">
+      <node concept="2h0jOr" id="5oZmK$NiZiE" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="5oZmK$NiZiF" role="2h0jOs">
+          <property role="TrG5h" value="pack_060" />
+          <node concept="3HG_t4" id="5oZmK$NiZiG" role="3Z9vGx">
+            <property role="3HG_t5" value="First line&#10;Second line&#10;Third line" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5oZmK$NiZiH" role="LjaKd">
+      <node concept="2TK7Tu" id="5oZmK$NiZiI" role="3cqZAp">
+        <property role="2TTd_B" value="doc" />
+      </node>
+      <node concept="2HxZob" id="5oZmK$NiZOx" role="3cqZAp">
+        <node concept="3iKlGA" id="5oZmK$NiZOz" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="5oZmK$NiZiJ" role="3cqZAp">
+        <property role="2TTd_B" value="First line" />
+      </node>
+      <node concept="2HxZob" id="5oZmK$NiZO$" role="3cqZAp">
+        <node concept="3iKlGA" id="5oZmK$NiZOA" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Insert_Action" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="5oZmK$NiZiN" role="3cqZAp">
+        <property role="2TTd_B" value="Second line" />
+      </node>
+      <node concept="2HxZob" id="5oZmK$NiZOB" role="3cqZAp">
+        <node concept="3iKlGA" id="5oZmK$NiZOD" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Insert_Action" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="5oZmK$NiZiR" role="3cqZAp">
+        <property role="2TTd_B" value="Third line" />
       </node>
     </node>
   </node>

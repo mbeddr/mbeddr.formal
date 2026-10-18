@@ -200,6 +200,7 @@
         <reference id="8930763252717678397" name="definition" index="8EhVx" />
       </concept>
       <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW">
+        <child id="8930763252717678371" name="content" index="8EhVZ" />
         <child id="7140692429570186950" name="specializes" index="3xKGGC" />
       </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z">
@@ -249,6 +250,9 @@
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
         <child id="7140692429570900092" name="specializes" index="3xZtmi" />
         <child id="7140692429570900093" name="content" index="3xZtmj" />
+      </concept>
+      <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
+        <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
         <property id="4430087627524899785" name="importedName" index="3Z0PrK" />
@@ -6798,6 +6802,252 @@
               <ref role="3cqZAo" node="4N4m7hs61qJ" resolve="m" />
             </node>
             <node concept="1jxXqW" id="4N4m7hs61r5" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3kx1GVoJ$Ej">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_140_DocumentationTest" />
+    <node concept="1qefOq" id="3kx1GVoJ$Ek" role="1SKRRt">
+      <node concept="2h0jOr" id="3kx1GVoJ$Em" role="1qenE9">
+        <property role="TrG5h" value="DocFile" />
+        <node concept="3HG_t4" id="3kx1GVoJ$En" role="2h0jOs">
+          <property role="3HG_t5" value="File doc" />
+        </node>
+        <node concept="3Z9vzX" id="3kx1GVoJ$Eo" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="3HG_t4" id="3kx1GVoJ$Ep" role="3Z9vGx">
+            <property role="3HG_t5" value="Package doc" />
+          </node>
+          <node concept="3ZUotO" id="3kx1GVoJ$Eq" role="3Z9vGx">
+            <property role="TrG5h" value="A" />
+            <node concept="3HG_t4" id="3kx1GVoJ$Er" role="3w00ZY">
+              <property role="3HG_t5" value="Part doc" />
+            </node>
+          </node>
+          <node concept="8EhVW" id="3kx1GVoJ$Es" role="3Z9vGx">
+            <property role="TrG5h" value="Mass" />
+            <node concept="3HG_t4" id="3kx1GVoJ$Et" role="8EhVZ">
+              <property role="3HG_t5" value="Attribute doc" />
+            </node>
+          </node>
+          <node concept="3xZtmp" id="3kx1GVoJ$Eu" role="3Z9vGx">
+            <property role="TrG5h" value="FuelPort" />
+            <node concept="3HG_t4" id="3kx1GVoJ$Ev" role="3xZtmj">
+              <property role="3HG_t5" value="Port doc" />
+            </node>
+          </node>
+          <node concept="3w00Z_" id="3kx1GVoJ$Ew" role="3Z9vGx">
+            <property role="TrG5h" value="Fuel" />
+            <node concept="3HG_t4" id="3kx1GVoJ$Ex" role="3w00ZY">
+              <property role="3HG_t5" value="Item doc" />
+            </node>
+          </node>
+        </node>
+        <node concept="3xLA65" id="3kx1GVoJ$Ey" role="lGtFl">
+          <property role="TrG5h" value="doc_file" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3kx1GVoJ$Ez" role="1SL9yI">
+      <property role="TrG5h" value="testImportDocumentation" />
+      <node concept="3cqZAl" id="3kx1GVoJ$EA" role="3clF45" />
+      <node concept="3clFbS" id="3kx1GVoJ$EB" role="3clF47">
+        <node concept="3cpWs8" id="3kx1GVoJ$EC" role="3cqZAp">
+          <node concept="3cpWsn" id="3kx1GVoJ$EF" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="tmp" />
+            <property role="2Lvdk3" value="tmp" />
+            <node concept="2YIFZM" id="3kx1GVoJ$EH" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="Xl_RD" id="3kx1GVoJ$EI" role="37wK5m">
+                <property role="Xl_RC" value="doc /* File doc */&#10;package P {&#10;  doc /* Package doc */&#10;  part def A {&#10;    doc /* Part doc */&#10;  }&#10;  attribute def Mass {&#10;    doc /* Attribute doc */&#10;  }&#10;  port def FuelPort {&#10;    doc /* Port doc */&#10;  }&#10;  item def Fuel {&#10;    doc /* Item doc */&#10;  }&#10;}" />
+              </node>
+              <node concept="Xl_RD" id="3kx1GVoJ$EJ" role="37wK5m">
+                <property role="Xl_RC" value="DocFile" />
+              </node>
+              <node concept="1jxXqW" id="3kx1GVoJ$EK" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="3kx1GVoJ$EL" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3kx1GVoJ$EM" role="3cqZAp">
+          <node concept="2YIFZM" id="3kx1GVoJ$EO" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="3kx1GVoJ$EP" role="37wK5m">
+              <ref role="3cqZAo" node="3kx1GVoJ$EF" resolve="tmp" />
+            </node>
+            <node concept="3xONca" id="3kx1GVoJ$EQ" role="37wK5m">
+              <ref role="3xOPvv" node="3kx1GVoJ$Ey" />
+            </node>
+            <node concept="1jxXqW" id="3kx1GVoJ$ER" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3kx1GVoJ$ES" role="3cqZAp">
+          <node concept="2YIFZM" id="3kx1GVoJ$EU" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="3kx1GVoJ$EV" role="37wK5m">
+              <ref role="3cqZAo" node="3kx1GVoJ$EF" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3kx1GVoJ$EW" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3kx1GVoJ$EX" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripDocumentation" />
+      <node concept="3cqZAl" id="3kx1GVoJ$F0" role="3clF45" />
+      <node concept="3clFbS" id="3kx1GVoJ$F1" role="3clF47">
+        <node concept="3cpWs8" id="3kx1GVoJ$F2" role="3cqZAp">
+          <node concept="3cpWsn" id="3kx1GVoJ$F5" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="Xl_RD" id="3kx1GVoJ$F7" role="33vP2m">
+              <property role="Xl_RC" value="doc /* File doc */&#10;package P {&#10;  doc /* Package doc */&#10;  part def A {&#10;    doc /* Part doc */&#10;  }&#10;  attribute def Mass {&#10;    doc /* Attribute doc */&#10;  }&#10;  port def FuelPort {&#10;    doc /* Port doc */&#10;  }&#10;  item def Fuel {&#10;    doc /* Item doc */&#10;  }&#10;}&#10;" />
+            </node>
+            <node concept="17QB3L" id="3kx1GVoJ$F8" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3kx1GVoJ$F9" role="3cqZAp">
+          <node concept="3cpWsn" id="3kx1GVoJ$Fc" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="3kx1GVoJ$Fe" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="3kx1GVoJ$Ff" role="37wK5m">
+                <ref role="3cqZAo" node="3kx1GVoJ$F5" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="3kx1GVoJ$Fg" role="37wK5m">
+                <property role="Xl_RC" value="DocFile" />
+              </node>
+              <node concept="1jxXqW" id="3kx1GVoJ$Fh" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="3kx1GVoJ$Fi" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="3kx1GVoJ$Fj" role="3cqZAp">
+          <node concept="37vLTw" id="3kx1GVoJ$Fm" role="3tpDZB">
+            <ref role="3cqZAo" node="3kx1GVoJ$F5" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="3kx1GVoJ$Fn" role="3tpDZA">
+            <ref role="3cqZAo" node="3kx1GVoJ$Fc" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5oZmK$NiGvx" role="1SKRRt">
+      <node concept="2h0jOr" id="5oZmK$NiGvz" role="1qenE9">
+        <property role="TrG5h" value="MultiDocFile" />
+        <node concept="3HG_t4" id="5oZmK$NiGv$" role="2h0jOs">
+          <property role="3HG_t5" value="Line one&#10;Line two" />
+        </node>
+        <node concept="3Z9vzX" id="5oZmK$NiGv_" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="3HG_t4" id="5oZmK$NiGvA" role="3Z9vGx">
+            <property role="3HG_t5" value="First line&#10;Second line&#10;Third line" />
+          </node>
+        </node>
+        <node concept="3xLA65" id="5oZmK$NiGvB" role="lGtFl">
+          <property role="TrG5h" value="multi_doc_file" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5oZmK$NiGvC" role="1SL9yI">
+      <property role="TrG5h" value="testImportMultiLineDocumentation" />
+      <node concept="3cqZAl" id="5oZmK$NiGvF" role="3clF45" />
+      <node concept="3clFbS" id="5oZmK$NiGvG" role="3clF47">
+        <node concept="3cpWs8" id="5oZmK$NiGvH" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NiGvK" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="tmp" />
+            <property role="2Lvdk3" value="tmp" />
+            <node concept="2YIFZM" id="5oZmK$NiGvM" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="Xl_RD" id="5oZmK$NiGvN" role="37wK5m">
+                <property role="Xl_RC" value="doc /*&#10; * Line one&#10; * Line two&#10; */&#10;package P {&#10;  doc /*&#10;   * First line&#10;   * Second line&#10;   * Third line&#10;   */&#10;}" />
+              </node>
+              <node concept="Xl_RD" id="5oZmK$NiGvO" role="37wK5m">
+                <property role="Xl_RC" value="MultiDocFile" />
+              </node>
+              <node concept="1jxXqW" id="5oZmK$NiGvP" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="5oZmK$NiGvQ" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$NiGvR" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$NiGvT" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="5oZmK$NiGvU" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$NiGvK" resolve="tmp" />
+            </node>
+            <node concept="3xONca" id="5oZmK$NiGvV" role="37wK5m">
+              <ref role="3xOPvv" node="5oZmK$NiGvB" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$NiGvW" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$NiGvX" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$NiGvZ" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="5oZmK$NiGw0" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$NiGvK" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$NiGw1" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5oZmK$NiGx_" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripMultiLineDocumentation" />
+      <node concept="3cqZAl" id="5oZmK$NiGxC" role="3clF45" />
+      <node concept="3clFbS" id="5oZmK$NiGxD" role="3clF47">
+        <node concept="3cpWs8" id="5oZmK$NiGxE" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NiGxH" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="Xl_RD" id="5oZmK$NiGxJ" role="33vP2m">
+              <property role="Xl_RC" value="doc /*&#10;  Line one&#10;  Line two&#10;*/&#10;package P {&#10;  doc /*&#10;    First line&#10;    Second line&#10;    Third line&#10;  */&#10;}&#10;" />
+            </node>
+            <node concept="17QB3L" id="5oZmK$NiGxK" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5oZmK$NiGxL" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NiGxO" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="5oZmK$NiGxQ" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="5oZmK$NiGxR" role="37wK5m">
+                <ref role="3cqZAo" node="5oZmK$NiGxH" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="5oZmK$NiGxS" role="37wK5m">
+                <property role="Xl_RC" value="MultiDocFile" />
+              </node>
+              <node concept="1jxXqW" id="5oZmK$NiGxT" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="5oZmK$NiGxU" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="5oZmK$NiGxV" role="3cqZAp">
+          <node concept="37vLTw" id="5oZmK$NiGxY" role="3tpDZB">
+            <ref role="3cqZAo" node="5oZmK$NiGxH" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="5oZmK$NiGxZ" role="3tpDZA">
+            <ref role="3cqZAo" node="5oZmK$NiGxO" resolve="generateText" />
           </node>
         </node>
       </node>

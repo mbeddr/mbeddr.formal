@@ -442,7 +442,34 @@
     <property role="3GE5qa" value="part.base" />
     <ref role="13h7C2" to="5rf1:6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
     <node concept="13hLZK" id="6coPuU2NmDn" role="13h7CW">
-      <node concept="3clFbS" id="6coPuU2NmDp" role="2VODD2" />
+      <node concept="3clFbS" id="6coPuU2NmDp" role="2VODD2">
+        <node concept="3clFbF" id="3kx1GVo$$q3" role="3cqZAp">
+          <node concept="37vLTI" id="3kx1GVo$_kx" role="3clFbG">
+            <node concept="Xl_RD" id="3kx1GVo$_l5" role="37vLTx">
+              <property role="Xl_RC" value="0" />
+            </node>
+            <node concept="2OqwBi" id="3kx1GVo$$zt" role="37vLTJ">
+              <node concept="13iPFW" id="3kx1GVo$$q2" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3kx1GVo$$Nv" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6coPuU2Lo0E" resolve="lower" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3kx1GVo$_Bb" role="3cqZAp">
+          <node concept="37vLTI" id="3kx1GVo$_Bc" role="3clFbG">
+            <node concept="Xl_RD" id="3kx1GVo$_Bd" role="37vLTx">
+              <property role="Xl_RC" value="2" />
+            </node>
+            <node concept="2OqwBi" id="3kx1GVo$_Be" role="37vLTJ">
+              <node concept="13iPFW" id="3kx1GVo$_Bf" role="2Oq$k0" />
+              <node concept="3TrcHB" id="3kx1GVo$_SJ" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6coPuU2Lo0F" resolve="upper" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="6coPuU2NmDq" role="13h7CS">
       <property role="TrG5h" value="isSingleValue" />
@@ -3745,6 +3772,27 @@
         <node concept="3Tqbb2" id="cvgDBNCifs" role="1tU5fm" />
       </node>
       <node concept="17QB3L" id="cvgDBNCift" role="3clF45" />
+    </node>
+  </node>
+  <node concept="13h7C7" id="5oZmK$Nj8sZ">
+    <property role="3GE5qa" value="annotation" />
+    <ref role="13h7C2" to="5rf1:3kx1GVo$P6a" resolve="SysMLv2Documentation" />
+    <node concept="13hLZK" id="5oZmK$Nj8t0" role="13h7CW">
+      <node concept="3clFbS" id="5oZmK$Nj8t1" role="2VODD2">
+        <node concept="3clFbF" id="5oZmK$Nj8tj" role="3cqZAp">
+          <node concept="37vLTI" id="5oZmK$Nj9HE" role="3clFbG">
+            <node concept="Xl_RD" id="5oZmK$Nj9HW" role="37vLTx">
+              <property role="Xl_RC" value="" />
+            </node>
+            <node concept="2OqwBi" id="5oZmK$Nj8EB" role="37vLTJ">
+              <node concept="13iPFW" id="5oZmK$Nj8ti" role="2Oq$k0" />
+              <node concept="3TrcHB" id="5oZmK$Nj9bz" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:3kx1GVo$P6b" resolve="body" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
 </model>

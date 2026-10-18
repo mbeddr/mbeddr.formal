@@ -949,3 +949,23 @@ Tests: `_130_NameScopingTest.testReifyQualifiedNames` (resolution + `namespace` 
 `Inner`, `Outer::Inner`). Not done: textgen round-trip test for qualified refs, a `ScopesTest` on the `namespace` link,
 quoted names, `$::`, feature chains, `SysMLv2FeatureRef`/`SysMLv2Import` reuse of `ISysMLv2QualifiedRef`, visibility,
 ambiguity checks. Imports plug into `localMembers()`/`memberScope()`.
+
+**Iteration 12 (2026-10-18) — documentation (`doc /* ... */`)**: new concept `SysMLv2Documentation`
+(alias `doc`, one string property `body`, virtual folder `annotation`). It implements the same content
+interfaces as `SysMLv2EmptyLine` (`ISysMLv2FileContent` and the part/attribute/port/item body-content
+interfaces), so it can appear at file level, in packages and in all four definition bodies. Editor
+`doc /* { body } */`, textgen `doc /* ${body} */`. Importer: `visitDefinitionElement` and
+`visitDefinitionBodyItemContent` dispatch `annotatingElement`; `visitAnnotatingElement` accepts only
+`documentation` (comment / `rep` / metadata throw "Unsupported SysML v2 construct"); `visitDocumentation`
+uses `extractDocumentationBody`, which rejects a named doc and a `locale`, and stores the text between
+`/*` (or `//*`) and `*/`, trimmed. Tests: importer `_140_DocumentationTest` (import + roundtrip, doc at
+file, package and the four definition-body levels); editor `_060_Docs_DocInPackage`,
+`_060_Docs_DocInPartDef` (type `doc` then the text). Multi-line (2026-10-18): the editor uses a multiline cell for `body` (laid out on its own lines, `*/` on
+a new line, when `body` contains a newline) and the constructor initializes `body` to "" (needed so the
+caret stays in the multiline cell after the first typed character). Importer: per line, indentation and a
+leading `*` are stripped and empty first/last lines dropped, so `body` holds plain lines; textgen prints a
+multi-line body as `doc /*`, indented lines, `*/`. Tests: `_140` adds testImportMultiLineDocumentation
+(star-decorated input) and testRoundtripMultiLineDocumentation; editor `_060_Docs_DocMultiLine` (newline via
+Insert_Action); the `_060_Docs_*` tests invoke Complete_Action after typing `doc`. Not done: relative
+indentation inside a multi-line body is not preserved; typing `doc ` with a space puts the space into
+`body`; no doc in usage bodies (they are empty in this subset).
