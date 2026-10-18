@@ -274,8 +274,8 @@
           <node concept="8EhU9" id="3kx1GVon0AX" role="3w00ZY">
             <property role="TrG5h" value="mass" />
             <node concept="8EhVB" id="3kx1GVon0AY" role="8EhU5">
-              <ref role="gQIM1" node="3kx1GVon0AT" />
-              <ref role="8EhVx" node="3kx1GVon0AU" />
+              <ref role="gQIM1" node="3kx1GVon0AT" resolve="pack_020_01" />
+              <ref role="8EhVx" node="3kx1GVon0AU" resolve="Mass" />
             </node>
           </node>
         </node>
@@ -344,8 +344,8 @@
           <node concept="3xZtmn" id="3kx1GVon0Br" role="3w00ZY">
             <property role="TrG5h" value="fuelIn" />
             <node concept="3xZtmm" id="3kx1GVon0Bs" role="3xZtlF">
-              <ref role="gQIM1" node="3kx1GVon0Bn" />
-              <ref role="3xZtlJ" node="3kx1GVon0Bo" />
+              <ref role="gQIM1" node="3kx1GVon0Bn" resolve="pack_030_01" />
+              <ref role="3xZtlJ" node="3kx1GVon0Bo" resolve="FuelPort" />
             </node>
           </node>
         </node>
@@ -414,8 +414,8 @@
           <node concept="3w00Zz" id="3kx1GVon0BT" role="3w00ZY">
             <property role="TrG5h" value="cargo" />
             <node concept="3w00Zy" id="3kx1GVon0BU" role="3w00ZT">
-              <ref role="gQIM1" node="3kx1GVon0BP" />
-              <ref role="3w00ZU" node="3kx1GVon0BQ" />
+              <ref role="gQIM1" node="3kx1GVon0BP" resolve="pack_040_01" />
+              <ref role="3w00ZU" node="3kx1GVon0BQ" resolve="Cargo" />
             </node>
           </node>
         </node>
@@ -481,8 +481,8 @@
         <node concept="3ZUotO" id="3kx1GVoujOO" role="2h0jOs">
           <property role="TrG5h" value="Car" />
           <node concept="3w00Zy" id="3kx1GVoujOP" role="3w00Zx">
-            <ref role="gQIM1" node="3kx1GVoujOL" />
-            <ref role="3w00ZU" node="3kx1GVoujOM" />
+            <ref role="gQIM1" node="3kx1GVoujOL" resolve="pack_050_01" />
+            <ref role="3w00ZU" node="3kx1GVoujOM" resolve="Vehicle" />
           </node>
         </node>
         <node concept="2h0jOo" id="3kx1GVoujOQ" role="2h0jOs" />
@@ -547,8 +547,8 @@
         <node concept="3w00Z_" id="3kx1GVovGec" role="2h0jOs">
           <property role="TrG5h" value="Diesel" />
           <node concept="3w00Zy" id="3kx1GVovGed" role="3w00Zx">
-            <ref role="gQIM1" node="3kx1GVovGe9" />
-            <ref role="3w00ZU" node="3kx1GVovGea" />
+            <ref role="gQIM1" node="3kx1GVovGe9" resolve="pack_060_01" />
+            <ref role="3w00ZU" node="3kx1GVovGea" resolve="Fuel" />
           </node>
         </node>
         <node concept="2h0jOo" id="3kx1GVovGee" role="2h0jOs" />
@@ -613,8 +613,8 @@
         <node concept="8EhVW" id="3kx1GVovGeC" role="2h0jOs">
           <property role="TrG5h" value="Mass" />
           <node concept="8EhVB" id="3kx1GVovGeD" role="3xKGGC">
-            <ref role="gQIM1" node="3kx1GVovGe_" />
-            <ref role="8EhVx" node="3kx1GVovGeA" />
+            <ref role="gQIM1" node="3kx1GVovGe_" resolve="pack_070_01" />
+            <ref role="8EhVx" node="3kx1GVovGeA" resolve="Quantity" />
           </node>
         </node>
         <node concept="2h0jOo" id="3kx1GVovGeE" role="2h0jOs" />
@@ -679,8 +679,8 @@
         <node concept="3xZtmp" id="3kx1GVovGf4" role="2h0jOs">
           <property role="TrG5h" value="FuelPort" />
           <node concept="3xZtmm" id="3kx1GVovGf5" role="3xZtmi">
-            <ref role="gQIM1" node="3kx1GVovGf1" />
-            <ref role="3xZtlJ" node="3kx1GVovGf2" />
+            <ref role="gQIM1" node="3kx1GVovGf1" resolve="pack_080_01" />
+            <ref role="3xZtlJ" node="3kx1GVovGf2" resolve="FlowPort" />
           </node>
         </node>
         <node concept="2h0jOo" id="3kx1GVovGf6" role="2h0jOs" />
@@ -701,6 +701,44 @@
       <node concept="yd1bK" id="3kx1GVovGfd" role="3cqZAp">
         <node concept="pLAjd" id="3kx1GVovGff" role="yd6KS">
           <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3kx1GVoypZ_">
+    <property role="TrG5h" value="_050_Packages_PressEnterInPackage" />
+    <property role="3YCmrE" value="pressing Enter inside a package inserts an empty line" />
+    <node concept="1qefOq" id="3kx1GVoypZA" role="25YQCW">
+      <node concept="2h0jOr" id="3kx1GVoypZC" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVoypZD" role="2h0jOs">
+          <property role="TrG5h" value="pack_050_01" />
+          <node concept="2h0jOo" id="3kx1GVozAsk" role="3Z9vGx">
+            <node concept="LIFWc" id="3kx1GVozAsl" role="lGtFl">
+              <property role="LIFWd" value="Constant_68dwa1_a" />
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="3kx1GVoypZG" role="25YQFr">
+      <node concept="2h0jOr" id="3kx1GVoypZI" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3kx1GVoypZJ" role="2h0jOs">
+          <property role="TrG5h" value="pack_050_01" />
+          <node concept="2h0jOo" id="3kx1GVozAsm" role="3Z9vGx" />
+          <node concept="2h0jOo" id="3kx1GVoypZL" role="3Z9vGx" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="3kx1GVoypZM" role="LjaKd">
+      <node concept="2HxZob" id="3kx1GVoypZN" role="3cqZAp">
+        <node concept="3iKlGA" id="3kx1GVoypZP" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Insert_Action" />
         </node>
       </node>
     </node>

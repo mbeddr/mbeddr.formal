@@ -280,6 +280,17 @@
           <property role="VOm3f" value="true" />
         </node>
         <node concept="l2Vlx" id="3PUPjB2nVUJ" role="2czzBx" />
+        <node concept="4$FPG" id="3kx1GVoypSs" role="4_6I_">
+          <node concept="3clFbS" id="3kx1GVoypSu" role="2VODD2">
+            <node concept="3clFbF" id="3kx1GVoypSv" role="3cqZAp">
+              <node concept="2pJPEk" id="3kx1GVoypSx" role="3clFbG">
+                <node concept="2pJPED" id="3kx1GVoypSz" role="2pJPEn">
+                  <ref role="2pJxaS" to="5rf1:3DMRBeFsYdF" resolve="SysMLv2EmptyLine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="3PUPjB2oTyH" role="3EZMnx">
         <property role="3F0ifm" value="}" />
