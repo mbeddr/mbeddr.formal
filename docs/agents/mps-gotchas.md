@@ -10,6 +10,28 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## Editor: after code completion the caret goes to the first editable cell; `attractsFocus` is ignored (2026-10-18)
+
+After a node is created by completion (typing an alias + Complete_Action, for example on an empty
+line), MPS selects the first editable cell of the new node. A `FocusPolicy` / `attractsFocus` set on
+a later cell (for example a multiline `body`) is not honoured in this path. This is easy to miss when
+an optional name cell is added in front of the body: existing editor tests that type the body right
+after completion silently type into the empty name cell instead, and the body stays empty.
+
+**How to apply:** do not rely on `attractsFocus` to place the caret after completion. In editor
+tests, press TAB (`press keys VK_TAB`) to move from the name cell to the next editable cell. To find
+out where the caret actually is, temporarily print `editorComponent.getSelectedCell()` and its
+`getCellId()` from the test (it shows e.g. `property_name`).
+
+## Grammar cells: an `OptionalCell` containing only a bare property cell fails generation (2026-10-18)
+
+An `OptionalCell` whose only content is a `CellModel_Property` (for example an optional `name`) is
+rejected by the grammar-cells generator with "Content of optional cell is not supported". An
+`OptionalCell` with a keyword constant plus the property (`locale "{locale}"`) works.
+
+**How to apply:** for an optional bare property, use a plain property cell with
+`emptyNoTargetText = true` instead of wrapping it in an `OptionalCell`.
+
 ## Grammar cells: never put a "show if" (`renderingCondition`) on an `OptionalCell` (2026-10-15)
 
 `com.mbeddr.mpsutil.grammarcells` `OptionalCell` already hides its content when the wrapped child or

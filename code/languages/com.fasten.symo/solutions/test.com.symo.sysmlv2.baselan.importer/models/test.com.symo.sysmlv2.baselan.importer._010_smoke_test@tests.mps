@@ -251,7 +251,18 @@
         <child id="7140692429570900092" name="specializes" index="3xZtmi" />
         <child id="7140692429570900093" name="content" index="3xZtmj" />
       </concept>
+      <concept id="6214786105868823569" name="com.symo.sysmlv2.baselan.structure.SysMLv2Comment" flags="ng" index="1_pRso">
+        <property id="6214786105868823573" name="body" index="1_pRss" />
+        <property id="6214786105868823575" name="bare" index="1_pRsu" />
+        <property id="6214786105868823574" name="locale" index="1_pRsv" />
+        <child id="6214786105868823576" name="about" index="1_pRsh" />
+      </concept>
+      <concept id="6214786105868823568" name="com.symo.sysmlv2.baselan.structure.SysMLv2AnnotationRef" flags="ng" index="1_pRsp">
+        <property id="6214786105868823570" name="elementName" index="1_pRsr" />
+        <reference id="6214786105868823571" name="element" index="1_pRsq" />
+      </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
+        <property id="6214786105868823585" name="locale" index="1_pRsC" />
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
@@ -1675,6 +1686,78 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="6coPuU3gCcH" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="5oZmK$NBh1V" role="jymVt">
+      <property role="TrG5h" value="reifyAnnotationRefs" />
+      <node concept="3cqZAl" id="5oZmK$NBh1Z" role="3clF45" />
+      <node concept="37vLTG" id="5oZmK$NBh20" role="3clF46">
+        <property role="3TUv4t" value="true" />
+        <property role="TrG5h" value="m" />
+        <node concept="H_c77" id="5oZmK$NBh22" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5oZmK$NBh23" role="3clF46">
+        <property role="3TUv4t" value="true" />
+        <property role="TrG5h" value="proj" />
+        <node concept="3uibUv" id="5oZmK$NBh25" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5oZmK$NBh26" role="3clF47">
+        <node concept="3clFbF" id="5oZmK$NBh27" role="3cqZAp">
+          <node concept="2OqwBi" id="5oZmK$NBh29" role="3clFbG">
+            <node concept="2YIFZM" id="5oZmK$NBh2c" role="2Oq$k0">
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+            </node>
+            <node concept="liA8E" id="5oZmK$NBh2d" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeAndWait(java.lang.Runnable)" resolve="invokeAndWait" />
+              <node concept="2ShNRf" id="5oZmK$NBh2e" role="37wK5m">
+                <node concept="YeOm9" id="5oZmK$NBh2g" role="2ShVmc">
+                  <node concept="1Y3b0j" id="5oZmK$NBh2j" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <property role="373rjd" value="true" />
+                    <property role="jj94n" value="Anonymous in reifyFeatureRefs() in TestUtils" />
+                    <property role="TrG5h" value="Runnable$anonymous" />
+                    <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3clFb_" id="5oZmK$NBh2l" role="jymVt">
+                      <property role="TrG5h" value="run" />
+                      <node concept="3cqZAl" id="5oZmK$NBh2p" role="3clF45" />
+                      <node concept="3clFbS" id="5oZmK$NBh2q" role="3clF47">
+                        <node concept="1QHqEO" id="5oZmK$NBh2r" role="3cqZAp">
+                          <node concept="1QHqEC" id="5oZmK$NBh2u" role="1QHqEI">
+                            <node concept="3clFbS" id="5oZmK$NBh2w" role="1bW5cS">
+                              <node concept="3clFbF" id="5oZmK$NBh2x" role="3cqZAp">
+                                <node concept="2YIFZM" id="5oZmK$NBh2z" role="3clFbG">
+                                  <ref role="1Pybhc" to="uj5z:7JKstLNlJ4o" resolve="SysMLv2TypeReifier" />
+                                  <ref role="37wK5l" to="uj5z:5oZmK$Nr6FX" resolve="reifyAnnotationRefs" />
+                                  <node concept="37vLTw" id="5oZmK$NBh2$" role="37wK5m">
+                                    <ref role="3cqZAo" node="5oZmK$NBh20" resolve="m" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="5oZmK$NBh2_" role="ukAjM">
+                            <node concept="37vLTw" id="5oZmK$NBh2C" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5oZmK$NBh23" resolve="proj" />
+                            </node>
+                            <node concept="liA8E" id="5oZmK$NBh2D" role="2OqNvi">
+                              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3Tm1VV" id="5oZmK$NBh2E" role="1B3o_S" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5oZmK$NBh2F" role="1B3o_S" />
     </node>
     <node concept="2YIFZL" id="6coPuU3$F2p" role="jymVt">
       <property role="TrG5h" value="addFileToModel" />
@@ -7048,6 +7131,177 @@
           </node>
           <node concept="37vLTw" id="5oZmK$NiGxZ" role="3tpDZA">
             <ref role="3cqZAo" node="5oZmK$NiGxO" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5oZmK$NBmFy">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_150_CommentTest" />
+    <node concept="1qefOq" id="5oZmK$NBmFz" role="1SKRRt">
+      <node concept="2h0jOr" id="5oZmK$NBmF_" role="1qenE9">
+        <property role="TrG5h" value="CommentFile" />
+        <node concept="1_pRso" id="5oZmK$NBmFA" role="2h0jOs">
+          <property role="1_pRss" value="Bare comment" />
+          <property role="1_pRsu" value="true" />
+        </node>
+        <node concept="1_pRso" id="5oZmK$NBmFB" role="2h0jOs">
+          <property role="1_pRss" value="Keyword comment" />
+          <property role="1_pRsu" value="false" />
+        </node>
+        <node concept="3Z9vzX" id="5oZmK$NBmFC" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="1_pRso" id="5oZmK$NBmFD" role="3Z9vGx">
+            <property role="1_pRss" value="Named" />
+            <property role="1_pRsu" value="false" />
+            <property role="TrG5h" value="C1" />
+          </node>
+          <node concept="1_pRso" id="5oZmK$NBmFE" role="3Z9vGx">
+            <property role="1_pRss" value="Localized" />
+            <property role="1_pRsu" value="false" />
+            <property role="1_pRsv" value="en_US" />
+          </node>
+          <node concept="3HG_t4" id="5oZmK$NBmFF" role="3Z9vGx">
+            <property role="3HG_t5" value="Named doc" />
+            <property role="TrG5h" value="D1" />
+            <property role="1_pRsC" value="de" />
+          </node>
+          <node concept="3ZUotO" id="5oZmK$NBmFG" role="3Z9vGx">
+            <property role="TrG5h" value="A" />
+            <node concept="1_pRso" id="5oZmK$NBmFH" role="3w00ZY">
+              <property role="1_pRss" value="In part" />
+              <property role="1_pRsu" value="false" />
+              <node concept="1_pRsp" id="5oZmK$NBmFI" role="1_pRsh">
+                <property role="1_pRsr" value="B" />
+                <ref role="1_pRsq" node="5oZmK$NBmFJ" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="5oZmK$NBmFJ" role="3Z9vGx">
+            <property role="TrG5h" value="B" />
+            <node concept="3HG_t4" id="5oZmK$NBmFK" role="3w00ZY">
+              <property role="3HG_t5" value="B doc" />
+            </node>
+          </node>
+          <node concept="1_pRso" id="5oZmK$NBmFL" role="3Z9vGx">
+            <property role="1_pRss" value="About two" />
+            <property role="1_pRsu" value="false" />
+            <node concept="1_pRsp" id="5oZmK$NBmFM" role="1_pRsh">
+              <property role="1_pRsr" value="A" />
+              <ref role="1_pRsq" node="5oZmK$NBmFG" />
+            </node>
+            <node concept="1_pRsp" id="5oZmK$NBmFN" role="1_pRsh">
+              <property role="1_pRsr" value="B" />
+              <ref role="1_pRsq" node="5oZmK$NBmFJ" />
+            </node>
+          </node>
+        </node>
+        <node concept="1_pRso" id="5oZmK$NBmFO" role="2h0jOs">
+          <property role="1_pRss" value="Line one&#10;Line two" />
+          <property role="1_pRsu" value="false" />
+          <property role="TrG5h" value="C2" />
+        </node>
+        <node concept="3xLA65" id="5oZmK$NBmFP" role="lGtFl">
+          <property role="TrG5h" value="comment_file" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5oZmK$NBmFQ" role="1SL9yI">
+      <property role="TrG5h" value="testImportComments" />
+      <node concept="3cqZAl" id="5oZmK$NBmFT" role="3clF45" />
+      <node concept="3clFbS" id="5oZmK$NBmFU" role="3clF47">
+        <node concept="3cpWs8" id="5oZmK$NBmFV" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NBmFY" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="5oZmK$NBmG0" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="Xl_RD" id="5oZmK$NBmG1" role="37wK5m">
+                <property role="Xl_RC" value="/* Bare comment */&#10;comment /* Keyword comment */&#10;package P {&#10;  comment C1 /* Named */&#10;  comment locale \&quot;en_US\&quot; /* Localized */&#10;  doc D1 locale \&quot;de\&quot; /* Named doc */&#10;  part def A {&#10;    comment about B /* In part */&#10;  }&#10;  part def B {&#10;    doc /* B doc */&#10;  }&#10;  comment about A, B /* About two */&#10;}&#10;comment C2 /*&#10;  Line one&#10;  Line two&#10;*/&#10;" />
+              </node>
+              <node concept="Xl_RD" id="5oZmK$NBmG2" role="37wK5m">
+                <property role="Xl_RC" value="CommentFile" />
+              </node>
+              <node concept="1jxXqW" id="5oZmK$NBmG3" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="5oZmK$NBmG4" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$NBmG5" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$NBmG7" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="5oZmK$NBh1V" resolve="reifyAnnotationRefs" />
+            <node concept="37vLTw" id="5oZmK$NBmG8" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$NBmFY" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$NBmG9" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$NBmGa" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$NBmGc" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="5oZmK$NBmGd" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$NBmFY" resolve="tmp" />
+            </node>
+            <node concept="3xONca" id="5oZmK$NBmGe" role="37wK5m">
+              <ref role="3xOPvv" node="5oZmK$NBmFP" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$NBmGf" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$NBmGg" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$NBmGi" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="5oZmK$NBmGj" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$NBmFY" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$NBmGk" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5oZmK$NBmGl" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripComments" />
+      <node concept="3cqZAl" id="5oZmK$NBmGo" role="3clF45" />
+      <node concept="3clFbS" id="5oZmK$NBmGp" role="3clF47">
+        <node concept="3cpWs8" id="5oZmK$NBmGq" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NBmGt" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <node concept="Xl_RD" id="5oZmK$NBmGv" role="33vP2m">
+              <property role="Xl_RC" value="/* Bare comment */&#10;comment /* Keyword comment */&#10;package P {&#10;  comment C1 /* Named */&#10;  comment locale \&quot;en_US\&quot; /* Localized */&#10;  doc D1 locale \&quot;de\&quot; /* Named doc */&#10;  part def A {&#10;    comment about B /* In part */&#10;  }&#10;  part def B {&#10;    doc /* B doc */&#10;  }&#10;  comment about A, B /* About two */&#10;}&#10;comment C2 /*&#10;  Line one&#10;  Line two&#10;*/&#10;" />
+            </node>
+            <node concept="17QB3L" id="5oZmK$NBmGw" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5oZmK$NBmGx" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$NBmG$" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <node concept="2YIFZM" id="5oZmK$NBmGA" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="5oZmK$NBmGB" role="37wK5m">
+                <ref role="3cqZAo" node="5oZmK$NBmGt" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="5oZmK$NBmGC" role="37wK5m">
+                <property role="Xl_RC" value="CommentFile" />
+              </node>
+              <node concept="1jxXqW" id="5oZmK$NBmGD" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="5oZmK$NBmGE" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="5oZmK$NBmGF" role="3cqZAp">
+          <node concept="37vLTw" id="5oZmK$NBmGI" role="3tpDZB">
+            <ref role="3cqZAo" node="5oZmK$NBmGt" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="5oZmK$NBmGJ" role="3tpDZA">
+            <ref role="3cqZAo" node="5oZmK$NBmG$" resolve="generateText" />
           </node>
         </node>
       </node>

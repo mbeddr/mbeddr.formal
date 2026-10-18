@@ -93,6 +93,9 @@
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
         <child id="7140692429570900092" name="specializes" index="3xZtmi" />
       </concept>
+      <concept id="6214786105868823569" name="com.symo.sysmlv2.baselan.structure.SysMLv2Comment" flags="ng" index="1_pRso">
+        <property id="6214786105868823573" name="body" index="1_pRss" />
+      </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
@@ -785,6 +788,11 @@
           <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
         </node>
       </node>
+      <node concept="yd1bK" id="5oZmK$NDvN4" role="3cqZAp">
+        <node concept="pLAjd" id="5oZmK$NDvN6" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
       <node concept="2TK7Tu" id="3kx1GVoJKJY" role="3cqZAp">
         <property role="2TTd_B" value="Hello world" />
       </node>
@@ -836,6 +844,11 @@
           <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
         </node>
       </node>
+      <node concept="yd1bK" id="5oZmK$NDvN7" role="3cqZAp">
+        <node concept="pLAjd" id="5oZmK$NDvN9" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
       <node concept="2TK7Tu" id="3kx1GVoJKKf" role="3cqZAp">
         <property role="2TTd_B" value="Hello world" />
       </node>
@@ -881,6 +894,11 @@
           <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
         </node>
       </node>
+      <node concept="yd1bK" id="5oZmK$NDvNa" role="3cqZAp">
+        <node concept="pLAjd" id="5oZmK$NDvNc" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
       <node concept="2TK7Tu" id="5oZmK$NiZiJ" role="3cqZAp">
         <property role="2TTd_B" value="First line" />
       </node>
@@ -899,6 +917,112 @@
       </node>
       <node concept="2TK7Tu" id="5oZmK$NiZiR" role="3cqZAp">
         <property role="2TTd_B" value="Third line" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="5oZmK$NDjmS">
+    <property role="3YCmrE" value="typing comment in a package creates a comment element" />
+    <property role="TrG5h" value="_070_Comments_CommentInPackage" />
+    <node concept="1qefOq" id="5oZmK$NDjmT" role="25YQCW">
+      <node concept="2h0jOr" id="5oZmK$NDjmV" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="5oZmK$NDjmW" role="2h0jOs">
+          <property role="TrG5h" value="pack_070" />
+          <node concept="2h0jOo" id="5oZmK$NDjmX" role="3Z9vGx">
+            <node concept="LIFWc" id="5oZmK$NDjmY" role="lGtFl">
+              <property role="LIFWd" value="Constant_68dwa1_a" />
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5oZmK$NDjmZ" role="25YQFr">
+      <node concept="2h0jOr" id="5oZmK$NDjn1" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="5oZmK$NDjn2" role="2h0jOs">
+          <property role="TrG5h" value="pack_070" />
+          <node concept="1_pRso" id="5oZmK$NDjn3" role="3Z9vGx">
+            <property role="1_pRss" value="Hello world" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5oZmK$NDjn4" role="LjaKd">
+      <node concept="2TK7Tu" id="5oZmK$NDjn5" role="3cqZAp">
+        <property role="2TTd_B" value="comment" />
+      </node>
+      <node concept="2HxZob" id="5oZmK$NDjn6" role="3cqZAp">
+        <node concept="3iKlGA" id="5oZmK$NDjn8" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="5oZmK$NDvNg" role="3cqZAp">
+        <node concept="pLAjd" id="5oZmK$NDvNi" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="5oZmK$NDjn9" role="3cqZAp">
+        <property role="2TTd_B" value="Hello world" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="5oZmK$NDjna">
+    <property role="3YCmrE" value="typing comment in a part definition body creates a comment element" />
+    <property role="TrG5h" value="_070_Comments_CommentInPartDef" />
+    <node concept="1qefOq" id="5oZmK$NDjnb" role="25YQCW">
+      <node concept="2h0jOr" id="5oZmK$NDjnd" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="5oZmK$NDjne" role="2h0jOs">
+          <property role="TrG5h" value="pack_070" />
+          <node concept="3ZUotO" id="5oZmK$NDjnf" role="3Z9vGx">
+            <property role="TrG5h" value="Car" />
+            <node concept="2h0jOo" id="5oZmK$NDjng" role="3w00ZY">
+              <node concept="LIFWc" id="5oZmK$NDjnh" role="lGtFl">
+                <property role="LIFWd" value="Constant_68dwa1_a" />
+                <property role="ZRATv" value="true" />
+                <property role="OXtK3" value="true" />
+                <property role="p6zMq" value="0" />
+                <property role="p6zMs" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5oZmK$NDjni" role="25YQFr">
+      <node concept="2h0jOr" id="5oZmK$NDjnk" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="5oZmK$NDjnl" role="2h0jOs">
+          <property role="TrG5h" value="pack_070" />
+          <node concept="3ZUotO" id="5oZmK$NDjnm" role="3Z9vGx">
+            <property role="TrG5h" value="Car" />
+            <node concept="1_pRso" id="5oZmK$NDjnn" role="3w00ZY">
+              <property role="1_pRss" value="Hello world" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5oZmK$NDjno" role="LjaKd">
+      <node concept="2TK7Tu" id="5oZmK$NDjnp" role="3cqZAp">
+        <property role="2TTd_B" value="comment" />
+      </node>
+      <node concept="2HxZob" id="5oZmK$NDjnq" role="3cqZAp">
+        <node concept="3iKlGA" id="5oZmK$NDjns" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="5oZmK$NDvNd" role="3cqZAp">
+        <node concept="pLAjd" id="5oZmK$NDvNf" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="5oZmK$NDjnt" role="3cqZAp">
+        <property role="2TTd_B" value="Hello world" />
       </node>
     </node>
   </node>

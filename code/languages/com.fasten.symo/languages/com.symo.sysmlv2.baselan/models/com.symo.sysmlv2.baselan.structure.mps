@@ -713,6 +713,85 @@
     <node concept="PrWs8" id="3kx1GVo$P6g" role="PzmwI">
       <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
+    <node concept="1TJgyi" id="5oZmK$Nm2Kx" role="1TKVEl">
+      <property role="IQ2nx" value="6214786105868823585" />
+      <property role="TrG5h" value="locale" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$Nm2K$" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5oZmK$Nm2Kg">
+    <property role="EcuMT" value="6214786105868823568" />
+    <property role="TrG5h" value="SysMLv2AnnotationRef" />
+    <property role="R4oN_" value="reference to an annotated element (comment about ...)" />
+    <property role="3GE5qa" value="annotation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5oZmK$Nm2Ki" role="1TKVEl">
+      <property role="IQ2nx" value="6214786105868823570" />
+      <property role="TrG5h" value="elementName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="5oZmK$Nm2Kj" role="1TKVEi">
+      <property role="IQ2ns" value="6214786105868823571" />
+      <property role="20kJfa" value="element" />
+      <ref role="20lvS9" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$Nm2Kk" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+    </node>
+    <node concept="RPilO" id="5oZmK$Nni8R" role="lGtFl">
+      <ref role="RPilL" node="5oZmK$Nm2Kj" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5oZmK$Nm2Kh">
+    <property role="EcuMT" value="6214786105868823569" />
+    <property role="TrG5h" value="SysMLv2Comment" />
+    <property role="34LRSv" value="comment" />
+    <property role="R4oN_" value="SysML v2 comment: [comment [name] [about A, B] [locale &quot;..&quot;]] /* ... */" />
+    <property role="3GE5qa" value="annotation" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5oZmK$Nm2Kl" role="1TKVEl">
+      <property role="IQ2nx" value="6214786105868823573" />
+      <property role="TrG5h" value="body" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5oZmK$Nm2Km" role="1TKVEl">
+      <property role="IQ2nx" value="6214786105868823574" />
+      <property role="TrG5h" value="locale" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyi" id="5oZmK$Nm2Kn" role="1TKVEl">
+      <property role="IQ2nx" value="6214786105868823575" />
+      <property role="TrG5h" value="bare" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="5oZmK$Nm2Ko" role="1TKVEi">
+      <property role="IQ2ns" value="6214786105868823576" />
+      <property role="20kJfa" value="about" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5oZmK$Nm2Kg" resolve="SysMLv2AnnotationRef" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$Nm2Kp" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$Nm2Kq" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$Nm2Kr" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$Nm2Ks" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$Nm2Kt" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$Nm2Ku" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
   </node>
 </model>
 

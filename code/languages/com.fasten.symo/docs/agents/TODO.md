@@ -969,3 +969,24 @@ multi-line body as `doc /*`, indented lines, `*/`. Tests: `_140` adds testImport
 Insert_Action); the `_060_Docs_*` tests invoke Complete_Action after typing `doc`. Not done: relative
 indentation inside a multi-line body is not preserved; typing `doc ` with a space puts the space into
 `body`; no doc in usage bodies (they are empty in this subset).
+
+**Iteration 13 (2026-10-18) — comments (`comment … /* … */`) and doc name/locale**: follows the
+grammar rules `comment : (COMMENT identification? (ABOUT annotation (COMMA annotation)*)?)? (LOCALE
+DOUBLE_STRING)? REGULAR_COMMENT` and `documentation : DOC identification? (LOCALE DOUBLE_STRING)?
+REGULAR_COMMENT`. New concept `SysMLv2Comment` (alias `comment`, same content interfaces as
+`SysMLv2Documentation`, identifier name, properties `body` / `locale` / `bare`, children `about`
+0..n). `bare` marks the keyword-less `/* … */` form; textgen then prints only the body. New
+`SysMLv2AnnotationRef` (an `ISysMLv2QualifiedRef` to any `INamedConcept`, with an `elementName`
+fallback, a smart reference and scope `definitionScope(INamedConcept)`). `SysMLv2Documentation` gains
+an identifier name and `locale`. Editor: `comment`/`doc` keyword, name cell (plain property cell,
+`emptyNoTargetText`), optional `about` list (comment only), optional `locale "…"`, then the
+multi-line body as for doc. Importer: `visitAnnotatingElement` dispatches `comment` as well as
+`documentation` (`rep` and metadata stay unsupported); `visitComment` / `visitDocumentation` share
+`extractCommentText`, `extractOptionalName` (rejects `<short>` names) and `unquote`; `about` names
+are stored as `elementName` and resolved by `SysMLv2TypeReifier.reifyAnnotationRefs`. Tests:
+importer `_150_CommentTest` (import with about-reification, and roundtrip covering bare, keyword,
+named, locale, about, a named and localized doc, and a multi-line comment); editor
+`_070_Comments_CommentInPackage` / `_070_Comments_CommentInPartDef`. After completing `doc` /
+`comment` the caret is in the (empty) name cell, so the `_060_Docs_*` and `_070_Comments_*` tests
+press TAB before typing the body. Not done: `<short>` names, `rep` (textual representation),
+metadata, and an editor test that types `about` / `locale`.
