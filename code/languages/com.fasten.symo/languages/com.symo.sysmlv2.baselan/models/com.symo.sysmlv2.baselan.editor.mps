@@ -25,6 +25,7 @@
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
+      <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
         <child id="1078153129734" name="inspectedCellModel" index="6VMZX" />
       </concept>
@@ -1661,6 +1662,11 @@
       </node>
       <node concept="2iRfu4" id="6coPuU3j$RE" role="2iSdaV" />
     </node>
+  </node>
+  <node concept="22mcaB" id="3kx1GVozAJD">
+    <property role="3GE5qa" value="base" />
+    <ref role="aqKnT" to="5rf1:3DMRBeFsYdF" resolve="SysMLv2EmptyLine" />
+    <node concept="22hDWj" id="3kx1GVozAJE" role="22hAXT" />
   </node>
 </model>
 
