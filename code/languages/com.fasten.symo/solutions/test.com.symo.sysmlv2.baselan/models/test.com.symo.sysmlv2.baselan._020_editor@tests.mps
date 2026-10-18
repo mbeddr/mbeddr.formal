@@ -101,6 +101,13 @@
         <property id="6214786105874793929" name="body" index="1_z1V0" />
         <property id="6214786105874793930" name="language" index="1_z1V3" />
       </concept>
+      <concept id="6214786105876472907" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinition" flags="ng" index="1_WVX2" />
+      <concept id="6214786105876472909" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataUsage" flags="ng" index="1_WVX4">
+        <child id="6214786105876472921" name="type" index="1_WVXg" />
+      </concept>
+      <concept id="6214786105876472908" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinitionRef" flags="ng" index="1_WVX5">
+        <reference id="6214786105876472918" name="definition" index="1_WVXv" />
+      </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
@@ -1087,6 +1094,85 @@
       </node>
       <node concept="2TK7Tu" id="5oZmK$NNc4l" role="3cqZAp">
         <property role="2TTd_B" value="Hello world" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="5oZmK$O6q_r">
+    <property role="3YCmrE" value="typing metadata in a part definition and selecting its type creates a metadata usage" />
+    <property role="TrG5h" value="_090_Metadata_MetadataInPartDef" />
+    <node concept="1qefOq" id="5oZmK$O6q_s" role="25YQCW">
+      <node concept="2h0jOr" id="5oZmK$O6q_u" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="5oZmK$O6q_v" role="2h0jOs">
+          <property role="TrG5h" value="pack_090" />
+          <node concept="1_WVX2" id="5oZmK$O6q_w" role="3Z9vGx">
+            <property role="TrG5h" value="Safety" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="5oZmK$O6q_x" role="2h0jOs" />
+        <node concept="3ZUotO" id="5oZmK$O6q_y" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2h0jOo" id="5oZmK$O6q_z" role="3w00ZY">
+            <node concept="LIFWc" id="5oZmK$O6q_$" role="lGtFl">
+              <property role="LIFWd" value="Constant_68dwa1_a" />
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="5oZmK$O6q__" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="5oZmK$O6q_A" role="25YQFr">
+      <node concept="2h0jOr" id="5oZmK$O6q_C" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="5oZmK$O6q_D" role="2h0jOs">
+          <property role="TrG5h" value="pack_090" />
+          <node concept="1_WVX2" id="5oZmK$O6q_E" role="3Z9vGx">
+            <property role="TrG5h" value="Safety" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="5oZmK$O6q_F" role="2h0jOs" />
+        <node concept="3ZUotO" id="5oZmK$O6q_G" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="1_WVX4" id="5oZmK$O6q_H" role="3w00ZY">
+            <node concept="1_WVX5" id="5oZmK$O6q_J" role="1_WVXg">
+              <ref role="gQIM1" node="5oZmK$O6q_D" />
+              <ref role="1_WVXv" node="5oZmK$O6q_E" />
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="5oZmK$O6q_K" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="5oZmK$O6q_L" role="LjaKd">
+      <node concept="2TK7Tu" id="5oZmK$O6q_M" role="3cqZAp">
+        <property role="2TTd_B" value="metadata" />
+      </node>
+      <node concept="2HxZob" id="5oZmK$O6q_N" role="3cqZAp">
+        <node concept="3iKlGA" id="5oZmK$O6q_P" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="5oZmK$O6q_Q" role="3cqZAp">
+        <node concept="pLAjd" id="5oZmK$O6q_S" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="5oZmK$O6q_T" role="3cqZAp">
+        <property role="2TTd_B" value="pack_090::Safety" />
+      </node>
+      <node concept="2HxZob" id="5oZmK$O6q_U" role="3cqZAp">
+        <node concept="3iKlGA" id="5oZmK$O6q_W" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="5oZmK$O6q_X" role="3cqZAp">
+        <node concept="pLAjd" id="5oZmK$O6q_Z" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
       </node>
     </node>
   </node>

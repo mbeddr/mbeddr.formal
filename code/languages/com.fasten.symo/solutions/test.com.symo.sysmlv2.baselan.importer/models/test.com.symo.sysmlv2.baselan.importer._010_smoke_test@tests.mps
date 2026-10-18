@@ -266,6 +266,26 @@
         <property id="6214786105874793931" name="bare" index="1_z1V2" />
         <property id="6214786105874793930" name="language" index="1_z1V3" />
       </concept>
+      <concept id="6214786105876472907" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinition" flags="ng" index="1_WVX2">
+        <child id="6214786105876472913" name="content" index="1_WVXo" />
+      </concept>
+      <concept id="6214786105876472909" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataUsage" flags="ng" index="1_WVX4">
+        <property id="6214786105876472920" name="atSign" index="1_WVXh" />
+        <child id="6214786105876472921" name="type" index="1_WVXg" />
+        <child id="6214786105876472923" name="values" index="1_WVXi" />
+        <child id="6214786105876472922" name="about" index="1_WVXj" />
+      </concept>
+      <concept id="6214786105876472908" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinitionRef" flags="ng" index="1_WVX5">
+        <property id="6214786105876472917" name="metadataDefinitionName" index="1_WVXs" />
+        <reference id="6214786105876472918" name="definition" index="1_WVXv" />
+      </concept>
+      <concept id="6214786105876472911" name="com.symo.sysmlv2.baselan.structure.SysMLv2LiteralExpression" flags="ng" index="1_WVX6">
+        <property id="6214786105876472933" name="value" index="1_WVXG" />
+      </concept>
+      <concept id="6214786105876472910" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataValue" flags="ng" index="1_WVX7">
+        <child id="6214786105876472931" name="value" index="1_WVXE" />
+        <child id="6214786105876472930" name="feature" index="1_WVXF" />
+      </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="6214786105868823585" name="locale" index="1_pRsC" />
         <property id="3828348643708195211" name="body" index="3HG_t5" />
@@ -1763,6 +1783,78 @@
         </node>
       </node>
       <node concept="3Tm1VV" id="5oZmK$NBh2F" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="5oZmK$O67Gn" role="jymVt">
+      <property role="TrG5h" value="reifyMetadataDefinitionRefs" />
+      <node concept="3cqZAl" id="5oZmK$O67Gr" role="3clF45" />
+      <node concept="37vLTG" id="5oZmK$O67Gs" role="3clF46">
+        <property role="3TUv4t" value="true" />
+        <property role="TrG5h" value="m" />
+        <node concept="H_c77" id="5oZmK$O67Gu" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="5oZmK$O67Gv" role="3clF46">
+        <property role="3TUv4t" value="true" />
+        <property role="TrG5h" value="proj" />
+        <node concept="3uibUv" id="5oZmK$O67Gx" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5oZmK$O67Gy" role="3clF47">
+        <node concept="3clFbF" id="5oZmK$O67Gz" role="3cqZAp">
+          <node concept="2OqwBi" id="5oZmK$O67G_" role="3clFbG">
+            <node concept="2YIFZM" id="5oZmK$O67GC" role="2Oq$k0">
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+            </node>
+            <node concept="liA8E" id="5oZmK$O67GD" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeAndWait(java.lang.Runnable)" resolve="invokeAndWait" />
+              <node concept="2ShNRf" id="5oZmK$O67GE" role="37wK5m">
+                <node concept="YeOm9" id="5oZmK$O67GG" role="2ShVmc">
+                  <node concept="1Y3b0j" id="5oZmK$O67GJ" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <property role="373rjd" value="true" />
+                    <property role="jj94n" value="Anonymous in reifyFeatureRefs() in TestUtils" />
+                    <property role="TrG5h" value="Runnable$anonymous" />
+                    <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3clFb_" id="5oZmK$O67GL" role="jymVt">
+                      <property role="TrG5h" value="run" />
+                      <node concept="3cqZAl" id="5oZmK$O67GP" role="3clF45" />
+                      <node concept="3clFbS" id="5oZmK$O67GQ" role="3clF47">
+                        <node concept="1QHqEO" id="5oZmK$O67GR" role="3cqZAp">
+                          <node concept="1QHqEC" id="5oZmK$O67GU" role="1QHqEI">
+                            <node concept="3clFbS" id="5oZmK$O67GW" role="1bW5cS">
+                              <node concept="3clFbF" id="5oZmK$O67GX" role="3cqZAp">
+                                <node concept="2YIFZM" id="5oZmK$O67GZ" role="3clFbG">
+                                  <ref role="1Pybhc" to="uj5z:7JKstLNlJ4o" resolve="SysMLv2TypeReifier" />
+                                  <ref role="37wK5l" to="uj5z:5oZmK$O67F_" resolve="reifyMetadataDefinitionRefs" />
+                                  <node concept="37vLTw" id="5oZmK$O67H0" role="37wK5m">
+                                    <ref role="3cqZAo" node="5oZmK$O67Gs" resolve="m" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="5oZmK$O67H1" role="ukAjM">
+                            <node concept="37vLTw" id="5oZmK$O67H4" role="2Oq$k0">
+                              <ref role="3cqZAo" node="5oZmK$O67Gv" resolve="proj" />
+                            </node>
+                            <node concept="liA8E" id="5oZmK$O67H5" role="2OqNvi">
+                              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3Tm1VV" id="5oZmK$O67H6" role="1B3o_S" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5oZmK$O67H7" role="1B3o_S" />
     </node>
     <node concept="2YIFZL" id="6coPuU3$F2p" role="jymVt">
       <property role="TrG5h" value="addFileToModel" />
@@ -7441,6 +7533,214 @@
           </node>
           <node concept="37vLTw" id="5oZmK$NMUOW" role="3tpDZA">
             <ref role="3cqZAo" node="5oZmK$NMUOL" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5oZmK$O67IU">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_170_MetadataTest" />
+    <node concept="1qefOq" id="5oZmK$O67IV" role="1SKRRt">
+      <node concept="2h0jOr" id="5oZmK$O67IX" role="1qenE9">
+        <property role="TrG5h" value="MetaFile" />
+        <node concept="3Z9vzX" id="5oZmK$O67IY" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="1_WVX2" id="5oZmK$O67IZ" role="3Z9vGx">
+            <property role="TrG5h" value="SafetyInfo" />
+            <node concept="8EhU9" id="5oZmK$O67J0" role="1_WVXo">
+              <property role="TrG5h" value="asil" />
+            </node>
+            <node concept="8EhU9" id="5oZmK$O67J1" role="1_WVXo">
+              <property role="TrG5h" value="reviewed" />
+            </node>
+          </node>
+          <node concept="1_WVX2" id="5oZmK$O67J2" role="3Z9vGx">
+            <property role="TrG5h" value="Approved" />
+          </node>
+          <node concept="3ZUotO" id="5oZmK$O67J3" role="3Z9vGx">
+            <property role="TrG5h" value="Brake" />
+            <node concept="1_WVX4" id="5oZmK$O67J4" role="3w00ZY">
+              <property role="1_WVXh" value="true" />
+              <node concept="1_WVX5" id="5oZmK$O67J6" role="1_WVXg">
+                <property role="1_WVXs" value="SafetyInfo" />
+                <ref role="1_WVXv" node="5oZmK$O67IZ" />
+              </node>
+              <node concept="1_WVX7" id="5oZmK$O67J7" role="1_WVXi">
+                <node concept="3wdj9f" id="5oZmK$O67Ja" role="1_WVXF">
+                  <property role="3wdj9b" value="asil" />
+                  <ref role="3wdj98" node="5oZmK$O67J0" />
+                </node>
+                <node concept="1_WVX6" id="5oZmK$O67Jb" role="1_WVXE">
+                  <property role="1_WVXG" value="&quot;D&quot;" />
+                </node>
+              </node>
+              <node concept="1_WVX7" id="5oZmK$O67Jc" role="1_WVXi">
+                <node concept="3wdj9f" id="5oZmK$O67Jf" role="1_WVXF">
+                  <property role="3wdj9b" value="reviewed" />
+                  <ref role="3wdj98" node="5oZmK$O67J1" />
+                </node>
+                <node concept="1_WVX6" id="5oZmK$O67Jg" role="1_WVXE">
+                  <property role="1_WVXG" value="true" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="5oZmK$O67Jh" role="3Z9vGx">
+            <property role="TrG5h" value="Engine" />
+            <node concept="1_WVX4" id="5oZmK$O67Ji" role="3w00ZY">
+              <property role="1_WVXh" value="true" />
+              <node concept="1_WVX5" id="5oZmK$O67Jk" role="1_WVXg">
+                <property role="1_WVXs" value="Approved" />
+                <ref role="1_WVXv" node="5oZmK$O67J2" />
+              </node>
+            </node>
+          </node>
+          <node concept="1_WVX4" id="5oZmK$O67Jl" role="3Z9vGx">
+            <property role="TrG5h" value="info" />
+            <node concept="1_WVX5" id="5oZmK$O67Jn" role="1_WVXg">
+              <property role="1_WVXs" value="SafetyInfo" />
+              <ref role="1_WVXv" node="5oZmK$O67IZ" />
+            </node>
+            <node concept="1_pRsp" id="5oZmK$O67Jo" role="1_WVXj">
+              <property role="1_pRsr" value="Brake" />
+              <ref role="1_pRsq" node="5oZmK$O67J3" />
+            </node>
+            <node concept="1_pRsp" id="5oZmK$O67Jp" role="1_WVXj">
+              <property role="1_pRsr" value="Engine" />
+              <ref role="1_pRsq" node="5oZmK$O67Jh" />
+            </node>
+            <node concept="1_WVX7" id="5oZmK$O67Jq" role="1_WVXi">
+              <node concept="3wdj9f" id="5oZmK$O67Jt" role="1_WVXF">
+                <property role="3wdj9b" value="asil" />
+                <ref role="3wdj98" node="5oZmK$O67J0" />
+              </node>
+              <node concept="1_WVX6" id="5oZmK$O67Ju" role="1_WVXE">
+                <property role="1_WVXG" value="&quot;B&quot;" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3xLA65" id="5oZmK$O67Jv" role="lGtFl">
+          <property role="TrG5h" value="meta_file" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5oZmK$O67Jw" role="1SL9yI">
+      <property role="TrG5h" value="testImportMetadata" />
+      <node concept="3cqZAl" id="5oZmK$O67Jz" role="3clF45" />
+      <node concept="3clFbS" id="5oZmK$O67J$" role="3clF47">
+        <node concept="3cpWs8" id="5oZmK$O67J_" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$O67JC" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="5oZmK$O67JE" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="Xl_RD" id="5oZmK$O67JF" role="37wK5m">
+                <property role="Xl_RC" value="package P {&#10;  metadata def SafetyInfo {&#10;    attribute asil;&#10;    attribute reviewed;&#10;  }&#10;  metadata def Approved {&#10;  }&#10;  part def Brake {&#10;    @SafetyInfo {&#10;      asil = \&quot;D\&quot;;&#10;      reviewed = true;&#10;    }&#10;  }&#10;  part def Engine {&#10;    @Approved;&#10;  }&#10;  metadata info : SafetyInfo about Brake, Engine {&#10;    asil = \&quot;B\&quot;;&#10;  }&#10;}&#10;" />
+              </node>
+              <node concept="Xl_RD" id="5oZmK$O67JG" role="37wK5m">
+                <property role="Xl_RC" value="MetaFile" />
+              </node>
+              <node concept="1jxXqW" id="5oZmK$O67JH" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="5oZmK$O67JI" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$O67JJ" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$O67JL" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="5oZmK$O67Gn" resolve="reifyMetadataDefinitionRefs" />
+            <node concept="37vLTw" id="5oZmK$O67JM" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$O67JC" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$O67JN" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$O67JO" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$O67JQ" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6coPuU3gCbX" resolve="reifyFeatureRefs" />
+            <node concept="37vLTw" id="5oZmK$O67JR" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$O67JC" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$O67JS" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$O67JT" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$O67JV" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="5oZmK$NBh1V" resolve="reifyAnnotationRefs" />
+            <node concept="37vLTw" id="5oZmK$O67JW" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$O67JC" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$O67JX" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$O67JY" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$O67K0" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="5oZmK$O67K1" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$O67JC" resolve="tmp" />
+            </node>
+            <node concept="3xONca" id="5oZmK$O67K2" role="37wK5m">
+              <ref role="3xOPvv" node="5oZmK$O67Jv" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$O67K3" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$O67K4" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$O67K6" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="5oZmK$O67K7" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$O67JC" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$O67K8" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5oZmK$O67K9" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripMetadata" />
+      <node concept="3cqZAl" id="5oZmK$O67Kc" role="3clF45" />
+      <node concept="3clFbS" id="5oZmK$O67Kd" role="3clF47">
+        <node concept="3cpWs8" id="5oZmK$O67Ke" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$O67Kh" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <node concept="Xl_RD" id="5oZmK$O67Kj" role="33vP2m">
+              <property role="Xl_RC" value="package P {&#10;  metadata def SafetyInfo {&#10;    attribute asil;&#10;    attribute reviewed;&#10;  }&#10;  metadata def Approved {&#10;  }&#10;  part def Brake {&#10;    @SafetyInfo {&#10;      asil = \&quot;D\&quot;;&#10;      reviewed = true;&#10;    }&#10;  }&#10;  part def Engine {&#10;    @Approved;&#10;  }&#10;  metadata info : SafetyInfo about Brake, Engine {&#10;    asil = \&quot;B\&quot;;&#10;  }&#10;}&#10;" />
+            </node>
+            <node concept="17QB3L" id="5oZmK$O67Kk" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5oZmK$O67Kl" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$O67Ko" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <node concept="2YIFZM" id="5oZmK$O67Kq" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="5oZmK$O67Kr" role="37wK5m">
+                <ref role="3cqZAo" node="5oZmK$O67Kh" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="5oZmK$O67Ks" role="37wK5m">
+                <property role="Xl_RC" value="MetaFile" />
+              </node>
+              <node concept="1jxXqW" id="5oZmK$O67Kt" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="5oZmK$O67Ku" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="5oZmK$O67Kv" role="3cqZAp">
+          <node concept="37vLTw" id="5oZmK$O67Ky" role="3tpDZB">
+            <ref role="3cqZAo" node="5oZmK$O67Kh" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="5oZmK$O67Kz" role="3tpDZA">
+            <ref role="3cqZAo" node="5oZmK$O67Ko" resolve="generateText" />
           </node>
         </node>
       </node>

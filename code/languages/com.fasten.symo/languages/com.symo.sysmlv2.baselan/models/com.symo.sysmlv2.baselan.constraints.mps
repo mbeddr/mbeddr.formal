@@ -417,5 +417,51 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5oZmK$NNg73">
+    <property role="3GE5qa" value="metadata" />
+    <property role="TrG5h" value="SysMLv2MetadataDefinitionRef_Constraints" />
+    <ref role="1M2myG" to="5rf1:5oZmK$NNehc" resolve="SysMLv2MetadataDefinitionRef" />
+    <node concept="1N5Pfh" id="5oZmK$NNg74" role="1Mr941">
+      <ref role="1N5Vy1" to="5rf1:5oZmK$NNehm" />
+      <node concept="3dgokm" id="5oZmK$NNg75" role="1N6uqs">
+        <node concept="3clFbS" id="5oZmK$NNg77" role="2VODD2">
+          <node concept="3clFbF" id="5oZmK$NNg78" role="3cqZAp">
+            <node concept="2OqwBi" id="5oZmK$NNg7a" role="3clFbG">
+              <node concept="1PxgMI" id="5oZmK$NNg7d" role="2Oq$k0">
+                <node concept="3kakTB" id="5oZmK$NNg7g" role="1m5AlR" />
+                <node concept="chp4Y" id="5oZmK$NNg7h" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="5oZmK$NNg7i" role="2OqNvi">
+                <ref role="37wK5l" to="5wt7:3tSWG0_D0yE" resolve="definitionScope" />
+                <node concept="35c_gC" id="5oZmK$NNg7j" role="37wK5m">
+                  <ref role="35c_gD" to="5rf1:5oZmK$NNehb" resolve="SysMLv2MetadataDefinition" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3k9gUc" id="5oZmK$NNg7k" role="3kmjI7">
+        <node concept="3clFbS" id="5oZmK$NNg7m" role="2VODD2">
+          <node concept="3clFbF" id="5oZmK$NNg7n" role="3cqZAp">
+            <node concept="2OqwBi" id="5oZmK$NNg7p" role="3clFbG">
+              <node concept="1PxgMI" id="5oZmK$NNg7s" role="2Oq$k0">
+                <node concept="3kakTB" id="5oZmK$NNg7v" role="1m5AlR" />
+                <node concept="chp4Y" id="5oZmK$NNg7w" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="5oZmK$NNg7x" role="2OqNvi">
+                <ref role="37wK5l" to="5wt7:3tSWG0_CPFo" resolve="adoptNamespaceOf" />
+                <node concept="3khVwk" id="5oZmK$NNg7y" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

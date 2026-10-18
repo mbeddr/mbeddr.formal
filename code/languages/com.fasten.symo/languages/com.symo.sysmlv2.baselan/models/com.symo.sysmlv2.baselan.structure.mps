@@ -834,5 +834,146 @@
       <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5oZmK$NNehb">
+    <property role="EcuMT" value="6214786105876472907" />
+    <property role="TrG5h" value="SysMLv2MetadataDefinition" />
+    <property role="34LRSv" value="metadata def" />
+    <property role="R4oN_" value="SysML v2 metadata definition" />
+    <property role="3GE5qa" value="metadata" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5oZmK$NNehg" role="1TKVEi">
+      <property role="IQ2ns" value="6214786105876472912" />
+      <property role="20kJfa" value="specializes" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5oZmK$NNehc" resolve="SysMLv2MetadataDefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="5oZmK$NNehh" role="1TKVEi">
+      <property role="IQ2ns" value="6214786105876472913" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NNehi" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NNehj" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NNehk" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5oZmK$NNehc">
+    <property role="EcuMT" value="6214786105876472908" />
+    <property role="TrG5h" value="SysMLv2MetadataDefinitionRef" />
+    <property role="3GE5qa" value="metadata" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5oZmK$NNehl" role="1TKVEl">
+      <property role="IQ2nx" value="6214786105876472917" />
+      <property role="TrG5h" value="metadataDefinitionName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="5oZmK$NNehm" role="1TKVEi">
+      <property role="IQ2ns" value="6214786105876472918" />
+      <property role="20kJfa" value="definition" />
+      <ref role="20lvS9" node="5oZmK$NNehb" resolve="SysMLv2MetadataDefinition" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NNehn" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+    </node>
+    <node concept="RPilO" id="5oZmK$NNfCH" role="lGtFl">
+      <ref role="RPilL" node="5oZmK$NNehm" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5oZmK$NNehd">
+    <property role="EcuMT" value="6214786105876472909" />
+    <property role="TrG5h" value="SysMLv2MetadataUsage" />
+    <property role="34LRSv" value="metadata" />
+    <property role="R4oN_" value="SysML v2 metadata: (@ | metadata) [name :] Type [about A, B] (; | { values })" />
+    <property role="3GE5qa" value="metadata" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5oZmK$NNeho" role="1TKVEl">
+      <property role="IQ2nx" value="6214786105876472920" />
+      <property role="TrG5h" value="atSign" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="5oZmK$NNehp" role="1TKVEi">
+      <property role="IQ2ns" value="6214786105876472921" />
+      <property role="20kJfa" value="type" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5oZmK$NNehc" resolve="SysMLv2MetadataDefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="5oZmK$NNehq" role="1TKVEi">
+      <property role="IQ2ns" value="6214786105876472922" />
+      <property role="20kJfa" value="about" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5oZmK$Nm2Kg" resolve="SysMLv2AnnotationRef" />
+    </node>
+    <node concept="1TJgyj" id="5oZmK$NNehr" role="1TKVEi">
+      <property role="IQ2ns" value="6214786105876472923" />
+      <property role="20kJfa" value="values" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5oZmK$NNehe" resolve="SysMLv2MetadataValue" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NNehs" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NNeht" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NNehu" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NNehv" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NNehw" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NNehx" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5oZmK$NNehe">
+    <property role="EcuMT" value="6214786105876472910" />
+    <property role="TrG5h" value="SysMLv2MetadataValue" />
+    <property role="R4oN_" value="feature = literal; inside a metadata body" />
+    <property role="3GE5qa" value="metadata" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5oZmK$NNehy" role="1TKVEi">
+      <property role="IQ2ns" value="6214786105876472930" />
+      <property role="20kJfa" value="feature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2FeatureRef" />
+    </node>
+    <node concept="1TJgyj" id="5oZmK$NNehz" role="1TKVEi">
+      <property role="IQ2ns" value="6214786105876472931" />
+      <property role="20kJfa" value="value" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5oZmK$NNehf" resolve="SysMLv2LiteralExpression" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$NNeh$" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5oZmK$NNehf">
+    <property role="EcuMT" value="6214786105876472911" />
+    <property role="TrG5h" value="SysMLv2LiteralExpression" />
+    <property role="R4oN_" value="literal (string, integer, real, boolean) kept as source text" />
+    <property role="3GE5qa" value="metadata" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5oZmK$NNeh_" role="1TKVEl">
+      <property role="IQ2nx" value="6214786105876472933" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

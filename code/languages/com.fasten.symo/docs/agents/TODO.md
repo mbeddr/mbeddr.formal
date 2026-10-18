@@ -1003,3 +1003,26 @@ kept as opaque text — no interpretation of any `language`. Tests: importer
 `_160_TextualRepresentationTest` (import + roundtrip: short form at file and part-def level, named,
 keyword-only, multi-line); editor `_080_Reps_RepInPackage` (type `rep`, Complete, TAB, language, TAB,
 body). Not done: completion for the short form (typing `language` on an empty line), metadata.
+
+**Iteration 15 (2026-10-18) — metadata (first step)**: `metadata def` and metadata usages
+(`metadataFeature : (AT_SIGN | METADATA) metadataFeatureDeclaration (ABOUT annotation (COMMA
+annotation)*)? metadataBody`). New concepts (virtual folder `metadata`):
+`SysMLv2MetadataDefinition` (alias `metadata def`, modelled like `attribute def`: specializes
+`SysMLv2MetadataDefinitionRef`s, content `ISysMLv2AttributeBodyContent`, file-level only);
+`SysMLv2MetadataDefinitionRef` (qualified ref + smart reference, scope
+`definitionScope(SysMLv2MetadataDefinition)`); `SysMLv2MetadataUsage` (alias `metadata`, same content
+interfaces as comment/doc/rep, identifier name, `atSign` for `@` vs `metadata`, children `type`,
+`about`, `values`); `SysMLv2MetadataValue` (`feature = value;`, a `ScopeProvider` whose scope for
+`SysMLv2FeatureRef` is the `localMembers()` of the usage's metadata definition, so `asil = ...`
+resolves to the definition's attribute); `SysMLv2LiteralExpression` (literal kept as source text in
+`value`). Editor: `@`/`metadata` keyword (by `atSign`), name, `:` when named, type, optional `about`,
+then `;` when there are no values or an optional `{ values }` block. Importer: `visitDefinitionElement`
+dispatches `metadataDefinition`; `visitAnnotatingElement` dispatches `metadataFeature`;
+`visitMetadataFeature` uses `collectMetadataValues` / `addMetadataValue`, which accept only
+`name = literal;` entries (string, integer, real, boolean) and reject typed/nested body features,
+`:=`/`default`, non-literal expressions, and definitions/aliases/imports in the body. Reifier:
+`reifyMetadataDefinitionRefs` (run before `reifyFeatureRefs`). Tests: importer `_170_MetadataTest`
+(import with type/feature/about reification + roundtrip); editor `_090_Metadata_MetadataInPartDef`.
+Not done: `#` prefix metadata, `:>>`/`redefines` spelling in value entries (normalized to `name =`),
+empty `{ }` body (printed as `;`), `typed by` spelling (printed as `:`), metadata def prefixes
+(`abstract`, extension keywords), non-literal values, semantic metadata.
