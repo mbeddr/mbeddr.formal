@@ -1098,21 +1098,28 @@ IDs unchanged. Rationale: consistent with the `<X>DefinitionRef.definition` patt
 language is a usage (widen the target if KerML library features are ever modelled). Older notes above
 still use the former names.
 
-**Iteration 18 (planned) — connection usage bodies via a part-like abstract base**: SysML v2 says a
-connection usage *is* a part usage (§7.13.1, §8.3.13.4), and bodies are needed to give a single
-connection its own features (`attribute :>> bandwidth = 100;`, extra attributes, `doc`, explicit
-`end part hub ::> mainSwitch;`, nested parts). Plan:
-- Introduce an abstract base (e.g. `SysMLv2PartLikeUsage`, extends `SysMLv2Usage`) holding what part and
-  connection usages share: body `content` (part/item body content), multiplicity, and making it an
-  `ISysMLv2FeatureOwner` so features declared in the body are in scope (chains, redefinition).
-  `SysMLv2PartUsage` and `SysMLv2ConnectionUsage` both extend it; keep `type` on the concrete concepts
-  (PartDefinitionRef vs ConnectionDefinitionRef). Concept/link IDs must stay stable for `content` moves
-  (check whether moving a link to the base needs a migration).
-- Editor: optional `{ ... }` body on connection usages (same body editor pattern as part usages).
-- Textgen: emit body; roundtrip `connect a to b { ... }` and `connection c : C connect a to b { ... }`.
-- Importer: stop rejecting non-empty connection usage bodies; visit body items like part usage bodies
-  (currently also rejected for part usages — decide whether to lift both).
-- Check first: whether attribute usages already support value assignment (`= 100`) and redefinition
-  (`:>> bandwidth`) in the importer, since connection bodies will typically use them.
-- Tests: importer import + roundtrip for a connection with body attributes and doc; editor test adding an
-  attribute inside a connection body.
+**Iteration 18 (2026-10-20) — connection usage bodies via a part-like abstract base**: SysML v2 says a
+connection usage *is* a part usage (§7.13.1, §8.3.13.4). New abstract `SysMLv2PartLikeUsage` (extends
+`SysMLv2Usage`, implements `ISysMLv2FeatureOwner`); `SysMLv2PartUsage` and `SysMLv2ConnectionUsage` extend it.
+The body link `content : ISysMLv2PartBodyContent[0..n]` moved from part usage to the base (same link id; no
+model had part-usage content because bodies were rejected). `multiplicity` and `type` stay on the concrete
+concepts (multiplicity is used in many fixtures/sandboxes; moving it would have broken them).
+Behavior: `ownedFeatures` = body, `directSuperDefinitions` = `typeDefinition()`, so a part-like usage's
+members are its body features plus its type's features; `getScope` copied from `SysMLv2Usage` (class
+behavior wins over the namespace interface); `getVisibleMatchingText`/`getMatchingText` = plain name (the
+`ISmartReferent` default would qualify, e.g. `Engine::drive`). `SysMLv2ConnectorEnd.scopeOwnerAt`: step 0
+starts from the connection's *parent* (the connection is now a feature owner itself); step N uses the
+previous step's usage directly when it is a feature owner (body features visible), else its type.
+`ICanBelongOnlyToSysMLv2PartDefinition` renamed to `ICanBelongOnlyToSysMLv2PartOwner` (part definitions and
+part-like usages); it now also allows part-like usages as parent (part and port usages in usage bodies).
+Editor: grammar-cells `OptionalCell [ "{" content "}" ]` before `;` in part and connection usage editors;
+`;` has renderingCondition `content.isEmpty`; typing `{` opens the body. TextGen: `;` or ` {` + indented
+body + `}` (same layout as part def). Importer: part and connection usage bodies are visited like part def
+bodies (port/item/attribute usage bodies are still rejected).
+Tests: importer `_200_ConnectionBodyTest` (connection with `attribute bw :>> bandwidth;` resolved against
+the connection def, extra attribute, `doc`; part usage with body; chain `controller.sub` into a part usage
+body; import + reification + roundtrip), editor `_110_Connections_AddBodyAttribute` (type the connection,
+`{`, `attribute latency`). Importer 50/50, baselan 22/22.
+Open: value assignment (`attribute :>> bandwidth = 100;`) is still rejected by the importer (needs a value
+expression on attribute usages; the metadata `LiteralExpression` could be reused); explicit end features in
+usage bodies (`end part hub ::> mainSwitch;`, needs `::>` reference subsetting); bodies on port/item usages.
