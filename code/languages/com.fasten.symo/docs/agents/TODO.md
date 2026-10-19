@@ -1056,3 +1056,63 @@ owner concepts (package, part/item/attribute/port/metadata def, part/attribute/p
 user's legacy cell-menu attempt on the `attribute def` keyword was replaced (and its cell-menu
 component removed). Test: editor `_090_Metadata_PrefixOnPartDef`
 (caret at start of `part def`, type `#`, Complete, type `pack::Safety`, Complete, Enter).
+
+**Iteration 17 (2026-10-19, IN PROGRESS) — feature chains + connections**: done so far (models
+saved, not yet built/tested): structure `SysMLv2ConnectionDefinition` (extends part def, alias
+`connection def`), `SysMLv2ConnectionDefinitionRef` (+ smart ref, behavior/constraints/editor/textgen
+cloned from the part def ref), `SysMLv2ConnectorEnd` (ScopeProvider, child `chain : SysMLv2UsageRef[1..n]`,
+editor `.`-separated list, textgen `a.b.c`), `SysMLv2ConnectionUsage` (extends `SysMLv2Usage`, part/item
+body content, `withKeyword`, `type`, `source`, `target`; constructor creates both ends with one empty
+step; editor `[#..] [connection] [name] [: Type] connect <src> to <tgt> ;`), `isEnd` on `SysMLv2Usage`
+(`end` keyword first in part/port/item usage editors + textgens). Behavior: `SysMLv2Usage.typeDefinition()`
+(definition of the first Part/Port/Item/Attribute/ConnectionDefinitionRef child);
+`SysMLv2ConnectorEnd.scopeOwner(child)`: first step -> nearest `ISysMLv2FeatureOwner`, later steps ->
+`typeDefinition()` of the previous step's feature; `getScope` = owner's `localMembers()` of the kind.
+Language made successfully. Importer: `visitConnectionDefinition` (clone of part def), `visitConnectionUsage`
+(binary only; rejects prefixes, value, multiplicity, subsetting/redefinition, n-ary, named/multiplicity
+connector ends, `::` in chain steps, non-empty body), `extractConnectorEndChain`, `createConnectorEnd`,
+`end` items in `visitDefinitionBodyItem` (set `isEnd`; reject name/multiplicity/nonunique), dispatch in
+`visitDefinitionElement`/`visitStructureUsageElement`. `SysMLv2TypeReifier.reifyConnectionDefinitionRefs`
++ TestUtils wrapper. Chain reification relies on order: reify part/port/connection def refs BEFORE
+`reifyUsageRefs`, and steps are resolved in document order.
+Status after MPS restart (Xmx 4g): everything builds; importer suite 48/48 green incl. new
+`_190_ConnectionTest` (import + reification of def refs and chain steps, roundtrip). Fixes since:
+`connection def` editor `{` had `punctuation-left` flag=true from the JSON clone (original had the
+flag unset) -> set false; connection usage name cell now has renderingCondition `node.withKeyword`
+(empty name left a gap before `connect`).
+Editor test `_100_Connections_EditConnectUsage`: in `part def Car { part engine : Engine; part gearbox :
+Gearbox; }` typing `connect`, `engine` Complete, `.`, `drive` Complete, ESC, TAB, `gearbox` Complete, `.`,
+`input` Complete yields `connect engine.drive to gearbox.input;` with all four chain steps resolved (step 2
+scoped by the type of step 1). Needed for that: `SysMLv2UsageRef.usage` is now a smart reference;
+`SysMLv2UsageRef_Constraints` scopes `usage` via `Scope.getScope(contextNode, containmentLink, position,
+SysMLv2Usage)`; `SysMLv2ConnectorEnd` overrides `getScope(kind, link, index)` and computes the owner by
+position (`scopeOwnerAt`, `membersScope`, unnamed features filtered out); the inline target-name cell in
+`SysMLv2UsageRef_Editor` is read only. See the gotcha "Reference completion for list elements ..." in
+`docs/agents/mps-gotchas.md`.
+After a full language rebuild: importer 48/48, baselan 21/21.
+Possible follow-ups: `interface def`/`interface` (iteration 18), `bind` (19).
+Rename (2026-10-19): `SysMLv2FeatureRef` -> `SysMLv2UsageRef` (link `feature` -> `usage`, property
+`featureName` -> `usageName`, aspect roots renamed accordingly, inspector label `usage:`),
+`SysMLv2TypeReifier.reifyFeatureRefs` / `TestUtils.reifyFeatureRefs` -> `reifyUsageRefs`. Concept/link
+IDs unchanged. Rationale: consistent with the `<X>DefinitionRef.definition` pattern; every feature in this
+language is a usage (widen the target if KerML library features are ever modelled). Older notes above
+still use the former names.
+
+**Iteration 18 (planned) — connection usage bodies via a part-like abstract base**: SysML v2 says a
+connection usage *is* a part usage (§7.13.1, §8.3.13.4), and bodies are needed to give a single
+connection its own features (`attribute :>> bandwidth = 100;`, extra attributes, `doc`, explicit
+`end part hub ::> mainSwitch;`, nested parts). Plan:
+- Introduce an abstract base (e.g. `SysMLv2PartLikeUsage`, extends `SysMLv2Usage`) holding what part and
+  connection usages share: body `content` (part/item body content), multiplicity, and making it an
+  `ISysMLv2FeatureOwner` so features declared in the body are in scope (chains, redefinition).
+  `SysMLv2PartUsage` and `SysMLv2ConnectionUsage` both extend it; keep `type` on the concrete concepts
+  (PartDefinitionRef vs ConnectionDefinitionRef). Concept/link IDs must stay stable for `content` moves
+  (check whether moving a link to the base needs a migration).
+- Editor: optional `{ ... }` body on connection usages (same body editor pattern as part usages).
+- Textgen: emit body; roundtrip `connect a to b { ... }` and `connection c : C connect a to b { ... }`.
+- Importer: stop rejecting non-empty connection usage bodies; visit body items like part usage bodies
+  (currently also rejected for part usages — decide whether to lift both).
+- Check first: whether attribute usages already support value assignment (`= 100`) and redefinition
+  (`:>> bandwidth`) in the importer, since connection bodies will typically use them.
+- Tests: importer import + roundtrip for a connection with body attributes and doc; editor test adding an
+  attribute inside a connection body.

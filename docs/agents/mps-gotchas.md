@@ -10,6 +10,46 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## Reference completion for list elements whose editor is just a ref cell (2026-10-19)
+
+Four traps when a child concept (e.g. `UsageRef` with link `usage`) whose whole editor is a reference
+cell is used as an element of a `RefNodeList` (e.g. a dotted feature chain `a.b.c`):
+
+1. **The list replaces the ref cell's substitute info.** The element's big cell gets an
+   `SChildSubstituteInfo`, so Complete only offers the concept itself ("UsageRef"), never the referents —
+   typed text stays unresolved. Fix: make the concept a **smart reference** (`SmartReferenceAttribute` on the
+   link in the structure); the child substitute menu then lists the referents.
+2. **Smart-reference completion asks for the scope before the node exists.** It goes through
+   `Scope.getScope(contextNode, containmentLink, position, kind)` → `ScopeProvider.getScope(kind, link, index)`
+   (default delegates to `getScope(kind, null)`, i.e. no position info). A referent scope written as
+   `Scope.getScope(referenceNode.parent, referenceNode, ...)` breaks here (the menu silently fell back to all
+   instances in the model). Write the constraint as `Scope.getScope(contextNode, containmentLink, position,
+   concept/X/)` and override `getScope(kind, link, index)` in the scope provider when the scope depends on the
+   position (e.g. chain step N depends on step N-1).
+3. **The inline target-name cell of a ref cell must be `read only`.** Otherwise typing into it (e.g. text
+   meant for the next cell) renames the *referenced* node.
+4. **Editor tests: a Complete after an auto-applied completion leaves the next cell's popup open**, and the
+   popup swallows following keys (TAB does nothing, typed text filters the popup). Typing a unique alias
+   (`connect`) already substitutes — don't Complete again; after `name` + Complete press ESC before TAB.
+
+Diagnosis technique that found all four: a temporary reflection probe in the editor test (`editorComponent`
+→ `getSelectedCell()`, `getSubstituteInfo().getMatchingActions(text, false)`, and the node's references),
+with temporary `java.lang`/`java.lang.reflect` stub imports removed afterwards (also revert the test module's
+`.msd`, which gains a JDK dependency).
+
+## Cloning a node via print_node JSON can flip unset boolean properties to their default (2026-10-19)
+
+`mps_mcp_print_node` omits properties that are *unset* on the source node. When such a printout is
+re-inserted as a blueprint (`insert_root_node_from_json` / `update_node ADD CHILD`), the new node
+gets the property's *default* instead — which is not the same as "unset" for every concept. Seen with
+`PunctuationLeftStyleClassItem`: the original part-def editor's `{` had `flag` unset (no
+punctuation), the clone came back with `flag=true`, so the cloned editor rendered `Shaft{` instead of
+`Shaft {`.
+
+**How to apply:** after cloning editor roots (style items in particular) compare the clone against
+the original with a deep print and explicitly set boolean properties that differ (`update_node SET
+PROPERTY`).
+
 ## Transformation menus: interface default menus are not inherited; in grammar-cells editors use `before`, not LEFT side transform as well (2026-10-19)
 
 Two traps when adding a left side transform (e.g. typing `#` in front of a keyword) for several
