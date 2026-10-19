@@ -118,15 +118,26 @@
   </registry>
   <node concept="1M2fIO" id="6coPuU3aqOE">
     <property role="3GE5qa" value="part.base" />
+    <property role="TrG5h" value="ICanBelongOnlyToSysMLv2PartOwner_Constraints" />
     <ref role="1M2myG" to="5rf1:6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartDefinition" />
     <node concept="9S07l" id="6coPuU3aqOF" role="9Vyp8">
       <node concept="3clFbS" id="6coPuU3aqOH" role="2VODD2">
         <node concept="3clFbF" id="6coPuU3bujT" role="3cqZAp">
-          <node concept="2OqwBi" id="6coPuU3bujV" role="3clFbG">
-            <node concept="nLn13" id="6coPuU3bujW" role="2Oq$k0" />
-            <node concept="1mIQ4w" id="6coPuU3bujX" role="2OqNvi">
-              <node concept="chp4Y" id="6coPuU3bujY" role="cj9EA">
-                <ref role="cht4Q" to="5rf1:3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
+          <node concept="22lmx$" id="3MUZSeFJC1O" role="3clFbG">
+            <node concept="2OqwBi" id="3MUZSeFJC1R" role="3uHU7B">
+              <node concept="nLn13" id="3MUZSeFJC1U" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="3MUZSeFJC1V" role="2OqNvi">
+                <node concept="chp4Y" id="3MUZSeFJC1X" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3MUZSeFJC1Y" role="3uHU7w">
+              <node concept="nLn13" id="3MUZSeFJC21" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="3MUZSeFJC22" role="2OqNvi">
+                <node concept="chp4Y" id="3MUZSeFJC24" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:3MUZSeFF9lf" resolve="SysMLv2PartLikeUsage" />
+                </node>
               </node>
             </node>
           </node>
