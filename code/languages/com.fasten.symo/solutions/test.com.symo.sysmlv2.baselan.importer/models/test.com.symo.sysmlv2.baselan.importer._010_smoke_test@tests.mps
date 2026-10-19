@@ -251,6 +251,12 @@
         <child id="7140692429570900092" name="specializes" index="3xZtmi" />
         <child id="7140692429570900093" name="content" index="3xZtmj" />
       </concept>
+      <concept id="6214786105881513288" name="com.symo.sysmlv2.baselan.structure.ISysMLv2PrefixMetadataOwner" flags="ngI" index="1y9Dp1">
+        <child id="6214786105881513290" name="prefixMetadata" index="1y9Dp3" />
+      </concept>
+      <concept id="6214786105881513287" name="com.symo.sysmlv2.baselan.structure.SysMLv2PrefixMetadata" flags="ng" index="1y9Dpe">
+        <child id="6214786105881513289" name="type" index="1y9Dp0" />
+      </concept>
       <concept id="6214786105868823569" name="com.symo.sysmlv2.baselan.structure.SysMLv2Comment" flags="ng" index="1_pRso">
         <property id="6214786105868823573" name="body" index="1_pRss" />
         <property id="6214786105868823575" name="bare" index="1_pRsu" />
@@ -7741,6 +7747,223 @@
           </node>
           <node concept="37vLTw" id="5oZmK$O67Kz" role="3tpDZA">
             <ref role="3cqZAo" node="5oZmK$O67Ko" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="5oZmK$P1sXD">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_180_PrefixMetadataTest" />
+    <node concept="1qefOq" id="5oZmK$P1sXE" role="1SKRRt">
+      <node concept="2h0jOr" id="5oZmK$P1sXG" role="1qenE9">
+        <property role="TrG5h" value="PrefixFile" />
+        <node concept="3Z9vzX" id="5oZmK$P1sXH" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="1_WVX2" id="5oZmK$P1sXI" role="3Z9vGx">
+            <property role="TrG5h" value="Safety" />
+          </node>
+          <node concept="1_WVX2" id="5oZmK$P1sXJ" role="3Z9vGx">
+            <property role="TrG5h" value="Approved" />
+          </node>
+          <node concept="3ZUotO" id="5oZmK$P1sXK" role="3Z9vGx">
+            <property role="TrG5h" value="Brake" />
+            <node concept="8EhU9" id="5oZmK$P1sXL" role="3w00ZY">
+              <property role="TrG5h" value="mass" />
+              <node concept="1y9Dpe" id="5oZmK$P1sXM" role="1y9Dp3">
+                <node concept="1_WVX5" id="5oZmK$P1sXO" role="1y9Dp0">
+                  <property role="1_WVXs" value="Approved" />
+                  <ref role="1_WVXv" node="5oZmK$P1sXJ" />
+                </node>
+              </node>
+            </node>
+            <node concept="3xZtmn" id="5oZmK$P1sXP" role="3w00ZY">
+              <property role="TrG5h" value="p" />
+              <node concept="3xZtmk" id="5oZmK$P1sXQ" role="3xZtlH" />
+              <node concept="1y9Dpe" id="5oZmK$P1sXR" role="1y9Dp3">
+                <node concept="1_WVX5" id="5oZmK$P1sXT" role="1y9Dp0">
+                  <property role="1_WVXs" value="Safety" />
+                  <ref role="1_WVXv" node="5oZmK$P1sXI" />
+                </node>
+              </node>
+            </node>
+            <node concept="8GF0z" id="5oZmK$P1sXU" role="3w00ZY">
+              <property role="TrG5h" value="pad" />
+              <node concept="1y9Dpe" id="5oZmK$P1sXV" role="1y9Dp3">
+                <node concept="1_WVX5" id="5oZmK$P1sXX" role="1y9Dp0">
+                  <property role="1_WVXs" value="Safety" />
+                  <ref role="1_WVXv" node="5oZmK$P1sXI" />
+                </node>
+              </node>
+              <node concept="1y9Dpe" id="5oZmK$P1sXY" role="1y9Dp3">
+                <node concept="1_WVX5" id="5oZmK$P1sY0" role="1y9Dp0">
+                  <property role="1_WVXs" value="Approved" />
+                  <ref role="1_WVXv" node="5oZmK$P1sXJ" />
+                </node>
+              </node>
+            </node>
+            <node concept="3w00Zz" id="5oZmK$P1sY1" role="3w00ZY">
+              <property role="TrG5h" value="fluid" />
+              <node concept="1y9Dpe" id="5oZmK$P1sY2" role="1y9Dp3">
+                <node concept="1_WVX5" id="5oZmK$P1sY4" role="1y9Dp0">
+                  <property role="1_WVXs" value="Approved" />
+                  <ref role="1_WVXv" node="5oZmK$P1sXJ" />
+                </node>
+              </node>
+            </node>
+            <node concept="1y9Dpe" id="5oZmK$P1sY5" role="1y9Dp3">
+              <node concept="1_WVX5" id="5oZmK$P1sY7" role="1y9Dp0">
+                <property role="1_WVXs" value="Safety" />
+                <ref role="1_WVXv" node="5oZmK$P1sXI" />
+              </node>
+            </node>
+          </node>
+          <node concept="8EhVW" id="5oZmK$P1sY8" role="3Z9vGx">
+            <property role="TrG5h" value="Mass" />
+            <node concept="1y9Dpe" id="5oZmK$P1sY9" role="1y9Dp3">
+              <node concept="1_WVX5" id="5oZmK$P1sYb" role="1y9Dp0">
+                <property role="1_WVXs" value="Approved" />
+                <ref role="1_WVXv" node="5oZmK$P1sXJ" />
+              </node>
+            </node>
+          </node>
+          <node concept="3xZtmp" id="5oZmK$P1sYc" role="3Z9vGx">
+            <property role="TrG5h" value="Pin" />
+            <node concept="1y9Dpe" id="5oZmK$P1sYd" role="1y9Dp3">
+              <node concept="1_WVX5" id="5oZmK$P1sYf" role="1y9Dp0">
+                <property role="1_WVXs" value="Safety" />
+                <ref role="1_WVXv" node="5oZmK$P1sXI" />
+              </node>
+            </node>
+          </node>
+          <node concept="3w00Z_" id="5oZmK$P1sYg" role="3Z9vGx">
+            <property role="TrG5h" value="Fuel" />
+            <node concept="1y9Dpe" id="5oZmK$P1sYh" role="1y9Dp3">
+              <node concept="1_WVX5" id="5oZmK$P1sYj" role="1y9Dp0">
+                <property role="1_WVXs" value="Approved" />
+                <ref role="1_WVXv" node="5oZmK$P1sXJ" />
+              </node>
+            </node>
+          </node>
+          <node concept="1_WVX2" id="5oZmK$P1sYk" role="3Z9vGx">
+            <property role="TrG5h" value="Tagged" />
+            <node concept="1y9Dpe" id="5oZmK$P1sYl" role="1y9Dp3">
+              <node concept="1_WVX5" id="5oZmK$P1sYn" role="1y9Dp0">
+                <property role="1_WVXs" value="Safety" />
+                <ref role="1_WVXv" node="5oZmK$P1sXI" />
+              </node>
+            </node>
+          </node>
+          <node concept="3Z9vzX" id="5oZmK$P1sYo" role="3Z9vGx">
+            <property role="TrG5h" value="Q" />
+            <node concept="1y9Dpe" id="5oZmK$P1sYp" role="1y9Dp3">
+              <node concept="1_WVX5" id="5oZmK$P1sYr" role="1y9Dp0">
+                <property role="1_WVXs" value="Approved" />
+                <ref role="1_WVXv" node="5oZmK$P1sXJ" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3xLA65" id="5oZmK$P1sYs" role="lGtFl">
+          <property role="TrG5h" value="prefix_file" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5oZmK$P1sYt" role="1SL9yI">
+      <property role="TrG5h" value="testImportPrefixMetadata" />
+      <node concept="3cqZAl" id="5oZmK$P1sYw" role="3clF45" />
+      <node concept="3clFbS" id="5oZmK$P1sYx" role="3clF47">
+        <node concept="3cpWs8" id="5oZmK$P1sYy" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$P1sY_" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="5oZmK$P1sYB" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="Xl_RD" id="5oZmK$P1sYC" role="37wK5m">
+                <property role="Xl_RC" value="package P {&#10;  metadata def Safety {&#10;  }&#10;  metadata def Approved {&#10;  }&#10;  #Safety part def Brake {&#10;    #Approved attribute mass;&#10;    in #Safety port p;&#10;    #Safety #Approved part pad;&#10;    #Approved item fluid;&#10;  }&#10;  #Approved attribute def Mass {&#10;  }&#10;  #Safety port def Pin {&#10;  }&#10;  #Approved item def Fuel {&#10;  }&#10;  #Safety metadata def Tagged {&#10;  }&#10;  #Approved package Q {&#10;  }&#10;}&#10;" />
+              </node>
+              <node concept="Xl_RD" id="5oZmK$P1sYD" role="37wK5m">
+                <property role="Xl_RC" value="PrefixFile" />
+              </node>
+              <node concept="1jxXqW" id="5oZmK$P1sYE" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="5oZmK$P1sYF" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$P1sYG" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$P1sYI" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="5oZmK$O67Gn" resolve="reifyMetadataDefinitionRefs" />
+            <node concept="37vLTw" id="5oZmK$P1sYJ" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$P1sY_" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$P1sYK" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$P1sYL" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$P1sYN" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="5oZmK$P1sYO" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$P1sY_" resolve="tmp" />
+            </node>
+            <node concept="3xONca" id="5oZmK$P1sYP" role="37wK5m">
+              <ref role="3xOPvv" node="5oZmK$P1sYs" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$P1sYQ" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5oZmK$P1sYR" role="3cqZAp">
+          <node concept="2YIFZM" id="5oZmK$P1sYT" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="5oZmK$P1sYU" role="37wK5m">
+              <ref role="3cqZAo" node="5oZmK$P1sY_" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="5oZmK$P1sYV" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5oZmK$P1sYW" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripPrefixMetadata" />
+      <node concept="3cqZAl" id="5oZmK$P1sYZ" role="3clF45" />
+      <node concept="3clFbS" id="5oZmK$P1sZ0" role="3clF47">
+        <node concept="3cpWs8" id="5oZmK$P1sZ1" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$P1sZ4" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <node concept="Xl_RD" id="5oZmK$P1sZ6" role="33vP2m">
+              <property role="Xl_RC" value="package P {&#10;  metadata def Safety {&#10;  }&#10;  metadata def Approved {&#10;  }&#10;  #Safety part def Brake {&#10;    #Approved attribute mass;&#10;    in #Safety port p;&#10;    #Safety #Approved part pad;&#10;    #Approved item fluid;&#10;  }&#10;  #Approved attribute def Mass {&#10;  }&#10;  #Safety port def Pin {&#10;  }&#10;  #Approved item def Fuel {&#10;  }&#10;  #Safety metadata def Tagged {&#10;  }&#10;  #Approved package Q {&#10;  }&#10;}&#10;" />
+            </node>
+            <node concept="17QB3L" id="5oZmK$P1sZ7" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5oZmK$P1sZ8" role="3cqZAp">
+          <node concept="3cpWsn" id="5oZmK$P1sZb" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <node concept="2YIFZM" id="5oZmK$P1sZd" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="5oZmK$P1sZe" role="37wK5m">
+                <ref role="3cqZAo" node="5oZmK$P1sZ4" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="5oZmK$P1sZf" role="37wK5m">
+                <property role="Xl_RC" value="PrefixFile" />
+              </node>
+              <node concept="1jxXqW" id="5oZmK$P1sZg" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="5oZmK$P1sZh" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="5oZmK$P1sZi" role="3cqZAp">
+          <node concept="37vLTw" id="5oZmK$P1sZl" role="3tpDZB">
+            <ref role="3cqZAo" node="5oZmK$P1sZ4" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="5oZmK$P1sZm" role="3tpDZA">
+            <ref role="3cqZAo" node="5oZmK$P1sZb" resolve="generateText" />
           </node>
         </node>
       </node>

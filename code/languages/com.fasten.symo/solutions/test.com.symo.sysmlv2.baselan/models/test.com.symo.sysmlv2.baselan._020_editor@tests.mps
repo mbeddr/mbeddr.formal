@@ -7,7 +7,6 @@
     <use id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan" version="0" />
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
-    <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
   </languages>
   <imports />
   <registry>
@@ -93,6 +92,12 @@
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
         <child id="7140692429570900092" name="specializes" index="3xZtmi" />
+      </concept>
+      <concept id="6214786105881513288" name="com.symo.sysmlv2.baselan.structure.ISysMLv2PrefixMetadataOwner" flags="ngI" index="1y9Dp1">
+        <child id="6214786105881513290" name="prefixMetadata" index="1y9Dp3" />
+      </concept>
+      <concept id="6214786105881513287" name="com.symo.sysmlv2.baselan.structure.SysMLv2PrefixMetadata" flags="ng" index="1y9Dpe">
+        <child id="6214786105881513289" name="type" index="1y9Dp0" />
       </concept>
       <concept id="6214786105868823569" name="com.symo.sysmlv2.baselan.structure.SysMLv2Comment" flags="ng" index="1_pRso">
         <property id="6214786105868823573" name="body" index="1_pRss" />
@@ -1171,6 +1176,81 @@
       </node>
       <node concept="yd1bK" id="5oZmK$O6q_X" role="3cqZAp">
         <node concept="pLAjd" id="5oZmK$O6q_Z" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="BOR0Mn0ASG">
+    <property role="3YCmrE" value="typing # in front of part def adds a prefix metadata" />
+    <property role="TrG5h" value="_090_Metadata_PrefixOnPartDef" />
+    <node concept="1qefOq" id="BOR0Mn0ASH" role="25YQCW">
+      <node concept="2h0jOr" id="BOR0Mn0ASJ" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="BOR0Mn0ASK" role="2h0jOs">
+          <property role="TrG5h" value="pack_091" />
+          <node concept="1_WVX2" id="BOR0Mn0ASL" role="3Z9vGx">
+            <property role="TrG5h" value="Safety" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="BOR0Mn0ASM" role="2h0jOs" />
+        <node concept="3ZUotO" id="BOR0Mn0ASN" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2h0jOo" id="BOR0Mn0ASO" role="3w00ZY" />
+          <node concept="LIFWc" id="BOR0Mn0ASP" role="lGtFl">
+            <property role="LIFWd" value="Constant_lnfqz3_b0a" />
+            <property role="ZRATv" value="false" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+            <property role="LIFWa" value="0" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="BOR0Mn0ASQ" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="BOR0Mn0ASR" role="25YQFr">
+      <node concept="2h0jOr" id="BOR0Mn0AST" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="BOR0Mn0ASU" role="2h0jOs">
+          <property role="TrG5h" value="pack_091" />
+          <node concept="1_WVX2" id="BOR0Mn0ASV" role="3Z9vGx">
+            <property role="TrG5h" value="Safety" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="BOR0Mn0ASW" role="2h0jOs" />
+        <node concept="3ZUotO" id="BOR0Mn0ASX" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2h0jOo" id="BOR0Mn0ASY" role="3w00ZY" />
+          <node concept="1y9Dpe" id="BOR0Mn0ASZ" role="1y9Dp3">
+            <node concept="1_WVX5" id="BOR0Mn0AT1" role="1y9Dp0">
+              <ref role="gQIM1" node="BOR0Mn0ASU" />
+              <ref role="1_WVXv" node="BOR0Mn0ASV" />
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="BOR0Mn0AT2" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="BOR0Mn0AT3" role="LjaKd">
+      <node concept="2TK7Tu" id="BOR0Mn0AT4" role="3cqZAp">
+        <property role="2TTd_B" value="#" />
+      </node>
+      <node concept="2HxZob" id="BOR0Mn0GpL" role="3cqZAp">
+        <node concept="3iKlGA" id="BOR0Mn0GpN" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="BOR0Mn0AT5" role="3cqZAp">
+        <property role="2TTd_B" value="pack_091::Safety" />
+      </node>
+      <node concept="2HxZob" id="BOR0Mn0AT6" role="3cqZAp">
+        <node concept="3iKlGA" id="BOR0Mn0AT8" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="BOR0Mn0AT9" role="3cqZAp">
+        <node concept="pLAjd" id="BOR0Mn0ATb" role="yd6KS">
           <property role="pLAjf" value="VK_ENTER" />
         </node>
       </node>

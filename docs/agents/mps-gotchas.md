@@ -10,6 +10,36 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## Transformation menus: interface default menus are not inherited; in grammar-cells editors use `before`, not LEFT side transform as well (2026-10-19)
+
+Two traps when adding a left side transform (e.g. typing `#` in front of a keyword) for several
+concepts that share an interface:
+
+1. A contribution to the **default menu of an interface concept** is not reached from the
+   implementing concepts' default menus (the implicit default menu follows the superconcept chain,
+   not implemented interfaces). Put the items into a **named** menu for the interface and include it
+   from a small contribution to each concrete concept's default menu.
+2. In editors built with grammar cells, `before`/`after` contributions are already folded into the
+   left/right side transform. A section that offers the same action at both the grammar-cells
+   `before` location and the standard `side transform: left` location shows the item twice, so
+   Complete cannot pick it and the typed text stays in the side-transform hint cell
+   (`EditorCell_STHint`, node gets a `SideTransformInfo` attribute). Use only `before` (and put two
+   side-transform locations in one section and the generator even emits a duplicate interface).
+
+**How to apply:** for grammar-cells editors use a single `before` section; if an editor test leaves a
+`SideTransformInfo` attribute behind, the transform matched zero or several items.
+
+## Grammar cells: an editor component whose root is an `OptionalCell` breaks grammar-cell editors (2026-10-19)
+
+Including (`CellModel_Component`) an editor component whose root cell is a grammar-cells `OptionalCell`
+into editors that themselves use grammar cells makes generation fail with "Cell has multiple
+children, but only one is expected" (one error per include, reported against a generated
+`CellModel_CustomFactory`).
+
+**How to apply:** give shared editor components a plain cell as root — e.g. a `CellModel_RefNodeList`
+with a `renderingCondition` such as `node.list.isNotEmpty` — or inline the `OptionalCell` into each
+editor instead of sharing it through a component.
+
 ## Editor: after code completion the caret goes to the first editable cell; `attractsFocus` is ignored (2026-10-18)
 
 After a node is created by completion (typing an alias + Complete_Action, for example on an empty

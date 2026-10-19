@@ -1026,3 +1026,33 @@ dispatches `metadataDefinition`; `visitAnnotatingElement` dispatches `metadataFe
 Not done: `#` prefix metadata, `:>>`/`redefines` spelling in value entries (normalized to `name =`),
 empty `{ }` body (printed as `;`), `typed by` spelling (printed as `:`), metadata def prefixes
 (`abstract`, extension keywords), non-literal values, semantic metadata.
+
+**Iteration 16 (2026-10-19) — prefix metadata (`#Type`)**: `prefixMetadataMember : HASH
+prefixMetadataFeature | HASH prefixMetadataUsage` in front of packages (`prefixMetadataMember*`),
+definitions (`definitionExtensionKeyword*`) and usages (`usageExtensionKeyword*`). New concept
+`SysMLv2PrefixMetadata` (child `type : SysMLv2MetadataDefinitionRef`, editor `#` + type, textgen
+`#Type `) and interface `ISysMLv2PrefixMetadataOwner` (child list `prefixMetadata`), implemented by
+`SysMLv2Package`, `SysMLv2ItemDefinition` (so also part def), `SysMLv2AttributeDefinition`,
+`SysMLv2PortDefinition`, `SysMLv2MetadataDefinition` and `SysMLv2Usage` (all four usages). Editors
+include the shared component `ISysMLv2PrefixMetadataOwner_PrefixMetadata` (a list shown only when
+non-empty) before the keyword (after the direction for attribute/port/item usages); textgens emit the
+list at the same place. Importer: `extractPrefixMetadataNames` (works for both extension-keyword
+contexts and `prefixMetadataMember`) + `addPrefixMetadata`; the prefix checks of the ten visit methods
+no longer reject `#` but still reject `abstract`/`variation`/`individual`/portion kinds etc. Prefix
+types are resolved by `reifyMetadataDefinitionRefs`. Tests: importer `_180_PrefixMetadataTest`
+(import with reification + roundtrip covering package, all definition kinds, all usage kinds,
+multiple prefixes, prefix after direction). Not done: adding a `#` prefix from the editor (the list is
+hidden while empty, so there is no place to type it yet — needs an intention or a left side transform
+on the keyword), `#` on metadata usages (`#X @Y`), prefix metadata on comment/doc/rep, `#` on
+enumeration/occurrence elements (not in this subset).
+
+**Iteration 16b (2026-10-19) — adding `#` prefix metadata from the editor**: typing `#` at the left
+edge of an owner's keyword (e.g. `|part def Car`) and completing inserts a new `SysMLv2PrefixMetadata`
+at the front of `prefixMetadata` and puts the caret into its type cell. Implemented as one named
+transformation menu `ISysMLv2PrefixMetadataOwner_PrefixMetadataMenu` (named `PrefixMetadata`, section at
+the grammar-cells `before` location, action text `#`, execute: `addFirst` + `selectWRTFocusPolicy`),
+included from small `<Concept>_PrefixMetadataContribution` contributions to the default menus of the ten
+owner concepts (package, part/item/attribute/port/metadata def, part/attribute/port/item usage). The
+user's legacy cell-menu attempt on the `attribute def` keyword was replaced (and its cell-menu
+component removed). Test: editor `_090_Metadata_PrefixOnPartDef`
+(caret at start of `part def`, type `#`, Complete, type `pack::Safety`, Complete, Enter).

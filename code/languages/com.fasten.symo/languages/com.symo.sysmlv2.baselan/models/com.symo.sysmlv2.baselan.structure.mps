@@ -133,6 +133,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
+    <node concept="PrWs8" id="5oZmK$O6ufM" role="PzmwI">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3PUPjB2ukTG">
     <property role="EcuMT" value="4430087627524886124" />
@@ -258,6 +261,9 @@
     </node>
     <node concept="PrWs8" id="4N4m7hrYNh4" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$O6ufS" role="PzmwI">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNmmWV">
@@ -412,6 +418,9 @@
     <node concept="PrWs8" id="4N4m7hrYNh7" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
     </node>
+    <node concept="PrWs8" id="5oZmK$O6ufP" role="PzmwI">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU2Tg1S">
     <property role="EcuMT" value="7140692429570900088" />
@@ -530,6 +539,9 @@
     <node concept="PrWs8" id="4N4m7hrYNh1" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
     </node>
+    <node concept="PrWs8" id="5oZmK$O6ufV" role="PzmwI">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU36dCc">
     <property role="EcuMT" value="7140692429574298124" />
@@ -630,6 +642,9 @@
     </node>
     <node concept="PrWs8" id="4N4m7hrYNha" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="PrWs8" id="5oZmK$O6ug1" role="PzmwI">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
     </node>
   </node>
   <node concept="1TIwiD" id="6coPuU3buux">
@@ -864,6 +879,9 @@
     <node concept="PrWs8" id="5oZmK$NNehk" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
     </node>
+    <node concept="PrWs8" id="5oZmK$O6ufY" role="PzmwI">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5oZmK$NNehc">
     <property role="EcuMT" value="6214786105876472908" />
@@ -973,6 +991,33 @@
       <property role="IQ2nx" value="6214786105876472933" />
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5oZmK$O6sP7">
+    <property role="EcuMT" value="6214786105881513287" />
+    <property role="TrG5h" value="SysMLv2PrefixMetadata" />
+    <property role="R4oN_" value="prefix metadata: #Type in front of a package, definition or usage" />
+    <property role="3GE5qa" value="metadata" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="5oZmK$O6sP9" role="1TKVEi">
+      <property role="IQ2ns" value="6214786105881513289" />
+      <property role="20kJfa" value="type" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="5oZmK$NNehc" resolve="SysMLv2MetadataDefinitionRef" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="5oZmK$O6sP8">
+    <property role="EcuMT" value="6214786105881513288" />
+    <property role="TrG5h" value="ISysMLv2PrefixMetadataOwner" />
+    <property role="R4oN_" value="element that can carry #prefix metadata" />
+    <property role="3GE5qa" value="metadata" />
+    <node concept="1TJgyj" id="5oZmK$O6sPa" role="1TKVEi">
+      <property role="IQ2ns" value="6214786105881513290" />
+      <property role="20kJfa" value="prefixMetadata" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5oZmK$O6sP7" resolve="SysMLv2PrefixMetadata" />
     </node>
   </node>
 </model>

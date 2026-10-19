@@ -20,6 +20,7 @@
     <import index="5rf1" ref="r:46502bdd-1e0c-47cf-8eed-483f76d95b20(com.symo.sysmlv2.baselan.structure)" />
     <import index="5wt7" ref="r:340302a6-5c40-4ce4-b492-437d8a67da64(com.symo.sysmlv2.baselan.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
+    <import index="cj4x" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/java:jetbrains.mps.openapi.editor(MPS.Editor/)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -27,6 +28,7 @@
     </language>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1402906326896143883" name="jetbrains.mps.lang.editor.structure.CellKeyMap_FunctionParm_selectedNode" flags="nn" index="0GJ7k" />
+      <concept id="5991739802479784074" name="jetbrains.mps.lang.editor.structure.MenuTypeNamed" flags="ng" index="22hDWg" />
       <concept id="5991739802479784073" name="jetbrains.mps.lang.editor.structure.MenuTypeDefault" flags="ng" index="22hDWj" />
       <concept id="2000375450116423800" name="jetbrains.mps.lang.editor.structure.SubstituteMenu" flags="ng" index="22mcaB" />
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi">
@@ -45,6 +47,9 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="784421273959492578" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_IncludeMenu" flags="ng" index="mvV$s">
+        <child id="6718020819487784677" name="menuReference" index="A14EM" />
+      </concept>
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -53,6 +58,9 @@
         <child id="1080736633877" name="cellModel" index="2wV5jI" />
       </concept>
       <concept id="6718020819487620876" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Default" flags="ng" index="A1WHr" />
+      <concept id="6718020819487620873" name="jetbrains.mps.lang.editor.structure.TransformationMenuReference_Named" flags="ng" index="A1WHu">
+        <reference id="6718020819487620874" name="menu" index="A1WHt" />
+      </concept>
       <concept id="1638911550608610798" name="jetbrains.mps.lang.editor.structure.QueryFunction_TransformationMenu_Execute" flags="ig" index="IWg2L" />
       <concept id="1638911550608610278" name="jetbrains.mps.lang.editor.structure.TransformationMenuPart_Action" flags="ng" index="IWgqT">
         <child id="1638911550608610281" name="executeFunction" index="IWgqQ" />
@@ -128,9 +136,13 @@
       <concept id="5624877018228267058" name="jetbrains.mps.lang.editor.structure.ITransformationMenu" flags="ngI" index="3INCJE">
         <child id="1638911550608572412" name="sections" index="IW6Ez" />
       </concept>
+      <concept id="5624877018228264944" name="jetbrains.mps.lang.editor.structure.TransformationMenuContribution" flags="ng" index="3INDKC">
+        <child id="6718020819489956031" name="menuReference" index="AmTjC" />
+      </concept>
       <concept id="6918029743850363446" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_sourceNode" flags="ng" index="1NM5Pg" />
       <concept id="6918029743850363447" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_targetNode" flags="ng" index="1NM5Ph" />
       <concept id="6918029743850308467" name="jetbrains.mps.lang.editor.structure.QueryFunction_RefPresentation" flags="ig" index="1NMggl" />
+      <concept id="1161622981231" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_editorContext" flags="nn" index="1Q80Hx" />
       <concept id="1088612959204" name="jetbrains.mps.lang.editor.structure.CellModel_Alternation" flags="sg" stub="8104358048506729361" index="1QoScp">
         <property id="1088613081987" name="vertical" index="1QpmdY" />
         <child id="1145918517974" name="alternationCondition" index="3e4ffs" />
@@ -160,6 +172,9 @@
         <child id="1197027771414" name="operand" index="2Oq$k0" />
         <child id="1197027833540" name="operation" index="2OqNvi" />
       </concept>
+      <concept id="1145552977093" name="jetbrains.mps.baseLanguage.structure.GenericNewExpression" flags="nn" index="2ShNRf">
+        <child id="1145553007750" name="creator" index="2ShVmc" />
+      </concept>
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
@@ -167,8 +182,17 @@
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
+        <child id="1068431790190" name="initializer" index="33vP2m" />
+      </concept>
+      <concept id="1068498886296" name="jetbrains.mps.baseLanguage.structure.VariableReference" flags="nn" index="37vLTw">
+        <reference id="1068581517664" name="variableDeclaration" index="3cqZAo" />
+      </concept>
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271369338" name="jetbrains.mps.baseLanguage.structure.IsEmptyOperation" flags="nn" index="17RlXB" />
+      <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
+        <child id="5680397130376446158" name="type" index="1tU5fm" />
+      </concept>
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
@@ -181,6 +205,10 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
+        <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
+      </concept>
+      <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
         <child id="1079359253376" name="expression" index="1eOMHV" />
       </concept>
@@ -204,6 +232,7 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="1997572252229165641" name="com.mbeddr.mpsutil.grammarcells.structure.TransformationLocation_Before" flags="ng" index="wWMWC" />
       <concept id="1997572252229165700" name="com.mbeddr.mpsutil.grammarcells.structure.TransformationLocation_After" flags="ng" index="wWMZ_" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
@@ -229,7 +258,13 @@
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
+      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
+        <child id="1180636770616" name="createdType" index="3zrR0E" />
+      </concept>
       <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
+      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
+        <reference id="1138405853777" name="concept" index="ehGHo" />
+      </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
       </concept>
@@ -242,6 +277,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1156234966388" name="shortDescription" index="OYnhT" />
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
@@ -252,7 +288,12 @@
       <concept id="8006371471054135775" name="de.slisson.mps.editor.multiline.structure.CellModel_Multiline" flags="sg" stub="8664183491941389655" index="2v7bAL" />
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="540871147943773365" name="jetbrains.mps.baseLanguage.collections.structure.SingleArgumentSequenceOperation" flags="nn" index="25WWJ4">
+        <child id="540871147943773366" name="argument" index="25WWJ7" />
+      </concept>
+      <concept id="1227022159410" name="jetbrains.mps.baseLanguage.collections.structure.AddFirstElementOperation" flags="nn" index="2Ke4WJ" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="24kQdi" id="5PDtixSTMTb">
@@ -285,6 +326,9 @@
     <ref role="1XX52x" to="5rf1:3PUPjB2nMR4" resolve="SysMLv2Package" />
     <node concept="3EZMnI" id="3PUPjB2nVUz" role="2wV5jI">
       <node concept="l2Vlx" id="3PUPjB2nVU$" role="2iSdaV" />
+      <node concept="PMmxH" id="5oZmK$O8rSC" role="3EZMnx">
+        <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
+      </node>
       <node concept="3F0ifn" id="3PUPjB2nVU_" role="3EZMnx">
         <property role="3F0ifm" value="package" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
@@ -351,6 +395,9 @@
     <ref role="1XX52x" to="5rf1:3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
     <node concept="3EZMnI" id="3PUPjB2$T70" role="2wV5jI">
       <node concept="l2Vlx" id="3PUPjB2$T71" role="2iSdaV" />
+      <node concept="PMmxH" id="5oZmK$O8rSF" role="3EZMnx">
+        <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
+      </node>
       <node concept="3F0ifn" id="3PUPjB2$T72" role="3EZMnx">
         <property role="3F0ifm" value="part def" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
@@ -412,6 +459,9 @@
     <ref role="1XX52x" to="5rf1:7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
     <node concept="3EZMnI" id="7JKstLNgOTM" role="2wV5jI">
       <node concept="l2Vlx" id="7JKstLNgOTN" role="2iSdaV" />
+      <node concept="PMmxH" id="5oZmK$O8rSU" role="3EZMnx">
+        <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
+      </node>
       <node concept="3F0ifn" id="7JKstLNgOTO" role="3EZMnx">
         <property role="3F0ifm" value="part" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
@@ -624,6 +674,9 @@
     <property role="3GE5qa" value="part.attribute" />
     <ref role="1XX52x" to="5rf1:7JKstLNmmWw" resolve="SysMLv2AttributeDefinition" />
     <node concept="3EZMnI" id="2d_6cEDEfJL" role="2wV5jI">
+      <node concept="PMmxH" id="5oZmK$O8rSL" role="3EZMnx">
+        <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
+      </node>
       <node concept="3F0ifn" id="2d_6cEDEfJM" role="3EZMnx">
         <property role="3F0ifm" value="attribute def" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
@@ -689,6 +742,9 @@
         <node concept="3F1sOY" id="6coPuU2TGom" role="_tjki">
           <ref role="1NtTu8" to="5rf1:6coPuU2TgRm" resolve="direction" />
         </node>
+      </node>
+      <node concept="PMmxH" id="5oZmK$O8rSX" role="3EZMnx">
+        <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
       </node>
       <node concept="3F0ifn" id="2d_6cEDEfL9" role="3EZMnx">
         <property role="3F0ifm" value="attribute" />
@@ -1103,6 +1159,9 @@
     <property role="3GE5qa" value="part.port" />
     <ref role="1XX52x" to="5rf1:6coPuU2Tg1R" resolve="SysMLv2PortDefinition" />
     <node concept="3EZMnI" id="6coPuU2TFS1" role="2wV5jI">
+      <node concept="PMmxH" id="5oZmK$O8rSO" role="3EZMnx">
+        <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
+      </node>
       <node concept="3F0ifn" id="6coPuU2TFS2" role="3EZMnx">
         <property role="3F0ifm" value="port def" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
@@ -1167,6 +1226,9 @@
         <node concept="3F1sOY" id="6coPuU2TGnW" role="_tjki">
           <ref role="1NtTu8" to="5rf1:6coPuU2Tg23" resolve="direction" />
         </node>
+      </node>
+      <node concept="PMmxH" id="5oZmK$O8rT0" role="3EZMnx">
+        <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
       </node>
       <node concept="3F0ifn" id="6coPuU2TGa5" role="3EZMnx">
         <property role="3F0ifm" value="port" />
@@ -1492,6 +1554,9 @@
     <property role="TrG5h" value="SysMLv2ItemDefinition_Editor" />
     <ref role="1XX52x" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
     <node concept="3EZMnI" id="6coPuU36OF6" role="2wV5jI">
+      <node concept="PMmxH" id="5oZmK$O8rSI" role="3EZMnx">
+        <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
+      </node>
       <node concept="3F0ifn" id="6coPuU36OF7" role="3EZMnx">
         <property role="3F0ifm" value="item def" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
@@ -1556,6 +1621,9 @@
         <node concept="3F1sOY" id="6coPuU36OFM" role="_tjki">
           <ref role="1NtTu8" to="5rf1:6coPuU36dCl" resolve="direction" />
         </node>
+      </node>
+      <node concept="PMmxH" id="5oZmK$O8rT3" role="3EZMnx">
+        <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
       </node>
       <node concept="3F0ifn" id="6coPuU36OG0" role="3EZMnx">
         <property role="3F0ifm" value="item" />
@@ -2346,6 +2414,9 @@
     <property role="TrG5h" value="SysMLv2MetadataDefinition_Editor" />
     <ref role="1XX52x" to="5rf1:5oZmK$NNehb" resolve="SysMLv2MetadataDefinition" />
     <node concept="3EZMnI" id="5oZmK$NNfCM" role="2wV5jI">
+      <node concept="PMmxH" id="5oZmK$O8rSR" role="3EZMnx">
+        <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
+      </node>
       <node concept="3F0ifn" id="5oZmK$NNfCN" role="3EZMnx">
         <property role="3F0ifm" value="metadata def" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
@@ -2708,6 +2779,265 @@
         </node>
       </node>
       <node concept="l2Vlx" id="5oZmK$NPe5i" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5oZmK$O8rSn">
+    <property role="3GE5qa" value="metadata" />
+    <property role="TrG5h" value="SysMLv2PrefixMetadata_Editor" />
+    <ref role="1XX52x" to="5rf1:5oZmK$O6sP7" resolve="SysMLv2PrefixMetadata" />
+    <node concept="3EZMnI" id="5oZmK$O8rSp" role="2wV5jI">
+      <node concept="3F0ifn" id="5oZmK$O8rSq" role="3EZMnx">
+        <property role="3F0ifm" value="#" />
+        <node concept="11LMrY" id="5oZmK$O8rSr" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="5oZmK$O8rSs" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:5oZmK$O6sP9" resolve="type" />
+      </node>
+      <node concept="l2Vlx" id="5oZmK$O8rSt" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="PKFIW" id="5oZmK$O8rSw">
+    <property role="TrG5h" value="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
+    <property role="3GE5qa" value="metadata" />
+    <ref role="1XX52x" to="5rf1:5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
+    <node concept="3F2HdR" id="5oZmK$O966n" role="2wV5jI">
+      <ref role="1NtTu8" to="5rf1:5oZmK$O6sPa" resolve="prefixMetadata" />
+      <node concept="l2Vlx" id="5oZmK$O966o" role="2czzBx" />
+      <node concept="pkWqt" id="5oZmK$O966p" role="pqm2j">
+        <node concept="3clFbS" id="5oZmK$O966r" role="2VODD2">
+          <node concept="3cpWs6" id="5oZmK$O966s" role="3cqZAp">
+            <node concept="2OqwBi" id="5oZmK$O966t" role="3cqZAk">
+              <node concept="2OqwBi" id="5oZmK$O966w" role="2Oq$k0">
+                <node concept="pncrf" id="5oZmK$O966z" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="5oZmK$O966$" role="2OqNvi">
+                  <ref role="3TtcxE" to="5rf1:5oZmK$O6sPa" resolve="prefixMetadata" />
+                </node>
+              </node>
+              <node concept="3GX2aA" id="5oZmK$O966_" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3ICUPy" id="BOR0Mn0IWN">
+    <property role="TrG5h" value="ISysMLv2PrefixMetadataOwner_PrefixMetadataMenu" />
+    <property role="3GE5qa" value="metadata" />
+    <ref role="aqKnT" to="5rf1:5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
+    <node concept="22hDWg" id="BOR0Mn32_I" role="22hAXT">
+      <property role="TrG5h" value="AddPrefixMetadata" />
+    </node>
+    <node concept="1Qtc8_" id="BOR0Mn32_J" role="IW6Ez">
+      <node concept="wWMWC" id="BOR0Mn32_L" role="1Qtc8$" />
+      <node concept="IWgqT" id="BOR0Mn32_M" role="1Qtc8A">
+        <node concept="1hCUdq" id="BOR0Mn32_R" role="1hCUd6">
+          <node concept="3clFbS" id="BOR0Mn32_T" role="2VODD2">
+            <node concept="3clFbF" id="BOR0Mn32_U" role="3cqZAp">
+              <node concept="Xl_RD" id="BOR0Mn32_W" role="3clFbG">
+                <property role="Xl_RC" value="#" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="IWg2L" id="BOR0Mn32_X" role="IWgqQ">
+          <node concept="3clFbS" id="BOR0Mn32_Z" role="2VODD2">
+            <node concept="3cpWs8" id="BOR0Mn32A0" role="3cqZAp">
+              <node concept="3cpWsn" id="BOR0Mn32A3" role="3cpWs9">
+                <property role="OYnhT" value="local variable" />
+                <property role="TrG5h" value="pm" />
+                <node concept="2ShNRf" id="BOR0Mn32A5" role="33vP2m">
+                  <node concept="3zrR0B" id="BOR0Mn32A7" role="2ShVmc">
+                    <node concept="3Tqbb2" id="BOR0Mn32A9" role="3zrR0E">
+                      <ref role="ehGHo" to="5rf1:5oZmK$O6sP7" resolve="SysMLv2PrefixMetadata" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3Tqbb2" id="BOR0Mn32Aa" role="1tU5fm">
+                  <ref role="ehGHo" to="5rf1:5oZmK$O6sP7" resolve="SysMLv2PrefixMetadata" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="BOR0Mn32Ab" role="3cqZAp">
+              <node concept="2OqwBi" id="BOR0Mn32Ad" role="3clFbG">
+                <node concept="2OqwBi" id="BOR0Mn32Ag" role="2Oq$k0">
+                  <node concept="7Obwk" id="BOR0Mn32Aj" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="BOR0Mn32Ak" role="2OqNvi">
+                    <ref role="3TtcxE" to="5rf1:5oZmK$O6sPa" resolve="prefixMetadata" />
+                  </node>
+                </node>
+                <node concept="2Ke4WJ" id="BOR0Mn32Al" role="2OqNvi">
+                  <node concept="37vLTw" id="BOR0Mn32An" role="25WWJ7">
+                    <ref role="3cqZAo" node="BOR0Mn32A3" resolve="pm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="BOR0Mn32Ao" role="3cqZAp">
+              <node concept="2OqwBi" id="BOR0Mn32Aq" role="3clFbG">
+                <node concept="1Q80Hx" id="BOR0Mn32At" role="2Oq$k0" />
+                <node concept="liA8E" id="BOR0Mn32Au" role="2OqNvi">
+                  <ref role="37wK5l" to="cj4x:~EditorContext.selectWRTFocusPolicy(org.jetbrains.mps.openapi.model.SNode)" resolve="selectWRTFocusPolicy" />
+                  <node concept="37vLTw" id="BOR0Mn32Av" role="37wK5m">
+                    <ref role="3cqZAo" node="BOR0Mn32A3" resolve="pm" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3INDKC" id="BOR0Mn0Jqs">
+    <property role="TrG5h" value="SysMLv2Package_PrefixMetadataContribution" />
+    <property role="3GE5qa" value="package" />
+    <node concept="A1WHr" id="BOR0Mn32Dc" role="AmTjC">
+      <ref role="2ZyFGn" to="5rf1:3PUPjB2nMR4" resolve="SysMLv2Package" />
+    </node>
+    <node concept="1Qtc8_" id="BOR0Mn32Dd" role="IW6Ez">
+      <node concept="wWMWC" id="BOR0Mn32Df" role="1Qtc8$" />
+      <node concept="mvV$s" id="BOR0Mn32Dg" role="1Qtc8A">
+        <node concept="A1WHu" id="BOR0Mn32Dh" role="A14EM">
+          <ref role="A1WHt" node="BOR0Mn0IWN" resolve="AddPrefixMetadata" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3INDKC" id="BOR0Mn0JqF">
+    <property role="TrG5h" value="SysMLv2PartDefinition_PrefixMetadataContribution" />
+    <property role="3GE5qa" value="part" />
+    <node concept="A1WHr" id="BOR0Mn32Dk" role="AmTjC">
+      <ref role="2ZyFGn" to="5rf1:3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
+    </node>
+    <node concept="1Qtc8_" id="BOR0Mn32Dl" role="IW6Ez">
+      <node concept="wWMWC" id="BOR0Mn32Dn" role="1Qtc8$" />
+      <node concept="mvV$s" id="BOR0Mn32Do" role="1Qtc8A">
+        <node concept="A1WHu" id="BOR0Mn32Dp" role="A14EM">
+          <ref role="A1WHt" node="BOR0Mn0IWN" resolve="AddPrefixMetadata" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3INDKC" id="BOR0Mn0JqU">
+    <property role="TrG5h" value="SysMLv2ItemDefinition_PrefixMetadataContribution" />
+    <property role="3GE5qa" value="part.item" />
+    <node concept="A1WHr" id="BOR0Mn32Ds" role="AmTjC">
+      <ref role="2ZyFGn" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
+    </node>
+    <node concept="1Qtc8_" id="BOR0Mn32Dt" role="IW6Ez">
+      <node concept="wWMWC" id="BOR0Mn32Dv" role="1Qtc8$" />
+      <node concept="mvV$s" id="BOR0Mn32Dw" role="1Qtc8A">
+        <node concept="A1WHu" id="BOR0Mn32Dx" role="A14EM">
+          <ref role="A1WHt" node="BOR0Mn0IWN" resolve="AddPrefixMetadata" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3INDKC" id="BOR0Mn0Jr9">
+    <property role="TrG5h" value="SysMLv2AttributeDefinition_PrefixMetadataContribution" />
+    <property role="3GE5qa" value="part.attribute" />
+    <node concept="A1WHr" id="BOR0Mn32D$" role="AmTjC">
+      <ref role="2ZyFGn" to="5rf1:7JKstLNmmWw" resolve="SysMLv2AttributeDefinition" />
+    </node>
+    <node concept="1Qtc8_" id="BOR0Mn32D_" role="IW6Ez">
+      <node concept="wWMWC" id="BOR0Mn32DB" role="1Qtc8$" />
+      <node concept="mvV$s" id="BOR0Mn32DC" role="1Qtc8A">
+        <node concept="A1WHu" id="BOR0Mn32DD" role="A14EM">
+          <ref role="A1WHt" node="BOR0Mn0IWN" resolve="AddPrefixMetadata" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3INDKC" id="BOR0Mn0Jro">
+    <property role="TrG5h" value="SysMLv2PortDefinition_PrefixMetadataContribution" />
+    <property role="3GE5qa" value="part.port" />
+    <node concept="A1WHr" id="BOR0Mn32DG" role="AmTjC">
+      <ref role="2ZyFGn" to="5rf1:6coPuU2Tg1R" resolve="SysMLv2PortDefinition" />
+    </node>
+    <node concept="1Qtc8_" id="BOR0Mn32DH" role="IW6Ez">
+      <node concept="wWMWC" id="BOR0Mn32DJ" role="1Qtc8$" />
+      <node concept="mvV$s" id="BOR0Mn32DK" role="1Qtc8A">
+        <node concept="A1WHu" id="BOR0Mn32DL" role="A14EM">
+          <ref role="A1WHt" node="BOR0Mn0IWN" resolve="AddPrefixMetadata" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3INDKC" id="BOR0Mn0JrB">
+    <property role="TrG5h" value="SysMLv2MetadataDefinition_PrefixMetadataContribution" />
+    <property role="3GE5qa" value="metadata" />
+    <node concept="A1WHr" id="BOR0Mn32DO" role="AmTjC">
+      <ref role="2ZyFGn" to="5rf1:5oZmK$NNehb" resolve="SysMLv2MetadataDefinition" />
+    </node>
+    <node concept="1Qtc8_" id="BOR0Mn32DP" role="IW6Ez">
+      <node concept="wWMWC" id="BOR0Mn32DR" role="1Qtc8$" />
+      <node concept="mvV$s" id="BOR0Mn32DS" role="1Qtc8A">
+        <node concept="A1WHu" id="BOR0Mn32DT" role="A14EM">
+          <ref role="A1WHt" node="BOR0Mn0IWN" resolve="AddPrefixMetadata" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3INDKC" id="BOR0Mn0JrQ">
+    <property role="TrG5h" value="SysMLv2PartUsage_PrefixMetadataContribution" />
+    <property role="3GE5qa" value="part" />
+    <node concept="A1WHr" id="BOR0Mn32DW" role="AmTjC">
+      <ref role="2ZyFGn" to="5rf1:7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
+    </node>
+    <node concept="1Qtc8_" id="BOR0Mn32DX" role="IW6Ez">
+      <node concept="wWMWC" id="BOR0Mn32DZ" role="1Qtc8$" />
+      <node concept="mvV$s" id="BOR0Mn32E0" role="1Qtc8A">
+        <node concept="A1WHu" id="BOR0Mn32E1" role="A14EM">
+          <ref role="A1WHt" node="BOR0Mn0IWN" resolve="AddPrefixMetadata" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3INDKC" id="BOR0Mn0Js5">
+    <property role="TrG5h" value="SysMLv2AttributeUsage_PrefixMetadataContribution" />
+    <property role="3GE5qa" value="part.attribute" />
+    <node concept="A1WHr" id="BOR0Mn32E4" role="AmTjC">
+      <ref role="2ZyFGn" to="5rf1:7JKstLNmmXl" resolve="SysMLv2AttributeUsage" />
+    </node>
+    <node concept="1Qtc8_" id="BOR0Mn32E5" role="IW6Ez">
+      <node concept="wWMWC" id="BOR0Mn32E7" role="1Qtc8$" />
+      <node concept="mvV$s" id="BOR0Mn32E8" role="1Qtc8A">
+        <node concept="A1WHu" id="BOR0Mn32E9" role="A14EM">
+          <ref role="A1WHt" node="BOR0Mn0IWN" resolve="AddPrefixMetadata" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3INDKC" id="BOR0Mn0Jsk">
+    <property role="TrG5h" value="SysMLv2PortUsage_PrefixMetadataContribution" />
+    <property role="3GE5qa" value="part.port" />
+    <node concept="A1WHr" id="BOR0Mn32Ec" role="AmTjC">
+      <ref role="2ZyFGn" to="5rf1:6coPuU2Tg1T" resolve="SysMLv2PortUsage" />
+    </node>
+    <node concept="1Qtc8_" id="BOR0Mn32Ed" role="IW6Ez">
+      <node concept="wWMWC" id="BOR0Mn32Ef" role="1Qtc8$" />
+      <node concept="mvV$s" id="BOR0Mn32Eg" role="1Qtc8A">
+        <node concept="A1WHu" id="BOR0Mn32Eh" role="A14EM">
+          <ref role="A1WHt" node="BOR0Mn0IWN" resolve="AddPrefixMetadata" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3INDKC" id="BOR0Mn0Jsz">
+    <property role="TrG5h" value="SysMLv2ItemUsage_PrefixMetadataContribution" />
+    <property role="3GE5qa" value="part.item" />
+    <node concept="A1WHr" id="BOR0Mn32Ek" role="AmTjC">
+      <ref role="2ZyFGn" to="5rf1:6coPuU36dCd" resolve="SysMLv2ItemUsage" />
+    </node>
+    <node concept="1Qtc8_" id="BOR0Mn32El" role="IW6Ez">
+      <node concept="wWMWC" id="BOR0Mn32En" role="1Qtc8$" />
+      <node concept="mvV$s" id="BOR0Mn32Eo" role="1Qtc8A">
+        <node concept="A1WHu" id="BOR0Mn32Ep" role="A14EM">
+          <ref role="A1WHt" node="BOR0Mn0IWN" resolve="AddPrefixMetadata" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
