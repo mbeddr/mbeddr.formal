@@ -20,6 +20,7 @@
     <import index="5wt7" ref="r:340302a6-5c40-4ce4-b492-437d8a67da64(com.symo.sysmlv2.baselan.behavior)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
   </imports>
   <registry>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
@@ -37,6 +38,9 @@
       </concept>
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068580123152" name="jetbrains.mps.baseLanguage.structure.EqualsExpression" flags="nn" index="3clFbC" />
@@ -61,12 +65,15 @@
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
+      <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
+      <concept id="4656991770397278600" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_position" flags="nn" index="$OBjv" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1212097481299" name="propertyValidator" index="QCWH9" />
       </concept>
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
+      <concept id="5564765827938108528" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_containmentLink" flags="ng" index="3dgs5T" />
       <concept id="1163200368514" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSetHandler" flags="in" index="3k9gUc" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1163202640154" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_newReferentNode" flags="nn" index="3khVwk" />
@@ -456,6 +463,76 @@
               <node concept="2qgKlT" id="5oZmK$NNg7x" role="2OqNvi">
                 <ref role="37wK5l" to="5wt7:3tSWG0_CPFo" resolve="adoptNamespaceOf" />
                 <node concept="3khVwk" id="5oZmK$NNg7y" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="BOR0Mn7tl6">
+    <property role="3GE5qa" value="connection" />
+    <property role="TrG5h" value="SysMLv2ConnectionDefinitionRef_Constraints" />
+    <ref role="1M2myG" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
+    <node concept="1N5Pfh" id="BOR0Mn7tl7" role="1Mr941">
+      <ref role="1N5Vy1" to="5rf1:BOR0Mn7r_C" />
+      <node concept="3dgokm" id="BOR0Mn7tl8" role="1N6uqs">
+        <node concept="3clFbS" id="BOR0Mn7tla" role="2VODD2">
+          <node concept="3clFbF" id="BOR0Mn7tlb" role="3cqZAp">
+            <node concept="2OqwBi" id="BOR0Mn7tld" role="3clFbG">
+              <node concept="1PxgMI" id="BOR0Mn7tlg" role="2Oq$k0">
+                <node concept="3kakTB" id="BOR0Mn7tlj" role="1m5AlR" />
+                <node concept="chp4Y" id="BOR0Mn7tlk" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="BOR0Mn7tll" role="2OqNvi">
+                <ref role="37wK5l" to="5wt7:3tSWG0_D0yE" resolve="definitionScope" />
+                <node concept="35c_gC" id="BOR0Mn7tlm" role="37wK5m">
+                  <ref role="35c_gD" to="5rf1:BOR0Mn7r_z" resolve="SysMLv2ConnectionDefinition" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3k9gUc" id="BOR0Mn7tln" role="3kmjI7">
+        <node concept="3clFbS" id="BOR0Mn7tlp" role="2VODD2">
+          <node concept="3clFbF" id="BOR0Mn7tlq" role="3cqZAp">
+            <node concept="2OqwBi" id="BOR0Mn7tls" role="3clFbG">
+              <node concept="1PxgMI" id="BOR0Mn7tlv" role="2Oq$k0">
+                <node concept="3kakTB" id="BOR0Mn7tly" role="1m5AlR" />
+                <node concept="chp4Y" id="BOR0Mn7tlz" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="BOR0Mn7tl$" role="2OqNvi">
+                <ref role="37wK5l" to="5wt7:3tSWG0_CPFo" resolve="adoptNamespaceOf" />
+                <node concept="3khVwk" id="BOR0Mn7tl_" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3MUZSeFlpEl">
+    <property role="3GE5qa" value="base" />
+    <property role="TrG5h" value="SysMLv2UsageRef_Constraints" />
+    <ref role="1M2myG" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+    <node concept="1N5Pfh" id="3MUZSeFtipY" role="1Mr941">
+      <ref role="1N5Vy1" to="5rf1:6coPuU3buuA" />
+      <node concept="3dgokm" id="3MUZSeFtipZ" role="1N6uqs">
+        <node concept="3clFbS" id="3MUZSeFtiq1" role="2VODD2">
+          <node concept="3cpWs6" id="3MUZSeFtiq2" role="3cqZAp">
+            <node concept="2YIFZM" id="3MUZSeFtiq3" role="3cqZAk">
+              <ref role="1Pybhc" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+              <ref role="37wK5l" to="o8zo:52_Geb4R1Rv" resolve="getScope" />
+              <node concept="2rP1CM" id="3MUZSeFtiq4" role="37wK5m" />
+              <node concept="3dgs5T" id="3MUZSeFtiq5" role="37wK5m" />
+              <node concept="$OBjv" id="3MUZSeFtiq6" role="37wK5m" />
+              <node concept="35c_gC" id="3MUZSeFtiq7" role="37wK5m">
+                <ref role="35c_gD" to="5rf1:6coPuU3buuw" resolve="SysMLv2Usage" />
               </node>
             </node>
           </node>
