@@ -229,7 +229,7 @@
     <property role="TrG5h" value="SysMLv2AttributeDefinition" />
     <property role="34LRSv" value="attribute def" />
     <property role="3GE5qa" value="part.attribute" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="3MUZSeI$44h" />
     <node concept="PrWs8" id="7JKstLNmmWx" role="PzmwI">
       <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
     </node>
@@ -392,7 +392,7 @@
     <property role="34LRSv" value="port def" />
     <property role="R4oN_" value="SysML v2 port definition" />
     <property role="3GE5qa" value="part.port" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aH" />
     <node concept="1TJgyj" id="6coPuU2Tg1W" role="1TKVEi">
       <property role="IQ2ns" value="7140692429570900092" />
       <property role="20kJfa" value="specializes" />
@@ -1294,7 +1294,7 @@
     <property role="R4oN_" value="SysML v2 OccurrenceDefinition (8.3.9.2): abstract base of item and action definitions" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="base" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" node="3MUZSeI$44h" />
   </node>
   <node concept="1TIwiD" id="3MUZSeHM$aI">
     <property role="EcuMT" value="4376090928965370542" />
@@ -1348,6 +1348,14 @@
     <node concept="RPilO" id="3MUZSeHMA4h" role="lGtFl">
       <ref role="RPilL" node="3MUZSeHMA4d" resolve="definition" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3MUZSeI$44h">
+    <property role="EcuMT" value="4376090928978346257" />
+    <property role="TrG5h" value="SysMLv2Definition" />
+    <property role="R4oN_" value="SysML v2 Definition (8.3.6.2): abstract base of all definitions" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
   </node>
 </model>
 
