@@ -221,6 +221,17 @@
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
       </concept>
+      <concept id="4376090928965378315" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowDefinitionRef" flags="ng" index="2hs9U8">
+        <property id="4376090928965378318" name="flowDefinitionName" index="2hs9Ud" />
+        <reference id="4376090928965378317" name="definition" index="2hs9Ue" />
+      </concept>
+      <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH">
+        <child id="4376090928965378363" name="source" index="2hs9US" />
+        <child id="4376090928965378360" name="type" index="2hs9UV" />
+        <child id="4376090928965378366" name="target" index="2hs9UX" />
+        <child id="4376090928958005871" name="payload" index="2hSLRG" />
+      </concept>
+      <concept id="4376090928958005869" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowDefinition" flags="ng" index="2hSLRI" />
       <concept id="4376090928929871183" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartLikeUsage" flags="ng" index="2n5AFc">
         <child id="8930763252716192330" name="content" index="8GFem" />
       </concept>
@@ -2443,6 +2454,83 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="2YIFZL" id="3MUZSeIijNZ" role="jymVt">
+      <property role="TrG5h" value="reifyFlowDefinitionRefs" />
+      <property role="2Lvdk3" value="reifyFlowDefinitionRefs" />
+      <node concept="3cqZAl" id="3MUZSeIijO3" role="3clF45" />
+      <node concept="37vLTG" id="3MUZSeIijO4" role="3clF46">
+        <property role="TrG5h" value="m" />
+        <property role="3TUv4t" value="true" />
+        <property role="2Lvdk3" value="m" />
+        <node concept="H_c77" id="3MUZSeIijO6" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="3MUZSeIijO7" role="3clF46">
+        <property role="TrG5h" value="proj" />
+        <property role="3TUv4t" value="true" />
+        <property role="2Lvdk3" value="proj" />
+        <node concept="3uibUv" id="3MUZSeIijO9" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="3MUZSeIijOa" role="3clF47">
+        <node concept="3clFbF" id="3MUZSeIijOb" role="3cqZAp">
+          <node concept="2OqwBi" id="3MUZSeIijOd" role="3clFbG">
+            <node concept="2YIFZM" id="3MUZSeIijOg" role="2Oq$k0">
+              <ref role="1Pybhc" to="bd8o:~ApplicationManager" resolve="ApplicationManager" />
+              <ref role="37wK5l" to="bd8o:~ApplicationManager.getApplication()" resolve="getApplication" />
+            </node>
+            <node concept="liA8E" id="3MUZSeIijOh" role="2OqNvi">
+              <ref role="37wK5l" to="bd8o:~Application.invokeAndWait(java.lang.Runnable)" resolve="invokeAndWait" />
+              <node concept="2ShNRf" id="3MUZSeIijOi" role="37wK5m">
+                <node concept="YeOm9" id="3MUZSeIijOk" role="2ShVmc">
+                  <node concept="1Y3b0j" id="3MUZSeIijOn" role="YeSDq">
+                    <property role="2bfB8j" value="true" />
+                    <property role="373rjd" value="true" />
+                    <property role="TrG5h" value="Runnable$anonymous" />
+                    <property role="jj94n" value="Anonymous in reifyFlowDefinitionRefs() in TestUtils" />
+                    <property role="2Lvdk3" value="Anonymous in reifyFlowDefinitionRefs() in TestUtils" />
+                    <ref role="1Y3XeK" to="wyt6:~Runnable" resolve="Runnable" />
+                    <ref role="37wK5l" to="wyt6:~Object.&lt;init&gt;()" resolve="Object" />
+                    <node concept="3clFb_" id="3MUZSeIijOp" role="jymVt">
+                      <property role="TrG5h" value="run" />
+                      <property role="2Lvdk3" value="run" />
+                      <node concept="3cqZAl" id="3MUZSeIijOt" role="3clF45" />
+                      <node concept="3clFbS" id="3MUZSeIijOu" role="3clF47">
+                        <node concept="1QHqEO" id="3MUZSeIijOv" role="3cqZAp">
+                          <node concept="1QHqEC" id="3MUZSeIijOy" role="1QHqEI">
+                            <node concept="3clFbS" id="3MUZSeIijO$" role="1bW5cS">
+                              <node concept="3clFbF" id="3MUZSeIijO_" role="3cqZAp">
+                                <node concept="2YIFZM" id="3MUZSeIijOB" role="3clFbG">
+                                  <ref role="1Pybhc" to="uj5z:7JKstLNlJ4o" resolve="SysMLv2TypeReifier" />
+                                  <ref role="37wK5l" to="uj5z:3MUZSeIiha7" resolve="reifyFlowDefinitionRefs" />
+                                  <node concept="37vLTw" id="3MUZSeIijOC" role="37wK5m">
+                                    <ref role="3cqZAo" node="3MUZSeIijO4" resolve="m" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="3MUZSeIijOD" role="ukAjM">
+                            <node concept="37vLTw" id="3MUZSeIijOG" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3MUZSeIijO7" resolve="proj" />
+                            </node>
+                            <node concept="liA8E" id="3MUZSeIijOH" role="2OqNvi">
+                              <ref role="37wK5l" to="z1c3:~Project.getRepository()" resolve="getRepository" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                      <node concept="3Tm1VV" id="3MUZSeIijOI" role="1B3o_S" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="3MUZSeIijOJ" role="1B3o_S" />
     </node>
   </node>
   <node concept="1lH9Xt" id="3PUPjB2qhEE">
@@ -11854,6 +11942,753 @@
           </node>
           <node concept="37vLTw" id="3MUZSeHj$6N" role="3tpDZA">
             <ref role="3cqZAo" node="3MUZSeHj$6C" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3MUZSeIlc8N">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_250_FlowTest" />
+    <node concept="1qefOq" id="3MUZSeIlc8O" role="1SKRRt">
+      <node concept="2h0jOr" id="3MUZSeIlc8Q" role="1qenE9">
+        <property role="TrG5h" value="FlowFile" />
+        <node concept="3Z9vzX" id="3MUZSeIlc8R" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="3w00Z_" id="3MUZSeIlc8S" role="3Z9vGx">
+            <property role="TrG5h" value="Fuel" />
+          </node>
+          <node concept="2hSLRI" id="3MUZSeIlc8T" role="3Z9vGx">
+            <property role="TrG5h" value="FuelFlow" />
+          </node>
+          <node concept="3ZUotO" id="3MUZSeIlc8U" role="3Z9vGx">
+            <property role="TrG5h" value="Tank" />
+            <node concept="3w00Zz" id="3MUZSeIlc8V" role="3w00ZY">
+              <property role="TrG5h" value="fuelOut" />
+              <node concept="3xZtmk" id="3MUZSeIlc8W" role="3w00ZV">
+                <property role="3xZtlB" value="3th7jSwWnJl/out" />
+              </node>
+              <node concept="3w00Zy" id="3MUZSeIlc8X" role="3w00ZT">
+                <property role="3w00ZX" value="Fuel" />
+                <ref role="3w00ZU" node="3MUZSeIlc8S" resolve="Fuel" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="3MUZSeIlc8Y" role="3Z9vGx">
+            <property role="TrG5h" value="Engine" />
+            <node concept="3w00Zz" id="3MUZSeIlc8Z" role="3w00ZY">
+              <property role="TrG5h" value="fuelIn" />
+              <node concept="3xZtmk" id="3MUZSeIlc90" role="3w00ZV" />
+              <node concept="3w00Zy" id="3MUZSeIlc91" role="3w00ZT">
+                <property role="3w00ZX" value="Fuel" />
+                <ref role="3w00ZU" node="3MUZSeIlc8S" resolve="Fuel" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="3MUZSeIlc92" role="3Z9vGx">
+            <property role="TrG5h" value="Vehicle" />
+            <node concept="8GF0z" id="3MUZSeIlc93" role="3w00ZY">
+              <property role="TrG5h" value="tank" />
+              <node concept="8CKM2" id="3MUZSeIlc94" role="8CKLj">
+                <property role="8CKM3" value="Tank" />
+                <ref role="8CKMW" node="3MUZSeIlc8U" resolve="Tank" />
+              </node>
+            </node>
+            <node concept="8GF0z" id="3MUZSeIlc95" role="3w00ZY">
+              <property role="TrG5h" value="engine" />
+              <node concept="8CKM2" id="3MUZSeIlc96" role="8CKLj">
+                <property role="8CKM3" value="Engine" />
+                <ref role="8CKMW" node="3MUZSeIlc8Y" resolve="Engine" />
+              </node>
+            </node>
+            <node concept="2hSLRH" id="3MUZSeIlc97" role="3w00ZY">
+              <node concept="3w00Zy" id="3MUZSeIlc9c" role="2hSLRG">
+                <property role="3w00ZX" value="Fuel" />
+                <ref role="3w00ZU" node="3MUZSeIlc8S" resolve="Fuel" />
+              </node>
+              <node concept="2uUmlD" id="3MUZSeIlc9d" role="2hs9US">
+                <node concept="3wdj9f" id="3MUZSeIlc9f" role="2uUmlA">
+                  <property role="3wdj9b" value="tank" />
+                  <ref role="3wdj98" node="3MUZSeIlc93" resolve="tank" />
+                </node>
+                <node concept="3wdj9f" id="3MUZSeIlc9g" role="2uUmlA">
+                  <property role="3wdj9b" value="fuelOut" />
+                  <ref role="3wdj98" node="3MUZSeIlc8V" resolve="fuelOut" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="3MUZSeIlc9h" role="2hs9UX">
+                <node concept="3wdj9f" id="3MUZSeIlc9j" role="2uUmlA">
+                  <property role="3wdj9b" value="engine" />
+                  <ref role="3wdj98" node="3MUZSeIlc95" resolve="engine" />
+                </node>
+                <node concept="3wdj9f" id="3MUZSeIlc9k" role="2uUmlA">
+                  <property role="3wdj9b" value="fuelIn" />
+                  <ref role="3wdj98" node="3MUZSeIlc8Z" resolve="fuelIn" />
+                </node>
+              </node>
+            </node>
+            <node concept="2hSLRH" id="3MUZSeIlc9l" role="3w00ZY">
+              <property role="TrG5h" value="supply" />
+              <node concept="3w00Zy" id="3MUZSeIlc9q" role="2hSLRG">
+                <property role="3w00ZX" value="Fuel" />
+                <ref role="3w00ZU" node="3MUZSeIlc8S" resolve="Fuel" />
+              </node>
+              <node concept="2uUmlD" id="3MUZSeIlc9r" role="2hs9US">
+                <node concept="3wdj9f" id="3MUZSeIlc9t" role="2uUmlA">
+                  <property role="3wdj9b" value="tank" />
+                  <ref role="3wdj98" node="3MUZSeIlc93" resolve="tank" />
+                </node>
+                <node concept="3wdj9f" id="3MUZSeIlc9u" role="2uUmlA">
+                  <property role="3wdj9b" value="fuelOut" />
+                  <ref role="3wdj98" node="3MUZSeIlc8V" resolve="fuelOut" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="3MUZSeIlc9v" role="2hs9UX">
+                <node concept="3wdj9f" id="3MUZSeIlc9x" role="2uUmlA">
+                  <property role="3wdj9b" value="engine" />
+                  <ref role="3wdj98" node="3MUZSeIlc95" resolve="engine" />
+                </node>
+                <node concept="3wdj9f" id="3MUZSeIlc9y" role="2uUmlA">
+                  <property role="3wdj9b" value="fuelIn" />
+                  <ref role="3wdj98" node="3MUZSeIlc8Z" resolve="fuelIn" />
+                </node>
+              </node>
+              <node concept="2hs9U8" id="3MUZSeIlc9z" role="2hs9UV">
+                <property role="2hs9Ud" value="FuelFlow" />
+                <ref role="2hs9Ue" node="3MUZSeIlc8T" resolve="FuelFlow" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3xLA65" id="3MUZSeIlc9$" role="lGtFl">
+          <property role="TrG5h" value="flow_file" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3MUZSeIlc9_" role="1SL9yI">
+      <property role="TrG5h" value="testImportFlow" />
+      <node concept="3cqZAl" id="3MUZSeIlc9C" role="3clF45" />
+      <node concept="3clFbS" id="3MUZSeIlc9D" role="3clF47">
+        <node concept="3cpWs8" id="3MUZSeIlc9E" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeIlc9H" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="3MUZSeIlc9J" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlc9K" role="3cqZAp">
+          <node concept="37vLTI" id="3MUZSeIlc9M" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlc9P" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlc9Q" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlc9R" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlc9T" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlc9W" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlc9X" role="37vLTx">
+              <property role="Xl_RC" value="  item def Fuel {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlc9Y" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlca0" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlca3" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlca4" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlca5" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlca7" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcaa" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcab" role="37vLTx">
+              <property role="Xl_RC" value="  flow def FuelFlow {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcac" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcae" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcah" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcai" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcaj" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcal" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcao" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcap" role="37vLTx">
+              <property role="Xl_RC" value="  part def Tank {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcaq" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcas" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcav" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcaw" role="37vLTx">
+              <property role="Xl_RC" value="    out item fuelOut : Fuel;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcax" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcaz" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcaA" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcaB" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcaC" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcaE" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcaH" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcaI" role="37vLTx">
+              <property role="Xl_RC" value="  part def Engine {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcaJ" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcaL" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcaO" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcaP" role="37vLTx">
+              <property role="Xl_RC" value="    in item fuelIn : Fuel;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcaQ" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcaS" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcaV" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcaW" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcaX" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcaZ" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcb2" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcb3" role="37vLTx">
+              <property role="Xl_RC" value="  part def Vehicle {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcb4" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcb6" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcb9" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcba" role="37vLTx">
+              <property role="Xl_RC" value="    part tank : Tank;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcbb" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcbd" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcbg" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcbh" role="37vLTx">
+              <property role="Xl_RC" value="    part engine : Engine;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcbi" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcbk" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcbn" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcbo" role="37vLTx">
+              <property role="Xl_RC" value="    flow of Fuel from tank.fuelOut to engine.fuelIn;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcbp" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcbr" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcbu" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcbv" role="37vLTx">
+              <property role="Xl_RC" value="    flow supply : FuelFlow of Fuel from tank.fuelOut to engine.fuelIn;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcbw" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcby" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcb_" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcbA" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcbB" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcbD" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcbG" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcbH" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3MUZSeIlcbI" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeIlcbL" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="tmp" />
+            <node concept="2YIFZM" id="3MUZSeIlcbN" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="3MUZSeIlcbO" role="37wK5m">
+                <ref role="3cqZAo" node="3MUZSeIlc9H" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="3MUZSeIlcbP" role="37wK5m">
+                <property role="Xl_RC" value="FlowFile" />
+              </node>
+              <node concept="1jxXqW" id="3MUZSeIlcbQ" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="3MUZSeIlcbR" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcbS" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeIlcbU" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6coPuU37$59" resolve="reifyItemDefinitionRefs" />
+            <node concept="37vLTw" id="3MUZSeIlcbV" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeIlcbL" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeIlcbW" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcbX" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeIlcbZ" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="7JKstLNm9oX" resolve="reifyPartDefinitionRefs" />
+            <node concept="37vLTw" id="3MUZSeIlcc0" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeIlcbL" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeIlcc1" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcc2" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeIlcc4" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3MUZSeIijNZ" resolve="reifyFlowDefinitionRefs" />
+            <node concept="37vLTw" id="3MUZSeIlcc5" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeIlcbL" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeIlcc6" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcc7" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeIlcc9" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6coPuU3gCbX" resolve="reifyUsageRefs" />
+            <node concept="37vLTw" id="3MUZSeIlcca" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeIlcbL" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeIlccb" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlccc" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeIlcce" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="3MUZSeIlccf" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeIlcbL" resolve="tmp" />
+            </node>
+            <node concept="3xONca" id="3MUZSeIlccg" role="37wK5m">
+              <ref role="3xOPvv" node="3MUZSeIlc9$" resolve="flow_file" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeIlcch" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcci" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeIlcck" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="3MUZSeIlccl" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeIlcbL" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeIlccm" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3MUZSeIlccn" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripFlow" />
+      <node concept="3cqZAl" id="3MUZSeIlccq" role="3clF45" />
+      <node concept="3clFbS" id="3MUZSeIlccr" role="3clF47">
+        <node concept="3cpWs8" id="3MUZSeIlccs" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeIlccv" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="3MUZSeIlccx" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlccy" role="3cqZAp">
+          <node concept="37vLTI" id="3MUZSeIlcc$" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlccB" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlccC" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlccD" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlccF" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlccI" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlccJ" role="37vLTx">
+              <property role="Xl_RC" value="  item def Fuel {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlccK" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlccM" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlccP" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlccQ" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlccR" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlccT" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlccW" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlccX" role="37vLTx">
+              <property role="Xl_RC" value="  flow def FuelFlow {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlccY" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcd0" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcd3" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcd4" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcd5" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcd7" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcda" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcdb" role="37vLTx">
+              <property role="Xl_RC" value="  part def Tank {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcdc" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcde" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcdh" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcdi" role="37vLTx">
+              <property role="Xl_RC" value="    out item fuelOut : Fuel;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcdj" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcdl" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcdo" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcdp" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcdq" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcds" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcdv" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcdw" role="37vLTx">
+              <property role="Xl_RC" value="  part def Engine {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcdx" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcdz" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcdA" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcdB" role="37vLTx">
+              <property role="Xl_RC" value="    in item fuelIn : Fuel;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcdC" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcdE" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcdH" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcdI" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcdJ" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcdL" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcdO" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcdP" role="37vLTx">
+              <property role="Xl_RC" value="  part def Vehicle {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcdQ" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcdS" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcdV" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcdW" role="37vLTx">
+              <property role="Xl_RC" value="    part tank : Tank;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcdX" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcdZ" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlce2" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlce3" role="37vLTx">
+              <property role="Xl_RC" value="    part engine : Engine;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlce4" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlce6" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlce9" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcea" role="37vLTx">
+              <property role="Xl_RC" value="    flow of Fuel from tank.fuelOut to engine.fuelIn;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlceb" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlced" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlceg" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlceh" role="37vLTx">
+              <property role="Xl_RC" value="    flow supply : FuelFlow of Fuel from tank.fuelOut to engine.fuelIn;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcei" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcek" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcen" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlceo" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcep" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcer" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlceu" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcev" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3MUZSeIlcew" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeIlcez" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="3MUZSeIlce_" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="3MUZSeIlceA" role="37wK5m">
+                <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="3MUZSeIlceB" role="37wK5m">
+                <property role="Xl_RC" value="FlowFile" />
+              </node>
+              <node concept="1jxXqW" id="3MUZSeIlceC" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="3MUZSeIlceD" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="3MUZSeIlceE" role="3cqZAp">
+          <node concept="37vLTw" id="3MUZSeIlceH" role="3tpDZB">
+            <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="3MUZSeIlceI" role="3tpDZA">
+            <ref role="3cqZAo" node="3MUZSeIlcez" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3MUZSeIlcmD" role="1SL9yI">
+      <property role="TrG5h" value="testNormalizeShortFlow" />
+      <node concept="3cqZAl" id="3MUZSeIlcmG" role="3clF45" />
+      <node concept="3clFbS" id="3MUZSeIlcmH" role="3clF47">
+        <node concept="3cpWs8" id="3MUZSeIlcmI" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeIlcmL" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="3MUZSeIlcmN" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcmO" role="3cqZAp">
+          <node concept="37vLTI" id="3MUZSeIlcmQ" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcmT" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlcmL" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcmU" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcmV" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcmX" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcn0" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlcmL" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcn1" role="37vLTx">
+              <property role="Xl_RC" value="  part def A {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcn2" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcn4" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcn7" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlcmL" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcn8" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcn9" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcnb" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcne" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlcmL" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcnf" role="37vLTx">
+              <property role="Xl_RC" value="  part def S {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcng" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcni" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcnl" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlcmL" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcnm" role="37vLTx">
+              <property role="Xl_RC" value="    part a : A;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcnn" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcnp" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcns" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlcmL" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcnt" role="37vLTx">
+              <property role="Xl_RC" value="    part b : A;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcnu" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcnw" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcnz" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlcmL" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcn$" role="37vLTx">
+              <property role="Xl_RC" value="    flow a to b;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcn_" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcnB" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcnE" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlcmL" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcnF" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeIlcnG" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeIlcnI" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeIlcnL" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeIlcmL" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeIlcnM" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3MUZSeIlcnN" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeIlcnQ" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="3MUZSeIlcnS" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="3MUZSeIlcnT" role="37wK5m">
+                <ref role="3cqZAo" node="3MUZSeIlcmL" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="3MUZSeIlcnU" role="37wK5m">
+                <property role="Xl_RC" value="FlowFile" />
+              </node>
+              <node concept="1jxXqW" id="3MUZSeIlcnV" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="3MUZSeIlcnW" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="3MUZSeIlcnX" role="3cqZAp">
+          <node concept="Xl_RD" id="3MUZSeIlco0" role="3tpDZB">
+            <property role="Xl_RC" value="package P {\n  part def A {\n  }\n  part def S {\n    part a : A;\n    part b : A;\n    flow from a to b;\n  }\n}\n" />
+          </node>
+          <node concept="37vLTw" id="3MUZSeIlco1" role="3tpDZA">
+            <ref role="3cqZAo" node="3MUZSeIlcnQ" resolve="generateText" />
           </node>
         </node>
       </node>

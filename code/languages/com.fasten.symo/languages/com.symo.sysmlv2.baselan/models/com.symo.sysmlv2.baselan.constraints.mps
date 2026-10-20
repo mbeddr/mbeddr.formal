@@ -533,7 +533,7 @@
                   <node concept="35c_gC" id="3MUZSeG2ph1" role="3K4E3e">
                     <ref role="35c_gD" to="5rf1:3MUZSeG2mDd" resolve="SysMLv2InterfaceDefinition" />
                   </node>
-                  <node concept="35c_gC" id="3MUZSeG2ph2" role="3K4GZi">
+                  <node concept="35c_gC" id="3MUZSeHP9Y9" role="3K4GZi">
                     <ref role="35c_gD" to="5rf1:BOR0Mn7r_z" resolve="SysMLv2ConnectionDefinition" />
                   </node>
                 </node>
@@ -635,6 +635,52 @@
                 <node concept="Xl_RD" id="3MUZSeGXk_u" role="37wK5m">
                   <property role="Xl_RC" value="\&quot;([^\&quot;\\\\]|\\\\.)*\&quot;|true|false|-?[0-9]+(\\.[0-9]+)?([eE][+-]?[0-9]+)?" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3MUZSeHP9Wl">
+    <property role="TrG5h" value="SysMLv2FlowDefinitionRef_Constraints" />
+    <property role="3GE5qa" value="flow" />
+    <ref role="1M2myG" to="5rf1:3MUZSeHMA4b" resolve="SysMLv2FlowDefinitionRef" />
+    <node concept="1N5Pfh" id="3MUZSeHP9Wm" role="1Mr941">
+      <ref role="1N5Vy1" to="5rf1:3MUZSeHMA4d" resolve="definition" />
+      <node concept="3dgokm" id="3MUZSeHP9Wn" role="1N6uqs">
+        <node concept="3clFbS" id="3MUZSeHP9Wp" role="2VODD2">
+          <node concept="3clFbF" id="3MUZSeHP9Wq" role="3cqZAp">
+            <node concept="2OqwBi" id="3MUZSeHP9Ws" role="3clFbG">
+              <node concept="1PxgMI" id="3MUZSeHP9Wv" role="2Oq$k0">
+                <node concept="3kakTB" id="3MUZSeHP9Wy" role="1m5AlR" />
+                <node concept="chp4Y" id="3MUZSeHP9Wz" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="3MUZSeHP9W$" role="2OqNvi">
+                <ref role="37wK5l" to="5wt7:3tSWG0_D0yE" resolve="definitionScope" />
+                <node concept="35c_gC" id="3MUZSeHP9W_" role="37wK5m">
+                  <ref role="35c_gD" to="5rf1:3MUZSeHmu9H" resolve="SysMLv2FlowDefinition" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3k9gUc" id="3MUZSeHP9WA" role="3kmjI7">
+        <node concept="3clFbS" id="3MUZSeHP9WC" role="2VODD2">
+          <node concept="3clFbF" id="3MUZSeHP9WD" role="3cqZAp">
+            <node concept="2OqwBi" id="3MUZSeHP9WF" role="3clFbG">
+              <node concept="1PxgMI" id="3MUZSeHP9WI" role="2Oq$k0">
+                <node concept="3kakTB" id="3MUZSeHP9WL" role="1m5AlR" />
+                <node concept="chp4Y" id="3MUZSeHP9WM" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="3MUZSeHP9WN" role="2OqNvi">
+                <ref role="37wK5l" to="5wt7:3tSWG0_CPFo" resolve="adoptNamespaceOf" />
+                <node concept="3khVwk" id="3MUZSeHP9WO" role="37wK5m" />
               </node>
             </node>
           </node>

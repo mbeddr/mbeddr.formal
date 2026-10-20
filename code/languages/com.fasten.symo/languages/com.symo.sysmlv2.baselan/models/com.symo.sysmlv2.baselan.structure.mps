@@ -449,7 +449,7 @@
     <property role="34LRSv" value="port" />
     <property role="R4oN_" value="SysML v2 port usage" />
     <property role="3GE5qa" value="part.port" />
-    <ref role="1TJDcQ" node="6coPuU3buuw" resolve="SysMLv2Usage" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aI" />
     <node concept="1TJgyi" id="6coPuU2Tg22" role="1TKVEl">
       <property role="IQ2nx" value="7140692429570900098" />
       <property role="TrG5h" value="conjugated" />
@@ -523,7 +523,7 @@
     <property role="34LRSv" value="item def" />
     <property role="R4oN_" value="SysML v2 item definition" />
     <property role="3GE5qa" value="part.item" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aH" />
     <node concept="1TJgyj" id="6coPuU36dCf" role="1TKVEi">
       <property role="IQ2ns" value="7140692429574298127" />
       <property role="20kJfa" value="specializes" />
@@ -580,7 +580,7 @@
     <property role="34LRSv" value="item" />
     <property role="R4oN_" value="SysML v2 item usage" />
     <property role="3GE5qa" value="part.item" />
-    <ref role="1TJDcQ" node="6coPuU3buuw" resolve="SysMLv2Usage" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aI" />
     <node concept="1TJgyj" id="6coPuU36dCl" role="1TKVEi">
       <property role="IQ2ns" value="7140692429574298133" />
       <property role="20kJfa" value="direction" />
@@ -1125,6 +1125,9 @@
     <node concept="PrWs8" id="BOR0Mn7r_M" role="PzmwI">
       <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
+    <node concept="PrWs8" id="3MUZSeHMA4G" role="PzmwI">
+      <ref role="PrY4T" node="3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeFF9lf">
     <property role="EcuMT" value="4376090928929871183" />
@@ -1202,6 +1205,148 @@
     </node>
     <node concept="PrWs8" id="3MUZSeGZXvB" role="PzmwI">
       <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeHMA4J" role="PzmwI">
+      <ref role="PrY4T" node="3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3MUZSeHmu9H">
+    <property role="EcuMT" value="4376090928958005869" />
+    <property role="TrG5h" value="SysMLv2FlowDefinition" />
+    <property role="34LRSv" value="flow def" />
+    <property role="R4oN_" value="SysML v2 flow definition: flow def Name { ... }" />
+    <property role="3GE5qa" value="flow" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aJ" />
+    <node concept="PrWs8" id="3MUZSeHMA4k" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeHMA4n" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeHMA4q" role="PzmwI">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
+    </node>
+    <node concept="1TJgyj" id="3MUZSeHMA4M" role="1TKVEi">
+      <property role="IQ2ns" value="4376090928965378354" />
+      <property role="20kJfa" value="specializes" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3MUZSeHMA4b" resolve="SysMLv2FlowDefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="3MUZSeHMA4P" role="1TKVEi">
+      <property role="IQ2ns" value="4376090928965378357" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3MUZSeHmu9I">
+    <property role="EcuMT" value="4376090928958005870" />
+    <property role="TrG5h" value="SysMLv2FlowUsage" />
+    <property role="34LRSv" value="flow" />
+    <property role="R4oN_" value="SysML v2 flow usage: flow [name] [: Type] [of Payload] from a.p to b.q;" />
+    <property role="3GE5qa" value="flow" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aK" />
+    <node concept="1TJgyj" id="3MUZSeHmu9J" role="1TKVEi">
+      <property role="IQ2ns" value="4376090928958005871" />
+      <property role="20kJfa" value="payload" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeHMA4t" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeHMA4w" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeHMA4z" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeHMA4A" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeHMA4D" role="PzmwI">
+      <ref role="PrY4T" node="3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
+    </node>
+    <node concept="1TJgyj" id="3MUZSeHMA4S" role="1TKVEi">
+      <property role="IQ2ns" value="4376090928965378360" />
+      <property role="20kJfa" value="type" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeHMA4b" resolve="SysMLv2FlowDefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="3MUZSeHMA4V" role="1TKVEi">
+      <property role="IQ2ns" value="4376090928965378363" />
+      <property role="20kJfa" value="source" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
+    <node concept="1TJgyj" id="3MUZSeHMA4Y" role="1TKVEi">
+      <property role="IQ2ns" value="4376090928965378366" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="3MUZSeHM$aH">
+    <property role="EcuMT" value="4376090928965370541" />
+    <property role="TrG5h" value="SysMLv2OccurrenceDefinition" />
+    <property role="R4oN_" value="SysML v2 OccurrenceDefinition (8.3.9.2): abstract base of item and action definitions" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+  </node>
+  <node concept="1TIwiD" id="3MUZSeHM$aI">
+    <property role="EcuMT" value="4376090928965370542" />
+    <property role="TrG5h" value="SysMLv2OccurrenceUsage" />
+    <property role="R4oN_" value="SysML v2 OccurrenceUsage (8.3.9.3): abstract base of item, port and action usages" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1TJDcQ" node="6coPuU3buuw" resolve="SysMLv2Usage" />
+  </node>
+  <node concept="1TIwiD" id="3MUZSeHM$aJ">
+    <property role="EcuMT" value="4376090928965370543" />
+    <property role="TrG5h" value="SysMLv2ActionDefinition" />
+    <property role="R4oN_" value="SysML v2 ActionDefinition (8.3.17.2): abstract placeholder, actions are not modelled yet" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aH" resolve="SysMLv2OccurrenceDefinition" />
+  </node>
+  <node concept="1TIwiD" id="3MUZSeHM$aK">
+    <property role="EcuMT" value="4376090928965370544" />
+    <property role="TrG5h" value="SysMLv2ActionUsage" />
+    <property role="R4oN_" value="SysML v2 ActionUsage (8.3.17.3): abstract placeholder, actions are not modelled yet" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aI" resolve="SysMLv2OccurrenceUsage" />
+  </node>
+  <node concept="PlHQZ" id="3MUZSeHM$aL">
+    <property role="EcuMT" value="4376090928965370545" />
+    <property role="TrG5h" value="ISysMLv2ConnectorAsUsage" />
+    <property role="R4oN_" value="SysML v2 ConnectorAsUsage (8.3.13.x): marker for usages that are also connectors (connection, binding, flow)" />
+    <property role="3GE5qa" value="base" />
+  </node>
+  <node concept="1TIwiD" id="3MUZSeHMA4b">
+    <property role="EcuMT" value="4376090928965378315" />
+    <property role="TrG5h" value="SysMLv2FlowDefinitionRef" />
+    <property role="3GE5qa" value="flow" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="3MUZSeHMA4c" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+    </node>
+    <node concept="1TJgyj" id="3MUZSeHMA4d" role="1TKVEi">
+      <property role="IQ2ns" value="4376090928965378317" />
+      <property role="TrG5h" value="definition" />
+      <property role="20kJfa" value="definition" />
+      <ref role="20lvS9" node="3MUZSeHmu9H" resolve="SysMLv2FlowDefinition" />
+    </node>
+    <node concept="1TJgyi" id="3MUZSeHMA4e" role="1TKVEl">
+      <property role="IQ2nx" value="4376090928965378318" />
+      <property role="TrG5h" value="flowDefinitionName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="RPilO" id="3MUZSeHMA4h" role="lGtFl">
+      <ref role="RPilL" node="3MUZSeHMA4d" resolve="definition" />
     </node>
   </node>
 </model>
