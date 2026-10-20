@@ -1189,3 +1189,25 @@ errors and none on `ok1`/`ok2` (annotated errors are suppressed in `check_root_n
 unannotated copy was checked and removed). Run configs `_030_test_scope_interface_type`, `_040_test_check_interface_ends`.
 Still true: attribute/item usages are offered as chain steps in interface ends (completion is not narrowed further);
 the rule does not check the number of ends or `end port` in the definition body.
+
+**Iteration 20 (2026-10-20) — attribute values (`attribute x = 5;`)**: `SysMLv2AttributeUsage` gets an optional
+child `value : ISysMLv2Expression` (new interface, virtual folder `expression`); `SysMLv2LiteralExpression`
+(literal kept as source text in `value`, as for metadata values) implements it, so real expressions can be added later
+without retargeting the link. `ISysMLv2Expression_Constraints` sets `defaultConcreteConcept` to the literal (see the
+gotcha: otherwise the editor instantiates the interface itself). `SysMLv2LiteralExpression_Constraints` adds a property
+validator on `value`: string literal, `true`/`false`, or `-?int[.frac][e±exp]` (same regex as the importer).
+Editor: optional `= <value>` cell before `;`; TextGen: ` = <value>` before `;`. Importer: `extractAttributeValueText`
+(only `=` — `:=` and `default` are rejected —, only literals; `-5` and `-2.5` are accepted because the grammar yields
+a unary minus around the literal and the text is checked as a whole) and `setAttributeValue`; value parts on part,
+port, item and connection usages are still rejected. Reification needs nothing new: `:>> bandwidth = 100` resolves
+the redefined usage like before.
+Tests: importer `_230_AttributeValueTest` (import with fixture incl. `:>>` redefinition with a value, `-2.5`, `true`,
+a string, plus roundtrip; run config `_230_test_sysmlv2_attribute_values`); editor `_150_Attributes_AddValue`
+(`attribute rate`, `=`, `42`); scope test `_050_AttributeRedefineScope` (the redefinition target of
+`attribute :>> bandwidth = 100;` in `Wifi :> Link` offers exactly Link's attributes `{bandwidth, label}`, not the
+sibling `latency`); checking-rules test `_020_AttributeValueLiteralCheck` (`foo bar`, `1.` and `'x'` are rejected;
+`100`, `-2.5`, `"hi"`, `true`, `1e3` are clean — verified on an unannotated temporary copy).
+Importer 56/56, baselan 36/36.
+Not done: a check that the value fits the attribute's declared type — the scalar types (`Real`, `Integer`, `String`
+from `ScalarValues`) belong to the standard library, which this language does not model, so `attribute x : Real = "a"`
+cannot be rejected yet; units (`5 [kg]`); `:=` / `default`; non-literal expressions; values on other usage kinds.

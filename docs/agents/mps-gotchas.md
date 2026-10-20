@@ -10,6 +10,17 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## A child slot typed by an *interface* concept creates an instance of the interface itself (2026-10-20)
+
+An optional child (`value : ISysMLv2Expression`) whose type is an interface concept is filled, when the user types
+the grammar-cells `=` option, with a node whose concept is **the interface** (editor test: "Different concepts: was
+`ISysMLv2Expression`, expected `SysMLv2LiteralExpression`"), even though only one concrete concept implements it. No
+checker complains; the node has no editor of its own.
+
+**How to apply:** give the interface a `ConceptConstraints` root (`<I>_Constraints`) whose `defaultConcreteConcept`
+reference points at the concrete concept to instantiate (a single reference on the root, not a child block). Rebuild the
+language; an editor test that types into the slot is the cheap way to see the difference.
+
 ## Authoring big ANTLR visitor methods: plain Java through the parser, typed smodel in small cloned helpers (2026-10-20)
 
 `mps_mcp_parse_java_and_insert` (`CLASS_CONTENT`, `insert.mode: child`, `role: member`; `STATEMENTS` into an
