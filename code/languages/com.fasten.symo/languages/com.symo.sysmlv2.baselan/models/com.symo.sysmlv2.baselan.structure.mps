@@ -1167,5 +1167,42 @@
     <property role="R4oN_" value="SysML v2 expression (currently only literals)" />
     <property role="3GE5qa" value="expression" />
   </node>
+  <node concept="1TIwiD" id="3MUZSeGZXvw">
+    <property role="EcuMT" value="4376090928952104928" />
+    <property role="TrG5h" value="SysMLv2BindingUsage" />
+    <property role="34LRSv" value="bind" />
+    <property role="R4oN_" value="SysML v2 binding connector usage: [binding [name]] bind a.b = c.d;" />
+    <property role="3GE5qa" value="binding" />
+    <ref role="1TJDcQ" node="6coPuU3buuw" resolve="SysMLv2Usage" />
+    <node concept="1TJgyi" id="3MUZSeGZXvx" role="1TKVEl">
+      <property role="IQ2nx" value="4376090928952104929" />
+      <property role="TrG5h" value="withKeyword" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="3MUZSeGZXvy" role="1TKVEi">
+      <property role="IQ2ns" value="4376090928952104930" />
+      <property role="20kJfa" value="source" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
+    <node concept="1TJgyj" id="3MUZSeGZXvz" role="1TKVEi">
+      <property role="IQ2ns" value="4376090928952104931" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeGZXv$" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeGZXv_" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeGZXvA" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeGZXvB" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
+    </node>
+  </node>
 </model>
 

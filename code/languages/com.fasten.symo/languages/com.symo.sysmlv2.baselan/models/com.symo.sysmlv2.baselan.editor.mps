@@ -3757,5 +3757,83 @@
       <node concept="l2Vlx" id="3MUZSeG2pio" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="3MUZSeGZZg4">
+    <property role="TrG5h" value="SysMLv2BindingUsage_Editor" />
+    <property role="3GE5qa" value="binding" />
+    <ref role="1XX52x" to="5rf1:3MUZSeGZXvw" resolve="SysMLv2BindingUsage" />
+    <node concept="3EZMnI" id="3MUZSeGZZg6" role="2wV5jI">
+      <node concept="PMmxH" id="3MUZSeGZZg7" role="3EZMnx">
+        <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
+      </node>
+      <node concept="3F0ifn" id="3MUZSeGZZg8" role="3EZMnx">
+        <property role="3F0ifm" value="binding" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+        <node concept="pkWqt" id="3MUZSeGZZg9" role="pqm2j">
+          <node concept="3clFbS" id="3MUZSeGZZgb" role="2VODD2">
+            <node concept="3cpWs6" id="3MUZSeGZZgc" role="3cqZAp">
+              <node concept="2OqwBi" id="3MUZSeGZZgd" role="3cqZAk">
+                <node concept="pncrf" id="3MUZSeGZZgg" role="2Oq$k0" />
+                <node concept="3TrcHB" id="3MUZSeGZZgh" role="2OqNvi">
+                  <ref role="3TsBF5" to="5rf1:3MUZSeGZXvx" resolve="withKeyword" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0A7n" id="3MUZSeGZZgi" role="3EZMnx">
+        <property role="39s7Ar" value="true" />
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        <node concept="pkWqt" id="3MUZSeGZZgj" role="pqm2j">
+          <node concept="3clFbS" id="3MUZSeGZZgl" role="2VODD2">
+            <node concept="3cpWs6" id="3MUZSeGZZgm" role="3cqZAp">
+              <node concept="2OqwBi" id="3MUZSeGZZgn" role="3cqZAk">
+                <node concept="pncrf" id="3MUZSeGZZgq" role="2Oq$k0" />
+                <node concept="3TrcHB" id="3MUZSeGZZgr" role="2OqNvi">
+                  <ref role="3TsBF5" to="5rf1:3MUZSeGZXvx" resolve="withKeyword" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="3MUZSeGZZgs" role="3EZMnx">
+        <property role="3F0ifm" value="bind" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F1sOY" id="3MUZSeGZZgt" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:3MUZSeGZXvy" />
+      </node>
+      <node concept="3F0ifn" id="3MUZSeGZZgu" role="3EZMnx">
+        <property role="3F0ifm" value="=" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F1sOY" id="3MUZSeGZZgv" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:3MUZSeGZXvz" />
+      </node>
+      <node concept="3F0ifn" id="3MUZSeGZZgw" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+        <node concept="11L4FC" id="3MUZSeGZZgx" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="3MUZSeGZZgy" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="3INDKC" id="3MUZSeGZZgP">
+    <property role="TrG5h" value="SysMLv2BindingUsage_PrefixMetadataContribution" />
+    <property role="3GE5qa" value="binding" />
+    <node concept="A1WHr" id="3MUZSeGZZgR" role="AmTjC">
+      <ref role="2ZyFGn" to="5rf1:3MUZSeGZXvw" resolve="SysMLv2BindingUsage" />
+    </node>
+    <node concept="1Qtc8_" id="3MUZSeGZZgS" role="IW6Ez">
+      <node concept="wWMWC" id="3MUZSeGZZgU" role="1Qtc8$" />
+      <node concept="mvV$s" id="3MUZSeGZZgV" role="1Qtc8A">
+        <node concept="A1WHu" id="3MUZSeGZZgW" role="A14EM">
+          <ref role="A1WHt" node="BOR0Mn0IWN" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadataMenu" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
