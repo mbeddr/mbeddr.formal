@@ -1123,3 +1123,12 @@ body; import + reification + roundtrip), editor `_110_Connections_AddBodyAttribu
 Open: value assignment (`attribute :>> bandwidth = 100;`) is still rejected by the importer (needs a value
 expression on attribute usages; the metadata `LiteralExpression` could be reused); explicit end features in
 usage bodies (`end part hub ::> mainSwitch;`, needs `::>` reference subsetting); bodies on port/item usages.
+
+**Iteration 18b (2026-10-20) — metadata on connections**: `#X` prefix metadata on connection usages already
+worked in text/importer/textgen (a connection usage is a usage → `ISysMLv2PrefixMetadataOwner`); added
+`SysMLv2ConnectionUsage_PrefixMetadataContribution` so `#` typed before `connect`/`connection` works in the
+editor. `connection def` gets `#` via the part definition's default menu (no own menu). `@X` metadata usages
+are part body content, so they work inside connection usage bodies. Tests: importer
+`_210_ConnectionMetadataTest` (`#Safety connection def`, `#Safety connect x to y;`, `@Safety;` in a connection
+body; import + reification + roundtrip), editor `_120_Connections_PrefixMetadata` (`#` before `connect`).
+Importer 52/52, baselan 23/23.
