@@ -1234,3 +1234,52 @@ participant of an end feature (`end port p ::> engine.out;`, `ref part x ::> y`)
 `UsageRef`), a scope that starts at the *enclosing connection's* owner rather than at the end feature itself, and the `ref`
 keyword for reference usages. Also open: type compatibility of bound features (spec: bound features must be compatible),
 `bind` bodies, `bind` inside port definitions, n-ary connectors.
+
+**Iteration 22 (2026-10-20) — flows (`flow def`, `flow of T from a.p to b.q;`), spec-aligned (see ADR 0001)**: first implemented as a
+subconcept of the connection concepts (wrong: spec 8.3.16.2/3 makes a `FlowUsage` an `ActionUsage` + `ConnectorAsUsage` (+ KerML `Flow`) and a
+`FlowDefinition` an `ActionDefinition` + `Interaction`, neither a part or connection) and reworked the same day. Structure now:
+`SysMLv2FlowUsage extends SysMLv2ActionUsage extends SysMLv2OccurrenceUsage extends SysMLv2Usage` (new abstract placeholders, virtual folder `base`),
+implements the new marker interface `ISysMLv2ConnectorAsUsage` (also implemented by `SysMLv2ConnectionUsage` and `SysMLv2BindingUsage`), with its own
+children `type : SysMLv2FlowDefinitionRef`, `payload : SysMLv2ItemDefinitionRef`, `source`/`target : SysMLv2ConnectorEnd`; it is part/item body content
+like binding (no body of its own: action bodies are not modelled, `{ … }` is rejected). `SysMLv2FlowDefinition extends SysMLv2ActionDefinition extends
+SysMLv2OccurrenceDefinition` (alias `flow def`), children `specializes : SysMLv2FlowDefinitionRef`, `content : ISysMLv2ItemBodyContent`; new
+`SysMLv2FlowDefinitionRef` (clone of the connection definition ref: smart reference, scope, editor, textgen, behavior). Alignment done on the way:
+`ItemDefinition` now extends `OccurrenceDefinition`, `ItemUsage` and `PortUsage` extend `OccurrenceUsage` (non-breaking).
+Canonical text: `flow [name] [: FlowDef] [of Payload] from <src> to <tgt>;`, `flow def N :> S { … }`. Importer: `visitFlowDefinition`, `visitFlowUsage`
+handles all three grammar alternatives of `flowDeclaration` (`featureDeclaration` form `flow n : T of P from a to b`, the bare `flow a to b;`
+normalized to `flow from a to b;`, and the `usageDeclaration` form `flow of P from a to b`); payload must be a plain type name; `all`, value parts,
+bodies, multiplicity, subsetting/redefinition, qualified typing and `succession flow`/`message` are rejected; helpers `newFlowDefinition`,
+`addFlowSpecialization`, `addFlowContent`, `newFlowUsage`, `extractFlowEndChain`, `extractTypingName`, `extractPayloadTypeName`; reifier
+`reifyFlowDefinitionRefs` (+ `TestUtils` wrapper).
+Checks: (1) *scope* — a flow usage's type is a `FlowDefinitionRef`, so only flow definitions are offered (and a connection usage's type no longer
+offers flow definitions); (2) *checking rule* `check_SysMLv2FlowUsage_ends`: the source end must not be an `in` feature, the target end must not be an
+`out` feature, and a given payload must specialize-or-equal the declared type of the end feature (`ISysMLv2FeatureOwner.specializesOrEqualsWithin`,
+depth-limited walk over `directSuperDefinitions`); logic in `SysMLv2FlowUsage.endProblem(isSource)`, helpers `SysMLv2ConnectorEnd.lastUsage /
+endDirection / endTypeDefinition`. Directions and types are only read where present, unresolved or untyped ends are not reported.
+Tests: importer `_250_FlowTest` (import with fixture incl. both declaration forms, roundtrip, normalization of the short form; run config
+`_250_test_sysmlv2_flow`); editor `_170_Flows_EditFlowUsage`; scope `_070_FlowTypeScope` (`FlowDefinitionRef` offers `{F1, F2}`; a connection usage
+in the same file offers `{Plain, Link}`, no flow definitions); checking rules `_030_FlowEndsCheck` (`ok1` incl. payload `Fuel :> Liquid`, `ok2` without
+payload are clean; `in` source, `out` target and a non-conforming payload carry `has error` — verified on an unannotated copy, which reports exactly
+those three). Importer 61/61, Each `error` statement also carries a named label annotation (`ReportErrorStatementAnnotation`): `flow_usage_source_end_direction_problem`, `flow_usage_target_end_direction_problem`, `flow_usage_source_end_payload_problem`, `flow_usage_target_end_payload_problem`, `interface_usage_source_end_not_port_problem`, `interface_usage_target_end_not_port_problem`. Convention: add the label to every new `error` statement.
+baselan 45/45.
+Not done: payload multiplicity and named/typed payload features (`of weight : Mass[1]`), `flow all`, flows whose ends are ports (the checks read
+directions of item/port/attribute usages only, not the items inside a port type), `succession flow`, `message`, flow definition ends, KerML-level
+`Flow`/`Interaction`, and the remaining items of the ADR's list of known deviations.
+
+**Labeled checking-rule messages (2026-10-20)**: every `error` in a baselan `NonTypesystemRule` carries a label prefix
+`[<kind>-<what>]`, and each cause has its own `error` statement, which the checking-rule tests reference explicitly via
+`has error` → `ReportErrorStatementReference` (see gotcha "Test `has error` can point at the exact `error` statement").
+Labels: `[interface-source-not-port]`, `[interface-target-not-port]` (rule `check_SysMLv2InterfaceUsage_endsArePorts`);
+`[flow-source-direction]`, `[flow-target-direction]`, `[flow-payload-type]` (rule `check_SysMLv2FlowUsage_ends`, four statements:
+source/target direction, source/target payload). `SysMLv2FlowUsage.endProblem` was split into `endDirectionProblem(isSource)` and
+`payloadProblem(isSource)`. Convention for new rules: one statement per cause, label first, test annotation references the statement.
+Not covered: `_020_AttributeValueLiteralCheck` uses `has constraints error` (constraint-level, not a checking rule), which has no statement to reference.
+Each `error` statement also carries a named label annotation (`ReportErrorStatementAnnotation`): `flow_usage_source_end_direction_problem`, `flow_usage_target_end_direction_problem`, `flow_usage_source_end_payload_problem`, `flow_usage_target_end_payload_problem`, `interface_usage_source_end_not_port_problem`, `interface_usage_target_end_not_port_problem`. Convention: add the label to every new `error` statement.
+baselan 45/45.
+
+**Checking helpers live in the typesystem aspect (2026-10-20)**: methods that only exist to *report errors* belong with the checking rules, not in
+concept behavior. They are static methods of plain classes in the typesystem model, the node being the first parameter `self`:
+`ConnectorEndHelper.endsAtNonPort` and `FlowUsageHelper.directionProblem / payloadProblem` (rules call e.g. `FlowUsageHelper.directionProblem(flowUsage, true)`).
+Methods that *navigate the model* stay in behavior: `SysMLv2ConnectorEnd.lastUsage / endDirection / endTypeDefinition` and
+`ISysMLv2FeatureOwner.specializesOrEqualsWithin` (the helpers call them). Rule of thumb: navigation/queries -> behavior; error-message construction and
+check predicates -> typesystem helper classes. baselan 45/45, importer 61/61.

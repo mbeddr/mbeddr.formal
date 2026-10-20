@@ -10,6 +10,25 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## Test `has error` can point at the exact `error` statement — one statement per cause (2026-10-20)
+
+A checking-rule test annotation created as plain `has error` (`NodeUnknownErrorCheckOperation`) accepts *any* error on
+the node, so a reader of the test cannot tell what is expected to fail and a different failure silently satisfies it.
+`NodeErrorCheckOperation` has a child `errorRef : ReportErrorStatementReference` whose `declaration` reference
+targets the `error` statement inside the `NonTypesystemRule`; the generated test then checks that this statement
+produced the error. Consequences: (1) a statement is the unit of identity, so give every distinct cause its *own*
+`error` statement (do not report two causes through one statement fed by a helper that returns different strings);
+(2) put a stable label at the start of each message (`[flow-source-direction] …`) so the message in the editor/problems
+view maps back to the statement; (3) through MCP replace the annotation with `update_node SET CHILD` (parent = the
+`NodeOperationsContainer`, `childRole nodeOperations`, `childNodeRef` = old annotation, `childJson` = new one with
+`errorRef` → `ReportErrorStatementReference` with a `declaration` reference whose `targetReference` is the statement).
+
+Tool traps hit on the way: `update_node SET PROPERTY` takes `properties` as an array of **triplets**
+`[nodeRef, name, value]`; deleting a list element is `SET CHILD` with `childNodeRef` and no `childJson`; when
+generating JSON from a *printed* node, `target` holds the **current** name of a referenced declaration — so after
+renaming a method, a script that matches `target == oldName` silently changes nothing (the call kept pointing at the
+renamed method; found only because a test failed). Always verify the printed rule after a scripted rewrite.
+
 ## A position-dependent reference scope must also handle `referenceNode != null` — `ScopesTest` calls it that way (2026-10-20)
 
 A referent scope written only against `(contextNode, containmentLink, position)` — needed for completion of list
@@ -53,6 +72,10 @@ Before inserting an aspect root for a concept, list the aspect model's roots wit
 concept: `search_root_node_by_name` missed an existing `SysMLv2PortUsage_Behavior`, the duplicate root then broke
 the language make with "Duplicate unit name ...BehaviorDescriptor.java" (delete the stray root with
 `update_root_node_from_json DELETE` and merge the methods into the original).
+The parser path also does not catch a wrong *cardinality guess* of a generated ANTLR accessor when the type happens to
+offer the same method: `fd.valuePart().isEmpty()` type-checked (`RuleContext.isEmpty()`) but threw an NPE at runtime because
+the accessor returns a single context, `null` when absent — check the generated rule shape (an element that appears once
+per alternative is a single accessor, even if it occurs in several alternatives) and cover every alternative in a test.
 
 ## A cloned `KeyMapKeystroke` (editor-test `press keys`) comes back with an empty `change` enum (2026-10-20)
 
