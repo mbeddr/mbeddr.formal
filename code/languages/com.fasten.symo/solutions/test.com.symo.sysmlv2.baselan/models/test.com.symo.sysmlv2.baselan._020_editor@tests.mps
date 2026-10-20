@@ -1588,5 +1588,93 @@
       </node>
     </node>
   </node>
+  <node concept="LiM7Y" id="3MUZSeFZHnR">
+    <property role="3YCmrE" value="typing # in front of connect adds a prefix metadata to the connection usage" />
+    <property role="TrG5h" value="_120_Connections_PrefixMetadata" />
+    <node concept="1qefOq" id="3MUZSeFZHnS" role="25YQCW">
+      <node concept="2h0jOr" id="3MUZSeFZHnU" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3MUZSeFZHnV" role="2h0jOs">
+          <property role="TrG5h" value="pack_120" />
+          <node concept="1_WVX2" id="3MUZSeFZHnW" role="3Z9vGx">
+            <property role="TrG5h" value="Safety" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3MUZSeFZHnX" role="2h0jOs" />
+        <node concept="3ZUotO" id="3MUZSeFZHnY" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2uUmlE" id="3MUZSeFZHnZ" role="3w00ZY">
+            <node concept="2uUmlD" id="3MUZSeFZHo4" role="2uUmly">
+              <node concept="3wdj9f" id="3MUZSeFZHo6" role="2uUmlA" />
+            </node>
+            <node concept="2uUmlD" id="3MUZSeFZHo7" role="2uUmlz">
+              <node concept="3wdj9f" id="3MUZSeFZHo9" role="2uUmlA" />
+            </node>
+            <node concept="LIFWc" id="3MUZSeFZHoa" role="lGtFl">
+              <property role="LIFWd" value="Constant_yj3wp4_e0a" />
+              <property role="LIFWa" value="0" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3MUZSeFZHob" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="3MUZSeFZHoc" role="25YQFr">
+      <node concept="2h0jOr" id="3MUZSeFZHoe" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3MUZSeFZHof" role="2h0jOs">
+          <property role="TrG5h" value="pack_120" />
+          <node concept="1_WVX2" id="3MUZSeFZHog" role="3Z9vGx">
+            <property role="TrG5h" value="Safety" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3MUZSeFZHoh" role="2h0jOs" />
+        <node concept="3ZUotO" id="3MUZSeFZHoi" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2uUmlE" id="3MUZSeFZHoj" role="3w00ZY">
+            <node concept="1y9Dpe" id="3MUZSeFZHoo" role="1y9Dp3">
+              <node concept="1_WVX5" id="3MUZSeFZHoq" role="1y9Dp0">
+                <ref role="gQIM1" node="3MUZSeFZHof" />
+                <ref role="1_WVXv" node="3MUZSeFZHog" />
+              </node>
+            </node>
+            <node concept="2uUmlD" id="3MUZSeFZHor" role="2uUmly">
+              <node concept="3wdj9f" id="3MUZSeFZHot" role="2uUmlA" />
+            </node>
+            <node concept="2uUmlD" id="3MUZSeFZHou" role="2uUmlz">
+              <node concept="3wdj9f" id="3MUZSeFZHow" role="2uUmlA" />
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3MUZSeFZHox" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3MUZSeFZHoy" role="LjaKd">
+      <node concept="2TK7Tu" id="3MUZSeFZHoz" role="3cqZAp">
+        <property role="2TTd_B" value="#" />
+      </node>
+      <node concept="2HxZob" id="3MUZSeFZHo$" role="3cqZAp">
+        <node concept="3iKlGA" id="3MUZSeFZHoA" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeFZHoB" role="3cqZAp">
+        <property role="2TTd_B" value="pack_120::Safety" />
+      </node>
+      <node concept="2HxZob" id="3MUZSeFZHoC" role="3cqZAp">
+        <node concept="3iKlGA" id="3MUZSeFZHoE" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="3MUZSeFZHoF" role="3cqZAp">
+        <node concept="pLAjd" id="3MUZSeFZHoH" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

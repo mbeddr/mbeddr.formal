@@ -3504,5 +3504,20 @@
       </node>
     </node>
   </node>
+  <node concept="3INDKC" id="3MUZSeFZHaY">
+    <property role="3GE5qa" value="connection" />
+    <property role="TrG5h" value="SysMLv2ConnectionUsage_PrefixMetadataContribution" />
+    <node concept="A1WHr" id="3MUZSeFZHb0" role="AmTjC">
+      <ref role="2ZyFGn" to="5rf1:BOR0Mn7r_A" resolve="SysMLv2ConnectionUsage" />
+    </node>
+    <node concept="1Qtc8_" id="3MUZSeFZHb1" role="IW6Ez">
+      <node concept="wWMWC" id="3MUZSeFZHb3" role="1Qtc8$" />
+      <node concept="mvV$s" id="3MUZSeFZHb4" role="1Qtc8A">
+        <node concept="A1WHu" id="3MUZSeFZHb5" role="A14EM">
+          <ref role="A1WHt" node="BOR0Mn0IWN" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadataMenu" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
