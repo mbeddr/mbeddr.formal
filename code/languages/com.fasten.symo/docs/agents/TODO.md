@@ -1132,3 +1132,40 @@ are part body content, so they work inside connection usage bodies. Tests: impor
 `_210_ConnectionMetadataTest` (`#Safety connection def`, `#Safety connect x to y;`, `@Safety;` in a connection
 body; import + reification + roundtrip), editor `_120_Connections_PrefixMetadata` (`#` before `connect`).
 Importer 52/52, baselan 23/23.
+
+**Iteration 19 (2026-10-20) — interfaces (`interface def` / `interface` usage) and port bodies**: SysML v2 says an
+interface definition is a connection definition and an interface usage is a connection usage, so
+`SysMLv2InterfaceDefinition extends SysMLv2ConnectionDefinition` (alias `interface def`) and
+`SysMLv2InterfaceUsage extends SysMLv2ConnectionUsage` (alias `interface`); both live in virtual package `interface`.
+No dedicated `InterfaceDefinitionRef`: an interface usage's `type` is the existing `SysMLv2ConnectionDefinitionRef`;
+`SysMLv2ConnectionDefinitionRef_Constraints` narrows the `definition` scope to `SysMLv2InterfaceDefinition` when the
+ref's parent is an interface usage (ternary on the concept passed to `definitionScope`). That narrowing only drives
+completion/scoping; a hand-built or imported interface usage typed by a plain connection def is **not** reported
+(the reifier resolves by `SysMLv2ConnectionDefinition`, which includes interface defs and plain connection defs).
+Editors/textgens are clones of the connection ones with a mandatory `interface` keyword (name cell always shown, no
+`withKeyword`); `interface def` is the connection def editor with `interface def`. `#` prefix metadata on
+`interface def`/`interface` works through the inherited default menus (not separately tested).
+Canonical text: `interface def N :> S {` + body, `interface [name] [: T] connect a.p to b.q;` (or ` {` body `}`).
+Port bodies: `SysMLv2PortUsage` gained `content : ISysMLv2PortBodyContent[0..n]` and implements `ISysMLv2FeatureOwner`
+(behavior in the existing `SysMLv2PortUsage_Behavior`: `ownedFeatures` = body, `directSuperDefinitions` = type
+definition, matching text = plain name), so `port bus : Bus { port extra : P; }` works and chains such as
+`a.bus.extra` resolve through the body. Editor/textgen: same `{ content }` grammar-cell option as part and
+connection usages. `ICanBelongOnlyToSysMLv2PartOwner.canBeChild` now also accepts `SysMLv2PortDefinition` and
+`SysMLv2PortUsage` parents (a port nested in a port def/usage was formerly only legal under part owners; the
+`content` link types still keep part usages out of port bodies).
+Importer: `visitInterfaceDefinition`, `visitInterfaceBodyItem` (interface bodies use their own grammar rules:
+`definitionMember`, attribute usages, `end port`/structure usages; rejects imports, aliases, variants, successions,
+default `end x : T;`, visibility), `visitInterfaceUsage` (binary only, `connect` or the bare `a to b` form; rejects
+n-ary, value, multiplicity, subsetting/redefinition, named/multiplicity ends, qualified chain steps),
+`extractInterfaceEndChain`; port usage bodies are now imported (was: "non-empty port usage body" rejection) and may
+only contain `ISysMLv2PortBodyContent`. Dispatch added in `visitDefinitionElement` / `visitStructureUsageElement`.
+New static helpers hold the typed smodel parts (`newInterfaceDefinition`, `newInterfaceUsage`, `addItemSpecialization`,
+`addItemContent`, `addPartContent`, `addPortContent`, `markEnd`); see the 2026-10-20 gotcha on the authoring recipe.
+Tests: importer `_220_InterfaceTest` (import with fixture incl. conjugated end, nested ports and chains through port
+bodies, plus roundtrip; run config `_220_test_sysmlv2_interfaces`), editor `_130_Interfaces_EditInterfaceUsage`
+(`interface`, `link`, TAB, `engine.drive`, `gearbox.input` with completion) and `_140_Ports_AddNestedPort` (`port bus`,
+`{`, `port nested`). Importer 54/54, baselan 25/25.
+Open / not done: connector ends of an interface usage are not restricted to ports (any usage is accepted, as for
+`connect`); no sandbox fixture (the sandbox's `_100_manually_written` model had uncommitted changes of its own);
+`end x : T;` (default interface end), n-ary interface usages, `bind`, `flow`, attribute values and bodies on item
+usages remain for later iterations (planned order: 20 attribute values, 21 `bind`/`::>`, 22 flows).

@@ -10,6 +10,35 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## Authoring big ANTLR visitor methods: plain Java through the parser, typed smodel in small cloned helpers (2026-10-20)
+
+`mps_mcp_parse_java_and_insert` (`CLASS_CONTENT`, `insert.mode: child`, `role: member`; `STATEMENTS` into an
+existing method body via `parentRef` = the body `StatementList`) resolves nested stub classes by simple name
+(`SysMLv2Parser.InterfaceUsageContext`, its accessors, `RuntimeException`, `List<String>`) and handles all the
+plain-Java parts of a `visitXxx` method, including calls to the class's own `private static` helpers when they are
+qualified with the class name. It cannot produce `node<C>` creation, `x.prop = v`, `nlist.add(...)` or `x:C` casts.
+
+**How to apply:** (1) insert skeleton helpers through the parser (`static SNode newXxx(String name) { return null; }`,
+`static void addXxxContent(SNode owner, SNode child) { }`); (2) replace each helper's body with a `StatementList`
+JSON built by cloning the matching statements out of an existing, similar method (`print_node deep` → select
+statements by their node-id suffix → swap concept ids → rewrite `variableDeclaration` references to plain names
+with the `targetReference` dropped, see the "local-variable reference" gotcha below; `update_node SET CHILD` on the
+helper's body node); (3) write the `visitXxx` method itself as plain Java through the parser, calling the helpers
+and accessors. Stub-class method accessors never need hand-derived `baseMethodDeclaration` refs this way.
+Before inserting an aspect root for a concept, list the aspect model's roots with `FIND_INSTANCES` of the root
+concept: `search_root_node_by_name` missed an existing `SysMLv2PortUsage_Behavior`, the duplicate root then broke
+the language make with "Duplicate unit name ...BehaviorDescriptor.java" (delete the stray root with
+`update_root_node_from_json DELETE` and merge the methods into the original).
+
+## A cloned `KeyMapKeystroke` (editor-test `press keys`) comes back with an empty `change` enum (2026-10-20)
+
+Cloning an `EditorTestCase` through its `print_node` JSON drops the unset `KeyMapKeystroke.change`; the re-inserted
+node has an *empty* enum value and `check_root_node_problems` reports "Empty enumeration property" (the test still
+runs). Same family as the unset-boolean and unset-style-flag entries below.
+
+**How to apply:** after cloning an editor test, `update_node SET PROPERTY ... change replace_all` on every
+`KeyMapKeystroke` (`replace_all` is the default the original nodes had).
+
 ## Reference completion for list elements whose editor is just a ref cell (2026-10-19)
 
 Four traps when a child concept (e.g. `UsageRef` with link `usage`) whose whole editor is a reference
