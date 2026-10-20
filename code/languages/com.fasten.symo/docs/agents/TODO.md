@@ -1288,3 +1288,13 @@ check predicates -> typesystem helper classes. baselan 45/45, importer 61/61.
 `SysMLv2OccurrenceDefinition` and `SysMLv2AttributeDefinition`; `SysMLv2PortDefinition` now extends `SysMLv2OccurrenceDefinition` (8.3.12.5).
 `PartDefinition` was already an `ItemDefinition`. No aspect needed changes. baselan 45/45, importer 61/61. Open: `PartUsage` -> `ItemUsage`,
 `MetadataDefinition/Usage` -> `ItemDefinition/Usage`, connector ends once on `ConnectorAsUsage`, own ref for `ConnectionDefinition` specializations.
+
+**Metadata aligned with items (2026-10-20, alignment 1 of 4)**: spec 8.3.27 — `MetadataDefinition` is an `ItemDefinition` (+ KerML `Metaclass`) and `MetadataUsage` an
+`ItemUsage` (+ `MetadataFeature`). `SysMLv2MetadataDefinition extends SysMLv2ItemDefinition` and `SysMLv2MetadataUsage extends SysMLv2ItemUsage`; both lost their duplicated
+interfaces and slots and now use the inherited `specializes : ItemDefinitionRef`, `content : ISysMLv2ItemBodyContent` (a metadata definition body is an item body, no longer
+attribute-only) and `type : ItemDefinitionRef`. `SysMLv2MetadataDefinitionRef` remains for `#Prefix` metadata. The `ItemDefinitionRef` scope narrows to metadata definitions when the
+parent is a `MetadataUsage` (same pattern as connection/interface/flow). New `SysMLv2MetadataUsage_Behavior` constructor creates the empty `type` ref (the slot is `[0..1]` now);
+`SysMLv2MetadataDefinition_Behavior` was removed (inherited). Importer: metadata def specializations/types are `ItemDefinitionRef`s (`itemDefinitionName`); test utils reify them with
+`reifyItemDefinitionRefs` (prefix metadata still `reifyMetadataDefinitionRefs`). Tests: new scope test `_080_MetadataTypeScope` (metadata usage type -> `{MD1, MD2}`, item usage
+type also offers metadata defs), importer `_171_MetadataSpecializationTest`; fixtures of `_170`, `_210` and editor `_090_Metadata_MetadataInPartDef` rebuilt. baselan 47/47, importer 63/63.
+The sandbox's `metadata def SafetyRelevance { attribute ASIL; }` was migrated to the inherited `content` slot (see gotcha on removing child slots).

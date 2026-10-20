@@ -10,6 +10,22 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## Deleting a child link declaration orphans its children invisibly — they still count in comparisons (2026-10-20)
+
+Removing a `LinkDeclaration` (e.g. when a concept now inherits an equivalent slot from a new super concept) leaves existing
+children in that role as *orphans*: `print_node` and `check_root_node_problems` do not show them and nothing fails, but test
+comparisons (`AssertNodeEquals`, editor test results) still count them as children of a role of the same name ("Different
+children count in role: type [was: 0, expected: 1]" next to its mirror "[was: 1, expected: 0]"). Also models you do not own
+(sandbox) silently lose their content.
+
+**How to migrate:** first switch `extends`, *rename* the old links (`role`/`name` -> `legacyX`) so role names are unambiguous,
+**rebuild the language** (the move resolves roles against the compiled structure; before the rebuild it moved nothing and still
+reported success), then `mps_mcp_alter_nodes MOVE_NODE_TO_PARENT` (`nodeReference`, `newParentRef`, `role`) each child into the
+inherited role; only then delete the old links. For fixtures that cannot be migrated (orphans are not addressable), replace the
+whole owning node with `update_node SET CHILD` (parent, role, `childNodeRef`, `childJson`). When building JSON from a printed
+node, drop the display-only top-level keys (`name`, `doc`, `deprecated`, ...): a leftover `name` is applied as the *property*
+`name`.
+
 ## Test `has error` can point at the exact `error` statement — one statement per cause (2026-10-20)
 
 A checking-rule test annotation created as plain `has error` (`NodeUnknownErrorCheckOperation`) accepts *any* error on

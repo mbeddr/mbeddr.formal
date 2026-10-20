@@ -79,6 +79,10 @@
         <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
       </concept>
+      <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
+        <child id="7140692429574298135" name="type" index="3w00ZT" />
+        <child id="7140692429574298133" name="direction" index="3w00ZV" />
+      </concept>
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
         <child id="7140692429574298127" name="specializes" index="3w00Zx" />
         <child id="7140692429574298128" name="content" index="3w00ZY" />
@@ -91,6 +95,7 @@
         <property id="7140692429575677861" name="usageName" index="3wdj9b" />
         <reference id="7140692429575677862" name="usage" index="3wdj98" />
       </concept>
+      <concept id="7140692429570900090" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureDirection" flags="ng" index="3xZtmk" />
       <concept id="7140692429570900088" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinitionRef" flags="ng" index="3xZtmm">
         <property id="7140692429570900096" name="portDefinitionName" index="3xZtlI" />
         <reference id="7140692429570900097" name="definition" index="3xZtlJ" />
@@ -99,6 +104,8 @@
         <child id="7140692429570900101" name="type" index="3xZtlF" />
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp" />
+      <concept id="6214786105876472907" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinition" flags="ng" index="1_WVX2" />
+      <concept id="6214786105876472909" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataUsage" flags="ng" index="1_WVX4" />
       <concept id="6214786105876472911" name="com.symo.sysmlv2.baselan.structure.SysMLv2LiteralExpression" flags="ng" index="1_WVX6">
         <property id="6214786105876472933" name="value" index="1_WVXG" />
       </concept>
@@ -592,6 +599,69 @@
                 <node concept="3wdj9f" id="3MUZSeIlBQV" role="2uUmlA">
                   <property role="3wdj9b" value="b" />
                   <ref role="3wdj98" node="3MUZSeIlcjx" resolve="b" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3MUZSeIXgP2">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_080_MetadataTypeScope" />
+    <node concept="1qefOq" id="3MUZSeIXgP3" role="1SKRRt">
+      <node concept="2h0jOr" id="3MUZSeIXgP5" role="1qenE9">
+        <property role="TrG5h" value="_080_MetadataTypeScope_file" />
+        <node concept="3Z9vzX" id="3MUZSeIXgP6" role="2h0jOs">
+          <property role="TrG5h" value="pm" />
+          <node concept="1_WVX2" id="3MUZSeIXgP7" role="3Z9vGx">
+            <property role="TrG5h" value="MD1" />
+          </node>
+          <node concept="1_WVX2" id="3MUZSeIXgP8" role="3Z9vGx">
+            <property role="TrG5h" value="MD2" />
+          </node>
+          <node concept="3w00Z_" id="3MUZSeIXgP9" role="3Z9vGx">
+            <property role="TrG5h" value="I1" />
+          </node>
+          <node concept="3ZUotO" id="3MUZSeIXgPa" role="3Z9vGx">
+            <property role="TrG5h" value="Sys" />
+            <node concept="1_WVX4" id="3MUZSeIXgPb" role="3w00ZY">
+              <property role="TrG5h" value="m" />
+              <node concept="3w00Zy" id="3MUZSeIXgPd" role="3w00ZT">
+                <property role="3w00ZX" value="MD1" />
+                <ref role="3w00ZU" node="3MUZSeIXgP7" resolve="MD1" />
+                <node concept="2rqxmr" id="3MUZSeIXgPh" role="lGtFl">
+                  <ref role="1BTHP0" node="3MUZSeIXgP7" resolve="MD1" />
+                  <node concept="3KTrbX" id="3MUZSeIXgPi" role="3KTr4d">
+                    <ref role="3AHY9a" node="3MUZSeIXgP7" resolve="MD1" />
+                  </node>
+                  <node concept="3KTrbX" id="3MUZSeIXgPj" role="3KTr4d">
+                    <ref role="3AHY9a" node="3MUZSeIXgP8" resolve="MD2" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3w00Zz" id="3MUZSeIXgPe" role="3w00ZY">
+              <property role="TrG5h" value="i" />
+              <node concept="3xZtmk" id="3MUZSeIXgPf" role="3w00ZV" />
+              <node concept="3w00Zy" id="3MUZSeIXgPg" role="3w00ZT">
+                <property role="3w00ZX" value="I1" />
+                <ref role="3w00ZU" node="3MUZSeIXgP9" resolve="I1" />
+                <node concept="2rqxmr" id="3MUZSeIXgPk" role="lGtFl">
+                  <ref role="1BTHP0" node="3MUZSeIXgP9" resolve="I1" />
+                  <node concept="3KTrbX" id="3MUZSeIXgPl" role="3KTr4d">
+                    <ref role="3AHY9a" node="3MUZSeIXgP9" resolve="I1" />
+                  </node>
+                  <node concept="3KTrbX" id="3MUZSeIXgPm" role="3KTr4d">
+                    <ref role="3AHY9a" node="3MUZSeIXgP7" resolve="MD1" />
+                  </node>
+                  <node concept="3KTrbX" id="3MUZSeIXgPn" role="3KTr4d">
+                    <ref role="3AHY9a" node="3MUZSeIXgP8" resolve="MD2" />
+                  </node>
+                  <node concept="3KTrbX" id="3MUZSeIXgPo" role="3KTr4d">
+                    <ref role="3AHY9a" node="3MUZSeIXgPa" resolve="Sys" />
+                  </node>
                 </node>
               </node>
             </node>

@@ -227,8 +227,24 @@
               </node>
               <node concept="2qgKlT" id="4N4m7hs92Rg" role="2OqNvi">
                 <ref role="37wK5l" to="5wt7:3tSWG0_D0yE" resolve="definitionScope" />
-                <node concept="35c_gC" id="4N4m7hs92Rh" role="37wK5m">
-                  <ref role="35c_gD" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
+                <node concept="3K4zz7" id="3MUZSeIErpr" role="37wK5m">
+                  <node concept="2OqwBi" id="3MUZSeIErpv" role="3K4Cdx">
+                    <node concept="2OqwBi" id="3MUZSeIErpy" role="2Oq$k0">
+                      <node concept="3kakTB" id="3MUZSeIErp_" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="3MUZSeIErpA" role="2OqNvi" />
+                    </node>
+                    <node concept="1mIQ4w" id="3MUZSeIErpB" role="2OqNvi">
+                      <node concept="chp4Y" id="3MUZSeIErpD" role="cj9EA">
+                        <ref role="cht4Q" to="5rf1:5oZmK$NNehd" resolve="SysMLv2MetadataUsage" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="35c_gC" id="3MUZSeIErpE" role="3K4E3e">
+                    <ref role="35c_gD" to="5rf1:5oZmK$NNehb" resolve="SysMLv2MetadataDefinition" />
+                  </node>
+                  <node concept="35c_gC" id="3MUZSeIErpF" role="3K4GZi">
+                    <ref role="35c_gD" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
+                  </node>
                 </node>
               </node>
             </node>

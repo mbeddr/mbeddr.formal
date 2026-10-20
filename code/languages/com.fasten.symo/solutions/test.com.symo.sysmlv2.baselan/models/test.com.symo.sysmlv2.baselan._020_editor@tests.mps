@@ -135,9 +135,7 @@
         <property id="6214786105874793930" name="language" index="1_z1V3" />
       </concept>
       <concept id="6214786105876472907" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinition" flags="ng" index="1_WVX2" />
-      <concept id="6214786105876472909" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataUsage" flags="ng" index="1_WVX4">
-        <child id="6214786105876472921" name="type" index="1_WVXg" />
-      </concept>
+      <concept id="6214786105876472909" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataUsage" flags="ng" index="1_WVX4" />
       <concept id="6214786105876472908" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinitionRef" flags="ng" index="1_WVX5">
         <reference id="6214786105876472918" name="definition" index="1_WVXv" />
       </concept>
@@ -1173,10 +1171,10 @@
         <node concept="2h0jOo" id="5oZmK$O6q_F" role="2h0jOs" />
         <node concept="3ZUotO" id="5oZmK$O6q_G" role="2h0jOs">
           <property role="TrG5h" value="Car" />
-          <node concept="1_WVX4" id="5oZmK$O6q_H" role="3w00ZY">
-            <node concept="1_WVX5" id="5oZmK$O6q_J" role="1_WVXg">
-              <ref role="gQIM1" node="5oZmK$O6q_D" />
-              <ref role="1_WVXv" node="5oZmK$O6q_E" />
+          <node concept="1_WVX4" id="3MUZSeIY8Cq" role="3w00ZY">
+            <node concept="3w00Zy" id="3MUZSeIY8Cs" role="3w00ZT">
+              <ref role="3w00ZU" node="5oZmK$O6q_E" resolve="Safety" />
+              <ref role="gQIM1" node="5oZmK$O6q_D" resolve="pack_090" />
             </node>
           </node>
         </node>
