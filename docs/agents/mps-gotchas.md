@@ -10,6 +10,19 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## A position-dependent reference scope must also handle `referenceNode != null` — `ScopesTest` calls it that way (2026-10-20)
+
+A referent scope written only against `(contextNode, containmentLink, position)` — needed for completion of list
+elements, see the "Reference completion for list elements" entry — answers for the wrong element when the reference
+already exists: the declarative `ScopesTest` annotation evaluates it with `referenceNode` set and without a usable
+position, so step 2 of a feature chain `inner.q` reported the scope of step 0 (the owner's members instead of
+`inner`'s type's members). Importer-side resolution (`Scope.getScope(ref.parent, ref, kind)`) was correct, so only the
+test (and presumably re-resolution of an existing unresolved reference) saw it.
+
+**How to apply:** `referenceNode != null && referenceNode.parent != null ? Scope.getScope(referenceNode.parent,
+referenceNode, concept/X/) : Scope.getScope(contextNode, containmentLink, position, concept/X/)`. Keep the positional
+branch for completion, where there is no reference node yet.
+
 ## A child slot typed by an *interface* concept creates an instance of the interface itself (2026-10-20)
 
 An optional child (`value : ISysMLv2Expression`) whose type is an interface concept is filled, when the user types

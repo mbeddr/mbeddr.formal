@@ -1211,3 +1211,26 @@ Importer 56/56, baselan 36/36.
 Not done: a check that the value fits the attribute's declared type — the scalar types (`Real`, `Integer`, `String`
 from `ScalarValues`) belong to the standard library, which this language does not model, so `attribute x : Real = "a"`
 cannot be rejected yet; units (`5 [kg]`); `:=` / `default`; non-literal expressions; values on other usage kinds.
+
+**Iteration 21 (2026-10-20) — binding connectors (`bind a.p = b.q;`)**: `SysMLv2BindingUsage` (alias `bind`, virtual folder
+`binding`) extends `SysMLv2Usage` (so it is named, can carry `#` prefix metadata and is `ISysMLv2PrefixMetadataOwner`), implements
+`ISysMLv2IdentifierNameConcept`, `ISysMLv2PartBodyContent`, `ISysMLv2ItemBodyContent` and `ICanBelongOnlyToSysMLv2PartOwner`
+(binding only in part definitions/usages and their subconcepts: connection and interface bodies). Children `source` / `target`
+(`SysMLv2ConnectorEnd`, same feature chains as `connect`, created by the constructor like for connection usages), boolean
+`withKeyword` for the optional `binding [name]` prefix. Editor: `[#meta] [binding [name]] bind <src> = <tgt> ;`; TextGen: same
+canonical text (`bind p = inner.q;`, `binding d2 bind inner.q = p;`). Behavior/editor/textgen/`#` contribution are clones of the
+connection usage ones without type, body and multiplicity. Importer: `visitBindingConnectorAsUsage` (rejects prefixes, specialization
+on the usage, bodies), dispatched from `visitNonOccurrenceUsageElement` and from `visitInterfaceBodyItem`; helper
+`newBindingUsage`. Chain resolution needs no change: step 0 starts at the nearest feature owner above the binding (the binding is
+not an owner), later steps use the previous step's usage/type.
+Fix found by the new scope test: `SysMLv2UsageRef_Constraints` now uses the node-based lookup when the reference node exists and
+the positional one only for completion (see the gotcha "A position-dependent reference scope must also handle referenceNode != null").
+Tests: importer `_240_BindTest` (import with fixture incl. named `binding` form and reversed direction, reification of a chain
+through a part usage, roundtrip; run config `_240_test_sysmlv2_bind`), editor `_160_Bindings_EditBind` (`bind`, `engine.drive`,
+`gearbox.input`), scope test `_060_BindScope` (first step offers `{p, inner}`, second step offers exactly `inner`'s type's
+ports `{q, r}`). Importer 58/58, baselan 39/39.
+Not done (moved to a later iteration): reference subsetting `::>` / `references`. The only valuable use today is naming the
+participant of an end feature (`end port p ::> engine.out;`, `ref part x ::> y`); it needs a chain-capable reference (not a single
+`UsageRef`), a scope that starts at the *enclosing connection's* owner rather than at the end feature itself, and the `ref`
+keyword for reference usages. Also open: type compatibility of bound features (spec: bound features must be compatible),
+`bind` bodies, `bind` inside port definitions, n-ary connectors.
