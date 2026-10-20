@@ -207,6 +207,8 @@
         <child id="8930763252717288847" name="type" index="8CKLj" />
         <child id="8930763252717678429" name="multiplicity" index="8EhU1" />
       </concept>
+      <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
+      <concept id="4376090928935955021" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceDefinition" flags="ng" index="2gGTne" />
       <concept id="5531643499102778612" name="com.symo.sysmlv2.baselan.structure.ISysMLv2QualifiedRef" flags="ngI" index="gQIM0">
         <reference id="5531643499102778613" name="namespace" index="gQIM1" />
       </concept>
@@ -261,6 +263,7 @@
       </concept>
       <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
         <property id="7140692429570900098" name="conjugated" index="3xZtlG" />
+        <child id="4376090928935961761" name="content" index="2gGRGy" />
         <child id="7140692429570900100" name="multiplicity" index="3xZtlE" />
         <child id="7140692429570900101" name="type" index="3xZtlF" />
         <child id="7140692429570900099" name="direction" index="3xZtlH" />
@@ -10038,6 +10041,894 @@
           </node>
           <node concept="37vLTw" id="3MUZSeFZHh3" role="3tpDZA">
             <ref role="3cqZAo" node="3MUZSeFZHgS" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3MUZSeGxSV7">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_220_InterfaceTest" />
+    <node concept="1qefOq" id="3MUZSeGxSV8" role="1SKRRt">
+      <node concept="2h0jOr" id="3MUZSeGxSVa" role="1qenE9">
+        <property role="TrG5h" value="IfaceFile" />
+        <node concept="3Z9vzX" id="3MUZSeGxSVb" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="3xZtmp" id="3MUZSeGxSVc" role="3Z9vGx">
+            <property role="TrG5h" value="DataPort" />
+          </node>
+          <node concept="3xZtmp" id="3MUZSeGxSVd" role="3Z9vGx">
+            <property role="TrG5h" value="BusPort" />
+            <node concept="3xZtmn" id="3MUZSeGxSVe" role="3xZtmj">
+              <property role="TrG5h" value="data" />
+              <node concept="3xZtmm" id="3MUZSeGxSVf" role="3xZtlF">
+                <property role="3xZtlI" value="DataPort" />
+                <ref role="3xZtlJ" node="3MUZSeGxSVc" resolve="DataPort" />
+              </node>
+            </node>
+          </node>
+          <node concept="2gGTne" id="3MUZSeGxSVg" role="3Z9vGx">
+            <property role="TrG5h" value="DataLink" />
+            <node concept="3xZtmn" id="3MUZSeGxSVh" role="3w00ZY">
+              <property role="TrG5h" value="source" />
+              <property role="2uUgYw" value="true" />
+              <node concept="3xZtmm" id="3MUZSeGxSVi" role="3xZtlF">
+                <property role="3xZtlI" value="DataPort" />
+                <ref role="3xZtlJ" node="3MUZSeGxSVc" resolve="DataPort" />
+              </node>
+            </node>
+            <node concept="3xZtmn" id="3MUZSeGxSVj" role="3w00ZY">
+              <property role="TrG5h" value="sink" />
+              <property role="2uUgYw" value="true" />
+              <property role="3xZtlG" value="true" />
+              <node concept="3xZtmm" id="3MUZSeGxSVk" role="3xZtlF">
+                <property role="3xZtlI" value="DataPort" />
+                <ref role="3xZtlJ" node="3MUZSeGxSVc" resolve="DataPort" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGxSVl" role="3Z9vGx">
+            <property role="TrG5h" value="Sensor" />
+            <node concept="3xZtmn" id="3MUZSeGxSVm" role="3w00ZY">
+              <property role="TrG5h" value="output" />
+              <node concept="3xZtmm" id="3MUZSeGxSVn" role="3xZtlF">
+                <property role="3xZtlI" value="DataPort" />
+                <ref role="3xZtlJ" node="3MUZSeGxSVc" resolve="DataPort" />
+              </node>
+            </node>
+            <node concept="3xZtmn" id="3MUZSeGxSVo" role="3w00ZY">
+              <property role="TrG5h" value="sbus" />
+              <node concept="3xZtmm" id="3MUZSeGxSVp" role="3xZtlF">
+                <property role="3xZtlI" value="BusPort" />
+                <ref role="3xZtlJ" node="3MUZSeGxSVd" resolve="BusPort" />
+              </node>
+              <node concept="3xZtmn" id="3MUZSeGxSVq" role="2gGRGy">
+                <property role="TrG5h" value="sextra" />
+                <node concept="3xZtmm" id="3MUZSeGxSVr" role="3xZtlF">
+                  <property role="3xZtlI" value="DataPort" />
+                  <ref role="3xZtlJ" node="3MUZSeGxSVc" resolve="DataPort" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGxSVs" role="3Z9vGx">
+            <property role="TrG5h" value="Controller" />
+            <node concept="3xZtmn" id="3MUZSeGxSVt" role="3w00ZY">
+              <property role="TrG5h" value="input" />
+              <property role="3xZtlG" value="true" />
+              <node concept="3xZtmm" id="3MUZSeGxSVu" role="3xZtlF">
+                <property role="3xZtlI" value="DataPort" />
+                <ref role="3xZtlJ" node="3MUZSeGxSVc" resolve="DataPort" />
+              </node>
+            </node>
+            <node concept="3xZtmn" id="3MUZSeGxSVv" role="3w00ZY">
+              <property role="TrG5h" value="cbus" />
+              <node concept="3xZtmm" id="3MUZSeGxSVw" role="3xZtlF">
+                <property role="3xZtlI" value="BusPort" />
+                <ref role="3xZtlJ" node="3MUZSeGxSVd" resolve="BusPort" />
+              </node>
+              <node concept="3xZtmn" id="3MUZSeGxSVx" role="2gGRGy">
+                <property role="TrG5h" value="cextra" />
+                <node concept="3xZtmm" id="3MUZSeGxSVy" role="3xZtlF">
+                  <property role="3xZtlI" value="DataPort" />
+                  <ref role="3xZtlJ" node="3MUZSeGxSVc" resolve="DataPort" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGxSVz" role="3Z9vGx">
+            <property role="TrG5h" value="System" />
+            <node concept="8GF0z" id="3MUZSeGxSV$" role="3w00ZY">
+              <property role="TrG5h" value="sensor" />
+              <node concept="8CKM2" id="3MUZSeGxSV_" role="8CKLj">
+                <property role="8CKM3" value="Sensor" />
+                <ref role="8CKMW" node="3MUZSeGxSVl" resolve="Sensor" />
+              </node>
+            </node>
+            <node concept="8GF0z" id="3MUZSeGxSVA" role="3w00ZY">
+              <property role="TrG5h" value="controller" />
+              <node concept="8CKM2" id="3MUZSeGxSVB" role="8CKLj">
+                <property role="8CKM3" value="Controller" />
+                <ref role="8CKMW" node="3MUZSeGxSVs" resolve="Controller" />
+              </node>
+            </node>
+            <node concept="2gGTnd" id="3MUZSeGxSVC" role="3w00ZY">
+              <property role="TrG5h" value="link" />
+              <node concept="2uUmlC" id="3MUZSeGxSVH" role="2uUmlx">
+                <property role="2uUmlF" value="DataLink" />
+                <ref role="2uUml$" node="3MUZSeGxSVg" resolve="DataLink" />
+              </node>
+              <node concept="2uUmlD" id="3MUZSeGxSVI" role="2uUmly">
+                <node concept="3wdj9f" id="3MUZSeGxSVK" role="2uUmlA">
+                  <property role="3wdj9b" value="sensor" />
+                  <ref role="3wdj98" node="3MUZSeGxSV$" resolve="sensor" />
+                </node>
+                <node concept="3wdj9f" id="3MUZSeGxSVL" role="2uUmlA">
+                  <property role="3wdj9b" value="output" />
+                  <ref role="3wdj98" node="3MUZSeGxSVm" resolve="output" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="3MUZSeGxSVM" role="2uUmlz">
+                <node concept="3wdj9f" id="3MUZSeGxSVO" role="2uUmlA">
+                  <property role="3wdj9b" value="controller" />
+                  <ref role="3wdj98" node="3MUZSeGxSVA" resolve="controller" />
+                </node>
+                <node concept="3wdj9f" id="3MUZSeGxSVP" role="2uUmlA">
+                  <property role="3wdj9b" value="input" />
+                  <ref role="3wdj98" node="3MUZSeGxSVt" resolve="input" />
+                </node>
+              </node>
+            </node>
+            <node concept="2gGTnd" id="3MUZSeGxSVQ" role="3w00ZY">
+              <node concept="2uUmlD" id="3MUZSeGxSVV" role="2uUmly">
+                <node concept="3wdj9f" id="3MUZSeGxSVX" role="2uUmlA">
+                  <property role="3wdj9b" value="sensor" />
+                  <ref role="3wdj98" node="3MUZSeGxSV$" resolve="sensor" />
+                </node>
+                <node concept="3wdj9f" id="3MUZSeGxSVY" role="2uUmlA">
+                  <property role="3wdj9b" value="sbus" />
+                  <ref role="3wdj98" node="3MUZSeGxSVo" resolve="sbus" />
+                </node>
+                <node concept="3wdj9f" id="3MUZSeGxSVZ" role="2uUmlA">
+                  <property role="3wdj9b" value="sextra" />
+                  <ref role="3wdj98" node="3MUZSeGxSVq" resolve="sextra" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="3MUZSeGxSW0" role="2uUmlz">
+                <node concept="3wdj9f" id="3MUZSeGxSW2" role="2uUmlA">
+                  <property role="3wdj9b" value="controller" />
+                  <ref role="3wdj98" node="3MUZSeGxSVA" resolve="controller" />
+                </node>
+                <node concept="3wdj9f" id="3MUZSeGxSW3" role="2uUmlA">
+                  <property role="3wdj9b" value="cbus" />
+                  <ref role="3wdj98" node="3MUZSeGxSVv" resolve="cbus" />
+                </node>
+                <node concept="3wdj9f" id="3MUZSeGxSW4" role="2uUmlA">
+                  <property role="3wdj9b" value="cextra" />
+                  <ref role="3wdj98" node="3MUZSeGxSVx" resolve="cextra" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3xLA65" id="3MUZSeGxSW5" role="lGtFl">
+          <property role="TrG5h" value="iface_file" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3MUZSeGxSW6" role="1SL9yI">
+      <property role="TrG5h" value="testImportInterface" />
+      <node concept="3cqZAl" id="3MUZSeGxSW9" role="3clF45" />
+      <node concept="3clFbS" id="3MUZSeGxSWa" role="3clF47">
+        <node concept="3cpWs8" id="3MUZSeGxSWb" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeGxSWe" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="3MUZSeGxSWg" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSWh" role="3cqZAp">
+          <node concept="37vLTI" id="3MUZSeGxSWj" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSWm" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSWn" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSWo" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSWq" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSWt" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSWu" role="37vLTx">
+              <property role="Xl_RC" value="  port def DataPort {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSWv" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSWx" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSW$" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSW_" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSWA" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSWC" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSWF" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSWG" role="37vLTx">
+              <property role="Xl_RC" value="  port def BusPort {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSWH" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSWJ" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSWM" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSWN" role="37vLTx">
+              <property role="Xl_RC" value="    port data : DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSWO" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSWQ" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSWT" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSWU" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSWV" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSWX" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSX0" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSX1" role="37vLTx">
+              <property role="Xl_RC" value="  interface def DataLink {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSX2" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSX4" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSX7" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSX8" role="37vLTx">
+              <property role="Xl_RC" value="    end port source : DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSX9" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSXb" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSXe" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSXf" role="37vLTx">
+              <property role="Xl_RC" value="    end port sink : ~DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSXg" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSXi" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSXl" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSXm" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSXn" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSXp" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSXs" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSXt" role="37vLTx">
+              <property role="Xl_RC" value="  part def Sensor {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSXu" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSXw" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSXz" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSX$" role="37vLTx">
+              <property role="Xl_RC" value="    port output : DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSX_" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSXB" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSXE" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSXF" role="37vLTx">
+              <property role="Xl_RC" value="    port sbus : BusPort {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSXG" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSXI" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSXL" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSXM" role="37vLTx">
+              <property role="Xl_RC" value="      port sextra : DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSXN" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSXP" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSXS" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSXT" role="37vLTx">
+              <property role="Xl_RC" value="    }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSXU" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSXW" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSXZ" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSY0" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSY1" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSY3" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSY6" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSY7" role="37vLTx">
+              <property role="Xl_RC" value="  part def Controller {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSY8" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSYa" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSYd" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSYe" role="37vLTx">
+              <property role="Xl_RC" value="    port input : ~DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSYf" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSYh" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSYk" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSYl" role="37vLTx">
+              <property role="Xl_RC" value="    port cbus : BusPort {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSYm" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSYo" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSYr" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSYs" role="37vLTx">
+              <property role="Xl_RC" value="      port cextra : DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSYt" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSYv" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSYy" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSYz" role="37vLTx">
+              <property role="Xl_RC" value="    }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSY$" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSYA" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSYD" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSYE" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSYF" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSYH" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSYK" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSYL" role="37vLTx">
+              <property role="Xl_RC" value="  part def System {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSYM" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSYO" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSYR" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSYS" role="37vLTx">
+              <property role="Xl_RC" value="    part sensor : Sensor;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSYT" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSYV" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSYY" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSYZ" role="37vLTx">
+              <property role="Xl_RC" value="    part controller : Controller;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSZ0" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSZ2" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSZ5" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSZ6" role="37vLTx">
+              <property role="Xl_RC" value="    interface link : DataLink connect sensor.output to controller.input;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSZ7" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSZ9" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSZc" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSZd" role="37vLTx">
+              <property role="Xl_RC" value="    interface connect sensor.sbus.sextra to controller.cbus.cextra;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSZe" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSZg" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSZj" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSZk" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSZl" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxSZn" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxSZq" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxSZr" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3MUZSeGxSZs" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeGxSZv" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="tmp" />
+            <node concept="2YIFZM" id="3MUZSeGxSZx" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="3MUZSeGxSZy" role="37wK5m">
+                <ref role="3cqZAo" node="3MUZSeGxSWe" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="3MUZSeGxSZz" role="37wK5m">
+                <property role="Xl_RC" value="IfaceFile" />
+              </node>
+              <node concept="1jxXqW" id="3MUZSeGxSZ$" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="3MUZSeGxSZ_" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSZA" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeGxSZC" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="7JKstLNm9oX" resolve="reifyPartDefinitionRefs" />
+            <node concept="37vLTw" id="3MUZSeGxSZD" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeGxSZv" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeGxSZE" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSZF" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeGxSZH" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6coPuU2YyPg" resolve="reifyPortDefinitionRefs" />
+            <node concept="37vLTw" id="3MUZSeGxSZI" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeGxSZv" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeGxSZJ" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSZK" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeGxSZM" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="BOR0MnCn8J" resolve="reifyConnectionDefinitionRefs" />
+            <node concept="37vLTw" id="3MUZSeGxSZN" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeGxSZv" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeGxSZO" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSZP" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeGxSZR" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6coPuU3gCbX" resolve="reifyUsageRefs" />
+            <node concept="37vLTw" id="3MUZSeGxSZS" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeGxSZv" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeGxSZT" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxSZU" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeGxSZW" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="3MUZSeGxSZX" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeGxSZv" resolve="tmp" />
+            </node>
+            <node concept="3xONca" id="3MUZSeGxSZY" role="37wK5m">
+              <ref role="3xOPvv" node="3MUZSeGxSW5" resolve="iface_file" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeGxSZZ" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT00" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeGxT02" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="3MUZSeGxT03" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeGxSZv" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeGxT04" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3MUZSeGxT05" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripInterface" />
+      <node concept="3cqZAl" id="3MUZSeGxT08" role="3clF45" />
+      <node concept="3clFbS" id="3MUZSeGxT09" role="3clF47">
+        <node concept="3cpWs8" id="3MUZSeGxT0a" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeGxT0d" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="3MUZSeGxT0f" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT0g" role="3cqZAp">
+          <node concept="37vLTI" id="3MUZSeGxT0i" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT0l" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT0m" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT0n" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT0p" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT0s" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT0t" role="37vLTx">
+              <property role="Xl_RC" value="  port def DataPort {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT0u" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT0w" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT0z" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT0$" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT0_" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT0B" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT0E" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT0F" role="37vLTx">
+              <property role="Xl_RC" value="  port def BusPort {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT0G" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT0I" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT0L" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT0M" role="37vLTx">
+              <property role="Xl_RC" value="    port data : DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT0N" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT0P" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT0S" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT0T" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT0U" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT0W" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT0Z" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT10" role="37vLTx">
+              <property role="Xl_RC" value="  interface def DataLink {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT11" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT13" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT16" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT17" role="37vLTx">
+              <property role="Xl_RC" value="    end port source : DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT18" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT1a" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT1d" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT1e" role="37vLTx">
+              <property role="Xl_RC" value="    end port sink : ~DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT1f" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT1h" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT1k" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT1l" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT1m" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT1o" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT1r" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT1s" role="37vLTx">
+              <property role="Xl_RC" value="  part def Sensor {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT1t" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT1v" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT1y" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT1z" role="37vLTx">
+              <property role="Xl_RC" value="    port output : DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT1$" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT1A" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT1D" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT1E" role="37vLTx">
+              <property role="Xl_RC" value="    port sbus : BusPort {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT1F" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT1H" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT1K" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT1L" role="37vLTx">
+              <property role="Xl_RC" value="      port sextra : DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT1M" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT1O" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT1R" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT1S" role="37vLTx">
+              <property role="Xl_RC" value="    }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT1T" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT1V" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT1Y" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT1Z" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT20" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT22" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT25" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT26" role="37vLTx">
+              <property role="Xl_RC" value="  part def Controller {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT27" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT29" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT2c" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT2d" role="37vLTx">
+              <property role="Xl_RC" value="    port input : ~DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT2e" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT2g" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT2j" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT2k" role="37vLTx">
+              <property role="Xl_RC" value="    port cbus : BusPort {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT2l" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT2n" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT2q" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT2r" role="37vLTx">
+              <property role="Xl_RC" value="      port cextra : DataPort;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT2s" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT2u" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT2x" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT2y" role="37vLTx">
+              <property role="Xl_RC" value="    }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT2z" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT2_" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT2C" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT2D" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT2E" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT2G" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT2J" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT2K" role="37vLTx">
+              <property role="Xl_RC" value="  part def System {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT2L" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT2N" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT2Q" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT2R" role="37vLTx">
+              <property role="Xl_RC" value="    part sensor : Sensor;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT2S" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT2U" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT2X" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT2Y" role="37vLTx">
+              <property role="Xl_RC" value="    part controller : Controller;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT2Z" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT31" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT34" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT35" role="37vLTx">
+              <property role="Xl_RC" value="    interface link : DataLink connect sensor.output to controller.input;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT36" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT38" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT3b" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT3c" role="37vLTx">
+              <property role="Xl_RC" value="    interface connect sensor.sbus.sextra to controller.cbus.cextra;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT3d" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT3f" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT3i" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT3j" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGxT3k" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGxT3m" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGxT3p" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGxT3q" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3MUZSeGxT3r" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeGxT3u" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="3MUZSeGxT3w" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="3MUZSeGxT3x" role="37wK5m">
+                <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="3MUZSeGxT3y" role="37wK5m">
+                <property role="Xl_RC" value="IfaceFile" />
+              </node>
+              <node concept="1jxXqW" id="3MUZSeGxT3z" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="3MUZSeGxT3$" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="3MUZSeGxT3_" role="3cqZAp">
+          <node concept="37vLTw" id="3MUZSeGxT3C" role="3tpDZB">
+            <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="3MUZSeGxT3D" role="3tpDZA">
+            <ref role="3cqZAo" node="3MUZSeGxT3u" resolve="generateText" />
           </node>
         </node>
       </node>

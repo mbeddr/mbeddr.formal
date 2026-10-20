@@ -482,6 +482,16 @@
     <node concept="PrWs8" id="6coPuU39G2X" role="PzmwI">
       <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartDefinition" />
     </node>
+    <node concept="1TJgyj" id="3MUZSeG2oix" role="1TKVEi">
+      <property role="IQ2ns" value="4376090928935961761" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
+    </node>
+    <node concept="PrWs8" id="3MUZSeG2oiD" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU2Tg1U">
     <property role="EcuMT" value="7140692429570900090" />
@@ -1125,6 +1135,22 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="3MUZSeG2mDd">
+    <property role="EcuMT" value="4376090928935955021" />
+    <property role="TrG5h" value="SysMLv2InterfaceDefinition" />
+    <property role="34LRSv" value="interface def" />
+    <property role="R4oN_" value="SysML v2 interface definition: interface def Name { end port ...; }" />
+    <property role="3GE5qa" value="interface" />
+    <ref role="1TJDcQ" node="BOR0Mn7r_z" resolve="SysMLv2ConnectionDefinition" />
+  </node>
+  <node concept="1TIwiD" id="3MUZSeG2mDe">
+    <property role="EcuMT" value="4376090928935955022" />
+    <property role="TrG5h" value="SysMLv2InterfaceUsage" />
+    <property role="34LRSv" value="interface" />
+    <property role="R4oN_" value="SysML v2 interface usage: interface [name] [: Type] connect a.p to b.q;" />
+    <property role="3GE5qa" value="interface" />
+    <ref role="1TJDcQ" node="BOR0Mn7r_A" resolve="SysMLv2ConnectionUsage" />
   </node>
 </model>
 

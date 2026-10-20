@@ -61,6 +61,11 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
+      </concept>
     </language>
     <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
       <concept id="6702802731807351367" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_CanBeAChild" flags="in" index="9S07l" />
@@ -102,6 +107,7 @@
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
       </concept>
+      <concept id="1139613262185" name="jetbrains.mps.lang.smodel.structure.Node_GetParentOperation" flags="nn" index="1mfA1w" />
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -123,20 +129,30 @@
     <node concept="9S07l" id="6coPuU3aqOF" role="9Vyp8">
       <node concept="3clFbS" id="6coPuU3aqOH" role="2VODD2">
         <node concept="3clFbF" id="6coPuU3bujT" role="3cqZAp">
-          <node concept="22lmx$" id="3MUZSeFJC1O" role="3clFbG">
-            <node concept="2OqwBi" id="3MUZSeFJC1R" role="3uHU7B">
-              <node concept="nLn13" id="3MUZSeFJC1U" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="3MUZSeFJC1V" role="2OqNvi">
-                <node concept="chp4Y" id="3MUZSeFJC1X" role="cj9EA">
+          <node concept="22lmx$" id="3MUZSeG2pgk" role="3clFbG">
+            <node concept="2OqwBi" id="3MUZSeG2pgn" role="3uHU7B">
+              <node concept="nLn13" id="3MUZSeG2pgq" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="3MUZSeG2pgr" role="2OqNvi">
+                <node concept="chp4Y" id="3MUZSeG2pgt" role="cj9EA">
                   <ref role="cht4Q" to="5rf1:3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="3MUZSeFJC1Y" role="3uHU7w">
-              <node concept="nLn13" id="3MUZSeFJC21" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="3MUZSeFJC22" role="2OqNvi">
-                <node concept="chp4Y" id="3MUZSeFJC24" role="cj9EA">
-                  <ref role="cht4Q" to="5rf1:3MUZSeFF9lf" resolve="SysMLv2PartLikeUsage" />
+            <node concept="22lmx$" id="3MUZSeG2pgu" role="3uHU7w">
+              <node concept="2OqwBi" id="3MUZSeG2pgx" role="3uHU7B">
+                <node concept="nLn13" id="3MUZSeG2pg$" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="3MUZSeG2pg_" role="2OqNvi">
+                  <node concept="chp4Y" id="3MUZSeG2pgB" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:6coPuU2Tg1R" resolve="SysMLv2PortDefinition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3MUZSeG2pgC" role="3uHU7w">
+                <node concept="nLn13" id="3MUZSeG2pgF" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="3MUZSeG2pgG" role="2OqNvi">
+                  <node concept="chp4Y" id="3MUZSeG2pgI" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:6coPuU2Tg1T" resolve="SysMLv2PortUsage" />
+                  </node>
                 </node>
               </node>
             </node>
@@ -499,8 +515,24 @@
               </node>
               <node concept="2qgKlT" id="BOR0Mn7tll" role="2OqNvi">
                 <ref role="37wK5l" to="5wt7:3tSWG0_D0yE" resolve="definitionScope" />
-                <node concept="35c_gC" id="BOR0Mn7tlm" role="37wK5m">
-                  <ref role="35c_gD" to="5rf1:BOR0Mn7r_z" resolve="SysMLv2ConnectionDefinition" />
+                <node concept="3K4zz7" id="3MUZSeG2pgM" role="37wK5m">
+                  <node concept="2OqwBi" id="3MUZSeG2pgQ" role="3K4Cdx">
+                    <node concept="2OqwBi" id="3MUZSeG2pgT" role="2Oq$k0">
+                      <node concept="3kakTB" id="3MUZSeG2pgW" role="2Oq$k0" />
+                      <node concept="1mfA1w" id="3MUZSeG2pgX" role="2OqNvi" />
+                    </node>
+                    <node concept="1mIQ4w" id="3MUZSeG2pgY" role="2OqNvi">
+                      <node concept="chp4Y" id="3MUZSeG2ph0" role="cj9EA">
+                        <ref role="cht4Q" to="5rf1:3MUZSeG2mDe" resolve="SysMLv2InterfaceUsage" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="35c_gC" id="3MUZSeG2ph1" role="3K4E3e">
+                    <ref role="35c_gD" to="5rf1:3MUZSeG2mDd" resolve="SysMLv2InterfaceDefinition" />
+                  </node>
+                  <node concept="35c_gC" id="3MUZSeG2ph2" role="3K4GZi">
+                    <ref role="35c_gD" to="5rf1:BOR0Mn7r_z" resolve="SysMLv2ConnectionDefinition" />
+                  </node>
                 </node>
               </node>
             </node>

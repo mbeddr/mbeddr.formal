@@ -45,6 +45,7 @@
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1207318242772" name="jetbrains.mps.lang.plugin.structure.KeyMapKeystroke" flags="ng" index="pLAjd">
         <property id="1207318242774" name="keycode" index="pLAjf" />
+        <property id="6785623076777470797" name="change" index="3hacHL" />
       </concept>
     </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -69,6 +70,7 @@
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z">
         <child id="8930763252717288847" name="type" index="8CKLj" />
       </concept>
+      <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
       <concept id="5531643499102778612" name="com.symo.sysmlv2.baselan.structure.ISysMLv2QualifiedRef" flags="ngI" index="gQIM0">
         <reference id="5531643499102778613" name="namespace" index="gQIM1" />
       </concept>
@@ -104,6 +106,7 @@
         <reference id="7140692429570900097" name="definition" index="3xZtlJ" />
       </concept>
       <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
+        <child id="4376090928935961761" name="content" index="2gGRGy" />
         <child id="7140692429570900101" name="type" index="3xZtlF" />
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
@@ -1673,6 +1676,271 @@
         <node concept="pLAjd" id="3MUZSeFZHoH" role="yd6KS">
           <property role="pLAjf" value="VK_ENTER" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3MUZSeGygFQ">
+    <property role="TrG5h" value="_130_Interfaces_EditInterfaceUsage" />
+    <property role="3YCmrE" value="typing interface, a name and the two feature chains creates a fully resolved interface usage" />
+    <node concept="1qefOq" id="3MUZSeGygFR" role="25YQCW">
+      <node concept="2h0jOr" id="3MUZSeGygFT" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3MUZSeGygFU" role="2h0jOs">
+          <property role="TrG5h" value="pack_130" />
+          <node concept="3xZtmp" id="3MUZSeGygFV" role="3Z9vGx">
+            <property role="TrG5h" value="DrivePort" />
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGygFW" role="3Z9vGx">
+            <property role="TrG5h" value="Engine" />
+            <node concept="3xZtmn" id="3MUZSeGygFX" role="3w00ZY">
+              <property role="TrG5h" value="drive" />
+              <node concept="3xZtmm" id="3MUZSeGygFY" role="3xZtlF">
+                <property role="3xZtlI" value="DrivePort" />
+                <ref role="3xZtlJ" node="3MUZSeGygFV" resolve="DrivePort" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGygFZ" role="3Z9vGx">
+            <property role="TrG5h" value="Gearbox" />
+            <node concept="3xZtmn" id="3MUZSeGygG0" role="3w00ZY">
+              <property role="TrG5h" value="input" />
+              <node concept="3xZtmm" id="3MUZSeGygG1" role="3xZtlF">
+                <property role="3xZtlI" value="DrivePort" />
+                <ref role="3xZtlJ" node="3MUZSeGygFV" resolve="DrivePort" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGygG2" role="3Z9vGx">
+            <property role="TrG5h" value="Car" />
+            <node concept="8GF0z" id="3MUZSeGygG3" role="3w00ZY">
+              <property role="TrG5h" value="engine" />
+              <node concept="8CKM2" id="3MUZSeGygG4" role="8CKLj">
+                <property role="8CKM3" value="Engine" />
+                <ref role="8CKMW" node="3MUZSeGygFW" resolve="Engine" />
+              </node>
+            </node>
+            <node concept="8GF0z" id="3MUZSeGygG5" role="3w00ZY">
+              <property role="TrG5h" value="gearbox" />
+              <node concept="8CKM2" id="3MUZSeGygG6" role="8CKLj">
+                <property role="8CKM3" value="Gearbox" />
+                <ref role="8CKMW" node="3MUZSeGygFZ" resolve="Gearbox" />
+              </node>
+            </node>
+            <node concept="2h0jOo" id="3MUZSeGygG7" role="3w00ZY">
+              <node concept="LIFWc" id="3MUZSeGygG8" role="lGtFl">
+                <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+                <property role="LIFWd" value="Constant_68dwa1_a" />
+                <property role="ZRATv" value="true" />
+                <property role="OXtK3" value="true" />
+                <property role="p6zMq" value="0" />
+                <property role="p6zMs" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3MUZSeGygG9" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="3MUZSeGygGa" role="25YQFr">
+      <node concept="2h0jOr" id="3MUZSeGygGc" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3MUZSeGygGd" role="2h0jOs">
+          <property role="TrG5h" value="pack_130" />
+          <node concept="3xZtmp" id="3MUZSeGygGe" role="3Z9vGx">
+            <property role="TrG5h" value="DrivePort" />
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGygGf" role="3Z9vGx">
+            <property role="TrG5h" value="Engine" />
+            <node concept="3xZtmn" id="3MUZSeGygGg" role="3w00ZY">
+              <property role="TrG5h" value="drive" />
+              <node concept="3xZtmm" id="3MUZSeGygGh" role="3xZtlF">
+                <property role="3xZtlI" value="DrivePort" />
+                <ref role="3xZtlJ" node="3MUZSeGygGe" resolve="DrivePort" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGygGi" role="3Z9vGx">
+            <property role="TrG5h" value="Gearbox" />
+            <node concept="3xZtmn" id="3MUZSeGygGj" role="3w00ZY">
+              <property role="TrG5h" value="input" />
+              <node concept="3xZtmm" id="3MUZSeGygGk" role="3xZtlF">
+                <property role="3xZtlI" value="DrivePort" />
+                <ref role="3xZtlJ" node="3MUZSeGygGe" resolve="DrivePort" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGygGl" role="3Z9vGx">
+            <property role="TrG5h" value="Car" />
+            <node concept="8GF0z" id="3MUZSeGygGm" role="3w00ZY">
+              <property role="TrG5h" value="engine" />
+              <node concept="8CKM2" id="3MUZSeGygGn" role="8CKLj">
+                <property role="8CKM3" value="Engine" />
+                <ref role="8CKMW" node="3MUZSeGygGf" resolve="Engine" />
+              </node>
+            </node>
+            <node concept="8GF0z" id="3MUZSeGygGo" role="3w00ZY">
+              <property role="TrG5h" value="gearbox" />
+              <node concept="8CKM2" id="3MUZSeGygGp" role="8CKLj">
+                <property role="8CKM3" value="Gearbox" />
+                <ref role="8CKMW" node="3MUZSeGygGi" resolve="Gearbox" />
+              </node>
+            </node>
+            <node concept="2gGTnd" id="3MUZSeGygGq" role="3w00ZY">
+              <property role="TrG5h" value="link" />
+              <node concept="2uUmlD" id="3MUZSeGygGv" role="2uUmly">
+                <node concept="3wdj9f" id="3MUZSeGygGx" role="2uUmlA">
+                  <ref role="3wdj98" node="3MUZSeGygGm" resolve="engine" />
+                </node>
+                <node concept="3wdj9f" id="3MUZSeGygGy" role="2uUmlA">
+                  <ref role="3wdj98" node="3MUZSeGygGg" resolve="drive" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="3MUZSeGygGz" role="2uUmlz">
+                <node concept="3wdj9f" id="3MUZSeGygG_" role="2uUmlA">
+                  <ref role="3wdj98" node="3MUZSeGygGo" resolve="gearbox" />
+                </node>
+                <node concept="3wdj9f" id="3MUZSeGygGA" role="2uUmlA">
+                  <ref role="3wdj98" node="3MUZSeGygGj" resolve="input" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3MUZSeGygGB" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3MUZSeGygGC" role="LjaKd">
+      <node concept="2TK7Tu" id="3MUZSeGygGD" role="3cqZAp">
+        <property role="2TTd_B" value="interface" />
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeGygGE" role="3cqZAp">
+        <property role="2TTd_B" value="link" />
+      </node>
+      <node concept="yd1bK" id="3MUZSeGygGF" role="3cqZAp">
+        <node concept="pLAjd" id="3MUZSeGygGH" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+          <property role="3hacHL" value="5SFo3Mf0QpD/replace_all" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeGygGI" role="3cqZAp">
+        <property role="2TTd_B" value="engine" />
+      </node>
+      <node concept="2HxZob" id="3MUZSeGygGJ" role="3cqZAp">
+        <node concept="3iKlGA" id="3MUZSeGygGL" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeGygGM" role="3cqZAp">
+        <property role="2TTd_B" value="." />
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeGygGN" role="3cqZAp">
+        <property role="2TTd_B" value="drive" />
+      </node>
+      <node concept="2HxZob" id="3MUZSeGygGO" role="3cqZAp">
+        <node concept="3iKlGA" id="3MUZSeGygGQ" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="3MUZSeGygGR" role="3cqZAp">
+        <node concept="pLAjd" id="3MUZSeGygGT" role="yd6KS">
+          <property role="pLAjf" value="VK_ESCAPE" />
+          <property role="3hacHL" value="5SFo3Mf0QpD/replace_all" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="3MUZSeGygGU" role="3cqZAp">
+        <node concept="pLAjd" id="3MUZSeGygGW" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+          <property role="3hacHL" value="5SFo3Mf0QpD/replace_all" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeGygGX" role="3cqZAp">
+        <property role="2TTd_B" value="gearbox" />
+      </node>
+      <node concept="2HxZob" id="3MUZSeGygGY" role="3cqZAp">
+        <node concept="3iKlGA" id="3MUZSeGygH0" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeGygH1" role="3cqZAp">
+        <property role="2TTd_B" value="." />
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeGygH2" role="3cqZAp">
+        <property role="2TTd_B" value="input" />
+      </node>
+      <node concept="2HxZob" id="3MUZSeGygH3" role="3cqZAp">
+        <node concept="3iKlGA" id="3MUZSeGygH5" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3MUZSeGyjxn">
+    <property role="TrG5h" value="_140_Ports_AddNestedPort" />
+    <property role="3YCmrE" value="typing { after a port usage opens its body; a port typed there becomes a nested port of that port" />
+    <node concept="1qefOq" id="3MUZSeGyjxo" role="25YQCW">
+      <node concept="2h0jOr" id="3MUZSeGyjxq" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3MUZSeGyjxr" role="2h0jOs">
+          <property role="TrG5h" value="pack_140" />
+          <node concept="3xZtmp" id="3MUZSeGyjxs" role="3Z9vGx">
+            <property role="TrG5h" value="Sub" />
+          </node>
+          <node concept="3xZtmp" id="3MUZSeGyjxt" role="3Z9vGx">
+            <property role="TrG5h" value="Bus" />
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGyjxu" role="3Z9vGx">
+            <property role="TrG5h" value="Node" />
+            <node concept="2h0jOo" id="3MUZSeGyjxv" role="3w00ZY">
+              <node concept="LIFWc" id="3MUZSeGyjxw" role="lGtFl">
+                <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+                <property role="LIFWd" value="Constant_68dwa1_a" />
+                <property role="ZRATv" value="true" />
+                <property role="OXtK3" value="true" />
+                <property role="p6zMq" value="0" />
+                <property role="p6zMs" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3MUZSeGyjxx" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="3MUZSeGyjxy" role="25YQFr">
+      <node concept="2h0jOr" id="3MUZSeGyjx$" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3MUZSeGyjx_" role="2h0jOs">
+          <property role="TrG5h" value="pack_140" />
+          <node concept="3xZtmp" id="3MUZSeGyjxA" role="3Z9vGx">
+            <property role="TrG5h" value="Sub" />
+          </node>
+          <node concept="3xZtmp" id="3MUZSeGyjxB" role="3Z9vGx">
+            <property role="TrG5h" value="Bus" />
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGyjxC" role="3Z9vGx">
+            <property role="TrG5h" value="Node" />
+            <node concept="3xZtmn" id="3MUZSeGyjxD" role="3w00ZY">
+              <property role="TrG5h" value="bus" />
+              <node concept="3xZtmn" id="3MUZSeGyjxE" role="2gGRGy">
+                <property role="TrG5h" value="nested" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3MUZSeGyjxF" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3MUZSeGyjxG" role="LjaKd">
+      <node concept="2TK7Tu" id="3MUZSeGyjxH" role="3cqZAp">
+        <property role="2TTd_B" value="port" />
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeGyjxI" role="3cqZAp">
+        <property role="2TTd_B" value="bus" />
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeGyjxJ" role="3cqZAp">
+        <property role="2TTd_B" value="{" />
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeGyjxK" role="3cqZAp">
+        <property role="2TTd_B" value="port nested" />
       </node>
     </node>
   </node>
