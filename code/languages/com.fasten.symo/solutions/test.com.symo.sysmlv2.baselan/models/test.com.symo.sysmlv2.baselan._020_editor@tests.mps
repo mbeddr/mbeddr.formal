@@ -60,6 +60,7 @@
       </concept>
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <child id="8930763252717678425" name="type" index="8EhU5" />
+        <child id="4376090928945101101" name="value" index="2gbwqI" />
       </concept>
       <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
         <reference id="8930763252717678397" name="definition" index="8EhVx" />
@@ -131,6 +132,9 @@
       </concept>
       <concept id="6214786105876472908" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinitionRef" flags="ng" index="1_WVX5">
         <reference id="6214786105876472918" name="definition" index="1_WVXv" />
+      </concept>
+      <concept id="6214786105876472911" name="com.symo.sysmlv2.baselan.structure.SysMLv2LiteralExpression" flags="ng" index="1_WVX6">
+        <property id="6214786105876472933" name="value" index="1_WVXG" />
       </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
@@ -1941,6 +1945,61 @@
       </node>
       <node concept="2TK7Tu" id="3MUZSeGyjxK" role="3cqZAp">
         <property role="2TTd_B" value="port nested" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="3MUZSeGUM66">
+    <property role="TrG5h" value="_150_Attributes_AddValue" />
+    <property role="3YCmrE" value="typing = after an attribute usage opens its value; a literal typed there becomes the value of the attribute" />
+    <node concept="1qefOq" id="3MUZSeGUM67" role="25YQCW">
+      <node concept="2h0jOr" id="3MUZSeGUM69" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3MUZSeGUM6a" role="2h0jOs">
+          <property role="TrG5h" value="pack_150" />
+          <node concept="3ZUotO" id="3MUZSeGUM6b" role="3Z9vGx">
+            <property role="TrG5h" value="Node" />
+            <node concept="2h0jOo" id="3MUZSeGUM6c" role="3w00ZY">
+              <node concept="LIFWc" id="3MUZSeGUM6d" role="lGtFl">
+                <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+                <property role="LIFWd" value="Constant_68dwa1_a" />
+                <property role="ZRATv" value="true" />
+                <property role="OXtK3" value="true" />
+                <property role="p6zMq" value="0" />
+                <property role="p6zMs" value="0" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3MUZSeGUM6e" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="3MUZSeGUM6f" role="25YQFr">
+      <node concept="2h0jOr" id="3MUZSeGUM6h" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="3MUZSeGUM6i" role="2h0jOs">
+          <property role="TrG5h" value="pack_150" />
+          <node concept="3ZUotO" id="3MUZSeGUM6j" role="3Z9vGx">
+            <property role="TrG5h" value="Node" />
+            <node concept="8EhU9" id="3MUZSeGUM6k" role="3w00ZY">
+              <property role="TrG5h" value="rate" />
+              <node concept="1_WVX6" id="3MUZSeGUM6l" role="2gbwqI">
+                <property role="1_WVXG" value="42" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="3MUZSeGUM6m" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="3MUZSeGUM6n" role="LjaKd">
+      <node concept="2TK7Tu" id="3MUZSeGUM6o" role="3cqZAp">
+        <property role="2TTd_B" value="attribute rate" />
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeGUM6p" role="3cqZAp">
+        <property role="2TTd_B" value="=" />
+      </node>
+      <node concept="2TK7Tu" id="3MUZSeGUM6q" role="3cqZAp">
+        <property role="2TTd_B" value="42" />
       </node>
     </node>
   </node>

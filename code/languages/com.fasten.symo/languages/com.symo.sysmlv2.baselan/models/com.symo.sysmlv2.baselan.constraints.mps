@@ -84,6 +84,7 @@
       <concept id="1163202640154" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_newReferentNode" flags="nn" index="3khVwk" />
       <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
         <reference id="1213093996982" name="concept" index="1M2myG" />
+        <reference id="1213106917431" name="defaultConcreteConcept" index="1MND4H" />
         <child id="6702802731807737306" name="canBeChild" index="9Vyp8" />
         <child id="1213098023997" name="property" index="1MhHOB" />
         <child id="1213100494875" name="referent" index="1Mr941" />
@@ -576,6 +577,35 @@
               <node concept="$OBjv" id="3MUZSeFtiq6" role="37wK5m" />
               <node concept="35c_gC" id="3MUZSeFtiq7" role="37wK5m">
                 <ref role="35c_gD" to="5rf1:6coPuU3buuw" resolve="SysMLv2Usage" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="3MUZSeGUQhS">
+    <property role="TrG5h" value="ISysMLv2Expression_Constraints" />
+    <property role="3GE5qa" value="expression" />
+    <ref role="1M2myG" to="5rf1:3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    <ref role="1MND4H" to="5rf1:5oZmK$NNehf" resolve="SysMLv2LiteralExpression" />
+  </node>
+  <node concept="1M2fIO" id="3MUZSeGXk_i">
+    <property role="TrG5h" value="SysMLv2LiteralExpression_Constraints" />
+    <property role="3GE5qa" value="expression" />
+    <ref role="1M2myG" to="5rf1:5oZmK$NNehf" resolve="SysMLv2LiteralExpression" />
+    <node concept="EnEH3" id="3MUZSeGXk_j" role="1MhHOB">
+      <ref role="EomxK" to="5rf1:5oZmK$NNeh_" resolve="value" />
+      <node concept="QB0g5" id="3MUZSeGXk_k" role="QCWH9">
+        <node concept="3clFbS" id="3MUZSeGXk_m" role="2VODD2">
+          <node concept="3clFbF" id="3MUZSeGXk_n" role="3cqZAp">
+            <node concept="2OqwBi" id="3MUZSeGXk_p" role="3clFbG">
+              <node concept="1Wqviy" id="3MUZSeGXk_s" role="2Oq$k0" />
+              <node concept="liA8E" id="3MUZSeGXk_t" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="3MUZSeGXk_u" role="37wK5m">
+                  <property role="Xl_RC" value="\&quot;([^\&quot;\\\\]|\\\\.)*\&quot;|true|false|-?[0-9]+(\\.[0-9]+)?([eE][+-]?[0-9]+)?" />
+                </node>
               </node>
             </node>
           </node>

@@ -330,6 +330,12 @@
     <node concept="PrWs8" id="6coPuU36dCv" role="PzmwI">
       <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
+    <node concept="1TJgyj" id="3MUZSeG_f$H" role="1TKVEi">
+      <property role="IQ2ns" value="4376090928945101101" />
+      <property role="20kJfa" value="value" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6coPuU2Bx1J">
     <property role="EcuMT" value="7140692429566251119" />
@@ -1002,6 +1008,9 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="PrWs8" id="3MUZSeG_f$E" role="PzmwI">
+      <ref role="PrY4T" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5oZmK$O6sP7">
     <property role="EcuMT" value="6214786105881513287" />
@@ -1151,6 +1160,12 @@
     <property role="R4oN_" value="SysML v2 interface usage: interface [name] [: Type] connect a.p to b.q;" />
     <property role="3GE5qa" value="interface" />
     <ref role="1TJDcQ" node="BOR0Mn7r_A" resolve="SysMLv2ConnectionUsage" />
+  </node>
+  <node concept="PlHQZ" id="3MUZSeG_f$B">
+    <property role="EcuMT" value="4376090928945101095" />
+    <property role="TrG5h" value="ISysMLv2Expression" />
+    <property role="R4oN_" value="SysML v2 expression (currently only literals)" />
+    <property role="3GE5qa" value="expression" />
   </node>
 </model>
 

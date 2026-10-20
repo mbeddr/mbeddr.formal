@@ -189,6 +189,7 @@
       </concept>
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <child id="8930763252717678425" name="type" index="8EhU5" />
+        <child id="4376090928945101101" name="value" index="2gbwqI" />
         <child id="7140692429570903510" name="direction" index="3xZtwS" />
       </concept>
       <concept id="8930763252717678342" name="com.symo.sysmlv2.baselan.structure.SysMLv2Multiplicity" flags="ng" index="8EhVq">
@@ -10929,6 +10930,455 @@
           </node>
           <node concept="37vLTw" id="3MUZSeGxT3D" role="3tpDZA">
             <ref role="3cqZAo" node="3MUZSeGxT3u" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3MUZSeGUzrw">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_230_AttributeValueTest" />
+    <node concept="1qefOq" id="3MUZSeGUzrx" role="1SKRRt">
+      <node concept="2h0jOr" id="3MUZSeGUzrz" role="1qenE9">
+        <property role="TrG5h" value="AttrValFile" />
+        <node concept="3Z9vzX" id="3MUZSeGUzr$" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="8EhVW" id="3MUZSeGUzr_" role="3Z9vGx">
+            <property role="TrG5h" value="Rate" />
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGUzrA" role="3Z9vGx">
+            <property role="TrG5h" value="Link" />
+            <node concept="8EhU9" id="3MUZSeGUzrB" role="3w00ZY">
+              <property role="TrG5h" value="bandwidth" />
+              <node concept="8EhVB" id="3MUZSeGUzrC" role="8EhU5">
+                <property role="8EhVw" value="Rate" />
+                <ref role="8EhVx" node="3MUZSeGUzr_" resolve="Rate" />
+              </node>
+            </node>
+            <node concept="8EhU9" id="3MUZSeGUzrD" role="3w00ZY">
+              <property role="TrG5h" value="label" />
+              <node concept="1_WVX6" id="3MUZSeGUzrE" role="2gbwqI">
+                <property role="1_WVXG" value="&quot;hello&quot;" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGUzrF" role="3Z9vGx">
+            <property role="TrG5h" value="Wifi" />
+            <node concept="3w00Zy" id="3MUZSeGUzrG" role="3w00Zx">
+              <property role="3w00ZX" value="Link" />
+              <ref role="3w00ZU" node="3MUZSeGUzrA" resolve="Link" />
+            </node>
+            <node concept="8EhU9" id="3MUZSeGUzrH" role="3w00ZY">
+              <node concept="3wdj9f" id="3MUZSeGUzrI" role="3wdj9d">
+                <property role="3wdj9b" value="bandwidth" />
+                <ref role="3wdj98" node="3MUZSeGUzrB" resolve="bandwidth" />
+              </node>
+              <node concept="1_WVX6" id="3MUZSeGUzrJ" role="2gbwqI">
+                <property role="1_WVXG" value="100" />
+              </node>
+            </node>
+            <node concept="8EhU9" id="3MUZSeGUzrK" role="3w00ZY">
+              <property role="TrG5h" value="latency" />
+              <node concept="1_WVX6" id="3MUZSeGUzrL" role="2gbwqI">
+                <property role="1_WVXG" value="-2.5" />
+              </node>
+            </node>
+            <node concept="8EhU9" id="3MUZSeGUzrM" role="3w00ZY">
+              <property role="TrG5h" value="enabled" />
+              <node concept="1_WVX6" id="3MUZSeGUzrN" role="2gbwqI">
+                <property role="1_WVXG" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3xLA65" id="3MUZSeGUzrO" role="lGtFl">
+          <property role="TrG5h" value="attr_val_file" />
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3MUZSeGUzrP" role="1SL9yI">
+      <property role="TrG5h" value="testImportAttributeValue" />
+      <node concept="3cqZAl" id="3MUZSeGUzrS" role="3clF45" />
+      <node concept="3clFbS" id="3MUZSeGUzrT" role="3clF47">
+        <node concept="3cpWs8" id="3MUZSeGUzrU" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeGUzrX" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="3MUZSeGUzrZ" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzs0" role="3cqZAp">
+          <node concept="37vLTI" id="3MUZSeGUzs2" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzs5" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzs6" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzs7" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzs9" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzsc" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzsd" role="37vLTx">
+              <property role="Xl_RC" value="  attribute def Rate {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzse" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzsg" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzsj" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzsk" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzsl" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzsn" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzsq" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzsr" role="37vLTx">
+              <property role="Xl_RC" value="  part def Link {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzss" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzsu" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzsx" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzsy" role="37vLTx">
+              <property role="Xl_RC" value="    attribute bandwidth : Rate;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzsz" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzs_" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzsC" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzsD" role="37vLTx">
+              <property role="Xl_RC" value="    attribute label = \&quot;hello\&quot;;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzsE" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzsG" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzsJ" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzsK" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzsL" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzsN" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzsQ" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzsR" role="37vLTx">
+              <property role="Xl_RC" value="  part def Wifi :&gt; Link {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzsS" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzsU" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzsX" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzsY" role="37vLTx">
+              <property role="Xl_RC" value="    attribute :&gt;&gt; bandwidth = 100;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzsZ" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzt1" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzt4" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzt5" role="37vLTx">
+              <property role="Xl_RC" value="    attribute latency = -2.5;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzt6" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzt8" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUztb" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUztc" role="37vLTx">
+              <property role="Xl_RC" value="    attribute enabled = true;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUztd" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUztf" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzti" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUztj" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUztk" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUztm" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUztp" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUztq" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3MUZSeGUztr" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeGUztu" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="tmp" />
+            <node concept="2YIFZM" id="3MUZSeGUztw" role="33vP2m">
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <node concept="37vLTw" id="3MUZSeGUztx" role="37wK5m">
+                <ref role="3cqZAo" node="3MUZSeGUzrX" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="3MUZSeGUzty" role="37wK5m">
+                <property role="Xl_RC" value="AttrValFile" />
+              </node>
+              <node concept="1jxXqW" id="3MUZSeGUztz" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="3MUZSeGUzt$" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzt_" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeGUztB" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6coPuU37$59" resolve="reifyItemDefinitionRefs" />
+            <node concept="37vLTw" id="3MUZSeGUztC" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeGUztu" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeGUztD" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUztE" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeGUztG" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6coPuU2T1oj" resolve="reifyAttributeDefinitionRefs" />
+            <node concept="37vLTw" id="3MUZSeGUztH" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeGUztu" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeGUztI" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUztJ" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeGUztL" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="6coPuU3gCbX" resolve="reifyUsageRefs" />
+            <node concept="37vLTw" id="3MUZSeGUztM" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeGUztu" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeGUztN" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUztO" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeGUztQ" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2rug2" resolve="checkFirstRoot" />
+            <node concept="37vLTw" id="3MUZSeGUztR" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeGUztu" resolve="tmp" />
+            </node>
+            <node concept="3xONca" id="3MUZSeGUztS" role="37wK5m">
+              <ref role="3xOPvv" node="3MUZSeGUzrO" resolve="attr_val_file" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeGUztT" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUztU" role="3cqZAp">
+          <node concept="2YIFZM" id="3MUZSeGUztW" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <node concept="37vLTw" id="3MUZSeGUztX" role="37wK5m">
+              <ref role="3cqZAo" node="3MUZSeGUztu" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="3MUZSeGUztY" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3MUZSeGUztZ" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripAttributeValue" />
+      <node concept="3cqZAl" id="3MUZSeGUzu2" role="3clF45" />
+      <node concept="3clFbS" id="3MUZSeGUzu3" role="3clF47">
+        <node concept="3cpWs8" id="3MUZSeGUzu4" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeGUzu7" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="3MUZSeGUzu9" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzua" role="3cqZAp">
+          <node concept="37vLTI" id="3MUZSeGUzuc" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzuf" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzug" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzuh" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzuj" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzum" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzun" role="37vLTx">
+              <property role="Xl_RC" value="  attribute def Rate {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzuo" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzuq" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzut" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzuu" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzuv" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzux" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzu$" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzu_" role="37vLTx">
+              <property role="Xl_RC" value="  part def Link {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzuA" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzuC" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzuF" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzuG" role="37vLTx">
+              <property role="Xl_RC" value="    attribute bandwidth : Rate;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzuH" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzuJ" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzuM" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzuN" role="37vLTx">
+              <property role="Xl_RC" value="    attribute label = \&quot;hello\&quot;;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzuO" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzuQ" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzuT" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzuU" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzuV" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzuX" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzv0" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzv1" role="37vLTx">
+              <property role="Xl_RC" value="  part def Wifi :&gt; Link {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzv2" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzv4" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzv7" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzv8" role="37vLTx">
+              <property role="Xl_RC" value="    attribute :&gt;&gt; bandwidth = 100;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzv9" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzvb" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzve" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzvf" role="37vLTx">
+              <property role="Xl_RC" value="    attribute latency = -2.5;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzvg" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzvi" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzvl" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzvm" role="37vLTx">
+              <property role="Xl_RC" value="    attribute enabled = true;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzvn" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzvp" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzvs" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzvt" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3MUZSeGUzvu" role="3cqZAp">
+          <node concept="d57v9" id="3MUZSeGUzvw" role="3clFbG">
+            <node concept="37vLTw" id="3MUZSeGUzvz" role="37vLTJ">
+              <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3MUZSeGUzv$" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3MUZSeGUzv_" role="3cqZAp">
+          <node concept="3cpWsn" id="3MUZSeGUzvC" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="3MUZSeGUzvE" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="3PUPjB2nmpM" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="3MUZSeGUzvF" role="37wK5m">
+                <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="3MUZSeGUzvG" role="37wK5m">
+                <property role="Xl_RC" value="AttrValFile" />
+              </node>
+              <node concept="1jxXqW" id="3MUZSeGUzvH" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="3MUZSeGUzvI" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="3MUZSeGUzvJ" role="3cqZAp">
+          <node concept="37vLTw" id="3MUZSeGUzvM" role="3tpDZB">
+            <ref role="3cqZAo" node="3MUZSeGUzu7" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="3MUZSeGUzvN" role="3tpDZA">
+            <ref role="3cqZAo" node="3MUZSeGUzvC" resolve="generateText" />
           </node>
         </node>
       </node>

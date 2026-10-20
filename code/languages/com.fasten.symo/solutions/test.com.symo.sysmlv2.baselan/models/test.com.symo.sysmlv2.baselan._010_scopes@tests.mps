@@ -29,6 +29,15 @@
         <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
         <reference id="8930763252717288800" name="definition" index="8CKMW" />
       </concept>
+      <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
+        <child id="8930763252717678425" name="type" index="8EhU5" />
+        <child id="4376090928945101101" name="value" index="2gbwqI" />
+      </concept>
+      <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
+        <property id="8930763252717678396" name="attributeDefinitionName" index="8EhVw" />
+        <reference id="8930763252717678397" name="definition" index="8EhVx" />
+      </concept>
+      <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW" />
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z">
         <child id="8930763252717288847" name="type" index="8CKLj" />
       </concept>
@@ -53,6 +62,7 @@
       </concept>
       <concept id="717440187291777379" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinition" flags="ng" index="2uUmlJ" />
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
+        <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
       </concept>
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
@@ -61,6 +71,7 @@
       </concept>
       <concept id="7140692429575677856" name="com.symo.sysmlv2.baselan.structure.SysMLv2Usage" flags="ng" index="3wdj9e">
         <property id="717440187291784108" name="isEnd" index="2uUgYw" />
+        <child id="7140692429575677859" name="redefines" index="3wdj9d" />
       </concept>
       <concept id="7140692429575677857" name="com.symo.sysmlv2.baselan.structure.SysMLv2UsageRef" flags="ng" index="3wdj9f">
         <property id="7140692429575677861" name="usageName" index="3wdj9b" />
@@ -74,6 +85,9 @@
         <child id="7140692429570900101" name="type" index="3xZtlF" />
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp" />
+      <concept id="6214786105876472911" name="com.symo.sysmlv2.baselan.structure.SysMLv2LiteralExpression" flags="ng" index="1_WVX6">
+        <property id="6214786105876472933" name="value" index="1_WVXG" />
+      </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
       </concept>
@@ -317,6 +331,68 @@
                   <property role="3wdj9b" value="y" />
                   <ref role="3wdj98" node="3MUZSeG$NG1" resolve="y" />
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="3MUZSeGXf_5">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_050_AttributeRedefineScope" />
+    <node concept="1qefOq" id="3MUZSeGXf_6" role="1SKRRt">
+      <node concept="2h0jOr" id="3MUZSeGXf_8" role="1qenE9">
+        <property role="TrG5h" value="_050_AttributeRedefineScope_file" />
+        <node concept="3Z9vzX" id="3MUZSeGXf_9" role="2h0jOs">
+          <property role="TrG5h" value="p" />
+          <node concept="8EhVW" id="3MUZSeGXf_a" role="3Z9vGx">
+            <property role="TrG5h" value="Rate" />
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGXf_b" role="3Z9vGx">
+            <property role="TrG5h" value="Link" />
+            <node concept="8EhU9" id="3MUZSeGXf_c" role="3w00ZY">
+              <property role="TrG5h" value="bandwidth" />
+              <node concept="8EhVB" id="3MUZSeGXf_d" role="8EhU5">
+                <property role="8EhVw" value="Rate" />
+                <ref role="8EhVx" node="3MUZSeGXf_a" resolve="Rate" />
+              </node>
+            </node>
+            <node concept="8EhU9" id="3MUZSeGXf_e" role="3w00ZY">
+              <property role="TrG5h" value="label" />
+              <node concept="1_WVX6" id="3MUZSeGXf_f" role="2gbwqI">
+                <property role="1_WVXG" value="&quot;x&quot;" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="3MUZSeGXf_g" role="3Z9vGx">
+            <property role="TrG5h" value="Wifi" />
+            <node concept="3w00Zy" id="3MUZSeGXf_h" role="3w00Zx">
+              <property role="3w00ZX" value="Link" />
+              <ref role="3w00ZU" node="3MUZSeGXf_b" resolve="Link" />
+            </node>
+            <node concept="8EhU9" id="3MUZSeGXf_i" role="3w00ZY">
+              <node concept="3wdj9f" id="3MUZSeGXf_j" role="3wdj9d">
+                <property role="3wdj9b" value="bandwidth" />
+                <ref role="3wdj98" node="3MUZSeGXf_c" resolve="bandwidth" />
+                <node concept="2rqxmr" id="3MUZSeGXf_n" role="lGtFl">
+                  <ref role="1BTHP0" node="3MUZSeGXf_c" resolve="bandwidth" />
+                  <node concept="3KTrbX" id="3MUZSeGXf_o" role="3KTr4d">
+                    <ref role="3AHY9a" node="3MUZSeGXf_c" resolve="bandwidth" />
+                  </node>
+                  <node concept="3KTrbX" id="3MUZSeGXf_p" role="3KTr4d">
+                    <ref role="3AHY9a" node="3MUZSeGXf_e" resolve="label" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1_WVX6" id="3MUZSeGXf_k" role="2gbwqI">
+                <property role="1_WVXG" value="100" />
+              </node>
+            </node>
+            <node concept="8EhU9" id="3MUZSeGXf_l" role="3w00ZY">
+              <property role="TrG5h" value="latency" />
+              <node concept="1_WVX6" id="3MUZSeGXf_m" role="2gbwqI">
+                <property role="1_WVXG" value="5" />
               </node>
             </node>
           </node>
