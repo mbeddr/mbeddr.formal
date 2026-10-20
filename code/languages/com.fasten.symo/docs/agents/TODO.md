@@ -1169,3 +1169,23 @@ Open / not done: connector ends of an interface usage are not restricted to port
 `connect`); no sandbox fixture (the sandbox's `_100_manually_written` model had uncommitted changes of its own);
 `end x : T;` (default interface end), n-ary interface usages, `bind`, `flow`, attribute values and bodies on item
 usages remain for later iterations (planned order: 20 attribute values, 21 `bind`/`::>`, 22 flows).
+
+**Iteration 19b (2026-10-20) — spec checks for interfaces (8.3.14.3 / 8.4.10.2)**: two checks, by two mechanisms.
+(1) *Type of an interface usage must be an interface definition* — already a **scope**: the `definition` scope of
+`SysMLv2ConnectionDefinitionRef` is narrowed to `SysMLv2InterfaceDefinition` when the ref's parent is an interface
+usage (iteration 19). New declarative scope tests `_030_InterfaceTypeScope` (`test.com.symo.sysmlv2.baselan._010_scopes@tests`,
+exact-set `ScopesTest`s): the type ref of `interface i : Link …` offers exactly `{Link, Link2}`; the type ref of
+`connection c : Plain …` offers `{Plain, Link, Link2}` (an interface def is a connection def). A wrong expectation
+makes the test fail (checked), so the narrowing is really exercised.
+(2) *Ends of an interface usage must be ports* — **cannot be a scope**: a chain step `x` in `x.out` is a part and must stay
+visible, and at completion time nobody knows whether a step is the last one (only the last feature must be a port).
+Implemented as a checking rule instead: `check_SysMLv2InterfaceUsage_endsArePorts` (new rule in the
+`com.symo.sysmlv2.baselan.typesystem` model) reports an error on the source/target `SysMLv2ConnectorEnd` when the *last*
+chain step resolves to a usage that is not a `SysMLv2PortUsage`; unresolved steps are not reported (the reference error
+covers them). Helper: `SysMLv2ConnectorEnd.endsAtNonPort()`. Test `_010_InterfaceEndsCheck` (own tests model `test.com.symo.sysmlv2.baselan._030_checking_rules@tests`): `ok1`
+(`x.out`), `ok2` (`x.inner.deep`, port nested in a part) are clean; `bad1` (source = part), `bad2` (target = part),
+`bad3` (both) carry `has error` on exactly the offending ends. Verified separately that the checker reports these four
+errors and none on `ok1`/`ok2` (annotated errors are suppressed in `check_root_node_problems`, so a temporary
+unannotated copy was checked and removed). Run configs `_030_test_scope_interface_type`, `_040_test_check_interface_ends`.
+Still true: attribute/item usages are offered as chain steps in interface ends (completion is not narrowed further);
+the rule does not check the number of ends or `end port` in the definition body.
