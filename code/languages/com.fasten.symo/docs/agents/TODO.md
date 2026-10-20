@@ -1283,3 +1283,8 @@ concept behavior. They are static methods of plain classes in the typesystem mod
 Methods that *navigate the model* stay in behavior: `SysMLv2ConnectorEnd.lastUsage / endDirection / endTypeDefinition` and
 `ISysMLv2FeatureOwner.specializesOrEqualsWithin` (the helpers call them). Rule of thumb: navigation/queries -> behavior; error-message construction and
 check predicates -> typesystem helper classes. baselan 45/45, importer 61/61.
+
+**Definition hierarchy aligned (2026-10-20)**: new abstract `SysMLv2Definition` (spec 8.3.6.2, virtual folder `base`) is the base of
+`SysMLv2OccurrenceDefinition` and `SysMLv2AttributeDefinition`; `SysMLv2PortDefinition` now extends `SysMLv2OccurrenceDefinition` (8.3.12.5).
+`PartDefinition` was already an `ItemDefinition`. No aspect needed changes. baselan 45/45, importer 61/61. Open: `PartUsage` -> `ItemUsage`,
+`MetadataDefinition/Usage` -> `ItemDefinition/Usage`, connector ends once on `ConnectorAsUsage`, own ref for `ConnectionDefinition` specializations.
