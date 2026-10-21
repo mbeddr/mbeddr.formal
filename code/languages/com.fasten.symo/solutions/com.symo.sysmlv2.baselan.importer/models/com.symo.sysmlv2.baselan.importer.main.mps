@@ -3701,12 +3701,12 @@
                     <node concept="2ShNRf" id="BOR0Mn$i07" role="33vP2m">
                       <node concept="3zrR0B" id="BOR0Mn$i09" role="2ShVmc">
                         <node concept="3Tqbb2" id="BOR0Mn$i0b" role="3zrR0E">
-                          <ref role="ehGHo" to="5rf1:6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
+                          <ref role="ehGHo" to="5rf1:BOR0Mn7r_$" />
                         </node>
                       </node>
                     </node>
                     <node concept="3Tqbb2" id="BOR0Mn$i0c" role="1tU5fm">
-                      <ref role="ehGHo" to="5rf1:6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
+                      <ref role="ehGHo" to="5rf1:BOR0Mn7r_$" />
                     </node>
                   </node>
                 </node>
@@ -3717,7 +3717,7 @@
                         <ref role="3cqZAo" node="BOR0Mn$i05" resolve="superRef" />
                       </node>
                       <node concept="3TrcHB" id="BOR0Mn$i0m" role="2OqNvi">
-                        <ref role="3TsBF5" to="5rf1:6coPuU36dCj" resolve="itemDefinitionName" />
+                        <ref role="3TsBF5" to="5rf1:BOR0Mn7r_B" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="BOR0Mn$i0n" role="37vLTx">
@@ -17234,7 +17234,7 @@
       </node>
     </node>
     <node concept="2YIFZL" id="3MUZSeG7bSr" role="jymVt">
-      <property role="TrG5h" value="addItemSpecialization" />
+      <property role="TrG5h" value="addConnectionSpecialization" />
       <node concept="37vLTG" id="3MUZSeG7bSs" role="3clF46">
         <property role="TrG5h" value="def" />
         <node concept="3uibUv" id="3MUZSeG7bSt" role="1tU5fm">
@@ -17256,12 +17256,12 @@
             <node concept="2ShNRf" id="3MUZSeGb0HV" role="33vP2m">
               <node concept="3zrR0B" id="3MUZSeGb0HX" role="2ShVmc">
                 <node concept="3Tqbb2" id="3MUZSeGb0HZ" role="3zrR0E">
-                  <ref role="ehGHo" to="5rf1:6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
+                  <ref role="ehGHo" to="5rf1:BOR0Mn7r_$" />
                 </node>
               </node>
             </node>
             <node concept="3Tqbb2" id="3MUZSeGb0I0" role="1tU5fm">
-              <ref role="ehGHo" to="5rf1:6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
+              <ref role="ehGHo" to="5rf1:BOR0Mn7r_$" />
             </node>
           </node>
         </node>
@@ -17272,7 +17272,7 @@
                 <ref role="3cqZAo" node="3MUZSeGb0HT" resolve="superRef" />
               </node>
               <node concept="3TrcHB" id="3MUZSeGb0Ia" role="2OqNvi">
-                <ref role="3TsBF5" to="5rf1:6coPuU36dCj" resolve="itemDefinitionName" />
+                <ref role="3TsBF5" to="5rf1:BOR0Mn7r_B" />
               </node>
             </node>
             <node concept="37vLTw" id="3MUZSeGb0Ib" role="37vLTx">

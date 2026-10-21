@@ -277,61 +277,79 @@
         </node>
       </node>
     </node>
-    <node concept="9S07l" id="3MUZSeJgcLO" role="9Vyp8">
-      <node concept="3clFbS" id="3MUZSeJgcLQ" role="2VODD2">
-        <node concept="3clFbF" id="3MUZSeJgcLR" role="3cqZAp">
-          <node concept="3K4zz7" id="3MUZSeJgcLT" role="3clFbG">
-            <node concept="2OqwBi" id="3MUZSeJgcLX" role="3K4Cdx">
-              <node concept="nLn13" id="3MUZSeJgcM0" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="3MUZSeJgcM1" role="2OqNvi">
-                <node concept="chp4Y" id="3MUZSeJgcM3" role="cj9EA">
-                  <ref role="cht4Q" to="5rf1:BOR0Mn7r_A" resolve="SysMLv2ConnectionUsage" />
+    <node concept="9S07l" id="3MUZSeJpDZ0" role="9Vyp8">
+      <node concept="3clFbS" id="3MUZSeJpDZ2" role="2VODD2">
+        <node concept="3clFbF" id="3MUZSeJpDZ3" role="3cqZAp">
+          <node concept="3K4zz7" id="3MUZSeJpDZ5" role="3clFbG">
+            <node concept="2OqwBi" id="3MUZSeJpDZ9" role="3K4Cdx">
+              <node concept="nLn13" id="3MUZSeJpDZc" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="3MUZSeJpDZd" role="2OqNvi">
+                <node concept="chp4Y" id="3MUZSeJpDZf" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:BOR0Mn7r_z" resolve="SysMLv2ConnectionDefinition" />
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="3MUZSeJgcM4" role="3K4E3e">
-              <node concept="2DD5aU" id="3MUZSeJgcM7" role="2Oq$k0" />
-              <node concept="2Zo12i" id="3MUZSeJgcM8" role="2OqNvi">
-                <node concept="chp4Y" id="3MUZSeJgcMa" role="2Zo12j">
+            <node concept="2OqwBi" id="3MUZSeJpDZg" role="3K4E3e">
+              <node concept="2DD5aU" id="3MUZSeJpDZj" role="2Oq$k0" />
+              <node concept="2Zo12i" id="3MUZSeJpDZk" role="2OqNvi">
+                <node concept="chp4Y" id="3MUZSeJpDZm" role="2Zo12j">
                   <ref role="cht4Q" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
                 </node>
               </node>
             </node>
-            <node concept="3K4zz7" id="3MUZSeJgcMb" role="3K4GZi">
-              <node concept="2OqwBi" id="3MUZSeJgcMf" role="3K4Cdx">
-                <node concept="nLn13" id="3MUZSeJgcMi" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="3MUZSeJgcMj" role="2OqNvi">
-                  <node concept="chp4Y" id="3MUZSeJgcMl" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
+            <node concept="3K4zz7" id="3MUZSeJpDZn" role="3K4GZi">
+              <node concept="2OqwBi" id="3MUZSeJpDZr" role="3K4Cdx">
+                <node concept="nLn13" id="3MUZSeJpDZu" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="3MUZSeJpDZv" role="2OqNvi">
+                  <node concept="chp4Y" id="3MUZSeJpDZx" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:BOR0Mn7r_A" resolve="SysMLv2ConnectionUsage" />
                   </node>
                 </node>
               </node>
-              <node concept="1Wc70l" id="3MUZSeJgcMm" role="3K4E3e">
-                <node concept="2OqwBi" id="3MUZSeJgcMp" role="3uHU7B">
-                  <node concept="2DD5aU" id="3MUZSeJgcMs" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="3MUZSeJgcMt" role="2OqNvi">
-                    <node concept="chp4Y" id="3MUZSeJgcMv" role="2Zo12j">
-                      <ref role="cht4Q" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
+              <node concept="2OqwBi" id="3MUZSeJpDZy" role="3K4E3e">
+                <node concept="2DD5aU" id="3MUZSeJpDZ_" role="2Oq$k0" />
+                <node concept="2Zo12i" id="3MUZSeJpDZA" role="2OqNvi">
+                  <node concept="chp4Y" id="3MUZSeJpDZC" role="2Zo12j">
+                    <ref role="cht4Q" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3K4zz7" id="3MUZSeJpDZD" role="3K4GZi">
+                <node concept="2OqwBi" id="3MUZSeJpDZH" role="3K4Cdx">
+                  <node concept="nLn13" id="3MUZSeJpDZK" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="3MUZSeJpDZL" role="2OqNvi">
+                    <node concept="chp4Y" id="3MUZSeJpDZN" role="cj9EA">
+                      <ref role="cht4Q" to="5rf1:7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
                     </node>
                   </node>
                 </node>
-                <node concept="3fqX7Q" id="3MUZSeJgcMw" role="3uHU7w">
-                  <node concept="2OqwBi" id="3MUZSeJgcMy" role="3fr31v">
-                    <node concept="2DD5aU" id="3MUZSeJgcM_" role="2Oq$k0" />
-                    <node concept="2Zo12i" id="3MUZSeJgcMA" role="2OqNvi">
-                      <node concept="chp4Y" id="3MUZSeJgcMC" role="2Zo12j">
-                        <ref role="cht4Q" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
+                <node concept="1Wc70l" id="3MUZSeJpDZO" role="3K4E3e">
+                  <node concept="2OqwBi" id="3MUZSeJpDZR" role="3uHU7B">
+                    <node concept="2DD5aU" id="3MUZSeJpDZU" role="2Oq$k0" />
+                    <node concept="2Zo12i" id="3MUZSeJpDZV" role="2OqNvi">
+                      <node concept="chp4Y" id="3MUZSeJpDZX" role="2Zo12j">
+                        <ref role="cht4Q" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3fqX7Q" id="3MUZSeJpDZY" role="3uHU7w">
+                    <node concept="2OqwBi" id="3MUZSeJpE00" role="3fr31v">
+                      <node concept="2DD5aU" id="3MUZSeJpE03" role="2Oq$k0" />
+                      <node concept="2Zo12i" id="3MUZSeJpE04" role="2OqNvi">
+                        <node concept="chp4Y" id="3MUZSeJpE06" role="2Zo12j">
+                          <ref role="cht4Q" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
+                        </node>
                       </node>
                     </node>
                   </node>
                 </node>
-              </node>
-              <node concept="3fqX7Q" id="3MUZSeJgcMD" role="3K4GZi">
-                <node concept="2OqwBi" id="3MUZSeJgcMF" role="3fr31v">
-                  <node concept="2DD5aU" id="3MUZSeJgcMI" role="2Oq$k0" />
-                  <node concept="2Zo12i" id="3MUZSeJgcMJ" role="2OqNvi">
-                    <node concept="chp4Y" id="3MUZSeJgcML" role="2Zo12j">
-                      <ref role="cht4Q" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
+                <node concept="3fqX7Q" id="3MUZSeJpE07" role="3K4GZi">
+                  <node concept="2OqwBi" id="3MUZSeJpE09" role="3fr31v">
+                    <node concept="2DD5aU" id="3MUZSeJpE0c" role="2Oq$k0" />
+                    <node concept="2Zo12i" id="3MUZSeJpE0d" role="2OqNvi">
+                      <node concept="chp4Y" id="3MUZSeJpE0f" role="2Zo12j">
+                        <ref role="cht4Q" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
+                      </node>
                     </node>
                   </node>
                 </node>

@@ -74,8 +74,10 @@ Chosen option: **faithful base language**.
   which usage.
 * The connector ends (`source`/`target`) are declared once on the `ISysMLv2ConnectorAsUsage` interface (the
   `ConnectorAsUsage` of spec 8.3.13.5) and inherited by `ConnectionUsage`, `BindingUsage` and `FlowUsage`.
-* `ConnectionDefinition` and friends reference their specialisations through `ItemDefinitionRef`
-  (`FlowDefinition` already uses its own `FlowDefinitionRef`).
+* `ConnectionDefinition` (and `InterfaceDefinition`) reference their specialisations through
+  `ConnectionDefinitionRef`: `ItemDefinitionRef.canBeChild` allows only that ref concept under a connection definition.
+  The shared `ItemDefinition.specializes` slot is still typed `ItemDefinitionRef`; `PartDefinition` still uses plain
+  `ItemDefinitionRef` there (the spec requires only that a part definition specialises a part definition).
 * `ActionUsage`/`ActionDefinition` are abstract placeholders; KerML-level classifiers are not modelled.
 * Reference subsetting (`::>`), `ref` usages, visibility, aliases and several body kinds are not implemented
   yet (rejected with explicit errors).

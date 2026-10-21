@@ -1315,3 +1315,9 @@ slots in tests and in both sandbox models (`MOVE_NODE_TO_PARENT`); a few fixture
 their ids; the binding/flow copies were removed after repointing editors, textGen, behavior, importer and checking rules to the interface links and moving
 13 binding/flow fixtures' ends (`MOVE_NODE_TO_PARENT`). Moving the ConnectionUsage declarations orphaned the stored ends of several connection/interface
 fixtures (see gotchas); they were recovered by id. baselan 47/47, importer 63/63.
+
+**Connection definitions specialise via ConnectionDefinitionRef (2026-10-21, alignment 4 of 4)**: `ItemDefinitionRef_Constraints.canBeChild` now returns
+`childConcept.isSubConceptOf(ConnectionDefinitionRef)` when the parent is a `ConnectionDefinition` (covers `InterfaceDefinition`); the importer builds
+`ConnectionDefinitionRef` (`connectionDefinitionName`) for `connection def`/`interface def` subclassification (`addItemSpecialization` became
+`addConnectionSpecialization`) and the existing `reifyConnectionDefinitionRefs` resolves them. Open: no importer test yet covers connection/interface
+definition specialisation; `PartDefinition.specializes` still holds plain `ItemDefinitionRef`. baselan 47/47, importer 63/63.
