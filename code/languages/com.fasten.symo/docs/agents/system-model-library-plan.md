@@ -30,8 +30,10 @@ flows/successions/events 17, `connect`/`bind` 8, `allocate` 5, value `=` ~20, `d
 Milestones: M1 = steps 1-3 (Attributes.sysml + all import headers), M2 = 4-8, M3 = 9-11, M4 = KerML, M5 = P4.
 
 ## Part B: KerML base language (`com.symo.kerml.baselan`, test solution `test.com.symo.kerml.baselan`)
-- Phase 0: register both modules in `com.fasten.meta.architecture` + README project structure; first test model using the
-  language; commit the modules.
+- Phase 0: register the modules in `com.fasten.meta.architecture` + README project structure; create the importer solution
+  `com.symo.kerml.baselan.importer` and its test solution `test.com.symo.kerml.baselan.importer` (separate from the SysML importer:
+  dependency direction is SysML -> KerML after Phase 6, own grammar/Gradle build, independent lifecycle; extract shared importer
+  infrastructure into a small runtime solution only once the first slice shows what is generic); first test model using the language.
 - Phase 1 Root layer (KerML Clause 8.2): Element, Namespace, Membership/OwningMembership, Import (namespace/membership,
   visibility), Package/LibraryPackage, Comment/Documentation/Annotation; editors, textGen, qualified-name scope tests.
 - Phase 2 Core layer (8.3): Type, Classifier, Feature (+ modifiers abstract, composite, portion, readonly, derived, end, var,
@@ -40,7 +42,7 @@ Milestones: M1 = steps 1-3 (Attributes.sysml + all import headers), M2 = 4-8, M3
 - Phase 3 Kernel layer (8.4): Class, Structure, DataType, Association(+Structure), Behavior, Step, Function, Predicate,
   Interaction, Metaclass, Expression (UninterpretedTextExpression first), Invariant, Connector, BindingConnector, Succession,
   ItemFlow, parameters/return.
-- Phase 4 Importer: new solution `com.symo.kerml.baselan.importer`; ANTLR grammar from the KEBNF (check whether the generator
+- Phase 4 Importer: in the new solution `com.symo.kerml.baselan.importer` (created in Phase 0); ANTLR grammar from the KEBNF (check whether the generator
   used for the SysML grammar, daltskin/sysml-v2-grammar, also covers KerML); visitor, type reifier, unsupported-construct
   policy, import + roundtrip fixtures; share infrastructure with the SysML importer where sensible.
 - Phase 5 Kernel library as accessory models, in tiers: K1 semantic core (Base, Objects, Occurrences, Links, Metaobjects,
