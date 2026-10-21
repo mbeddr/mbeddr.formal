@@ -1321,3 +1321,6 @@ fixtures (see gotchas); they were recovered by id. baselan 47/47, importer 63/63
 `ConnectionDefinitionRef` (`connectionDefinitionName`) for `connection def`/`interface def` subclassification (`addItemSpecialization` became
 `addConnectionSpecialization`) and the existing `reifyConnectionDefinitionRefs` resolves them. Open: no importer test yet covers connection/interface
 definition specialisation; `PartDefinition.specializes` still holds plain `ItemDefinitionRef`. baselan 47/47, importer 63/63.
+
+**Systems Model Library / KerML (2026-10-21)**: see [system-model-library-plan.md](system-model-library-plan.md) for the prioritized
+plan (SysML-side gaps, `com.symo.kerml.baselan`, KerML importer, kernel library accessory models, re-layering SysML on KerML).
