@@ -173,16 +173,16 @@
     <property role="TrG5h" value="SysMLv2PartUsage" />
     <property role="34LRSv" value="part" />
     <property role="3GE5qa" value="part" />
-    <ref role="1TJDcQ" node="6coPuU36dCd" />
+    <ref role="1TJDcQ" node="6coPuU36dCd" resolve="SysMLv2ItemUsage" />
     <node concept="PrWs8" id="6coPuU39G2P" role="PzmwI">
-      <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartDefinition" />
+      <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNkRPu">
     <property role="EcuMT" value="8930763252717288798" />
     <property role="TrG5h" value="SysMLv2PartDefinitionRef" />
     <property role="3GE5qa" value="part" />
-    <ref role="1TJDcQ" node="6coPuU36dCc" />
+    <ref role="1TJDcQ" node="6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
     <node concept="1TJgyi" id="7JKstLNkRPv" role="1TKVEl">
       <property role="IQ2nx" value="8930763252717288799" />
       <property role="TrG5h" value="partDefinitionName" />
@@ -198,7 +198,7 @@
       <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
     </node>
     <node concept="RPilO" id="cvgDBNz5Mz" role="lGtFl">
-      <ref role="RPilL" node="7JKstLNkRPw" resolve="definition" />
+      <ref role="RPilL" node="7JKstLNkRPw" resolve="partDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNmmWw">
@@ -206,7 +206,7 @@
     <property role="TrG5h" value="SysMLv2AttributeDefinition" />
     <property role="34LRSv" value="attribute def" />
     <property role="3GE5qa" value="part.attribute" />
-    <ref role="1TJDcQ" node="3MUZSeI$44h" />
+    <ref role="1TJDcQ" node="3MUZSeI$44h" resolve="SysMLv2Definition" />
     <node concept="PrWs8" id="7JKstLNmmWx" role="PzmwI">
       <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
     </node>
@@ -369,7 +369,7 @@
     <property role="34LRSv" value="port def" />
     <property role="R4oN_" value="SysML v2 port definition" />
     <property role="3GE5qa" value="part.port" />
-    <ref role="1TJDcQ" node="3MUZSeHM$aH" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aH" resolve="SysMLv2OccurrenceDefinition" />
     <node concept="1TJgyj" id="6coPuU2Tg1W" role="1TKVEi">
       <property role="IQ2ns" value="7140692429570900092" />
       <property role="20kJfa" value="specializes" />
@@ -426,7 +426,7 @@
     <property role="34LRSv" value="port" />
     <property role="R4oN_" value="SysML v2 port usage" />
     <property role="3GE5qa" value="part.port" />
-    <ref role="1TJDcQ" node="3MUZSeHM$aI" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aI" resolve="SysMLv2OccurrenceUsage" />
     <node concept="1TJgyi" id="6coPuU2Tg22" role="1TKVEl">
       <property role="IQ2nx" value="7140692429570900098" />
       <property role="TrG5h" value="conjugated" />
@@ -463,7 +463,7 @@
       <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
     <node concept="PrWs8" id="6coPuU39G2X" role="PzmwI">
-      <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartDefinition" />
+      <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
     </node>
     <node concept="1TJgyj" id="3MUZSeG2oix" role="1TKVEi">
       <property role="IQ2ns" value="4376090928935961761" />
@@ -500,7 +500,7 @@
     <property role="34LRSv" value="item def" />
     <property role="R4oN_" value="SysML v2 item definition" />
     <property role="3GE5qa" value="part.item" />
-    <ref role="1TJDcQ" node="3MUZSeHM$aH" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aH" resolve="SysMLv2OccurrenceDefinition" />
     <node concept="1TJgyj" id="6coPuU36dCf" role="1TKVEi">
       <property role="IQ2ns" value="7140692429574298127" />
       <property role="20kJfa" value="specializes" />
@@ -557,7 +557,7 @@
     <property role="34LRSv" value="item" />
     <property role="R4oN_" value="SysML v2 item usage" />
     <property role="3GE5qa" value="part.item" />
-    <ref role="1TJDcQ" node="3MUZSeHM$aI" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aI" resolve="SysMLv2OccurrenceUsage" />
     <node concept="1TJgyj" id="6coPuU36dCl" role="1TKVEi">
       <property role="IQ2ns" value="7140692429574298133" />
       <property role="20kJfa" value="direction" />
@@ -624,14 +624,14 @@
       <property role="20kJfa" value="subsets" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2FeatureRef" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
     </node>
     <node concept="1TJgyj" id="6coPuU3buuz" role="1TKVEi">
       <property role="IQ2ns" value="7140692429575677859" />
       <property role="20kJfa" value="redefines" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2FeatureRef" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
     </node>
     <node concept="PrWs8" id="6coPuU3buu$" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -665,7 +665,7 @@
       <ref role="20lvS9" node="6coPuU3buuw" resolve="SysMLv2Usage" />
     </node>
     <node concept="RPilO" id="3MUZSeFqYDF" role="lGtFl">
-      <ref role="RPilL" node="6coPuU3buuA" />
+      <ref role="RPilL" node="6coPuU3buuA" resolve="usage" />
     </node>
   </node>
   <node concept="PlHQZ" id="4N4m7hrYNgN">
@@ -761,7 +761,7 @@
       <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
     </node>
     <node concept="RPilO" id="5oZmK$Nni8R" role="lGtFl">
-      <ref role="RPilL" node="5oZmK$Nm2Kj" />
+      <ref role="RPilL" node="5oZmK$Nm2Kj" resolve="element" />
     </node>
   </node>
   <node concept="1TIwiD" id="5oZmK$Nm2Kh">
@@ -859,7 +859,7 @@
     <property role="34LRSv" value="metadata def" />
     <property role="R4oN_" value="SysML v2 metadata definition" />
     <property role="3GE5qa" value="metadata" />
-    <ref role="1TJDcQ" node="6coPuU36dCb" />
+    <ref role="1TJDcQ" node="6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
   </node>
   <node concept="1TIwiD" id="5oZmK$NNehc">
     <property role="EcuMT" value="6214786105876472908" />
@@ -880,7 +880,7 @@
       <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
     </node>
     <node concept="RPilO" id="5oZmK$NNfCH" role="lGtFl">
-      <ref role="RPilL" node="5oZmK$NNehm" />
+      <ref role="RPilL" node="5oZmK$NNehm" resolve="definition" />
     </node>
   </node>
   <node concept="1TIwiD" id="5oZmK$NNehd">
@@ -889,7 +889,7 @@
     <property role="34LRSv" value="metadata" />
     <property role="R4oN_" value="SysML v2 metadata: (@ | metadata) [name :] Type [about A, B] (; | { values })" />
     <property role="3GE5qa" value="metadata" />
-    <ref role="1TJDcQ" node="6coPuU36dCd" />
+    <ref role="1TJDcQ" node="6coPuU36dCd" resolve="SysMLv2ItemUsage" />
     <node concept="1TJgyi" id="5oZmK$NNeho" role="1TKVEl">
       <property role="IQ2nx" value="6214786105876472920" />
       <property role="TrG5h" value="atSign" />
@@ -927,7 +927,7 @@
       <property role="20kJfa" value="feature" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2FeatureRef" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
     </node>
     <node concept="1TJgyj" id="5oZmK$NNehz" role="1TKVEi">
       <property role="IQ2ns" value="6214786105876472931" />
@@ -994,7 +994,7 @@
     <property role="EcuMT" value="717440187291777380" />
     <property role="TrG5h" value="SysMLv2ConnectionDefinitionRef" />
     <property role="3GE5qa" value="connection" />
-    <ref role="1TJDcQ" node="7JKstLNkRPu" />
+    <ref role="1TJDcQ" node="7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
     <node concept="1TJgyi" id="BOR0Mn7r_B" role="1TKVEl">
       <property role="IQ2nx" value="717440187291777383" />
       <property role="TrG5h" value="connectionDefinitionName" />
@@ -1010,7 +1010,7 @@
       <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
     </node>
     <node concept="RPilO" id="BOR0Mn7tAE" role="lGtFl">
-      <ref role="RPilL" node="BOR0Mn7r_C" />
+      <ref role="RPilL" node="BOR0Mn7r_C" resolve="connectionDefinition" />
     </node>
   </node>
   <node concept="1TIwiD" id="BOR0Mn7r__">
@@ -1024,7 +1024,7 @@
       <property role="20kJfa" value="chain" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
-      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2FeatureRef" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
     </node>
     <node concept="PrWs8" id="BOR0Mn7r_F" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
@@ -1036,7 +1036,7 @@
     <property role="34LRSv" value="connect" />
     <property role="R4oN_" value="SysML v2 connection usage: [connection [name] [: Type]] connect a.b to c.d;" />
     <property role="3GE5qa" value="connection" />
-    <ref role="1TJDcQ" node="7JKstLNgG7Z" />
+    <ref role="1TJDcQ" node="7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
     <node concept="1TJgyi" id="BOR0Mn7r_G" role="1TKVEl">
       <property role="IQ2nx" value="717440187291777388" />
       <property role="TrG5h" value="withKeyword" />
@@ -1102,7 +1102,7 @@
     <property role="34LRSv" value="flow def" />
     <property role="R4oN_" value="SysML v2 flow definition: flow def Name { ... }" />
     <property role="3GE5qa" value="flow" />
-    <ref role="1TJDcQ" node="3MUZSeHM$aJ" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aJ" resolve="SysMLv2ActionDefinition" />
     <node concept="PrWs8" id="3MUZSeHMA4k" role="PzmwI">
       <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
     </node>
@@ -1133,7 +1133,7 @@
     <property role="34LRSv" value="flow" />
     <property role="R4oN_" value="SysML v2 flow usage: flow [name] [: Type] [of Payload] from a.p to b.q;" />
     <property role="3GE5qa" value="flow" />
-    <ref role="1TJDcQ" node="3MUZSeHM$aK" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aK" resolve="SysMLv2ActionUsage" />
     <node concept="1TJgyj" id="3MUZSeHmu9J" role="1TKVEi">
       <property role="IQ2ns" value="4376090928958005871" />
       <property role="20kJfa" value="payload" />
@@ -1168,7 +1168,7 @@
     <property role="R4oN_" value="SysML v2 OccurrenceDefinition (8.3.9.2): abstract base of item and action definitions" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="base" />
-    <ref role="1TJDcQ" node="3MUZSeI$44h" />
+    <ref role="1TJDcQ" node="3MUZSeI$44h" resolve="SysMLv2Definition" />
   </node>
   <node concept="1TIwiD" id="3MUZSeHM$aI">
     <property role="EcuMT" value="4376090928965370542" />
@@ -1241,7 +1241,7 @@
     <property role="R4oN_" value="SysML v2 Definition (8.3.6.2): abstract base of all definitions" />
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="base" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
 </model>
 

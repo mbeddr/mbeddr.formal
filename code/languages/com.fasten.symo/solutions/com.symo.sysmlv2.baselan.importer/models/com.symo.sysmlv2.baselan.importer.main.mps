@@ -2235,7 +2235,7 @@
                     <ref role="3cqZAo" node="5oZmK$N_vtH" resolve="commentNode" />
                   </node>
                   <node concept="3Tsc0h" id="5oZmK$N_vv0" role="2OqNvi">
-                    <ref role="3TtcxE" to="5rf1:5oZmK$Nm2Ko" />
+                    <ref role="3TtcxE" to="5rf1:5oZmK$Nm2Ko" resolve="about" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="5oZmK$N_vv1" role="2OqNvi">
@@ -2701,12 +2701,12 @@
             <node concept="2ShNRf" id="5oZmK$NYuyc" role="33vP2m">
               <node concept="3zrR0B" id="5oZmK$NYuye" role="2ShVmc">
                 <node concept="3Tqbb2" id="5oZmK$NYuyg" role="3zrR0E">
-                  <ref role="ehGHo" to="5rf1:6coPuU36dCc" />
+                  <ref role="ehGHo" to="5rf1:6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
                 </node>
               </node>
             </node>
             <node concept="3Tqbb2" id="5oZmK$NYuyh" role="1tU5fm">
-              <ref role="ehGHo" to="5rf1:6coPuU36dCc" />
+              <ref role="ehGHo" to="5rf1:6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
             </node>
           </node>
         </node>
@@ -2747,7 +2747,7 @@
                 <ref role="3cqZAo" node="5oZmK$NYuya" resolve="typeRef" />
               </node>
               <node concept="3TrcHB" id="5oZmK$NYuzt" role="2OqNvi">
-                <ref role="3TsBF5" to="5rf1:6coPuU36dCj" />
+                <ref role="3TsBF5" to="5rf1:6coPuU36dCj" resolve="itemDefinitionName" />
               </node>
             </node>
             <node concept="37vLTw" id="5oZmK$NYuzu" role="37vLTx">
@@ -2762,7 +2762,7 @@
                 <ref role="3cqZAo" node="5oZmK$NYuxZ" resolve="mdNode" />
               </node>
               <node concept="3TrEf2" id="5oZmK$NYuzC" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:6coPuU36dCn" />
+                <ref role="3Tt5mk" to="5rf1:6coPuU36dCn" resolve="type" />
               </node>
             </node>
             <node concept="37vLTw" id="5oZmK$NYuzD" role="37vLTx">
@@ -2818,7 +2818,7 @@
                     <ref role="3cqZAo" node="5oZmK$NYuxZ" resolve="mdNode" />
                   </node>
                   <node concept="3Tsc0h" id="5oZmK$NYuzY" role="2OqNvi">
-                    <ref role="3TtcxE" to="5rf1:5oZmK$NNehq" />
+                    <ref role="3TtcxE" to="5rf1:5oZmK$NNehq" resolve="about" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="5oZmK$NYuzZ" role="2OqNvi">
@@ -2916,12 +2916,12 @@
                 <node concept="2ShNRf" id="5oZmK$NYuyH" role="33vP2m">
                   <node concept="3zrR0B" id="5oZmK$NYuyJ" role="2ShVmc">
                     <node concept="3Tqbb2" id="5oZmK$NYuyL" role="3zrR0E">
-                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                     </node>
                   </node>
                 </node>
                 <node concept="3Tqbb2" id="5oZmK$NYuyM" role="1tU5fm">
-                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                 </node>
               </node>
             </node>
@@ -2947,7 +2947,7 @@
                     <ref role="3cqZAo" node="5oZmK$NYuyF" resolve="featureRef" />
                   </node>
                   <node concept="3TrcHB" id="5oZmK$NYu$b" role="2OqNvi">
-                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="featureName" />
+                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="5oZmK$NYu$c" role="37vLTx">
@@ -2962,7 +2962,7 @@
                     <ref role="3cqZAo" node="5oZmK$NYuyw" resolve="valueNode" />
                   </node>
                   <node concept="3TrEf2" id="5oZmK$NYu$m" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:5oZmK$NNehy" />
+                    <ref role="3Tt5mk" to="5rf1:5oZmK$NNehy" resolve="feature" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="5oZmK$NYu$n" role="37vLTx">
@@ -2992,7 +2992,7 @@
                     <ref role="3cqZAo" node="5oZmK$NYuyw" resolve="valueNode" />
                   </node>
                   <node concept="3TrEf2" id="5oZmK$NYu$G" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:5oZmK$NNehz" />
+                    <ref role="3Tt5mk" to="5rf1:5oZmK$NNehz" resolve="value" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="5oZmK$NYu$H" role="37vLTx">
@@ -3007,7 +3007,7 @@
                     <ref role="3cqZAo" node="5oZmK$NYuxZ" resolve="mdNode" />
                   </node>
                   <node concept="3Tsc0h" id="5oZmK$NYu$R" role="2OqNvi">
-                    <ref role="3TtcxE" to="5rf1:5oZmK$NNehr" />
+                    <ref role="3TtcxE" to="5rf1:5oZmK$NNehr" resolve="values" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="5oZmK$NYu$S" role="2OqNvi">
@@ -3434,7 +3434,7 @@
       <node concept="37vLTG" id="BOR0Mn$hX5" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="BOR0Mn$hX7" role="1tU5fm">
-          <ref role="3uigEE" to="guqe:~SysMLv2Parser$ConnectionDefinitionContext" resolve="ConnectionDefinitionContext" />
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$ConnectionDefinitionContext" resolve="SysMLv2Parser.ConnectionDefinitionContext" />
         </node>
       </node>
       <node concept="3clFbS" id="BOR0Mn$hX8" role="3clF47">
@@ -3451,7 +3451,7 @@
               </node>
             </node>
             <node concept="3uibUv" id="BOR0Mn$hXj" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext" resolve="OccurrenceDefinitionPrefixContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext" resolve="SysMLv2Parser.OccurrenceDefinitionPrefixContext" />
             </node>
           </node>
         </node>
@@ -3507,7 +3507,7 @@
               </node>
             </node>
             <node concept="3uibUv" id="BOR0Mn$hXX" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionContext" resolve="DefinitionContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionContext" resolve="SysMLv2Parser.DefinitionContext" />
             </node>
           </node>
         </node>
@@ -3524,7 +3524,7 @@
               </node>
             </node>
             <node concept="3uibUv" id="BOR0Mn$hY8" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext" resolve="DefinitionDeclarationContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext" resolve="SysMLv2Parser.DefinitionDeclarationContext" />
             </node>
           </node>
         </node>
@@ -3541,7 +3541,7 @@
               </node>
             </node>
             <node concept="3uibUv" id="BOR0Mn$hYj" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$IdentificationContext" resolve="IdentificationContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$IdentificationContext" resolve="SysMLv2Parser.IdentificationContext" />
             </node>
           </node>
         </node>
@@ -3605,7 +3605,7 @@
               </node>
             </node>
             <node concept="3uibUv" id="BOR0Mn$hZ0" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyContext" resolve="DefinitionBodyContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyContext" resolve="SysMLv2Parser.DefinitionBodyContext" />
             </node>
           </node>
         </node>
@@ -3701,12 +3701,12 @@
                     <node concept="2ShNRf" id="BOR0Mn$i07" role="33vP2m">
                       <node concept="3zrR0B" id="BOR0Mn$i09" role="2ShVmc">
                         <node concept="3Tqbb2" id="BOR0Mn$i0b" role="3zrR0E">
-                          <ref role="ehGHo" to="5rf1:BOR0Mn7r_$" />
+                          <ref role="ehGHo" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
                         </node>
                       </node>
                     </node>
                     <node concept="3Tqbb2" id="BOR0Mn$i0c" role="1tU5fm">
-                      <ref role="ehGHo" to="5rf1:BOR0Mn7r_$" />
+                      <ref role="ehGHo" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
                     </node>
                   </node>
                 </node>
@@ -3717,7 +3717,7 @@
                         <ref role="3cqZAo" node="BOR0Mn$i05" resolve="superRef" />
                       </node>
                       <node concept="3TrcHB" id="BOR0Mn$i0m" role="2OqNvi">
-                        <ref role="3TsBF5" to="5rf1:BOR0Mn7r_B" />
+                        <ref role="3TsBF5" to="5rf1:BOR0Mn7r_B" resolve="connectionDefinitionName" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="BOR0Mn$i0n" role="37vLTx">
@@ -3732,7 +3732,7 @@
                         <ref role="3cqZAo" node="BOR0Mn$hZk" resolve="cd" />
                       </node>
                       <node concept="3Tsc0h" id="BOR0Mn$i0x" role="2OqNvi">
-                        <ref role="3TtcxE" to="5rf1:6coPuU36dCf" />
+                        <ref role="3TtcxE" to="5rf1:6coPuU36dCf" resolve="specializes" />
                       </node>
                     </node>
                     <node concept="TSZUe" id="BOR0Mn$i0y" role="2OqNvi">
@@ -3759,7 +3759,7 @@
             <property role="OYnhT" value="local variable" />
             <property role="TrG5h" value="item" />
             <node concept="3uibUv" id="BOR0Mn$i0K" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext" resolve="DefinitionBodyItemContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext" resolve="SysMLv2Parser.DefinitionBodyItemContext" />
             </node>
           </node>
           <node concept="3clFbS" id="BOR0Mn$i0L" role="2LFqv$">
@@ -3788,7 +3788,7 @@
                     <ref role="3cqZAo" node="BOR0Mn$hZk" resolve="cd" />
                   </node>
                   <node concept="3Tsc0h" id="BOR0Mn$i17" role="2OqNvi">
-                    <ref role="3TtcxE" to="5rf1:6coPuU36dCg" />
+                    <ref role="3TtcxE" to="5rf1:6coPuU36dCg" resolve="content" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="BOR0Mn$i18" role="2OqNvi">
@@ -5032,12 +5032,12 @@
               <node concept="3cpWsn" id="6coPuU3eCNn" role="3cpWs9">
                 <property role="TrG5h" value="subsetNameRef" />
                 <node concept="3Tqbb2" id="6coPuU3eCNp" role="1tU5fm">
-                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                 </node>
                 <node concept="2ShNRf" id="6coPuU3eCNq" role="33vP2m">
                   <node concept="3zrR0B" id="6coPuU3eCNs" role="2ShVmc">
                     <node concept="3Tqbb2" id="6coPuU3eCNu" role="3zrR0E">
-                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                     </node>
                   </node>
                 </node>
@@ -5050,7 +5050,7 @@
                     <ref role="3cqZAo" node="6coPuU3eCNn" resolve="subsetNameRef" />
                   </node>
                   <node concept="3TrcHB" id="6coPuU3eCNC" role="2OqNvi">
-                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="featureName" />
+                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6coPuU3eCND" role="37vLTx">
@@ -5093,12 +5093,12 @@
               <node concept="3cpWsn" id="6coPuU3eD2r" role="3cpWs9">
                 <property role="TrG5h" value="redefinedNameRef" />
                 <node concept="3Tqbb2" id="6coPuU3eD2t" role="1tU5fm">
-                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                 </node>
                 <node concept="2ShNRf" id="6coPuU3eD2u" role="33vP2m">
                   <node concept="3zrR0B" id="6coPuU3eD2w" role="2ShVmc">
                     <node concept="3Tqbb2" id="6coPuU3eD2y" role="3zrR0E">
-                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                     </node>
                   </node>
                 </node>
@@ -5111,7 +5111,7 @@
                     <ref role="3cqZAo" node="6coPuU3eD2r" resolve="redefinedNameRef" />
                   </node>
                   <node concept="3TrcHB" id="6coPuU3eD2G" role="2OqNvi">
-                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="featureName" />
+                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6coPuU3eD2H" role="37vLTx">
@@ -5210,7 +5210,7 @@
                     <ref role="3cqZAo" node="2d_6cEDKaV2" resolve="pu" />
                   </node>
                   <node concept="3TrEf2" id="6coPuU2Noo2" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCm" />
+                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCm" resolve="multiplicity" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6coPuU2Noo3" role="37vLTx">
@@ -5265,7 +5265,7 @@
                     <ref role="3cqZAo" node="2d_6cEDKaV2" resolve="pu" />
                   </node>
                   <node concept="3TrEf2" id="2d_6cEDKaWB" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCn" />
+                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCn" resolve="type" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="2d_6cEDKaWC" role="37vLTx">
@@ -5288,7 +5288,7 @@
             <property role="OYnhT" value="local variable" />
             <property role="TrG5h" value="item" />
             <node concept="3uibUv" id="3MUZSeFQqDm" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext" resolve="DefinitionBodyItemContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext" resolve="SysMLv2Parser.DefinitionBodyItemContext" />
             </node>
           </node>
           <node concept="3clFbS" id="3MUZSeFQqDn" role="2LFqv$">
@@ -6148,7 +6148,7 @@
                     <ref role="3cqZAo" node="BOR0MnmOCx" resolve="cu" />
                   </node>
                   <node concept="3TrEf2" id="BOR0MnmOSz" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCn" />
+                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCn" resolve="type" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="BOR0MnmOS$" role="37vLTx">
@@ -6165,7 +6165,7 @@
                 <ref role="3cqZAo" node="BOR0MnmOCx" resolve="cu" />
               </node>
               <node concept="3TrEf2" id="BOR0MnmOSI" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" />
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" resolve="source" />
               </node>
             </node>
             <node concept="1PxgMI" id="BOR0MnmOSJ" role="37vLTx">
@@ -6185,7 +6185,7 @@
                 <ref role="3cqZAo" node="BOR0MnmOCx" resolve="cu" />
               </node>
               <node concept="3TrEf2" id="BOR0MnmP0r" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" />
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" resolve="target" />
               </node>
             </node>
             <node concept="1PxgMI" id="BOR0MnmP0s" role="37vLTx">
@@ -6211,7 +6211,7 @@
             <property role="OYnhT" value="local variable" />
             <property role="TrG5h" value="item" />
             <node concept="3uibUv" id="3MUZSeFQqSJ" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext" resolve="DefinitionBodyItemContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext" resolve="SysMLv2Parser.DefinitionBodyItemContext" />
             </node>
           </node>
           <node concept="3clFbS" id="3MUZSeFQqSK" role="2LFqv$">
@@ -6678,7 +6678,7 @@
       <node concept="37vLTG" id="5oZmK$O0VLN" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="5oZmK$O0VLP" role="1tU5fm">
-          <ref role="3uigEE" to="guqe:~SysMLv2Parser$MetadataDefinitionContext" resolve="MetadataDefinitionContext" />
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$MetadataDefinitionContext" resolve="SysMLv2Parser.MetadataDefinitionContext" />
         </node>
       </node>
       <node concept="3clFbS" id="5oZmK$O0VLQ" role="3clF47">
@@ -6720,7 +6720,7 @@
               </node>
             </node>
             <node concept="3uibUv" id="5oZmK$O0VM1" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionContext" resolve="DefinitionContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionContext" resolve="SysMLv2Parser.DefinitionContext" />
             </node>
           </node>
         </node>
@@ -6737,7 +6737,7 @@
               </node>
             </node>
             <node concept="3uibUv" id="5oZmK$O0VMc" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext" resolve="DefinitionDeclarationContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionDeclarationContext" resolve="SysMLv2Parser.DefinitionDeclarationContext" />
             </node>
           </node>
         </node>
@@ -6754,7 +6754,7 @@
               </node>
             </node>
             <node concept="3uibUv" id="5oZmK$O0VMn" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$IdentificationContext" resolve="IdentificationContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$IdentificationContext" resolve="SysMLv2Parser.IdentificationContext" />
             </node>
           </node>
         </node>
@@ -6818,7 +6818,7 @@
               </node>
             </node>
             <node concept="3uibUv" id="5oZmK$O0VN4" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyContext" resolve="DefinitionBodyContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyContext" resolve="SysMLv2Parser.DefinitionBodyContext" />
             </node>
           </node>
         </node>
@@ -6865,14 +6865,14 @@
           <node concept="37vLTI" id="5oZmK$O0VNy" role="3clFbG">
             <node concept="2OqwBi" id="5oZmK$O0VN_" role="37vLTJ">
               <node concept="37vLTw" id="5oZmK$O0VNC" role="2Oq$k0">
-                <ref role="3cqZAo" node="5oZmK$O0VNo" />
+                <ref role="3cqZAo" node="5oZmK$O0VNo" resolve="mdef" />
               </node>
               <node concept="3TrcHB" id="5oZmK$O0VND" role="2OqNvi">
                 <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
               </node>
             </node>
             <node concept="37vLTw" id="5oZmK$O0VNE" role="37vLTx">
-              <ref role="3cqZAo" node="5oZmK$O0VN8" />
+              <ref role="3cqZAo" node="5oZmK$O0VN8" resolve="mdefName" />
             </node>
           </node>
         </node>
@@ -6914,12 +6914,12 @@
                     <node concept="2ShNRf" id="5oZmK$O0VOb" role="33vP2m">
                       <node concept="3zrR0B" id="5oZmK$O0VOd" role="2ShVmc">
                         <node concept="3Tqbb2" id="5oZmK$O0VOf" role="3zrR0E">
-                          <ref role="ehGHo" to="5rf1:6coPuU36dCc" />
+                          <ref role="ehGHo" to="5rf1:6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
                         </node>
                       </node>
                     </node>
                     <node concept="3Tqbb2" id="5oZmK$O0VOg" role="1tU5fm">
-                      <ref role="ehGHo" to="5rf1:6coPuU36dCc" />
+                      <ref role="ehGHo" to="5rf1:6coPuU36dCc" resolve="SysMLv2ItemDefinitionRef" />
                     </node>
                   </node>
                 </node>
@@ -6930,7 +6930,7 @@
                         <ref role="3cqZAo" node="5oZmK$O0VO9" resolve="superRef" />
                       </node>
                       <node concept="3TrcHB" id="5oZmK$O0VOq" role="2OqNvi">
-                        <ref role="3TsBF5" to="5rf1:6coPuU36dCj" />
+                        <ref role="3TsBF5" to="5rf1:6coPuU36dCj" resolve="itemDefinitionName" />
                       </node>
                     </node>
                     <node concept="37vLTw" id="5oZmK$O0VOr" role="37vLTx">
@@ -6942,10 +6942,10 @@
                   <node concept="2OqwBi" id="5oZmK$O0VOu" role="3clFbG">
                     <node concept="2OqwBi" id="5oZmK$O0VOx" role="2Oq$k0">
                       <node concept="37vLTw" id="5oZmK$O0VO$" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5oZmK$O0VNo" />
+                        <ref role="3cqZAo" node="5oZmK$O0VNo" resolve="mdef" />
                       </node>
                       <node concept="3Tsc0h" id="5oZmK$O0VO_" role="2OqNvi">
-                        <ref role="3TtcxE" to="5rf1:6coPuU36dCf" />
+                        <ref role="3TtcxE" to="5rf1:6coPuU36dCf" resolve="specializes" />
                       </node>
                     </node>
                     <node concept="TSZUe" id="5oZmK$O0VOA" role="2OqNvi">
@@ -6972,7 +6972,7 @@
             <property role="OYnhT" value="local variable" />
             <property role="TrG5h" value="item" />
             <node concept="3uibUv" id="5oZmK$O0VOO" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext" resolve="DefinitionBodyItemContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext" resolve="SysMLv2Parser.DefinitionBodyItemContext" />
             </node>
           </node>
           <node concept="3clFbS" id="5oZmK$O0VOP" role="2LFqv$">
@@ -6998,10 +6998,10 @@
               <node concept="2OqwBi" id="5oZmK$O0VP4" role="3clFbG">
                 <node concept="2OqwBi" id="5oZmK$O0VP7" role="2Oq$k0">
                   <node concept="37vLTw" id="5oZmK$O0VPa" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5oZmK$O0VNo" />
+                    <ref role="3cqZAo" node="5oZmK$O0VNo" resolve="mdef" />
                   </node>
                   <node concept="3Tsc0h" id="5oZmK$O0VPb" role="2OqNvi">
-                    <ref role="3TtcxE" to="5rf1:6coPuU36dCg" />
+                    <ref role="3TtcxE" to="5rf1:6coPuU36dCg" resolve="content" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="5oZmK$O0VPc" role="2OqNvi">
@@ -7010,7 +7010,7 @@
                       <ref role="3cqZAo" node="5oZmK$O0VOT" resolve="childNode" />
                     </node>
                     <node concept="chp4Y" id="5oZmK$O0VPi" role="3oSUPX">
-                      <ref role="cht4Q" to="5rf1:6coPuU36dCe" />
+                      <ref role="cht4Q" to="5rf1:6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
                     </node>
                   </node>
                 </node>
@@ -7039,7 +7039,7 @@
         </node>
         <node concept="3cpWs6" id="5oZmK$O0VPj" role="3cqZAp">
           <node concept="37vLTw" id="5oZmK$O0VPk" role="3cqZAk">
-            <ref role="3cqZAo" node="5oZmK$O0VNo" />
+            <ref role="3cqZAo" node="5oZmK$O0VNo" resolve="mdef" />
           </node>
         </node>
       </node>
@@ -7914,12 +7914,12 @@
               <node concept="3cpWsn" id="6coPuU3eDhv" role="3cpWs9">
                 <property role="TrG5h" value="subsetNameRef" />
                 <node concept="3Tqbb2" id="6coPuU3eDhx" role="1tU5fm">
-                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                 </node>
                 <node concept="2ShNRf" id="6coPuU3eDhy" role="33vP2m">
                   <node concept="3zrR0B" id="6coPuU3eDh$" role="2ShVmc">
                     <node concept="3Tqbb2" id="6coPuU3eDhA" role="3zrR0E">
-                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                     </node>
                   </node>
                 </node>
@@ -7932,7 +7932,7 @@
                     <ref role="3cqZAo" node="6coPuU3eDhv" resolve="subsetNameRef" />
                   </node>
                   <node concept="3TrcHB" id="6coPuU3eDhK" role="2OqNvi">
-                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="featureName" />
+                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6coPuU3eDhL" role="37vLTx">
@@ -7975,12 +7975,12 @@
               <node concept="3cpWsn" id="6coPuU3eDwz" role="3cpWs9">
                 <property role="TrG5h" value="redefinedNameRef" />
                 <node concept="3Tqbb2" id="6coPuU3eDw_" role="1tU5fm">
-                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                 </node>
                 <node concept="2ShNRf" id="6coPuU3eDwA" role="33vP2m">
                   <node concept="3zrR0B" id="6coPuU3eDwC" role="2ShVmc">
                     <node concept="3Tqbb2" id="6coPuU3eDwE" role="3zrR0E">
-                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                     </node>
                   </node>
                 </node>
@@ -7993,7 +7993,7 @@
                     <ref role="3cqZAo" node="6coPuU3eDwz" resolve="redefinedNameRef" />
                   </node>
                   <node concept="3TrcHB" id="6coPuU3eDwO" role="2OqNvi">
-                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="featureName" />
+                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6coPuU3eDwP" role="37vLTx">
@@ -9318,12 +9318,12 @@
               <node concept="3cpWsn" id="6coPuU3eDJB" role="3cpWs9">
                 <property role="TrG5h" value="subsetNameRef" />
                 <node concept="3Tqbb2" id="6coPuU3eDJD" role="1tU5fm">
-                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                 </node>
                 <node concept="2ShNRf" id="6coPuU3eDJE" role="33vP2m">
                   <node concept="3zrR0B" id="6coPuU3eDJG" role="2ShVmc">
                     <node concept="3Tqbb2" id="6coPuU3eDJI" role="3zrR0E">
-                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                     </node>
                   </node>
                 </node>
@@ -9336,7 +9336,7 @@
                     <ref role="3cqZAo" node="6coPuU3eDJB" resolve="subsetNameRef" />
                   </node>
                   <node concept="3TrcHB" id="6coPuU3eDJS" role="2OqNvi">
-                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="featureName" />
+                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6coPuU3eDJT" role="37vLTx">
@@ -9379,12 +9379,12 @@
               <node concept="3cpWsn" id="6coPuU3eDYF" role="3cpWs9">
                 <property role="TrG5h" value="redefinedNameRef" />
                 <node concept="3Tqbb2" id="6coPuU3eDYH" role="1tU5fm">
-                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                 </node>
                 <node concept="2ShNRf" id="6coPuU3eDYI" role="33vP2m">
                   <node concept="3zrR0B" id="6coPuU3eDYK" role="2ShVmc">
                     <node concept="3Tqbb2" id="6coPuU3eDYM" role="3zrR0E">
-                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                     </node>
                   </node>
                 </node>
@@ -9397,7 +9397,7 @@
                     <ref role="3cqZAo" node="6coPuU3eDYF" resolve="redefinedNameRef" />
                   </node>
                   <node concept="3TrcHB" id="6coPuU3eDYW" role="2OqNvi">
-                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="featureName" />
+                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6coPuU3eDYX" role="37vLTx">
@@ -10086,7 +10086,7 @@
                 </node>
                 <node concept="1mIQ4w" id="6coPuU3aqPg" role="2OqNvi">
                   <node concept="chp4Y" id="6coPuU3aqPi" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartDefinition" />
+                    <ref role="cht4Q" to="5rf1:6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
                   </node>
                 </node>
               </node>
@@ -10774,12 +10774,12 @@
               <node concept="3cpWsn" id="6coPuU3eEdJ" role="3cpWs9">
                 <property role="TrG5h" value="subsetNameRef" />
                 <node concept="3Tqbb2" id="6coPuU3eEdL" role="1tU5fm">
-                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                 </node>
                 <node concept="2ShNRf" id="6coPuU3eEdM" role="33vP2m">
                   <node concept="3zrR0B" id="6coPuU3eEdO" role="2ShVmc">
                     <node concept="3Tqbb2" id="6coPuU3eEdQ" role="3zrR0E">
-                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                     </node>
                   </node>
                 </node>
@@ -10792,7 +10792,7 @@
                     <ref role="3cqZAo" node="6coPuU3eEdJ" resolve="subsetNameRef" />
                   </node>
                   <node concept="3TrcHB" id="6coPuU3eEe0" role="2OqNvi">
-                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="featureName" />
+                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6coPuU3eEe1" role="37vLTx">
@@ -10835,12 +10835,12 @@
               <node concept="3cpWsn" id="6coPuU3eEsN" role="3cpWs9">
                 <property role="TrG5h" value="redefinedNameRef" />
                 <node concept="3Tqbb2" id="6coPuU3eEsP" role="1tU5fm">
-                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                 </node>
                 <node concept="2ShNRf" id="6coPuU3eEsQ" role="33vP2m">
                   <node concept="3zrR0B" id="6coPuU3eEsS" role="2ShVmc">
                     <node concept="3Tqbb2" id="6coPuU3eEsU" role="3zrR0E">
-                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                     </node>
                   </node>
                 </node>
@@ -10853,7 +10853,7 @@
                     <ref role="3cqZAo" node="6coPuU3eEsN" resolve="redefinedNameRef" />
                   </node>
                   <node concept="3TrcHB" id="6coPuU3eEt4" role="2OqNvi">
-                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="featureName" />
+                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6coPuU3eEt5" role="37vLTx">
@@ -11314,7 +11314,7 @@
                 <node concept="3clFbF" id="3MUZSeGhcyA" role="3cqZAp">
                   <node concept="2YIFZM" id="3MUZSeGhfc3" role="3clFbG">
                     <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
-                    <ref role="37wK5l" node="3MUZSeG7bSr" resolve="addItemSpecialization" />
+                    <ref role="37wK5l" node="3MUZSeG7bSr" resolve="addConnectionSpecialization" />
                     <node concept="37vLTw" id="3MUZSeGhfc4" role="37wK5m">
                       <ref role="3cqZAo" node="3MUZSeGhcym" resolve="idef" />
                     </node>
@@ -16871,7 +16871,7 @@
                     <ref role="3cqZAo" node="5oZmK$OfMcf" resolve="pm" />
                   </node>
                   <node concept="3TrEf2" id="5oZmK$OfMcQ" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:5oZmK$O6sP9" />
+                    <ref role="3Tt5mk" to="5rf1:5oZmK$O6sP9" resolve="type" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="5oZmK$OfMcR" role="37vLTx">
@@ -16891,7 +16891,7 @@
                     </node>
                   </node>
                   <node concept="3Tsc0h" id="5oZmK$OfMd5" role="2OqNvi">
-                    <ref role="3TtcxE" to="5rf1:5oZmK$O6sPa" />
+                    <ref role="3TtcxE" to="5rf1:5oZmK$O6sPa" resolve="prefixMetadata" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="5oZmK$OfMd6" role="2OqNvi">
@@ -17125,12 +17125,12 @@
               <node concept="3cpWsn" id="BOR0MnmOhz" role="3cpWs9">
                 <property role="TrG5h" value="step" />
                 <node concept="3Tqbb2" id="BOR0MnmOh_" role="1tU5fm">
-                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                 </node>
                 <node concept="2ShNRf" id="BOR0MnmOhA" role="33vP2m">
                   <node concept="3zrR0B" id="BOR0MnmOhC" role="2ShVmc">
                     <node concept="3Tqbb2" id="BOR0MnmOhE" role="3zrR0E">
-                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+                      <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
                     </node>
                   </node>
                 </node>
@@ -17143,7 +17143,7 @@
                     <ref role="3cqZAo" node="BOR0MnmOhz" resolve="step" />
                   </node>
                   <node concept="3TrcHB" id="BOR0MnmOpi" role="2OqNvi">
-                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="featureName" />
+                    <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="BOR0MnmOpj" role="37vLTx">
@@ -17158,7 +17158,7 @@
                     <ref role="3cqZAo" node="BOR0MnmO9U" resolve="connEnd" />
                   </node>
                   <node concept="3Tsc0h" id="BOR0MnmOwV" role="2OqNvi">
-                    <ref role="3TtcxE" to="5rf1:BOR0Mn7r_E" />
+                    <ref role="3TtcxE" to="5rf1:BOR0Mn7r_E" resolve="chain" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="BOR0MnmOwW" role="2OqNvi">
@@ -17256,12 +17256,12 @@
             <node concept="2ShNRf" id="3MUZSeGb0HV" role="33vP2m">
               <node concept="3zrR0B" id="3MUZSeGb0HX" role="2ShVmc">
                 <node concept="3Tqbb2" id="3MUZSeGb0HZ" role="3zrR0E">
-                  <ref role="ehGHo" to="5rf1:BOR0Mn7r_$" />
+                  <ref role="ehGHo" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
                 </node>
               </node>
             </node>
             <node concept="3Tqbb2" id="3MUZSeGb0I0" role="1tU5fm">
-              <ref role="ehGHo" to="5rf1:BOR0Mn7r_$" />
+              <ref role="ehGHo" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
             </node>
           </node>
         </node>
@@ -17272,7 +17272,7 @@
                 <ref role="3cqZAo" node="3MUZSeGb0HT" resolve="superRef" />
               </node>
               <node concept="3TrcHB" id="3MUZSeGb0Ia" role="2OqNvi">
-                <ref role="3TsBF5" to="5rf1:BOR0Mn7r_B" />
+                <ref role="3TsBF5" to="5rf1:BOR0Mn7r_B" resolve="connectionDefinitionName" />
               </node>
             </node>
             <node concept="37vLTw" id="3MUZSeGb0Ib" role="37vLTx">
@@ -17292,7 +17292,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="3MUZSeGb0Ip" role="2OqNvi">
-                <ref role="3TtcxE" to="5rf1:6coPuU36dCf" />
+                <ref role="3TtcxE" to="5rf1:6coPuU36dCf" resolve="specializes" />
               </node>
             </node>
             <node concept="TSZUe" id="3MUZSeGb0Iq" role="2OqNvi">
@@ -17333,7 +17333,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="3MUZSeGbvpD" role="2OqNvi">
-                <ref role="3TtcxE" to="5rf1:6coPuU36dCg" />
+                <ref role="3TtcxE" to="5rf1:6coPuU36dCg" resolve="content" />
               </node>
             </node>
             <node concept="TSZUe" id="3MUZSeGbvpE" role="2OqNvi">
@@ -17496,7 +17496,7 @@
                     <ref role="3cqZAo" node="3MUZSeGbVUM" resolve="cu" />
                   </node>
                   <node concept="3TrEf2" id="3MUZSeGbVVH" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCn" />
+                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCn" resolve="type" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="3MUZSeGbVVI" role="37vLTx">
@@ -17513,7 +17513,7 @@
                 <ref role="3cqZAo" node="3MUZSeGbVUM" resolve="cu" />
               </node>
               <node concept="3TrEf2" id="3MUZSeGbVVS" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" />
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" resolve="source" />
               </node>
             </node>
             <node concept="1PxgMI" id="3MUZSeGbVVT" role="37vLTx">
@@ -17533,7 +17533,7 @@
                 <ref role="3cqZAo" node="3MUZSeGbVUM" resolve="cu" />
               </node>
               <node concept="3TrEf2" id="3MUZSeGbVW7" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" />
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" resolve="target" />
               </node>
             </node>
             <node concept="1PxgMI" id="3MUZSeGbVW8" role="37vLTx">
@@ -17580,7 +17580,7 @@
                   <ref role="3cqZAo" node="3MUZSeG7bSW" resolve="usage" />
                 </node>
                 <node concept="chp4Y" id="3MUZSeGbWpa" role="3oSUPX">
-                  <ref role="cht4Q" to="5rf1:6coPuU36dCd" />
+                  <ref role="cht4Q" to="5rf1:6coPuU36dCd" resolve="SysMLv2ItemUsage" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="3MUZSeGbWpb" role="2OqNvi">
@@ -17670,7 +17670,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="3MUZSeGcrbP" role="2OqNvi">
-                <ref role="3TtcxE" to="5rf1:3MUZSeG2oix" />
+                <ref role="3TtcxE" to="5rf1:3MUZSeG2oix" resolve="content" />
               </node>
             </node>
             <node concept="TSZUe" id="3MUZSeGcrbQ" role="2OqNvi">
@@ -17942,7 +17942,7 @@
                 </node>
               </node>
               <node concept="3TrEf2" id="3MUZSeGG0tU" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:3MUZSeG_f$H" />
+                <ref role="3Tt5mk" to="5rf1:3MUZSeG_f$H" resolve="value" />
               </node>
             </node>
             <node concept="37vLTw" id="3MUZSeGG0tV" role="37vLTx">
@@ -18206,7 +18206,7 @@
                 <ref role="3cqZAo" node="3MUZSeH4nO_" resolve="cu" />
               </node>
               <node concept="3TrEf2" id="3MUZSeH4nPc" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" />
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" resolve="source" />
               </node>
             </node>
             <node concept="1PxgMI" id="3MUZSeH4nPd" role="37vLTx">
@@ -18226,7 +18226,7 @@
                 <ref role="3cqZAo" node="3MUZSeH4nO_" resolve="cu" />
               </node>
               <node concept="3TrEf2" id="3MUZSeH4nPr" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" />
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" resolve="target" />
               </node>
             </node>
             <node concept="1PxgMI" id="3MUZSeH4nPs" role="37vLTx">
@@ -18452,7 +18452,7 @@
                     <ref role="3cqZAo" node="3MUZSeIdgbC" resolve="cu" />
                   </node>
                   <node concept="3TrEf2" id="3MUZSeIdgcz" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:3MUZSeHMA4S" />
+                    <ref role="3Tt5mk" to="5rf1:3MUZSeHMA4S" resolve="type" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="3MUZSeIdgc$" role="37vLTx">
@@ -18509,7 +18509,7 @@
                     <ref role="3cqZAo" node="3MUZSeIdgbC" resolve="cu" />
                   </node>
                   <node concept="3TrEf2" id="3MUZSeIdgdd" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:3MUZSeHmu9J" />
+                    <ref role="3Tt5mk" to="5rf1:3MUZSeHmu9J" resolve="payload" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="3MUZSeIdgde" role="37vLTx">
@@ -18526,7 +18526,7 @@
                 <ref role="3cqZAo" node="3MUZSeIdgbC" resolve="cu" />
               </node>
               <node concept="3TrEf2" id="3MUZSeIdgdo" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" />
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" resolve="source" />
               </node>
             </node>
             <node concept="1PxgMI" id="3MUZSeIdgdp" role="37vLTx">
@@ -18546,7 +18546,7 @@
                 <ref role="3cqZAo" node="3MUZSeIdgbC" resolve="cu" />
               </node>
               <node concept="3TrEf2" id="3MUZSeIdgdB" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" />
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" resolve="target" />
               </node>
             </node>
             <node concept="1PxgMI" id="3MUZSeIdgdC" role="37vLTx">
@@ -18737,7 +18737,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="3MUZSeI7CRQ" role="2OqNvi">
-                <ref role="3TtcxE" to="5rf1:3MUZSeHMA4M" />
+                <ref role="3TtcxE" to="5rf1:3MUZSeHMA4M" resolve="specializes" />
               </node>
             </node>
             <node concept="TSZUe" id="3MUZSeI7CRR" role="2OqNvi">
@@ -18778,7 +18778,7 @@
                 </node>
               </node>
               <node concept="3Tsc0h" id="3MUZSeI7Ftv" role="2OqNvi">
-                <ref role="3TtcxE" to="5rf1:3MUZSeHMA4P" />
+                <ref role="3TtcxE" to="5rf1:3MUZSeHMA4P" resolve="content" />
               </node>
             </node>
             <node concept="TSZUe" id="3MUZSeI7Ftw" role="2OqNvi">
@@ -18824,7 +18824,7 @@
             </node>
             <node concept="359W_D" id="6coPuU3zmd$" role="37wK5m">
               <ref role="359W_E" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
-              <ref role="359W_F" to="5rf1:7JKstLNkRPw" resolve="definition" />
+              <ref role="359W_F" to="5rf1:7JKstLNkRPw" resolve="partDefinition" />
             </node>
             <node concept="355D3s" id="6coPuU3zmd_" role="37wK5m">
               <ref role="355D3t" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
@@ -18950,18 +18950,18 @@
               <ref role="3cqZAo" node="4N4m7hrZVnf" resolve="m" />
             </node>
             <node concept="35c_gC" id="4N4m7hrZVnn" role="37wK5m">
-              <ref role="35c_gD" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+              <ref role="35c_gD" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
             </node>
             <node concept="35c_gC" id="4N4m7hrZVno" role="37wK5m">
               <ref role="35c_gD" to="5rf1:6coPuU3buuw" resolve="SysMLv2Usage" />
             </node>
             <node concept="359W_D" id="4N4m7hrZVnp" role="37wK5m">
-              <ref role="359W_E" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
-              <ref role="359W_F" to="5rf1:6coPuU3buuA" resolve="feature" />
+              <ref role="359W_E" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+              <ref role="359W_F" to="5rf1:6coPuU3buuA" resolve="usage" />
             </node>
             <node concept="355D3s" id="4N4m7hrZVnq" role="37wK5m">
-              <ref role="355D3t" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
-              <ref role="355D3u" to="5rf1:6coPuU3buu_" resolve="featureName" />
+              <ref role="355D3t" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+              <ref role="355D3u" to="5rf1:6coPuU3buu_" resolve="usageName" />
             </node>
           </node>
         </node>
@@ -18991,7 +18991,7 @@
             </node>
             <node concept="359W_D" id="5oZmK$Nr6Gc" role="37wK5m">
               <ref role="359W_E" to="5rf1:5oZmK$Nm2Kg" resolve="SysMLv2AnnotationRef" />
-              <ref role="359W_F" to="5rf1:5oZmK$Nm2Kj" />
+              <ref role="359W_F" to="5rf1:5oZmK$Nm2Kj" resolve="element" />
             </node>
             <node concept="355D3s" id="5oZmK$Nr6Gd" role="37wK5m">
               <ref role="355D3t" to="5rf1:5oZmK$Nm2Kg" resolve="SysMLv2AnnotationRef" />
@@ -19024,7 +19024,7 @@
             </node>
             <node concept="359W_D" id="5oZmK$O67FO" role="37wK5m">
               <ref role="359W_E" to="5rf1:5oZmK$NNehc" resolve="SysMLv2MetadataDefinitionRef" />
-              <ref role="359W_F" to="5rf1:5oZmK$NNehm" />
+              <ref role="359W_F" to="5rf1:5oZmK$NNehm" resolve="definition" />
             </node>
             <node concept="355D3s" id="5oZmK$O67FP" role="37wK5m">
               <ref role="355D3t" to="5rf1:5oZmK$NNehc" resolve="SysMLv2MetadataDefinitionRef" />
@@ -19057,7 +19057,7 @@
             </node>
             <node concept="359W_D" id="BOR0MnCn8a" role="37wK5m">
               <ref role="359W_E" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
-              <ref role="359W_F" to="5rf1:BOR0Mn7r_C" />
+              <ref role="359W_F" to="5rf1:BOR0Mn7r_C" resolve="connectionDefinition" />
             </node>
             <node concept="355D3s" id="BOR0MnCn8b" role="37wK5m">
               <ref role="355D3t" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />

@@ -10,7 +10,9 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="r:ade8f600-3811-4521-b098-3e43daba5da3(com.symo.sysmlv2.baselan.system_model_library)" />
+  </accessoryModels>
   <generators>
     <generator alias="main" namespace="com.symo.sysmlv2.baselan.generator" uuid="9296eddd-4448-429b-95ac-3fe02a33cfd4">
       <models>

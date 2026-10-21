@@ -135,21 +135,21 @@
   <node concept="1M2fIO" id="6coPuU3aqOE">
     <property role="3GE5qa" value="part.base" />
     <property role="TrG5h" value="ICanBelongOnlyToSysMLv2PartOwner_Constraints" />
-    <ref role="1M2myG" to="5rf1:6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartDefinition" />
+    <ref role="1M2myG" to="5rf1:6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
     <node concept="9S07l" id="6coPuU3aqOF" role="9Vyp8">
       <node concept="3clFbS" id="6coPuU3aqOH" role="2VODD2">
         <node concept="3clFbF" id="6coPuU3bujT" role="3cqZAp">
-          <node concept="22lmx$" id="3MUZSeG2pgk" role="3clFbG">
-            <node concept="2OqwBi" id="3MUZSeG2pgn" role="3uHU7B">
-              <node concept="nLn13" id="3MUZSeG2pgq" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="3MUZSeG2pgr" role="2OqNvi">
-                <node concept="chp4Y" id="3MUZSeG2pgt" role="cj9EA">
-                  <ref role="cht4Q" to="5rf1:3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
+          <node concept="22lmx$" id="3MUZSeG2pgu" role="3clFbG">
+            <node concept="22lmx$" id="3MUZSeG2pgk" role="3uHU7B">
+              <node concept="2OqwBi" id="3MUZSeG2pgn" role="3uHU7B">
+                <node concept="nLn13" id="3MUZSeG2pgq" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="3MUZSeG2pgr" role="2OqNvi">
+                  <node concept="chp4Y" id="3MUZSeG2pgt" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
+                  </node>
                 </node>
               </node>
-            </node>
-            <node concept="22lmx$" id="3MUZSeG2pgu" role="3uHU7w">
-              <node concept="2OqwBi" id="3MUZSeG2pgx" role="3uHU7B">
+              <node concept="2OqwBi" id="3MUZSeG2pgx" role="3uHU7w">
                 <node concept="nLn13" id="3MUZSeG2pg$" role="2Oq$k0" />
                 <node concept="1mIQ4w" id="3MUZSeG2pg_" role="2OqNvi">
                   <node concept="chp4Y" id="3MUZSeG2pgB" role="cj9EA">
@@ -157,12 +157,12 @@
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="3MUZSeG2pgC" role="3uHU7w">
-                <node concept="nLn13" id="3MUZSeG2pgF" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="3MUZSeG2pgG" role="2OqNvi">
-                  <node concept="chp4Y" id="3MUZSeG2pgI" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:6coPuU2Tg1T" resolve="SysMLv2PortUsage" />
-                  </node>
+            </node>
+            <node concept="2OqwBi" id="3MUZSeG2pgC" role="3uHU7w">
+              <node concept="nLn13" id="3MUZSeG2pgF" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="3MUZSeG2pgG" role="2OqNvi">
+                <node concept="chp4Y" id="3MUZSeG2pgI" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:6coPuU2Tg1T" resolve="SysMLv2PortUsage" />
                 </node>
               </node>
             </node>
@@ -175,7 +175,7 @@
     <property role="3GE5qa" value="part" />
     <ref role="1M2myG" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
     <node concept="1N5Pfh" id="6coPuU3qLMR" role="1Mr941">
-      <ref role="1N5Vy1" to="5rf1:7JKstLNkRPw" resolve="definition" />
+      <ref role="1N5Vy1" to="5rf1:7JKstLNkRPw" resolve="partDefinition" />
       <node concept="3dgokm" id="4N4m7hs92Ql" role="1N6uqs">
         <node concept="3clFbS" id="4N4m7hs92Qn" role="2VODD2">
           <node concept="3clFbF" id="4N4m7hs92Qo" role="3cqZAp">
@@ -518,7 +518,7 @@
     <property role="TrG5h" value="SysMLv2AnnotationRef_Constraints" />
     <ref role="1M2myG" to="5rf1:5oZmK$Nm2Kg" resolve="SysMLv2AnnotationRef" />
     <node concept="1N5Pfh" id="5oZmK$Nni9m" role="1Mr941">
-      <ref role="1N5Vy1" to="5rf1:5oZmK$Nm2Kj" />
+      <ref role="1N5Vy1" to="5rf1:5oZmK$Nm2Kj" resolve="element" />
       <node concept="3dgokm" id="5oZmK$Nni9n" role="1N6uqs">
         <node concept="3clFbS" id="5oZmK$Nni9p" role="2VODD2">
           <node concept="3clFbF" id="5oZmK$Nni9q" role="3cqZAp">
@@ -564,7 +564,7 @@
     <property role="TrG5h" value="SysMLv2MetadataDefinitionRef_Constraints" />
     <ref role="1M2myG" to="5rf1:5oZmK$NNehc" resolve="SysMLv2MetadataDefinitionRef" />
     <node concept="1N5Pfh" id="5oZmK$NNg74" role="1Mr941">
-      <ref role="1N5Vy1" to="5rf1:5oZmK$NNehm" />
+      <ref role="1N5Vy1" to="5rf1:5oZmK$NNehm" resolve="definition" />
       <node concept="3dgokm" id="5oZmK$NNg75" role="1N6uqs">
         <node concept="3clFbS" id="5oZmK$NNg77" role="2VODD2">
           <node concept="3clFbF" id="5oZmK$NNg78" role="3cqZAp">
@@ -610,7 +610,7 @@
     <property role="TrG5h" value="SysMLv2ConnectionDefinitionRef_Constraints" />
     <ref role="1M2myG" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
     <node concept="1N5Pfh" id="BOR0Mn7tl7" role="1Mr941">
-      <ref role="1N5Vy1" to="5rf1:BOR0Mn7r_C" />
+      <ref role="1N5Vy1" to="5rf1:BOR0Mn7r_C" resolve="connectionDefinition" />
       <node concept="3dgokm" id="BOR0Mn7tl8" role="1N6uqs">
         <node concept="3clFbS" id="BOR0Mn7tla" role="2VODD2">
           <node concept="3clFbF" id="BOR0Mn7tlb" role="3cqZAp">
@@ -670,9 +670,9 @@
   <node concept="1M2fIO" id="3MUZSeFlpEl">
     <property role="3GE5qa" value="base" />
     <property role="TrG5h" value="SysMLv2UsageRef_Constraints" />
-    <ref role="1M2myG" to="5rf1:6coPuU3buux" resolve="SysMLv2FeatureRef" />
+    <ref role="1M2myG" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
     <node concept="1N5Pfh" id="3MUZSeFtipY" role="1Mr941">
-      <ref role="1N5Vy1" to="5rf1:6coPuU3buuA" />
+      <ref role="1N5Vy1" to="5rf1:6coPuU3buuA" resolve="usage" />
       <node concept="3dgokm" id="3MUZSeFtipZ" role="1N6uqs">
         <node concept="3clFbS" id="3MUZSeFtiq1" role="2VODD2">
           <node concept="3cpWs6" id="3MUZSeFtiq2" role="3cqZAp">

@@ -300,7 +300,7 @@
                 <ref role="1YBMHb" node="3MUZSeIlKGf" resolve="flowUsage" />
               </node>
               <node concept="3TrEf2" id="3MUZSeIlKEO" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" />
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" resolve="source" />
               </node>
             </node>
             <node concept="AMVWg" id="3MUZSeIrgwk" role="lGtFl">
@@ -342,7 +342,7 @@
                 <ref role="1YBMHb" node="3MUZSeIlKGf" resolve="flowUsage" />
               </node>
               <node concept="3TrEf2" id="3MUZSeIlKFi" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" />
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" resolve="target" />
               </node>
             </node>
             <node concept="AMVWg" id="3MUZSeIrgy_" role="lGtFl">
@@ -386,7 +386,7 @@
                 <ref role="1YBMHb" node="3MUZSeIlKGf" resolve="flowUsage" />
               </node>
               <node concept="3TrEf2" id="3MUZSeIlKFK" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" />
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" resolve="source" />
               </node>
             </node>
             <node concept="AMVWg" id="3MUZSeIrgGG" role="lGtFl">
@@ -428,7 +428,7 @@
                 <ref role="1YBMHb" node="3MUZSeIlKGf" resolve="flowUsage" />
               </node>
               <node concept="3TrEf2" id="3MUZSeIlKGe" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" />
+                <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" resolve="target" />
               </node>
             </node>
             <node concept="AMVWg" id="3MUZSeIrgKe" role="lGtFl">
@@ -537,7 +537,7 @@
                   <ref role="3cqZAo" node="3MUZSeIu62B" resolve="self" />
                 </node>
                 <node concept="3TrEf2" id="3MUZSeIu62W" role="2OqNvi">
-                  <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" />
+                  <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" resolve="source" />
                 </node>
               </node>
               <node concept="2OqwBi" id="3MUZSeIu62X" role="3K4GZi">
@@ -545,7 +545,7 @@
                   <ref role="3cqZAo" node="3MUZSeIu62B" resolve="self" />
                 </node>
                 <node concept="3TrEf2" id="3MUZSeIu631" role="2OqNvi">
-                  <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" />
+                  <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" resolve="target" />
                 </node>
               </node>
             </node>
@@ -686,7 +686,7 @@
                   <ref role="3cqZAo" node="3MUZSeIu64g" resolve="self" />
                 </node>
                 <node concept="3TrEf2" id="3MUZSeIu64_" role="2OqNvi">
-                  <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" />
+                  <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_I" resolve="source" />
                 </node>
               </node>
               <node concept="2OqwBi" id="3MUZSeIu64A" role="3K4GZi">
@@ -694,7 +694,7 @@
                   <ref role="3cqZAo" node="3MUZSeIu64g" resolve="self" />
                 </node>
                 <node concept="3TrEf2" id="3MUZSeIu64E" role="2OqNvi">
-                  <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" />
+                  <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_J" resolve="target" />
                 </node>
               </node>
             </node>
@@ -799,7 +799,7 @@
                           <ref role="3cqZAo" node="3MUZSeIu64U" resolve="pay" />
                         </node>
                         <node concept="3TrEf2" id="3MUZSeIxj2p" role="2OqNvi">
-                          <ref role="3Tt5mk" to="5rf1:6coPuU36dCk" />
+                          <ref role="3Tt5mk" to="5rf1:6coPuU36dCk" resolve="definition" />
                         </node>
                       </node>
                       <node concept="chp4Y" id="3MUZSeIxj2q" role="3oSUPX">
