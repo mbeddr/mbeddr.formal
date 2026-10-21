@@ -8,6 +8,7 @@
   </languages>
   <imports>
     <import index="6e71" ref="r:a0154fd8-5b98-4555-9e7b-4d71515b1ca1(com.symo.sysmlv2.baselan.typesystem)" />
+    <import index="kuyq" ref="r:4326eb3b-e912-4bd0-9f23-3e0eda67ed27(com.symo.sysmlv2.baselan.constraints)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -17,11 +18,17 @@
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
       </concept>
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
+        <property id="3743352646565420194" name="includeSelf" index="GvXf4" />
+      </concept>
+      <concept id="7691029917083831655" name="jetbrains.mps.lang.test.structure.UnknownRuleReference" flags="ng" index="2u4KIi" />
       <concept id="7691029917083872157" name="jetbrains.mps.lang.test.structure.IRuleReference" flags="ngI" index="2u4UPC">
         <reference id="8333855927540250453" name="declaration" index="39XzEq" />
       </concept>
       <concept id="4531408400484511853" name="jetbrains.mps.lang.test.structure.ReportErrorStatementReference" flags="ng" index="2PYRI3" />
-      <concept id="8333855927540283103" name="jetbrains.mps.lang.test.structure.NodeConstraintsErrorCheckOperation" flags="ng" index="39XrGg" />
+      <concept id="8333855927540283103" name="jetbrains.mps.lang.test.structure.NodeConstraintsErrorCheckOperation" flags="ng" index="39XrGg">
+        <child id="8333855927548182241" name="errorRef" index="39rjcI" />
+      </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
@@ -57,10 +64,6 @@
       </concept>
       <concept id="717440187291777381" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectorEnd" flags="ng" index="2uUmlD">
         <child id="717440187291777386" name="chain" index="2uUmlA" />
-      </concept>
-      <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE">
-        <child id="717440187291777390" name="source" index="2uUml$" />
-        <child id="717440187291777391" name="target" index="2uUml_" />
       </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
@@ -184,7 +187,11 @@
             </node>
             <node concept="2gGTnd" id="3MUZSeG$NYE" role="3w00ZY">
               <property role="TrG5h" value="ok1" />
-              <node concept="2uUmlD" id="3MUZSeG$NYK" role="2uUml$">
+              <node concept="2uUmlC" id="3MUZSeG$NYJ" role="3w00ZT">
+                <property role="2uUmlF" value="L" />
+                <ref role="2uUml$" node="3MUZSeG$NYw" resolve="L" />
+              </node>
+              <node concept="2uUmlD" id="3MUZSeG$NYK" role="2uUmly">
                 <node concept="3wdj9f" id="3MUZSeG$NYM" role="2uUmlA">
                   <property role="3wdj9b" value="x" />
                   <ref role="3wdj98" node="3MUZSeG$NYA" resolve="x" />
@@ -194,7 +201,7 @@
                   <ref role="3wdj98" node="3MUZSeG$NYs" resolve="out" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeG$NYO" role="2uUml_">
+              <node concept="2uUmlD" id="3MUZSeG$NYO" role="2uUmlz">
                 <node concept="3wdj9f" id="3MUZSeG$NYQ" role="2uUmlA">
                   <property role="3wdj9b" value="y" />
                   <ref role="3wdj98" node="3MUZSeG$NYC" resolve="y" />
@@ -204,14 +211,14 @@
                   <ref role="3wdj98" node="3MUZSeG$NYs" resolve="out" />
                 </node>
               </node>
-              <node concept="2uUmlC" id="3MUZSeG$NYJ" role="3w00ZT">
-                <property role="2uUmlF" value="L" />
-                <ref role="2uUml$" node="3MUZSeG$NYw" resolve="L" />
-              </node>
             </node>
             <node concept="2gGTnd" id="3MUZSeG$NYS" role="3w00ZY">
               <property role="TrG5h" value="ok2" />
-              <node concept="2uUmlD" id="3MUZSeG$NYY" role="2uUml$">
+              <node concept="2uUmlC" id="3MUZSeG$NYX" role="3w00ZT">
+                <property role="2uUmlF" value="L" />
+                <ref role="2uUml$" node="3MUZSeG$NYw" resolve="L" />
+              </node>
+              <node concept="2uUmlD" id="3MUZSeG$NYY" role="2uUmly">
                 <node concept="3wdj9f" id="3MUZSeG$NZ0" role="2uUmlA">
                   <property role="3wdj9b" value="x" />
                   <ref role="3wdj98" node="3MUZSeG$NYA" resolve="x" />
@@ -225,7 +232,7 @@
                   <ref role="3wdj98" node="3MUZSeG$NYp" resolve="deep" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeG$NZ3" role="2uUml_">
+              <node concept="2uUmlD" id="3MUZSeG$NZ3" role="2uUmlz">
                 <node concept="3wdj9f" id="3MUZSeG$NZ5" role="2uUmlA">
                   <property role="3wdj9b" value="y" />
                   <ref role="3wdj98" node="3MUZSeG$NYC" resolve="y" />
@@ -234,10 +241,6 @@
                   <property role="3wdj9b" value="out" />
                   <ref role="3wdj98" node="3MUZSeG$NYs" resolve="out" />
                 </node>
-              </node>
-              <node concept="2uUmlC" id="3MUZSeG$NYX" role="3w00ZT">
-                <property role="2uUmlF" value="L" />
-                <ref role="2uUml$" node="3MUZSeG$NYw" resolve="L" />
               </node>
             </node>
             <node concept="2gGTnd" id="3MUZSeG$NZ7" role="3w00ZY">
@@ -387,7 +390,11 @@
               <node concept="1_WVX6" id="3MUZSeGZHYN" role="2gbwqI">
                 <property role="1_WVXG" value="foo bar" />
                 <node concept="7CXmI" id="3MUZSeGZHYO" role="lGtFl">
-                  <node concept="39XrGg" id="3MUZSeGZHYP" role="7EUXB" />
+                  <node concept="39XrGg" id="3MUZSeGZHYP" role="7EUXB">
+                    <node concept="2u4KIi" id="3MUZSeJui_H" role="39rjcI">
+                      <ref role="39XzEq" to="kuyq:3MUZSeGXk_k" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -396,7 +403,11 @@
               <node concept="1_WVX6" id="3MUZSeGZHYS" role="2gbwqI">
                 <property role="1_WVXG" value="1." />
                 <node concept="7CXmI" id="3MUZSeGZHYT" role="lGtFl">
-                  <node concept="39XrGg" id="3MUZSeGZHYU" role="7EUXB" />
+                  <node concept="39XrGg" id="3MUZSeGZHYU" role="7EUXB">
+                    <node concept="2u4KIi" id="3MUZSeJui_I" role="39rjcI">
+                      <ref role="39XzEq" to="kuyq:3MUZSeGXk_k" />
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
@@ -405,9 +416,18 @@
               <node concept="1_WVX6" id="3MUZSeGZHYX" role="2gbwqI">
                 <property role="1_WVXG" value="'x'" />
                 <node concept="7CXmI" id="3MUZSeGZHYY" role="lGtFl">
-                  <node concept="39XrGg" id="3MUZSeGZHYZ" role="7EUXB" />
+                  <node concept="39XrGg" id="3MUZSeGZHYZ" role="7EUXB">
+                    <node concept="2u4KIi" id="3MUZSeJui_J" role="39rjcI">
+                      <ref role="39XzEq" to="kuyq:3MUZSeGXk_k" />
+                    </node>
+                  </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="7CXmI" id="3MUZSeJuuuP" role="lGtFl">
+            <node concept="7OXhh" id="3MUZSeJuuuR" role="7EUXB">
+              <property role="GvXf4" value="true" />
             </node>
           </node>
         </node>
