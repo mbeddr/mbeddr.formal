@@ -29,6 +29,7 @@
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -90,13 +91,6 @@
       <property role="TrG5h" value="declaredShortName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyj" id="3MUZSeJsNeE" role="1TKVEi">
-      <property role="IQ2ns" value="4376090928993219498" />
-      <property role="20kJfa" value="ownedRelationship" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3MUZSeJsNeq" resolve="KerMLRelationship" />
-    </node>
     <node concept="PrWs8" id="3MUZSeJtgVe" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -113,13 +107,6 @@
       <property role="TrG5h" value="isImplied" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyj" id="3MUZSeJsNeG" role="1TKVEi">
-      <property role="IQ2ns" value="4376090928993219500" />
-      <property role="20kJfa" value="ownedRelatedElement" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="3MUZSeJsNep" resolve="KerMLElement" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeJsNer">
     <property role="EcuMT" value="4376090928993219483" />
@@ -128,6 +115,13 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="root.annotation" />
     <ref role="1TJDcQ" node="3MUZSeJsNep" resolve="KerMLElement" />
+    <node concept="1TJgyj" id="7JYC9rUw4wz" role="1TKVEi">
+      <property role="IQ2ns" value="8934755281057892387" />
+      <property role="20kJfa" value="ownedAnnotatingRelationship" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="3MUZSeJsNes" resolve="KerMLAnnotation" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeJsNes">
     <property role="EcuMT" value="4376090928993219484" />
@@ -158,6 +152,9 @@
       <property role="TrG5h" value="locale" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="PrWs8" id="7JYC9rUw4wG" role="PzmwI">
+      <ref role="PrY4T" node="7JYC9rUw4wl" resolve="IKerMLNamespaceMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeJsNeu">
     <property role="EcuMT" value="4376090928993219486" />
@@ -184,6 +181,9 @@
       <property role="TrG5h" value="language" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="PrWs8" id="7JYC9rUw4wJ" role="PzmwI">
+      <ref role="PrY4T" node="7JYC9rUw4wl" resolve="IKerMLNamespaceMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeJsNew">
     <property role="EcuMT" value="4376090928993219488" />
@@ -193,40 +193,16 @@
     <property role="19KtqR" value="true" />
     <property role="3GE5qa" value="root.namespace" />
     <ref role="1TJDcQ" node="3MUZSeJsNep" resolve="KerMLElement" />
-  </node>
-  <node concept="1TIwiD" id="3MUZSeJsNex">
-    <property role="EcuMT" value="4376090928993219489" />
-    <property role="TrG5h" value="KerMLMembership" />
-    <property role="R4oN_" value="KerML Membership (8.3.2.4.3): makes an Element a member of a Namespace" />
-    <property role="3GE5qa" value="root.namespace" />
-    <ref role="1TJDcQ" node="3MUZSeJsNeq" resolve="KerMLRelationship" />
-    <node concept="1TJgyi" id="3MUZSeJsNeM" role="1TKVEl">
-      <property role="IQ2nx" value="4376090928993219506" />
-      <property role="TrG5h" value="memberName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="1TJgyj" id="7JYC9rUw4ww" role="1TKVEi">
+      <property role="IQ2ns" value="8934755281057892384" />
+      <property role="20kJfa" value="ownedMember" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7JYC9rUw4wl" resolve="IKerMLNamespaceMember" />
     </node>
-    <node concept="1TJgyi" id="3MUZSeJsNeN" role="1TKVEl">
-      <property role="IQ2nx" value="4376090928993219507" />
-      <property role="TrG5h" value="memberShortName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    <node concept="PrWs8" id="7JYC9rUw4wA" role="PzmwI">
+      <ref role="PrY4T" node="7JYC9rUw4wl" resolve="IKerMLNamespaceMember" />
     </node>
-    <node concept="1TJgyi" id="3MUZSeJsNeO" role="1TKVEl">
-      <property role="IQ2nx" value="4376090928993219508" />
-      <property role="TrG5h" value="visibility" />
-      <ref role="AX2Wp" node="3MUZSeJsNei" resolve="KerMLVisibilityKind" />
-    </node>
-    <node concept="1TJgyj" id="3MUZSeJsNeP" role="1TKVEi">
-      <property role="IQ2ns" value="4376090928993219509" />
-      <property role="20kJfa" value="memberElement" />
-      <ref role="20lvS9" node="3MUZSeJsNep" resolve="KerMLElement" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3MUZSeJsNey">
-    <property role="EcuMT" value="4376090928993219490" />
-    <property role="TrG5h" value="KerMLOwningMembership" />
-    <property role="R4oN_" value="KerML OwningMembership (8.3.2.4.8): a Membership whose member Element it owns" />
-    <property role="3GE5qa" value="root.namespace" />
-    <ref role="1TJDcQ" node="3MUZSeJsNex" resolve="KerMLMembership" />
   </node>
   <node concept="1TIwiD" id="3MUZSeJsNez">
     <property role="EcuMT" value="4376090928993219491" />
@@ -235,11 +211,6 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="root.namespace" />
     <ref role="1TJDcQ" node="3MUZSeJsNeq" resolve="KerMLRelationship" />
-    <node concept="1TJgyi" id="3MUZSeJsNeQ" role="1TKVEl">
-      <property role="IQ2nx" value="4376090928993219510" />
-      <property role="TrG5h" value="visibility" />
-      <ref role="AX2Wp" node="3MUZSeJsNei" resolve="KerMLVisibilityKind" />
-    </node>
     <node concept="1TJgyi" id="3MUZSeJsNeR" role="1TKVEl">
       <property role="IQ2nx" value="4376090928993219511" />
       <property role="TrG5h" value="isImportAll" />
@@ -249,6 +220,9 @@
       <property role="IQ2nx" value="4376090928993219512" />
       <property role="TrG5h" value="isRecursive" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="7JYC9rUw4wD" role="PzmwI">
+      <ref role="PrY4T" node="7JYC9rUw4wl" resolve="IKerMLNamespaceMember" />
     </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeJsNe$">
@@ -269,10 +243,10 @@
     <property role="R4oN_" value="KerML MembershipImport (8.3.2.4.4)" />
     <property role="3GE5qa" value="root.namespace" />
     <ref role="1TJDcQ" node="3MUZSeJsNez" resolve="KerMLImport" />
-    <node concept="1TJgyj" id="3MUZSeJsNeU" role="1TKVEi">
-      <property role="IQ2ns" value="4376090928993219514" />
-      <property role="20kJfa" value="importedMembership" />
-      <ref role="20lvS9" node="3MUZSeJsNex" resolve="KerMLMembership" />
+    <node concept="1TJgyj" id="7JYC9rUw4wt" role="1TKVEi">
+      <property role="IQ2ns" value="8934755281057892381" />
+      <property role="20kJfa" value="importedElement" />
+      <ref role="20lvS9" node="3MUZSeJsNep" resolve="KerMLElement" />
     </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeJsNeA">
@@ -295,6 +269,17 @@
       <property role="IQ2nx" value="4376090928993219515" />
       <property role="TrG5h" value="isStandard" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="7JYC9rUw4wl">
+    <property role="EcuMT" value="8934755281057892373" />
+    <property role="TrG5h" value="IKerMLNamespaceMember" />
+    <property role="R4oN_" value="Anything that can be listed in the body of a KerML Namespace (replaces the spec's Membership layer; visibility lives here)" />
+    <property role="3GE5qa" value="root.namespace" />
+    <node concept="1TJgyi" id="7JYC9rUw4wm" role="1TKVEl">
+      <property role="IQ2nx" value="8934755281057892374" />
+      <property role="TrG5h" value="visibility" />
+      <ref role="AX2Wp" node="3MUZSeJsNei" resolve="KerMLVisibilityKind" />
     </node>
   </node>
 </model>

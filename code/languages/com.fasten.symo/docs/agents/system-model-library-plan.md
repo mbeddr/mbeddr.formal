@@ -7,6 +7,13 @@ Sources: `/home/dan/work/sysmlv2/SysML-v2-Release/sysml.library` (`Systems Libra
 The accessory model `com.symo.sysmlv2.baselan.system_model_library` (registered in the baselan `.mpl`) is still empty.
 
 ## Decisions taken
+- **KerML containment is explicit, not reified (2026-10-21, supersedes the earlier "reified relationships" approach).**
+  `Namespace.ownedMember : IKerMLNamespaceMember [0..n]` (one ordered list incl. imports); `visibility` is a property of the
+  member interface; `Membership`/`OwningMembership` are not nodes. Relationships stay concepts only where they have their own
+  syntax/data (Import, Annotation, later Specialization/Subsetting/Redefinition) and are contained through explicit typed
+  links. Reason: the generic ownedRelationship/ownedRelatedElement layer made every edit need a wrapping substitute menu.
+  Recorded deviation: no Membership/OwningMembership/FeatureMembership nodes; spec's ownedMembership/membership views dropped;
+  `MembershipImport` references the imported element (`importedElement`) instead of a Membership.
 - Stay faithful: implement KerML as its own base language `com.symo.kerml.baselan`, later re-layer SysML on it
   (`Definition` is a `Classifier`, `Usage` a `Feature`).
 - Expressions are imported as `UninterpretedTextExpression` (abstract `Expression` + a concrete text-only subconcept),
