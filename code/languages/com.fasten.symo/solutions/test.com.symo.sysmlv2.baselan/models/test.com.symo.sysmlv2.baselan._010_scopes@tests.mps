@@ -39,10 +39,7 @@
       </concept>
       <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW" />
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
-      <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz">
-        <child id="4376090928952104931" name="target" index="2ghixw" />
-        <child id="4376090928952104930" name="source" index="2ghixx" />
-      </concept>
+      <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz" />
       <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
       <concept id="4376090928935955021" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceDefinition" flags="ng" index="2gGTne" />
       <concept id="4211673189923939179" name="com.symo.sysmlv2.baselan.structure.SysMLv2EmptyLine" flags="ng" index="2h0jOo" />
@@ -53,10 +50,12 @@
         <property id="4376090928965378318" name="flowDefinitionName" index="2hs9Ud" />
         <reference id="4376090928965378317" name="definition" index="2hs9Ue" />
       </concept>
+      <concept id="4376090928965370545" name="com.symo.sysmlv2.baselan.structure.ISysMLv2ConnectorAsUsage" flags="ngI" index="2hsbOM">
+        <child id="717440187291777390" name="source" index="2uUmly" />
+        <child id="717440187291777391" name="target" index="2uUmlz" />
+      </concept>
       <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH">
-        <child id="4376090928965378363" name="source" index="2hs9US" />
         <child id="4376090928965378360" name="type" index="2hs9UV" />
-        <child id="4376090928965378366" name="target" index="2hs9UX" />
       </concept>
       <concept id="4376090928958005869" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowDefinition" flags="ng" index="2hSLRI" />
       <concept id="717440187291777380" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinitionRef" flags="ng" index="2uUmlC">
@@ -68,8 +67,8 @@
       </concept>
       <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE">
         <property id="717440187291777388" name="withKeyword" index="2uUmlw" />
-        <child id="717440187291777390" name="source" index="2uUmly" />
-        <child id="717440187291777391" name="target" index="2uUmlz" />
+        <child id="717440187291777390" name="source" index="2uUml$" />
+        <child id="717440187291777391" name="target" index="2uUml_" />
       </concept>
       <concept id="717440187291777379" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinition" flags="ng" index="2uUmlJ" />
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
@@ -285,7 +284,7 @@
             </node>
             <node concept="2gGTnd" id="3MUZSeG$NG3" role="3w00ZY">
               <property role="TrG5h" value="i" />
-              <node concept="2uUmlD" id="3MUZSeG$NG9" role="2uUmly">
+              <node concept="2uUmlD" id="3MUZSeG$NG9" role="2uUml$">
                 <node concept="3wdj9f" id="3MUZSeG$NGb" role="2uUmlA">
                   <property role="3wdj9b" value="x" />
                   <ref role="3wdj98" node="3MUZSeG$NFZ" resolve="x" />
@@ -295,7 +294,7 @@
                   <ref role="3wdj98" node="3MUZSeG$NFL" resolve="out" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeG$NGd" role="2uUmlz">
+              <node concept="2uUmlD" id="3MUZSeG$NGd" role="2uUml_">
                 <node concept="3wdj9f" id="3MUZSeG$NGf" role="2uUmlA">
                   <property role="3wdj9b" value="y" />
                   <ref role="3wdj98" node="3MUZSeG$NG1" resolve="y" />
@@ -322,13 +321,13 @@
             <node concept="2uUmlE" id="3MUZSeG$NGh" role="3w00ZY">
               <property role="TrG5h" value="c" />
               <property role="2uUmlw" value="true" />
-              <node concept="2uUmlD" id="3MUZSeG$NGn" role="2uUmly">
+              <node concept="2uUmlD" id="3MUZSeG$NGn" role="2uUml$">
                 <node concept="3wdj9f" id="3MUZSeG$NGp" role="2uUmlA">
                   <property role="3wdj9b" value="x" />
                   <ref role="3wdj98" node="3MUZSeG$NFZ" resolve="x" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeG$NGq" role="2uUmlz">
+              <node concept="2uUmlD" id="3MUZSeG$NGq" role="2uUml_">
                 <node concept="3wdj9f" id="3MUZSeG$NGs" role="2uUmlA">
                   <property role="3wdj9b" value="y" />
                   <ref role="3wdj98" node="3MUZSeG$NG1" resolve="y" />
@@ -463,7 +462,7 @@
               </node>
             </node>
             <node concept="2ghixz" id="3MUZSeHjLmI" role="3w00ZY">
-              <node concept="2uUmlD" id="3MUZSeHjLmN" role="2ghixx">
+              <node concept="2uUmlD" id="3MUZSeHjLmN" role="2uUmly">
                 <node concept="3wdj9f" id="3MUZSeHjLmP" role="2uUmlA">
                   <property role="3wdj9b" value="p" />
                   <ref role="3wdj98" node="3MUZSeHjLmE" resolve="p" />
@@ -478,7 +477,7 @@
                   </node>
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeHjLmQ" role="2ghixw">
+              <node concept="2uUmlD" id="3MUZSeHjLmQ" role="2uUmlz">
                 <node concept="3wdj9f" id="3MUZSeHjLmS" role="2uUmlA">
                   <property role="3wdj9b" value="inner" />
                   <ref role="3wdj98" node="3MUZSeHjLmG" resolve="inner" />
@@ -544,18 +543,6 @@
             </node>
             <node concept="2hSLRH" id="3MUZSeIlcjz" role="3w00ZY">
               <property role="TrG5h" value="f" />
-              <node concept="2uUmlD" id="3MUZSeIlcjC" role="2hs9US">
-                <node concept="3wdj9f" id="3MUZSeIlcjE" role="2uUmlA">
-                  <property role="3wdj9b" value="a" />
-                  <ref role="3wdj98" node="3MUZSeIlcjv" resolve="a" />
-                </node>
-              </node>
-              <node concept="2uUmlD" id="3MUZSeIlcjF" role="2hs9UX">
-                <node concept="3wdj9f" id="3MUZSeIlcjH" role="2uUmlA">
-                  <property role="3wdj9b" value="b" />
-                  <ref role="3wdj98" node="3MUZSeIlcjx" resolve="b" />
-                </node>
-              </node>
               <node concept="2hs9U8" id="3MUZSeIlcjI" role="2hs9UV">
                 <property role="2hs9Ud" value="F1" />
                 <ref role="2hs9Ue" node="3MUZSeIlcjr" resolve="F1" />
@@ -569,17 +556,29 @@
                   </node>
                 </node>
               </node>
+              <node concept="2uUmlD" id="3MUZSeIlcjC" role="2uUmly">
+                <node concept="3wdj9f" id="3MUZSeIlcjE" role="2uUmlA">
+                  <property role="3wdj9b" value="a" />
+                  <ref role="3wdj98" node="3MUZSeIlcjv" resolve="a" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="3MUZSeIlcjF" role="2uUmlz">
+                <node concept="3wdj9f" id="3MUZSeIlcjH" role="2uUmlA">
+                  <property role="3wdj9b" value="b" />
+                  <ref role="3wdj98" node="3MUZSeIlcjx" resolve="b" />
+                </node>
+              </node>
             </node>
             <node concept="2uUmlE" id="3MUZSeIlBQK" role="3w00ZY">
               <property role="TrG5h" value="c" />
               <property role="2uUmlw" value="true" />
-              <node concept="2uUmlD" id="3MUZSeIlBQQ" role="2uUmly">
+              <node concept="2uUmlD" id="3MUZSeIlBQQ" role="2uUml$">
                 <node concept="3wdj9f" id="3MUZSeIlBQS" role="2uUmlA">
                   <property role="3wdj9b" value="a" />
                   <ref role="3wdj98" node="3MUZSeIlcjv" resolve="a" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeIlBQT" role="2uUmlz">
+              <node concept="2uUmlD" id="3MUZSeIlBQT" role="2uUml_">
                 <node concept="3wdj9f" id="3MUZSeIlBQV" role="2uUmlA">
                   <property role="3wdj9b" value="b" />
                   <ref role="3wdj98" node="3MUZSeIlcjx" resolve="b" />

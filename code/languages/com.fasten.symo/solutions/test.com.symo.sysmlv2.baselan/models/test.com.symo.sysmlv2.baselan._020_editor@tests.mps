@@ -69,10 +69,7 @@
         <child id="7140692429570186950" name="specializes" index="3xKGGC" />
       </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
-      <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz">
-        <child id="4376090928952104931" name="target" index="2ghixw" />
-        <child id="4376090928952104930" name="source" index="2ghixx" />
-      </concept>
+      <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz" />
       <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
       <concept id="5531643499102778612" name="com.symo.sysmlv2.baselan.structure.ISysMLv2QualifiedRef" flags="ngI" index="gQIM0">
         <reference id="5531643499102778613" name="namespace" index="gQIM1" />
@@ -81,16 +78,17 @@
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
       </concept>
-      <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH">
-        <child id="4376090928965378363" name="source" index="2hs9US" />
-        <child id="4376090928965378366" name="target" index="2hs9UX" />
+      <concept id="4376090928965370545" name="com.symo.sysmlv2.baselan.structure.ISysMLv2ConnectorAsUsage" flags="ngI" index="2hsbOM">
+        <child id="717440187291777390" name="source" index="2uUmly" />
+        <child id="717440187291777391" name="target" index="2uUmlz" />
       </concept>
+      <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH" />
       <concept id="717440187291777381" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectorEnd" flags="ng" index="2uUmlD">
         <child id="717440187291777386" name="chain" index="2uUmlA" />
       </concept>
       <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE">
-        <child id="717440187291777390" name="source" index="2uUmly" />
-        <child id="717440187291777391" name="target" index="2uUmlz" />
+        <child id="717440187291777390" name="source" index="2uUml$" />
+        <child id="717440187291777391" name="target" index="2uUml_" />
       </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
@@ -1389,18 +1387,18 @@
             <node concept="2uUmlE" id="3MUZSeFtiA_" role="3w00ZY">
               <node concept="2uUmlD" id="3MUZSeFtiAE" role="2uUmly">
                 <node concept="3wdj9f" id="3MUZSeFtiAG" role="2uUmlA">
-                  <ref role="3wdj98" node="3MUZSeFtiAx" />
+                  <ref role="3wdj98" node="3MUZSeFtiAx" resolve="engine" />
                 </node>
                 <node concept="3wdj9f" id="3MUZSeFtiAH" role="2uUmlA">
-                  <ref role="3wdj98" node="3MUZSeFtiAr" />
+                  <ref role="3wdj98" node="3MUZSeFtiAr" resolve="drive" />
                 </node>
               </node>
               <node concept="2uUmlD" id="3MUZSeFtiAI" role="2uUmlz">
                 <node concept="3wdj9f" id="3MUZSeFtiAK" role="2uUmlA">
-                  <ref role="3wdj98" node="3MUZSeFtiAz" />
+                  <ref role="3wdj98" node="3MUZSeFtiAz" resolve="gearbox" />
                 </node>
                 <node concept="3wdj9f" id="3MUZSeFtiAL" role="2uUmlA">
-                  <ref role="3wdj98" node="3MUZSeFtiAu" />
+                  <ref role="3wdj98" node="3MUZSeFtiAu" resolve="input" />
                 </node>
               </node>
             </node>
@@ -1535,6 +1533,9 @@
               </node>
             </node>
             <node concept="2uUmlE" id="3MUZSeJjxoB" role="3w00ZY">
+              <node concept="8EhU9" id="3MUZSeJjxoM" role="8GFem">
+                <property role="TrG5h" value="latency" />
+              </node>
               <node concept="2uUmlD" id="3MUZSeJjxoG" role="2uUmly">
                 <node concept="3wdj9f" id="3MUZSeJjxoI" role="2uUmlA">
                   <ref role="3wdj98" node="3MUZSeFWMFR" resolve="engine" />
@@ -1544,9 +1545,6 @@
                 <node concept="3wdj9f" id="3MUZSeJjxoL" role="2uUmlA">
                   <ref role="3wdj98" node="3MUZSeFWMFT" resolve="gearbox" />
                 </node>
-              </node>
-              <node concept="8EhU9" id="3MUZSeJjxoM" role="8GFem">
-                <property role="TrG5h" value="latency" />
               </node>
             </node>
           </node>
@@ -1613,10 +1611,10 @@
         <node concept="3ZUotO" id="3MUZSeFZHnY" role="2h0jOs">
           <property role="TrG5h" value="Car" />
           <node concept="2uUmlE" id="3MUZSeFZHnZ" role="3w00ZY">
-            <node concept="2uUmlD" id="3MUZSeFZHo4" role="2uUmly">
+            <node concept="2uUmlD" id="3MUZSeFZHo4" role="2uUml$">
               <node concept="3wdj9f" id="3MUZSeFZHo6" role="2uUmlA" />
             </node>
-            <node concept="2uUmlD" id="3MUZSeFZHo7" role="2uUmlz">
+            <node concept="2uUmlD" id="3MUZSeFZHo7" role="2uUml_">
               <node concept="3wdj9f" id="3MUZSeFZHo9" role="2uUmlA" />
             </node>
             <node concept="LIFWc" id="3MUZSeFZHoa" role="lGtFl">
@@ -1650,10 +1648,10 @@
                 <ref role="1_WVXv" node="3MUZSeFZHog" />
               </node>
             </node>
-            <node concept="2uUmlD" id="3MUZSeFZHor" role="2uUmly">
+            <node concept="2uUmlD" id="3MUZSeFZHor" role="2uUml$">
               <node concept="3wdj9f" id="3MUZSeFZHot" role="2uUmlA" />
             </node>
-            <node concept="2uUmlD" id="3MUZSeFZHou" role="2uUmlz">
+            <node concept="2uUmlD" id="3MUZSeFZHou" role="2uUml_">
               <node concept="3wdj9f" id="3MUZSeFZHow" role="2uUmlA" />
             </node>
           </node>
@@ -2112,7 +2110,7 @@
               </node>
             </node>
             <node concept="2ghixz" id="3MUZSeHjFv3" role="3w00ZY">
-              <node concept="2uUmlD" id="3MUZSeHjFv8" role="2ghixx">
+              <node concept="2uUmlD" id="3MUZSeHjFv8" role="2uUmly">
                 <node concept="3wdj9f" id="3MUZSeHjFva" role="2uUmlA">
                   <ref role="3wdj98" node="3MUZSeHjFuZ" resolve="engine" />
                 </node>
@@ -2120,7 +2118,7 @@
                   <ref role="3wdj98" node="3MUZSeHjFuT" resolve="drive" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeHjFvc" role="2ghixw">
+              <node concept="2uUmlD" id="3MUZSeHjFvc" role="2uUmlz">
                 <node concept="3wdj9f" id="3MUZSeHjFve" role="2uUmlA">
                   <ref role="3wdj98" node="3MUZSeHjFv1" resolve="gearbox" />
                 </node>
@@ -2298,7 +2296,7 @@
             </node>
             <node concept="2hSLRH" id="3MUZSeIlclU" role="3w00ZY">
               <property role="TrG5h" value="feed" />
-              <node concept="2uUmlD" id="3MUZSeIlclZ" role="2hs9US">
+              <node concept="2uUmlD" id="3MUZSeIlclZ" role="2uUmly">
                 <node concept="3wdj9f" id="3MUZSeIlcm1" role="2uUmlA">
                   <ref role="3wdj98" node="3MUZSeIlclQ" resolve="engine" />
                 </node>
@@ -2306,7 +2304,7 @@
                   <ref role="3wdj98" node="3MUZSeIlclK" resolve="drive" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeIlcm3" role="2hs9UX">
+              <node concept="2uUmlD" id="3MUZSeIlcm3" role="2uUmlz">
                 <node concept="3wdj9f" id="3MUZSeIlcm5" role="2uUmlA">
                   <ref role="3wdj98" node="3MUZSeIlclS" resolve="gearbox" />
                 </node>

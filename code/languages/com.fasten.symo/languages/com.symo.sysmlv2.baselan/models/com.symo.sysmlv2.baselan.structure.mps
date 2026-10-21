@@ -1042,18 +1042,6 @@
       <property role="TrG5h" value="withKeyword" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
-    <node concept="1TJgyj" id="BOR0Mn7r_I" role="1TKVEi">
-      <property role="IQ2ns" value="717440187291777390" />
-      <property role="20kJfa" value="source" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
-    </node>
-    <node concept="1TJgyj" id="BOR0Mn7r_J" role="1TKVEi">
-      <property role="IQ2ns" value="717440187291777391" />
-      <property role="20kJfa" value="target" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
-    </node>
     <node concept="PrWs8" id="3MUZSeHMA4G" role="PzmwI">
       <ref role="PrY4T" node="3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
     </node>
@@ -1091,18 +1079,6 @@
       <property role="IQ2nx" value="4376090928952104929" />
       <property role="TrG5h" value="withKeyword" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyj" id="3MUZSeGZXvy" role="1TKVEi">
-      <property role="IQ2ns" value="4376090928952104930" />
-      <property role="20kJfa" value="source" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
-    </node>
-    <node concept="1TJgyj" id="3MUZSeGZXvz" role="1TKVEi">
-      <property role="IQ2ns" value="4376090928952104931" />
-      <property role="20kJfa" value="target" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
     </node>
     <node concept="PrWs8" id="3MUZSeGZXv$" role="PzmwI">
       <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
@@ -1185,18 +1161,6 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3MUZSeHMA4b" resolve="SysMLv2FlowDefinitionRef" />
     </node>
-    <node concept="1TJgyj" id="3MUZSeHMA4V" role="1TKVEi">
-      <property role="IQ2ns" value="4376090928965378363" />
-      <property role="20kJfa" value="source" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
-    </node>
-    <node concept="1TJgyj" id="3MUZSeHMA4Y" role="1TKVEi">
-      <property role="IQ2ns" value="4376090928965378366" />
-      <property role="20kJfa" value="target" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
-    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeHM$aH">
     <property role="EcuMT" value="4376090928965370541" />
@@ -1235,6 +1199,18 @@
     <property role="TrG5h" value="ISysMLv2ConnectorAsUsage" />
     <property role="R4oN_" value="SysML v2 ConnectorAsUsage (8.3.13.x): marker for usages that are also connectors (connection, binding, flow)" />
     <property role="3GE5qa" value="base" />
+    <node concept="1TJgyj" id="BOR0Mn7r_I" role="1TKVEi">
+      <property role="IQ2ns" value="717440187291777390" />
+      <property role="20kJfa" value="source" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
+    <node concept="1TJgyj" id="BOR0Mn7r_J" role="1TKVEi">
+      <property role="IQ2ns" value="717440187291777391" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeHMA4b">
     <property role="EcuMT" value="4376090928965378315" />

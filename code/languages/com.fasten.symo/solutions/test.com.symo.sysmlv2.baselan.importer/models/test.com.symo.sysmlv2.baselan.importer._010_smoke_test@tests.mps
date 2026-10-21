@@ -207,8 +207,6 @@
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
       <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz">
         <property id="4376090928952104929" name="withKeyword" index="2ghixy" />
-        <child id="4376090928952104931" name="target" index="2ghixw" />
-        <child id="4376090928952104930" name="source" index="2ghixx" />
       </concept>
       <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
       <concept id="4376090928935955021" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceDefinition" flags="ng" index="2gGTne" />
@@ -222,10 +220,12 @@
         <property id="4376090928965378318" name="flowDefinitionName" index="2hs9Ud" />
         <reference id="4376090928965378317" name="definition" index="2hs9Ue" />
       </concept>
+      <concept id="4376090928965370545" name="com.symo.sysmlv2.baselan.structure.ISysMLv2ConnectorAsUsage" flags="ngI" index="2hsbOM">
+        <child id="717440187291777390" name="source" index="2uUmly" />
+        <child id="717440187291777391" name="target" index="2uUmlz" />
+      </concept>
       <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH">
-        <child id="4376090928965378363" name="source" index="2hs9US" />
         <child id="4376090928965378360" name="type" index="2hs9UV" />
-        <child id="4376090928965378366" name="target" index="2hs9UX" />
         <child id="4376090928958005871" name="payload" index="2hSLRG" />
       </concept>
       <concept id="4376090928958005869" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowDefinition" flags="ng" index="2hSLRI" />
@@ -241,8 +241,8 @@
       </concept>
       <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE">
         <property id="717440187291777388" name="withKeyword" index="2uUmlw" />
-        <child id="717440187291777390" name="source" index="2uUmly" />
-        <child id="717440187291777391" name="target" index="2uUmlz" />
+        <child id="717440187291777390" name="source" index="2uUml$" />
+        <child id="717440187291777391" name="target" index="2uUml_" />
       </concept>
       <concept id="717440187291777379" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinition" flags="ng" index="2uUmlJ" />
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
@@ -8219,7 +8219,7 @@
               </node>
             </node>
             <node concept="2uUmlE" id="7GxiA1UAORw" role="3w00ZY">
-              <node concept="2uUmlD" id="7GxiA1UAOR_" role="2uUmly">
+              <node concept="2uUmlD" id="7GxiA1UAOR_" role="2uUml$">
                 <node concept="3wdj9f" id="7GxiA1UAORB" role="2uUmlA">
                   <property role="3wdj9b" value="engine" />
                   <ref role="3wdj98" node="7GxiA1UAORs" />
@@ -8229,7 +8229,7 @@
                   <ref role="3wdj98" node="7GxiA1UAORh" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="7GxiA1UAORD" role="2uUmlz">
+              <node concept="2uUmlD" id="7GxiA1UAORD" role="2uUml_">
                 <node concept="3wdj9f" id="7GxiA1UAORF" role="2uUmlA">
                   <property role="3wdj9b" value="gearbox" />
                   <ref role="3wdj98" node="7GxiA1UAORu" />
@@ -8243,13 +8243,13 @@
             <node concept="2uUmlE" id="7GxiA1UAORH" role="3w00ZY">
               <property role="TrG5h" value="shaft" />
               <property role="2uUmlw" value="true" />
-              <node concept="2uUmlD" id="7GxiA1UAORN" role="2uUmly">
+              <node concept="2uUmlD" id="7GxiA1UAORN" role="2uUml$">
                 <node concept="3wdj9f" id="7GxiA1UAORP" role="2uUmlA">
                   <property role="3wdj9b" value="engine" />
                   <ref role="3wdj98" node="7GxiA1UAORs" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="7GxiA1UAORQ" role="2uUmlz">
+              <node concept="2uUmlD" id="7GxiA1UAORQ" role="2uUml_">
                 <node concept="3wdj9f" id="7GxiA1UAORS" role="2uUmlA">
                   <property role="3wdj9b" value="gearbox" />
                   <ref role="3wdj98" node="7GxiA1UAORu" />
@@ -8865,13 +8865,13 @@
             <node concept="2uUmlE" id="3MUZSeFU7ue" role="3w00ZY">
               <property role="TrG5h" value="uplink" />
               <property role="2uUmlw" value="true" />
-              <node concept="2uUmlD" id="3MUZSeFU7uk" role="2uUmly">
+              <node concept="2uUmlD" id="3MUZSeFU7uk" role="2uUml$">
                 <node concept="3wdj9f" id="3MUZSeFU7um" role="2uUmlA">
                   <property role="3wdj9b" value="mainSwitch" />
                   <ref role="3wdj98" node="3MUZSeFU7u6" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeFU7un" role="2uUmlz">
+              <node concept="2uUmlD" id="3MUZSeFU7un" role="2uUml_">
                 <node concept="3wdj9f" id="3MUZSeFU7up" role="2uUmlA">
                   <property role="3wdj9b" value="sensorFeed" />
                   <ref role="3wdj98" node="3MUZSeFU7u8" />
@@ -8896,7 +8896,7 @@
               </node>
             </node>
             <node concept="2uUmlE" id="3MUZSeFU7uu" role="3w00ZY">
-              <node concept="2uUmlD" id="3MUZSeFU7uz" role="2uUmly">
+              <node concept="2uUmlD" id="3MUZSeFU7uz" role="2uUml$">
                 <node concept="3wdj9f" id="3MUZSeFU7u_" role="2uUmlA">
                   <property role="3wdj9b" value="controller" />
                   <ref role="3wdj98" node="3MUZSeFU7ua" />
@@ -8906,7 +8906,7 @@
                   <ref role="3wdj98" node="3MUZSeFU7uc" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeFU7uB" role="2uUmlz">
+              <node concept="2uUmlD" id="3MUZSeFU7uB" role="2uUml_">
                 <node concept="3wdj9f" id="3MUZSeFU7uD" role="2uUmlA">
                   <property role="3wdj9b" value="sensorFeed" />
                   <ref role="3wdj98" node="3MUZSeFU7u8" />
@@ -9594,13 +9594,13 @@
                   <ref role="1_WVXv" node="3MUZSeFZHbd" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeFZHb$" role="2uUmly">
+              <node concept="2uUmlD" id="3MUZSeFZHb$" role="2uUml$">
                 <node concept="3wdj9f" id="3MUZSeFZHbA" role="2uUmlA">
                   <property role="3wdj9b" value="x" />
                   <ref role="3wdj98" node="3MUZSeFZHbo" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeFZHbB" role="2uUmlz">
+              <node concept="2uUmlD" id="3MUZSeFZHbB" role="2uUml_">
                 <node concept="3wdj9f" id="3MUZSeFZHbD" role="2uUmlA">
                   <property role="3wdj9b" value="y" />
                   <ref role="3wdj98" node="3MUZSeFZHbq" />
@@ -9610,13 +9610,13 @@
             <node concept="2uUmlE" id="3MUZSeFZHbE" role="3w00ZY">
               <property role="TrG5h" value="l" />
               <property role="2uUmlw" value="true" />
-              <node concept="2uUmlD" id="3MUZSeFZHbK" role="2uUmly">
+              <node concept="2uUmlD" id="3MUZSeFZHbK" role="2uUml$">
                 <node concept="3wdj9f" id="3MUZSeFZHbM" role="2uUmlA">
                   <property role="3wdj9b" value="x" />
                   <ref role="3wdj98" node="3MUZSeFZHbo" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeFZHbN" role="2uUmlz">
+              <node concept="2uUmlD" id="3MUZSeFZHbN" role="2uUml_">
                 <node concept="3wdj9f" id="3MUZSeFZHbP" role="2uUmlA">
                   <property role="3wdj9b" value="y" />
                   <ref role="3wdj98" node="3MUZSeFZHbq" />
@@ -10251,7 +10251,7 @@
             </node>
             <node concept="2gGTnd" id="3MUZSeGxSVC" role="3w00ZY">
               <property role="TrG5h" value="link" />
-              <node concept="2uUmlD" id="3MUZSeGxSVI" role="2uUmly">
+              <node concept="2uUmlD" id="3MUZSeGxSVI" role="2uUml$">
                 <node concept="3wdj9f" id="3MUZSeGxSVK" role="2uUmlA">
                   <property role="3wdj9b" value="sensor" />
                   <ref role="3wdj98" node="3MUZSeGxSV$" resolve="sensor" />
@@ -10261,7 +10261,7 @@
                   <ref role="3wdj98" node="3MUZSeGxSVm" resolve="output" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeGxSVM" role="2uUmlz">
+              <node concept="2uUmlD" id="3MUZSeGxSVM" role="2uUml_">
                 <node concept="3wdj9f" id="3MUZSeGxSVO" role="2uUmlA">
                   <property role="3wdj9b" value="controller" />
                   <ref role="3wdj98" node="3MUZSeGxSVA" resolve="controller" />
@@ -10277,7 +10277,7 @@
               </node>
             </node>
             <node concept="2gGTnd" id="3MUZSeGxSVQ" role="3w00ZY">
-              <node concept="2uUmlD" id="3MUZSeGxSVV" role="2uUmly">
+              <node concept="2uUmlD" id="3MUZSeGxSVV" role="2uUml$">
                 <node concept="3wdj9f" id="3MUZSeGxSVX" role="2uUmlA">
                   <property role="3wdj9b" value="sensor" />
                   <ref role="3wdj98" node="3MUZSeGxSV$" resolve="sensor" />
@@ -10291,7 +10291,7 @@
                   <ref role="3wdj98" node="3MUZSeGxSVq" resolve="sextra" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeGxSW0" role="2uUmlz">
+              <node concept="2uUmlD" id="3MUZSeGxSW0" role="2uUml_">
                 <node concept="3wdj9f" id="3MUZSeGxSW2" role="2uUmlA">
                   <property role="3wdj9b" value="controller" />
                   <ref role="3wdj98" node="3MUZSeGxSVA" resolve="controller" />
@@ -11518,13 +11518,13 @@
               </node>
             </node>
             <node concept="2ghixz" id="3MUZSeHj$2s" role="3w00ZY">
-              <node concept="2uUmlD" id="3MUZSeHj$2x" role="2ghixx">
+              <node concept="2uUmlD" id="3MUZSeHj$2x" role="2uUmly">
                 <node concept="3wdj9f" id="3MUZSeHj$2z" role="2uUmlA">
                   <property role="3wdj9b" value="p" />
                   <ref role="3wdj98" node="3MUZSeHj$2o" resolve="p" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeHj$2$" role="2ghixw">
+              <node concept="2uUmlD" id="3MUZSeHj$2$" role="2uUmlz">
                 <node concept="3wdj9f" id="3MUZSeHj$2A" role="2uUmlA">
                   <property role="3wdj9b" value="inner" />
                   <ref role="3wdj98" node="3MUZSeHj$2q" resolve="inner" />
@@ -11538,7 +11538,7 @@
             <node concept="2ghixz" id="3MUZSeHj$2C" role="3w00ZY">
               <property role="2ghixy" value="true" />
               <property role="TrG5h" value="d2" />
-              <node concept="2uUmlD" id="3MUZSeHj$2H" role="2ghixx">
+              <node concept="2uUmlD" id="3MUZSeHj$2H" role="2uUmly">
                 <node concept="3wdj9f" id="3MUZSeHj$2J" role="2uUmlA">
                   <property role="3wdj9b" value="inner" />
                   <ref role="3wdj98" node="3MUZSeHj$2q" resolve="inner" />
@@ -11548,7 +11548,7 @@
                   <ref role="3wdj98" node="3MUZSeHj$2l" resolve="q" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeHj$2L" role="2ghixw">
+              <node concept="2uUmlD" id="3MUZSeHj$2L" role="2uUmlz">
                 <node concept="3wdj9f" id="3MUZSeHj$2N" role="2uUmlA">
                   <property role="3wdj9b" value="p" />
                   <ref role="3wdj98" node="3MUZSeHj$2o" resolve="p" />
@@ -12009,7 +12009,7 @@
                 <property role="3w00ZX" value="Fuel" />
                 <ref role="3w00ZU" node="3MUZSeIlc8S" resolve="Fuel" />
               </node>
-              <node concept="2uUmlD" id="3MUZSeIlc9d" role="2hs9US">
+              <node concept="2uUmlD" id="3MUZSeIlc9d" role="2uUmly">
                 <node concept="3wdj9f" id="3MUZSeIlc9f" role="2uUmlA">
                   <property role="3wdj9b" value="tank" />
                   <ref role="3wdj98" node="3MUZSeIlc93" resolve="tank" />
@@ -12019,7 +12019,7 @@
                   <ref role="3wdj98" node="3MUZSeIlc8V" resolve="fuelOut" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeIlc9h" role="2hs9UX">
+              <node concept="2uUmlD" id="3MUZSeIlc9h" role="2uUmlz">
                 <node concept="3wdj9f" id="3MUZSeIlc9j" role="2uUmlA">
                   <property role="3wdj9b" value="engine" />
                   <ref role="3wdj98" node="3MUZSeIlc95" resolve="engine" />
@@ -12036,7 +12036,11 @@
                 <property role="3w00ZX" value="Fuel" />
                 <ref role="3w00ZU" node="3MUZSeIlc8S" resolve="Fuel" />
               </node>
-              <node concept="2uUmlD" id="3MUZSeIlc9r" role="2hs9US">
+              <node concept="2hs9U8" id="3MUZSeIlc9z" role="2hs9UV">
+                <property role="2hs9Ud" value="FuelFlow" />
+                <ref role="2hs9Ue" node="3MUZSeIlc8T" resolve="FuelFlow" />
+              </node>
+              <node concept="2uUmlD" id="3MUZSeIlc9r" role="2uUmly">
                 <node concept="3wdj9f" id="3MUZSeIlc9t" role="2uUmlA">
                   <property role="3wdj9b" value="tank" />
                   <ref role="3wdj98" node="3MUZSeIlc93" resolve="tank" />
@@ -12046,7 +12050,7 @@
                   <ref role="3wdj98" node="3MUZSeIlc8V" resolve="fuelOut" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeIlc9v" role="2hs9UX">
+              <node concept="2uUmlD" id="3MUZSeIlc9v" role="2uUmlz">
                 <node concept="3wdj9f" id="3MUZSeIlc9x" role="2uUmlA">
                   <property role="3wdj9b" value="engine" />
                   <ref role="3wdj98" node="3MUZSeIlc95" resolve="engine" />
@@ -12055,10 +12059,6 @@
                   <property role="3wdj9b" value="fuelIn" />
                   <ref role="3wdj98" node="3MUZSeIlc8Z" resolve="fuelIn" />
                 </node>
-              </node>
-              <node concept="2hs9U8" id="3MUZSeIlc9z" role="2hs9UV">
-                <property role="2hs9Ud" value="FuelFlow" />
-                <ref role="2hs9Ue" node="3MUZSeIlc8T" resolve="FuelFlow" />
               </node>
             </node>
           </node>

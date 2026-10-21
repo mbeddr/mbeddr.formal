@@ -10,6 +10,14 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## Moving a link declaration orphans stored children — but they stay addressable by node id (2026-10-21)
+
+After `MOVE_NODE_TO_PARENT` of a link declaration to another concept (ids kept), existing nodes' children in that role disappear
+from `print_node` and from editors, yet they still sit in the model: comparisons count them ("Different children count in role"
+mirrored `was 1 / expected 0`) and `reload_all` does not bring them back. They are still found by `query_nodes FIND_INSTANCES`
+of their own concept (which lists them with their old `parentReference`), and `alter_nodes MOVE_NODE_TO_PARENT` with their
+id and the new `role` re-attaches them losslessly (annotations included). Better than re-creating fixtures by hand.
+
 ## Link specialization (`specializedLink`) is not a safe way to narrow an inherited slot (2026-10-21)
 
 Making a subconcept's `type` child link a `specializedLink` of the super concept's `type`, with the target concept narrowed to a

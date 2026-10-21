@@ -1309,3 +1309,9 @@ The sandbox's `metadata def SafetyRelevance { attribute ASIL; }` was migrated to
 `Usage.typeDefinition` checks the connection ref before the part ref (subconcept order matters). Migration: 75 refs and 8 multiplicities moved into the inherited
 slots in tests and in both sandbox models (`MOVE_NODE_TO_PARENT`); a few fixtures with orphaned children were rebuilt. Note: `ConnectionUsage` now inherits
 `ICanBelongOnlyToSysMLv2PartOwner` from `PartUsage`. baselan 47/47, importer 63/63.
+
+**Connector ends declared once (2026-10-21, alignment 3 of 4)**: `source`/`target : SysMLv2ConnectorEnd [0..1]` now live on `ISysMLv2ConnectorAsUsage`
+(spec 8.3.13.5) instead of being repeated on `ConnectionUsage`, `BindingUsage`, `FlowUsage`. The `ConnectionUsage` declarations were moved up keeping
+their ids; the binding/flow copies were removed after repointing editors, textGen, behavior, importer and checking rules to the interface links and moving
+13 binding/flow fixtures' ends (`MOVE_NODE_TO_PARENT`). Moving the ConnectionUsage declarations orphaned the stored ends of several connection/interface
+fixtures (see gotchas); they were recovered by id. baselan 47/47, importer 63/63.

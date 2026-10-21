@@ -72,9 +72,8 @@ Chosen option: **faithful base language**.
   The usage `type` slot is the single inherited `ItemUsage.type : ItemDefinitionRef`; `PartDefinitionRef` and
   `ConnectionDefinitionRef` are its subconcepts, and `canBeChild` on `ItemDefinitionRef` decides which one fits under
   which usage.
-* The connector ends (`source`/`target`) are declared separately on `ConnectionUsage`, `SysMLv2BindingUsage` and
-  `SysMLv2FlowUsage` instead of once on a shared `ConnectorAsUsage`; the marker interface `ISysMLv2ConnectorAsUsage`
-  records the generalisation.
+* The connector ends (`source`/`target`) are declared once on the `ISysMLv2ConnectorAsUsage` interface (the
+  `ConnectorAsUsage` of spec 8.3.13.5) and inherited by `ConnectionUsage`, `BindingUsage` and `FlowUsage`.
 * `ConnectionDefinition` and friends reference their specialisations through `ItemDefinitionRef`
   (`FlowDefinition` already uses its own `FlowDefinitionRef`).
 * `ActionUsage`/`ActionDefinition` are abstract placeholders; KerML-level classifiers are not modelled.
