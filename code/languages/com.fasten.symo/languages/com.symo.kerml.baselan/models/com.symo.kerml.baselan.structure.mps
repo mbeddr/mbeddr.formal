@@ -230,6 +230,7 @@
     <property role="TrG5h" value="KerMLNamespaceImport" />
     <property role="R4oN_" value="KerML NamespaceImport (8.3.2.4.6)" />
     <property role="3GE5qa" value="root.namespace" />
+    <property role="34LRSv" value="import" />
     <ref role="1TJDcQ" node="3MUZSeJsNez" resolve="KerMLImport" />
     <node concept="1TJgyj" id="3MUZSeJsNeT" role="1TKVEi">
       <property role="IQ2ns" value="4376090928993219513" />
@@ -242,6 +243,7 @@
     <property role="TrG5h" value="KerMLMembershipImport" />
     <property role="R4oN_" value="KerML MembershipImport (8.3.2.4.4)" />
     <property role="3GE5qa" value="root.namespace" />
+    <property role="34LRSv" value="import member" />
     <ref role="1TJDcQ" node="3MUZSeJsNez" resolve="KerMLImport" />
     <node concept="1TJgyj" id="7JYC9rUw4wt" role="1TKVEi">
       <property role="IQ2ns" value="8934755281057892381" />
@@ -264,6 +266,7 @@
     <property role="34LRSv" value="library package" />
     <property role="R4oN_" value="KerML LibraryPackage (8.3.4.x): a Package that is a library" />
     <property role="3GE5qa" value="kernel.package" />
+    <property role="19KtqR" value="true" />
     <ref role="1TJDcQ" node="3MUZSeJsNeA" resolve="KerMLPackage" />
     <node concept="1TJgyi" id="3MUZSeJsNeV" role="1TKVEl">
       <property role="IQ2nx" value="4376090928993219515" />

@@ -28,10 +28,15 @@
         <property id="1186414551515" name="flag" index="VOm3f" />
       </concept>
       <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
+      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
+        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
+      </concept>
       <concept id="1381004262292414836" name="jetbrains.mps.lang.editor.structure.ICellStyle" flags="ngI" index="1k5N5V">
         <reference id="1381004262292426837" name="parentStyleClass" index="1k5W1q" />
       </concept>
+      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
+        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -134,6 +139,124 @@
       <node concept="3F0ifn" id="7JYC9rUwad6" role="3EZMnx">
         <property role="3F0ifm" value="}" />
         <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7JYC9rUwmBZ">
+    <property role="TrG5h" value="KerMLNamespaceImport_Editor" />
+    <property role="3GE5qa" value="root.namespace" />
+    <ref role="1XX52x" to="rb60:3MUZSeJsNe$" resolve="KerMLNamespaceImport" />
+    <node concept="3EZMnI" id="7JYC9rUwmC1" role="2wV5jI">
+      <node concept="l2Vlx" id="7JYC9rUwmC2" role="2iSdaV" />
+      <node concept="3F0ifn" id="7JYC9rUwmC3" role="3EZMnx">
+        <property role="3F0ifm" value="import" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1iCGBv" id="7JYC9rUwmC4" role="3EZMnx">
+        <ref role="1NtTu8" to="rb60:3MUZSeJsNeT" />
+        <node concept="1sVBvm" id="7JYC9rUwmC7" role="1sWHZn">
+          <node concept="3F0A7n" id="7JYC9rUwmC9" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="7JYC9rUwmCa" role="3EZMnx">
+        <property role="3F0ifm" value="::*" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7JYC9rUwmCd">
+    <property role="TrG5h" value="KerMLMembershipImport_Editor" />
+    <property role="3GE5qa" value="root.namespace" />
+    <ref role="1XX52x" to="rb60:3MUZSeJsNe_" resolve="KerMLMembershipImport" />
+    <node concept="3EZMnI" id="7JYC9rUwmCf" role="2wV5jI">
+      <node concept="l2Vlx" id="7JYC9rUwmCg" role="2iSdaV" />
+      <node concept="3F0ifn" id="7JYC9rUwmCh" role="3EZMnx">
+        <property role="3F0ifm" value="import" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1iCGBv" id="7JYC9rUwmCi" role="3EZMnx">
+        <ref role="1NtTu8" to="rb60:7JYC9rUw4wt" />
+        <node concept="1sVBvm" id="7JYC9rUwmCl" role="1sWHZn">
+          <node concept="3F0A7n" id="7JYC9rUwmCn" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7JYC9rUwmCq">
+    <property role="TrG5h" value="KerMLComment_Editor" />
+    <property role="3GE5qa" value="root.annotation" />
+    <ref role="1XX52x" to="rb60:3MUZSeJsNet" resolve="KerMLComment" />
+    <node concept="3EZMnI" id="7JYC9rUwmCs" role="2wV5jI">
+      <node concept="l2Vlx" id="7JYC9rUwmCt" role="2iSdaV" />
+      <node concept="3F0ifn" id="7JYC9rUwmCu" role="3EZMnx">
+        <property role="3F0ifm" value="comment" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0ifn" id="7JYC9rUwmCv" role="3EZMnx">
+        <property role="3F0ifm" value="/*" />
+      </node>
+      <node concept="3F0A7n" id="7JYC9rUwmCw" role="3EZMnx">
+        <ref role="1NtTu8" to="rb60:3MUZSeJsNeI" resolve="body" />
+      </node>
+      <node concept="3F0ifn" id="7JYC9rUwmCx" role="3EZMnx">
+        <property role="3F0ifm" value="*/" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7JYC9rUwmC$">
+    <property role="TrG5h" value="KerMLDocumentation_Editor" />
+    <property role="3GE5qa" value="root.annotation" />
+    <ref role="1XX52x" to="rb60:3MUZSeJsNeu" resolve="KerMLDocumentation" />
+    <node concept="3EZMnI" id="7JYC9rUwmCA" role="2wV5jI">
+      <node concept="l2Vlx" id="7JYC9rUwmCB" role="2iSdaV" />
+      <node concept="3F0ifn" id="7JYC9rUwmCC" role="3EZMnx">
+        <property role="3F0ifm" value="doc" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0ifn" id="7JYC9rUwmCD" role="3EZMnx">
+        <property role="3F0ifm" value="/*" />
+      </node>
+      <node concept="3F0A7n" id="7JYC9rUwmCE" role="3EZMnx">
+        <ref role="1NtTu8" to="rb60:3MUZSeJsNeI" resolve="body" />
+      </node>
+      <node concept="3F0ifn" id="7JYC9rUwmCF" role="3EZMnx">
+        <property role="3F0ifm" value="*/" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7JYC9rUwmCI">
+    <property role="TrG5h" value="KerMLTextualRepresentation_Editor" />
+    <property role="3GE5qa" value="root.annotation" />
+    <ref role="1XX52x" to="rb60:3MUZSeJsNev" resolve="KerMLTextualRepresentation" />
+    <node concept="3EZMnI" id="7JYC9rUwmCK" role="2wV5jI">
+      <node concept="l2Vlx" id="7JYC9rUwmCL" role="2iSdaV" />
+      <node concept="3F0ifn" id="7JYC9rUwmCM" role="3EZMnx">
+        <property role="3F0ifm" value="rep" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0A7n" id="7JYC9rUwmCN" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="7JYC9rUwmCO" role="3EZMnx">
+        <property role="3F0ifm" value="language" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0A7n" id="7JYC9rUwmCP" role="3EZMnx">
+        <ref role="1NtTu8" to="rb60:3MUZSeJsNeL" resolve="language" />
+      </node>
+      <node concept="3F0ifn" id="7JYC9rUwmCQ" role="3EZMnx">
+        <property role="3F0ifm" value="/*" />
+      </node>
+      <node concept="3F0A7n" id="7JYC9rUwmCR" role="3EZMnx">
+        <ref role="1NtTu8" to="rb60:3MUZSeJsNeK" resolve="body" />
+      </node>
+      <node concept="3F0ifn" id="7JYC9rUwmCS" role="3EZMnx">
+        <property role="3F0ifm" value="*/" />
       </node>
     </node>
   </node>

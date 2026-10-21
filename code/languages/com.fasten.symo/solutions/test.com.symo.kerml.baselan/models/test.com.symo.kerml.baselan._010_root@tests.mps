@@ -483,5 +483,69 @@
       </node>
     </node>
   </node>
+  <node concept="LiM7Y" id="7JYC9rUwzb6">
+    <property role="TrG5h" value="_040_Comment_TypeComment" />
+    <property role="3YCmrE" value="typing 'comment' in a package body creates a comment whose body can be typed" />
+    <node concept="1qefOq" id="7JYC9rUwzb7" role="25YQCW">
+      <node concept="2jMsK_" id="7JYC9rUwzb9" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="LIFWc" id="7JYC9rUwzba" role="lGtFl">
+          <property role="LIFWd" value="empty_ownedMember" />
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7JYC9rUwzbb" role="25YQFr">
+      <node concept="2jMsK_" id="7JYC9rUwzbd" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="2jMsKu" id="7JYC9rUwzbe" role="21vIyQ">
+          <property role="2jMsKH" value="hello" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="7JYC9rUwzbf" role="LjaKd">
+      <node concept="2TK7Tu" id="7JYC9rUwzbg" role="3cqZAp">
+        <property role="2TTd_B" value="comment" />
+      </node>
+      <node concept="2TK7Tu" id="7JYC9rUwzbh" role="3cqZAp">
+        <property role="2TTd_B" value="hello" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="7JYC9rUwzbi">
+    <property role="TrG5h" value="_050_Documentation_TypeDoc" />
+    <property role="3YCmrE" value="typing 'doc' in a package body creates documentation whose body can be typed" />
+    <node concept="1qefOq" id="7JYC9rUwzbj" role="25YQCW">
+      <node concept="2jMsK_" id="7JYC9rUwzbl" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="LIFWc" id="7JYC9rUwzbm" role="lGtFl">
+          <property role="LIFWd" value="empty_ownedMember" />
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7JYC9rUwzbn" role="25YQFr">
+      <node concept="2jMsK_" id="7JYC9rUwzbp" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="2jMsKt" id="7JYC9rUwzbq" role="21vIyQ">
+          <property role="2jMsKH" value="hello" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="7JYC9rUwzbr" role="LjaKd">
+      <node concept="2TK7Tu" id="7JYC9rUwzbs" role="3cqZAp">
+        <property role="2TTd_B" value="doc" />
+      </node>
+      <node concept="2TK7Tu" id="7JYC9rUwzbt" role="3cqZAp">
+        <property role="2TTd_B" value="hello" />
+      </node>
+    </node>
+  </node>
 </model>
 
