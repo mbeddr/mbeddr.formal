@@ -56,7 +56,7 @@
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
       <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
         <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
-        <reference id="8930763252717288800" name="definition" index="8CKMW" />
+        <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
       </concept>
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <child id="8930763252717678425" name="type" index="8EhU5" />
@@ -68,9 +68,7 @@
       <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW">
         <child id="7140692429570186950" name="specializes" index="3xKGGC" />
       </concept>
-      <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z">
-        <child id="8930763252717288847" name="type" index="8CKLj" />
-      </concept>
+      <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
       <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz">
         <child id="4376090928952104931" name="target" index="2ghixw" />
         <child id="4376090928952104930" name="source" index="2ghixx" />
@@ -87,9 +85,6 @@
         <child id="4376090928965378363" name="source" index="2hs9US" />
         <child id="4376090928965378366" name="target" index="2hs9UX" />
       </concept>
-      <concept id="4376090928929871183" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartLikeUsage" flags="ng" index="2n5AFc">
-        <child id="8930763252716192330" name="content" index="8GFem" />
-      </concept>
       <concept id="717440187291777381" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectorEnd" flags="ng" index="2uUmlD">
         <child id="717440187291777386" name="chain" index="2uUmlA" />
       </concept>
@@ -101,6 +96,7 @@
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
+        <child id="8930763252716192330" name="content" index="8GFem" />
         <child id="7140692429574298135" name="type" index="3w00ZT" />
       </concept>
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
@@ -272,7 +268,7 @@
           <property role="TrG5h" value="Car" />
           <node concept="8GF0z" id="cvgDBNO4Eu" role="3w00ZY">
             <property role="TrG5h" value="engine2" />
-            <node concept="8CKM2" id="cvgDBNO4Ev" role="8CKLj">
+            <node concept="8CKM2" id="cvgDBNO4Ev" role="3w00ZT">
               <ref role="gQIM1" node="cvgDBNO4Ep" resolve="pack_010_02" />
               <ref role="8CKMW" node="cvgDBNO4Eq" resolve="Engine" />
             </node>
@@ -1320,16 +1316,16 @@
             <property role="TrG5h" value="Car" />
             <node concept="8GF0z" id="3MUZSeFtiAe" role="3w00ZY">
               <property role="TrG5h" value="engine" />
-              <node concept="8CKM2" id="3MUZSeFtiAf" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeFtiAf" role="3w00ZT">
                 <property role="8CKM3" value="Engine" />
-                <ref role="8CKMW" node="3MUZSeFtiA7" />
+                <ref role="8CKMW" node="3MUZSeFtiA7" resolve="Engine" />
               </node>
             </node>
             <node concept="8GF0z" id="3MUZSeFtiAg" role="3w00ZY">
               <property role="TrG5h" value="gearbox" />
-              <node concept="8CKM2" id="3MUZSeFtiAh" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeFtiAh" role="3w00ZT">
                 <property role="8CKM3" value="Gearbox" />
-                <ref role="8CKMW" node="3MUZSeFtiAa" />
+                <ref role="8CKMW" node="3MUZSeFtiAa" resolve="Gearbox" />
               </node>
             </node>
             <node concept="2h0jOo" id="3MUZSeFtiAi" role="3w00ZY">
@@ -1378,16 +1374,16 @@
             <property role="TrG5h" value="Car" />
             <node concept="8GF0z" id="3MUZSeFtiAx" role="3w00ZY">
               <property role="TrG5h" value="engine" />
-              <node concept="8CKM2" id="3MUZSeFtiAy" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeFtiAy" role="3w00ZT">
                 <property role="8CKM3" value="Engine" />
-                <ref role="8CKMW" node="3MUZSeFtiAq" />
+                <ref role="8CKMW" node="3MUZSeFtiAq" resolve="Engine" />
               </node>
             </node>
             <node concept="8GF0z" id="3MUZSeFtiAz" role="3w00ZY">
               <property role="TrG5h" value="gearbox" />
-              <node concept="8CKM2" id="3MUZSeFtiA$" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeFtiA$" role="3w00ZT">
                 <property role="8CKM3" value="Gearbox" />
-                <ref role="8CKMW" node="3MUZSeFtiAt" />
+                <ref role="8CKMW" node="3MUZSeFtiAt" resolve="Gearbox" />
               </node>
             </node>
             <node concept="2uUmlE" id="3MUZSeFtiA_" role="3w00ZY">
@@ -1485,16 +1481,16 @@
             <property role="TrG5h" value="Car" />
             <node concept="8GF0z" id="3MUZSeFWMFD" role="3w00ZY">
               <property role="TrG5h" value="engine" />
-              <node concept="8CKM2" id="3MUZSeFWMFE" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeFWMFE" role="3w00ZT">
                 <property role="8CKM3" value="Engine" />
-                <ref role="8CKMW" node="3MUZSeFWMFA" />
+                <ref role="8CKMW" node="3MUZSeFWMFA" resolve="Engine" />
               </node>
             </node>
             <node concept="8GF0z" id="3MUZSeFWMFF" role="3w00ZY">
               <property role="TrG5h" value="gearbox" />
-              <node concept="8CKM2" id="3MUZSeFWMFG" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeFWMFG" role="3w00ZT">
                 <property role="8CKM3" value="Gearbox" />
-                <ref role="8CKMW" node="3MUZSeFWMFB" />
+                <ref role="8CKMW" node="3MUZSeFWMFB" resolve="Gearbox" />
               </node>
             </node>
             <node concept="2h0jOo" id="3MUZSeFWMFH" role="3w00ZY">
@@ -1526,30 +1522,30 @@
             <property role="TrG5h" value="Car" />
             <node concept="8GF0z" id="3MUZSeFWMFR" role="3w00ZY">
               <property role="TrG5h" value="engine" />
-              <node concept="8CKM2" id="3MUZSeFWMFS" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeFWMFS" role="3w00ZT">
                 <property role="8CKM3" value="Engine" />
-                <ref role="8CKMW" node="3MUZSeFWMFO" />
+                <ref role="8CKMW" node="3MUZSeFWMFO" resolve="Engine" />
               </node>
             </node>
             <node concept="8GF0z" id="3MUZSeFWMFT" role="3w00ZY">
               <property role="TrG5h" value="gearbox" />
-              <node concept="8CKM2" id="3MUZSeFWMFU" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeFWMFU" role="3w00ZT">
                 <property role="8CKM3" value="Gearbox" />
-                <ref role="8CKMW" node="3MUZSeFWMFP" />
+                <ref role="8CKMW" node="3MUZSeFWMFP" resolve="Gearbox" />
               </node>
             </node>
-            <node concept="2uUmlE" id="3MUZSeFWMFV" role="3w00ZY">
-              <node concept="2uUmlD" id="3MUZSeFWMG0" role="2uUmly">
-                <node concept="3wdj9f" id="3MUZSeFWMG2" role="2uUmlA">
-                  <ref role="3wdj98" node="3MUZSeFWMFR" />
+            <node concept="2uUmlE" id="3MUZSeJjxoB" role="3w00ZY">
+              <node concept="2uUmlD" id="3MUZSeJjxoG" role="2uUmly">
+                <node concept="3wdj9f" id="3MUZSeJjxoI" role="2uUmlA">
+                  <ref role="3wdj98" node="3MUZSeFWMFR" resolve="engine" />
                 </node>
               </node>
-              <node concept="2uUmlD" id="3MUZSeFWMG3" role="2uUmlz">
-                <node concept="3wdj9f" id="3MUZSeFWMG5" role="2uUmlA">
-                  <ref role="3wdj98" node="3MUZSeFWMFT" />
+              <node concept="2uUmlD" id="3MUZSeJjxoJ" role="2uUmlz">
+                <node concept="3wdj9f" id="3MUZSeJjxoL" role="2uUmlA">
+                  <ref role="3wdj98" node="3MUZSeFWMFT" resolve="gearbox" />
                 </node>
               </node>
-              <node concept="8EhU9" id="3MUZSeFWMG6" role="8GFem">
+              <node concept="8EhU9" id="3MUZSeJjxoM" role="8GFem">
                 <property role="TrG5h" value="latency" />
               </node>
             </node>
@@ -1724,14 +1720,14 @@
             <property role="TrG5h" value="Car" />
             <node concept="8GF0z" id="3MUZSeGygG3" role="3w00ZY">
               <property role="TrG5h" value="engine" />
-              <node concept="8CKM2" id="3MUZSeGygG4" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeGygG4" role="3w00ZT">
                 <property role="8CKM3" value="Engine" />
                 <ref role="8CKMW" node="3MUZSeGygFW" resolve="Engine" />
               </node>
             </node>
             <node concept="8GF0z" id="3MUZSeGygG5" role="3w00ZY">
               <property role="TrG5h" value="gearbox" />
-              <node concept="8CKM2" id="3MUZSeGygG6" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeGygG6" role="3w00ZT">
                 <property role="8CKM3" value="Gearbox" />
                 <ref role="8CKMW" node="3MUZSeGygFZ" resolve="Gearbox" />
               </node>
@@ -1783,14 +1779,14 @@
             <property role="TrG5h" value="Car" />
             <node concept="8GF0z" id="3MUZSeGygGm" role="3w00ZY">
               <property role="TrG5h" value="engine" />
-              <node concept="8CKM2" id="3MUZSeGygGn" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeGygGn" role="3w00ZT">
                 <property role="8CKM3" value="Engine" />
                 <ref role="8CKMW" node="3MUZSeGygGf" resolve="Engine" />
               </node>
             </node>
             <node concept="8GF0z" id="3MUZSeGygGo" role="3w00ZY">
               <property role="TrG5h" value="gearbox" />
-              <node concept="8CKM2" id="3MUZSeGygGp" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeGygGp" role="3w00ZT">
                 <property role="8CKM3" value="Gearbox" />
                 <ref role="8CKMW" node="3MUZSeGygGi" resolve="Gearbox" />
               </node>
@@ -2044,14 +2040,14 @@
             <property role="TrG5h" value="Car" />
             <node concept="8GF0z" id="3MUZSeHjFuG" role="3w00ZY">
               <property role="TrG5h" value="engine" />
-              <node concept="8CKM2" id="3MUZSeHjFuH" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeHjFuH" role="3w00ZT">
                 <property role="8CKM3" value="Engine" />
                 <ref role="8CKMW" node="3MUZSeHjFu_" resolve="Engine" />
               </node>
             </node>
             <node concept="8GF0z" id="3MUZSeHjFuI" role="3w00ZY">
               <property role="TrG5h" value="gearbox" />
-              <node concept="8CKM2" id="3MUZSeHjFuJ" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeHjFuJ" role="3w00ZT">
                 <property role="8CKM3" value="Gearbox" />
                 <ref role="8CKMW" node="3MUZSeHjFuC" resolve="Gearbox" />
               </node>
@@ -2103,14 +2099,14 @@
             <property role="TrG5h" value="Car" />
             <node concept="8GF0z" id="3MUZSeHjFuZ" role="3w00ZY">
               <property role="TrG5h" value="engine" />
-              <node concept="8CKM2" id="3MUZSeHjFv0" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeHjFv0" role="3w00ZT">
                 <property role="8CKM3" value="Engine" />
                 <ref role="8CKMW" node="3MUZSeHjFuS" resolve="Engine" />
               </node>
             </node>
             <node concept="8GF0z" id="3MUZSeHjFv1" role="3w00ZY">
               <property role="TrG5h" value="gearbox" />
-              <node concept="8CKM2" id="3MUZSeHjFv2" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeHjFv2" role="3w00ZT">
                 <property role="8CKM3" value="Gearbox" />
                 <ref role="8CKMW" node="3MUZSeHjFuV" resolve="Gearbox" />
               </node>
@@ -2229,14 +2225,14 @@
             <property role="TrG5h" value="Car" />
             <node concept="8GF0z" id="3MUZSeIlclz" role="3w00ZY">
               <property role="TrG5h" value="engine" />
-              <node concept="8CKM2" id="3MUZSeIlcl$" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeIlcl$" role="3w00ZT">
                 <property role="8CKM3" value="Engine" />
                 <ref role="8CKMW" node="3MUZSeIlcls" resolve="Engine" />
               </node>
             </node>
             <node concept="8GF0z" id="3MUZSeIlcl_" role="3w00ZY">
               <property role="TrG5h" value="gearbox" />
-              <node concept="8CKM2" id="3MUZSeIlclA" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeIlclA" role="3w00ZT">
                 <property role="8CKM3" value="Gearbox" />
                 <ref role="8CKMW" node="3MUZSeIlclv" resolve="Gearbox" />
               </node>
@@ -2288,14 +2284,14 @@
             <property role="TrG5h" value="Car" />
             <node concept="8GF0z" id="3MUZSeIlclQ" role="3w00ZY">
               <property role="TrG5h" value="engine" />
-              <node concept="8CKM2" id="3MUZSeIlclR" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeIlclR" role="3w00ZT">
                 <property role="8CKM3" value="Engine" />
                 <ref role="8CKMW" node="3MUZSeIlclJ" resolve="Engine" />
               </node>
             </node>
             <node concept="8GF0z" id="3MUZSeIlclS" role="3w00ZY">
               <property role="TrG5h" value="gearbox" />
-              <node concept="8CKM2" id="3MUZSeIlclT" role="8CKLj">
+              <node concept="8CKM2" id="3MUZSeIlclT" role="3w00ZT">
                 <property role="8CKM3" value="Gearbox" />
                 <ref role="8CKMW" node="3MUZSeIlclM" resolve="Gearbox" />
               </node>

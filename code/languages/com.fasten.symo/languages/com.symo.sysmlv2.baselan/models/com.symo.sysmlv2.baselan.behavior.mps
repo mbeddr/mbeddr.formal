@@ -1123,6 +1123,35 @@
             <node concept="32TBzR" id="BOR0Mn7tCf" role="2OqNvi" />
           </node>
           <node concept="3clFbS" id="BOR0Mn7tCg" role="2LFqv$">
+            <node concept="3clFbJ" id="BOR0Mn7tD_" role="3cqZAp">
+              <node concept="2OqwBi" id="BOR0Mn7tDC" role="3clFbw">
+                <node concept="2GrUjf" id="BOR0Mn7tDF" role="2Oq$k0">
+                  <ref role="2Gs0qQ" node="BOR0Mn7tCa" resolve="c" />
+                </node>
+                <node concept="1mIQ4w" id="BOR0Mn7tDG" role="2OqNvi">
+                  <node concept="chp4Y" id="BOR0Mn7tDI" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="BOR0Mn7tDJ" role="3clFbx">
+                <node concept="3cpWs6" id="BOR0Mn7tDK" role="3cqZAp">
+                  <node concept="2OqwBi" id="BOR0Mn7tDL" role="3cqZAk">
+                    <node concept="1PxgMI" id="BOR0Mn7tDO" role="2Oq$k0">
+                      <node concept="2GrUjf" id="BOR0Mn7tDR" role="1m5AlR">
+                        <ref role="2Gs0qQ" node="BOR0Mn7tCa" resolve="c" />
+                      </node>
+                      <node concept="chp4Y" id="BOR0Mn7tDS" role="3oSUPX">
+                        <ref role="cht4Q" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="BOR0Mn7tDT" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_C" resolve="connectionDefinition" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3clFbJ" id="BOR0Mn7tCh" role="3cqZAp">
               <node concept="2OqwBi" id="BOR0Mn7tCk" role="3clFbw">
                 <node concept="2GrUjf" id="BOR0Mn7tCn" role="2Oq$k0">
@@ -1234,35 +1263,6 @@
                     </node>
                     <node concept="3TrEf2" id="BOR0Mn7tD$" role="2OqNvi">
                       <ref role="3Tt5mk" to="5rf1:7JKstLNmmWX" resolve="definition" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbJ" id="BOR0Mn7tD_" role="3cqZAp">
-              <node concept="2OqwBi" id="BOR0Mn7tDC" role="3clFbw">
-                <node concept="2GrUjf" id="BOR0Mn7tDF" role="2Oq$k0">
-                  <ref role="2Gs0qQ" node="BOR0Mn7tCa" resolve="c" />
-                </node>
-                <node concept="1mIQ4w" id="BOR0Mn7tDG" role="2OqNvi">
-                  <node concept="chp4Y" id="BOR0Mn7tDI" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbS" id="BOR0Mn7tDJ" role="3clFbx">
-                <node concept="3cpWs6" id="BOR0Mn7tDK" role="3cqZAp">
-                  <node concept="2OqwBi" id="BOR0Mn7tDL" role="3cqZAk">
-                    <node concept="1PxgMI" id="BOR0Mn7tDO" role="2Oq$k0">
-                      <node concept="2GrUjf" id="BOR0Mn7tDR" role="1m5AlR">
-                        <ref role="2Gs0qQ" node="BOR0Mn7tCa" resolve="c" />
-                      </node>
-                      <node concept="chp4Y" id="BOR0Mn7tDS" role="3oSUPX">
-                        <ref role="cht4Q" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
-                      </node>
-                    </node>
-                    <node concept="3TrEf2" id="BOR0Mn7tDT" role="2OqNvi">
-                      <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_C" resolve="definition" />
                     </node>
                   </node>
                 </node>
@@ -5356,9 +5356,9 @@
     </node>
   </node>
   <node concept="13h7C7" id="3MUZSeFIFLP">
-    <property role="3GE5qa" value="part.base" />
-    <property role="TrG5h" value="SysMLv2PartLikeUsage_Behavior" />
-    <ref role="13h7C2" to="5rf1:3MUZSeFF9lf" resolve="SysMLv2PartLikeUsage" />
+    <property role="3GE5qa" value="part.item" />
+    <property role="TrG5h" value="SysMLv2ItemUsage_Behavior" />
+    <ref role="13h7C2" to="5rf1:6coPuU36dCd" />
     <node concept="13hLZK" id="3MUZSeFIFLS" role="13h7CW">
       <node concept="3clFbS" id="3MUZSeFIFLU" role="2VODD2" />
     </node>

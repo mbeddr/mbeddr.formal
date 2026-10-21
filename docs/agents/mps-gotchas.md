@@ -10,6 +10,23 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## Link specialization (`specializedLink`) is not a safe way to narrow an inherited slot (2026-10-21)
+
+Making a subconcept's `type` child link a `specializedLink` of the super concept's `type`, with the target concept narrowed to a
+subconcept, looks like the textbook way to align hierarchies without touching data (link ids stay). In practice: (1) specializing
+a *reference* link (`definition` of a subconcept ref) makes its `link {definition}` scope constraint stop applying — scopes fall back
+to the default (all JDK stubs); (2) specializing a *child* link leaves two slots with the same role name, and editor-created
+children and fixtures end up under different link ids ("Different children count in role: type [was 0, expected 1]" mirrored by
+"[was 1, expected 0]"); (3) completion offers every concrete subconcept of the broad slot type.
+
+**What works:** one inherited slot typed by the broad concept, subconcepts of the target for the narrower kinds, a `canBeChild` rule
+on the *broad* target concept that selects the allowed subconcept per parent (`childConcept.isSubConceptOf(...)` — constraints are
+inherited by subconcepts, so the rule must live on the super concept), a scope that narrows by parent where needed, and — for
+existing data — rename the old links, rebuild, `MOVE_NODE_TO_PARENT` each child into the inherited role, delete the old links.
+Also: when concept A becomes a subconcept of B, every `isInstanceOf(B)` branch ahead of the `isInstanceOf(A)` one now captures A
+(`typeDefinition` returned the wrong link until the order was swapped). Moving a link declaration to another concept keeps its id but
+fixtures can still show hidden orphan children afterwards; rebuild the owning fixture node.
+
 ## Deleting a child link declaration orphans its children invisibly — they still count in comparisons (2026-10-20)
 
 Removing a `LinkDeclaration` (e.g. when a concept now inherits an equivalent slot from a new super concept) leaves existing

@@ -1298,3 +1298,14 @@ parent is a `MetadataUsage` (same pattern as connection/interface/flow). New `Sy
 `reifyItemDefinitionRefs` (prefix metadata still `reifyMetadataDefinitionRefs`). Tests: new scope test `_080_MetadataTypeScope` (metadata usage type -> `{MD1, MD2}`, item usage
 type also offers metadata defs), importer `_171_MetadataSpecializationTest`; fixtures of `_170`, `_210` and editor `_090_Metadata_MetadataInPartDef` rebuilt. baselan 47/47, importer 63/63.
 The sandbox's `metadata def SafetyRelevance { attribute ASIL; }` was migrated to the inherited `content` slot (see gotcha on removing child slots).
+
+**PartUsage is an ItemUsage (2026-10-21, alignment 2 of 4)**: spec 8.3.11.3 — `PartUsage` is an `ItemUsage`, `ConnectionUsage` a `PartUsage` (+ `ConnectorAsUsage`).
+`SysMLv2PartLikeUsage` is gone: its `content` link (id kept) moved up to `SysMLv2ItemUsage`, which now implements `ISysMLv2FeatureOwner` and carries the former
+`PartLikeUsage` behavior (`SysMLv2ItemUsage_Behavior`: scope, `ownedFeatures`, `directSuperDefinitions`, matching text). `PartUsage extends ItemUsage`,
+`ConnectionUsage extends PartUsage`; the own `type`/`multiplicity` slots of both were removed — all use the inherited `ItemUsage.type` / `.multiplicity`.
+`SysMLv2PartDefinitionRef extends SysMLv2ItemDefinitionRef` and `SysMLv2ConnectionDefinitionRef extends SysMLv2PartDefinitionRef` (each keeps its own, renamed link
+`partDefinition` / `connectionDefinition` with its own scope constraint). `ItemDefinitionRef_Constraints.canBeChild` picks the ref concept by parent: under
+`ConnectionUsage` (incl. `InterfaceUsage`) only `ConnectionDefinitionRef`, under `PartUsage` only `PartDefinitionRef`, elsewhere plain `ItemDefinitionRef`.
+`Usage.typeDefinition` checks the connection ref before the part ref (subconcept order matters). Migration: 75 refs and 8 multiplicities moved into the inherited
+slots in tests and in both sandbox models (`MOVE_NODE_TO_PARENT`); a few fixtures with orphaned children were rebuilt. Note: `ConnectionUsage` now inherits
+`ICanBelongOnlyToSysMLv2PartOwner` from `PartUsage`. baselan 47/47, importer 63/63.

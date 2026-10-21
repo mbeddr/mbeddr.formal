@@ -53,6 +53,9 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
@@ -74,6 +77,7 @@
       <concept id="1202989658459" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_parentNode" flags="nn" index="nLn13" />
       <concept id="8966504967485224688" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_contextNode" flags="nn" index="2rP1CM" />
       <concept id="4656991770397278600" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_position" flags="nn" index="$OBjv" />
+      <concept id="4303308395523096213" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_childConcept" flags="ng" index="2DD5aU" />
       <concept id="1147467115080" name="jetbrains.mps.lang.constraints.structure.NodePropertyConstraint" flags="ng" index="EnEH3">
         <reference id="1147467295099" name="applicableProperty" index="EomxK" />
         <child id="1212097481299" name="propertyValidator" index="QCWH9" />
@@ -106,6 +110,9 @@
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
+      <concept id="1180031783296" name="jetbrains.mps.lang.smodel.structure.Concept_IsSubConceptOfOperation" flags="nn" index="2Zo12i">
+        <child id="1180031783297" name="conceptArgument" index="2Zo12j" />
       </concept>
       <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
         <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
@@ -264,6 +271,70 @@
               <node concept="2qgKlT" id="3tSWG0_D1eE" role="2OqNvi">
                 <ref role="37wK5l" to="5wt7:3tSWG0_CPFo" resolve="adoptNamespaceOf" />
                 <node concept="3khVwk" id="3tSWG0_D1eF" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="9S07l" id="3MUZSeJgcLO" role="9Vyp8">
+      <node concept="3clFbS" id="3MUZSeJgcLQ" role="2VODD2">
+        <node concept="3clFbF" id="3MUZSeJgcLR" role="3cqZAp">
+          <node concept="3K4zz7" id="3MUZSeJgcLT" role="3clFbG">
+            <node concept="2OqwBi" id="3MUZSeJgcLX" role="3K4Cdx">
+              <node concept="nLn13" id="3MUZSeJgcM0" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="3MUZSeJgcM1" role="2OqNvi">
+                <node concept="chp4Y" id="3MUZSeJgcM3" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:BOR0Mn7r_A" resolve="SysMLv2ConnectionUsage" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3MUZSeJgcM4" role="3K4E3e">
+              <node concept="2DD5aU" id="3MUZSeJgcM7" role="2Oq$k0" />
+              <node concept="2Zo12i" id="3MUZSeJgcM8" role="2OqNvi">
+                <node concept="chp4Y" id="3MUZSeJgcMa" role="2Zo12j">
+                  <ref role="cht4Q" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
+                </node>
+              </node>
+            </node>
+            <node concept="3K4zz7" id="3MUZSeJgcMb" role="3K4GZi">
+              <node concept="2OqwBi" id="3MUZSeJgcMf" role="3K4Cdx">
+                <node concept="nLn13" id="3MUZSeJgcMi" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="3MUZSeJgcMj" role="2OqNvi">
+                  <node concept="chp4Y" id="3MUZSeJgcMl" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
+                  </node>
+                </node>
+              </node>
+              <node concept="1Wc70l" id="3MUZSeJgcMm" role="3K4E3e">
+                <node concept="2OqwBi" id="3MUZSeJgcMp" role="3uHU7B">
+                  <node concept="2DD5aU" id="3MUZSeJgcMs" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="3MUZSeJgcMt" role="2OqNvi">
+                    <node concept="chp4Y" id="3MUZSeJgcMv" role="2Zo12j">
+                      <ref role="cht4Q" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="3fqX7Q" id="3MUZSeJgcMw" role="3uHU7w">
+                  <node concept="2OqwBi" id="3MUZSeJgcMy" role="3fr31v">
+                    <node concept="2DD5aU" id="3MUZSeJgcM_" role="2Oq$k0" />
+                    <node concept="2Zo12i" id="3MUZSeJgcMA" role="2OqNvi">
+                      <node concept="chp4Y" id="3MUZSeJgcMC" role="2Zo12j">
+                        <ref role="cht4Q" to="5rf1:BOR0Mn7r_$" resolve="SysMLv2ConnectionDefinitionRef" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3fqX7Q" id="3MUZSeJgcMD" role="3K4GZi">
+                <node concept="2OqwBi" id="3MUZSeJgcMF" role="3fr31v">
+                  <node concept="2DD5aU" id="3MUZSeJgcMI" role="2Oq$k0" />
+                  <node concept="2Zo12i" id="3MUZSeJgcMJ" role="2OqNvi">
+                    <node concept="chp4Y" id="3MUZSeJgcML" role="2Zo12j">
+                      <ref role="cht4Q" to="5rf1:7JKstLNkRPu" resolve="SysMLv2PartDefinitionRef" />
+                    </node>
+                  </node>
+                </node>
               </node>
             </node>
           </node>

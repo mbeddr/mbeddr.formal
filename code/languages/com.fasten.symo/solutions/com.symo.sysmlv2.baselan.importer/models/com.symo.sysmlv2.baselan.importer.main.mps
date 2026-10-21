@@ -5210,7 +5210,7 @@
                     <ref role="3cqZAo" node="2d_6cEDKaV2" resolve="pu" />
                   </node>
                   <node concept="3TrEf2" id="6coPuU2Noo2" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:6coPuU2Locb" resolve="multiplicity" />
+                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCm" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="6coPuU2Noo3" role="37vLTx">
@@ -5265,7 +5265,7 @@
                     <ref role="3cqZAo" node="2d_6cEDKaV2" resolve="pu" />
                   </node>
                   <node concept="3TrEf2" id="2d_6cEDKaWB" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:7JKstLNkRQf" resolve="type" />
+                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCn" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="2d_6cEDKaWC" role="37vLTx">
@@ -6148,7 +6148,7 @@
                     <ref role="3cqZAo" node="BOR0MnmOCx" resolve="cu" />
                   </node>
                   <node concept="3TrEf2" id="BOR0MnmOSz" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_H" />
+                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCn" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="BOR0MnmOS$" role="37vLTx">
@@ -17496,7 +17496,7 @@
                     <ref role="3cqZAo" node="3MUZSeGbVUM" resolve="cu" />
                   </node>
                   <node concept="3TrEf2" id="3MUZSeGbVVH" role="2OqNvi">
-                    <ref role="3Tt5mk" to="5rf1:BOR0Mn7r_H" />
+                    <ref role="3Tt5mk" to="5rf1:6coPuU36dCn" />
                   </node>
                 </node>
                 <node concept="37vLTw" id="3MUZSeGbVVI" role="37vLTx">
@@ -17580,7 +17580,7 @@
                   <ref role="3cqZAo" node="3MUZSeG7bSW" resolve="usage" />
                 </node>
                 <node concept="chp4Y" id="3MUZSeGbWpa" role="3oSUPX">
-                  <ref role="cht4Q" to="5rf1:3MUZSeFF9lf" resolve="SysMLv2PartLikeUsage" />
+                  <ref role="cht4Q" to="5rf1:6coPuU36dCd" />
                 </node>
               </node>
               <node concept="3Tsc0h" id="3MUZSeGbWpb" role="2OqNvi">

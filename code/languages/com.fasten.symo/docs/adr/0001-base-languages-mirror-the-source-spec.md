@@ -65,10 +65,13 @@ Chosen option: **faithful base language**.
 
 ### Known deviations (as of 2026-10-20)
 
-* `PartUsage` is not an `ItemUsage` (`PartLikeUsage` extends `Usage` directly). Aligned: `Definition` (new abstract
-  `SysMLv2Definition`) -> `OccurrenceDefinition` -> `ItemDefinition` -> `PartDefinition`, `PortDefinition` and
-  `ActionDefinition`; `AttributeDefinition` extends `Definition`; `ItemUsage`/`PortUsage` are `OccurrenceUsage`s.
-  `MetadataDefinition`/`MetadataUsage` are an `ItemDefinition`/`ItemUsage` (8.3.27); `AttributeUsage` is a plain `Usage` as in the spec.
+* Aligned definition/usage hierarchy: `Definition` -> `OccurrenceDefinition` -> `ItemDefinition` -> `PartDefinition`
+  (`PortDefinition`, `ActionDefinition` under `OccurrenceDefinition`, `AttributeDefinition` under `Definition`);
+  `OccurrenceUsage` -> `ItemUsage` -> `PartUsage` -> `ConnectionUsage` -> `InterfaceUsage` (`PortUsage`,
+  `ActionUsage` under `OccurrenceUsage`); `MetadataDefinition`/`MetadataUsage` are `ItemDefinition`/`ItemUsage`.
+  The usage `type` slot is the single inherited `ItemUsage.type : ItemDefinitionRef`; `PartDefinitionRef` and
+  `ConnectionDefinitionRef` are its subconcepts, and `canBeChild` on `ItemDefinitionRef` decides which one fits under
+  which usage.
 * The connector ends (`source`/`target`) are declared separately on `ConnectionUsage`, `SysMLv2BindingUsage` and
   `SysMLv2FlowUsage` instead of once on a shared `ConnectorAsUsage`; the marker interface `ISysMLv2ConnectorAsUsage`
   records the generalisation.
