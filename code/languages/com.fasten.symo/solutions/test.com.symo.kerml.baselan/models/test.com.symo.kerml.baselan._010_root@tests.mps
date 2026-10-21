@@ -76,6 +76,9 @@
       </concept>
     </language>
     <language id="d9b9b270-2a43-41e3-8b8d-5dcf532d0435" name="com.symo.kerml.baselan">
+      <concept id="8934755281057892373" name="com.symo.kerml.baselan.structure.IKerMLNamespaceMember" flags="ngI" index="21vIy3">
+        <property id="8934755281057892374" name="visibility" index="21vIy0" />
+      </concept>
       <concept id="4376090928993219486" name="com.symo.kerml.baselan.structure.KerMLDocumentation" flags="ng" index="2jMsKt" />
       <concept id="4376090928993219485" name="com.symo.kerml.baselan.structure.KerMLComment" flags="ng" index="2jMsKu">
         <property id="4376090928993219502" name="body" index="2jMsKH" />
@@ -544,6 +547,40 @@
       </node>
       <node concept="2TK7Tu" id="7JYC9rUwzbt" role="3cqZAp">
         <property role="2TTd_B" value="hello" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="7JYC9rUxaNV">
+    <property role="TrG5h" value="_060_Visibility_ChangeKeyword" />
+    <property role="3YCmrE" value="the visibility keyword of a non-public member is an editable enum cell" />
+    <node concept="1qefOq" id="7JYC9rUxaNW" role="25YQCW">
+      <node concept="2jMsK_" id="7JYC9rUxaNY" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="2jMsKu" id="7JYC9rUxaNZ" role="21vIyQ">
+          <property role="2jMsKH" value="note" />
+          <property role="21vIy0" value="5m1$JieKozE/private" />
+          <node concept="LIFWc" id="7JYC9rUxaO0" role="lGtFl">
+            <property role="LIFWd" value="IKMLNMV_property_visibility" />
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="7" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7JYC9rUxaO1" role="25YQFr">
+      <node concept="2jMsK_" id="7JYC9rUxaO3" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="2jMsKu" id="7JYC9rUxaO4" role="21vIyQ">
+          <property role="2jMsKH" value="note" />
+          <property role="21vIy0" value="4MTYePSPNWV/protected" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="7JYC9rUxaO5" role="LjaKd">
+      <node concept="2TK7Tu" id="7JYC9rUxaO6" role="3cqZAp">
+        <property role="2TTd_B" value="protected" />
       </node>
     </node>
   </node>
