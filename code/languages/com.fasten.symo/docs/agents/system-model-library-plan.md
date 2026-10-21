@@ -60,6 +60,30 @@ Milestones: M1 = steps 1-3 (Attributes.sysml + all import headers), M2 = 4-8, M3
 - Working mode: vertical slices, one library file at a time (start: `Base.kerml`, 94 lines), each validated by importing a
   real file. Effort (order of magnitude): Phases 1-3 ~12-15 increments, Phase 4 ~4-5, Phase 5 ~3-4, Phase 6 ~8-12.
 
-## Current uncommitted state
-Modules `com.symo.kerml.baselan` and `test.com.symo.kerml.baselan` created (dependencies wired: language -> com.mpsbasics.core,
-test solution -> language); baselan `.mpl` accessory-model entry and the empty `system_model_library` model are the user's.
+## Status (2026-10-22) and how to continue
+**Done and committed** (latest commit `4217ab7e`; SysML alignments 1-4 are done, see `TODO.md`):
+- Modules: `com.symo.kerml.baselan` (+ `test.com.symo.kerml.baselan`, `com.symo.kerml.baselan.importer`, `test.com.symo.kerml.baselan.importer`,
+  `com.symo.kerml.baselan.sandbox`); registered in `com.fasten.meta.architecture`.
+- Structure: `KerMLElement` (INamedConcept, `declaredShortName`), `KerMLRelationship`, `KerMLNamespace` (`ownedMember : IKerMLNamespaceMember`),
+  `KerMLPackage` / `KerMLLibraryPackage` (both rootable), `KerMLImport` (`NamespaceImport`, `MembershipImport` -> `importedElement`),
+  `KerMLAnnotatingElement` (`ownedAnnotatingRelationship`), `KerMLAnnotation`, `KerMLComment`, `KerMLDocumentation`, `KerMLTextualRepresentation`,
+  `IKerMLNamespaceMember` (property `visibility`), enum `KerMLVisibilityKind`.
+- Behavior (`KerMLElement`: owner, owningNamespace, ownedElement, documentation; `KerMLNamespace`: ownedImport, ownedMemberElement;
+  `KerMLDocumentation`: documentedElement). No constraints aspect needed (typed containment).
+- Editors: package, library package, import (`import X::*` / `import X`), comment, doc, rep; visibility keyword shown only when not public, set in the Inspector.
+- Tests (`test.com.symo.kerml.baselan._010_root@tests`): `_010_RootLayer` (5), `_030_Package_TypeNestedPackage`, `_040_Comment_TypeComment`,
+  `_050_Documentation_TypeDoc`, `_060_Visibility_ChangeKeyword`. Each root needs its own run configuration (create with `create_run_configuration` on the
+  root node; they disappear after a rebuild). Demo models: `com.symo.kerml.baselan.sandbox._010_KerML_Demo` (`Vehicles` library, `Fleet` package).
+
+**Working rules agreed with the user (also in memory)**: small increments, wait for the user's cross-check before committing (commit only on "commit");
+every new test is mutation-checked; model checking must be green (annotate expected errors, point rule references at the exact rule); constraint logic stays
+in the constraints aspect; reuse existing style classes (`com.mpsbasics.core.editor`); never read/edit raw `.mps`; tool argument shapes and MCP-only authoring recipes are in
+the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.md` (no helper scripts).
+
+**Next steps, in order**
+1. Name resolution for KerML: scopes for `NamespaceImport.importedNamespace`, `MembershipImport.importedElement`, `Annotation.annotatedElement`; qualified-name
+   display (`Vehicles::Parts::Drivetrain`) in the import editors; derived `member`/`membership`/`qualifiedName`/`shortName` views with visibility.
+   Remaining Root-layer editor gaps: optional short name `<...>`, `comment about`, multi-line comment bodies, `isStandard` for `standard library package`.
+2. Core layer (Type, Classifier, Feature, Specialization family) as explicit typed child links (same principle as the Root layer), then Kernel layer slices.
+3. Vertical slice `Base.kerml` end to end, then the KerML importer (grammar from `bnf/KerML-textual-bnf.kebnf`) in `com.symo.kerml.baselan.importer`.
+4. Part A items for SysML (library package, visibility/abstract, qualified names, subsetting/redefinition, `ref`, ...), then re-layer SysML on KerML (Phase 6).

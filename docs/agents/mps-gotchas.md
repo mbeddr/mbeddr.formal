@@ -9,6 +9,37 @@ stays centralized even though project-local `docs/adr/` and `docs/agents/TODO.md
 knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-project-specific-knowledge-in-project-directories.md)
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
+Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
+[mps-mcp-recipes.md](mps-mcp-recipes.md).
+
+## Testing, tooling and editor traps found while building the KerML base language (2026-10-22)
+
+- **A model reference is not a root.** `check_root_node_problems` on a *model* returns "no problems found" without checking anything — check every root.
+  It also does not report an unresolved *mandatory reference* (e.g. `UnknownRuleReference.declaration`) and it lists nodes carrying `has (constraints) error`
+  as errors, so "tool shows only the expected errors" is the green state for such test roots; check the IDE for anything else.
+- **`UnknownRuleReference.declaration` is mandatory** (cardinality 1, any node): point it at the exact rule expected to be violated — the
+  `ConstraintFunction_CanBeAChild` / `ConstraintFunction_PropertyValidator` node. An empty `errorRef` generates a plain error check instead of
+  `NodeUnknownRuleCheck` + the implicit `ErrorMessagesCheck` (which is what makes unannotated nodes assert "no unexpected errors").
+  Replacing a function node (`SET CHILD` with `childJson`) gives it a new id, so such references must be re-set afterwards.
+- **A test that has never failed proves nothing**: change one expected value (or flip the rule), rebuild, confirm the failure, restore. Done for every new test.
+- **Constraint tests need illegal nodes** and those show up as model-check errors; to keep models green test the *effect* (typed containment links) or
+  keep the illegal nodes annotated with `has constraints error`. Constraint/`canBe*` logic stays in the constraints aspect; only long code moves to behavior.
+- **Run configurations vanish after `rebuild:true`** of a test module, and `create_run_configuration` needs a root node reference.
+- **Editor tests**: cell ids of hand-built editor cells are generated (`<Abbr>_property_<name>`, `Constant_<hash>_a`) — read them from
+  `source_gen/.../<Editor>.java` (`setCellId`), there is no `cellId` property on `CellModel_Property`. Empty list roles use `empty_<role>`.
+  A concept needs a `conceptAlias` to be creatable by typing in a list; the root test case needs `AnonymousCellAnnotation` only on the *before* node.
+- **Editors**: `CellModel_RefNode` is for single cardinality only (`0..n` needs `CellModel_RefNodeList`); a `renderingCondition` (`QueryFunction_NodeCondition`) on a
+  plain cell is fine for "show keyword only when non-default"; compare enum values with `node.prop.name` (`EnumMember_NameOperation`) — building an enum
+  member literal by JSON is awkward. A hidden-by-default keyword needs another way to set it (Inspector cell via `inspectedCellModel`).
+- **Behavior/smodel**: `node.a.b` on a link *list* is not allowed (use `.selectMany({it => it.b})`); `x as C` is `SNodeTypeCastExpression` with `asCast=true` and is
+  null-safe; the smodel `ConceptMethodCall` is deprecated — use `jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall`; there is no `AssertNull`
+  (use `AssertTrue(x == null)`); `GetSizeOperation` is `.size()`.
+- **Moving or deleting structure**: delete every dependent aspect root (tests, editors, constraints, behavior) first, then change the structure, then rebuild the
+  dependents — otherwise dangling references. `UPDATE_CONCEPT_*` without a target deletes the link/property.
+- **MPS can block MCP calls silently**: a modal IDE dialog (e.g. "add files to git") makes `create_module` / `module_dependency` time out; check the IDE before retrying.
+- **Editor tests fail en masse with `UncleanTestExecutionException` / "Container 'ProjectImpl … services' was disposed"** (thrown from the mbeddr documentation plugin) after
+  many rebuilds in one session — restart MPS; it is not a data or model problem.
+- **Module folder / registration**: new modules appear in `.mps/modules.xml` and must also be registered by hand in `com.fasten.meta.architecture` (repo_admin project).
 
 ## Moving a link declaration orphans stored children — but they stay addressable by node id (2026-10-21)
 
