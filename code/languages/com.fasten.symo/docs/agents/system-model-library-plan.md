@@ -181,6 +181,30 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    (package bodies admit SysML members only), and run on the KerML KEBNF alone it leaves rules undefined. Result: compiles with ANTLR 4.13.2 without warnings; all 94 `*.kerml` files of the release (libraries + examples,
    ~8,000 lines) parse with 0 syntax errors (error reporting verified with a deliberately broken file). Wiring: root `settings.gradle` includes `kerml-grammar`; `./gradlew :kerml-grammar:copyToMps` fills the solution's `lib/` (jars committed, as for SysML); `.msd` has the `java_classes` model root + facet libraries (model root added by editing the .msd, no MCP tool covers model roots). Next: the visitor/reifier for the
    `Base` + `ScalarValues` slice (C3).
+2l. Phase C3 (importer for the `Base` + `ScalarValues` slice) — **done (uncommitted)**: `KerMLImporter.importFiles(Map<fileName, text>, SModel)` in `com.symo.kerml.baselan.importer.main`
+   (BaseLanguage classes inserted with `parse_java_and_insert`). Pass one, `KerMLImporterVisitor extends KerMLBaseVisitor<SNode>`, builds all nodes of all files and records every cross reference as a pending
+   (node, link, qualified name); pass two resolves them through the language's own scopes (`ModelConstraints.getReferenceDescriptor(node, link).getScope().resolve(...)`), so declarations and files may refer to each
+   other in any order and nothing about name resolution is duplicated. `KerMLNodes` creates nodes and sets features by concept/feature *name* (no id per construct). Unsupported constructs are not dropped:
+   `visitChildren` throws `Unsupported KerML construct: <rule>` for any rule without a visit method; unresolved references and syntax errors are reported with the offending text. Supported: root namespace members,
+   (library) package, membership import (visibility, `all`, `**`), documentation (delimiters and leading `*` stripped), classifier/datatype (abstract, `specializes`), feature (direction, derived, abstract,
+   composite/portion, var/const, typing, subsetting, redefinition, multiplicity, ordered, nonunique, `chains`), stand-alone `multiplicity` range, short/quoted names, member visibility. **No language change was needed**;
+   `MultiplicitySubset` is not used by either file and stays unsupported.
+   Text generation (language aspect `com.symo.kerml.baselan.textGen`, 31 `ConceptTextGenDeclaration`s, one per concrete concept, plus the helper class `KerMLTextGenUtil`): the textual notation of every model
+   element, so imported models are checked by a round trip text → model → text like for sysmlv2.baselan. Canonical form: two-space indentation, one member per line, every reference written fully qualified
+   (`Base::Anything`; a chain writes the first element qualified and the rest as plain names, `Base::things.that`), bounds before the specializations (`feature f [2..*] ordered nonunique : T :> g`), `doc`
+   and `comment` as `doc` + a `/* ... */` block with ` * ` on each line, imports with an explicit visibility (the grammar requires one), empty type bodies as `;`. Root concepts (package, library package,
+   namespace, type, classifier, datatype, feature, multiplicity) are file units (`.kerml`, ends with a newline). Not written: names that need quoting are quoted but keywords used as names are not.
+   Tests (`test.com.symo.kerml.baselan.importer._010_import@tests`, multi-line inputs like the sysmlv2 importer tests): `_010` structure round trips (flags, direction, multiplicity, visibility, short and
+   quoted name, doc/locale), `_020` references (either file order, qualified/inherited; unresolved, unsupported and syntax error reported), `_030` the real `Base.kerml` + `ScalarValues.kerml` written in canonical
+   form (derived by hand from the source and compared) and the canonical text imported again gives the same text, `_040` an imported tree compared with a `TestNode` fixture (`AssertNodeEquals`), `_050` the text
+   of the whole sandbox model (which uses constructs the importer does not read: comment, `about`, namespace import, `=`/`default`, `inverse of`, `featured by`, `=>`, `::>`, `end`, chains) parses without
+   syntax errors. Mutation-checked: nonunique, doc star, import keyword and `multiplicity` keyword in the text generation; nonunique, doc strip, resolution pass in the importer; changed fixture. Model
+   checking green. The imported libraries land in `_990_Witness@tests` for inspection.
+   Findings: (a) the grammar (and the spec) only accepts a `type` with a specialization or conjugation part, so a bare `type X;` that the editor allows is valid abstract syntax but not concrete syntax; `_050`
+   reads bare types as classifiers. (b) Holding a read action while waiting for `TextGeneratorEngine`'s future deadlocks every other test (see mps-gotchas). Open: (1) the two library files are embedded
+   verbatim in test `_030` — they are EPL-2.0 (SysML-v2-Release `LICENSE`, README), keep the notice with them; (2) `SLanguage.getConcepts()` (used by `KerMLNodes`) is deprecated for removal;
+   (3) untested importer branches: comma-separated typings/subsettings/redefinitions, `all` on imports; (4) the importer does not yet read comment, `rep`, namespace import, feature values, inverting,
+   featuring, `::>`, `=>`, `end` features — the text generation already writes them; (5) next: C4 (importing more of the Kernel libraries) or phase D.
 2. Core layer (Type, Classifier, Feature, Specialization family) as explicit typed child links (same principle as the Root layer), then Kernel layer slices.
 3. Vertical slice `Base.kerml` end to end, then the KerML importer (grammar from `bnf/KerML-textual-bnf.kebnf`) in `com.symo.kerml.baselan.importer`.
 4. Part A items for SysML (library package, visibility/abstract, qualified names, subsetting/redefinition, `ref`, ...), then re-layer SysML on KerML (Phase 6).

@@ -14,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.fasten.symo.hw.sandbox/com.fasten.symo.hw.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.kerml.baselan.importer/com.symo.kerml.baselan.importer.msd" folder="sysmlv2" />
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.kerml.baselan.sandbox/com.symo.kerml.baselan.sandbox.msd" folder="sysmlv2" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.symo.kerml.baselan.stdLib/com.symo.kerml.baselan.stdLib.msd" folder="sysmlv2" />
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.mermaid.sandbox/com.symo.mermaid.sandbox.msd" folder="mermaid" />
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.plantuml.lib/com.symo.plantuml.lib.msd" folder="plantuml" />
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.plantuml.sandbox/com.symo.plantuml.sandbox.msd" folder="plantuml" />

@@ -15,6 +15,20 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 
 
 
+## Writing a Java-API importer through `parse_java_and_insert`: stub-model resolution, short concept names, missing JDK methods (2026-10-22)
+- `mps_mcp_model_dependency ADD` with a plain `pkg@java_stub` name binds to *whichever* module provides that package first — for `org.antlr.v4.runtime` it picked the copy inside another solution
+  (`com.symo.sysmlv2.baselan.importer`), for `com.intellij.openapi.application` the `MPS.IDEA.testFramework` copy, for `jetbrains.mps.smodel` the `MPS.Workbench` one. The parse then reports unresolved classes
+  even though the import "exists". Inspect with `get_project_structure` (`includeDependencies`) and pass the full ref (`<moduleUuid>/java:<pkg>(<module>/)`) to DELETE the wrong and ADD the right one, then `alter_nodes
+  FIX_REFERENCES` on the class.
+- `parse_java_and_insert` in `replace`/`child` mode with a `contextNodeRef` does **not** see the class's imports: write fully qualified type names in the snippet, otherwise the result is full of
+  `UnknownInstanceMethodCall`. Replacing a method gives it a new node id, so every caller dangles until `FIX_REFERENCES` on the class. The call also echoes a detached `Unknown…Call` root for an expression replace;
+  the model itself is fine — print the owning root to confirm.
+- The MPS JDK stub misses newer methods (`List.of`): the call becomes an `UnknownDotCall` and generation fails with "No textgen for UnknownDotCall". Use `Arrays.asList`/`ArrayList`.
+- `SAbstractConcept.getName()` is the **short** name; the qualified one is `getQualifiedName()`. Looking concepts up by `endsWith("." + name)` finds nothing. `SLanguage.getConcepts()` works but is deprecated for removal.
+- Never wait for `TextGeneratorEngine.generateText(model)`'s future while holding a read action: a pending write (dispose, save, VCS) makes the engine's worker threads wait for the lock the test thread
+  holds, and `get(30, SECONDS)` runs into the timeout on every other test. Start the generation inside the read action, call `get` outside it.
+- A `NodesTestCase` with `accessMode none` may not read a model outside a read action; do the reading in a helper that wraps `model.getRepository().getModelAccess().runReadAction(...)`.
+
 ## An editor `CellModel_Alternation` hides the cells from the grammar-cells substitute menu; give the concept a `conceptAlias` instead
 
 To show one concept in two forms (inline `[1..2]` when it sits in a type's `multiplicity` slot, `multiplicity name [1..2] { }` when it is a namespace member), the editor root became a
