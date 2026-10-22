@@ -15,6 +15,15 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 
 
 
+## Inherited-member scopes: resolving a redefinition must not depend on redefinitions; ScopesTest cannot tell lexical from qualified; override calls need the base method (2026-10-22)
+- A scope that removes redefined features needs the `general` of the owner's own `Redefinition`s — which are resolved through the very scope being built. Give the scope builders a
+  `removeRedefined` flag and use `false` for the specialization/redefinition references themselves (`:>> power` also has to *see* the redefined feature), `true` everywhere else.
+- A `ScopesTest` checks the available elements, which for a namespace-based scope also contain `Sub::member` entries; so an inherited member that is reachable by qualification from inside the
+  type is in the set even when the lexical (simple-name) lookup is broken. Assert simple-name resolution separately (`type.lexicalScopeR(kind, null, flag).resolve(type, "name")` in a `SimpleNodeTest`).
+- A test (or any other model code) must call the base declaration of an overridden behavior method; a reference to the override reports "out of search scope", and a reference left unresolved by the blueprint
+  inserter (`null/null`) makes dependent expressions fail with unrelated errors (`not available here`). Bind such references by `r:` id after printing.
+- `TestNodeAnnotation`s added in a blueprint are lost when the same node's `children` list is replaced afterwards; build `smodelAttribute` last.
+
 ## A concept that is both a `ScopeProvider` (Namespace) and holds a reference needs its own `getScope` — and null-safe overloads (2026-10-22)
 
 The checker/`ScopesTest` resolve an existing reference via the reference node itself first (`getScope(kind, link=null, index)` -> `getScope(kind, null)`), only then via its parents. A

@@ -304,6 +304,22 @@
         <ref role="20jlma" node="7JYC9rVjirU" resolve="Engine" />
       </node>
     </node>
+    <node concept="20Nsyr" id="7JYC9rWlLNz" role="21vIyQ">
+      <property role="TrG5h" value="BigDiesel" />
+      <node concept="20Nsyo" id="7JYC9rWlLN$" role="214t28">
+        <ref role="214t29" node="7JYC9rVjirV" resolve="DieselEngine" />
+      </node>
+      <node concept="20GSug" id="7JYC9rWlLN_" role="21vIyQ">
+        <property role="20tdI4" value="true" />
+        <property role="TrG5h" value="capacity" />
+        <node concept="20GSuu" id="7JYC9rWlLNA" role="214t28">
+          <ref role="214t29" node="7JYC9rVyBqr" resolve="power" />
+        </node>
+      </node>
+      <node concept="2jMsKu" id="7JYC9rWlLNB" role="21vIyQ">
+        <property role="2jMsKH" value="power is inherited from Engine through DieselEngine and found by its simple name" />
+      </node>
+    </node>
   </node>
   <node concept="2jMsK$" id="7JYC9rVcQvT">
     <property role="TrG5h" value="Units" />
