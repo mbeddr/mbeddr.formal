@@ -121,5 +121,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7JYC9rV$ZXY">
+    <property role="TrG5h" value="KerMLReferenceSubsetting_Constraints" />
+    <ref role="1M2myG" to="rb60:7JYC9rVyBuG" resolve="KerMLReferenceSubsetting" />
+    <node concept="1N5Pfh" id="7JYC9rV$ZXZ" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <node concept="1dDu$B" id="7JYC9rV$ZY0" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" />
+      </node>
+    </node>
+  </node>
 </model>
 

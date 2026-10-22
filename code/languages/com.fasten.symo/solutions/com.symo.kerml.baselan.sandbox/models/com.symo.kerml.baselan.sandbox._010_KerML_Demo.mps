@@ -7,10 +7,21 @@
   <imports />
   <registry>
     <language id="d9b9b270-2a43-41e3-8b8d-5dcf532d0435" name="com.symo.kerml.baselan">
+      <concept id="8934755281075337132" name="com.symo.kerml.baselan.structure.KerMLReferenceSubsetting" flags="ng" index="20tdsU" />
+      <concept id="8934755281075337131" name="com.symo.kerml.baselan.structure.KerMLMultiplicityRange" flags="ng" index="20tdsX">
+        <child id="8934755281075337134" name="lowerBound" index="20tdsS" />
+        <child id="8934755281075337135" name="upperBound" index="20tdsT" />
+      </concept>
+      <concept id="8934755281075337128" name="com.symo.kerml.baselan.structure.KerMLLiteralInteger" flags="ng" index="20tdsY">
+        <property id="8934755281075337133" name="value" index="20tdsV" />
+      </concept>
+      <concept id="8934755281075337129" name="com.symo.kerml.baselan.structure.KerMLLiteralInfinity" flags="ng" index="20tdsZ" />
       <concept id="8934755281071938690" name="com.symo.kerml.baselan.structure.KerMLFeatureDirection" flags="ng" index="20E3Kk">
         <property id="8934755281071938691" name="kind" index="20E3Kl" />
       </concept>
       <concept id="8934755281071318790" name="com.symo.kerml.baselan.structure.KerMLFeature" flags="ng" index="20GSug">
+        <property id="8934755281075338002" name="isUnique" index="20tdI4" />
+        <property id="8934755281075338001" name="isOrdered" index="20tdI7" />
         <property id="8934755281071318797" name="isDerived" index="20GSur" />
         <child id="8934755281071938701" name="direction" index="20E3Kr" />
       </concept>
@@ -22,6 +33,7 @@
       <concept id="8934755281069631501" name="com.symo.kerml.baselan.structure.KerMLClassifier" flags="ng" index="20Nsyr" />
       <concept id="8934755281065177114" name="com.symo.kerml.baselan.structure.KerMLType" flags="ng" index="214t2c">
         <property id="8934755281065177116" name="isAbstract" index="214t2a" />
+        <child id="8934755281075338003" name="multiplicity" index="20tdI5" />
         <child id="8934755281065177118" name="ownedSpecialization" index="214t28" />
       </concept>
       <concept id="8934755281065177115" name="com.symo.kerml.baselan.structure.KerMLSpecialization" flags="ng" index="214t2d">
@@ -197,6 +209,39 @@
         <property role="20GSur" value="true" />
         <property role="TrG5h" value="peak" />
         <node concept="20GSuu" id="7JYC9rVyBqv" role="214t28">
+          <ref role="214t29" node="7JYC9rVyBqr" resolve="power" />
+        </node>
+      </node>
+      <node concept="20GSug" id="7JYC9rVGS4F" role="21vIyQ">
+        <property role="20tdI4" value="true" />
+        <property role="TrG5h" value="cylinders" />
+        <node concept="20tdsX" id="7JYC9rVGS4G" role="20tdI5">
+          <property role="20tdI4" value="true" />
+          <node concept="20tdsY" id="7JYC9rVGS4I" role="20tdsS">
+            <property role="20tdI4" value="true" />
+            <property role="20tdsV" value="1" />
+          </node>
+          <node concept="20tdsY" id="7JYC9rVGS4J" role="20tdsT">
+            <property role="20tdI4" value="true" />
+            <property role="20tdsV" value="8" />
+          </node>
+        </node>
+      </node>
+      <node concept="20GSug" id="7JYC9rVGS4K" role="21vIyQ">
+        <property role="20tdI4" value="true" />
+        <property role="TrG5h" value="plugs" />
+        <property role="20tdI7" value="true" />
+        <node concept="20tdsX" id="7JYC9rVGS4L" role="20tdI5">
+          <property role="20tdI4" value="true" />
+          <node concept="20tdsZ" id="7JYC9rVGS4N" role="20tdsT">
+            <property role="20tdI4" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="20GSug" id="7JYC9rVGS4O" role="21vIyQ">
+        <property role="20tdI4" value="true" />
+        <property role="TrG5h" value="main" />
+        <node concept="20tdsU" id="7JYC9rVGS4P" role="214t28">
           <ref role="214t29" node="7JYC9rVyBqr" resolve="power" />
         </node>
       </node>

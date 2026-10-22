@@ -312,6 +312,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7JYC9rUVR0r" resolve="KerMLSpecialization" />
     </node>
+    <node concept="1TJgyj" id="7JYC9rVyBuS" role="1TKVEi">
+      <property role="IQ2ns" value="8934755281075338003" />
+      <property role="20kJfa" value="multiplicity" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="TrG5h" value="multiplicity" />
+      <ref role="20lvS9" node="7JYC9rVyBuE" resolve="KerMLMultiplicity" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JYC9rUVR0r">
     <property role="EcuMT" value="8934755281065177115" />
@@ -411,6 +418,16 @@
       <property role="TrG5h" value="direction" />
       <ref role="20lvS9" node="7JYC9rVlDM2" resolve="KerMLFeatureDirection" />
     </node>
+    <node concept="1TJgyi" id="7JYC9rVyBuM" role="1TKVEl">
+      <property role="IQ2nx" value="8934755281075338001" />
+      <property role="TrG5h" value="isOrdered" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7JYC9rVyBuP" role="1TKVEl">
+      <property role="IQ2nx" value="8934755281075338002" />
+      <property role="TrG5h" value="isUnique" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JYC9rVjis7">
     <property role="EcuMT" value="8934755281071318791" />
@@ -443,6 +460,65 @@
       <property role="TrG5h" value="kind" />
       <ref role="AX2Wp" node="7JYC9rVjirZ" resolve="KerMLFeatureDirectionKind" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVyBuB">
+    <property role="EcuMT" value="8934755281075337127" />
+    <property role="TrG5h" value="KerMLExpression" />
+    <property role="R4oN_" value="A Step that computes a result (KerML 8.3.4.8); only literals exist so far" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="7JYC9rVjis6" resolve="KerMLFeature" />
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVyBuC">
+    <property role="EcuMT" value="8934755281075337128" />
+    <property role="TrG5h" value="KerMLLiteralInteger" />
+    <property role="34LRSv" value="integer" />
+    <property role="R4oN_" value="Integer literal (KerML 8.3.4.8)" />
+    <ref role="1TJDcQ" node="7JYC9rVyBuB" resolve="KerMLExpression" />
+    <node concept="1TJgyi" id="7JYC9rVyBuH" role="1TKVEl">
+      <property role="IQ2nx" value="8934755281075337133" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVyBuD">
+    <property role="EcuMT" value="8934755281075337129" />
+    <property role="TrG5h" value="KerMLLiteralInfinity" />
+    <property role="34LRSv" value="*" />
+    <property role="R4oN_" value="The unbounded value * (KerML 8.3.4.8)" />
+    <ref role="1TJDcQ" node="7JYC9rVyBuB" resolve="KerMLExpression" />
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVyBuE">
+    <property role="EcuMT" value="8934755281075337130" />
+    <property role="TrG5h" value="KerMLMultiplicity" />
+    <property role="R4oN_" value="A feature that specifies the cardinality of its owning type (KerML 8.3.4.11)" />
+    <property role="R5$K7" value="true" />
+    <ref role="1TJDcQ" node="7JYC9rVjis6" resolve="KerMLFeature" />
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVyBuF">
+    <property role="EcuMT" value="8934755281075337131" />
+    <property role="TrG5h" value="KerMLMultiplicityRange" />
+    <property role="R4oN_" value="Multiplicity given by lower and upper bound expressions (KerML 8.3.4.11.2)" />
+    <ref role="1TJDcQ" node="7JYC9rVyBuE" resolve="KerMLMultiplicity" />
+    <node concept="1TJgyj" id="7JYC9rVyBuI" role="1TKVEi">
+      <property role="IQ2ns" value="8934755281075337134" />
+      <property role="20kJfa" value="lowerBound" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="7JYC9rVyBuB" resolve="KerMLExpression" />
+    </node>
+    <node concept="1TJgyj" id="7JYC9rVyBuJ" role="1TKVEi">
+      <property role="IQ2ns" value="8934755281075337135" />
+      <property role="20kJfa" value="upperBound" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7JYC9rVyBuB" resolve="KerMLExpression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVyBuG">
+    <property role="EcuMT" value="8934755281075337132" />
+    <property role="TrG5h" value="KerMLReferenceSubsetting" />
+    <property role="34LRSv" value="::&gt;" />
+    <property role="R4oN_" value="Subsetting that identifies a referenced feature (KerML 8.3.3.3.9)" />
+    <ref role="1TJDcQ" node="7JYC9rVjis8" resolve="KerMLSubsetting" />
   </node>
 </model>
 
