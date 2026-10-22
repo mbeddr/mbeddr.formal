@@ -85,7 +85,11 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    `contains` overridden) wrapped around the chain-safe `lexicalScope` (`localMembers`/`importedMembers`/`shadowing`/`outerLexicalScope`/`rootScope`); the three reference constraints
    (`importedNamespace`, `importedElement`, `annotatedElement`) are `scope inherited` (kind = KerMLNamespace / KerMLElement); `KerMLElement.qualifiedName()`; import editors show qualified
    names via `ref. presentation`. Tests `_020_QualifiedName`, `_070_NameResolution` (its fixture also imports the nested `Units::Engine`; the model checker guards that constraint link).
-   Still open: visibility filtering of imported members (only public ones), recursive imports (`isRecursive`), `isImportAll`, import-cycle handling, a test for the `annotatedElement`
+   Visibility — **done (uncommitted)**: `IKerMLNamespaceMember.isPublic()`; imports bring only public members unless `isImportAll`; qualified access `A::x` sees all members from inside `A`
+   (viewer is a descendant) and only public ones (plus imports) from outside (`KerMLNamespace.memberScopeFor`). Test `_080_Visibility`. The sandbox `Fleet` import of the private
+   `Vehicles::Parts::Drivetrain` is now `isImportAll = true` (the editor has no `import all` cell yet — needs a `FlagCell` / grammar cell).
+   Still open: protected visibility (specializations), re-exported imports (an import's own `visibility`), nested namespaces behind a private namespace still listed in available elements,
+   recursive imports (`isRecursive`), import-cycle handling, a test for the `annotatedElement`
    constraint and an editor test for the import display, `@Nullable` on `getAvailableElements(prefix)`; derived `member`/`membership`/`shortName` views with visibility.
    Remaining Root-layer editor gaps: optional short name `<...>`, `comment about`, multi-line comment bodies, `isStandard` for `standard library package`.
 2. Core layer (Type, Classifier, Feature, Specialization family) as explicit typed child links (same principle as the Root layer), then Kernel layer slices.

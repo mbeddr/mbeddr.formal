@@ -22,6 +22,9 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 - **If the provider's scope must differ at the outermost request (e.g. a qualified-name wrapper), do not return the wrapper from a method the `parent scope` chain also uses.** Split:
   `getScope` returns `wrapper(lexicalScope(...))`, while `lexicalScope` (internal, chain-safe) calls the enclosing provider's `lexicalScope` directly (`this.ancestor<concept = NS>`) instead of
   `parent scope`; otherwise every level wraps again (descendants in every `getAvailableElements`, wrong name shadowing).
+- **Behavior/smodel: an `||` nested in an `&&` needs an explicit `ParenthesizedExpression`** in the AST (the checker reports "Bad priority of operations" otherwise).
+- **Mutation-checking two properties at once can mask one of them** (flipping a fixture element to public made `import all` irrelevant, so its test could not fail): mutate one cause per
+  rebuild when the tests share a fixture.
 - **A custom `Scope` (anonymous `DelegatingScope`) that changes `resolve`/`getAvailableElements` must also override `contains`.** The model checker's "reference is out of search scope"
   asks `Scope.contains(target)`, which a delegating scope answers from the *inner* scope only — a qualified target (`A::B::C`) then fails the check although `resolve` finds it.
   Only the model checker reports it (tests that call `resolve` stay green) — pin it with a test that asserts `scope.contains(...)`.

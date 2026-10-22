@@ -14,6 +14,9 @@
       <concept id="4376090928993219485" name="com.symo.kerml.baselan.structure.KerMLComment" flags="ng" index="2jMsKu">
         <property id="4376090928993219502" name="body" index="2jMsKH" />
       </concept>
+      <concept id="4376090928993219491" name="com.symo.kerml.baselan.structure.KerMLImport" flags="ng" index="2jMsKw">
+        <property id="4376090928993219511" name="isImportAll" index="2jMsKO" />
+      </concept>
       <concept id="4376090928993219488" name="com.symo.kerml.baselan.structure.KerMLNamespace" flags="ng" index="2jMsKz">
         <child id="8934755281057892384" name="ownedMember" index="21vIyQ" />
       </concept>
@@ -66,6 +69,7 @@
       <ref role="2jMsKU" node="7JYC9rUwUUl" resolve="Vehicles" />
     </node>
     <node concept="2jMsKA" id="7JYC9rUwUUw" role="21vIyQ">
+      <property role="2jMsKO" value="true" />
       <ref role="21vIyb" node="7JYC9rUwUUp" resolve="Drivetrain" />
     </node>
     <node concept="2jMsK_" id="7JYC9rUwUUx" role="21vIyQ">
