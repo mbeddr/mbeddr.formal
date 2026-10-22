@@ -145,9 +145,8 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    `IKerMLNamespaceMember.isPrivate()`. Test `_260`: exact `ScopesTest` for Redefinition/Subsetting/FeatureReferenceExpression in a subclassifier (private excluded, protected/transitive/own included),
    behavior asserts for `inheritedMember` (with/without removal, cycle terminates) and name resolution through `lexicalScopeR(...).resolve` (the only test that tells the lexical path from the qualified
    `Sub::prot` path); all four ingredients mutation-checked (inherited dropped, private filter inverted, redefinition removal disabled, cycle guard removed -> StackOverflow). Sandbox: `BigDiesel` subsets
-   `power` by its simple name, inherited through `DieselEngine` from `Engine` (editors still show qualified names for specialization targets). Known gaps: imports of a supertype are not inherited
-   (only its owned members), protected is treated like public for subtypes but is not hidden from non-subtypes' qualified access beyond "public only", inherited members hidden by redefinition in a
-   different supertype branch (diamond) are not removed, FeatureChaining/Inverting and CrossSubsetting are still open (next).
+   `power` by its simple name, inherited through `DieselEngine` from `Engine` (editors still show qualified names for specialization targets). Known gaps: protected is treated like "non-private" for subtypes (a subtype does not see `Base::prot` by qualified name), inherited members hidden by redefinition in a
+   different supertype branch (diamond) are not removed (imports of a supertype are inherited since 2i) (FeatureChaining/Inverting and CrossSubsetting followed in 2g and 2h).
 2g. Core layer, slice B5a (FeatureChaining) — **done (uncommitted)**: `KerMLFeatureChaining` (relationship, `chainingFeature : KerMLFeature`, owned by `KerMLFeature.ownedFeatureChaining [0..n]`), spec
    syntax `chains a . b . c` as an optional cell on the feature editor (`.` separated list), derived `KerMLFeature.chainingFeatures()`. FeatureChaining is its own `ScopeProvider`: the first step
    resolves like a feature specialization (owner's lexical scope, qualified names allowed), every later step resolves among the *public* members of the previous chaining feature
@@ -161,6 +160,12 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    feature's own body, reachable as `dst::inner` from inside, so the scope provider choice is not separable by a scope test); mutation-checked by narrowing the `kind` of both constraints.
    Sandbox: `Pairing` (`follower inverse of leader`, `end leaderEnd => leader`). Not done: `inverse of` with a feature chain (`a.b`), the CrossSubsetting well-formedness rules (only for end features,
    cross feature typing), the `=>`/`inverse of` substitute-menu picks are not editor-tested.
+2i. Core layer, optional follow-ups after B5 — **done (uncommitted)**: (a) `recursive` flag cell on both import editors (`import all recursive X::*`; recorded deviation from the spec's `::**`, because a
+   flag cell cannot swap `::*` for `::**`), editor test `_290`; (b) inverted flag cell `nonunique` for `isUnique` on the feature editor, reached after the `ordered` flag (typing it directly after the name
+   goes into the name), editor test `_300`, sandbox `plugs [*] ordered nonunique`; (c) the non-private imports of supertypes are inherited too (`KerMLType.inheritedMember` adds
+   `importedMemberOf(t.ownedImport() minus private)`), test `_310` (public inherited, private not, both as `inheritedMember` and as simple-name resolution). All three mutation-checked (flag cells
+   neutralised, import union removed, import filter inverted). Still open: protected visibility by qualified name for subtypes, the default import visibility decision, editor tests for the
+   substitute-menu picks (`:>`, `:>>`, `::>`, `=>`, `chains`, `inverse of`, `featured by`, `default`, `:=`), diamond redefinitions.
 2. Core layer (Type, Classifier, Feature, Specialization family) as explicit typed child links (same principle as the Root layer), then Kernel layer slices.
 3. Vertical slice `Base.kerml` end to end, then the KerML importer (grammar from `bnf/KerML-textual-bnf.kebnf`) in `com.symo.kerml.baselan.importer`.
 4. Part A items for SysML (library package, visibility/abstract, qualified names, subsetting/redefinition, `ref`, ...), then re-layer SysML on KerML (Phase 6).

@@ -128,6 +128,7 @@
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
+        <property id="5304871968609388228" name="inverted" index="2UvnoQ" />
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
       </concept>
     </language>
@@ -318,6 +319,11 @@
         <ref role="1NtTu8" to="rb60:3MUZSeJsNeR" resolve="isImportAll" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" />
       </node>
+      <node concept="1kHk_G" id="7JYC9rWPp$H" role="3EZMnx">
+        <property role="ZjSer" value="recursive" />
+        <ref role="1NtTu8" to="rb60:3MUZSeJsNeS" resolve="isRecursive" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="1iCGBv" id="7JYC9rUwWv4" role="3EZMnx">
         <ref role="1NtTu8" to="rb60:3MUZSeJsNeT" />
         <node concept="1sVBvm" id="7JYC9rUymgh" role="1sWHZn">
@@ -367,6 +373,11 @@
       <node concept="1kHk_G" id="7JYC9rUI886" role="3EZMnx">
         <property role="ZjSer" value="all" />
         <ref role="1NtTu8" to="rb60:3MUZSeJsNeR" resolve="isImportAll" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="7JYC9rWPp_$" role="3EZMnx">
+        <property role="ZjSer" value="recursive" />
+        <ref role="1NtTu8" to="rb60:3MUZSeJsNeS" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="1iCGBv" id="7JYC9rUwWvj" role="3EZMnx">
@@ -1036,6 +1047,12 @@
       <node concept="1kHk_G" id="7JYC9rV$ZY8" role="3EZMnx">
         <property role="ZjSer" value="ordered" />
         <ref role="1NtTu8" to="rb60:7JYC9rVyBuM" resolve="isOrdered" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="7JYC9rWPp_B" role="3EZMnx">
+        <property role="ZjSer" value="nonunique" />
+        <property role="2UvnoQ" value="true" />
+        <ref role="1NtTu8" to="rb60:7JYC9rVyBuP" resolve="isUnique" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F2HdR" id="7JYC9rVjjhe" role="3EZMnx">
