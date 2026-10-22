@@ -111,6 +111,10 @@
       </concept>
     </language>
     <language id="d9b9b270-2a43-41e3-8b8d-5dcf532d0435" name="com.symo.kerml.baselan">
+      <concept id="8934755281071318790" name="com.symo.kerml.baselan.structure.KerMLFeature" flags="ng" index="20GSug" />
+      <concept id="8934755281071318791" name="com.symo.kerml.baselan.structure.KerMLFeatureTyping" flags="ng" index="20GSuh" />
+      <concept id="8934755281071318792" name="com.symo.kerml.baselan.structure.KerMLSubsetting" flags="ng" index="20GSuu" />
+      <concept id="8934755281071318793" name="com.symo.kerml.baselan.structure.KerMLRedefinition" flags="ng" index="20GSuv" />
       <concept id="8934755281069631502" name="com.symo.kerml.baselan.structure.KerMLSubclassification" flags="ng" index="20Nsyo" />
       <concept id="8934755281069631503" name="com.symo.kerml.baselan.structure.KerMLDataType" flags="ng" index="20Nsyp" />
       <concept id="8934755281069631501" name="com.symo.kerml.baselan.structure.KerMLClassifier" flags="ng" index="20Nsyr" />
@@ -2746,6 +2750,159 @@
         <property role="2TTd_B" value="datatype" />
       </node>
       <node concept="2TK7Tu" id="7JYC9rVj6Zx" role="3cqZAp">
+        <property role="2TTd_B" value="T" />
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7JYC9rVlD$C">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_220_FeatureSpecializations" />
+    <node concept="1qefOq" id="7JYC9rVlD$D" role="1SKRRt">
+      <node concept="2jMsK_" id="7JYC9rVlD$F" role="1qenE9">
+        <property role="TrG5h" value="Lib" />
+        <node concept="20Nsyr" id="7JYC9rVlD$G" role="21vIyQ">
+          <property role="TrG5h" value="C" />
+          <node concept="3xLA65" id="7JYC9rVlD$H" role="lGtFl">
+            <property role="TrG5h" value="c" />
+          </node>
+        </node>
+        <node concept="20GSug" id="7JYC9rVlD$I" role="21vIyQ">
+          <property role="TrG5h" value="f" />
+          <node concept="20GSuh" id="7JYC9rVlD$J" role="214t28">
+            <ref role="214t29" node="7JYC9rVlD$G" resolve="C" />
+            <node concept="2rqxmr" id="7JYC9rVlD$K" role="lGtFl">
+              <ref role="1BTHP0" node="7JYC9rVlD$G" />
+              <node concept="3KTrbX" id="7JYC9rVlD$L" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVlD$G" />
+              </node>
+              <node concept="3KTrbX" id="7JYC9rVlD$M" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVlD$I" resolve="f" />
+              </node>
+              <node concept="3KTrbX" id="7JYC9rVlD$N" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVlD$S" resolve="g" />
+              </node>
+              <node concept="3KTrbX" id="7JYC9rVlD$O" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVlD$Q" resolve="h" />
+              </node>
+            </node>
+          </node>
+          <node concept="3xLA65" id="7JYC9rVlD$P" role="lGtFl">
+            <property role="TrG5h" value="base" />
+          </node>
+        </node>
+        <node concept="20GSug" id="7JYC9rVlD$Q" role="21vIyQ">
+          <property role="TrG5h" value="h" />
+          <node concept="3xLA65" id="7JYC9rVlD$R" role="lGtFl">
+            <property role="TrG5h" value="other" />
+          </node>
+        </node>
+        <node concept="20GSug" id="7JYC9rVlD$S" role="21vIyQ">
+          <property role="TrG5h" value="g" />
+          <node concept="20GSuu" id="7JYC9rVlD$T" role="214t28">
+            <ref role="214t29" node="7JYC9rVlD$I" resolve="f" />
+            <node concept="2rqxmr" id="7JYC9rVlD$U" role="lGtFl">
+              <ref role="1BTHP0" node="7JYC9rVlD$I" />
+              <node concept="3KTrbX" id="7JYC9rVlD$V" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVlD$I" resolve="f" />
+              </node>
+              <node concept="3KTrbX" id="7JYC9rVlD$W" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVlD$S" resolve="g" />
+              </node>
+              <node concept="3KTrbX" id="7JYC9rVlD$X" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVlD$Q" resolve="h" />
+              </node>
+            </node>
+          </node>
+          <node concept="20GSuv" id="7JYC9rVlD$Y" role="214t28">
+            <ref role="214t29" node="7JYC9rVlD$Q" resolve="h" />
+            <node concept="2rqxmr" id="7JYC9rVlD$Z" role="lGtFl">
+              <ref role="1BTHP0" node="7JYC9rVlD$Q" />
+              <node concept="3KTrbX" id="7JYC9rVlD_0" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVlD$I" resolve="f" />
+              </node>
+              <node concept="3KTrbX" id="7JYC9rVlD_1" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVlD$S" resolve="g" />
+              </node>
+              <node concept="3KTrbX" id="7JYC9rVlD_2" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVlD$Q" resolve="h" />
+              </node>
+            </node>
+          </node>
+          <node concept="3xLA65" id="7JYC9rVlD_3" role="lGtFl">
+            <property role="TrG5h" value="sub" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="7JYC9rVlD_4" role="1SL9yI">
+      <property role="TrG5h" value="testSupertypesAreTheGeneralsOfOwnedSpecializations" />
+      <node concept="3cqZAl" id="7JYC9rVlD_7" role="3clF45" />
+      <node concept="3clFbS" id="7JYC9rVlD_8" role="3clF47">
+        <node concept="3vwNmj" id="7JYC9rVlD_9" role="3cqZAp">
+          <node concept="2OqwBi" id="7JYC9rVlD_b" role="3vwVQn">
+            <node concept="2OqwBi" id="7JYC9rVlD_e" role="2Oq$k0">
+              <node concept="3xONca" id="7JYC9rVlD_h" role="2Oq$k0">
+                <ref role="3xOPvv" node="7JYC9rVlD_3" resolve="sub" />
+              </node>
+              <node concept="3zqWPK" id="7JYC9rVlD_i" role="2OqNvi">
+                <ref role="37wK5l" to="efol:7JYC9rUVREa" resolve="supertypes" />
+              </node>
+            </node>
+            <node concept="3JPx81" id="7JYC9rVlD_j" role="2OqNvi">
+              <node concept="3xONca" id="7JYC9rVlD_l" role="25WWJ7">
+                <ref role="3xOPvv" node="7JYC9rVlD$R" resolve="other" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3vwNmj" id="7JYC9rVlD_m" role="3cqZAp">
+          <node concept="2OqwBi" id="7JYC9rVlD_o" role="3vwVQn">
+            <node concept="2OqwBi" id="7JYC9rVlD_r" role="2Oq$k0">
+              <node concept="3xONca" id="7JYC9rVlD_u" role="2Oq$k0">
+                <ref role="3xOPvv" node="7JYC9rVlD_3" resolve="sub" />
+              </node>
+              <node concept="3zqWPK" id="7JYC9rVlD_v" role="2OqNvi">
+                <ref role="37wK5l" to="efol:7JYC9rUVREa" resolve="supertypes" />
+              </node>
+            </node>
+            <node concept="3JPx81" id="7JYC9rVlD_w" role="2OqNvi">
+              <node concept="3xONca" id="7JYC9rVlD_y" role="25WWJ7">
+                <ref role="3xOPvv" node="7JYC9rVlD$P" resolve="base" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="7JYC9rVvlKE">
+    <property role="3YCmrE" value="typing 'feature' in a package body creates a feature that can be named directly" />
+    <property role="TrG5h" value="_230_Feature_TypeFeature" />
+    <node concept="1qefOq" id="7JYC9rVvlKF" role="25YQCW">
+      <node concept="2jMsK_" id="7JYC9rVvlKH" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="LIFWc" id="7JYC9rVvlKI" role="lGtFl">
+          <property role="LIFWd" value="empty_ownedMember" />
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7JYC9rVvlKJ" role="25YQFr">
+      <node concept="2jMsK_" id="7JYC9rVvlKL" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="20GSug" id="7JYC9rVvlKM" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="7JYC9rVvlKO" role="LjaKd">
+      <node concept="2TK7Tu" id="7JYC9rVvlKP" role="3cqZAp">
+        <property role="2TTd_B" value="feature" />
+      </node>
+      <node concept="2TK7Tu" id="7JYC9rVvlKQ" role="3cqZAp">
         <property role="2TTd_B" value="T" />
       </node>
     </node>

@@ -7,6 +7,16 @@
   <imports />
   <registry>
     <language id="d9b9b270-2a43-41e3-8b8d-5dcf532d0435" name="com.symo.kerml.baselan">
+      <concept id="8934755281071938690" name="com.symo.kerml.baselan.structure.KerMLFeatureDirection" flags="ng" index="20E3Kk">
+        <property id="8934755281071938691" name="kind" index="20E3Kl" />
+      </concept>
+      <concept id="8934755281071318790" name="com.symo.kerml.baselan.structure.KerMLFeature" flags="ng" index="20GSug">
+        <property id="8934755281071318797" name="isDerived" index="20GSur" />
+        <child id="8934755281071938701" name="direction" index="20E3Kr" />
+      </concept>
+      <concept id="8934755281071318791" name="com.symo.kerml.baselan.structure.KerMLFeatureTyping" flags="ng" index="20GSuh" />
+      <concept id="8934755281071318792" name="com.symo.kerml.baselan.structure.KerMLSubsetting" flags="ng" index="20GSuu" />
+      <concept id="8934755281071318793" name="com.symo.kerml.baselan.structure.KerMLRedefinition" flags="ng" index="20GSuv" />
       <concept id="8934755281069631502" name="com.symo.kerml.baselan.structure.KerMLSubclassification" flags="ng" index="20Nsyo" />
       <concept id="8934755281069631503" name="com.symo.kerml.baselan.structure.KerMLDataType" flags="ng" index="20Nsyp" />
       <concept id="8934755281069631501" name="com.symo.kerml.baselan.structure.KerMLClassifier" flags="ng" index="20Nsyr" />
@@ -174,11 +184,33 @@
     <node concept="20Nsyr" id="7JYC9rVjirU" role="21vIyQ">
       <property role="214t2a" value="true" />
       <property role="TrG5h" value="Engine" />
+      <node concept="20GSug" id="7JYC9rVyBqr" role="21vIyQ">
+        <property role="TrG5h" value="power" />
+        <node concept="20E3Kk" id="7JYC9rVyBqs" role="20E3Kr">
+          <property role="20E3Kl" value="oMGGNbPUfd/out" />
+        </node>
+        <node concept="20GSuh" id="7JYC9rVyBqt" role="214t28">
+          <ref role="214t29" node="7JYC9rVjirT" resolve="Quantity" />
+        </node>
+      </node>
+      <node concept="20GSug" id="7JYC9rVyBqu" role="21vIyQ">
+        <property role="20GSur" value="true" />
+        <property role="TrG5h" value="peak" />
+        <node concept="20GSuu" id="7JYC9rVyBqv" role="214t28">
+          <ref role="214t29" node="7JYC9rVyBqr" resolve="power" />
+        </node>
+      </node>
     </node>
     <node concept="20Nsyr" id="7JYC9rVjirV" role="21vIyQ">
       <property role="TrG5h" value="DieselEngine" />
       <node concept="20Nsyo" id="7JYC9rVjirW" role="214t28">
         <ref role="214t29" node="7JYC9rVjirU" resolve="Engine" />
+      </node>
+      <node concept="20GSug" id="7JYC9rVyBtL" role="21vIyQ">
+        <property role="TrG5h" value="rated" />
+        <node concept="20GSuv" id="7JYC9rVyBtM" role="214t28">
+          <ref role="214t29" node="7JYC9rVyBqr" resolve="power" />
+        </node>
       </node>
     </node>
     <node concept="20Nsyp" id="7JYC9rVjirX" role="21vIyQ">

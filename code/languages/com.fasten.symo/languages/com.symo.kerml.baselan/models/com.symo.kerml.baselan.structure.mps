@@ -349,5 +349,100 @@
     <property role="R4oN_" value="A Classifier of things distinguished only by their relations (KerML 8.3.4.1)" />
     <ref role="1TJDcQ" node="7JYC9rVcQwd" resolve="KerMLClassifier" />
   </node>
+  <node concept="25R3W" id="7JYC9rVjirZ">
+    <property role="3F6X1D" value="8934755281071318783" />
+    <property role="TrG5h" value="KerMLFeatureDirectionKind" />
+    <node concept="25R33" id="7JYC9rVjis1" role="25R1y">
+      <property role="3tVfz5" value="2533888566605120659" />
+      <property role="TrG5h" value="in" />
+      <property role="1L1pqM" value="in" />
+    </node>
+    <node concept="25R33" id="7JYC9rVjis2" role="25R1y">
+      <property role="3tVfz5" value="446615905726079949" />
+      <property role="TrG5h" value="out" />
+      <property role="1L1pqM" value="out" />
+    </node>
+    <node concept="25R33" id="7JYC9rVjis3" role="25R1y">
+      <property role="3tVfz5" value="3924878855104209967" />
+      <property role="TrG5h" value="inout" />
+      <property role="1L1pqM" value="inout" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVjis6">
+    <property role="EcuMT" value="8934755281071318790" />
+    <property role="TrG5h" value="KerMLFeature" />
+    <property role="34LRSv" value="feature" />
+    <property role="R4oN_" value="A Type that classifies relations between things (KerML 8.3.3.3)" />
+    <ref role="1TJDcQ" node="7JYC9rUVR0q" resolve="KerMLType" />
+    <node concept="1TJgyi" id="7JYC9rVjisb" role="1TKVEl">
+      <property role="IQ2nx" value="8934755281071318795" />
+      <property role="TrG5h" value="isComposite" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7JYC9rVjisc" role="1TKVEl">
+      <property role="IQ2nx" value="8934755281071318796" />
+      <property role="TrG5h" value="isPortion" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7JYC9rVjisd" role="1TKVEl">
+      <property role="IQ2nx" value="8934755281071318797" />
+      <property role="TrG5h" value="isDerived" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7JYC9rVjise" role="1TKVEl">
+      <property role="IQ2nx" value="8934755281071318798" />
+      <property role="TrG5h" value="isEnd" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7JYC9rVjisf" role="1TKVEl">
+      <property role="IQ2nx" value="8934755281071318799" />
+      <property role="TrG5h" value="isVariable" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7JYC9rVjisg" role="1TKVEl">
+      <property role="IQ2nx" value="8934755281071318800" />
+      <property role="TrG5h" value="isConstant" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="7JYC9rVwaDp" role="1TKVEi">
+      <property role="IQ2ns" value="8934755281071938701" />
+      <property role="20kJfa" value="direction" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="TrG5h" value="direction" />
+      <ref role="20lvS9" node="7JYC9rVlDM2" resolve="KerMLFeatureDirection" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVjis7">
+    <property role="EcuMT" value="8934755281071318791" />
+    <property role="TrG5h" value="KerMLFeatureTyping" />
+    <property role="34LRSv" value=":" />
+    <property role="R4oN_" value="Specialization of a feature by the type that types it (KerML 8.3.3.3.7)" />
+    <ref role="1TJDcQ" node="7JYC9rUVR0r" resolve="KerMLSpecialization" />
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVjis8">
+    <property role="EcuMT" value="8934755281071318792" />
+    <property role="TrG5h" value="KerMLSubsetting" />
+    <property role="34LRSv" value=":&gt;" />
+    <property role="R4oN_" value="Specialization between two features (KerML 8.3.3.3.10)" />
+    <ref role="1TJDcQ" node="7JYC9rUVR0r" resolve="KerMLSpecialization" />
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVjis9">
+    <property role="EcuMT" value="8934755281071318793" />
+    <property role="TrG5h" value="KerMLRedefinition" />
+    <property role="34LRSv" value=":&gt;&gt;" />
+    <property role="R4oN_" value="Subsetting that replaces the redefined feature (KerML 8.3.3.3.8)" />
+    <ref role="1TJDcQ" node="7JYC9rVjis8" resolve="KerMLSubsetting" />
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVlDM2">
+    <property role="EcuMT" value="8934755281071938690" />
+    <property role="TrG5h" value="KerMLFeatureDirection" />
+    <property role="R4oN_" value="The direction (in / out / inout) of a feature; wraps FeatureDirectionKind so that 'no direction' is representable (same as sysmlv2.baselan)" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="7JYC9rVlDM3" role="1TKVEl">
+      <property role="IQ2nx" value="8934755281071938691" />
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="7JYC9rVjirZ" resolve="KerMLFeatureDirectionKind" />
+    </node>
+  </node>
 </model>
 

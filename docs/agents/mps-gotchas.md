@@ -13,6 +13,17 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
 
+
+## Structure edits: 0..1 is "no `sourceCardinality`"; `UPDATE_CONCEPT_CHILD` recreates the link (2026-10-22)
+
+- A `LinkDeclaration` blueprint with `sourceCardinality` `fLJekj4/_0__1` is *not* 0..1 — it came out as cardinality `1` (mandatory), so every new node got an auto-created child. The
+  optional single child (0..1) is a link with **no `sourceCardinality` property**; `fLJekj5/_0__n` is 0..n.
+- `mps_mcp_alter_structure UPDATE_CONCEPT_CHILD` deletes and re-creates the link declaration (new node id); editor cells (`CellModel_RefNode`, ...) that referenced the old one are left
+  broken and the next MAKE fails with "broken reference 'link' ... LinkRefQualifier". Re-point them (`SET REFERENCE` on `relationDeclaration`) or avoid the operation and set the
+  property via `update_node`.
+- An enum property cannot be "unset": the checker reports "Empty enumeration property" for every node that leaves it empty (and the enum has no `none` member). For an optional enum
+  attribute use an optional wrapper child (`OptionalCell` over a `CellModel_RefNode`) holding the enum, as sysmlv2.baselan does for `direction`.
+
 ## A `CellModel_RefNodeList` creates the link's declared concept — give it a `nodeFactory` to create a subconcept (2026-10-22)
 
 A containment list typed with a concrete concept (KerML `ownedSpecialization : KerMLSpecialization`) adds *that* concept on Enter, even where the owner needs a subconcept

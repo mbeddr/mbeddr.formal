@@ -91,5 +91,35 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7JYC9rVjjfU">
+    <property role="TrG5h" value="KerMLFeatureTyping_Constraints" />
+    <ref role="1M2myG" to="rb60:7JYC9rVjis7" resolve="KerMLFeatureTyping" />
+    <node concept="1N5Pfh" id="7JYC9rVjjfV" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <node concept="1dDu$B" id="7JYC9rVjjfW" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7JYC9rVjjfZ">
+    <property role="TrG5h" value="KerMLSubsetting_Constraints" />
+    <ref role="1M2myG" to="rb60:7JYC9rVjis8" resolve="KerMLSubsetting" />
+    <node concept="1N5Pfh" id="7JYC9rVjjg0" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <node concept="1dDu$B" id="7JYC9rVjjg1" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7JYC9rVjjg4">
+    <property role="TrG5h" value="KerMLRedefinition_Constraints" />
+    <ref role="1M2myG" to="rb60:7JYC9rVjis9" resolve="KerMLRedefinition" />
+    <node concept="1N5Pfh" id="7JYC9rVjjg5" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <node concept="1dDu$B" id="7JYC9rVjjg6" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" />
+      </node>
+    </node>
+  </node>
 </model>
 
