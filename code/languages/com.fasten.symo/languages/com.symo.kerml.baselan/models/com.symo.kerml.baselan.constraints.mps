@@ -131,5 +131,25 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7JYC9rVJuj4">
+    <property role="TrG5h" value="KerMLTypeFeaturing_Constraints" />
+    <ref role="1M2myG" to="rb60:7JYC9rVGZkn" resolve="KerMLTypeFeaturing" />
+    <node concept="1N5Pfh" id="7JYC9rVJuj5" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:7JYC9rVGZks" />
+      <node concept="1dDu$B" id="7JYC9rVJuj6" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7JYC9rVJuj9">
+    <property role="TrG5h" value="KerMLFeatureReferenceExpression_Constraints" />
+    <ref role="1M2myG" to="rb60:7JYC9rVGZkr" resolve="KerMLFeatureReferenceExpression" />
+    <node concept="1N5Pfh" id="7JYC9rVJuja" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:7JYC9rVGZky" />
+      <node concept="1dDu$B" id="7JYC9rVJujb" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" />
+      </node>
+    </node>
+  </node>
 </model>
 

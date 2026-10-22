@@ -115,6 +115,15 @@
       <concept id="8064396509828172209" name="jetbrains.mps.baseLanguage.structure.UnaryMinus" flags="nn" index="1ZRNhn" />
     </language>
     <language id="d9b9b270-2a43-41e3-8b8d-5dcf532d0435" name="com.symo.kerml.baselan">
+      <concept id="8934755281078056215" name="com.symo.kerml.baselan.structure.KerMLTypeFeaturing" flags="ng" index="20jlm1">
+        <reference id="8934755281078056220" name="featuringType" index="20jlma" />
+      </concept>
+      <concept id="8934755281078056219" name="com.symo.kerml.baselan.structure.KerMLFeatureReferenceExpression" flags="ng" index="20jlmd">
+        <reference id="8934755281078056226" name="referent" index="20jlmO" />
+      </concept>
+      <concept id="8934755281078056216" name="com.symo.kerml.baselan.structure.KerMLFeatureValue" flags="ng" index="20jlme">
+        <child id="8934755281078056223" name="value" index="20jlm9" />
+      </concept>
       <concept id="8934755281075337132" name="com.symo.kerml.baselan.structure.KerMLReferenceSubsetting" flags="ng" index="20tdsU" />
       <concept id="8934755281075337131" name="com.symo.kerml.baselan.structure.KerMLMultiplicityRange" flags="ng" index="20tdsX">
         <child id="8934755281075337134" name="lowerBound" index="20tdsS" />
@@ -126,6 +135,8 @@
       <concept id="8934755281075337129" name="com.symo.kerml.baselan.structure.KerMLLiteralInfinity" flags="ng" index="20tdsZ" />
       <concept id="8934755281071318790" name="com.symo.kerml.baselan.structure.KerMLFeature" flags="ng" index="20GSug">
         <property id="8934755281075338002" name="isUnique" index="20tdI4" />
+        <child id="8934755281078060002" name="valuation" index="20iEdO" />
+        <child id="8934755281078060001" name="ownedTypeFeaturing" index="20iEdR" />
       </concept>
       <concept id="8934755281071318791" name="com.symo.kerml.baselan.structure.KerMLFeatureTyping" flags="ng" index="20GSuh" />
       <concept id="8934755281071318792" name="com.symo.kerml.baselan.structure.KerMLSubsetting" flags="ng" index="20GSuu" />
@@ -3144,6 +3155,81 @@
               <node concept="3cmrfG" id="7JYC9rVBtJM" role="37wK5m">
                 <property role="3cmrfH" value="3" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7JYC9rVM3IZ">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_250_TypeFeaturingAndValue" />
+    <node concept="1qefOq" id="7JYC9rVM3J0" role="1SKRRt">
+      <node concept="2jMsK_" id="7JYC9rVM3J2" role="1qenE9">
+        <property role="TrG5h" value="Lib" />
+        <node concept="20Nsyr" id="7JYC9rVM3J3" role="21vIyQ">
+          <property role="TrG5h" value="C" />
+        </node>
+        <node concept="20Nsyr" id="7JYC9rVM3J4" role="21vIyQ">
+          <property role="TrG5h" value="D" />
+        </node>
+        <node concept="2jMsK_" id="7JYC9rVM3J5" role="21vIyQ">
+          <property role="TrG5h" value="P" />
+        </node>
+        <node concept="20GSug" id="7JYC9rVM3J6" role="21vIyQ">
+          <property role="20tdI4" value="true" />
+          <property role="TrG5h" value="f" />
+          <node concept="20jlm1" id="7JYC9rVM3J7" role="20iEdR">
+            <ref role="20jlma" node="7JYC9rVM3J3" resolve="C" />
+            <node concept="2rqxmr" id="7JYC9rVM3J8" role="lGtFl">
+              <ref role="1BTHP0" node="7JYC9rVM3J3" />
+              <node concept="3KTrbX" id="7JYC9rVM3J9" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVM3J3" />
+              </node>
+              <node concept="3KTrbX" id="7JYC9rVM3Ja" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVM3J4" />
+              </node>
+              <node concept="3KTrbX" id="7JYC9rVM3Jb" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVM3J6" />
+              </node>
+              <node concept="3KTrbX" id="7JYC9rVM3Jc" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVM3Je" />
+              </node>
+              <node concept="3KTrbX" id="7JYC9rVM3Jd" role="3KTr4d">
+                <ref role="3AHY9a" node="7JYC9rVM3Jm" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="20GSug" id="7JYC9rVM3Je" role="21vIyQ">
+          <property role="20tdI4" value="true" />
+          <property role="TrG5h" value="g" />
+          <node concept="20jlme" id="7JYC9rVM3Jf" role="20iEdO">
+            <node concept="20jlmd" id="7JYC9rVM3Jh" role="20jlm9">
+              <property role="20tdI4" value="true" />
+              <ref role="20jlmO" node="7JYC9rVM3J6" />
+              <node concept="2rqxmr" id="7JYC9rVM3Ji" role="lGtFl">
+                <ref role="1BTHP0" node="7JYC9rVM3J6" />
+                <node concept="3KTrbX" id="7JYC9rVM3Jj" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rVM3J6" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rVM3Jk" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rVM3Je" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rVM3Jl" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rVM3Jm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="20GSug" id="7JYC9rVM3Jm" role="21vIyQ">
+          <property role="20tdI4" value="true" />
+          <property role="TrG5h" value="h" />
+          <node concept="20jlme" id="7JYC9rVM3Jn" role="20iEdO">
+            <node concept="20tdsY" id="7JYC9rVM3Jp" role="20jlm9">
+              <property role="20tdI4" value="true" />
+              <property role="20tdsV" value="3" />
             </node>
           </node>
         </node>

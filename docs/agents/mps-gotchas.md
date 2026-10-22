@@ -14,6 +14,15 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 
 
 
+
+## A concept that is both a `ScopeProvider` (Namespace) and holds a reference needs its own `getScope` — and null-safe overloads (2026-10-22)
+
+The checker/`ScopesTest` resolve an existing reference via the reference node itself first (`getScope(kind, link=null, index)` -> `getScope(kind, null)`), only then via its parents. A
+reference-holding node that is also a Namespace (KerML `FeatureReferenceExpression` is a Feature) therefore answers with *its own* (empty) members unless it overrides `getScope(kind, child)` and
+delegates to its owner's scope. If a superconcept overrides the 3-arg `getScope(kind, link, index)` (`KerMLType`), that override must tolerate `link == null` — otherwise the error shows up only as
+"can't create search scope for link ..." in the model checker, while direct `Scope.getScope(...)` calls in unit tests pass. Also: the platform filters scope elements by the *target concept of the
+reference link*, so mutation-checking a constraint's `kind` by **widening** it changes nothing when the link target is already narrower; **narrow** it instead.
+
 ## Structure edits: 0..1 is "no `sourceCardinality`"; `UPDATE_CONCEPT_CHILD` recreates the link (2026-10-22)
 
 - A `LinkDeclaration` blueprint with `sourceCardinality` `fLJekj4/_0__1` is *not* 0..1 — it came out as cardinality `1` (mandatory), so every new node got an auto-created child. The
