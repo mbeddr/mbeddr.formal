@@ -78,6 +78,12 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 - **Behavior bodies via blueprints**: `SingletonSequenceCreator` / `ListCreatorWithInit` (`new singleton<T>(x)`, `new arraylist<T>{}`) must be wrapped in a `GenericNewExpression` (`creator` child);
   short concept names can resolve to the wrong language, so generate blueprints with fully qualified names (harvest them from a printed method's `conceptReference`). For mutually recursive methods insert
   stubs first, then `SET CHILD body` with `r:` references to the stubs. Mutation checks of tests sharing one fixture can mask each other (a mutated import made another mutation's effect invisible) — mutate one cause per method.
+- **`check_root_node_problems` caches per root**: after a *language code* change (behavior/constraints) it can return the previous result until a node of the checked root changes —
+  toggle a harmless property (rename a node and back) before trusting a check; the JUnit run configurations always use freshly built classes. (A canary `return null` in a scope method
+  is a quick way to tell which of the two you are looking at.)
+- **Scope for a reference whose lookup must differ from the parent's** (e.g. a Specialization resolves from the *owner's owner*): MPS asks `Scope.getScope(referenceNode, …)`, i.e. the
+  reference node itself first — make that node a `ScopeProvider` instead of branching on `child` inside the parent's `getScope` (the check path passes `child = null` through the default
+  3-arg `getScope(kind, link, index)`). The blueprint inserter resolves reference *names* by nearest match, not by the language scope — bind such references with an explicit `r:` target.
 - **Module folder / registration**: new modules appear in `.mps/modules.xml` and must also be registered by hand in `com.fasten.meta.architecture` (repo_admin project).
 
 ## Moving a link declaration orphans stored children — but they stay addressable by node id (2026-10-21)
