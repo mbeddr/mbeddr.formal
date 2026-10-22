@@ -7,6 +7,9 @@
   <imports />
   <registry>
     <language id="d9b9b270-2a43-41e3-8b8d-5dcf532d0435" name="com.symo.kerml.baselan">
+      <concept id="8934755281069631502" name="com.symo.kerml.baselan.structure.KerMLSubclassification" flags="ng" index="20Nsyo" />
+      <concept id="8934755281069631503" name="com.symo.kerml.baselan.structure.KerMLDataType" flags="ng" index="20Nsyp" />
+      <concept id="8934755281069631501" name="com.symo.kerml.baselan.structure.KerMLClassifier" flags="ng" index="20Nsyr" />
       <concept id="8934755281065177114" name="com.symo.kerml.baselan.structure.KerMLType" flags="ng" index="214t2c">
         <property id="8934755281065177116" name="isAbstract" index="214t2a" />
         <child id="8934755281065177118" name="ownedSpecialization" index="214t28" />
@@ -168,6 +171,22 @@
         <property role="2jMsKH" value="Fleet re-exports Vehicles (public import) but imports Units privately,&#10;so Units is not visible in this package." />
       </node>
     </node>
+    <node concept="20Nsyr" id="7JYC9rVjirU" role="21vIyQ">
+      <property role="214t2a" value="true" />
+      <property role="TrG5h" value="Engine" />
+    </node>
+    <node concept="20Nsyr" id="7JYC9rVjirV" role="21vIyQ">
+      <property role="TrG5h" value="DieselEngine" />
+      <node concept="20Nsyo" id="7JYC9rVjirW" role="214t28">
+        <ref role="214t29" node="7JYC9rVjirU" resolve="Engine" />
+      </node>
+    </node>
+    <node concept="20Nsyp" id="7JYC9rVjirX" role="21vIyQ">
+      <property role="TrG5h" value="Price" />
+      <node concept="20Nsyo" id="7JYC9rVjirY" role="214t28">
+        <ref role="214t29" node="7JYC9rVjirT" resolve="Quantity" />
+      </node>
+    </node>
   </node>
   <node concept="2jMsK$" id="7JYC9rVcQvT">
     <property role="TrG5h" value="Units" />
@@ -178,6 +197,9 @@
     </node>
     <node concept="214t2c" id="7JYC9rVcQvV" role="21vIyQ">
       <property role="TrG5h" value="Mass" />
+    </node>
+    <node concept="20Nsyp" id="7JYC9rVjirT" role="21vIyQ">
+      <property role="TrG5h" value="Quantity" />
     </node>
   </node>
 </model>

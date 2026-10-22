@@ -329,5 +329,25 @@
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7JYC9rVcQwd">
+    <property role="EcuMT" value="8934755281069631501" />
+    <property role="TrG5h" value="KerMLClassifier" />
+    <property role="34LRSv" value="classifier" />
+    <property role="R4oN_" value="A Type that classifies things (KerML 8.3.3.2)" />
+    <ref role="1TJDcQ" node="7JYC9rUVR0q" resolve="KerMLType" />
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVcQwe">
+    <property role="EcuMT" value="8934755281069631502" />
+    <property role="TrG5h" value="KerMLSubclassification" />
+    <property role="R4oN_" value="Specialization between two Classifiers (KerML 8.3.3.2)" />
+    <ref role="1TJDcQ" node="7JYC9rUVR0r" resolve="KerMLSpecialization" />
+  </node>
+  <node concept="1TIwiD" id="7JYC9rVcQwf">
+    <property role="EcuMT" value="8934755281069631503" />
+    <property role="TrG5h" value="KerMLDataType" />
+    <property role="34LRSv" value="datatype" />
+    <property role="R4oN_" value="A Classifier of things distinguished only by their relations (KerML 8.3.4.1)" />
+    <ref role="1TJDcQ" node="7JYC9rVcQwd" resolve="KerMLClassifier" />
+  </node>
 </model>
 

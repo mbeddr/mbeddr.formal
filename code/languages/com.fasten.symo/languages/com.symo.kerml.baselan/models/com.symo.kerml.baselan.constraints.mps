@@ -81,5 +81,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7JYC9rVcRao">
+    <property role="TrG5h" value="KerMLSubclassification_Constraints" />
+    <ref role="1M2myG" to="rb60:7JYC9rVcQwe" resolve="KerMLSubclassification" />
+    <node concept="1N5Pfh" id="7JYC9rVcRap" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <node concept="1dDu$B" id="7JYC9rVcRaq" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rVcQwd" />
+      </node>
+    </node>
+  </node>
 </model>
 

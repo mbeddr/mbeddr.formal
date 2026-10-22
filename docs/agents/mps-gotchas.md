@@ -12,6 +12,15 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+
+## A `CellModel_RefNodeList` creates the link's declared concept — give it a `nodeFactory` to create a subconcept (2026-10-22)
+
+A containment list typed with a concrete concept (KerML `ownedSpecialization : KerMLSpecialization`) adds *that* concept on Enter, even where the owner needs a subconcept
+(`KerMLSubclassification` in a classifier). Do not chase `canBeChild`/substitute menus: the `RefNodeList` cell has its own `nodeFactory` child (`QueryFunction_NodeFactory`, body
+`return new node<Subconcept>();` = `ReturnStatement` → `GenericNewExpression` → `SNodeCreator` → `SNodeType`), which the editor model already supports (no extra used language needed).
+Related: `ScopesTest` on a node inside a *nested* `NodesTestCase` fixture asserts the exact scope of a reference without the root-visibility noise noted above; put the annotation on
+the referencing node, with `checkingReference` and the expected nodes bound by explicit `r:` refs (the inserter leaves them unresolved otherwise).
+
 ## Scoping traps found while giving the KerML base language namespace scopes (2026-10-22)
 
 - **Idiom (verified 2026-10-22):** a namespace concept implements `ScopeProvider`; reference constraints are plain `scope inherited for <TargetConcept>` (`kind` = the concept the
