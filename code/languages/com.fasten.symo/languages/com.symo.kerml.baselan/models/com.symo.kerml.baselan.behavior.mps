@@ -208,6 +208,9 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
+      </concept>
       <concept id="1196978630214" name="jetbrains.mps.lang.core.structure.IResolveInfo" flags="ngI" index="2Lv6Xg">
         <property id="1196978656277" name="resolveInfo" index="2Lvdk3" />
       </concept>
@@ -2183,6 +2186,26 @@
                 <node concept="24Tkf9" id="7JYC9rUGtjT" role="2OqNvi" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="7JYC9rUNAl9">
+    <property role="TrG5h" value="KerMLComment_Behavior" />
+    <property role="3GE5qa" value="root.annotation" />
+    <ref role="13h7C2" to="rb60:3MUZSeJsNet" resolve="KerMLComment" />
+    <node concept="13hLZK" id="7JYC9rUNAlc" role="13h7CW">
+      <node concept="3clFbS" id="7JYC9rUNAle" role="2VODD2">
+        <node concept="3clFbF" id="7JYC9rUNAlf" role="3cqZAp">
+          <node concept="37vLTI" id="7JYC9rUNAlh" role="3clFbG">
+            <node concept="2OqwBi" id="7JYC9rUNAlk" role="37vLTJ">
+              <node concept="13iPFW" id="7JYC9rUNAln" role="2Oq$k0" />
+              <node concept="3TrcHB" id="7JYC9rUNAlo" role="2OqNvi">
+                <ref role="3TsBF5" to="rb60:3MUZSeJsNeI" resolve="body" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="7JYC9rUNAlp" role="37vLTx" />
           </node>
         </node>
       </node>

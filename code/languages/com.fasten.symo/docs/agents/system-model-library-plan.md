@@ -92,7 +92,10 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    Still open: protected visibility (specializations), re-exported imports (an import's own `visibility`), nested namespaces behind a private namespace still listed in available elements,
    recursive imports (`isRecursive`), import-cycle handling, a test for the `annotatedElement`
    constraint and an editor test for the import display, `@Nullable` on `getAvailableElements(prefix)`; derived `member`/`membership`/`shortName` views with visibility.
-   Remaining Root-layer editor gaps: optional short name `<...>`, `comment about`, multi-line comment bodies, `isStandard` for `standard library package`.
+   Root-layer editor gaps — **done (short name committed, rest uncommitted)**: optional short name `<x>` (shared `KerMLElement_ShortName` component, package + library package; editor test `_100`),
+   `standard` `FlagCell` for `isStandard` (`_110`), `comment about X, Y` (optional cell over `ownedAnnotatingRelationship`, new `KerMLAnnotation_Editor` showing `annotatedElement`; `_120`),
+   multi-line comment body (multiline cell, `KerMLComment` constructor sets `body = ""` so the caret stays; `_130`; `_040` now presses TAB after `comment`, as sysmlv2 does). Not done: short name on
+   other concepts, multi-line `doc`/`rep` bodies, `locale` and a name on comments, an editor test that picks the `about` target.
 2. Core layer (Type, Classifier, Feature, Specialization family) as explicit typed child links (same principle as the Root layer), then Kernel layer slices.
 3. Vertical slice `Base.kerml` end to end, then the KerML importer (grammar from `bnf/KerML-textual-bnf.kebnf`) in `com.symo.kerml.baselan.importer`.
 4. Part A items for SysML (library package, visibility/abstract, qualified names, subsetting/redefinition, `ref`, ...), then re-layer SysML on KerML (Phase 6).

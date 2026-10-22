@@ -9,6 +9,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
+    <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
   </languages>
   <imports>
     <import index="efol" ref="r:8aac8454-5d13-4d6f-9f26-01f728a66f29(com.symo.kerml.baselan.behavior)" />
@@ -18,6 +19,12 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1228934484974" name="jetbrains.mps.lang.test.structure.PressKeyStatement" flags="nn" index="yd1bK">
+        <child id="1228934507814" name="keyStrokes" index="yd6KS" />
+      </concept>
+      <concept id="7011073693661765739" name="jetbrains.mps.lang.test.structure.InvokeActionStatement" flags="nn" index="2HxZob">
+        <child id="1101347953350127927" name="actionReference" index="3iKnsn" />
+      </concept>
       <concept id="1229187653856" name="jetbrains.mps.lang.test.structure.EditorTestCase" flags="lg" index="LiM7Y">
         <property id="1883175908513350760" name="description" index="3YCmrE" />
         <child id="3143335925185262946" name="testNodeBefore" index="25YQCW" />
@@ -34,6 +41,9 @@
       <concept id="1227182079811" name="jetbrains.mps.lang.test.structure.TypeKeyStatement" flags="nn" index="2TK7Tu">
         <property id="1227184461946" name="keys" index="2TTd_B" />
       </concept>
+      <concept id="1101347953350122758" name="jetbrains.mps.lang.test.structure.BootstrapActionReference" flags="ng" index="3iKlGA">
+        <property id="1101347953350127918" name="actionId" index="3iKnse" />
+      </concept>
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
         <child id="1217501822150" name="nodesToCheck" index="1SKRRt" />
@@ -47,6 +57,11 @@
         <reference id="1210674534086" name="declaration" index="3xOPvv" />
       </concept>
       <concept id="1225978065297" name="jetbrains.mps.lang.test.structure.SimpleNodeTest" flags="ng" index="1LZb2c" />
+    </language>
+    <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
+      <concept id="1207318242772" name="jetbrains.mps.lang.plugin.structure.KeyMapKeystroke" flags="ng" index="pLAjd">
+        <property id="1207318242774" name="keycode" index="pLAjf" />
+      </concept>
     </language>
     <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
       <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
@@ -92,6 +107,9 @@
       <concept id="8934755281057892373" name="com.symo.kerml.baselan.structure.IKerMLNamespaceMember" flags="ngI" index="21vIy3">
         <property id="8934755281057892374" name="visibility" index="21vIy0" />
       </concept>
+      <concept id="4376090928993219483" name="com.symo.kerml.baselan.structure.KerMLAnnotatingElement" flags="ng" index="2jMsKo">
+        <child id="8934755281057892387" name="ownedAnnotatingRelationship" index="21vIyP" />
+      </concept>
       <concept id="4376090928993219481" name="com.symo.kerml.baselan.structure.KerMLElement" flags="ng" index="2jMsKq">
         <property id="4376090928993219497" name="declaredShortName" index="2jMsKE" />
       </concept>
@@ -99,11 +117,15 @@
       <concept id="4376090928993219485" name="com.symo.kerml.baselan.structure.KerMLComment" flags="ng" index="2jMsKu">
         <property id="4376090928993219502" name="body" index="2jMsKH" />
       </concept>
+      <concept id="4376090928993219484" name="com.symo.kerml.baselan.structure.KerMLAnnotation" flags="ng" index="2jMsKv" />
       <concept id="4376090928993219491" name="com.symo.kerml.baselan.structure.KerMLImport" flags="ng" index="2jMsKw">
         <property id="4376090928993219511" name="isImportAll" index="2jMsKO" />
       </concept>
       <concept id="4376090928993219488" name="com.symo.kerml.baselan.structure.KerMLNamespace" flags="ng" index="2jMsKz">
         <child id="8934755281057892384" name="ownedMember" index="21vIyQ" />
+      </concept>
+      <concept id="4376090928993219495" name="com.symo.kerml.baselan.structure.KerMLLibraryPackage" flags="ng" index="2jMsK$">
+        <property id="4376090928993219515" name="isStandard" index="2jMsKS" />
       </concept>
       <concept id="4376090928993219494" name="com.symo.kerml.baselan.structure.KerMLPackage" flags="ng" index="2jMsK_" />
       <concept id="4376090928993219493" name="com.symo.kerml.baselan.structure.KerMLMembershipImport" flags="ng" index="2jMsKA" />
@@ -539,6 +561,11 @@
       <node concept="2TK7Tu" id="7JYC9rUwzbg" role="3cqZAp">
         <property role="2TTd_B" value="comment" />
       </node>
+      <node concept="yd1bK" id="7JYC9rUN$gV" role="3cqZAp">
+        <node concept="pLAjd" id="7JYC9rUN$gX" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
       <node concept="2TK7Tu" id="7JYC9rUwzbh" role="3cqZAp">
         <property role="2TTd_B" value="hello" />
       </node>
@@ -586,7 +613,7 @@
           <property role="2jMsKH" value="note" />
           <property role="21vIy0" value="5m1$JieKozE/private" />
           <node concept="LIFWc" id="7JYC9rUxaO0" role="lGtFl">
-            <property role="LIFWd" value="IKMLNMV_property_visibility" />
+            <property role="LIFWd" value="property_visibility" />
             <property role="ZRATv" value="true" />
             <property role="OXtK3" value="true" />
             <property role="p6zMq" value="0" />
@@ -1626,6 +1653,110 @@
     <node concept="3clFbS" id="7JYC9rUMh_L" role="LjaKd">
       <node concept="2TK7Tu" id="7JYC9rUMh_M" role="3cqZAp">
         <property role="2TTd_B" value="&lt;x" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="7JYC9rUNybB">
+    <property role="TrG5h" value="_110_StandardLibrary_TypeStandard" />
+    <property role="3YCmrE" value="typing standard before library package sets isStandard" />
+    <node concept="1qefOq" id="7JYC9rUNybC" role="25YQCW">
+      <node concept="2jMsK$" id="7JYC9rUNybE" role="1qenE9">
+        <property role="TrG5h" value="lib" />
+        <node concept="LIFWc" id="7JYC9rUNybF" role="lGtFl">
+          <property role="LIFWd" value="Constant_51m8k5_c0a" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7JYC9rUNybG" role="25YQFr">
+      <node concept="2jMsK$" id="7JYC9rUNybI" role="1qenE9">
+        <property role="TrG5h" value="lib" />
+        <property role="2jMsKS" value="true" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="7JYC9rUNybJ" role="LjaKd">
+      <node concept="2TK7Tu" id="7JYC9rUNybK" role="3cqZAp">
+        <property role="2TTd_B" value="standard" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="7JYC9rUNybL">
+    <property role="TrG5h" value="_120_Comment_TypeAbout" />
+    <property role="3YCmrE" value="typing about after the comment keyword adds an annotation" />
+    <node concept="1qefOq" id="7JYC9rUONaJ" role="25YQCW">
+      <node concept="2jMsK_" id="7JYC9rUONaL" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="2jMsKu" id="7JYC9rUONaM" role="21vIyQ">
+          <property role="2jMsKH" value="" />
+          <node concept="LIFWc" id="7JYC9rUONaN" role="lGtFl">
+            <property role="LIFWd" value="Constant_ppez6a_b0a" />
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="7" />
+            <property role="p6zMs" value="7" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7JYC9rUONaO" role="25YQFr">
+      <node concept="2jMsK_" id="7JYC9rUONaQ" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="2jMsKu" id="7JYC9rUONaR" role="21vIyQ">
+          <property role="2jMsKH" value="" />
+          <node concept="2jMsKv" id="7JYC9rUORiB" role="21vIyP" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="7JYC9rUONaT" role="LjaKd">
+      <node concept="2TK7Tu" id="7JYC9rUONaU" role="3cqZAp">
+        <property role="2TTd_B" value="about" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="7JYC9rUNybY">
+    <property role="TrG5h" value="_130_Comment_MultiLine" />
+    <property role="3YCmrE" value="a comment body spanning two lines" />
+    <node concept="1qefOq" id="7JYC9rUOL6C" role="25YQCW">
+      <node concept="2jMsK_" id="7JYC9rUOL6E" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="LIFWc" id="7JYC9rUOL6F" role="lGtFl">
+          <property role="LIFWd" value="empty_ownedMember" />
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7JYC9rUOL6G" role="25YQFr">
+      <node concept="2jMsK_" id="7JYC9rUOL6I" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="2jMsKu" id="7JYC9rUOL6J" role="21vIyQ">
+          <property role="2jMsKH" value="hello&#10;world" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="7JYC9rUOL6K" role="LjaKd">
+      <node concept="2TK7Tu" id="7JYC9rUOL6L" role="3cqZAp">
+        <property role="2TTd_B" value="comment" />
+      </node>
+      <node concept="yd1bK" id="7JYC9rUOL6M" role="3cqZAp">
+        <node concept="pLAjd" id="7JYC9rUOL6O" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="7JYC9rUOL6P" role="3cqZAp">
+        <property role="2TTd_B" value="hello" />
+      </node>
+      <node concept="2HxZob" id="7JYC9rUOL6Q" role="3cqZAp">
+        <node concept="3iKlGA" id="7JYC9rUOL6S" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Insert_Action" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="7JYC9rUOL6T" role="3cqZAp">
+        <property role="2TTd_B" value="world" />
       </node>
     </node>
   </node>

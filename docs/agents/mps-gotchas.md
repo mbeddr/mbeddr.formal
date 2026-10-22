@@ -68,6 +68,13 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 - **MPS can block MCP calls silently**: a modal IDE dialog (e.g. "add files to git") makes `create_module` / `module_dependency` time out; check the IDE before retrying.
 - **Editor tests fail en masse with `UncleanTestExecutionException` / "Container 'ProjectImpl … services' was disposed"** (thrown from the mbeddr documentation plugin) after
   many rebuilds in one session — restart MPS; it is not a data or model problem.
+- **Grammar cells (`OptionalCell`, `FlagCell`) change editor behaviour**: the generator then inlines the editor components, so cell ids lose the component prefix
+  (`IKMLNMV_property_visibility` becomes `property_visibility`) — re-read ids from `source_gen/.../<Editor>Builder_a.java` and fix `AnonymousCellAnnotation`s of existing
+  tests. An optional cell is a `SideTransformationSectionCell`: it fires only with the caret at the *end* of the preceding constant (`isLastPosition = true`), never from a property cell.
+- **A multiline cell needs the property initialised (`""`) in a behavior constructor**, otherwise the caret is lost after the first typed character; the editor test then presses
+  TAB after the keyword before typing the body (sysmlv2.baselan precedent).
+- **Cloning a printed test root**: the printed JSON carries a top-level `name` (`<no name>[Concept]` for unnamed nodes) that the inserter turns into a real `name` property —
+  strip it from unnamed nodes before inserting.
 - **Module folder / registration**: new modules appear in `.mps/modules.xml` and must also be registered by hand in `com.fasten.meta.architecture` (repo_admin project).
 
 ## Moving a link declaration orphans stored children — but they stay addressable by node id (2026-10-21)
