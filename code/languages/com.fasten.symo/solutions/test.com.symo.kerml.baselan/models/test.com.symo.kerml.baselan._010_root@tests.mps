@@ -143,6 +143,7 @@
         <property id="8934755281075338002" name="isUnique" index="20tdI4" />
         <child id="8934755281078060002" name="valuation" index="20iEdO" />
         <child id="8934755281078060001" name="ownedTypeFeaturing" index="20iEdR" />
+        <child id="8934755281089561399" name="ownedFeatureChaining" index="27Biex" />
       </concept>
       <concept id="8934755281071318791" name="com.symo.kerml.baselan.structure.KerMLFeatureTyping" flags="ng" index="20GSuh" />
       <concept id="8934755281071318792" name="com.symo.kerml.baselan.structure.KerMLSubsetting" flags="ng" index="20GSuu" />
@@ -159,6 +160,9 @@
       </concept>
       <concept id="8934755281057892373" name="com.symo.kerml.baselan.structure.IKerMLNamespaceMember" flags="ngI" index="21vIy3">
         <property id="8934755281057892374" name="visibility" index="21vIy0" />
+      </concept>
+      <concept id="8934755281089556412" name="com.symo.kerml.baselan.structure.KerMLFeatureChaining" flags="ng" index="27BsWE">
+        <reference id="8934755281089556413" name="chainingFeature" index="27BsWF" />
       </concept>
       <concept id="4376090928993219483" name="com.symo.kerml.baselan.structure.KerMLAnnotatingElement" flags="ng" index="2jMsKo">
         <child id="8934755281057892387" name="ownedAnnotatingRelationship" index="21vIyP" />
@@ -3887,6 +3891,142 @@
             </node>
             <node concept="3xONca" id="7JYC9rW9nBZ" role="3uHU7w">
               <ref role="3xOPvv" node="7JYC9rW5Kqe" resolve="red" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7JYC9rWuV2m">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_270_FeatureChaining" />
+    <node concept="1qefOq" id="7JYC9rWuV2n" role="1SKRRt">
+      <node concept="2jMsK_" id="7JYC9rWuV2p" role="1qenE9">
+        <property role="TrG5h" value="Lib" />
+        <node concept="20Nsyr" id="7JYC9rWuV2q" role="21vIyQ">
+          <property role="TrG5h" value="Engine" />
+          <node concept="20GSug" id="7JYC9rWuV2r" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="power" />
+          </node>
+          <node concept="20GSug" id="7JYC9rWuV2s" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="prot" />
+            <property role="21vIy0" value="4MTYePSPNWV/protected" />
+          </node>
+          <node concept="20GSug" id="7JYC9rWuV2t" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="hidden" />
+            <property role="21vIy0" value="5m1$JieKozE/private" />
+          </node>
+          <node concept="3xLA65" id="7JYC9rWuV2u" role="lGtFl">
+            <property role="TrG5h" value="enginecl" />
+          </node>
+        </node>
+        <node concept="20Nsyr" id="7JYC9rWuV2v" role="21vIyQ">
+          <property role="TrG5h" value="Car" />
+          <node concept="20GSug" id="7JYC9rWuV2w" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="engine" />
+            <node concept="20GSuh" id="7JYC9rWuV2x" role="214t28">
+              <ref role="214t29" node="7JYC9rWuV2q" resolve="Engine" />
+            </node>
+            <node concept="3xLA65" id="7JYC9rWuV2y" role="lGtFl">
+              <property role="TrG5h" value="eng" />
+            </node>
+          </node>
+          <node concept="20GSug" id="7JYC9rWuV2z" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="viaEngine" />
+            <node concept="27BsWE" id="7JYC9rWuV2$" role="27Biex">
+              <ref role="27BsWF" node="7JYC9rWuV2w" resolve="engine" />
+              <node concept="2rqxmr" id="7JYC9rWuV2_" role="lGtFl">
+                <ref role="1BTHP0" node="7JYC9rWuV2w" />
+                <node concept="3KTrbX" id="7JYC9rWuV2A" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWuV2w" resolve="engine" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWuV2B" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWuV2z" resolve="viaEngine" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWuV2C" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWuV2r" resolve="power" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWuV2D" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWuV2K" resolve="viaInherited" />
+                </node>
+              </node>
+            </node>
+            <node concept="27BsWE" id="7JYC9rWuV2E" role="27Biex">
+              <ref role="27BsWF" node="7JYC9rWuV2r" resolve="power" />
+              <node concept="2rqxmr" id="7JYC9rWuV2F" role="lGtFl">
+                <ref role="1BTHP0" node="7JYC9rWuV2r" />
+                <node concept="3KTrbX" id="7JYC9rWuV2G" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWuV2r" resolve="power" />
+                </node>
+              </node>
+            </node>
+            <node concept="3xLA65" id="7JYC9rWuV2H" role="lGtFl">
+              <property role="TrG5h" value="veng" />
+            </node>
+          </node>
+        </node>
+        <node concept="20Nsyr" id="7JYC9rWuV2I" role="21vIyQ">
+          <property role="TrG5h" value="Truck" />
+          <node concept="20Nsyo" id="7JYC9rWuV2J" role="214t28">
+            <ref role="214t29" node="7JYC9rWuV2v" resolve="Car" />
+          </node>
+          <node concept="20GSug" id="7JYC9rWuV2K" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="viaInherited" />
+            <node concept="27BsWE" id="7JYC9rWuV2L" role="27Biex">
+              <ref role="27BsWF" node="7JYC9rWuV2w" resolve="engine" />
+              <node concept="2rqxmr" id="7JYC9rWuV2M" role="lGtFl">
+                <ref role="1BTHP0" node="7JYC9rWuV2w" />
+                <node concept="3KTrbX" id="7JYC9rWuV2N" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWuV2w" resolve="engine" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWuV2O" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWuV2z" resolve="viaEngine" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWuV2P" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWuV2r" resolve="power" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWuV2Q" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWuV2K" resolve="viaInherited" />
+                </node>
+              </node>
+            </node>
+            <node concept="27BsWE" id="7JYC9rWuV2R" role="27Biex">
+              <ref role="27BsWF" node="7JYC9rWuV2r" resolve="power" />
+              <node concept="2rqxmr" id="7JYC9rWuV2S" role="lGtFl">
+                <ref role="1BTHP0" node="7JYC9rWuV2r" />
+                <node concept="3KTrbX" id="7JYC9rWuV2T" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWuV2r" resolve="power" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="7JYC9rWuV2U" role="1SL9yI">
+      <property role="TrG5h" value="testChainingFeaturesAreTheChainedFeatures" />
+      <node concept="3cqZAl" id="7JYC9rWuV2X" role="3clF45" />
+      <node concept="3clFbS" id="7JYC9rWuV2Y" role="3clF47">
+        <node concept="3vwNmj" id="7JYC9rWuV2Z" role="3cqZAp">
+          <node concept="2OqwBi" id="7JYC9rWuV31" role="3vwVQn">
+            <node concept="2OqwBi" id="7JYC9rWuV34" role="2Oq$k0">
+              <node concept="3xONca" id="7JYC9rWuV37" role="2Oq$k0">
+                <ref role="3xOPvv" node="7JYC9rWuV2H" resolve="veng" />
+              </node>
+              <node concept="3zqWPK" id="7JYC9rWuV38" role="2OqNvi">
+                <ref role="37wK5l" to="efol:7JYC9rWoSIX" resolve="chainingFeatures" />
+              </node>
+            </node>
+            <node concept="3JPx81" id="7JYC9rWuV39" role="2OqNvi">
+              <node concept="3xONca" id="7JYC9rWuV3b" role="25WWJ7">
+                <ref role="3xOPvv" node="7JYC9rWuV2y" resolve="eng" />
+              </node>
             </node>
           </node>
         </node>

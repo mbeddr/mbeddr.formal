@@ -443,6 +443,13 @@
       <property role="TrG5h" value="valuation" />
       <ref role="20lvS9" node="7JYC9rVGZko" resolve="KerMLFeatureValue" />
     </node>
+    <node concept="1TJgyj" id="7JYC9rWoScR" role="1TKVEi">
+      <property role="IQ2ns" value="8934755281089561399" />
+      <property role="20kJfa" value="ownedFeatureChaining" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7JYC9rWoQYW" resolve="KerMLFeatureChaining" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JYC9rVjis7">
     <property role="EcuMT" value="8934755281071318791" />
@@ -605,6 +612,22 @@
       <property role="20kJfa" value="referent" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="7JYC9rVjis6" resolve="KerMLFeature" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JYC9rWoQYW">
+    <property role="EcuMT" value="8934755281089556412" />
+    <property role="TrG5h" value="KerMLFeatureChaining" />
+    <property role="R4oN_" value="Makes a feature one step of the chain of another feature (KerML 8.3.3.3.4); the owner is the chained feature" />
+    <property role="3GE5qa" value="core.feature" />
+    <ref role="1TJDcQ" node="3MUZSeJsNeq" resolve="KerMLRelationship" />
+    <node concept="1TJgyj" id="7JYC9rWoQYX" role="1TKVEi">
+      <property role="IQ2ns" value="8934755281089556413" />
+      <property role="20kJfa" value="chainingFeature" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7JYC9rVjis6" resolve="KerMLFeature" />
+    </node>
+    <node concept="PrWs8" id="7JYC9rWoScU" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
 </model>

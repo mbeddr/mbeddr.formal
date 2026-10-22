@@ -36,6 +36,7 @@
         <child id="8934755281078060002" name="valuation" index="20iEdO" />
         <child id="8934755281078060001" name="ownedTypeFeaturing" index="20iEdR" />
         <child id="8934755281071938701" name="direction" index="20E3Kr" />
+        <child id="8934755281089561399" name="ownedFeatureChaining" index="27Biex" />
       </concept>
       <concept id="8934755281071318791" name="com.symo.kerml.baselan.structure.KerMLFeatureTyping" flags="ng" index="20GSuh" />
       <concept id="8934755281071318792" name="com.symo.kerml.baselan.structure.KerMLSubsetting" flags="ng" index="20GSuu" />
@@ -53,6 +54,9 @@
       </concept>
       <concept id="8934755281057892373" name="com.symo.kerml.baselan.structure.IKerMLNamespaceMember" flags="ngI" index="21vIy3">
         <property id="8934755281057892374" name="visibility" index="21vIy0" />
+      </concept>
+      <concept id="8934755281089556412" name="com.symo.kerml.baselan.structure.KerMLFeatureChaining" flags="ng" index="27BsWE">
+        <reference id="8934755281089556413" name="chainingFeature" index="27BsWF" />
       </concept>
       <concept id="4376090928993219483" name="com.symo.kerml.baselan.structure.KerMLAnnotatingElement" flags="ng" index="2jMsKo">
         <child id="8934755281057892387" name="ownedAnnotatingRelationship" index="21vIyP" />
@@ -318,6 +322,26 @@
       </node>
       <node concept="2jMsKu" id="7JYC9rWlLNB" role="21vIyQ">
         <property role="2jMsKH" value="power is inherited from Engine through DieselEngine and found by its simple name" />
+      </node>
+    </node>
+    <node concept="20Nsyr" id="7JYC9rWCky_" role="21vIyQ">
+      <property role="TrG5h" value="Boat" />
+      <node concept="20GSug" id="7JYC9rWCkyA" role="21vIyQ">
+        <property role="20tdI4" value="true" />
+        <property role="TrG5h" value="motor" />
+        <node concept="20GSuh" id="7JYC9rWCkyB" role="214t28">
+          <ref role="214t29" node="7JYC9rVjirU" resolve="Engine" />
+        </node>
+      </node>
+      <node concept="20GSug" id="7JYC9rWCkyC" role="21vIyQ">
+        <property role="20tdI4" value="true" />
+        <property role="TrG5h" value="thrust" />
+        <node concept="27BsWE" id="7JYC9rWCkyD" role="27Biex">
+          <ref role="27BsWF" node="7JYC9rWCkyA" resolve="motor" />
+        </node>
+        <node concept="27BsWE" id="7JYC9rWCkyE" role="27Biex">
+          <ref role="27BsWF" node="7JYC9rVyBqr" resolve="power" />
+        </node>
       </node>
     </node>
   </node>

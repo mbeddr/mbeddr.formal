@@ -151,5 +151,15 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7JYC9rWoTi5">
+    <property role="TrG5h" value="KerMLFeatureChaining_Constraints" />
+    <ref role="1M2myG" to="rb60:7JYC9rWoQYW" resolve="KerMLFeatureChaining" />
+    <node concept="1N5Pfh" id="7JYC9rWoTi6" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:7JYC9rWoQYX" />
+      <node concept="1dDu$B" id="7JYC9rWoTi7" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" resolve="KerMLFeature" />
+      </node>
+    </node>
+  </node>
 </model>
 
