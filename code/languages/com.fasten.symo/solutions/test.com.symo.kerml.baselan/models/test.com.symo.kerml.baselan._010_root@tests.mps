@@ -92,6 +92,9 @@
       <concept id="8934755281057892373" name="com.symo.kerml.baselan.structure.IKerMLNamespaceMember" flags="ngI" index="21vIy3">
         <property id="8934755281057892374" name="visibility" index="21vIy0" />
       </concept>
+      <concept id="4376090928993219481" name="com.symo.kerml.baselan.structure.KerMLElement" flags="ng" index="2jMsKq">
+        <property id="4376090928993219497" name="declaredShortName" index="2jMsKE" />
+      </concept>
       <concept id="4376090928993219486" name="com.symo.kerml.baselan.structure.KerMLDocumentation" flags="ng" index="2jMsKt" />
       <concept id="4376090928993219485" name="com.symo.kerml.baselan.structure.KerMLComment" flags="ng" index="2jMsKu">
         <property id="4376090928993219502" name="body" index="2jMsKH" />
@@ -1595,6 +1598,34 @@
     <node concept="3clFbS" id="7JYC9rUL6i2" role="LjaKd">
       <node concept="2TK7Tu" id="7JYC9rUL6i3" role="3cqZAp">
         <property role="2TTd_B" value="all" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="7JYC9rUMh_D">
+    <property role="TrG5h" value="_100_ShortName_TypeLt" />
+    <property role="3YCmrE" value="typing &lt; after the package keyword opens the short name" />
+    <node concept="1qefOq" id="7JYC9rUMh_E" role="25YQCW">
+      <node concept="2jMsK_" id="7JYC9rUMh_G" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="LIFWc" id="7JYC9rUMh_H" role="lGtFl">
+          <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+          <property role="LIFWd" value="Constant_pv7a9a_b0" />
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="7" />
+          <property role="p6zMs" value="7" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7JYC9rUMh_I" role="25YQFr">
+      <node concept="2jMsK_" id="7JYC9rUMh_K" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <property role="2jMsKE" value="x" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="7JYC9rUMh_L" role="LjaKd">
+      <node concept="2TK7Tu" id="7JYC9rUMh_M" role="3cqZAp">
+        <property role="2TTd_B" value="&lt;x" />
       </node>
     </node>
   </node>
