@@ -4373,5 +4373,86 @@
       </node>
     </node>
   </node>
+  <node concept="LiM7Y" id="7JYC9rXdzo9">
+    <property role="TrG5h" value="_320_Multiplicity_TypeStandalone" />
+    <property role="3YCmrE" value="typing 'multiplicity' in a package body creates a stand-alone named multiplicity range with the default bound [1]" />
+    <node concept="1qefOq" id="7JYC9rXwr7I" role="25YQCW">
+      <node concept="2jMsK_" id="7JYC9rXwr7K" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="LIFWc" id="7JYC9rXwr7L" role="lGtFl">
+          <property role="LIFWd" value="empty_ownedMember" />
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7JYC9rXwr7M" role="25YQFr">
+      <node concept="2jMsK_" id="7JYC9rXwr7O" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="20tdsX" id="7JYC9rXwr7P" role="21vIyQ">
+          <property role="20tdI4" value="true" />
+          <property role="TrG5h" value="exactlyOne" />
+          <node concept="20tdsY" id="7JYC9rXwr7R" role="20tdsT">
+            <property role="20tdI4" value="true" />
+            <property role="20tdsV" value="1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="7JYC9rXwr7S" role="LjaKd">
+      <node concept="2TK7Tu" id="7JYC9rXwr7T" role="3cqZAp">
+        <property role="2TTd_B" value="multiplicity" />
+      </node>
+      <node concept="2TK7Tu" id="7JYC9rXwr7U" role="3cqZAp">
+        <property role="2TTd_B" value="exactlyOne" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="7JYC9rXhTZm">
+    <property role="TrG5h" value="_330_Multiplicity_InlineForm" />
+    <property role="3YCmrE" value="a multiplicity owned by a feature is shown in the inline form [..] (no keyword, no name)" />
+    <node concept="1qefOq" id="7JYC9rXp2gR" role="25YQCW">
+      <node concept="2jMsK_" id="7JYC9rXp2gT" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="20GSug" id="7JYC9rXp2gU" role="21vIyQ">
+          <property role="20tdI4" value="true" />
+          <property role="TrG5h" value="f" />
+          <node concept="20tdsX" id="7JYC9rXp2gV" role="20tdI5">
+            <property role="20tdI4" value="true" />
+            <node concept="20tdsY" id="7JYC9rXp2gX" role="20tdsT">
+              <property role="20tdI4" value="true" />
+              <property role="20tdsV" value="1" />
+            </node>
+            <node concept="LIFWc" id="7JYC9rXp2gY" role="lGtFl">
+              <property role="LIFWd" value="Constant_d0v14i_a0a0" />
+              <property role="ZRATv" value="false" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7JYC9rXp2gZ" role="25YQFr">
+      <node concept="2jMsK_" id="7JYC9rXp2h1" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="20GSug" id="7JYC9rXp2h2" role="21vIyQ">
+          <property role="20tdI4" value="true" />
+          <property role="TrG5h" value="f" />
+          <node concept="20tdsX" id="7JYC9rXp2h3" role="20tdI5">
+            <property role="20tdI4" value="true" />
+            <node concept="20tdsY" id="7JYC9rXp2h5" role="20tdsT">
+              <property role="20tdI4" value="true" />
+              <property role="20tdsV" value="1" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="7JYC9rXp2h6" role="LjaKd" />
+  </node>
 </model>
 

@@ -15,6 +15,15 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 
 
 
+## An editor `CellModel_Alternation` hides the cells from the grammar-cells substitute menu; give the concept a `conceptAlias` instead
+
+To show one concept in two forms (inline `[1..2]` when it sits in a type's `multiplicity` slot, `multiplicity name [1..2] { }` when it is a namespace member), the editor root became a
+`CellModel_Alternation` over a node-condition (a behavior method like `isOwnedMultiplicity()`). The alternation's second branch is **not** picked up as a substitute entry, so typing its keyword
+in the parent's slot created nothing; setting `conceptAlias = multiplicity` on the concept fixed that. Related findings from the same slice: (1) a mandatory single child (`upperBound [1]`) is
+auto-created as an instance of the declared target type, and if that type is abstract the model checker reports "Abstract concept instance" on the editor test's expected tree — use a node factory
+(actions aspect, `NodeFactory` + `NodeSetupFunction_NewNode`) to create a sensible default; (2) a `create_root_node` call that times out may still execute later, leaving duplicate roots (and the
+make warning "Duplicate unit name ..., output likely corrupt") — `update_node` cannot delete a root, so check the model's roots after a timeout.
+
 ## Inherited-member scopes: resolving a redefinition must not depend on redefinitions; ScopesTest cannot tell lexical from qualified; override calls need the base method (2026-10-22)
 - A scope that removes redefined features needs the `general` of the owner's own `Redefinition`s — which are resolved through the very scope being built. Give the scope builders a
   `removeRedefined` flag and use `false` for the specialization/redefinition references themselves (`:>> power` also has to *see* the redefined feature), `true` everywhere else.

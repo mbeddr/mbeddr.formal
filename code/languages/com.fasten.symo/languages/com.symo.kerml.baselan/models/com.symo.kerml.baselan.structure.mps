@@ -527,6 +527,7 @@
     <property role="EcuMT" value="8934755281075337131" />
     <property role="TrG5h" value="KerMLMultiplicityRange" />
     <property role="R4oN_" value="Multiplicity given by lower and upper bound expressions (KerML 8.3.4.11.2)" />
+    <property role="34LRSv" value="multiplicity" />
     <ref role="1TJDcQ" node="7JYC9rVyBuE" resolve="KerMLMultiplicity" />
     <node concept="1TJgyj" id="7JYC9rVyBuI" role="1TKVEi">
       <property role="IQ2ns" value="8934755281075337134" />

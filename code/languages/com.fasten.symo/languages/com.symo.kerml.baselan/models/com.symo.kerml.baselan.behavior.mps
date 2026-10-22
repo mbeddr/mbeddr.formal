@@ -3854,6 +3854,45 @@
     <node concept="13hLZK" id="7JYC9rV$ZUZ" role="13h7CW">
       <node concept="3clFbS" id="7JYC9rV$ZV1" role="2VODD2" />
     </node>
+    <node concept="13i0hz" id="7JYC9rXaf6Q" role="13h7CS">
+      <property role="TrG5h" value="isOwnedMultiplicity" />
+      <node concept="10P_77" id="7JYC9rXaf6U" role="3clF45" />
+      <node concept="3Tm1VV" id="7JYC9rXaf6V" role="1B3o_S" />
+      <node concept="3clFbS" id="7JYC9rXaf6W" role="3clF47">
+        <node concept="3cpWs6" id="7JYC9rXaf6X" role="3cqZAp">
+          <node concept="1Wc70l" id="7JYC9rXsQ$O" role="3cqZAk">
+            <node concept="2OqwBi" id="7JYC9rXsQ$R" role="3uHU7B">
+              <node concept="2OqwBi" id="7JYC9rXsQ$U" role="2Oq$k0">
+                <node concept="13iPFW" id="7JYC9rXsQ$X" role="2Oq$k0" />
+                <node concept="1mfA1w" id="7JYC9rXsQ$Y" role="2OqNvi" />
+              </node>
+              <node concept="1mIQ4w" id="7JYC9rXsQ$Z" role="2OqNvi">
+                <node concept="chp4Y" id="7JYC9rXsQ_1" role="cj9EA">
+                  <ref role="cht4Q" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbC" id="7JYC9rXsQ_2" role="3uHU7w">
+              <node concept="2OqwBi" id="7JYC9rXsQ_5" role="3uHU7B">
+                <node concept="1PxgMI" id="7JYC9rXsQ_8" role="2Oq$k0">
+                  <node concept="2OqwBi" id="7JYC9rXsQ_b" role="1m5AlR">
+                    <node concept="13iPFW" id="7JYC9rXsQ_e" role="2Oq$k0" />
+                    <node concept="1mfA1w" id="7JYC9rXsQ_f" role="2OqNvi" />
+                  </node>
+                  <node concept="chp4Y" id="7JYC9rXsQ_g" role="3oSUPX">
+                    <ref role="cht4Q" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
+                  </node>
+                </node>
+                <node concept="3TrEf2" id="7JYC9rXsQ_h" role="2OqNvi">
+                  <ref role="3Tt5mk" to="rb60:7JYC9rVyBuS" resolve="multiplicity" />
+                </node>
+              </node>
+              <node concept="13iPFW" id="7JYC9rXsQ_i" role="3uHU7w" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="7JYC9rV$ZV4">
     <property role="TrG5h" value="KerMLFeature_Behavior" />
