@@ -7,12 +7,28 @@
   <imports />
   <registry>
     <language id="d9b9b270-2a43-41e3-8b8d-5dcf532d0435" name="com.symo.kerml.baselan">
+      <concept id="8934755281065177114" name="com.symo.kerml.baselan.structure.KerMLType" flags="ng" index="214t2c">
+        <property id="8934755281065177116" name="isAbstract" index="214t2a" />
+        <child id="8934755281065177118" name="ownedSpecialization" index="214t28" />
+      </concept>
+      <concept id="8934755281065177115" name="com.symo.kerml.baselan.structure.KerMLSpecialization" flags="ng" index="214t2d">
+        <reference id="8934755281065177119" name="general" index="214t29" />
+      </concept>
       <concept id="8934755281057892373" name="com.symo.kerml.baselan.structure.IKerMLNamespaceMember" flags="ngI" index="21vIy3">
         <property id="8934755281057892374" name="visibility" index="21vIy0" />
+      </concept>
+      <concept id="4376090928993219483" name="com.symo.kerml.baselan.structure.KerMLAnnotatingElement" flags="ng" index="2jMsKo">
+        <child id="8934755281057892387" name="ownedAnnotatingRelationship" index="21vIyP" />
+      </concept>
+      <concept id="4376090928993219481" name="com.symo.kerml.baselan.structure.KerMLElement" flags="ng" index="2jMsKq">
+        <property id="4376090928993219497" name="declaredShortName" index="2jMsKE" />
       </concept>
       <concept id="4376090928993219486" name="com.symo.kerml.baselan.structure.KerMLDocumentation" flags="ng" index="2jMsKt" />
       <concept id="4376090928993219485" name="com.symo.kerml.baselan.structure.KerMLComment" flags="ng" index="2jMsKu">
         <property id="4376090928993219502" name="body" index="2jMsKH" />
+      </concept>
+      <concept id="4376090928993219484" name="com.symo.kerml.baselan.structure.KerMLAnnotation" flags="ng" index="2jMsKv">
+        <reference id="4376090928993219501" name="annotatedElement" index="2jMsKI" />
       </concept>
       <concept id="4376090928993219491" name="com.symo.kerml.baselan.structure.KerMLImport" flags="ng" index="2jMsKw">
         <property id="4376090928993219511" name="isImportAll" index="2jMsKO" />
@@ -20,7 +36,9 @@
       <concept id="4376090928993219488" name="com.symo.kerml.baselan.structure.KerMLNamespace" flags="ng" index="2jMsKz">
         <child id="8934755281057892384" name="ownedMember" index="21vIyQ" />
       </concept>
-      <concept id="4376090928993219495" name="com.symo.kerml.baselan.structure.KerMLLibraryPackage" flags="ng" index="2jMsK$" />
+      <concept id="4376090928993219495" name="com.symo.kerml.baselan.structure.KerMLLibraryPackage" flags="ng" index="2jMsK$">
+        <property id="4376090928993219515" name="isStandard" index="2jMsKS" />
+      </concept>
       <concept id="4376090928993219494" name="com.symo.kerml.baselan.structure.KerMLPackage" flags="ng" index="2jMsK_" />
       <concept id="4376090928993219493" name="com.symo.kerml.baselan.structure.KerMLMembershipImport" flags="ng" index="2jMsKA">
         <reference id="8934755281057892381" name="importedElement" index="21vIyb" />
@@ -37,6 +55,7 @@
   </registry>
   <node concept="2jMsK$" id="7JYC9rUwUUl">
     <property role="TrG5h" value="Vehicles" />
+    <property role="2jMsKE" value="veh" />
     <node concept="2jMsKt" id="7JYC9rUwUUm" role="21vIyQ">
       <property role="2jMsKH" value="Example library: the building blocks of a vehicle" />
     </node>
@@ -52,16 +71,39 @@
           <property role="2jMsKH" value="everything that transmits power" />
         </node>
       </node>
+      <node concept="214t2c" id="7JYC9rVcQuZ" role="21vIyQ">
+        <property role="TrG5h" value="Vehicle" />
+        <property role="214t2a" value="true" />
+        <node concept="2jMsKu" id="7JYC9rVcQv0" role="21vIyQ">
+          <property role="2jMsKH" value="Common ancestor of all vehicles.&#10;Never instantiated directly." />
+        </node>
+      </node>
+      <node concept="214t2c" id="7JYC9rVcQvP" role="21vIyQ">
+        <property role="TrG5h" value="Car" />
+        <node concept="214t2d" id="7JYC9rVcQvQ" role="214t28">
+          <ref role="214t29" node="7JYC9rVcQuZ" resolve="Vehicle" />
+        </node>
+      </node>
+      <node concept="214t2c" id="7JYC9rVcQvR" role="21vIyQ">
+        <property role="TrG5h" value="Truck" />
+        <node concept="214t2d" id="7JYC9rVcQvS" role="214t28">
+          <ref role="214t29" node="7JYC9rVcQuZ" resolve="Vehicle" />
+        </node>
+      </node>
     </node>
     <node concept="2jMsK_" id="7JYC9rUwUUr" role="21vIyQ">
       <property role="TrG5h" value="Interfaces" />
       <node concept="2jMsKu" id="7JYC9rUwUUs" role="21vIyQ">
-        <property role="2jMsKH" value="to be filled in" />
+        <property role="2jMsKH" value="Interfaces of the vehicle types&#10;are modelled here (to be filled in)." />
+        <node concept="2jMsKv" id="7JYC9rVcQvW" role="21vIyP">
+          <ref role="2jMsKI" node="7JYC9rVcQuZ" resolve="Vehicle" />
+        </node>
       </node>
     </node>
   </node>
   <node concept="2jMsK_" id="7JYC9rUwUUt">
     <property role="TrG5h" value="Fleet" />
+    <property role="2jMsKE" value="f" />
     <node concept="2jMsKt" id="7JYC9rUwUUu" role="21vIyQ">
       <property role="2jMsKH" value="A fleet that builds on the Vehicles library" />
     </node>
@@ -72,6 +114,10 @@
       <property role="2jMsKO" value="true" />
       <ref role="21vIyb" node="7JYC9rUwUUp" resolve="Drivetrain" />
     </node>
+    <node concept="2jMsKB" id="7JYC9rVcQvZ" role="21vIyQ">
+      <property role="21vIy0" value="5m1$JieKozE/private" />
+      <ref role="2jMsKU" node="7JYC9rVcQvT" resolve="Units" />
+    </node>
     <node concept="2jMsK_" id="7JYC9rUwUUx" role="21vIyQ">
       <property role="TrG5h" value="Cars" />
       <node concept="2jMsKu" id="7JYC9rUwUUy" role="21vIyQ">
@@ -79,7 +125,59 @@
       </node>
       <node concept="2jMsK_" id="7JYC9rUwUUz" role="21vIyQ">
         <property role="TrG5h" value="Sedans" />
+        <node concept="214t2c" id="7JYC9rVcQw2" role="21vIyQ">
+          <property role="TrG5h" value="Sedan" />
+          <node concept="214t2d" id="7JYC9rVcQw3" role="214t28">
+            <ref role="214t29" node="7JYC9rVcQw0" resolve="FleetCar" />
+          </node>
+        </node>
       </node>
+      <node concept="214t2c" id="7JYC9rVcQw0" role="21vIyQ">
+        <property role="TrG5h" value="FleetCar" />
+        <property role="214t2a" value="true" />
+        <node concept="214t2d" id="7JYC9rVcQw1" role="214t28">
+          <ref role="214t29" node="7JYC9rVcQvP" resolve="Car" />
+        </node>
+      </node>
+      <node concept="214t2c" id="7JYC9rVcQw4" role="21vIyQ">
+        <property role="TrG5h" value="Van" />
+        <node concept="214t2c" id="7JYC9rVcQw5" role="21vIyQ">
+          <property role="TrG5h" value="FleetCar" />
+        </node>
+        <node concept="2jMsKu" id="7JYC9rVcQw6" role="21vIyQ">
+          <property role="2jMsKH" value="The target FleetCar of the specialization is looked up outside Van,&#10;so it is not captured by the nested FleetCar." />
+        </node>
+        <node concept="214t2d" id="7JYC9rVcQw7" role="214t28">
+          <ref role="214t29" node="7JYC9rVcQw0" resolve="FleetCar" />
+        </node>
+      </node>
+    </node>
+    <node concept="2jMsK_" id="7JYC9rVcQw8" role="21vIyQ">
+      <property role="TrG5h" value="Depot" />
+      <property role="2jMsKE" value="d" />
+      <node concept="2jMsKB" id="7JYC9rVcQw9" role="21vIyQ">
+        <ref role="2jMsKU" node="7JYC9rUwUUt" resolve="Fleet" />
+      </node>
+      <node concept="214t2c" id="7JYC9rVcQwa" role="21vIyQ">
+        <property role="TrG5h" value="HeavyTruck" />
+        <node concept="214t2d" id="7JYC9rVcQwb" role="214t28">
+          <ref role="214t29" node="7JYC9rVcQvR" resolve="Truck" />
+        </node>
+      </node>
+      <node concept="2jMsKu" id="7JYC9rVcQwc" role="21vIyQ">
+        <property role="2jMsKH" value="Fleet re-exports Vehicles (public import) but imports Units privately,&#10;so Units is not visible in this package." />
+      </node>
+    </node>
+  </node>
+  <node concept="2jMsK$" id="7JYC9rVcQvT">
+    <property role="TrG5h" value="Units" />
+    <property role="2jMsKE" value="u" />
+    <property role="2jMsKS" value="true" />
+    <node concept="214t2c" id="7JYC9rVcQvU" role="21vIyQ">
+      <property role="TrG5h" value="Length" />
+    </node>
+    <node concept="214t2c" id="7JYC9rVcQvV" role="21vIyQ">
+      <property role="TrG5h" value="Mass" />
     </node>
   </node>
 </model>
