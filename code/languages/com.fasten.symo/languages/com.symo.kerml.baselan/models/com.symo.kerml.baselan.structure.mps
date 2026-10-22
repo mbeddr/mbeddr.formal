@@ -483,7 +483,7 @@
     <property role="EcuMT" value="8934755281071938690" />
     <property role="TrG5h" value="KerMLFeatureDirection" />
     <property role="R4oN_" value="The direction (in / out / inout) of a feature; wraps FeatureDirectionKind so that 'no direction' is representable (same as sysmlv2.baselan)" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="7JYC9rVlDM3" role="1TKVEl">
       <property role="IQ2nx" value="8934755281071938691" />
       <property role="TrG5h" value="kind" />

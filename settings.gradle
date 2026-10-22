@@ -9,3 +9,5 @@ pluginManagement {
 
 include 'sysmlv2-grammar'
 project(':sysmlv2-grammar').projectDir = file('code/languages/com.fasten.symo/solutions/com.symo.sysmlv2.baselan.importer/grammar-build')
+include 'kerml-grammar'
+project(':kerml-grammar').projectDir = file('code/languages/com.fasten.symo/solutions/com.symo.kerml.baselan.importer/grammar-build')

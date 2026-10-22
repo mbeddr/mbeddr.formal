@@ -75,7 +75,7 @@
     <property role="TrG5h" value="KerMLSpecialization_Constraints" />
     <ref role="1M2myG" to="rb60:7JYC9rUVR0r" resolve="KerMLSpecialization" />
     <node concept="1N5Pfh" id="7JYC9rUVR_l" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" resolve="general" />
       <node concept="1dDu$B" id="7JYC9rUVR_m" role="1N6uqs">
         <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
       </node>
@@ -85,9 +85,9 @@
     <property role="TrG5h" value="KerMLSubclassification_Constraints" />
     <ref role="1M2myG" to="rb60:7JYC9rVcQwe" resolve="KerMLSubclassification" />
     <node concept="1N5Pfh" id="7JYC9rVcRap" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" resolve="general" />
       <node concept="1dDu$B" id="7JYC9rVcRaq" role="1N6uqs">
-        <ref role="1dDu$A" to="rb60:7JYC9rVcQwd" />
+        <ref role="1dDu$A" to="rb60:7JYC9rVcQwd" resolve="KerMLClassifier" />
       </node>
     </node>
   </node>
@@ -95,9 +95,9 @@
     <property role="TrG5h" value="KerMLFeatureTyping_Constraints" />
     <ref role="1M2myG" to="rb60:7JYC9rVjis7" resolve="KerMLFeatureTyping" />
     <node concept="1N5Pfh" id="7JYC9rVjjfV" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" resolve="general" />
       <node concept="1dDu$B" id="7JYC9rVjjfW" role="1N6uqs">
-        <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" />
+        <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
       </node>
     </node>
   </node>
@@ -105,9 +105,9 @@
     <property role="TrG5h" value="KerMLSubsetting_Constraints" />
     <ref role="1M2myG" to="rb60:7JYC9rVjis8" resolve="KerMLSubsetting" />
     <node concept="1N5Pfh" id="7JYC9rVjjg0" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" resolve="general" />
       <node concept="1dDu$B" id="7JYC9rVjjg1" role="1N6uqs">
-        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" />
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" resolve="KerMLFeature" />
       </node>
     </node>
   </node>
@@ -115,9 +115,9 @@
     <property role="TrG5h" value="KerMLRedefinition_Constraints" />
     <ref role="1M2myG" to="rb60:7JYC9rVjis9" resolve="KerMLRedefinition" />
     <node concept="1N5Pfh" id="7JYC9rVjjg5" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" resolve="general" />
       <node concept="1dDu$B" id="7JYC9rVjjg6" role="1N6uqs">
-        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" />
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" resolve="KerMLFeature" />
       </node>
     </node>
   </node>
@@ -125,9 +125,9 @@
     <property role="TrG5h" value="KerMLReferenceSubsetting_Constraints" />
     <ref role="1M2myG" to="rb60:7JYC9rVyBuG" resolve="KerMLReferenceSubsetting" />
     <node concept="1N5Pfh" id="7JYC9rV$ZXZ" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" resolve="general" />
       <node concept="1dDu$B" id="7JYC9rV$ZY0" role="1N6uqs">
-        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" />
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" resolve="KerMLFeature" />
       </node>
     </node>
   </node>
@@ -135,9 +135,9 @@
     <property role="TrG5h" value="KerMLTypeFeaturing_Constraints" />
     <ref role="1M2myG" to="rb60:7JYC9rVGZkn" resolve="KerMLTypeFeaturing" />
     <node concept="1N5Pfh" id="7JYC9rVJuj5" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:7JYC9rVGZks" />
+      <ref role="1N5Vy1" to="rb60:7JYC9rVGZks" resolve="featuringType" />
       <node concept="1dDu$B" id="7JYC9rVJuj6" role="1N6uqs">
-        <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" />
+        <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
       </node>
     </node>
   </node>
@@ -145,9 +145,9 @@
     <property role="TrG5h" value="KerMLFeatureReferenceExpression_Constraints" />
     <ref role="1M2myG" to="rb60:7JYC9rVGZkr" resolve="KerMLFeatureReferenceExpression" />
     <node concept="1N5Pfh" id="7JYC9rVJuja" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:7JYC9rVGZky" />
+      <ref role="1N5Vy1" to="rb60:7JYC9rVGZky" resolve="referent" />
       <node concept="1dDu$B" id="7JYC9rVJujb" role="1N6uqs">
-        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" />
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" resolve="KerMLFeature" />
       </node>
     </node>
   </node>
@@ -155,7 +155,7 @@
     <property role="TrG5h" value="KerMLFeatureChaining_Constraints" />
     <ref role="1M2myG" to="rb60:7JYC9rWoQYW" resolve="KerMLFeatureChaining" />
     <node concept="1N5Pfh" id="7JYC9rWoTi6" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:7JYC9rWoQYX" />
+      <ref role="1N5Vy1" to="rb60:7JYC9rWoQYX" resolve="chainingFeature" />
       <node concept="1dDu$B" id="7JYC9rWoTi7" role="1N6uqs">
         <ref role="1dDu$A" to="rb60:7JYC9rVjis6" resolve="KerMLFeature" />
       </node>
@@ -165,9 +165,9 @@
     <property role="TrG5h" value="KerMLCrossSubsetting_Constraints" />
     <ref role="1M2myG" to="rb60:7JYC9rWFthT" resolve="KerMLCrossSubsetting" />
     <node concept="1N5Pfh" id="7JYC9rWFu$I" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" resolve="general" />
       <node concept="1dDu$B" id="7JYC9rWFu$J" role="1N6uqs">
-        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" />
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" resolve="KerMLFeature" />
       </node>
     </node>
   </node>
@@ -175,9 +175,9 @@
     <property role="TrG5h" value="KerMLFeatureInverting_Constraints" />
     <ref role="1M2myG" to="rb60:7JYC9rWFthU" resolve="KerMLFeatureInverting" />
     <node concept="1N5Pfh" id="7JYC9rWFu$L" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:7JYC9rWFthV" />
+      <ref role="1N5Vy1" to="rb60:7JYC9rWFthV" resolve="invertingFeature" />
       <node concept="1dDu$B" id="7JYC9rWFu$M" role="1N6uqs">
-        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" />
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" resolve="KerMLFeature" />
       </node>
     </node>
   </node>
