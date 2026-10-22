@@ -75,6 +75,9 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
   TAB after the keyword before typing the body (sysmlv2.baselan precedent).
 - **Cloning a printed test root**: the printed JSON carries a top-level `name` (`<no name>[Concept]` for unnamed nodes) that the inserter turns into a real `name` property —
   strip it from unnamed nodes before inserting.
+- **Behavior bodies via blueprints**: `SingletonSequenceCreator` / `ListCreatorWithInit` (`new singleton<T>(x)`, `new arraylist<T>{}`) must be wrapped in a `GenericNewExpression` (`creator` child);
+  short concept names can resolve to the wrong language, so generate blueprints with fully qualified names (harvest them from a printed method's `conceptReference`). For mutually recursive methods insert
+  stubs first, then `SET CHILD body` with `r:` references to the stubs. Mutation checks of tests sharing one fixture can mask each other (a mutated import made another mutation's effect invisible) — mutate one cause per method.
 - **Module folder / registration**: new modules appear in `.mps/modules.xml` and must also be registered by hand in `com.fasten.meta.architecture` (repo_admin project).
 
 ## Moving a link declaration orphans stored children — but they stay addressable by node id (2026-10-21)
