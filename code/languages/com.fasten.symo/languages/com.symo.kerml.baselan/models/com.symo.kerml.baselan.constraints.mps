@@ -13,11 +13,63 @@
     <use id="ad93155d-79b2-4759-b10c-55123e763903" name="jetbrains.mps.lang.messages" version="0" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
     <import index="rb60" ref="r:7f83f9ab-ff79-487e-a314-5d66f2714dfb(com.symo.kerml.baselan.structure)" />
+    <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="efol" ref="r:8aac8454-5d13-4d6f-9f26-01f728a66f29(com.symo.kerml.baselan.behavior)" />
   </imports>
-  <registry />
+  <registry>
+    <language id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints">
+      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
+        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
+      </concept>
+      <concept id="1213093968558" name="jetbrains.mps.lang.constraints.structure.ConceptConstraints" flags="ng" index="1M2fIO">
+        <reference id="1213093996982" name="concept" index="1M2myG" />
+        <child id="1213100494875" name="referent" index="1Mr941" />
+      </concept>
+      <concept id="1148687176410" name="jetbrains.mps.lang.constraints.structure.NodeReferentConstraint" flags="ng" index="1N5Pfh">
+        <reference id="1148687202698" name="applicableLink" index="1N5Vy1" />
+        <child id="1148687345559" name="searchScopeFactory" index="1N6uqs" />
+      </concept>
+    </language>
+    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
+      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ngI" index="TrEIO">
+        <property id="1169194664001" name="name" index="TrG5h" />
+      </concept>
+    </language>
+  </registry>
+  <node concept="1M2fIO" id="7JYC9rUzp_u">
+    <property role="TrG5h" value="KerMLNamespaceImport_Constraints" />
+    <ref role="1M2myG" to="rb60:3MUZSeJsNe$" resolve="KerMLNamespaceImport" />
+    <node concept="1N5Pfh" id="7JYC9rUzp_v" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:3MUZSeJsNeT" resolve="importedNamespace" />
+      <node concept="1dDu$B" id="7JYC9rUDX27" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:3MUZSeJsNew" resolve="KerMLNamespace" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7JYC9rUzp_T">
+    <property role="TrG5h" value="KerMLMembershipImport_Constraints" />
+    <ref role="1M2myG" to="rb60:3MUZSeJsNe_" resolve="KerMLMembershipImport" />
+    <node concept="1N5Pfh" id="7JYC9rUzp_U" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:7JYC9rUw4wt" resolve="importedElement" />
+      <node concept="1dDu$B" id="7JYC9rUEAkR" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:3MUZSeJsNep" resolve="KerMLElement" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7JYC9rUzpAk">
+    <property role="TrG5h" value="KerMLAnnotation_Constraints" />
+    <ref role="1M2myG" to="rb60:3MUZSeJsNes" resolve="KerMLAnnotation" />
+    <node concept="1N5Pfh" id="7JYC9rUzpAl" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:3MUZSeJsNeH" resolve="annotatedElement" />
+      <node concept="1dDu$B" id="7JYC9rUEAkV" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:3MUZSeJsNep" resolve="KerMLElement" />
+      </node>
+    </node>
+  </node>
 </model>
 

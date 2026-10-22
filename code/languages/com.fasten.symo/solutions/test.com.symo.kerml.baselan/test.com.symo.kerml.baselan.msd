@@ -12,6 +12,7 @@
   </facets>
   <dependencies>
     <dependency reexport="false">d9b9b270-2a43-41e3-8b8d-5dcf532d0435(com.symo.kerml.baselan)</dependency>
+    <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:d9b9b270-2a43-41e3-8b8d-5dcf532d0435:com.symo.kerml.baselan" version="0" />
@@ -33,6 +34,7 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="d9b9b270-2a43-41e3-8b8d-5dcf532d0435(com.symo.kerml.baselan)" version="0" />
+    <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="bee5e8ea-7646-47c7-a71f-df602dd9e27d(test.com.symo.kerml.baselan)" version="0" />
   </dependencyVersions>

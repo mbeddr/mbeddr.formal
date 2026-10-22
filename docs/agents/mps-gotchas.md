@@ -12,6 +12,32 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Scoping traps found while giving the KerML base language namespace scopes (2026-10-22)
+
+- **Idiom (verified 2026-10-22):** a namespace concept implements `ScopeProvider`; reference constraints are plain `scope inherited for <TargetConcept>` (`kind` = the concept the
+  scope must *yield*, e.g. the referenced namespace concept — NOT the referrer's concept; a wrong kind makes every target "out of search scope"). `overriddenMethod` =
+  `jetbrains.mps.lang.core.behavior` `ScopeProvider.getScope(kind, child)` (ref `r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)/5811245382203252452`).
+- **The model checker validates existing references through the 2-arg `getScope(kind, child)`, not the 3-arg `getScope(kind, link, index)`** (that one is only the first request of
+  completion/creation). Overriding only the 3-arg form therefore leaves nested/qualified targets "out of search scope".
+- **If the provider's scope must differ at the outermost request (e.g. a qualified-name wrapper), do not return the wrapper from a method the `parent scope` chain also uses.** Split:
+  `getScope` returns `wrapper(lexicalScope(...))`, while `lexicalScope` (internal, chain-safe) calls the enclosing provider's `lexicalScope` directly (`this.ancestor<concept = NS>`) instead of
+  `parent scope`; otherwise every level wraps again (descendants in every `getAvailableElements`, wrong name shadowing).
+- **A custom `Scope` (anonymous `DelegatingScope`) that changes `resolve`/`getAvailableElements` must also override `contains`.** The model checker's "reference is out of search scope"
+  asks `Scope.contains(target)`, which a delegating scope answers from the *inner* scope only — a qualified target (`A::B::C`) then fails the check although `resolve` finds it.
+  Only the model checker reports it (tests that call `resolve` stay green) — pin it with a test that asserts `scope.contains(...)`.
+- **`parent scope` of a root node is empty** (and a `lexicalScope` chain that ends at a root needs the same fallback). A root namespace needs an explicit outer scope (the named roots of its model and imports) to see sibling roots; fixtures nested in a test case
+  are not roots, so test only relative/imported resolution there.
+- **Behavior methods cannot be called from other aspects with `StaticMethodCall`** (its `classConcept` wants a `Classifier`, not a `ConceptBehavior`). Make the helper an instance method
+  and call it on `contextNode:Concept` (`Node_ConceptMethodCall` from `jetbrains.mps.lang.behavior`, not the deprecated smodel one).
+- **`ScopesTest` asserts the exact scope set**, so it is unusable when the test model also holds other fixtures that are visible (every root of the model is in the default scope); test
+  with a `SimpleNodeTest` calling `scope.resolve(...)` / `scope.contains(...)`.
+- **`CellModel_RefCell` without its `editorComponent` fails at MAKE** (see the 2026-08-23 entry): to show a qualified name instead of the `name` property use an `InlineEditorComponent`
+  with a `ref. presentation` cell (`CellModel_ReferencePresentation`) whose `referentPresentation` child (`QueryFunction_RefPresentation`, parameter `ConceptFunctionParameter_targetNode`) returns the text.
+- Scope helper refs (`jetbrains.mps.scope`): `ListScope` class `.../5455284157994035575`, `forNamedElements` `.../5455284157994035599`, `DelegatingScope` `.../5452980714151229091`
+  (ctor `.../5452980714151232873`), `Scope` class `.../3734116213129862372`, `resolve` `.../3734116213129862467`, `getAvailableElements` `.../3734116213129862471`,
+  `contains` `.../3587601930837971986`; JDK `String` stub methods are referenced as `6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)/~String.indexOf%28java.lang.String%29`.
+  `selectMany` is `TranslateOperation`, `ofConcept` is `jetbrains.mps.lang.smodel.structure.OfConceptOperation`, `union` takes `rightExpression`.
+
 ## Testing, tooling and editor traps found while building the KerML base language (2026-10-22)
 
 - **A model reference is not a root.** `check_root_node_problems` on a *model* returns "no problems found" without checking anything — check every root.

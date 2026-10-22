@@ -203,6 +203,9 @@
     <node concept="PrWs8" id="7JYC9rUw4wA" role="PzmwI">
       <ref role="PrY4T" node="7JYC9rUw4wl" resolve="IKerMLNamespaceMember" />
     </node>
+    <node concept="PrWs8" id="7JYC9rUyZIn" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeJsNez">
     <property role="EcuMT" value="4376090928993219491" />
