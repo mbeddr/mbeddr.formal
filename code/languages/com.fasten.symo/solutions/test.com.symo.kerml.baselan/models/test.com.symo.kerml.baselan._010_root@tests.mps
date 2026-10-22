@@ -143,6 +143,7 @@
         <property id="8934755281075338002" name="isUnique" index="20tdI4" />
         <child id="8934755281078060002" name="valuation" index="20iEdO" />
         <child id="8934755281078060001" name="ownedTypeFeaturing" index="20iEdR" />
+        <child id="8934755281094437107" name="ownedFeatureInverting" index="27kOx_" />
         <child id="8934755281089561399" name="ownedFeatureChaining" index="27Biex" />
       </concept>
       <concept id="8934755281071318791" name="com.symo.kerml.baselan.structure.KerMLFeatureTyping" flags="ng" index="20GSuh" />
@@ -161,6 +162,10 @@
       <concept id="8934755281057892373" name="com.symo.kerml.baselan.structure.IKerMLNamespaceMember" flags="ngI" index="21vIy3">
         <property id="8934755281057892374" name="visibility" index="21vIy0" />
       </concept>
+      <concept id="8934755281094431866" name="com.symo.kerml.baselan.structure.KerMLFeatureInverting" flags="ng" index="27kRjG">
+        <reference id="8934755281094431867" name="invertingFeature" index="27kRjH" />
+      </concept>
+      <concept id="8934755281094431865" name="com.symo.kerml.baselan.structure.KerMLCrossSubsetting" flags="ng" index="27kRjJ" />
       <concept id="8934755281089556412" name="com.symo.kerml.baselan.structure.KerMLFeatureChaining" flags="ng" index="27BsWE">
         <reference id="8934755281089556413" name="chainingFeature" index="27BsWF" />
       </concept>
@@ -4028,6 +4033,93 @@
                 <ref role="3xOPvv" node="7JYC9rWuV2y" resolve="eng" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7JYC9rWIFRq">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_280_InvertingAndCrossSubsetting" />
+    <node concept="1qefOq" id="7JYC9rWIFRr" role="1SKRRt">
+      <node concept="2jMsK_" id="7JYC9rWIFRt" role="1qenE9">
+        <property role="TrG5h" value="Lib" />
+        <node concept="20Nsyr" id="7JYC9rWIFRu" role="21vIyQ">
+          <property role="TrG5h" value="Link" />
+          <node concept="20GSug" id="7JYC9rWIFRv" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="src" />
+          </node>
+          <node concept="20GSug" id="7JYC9rWIFRw" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="dst" />
+            <node concept="27kRjG" id="7JYC9rWIFRx" role="27kOx_">
+              <ref role="27kRjH" node="7JYC9rWIFRv" resolve="src" />
+              <node concept="2rqxmr" id="7JYC9rWIFRy" role="lGtFl">
+                <ref role="1BTHP0" node="7JYC9rWIFRv" />
+                <node concept="3KTrbX" id="7JYC9rWIFRz" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWIFRv" resolve="src" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWIFR$" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWIFRw" resolve="dst" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWIFR_" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWIFRE" resolve="x" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWIFRA" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWIFRF" resolve="end1" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWIFRB" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWIFRD" resolve="inner" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWIFRC" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWIFRP" resolve="z" />
+                </node>
+              </node>
+            </node>
+            <node concept="20GSug" id="7JYC9rWIFRD" role="21vIyQ">
+              <property role="20tdI4" value="true" />
+              <property role="TrG5h" value="inner" />
+            </node>
+          </node>
+          <node concept="20GSug" id="7JYC9rWIFRE" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="x" />
+          </node>
+          <node concept="20GSug" id="7JYC9rWIFRF" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="end1" />
+            <node concept="27kRjJ" id="7JYC9rWIFRG" role="214t28">
+              <ref role="214t29" node="7JYC9rWIFRE" resolve="x" />
+              <node concept="2rqxmr" id="7JYC9rWIFRH" role="lGtFl">
+                <ref role="1BTHP0" node="7JYC9rWIFRE" />
+                <node concept="3KTrbX" id="7JYC9rWIFRI" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWIFRv" resolve="src" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWIFRJ" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWIFRw" resolve="dst" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWIFRK" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWIFRE" resolve="x" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWIFRL" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWIFRF" resolve="end1" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWIFRM" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWIFRD" resolve="inner" />
+                </node>
+                <node concept="3KTrbX" id="7JYC9rWIFRN" role="3KTr4d">
+                  <ref role="3AHY9a" node="7JYC9rWIFRP" resolve="z" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="20Nsyr" id="7JYC9rWIFRO" role="21vIyQ">
+          <property role="TrG5h" value="Other" />
+          <node concept="20GSug" id="7JYC9rWIFRP" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="z" />
           </node>
         </node>
       </node>

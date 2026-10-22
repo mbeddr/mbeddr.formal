@@ -450,6 +450,13 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7JYC9rWoQYW" resolve="KerMLFeatureChaining" />
     </node>
+    <node concept="1TJgyj" id="7JYC9rWFuzN" role="1TKVEi">
+      <property role="IQ2ns" value="8934755281094437107" />
+      <property role="20kJfa" value="ownedFeatureInverting" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7JYC9rWFthU" resolve="KerMLFeatureInverting" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JYC9rVjis7">
     <property role="EcuMT" value="8934755281071318791" />
@@ -627,6 +634,30 @@
       <ref role="20lvS9" node="7JYC9rVjis6" resolve="KerMLFeature" />
     </node>
     <node concept="PrWs8" id="7JYC9rWoScU" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7JYC9rWFthT">
+    <property role="EcuMT" value="8934755281094431865" />
+    <property role="TrG5h" value="KerMLCrossSubsetting" />
+    <property role="34LRSv" value="=&gt;" />
+    <property role="R4oN_" value="Subsetting that relates the cross feature of an end feature to the feature it crosses (KerML 8.3.3.3.3)" />
+    <property role="3GE5qa" value="core.feature" />
+    <ref role="1TJDcQ" node="7JYC9rVjis8" resolve="KerMLSubsetting" />
+  </node>
+  <node concept="1TIwiD" id="7JYC9rWFthU">
+    <property role="EcuMT" value="8934755281094431866" />
+    <property role="TrG5h" value="KerMLFeatureInverting" />
+    <property role="R4oN_" value="Makes the owning feature the inverse of another feature (KerML 8.3.3.3.6); the owner is the inverted feature" />
+    <property role="3GE5qa" value="core.feature" />
+    <ref role="1TJDcQ" node="3MUZSeJsNeq" resolve="KerMLRelationship" />
+    <node concept="1TJgyj" id="7JYC9rWFthV" role="1TKVEi">
+      <property role="IQ2ns" value="8934755281094431867" />
+      <property role="20kJfa" value="invertingFeature" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7JYC9rVjis6" resolve="KerMLFeature" />
+    </node>
+    <node concept="PrWs8" id="7JYC9rWFu$E" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>

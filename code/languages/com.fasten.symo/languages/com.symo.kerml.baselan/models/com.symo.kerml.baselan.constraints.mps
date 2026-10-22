@@ -161,5 +161,25 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7JYC9rWFu$H">
+    <property role="TrG5h" value="KerMLCrossSubsetting_Constraints" />
+    <ref role="1M2myG" to="rb60:7JYC9rWFthT" resolve="KerMLCrossSubsetting" />
+    <node concept="1N5Pfh" id="7JYC9rWFu$I" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:7JYC9rUVR0v" />
+      <node concept="1dDu$B" id="7JYC9rWFu$J" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7JYC9rWFu$K">
+    <property role="TrG5h" value="KerMLFeatureInverting_Constraints" />
+    <ref role="1M2myG" to="rb60:7JYC9rWFthU" resolve="KerMLFeatureInverting" />
+    <node concept="1N5Pfh" id="7JYC9rWFu$L" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:7JYC9rWFthV" />
+      <node concept="1dDu$B" id="7JYC9rWFu$M" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rVjis6" />
+      </node>
+    </node>
+  </node>
 </model>
 

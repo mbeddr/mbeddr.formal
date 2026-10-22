@@ -4081,5 +4081,56 @@
       </node>
     </node>
   </node>
+  <node concept="13h7C7" id="7JYC9rWFuCs">
+    <property role="TrG5h" value="KerMLFeatureInverting_Behavior" />
+    <property role="3GE5qa" value="core.feature" />
+    <ref role="13h7C2" to="rb60:7JYC9rWFthU" resolve="KerMLFeatureInverting" />
+    <node concept="13hLZK" id="7JYC9rWFuCv" role="13h7CW">
+      <node concept="3clFbS" id="7JYC9rWFuCx" role="2VODD2" />
+    </node>
+    <node concept="13i0hz" id="7JYC9rWFuCy" role="13h7CS">
+      <property role="TrG5h" value="getScope" />
+      <property role="13i0it" value="true" />
+      <ref role="13i0hy" to="tpcu:52_Geb4QDV$" resolve="getScope" />
+      <node concept="3uibUv" id="7JYC9rWFuCA" role="3clF45">
+        <ref role="3uigEE" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+      </node>
+      <node concept="37vLTG" id="7JYC9rWFuCB" role="3clF46">
+        <property role="TrG5h" value="kind" />
+        <property role="2Lvdk3" value="kind" />
+        <node concept="3bZ5Sz" id="7JYC9rWFuCD" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="7JYC9rWFuCE" role="3clF46">
+        <property role="TrG5h" value="child" />
+        <property role="2Lvdk3" value="child" />
+        <node concept="3Tqbb2" id="7JYC9rWFuCG" role="1tU5fm" />
+      </node>
+      <node concept="3Tm1VV" id="7JYC9rWFuCH" role="1B3o_S" />
+      <node concept="3clFbS" id="7JYC9rWFuCI" role="3clF47">
+        <node concept="3cpWs6" id="7JYC9rWFuCJ" role="3cqZAp">
+          <node concept="2OqwBi" id="7JYC9rWFuCK" role="3cqZAk">
+            <node concept="1PxgMI" id="7JYC9rWFuCN" role="2Oq$k0">
+              <property role="1BlNFB" value="false" />
+              <node concept="2OqwBi" id="7JYC9rWFuCQ" role="1m5AlR">
+                <node concept="13iPFW" id="7JYC9rWFuCT" role="2Oq$k0" />
+                <node concept="3zqWPK" id="7JYC9rWFuCU" role="2OqNvi">
+                  <ref role="37wK5l" node="7JYC9rUw55$" resolve="owner" />
+                </node>
+              </node>
+              <node concept="chp4Y" id="7JYC9rWFuCV" role="3oSUPX">
+                <ref role="cht4Q" to="rb60:7JYC9rVjis6" resolve="KerMLFeature" />
+              </node>
+            </node>
+            <node concept="3zqWPK" id="7JYC9rWFuCW" role="2OqNvi">
+              <ref role="37wK5l" node="7JYC9rV9p7f" resolve="specializationScope" />
+              <node concept="37vLTw" id="7JYC9rWFuCX" role="37wK5m">
+                <ref role="3cqZAo" node="7JYC9rWFuCB" resolve="kind" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

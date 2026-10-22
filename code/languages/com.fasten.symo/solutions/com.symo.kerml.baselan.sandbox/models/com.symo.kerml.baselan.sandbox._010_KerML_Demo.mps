@@ -32,10 +32,12 @@
       <concept id="8934755281071318790" name="com.symo.kerml.baselan.structure.KerMLFeature" flags="ng" index="20GSug">
         <property id="8934755281075338002" name="isUnique" index="20tdI4" />
         <property id="8934755281075338001" name="isOrdered" index="20tdI7" />
+        <property id="8934755281071318798" name="isEnd" index="20GSuo" />
         <property id="8934755281071318797" name="isDerived" index="20GSur" />
         <child id="8934755281078060002" name="valuation" index="20iEdO" />
         <child id="8934755281078060001" name="ownedTypeFeaturing" index="20iEdR" />
         <child id="8934755281071938701" name="direction" index="20E3Kr" />
+        <child id="8934755281094437107" name="ownedFeatureInverting" index="27kOx_" />
         <child id="8934755281089561399" name="ownedFeatureChaining" index="27Biex" />
       </concept>
       <concept id="8934755281071318791" name="com.symo.kerml.baselan.structure.KerMLFeatureTyping" flags="ng" index="20GSuh" />
@@ -55,6 +57,10 @@
       <concept id="8934755281057892373" name="com.symo.kerml.baselan.structure.IKerMLNamespaceMember" flags="ngI" index="21vIy3">
         <property id="8934755281057892374" name="visibility" index="21vIy0" />
       </concept>
+      <concept id="8934755281094431866" name="com.symo.kerml.baselan.structure.KerMLFeatureInverting" flags="ng" index="27kRjG">
+        <reference id="8934755281094431867" name="invertingFeature" index="27kRjH" />
+      </concept>
+      <concept id="8934755281094431865" name="com.symo.kerml.baselan.structure.KerMLCrossSubsetting" flags="ng" index="27kRjJ" />
       <concept id="8934755281089556412" name="com.symo.kerml.baselan.structure.KerMLFeatureChaining" flags="ng" index="27BsWE">
         <reference id="8934755281089556413" name="chainingFeature" index="27BsWF" />
       </concept>
@@ -341,6 +347,28 @@
         </node>
         <node concept="27BsWE" id="7JYC9rWCkyE" role="27Biex">
           <ref role="27BsWF" node="7JYC9rVyBqr" resolve="power" />
+        </node>
+      </node>
+    </node>
+    <node concept="20Nsyr" id="7JYC9rWMb7k" role="21vIyQ">
+      <property role="TrG5h" value="Pairing" />
+      <node concept="20GSug" id="7JYC9rWMb7l" role="21vIyQ">
+        <property role="20tdI4" value="true" />
+        <property role="TrG5h" value="leader" />
+      </node>
+      <node concept="20GSug" id="7JYC9rWMb7m" role="21vIyQ">
+        <property role="20tdI4" value="true" />
+        <property role="TrG5h" value="follower" />
+        <node concept="27kRjG" id="7JYC9rWMb7n" role="27kOx_">
+          <ref role="27kRjH" node="7JYC9rWMb7l" resolve="leader" />
+        </node>
+      </node>
+      <node concept="20GSug" id="7JYC9rWMb7o" role="21vIyQ">
+        <property role="20tdI4" value="true" />
+        <property role="TrG5h" value="leaderEnd" />
+        <property role="20GSuo" value="true" />
+        <node concept="27kRjJ" id="7JYC9rWMb7p" role="214t28">
+          <ref role="214t29" node="7JYC9rWMb7l" resolve="leader" />
         </node>
       </node>
     </node>
