@@ -87,7 +87,8 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    names via `ref. presentation`. Tests `_020_QualifiedName`, `_070_NameResolution` (its fixture also imports the nested `Units::Engine`; the model checker guards that constraint link).
    Visibility — **done (uncommitted)**: `IKerMLNamespaceMember.isPublic()`; imports bring only public members unless `isImportAll`; qualified access `A::x` sees all members from inside `A`
    (viewer is a descendant) and only public ones (plus imports) from outside (`KerMLNamespace.memberScopeFor`). Test `_080_Visibility`. The sandbox `Fleet` import of the private
-   `Vehicles::Parts::Drivetrain` is now `isImportAll = true` (the editor has no `import all` cell yet — needs a `FlagCell` / grammar cell).
+   `Vehicles::Parts::Drivetrain` is `isImportAll = true`; the import editors now have an `all` `FlagCell` (editor test `_090_ImportAll_TypeAll`; the KerML editor model carries the same
+   `DummyForGrammarCells` workaround as sysmlv2.baselan, otherwise grammar-cells reports "missing dependency on jetbrains.mps.lang.core").
    Still open: protected visibility (specializations), re-exported imports (an import's own `visibility`), nested namespaces behind a private namespace still listed in available elements,
    recursive imports (`isRecursive`), import-cycle handling, a test for the `annotatedElement`
    constraint and an editor test for the import display, `@Nullable` on `getAvailableElements(prefix)`; derived `member`/`membership`/`shortName` views with visibility.

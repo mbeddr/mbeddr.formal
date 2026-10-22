@@ -1567,5 +1567,36 @@
       </node>
     </node>
   </node>
+  <node concept="LiM7Y" id="7JYC9rUL6hS">
+    <property role="3YCmrE" value="typing all after the import keyword sets isImportAll" />
+    <property role="TrG5h" value="_090_ImportAll_TypeAll" />
+    <node concept="1qefOq" id="7JYC9rUL6hT" role="25YQCW">
+      <node concept="2jMsK_" id="7JYC9rUL6hV" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="2jMsKA" id="7JYC9rUL6hW" role="21vIyQ">
+          <node concept="LIFWc" id="7JYC9rUL6hX" role="lGtFl">
+            <property role="LIFWd" value="Constant_ray8j1_b0a" />
+            <property role="ZRATv" value="true" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="6" />
+            <property role="p6zMs" value="6" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="7JYC9rUL6hY" role="25YQFr">
+      <node concept="2jMsK_" id="7JYC9rUL6i0" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="2jMsKA" id="7JYC9rUL6i1" role="21vIyQ">
+          <property role="2jMsKO" value="true" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="7JYC9rUL6i2" role="LjaKd">
+      <node concept="2TK7Tu" id="7JYC9rUL6i3" role="3cqZAp">
+        <property role="2TTd_B" value="all" />
+      </node>
+    </node>
+  </node>
 </model>
 
