@@ -2770,225 +2770,391 @@
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
     </node>
-    <node concept="3clFb_" id="7JYC9rXCnzq" role="jymVt">
+    <node concept="3clFb_" id="5ipQkCI8z5f" role="jymVt">
       <property role="TrG5h" value="visitImportRule" />
-      <node concept="2AHcQZ" id="7JYC9rXCnzr" role="2AJF6D">
+      <node concept="2AHcQZ" id="5ipQkCI8z5g" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="37vLTG" id="7JYC9rXCnzs" role="3clF46">
+      <node concept="37vLTG" id="5ipQkCI8z5h" role="3clF46">
         <property role="TrG5h" value="ctx" />
-        <node concept="3uibUv" id="7JYC9rXCnzt" role="1tU5fm">
+        <node concept="3uibUv" id="5ipQkCI8z5i" role="1tU5fm">
           <ref role="3uigEE" to="rjc7:~KerMLParser$ImportRuleContext" resolve="ImportRuleContext" />
         </node>
       </node>
-      <node concept="3clFbS" id="7JYC9rXCnzu" role="3clF47">
-        <node concept="3clFbJ" id="7JYC9rXCnzv" role="3cqZAp">
-          <node concept="3clFbC" id="7JYC9rXCnzw" role="3clFbw">
-            <node concept="2OqwBi" id="7JYC9rXCNyq" role="3uHU7B">
-              <node concept="37vLTw" id="7JYC9rXCvP2" role="2Oq$k0">
-                <ref role="3cqZAo" node="7JYC9rXCnzs" resolve="ctx" />
-              </node>
-              <node concept="liA8E" id="7JYC9rXCNyr" role="2OqNvi">
-                <ref role="37wK5l" to="rjc7:~KerMLParser$ImportRuleContext.membershipImport()" resolve="membershipImport" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="7JYC9rXCnzy" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="7JYC9rXCnz$" role="3clFbx">
-            <node concept="YS8fn" id="7JYC9rXCnzB" role="3cqZAp">
-              <node concept="1rXfSq" id="7JYC9rXCnz_" role="YScLw">
-                <ref role="37wK5l" node="7JYC9rXCnNK" resolve="unsupported" />
-                <node concept="Xl_RD" id="7JYC9rXCnzA" role="37wK5m">
-                  <property role="Xl_RC" value="namespace import" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="7JYC9rXCnzC" role="3cqZAp">
-          <node concept="3fqX7Q" id="7JYC9rXCnzD" role="3clFbw">
-            <node concept="2OqwBi" id="7JYC9rXCSIf" role="3fr31v">
-              <node concept="2OqwBi" id="7JYC9rXCRLP" role="2Oq$k0">
-                <node concept="2OqwBi" id="7JYC9rXCNyP" role="2Oq$k0">
-                  <node concept="37vLTw" id="7JYC9rXCvXV" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7JYC9rXCnzs" resolve="ctx" />
+      <node concept="3clFbS" id="5ipQkCI8z5j" role="3clF47">
+        <node concept="3clFbJ" id="5ipQkCI8z5k" role="3cqZAp">
+          <node concept="3fqX7Q" id="5ipQkCI8z5l" role="3clFbw">
+            <node concept="1eOMI4" id="5ipQkCI8z5p" role="3fr31v">
+              <node concept="2OqwBi" id="5ipQkCI8BHI" role="1eOMHV">
+                <node concept="2OqwBi" id="5ipQkCI8BDe" role="2Oq$k0">
+                  <node concept="2OqwBi" id="5ipQkCI8ANo" role="2Oq$k0">
+                    <node concept="37vLTw" id="5ipQkCI8$SH" role="2Oq$k0">
+                      <ref role="3cqZAo" node="5ipQkCI8z5h" resolve="ctx" />
+                    </node>
+                    <node concept="liA8E" id="5ipQkCI8ANp" role="2OqNvi">
+                      <ref role="37wK5l" to="rjc7:~KerMLParser$ImportRuleContext.relationshipBody()" resolve="relationshipBody" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="7JYC9rXCNyQ" role="2OqNvi">
-                    <ref role="37wK5l" to="rjc7:~KerMLParser$ImportRuleContext.relationshipBody()" resolve="relationshipBody" />
+                  <node concept="liA8E" id="5ipQkCI8BDf" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$RelationshipBodyContext.relationshipOwnedElement()" resolve="relationshipOwnedElement" />
                   </node>
                 </node>
-                <node concept="liA8E" id="7JYC9rXCRLQ" role="2OqNvi">
-                  <ref role="37wK5l" to="rjc7:~KerMLParser$RelationshipBodyContext.relationshipOwnedElement()" resolve="relationshipOwnedElement" />
+                <node concept="liA8E" id="5ipQkCI8BHJ" role="2OqNvi">
+                  <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
                 </node>
-              </node>
-              <node concept="liA8E" id="7JYC9rXCSIg" role="2OqNvi">
-                <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
               </node>
             </node>
           </node>
-          <node concept="3clFbS" id="7JYC9rXCnzI" role="3clFbx">
-            <node concept="YS8fn" id="7JYC9rXCnzL" role="3cqZAp">
-              <node concept="1rXfSq" id="7JYC9rXCnzJ" role="YScLw">
+          <node concept="3clFbS" id="5ipQkCI8z5r" role="3clFbx">
+            <node concept="YS8fn" id="5ipQkCI8z5u" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCI8z5s" role="YScLw">
                 <ref role="37wK5l" node="7JYC9rXCnNK" resolve="unsupported" />
-                <node concept="Xl_RD" id="7JYC9rXCnzK" role="37wK5m">
+                <node concept="Xl_RD" id="5ipQkCI8z5t" role="37wK5m">
                   <property role="Xl_RC" value="import body" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs8" id="7JYC9rXCnzN" role="3cqZAp">
-          <node concept="3cpWsn" id="7JYC9rXCnzM" role="3cpWs9">
-            <property role="TrG5h" value="membership" />
-            <node concept="3uibUv" id="7JYC9rXCnzO" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser$MembershipImportContext" resolve="MembershipImportContext" />
-            </node>
-            <node concept="2OqwBi" id="7JYC9rXCNz0" role="33vP2m">
-              <node concept="37vLTw" id="7JYC9rXCw6$" role="2Oq$k0">
-                <ref role="3cqZAo" node="7JYC9rXCnzs" resolve="ctx" />
+        <node concept="3clFbJ" id="5ipQkCI8z5v" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCI8z5w" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCI8ANz" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCI8_1m" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCI8z5h" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="7JYC9rXCNz1" role="2OqNvi">
+              <node concept="liA8E" id="5ipQkCI8AN$" role="2OqNvi">
                 <ref role="37wK5l" to="rjc7:~KerMLParser$ImportRuleContext.membershipImport()" resolve="membershipImport" />
               </node>
             </node>
+            <node concept="10Nm6u" id="5ipQkCI8z5y" role="3uHU7w" />
           </node>
-        </node>
-        <node concept="3cpWs8" id="7JYC9rXCnzR" role="3cqZAp">
-          <node concept="3cpWsn" id="7JYC9rXCnzQ" role="3cpWs9">
-            <property role="TrG5h" value="imp" />
-            <node concept="3uibUv" id="7JYC9rXCnzS" role="1tU5fm">
-              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+          <node concept="3clFbS" id="5ipQkCI8z5$" role="3clFbx">
+            <node concept="3cpWs8" id="5ipQkCI8z5A" role="3cqZAp">
+              <node concept="3cpWsn" id="5ipQkCI8z5_" role="3cpWs9">
+                <property role="TrG5h" value="membership" />
+                <node concept="3uibUv" id="5ipQkCI8z5B" role="1tU5fm">
+                  <ref role="3uigEE" to="rjc7:~KerMLParser$MembershipImportContext" resolve="MembershipImportContext" />
+                </node>
+                <node concept="2OqwBi" id="5ipQkCI8ANI" role="33vP2m">
+                  <node concept="37vLTw" id="5ipQkCI8_9Z" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCI8z5h" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="5ipQkCI8ANJ" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$ImportRuleContext.membershipImport()" resolve="membershipImport" />
+                  </node>
+                </node>
+              </node>
             </node>
-            <node concept="2YIFZM" id="7JYC9rXCwfd" role="33vP2m">
-              <ref role="1Pybhc" node="7JYC9rXCgfK" resolve="KerMLNodes" />
-              <ref role="37wK5l" node="7JYC9rXCgfX" resolve="create" />
-              <node concept="Xl_RD" id="7JYC9rXCwfe" role="37wK5m">
-                <property role="Xl_RC" value="KerMLMembershipImport" />
+            <node concept="3cpWs8" id="5ipQkCI8z5E" role="3cqZAp">
+              <node concept="3cpWsn" id="5ipQkCI8z5D" role="3cpWs9">
+                <property role="TrG5h" value="imp" />
+                <node concept="3uibUv" id="5ipQkCI8z5F" role="1tU5fm">
+                  <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+                </node>
+                <node concept="2YIFZM" id="5ipQkCI8_iC" role="33vP2m">
+                  <ref role="1Pybhc" node="7JYC9rXCgfK" resolve="KerMLNodes" />
+                  <ref role="37wK5l" node="7JYC9rXCgfX" resolve="create" />
+                  <node concept="Xl_RD" id="5ipQkCI8_iD" role="37wK5m">
+                    <property role="Xl_RC" value="KerMLMembershipImport" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5ipQkCI8z5I" role="3cqZAp">
+              <node concept="2YIFZM" id="5ipQkCI8_rh" role="3clFbG">
+                <ref role="1Pybhc" node="7JYC9rXCgfK" resolve="KerMLNodes" />
+                <ref role="37wK5l" node="7JYC9rXCghk" resolve="setEnum" />
+                <node concept="37vLTw" id="5ipQkCI8_ri" role="37wK5m">
+                  <ref role="3cqZAo" node="5ipQkCI8z5D" resolve="imp" />
+                </node>
+                <node concept="Xl_RD" id="5ipQkCI8_rj" role="37wK5m">
+                  <property role="Xl_RC" value="visibility" />
+                </node>
+                <node concept="2OqwBi" id="5ipQkCI8BIX" role="37wK5m">
+                  <node concept="2OqwBi" id="5ipQkCI8_rl" role="2Oq$k0">
+                    <node concept="2OqwBi" id="5ipQkCI8BDC" role="2Oq$k0">
+                      <node concept="37vLTw" id="5ipQkCI8AW_" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5ipQkCI8z5_" resolve="membership" />
+                      </node>
+                      <node concept="liA8E" id="5ipQkCI8BDD" role="2OqNvi">
+                        <ref role="37wK5l" to="rjc7:~KerMLParser$MembershipImportContext.importPrefix()" resolve="importPrefix" />
+                      </node>
+                    </node>
+                    <node concept="2OwXpG" id="5ipQkCI8_rn" role="2OqNvi">
+                      <ref role="2Oxat5" to="rjc7:~KerMLParser$ImportPrefixContext.visibility" resolve="visibility" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="5ipQkCI8BIY" role="2OqNvi">
+                    <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5ipQkCI8z5Q" role="3cqZAp">
+              <node concept="2YIFZM" id="5ipQkCI8_$7" role="3clFbG">
+                <ref role="1Pybhc" node="7JYC9rXCgfK" resolve="KerMLNodes" />
+                <ref role="37wK5l" node="7JYC9rXCggM" resolve="set" />
+                <node concept="37vLTw" id="5ipQkCI8_$8" role="37wK5m">
+                  <ref role="3cqZAo" node="5ipQkCI8z5D" resolve="imp" />
+                </node>
+                <node concept="Xl_RD" id="5ipQkCI8_$9" role="37wK5m">
+                  <property role="Xl_RC" value="isImportAll" />
+                </node>
+                <node concept="3y3z36" id="5ipQkCI8_$a" role="37wK5m">
+                  <node concept="2OqwBi" id="5ipQkCI8_$b" role="3uHU7B">
+                    <node concept="2OqwBi" id="5ipQkCI8BDO" role="2Oq$k0">
+                      <node concept="37vLTw" id="5ipQkCI8B5e" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5ipQkCI8z5_" resolve="membership" />
+                      </node>
+                      <node concept="liA8E" id="5ipQkCI8BDP" role="2OqNvi">
+                        <ref role="37wK5l" to="rjc7:~KerMLParser$MembershipImportContext.importPrefix()" resolve="importPrefix" />
+                      </node>
+                    </node>
+                    <node concept="2OwXpG" id="5ipQkCI8_$d" role="2OqNvi">
+                      <ref role="2Oxat5" to="rjc7:~KerMLParser$ImportPrefixContext.isImportAll" resolve="isImportAll" />
+                    </node>
+                  </node>
+                  <node concept="10Nm6u" id="5ipQkCI8_$e" role="3uHU7w" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5ipQkCI8z5Z" role="3cqZAp">
+              <node concept="2YIFZM" id="5ipQkCI8_GY" role="3clFbG">
+                <ref role="1Pybhc" node="7JYC9rXCgfK" resolve="KerMLNodes" />
+                <ref role="37wK5l" node="7JYC9rXCggM" resolve="set" />
+                <node concept="37vLTw" id="5ipQkCI8_GZ" role="37wK5m">
+                  <ref role="3cqZAo" node="5ipQkCI8z5D" resolve="imp" />
+                </node>
+                <node concept="Xl_RD" id="5ipQkCI8_H0" role="37wK5m">
+                  <property role="Xl_RC" value="isRecursive" />
+                </node>
+                <node concept="3y3z36" id="5ipQkCI8_H1" role="37wK5m">
+                  <node concept="2OqwBi" id="5ipQkCI8_H2" role="3uHU7B">
+                    <node concept="2OqwBi" id="5ipQkCI8BE0" role="2Oq$k0">
+                      <node concept="37vLTw" id="5ipQkCI8BdR" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5ipQkCI8z5_" resolve="membership" />
+                      </node>
+                      <node concept="liA8E" id="5ipQkCI8BE1" role="2OqNvi">
+                        <ref role="37wK5l" to="rjc7:~KerMLParser$MembershipImportContext.importedMembership()" resolve="importedMembership" />
+                      </node>
+                    </node>
+                    <node concept="2OwXpG" id="5ipQkCI8_H4" role="2OqNvi">
+                      <ref role="2Oxat5" to="rjc7:~KerMLParser$ImportedMembershipContext.isRecursive" resolve="isRecursive" />
+                    </node>
+                  </node>
+                  <node concept="10Nm6u" id="5ipQkCI8_H5" role="3uHU7w" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="5ipQkCI8z68" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCI8z69" role="3clFbG">
+                <ref role="37wK5l" node="7JYC9rXCnKV" resolve="pending" />
+                <node concept="37vLTw" id="5ipQkCI8z6a" role="37wK5m">
+                  <ref role="3cqZAo" node="5ipQkCI8z5D" resolve="imp" />
+                </node>
+                <node concept="Xl_RD" id="5ipQkCI8z6b" role="37wK5m">
+                  <property role="Xl_RC" value="importedElement" />
+                </node>
+                <node concept="1rXfSq" id="5ipQkCI8z6c" role="37wK5m">
+                  <ref role="37wK5l" node="7JYC9rXCnLb" resolve="qualifiedName" />
+                  <node concept="2OqwBi" id="5ipQkCI8z6d" role="37wK5m">
+                    <node concept="2OqwBi" id="5ipQkCI8Be3" role="2Oq$k0">
+                      <node concept="37vLTw" id="5ipQkCI8_PP" role="2Oq$k0">
+                        <ref role="3cqZAo" node="5ipQkCI8z5_" resolve="membership" />
+                      </node>
+                      <node concept="liA8E" id="5ipQkCI8Be4" role="2OqNvi">
+                        <ref role="37wK5l" to="rjc7:~KerMLParser$MembershipImportContext.importedMembership()" resolve="importedMembership" />
+                      </node>
+                    </node>
+                    <node concept="2OwXpG" id="5ipQkCI8z6f" role="2OqNvi">
+                      <ref role="2Oxat5" to="rjc7:~KerMLParser$ImportedMembershipContext.importedMembershipName" resolve="importedMembershipName" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="5ipQkCI8z6g" role="3cqZAp">
+              <node concept="37vLTw" id="5ipQkCI8z6h" role="3cqZAk">
+                <ref role="3cqZAo" node="5ipQkCI8z5D" resolve="imp" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7JYC9rXCnzV" role="3cqZAp">
-          <node concept="2YIFZM" id="7JYC9rXCwnQ" role="3clFbG">
+        <node concept="3cpWs8" id="5ipQkCI8z6j" role="3cqZAp">
+          <node concept="3cpWsn" id="5ipQkCI8z6i" role="3cpWs9">
+            <property role="TrG5h" value="namespace" />
+            <node concept="3uibUv" id="5ipQkCI8z6k" role="1tU5fm">
+              <ref role="3uigEE" to="rjc7:~KerMLParser$NamespaceImportContext" resolve="NamespaceImportContext" />
+            </node>
+            <node concept="2OqwBi" id="5ipQkCI8Bee" role="33vP2m">
+              <node concept="37vLTw" id="5ipQkCI8_Yu" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCI8z5h" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCI8Bef" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$ImportRuleContext.namespaceImport()" resolve="namespaceImport" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5ipQkCI8z6m" role="3cqZAp">
+          <node concept="3clFbC" id="5ipQkCI8z6n" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCI8Beq" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCI8A77" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCI8z6i" resolve="namespace" />
+              </node>
+              <node concept="liA8E" id="5ipQkCI8Ber" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$NamespaceImportContext.importedNamespace()" resolve="importedNamespace" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCI8z6p" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5ipQkCI8z6r" role="3clFbx">
+            <node concept="YS8fn" id="5ipQkCI8z6u" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCI8z6s" role="YScLw">
+                <ref role="37wK5l" node="7JYC9rXCnNK" resolve="unsupported" />
+                <node concept="Xl_RD" id="5ipQkCI8z6t" role="37wK5m">
+                  <property role="Xl_RC" value="filter package import" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5ipQkCI8z6w" role="3cqZAp">
+          <node concept="3cpWsn" id="5ipQkCI8z6v" role="3cpWs9">
+            <property role="TrG5h" value="imp" />
+            <node concept="3uibUv" id="5ipQkCI8z6x" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+            <node concept="2YIFZM" id="5ipQkCI8AfK" role="33vP2m">
+              <ref role="1Pybhc" node="7JYC9rXCgfK" resolve="KerMLNodes" />
+              <ref role="37wK5l" node="7JYC9rXCgfX" resolve="create" />
+              <node concept="Xl_RD" id="5ipQkCI8AfL" role="37wK5m">
+                <property role="Xl_RC" value="KerMLNamespaceImport" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCI8z6$" role="3cqZAp">
+          <node concept="2YIFZM" id="5ipQkCI8Aop" role="3clFbG">
             <ref role="1Pybhc" node="7JYC9rXCgfK" resolve="KerMLNodes" />
             <ref role="37wK5l" node="7JYC9rXCghk" resolve="setEnum" />
-            <node concept="37vLTw" id="7JYC9rXCwnR" role="37wK5m">
-              <ref role="3cqZAo" node="7JYC9rXCnzQ" resolve="imp" />
+            <node concept="37vLTw" id="5ipQkCI8Aoq" role="37wK5m">
+              <ref role="3cqZAo" node="5ipQkCI8z6v" resolve="imp" />
             </node>
-            <node concept="Xl_RD" id="7JYC9rXCwnS" role="37wK5m">
+            <node concept="Xl_RD" id="5ipQkCI8Aor" role="37wK5m">
               <property role="Xl_RC" value="visibility" />
             </node>
-            <node concept="2OqwBi" id="7JYC9rXCSJp" role="37wK5m">
-              <node concept="2OqwBi" id="7JYC9rXCwnU" role="2Oq$k0">
-                <node concept="2OqwBi" id="7JYC9rXCRMf" role="2Oq$k0">
-                  <node concept="37vLTw" id="7JYC9rXCNFR" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7JYC9rXCnzM" resolve="membership" />
+            <node concept="2OqwBi" id="5ipQkCI8BKg" role="37wK5m">
+              <node concept="2OqwBi" id="5ipQkCI8Aot" role="2Oq$k0">
+                <node concept="2OqwBi" id="5ipQkCI8BEq" role="2Oq$k0">
+                  <node concept="37vLTw" id="5ipQkCI8Bnh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCI8z6i" resolve="namespace" />
                   </node>
-                  <node concept="liA8E" id="7JYC9rXCRMg" role="2OqNvi">
-                    <ref role="37wK5l" to="rjc7:~KerMLParser$MembershipImportContext.importPrefix()" resolve="importPrefix" />
+                  <node concept="liA8E" id="5ipQkCI8BEr" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$NamespaceImportContext.importPrefix()" resolve="importPrefix" />
                   </node>
                 </node>
-                <node concept="2OwXpG" id="7JYC9rXCwnW" role="2OqNvi">
+                <node concept="2OwXpG" id="5ipQkCI8Aov" role="2OqNvi">
                   <ref role="2Oxat5" to="rjc7:~KerMLParser$ImportPrefixContext.visibility" resolve="visibility" />
                 </node>
               </node>
-              <node concept="liA8E" id="7JYC9rXCSJq" role="2OqNvi">
+              <node concept="liA8E" id="5ipQkCI8BKh" role="2OqNvi">
                 <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7JYC9rXCn$3" role="3cqZAp">
-          <node concept="2YIFZM" id="7JYC9rXCwwG" role="3clFbG">
+        <node concept="3clFbF" id="5ipQkCI8z6G" role="3cqZAp">
+          <node concept="2YIFZM" id="5ipQkCI8Axf" role="3clFbG">
             <ref role="1Pybhc" node="7JYC9rXCgfK" resolve="KerMLNodes" />
             <ref role="37wK5l" node="7JYC9rXCggM" resolve="set" />
-            <node concept="37vLTw" id="7JYC9rXCwwH" role="37wK5m">
-              <ref role="3cqZAo" node="7JYC9rXCnzQ" resolve="imp" />
+            <node concept="37vLTw" id="5ipQkCI8Axg" role="37wK5m">
+              <ref role="3cqZAo" node="5ipQkCI8z6v" resolve="imp" />
             </node>
-            <node concept="Xl_RD" id="7JYC9rXCwwI" role="37wK5m">
+            <node concept="Xl_RD" id="5ipQkCI8Axh" role="37wK5m">
               <property role="Xl_RC" value="isImportAll" />
             </node>
-            <node concept="3y3z36" id="7JYC9rXCwwJ" role="37wK5m">
-              <node concept="2OqwBi" id="7JYC9rXCwwK" role="3uHU7B">
-                <node concept="2OqwBi" id="7JYC9rXCRMr" role="2Oq$k0">
-                  <node concept="37vLTw" id="7JYC9rXCNOw" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7JYC9rXCnzM" resolve="membership" />
+            <node concept="3y3z36" id="5ipQkCI8Axi" role="37wK5m">
+              <node concept="2OqwBi" id="5ipQkCI8Axj" role="3uHU7B">
+                <node concept="2OqwBi" id="5ipQkCI8BEA" role="2Oq$k0">
+                  <node concept="37vLTw" id="5ipQkCI8BvU" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCI8z6i" resolve="namespace" />
                   </node>
-                  <node concept="liA8E" id="7JYC9rXCRMs" role="2OqNvi">
-                    <ref role="37wK5l" to="rjc7:~KerMLParser$MembershipImportContext.importPrefix()" resolve="importPrefix" />
+                  <node concept="liA8E" id="5ipQkCI8BEB" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$NamespaceImportContext.importPrefix()" resolve="importPrefix" />
                   </node>
                 </node>
-                <node concept="2OwXpG" id="7JYC9rXCwwM" role="2OqNvi">
+                <node concept="2OwXpG" id="5ipQkCI8Axl" role="2OqNvi">
                   <ref role="2Oxat5" to="rjc7:~KerMLParser$ImportPrefixContext.isImportAll" resolve="isImportAll" />
                 </node>
               </node>
-              <node concept="10Nm6u" id="7JYC9rXCwwN" role="3uHU7w" />
+              <node concept="10Nm6u" id="5ipQkCI8Axm" role="3uHU7w" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7JYC9rXCn$c" role="3cqZAp">
-          <node concept="2YIFZM" id="7JYC9rXCwDz" role="3clFbG">
+        <node concept="3clFbF" id="5ipQkCI8z6P" role="3cqZAp">
+          <node concept="2YIFZM" id="5ipQkCI8AE6" role="3clFbG">
             <ref role="1Pybhc" node="7JYC9rXCgfK" resolve="KerMLNodes" />
             <ref role="37wK5l" node="7JYC9rXCggM" resolve="set" />
-            <node concept="37vLTw" id="7JYC9rXCwD$" role="37wK5m">
-              <ref role="3cqZAo" node="7JYC9rXCnzQ" resolve="imp" />
+            <node concept="37vLTw" id="5ipQkCI8AE7" role="37wK5m">
+              <ref role="3cqZAo" node="5ipQkCI8z6v" resolve="imp" />
             </node>
-            <node concept="Xl_RD" id="7JYC9rXCwD_" role="37wK5m">
+            <node concept="Xl_RD" id="5ipQkCI8AE8" role="37wK5m">
               <property role="Xl_RC" value="isRecursive" />
             </node>
-            <node concept="3y3z36" id="7JYC9rXCwDA" role="37wK5m">
-              <node concept="2OqwBi" id="7JYC9rXCwDB" role="3uHU7B">
-                <node concept="2OqwBi" id="7JYC9rXCRMB" role="2Oq$k0">
-                  <node concept="37vLTw" id="7JYC9rXCNX9" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7JYC9rXCnzM" resolve="membership" />
+            <node concept="3y3z36" id="5ipQkCI8AE9" role="37wK5m">
+              <node concept="2OqwBi" id="5ipQkCI8AEa" role="3uHU7B">
+                <node concept="2OqwBi" id="5ipQkCI8BEM" role="2Oq$k0">
+                  <node concept="37vLTw" id="5ipQkCI8BCz" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCI8z6i" resolve="namespace" />
                   </node>
-                  <node concept="liA8E" id="7JYC9rXCRMC" role="2OqNvi">
-                    <ref role="37wK5l" to="rjc7:~KerMLParser$MembershipImportContext.importedMembership()" resolve="importedMembership" />
+                  <node concept="liA8E" id="5ipQkCI8BEN" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$NamespaceImportContext.importedNamespace()" resolve="importedNamespace" />
                   </node>
                 </node>
-                <node concept="2OwXpG" id="7JYC9rXCwDD" role="2OqNvi">
-                  <ref role="2Oxat5" to="rjc7:~KerMLParser$ImportedMembershipContext.isRecursive" resolve="isRecursive" />
+                <node concept="2OwXpG" id="5ipQkCI8AEc" role="2OqNvi">
+                  <ref role="2Oxat5" to="rjc7:~KerMLParser$ImportedNamespaceContext.isRecursive" resolve="isRecursive" />
                 </node>
               </node>
-              <node concept="10Nm6u" id="7JYC9rXCwDE" role="3uHU7w" />
+              <node concept="10Nm6u" id="5ipQkCI8AEd" role="3uHU7w" />
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="7JYC9rXCn$l" role="3cqZAp">
-          <node concept="1rXfSq" id="7JYC9rXCn$m" role="3clFbG">
+        <node concept="3clFbF" id="5ipQkCI8z6Y" role="3cqZAp">
+          <node concept="1rXfSq" id="5ipQkCI8z6Z" role="3clFbG">
             <ref role="37wK5l" node="7JYC9rXCnKV" resolve="pending" />
-            <node concept="37vLTw" id="7JYC9rXCn$n" role="37wK5m">
-              <ref role="3cqZAo" node="7JYC9rXCnzQ" resolve="imp" />
+            <node concept="37vLTw" id="5ipQkCI8z70" role="37wK5m">
+              <ref role="3cqZAo" node="5ipQkCI8z6v" resolve="imp" />
             </node>
-            <node concept="Xl_RD" id="7JYC9rXCn$o" role="37wK5m">
-              <property role="Xl_RC" value="importedElement" />
+            <node concept="Xl_RD" id="5ipQkCI8z71" role="37wK5m">
+              <property role="Xl_RC" value="importedNamespace" />
             </node>
-            <node concept="1rXfSq" id="7JYC9rXCn$p" role="37wK5m">
+            <node concept="1rXfSq" id="5ipQkCI8z72" role="37wK5m">
               <ref role="37wK5l" node="7JYC9rXCnLb" resolve="qualifiedName" />
-              <node concept="2OqwBi" id="7JYC9rXCn$q" role="37wK5m">
-                <node concept="2OqwBi" id="7JYC9rXCNXl" role="2Oq$k0">
-                  <node concept="37vLTw" id="7JYC9rXCwMq" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7JYC9rXCnzM" resolve="membership" />
+              <node concept="2OqwBi" id="5ipQkCI8z73" role="37wK5m">
+                <node concept="2OqwBi" id="5ipQkCI8BCJ" role="2Oq$k0">
+                  <node concept="37vLTw" id="5ipQkCI8AMX" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCI8z6i" resolve="namespace" />
                   </node>
-                  <node concept="liA8E" id="7JYC9rXCNXm" role="2OqNvi">
-                    <ref role="37wK5l" to="rjc7:~KerMLParser$MembershipImportContext.importedMembership()" resolve="importedMembership" />
+                  <node concept="liA8E" id="5ipQkCI8BCK" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$NamespaceImportContext.importedNamespace()" resolve="importedNamespace" />
                   </node>
                 </node>
-                <node concept="2OwXpG" id="7JYC9rXCn$s" role="2OqNvi">
-                  <ref role="2Oxat5" to="rjc7:~KerMLParser$ImportedMembershipContext.importedMembershipName" resolve="importedMembershipName" />
+                <node concept="2OwXpG" id="5ipQkCI8z75" role="2OqNvi">
+                  <ref role="2Oxat5" to="rjc7:~KerMLParser$ImportedNamespaceContext.importedNamespaceName" resolve="importedNamespaceName" />
                 </node>
               </node>
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="7JYC9rXCn$t" role="3cqZAp">
-          <node concept="37vLTw" id="7JYC9rXCn$u" role="3cqZAk">
-            <ref role="3cqZAo" node="7JYC9rXCnzQ" resolve="imp" />
+        <node concept="3cpWs6" id="5ipQkCI8z76" role="3cqZAp">
+          <node concept="37vLTw" id="5ipQkCI8z77" role="3cqZAk">
+            <ref role="3cqZAo" node="5ipQkCI8z6v" resolve="imp" />
           </node>
         </node>
       </node>
-      <node concept="3Tm1VV" id="7JYC9rXCn$v" role="1B3o_S" />
-      <node concept="3uibUv" id="7JYC9rXCn$w" role="3clF45">
+      <node concept="3Tm1VV" id="5ipQkCI8z78" role="1B3o_S" />
+      <node concept="3uibUv" id="5ipQkCI8z79" role="3clF45">
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
     </node>
