@@ -181,5 +181,45 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5ipQkCJs0hv">
+    <property role="TrG5h" value="KerMLDisjoining_Constraints" />
+    <ref role="1M2myG" to="rb60:5ipQkCJrYIC" resolve="KerMLDisjoining" />
+    <node concept="1N5Pfh" id="5ipQkCJs0hw" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:5ipQkCJrYIG" />
+      <node concept="1dDu$B" id="5ipQkCJs0hx" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5ipQkCJs0hy">
+    <property role="TrG5h" value="KerMLUnioning_Constraints" />
+    <ref role="1M2myG" to="rb60:5ipQkCJrYID" resolve="KerMLUnioning" />
+    <node concept="1N5Pfh" id="5ipQkCJs0hz" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:5ipQkCJrYII" />
+      <node concept="1dDu$B" id="5ipQkCJs0h$" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5ipQkCJs0h_">
+    <property role="TrG5h" value="KerMLIntersecting_Constraints" />
+    <ref role="1M2myG" to="rb60:5ipQkCJrYIE" resolve="KerMLIntersecting" />
+    <node concept="1N5Pfh" id="5ipQkCJs0hA" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:5ipQkCJrYIK" />
+      <node concept="1dDu$B" id="5ipQkCJs0hB" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5ipQkCJs0hC">
+    <property role="TrG5h" value="KerMLDifferencing_Constraints" />
+    <ref role="1M2myG" to="rb60:5ipQkCJrYIF" resolve="KerMLDifferencing" />
+    <node concept="1N5Pfh" id="5ipQkCJs0hD" role="1Mr941">
+      <ref role="1N5Vy1" to="rb60:5ipQkCJrYIM" />
+      <node concept="1dDu$B" id="5ipQkCJs0hE" role="1N6uqs">
+        <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
+      </node>
+    </node>
+  </node>
 </model>
 

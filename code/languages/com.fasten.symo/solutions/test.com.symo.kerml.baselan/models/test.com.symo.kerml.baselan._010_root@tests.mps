@@ -156,6 +156,10 @@
       <concept id="8934755281065177114" name="com.symo.kerml.baselan.structure.KerMLType" flags="ng" index="214t2c">
         <child id="8934755281075338003" name="multiplicity" index="20tdI5" />
         <child id="8934755281065177118" name="ownedSpecialization" index="214t28" />
+        <child id="6096142483269354575" name="ownedDisjoining" index="1VUtO5" />
+        <child id="6096142483269354587" name="ownedDifferencing" index="1VUtOh" />
+        <child id="6096142483269354579" name="ownedUnioning" index="1VUtOp" />
+        <child id="6096142483269354583" name="ownedIntersecting" index="1VUtOt" />
       </concept>
       <concept id="8934755281065177115" name="com.symo.kerml.baselan.structure.KerMLSpecialization" flags="ng" index="214t2d">
         <reference id="8934755281065177119" name="general" index="214t29" />
@@ -203,6 +207,10 @@
       <concept id="6096142483258886567" name="com.symo.kerml.baselan.structure.KerMLAssociationStructure" flags="ng" index="1Uip3H" />
       <concept id="6096142483258886564" name="com.symo.kerml.baselan.structure.KerMLClass" flags="ng" index="1Uip3I" />
       <concept id="6096142483258886565" name="com.symo.kerml.baselan.structure.KerMLStructure" flags="ng" index="1Uip3J" />
+      <concept id="6096142483269348266" name="com.symo.kerml.baselan.structure.KerMLIntersecting" flags="ng" index="1VXzbw" />
+      <concept id="6096142483269348267" name="com.symo.kerml.baselan.structure.KerMLDifferencing" flags="ng" index="1VXzbx" />
+      <concept id="6096142483269348264" name="com.symo.kerml.baselan.structure.KerMLDisjoining" flags="ng" index="1VXzby" />
+      <concept id="6096142483269348265" name="com.symo.kerml.baselan.structure.KerMLUnioning" flags="ng" index="1VXzbz" />
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
@@ -4617,6 +4625,166 @@
         <property role="2TTd_B" value="T" />
       </node>
     </node>
+  </node>
+  <node concept="LiM7Y" id="5ipQkCJKl4e">
+    <property role="TrG5h" value="_390_Class_TypeRelDisjoint" />
+    <property role="3YCmrE" value="disjoint from cell present" />
+    <node concept="1qefOq" id="5ipQkCK3AnV" role="25YQCW">
+      <node concept="2jMsK_" id="5ipQkCK3AnX" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3I" id="5ipQkCK3AnY" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+          <node concept="LIFWc" id="5ipQkCK3AnZ" role="lGtFl">
+            <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+            <property role="LIFWd" value="refNodeList_ownedDisjoining" />
+            <property role="ZRATv" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+          </node>
+          <node concept="1VXzby" id="5ipQkCK3Ao0" role="1VUtO5">
+            <property role="TrG5h" value="x" />
+          </node>
+        </node>
+        <node concept="1Uip3I" id="5ipQkCK3Ao1" role="21vIyQ">
+          <property role="TrG5h" value="Other" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5ipQkCK3Ao2" role="25YQFr">
+      <node concept="2jMsK_" id="5ipQkCK3Ao4" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3I" id="5ipQkCK3Ao5" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+          <node concept="1VXzby" id="5ipQkCK3Ao6" role="1VUtO5">
+            <property role="TrG5h" value="x" />
+          </node>
+        </node>
+        <node concept="1Uip3I" id="5ipQkCK3Ao7" role="21vIyQ">
+          <property role="TrG5h" value="Other" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5ipQkCK3Ao8" role="LjaKd" />
+  </node>
+  <node concept="LiM7Y" id="5ipQkCJKAE9">
+    <property role="TrG5h" value="_391_Class_TypeRelUnion" />
+    <property role="3YCmrE" value="unions cell present" />
+    <node concept="1qefOq" id="5ipQkCK3Ao9" role="25YQCW">
+      <node concept="2jMsK_" id="5ipQkCK3Aob" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3I" id="5ipQkCK3Aoc" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+          <node concept="LIFWc" id="5ipQkCK3Aod" role="lGtFl">
+            <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+            <property role="LIFWd" value="refNodeList_ownedUnioning" />
+            <property role="ZRATv" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+          </node>
+          <node concept="1VXzbz" id="5ipQkCK3Aoe" role="1VUtOp">
+            <property role="TrG5h" value="x" />
+          </node>
+        </node>
+        <node concept="1Uip3I" id="5ipQkCK3Aof" role="21vIyQ">
+          <property role="TrG5h" value="Other" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5ipQkCK3Aog" role="25YQFr">
+      <node concept="2jMsK_" id="5ipQkCK3Aoi" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3I" id="5ipQkCK3Aoj" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+          <node concept="1VXzbz" id="5ipQkCK3Aok" role="1VUtOp">
+            <property role="TrG5h" value="x" />
+          </node>
+        </node>
+        <node concept="1Uip3I" id="5ipQkCK3Aol" role="21vIyQ">
+          <property role="TrG5h" value="Other" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5ipQkCK3Aom" role="LjaKd" />
+  </node>
+  <node concept="LiM7Y" id="5ipQkCJKSh_">
+    <property role="TrG5h" value="_392_Class_TypeRelIntersect" />
+    <property role="3YCmrE" value="intersects cell present" />
+    <node concept="1qefOq" id="5ipQkCK3Aon" role="25YQCW">
+      <node concept="2jMsK_" id="5ipQkCK3Aop" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3I" id="5ipQkCK3Aoq" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+          <node concept="LIFWc" id="5ipQkCK3Aor" role="lGtFl">
+            <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+            <property role="LIFWd" value="refNodeList_ownedIntersecting" />
+            <property role="ZRATv" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+          </node>
+          <node concept="1VXzbw" id="5ipQkCK3Aos" role="1VUtOt">
+            <property role="TrG5h" value="x" />
+          </node>
+        </node>
+        <node concept="1Uip3I" id="5ipQkCK3Aot" role="21vIyQ">
+          <property role="TrG5h" value="Other" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5ipQkCK3Aou" role="25YQFr">
+      <node concept="2jMsK_" id="5ipQkCK3Aow" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3I" id="5ipQkCK3Aox" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+          <node concept="1VXzbw" id="5ipQkCK3Aoy" role="1VUtOt">
+            <property role="TrG5h" value="x" />
+          </node>
+        </node>
+        <node concept="1Uip3I" id="5ipQkCK3Aoz" role="21vIyQ">
+          <property role="TrG5h" value="Other" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5ipQkCK3Ao$" role="LjaKd" />
+  </node>
+  <node concept="LiM7Y" id="5ipQkCJKShS">
+    <property role="TrG5h" value="_393_Class_TypeRelDifference" />
+    <property role="3YCmrE" value="differences cell present" />
+    <node concept="1qefOq" id="5ipQkCK3Ao_" role="25YQCW">
+      <node concept="2jMsK_" id="5ipQkCK3AoB" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3I" id="5ipQkCK3AoC" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+          <node concept="LIFWc" id="5ipQkCK3AoD" role="lGtFl">
+            <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+            <property role="LIFWd" value="refNodeList_ownedDifferencing" />
+            <property role="ZRATv" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+          </node>
+          <node concept="1VXzbx" id="5ipQkCK3AoE" role="1VUtOh">
+            <property role="TrG5h" value="x" />
+          </node>
+        </node>
+        <node concept="1Uip3I" id="5ipQkCK3AoF" role="21vIyQ">
+          <property role="TrG5h" value="Other" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5ipQkCK3AoG" role="25YQFr">
+      <node concept="2jMsK_" id="5ipQkCK3AoI" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3I" id="5ipQkCK3AoJ" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+          <node concept="1VXzbx" id="5ipQkCK3AoK" role="1VUtOh">
+            <property role="TrG5h" value="x" />
+          </node>
+        </node>
+        <node concept="1Uip3I" id="5ipQkCK3AoL" role="21vIyQ">
+          <property role="TrG5h" value="Other" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5ipQkCK3AoM" role="LjaKd" />
   </node>
 </model>
 

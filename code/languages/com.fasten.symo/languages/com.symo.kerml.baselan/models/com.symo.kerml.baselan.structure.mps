@@ -319,6 +319,34 @@
       <property role="TrG5h" value="multiplicity" />
       <ref role="20lvS9" node="7JYC9rVyBuE" resolve="KerMLMultiplicity" />
     </node>
+    <node concept="1TJgyj" id="5ipQkCJs0hf" role="1TKVEi">
+      <property role="IQ2ns" value="6096142483269354575" />
+      <property role="20kJfa" value="ownedDisjoining" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5ipQkCJrYIC" resolve="KerMLDisjoining" />
+    </node>
+    <node concept="1TJgyj" id="5ipQkCJs0hj" role="1TKVEi">
+      <property role="IQ2ns" value="6096142483269354579" />
+      <property role="20kJfa" value="ownedUnioning" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5ipQkCJrYID" resolve="KerMLUnioning" />
+    </node>
+    <node concept="1TJgyj" id="5ipQkCJs0hn" role="1TKVEi">
+      <property role="IQ2ns" value="6096142483269354583" />
+      <property role="20kJfa" value="ownedIntersecting" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5ipQkCJrYIE" resolve="KerMLIntersecting" />
+    </node>
+    <node concept="1TJgyj" id="5ipQkCJs0hr" role="1TKVEi">
+      <property role="IQ2ns" value="6096142483269354587" />
+      <property role="20kJfa" value="ownedDifferencing" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5ipQkCJrYIF" resolve="KerMLDifferencing" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JYC9rUVR0r">
     <property role="EcuMT" value="8934755281065177115" />
@@ -696,6 +724,62 @@
     <property role="34LRSv" value="metaclass" />
     <property role="R4oN_" value="A Structure that classifies model elements (KerML Kernel layer, metadata)" />
     <ref role="1TJDcQ" node="5ipQkCIO4A_" resolve="KerMLStructure" />
+  </node>
+  <node concept="1TIwiD" id="5ipQkCJrYIC">
+    <property role="EcuMT" value="6096142483269348264" />
+    <property role="TrG5h" value="KerMLDisjoining" />
+    <property role="R4oN_" value="Relationship stating that the owning Type shares no instances with the disjoining Type (KerML 8.3.3.1.4)" />
+    <ref role="1TJDcQ" node="3MUZSeJsNeq" resolve="KerMLRelationship" />
+    <node concept="1TJgyj" id="5ipQkCJrYIG" role="1TKVEi">
+      <property role="IQ2ns" value="6096142483269348268" />
+      <property role="20kJfa" value="disjoiningType" />
+      <ref role="20lvS9" node="7JYC9rUVR0q" resolve="KerMLType" />
+    </node>
+    <node concept="PrWs8" id="5ipQkCJrYIH" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5ipQkCJrYID">
+    <property role="EcuMT" value="6096142483269348265" />
+    <property role="TrG5h" value="KerMLUnioning" />
+    <property role="R4oN_" value="Relationship stating that the owning Type is the union of the unioning Types (KerML 8.3.3.1.12)" />
+    <ref role="1TJDcQ" node="3MUZSeJsNeq" resolve="KerMLRelationship" />
+    <node concept="1TJgyj" id="5ipQkCJrYII" role="1TKVEi">
+      <property role="IQ2ns" value="6096142483269348270" />
+      <property role="20kJfa" value="unioningType" />
+      <ref role="20lvS9" node="7JYC9rUVR0q" resolve="KerMLType" />
+    </node>
+    <node concept="PrWs8" id="5ipQkCJrYIJ" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5ipQkCJrYIE">
+    <property role="EcuMT" value="6096142483269348266" />
+    <property role="TrG5h" value="KerMLIntersecting" />
+    <property role="R4oN_" value="Relationship stating that the owning Type is the intersection of the intersecting Types (KerML 8.3.3.1.5)" />
+    <ref role="1TJDcQ" node="3MUZSeJsNeq" resolve="KerMLRelationship" />
+    <node concept="1TJgyj" id="5ipQkCJrYIK" role="1TKVEi">
+      <property role="IQ2ns" value="6096142483269348272" />
+      <property role="20kJfa" value="intersectingType" />
+      <ref role="20lvS9" node="7JYC9rUVR0q" resolve="KerMLType" />
+    </node>
+    <node concept="PrWs8" id="5ipQkCJrYIL" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5ipQkCJrYIF">
+    <property role="EcuMT" value="6096142483269348267" />
+    <property role="TrG5h" value="KerMLDifferencing" />
+    <property role="R4oN_" value="Relationship stating that the owning Type is the difference of the differencing Types (KerML 8.3.3.1.3)" />
+    <ref role="1TJDcQ" node="3MUZSeJsNeq" resolve="KerMLRelationship" />
+    <node concept="1TJgyj" id="5ipQkCJrYIM" role="1TKVEi">
+      <property role="IQ2ns" value="6096142483269348274" />
+      <property role="20kJfa" value="differencingType" />
+      <ref role="20lvS9" node="7JYC9rUVR0q" resolve="KerMLType" />
+    </node>
+    <node concept="PrWs8" id="5ipQkCJrYIN" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
 </model>
 
