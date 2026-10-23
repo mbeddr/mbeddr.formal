@@ -5,6 +5,8 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text" version="0" />
     <use id="f2801650-65d5-424e-bb1b-463a8781b786" name="jetbrains.mps.baseLanguage.javadoc" version="3" />
+    <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="3eada220-3310-4fd3-b794-ff924add7d8a" name="com.mbeddr.mpsutil.smodule" version="0" />
   </languages>
   <imports>
     <import index="rjc7" ref="05437b45-7a02-4019-ad67-5232d810cfba/java:com.symo.kerml.baselan.importer.antlr(com.symo.kerml.baselan.importer/)" />
@@ -18,6 +20,8 @@
     <import index="ykok" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.constraints(MPS.Core/)" />
     <import index="6xeh" ref="05437b45-7a02-4019-ad67-5232d810cfba/java:org.antlr.v4.runtime.tree(com.symo.kerml.baselan.importer/)" />
     <import index="p3ir" ref="05437b45-7a02-4019-ad67-5232d810cfba/java:org.antlr.v4.runtime(com.symo.kerml.baselan.importer/)" />
+    <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
+    <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -98,9 +102,6 @@
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
-      </concept>
-      <concept id="4269842503726207156" name="jetbrains.mps.baseLanguage.structure.LongLiteral" flags="nn" index="1adDum">
-        <property id="4269842503726207157" name="value" index="1adDun" />
       </concept>
       <concept id="1068580123132" name="jetbrains.mps.baseLanguage.structure.BaseMethodDeclaration" flags="ng" index="3clF44">
         <child id="1068580123133" name="returnType" index="3clF45" />
@@ -211,6 +212,15 @@
         <child id="5085607816306647747" name="reference" index="1VuXuu" />
       </concept>
     </language>
+    <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="4497478346159780083" name="jetbrains.mps.lang.smodel.structure.LanguageRefExpression" flags="ng" index="pHN19">
+        <child id="3542851458883491298" name="languageId" index="2V$M_3" />
+      </concept>
+      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="nn" index="2V$Bhx">
+        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
+        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
+      </concept>
+    </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
@@ -310,22 +320,15 @@
       </node>
     </node>
     <node concept="Wx3nA" id="7JYC9rXCgfM" role="jymVt">
-      <property role="TrG5h" value="LANGUAGE" />
+      <property role="TrG5h" value="kermlLanguage" />
       <property role="3TUv4t" value="true" />
       <node concept="3uibUv" id="7JYC9rXCgfN" role="1tU5fm">
         <ref role="3uigEE" to="c17a:~SLanguage" resolve="SLanguage" />
       </node>
-      <node concept="2YIFZM" id="7JYC9rXCgov" role="33vP2m">
-        <ref role="1Pybhc" to="2k9e:~MetaAdapterFactory" resolve="MetaAdapterFactory" />
-        <ref role="37wK5l" to="2k9e:~MetaAdapterFactory.getLanguage(long,long,java.lang.String)" resolve="getLanguage" />
-        <node concept="1adDum" id="7JYC9rXCgow" role="37wK5m">
-          <property role="1adDun" value="-2757977101972586013L" />
-        </node>
-        <node concept="1adDum" id="7JYC9rXCgox" role="37wK5m">
-          <property role="1adDun" value="-8390947385686293451L" />
-        </node>
-        <node concept="Xl_RD" id="7JYC9rXCgoy" role="37wK5m">
-          <property role="Xl_RC" value="com.symo.kerml.baselan" />
+      <node concept="pHN19" id="5ipQkCHuMoJ" role="33vP2m">
+        <node concept="2V$Bhx" id="5ipQkCHuMtH" role="2V$M_3">
+          <property role="2V$B1T" value="d9b9b270-2a43-41e3-8b8d-5dcf532d0435" />
+          <property role="2V$B1Q" value="com.symo.kerml.baselan" />
         </node>
       </node>
       <node concept="3Tm6S6" id="7JYC9rXCgfS" role="1B3o_S" />
@@ -345,11 +348,11 @@
       </node>
       <node concept="3clFbS" id="7JYC9rXCgg0" role="3clF47">
         <node concept="1DcWWT" id="7JYC9rXCgg1" role="3cqZAp">
-          <node concept="2OqwBi" id="7JYC9rXChpj" role="1DdaDG">
-            <node concept="37vLTw" id="7JYC9rXCgo_" role="2Oq$k0">
-              <ref role="3cqZAo" node="7JYC9rXCgfM" resolve="LANGUAGE" />
+          <node concept="2OqwBi" id="5ipQkCHuw0M" role="1DdaDG">
+            <node concept="37vLTw" id="5ipQkCHuw0y" role="2Oq$k0">
+              <ref role="3cqZAo" node="7JYC9rXCgfM" resolve="kermlLanguage" />
             </node>
-            <node concept="liA8E" id="7JYC9rXChpk" role="2OqNvi">
+            <node concept="liA8E" id="5ipQkCHuw0N" role="2OqNvi">
               <ref role="37wK5l" to="c17a:~SLanguage.getConcepts()" resolve="getConcepts" />
             </node>
           </node>

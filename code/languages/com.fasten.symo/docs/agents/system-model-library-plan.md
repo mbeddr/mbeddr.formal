@@ -202,8 +202,10 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    checking green. The imported libraries land in `_990_Witness@tests` for inspection.
    Findings: (a) the grammar (and the spec) only accepts a `type` with a specialization or conjugation part, so a bare `type X;` that the editor allows is valid abstract syntax but not concrete syntax; `_050`
    reads bare types as classifiers. (b) Holding a read action while waiting for `TextGeneratorEngine`'s future deadlocks every other test (see mps-gotchas). Open: (1) the two library files are embedded
-   verbatim in test `_030` — they are EPL-2.0 (SysML-v2-Release `LICENSE`, README), keep the notice with them; (2) `SLanguage.getConcepts()` (used by `KerMLNodes`) is deprecated for removal;
-   (3) untested importer branches: comma-separated typings/subsettings/redefinitions, `all` on imports; (4) the importer does not yet read comment, `rep`, namespace import, feature values, inverting,
+   verbatim in test `_030` — they are EPL-2.0 (SysML-v2-Release `LICENSE`, README), keep the notice with them; (2) `SLanguage.getConcepts()` (used by `KerMLNodes`) is deprecated for removal and has no
+   repository-free replacement in this MPS (`LanguageRegistry.getInstance()` and `MPSModuleRepository.getInstance()` are deprecated too); the clean fix is passing the target model's repository through `KerMLImporter`
+   and `KerMLNodes` and using `LanguageRegistry.getInstance(repository).getLanguage(language).getConcepts()`; (3) comma-separated typings/subsettings/redefinitions and `all` on imports are now tested (`_010`,
+   mutation-checked; the text generation writes each as its own `:`/`:>`/`:>>` part); (4) the importer does not yet read comment, `rep`, namespace import, feature values, inverting,
    featuring, `::>`, `=>`, `end` features — the text generation already writes them; (5) next: C4 (importing more of the Kernel libraries) or phase D.
 2m. Standard library solution `com.symo.kerml.baselan.stdLib` — **done (committed)**. The imported standard library packages live in their own solution, not in an accessory model of the language:
    model `com.symo.kerml.baselan.stdLib.kernel` holds `Base` (Kernel Semantic Library, 94 lines) and `ScalarValues` (Kernel Data Type Library, 23 lines), the two complete files (EPL-2.0, notice to keep with them).
@@ -212,7 +214,7 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    (test model `_010_import@tests`) imports `KernelLibraryText.base()` / `.scalarValues()` — the canonical text — and replaces the roots of the stdLib model; there is no test calling it, regenerating means calling it
    from a temporary test. Guards: `_060_StdLibTest` generates the text of the stdLib model and compares it with the canonical text (mutation-checked: `Boolean` made abstract); `_070_StdLibResolutionTest` resolves
    `ScalarValues::Integer` through the scope from `sandbox._020_StdLib_Demo` (imports the stdLib) to the stdLib `Integer`, and shows it does not resolve from a model without the import (mutation-checked: import removed).
-   Open: (1) `_030` still holds the canonical text a second time (`expected`), switch it to `KernelLibraryText`; (2) more files (`Objects`, `Occurrences`, ...) go into the same solution, probably one model per library
+   Open: (1) `_030` now takes its expected and canonical text from `KernelLibraryText` (done); (2) more files (`Objects`, `Occurrences`, ...) go into the same solution, probably one model per library
    (Semantic/Data Type/Function), after the importer reads their constructs (see 2l (4)); (3) model checking does not flag a reference whose model is not imported, resolution by name does.
 2. Core layer (Type, Classifier, Feature, Specialization family) as explicit typed child links (same principle as the Root layer), then Kernel layer slices.
 3. Vertical slice `Base.kerml` end to end, then the KerML importer (grammar from `bnf/KerML-textual-bnf.kebnf`) in `com.symo.kerml.baselan.importer`.
