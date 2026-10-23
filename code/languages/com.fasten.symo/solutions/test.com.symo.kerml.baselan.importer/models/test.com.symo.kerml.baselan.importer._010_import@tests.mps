@@ -2057,7 +2057,7 @@
         <property role="TrG5h" value="proj" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="7JYC9rY1dqw" role="1tU5fm">
-          <ref role="3uigEE" to="z1c3:~Project" resolve="jetbrains.mps.project.Project" />
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
         </node>
       </node>
       <node concept="37vLTG" id="7JYC9rY1dqx" role="3clF46">
@@ -2074,7 +2074,7 @@
             <property role="TrG5h" value="found" />
             <node concept="10Q1$e" id="7JYC9rY1dqB" role="1tU5fm">
               <node concept="3uibUv" id="7JYC9rY1dqA" role="10Q1$1">
-                <ref role="3uigEE" to="mhbf:~SModel" resolve="org.jetbrains.mps.openapi.model.SModel" />
+                <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
               </node>
             </node>
             <node concept="2ShNRf" id="7JYC9rY1dqG" role="33vP2m">
@@ -2085,7 +2085,7 @@
                   </node>
                 </node>
                 <node concept="3uibUv" id="7JYC9rY1dqC" role="3$_nBY">
-                  <ref role="3uigEE" to="mhbf:~SModel" resolve="org.jetbrains.mps.openapi.model.SModel" />
+                  <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
                 </node>
               </node>
             </node>
@@ -2237,19 +2237,19 @@
           <node concept="3cpWsn" id="7JYC9rY1y4Z" role="3cpWs9">
             <property role="TrG5h" value="listener" />
             <node concept="3uibUv" id="7JYC9rY1y51" role="1tU5fm">
-              <ref role="3uigEE" to="p3ir:~BaseErrorListener" resolve="org.antlr.v4.runtime.BaseErrorListener" />
+              <ref role="3uigEE" to="p3ir:~BaseErrorListener" resolve="BaseErrorListener" />
             </node>
             <node concept="2ShNRf" id="7JYC9rY1y52" role="33vP2m">
               <node concept="YeOm9" id="7JYC9rY1y53" role="2ShVmc">
                 <node concept="1Y3b0j" id="7JYC9rY1y54" role="YeSDq">
-                  <ref role="1Y3XeK" to="p3ir:~BaseErrorListener" resolve="org.antlr.v4.runtime.BaseErrorListener" />
+                  <ref role="1Y3XeK" to="p3ir:~BaseErrorListener" resolve="BaseErrorListener" />
                   <ref role="37wK5l" to="p3ir:~BaseErrorListener.&lt;init&gt;()" resolve="BaseErrorListener" />
                   <node concept="3clFb_" id="7JYC9rY1y55" role="jymVt">
                     <property role="TrG5h" value="syntaxError" />
                     <node concept="37vLTG" id="7JYC9rY1y56" role="3clF46">
                       <property role="TrG5h" value="recognizer" />
                       <node concept="3uibUv" id="7JYC9rY1y57" role="1tU5fm">
-                        <ref role="3uigEE" to="p3ir:~Recognizer" resolve="org.antlr.v4.runtime.Recognizer" />
+                        <ref role="3uigEE" to="p3ir:~Recognizer" resolve="Recognizer" />
                         <node concept="3qTvmN" id="7JYC9rY1y58" role="11_B2D" />
                         <node concept="3qTvmN" id="7JYC9rY1y59" role="11_B2D" />
                       </node>
@@ -2277,7 +2277,7 @@
                     <node concept="37vLTG" id="7JYC9rY1y5i" role="3clF46">
                       <property role="TrG5h" value="e" />
                       <node concept="3uibUv" id="7JYC9rY1y5j" role="1tU5fm">
-                        <ref role="3uigEE" to="p3ir:~RecognitionException" resolve="org.antlr.v4.runtime.RecognitionException" />
+                        <ref role="3uigEE" to="p3ir:~RecognitionException" resolve="RecognitionException" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="7JYC9rY1y5k" role="3clF47">
@@ -2344,7 +2344,7 @@
           <node concept="3cpWsn" id="7JYC9rY1y5H" role="3cpWs9">
             <property role="TrG5h" value="lexer" />
             <node concept="3uibUv" id="7JYC9rY1y5J" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLLexer" resolve="com.symo.kerml.baselan.importer.antlr.KerMLLexer" />
+              <ref role="3uigEE" to="rjc7:~KerMLLexer" resolve="KerMLLexer" />
             </node>
             <node concept="2ShNRf" id="7JYC9rY1y6G" role="33vP2m">
               <node concept="1pGfFk" id="7JYC9rY1y6Y" role="2ShVmc">
@@ -2387,7 +2387,7 @@
           <node concept="3cpWsn" id="7JYC9rY1y5S" role="3cpWs9">
             <property role="TrG5h" value="parser" />
             <node concept="3uibUv" id="7JYC9rY1y5U" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser" resolve="com.symo.kerml.baselan.importer.antlr.KerMLParser" />
+              <ref role="3uigEE" to="rjc7:~KerMLParser" resolve="KerMLParser" />
             </node>
             <node concept="2ShNRf" id="7JYC9rY1y7g" role="33vP2m">
               <node concept="1pGfFk" id="7JYC9rY1y7x" role="2ShVmc">
@@ -2683,7 +2683,7 @@
         <property role="TrG5h" value="proj" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="7JYC9rYdKX4" role="1tU5fm">
-          <ref role="3uigEE" to="z1c3:~Project" resolve="jetbrains.mps.project.Project" />
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rYdKX5" role="3clF47">
@@ -2691,7 +2691,7 @@
           <node concept="3cpWsn" id="7JYC9rYdKX6" role="3cpWs9">
             <property role="TrG5h" value="files" />
             <node concept="3uibUv" id="7JYC9rYdKX8" role="1tU5fm">
-              <ref role="3uigEE" to="33ny:~Map" resolve="java.util.Map" />
+              <ref role="3uigEE" to="33ny:~Map" resolve="Map" />
               <node concept="3uibUv" id="7JYC9rYdKX9" role="11_B2D">
                 <ref role="3uigEE" to="wyt6:~String" resolve="String" />
               </node>
@@ -2752,7 +2752,7 @@
             <property role="3TUv4t" value="true" />
             <property role="TrG5h" value="tmp" />
             <node concept="3uibUv" id="7JYC9rYdKXo" role="1tU5fm">
-              <ref role="3uigEE" to="mhbf:~SModel" resolve="org.jetbrains.mps.openapi.model.SModel" />
+              <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
             </node>
             <node concept="1rXfSq" id="7JYC9rYdKXp" role="33vP2m">
               <ref role="37wK5l" node="7JYC9rXI40B" resolve="importFiles" />
@@ -2783,7 +2783,7 @@
                         <node concept="3cpWsn" id="7JYC9rYdKX$" role="3cpWs9">
                           <property role="TrG5h" value="target" />
                           <node concept="3uibUv" id="7JYC9rYdKXA" role="1tU5fm">
-                            <ref role="3uigEE" to="mhbf:~SModel" resolve="org.jetbrains.mps.openapi.model.SModel" />
+                            <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
                           </node>
                           <node concept="10Nm6u" id="7JYC9rYdKXB" role="33vP2m" />
                         </node>
@@ -2800,7 +2800,7 @@
                         <node concept="3cpWsn" id="7JYC9rYdKXQ" role="1Duv9x">
                           <property role="TrG5h" value="model" />
                           <node concept="3uibUv" id="7JYC9rYdKXS" role="1tU5fm">
-                            <ref role="3uigEE" to="mhbf:~SModel" resolve="org.jetbrains.mps.openapi.model.SModel" />
+                            <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
                           </node>
                         </node>
                         <node concept="3clFbS" id="7JYC9rYdKXE" role="2LFqv$">
@@ -2845,9 +2845,9 @@
                         <node concept="3cpWsn" id="7JYC9rYdKXU" role="3cpWs9">
                           <property role="TrG5h" value="old" />
                           <node concept="3uibUv" id="7JYC9rYdKXW" role="1tU5fm">
-                            <ref role="3uigEE" to="33ny:~List" resolve="java.util.List" />
+                            <ref role="3uigEE" to="33ny:~List" resolve="List" />
                             <node concept="3uibUv" id="7JYC9rYdKXX" role="11_B2D">
-                              <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+                              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                             </node>
                           </node>
                           <node concept="2ShNRf" id="7JYC9rYdL1U" role="33vP2m">
@@ -2873,7 +2873,7 @@
                         <node concept="3cpWsn" id="7JYC9rYdKY6" role="1Duv9x">
                           <property role="TrG5h" value="root" />
                           <node concept="3uibUv" id="7JYC9rYdKY8" role="1tU5fm">
-                            <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+                            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                           </node>
                         </node>
                         <node concept="3clFbS" id="7JYC9rYdKY2" role="2LFqv$">
@@ -2899,7 +2899,7 @@
                         <node concept="3cpWsn" id="7JYC9rYdKYg" role="1Duv9x">
                           <property role="TrG5h" value="root" />
                           <node concept="3uibUv" id="7JYC9rYdKYi" role="1tU5fm">
-                            <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+                            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                           </node>
                         </node>
                         <node concept="3clFbS" id="7JYC9rYdKYc" role="2LFqv$">
@@ -2922,9 +2922,9 @@
                         <node concept="3cpWsn" id="7JYC9rYdKYk" role="3cpWs9">
                           <property role="TrG5h" value="roots" />
                           <node concept="3uibUv" id="7JYC9rYdKYm" role="1tU5fm">
-                            <ref role="3uigEE" to="33ny:~List" resolve="java.util.List" />
+                            <ref role="3uigEE" to="33ny:~List" resolve="List" />
                             <node concept="3uibUv" id="7JYC9rYdKYn" role="11_B2D">
-                              <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+                              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                             </node>
                           </node>
                           <node concept="2ShNRf" id="7JYC9rYdL2u" role="33vP2m">
@@ -2950,7 +2950,7 @@
                         <node concept="3cpWsn" id="7JYC9rYdKYw" role="1Duv9x">
                           <property role="TrG5h" value="root" />
                           <node concept="3uibUv" id="7JYC9rYdKYy" role="1tU5fm">
-                            <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+                            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                           </node>
                         </node>
                         <node concept="3clFbS" id="7JYC9rYdKYs" role="2LFqv$">
@@ -2992,7 +2992,7 @@
                         <node concept="3cpWsn" id="7JYC9rYdKYE" role="1Duv9x">
                           <property role="TrG5h" value="copy" />
                           <node concept="3uibUv" id="7JYC9rYdKYG" role="1tU5fm">
-                            <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+                            <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                           </node>
                         </node>
                         <node concept="3clFbS" id="7JYC9rYdKYA" role="2LFqv$">
@@ -3041,7 +3041,7 @@
         <property role="TrG5h" value="proj" />
         <property role="3TUv4t" value="true" />
         <node concept="3uibUv" id="7JYC9rYeeyo" role="1tU5fm">
-          <ref role="3uigEE" to="z1c3:~Project" resolve="jetbrains.mps.project.Project" />
+          <ref role="3uigEE" to="z1c3:~Project" resolve="Project" />
         </node>
       </node>
       <node concept="37vLTG" id="7JYC9rYeeyp" role="3clF46">
@@ -4041,7 +4041,7 @@
               <ref role="3cqZAo" node="7JYC9rXWZaY" resolve="docsText" />
             </node>
             <node concept="Xl_RD" id="7JYC9rXWZbE" role="37vLTx">
-              <property role="Xl_RC" value="  doc locale &quot;en_US&quot;&#10;" />
+              <property role="Xl_RC" value="  doc locale \&quot;en_US\&quot;&#10;" />
             </node>
           </node>
         </node>
@@ -4158,7 +4158,7 @@
               <ref role="3cqZAo" node="7JYC9rXWZch" resolve="expected" />
             </node>
             <node concept="Xl_RD" id="7JYC9rXWZcX" role="37vLTx">
-              <property role="Xl_RC" value="  doc locale &quot;en_US&quot;&#10;" />
+              <property role="Xl_RC" value="  doc locale \&quot;en_US\&quot;&#10;" />
             </node>
           </node>
         </node>
@@ -5135,7 +5135,7 @@
               <ref role="3cqZAo" node="7JYC9rXWZnd" resolve="baseText" />
             </node>
             <node concept="Xl_RD" id="7JYC9rXWZpd" role="37vLTx">
-              <property role="Xl_RC" value="&#9;&#9;&#9; * relates everything to itself. It is also the value of the nested &quot;that&quot; feature&#10;" />
+              <property role="Xl_RC" value="&#9;&#9;&#9; * relates everything to itself. It is also the value of the nested \&quot;that\&quot; feature&#10;" />
             </node>
           </node>
         </node>
@@ -5385,7 +5385,7 @@
               <ref role="3cqZAo" node="7JYC9rXWZnd" resolve="baseText" />
             </node>
             <node concept="Xl_RD" id="7JYC9rXWZrW" role="37vLTx">
-              <property role="Xl_RC" value="&#9;&#9;&#9; * For each value of things, the &quot;featuring instance&quot; of that value. &#10;" />
+              <property role="Xl_RC" value="&#9;&#9;&#9; * For each value of things, the \&quot;featuring instance\&quot; of that value. &#10;" />
             </node>
           </node>
         </node>
@@ -6272,7 +6272,7 @@
               <ref role="3cqZAo" node="7JYC9rXWZxG" resolve="expected" />
             </node>
             <node concept="Xl_RD" id="7JYC9rXWZ_E" role="37vLTx">
-              <property role="Xl_RC" value="       * relates everything to itself. It is also the value of the nested &quot;that&quot; feature&#10;" />
+              <property role="Xl_RC" value="       * relates everything to itself. It is also the value of the nested \&quot;that\&quot; feature&#10;" />
             </node>
           </node>
         </node>
@@ -6482,7 +6482,7 @@
               <ref role="3cqZAo" node="7JYC9rXWZxG" resolve="expected" />
             </node>
             <node concept="Xl_RD" id="7JYC9rXWZBX" role="37vLTx">
-              <property role="Xl_RC" value="       * For each value of things, the &quot;featuring instance&quot; of that value.&#10;" />
+              <property role="Xl_RC" value="       * For each value of things, the \&quot;featuring instance\&quot; of that value.&#10;" />
             </node>
           </node>
         </node>
@@ -7338,7 +7338,7 @@
               <ref role="3cqZAo" node="7JYC9rXWZJt" resolve="baseText" />
             </node>
             <node concept="Xl_RD" id="7JYC9rXWZLf" role="37vLTx">
-              <property role="Xl_RC" value="       * relates everything to itself. It is also the value of the nested &quot;that&quot; feature&#10;" />
+              <property role="Xl_RC" value="       * relates everything to itself. It is also the value of the nested \&quot;that\&quot; feature&#10;" />
             </node>
           </node>
         </node>
@@ -7548,7 +7548,7 @@
               <ref role="3cqZAo" node="7JYC9rXWZJt" resolve="baseText" />
             </node>
             <node concept="Xl_RD" id="7JYC9rXWZNy" role="37vLTx">
-              <property role="Xl_RC" value="       * For each value of things, the &quot;featuring instance&quot; of that value.&#10;" />
+              <property role="Xl_RC" value="       * For each value of things, the \&quot;featuring instance\&quot; of that value.&#10;" />
             </node>
           </node>
         </node>
@@ -8365,7 +8365,7 @@
               <ref role="3cqZAo" node="7JYC9rXWZSx" resolve="expected" />
             </node>
             <node concept="Xl_RD" id="7JYC9rXWZWv" role="37vLTx">
-              <property role="Xl_RC" value="       * relates everything to itself. It is also the value of the nested &quot;that&quot; feature&#10;" />
+              <property role="Xl_RC" value="       * relates everything to itself. It is also the value of the nested \&quot;that\&quot; feature&#10;" />
             </node>
           </node>
         </node>
@@ -8575,7 +8575,7 @@
               <ref role="3cqZAo" node="7JYC9rXWZSx" resolve="expected" />
             </node>
             <node concept="Xl_RD" id="7JYC9rXWZYM" role="37vLTx">
-              <property role="Xl_RC" value="       * For each value of things, the &quot;featuring instance&quot; of that value.&#10;" />
+              <property role="Xl_RC" value="       * For each value of things, the \&quot;featuring instance\&quot; of that value.&#10;" />
             </node>
           </node>
         </node>
@@ -9118,7 +9118,7 @@
         <node concept="20Nsyp" id="7JYC9rXLDrs" role="21vIyQ">
           <property role="TrG5h" value="B" />
           <node concept="20Nsyo" id="7JYC9rXLDrt" role="214t28">
-            <ref role="214t29" node="7JYC9rXLDrr" />
+            <ref role="214t29" node="7JYC9rXLDrr" resolve="A" />
           </node>
         </node>
         <node concept="3xLA65" id="7JYC9rXLDru" role="lGtFl">
