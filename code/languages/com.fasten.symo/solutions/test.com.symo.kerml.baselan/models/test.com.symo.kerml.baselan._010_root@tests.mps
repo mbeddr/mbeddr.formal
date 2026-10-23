@@ -198,6 +198,11 @@
       <concept id="4376090928993219492" name="com.symo.kerml.baselan.structure.KerMLNamespaceImport" flags="ng" index="2jMsKB">
         <reference id="4376090928993219513" name="importedNamespace" index="2jMsKU" />
       </concept>
+      <concept id="6096142483258886568" name="com.symo.kerml.baselan.structure.KerMLMetaclass" flags="ng" index="1Uip3y" />
+      <concept id="6096142483258886566" name="com.symo.kerml.baselan.structure.KerMLAssociation" flags="ng" index="1Uip3G" />
+      <concept id="6096142483258886567" name="com.symo.kerml.baselan.structure.KerMLAssociationStructure" flags="ng" index="1Uip3H" />
+      <concept id="6096142483258886564" name="com.symo.kerml.baselan.structure.KerMLClass" flags="ng" index="1Uip3I" />
+      <concept id="6096142483258886565" name="com.symo.kerml.baselan.structure.KerMLStructure" flags="ng" index="1Uip3J" />
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
@@ -4453,6 +4458,165 @@
       </node>
     </node>
     <node concept="3clFbS" id="7JYC9rXp2h6" role="LjaKd" />
+  </node>
+  <node concept="LiM7Y" id="5ipQkCJbFgo">
+    <property role="3YCmrE" value="typing 'class' in a package body creates a class that can be named directly" />
+    <property role="TrG5h" value="_340_Class_TypeClass" />
+    <node concept="1qefOq" id="5ipQkCJbFgp" role="25YQCW">
+      <node concept="2jMsK_" id="5ipQkCJbFgr" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="LIFWc" id="5ipQkCJbFgs" role="lGtFl">
+          <property role="LIFWd" value="empty_ownedMember" />
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5ipQkCJbFgt" role="25YQFr">
+      <node concept="2jMsK_" id="5ipQkCJbFgv" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3I" id="5ipQkCJbFgw" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5ipQkCJbFgx" role="LjaKd">
+      <node concept="2TK7Tu" id="5ipQkCJbFgy" role="3cqZAp">
+        <property role="2TTd_B" value="class" />
+      </node>
+      <node concept="2TK7Tu" id="5ipQkCJbFgz" role="3cqZAp">
+        <property role="2TTd_B" value="T" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="5ipQkCJbFg$">
+    <property role="3YCmrE" value="typing 'struct' in a package body creates a struct that can be named directly" />
+    <property role="TrG5h" value="_350_Struct_TypeStruct" />
+    <node concept="1qefOq" id="5ipQkCJbFg_" role="25YQCW">
+      <node concept="2jMsK_" id="5ipQkCJbFgB" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="LIFWc" id="5ipQkCJbFgC" role="lGtFl">
+          <property role="LIFWd" value="empty_ownedMember" />
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5ipQkCJbFgD" role="25YQFr">
+      <node concept="2jMsK_" id="5ipQkCJbFgF" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3J" id="5ipQkCJbFgG" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5ipQkCJbFgH" role="LjaKd">
+      <node concept="2TK7Tu" id="5ipQkCJbFgI" role="3cqZAp">
+        <property role="2TTd_B" value="struct" />
+      </node>
+      <node concept="2TK7Tu" id="5ipQkCJbFgJ" role="3cqZAp">
+        <property role="2TTd_B" value="T" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="5ipQkCJbFgK">
+    <property role="3YCmrE" value="typing 'assoc' in a package body creates an assoc that can be named directly" />
+    <property role="TrG5h" value="_360_Assoc_TypeAssoc" />
+    <node concept="1qefOq" id="5ipQkCJbFgL" role="25YQCW">
+      <node concept="2jMsK_" id="5ipQkCJbFgN" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="LIFWc" id="5ipQkCJbFgO" role="lGtFl">
+          <property role="LIFWd" value="empty_ownedMember" />
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5ipQkCJbFgP" role="25YQFr">
+      <node concept="2jMsK_" id="5ipQkCJbFgR" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3G" id="5ipQkCJbFgS" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5ipQkCJbFgT" role="LjaKd">
+      <node concept="2TK7Tu" id="5ipQkCJbFgU" role="3cqZAp">
+        <property role="2TTd_B" value="assoc" />
+      </node>
+      <node concept="2TK7Tu" id="5ipQkCJbFgV" role="3cqZAp">
+        <property role="2TTd_B" value="T" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="5ipQkCJbFgW">
+    <property role="TrG5h" value="_370_AssocStruct_EditName" />
+    <property role="3YCmrE" value="an assoc struct shows its name cell, so typing continues the name (the two-word keyword is chosen from the completion menu)" />
+    <node concept="1qefOq" id="5ipQkCJhfir" role="25YQCW">
+      <node concept="2jMsK_" id="5ipQkCJhfit" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3H" id="5ipQkCJhfiu" role="21vIyQ">
+          <property role="TrG5h" value="S" />
+          <node concept="LIFWc" id="5ipQkCJhfiv" role="lGtFl">
+            <property role="LIFWd" value="property_name" />
+            <property role="ZRATv" value="true" />
+            <property role="p6zMq" value="1" />
+            <property role="p6zMs" value="1" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5ipQkCJhfiw" role="25YQFr">
+      <node concept="2jMsK_" id="5ipQkCJhfiy" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3H" id="5ipQkCJhfiz" role="21vIyQ">
+          <property role="TrG5h" value="ST" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5ipQkCJhfi$" role="LjaKd">
+      <node concept="2TK7Tu" id="5ipQkCJhfi_" role="3cqZAp">
+        <property role="2TTd_B" value="T" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="5ipQkCJbFh8">
+    <property role="3YCmrE" value="typing 'metaclass' in a package body creates a metaclass that can be named directly" />
+    <property role="TrG5h" value="_380_Metaclass_TypeMetaclass" />
+    <node concept="1qefOq" id="5ipQkCJbFh9" role="25YQCW">
+      <node concept="2jMsK_" id="5ipQkCJbFhb" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="LIFWc" id="5ipQkCJbFhc" role="lGtFl">
+          <property role="LIFWd" value="empty_ownedMember" />
+          <property role="ZRATv" value="true" />
+          <property role="OXtK3" value="true" />
+          <property role="p6zMq" value="0" />
+          <property role="p6zMs" value="0" />
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="5ipQkCJbFhd" role="25YQFr">
+      <node concept="2jMsK_" id="5ipQkCJbFhf" role="1qenE9">
+        <property role="TrG5h" value="pkg" />
+        <node concept="1Uip3y" id="5ipQkCJbFhg" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="5ipQkCJbFhh" role="LjaKd">
+      <node concept="2TK7Tu" id="5ipQkCJbFhi" role="3cqZAp">
+        <property role="2TTd_B" value="metaclass" />
+      </node>
+      <node concept="2TK7Tu" id="5ipQkCJbFhj" role="3cqZAp">
+        <property role="2TTd_B" value="T" />
+      </node>
+    </node>
   </node>
 </model>
 

@@ -1661,5 +1661,455 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="5ipQkCIOg9p">
+    <property role="3GE5qa" value="core.classifier" />
+    <property role="TrG5h" value="KerMLClass_Editor" />
+    <ref role="1XX52x" to="rb60:5ipQkCIO4A$" resolve="KerMLClass" />
+    <node concept="PMmxH" id="5ipQkCIOg9r" role="6VMZX">
+      <ref role="PMmxG" node="7JYC9rUwWvZ" resolve="IKerMLNamespaceMember_VisibilityInspector" />
+    </node>
+    <node concept="3EZMnI" id="5ipQkCIOg9s" role="2wV5jI">
+      <node concept="PMmxH" id="5ipQkCIOg9t" role="3EZMnx">
+        <ref role="PMmxG" node="7JYC9rUwUU$" resolve="IKerMLNamespaceMember_Visibility" />
+      </node>
+      <node concept="1kHk_G" id="5ipQkCIOg9u" role="3EZMnx">
+        <property role="ZjSer" value="abstract" />
+        <ref role="1NtTu8" to="rb60:7JYC9rUVR0s" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0ifn" id="5ipQkCIOg9v" role="3EZMnx">
+        <property role="3F0ifm" value="class" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="5ipQkCIOg9w" role="3EZMnx">
+        <property role="ZjSer" value="all" />
+        <ref role="1NtTu8" to="rb60:7JYC9rUVR0t" resolve="isSufficient" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="PMmxH" id="5ipQkCIOg9x" role="3EZMnx">
+        <ref role="PMmxG" node="7JYC9rULce3" resolve="KerMLElement_ShortName" />
+      </node>
+      <node concept="3F0A7n" id="5ipQkCIOg9y" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="5ipQkCIOg9z" role="3EZMnx">
+        <node concept="3F1sOY" id="5ipQkCIOg9_" role="_tjki">
+          <ref role="1NtTu8" to="rb60:7JYC9rVyBuS" resolve="multiplicity" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="5ipQkCIOg9A" role="3EZMnx">
+        <node concept="3EZMnI" id="5ipQkCIOg9C" role="_tjki">
+          <node concept="3F0ifn" id="5ipQkCIOg9D" role="3EZMnx">
+            <property role="3F0ifm" value="specializes" />
+            <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+          </node>
+          <node concept="3F2HdR" id="5ipQkCIOg9E" role="3EZMnx">
+            <property role="2czwfO" value="," />
+            <ref role="1NtTu8" to="rb60:7JYC9rUVR0u" />
+            <node concept="4$FPG" id="5ipQkCIOg9F" role="4_6I_">
+              <node concept="3clFbS" id="5ipQkCIOg9H" role="2VODD2">
+                <node concept="3cpWs6" id="5ipQkCIOg9I" role="3cqZAp">
+                  <node concept="2ShNRf" id="5ipQkCIOg9J" role="3cqZAk">
+                    <node concept="3zrR0B" id="5ipQkCIOg9L" role="2ShVmc">
+                      <node concept="3Tqbb2" id="5ipQkCIOg9N" role="3zrR0E">
+                        <ref role="ehGHo" to="rb60:7JYC9rVcQwe" resolve="KerMLSubclassification" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="l2Vlx" id="5ipQkCIOg9O" role="2czzBx" />
+          </node>
+          <node concept="l2Vlx" id="5ipQkCIOg9P" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5ipQkCIOg9Q" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+        <node concept="11L4FC" id="5ipQkCIOg9R" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5ipQkCIOg9S" role="3EZMnx">
+        <ref role="1NtTu8" to="rb60:7JYC9rUw4ww" />
+        <node concept="l2Vlx" id="5ipQkCIOg9T" role="2czzBx" />
+        <node concept="pVoyu" id="5ipQkCIOg9U" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5ipQkCIOg9V" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="5ipQkCIOg9W" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5ipQkCIOg9X" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+      </node>
+      <node concept="l2Vlx" id="5ipQkCIOg9Y" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5ipQkCIOg9Z">
+    <property role="3GE5qa" value="core.classifier" />
+    <property role="TrG5h" value="KerMLStructure_Editor" />
+    <ref role="1XX52x" to="rb60:5ipQkCIO4A_" resolve="KerMLStructure" />
+    <node concept="PMmxH" id="5ipQkCIOga1" role="6VMZX">
+      <ref role="PMmxG" node="7JYC9rUwWvZ" resolve="IKerMLNamespaceMember_VisibilityInspector" />
+    </node>
+    <node concept="3EZMnI" id="5ipQkCIOga2" role="2wV5jI">
+      <node concept="PMmxH" id="5ipQkCIOga3" role="3EZMnx">
+        <ref role="PMmxG" node="7JYC9rUwUU$" resolve="IKerMLNamespaceMember_Visibility" />
+      </node>
+      <node concept="1kHk_G" id="5ipQkCIOga4" role="3EZMnx">
+        <property role="ZjSer" value="abstract" />
+        <ref role="1NtTu8" to="rb60:7JYC9rUVR0s" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0ifn" id="5ipQkCIOga5" role="3EZMnx">
+        <property role="3F0ifm" value="struct" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="5ipQkCIOga6" role="3EZMnx">
+        <property role="ZjSer" value="all" />
+        <ref role="1NtTu8" to="rb60:7JYC9rUVR0t" resolve="isSufficient" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="PMmxH" id="5ipQkCIOga7" role="3EZMnx">
+        <ref role="PMmxG" node="7JYC9rULce3" resolve="KerMLElement_ShortName" />
+      </node>
+      <node concept="3F0A7n" id="5ipQkCIOga8" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="5ipQkCIOga9" role="3EZMnx">
+        <node concept="3F1sOY" id="5ipQkCIOgab" role="_tjki">
+          <ref role="1NtTu8" to="rb60:7JYC9rVyBuS" resolve="multiplicity" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="5ipQkCIOgac" role="3EZMnx">
+        <node concept="3EZMnI" id="5ipQkCIOgae" role="_tjki">
+          <node concept="3F0ifn" id="5ipQkCIOgaf" role="3EZMnx">
+            <property role="3F0ifm" value="specializes" />
+            <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+          </node>
+          <node concept="3F2HdR" id="5ipQkCIOgag" role="3EZMnx">
+            <property role="2czwfO" value="," />
+            <ref role="1NtTu8" to="rb60:7JYC9rUVR0u" />
+            <node concept="4$FPG" id="5ipQkCIOgah" role="4_6I_">
+              <node concept="3clFbS" id="5ipQkCIOgaj" role="2VODD2">
+                <node concept="3cpWs6" id="5ipQkCIOgak" role="3cqZAp">
+                  <node concept="2ShNRf" id="5ipQkCIOgal" role="3cqZAk">
+                    <node concept="3zrR0B" id="5ipQkCIOgan" role="2ShVmc">
+                      <node concept="3Tqbb2" id="5ipQkCIOgap" role="3zrR0E">
+                        <ref role="ehGHo" to="rb60:7JYC9rVcQwe" resolve="KerMLSubclassification" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="l2Vlx" id="5ipQkCIOgaq" role="2czzBx" />
+          </node>
+          <node concept="l2Vlx" id="5ipQkCIOgar" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5ipQkCIOgas" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+        <node concept="11L4FC" id="5ipQkCIOgat" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5ipQkCIOgau" role="3EZMnx">
+        <ref role="1NtTu8" to="rb60:7JYC9rUw4ww" />
+        <node concept="l2Vlx" id="5ipQkCIOgav" role="2czzBx" />
+        <node concept="pVoyu" id="5ipQkCIOgaw" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5ipQkCIOgax" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="5ipQkCIOgay" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5ipQkCIOgaz" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+      </node>
+      <node concept="l2Vlx" id="5ipQkCIOga$" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5ipQkCIOga_">
+    <property role="3GE5qa" value="core.classifier" />
+    <property role="TrG5h" value="KerMLAssociation_Editor" />
+    <ref role="1XX52x" to="rb60:5ipQkCIO4AA" resolve="KerMLAssociation" />
+    <node concept="PMmxH" id="5ipQkCIOgaB" role="6VMZX">
+      <ref role="PMmxG" node="7JYC9rUwWvZ" resolve="IKerMLNamespaceMember_VisibilityInspector" />
+    </node>
+    <node concept="3EZMnI" id="5ipQkCIOgaC" role="2wV5jI">
+      <node concept="PMmxH" id="5ipQkCIOgaD" role="3EZMnx">
+        <ref role="PMmxG" node="7JYC9rUwUU$" resolve="IKerMLNamespaceMember_Visibility" />
+      </node>
+      <node concept="1kHk_G" id="5ipQkCIOgaE" role="3EZMnx">
+        <property role="ZjSer" value="abstract" />
+        <ref role="1NtTu8" to="rb60:7JYC9rUVR0s" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0ifn" id="5ipQkCIOgaF" role="3EZMnx">
+        <property role="3F0ifm" value="assoc" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="5ipQkCIOgaG" role="3EZMnx">
+        <property role="ZjSer" value="all" />
+        <ref role="1NtTu8" to="rb60:7JYC9rUVR0t" resolve="isSufficient" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="PMmxH" id="5ipQkCIOgaH" role="3EZMnx">
+        <ref role="PMmxG" node="7JYC9rULce3" resolve="KerMLElement_ShortName" />
+      </node>
+      <node concept="3F0A7n" id="5ipQkCIOgaI" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="5ipQkCIOgaJ" role="3EZMnx">
+        <node concept="3F1sOY" id="5ipQkCIOgaL" role="_tjki">
+          <ref role="1NtTu8" to="rb60:7JYC9rVyBuS" resolve="multiplicity" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="5ipQkCIOgaM" role="3EZMnx">
+        <node concept="3EZMnI" id="5ipQkCIOgaO" role="_tjki">
+          <node concept="3F0ifn" id="5ipQkCIOgaP" role="3EZMnx">
+            <property role="3F0ifm" value="specializes" />
+            <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+          </node>
+          <node concept="3F2HdR" id="5ipQkCIOgaQ" role="3EZMnx">
+            <property role="2czwfO" value="," />
+            <ref role="1NtTu8" to="rb60:7JYC9rUVR0u" />
+            <node concept="4$FPG" id="5ipQkCIOgaR" role="4_6I_">
+              <node concept="3clFbS" id="5ipQkCIOgaT" role="2VODD2">
+                <node concept="3cpWs6" id="5ipQkCIOgaU" role="3cqZAp">
+                  <node concept="2ShNRf" id="5ipQkCIOgaV" role="3cqZAk">
+                    <node concept="3zrR0B" id="5ipQkCIOgaX" role="2ShVmc">
+                      <node concept="3Tqbb2" id="5ipQkCIOgaZ" role="3zrR0E">
+                        <ref role="ehGHo" to="rb60:7JYC9rVcQwe" resolve="KerMLSubclassification" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="l2Vlx" id="5ipQkCIOgb0" role="2czzBx" />
+          </node>
+          <node concept="l2Vlx" id="5ipQkCIOgb1" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5ipQkCIOgb2" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+        <node concept="11L4FC" id="5ipQkCIOgb3" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5ipQkCIOgb4" role="3EZMnx">
+        <ref role="1NtTu8" to="rb60:7JYC9rUw4ww" />
+        <node concept="l2Vlx" id="5ipQkCIOgb5" role="2czzBx" />
+        <node concept="pVoyu" id="5ipQkCIOgb6" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5ipQkCIOgb7" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="5ipQkCIOgb8" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5ipQkCIOgb9" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+      </node>
+      <node concept="l2Vlx" id="5ipQkCIOgba" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5ipQkCIOgbb">
+    <property role="TrG5h" value="KerMLAssociationStructure_Editor" />
+    <property role="3GE5qa" value="core.classifier" />
+    <ref role="1XX52x" to="rb60:5ipQkCIO4AB" resolve="KerMLAssociationStructure" />
+    <node concept="PMmxH" id="5ipQkCJmrNQ" role="6VMZX">
+      <ref role="PMmxG" node="7JYC9rUwWvZ" resolve="IKerMLNamespaceMember_VisibilityInspector" />
+    </node>
+    <node concept="3EZMnI" id="5ipQkCJmrNR" role="2wV5jI">
+      <node concept="PMmxH" id="5ipQkCJmrNS" role="3EZMnx">
+        <ref role="PMmxG" node="7JYC9rUwUU$" resolve="IKerMLNamespaceMember_Visibility" />
+      </node>
+      <node concept="1kHk_G" id="5ipQkCJmrNT" role="3EZMnx">
+        <property role="ZjSer" value="abstract" />
+        <ref role="1NtTu8" to="rb60:7JYC9rUVR0s" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0ifn" id="5ipQkCJmrNU" role="3EZMnx">
+        <property role="3F0ifm" value="assoc struct" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="5ipQkCJmrNV" role="3EZMnx">
+        <property role="ZjSer" value="all" />
+        <ref role="1NtTu8" to="rb60:7JYC9rUVR0t" resolve="isSufficient" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="PMmxH" id="5ipQkCJmrNW" role="3EZMnx">
+        <ref role="PMmxG" node="7JYC9rULce3" resolve="KerMLElement_ShortName" />
+      </node>
+      <node concept="3F0A7n" id="5ipQkCJmrNX" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="5ipQkCJmrNY" role="3EZMnx">
+        <node concept="3F1sOY" id="5ipQkCJmrO0" role="_tjki">
+          <ref role="1NtTu8" to="rb60:7JYC9rVyBuS" resolve="multiplicity" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="5ipQkCJmrO1" role="3EZMnx">
+        <node concept="3EZMnI" id="5ipQkCJmrO3" role="_tjki">
+          <node concept="3F0ifn" id="5ipQkCJmrO4" role="3EZMnx">
+            <property role="3F0ifm" value="specializes" />
+            <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+          </node>
+          <node concept="3F2HdR" id="5ipQkCJmrO5" role="3EZMnx">
+            <property role="2czwfO" value="," />
+            <ref role="1NtTu8" to="rb60:7JYC9rUVR0u" />
+            <node concept="4$FPG" id="5ipQkCJmrO6" role="4_6I_">
+              <node concept="3clFbS" id="5ipQkCJmrO8" role="2VODD2">
+                <node concept="3cpWs6" id="5ipQkCJmrO9" role="3cqZAp">
+                  <node concept="2ShNRf" id="5ipQkCJmrOa" role="3cqZAk">
+                    <node concept="3zrR0B" id="5ipQkCJmrOc" role="2ShVmc">
+                      <node concept="3Tqbb2" id="5ipQkCJmrOe" role="3zrR0E">
+                        <ref role="ehGHo" to="rb60:7JYC9rVcQwe" resolve="KerMLSubclassification" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="l2Vlx" id="5ipQkCJmrOf" role="2czzBx" />
+          </node>
+          <node concept="l2Vlx" id="5ipQkCJmrOg" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5ipQkCJmrOh" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+        <node concept="11L4FC" id="5ipQkCJmrOi" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5ipQkCJmrOj" role="3EZMnx">
+        <ref role="1NtTu8" to="rb60:7JYC9rUw4ww" />
+        <node concept="l2Vlx" id="5ipQkCJmrOk" role="2czzBx" />
+        <node concept="pVoyu" id="5ipQkCJmrOl" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5ipQkCJmrOm" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="5ipQkCJmrOn" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5ipQkCJmrOo" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+      </node>
+      <node concept="l2Vlx" id="5ipQkCJmrOp" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="5ipQkCIOgbL">
+    <property role="3GE5qa" value="core.classifier" />
+    <property role="TrG5h" value="KerMLMetaclass_Editor" />
+    <ref role="1XX52x" to="rb60:5ipQkCIO4AC" resolve="KerMLMetaclass" />
+    <node concept="PMmxH" id="5ipQkCIOgbN" role="6VMZX">
+      <ref role="PMmxG" node="7JYC9rUwWvZ" resolve="IKerMLNamespaceMember_VisibilityInspector" />
+    </node>
+    <node concept="3EZMnI" id="5ipQkCIOgbO" role="2wV5jI">
+      <node concept="PMmxH" id="5ipQkCIOgbP" role="3EZMnx">
+        <ref role="PMmxG" node="7JYC9rUwUU$" resolve="IKerMLNamespaceMember_Visibility" />
+      </node>
+      <node concept="1kHk_G" id="5ipQkCIOgbQ" role="3EZMnx">
+        <property role="ZjSer" value="abstract" />
+        <ref role="1NtTu8" to="rb60:7JYC9rUVR0s" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0ifn" id="5ipQkCIOgbR" role="3EZMnx">
+        <property role="3F0ifm" value="metaclass" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="5ipQkCIOgbS" role="3EZMnx">
+        <property role="ZjSer" value="all" />
+        <ref role="1NtTu8" to="rb60:7JYC9rUVR0t" resolve="isSufficient" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="PMmxH" id="5ipQkCIOgbT" role="3EZMnx">
+        <ref role="PMmxG" node="7JYC9rULce3" resolve="KerMLElement_ShortName" />
+      </node>
+      <node concept="3F0A7n" id="5ipQkCIOgbU" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="_tjkj" id="5ipQkCIOgbV" role="3EZMnx">
+        <node concept="3F1sOY" id="5ipQkCIOgbX" role="_tjki">
+          <ref role="1NtTu8" to="rb60:7JYC9rVyBuS" resolve="multiplicity" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="5ipQkCIOgbY" role="3EZMnx">
+        <node concept="3EZMnI" id="5ipQkCIOgc0" role="_tjki">
+          <node concept="3F0ifn" id="5ipQkCIOgc1" role="3EZMnx">
+            <property role="3F0ifm" value="specializes" />
+            <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+          </node>
+          <node concept="3F2HdR" id="5ipQkCIOgc2" role="3EZMnx">
+            <property role="2czwfO" value="," />
+            <ref role="1NtTu8" to="rb60:7JYC9rUVR0u" />
+            <node concept="4$FPG" id="5ipQkCIOgc3" role="4_6I_">
+              <node concept="3clFbS" id="5ipQkCIOgc5" role="2VODD2">
+                <node concept="3cpWs6" id="5ipQkCIOgc6" role="3cqZAp">
+                  <node concept="2ShNRf" id="5ipQkCIOgc7" role="3cqZAk">
+                    <node concept="3zrR0B" id="5ipQkCIOgc9" role="2ShVmc">
+                      <node concept="3Tqbb2" id="5ipQkCIOgcb" role="3zrR0E">
+                        <ref role="ehGHo" to="rb60:7JYC9rVcQwe" resolve="KerMLSubclassification" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="l2Vlx" id="5ipQkCIOgcc" role="2czzBx" />
+          </node>
+          <node concept="l2Vlx" id="5ipQkCIOgcd" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5ipQkCIOgce" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+        <node concept="11L4FC" id="5ipQkCIOgcf" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="5ipQkCIOgcg" role="3EZMnx">
+        <ref role="1NtTu8" to="rb60:7JYC9rUw4ww" />
+        <node concept="l2Vlx" id="5ipQkCIOgch" role="2czzBx" />
+        <node concept="pVoyu" id="5ipQkCIOgci" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="5ipQkCIOgcj" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="5ipQkCIOgck" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="5ipQkCIOgcl" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+      </node>
+      <node concept="l2Vlx" id="5ipQkCIOgcm" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

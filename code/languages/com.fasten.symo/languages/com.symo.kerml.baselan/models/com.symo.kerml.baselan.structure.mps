@@ -662,5 +662,40 @@
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
+  <node concept="1TIwiD" id="5ipQkCIO4A$">
+    <property role="EcuMT" value="6096142483258886564" />
+    <property role="TrG5h" value="KerMLClass" />
+    <property role="34LRSv" value="class" />
+    <property role="R4oN_" value="A Classifier of occurrences (KerML 8.3.4.2)" />
+    <ref role="1TJDcQ" node="7JYC9rVcQwd" resolve="KerMLClassifier" />
+  </node>
+  <node concept="1TIwiD" id="5ipQkCIO4A_">
+    <property role="EcuMT" value="6096142483258886565" />
+    <property role="TrG5h" value="KerMLStructure" />
+    <property role="34LRSv" value="struct" />
+    <property role="R4oN_" value="A Class of objects (KerML 8.3.4.3)" />
+    <ref role="1TJDcQ" node="5ipQkCIO4A$" resolve="KerMLClass" />
+  </node>
+  <node concept="1TIwiD" id="5ipQkCIO4AA">
+    <property role="EcuMT" value="6096142483258886566" />
+    <property role="TrG5h" value="KerMLAssociation" />
+    <property role="34LRSv" value="assoc" />
+    <property role="R4oN_" value="A Classifier of links between things (KerML 8.3.4.4); the Relationship supertype is not modelled" />
+    <ref role="1TJDcQ" node="7JYC9rVcQwd" resolve="KerMLClassifier" />
+  </node>
+  <node concept="1TIwiD" id="5ipQkCIO4AB">
+    <property role="EcuMT" value="6096142483258886567" />
+    <property role="TrG5h" value="KerMLAssociationStructure" />
+    <property role="34LRSv" value="assoc struct" />
+    <property role="R4oN_" value="An Association that is also a Structure (KerML 8.3.4.4); the Structure supertype is not modelled" />
+    <ref role="1TJDcQ" node="5ipQkCIO4AA" resolve="KerMLAssociation" />
+  </node>
+  <node concept="1TIwiD" id="5ipQkCIO4AC">
+    <property role="EcuMT" value="6096142483258886568" />
+    <property role="TrG5h" value="KerMLMetaclass" />
+    <property role="34LRSv" value="metaclass" />
+    <property role="R4oN_" value="A Structure that classifies model elements (KerML Kernel layer, metadata)" />
+    <ref role="1TJDcQ" node="5ipQkCIO4A_" resolve="KerMLStructure" />
+  </node>
 </model>
 

@@ -1354,7 +1354,7 @@
       <node concept="3uibUv" id="7JYC9rXCnud" role="1tU5fm">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="7JYC9rXCnue" role="11_B2D">
-          <ref role="3uigEE" node="7JYC9rXCntw" resolve="PendingReference" />
+          <ref role="3uigEE" node="7JYC9rXCntw" resolve="KerMLImporterVisitor.PendingReference" />
         </node>
       </node>
       <node concept="2ShNRf" id="7JYC9rXCp3Z" role="33vP2m">
@@ -1378,7 +1378,7 @@
       <node concept="3uibUv" id="7JYC9rXCnum" role="3clF45">
         <ref role="3uigEE" to="33ny:~List" resolve="List" />
         <node concept="3uibUv" id="7JYC9rXCnun" role="11_B2D">
-          <ref role="3uigEE" node="7JYC9rXCntw" resolve="PendingReference" />
+          <ref role="3uigEE" node="7JYC9rXCntw" resolve="KerMLImporterVisitor.PendingReference" />
         </node>
       </node>
     </node>
@@ -1437,7 +1437,7 @@
       <node concept="37vLTG" id="7JYC9rXCnuC" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCnuD" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$NamespaceBodyElementContext" resolve="NamespaceBodyElementContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$NamespaceBodyElementContext" resolve="KerMLParser.NamespaceBodyElementContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnuE" role="3clF47">
@@ -1491,7 +1491,7 @@
       <node concept="37vLTG" id="7JYC9rXCnuV" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCnuW" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$NamespaceMemberContext" resolve="NamespaceMemberContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$NamespaceMemberContext" resolve="KerMLParser.NamespaceMemberContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnuX" role="3clF47">
@@ -1543,7 +1543,7 @@
       <node concept="37vLTG" id="7JYC9rXCnva" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCnvb" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$NonFeatureMemberContext" resolve="NonFeatureMemberContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$NonFeatureMemberContext" resolve="KerMLParser.NonFeatureMemberContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnvc" role="3clF47">
@@ -1585,7 +1585,7 @@
       <node concept="37vLTG" id="7JYC9rXCnvm" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCnvn" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$NamespaceFeatureMemberContext" resolve="NamespaceFeatureMemberContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$NamespaceFeatureMemberContext" resolve="KerMLParser.NamespaceFeatureMemberContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnvo" role="3clF47">
@@ -1627,7 +1627,7 @@
       <node concept="37vLTG" id="7JYC9rXCnvy" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCnvz" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureMemberContext" resolve="FeatureMemberContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureMemberContext" resolve="KerMLParser.FeatureMemberContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnv$" role="3clF47">
@@ -1681,7 +1681,7 @@
       <node concept="37vLTG" id="7JYC9rXCnvP" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCnvQ" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedFeatureMemberContext" resolve="OwnedFeatureMemberContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedFeatureMemberContext" resolve="KerMLParser.OwnedFeatureMemberContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnvR" role="3clF47">
@@ -1723,7 +1723,7 @@
       <node concept="37vLTG" id="7JYC9rXCnw1" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCnw2" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$MemberElementContext" resolve="MemberElementContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$MemberElementContext" resolve="KerMLParser.MemberElementContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnw3" role="3clF47">
@@ -1775,7 +1775,7 @@
       <node concept="37vLTG" id="5ipQkCI4NgR" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="5ipQkCI4NgS" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$AnnotatingElementContext" resolve="AnnotatingElementContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$AnnotatingElementContext" resolve="KerMLParser.AnnotatingElementContext" />
         </node>
       </node>
       <node concept="3clFbS" id="5ipQkCI4NgT" role="3clF47">
@@ -1885,7 +1885,7 @@
       <node concept="37vLTG" id="5ipQkCI1V8v" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="5ipQkCI1V8w" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$CommentContext" resolve="CommentContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$CommentContext" resolve="KerMLParser.CommentContext" />
         </node>
       </node>
       <node concept="3clFbS" id="5ipQkCI1V8x" role="3clF47">
@@ -1932,7 +1932,7 @@
           <node concept="3cpWsn" id="5ipQkCI1V8Y" role="1Duv9x">
             <property role="TrG5h" value="annotation" />
             <node concept="3uibUv" id="5ipQkCI1V90" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser$AnnotationContext" resolve="AnnotationContext" />
+              <ref role="3uigEE" to="rjc7:~KerMLParser$AnnotationContext" resolve="KerMLParser.AnnotationContext" />
             </node>
           </node>
           <node concept="3clFbS" id="5ipQkCI1V8H" role="2LFqv$">
@@ -2080,7 +2080,7 @@
       <node concept="37vLTG" id="5ipQkCI5Q$U" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="5ipQkCI5Q$V" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$TextualRepresentationContext" resolve="TextualRepresentationContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$TextualRepresentationContext" resolve="KerMLParser.TextualRepresentationContext" />
         </node>
       </node>
       <node concept="3clFbS" id="5ipQkCI5Q$W" role="3clF47">
@@ -2182,39 +2182,39 @@
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
     </node>
-    <node concept="3clFb_" id="7JYC9rXCnwx" role="jymVt">
+    <node concept="3clFb_" id="5ipQkCJ1ESb" role="jymVt">
       <property role="TrG5h" value="visitNonFeatureElement" />
-      <node concept="2AHcQZ" id="7JYC9rXCnwy" role="2AJF6D">
+      <node concept="2AHcQZ" id="5ipQkCJ1ESc" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
-      <node concept="37vLTG" id="7JYC9rXCnwz" role="3clF46">
+      <node concept="37vLTG" id="5ipQkCJ1ESd" role="3clF46">
         <property role="TrG5h" value="ctx" />
-        <node concept="3uibUv" id="7JYC9rXCnw$" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$NonFeatureElementContext" resolve="NonFeatureElementContext" />
+        <node concept="3uibUv" id="5ipQkCJ1ESe" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$NonFeatureElementContext" resolve="KerMLParser.NonFeatureElementContext" />
         </node>
       </node>
-      <node concept="3clFbS" id="7JYC9rXCnw_" role="3clF47">
-        <node concept="3clFbJ" id="7JYC9rXCnwA" role="3cqZAp">
-          <node concept="3y3z36" id="7JYC9rXCnwB" role="3clFbw">
-            <node concept="2OqwBi" id="7JYC9rXCN4h" role="3uHU7B">
-              <node concept="37vLTw" id="7JYC9rXCrL7" role="2Oq$k0">
-                <ref role="3cqZAo" node="7JYC9rXCnwz" resolve="ctx" />
+      <node concept="3clFbS" id="5ipQkCJ1ESf" role="3clF47">
+        <node concept="3clFbJ" id="5ipQkCJ1ESg" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCJ1ESh" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCJ1KYK" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCJ1IhK" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="7JYC9rXCN4i" role="2OqNvi">
+              <node concept="liA8E" id="5ipQkCJ1KYL" role="2OqNvi">
                 <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.libraryPackage()" resolve="libraryPackage" />
               </node>
             </node>
-            <node concept="10Nm6u" id="7JYC9rXCnwD" role="3uHU7w" />
+            <node concept="10Nm6u" id="5ipQkCJ1ESj" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="7JYC9rXCnwF" role="3clFbx">
-            <node concept="3cpWs6" id="7JYC9rXCnwG" role="3cqZAp">
-              <node concept="1rXfSq" id="7JYC9rXCnwH" role="3cqZAk">
+          <node concept="3clFbS" id="5ipQkCJ1ESl" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCJ1ESm" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCJ1ESn" role="3cqZAk">
                 <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
-                <node concept="2OqwBi" id="7JYC9rXCN4s" role="37wK5m">
-                  <node concept="37vLTw" id="7JYC9rXCrTK" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7JYC9rXCnwz" resolve="ctx" />
+                <node concept="2OqwBi" id="5ipQkCJ1KYV" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCJ1Iqp" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
                   </node>
-                  <node concept="liA8E" id="7JYC9rXCN4t" role="2OqNvi">
+                  <node concept="liA8E" id="5ipQkCJ1KYW" role="2OqNvi">
                     <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.libraryPackage()" resolve="libraryPackage" />
                   </node>
                 </node>
@@ -2222,27 +2222,27 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="7JYC9rXCnwJ" role="3cqZAp">
-          <node concept="3y3z36" id="7JYC9rXCnwK" role="3clFbw">
-            <node concept="2OqwBi" id="7JYC9rXCN4B" role="3uHU7B">
-              <node concept="37vLTw" id="7JYC9rXCs2p" role="2Oq$k0">
-                <ref role="3cqZAo" node="7JYC9rXCnwz" resolve="ctx" />
+        <node concept="3clFbJ" id="5ipQkCJ1ESp" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCJ1ESq" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCJ1KZ6" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCJ1Iz2" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="7JYC9rXCN4C" role="2OqNvi">
+              <node concept="liA8E" id="5ipQkCJ1KZ7" role="2OqNvi">
                 <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.package_()" resolve="package_" />
               </node>
             </node>
-            <node concept="10Nm6u" id="7JYC9rXCnwM" role="3uHU7w" />
+            <node concept="10Nm6u" id="5ipQkCJ1ESs" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="7JYC9rXCnwO" role="3clFbx">
-            <node concept="3cpWs6" id="7JYC9rXCnwP" role="3cqZAp">
-              <node concept="1rXfSq" id="7JYC9rXCnwQ" role="3cqZAk">
+          <node concept="3clFbS" id="5ipQkCJ1ESu" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCJ1ESv" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCJ1ESw" role="3cqZAk">
                 <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
-                <node concept="2OqwBi" id="7JYC9rXCN4M" role="37wK5m">
-                  <node concept="37vLTw" id="7JYC9rXCsb2" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7JYC9rXCnwz" resolve="ctx" />
+                <node concept="2OqwBi" id="5ipQkCJ1KZh" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCJ1IFF" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
                   </node>
-                  <node concept="liA8E" id="7JYC9rXCN4N" role="2OqNvi">
+                  <node concept="liA8E" id="5ipQkCJ1KZi" role="2OqNvi">
                     <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.package_()" resolve="package_" />
                   </node>
                 </node>
@@ -2250,27 +2250,27 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="7JYC9rXCnwS" role="3cqZAp">
-          <node concept="3y3z36" id="7JYC9rXCnwT" role="3clFbw">
-            <node concept="2OqwBi" id="7JYC9rXCN4X" role="3uHU7B">
-              <node concept="37vLTw" id="7JYC9rXCsjF" role="2Oq$k0">
-                <ref role="3cqZAo" node="7JYC9rXCnwz" resolve="ctx" />
+        <node concept="3clFbJ" id="5ipQkCJ1ESy" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCJ1ESz" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCJ1KZs" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCJ1IOk" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="7JYC9rXCN4Y" role="2OqNvi">
+              <node concept="liA8E" id="5ipQkCJ1KZt" role="2OqNvi">
                 <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.multiplicity()" resolve="multiplicity" />
               </node>
             </node>
-            <node concept="10Nm6u" id="7JYC9rXCnwV" role="3uHU7w" />
+            <node concept="10Nm6u" id="5ipQkCJ1ES_" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="7JYC9rXCnwX" role="3clFbx">
-            <node concept="3cpWs6" id="7JYC9rXCnwY" role="3cqZAp">
-              <node concept="1rXfSq" id="7JYC9rXCnwZ" role="3cqZAk">
+          <node concept="3clFbS" id="5ipQkCJ1ESB" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCJ1ESC" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCJ1ESD" role="3cqZAk">
                 <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
-                <node concept="2OqwBi" id="7JYC9rXCN58" role="37wK5m">
-                  <node concept="37vLTw" id="7JYC9rXCssk" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7JYC9rXCnwz" resolve="ctx" />
+                <node concept="2OqwBi" id="5ipQkCJ1KZB" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCJ1IWX" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
                   </node>
-                  <node concept="liA8E" id="7JYC9rXCN59" role="2OqNvi">
+                  <node concept="liA8E" id="5ipQkCJ1KZC" role="2OqNvi">
                     <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.multiplicity()" resolve="multiplicity" />
                   </node>
                 </node>
@@ -2278,27 +2278,27 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="7JYC9rXCnx1" role="3cqZAp">
-          <node concept="3y3z36" id="7JYC9rXCnx2" role="3clFbw">
-            <node concept="2OqwBi" id="7JYC9rXCN5j" role="3uHU7B">
-              <node concept="37vLTw" id="7JYC9rXCs$X" role="2Oq$k0">
-                <ref role="3cqZAo" node="7JYC9rXCnwz" resolve="ctx" />
+        <node concept="3clFbJ" id="5ipQkCJ1ESF" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCJ1ESG" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCJ1KZM" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCJ1J5A" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="7JYC9rXCN5k" role="2OqNvi">
+              <node concept="liA8E" id="5ipQkCJ1KZN" role="2OqNvi">
                 <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.classifier()" resolve="classifier" />
               </node>
             </node>
-            <node concept="10Nm6u" id="7JYC9rXCnx4" role="3uHU7w" />
+            <node concept="10Nm6u" id="5ipQkCJ1ESI" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="7JYC9rXCnx6" role="3clFbx">
-            <node concept="3cpWs6" id="7JYC9rXCnx7" role="3cqZAp">
-              <node concept="1rXfSq" id="7JYC9rXCnx8" role="3cqZAk">
+          <node concept="3clFbS" id="5ipQkCJ1ESK" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCJ1ESL" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCJ1ESM" role="3cqZAk">
                 <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
-                <node concept="2OqwBi" id="7JYC9rXCN5u" role="37wK5m">
-                  <node concept="37vLTw" id="7JYC9rXCsHA" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7JYC9rXCnwz" resolve="ctx" />
+                <node concept="2OqwBi" id="5ipQkCJ1KZX" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCJ1Jef" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
                   </node>
-                  <node concept="liA8E" id="7JYC9rXCN5v" role="2OqNvi">
+                  <node concept="liA8E" id="5ipQkCJ1KZY" role="2OqNvi">
                     <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.classifier()" resolve="classifier" />
                   </node>
                 </node>
@@ -2306,27 +2306,27 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="7JYC9rXCnxa" role="3cqZAp">
-          <node concept="3y3z36" id="7JYC9rXCnxb" role="3clFbw">
-            <node concept="2OqwBi" id="7JYC9rXCN5D" role="3uHU7B">
-              <node concept="37vLTw" id="7JYC9rXCsQf" role="2Oq$k0">
-                <ref role="3cqZAo" node="7JYC9rXCnwz" resolve="ctx" />
+        <node concept="3clFbJ" id="5ipQkCJ1ESO" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCJ1ESP" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCJ1L08" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCJ1JmS" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="7JYC9rXCN5E" role="2OqNvi">
+              <node concept="liA8E" id="5ipQkCJ1L09" role="2OqNvi">
                 <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.dataType()" resolve="dataType" />
               </node>
             </node>
-            <node concept="10Nm6u" id="7JYC9rXCnxd" role="3uHU7w" />
+            <node concept="10Nm6u" id="5ipQkCJ1ESR" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="7JYC9rXCnxf" role="3clFbx">
-            <node concept="3cpWs6" id="7JYC9rXCnxg" role="3cqZAp">
-              <node concept="1rXfSq" id="7JYC9rXCnxh" role="3cqZAk">
+          <node concept="3clFbS" id="5ipQkCJ1EST" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCJ1ESU" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCJ1ESV" role="3cqZAk">
                 <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
-                <node concept="2OqwBi" id="7JYC9rXCN5O" role="37wK5m">
-                  <node concept="37vLTw" id="7JYC9rXCsYS" role="2Oq$k0">
-                    <ref role="3cqZAo" node="7JYC9rXCnwz" resolve="ctx" />
+                <node concept="2OqwBi" id="5ipQkCJ1L0j" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCJ1Jvx" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
                   </node>
-                  <node concept="liA8E" id="7JYC9rXCN5P" role="2OqNvi">
+                  <node concept="liA8E" id="5ipQkCJ1L0k" role="2OqNvi">
                     <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.dataType()" resolve="dataType" />
                   </node>
                 </node>
@@ -2334,18 +2334,158 @@
             </node>
           </node>
         </node>
-        <node concept="YS8fn" id="7JYC9rXCnxn" role="3cqZAp">
-          <node concept="1rXfSq" id="7JYC9rXCnxj" role="YScLw">
-            <ref role="37wK5l" node="7JYC9rXCnNK" resolve="unsupported" />
-            <node concept="1rXfSq" id="7JYC9rXCnxk" role="37wK5m">
-              <ref role="37wK5l" node="7JYC9rXCnNv" resolve="ruleOf" />
-              <node concept="2OqwBi" id="7JYC9rXCN5Z" role="37wK5m">
-                <node concept="37vLTw" id="7JYC9rXCt7x" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7JYC9rXCnwz" resolve="ctx" />
+        <node concept="3clFbJ" id="5ipQkCJ1ESX" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCJ1ESY" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCJ1L0u" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCJ1JCa" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCJ1L0v" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.classRule()" resolve="classRule" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCJ1ET0" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5ipQkCJ1ET2" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCJ1ET3" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCJ1ET4" role="3cqZAk">
+                <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                <node concept="2OqwBi" id="5ipQkCJ1L0D" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCJ1JKN" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="5ipQkCJ1L0E" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.classRule()" resolve="classRule" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="7JYC9rXCN60" role="2OqNvi">
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5ipQkCJ1ET6" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCJ1ET7" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCJ1L0O" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCJ1JTs" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCJ1L0P" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.structure()" resolve="structure" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCJ1ET9" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5ipQkCJ1ETb" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCJ1ETc" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCJ1ETd" role="3cqZAk">
+                <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                <node concept="2OqwBi" id="5ipQkCJ1L0Z" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCJ1K25" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="5ipQkCJ1L10" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.structure()" resolve="structure" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5ipQkCJ1ETf" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCJ1ETg" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCJ1L1a" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCJ1KaI" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCJ1L1b" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.association()" resolve="association" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCJ1ETi" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5ipQkCJ1ETk" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCJ1ETl" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCJ1ETm" role="3cqZAk">
+                <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                <node concept="2OqwBi" id="5ipQkCJ1L1l" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCJ1Kjn" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="5ipQkCJ1L1m" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.association()" resolve="association" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5ipQkCJ1ETo" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCJ1ETp" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCJ1L1w" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCJ1Ks0" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCJ1L1x" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.associationStructure()" resolve="associationStructure" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCJ1ETr" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5ipQkCJ1ETt" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCJ1ETu" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCJ1ETv" role="3cqZAk">
+                <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                <node concept="2OqwBi" id="5ipQkCJ1L1F" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCJ1K$D" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="5ipQkCJ1L1G" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.associationStructure()" resolve="associationStructure" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5ipQkCJ1ETx" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCJ1ETy" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCJ1L1Q" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCJ1KHi" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCJ1L1R" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.metaclass()" resolve="metaclass" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCJ1ET$" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5ipQkCJ1ETA" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCJ1ETB" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCJ1ETC" role="3cqZAk">
+                <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                <node concept="2OqwBi" id="5ipQkCJ1L21" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCJ1KPV" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="5ipQkCJ1L22" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.metaclass()" resolve="metaclass" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="YS8fn" id="5ipQkCJ1ETI" role="3cqZAp">
+          <node concept="1rXfSq" id="5ipQkCJ1ETE" role="YScLw">
+            <ref role="37wK5l" node="7JYC9rXCnNK" resolve="unsupported" />
+            <node concept="1rXfSq" id="5ipQkCJ1ETF" role="37wK5m">
+              <ref role="37wK5l" node="7JYC9rXCnNv" resolve="ruleOf" />
+              <node concept="2OqwBi" id="5ipQkCJ1L2c" role="37wK5m">
+                <node concept="37vLTw" id="5ipQkCJ1KY$" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+                </node>
+                <node concept="liA8E" id="5ipQkCJ1L2d" role="2OqNvi">
                   <ref role="37wK5l" to="p3ir:~ParserRuleContext.getChild(int)" resolve="getChild" />
-                  <node concept="3cmrfG" id="7JYC9rXCN61" role="37wK5m">
+                  <node concept="3cmrfG" id="5ipQkCJ1L2e" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
@@ -2354,8 +2494,8 @@
           </node>
         </node>
       </node>
-      <node concept="3Tm1VV" id="7JYC9rXCnxo" role="1B3o_S" />
-      <node concept="3uibUv" id="7JYC9rXCnxp" role="3clF45">
+      <node concept="3Tm1VV" id="5ipQkCJ1ETJ" role="1B3o_S" />
+      <node concept="3uibUv" id="5ipQkCJ1ETK" role="3clF45">
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
     </node>
@@ -2367,7 +2507,7 @@
       <node concept="37vLTG" id="7JYC9rXCnxs" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCnxt" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureElementContext" resolve="FeatureElementContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureElementContext" resolve="KerMLParser.FeatureElementContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnxu" role="3clF47">
@@ -2432,7 +2572,7 @@
       <node concept="37vLTG" id="7JYC9rXCnxL" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCnxM" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$DocumentationContext" resolve="DocumentationContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$DocumentationContext" resolve="KerMLParser.DocumentationContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnxN" role="3clF47">
@@ -2557,7 +2697,7 @@
       <node concept="37vLTG" id="7JYC9rXCnyl" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCnym" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$LibraryPackageContext" resolve="LibraryPackageContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$LibraryPackageContext" resolve="KerMLParser.LibraryPackageContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnyn" role="3clF47">
@@ -2682,7 +2822,7 @@
       <node concept="37vLTG" id="7JYC9rXCnyW" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCnyX" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$PackageContext" resolve="PackageContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$PackageContext" resolve="KerMLParser.PackageContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnyY" role="3clF47">
@@ -2784,7 +2924,7 @@
       <node concept="37vLTG" id="5ipQkCI8z5h" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="5ipQkCI8z5i" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$ImportRuleContext" resolve="ImportRuleContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$ImportRuleContext" resolve="KerMLParser.ImportRuleContext" />
         </node>
       </node>
       <node concept="3clFbS" id="5ipQkCI8z5j" role="3clF47">
@@ -2839,7 +2979,7 @@
               <node concept="3cpWsn" id="5ipQkCI8z5_" role="3cpWs9">
                 <property role="TrG5h" value="membership" />
                 <node concept="3uibUv" id="5ipQkCI8z5B" role="1tU5fm">
-                  <ref role="3uigEE" to="rjc7:~KerMLParser$MembershipImportContext" resolve="MembershipImportContext" />
+                  <ref role="3uigEE" to="rjc7:~KerMLParser$MembershipImportContext" resolve="KerMLParser.MembershipImportContext" />
                 </node>
                 <node concept="2OqwBi" id="5ipQkCI8ANI" role="33vP2m">
                   <node concept="37vLTw" id="5ipQkCI8_9Z" role="2Oq$k0">
@@ -2990,7 +3130,7 @@
           <node concept="3cpWsn" id="5ipQkCI8z6i" role="3cpWs9">
             <property role="TrG5h" value="namespace" />
             <node concept="3uibUv" id="5ipQkCI8z6k" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser$NamespaceImportContext" resolve="NamespaceImportContext" />
+              <ref role="3uigEE" to="rjc7:~KerMLParser$NamespaceImportContext" resolve="KerMLParser.NamespaceImportContext" />
             </node>
             <node concept="2OqwBi" id="5ipQkCI8Bee" role="33vP2m">
               <node concept="37vLTw" id="5ipQkCI8_Yu" role="2Oq$k0">
@@ -3172,7 +3312,7 @@
       <node concept="37vLTG" id="7JYC9rXCn$z" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCn$$" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$MultiplicityContext" resolve="MultiplicityContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$MultiplicityContext" resolve="KerMLParser.MultiplicityContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCn$_" role="3clF47">
@@ -3226,7 +3366,7 @@
       <node concept="37vLTG" id="7JYC9rXCn$Q" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCn$R" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$MultiplicityRangeContext" resolve="MultiplicityRangeContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$MultiplicityRangeContext" resolve="KerMLParser.MultiplicityRangeContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCn$S" role="3clF47">
@@ -3312,7 +3452,7 @@
       <node concept="37vLTG" id="7JYC9rXCn_g" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCn_h" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$ClassifierContext" resolve="ClassifierContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$ClassifierContext" resolve="KerMLParser.ClassifierContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCn_i" role="3clF47">
@@ -3362,7 +3502,7 @@
       <node concept="37vLTG" id="7JYC9rXCn_t" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="7JYC9rXCn_u" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$DataTypeContext" resolve="DataTypeContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$DataTypeContext" resolve="KerMLParser.DataTypeContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCn_v" role="3clF47">
@@ -3415,19 +3555,19 @@
       <node concept="37vLTG" id="7JYC9rXCn_F" role="3clF46">
         <property role="TrG5h" value="prefix" />
         <node concept="3uibUv" id="7JYC9rXCn_G" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$TypePrefixContext" resolve="TypePrefixContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$TypePrefixContext" resolve="KerMLParser.TypePrefixContext" />
         </node>
       </node>
       <node concept="37vLTG" id="7JYC9rXCn_H" role="3clF46">
         <property role="TrG5h" value="decl" />
         <node concept="3uibUv" id="7JYC9rXCn_I" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$ClassifierDeclarationContext" resolve="ClassifierDeclarationContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$ClassifierDeclarationContext" resolve="KerMLParser.ClassifierDeclarationContext" />
         </node>
       </node>
       <node concept="37vLTG" id="7JYC9rXCn_J" role="3clF46">
         <property role="TrG5h" value="body" />
         <node concept="3uibUv" id="7JYC9rXCn_K" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$TypeBodyContext" resolve="TypeBodyContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$TypeBodyContext" resolve="KerMLParser.TypeBodyContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCn_L" role="3clF47">
@@ -3636,7 +3776,7 @@
               <node concept="3cpWsn" id="7JYC9rXCnAR" role="1Duv9x">
                 <property role="TrG5h" value="sub" />
                 <node concept="3uibUv" id="7JYC9rXCnAT" role="1tU5fm">
-                  <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedSubclassificationContext" resolve="OwnedSubclassificationContext" />
+                  <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedSubclassificationContext" resolve="KerMLParser.OwnedSubclassificationContext" />
                 </node>
               </node>
               <node concept="3clFbS" id="7JYC9rXCnAL" role="2LFqv$">
@@ -3693,7 +3833,7 @@
       <node concept="37vLTG" id="5ipQkCIqHxT" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="3uibUv" id="5ipQkCIqHxU" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureContext" resolve="FeatureContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureContext" resolve="KerMLParser.FeatureContext" />
         </node>
       </node>
       <node concept="3clFbS" id="5ipQkCIqHxV" role="3clF47">
@@ -3701,7 +3841,7 @@
           <node concept="3cpWsn" id="5ipQkCIqHxW" role="3cpWs9">
             <property role="TrG5h" value="prefix" />
             <node concept="3uibUv" id="5ipQkCIqHxY" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser$FeaturePrefixContext" resolve="FeaturePrefixContext" />
+              <ref role="3uigEE" to="rjc7:~KerMLParser$FeaturePrefixContext" resolve="KerMLParser.FeaturePrefixContext" />
             </node>
             <node concept="2OqwBi" id="5ipQkCIqLlV" role="33vP2m">
               <node concept="37vLTw" id="5ipQkCIqJjV" role="2Oq$k0">
@@ -3798,7 +3938,7 @@
           <node concept="3cpWsn" id="5ipQkCIqHyv" role="3cpWs9">
             <property role="TrG5h" value="end" />
             <node concept="3uibUv" id="5ipQkCIqHyx" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser$EndFeaturePrefixContext" resolve="EndFeaturePrefixContext" />
+              <ref role="3uigEE" to="rjc7:~KerMLParser$EndFeaturePrefixContext" resolve="KerMLParser.EndFeaturePrefixContext" />
             </node>
             <node concept="1eOMI4" id="5ipQkCIqHyC" role="33vP2m">
               <node concept="3K4zz7" id="5ipQkCIqHyB" role="1eOMHV">
@@ -4029,7 +4169,7 @@
       <node concept="37vLTG" id="7JYC9rXCnC9" role="3clF46">
         <property role="TrG5h" value="prefix" />
         <node concept="3uibUv" id="7JYC9rXCnCa" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$BasicFeaturePrefixContext" resolve="BasicFeaturePrefixContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$BasicFeaturePrefixContext" resolve="KerMLParser.BasicFeaturePrefixContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnCb" role="3clF47">
@@ -4256,7 +4396,7 @@
       <node concept="37vLTG" id="5ipQkCIwmUI" role="3clF46">
         <property role="TrG5h" value="decl" />
         <node concept="3uibUv" id="5ipQkCIwmUJ" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureDeclarationContext" resolve="FeatureDeclarationContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureDeclarationContext" resolve="KerMLParser.FeatureDeclarationContext" />
         </node>
       </node>
       <node concept="3clFbS" id="5ipQkCIwmUK" role="3clF47">
@@ -4365,7 +4505,7 @@
           <node concept="3cpWsn" id="5ipQkCIwmVR" role="1Duv9x">
             <property role="TrG5h" value="part" />
             <node concept="3uibUv" id="5ipQkCIwmVT" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureRelationshipPartContext" resolve="FeatureRelationshipPartContext" />
+              <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureRelationshipPartContext" resolve="KerMLParser.FeatureRelationshipPartContext" />
             </node>
           </node>
           <node concept="3clFbS" id="5ipQkCIwmVh" role="2LFqv$">
@@ -4502,7 +4642,7 @@
       <node concept="37vLTG" id="5ipQkCIG5vK" role="3clF46">
         <property role="TrG5h" value="part" />
         <node concept="3uibUv" id="5ipQkCIG5vL" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureSpecializationPartContext" resolve="FeatureSpecializationPartContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureSpecializationPartContext" resolve="KerMLParser.FeatureSpecializationPartContext" />
         </node>
       </node>
       <node concept="3clFbS" id="5ipQkCIG5vM" role="3clF47">
@@ -4518,7 +4658,7 @@
           <node concept="3cpWsn" id="5ipQkCIG5y5" role="1Duv9x">
             <property role="TrG5h" value="spec" />
             <node concept="3uibUv" id="5ipQkCIG5y7" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureSpecializationContext" resolve="FeatureSpecializationContext" />
+              <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureSpecializationContext" resolve="KerMLParser.FeatureSpecializationContext" />
             </node>
           </node>
           <node concept="3clFbS" id="5ipQkCIG5vP" role="2LFqv$">
@@ -4662,7 +4802,7 @@
                           <node concept="3cpWsn" id="5ipQkCIG5xR" role="1Duv9x">
                             <property role="TrG5h" value="redefinition" />
                             <node concept="3uibUv" id="5ipQkCIG5xT" role="1tU5fm">
-                              <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedRedefinitionContext" resolve="OwnedRedefinitionContext" />
+                              <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedRedefinitionContext" resolve="KerMLParser.OwnedRedefinitionContext" />
                             </node>
                           </node>
                           <node concept="3clFbS" id="5ipQkCIG5xL" role="2LFqv$">
@@ -4871,7 +5011,7 @@
                     <node concept="3cpWsn" id="5ipQkCIG5wB" role="1Duv9x">
                       <property role="TrG5h" value="subsetting" />
                       <node concept="3uibUv" id="5ipQkCIG5wD" role="1tU5fm">
-                        <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedSubsettingContext" resolve="OwnedSubsettingContext" />
+                        <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedSubsettingContext" resolve="KerMLParser.OwnedSubsettingContext" />
                       </node>
                     </node>
                     <node concept="3clFbS" id="5ipQkCIG5wx" role="2LFqv$">
@@ -4945,7 +5085,7 @@
                   <node concept="3cpWsn" id="5ipQkCIG5wb" role="1Duv9x">
                     <property role="TrG5h" value="typing" />
                     <node concept="3uibUv" id="5ipQkCIG5wd" role="1tU5fm">
-                      <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedFeatureTypingContext" resolve="OwnedFeatureTypingContext" />
+                      <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedFeatureTypingContext" resolve="KerMLParser.OwnedFeatureTypingContext" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="5ipQkCIG5w5" role="2LFqv$">
@@ -4986,7 +5126,7 @@
               <node concept="3cpWsn" id="5ipQkCIG5yf" role="3cpWs9">
                 <property role="TrG5h" value="multiplicity" />
                 <node concept="3uibUv" id="5ipQkCIG5yh" role="1tU5fm">
-                  <ref role="3uigEE" to="rjc7:~KerMLParser$MultiplicityPartContext" resolve="MultiplicityPartContext" />
+                  <ref role="3uigEE" to="rjc7:~KerMLParser$MultiplicityPartContext" resolve="KerMLParser.MultiplicityPartContext" />
                 </node>
                 <node concept="2OqwBi" id="5ipQkCIGh6V" role="33vP2m">
                   <node concept="37vLTw" id="5ipQkCIGgvl" role="2Oq$k0">
@@ -5092,7 +5232,7 @@
       <node concept="37vLTG" id="7JYC9rXCnGo" role="3clF46">
         <property role="TrG5h" value="part" />
         <node concept="3uibUv" id="7JYC9rXCnGp" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$ChainingPartContext" resolve="ChainingPartContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$ChainingPartContext" resolve="KerMLParser.ChainingPartContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnGq" role="3clF47">
@@ -5102,7 +5242,7 @@
             <node concept="3uibUv" id="7JYC9rXCnGt" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="7JYC9rXCnGu" role="11_B2D">
-                <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedFeatureChainingContext" resolve="OwnedFeatureChainingContext" />
+                <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedFeatureChainingContext" resolve="KerMLParser.OwnedFeatureChainingContext" />
               </node>
             </node>
             <node concept="3K4zz7" id="7JYC9rXH7jW" role="33vP2m">
@@ -5152,7 +5292,7 @@
           <node concept="3cpWsn" id="7JYC9rXCnGU" role="1Duv9x">
             <property role="TrG5h" value="link" />
             <node concept="3uibUv" id="7JYC9rXCnGW" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedFeatureChainingContext" resolve="OwnedFeatureChainingContext" />
+              <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedFeatureChainingContext" resolve="KerMLParser.OwnedFeatureChainingContext" />
             </node>
           </node>
           <node concept="3clFbS" id="7JYC9rXCnGD" role="2LFqv$">
@@ -5292,7 +5432,7 @@
       <node concept="37vLTG" id="7JYC9rXCnHu" role="3clF46">
         <property role="TrG5h" value="prefix" />
         <node concept="3uibUv" id="7JYC9rXCnHv" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$MemberPrefixContext" resolve="MemberPrefixContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$MemberPrefixContext" resolve="KerMLParser.MemberPrefixContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnHw" role="3clF47">
@@ -5358,7 +5498,7 @@
       <node concept="37vLTG" id="7JYC9rXCnHN" role="3clF46">
         <property role="TrG5h" value="identification" />
         <node concept="3uibUv" id="7JYC9rXCnHO" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$IdentificationContext" resolve="IdentificationContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$IdentificationContext" resolve="KerMLParser.IdentificationContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnHP" role="3clF47">
@@ -5470,7 +5610,7 @@
       <node concept="37vLTG" id="7JYC9rXCnIs" role="3clF46">
         <property role="TrG5h" value="typing" />
         <node concept="3uibUv" id="7JYC9rXCnIt" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedFeatureTypingContext" resolve="OwnedFeatureTypingContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedFeatureTypingContext" resolve="KerMLParser.OwnedFeatureTypingContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnIu" role="3clF47">
@@ -5547,7 +5687,7 @@
       <node concept="37vLTG" id="7JYC9rXCnIS" role="3clF46">
         <property role="TrG5h" value="general" />
         <node concept="3uibUv" id="7JYC9rXCnIT" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$QualifiedNameContext" resolve="QualifiedNameContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$QualifiedNameContext" resolve="KerMLParser.QualifiedNameContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnIU" role="3clF47">
@@ -5613,7 +5753,7 @@
       <node concept="37vLTG" id="7JYC9rXCnJg" role="3clF46">
         <property role="TrG5h" value="multiplicity" />
         <node concept="3uibUv" id="7JYC9rXCnJh" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedMultiplicityContext" resolve="OwnedMultiplicityContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedMultiplicityContext" resolve="KerMLParser.OwnedMultiplicityContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnJi" role="3clF47">
@@ -5683,7 +5823,7 @@
       <node concept="37vLTG" id="7JYC9rXCnJB" role="3clF46">
         <property role="TrG5h" value="bounds" />
         <node concept="3uibUv" id="7JYC9rXCnJC" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$MultiplicityBoundsContext" resolve="MultiplicityBoundsContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$MultiplicityBoundsContext" resolve="KerMLParser.MultiplicityBoundsContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnJD" role="3clF47">
@@ -5693,7 +5833,7 @@
             <node concept="3uibUv" id="7JYC9rXCnJG" role="1tU5fm">
               <ref role="3uigEE" to="33ny:~List" resolve="List" />
               <node concept="3uibUv" id="7JYC9rXCnJH" role="11_B2D">
-                <ref role="3uigEE" to="rjc7:~KerMLParser$MultiplicityExpressionMemberContext" resolve="MultiplicityExpressionMemberContext" />
+                <ref role="3uigEE" to="rjc7:~KerMLParser$MultiplicityExpressionMemberContext" resolve="KerMLParser.MultiplicityExpressionMemberContext" />
               </node>
             </node>
             <node concept="2OqwBi" id="7JYC9rXCQjL" role="33vP2m">
@@ -5794,7 +5934,7 @@
       <node concept="37vLTG" id="7JYC9rXCnK8" role="3clF46">
         <property role="TrG5h" value="member" />
         <node concept="3uibUv" id="7JYC9rXCnK9" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$MultiplicityExpressionMemberContext" resolve="MultiplicityExpressionMemberContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$MultiplicityExpressionMemberContext" resolve="KerMLParser.MultiplicityExpressionMemberContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnKa" role="3clF47">
@@ -5802,7 +5942,7 @@
           <node concept="3cpWsn" id="7JYC9rXCnKb" role="3cpWs9">
             <property role="TrG5h" value="literal" />
             <node concept="3uibUv" id="7JYC9rXCnKd" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralExpressionContext" resolve="LiteralExpressionContext" />
+              <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralExpressionContext" resolve="KerMLParser.LiteralExpressionContext" />
             </node>
             <node concept="2OqwBi" id="7JYC9rXCQBA" role="33vP2m">
               <node concept="37vLTw" id="7JYC9rXCISe" role="2Oq$k0">
@@ -5967,7 +6107,7 @@
               <ref role="37wK5l" to="33ny:~List.add(java.lang.Object)" resolve="add" />
               <node concept="2ShNRf" id="7JYC9rXCSkT" role="37wK5m">
                 <node concept="1pGfFk" id="7JYC9rXCSl4" role="2ShVmc">
-                  <ref role="37wK5l" node="7JYC9rXCntI" />
+                  <ref role="37wK5l" node="7JYC9rXCntI" resolve="KerMLImporterVisitor.PendingReference" />
                   <node concept="37vLTw" id="7JYC9rXCSl5" role="37wK5m">
                     <ref role="3cqZAo" node="7JYC9rXCnKW" resolve="node" />
                   </node>
@@ -5991,7 +6131,7 @@
       <node concept="37vLTG" id="7JYC9rXCnLc" role="3clF46">
         <property role="TrG5h" value="qualified" />
         <node concept="3uibUv" id="7JYC9rXCnLd" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$QualifiedNameContext" resolve="QualifiedNameContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$QualifiedNameContext" resolve="KerMLParser.QualifiedNameContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnLe" role="3clF47">
@@ -6061,7 +6201,7 @@
               <node concept="3cpWsn" id="7JYC9rXCnLF" role="1Duv9x">
                 <property role="TrG5h" value="segment" />
                 <node concept="3uibUv" id="7JYC9rXCnLH" role="1tU5fm">
-                  <ref role="3uigEE" to="rjc7:~KerMLParser$NameContext" resolve="NameContext" />
+                  <ref role="3uigEE" to="rjc7:~KerMLParser$NameContext" resolve="KerMLParser.NameContext" />
                 </node>
               </node>
               <node concept="3clFbS" id="7JYC9rXCnL$" role="2LFqv$">
@@ -6130,7 +6270,7 @@
       <node concept="37vLTG" id="7JYC9rXCnLS" role="3clF46">
         <property role="TrG5h" value="name" />
         <node concept="3uibUv" id="7JYC9rXCnLT" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$NameContext" resolve="NameContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$NameContext" resolve="KerMLParser.NameContext" />
         </node>
       </node>
       <node concept="3clFbS" id="7JYC9rXCnLU" role="3clF47">
@@ -6624,7 +6764,7 @@
       <node concept="37vLTG" id="5ipQkCIdC8H" role="3clF46">
         <property role="TrG5h" value="part" />
         <node concept="3uibUv" id="5ipQkCIdC8I" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$ValuePartContext" resolve="ValuePartContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$ValuePartContext" resolve="KerMLParser.ValuePartContext" />
         </node>
       </node>
       <node concept="3clFbS" id="5ipQkCIdC8J" role="3clF47">
@@ -6632,7 +6772,7 @@
           <node concept="3cpWsn" id="5ipQkCIdC8K" role="3cpWs9">
             <property role="TrG5h" value="value" />
             <node concept="3uibUv" id="5ipQkCIdC8M" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureValueContext" resolve="FeatureValueContext" />
+              <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureValueContext" resolve="KerMLParser.FeatureValueContext" />
             </node>
             <node concept="2OqwBi" id="5ipQkCIdDTZ" role="33vP2m">
               <node concept="37vLTw" id="5ipQkCIdD5L" role="2Oq$k0">
@@ -6778,7 +6918,7 @@
                   <ref role="3cqZAo" node="5ipQkCIeOCq" resolve="current" />
                 </node>
                 <node concept="3uibUv" id="5ipQkCIeOCz" role="2ZW6by">
-                  <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralBooleanContext" resolve="LiteralBooleanContext" />
+                  <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralBooleanContext" resolve="KerMLParser.LiteralBooleanContext" />
                 </node>
               </node>
               <node concept="3clFbS" id="5ipQkCIeOCA" role="3clFbx">
@@ -6816,7 +6956,7 @@
                                 <ref role="3cqZAo" node="5ipQkCIeOCq" resolve="current" />
                               </node>
                               <node concept="3uibUv" id="5ipQkCIeQja" role="10QFUM">
-                                <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralBooleanContext" resolve="LiteralBooleanContext" />
+                                <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralBooleanContext" resolve="KerMLParser.LiteralBooleanContext" />
                               </node>
                             </node>
                           </node>
@@ -6850,7 +6990,7 @@
                   <ref role="3cqZAo" node="5ipQkCIeOCq" resolve="current" />
                 </node>
                 <node concept="3uibUv" id="5ipQkCIeOCX" role="2ZW6by">
-                  <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralStringContext" resolve="LiteralStringContext" />
+                  <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralStringContext" resolve="KerMLParser.LiteralStringContext" />
                 </node>
               </node>
               <node concept="3clFbS" id="5ipQkCIeOD0" role="3clFbx">
@@ -6889,7 +7029,7 @@
                                 <ref role="3cqZAo" node="5ipQkCIeOCq" resolve="current" />
                               </node>
                               <node concept="3uibUv" id="5ipQkCIeQ$A" role="10QFUM">
-                                <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralStringContext" resolve="LiteralStringContext" />
+                                <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralStringContext" resolve="KerMLParser.LiteralStringContext" />
                               </node>
                             </node>
                           </node>
@@ -6917,7 +7057,7 @@
                   <ref role="3cqZAo" node="5ipQkCIeOCq" resolve="current" />
                 </node>
                 <node concept="3uibUv" id="5ipQkCIeODm" role="2ZW6by">
-                  <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralIntegerContext" resolve="LiteralIntegerContext" />
+                  <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralIntegerContext" resolve="KerMLParser.LiteralIntegerContext" />
                 </node>
               </node>
               <node concept="3clFbS" id="5ipQkCIeODp" role="3clFbx">
@@ -6957,7 +7097,7 @@
                                 <ref role="3cqZAo" node="5ipQkCIeOCq" resolve="current" />
                               </node>
                               <node concept="3uibUv" id="5ipQkCIeREY" role="10QFUM">
-                                <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralIntegerContext" resolve="LiteralIntegerContext" />
+                                <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralIntegerContext" resolve="KerMLParser.LiteralIntegerContext" />
                               </node>
                             </node>
                           </node>
@@ -6985,7 +7125,7 @@
                   <ref role="3cqZAo" node="5ipQkCIeOCq" resolve="current" />
                 </node>
                 <node concept="3uibUv" id="5ipQkCIeODJ" role="2ZW6by">
-                  <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralInfinityContext" resolve="LiteralInfinityContext" />
+                  <ref role="3uigEE" to="rjc7:~KerMLParser$LiteralInfinityContext" resolve="KerMLParser.LiteralInfinityContext" />
                 </node>
               </node>
               <node concept="3clFbS" id="5ipQkCIeODM" role="3clFbx">
@@ -7006,7 +7146,7 @@
                   <ref role="3cqZAo" node="5ipQkCIeOCq" resolve="current" />
                 </node>
                 <node concept="3uibUv" id="5ipQkCIeODS" role="2ZW6by">
-                  <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureReferenceExpressionContext" resolve="FeatureReferenceExpressionContext" />
+                  <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureReferenceExpressionContext" resolve="KerMLParser.FeatureReferenceExpressionContext" />
                 </node>
               </node>
               <node concept="3clFbS" id="5ipQkCIeODV" role="3clFbx">
@@ -7044,7 +7184,7 @@
                                 <ref role="3cqZAo" node="5ipQkCIeOCq" resolve="current" />
                               </node>
                               <node concept="3uibUv" id="5ipQkCIeOEa" role="10QFUM">
-                                <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureReferenceExpressionContext" resolve="FeatureReferenceExpressionContext" />
+                                <ref role="3uigEE" to="rjc7:~KerMLParser$FeatureReferenceExpressionContext" resolve="KerMLParser.FeatureReferenceExpressionContext" />
                               </node>
                             </node>
                           </node>
@@ -7168,7 +7308,7 @@
       <node concept="37vLTG" id="5ipQkCItYPb" role="3clF46">
         <property role="TrG5h" value="part" />
         <node concept="3uibUv" id="5ipQkCItYPc" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$InvertingPartContext" resolve="InvertingPartContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$InvertingPartContext" resolve="KerMLParser.InvertingPartContext" />
         </node>
       </node>
       <node concept="3clFbS" id="5ipQkCItYPd" role="3clF47">
@@ -7176,7 +7316,7 @@
           <node concept="3cpWsn" id="5ipQkCItYPe" role="3cpWs9">
             <property role="TrG5h" value="inverting" />
             <node concept="3uibUv" id="5ipQkCItYPg" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedFeatureInvertingContext" resolve="OwnedFeatureInvertingContext" />
+              <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedFeatureInvertingContext" resolve="KerMLParser.OwnedFeatureInvertingContext" />
             </node>
             <node concept="2OqwBi" id="5ipQkCIu0kX" role="33vP2m">
               <node concept="37vLTw" id="5ipQkCItZMa" role="2Oq$k0">
@@ -7278,7 +7418,7 @@
       <node concept="37vLTG" id="5ipQkCIva4m" role="3clF46">
         <property role="TrG5h" value="part" />
         <node concept="3uibUv" id="5ipQkCIva4n" role="1tU5fm">
-          <ref role="3uigEE" to="rjc7:~KerMLParser$TypeFeaturingPartContext" resolve="TypeFeaturingPartContext" />
+          <ref role="3uigEE" to="rjc7:~KerMLParser$TypeFeaturingPartContext" resolve="KerMLParser.TypeFeaturingPartContext" />
         </node>
       </node>
       <node concept="3clFbS" id="5ipQkCIva4o" role="3clF47">
@@ -7294,7 +7434,7 @@
           <node concept="3cpWsn" id="5ipQkCIva4G" role="1Duv9x">
             <property role="TrG5h" value="featuring" />
             <node concept="3uibUv" id="5ipQkCIva4I" role="1tU5fm">
-              <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedTypeFeaturingContext" resolve="OwnedTypeFeaturingContext" />
+              <ref role="3uigEE" to="rjc7:~KerMLParser$OwnedTypeFeaturingContext" resolve="KerMLParser.OwnedTypeFeaturingContext" />
             </node>
           </node>
           <node concept="3clFbS" id="5ipQkCIva4r" role="2LFqv$">
@@ -7355,6 +7495,256 @@
       </node>
       <node concept="3Tm6S6" id="5ipQkCIva4K" role="1B3o_S" />
       <node concept="3cqZAl" id="5ipQkCIva4L" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="5ipQkCIOxDD" role="jymVt">
+      <property role="TrG5h" value="visitClassRule" />
+      <node concept="2AHcQZ" id="5ipQkCIOxDE" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="37vLTG" id="5ipQkCIOxDF" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="5ipQkCIOxDG" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$ClassRuleContext" resolve="KerMLParser.ClassRuleContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5ipQkCIOxDH" role="3clF47">
+        <node concept="3cpWs6" id="5ipQkCIOxDI" role="3cqZAp">
+          <node concept="1rXfSq" id="5ipQkCIOxDJ" role="3cqZAk">
+            <ref role="37wK5l" node="7JYC9rXCn_C" resolve="classifier" />
+            <node concept="Xl_RD" id="5ipQkCIOxDK" role="37wK5m">
+              <property role="Xl_RC" value="KerMLClass" />
+            </node>
+            <node concept="2OqwBi" id="5ipQkCIOylc" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCIOy3J" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCIOxDF" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCIOyld" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$ClassRuleContext.typePrefix()" resolve="typePrefix" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCIOyln" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCIOyco" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCIOxDF" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCIOylo" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$ClassRuleContext.classifierDeclaration()" resolve="classifierDeclaration" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCIOyly" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCIOyl1" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCIOxDF" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCIOylz" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$ClassRuleContext.typeBody()" resolve="typeBody" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5ipQkCIOxDO" role="1B3o_S" />
+      <node concept="3uibUv" id="5ipQkCIOxDP" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5ipQkCIPPlx" role="jymVt">
+      <property role="TrG5h" value="visitStructure" />
+      <node concept="2AHcQZ" id="5ipQkCIPPly" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="37vLTG" id="5ipQkCIPPlz" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="5ipQkCIPPl$" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$StructureContext" resolve="KerMLParser.StructureContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5ipQkCIPPl_" role="3clF47">
+        <node concept="3cpWs6" id="5ipQkCIPPlA" role="3cqZAp">
+          <node concept="1rXfSq" id="5ipQkCIPPlB" role="3cqZAk">
+            <ref role="37wK5l" node="7JYC9rXCn_C" resolve="classifier" />
+            <node concept="Xl_RD" id="5ipQkCIPPlC" role="37wK5m">
+              <property role="Xl_RC" value="KerMLStructure" />
+            </node>
+            <node concept="2OqwBi" id="5ipQkCIPQ14" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCIPPJB" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCIPPlz" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCIPQ15" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$StructureContext.typePrefix()" resolve="typePrefix" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCIPQ1f" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCIPPSg" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCIPPlz" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCIPQ1g" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$StructureContext.classifierDeclaration()" resolve="classifierDeclaration" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCIPQ1q" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCIPQ0T" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCIPPlz" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCIPQ1r" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$StructureContext.typeBody()" resolve="typeBody" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5ipQkCIPPlG" role="1B3o_S" />
+      <node concept="3uibUv" id="5ipQkCIPPlH" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5ipQkCIR59u" role="jymVt">
+      <property role="TrG5h" value="visitAssociation" />
+      <node concept="2AHcQZ" id="5ipQkCIR59v" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="37vLTG" id="5ipQkCIR59w" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="5ipQkCIR59x" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$AssociationContext" resolve="KerMLParser.AssociationContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5ipQkCIR59y" role="3clF47">
+        <node concept="3cpWs6" id="5ipQkCIR59z" role="3cqZAp">
+          <node concept="1rXfSq" id="5ipQkCIR59$" role="3cqZAk">
+            <ref role="37wK5l" node="7JYC9rXCn_C" resolve="classifier" />
+            <node concept="Xl_RD" id="5ipQkCIR59_" role="37wK5m">
+              <property role="Xl_RC" value="KerMLAssociation" />
+            </node>
+            <node concept="2OqwBi" id="5ipQkCIR5P1" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCIR5z$" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCIR59w" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCIR5P2" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$AssociationContext.typePrefix()" resolve="typePrefix" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCIR5Pc" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCIR5Gd" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCIR59w" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCIR5Pd" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$AssociationContext.classifierDeclaration()" resolve="classifierDeclaration" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCIR5Pn" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCIR5OQ" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCIR59w" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCIR5Po" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$AssociationContext.typeBody()" resolve="typeBody" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5ipQkCIR59D" role="1B3o_S" />
+      <node concept="3uibUv" id="5ipQkCIR59E" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5ipQkCISlgU" role="jymVt">
+      <property role="TrG5h" value="visitAssociationStructure" />
+      <node concept="2AHcQZ" id="5ipQkCISlgV" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="37vLTG" id="5ipQkCISlgW" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="5ipQkCISlgX" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$AssociationStructureContext" resolve="KerMLParser.AssociationStructureContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5ipQkCISlgY" role="3clF47">
+        <node concept="3cpWs6" id="5ipQkCISlgZ" role="3cqZAp">
+          <node concept="1rXfSq" id="5ipQkCISlh0" role="3cqZAk">
+            <ref role="37wK5l" node="7JYC9rXCn_C" resolve="classifier" />
+            <node concept="Xl_RD" id="5ipQkCISlh1" role="37wK5m">
+              <property role="Xl_RC" value="KerMLAssociationStructure" />
+            </node>
+            <node concept="2OqwBi" id="5ipQkCISlWt" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCISlF0" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCISlgW" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCISlWu" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$AssociationStructureContext.typePrefix()" resolve="typePrefix" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCISlWC" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCISlND" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCISlgW" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCISlWD" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$AssociationStructureContext.classifierDeclaration()" resolve="classifierDeclaration" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCISlWN" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCISlWi" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCISlgW" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCISlWO" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$AssociationStructureContext.typeBody()" resolve="typeBody" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5ipQkCISlh5" role="1B3o_S" />
+      <node concept="3uibUv" id="5ipQkCISlh6" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5ipQkCIT_zh" role="jymVt">
+      <property role="TrG5h" value="visitMetaclass" />
+      <node concept="2AHcQZ" id="5ipQkCIT_zi" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+      <node concept="37vLTG" id="5ipQkCIT_zj" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="5ipQkCIT_zk" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$MetaclassContext" resolve="KerMLParser.MetaclassContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5ipQkCIT_zl" role="3clF47">
+        <node concept="3cpWs6" id="5ipQkCIT_zm" role="3cqZAp">
+          <node concept="1rXfSq" id="5ipQkCIT_zn" role="3cqZAk">
+            <ref role="37wK5l" node="7JYC9rXCn_C" resolve="classifier" />
+            <node concept="Xl_RD" id="5ipQkCIT_zo" role="37wK5m">
+              <property role="Xl_RC" value="KerMLMetaclass" />
+            </node>
+            <node concept="2OqwBi" id="5ipQkCITAeO" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCIT_Xn" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCIT_zj" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCITAeP" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$MetaclassContext.typePrefix()" resolve="typePrefix" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCITAeZ" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCITA60" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCIT_zj" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCITAf0" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$MetaclassContext.classifierDeclaration()" resolve="classifierDeclaration" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCITAfa" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCITAeD" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCIT_zj" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCITAfb" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$MetaclassContext.typeBody()" resolve="typeBody" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5ipQkCIT_zs" role="1B3o_S" />
+      <node concept="3uibUv" id="5ipQkCIT_zt" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="7JYC9rXGViE">
