@@ -52,7 +52,7 @@ Milestones: M1 = steps 1-3 (Attributes.sysml + all import headers), M2 = 4-8, M3
 - Phase 4 Importer: in the new solution `com.symo.kerml.baselan.importer` (created in Phase 0); ANTLR grammar from the KEBNF (check whether the generator
   used for the SysML grammar, daltskin/sysml-v2-grammar, also covers KerML); visitor, type reifier, unsupported-construct
   policy, import + roundtrip fixtures; share infrastructure with the SysML importer where sensible.
-- Phase 5 Kernel library as accessory models, in tiers: K1 semantic core (Base, Objects, Occurrences, Links, Metaobjects,
+- Phase 5 Kernel library as models of the stand-alone solution `com.symo.kerml.baselan.stdLib` (see 2m), in tiers: K1 semantic core (Base, Objects, Occurrences, Links, Metaobjects,
   Performances, Transfers, Control/State/TransitionPerformances, ScalarValues; ~2,200 lines), K2 remaining semantic files +
   Collections/VectorValues (~1,700), K3 function libraries (~1,300, expressions as text).
 - Phase 6 Re-layer SysML baselan on KerML: per concept family with data migration (as in the four alignments), cross-language
@@ -181,7 +181,7 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    (package bodies admit SysML members only), and run on the KerML KEBNF alone it leaves rules undefined. Result: compiles with ANTLR 4.13.2 without warnings; all 94 `*.kerml` files of the release (libraries + examples,
    ~8,000 lines) parse with 0 syntax errors (error reporting verified with a deliberately broken file). Wiring: root `settings.gradle` includes `kerml-grammar`; `./gradlew :kerml-grammar:copyToMps` fills the solution's `lib/` (jars committed, as for SysML); `.msd` has the `java_classes` model root + facet libraries (model root added by editing the .msd, no MCP tool covers model roots). Next: the visitor/reifier for the
    `Base` + `ScalarValues` slice (C3).
-2l. Phase C3 (importer for the `Base` + `ScalarValues` slice) — **done (uncommitted)**: `KerMLImporter.importFiles(Map<fileName, text>, SModel)` in `com.symo.kerml.baselan.importer.main`
+2l. Phase C3 (importer for the `Base` + `ScalarValues` slice) — **done (committed)**: `KerMLImporter.importFiles(Map<fileName, text>, SModel)` in `com.symo.kerml.baselan.importer.main`
    (BaseLanguage classes inserted with `parse_java_and_insert`). Pass one, `KerMLImporterVisitor extends KerMLBaseVisitor<SNode>`, builds all nodes of all files and records every cross reference as a pending
    (node, link, qualified name); pass two resolves them through the language's own scopes (`ModelConstraints.getReferenceDescriptor(node, link).getScope().resolve(...)`), so declarations and files may refer to each
    other in any order and nothing about name resolution is duplicated. `KerMLNodes` creates nodes and sets features by concept/feature *name* (no id per construct). Unsupported constructs are not dropped:
@@ -205,6 +205,15 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    verbatim in test `_030` — they are EPL-2.0 (SysML-v2-Release `LICENSE`, README), keep the notice with them; (2) `SLanguage.getConcepts()` (used by `KerMLNodes`) is deprecated for removal;
    (3) untested importer branches: comma-separated typings/subsettings/redefinitions, `all` on imports; (4) the importer does not yet read comment, `rep`, namespace import, feature values, inverting,
    featuring, `::>`, `=>`, `end` features — the text generation already writes them; (5) next: C4 (importing more of the Kernel libraries) or phase D.
+2m. Standard library solution `com.symo.kerml.baselan.stdLib` — **done (committed)**. The imported standard library packages live in their own solution, not in an accessory model of the language:
+   model `com.symo.kerml.baselan.stdLib.kernel` holds `Base` (Kernel Semantic Library, 94 lines) and `ScalarValues` (Kernel Data Type Library, 23 lines), the two complete files (EPL-2.0, notice to keep with them).
+   Layering: stdLib depends on the KerML language (used language only); KerML never depends on stdLib; the importer solution fills it; a model that wants the library imports the stdLib model like any
+   other model (the language scopes already look at `rootsIncludingImported`, no scope change was needed). The SysML accessory `system_model_library` is unrelated and stays as it is. Fill: `TestUtils.fillStdLib(proj)`
+   (test model `_010_import@tests`) imports `KernelLibraryText.base()` / `.scalarValues()` — the canonical text — and replaces the roots of the stdLib model; there is no test calling it, regenerating means calling it
+   from a temporary test. Guards: `_060_StdLibTest` generates the text of the stdLib model and compares it with the canonical text (mutation-checked: `Boolean` made abstract); `_070_StdLibResolutionTest` resolves
+   `ScalarValues::Integer` through the scope from `sandbox._020_StdLib_Demo` (imports the stdLib) to the stdLib `Integer`, and shows it does not resolve from a model without the import (mutation-checked: import removed).
+   Open: (1) `_030` still holds the canonical text a second time (`expected`), switch it to `KernelLibraryText`; (2) more files (`Objects`, `Occurrences`, ...) go into the same solution, probably one model per library
+   (Semantic/Data Type/Function), after the importer reads their constructs (see 2l (4)); (3) model checking does not flag a reference whose model is not imported, resolution by name does.
 2. Core layer (Type, Classifier, Feature, Specialization family) as explicit typed child links (same principle as the Root layer), then Kernel layer slices.
 3. Vertical slice `Base.kerml` end to end, then the KerML importer (grammar from `bnf/KerML-textual-bnf.kebnf`) in `com.symo.kerml.baselan.importer`.
 4. Part A items for SysML (library package, visibility/abstract, qualified names, subsetting/redefinition, `ref`, ...), then re-layer SysML on KerML (Phase 6).
