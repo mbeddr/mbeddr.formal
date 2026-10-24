@@ -43,6 +43,9 @@ the result and questions files, and in the archive directory name.
    observations), and the code the slice builds on. Look for precedents before
    inventing a pattern.
 2. **Design with the user.** Propose and recommend; decide. Pass the scope gate.
+   Before prescribing an `EditorTestCase`, check the generated builder (`source_gen/.../*_EditorBuilder_*.java`)
+   for `setCellId` on the cell the action must act on: if the cell has no id, no caret can reach it and the
+   test is not expressible; say so in the order instead of prescribing key sequences.
 3. **Write the order** `architect2developer_current_iteration.md` (template in the
    README), concrete enough that no design decision is left open. Status DRAFT.
    Tell the user it awaits approval. Stop.

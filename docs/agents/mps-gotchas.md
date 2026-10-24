@@ -13,6 +13,11 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
 
+## An `EditorCellId` child sets its id through the `name` property
+A cell model's explicit id is a child `EditorCellId` (role `id`) whose property is `name` (not `cellId`).
+Setting `shortDescription` on it silently does nothing. Check the generated builder for `setCellId` after a
+rebuild: on a `RefCell` with an inline editor component the generator emitted no id at all.
+
 ## `NodeConstraintsErrorCheckOperation` is the wrong annotation for a `NonTypesystemRule` (2026-10-24)
 - In `jetbrains.mps.lang.test`, an expected **checking-rule** error is annotated with
   `NodeErrorCheckOperation` → child `errorRef` → `ReportErrorStatementReference` → reference `declaration` →
