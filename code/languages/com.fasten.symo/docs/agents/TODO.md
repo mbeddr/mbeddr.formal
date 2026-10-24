@@ -22,6 +22,10 @@ are not comparable. Current state:
 - **SysML v2 language** (`test.com.symo.sysmlv2.baselan`): **36 test classes** (7 scope + 26 editor + 3
   checking-rule roots), green: 36/36 per class in iteration 001, and again 36/36 in iteration 005 (before and after the two
   renames), i.e. after iteration 002's change to the behavior and textGen aspects.
+- **KerML** (measured per class in iteration 008): 53 test classes, 181 tests, 0 failures
+  (`test.com.symo.kerml.baselan` 102 tests / 45 classes, importer 79 / 8). Known flake: one early run of
+  `_320_Multiplicity_TypeStandalone` failed once, then passed four times; a single red run of that class is not
+  by itself a regression.
 - `Tests in '...'` suite configurations exist only when the user creates them in the IDE; the MCP tools
   cannot create model-scoped suites (see root `mps-gotchas.md`).
 

@@ -13,6 +13,52 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
 
+## `NodeConstraintsErrorCheckOperation` is the wrong annotation for a `NonTypesystemRule` (2026-10-24)
+- In `jetbrains.mps.lang.test`, an expected **checking-rule** error is annotated with
+  `NodeErrorCheckOperation` → child `errorRef` → `ReportErrorStatementReference` → reference `declaration` →
+  the rule's **`ReportErrorStatement` node** (not the rule root, and not the rule's `ConceptReference`).
+  `NodeConstraintsErrorCheckOperation` (→ `UnknownRuleReference` → `declaration`) is the variant for
+  **constraints** validators — e.g. property validators declared in the `constraints` aspect — and does not
+  match a `NonTypesystemRule`.
+- Using the constraints variant on a checking rule compiles and runs, but the generated test fails with the
+  rule's **own error message** as the assertion text, i.e. `java.lang.AssertionError: Error: <your message>.
+  Node 'oneStep [<nodeId>]'`. That reads like "the expected error already exists / is in the wrong place".
+  The real cause is that the annotation is of the wrong kind, so the checker found an error it could not match
+  to any expectation. Reproduced in iteration 008 on `_420_ChainLengthCheck`; switching to
+  `NodeErrorCheckOperation` with the rule's `ReportErrorStatement` made it pass with no other change.
+- Worked example to copy: `_410_StandaloneRelationships` (KerML) and `_020_AttributeValueLiteralCheck` (SysML,
+  a *constraints* case, i.e. the other variant). One annotated `has error` node generates **two** runnable
+  tests (the per-node check plus `CheckNodeForErrorMessagesOperation`'s overall check), which matters when
+  budgeting test counts.
+
+## `execute_run_configuration` truncates `output` at ~10 KB, and only large runs write a log file (2026-10-24)
+- The tool's `structuredContent.output` stops mid-line with a literal `<truncated>` marker at about 10 011
+  characters. Counting `<START_TEST>`/`<FINISH_TEST>` in it therefore undercounts any long test class: measured
+  `_080_TokenFidelityTest` (26 real tests, 24 in the truncated text) and `_010_ImportStructureTest` (35 vs 25).
+  It also fabricated a started>finished mismatch and a "2 declared tests never run" conclusion — the two
+  "missing" methods existed in the generated and the compiled class and ran fine.
+- A small run is returned **complete and produces no log file at all**; only a large one spills to
+  `<MPS system dir>/tmp/ij_run__<configName with spaces → _>_<random>.log`, and *every* launch writes a **new**
+  file with a different random suffix. So: use `output` when it is complete (contains `FINISH_RUN_TEST` and no
+  `<truncated>`), else read the newest matching log file
+  (`ls -t <system>/tmp/ij_run__<sanitized>_*.log | head -1`). Counting the log file is authoritative: it had
+  26/26 START/FINISH and the trailing `FINISH_RUN_TEST`. On this machine the dir is
+  `/home/dan/work/MPS_2026_1/.MPS_VERSION_/system/tmp`.
+- Because old log files stay behind, a lookup that matches too loosely (e.g. only a shared prefix) silently
+  reports an *older* run's count. Match the sanitized configuration name.
+- Cross-check a suite total against generated code (`grep -oE "public void test_\w+" <...>_Test.java | sort -u |
+  wc -l`): each test method appears twice in the file, so a raw `grep -c` double-counts. Matching that expected
+  total is what exposed the truncation above (until then 164 looked like a plausible "green" number).
+
+## A model-scoped `check_root_node_problems` does not surface checking-rule errors on its roots (2026-10-24)
+- Passing a **model** reference reported `no problems found` for `test.com.symo.kerml.baselan._010_root@tests`
+  while a **root** reference in that same model reported the (deliberately provoked) error
+  `Feature cannot have exactly one feature chaining…` on node `oneStep`. Passing each root reference is what
+  actually runs the rules, so a clean model-level answer proves nothing about the model's contents.
+- Corollary for "does the new rule flag existing models?": check each root of the sandbox and stdLib models
+  individually (`get_project_structure` with `includeRootNodes`, then one call per root). Done that way, all
+  five roots (`Vehicles`, `Fleet`, `Units`, `Base`, `ScalarValues`) were clean.
+
 ## Console code cannot see the IDE platform or `System.out`; `#callAction` only reaches MPS-modelled actions (2026-10-24)
 - In a console command authored as Java text (`parse_java_and_insert`, `insert.mode:"console"`), `com.intellij.openapi.project.ProjectManager`, `…actionSystem.ActionManager`, `jetbrains.mps.ide.project.ProjectHelper` and `System.out` do **not** resolve (`UnknownDotCall`, or "Not a legal statement" for the `println` statement), while `org.jetbrains.mps.openapi.*`, `jetbrains.mps.project.AbstractModule`, `jetbrains.mps.smodel.MPSModuleRepository`, `jetbrains.mps.vfs.IFile` and the JDK do. So reach the project through the repository (`MPSModuleRepository.getInstance()`, deprecated but working) and identify modules by `AbstractModule.getDescriptorFile().getPath()`, instead of through the IntelliJ project.
 - `#callAction` (`CallActionExpression`) has an `action` reference to a `jetbrains.mps.lang.plugin.ActionDeclaration` **node**, so it can invoke only actions modelled in MPS — not a platform action registered in plugin XML, e.g. `ForceSaveAll`.
