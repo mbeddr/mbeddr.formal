@@ -15,6 +15,13 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 
 
 
+## Replacing a behavior method with `update_node SET CHILD` gives it a new id; fix callers per root (2026-10-24)
+- `update_node operation=SET kind=CHILD` on a `ConceptMethodDeclaration` (or any referenced node) creates a *new* node, so every caller in other roots dangles ("Unresolved reference: <name>" from
+  `check_root_node_problems`). Edit the body in place instead (SET CHILD on the inner `ReturnStatement.expression` etc.), or run `alter_nodes FIX_REFERENCES` with `parameters={"nodeReference": "<root>"}`
+  on each caller root (typesystem rules, other behaviors, test roots) — it needs a single root per call, not a model list, and only works while the reference still carries its resolve name. A call node you
+  create yourself carries none: point it with `update_node SET REFERENCE` (`references=[[callNode,"baseMethodDeclaration",newMethodRef]]`).
+- The `update_node` mandatory arguments are both `operation` (`ADD`/`SET`/`DELETE`) and `kind` (`CHILD`/`PROPERTY`/`REFERENCE`).
+
 ## Writing a Java-API importer through `parse_java_and_insert`: stub-model resolution, short concept names, missing JDK methods (2026-10-22)
 - `mps_mcp_model_dependency ADD` with a plain `pkg@java_stub` name binds to *whichever* module provides that package first — for `org.antlr.v4.runtime` it picked the copy inside another solution
   (`com.symo.sysmlv2.baselan.importer`), for `com.intellij.openapi.application` the `MPS.IDEA.testFramework` copy, for `jetbrains.mps.smodel` the `MPS.Workbench` one. The parse then reports unresolved classes

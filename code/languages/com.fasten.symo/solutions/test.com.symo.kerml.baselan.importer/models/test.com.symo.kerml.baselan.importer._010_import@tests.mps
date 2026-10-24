@@ -10717,6 +10717,406 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="2YEARL0C2zV" role="1SL9yI">
+      <property role="TrG5h" value="testFeatureChainsInSpecializations" />
+      <node concept="3cqZAl" id="2YEARL0C2zY" role="3clF45" />
+      <node concept="3clFbS" id="2YEARL0C2zZ" role="3clF47">
+        <node concept="3cpWs8" id="2YEARL0C2$0" role="3cqZAp">
+          <node concept="3cpWsn" id="2YEARL0C2$3" role="3cpWs9">
+            <property role="TrG5h" value="chainsText" />
+            <property role="2Lvdk3" value="chainsText" />
+            <node concept="17QB3L" id="2YEARL0C2$5" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2$6" role="3cqZAp">
+          <node concept="37vLTI" id="2YEARL0C2$8" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2$b" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2$c" role="37vLTx">
+              <property role="Xl_RC" value="package P {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2$d" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2$f" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2$i" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2$j" role="37vLTx">
+              <property role="Xl_RC" value="  classifier U {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2$k" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2$m" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2$p" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2$q" role="37vLTx">
+              <property role="Xl_RC" value="    feature c;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2$r" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2$t" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2$w" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2$x" role="37vLTx">
+              <property role="Xl_RC" value="  }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2$y" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2$$" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2$B" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2$C" role="37vLTx">
+              <property role="Xl_RC" value="  classifier T {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2$D" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2$F" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2$I" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2$J" role="37vLTx">
+              <property role="Xl_RC" value="    feature b : P::U;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2$K" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2$M" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2$P" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2$Q" role="37vLTx">
+              <property role="Xl_RC" value="  }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2$R" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2$T" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2$W" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2$X" role="37vLTx">
+              <property role="Xl_RC" value="  classifier A {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2$Y" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2_0" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2_3" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2_4" role="37vLTx">
+              <property role="Xl_RC" value="    feature a : P::T;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2_5" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2_7" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2_a" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2_b" role="37vLTx">
+              <property role="Xl_RC" value="    feature f :&gt; P::A::a.b;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2_c" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2_e" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2_h" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2_i" role="37vLTx">
+              <property role="Xl_RC" value="    feature g :&gt;&gt; P::A::a.b;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2_j" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2_l" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2_o" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2_p" role="37vLTx">
+              <property role="Xl_RC" value="    feature h : P::A::a.b;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2_q" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2_s" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2_v" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2_w" role="37vLTx">
+              <property role="Xl_RC" value="    feature k :&gt; P::A::a.b.c;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2_x" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2_z" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2_A" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2_B" role="37vLTx">
+              <property role="Xl_RC" value="  }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2_C" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2_E" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2_H" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2_I" role="37vLTx">
+              <property role="Xl_RC" value="  subset P::A::f subsets P::A::a.b;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2_J" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2_L" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2_O" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2_P" role="37vLTx">
+              <property role="Xl_RC" value="  subset P::A::a.b subsets P::A::f;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2_Q" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2_S" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2_V" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2_W" role="37vLTx">
+              <property role="Xl_RC" value="  subset P::A::a.b subsets P::A::a.b.c;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2_X" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2_Z" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2A2" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2A3" role="37vLTx">
+              <property role="Xl_RC" value="}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="2YEARL0C2A4" role="3cqZAp">
+          <node concept="3cpWsn" id="2YEARL0C2A7" role="3cpWs9">
+            <property role="TrG5h" value="expected" />
+            <property role="2Lvdk3" value="expected" />
+            <node concept="17QB3L" id="2YEARL0C2A9" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2Aa" role="3cqZAp">
+          <node concept="37vLTI" id="2YEARL0C2Ac" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2Af" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2Ag" role="37vLTx">
+              <property role="Xl_RC" value="package P {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2Ah" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2Aj" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2Am" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2An" role="37vLTx">
+              <property role="Xl_RC" value="  classifier U {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2Ao" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2Aq" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2At" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2Au" role="37vLTx">
+              <property role="Xl_RC" value="    feature c;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2Av" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2Ax" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2A$" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2A_" role="37vLTx">
+              <property role="Xl_RC" value="  }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2AA" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2AC" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2AF" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2AG" role="37vLTx">
+              <property role="Xl_RC" value="  classifier T {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2AH" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2AJ" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2AM" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2AN" role="37vLTx">
+              <property role="Xl_RC" value="    feature b : P::U;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2AO" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2AQ" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2AT" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2AU" role="37vLTx">
+              <property role="Xl_RC" value="  }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2AV" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2AX" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2B0" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2B1" role="37vLTx">
+              <property role="Xl_RC" value="  classifier A {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2B2" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2B4" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2B7" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2B8" role="37vLTx">
+              <property role="Xl_RC" value="    feature a : P::T;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2B9" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2Bb" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2Be" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2Bf" role="37vLTx">
+              <property role="Xl_RC" value="    feature f :&gt; P::A::a.b;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2Bg" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2Bi" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2Bl" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2Bm" role="37vLTx">
+              <property role="Xl_RC" value="    feature g :&gt;&gt; P::A::a.b;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2Bn" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2Bp" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2Bs" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2Bt" role="37vLTx">
+              <property role="Xl_RC" value="    feature h : P::A::a.b;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2Bu" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2Bw" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2Bz" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2B$" role="37vLTx">
+              <property role="Xl_RC" value="    feature k :&gt; P::A::a.b.c;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2B_" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2BB" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2BE" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2BF" role="37vLTx">
+              <property role="Xl_RC" value="  }&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2BG" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2BI" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2BL" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2BM" role="37vLTx">
+              <property role="Xl_RC" value="  subset P::A::f subsets P::A::a.b;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2BN" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2BP" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2BS" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2BT" role="37vLTx">
+              <property role="Xl_RC" value="  subset P::A::a.b subsets P::A::f;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2BU" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2BW" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2BZ" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2C0" role="37vLTx">
+              <property role="Xl_RC" value="  subset P::A::a.b subsets P::A::a.b.c;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2C1" role="3cqZAp">
+          <node concept="d57v9" id="2YEARL0C2C3" role="3clFbG">
+            <node concept="37vLTw" id="2YEARL0C2C6" role="37vLTJ">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="2YEARL0C2C7" role="37vLTx">
+              <property role="Xl_RC" value="}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2YEARL0C2C8" role="3cqZAp">
+          <node concept="2YIFZM" id="2YEARL0C2Ca" role="3clFbG">
+            <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
+            <ref role="37wK5l" node="7JYC9rXJCB7" resolve="assertEquals" />
+            <node concept="37vLTw" id="2YEARL0C2Cb" role="37wK5m">
+              <ref role="3cqZAo" node="2YEARL0C2A7" resolve="expected" />
+            </node>
+            <node concept="2YIFZM" id="2YEARL0C2Cc" role="37wK5m">
+              <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
+              <ref role="37wK5l" node="7JYC9rXWE_G" resolve="roundtrip" />
+              <node concept="1jxXqW" id="2YEARL0C2Cd" role="37wK5m" />
+              <node concept="Xl_RD" id="2YEARL0C2Ce" role="37wK5m">
+                <property role="Xl_RC" value="Chains" />
+              </node>
+              <node concept="37vLTw" id="2YEARL0C2Cf" role="37wK5m">
+                <ref role="3cqZAo" node="2YEARL0C2$3" resolve="chainsText" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1lH9Xt" id="7JYC9rXLmDI">
     <property role="TrG5h" value="_020_ImportReferencesTest" />
@@ -14878,6 +15278,39 @@
                 </node>
                 <node concept="Xl_RD" id="5ipQkCKTGxa" role="37wK5m">
                   <property role="Xl_RC" value="standard library package Snippet {&#10;&#9;abstract class BinaryLink;&#10;&#9;assoc all SelfSameLifeLink specializes BinaryLink;&#10;&#9;assoc all SelfLink specializes BinaryLink;&#10;&#9;subclassifier SelfLink specializes SelfSameLifeLink;&#10;}&#10;" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2YEARL0D6RH" role="1SL9yI">
+      <property role="TrG5h" value="testFeatureChainsOfTheKernelLibrary" />
+      <node concept="3cqZAl" id="2YEARL0D6RK" role="3clF45" />
+      <node concept="3clFbS" id="2YEARL0D6RL" role="3clF47">
+        <node concept="3clFbF" id="2YEARL0D6RM" role="3cqZAp">
+          <node concept="2YIFZM" id="2YEARL0D6RO" role="3clFbG">
+            <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
+            <ref role="37wK5l" node="7JYC9rXJCB7" resolve="assertEquals" />
+            <node concept="Xl_RD" id="2YEARL0D6RP" role="37wK5m">
+              <property role="Xl_RC" value="no difference" />
+            </node>
+            <node concept="2YIFZM" id="2YEARL0D6RQ" role="37wK5m">
+              <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
+              <ref role="37wK5l" node="5ipQkCILz$S" resolve="tokenDifference" />
+              <node concept="Xl_RD" id="2YEARL0D6RR" role="37wK5m">
+                <property role="Xl_RC" value="standard library package Snippet {&#10;&#9;struct StructuredSpaceObject {&#10;&#9;&#9;feature vertices;&#10;&#9;&#9;feature spaceBoundary;&#10;&#9;}&#10;&#9;struct StructuredCurve specializes StructuredSpaceObject;&#10;&#9;feature that;&#10;&#9;feature structuredSpaceObjectCells;&#10;&#9;portion feature edges : StructuredCurve[0..*] ordered subsets structuredSpaceObjectCells {&#10;&#9;&#9;feature self redefines that : StructuredSpaceObject;&#10;&#9;&#9;feature redefines vertices subsets self.vertices;&#10;&#9;&#9;derived feature redefines spaceBoundary;&#10;&#9;}&#10;}&#10;" />
+              </node>
+              <node concept="2YIFZM" id="2YEARL0D6RS" role="37wK5m">
+                <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
+                <ref role="37wK5l" node="7JYC9rXWE_G" resolve="roundtrip" />
+                <node concept="1jxXqW" id="2YEARL0D6RT" role="37wK5m" />
+                <node concept="Xl_RD" id="2YEARL0D6RU" role="37wK5m">
+                  <property role="Xl_RC" value="Snippet" />
+                </node>
+                <node concept="Xl_RD" id="2YEARL0D6RV" role="37wK5m">
+                  <property role="Xl_RC" value="standard library package Snippet {&#10;&#9;struct StructuredSpaceObject {&#10;&#9;&#9;feature vertices;&#10;&#9;&#9;feature spaceBoundary;&#10;&#9;}&#10;&#9;struct StructuredCurve specializes StructuredSpaceObject;&#10;&#9;feature that;&#10;&#9;feature structuredSpaceObjectCells;&#10;&#9;portion feature edges : StructuredCurve[0..*] ordered subsets structuredSpaceObjectCells {&#10;&#9;&#9;feature self redefines that : StructuredSpaceObject;&#10;&#9;&#9;feature redefines vertices subsets self.vertices;&#10;&#9;&#9;derived feature redefines spaceBoundary;&#10;&#9;}&#10;}&#10;" />
                 </node>
               </node>
             </node>

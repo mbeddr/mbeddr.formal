@@ -69,6 +69,7 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
@@ -95,7 +96,7 @@
               <ref role="1YBMHb" node="5ipQkCK9yr$" resolve="specialization" />
             </node>
             <node concept="3zqWPK" id="5ipQkCK9yrs" role="2OqNvi">
-              <ref role="37wK5l" to="efol:5ipQkCK9vk5" resolve="generalType" />
+              <ref role="37wK5l" to="efol:5ipQkCKWvdv" resolve="generalType" />
             </node>
           </node>
           <node concept="10Nm6u" id="5ipQkCK9yrt" role="3uHU7w" />
@@ -128,7 +129,7 @@
                 <ref role="1YBMHb" node="5ipQkCK9yuB" resolve="typeFeaturing" />
               </node>
               <node concept="3TrEf2" id="5ipQkCK9yum" role="2OqNvi">
-                <ref role="3Tt5mk" to="rb60:7JYC9rVGZks" />
+                <ref role="3Tt5mk" to="rb60:7JYC9rVGZks" resolve="featuringType" />
               </node>
             </node>
             <node concept="10Nm6u" id="5ipQkCK9yun" role="3uHU7w" />
@@ -139,7 +140,7 @@
                 <ref role="1YBMHb" node="5ipQkCK9yuB" resolve="typeFeaturing" />
               </node>
               <node concept="3Tsc0h" id="5ipQkCK9yuv" role="2OqNvi">
-                <ref role="3TtcxE" to="rb60:5ipQkCK3S30" />
+                <ref role="3TtcxE" to="rb60:5ipQkCK3S30" resolve="ownedRelatedElement" />
               </node>
             </node>
             <node concept="1v1jN8" id="5ipQkCK9yuw" role="2OqNvi" />
@@ -173,7 +174,7 @@
                 <ref role="1YBMHb" node="5ipQkCK9yvL" resolve="featureInverting" />
               </node>
               <node concept="3TrEf2" id="5ipQkCK9yvw" role="2OqNvi">
-                <ref role="3Tt5mk" to="rb60:7JYC9rWFthV" />
+                <ref role="3Tt5mk" to="rb60:7JYC9rWFthV" resolve="invertingFeature" />
               </node>
             </node>
             <node concept="10Nm6u" id="5ipQkCK9yvx" role="3uHU7w" />
@@ -184,7 +185,7 @@
                 <ref role="1YBMHb" node="5ipQkCK9yvL" resolve="featureInverting" />
               </node>
               <node concept="3Tsc0h" id="5ipQkCK9yvD" role="2OqNvi">
-                <ref role="3TtcxE" to="rb60:5ipQkCK3S30" />
+                <ref role="3TtcxE" to="rb60:5ipQkCK3S30" resolve="ownedRelatedElement" />
               </node>
             </node>
             <node concept="1v1jN8" id="5ipQkCK9yvE" role="2OqNvi" />
@@ -225,8 +226,8 @@
               <node concept="1YBJjd" id="5ipQkCKBZJy" role="2Oq$k0">
                 <ref role="1YBMHb" node="5ipQkCKBZJF" resolve="specialization" />
               </node>
-              <node concept="3TrEf2" id="5ipQkCKBZJz" role="2OqNvi">
-                <ref role="3Tt5mk" to="rb60:5ipQkCKyhUT" />
+              <node concept="2qgKlT" id="5ipQkCKWwoz" role="2OqNvi">
+                <ref role="37wK5l" to="efol:5ipQkCKWveX" />
               </node>
             </node>
             <node concept="10Nm6u" id="5ipQkCKBZJ$" role="3uHU7w" />
@@ -270,7 +271,7 @@
                 <ref role="1YBMHb" node="5ipQkCKBZMY" resolve="specialization" />
               </node>
               <node concept="3TrEf2" id="5ipQkCKBZMQ" role="2OqNvi">
-                <ref role="3Tt5mk" to="rb60:5ipQkCKyhUT" />
+                <ref role="3Tt5mk" to="rb60:5ipQkCKyhUT" resolve="specific" />
               </node>
             </node>
             <node concept="10Nm6u" id="5ipQkCKBZMR" role="3uHU7w" />
@@ -312,7 +313,7 @@
                 <ref role="1YBMHb" node="5ipQkCKBZNV" resolve="disjoining" />
               </node>
               <node concept="3TrEf2" id="5ipQkCKBZNN" role="2OqNvi">
-                <ref role="3Tt5mk" to="rb60:5ipQkCKyhVL" />
+                <ref role="3Tt5mk" to="rb60:5ipQkCKyhVL" resolve="typeDisjoined" />
               </node>
             </node>
             <node concept="10Nm6u" id="5ipQkCKBZNO" role="3uHU7w" />
@@ -356,7 +357,7 @@
                 <ref role="1YBMHb" node="5ipQkCKBZQD" resolve="disjoining" />
               </node>
               <node concept="3TrEf2" id="5ipQkCKBZQx" role="2OqNvi">
-                <ref role="3Tt5mk" to="rb60:5ipQkCKyhVL" />
+                <ref role="3Tt5mk" to="rb60:5ipQkCKyhVL" resolve="typeDisjoined" />
               </node>
             </node>
             <node concept="10Nm6u" id="5ipQkCKBZQy" role="3uHU7w" />
