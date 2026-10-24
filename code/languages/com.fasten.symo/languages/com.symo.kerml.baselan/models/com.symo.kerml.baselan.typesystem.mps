@@ -227,7 +227,7 @@
                 <ref role="1YBMHb" node="5ipQkCKBZJF" resolve="specialization" />
               </node>
               <node concept="2qgKlT" id="5ipQkCKWwoz" role="2OqNvi">
-                <ref role="37wK5l" to="efol:5ipQkCKWveX" />
+                <ref role="37wK5l" to="efol:5ipQkCKWveX" resolve="specificType" />
               </node>
             </node>
             <node concept="10Nm6u" id="5ipQkCKBZJ$" role="3uHU7w" />

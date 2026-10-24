@@ -123,7 +123,7 @@
       </node>
     </node>
     <node concept="1N5Pfh" id="5ipQkCKBZSR" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:5ipQkCKyhUT" />
+      <ref role="1N5Vy1" to="rb60:5ipQkCKyhUT" resolve="specific" />
       <node concept="1dDu$B" id="5ipQkCKBZSS" role="1N6uqs">
         <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
       </node>
@@ -169,7 +169,7 @@
                   <ref role="37wK5l" to="wyt6:~Object.equals(java.lang.Object)" resolve="equals" />
                   <node concept="359W_D" id="5ipQkCKBZUS" role="37wK5m">
                     <ref role="359W_E" to="rb60:3MUZSeJsNew" resolve="KerMLNamespace" />
-                    <ref role="359W_F" to="rb60:7JYC9rUw4ww" />
+                    <ref role="359W_F" to="rb60:7JYC9rUw4ww" resolve="ownedMember" />
                   </node>
                 </node>
               </node>
@@ -262,13 +262,13 @@
     <property role="TrG5h" value="KerMLDisjoining_Constraints" />
     <ref role="1M2myG" to="rb60:5ipQkCJrYIC" resolve="KerMLDisjoining" />
     <node concept="1N5Pfh" id="5ipQkCJs0hw" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:5ipQkCJrYIG" />
+      <ref role="1N5Vy1" to="rb60:5ipQkCJrYIG" resolve="disjoiningType" />
       <node concept="1dDu$B" id="5ipQkCJs0hx" role="1N6uqs">
         <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
       </node>
     </node>
     <node concept="1N5Pfh" id="5ipQkCKBZTK" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:5ipQkCKyhVL" />
+      <ref role="1N5Vy1" to="rb60:5ipQkCKyhVL" resolve="typeDisjoined" />
       <node concept="1dDu$B" id="5ipQkCKBZTL" role="1N6uqs">
         <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
       </node>
@@ -278,7 +278,7 @@
     <property role="TrG5h" value="KerMLUnioning_Constraints" />
     <ref role="1M2myG" to="rb60:5ipQkCJrYID" resolve="KerMLUnioning" />
     <node concept="1N5Pfh" id="5ipQkCJs0hz" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:5ipQkCJrYII" />
+      <ref role="1N5Vy1" to="rb60:5ipQkCJrYII" resolve="unioningType" />
       <node concept="1dDu$B" id="5ipQkCJs0h$" role="1N6uqs">
         <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
       </node>
@@ -288,7 +288,7 @@
     <property role="TrG5h" value="KerMLIntersecting_Constraints" />
     <ref role="1M2myG" to="rb60:5ipQkCJrYIE" resolve="KerMLIntersecting" />
     <node concept="1N5Pfh" id="5ipQkCJs0hA" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:5ipQkCJrYIK" />
+      <ref role="1N5Vy1" to="rb60:5ipQkCJrYIK" resolve="intersectingType" />
       <node concept="1dDu$B" id="5ipQkCJs0hB" role="1N6uqs">
         <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
       </node>
@@ -298,7 +298,7 @@
     <property role="TrG5h" value="KerMLDifferencing_Constraints" />
     <ref role="1M2myG" to="rb60:5ipQkCJrYIF" resolve="KerMLDifferencing" />
     <node concept="1N5Pfh" id="5ipQkCJs0hD" role="1Mr941">
-      <ref role="1N5Vy1" to="rb60:5ipQkCJrYIM" />
+      <ref role="1N5Vy1" to="rb60:5ipQkCJrYIM" resolve="differencingType" />
       <node concept="1dDu$B" id="5ipQkCJs0hE" role="1N6uqs">
         <ref role="1dDu$A" to="rb60:7JYC9rUVR0q" resolve="KerMLType" />
       </node>
