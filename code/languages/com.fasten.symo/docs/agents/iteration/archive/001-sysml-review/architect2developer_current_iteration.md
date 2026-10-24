@@ -1,5 +1,5 @@
 # Iteration 001: Review of the SysML v2 work, findings and cleanup candidates
-Status: APPROVED   (scope approved by user: 2026-10-24; order approved by user: 2026-10-24)
+Status: DONE   (scope approved by user: 2026-10-24; order approved by user: 2026-10-24)
 
 Read-only audit. **You change nothing in any MPS model, doc or code in this iteration.** The
 output is a findings report that the architect and the user will triage into cleanup slices.
