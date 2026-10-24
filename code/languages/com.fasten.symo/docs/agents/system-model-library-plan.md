@@ -50,6 +50,28 @@ flows/successions/events 17, `connect`/`bind` 8, `allocate` 5, value `=` ~20, `d
 - P4 last: Requirements, Cases, UseCases, Analysis/VerificationCases, Views, StandardViewDefinitions, reflective SysML.sysml.
 Milestones: M1 = steps 1-3 (Attributes.sysml + all import headers), M2 = 4-8, M3 = 9-11, M4 = KerML, M5 = P4.
 
+## Systems library audit (iteration 012, 2026-10-24; archive `012-sysml-systems-library-audit-slice1`)
+Measured live over `Attributes`, `Ports`, `Parts` (the remaining files follow in later slices: 2 `Metadata`, `Allocations`,
+`Calculations`, `AnalysisCases`, `Constraints`; 3 `Connections`, `UseCases`, `Cases`, `Interfaces`; 4 `States`,
+`VerificationCases`, `Flows`, `Items`; 5 `StandardViewDefinitions`, `Views`, `Requirements`; 6 `Actions`; 7 `SysML.sysml`).
+- All 21 library files parse with the vendored grammar (0 syntax errors); the three audited files fail the importer on
+  line 1: `visitDefinitionElement` has no branch for the `libraryPackage` alternative, so `standard library package X {` is
+  rejected (this blocks all 21 files).
+- 26-case construct matrix: 17 import today (nested package, membership import, part/attribute/port/item def, usages,
+  multiplicity, `:>`, `:>>`, value, doc); 9 fail, all prefix or member forms: `library package`, visibility on import,
+  `import X::*`, `import all`, `alias`, `abstract` (definition and usage), `ref`.
+- Language gaps (not only importer): no concept for `library package`, `alias`, `abstract`; `SysMLv2Import` stores a string
+  (`importedName`), so imports cannot resolve names. `ref` is importer-only (`SysMLv2UsageRef` exists with editor/textgen;
+  the importer message is misleading). `:>`/`:>>` and chains are cheaper than assumed (only feature chains in typing are rejected).
+- Kernel stubs needed for these three files: `Base::DataValue`, `Base::dataValues`, `Objects::Object`, `Objects::objects`, plus
+  names the files use without importing (implicit standard-library scope: `timeEnclosedOccurrences`, `enactedPerformances`,
+  `ownedPerformances`, ...). Forward references inside a package are required (`Ports.sysml:23` subsets a later `ports`).
+- Open design decisions (before the iterations that need them): import as a reference instead of a string; the implicit
+  standard-library scope (model it, do not patch the sources, ADR 0001).
+- Proposed build iterations (one slice each): 013 `library package` (concept, editor, textgen, importer; the 26-case matrix
+  becomes a regression test), 014 import forms (visibility, `::*`, `all`), 015 `ref` usages in the importer, 016 `abstract`,
+  017 `alias`; design decisions above before name resolution of imports.
+
 ## Part B: KerML base language (`com.symo.kerml.baselan`, test solution `test.com.symo.kerml.baselan`)
 - Phase 0: register the modules in `com.fasten.meta.architecture` + README project structure; create the importer solution
   `com.symo.kerml.baselan.importer` and its test solution `test.com.symo.kerml.baselan.importer` (separate from the SysML importer:
