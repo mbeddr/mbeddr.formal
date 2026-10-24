@@ -11683,7 +11683,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="5ipQkCIJaP$" role="1SL9yI">
-      <property role="TrG5h" value="testReferenceSubsettingFeatureChainIsReported" />
+      <property role="TrG5h" value="testReferenceSubsettingFeatureChainRoundTrips" />
       <node concept="3cqZAl" id="5ipQkCIJaPB" role="3clF45" />
       <node concept="3clFbS" id="5ipQkCIJaPC" role="3clF47">
         <node concept="3clFbF" id="5ipQkCIJaPD" role="3cqZAp">
@@ -11691,14 +11691,24 @@
             <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
             <ref role="37wK5l" node="7JYC9rXJCB7" resolve="assertEquals" />
             <node concept="Xl_RD" id="5ipQkCIJaPG" role="37wK5m">
-              <property role="Xl_RC" value="Unsupported KerML construct: feature chain as referenced feature" />
+              <property role="Xl_RC" value="no difference" />
             </node>
-            <node concept="2YIFZM" id="5ipQkCIJaPH" role="37wK5m">
+            <node concept="2YIFZM" id="6jpO12$xS0Q" role="37wK5m">
               <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
-              <ref role="37wK5l" node="7JYC9rXJMSm" resolve="importFailure" />
-              <node concept="1jxXqW" id="5ipQkCIJaPI" role="37wK5m" />
-              <node concept="Xl_RD" id="5ipQkCIJaPJ" role="37wK5m">
-                <property role="Xl_RC" value="package P { classifier A { feature x; feature y ::&gt; x.x; } }" />
+              <ref role="37wK5l" node="5ipQkCILz$S" resolve="tokenDifference" />
+              <node concept="Xl_RD" id="6jpO12$xS0R" role="37wK5m">
+                <property role="Xl_RC" value="package P { classifier T { feature a; } classifier A { feature x : T; feature y ::&gt; x.a; } }" />
+              </node>
+              <node concept="2YIFZM" id="6jpO12$xS0S" role="37wK5m">
+                <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
+                <ref role="37wK5l" node="7JYC9rXWE_G" resolve="roundtrip" />
+                <node concept="1jxXqW" id="6jpO12$xS0T" role="37wK5m" />
+                <node concept="Xl_RD" id="6jpO12$xS0U" role="37wK5m">
+                  <property role="Xl_RC" value="P" />
+                </node>
+                <node concept="Xl_RD" id="6jpO12$xS0V" role="37wK5m">
+                  <property role="Xl_RC" value="package P { classifier T { feature a; } classifier A { feature x : T; feature y ::&gt; x.a; } }" />
+                </node>
               </node>
             </node>
           </node>
@@ -11706,7 +11716,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="5ipQkCIJaPK" role="1SL9yI">
-      <property role="TrG5h" value="testCrossSubsettingFeatureChainIsReported" />
+      <property role="TrG5h" value="testCrossSubsettingFeatureChainRoundTrips" />
       <node concept="3cqZAl" id="5ipQkCIJaPN" role="3clF45" />
       <node concept="3clFbS" id="5ipQkCIJaPO" role="3clF47">
         <node concept="3clFbF" id="5ipQkCIJaPP" role="3cqZAp">
@@ -11714,14 +11724,24 @@
             <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
             <ref role="37wK5l" node="7JYC9rXJCB7" resolve="assertEquals" />
             <node concept="Xl_RD" id="5ipQkCIJaPS" role="37wK5m">
-              <property role="Xl_RC" value="Unsupported KerML construct: feature chain as crossed feature" />
+              <property role="Xl_RC" value="no difference" />
             </node>
-            <node concept="2YIFZM" id="5ipQkCIJaPT" role="37wK5m">
+            <node concept="2YIFZM" id="6jpO12$y0Te" role="37wK5m">
               <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
-              <ref role="37wK5l" node="7JYC9rXJMSm" resolve="importFailure" />
-              <node concept="1jxXqW" id="5ipQkCIJaPU" role="37wK5m" />
-              <node concept="Xl_RD" id="5ipQkCIJaPV" role="37wK5m">
-                <property role="Xl_RC" value="package P { classifier A { feature x; feature y =&gt; x.x; } }" />
+              <ref role="37wK5l" node="5ipQkCILz$S" resolve="tokenDifference" />
+              <node concept="Xl_RD" id="6jpO12$y0Tf" role="37wK5m">
+                <property role="Xl_RC" value="package P { classifier T { feature a; } classifier A { feature x : T; feature y =&gt; x.a; } }" />
+              </node>
+              <node concept="2YIFZM" id="6jpO12$y0Tg" role="37wK5m">
+                <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
+                <ref role="37wK5l" node="7JYC9rXWE_G" resolve="roundtrip" />
+                <node concept="1jxXqW" id="6jpO12$y0Th" role="37wK5m" />
+                <node concept="Xl_RD" id="6jpO12$y0Ti" role="37wK5m">
+                  <property role="Xl_RC" value="P" />
+                </node>
+                <node concept="Xl_RD" id="6jpO12$y0Tj" role="37wK5m">
+                  <property role="Xl_RC" value="package P { classifier T { feature a; } classifier A { feature x : T; feature y =&gt; x.a; } }" />
+                </node>
               </node>
             </node>
           </node>

@@ -5418,6 +5418,48 @@
               </node>
             </node>
           </node>
+          <node concept="20GSug" id="6jpO12$S2_N" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="xRef" />
+            <node concept="20tdsU" id="6jpO12$S2_O" role="214t28">
+              <node concept="20GSug" id="6jpO12$S2_P" role="1$__Aa">
+                <property role="20tdI4" value="true" />
+                <node concept="27BsWE" id="6jpO12$S2_Q" role="27Biex">
+                  <ref role="27BsWF" node="2YEARL1Jz_q" resolve="a" />
+                </node>
+                <node concept="27BsWE" id="6jpO12$S2_R" role="27Biex">
+                  <ref role="27BsWF" node="2YEARL1Jz_$" resolve="b" />
+                </node>
+                <node concept="27BsWE" id="6jpO12$S2_S" role="27Biex">
+                  <ref role="27BsWF" node="2YEARL1Jz_B" resolve="c" />
+                </node>
+                <node concept="3xLA65" id="6jpO12$S2_T" role="lGtFl">
+                  <property role="TrG5h" value="refChain" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="20GSug" id="6jpO12$S2_U" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="xCross" />
+            <node concept="27kRjJ" id="6jpO12$S2_V" role="214t28">
+              <node concept="20GSug" id="6jpO12$S2_W" role="1$__Aa">
+                <property role="20tdI4" value="true" />
+                <node concept="27BsWE" id="6jpO12$S2_X" role="27Biex">
+                  <ref role="27BsWF" node="2YEARL1Jz_q" resolve="a" />
+                </node>
+                <node concept="27BsWE" id="6jpO12$S2_Y" role="27Biex">
+                  <ref role="27BsWF" node="2YEARL1Jz_$" resolve="b" />
+                </node>
+                <node concept="27BsWE" id="6jpO12$S2_Z" role="27Biex">
+                  <ref role="27BsWF" node="2YEARL1Jz_B" resolve="c" />
+                </node>
+                <node concept="3xLA65" id="6jpO12$S2A0" role="lGtFl">
+                  <property role="TrG5h" value="crossChain" />
+                </node>
+              </node>
+            </node>
+          </node>
         </node>
         <node concept="20Nsyr" id="2YEARL1Jz_z" role="21vIyQ">
           <property role="TrG5h" value="T" />
@@ -5515,6 +5557,44 @@
             </node>
             <node concept="3zqWPK" id="2YEARL1KtKl" role="2OqNvi">
               <ref role="37wK5l" to="efol:5ipQkCL8NDG" resolve="generalText" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12$S2Ag" role="1SL9yI">
+      <property role="TrG5h" value="testReferenceSubsettingChainText" />
+      <node concept="3cqZAl" id="6jpO12$S2Aj" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12$S2Ak" role="3clF47">
+        <node concept="3vlDli" id="6jpO12$S2Al" role="3cqZAp">
+          <node concept="Xl_RD" id="6jpO12$S2Ao" role="3tpDZB">
+            <property role="Xl_RC" value="Owning::C::a.b.c" />
+          </node>
+          <node concept="2OqwBi" id="6jpO12$S2Ap" role="3tpDZA">
+            <node concept="3xONca" id="6jpO12$S2As" role="2Oq$k0">
+              <ref role="3xOPvv" node="6jpO12$S2_T" resolve="refChain" />
+            </node>
+            <node concept="3zqWPK" id="6jpO12$S2At" role="2OqNvi">
+              <ref role="37wK5l" to="efol:5ipQkCL8LF3" resolve="chainText" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12$S2C$" role="1SL9yI">
+      <property role="TrG5h" value="testCrossSubsettingChainText" />
+      <node concept="3cqZAl" id="6jpO12$S2CB" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12$S2CC" role="3clF47">
+        <node concept="3vlDli" id="6jpO12$S2CD" role="3cqZAp">
+          <node concept="Xl_RD" id="6jpO12$S2CG" role="3tpDZB">
+            <property role="Xl_RC" value="Owning::C::a.b.c" />
+          </node>
+          <node concept="2OqwBi" id="6jpO12$S2CH" role="3tpDZA">
+            <node concept="3xONca" id="6jpO12$S2CK" role="2Oq$k0">
+              <ref role="3xOPvv" node="6jpO12$S2A0" resolve="crossChain" />
+            </node>
+            <node concept="3zqWPK" id="6jpO12$S2CL" role="2OqNvi">
+              <ref role="37wK5l" to="efol:5ipQkCL8LF3" resolve="chainText" />
             </node>
           </node>
         </node>

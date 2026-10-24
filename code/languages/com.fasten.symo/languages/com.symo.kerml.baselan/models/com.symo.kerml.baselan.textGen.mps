@@ -3791,15 +3791,10 @@
             <property role="lacIc" value="::&gt; " />
           </node>
           <node concept="l9hG8" id="7JYC9rXPOzJ" role="lcghm">
-            <node concept="2OqwBi" id="7JYC9rXPOzL" role="lb14g">
-              <node concept="2OqwBi" id="7JYC9rXPOzO" role="2Oq$k0">
-                <node concept="117lpO" id="7JYC9rXPOzR" role="2Oq$k0" />
-                <node concept="3TrEf2" id="7JYC9rXPOzS" role="2OqNvi">
-                  <ref role="3Tt5mk" to="rb60:7JYC9rUVR0v" resolve="general" />
-                </node>
-              </node>
-              <node concept="3zqWPK" id="7JYC9rXPOzT" role="2OqNvi">
-                <ref role="37wK5l" to="efol:7JYC9rUxcG$" resolve="qualifiedName" />
+            <node concept="2OqwBi" id="6jpO12$oFmL" role="lb14g">
+              <node concept="117lpO" id="6jpO12$oFmO" role="2Oq$k0" />
+              <node concept="3zqWPK" id="6jpO12$oFmP" role="2OqNvi">
+                <ref role="37wK5l" to="efol:5ipQkCL8NDG" resolve="generalText" />
               </node>
             </node>
           </node>
@@ -3817,15 +3812,10 @@
             <property role="lacIc" value="=&gt; " />
           </node>
           <node concept="l9hG8" id="7JYC9rXPO$1" role="lcghm">
-            <node concept="2OqwBi" id="7JYC9rXPO$3" role="lb14g">
-              <node concept="2OqwBi" id="7JYC9rXPO$6" role="2Oq$k0">
-                <node concept="117lpO" id="7JYC9rXPO$9" role="2Oq$k0" />
-                <node concept="3TrEf2" id="7JYC9rXPO$a" role="2OqNvi">
-                  <ref role="3Tt5mk" to="rb60:7JYC9rUVR0v" resolve="general" />
-                </node>
-              </node>
-              <node concept="3zqWPK" id="7JYC9rXPO$b" role="2OqNvi">
-                <ref role="37wK5l" to="efol:7JYC9rUxcG$" resolve="qualifiedName" />
+            <node concept="2OqwBi" id="6jpO12$y0QJ" role="lb14g">
+              <node concept="117lpO" id="6jpO12$y0QM" role="2Oq$k0" />
+              <node concept="3zqWPK" id="6jpO12$y0QN" role="2OqNvi">
+                <ref role="37wK5l" to="efol:5ipQkCL8NDG" resolve="generalText" />
               </node>
             </node>
           </node>

@@ -4985,42 +4985,9 @@
                       </node>
                     </node>
                     <node concept="3clFbS" id="5ipQkCLdH5H" role="3clFbx">
-                      <node concept="3clFbJ" id="5ipQkCLdH5I" role="3cqZAp">
-                        <node concept="3clFbC" id="5ipQkCLdH5J" role="3clFbw">
-                          <node concept="2OqwBi" id="5ipQkCLdH5K" role="3uHU7B">
-                            <node concept="2OqwBi" id="5ipQkCLdR6N" role="2Oq$k0">
-                              <node concept="2OqwBi" id="5ipQkCLdQKS" role="2Oq$k0">
-                                <node concept="37vLTw" id="5ipQkCLdOq7" role="2Oq$k0">
-                                  <ref role="3cqZAo" node="5ipQkCLdH6F" resolve="spec" />
-                                </node>
-                                <node concept="liA8E" id="5ipQkCLdQKT" role="2OqNvi">
-                                  <ref role="37wK5l" to="rjc7:~KerMLParser$FeatureSpecializationContext.crossings()" resolve="crossings" />
-                                </node>
-                              </node>
-                              <node concept="liA8E" id="5ipQkCLdR6O" role="2OqNvi">
-                                <ref role="37wK5l" to="rjc7:~KerMLParser$CrossingsContext.ownedCrossSubsetting()" resolve="ownedCrossSubsetting" />
-                              </node>
-                            </node>
-                            <node concept="2OwXpG" id="5ipQkCLdH5N" role="2OqNvi">
-                              <ref role="2Oxat5" to="rjc7:~KerMLParser$OwnedCrossSubsettingContext.crossedFeature" resolve="crossedFeature" />
-                            </node>
-                          </node>
-                          <node concept="10Nm6u" id="5ipQkCLdH5O" role="3uHU7w" />
-                        </node>
-                        <node concept="3clFbS" id="5ipQkCLdH5Q" role="3clFbx">
-                          <node concept="YS8fn" id="5ipQkCLdH5T" role="3cqZAp">
-                            <node concept="1rXfSq" id="5ipQkCLdH5R" role="YScLw">
-                              <ref role="37wK5l" node="7JYC9rXCnNK" resolve="unsupported" />
-                              <node concept="Xl_RD" id="5ipQkCLdH5S" role="37wK5m">
-                                <property role="Xl_RC" value="feature chain as crossed feature" />
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
                       <node concept="3clFbF" id="5ipQkCLdH5U" role="3cqZAp">
                         <node concept="1rXfSq" id="5ipQkCLdH5V" role="3clFbG">
-                          <ref role="37wK5l" node="7JYC9rXCnIN" resolve="specialization" />
+                          <ref role="37wK5l" node="5ipQkCLasV3" resolve="specialization" />
                           <node concept="37vLTw" id="5ipQkCLdH5W" role="37wK5m">
                             <ref role="3cqZAo" node="5ipQkCLdH4c" resolve="feature" />
                           </node>
@@ -5045,47 +5012,32 @@
                               <ref role="2Oxat5" to="rjc7:~KerMLParser$OwnedCrossSubsettingContext.crossedFeature" resolve="crossedFeature" />
                             </node>
                           </node>
+                          <node concept="2OqwBi" id="6jpO12$y0RH" role="37wK5m">
+                            <node concept="2OqwBi" id="6jpO12$y0RK" role="2Oq$k0">
+                              <node concept="2OqwBi" id="6jpO12$y0RN" role="2Oq$k0">
+                                <node concept="37vLTw" id="6jpO12$y0RQ" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="5ipQkCLdH6F" resolve="spec" />
+                                </node>
+                                <node concept="liA8E" id="6jpO12$y0RR" role="2OqNvi">
+                                  <ref role="37wK5l" to="rjc7:~KerMLParser$FeatureSpecializationContext.crossings()" resolve="crossings" />
+                                </node>
+                              </node>
+                              <node concept="liA8E" id="6jpO12$y0RS" role="2OqNvi">
+                                <ref role="37wK5l" to="rjc7:~KerMLParser$CrossingsContext.ownedCrossSubsetting()" resolve="ownedCrossSubsetting" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="6jpO12$y0RT" role="2OqNvi">
+                              <ref role="37wK5l" to="rjc7:~KerMLParser$OwnedCrossSubsettingContext.ownedFeatureChain()" resolve="ownedFeatureChain" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
                   </node>
                   <node concept="3clFbS" id="5ipQkCLdH5j" role="3clFbx">
-                    <node concept="3clFbJ" id="5ipQkCLdH5k" role="3cqZAp">
-                      <node concept="3clFbC" id="5ipQkCLdH5l" role="3clFbw">
-                        <node concept="2OqwBi" id="5ipQkCLdH5m" role="3uHU7B">
-                          <node concept="2OqwBi" id="5ipQkCLdR7x" role="2Oq$k0">
-                            <node concept="2OqwBi" id="5ipQkCLdQLu" role="2Oq$k0">
-                              <node concept="37vLTw" id="5ipQkCLdOFD" role="2Oq$k0">
-                                <ref role="3cqZAo" node="5ipQkCLdH6F" resolve="spec" />
-                              </node>
-                              <node concept="liA8E" id="5ipQkCLdQLv" role="2OqNvi">
-                                <ref role="37wK5l" to="rjc7:~KerMLParser$FeatureSpecializationContext.references()" resolve="references" />
-                              </node>
-                            </node>
-                            <node concept="liA8E" id="5ipQkCLdR7y" role="2OqNvi">
-                              <ref role="37wK5l" to="rjc7:~KerMLParser$ReferencesContext.ownedReferenceSubsetting()" resolve="ownedReferenceSubsetting" />
-                            </node>
-                          </node>
-                          <node concept="2OwXpG" id="5ipQkCLdH5p" role="2OqNvi">
-                            <ref role="2Oxat5" to="rjc7:~KerMLParser$OwnedReferenceSubsettingContext.referencedFeature" resolve="referencedFeature" />
-                          </node>
-                        </node>
-                        <node concept="10Nm6u" id="5ipQkCLdH5q" role="3uHU7w" />
-                      </node>
-                      <node concept="3clFbS" id="5ipQkCLdH5s" role="3clFbx">
-                        <node concept="YS8fn" id="5ipQkCLdH5v" role="3cqZAp">
-                          <node concept="1rXfSq" id="5ipQkCLdH5t" role="YScLw">
-                            <ref role="37wK5l" node="7JYC9rXCnNK" resolve="unsupported" />
-                            <node concept="Xl_RD" id="5ipQkCLdH5u" role="37wK5m">
-                              <property role="Xl_RC" value="feature chain as referenced feature" />
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
                     <node concept="3clFbF" id="5ipQkCLdH5w" role="3cqZAp">
                       <node concept="1rXfSq" id="5ipQkCLdH5x" role="3clFbG">
-                        <ref role="37wK5l" node="7JYC9rXCnIN" resolve="specialization" />
+                        <ref role="37wK5l" node="5ipQkCLasV3" resolve="specialization" />
                         <node concept="37vLTw" id="5ipQkCLdH5y" role="37wK5m">
                           <ref role="3cqZAo" node="5ipQkCLdH4c" resolve="feature" />
                         </node>
@@ -5108,6 +5060,24 @@
                           </node>
                           <node concept="2OwXpG" id="5ipQkCLdH5B" role="2OqNvi">
                             <ref role="2Oxat5" to="rjc7:~KerMLParser$OwnedReferenceSubsettingContext.referencedFeature" resolve="referencedFeature" />
+                          </node>
+                        </node>
+                        <node concept="2OqwBi" id="6jpO12$oFxk" role="37wK5m">
+                          <node concept="2OqwBi" id="6jpO12$oFxn" role="2Oq$k0">
+                            <node concept="2OqwBi" id="6jpO12$oFxq" role="2Oq$k0">
+                              <node concept="37vLTw" id="6jpO12$oFxt" role="2Oq$k0">
+                                <ref role="3cqZAo" node="5ipQkCLdH6F" resolve="spec" />
+                              </node>
+                              <node concept="liA8E" id="6jpO12$oFxu" role="2OqNvi">
+                                <ref role="37wK5l" to="rjc7:~KerMLParser$FeatureSpecializationContext.references()" resolve="references" />
+                              </node>
+                            </node>
+                            <node concept="liA8E" id="6jpO12$oFxv" role="2OqNvi">
+                              <ref role="37wK5l" to="rjc7:~KerMLParser$ReferencesContext.ownedReferenceSubsetting()" resolve="ownedReferenceSubsetting" />
+                            </node>
+                          </node>
+                          <node concept="liA8E" id="6jpO12$oFxw" role="2OqNvi">
+                            <ref role="37wK5l" to="rjc7:~KerMLParser$OwnedReferenceSubsettingContext.ownedFeatureChain()" resolve="ownedFeatureChain" />
                           </node>
                         </node>
                       </node>
