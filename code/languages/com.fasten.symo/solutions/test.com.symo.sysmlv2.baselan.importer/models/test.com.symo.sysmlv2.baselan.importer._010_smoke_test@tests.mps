@@ -376,16 +376,6 @@
       <concept id="7080278351417106679" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertIsNotNull" flags="nn" index="2Hmddi">
         <child id="7080278351417106681" name="expression" index="2Hmdds" />
       </concept>
-      <concept id="1171931690126" name="jetbrains.mps.baseLanguage.unitTest.structure.TestMethod" flags="ig" index="3s$Bmu">
-        <property id="1171931690128" name="methodName" index="3s$Bm0" />
-      </concept>
-      <concept id="1171931851043" name="jetbrains.mps.baseLanguage.unitTest.structure.BTestCase" flags="ig" index="3s_ewN">
-        <property id="1171931851045" name="testCaseName" index="3s_ewP" />
-        <child id="1171931851044" name="testMethodList" index="3s_ewO" />
-      </concept>
-      <concept id="1171931858461" name="jetbrains.mps.baseLanguage.unitTest.structure.TestMethodList" flags="ng" index="3s_gsd">
-        <child id="1171931858462" name="testMethod" index="3s_gse" />
-      </concept>
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
         <child id="8427750732757990725" name="actual" index="3tpDZA" />
         <child id="8427750732757990724" name="expected" index="3tpDZB" />
@@ -393,12 +383,6 @@
       <concept id="1171978097730" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertEquals" flags="nn" index="3vlDli" />
       <concept id="1171981022339" name="jetbrains.mps.baseLanguage.unitTest.structure.AssertTrue" flags="nn" index="3vwNmj">
         <child id="1171981057159" name="condition" index="3vwVQn" />
-      </concept>
-      <concept id="1172073500303" name="jetbrains.mps.baseLanguage.unitTest.structure.Message" flags="ng" index="3_1$Yv">
-        <child id="1172073511101" name="message" index="3_1BAH" />
-      </concept>
-      <concept id="1172075514136" name="jetbrains.mps.baseLanguage.unitTest.structure.MessageHolder" flags="ngI" index="3_9gw8">
-        <child id="1172075534298" name="message" index="3_9lra" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -480,110 +464,6 @@
       <concept id="1225727723840" name="jetbrains.mps.baseLanguage.collections.structure.FindFirstOperation" flags="nn" index="1z4cxt" />
     </language>
   </registry>
-  <node concept="3s_ewN" id="5J6U0gsISiQ">
-    <property role="3s_ewP" value="_010_test_sysmlv2_toolchain" />
-    <node concept="3Tm1VV" id="5J6U0gsISiR" role="1B3o_S" />
-    <node concept="3s_gsd" id="5J6U0gsISiS" role="3s_ewO">
-      <node concept="3s$Bmu" id="5J6U0gsISHl" role="3s_gse">
-        <property role="3s$Bm0" value="testParserStart" />
-        <node concept="3cqZAl" id="5J6U0gsISHm" role="3clF45" />
-        <node concept="3Tm1VV" id="5J6U0gsISHn" role="1B3o_S" />
-        <node concept="3clFbS" id="5J6U0gsISHo" role="3clF47">
-          <node concept="3cpWs8" id="5J6U0gsMVjz" role="3cqZAp">
-            <node concept="3cpWsn" id="5J6U0gsMVjy" role="3cpWs9">
-              <property role="TrG5h" value="chars" />
-              <node concept="3uibUv" id="5J6U0gsMVj$" role="1tU5fm">
-                <ref role="3uigEE" to="p3ir:~CharStream" resolve="CharStream" />
-              </node>
-              <node concept="2YIFZM" id="5J6U0gsMVkn" role="33vP2m">
-                <ref role="1Pybhc" to="p3ir:~CharStreams" resolve="CharStreams" />
-                <ref role="37wK5l" to="p3ir:~CharStreams.fromString(java.lang.String)" resolve="fromString" />
-                <node concept="Xl_RD" id="5J6U0gsMVko" role="37wK5m">
-                  <property role="Xl_RC" value="" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="5J6U0gsMVjC" role="3cqZAp">
-            <node concept="3cpWsn" id="5J6U0gsMVjB" role="3cpWs9">
-              <property role="TrG5h" value="lexer" />
-              <node concept="3uibUv" id="5J6U0gsMVjD" role="1tU5fm">
-                <ref role="3uigEE" to="guqe:~SysMLv2Lexer" resolve="SysMLv2Lexer" />
-              </node>
-              <node concept="2ShNRf" id="5J6U0gsMVkp" role="33vP2m">
-                <node concept="1pGfFk" id="5J6U0gsMVkB" role="2ShVmc">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Lexer.&lt;init&gt;(org.antlr.v4.runtime.CharStream)" resolve="SysMLv2Lexer" />
-                  <node concept="37vLTw" id="5J6U0gsMVkC" role="37wK5m">
-                    <ref role="3cqZAo" node="5J6U0gsMVjy" resolve="chars" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="5J6U0gsMVjH" role="3cqZAp">
-            <node concept="3cpWsn" id="5J6U0gsMVjG" role="3cpWs9">
-              <property role="TrG5h" value="tokens" />
-              <node concept="3uibUv" id="5J6U0gsMVjI" role="1tU5fm">
-                <ref role="3uigEE" to="p3ir:~CommonTokenStream" resolve="CommonTokenStream" />
-              </node>
-              <node concept="2ShNRf" id="5J6U0gsMVkD" role="33vP2m">
-                <node concept="1pGfFk" id="5J6U0gsMVtS" role="2ShVmc">
-                  <ref role="37wK5l" to="p3ir:~CommonTokenStream.&lt;init&gt;(org.antlr.v4.runtime.TokenSource)" resolve="CommonTokenStream" />
-                  <node concept="37vLTw" id="5J6U0gsMVtT" role="37wK5m">
-                    <ref role="3cqZAo" node="5J6U0gsMVjB" resolve="lexer" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3cpWs8" id="5J6U0gsMVjM" role="3cqZAp">
-            <node concept="3cpWsn" id="5J6U0gsMVjL" role="3cpWs9">
-              <property role="TrG5h" value="parser" />
-              <node concept="3uibUv" id="5J6U0gsMVjN" role="1tU5fm">
-                <ref role="3uigEE" to="guqe:~SysMLv2Parser" resolve="SysMLv2Parser" />
-              </node>
-              <node concept="2ShNRf" id="5J6U0gsMVtU" role="33vP2m">
-                <node concept="1pGfFk" id="5J6U0gsMVwf" role="2ShVmc">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser.&lt;init&gt;(org.antlr.v4.runtime.TokenStream)" resolve="SysMLv2Parser" />
-                  <node concept="37vLTw" id="5J6U0gsMVwg" role="37wK5m">
-                    <ref role="3cqZAo" node="5J6U0gsMVjG" resolve="tokens" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbF" id="5J6U0gsMVjQ" role="3cqZAp">
-            <node concept="2OqwBi" id="5J6U0gsMVwI" role="3clFbG">
-              <node concept="37vLTw" id="5J6U0gsMVwj" role="2Oq$k0">
-                <ref role="3cqZAo" node="5J6U0gsMVjL" resolve="parser" />
-              </node>
-              <node concept="liA8E" id="5J6U0gsMVwJ" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser.rootNamespace()" resolve="rootNamespace" />
-              </node>
-            </node>
-          </node>
-          <node concept="3vlDli" id="5J6U0gsMWnh" role="3cqZAp">
-            <node concept="3cmrfG" id="5J6U0gsMWnk" role="3tpDZB">
-              <property role="3cmrfH" value="0" />
-            </node>
-            <node concept="2OqwBi" id="5J6U0gsMWnl" role="3tpDZA">
-              <node concept="37vLTw" id="5J6U0gsMWno" role="2Oq$k0">
-                <ref role="3cqZAo" node="5J6U0gsMVjL" resolve="parser" />
-              </node>
-              <node concept="liA8E" id="5J6U0gsMWnp" role="2OqNvi">
-                <ref role="37wK5l" to="p3ir:~Parser.getNumberOfSyntaxErrors()" resolve="getNumberOfSyntaxErrors" />
-              </node>
-            </node>
-            <node concept="3_1$Yv" id="5J6U0gsMWnq" role="3_9lra">
-              <node concept="Xl_RD" id="5J6U0gsMWnr" role="3_1BAH">
-                <property role="Xl_RC" value="starting the parser on an empty input should not report any syntax errors" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="1lH9Xt" id="5PDtixSUbMk">
     <property role="3DII0k" value="2hh8MJdVwqT/none" />
     <property role="TrG5h" value="_020_ImportEmptyFileTest" />
