@@ -87,6 +87,9 @@
         <child id="717440187291777386" name="chain" index="2uUmlA" />
       </concept>
       <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE" />
+      <concept id="7267068243654035155" name="com.symo.sysmlv2.baselan.structure.SysMLv2LibraryPackage" flags="ng" index="31n9r3">
+        <property id="7267068243654035156" name="isStandard" index="31n9r4" />
+      </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
       </concept>
@@ -2377,6 +2380,118 @@
         <node concept="3iKlGA" id="3MUZSeIlcm_" role="3iKnsn">
           <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="6jpO12_DnDX">
+    <property role="TrG5h" value="_100_LibraryPackage_TypeLibrary" />
+    <property role="3YCmrE" value="typing library in a file body creates a library package" />
+    <node concept="1qefOq" id="6jpO12_DnDY" role="25YQCW">
+      <node concept="2h0jOr" id="6jpO12_DnE0" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="6jpO12_DnE1" role="2h0jOs">
+          <property role="TrG5h" value="pack_070" />
+          <node concept="2h0jOo" id="6jpO12_DnE2" role="3Z9vGx">
+            <node concept="LIFWc" id="6jpO12_DnE3" role="lGtFl">
+              <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+              <property role="LIFWd" value="Constant_68dwa1_a" />
+              <property role="ZRATv" value="true" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6jpO12_DnE4" role="25YQFr">
+      <node concept="2h0jOr" id="6jpO12_DnE6" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="6jpO12_DnE7" role="2h0jOs">
+          <property role="TrG5h" value="pack_070" />
+          <node concept="31n9r3" id="6jpO12_DnE8" role="3Z9vGx" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="6jpO12_DnE9" role="LjaKd">
+      <node concept="2TK7Tu" id="6jpO12_DnEa" role="3cqZAp">
+        <property role="2TTd_B" value="library" />
+      </node>
+      <node concept="2HxZob" id="6jpO12_DnEb" role="3cqZAp">
+        <node concept="3iKlGA" id="6jpO12_DnEd" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="6jpO12_DnEe" role="3cqZAp">
+        <node concept="pLAjd" id="6jpO12_DnEg" role="yd6KS">
+          <property role="pLAjf" value="VK_TAB" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="6jpO12_EdzC">
+    <property role="TrG5h" value="_110_LibraryPackage_TypeStandard" />
+    <property role="3YCmrE" value="typing standard at the library package keyword sets isStandard" />
+    <node concept="1qefOq" id="6jpO12_EdzD" role="25YQCW">
+      <node concept="2h0jOr" id="6jpO12_EdzF" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="31n9r3" id="6jpO12_EdzG" role="2h0jOs">
+          <property role="TrG5h" value="lib" />
+          <node concept="LIFWc" id="6jpO12_EdzH" role="lGtFl">
+            <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+            <property role="LIFWd" value="Constant_p0xxo_c0a" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6jpO12_EdzI" role="25YQFr">
+      <node concept="2h0jOr" id="6jpO12_EdzK" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="31n9r3" id="6jpO12_EdzL" role="2h0jOs">
+          <property role="31n9r4" value="true" />
+          <property role="TrG5h" value="lib" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="6jpO12_EdzM" role="LjaKd">
+      <node concept="2TK7Tu" id="6jpO12_EdzN" role="3cqZAp">
+        <property role="2TTd_B" value="standard" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="6jpO12_Ed$3">
+    <property role="TrG5h" value="_110_LibraryPackage_TypeStandard" />
+    <property role="3YCmrE" value="typing standard at the library package keyword sets isStandard" />
+    <node concept="1qefOq" id="6jpO12_Ed$4" role="25YQCW">
+      <node concept="2h0jOr" id="6jpO12_Ed$6" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="31n9r3" id="6jpO12_Ed$7" role="2h0jOs">
+          <property role="TrG5h" value="lib" />
+          <node concept="LIFWc" id="6jpO12_Ed$8" role="lGtFl">
+            <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+            <property role="LIFWd" value="Constant_p0xxo_c0a" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6jpO12_Ed$9" role="25YQFr">
+      <node concept="2h0jOr" id="6jpO12_Ed$b" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="31n9r3" id="6jpO12_Ed$c" role="2h0jOs">
+          <property role="31n9r4" value="true" />
+          <property role="TrG5h" value="lib" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="6jpO12_Ed$d" role="LjaKd">
+      <node concept="2TK7Tu" id="6jpO12_Ed$e" role="3cqZAp">
+        <property role="2TTd_B" value="standard" />
       </node>
     </node>
   </node>

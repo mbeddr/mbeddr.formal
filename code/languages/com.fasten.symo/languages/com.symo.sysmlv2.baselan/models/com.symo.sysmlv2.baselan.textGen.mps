@@ -3850,5 +3850,98 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="6jpO12_$T9Z">
+    <property role="TrG5h" value="SysMLv2LibraryPackage_TextGen" />
+    <property role="3GE5qa" value="package" />
+    <ref role="WuzLi" to="5rf1:6jpO12_xkrj" resolve="SysMLv2LibraryPackage" />
+    <node concept="11bSqf" id="6jpO12_$Ta0" role="11c4hB">
+      <node concept="3clFbS" id="6jpO12_$Ta2" role="2VODD2">
+        <node concept="3clFbJ" id="6jpO12_$Ta3" role="3cqZAp">
+          <node concept="2OqwBi" id="6jpO12_$Ta6" role="3clFbw">
+            <node concept="117lpO" id="6jpO12_$Ta9" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6jpO12_$Taa" role="2OqNvi">
+              <ref role="3TsBF5" to="5rf1:6jpO12_xkrk" resolve="isStandard" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6jpO12_$Tab" role="3clFbx">
+            <node concept="lc7rE" id="6jpO12_$Tac" role="3cqZAp">
+              <node concept="la8eA" id="6jpO12_$Tae" role="lcghm">
+                <property role="lacIc" value="standard " />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="6jpO12_$Taf" role="3cqZAp">
+          <node concept="la8eA" id="6jpO12_$Tah" role="lcghm">
+            <property role="lacIc" value="library " />
+          </node>
+        </node>
+        <node concept="lc7rE" id="6jpO12_$Tai" role="3cqZAp">
+          <node concept="l9S2W" id="6jpO12_$Tak" role="lcghm">
+            <node concept="2OqwBi" id="6jpO12_$Tam" role="lbANJ">
+              <node concept="117lpO" id="6jpO12_$Tap" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="6jpO12_$Taq" role="2OqNvi">
+                <ref role="3TtcxE" to="5rf1:5oZmK$O6sPa" resolve="prefixMetadata" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="6jpO12_$Tar" role="3cqZAp">
+          <node concept="la8eA" id="6jpO12_$Tat" role="lcghm">
+            <property role="lacIc" value="package " />
+          </node>
+          <node concept="l9hG8" id="6jpO12_$Tau" role="lcghm">
+            <node concept="2OqwBi" id="6jpO12_$Taw" role="lb14g">
+              <node concept="117lpO" id="6jpO12_$Taz" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6jpO12_$Ta$" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6jpO12_$Ta_" role="lcghm">
+            <property role="lacIc" value=" {" />
+          </node>
+        </node>
+        <node concept="lc7rE" id="6jpO12_$TaA" role="3cqZAp">
+          <node concept="l8MVK" id="6jpO12_$TaC" role="lcghm" />
+        </node>
+        <node concept="3izx1p" id="6jpO12_$TaD" role="3cqZAp">
+          <node concept="3clFbS" id="6jpO12_$TaF" role="3izTki">
+            <node concept="2Gpval" id="6jpO12_$TaG" role="3cqZAp">
+              <node concept="2GrKxI" id="6jpO12_$TaK" role="2Gsz3X">
+                <property role="TrG5h" value="item" />
+                <property role="2Lvdk3" value="item" />
+              </node>
+              <node concept="2OqwBi" id="6jpO12_$TaL" role="2GsD0m">
+                <node concept="117lpO" id="6jpO12_$TaO" role="2Oq$k0" />
+                <node concept="3Tsc0h" id="6jpO12_$TaP" role="2OqNvi">
+                  <ref role="3TtcxE" to="5rf1:3PUPjB2nMSo" resolve="content" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="6jpO12_$TaQ" role="2LFqv$">
+                <node concept="1bpajm" id="6jpO12_$TaR" role="3cqZAp" />
+                <node concept="lc7rE" id="6jpO12_$TaS" role="3cqZAp">
+                  <node concept="l9hG8" id="6jpO12_$TaU" role="lcghm">
+                    <node concept="2GrUjf" id="6jpO12_$TaW" role="lb14g">
+                      <ref role="2Gs0qQ" node="6jpO12_$TaK" resolve="item" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="lc7rE" id="6jpO12_$TaX" role="3cqZAp">
+                  <node concept="l8MVK" id="6jpO12_$TaZ" role="lcghm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1bpajm" id="6jpO12_$Tb0" role="3cqZAp" />
+        <node concept="lc7rE" id="6jpO12_$Tb1" role="3cqZAp">
+          <node concept="la8eA" id="6jpO12_$Tb3" role="lcghm">
+            <property role="lacIc" value="}" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

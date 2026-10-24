@@ -1243,5 +1243,17 @@
     <property role="3GE5qa" value="base" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
+  <node concept="1TIwiD" id="6jpO12_xkrj">
+    <property role="EcuMT" value="7267068243654035155" />
+    <property role="TrG5h" value="SysMLv2LibraryPackage" />
+    <property role="34LRSv" value="library package" />
+    <property role="R4oN_" value="library package with an optional standard keyword" />
+    <ref role="1TJDcQ" node="3PUPjB2nMR4" resolve="SysMLv2Package" />
+    <node concept="1TJgyi" id="6jpO12_xkrk" role="1TKVEl">
+      <property role="IQ2nx" value="7267068243654035156" />
+      <property role="TrG5h" value="isStandard" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
 </model>
 

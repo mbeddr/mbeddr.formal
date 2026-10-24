@@ -239,6 +239,9 @@
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
       </concept>
+      <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
+        <property id="7617962380315063287" name="flagText" index="ZjSer" />
+      </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
@@ -4120,6 +4123,62 @@
           <ref role="A1WHt" node="BOR0Mn0IWN" resolve="AddPrefixMetadata" />
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6jpO12_xmnO">
+    <ref role="1XX52x" to="5rf1:6jpO12_xkrj" resolve="SysMLv2LibraryPackage" />
+    <node concept="3EZMnI" id="6jpO12_$T27" role="2wV5jI">
+      <node concept="PMmxH" id="6jpO12_$T28" role="3EZMnx">
+        <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
+      </node>
+      <node concept="1kHk_G" id="6jpO12_$T29" role="3EZMnx">
+        <property role="ZjSer" value="standard" />
+        <ref role="1NtTu8" to="5rf1:6jpO12_xkrk" resolve="isStandard" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0ifn" id="6jpO12_$T2a" role="3EZMnx">
+        <property role="3F0ifm" value="library package" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="3F0A7n" id="6jpO12_$T2b" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="6jpO12_$T2c" role="3EZMnx">
+        <property role="3F0ifm" value="{" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+        <node concept="11L4FC" id="6jpO12_$T2d" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="6jpO12_$T2e" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:3PUPjB2nMSo" resolve="content" />
+        <node concept="4$FPG" id="6jpO12_$T2f" role="4_6I_">
+          <node concept="3clFbS" id="6jpO12_$T2h" role="2VODD2">
+            <node concept="3clFbF" id="6jpO12_$T2i" role="3cqZAp">
+              <node concept="2pJPEk" id="6jpO12_$T2k" role="3clFbG">
+                <node concept="2pJPED" id="6jpO12_$T2m" role="2pJPEn">
+                  <ref role="2pJxaS" to="5rf1:3DMRBeFsYdF" resolve="SysMLv2EmptyLine" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="l2Vlx" id="6jpO12_$T2n" role="2czzBx" />
+        <node concept="pVoyu" id="6jpO12_$T2o" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="lj46D" id="6jpO12_$T2p" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="pj6Ft" id="6jpO12_$T2q" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6jpO12_$T2r" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
+      </node>
+      <node concept="l2Vlx" id="6jpO12_$T2s" role="2iSdaV" />
     </node>
   </node>
 </model>
