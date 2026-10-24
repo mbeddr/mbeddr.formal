@@ -34,6 +34,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
+        <child id="1081516765348" name="expression" index="3fr31v" />
+      </concept>
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
@@ -41,6 +44,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -201,6 +205,178 @@
     <node concept="1YaCAy" id="5ipQkCK9yvL" role="1YuTPh">
       <property role="TrG5h" value="featureInverting" />
       <ref role="1YaFvo" to="rb60:7JYC9rWFthU" resolve="KerMLFeatureInverting" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5ipQkCKBZJd">
+    <property role="TrG5h" value="check_StandaloneSpecializationHasSpecific" />
+    <node concept="3clFbS" id="5ipQkCKBZJg" role="18ibNy">
+      <node concept="3clFbJ" id="5ipQkCKBZJh" role="3cqZAp">
+        <node concept="1Wc70l" id="5ipQkCKBZJk" role="3clFbw">
+          <node concept="2OqwBi" id="5ipQkCKBZJn" role="3uHU7B">
+            <node concept="1YBJjd" id="5ipQkCKBZJq" role="2Oq$k0">
+              <ref role="1YBMHb" node="5ipQkCKBZJF" resolve="specialization" />
+            </node>
+            <node concept="3zqWPK" id="5ipQkCKBZJr" role="2OqNvi">
+              <ref role="37wK5l" to="efol:5ipQkCKBTTv" resolve="isStandalone" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="5ipQkCKBZJs" role="3uHU7w">
+            <node concept="2OqwBi" id="5ipQkCKBZJv" role="3uHU7B">
+              <node concept="1YBJjd" id="5ipQkCKBZJy" role="2Oq$k0">
+                <ref role="1YBMHb" node="5ipQkCKBZJF" resolve="specialization" />
+              </node>
+              <node concept="3TrEf2" id="5ipQkCKBZJz" role="2OqNvi">
+                <ref role="3Tt5mk" to="rb60:5ipQkCKyhUT" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCKBZJ$" role="3uHU7w" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="5ipQkCKBZJ_" role="3clFbx">
+          <node concept="2MkqsV" id="5ipQkCKBZJA" role="3cqZAp">
+            <node concept="Xl_RD" id="5ipQkCKBZJD" role="2MkJ7o">
+              <property role="Xl_RC" value="Standalone specialization has no specific type: name the type that specializes" />
+            </node>
+            <node concept="1YBJjd" id="5ipQkCKBZJE" role="1urrMF">
+              <ref role="1YBMHb" node="5ipQkCKBZJF" resolve="specialization" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5ipQkCKBZJF" role="1YuTPh">
+      <property role="TrG5h" value="specialization" />
+      <ref role="1YaFvo" to="rb60:7JYC9rUVR0r" resolve="KerMLSpecialization" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5ipQkCKBZMu">
+    <property role="TrG5h" value="check_OwnedSpecializationHasNoSpecific" />
+    <node concept="3clFbS" id="5ipQkCKBZMx" role="18ibNy">
+      <node concept="3clFbJ" id="5ipQkCKBZMy" role="3cqZAp">
+        <node concept="1Wc70l" id="5ipQkCKBZM_" role="3clFbw">
+          <node concept="3fqX7Q" id="5ipQkCKBZMC" role="3uHU7B">
+            <node concept="2OqwBi" id="5ipQkCKBZME" role="3fr31v">
+              <node concept="1YBJjd" id="5ipQkCKBZMH" role="2Oq$k0">
+                <ref role="1YBMHb" node="5ipQkCKBZMY" resolve="specialization" />
+              </node>
+              <node concept="3zqWPK" id="5ipQkCKBZMI" role="2OqNvi">
+                <ref role="37wK5l" to="efol:5ipQkCKBTTv" resolve="isStandalone" />
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="5ipQkCKBZMJ" role="3uHU7w">
+            <node concept="2OqwBi" id="5ipQkCKBZMM" role="3uHU7B">
+              <node concept="1YBJjd" id="5ipQkCKBZMP" role="2Oq$k0">
+                <ref role="1YBMHb" node="5ipQkCKBZMY" resolve="specialization" />
+              </node>
+              <node concept="3TrEf2" id="5ipQkCKBZMQ" role="2OqNvi">
+                <ref role="3Tt5mk" to="rb60:5ipQkCKyhUT" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCKBZMR" role="3uHU7w" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="5ipQkCKBZMS" role="3clFbx">
+          <node concept="2MkqsV" id="5ipQkCKBZMT" role="3cqZAp">
+            <node concept="Xl_RD" id="5ipQkCKBZMW" role="2MkJ7o">
+              <property role="Xl_RC" value="Owned specialization must not name a specific type: its owner is the specific type" />
+            </node>
+            <node concept="1YBJjd" id="5ipQkCKBZMX" role="1urrMF">
+              <ref role="1YBMHb" node="5ipQkCKBZMY" resolve="specialization" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5ipQkCKBZMY" role="1YuTPh">
+      <property role="TrG5h" value="specialization" />
+      <ref role="1YaFvo" to="rb60:7JYC9rUVR0r" resolve="KerMLSpecialization" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5ipQkCKBZNt">
+    <property role="TrG5h" value="check_StandaloneDisjoiningHasTypeDisjoined" />
+    <node concept="3clFbS" id="5ipQkCKBZNw" role="18ibNy">
+      <node concept="3clFbJ" id="5ipQkCKBZNx" role="3cqZAp">
+        <node concept="1Wc70l" id="5ipQkCKBZN$" role="3clFbw">
+          <node concept="2OqwBi" id="5ipQkCKBZNB" role="3uHU7B">
+            <node concept="1YBJjd" id="5ipQkCKBZNE" role="2Oq$k0">
+              <ref role="1YBMHb" node="5ipQkCKBZNV" resolve="disjoining" />
+            </node>
+            <node concept="3zqWPK" id="5ipQkCKBZNF" role="2OqNvi">
+              <ref role="37wK5l" to="efol:5ipQkCKBZEq" resolve="isStandalone" />
+            </node>
+          </node>
+          <node concept="3clFbC" id="5ipQkCKBZNG" role="3uHU7w">
+            <node concept="2OqwBi" id="5ipQkCKBZNJ" role="3uHU7B">
+              <node concept="1YBJjd" id="5ipQkCKBZNM" role="2Oq$k0">
+                <ref role="1YBMHb" node="5ipQkCKBZNV" resolve="disjoining" />
+              </node>
+              <node concept="3TrEf2" id="5ipQkCKBZNN" role="2OqNvi">
+                <ref role="3Tt5mk" to="rb60:5ipQkCKyhVL" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCKBZNO" role="3uHU7w" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="5ipQkCKBZNP" role="3clFbx">
+          <node concept="2MkqsV" id="5ipQkCKBZNQ" role="3cqZAp">
+            <node concept="Xl_RD" id="5ipQkCKBZNT" role="2MkJ7o">
+              <property role="Xl_RC" value="Standalone disjoining has no type to disjoin: name the type that is disjoint" />
+            </node>
+            <node concept="1YBJjd" id="5ipQkCKBZNU" role="1urrMF">
+              <ref role="1YBMHb" node="5ipQkCKBZNV" resolve="disjoining" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5ipQkCKBZNV" role="1YuTPh">
+      <property role="TrG5h" value="disjoining" />
+      <ref role="1YaFvo" to="rb60:5ipQkCJrYIC" resolve="KerMLDisjoining" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="5ipQkCKBZQ9">
+    <property role="TrG5h" value="check_OwnedDisjoiningHasNoTypeDisjoined" />
+    <node concept="3clFbS" id="5ipQkCKBZQc" role="18ibNy">
+      <node concept="3clFbJ" id="5ipQkCKBZQd" role="3cqZAp">
+        <node concept="1Wc70l" id="5ipQkCKBZQg" role="3clFbw">
+          <node concept="3fqX7Q" id="5ipQkCKBZQj" role="3uHU7B">
+            <node concept="2OqwBi" id="5ipQkCKBZQl" role="3fr31v">
+              <node concept="1YBJjd" id="5ipQkCKBZQo" role="2Oq$k0">
+                <ref role="1YBMHb" node="5ipQkCKBZQD" resolve="disjoining" />
+              </node>
+              <node concept="3zqWPK" id="5ipQkCKBZQp" role="2OqNvi">
+                <ref role="37wK5l" to="efol:5ipQkCKBZEq" resolve="isStandalone" />
+              </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="5ipQkCKBZQq" role="3uHU7w">
+            <node concept="2OqwBi" id="5ipQkCKBZQt" role="3uHU7B">
+              <node concept="1YBJjd" id="5ipQkCKBZQw" role="2Oq$k0">
+                <ref role="1YBMHb" node="5ipQkCKBZQD" resolve="disjoining" />
+              </node>
+              <node concept="3TrEf2" id="5ipQkCKBZQx" role="2OqNvi">
+                <ref role="3Tt5mk" to="rb60:5ipQkCKyhVL" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCKBZQy" role="3uHU7w" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="5ipQkCKBZQz" role="3clFbx">
+          <node concept="2MkqsV" id="5ipQkCKBZQ$" role="3cqZAp">
+            <node concept="Xl_RD" id="5ipQkCKBZQB" role="2MkJ7o">
+              <property role="Xl_RC" value="Owned disjoining must not name a type to disjoin: its owner is that type" />
+            </node>
+            <node concept="1YBJjd" id="5ipQkCKBZQC" role="1urrMF">
+              <ref role="1YBMHb" node="5ipQkCKBZQD" resolve="disjoining" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="5ipQkCKBZQD" role="1YuTPh">
+      <property role="TrG5h" value="disjoining" />
+      <ref role="1YaFvo" to="rb60:5ipQkCJrYIC" resolve="KerMLDisjoining" />
     </node>
   </node>
 </model>

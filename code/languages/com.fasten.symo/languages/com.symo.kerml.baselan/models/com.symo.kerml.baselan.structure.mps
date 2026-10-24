@@ -369,6 +369,11 @@
     <node concept="PrWs8" id="7JYC9rV9p7c" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="1TJgyj" id="5ipQkCKyhUT" role="1TKVEi">
+      <property role="IQ2ns" value="6096142483287776953" />
+      <property role="20kJfa" value="specific" />
+      <ref role="20lvS9" node="7JYC9rUVR0q" resolve="KerMLType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JYC9rVcQwd">
     <property role="EcuMT" value="8934755281069631501" />
@@ -382,6 +387,9 @@
     <property role="TrG5h" value="KerMLSubclassification" />
     <property role="R4oN_" value="Specialization between two Classifiers (KerML 8.3.3.2)" />
     <ref role="1TJDcQ" node="7JYC9rUVR0r" resolve="KerMLSpecialization" />
+    <node concept="PrWs8" id="5ipQkCKyhVP" role="PzmwI">
+      <ref role="PrY4T" node="7JYC9rUw4wl" resolve="IKerMLNamespaceMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JYC9rVcQwf">
     <property role="EcuMT" value="8934755281069631503" />
@@ -505,6 +513,9 @@
     <property role="34LRSv" value=":&gt;" />
     <property role="R4oN_" value="Specialization between two features (KerML 8.3.3.3.10)" />
     <ref role="1TJDcQ" node="7JYC9rUVR0r" resolve="KerMLSpecialization" />
+    <node concept="PrWs8" id="5ipQkCKyhVT" role="PzmwI">
+      <ref role="PrY4T" node="7JYC9rUw4wl" resolve="IKerMLNamespaceMember" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JYC9rVjis9">
     <property role="EcuMT" value="8934755281071318793" />
@@ -741,6 +752,14 @@
     </node>
     <node concept="PrWs8" id="5ipQkCJrYIH" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+    <node concept="1TJgyj" id="5ipQkCKyhVL" role="1TKVEi">
+      <property role="IQ2ns" value="6096142483287777009" />
+      <property role="20kJfa" value="typeDisjoined" />
+      <ref role="20lvS9" node="7JYC9rUVR0q" resolve="KerMLType" />
+    </node>
+    <node concept="PrWs8" id="5ipQkCKyhVX" role="PzmwI">
+      <ref role="PrY4T" node="7JYC9rUw4wl" resolve="IKerMLNamespaceMember" />
     </node>
   </node>
   <node concept="1TIwiD" id="5ipQkCJrYID">

@@ -295,6 +295,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1156234966388" name="shortDescription" index="OYnhT" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1196978630214" name="jetbrains.mps.lang.core.structure.IResolveInfo" flags="ngI" index="2Lv6Xg">
@@ -10474,6 +10475,248 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="5ipQkCKT0f5" role="1SL9yI">
+      <property role="TrG5h" value="testStandaloneSubclassifierSubsetAndDisjoint" />
+      <node concept="3cqZAl" id="5ipQkCKT0f8" role="3clF45" />
+      <node concept="3clFbS" id="5ipQkCKT0f9" role="3clF47">
+        <node concept="3cpWs8" id="5ipQkCKT0fa" role="3cqZAp">
+          <node concept="3cpWsn" id="5ipQkCKT0fd" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="disText" />
+            <property role="2Lvdk3" value="disText" />
+            <node concept="17QB3L" id="5ipQkCKT0ff" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0fg" role="3cqZAp">
+          <node concept="37vLTI" id="5ipQkCKT0fi" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0fl" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0fd" resolve="disText" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0fm" role="37vLTx">
+              <property role="Xl_RC" value="package P {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0fn" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0fp" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0fs" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0fd" resolve="disText" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0ft" role="37vLTx">
+              <property role="Xl_RC" value="  class A;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0fu" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0fw" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0fz" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0fd" resolve="disText" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0f$" role="37vLTx">
+              <property role="Xl_RC" value="  class B;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0f_" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0fB" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0fE" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0fd" resolve="disText" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0fF" role="37vLTx">
+              <property role="Xl_RC" value="  class C;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0fG" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0fI" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0fL" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0fd" resolve="disText" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0fM" role="37vLTx">
+              <property role="Xl_RC" value="  subclassifier P::B specializes P::A;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0fN" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0fP" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0fS" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0fd" resolve="disText" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0fT" role="37vLTx">
+              <property role="Xl_RC" value="  private disjoint P::A from P::C;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0fU" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0fW" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0fZ" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0fd" resolve="disText" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0g0" role="37vLTx">
+              <property role="Xl_RC" value="  feature f;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0g1" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0g3" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0g6" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0fd" resolve="disText" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0g7" role="37vLTx">
+              <property role="Xl_RC" value="  feature g;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0g8" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0ga" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0gd" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0fd" resolve="disText" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0ge" role="37vLTx">
+              <property role="Xl_RC" value="  subset P::g subsets P::f;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0gf" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0gh" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0gk" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0fd" resolve="disText" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0gl" role="37vLTx">
+              <property role="Xl_RC" value="}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5ipQkCKT0gm" role="3cqZAp">
+          <node concept="3cpWsn" id="5ipQkCKT0gp" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="expected" />
+            <property role="2Lvdk3" value="expected" />
+            <node concept="17QB3L" id="5ipQkCKT0gr" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0gs" role="3cqZAp">
+          <node concept="37vLTI" id="5ipQkCKT0gu" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0gx" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0gp" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0gy" role="37vLTx">
+              <property role="Xl_RC" value="package P {&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0gz" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0g_" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0gC" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0gp" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0gD" role="37vLTx">
+              <property role="Xl_RC" value="  class A;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0gE" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0gG" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0gJ" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0gp" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0gK" role="37vLTx">
+              <property role="Xl_RC" value="  class B;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0gL" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0gN" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0gQ" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0gp" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0gR" role="37vLTx">
+              <property role="Xl_RC" value="  class C;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0gS" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0gU" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0gX" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0gp" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0gY" role="37vLTx">
+              <property role="Xl_RC" value="  subclassifier P::B specializes P::A;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0gZ" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0h1" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0h4" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0gp" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0h5" role="37vLTx">
+              <property role="Xl_RC" value="  private disjoint P::A from P::C;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0h6" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0h8" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0hb" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0gp" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0hc" role="37vLTx">
+              <property role="Xl_RC" value="  feature f;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0hd" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0hf" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0hi" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0gp" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0hj" role="37vLTx">
+              <property role="Xl_RC" value="  feature g;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0hk" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0hm" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0hp" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0gp" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0hq" role="37vLTx">
+              <property role="Xl_RC" value="  subset P::g subsets P::f;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0hr" role="3cqZAp">
+          <node concept="d57v9" id="5ipQkCKT0ht" role="3clFbG">
+            <node concept="37vLTw" id="5ipQkCKT0hw" role="37vLTJ">
+              <ref role="3cqZAo" node="5ipQkCKT0gp" resolve="expected" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKT0hx" role="37vLTx">
+              <property role="Xl_RC" value="}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKT0hy" role="3cqZAp">
+          <node concept="2YIFZM" id="5ipQkCKT0h$" role="3clFbG">
+            <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
+            <ref role="37wK5l" node="7JYC9rXJCB7" resolve="assertEquals" />
+            <node concept="37vLTw" id="5ipQkCKT0h_" role="37wK5m">
+              <ref role="3cqZAo" node="5ipQkCKT0gp" resolve="expected" />
+            </node>
+            <node concept="2YIFZM" id="5ipQkCKT0hA" role="37wK5m">
+              <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
+              <ref role="37wK5l" node="7JYC9rXWE_G" resolve="roundtrip" />
+              <node concept="1jxXqW" id="5ipQkCKT0hB" role="37wK5m" />
+              <node concept="Xl_RD" id="5ipQkCKT0hC" role="37wK5m">
+                <property role="Xl_RC" value="Dis" />
+              </node>
+              <node concept="37vLTw" id="5ipQkCKT0hD" role="37wK5m">
+                <ref role="3cqZAo" node="5ipQkCKT0fd" resolve="disText" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1lH9Xt" id="7JYC9rXLmDI">
     <property role="TrG5h" value="_020_ImportReferencesTest" />
@@ -14602,6 +14845,39 @@
                 </node>
                 <node concept="Xl_RD" id="5ipQkCJGXiA" role="37wK5m">
                   <property role="Xl_RC" value="standard library package Snippet {&#10;&#9;abstract class Link;&#10;&#9;abstract class Object;&#10;&#9;abstract class BinaryLink;&#10;&#9;abstract feature links: Link[0..*];&#10;&#9;abstract feature objects: Object[0..*];&#10;&#9;abstract feature binaryLinks: BinaryLink[0..*];&#10;&#9;abstract assoc struct LinkObject specializes Link, Object intersects Link, Object {&#10;&#9;&#9;doc&#10;&#9;&#9;/*&#10;&#9;&#9; * LinkObject is the most general association structure, being both a Link and an Object.&#10;&#9;&#9; */&#10;&#9;}&#10;&#9;assoc struct BinaryLinkObject specializes BinaryLink, LinkObject intersects BinaryLink, LinkObject {&#10;&#9;&#9;doc&#10;&#9;&#9;/*&#10;&#9;&#9; * BinaryLinkObject is the most general binary association structure, being both a &#10;&#9;&#9; * BinaryLink and a LinkObject.&#10;&#9;&#9; */&#10;&#9;}&#10;&#9;abstract feature linkObjects: LinkObject[0..*] nonunique subsets links, objects intersects links, objects {&#10;&#9;&#9;doc&#10;&#9;&#9;/*&#10;&#9;&#9; * linkObjects is a specializations of links and objects restricted to type LinkObjects. &#10;&#9;&#9; */&#10;&#9;}&#10;&#9;abstract feature binaryLinkObjects: BinaryLinkObject[0..*] nonunique subsets binaryLinks, linkObjects&#10;&#9;&#9;intersects binaryLinks, linkObjects {&#10;&#9;&#9;doc&#10;&#9;&#9;/*&#10;&#9;&#9; * binaryLinkObjects is a specialization of binaryLinks and linkObjects.&#10;&#9;&#9; */&#10;&#9;}&#10;}&#10;" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="5ipQkCKTGwW" role="1SL9yI">
+      <property role="TrG5h" value="testStandaloneSubclassifierOfTheKernelLibrary" />
+      <node concept="3cqZAl" id="5ipQkCKTGwZ" role="3clF45" />
+      <node concept="3clFbS" id="5ipQkCKTGx0" role="3clF47">
+        <node concept="3clFbF" id="5ipQkCKTGx1" role="3cqZAp">
+          <node concept="2YIFZM" id="5ipQkCKTGx3" role="3clFbG">
+            <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
+            <ref role="37wK5l" node="7JYC9rXJCB7" resolve="assertEquals" />
+            <node concept="Xl_RD" id="5ipQkCKTGx4" role="37wK5m">
+              <property role="Xl_RC" value="no difference" />
+            </node>
+            <node concept="2YIFZM" id="5ipQkCKTGx5" role="37wK5m">
+              <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
+              <ref role="37wK5l" node="5ipQkCILz$S" resolve="tokenDifference" />
+              <node concept="Xl_RD" id="5ipQkCKTGx6" role="37wK5m">
+                <property role="Xl_RC" value="standard library package Snippet {&#10;&#9;abstract class BinaryLink;&#10;&#9;assoc all SelfSameLifeLink specializes BinaryLink;&#10;&#9;assoc all SelfLink specializes BinaryLink;&#10;&#9;subclassifier SelfLink specializes SelfSameLifeLink;&#10;}&#10;" />
+              </node>
+              <node concept="2YIFZM" id="5ipQkCKTGx7" role="37wK5m">
+                <ref role="1Pybhc" node="7JYC9rXI40x" resolve="TestUtils" />
+                <ref role="37wK5l" node="7JYC9rXWE_G" resolve="roundtrip" />
+                <node concept="1jxXqW" id="5ipQkCKTGx8" role="37wK5m" />
+                <node concept="Xl_RD" id="5ipQkCKTGx9" role="37wK5m">
+                  <property role="Xl_RC" value="Snippet" />
+                </node>
+                <node concept="Xl_RD" id="5ipQkCKTGxa" role="37wK5m">
+                  <property role="Xl_RC" value="standard library package Snippet {&#10;&#9;abstract class BinaryLink;&#10;&#9;assoc all SelfSameLifeLink specializes BinaryLink;&#10;&#9;assoc all SelfLink specializes BinaryLink;&#10;&#9;subclassifier SelfLink specializes SelfSameLifeLink;&#10;}&#10;" />
                 </node>
               </node>
             </node>

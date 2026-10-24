@@ -2474,6 +2474,90 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="5ipQkCKPylg" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCKPylh" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCKPzXw" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCKPzi8" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCKPzXx" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.subclassification()" resolve="subclassification" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCKPylj" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5ipQkCKPyll" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCKPylm" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCKPyln" role="3cqZAk">
+                <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                <node concept="2OqwBi" id="5ipQkCKPzXF" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCKPzqL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="5ipQkCKPzXG" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.subclassification()" resolve="subclassification" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5ipQkCKPylp" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCKPylq" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCKPzXQ" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCKPzzq" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCKPzXR" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.subsetting()" resolve="subsetting" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCKPyls" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5ipQkCKPylu" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCKPylv" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCKPylw" role="3cqZAk">
+                <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                <node concept="2OqwBi" id="5ipQkCKPzY1" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCKPzG3" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="5ipQkCKPzY2" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.subsetting()" resolve="subsetting" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5ipQkCKPyly" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCKPylz" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCKPzYc" role="3uHU7B">
+              <node concept="37vLTw" id="5ipQkCKPzOG" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCKPzYd" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.disjoining()" resolve="disjoining" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="5ipQkCKPyl_" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5ipQkCKPylB" role="3clFbx">
+            <node concept="3cpWs6" id="5ipQkCKPylC" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCKPylD" role="3cqZAk">
+                <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                <node concept="2OqwBi" id="5ipQkCKPzYn" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCKPzXl" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCJ1ESd" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="5ipQkCKPzYo" role="2OqNvi">
+                    <ref role="37wK5l" to="rjc7:~KerMLParser$NonFeatureElementContext.disjoining()" resolve="disjoining" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="YS8fn" id="5ipQkCJ1ETI" role="3cqZAp">
           <node concept="1rXfSq" id="5ipQkCJ1ETE" role="YScLw">
             <ref role="37wK5l" node="7JYC9rXCnNK" resolve="unsupported" />
@@ -8202,6 +8286,414 @@
       </node>
       <node concept="3Tm6S6" id="5ipQkCJtM9t" role="1B3o_S" />
       <node concept="3cqZAl" id="5ipQkCJtM9u" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="5ipQkCKJp$H" role="jymVt">
+      <property role="TrG5h" value="standaloneRelationship" />
+      <node concept="37vLTG" id="5ipQkCKJp$I" role="3clF46">
+        <property role="TrG5h" value="concept" />
+        <node concept="3uibUv" id="5ipQkCKJp$J" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5ipQkCKJp$K" role="3clF46">
+        <property role="TrG5h" value="specificLink" />
+        <node concept="3uibUv" id="5ipQkCKJp$L" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5ipQkCKJp$M" role="3clF46">
+        <property role="TrG5h" value="specific" />
+        <node concept="3uibUv" id="5ipQkCKJp$N" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$QualifiedNameContext" resolve="KerMLParser.QualifiedNameContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5ipQkCKJp$O" role="3clF46">
+        <property role="TrG5h" value="generalLink" />
+        <node concept="3uibUv" id="5ipQkCKJp$P" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5ipQkCKJp$Q" role="3clF46">
+        <property role="TrG5h" value="general" />
+        <node concept="3uibUv" id="5ipQkCKJp$R" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$QualifiedNameContext" resolve="KerMLParser.QualifiedNameContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5ipQkCKJp$S" role="3clF46">
+        <property role="TrG5h" value="identification" />
+        <node concept="3uibUv" id="5ipQkCKJp$T" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$IdentificationContext" resolve="KerMLParser.IdentificationContext" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="5ipQkCKJp$U" role="3clF46">
+        <property role="TrG5h" value="body" />
+        <node concept="3uibUv" id="5ipQkCKJp$V" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$RelationshipBodyContext" resolve="KerMLParser.RelationshipBodyContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5ipQkCKJp$W" role="3clF47">
+        <node concept="3clFbJ" id="5ipQkCKJp$X" role="3cqZAp">
+          <node concept="3y3z36" id="5ipQkCKJp$Y" role="3clFbw">
+            <node concept="37vLTw" id="5ipQkCKJp$Z" role="3uHU7B">
+              <ref role="3cqZAo" node="5ipQkCKJp$S" resolve="identification" />
+            </node>
+            <node concept="10Nm6u" id="5ipQkCKJp_0" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="5ipQkCKJp_2" role="3clFbx">
+            <node concept="YS8fn" id="5ipQkCKJp_5" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCKJp_3" role="YScLw">
+                <ref role="37wK5l" node="7JYC9rXCnNK" resolve="unsupported" />
+                <node concept="Xl_RD" id="5ipQkCKJp_4" role="37wK5m">
+                  <property role="Xl_RC" value="relationship identification" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="5ipQkCKJp_6" role="3cqZAp">
+          <node concept="3fqX7Q" id="5ipQkCKJp_7" role="3clFbw">
+            <node concept="2OqwBi" id="5ipQkCKJrdv" role="3fr31v">
+              <node concept="Xl_RD" id="5ipQkCKJp_9" role="2Oq$k0">
+                <property role="Xl_RC" value=";" />
+              </node>
+              <node concept="liA8E" id="5ipQkCKJrdw" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                <node concept="2OqwBi" id="5ipQkCKJruX" role="37wK5m">
+                  <node concept="37vLTw" id="5ipQkCKJruM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="5ipQkCKJp$U" resolve="body" />
+                  </node>
+                  <node concept="liA8E" id="5ipQkCKJruY" role="2OqNvi">
+                    <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="5ipQkCKJp_c" role="3clFbx">
+            <node concept="YS8fn" id="5ipQkCKJp_f" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCKJp_d" role="YScLw">
+                <ref role="37wK5l" node="7JYC9rXCnNK" resolve="unsupported" />
+                <node concept="Xl_RD" id="5ipQkCKJp_e" role="37wK5m">
+                  <property role="Xl_RC" value="relationship body" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="5ipQkCKJp_h" role="3cqZAp">
+          <node concept="3cpWsn" id="5ipQkCKJp_g" role="3cpWs9">
+            <property role="TrG5h" value="relationship" />
+            <node concept="3uibUv" id="5ipQkCKJp_i" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+            </node>
+            <node concept="2YIFZM" id="5ipQkCKJrm9" role="33vP2m">
+              <ref role="1Pybhc" node="7JYC9rXCgfK" resolve="KerMLNodes" />
+              <ref role="37wK5l" node="7JYC9rXCgfX" resolve="create" />
+              <node concept="37vLTw" id="5ipQkCKJrma" role="37wK5m">
+                <ref role="3cqZAo" node="5ipQkCKJp$I" resolve="concept" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKJp_l" role="3cqZAp">
+          <node concept="1rXfSq" id="5ipQkCKJp_m" role="3clFbG">
+            <ref role="37wK5l" node="7JYC9rXCnKV" resolve="pending" />
+            <node concept="37vLTw" id="5ipQkCKJp_n" role="37wK5m">
+              <ref role="3cqZAo" node="5ipQkCKJp_g" resolve="relationship" />
+            </node>
+            <node concept="37vLTw" id="5ipQkCKJp_o" role="37wK5m">
+              <ref role="3cqZAo" node="5ipQkCKJp$K" resolve="specificLink" />
+            </node>
+            <node concept="1rXfSq" id="5ipQkCKJp_p" role="37wK5m">
+              <ref role="37wK5l" node="7JYC9rXCnLb" resolve="qualifiedName" />
+              <node concept="37vLTw" id="5ipQkCKJp_q" role="37wK5m">
+                <ref role="3cqZAo" node="5ipQkCKJp$M" resolve="specific" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5ipQkCKJp_r" role="3cqZAp">
+          <node concept="1rXfSq" id="5ipQkCKJp_s" role="3clFbG">
+            <ref role="37wK5l" node="7JYC9rXCnKV" resolve="pending" />
+            <node concept="37vLTw" id="5ipQkCKJp_t" role="37wK5m">
+              <ref role="3cqZAo" node="5ipQkCKJp_g" resolve="relationship" />
+            </node>
+            <node concept="37vLTw" id="5ipQkCKJp_u" role="37wK5m">
+              <ref role="3cqZAo" node="5ipQkCKJp$O" resolve="generalLink" />
+            </node>
+            <node concept="1rXfSq" id="5ipQkCKJp_v" role="37wK5m">
+              <ref role="37wK5l" node="7JYC9rXCnLb" resolve="qualifiedName" />
+              <node concept="37vLTw" id="5ipQkCKJp_w" role="37wK5m">
+                <ref role="3cqZAo" node="5ipQkCKJp$Q" resolve="general" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5ipQkCKJp_x" role="3cqZAp">
+          <node concept="37vLTw" id="5ipQkCKJp_y" role="3cqZAk">
+            <ref role="3cqZAo" node="5ipQkCKJp_g" resolve="relationship" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="5ipQkCKJp_z" role="1B3o_S" />
+      <node concept="3uibUv" id="5ipQkCKJp_$" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5ipQkCKKVQp" role="jymVt">
+      <property role="TrG5h" value="visitSubclassification" />
+      <node concept="37vLTG" id="5ipQkCKKVQq" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="5ipQkCKKVQr" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$SubclassificationContext" resolve="KerMLParser.SubclassificationContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5ipQkCKKVQs" role="3clF47">
+        <node concept="3cpWs6" id="5ipQkCKKVQt" role="3cqZAp">
+          <node concept="1rXfSq" id="5ipQkCKKVQu" role="3cqZAk">
+            <ref role="37wK5l" node="5ipQkCKJp$H" resolve="standaloneRelationship" />
+            <node concept="Xl_RD" id="5ipQkCKKVQv" role="37wK5m">
+              <property role="Xl_RC" value="KerMLSubclassification" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKKVQw" role="37wK5m">
+              <property role="Xl_RC" value="specific" />
+            </node>
+            <node concept="2OqwBi" id="5ipQkCKKWgy" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCKKWgx" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCKKVQq" resolve="ctx" />
+              </node>
+              <node concept="2OwXpG" id="5ipQkCKKWgz" role="2OqNvi">
+                <ref role="2Oxat5" to="rjc7:~KerMLParser$SubclassificationContext.subclassifier" resolve="subclassifier" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKKVQy" role="37wK5m">
+              <property role="Xl_RC" value="general" />
+            </node>
+            <node concept="2OqwBi" id="5ipQkCKKWpc" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCKKWpb" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCKKVQq" resolve="ctx" />
+              </node>
+              <node concept="2OwXpG" id="5ipQkCKKWpd" role="2OqNvi">
+                <ref role="2Oxat5" to="rjc7:~KerMLParser$SubclassificationContext.superclassifier" resolve="superclassifier" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCKKWED" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCKKWxP" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCKKVQq" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCKKWEE" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$SubclassificationContext.identification()" resolve="identification" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCKKWEO" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCKKWEu" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCKKVQq" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCKKWEP" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$SubclassificationContext.relationshipBody()" resolve="relationshipBody" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5ipQkCKKVQA" role="1B3o_S" />
+      <node concept="3uibUv" id="5ipQkCKKVQB" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5ipQkCKMsNd" role="jymVt">
+      <property role="TrG5h" value="visitSubsetting" />
+      <node concept="37vLTG" id="5ipQkCKMsNe" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="5ipQkCKMsNf" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$SubsettingContext" resolve="KerMLParser.SubsettingContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5ipQkCKMsNg" role="3clF47">
+        <node concept="3clFbJ" id="5ipQkCKMsNh" role="3cqZAp">
+          <node concept="22lmx$" id="5ipQkCKMsNi" role="3clFbw">
+            <node concept="3clFbC" id="5ipQkCKMsNj" role="3uHU7B">
+              <node concept="2OqwBi" id="5ipQkCKMtuP" role="3uHU7B">
+                <node concept="37vLTw" id="5ipQkCKMtuO" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5ipQkCKMsNe" resolve="ctx" />
+                </node>
+                <node concept="2OwXpG" id="5ipQkCKMtuQ" role="2OqNvi">
+                  <ref role="2Oxat5" to="rjc7:~KerMLParser$SubsettingContext.subsettingFeature" resolve="subsettingFeature" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="5ipQkCKMsNl" role="3uHU7w" />
+            </node>
+            <node concept="3clFbC" id="5ipQkCKMsNm" role="3uHU7w">
+              <node concept="2OqwBi" id="5ipQkCKMtBv" role="3uHU7B">
+                <node concept="37vLTw" id="5ipQkCKMtBu" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5ipQkCKMsNe" resolve="ctx" />
+                </node>
+                <node concept="2OwXpG" id="5ipQkCKMtBw" role="2OqNvi">
+                  <ref role="2Oxat5" to="rjc7:~KerMLParser$SubsettingContext.subsettedFeature" resolve="subsettedFeature" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="5ipQkCKMsNo" role="3uHU7w" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="5ipQkCKMsNq" role="3clFbx">
+            <node concept="YS8fn" id="5ipQkCKMsNt" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCKMsNr" role="YScLw">
+                <ref role="37wK5l" node="7JYC9rXCnNK" resolve="unsupported" />
+                <node concept="Xl_RD" id="5ipQkCKMsNs" role="37wK5m">
+                  <property role="Xl_RC" value="feature chain in a standalone subsetting" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5ipQkCKMsNu" role="3cqZAp">
+          <node concept="1rXfSq" id="5ipQkCKMsNv" role="3cqZAk">
+            <ref role="37wK5l" node="5ipQkCKJp$H" resolve="standaloneRelationship" />
+            <node concept="Xl_RD" id="5ipQkCKMsNw" role="37wK5m">
+              <property role="Xl_RC" value="KerMLSubsetting" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKMsNx" role="37wK5m">
+              <property role="Xl_RC" value="specific" />
+            </node>
+            <node concept="2OqwBi" id="5ipQkCKMtK9" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCKMtK8" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCKMsNe" resolve="ctx" />
+              </node>
+              <node concept="2OwXpG" id="5ipQkCKMtKa" role="2OqNvi">
+                <ref role="2Oxat5" to="rjc7:~KerMLParser$SubsettingContext.subsettingFeature" resolve="subsettingFeature" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKMsNz" role="37wK5m">
+              <property role="Xl_RC" value="general" />
+            </node>
+            <node concept="2OqwBi" id="5ipQkCKMtSN" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCKMtSM" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCKMsNe" resolve="ctx" />
+              </node>
+              <node concept="2OwXpG" id="5ipQkCKMtSO" role="2OqNvi">
+                <ref role="2Oxat5" to="rjc7:~KerMLParser$SubsettingContext.subsettedFeature" resolve="subsettedFeature" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCKMuag" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCKMu1s" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCKMsNe" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCKMuah" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$SubsettingContext.identification()" resolve="identification" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCKMuar" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCKMua5" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCKMsNe" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCKMuas" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$SubsettingContext.relationshipBody()" resolve="relationshipBody" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5ipQkCKMsNB" role="1B3o_S" />
+      <node concept="3uibUv" id="5ipQkCKMsNC" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="5ipQkCKNZ94" role="jymVt">
+      <property role="TrG5h" value="visitDisjoining" />
+      <node concept="37vLTG" id="5ipQkCKNZ95" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="5ipQkCKNZ96" role="1tU5fm">
+          <ref role="3uigEE" to="rjc7:~KerMLParser$DisjoiningContext" resolve="KerMLParser.DisjoiningContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="5ipQkCKNZ97" role="3clF47">
+        <node concept="3clFbJ" id="5ipQkCKNZ98" role="3cqZAp">
+          <node concept="22lmx$" id="5ipQkCKNZ99" role="3clFbw">
+            <node concept="3clFbC" id="5ipQkCKNZ9a" role="3uHU7B">
+              <node concept="2OqwBi" id="5ipQkCKNZOG" role="3uHU7B">
+                <node concept="37vLTw" id="5ipQkCKNZOF" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5ipQkCKNZ95" resolve="ctx" />
+                </node>
+                <node concept="2OwXpG" id="5ipQkCKNZOH" role="2OqNvi">
+                  <ref role="2Oxat5" to="rjc7:~KerMLParser$DisjoiningContext.typeDisjoined" resolve="typeDisjoined" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="5ipQkCKNZ9c" role="3uHU7w" />
+            </node>
+            <node concept="3clFbC" id="5ipQkCKNZ9d" role="3uHU7w">
+              <node concept="2OqwBi" id="5ipQkCKNZXm" role="3uHU7B">
+                <node concept="37vLTw" id="5ipQkCKNZXl" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5ipQkCKNZ95" resolve="ctx" />
+                </node>
+                <node concept="2OwXpG" id="5ipQkCKNZXn" role="2OqNvi">
+                  <ref role="2Oxat5" to="rjc7:~KerMLParser$DisjoiningContext.disjoiningType" resolve="disjoiningType" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="5ipQkCKNZ9f" role="3uHU7w" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="5ipQkCKNZ9h" role="3clFbx">
+            <node concept="YS8fn" id="5ipQkCKNZ9k" role="3cqZAp">
+              <node concept="1rXfSq" id="5ipQkCKNZ9i" role="YScLw">
+                <ref role="37wK5l" node="7JYC9rXCnNK" resolve="unsupported" />
+                <node concept="Xl_RD" id="5ipQkCKNZ9j" role="37wK5m">
+                  <property role="Xl_RC" value="feature chain in a standalone disjoining" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="5ipQkCKNZ9l" role="3cqZAp">
+          <node concept="1rXfSq" id="5ipQkCKNZ9m" role="3cqZAk">
+            <ref role="37wK5l" node="5ipQkCKJp$H" resolve="standaloneRelationship" />
+            <node concept="Xl_RD" id="5ipQkCKNZ9n" role="37wK5m">
+              <property role="Xl_RC" value="KerMLDisjoining" />
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKNZ9o" role="37wK5m">
+              <property role="Xl_RC" value="typeDisjoined" />
+            </node>
+            <node concept="2OqwBi" id="5ipQkCKO060" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCKO05Z" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCKNZ95" resolve="ctx" />
+              </node>
+              <node concept="2OwXpG" id="5ipQkCKO061" role="2OqNvi">
+                <ref role="2Oxat5" to="rjc7:~KerMLParser$DisjoiningContext.typeDisjoined" resolve="typeDisjoined" />
+              </node>
+            </node>
+            <node concept="Xl_RD" id="5ipQkCKNZ9q" role="37wK5m">
+              <property role="Xl_RC" value="disjoiningType" />
+            </node>
+            <node concept="2OqwBi" id="5ipQkCKO0eE" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCKO0eD" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCKNZ95" resolve="ctx" />
+              </node>
+              <node concept="2OwXpG" id="5ipQkCKO0eF" role="2OqNvi">
+                <ref role="2Oxat5" to="rjc7:~KerMLParser$DisjoiningContext.disjoiningType" resolve="disjoiningType" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCKO0w7" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCKO0nj" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCKNZ95" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCKO0w8" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$DisjoiningContext.identification()" resolve="identification" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="5ipQkCKO0wi" role="37wK5m">
+              <node concept="37vLTw" id="5ipQkCKO0vW" role="2Oq$k0">
+                <ref role="3cqZAo" node="5ipQkCKNZ95" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="5ipQkCKO0wj" role="2OqNvi">
+                <ref role="37wK5l" to="rjc7:~KerMLParser$DisjoiningContext.relationshipBody()" resolve="relationshipBody" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="5ipQkCKNZ9u" role="1B3o_S" />
+      <node concept="3uibUv" id="5ipQkCKNZ9v" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="org.jetbrains.mps.openapi.model.SNode" />
+      </node>
     </node>
   </node>
   <node concept="312cEu" id="7JYC9rXGViE">
