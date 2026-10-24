@@ -65,7 +65,17 @@ padding is not. Then stop and wait for the architect's refinement.
      evidence and a suggested action. This section is mandatory; "none found" must
      mean you looked.
    Never claim a result you did not see.
-6. **Stop.**
+6. **Signal and stop.** The architect is watching your two files and reacts automatically; the user does not
+   relay "finished". Rules for the signal:
+   - The second line of the result file (after the title) is `State: FINISHED`, `State: PARTIAL` (some steps
+     not done, say which) or `State: BLOCKED` (see the questions file). Write the whole file in one write, State
+     line included; never leave a half-written file in place.
+   - Questions: write the questions file in one write, first line after the title `State: WAITING-FOR-ARCHITECT`,
+     then wait: poll `architect2developer_current_iteration.md` (its modification time and `Status:` line,
+     every 60 s, for up to 30 minutes), and continue only when it has a newer `## Clarifications` round and
+     `Status: APPROVED`. If `Status: IN DISCUSSION`, the user decides; keep waiting. After the timeout, stop and
+     say so.
+   - Never edit the result file again after signalling, except by a new full overwrite for the next run.
 
 ## Rules
 - Agree before you deviate; any deviation is listed in the result file.

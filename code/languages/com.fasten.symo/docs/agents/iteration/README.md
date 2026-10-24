@@ -29,6 +29,13 @@ file below and in the archive directory name.
    only after that.
 Only the user commits.
 
+## Automatic hand-off
+The hand-off is carried by the files, not by the user relaying messages. The architect watches the developer's
+two files after approval; the developer signals with a `State:` line (second line of the file:
+`FINISHED`, `PARTIAL`, `BLOCKED`, or `WAITING-FOR-ARCHITECT` in the questions file) and, when it asked questions,
+polls the order for a newer `## Clarifications` round with `Status: APPROVED`. The user's gates (scope, order,
+closure, commit) are never automated.
+
 ## Status values (order header)
 `DRAFT` (written, awaiting user) | `IN DISCUSSION` (open disagreement or scope change)
 | `APPROVED` (developer may implement) | `DONE` (accepted by the user).

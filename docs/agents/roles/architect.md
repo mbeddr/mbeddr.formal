@@ -46,7 +46,12 @@ the result and questions files, and in the archive directory name.
 3. **Write the order** `architect2developer_current_iteration.md` (template in the
    README), concrete enough that no design decision is left open. Status DRAFT.
    Tell the user it awaits approval. Stop.
-4. After approval, set `Status: APPROVED` and tell the user to launch the developer.
+4. After approval, set `Status: APPROVED`, tell the user to launch the developer, and **start watching** the
+   developer's two files in the iteration directory (a background monitor that reports when
+   `developer2architect_work_result.md` or `developer2architect_current_iteration_questions.md` appears or
+   changes; re-arm it when it expires). When it fires, review (step 5 or 6) without waiting for the user to say
+   "developer finished", and report to the user. Automation covers the hand-off only: the user's gates are
+   unchanged. Never accept, archive, commit, approve an order or open the next iteration on your own.
 5. **When invoked again**, read the developer's questions and challenges first. For
    each one, answer in a `## Clarifications (round N)` section at the top of the
    order and correct the steps, or say you agree with the challenge and change the
