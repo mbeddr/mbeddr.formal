@@ -6292,6 +6292,210 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="6jpO12DbOkI" role="1SL9yI">
+      <property role="TrG5h" value="testLibraryPackageRoundtrip" />
+      <node concept="3cqZAl" id="6jpO12DbOkL" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DbOkM" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DbOkN" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DbOkQ" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="6jpO12DbOkS" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DbOkT" role="3cqZAp">
+          <node concept="37vLTI" id="6jpO12DbOkV" role="3clFbG">
+            <node concept="37vLTw" id="6jpO12DbOkY" role="37vLTJ">
+              <ref role="3cqZAo" node="6jpO12DbOkQ" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6jpO12DbOkZ" role="37vLTx">
+              <property role="Xl_RC" value="library package P {&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6jpO12DbOl0" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DbOl3" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="6jpO12DbOl5" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="6jpO12DbOl6" role="37wK5m">
+                <ref role="3cqZAo" node="6jpO12DbOkQ" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DbOl7" role="37wK5m">
+                <property role="Xl_RC" value="LibPkgFile" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DbOl8" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="6jpO12DbOl9" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="6jpO12DbOla" role="3cqZAp">
+          <node concept="37vLTw" id="6jpO12DbOld" role="3tpDZB">
+            <ref role="3cqZAo" node="6jpO12DbOkQ" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="6jpO12DbOle" role="3tpDZA">
+            <ref role="3cqZAo" node="6jpO12DbOl3" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DbOlh" role="1SL9yI">
+      <property role="TrG5h" value="testStandardLibraryPackageRoundtrip" />
+      <node concept="3cqZAl" id="6jpO12DbOlk" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DbOll" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DbOlm" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DbOlp" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="6jpO12DbOlr" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DbOls" role="3cqZAp">
+          <node concept="37vLTI" id="6jpO12DbOlu" role="3clFbG">
+            <node concept="37vLTw" id="6jpO12DbOlx" role="37vLTJ">
+              <ref role="3cqZAo" node="6jpO12DbOlp" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6jpO12DbOly" role="37vLTx">
+              <property role="Xl_RC" value="standard library package P {&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6jpO12DbOlz" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DbOlA" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="6jpO12DbOlC" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="6jpO12DbOlD" role="37wK5m">
+                <ref role="3cqZAo" node="6jpO12DbOlp" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DbOlE" role="37wK5m">
+                <property role="Xl_RC" value="StdLibPkgFile" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DbOlF" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="6jpO12DbOlG" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="6jpO12DbOlH" role="3cqZAp">
+          <node concept="37vLTw" id="6jpO12DbOlK" role="3tpDZB">
+            <ref role="3cqZAo" node="6jpO12DbOlp" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="6jpO12DbOlL" role="3tpDZA">
+            <ref role="3cqZAo" node="6jpO12DbOlA" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DbOlO" role="1SL9yI">
+      <property role="TrG5h" value="testLibraryPackageWithMemberRoundtrip" />
+      <node concept="3cqZAl" id="6jpO12DbOlR" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DbOlS" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DbOlT" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DbOlW" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="6jpO12DbOlY" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DbOlZ" role="3cqZAp">
+          <node concept="37vLTI" id="6jpO12DbOm1" role="3clFbG">
+            <node concept="37vLTw" id="6jpO12DbOm4" role="37vLTJ">
+              <ref role="3cqZAo" node="6jpO12DbOlW" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6jpO12DbOm5" role="37vLTx">
+              <property role="Xl_RC" value="library package P {&#10;  part def D {&#10;  }&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6jpO12DbOm6" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DbOm9" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="6jpO12DbOmb" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="6jpO12DbOmc" role="37wK5m">
+                <ref role="3cqZAo" node="6jpO12DbOlW" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DbOmd" role="37wK5m">
+                <property role="Xl_RC" value="LibPkgMemberFile" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DbOme" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="6jpO12DbOmf" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="6jpO12DbOmg" role="3cqZAp">
+          <node concept="37vLTw" id="6jpO12DbOmj" role="3tpDZB">
+            <ref role="3cqZAo" node="6jpO12DbOlW" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="6jpO12DbOmk" role="3tpDZA">
+            <ref role="3cqZAo" node="6jpO12DbOm9" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DbOmn" role="1SL9yI">
+      <property role="TrG5h" value="testNestedLibraryPackageRoundtrip" />
+      <node concept="3cqZAl" id="6jpO12DbOmq" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DbOmr" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DbOms" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DbOmv" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="6jpO12DbOmx" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DbOmy" role="3cqZAp">
+          <node concept="37vLTI" id="6jpO12DbOm$" role="3clFbG">
+            <node concept="37vLTw" id="6jpO12DbOmB" role="37vLTJ">
+              <ref role="3cqZAo" node="6jpO12DbOmv" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6jpO12DbOmC" role="37vLTx">
+              <property role="Xl_RC" value="package Outer {&#10;  library package P {&#10;  }&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6jpO12DbOmD" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DbOmG" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="6jpO12DbOmI" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="6jpO12DbOmJ" role="37wK5m">
+                <ref role="3cqZAo" node="6jpO12DbOmv" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DbOmK" role="37wK5m">
+                <property role="Xl_RC" value="NestedLibPkgFile" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DbOmL" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="6jpO12DbOmM" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="6jpO12DbOmN" role="3cqZAp">
+          <node concept="37vLTw" id="6jpO12DbOmQ" role="3tpDZB">
+            <ref role="3cqZAo" node="6jpO12DbOmv" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="6jpO12DbOmR" role="3tpDZA">
+            <ref role="3cqZAo" node="6jpO12DbOmG" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1lH9Xt" id="4N4m7hrWHiy">
     <property role="3DII0k" value="2hh8MJdVwqT/none" />
@@ -12903,6 +13107,1071 @@
           </node>
           <node concept="37vLTw" id="3MUZSeIY_ei" role="3tpDZA">
             <ref role="3cqZAo" node="3MUZSeIY_e7" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="6jpO12Dnwy5">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_130_LibraryPackageMatrixTest" />
+    <node concept="1LZb2c" id="6jpO12Dnwy6" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase1" />
+      <node concept="3cqZAl" id="6jpO12Dnwy9" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12Dnwya" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12Dnwyb" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12Dnwye" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12Dnwyg" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12Dnwyh" role="37wK5m">
+                <property role="Xl_RC" value="package P { }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12Dnwyi" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase1" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12Dnwyj" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12Dnwyk" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12Dnwyl" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12Dnwyn" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12Dnwyo" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12Dnwye" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12Dnwyp" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12Dnwyq" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase2" />
+      <node concept="3cqZAl" id="6jpO12Dnwyt" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12Dnwyu" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12Dnwyv" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12Dnwyy" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12Dnwy$" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12Dnwy_" role="37wK5m">
+                <property role="Xl_RC" value="standard library package P { }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwyA" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase2" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwyB" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwyC" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwyD" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwyF" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwyG" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12Dnwyy" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwyH" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwyI" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase3" />
+      <node concept="3cqZAl" id="6jpO12DnwyL" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwyM" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwyN" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwyQ" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwyS" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwyT" role="37wK5m">
+                <property role="Xl_RC" value="package P { package Q { } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwyU" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase3" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwyV" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwyW" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwyX" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwyZ" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12Dnwz0" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwyQ" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12Dnwz1" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12Dnwz2" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase4" />
+      <node concept="3cqZAl" id="6jpO12Dnwz5" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12Dnwz6" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12Dnwz7" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12Dnwza" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12Dnwzc" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12Dnwzd" role="37wK5m">
+                <property role="Xl_RC" value="package P { import Base::DataValue; }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12Dnwze" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase4" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12Dnwzf" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12Dnwzg" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12Dnwzh" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12Dnwzj" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12Dnwzk" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12Dnwza" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12Dnwzl" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12Dnwzm" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase5" />
+      <node concept="3cqZAl" id="6jpO12Dnwzp" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12Dnwzq" role="3clF47">
+        <node concept="3J1_TO" id="6jpO12Dnwzr" role="3cqZAp">
+          <node concept="3clFbS" id="6jpO12Dnwzt" role="1zxBo7">
+            <node concept="3cpWs8" id="6jpO12Dnwzu" role="3cqZAp">
+              <node concept="3cpWsn" id="6jpO12Dnwzx" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="2YIFZM" id="6jpO12Dnwzz" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="6jpO12Dnwz$" role="37wK5m">
+                    <property role="Xl_RC" value="package P { private import Base::DataValue; }" />
+                  </node>
+                  <node concept="Xl_RD" id="6jpO12Dnwz_" role="37wK5m">
+                    <property role="Xl_RC" value="MatrixCase5" />
+                  </node>
+                  <node concept="1jxXqW" id="6jpO12DnwzA" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="6jpO12DnwzB" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6jpO12DnwzC" role="3cqZAp">
+              <node concept="2YIFZM" id="6jpO12DnwzE" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="6jpO12DnwzF" role="37wK5m">
+                  <ref role="3cqZAo" node="6jpO12Dnwzx" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="6jpO12DnwzG" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="6jpO12DnwzH" role="1zxBo5">
+            <node concept="XOnhg" id="6jpO12DnwzL" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="6jpO12DnwzN" role="1tU5fm">
+                <node concept="3uibUv" id="6jpO12DnwzP" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6jpO12DnwzQ" role="1zc67A">
+              <node concept="3vlDli" id="6jpO12DnwzR" role="3cqZAp">
+                <node concept="Xl_RD" id="6jpO12DnwzU" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: visibility prefix on import" />
+                </node>
+                <node concept="2OqwBi" id="6jpO12DnwzV" role="3tpDZA">
+                  <node concept="37vLTw" id="6jpO12DnwzY" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6jpO12DnwzL" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="6jpO12DnwzZ" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12Dnw$0" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase6" />
+      <node concept="3cqZAl" id="6jpO12Dnw$3" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12Dnw$4" role="3clF47">
+        <node concept="3J1_TO" id="6jpO12Dnw$5" role="3cqZAp">
+          <node concept="3clFbS" id="6jpO12Dnw$7" role="1zxBo7">
+            <node concept="3cpWs8" id="6jpO12Dnw$8" role="3cqZAp">
+              <node concept="3cpWsn" id="6jpO12Dnw$b" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="2YIFZM" id="6jpO12Dnw$d" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="6jpO12Dnw$e" role="37wK5m">
+                    <property role="Xl_RC" value="package P { import Base::*; }" />
+                  </node>
+                  <node concept="Xl_RD" id="6jpO12Dnw$f" role="37wK5m">
+                    <property role="Xl_RC" value="MatrixCase6" />
+                  </node>
+                  <node concept="1jxXqW" id="6jpO12Dnw$g" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="6jpO12Dnw$h" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6jpO12Dnw$i" role="3cqZAp">
+              <node concept="2YIFZM" id="6jpO12Dnw$k" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="6jpO12Dnw$l" role="37wK5m">
+                  <ref role="3cqZAo" node="6jpO12Dnw$b" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="6jpO12Dnw$m" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="6jpO12Dnw$n" role="1zxBo5">
+            <node concept="XOnhg" id="6jpO12Dnw$r" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="6jpO12Dnw$t" role="1tU5fm">
+                <node concept="3uibUv" id="6jpO12Dnw$v" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6jpO12Dnw$w" role="1zc67A">
+              <node concept="3vlDli" id="6jpO12Dnw$x" role="3cqZAp">
+                <node concept="Xl_RD" id="6jpO12Dnw$$" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: namespace/wildcard import" />
+                </node>
+                <node concept="2OqwBi" id="6jpO12Dnw$_" role="3tpDZA">
+                  <node concept="37vLTw" id="6jpO12Dnw$C" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6jpO12Dnw$r" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="6jpO12Dnw$D" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12Dnw$E" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase7" />
+      <node concept="3cqZAl" id="6jpO12Dnw$H" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12Dnw$I" role="3clF47">
+        <node concept="3J1_TO" id="6jpO12Dnw$J" role="3cqZAp">
+          <node concept="3clFbS" id="6jpO12Dnw$L" role="1zxBo7">
+            <node concept="3cpWs8" id="6jpO12Dnw$M" role="3cqZAp">
+              <node concept="3cpWsn" id="6jpO12Dnw$P" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="2YIFZM" id="6jpO12Dnw$R" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="6jpO12Dnw$S" role="37wK5m">
+                    <property role="Xl_RC" value="package P { import all Base::*; }" />
+                  </node>
+                  <node concept="Xl_RD" id="6jpO12Dnw$T" role="37wK5m">
+                    <property role="Xl_RC" value="MatrixCase7" />
+                  </node>
+                  <node concept="1jxXqW" id="6jpO12Dnw$U" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="6jpO12Dnw$V" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6jpO12Dnw$W" role="3cqZAp">
+              <node concept="2YIFZM" id="6jpO12Dnw$Y" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="6jpO12Dnw$Z" role="37wK5m">
+                  <ref role="3cqZAo" node="6jpO12Dnw$P" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="6jpO12Dnw_0" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="6jpO12Dnw_1" role="1zxBo5">
+            <node concept="XOnhg" id="6jpO12Dnw_5" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="6jpO12Dnw_7" role="1tU5fm">
+                <node concept="3uibUv" id="6jpO12Dnw_9" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6jpO12Dnw_a" role="1zc67A">
+              <node concept="3vlDli" id="6jpO12Dnw_b" role="3cqZAp">
+                <node concept="Xl_RD" id="6jpO12Dnw_e" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: import all modifier" />
+                </node>
+                <node concept="2OqwBi" id="6jpO12Dnw_f" role="3tpDZA">
+                  <node concept="37vLTw" id="6jpO12Dnw_i" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6jpO12Dnw_5" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="6jpO12Dnw_j" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12Dnw_k" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase8" />
+      <node concept="3cqZAl" id="6jpO12Dnw_n" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12Dnw_o" role="3clF47">
+        <node concept="3J1_TO" id="6jpO12Dnw_p" role="3cqZAp">
+          <node concept="3clFbS" id="6jpO12Dnw_r" role="1zxBo7">
+            <node concept="3cpWs8" id="6jpO12Dnw_s" role="3cqZAp">
+              <node concept="3cpWsn" id="6jpO12Dnw_v" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="2YIFZM" id="6jpO12Dnw_x" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="6jpO12Dnw_y" role="37wK5m">
+                    <property role="Xl_RC" value="package P { alias X for Y; }" />
+                  </node>
+                  <node concept="Xl_RD" id="6jpO12Dnw_z" role="37wK5m">
+                    <property role="Xl_RC" value="MatrixCase8" />
+                  </node>
+                  <node concept="1jxXqW" id="6jpO12Dnw_$" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="6jpO12Dnw__" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6jpO12Dnw_A" role="3cqZAp">
+              <node concept="2YIFZM" id="6jpO12Dnw_C" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="6jpO12Dnw_D" role="37wK5m">
+                  <ref role="3cqZAo" node="6jpO12Dnw_v" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="6jpO12Dnw_E" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="6jpO12Dnw_F" role="1zxBo5">
+            <node concept="XOnhg" id="6jpO12Dnw_J" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="6jpO12Dnw_L" role="1tU5fm">
+                <node concept="3uibUv" id="6jpO12Dnw_N" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6jpO12Dnw_O" role="1zc67A">
+              <node concept="3vlDli" id="6jpO12Dnw_P" role="3cqZAp">
+                <node concept="Xl_RD" id="6jpO12Dnw_S" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: element filter / alias member" />
+                </node>
+                <node concept="2OqwBi" id="6jpO12Dnw_T" role="3tpDZA">
+                  <node concept="37vLTw" id="6jpO12Dnw_W" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6jpO12Dnw_J" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="6jpO12Dnw_X" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12Dnw_Y" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase9" />
+      <node concept="3cqZAl" id="6jpO12DnwA1" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwA2" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwA3" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwA6" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwA8" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwA9" role="37wK5m">
+                <property role="Xl_RC" value="package P { doc /* text */ }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwAa" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase9" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwAb" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwAc" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwAd" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwAf" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwAg" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwA6" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwAh" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwAi" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase10" />
+      <node concept="3cqZAl" id="6jpO12DnwAl" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwAm" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwAn" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwAq" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwAs" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwAt" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwAu" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase10" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwAv" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwAw" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwAx" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwAz" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwA$" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwAq" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwA_" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwAA" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase11" />
+      <node concept="3cqZAl" id="6jpO12DnwAD" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwAE" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwAF" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwAI" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwAK" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwAL" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D; }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwAM" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase11" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwAN" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwAO" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwAP" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwAR" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwAS" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwAI" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwAT" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwAU" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase12" />
+      <node concept="3cqZAl" id="6jpO12DnwAX" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwAY" role="3clF47">
+        <node concept="3J1_TO" id="6jpO12DnwAZ" role="3cqZAp">
+          <node concept="3clFbS" id="6jpO12DnwB1" role="1zxBo7">
+            <node concept="3cpWs8" id="6jpO12DnwB2" role="3cqZAp">
+              <node concept="3cpWsn" id="6jpO12DnwB5" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="2YIFZM" id="6jpO12DnwB7" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="6jpO12DnwB8" role="37wK5m">
+                    <property role="Xl_RC" value="package P { abstract part def D { } }" />
+                  </node>
+                  <node concept="Xl_RD" id="6jpO12DnwB9" role="37wK5m">
+                    <property role="Xl_RC" value="MatrixCase12" />
+                  </node>
+                  <node concept="1jxXqW" id="6jpO12DnwBa" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="6jpO12DnwBb" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6jpO12DnwBc" role="3cqZAp">
+              <node concept="2YIFZM" id="6jpO12DnwBe" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="6jpO12DnwBf" role="37wK5m">
+                  <ref role="3cqZAo" node="6jpO12DnwB5" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="6jpO12DnwBg" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="6jpO12DnwBh" role="1zxBo5">
+            <node concept="XOnhg" id="6jpO12DnwBl" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="6jpO12DnwBn" role="1tU5fm">
+                <node concept="3uibUv" id="6jpO12DnwBp" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6jpO12DnwBq" role="1zc67A">
+              <node concept="3vlDli" id="6jpO12DnwBr" role="3cqZAp">
+                <node concept="Xl_RD" id="6jpO12DnwBu" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: part definition prefix" />
+                </node>
+                <node concept="2OqwBi" id="6jpO12DnwBv" role="3tpDZA">
+                  <node concept="37vLTw" id="6jpO12DnwBy" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6jpO12DnwBl" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="6jpO12DnwBz" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwB$" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase13" />
+      <node concept="3cqZAl" id="6jpO12DnwBB" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwBC" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwBD" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwBG" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwBI" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwBJ" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D :&gt; E { } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwBK" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase13" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwBL" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwBM" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwBN" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwBP" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwBQ" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwBG" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwBR" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwBS" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase14" />
+      <node concept="3cqZAl" id="6jpO12DnwBV" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwBW" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwBX" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwC0" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwC2" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwC3" role="37wK5m">
+                <property role="Xl_RC" value="package P { attribute def A { } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwC4" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase14" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwC5" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwC6" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwC7" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwC9" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwCa" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwC0" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwCb" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwCc" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase15" />
+      <node concept="3cqZAl" id="6jpO12DnwCf" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwCg" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwCh" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwCk" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwCm" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwCn" role="37wK5m">
+                <property role="Xl_RC" value="package P { port def Po { } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwCo" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase15" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwCp" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwCq" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwCr" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwCt" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwCu" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwCk" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwCv" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwCw" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase16" />
+      <node concept="3cqZAl" id="6jpO12DnwCz" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwC$" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwC_" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwCC" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwCE" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwCF" role="37wK5m">
+                <property role="Xl_RC" value="package P { item def I { } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwCG" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase16" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwCH" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwCI" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwCJ" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwCL" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwCM" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwCC" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwCN" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwCO" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase17" />
+      <node concept="3cqZAl" id="6jpO12DnwCR" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwCS" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwCT" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwCW" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwCY" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwCZ" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { part x : D; } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwD0" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase17" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwD1" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwD2" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwD3" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwD5" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwD6" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwCW" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwD7" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwD8" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase18" />
+      <node concept="3cqZAl" id="6jpO12DnwDb" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwDc" role="3clF47">
+        <node concept="3J1_TO" id="6jpO12DnwDd" role="3cqZAp">
+          <node concept="3clFbS" id="6jpO12DnwDf" role="1zxBo7">
+            <node concept="3cpWs8" id="6jpO12DnwDg" role="3cqZAp">
+              <node concept="3cpWsn" id="6jpO12DnwDj" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="2YIFZM" id="6jpO12DnwDl" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="6jpO12DnwDm" role="37wK5m">
+                    <property role="Xl_RC" value="package P { part def D { ref x : D; } }" />
+                  </node>
+                  <node concept="Xl_RD" id="6jpO12DnwDn" role="37wK5m">
+                    <property role="Xl_RC" value="MatrixCase18" />
+                  </node>
+                  <node concept="1jxXqW" id="6jpO12DnwDo" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="6jpO12DnwDp" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6jpO12DnwDq" role="3cqZAp">
+              <node concept="2YIFZM" id="6jpO12DnwDs" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="6jpO12DnwDt" role="37wK5m">
+                  <ref role="3cqZAo" node="6jpO12DnwDj" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="6jpO12DnwDu" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="6jpO12DnwDv" role="1zxBo5">
+            <node concept="XOnhg" id="6jpO12DnwDz" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="6jpO12DnwD_" role="1tU5fm">
+                <node concept="3uibUv" id="6jpO12DnwDB" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6jpO12DnwDC" role="1zc67A">
+              <node concept="3vlDli" id="6jpO12DnwDD" role="3cqZAp">
+                <node concept="Xl_RD" id="6jpO12DnwDG" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: non-attribute non-occurrence usage element" />
+                </node>
+                <node concept="2OqwBi" id="6jpO12DnwDH" role="3tpDZA">
+                  <node concept="37vLTw" id="6jpO12DnwDK" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6jpO12DnwDz" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="6jpO12DnwDL" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwDM" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase19" />
+      <node concept="3cqZAl" id="6jpO12DnwDP" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwDQ" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwDR" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwDU" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwDW" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwDX" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { part x : D[0..*]; } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwDY" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase19" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwDZ" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwE0" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwE1" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwE3" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwE4" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwDU" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwE5" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwE6" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase20" />
+      <node concept="3cqZAl" id="6jpO12DnwE9" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwEa" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwEb" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwEe" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwEg" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwEh" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { part x : D :&gt; y; } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwEi" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase20" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwEj" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwEk" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwEl" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwEn" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwEo" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwEe" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwEp" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwEq" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase21" />
+      <node concept="3cqZAl" id="6jpO12DnwEt" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwEu" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwEv" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwEy" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwE$" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwE_" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { part x : D :&gt;&gt; y; } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwEA" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase21" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwEB" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwEC" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwED" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwEF" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwEG" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwEy" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwEH" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwEI" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase22" />
+      <node concept="3cqZAl" id="6jpO12DnwEL" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwEM" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwEN" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwEQ" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwES" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwET" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { port p : D; } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwEU" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase22" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwEV" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwEW" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwEX" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwEZ" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwF0" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwEQ" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwF1" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwF2" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase23" />
+      <node concept="3cqZAl" id="6jpO12DnwF5" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwF6" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwF7" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwFa" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwFc" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwFd" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { attribute a : D; } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwFe" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase23" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwFf" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwFg" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwFh" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwFj" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwFk" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwFa" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwFl" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwFm" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase24" />
+      <node concept="3cqZAl" id="6jpO12DnwFp" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwFq" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwFr" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwFu" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwFw" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwFx" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { doc /* text */ } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwFy" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase24" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwFz" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwF$" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwF_" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwFB" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwFC" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwFu" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwFD" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwFE" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase25" />
+      <node concept="3cqZAl" id="6jpO12DnwFH" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwFI" role="3clF47">
+        <node concept="3cpWs8" id="6jpO12DnwFJ" role="3cqZAp">
+          <node concept="3cpWsn" id="6jpO12DnwFM" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6jpO12DnwFO" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6jpO12DnwFP" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { attribute a : D = 3; } }" />
+              </node>
+              <node concept="Xl_RD" id="6jpO12DnwFQ" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase25" />
+              </node>
+              <node concept="1jxXqW" id="6jpO12DnwFR" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6jpO12DnwFS" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12DnwFT" role="3cqZAp">
+          <node concept="2YIFZM" id="6jpO12DnwFV" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6jpO12DnwFW" role="37wK5m">
+              <ref role="3cqZAo" node="6jpO12DnwFM" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6jpO12DnwFX" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12DnwFY" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase26" />
+      <node concept="3cqZAl" id="6jpO12DnwG1" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12DnwG2" role="3clF47">
+        <node concept="3J1_TO" id="6jpO12DnwG3" role="3cqZAp">
+          <node concept="3clFbS" id="6jpO12DnwG5" role="1zxBo7">
+            <node concept="3cpWs8" id="6jpO12DnwG6" role="3cqZAp">
+              <node concept="3cpWsn" id="6jpO12DnwG9" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="2YIFZM" id="6jpO12DnwGb" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="6jpO12DnwGc" role="37wK5m">
+                    <property role="Xl_RC" value="package P { part def D { abstract port p : D[0..*] :&gt; q; } }" />
+                  </node>
+                  <node concept="Xl_RD" id="6jpO12DnwGd" role="37wK5m">
+                    <property role="Xl_RC" value="MatrixCase26" />
+                  </node>
+                  <node concept="1jxXqW" id="6jpO12DnwGe" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="6jpO12DnwGf" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3clFbF" id="6jpO12DnwGg" role="3cqZAp">
+              <node concept="2YIFZM" id="6jpO12DnwGi" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="6jpO12DnwGj" role="37wK5m">
+                  <ref role="3cqZAo" node="6jpO12DnwG9" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="6jpO12DnwGk" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="6jpO12DnwGl" role="1zxBo5">
+            <node concept="XOnhg" id="6jpO12DnwGp" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="6jpO12DnwGr" role="1tU5fm">
+                <node concept="3uibUv" id="6jpO12DnwGt" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6jpO12DnwGu" role="1zc67A">
+              <node concept="3vlDli" id="6jpO12DnwGv" role="3cqZAp">
+                <node concept="Xl_RD" id="6jpO12DnwGy" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: derived/abstract/variation/constant usage prefix" />
+                </node>
+                <node concept="2OqwBi" id="6jpO12DnwGz" role="3tpDZA">
+                  <node concept="37vLTw" id="6jpO12DnwGA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6jpO12DnwGp" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="6jpO12DnwGB" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>
