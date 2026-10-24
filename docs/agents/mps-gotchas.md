@@ -13,6 +13,13 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
 
+## Console code cannot see the IDE platform or `System.out`; `#callAction` only reaches MPS-modelled actions (2026-10-24)
+- In a console command authored as Java text (`parse_java_and_insert`, `insert.mode:"console"`), `com.intellij.openapi.project.ProjectManager`, `…actionSystem.ActionManager`, `jetbrains.mps.ide.project.ProjectHelper` and `System.out` do **not** resolve (`UnknownDotCall`, or "Not a legal statement" for the `println` statement), while `org.jetbrains.mps.openapi.*`, `jetbrains.mps.project.AbstractModule`, `jetbrains.mps.smodel.MPSModuleRepository`, `jetbrains.mps.vfs.IFile` and the JDK do. So reach the project through the repository (`MPSModuleRepository.getInstance()`, deprecated but working) and identify modules by `AbstractModule.getDescriptorFile().getPath()`, instead of through the IntelliJ project.
+- `#callAction` (`CallActionExpression`) has an `action` reference to a `jetbrains.mps.lang.plugin.ActionDeclaration` **node**, so it can invoke only actions modelled in MPS — not a platform action registered in plugin XML, e.g. `ForceSaveAll`.
+- Console-query syntax cannot be mixed into Java text: `#models<project>` inside a `parse_java_and_insert` snippet fails with "Internal error while Parsing Java and inserting nodes". Build such a command as a JSON blueprint, or stay in Java.
+- Verified against MPS 2026.1 while writing the force-save recipe (`mps-mcp-recipes.md`).
+
+
 
 
 ## After editing a language aspect model, `MAKE` the language explicitly — a test run does not regenerate a language it considers up to date (2026-10-24)

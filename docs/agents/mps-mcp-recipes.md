@@ -66,3 +66,28 @@ Prefer plain MCP edits (`scaffold_editor`, `update_node`, `parse_java_and_insert
   (find one with `FIND_INSTANCES`, print it deep) instead of guessing concept names or roles. Use `search_concepts` for concept references.
 - Validate right after inserting (`check_root_node_problems`); the first insert is where wrong role names, missing mandatory children and bad references show up.
 - Regenerate rather than patch: the script is the source of truth for the tree, so delete the root and re-insert after changing it — but remember ids change.
+
+## Recipe: flush pending model saves ("Force Save All") from the console
+Model edits made through MCP are saved lazily: MPS re-serializes a model (adds `resolve="…"` hints and similar) only when it next saves it, so one iteration's change set can spill into the next rebuild. The IDE action *File ▸ Force Save All* is action id `ForceSaveAll` (`jetbrains.mps.ide.actions.ForceSaveAll_Action`), which resolves the action's modules and calls `AbstractModule.forceSaveRecursively()` → `EditableSModel.save()` per model. The console can do the same.
+
+Insert with `parse_java_and_insert` — `featureKind: "STATEMENTS"`, `insert: {"mode": "console"}`, Java text (not the `#callAction` command; see the gotcha) — then `mps_mcp_run_console_command`:
+
+```java
+final org.jetbrains.mps.openapi.module.SRepository repo = jetbrains.mps.smodel.MPSModuleRepository.getInstance();
+final String root = "/absolute/path/of/the/MPS/project/";
+int n = 0;
+for (org.jetbrains.mps.openapi.module.SModule mod : repo.getModules()) {
+  if (mod instanceof jetbrains.mps.project.AbstractModule) {
+    final jetbrains.mps.project.AbstractModule am = (jetbrains.mps.project.AbstractModule) mod;
+    if (am.getDescriptorFile().getPath().startsWith(root)) {
+      am.forceSaveRecursively();
+      n++;
+    }
+  }
+}
+```
+
+- **Console-native variant (for a human typing at the console):** use the console's own project expression instead of the repository plus a path filter — `#project.getRepository()` (`#project` is `jetbrains.mps.console.base.ProjectExpression`) and iterate that repository's modules. It needs no path prefix, so it cannot touch another project's modules. An *agent* cannot author this variant through `parse_java_and_insert`: the JavaParser rejects console syntax (`#project`/`#models<…>` → "Internal error while Parsing Java and inserting nodes"), and the JSON-blueprint route would have to reference the stub `getRepository()`/`getModules()` method declarations by hand. Hence the Java snippet above for automation, the `#project` form for the keyboard.
+- **Preconditions:** the project is open in MPS. Nothing else; the console runs the statement in its own write command, so no `read action`/`command` wrapper is needed.
+- **Verify:** `git status --short` before and after must be identical (that is the point — it is idempotent on an already saved tree); model mtimes under the project change on the first run after edits and not on later runs. (The first proof that it removes real serialization noise is still pending: it was shown idempotent on a clean tree, not yet repairing stale metadata. Check the first real use against `git status`.)
+- **Known limits:** (1) `root` must be the **project directory**, not the workspace — the module repository also holds modules from other projects in the same checkout, and a wider prefix re-serializes those too (observed once: an unrelated `.msd` came back with its attributes reordered; reverted). (2) It flushes *pending* saves; it does not canonicalize models MPS considers clean, so a second run writes nothing. (3) `MPSModuleRepository.getInstance()` is deprecated (a console warning, no effect). (4) `System.out` and the IDE platform classes do not resolve in console code, hence the path-prefix filter (see the gotcha on console scope). (5) The console input is cleared after execution — re-insert the command for every run. (6) `run_console_command` returns immediately ("triggered execution"); the saving is asynchronous and finished within the 10 s waited here for 71 models (plus 15 `.msd` files).

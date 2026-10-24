@@ -47,11 +47,11 @@ padding is not. Then stop and wait for the architect's refinement.
    deliberately broken variant, then restore it. Run the relevant suites.
 4. **Force-save, then check the change set.** MPS re-serializes models lazily (for
    example it adds `resolve="..."` hints to references), so unrelated models show up
-   as modified. After the last rebuild and test run, trigger *File -> Force Save All*
-   in MPS, so that all serialization metadata is rewritten now and the change set
-   belongs only to this iteration. Use whatever tool your harness has for invoking
-   the IDE action; if none can, ask the user to do it before you report and say so in
-   the result. Then run `git status --short` and `git diff --stat` and list every
+   as modified. After the last rebuild and test run, flush all pending saves so that the
+   change set belongs only to this iteration: run the console recipe "flush pending
+   model saves (Force Save All)" in `docs/agents/mps-mcp-recipes.md` (prefix = the
+   project directory, never the workspace root). If it fails, ask the user to run
+   *File -> Force Save All* and say so in the result. Then run `git status --short` and `git diff --stat` and list every
    modified file in the result, each marked as intended change or as
    serialization-only noise (with the evidence). Never claim "only file X changed"
    without having run these commands.
