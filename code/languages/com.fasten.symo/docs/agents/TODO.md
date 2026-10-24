@@ -12,12 +12,13 @@ time** and were not re-checked afterwards. Note also that those older counts (e.
 "baselan 47/47") counted **test methods**, while the numbers below count **test classes**, so the two
 are not comparable. Current state:
 
-- **SysML v2 importer** (`test.com.symo.sysmlv2.baselan.importer`): `_010_smoke_test@tests` holds **28
-  roots** — 26 test classes (25 `NodesTestCase` + 1 `BTestCase`) and 2 helper classes (`TestUtils`,
-  `RoundtripTestUtils`). The 25 `NodesTestCase`s are green, run per class in iterations 002 and 003
-  (003: three consecutive passes over all 25, plus 20 runs of `_120_SubsettingRedefinitionTest`). The
-  `BTestCase` `_010_test_sysmlv2_toolchain_Test` does **not** execute under the suite configuration —
-  why is unverified (audit finding F-16, unfixed).
+- **SysML v2 importer** (`test.com.symo.sysmlv2.baselan.importer`): `_010_smoke_test@tests` holds **27
+  roots** — **25 test classes** (`NodesTestCase`) and 2 helper classes (`TestUtils`,
+  `RoundtripTestUtils`). All 25 green, run per class after the iteration-007 deletion (they were green in
+  iterations 002, 003 and 005 as well). The former `BTestCase` `_010_test_sysmlv2_toolchain_Test` was
+  **removed** in iteration 007: it only asserted that an *empty* input parses without syntax errors, the
+  25 round-trip tests go through the same lexer and parser, and the suite had not been executing it (why it
+  was skipped stayed undetermined — see the audit's F-16).
 - **SysML v2 language** (`test.com.symo.sysmlv2.baselan`): **36 test classes** (7 scope + 26 editor + 3
   checking-rule roots), green: 36/36 per class in iteration 001, and again 36/36 in iteration 005 (before and after the two
   renames), i.e. after iteration 002's change to the behavior and textGen aspects.
