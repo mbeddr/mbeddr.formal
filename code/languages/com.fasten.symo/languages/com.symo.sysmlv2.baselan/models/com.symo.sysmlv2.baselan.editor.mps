@@ -1352,7 +1352,7 @@
           </node>
           <node concept="3F0ifn" id="6coPuU2Zrh9" role="3EZMnx">
             <property role="3F0ifm" value="~" />
-            <ref role="34QXea" node="6coPuU356bH" resolve="portUsageConjugatedKeymap" />
+            <ref role="34QXea" node="6coPuU356bH" resolve="SysMLv2PortUsage_ConjugatedKeymap" />
             <node concept="pkWqt" id="6coPuU2Zrha" role="pqm2j">
               <node concept="3clFbS" id="6coPuU2Zrhc" role="2VODD2">
                 <node concept="3cpWs6" id="6coPuU2Zrhd" role="3cqZAp">
@@ -1480,7 +1480,7 @@
     </node>
   </node>
   <node concept="325Ffw" id="6coPuU356bH">
-    <property role="TrG5h" value="portUsageConjugatedKeymap" />
+    <property role="TrG5h" value="SysMLv2PortUsage_ConjugatedKeymap" />
     <property role="3GE5qa" value="part.port" />
     <ref role="1chiOs" to="5rf1:6coPuU2Tg1T" resolve="SysMLv2PortUsage" />
     <node concept="2PxR9H" id="6coPuU356bI" role="2QnnpI">

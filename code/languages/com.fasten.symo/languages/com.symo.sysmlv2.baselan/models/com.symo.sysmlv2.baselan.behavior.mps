@@ -527,7 +527,7 @@
     </node>
   </node>
   <node concept="13h7C7" id="6coPuU2TFPE">
-    <property role="TrG5h" value="SysMLv2PartDefinitionRef_Behavior" />
+    <property role="TrG5h" value="SysMLv2PortDefinitionRef_Behavior" />
     <property role="3GE5qa" value="part.port" />
     <ref role="13h7C2" to="5rf1:6coPuU2Tg1S" resolve="SysMLv2PortDefinitionRef" />
     <node concept="13hLZK" id="6coPuU2TFPH" role="13h7CW">
