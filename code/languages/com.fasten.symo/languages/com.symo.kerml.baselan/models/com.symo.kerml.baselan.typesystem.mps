@@ -34,6 +34,9 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068580320020" name="jetbrains.mps.baseLanguage.structure.IntegerConstant" flags="nn" index="3cmrfG">
+        <property id="1068580320021" name="value" index="3cmrfH" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -83,6 +86,7 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1162935959151" name="jetbrains.mps.baseLanguage.collections.structure.GetSizeOperation" flags="nn" index="34oBXx" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
     </language>
   </registry>
@@ -378,6 +382,43 @@
     <node concept="1YaCAy" id="5ipQkCKBZQD" role="1YuTPh">
       <property role="TrG5h" value="disjoining" />
       <ref role="1YaFvo" to="rb60:5ipQkCJrYIC" resolve="KerMLDisjoining" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="2YEARL1s1ka">
+    <property role="TrG5h" value="check_FeatureChainingFeatureNotOne" />
+    <node concept="3clFbS" id="2YEARL1s1kd" role="18ibNy">
+      <node concept="3clFbJ" id="2YEARL1s1ke" role="3cqZAp">
+        <node concept="3clFbC" id="2YEARL1s1kh" role="3clFbw">
+          <node concept="2OqwBi" id="2YEARL1s1kk" role="3uHU7B">
+            <node concept="2OqwBi" id="2YEARL1s1kn" role="2Oq$k0">
+              <node concept="1YBJjd" id="2YEARL1s1kq" role="2Oq$k0">
+                <ref role="1YBMHb" node="2YEARL1s1k$" resolve="feature" />
+              </node>
+              <node concept="3Tsc0h" id="2YEARL1s1kr" role="2OqNvi">
+                <ref role="3TtcxE" to="rb60:7JYC9rWoScR" resolve="ownedFeatureChaining" />
+              </node>
+            </node>
+            <node concept="34oBXx" id="2YEARL1s1ks" role="2OqNvi" />
+          </node>
+          <node concept="3cmrfG" id="2YEARL1s1kt" role="3uHU7w">
+            <property role="3cmrfH" value="1" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="2YEARL1s1ku" role="3clFbx">
+          <node concept="2MkqsV" id="2YEARL1s1kv" role="3cqZAp">
+            <node concept="Xl_RD" id="2YEARL1s1ky" role="2MkJ7o">
+              <property role="Xl_RC" value="Feature cannot have exactly one feature chaining: give none or at least two (KerML constraint validateFeatureChainingFeatureNotOne)" />
+            </node>
+            <node concept="1YBJjd" id="2YEARL1s1kz" role="1urrMF">
+              <ref role="1YBMHb" node="2YEARL1s1k$" resolve="feature" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="2YEARL1s1k$" role="1YuTPh">
+      <property role="TrG5h" value="feature" />
+      <ref role="1YaFvo" to="rb60:7JYC9rVjis6" resolve="KerMLFeature" />
     </node>
   </node>
 </model>

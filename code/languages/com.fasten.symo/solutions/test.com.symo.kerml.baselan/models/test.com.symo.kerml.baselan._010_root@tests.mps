@@ -10,6 +10,7 @@
     <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="2" />
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="6" />
+    <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare" version="0" />
   </languages>
   <imports>
     <import index="efol" ref="r:8aac8454-5d13-4d6f-9f26-01f728a66f29(com.symo.kerml.baselan.behavior)" />
@@ -25,6 +26,9 @@
       </concept>
       <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
         <child id="1215604436604" name="nodeOperations" index="7EUXB" />
+      </concept>
+      <concept id="1215607067978" name="jetbrains.mps.lang.test.structure.CheckNodeForErrorMessagesOperation" flags="ng" index="7OXhh">
+        <property id="3743352646565420194" name="includeSelf" index="GvXf4" />
       </concept>
       <concept id="511191073233700873" name="jetbrains.mps.lang.test.structure.ScopesTest" flags="ng" index="2rqxmr">
         <reference id="5449224527592117654" name="checkingReference" index="1BTHP0" />
@@ -229,6 +233,9 @@
         <reference id="6096142483269348268" name="disjoiningType" index="1VXzbA" />
       </concept>
       <concept id="6096142483269348265" name="com.symo.kerml.baselan.structure.KerMLUnioning" flags="ng" index="1VXzbz" />
+    </language>
+    <language id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare">
+      <concept id="756135271275943220" name="de.itemis.mps.compare.structure.AssertNodeEquals" flags="ng" index="3GXo0L" />
     </language>
     <language id="f61473f9-130f-42f6-b98d-6c438812c2f6" name="jetbrains.mps.baseLanguage.unitTest">
       <concept id="8427750732757990717" name="jetbrains.mps.baseLanguage.unitTest.structure.BinaryAssert" flags="nn" index="3tpDYu">
@@ -3945,6 +3952,9 @@
           <node concept="20GSug" id="7JYC9rWuV2r" role="21vIyQ">
             <property role="20tdI4" value="true" />
             <property role="TrG5h" value="power" />
+            <node concept="3xLA65" id="2YEARL1qQ2G" role="lGtFl">
+              <property role="TrG5h" value="power" />
+            </node>
           </node>
           <node concept="20GSug" id="7JYC9rWuV2s" role="21vIyQ">
             <property role="20tdI4" value="true" />
@@ -4064,6 +4074,60 @@
               <node concept="3xONca" id="7JYC9rWuV3b" role="25WWJ7">
                 <ref role="3xOPvv" node="7JYC9rWuV2y" resolve="eng" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2YEARL1qQ3q" role="1SL9yI">
+      <property role="TrG5h" value="testIsOwnedChainIsFalseForPlainFeature" />
+      <node concept="3cqZAl" id="2YEARL1qQ3t" role="3clF45" />
+      <node concept="3clFbS" id="2YEARL1qQ3u" role="3clF47">
+        <node concept="3vFxKo" id="2YEARL1rIvT" role="3cqZAp">
+          <node concept="2OqwBi" id="2YEARL1rIvV" role="3vFALc">
+            <node concept="3xONca" id="2YEARL1rIvY" role="2Oq$k0">
+              <ref role="3xOPvv" node="7JYC9rWuV2y" resolve="eng" />
+            </node>
+            <node concept="3zqWPK" id="2YEARL1rIvZ" role="2OqNvi">
+              <ref role="37wK5l" to="efol:5ipQkCKWtxI" resolve="isOwnedChain" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2YEARL1qQ5G" role="1SL9yI">
+      <property role="TrG5h" value="testChainEndFeatureIsTheLastChainedFeature" />
+      <node concept="3cqZAl" id="2YEARL1qQ5J" role="3clF45" />
+      <node concept="3clFbS" id="2YEARL1qQ5K" role="3clF47">
+        <node concept="3GXo0L" id="2YEARL1qQ5L" role="3cqZAp">
+          <node concept="3xONca" id="2YEARL1qQ5O" role="3tpDZB">
+            <ref role="3xOPvv" node="2YEARL1qQ2G" resolve="power" />
+          </node>
+          <node concept="2OqwBi" id="2YEARL1qQ5P" role="3tpDZA">
+            <node concept="3xONca" id="2YEARL1qQ5S" role="2Oq$k0">
+              <ref role="3xOPvv" node="7JYC9rWuV2H" resolve="veng" />
+            </node>
+            <node concept="3zqWPK" id="2YEARL1qQ5T" role="2OqNvi">
+              <ref role="37wK5l" to="efol:5ipQkCKWtz4" resolve="chainEndFeature" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2YEARL1qQ62" role="1SL9yI">
+      <property role="TrG5h" value="testChainTextOfTwoStepChain" />
+      <node concept="3cqZAl" id="2YEARL1qQ65" role="3clF45" />
+      <node concept="3clFbS" id="2YEARL1qQ66" role="3clF47">
+        <node concept="3vlDli" id="2YEARL1qQ67" role="3cqZAp">
+          <node concept="Xl_RD" id="2YEARL1qQ6a" role="3tpDZB">
+            <property role="Xl_RC" value="Lib::Car::engine.power" />
+          </node>
+          <node concept="2OqwBi" id="2YEARL1qQ6b" role="3tpDZA">
+            <node concept="3xONca" id="2YEARL1qQ6e" role="2Oq$k0">
+              <ref role="3xOPvv" node="7JYC9rWuV2H" resolve="veng" />
+            </node>
+            <node concept="3zqWPK" id="2YEARL1qQ6f" role="2OqNvi">
+              <ref role="37wK5l" to="efol:5ipQkCL8LF3" resolve="chainText" />
             </node>
           </node>
         </node>
@@ -5219,6 +5283,238 @@
               <node concept="3xONca" id="5ipQkCKUcTo" role="25WWJ7">
                 <ref role="3xOPvv" node="5ipQkCKUcIR" resolve="a" />
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="2YEARL1xK5b">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_420_ChainLengthCheck" />
+    <node concept="1qefOq" id="2YEARL1xK5c" role="1SKRRt">
+      <node concept="2jMsK_" id="2YEARL1xK5e" role="1qenE9">
+        <property role="TrG5h" value="Chain" />
+        <node concept="20Nsyr" id="2YEARL1xK5f" role="21vIyQ">
+          <property role="TrG5h" value="L" />
+          <node concept="20GSug" id="2YEARL1xK5g" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="a" />
+            <node concept="20GSuh" id="2YEARL1xK6u" role="214t28">
+              <ref role="214t29" node="2YEARL1xK6s" resolve="T" />
+            </node>
+          </node>
+          <node concept="20GSug" id="2YEARL1xK5h" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="b" />
+          </node>
+          <node concept="20GSug" id="2YEARL1xK5i" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="c" />
+          </node>
+        </node>
+        <node concept="20Nsyr" id="2YEARL1xK5j" role="21vIyQ">
+          <property role="TrG5h" value="C" />
+          <node concept="20GSug" id="2YEARL1xK5k" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="plain" />
+          </node>
+          <node concept="20GSug" id="2YEARL1xK5l" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="twoSteps" />
+            <node concept="27BsWE" id="2YEARL1xK5m" role="27Biex">
+              <ref role="27BsWF" node="2YEARL1xK5g" resolve="a" />
+            </node>
+            <node concept="27BsWE" id="2YEARL1xK5n" role="27Biex">
+              <ref role="27BsWF" node="2YEARL1xK6t" resolve="b" />
+            </node>
+          </node>
+          <node concept="20GSug" id="2YEARL1xK5o" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="oneStep" />
+            <node concept="27BsWE" id="2YEARL1xK5p" role="27Biex">
+              <ref role="27BsWF" node="2YEARL1xK5g" resolve="a" />
+            </node>
+            <node concept="7CXmI" id="2YEARL1xK5q" role="lGtFl">
+              <node concept="1TM$A" id="2YEARL1y2Xh" role="7EUXB">
+                <node concept="2PYRI3" id="2YEARL1y2Xi" role="3lydEf">
+                  <ref role="39XzEq" to="gqlq:2YEARL1s1kv" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="7CXmI" id="2YEARL1xK5u" role="lGtFl">
+          <node concept="7OXhh" id="2YEARL1xK5v" role="7EUXB">
+            <property role="GvXf4" value="true" />
+            <property role="TrG5h" value="test_FeatureChainingFeatureNotOne" />
+          </node>
+        </node>
+        <node concept="20Nsyr" id="2YEARL1xK6s" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+          <node concept="20GSug" id="2YEARL1xK6t" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="b" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="2YEARL1Jz_l">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_430_OwnedChainAccessors" />
+    <node concept="1qefOq" id="2YEARL1Jz_m" role="1SKRRt">
+      <node concept="2jMsK_" id="2YEARL1Jz_o" role="1qenE9">
+        <property role="TrG5h" value="Owning" />
+        <node concept="20Nsyr" id="2YEARL1Jz_p" role="21vIyQ">
+          <property role="TrG5h" value="C" />
+          <node concept="20GSug" id="2YEARL1Jz_q" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="a" />
+            <node concept="20GSuh" id="2YEARL1Jz_r" role="214t28">
+              <ref role="214t29" node="2YEARL1Jz_z" resolve="T" />
+            </node>
+          </node>
+          <node concept="20GSug" id="2YEARL1Jz_s" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="x" />
+            <node concept="20GSuu" id="2YEARL1Jz_t" role="214t28">
+              <node concept="20GSug" id="2YEARL1Jz_u" role="1$__Aa">
+                <property role="20tdI4" value="true" />
+                <node concept="27BsWE" id="2YEARL1Jz_v" role="27Biex">
+                  <ref role="27BsWF" node="2YEARL1Jz_q" resolve="a" />
+                </node>
+                <node concept="27BsWE" id="2YEARL1Jz_w" role="27Biex">
+                  <ref role="27BsWF" node="2YEARL1Jz_$" resolve="b" />
+                </node>
+                <node concept="27BsWE" id="2YEARL1Jz_x" role="27Biex">
+                  <ref role="27BsWF" node="2YEARL1Jz_B" resolve="c" />
+                </node>
+                <node concept="3xLA65" id="2YEARL1Jz_y" role="lGtFl">
+                  <property role="TrG5h" value="ownedChain" />
+                </node>
+              </node>
+              <node concept="3xLA65" id="2YEARL1KtK7" role="lGtFl">
+                <property role="TrG5h" value="sub" />
+              </node>
+            </node>
+          </node>
+          <node concept="20GSug" id="6jpO12$la1V" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="xOne" />
+            <node concept="20GSuu" id="6jpO12$la1W" role="214t28">
+              <node concept="20GSug" id="6jpO12$la1X" role="1$__Aa">
+                <property role="20tdI4" value="true" />
+                <node concept="27BsWE" id="6jpO12$la1Y" role="27Biex">
+                  <ref role="27BsWF" node="2YEARL1Jz_q" resolve="a" />
+                </node>
+                <node concept="7CXmI" id="6jpO12$la1Z" role="lGtFl">
+                  <node concept="1TM$A" id="6jpO12$la20" role="7EUXB">
+                    <node concept="2PYRI3" id="6jpO12$la21" role="3lydEf">
+                      <ref role="39XzEq" to="gqlq:2YEARL1s1kv" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="20Nsyr" id="2YEARL1Jz_z" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+          <node concept="20GSug" id="2YEARL1Jz_$" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="b" />
+            <node concept="20GSuh" id="2YEARL1Jz__" role="214t28">
+              <ref role="214t29" node="2YEARL1Jz_A" resolve="U" />
+            </node>
+          </node>
+        </node>
+        <node concept="20Nsyr" id="2YEARL1Jz_A" role="21vIyQ">
+          <property role="TrG5h" value="U" />
+          <node concept="20GSug" id="2YEARL1Jz_B" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="c" />
+            <node concept="3xLA65" id="2YEARL1Jz_C" role="lGtFl">
+              <property role="TrG5h" value="chainEnd" />
+            </node>
+          </node>
+        </node>
+        <node concept="7CXmI" id="6jpO12$la22" role="lGtFl">
+          <node concept="7OXhh" id="6jpO12$la23" role="7EUXB">
+            <property role="GvXf4" value="true" />
+            <property role="TrG5h" value="test_OneStepOwnedChainIsReported" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2YEARL1Jz_D" role="1SL9yI">
+      <property role="TrG5h" value="testIsOwnedChainIsTrueForRelationshipOwnedChain" />
+      <node concept="3cqZAl" id="2YEARL1Jz_G" role="3clF45" />
+      <node concept="3clFbS" id="2YEARL1Jz_H" role="3clF47">
+        <node concept="3vwNmj" id="2YEARL1Ka_w" role="3cqZAp">
+          <node concept="2OqwBi" id="2YEARL1Ka_y" role="3vwVQn">
+            <node concept="3xONca" id="2YEARL1Ka__" role="2Oq$k0">
+              <ref role="3xOPvv" node="2YEARL1Jz_y" resolve="ownedChain" />
+            </node>
+            <node concept="3zqWPK" id="2YEARL1Ka_A" role="2OqNvi">
+              <ref role="37wK5l" to="efol:5ipQkCKWtxI" resolve="isOwnedChain" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2YEARL1Jz_P" role="1SL9yI">
+      <property role="TrG5h" value="testChainEndFeatureOfThreeStepOwnedChain" />
+      <node concept="3cqZAl" id="2YEARL1Jz_S" role="3clF45" />
+      <node concept="3clFbS" id="2YEARL1Jz_T" role="3clF47">
+        <node concept="3GXo0L" id="2YEARL1Jz_U" role="3cqZAp">
+          <node concept="3xONca" id="2YEARL1Jz_X" role="3tpDZB">
+            <ref role="3xOPvv" node="2YEARL1Jz_C" resolve="chainEnd" />
+          </node>
+          <node concept="2OqwBi" id="2YEARL1Jz_Y" role="3tpDZA">
+            <node concept="3xONca" id="2YEARL1JzA1" role="2Oq$k0">
+              <ref role="3xOPvv" node="2YEARL1Jz_y" resolve="ownedChain" />
+            </node>
+            <node concept="3zqWPK" id="2YEARL1JzA2" role="2OqNvi">
+              <ref role="37wK5l" to="efol:5ipQkCKWtz4" resolve="chainEndFeature" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2YEARL1JzA3" role="1SL9yI">
+      <property role="TrG5h" value="testChainTextOfThreeStepOwnedChain" />
+      <node concept="3cqZAl" id="2YEARL1JzA6" role="3clF45" />
+      <node concept="3clFbS" id="2YEARL1JzA7" role="3clF47">
+        <node concept="3vlDli" id="2YEARL1JzA8" role="3cqZAp">
+          <node concept="Xl_RD" id="2YEARL1JzAb" role="3tpDZB">
+            <property role="Xl_RC" value="Owning::C::a.b.c" />
+          </node>
+          <node concept="2OqwBi" id="2YEARL1JzAc" role="3tpDZA">
+            <node concept="3xONca" id="2YEARL1JzAf" role="2Oq$k0">
+              <ref role="3xOPvv" node="2YEARL1Jz_y" resolve="ownedChain" />
+            </node>
+            <node concept="3zqWPK" id="2YEARL1JzAg" role="2OqNvi">
+              <ref role="37wK5l" to="efol:5ipQkCL8LF3" resolve="chainText" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="2YEARL1KtK8" role="1SL9yI">
+      <property role="TrG5h" value="testSubsettingEndShowsChainText" />
+      <node concept="3cqZAl" id="2YEARL1KtKb" role="3clF45" />
+      <node concept="3clFbS" id="2YEARL1KtKc" role="3clF47">
+        <node concept="3vlDli" id="2YEARL1KtKd" role="3cqZAp">
+          <node concept="Xl_RD" id="2YEARL1KtKg" role="3tpDZB">
+            <property role="Xl_RC" value="Owning::C::a.b.c" />
+          </node>
+          <node concept="2OqwBi" id="2YEARL1KtKh" role="3tpDZA">
+            <node concept="3xONca" id="2YEARL1KtKk" role="2Oq$k0">
+              <ref role="3xOPvv" node="2YEARL1KtK7" resolve="sub" />
+            </node>
+            <node concept="3zqWPK" id="2YEARL1KtKl" role="2OqNvi">
+              <ref role="37wK5l" to="efol:5ipQkCL8NDG" resolve="generalText" />
             </node>
           </node>
         </node>
