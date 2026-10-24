@@ -49,22 +49,27 @@ the result and questions files, and in the archive directory name.
 4. After approval, set `Status: APPROVED`, tell the user to launch the developer, and **start watching** the
    developer's two files in the iteration directory (a background monitor that reports when
    `developer2architect_work_result.md` or `developer2architect_current_iteration_questions.md` appears or
-   changes; re-arm it when it expires). When it fires, review (step 5 or 6) without waiting for the user to say
-   "developer finished", and report to the user. Automation covers the hand-off only: the user's gates are
-   unchanged. Never accept, archive, commit, approve an order or open the next iteration on your own.
-5. **When invoked again**, read the developer's questions and challenges first. For
-   each one, answer in a `## Clarifications (round N)` section at the top of the
-   order and correct the steps, or say you agree with the challenge and change the
-   plan, or say you disagree and why. If you and the developer still disagree, or the
-   change affects scope, set `Status: IN DISCUSSION` and put the matter to the user.
-   Never only in chat.
-6. **Review the result** against the acceptance criteria and report to the user:
-   accepted, rework needed, or follow-up. Cross-check the key claims yourself, in
+   changes; re-arm it when it expires, and keep it armed until the user has accepted the result). The developer
+   polls your order file the whole time, so every answer you write there reaches it without the user. When the
+   monitor fires, act at once (step 5 or 6) and report to the user in a few lines; never wait for "developer
+   finished". The user's only gates are: scope, order approval, result acceptance and commit. Never accept,
+   archive, commit, approve an order or open the next iteration on your own.
+5. **On a question or challenge**, read the questions file first. For each entry, answer in a
+   `## Clarifications (round N)` section at the top of the order (newest first) and correct the steps, or say
+   you agree with the challenge and change the plan, or say you disagree and why. Keep `Status: APPROVED` and
+   continue; the developer picks the round up by itself. If you and the developer still disagree, or the change
+   affects scope, set `Status: IN DISCUSSION` and put the matter to the user. Never only in chat.
+6. **Review the result** against the acceptance criteria. Cross-check the key claims yourself, in
    particular `git status` / `git diff --stat` against the result's list of modified
    files (the developer force-saves all models first, so every remaining file must be
    an intended change). Also triage the developer's unsolicited
-   observations: act on, schedule, or drop, with a reason, and tell the user.
-7. When the user accepts, move the finished files to `archive/NNN-<slice>/` and
+   observations: act on, schedule, or drop, with a reason.
+   - **Rework needed, inside the approved scope:** write a `## Clarifications (round N)` section that names
+     exactly what to redo and how it is checked, keep `Status: APPROVED`, and tell the user in one or two lines.
+     No user step is needed; the developer reworks by itself. A rework that changes the scope is a user decision
+     (`IN DISCUSSION`).
+   - **Acceptable:** report that it is ready for the user's acceptance. Do not archive before the user accepts.
+7. When the user accepts, set `Status: DONE` (this stops the developer's polling), move the finished files to `archive/NNN-<slice>/` and
    update the project plan.
 
 ## Principles

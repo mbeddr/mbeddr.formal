@@ -19,22 +19,26 @@ file below and in the archive directory name.
 1. **Scope gate.** Architect proposes the goal and scope in chat; the user says go.
 2. Architect writes the order, `Status: DRAFT`, and stops.
 3. **Order gate.** User approves; architect sets `Status: APPROVED` (with date).
-4. User launches the developer. It first challenges the order if warranted (questions
-   file, then stops); otherwise implements, writes the result file, and stops.
-5. User launches the architect. It answers each entry (agrees and changes the plan,
-   or disagrees with reasons), or reviews the result and triages observations.
-   Unresolved disagreement or scope change: `Status: IN DISCUSSION`, user decides.
+4. User launches the developer once. It first challenges the order if warranted (questions
+   file); otherwise implements and writes the result file. It then keeps polling this order file.
+5. The architect, watching the developer's files, answers each entry or reviews the result and triages
+   observations, writing a new `## Clarifications` round for answers and for rework. The developer picks it up
+   by itself (`Status: APPROVED` is kept). No user relay. Unresolved disagreement or scope change:
+   `Status: IN DISCUSSION`, user decides.
 6. Steps 4-5 repeat until agreement, then until the result is acceptable.
-7. **Closure gate.** User accepts; architect archives. Iteration N+1 starts at step 1
-   only after that.
+7. **Closure gate.** User accepts; architect sets `Status: DONE` (the developer stops), archives. Iteration N+1
+   starts at step 1 only after that.
 Only the user commits.
 
 ## Automatic hand-off
-The hand-off is carried by the files, not by the user relaying messages. The architect watches the developer's
-two files after approval; the developer signals with a `State:` line (second line of the file:
-`FINISHED`, `PARTIAL`, `BLOCKED`, or `WAITING-FOR-ARCHITECT` in the questions file) and, when it asked questions,
-polls the order for a newer `## Clarifications` round with `Status: APPROVED`. The user's gates (scope, order,
-closure, commit) are never automated.
+The hand-off is carried by the files, not by the user relaying messages, in both directions.
+- The architect watches the developer's two files (background monitor, re-armed on expiry) and reacts at once.
+- The developer signals with a `State:` line (second line of the file: `FINISHED`, `PARTIAL`, `BLOCKED`, or
+  `WAITING-FOR-ARCHITECT` in the questions file) and then keeps polling the order file (every 60 s, up to 60
+  minutes after its last signal) for a newer `## Clarifications` round with `Status: APPROVED`: answers to its
+  questions and rework requests alike. `Status: DONE` ends its polling; `IN DISCUSSION` means the user decides.
+- The user's gates are never automated: scope, order approval, result acceptance (closure) and commit. Between
+  the gates no user action is needed.
 
 ## Status values (order header)
 `DRAFT` (written, awaiting user) | `IN DISCUSSION` (open disagreement or scope change)
