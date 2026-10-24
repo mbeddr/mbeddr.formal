@@ -45,7 +45,17 @@ padding is not. Then stop and wait for the architect's refinement.
 3. **Implement** the agreed steps in order. Check every touched root with
    `check_root_node_problems`. Every new test is mutation-checked: show it fails on a
    deliberately broken variant, then restore it. Run the relevant suites.
-4. **Report** in `developer2architect_work_result.md` (overwrite; title carries the
+4. **Force-save, then check the change set.** MPS re-serializes models lazily (for
+   example it adds `resolve="..."` hints to references), so unrelated models show up
+   as modified. After the last rebuild and test run, trigger *File -> Force Save All*
+   in MPS, so that all serialization metadata is rewritten now and the change set
+   belongs only to this iteration. Use whatever tool your harness has for invoking
+   the IDE action; if none can, ask the user to do it before you report and say so in
+   the result. Then run `git status --short` and `git diff --stat` and list every
+   modified file in the result, each marked as intended change or as
+   serialization-only noise (with the evidence). Never claim "only file X changed"
+   without having run these commands.
+5. **Report** in `developer2architect_work_result.md` (overwrite; title carries the
    iteration number):
    - per step done / partly / not done; what changed (module, model, root);
    - commands and suites run, actual results, failures verbatim; mutation checks;
@@ -55,7 +65,7 @@ padding is not. Then stop and wait for the architect's refinement.
      evidence and a suggested action. This section is mandatory; "none found" must
      mean you looked.
    Never claim a result you did not see.
-5. **Stop.**
+6. **Stop.**
 
 ## Rules
 - Agree before you deviate; any deviation is listed in the result file.

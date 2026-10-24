@@ -54,7 +54,10 @@ the result and questions files, and in the archive directory name.
    change affects scope, set `Status: IN DISCUSSION` and put the matter to the user.
    Never only in chat.
 6. **Review the result** against the acceptance criteria and report to the user:
-   accepted, rework needed, or follow-up. Also triage the developer's unsolicited
+   accepted, rework needed, or follow-up. Cross-check the key claims yourself, in
+   particular `git status` / `git diff --stat` against the result's list of modified
+   files (the developer force-saves all models first, so every remaining file must be
+   an intended change). Also triage the developer's unsolicited
    observations: act on, schedule, or drop, with a reason, and tell the user.
 7. When the user accepts, move the finished files to `archive/NNN-<slice>/` and
    update the project plan.
