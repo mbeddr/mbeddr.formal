@@ -59,6 +59,47 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
   individually (`get_project_structure` with `includeRootNodes`, then one call per root). Done that way, all
   five roots (`Vehicles`, `Fleet`, `Units`, `Base`, `ScalarValues`) were clean.
 
+## A `RefCell` that hosts an inline editor component has no addressable reference cell (2026-10-24)
+- In an `EditorTestCase`, a caret can only be placed on a cell that has a cell id. For a `CellModel_RefCell` whose
+  child is an `InlineEditorComponent` (the common "reference rendered by a custom presentation" shape), the
+  generator emits ids only for the **enclosing** cell and for the **inner** `CellModel_ReferencePresentation`:
+  e.g. `Collection_9on3w6_a` and `ReferencePresentation_9on3w6_a0a0` for `KerMLFeatureChaining_Editor`. The
+  `RefCell` itself gets only `setSRole(...)` and substitute info — **no `setCellId`**.
+- Adding an explicit `EditorCellId` (child role `id`, property **`name`** — not `cellId`, and my first attempt
+  wrongly set `shortDescription`) is **silently ignored by the editor generator**: the id sits in the model,
+  `grep <id> source_gen/` finds nothing, and a force-save + `rebuild:true` does not change that. So the "just give
+  the cell an id" fix does not work for this cell shape.
+- The inner `ReferencePresentation_*` cell *is* addressable, but on it `type "…"` and `press` do **not** retarget an
+  existing reference: measured on a chain step whose target was `b`, `type "b2"`, `type "b2"`+`press VK_ENTER`, and
+  `press VK_DELETE` all left the model byte-identical (the assertion reported only
+  `Different internal reference of role chainingFeature. One target is b, while other is b2`, i.e. the *expected*
+  side differed and the actual tree was untouched). Every structural comparison of the fixture passed, which is
+  the signature of an acting cell the harness cannot reach — not of a wrong chord.
+- Consequence: a reference cell of this shape cannot be driven by the test harness today. Do not spend attempts on
+  more key sequences or on `EditorCellId`; either the editor must expose an addressable acting cell (a product
+  change, planned with the editor iteration) or the behaviour is covered by a `NodesTestCase` instead.
+
+## A complete `execute_run_configuration` payload can still miss `TEST_FAILURE_BEGIN`; the exit code cannot (2026-10-24)
+- The `output` field truncation (entry below) is not the only unreliability: on a run whose output was
+  **complete** (contained the trailing `FINISH_RUN_TEST`, no `<truncated>`), one `TEST_FAILURE_BEGIN` line for a
+  two-failure run was missing from the captured text. Re-running the same unchanged build sometimes showed both.
+  So `grep -c TEST_FAILURE_BEGIN` can under-report even when the payload looks whole.
+- Trust the configuration **`exitCode`** as the pass/fail signal: it equalled the failure count in every
+  observed case (3 tests failing → 3, 2 → 2, 1 → 1), including the runs where the text was incomplete. Use the
+  log file for *which* tests failed, and the exit code for *how many*.
+- Found while mutation-checking iteration 010's round-trip and 011's step-A tests; both mutations were verified
+  through the exit code plus the pre-mutation green run.
+
+## The IDE terminal tool can wedge while the console and the model tools keep working (2026-10-24)
+- `execute_terminal_command` started timing out on every call (60 s, also with
+  `reuseExistingTerminalWindow: false`) while `mps_mcp_*` model tools and the MPS **console**
+  (`parse_java_and_insert` + `mps_mcp_run_console_command`) continued to work normally. Taskkill/restart of the
+  console was not needed; the wedged terminal only blocked shell-style helpers.
+- Practical consequence: anything that shells out through the terminal (the common trick of copying a host
+  `/tmp` payload into the workspace, or `ls`-ing the MPS `system/tmp` run logs) is unusable while it is wedged,
+  but the force-save recipe is console-based and unaffected. If you need those helpers, restart the IDE terminal
+  or MPS rather than retrying.
+
 ## Console code cannot see the IDE platform or `System.out`; `#callAction` only reaches MPS-modelled actions (2026-10-24)
 - In a console command authored as Java text (`parse_java_and_insert`, `insert.mode:"console"`), `com.intellij.openapi.project.ProjectManager`, `…actionSystem.ActionManager`, `jetbrains.mps.ide.project.ProjectHelper` and `System.out` do **not** resolve (`UnknownDotCall`, or "Not a legal statement" for the `println` statement), while `org.jetbrains.mps.openapi.*`, `jetbrains.mps.project.AbstractModule`, `jetbrains.mps.smodel.MPSModuleRepository`, `jetbrains.mps.vfs.IFile` and the JDK do. So reach the project through the repository (`MPSModuleRepository.getInstance()`, deprecated but working) and identify modules by `AbstractModule.getDescriptorFile().getPath()`, instead of through the IntelliJ project.
 - `#callAction` (`CallActionExpression`) has an `action` reference to a `jetbrains.mps.lang.plugin.ActionDeclaration` **node**, so it can invoke only actions modelled in MPS — not a platform action registered in plugin XML, e.g. `ForceSaveAll`.

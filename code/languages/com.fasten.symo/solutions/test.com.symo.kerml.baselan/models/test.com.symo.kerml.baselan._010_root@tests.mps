@@ -5601,5 +5601,116 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="6jpO12_6ggf">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_450_StandaloneSubsetSpecificChain" />
+    <node concept="1qefOq" id="6jpO12_6ggg" role="1SKRRt">
+      <node concept="2jMsK_" id="6jpO12_6ggi" role="1qenE9">
+        <property role="TrG5h" value="Q" />
+        <node concept="20Nsyr" id="6jpO12_6ggj" role="21vIyQ">
+          <property role="TrG5h" value="T" />
+          <node concept="20GSug" id="6jpO12_6ggk" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="b" />
+          </node>
+        </node>
+        <node concept="20Nsyr" id="6jpO12_6ggl" role="21vIyQ">
+          <property role="TrG5h" value="U" />
+          <node concept="20GSug" id="6jpO12_6ggm" role="21vIyQ">
+            <property role="20tdI4" value="true" />
+            <property role="TrG5h" value="d" />
+          </node>
+        </node>
+        <node concept="20GSug" id="6jpO12_6ggn" role="21vIyQ">
+          <property role="20tdI4" value="true" />
+          <property role="TrG5h" value="a" />
+          <node concept="20GSuh" id="6jpO12_6ggo" role="214t28">
+            <ref role="214t29" node="6jpO12_6ggj" resolve="T" />
+          </node>
+        </node>
+        <node concept="20GSug" id="6jpO12_6ggp" role="21vIyQ">
+          <property role="20tdI4" value="true" />
+          <property role="TrG5h" value="c" />
+          <node concept="20GSuh" id="6jpO12_6ggq" role="214t28">
+            <ref role="214t29" node="6jpO12_6ggl" resolve="U" />
+          </node>
+        </node>
+        <node concept="20GSuu" id="6jpO12_6ggr" role="21vIyQ">
+          <node concept="20GSug" id="6jpO12_6ggs" role="1$__Aa">
+            <property role="20tdI4" value="true" />
+            <node concept="27BsWE" id="6jpO12_6ggt" role="27Biex">
+              <ref role="27BsWF" node="6jpO12_6ggn" resolve="a" />
+            </node>
+            <node concept="27BsWE" id="6jpO12_6ggu" role="27Biex">
+              <ref role="27BsWF" node="6jpO12_6ggk" resolve="b" />
+            </node>
+          </node>
+          <node concept="20GSug" id="6jpO12_6ggv" role="1$__Aa">
+            <property role="20tdI4" value="true" />
+            <node concept="27BsWE" id="6jpO12_6ggw" role="27Biex">
+              <ref role="27BsWF" node="6jpO12_6ggp" resolve="c" />
+            </node>
+            <node concept="27BsWE" id="6jpO12_6ggx" role="27Biex">
+              <ref role="27BsWF" node="6jpO12_6ggm" resolve="d" />
+            </node>
+          </node>
+          <node concept="3xLA65" id="6jpO12_6ggy" role="lGtFl">
+            <property role="TrG5h" value="sub2" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12_6ggz" role="1SL9yI">
+      <property role="TrG5h" value="testStandaloneSubsetSpecificEndShowsChain" />
+      <node concept="3cqZAl" id="6jpO12_6ggA" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12_6ggB" role="3clF47">
+        <node concept="3vwNmj" id="6jpO12_6ggC" role="3cqZAp">
+          <node concept="2OqwBi" id="6jpO12_6ggE" role="3vwVQn">
+            <node concept="3xONca" id="6jpO12_6ggH" role="2Oq$k0">
+              <ref role="3xOPvv" node="6jpO12_6ggy" resolve="sub2" />
+            </node>
+            <node concept="3zqWPK" id="6jpO12_6ggI" role="2OqNvi">
+              <ref role="37wK5l" to="efol:2YEARL0xe8L" resolve="isSpecificChainShown" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12_6ggJ" role="1SL9yI">
+      <property role="TrG5h" value="testStandaloneSubsetSpecificText" />
+      <node concept="3cqZAl" id="6jpO12_6ggM" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12_6ggN" role="3clF47">
+        <node concept="3vlDli" id="6jpO12_6ggO" role="3cqZAp">
+          <node concept="Xl_RD" id="6jpO12_6ggR" role="3tpDZB">
+            <property role="Xl_RC" value="Q::a.b" />
+          </node>
+          <node concept="2OqwBi" id="6jpO12_6ggS" role="3tpDZA">
+            <node concept="3xONca" id="6jpO12_6ggV" role="2Oq$k0">
+              <ref role="3xOPvv" node="6jpO12_6ggy" resolve="sub2" />
+            </node>
+            <node concept="3zqWPK" id="6jpO12_6ggW" role="2OqNvi">
+              <ref role="37wK5l" to="efol:5ipQkCL8NOi" resolve="specificText" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6jpO12_6ggX" role="1SL9yI">
+      <property role="TrG5h" value="testStandaloneSubsetGeneralEndIsNotShown" />
+      <node concept="3cqZAl" id="6jpO12_6gh0" role="3clF45" />
+      <node concept="3clFbS" id="6jpO12_6gh1" role="3clF47">
+        <node concept="3vFxKo" id="6jpO12_6gh2" role="3cqZAp">
+          <node concept="2OqwBi" id="6jpO12_6gh4" role="3vFALc">
+            <node concept="3xONca" id="6jpO12_6gh7" role="2Oq$k0">
+              <ref role="3xOPvv" node="6jpO12_6ggy" resolve="sub2" />
+            </node>
+            <node concept="3zqWPK" id="6jpO12_6gh8" role="2OqNvi">
+              <ref role="37wK5l" to="efol:2YEARL0xe9P" resolve="isGeneralChainShown" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
