@@ -1,10 +1,13 @@
 # Plan: SysML v2 Systems Model Library and KerML base language
 
-Status: planned (2026-10-21). Nothing below is implemented except Phase 0 module creation (uncommitted).
+Status: planned (2026-10-21). Phases 0 and part of C are implemented — see the status block below, which
+is the authoritative summary; the phase descriptions further down are the plan as written in 2026-10-21.
 Standing principle: base languages mirror the source spec ([ADR 0001](../adr/0001-base-languages-mirror-the-source-spec.md)).
 Sources: `/home/dan/work/sysmlv2/SysML-v2-Release/sysml.library` (`Systems Library/*.sysml`, 2,666 lines, and
 `Kernel Libraries/*/*.kerml`, 5,182 lines), KerML BNF `bnf/KerML-textual-bnf.kebnf`.
-The accessory model `com.symo.sysmlv2.baselan.system_model_library` (registered in the baselan `.mpl`) is still empty.
+The accessory model `com.symo.sysmlv2.baselan.system_model_library` (registered in the baselan `.mpl`) is
+intentionally empty: it is the placeholder for the imported Systems Model Library and gets content in Part A
+step 1. Its emptiness is not an unfinished edit (decision 2026-10-24).
 
 ## Decisions taken
 - **KerML containment is explicit, not reified (2026-10-21, supersedes the earlier "reified relationships" approach).**
@@ -19,6 +22,17 @@ The accessory model `com.symo.sysmlv2.baselan.system_model_library` (registered 
 - Expressions are imported as `UninterpretedTextExpression` (abstract `Expression` + a concrete text-only subconcept),
   so a real expression language can be added later; it belongs in KerML (spec: expressions are KerML) and SysML reuses it.
 - A KerML importer is needed (5k lines of kernel library cannot be typed by hand).
+- **Decisions taken 2026-10-24** (from the iteration 001 audit, recorded here so they are not re-opened):
+  - *Quoted `STRING` names* (audit F-09, the grammar accepts `name : STRING` while the importer stores the
+    quotes and the identifier-name validator rejects them): the names will be **unquoted**, not rejected. Not
+    implemented yet — a later slice.
+  - *`SysMLv2EmptyLine`* (audit F-17): **kept**, blocked on the lexer fork that would preserve blank lines.
+    Root `docs/adr/0001-no-concepts-for-syntax-only-markers.md` does not apply: a blank line is content, not a
+    marker whose position an enclosing construct dictates. Not to be re-raised; noted in `TODO.md`.
+  - *Phase D / `Definition`→KerML `Classifier`, `Usage`→KerML `Feature`* (audit F-02): done **per family**,
+    each family preceded by a small design spike. Until the user decides on phase D, `com.symo.kerml.baselan`
+    and `com.symo.sysmlv2.baselan` stay completely independent (no dependency, used language or reference in
+    either direction).
 
 ## Part A: SysML-side gaps for the Systems library (priority order)
 Measured construct use: multiplicity 357, `ref` 243, visibility imports 154, `:>` 146, `abstract` 106, `ordered` 102,
@@ -60,8 +74,13 @@ Milestones: M1 = steps 1-3 (Attributes.sysml + all import headers), M2 = 4-8, M3
 - Working mode: vertical slices, one library file at a time (start: `Base.kerml`, 94 lines), each validated by importing a
   real file. Effort (order of magnitude): Phases 1-3 ~12-15 increments, Phase 4 ~4-5, Phase 5 ~3-4, Phase 6 ~8-12.
 
-## Status (2026-10-22) and how to continue
-**Done and committed** (latest commit `4217ab7e`; SysML alignments 1-4 are done, see `TODO.md`):
+## Status (2026-10-24) and how to continue
+**Done and committed** (SysML alignments 1-4 are done, see `TODO.md`). Latest **KerML** work is C1b-2b-1,
+`dc97ec0a` (2026-10-24: feature chains in specialization, subsetting, redefinition and typing, with importer,
+editors, text generation, round-trip and library tests). Latest **SysML v2** work is `23996f23` (iteration 003,
+round-trip test helper) on top of `70d759e0` (iteration 002, one virtual `getEffectiveName` on
+`ISysMLv2QualifiedRef`). Earlier text in this block said "uncommitted"; the tree is clean and everything
+described here is committed, so those markers are gone.
 - Modules: `com.symo.kerml.baselan` (+ `test.com.symo.kerml.baselan`, `com.symo.kerml.baselan.importer`, `test.com.symo.kerml.baselan.importer`,
   `com.symo.kerml.baselan.sandbox`); registered in `com.fasten.meta.architecture`.
 - Structure: `KerMLElement` (INamedConcept, `declaredShortName`), `KerMLRelationship`, `KerMLNamespace` (`ownedMember : IKerMLNamespaceMember`),
@@ -81,11 +100,11 @@ in the constraints aspect; reuse existing style classes (`com.mpsbasics.core.edi
 the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.md` (no helper scripts).
 
 **Next steps, in order**
-1. Name resolution for KerML — **done (uncommitted)**: `KerMLNamespace` is the `ScopeProvider`; `getScope(kind, child)` returns `KerMLElement.qualifiedScope(...)` (resolves `A::B::C`,
+1. Name resolution for KerML — **done**: `KerMLNamespace` is the `ScopeProvider`; `getScope(kind, child)` returns `KerMLElement.qualifiedScope(...)` (resolves `A::B::C`,
    `contains` overridden) wrapped around the chain-safe `lexicalScope` (`localMembers`/`importedMembers`/`shadowing`/`outerLexicalScope`/`rootScope`); the three reference constraints
    (`importedNamespace`, `importedElement`, `annotatedElement`) are `scope inherited` (kind = KerMLNamespace / KerMLElement); `KerMLElement.qualifiedName()`; import editors show qualified
    names via `ref. presentation`. Tests `_020_QualifiedName`, `_070_NameResolution` (its fixture also imports the nested `Units::Engine`; the model checker guards that constraint link).
-   Visibility — **done (uncommitted)**: `IKerMLNamespaceMember.isPublic()`; imports bring only public members unless `isImportAll`; qualified access `A::x` sees all members from inside `A`
+   Visibility — **done**: `IKerMLNamespaceMember.isPublic()`; imports bring only public members unless `isImportAll`; qualified access `A::x` sees all members from inside `A`
    (viewer is a descendant) and only public ones (plus imports) from outside (`KerMLNamespace.memberScopeFor`). Test `_080_Visibility`. The sandbox `Fleet` import of the private
    `Vehicles::Parts::Drivetrain` is `isImportAll = true`; the import editors now have an `all` `FlagCell` (editor test `_090_ImportAll_TypeAll`; the KerML editor model carries the same
    `DummyForGrammarCells` workaround as sysmlv2.baselan, otherwise grammar-cells reports "missing dependency on jetbrains.mps.lang.core").
@@ -96,25 +115,25 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    needs a decision (constructor default + editor showing `public`/`private` the other way round for imports) and the top-level `validateImportTopLevelVisibility` rule.
    Still open: protected visibility (specializations), nested namespaces behind a private namespace still listed in available elements, `@Nullable` on `getAvailableElements(prefix)`, an editor
    test for the import display, `Membership`-level views (`membership`, `memberName`) stay dropped (recorded deviation above).
-   Root-layer editor gaps — **done (short name committed, rest uncommitted)**: optional short name `<x>` (shared `KerMLElement_ShortName` component, package + library package; editor test `_100`),
+   Root-layer editor gaps — **done**: optional short name `<x>` (shared `KerMLElement_ShortName` component, package + library package; editor test `_100`),
    `standard` `FlagCell` for `isStandard` (`_110`), `comment about X, Y` (optional cell over `ownedAnnotatingRelationship`, new `KerMLAnnotation_Editor` showing `annotatedElement`; `_120`),
    multi-line comment body (multiline cell, `KerMLComment` constructor sets `body = ""` so the caret stays; `_130`; `_040` now presses TAB after `comment`, as sysmlv2 does). Not done: short name on
    other concepts, multi-line `doc`/`rep` bodies, `locale` and a name on comments, an editor test that picks the `about` target.
-2a. Core layer, slice B1 — **done (uncommitted)**: `KerMLType` (a `KerMLNamespace`; `isAbstract`, `isSufficient`, owned `ownedSpecialization : KerMLSpecialization` list, derived `supertypes()`),
+2a. Core layer, slice B1 — **done**: `KerMLType` (a `KerMLNamespace`; `isAbstract`, `isSufficient`, owned `ownedSpecialization : KerMLSpecialization` list, derived `supertypes()`),
    `KerMLSpecialization` (`general : KerMLType`; subconcepts per kind follow in B2/B3). Editors: `abstract type all <s> name specializes A, B { … }` (optional `specializes` cell, same
    shape as `comment about`), `KerMLSpecialization_Editor`. Name resolution follows KerML 8.2.3.5.2: a Specialization's local namespace is the *owning namespace of the owning type*, so the
    type's own members do not shadow the target — implemented by making `KerMLSpecialization` its own `ScopeProvider` (`getScope` = `KerMLType.specializationScope(kind)`; the 3-arg
    `getScope` of `KerMLType` handles completion). Tests `_170_TypeSpecialization`, `_180_Type_TypeType`. Not covered by an editor test: typing the first `specializes` after the name
    (a property cell swallows the keyword; only the completion menu reaches the side transform) and typing into an empty `general` cell (no stable cell id) — cross-check in the UI.
    Recorded deviations: no standalone `specialization … subtype …` form (importer), no Conjugation/Disjoining/Unioning/Intersecting/Differencing, no implied specializations.
-2b. Core layer, slice B2 — **done (uncommitted)**: `KerMLClassifier` (extends `KerMLType`, alias `classifier`), `KerMLSubclassification` (extends `KerMLSpecialization`; `general` narrowed to
+2b. Core layer, slice B2 — **done**: `KerMLClassifier` (extends `KerMLType`, alias `classifier`), `KerMLSubclassification` (extends `KerMLSpecialization`; `general` narrowed to
    classifiers by its own referent constraint with `InheritedNodeScopeFactory` kind `KerMLClassifier`), `KerMLDataType` (extends `KerMLClassifier`, alias `datatype`). Editors
    `KerMLClassifier_Editor` / `KerMLDataType_Editor` mirror the type editor; their `specializes` list has a `nodeFactory` that creates `KerMLSubclassification` (the list link stays typed
    `KerMLSpecialization`, as in the spec's `ownedSpecialization`). Tests `_190` (exact `ScopesTest` of `general`: classifiers only; supertypes), `_200`, `_210` (editor). Not done:
    `ownedSubclassification` as a derived view, `validateClassifierMultiplicityDomain` (needs Multiplicity, B3), `checkDataTypeSpecialization` (needs `Base::DataValue`, C) and
    `validateDataTypeSpecialization` (needs Class/Association), standalone `specialization … subclassifier` form (importer). The first `specializes` and the node factory are not editor-tested
    (see B1 note); `_200` was not separately mutation-checked (same mechanism as `_210`, which was).
-2c. Core layer, slice B3a — **done (uncommitted)**: `KerMLFeature` (extends `KerMLType`, alias `feature`; flags `isComposite`, `isPortion`, `isDerived`, `isEnd`, `isVariable`, `isConstant`;
+2c. Core layer, slice B3a — **done**: `KerMLFeature` (extends `KerMLType`, alias `feature`; flags `isComposite`, `isPortion`, `isDerived`, `isEnd`, `isVariable`, `isConstant`;
    optional child `direction : KerMLFeatureDirection` {`kind` : `KerMLFeatureDirectionKind` in/out/inout} — **recorded deviation**: the spec's `direction : FeatureDirectionKind [0..1]` is a
    wrapper child because an unset enum property is a model-checker error, same solution as sysmlv2.baselan), `KerMLFeatureTyping` (alias `:`), `KerMLSubsetting` (`:>`, `general` narrowed to
    features), `KerMLRedefinition` (`:>>`, extends Subsetting), each in the shared `ownedSpecialization` list. Editor: `[vis] [direction] derived abstract composite portion var const end feature all <s> name
@@ -122,7 +141,7 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    `ScopesTest` per kind, supertypes; all three constraints mutation-checked), `_230` (editor). Not done (B3b): multiplicity (`isOrdered`/`isUnique`, `MultiplicityRange`), ReferenceSubsetting
    (`::>`), CrossSubsetting, FeatureChaining/Inverting, TypeFeaturing, `FeatureValue`; inherited-feature lookup and redefinition rules are B4. The substitute-menu pick of `:>`/`:>>` is not
    editor-tested (completion menu) — cross-check in the UI.
-2d. Core layer, slice B3b — **done (uncommitted)**: `KerMLMultiplicity` (abstract Feature) / `KerMLMultiplicityRange` (`lowerBound : KerMLExpression [0..1]`, `upperBound [1]`, behavior `hasBounds(lower, upper)`
+2d. Core layer, slice B3b — **done**: `KerMLMultiplicity` (abstract Feature) / `KerMLMultiplicityRange` (`lowerBound : KerMLExpression [0..1]`, `upperBound [1]`, behavior `hasBounds(lower, upper)`
    with `-1` = `*`, spec 8.3.4.11.2 incl. the default lower bound), `KerMLType.multiplicity [0..1]` (explicit child instead of the derived ownedMember view), minimal Kernel-layer expressions
    `KerMLExpression` (abstract Feature) with `KerMLLiteralInteger` and `KerMLLiteralInfinity` — the only bounds supported until the expression layer exists. `KerMLFeature.isOrdered`/`isUnique`
    (constructor sets `isUnique = true`, the spec default), `KerMLReferenceSubsetting` (`::>`, subtype of Subsetting, general = feature). Editors: `[lo..hi]` optional cell on type/classifier/datatype/feature,
@@ -130,14 +149,14 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    Not done: `nonunique` in the editor (no inverted flag cell; `isUnique` is only visible via the model), FeatureValue, TypeFeaturing, FeatureChaining/Inverting, CrossSubsetting, `multiplicity` as a
    stand-alone `multiplicity m [1..2];` member and MultiplicitySubset, validateTypeOwnedMultiplicity (automatic: single child), checkMultiplicityRangeExpressionTypeFeaturing, "at most one
    ReferenceSubsetting". Typing a bound in the editor goes through the substitute menu (`integer` / `*` aliases) — not editor-tested, cross-check in the UI.
-2e. Core layer, slice B3c — **done (uncommitted)**: `KerMLTypeFeaturing` (`featuringType : KerMLType`, `featured by A, B` optional cell; owned by `KerMLFeature.ownedTypeFeaturing`),
+2e. Core layer, slice B3c — **done**: `KerMLTypeFeaturing` (`featuringType : KerMLType`, `featured by A, B` optional cell; owned by `KerMLFeature.ownedTypeFeaturing`),
    `KerMLFeatureValue` (`isInitial`, `isDefault`, child `value : KerMLExpression`; owned by `KerMLFeature.valuation`; editor `[default] (= | :=) expr`), more minimal Kernel-layer expressions
    `KerMLLiteralBoolean`, `KerMLLiteralString`, `KerMLFeatureReferenceExpression` (`referent : KerMLFeature`; is a namespace, so it is its own `ScopeProvider` that resolves in the owning
    feature's scope, like Specialization). Recorded deviation: no Membership, so `FeatureValue` is a plain relationship child of the feature. Fix found on the way: `KerMLType.getScope(kind, link, index)`
    threw an NPE for `link == null` (platform asks the reference node itself) — only visible for Types that hold references themselves. Test `_250` (exact `ScopesTest` for both references, mutation-checked
    with narrowing/widening of the `kind`). Not done: FeatureChaining/Inverting (chain steps need inherited-member lookup, i.e. B4), CrossSubsetting, rational/real literals, any other expression; literal
    editors and the `default`/`:=` toggles are not editor-tested.
-2f. Core layer, slice B4 (inheritance in scoping) — **done (uncommitted)**: `KerMLNamespace.inheritedMember(excluded, removeRedefined)` (virtual, empty by default) overridden in `KerMLType`:
+2f. Core layer, slice B4 (inheritance in scoping) — **done**: `KerMLNamespace.inheritedMember(excluded, removeRedefined)` (virtual, empty by default) overridden in `KerMLType`:
    non-private members of all supertypes (transitive, through `supertypes()`, cycle-guarded by the `excluded` list, `distinct`), minus the features redefined by the type's own features (spec
    `removeRedefinedFeatures`). `KerMLNamespace.lexicalScopeR/outerLexicalScopeR(kind, ..., removeRedefined)` add the inherited members to the lexical scope (`lexicalScope`/`outerLexicalScope` keep
    their signatures and pass `true`); `memberScope` (inside viewer) and `visibleMember` (outside viewer, public only, so imports and `A::x` see inherited public members) include them too.
@@ -147,26 +166,26 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    `Sub::prot` path); all four ingredients mutation-checked (inherited dropped, private filter inverted, redefinition removal disabled, cycle guard removed -> StackOverflow). Sandbox: `BigDiesel` subsets
    `power` by its simple name, inherited through `DieselEngine` from `Engine` (editors still show qualified names for specialization targets). Known gaps: protected is treated like "non-private" for subtypes (a subtype does not see `Base::prot` by qualified name), inherited members hidden by redefinition in a
    different supertype branch (diamond) are not removed (imports of a supertype are inherited since 2i) (FeatureChaining/Inverting and CrossSubsetting followed in 2g and 2h).
-2g. Core layer, slice B5a (FeatureChaining) — **done (uncommitted)**: `KerMLFeatureChaining` (relationship, `chainingFeature : KerMLFeature`, owned by `KerMLFeature.ownedFeatureChaining [0..n]`), spec
+2g. Core layer, slice B5a (FeatureChaining) — **done**: `KerMLFeatureChaining` (relationship, `chainingFeature : KerMLFeature`, owned by `KerMLFeature.ownedFeatureChaining [0..n]`), spec
    syntax `chains a . b . c` as an optional cell on the feature editor (`.` separated list), derived `KerMLFeature.chainingFeatures()`. FeatureChaining is its own `ScopeProvider`: the first step
    resolves like a feature specialization (owner's lexical scope, qualified names allowed), every later step resolves among the *public* members of the previous chaining feature
    (`memberScopeFor`, which includes what the feature inherits through its typing — B4). Test `_270` (exact `ScopesTest` for both steps, both for an own and for an inherited chain; `chainingFeatures()`);
    mutation-checked (later steps ignoring the previous feature -> step-2 scopes empty; viewer treated as inside -> protected leaks into the step-2 scope). Sandbox: `Boat` with `thrust chains motor . power`.
    Editor shows the qualified name of every step (plain names after the first step would need the previous sibling in the presentation, which the editor context does not offer). Not done: FeatureInverting
    (`inverse of`), CrossSubsetting (`=>`), `chains` via the substitute menu / editor tests, the "feature chain as expression" (`a.b` in a value) which needs the expression layer.
-2h. Core layer, slice B5b (FeatureInverting, CrossSubsetting) — **done (uncommitted)**: `KerMLFeatureInverting` (relationship, `invertingFeature : KerMLFeature`, owned by `KerMLFeature.ownedFeatureInverting [0..n]`,
+2h. Core layer, slice B5b (FeatureInverting, CrossSubsetting) — **done**: `KerMLFeatureInverting` (relationship, `invertingFeature : KerMLFeature`, owned by `KerMLFeature.ownedFeatureInverting [0..n]`,
    `inverse of a, b` optional cell on the feature editor, its own `ScopeProvider` = the owner feature's specialization scope), `KerMLCrossSubsetting` (extends `KerMLSubsetting`, alias `=>`, lives in
    `ownedSpecialization`, own referent constraint and editor like the other specialization kinds). Test `_280` (exact `ScopesTest` for both references; the set also contains the members of the inverted
    feature's own body, reachable as `dst::inner` from inside, so the scope provider choice is not separable by a scope test); mutation-checked by narrowing the `kind` of both constraints.
    Sandbox: `Pairing` (`follower inverse of leader`, `end leaderEnd => leader`). Not done: `inverse of` with a feature chain (`a.b`), the CrossSubsetting well-formedness rules (only for end features,
    cross feature typing), the `=>`/`inverse of` substitute-menu picks are not editor-tested.
-2i. Core layer, optional follow-ups after B5 — **done (uncommitted)**: (a) `recursive` flag cell on both import editors (`import all recursive X::*`; recorded deviation from the spec's `::**`, because a
+2i. Core layer, optional follow-ups after B5 — **done**: (a) `recursive` flag cell on both import editors (`import all recursive X::*`; recorded deviation from the spec's `::**`, because a
    flag cell cannot swap `::*` for `::**`), editor test `_290`; (b) inverted flag cell `nonunique` for `isUnique` on the feature editor, reached after the `ordered` flag (typing it directly after the name
    goes into the name), editor test `_300`, sandbox `plugs [*] ordered nonunique`; (c) the non-private imports of supertypes are inherited too (`KerMLType.inheritedMember` adds
    `importedMemberOf(t.ownedImport() minus private)`), test `_310` (public inherited, private not, both as `inheritedMember` and as simple-name resolution). All three mutation-checked (flag cells
    neutralised, import union removed, import filter inverted). Still open: protected visibility by qualified name for subtypes, the default import visibility decision, editor tests for the
    substitute-menu picks (`:>`, `:>>`, `::>`, `=>`, `chains`, `inverse of`, `featured by`, `default`, `:=`), diamond redefinitions.
-2j. Core layer, slice C1 (stand-alone multiplicity) — **done (uncommitted)**: C1 survey of `Base.kerml` found two gaps; this closes the first. `KerMLMultiplicityRange` now has the alias `multiplicity`
+2j. Core layer, slice C1 (stand-alone multiplicity) — **done**: C1 survey of `Base.kerml` found two gaps; this closes the first. `KerMLMultiplicityRange` now has the alias `multiplicity`
    and an editor alternation (`isOwnedMultiplicity()` = owned by a type's `multiplicity` link -> inline `[lo..hi]`, otherwise `multiplicity <name> [lo..hi] { members }`, so
    `multiplicity exactlyOne [1..1] { doc ... }` from `Base.kerml` is expressible). A node factory (new `com.symo.kerml.baselan.actions` aspect) gives an editor-created range the default
    bound `[1]` instead of the abstract `KerMLExpression` placeholder that the mandatory `upperBound` child used to get. Tests: `_320` (typing `multiplicity exactlyOne` in a package body),
@@ -176,7 +195,7 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
    (the substitute menu path is a manual cross-check).
    **C3 decision (user, 2026-10-22):** `Base.kerml` and `ScalarValues.kerml` are imported together, in full, as a two-file slice (no stub): `Base` needs `ScalarValues::Natural`, `ScalarValues` imports
    `Base::DataValue`, so the importer creates all declarations of both files before resolving references. The cross-resolution also exercises `checkDataTypeSpecialization`.
-2k. Phase C2 (KerML ANTLR4 grammar) — **grammar done and wired into Gradle + the importer solution (uncommitted)**: `solutions/com.symo.kerml.baselan.importer/grammar-build/src/main/antlr/KerML.g4`, a hand translation of the Pilot
+2k. Phase C2 (KerML ANTLR4 grammar) — **grammar done and wired into Gradle + the importer solution**: `solutions/com.symo.kerml.baselan.importer/grammar-build/src/main/antlr/KerML.g4`, a hand translation of the Pilot
    Implementation's `KerML.xtext` + `KerMLExpressions.xtext` (tag 2026-08, EPL-2.0, see its README). The daltskin generator was tried first and rejected: its merged KerML+SysML grammar cannot parse KerML library files
    (package bodies admit SysML members only), and run on the KerML KEBNF alone it leaves rules undefined. Result: compiles with ANTLR 4.13.2 without warnings; all 94 `*.kerml` files of the release (libraries + examples,
    ~8,000 lines) parse with 0 syntax errors (error reporting verified with a deliberately broken file). Wiring: root `settings.gradle` includes `kerml-grammar`; `./gradlew :kerml-grammar:copyToMps` fills the solution's `lib/` (jars committed, as for SysML); `.msd` has the `java_classes` model root + facet libraries (model root added by editing the .msd, no MCP tool covers model roots). Next: the visitor/reifier for the

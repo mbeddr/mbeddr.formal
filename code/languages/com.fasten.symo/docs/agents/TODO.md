@@ -5,6 +5,26 @@ per [ADR 0005](../../../../../docs/adr/0005-localize-project-specific-knowledge-
 general MPS/MCP-tool gotchas stay in the root `docs/agents/mps-gotchas.md`; this file is for
 investigations specific to this project's own domain and generator pipeline).
 
+## Current test status (2026-10-24) — read this before trusting a count below
+
+The entries further down are a chronological log; the counts in them are what was observed **at that
+time** and were not re-checked afterwards. Note also that those older counts (e.g. "importer 61/61",
+"baselan 47/47") counted **test methods**, while the numbers below count **test classes**, so the two
+are not comparable. Current state:
+
+- **SysML v2 importer** (`test.com.symo.sysmlv2.baselan.importer`): `_010_smoke_test@tests` holds **28
+  roots** — 26 test classes (25 `NodesTestCase` + 1 `BTestCase`) and 2 helper classes (`TestUtils`,
+  `RoundtripTestUtils`). The 25 `NodesTestCase`s are green, run per class in iterations 002 and 003
+  (003: three consecutive passes over all 25, plus 20 runs of `_120_SubsettingRedefinitionTest`). The
+  `BTestCase` `_010_test_sysmlv2_toolchain_Test` does **not** execute under the suite configuration —
+  why is unverified (audit finding F-16, unfixed).
+- **SysML v2 language** (`test.com.symo.sysmlv2.baselan`): **36 test classes** (7 scope + 26 editor + 3
+  checking-rule roots), green when last run in iteration 001. **Not re-run since** — iteration 002 then
+  changed the language's behavior and textGen aspects, so treat baselan green as *unverified* for
+  `70d759e0` and later. Re-running it is a cheap, worthwhile check before any acceptance that cites it.
+- `Tests in '...'` suite configurations exist only when the user creates them in the IDE; the MCP tools
+  cannot create model-scoped suites (see root `mps-gotchas.md`).
+
 ## Add checking rules for known `com.symo.plantuml` generated-syntax gaps
 
 A model passing all MPS-side checks should generate syntactically correct PlantUML. Two confirmed
@@ -70,7 +90,11 @@ early target).
 (not even hidden-channel), so blank-line/`//`-comment round-trip is NOT recoverable from the
 grammar as-is — would require forking the vendored lexer to route those to a hidden channel. The
 existing `EmptyLine` concept (`ISysMLv2FileContent`) is being **kept** as an explicit deferred
-milestone for that lexer fork, not removed. `/* ... */` block comments (`REGULAR_COMMENT`) are
+milestone for that lexer fork, not removed. **(Decision 2026-10-24: settled — kept, blocked on the
+lexer fork; do not re-raise it. Root `docs/adr/0001-no-concepts-for-syntax-only-markers.md` forbids
+concepts for syntax-only markers such as `endif`, but a blank line is content the user places and the
+model must round-trip, not a marker whose position is determined by an enclosing construct, so the
+ADR does not apply.)** `/* ... */` block comments (`REGULAR_COMMENT`) are
 real tokens already consumed by `comment`/`doc`/`rep` rules — those map to SysML's first-class
 `Comment`/`Documentation`/`TextualRepresentation` elements, a distinct (non-deferred) later
 iteration.
@@ -1296,7 +1320,7 @@ attribute-only) and `type : ItemDefinitionRef`. `SysMLv2MetadataDefinitionRef` r
 parent is a `MetadataUsage` (same pattern as connection/interface/flow). New `SysMLv2MetadataUsage_Behavior` constructor creates the empty `type` ref (the slot is `[0..1]` now);
 `SysMLv2MetadataDefinition_Behavior` was removed (inherited). Importer: metadata def specializations/types are `ItemDefinitionRef`s (`itemDefinitionName`); test utils reify them with
 `reifyItemDefinitionRefs` (prefix metadata still `reifyMetadataDefinitionRefs`). Tests: new scope test `_080_MetadataTypeScope` (metadata usage type -> `{MD1, MD2}`, item usage
-type also offers metadata defs), importer `_171_MetadataSpecializationTest`; fixtures of `_170`, `_210` and editor `_090_Metadata_MetadataInPartDef` rebuilt. baselan 47/47, importer 63/63.
+type also offers metadata defs), importer `_171_MetadataSpecializationTest`; fixtures of `_170`, `_210` and editor `_090_Metadata_MetadataInPartDef` rebuilt. both suites green at that time (the counts have drifted since: 36 baselan and 25 importer test classes — see "Current test status" at the top of this file).
 The sandbox's `metadata def SafetyRelevance { attribute ASIL; }` was migrated to the inherited `content` slot (see gotcha on removing child slots).
 
 **PartUsage is an ItemUsage (2026-10-21, alignment 2 of 4)**: spec 8.3.11.3 — `PartUsage` is an `ItemUsage`, `ConnectionUsage` a `PartUsage` (+ `ConnectorAsUsage`).
@@ -1308,19 +1332,19 @@ The sandbox's `metadata def SafetyRelevance { attribute ASIL; }` was migrated to
 `ConnectionUsage` (incl. `InterfaceUsage`) only `ConnectionDefinitionRef`, under `PartUsage` only `PartDefinitionRef`, elsewhere plain `ItemDefinitionRef`.
 `Usage.typeDefinition` checks the connection ref before the part ref (subconcept order matters). Migration: 75 refs and 8 multiplicities moved into the inherited
 slots in tests and in both sandbox models (`MOVE_NODE_TO_PARENT`); a few fixtures with orphaned children were rebuilt. Note: `ConnectionUsage` now inherits
-`ICanBelongOnlyToSysMLv2PartOwner` from `PartUsage`. baselan 47/47, importer 63/63.
+`ICanBelongOnlyToSysMLv2PartOwner` from `PartUsage`. both suites green at that time (the counts have drifted since: 36 baselan and 25 importer test classes — see "Current test status" at the top of this file).
 
 **Connector ends declared once (2026-10-21, alignment 3 of 4)**: `source`/`target : SysMLv2ConnectorEnd [0..1]` now live on `ISysMLv2ConnectorAsUsage`
 (spec 8.3.13.5) instead of being repeated on `ConnectionUsage`, `BindingUsage`, `FlowUsage`. The `ConnectionUsage` declarations were moved up keeping
 their ids; the binding/flow copies were removed after repointing editors, textGen, behavior, importer and checking rules to the interface links and moving
 13 binding/flow fixtures' ends (`MOVE_NODE_TO_PARENT`). Moving the ConnectionUsage declarations orphaned the stored ends of several connection/interface
-fixtures (see gotchas); they were recovered by id. baselan 47/47, importer 63/63.
+fixtures (see gotchas); they were recovered by id. both suites green at that time (the counts have drifted since: 36 baselan and 25 importer test classes — see "Current test status" at the top of this file).
 
 **Connection definitions specialise via ConnectionDefinitionRef (2026-10-21, alignment 4 of 4)**: `ItemDefinitionRef_Constraints.canBeChild` now returns
 `childConcept.isSubConceptOf(ConnectionDefinitionRef)` when the parent is a `ConnectionDefinition` (covers `InterfaceDefinition`); the importer builds
 `ConnectionDefinitionRef` (`connectionDefinitionName`) for `connection def`/`interface def` subclassification (`addItemSpecialization` became
 `addConnectionSpecialization`) and the existing `reifyConnectionDefinitionRefs` resolves them. Open: no importer test yet covers connection/interface
-definition specialisation; `PartDefinition.specializes` still holds plain `ItemDefinitionRef`. baselan 47/47, importer 63/63.
+definition specialisation; `PartDefinition.specializes` still holds plain `ItemDefinitionRef`. both suites green at that time (the counts have drifted since: 36 baselan and 25 importer test classes — see "Current test status" at the top of this file).
 
 **Systems Model Library / KerML (2026-10-21)**: see [system-model-library-plan.md](system-model-library-plan.md) for the prioritized
 plan (SysML-side gaps, `com.symo.kerml.baselan`, KerML importer, kernel library accessory models, re-layering SysML on KerML).

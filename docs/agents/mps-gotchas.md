@@ -15,11 +15,32 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 
 
 
+## After editing a language aspect model, `MAKE` the language explicitly — a test run does not regenerate a language it considers up to date (2026-10-24)
+- A mutation in `…baselan.textGen` followed by a JUnit test run had **no effect**: the run used the previously generated/compiled aspect, so the mutation looked like a no-op — a mutation check "passed" that should have failed. `mps_mcp_alter_nodes MAKE` on the language module (`parameters={"modules":["<languageRef>"]}`) regenerated it, and the same mutation then failed as expected.
+- For any mutation check: rebuild the module you actually mutated, and confirm the change in `source_gen` (grep the regenerated line) instead of assuming the run picked it up. A green run after an unregenerated change proves nothing.
+
+## `mps_mcp_get_concept_details` crashes on its documented array form — pass one string per call (2026-10-24)
+- `conceptRefs` / `languageRefs` given as a JSON **array** abort with `MCP tool call has been failed: Index -1 out of bounds for length 0`, including a one-element array. The same value as a plain **string** works. Reproduced four ways (arrays of 3, 2 and 1, and a `languageRefs` array) against two successful string-form calls.
+- The tool description advertises the array form, so this is a tool defect, not misuse. Workaround: one string per call, several calls — so a "harvest every `featureId`" workflow needs one call per concept. Distinct from the 2026-08-28 entry about stale or incomplete descriptors.
+
+## Large tool payloads land in the *MPS host's* `/tmp`, which a sandboxed agent shell cannot read — and `execute_terminal_command` runs without a shell (2026-10-24)
+- Several tools (`get_project_structure`, `print_node`, `check_root_node_problems`, `query_nodes` on large results, `get_concept_details`) answer `{"ok":true,"data":"/tmp/mps-node-….json"}`. That file is written by the MPS process, not by the agent's shell: under a sandbox the agent's `/tmp` is a different mount, and the IDE's `read_file` refuses the path ("outside project, library, and SDK roots"). Either copy it out through `execute_terminal_command` into the workspace, or ask for inline payloads (`deep=false`, `onlyNodesWithProblems`, `sampleOnly`, a `scope`-narrowed query) so no temp file is produced.
+- `execute_terminal_command` starts the string as a **process**, not through a shell, unless `executeInShell: true` is passed: `&&`, `|`, `;` and redirections become arguments of the first binary (`ls -la x | head -20` dies with "unexpected argument '-2'"), and `mkdir -p out && cp a b` silently creates directories literally named `&&` and `cp` — in the terminal's cwd, which may be inside the project. Pass `executeInShell: true` for anything shell-like and remove any strays it created.
+
+## Behavior overriding is explicit (`overriddenMethod`), not inferred from name and signature — an unset reference silently yields a second, unrelated virtual method (2026-10-24)
+- Two `ConceptMethodDeclaration`s with the same name, parameters and return type do **not** override each other unless the subconcept's declaration sets `ConceptMethodDeclaration.overriddenMethod` to the base declaration. Symptom: the generated descriptors carry **different** `baseMethodId`s, and a caller dispatching through the base descriptor runs the base body on a subclass node. In `com.symo.sysmlv2.baselan` that meant a part usage's type was read through `ItemDefinitionRef.getEffectiveName` (link `definition`, property `itemDefinitionName`) and printed as empty, while `PartDefinitionRef.getEffectiveName` (`partDefinition` / `partDefinitionName`) was never reached.
+- Detect it mechanically: group the `SMethodBuilder…name(…).baseMethodId(…)` values across `source_gen/**/behavior/*__BehaviorDescriptor.java`. One `baseMethodId` = one virtual method, however many concept descriptors list it; several ids for one name = the overrides are not wired. See also the 2026-08-28 entry on `overriddenMethod` pointing outside the real supertype chain.
+- After unifying an accessor (one declaration on an interface every variant implements, `overriddenMethod` set on each override), a call through *any* participating concrete descriptor resolves to the shared virtual method. The old, "wrong" call target therefore keeps working and review cannot spot it from the call site: grep `source_gen` for the concrete descriptor (`*DefinitionRef__BehaviorDescriptor.<method>`) instead.
+
+## `parse_java_and_insert` can add a used language to the module descriptor as a side effect (2026-10-24)
+- With `postProcess.importUsedLanguages` on (the default), a `replace` insert added `<language slang="…jetbrains.mps.lang.behavior" version="2" />` to the solution's `.msd` although the inserted code used nothing from that language. Check `git diff` for the `.msd` after any insert; where the language is genuinely unused, revert the line and rebuild — the solution built cleanly without it and MPS did not re-add it (verified once, behavior language, iteration 003).
+
 ## Replacing a behavior method with `update_node SET CHILD` gives it a new id; fix callers per root (2026-10-24)
 - `update_node operation=SET kind=CHILD` on a `ConceptMethodDeclaration` (or any referenced node) creates a *new* node, so every caller in other roots dangles ("Unresolved reference: <name>" from
   `check_root_node_problems`). Edit the body in place instead (SET CHILD on the inner `ReturnStatement.expression` etc.), or run `alter_nodes FIX_REFERENCES` with `parameters={"nodeReference": "<root>"}`
   on each caller root (typesystem rules, other behaviors, test roots) — it needs a single root per call, not a model list, and only works while the reference still carries its resolve name. A call node you
   create yourself carries none: point it with `update_node SET REFERENCE` (`references=[[callNode,"baseMethodDeclaration",newMethodRef]]`).
+- When many call sites dangle at once (26 `StaticMethodCall`s after a `parse_java_and_insert` `replace` of a helper method), one batched `update_node SET REFERENCE` with a list of `[callNode,"baseMethodDeclaration",newMethodRef]` triplets fixes all of them in a single call — no per-root `FIX_REFERENCES` sweep needed. `FIND_USAGES` on the *class* that held the old method lists those call nodes; their `concept` is `StaticMethodCall`.
 - The `update_node` mandatory arguments are both `operation` (`ADD`/`SET`/`DELETE`) and `kind` (`CHILD`/`PROPERTY`/`REFERENCE`).
 
 ## Writing a Java-API importer through `parse_java_and_insert`: stub-model resolution, short concept names, missing JDK methods (2026-10-22)
@@ -30,6 +51,7 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 - `parse_java_and_insert` in `replace`/`child` mode with a `contextNodeRef` does **not** see the class's imports: write fully qualified type names in the snippet, otherwise the result is full of
   `UnknownInstanceMethodCall`. Replacing a method gives it a new node id, so every caller dangles until `FIX_REFERENCES` on the class. The call also echoes a detached `Unknown…Call` root for an expression replace;
   the model itself is fine — print the owning root to confirm.
+- A recipe that reached `problems: []` on the first try (iteration 003, two static methods of a test helper): fully qualify **every** type in the snippet (`org.jetbrains.mps.openapi.model.SModel`, `jetbrains.mps.project.Project`, `java.util.concurrent.Future`, …) and use a JDK holder — `final java.util.concurrent.atomic.AtomicReference<Future<TextGenResult>> pending = new AtomicReference<…>()` — instead of the closures idiom `Wrappers._T<T>`. Unqualified `SModel`/`Wrappers._T` alone produced 20 problems (unresolved class, then cascading `UnknownInstanceMethodCall`/`UnknownNew`). Which of the two changes made `Wrappers._T` resolvable is unverified.
 - The MPS JDK stub misses newer methods (`List.of`): the call becomes an `UnknownDotCall` and generation fails with "No textgen for UnknownDotCall". Use `Arrays.asList`/`ArrayList`.
 - `SAbstractConcept.getName()` is the **short** name; the qualified one is `getQualifiedName()`. Looking concepts up by `endsWith("." + name)` finds nothing. `SLanguage.getConcepts()` works but is deprecated for removal.
 - Never wait for `TextGeneratorEngine.generateText(model)`'s future while holding a read action: a pending write (dispose, save, VCS) makes the engine's worker threads wait for the lock the test thread
@@ -472,6 +494,13 @@ rebuild works and it persists from then on.
 **How to apply:** create the run config for a new test root *after* the test module's clean rebuild,
 not before; if `execute_run_configuration` reports it missing, just re-create it (the call replaces by
 name, so it's idempotent).
+
+**Not characterised — do not rely on the narrower reading.** Iteration 002 also lost every config after a
+`MAKE` of the *language* module (a plain make, no `rebuild=true`), while several `MAKE`s of the test
+solution in iteration 003 left 26 configs in place. So "may vanish on any rebuild" is the safe rule
+(the language-module case was observed once); recreate after the last rebuild rather than assuming
+survival. Also note the tool can only target a root node — a model/solution-scoped JUnit suite
+(`Tests in '…'`) cannot be created through MCP at all, only per test class.
 
 ## No MCP node tool deletes a *root* node — use a console `#instances(...).where(...).forEach(n -> n.delete)` (2026-10-12)
 
