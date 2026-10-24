@@ -72,6 +72,14 @@ Measured live over `Attributes`, `Ports`, `Parts` (the remaining files follow in
   becomes a regression test), 014 import forms (visibility, `::*`, `all`), 015 `ref` usages in the importer, 016 `abstract`,
   017 `alias`; design decisions above before name resolution of imports.
 
+### Iteration 013 result (2026-10-24, archive `013-sysml-library-package`)
+- `SysMLv2LibraryPackage < SysMLv2Package` (`isStandard`), editor with `standard` flag, textGen, importer dispatch sharing the
+  package body helper. Tests: 2 editor tests, a NodesTestCase (state, qualified-name scope), 4 round trips, the 26-case matrix
+  (19 import, 7 pinned as rejected; the 012 summary "17/9" was a miscount, the table says 18/8). Full run 340 tests / 123
+  classes, only the 2 known plantuml failures.
+- Probe: `Attributes`, `Ports`, `Parts` now fail at `private import` (visibility prefix), the target of 014. The matrix cases
+  flip as 014-017 implement them.
+
 ## Part B: KerML base language (`com.symo.kerml.baselan`, test solution `test.com.symo.kerml.baselan`)
 - Phase 0: register the modules in `com.fasten.meta.architecture` + README project structure; create the importer solution
   `com.symo.kerml.baselan.importer` and its test solution `test.com.symo.kerml.baselan.importer` (separate from the SysML importer:

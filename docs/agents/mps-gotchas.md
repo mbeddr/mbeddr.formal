@@ -13,6 +13,61 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
 
+## Property assignment in baseLanguage cannot come from `parse_java_and_insert`: reuse an existing statement as AST (2026-10-24)
+
+`parse_java_and_insert` binds `x.prop = v` to `assignEnum` or makes a dynamic reference, and Java text has no scope for
+test-model references (`myProject`, `TestUtils`, `Assert`). Copy an existing resolved statement or test method (print it
+deep, insert the copy) and change only literals or references with `update_node` (`SET CHILD` / `SET REFERENCE`). Role
+names that bite: `ForeachStatement` has `iterable`/`variable`/`body`, `AssignmentExpression` has `lValue`/`rValue`.
+
+## A node copied from a print gets the printer's display string as `name`; unset with `null`, not `""` (2026-10-24)
+
+A printed-and-reinserted node carries `<no name>[...]` as its `name`. Use `null` in `update_node` to unset it, because
+MPS distinguishes unset from the empty string.
+
+## Mutation-checking a mandatory reference: dropping it leaves a stale descriptor and the test passes for the wrong reason (2026-10-24)
+
+Mutate behavior (rename the flag text) or the expectation instead.
+
+## A subconcept inherits neither editor nor TextGen (2026-10-24)
+
+`SysMLv2LibraryPackage < SysMLv2Package` needed its own editor and its own `TextGenDeclaration`. Reuse the parent's cell
+tree by copying it into the subconcept's editor, and give the textgen the same body.
+
+## `execute_run_configuration` truncates `output` at about 10 KB; the result is in `fullOutputPath` (2026-10-24)
+
+Grep `<START_TEST>` / `TEST_FAILURE_BEGIN` in the log at `fullOutputPath`, not in the returned text.
+
+## `insert_root_node_from_json` plain-name resolution is type-dependent: typed refs resolve by name, untyped `BaseConcept` refs do not (2026-10-24)
+
+When a blueprint uses a plain-name `{"role": …, "target": "<name>"}` for an intra-subtree reference, whether it
+auto-resolves depends on the reference's declared target **type**. Typed references resolve by name inside the same
+inserted blueprint — `VariableReference.variableDeclaration`, `TestNodeReference.declaration` (→ `TestNodeAnnotation`),
+`SysMLv2ItemDefinitionRef.definition`. **Untyped `BaseConcept` references do not**: `ScopesTest.checkingReference` and
+`ScopesExpectedNode.ref` both came back as `Unresolved reference: <name>` in the inserted tree (and `check_root_node_problems`
+then reports the node's own error, e.g. `ScopesTest … should specify reference link to check`). The fix is a second
+`update_node SET REFERENCE` pass pointing those at the freshly allocated node refs (`r:…/<nodeId>`) after the insert.
+This is a sharper rule than the "use plain name for intra-subtree self-references" note above: plain name works only
+for *typed* self-references; for `BaseConcept`-typed roles, plan the post-insert `SET REFERENCE` pass up front.
+
+## baseLanguage try/catch: `MultipleCatchClause`'s body role is `catchBody`, and a single catch type is wrapped in `AlternativeType` (2026-10-24)
+
+Authoring a `try { … } catch (RuntimeException e) { … }` as a blueprint, two shapes are not obvious from a deep
+`print_node`: the `MultipleCatchClause`'s containment role for the handler body is **`catchBody`** (not `body`), and the
+`CatchVariable`'s `type` child must be an **`AlternativeType`** wrapping the `ClassifierType` even for a single
+exception class (it is the `A | B | …` union node). Getting either wrong fails the dry-run with `Unknown child role
+'body'` and `Node 'e' cannot be parent of node '(instance of ClassifierType)'` respectively. JDK classifiers/methods are
+referenced by their stable pointer form, e.g. `6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)/~RuntimeException`
+and `…/~Throwable.getMessage%28%29` (see the JDK-stub note elsewhere in this file).
+
+## `de.itemis.mps.compare` `AssertNodeEquals` ignores `TestNodeAnnotation` smodel attributes and diffs properties (2026-10-24)
+
+`AssertNodeEquals(expected = <label>, actual = <label>)` between two labelled fixtures ignores the `TestNodeAnnotation`
+`smodelAttribute` (so the labels may differ without failing) and diffs the node's properties — which is a clean way to
+"assert state" of a boolean property (e.g. `isStandard`) without any property-access expression or low-level
+`SPropertyOperations`. Evidence: an existing green test compares a *computed* node (no annotation) against a labelled
+fixture, which could only pass if attributes are ignored.
+
 ## An `EditorCellId` child sets its id through the `name` property
 A cell model's explicit id is a child `EditorCellId` (role `id`) whose property is `name` (not `cellId`).
 Setting `shortDescription` on it silently does nothing. Check the generated builder for `setCellId` after a
