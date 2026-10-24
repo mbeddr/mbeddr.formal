@@ -73,3 +73,5 @@ padding is not. Then stop and wait for the architect's refinement.
 - Constraints stay in the constraints aspect.
 - No helper scripts in the repo (throwaway scripts only under `/tmp`).
 - A new general MPS gotcha goes into `docs/agents/mps-gotchas.md`.
+- Never restate a suite result (counts, "green") in a document without having run it
+  or citing the run it comes from.

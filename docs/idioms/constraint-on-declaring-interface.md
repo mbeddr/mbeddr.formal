@@ -30,6 +30,12 @@ concept-specific one can coexist and both apply (useful when one implementer gen
 - For a property declared on a shared interface, put its validator on `<Interface>_Constraints`.
 - Search for pre-existing validators across all implementers before assuming none exists yet (an
   interface-level constraints root may already be there, just never used for this exact property).
+- The same principle covers **behavior**: a method every implementer must provide belongs as an abstract
+  method on the interface's own `ConceptBehavior`, with `overriddenMethod` set on each implementer's
+  method, so all callers dispatch through one virtual method instead of each implementer declaring an
+  unrelated one. Overriding is **explicit** in MPS — an unset `overriddenMethod` silently yields a second,
+  unrelated method whose calls reach the wrong body; see the 2026-10-24 entry in
+  [mps-gotchas.md](../agents/mps-gotchas.md).
 
 ## When this doesn't apply
 

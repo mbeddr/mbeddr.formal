@@ -20,7 +20,7 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 - For any mutation check: rebuild the module you actually mutated, and confirm the change in `source_gen` (grep the regenerated line) instead of assuming the run picked it up. A green run after an unregenerated change proves nothing.
 
 ## `mps_mcp_get_concept_details` crashes on its documented array form — pass one string per call (2026-10-24)
-- `conceptRefs` / `languageRefs` given as a JSON **array** abort with `MCP tool call has been failed: Index -1 out of bounds for length 0`, including a one-element array. The same value as a plain **string** works. Reproduced four ways (arrays of 3, 2 and 1, and a `languageRefs` array) against two successful string-form calls.
+- `conceptRefs` / `languageRefs` given as a JSON **array** abort with `MCP tool call has been failed: Index -1 out of bounds for length 0`, including a one-element array. The same value as a plain **string** works. Reproduced four ways (arrays of 3, 2 and 1, and a `languageRefs` array) against two successful string-form calls. The same happens with `names` of `mps_mcp_search_root_node_by_name` (iteration 005): a plain string works, an array fails.
 - The tool description advertises the array form, so this is a tool defect, not misuse. Workaround: one string per call, several calls — so a "harvest every `featureId`" workflow needs one call per concept. Distinct from the 2026-08-28 entry about stale or incomplete descriptors.
 
 ## Large tool payloads land in the *MPS host's* `/tmp`, which a sandboxed agent shell cannot read — and `execute_terminal_command` runs without a shell (2026-10-24)

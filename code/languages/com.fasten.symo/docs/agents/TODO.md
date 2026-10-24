@@ -19,9 +19,8 @@ are not comparable. Current state:
   `BTestCase` `_010_test_sysmlv2_toolchain_Test` does **not** execute under the suite configuration —
   why is unverified (audit finding F-16, unfixed).
 - **SysML v2 language** (`test.com.symo.sysmlv2.baselan`): **36 test classes** (7 scope + 26 editor + 3
-  checking-rule roots), green when last run in iteration 001. **Not re-run since** — iteration 002 then
-  changed the language's behavior and textGen aspects, so treat baselan green as *unverified* for
-  `70d759e0` and later. Re-running it is a cheap, worthwhile check before any acceptance that cites it.
+  checking-rule roots), green: 36/36 per class in iteration 001, and again 36/36 in iteration 005 (before and after the two
+  renames), i.e. after iteration 002's change to the behavior and textGen aspects.
 - `Tests in '...'` suite configurations exist only when the user creates them in the IDE; the MCP tools
   cannot create model-scoped suites (see root `mps-gotchas.md`).
 
