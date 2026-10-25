@@ -381,12 +381,31 @@
     <ref role="1XX52x" to="5rf1:3PUPjB2ukTG" resolve="SysMLv2Import" />
     <node concept="3EZMnI" id="3PUPjB2uvh4" role="2wV5jI">
       <node concept="l2Vlx" id="3PUPjB2uvh5" role="2iSdaV" />
+      <node concept="3F0A7n" id="6jpO12DVKJ5" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:6jpO12DyoSZ" resolve="visibility" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="3F0ifn" id="3PUPjB2vGeh" role="3EZMnx">
         <property role="3F0ifm" value="import" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
+      <node concept="1kHk_G" id="6jpO12E17d$" role="3EZMnx">
+        <property role="ZjSer" value="all" />
+        <ref role="1NtTu8" to="5rf1:6jpO12DYx_T" resolve="isImportAll" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="3F0A7n" id="3PUPjB2uvh8" role="3EZMnx">
         <ref role="1NtTu8" to="5rf1:3PUPjB2uof9" resolve="importedName" />
+      </node>
+      <node concept="1kHk_G" id="6jpO12E17dB" role="3EZMnx">
+        <property role="ZjSer" value="::*" />
+        <ref role="1NtTu8" to="5rf1:6jpO12DYx_Z" resolve="isNamespace" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="6jpO12E17dE" role="3EZMnx">
+        <property role="ZjSer" value="::**" />
+        <ref role="1NtTu8" to="5rf1:6jpO12DYx_W" resolve="isRecursive" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="3F0ifn" id="3PUPjB2vGeE" role="3EZMnx">
         <property role="3F0ifm" value=";" />

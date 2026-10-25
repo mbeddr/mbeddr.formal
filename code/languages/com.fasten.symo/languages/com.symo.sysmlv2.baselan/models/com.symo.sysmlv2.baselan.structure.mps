@@ -151,6 +151,26 @@
       <property role="TrG5h" value="importedName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
+    <node concept="1TJgyi" id="6jpO12DyoSZ" role="1TKVEl">
+      <property role="IQ2nx" value="7267068243721424447" />
+      <property role="TrG5h" value="visibility" />
+      <ref role="AX2Wp" node="6jpO12DyoSb" resolve="SysMLv2VisibilityKind" />
+    </node>
+    <node concept="1TJgyi" id="6jpO12DYx_T" role="1TKVEl">
+      <property role="IQ2nx" value="7267068243728800121" />
+      <property role="TrG5h" value="isImportAll" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6jpO12DYx_W" role="1TKVEl">
+      <property role="IQ2nx" value="7267068243728800124" />
+      <property role="TrG5h" value="isRecursive" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6jpO12DYx_Z" role="1TKVEl">
+      <property role="IQ2nx" value="7267068243728800127" />
+      <property role="TrG5h" value="isNamespace" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3PUPjB2$P9d">
     <property role="EcuMT" value="4430087627526591053" />
@@ -1253,6 +1273,25 @@
       <property role="IQ2nx" value="7267068243654035156" />
       <property role="TrG5h" value="isStandard" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+  </node>
+  <node concept="25R3W" id="6jpO12DyoSb">
+    <property role="3F6X1D" value="7267068243721424395" />
+    <property role="TrG5h" value="SysMLv2VisibilityKind" />
+    <node concept="25R33" id="6jpO12DyoSd" role="25R1y">
+      <property role="3tVfz5" value="7331387764471531571" />
+      <property role="TrG5h" value="public" />
+      <property role="1L1pqM" value="public" />
+    </node>
+    <node concept="25R33" id="6jpO12DyoSe" role="25R1y">
+      <property role="3tVfz5" value="7273074853500659068" />
+      <property role="TrG5h" value="private" />
+      <property role="1L1pqM" value="private" />
+    </node>
+    <node concept="25R33" id="6jpO12DyoSf" role="25R1y">
+      <property role="3tVfz5" value="6478655565935438660" />
+      <property role="TrG5h" value="protected" />
+      <property role="1L1pqM" value="protected" />
     </node>
   </node>
 </model>

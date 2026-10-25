@@ -139,6 +139,11 @@
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
+      <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
+        <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
+        <property id="7267068243721424447" name="visibility" index="3dk5SJ" />
+        <property id="4430087627524899785" name="importedName" index="3Z0PrK" />
+      </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
       </concept>
@@ -2462,36 +2467,71 @@
       </node>
     </node>
   </node>
-  <node concept="LiM7Y" id="6jpO12_Ed$3">
-    <property role="TrG5h" value="_110_LibraryPackage_TypeStandard" />
-    <property role="3YCmrE" value="typing standard at the library package keyword sets isStandard" />
-    <node concept="1qefOq" id="6jpO12_Ed$4" role="25YQCW">
-      <node concept="2h0jOr" id="6jpO12_Ed$6" role="1qenE9">
+  <node concept="LiM7Y" id="6jpO12DMpIx">
+    <property role="3YCmrE" value="typing private at the import visibility cell sets visibility" />
+    <property role="TrG5h" value="_100_Import_TypeVisibility" />
+    <node concept="1qefOq" id="6jpO12DMpIy" role="25YQCW">
+      <node concept="2h0jOr" id="6jpO12DMpI$" role="1qenE9">
         <property role="TrG5h" value="demo" />
-        <node concept="31n9r3" id="6jpO12_Ed$7" role="2h0jOs">
-          <property role="TrG5h" value="lib" />
-          <node concept="LIFWc" id="6jpO12_Ed$8" role="lGtFl">
-            <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
-            <property role="LIFWd" value="Constant_p0xxo_c0a" />
+        <node concept="3Z0THl" id="6jpO12DMpI_" role="2h0jOs">
+          <property role="3Z0PrK" value="A::B" />
+          <node concept="LIFWc" id="6jpO12DMpIA" role="lGtFl">
+            <property role="LIFWd" value="property_visibility" />
             <property role="OXtK3" value="true" />
             <property role="p6zMq" value="0" />
             <property role="p6zMs" value="0" />
+            <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
           </node>
         </node>
       </node>
     </node>
-    <node concept="1qefOq" id="6jpO12_Ed$9" role="25YQFr">
-      <node concept="2h0jOr" id="6jpO12_Ed$b" role="1qenE9">
+    <node concept="1qefOq" id="6jpO12DMpIB" role="25YQFr">
+      <node concept="2h0jOr" id="6jpO12DMpID" role="1qenE9">
         <property role="TrG5h" value="demo" />
-        <node concept="31n9r3" id="6jpO12_Ed$c" role="2h0jOs">
-          <property role="31n9r4" value="true" />
-          <property role="TrG5h" value="lib" />
+        <node concept="3Z0THl" id="6jpO12DMpIE" role="2h0jOs">
+          <property role="3Z0PrK" value="A::B" />
+          <property role="3dk5SJ" value="6jJ9KHVIUlW/private" />
         </node>
       </node>
     </node>
-    <node concept="3clFbS" id="6jpO12_Ed$d" role="LjaKd">
-      <node concept="2TK7Tu" id="6jpO12_Ed$e" role="3cqZAp">
-        <property role="2TTd_B" value="standard" />
+    <node concept="3clFbS" id="6jpO12DMpIF" role="LjaKd">
+      <node concept="2TK7Tu" id="6jpO12DMpIG" role="3cqZAp">
+        <property role="2TTd_B" value="private" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="6jpO12Efs7c">
+    <property role="3YCmrE" value="deleting the namespace flag unsets isNamespace" />
+    <property role="TrG5h" value="_120_Import_DeleteNamespaceFlag" />
+    <node concept="1qefOq" id="6jpO12Efs7d" role="25YQCW">
+      <node concept="2h0jOr" id="6jpO12Efs7f" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z0THl" id="6jpO12Efs7g" role="2h0jOs">
+          <property role="3Z0PrK" value="A::B" />
+          <property role="3d8W_J" value="true" />
+          <node concept="LIFWc" id="6jpO12Efs7h" role="lGtFl">
+            <property role="LIFWd" value="flag_isNamespace" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+            <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="6jpO12Efs7i" role="25YQFr">
+      <node concept="2h0jOr" id="6jpO12Efs7k" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z0THl" id="6jpO12Efs7l" role="2h0jOs">
+          <property role="3Z0PrK" value="A::B" />
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="6jpO12Efs7m" role="LjaKd">
+      <node concept="2HxZob" id="6jpO12Efs7n" role="3cqZAp">
+        <node concept="3iKlGA" id="6jpO12Efs7p" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Delete_Action" />
+        </node>
       </node>
     </node>
   </node>
