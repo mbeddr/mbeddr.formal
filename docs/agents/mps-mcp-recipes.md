@@ -18,6 +18,8 @@ Everything here goes through the MCP tools; node trees larger than 4 KB are pass
   — **omitting the target deletes the link/property**.
 - `update_root_node_from_json` with `operation: DELETE` is the only way to delete a root. Delete + re-insert changes ids.
 - `query_nodes`: `FIND_INSTANCES` {conceptRef, modelFilter}, `FIND_USAGES` {nodeReference}, `GET_PARENT` {nodeReference}.
+- `parse_java_and_insert` `featureKind: METHOD|FIELD|NESTED_CLASS|CLASS_CONTENT` now requires `contextNodeRef` (the target Classifier) in addition to
+  `insert.parentRef`; without it the call fails with "`contextNodeRef` is required for featureKind 'METHOD'".
 - `create_run_configuration` takes a **root node** reference (not a model); configurations disappear after a `rebuild:true` make of the test module and must
   be recreated. `execute_run_configuration` {configurationName, waitForExit, timeout}; the full log path is in the result (`.../system/tmp/ij_run__*.log`;
   count `<START_TEST>` vs `TEST_FAILURE_BEGIN` with grep).

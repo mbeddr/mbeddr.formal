@@ -13,6 +13,34 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
 
+## Printed/cloned test code can carry the Console `#project` expression into a test model (2026-10-25)
+
+When a test method is copied from a JSON printout, inspect every project expression in the clone. A copied
+`jetbrains.mps.console.base.structure.ProjectExpression` is valid only in the Console; in a test method it may be
+accepted structurally but generate an invalid receiver such as `.getProject()`. Replace it with
+`jetbrains.mps.lang.test.structure.ProjectExpression`, the BaseLanguage expression used by test models, and then run
+`check_root_node_problems` plus an explicit build. This surfaced while cloning round-trip methods: both clones had to
+replace the copied `#project` child before their generated Java compiled.
+
+## smodel property access requires a statically typed node; cast a generic Java `SNode` first (2026-10-25)
+
+`SPropertyAccess` is applicable to `node<X>`, not to a BaseLanguage variable whose static type is the generic Java
+`org.jetbrains.mps.openapi.model.SNode`. If an importer visitor stores a freshly created node in an `SNode` local,
+`n.someProperty = value` therefore produces `operation is not applicable to SNode` in the MPS checker. Wrap the
+operand in a strict `SNodeTypeCastExpression` targeting the concept or interface that declares the property, then use
+that cast as the `SPropertyAccess` operand. A generated Java build alone may miss this language-level checker error.
+
+
+## A try/catch "rejected" test must assert that it throws, or a construct that starts importing passes silently (2026-10-25)
+
+A "this construct is rejected" test written as `try { parse; dispose } catch (RuntimeException e) { Assert.assertEquals(expected, e.getMessage()) }`
+only checks the *message* when an exception **is** thrown. If the construct starts importing (no exception), the `catch` is never
+entered, `assertEquals` never fires, and the case **silently passes** — so it cannot detect "now imports" for a previously-rejected
+construct. Fix: put an `Assert.fail("case N expected rejection")` right after the parse (before dispose) inside the `try`. `Assert.fail`
+throws `AssertionError`, which `catch (RuntimeException e)` does not catch, so the case fails when the construct imports. In
+`jetbrains.mps.baseLanguage.unitTest` the node is `Fail` (child `message` → `Message` → `message` → string expression). Mutation-proof it
+by temporarily pointing a rejected case's input at a construct that imports: the case must fail with the "expected rejection" message.
+
 ## grammarcells `FlagCell` type-to-reveal only works when the flag starts a cell collection (2026-10-25)
 
 Typing a `FlagCell`'s `flagText` at a caret cell to reveal a hidden flag (the `TypeKeyStatement` editor-test idiom) fires

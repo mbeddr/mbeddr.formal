@@ -91,3 +91,26 @@ padding is not. Then stop and wait for the architect's refinement.
 - A new general MPS gotcha goes into `docs/agents/mps-gotchas.md`.
 - Never restate a suite result (counts, "green") in a document without having run it
   or citing the run it comes from.
+
+## Session hygiene (do before the first edit — keeps a session target-oriented)
+
+1. **Load the specific skill + its `references/` fully, not skimmed.** The task decides which:
+   `mps-node-editing` (+ `references/json-format.md`, `troubleshooting.md`, `staged-construction.md`),
+   `mps-aspect-editor`, `mps-aspect-textgen`, `mps-aspect-structure-concepts`, `mps-aspect-actions`,
+   `mps-baselanguage`, `mps-model-manipulation`. `json-format.md` documents the exact blueprint shape and
+   name-vs-`r:` reference resolution; `troubleshooting.md` says "unknown role → `mps_mcp_get_concept_details`".
+   Do not reverse-engineer these by failed inserts.
+2. **Front-load full reads** of `docs/agents/mps-gotchas.md` and `docs/agents/mps-mcp-recipes.md` (not just the head):
+   >4 KB blueprint → file path, file path must be in MPS's temp dir, tool-arg shapes (`MOVE_CHILD` uses
+   `childNodeRef`), the force-save recipe, AST-reuse-for-tests.
+3. **Consult the repo's own docs/idioms before decompiling MPS jars or MCP bytecode.** Only decompile when a behaviour is
+   genuinely undocumented — then add the finding to the gotchas file, once.
+4. **Use a persistent scratch helper** (the git-ignored `.dsh/` scratch is fine — it is not "the repo"): a patched MCP
+   client (POST timeout ≥ 600 s, not 30 s), a `to_blueprint()` printer→blueprint normaliser, and an insert helper that
+   auto-chooses inline vs MPS-temp file path. Write scripts to files and run them; avoid giant `bash` heredocs.
+5. **Use a project-local `*-dsl` skill when it exists** (`.claude/skills/<dsl>-dsl/`); if it is missing or stale, offer to
+   generate/refresh it via `mps-dsl-memory` instead of re-exploring the language each session.
+6. **Known high-cost traps (iteration 014):** enum property assignment needs `Property_SetOperation` + `EnumMemberReference`
+   (role `decl`), not `AssignmentExpression`; grammarcells `OptionalCell`/`FlagCell` type-to-reveal needs a start-of-collection
+   keyword; the MCP `Empty enumeration property` on a nullable enum is a false positive; `execute_run_configuration` output is
+   truncated at ~10 KB — grep `fullOutputPath` for `<START_TEST>`/`TEST_FAILURE_BEGIN`.

@@ -66,8 +66,12 @@ Measured live over `Attributes`, `Ports`, `Parts` (the remaining files follow in
 - Kernel stubs needed for these three files: `Base::DataValue`, `Base::dataValues`, `Objects::Object`, `Objects::objects`, plus
   names the files use without importing (implicit standard-library scope: `timeEnclosedOccurrences`, `enactedPerformances`,
   `ownedPerformances`, ...). Forward references inside a package are required (`Ports.sysml:23` subsets a later `ports`).
-- Open design decisions (before the iterations that need them): import as a reference instead of a string; the implicit
-  standard-library scope (model it, do not patch the sources, ADR 0001).
+- Design decisions (user, 2026-10-25): **(1) Import keeps the string `importedName` and gains a reference to the imported
+  element; the reference is preferred when set (when the name can be reified), the string stays as the fallback.** No big
+  restructuring of `SysMLv2Import`; the membership/namespace split is not forced by this. **(2) The implicit standard-library
+  scope is modelled by default scoping:** the imported standard library models are in scope by default (no patching of
+  sources, ADR 0001). Both are scheduled as iterations after the prefix/modifier forms (`abstract`, `alias`, member
+  visibility, `ref`), before name resolution of the library files.
 - Proposed build iterations (one slice each): 013 `library package` (concept, editor, textgen, importer; the 26-case matrix
   becomes a regression test), 014 import forms (visibility, `::*`, `all`), 015 `ref` usages in the importer, 016 `abstract`,
   017 `alias`; design decisions above before name resolution of imports.
