@@ -13,6 +13,43 @@ Tool argument shapes and step-by-step authoring workflows (editors, behavior, te
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
 
+## grammarcells `FlagCell` type-to-reveal only works when the flag starts a cell collection (2026-10-25)
+
+Typing a `FlagCell`'s `flagText` at a caret cell to reveal a hidden flag (the `TypeKeyStatement` editor-test idiom) fires
+only when the flag is the **first cell of its collection** — e.g. `standard` before `library package` (the 013
+`_110_LibraryPackage_TypeStandard` test). A flag placed **mid-collection** (`import [all] {name}[::*][::**];` — `all`
+after `import`, `::*`/`::**` after the name) does not reveal when you type the flag text at either neighbour; the flag
+stays `false` (`Different property: isImportAll = false, expected: true`). An editor test for a mid-collection flag
+needs a side-transformation action, not `TypeKeyStatement`.
+
+## Enum-property assignment in smodel must be `Property_SetOperation`, not baseLanguage `AssignmentExpression` (2026-10-25)
+
+`imp.enumProp = X` (X an MPS enumeration member) has no textGen if written as `AssignmentExpression` with an
+`EnumMemberReference` RHS — the make fails with `No textgen for jetbrains.mps.lang.smodel.structure.EnumMemberReference`.
+The smodel generator reduces enum assignment only when the RHS lives inside a `Property_SetOperation`, i.e.
+`DotExpression(operand = DotExpression(node, SPropertyAccess(prop)), operation = Property_SetOperation(value =
+EnumMemberReference(decl = <member-node-ref>)))`. `EnumMemberReference`'s reference role is **`decl`** (the skill doc
+says `member`; the concept actually declares `decl`), and it generates to `SPropertyOperations.setEnum(node, prop, id, name)`.
+String/int/boolean assignments keep using `AssignmentExpression`.
+
+## `check_root_node_problems` flags a nullable enum as "Empty enumeration property" — a false positive (2026-10-25)
+
+An enumeration **without** a `defaultMember` is nullable (unset = null), which is valid MPS. The MCP server's
+`check_root_node_problems` nevertheless reports `Empty enumeration property` (severity error) on any instance whose
+enum property is unset — its own heuristic (`PropertyState.isEmptyEnum`), not MPS's typechecking, so it does **not**
+fail the make or the JUnit run. The round-trip and editor tests that use an unset-visibility fixture pass despite the
+diagnostic. Treat it as noise for nullable enums; do not add a default member just to silence it (a default would make
+`import X;` indistinguishable from `public import X;`).
+
+## grammarcells `OptionalCell` requires a leading constant keyword — a bare enum property is not "supported content" (2026-10-25)
+
+`com.mbeddr.mpsutil.grammarcells` `OptionalCell` generates its collapsed/transformation text from the first
+`CellModel_Constant` inside `option`; a wrapper whose only content is a `CellModel_Property` (e.g. an enum that renders
+its own keyword) makes the grammarcells generator dismiss the rule with `Content of optional cell is not supported`.
+For an optional enum/keyword property with no separate keyword constant, use a plain `CellModel_Property` (it still
+accepts typing the enum literal to set the property) rather than `OptionalCell`; a `FlagCell` covers the boolean
+keyword case.
+
 ## Property assignment in baseLanguage cannot come from `parse_java_and_insert`: reuse an existing statement as AST (2026-10-24)
 
 `parse_java_and_insert` binds `x.prop = v` to `assignEnum` or makes a dynamic reference, and Java text has no scope for

@@ -9,7 +9,9 @@ Everything here goes through the MCP tools; node trees larger than 4 KB are pass
   REFERENCE: `references=[[nodeRef, role, targetRef], ...]`, `null` clears. CHILD: `childRole` + `childJson` (inline or file).
   `SET CHILD` with `childNodeRef` and **no** `childJson` deletes that child; **with** `childJson` it replaces it (the replacement gets a **new id**,
   so references to it break). Triplets for several nodes can be batched in one call (the `nodeReference` is only an anchor).
-- `alter_nodes`: `parameters` is a JSON object. `MOVE_NODE_TO_PARENT` {nodeReference,newParentRef,role}; `MAKE` {modules:[...], rebuild:true}.
+- `alter_nodes`: `parameters` is a JSON object. `MOVE_NODE_TO_PARENT` {nodeReference,newParentRef,role};
+  `MOVE_CHILD` {nodeReference,childRole,childNodeRef,position} (0-based, `-1` appends) — note the child param is
+  **`childNodeRef`**, not `childNodeReference`; `MAKE` {modules:[...], rebuild:true}.
 - `alter_structure` (`parameters` JSON object): `CREATE_CONCEPTS` {structureModelRef, conceptsJson | interfaceConceptsJson (file path), make};
   `CREATE_ENUM` {structureModelRef, enumName, valuesJson:[{enumName,presentation}], defaultEnumName};
   `UPDATE_CONCEPT_CHILD|REFERENCE|PROPERTY` {conceptRef (root node ref), role|propertyName, targetConcept|dataType, multiple, optional}

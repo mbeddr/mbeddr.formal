@@ -80,6 +80,16 @@ Measured live over `Attributes`, `Ports`, `Parts` (the remaining files follow in
 - Probe: `Attributes`, `Ports`, `Parts` now fail at `private import` (visibility prefix), the target of 014. The matrix cases
   flip as 014-017 implement them.
 
+### Iteration 014 result (2026-10-25, archive `014-sysml-import-forms`)
+- `SysMLv2Import` got `visibility` (nullable enum `SysMLv2VisibilityKind`, unset = spec default public; plain property cell,
+  grammarcells cannot hide a bare enum), `isImportAll`, `isNamespace`, `isRecursive` (flags); filter packages stay rejected
+  (`filter package`). Tests: 8 round trips, 2 editor tests (type visibility; delete the `::*` flag), matrix now 30 cases.
+  Full run 354 tests / 125 classes, only the 2 known plantuml failures. Duplicate 013 editor test root removed.
+- Probe over 21 files: no first rejection is an import form. `Attributes` stops at `alias`, `Ports` and `Parts` at the
+  `abstract` definition prefix (not `ref`); `Requirements` and `Interfaces` at `visibility prefix on package member`.
+- Plan change: next `abstract` (015), then `alias` (016), visibility on package members (017), `ref` (018); the import-as-
+  reference and implicit-scope design decisions still come before name resolution.
+
 ## Part B: KerML base language (`com.symo.kerml.baselan`, test solution `test.com.symo.kerml.baselan`)
 - Phase 0: register the modules in `com.fasten.meta.architecture` + README project structure; create the importer solution
   `com.symo.kerml.baselan.importer` and its test solution `test.com.symo.kerml.baselan.importer` (separate from the SysML importer:
