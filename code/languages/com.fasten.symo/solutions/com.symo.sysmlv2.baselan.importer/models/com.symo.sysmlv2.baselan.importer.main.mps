@@ -3296,29 +3296,16 @@
           </node>
         </node>
         <node concept="3clFbJ" id="5oZmK$OFbM4" role="3cqZAp">
-          <node concept="22lmx$" id="5oZmK$OFbM5" role="3clFbw">
-            <node concept="3y3z36" id="5oZmK$OFbM6" role="3uHU7B">
-              <node concept="2OqwBi" id="5oZmK$OFclm" role="3uHU7B">
-                <node concept="37vLTw" id="5oZmK$OFc0A" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7JKstLNi70L" resolve="prefix" />
-                </node>
-                <node concept="liA8E" id="5oZmK$OFcln" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
-                </node>
+          <node concept="3y3z36" id="6jpO12EupSj" role="3clFbw">
+            <node concept="2OqwBi" id="6jpO12EupSm" role="3uHU7B">
+              <node concept="37vLTw" id="6jpO12EupSp" role="2Oq$k0">
+                <ref role="3cqZAo" node="7JKstLNi70L" resolve="prefix" />
               </node>
-              <node concept="10Nm6u" id="5oZmK$OFbM8" role="3uHU7w" />
-            </node>
-            <node concept="3y3z36" id="5oZmK$OFbM9" role="3uHU7w">
-              <node concept="2OqwBi" id="5oZmK$OFcly" role="3uHU7B">
-                <node concept="37vLTw" id="5oZmK$OFceX" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7JKstLNi70L" resolve="prefix" />
-                </node>
-                <node concept="liA8E" id="5oZmK$OFclz" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.INDIVIDUAL()" resolve="INDIVIDUAL" />
-                </node>
+              <node concept="liA8E" id="6jpO12EupSq" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.INDIVIDUAL()" resolve="INDIVIDUAL" />
               </node>
-              <node concept="10Nm6u" id="5oZmK$OFbMb" role="3uHU7w" />
             </node>
+            <node concept="10Nm6u" id="6jpO12EupSr" role="3uHU7w" />
           </node>
           <node concept="3clFbS" id="5oZmK$OFbMd" role="3clFbx">
             <node concept="YS8fn" id="5oZmK$OFbMg" role="3cqZAp">
@@ -3491,6 +3478,29 @@
             </node>
             <node concept="37vLTw" id="7JKstLNi720" role="37vLTx">
               <ref role="3cqZAo" node="7JKstLNi71L" resolve="pdName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12Euoc_" role="3cqZAp">
+          <node concept="37vLTI" id="6jpO12EuocB" role="3clFbG">
+            <node concept="2OqwBi" id="6jpO12EuocE" role="37vLTJ">
+              <node concept="37vLTw" id="6jpO12EuocH" role="2Oq$k0">
+                <ref role="3cqZAo" node="7JKstLNi71R" resolve="pd" />
+              </node>
+              <node concept="3TrcHB" id="6jpO12EuocI" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="6jpO12EuocJ" role="37vLTx">
+              <ref role="37wK5l" node="6jpO12EpQzk" resolve="applyDefinitionPrefix" />
+              <node concept="2OqwBi" id="6jpO12EuocK" role="37wK5m">
+                <node concept="37vLTw" id="6jpO12EuocN" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7JKstLNi70L" resolve="prefix" />
+                </node>
+                <node concept="liA8E" id="6jpO12EuocO" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -3693,29 +3703,16 @@
           </node>
         </node>
         <node concept="3clFbJ" id="BOR0Mn$hXk" role="3cqZAp">
-          <node concept="22lmx$" id="BOR0Mn$hXn" role="3clFbw">
-            <node concept="3y3z36" id="BOR0Mn$hXq" role="3uHU7B">
-              <node concept="2OqwBi" id="BOR0Mn$hXt" role="3uHU7B">
-                <node concept="37vLTw" id="BOR0Mn$hXw" role="2Oq$k0">
-                  <ref role="3cqZAo" node="BOR0Mn$hXc" resolve="prefix" />
-                </node>
-                <node concept="liA8E" id="BOR0Mn$hXx" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
-                </node>
+          <node concept="3y3z36" id="6jpO12EupSD" role="3clFbw">
+            <node concept="2OqwBi" id="6jpO12EupSG" role="3uHU7B">
+              <node concept="37vLTw" id="6jpO12EupSJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="BOR0Mn$hXc" resolve="prefix" />
               </node>
-              <node concept="10Nm6u" id="BOR0Mn$hXy" role="3uHU7w" />
-            </node>
-            <node concept="3y3z36" id="BOR0Mn$hXz" role="3uHU7w">
-              <node concept="2OqwBi" id="BOR0Mn$hXA" role="3uHU7B">
-                <node concept="37vLTw" id="BOR0Mn$hXD" role="2Oq$k0">
-                  <ref role="3cqZAo" node="BOR0Mn$hXc" resolve="prefix" />
-                </node>
-                <node concept="liA8E" id="BOR0Mn$hXE" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.INDIVIDUAL()" resolve="INDIVIDUAL" />
-                </node>
+              <node concept="liA8E" id="6jpO12EupSK" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.INDIVIDUAL()" resolve="INDIVIDUAL" />
               </node>
-              <node concept="10Nm6u" id="BOR0Mn$hXF" role="3uHU7w" />
             </node>
+            <node concept="10Nm6u" id="6jpO12EupSL" role="3uHU7w" />
           </node>
           <node concept="3clFbS" id="BOR0Mn$hXG" role="3clFbx">
             <node concept="YS8fn" id="BOR0Mn$hXH" role="3cqZAp">
@@ -3897,6 +3894,29 @@
             </node>
             <node concept="37vLTw" id="BOR0Mn$hZA" role="37vLTx">
               <ref role="3cqZAo" node="BOR0Mn$hZ4" resolve="cdName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12Euorq" role="3cqZAp">
+          <node concept="37vLTI" id="6jpO12Euors" role="3clFbG">
+            <node concept="2OqwBi" id="6jpO12Euorv" role="37vLTJ">
+              <node concept="37vLTw" id="6jpO12Euory" role="2Oq$k0">
+                <ref role="3cqZAo" node="BOR0Mn$hZk" resolve="cd" />
+              </node>
+              <node concept="3TrcHB" id="6jpO12Euorz" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="6jpO12Euor$" role="37vLTx">
+              <ref role="37wK5l" node="6jpO12EpQzk" resolve="applyDefinitionPrefix" />
+              <node concept="2OqwBi" id="6jpO12Euor_" role="37wK5m">
+                <node concept="37vLTw" id="6jpO12EuorC" role="2Oq$k0">
+                  <ref role="3cqZAo" node="BOR0Mn$hXc" resolve="prefix" />
+                </node>
+                <node concept="liA8E" id="6jpO12EuorD" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -4721,59 +4741,37 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="5oZmK$OHZoT" role="3cqZAp">
-          <node concept="22lmx$" id="5oZmK$OHZoU" role="3clFbw">
-            <node concept="22lmx$" id="5oZmK$OHZoV" role="3uHU7B">
-              <node concept="3fqX7Q" id="5oZmK$OHZoW" role="3uHU7B">
-                <node concept="2OqwBi" id="5oZmK$OI0d4" role="3fr31v">
-                  <node concept="2OqwBi" id="5oZmK$OI0cd" role="2Oq$k0">
-                    <node concept="2OqwBi" id="5oZmK$OI0b7" role="2Oq$k0">
-                      <node concept="37vLTw" id="5oZmK$OHZBK" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2d_6cEDJpe0" resolve="prefix" />
-                      </node>
-                      <node concept="liA8E" id="5oZmK$OI0b8" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceUsagePrefixContext.basicUsagePrefix()" resolve="basicUsagePrefix" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="5oZmK$OI0ce" role="2OqNvi">
-                      <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="5oZmK$OI0d5" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~String.isEmpty()" resolve="isEmpty" />
-                  </node>
-                </node>
-              </node>
-              <node concept="3y3z36" id="5oZmK$OHZp0" role="3uHU7w">
-                <node concept="2OqwBi" id="5oZmK$OI0bj" role="3uHU7B">
-                  <node concept="37vLTw" id="5oZmK$OHZQ7" role="2Oq$k0">
-                    <ref role="3cqZAo" node="2d_6cEDJpe0" resolve="prefix" />
-                  </node>
-                  <node concept="liA8E" id="5oZmK$OI0bk" role="2OqNvi">
-                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceUsagePrefixContext.INDIVIDUAL()" resolve="INDIVIDUAL" />
-                  </node>
-                </node>
-                <node concept="10Nm6u" id="5oZmK$OHZp2" role="3uHU7w" />
-              </node>
-            </node>
-            <node concept="3y3z36" id="5oZmK$OHZp3" role="3uHU7w">
-              <node concept="2OqwBi" id="5oZmK$OI0bv" role="3uHU7B">
-                <node concept="37vLTw" id="5oZmK$OI04u" role="2Oq$k0">
+        <node concept="3clFbJ" id="4mJZS3n0yWM" role="3cqZAp">
+          <node concept="22lmx$" id="4mJZS3n0yWN" role="3clFbw">
+            <node concept="3y3z36" id="4mJZS3n0yWO" role="3uHU7B">
+              <node concept="2OqwBi" id="4mJZS3n0zw6" role="3uHU7B">
+                <node concept="37vLTw" id="4mJZS3n0zbl" role="2Oq$k0">
                   <ref role="3cqZAo" node="2d_6cEDJpe0" resolve="prefix" />
                 </node>
-                <node concept="liA8E" id="5oZmK$OI0bw" role="2OqNvi">
+                <node concept="liA8E" id="4mJZS3n0zw7" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceUsagePrefixContext.INDIVIDUAL()" resolve="INDIVIDUAL" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="4mJZS3n0yWQ" role="3uHU7w" />
+            </node>
+            <node concept="3y3z36" id="4mJZS3n0yWR" role="3uHU7w">
+              <node concept="2OqwBi" id="4mJZS3n0zwi" role="3uHU7B">
+                <node concept="37vLTw" id="4mJZS3n0zpH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2d_6cEDJpe0" resolve="prefix" />
+                </node>
+                <node concept="liA8E" id="4mJZS3n0zwj" role="2OqNvi">
                   <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceUsagePrefixContext.portionKind()" resolve="portionKind" />
                 </node>
               </node>
-              <node concept="10Nm6u" id="5oZmK$OHZp5" role="3uHU7w" />
+              <node concept="10Nm6u" id="4mJZS3n0yWT" role="3uHU7w" />
             </node>
           </node>
-          <node concept="3clFbS" id="5oZmK$OHZp7" role="3clFbx">
-            <node concept="YS8fn" id="5oZmK$OHZpa" role="3cqZAp">
-              <node concept="2ShNRf" id="5oZmK$OI04w" role="YScLw">
-                <node concept="1pGfFk" id="5oZmK$OI0aF" role="2ShVmc">
+          <node concept="3clFbS" id="4mJZS3n0yWV" role="3clFbx">
+            <node concept="YS8fn" id="4mJZS3n0yWY" role="3cqZAp">
+              <node concept="2ShNRf" id="4mJZS3n0zpJ" role="YScLw">
+                <node concept="1pGfFk" id="4mJZS3n0zvU" role="2ShVmc">
                   <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5oZmK$OI0aG" role="37wK5m">
+                  <node concept="Xl_RD" id="4mJZS3n0zvV" role="37wK5m">
                     <property role="Xl_RC" value="Unsupported SysML v2 construct: part usage prefix" />
                   </node>
                 </node>
@@ -5233,6 +5231,29 @@
               <node concept="3zrR0B" id="2d_6cEDKaV7" role="2ShVmc">
                 <node concept="3Tqbb2" id="2d_6cEDKaV9" role="3zrR0E">
                   <ref role="ehGHo" to="5rf1:7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4mJZS3n59rq" role="3cqZAp">
+          <node concept="37vLTI" id="4mJZS3n59rs" role="3clFbG">
+            <node concept="2OqwBi" id="4mJZS3n59rv" role="37vLTJ">
+              <node concept="37vLTw" id="4mJZS3n59ry" role="2Oq$k0">
+                <ref role="3cqZAo" node="2d_6cEDKaV2" resolve="pu" />
+              </node>
+              <node concept="3TrcHB" id="4mJZS3n59rz" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="4mJZS3n59r$" role="37vLTx">
+              <ref role="37wK5l" node="4mJZS3mQnwR" resolve="extractAbstract" />
+              <node concept="2OqwBi" id="4mJZS3n59r_" role="37wK5m">
+                <node concept="37vLTw" id="4mJZS3n59rC" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2d_6cEDJpe0" resolve="prefix" />
+                </node>
+                <node concept="liA8E" id="4mJZS3n59rD" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceUsagePrefixContext.basicUsagePrefix()" resolve="basicUsagePrefix" />
                 </node>
               </node>
             </node>
@@ -6552,31 +6573,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="5oZmK$OKMb8" role="3cqZAp">
-          <node concept="3y3z36" id="5oZmK$OKMb9" role="3clFbw">
-            <node concept="2OqwBi" id="5oZmK$OKMvZ" role="3uHU7B">
-              <node concept="37vLTw" id="5oZmK$OKMpA" role="2Oq$k0">
-                <ref role="3cqZAo" node="2d_6cEDG29y" resolve="prefix" />
-              </node>
-              <node concept="liA8E" id="5oZmK$OKMw0" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5oZmK$OKMbb" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5oZmK$OKMbd" role="3clFbx">
-            <node concept="YS8fn" id="5oZmK$OKMbg" role="3cqZAp">
-              <node concept="2ShNRf" id="5oZmK$OKMpC" role="YScLw">
-                <node concept="1pGfFk" id="5oZmK$OKMvN" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5oZmK$OKMvO" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: attribute definition prefix" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="2d_6cEDG29O" role="3cqZAp">
           <node concept="3cpWsn" id="2d_6cEDG29N" role="3cpWs9">
             <property role="TrG5h" value="def" />
@@ -6735,6 +6731,29 @@
             </node>
             <node concept="37vLTw" id="2d_6cEDG$h5" role="37vLTx">
               <ref role="3cqZAo" node="2d_6cEDG2au" resolve="adName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12EuoEf" role="3cqZAp">
+          <node concept="37vLTI" id="6jpO12EuoEh" role="3clFbG">
+            <node concept="2OqwBi" id="6jpO12EuoEk" role="37vLTJ">
+              <node concept="37vLTw" id="6jpO12EuoEn" role="2Oq$k0">
+                <ref role="3cqZAo" node="2d_6cEDG$gu" resolve="ad" />
+              </node>
+              <node concept="3TrcHB" id="6jpO12EuoEo" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="6jpO12EuoEp" role="37vLTx">
+              <ref role="37wK5l" node="6jpO12EpQzk" resolve="applyDefinitionPrefix" />
+              <node concept="2OqwBi" id="6jpO12EuoEq" role="37wK5m">
+                <node concept="37vLTw" id="6jpO12EuoEt" role="2Oq$k0">
+                  <ref role="3cqZAo" node="2d_6cEDG29y" resolve="prefix" />
+                </node>
+                <node concept="liA8E" id="6jpO12EuoEu" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -6919,31 +6938,6 @@
         </node>
       </node>
       <node concept="3clFbS" id="5oZmK$O0VLQ" role="3clF47">
-        <node concept="3clFbJ" id="5oZmK$ONzrG" role="3cqZAp">
-          <node concept="3y3z36" id="5oZmK$ONzrH" role="3clFbw">
-            <node concept="2OqwBi" id="5oZmK$ONzKy" role="3uHU7B">
-              <node concept="37vLTw" id="5oZmK$ONzEa" role="2Oq$k0">
-                <ref role="3cqZAo" node="5oZmK$O0VLN" resolve="ctx" />
-              </node>
-              <node concept="liA8E" id="5oZmK$ONzKz" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MetadataDefinitionContext.ABSTRACT()" resolve="ABSTRACT" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5oZmK$ONzrJ" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5oZmK$ONzrL" role="3clFbx">
-            <node concept="YS8fn" id="5oZmK$ONzrO" role="3cqZAp">
-              <node concept="2ShNRf" id="5oZmK$ONzEc" role="YScLw">
-                <node concept="1pGfFk" id="5oZmK$ONzKn" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5oZmK$ONzKo" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: metadata definition prefix" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="5oZmK$O0VLR" role="3cqZAp">
           <node concept="3cpWsn" id="5oZmK$O0VLU" role="3cpWs9">
             <property role="OYnhT" value="local variable" />
@@ -7110,6 +7104,29 @@
             </node>
             <node concept="37vLTw" id="5oZmK$O0VNE" role="37vLTx">
               <ref role="3cqZAo" node="5oZmK$O0VN8" resolve="mdefName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12EuoT4" role="3cqZAp">
+          <node concept="37vLTI" id="6jpO12EuoT6" role="3clFbG">
+            <node concept="2OqwBi" id="6jpO12EuoT9" role="37vLTJ">
+              <node concept="37vLTw" id="6jpO12EuoTc" role="2Oq$k0">
+                <ref role="3cqZAo" node="5oZmK$O0VNo" resolve="mdef" />
+              </node>
+              <node concept="3TrcHB" id="6jpO12EuoTd" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+              </node>
+            </node>
+            <node concept="3y3z36" id="6jpO12EuoTe" role="37vLTx">
+              <node concept="2OqwBi" id="6jpO12EuoTh" role="3uHU7B">
+                <node concept="37vLTw" id="6jpO12EuoTk" role="2Oq$k0">
+                  <ref role="3cqZAo" node="5oZmK$O0VLN" resolve="ctx" />
+                </node>
+                <node concept="liA8E" id="6jpO12EuoTl" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$MetadataDefinitionContext.ABSTRACT()" resolve="ABSTRACT" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="6jpO12EuoTm" role="3uHU7w" />
             </node>
           </node>
         </node>
@@ -7617,7 +7634,7 @@
             <property role="TrG5h" value="direction" />
             <node concept="17QB3L" id="6coPuU2XsoT" role="1tU5fm" />
             <node concept="1rXfSq" id="6coPuU2XsoU" role="33vP2m">
-              <ref role="37wK5l" node="6coPuU2Usus" resolve="extractDirection" />
+              <ref role="37wK5l" node="4mJZS3mV$o8" />
               <node concept="37vLTw" id="6coPuU2XsoV" role="37wK5m">
                 <ref role="3cqZAo" node="2d_6cEDLy0$" resolve="basicPrefix" />
               </node>
@@ -8120,6 +8137,24 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4mJZS3n59Ef" role="3cqZAp">
+          <node concept="37vLTI" id="4mJZS3n59Eh" role="3clFbG">
+            <node concept="2OqwBi" id="4mJZS3n59Ek" role="37vLTJ">
+              <node concept="37vLTw" id="4mJZS3n59En" role="2Oq$k0">
+                <ref role="3cqZAo" node="2d_6cEDMrT6" resolve="au" />
+              </node>
+              <node concept="3TrcHB" id="4mJZS3n59Eo" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="4mJZS3n59Ep" role="37vLTx">
+              <ref role="37wK5l" node="4mJZS3mQnwR" resolve="extractAbstract" />
+              <node concept="37vLTw" id="4mJZS3n59Eq" role="37wK5m">
+                <ref role="3cqZAo" node="2d_6cEDLy0$" resolve="basicPrefix" />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="2d_6cEDMrTS" role="3cqZAp">
           <node concept="37vLTI" id="2d_6cEDMrTU" role="3clFbG">
             <node concept="2OqwBi" id="2d_6cEDMrTX" role="37vLTJ">
@@ -8536,31 +8571,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="5oZmK$OQleG" role="3cqZAp">
-          <node concept="3y3z36" id="5oZmK$OQleH" role="3clFbw">
-            <node concept="2OqwBi" id="5oZmK$OQlzz" role="3uHU7B">
-              <node concept="37vLTw" id="5oZmK$OQlta" role="2Oq$k0">
-                <ref role="3cqZAo" node="6coPuU2Vj89" resolve="prefix" />
-              </node>
-              <node concept="liA8E" id="5oZmK$OQlz$" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="5oZmK$OQleJ" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="5oZmK$OQleL" role="3clFbx">
-            <node concept="YS8fn" id="5oZmK$OQleO" role="3cqZAp">
-              <node concept="2ShNRf" id="5oZmK$OQltc" role="YScLw">
-                <node concept="1pGfFk" id="5oZmK$OQlzn" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="5oZmK$OQlzo" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: port definition prefix" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="6coPuU2Vj8M" role="3cqZAp">
           <node concept="3cpWsn" id="6coPuU2Vj8P" role="3cpWs9">
             <property role="TrG5h" value="def" />
@@ -8721,6 +8731,29 @@
             </node>
             <node concept="37vLTw" id="6coPuU2Vja_" role="37vLTx">
               <ref role="3cqZAo" node="6coPuU2Vja3" resolve="portDefName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12EuoTz" role="3cqZAp">
+          <node concept="37vLTI" id="6jpO12EuoT_" role="3clFbG">
+            <node concept="2OqwBi" id="6jpO12EuoTC" role="37vLTJ">
+              <node concept="37vLTw" id="6jpO12EuoTF" role="2Oq$k0">
+                <ref role="3cqZAo" node="6coPuU2Vjaj" resolve="portDef" />
+              </node>
+              <node concept="3TrcHB" id="6jpO12EuoTG" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="6jpO12EuoTH" role="37vLTx">
+              <ref role="37wK5l" node="6jpO12EpQzk" resolve="applyDefinitionPrefix" />
+              <node concept="2OqwBi" id="6jpO12EuoTI" role="37wK5m">
+                <node concept="37vLTw" id="6jpO12EuoTL" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6coPuU2Vj89" resolve="prefix" />
+                </node>
+                <node concept="liA8E" id="6jpO12EuoTM" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -8990,7 +9023,7 @@
             <property role="TrG5h" value="direction" />
             <node concept="17QB3L" id="6coPuU2VjRm" role="1tU5fm" />
             <node concept="1rXfSq" id="6coPuU2VjRn" role="33vP2m">
-              <ref role="37wK5l" node="6coPuU2Usus" resolve="extractDirection" />
+              <ref role="37wK5l" node="4mJZS3mV$o8" />
               <node concept="2OqwBi" id="6coPuU2VjRo" role="37wK5m">
                 <node concept="37vLTw" id="6coPuU2VjRr" role="2Oq$k0">
                   <ref role="3cqZAo" node="6coPuU2VjQs" resolve="prefix" />
@@ -9524,6 +9557,29 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4mJZS3n59SN" role="3cqZAp">
+          <node concept="37vLTI" id="4mJZS3n59SP" role="3clFbG">
+            <node concept="2OqwBi" id="4mJZS3n59SS" role="37vLTJ">
+              <node concept="37vLTw" id="4mJZS3n59SV" role="2Oq$k0">
+                <ref role="3cqZAo" node="6coPuU2VjYZ" resolve="pu" />
+              </node>
+              <node concept="3TrcHB" id="4mJZS3n59SW" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="4mJZS3n59SX" role="37vLTx">
+              <ref role="37wK5l" node="4mJZS3mQnwR" resolve="extractAbstract" />
+              <node concept="2OqwBi" id="4mJZS3n59SY" role="37wK5m">
+                <node concept="37vLTw" id="4mJZS3n59T1" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6coPuU2VjQs" resolve="prefix" />
+                </node>
+                <node concept="liA8E" id="4mJZS3n59T2" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceUsagePrefixContext.basicUsagePrefix()" resolve="basicUsagePrefix" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="6coPuU2VjZ7" role="3cqZAp">
           <node concept="37vLTI" id="6coPuU2VjZ9" role="3clFbG">
             <node concept="2OqwBi" id="6coPuU2VjZc" role="37vLTJ">
@@ -9975,29 +10031,16 @@
           </node>
         </node>
         <node concept="3clFbJ" id="5oZmK$OVUco" role="3cqZAp">
-          <node concept="22lmx$" id="5oZmK$OVUcp" role="3clFbw">
-            <node concept="3y3z36" id="5oZmK$OVUcq" role="3uHU7B">
-              <node concept="2OqwBi" id="5oZmK$OVUJE" role="3uHU7B">
-                <node concept="37vLTw" id="5oZmK$OVUqU" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6coPuU37xmX" resolve="prefix" />
-                </node>
-                <node concept="liA8E" id="5oZmK$OVUJF" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
-                </node>
+          <node concept="3y3z36" id="6jpO12EupTe" role="3clFbw">
+            <node concept="2OqwBi" id="6jpO12EupTh" role="3uHU7B">
+              <node concept="37vLTw" id="6jpO12EupTk" role="2Oq$k0">
+                <ref role="3cqZAo" node="6coPuU37xmX" resolve="prefix" />
               </node>
-              <node concept="10Nm6u" id="5oZmK$OVUcs" role="3uHU7w" />
-            </node>
-            <node concept="3y3z36" id="5oZmK$OVUct" role="3uHU7w">
-              <node concept="2OqwBi" id="5oZmK$OVUJQ" role="3uHU7B">
-                <node concept="37vLTw" id="5oZmK$OVUDh" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6coPuU37xmX" resolve="prefix" />
-                </node>
-                <node concept="liA8E" id="5oZmK$OVUJR" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.INDIVIDUAL()" resolve="INDIVIDUAL" />
-                </node>
+              <node concept="liA8E" id="6jpO12EupTl" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.INDIVIDUAL()" resolve="INDIVIDUAL" />
               </node>
-              <node concept="10Nm6u" id="5oZmK$OVUcv" role="3uHU7w" />
             </node>
+            <node concept="10Nm6u" id="6jpO12EupTm" role="3uHU7w" />
           </node>
           <node concept="3clFbS" id="5oZmK$OVUcx" role="3clFbx">
             <node concept="YS8fn" id="5oZmK$OVUc$" role="3cqZAp">
@@ -10172,6 +10215,29 @@
             </node>
             <node concept="37vLTw" id="6coPuU37xp_" role="37vLTx">
               <ref role="3cqZAo" node="6coPuU37xp3" resolve="itemDefName" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12Eup8o" role="3cqZAp">
+          <node concept="37vLTI" id="6jpO12Eup8q" role="3clFbG">
+            <node concept="2OqwBi" id="6jpO12Eup8t" role="37vLTJ">
+              <node concept="37vLTw" id="6jpO12Eup8w" role="2Oq$k0">
+                <ref role="3cqZAo" node="6coPuU37xpj" resolve="itemDef" />
+              </node>
+              <node concept="3TrcHB" id="6jpO12Eup8x" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="6jpO12Eup8y" role="37vLTx">
+              <ref role="37wK5l" node="6jpO12EpQzk" resolve="applyDefinitionPrefix" />
+              <node concept="2OqwBi" id="6jpO12Eup8z" role="37wK5m">
+                <node concept="37vLTw" id="6jpO12Eup8A" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6coPuU37xmX" resolve="prefix" />
+                </node>
+                <node concept="liA8E" id="6jpO12Eup8B" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -10465,7 +10531,7 @@
           <node concept="3cpWsn" id="6coPuU37y6x" role="3cpWs9">
             <property role="TrG5h" value="direction" />
             <node concept="1rXfSq" id="6coPuU37y6z" role="33vP2m">
-              <ref role="37wK5l" node="6coPuU2Usus" resolve="extractDirection" />
+              <ref role="37wK5l" node="4mJZS3mV$o8" />
               <node concept="2OqwBi" id="6coPuU37y6$" role="37wK5m">
                 <node concept="37vLTw" id="6coPuU37y6B" role="2Oq$k0">
                   <ref role="3cqZAo" node="6coPuU37y5D" resolve="prefix" />
@@ -10980,6 +11046,29 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="4mJZS3n5a7C" role="3cqZAp">
+          <node concept="37vLTI" id="4mJZS3n5a7E" role="3clFbG">
+            <node concept="2OqwBi" id="4mJZS3n5a7H" role="37vLTJ">
+              <node concept="37vLTw" id="4mJZS3n5a7K" role="2Oq$k0">
+                <ref role="3cqZAo" node="6coPuU37ydr" resolve="iu" />
+              </node>
+              <node concept="3TrcHB" id="4mJZS3n5a7L" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="4mJZS3n5a7M" role="37vLTx">
+              <ref role="37wK5l" node="4mJZS3mQnwR" resolve="extractAbstract" />
+              <node concept="2OqwBi" id="4mJZS3n5a7N" role="37wK5m">
+                <node concept="37vLTw" id="4mJZS3n5a7Q" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6coPuU37y5D" resolve="prefix" />
+                </node>
+                <node concept="liA8E" id="4mJZS3n5a7R" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceUsagePrefixContext.basicUsagePrefix()" resolve="basicUsagePrefix" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="6coPuU37ydz" role="3cqZAp">
           <node concept="37vLTI" id="6coPuU37yd_" role="3clFbG">
             <node concept="2OqwBi" id="6coPuU37ydC" role="37vLTJ">
@@ -11373,29 +11462,16 @@
           </node>
         </node>
         <node concept="3clFbJ" id="3MUZSeGhcxJ" role="3cqZAp">
-          <node concept="22lmx$" id="3MUZSeGhcxK" role="3clFbw">
-            <node concept="3y3z36" id="3MUZSeGhcxL" role="3uHU7B">
-              <node concept="2OqwBi" id="3MUZSeGhtiF" role="3uHU7B">
-                <node concept="37vLTw" id="3MUZSeGhd6y" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3MUZSeGhcxF" resolve="prefix" />
-                </node>
-                <node concept="liA8E" id="3MUZSeGhtiG" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
-                </node>
+          <node concept="3y3z36" id="6jpO12EupT$" role="3clFbw">
+            <node concept="2OqwBi" id="6jpO12EupTB" role="3uHU7B">
+              <node concept="37vLTw" id="6jpO12EupTE" role="2Oq$k0">
+                <ref role="3cqZAo" node="3MUZSeGhcxF" resolve="prefix" />
               </node>
-              <node concept="10Nm6u" id="3MUZSeGhcxN" role="3uHU7w" />
-            </node>
-            <node concept="3y3z36" id="3MUZSeGhcxO" role="3uHU7w">
-              <node concept="2OqwBi" id="3MUZSeGhtiR" role="3uHU7B">
-                <node concept="37vLTw" id="3MUZSeGhdkT" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3MUZSeGhcxF" resolve="prefix" />
-                </node>
-                <node concept="liA8E" id="3MUZSeGhtiS" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.INDIVIDUAL()" resolve="INDIVIDUAL" />
-                </node>
+              <node concept="liA8E" id="6jpO12EupTF" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.INDIVIDUAL()" resolve="INDIVIDUAL" />
               </node>
-              <node concept="10Nm6u" id="3MUZSeGhcxQ" role="3uHU7w" />
             </node>
+            <node concept="10Nm6u" id="6jpO12EupTG" role="3uHU7w" />
           </node>
           <node concept="3clFbS" id="3MUZSeGhcxS" role="3clFbx">
             <node concept="YS8fn" id="3MUZSeGhcxV" role="3cqZAp">
@@ -11621,6 +11697,34 @@
                 </node>
                 <node concept="liA8E" id="3MUZSeGhyPg" role="2OqNvi">
                   <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.definitionExtensionKeyword()" resolve="definitionExtensionKeyword" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12Eupnd" role="3cqZAp">
+          <node concept="37vLTI" id="6jpO12Eupnf" role="3clFbG">
+            <node concept="2OqwBi" id="6jpO12Eupni" role="37vLTJ">
+              <node concept="1PxgMI" id="4mJZS3mrf7h" role="2Oq$k0">
+                <node concept="37vLTw" id="4mJZS3mrf7k" role="1m5AlR">
+                  <ref role="3cqZAo" node="3MUZSeGhcym" resolve="idef" />
+                </node>
+                <node concept="chp4Y" id="4mJZS3mrf7l" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:6jpO12Ek_66" resolve="ISysMLv2Type" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6jpO12Eupnm" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="6jpO12Eupnn" role="37vLTx">
+              <ref role="37wK5l" node="6jpO12EpQzk" resolve="applyDefinitionPrefix" />
+              <node concept="2OqwBi" id="6jpO12Eupno" role="37wK5m">
+                <node concept="37vLTw" id="6jpO12Eupnr" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3MUZSeGhcxF" resolve="prefix" />
+                </node>
+                <node concept="liA8E" id="6jpO12Eupns" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
                 </node>
               </node>
             </node>
@@ -13350,29 +13454,16 @@
           </node>
         </node>
         <node concept="3clFbJ" id="3MUZSeHrkV5" role="3cqZAp">
-          <node concept="22lmx$" id="3MUZSeHrkV6" role="3clFbw">
-            <node concept="3y3z36" id="3MUZSeHrkV7" role="3uHU7B">
-              <node concept="2OqwBi" id="3MUZSeHr$zq" role="3uHU7B">
-                <node concept="37vLTw" id="3MUZSeHrlvd" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3MUZSeHrkV1" resolve="prefix" />
-                </node>
-                <node concept="liA8E" id="3MUZSeHr$zr" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
-                </node>
+          <node concept="3y3z36" id="6jpO12EupTU" role="3clFbw">
+            <node concept="2OqwBi" id="6jpO12EupTX" role="3uHU7B">
+              <node concept="37vLTw" id="6jpO12EupU0" role="2Oq$k0">
+                <ref role="3cqZAo" node="3MUZSeHrkV1" resolve="prefix" />
               </node>
-              <node concept="10Nm6u" id="3MUZSeHrkV9" role="3uHU7w" />
-            </node>
-            <node concept="3y3z36" id="3MUZSeHrkVa" role="3uHU7w">
-              <node concept="2OqwBi" id="3MUZSeHr$zA" role="3uHU7B">
-                <node concept="37vLTw" id="3MUZSeHrlH$" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3MUZSeHrkV1" resolve="prefix" />
-                </node>
-                <node concept="liA8E" id="3MUZSeHr$zB" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.INDIVIDUAL()" resolve="INDIVIDUAL" />
-                </node>
+              <node concept="liA8E" id="6jpO12EupU1" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.INDIVIDUAL()" resolve="INDIVIDUAL" />
               </node>
-              <node concept="10Nm6u" id="3MUZSeHrkVc" role="3uHU7w" />
             </node>
+            <node concept="10Nm6u" id="6jpO12EupU2" role="3uHU7w" />
           </node>
           <node concept="3clFbS" id="3MUZSeHrkVe" role="3clFbx">
             <node concept="YS8fn" id="3MUZSeHrkVh" role="3cqZAp">
@@ -13614,6 +13705,34 @@
                 </node>
                 <node concept="liA8E" id="3MUZSeHrEzB" role="2OqNvi">
                   <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.definitionExtensionKeyword()" resolve="definitionExtensionKeyword" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6jpO12EupBK" role="3cqZAp">
+          <node concept="37vLTI" id="6jpO12EupBM" role="3clFbG">
+            <node concept="2OqwBi" id="6jpO12EupBP" role="37vLTJ">
+              <node concept="1PxgMI" id="4mJZS3mrOyo" role="2Oq$k0">
+                <node concept="37vLTw" id="4mJZS3mrOyr" role="1m5AlR">
+                  <ref role="3cqZAo" node="3MUZSeHrkVK" resolve="fdef" />
+                </node>
+                <node concept="chp4Y" id="4mJZS3mrOys" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:6jpO12Ek_66" resolve="ISysMLv2Type" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6jpO12EupBT" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+              </node>
+            </node>
+            <node concept="1rXfSq" id="6jpO12EupBU" role="37vLTx">
+              <ref role="37wK5l" node="6jpO12EpQzk" resolve="applyDefinitionPrefix" />
+              <node concept="2OqwBi" id="6jpO12EupBV" role="37wK5m">
+                <node concept="37vLTw" id="6jpO12EupBY" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3MUZSeHrkV1" resolve="prefix" />
+                </node>
+                <node concept="liA8E" id="6jpO12EupBZ" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceDefinitionPrefixContext.basicDefinitionPrefix()" resolve="basicDefinitionPrefix" />
                 </node>
               </node>
             </node>
@@ -15217,156 +15336,69 @@
         <node concept="17QB3L" id="6coPuU2YycD" role="11_B2D" />
       </node>
     </node>
-    <node concept="2YIFZL" id="6coPuU2Usus" role="jymVt">
+    <node concept="2YIFZL" id="4mJZS3mV$o8" role="jymVt">
       <property role="TrG5h" value="extractDirection" />
-      <node concept="37vLTG" id="6coPuU2Usut" role="3clF46">
+      <node concept="37vLTG" id="4mJZS3mV$o9" role="3clF46">
         <property role="TrG5h" value="basic" />
-        <node concept="3uibUv" id="6coPuU2Usuu" role="1tU5fm">
-          <ref role="3uigEE" to="guqe:~SysMLv2Parser$BasicUsagePrefixContext" resolve="SysMLv2Parser.BasicUsagePrefixContext" />
+        <node concept="3uibUv" id="4mJZS3mV$oa" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$BasicUsagePrefixContext" resolve="com.symo.sysmlv2.baselan.importer.antlr.SysMLv2Parser.BasicUsagePrefixContext" />
         </node>
       </node>
-      <node concept="3clFbS" id="6coPuU2Usuv" role="3clF47">
-        <node concept="3clFbJ" id="6coPuU2Usuw" role="3cqZAp">
-          <node concept="3y3z36" id="6coPuU2Usux" role="3clFbw">
-            <node concept="2OqwBi" id="6coPuU2UuuM" role="3uHU7B">
-              <node concept="37vLTw" id="6coPuU2UsH$" role="2Oq$k0">
-                <ref role="3cqZAo" node="6coPuU2Usut" resolve="basic" />
-              </node>
-              <node concept="liA8E" id="6coPuU2UuuN" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$BasicUsagePrefixContext.REF()" resolve="REF" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="6coPuU2Usuz" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="6coPuU2Usu_" role="3clFbx">
-            <node concept="YS8fn" id="6coPuU2UsuC" role="3cqZAp">
-              <node concept="2ShNRf" id="6coPuU2UsHA" role="YScLw">
-                <node concept="1pGfFk" id="6coPuU2UsNL" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="6coPuU2UsNM" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: ref usage prefix" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3cpWs8" id="6coPuU2UsuE" role="3cqZAp">
-          <node concept="3cpWsn" id="6coPuU2UsuD" role="3cpWs9">
+      <node concept="3clFbS" id="4mJZS3mV$ob" role="3clF47">
+        <node concept="3cpWs8" id="4mJZS3mV$od" role="3cqZAp">
+          <node concept="3cpWsn" id="4mJZS3mV$oc" role="3cpWs9">
             <property role="TrG5h" value="refPrefix" />
-            <node concept="3uibUv" id="6coPuU2UsuF" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$RefPrefixContext" resolve="SysMLv2Parser.RefPrefixContext" />
+            <node concept="3uibUv" id="4mJZS3mV$oe" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$RefPrefixContext" resolve="com.symo.sysmlv2.baselan.importer.antlr.SysMLv2Parser.RefPrefixContext" />
             </node>
-            <node concept="2OqwBi" id="6coPuU2UuuX" role="33vP2m">
-              <node concept="37vLTw" id="6coPuU2Ut28" role="2Oq$k0">
-                <ref role="3cqZAo" node="6coPuU2Usut" resolve="basic" />
+            <node concept="2OqwBi" id="4mJZS3mV_3Q" role="33vP2m">
+              <node concept="37vLTw" id="4mJZS3mV$AN" role="2Oq$k0">
+                <ref role="3cqZAo" node="4mJZS3mV$o9" resolve="basic" />
               </node>
-              <node concept="liA8E" id="6coPuU2UuuY" role="2OqNvi">
+              <node concept="liA8E" id="4mJZS3mV_3R" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$BasicUsagePrefixContext.refPrefix()" resolve="refPrefix" />
               </node>
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="6coPuU2UsuH" role="3cqZAp">
-          <node concept="22lmx$" id="6coPuU2UsuI" role="3clFbw">
-            <node concept="22lmx$" id="6coPuU2UsuJ" role="3uHU7B">
-              <node concept="22lmx$" id="6coPuU2UsuK" role="3uHU7B">
-                <node concept="3y3z36" id="6coPuU2UsuL" role="3uHU7B">
-                  <node concept="2OqwBi" id="6coPuU2Uuv9" role="3uHU7B">
-                    <node concept="37vLTw" id="6coPuU2Utgv" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6coPuU2UsuD" resolve="refPrefix" />
-                    </node>
-                    <node concept="liA8E" id="6coPuU2Uuva" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$RefPrefixContext.DERIVED()" resolve="DERIVED" />
-                    </node>
-                  </node>
-                  <node concept="10Nm6u" id="6coPuU2UsuN" role="3uHU7w" />
-                </node>
-                <node concept="3y3z36" id="6coPuU2UsuO" role="3uHU7w">
-                  <node concept="2OqwBi" id="6coPuU2Uuvl" role="3uHU7B">
-                    <node concept="37vLTw" id="6coPuU2UtuQ" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6coPuU2UsuD" resolve="refPrefix" />
-                    </node>
-                    <node concept="liA8E" id="6coPuU2Uuvm" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$RefPrefixContext.ABSTRACT()" resolve="ABSTRACT" />
-                    </node>
-                  </node>
-                  <node concept="10Nm6u" id="6coPuU2UsuQ" role="3uHU7w" />
-                </node>
+        <node concept="3clFbJ" id="4mJZS3mV$og" role="3cqZAp">
+          <node concept="3clFbC" id="4mJZS3mV$oh" role="3clFbw">
+            <node concept="2OqwBi" id="4mJZS3mV_42" role="3uHU7B">
+              <node concept="37vLTw" id="4mJZS3mV$Pb" role="2Oq$k0">
+                <ref role="3cqZAo" node="4mJZS3mV$oc" resolve="refPrefix" />
               </node>
-              <node concept="3y3z36" id="6coPuU2UsuR" role="3uHU7w">
-                <node concept="2OqwBi" id="6coPuU2Uuvx" role="3uHU7B">
-                  <node concept="37vLTw" id="6coPuU2UtHd" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6coPuU2UsuD" resolve="refPrefix" />
-                  </node>
-                  <node concept="liA8E" id="6coPuU2Uuvy" role="2OqNvi">
-                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$RefPrefixContext.VARIATION()" resolve="VARIATION" />
-                  </node>
-                </node>
-                <node concept="10Nm6u" id="6coPuU2UsuT" role="3uHU7w" />
-              </node>
-            </node>
-            <node concept="3y3z36" id="6coPuU2UsuU" role="3uHU7w">
-              <node concept="2OqwBi" id="6coPuU2UuvH" role="3uHU7B">
-                <node concept="37vLTw" id="6coPuU2UtV$" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6coPuU2UsuD" resolve="refPrefix" />
-                </node>
-                <node concept="liA8E" id="6coPuU2UuvI" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$RefPrefixContext.CONSTANT()" resolve="CONSTANT" />
-                </node>
-              </node>
-              <node concept="10Nm6u" id="6coPuU2UsuW" role="3uHU7w" />
-            </node>
-          </node>
-          <node concept="3clFbS" id="6coPuU2UsuY" role="3clFbx">
-            <node concept="YS8fn" id="6coPuU2Usv1" role="3cqZAp">
-              <node concept="2ShNRf" id="6coPuU2UtVA" role="YScLw">
-                <node concept="1pGfFk" id="6coPuU2Uu1L" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="6coPuU2Uu1M" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: derived/abstract/variation/constant usage prefix" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="6coPuU2Usv2" role="3cqZAp">
-          <node concept="3clFbC" id="6coPuU2Usv3" role="3clFbw">
-            <node concept="2OqwBi" id="6coPuU2UuvT" role="3uHU7B">
-              <node concept="37vLTw" id="6coPuU2Uug8" role="2Oq$k0">
-                <ref role="3cqZAo" node="6coPuU2UsuD" resolve="refPrefix" />
-              </node>
-              <node concept="liA8E" id="6coPuU2UuvU" role="2OqNvi">
+              <node concept="liA8E" id="4mJZS3mV_43" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$RefPrefixContext.featureDirection()" resolve="featureDirection" />
               </node>
             </node>
-            <node concept="10Nm6u" id="6coPuU2Usv5" role="3uHU7w" />
+            <node concept="10Nm6u" id="4mJZS3mV$oj" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="6coPuU2Usv7" role="3clFbx">
-            <node concept="3cpWs6" id="6coPuU2Usv8" role="3cqZAp">
-              <node concept="10Nm6u" id="6coPuU2Usv9" role="3cqZAk" />
+          <node concept="3clFbS" id="4mJZS3mV$ol" role="3clFbx">
+            <node concept="3cpWs6" id="4mJZS3mV$om" role="3cqZAp">
+              <node concept="10Nm6u" id="4mJZS3mV$on" role="3cqZAk" />
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="6coPuU2Usva" role="3cqZAp">
-          <node concept="2OqwBi" id="6coPuU2UuwL" role="3cqZAk">
-            <node concept="2OqwBi" id="6coPuU2Uuwd" role="2Oq$k0">
-              <node concept="37vLTw" id="6coPuU2UuuB" role="2Oq$k0">
-                <ref role="3cqZAo" node="6coPuU2UsuD" resolve="refPrefix" />
+        <node concept="3cpWs6" id="4mJZS3mV$oo" role="3cqZAp">
+          <node concept="2OqwBi" id="4mJZS3mV_4U" role="3cqZAk">
+            <node concept="2OqwBi" id="4mJZS3mV_4m" role="2Oq$k0">
+              <node concept="37vLTw" id="4mJZS3mV_3F" role="2Oq$k0">
+                <ref role="3cqZAo" node="4mJZS3mV$oc" resolve="refPrefix" />
               </node>
-              <node concept="liA8E" id="6coPuU2Uuwe" role="2OqNvi">
+              <node concept="liA8E" id="4mJZS3mV_4n" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$RefPrefixContext.featureDirection()" resolve="featureDirection" />
               </node>
             </node>
-            <node concept="liA8E" id="6coPuU2UuwM" role="2OqNvi">
+            <node concept="liA8E" id="4mJZS3mV_4V" role="2OqNvi">
               <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
             </node>
           </node>
         </node>
       </node>
-      <node concept="3Tm6S6" id="6coPuU2Usvd" role="1B3o_S" />
-      <node concept="17QB3L" id="6coPuU2YycE" role="3clF45" />
+      <node concept="3Tm6S6" id="4mJZS3mV$or" role="1B3o_S" />
+      <node concept="3uibUv" id="4mJZS3mV$os" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
     </node>
     <node concept="2YIFZL" id="6coPuU3d3w2" role="jymVt">
       <property role="TrG5h" value="extractUsageName" />
@@ -19323,6 +19355,212 @@
       <node concept="3uibUv" id="6jpO12Cuw26" role="3clF45">
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
+    </node>
+    <node concept="2YIFZL" id="6jpO12EpQzk" role="jymVt">
+      <property role="TrG5h" value="applyDefinitionPrefix" />
+      <node concept="37vLTG" id="6jpO12EpQzl" role="3clF46">
+        <property role="TrG5h" value="basic" />
+        <node concept="3uibUv" id="6jpO12EpQzm" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$BasicDefinitionPrefixContext" resolve="SysMLv2Parser.BasicDefinitionPrefixContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6jpO12EpQzn" role="3clF47">
+        <node concept="3clFbJ" id="6jpO12EpQzo" role="3cqZAp">
+          <node concept="3clFbC" id="6jpO12EpQzp" role="3clFbw">
+            <node concept="37vLTw" id="6jpO12EpQzq" role="3uHU7B">
+              <ref role="3cqZAo" node="6jpO12EpQzl" resolve="basic" />
+            </node>
+            <node concept="10Nm6u" id="6jpO12EpQzr" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="6jpO12EpQzt" role="3clFbx">
+            <node concept="3cpWs6" id="6jpO12EpQzu" role="3cqZAp">
+              <node concept="3clFbT" id="6jpO12EpQzv" role="3cqZAk" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6jpO12EpQzw" role="3cqZAp">
+          <node concept="3y3z36" id="6jpO12EpQzx" role="3clFbw">
+            <node concept="2OqwBi" id="6jpO12EpR6P" role="3uHU7B">
+              <node concept="37vLTw" id="6jpO12EpQM5" role="2Oq$k0">
+                <ref role="3cqZAo" node="6jpO12EpQzl" resolve="basic" />
+              </node>
+              <node concept="liA8E" id="6jpO12EpR6Q" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$BasicDefinitionPrefixContext.VARIATION()" resolve="VARIATION" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="6jpO12EpQzz" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="6jpO12EpQz_" role="3clFbx">
+            <node concept="YS8fn" id="6jpO12EpQzC" role="3cqZAp">
+              <node concept="2ShNRf" id="6jpO12EpQM7" role="YScLw">
+                <node concept="1pGfFk" id="6jpO12EpQSi" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="6jpO12EpQSj" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: variation definition prefix" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6jpO12EpQzD" role="3cqZAp">
+          <node concept="3y3z36" id="6jpO12ED145" role="3cqZAk">
+            <node concept="2OqwBi" id="6jpO12ED148" role="3uHU7B">
+              <node concept="37vLTw" id="6jpO12ED14b" role="2Oq$k0">
+                <ref role="3cqZAo" node="6jpO12EpQzl" resolve="basic" />
+              </node>
+              <node concept="liA8E" id="6jpO12ED14c" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$BasicDefinitionPrefixContext.ABSTRACT()" resolve="ABSTRACT" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="6jpO12ED14d" role="3uHU7w" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6jpO12EpQzH" role="1B3o_S" />
+      <node concept="10P_77" id="6jpO12EpQzI" role="3clF45" />
+    </node>
+    <node concept="2YIFZL" id="4mJZS3mQnwR" role="jymVt">
+      <property role="TrG5h" value="extractAbstract" />
+      <node concept="37vLTG" id="4mJZS3mQnwS" role="3clF46">
+        <property role="TrG5h" value="basic" />
+        <node concept="3uibUv" id="4mJZS3mQnwT" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$BasicUsagePrefixContext" resolve="com.symo.sysmlv2.baselan.importer.antlr.SysMLv2Parser.BasicUsagePrefixContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="4mJZS3mQnwU" role="3clF47">
+        <node concept="3clFbJ" id="4mJZS3mQnwV" role="3cqZAp">
+          <node concept="3y3z36" id="4mJZS3mQnwW" role="3clFbw">
+            <node concept="2OqwBi" id="4mJZS3mQpgQ" role="3uHU7B">
+              <node concept="37vLTw" id="4mJZS3mQnJZ" role="2Oq$k0">
+                <ref role="3cqZAo" node="4mJZS3mQnwS" resolve="basic" />
+              </node>
+              <node concept="liA8E" id="4mJZS3mQpgR" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$BasicUsagePrefixContext.REF()" resolve="REF" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="4mJZS3mQnwY" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="4mJZS3mQnx0" role="3clFbx">
+            <node concept="YS8fn" id="4mJZS3mQnx3" role="3cqZAp">
+              <node concept="2ShNRf" id="4mJZS3mQnK1" role="YScLw">
+                <node concept="1pGfFk" id="4mJZS3mQnQc" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="4mJZS3mQnQd" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: ref usage prefix" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="4mJZS3mQnx5" role="3cqZAp">
+          <node concept="3cpWsn" id="4mJZS3mQnx4" role="3cpWs9">
+            <property role="TrG5h" value="refPrefix" />
+            <node concept="3uibUv" id="4mJZS3mQnx6" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$RefPrefixContext" resolve="com.symo.sysmlv2.baselan.importer.antlr.SysMLv2Parser.RefPrefixContext" />
+            </node>
+            <node concept="2OqwBi" id="4mJZS3mQph1" role="33vP2m">
+              <node concept="37vLTw" id="4mJZS3mQo4$" role="2Oq$k0">
+                <ref role="3cqZAo" node="4mJZS3mQnwS" resolve="basic" />
+              </node>
+              <node concept="liA8E" id="4mJZS3mQph2" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$BasicUsagePrefixContext.refPrefix()" resolve="refPrefix" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4mJZS3mQnx8" role="3cqZAp">
+          <node concept="3y3z36" id="4mJZS3mQnx9" role="3clFbw">
+            <node concept="2OqwBi" id="4mJZS3mQphd" role="3uHU7B">
+              <node concept="37vLTw" id="4mJZS3mQoiW" role="2Oq$k0">
+                <ref role="3cqZAo" node="4mJZS3mQnx4" resolve="refPrefix" />
+              </node>
+              <node concept="liA8E" id="4mJZS3mQphe" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$RefPrefixContext.DERIVED()" resolve="DERIVED" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="4mJZS3mQnxb" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="4mJZS3mQnxd" role="3clFbx">
+            <node concept="YS8fn" id="4mJZS3mQnxg" role="3cqZAp">
+              <node concept="2ShNRf" id="4mJZS3mQoiY" role="YScLw">
+                <node concept="1pGfFk" id="4mJZS3mQop9" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="4mJZS3mQopa" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: derived usage prefix" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4mJZS3mQnxh" role="3cqZAp">
+          <node concept="3y3z36" id="4mJZS3mQnxi" role="3clFbw">
+            <node concept="2OqwBi" id="4mJZS3mQphp" role="3uHU7B">
+              <node concept="37vLTw" id="4mJZS3mQoBx" role="2Oq$k0">
+                <ref role="3cqZAo" node="4mJZS3mQnx4" resolve="refPrefix" />
+              </node>
+              <node concept="liA8E" id="4mJZS3mQphq" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$RefPrefixContext.VARIATION()" resolve="VARIATION" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="4mJZS3mQnxk" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="4mJZS3mQnxm" role="3clFbx">
+            <node concept="YS8fn" id="4mJZS3mQnxp" role="3cqZAp">
+              <node concept="2ShNRf" id="4mJZS3mQoBz" role="YScLw">
+                <node concept="1pGfFk" id="4mJZS3mQoHI" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="4mJZS3mQoHJ" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: variation usage prefix" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="4mJZS3mQnxq" role="3cqZAp">
+          <node concept="3y3z36" id="4mJZS3mQnxr" role="3clFbw">
+            <node concept="2OqwBi" id="4mJZS3mQph_" role="3uHU7B">
+              <node concept="37vLTw" id="4mJZS3mQoW6" role="2Oq$k0">
+                <ref role="3cqZAo" node="4mJZS3mQnx4" resolve="refPrefix" />
+              </node>
+              <node concept="liA8E" id="4mJZS3mQphA" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$RefPrefixContext.CONSTANT()" resolve="CONSTANT" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="4mJZS3mQnxt" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="4mJZS3mQnxv" role="3clFbx">
+            <node concept="YS8fn" id="4mJZS3mQnxy" role="3cqZAp">
+              <node concept="2ShNRf" id="4mJZS3mQoW8" role="YScLw">
+                <node concept="1pGfFk" id="4mJZS3mQp2j" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="4mJZS3mQp2k" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: constant usage prefix" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4mJZS3mQnxz" role="3cqZAp">
+          <node concept="3y3z36" id="4mJZS3mQnx$" role="3cqZAk">
+            <node concept="2OqwBi" id="4mJZS3mQphL" role="3uHU7B">
+              <node concept="37vLTw" id="4mJZS3mQpgF" role="2Oq$k0">
+                <ref role="3cqZAo" node="4mJZS3mQnx4" resolve="refPrefix" />
+              </node>
+              <node concept="liA8E" id="4mJZS3mQphM" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$RefPrefixContext.ABSTRACT()" resolve="ABSTRACT" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="4mJZS3mQnxA" role="3uHU7w" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="4mJZS3mQnxB" role="1B3o_S" />
+      <node concept="10P_77" id="4mJZS3mQnxC" role="3clF45" />
     </node>
   </node>
   <node concept="312cEu" id="7JKstLNlJ4o">
