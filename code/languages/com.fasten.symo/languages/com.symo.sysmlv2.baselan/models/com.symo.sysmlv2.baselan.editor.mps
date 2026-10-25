@@ -1373,6 +1373,11 @@
           <ref role="1NtTu8" to="5rf1:6coPuU2Tg23" resolve="direction" />
         </node>
       </node>
+      <node concept="1kHk_G" id="4mJZS3mQnvm" role="3EZMnx">
+        <property role="ZjSer" value="abstract" />
+        <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="PMmxH" id="5oZmK$O8rT0" role="3EZMnx">
         <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
       </node>
@@ -1515,11 +1520,6 @@
         <ref role="1NtTu8" to="5rf1:6coPuU2Tg22" resolve="conjugated" />
       </node>
       <node concept="2iRfu4" id="6coPuU2Zrhw" role="2iSdaV" />
-      <node concept="1kHk_G" id="4mJZS3mQnvm" role="3EZMnx">
-        <property role="ZjSer" value="abstract" />
-        <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
-        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
-      </node>
     </node>
   </node>
   <node concept="24kQdi" id="6coPuU2TGbd">

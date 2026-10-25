@@ -2574,5 +2574,45 @@
       </node>
     </node>
   </node>
+  <node concept="LiM7Y" id="4mJZS3nf_eB">
+    <property role="3YCmrE" value="deleting the abstract flag from an attribute usage unsets isAbstract" />
+    <property role="TrG5h" value="_140_AttributeUsage_DeleteAbstractFlag" />
+    <node concept="1qefOq" id="4mJZS3nf_eC" role="25YQCW">
+      <node concept="2h0jOr" id="4mJZS3nf_eE" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3ZUotO" id="4mJZS3nf_eF" role="2h0jOs">
+          <property role="TrG5h" value="D" />
+          <node concept="8EhU9" id="4mJZS3nf_eG" role="3w00ZY">
+            <property role="3eyS6o" value="true" />
+            <property role="TrG5h" value="a" />
+            <node concept="LIFWc" id="4mJZS3nf_eH" role="lGtFl">
+              <property role="LIFWd" value="flag_isAbstract" />
+              <property role="OXtK3" value="true" />
+              <property role="p6zMq" value="0" />
+              <property role="p6zMs" value="0" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="4mJZS3nf_eI" role="25YQFr">
+      <node concept="2h0jOr" id="4mJZS3nf_eK" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3ZUotO" id="4mJZS3nf_eL" role="2h0jOs">
+          <property role="TrG5h" value="D" />
+          <node concept="8EhU9" id="4mJZS3nf_eM" role="3w00ZY">
+            <property role="TrG5h" value="a" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="4mJZS3nf_eN" role="LjaKd">
+      <node concept="2HxZob" id="4mJZS3nf_eO" role="3cqZAp">
+        <node concept="3iKlGA" id="4mJZS3nf_eQ" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Delete_Action" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
