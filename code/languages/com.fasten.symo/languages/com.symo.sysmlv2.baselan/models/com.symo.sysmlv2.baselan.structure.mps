@@ -18,6 +18,9 @@
         <reference id="1075010451642646892" name="defaultMember" index="1H5jkz" />
         <child id="3348158742936976577" name="members" index="25R1y" />
       </concept>
+      <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
+        <property id="7862711839422615217" name="text" index="t5JxN" />
+      </concept>
       <concept id="1082978164218" name="jetbrains.mps.lang.structure.structure.DataTypeDeclaration" flags="ng" index="AxPO6">
         <property id="7791109065626895363" name="datatypeId" index="3F6X1D" />
       </concept>
@@ -667,6 +670,9 @@
       <property role="TrG5h" value="isEnd" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="PrWs8" id="6jpO12EkB8c" role="PzmwI">
+      <ref role="PrY4T" node="6jpO12Ek_66" resolve="ISysMLv2Type" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU3buux">
     <property role="EcuMT" value="7140692429575677857" />
@@ -1262,6 +1268,9 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="base" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6jpO12EkB89" role="PzmwI">
+      <ref role="PrY4T" node="6jpO12Ek_66" resolve="ISysMLv2Type" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6jpO12_xkrj">
     <property role="EcuMT" value="7267068243654035155" />
@@ -1292,6 +1301,20 @@
       <property role="3tVfz5" value="6478655565935438660" />
       <property role="TrG5h" value="protected" />
       <property role="1L1pqM" value="protected" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6jpO12Ek_66">
+    <property role="EcuMT" value="7267068243734581638" />
+    <property role="TrG5h" value="ISysMLv2Type" />
+    <property role="R4oN_" value="SysML v2 Type (KerML 7.3): common supertype of definitions and usages, carries isAbstract" />
+    <property role="3GE5qa" value="base" />
+    <node concept="t5JxF" id="6jpO12Ek_67" role="lGtFl">
+      <property role="t5JxN" value="Common interface implemented by SysMLv2Definition and SysMLv2Usage. Carries the spec's Type.isAbstract flag (default false)." />
+    </node>
+    <node concept="1TJgyi" id="6jpO12Ek_68" role="1TKVEl">
+      <property role="IQ2nx" value="7267068243734581640" />
+      <property role="TrG5h" value="isAbstract" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
 </model>
