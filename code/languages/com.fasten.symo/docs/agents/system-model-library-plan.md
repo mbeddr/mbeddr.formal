@@ -94,6 +94,58 @@ Measured live over `Attributes`, `Ports`, `Parts` (the remaining files follow in
 - Plan change: next `abstract` (015), then `alias` (016), visibility on package members (017), `ref` (018); the import-as-
   reference and implicit-scope design decisions still come before name resolution.
 
+### Iteration 015 result (2026-10-26, archive `015-sysml-abstract-definitions-and-usages-b1`)
+- `ISysMLv2Type.isAbstract` on `SysMLv2Definition` and `SysMLv2Usage`; `abstract` flag cell first in the 8 definition editors
+  and after the direction cell in the usage editors (usage editors and textGens came with the Stage A commit); importer
+  `applyDefinitionPrefix` (definitions, `variation` rejected by name) and `extractAbstract` (attribute, port, item, part usages;
+  `derived`, `variation`, `constant` rejected by name). Port usage flag moved from the inspector into the editable collection.
+- Tests: 6 definition + 4 usage round trips (incl. `abstract #Meta part def`), 2 delete-direction editor tests, matrix 34 cases
+  with `Fail`-after-parse in every rejected case (a 013 defect found by the developer). Full run 370 tests, only the 2 known
+  plantuml failures.
+- Moved to 016: `abstract` on connection/interface/flow/binding/metadata usages, a port-usage editor test, the 21-file probe.
+
+## MVP: component architecture modeling without behavior (user, 2026-10-25)
+**Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
+shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
+and views come afterwards.
+**Acceptance scenario:** the structure part of the SysML v2 spec's simple vehicle example: a package with part definitions,
+nested part usages and multiplicities; attributes typed by scalar and quantity types; ports typed by port definitions
+with conjugation; interface definitions and usages with ends; connections between port ends; specialization, redefinition,
+`abstract`, `ref`, `alias`; imports across packages and from a small standard library; text round trip with every name
+resolved.
+**In:** the prefix/modifier forms (`abstract`, `ref`, `alias`, member visibility), `end` features and feature chains,
+import as a preferred reference with default standard-library scoping, **hand-written kernel stubs instead of the full
+library**, **units from a stub library** (user idea, 2026-10-25: `ISQ` quantity types and `SI` units as ordinary library features
+in the accessory model, spec-identical qualified names; a quantity literal `1750 [kg]` is a number plus a **reference** to
+the unit feature, with uninterpreted text as fallback when the unit cannot be resolved or the expression is more complex), a minimal set of well-formedness checks (typing, redefinition conformance, abstract
+instantiation, port compatibility on connections).
+**Out:** diagrams, behavior, requirements, allocations, views, API export, real quantity arithmetic and unit conversion, the
+full Systems Library and the real ISQ/SI libraries (they need calculations), the KerML/SysML merge (phase D).
+**Iterations, re-sliced small (user, 2026-10-25: "smaller chunks, the developer has problems with the size").** Slicing rule:
+one iteration = one concern, at most about four concepts, one editor test, one session; heavy verification (the all-project
+run, the 21-file probe) at the end of the iteration only, focused test runs in between; audits are separate read-only
+iterations.
+- 015 `abstract` on definitions (done, committed) and on part/attribute/port/item usages (B1, running); closes after B1.
+- 016 `abstract` on connection/interface/flow/binding/metadata usages, matrix case 26, 21-file probe.
+- 017 `alias` (one concept).
+- 018 visibility on package members: definitions and packages.
+- 019 visibility on package members: usages.
+- 020 `ref` usages (importer only, concept exists).
+- 021 connectivity audit (read-only, measured): Connections, Interfaces, Items, Flows files and the vehicle example.
+- 022 `end` features (build from the audit; survey first).
+- 023 connect/interface ends syntax gaps from the audit (build; may be split further by the audit).
+- 024 import reference: structure, editor, scope (language only).
+- 025 import reference: importer sets it, default standard-library scope.
+- 026 kernel stubs (Base, Objects, Parts, Ports, Items, Connections, Interfaces, Attributes) in the accessory model.
+- 027 `ISQ`/`SI` unit stubs.
+- 028 quantity literal with unit reference: concept, editor, textGen (language only).
+- 029 quantity literal: importer, text fallback.
+- 030 feature-chain resolution for ends.
+- 031 port conjugation.
+- 032 well-formedness checks: typing and redefinition conformance.
+- 033 well-formedness checks: abstract instantiation, port compatibility on connections.
+- 034 MVP acceptance (vehicle example, text round trip, all names resolved).
+
 ## Part B: KerML base language (`com.symo.kerml.baselan`, test solution `test.com.symo.kerml.baselan`)
 - Phase 0: register the modules in `com.fasten.meta.architecture` + README project structure; create the importer solution
   `com.symo.kerml.baselan.importer` and its test solution `test.com.symo.kerml.baselan.importer` (separate from the SysML importer:

@@ -77,6 +77,9 @@ the result and questions files, and in the archive directory name.
 
 ## Principles
 - Smallest useful increment; the user cross-checks each piece.
+- Size of an order (the developer's session budget is the limit): one concern, at most about four concepts, one editor
+  test, one session. Heavy verification (all-project run, 21-file probe) only at the end of an iteration; audits are
+  separate read-only iterations. An order that needs several developer sessions is split into several orders.
 - Faithful to the spec; the architecture model's layering rules are binding.
 - Recommend, don't survey. Ask the user only for decisions that are really theirs.
 - Feedback is bidirectional: welcome the developer's critique of the plan, of your
