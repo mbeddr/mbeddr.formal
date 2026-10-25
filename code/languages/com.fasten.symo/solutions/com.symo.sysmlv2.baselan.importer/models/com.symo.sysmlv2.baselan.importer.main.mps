@@ -7634,7 +7634,7 @@
             <property role="TrG5h" value="direction" />
             <node concept="17QB3L" id="6coPuU2XsoT" role="1tU5fm" />
             <node concept="1rXfSq" id="6coPuU2XsoU" role="33vP2m">
-              <ref role="37wK5l" node="4mJZS3mV$o8" />
+              <ref role="37wK5l" node="4mJZS3mV$o8" resolve="extractDirection" />
               <node concept="37vLTw" id="6coPuU2XsoV" role="37wK5m">
                 <ref role="3cqZAo" node="2d_6cEDLy0$" resolve="basicPrefix" />
               </node>
@@ -9023,7 +9023,7 @@
             <property role="TrG5h" value="direction" />
             <node concept="17QB3L" id="6coPuU2VjRm" role="1tU5fm" />
             <node concept="1rXfSq" id="6coPuU2VjRn" role="33vP2m">
-              <ref role="37wK5l" node="4mJZS3mV$o8" />
+              <ref role="37wK5l" node="4mJZS3mV$o8" resolve="extractDirection" />
               <node concept="2OqwBi" id="6coPuU2VjRo" role="37wK5m">
                 <node concept="37vLTw" id="6coPuU2VjRr" role="2Oq$k0">
                   <ref role="3cqZAo" node="6coPuU2VjQs" resolve="prefix" />
@@ -10531,7 +10531,7 @@
           <node concept="3cpWsn" id="6coPuU37y6x" role="3cpWs9">
             <property role="TrG5h" value="direction" />
             <node concept="1rXfSq" id="6coPuU37y6z" role="33vP2m">
-              <ref role="37wK5l" node="4mJZS3mV$o8" />
+              <ref role="37wK5l" node="4mJZS3mV$o8" resolve="extractDirection" />
               <node concept="2OqwBi" id="6coPuU37y6$" role="37wK5m">
                 <node concept="37vLTw" id="6coPuU37y6B" role="2Oq$k0">
                   <ref role="3cqZAo" node="6coPuU37y5D" resolve="prefix" />
@@ -15341,7 +15341,7 @@
       <node concept="37vLTG" id="4mJZS3mV$o9" role="3clF46">
         <property role="TrG5h" value="basic" />
         <node concept="3uibUv" id="4mJZS3mV$oa" role="1tU5fm">
-          <ref role="3uigEE" to="guqe:~SysMLv2Parser$BasicUsagePrefixContext" resolve="com.symo.sysmlv2.baselan.importer.antlr.SysMLv2Parser.BasicUsagePrefixContext" />
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$BasicUsagePrefixContext" resolve="SysMLv2Parser.BasicUsagePrefixContext" />
         </node>
       </node>
       <node concept="3clFbS" id="4mJZS3mV$ob" role="3clF47">
@@ -15349,7 +15349,7 @@
           <node concept="3cpWsn" id="4mJZS3mV$oc" role="3cpWs9">
             <property role="TrG5h" value="refPrefix" />
             <node concept="3uibUv" id="4mJZS3mV$oe" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$RefPrefixContext" resolve="com.symo.sysmlv2.baselan.importer.antlr.SysMLv2Parser.RefPrefixContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$RefPrefixContext" resolve="SysMLv2Parser.RefPrefixContext" />
             </node>
             <node concept="2OqwBi" id="4mJZS3mV_3Q" role="33vP2m">
               <node concept="37vLTw" id="4mJZS3mV$AN" role="2Oq$k0">
@@ -19425,7 +19425,7 @@
       <node concept="37vLTG" id="4mJZS3mQnwS" role="3clF46">
         <property role="TrG5h" value="basic" />
         <node concept="3uibUv" id="4mJZS3mQnwT" role="1tU5fm">
-          <ref role="3uigEE" to="guqe:~SysMLv2Parser$BasicUsagePrefixContext" resolve="com.symo.sysmlv2.baselan.importer.antlr.SysMLv2Parser.BasicUsagePrefixContext" />
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$BasicUsagePrefixContext" resolve="SysMLv2Parser.BasicUsagePrefixContext" />
         </node>
       </node>
       <node concept="3clFbS" id="4mJZS3mQnwU" role="3clF47">
@@ -19458,7 +19458,7 @@
           <node concept="3cpWsn" id="4mJZS3mQnx4" role="3cpWs9">
             <property role="TrG5h" value="refPrefix" />
             <node concept="3uibUv" id="4mJZS3mQnx6" role="1tU5fm">
-              <ref role="3uigEE" to="guqe:~SysMLv2Parser$RefPrefixContext" resolve="com.symo.sysmlv2.baselan.importer.antlr.SysMLv2Parser.RefPrefixContext" />
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$RefPrefixContext" resolve="SysMLv2Parser.RefPrefixContext" />
             </node>
             <node concept="2OqwBi" id="4mJZS3mQph1" role="33vP2m">
               <node concept="37vLTw" id="4mJZS3mQo4$" role="2Oq$k0">
@@ -19555,7 +19555,7 @@
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$RefPrefixContext.ABSTRACT()" resolve="ABSTRACT" />
               </node>
             </node>
-            <node concept="10Nm6u" id="4mJZS3mQnxA" role="3uHU7w" />
+            <node concept="10Nm6u" id="4mJZS3nW6cp" role="3uHU7w" />
           </node>
         </node>
       </node>
