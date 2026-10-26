@@ -344,6 +344,9 @@
         <child id="6214786105876472931" name="value" index="1_WVXE" />
         <child id="6214786105876472930" name="feature" index="1_WVXF" />
       </concept>
+      <concept id="7354895567553737694" name="com.symo.sysmlv2.baselan.structure.SysMLv2Alias" flags="ng" index="1AcQlj">
+        <property id="7354895567553737695" name="targetName" index="1AcQli" />
+      </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="6214786105868823585" name="locale" index="1_pRsC" />
         <property id="3828348643708195211" name="body" index="3HG_t5" />
@@ -2602,6 +2605,10 @@
         <property role="TrG5h" value="PackageFile" />
         <node concept="3Z9vzX" id="3PUPjB2qKUe" role="2h0jOs">
           <property role="TrG5h" value="pack1" />
+          <node concept="1AcQlj" id="6ohPCO11nKn" role="3Z9vGx">
+            <property role="TrG5h" value="AliasName" />
+            <property role="1AcQli" value="A::B" />
+          </node>
         </node>
         <node concept="3xLA65" id="3PUPjB2qNqu" role="lGtFl">
           <property role="TrG5h" value="empty_package" />
@@ -2635,7 +2642,7 @@
               <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
               <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
               <node concept="Xl_RD" id="3PUPjB2qhIt" role="37wK5m">
-                <property role="Xl_RC" value="package pack1 { }" />
+                <property role="Xl_RC" value="package pack1 { alias AliasName for A::B; }" />
               </node>
               <node concept="Xl_RD" id="3PUPjB2qhIu" role="37wK5m">
                 <property role="Xl_RC" value="PackageFile" />
@@ -2768,7 +2775,7 @@
               <ref role="3cqZAo" node="6coPuU3oEfN" resolve="content" />
             </node>
             <node concept="Xl_RD" id="6coPuU3oEfW" role="37vLTx">
-              <property role="Xl_RC" value="package pack1 {&#10;" />
+              <property role="Xl_RC" value="package pack1 {&#10;  alias AliasName for A::B;&#10;" />
             </node>
           </node>
         </node>
@@ -3319,6 +3326,10 @@
         <property role="TrG5h" value="PartDefFile" />
         <node concept="3ZUotO" id="3PUPjB2A76x" role="2h0jOs">
           <property role="TrG5h" value="Engine" />
+          <node concept="1AcQlj" id="6ohPCO11nKo" role="3w00ZY">
+            <property role="TrG5h" value="AliasName" />
+            <property role="1AcQli" value="A::B" />
+          </node>
         </node>
         <node concept="3xLA65" id="3PUPjB2A76y" role="lGtFl">
           <property role="TrG5h" value="engine_partdef" />
@@ -3338,7 +3349,7 @@
               <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
               <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
               <node concept="Xl_RD" id="3PUPjB2A774" role="37wK5m">
-                <property role="Xl_RC" value="part def Engine { }" />
+                <property role="Xl_RC" value="part def Engine { alias AliasName for A::B; }" />
               </node>
               <node concept="Xl_RD" id="3PUPjB2A775" role="37wK5m">
                 <property role="Xl_RC" value="PartDefFile" />
@@ -3388,7 +3399,7 @@
               <ref role="3cqZAo" node="6coPuU3oEht" resolve="content" />
             </node>
             <node concept="Xl_RD" id="6coPuU3oEhA" role="37vLTx">
-              <property role="Xl_RC" value="part def Engine {&#10;" />
+              <property role="Xl_RC" value="part def Engine {&#10;  alias AliasName for A::B;&#10;" />
             </node>
           </node>
         </node>
@@ -13800,7 +13811,7 @@
                   <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
                   <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
                   <node concept="Xl_RD" id="6jpO12Dnw_y" role="37wK5m">
-                    <property role="Xl_RC" value="package P { alias X for Y; }" />
+                    <property role="Xl_RC" value="package P { public alias X for Y; }" />
                   </node>
                   <node concept="Xl_RD" id="6jpO12Dnw_z" role="37wK5m">
                     <property role="Xl_RC" value="MatrixCase8" />
@@ -13840,7 +13851,7 @@
             <node concept="3clFbS" id="6jpO12Dnw_O" role="1zc67A">
               <node concept="3vlDli" id="6jpO12Dnw_P" role="3cqZAp">
                 <node concept="Xl_RD" id="6jpO12Dnw_S" role="3tpDZB">
-                  <property role="Xl_RC" value="Unsupported SysML v2 construct: element filter / alias member" />
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: visibility prefix on alias" />
                 </node>
                 <node concept="2OqwBi" id="6jpO12Dnw_T" role="3tpDZA">
                   <node concept="37vLTw" id="6jpO12Dnw_W" role="2Oq$k0">
@@ -14261,6 +14272,152 @@
                     <ref role="3cqZAo" node="6ohPCNZxSfD" resolve="e" />
                   </node>
                   <node concept="liA8E" id="6ohPCNZxSfR" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6ohPCO11nL6" role="1SL9yI">
+      <property role="TrG5h" value="testAliasBodyRejected" />
+      <node concept="3cqZAl" id="6ohPCO11nL9" role="3clF45" />
+      <node concept="3clFbS" id="6ohPCO11nLa" role="3clF47">
+        <node concept="3J1_TO" id="6ohPCO11nLb" role="3cqZAp">
+          <node concept="3clFbS" id="6ohPCO11nLd" role="1zxBo7">
+            <node concept="3cpWs8" id="6ohPCO11nLe" role="3cqZAp">
+              <node concept="3cpWsn" id="6ohPCO11nLh" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <property role="OYnhT" value="local variable" />
+                <property role="2Lvdk3" value="tmp" />
+                <node concept="2YIFZM" id="6ohPCO11nLj" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="6ohPCO11nLk" role="37wK5m">
+                    <property role="Xl_RC" value="package P { alias X for Y { doc /* hi */ } }" />
+                  </node>
+                  <node concept="Xl_RD" id="6ohPCO11nLl" role="37wK5m">
+                    <property role="Xl_RC" value="AliasBody" />
+                  </node>
+                  <node concept="1jxXqW" id="6ohPCO11nLm" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="6ohPCO11nLn" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3xETmq" id="6ohPCO11nLo" role="3cqZAp">
+              <node concept="3_1$Yv" id="6ohPCO11nLp" role="3_9lra">
+                <node concept="Xl_RD" id="6ohPCO11nLq" role="3_1BAH">
+                  <property role="Xl_RC" value="AliasBody expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6ohPCO11nLr" role="3cqZAp">
+              <node concept="2YIFZM" id="6ohPCO11nLt" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="6ohPCO11nLu" role="37wK5m">
+                  <ref role="3cqZAo" node="6ohPCO11nLh" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="6ohPCO11nLv" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="6ohPCO11nLw" role="1zxBo5">
+            <node concept="XOnhg" id="6ohPCO11nL$" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <property role="OYnhT" value="local variable" />
+              <property role="2Lvdk3" value="e" />
+              <node concept="nSUau" id="6ohPCO11nLA" role="1tU5fm">
+                <node concept="3uibUv" id="6ohPCO11nLC" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6ohPCO11nLD" role="1zc67A">
+              <node concept="3vlDli" id="6ohPCO11nLE" role="3cqZAp">
+                <node concept="Xl_RD" id="6ohPCO11nLH" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: alias body" />
+                </node>
+                <node concept="2OqwBi" id="6ohPCO11nLI" role="3tpDZA">
+                  <node concept="37vLTw" id="6ohPCO11nLL" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6ohPCO11nL$" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="6ohPCO11nLM" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6ohPCO11nN7" role="1SL9yI">
+      <property role="TrG5h" value="testAliasShortNameRejected" />
+      <node concept="3cqZAl" id="6ohPCO11nNa" role="3clF45" />
+      <node concept="3clFbS" id="6ohPCO11nNb" role="3clF47">
+        <node concept="3J1_TO" id="6ohPCO11nNc" role="3cqZAp">
+          <node concept="3clFbS" id="6ohPCO11nNe" role="1zxBo7">
+            <node concept="3cpWs8" id="6ohPCO11nNf" role="3cqZAp">
+              <node concept="3cpWsn" id="6ohPCO11nNi" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <property role="OYnhT" value="local variable" />
+                <property role="2Lvdk3" value="tmp" />
+                <node concept="2YIFZM" id="6ohPCO11nNk" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="6ohPCO11nNl" role="37wK5m">
+                    <property role="Xl_RC" value="package P { alias &lt;Short&gt; X for Y; }" />
+                  </node>
+                  <node concept="Xl_RD" id="6ohPCO11nNm" role="37wK5m">
+                    <property role="Xl_RC" value="AliasShort" />
+                  </node>
+                  <node concept="1jxXqW" id="6ohPCO11nNn" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="6ohPCO11nNo" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3xETmq" id="6ohPCO11nNp" role="3cqZAp">
+              <node concept="3_1$Yv" id="6ohPCO11nNq" role="3_9lra">
+                <node concept="Xl_RD" id="6ohPCO11nNr" role="3_1BAH">
+                  <property role="Xl_RC" value="AliasShort expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6ohPCO11nNs" role="3cqZAp">
+              <node concept="2YIFZM" id="6ohPCO11nNu" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="6ohPCO11nNv" role="37wK5m">
+                  <ref role="3cqZAo" node="6ohPCO11nNi" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="6ohPCO11nNw" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="6ohPCO11nNx" role="1zxBo5">
+            <node concept="XOnhg" id="6ohPCO11nN_" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <property role="OYnhT" value="local variable" />
+              <property role="2Lvdk3" value="e" />
+              <node concept="nSUau" id="6ohPCO11nNB" role="1tU5fm">
+                <node concept="3uibUv" id="6ohPCO11nND" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6ohPCO11nNE" role="1zc67A">
+              <node concept="3vlDli" id="6ohPCO11nNF" role="3cqZAp">
+                <node concept="Xl_RD" id="6ohPCO11nNI" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: alias short name" />
+                </node>
+                <node concept="2OqwBi" id="6ohPCO11nNJ" role="3tpDZA">
+                  <node concept="37vLTw" id="6ohPCO11nNM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6ohPCO11nN_" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="6ohPCO11nNN" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
