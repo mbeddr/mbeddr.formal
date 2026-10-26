@@ -3502,6 +3502,11 @@
     <property role="TrG5h" value="SysMLv2ConnectionUsage_Editor" />
     <ref role="1XX52x" to="5rf1:BOR0Mn7r_A" resolve="SysMLv2ConnectionUsage" />
     <node concept="3EZMnI" id="BOR0Mn7w_W" role="2wV5jI">
+      <node concept="1kHk_G" id="6ohPCNYGp47" role="3EZMnx">
+        <property role="ZjSer" value="abstract" />
+        <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="PMmxH" id="BOR0Mn7w_X" role="3EZMnx">
         <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
       </node>
@@ -3734,6 +3739,11 @@
     <property role="3GE5qa" value="interface" />
     <ref role="1XX52x" to="5rf1:3MUZSeG2mDe" resolve="SysMLv2InterfaceUsage" />
     <node concept="3EZMnI" id="3MUZSeG2phB" role="2wV5jI">
+      <node concept="1kHk_G" id="6ohPCNYGp4a" role="3EZMnx">
+        <property role="ZjSer" value="abstract" />
+        <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="PMmxH" id="3MUZSeG2phC" role="3EZMnx">
         <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
       </node>
@@ -3839,6 +3849,11 @@
     <property role="3GE5qa" value="binding" />
     <ref role="1XX52x" to="5rf1:3MUZSeGZXvw" resolve="SysMLv2BindingUsage" />
     <node concept="3EZMnI" id="3MUZSeGZZg6" role="2wV5jI">
+      <node concept="1kHk_G" id="6ohPCNYGp4g" role="3EZMnx">
+        <property role="ZjSer" value="abstract" />
+        <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="PMmxH" id="3MUZSeGZZg7" role="3EZMnx">
         <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
       </node>
@@ -3987,6 +4002,11 @@
     <property role="3GE5qa" value="flow" />
     <ref role="1XX52x" to="5rf1:3MUZSeHmu9I" resolve="SysMLv2FlowUsage" />
     <node concept="3EZMnI" id="3MUZSeHPa0Z" role="2wV5jI">
+      <node concept="1kHk_G" id="6ohPCNYGp4d" role="3EZMnx">
+        <property role="ZjSer" value="abstract" />
+        <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="PMmxH" id="3MUZSeHPa10" role="3EZMnx">
         <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
       </node>

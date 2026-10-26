@@ -3153,6 +3153,21 @@
     <ref role="WuzLi" to="5rf1:BOR0Mn7r_A" resolve="SysMLv2ConnectionUsage" />
     <node concept="11bSqf" id="BOR0Mn7wFP" role="11c4hB">
       <node concept="3clFbS" id="BOR0Mn7wFR" role="2VODD2">
+        <node concept="3clFbJ" id="6ohPCNYGp4v" role="3cqZAp">
+          <node concept="2OqwBi" id="6ohPCNYGp4y" role="3clFbw">
+            <node concept="117lpO" id="6ohPCNYGp4_" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6ohPCNYGp4A" role="2OqNvi">
+              <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6ohPCNYGp4B" role="3clFbx">
+            <node concept="lc7rE" id="6ohPCNYGp4C" role="3cqZAp">
+              <node concept="la8eA" id="6ohPCNYGp4E" role="lcghm">
+                <property role="lacIc" value="abstract " />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="lc7rE" id="BOR0Mn7wFS" role="3cqZAp">
           <node concept="l9S2W" id="BOR0Mn7wFU" role="lcghm">
             <property role="lbP0B" value="" />
@@ -3497,6 +3512,21 @@
     <ref role="WuzLi" to="5rf1:3MUZSeG2mDe" resolve="SysMLv2InterfaceUsage" />
     <node concept="11bSqf" id="3MUZSeG2pkV" role="11c4hB">
       <node concept="3clFbS" id="3MUZSeG2pkX" role="2VODD2">
+        <node concept="3clFbJ" id="6ohPCNYGp4P" role="3cqZAp">
+          <node concept="2OqwBi" id="6ohPCNYGp4S" role="3clFbw">
+            <node concept="117lpO" id="6ohPCNYGp4V" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6ohPCNYGp4W" role="2OqNvi">
+              <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6ohPCNYGp4X" role="3clFbx">
+            <node concept="lc7rE" id="6ohPCNYGp4Y" role="3cqZAp">
+              <node concept="la8eA" id="6ohPCNYGp50" role="lcghm">
+                <property role="lacIc" value="abstract " />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="lc7rE" id="3MUZSeG2pkY" role="3cqZAp">
           <node concept="l9S2W" id="3MUZSeG2pl0" role="lcghm">
             <node concept="2OqwBi" id="3MUZSeG2pl2" role="lbANJ">
@@ -3693,6 +3723,21 @@
     <ref role="WuzLi" to="5rf1:3MUZSeGZXvw" resolve="SysMLv2BindingUsage" />
     <node concept="11bSqf" id="3MUZSeGZZh0" role="11c4hB">
       <node concept="3clFbS" id="3MUZSeGZZh2" role="2VODD2">
+        <node concept="3clFbJ" id="6ohPCNYGp5x" role="3cqZAp">
+          <node concept="2OqwBi" id="6ohPCNYGp5$" role="3clFbw">
+            <node concept="117lpO" id="6ohPCNYGp5B" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6ohPCNYGp5C" role="2OqNvi">
+              <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6ohPCNYGp5D" role="3clFbx">
+            <node concept="lc7rE" id="6ohPCNYGp5E" role="3cqZAp">
+              <node concept="la8eA" id="6ohPCNYGp5G" role="lcghm">
+                <property role="lacIc" value="abstract " />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="lc7rE" id="3MUZSeGZZh3" role="3cqZAp">
           <node concept="l9S2W" id="3MUZSeGZZh5" role="lcghm">
             <node concept="2OqwBi" id="3MUZSeGZZh7" role="lbANJ">
@@ -3931,6 +3976,21 @@
     <ref role="WuzLi" to="5rf1:3MUZSeHmu9I" resolve="SysMLv2FlowUsage" />
     <node concept="11bSqf" id="3MUZSeHPa1o" role="11c4hB">
       <node concept="3clFbS" id="3MUZSeHPa1q" role="2VODD2">
+        <node concept="3clFbJ" id="6ohPCNYGp5b" role="3cqZAp">
+          <node concept="2OqwBi" id="6ohPCNYGp5e" role="3clFbw">
+            <node concept="117lpO" id="6ohPCNYGp5h" role="2Oq$k0" />
+            <node concept="3TrcHB" id="6ohPCNYGp5i" role="2OqNvi">
+              <ref role="3TsBF5" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6ohPCNYGp5j" role="3clFbx">
+            <node concept="lc7rE" id="6ohPCNYGp5k" role="3cqZAp">
+              <node concept="la8eA" id="6ohPCNYGp5m" role="lcghm">
+                <property role="lacIc" value="abstract " />
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="lc7rE" id="3MUZSeHPa1r" role="3cqZAp">
           <node concept="l9S2W" id="3MUZSeHPa1t" role="lcghm">
             <node concept="2OqwBi" id="3MUZSeHPa1v" role="lbANJ">
