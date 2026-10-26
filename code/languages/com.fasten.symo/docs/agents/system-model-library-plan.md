@@ -145,6 +145,16 @@ Alias target becomes a child smart-reference concept built like the `*Ref` famil
 `ISysMLv2IdentifierNameConcept` when reified by the importer, plain qualified-name string otherwise), replacing `targetName`.
 The same concept is reused for `SysMLv2Import` in 024/025.
 
+### Iteration 017b result, language part (2026-10-27, archive `017b-alias-target-ref-language`, accepted as partial)
+- `SysMLv2IdentifierNameConceptRef` (renamed from the working name `SysMLv2NamedElementRef` at the user's request; rename done in
+  place via `update_node`, concept id kept): reference to `ISysMLv2IdentifierNameConcept` plus string, with behavior
+  (`qualifiedTextOf` of the target, string as fallback), editor, textGen and constraints cloned from the `*Ref` family. Mandatory
+  `target` child of `SysMLv2Alias`; `targetName` removed after a zero-usage check. `ISysMLv2IdentifierNameConcept` added on
+  `SysMLv2Usage` and `SysMLv2Alias`. Scope excludes comment, documentation and textual representation (scope test, exact set).
+- Importer builds the child with the string only. Full run 346 tests (345 + scope test), only the 2 known plantuml failures.
+  The 017 count of 350 was five duplicated `START_TEST` lines of token-fidelity methods, not 350 distinct tests.
+- Not done, moved to 017c: reification, its tests, the scope-test mutation, the reification and derived-textGen mutations, probe.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -170,7 +180,8 @@ iterations.
 - 016 `abstract` on connection/interface/flow/binding usages, 21-file probe (done).
 - 016b importer test cleanup: matrix accepted cases assert nothing about the imported nodes (user, 2026-10-26); see order.
 - 017 `alias` (one concept; done).
-- 017b alias target as a smart reference (child `*Ref` concept, importer reifies); order drafted.
+- 017b alias target as a smart reference, language part (done, committed).
+- 017c alias target: importer reification, tests, mutations, probe.
 - 018 visibility on package members: definitions and packages.
 - 019 visibility on package members: usages.
 - 020 `ref` usages (importer only, concept exists).

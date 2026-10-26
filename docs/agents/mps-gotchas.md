@@ -12,6 +12,27 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## BaseLanguage behavior methods: reuse ASTs when the Java parser fails (2026-10-26)
+
+`mps_mcp_parse_java_and_insert` returned `INTERNAL_ERROR` while inserting a
+`getEffectiveName()` method into a `ConceptBehavior`, including for a minimal
+method body. This does not mean MPS behavior methods have no alternate authoring path.
+
+The alternative that worked was to print the existing `SysMLv2UsageRef_Behavior`
+root with `mps_mcp_print_node` (`format: JSON`, `deep: true`), clone its AST,
+adapt the concept and feature references, and insert the new root with
+`mps_mcp_insert_root_node_from_json`. For `SysMLv2IdentifierNameConceptRef`, this reused
+the method AST and the `qualifiedTextOf` call from the qualified-reference
+family. The root passed `mps_mcp_check_root_node_problems`, and the base-language
+module rebuilt successfully.
+
+When cloning a root, remove persistent `reference` IDs from every copied node so
+MPS allocates fresh IDs. Keep and deliberately update external feature and
+method references (`targetReference`); then check the inserted root before
+building. When implementing an abstract interface behavior method, set its
+`overriddenMethod` reference and `isVirtual` property; the body alone did not
+satisfy the root checker.
+
 
 ## Printed/cloned test code can carry the Console `#project` expression into a test model (2026-10-25)
 
