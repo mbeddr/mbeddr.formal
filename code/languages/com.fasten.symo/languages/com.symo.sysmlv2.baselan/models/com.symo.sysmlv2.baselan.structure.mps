@@ -673,6 +673,9 @@
     <node concept="PrWs8" id="6jpO12EkB8c" role="PzmwI">
       <ref role="PrY4T" node="6jpO12Ek_66" resolve="ISysMLv2Type" />
     </node>
+    <node concept="PrWs8" id="6ohPCO1srbL" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU3buux">
     <property role="EcuMT" value="7140692429575677857" />
@@ -1324,11 +1327,6 @@
     <property role="R4oN_" value="SysML v2 alias member; target name is retained as text pending name resolution" />
     <property role="3GE5qa" value="package" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="6ohPCO08Ffv" role="1TKVEl">
-      <property role="IQ2nx" value="7354895567553737695" />
-      <property role="TrG5h" value="targetName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="PrWs8" id="6ohPCO08Ffw" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
@@ -1346,6 +1344,37 @@
     </node>
     <node concept="PrWs8" id="6ohPCO08Ff_" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6ohPCO1srbI" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="1TJgyj" id="6ohPCO1W$qN" role="1TKVEi">
+      <property role="IQ2ns" value="7354895567584118451" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6ohPCO1sp61" resolve="SysMLv2IdentifierNameConceptRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6ohPCO1sp61">
+    <property role="TrG5h" value="SysMLv2IdentifierNameConceptRef" />
+    <property role="R4oN_" value="Qualified smart reference to a SysML v2 identifier-named element, with a text fallback when unresolved." />
+    <property role="EcuMT" value="7354895567575683457" />
+    <property role="3GE5qa" value="references" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6ohPCO1McQC" role="1TKVEi">
+      <property role="IQ2ns" value="7354895567575683459" />
+      <property role="TrG5h" value="target" />
+      <property role="20kJfa" value="target" />
+      <ref role="20lvS9" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="1TJgyi" id="6ohPCO1McQD" role="1TKVEl">
+      <property role="IQ2nx" value="7354895567575683458" />
+      <property role="TrG5h" value="targetName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="6ohPCO1W$qK" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
     </node>
   </node>
 </model>

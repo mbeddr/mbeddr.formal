@@ -4282,16 +4282,40 @@
           <node concept="la8eA" id="6ohPCO08Hkd" role="lcghm">
             <property role="lacIc" value=" for " />
           </node>
-          <node concept="l9hG8" id="6ohPCO08Hke" role="lcghm">
-            <node concept="2OqwBi" id="6ohPCO08Hkg" role="lb14g">
-              <node concept="117lpO" id="6ohPCO08Hkj" role="2Oq$k0" />
-              <node concept="3TrcHB" id="6ohPCO08Hkk" role="2OqNvi">
-                <ref role="3TsBF5" to="5rf1:6ohPCO08Ffv" resolve="targetName" />
+          <node concept="l9hG8" id="6ohPCO24QQo" role="lcghm">
+            <node concept="2OqwBi" id="6ohPCO24QQq" role="lb14g">
+              <node concept="2OqwBi" id="6ohPCO24QQt" role="2Oq$k0">
+                <node concept="117lpO" id="6ohPCO24QQw" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6ohPCO24QQx" role="2OqNvi">
+                  <ref role="3Tt5mk" to="5rf1:6ohPCO1W$qN" resolve="target" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="6ohPCO24QQy" role="2OqNvi">
+                <ref role="37wK5l" to="5wt7:6ohPCO1ZiX_" resolve="getEffectiveName" />
               </node>
             </node>
           </node>
           <node concept="la8eA" id="6ohPCO08Hkl" role="lcghm">
             <property role="lacIc" value=";" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6ohPCO2231m">
+    <property role="TrG5h" value="SysMLv2IdentifierNameConceptRef_TextGen" />
+    <property role="3GE5qa" value="base" />
+    <ref role="WuzLi" to="5rf1:6ohPCO1sp61" resolve="SysMLv2IdentifierNameConceptRef" />
+    <node concept="11bSqf" id="6ohPCO2231n" role="11c4hB">
+      <node concept="3clFbS" id="6ohPCO2231p" role="2VODD2">
+        <node concept="lc7rE" id="6ohPCO2231q" role="3cqZAp">
+          <node concept="l9hG8" id="6ohPCO2231s" role="lcghm">
+            <node concept="2OqwBi" id="6ohPCO2231u" role="lb14g">
+              <node concept="117lpO" id="6ohPCO2231x" role="2Oq$k0" />
+              <node concept="2qgKlT" id="6ohPCO2231y" role="2OqNvi">
+                <ref role="37wK5l" to="5wt7:6ohPCO1ZiX_" resolve="getEffectiveName" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

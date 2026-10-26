@@ -8,7 +8,9 @@
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="f47b95d4-5e73-4c04-9204-18076950153b" name="de.itemis.mps.compare" version="0" />
   </languages>
-  <imports />
+  <imports>
+    <import index="5rf1" ref="r:46502bdd-1e0c-47cf-8eed-483f76d95b20(com.symo.sysmlv2.baselan.structure)" />
+  </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
       <concept id="511191073233700873" name="jetbrains.mps.lang.test.structure.ScopesTest" flags="ng" index="2rqxmr">
@@ -119,10 +121,28 @@
         <child id="7140692429570900101" name="type" index="3xZtlF" />
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp" />
+      <concept id="6214786105868823569" name="com.symo.sysmlv2.baselan.structure.SysMLv2Comment" flags="ng" index="1_pRso">
+        <property id="6214786105868823573" name="body" index="1_pRss" />
+      </concept>
+      <concept id="6214786105874793928" name="com.symo.sysmlv2.baselan.structure.SysMLv2TextualRepresentation" flags="ng" index="1_z1V1">
+        <property id="6214786105874793929" name="body" index="1_z1V0" />
+        <property id="6214786105874793930" name="language" index="1_z1V3" />
+      </concept>
       <concept id="6214786105876472907" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinition" flags="ng" index="1_WVX2" />
       <concept id="6214786105876472909" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataUsage" flags="ng" index="1_WVX4" />
       <concept id="6214786105876472911" name="com.symo.sysmlv2.baselan.structure.SysMLv2LiteralExpression" flags="ng" index="1_WVX6">
         <property id="6214786105876472933" name="value" index="1_WVXG" />
+      </concept>
+      <concept id="7354895567553737694" name="com.symo.sysmlv2.baselan.structure.SysMLv2Alias" flags="ng" index="1AcQlj">
+        <property id="7354895567553737695" name="targetName" index="1AcQli" />
+        <child id="7354895567584118451" name="target" index="1BST0Y" />
+      </concept>
+      <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
+        <property id="7354895567575683458" name="targetName" index="1Bo4sf" />
+        <reference id="7354895567575683459" name="target" index="1Bo4se" />
+      </concept>
+      <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
+        <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
@@ -378,6 +398,54 @@
                 </node>
               </node>
             </node>
+          </node>
+          <node concept="1AcQlj" id="6ohPCO2tF8_" role="3Z9vGx">
+            <property role="TrG5h" value="ScopeProbe" />
+            <property role="1AcQli" value="" />
+            <node concept="1Bo4sc" id="6ohPCO2tF8B" role="1BST0Y">
+              <property role="1Bo4sf" value="MissingTarget" />
+              <ref role="1Bo4se" node="3MUZSeG$NFO" resolve="Link" />
+              <node concept="2rqxmr" id="6ohPCO2tF8C" role="lGtFl">
+                <ref role="1BTHP0" node="3MUZSeG$NFO" resolve="Link" />
+                <node concept="3KTrbX" id="6ohPCO2tF8D" role="3KTr4d">
+                  <ref role="3AHY9a" node="3MUZSeG$NFJ" resolve="DP" />
+                </node>
+                <node concept="3KTrbX" id="6ohPCO2tF8E" role="3KTr4d">
+                  <ref role="3AHY9a" node="3MUZSeG$NFK" resolve="A" />
+                </node>
+                <node concept="3KTrbX" id="6ohPCO2tF8F" role="3KTr4d">
+                  <ref role="3AHY9a" node="3MUZSeG$NFN" resolve="Plain" />
+                </node>
+                <node concept="3KTrbX" id="6ohPCO2tF8G" role="3KTr4d">
+                  <ref role="3AHY9a" node="3MUZSeG$NFO" resolve="Link" />
+                </node>
+                <node concept="3KTrbX" id="6ohPCO2tF8H" role="3KTr4d">
+                  <ref role="3AHY9a" node="3MUZSeG$NFT" resolve="Link2" />
+                </node>
+                <node concept="3KTrbX" id="6ohPCO2tF8I" role="3KTr4d">
+                  <ref role="3AHY9a" node="3MUZSeG$NFY" resolve="Sys" />
+                </node>
+                <node concept="3KTrbX" id="6ohPCO2tF8M" role="3KTr4d">
+                  <ref role="3AHY9a" node="6ohPCO2tF8_" resolve="ScopeProbe" />
+                </node>
+                <node concept="3KTrbX" id="6ohPCO2BoCN" role="3KTr4d">
+                  <ref role="3AHY9a" node="3MUZSeG$NFI" resolve="p" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1_pRso" id="6ohPCO2tF8J" role="3Z9vGx">
+            <property role="1_pRss" value="scope fixture" />
+            <property role="TrG5h" value="ExcludedComment" />
+          </node>
+          <node concept="3HG_t4" id="6ohPCO2tF8K" role="3Z9vGx">
+            <property role="3HG_t5" value="scope fixture" />
+            <property role="TrG5h" value="ExcludedDocumentation" />
+          </node>
+          <node concept="1_z1V1" id="6ohPCO2tF8L" role="3Z9vGx">
+            <property role="1_z1V0" value="scope fixture" />
+            <property role="TrG5h" value="ExcludedTextualRepresentation" />
+            <property role="1_z1V3" value="text" />
           </node>
         </node>
       </node>
