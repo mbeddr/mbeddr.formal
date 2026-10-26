@@ -128,6 +128,23 @@ Measured live over `Attributes`, `Ports`, `Parts` (the remaining files follow in
 - The importer model diff left by the restored mutations (74 lines of id churn) was discarded with `git checkout`.
 - Rule going forward: an accepted-construct importer test asserts the imported nodes or a round trip, never only "no exception".
 
+### Iteration 017 result (2026-10-26, archive `017-sysml-alias`)
+- `SysMLv2Alias` (`name`, string `targetName`) in package, item, part, attribute and port bodies; editor `alias Name for Target;`,
+  textGen, importer path. Named rejections: visibility prefix, `<short>` (no short-name precedent in the language), alias body
+  with content. Tests: structural + round trip (package, part definition body), 3 rejection cases, importer and textGen
+  mutations. Full run 350 tests, only the 2 known plantuml failures.
+- Probe: only `Attributes.sysml` moved, now stops at `alias body`; the bodies of its two aliases (`AttributeValue`,
+  `attributeValues`) contain a `doc` block comment, nothing else. No other of the 21 files has an alias body with content.
+- Importer model diff 1178 lines (906/272): the three body visitors `visitDefinitionBodyItem`, `visitDefinitionBodyItemContent`,
+  `visitPackageBodyElement` were replaced as ASTs (225 refs -> 351) plus two new methods; the other 68 methods are unchanged.
+  Accepted, not reworked.
+- Follow-ups: 017b alias target as a smart reference (below); `doc` inside alias bodies (small, own decision).
+
+### Iteration 017b (user, 2026-10-26)
+Alias target becomes a child smart-reference concept built like the `*Ref` family (reference to
+`ISysMLv2IdentifierNameConcept` when reified by the importer, plain qualified-name string otherwise), replacing `targetName`.
+The same concept is reused for `SysMLv2Import` in 024/025.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -152,7 +169,8 @@ iterations.
 - 015 `abstract` on definitions and on part/attribute/port/item usages (done, committed).
 - 016 `abstract` on connection/interface/flow/binding usages, 21-file probe (done).
 - 016b importer test cleanup: matrix accepted cases assert nothing about the imported nodes (user, 2026-10-26); see order.
-- 017 `alias` (one concept).
+- 017 `alias` (one concept; done).
+- 017b alias target as a smart reference (child `*Ref` concept, importer reifies); order drafted.
 - 018 visibility on package members: definitions and packages.
 - 019 visibility on package members: usages.
 - 020 `ref` usages (importer only, concept exists).
