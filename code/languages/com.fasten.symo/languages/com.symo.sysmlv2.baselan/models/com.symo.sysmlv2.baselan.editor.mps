@@ -4280,5 +4280,27 @@
       <node concept="l2Vlx" id="6jpO12_$T2s" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6ohPCO08Hjd">
+    <property role="TrG5h" value="SysMLv2Alias_Editor" />
+    <property role="3GE5qa" value="package" />
+    <ref role="1XX52x" to="5rf1:6ohPCO08Ffu" resolve="SysMLv2Alias" />
+    <node concept="3EZMnI" id="6ohPCO08Hjw" role="2wV5jI">
+      <node concept="3F0ifn" id="6ohPCO08Hjx" role="3EZMnx">
+        <property role="3F0ifm" value="alias " />
+      </node>
+      <node concept="3F0A7n" id="6ohPCO08Hjy" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="6ohPCO08Hjz" role="3EZMnx">
+        <property role="3F0ifm" value=" for " />
+      </node>
+      <node concept="3F0A7n" id="6ohPCO08Hj$" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:6ohPCO08Ffv" resolve="targetName" />
+      </node>
+      <node concept="3F0ifn" id="6ohPCO08Hj_" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+    </node>
+  </node>
 </model>
 

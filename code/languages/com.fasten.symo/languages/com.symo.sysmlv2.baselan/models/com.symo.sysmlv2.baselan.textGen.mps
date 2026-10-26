@@ -4261,5 +4261,41 @@
       </node>
     </node>
   </node>
+  <node concept="WtQ9Q" id="6ohPCO08HjZ">
+    <property role="TrG5h" value="SysMLv2Alias_TextGen" />
+    <property role="3GE5qa" value="package" />
+    <ref role="WuzLi" to="5rf1:6ohPCO08Ffu" resolve="SysMLv2Alias" />
+    <node concept="11bSqf" id="6ohPCO08Hk0" role="11c4hB">
+      <node concept="3clFbS" id="6ohPCO08Hk2" role="2VODD2">
+        <node concept="lc7rE" id="6ohPCO08Hk3" role="3cqZAp">
+          <node concept="la8eA" id="6ohPCO08Hk5" role="lcghm">
+            <property role="lacIc" value="alias " />
+          </node>
+          <node concept="l9hG8" id="6ohPCO08Hk6" role="lcghm">
+            <node concept="2OqwBi" id="6ohPCO08Hk8" role="lb14g">
+              <node concept="117lpO" id="6ohPCO08Hkb" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6ohPCO08Hkc" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6ohPCO08Hkd" role="lcghm">
+            <property role="lacIc" value=" for " />
+          </node>
+          <node concept="l9hG8" id="6ohPCO08Hke" role="lcghm">
+            <node concept="2OqwBi" id="6ohPCO08Hkg" role="lb14g">
+              <node concept="117lpO" id="6ohPCO08Hkj" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6ohPCO08Hkk" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6ohPCO08Ffv" resolve="targetName" />
+              </node>
+            </node>
+          </node>
+          <node concept="la8eA" id="6ohPCO08Hkl" role="lcghm">
+            <property role="lacIc" value=";" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

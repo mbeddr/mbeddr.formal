@@ -1317,5 +1317,36 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6ohPCO08Ffu">
+    <property role="EcuMT" value="7354895567553737694" />
+    <property role="TrG5h" value="SysMLv2Alias" />
+    <property role="34LRSv" value="alias" />
+    <property role="R4oN_" value="SysML v2 alias member; target name is retained as text pending name resolution" />
+    <property role="3GE5qa" value="package" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6ohPCO08Ffv" role="1TKVEl">
+      <property role="IQ2nx" value="7354895567553737695" />
+      <property role="TrG5h" value="targetName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="6ohPCO08Ffw" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6ohPCO08Ffx" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="6ohPCO08Ffy" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6ohPCO08Ffz" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6ohPCO08Ff$" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
+    <node concept="PrWs8" id="6ohPCO08Ff_" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
+    </node>
+  </node>
 </model>
 
