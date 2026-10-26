@@ -35,6 +35,8 @@
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
     <import index="mhbf" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)" />
     <import index="i5cy" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.concurrent.atomic(JDK/)" />
+    <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
+    <import index="eoo2" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.nio.file(JDK/)" />
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
@@ -9675,7 +9677,7 @@
               <ref role="3cqZAo" node="3MUZSeFZtVf" resolve="content" />
             </node>
             <node concept="Xl_RD" id="3MUZSeFZtXf" role="37vLTx">
-              <property role="Xl_RC" value="    connection shaft : Shaft connect engine to gearbox;\n" />
+              <property role="Xl_RC" value="    abstract connection shaft : Shaft connect engine to gearbox;&#10;" />
             </node>
           </node>
         </node>
@@ -11899,7 +11901,7 @@
               <ref role="3cqZAo" node="3MUZSeGxT0d" resolve="content" />
             </node>
             <node concept="Xl_RD" id="3MUZSeGxT35" role="37vLTx">
-              <property role="Xl_RC" value="    interface link : DataLink connect sensor.output to controller.input;\n" />
+              <property role="Xl_RC" value="    abstract interface link : DataLink connect sensor.output to controller.input;&#10;" />
             </node>
           </node>
         </node>
@@ -12828,7 +12830,7 @@
               <ref role="3cqZAo" node="3MUZSeHj$57" resolve="content" />
             </node>
             <node concept="Xl_RD" id="3MUZSeHj$6m" role="37vLTx">
-              <property role="Xl_RC" value="    binding d2 bind inner.q = p;\n" />
+              <property role="Xl_RC" value="    abstract binding d2 bind inner.q = p;&#10;" />
             </node>
           </node>
         </node>
@@ -13444,7 +13446,7 @@
               <ref role="3cqZAo" node="3MUZSeIlccv" resolve="content" />
             </node>
             <node concept="Xl_RD" id="3MUZSeIlceh" role="37vLTx">
-              <property role="Xl_RC" value="    flow supply : FuelFlow of Fuel from tank.fuelOut to engine.fuelIn;\n" />
+              <property role="Xl_RC" value="    abstract flow supply : FuelFlow of Fuel from tank.fuelOut to engine.fuelIn;&#10;" />
             </node>
           </node>
         </node>
@@ -15114,6 +15116,207 @@
                     <ref role="3cqZAo" node="4mJZS3nnz66" resolve="e" />
                   </node>
                   <node concept="liA8E" id="4mJZS3nnz6k" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6ohPCNZxS8N" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase35" />
+      <node concept="3cqZAl" id="6ohPCNZxS8Q" role="3clF45" />
+      <node concept="3clFbS" id="6ohPCNZxS8R" role="3clF47">
+        <node concept="3cpWs8" id="6ohPCNZxS8S" role="3cqZAp">
+          <node concept="3cpWsn" id="6ohPCNZxS8V" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6ohPCNZxS8X" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6ohPCNZxS8Y" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { abstract connection c connect a to b; } }" />
+              </node>
+              <node concept="Xl_RD" id="6ohPCNZxS8Z" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase35" />
+              </node>
+              <node concept="1jxXqW" id="6ohPCNZxS90" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6ohPCNZxS91" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6ohPCNZxS92" role="3cqZAp">
+          <node concept="2YIFZM" id="6ohPCNZxS94" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6ohPCNZxS95" role="37wK5m">
+              <ref role="3cqZAo" node="6ohPCNZxS8V" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6ohPCNZxS96" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6ohPCNZxSap" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase36" />
+      <node concept="3cqZAl" id="6ohPCNZxSas" role="3clF45" />
+      <node concept="3clFbS" id="6ohPCNZxSat" role="3clF47">
+        <node concept="3cpWs8" id="6ohPCNZxSau" role="3cqZAp">
+          <node concept="3cpWsn" id="6ohPCNZxSax" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6ohPCNZxSaz" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6ohPCNZxSa$" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { abstract interface i connect a to b; } }" />
+              </node>
+              <node concept="Xl_RD" id="6ohPCNZxSa_" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase36" />
+              </node>
+              <node concept="1jxXqW" id="6ohPCNZxSaA" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6ohPCNZxSaB" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6ohPCNZxSaC" role="3cqZAp">
+          <node concept="2YIFZM" id="6ohPCNZxSaE" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6ohPCNZxSaF" role="37wK5m">
+              <ref role="3cqZAo" node="6ohPCNZxSax" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6ohPCNZxSaG" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6ohPCNZxSbZ" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase37" />
+      <node concept="3cqZAl" id="6ohPCNZxSc2" role="3clF45" />
+      <node concept="3clFbS" id="6ohPCNZxSc3" role="3clF47">
+        <node concept="3cpWs8" id="6ohPCNZxSc4" role="3cqZAp">
+          <node concept="3cpWsn" id="6ohPCNZxSc7" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6ohPCNZxSc9" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6ohPCNZxSca" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { abstract flow f of Fuel from a to b; } }" />
+              </node>
+              <node concept="Xl_RD" id="6ohPCNZxScb" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase37" />
+              </node>
+              <node concept="1jxXqW" id="6ohPCNZxScc" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6ohPCNZxScd" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6ohPCNZxSce" role="3cqZAp">
+          <node concept="2YIFZM" id="6ohPCNZxScg" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6ohPCNZxSch" role="37wK5m">
+              <ref role="3cqZAo" node="6ohPCNZxSc7" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6ohPCNZxSci" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6ohPCNZxSd_" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase38" />
+      <node concept="3cqZAl" id="6ohPCNZxSdC" role="3clF45" />
+      <node concept="3clFbS" id="6ohPCNZxSdD" role="3clF47">
+        <node concept="3cpWs8" id="6ohPCNZxSdE" role="3cqZAp">
+          <node concept="3cpWsn" id="6ohPCNZxSdH" role="3cpWs9">
+            <property role="TrG5h" value="tmp" />
+            <node concept="2YIFZM" id="6ohPCNZxSdJ" role="33vP2m">
+              <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+              <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+              <node concept="Xl_RD" id="6ohPCNZxSdK" role="37wK5m">
+                <property role="Xl_RC" value="package P { part def D { abstract binding b bind a = b; } }" />
+              </node>
+              <node concept="Xl_RD" id="6ohPCNZxSdL" role="37wK5m">
+                <property role="Xl_RC" value="MatrixCase38" />
+              </node>
+              <node concept="1jxXqW" id="6ohPCNZxSdM" role="37wK5m" />
+            </node>
+            <node concept="H_c77" id="6ohPCNZxSdN" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="6ohPCNZxSdO" role="3cqZAp">
+          <node concept="2YIFZM" id="6ohPCNZxSdQ" role="3clFbG">
+            <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+            <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+            <node concept="37vLTw" id="6ohPCNZxSdR" role="37wK5m">
+              <ref role="3cqZAo" node="6ohPCNZxSdH" resolve="tmp" />
+            </node>
+            <node concept="1jxXqW" id="6ohPCNZxSdS" role="37wK5m" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6ohPCNZxSfb" role="1SL9yI">
+      <property role="TrG5h" value="testMatrixCase39" />
+      <node concept="3cqZAl" id="6ohPCNZxSfe" role="3clF45" />
+      <node concept="3clFbS" id="6ohPCNZxSff" role="3clF47">
+        <node concept="3J1_TO" id="6ohPCNZxSfg" role="3cqZAp">
+          <node concept="3clFbS" id="6ohPCNZxSfi" role="1zxBo7">
+            <node concept="3cpWs8" id="6ohPCNZxSfj" role="3cqZAp">
+              <node concept="3cpWsn" id="6ohPCNZxSfm" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="2YIFZM" id="6ohPCNZxSfo" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="6ohPCNZxSfp" role="37wK5m">
+                    <property role="Xl_RC" value="package P { part def D { derived abstract connection c connect a to b; } }" />
+                  </node>
+                  <node concept="Xl_RD" id="6ohPCNZxSfq" role="37wK5m">
+                    <property role="Xl_RC" value="MatrixCase39" />
+                  </node>
+                  <node concept="1jxXqW" id="6ohPCNZxSfr" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="6ohPCNZxSfs" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3xETmq" id="6ohPCNZxSft" role="3cqZAp">
+              <node concept="3_1$Yv" id="6ohPCNZxSfu" role="3_9lra">
+                <node concept="Xl_RD" id="6ohPCNZxSfv" role="3_1BAH">
+                  <property role="Xl_RC" value="MatrixCase39 expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6ohPCNZxSfw" role="3cqZAp">
+              <node concept="2YIFZM" id="6ohPCNZxSfy" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="6ohPCNZxSfz" role="37wK5m">
+                  <ref role="3cqZAo" node="6ohPCNZxSfm" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="6ohPCNZxSf$" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="6ohPCNZxSf_" role="1zxBo5">
+            <node concept="XOnhg" id="6ohPCNZxSfD" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="6ohPCNZxSfF" role="1tU5fm">
+                <node concept="3uibUv" id="6ohPCNZxSfH" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6ohPCNZxSfI" role="1zc67A">
+              <node concept="3vlDli" id="6ohPCNZxSfJ" role="3cqZAp">
+                <node concept="Xl_RD" id="6ohPCNZxSfM" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: derived usage prefix" />
+                </node>
+                <node concept="2OqwBi" id="6ohPCNZxSfN" role="3tpDZA">
+                  <node concept="37vLTw" id="6ohPCNZxSfQ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6ohPCNZxSfD" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="6ohPCNZxSfR" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
