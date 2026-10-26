@@ -346,6 +346,10 @@
       </concept>
       <concept id="7354895567553737694" name="com.symo.sysmlv2.baselan.structure.SysMLv2Alias" flags="ng" index="1AcQlj">
         <property id="7354895567553737695" name="targetName" index="1AcQli" />
+        <child id="7354895567584118451" name="target" index="1BST0Y" />
+      </concept>
+      <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
+        <property id="7354895567575683458" name="targetName" index="1Bo4sf" />
       </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="6214786105868823585" name="locale" index="1_pRsC" />
@@ -2605,9 +2609,12 @@
         <property role="TrG5h" value="PackageFile" />
         <node concept="3Z9vzX" id="3PUPjB2qKUe" role="2h0jOs">
           <property role="TrG5h" value="pack1" />
-          <node concept="1AcQlj" id="6ohPCO11nKn" role="3Z9vGx">
+          <node concept="1AcQlj" id="6ohPCO1Mc9c" role="3Z9vGx">
             <property role="TrG5h" value="AliasName" />
-            <property role="1AcQli" value="A::B" />
+            <property role="1AcQli" value="" />
+            <node concept="1Bo4sc" id="6ohPCO1ZiWY" role="1BST0Y">
+              <property role="1Bo4sf" value="A::B" />
+            </node>
           </node>
         </node>
         <node concept="3xLA65" id="3PUPjB2qNqu" role="lGtFl">
@@ -3328,7 +3335,10 @@
           <property role="TrG5h" value="Engine" />
           <node concept="1AcQlj" id="6ohPCO11nKo" role="3w00ZY">
             <property role="TrG5h" value="AliasName" />
-            <property role="1AcQli" value="A::B" />
+            <property role="1AcQli" value="" />
+            <node concept="1Bo4sc" id="6ohPCO2z7bq" role="1BST0Y">
+              <property role="1Bo4sf" value="A::B" />
+            </node>
           </node>
         </node>
         <node concept="3xLA65" id="3PUPjB2A76y" role="lGtFl">
