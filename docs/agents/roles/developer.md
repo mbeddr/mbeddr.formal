@@ -114,3 +114,18 @@ padding is not. Then stop and wait for the architect's refinement.
    (role `decl`), not `AssignmentExpression`; grammarcells `OptionalCell`/`FlagCell` type-to-reveal needs a start-of-collection
    keyword; the MCP `Empty enumeration property` on a nullable enum is a false positive; `execute_run_configuration` output is
    truncated at ~10 KB — grep `fullOutputPath` for `<START_TEST>`/`TEST_FAILURE_BEGIN`.
+
+## What to test (user policy, 2026-10-26)
+We build editors, structure and checks with high-level MPS DSLs (flag cells, optional cells, grammar cells, enums, scopes);
+those DSLs and their generators (JetBrains MPS languages for editor, structure, constraints, textgen and scopes, and
+mps-extensions such as grammarcells) are tested by their owners. Test **our code and our decisions**, not the library:
+- **Test:** our importer mapping (each construct, accepted and rejected), our textGen output and text order, round trips,
+  our constraints, typesystem/checking rules, scopes and name resolution, custom actions, intentions, substitute and
+  transformation menus, and any hand-written behavior.
+- **Do not test:** that a `FlagCell` reveals or hides, that an `OptionalCell` works, that a declared cell renders, that a
+  generated editor, builder or descriptor exists. A declarative cell is covered by the model check, the build and the
+  round trip; repeating it per concept adds cost and no coverage.
+- **Editor tests only where our own logic is involved** (an action, a menu, a handler, a conditional that we wrote), and
+  once per pattern rather than once per concept. An editor test still needs a real user action and an expected model.
+- Mutation-check what you test (break our behavior, not the DSL).
+- When in doubt whether a test targets our code or the DSL, name the line of our code it exercises in the result file.

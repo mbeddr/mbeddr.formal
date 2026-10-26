@@ -104,6 +104,19 @@ Measured live over `Attributes`, `Ports`, `Parts` (the remaining files follow in
   plantuml failures.
 - Moved to 016: `abstract` on connection/interface/flow/binding/metadata usages, a port-usage editor test, the 21-file probe.
 
+### Iteration 016 result (2026-10-26, archive `016-sysml-abstract-remaining-usages`)
+- `abstract` on connection, interface, flow and binding usages: flag cell first in the editable collection, textGen prefix,
+  importer through `extractAbstract` (`individual`, `portion`, `ref`, `derived`, `variation`, `constant` stay named rejections).
+  Metadata usages parse no usage prefix, so they are out of scope. Direction on connection/interface usages is not handled
+  (separate gap, no probe file stops there first).
+- Tests: four round trips, matrix 39 cases (new 35-38 accepted, 39 `derived abstract connection` rejected), textGen/importer/matrix
+  mutations. Full run 375 tests, only the 2 known plantuml failures.
+- 21-file probe: none stops at `abstract`. First rejections: `alias` (Attributes), member visibility (Requirements, Interfaces),
+  `ref` (SysML), 12 behavior/other-domain files, and six files (Connections, Parts, Ports, Items, Flows, Metadata) at the
+  catch-all "non-attribute non-occurrence usage element", whose constructs are still unnamed (input for the 021 audit).
+- User finding after acceptance: the accepted cases of `_130_LibraryPackageMatrixTest` only assert "does not throw"; cleanup
+  iteration 016b below.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -125,8 +138,9 @@ full Systems Library and the real ISQ/SI libraries (they need calculations), the
 one iteration = one concern, at most about four concepts, one editor test, one session; heavy verification (the all-project
 run, the 21-file probe) at the end of the iteration only, focused test runs in between; audits are separate read-only
 iterations.
-- 015 `abstract` on definitions (done, committed) and on part/attribute/port/item usages (B1, running); closes after B1.
-- 016 `abstract` on connection/interface/flow/binding/metadata usages, matrix case 26, 21-file probe.
+- 015 `abstract` on definitions and on part/attribute/port/item usages (done, committed).
+- 016 `abstract` on connection/interface/flow/binding usages, 21-file probe (done).
+- 016b importer test cleanup: matrix accepted cases assert nothing about the imported nodes (user, 2026-10-26); see order.
 - 017 `alias` (one concept).
 - 018 visibility on package members: definitions and packages.
 - 019 visibility on package members: usages.

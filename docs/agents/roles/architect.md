@@ -77,6 +77,11 @@ the result and questions files, and in the archive directory name.
 
 ## Principles
 - Smallest useful increment; the user cross-checks each piece.
+- Tests in an order (user policy, see the developer role): require tests of our code (importer mapping, textGen, round
+  trips, checks, scopes, custom actions), not of the DSLs provided by the libraries we build our tooling with (JetBrains MPS
+  languages such as the editor, structure, constraints, textgen, scopes and test languages, and mps-extensions such as
+  grammarcells with its flag and optional cells): declared cells, generated editors and descriptors, DSL features.
+  Editor tests only where we wrote logic; once per pattern, not once per concept.
 - Size of an order (the developer's session budget is the limit): one concern, at most about four concepts, one editor
   test, one session. Heavy verification (all-project run, 21-file probe) only at the end of an iteration; audits are
   separate read-only iterations. An order that needs several developer sessions is split into several orders.
