@@ -117,6 +117,17 @@ Measured live over `Attributes`, `Ports`, `Parts` (the remaining files follow in
 - User finding after acceptance: the accepted cases of `_130_LibraryPackageMatrixTest` only assert "does not throw"; cleanup
   iteration 016b below.
 
+### Iteration 016b result (2026-10-26, archive `016b-importer-test-cleanup`)
+- Audit of 124 importer test methods: 7 named rejections, 48 round trips, 36 structural (`AssertNodeEquals`), 32 no-throw only.
+  The 32 no-throw accepted matrix cases were deleted; the matrix root is now `_130_ImporterRejectionMatrixTest` (7 rejections,
+  case numbers stable). Full run 343 tests (375 - 32), only the 2 known plantuml failures.
+- Deletions were justified by named covering tests (abstract rows by the round trips that contain `abstract`) and eight
+  importer mutations (usage/definition abstract, import flags and visibility, subsetting/redefinition, multiplicity, package
+  nesting, documentation, attribute value), each failing the named covers. Not mutation-checked: specialization (13), item
+  definition (16), port usage (22), standard library package (2); accepted risk.
+- The importer model diff left by the restored mutations (74 lines of id churn) was discarded with `git checkout`.
+- Rule going forward: an accepted-construct importer test asserts the imported nodes or a round trip, never only "no exception".
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
