@@ -190,6 +190,9 @@
     <node concept="PrWs8" id="cvgDBNAW2X" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
     </node>
+    <node concept="PrWs8" id="3VmcprQOACr" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNgG7Z">
     <property role="EcuMT" value="8930763252716192255" />
@@ -1375,6 +1378,17 @@
     </node>
     <node concept="PrWs8" id="6ohPCO1W$qK" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="3VmcprQOArC">
+    <property role="EcuMT" value="4527860999823451880" />
+    <property role="TrG5h" value="ISysMLv2Member" />
+    <property role="R4oN_" value="SysML v2 member (KerML 8.2.2.3): a namespace member that carries a visibility prefix; definitions, usages and packages reuse it" />
+    <property role="3GE5qa" value="base" />
+    <node concept="1TJgyi" id="3VmcprQOArD" role="1TKVEl">
+      <property role="IQ2nx" value="4527860999823451881" />
+      <property role="TrG5h" value="visibility" />
+      <ref role="AX2Wp" node="6jpO12DyoSb" resolve="SysMLv2VisibilityKind" />
     </node>
   </node>
 </model>
