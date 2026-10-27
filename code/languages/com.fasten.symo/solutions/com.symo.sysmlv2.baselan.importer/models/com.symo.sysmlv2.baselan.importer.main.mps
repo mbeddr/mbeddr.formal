@@ -751,26 +751,11 @@
               </node>
               <node concept="10Nm6u" id="3VmcprR2M8t" role="3uHU7w" />
             </node>
-            <node concept="1eOMI4" id="3VmcprR2M8u" role="3uHU7w">
-              <node concept="22lmx$" id="3VmcprR2M8w" role="1eOMHV">
-                <node concept="3clFbC" id="3VmcprR2M8z" role="3uHU7B">
-                  <node concept="37vLTw" id="3VmcprR2M8A" role="3uHU7B">
-                    <ref role="3cqZAo" node="3VmcprR2M83" resolve="def" />
-                  </node>
-                  <node concept="10Nm6u" id="3VmcprR2M8B" role="3uHU7w" />
-                </node>
-                <node concept="3clFbC" id="3VmcprR2M8C" role="3uHU7w">
-                  <node concept="2OqwBi" id="3VmcprR2M8F" role="3uHU7B">
-                    <node concept="37vLTw" id="3VmcprR2M8I" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3VmcprR2M83" resolve="def" />
-                    </node>
-                    <node concept="liA8E" id="3VmcprR2M8J" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionElementContext.partDefinition()" resolve="partDefinition" />
-                    </node>
-                  </node>
-                  <node concept="10Nm6u" id="3VmcprR2M8K" role="3uHU7w" />
-                </node>
+            <node concept="3clFbC" id="fNDJb0JmqX" role="3uHU7w">
+              <node concept="37vLTw" id="fNDJb0Jmr0" role="3uHU7B">
+                <ref role="3cqZAo" node="3VmcprR2M83" resolve="def" />
               </node>
+              <node concept="10Nm6u" id="fNDJb0Jmr1" role="3uHU7w" />
             </node>
           </node>
           <node concept="3clFbS" id="3VmcprR2M8L" role="3clFbx">
@@ -820,46 +805,107 @@
                 </node>
               </node>
             </node>
-            <node concept="3uibUv" id="3VmcprR2M9i" role="1tU5fm">
-              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
-            </node>
+            <node concept="3Tqbb2" id="fNDJb0ScRz" role="1tU5fm" />
           </node>
         </node>
-        <node concept="3clFbJ" id="3VmcprRepNS" role="3cqZAp">
-          <node concept="3y3z36" id="3VmcprRepNV" role="3clFbw">
-            <node concept="2OqwBi" id="3VmcprRepNY" role="3uHU7B">
-              <node concept="2OqwBi" id="3VmcprRepO1" role="2Oq$k0">
-                <node concept="37vLTw" id="3VmcprRepO4" role="2Oq$k0">
+        <node concept="3clFbJ" id="fNDJb1s4bq" role="3cqZAp">
+          <node concept="3y3z36" id="fNDJb1s4bt" role="3clFbw">
+            <node concept="2OqwBi" id="fNDJb1s4bw" role="3uHU7B">
+              <node concept="2OqwBi" id="fNDJb1s4bz" role="2Oq$k0">
+                <node concept="37vLTw" id="fNDJb1s4bA" role="2Oq$k0">
                   <ref role="3cqZAo" node="3PUPjB2rYMw" resolve="ctx" />
                 </node>
-                <node concept="liA8E" id="3VmcprRepO5" role="2OqNvi">
+                <node concept="liA8E" id="fNDJb1s4bB" role="2OqNvi">
                   <ref role="37wK5l" to="guqe:~SysMLv2Parser$PackageMemberContext.memberPrefix()" resolve="memberPrefix" />
                 </node>
               </node>
-              <node concept="liA8E" id="3VmcprRepO6" role="2OqNvi">
+              <node concept="liA8E" id="fNDJb1s4bC" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
               </node>
             </node>
-            <node concept="10Nm6u" id="3VmcprRepO7" role="3uHU7w" />
+            <node concept="10Nm6u" id="fNDJb1s4bD" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="3VmcprRepO8" role="3clFbx">
-            <node concept="3clFbF" id="3VmcprRepO9" role="3cqZAp">
-              <node concept="2YIFZM" id="3VmcprRepOb" role="3clFbG">
-                <ref role="37wK5l" node="3VmcprQXiPM" resolve="applyMemberVisibility" />
-                <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
-                <node concept="1PxgMI" id="3VmcprRepOc" role="37wK5m">
-                  <node concept="37vLTw" id="3VmcprRepOf" role="1m5AlR">
+          <node concept="3clFbS" id="fNDJb1s4bE" role="3clFbx">
+            <node concept="3clFbJ" id="fNDJb1svcR" role="3cqZAp">
+              <node concept="22lmx$" id="fNDJb1svcU" role="3clFbw">
+                <node concept="22lmx$" id="fNDJb1svcX" role="3uHU7B">
+                  <node concept="22lmx$" id="fNDJb1svd0" role="3uHU7B">
+                    <node concept="3fqX7Q" id="fNDJb1svd3" role="3uHU7B">
+                      <node concept="2OqwBi" id="fNDJb1svd5" role="3fr31v">
+                        <node concept="37vLTw" id="fNDJb1svd8" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3VmcprR2M9a" resolve="member" />
+                        </node>
+                        <node concept="1mIQ4w" id="fNDJb1svd9" role="2OqNvi">
+                          <node concept="chp4Y" id="fNDJb1svdb" role="cj9EA">
+                            <ref role="cht4Q" to="5rf1:3VmcprQOArC" resolve="ISysMLv2Member" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="fNDJb1svdc" role="3uHU7w">
+                      <node concept="37vLTw" id="fNDJb1svdf" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3VmcprR2M9a" resolve="member" />
+                      </node>
+                      <node concept="1mIQ4w" id="fNDJb1svdg" role="2OqNvi">
+                        <node concept="chp4Y" id="fNDJb1svdi" role="cj9EA">
+                          <ref role="cht4Q" to="5rf1:BOR0Mn7r_z" resolve="SysMLv2ConnectionDefinition" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="2OqwBi" id="fNDJb1svdj" role="3uHU7w">
+                    <node concept="37vLTw" id="fNDJb1svdm" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3VmcprR2M9a" resolve="member" />
+                    </node>
+                    <node concept="1mIQ4w" id="fNDJb1svdn" role="2OqNvi">
+                      <node concept="chp4Y" id="fNDJb1svdp" role="cj9EA">
+                        <ref role="cht4Q" to="5rf1:3MUZSeG2mDd" resolve="SysMLv2InterfaceDefinition" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="fNDJb1svdq" role="3uHU7w">
+                  <node concept="37vLTw" id="fNDJb1svdt" role="2Oq$k0">
                     <ref role="3cqZAo" node="3VmcprR2M9a" resolve="member" />
                   </node>
-                  <node concept="chp4Y" id="3VmcprRepOg" role="3oSUPX">
+                  <node concept="1mIQ4w" id="fNDJb1svdu" role="2OqNvi">
+                    <node concept="chp4Y" id="fNDJb1svdw" role="cj9EA">
+                      <ref role="cht4Q" to="5rf1:5oZmK$NNehb" resolve="SysMLv2MetadataDefinition" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="fNDJb1svdx" role="3clFbx">
+                <node concept="YS8fn" id="fNDJb1svdy" role="3cqZAp">
+                  <node concept="2ShNRf" id="fNDJb1svd$" role="YScLw">
+                    <node concept="1pGfFk" id="fNDJb1svdA" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                      <node concept="Xl_RD" id="fNDJb1svdB" role="37wK5m">
+                        <property role="Xl_RC" value="Unsupported SysML v2 construct: visibility prefix on package member" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="fNDJb1s4cs" role="3cqZAp">
+              <node concept="2YIFZM" id="fNDJb1s4cu" role="3clFbG">
+                <ref role="37wK5l" node="3VmcprQXiPM" resolve="applyMemberVisibility" />
+                <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+                <node concept="1PxgMI" id="fNDJb1s4cv" role="37wK5m">
+                  <node concept="37vLTw" id="fNDJb1s4cy" role="1m5AlR">
+                    <ref role="3cqZAo" node="3VmcprR2M9a" resolve="member" />
+                  </node>
+                  <node concept="chp4Y" id="fNDJb1s4cz" role="3oSUPX">
                     <ref role="cht4Q" to="5rf1:3VmcprQOArC" resolve="ISysMLv2Member" />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="3VmcprRepOh" role="37wK5m">
-                  <node concept="37vLTw" id="3VmcprRepOk" role="2Oq$k0">
+                <node concept="2OqwBi" id="fNDJb1s4c$" role="37wK5m">
+                  <node concept="37vLTw" id="fNDJb1s4cB" role="2Oq$k0">
                     <ref role="3cqZAo" node="3PUPjB2rYMw" resolve="ctx" />
                   </node>
-                  <node concept="liA8E" id="3VmcprRepOl" role="2OqNvi">
+                  <node concept="liA8E" id="fNDJb1s4cC" role="2OqNvi">
                     <ref role="37wK5l" to="guqe:~SysMLv2Parser$PackageMemberContext.memberPrefix()" resolve="memberPrefix" />
                   </node>
                 </node>
