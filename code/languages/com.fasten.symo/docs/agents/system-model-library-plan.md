@@ -155,6 +155,18 @@ The same concept is reused for `SysMLv2Import` in 024/025.
   The 017 count of 350 was five duplicated `START_TEST` lines of token-fidelity methods, not 350 distinct tests.
 - Not done, moved to 017c: reification, its tests, the scope-test mutation, the reification and derived-textGen mutations, probe.
 
+### Iteration 018a result (2026-10-27, archive `018a-sysml-member-visibility-part-def`, accepted by user)
+
+Visibility prefix (`private` / `protected` / `public`) on `part def` in a package body, end to end. New interface `ISysMLv2Member`
+(one property `visibility : SysMLv2VisibilityKind`, nullable); `SysMLv2PartDefinition` implements it. TextGen prints the prefix first.
+Importer helper `applyMemberVisibility` is called from `visitPackageMember` (the prefix belongs to the `PackageMemberContext`), guarded on
+`visibilityIndicator() != null`; 018b replaces the guard with an `instanceof ISysMLv2Member` check. Editor: the user hand-built the
+visibility cell (optional section, shown when set; the developer's first wrapper with an empty constant was rejected in the live
+editor), plus a transformation-menu contribution for `private` / `protected` / `public`. Tests: 4 importer round trips, 1 structural,
+1 rejection case, editor `_090`/`_091`/`_092` (`#` with visibility unset and set, typing `private`); importer and textGen mutations
+shown to fail. Developer-reported full run 354 tests, only the two known plantuml failures. Lessons: tests anchored on a
+`Constant_*` id of a wrapper passed while the live editor failed (gotchas); nested definitions in bodies are not importable (018e).
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -182,7 +194,13 @@ iterations.
 - 017 `alias` (one concept; done).
 - 017b alias target as a smart reference, language part (done, committed).
 - 017c alias target: importer reification, tests, mutations, probe.
-- 018 visibility on package members: definitions and packages.
+- 018a visibility on package members, vertical proof on one definition: survey, property, cell, textGen and importer for
+  `part def` only, round trips (settles the cell shape and the interface before it is repeated).
+- 018b visibility on the other seven definition kinds (attribute, port, item, metadata, connection, interface, flow): editor,
+  textGen, importer via the shared helper, round trips.
+- 018c visibility on `package` and `library package`, named rejection reworded for usages, 21-file probe.
+- 018d (follow-up) `SysMLv2Import` implements `ISysMLv2Member` and drops its own `visibility` property (one step).
+- 018e (follow-up) definitions nested in definition bodies (`visitDefinitionBodyItemContent` rejects them today), then visibility on them.
 - 019 visibility on package members: usages.
 - 020 `ref` usages (importer only, concept exists).
 - 021 connectivity audit (read-only, measured): Connections, Interfaces, Items, Flows files and the vehicle example.

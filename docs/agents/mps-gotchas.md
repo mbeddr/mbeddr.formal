@@ -12,6 +12,65 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Blueprints for editor transformation menus: concept FQNs, `Property_SetOperation` role, and the enum-valued property (2026-10-27)
+
+Building a `TransformationMenuContribution` (a `#`-style or visibility-style menu on a concept's first holder cell) by JSON
+needed three facts the dump does not state:
+
+- The set operation takes its value under the role `value`, not `argument`: `Property_SetOperation` has only the `value` link
+  (`Unknown child role 'argument' ... has no such containment link`).
+- The execute body reaches the menu's node through `QueryFunctionParameter_TransformationMenu_node`, not the cell-level
+  `Parameter_node` that postprocess functions use.
+- The action's label function returns a plain `StringLiteral`; the menu item is matched by that text, so typing the keyword and
+  pressing Complete selects it. A menu item that writes an enum property needs its `EnumMemberReference.decl` pointed at the
+  member declaration (`private` / `protected` / `public` members of `SysMLv2VisibilityKind`), not at the enum.
+
+A test that types the keyword in front of an unset part definition and expects the property set (`_092`) passes with this
+blueprint, and a mutation (the `private` item pointing at `public`) fails with `visibility = public, expected: private`.
+
+## A grammar-cells optional wrapper with an empty leading constant passed tests but failed in the live editor (2026-10-27)
+
+**Rejected; do not reuse this shape.** `OptionalCell` around an enum property, led by an empty `CellModel_Constant`
+(`text ""`), made `_020_editor` tests `_090` and `_091` pass by anchoring their caret on the generated
+`Constant_<hash>_a0a0a0` id. The live editor did not behave (the user's check, 2026-10-27), so the passing tests did not
+prove the editor works. An editor test that anchors on a generated `Constant_*` id proves only that the cell exists.
+
+What the live check settled: a `BEFORE` contribution (`#` → prefix metadata) is reached only through a grammar-cells holder
+cell in front of the caret, and an `OptionalCell` cannot lead with an enum property that has no keyword (see the
+optional-cell gotcha above). Use a cell the user actually types into, and check the behavior in the live editor.
+
+Tooling notes from the same attempt: `mps_mcp_alter_nodes MOVE_CHILD` only reorders within one parent, so a cell cannot
+move into a new wrapper; it has to be recreated (ADD) and the old one deleted (SET CHILD with no `childJson`).
+
+## Short concept names in a blueprint can resolve to another language's concept (2026-10-27)
+
+A textGen blueprint with `concept: "NodeParameter"` resolved to `jetbrains.mps.lang.dataFlow.structure.NodeParameter`,
+not the textGen one. The insert then reported `not applicable in this context`, and the model gained a stray
+`jetbrains.mps.lang.dataFlow` used-language entry in the `.mpl`. Use fully-qualified concept names in blueprints. To drop
+the stray dependency, use `mps_mcp_model_used_language` (kind `language`, operation `DELETE`), not a hand edit.
+
+## Editor cell insert shifts generated cell ids; `AnonymousCellAnnotation.cellId` breaks silently (2026-10-27)
+
+Inserting a new cell in front of existing editor cells renumbers the generated `cellId` suffixes of the cells behind it
+(`Constant_<hash>_c0a` became `Constant_<hash>_d0a` after a property cell was inserted at index 0). An `EditorTestCase`
+that targets a cell by `AnonymousCellAnnotation.cellId` then fails at setup with `No cell with id ... found in <node>`.
+Check the generated `source_gen/.../<Concept>_EditorBuilder_a.java` (`setCellId`) for the new id before editing the test.
+Re-pointing the id is not always enough: a `BEFORE` side transform (`TransformationMenu`) hangs off the first section
+cell, so typing at a shifted caret can silently do nothing (the test then fails on the missing child, not on the cell).
+
+## Run configurations do not survive a language or test MAKE rebuild (2026-10-27)
+
+After `mps_mcp_alter_nodes MAKE` with `rebuild: true`, `get_run_configurations` no longer listed configurations created
+earlier in the session, and `execute_run_configuration` reported "not found". `create_run_configuration` ignores its `name`
+argument and names the config after the root (`_050_PartDefinitionTest`). Re-create right before executing.
+
+## `mps_mcp_update_node` SET CHILD deletes by omitting `childJson`; the string `"null"` is rejected (2026-10-27)
+
+The tool description says `childJson = null` deletes the child, but passing the string `"null"` fails with
+`INVALID_REQUEST: Input is neither a valid JSON object/array nor an existing file path: 'null'`. Omit `childJson`
+entirely (`operation: SET`, `kind: CHILD`, `childNodeRef` set): the child is deleted and the call returns the parent's
+envelope.
+
 ## BaseLanguage behavior methods: reuse ASTs when the Java parser fails (2026-10-26)
 
 `mps_mcp_parse_java_and_insert` returned `INTERNAL_ERROR` while inserting a
