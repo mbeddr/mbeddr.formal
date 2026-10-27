@@ -167,6 +167,21 @@ editor), plus a transformation-menu contribution for `private` / `protected` / `
 shown to fail. Developer-reported full run 354 tests, only the two known plantuml failures. Lessons: tests anchored on a
 `Constant_*` id of a wrapper passed while the live editor failed (gotchas); nested definitions in bodies are not importable (018e).
 
+### Iteration 018b result (2026-10-27, archive `018b-sysml-member-visibility-attribute-port-item`, accepted by user)
+
+Visibility on `attribute def`, `port def`, `item def` (concepts implement `ISysMLv2Member`; cell first in each editor; textGen prefix first;
+importer `instanceof ISysMLv2Member`). Findings: (1) subconcepts inherit neither editor nor textGen, so `connection def`, `interface def`
+(via part def) and `metadata def` (via item def) passed the interface check and silently lost the prefix on round trip (present since 018a):
+importer now excludes them by concept and rejects them by name (`visibility prefix on package member`) until 018c. (2) Transformation
+menu contributions DO apply to subconcepts, so per-concept contributions doubled the menu items and broke `_092`; the user replaced
+them by one `ISysMLv2Member_VisibilityContribution` on the interface, which every future implementer inherits. Tests: `_060` with 5 round
+trips, `_130` rejection cases connection / interface / metadata / flow, evidence run for the data loss, importer and textGen mutations
+shown to fail. Developer-reported full run 362 tests, only the two known plantuml failures.
+Carried to 018c: survey the superconcept chains of the ten definition kinds and the editor tests with cell ids in the affected editors;
+delete the importer exclusion (connection / interface / metadata) and flip their four `_130` cases to round trips; accepted transient: the
+menus of those kinds offer the actions until their cell and textGen exist; write the two MCP gotchas (MCP-created `NodesTestCase`
+needs `accessMode="none"`; one run configuration at a time, `waitForExit:false` plus a log monitor); mutation on the interface contribution.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -196,11 +211,11 @@ iterations.
 - 017c alias target: importer reification, tests, mutations, probe.
 - 018a visibility on package members, vertical proof on one definition: survey, property, cell, textGen and importer for
   `part def` only, round trips (settles the cell shape and the interface before it is repeated).
-- 018b visibility on the other seven definition kinds (attribute, port, item, metadata, connection, interface, flow): editor,
-  textGen, importer via the shared helper, round trips.
-- 018c visibility on `package` and `library package`, named rejection reworded for usages, 21-file probe.
-- 018d (follow-up) `SysMLv2Import` implements `ISysMLv2Member` and drops its own `visibility` property (one step).
-- 018e (follow-up) definitions nested in definition bodies (`visitDefinitionBodyItemContent` rejects them today), then visibility on them.
+- 018b visibility on `attribute def`, `port def`, `item def` (same shape as 018a; importer guard replaced by an `instanceof` check).
+- 018c visibility on `metadata def`, `connection def`, `interface def`, `flow def` (carry-over list in the 018b result entry).
+- 018d visibility on `package` and `library package`, named rejection reworded for usages, 21-file probe.
+- 018e (follow-up) `SysMLv2Import` implements `ISysMLv2Member` and drops its own `visibility` property (one step).
+- 018f (follow-up) definitions nested in definition bodies (`visitDefinitionBodyItemContent` rejects them today), then visibility on them.
 - 019 visibility on package members: usages.
 - 020 `ref` usages (importer only, concept exists).
 - 021 connectivity audit (read-only, measured): Connections, Interfaces, Items, Flows files and the vehicle example.
