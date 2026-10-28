@@ -2450,7 +2450,7 @@
           <property role="TrG5h" value="lib" />
           <node concept="LIFWc" id="6jpO12_EdzH" role="lGtFl">
             <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
-            <property role="LIFWd" value="Constant_p0xxo_c0a" />
+            <property role="LIFWd" value="Constant_p0xxo_e0a" />
             <property role="OXtK3" value="true" />
             <property role="p6zMq" value="0" />
             <property role="p6zMs" value="0" />
@@ -2733,6 +2733,261 @@
       <node concept="2HxZob" id="fNDJb0vKx5" role="3cqZAp">
         <node concept="3iKlGA" id="fNDJb0vKx7" role="3iKnsn">
           <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="fNDJb2_d6D">
+    <property role="3YCmrE" value="typing private in front of an unset package sets its visibility" />
+    <property role="TrG5h" value="_093_Visibility_TypePrivateOnPackage" />
+    <node concept="1qefOq" id="fNDJb2_d6E" role="25YQCW">
+      <node concept="2h0jOr" id="fNDJb2_d6G" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="2h0jOo" id="fNDJb2_d6H" role="2h0jOs" />
+        <node concept="3Z9vzX" id="fNDJb2_d6I" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="2h0jOo" id="fNDJb2_d6J" role="3Z9vGx" />
+          <node concept="LIFWc" id="fNDJb2_d6K" role="lGtFl">
+            <property role="LIFWd" value="Constant_10oief_d0a" />
+            <property role="LIFWa" value="0" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="fNDJb2_d6L" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="fNDJb2_d6M" role="25YQFr">
+      <node concept="2h0jOr" id="fNDJb2_d6O" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="2h0jOo" id="fNDJb2_d6P" role="2h0jOs" />
+        <node concept="3Z9vzX" id="fNDJb2_d6Q" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+          <node concept="2h0jOo" id="fNDJb2_d6R" role="3Z9vGx" />
+        </node>
+        <node concept="2h0jOo" id="fNDJb2_d6S" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="fNDJb2_d6T" role="LjaKd">
+      <node concept="2TK7Tu" id="fNDJb2_d6U" role="3cqZAp">
+        <property role="2TTd_B" value="private" />
+      </node>
+      <node concept="2HxZob" id="fNDJb2_d6V" role="3cqZAp">
+        <node concept="3iKlGA" id="fNDJb2_d6X" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="fNDJb3boCb" role="3cqZAp">
+        <node concept="pLAjd" id="fNDJb3boCd" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="fNDJb32U57">
+    <property role="3YCmrE" value="typing private in front of an unset library package sets its visibility" />
+    <property role="TrG5h" value="_094_Visibility_TypePrivateOnLibraryPackage" />
+    <node concept="1qefOq" id="fNDJb32U58" role="25YQCW">
+      <node concept="2h0jOr" id="fNDJb32U5a" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="2h0jOo" id="fNDJb32U5b" role="2h0jOs" />
+        <node concept="31n9r3" id="fNDJb32U5c" role="2h0jOs">
+          <property role="TrG5h" value="L" />
+          <node concept="2h0jOo" id="fNDJb32U5d" role="3Z9vGx" />
+          <node concept="LIFWc" id="fNDJb32U5e" role="lGtFl">
+            <property role="LIFWd" value="Constant_p0xxo_e0a" />
+            <property role="LIFWa" value="0" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="fNDJb32U5f" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="fNDJb32U5g" role="25YQFr">
+      <node concept="2h0jOr" id="fNDJb32U5i" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="2h0jOo" id="fNDJb32U5j" role="2h0jOs" />
+        <node concept="31n9r3" id="fNDJb32U5k" role="2h0jOs">
+          <property role="TrG5h" value="L" />
+          <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+          <node concept="2h0jOo" id="fNDJb32U5l" role="3Z9vGx" />
+        </node>
+        <node concept="2h0jOo" id="fNDJb32U5m" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="fNDJb32U5n" role="LjaKd">
+      <node concept="2TK7Tu" id="fNDJb32U5o" role="3cqZAp">
+        <property role="2TTd_B" value="private" />
+      </node>
+      <node concept="2HxZob" id="fNDJb32U5p" role="3cqZAp">
+        <node concept="3iKlGA" id="fNDJb32U5r" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="fNDJb3bpxW" role="3cqZAp">
+        <node concept="pLAjd" id="fNDJb3bpxY" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="fNDJb32U5s">
+    <property role="3YCmrE" value="deleting the visibility of a private package unsets it" />
+    <property role="TrG5h" value="_095_Visibility_DeletePrivateOnPackage" />
+    <node concept="1qefOq" id="fNDJb32U5t" role="25YQCW">
+      <node concept="2h0jOr" id="fNDJb32U5v" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="2h0jOo" id="fNDJb32U5w" role="2h0jOs" />
+        <node concept="3Z9vzX" id="fNDJb32U5x" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+          <node concept="2h0jOo" id="fNDJb32U5y" role="3Z9vGx" />
+          <node concept="LIFWc" id="fNDJb32U5z" role="lGtFl">
+            <property role="LIFWd" value="property_visibility" />
+            <property role="LIFWa" value="0" />
+            <property role="OXtK3" value="false" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="7" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="fNDJb32U5$" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="fNDJb32U5_" role="25YQFr">
+      <node concept="2h0jOr" id="fNDJb32U5B" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="2h0jOo" id="fNDJb32U5C" role="2h0jOs" />
+        <node concept="3Z9vzX" id="fNDJb32U5D" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="2h0jOo" id="fNDJb32U5E" role="3Z9vGx" />
+        </node>
+        <node concept="2h0jOo" id="fNDJb32U5F" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="fNDJb32U5G" role="LjaKd">
+      <node concept="2HxZob" id="fNDJb32U5H" role="3cqZAp">
+        <node concept="3iKlGA" id="fNDJb32U5J" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Delete_Action" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="fNDJb32U5X">
+    <property role="3YCmrE" value="deleting the visibility of a private library package unsets it" />
+    <property role="TrG5h" value="_096_Visibility_DeletePrivateOnLibraryPackage" />
+    <node concept="1qefOq" id="fNDJb32U5Y" role="25YQCW">
+      <node concept="2h0jOr" id="fNDJb32U60" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="2h0jOo" id="fNDJb32U61" role="2h0jOs" />
+        <node concept="31n9r3" id="fNDJb32U62" role="2h0jOs">
+          <property role="TrG5h" value="L" />
+          <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+          <node concept="2h0jOo" id="fNDJb32U63" role="3Z9vGx" />
+          <node concept="LIFWc" id="fNDJb32U64" role="lGtFl">
+            <property role="LIFWd" value="property_visibility" />
+            <property role="LIFWa" value="0" />
+            <property role="OXtK3" value="false" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="7" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="fNDJb32U65" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="fNDJb32U66" role="25YQFr">
+      <node concept="2h0jOr" id="fNDJb32U68" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="2h0jOo" id="fNDJb32U69" role="2h0jOs" />
+        <node concept="31n9r3" id="fNDJb32U6a" role="2h0jOs">
+          <property role="TrG5h" value="L" />
+          <node concept="2h0jOo" id="fNDJb32U6b" role="3Z9vGx" />
+        </node>
+        <node concept="2h0jOo" id="fNDJb32U6c" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="fNDJb32U6d" role="LjaKd">
+      <node concept="2HxZob" id="fNDJb32U6e" role="3cqZAp">
+        <node concept="3iKlGA" id="fNDJb32U6g" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Delete_Action" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="fNDJb3km3s">
+    <property role="TrG5h" value="_097_Metadata_PrefixOnPackage" />
+    <property role="3YCmrE" value="typing # in front of package adds a prefix metadata" />
+    <node concept="1qefOq" id="fNDJb3km3t" role="25YQCW">
+      <node concept="2h0jOr" id="fNDJb3km3v" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="fNDJb3km3w" role="2h0jOs">
+          <property role="TrG5h" value="pack_091" />
+          <node concept="1_WVX2" id="fNDJb3km3x" role="3Z9vGx">
+            <property role="TrG5h" value="Safety" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="fNDJb3km3y" role="2h0jOs" />
+        <node concept="3Z9vzX" id="fNDJb3km3z" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2h0jOo" id="fNDJb3km3$" role="3Z9vGx" />
+          <node concept="LIFWc" id="fNDJb3km3_" role="lGtFl">
+            <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+            <property role="LIFWd" value="Constant_10oief_d0a" />
+            <property role="LIFWa" value="0" />
+            <property role="OXtK3" value="true" />
+            <property role="p6zMq" value="0" />
+            <property role="p6zMs" value="0" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="fNDJb3km3A" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="1qefOq" id="fNDJb3km3B" role="25YQFr">
+      <node concept="2h0jOr" id="fNDJb3km3D" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="fNDJb3km3E" role="2h0jOs">
+          <property role="TrG5h" value="pack_091" />
+          <node concept="1_WVX2" id="fNDJb3km3F" role="3Z9vGx">
+            <property role="TrG5h" value="Safety" />
+          </node>
+        </node>
+        <node concept="2h0jOo" id="fNDJb3km3G" role="2h0jOs" />
+        <node concept="3Z9vzX" id="fNDJb3km3H" role="2h0jOs">
+          <property role="TrG5h" value="Car" />
+          <node concept="2h0jOo" id="fNDJb3km3I" role="3Z9vGx" />
+          <node concept="1y9Dpe" id="fNDJb3km3J" role="1y9Dp3">
+            <node concept="1_WVX5" id="fNDJb3km3L" role="1y9Dp0">
+              <ref role="gQIM1" node="fNDJb3km3E" resolve="pack_091" />
+              <ref role="1_WVXv" node="fNDJb3km3F" resolve="Safety" />
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="fNDJb3km3M" role="2h0jOs" />
+      </node>
+    </node>
+    <node concept="3clFbS" id="fNDJb3km3N" role="LjaKd">
+      <node concept="2TK7Tu" id="fNDJb3km3O" role="3cqZAp">
+        <property role="2TTd_B" value="#" />
+      </node>
+      <node concept="2HxZob" id="fNDJb3km3P" role="3cqZAp">
+        <node concept="3iKlGA" id="fNDJb3km3R" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="2TK7Tu" id="fNDJb3km3S" role="3cqZAp">
+        <property role="2TTd_B" value="pack_091::Safety" />
+      </node>
+      <node concept="2HxZob" id="fNDJb3km3T" role="3cqZAp">
+        <node concept="3iKlGA" id="fNDJb3km3V" role="3iKnsn">
+          <property role="3iKnse" value="jetbrains.mps.ide.editor.actions.Complete_Action" />
+        </node>
+      </node>
+      <node concept="yd1bK" id="fNDJb3km3W" role="3cqZAp">
+        <node concept="pLAjd" id="fNDJb3km3Y" role="yd6KS">
+          <property role="pLAjf" value="VK_ENTER" />
         </node>
       </node>
     </node>
