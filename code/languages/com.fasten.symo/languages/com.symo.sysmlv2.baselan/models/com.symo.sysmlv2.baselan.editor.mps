@@ -509,6 +509,9 @@
     <ref role="1XX52x" to="5rf1:7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
     <node concept="3EZMnI" id="7JKstLNgOTM" role="2wV5jI">
       <node concept="l2Vlx" id="7JKstLNgOTN" role="2iSdaV" />
+      <node concept="PMmxH" id="fNDJb49jjt" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
+      </node>
       <node concept="1kHk_G" id="4mJZS3mQnvs" role="3EZMnx">
         <property role="ZjSer" value="abstract" />
         <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
@@ -872,6 +875,9 @@
     <property role="3GE5qa" value="part.attribute" />
     <ref role="1XX52x" to="5rf1:7JKstLNmmXl" resolve="SysMLv2AttributeUsage" />
     <node concept="3EZMnI" id="2d_6cEDEfL8" role="2wV5jI">
+      <node concept="PMmxH" id="fNDJb49jjK" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
+      </node>
       <node concept="_tjkj" id="6coPuU2TGok" role="3EZMnx">
         <node concept="3F1sOY" id="6coPuU2TGom" role="_tjki">
           <ref role="1NtTu8" to="5rf1:6coPuU2TgRm" resolve="direction" />
@@ -3538,6 +3544,9 @@
     <property role="TrG5h" value="SysMLv2ConnectionUsage_Editor" />
     <ref role="1XX52x" to="5rf1:BOR0Mn7r_A" resolve="SysMLv2ConnectionUsage" />
     <node concept="3EZMnI" id="BOR0Mn7w_W" role="2wV5jI">
+      <node concept="PMmxH" id="fNDJb49jk9" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
+      </node>
       <node concept="1kHk_G" id="6ohPCNYGp47" role="3EZMnx">
         <property role="ZjSer" value="abstract" />
         <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
@@ -3778,6 +3787,9 @@
     <property role="3GE5qa" value="interface" />
     <ref role="1XX52x" to="5rf1:3MUZSeG2mDe" resolve="SysMLv2InterfaceUsage" />
     <node concept="3EZMnI" id="3MUZSeG2phB" role="2wV5jI">
+      <node concept="PMmxH" id="fNDJb49jjQ" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
+      </node>
       <node concept="1kHk_G" id="6ohPCNYGp4a" role="3EZMnx">
         <property role="ZjSer" value="abstract" />
         <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
