@@ -1167,6 +1167,9 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
+    <node concept="PrWs8" id="fNDJb1_qdX" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeHmu9I">
     <property role="EcuMT" value="4376090928958005870" />
