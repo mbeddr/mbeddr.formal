@@ -18,6 +18,14 @@ After editing the importer model, `SysMLv2ImporterVisitor.java` under `source_ge
 importer main model with `rebuild: true` regenerated it. Removing a property from a concept also leaves a stale property entry on existing nodes in test
 models ("Property X does not belong to the concept"); setting the value does not clear it, replace the node.
 
+## A blueprint cloned from printed JSON keeps its old reference targets; `parse_java_and_insert` cannot name generated `CONCEPTS` (2026-10-28)
+
+A blueprint copied from a printed node keeps the reference targets of the source. A variable reference cloned from another method still points at that
+method's variable, and the copy fails with "Variable must be final" or "might not have been initialized". Fix each with `SET REFERENCE` to the local
+declaration. In `parse_java_and_insert`, a snippet that names a generated `CONCEPTS.<Concept>$F_` field does not resolve, and the parse fails. Build
+the membership test as model nodes instead: `Node_IsInstanceOfOperation` with a `RefConcept_Reference`. A `SET CHILD` that replaces an expression needs
+both `childNodeRef` (the old child) and `childJson` (the new blueprint); without `childNodeRef` the tool refuses.
+
 ## A missing component name in a generated builder is not a stale builder; a package-like editor needs a front holder (2026-10-28)
 
 Editor components are inlined by the generator: `SysMLv2PartDefinition_EditorBuilder_a.java` contains the inlined `property_visibility` cell and

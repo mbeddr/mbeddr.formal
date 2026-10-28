@@ -217,6 +217,20 @@ menu target) shown to fail in `_040`/`_100`. Developer-reported full run 374 tes
 `property_visibility` in the generated import builder is the inlined component reading the interface property, not a stale builder. Gotcha added: the
 importer model needs its own MAKE.
 
+### Iteration 019 step 1 result (2026-10-28, accepted by user)
+
+Visibility on part, attribute, connection and interface usages, in bodies only (usages cannot be top-level members). `ISysMLv2Member` is implemented
+by `SysMLv2PartUsage` and `SysMLv2AttributeUsage`; connection and interface usages inherit it through `PartUsage`. Each of the four editors has the
+shared `ISysMLv2Member_Visibility` component at index 0, and each textGen body starts with the visibility `IfStatement`, copied from the part definition.
+Importer: `applyBodyVisibility` applies the indicator to any body item that is a member, and the three prefix throws in `visitDefinitionBodyItem` and
+`visitInterfaceBodyItem` are gone. Deviation from the plan: prefixed members in definition and interface bodies are accepted now, where they were
+rejected before; non-member body items still throw `visibility prefix on body item`. Ports, items, occurrences, actions, bindings, flows and metadata
+stay rejected (steps 2 and 3). Tests: four positive round trips in `_060` (`...UsageInBody`). Verification: full run 378 tests, only the two known
+plantuml failures. One regression, `_020 _120_Connections_PrefixMetadata`, was an editor caret anchor (`Constant_*` shifted by the new component); it
+now points at `Constant_yj3wp4_g0a`. Mutation: the PartUsage textGen separator changed to empty fails `_060`'s private part round trip; restored and
+green. Not run: mutations of the importer apply line and of the usage editor components, and a negative test for a body-level port. Gotchas added:
+cloned blueprint references, `parse_java_and_insert` and `CONCEPTS`.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -250,8 +264,8 @@ iterations.
 - 018c visibility on `metadata def`, `connection def`, `interface def`, `flow def` (carry-over list in the 018b result entry).
 - 018d visibility on `package` and `library package`, named rejection reworded for usages, 21-file probe (done).
 - 018e (follow-up) `SysMLv2Import` implements `ISysMLv2Member` and drops its own `visibility` property (one step; done).
-- 018f (follow-up) definitions nested in definition bodies (`visitDefinitionBodyItemContent` rejects them today), then visibility on them.
-- 019 visibility on package members: usages.
+- 018f (dropped 2026-10-28, user decision) definitions nested in definition bodies (`visitDefinitionBodyItemContent` rejects them by name today). Parked: build only if a probe or the vehicle example shows a need; an audit of container/nested kinds comes first.
+- 019 visibility on package members: usages (step 1 accepted: part, attribute, connection, interface; steps 2 and 3 pending).
 - 020 `ref` usages (importer only, concept exists).
 - 021 connectivity audit (read-only, measured): Connections, Interfaces, Items, Flows files and the vehicle example.
 - 022 `end` features (build from the audit; survey first).
