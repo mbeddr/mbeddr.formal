@@ -231,6 +231,21 @@ now points at `Constant_yj3wp4_g0a`. Mutation: the PartUsage textGen separator c
 green. Not run: mutations of the importer apply line and of the usage editor components, and a negative test for a body-level port. Gotchas added:
 cloned blueprint references, `parse_java_and_insert` and `CONCEPTS`.
 
+### Iteration 019 step 2 result (2026-10-28, implemented, awaiting user acceptance)
+
+Visibility on port, item and metadata usages in bodies. `ISysMLv2Member` is implemented by `SysMLv2ItemUsage` and `SysMLv2PortUsage`. Metadata
+usages became members too, through `SysMLv2MetadataUsage extends SysMLv2ItemUsage`. Without their own editor component and textGen prefix, a prefix
+would have been dropped silently, so both were added. Deviation from the plan: this is in step 2, not step 3. `SysMLv2OccurrenceUsage` is not
+implemented, because it would pull in action, flow and binding usages (step 3). Editors: the shared `ISysMLv2Member_Visibility` component at index 0
+of the port, item and metadata usage editors. TextGen: the visibility `IfStatement` starts the port, item and metadata bodies. Importer: no code
+change; the existing body paths and `applyBodyVisibility` cover them. Tests: three positive round trips in `_060` (`private port`, `public item`,
+`private metadata` in a part body). Verification: full run 381 tests, only the two known plantuml failures. Mutation: the item keyword constant set to
+empty fails `testRoundtripPublicItemUsageInBody`; the restore first used a space and broke four other item tests, then was corrected to `item` and
+rerun green. Sandbox: new root `_020_visibility_on_usages` in `com.symo.sysmlv2.baselan.sandbox._100_manually_written`, one example per usage kind
+from steps 1 and 2 (the `Vehicle` part with attribute, parts, connection, ports, interface, item and metadata). The metadata usage needs a type:
+`metadataFeatureDeclaration` requires `ownedFeatureTyping` in `SysMLv2Parser.g4`, so `safety : Safety` with `metadata def Safety`. Not run: mutations
+of the importer apply line and of the port editor component, and the negative test for a body-level action usage (step 3 boundary).
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -265,7 +280,7 @@ iterations.
 - 018d visibility on `package` and `library package`, named rejection reworded for usages, 21-file probe (done).
 - 018e (follow-up) `SysMLv2Import` implements `ISysMLv2Member` and drops its own `visibility` property (one step; done).
 - 018f (dropped 2026-10-28, user decision) definitions nested in definition bodies (`visitDefinitionBodyItemContent` rejects them by name today). Parked: build only if a probe or the vehicle example shows a need; an audit of container/nested kinds comes first.
-- 019 visibility on package members: usages (step 1 accepted: part, attribute, connection, interface; steps 2 and 3 pending).
+- 019 visibility on package members: usages (step 1 accepted: part, attribute, connection, interface; step 2 implemented, awaiting acceptance: port, item, metadata; step 3 pending: action, binding, flow).
 - 020 `ref` usages (importer only, concept exists).
 - 021 connectivity audit (read-only, measured): Connections, Interfaces, Items, Flows files and the vehicle example.
 - 022 `end` features (build from the audit; survey first).
