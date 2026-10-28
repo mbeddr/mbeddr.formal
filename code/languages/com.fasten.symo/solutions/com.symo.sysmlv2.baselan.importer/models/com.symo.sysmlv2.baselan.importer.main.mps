@@ -22,6 +22,7 @@
     <import index="5wt7" ref="r:340302a6-5c40-4ce4-b492-437d8a67da64(com.symo.sysmlv2.baselan.behavior)" />
     <import index="unno" ref="r:61e3d524-8c49-4491-b5e3-f6d6e9364527(jetbrains.mps.util)" />
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
+    <import index="i51s" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.lang.smodel.generator.smodelAdapter(MPS.Core/)" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -4261,37 +4262,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="6ohPCO0AVTA" role="3cqZAp">
-          <node concept="3y3z36" id="6ohPCO0AVTD" role="3clFbw">
-            <node concept="2OqwBi" id="6ohPCO0AVTG" role="3uHU7B">
-              <node concept="2OqwBi" id="6ohPCO0AVTJ" role="2Oq$k0">
-                <node concept="37vLTw" id="6ohPCO0AVTM" role="2Oq$k0">
-                  <ref role="3cqZAo" node="6ohPCO0AVSW" resolve="ctx" />
-                </node>
-                <node concept="liA8E" id="6ohPCO0AVTN" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext.memberPrefix()" resolve="memberPrefix" />
-                </node>
-              </node>
-              <node concept="liA8E" id="6ohPCO0AVTO" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="6ohPCO0AVTP" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="6ohPCO0AVTQ" role="3clFbx">
-            <node concept="YS8fn" id="6ohPCO0AVTR" role="3cqZAp">
-              <node concept="2ShNRf" id="6ohPCO0AVTT" role="YScLw">
-                <node concept="1pGfFk" id="6ohPCO0AVTV" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="6ohPCO0AVTW" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: visibility prefix on body item" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="6ohPCO0AVTX" role="3cqZAp">
           <node concept="3cpWsn" id="6ohPCO0AVU0" role="3cpWs9">
             <property role="TrG5h" value="endOcc" />
@@ -4415,8 +4385,25 @@
               </node>
             </node>
             <node concept="3cpWs6" id="6ohPCO0AVVr" role="3cqZAp">
-              <node concept="37vLTw" id="6ohPCO0AVVs" role="3cqZAk">
-                <ref role="3cqZAo" node="6ohPCO0AVUZ" resolve="endUsage" />
+              <node concept="2YIFZM" id="fNDJb4p1vH" role="3cqZAk">
+                <ref role="37wK5l" node="fNDJb4kg1s" resolve="applyBodyVisibility" />
+                <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+                <node concept="37vLTw" id="fNDJb4p1vI" role="37wK5m">
+                  <ref role="3cqZAo" node="6ohPCO0AVUZ" resolve="endUsage" />
+                </node>
+                <node concept="2OqwBi" id="fNDJb4p1vJ" role="37wK5m">
+                  <node concept="2OqwBi" id="fNDJb4p1vM" role="2Oq$k0">
+                    <node concept="37vLTw" id="fNDJb4p1vP" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6ohPCO0AVSW" resolve="ctx" />
+                    </node>
+                    <node concept="liA8E" id="fNDJb4p1vQ" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext.memberPrefix()" resolve="memberPrefix" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="fNDJb4p1vR" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -4448,12 +4435,29 @@
           </node>
           <node concept="3clFbS" id="6ohPCO0AVVK" role="3clFbx">
             <node concept="3cpWs6" id="6ohPCO0AVVL" role="3cqZAp">
-              <node concept="2OqwBi" id="6ohPCO0AVVM" role="3cqZAk">
-                <node concept="Xjq3P" id="6ohPCO0AVVP" role="2Oq$k0" />
-                <node concept="liA8E" id="6ohPCO0AVVQ" role="2OqNvi">
-                  <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
-                  <node concept="37vLTw" id="6ohPCO0AVVR" role="37wK5m">
-                    <ref role="3cqZAo" node="6ohPCO0AVVw" resolve="occ" />
+              <node concept="2YIFZM" id="fNDJb4p1J0" role="3cqZAk">
+                <ref role="37wK5l" node="fNDJb4kg1s" resolve="applyBodyVisibility" />
+                <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+                <node concept="2OqwBi" id="fNDJb4p1J1" role="37wK5m">
+                  <node concept="Xjq3P" id="fNDJb4p1J4" role="2Oq$k0" />
+                  <node concept="liA8E" id="fNDJb4p1J5" role="2OqNvi">
+                    <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                    <node concept="37vLTw" id="fNDJb4p1J6" role="37wK5m">
+                      <ref role="3cqZAo" node="6ohPCO0AVVw" resolve="occ" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="fNDJb4p1J7" role="37wK5m">
+                  <node concept="2OqwBi" id="fNDJb4p1Ja" role="2Oq$k0">
+                    <node concept="37vLTw" id="fNDJb4p1Jd" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6ohPCO0AVSW" resolve="ctx" />
+                    </node>
+                    <node concept="liA8E" id="fNDJb4p1Je" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext.memberPrefix()" resolve="memberPrefix" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="fNDJb4p1Jf" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
                   </node>
                 </node>
               </node>
@@ -4487,12 +4491,29 @@
           </node>
           <node concept="3clFbS" id="6ohPCO0AVWb" role="3clFbx">
             <node concept="3cpWs6" id="6ohPCO0AVWc" role="3cqZAp">
-              <node concept="2OqwBi" id="6ohPCO0AVWd" role="3cqZAk">
-                <node concept="Xjq3P" id="6ohPCO0AVWg" role="2Oq$k0" />
-                <node concept="liA8E" id="6ohPCO0AVWh" role="2OqNvi">
-                  <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
-                  <node concept="37vLTw" id="6ohPCO0AVWi" role="37wK5m">
-                    <ref role="3cqZAo" node="6ohPCO0AVVV" resolve="content" />
+              <node concept="2YIFZM" id="fNDJb4p4lT" role="3cqZAk">
+                <ref role="37wK5l" node="fNDJb4kg1s" resolve="applyBodyVisibility" />
+                <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+                <node concept="2OqwBi" id="fNDJb4p4lU" role="37wK5m">
+                  <node concept="Xjq3P" id="fNDJb4p4lX" role="2Oq$k0" />
+                  <node concept="liA8E" id="fNDJb4p4lY" role="2OqNvi">
+                    <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                    <node concept="37vLTw" id="fNDJb4p4lZ" role="37wK5m">
+                      <ref role="3cqZAo" node="6ohPCO0AVVV" resolve="content" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="fNDJb4p4m0" role="37wK5m">
+                  <node concept="2OqwBi" id="fNDJb4p4m3" role="2Oq$k0">
+                    <node concept="37vLTw" id="fNDJb4p4m6" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6ohPCO0AVSW" resolve="ctx" />
+                    </node>
+                    <node concept="liA8E" id="fNDJb4p4m7" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext.memberPrefix()" resolve="memberPrefix" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="fNDJb4p4m8" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
                   </node>
                 </node>
               </node>
@@ -12205,48 +12226,35 @@
             <node concept="10Nm6u" id="3MUZSeGhczQ" role="3uHU7w" />
           </node>
           <node concept="3clFbS" id="3MUZSeGhczS" role="3clFbx">
-            <node concept="3clFbJ" id="3MUZSeGhczT" role="3cqZAp">
-              <node concept="3y3z36" id="3MUZSeGhczU" role="3clFbw">
-                <node concept="2OqwBi" id="3MUZSeGhxoa" role="3uHU7B">
-                  <node concept="2OqwBi" id="3MUZSeGhueL" role="2Oq$k0">
-                    <node concept="37vLTw" id="3MUZSeGhhAs" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3MUZSeGhczJ" resolve="defMember" />
-                    </node>
-                    <node concept="liA8E" id="3MUZSeGhueM" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionMemberContext.memberPrefix()" resolve="memberPrefix" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="3MUZSeGhxob" role="2OqNvi">
-                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
-                  </node>
-                </node>
-                <node concept="10Nm6u" id="3MUZSeGhczX" role="3uHU7w" />
-              </node>
-              <node concept="3clFbS" id="3MUZSeGhczZ" role="3clFbx">
-                <node concept="YS8fn" id="3MUZSeGhc$2" role="3cqZAp">
-                  <node concept="2ShNRf" id="3MUZSeGhhAu" role="YScLw">
-                    <node concept="1pGfFk" id="3MUZSeGhhGD" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                      <node concept="Xl_RD" id="3MUZSeGhhGE" role="37wK5m">
-                        <property role="Xl_RC" value="Unsupported SysML v2 construct: visibility prefix on body item" />
+            <node concept="3cpWs6" id="3MUZSeGhc$3" role="3cqZAp">
+              <node concept="2YIFZM" id="fNDJb4p2cW" role="3cqZAk">
+                <ref role="37wK5l" node="fNDJb4kg1s" resolve="applyBodyVisibility" />
+                <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+                <node concept="2OqwBi" id="fNDJb4p2cX" role="37wK5m">
+                  <node concept="Xjq3P" id="fNDJb4p2d0" role="2Oq$k0" />
+                  <node concept="liA8E" id="fNDJb4p2d1" role="2OqNvi">
+                    <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                    <node concept="2OqwBi" id="fNDJb4p2d2" role="37wK5m">
+                      <node concept="37vLTw" id="fNDJb4p2d5" role="2Oq$k0">
+                        <ref role="3cqZAo" node="3MUZSeGhczJ" resolve="defMember" />
+                      </node>
+                      <node concept="liA8E" id="fNDJb4p2d6" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionMemberContext.definitionElement()" resolve="definitionElement" />
                       </node>
                     </node>
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3cpWs6" id="3MUZSeGhc$3" role="3cqZAp">
-              <node concept="2OqwBi" id="3MUZSeGhhV7" role="3cqZAk">
-                <node concept="Xjq3P" id="3MUZSeGhc$5" role="2Oq$k0" />
-                <node concept="liA8E" id="3MUZSeGhhV8" role="2OqNvi">
-                  <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
-                  <node concept="2OqwBi" id="3MUZSeGhxom" role="37wK5m">
-                    <node concept="37vLTw" id="3MUZSeGhut8" role="2Oq$k0">
+                <node concept="2OqwBi" id="fNDJb4p2d7" role="37wK5m">
+                  <node concept="2OqwBi" id="fNDJb4p2da" role="2Oq$k0">
+                    <node concept="37vLTw" id="fNDJb4p2dd" role="2Oq$k0">
                       <ref role="3cqZAo" node="3MUZSeGhczJ" resolve="defMember" />
                     </node>
-                    <node concept="liA8E" id="3MUZSeGhxon" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionMemberContext.definitionElement()" resolve="definitionElement" />
+                    <node concept="liA8E" id="fNDJb4p2de" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionMemberContext.memberPrefix()" resolve="memberPrefix" />
                     </node>
+                  </node>
+                  <node concept="liA8E" id="fNDJb4p2df" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
                   </node>
                 </node>
               </node>
@@ -12277,36 +12285,6 @@
             <node concept="10Nm6u" id="3MUZSeGhc$e" role="3uHU7w" />
           </node>
           <node concept="3clFbS" id="3MUZSeGhc$g" role="3clFbx">
-            <node concept="3clFbJ" id="3MUZSeGhc$h" role="3cqZAp">
-              <node concept="3y3z36" id="3MUZSeGhc$i" role="3clFbw">
-                <node concept="2OqwBi" id="3MUZSeGhxoW" role="3uHU7B">
-                  <node concept="2OqwBi" id="3MUZSeGhutB" role="2Oq$k0">
-                    <node concept="37vLTw" id="3MUZSeGhinY" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3MUZSeGhc$7" resolve="nonOcc" />
-                    </node>
-                    <node concept="liA8E" id="3MUZSeGhutC" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceNonOccurrenceUsageMemberContext.memberPrefix()" resolve="memberPrefix" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="3MUZSeGhxoX" role="2OqNvi">
-                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
-                  </node>
-                </node>
-                <node concept="10Nm6u" id="3MUZSeGhc$l" role="3uHU7w" />
-              </node>
-              <node concept="3clFbS" id="3MUZSeGhc$n" role="3clFbx">
-                <node concept="YS8fn" id="3MUZSeGhc$q" role="3cqZAp">
-                  <node concept="2ShNRf" id="3MUZSeGhio0" role="YScLw">
-                    <node concept="1pGfFk" id="3MUZSeGhiub" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                      <node concept="Xl_RD" id="3MUZSeGhiuc" role="37wK5m">
-                        <property role="Xl_RC" value="Unsupported SysML v2 construct: visibility prefix on body item" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3clFbJ" id="3MUZSeHd1DC" role="3cqZAp">
               <node concept="3y3z36" id="3MUZSeHd1DD" role="3clFbw">
                 <node concept="2OqwBi" id="3MUZSeHd2ma" role="3uHU7B">
@@ -12326,22 +12304,39 @@
               </node>
               <node concept="3clFbS" id="3MUZSeHd1DI" role="3clFbx">
                 <node concept="3cpWs6" id="3MUZSeHd1DJ" role="3cqZAp">
-                  <node concept="2OqwBi" id="3MUZSeHd26J" role="3cqZAk">
-                    <node concept="Xjq3P" id="3MUZSeHd1DL" role="2Oq$k0" />
-                    <node concept="liA8E" id="3MUZSeHd26K" role="2OqNvi">
-                      <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
-                      <node concept="2OqwBi" id="3MUZSeHd2n4" role="37wK5m">
-                        <node concept="2OqwBi" id="3MUZSeHd2mu" role="2Oq$k0">
-                          <node concept="37vLTw" id="3MUZSeHd2l$" role="2Oq$k0">
-                            <ref role="3cqZAo" node="3MUZSeGhc$7" resolve="nonOcc" />
+                  <node concept="2YIFZM" id="fNDJb4p2Fc" role="3cqZAk">
+                    <ref role="37wK5l" node="fNDJb4kg1s" resolve="applyBodyVisibility" />
+                    <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+                    <node concept="2OqwBi" id="fNDJb4p2Fd" role="37wK5m">
+                      <node concept="Xjq3P" id="fNDJb4p2Fg" role="2Oq$k0" />
+                      <node concept="liA8E" id="fNDJb4p2Fh" role="2OqNvi">
+                        <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                        <node concept="2OqwBi" id="fNDJb4p2Fi" role="37wK5m">
+                          <node concept="2OqwBi" id="fNDJb4p2Fl" role="2Oq$k0">
+                            <node concept="37vLTw" id="fNDJb4p2Fo" role="2Oq$k0">
+                              <ref role="3cqZAo" node="3MUZSeGhc$7" resolve="nonOcc" />
+                            </node>
+                            <node concept="liA8E" id="fNDJb4p2Fp" role="2OqNvi">
+                              <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceNonOccurrenceUsageMemberContext.interfaceNonOccurrenceUsageElement()" resolve="interfaceNonOccurrenceUsageElement" />
+                            </node>
                           </node>
-                          <node concept="liA8E" id="3MUZSeHd2mv" role="2OqNvi">
-                            <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceNonOccurrenceUsageMemberContext.interfaceNonOccurrenceUsageElement()" resolve="interfaceNonOccurrenceUsageElement" />
+                          <node concept="liA8E" id="fNDJb4p2Fq" role="2OqNvi">
+                            <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceNonOccurrenceUsageElementContext.bindingConnectorAsUsage()" resolve="bindingConnectorAsUsage" />
                           </node>
                         </node>
-                        <node concept="liA8E" id="3MUZSeHd2n5" role="2OqNvi">
-                          <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceNonOccurrenceUsageElementContext.bindingConnectorAsUsage()" resolve="bindingConnectorAsUsage" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="fNDJb4p2Fr" role="37wK5m">
+                      <node concept="2OqwBi" id="fNDJb4p2Fu" role="2Oq$k0">
+                        <node concept="37vLTw" id="fNDJb4p2Fx" role="2Oq$k0">
+                          <ref role="3cqZAo" node="3MUZSeGhc$7" resolve="nonOcc" />
                         </node>
+                        <node concept="liA8E" id="fNDJb4p2Fy" role="2OqNvi">
+                          <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceNonOccurrenceUsageMemberContext.memberPrefix()" resolve="memberPrefix" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="fNDJb4p2Fz" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
                       </node>
                     </node>
                   </node>
@@ -12390,12 +12385,29 @@
               </node>
             </node>
             <node concept="3cpWs6" id="3MUZSeGhc$D" role="3cqZAp">
-              <node concept="2OqwBi" id="3MUZSeGhj1l" role="3cqZAk">
-                <node concept="Xjq3P" id="3MUZSeGhc$F" role="2Oq$k0" />
-                <node concept="liA8E" id="3MUZSeGhj1m" role="2OqNvi">
-                  <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
-                  <node concept="37vLTw" id="3MUZSeGhj1n" role="37wK5m">
-                    <ref role="3cqZAo" node="3MUZSeGhc$r" resolve="attr" />
+              <node concept="2YIFZM" id="fNDJb4p3a7" role="3cqZAk">
+                <ref role="37wK5l" node="fNDJb4kg1s" resolve="applyBodyVisibility" />
+                <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+                <node concept="2OqwBi" id="fNDJb4p3a8" role="37wK5m">
+                  <node concept="Xjq3P" id="fNDJb4p3ab" role="2Oq$k0" />
+                  <node concept="liA8E" id="fNDJb4p3ac" role="2OqNvi">
+                    <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                    <node concept="37vLTw" id="fNDJb4p3ad" role="37wK5m">
+                      <ref role="3cqZAo" node="3MUZSeGhc$r" resolve="attr" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="fNDJb4p3ae" role="37wK5m">
+                  <node concept="2OqwBi" id="fNDJb4p3ah" role="2Oq$k0">
+                    <node concept="37vLTw" id="fNDJb4p3ak" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3MUZSeGhc$7" resolve="nonOcc" />
+                    </node>
+                    <node concept="liA8E" id="fNDJb4p3al" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceNonOccurrenceUsageMemberContext.memberPrefix()" resolve="memberPrefix" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="fNDJb4p3am" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
                   </node>
                 </node>
               </node>
@@ -12414,36 +12426,6 @@
               </node>
               <node concept="liA8E" id="3MUZSeGhuu7" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceBodyItemContext.interfaceOccurrenceUsageMember()" resolve="interfaceOccurrenceUsageMember" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="3MUZSeGhc$L" role="3cqZAp">
-          <node concept="3y3z36" id="3MUZSeGhc$M" role="3clFbw">
-            <node concept="2OqwBi" id="3MUZSeGhxq8" role="3uHU7B">
-              <node concept="2OqwBi" id="3MUZSeGhuuq" role="2Oq$k0">
-                <node concept="37vLTw" id="3MUZSeGhjuc" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3MUZSeGhc$H" resolve="occ" />
-                </node>
-                <node concept="liA8E" id="3MUZSeGhuur" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceOccurrenceUsageMemberContext.memberPrefix()" resolve="memberPrefix" />
-                </node>
-              </node>
-              <node concept="liA8E" id="3MUZSeGhxq9" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="3MUZSeGhc$P" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="3MUZSeGhc$R" role="3clFbx">
-            <node concept="YS8fn" id="3MUZSeGhc$U" role="3cqZAp">
-              <node concept="2ShNRf" id="3MUZSeGhjue" role="YScLw">
-                <node concept="1pGfFk" id="3MUZSeGhj$p" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="3MUZSeGhj$q" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: visibility prefix on body item" />
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -12596,8 +12578,25 @@
               </node>
             </node>
             <node concept="3cpWs6" id="3MUZSeGhc_G" role="3cqZAp">
-              <node concept="37vLTw" id="3MUZSeGhc_H" role="3cqZAk">
-                <ref role="3cqZAo" node="3MUZSeGhc_z" resolve="endUsage" />
+              <node concept="2YIFZM" id="fNDJb4p3C6" role="3cqZAk">
+                <ref role="37wK5l" node="fNDJb4kg1s" resolve="applyBodyVisibility" />
+                <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+                <node concept="37vLTw" id="fNDJb4p3C7" role="37wK5m">
+                  <ref role="3cqZAo" node="3MUZSeGhc_z" resolve="endUsage" />
+                </node>
+                <node concept="2OqwBi" id="fNDJb4p3C8" role="37wK5m">
+                  <node concept="2OqwBi" id="fNDJb4p3Cb" role="2Oq$k0">
+                    <node concept="37vLTw" id="fNDJb4p3Ce" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3MUZSeGhc$H" resolve="occ" />
+                    </node>
+                    <node concept="liA8E" id="fNDJb4p3Cf" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceOccurrenceUsageMemberContext.memberPrefix()" resolve="memberPrefix" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="fNDJb4p3Cg" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>
@@ -12628,17 +12627,34 @@
           </node>
         </node>
         <node concept="3cpWs6" id="3MUZSeGhc_R" role="3cqZAp">
-          <node concept="2OqwBi" id="3MUZSeGhm6P" role="3cqZAk">
-            <node concept="Xjq3P" id="3MUZSeGhc_T" role="2Oq$k0" />
-            <node concept="liA8E" id="3MUZSeGhm6Q" role="2OqNvi">
-              <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
-              <node concept="2OqwBi" id="3MUZSeGhxqw" role="37wK5m">
-                <node concept="37vLTw" id="3MUZSeGhuWs" role="2Oq$k0">
-                  <ref role="3cqZAo" node="3MUZSeGhc$V" resolve="element" />
+          <node concept="2YIFZM" id="fNDJb4p3Rs" role="3cqZAk">
+            <ref role="37wK5l" node="fNDJb4kg1s" resolve="applyBodyVisibility" />
+            <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+            <node concept="2OqwBi" id="fNDJb4p3Rt" role="37wK5m">
+              <node concept="Xjq3P" id="fNDJb4p3Rw" role="2Oq$k0" />
+              <node concept="liA8E" id="fNDJb4p3Rx" role="2OqNvi">
+                <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                <node concept="2OqwBi" id="fNDJb4p3Ry" role="37wK5m">
+                  <node concept="37vLTw" id="fNDJb4p3R_" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3MUZSeGhc$V" resolve="element" />
+                  </node>
+                  <node concept="liA8E" id="fNDJb4p3RA" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceOccurrenceUsageElementContext.structureUsageElement()" resolve="structureUsageElement" />
+                  </node>
                 </node>
-                <node concept="liA8E" id="3MUZSeGhxqx" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceOccurrenceUsageElementContext.structureUsageElement()" resolve="structureUsageElement" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="fNDJb4p3RB" role="37wK5m">
+              <node concept="2OqwBi" id="fNDJb4p3RE" role="2Oq$k0">
+                <node concept="37vLTw" id="fNDJb4p3RH" role="2Oq$k0">
+                  <ref role="3cqZAo" node="3MUZSeGhc$H" resolve="occ" />
                 </node>
+                <node concept="liA8E" id="fNDJb4p3RI" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$InterfaceOccurrenceUsageMemberContext.memberPrefix()" resolve="memberPrefix" />
+                </node>
+              </node>
+              <node concept="liA8E" id="fNDJb4p3RJ" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
               </node>
             </node>
           </node>
@@ -20352,6 +20368,84 @@
       <node concept="3uibUv" id="6ohPCO0HSd2" role="3clF45">
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
+    </node>
+    <node concept="2YIFZL" id="fNDJb4kg1s" role="jymVt">
+      <property role="TrG5h" value="applyBodyVisibility" />
+      <node concept="3uibUv" id="fNDJb4kg1w" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+      <node concept="37vLTG" id="fNDJb4kg1x" role="3clF46">
+        <property role="TrG5h" value="node" />
+        <node concept="3Tqbb2" id="fNDJb4tSWM" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="fNDJb4kg1$" role="3clF46">
+        <property role="TrG5h" value="indicator" />
+        <node concept="3uibUv" id="fNDJb4kg1A" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$VisibilityIndicatorContext" resolve="VisibilityIndicatorContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="fNDJb4kg1B" role="3clF47">
+        <node concept="3clFbJ" id="fNDJb4kg1C" role="3cqZAp">
+          <node concept="3y3z36" id="fNDJb4kg1F" role="3clFbw">
+            <node concept="37vLTw" id="fNDJb4kg1I" role="3uHU7B">
+              <ref role="3cqZAo" node="fNDJb4kg1$" />
+            </node>
+            <node concept="10Nm6u" id="fNDJb4kg1J" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="fNDJb4kg1K" role="3clFbx">
+            <node concept="3clFbJ" id="fNDJb4kg1L" role="3cqZAp">
+              <node concept="3fqX7Q" id="fNDJb4kg1O" role="3clFbw">
+                <node concept="2OqwBi" id="fNDJb4kg1Q" role="3fr31v">
+                  <node concept="37vLTw" id="fNDJb4kg1T" role="2Oq$k0">
+                    <ref role="3cqZAo" node="fNDJb4kg1x" />
+                  </node>
+                  <node concept="1mIQ4w" id="fNDJb4kg1U" role="2OqNvi">
+                    <node concept="chp4Y" id="fNDJb4kg1W" role="cj9EA">
+                      <ref role="cht4Q" to="5rf1:3VmcprQOArC" resolve="ISysMLv2Member" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="fNDJb4kg1X" role="3clFbx">
+                <node concept="YS8fn" id="fNDJb4kg1Y" role="3cqZAp">
+                  <node concept="2ShNRf" id="fNDJb4kg20" role="YScLw">
+                    <node concept="1pGfFk" id="fNDJb4kg22" role="2ShVmc">
+                      <property role="373rjd" value="true" />
+                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                      <node concept="Xl_RD" id="fNDJb4kg23" role="37wK5m">
+                        <property role="Xl_RC" value="Unsupported SysML v2 construct: visibility prefix on body item" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="fNDJb4kg24" role="3cqZAp">
+              <node concept="2YIFZM" id="fNDJb4kg26" role="3clFbG">
+                <ref role="37wK5l" node="3VmcprQXiPM" resolve="applyMemberVisibility" />
+                <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+                <node concept="1PxgMI" id="fNDJb4kg27" role="37wK5m">
+                  <node concept="37vLTw" id="fNDJb4kg2a" role="1m5AlR">
+                    <ref role="3cqZAo" node="fNDJb4kg1x" />
+                  </node>
+                  <node concept="chp4Y" id="fNDJb4kg2b" role="3oSUPX">
+                    <ref role="cht4Q" to="5rf1:3VmcprQOArC" resolve="ISysMLv2Member" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="fNDJb4kg2c" role="37wK5m">
+                  <ref role="3cqZAo" node="fNDJb4kg1$" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="fNDJb4kg2d" role="3cqZAp">
+          <node concept="37vLTw" id="fNDJb4kg2e" role="3cqZAk">
+            <ref role="3cqZAo" node="fNDJb4kg1x" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="fNDJb4kg2f" role="1B3o_S" />
     </node>
   </node>
   <node concept="312cEu" id="7JKstLNlJ4o">
