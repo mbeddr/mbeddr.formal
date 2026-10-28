@@ -514,6 +514,9 @@
     <node concept="PrWs8" id="3MUZSeG2oiD" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
     </node>
+    <node concept="PrWs8" id="fNDJb4FmM$" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU2Tg1U">
     <property role="EcuMT" value="7140692429570900090" />
@@ -640,6 +643,9 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="fNDJb4FmMu" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
   </node>
   <node concept="PlHQZ" id="6coPuU36dCe">

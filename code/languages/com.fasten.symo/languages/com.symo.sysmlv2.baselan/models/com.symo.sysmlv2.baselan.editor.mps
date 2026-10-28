@@ -1385,6 +1385,9 @@
     <property role="3GE5qa" value="part.port" />
     <ref role="1XX52x" to="5rf1:6coPuU2Tg1T" resolve="SysMLv2PortUsage" />
     <node concept="3EZMnI" id="6coPuU2TGa4" role="2wV5jI">
+      <node concept="PMmxH" id="fNDJb4FmO5" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
+      </node>
       <node concept="3F0ifn" id="BOR0Mn7wQ5" role="3EZMnx">
         <property role="3F0ifm" value="end" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
@@ -1867,6 +1870,9 @@
     <property role="TrG5h" value="SysMLv2ItemUsage_Editor" />
     <ref role="1XX52x" to="5rf1:6coPuU36dCd" resolve="SysMLv2ItemUsage" />
     <node concept="3EZMnI" id="6coPuU36OFJ" role="2wV5jI">
+      <node concept="PMmxH" id="fNDJb4FmOb" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
+      </node>
       <node concept="3F0ifn" id="BOR0Mn7wQp" role="3EZMnx">
         <property role="3F0ifm" value="end" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
@@ -2936,6 +2942,9 @@
     <property role="3GE5qa" value="metadata" />
     <ref role="1XX52x" to="5rf1:5oZmK$NNehd" resolve="SysMLv2MetadataUsage" />
     <node concept="3EZMnI" id="5oZmK$NPe47" role="2wV5jI">
+      <node concept="PMmxH" id="fNDJb4FmOh" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
+      </node>
       <node concept="3F0ifn" id="5oZmK$NPe48" role="3EZMnx">
         <property role="3F0ifm" value="@" />
         <node concept="pkWqt" id="5oZmK$NPe49" role="pqm2j">
