@@ -12,6 +12,18 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## A superconcept's menu applies to subconcepts, and a subconcept's own menu does not hide it; editors and TextGen are not inherited (2026-10-28)
+
+Symptom: a subconcept offers the superconcept's menu actions (for example the interface visibility menu reaches
+`ConnectionDefinition`, `InterfaceDefinition`, `MetadataDefinition`, `FlowDefinition`) even when the subconcept has its own menu, and
+the subconcept's own menu does not hide them. Editors and TextGen declarations are not inherited: a subconcept with no own editor
+shows no cell, and one with no own TextGen prints no prefix, so check both per concept.
+
+## Run one `execute_run_configuration` at a time; `waitForExit:false` plus a log monitor (2026-10-28)
+
+Two runs started close together time out (the second waits on the first's test lock) and report no result. Start one run with
+`waitForExit:false`, then poll its `fullOutputPath` log for `<FINISH_TEST>` count (or the summary) before starting the next run.
+
 ## Blueprints for editor transformation menus: concept FQNs, `Property_SetOperation` role, and the enum-valued property (2026-10-27)
 
 Building a `TransformationMenuContribution` (a `#`-style or visibility-style menu on a concept's first holder cell) by JSON

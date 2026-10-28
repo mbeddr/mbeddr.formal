@@ -182,6 +182,17 @@ delete the importer exclusion (connection / interface / metadata) and flip their
 menus of those kinds offer the actions until their cell and textGen exist; write the two MCP gotchas (MCP-created `NodesTestCase`
 needs `accessMode="none"`; one run configuration at a time, `waitForExit:false` plus a log monitor); mutation on the interface contribution.
 
+### Iteration 018c result (2026-10-28, archive `018c-sysml-member-visibility-remaining-definitions`, accepted by user)
+
+Visibility on `connection def`, `interface def`, `metadata def`, `flow def`; with this, all eight definition kinds carry it. The visibility cell
+is now one editor component `ISysMLv2Member_Visibility` (user decision) included by all eight editors, no inline copy left; `flow def`
+implements `ISysMLv2Member`; textGen prefix in the four new textGens; the 018b importer exclusion is removed (plain `instanceof ISysMLv2Member`);
+the four `_130` rejection cases flipped to round trips (`_060` has 9), and `_130` got `testPrivatePartUsageRejected` for usages. Survey table: every
+`ISysMLv2Member` instance has its own editor cell, textGen prefix and a round trip. Mutations (importer prefix, metadata textGen literal, component
+removed from the part def editor, interface menu contribution) shown to fail. Developer-reported full run 363 tests, only the two known plantuml
+failures. Gotchas added: menu inheritance vs editors/textGen, one run configuration at a time. Not recorded by the developer: whether any
+test annotation was re-pointed, and the cell-id test list for the other editors (full run covers it).
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
