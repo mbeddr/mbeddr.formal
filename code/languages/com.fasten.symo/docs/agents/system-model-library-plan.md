@@ -193,6 +193,19 @@ removed from the part def editor, interface menu contribution) shown to fail. De
 failures. Gotchas added: menu inheritance vs editors/textGen, one run configuration at a time. Not recorded by the developer: whether any
 test annotation was re-pointed, and the cell-id test list for the other editors (full run covers it).
 
+### Iteration 018d result (2026-10-28, archive `018d-sysml-member-visibility-package`, accepted by user after a live check)
+
+Visibility on `package` and `library package` (`SysMLv2Package` implements `ISysMLv2Member`, the library package inherits it); component at index 0 of both
+editors, textGen prefix in both textGens; usage rejection reworded to `visibility prefix on usage` (named for 019). The first live check failed: with
+visibility unset and no prefix metadata the package editors had no cell in front of `package`, so nothing could be typed and the `before` menu had no
+host. Fix: a front `SideTransformationSectionCell` with a `section` child (`before`) at index 0 of both editors; the single interface contribution
+supplies the items (per-concept contributions were tried and removed: duplicates). Tests: `_060` has 14 round trips (5 package), `_130` has 11,
+editor tests `_093`-`_097` (type/delete `private`, `#` at the start of a package), `_110` re-pointed twice. Mutations (importer statement, library
+textGen literal, usage message, interface contribution) shown to fail. 21-file probe: 19 unchanged, Requirements and Interfaces now stop at the
+unsupported definition kind (`constraint def`, `calc def`). Developer-reported full run 374 tests, only the two known plantuml failures. The
+user's sandbox file is hand-test residue and was not committed. Lesson: tests that pass on a `Constant_*` caret do not prove a user can reach the
+entry point; ask for the caret path of the live editor.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -224,7 +237,7 @@ iterations.
   `part def` only, round trips (settles the cell shape and the interface before it is repeated).
 - 018b visibility on `attribute def`, `port def`, `item def` (same shape as 018a; importer guard replaced by an `instanceof` check).
 - 018c visibility on `metadata def`, `connection def`, `interface def`, `flow def` (carry-over list in the 018b result entry).
-- 018d visibility on `package` and `library package`, named rejection reworded for usages, 21-file probe.
+- 018d visibility on `package` and `library package`, named rejection reworded for usages, 21-file probe (done).
 - 018e (follow-up) `SysMLv2Import` implements `ISysMLv2Member` and drops its own `visibility` property (one step).
 - 018f (follow-up) definitions nested in definition bodies (`visitDefinitionBodyItemContent` rejects them today), then visibility on them.
 - 019 visibility on package members: usages.

@@ -12,6 +12,18 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## A missing component name in a generated builder is not a stale builder; a package-like editor needs a front holder (2026-10-28)
+
+Editor components are inlined by the generator: `SysMLv2PartDefinition_EditorBuilder_a.java` contains the inlined `property_visibility` cell and
+no mention of `ISysMLv2Member_Visibility`, and that is correct. Do not conclude "stale builder" from a grep for the component name; compare the
+inlined cells. Separately, an editor whose first real cell is a keyword constant (package) has no host for `before` menu items or typing in front;
+add a `SideTransformationSectionCell` (with a `section` child, location `before`, else the model check reports "No child in the obligatory role
+'section'") at index 0. It shifts the generated ids of later cells (`Constant_*`), so re-point test anchors.
+
+## `parse_java_and_insert` cannot parse `project`; insert a `ProjectExpression` by hand (2026-10-28)
+
+The parser inserts an unresolved `VariableReference` named `project`. Fix: `mps_mcp_update_node` SET CHILD with a `ProjectExpression` blueprint.
+
 ## A superconcept's menu applies to subconcepts, and a subconcept's own menu does not hide it; editors and TextGen are not inherited (2026-10-28)
 
 Symptom: a subconcept offers the superconcept's menu actions (for example the interface visibility menu reaches
