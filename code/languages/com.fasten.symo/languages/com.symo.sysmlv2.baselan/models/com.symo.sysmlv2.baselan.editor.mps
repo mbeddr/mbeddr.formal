@@ -400,9 +400,8 @@
     <ref role="1XX52x" to="5rf1:3PUPjB2ukTG" resolve="SysMLv2Import" />
     <node concept="3EZMnI" id="3PUPjB2uvh4" role="2wV5jI">
       <node concept="l2Vlx" id="3PUPjB2uvh5" role="2iSdaV" />
-      <node concept="3F0A7n" id="6jpO12DVKJ5" role="3EZMnx">
-        <ref role="1NtTu8" to="5rf1:6jpO12DyoSZ" resolve="visibility" />
-        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      <node concept="PMmxH" id="fNDJb3A_yF" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
       </node>
       <node concept="3F0ifn" id="3PUPjB2vGeh" role="3EZMnx">
         <property role="3F0ifm" value="import" />
@@ -4437,7 +4436,7 @@
     <property role="3GE5qa" value="part" />
     <property role="TrG5h" value="ISysMLv2Member_VisibilityContribution" />
     <node concept="A1WHr" id="fNDJb1m8$B" role="AmTjC">
-      <ref role="2ZyFGn" to="5rf1:3VmcprQOArC" />
+      <ref role="2ZyFGn" to="5rf1:3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
     <node concept="1Qtc8_" id="fNDJb1m8$C" role="IW6Ez">
       <node concept="wWMWC" id="fNDJb1m8$E" role="1Qtc8$" />

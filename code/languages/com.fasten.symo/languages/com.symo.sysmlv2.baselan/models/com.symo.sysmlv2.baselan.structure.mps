@@ -157,11 +157,6 @@
       <property role="TrG5h" value="importedName" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
-    <node concept="1TJgyi" id="6jpO12DyoSZ" role="1TKVEl">
-      <property role="IQ2nx" value="7267068243721424447" />
-      <property role="TrG5h" value="visibility" />
-      <ref role="AX2Wp" node="6jpO12DyoSb" resolve="SysMLv2VisibilityKind" />
-    </node>
     <node concept="1TJgyi" id="6jpO12DYx_T" role="1TKVEl">
       <property role="IQ2nx" value="7267068243728800121" />
       <property role="TrG5h" value="isImportAll" />
@@ -176,6 +171,9 @@
       <property role="IQ2nx" value="7267068243728800127" />
       <property role="TrG5h" value="isNamespace" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="fNDJb3A_y6" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
   </node>
   <node concept="1TIwiD" id="3PUPjB2$P9d">
