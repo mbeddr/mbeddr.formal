@@ -20,6 +20,7 @@
         <child id="8930763252717678371" name="content" index="8EhVZ" />
       </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
+      <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
       <concept id="5531643499102778612" name="com.symo.sysmlv2.baselan.structure.ISysMLv2QualifiedRef" flags="ngI" index="gQIM0">
         <reference id="5531643499102778613" name="namespace" index="gQIM1" />
       </concept>
@@ -38,6 +39,9 @@
         <child id="717440187291777386" name="chain" index="2uUmlA" />
       </concept>
       <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE" />
+      <concept id="4527860999823451880" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Member" flags="ngI" index="3815tY">
+        <property id="4527860999823451881" name="visibility" index="3815tZ" />
+      </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
       </concept>
@@ -63,6 +67,7 @@
         <reference id="6214786105868823571" name="element" index="1_pRsq" />
       </concept>
       <concept id="6214786105876472907" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinition" flags="ng" index="1_WVX2" />
+      <concept id="6214786105876472909" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataUsage" flags="ng" index="1_WVX4" />
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
@@ -177,6 +182,74 @@
           <node concept="3wdj9f" id="3MUZSeF_Q8K" role="2uUmlA">
             <ref role="3wdj98" node="3MUZSeF_ja1" resolve="thrust" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="fNDJb5ewr2">
+    <property role="TrG5h" value="_020_visibility_on_usages" />
+    <node concept="1_WVX2" id="fNDJb5ewuM" role="2h0jOs">
+      <property role="TrG5h" value="Safety" />
+    </node>
+    <node concept="3ZUotO" id="fNDJb5ewr3" role="2h0jOs">
+      <property role="TrG5h" value="Vehicle" />
+      <node concept="8EhU9" id="fNDJb5ewr4" role="3w00ZY">
+        <property role="TrG5h" value="mass" />
+        <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+      </node>
+      <node concept="8GF0z" id="fNDJb5ewr5" role="3w00ZY">
+        <property role="TrG5h" value="engine" />
+        <property role="3815tZ" value="5BCNI_HG6H4/protected" />
+      </node>
+      <node concept="8GF0z" id="fNDJb5ewr6" role="3w00ZY">
+        <property role="TrG5h" value="gearbox" />
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+      </node>
+      <node concept="2uUmlE" id="fNDJb5ewr7" role="3w00ZY">
+        <property role="TrG5h" value="shaft" />
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+        <node concept="2uUmlD" id="fNDJb5ewrc" role="2uUmly">
+          <node concept="3wdj9f" id="fNDJb5ewre" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb5ewr5" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="fNDJb5ewrf" role="2uUmlz">
+          <node concept="3wdj9f" id="fNDJb5ewrh" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb5ewr6" />
+          </node>
+        </node>
+      </node>
+      <node concept="3xZtmn" id="fNDJb5ewri" role="3w00ZY">
+        <property role="TrG5h" value="fuelIn" />
+        <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+      </node>
+      <node concept="3xZtmn" id="fNDJb5ewrj" role="3w00ZY">
+        <property role="TrG5h" value="fuelOut" />
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+      </node>
+      <node concept="2gGTnd" id="fNDJb5ewrk" role="3w00ZY">
+        <property role="TrG5h" value="link" />
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+        <node concept="2uUmlD" id="fNDJb5ewrp" role="2uUmly">
+          <node concept="3wdj9f" id="fNDJb5ewrr" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb5ewri" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="fNDJb5ewrs" role="2uUmlz">
+          <node concept="3wdj9f" id="fNDJb5ewru" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb5ewrj" />
+          </node>
+        </node>
+      </node>
+      <node concept="3w00Zz" id="fNDJb5ewrv" role="3w00ZY">
+        <property role="TrG5h" value="fuel" />
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+      </node>
+      <node concept="1_WVX4" id="fNDJb5ewrw" role="3w00ZY">
+        <property role="TrG5h" value="safety" />
+        <property role="3815tZ" value="5BCNI_HG6H4/protected" />
+        <node concept="3w00Zy" id="fNDJb5ewvP" role="3w00ZT">
+          <ref role="3w00ZU" node="fNDJb5ewuM" />
         </node>
       </node>
     </node>
