@@ -235,6 +235,9 @@
       <concept id="1080120340718" name="jetbrains.mps.baseLanguage.structure.AndExpression" flags="nn" index="1Wc70l" />
     </language>
     <language id="9d69e719-78c8-4286-90db-fb19c107d049" name="com.mbeddr.mpsutil.grammarcells">
+      <concept id="745148820867185554" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationSectionCell" flags="ng" index="2uKrtP">
+        <child id="745148820874363426" name="section" index="2vkWV5" />
+      </concept>
       <concept id="1997572252229165641" name="com.mbeddr.mpsutil.grammarcells.structure.TransformationLocation_Before" flags="ng" index="wWMWC" />
       <concept id="1997572252229165700" name="com.mbeddr.mpsutil.grammarcells.structure.TransformationLocation_After" flags="ng" index="wWMZ_" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
@@ -339,6 +342,14 @@
     <ref role="1XX52x" to="5rf1:3PUPjB2nMR4" resolve="SysMLv2Package" />
     <node concept="3EZMnI" id="3PUPjB2nVUz" role="2wV5jI">
       <node concept="l2Vlx" id="3PUPjB2nVU$" role="2iSdaV" />
+      <node concept="2uKrtP" id="fNDJb3eohu" role="3EZMnx">
+        <node concept="1Qtc8_" id="fNDJb3syrM" role="2vkWV5">
+          <node concept="wWMWC" id="fNDJb3syrO" role="1Qtc8$" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="fNDJb20D_g" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
+      </node>
       <node concept="PMmxH" id="5oZmK$O8rSC" role="3EZMnx">
         <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
       </node>
@@ -4259,6 +4270,14 @@
   <node concept="24kQdi" id="6jpO12_xmnO">
     <ref role="1XX52x" to="5rf1:6jpO12_xkrj" resolve="SysMLv2LibraryPackage" />
     <node concept="3EZMnI" id="6jpO12_$T27" role="2wV5jI">
+      <node concept="2uKrtP" id="fNDJb2Rxg0" role="3EZMnx">
+        <node concept="1Qtc8_" id="fNDJb3syrU" role="2vkWV5">
+          <node concept="wWMWC" id="fNDJb3syrW" role="1Qtc8$" />
+        </node>
+      </node>
+      <node concept="PMmxH" id="fNDJb20D_j" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
+      </node>
       <node concept="PMmxH" id="6jpO12_$T28" role="3EZMnx">
         <ref role="PMmxG" node="5oZmK$O8rSw" resolve="ISysMLv2PrefixMetadataOwner_PrefixMetadata" />
       </node>
@@ -4418,7 +4437,7 @@
     <property role="3GE5qa" value="part" />
     <property role="TrG5h" value="ISysMLv2Member_VisibilityContribution" />
     <node concept="A1WHr" id="fNDJb1m8$B" role="AmTjC">
-      <ref role="2ZyFGn" to="5rf1:3VmcprQOArC" resolve="ISysMLv2Member" />
+      <ref role="2ZyFGn" to="5rf1:3VmcprQOArC" />
     </node>
     <node concept="1Qtc8_" id="fNDJb1m8$C" role="IW6Ez">
       <node concept="wWMWC" id="fNDJb1m8$E" role="1Qtc8$" />

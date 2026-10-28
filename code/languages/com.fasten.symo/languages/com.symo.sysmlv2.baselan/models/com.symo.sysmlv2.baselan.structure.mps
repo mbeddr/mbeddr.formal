@@ -139,6 +139,9 @@
     <node concept="PrWs8" id="5oZmK$O6ufM" role="PzmwI">
       <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
     </node>
+    <node concept="PrWs8" id="fNDJb20D$N" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3PUPjB2ukTG">
     <property role="EcuMT" value="4430087627524886124" />
