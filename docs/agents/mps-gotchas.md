@@ -12,6 +12,12 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## A language MAKE does not regenerate the importer solution; make `com.symo.sysmlv2.baselan.importer.main` itself (2026-10-28)
+
+After editing the importer model, `SysMLv2ImporterVisitor.java` under `source_gen` stayed old and a test failed on the missing behavior. A MAKE of the
+importer main model with `rebuild: true` regenerated it. Removing a property from a concept also leaves a stale property entry on existing nodes in test
+models ("Property X does not belong to the concept"); setting the value does not clear it, replace the node.
+
 ## A missing component name in a generated builder is not a stale builder; a package-like editor needs a front holder (2026-10-28)
 
 Editor components are inlined by the generator: `SysMLv2PartDefinition_EditorBuilder_a.java` contains the inlined `property_visibility` cell and

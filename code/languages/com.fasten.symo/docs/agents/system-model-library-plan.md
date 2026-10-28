@@ -206,6 +206,17 @@ unsupported definition kind (`constraint def`, `calc def`). Developer-reported f
 user's sandbox file is hand-test residue and was not committed. Lesson: tests that pass on a `Constant_*` caret do not prove a user can reach the
 entry point; ask for the caret path of the live editor.
 
+### Iteration 018e result (2026-10-28, archive `018e-sysml-import-implements-member`, accepted by user after a live check)
+
+`SysMLv2Import` implements `ISysMLv2Member`; its own `visibility` property is deleted, so visibility is declared once for all member kinds. The import
+editor uses the shared component `ISysMLv2Member_Visibility` and the shared interface menu contribution (no import-specific visibility menu existed, no
+duplicate); the import editor already had a front holder. TextGen and importer read the interface property. Deviation: `applyMemberVisibility` takes the
+`VisibilityIndicatorContext` (the import rule has its own indicator, not `memberPrefix`), one mapping for packages and imports. Only `_100` held a
+visibility value on an import; that node had to be replaced (a stale property entry survived a SET). Mutations (importer argument, textGen literal,
+menu target) shown to fail in `_040`/`_100`. Developer-reported full run 374 tests, only the two known plantuml failures. A stale-looking
+`property_visibility` in the generated import builder is the inlined component reading the interface property, not a stale builder. Gotcha added: the
+importer model needs its own MAKE.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -238,7 +249,7 @@ iterations.
 - 018b visibility on `attribute def`, `port def`, `item def` (same shape as 018a; importer guard replaced by an `instanceof` check).
 - 018c visibility on `metadata def`, `connection def`, `interface def`, `flow def` (carry-over list in the 018b result entry).
 - 018d visibility on `package` and `library package`, named rejection reworded for usages, 21-file probe (done).
-- 018e (follow-up) `SysMLv2Import` implements `ISysMLv2Member` and drops its own `visibility` property (one step).
+- 018e (follow-up) `SysMLv2Import` implements `ISysMLv2Member` and drops its own `visibility` property (one step; done).
 - 018f (follow-up) definitions nested in definition bodies (`visitDefinitionBodyItemContent` rejects them today), then visibility on them.
 - 019 visibility on package members: usages.
 - 020 `ref` usages (importer only, concept exists).
