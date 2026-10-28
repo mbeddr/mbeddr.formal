@@ -147,7 +147,6 @@
       </concept>
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
         <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
-        <property id="7267068243721424447" name="visibility" index="3dk5SJ" />
         <property id="4430087627524899785" name="importedName" index="3Z0PrK" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
@@ -2482,7 +2481,7 @@
         <node concept="3Z0THl" id="6jpO12DMpI_" role="2h0jOs">
           <property role="3Z0PrK" value="A::B" />
           <node concept="LIFWc" id="6jpO12DMpIA" role="lGtFl">
-            <property role="LIFWd" value="property_visibility" />
+            <property role="LIFWd" value="Constant_x40wrj_b0a" />
             <property role="OXtK3" value="true" />
             <property role="p6zMq" value="0" />
             <property role="p6zMs" value="0" />
@@ -2494,9 +2493,9 @@
     <node concept="1qefOq" id="6jpO12DMpIB" role="25YQFr">
       <node concept="2h0jOr" id="6jpO12DMpID" role="1qenE9">
         <property role="TrG5h" value="demo" />
-        <node concept="3Z0THl" id="6jpO12DMpIE" role="2h0jOs">
+        <node concept="3Z0THl" id="fNDJb3IoVg" role="2h0jOs">
           <property role="3Z0PrK" value="A::B" />
-          <property role="3dk5SJ" value="6jJ9KHVIUlW/private" />
+          <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         </node>
       </node>
     </node>

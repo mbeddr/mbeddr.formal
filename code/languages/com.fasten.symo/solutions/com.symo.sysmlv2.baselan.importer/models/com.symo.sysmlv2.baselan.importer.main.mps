@@ -865,12 +865,17 @@
                     <ref role="cht4Q" to="5rf1:3VmcprQOArC" resolve="ISysMLv2Member" />
                   </node>
                 </node>
-                <node concept="2OqwBi" id="fNDJb24EBL" role="37wK5m">
-                  <node concept="37vLTw" id="fNDJb24EBO" role="2Oq$k0">
-                    <ref role="3cqZAo" node="3PUPjB2rYMw" resolve="ctx" />
+                <node concept="2OqwBi" id="fNDJb3A_Q0" role="37wK5m">
+                  <node concept="2OqwBi" id="fNDJb3A_Q3" role="2Oq$k0">
+                    <node concept="37vLTw" id="fNDJb3A_Q6" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3PUPjB2rYMw" resolve="ctx" />
+                    </node>
+                    <node concept="liA8E" id="fNDJb3A_Q7" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$PackageMemberContext.memberPrefix()" resolve="memberPrefix" />
+                    </node>
                   </node>
-                  <node concept="liA8E" id="fNDJb24EBP" role="2OqNvi">
-                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$PackageMemberContext.memberPrefix()" resolve="memberPrefix" />
+                  <node concept="liA8E" id="fNDJb3A_Q8" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
                   </node>
                 </node>
               </node>
@@ -1841,108 +1846,19 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="6jpO12EgEOF" role="3cqZAp">
-          <node concept="3y3z36" id="6jpO12EgEOI" role="3clFbw">
-            <node concept="2OqwBi" id="6jpO12EgEOL" role="3uHU7B">
-              <node concept="37vLTw" id="6jpO12EgEOO" role="2Oq$k0">
+        <node concept="3clFbF" id="fNDJb3A_AL" role="3cqZAp">
+          <node concept="2YIFZM" id="fNDJb3A_AN" role="3clFbG">
+            <ref role="37wK5l" node="3VmcprQXiPM" resolve="applyMemberVisibility" />
+            <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+            <node concept="37vLTw" id="fNDJb3A_AO" role="37wK5m">
+              <ref role="3cqZAo" node="3PUPjB2v7eI" resolve="imp" />
+            </node>
+            <node concept="2OqwBi" id="fNDJb3Xlh_" role="37wK5m">
+              <node concept="37vLTw" id="fNDJb3XlhC" role="2Oq$k0">
                 <ref role="3cqZAo" node="3PUPjB2v7dN" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="6jpO12EgEOP" role="2OqNvi">
+              <node concept="liA8E" id="fNDJb3XlhD" role="2OqNvi">
                 <ref role="37wK5l" to="guqe:~SysMLv2Parser$ImportRuleContext.visibilityIndicator()" resolve="visibilityIndicator" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="6jpO12EgEOQ" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="6jpO12EgEOR" role="3clFbx">
-            <node concept="3clFbJ" id="6jpO12EgEOS" role="3cqZAp">
-              <node concept="3y3z36" id="6jpO12EgEOV" role="3clFbw">
-                <node concept="2OqwBi" id="6jpO12EgEOY" role="3uHU7B">
-                  <node concept="2OqwBi" id="6jpO12EgEP1" role="2Oq$k0">
-                    <node concept="37vLTw" id="6jpO12EgEP4" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3PUPjB2v7dN" resolve="ctx" />
-                    </node>
-                    <node concept="liA8E" id="6jpO12EgEP5" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$ImportRuleContext.visibilityIndicator()" resolve="visibilityIndicator" />
-                    </node>
-                  </node>
-                  <node concept="liA8E" id="6jpO12EgEP6" role="2OqNvi">
-                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$VisibilityIndicatorContext.PRIVATE()" resolve="PRIVATE" />
-                  </node>
-                </node>
-                <node concept="10Nm6u" id="6jpO12EgEP7" role="3uHU7w" />
-              </node>
-              <node concept="3clFbS" id="6jpO12EgEP8" role="3clFbx">
-                <node concept="3clFbF" id="6jpO12EgEP9" role="3cqZAp">
-                  <node concept="2OqwBi" id="6jpO12EgEPb" role="3clFbG">
-                    <node concept="2OqwBi" id="6jpO12EgEPe" role="2Oq$k0">
-                      <node concept="37vLTw" id="6jpO12EgEPh" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3PUPjB2v7eI" resolve="imp" />
-                      </node>
-                      <node concept="3TrcHB" id="6jpO12EgEPi" role="2OqNvi">
-                        <ref role="3TsBF5" to="5rf1:6jpO12DyoSZ" resolve="visibility" />
-                      </node>
-                    </node>
-                    <node concept="tyxLq" id="6jpO12EgEPj" role="2OqNvi">
-                      <node concept="21nZrQ" id="6jpO12EgEPl" role="tz02z">
-                        <ref role="21nZrZ" to="5rf1:6jpO12DyoSe" resolve="private" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="3clFbJ" id="6jpO12EgEPm" role="9aQIa">
-                <node concept="3y3z36" id="6jpO12EgEPp" role="3clFbw">
-                  <node concept="2OqwBi" id="6jpO12EgEPs" role="3uHU7B">
-                    <node concept="2OqwBi" id="6jpO12EgEPv" role="2Oq$k0">
-                      <node concept="37vLTw" id="6jpO12EgEPy" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3PUPjB2v7dN" resolve="ctx" />
-                      </node>
-                      <node concept="liA8E" id="6jpO12EgEPz" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$ImportRuleContext.visibilityIndicator()" resolve="visibilityIndicator" />
-                      </node>
-                    </node>
-                    <node concept="liA8E" id="6jpO12EgEP$" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$VisibilityIndicatorContext.PROTECTED()" resolve="PROTECTED" />
-                    </node>
-                  </node>
-                  <node concept="10Nm6u" id="6jpO12EgEP_" role="3uHU7w" />
-                </node>
-                <node concept="3clFbS" id="6jpO12EgEPA" role="3clFbx">
-                  <node concept="3clFbF" id="6jpO12EgEPB" role="3cqZAp">
-                    <node concept="2OqwBi" id="6jpO12EgEPD" role="3clFbG">
-                      <node concept="2OqwBi" id="6jpO12EgEPG" role="2Oq$k0">
-                        <node concept="37vLTw" id="6jpO12EgEPJ" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3PUPjB2v7eI" resolve="imp" />
-                        </node>
-                        <node concept="3TrcHB" id="6jpO12EgEPK" role="2OqNvi">
-                          <ref role="3TsBF5" to="5rf1:6jpO12DyoSZ" resolve="visibility" />
-                        </node>
-                      </node>
-                      <node concept="tyxLq" id="6jpO12EgEPL" role="2OqNvi">
-                        <node concept="21nZrQ" id="6jpO12EgEPN" role="tz02z">
-                          <ref role="21nZrZ" to="5rf1:6jpO12DyoSf" resolve="protected" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbF" id="6jpO12EgEPO" role="9aQIa">
-                  <node concept="2OqwBi" id="6jpO12EgEPQ" role="3clFbG">
-                    <node concept="2OqwBi" id="6jpO12EgEPT" role="2Oq$k0">
-                      <node concept="37vLTw" id="6jpO12EgEPW" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3PUPjB2v7eI" resolve="imp" />
-                      </node>
-                      <node concept="3TrcHB" id="6jpO12EgEPX" role="2OqNvi">
-                        <ref role="3TsBF5" to="5rf1:6jpO12DyoSZ" resolve="visibility" />
-                      </node>
-                    </node>
-                    <node concept="tyxLq" id="6jpO12EgEPY" role="2OqNvi">
-                      <node concept="21nZrQ" id="6jpO12EgEQ0" role="tz02z">
-                        <ref role="21nZrZ" to="5rf1:6jpO12DyoSd" resolve="public" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
               </node>
             </node>
           </node>
@@ -20002,21 +19918,16 @@
         </node>
       </node>
       <node concept="37vLTG" id="3VmcprQXiPU" role="3clF46">
-        <property role="TrG5h" value="memberPrefix" />
-        <node concept="3uibUv" id="3VmcprQXiPW" role="1tU5fm">
-          <ref role="3uigEE" to="guqe:~SysMLv2Parser$MemberPrefixContext" resolve="SysMLv2Parser.MemberPrefixContext" />
+        <property role="TrG5h" value="indicator" />
+        <node concept="3uibUv" id="fNDJb3A__m" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$VisibilityIndicatorContext" resolve="SysMLv2Parser.VisibilityIndicatorContext" />
         </node>
       </node>
       <node concept="3clFbS" id="3VmcprQXiPX" role="3clF47">
         <node concept="3clFbJ" id="3VmcprQXiPY" role="3cqZAp">
           <node concept="3y3z36" id="3VmcprQXiQ1" role="3clFbw">
-            <node concept="2OqwBi" id="3VmcprQXiQ4" role="3uHU7B">
-              <node concept="37vLTw" id="3VmcprQXiQ7" role="2Oq$k0">
-                <ref role="3cqZAo" node="3VmcprQXiPU" resolve="memberPrefix" />
-              </node>
-              <node concept="liA8E" id="3VmcprQXiQ8" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
-              </node>
+            <node concept="37vLTw" id="fNDJb3A__$" role="3uHU7B">
+              <ref role="3cqZAo" node="3VmcprQXiPU" resolve="indicator" />
             </node>
             <node concept="10Nm6u" id="3VmcprQXiQ9" role="3uHU7w" />
           </node>
@@ -20024,13 +19935,8 @@
             <node concept="3clFbJ" id="3VmcprQXiQb" role="3cqZAp">
               <node concept="3y3z36" id="3VmcprQXiQe" role="3clFbw">
                 <node concept="2OqwBi" id="3VmcprQXiQh" role="3uHU7B">
-                  <node concept="2OqwBi" id="3VmcprQXiQk" role="2Oq$k0">
-                    <node concept="37vLTw" id="3VmcprQXiQn" role="2Oq$k0">
-                      <ref role="3cqZAo" node="3VmcprQXiPU" resolve="memberPrefix" />
-                    </node>
-                    <node concept="liA8E" id="3VmcprQXiQo" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
-                    </node>
+                  <node concept="37vLTw" id="fNDJb3A__M" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3VmcprQXiPU" resolve="indicator" />
                   </node>
                   <node concept="liA8E" id="3VmcprQXiQp" role="2OqNvi">
                     <ref role="37wK5l" to="guqe:~SysMLv2Parser$VisibilityIndicatorContext.PRIVATE()" resolve="PRIVATE" />
@@ -20041,13 +19947,8 @@
               <node concept="3clFbJ" id="3VmcprQXiQr" role="9aQIa">
                 <node concept="3y3z36" id="3VmcprQXiQu" role="3clFbw">
                   <node concept="2OqwBi" id="3VmcprQXiQx" role="3uHU7B">
-                    <node concept="2OqwBi" id="3VmcprQXiQ$" role="2Oq$k0">
-                      <node concept="37vLTw" id="3VmcprQXiQB" role="2Oq$k0">
-                        <ref role="3cqZAo" node="3VmcprQXiPU" resolve="memberPrefix" />
-                      </node>
-                      <node concept="liA8E" id="3VmcprQXiQC" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
-                      </node>
+                    <node concept="37vLTw" id="fNDJb3A__N" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3VmcprQXiPU" resolve="indicator" />
                     </node>
                     <node concept="liA8E" id="3VmcprQXiQD" role="2OqNvi">
                       <ref role="37wK5l" to="guqe:~SysMLv2Parser$VisibilityIndicatorContext.PROTECTED()" resolve="PROTECTED" />
