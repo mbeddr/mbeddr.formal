@@ -32,6 +32,7 @@
         <child id="717440187291777390" name="source" index="2uUmly" />
         <child id="717440187291777391" name="target" index="2uUmlz" />
       </concept>
+      <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH" />
       <concept id="4376090928929871183" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartLikeUsage" flags="ng" index="2n5AFc">
         <child id="8930763252716192330" name="content" index="8GFem" />
       </concept>
@@ -210,12 +211,12 @@
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="2uUmlD" id="fNDJb5ewrc" role="2uUmly">
           <node concept="3wdj9f" id="fNDJb5ewre" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb5ewr5" />
+            <ref role="3wdj98" node="fNDJb5ewr5" resolve="engine" />
           </node>
         </node>
         <node concept="2uUmlD" id="fNDJb5ewrf" role="2uUmlz">
           <node concept="3wdj9f" id="fNDJb5ewrh" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb5ewr6" />
+            <ref role="3wdj98" node="fNDJb5ewr6" resolve="gearbox" />
           </node>
         </node>
       </node>
@@ -232,12 +233,12 @@
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="2uUmlD" id="fNDJb5ewrp" role="2uUmly">
           <node concept="3wdj9f" id="fNDJb5ewrr" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb5ewri" />
+            <ref role="3wdj98" node="fNDJb5ewri" resolve="fuelIn" />
           </node>
         </node>
         <node concept="2uUmlD" id="fNDJb5ewrs" role="2uUmlz">
           <node concept="3wdj9f" id="fNDJb5ewru" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb5ewrj" />
+            <ref role="3wdj98" node="fNDJb5ewrj" resolve="fuelOut" />
           </node>
         </node>
       </node>
@@ -249,7 +250,21 @@
         <property role="TrG5h" value="safety" />
         <property role="3815tZ" value="5BCNI_HG6H4/protected" />
         <node concept="3w00Zy" id="fNDJb5ewvP" role="3w00ZT">
-          <ref role="3w00ZU" node="fNDJb5ewuM" />
+          <ref role="3w00ZU" node="fNDJb5ewuM" resolve="Safety" />
+        </node>
+      </node>
+      <node concept="2hSLRH" id="fNDJb5iQQS" role="3w00ZY">
+        <property role="TrG5h" value="fuelFlow" />
+        <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+        <node concept="2uUmlD" id="fNDJb5iQQX" role="2uUmly">
+          <node concept="3wdj9f" id="fNDJb5iQQZ" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb5ewrj" resolve="fuelOut" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="fNDJb5iQR0" role="2uUmlz">
+          <node concept="3wdj9f" id="fNDJb5iQR2" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb5ewri" resolve="fuelIn" />
+          </node>
         </node>
       </node>
     </node>
