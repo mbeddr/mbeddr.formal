@@ -14733,7 +14733,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="fNDJb1_qqW" role="1SL9yI">
-      <property role="TrG5h" value="testPrivatePartUsageRejected" />
+      <property role="TrG5h" value="testPackageLevelBindingRejected" />
       <node concept="3cqZAl" id="fNDJb1_qqZ" role="3clF45" />
       <node concept="3clFbS" id="fNDJb1_qr0" role="3clF47">
         <node concept="3J1_TO" id="fNDJb1_qr1" role="3cqZAp">
@@ -14745,10 +14745,10 @@
                   <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
                   <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
                   <node concept="Xl_RD" id="fNDJb1_qra" role="37wK5m">
-                    <property role="Xl_RC" value="package P { private part p; }" />
+                    <property role="Xl_RC" value="package P { bind a = b; }" />
                   </node>
                   <node concept="Xl_RD" id="fNDJb1_qrb" role="37wK5m">
-                    <property role="Xl_RC" value="PrivatePartUsage" />
+                    <property role="Xl_RC" value="PackageLevelBinding" />
                   </node>
                   <node concept="1jxXqW" id="fNDJb1_qrc" role="37wK5m" />
                 </node>
@@ -14758,7 +14758,7 @@
             <node concept="3xETmq" id="fNDJb1_qre" role="3cqZAp">
               <node concept="3_1$Yv" id="fNDJb1_qrf" role="3_9lra">
                 <node concept="Xl_RD" id="fNDJb1_qrg" role="3_1BAH">
-                  <property role="Xl_RC" value="PrivatePartUsage expected rejection" />
+                  <property role="Xl_RC" value="PackageLevelBinding expected rejection" />
                 </node>
               </node>
             </node>
@@ -14785,7 +14785,7 @@
             <node concept="3clFbS" id="fNDJb1_qrv" role="1zc67A">
               <node concept="3vlDli" id="fNDJb1_qrw" role="3cqZAp">
                 <node concept="Xl_RD" id="fNDJb1_qrz" role="3tpDZB">
-                  <property role="Xl_RC" value="Unsupported SysML v2 construct: visibility prefix on usage" />
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: usage kind at package level" />
                 </node>
                 <node concept="2OqwBi" id="fNDJb1_qr$" role="3tpDZA">
                   <node concept="37vLTw" id="fNDJb1_qrB" role="2Oq$k0">
@@ -16393,6 +16393,112 @@
           </node>
           <node concept="37vLTw" id="fNDJb5ri7Y" role="3tpDZA">
             <ref role="3cqZAo" node="fNDJb5ri7N" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="fNDJb5UdPF">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_070_PackageLevelUsagesRoundtripTest" />
+    <node concept="1LZb2c" id="fNDJb5UdPT" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripPackageLevelUsages" />
+      <node concept="3cqZAl" id="fNDJb5UdPW" role="3clF45" />
+      <node concept="3clFbS" id="fNDJb5UdPX" role="3clF47">
+        <node concept="3cpWs8" id="fNDJb5UdPY" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJb5UdQ1" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="fNDJb5UdQ3" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="fNDJb5UdQ4" role="3cqZAp">
+          <node concept="37vLTI" id="fNDJb5UdQ6" role="3clFbG">
+            <node concept="37vLTw" id="fNDJb5UdQ9" role="37vLTJ">
+              <ref role="3cqZAo" node="fNDJb5UdQ1" />
+            </node>
+            <node concept="Xl_RD" id="fNDJb5UdQa" role="37vLTx">
+              <property role="Xl_RC" value="package P {&#10;  part car;&#10;  part def Wheel {&#10;  }&#10;  private attribute mass;&#10;  port hub;&#10;  abstract item fuel;&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="fNDJb5UdQb" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJb5UdQe" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="fNDJb5UdQg" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="fNDJb5UdQh" role="37wK5m">
+                <ref role="3cqZAo" node="fNDJb5UdQ1" />
+              </node>
+              <node concept="Xl_RD" id="fNDJb5UdQi" role="37wK5m">
+                <property role="Xl_RC" value="PartDefFile" />
+              </node>
+              <node concept="1jxXqW" id="fNDJb5UdQj" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="fNDJb5UdQk" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="fNDJb5UdQl" role="3cqZAp">
+          <node concept="37vLTw" id="fNDJb5UdQo" role="3tpDZB">
+            <ref role="3cqZAo" node="fNDJb5UdQ1" />
+          </node>
+          <node concept="37vLTw" id="fNDJb5UdQp" role="3tpDZA">
+            <ref role="3cqZAo" node="fNDJb5UdQe" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="fNDJb5UdQD" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripFileLevelUsage" />
+      <node concept="3cqZAl" id="fNDJb5UdQG" role="3clF45" />
+      <node concept="3clFbS" id="fNDJb5UdQH" role="3clF47">
+        <node concept="3cpWs8" id="fNDJb5UdQI" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJb5UdQL" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="fNDJb5UdQN" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="fNDJb5UdQO" role="3cqZAp">
+          <node concept="37vLTI" id="fNDJb5UdQQ" role="3clFbG">
+            <node concept="37vLTw" id="fNDJb5UdQT" role="37vLTJ">
+              <ref role="3cqZAo" node="fNDJb5UdQL" />
+            </node>
+            <node concept="Xl_RD" id="fNDJb5UdQU" role="37vLTx">
+              <property role="Xl_RC" value="item def I {&#10;}&#10;attribute def A {&#10;}&#10;item i : I;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="fNDJb5UdQV" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJb5UdQY" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="fNDJb5UdR0" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="fNDJb5UdR1" role="37wK5m">
+                <ref role="3cqZAo" node="fNDJb5UdQL" />
+              </node>
+              <node concept="Xl_RD" id="fNDJb5UdR2" role="37wK5m">
+                <property role="Xl_RC" value="PartDefFile" />
+              </node>
+              <node concept="1jxXqW" id="fNDJb5UdR3" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="fNDJb5UdR4" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="fNDJb5UdR5" role="3cqZAp">
+          <node concept="37vLTw" id="fNDJb5UdR8" role="3tpDZB">
+            <ref role="3cqZAo" node="fNDJb5UdQL" />
+          </node>
+          <node concept="37vLTw" id="fNDJb5UdR9" role="3tpDZA">
+            <ref role="3cqZAo" node="fNDJb5UdQY" />
           </node>
         </node>
       </node>
