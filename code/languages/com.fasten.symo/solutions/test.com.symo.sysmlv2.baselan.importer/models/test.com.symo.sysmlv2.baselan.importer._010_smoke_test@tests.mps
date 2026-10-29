@@ -18032,6 +18032,108 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="fNDJbaa9vP" role="1SL9yI">
+      <property role="TrG5h" value="testNamedConnectorAndInterfaceEnds" />
+      <node concept="3cqZAl" id="fNDJbaa9vS" role="3clF45" />
+      <node concept="3clFbS" id="fNDJbaa9vT" role="3clF47">
+        <node concept="3cpWs8" id="fNDJbaa9vU" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJbaa9vX" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="fNDJbaa9vZ" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="fNDJbaa9w0" role="3cqZAp">
+          <node concept="37vLTI" id="fNDJbaa9w2" role="3clFbG">
+            <node concept="37vLTw" id="fNDJbaa9w5" role="37vLTJ">
+              <ref role="3cqZAo" node="fNDJbaa9vX" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="fNDJbaa9w6" role="37vLTx">
+              <property role="Xl_RC" value="package P {&#10;  part def V {&#10;    part transmission : Transmission;&#10;    part axle : Axle;&#10;    connection driveLink : DriveLink connect source ::&gt; transmission.drive to axle.input;&#10;    interface link : DataLink connect s ::&gt; transmission.drive to t ::&gt; axle.input;&#10;    bind x ::&gt; transmission.drive = axle.input;&#10;  }&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="fNDJbaa9w7" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJbaa9wa" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="fNDJbaa9wc" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="fNDJbaa9wd" role="37wK5m">
+                <ref role="3cqZAo" node="fNDJbaa9vX" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="fNDJbaa9we" role="37wK5m">
+                <property role="Xl_RC" value="NamedEnds" />
+              </node>
+              <node concept="1jxXqW" id="fNDJbaa9wf" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="fNDJbaa9wg" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="fNDJbaa9wh" role="3cqZAp">
+          <node concept="Xl_RD" id="fNDJbaa9wk" role="3tpDZB">
+            <property role="Xl_RC" value="package P {&#10;  part def V {&#10;    part transmission : Transmission;&#10;    part axle : Axle;&#10;    connection driveLink : DriveLink connect source ::&gt; transmission.drive to axle.input;&#10;    interface link : DataLink connect s ::&gt; transmission.drive to t ::&gt; axle.input;&#10;    bind x ::&gt; transmission.drive = axle.input;&#10;  }&#10;}&#10;" />
+          </node>
+          <node concept="37vLTw" id="fNDJbaa9wl" role="3tpDZA">
+            <ref role="3cqZAo" node="fNDJbaa9wa" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="fNDJbaa9wo" role="1SL9yI">
+      <property role="TrG5h" value="testReferencesKeywordOnConnectorEnd" />
+      <node concept="3cqZAl" id="fNDJbaa9wr" role="3clF45" />
+      <node concept="3clFbS" id="fNDJbaa9ws" role="3clF47">
+        <node concept="3cpWs8" id="fNDJbaa9wt" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJbaa9ww" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="fNDJbaa9wy" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="fNDJbaa9wz" role="3cqZAp">
+          <node concept="37vLTI" id="fNDJbaa9w_" role="3clFbG">
+            <node concept="37vLTw" id="fNDJbaa9wC" role="37vLTJ">
+              <ref role="3cqZAo" node="fNDJbaa9ww" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="fNDJbaa9wD" role="37vLTx">
+              <property role="Xl_RC" value="package P {&#10;  part def V {&#10;    connection c : L connect a references x.y to b;&#10;  }&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="fNDJbaa9wE" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJbaa9wH" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="fNDJbaa9wJ" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="fNDJbaa9wK" role="37wK5m">
+                <ref role="3cqZAo" node="fNDJbaa9ww" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="fNDJbaa9wL" role="37wK5m">
+                <property role="Xl_RC" value="ReferencesEnd" />
+              </node>
+              <node concept="1jxXqW" id="fNDJbaa9wM" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="fNDJbaa9wN" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="fNDJbaa9wO" role="3cqZAp">
+          <node concept="Xl_RD" id="fNDJbaa9wR" role="3tpDZB">
+            <property role="Xl_RC" value="package P {&#10;  part def V {&#10;    connection c : L connect a ::&gt; x.y to b;&#10;  }&#10;}&#10;" />
+          </node>
+          <node concept="37vLTw" id="fNDJbaa9wS" role="3tpDZA">
+            <ref role="3cqZAo" node="fNDJbaa9wH" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
