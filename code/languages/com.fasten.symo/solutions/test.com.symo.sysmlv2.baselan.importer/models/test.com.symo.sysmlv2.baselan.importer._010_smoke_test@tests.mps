@@ -14733,7 +14733,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="fNDJb1_qqW" role="1SL9yI">
-      <property role="TrG5h" value="testPackageLevelBindingRejected" />
+      <property role="TrG5h" value="testPackageLevelBehaviorUsageRejected" />
       <node concept="3cqZAl" id="fNDJb1_qqZ" role="3clF45" />
       <node concept="3clFbS" id="fNDJb1_qr0" role="3clF47">
         <node concept="3J1_TO" id="fNDJb1_qr1" role="3cqZAp">
@@ -14745,10 +14745,10 @@
                   <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
                   <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
                   <node concept="Xl_RD" id="fNDJb1_qra" role="37wK5m">
-                    <property role="Xl_RC" value="package P { bind a = b; }" />
+                    <property role="Xl_RC" value="package P { action a; }" />
                   </node>
                   <node concept="Xl_RD" id="fNDJb1_qrb" role="37wK5m">
-                    <property role="Xl_RC" value="PackageLevelBinding" />
+                    <property role="Xl_RC" value="PackageLevelBehaviorUsage" />
                   </node>
                   <node concept="1jxXqW" id="fNDJb1_qrc" role="37wK5m" />
                 </node>
@@ -14758,7 +14758,7 @@
             <node concept="3xETmq" id="fNDJb1_qre" role="3cqZAp">
               <node concept="3_1$Yv" id="fNDJb1_qrf" role="3_9lra">
                 <node concept="Xl_RD" id="fNDJb1_qrg" role="3_1BAH">
-                  <property role="Xl_RC" value="PackageLevelBinding expected rejection" />
+                  <property role="Xl_RC" value="PackageLevelBehaviorUsage expected rejection" />
                 </node>
               </node>
             </node>
@@ -14785,7 +14785,7 @@
             <node concept="3clFbS" id="fNDJb1_qrv" role="1zc67A">
               <node concept="3vlDli" id="fNDJb1_qrw" role="3cqZAp">
                 <node concept="Xl_RD" id="fNDJb1_qrz" role="3tpDZB">
-                  <property role="Xl_RC" value="Unsupported SysML v2 construct: usage kind at package level" />
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: behavior usage element" />
                 </node>
                 <node concept="2OqwBi" id="fNDJb1_qr$" role="3tpDZA">
                   <node concept="37vLTw" id="fNDJb1_qrB" role="2Oq$k0">
@@ -16499,6 +16499,108 @@
           </node>
           <node concept="37vLTw" id="fNDJb5UdR9" role="3tpDZA">
             <ref role="3cqZAo" node="fNDJb5UdQY" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="fNDJb62frY" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripConnectorUsagesInPackage" />
+      <node concept="3cqZAl" id="fNDJb62fs1" role="3clF45" />
+      <node concept="3clFbS" id="fNDJb62fs2" role="3clF47">
+        <node concept="3cpWs8" id="fNDJb62fs3" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJb62fs6" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="fNDJb62fs8" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="fNDJb62fs9" role="3cqZAp">
+          <node concept="37vLTI" id="fNDJb62fsb" role="3clFbG">
+            <node concept="37vLTw" id="fNDJb62fse" role="37vLTJ">
+              <ref role="3cqZAo" node="fNDJb62fs6" />
+            </node>
+            <node concept="Xl_RD" id="fNDJb62fsf" role="37vLTx">
+              <property role="Xl_RC" value="package P {&#10;  part a;&#10;  part b;&#10;  connect a to b;&#10;  bind a = b;&#10;  flow from a to b;&#10;  interface i connect a to b;&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="fNDJb62fsg" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJb62fsj" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="fNDJb62fsl" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="fNDJb62fsm" role="37wK5m">
+                <ref role="3cqZAo" node="fNDJb62fs6" />
+              </node>
+              <node concept="Xl_RD" id="fNDJb62fsn" role="37wK5m">
+                <property role="Xl_RC" value="ConnectorPackage" />
+              </node>
+              <node concept="1jxXqW" id="fNDJb62fso" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="fNDJb62fsp" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="fNDJb62fsq" role="3cqZAp">
+          <node concept="37vLTw" id="fNDJb62fst" role="3tpDZB">
+            <ref role="3cqZAo" node="fNDJb62fs6" />
+          </node>
+          <node concept="37vLTw" id="fNDJb62fsu" role="3tpDZA">
+            <ref role="3cqZAo" node="fNDJb62fsj" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="fNDJb63Gfq" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripFileLevelConnectorUsages" />
+      <node concept="3cqZAl" id="fNDJb63Gft" role="3clF45" />
+      <node concept="3clFbS" id="fNDJb63Gfu" role="3clF47">
+        <node concept="3cpWs8" id="fNDJb63Gfv" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJb63Gfy" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="fNDJb63Gf$" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="fNDJb63Gf_" role="3cqZAp">
+          <node concept="37vLTI" id="fNDJb63GfB" role="3clFbG">
+            <node concept="37vLTw" id="fNDJb63GfE" role="37vLTJ">
+              <ref role="3cqZAo" node="fNDJb63Gfy" />
+            </node>
+            <node concept="Xl_RD" id="fNDJb63GfF" role="37vLTx">
+              <property role="Xl_RC" value="part a;&#10;part b;&#10;port p;&#10;port q;&#10;connect a to b;&#10;bind a = b;&#10;flow from a to b;&#10;interface i connect p to q;&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="fNDJb63GfG" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJb63GfJ" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="fNDJb63GfL" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="fNDJb63GfM" role="37wK5m">
+                <ref role="3cqZAo" node="fNDJb63Gfy" />
+              </node>
+              <node concept="Xl_RD" id="fNDJb63GfN" role="37wK5m">
+                <property role="Xl_RC" value="ConnectorFile" />
+              </node>
+              <node concept="1jxXqW" id="fNDJb63GfO" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="fNDJb63GfP" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="fNDJb63GfQ" role="3cqZAp">
+          <node concept="37vLTw" id="fNDJb63GfT" role="3tpDZB">
+            <ref role="3cqZAo" node="fNDJb63Gfy" />
+          </node>
+          <node concept="37vLTw" id="fNDJb63GfU" role="3tpDZA">
+            <ref role="3cqZAo" node="fNDJb63GfJ" />
           </node>
         </node>
       </node>
