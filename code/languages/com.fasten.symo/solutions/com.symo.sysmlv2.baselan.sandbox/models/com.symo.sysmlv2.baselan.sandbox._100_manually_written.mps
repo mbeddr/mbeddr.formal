@@ -8,6 +8,7 @@
   <registry>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
       <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
+        <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
         <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
       </concept>
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
@@ -45,6 +46,14 @@
       <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE">
         <property id="717440187291777388" name="withKeyword" index="2uUmlw" />
       </concept>
+      <concept id="284754763101489698" name="com.symo.sysmlv2.baselan.structure.SysMLv2DefinitionRef" flags="ng" index="35c6Ng">
+        <property id="284754763101489700" name="definitionName" index="35c6Nm" />
+        <reference id="284754763101489701" name="definition" index="35c6Nn" />
+      </concept>
+      <concept id="284754763101489699" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReferenceUsage" flags="ng" index="35c6Nh">
+        <child id="284754763101489703" name="type" index="35c6Nl" />
+        <child id="284754763101489705" name="direction" index="35c6Nr" />
+      </concept>
       <concept id="4527860999823451880" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Member" flags="ngI" index="3815tY">
         <property id="4527860999823451881" name="visibility" index="3815tZ" />
       </concept>
@@ -52,6 +61,7 @@
         <property id="7267068243734581640" name="isAbstract" index="3eyS6o" />
       </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
+        <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
@@ -63,15 +73,21 @@
         <child id="7140692429574298128" name="content" index="3w00ZY" />
       </concept>
       <concept id="7140692429575677856" name="com.symo.sysmlv2.baselan.structure.SysMLv2Usage" flags="ng" index="3wdj9e">
+        <property id="284754763101489729" name="isReference" index="35c6MN" />
         <child id="7140692429575677858" name="subsets" index="3wdj9c" />
         <child id="7140692429575677859" name="redefines" index="3wdj9d" />
       </concept>
       <concept id="7140692429575677857" name="com.symo.sysmlv2.baselan.structure.SysMLv2UsageRef" flags="ng" index="3wdj9f">
         <reference id="7140692429575677862" name="usage" index="3wdj98" />
       </concept>
-      <concept id="7140692429570900090" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureDirection" flags="ng" index="3xZtmk" />
+      <concept id="7140692429570900090" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureDirection" flags="ng" index="3xZtmk">
+        <property id="7140692429570900105" name="kind" index="3xZtlB" />
+      </concept>
       <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
         <child id="7140692429570900099" name="direction" index="3xZtlH" />
+      </concept>
+      <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
+        <child id="7140692429570900093" name="content" index="3xZtmj" />
       </concept>
       <concept id="6214786105868823569" name="com.symo.sysmlv2.baselan.structure.SysMLv2Comment" flags="ng" index="1_pRso">
         <property id="6214786105868823573" name="body" index="1_pRss" />
@@ -489,6 +505,82 @@
       </node>
       <node concept="3wdj9f" id="fNDJb63XkB" role="3wdj9c">
         <ref role="3wdj98" node="fNDJb5UJPo" />
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="fNDJb7F_td">
+    <property role="TrG5h" value="_040_reference_usages" />
+    <node concept="3Z9vzX" id="fNDJb7F_te" role="2h0jOs">
+      <property role="TrG5h" value="Drivetrain" />
+      <node concept="8EhVW" id="fNDJb7F_tf" role="3Z9vGx">
+        <property role="TrG5h" value="Torque" />
+      </node>
+      <node concept="3ZUotO" id="fNDJb7F_tg" role="3Z9vGx">
+        <property role="TrG5h" value="Engine" />
+      </node>
+      <node concept="3ZUotO" id="fNDJb7F_th" role="3Z9vGx">
+        <property role="TrG5h" value="Wheel" />
+      </node>
+      <node concept="3w00Z_" id="fNDJb7F_ti" role="3Z9vGx">
+        <property role="TrG5h" value="Fuel" />
+      </node>
+      <node concept="3xZtmp" id="fNDJb7F_tj" role="3Z9vGx">
+        <property role="TrG5h" value="DrivePort" />
+        <node concept="35c6Nh" id="fNDJb7F_tk" role="3xZtmj">
+          <property role="TrG5h" value="torque" />
+          <node concept="3xZtmk" id="fNDJb7F_tl" role="35c6Nr" />
+          <node concept="35c6Ng" id="fNDJb7F_tm" role="35c6Nl">
+            <property role="35c6Nm" value="Torque" />
+            <ref role="35c6Nn" node="fNDJb7F_tf" resolve="Torque" />
+          </node>
+        </node>
+        <node concept="35c6Nh" id="fNDJb7F_tn" role="3xZtmj">
+          <property role="TrG5h" value="speed" />
+          <node concept="3xZtmk" id="fNDJb7F_to" role="35c6Nr">
+            <property role="3xZtlB" value="3th7jSwWnJl/out" />
+          </node>
+          <node concept="35c6Ng" id="fNDJb7F_tp" role="35c6Nl">
+            <property role="35c6Nm" value="Torque" />
+            <ref role="35c6Nn" node="fNDJb7F_tf" resolve="Torque" />
+          </node>
+        </node>
+      </node>
+      <node concept="3ZUotO" id="fNDJb7F_tq" role="3Z9vGx">
+        <property role="TrG5h" value="Vehicle" />
+        <node concept="8GF0z" id="fNDJb7F_tr" role="3w00ZY">
+          <property role="TrG5h" value="engine" />
+          <property role="35c6MN" value="true" />
+          <node concept="8CKM2" id="fNDJb7F_ts" role="3w00ZT">
+            <property role="8CKM3" value="Engine" />
+            <ref role="8CKMW" node="fNDJb7F_tg" resolve="Engine" />
+          </node>
+        </node>
+        <node concept="35c6Nh" id="fNDJb7F_tt" role="3w00ZY">
+          <property role="TrG5h" value="wheel" />
+          <node concept="35c6Ng" id="fNDJb7F_tu" role="35c6Nl">
+            <property role="35c6Nm" value="Wheel" />
+            <ref role="35c6Nn" node="fNDJb7F_th" resolve="Wheel" />
+          </node>
+        </node>
+        <node concept="3w00Zz" id="fNDJb7F_tv" role="3w00ZY">
+          <property role="TrG5h" value="tank" />
+          <property role="35c6MN" value="true" />
+          <node concept="3w00Zy" id="fNDJb7F_tw" role="3w00ZT">
+            <property role="3w00ZX" value="Fuel" />
+            <ref role="3w00ZU" node="fNDJb7F_ti" resolve="Fuel" />
+          </node>
+        </node>
+      </node>
+      <node concept="3w00Z_" id="fNDJb7F_tx" role="3Z9vGx">
+        <property role="TrG5h" value="Container" />
+        <node concept="3w00Zz" id="fNDJb7F_ty" role="3w00ZY">
+          <property role="TrG5h" value="content" />
+          <property role="35c6MN" value="true" />
+          <node concept="3w00Zy" id="fNDJb7F_tz" role="3w00ZT">
+            <property role="3w00ZX" value="Fuel" />
+            <ref role="3w00ZU" node="fNDJb7F_ti" resolve="Fuel" />
+          </node>
+        </node>
       </node>
     </node>
   </node>
