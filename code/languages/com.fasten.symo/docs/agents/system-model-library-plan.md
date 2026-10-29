@@ -315,6 +315,15 @@ and a connection, binding, flow and interface usage between them, and the same s
 Root check shows no problems. Verification: full run 386 tests, only the two known plantuml failures. Not run: a mutation check removing the interface from flow usage
 (the round trip fails if flow were rejected, but that was not demonstrated by removal); scoping of `subsets`/`redefines`/`type` at package level is step 3.
 
+### Iteration 020 step 3 result (2026-10-29, awaiting acceptance)
+
+Typed, subsetting and redefining usages directly in a package body or at file level. The importer needed no change (the step 1 guard already admits them). One real gap
+turned up: `ICanBelongOnlyToSysMLv2PartOwner.canBeChild` rejected a part usage nested in a part usage (`part vehicleC1 : Vehicle { part frontWheel :> narrowWheel; }`), so `SysMLv2PartUsage` is now an allowed parent.
+Tests: `testRoundtripTypedAndSpecializedUsagesInPackage` in `_070` (typed parts, `:>` subsetting with multiplicity, nested anonymous `:>>` redefinition, typed port). Sandbox `_030_package_level_usages`:
+`narrowWheel`, `wideWheel` (subsets), `vehicleC1` with nested `axleAssembly`, `vehicleC2` (subsets `vehicleC1`, redefines `axleAssembly`), and file-level `spareAxle` (typed, subsets `spare`); root check clean.
+**Scope test found a real bug.** New `_100_PackageLevelUsageScope` in `test.com.symo.sysmlv2.baselan._010_scopes@tests` (two `ScopesTest` annotations: `subsets` on a package-level usage, `redefines` in a nested part typed by a definition). Both initially showed an *empty* scope: `SysMLv2Usage.getScope` and `SysMLv2ItemUsage.getScope` returned an empty scope whenever the owner was not an `ISysMLv2FeatureOwner` (package, file). Fix: the fallback now delegates to `Scope.getScope(this.parent, this, kind)`, i.e. the namespace scope. Result: `subsets` at package level sees `narrowWheel`, `vehicleC1`, `vehicleC2` (not the nested `axleAssembly`, not itself after the follow-up). Two follow-up fixes (same scope test, exact-set semantics): the namespace default `candidateMembers(child)` now omits `child` when `child` is a usage, so `wideWheel :> wideWheel` is no longer offered (definitions still see themselves, e.g. `part def A { part x : A }`); `SysMLv2ItemUsage.directSuperDefinitions` now returns the type *and* the targets of `subsets`, so in `part vehicleC2 : Chassis :> vehicleC1 { part :>> … }` the `redefines` scope offers `chassisAxle` and `axleAssembly`. Re-run after both: full run 390 tests, only the two known plantuml failures. Not run: a mutation check of the `canBeChild` change.
+No live probe of `VehicleUsages.sysml` was done in this step.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations

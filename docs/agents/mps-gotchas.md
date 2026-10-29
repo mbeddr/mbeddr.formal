@@ -12,6 +12,12 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## The model checker does not flag out-of-scope references; a round trip cannot prove scoping either (2026-10-29)
+
+`check_root_node_problems` reports no error when a usage reference (`subsets`/`redefines`) points at a node outside the scope function's result, and a textgen round trip prints
+names, so a wrong scope stays invisible. Prove scoping with a `ScopesTest`/`ScopesExpectedNode` test or by asserting the resolved target in a test method. Separately, textgen prints
+`subsets` as `:>` and `redefines` as `:>>`, so round-trip expected text must use the symbols, not the keywords.
+
 ## A language MAKE does not regenerate the importer solution; make `com.symo.sysmlv2.baselan.importer.main` itself (2026-10-28)
 
 After editing the importer model, `SysMLv2ImporterVisitor.java` under `source_gen` stayed old and a test failed on the missing behavior. A MAKE of the
