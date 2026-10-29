@@ -16346,6 +16346,57 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="fNDJb5ri7u" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripPrivateBindingUsageInBody" />
+      <node concept="3cqZAl" id="fNDJb5ri7x" role="3clF45" />
+      <node concept="3clFbS" id="fNDJb5ri7y" role="3clF47">
+        <node concept="3cpWs8" id="fNDJb5ri7z" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJb5ri7A" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="fNDJb5ri7C" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="fNDJb5ri7D" role="3cqZAp">
+          <node concept="37vLTI" id="fNDJb5ri7F" role="3clFbG">
+            <node concept="37vLTw" id="fNDJb5ri7I" role="37vLTJ">
+              <ref role="3cqZAo" node="fNDJb5ri7A" />
+            </node>
+            <node concept="Xl_RD" id="fNDJb5ri7J" role="37vLTx">
+              <property role="Xl_RC" value="part def Car {&#10;  part tank;&#10;  part engine;&#10;  private bind tank = engine;&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="fNDJb5ri7K" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJb5ri7N" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="fNDJb5ri7P" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="fNDJb5ri7Q" role="37wK5m">
+                <ref role="3cqZAo" node="fNDJb5ri7A" />
+              </node>
+              <node concept="Xl_RD" id="fNDJb5ri7R" role="37wK5m">
+                <property role="Xl_RC" value="PartDefFile" />
+              </node>
+              <node concept="1jxXqW" id="fNDJb5ri7S" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="fNDJb5ri7T" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="fNDJb5ri7U" role="3cqZAp">
+          <node concept="37vLTw" id="fNDJb5ri7X" role="3tpDZB">
+            <ref role="3cqZAo" node="fNDJb5ri7A" />
+          </node>
+          <node concept="37vLTw" id="fNDJb5ri7Y" role="3tpDZA">
+            <ref role="3cqZAo" node="fNDJb5ri7N" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
