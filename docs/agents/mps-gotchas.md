@@ -12,6 +12,16 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Importer edits: plain Java goes through `parse_java_and_insert`, BL-dialect code must be cloned; replacing a method needs `FIX_REFERENCES` (2026-10-29)
+
+`parse_java_and_insert` (parameters is one JSON string) parses real Java only: `string`, `node<X>`, `enum/…/` and property/link assignments come out as unresolved ClassifierType/FieldReferenceOperation
+(dozens of errors). Methods written in plain Java types (`String`, `SNode`, `ParserRuleContext`, `Interval`, the generated parser classes) insert clean, so keep new importer helpers plain
+Java and delegate the node building to existing BL-dialect methods; for code that must create nodes, clone existing AST (print `deep: true`, edit, `update_node ADD CHILD` with the file path).
+`insert.mode: replace` of a method creates a new node id, so callers keep dangling references until `alter_nodes FIX_REFERENCES` (parameter `nodeReference` = the class root; it reported "6 broken
+reference(s) resolved"). Other `update_node` facts: `kind` is a required parameter, `position` (not `index`) is the 0-based insert index, `SET×PROPERTY` takes `properties` and `SET×REFERENCE`
+`references` as triplets. A printed test method (`deep: true`, saved envelope) can be edited in Python (new name, new string literals, drop `reference` keys) and added with ADD CHILD; the
+variable references are repointed automatically ("repointed 3"). A reload (`reload_all`) deletes the run configurations; recreate them.
+
 ## The model checker flags out-of-scope references only when the scope is non-empty; an empty scope hides a broken scope function (2026-10-29)
 
 `check_root_node_problems` reports "The reference X (usage) is out of search scope" when the scope function returns a scope that lacks the target, but stays silent when the scope is

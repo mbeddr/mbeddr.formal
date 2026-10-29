@@ -362,6 +362,28 @@ Sandbox: new root `_040_reference_usages` in `_100_manually_written` (directed r
 `testValueOnReferenceUsageRejected` ("expected rejection"); dropping one expected node fails the scope test (`expected:<[..3] but was:<[..4]`). All restored and rebuilt.
 Full run: 409 tests (400 + 9), only the two known plantuml failures.
 
+### Iteration 023: `end` features and the 022 leftovers (2026-10-29, awaiting acceptance)
+
+**Design:** an `end` feature is a `SysMLv2ReferenceUsage` with `isEnd = true` (no new concept). Editor and textGen of `ReferenceUsage` got the `end` flag (after visibility, like `SysMLv2PortUsage`)
+and an optional `= <value>` cell. `ReferenceUsage` also implements `ISysMLv2FileContent` (package/file level, 022 leftover a) and has an optional `value : ISysMLv2Expression` (022 leftover b).
+**Importer:** three `end` shapes, all through one reparse helper (`importReparsedReferenceUsage`: the pieces of the `end` form are re-assembled as `<dir> ref <decl> <decl> <completion>` text and parsed
+with the `referenceUsage` rule, so `buildReferenceUsage` stays the single builder; `rawText` returns the original source text of a context): `endFeatureUsage` (`end source : T :>> D::source;`, from
+`visitNonOccurrenceUsageElement`), `defaultInterfaceEnd` (`end x : T;` in an interface def body, replaces the rejection "default interface end (use 'end port')") and `end ref x : T;`
+(`visitReferenceUsage`). Direction (`end in ref y`) is kept. Values: `buildReferenceUsage` stores the value through `setReferenceValue` (attribute usages: `setAttributeValue`); `extractAttributeValueText` keeps the original
+source text and no longer rejects anything. `isLiteralText` decides: a string, boolean or number literal stays a `SysMLv2LiteralExpression`; everything else (`10.0 [N * m]`, `y + 1`, a feature name) becomes the
+new `SysMLv2PlainTextExpression` (property `expressionText`, uninterpreted; editor `# expressionText #`, textGen writes the text raw), which also lets `attribute mass = 10.0 [kg];` import. Values that were
+previously rejected as "non-literal attribute value" now import as plain text.
+**Caveats:** (1) `end x : T` re-emits as `end ref x : T` (valid per the grammar, `endUsagePrefix REF usage`; same precedent as the keyword-less `in x` in 022); (2) the keyword-less value usage
+`T2 = 3;` re-emits as `ref T2 = 3;`; (3) multiplicity prints without a space (`target[1]`, existing textGen). Named rejections: modifiers (`derived`, `abstract`, `var`, ...) on an end feature,
+a body on an end reference usage.
+**Tests:** `_270_ReferenceUsageRoundtripTest` +5 (connection def with `end source : Q;` and `end target [1] : Q :>> D::target;`, interface def with `end x : Pd;` next to `end port p : Pd;`,
+`end ref x` / `end in ref y` in a part def, package-level `ref` / `ref part`, reference usages with values incl. `10.0 [N * m]`) and `testValueConceptsLiteralVsPlainText` (structural: concept of every `value` child, via `RoundtripTestUtils.valueConceptsOf`); `_130_ImporterRejectionMatrixTest`: `MatrixCase18` is now `end derived x : D;`
+(modifier message), `testValueOnReferenceUsageRejected` was removed (such values now import as plain text), `testEndReferenceUsageRejected` became `testEndReferenceUsageWithBodyRejected`.
+**Mutation proofs (importer rebuilt):** `markEnd` setting `false` fails the connection-def, interface-def and part-def round trips (`end ` lost); `isLiteralText` matching everything fails
+`testValueConceptsLiteralVsPlainText` (all values become literals). Restored and rebuilt. Sandbox `_040_reference_usages`: package-level `ref nominalTorque : Torque;`, `ref maxTorque = 250.0 [N * m];` (plain-text expression),
+`connection def DriveLink` and `interface def DrivePortLink` with `end ref` features (root check clean).
+Full run: 414 tests (409 + 5 round trips + 1 structural − 1 removed rejection), only the two known plantuml failures (START = FINISH = 414).
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -400,7 +422,7 @@ iterations.
 - 020 usages directly in a package body (all usage kinds; new from the 021 audit).
 - 021 connectivity audit (done 2026-10-29, result above).
 - 022 `ref` usages and keyword-less directed features (`ref x : D`, `ref part`, `in x :> T` in a port def) (done 2026-10-29, awaiting acceptance).
-- 023 `end` features in connection defs and interface defs (`end source : T :>> D::source`, `end x : T` in an interface def).
+- 023 `end` features in connection defs and interface defs (`end source : T :>> D::source`, `end x : T` in an interface def) plus the 022 leftovers (package-level `ref`, values on reference usages) (done 2026-10-29, awaiting acceptance).
 - 024 named connector and interface ends (`t ::> transmission.drive`).
 - 025 guard for `import` in a definition body (done 2026-10-29, awaiting acceptance).
 - 026 multiple typing, `ordered`/`nonunique`, definitions nested in bodies (revives 018f).
