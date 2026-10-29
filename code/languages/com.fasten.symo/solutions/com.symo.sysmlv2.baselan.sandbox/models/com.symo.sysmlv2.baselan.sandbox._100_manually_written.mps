@@ -25,6 +25,7 @@
         <property id="4376090928952104929" name="withKeyword" index="2ghixy" />
       </concept>
       <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
+      <concept id="4376090928935955021" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceDefinition" flags="ng" index="2gGTne" />
       <concept id="5531643499102778612" name="com.symo.sysmlv2.baselan.structure.ISysMLv2QualifiedRef" flags="ngI" index="gQIM0">
         <reference id="5531643499102778613" name="namespace" index="gQIM1" />
       </concept>
@@ -46,16 +47,21 @@
       <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE">
         <property id="717440187291777388" name="withKeyword" index="2uUmlw" />
       </concept>
+      <concept id="717440187291777379" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinition" flags="ng" index="2uUmlJ" />
       <concept id="284754763101489698" name="com.symo.sysmlv2.baselan.structure.SysMLv2DefinitionRef" flags="ng" index="35c6Ng">
         <property id="284754763101489700" name="definitionName" index="35c6Nm" />
         <reference id="284754763101489701" name="definition" index="35c6Nn" />
       </concept>
       <concept id="284754763101489699" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReferenceUsage" flags="ng" index="35c6Nh">
+        <child id="284754763120096648" name="value" index="34b1dU" />
         <child id="284754763101489703" name="type" index="35c6Nl" />
         <child id="284754763101489705" name="direction" index="35c6Nr" />
       </concept>
       <concept id="4527860999823451880" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Member" flags="ngI" index="3815tY">
         <property id="4527860999823451881" name="visibility" index="3815tZ" />
+      </concept>
+      <concept id="284754763133676346" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainTextExpression" flags="ng" index="3bnkR8">
+        <property id="284754763133676347" name="expressionText" index="3bnkR9" />
       </concept>
       <concept id="7267068243734581638" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Type" flags="ngI" index="3eyS6m">
         <property id="7267068243734581640" name="isAbstract" index="3eyS6o" />
@@ -73,6 +79,7 @@
         <child id="7140692429574298128" name="content" index="3w00ZY" />
       </concept>
       <concept id="7140692429575677856" name="com.symo.sysmlv2.baselan.structure.SysMLv2Usage" flags="ng" index="3wdj9e">
+        <property id="717440187291784108" name="isEnd" index="2uUgYw" />
         <property id="284754763101489729" name="isReference" index="35c6MN" />
         <child id="7140692429575677858" name="subsets" index="3wdj9c" />
         <child id="7140692429575677859" name="redefines" index="3wdj9d" />
@@ -579,6 +586,57 @@
           <node concept="3w00Zy" id="fNDJb7F_tz" role="3w00ZT">
             <property role="3w00ZX" value="Fuel" />
             <ref role="3w00ZU" node="fNDJb7F_ti" resolve="Fuel" />
+          </node>
+        </node>
+      </node>
+      <node concept="35c6Nh" id="fNDJb8Eyha" role="3Z9vGx">
+        <property role="TrG5h" value="nominalTorque" />
+        <node concept="35c6Ng" id="fNDJb8Eyhb" role="35c6Nl">
+          <property role="35c6Nm" value="Torque" />
+          <ref role="35c6Nn" node="fNDJb7F_tf" resolve="Torque" />
+        </node>
+      </node>
+      <node concept="35c6Nh" id="fNDJb8Eyhc" role="3Z9vGx">
+        <property role="TrG5h" value="maxTorque" />
+        <node concept="3bnkR8" id="fNDJb8UdB0" role="34b1dU">
+          <property role="3bnkR9" value="250.0 [N * m]" />
+        </node>
+      </node>
+      <node concept="2uUmlJ" id="fNDJb8Eyhe" role="3Z9vGx">
+        <property role="TrG5h" value="DriveLink" />
+        <node concept="35c6Nh" id="fNDJb8Eyhf" role="3w00ZY">
+          <property role="TrG5h" value="source" />
+          <property role="2uUgYw" value="true" />
+          <node concept="35c6Ng" id="fNDJb8Eyhg" role="35c6Nl">
+            <property role="35c6Nm" value="Engine" />
+            <ref role="35c6Nn" node="fNDJb7F_tg" resolve="Engine" />
+          </node>
+        </node>
+        <node concept="35c6Nh" id="fNDJb8Eyhh" role="3w00ZY">
+          <property role="TrG5h" value="target" />
+          <property role="2uUgYw" value="true" />
+          <node concept="35c6Ng" id="fNDJb8Eyhi" role="35c6Nl">
+            <property role="35c6Nm" value="Wheel" />
+            <ref role="35c6Nn" node="fNDJb7F_th" resolve="Wheel" />
+          </node>
+        </node>
+      </node>
+      <node concept="2gGTne" id="fNDJb8Eyhj" role="3Z9vGx">
+        <property role="TrG5h" value="DrivePortLink" />
+        <node concept="35c6Nh" id="fNDJb8Eyhk" role="3w00ZY">
+          <property role="TrG5h" value="a" />
+          <property role="2uUgYw" value="true" />
+          <node concept="35c6Ng" id="fNDJb8Eyhl" role="35c6Nl">
+            <property role="35c6Nm" value="DrivePort" />
+            <ref role="35c6Nn" node="fNDJb7F_tj" resolve="DrivePort" />
+          </node>
+        </node>
+        <node concept="35c6Nh" id="fNDJb8Eyhm" role="3w00ZY">
+          <property role="TrG5h" value="b" />
+          <property role="2uUgYw" value="true" />
+          <node concept="35c6Ng" id="fNDJb8Eyhn" role="35c6Nl">
+            <property role="35c6Nm" value="DrivePort" />
+            <ref role="35c6Nn" node="fNDJb7F_tj" resolve="DrivePort" />
           </node>
         </node>
       </node>
