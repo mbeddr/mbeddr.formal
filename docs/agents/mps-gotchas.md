@@ -12,6 +12,17 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## An optional string that *precedes* its keyword (`name ::> chain`) cannot use OptionalCell; gate the cells and offer an Alt+Enter intention to set it (2026-10-29)
+
+`OptionalCell` needs a leading constant (see the 2026-10-25 entry), so `[name] ::>` fails with "Content of optional cell is not supported". An always-visible leading property cell works but takes
+the caret first, so typing into a new node fills the name instead of the next cell (five editor tests failed). Working shape: property cell `name` and the `::>` constant both with
+`renderingCondition node.name != null`, and an intention (`isAvailableInChildNodes`, applicable while the property is null) to set it; an `inspectedCellModel` collection (`end name:`) was not usable in practice.
+Intention tests: the harness applies the intention to `myStart.getNode()` (the node carrying the `AnonymousCellAnnotation`, `setCurrentNodeOnly`), not to a typed-in caret, and `invoke intention` has only the `intention` reference, so
+the `before` model must already contain the target with the annotation on it. `update_node` `SET CHILD` on a multi-valued role with valid json empties the whole role (re-add with ADD). Property cells use the reference role `relationDeclaration`, not
+`propertyDeclaration`. Also: after `parse_java_and_insert` in `replace` mode the `SNode` ClassifierTypes sometimes stay unresolved even after `FIX_REFERENCES`; set their `classifier` by hand
+(`update_node` REFERENCE SET to `8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)/~SNode`). No MCP tool deletes a root node. When a shared helper changes its
+contract (list element 0 = name slot), check every producer of its input: the full suite caught the flow extractor that the targeted tests did not.
+
 ## Importer edits: plain Java goes through `parse_java_and_insert`, BL-dialect code must be cloned; replacing a method needs `FIX_REFERENCES` (2026-10-29)
 
 `parse_java_and_insert` (parameters is one JSON string) parses real Java only: `string`, `node<X>`, `enum/…/` and property/link assignments come out as unresolved ClassifierType/FieldReferenceOperation

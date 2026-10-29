@@ -384,6 +384,19 @@ a body on an end reference usage.
 `connection def DriveLink` and `interface def DrivePortLink` with `end ref` features (root check clean).
 Full run: 414 tests (409 + 5 round trips + 1 structural − 1 removed rejection), only the two known plantuml failures (START = FINISH = 414).
 
+### Iteration 024: named connector and interface ends (2026-10-29, awaiting acceptance)
+
+**Design:** `connect source ::> transmission.drive to axle.input`, `interface link : DataLink connect s ::> a.b to t ::> c.d` and `bind x ::> a.b = c.d` (grammar `connectorEnd`/`interfaceEnd`:
+`(name (::> | references))? ownedReferenceSubsetting`). `SysMLv2ConnectorEnd` implements `INamedConcept`; `name` is null for an unnamed end. Editor: a `name` property cell and the `::>` constant, both with
+`renderingCondition node.name != null`, then the chain; the name is added with the Alt+Enter intention `AddConnectorEndName` (new `intentions` model; `isAvailableInChildNodes`, applicable while `name` is null), covered by editor test `_180_Connections_AddEndName`; an Inspector cell (`end name:`) also exists but proved unusable for the user. Not yet confirmed manually in the IDE: Alt+Enter with the caret on the reference cell inside the chain. An OptionalCell is not usable here
+(it needs a *leading* constant keyword; the name precedes `::>`), and a always-visible leading name cell steals the caret from the chain (five connection/interface/binding/flow editor tests failed).
+textGen writes `name ::> ` before the chain. `references` normalizes to `::>` on output. Flow ends (`flowEnd : qualifiedName (. qualifiedName)*`) cannot be named by the grammar.
+**Importer:** `extractConnectorEndChain`/`extractInterfaceEndChain` return a list whose element 0 is the end name ("" if none) followed by the chain steps (`extractFlowEndChain` returns "" as element 0);
+`createConnectorEnd` builds the chain (`createConnectorEndChainOnly`) and sets `name` (`setConnectorEndName`). Multiplicity on ends is still rejected.
+Tests in `_270`: `testNamedConnectorAndInterfaceEnds`, `testReferencesKeywordOnConnectorEnd`; both fail when the name is not set (mutation-checked). The first full run found five flow tests failing
+(`extractFlowEndChain` lacked the element-0 slot, so the first chain step was taken as the name); fixed, suite now 417 tests with only the two known plantuml failures.
+Sandbox: `_030_package_level_usages` connection end `source ::>`, interface `link` with `s ::>`/`t ::>` (root check clean). Follow-up: the first design used a child concept `SysMLv2ConnectorEndName`; it was replaced by `INamedConcept` on the end. The unused concept and its editor/textGen roots still have to be deleted in the IDE (no MCP tool deletes roots).
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -423,7 +436,7 @@ iterations.
 - 021 connectivity audit (done 2026-10-29, result above).
 - 022 `ref` usages and keyword-less directed features (`ref x : D`, `ref part`, `in x :> T` in a port def) (done 2026-10-29, awaiting acceptance).
 - 023 `end` features in connection defs and interface defs (`end source : T :>> D::source`, `end x : T` in an interface def) plus the 022 leftovers (package-level `ref`, values on reference usages) (done 2026-10-29, awaiting acceptance).
-- 024 named connector and interface ends (`t ::> transmission.drive`).
+- 024 named connector and interface ends (`t ::> transmission.drive`) (done 2026-10-29, awaiting acceptance).
 - 025 guard for `import` in a definition body (done 2026-10-29, awaiting acceptance).
 - 026 multiple typing, `ordered`/`nonunique`, definitions nested in bodies (revives 018f).
 - 027 import reference: structure, editor, scope (language only).
