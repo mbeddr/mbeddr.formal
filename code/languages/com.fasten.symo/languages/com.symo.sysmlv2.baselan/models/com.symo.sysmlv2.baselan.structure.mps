@@ -710,6 +710,11 @@
     <node concept="PrWs8" id="6ohPCO1srbL" role="PzmwI">
       <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
     </node>
+    <node concept="1TJgyi" id="fNDJb6KWD1" role="1TKVEl">
+      <property role="IQ2nx" value="284754763101489729" />
+      <property role="TrG5h" value="isReference" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU3buux">
     <property role="EcuMT" value="7140692429575677857" />
@@ -1435,6 +1440,67 @@
       <property role="IQ2nx" value="4527860999823451881" />
       <property role="TrG5h" value="visibility" />
       <ref role="AX2Wp" node="6jpO12DyoSb" resolve="SysMLv2VisibilityKind" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="fNDJb6KWCy">
+    <property role="EcuMT" value="284754763101489698" />
+    <property role="TrG5h" value="SysMLv2DefinitionRef" />
+    <property role="R4oN_" value="reference to any definition (FeatureTyping.type), with fallback name as written" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="fNDJb6KWC$" role="1TKVEl">
+      <property role="IQ2nx" value="284754763101489700" />
+      <property role="TrG5h" value="definitionName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="fNDJb6KWC_" role="1TKVEi">
+      <property role="IQ2ns" value="284754763101489701" />
+      <property role="20kJfa" value="definition" />
+      <ref role="20lvS9" node="3MUZSeI$44h" resolve="SysMLv2Definition" />
+    </node>
+    <node concept="PrWs8" id="fNDJb6KWCA" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="fNDJb6KWCz">
+    <property role="EcuMT" value="284754763101489699" />
+    <property role="TrG5h" value="SysMLv2ReferenceUsage" />
+    <property role="34LRSv" value="ref" />
+    <property role="R4oN_" value="SysML v2 ReferenceUsage (8.3.8.x): [direction] ref name [: Type] [:&gt; subsets] [:&gt;&gt; redefines]; also the keyword-less 'in x :&gt; T'" />
+    <property role="3GE5qa" value="reference" />
+    <ref role="1TJDcQ" node="6coPuU3buuw" resolve="SysMLv2Usage" />
+    <node concept="1TJgyj" id="fNDJb6KWCB" role="1TKVEi">
+      <property role="IQ2ns" value="284754763101489703" />
+      <property role="20kJfa" value="type" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="fNDJb6KWCC" role="1TKVEi">
+      <property role="IQ2ns" value="284754763101489704" />
+      <property role="20kJfa" value="multiplicity" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+    </node>
+    <node concept="1TJgyj" id="fNDJb6KWCD" role="1TKVEi">
+      <property role="IQ2ns" value="284754763101489705" />
+      <property role="20kJfa" value="direction" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU2Tg1U" resolve="SysMLv2FeatureDirection" />
+    </node>
+    <node concept="PrWs8" id="fNDJb6KWCE" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="fNDJb6KWCF" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
+    </node>
+    <node concept="PrWs8" id="fNDJb6KWCG" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="fNDJb6KWCH" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
+    <node concept="PrWs8" id="fNDJb6KWCI" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
   </node>
 </model>
