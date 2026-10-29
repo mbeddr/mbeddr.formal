@@ -1097,6 +1097,9 @@
     <node concept="PrWs8" id="BOR0Mn7r_F" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
+    <node concept="PrWs8" id="fNDJbaAFwY" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
   </node>
   <node concept="1TIwiD" id="BOR0Mn7r_A">
     <property role="EcuMT" value="717440187291777382" />
@@ -1274,7 +1277,7 @@
     <property role="3GE5qa" value="base" />
     <ref role="1TJDcQ" node="3MUZSeHM$aI" resolve="SysMLv2OccurrenceUsage" />
     <node concept="PrWs8" id="fNDJb5ewy5" role="PzmwI">
-      <ref role="PrY4T" node="3VmcprQOArC" />
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
   </node>
   <node concept="PlHQZ" id="3MUZSeHM$aL">
@@ -1447,7 +1450,7 @@
     <property role="TrG5h" value="SysMLv2DefinitionRef" />
     <property role="R4oN_" value="reference to any definition (FeatureTyping.type), with fallback name as written" />
     <property role="3GE5qa" value="base" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="fNDJb6KWC$" role="1TKVEl">
       <property role="IQ2nx" value="284754763101489700" />
       <property role="TrG5h" value="definitionName" />
@@ -1517,7 +1520,7 @@
     <property role="TrG5h" value="SysMLv2PlainTextExpression" />
     <property role="R4oN_" value="arbitrary SysML v2 expression kept as uninterpreted source text (e.g. 10.0 [N * m])" />
     <property role="3GE5qa" value="expression" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyi" id="fNDJb8FIGV" role="1TKVEl">
       <property role="IQ2nx" value="284754763133676347" />
       <property role="TrG5h" value="expressionText" />
