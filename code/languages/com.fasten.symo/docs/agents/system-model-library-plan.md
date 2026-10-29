@@ -337,6 +337,15 @@ only looked for an `ISysMLv2FeatureOwner` ancestor, so the scope was empty at pa
 members plus the enclosing file members; file-level ends see the file members except their own connection). Mutation (back to `ISysMLv2FeatureOwner`) fails all four with `but was:<[]>`. Sandbox root check now shows only the accepted enum entries.
 Full run: 396 tests, only the two known plantuml failures.
 
+### Iteration 025: `import` in a body is a named rejection (2026-10-29, awaiting acceptance)
+
+**Cause:** in `visitDefinitionBodyItem` the alias check dereferenced `ctx.memberPrefix()` first; the grammar alternative `importRule` has no `memberPrefix`, so an `import` in a
+definition body, part usage body or port definition body threw a NullPointerException before the existing guard ("import inside definition body") was reached. **Fix:** the import
+guard is now the first statement of the method (one `MOVE_CHILD`; the interface body visitor already checked the import first). Importer solution rebuilt (`importer.main`, `rebuild`).
+**Tests** (`_130_ImporterRejectionMatrixTest`, 4 new): `import Q::*;` in a part def, port def, part usage body (message "import inside definition body") and interface def
+(message "import inside interface body", already correct, a regression guard). Mutation proof: before the fix three of them failed with the NPE message (exit code 3), after it all 16 tests of the root pass.
+Full run: 400 tests, only the two known plantuml failures.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -377,7 +386,7 @@ iterations.
 - 022 `ref` usages and keyword-less directed features (`ref x : D`, `ref part`, `in x :> T` in a port def).
 - 023 `end` features in connection defs and interface defs (`end source : T :>> D::source`, `end x : T` in an interface def).
 - 024 named connector and interface ends (`t ::> transmission.drive`).
-- 025 guard for `import` in a definition body (NullPointerException today, must be a named rejection).
+- 025 guard for `import` in a definition body (done 2026-10-29, awaiting acceptance).
 - 026 multiple typing, `ordered`/`nonunique`, definitions nested in bodies (revives 018f).
 - 027 import reference: structure, editor, scope (language only).
 - 028 import reference: importer sets it, default standard-library scope.
