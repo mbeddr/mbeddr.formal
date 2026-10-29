@@ -287,6 +287,21 @@ value (`= T1`, `= 1750 [kg]`, `= a + b`, `= Color::red`), `default 5`, a value o
 **Plan consequences:** new iterations for package-level usages (020) and the import guard (025); 022/023/024 sharpened; the planned qualified-name and anonymous-usage work is not needed;
 conjugation shrinks to an editor and round-trip check (034). The iteration list below is renumbered.
 
+### Iteration 020 step 1 result (2026-10-29, awaiting acceptance)
+
+Item, part, port and attribute usages directly in a package body or at file level (spec: `PackageMember = MemberPrefix (DefinitionElement | UsageElement)`,
+`RootNamespace : Namespace = PackageBodyElement*`; example in SysML 2a 7.5.5). Structure: `SysMLv2ItemUsage` (so also `SysMLv2PartUsage`),
+`SysMLv2PortUsage` and `SysMLv2AttributeUsage` implement `ISysMLv2FileContent`. Constraints: the model checker rejected part and port usages
+("cannot be child of ...") because `ICanBelongOnlyToSysMLv2PartOwner.canBeChild` allowed only part definitions, port definitions and port usages as parents; it now also
+accepts `SysMLv2Package` and `SysMLv2File`. The importer round trip did not reveal this, only the model check of the sandbox root did. Importer: `visitPackageMember`
+no longer throws "usage element" and "visibility prefix on usage"; it visits the usage element and rejects with `Unsupported SysML v2 construct: usage kind at package level`
+when the result is not an `ISysMLv2FileContent` (connection, interface, flow, binding usages stay for step 2). Tests: `_070_PackageLevelUsagesRoundtripTest`
+(`testRoundtripPackageLevelUsages`, `testRoundtripFileLevelUsage`, `accessMode none`; the default `command` made the first run time out in text generation, see mps-gotchas);
+in `_130` the obsolete `testPrivatePartUsageRejected` (a private part in a package is valid now) became `testPackageLevelBindingRejected`
+(`package P { bind a = b; }`). Sandbox: new root `_030_package_level_usages`, root check shows only the accepted nullable-enum errors. Verification: full run 385 tests,
+only the two known plantuml failures. Findings: an item usage with a body is still rejected ("non-empty item usage body"), so the fixtures use `abstract item fuel;`.
+Not run: mutation checks of the importer ternary and the `isInstanceOf` guard (the negative test pins the guard's message, which exists nowhere else), and a test of the constraint change beyond the sandbox root check.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
