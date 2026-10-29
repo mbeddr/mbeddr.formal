@@ -265,6 +265,28 @@ except the two plantuml failures. Mutation, binding: the same constant in the bi
 flow and binding editor components and of the importer apply line, and a negative test for a body-level action usage (the importer does not parse
 action bodies, so none is possible yet).
 
+### Iteration 021 result (2026-10-29, audit, accepted by user for the plan update)
+
+Live probe of the real importer: 89 snippets and 10 real files (VehicleDefinitions, VehicleUsages, Connections, Interfaces, Items, Flows, Ports,
+Parts, Metadata, Attributes), run from a temporary test root that was deleted afterwards (tree clean). A first static reading of the importer
+was wrong in several places, the probe replaces it. The importer stops at the first rejection, so every construct was probed on its own, wrapped
+in a `part def` (a usage directly in a package body hides everything inside it).
+**Already works (no iteration needed):** qualified names in typing, specialization and redefinition on usages (`attribute mass :> ISQ::mass`,
+`part c : Base::Car`, `redefines w::r`); anonymous usages (`part redefines lugbolt[4];`, `port p subsets q`); port conjugation `~DriveIF` (syntax; editor
+and round trip unchecked); `connect`/`bind`/`flow` with chains on both ends and interface usages with `connect a.b to c.d`; `in`/`out item`;
+`attribute def :> Real`; `alias` in bodies; import forms.
+**Rejected, in order of impact:** (1) every usage directly in a package body ("usage element"), so `VehicleUsages.sysml` fails at its first
+member; (2) `ref x : D` and `ref part x : D` (`ref usage prefix` / unnamed catch-all) and keyword-less directed features such as `in driveTorque :> ISQ::torque;`
+in a port def, which is the first rejection of `VehicleDefinitions.sysml`; (3) `end` features: in a connection def (unnamed catch-all) and in an interface def
+(`end axleMount: T` is "default interface end (use 'end port')"); (4) named connector ends `t ::> transmission.drive` ("named interface end"); (5) every non-literal
+value (`= T1`, `= 1750 [kg]`, `= a + b`, `= Color::red`), `default 5`, a value on a part usage (`= front#(1)`) and a feature as multiplicity bound (`[n]`);
+(6) multiple typing (`: A, B`), `ordered`/`nonunique`, definitions nested in bodies; (7) behavior (`perform`, `event`, `message`, `first ... then`, `assert constraint`,
+`calc def`, `enum def`, `dependency`), named rejections, out of MVP scope.
+**Importer bug:** `import Q::*;` inside a definition body throws a NullPointerException in `MemberPrefixContext.visibilityIndicator()` instead of a named rejection.
+**Library files:** first rejections unchanged since 018d (Attributes `alias body`, Interfaces `calc def`, the others the unnamed catch-all).
+**Plan consequences:** new iterations for package-level usages (020) and the import guard (025); 022/023/024 sharpened; the planned qualified-name and anonymous-usage work is not needed;
+conjugation shrinks to an editor and round-trip check (034). The iteration list below is renumbered.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -300,21 +322,25 @@ iterations.
 - 018e (follow-up) `SysMLv2Import` implements `ISysMLv2Member` and drops its own `visibility` property (one step; done).
 - 018f (dropped 2026-10-28, user decision) definitions nested in definition bodies (`visitDefinitionBodyItemContent` rejects them by name today). Parked: build only if a probe or the vehicle example shows a need; an audit of container/nested kinds comes first.
 - 019 visibility on package members: usages (step 1 accepted: part, attribute, connection, interface; step 2 accepted: port, item, metadata; step 3 accepted: flow, binding; action usages stay unsupported by the importer).
-- 020 `ref` usages (importer only, concept exists).
-- 021 connectivity audit (read-only, measured): Connections, Interfaces, Items, Flows files and the vehicle example.
-- 022 `end` features (build from the audit; survey first).
-- 023 connect/interface ends syntax gaps from the audit (build; may be split further by the audit).
-- 024 import reference: structure, editor, scope (language only).
-- 025 import reference: importer sets it, default standard-library scope.
-- 026 kernel stubs (Base, Objects, Parts, Ports, Items, Connections, Interfaces, Attributes) in the accessory model.
-- 027 `ISQ`/`SI` unit stubs.
-- 028 quantity literal with unit reference: concept, editor, textGen (language only).
-- 029 quantity literal: importer, text fallback.
-- 030 feature-chain resolution for ends.
-- 031 port conjugation.
-- 032 well-formedness checks: typing and redefinition conformance.
-- 033 well-formedness checks: abstract instantiation, port compatibility on connections.
-- 034 MVP acceptance (vehicle example, text round trip, all names resolved).
+- 020 usages directly in a package body (all usage kinds; new from the 021 audit).
+- 021 connectivity audit (done 2026-10-29, result above).
+- 022 `ref` usages and keyword-less directed features (`ref x : D`, `ref part`, `in x :> T` in a port def).
+- 023 `end` features in connection defs and interface defs (`end source : T :>> D::source`, `end x : T` in an interface def).
+- 024 named connector and interface ends (`t ::> transmission.drive`).
+- 025 guard for `import` in a definition body (NullPointerException today, must be a named rejection).
+- 026 multiple typing, `ordered`/`nonunique`, definitions nested in bodies (revives 018f).
+- 027 import reference: structure, editor, scope (language only).
+- 028 import reference: importer sets it, default standard-library scope.
+- 029 kernel stubs (Base, Objects, Parts, Ports, Items, Connections, Interfaces, Attributes) in the accessory model.
+- 030 `ISQ`/`SI` unit stubs.
+- 031 quantity literal with unit reference: concept, editor, textGen (language only).
+- 032 non-literal values: quantity literal, `default`, feature as multiplicity bound, text fallback (importer).
+- 033 feature-chain resolution for ends (the syntax already imports, resolution is open).
+- 034 port conjugation: editor and text round trip (the importer accepts `~T` already).
+- 035 well-formedness checks: typing and redefinition conformance.
+- 036 well-formedness checks: abstract instantiation, port compatibility on connections.
+- 037 MVP acceptance (vehicle example, text round trip, all names resolved).
+(Renumbered 2026-10-29 after the 021 audit; the old 020-034 list had 020 `ref`, 022 `end`, 023 ends syntax, 024-025 import reference, 026-027 stubs, 028-029 quantity literal, 030 chains, 031 conjugation, 032-033 checks, 034 acceptance.)
 
 ## Part B: KerML base language (`com.symo.kerml.baselan`, test solution `test.com.symo.kerml.baselan`)
 - Phase 0: register the modules in `com.fasten.meta.architecture` + README project structure; create the importer solution
