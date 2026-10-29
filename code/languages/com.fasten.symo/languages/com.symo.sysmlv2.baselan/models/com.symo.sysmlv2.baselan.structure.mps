@@ -1250,6 +1250,9 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="base" />
     <ref role="1TJDcQ" node="3MUZSeHM$aI" resolve="SysMLv2OccurrenceUsage" />
+    <node concept="PrWs8" id="fNDJb5ewy5" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" />
+    </node>
   </node>
   <node concept="PlHQZ" id="3MUZSeHM$aL">
     <property role="EcuMT" value="4376090928965370545" />

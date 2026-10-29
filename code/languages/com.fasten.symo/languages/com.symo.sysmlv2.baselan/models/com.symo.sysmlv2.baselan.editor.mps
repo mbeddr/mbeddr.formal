@@ -4065,6 +4065,9 @@
     <property role="3GE5qa" value="flow" />
     <ref role="1XX52x" to="5rf1:3MUZSeHmu9I" resolve="SysMLv2FlowUsage" />
     <node concept="3EZMnI" id="3MUZSeHPa0Z" role="2wV5jI">
+      <node concept="PMmxH" id="fNDJb5ewyE" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" />
+      </node>
       <node concept="1kHk_G" id="6ohPCNYGp4d" role="3EZMnx">
         <property role="ZjSer" value="abstract" />
         <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
