@@ -231,7 +231,7 @@ now points at `Constant_yj3wp4_g0a`. Mutation: the PartUsage textGen separator c
 green. Not run: mutations of the importer apply line and of the usage editor components, and a negative test for a body-level port. Gotchas added:
 cloned blueprint references, `parse_java_and_insert` and `CONCEPTS`.
 
-### Iteration 019 step 2 result (2026-10-28, implemented, awaiting user acceptance)
+### Iteration 019 step 2 result (2026-10-28, accepted by user)
 
 Visibility on port, item and metadata usages in bodies. `ISysMLv2Member` is implemented by `SysMLv2ItemUsage` and `SysMLv2PortUsage`. Metadata
 usages became members too, through `SysMLv2MetadataUsage extends SysMLv2ItemUsage`. Without their own editor component and textGen prefix, a prefix
@@ -246,7 +246,7 @@ from steps 1 and 2 (the `Vehicle` part with attribute, parts, connection, ports,
 `metadataFeatureDeclaration` requires `ownedFeatureTyping` in `SysMLv2Parser.g4`, so `safety : Safety` with `metadata def Safety`. Not run: mutations
 of the importer apply line and of the port editor component, and the negative test for a body-level action usage (step 3 boundary).
 
-### Iteration 019 step 3 result (2026-10-29, implemented, awaiting user acceptance)
+### Iteration 019 step 3 result (2026-10-29, accepted by user)
 
 Visibility on flow and binding usages in bodies, the last usage kinds in 019. Deviation from the plan: flow is the only action-family usage that
 gets visibility. `SysMLv2ActionUsage` is an abstract placeholder (the importer rejects action bodies), so `SysMLv2ActionUsage` now implements
@@ -299,7 +299,7 @@ iterations.
 - 018d visibility on `package` and `library package`, named rejection reworded for usages, 21-file probe (done).
 - 018e (follow-up) `SysMLv2Import` implements `ISysMLv2Member` and drops its own `visibility` property (one step; done).
 - 018f (dropped 2026-10-28, user decision) definitions nested in definition bodies (`visitDefinitionBodyItemContent` rejects them by name today). Parked: build only if a probe or the vehicle example shows a need; an audit of container/nested kinds comes first.
-- 019 visibility on package members: usages (step 1 accepted: part, attribute, connection, interface; step 2 implemented, awaiting acceptance: port, item, metadata; step 3 implemented, awaiting acceptance: flow, binding; action usages stay unsupported by the importer).
+- 019 visibility on package members: usages (step 1 accepted: part, attribute, connection, interface; step 2 accepted: port, item, metadata; step 3 accepted: flow, binding; action usages stay unsupported by the importer).
 - 020 `ref` usages (importer only, concept exists).
 - 021 connectivity audit (read-only, measured): Connections, Interfaces, Items, Flows files and the vehicle example.
 - 022 `end` features (build from the audit; survey first).
