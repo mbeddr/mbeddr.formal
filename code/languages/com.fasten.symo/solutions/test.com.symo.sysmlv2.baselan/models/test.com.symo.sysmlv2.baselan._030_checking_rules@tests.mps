@@ -70,6 +70,7 @@
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
+        <child id="8930763252716192330" name="content" index="8GFem" />
         <child id="7140692429574298135" name="type" index="3w00ZT" />
         <child id="7140692429574298133" name="direction" index="3w00ZV" />
       </concept>
@@ -664,6 +665,50 @@
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="fNDJb6$SUy">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_030_PartUsagePlacement" />
+    <node concept="1qefOq" id="fNDJb6$SUz" role="1SKRRt">
+      <node concept="2h0jOr" id="fNDJb6$SU_" role="1qenE9">
+        <node concept="3Z9vzX" id="fNDJb6$SUA" role="2h0jOs">
+          <property role="TrG5h" value="Q" />
+          <node concept="8GF0z" id="fNDJb6$SUB" role="3Z9vGx">
+            <property role="TrG5h" value="vehicle" />
+            <node concept="8GF0z" id="fNDJb6$SUC" role="8GFem">
+              <property role="TrG5h" value="axle" />
+              <node concept="8GF0z" id="fNDJb6$SUD" role="8GFem">
+                <property role="TrG5h" value="bolt" />
+              </node>
+            </node>
+          </node>
+          <node concept="3ZUotO" id="fNDJb6$SUE" role="3Z9vGx">
+            <property role="TrG5h" value="Vehicle" />
+            <node concept="8GF0z" id="fNDJb6$SUF" role="3w00ZY">
+              <property role="TrG5h" value="wheel" />
+            </node>
+          </node>
+          <node concept="3w00Z_" id="fNDJb6$SUG" role="3Z9vGx">
+            <property role="TrG5h" value="Cargo" />
+            <node concept="8GF0z" id="fNDJb6$SUH" role="3w00ZY">
+              <property role="TrG5h" value="misplaced" />
+              <node concept="7CXmI" id="fNDJb6$SUI" role="lGtFl">
+                <node concept="39XrGg" id="fNDJb6$SUJ" role="7EUXB">
+                  <node concept="2u4KIi" id="fNDJb6$SUL" role="39rjcI">
+                    <ref role="39XzEq" to="kuyq:6coPuU3aqOF" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="7CXmI" id="fNDJb6$SUM" role="lGtFl">
+            <node concept="7OXhh" id="fNDJb6$SUN" role="7EUXB">
+              <property role="GvXf4" value="true" />
             </node>
           </node>
         </node>
