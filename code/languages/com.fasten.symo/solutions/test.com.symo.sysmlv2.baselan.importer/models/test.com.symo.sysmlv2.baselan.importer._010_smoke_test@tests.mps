@@ -16605,6 +16605,57 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="fNDJb63OGR" role="1SL9yI">
+      <property role="TrG5h" value="testRoundtripTypedAndSpecializedUsagesInPackage" />
+      <node concept="3cqZAl" id="fNDJb63OGU" role="3clF45" />
+      <node concept="3clFbS" id="fNDJb63OGV" role="3clF47">
+        <node concept="3cpWs8" id="fNDJb63OGW" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJb63OGZ" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="content" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="17QB3L" id="fNDJb63OH1" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="fNDJb63OH2" role="3cqZAp">
+          <node concept="37vLTI" id="fNDJb63OH4" role="3clFbG">
+            <node concept="37vLTw" id="fNDJb63OH7" role="37vLTJ">
+              <ref role="3cqZAo" node="fNDJb63OGZ" />
+            </node>
+            <node concept="Xl_RD" id="fNDJb63OH8" role="37vLTx">
+              <property role="Xl_RC" value="package P {&#10;  part def Wheel {&#10;  }&#10;  part def Vehicle {&#10;  }&#10;  port def HubPort {&#10;  }&#10;  part narrowWheel : Wheel;&#10;  part vehicleC1 : Vehicle {&#10;    part frontWheel[2] :&gt; narrowWheel;&#10;  }&#10;  part vehicleC2 :&gt; vehicleC1 {&#10;    part :&gt;&gt; frontWheel;&#10;  }&#10;  port hub : HubPort;&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="fNDJb63OH9" role="3cqZAp">
+          <node concept="3cpWsn" id="fNDJb63OHc" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="generateText" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="fNDJb63OHe" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="fNDJb63OHf" role="37wK5m">
+                <ref role="3cqZAo" node="fNDJb63OGZ" />
+              </node>
+              <node concept="Xl_RD" id="fNDJb63OHg" role="37wK5m">
+                <property role="Xl_RC" value="ConnectorPackage" />
+              </node>
+              <node concept="1jxXqW" id="fNDJb63OHh" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="fNDJb63OHi" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="fNDJb63OHj" role="3cqZAp">
+          <node concept="37vLTw" id="fNDJb63OHm" role="3tpDZB">
+            <ref role="3cqZAo" node="fNDJb63OGZ" />
+          </node>
+          <node concept="37vLTw" id="fNDJb63OHn" role="3tpDZA">
+            <ref role="3cqZAo" node="fNDJb63OHc" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
