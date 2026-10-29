@@ -237,7 +237,7 @@
                           <node concept="nLn13" id="fNDJb63Xlt" role="2Oq$k0" />
                           <node concept="1mIQ4w" id="fNDJb63Xlu" role="2OqNvi">
                             <node concept="chp4Y" id="fNDJb63Xlw" role="cj9EA">
-                              <ref role="cht4Q" to="5rf1:7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
+                              <ref role="cht4Q" to="5rf1:7JKstLNgG7Z" />
                             </node>
                           </node>
                         </node>

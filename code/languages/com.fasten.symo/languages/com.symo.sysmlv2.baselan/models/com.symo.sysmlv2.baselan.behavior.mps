@@ -4958,6 +4958,34 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="fNDJb6u6Ro" role="3cqZAp">
+          <node concept="2OqwBi" id="fNDJb6u6Rr" role="3clFbw">
+            <node concept="37vLTw" id="fNDJb6u6Ru" role="2Oq$k0">
+              <ref role="3cqZAo" node="3MUZSeFtgWH" resolve="owner" />
+            </node>
+            <node concept="1mIQ4w" id="fNDJb6u6Rv" role="2OqNvi">
+              <node concept="chp4Y" id="fNDJb6u6Rx" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="fNDJb6u6Ry" role="3clFbx">
+            <node concept="3cpWs6" id="fNDJb6u6Rz" role="3cqZAp">
+              <node concept="2YIFZM" id="fNDJb6u6R$" role="3cqZAk">
+                <ref role="1Pybhc" to="o8zo:3fifI_xCtN$" resolve="Scope" />
+                <ref role="37wK5l" to="o8zo:52_Geb4SiYg" resolve="getScope" />
+                <node concept="2OqwBi" id="fNDJb6u6R_" role="37wK5m">
+                  <node concept="13iPFW" id="fNDJb6u6RC" role="2Oq$k0" />
+                  <node concept="1mfA1w" id="fNDJb6u6RD" role="2OqNvi" />
+                </node>
+                <node concept="13iPFW" id="fNDJb6u6RE" role="37wK5m" />
+                <node concept="37vLTw" id="fNDJb6u6RF" role="37wK5m">
+                  <ref role="3cqZAo" node="3MUZSeFtgWE" resolve="kind" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs6" id="3MUZSeFtgW$" role="3cqZAp">
           <node concept="2YIFZM" id="3MUZSeFtgW_" role="3cqZAk">
             <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
@@ -5039,7 +5067,7 @@
                 <node concept="2Xjw5R" id="3MUZSeFtgX$" role="2OqNvi">
                   <node concept="1xMEDy" id="3MUZSeFtgXB" role="1xVPHs">
                     <node concept="chp4Y" id="3MUZSeFtgXD" role="ri$Ld">
-                      <ref role="cht4Q" to="5rf1:4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
+                      <ref role="cht4Q" to="5rf1:4N4m7hrYNgN" />
                     </node>
                   </node>
                 </node>
