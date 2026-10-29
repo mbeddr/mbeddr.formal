@@ -5,17 +5,11 @@
       <sourceRoot path="${module}/models" />
     </modelRoot>
     <modelRoot contentPath="${module}/lib" type="java_classes">
-      <sourceRoot location="jackson-annotations.jar" />
       <sourceRoot location="jackson-core.jar" />
       <sourceRoot location="jackson-databind.jar" />
-      <sourceRoot location="jspecify.jar" />
-      <sourceRoot location="jtokkit.jar" />
       <sourceRoot location="langchain4j-core.jar" />
-      <sourceRoot location="langchain4j-http-client-jdk.jar" />
-      <sourceRoot location="langchain4j-http-client.jar" />
       <sourceRoot location="langchain4j-open-ai.jar" />
       <sourceRoot location="langchain4j.jar" />
-      <sourceRoot location="opennlp-tools.jar" />
     </modelRoot>
   </models>
   <facets>
