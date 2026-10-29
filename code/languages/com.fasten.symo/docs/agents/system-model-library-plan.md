@@ -302,6 +302,19 @@ in `_130` the obsolete `testPrivatePartUsageRejected` (a private part in a packa
 only the two known plantuml failures. Findings: an item usage with a body is still rejected ("non-empty item usage body"), so the fixtures use `abstract item fuel;`.
 Not run: mutation checks of the importer ternary and the `isInstanceOf` guard (the negative test pins the guard's message, which exists nowhere else), and a test of the constraint change beyond the sandbox root check.
 
+### Iteration 020 step 2 result (2026-10-29, awaiting acceptance)
+
+Connection, interface, flow and binding usages directly in a package body or at file level. Structure: connection and interface usages already
+inherited `ISysMLv2FileContent` through `SysMLv2PartUsage` (step 1); only `SysMLv2FlowUsage` and `SysMLv2BindingUsage` got the interface added. No constraint
+change was needed (`ICanBelongOnlyToSysMLv2PartOwner` already admits package and file parents since step 1), and no importer change: the step 1 guard now lets all four through.
+Connector end references (`SysMLv2UsageRef`) resolve to sibling usages at package level without scoping changes; the sandbox root check confirmed it. Tests: new
+`testRoundtripConnectorUsagesInPackage` (package body) and `testRoundtripFileLevelConnectorUsages` (file level: `part a; part b; port p; port q; connect a to b; bind a = b; flow from a to b; interface i connect p to q;`) in `_070`; in `_130`
+`testPackageLevelBindingRejected` failed as intended once binding became valid and was repurposed to `testPackageLevelBehaviorUsageRejected`
+(`package P { action a; }`, message `... behavior usage element`). Sandbox: `_030_package_level_usages` package `Fleet` extended with parts `front`/`rear`, ports `frontPort`/`rearPort`
+and a connection, binding, flow and interface usage between them, and the same set at file level (`spareB`, `inPort`, `outPort`, connection, `spareBind`, flow, `portLink` next to `spare`); the model check found a real rule (`interface-source-not-port`: interface ends must be ports), so the interface connects the ports.
+Root check shows no problems. Verification: full run 386 tests, only the two known plantuml failures. Not run: a mutation check removing the interface from flow usage
+(the round trip fails if flow were rejected, but that was not demonstrated by removal); scoping of `subsets`/`redefines`/`type` at package level is step 3.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
