@@ -42,7 +42,9 @@
       <concept id="717440187291777381" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectorEnd" flags="ng" index="2uUmlD">
         <child id="717440187291777386" name="chain" index="2uUmlA" />
       </concept>
-      <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE" />
+      <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE">
+        <property id="717440187291777388" name="withKeyword" index="2uUmlw" />
+      </concept>
       <concept id="4527860999823451880" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Member" flags="ngI" index="3815tY">
         <property id="4527860999823451881" name="visibility" index="3815tZ" />
       </concept>
@@ -311,6 +313,70 @@
         <property role="TrG5h" value="fuel" />
         <property role="3eyS6o" value="true" />
       </node>
+      <node concept="8GF0z" id="fNDJb62z$r" role="3Z9vGx">
+        <property role="TrG5h" value="front" />
+      </node>
+      <node concept="8GF0z" id="fNDJb62z$s" role="3Z9vGx">
+        <property role="TrG5h" value="rear" />
+      </node>
+      <node concept="2uUmlE" id="fNDJb62z$t" role="3Z9vGx">
+        <property role="2uUmlw" value="true" />
+        <node concept="2uUmlD" id="fNDJb62z$y" role="2uUmly">
+          <node concept="3wdj9f" id="fNDJb62z$$" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb62z$r" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="fNDJb62z$_" role="2uUmlz">
+          <node concept="3wdj9f" id="fNDJb62z$B" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb62z$s" />
+          </node>
+        </node>
+      </node>
+      <node concept="2ghixz" id="fNDJb62z$C" role="3Z9vGx">
+        <property role="TrG5h" value="axleBind" />
+        <property role="2ghixy" value="true" />
+        <node concept="2uUmlD" id="fNDJb62z$H" role="2uUmly">
+          <node concept="3wdj9f" id="fNDJb62z$J" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb62z$r" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="fNDJb62z$K" role="2uUmlz">
+          <node concept="3wdj9f" id="fNDJb62z$M" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb62z$s" />
+          </node>
+        </node>
+      </node>
+      <node concept="2hSLRH" id="fNDJb62z$N" role="3Z9vGx">
+        <node concept="2uUmlD" id="fNDJb62z$S" role="2uUmly">
+          <node concept="3wdj9f" id="fNDJb62z$U" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb62z$r" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="fNDJb62z$V" role="2uUmlz">
+          <node concept="3wdj9f" id="fNDJb62z$X" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb62z$s" />
+          </node>
+        </node>
+      </node>
+      <node concept="2gGTnd" id="fNDJb62z$Y" role="3Z9vGx">
+        <property role="TrG5h" value="link" />
+        <node concept="2uUmlD" id="fNDJb62z_3" role="2uUmly">
+          <node concept="3wdj9f" id="fNDJb62z_5" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb62z_z" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="fNDJb62z_6" role="2uUmlz">
+          <node concept="3wdj9f" id="fNDJb62z_8" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb62z_$" />
+          </node>
+        </node>
+      </node>
+      <node concept="3xZtmn" id="fNDJb62z_z" role="3Z9vGx">
+        <property role="TrG5h" value="frontPort" />
+      </node>
+      <node concept="3xZtmn" id="fNDJb62z_$" role="3Z9vGx">
+        <property role="TrG5h" value="rearPort" />
+      </node>
     </node>
     <node concept="3ZUotO" id="fNDJb5UJPn" role="2h0jOs">
       <property role="TrG5h" value="Axle" />
@@ -320,6 +386,67 @@
     </node>
     <node concept="8EhU9" id="fNDJb5UJPp" role="2h0jOs">
       <property role="TrG5h" value="limit" />
+    </node>
+    <node concept="8GF0z" id="fNDJb63Gg$" role="2h0jOs">
+      <property role="TrG5h" value="spareB" />
+    </node>
+    <node concept="3xZtmn" id="fNDJb63Gg_" role="2h0jOs">
+      <property role="TrG5h" value="inPort" />
+    </node>
+    <node concept="3xZtmn" id="fNDJb63GgA" role="2h0jOs">
+      <property role="TrG5h" value="outPort" />
+    </node>
+    <node concept="2uUmlE" id="fNDJb63GgB" role="2h0jOs">
+      <property role="2uUmlw" value="true" />
+      <node concept="2uUmlD" id="fNDJb63GgG" role="2uUmly">
+        <node concept="3wdj9f" id="fNDJb63GgI" role="2uUmlA">
+          <ref role="3wdj98" node="fNDJb5UJPo" />
+        </node>
+      </node>
+      <node concept="2uUmlD" id="fNDJb63GgJ" role="2uUmlz">
+        <node concept="3wdj9f" id="fNDJb63GgL" role="2uUmlA">
+          <ref role="3wdj98" node="fNDJb63Gg$" />
+        </node>
+      </node>
+    </node>
+    <node concept="2ghixz" id="fNDJb63GgM" role="2h0jOs">
+      <property role="TrG5h" value="spareBind" />
+      <property role="2ghixy" value="true" />
+      <node concept="2uUmlD" id="fNDJb63GgR" role="2uUmly">
+        <node concept="3wdj9f" id="fNDJb63GgT" role="2uUmlA">
+          <ref role="3wdj98" node="fNDJb5UJPo" />
+        </node>
+      </node>
+      <node concept="2uUmlD" id="fNDJb63GgU" role="2uUmlz">
+        <node concept="3wdj9f" id="fNDJb63GgW" role="2uUmlA">
+          <ref role="3wdj98" node="fNDJb63Gg$" />
+        </node>
+      </node>
+    </node>
+    <node concept="2hSLRH" id="fNDJb63GgX" role="2h0jOs">
+      <node concept="2uUmlD" id="fNDJb63Gh2" role="2uUmly">
+        <node concept="3wdj9f" id="fNDJb63Gh4" role="2uUmlA">
+          <ref role="3wdj98" node="fNDJb5UJPo" />
+        </node>
+      </node>
+      <node concept="2uUmlD" id="fNDJb63Gh5" role="2uUmlz">
+        <node concept="3wdj9f" id="fNDJb63Gh7" role="2uUmlA">
+          <ref role="3wdj98" node="fNDJb63Gg$" />
+        </node>
+      </node>
+    </node>
+    <node concept="2gGTnd" id="fNDJb63Gh8" role="2h0jOs">
+      <property role="TrG5h" value="portLink" />
+      <node concept="2uUmlD" id="fNDJb63Ghd" role="2uUmly">
+        <node concept="3wdj9f" id="fNDJb63Ghf" role="2uUmlA">
+          <ref role="3wdj98" node="fNDJb63Gg_" />
+        </node>
+      </node>
+      <node concept="2uUmlD" id="fNDJb63Ghg" role="2uUmlz">
+        <node concept="3wdj9f" id="fNDJb63Ghi" role="2uUmlA">
+          <ref role="3wdj98" node="fNDJb63GgA" />
+        </node>
+      </node>
     </node>
   </node>
 </model>
