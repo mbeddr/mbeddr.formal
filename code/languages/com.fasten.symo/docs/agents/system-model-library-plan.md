@@ -346,6 +346,22 @@ guard is now the first statement of the method (one `MOVE_CHILD`; the interface 
 (message "import inside interface body", already correct, a regression guard). Mutation proof: before the fix three of them failed with the NPE message (exit code 3), after it all 16 tests of the root pass.
 Full run: 400 tests, only the two known plantuml failures.
 
+### Iteration 022: `ref` usages and keyword-less directed features (2026-10-29, awaiting acceptance)
+
+**Design (user, 2026-10-29: "ok with ReferenceUsage, import ref inside item def body"):** a generic `SysMLv2ReferenceUsage` (extends `SysMLv2Usage`; children `type`, `multiplicity`, `direction`; no body, no value) for
+`ref x : D;`, `in ref x`, `ref redefines y;` and the keyword-less `in x :> T;`; a boolean `isReference` on `SysMLv2Usage` for `ref part`, `ref item`, `ref port`, `ref attribute`
+(flag cell + textGen after `abstract`). A generic `SysMLv2DefinitionRef` (type of a reference usage: any `SysMLv2Definition`, same scope pattern as `PortDefinitionRef`; the aspects were deep-copied).
+`ReferenceUsage` is a member of part, port, item and attribute bodies.
+**Importer:** `buildReferenceUsage(RefPrefixContext, UsageContext)` behind `visitReferenceUsage` / `visitDefaultReferenceUsage` (dispatched from `visitNonOccurrenceUsageElement`); the four usage visitors
+set `isReference` through `extractReference`; the "ref usage prefix" throw in `extractAbstract` is gone. Named rejections: value assignment, non-empty body, multiple/qualified typing, `end ref`, `derived`/`variation`/`constant` prefixes.
+**Known, intended:** the keyword-less `in x :> T;` re-emits as `in ref x :> T;` (equivalent per the grammar, `defaultReferenceUsage` = `refPrefix usage`).
+**Tests:** new `_270_ReferenceUsageRoundtripTest` (3: `ref part`/`ref`/`in ref` in a part def, keyword-less `in`/`out` in a port def, `ref item` + `ref redefines` in an item def); `_130_ImporterRejectionMatrixTest`
++5 (value, body, multiple typing, `end ref`, `derived ref`) and `MatrixCase18` now uses `end x : D;` (`ref x : D;` imports now); new `_120_ReferenceUsageTypeScope` (`DefinitionRef` sees port/part/item defs and the enclosing def, not the comment).
+Sandbox: new root `_040_reference_usages` in `_100_manually_written` (directed reference usages in a port def, `ref part`/`ref`/`ref item` in a part def, `ref item` in an item def; root check clean).
+**Mutation proofs (importer + test models rebuilt):** `extractReference` always false fails the part-def and item-def round trips (`ref ` lost); `extractDirectionOf` always null fails the port-def round trip; deleting the value guard fails
+`testValueOnReferenceUsageRejected` ("expected rejection"); dropping one expected node fails the scope test (`expected:<[..3] but was:<[..4]`). All restored and rebuilt.
+Full run: 409 tests (400 + 9), only the two known plantuml failures.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -383,7 +399,7 @@ iterations.
 - 019 visibility on package members: usages (step 1 accepted: part, attribute, connection, interface; step 2 accepted: port, item, metadata; step 3 accepted: flow, binding; action usages stay unsupported by the importer).
 - 020 usages directly in a package body (all usage kinds; new from the 021 audit).
 - 021 connectivity audit (done 2026-10-29, result above).
-- 022 `ref` usages and keyword-less directed features (`ref x : D`, `ref part`, `in x :> T` in a port def).
+- 022 `ref` usages and keyword-less directed features (`ref x : D`, `ref part`, `in x :> T` in a port def) (done 2026-10-29, awaiting acceptance).
 - 023 `end` features in connection defs and interface defs (`end source : T :>> D::source`, `end x : T` in an interface def).
 - 024 named connector and interface ends (`t ::> transmission.drive`).
 - 025 guard for `import` in a definition body (done 2026-10-29, awaiting acceptance).
