@@ -20,6 +20,9 @@
         <child id="8930763252717678371" name="content" index="8EhVZ" />
       </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
+      <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz">
+        <property id="4376090928952104929" name="withKeyword" index="2ghixy" />
+      </concept>
       <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
       <concept id="5531643499102778612" name="com.symo.sysmlv2.baselan.structure.ISysMLv2QualifiedRef" flags="ngI" index="gQIM0">
         <reference id="5531643499102778613" name="namespace" index="gQIM1" />
@@ -264,6 +267,21 @@
         <node concept="2uUmlD" id="fNDJb5iQR0" role="2uUmlz">
           <node concept="3wdj9f" id="fNDJb5iQR2" role="2uUmlA">
             <ref role="3wdj98" node="fNDJb5ewri" resolve="fuelIn" />
+          </node>
+        </node>
+      </node>
+      <node concept="2ghixz" id="fNDJb5upqd" role="3w00ZY">
+        <property role="TrG5h" value="fuelBind" />
+        <property role="3815tZ" value="6mYk_gjY8wN/public" />
+        <property role="2ghixy" value="true" />
+        <node concept="2uUmlD" id="fNDJb5upqi" role="2uUmly">
+          <node concept="3wdj9f" id="fNDJb5upqk" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb5ewri" />
+          </node>
+        </node>
+        <node concept="2uUmlD" id="fNDJb5upql" role="2uUmlz">
+          <node concept="3wdj9f" id="fNDJb5upqn" role="2uUmlA">
+            <ref role="3wdj98" node="fNDJb5ewrj" />
           </node>
         </node>
       </node>
