@@ -248,19 +248,22 @@ of the importer apply line and of the port editor component, and the negative te
 
 ### Iteration 019 step 3 result (2026-10-29, implemented, awaiting user acceptance)
 
-Visibility on flow usages in bodies, the last usage kind in 019. Deviation from the plan: flow is the only action-family usage that gets
-visibility. `SysMLv2ActionUsage` is an abstract placeholder (the importer rejects action bodies), so `SysMLv2ActionUsage` now implements
-`ISysMLv2Member` and flow inherits it. Membership through action usages is only exercised through flow. Binding usages are not done: there is no
-binding concept in the language, so binding needs a new concept, editor, textGen and importer visit (`visitBindingConnectorAsUsage` exists but has
-no concept target). That is a scope decision and waits for the user. Editor: the shared `ISysMLv2Member_Visibility` component at index 0 of the
-flow usage editor. TextGen: the visibility `IfStatement` starts the flow body; the flow keyword follows it. Importer: no code change. Tests: one
-positive round trip in `_060` (`testRoundtripPrivateFlowUsageInBody`, `private flow from tank to engine`). Sandbox: `private flow fuelFlow from
-fuelOut to fuelIn;` in `Vehicle` of `_020_visibility_on_usages`. Root check of that root: only the accepted nullable-enum errors on the unset
-`visibility` of `Vehicle` and `Safety`. Verification: full run 382 tests, only the two known plantuml failures. Mutation: the constant `" "` after
-`${node.visibility.name}` in the flow textGen's visibility branch set to empty fails `testRoundtripPrivateFlowUsageInBody` and no other test; the
-restore to `" "` is byte-identical to the commit (no diff), and the rerun is green except the two plantuml failures. Not run: mutations of the flow
-editor component and of the importer apply line, and a negative test for a body-level action usage (the importer does not parse action bodies, so
-none is possible yet).
+Visibility on flow and binding usages in bodies, the last usage kinds in 019. Deviation from the plan: flow is the only action-family usage that
+gets visibility. `SysMLv2ActionUsage` is an abstract placeholder (the importer rejects action bodies), so `SysMLv2ActionUsage` now implements
+`ISysMLv2Member` and flow inherits it. Membership through action usages is only exercised through flow. Binding: `SysMLv2BindingUsage` already
+existed (alias `bind`, extends `SysMLv2Usage`, with its editor, textGen and importer visit), so it only needed the member interface: it implements
+`ISysMLv2Member` directly, and its editor and textGen got the visibility component and `IfStatement`. Flow editor: the shared
+`ISysMLv2Member_Visibility` component at index 0 of the flow usage editor. TextGen: the visibility `IfStatement` starts the flow body; the flow
+keyword follows it. Importer: no code change. Tests: two positive round trips in `_060` (`testRoundtripPrivateFlowUsageInBody`, `private flow from
+tank to engine`; `testRoundtripPrivateBindingUsageInBody`, `private bind tank = engine`). Sandbox: `private flow fuelFlow from fuelOut to fuelIn;`
+and `public binding fuelBind bind fuelIn = fuelOut;` in `Vehicle` of `_020_visibility_on_usages`. Root check of that root: only the accepted
+nullable-enum errors on the unset `visibility` of `Vehicle` and `Safety`. Verification: full run 383 tests, only the two known plantuml failures.
+Mutation, flow: the constant `" "` after `${node.visibility.name}` in the flow textGen's visibility branch set to empty fails
+`testRoundtripPrivateFlowUsageInBody` and no other test; the restore to `" "` is byte-identical to the commit (no diff), and the rerun is green
+except the two plantuml failures. Mutation, binding: the same constant in the binding textGen's visibility branch set to empty fails
+`testRoundtripPrivateBindingUsageInBody` and no other test; restored, and the rerun is green except the two plantuml failures. Not run: mutations of the
+flow and binding editor components and of the importer apply line, and a negative test for a body-level action usage (the importer does not parse
+action bodies, so none is possible yet).
 
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
@@ -296,7 +299,7 @@ iterations.
 - 018d visibility on `package` and `library package`, named rejection reworded for usages, 21-file probe (done).
 - 018e (follow-up) `SysMLv2Import` implements `ISysMLv2Member` and drops its own `visibility` property (one step; done).
 - 018f (dropped 2026-10-28, user decision) definitions nested in definition bodies (`visitDefinitionBodyItemContent` rejects them by name today). Parked: build only if a probe or the vehicle example shows a need; an audit of container/nested kinds comes first.
-- 019 visibility on package members: usages (step 1 accepted: part, attribute, connection, interface; step 2 implemented, awaiting acceptance: port, item, metadata; step 3 implemented, awaiting acceptance: flow; binding not done, needs a new concept, scope decision pending).
+- 019 visibility on package members: usages (step 1 accepted: part, attribute, connection, interface; step 2 implemented, awaiting acceptance: port, item, metadata; step 3 implemented, awaiting acceptance: flow, binding; action usages stay unsupported by the importer).
 - 020 `ref` usages (importer only, concept exists).
 - 021 connectivity audit (read-only, measured): Connections, Interfaces, Items, Flows files and the vehicle example.
 - 022 `end` features (build from the audit; survey first).
