@@ -309,12 +309,12 @@
         <property role="2ghixy" value="true" />
         <node concept="2uUmlD" id="fNDJb5upqi" role="2uUmly">
           <node concept="3wdj9f" id="fNDJb5upqk" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb5ewri" />
+            <ref role="3wdj98" node="fNDJb5ewri" resolve="fuelIn" />
           </node>
         </node>
         <node concept="2uUmlD" id="fNDJb5upql" role="2uUmlz">
           <node concept="3wdj9f" id="fNDJb5upqn" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb5ewrj" />
+            <ref role="3wdj98" node="fNDJb5ewrj" resolve="fuelOut" />
           </node>
         </node>
       </node>
@@ -350,13 +350,14 @@
       <node concept="2uUmlE" id="fNDJb62z$t" role="3Z9vGx">
         <property role="2uUmlw" value="true" />
         <node concept="2uUmlD" id="fNDJb62z$y" role="2uUmly">
+          <property role="TrG5h" value="source" />
           <node concept="3wdj9f" id="fNDJb62z$$" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb62z$r" />
+            <ref role="3wdj98" node="fNDJb62z$r" resolve="front" />
           </node>
         </node>
         <node concept="2uUmlD" id="fNDJb62z$_" role="2uUmlz">
           <node concept="3wdj9f" id="fNDJb62z$B" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb62z$s" />
+            <ref role="3wdj98" node="fNDJb62z$s" resolve="rear" />
           </node>
         </node>
       </node>
@@ -365,37 +366,39 @@
         <property role="2ghixy" value="true" />
         <node concept="2uUmlD" id="fNDJb62z$H" role="2uUmly">
           <node concept="3wdj9f" id="fNDJb62z$J" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb62z$r" />
+            <ref role="3wdj98" node="fNDJb62z$r" resolve="front" />
           </node>
         </node>
         <node concept="2uUmlD" id="fNDJb62z$K" role="2uUmlz">
           <node concept="3wdj9f" id="fNDJb62z$M" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb62z$s" />
+            <ref role="3wdj98" node="fNDJb62z$s" resolve="rear" />
           </node>
         </node>
       </node>
       <node concept="2hSLRH" id="fNDJb62z$N" role="3Z9vGx">
         <node concept="2uUmlD" id="fNDJb62z$S" role="2uUmly">
           <node concept="3wdj9f" id="fNDJb62z$U" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb62z$r" />
+            <ref role="3wdj98" node="fNDJb62z$r" resolve="front" />
           </node>
         </node>
         <node concept="2uUmlD" id="fNDJb62z$V" role="2uUmlz">
           <node concept="3wdj9f" id="fNDJb62z$X" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb62z$s" />
+            <ref role="3wdj98" node="fNDJb62z$s" resolve="rear" />
           </node>
         </node>
       </node>
       <node concept="2gGTnd" id="fNDJb62z$Y" role="3Z9vGx">
         <property role="TrG5h" value="link" />
         <node concept="2uUmlD" id="fNDJb62z_3" role="2uUmly">
+          <property role="TrG5h" value="s" />
           <node concept="3wdj9f" id="fNDJb62z_5" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb62z_z" />
+            <ref role="3wdj98" node="fNDJb62z_z" resolve="frontPort" />
           </node>
         </node>
         <node concept="2uUmlD" id="fNDJb62z_6" role="2uUmlz">
+          <property role="TrG5h" value="t" />
           <node concept="3wdj9f" id="fNDJb62z_8" role="2uUmlA">
-            <ref role="3wdj98" node="fNDJb62z_$" />
+            <ref role="3wdj98" node="fNDJb62z_$" resolve="rearPort" />
           </node>
         </node>
       </node>
@@ -408,13 +411,13 @@
       <node concept="8GF0z" id="fNDJb63Xkr" role="3Z9vGx">
         <property role="TrG5h" value="narrowWheel" />
         <node concept="8CKM2" id="fNDJb63Xks" role="3w00ZT">
-          <ref role="8CKMW" node="fNDJb5UJPj" />
+          <ref role="8CKMW" node="fNDJb5UJPj" resolve="Wheel" />
         </node>
       </node>
       <node concept="8GF0z" id="fNDJb63Xkt" role="3Z9vGx">
         <property role="TrG5h" value="wideWheel" />
         <node concept="3wdj9f" id="fNDJb63Xku" role="3wdj9c">
-          <ref role="3wdj98" node="fNDJb63Xkr" />
+          <ref role="3wdj98" node="fNDJb63Xkr" resolve="narrowWheel" />
         </node>
       </node>
       <node concept="8GF0z" id="fNDJb63Xkv" role="3Z9vGx">
@@ -426,11 +429,11 @@
       <node concept="8GF0z" id="fNDJb63Xkx" role="3Z9vGx">
         <property role="TrG5h" value="vehicleC2" />
         <node concept="3wdj9f" id="fNDJb63Xky" role="3wdj9c">
-          <ref role="3wdj98" node="fNDJb63Xkv" />
+          <ref role="3wdj98" node="fNDJb63Xkv" resolve="vehicleC1" />
         </node>
         <node concept="8GF0z" id="fNDJb63Xkz" role="8GFen">
           <node concept="3wdj9f" id="fNDJb63Xk$" role="3wdj9d">
-            <ref role="3wdj98" node="fNDJb63Xkw" />
+            <ref role="3wdj98" node="fNDJb63Xkw" resolve="axleAssembly" />
           </node>
         </node>
       </node>
@@ -457,12 +460,12 @@
       <property role="2uUmlw" value="true" />
       <node concept="2uUmlD" id="fNDJb63GgG" role="2uUmly">
         <node concept="3wdj9f" id="fNDJb63GgI" role="2uUmlA">
-          <ref role="3wdj98" node="fNDJb5UJPo" />
+          <ref role="3wdj98" node="fNDJb5UJPo" resolve="spare" />
         </node>
       </node>
       <node concept="2uUmlD" id="fNDJb63GgJ" role="2uUmlz">
         <node concept="3wdj9f" id="fNDJb63GgL" role="2uUmlA">
-          <ref role="3wdj98" node="fNDJb63Gg$" />
+          <ref role="3wdj98" node="fNDJb63Gg$" resolve="spareB" />
         </node>
       </node>
     </node>
@@ -471,24 +474,24 @@
       <property role="2ghixy" value="true" />
       <node concept="2uUmlD" id="fNDJb63GgR" role="2uUmly">
         <node concept="3wdj9f" id="fNDJb63GgT" role="2uUmlA">
-          <ref role="3wdj98" node="fNDJb5UJPo" />
+          <ref role="3wdj98" node="fNDJb5UJPo" resolve="spare" />
         </node>
       </node>
       <node concept="2uUmlD" id="fNDJb63GgU" role="2uUmlz">
         <node concept="3wdj9f" id="fNDJb63GgW" role="2uUmlA">
-          <ref role="3wdj98" node="fNDJb63Gg$" />
+          <ref role="3wdj98" node="fNDJb63Gg$" resolve="spareB" />
         </node>
       </node>
     </node>
     <node concept="2hSLRH" id="fNDJb63GgX" role="2h0jOs">
       <node concept="2uUmlD" id="fNDJb63Gh2" role="2uUmly">
         <node concept="3wdj9f" id="fNDJb63Gh4" role="2uUmlA">
-          <ref role="3wdj98" node="fNDJb5UJPo" />
+          <ref role="3wdj98" node="fNDJb5UJPo" resolve="spare" />
         </node>
       </node>
       <node concept="2uUmlD" id="fNDJb63Gh5" role="2uUmlz">
         <node concept="3wdj9f" id="fNDJb63Gh7" role="2uUmlA">
-          <ref role="3wdj98" node="fNDJb63Gg$" />
+          <ref role="3wdj98" node="fNDJb63Gg$" resolve="spareB" />
         </node>
       </node>
     </node>
@@ -496,22 +499,22 @@
       <property role="TrG5h" value="portLink" />
       <node concept="2uUmlD" id="fNDJb63Ghd" role="2uUmly">
         <node concept="3wdj9f" id="fNDJb63Ghf" role="2uUmlA">
-          <ref role="3wdj98" node="fNDJb63Gg_" />
+          <ref role="3wdj98" node="fNDJb63Gg_" resolve="inPort" />
         </node>
       </node>
       <node concept="2uUmlD" id="fNDJb63Ghg" role="2uUmlz">
         <node concept="3wdj9f" id="fNDJb63Ghi" role="2uUmlA">
-          <ref role="3wdj98" node="fNDJb63GgA" />
+          <ref role="3wdj98" node="fNDJb63GgA" resolve="outPort" />
         </node>
       </node>
     </node>
     <node concept="8GF0z" id="fNDJb63Xk_" role="2h0jOs">
       <property role="TrG5h" value="spareAxle" />
       <node concept="8CKM2" id="fNDJb63XkA" role="3w00ZT">
-        <ref role="8CKMW" node="fNDJb5UJPn" />
+        <ref role="8CKMW" node="fNDJb5UJPn" resolve="Axle" />
       </node>
       <node concept="3wdj9f" id="fNDJb63XkB" role="3wdj9c">
-        <ref role="3wdj98" node="fNDJb5UJPo" />
+        <ref role="3wdj98" node="fNDJb5UJPo" resolve="spare" />
       </node>
     </node>
   </node>
