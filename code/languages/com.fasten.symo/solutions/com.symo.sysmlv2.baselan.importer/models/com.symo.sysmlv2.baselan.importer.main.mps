@@ -4139,6 +4139,32 @@
         </node>
       </node>
       <node concept="3clFbS" id="6ohPCO0AVSZ" role="3clF47">
+        <node concept="3clFbJ" id="6ohPCO0AVT0" role="3cqZAp">
+          <node concept="3y3z36" id="6ohPCO0AVT3" role="3clFbw">
+            <node concept="2OqwBi" id="6ohPCO0AVT6" role="3uHU7B">
+              <node concept="37vLTw" id="6ohPCO0AVT9" role="2Oq$k0">
+                <ref role="3cqZAo" node="6ohPCO0AVSW" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="6ohPCO0AVTa" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext.importRule()" resolve="importRule" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="6ohPCO0AVTb" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="6ohPCO0AVTc" role="3clFbx">
+            <node concept="YS8fn" id="6ohPCO0AVTd" role="3cqZAp">
+              <node concept="2ShNRf" id="6ohPCO0AVTf" role="YScLw">
+                <node concept="1pGfFk" id="6ohPCO0AVTh" role="2ShVmc">
+                  <property role="373rjd" value="true" />
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="Xl_RD" id="6ohPCO0AVTi" role="37wK5m">
+                    <property role="Xl_RC" value="Unsupported SysML v2 construct: import inside definition body" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3clFbJ" id="6ohPCO0NdFR" role="3cqZAp">
           <node concept="1Wc70l" id="6ohPCO0NdFS" role="3clFbw">
             <node concept="1Wc70l" id="6ohPCO0NdFT" role="3uHU7B">
@@ -4194,32 +4220,6 @@
                   <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
                   <node concept="Xl_RD" id="6ohPCO0NetI" role="37wK5m">
                     <property role="Xl_RC" value="Unsupported SysML v2 construct: visibility prefix on alias" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="6ohPCO0AVT0" role="3cqZAp">
-          <node concept="3y3z36" id="6ohPCO0AVT3" role="3clFbw">
-            <node concept="2OqwBi" id="6ohPCO0AVT6" role="3uHU7B">
-              <node concept="37vLTw" id="6ohPCO0AVT9" role="2Oq$k0">
-                <ref role="3cqZAo" node="6ohPCO0AVSW" resolve="ctx" />
-              </node>
-              <node concept="liA8E" id="6ohPCO0AVTa" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext.importRule()" resolve="importRule" />
-              </node>
-            </node>
-            <node concept="10Nm6u" id="6ohPCO0AVTb" role="3uHU7w" />
-          </node>
-          <node concept="3clFbS" id="6ohPCO0AVTc" role="3clFbx">
-            <node concept="YS8fn" id="6ohPCO0AVTd" role="3cqZAp">
-              <node concept="2ShNRf" id="6ohPCO0AVTf" role="YScLw">
-                <node concept="1pGfFk" id="6ohPCO0AVTh" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="6ohPCO0AVTi" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: import inside definition body" />
                   </node>
                 </node>
               </node>
