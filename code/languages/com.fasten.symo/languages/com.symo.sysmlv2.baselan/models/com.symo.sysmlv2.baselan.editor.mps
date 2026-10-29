@@ -3909,6 +3909,9 @@
     <property role="3GE5qa" value="binding" />
     <ref role="1XX52x" to="5rf1:3MUZSeGZXvw" resolve="SysMLv2BindingUsage" />
     <node concept="3EZMnI" id="3MUZSeGZZg6" role="2wV5jI">
+      <node concept="PMmxH" id="fNDJb5ri6e" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
+      </node>
       <node concept="1kHk_G" id="6ohPCNYGp4g" role="3EZMnx">
         <property role="ZjSer" value="abstract" />
         <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
