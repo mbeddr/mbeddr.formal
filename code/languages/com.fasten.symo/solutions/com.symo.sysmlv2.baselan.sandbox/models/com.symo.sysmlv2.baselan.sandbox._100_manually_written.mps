@@ -55,11 +55,16 @@
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
+        <child id="8930763252716192330" name="content" index="8GFen" />
         <child id="7140692429574298135" name="type" index="3w00ZT" />
       </concept>
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
         <child id="7140692429574298127" name="specializes" index="3w00Zx" />
         <child id="7140692429574298128" name="content" index="3w00ZY" />
+      </concept>
+      <concept id="7140692429575677856" name="com.symo.sysmlv2.baselan.structure.SysMLv2Usage" flags="ng" index="3wdj9e">
+        <child id="7140692429575677858" name="subsets" index="3wdj9c" />
+        <child id="7140692429575677859" name="redefines" index="3wdj9d" />
       </concept>
       <concept id="7140692429575677857" name="com.symo.sysmlv2.baselan.structure.SysMLv2UsageRef" flags="ng" index="3wdj9f">
         <reference id="7140692429575677862" name="usage" index="3wdj98" />
@@ -377,6 +382,35 @@
       <node concept="3xZtmn" id="fNDJb62z_$" role="3Z9vGx">
         <property role="TrG5h" value="rearPort" />
       </node>
+      <node concept="8GF0z" id="fNDJb63Xkr" role="3Z9vGx">
+        <property role="TrG5h" value="narrowWheel" />
+        <node concept="8CKM2" id="fNDJb63Xks" role="3w00ZT">
+          <ref role="8CKMW" node="fNDJb5UJPj" />
+        </node>
+      </node>
+      <node concept="8GF0z" id="fNDJb63Xkt" role="3Z9vGx">
+        <property role="TrG5h" value="wideWheel" />
+        <node concept="3wdj9f" id="fNDJb63Xku" role="3wdj9c">
+          <ref role="3wdj98" node="fNDJb63Xkr" />
+        </node>
+      </node>
+      <node concept="8GF0z" id="fNDJb63Xkv" role="3Z9vGx">
+        <property role="TrG5h" value="vehicleC1" />
+        <node concept="8GF0z" id="fNDJb63Xkw" role="8GFen">
+          <property role="TrG5h" value="axleAssembly" />
+        </node>
+      </node>
+      <node concept="8GF0z" id="fNDJb63Xkx" role="3Z9vGx">
+        <property role="TrG5h" value="vehicleC2" />
+        <node concept="3wdj9f" id="fNDJb63Xky" role="3wdj9c">
+          <ref role="3wdj98" node="fNDJb63Xkv" />
+        </node>
+        <node concept="8GF0z" id="fNDJb63Xkz" role="8GFen">
+          <node concept="3wdj9f" id="fNDJb63Xk$" role="3wdj9d">
+            <ref role="3wdj98" node="fNDJb63Xkw" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3ZUotO" id="fNDJb5UJPn" role="2h0jOs">
       <property role="TrG5h" value="Axle" />
@@ -446,6 +480,15 @@
         <node concept="3wdj9f" id="fNDJb63Ghi" role="2uUmlA">
           <ref role="3wdj98" node="fNDJb63GgA" />
         </node>
+      </node>
+    </node>
+    <node concept="8GF0z" id="fNDJb63Xk_" role="2h0jOs">
+      <property role="TrG5h" value="spareAxle" />
+      <node concept="8CKM2" id="fNDJb63XkA" role="3w00ZT">
+        <ref role="8CKMW" node="fNDJb5UJPn" />
+      </node>
+      <node concept="3wdj9f" id="fNDJb63XkB" role="3wdj9c">
+        <ref role="3wdj98" node="fNDJb5UJPo" />
       </node>
     </node>
   </node>
