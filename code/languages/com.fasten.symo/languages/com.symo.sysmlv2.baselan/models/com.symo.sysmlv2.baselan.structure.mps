@@ -349,6 +349,9 @@
     <node concept="PrWs8" id="fNDJb49kq3" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
+    <node concept="PrWs8" id="fNDJb5Cvws" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6coPuU2Bx1J">
     <property role="EcuMT" value="7140692429566251119" />
@@ -517,6 +520,9 @@
     <node concept="PrWs8" id="fNDJb4FmM$" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
+    <node concept="PrWs8" id="fNDJb5Cvwm" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU2Tg1U">
     <property role="EcuMT" value="7140692429570900090" />
@@ -646,6 +652,9 @@
     </node>
     <node concept="PrWs8" id="fNDJb4FmMu" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+    <node concept="PrWs8" id="fNDJb5Cvwg" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
   </node>
   <node concept="PlHQZ" id="6coPuU36dCe">

@@ -76,6 +76,9 @@
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
       </concept>
+      <concept id="1079359253375" name="jetbrains.mps.baseLanguage.structure.ParenthesizedExpression" flags="nn" index="1eOMI4">
+        <child id="1079359253376" name="expression" index="1eOMHV" />
+      </concept>
       <concept id="1081516740877" name="jetbrains.mps.baseLanguage.structure.NotExpression" flags="nn" index="3fqX7Q">
         <child id="1081516765348" name="expression" index="3fr31v" />
       </concept>
@@ -89,6 +92,7 @@
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
+        <property id="6527505295402282731" name="isMultiline" index="Vunmg" />
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
@@ -179,6 +183,7 @@
       <node concept="3clFbS" id="6coPuU3aqOH" role="2VODD2">
         <node concept="3clFbF" id="6coPuU3bujT" role="3cqZAp">
           <node concept="22lmx$" id="3MUZSeG2pgu" role="3clFbG">
+            <property role="Vunmg" value="true" />
             <node concept="22lmx$" id="3MUZSeG2pgk" role="3uHU7B">
               <node concept="2OqwBi" id="3MUZSeG2pgn" role="3uHU7B">
                 <node concept="nLn13" id="3MUZSeG2pgq" role="2Oq$k0" />
@@ -197,11 +202,36 @@
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="3MUZSeG2pgC" role="3uHU7w">
-              <node concept="nLn13" id="3MUZSeG2pgF" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="3MUZSeG2pgG" role="2OqNvi">
-                <node concept="chp4Y" id="3MUZSeG2pgI" role="cj9EA">
-                  <ref role="cht4Q" to="5rf1:6coPuU2Tg1T" resolve="SysMLv2PortUsage" />
+            <node concept="1eOMI4" id="fNDJb5UKTf" role="3uHU7w">
+              <node concept="22lmx$" id="fNDJb5UKTh" role="1eOMHV">
+                <property role="Vunmg" value="true" />
+                <node concept="2OqwBi" id="fNDJb5UKTk" role="3uHU7B">
+                  <node concept="nLn13" id="fNDJb5UKTn" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="fNDJb5UKTo" role="2OqNvi">
+                    <node concept="chp4Y" id="fNDJb5UKTq" role="cj9EA">
+                      <ref role="cht4Q" to="5rf1:6coPuU2Tg1T" resolve="SysMLv2PortUsage" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="1eOMI4" id="fNDJb5UKTr" role="3uHU7w">
+                  <node concept="22lmx$" id="fNDJb5UKTt" role="1eOMHV">
+                    <node concept="2OqwBi" id="fNDJb5UKTw" role="3uHU7B">
+                      <node concept="nLn13" id="fNDJb5UKTz" role="2Oq$k0" />
+                      <node concept="1mIQ4w" id="fNDJb5UKT$" role="2OqNvi">
+                        <node concept="chp4Y" id="fNDJb5UKTA" role="cj9EA">
+                          <ref role="cht4Q" to="5rf1:3PUPjB2nMR4" resolve="SysMLv2Package" />
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="fNDJb5UKTB" role="3uHU7w">
+                      <node concept="nLn13" id="fNDJb5UKTE" role="2Oq$k0" />
+                      <node concept="1mIQ4w" id="fNDJb5UKTF" role="2OqNvi">
+                        <node concept="chp4Y" id="fNDJb5UKTH" role="cj9EA">
+                          <ref role="cht4Q" to="5rf1:3DMRBeFsYdC" resolve="SysMLv2File" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
                 </node>
               </node>
             </node>
