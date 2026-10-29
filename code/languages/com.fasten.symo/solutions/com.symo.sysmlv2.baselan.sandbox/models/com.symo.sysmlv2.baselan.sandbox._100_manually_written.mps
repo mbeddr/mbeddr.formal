@@ -46,6 +46,9 @@
       <concept id="4527860999823451880" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Member" flags="ngI" index="3815tY">
         <property id="4527860999823451881" name="visibility" index="3815tZ" />
       </concept>
+      <concept id="7267068243734581638" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Type" flags="ngI" index="3eyS6m">
+        <property id="7267068243734581640" name="isAbstract" index="3eyS6o" />
+      </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
       </concept>
@@ -285,6 +288,38 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="fNDJb5UJPg">
+    <property role="TrG5h" value="_030_package_level_usages" />
+    <node concept="3Z9vzX" id="fNDJb5UJPh" role="2h0jOs">
+      <property role="TrG5h" value="Fleet" />
+      <node concept="8GF0z" id="fNDJb5UJPi" role="3Z9vGx">
+        <property role="TrG5h" value="car" />
+      </node>
+      <node concept="3ZUotO" id="fNDJb5UJPj" role="3Z9vGx">
+        <property role="TrG5h" value="Wheel" />
+      </node>
+      <node concept="8EhU9" id="fNDJb5UJPk" role="3Z9vGx">
+        <property role="TrG5h" value="mass" />
+        <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+      </node>
+      <node concept="3xZtmn" id="fNDJb5UJPl" role="3Z9vGx">
+        <property role="TrG5h" value="hub" />
+      </node>
+      <node concept="3w00Zz" id="fNDJb5UJPm" role="3Z9vGx">
+        <property role="TrG5h" value="fuel" />
+        <property role="3eyS6o" value="true" />
+      </node>
+    </node>
+    <node concept="3ZUotO" id="fNDJb5UJPn" role="2h0jOs">
+      <property role="TrG5h" value="Axle" />
+    </node>
+    <node concept="8GF0z" id="fNDJb5UJPo" role="2h0jOs">
+      <property role="TrG5h" value="spare" />
+    </node>
+    <node concept="8EhU9" id="fNDJb5UJPp" role="2h0jOs">
+      <property role="TrG5h" value="limit" />
     </node>
   </node>
 </model>
