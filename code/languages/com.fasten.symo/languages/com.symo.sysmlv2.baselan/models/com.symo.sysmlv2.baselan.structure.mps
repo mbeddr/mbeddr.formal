@@ -1502,6 +1502,30 @@
     <node concept="PrWs8" id="fNDJb6KWCI" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
+    <node concept="1TJgyj" id="fNDJb7RVm8" role="1TKVEi">
+      <property role="IQ2ns" value="284754763120096648" />
+      <property role="20kJfa" value="value" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+    <node concept="PrWs8" id="fNDJb7RVme" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="fNDJb8FIGU">
+    <property role="EcuMT" value="284754763133676346" />
+    <property role="TrG5h" value="SysMLv2PlainTextExpression" />
+    <property role="R4oN_" value="arbitrary SysML v2 expression kept as uninterpreted source text (e.g. 10.0 [N * m])" />
+    <property role="3GE5qa" value="expression" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" />
+    <node concept="1TJgyi" id="fNDJb8FIGV" role="1TKVEl">
+      <property role="IQ2nx" value="284754763133676347" />
+      <property role="TrG5h" value="expressionText" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="PrWs8" id="fNDJb8FIGW" role="PzmwI">
+      <ref role="PrY4T" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
   </node>
 </model>
 
