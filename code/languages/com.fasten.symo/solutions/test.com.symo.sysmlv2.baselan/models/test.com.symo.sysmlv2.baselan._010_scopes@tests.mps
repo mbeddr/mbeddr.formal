@@ -92,6 +92,13 @@
       <concept id="7267068243654035155" name="com.symo.sysmlv2.baselan.structure.SysMLv2LibraryPackage" flags="ng" index="31n9r3">
         <property id="7267068243654035156" name="isStandard" index="31n9r4" />
       </concept>
+      <concept id="284754763101489698" name="com.symo.sysmlv2.baselan.structure.SysMLv2DefinitionRef" flags="ng" index="35c6Ng">
+        <property id="284754763101489700" name="definitionName" index="35c6Nm" />
+        <reference id="284754763101489701" name="definition" index="35c6Nn" />
+      </concept>
+      <concept id="284754763101489699" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReferenceUsage" flags="ng" index="35c6Nh">
+        <child id="284754763101489703" name="type" index="35c6Nl" />
+      </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
@@ -1057,6 +1064,56 @@
                 </node>
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="fNDJb7Fk$X">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_120_ReferenceUsageTypeScope" />
+    <node concept="1qefOq" id="fNDJb7Fk$Y" role="1SKRRt">
+      <node concept="2h0jOr" id="fNDJb7Fk_0" role="1qenE9">
+        <property role="TrG5h" value="_120_ReferenceUsageTypeScope_file" />
+        <node concept="3Z9vzX" id="fNDJb7Fk_1" role="2h0jOs">
+          <property role="TrG5h" value="p" />
+          <node concept="3xZtmp" id="fNDJb7Fk_2" role="3Z9vGx">
+            <property role="TrG5h" value="DP" />
+          </node>
+          <node concept="3ZUotO" id="fNDJb7Fk_3" role="3Z9vGx">
+            <property role="TrG5h" value="A" />
+          </node>
+          <node concept="3w00Z_" id="fNDJb7Fk_4" role="3Z9vGx">
+            <property role="TrG5h" value="I" />
+          </node>
+          <node concept="3ZUotO" id="fNDJb7Fk_5" role="3Z9vGx">
+            <property role="TrG5h" value="Sys" />
+            <node concept="35c6Nh" id="fNDJb7Fk_6" role="3w00ZY">
+              <property role="TrG5h" value="r" />
+              <node concept="35c6Ng" id="fNDJb7Fk_7" role="35c6Nl">
+                <property role="35c6Nm" value="A" />
+                <ref role="35c6Nn" node="fNDJb7Fk_3" resolve="A" />
+                <node concept="2rqxmr" id="fNDJb7Fk_8" role="lGtFl">
+                  <ref role="1BTHP0" node="fNDJb7Fk_3" />
+                  <node concept="3KTrbX" id="fNDJb7Fk_9" role="3KTr4d">
+                    <ref role="3AHY9a" node="fNDJb7Fk_2" />
+                  </node>
+                  <node concept="3KTrbX" id="fNDJb7Fk_a" role="3KTr4d">
+                    <ref role="3AHY9a" node="fNDJb7Fk_3" />
+                  </node>
+                  <node concept="3KTrbX" id="fNDJb7Fk_b" role="3KTr4d">
+                    <ref role="3AHY9a" node="fNDJb7Fk_4" resolve="I" />
+                  </node>
+                  <node concept="3KTrbX" id="fNDJb7LdgF" role="3KTr4d">
+                    <ref role="3AHY9a" node="fNDJb7Fk_5" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="1_pRso" id="fNDJb7Fk_d" role="3Z9vGx">
+            <property role="1_pRss" value="scope fixture" />
+            <property role="TrG5h" value="ExcludedComment" />
           </node>
         </node>
       </node>
