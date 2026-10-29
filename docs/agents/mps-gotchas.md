@@ -12,11 +12,13 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
-## The model checker does not flag out-of-scope references; a round trip cannot prove scoping either (2026-10-29)
+## The model checker flags out-of-scope references only when the scope is non-empty; an empty scope hides a broken scope function (2026-10-29)
 
-`check_root_node_problems` reports no error when a usage reference (`subsets`/`redefines`) points at a node outside the scope function's result, and a textgen round trip prints
-names, so a wrong scope stays invisible. Prove scoping with a `ScopesTest`/`ScopesExpectedNode` test or by asserting the resolved target in a test method. Separately, textgen prints
-`subsets` as `:>` and `redefines` as `:>>`, so round-trip expected text must use the symbols, not the keywords.
+`check_root_node_problems` reports "The reference X (usage) is out of search scope" when the scope function returns a scope that lacks the target, but stays silent when the scope is
+*empty* (and a textgen round trip prints names, so it cannot see scoping either). Package- and file-level connector/binding/flow/interface ends had an empty scope
+(`scopeOwnerAt` looked only for an `ISysMLv2FeatureOwner` ancestor) and passed every round-trip test and the checker until the
+sandbox check (16 errors, seen once other scopes were fixed) and a `ScopesTest` exposed it. Prove scoping with a `ScopesTest`/`ScopesExpectedNode` test, and mutation-check it (revert the
+scope fix: the test fails with `but was:<[]>`). Separately, textgen prints `subsets` as `:>` and `redefines` as `:>>`, so round-trip expected text must use the symbols, not the keywords.
 
 ## A language MAKE does not regenerate the importer solution; make `com.symo.sysmlv2.baselan.importer.main` itself (2026-10-28)
 
