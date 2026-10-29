@@ -14870,6 +14870,282 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="fNDJb6Jrxr" role="1SL9yI">
+      <property role="TrG5h" value="testImportInPartDefBodyRejected" />
+      <node concept="3cqZAl" id="fNDJb6Jrxu" role="3clF45" />
+      <node concept="3clFbS" id="fNDJb6Jrxv" role="3clF47">
+        <node concept="3J1_TO" id="fNDJb6Jrxw" role="3cqZAp">
+          <node concept="3clFbS" id="fNDJb6Jrxy" role="1zxBo7">
+            <node concept="3cpWs8" id="fNDJb6Jrxz" role="3cqZAp">
+              <node concept="3cpWsn" id="fNDJb6JrxA" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="H_c77" id="fNDJb6JrxC" role="1tU5fm" />
+                <node concept="2YIFZM" id="fNDJb6JrxD" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="fNDJb6JrxE" role="37wK5m">
+                    <property role="Xl_RC" value="package P { part def D { import Q::*; } }" />
+                  </node>
+                  <node concept="Xl_RD" id="fNDJb6JrxF" role="37wK5m">
+                    <property role="Xl_RC" value="ImportInPartDefBodyRejected" />
+                  </node>
+                  <node concept="1jxXqW" id="fNDJb6JrxG" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3xETmq" id="fNDJb6JrxH" role="3cqZAp">
+              <node concept="3_1$Yv" id="fNDJb6JrxI" role="3_9lra">
+                <node concept="Xl_RD" id="fNDJb6JrxJ" role="3_1BAH">
+                  <property role="Xl_RC" value="ImportInPartDefBodyRejected expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="fNDJb6JrxK" role="3cqZAp">
+              <node concept="2YIFZM" id="fNDJb6JrxM" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="fNDJb6JrxN" role="37wK5m">
+                  <ref role="3cqZAo" node="fNDJb6JrxA" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="fNDJb6JrxO" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="fNDJb6JrxP" role="1zxBo5">
+            <node concept="XOnhg" id="fNDJb6JrxT" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="fNDJb6JrxV" role="1tU5fm">
+                <node concept="3uibUv" id="fNDJb6JrxX" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="fNDJb6JrxY" role="1zc67A">
+              <node concept="3vlDli" id="fNDJb6JrxZ" role="3cqZAp">
+                <node concept="Xl_RD" id="fNDJb6Jry2" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: import inside definition body" />
+                </node>
+                <node concept="2OqwBi" id="fNDJb6Jry3" role="3tpDZA">
+                  <node concept="37vLTw" id="fNDJb6Jry6" role="2Oq$k0">
+                    <ref role="3cqZAo" node="fNDJb6JrxT" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="fNDJb6Jry7" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="fNDJb6JrzD" role="1SL9yI">
+      <property role="TrG5h" value="testImportInPortDefBodyRejected" />
+      <node concept="3cqZAl" id="fNDJb6JrzG" role="3clF45" />
+      <node concept="3clFbS" id="fNDJb6JrzH" role="3clF47">
+        <node concept="3J1_TO" id="fNDJb6JrzI" role="3cqZAp">
+          <node concept="3clFbS" id="fNDJb6JrzK" role="1zxBo7">
+            <node concept="3cpWs8" id="fNDJb6JrzL" role="3cqZAp">
+              <node concept="3cpWsn" id="fNDJb6JrzO" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="H_c77" id="fNDJb6JrzQ" role="1tU5fm" />
+                <node concept="2YIFZM" id="fNDJb6JrzR" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="fNDJb6JrzS" role="37wK5m">
+                    <property role="Xl_RC" value="package P { port def D { import Q::*; } }" />
+                  </node>
+                  <node concept="Xl_RD" id="fNDJb6JrzT" role="37wK5m">
+                    <property role="Xl_RC" value="ImportInPortDefBodyRejected" />
+                  </node>
+                  <node concept="1jxXqW" id="fNDJb6JrzU" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3xETmq" id="fNDJb6JrzV" role="3cqZAp">
+              <node concept="3_1$Yv" id="fNDJb6JrzW" role="3_9lra">
+                <node concept="Xl_RD" id="fNDJb6JrzX" role="3_1BAH">
+                  <property role="Xl_RC" value="ImportInPortDefBodyRejected expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="fNDJb6JrzY" role="3cqZAp">
+              <node concept="2YIFZM" id="fNDJb6Jr$0" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="fNDJb6Jr$1" role="37wK5m">
+                  <ref role="3cqZAo" node="fNDJb6JrzO" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="fNDJb6Jr$2" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="fNDJb6Jr$3" role="1zxBo5">
+            <node concept="XOnhg" id="fNDJb6Jr$7" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="fNDJb6Jr$9" role="1tU5fm">
+                <node concept="3uibUv" id="fNDJb6Jr$b" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="fNDJb6Jr$c" role="1zc67A">
+              <node concept="3vlDli" id="fNDJb6Jr$d" role="3cqZAp">
+                <node concept="Xl_RD" id="fNDJb6Jr$g" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: import inside definition body" />
+                </node>
+                <node concept="2OqwBi" id="fNDJb6Jr$h" role="3tpDZA">
+                  <node concept="37vLTw" id="fNDJb6Jr$k" role="2Oq$k0">
+                    <ref role="3cqZAo" node="fNDJb6Jr$7" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="fNDJb6Jr$l" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="fNDJb6Jr_R" role="1SL9yI">
+      <property role="TrG5h" value="testImportInPartUsageBodyRejected" />
+      <node concept="3cqZAl" id="fNDJb6Jr_U" role="3clF45" />
+      <node concept="3clFbS" id="fNDJb6Jr_V" role="3clF47">
+        <node concept="3J1_TO" id="fNDJb6Jr_W" role="3cqZAp">
+          <node concept="3clFbS" id="fNDJb6Jr_Y" role="1zxBo7">
+            <node concept="3cpWs8" id="fNDJb6Jr_Z" role="3cqZAp">
+              <node concept="3cpWsn" id="fNDJb6JrA2" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="H_c77" id="fNDJb6JrA4" role="1tU5fm" />
+                <node concept="2YIFZM" id="fNDJb6JrA5" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="fNDJb6JrA6" role="37wK5m">
+                    <property role="Xl_RC" value="package P { part def A; part a : A { import Q::*; } }" />
+                  </node>
+                  <node concept="Xl_RD" id="fNDJb6JrA7" role="37wK5m">
+                    <property role="Xl_RC" value="ImportInPartUsageBodyRejected" />
+                  </node>
+                  <node concept="1jxXqW" id="fNDJb6JrA8" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3xETmq" id="fNDJb6JrA9" role="3cqZAp">
+              <node concept="3_1$Yv" id="fNDJb6JrAa" role="3_9lra">
+                <node concept="Xl_RD" id="fNDJb6JrAb" role="3_1BAH">
+                  <property role="Xl_RC" value="ImportInPartUsageBodyRejected expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="fNDJb6JrAc" role="3cqZAp">
+              <node concept="2YIFZM" id="fNDJb6JrAe" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="fNDJb6JrAf" role="37wK5m">
+                  <ref role="3cqZAo" node="fNDJb6JrA2" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="fNDJb6JrAg" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="fNDJb6JrAh" role="1zxBo5">
+            <node concept="XOnhg" id="fNDJb6JrAl" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="fNDJb6JrAn" role="1tU5fm">
+                <node concept="3uibUv" id="fNDJb6JrAp" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="fNDJb6JrAq" role="1zc67A">
+              <node concept="3vlDli" id="fNDJb6JrAr" role="3cqZAp">
+                <node concept="Xl_RD" id="fNDJb6JrAu" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: import inside definition body" />
+                </node>
+                <node concept="2OqwBi" id="fNDJb6JrAv" role="3tpDZA">
+                  <node concept="37vLTw" id="fNDJb6JrAy" role="2Oq$k0">
+                    <ref role="3cqZAo" node="fNDJb6JrAl" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="fNDJb6JrAz" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="fNDJb6JrC5" role="1SL9yI">
+      <property role="TrG5h" value="testImportInInterfaceDefBodyRejected" />
+      <node concept="3cqZAl" id="fNDJb6JrC8" role="3clF45" />
+      <node concept="3clFbS" id="fNDJb6JrC9" role="3clF47">
+        <node concept="3J1_TO" id="fNDJb6JrCa" role="3cqZAp">
+          <node concept="3clFbS" id="fNDJb6JrCc" role="1zxBo7">
+            <node concept="3cpWs8" id="fNDJb6JrCd" role="3cqZAp">
+              <node concept="3cpWsn" id="fNDJb6JrCg" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="H_c77" id="fNDJb6JrCi" role="1tU5fm" />
+                <node concept="2YIFZM" id="fNDJb6JrCj" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="fNDJb6JrCk" role="37wK5m">
+                    <property role="Xl_RC" value="package P { interface def I { import Q::*; } }" />
+                  </node>
+                  <node concept="Xl_RD" id="fNDJb6JrCl" role="37wK5m">
+                    <property role="Xl_RC" value="ImportInInterfaceDefBodyRejected" />
+                  </node>
+                  <node concept="1jxXqW" id="fNDJb6JrCm" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3xETmq" id="fNDJb6JrCn" role="3cqZAp">
+              <node concept="3_1$Yv" id="fNDJb6JrCo" role="3_9lra">
+                <node concept="Xl_RD" id="fNDJb6JrCp" role="3_1BAH">
+                  <property role="Xl_RC" value="ImportInInterfaceDefBodyRejected expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="fNDJb6JrCq" role="3cqZAp">
+              <node concept="2YIFZM" id="fNDJb6JrCs" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="fNDJb6JrCt" role="37wK5m">
+                  <ref role="3cqZAo" node="fNDJb6JrCg" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="fNDJb6JrCu" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="fNDJb6JrCv" role="1zxBo5">
+            <node concept="XOnhg" id="fNDJb6JrCz" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="fNDJb6JrC_" role="1tU5fm">
+                <node concept="3uibUv" id="fNDJb6JrCB" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="fNDJb6JrCC" role="1zc67A">
+              <node concept="3vlDli" id="fNDJb6JrCD" role="3cqZAp">
+                <node concept="Xl_RD" id="fNDJb6JrCG" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: import inside interface body" />
+                </node>
+                <node concept="2OqwBi" id="fNDJb6JrCH" role="3tpDZA">
+                  <node concept="37vLTw" id="fNDJb6JrCK" role="2Oq$k0">
+                    <ref role="3cqZAo" node="fNDJb6JrCz" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="fNDJb6JrCL" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1lH9Xt" id="4mJZS3nf_au">
     <property role="3DII0k" value="2hh8MJdVwqT/none" />
