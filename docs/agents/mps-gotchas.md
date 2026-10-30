@@ -64,7 +64,7 @@ Java and delegate the node building to existing BL-dialect methods; for code tha
 `insert.mode: replace` of a method creates a new node id, so callers keep dangling references until `alter_nodes FIX_REFERENCES` (parameter `nodeReference` = the class root; it reported "6 broken
 reference(s) resolved"). Other `update_node` facts: `kind` is a required parameter, `position` (not `index`) is the 0-based insert index, `SET×PROPERTY` takes `properties` and `SET×REFERENCE`
 `references` as triplets. A printed test method (`deep: true`, saved envelope) can be edited in Python (new name, new string literals, drop `reference` keys) and added with ADD CHILD; the
-variable references are repointed automatically ("repointed 3"). A reload (`reload_all`) deletes the run configurations; recreate them.
+variable references are repointed automatically ("repointed 3"). A reload (`reload_all`) deletes the run configurations; recreate them. After changing the importer (or any generated-Java solution) run MAKE **and** `reload_all`, otherwise tests keep running the stale class. When deleting a statement from a method body, find it by content, not by list position (an off-by-one deleted the wrong `if`).
 
 ## The model checker flags out-of-scope references only when the scope is non-empty; an empty scope hides a broken scope function (2026-10-29)
 

@@ -422,7 +422,14 @@ is rejected by name ("package inside definition or usage body"); other definitio
 The editor is one `CellModel_Alternation`: the reference cell when `importedElement` is set or `importedName` is empty, otherwise the `importedName` text (clear the text to pick a reference by completion). TextGen prints the reference's
 effective name when set, else the string. Tests: scope test `_130_ImportScope` (the reference offers exactly the sibling part defs), textGen test `testImportedElementPrintsReference` (helper `TestUtils.setImportedElement` in typed smodel),
 both mutation-checked (expected node removed; textGen condition forced to `false` printed `import ;`). Sandbox: `import Fleet::*;` in `_030_package_level_usages`. Full suite: 426 tests, only the two known plantuml failures.
-Not covered: an editor completion test for choosing the target (logic covered by scope and textGen tests), and the importer setting the reference (028).
+Not covered: an editor completion test for choosing the target (logic covered by scope and textGen tests), and the importer setting the reference (030).
+
+### Iteration 028 step 1 result: attribute usage bodies (2026-10-30)
+
+The importer no longer rejects `attribute x : T { ... }` bodies: `visitAttributeUsage` visits the body items like `visitAttributeDefinition` and adds them to `SysMLv2AttributeUsage.content` (the child link already existed). Editor: an optional `{ content }` cell after the type/value, the `;` constant shown only when the body is empty (as on part usages); textGen: `{ }` block with indented items, `;` when empty. Test `_290_AttributeUsageBodyTest` (ISQ-style `LengthUnit` with nested attribute usages and keyword-less redefinitions; mutation evidence: before the importer change "non-empty attribute usage body", before the textGen change the body was dropped). Sandbox: `EngineRating` with `attribute peak : Torque { ref nominal = ...; ref :>> limit = ...; }` in `_040_reference_usages`. Full suite: 427 tests, only the two known plantuml failures. Tests: `_290` has `testNestedAttributeUsageBody` (canonical text, plain round trip) and `testLibrarySpellingIsNormalised` (library spelling `x : T[1] { :>> y = 1; }` becomes `x[1] : T { ref :>> y = 1; }`).
+Re-probe of the 58 library `.sysml` files (2026-10-30): **14 import** (was 2): `AnalysisTooling`, `ImageMetadata`, `SIPrefixes` and 11 of the 13 ISQ files (`ISQ`, `ISQAcoustics`, `ISQAtomicNuclear`, `ISQCharacteristicNumbers`, `ISQChemistryMolecular`, `ISQCondensedMatter`, `ISQElectromagnetism`, `ISQInformation`, `ISQLight`, `ISQMechanics`, `ISQThermodynamics`); they only import and generate text, no fidelity check against the originals yet. First blocker of the 44 failures: 21 other definition kinds (action/calc/constraint/requirement/state/case/view), 6 behavior usage, 3 metadata definition identification alias, 2 usage identification alias, 2 non-empty reference usage body, 2 non-empty item usage body, 2 attribute value other than `=`, 1 each value assignment on item usage, non-part/port/item structure usage, multiplicity on connection usage, library package identification alias, derived usage prefix, alias body.
+Decision (user, 2026-10-30): the 14 files are not imported into the accessory models yet. Reasons: references are not set until 030 and the kernel/ISQ stubs (028/029) are missing, so the models would be re-imported anyway; a token-fidelity check against the originals and the EPL-2.0 attribution come first. Order: remaining importer blockers, stubs, 030, then one import of everything that passes, with fidelity check.
+Not done yet: `ref`/`item` usage bodies (4 files), aliases (7 files).
 
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
@@ -467,9 +474,10 @@ iterations.
 - 025 guard for `import` in a definition body (done 2026-10-29, awaiting acceptance).
 - 026 multiple typing, `ordered`/`nonunique`, definitions nested in bodies (revives 018f) (done 2026-10-30, results above).
 - 027 import reference: structure, editor, scope (language only). (done 2026-10-30, results above)
-- 028 import reference: importer sets it, default standard-library scope.
-- 029 kernel stubs (Base, Objects, Parts, Ports, Items, Connections, Interfaces, Attributes) in the accessory model.
-- 030 `ISQ`/`SI` unit stubs.
+- 028 kernel stubs (Base, Objects, Parts, Ports, Items, Connections, Interfaces, Attributes) in the accessory models of `com.symo.sysmlv2.baselan` (shipped with the language, visible wherever it is used; reordered before the import reference 2026-10-30, user decision).
+- 029 `ISQ`/`SI` unit stubs, same accessory models.
+  Kernel (KerML) names such as `Anything`, `Real`, `Integer` are hand-written SysML-side stubs; users of the sysmlv2 baselan work in SysML and are never exposed to KerML (user decision 2026-10-30). Library `.sysml` files are imported with the importer (probe 2026-10-30: 2 of 58 import; blockers ranked in the 028 notes).
+- 030 import reference: importer sets it; default standard-library scope resolves against the accessory-model stubs (was 028).
 - 031 quantity literal with unit reference: concept, editor, textGen (language only).
 - 032 non-literal values: quantity literal, `default`, feature as multiplicity bound, text fallback (importer).
 - 033 feature-chain resolution for ends (the syntax already imports, resolution is open).
