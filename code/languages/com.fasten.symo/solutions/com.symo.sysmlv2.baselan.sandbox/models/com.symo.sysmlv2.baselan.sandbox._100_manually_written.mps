@@ -12,7 +12,7 @@
         <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
       </concept>
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
-        <child id="8930763252717678425" name="type" index="8EhU5" />
+        <child id="8930763252717678425" name="types" index="8EhU5" />
       </concept>
       <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
         <reference id="8930763252717678397" name="definition" index="8EhVx" />
@@ -54,7 +54,7 @@
       </concept>
       <concept id="284754763101489699" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReferenceUsage" flags="ng" index="35c6Nh">
         <child id="284754763120096648" name="value" index="34b1dU" />
-        <child id="284754763101489703" name="type" index="35c6Nl" />
+        <child id="284754763101489703" name="types" index="35c6Nl" />
         <child id="284754763101489705" name="direction" index="35c6Nr" />
       </concept>
       <concept id="4527860999823451880" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Member" flags="ngI" index="3815tY">
@@ -72,7 +72,7 @@
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
         <child id="8930763252716192330" name="content" index="8GFen" />
-        <child id="7140692429574298135" name="type" index="3w00ZT" />
+        <child id="7140692429574298135" name="types" index="3w00ZT" />
       </concept>
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
         <child id="7140692429574298127" name="specializes" index="3w00Zx" />
@@ -435,6 +435,15 @@
           <node concept="3wdj9f" id="fNDJb63Xk$" role="3wdj9d">
             <ref role="3wdj98" node="fNDJb63Xkw" resolve="axleAssembly" />
           </node>
+        </node>
+      </node>
+      <node concept="8GF0z" id="7PctyxTH6Zh" role="3Z9vGx">
+        <property role="TrG5h" value="hybridWheel" />
+        <node concept="8CKM2" id="7PctyxTH6Zi" role="3w00ZT">
+          <ref role="8CKMW" node="fNDJb5UJPj" resolve="Wheel" />
+        </node>
+        <node concept="8CKM2" id="7PctyxTH6Zj" role="3w00ZT">
+          <ref role="8CKMW" node="fNDJb5UJPn" resolve="Axle" />
         </node>
       </node>
     </node>
