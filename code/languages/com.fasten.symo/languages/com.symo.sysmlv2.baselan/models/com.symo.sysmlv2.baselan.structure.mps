@@ -720,6 +720,16 @@
       <property role="TrG5h" value="isReference" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="1TJgyi" id="7PctyxTWsOQ" role="1TKVEl">
+      <property role="IQ2nx" value="9028721269187661110" />
+      <property role="TrG5h" value="isOrdered" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7PctyxTWsOW" role="1TKVEl">
+      <property role="IQ2nx" value="9028721269187661116" />
+      <property role="TrG5h" value="isNonUnique" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU3buux">
     <property role="EcuMT" value="7140692429575677857" />
