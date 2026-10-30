@@ -59,6 +59,7 @@
         <reference id="284754763101489701" name="definition" index="35c6Nn" />
       </concept>
       <concept id="284754763101489699" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReferenceUsage" flags="ng" index="35c6Nh">
+        <child id="9028721269212000001" name="content" index="6al$D" />
         <child id="284754763120096648" name="value" index="34b1dU" />
         <child id="284754763101489703" name="types" index="35c6Nl" />
         <child id="284754763101489705" name="direction" index="35c6Nr" />
@@ -748,6 +749,26 @@
             <property role="35c6Nm" value="DrivePort" />
             <ref role="35c6Nn" node="fNDJb7F_tj" resolve="DrivePort" />
           </node>
+        </node>
+      </node>
+      <node concept="3w00Zz" id="7PctyxVIq$T" role="3Z9vGx">
+        <property role="TrG5h" value="cargo" />
+        <node concept="3w00Zy" id="7PctyxVIq$U" role="3w00ZT">
+          <property role="3w00ZX" value="Fuel" />
+          <ref role="3w00ZU" node="fNDJb7F_ti" resolve="Fuel" />
+        </node>
+        <node concept="3w00Zz" id="7PctyxVIq$V" role="8GFen">
+          <property role="TrG5h" value="sample" />
+          <node concept="3w00Zy" id="7PctyxVIq$W" role="3w00ZT">
+            <property role="3w00ZX" value="Fuel" />
+            <ref role="3w00ZU" node="fNDJb7F_ti" resolve="Fuel" />
+          </node>
+        </node>
+      </node>
+      <node concept="35c6Nh" id="7PctyxVIq$X" role="3Z9vGx">
+        <property role="TrG5h" value="payload" />
+        <node concept="8EhU9" id="7PctyxVIq$Y" role="6al$D">
+          <property role="TrG5h" value="weight" />
         </node>
       </node>
     </node>
