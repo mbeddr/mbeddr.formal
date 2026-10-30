@@ -1466,25 +1466,6 @@
             <ref role="3bR37D" to="ffeo:mXGwHwhVPj" resolve="JDK" />
           </node>
         </node>
-        <node concept="1SiIV0" id="3fV34643mDB" role="3bR37C">
-          <node concept="1BurEX" id="3fV34643mDC" role="1SiIV1">
-            <node concept="398BVA" id="3fV34643mDq" role="1BurEY">
-              <ref role="398BVh" node="1k6eCQnEQWe" resolve="fasten.symo.code" />
-              <node concept="2Ry0Ak" id="3fV34643mDr" role="iGT6I">
-                <property role="2Ry0Am" value="solutions" />
-                <node concept="2Ry0Ak" id="3fV34643mDs" role="2Ry0An">
-                  <property role="2Ry0Am" value="com.symo.plantuml.lib" />
-                  <node concept="2Ry0Ak" id="3fV34643mDt" role="2Ry0An">
-                    <property role="2Ry0Am" value="lib" />
-                    <node concept="2Ry0Ak" id="3fV34643mDu" role="2Ry0An">
-                      <property role="2Ry0Am" value="xml-apis-ext.jar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3rtmxn" id="v5LJv9WTpv" role="3bR31x">
           <node concept="3LXTmp" id="v5LJv9WTpw" role="3rtmxm">
             <node concept="3qWCbU" id="v5LJv9WTpx" role="3LXTna">
@@ -1523,6 +1504,11 @@
         <node concept="1SiIV0" id="61fD6URbgET" role="3bR37C">
           <node concept="3bR9La" id="61fD6URbgEV" role="1SiIV1">
             <ref role="3bR37D" to="90a9:6bkzxtWPDx1" resolve="de.itemis.stubs.batik" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="1iowsuqFo8m" role="3bR37C">
+          <node concept="3bR9La" id="1iowsuqFo8o" role="1SiIV1">
+            <ref role="3bR37D" to="90a9:2sSK94l$Dwp" resolve="de.itemis.stubs.xml" />
           </node>
         </node>
       </node>

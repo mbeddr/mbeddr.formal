@@ -131,9 +131,9 @@ configurations {
         languageLibs("com.mbeddr:platform:2026.1.26592.4611389")
         languageLibs("org.mpsqa:all-in-one:$platformVersion")
         
-        // batik-all and xmlgraphics-commons come from de.itemis.stubs.batik (bundled in com.mbeddr:platform)
+        // batik-all, xmlgraphics-commons and xml-apis-ext come from de.itemis.stubs.batik / de.itemis.stubs.xml
+        // (bundled in com.mbeddr:platform)
         plantUML("net.sourceforge.plantuml:plantuml-epl:1.2024.7")
-        plantUML("xml-apis:xml-apis-ext:1.3.04")
 
         docx4j("org.docx4j:docx4j-core:$docx4JVersion")
         docx4j("org.docx4j:docx4j-JAXB-MOXy:$docx4JVersion")
