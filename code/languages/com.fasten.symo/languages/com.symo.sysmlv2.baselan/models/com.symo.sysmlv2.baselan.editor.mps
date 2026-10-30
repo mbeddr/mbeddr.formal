@@ -357,6 +357,9 @@
         <property role="3F0ifm" value="package" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
+      <node concept="PMmxH" id="7PctyxVRF6r" role="3EZMnx">
+        <ref role="PMmxG" node="7PctyxVRF3T" resolve="ISysMLv2IdentifierNameConcept_ShortName" />
+      </node>
       <node concept="3F0A7n" id="3PUPjB2nVUB" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
@@ -948,6 +951,9 @@
       <node concept="3F0ifn" id="2d_6cEDEfL9" role="3EZMnx">
         <property role="3F0ifm" value="attribute" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="PMmxH" id="7PctyxVRF5Q" role="3EZMnx">
+        <ref role="PMmxG" node="7PctyxVRF3T" resolve="ISysMLv2IdentifierNameConcept_ShortName" />
       </node>
       <node concept="3F0A7n" id="2d_6cEDEfLa" role="3EZMnx">
         <property role="39s7Ar" value="true" />
@@ -2917,6 +2923,9 @@
         <property role="3F0ifm" value="metadata def" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
+      <node concept="PMmxH" id="7PctyxVRF6B" role="3EZMnx">
+        <ref role="PMmxG" node="7PctyxVRF3T" resolve="ISysMLv2IdentifierNameConcept_ShortName" />
+      </node>
       <node concept="3F0A7n" id="5oZmK$NNfCO" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
@@ -4583,6 +4592,9 @@
         <property role="3F0ifm" value="library package" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
+      <node concept="PMmxH" id="7PctyxVRF6x" role="3EZMnx">
+        <ref role="PMmxG" node="7PctyxVRF3T" resolve="ISysMLv2IdentifierNameConcept_ShortName" />
+      </node>
       <node concept="3F0A7n" id="6jpO12_$T2b" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
@@ -5166,6 +5178,31 @@
       </node>
       <node concept="3F0ifn" id="fNDJb8FKYz" role="3EZMnx">
         <property role="3F0ifm" value="#" />
+      </node>
+    </node>
+  </node>
+  <node concept="PKFIW" id="7PctyxVRF3T">
+    <property role="TrG5h" value="ISysMLv2IdentifierNameConcept_ShortName" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1XX52x" to="5rf1:3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    <node concept="_tjkj" id="7PctyxVRF5e" role="2wV5jI">
+      <node concept="3EZMnI" id="7PctyxVRF5g" role="_tjki">
+        <node concept="3F0ifn" id="7PctyxVRF5h" role="3EZMnx">
+          <property role="3F0ifm" value="&lt;" />
+          <node concept="11LMrY" id="7PctyxVRF5i" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0A7n" id="7PctyxVRF5j" role="3EZMnx">
+          <ref role="1NtTu8" to="5rf1:7PctyxVKJ_7" resolve="declaredShortName" />
+        </node>
+        <node concept="3F0ifn" id="7PctyxVRF5k" role="3EZMnx">
+          <property role="3F0ifm" value="&gt;" />
+          <node concept="11L4FC" id="7PctyxVRF5l" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="l2Vlx" id="7PctyxVRF5m" role="2iSdaV" />
       </node>
     </node>
   </node>

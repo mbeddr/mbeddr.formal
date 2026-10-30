@@ -12,6 +12,16 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Adding a property, blueprint shapes, test-case access mode, deleting roots (2026-10-30)
+
+- `alter_structure UPDATE_CONCEPT_PROPERTY` only updates existing properties. To add a property use `update_node ADD CHILD` with `childRole: propertyDeclaration`; its datatype reference id `…/1082983657062` is `integer` (boolean is `…063`), so set the datatype afterwards with `update_node SET REFERENCE` (target name `string`).
+- Blueprint children must be `{"role": ..., "nodes": [...]}`; a child written directly as `{"role", "concept"}` under `children` is silently dropped. Use fully qualified concept names for nested nodes.
+- `update_node ADD CHILD` ignores `index` (appends): use `alter_nodes MOVE_CHILD` (`nodeReference`, `childRole`, `childNodeRef`, `position`). `SET PROPERTY` takes `properties: [[nodeRef, name, value]]`.
+- `parse_java_and_insert` and `query_nodes` take their arguments inside a `parameters` object. The parser does not resolve the test-language `project`: replace the unresolved `VariableReference` with a `ProjectExpression` child. It also picks wrong overloads (`Paths.get(String)`, `InputStream.read(byte[])`); `alter_nodes FIX_REFERENCES` repoints them.
+- A new `NodesTestCase` defaults to a read access mode, so a text-generation round trip times out ("never got its lock"): set `accessMode` to `2hh8MJdVwqT/none`.
+- A plain `assert a.equals(b)` hides the actual text; use `AssertEquals` (expected/actual `VariableReference`s) to see the diff.
+- Delete a root node with `update_root_node_from_json` `operation: DELETE`.
+
 ## Adding a link to an existing concept, deleting one list child, and mutation-checking a conditional (2026-10-30)
 
 - `alter_structure UPDATE_CONCEPT_CHILD` only updates existing children. To add a child link to an existing concept, `update_node ADD CHILD` a `LinkDeclaration` into the concept's `linkDeclaration` role (properties `role`, `metaClass` = aggregation, `sourceCardinality`, `linkId`, `name`; reference `target`), then rebuild the language.

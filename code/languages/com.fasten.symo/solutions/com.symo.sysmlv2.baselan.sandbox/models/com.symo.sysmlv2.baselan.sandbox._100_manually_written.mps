@@ -44,6 +44,9 @@
         <child id="717440187291777391" name="target" index="2uUmlz" />
       </concept>
       <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH" />
+      <concept id="3997211576372409960" name="com.symo.sysmlv2.baselan.structure.ISysMLv2IdentifierNameConcept" flags="ngI" index="iIkiC">
+        <property id="9028721269218146631" name="declaredShortName" index="6zCXJ" />
+      </concept>
       <concept id="4376090928929871183" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartLikeUsage" flags="ng" index="2n5AFc">
         <child id="8930763252716192330" name="content" index="8GFem" />
       </concept>
@@ -54,6 +57,7 @@
         <property id="717440187291777388" name="withKeyword" index="2uUmlw" />
       </concept>
       <concept id="717440187291777379" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinition" flags="ng" index="2uUmlJ" />
+      <concept id="7267068243654035155" name="com.symo.sysmlv2.baselan.structure.SysMLv2LibraryPackage" flags="ng" index="31n9r3" />
       <concept id="284754763101489698" name="com.symo.sysmlv2.baselan.structure.SysMLv2DefinitionRef" flags="ng" index="35c6Ng">
         <property id="284754763101489700" name="definitionName" index="35c6Nm" />
         <reference id="284754763101489701" name="definition" index="35c6Nn" />
@@ -770,6 +774,32 @@
         <node concept="8EhU9" id="7PctyxVIq$Y" role="6al$D">
           <property role="TrG5h" value="weight" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="7PctyxX9JdH">
+    <property role="TrG5h" value="_050_short_names" />
+    <node concept="31n9r3" id="7PctyxX9JdI" role="2h0jOs">
+      <property role="6zCXJ" value="Units" />
+      <property role="TrG5h" value="UnitsLibrary" />
+      <node concept="8EhU9" id="7PctyxX9JdJ" role="3Z9vGx">
+        <property role="6zCXJ" value="m" />
+        <property role="TrG5h" value="metre" />
+      </node>
+      <node concept="8EhU9" id="7PctyxX9JdK" role="3Z9vGx">
+        <property role="6zCXJ" value="kg" />
+        <property role="TrG5h" value="kilogram" />
+      </node>
+      <node concept="8EhU9" id="7PctyxX9JdL" role="3Z9vGx">
+        <property role="6zCXJ" value="s" />
+      </node>
+    </node>
+    <node concept="3Z9vzX" id="7PctyxX9JdM" role="2h0jOs">
+      <property role="6zCXJ" value="Meta" />
+      <property role="TrG5h" value="Metadata" />
+      <node concept="1_WVX2" id="7PctyxX9JdN" role="3Z9vGx">
+        <property role="6zCXJ" value="orig" />
+        <property role="TrG5h" value="OriginalMetadata" />
       </node>
     </node>
   </node>

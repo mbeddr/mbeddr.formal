@@ -793,6 +793,11 @@
     <node concept="PrWs8" id="3tSWG0_KrpD" role="PrDN$">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
+    <node concept="1TJgyi" id="7PctyxVKJ_7" role="1TKVEl">
+      <property role="IQ2nx" value="9028721269218146631" />
+      <property role="TrG5h" value="declaredShortName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3kx1GVo$P6a">
     <property role="EcuMT" value="3828348643708195210" />

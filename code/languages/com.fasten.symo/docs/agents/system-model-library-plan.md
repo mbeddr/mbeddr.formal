@@ -437,6 +437,12 @@ The importer accepts `item x : T { ... }` and `ref x { ... }` bodies: `visitItem
 Re-probe: **16 of 58 import** (was 14): `Metadata` and `Ports` of the Systems Library joined. Remaining first blockers of the 42 failures: 21 other definition kinds, 8 behavior usage (was 6, files now get further), 3 metadata definition identification alias, 2 usage identification alias, 2 attribute value other than `=`, 1 each value assignment on item usage, non-part/port/item structure usage, multiplicity on connection usage, library package identification alias, derived usage prefix, alias body.
 Not done yet: aliases (identification aliases on metadata defs and usages, library packages, alias bodies: 7 files), value assignment on item usage (`Items`/`Flows`).
 
+### Iteration 028 step 3 result: identification aliases (short names) (2026-10-30)
+
+`declaredShortName : string` is a property of `ISysMLv2IdentifierNameConcept`. Editor component `ISysMLv2IdentifierNameConcept_ShortName` (`optional [- < { declaredShortName } > -]`, same as KerML) in attribute usage, package, library package and metadata definition; textGen writes `<x> ` between keyword and name; importer helpers `applyShortName`/`declaredNameOf` replace the "identification alias" rejection for those four kinds (so `attribute <s>;` with a short name only is accepted). Other kinds still reject it. Test `_310_ShortNameTest` (round trip of all four kinds, with and without a name; mutation-checked: `applyShortName` neutered makes it fail). Sandbox `_050_short_names`. Full suite: 429 tests, only the two known plantuml failures.
+Re-probe: **21 of 58 import** (was 16). Remaining first blockers of the 37 failures: 21 other definition kinds, 8 behavior usage, 3 attribute value other than `=`, 1 each value assignment on item usage, non-part/port/item structure usage, multiplicity on connection usage, derived usage prefix, alias body.
+Not done yet: short names on the other definition/usage kinds, `alias <x> ...` short name, alias bodies, value assignment on item usage.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
