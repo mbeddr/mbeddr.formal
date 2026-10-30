@@ -82,11 +82,36 @@ val docx4JVersion = "11.5.12"
 configurations {
     val mps by creating
     val languageLibs by creating
+    // Libraries already exposed to solutions by MPS.IDEA.Modules (stubs of the jars bundled with MPS)
+    // must not be packaged again, so they are excluded from the configurations below.
+    val mpsProvided = listOf(
+        "commons-io" to "commons-io",
+        "commons-codec" to "commons-codec",
+        "commons-logging" to "commons-logging",
+        "org.apache.commons" to "commons-lang3",
+        "org.apache.commons" to "commons-compress",
+        "com.google.guava" to "guava",
+        "com.google.guava" to "failureaccess",
+        "com.google.guava" to "listenablefuture",
+        "com.google.errorprone" to "error_prone_annotations",
+        "org.jspecify" to "jspecify",
+        "org.codehaus.jettison" to "jettison",
+        "com.fasterxml.jackson.core" to "jackson-core",
+        "com.fasterxml.jackson.core" to "jackson-databind",
+        "com.fasterxml.jackson.core" to "jackson-annotations",
+        "org.eclipse.xtext" to "org.eclipse.xtext.xbase.lib",
+        "org.slf4j" to "jcl-over-slf4j",
+        "org.springframework" to "spring-jcl"
+    )
+    fun Configuration.excludeMpsProvided() = mpsProvided.forEach { (group, module) -> exclude(group, module) }
+
     val docx4j by creating {
         exclude("org.slf4j", "slf4j-api")
+        excludeMpsProvided()
     }
     val langchain4j by creating {
         exclude("org.slf4j")
+        excludeMpsProvided()
     }
     val plantUML by creating {
         isTransitive = false
@@ -105,13 +130,16 @@ configurations {
     }
     val jira by creating {
         exclude("org.slf4j")
+        excludeMpsProvided()
     }
 
     val pdfbox by creating {
         isTransitive = false
     }
 
-    val svgViewer by creating
+    val svgViewer by creating {
+        excludeMpsProvided()
+    }
 
     // includes also junit tasks support
     val antLib by creating {
@@ -171,10 +199,6 @@ configurations {
         svgViewer("org.eclipse.elk:org.eclipse.elk.graph:0.12.0")
         svgViewer("org.eclipse.elk:org.eclipse.elk.alg.layered:0.12.0")
         svgViewer("org.eclipse.elk:org.eclipse.elk.alg.mrtree:0.12.0")
-        // Not a transitive dependency of any of the above per their published POMs, even though
-        // elk.alg.layered's and elk.alg.mrtree's own Xtend-generated static initializers need it
-        // at runtime (an OSGi/Maven metadata gap in those artifacts) - declared explicitly here.
-        svgViewer("org.eclipse.xtext:org.eclipse.xtext.xbase.lib:2.43.0")
 
         antLib("org.apache.ant:ant-junit:1.10.6")
         jbrWin("com.jetbrains.jdk:jbr_jcef:$jbrVers:windows-x64@tgz")

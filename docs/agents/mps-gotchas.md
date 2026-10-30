@@ -10,6 +10,22 @@ knowledge that *is* project-specific. See [ADR 0005](../adr/0005-localize-projec
 for the full rationale. Newest entries at the top. See also `docs/agents/TODO.md` (root, or a
 project's own) for open investigations.
 
+## Replacing a bundled lib jar with `MPS.IDEA.Modules` (2026-10-30)
+
+`MPS.IDEA.Modules` (uuid `b00f36f0-49b7-456c-8405-740447ebb192`) exposes `@java_stub` models for
+jars MPS itself ships (commons-*, guava, jackson, jettison, jspecify, errorprone, xtext xbase lib, asm).
+Three traps when dropping a jar from a lib solution in favour of it:
+
+- A `java_stub` model reference embeds the owning module's uuid, so models that imported the stub
+  from the old lib solution report `Can't find imported model: <pkg>@java_stub`. Re-point with
+  `mps_mcp_model_dependency` (ADD the `b00f36f0.../java:<pkg>(MPS.IDEA.Modules/)` model, DELETE the old one).
+- The build script must mirror the `.msd`: add a `BuildMps_ExtractedModuleDependency` →
+  `BuildMps_ModuleDependencyOnModule` (module `MPS.IDEA.Modules`, node in `jetbrains.mps.ide.build`)
+  and keep `reexport` equal (`false` in both), otherwise the build root reports
+  "wrong reexport status for dependency in build script".
+- Partial coverage is a trap: `asm-util` is not exposed, so the asm jars used by parboiled stay bundled.
+  Gradle side: exclude the artifacts per configuration (`excludeMpsProvided()` in `build.gradle.kts`).
+
 ## Fast `Project` lookup from an `EditorCell`/`EditorContext` (2026-09-29)
 
 Getting an IDEA `Project` from MPS editor-aspect code — cell constructors, cell actions, editor-query
