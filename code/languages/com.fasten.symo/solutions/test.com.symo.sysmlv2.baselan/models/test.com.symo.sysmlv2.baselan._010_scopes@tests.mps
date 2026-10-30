@@ -50,7 +50,7 @@
         <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
       </concept>
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
-        <child id="8930763252717678425" name="type" index="8EhU5" />
+        <child id="8930763252717678425" name="types" index="8EhU5" />
         <child id="4376090928945101101" name="value" index="2gbwqI" />
       </concept>
       <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
@@ -75,7 +75,7 @@
         <child id="717440187291777391" name="target" index="2uUmlz" />
       </concept>
       <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH">
-        <child id="4376090928965378360" name="type" index="2hs9UV" />
+        <child id="4376090928965378360" name="types" index="2hs9UV" />
       </concept>
       <concept id="4376090928958005869" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowDefinition" flags="ng" index="2hSLRI" />
       <concept id="717440187291777380" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinitionRef" flags="ng" index="2uUmlC">
@@ -97,7 +97,7 @@
         <reference id="284754763101489701" name="definition" index="35c6Nn" />
       </concept>
       <concept id="284754763101489699" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReferenceUsage" flags="ng" index="35c6Nh">
-        <child id="284754763101489703" name="type" index="35c6Nl" />
+        <child id="284754763101489703" name="types" index="35c6Nl" />
       </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
@@ -105,7 +105,7 @@
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
         <child id="8930763252716192330" name="content" index="8GFem" />
-        <child id="7140692429574298135" name="type" index="3w00ZT" />
+        <child id="7140692429574298135" name="types" index="3w00ZT" />
         <child id="7140692429574298133" name="direction" index="3w00ZV" />
       </concept>
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
@@ -127,7 +127,7 @@
         <reference id="7140692429570900097" name="definition" index="3xZtlJ" />
       </concept>
       <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
-        <child id="7140692429570900101" name="type" index="3xZtlF" />
+        <child id="7140692429570900101" name="types" index="3xZtlF" />
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp" />
       <concept id="6214786105868823569" name="com.symo.sysmlv2.baselan.structure.SysMLv2Comment" flags="ng" index="1_pRso">
@@ -1114,6 +1114,55 @@
           <node concept="1_pRso" id="fNDJb7Fk_d" role="3Z9vGx">
             <property role="1_pRss" value="scope fixture" />
             <property role="TrG5h" value="ExcludedComment" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7PctyxTO4tI">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_110_SecondTypeScope" />
+    <node concept="1qefOq" id="7PctyxTO4tJ" role="1SKRRt">
+      <node concept="2h0jOr" id="7PctyxTO4tL" role="1qenE9">
+        <node concept="3Z9vzX" id="7PctyxTO4tM" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="3ZUotO" id="7PctyxTO4tN" role="3Z9vGx">
+            <property role="TrG5h" value="Wheel" />
+          </node>
+          <node concept="3ZUotO" id="7PctyxTO4tO" role="3Z9vGx">
+            <property role="TrG5h" value="Chassis" />
+            <node concept="8GF0z" id="7PctyxTO4tP" role="3w00ZY">
+              <property role="TrG5h" value="chassisAxle" />
+            </node>
+          </node>
+          <node concept="8GF0z" id="7PctyxTO4tQ" role="3Z9vGx">
+            <property role="TrG5h" value="car" />
+            <node concept="8CKM2" id="7PctyxTO4tR" role="3w00ZT">
+              <ref role="8CKMW" node="7PctyxTO4tN" resolve="Wheel" />
+            </node>
+            <node concept="8CKM2" id="7PctyxTO4tS" role="3w00ZT">
+              <ref role="8CKMW" node="7PctyxTO4tO" resolve="Chassis" />
+              <node concept="2rqxmr" id="7PctyxTO4tT" role="lGtFl">
+                <ref role="1BTHP0" node="7PctyxTO4tO" />
+                <node concept="3KTrbX" id="7PctyxTO4tU" role="3KTr4d">
+                  <ref role="3AHY9a" node="7PctyxTO4tN" />
+                </node>
+                <node concept="3KTrbX" id="7PctyxTO4tV" role="3KTr4d">
+                  <ref role="3AHY9a" node="7PctyxTO4tO" />
+                </node>
+              </node>
+            </node>
+            <node concept="8GF0z" id="7PctyxTO4tW" role="8GFem">
+              <node concept="3wdj9f" id="7PctyxTO4tX" role="3wdj9d">
+                <ref role="3wdj98" node="7PctyxTO4tP" />
+                <node concept="2rqxmr" id="7PctyxTO4tY" role="lGtFl">
+                  <ref role="1BTHP0" node="7PctyxTO4tP" />
+                  <node concept="3KTrbX" id="7PctyxTO4tZ" role="3KTr4d">
+                    <ref role="3AHY9a" node="7PctyxTO4tP" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
         </node>
       </node>

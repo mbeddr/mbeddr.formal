@@ -227,7 +227,7 @@
         <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
       </concept>
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
-        <child id="8930763252717678425" name="type" index="8EhU5" />
+        <child id="8930763252717678425" name="types" index="8EhU5" />
         <child id="4376090928945101101" name="value" index="2gbwqI" />
         <child id="7140692429570903510" name="direction" index="3xZtwS" />
       </concept>
@@ -264,7 +264,7 @@
         <child id="717440187291777391" name="target" index="2uUmlz" />
       </concept>
       <concept id="4376090928958005870" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowUsage" flags="ng" index="2hSLRH">
-        <child id="4376090928965378360" name="type" index="2hs9UV" />
+        <child id="4376090928965378360" name="types" index="2hs9UV" />
         <child id="4376090928958005871" name="payload" index="2hSLRG" />
       </concept>
       <concept id="4376090928958005869" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowDefinition" flags="ng" index="2hSLRI" />
@@ -291,7 +291,7 @@
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
         <child id="7140692429574298134" name="multiplicity" index="3w00ZS" />
-        <child id="7140692429574298135" name="type" index="3w00ZT" />
+        <child id="7140692429574298135" name="types" index="3w00ZT" />
         <child id="7140692429574298133" name="direction" index="3w00ZV" />
       </concept>
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
@@ -318,7 +318,7 @@
         <property id="7140692429570900098" name="conjugated" index="3xZtlG" />
         <child id="4376090928935961761" name="content" index="2gGRGy" />
         <child id="7140692429570900100" name="multiplicity" index="3xZtlE" />
-        <child id="7140692429570900101" name="type" index="3xZtlF" />
+        <child id="7140692429570900101" name="types" index="3xZtlF" />
         <child id="7140692429570900099" name="direction" index="3xZtlH" />
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
@@ -15565,7 +15565,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="fNDJb7F8_4" role="1SL9yI">
-      <property role="TrG5h" value="testMultipleTypingOnReferenceUsageRejected" />
+      <property role="TrG5h" value="testConjugatedSecondTypingOnReferenceUsageRejected" />
       <node concept="3cqZAl" id="fNDJb7F8_7" role="3clF45" />
       <node concept="3clFbS" id="fNDJb7F8_8" role="3clF47">
         <node concept="3J1_TO" id="fNDJb7F8_9" role="3cqZAp">
@@ -15579,10 +15579,10 @@
                   <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
                   <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
                   <node concept="Xl_RD" id="fNDJb7F8_i" role="37wK5m">
-                    <property role="Xl_RC" value="package P { part def D { ref x : D, E; } }" />
+                    <property role="Xl_RC" value="package P { part def D { ref x : D, ~E; } }" />
                   </node>
                   <node concept="Xl_RD" id="fNDJb7F8_j" role="37wK5m">
-                    <property role="Xl_RC" value="MultipleTypingOnReferenceUsage" />
+                    <property role="Xl_RC" value="ConjugatedSecondTypingOnReferenceUsage" />
                   </node>
                   <node concept="1jxXqW" id="fNDJb7F8_k" role="37wK5m" />
                 </node>
@@ -15592,7 +15592,7 @@
             <node concept="3xETmq" id="fNDJb7F8_m" role="3cqZAp">
               <node concept="3_1$Yv" id="fNDJb7F8_n" role="3_9lra">
                 <node concept="Xl_RD" id="fNDJb7F8_o" role="3_1BAH">
-                  <property role="Xl_RC" value="MultipleTypingOnReferenceUsage expected rejection" />
+                  <property role="Xl_RC" value="ConjugatedSecondTypingOnReferenceUsage expected rejection" />
                 </node>
               </node>
             </node>
@@ -15621,7 +15621,7 @@
             <node concept="3clFbS" id="fNDJb7F8_B" role="1zc67A">
               <node concept="3vlDli" id="fNDJb7F8_C" role="3cqZAp">
                 <node concept="Xl_RD" id="fNDJb7F8_F" role="3tpDZB">
-                  <property role="Xl_RC" value="Unsupported SysML v2 construct: multiple types on reference usage" />
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: non-owned feature typing on reference usage" />
                 </node>
                 <node concept="2OqwBi" id="fNDJb7F8_G" role="3tpDZA">
                   <node concept="37vLTw" id="fNDJb7F8_J" role="2Oq$k0">
@@ -18130,6 +18130,53 @@
           </node>
           <node concept="37vLTw" id="fNDJbaa9wS" role="3tpDZA">
             <ref role="3cqZAo" node="fNDJbaa9wH" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="7PctyxTEdDA" role="1SL9yI">
+      <property role="TrG5h" value="testMultipleTypingRoundtrip" />
+      <node concept="3cqZAl" id="7PctyxTEdDD" role="3clF45" />
+      <node concept="3clFbS" id="7PctyxTEdDE" role="3clF47">
+        <node concept="3cpWs8" id="7PctyxTEdDF" role="3cqZAp">
+          <node concept="3cpWsn" id="7PctyxTEdDI" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="17QB3L" id="7PctyxTEdDK" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxTEdDL" role="3cqZAp">
+          <node concept="37vLTI" id="7PctyxTEdDN" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxTEdDQ" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxTEdDI" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxTEdDR" role="37vLTx">
+              <property role="Xl_RC" value="package P {&#10;  part def V {&#10;    part p : A, B;&#10;    attribute a : Real, Integer;&#10;    port q : ~Pt, Qt;&#10;    item i : It, Jt;&#10;    ref r : X, Y;&#10;    connection driveLink : DriveLink, Other connect source ::&gt; transmission.drive to axle.input;&#10;    interface link : DataLink, Other connect s ::&gt; transmission.drive to t ::&gt; axle.input;&#10;  }&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7PctyxTEdDS" role="3cqZAp">
+          <node concept="3cpWsn" id="7PctyxTEdDV" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <node concept="2YIFZM" id="7PctyxTEdDX" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="7PctyxTEdDY" role="37wK5m">
+                <ref role="3cqZAo" node="7PctyxTEdDI" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="7PctyxTEdDZ" role="37wK5m">
+                <property role="Xl_RC" value="MultipleTypings" />
+              </node>
+              <node concept="1jxXqW" id="7PctyxTEdE0" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="7PctyxTEdE1" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="7PctyxTEdE2" role="3cqZAp">
+          <node concept="Xl_RD" id="7PctyxTEdE5" role="3tpDZB">
+            <property role="Xl_RC" value="package P {&#10;  part def V {&#10;    part p : A, B;&#10;    attribute a : Real, Integer;&#10;    port q : ~Pt, Qt;&#10;    item i : It, Jt;&#10;    ref r : X, Y;&#10;    connection driveLink : DriveLink, Other connect source ::&gt; transmission.drive to axle.input;&#10;    interface link : DataLink, Other connect s ::&gt; transmission.drive to t ::&gt; axle.input;&#10;  }&#10;}&#10;" />
+          </node>
+          <node concept="37vLTw" id="7PctyxTEdE6" role="3tpDZA">
+            <ref role="3cqZAo" node="7PctyxTEdDV" resolve="generateText" />
           </node>
         </node>
       </node>

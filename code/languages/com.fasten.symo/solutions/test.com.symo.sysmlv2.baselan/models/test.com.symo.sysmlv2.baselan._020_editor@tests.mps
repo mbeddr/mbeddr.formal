@@ -64,7 +64,7 @@
         <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
       </concept>
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
-        <child id="8930763252717678425" name="type" index="8EhU5" />
+        <child id="8930763252717678425" name="types" index="8EhU5" />
         <child id="4376090928945101101" name="value" index="2gbwqI" />
       </concept>
       <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
@@ -106,7 +106,7 @@
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
         <child id="8930763252716192330" name="content" index="8GFem" />
-        <child id="7140692429574298135" name="type" index="3w00ZT" />
+        <child id="7140692429574298135" name="types" index="3w00ZT" />
       </concept>
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
         <child id="7140692429574298127" name="specializes" index="3w00Zx" />
@@ -121,7 +121,7 @@
       </concept>
       <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
         <child id="4376090928935961761" name="content" index="2gGRGy" />
-        <child id="7140692429570900101" name="type" index="3xZtlF" />
+        <child id="7140692429570900101" name="types" index="3xZtlF" />
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
         <child id="7140692429570900092" name="specializes" index="3xZtmi" />
@@ -1627,7 +1627,7 @@
           <property role="TrG5h" value="Car" />
           <node concept="2uUmlE" id="3MUZSeFZHnZ" role="3w00ZY">
             <node concept="LIFWc" id="3MUZSeFZHoa" role="lGtFl">
-              <property role="LIFWd" value="Constant_yj3wp4_g0a" />
+              <property role="LIFWd" value="Constant_yj3wp4_h0a" />
               <property role="LIFWa" value="0" />
               <property role="OXtK3" value="true" />
               <property role="p6zMq" value="0" />
