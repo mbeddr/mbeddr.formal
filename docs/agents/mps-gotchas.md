@@ -12,6 +12,31 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## A default-true boolean needs inverted storage; unset booleans read false (2026-10-30)
+
+A spec property with default `true` (SysML `isUnique`) cannot be stored as a boolean property: an unset MPS boolean reads false, so every existing node would change meaning (and render `nonunique`). Store the inverse
+(`isNonUnique`, default false) and let the editor/textGen show the spec keyword; a `FlagCell` on the inverted property keeps the editor natural. The alternative is a migration that sets the new property on all existing nodes.
+
+## Adding a member to an interface-typed role is an interface change: nested definitions and editor completion (2026-10-30)
+
+A containment role typed by an interface (`content : ISysMLv2ItemBodyContent`) accepts exactly the concepts that implement it, so allowing a new kind of child is one `implements` entry on the concept (`update_node ADD CHILD` role `implements`, child
+`InterfaceConceptReference`, reference role `intfc`), not a structure change on every container. The grammar-cells substitute menus are generated per interface, so the new child also competes in completion: typing a prefix such as `connect` or
+`metadata` is now ambiguous with `connection def` / `metadata def`. Editor tests that type such a prefix must add a trailing space to commit the keyword.
+
+## Generated editor cell ids shift when cells are added; editor tests that name a cell id break (2026-10-30)
+
+Adding a cell to an editor (a new `FlagCell`, an extra constant) renumbers the generated cell ids of the cells after it. Editor tests whose `AnonymousCellAnnotation`/caret uses a generated id (`_120_Connections_PrefixMetadata` after the
+multiple-typing change) fail with a missing-cell error although nothing is wrong; re-read the id from the editor and update the test. Prefer explicit `EditorCellId`s on cells that tests address.
+
+## `update_node` is ADD/SET only: positions, deletion and references (2026-10-30)
+
+- `ADD CHILD` appends unless you pass `position` (0-based; the parameter is `position`, an `index` argument is silently ignored); check `data.index` in the result. `alter_nodes` `MOVE_CHILD` (`parameters {"nodeReference", "childRole", "childNodeRef", "position"}`) repositions an existing child.
+- `SET CHILD` without `childJson` (null) deletes the child; with valid json on a multi-valued role it replaces the node in place.
+- `SET REFERENCE` takes the key `references` (triplets `[node, role, target]`), `SET PROPERTY` takes `properties`; using the wrong key fails with "references is required".
+- `childJson` longer than ~4 KB must be an absolute file path. `parse_java_and_insert` cannot produce smodel types (see the 2026-10-29 importer entry). `print_node` with `deep: true` writes JSON to a `/tmp/mps-node-*.json` file;
+  blueprint local references by name may stay unresolved when inserted into a method, check with `SET REFERENCE` or `FIX_REFERENCES`.
+- `UPDATE_CONCEPT_CHILD` deletes the link instead of changing it; use `update_node`/`alter_structure` for child changes.
+
 ## An optional string that *precedes* its keyword (`name ::> chain`) cannot use OptionalCell; gate the cells and offer an Alt+Enter intention to set it (2026-10-29)
 
 `OptionalCell` needs a leading constant (see the 2026-10-25 entry), so `[name] ::>` fails with "Content of optional cell is not supported". An always-visible leading property cell works but takes

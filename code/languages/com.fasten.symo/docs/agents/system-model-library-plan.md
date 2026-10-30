@@ -395,7 +395,26 @@ textGen writes `name ::> ` before the chain. `references` normalizes to `::>` on
 `createConnectorEnd` builds the chain (`createConnectorEndChainOnly`) and sets `name` (`setConnectorEndName`). Multiplicity on ends is still rejected.
 Tests in `_270`: `testNamedConnectorAndInterfaceEnds`, `testReferencesKeywordOnConnectorEnd`; both fail when the name is not set (mutation-checked). The first full run found five flow tests failing
 (`extractFlowEndChain` lacked the element-0 slot, so the first chain step was taken as the name); fixed, suite now 417 tests with only the two known plantuml failures.
-Sandbox: `_030_package_level_usages` connection end `source ::>`, interface `link` with `s ::>`/`t ::>` (root check clean). Follow-up: the first design used a child concept `SysMLv2ConnectorEndName`; it was replaced by `INamedConcept` on the end. The unused concept and its editor/textGen roots still have to be deleted in the IDE (no MCP tool deletes roots).
+Sandbox: `_030_package_level_usages` connection end `source ::>`, interface `link` with `s ::>`/`t ::>` (root check clean). Follow-up (done): the first design used a child concept `SysMLv2ConnectorEndName`; it was replaced by `INamedConcept` on the end, and the unused concept and its editor/textGen roots were deleted in the IDE.
+
+### Iteration 026 result (2026-10-30, committed: 1d2eed08..64a46c36 step 1, 653fb698..ed0eb993 step 2, 3e645154..012ee412 step 3)
+
+**Step 1, multiple typing.** User decision: `type [0..1]` is replaced by `types [0..n]` on usages (`part p : A, B;`, also attribute, port, item, reference, connection and interface usages). Behavior `typeDefinitions()`
+returns all typings; importer reads every typing; text generation joins them with `, `. The round trip, a rejection test (a conjugated second typing on a reference usage) and a second-type scope test are in `_270`/`_130`; mutation-checked.
+The cell ids of the usage editors shifted, which broke the caret of editor test `_120_Connections_PrefixMetadata` (fixed with the new id).
+
+**Step 2, `ordered` / `nonunique`.** Design deviation, decided by the tech lead: the spec has `isUnique` (default true), but an unset MPS boolean reads false and would make every existing node render `nonunique`, so the stored
+properties on `SysMLv2Usage` are `isOrdered` and `isNonUnique` (both default false); the editor and text output are the spec keywords `ordered` / `nonunique` (plain `FlagCell`s after the multiplicity cell in part, item, port, attribute and reference
+usages; connection, interface and metadata usages have no multiplicity cell and no flags). Grammar `multiplicityPart` allows the flags with or without bounds (`part p ordered : A;`), so `extractMultiplicityBounds` no longer throws
+for missing bounds; `applyOrderingFlags` sets both flags. Output order is fixed (`ordered nonunique`), so `nonunique ordered` normalizes. `end` features still reject name, multiplicity and `nonunique` on the `end` keyword. Test
+`testOrderingFlagsRoundtrip` (`_270`), mutation-checked (flag read from the wrong token, a wrong textGen constant). No editor tests for the flag cells (they are DSL features, not hand-written logic). Sandbox: `Fleet` in `_030_package_level_usages`.
+
+**Step 3, definitions nested in bodies.** Audit: all definition bodies and usage bodies type their `content` role with one of `ISysMLv2ItemBodyContent`, `ISysMLv2PartBodyContent`, `ISysMLv2PortBodyContent`, `ISysMLv2AttributeBodyContent`
+(item/part/connection/interface/metadata/flow definitions use the first, part and item usages the second, port definition and usage the third, attribute definition and usage the fourth), and no definition implemented any of them. Change: `SysMLv2Definition`
+implements all four, so every definition can be nested in every body (the grammar's `definitionBodyItemContent: definitionElement`). Importer: `visitDefinitionBodyItemContent` visits the nested `definitionElement`; a nested `package` or `library package`
+is rejected by name ("package inside definition or usage body"); other definition elements we do not model (enum, occurrence, individual definitions, dependency) still hit the existing unsupported-element error. Tests: `testNestedDefinitionsRoundtrip` (`_050`),
+`testPackageInDefBodyRejected` / `testPackageInUsageBodyRejected` (`_130`, mutation-checked on the message). Sandbox: `Drivetrain` in `Fleet`. Side effect in the editor: typing `connect` or `metadata` in a body is now ambiguous with
+`connection def` / `metadata def` (as `part` and `part def` already are at package level), so editor tests `_090`, `_100`, `_110` type the keyword with a trailing space. Full suite: 424 tests, only the two known plantuml failures.
 
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
@@ -438,7 +457,7 @@ iterations.
 - 023 `end` features in connection defs and interface defs (`end source : T :>> D::source`, `end x : T` in an interface def) plus the 022 leftovers (package-level `ref`, values on reference usages) (done 2026-10-29, awaiting acceptance).
 - 024 named connector and interface ends (`t ::> transmission.drive`) (done 2026-10-29, awaiting acceptance).
 - 025 guard for `import` in a definition body (done 2026-10-29, awaiting acceptance).
-- 026 multiple typing, `ordered`/`nonunique`, definitions nested in bodies (revives 018f).
+- 026 multiple typing, `ordered`/`nonunique`, definitions nested in bodies (revives 018f) (done 2026-10-30, results above).
 - 027 import reference: structure, editor, scope (language only).
 - 028 import reference: importer sets it, default standard-library scope.
 - 029 kernel stubs (Base, Objects, Parts, Ports, Items, Connections, Interfaces, Attributes) in the accessory model.
