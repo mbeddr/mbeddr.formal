@@ -1151,7 +1151,6 @@
         </node>
         <node concept="1SiIV0" id="4YtP5yXhUZj" role="3bR37C">
           <node concept="3bR9La" id="4YtP5yXhUZl" role="1SiIV1">
-            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:uqqfP8JWSl" resolve="MPS.IDEA.Modules" />
           </node>
         </node>
@@ -2118,7 +2117,6 @@
         </node>
         <node concept="1SiIV0" id="4YtP5yXhUZO" role="3bR37C">
           <node concept="3bR9La" id="4YtP5yXhUZQ" role="1SiIV1">
-            <property role="3bR36h" value="true" />
             <ref role="3bR37D" to="ffeo:uqqfP8JWSl" resolve="MPS.IDEA.Modules" />
           </node>
         </node>
