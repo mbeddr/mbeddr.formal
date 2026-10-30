@@ -18181,6 +18181,53 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="7PctyxU06Ci" role="1SL9yI">
+      <property role="TrG5h" value="testOrderingFlagsRoundtrip" />
+      <node concept="3cqZAl" id="7PctyxU06Cl" role="3clF45" />
+      <node concept="3clFbS" id="7PctyxU06Cm" role="3clF47">
+        <node concept="3cpWs8" id="7PctyxU06Cn" role="3cqZAp">
+          <node concept="3cpWsn" id="7PctyxU06Cq" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="17QB3L" id="7PctyxU06Cs" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxU06Ct" role="3cqZAp">
+          <node concept="37vLTI" id="7PctyxU06Cv" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxU06Cy" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxU06Cq" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxU06Cz" role="37vLTx">
+              <property role="Xl_RC" value="package P {&#10;  part def V {&#10;    part p ordered : A;&#10;    part q [0..5] nonunique : A;&#10;    attribute a [1..5] nonunique ordered : Real;&#10;    port r [2] ordered : ~Pt;&#10;    item i nonunique : It;&#10;    ref s [3] ordered nonunique : X;&#10;    part plain : A;&#10;  }&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7PctyxU06C$" role="3cqZAp">
+          <node concept="3cpWsn" id="7PctyxU06CB" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <node concept="2YIFZM" id="7PctyxU06CD" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="7PctyxU06CE" role="37wK5m">
+                <ref role="3cqZAo" node="7PctyxU06Cq" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="7PctyxU06CF" role="37wK5m">
+                <property role="Xl_RC" value="OrderingFlags" />
+              </node>
+              <node concept="1jxXqW" id="7PctyxU06CG" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="7PctyxU06CH" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="7PctyxU06CI" role="3cqZAp">
+          <node concept="Xl_RD" id="7PctyxU06CL" role="3tpDZB">
+            <property role="Xl_RC" value="package P {&#10;  part def V {&#10;    part p ordered : A;&#10;    part q[0..5] nonunique : A;&#10;    attribute a[1..5] ordered nonunique : Real;&#10;    port r[2] ordered : ~Pt;&#10;    item i nonunique : It;&#10;    ref s[3] ordered nonunique : X;&#10;    part plain : A;&#10;  }&#10;}&#10;" />
+          </node>
+          <node concept="37vLTw" id="7PctyxU06CM" role="3tpDZA">
+            <ref role="3cqZAo" node="7PctyxU06CB" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
