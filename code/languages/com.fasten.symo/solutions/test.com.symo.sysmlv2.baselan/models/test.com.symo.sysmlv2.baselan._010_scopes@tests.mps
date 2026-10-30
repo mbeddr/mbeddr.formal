@@ -153,6 +153,10 @@
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
+      <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
+        <property id="4430087627524899785" name="importedName" index="3Z0PrK" />
+        <child id="9028721269198354948" name="importedElement" index="7Q8KG" />
+      </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
       </concept>
@@ -1161,6 +1165,36 @@
                     <ref role="3AHY9a" node="7PctyxTO4tP" />
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7PctyxUCLv7">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_130_ImportScope" />
+    <node concept="1qefOq" id="7PctyxUCLv8" role="1SKRRt">
+      <node concept="2h0jOr" id="7PctyxUCLva" role="1qenE9">
+        <property role="TrG5h" value="_130_ImportScope_file" />
+        <node concept="3ZUotO" id="7PctyxUCLvb" role="2h0jOs">
+          <property role="TrG5h" value="Part2_1" />
+        </node>
+        <node concept="3ZUotO" id="7PctyxUCLvc" role="2h0jOs">
+          <property role="TrG5h" value="Part2_2" />
+        </node>
+        <node concept="3Z0THl" id="7PctyxUCLvd" role="2h0jOs">
+          <property role="3Z0PrK" value="Part2_1" />
+          <node concept="1Bo4sc" id="7PctyxUCLvf" role="7Q8KG">
+            <ref role="1Bo4se" node="7PctyxUCLvb" resolve="Part2_1" />
+            <node concept="2rqxmr" id="7PctyxUCLvg" role="lGtFl">
+              <ref role="1BTHP0" node="7PctyxUCLvb" />
+              <node concept="3KTrbX" id="7PctyxUCLvh" role="3KTr4d">
+                <ref role="3AHY9a" node="7PctyxUCLvb" />
+              </node>
+              <node concept="3KTrbX" id="7PctyxUDoev" role="3KTr4d">
+                <ref role="3AHY9a" node="7PctyxUCLvc" resolve="Part2_2" />
               </node>
             </node>
           </node>
