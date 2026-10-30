@@ -12,6 +12,13 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Adding a link to an existing concept, deleting one list child, and mutation-checking a conditional (2026-10-30)
+
+- `alter_structure UPDATE_CONCEPT_CHILD` only updates existing children. To add a child link to an existing concept, `update_node ADD CHILD` a `LinkDeclaration` into the concept's `linkDeclaration` role (properties `role`, `metaClass` = aggregation, `sourceCardinality`, `linkId`, `name`; reference `target`), then rebuild the language.
+- Delete one child of a multi-valued role: `update_node SET CHILD` with only `childNodeRef` (the child itself), no `childJson`, no parent. `ADD CHILD` needs `childRole`; `SET CHILD` needs `childNodeRef` even when `childJson` is given (it names the node being replaced, which then gets a new id).
+- `alter_nodes` has no DELETE; `update_node` only knows `ADD`/`SET`. `model_used_language DELETE` needs `kind: "language"`; `execute_run_configuration` takes `configurationName` and the name of a root-created JUnit config is the root's name, not the `name` passed to `create_run_configuration`.
+- Mutation-checking a textGen `if` by forcing the condition to `false` only detects the else-branch if the test input hits the branch with the *empty* case: a nested body keeps the parent non-empty, so add an empty sibling (`ref other;`).
+
 ## Showing a property cell and a child cell together leaves a stray placeholder; blueprint name references stay unresolved; small MCP shape traps (2026-10-30)
 
 - A property cell next to a child `RefNode` cell for the same slot shows `<no prop>` beside the reference. Use one `CellModel_Alternation` (condition picks the child cell or the property cell).
