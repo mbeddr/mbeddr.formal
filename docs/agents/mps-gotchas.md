@@ -12,6 +12,15 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## update_node / alter_nodes operations, smodel nesting, parsed-method fixes (2026-10-31)
+
+- `update_node` has only ADD and SET. Delete a child with `SET CHILD` giving `childNodeRef` and no `childJson`; `SET CHILD` with both replaces. `SET REFERENCE` takes `references: [[nodeRef, role, targetRef]]`. `alter_nodes` offers MOVE_CHILD, MOVE_NODE_TO_PARENT, MAKE, FIX_REFERENCES only (no DELETE); delete a root with `update_root_node_from_json` `operation: DELETE`.
+- Inline `childJson` above ~3.5KB fails with an EOF / "unbalanced" error: write the JSON to a file and pass its absolute path as `childJson`.
+- In textGen and collection code a foreach variable is read with `jetbrains.mps.baseLanguage.collections.structure.ForEachVariableReference` (role `variable`); a plain `VariableReference` is rejected ("expected VariableDeclaration").
+- Adding to a child list in smodel: `Dot(Dot(x, SLinkListAccess), AddElementOperation)` (role `argument`). `SNodeTypeCastExpression` has `leftExpression` + `conceptArgument` (`RefConcept_Reference`), property `asCast`.
+- A Java-parsed method gets an unresolved `SNode` ClassifierType: set `classifier` to `8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.model(MPS.OpenAPI/)/~SNode`; `setProperty`/`addChild` calls stay unresolved, rewrite them as smodel property assignment / link-list add. Uncaught `IOException` in parsed statements needs a try/catch.
+- `print_node` with `deep: true` nests children under `nodes`, not `children`.
+
 ## Adding a property, blueprint shapes, test-case access mode, deleting roots (2026-10-30)
 
 - `alter_structure UPDATE_CONCEPT_PROPERTY` only updates existing properties. To add a property use `update_node ADD CHILD` with `childRole: propertyDeclaration`; its datatype reference id `…/1082983657062` is `integer` (boolean is `…063`), so set the datatype afterwards with `update_node SET REFERENCE` (target name `string`).

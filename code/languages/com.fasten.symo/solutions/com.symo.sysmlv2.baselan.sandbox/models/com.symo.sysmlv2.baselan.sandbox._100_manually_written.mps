@@ -119,7 +119,12 @@
       </concept>
       <concept id="6214786105876472907" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinition" flags="ng" index="1_WVX2" />
       <concept id="6214786105876472909" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataUsage" flags="ng" index="1_WVX4" />
+      <concept id="7354895567553737694" name="com.symo.sysmlv2.baselan.structure.SysMLv2Alias" flags="ng" index="1AcQlj">
+        <child id="7354895567584118451" name="target" index="1BST0Y" />
+        <child id="9028721269300000001" name="content" index="3XVScD" />
+      </concept>
       <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
+        <property id="7354895567575683458" name="targetName" index="1Bo4sf" />
         <reference id="7354895567575683459" name="target" index="1Bo4se" />
       </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
@@ -800,6 +805,41 @@
       <node concept="1_WVX2" id="7PctyxX9JdN" role="3Z9vGx">
         <property role="6zCXJ" value="orig" />
         <property role="TrG5h" value="OriginalMetadata" />
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="7PctyxXx$k_">
+    <property role="TrG5h" value="_060_alias_short_names_and_bodies" />
+    <node concept="3Z9vzX" id="7PctyxXx$kA" role="2h0jOs">
+      <property role="TrG5h" value="Quantities" />
+      <node concept="1AcQlj" id="7PctyxXx$kB" role="3Z9vGx">
+        <property role="TrG5h" value="Length" />
+        <node concept="1Bo4sc" id="7PctyxXx$kD" role="1BST0Y">
+          <property role="1Bo4sf" value="LengthValue" />
+        </node>
+      </node>
+      <node concept="1AcQlj" id="7PctyxXx$kE" role="3Z9vGx">
+        <property role="TrG5h" value="Mass" />
+        <property role="6zCXJ" value="kg" />
+        <node concept="1Bo4sc" id="7PctyxXx$kG" role="1BST0Y">
+          <property role="1Bo4sf" value="MassValue" />
+        </node>
+      </node>
+      <node concept="1AcQlj" id="7PctyxXx$kH" role="3Z9vGx">
+        <property role="6zCXJ" value="m" />
+        <node concept="1Bo4sc" id="7PctyxXx$kJ" role="1BST0Y">
+          <property role="1Bo4sf" value="MeterValue" />
+        </node>
+      </node>
+      <node concept="1AcQlj" id="7PctyxXx$kK" role="3Z9vGx">
+        <property role="TrG5h" value="Duration" />
+        <property role="6zCXJ" value="t" />
+        <node concept="1Bo4sc" id="7PctyxXx$kM" role="1BST0Y">
+          <property role="1Bo4sf" value="TimeValue" />
+        </node>
+        <node concept="3HG_t4" id="7PctyxXx$kN" role="3XVScD">
+          <property role="3HG_t5" value="A duration, given in seconds" />
+        </node>
       </node>
     </node>
   </node>

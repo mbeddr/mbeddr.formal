@@ -15333,7 +15333,7 @@
       </node>
     </node>
     <node concept="1LZb2c" id="6ohPCO11nL6" role="1SL9yI">
-      <property role="TrG5h" value="testAliasBodyRejected" />
+      <property role="TrG5h" value="testAliasBodyWithDefinitionIsSyntaxError" />
       <node concept="3cqZAl" id="6ohPCO11nL9" role="3clF45" />
       <node concept="3clFbS" id="6ohPCO11nLa" role="3clF47">
         <node concept="3J1_TO" id="6ohPCO11nLb" role="3cqZAp">
@@ -15347,7 +15347,7 @@
                   <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
                   <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
                   <node concept="Xl_RD" id="6ohPCO11nLk" role="37wK5m">
-                    <property role="Xl_RC" value="package P { alias X for Y { doc /* hi */ } }" />
+                    <property role="Xl_RC" value="package P { alias X for Y { part def Z; } }" />
                   </node>
                   <node concept="Xl_RD" id="6ohPCO11nLl" role="37wK5m">
                     <property role="Xl_RC" value="AliasBody" />
@@ -15389,86 +15389,13 @@
             <node concept="3clFbS" id="6ohPCO11nLD" role="1zc67A">
               <node concept="3vlDli" id="6ohPCO11nLE" role="3cqZAp">
                 <node concept="Xl_RD" id="6ohPCO11nLH" role="3tpDZB">
-                  <property role="Xl_RC" value="Unsupported SysML v2 construct: alias body" />
+                  <property role="Xl_RC" value="SysML v2 syntax errors while importing AliasBody" />
                 </node>
                 <node concept="2OqwBi" id="6ohPCO11nLI" role="3tpDZA">
                   <node concept="37vLTw" id="6ohPCO11nLL" role="2Oq$k0">
                     <ref role="3cqZAo" node="6ohPCO11nL$" resolve="e" />
                   </node>
                   <node concept="liA8E" id="6ohPCO11nLM" role="2OqNvi">
-                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1LZb2c" id="6ohPCO11nN7" role="1SL9yI">
-      <property role="TrG5h" value="testAliasShortNameRejected" />
-      <node concept="3cqZAl" id="6ohPCO11nNa" role="3clF45" />
-      <node concept="3clFbS" id="6ohPCO11nNb" role="3clF47">
-        <node concept="3J1_TO" id="6ohPCO11nNc" role="3cqZAp">
-          <node concept="3clFbS" id="6ohPCO11nNe" role="1zxBo7">
-            <node concept="3cpWs8" id="6ohPCO11nNf" role="3cqZAp">
-              <node concept="3cpWsn" id="6ohPCO11nNi" role="3cpWs9">
-                <property role="TrG5h" value="tmp" />
-                <property role="OYnhT" value="local variable" />
-                <property role="2Lvdk3" value="tmp" />
-                <node concept="2YIFZM" id="6ohPCO11nNk" role="33vP2m">
-                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
-                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
-                  <node concept="Xl_RD" id="6ohPCO11nNl" role="37wK5m">
-                    <property role="Xl_RC" value="package P { alias &lt;Short&gt; X for Y; }" />
-                  </node>
-                  <node concept="Xl_RD" id="6ohPCO11nNm" role="37wK5m">
-                    <property role="Xl_RC" value="AliasShort" />
-                  </node>
-                  <node concept="1jxXqW" id="6ohPCO11nNn" role="37wK5m" />
-                </node>
-                <node concept="H_c77" id="6ohPCO11nNo" role="1tU5fm" />
-              </node>
-            </node>
-            <node concept="3xETmq" id="6ohPCO11nNp" role="3cqZAp">
-              <node concept="3_1$Yv" id="6ohPCO11nNq" role="3_9lra">
-                <node concept="Xl_RD" id="6ohPCO11nNr" role="3_1BAH">
-                  <property role="Xl_RC" value="AliasShort expected rejection" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbF" id="6ohPCO11nNs" role="3cqZAp">
-              <node concept="2YIFZM" id="6ohPCO11nNu" role="3clFbG">
-                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
-                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
-                <node concept="37vLTw" id="6ohPCO11nNv" role="37wK5m">
-                  <ref role="3cqZAo" node="6ohPCO11nNi" resolve="tmp" />
-                </node>
-                <node concept="1jxXqW" id="6ohPCO11nNw" role="37wK5m" />
-              </node>
-            </node>
-          </node>
-          <node concept="3uVAMA" id="6ohPCO11nNx" role="1zxBo5">
-            <node concept="XOnhg" id="6ohPCO11nN_" role="1zc67B">
-              <property role="TrG5h" value="e" />
-              <property role="OYnhT" value="local variable" />
-              <property role="2Lvdk3" value="e" />
-              <node concept="nSUau" id="6ohPCO11nNB" role="1tU5fm">
-                <node concept="3uibUv" id="6ohPCO11nND" role="nSUat">
-                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
-                </node>
-              </node>
-            </node>
-            <node concept="3clFbS" id="6ohPCO11nNE" role="1zc67A">
-              <node concept="3vlDli" id="6ohPCO11nNF" role="3cqZAp">
-                <node concept="Xl_RD" id="6ohPCO11nNI" role="3tpDZB">
-                  <property role="Xl_RC" value="Unsupported SysML v2 construct: alias short name" />
-                </node>
-                <node concept="2OqwBi" id="6ohPCO11nNJ" role="3tpDZA">
-                  <node concept="37vLTw" id="6ohPCO11nNM" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6ohPCO11nN_" resolve="e" />
-                  </node>
-                  <node concept="liA8E" id="6ohPCO11nNN" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
@@ -19294,6 +19221,191 @@
           </node>
           <node concept="37vLTw" id="7PctyxX1KtF" role="3tpDZA">
             <ref role="3cqZAo" node="7PctyxX1iOC" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7PctyxXx8q6">
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="TrG5h" value="_320_AliasShortNameAndBodyTest" />
+    <node concept="1LZb2c" id="7PctyxXx8qk" role="1SL9yI">
+      <property role="TrG5h" value="testAliasShortNamesAndBodies" />
+      <node concept="3cqZAl" id="7PctyxXx8qn" role="3clF45" />
+      <node concept="3clFbS" id="7PctyxXx8qo" role="3clF47">
+        <node concept="3cpWs8" id="7PctyxXx8qC" role="3cqZAp">
+          <node concept="3cpWsn" id="7PctyxXx8qB" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="7PctyxXx8qD" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8qE" role="3cqZAp">
+          <node concept="37vLTI" id="7PctyxXx8qF" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8qG" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8qH" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8qI" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8qJ" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8qK" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8qL" role="37vLTx">
+              <property role="Xl_RC" value="  alias &lt;a&gt; AliasA for T;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8qM" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8qN" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8qO" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8qP" role="37vLTx">
+              <property role="Xl_RC" value="  alias &lt;b&gt; for T;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8qQ" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8qR" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8qS" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8qT" role="37vLTx">
+              <property role="Xl_RC" value="  alias AliasC for T;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8qU" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8qV" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8qW" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8qX" role="37vLTx">
+              <property role="Xl_RC" value="  alias &lt;d&gt; AliasD for T {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8qY" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8qZ" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8r0" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8r1" role="37vLTx">
+              <property role="Xl_RC" value="    doc /* alias doc */\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8r2" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8r3" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8r4" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8r5" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8r6" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8r7" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8r8" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8r9" role="37vLTx">
+              <property role="Xl_RC" value="  part def D {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8ra" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8rb" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8rc" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8rd" role="37vLTx">
+              <property role="Xl_RC" value="    alias &lt;e&gt; AliasE for U;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8re" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8rf" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8rg" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8rh" role="37vLTx">
+              <property role="Xl_RC" value="    alias AliasF for U {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8ri" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8rj" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8rk" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8rl" role="37vLTx">
+              <property role="Xl_RC" value="      doc /* nested doc */\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8rm" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8rn" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8ro" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8rp" role="37vLTx">
+              <property role="Xl_RC" value="    }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8rq" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8rr" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8rs" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8rt" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxXx8ru" role="3cqZAp">
+          <node concept="d57v9" id="7PctyxXx8rv" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxXx8rw" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxXx8rx" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7PctyxXx8rz" role="3cqZAp">
+          <node concept="3cpWsn" id="7PctyxXx8ry" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <node concept="3uibUv" id="7PctyxXx8r$" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="7PctyxXx8rH" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="7PctyxXx8rI" role="37wK5m">
+                <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="7PctyxXx8rJ" role="37wK5m">
+                <property role="Xl_RC" value="AliasShortNamesAndBodies" />
+              </node>
+              <node concept="1jxXqW" id="7PctyxXx8PP" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="7PctyxXx8Q3" role="3cqZAp">
+          <node concept="37vLTw" id="7PctyxXx8Q6" role="3tpDZB">
+            <ref role="3cqZAo" node="7PctyxXx8qB" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="7PctyxXx8Q7" role="3tpDZA">
+            <ref role="3cqZAo" node="7PctyxXx8ry" resolve="generateText" />
           </node>
         </node>
       </node>
