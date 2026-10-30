@@ -4432,6 +4432,53 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="7PctyxUp4wE" role="1SL9yI">
+      <property role="TrG5h" value="testNestedDefinitionsRoundtrip" />
+      <node concept="3cqZAl" id="7PctyxUp4wH" role="3clF45" />
+      <node concept="3clFbS" id="7PctyxUp4wI" role="3clF47">
+        <node concept="3cpWs8" id="7PctyxUp4wJ" role="3cqZAp">
+          <node concept="3cpWsn" id="7PctyxUp4wM" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="17QB3L" id="7PctyxUp4wO" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="7PctyxUp4wP" role="3cqZAp">
+          <node concept="37vLTI" id="7PctyxUp4wR" role="3clFbG">
+            <node concept="37vLTw" id="7PctyxUp4wU" role="37vLTJ">
+              <ref role="3cqZAo" node="7PctyxUp4wM" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="7PctyxUp4wV" role="37vLTx">
+              <property role="Xl_RC" value="package P {&#10;  part def V {&#10;    private part def Inner {&#10;      part sub : Inner;&#10;    }&#10;    attribute def Mass {&#10;      attribute def Unit;&#10;    }&#10;    port def Pt {&#10;      item def Signal;&#10;    }&#10;    part body : Inner {&#10;      attribute def Local;&#10;    }&#10;  }&#10;}&#10;" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7PctyxUp4wW" role="3cqZAp">
+          <node concept="3cpWsn" id="7PctyxUp4wZ" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <node concept="2YIFZM" id="7PctyxUp4x1" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="7PctyxUp4x2" role="37wK5m">
+                <ref role="3cqZAo" node="7PctyxUp4wM" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="7PctyxUp4x3" role="37wK5m">
+                <property role="Xl_RC" value="NestedDefinitions" />
+              </node>
+              <node concept="1jxXqW" id="7PctyxUp4x4" role="37wK5m" />
+            </node>
+            <node concept="17QB3L" id="7PctyxUp4x5" role="1tU5fm" />
+          </node>
+        </node>
+        <node concept="3vlDli" id="7PctyxUp4x6" role="3cqZAp">
+          <node concept="Xl_RD" id="7PctyxUp4x9" role="3tpDZB">
+            <property role="Xl_RC" value="package P {&#10;  part def V {&#10;    private part def Inner {&#10;      part sub : Inner;&#10;    }&#10;    attribute def Mass {&#10;      attribute def Unit {&#10;      }&#10;    }&#10;    port def Pt {&#10;      item def Signal {&#10;      }&#10;    }&#10;    part body : Inner {&#10;      attribute def Local {&#10;      }&#10;    }&#10;  }&#10;}&#10;" />
+          </node>
+          <node concept="37vLTw" id="7PctyxUp4xa" role="3tpDZA">
+            <ref role="3cqZAo" node="7PctyxUp4wZ" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="1lH9Xt" id="7JKstLNkCTL">
     <property role="3DII0k" value="2hh8MJdVwqT/none" />
@@ -15774,6 +15821,144 @@
                     <ref role="3cqZAo" node="fNDJb7F8Gy" resolve="e" />
                   </node>
                   <node concept="liA8E" id="fNDJb7F8GK" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="7PctyxUoOzT" role="1SL9yI">
+      <property role="TrG5h" value="testPackageInDefBodyRejected" />
+      <node concept="3cqZAl" id="7PctyxUoOzW" role="3clF45" />
+      <node concept="3clFbS" id="7PctyxUoOzX" role="3clF47">
+        <node concept="3J1_TO" id="7PctyxUoOzY" role="3cqZAp">
+          <node concept="3clFbS" id="7PctyxUoO$0" role="1zxBo7">
+            <node concept="3cpWs8" id="7PctyxUoO$1" role="3cqZAp">
+              <node concept="3cpWsn" id="7PctyxUoO$4" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="2YIFZM" id="7PctyxUoO$6" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="7PctyxUoO$7" role="37wK5m">
+                    <property role="Xl_RC" value="package P { part def D { package Q { } } }" />
+                  </node>
+                  <node concept="Xl_RD" id="7PctyxUoO$8" role="37wK5m">
+                    <property role="Xl_RC" value="PackageInDefBodyRejected" />
+                  </node>
+                  <node concept="1jxXqW" id="7PctyxUoO$9" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="7PctyxUoO$a" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3xETmq" id="7PctyxUoO$b" role="3cqZAp">
+              <node concept="3_1$Yv" id="7PctyxUoO$c" role="3_9lra">
+                <node concept="Xl_RD" id="7PctyxUoO$d" role="3_1BAH">
+                  <property role="Xl_RC" value="PackageInDefBodyRejected expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7PctyxUoO$e" role="3cqZAp">
+              <node concept="2YIFZM" id="7PctyxUoO$g" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="7PctyxUoO$h" role="37wK5m">
+                  <ref role="3cqZAo" node="7PctyxUoO$4" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="7PctyxUoO$i" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="7PctyxUoO$j" role="1zxBo5">
+            <node concept="XOnhg" id="7PctyxUoO$n" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="7PctyxUoO$p" role="1tU5fm">
+                <node concept="3uibUv" id="7PctyxUoO$r" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="7PctyxUoO$s" role="1zc67A">
+              <node concept="3vlDli" id="7PctyxUoO$t" role="3cqZAp">
+                <node concept="Xl_RD" id="7PctyxUoO$w" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: package inside definition or usage body" />
+                </node>
+                <node concept="2OqwBi" id="7PctyxUoO$x" role="3tpDZA">
+                  <node concept="37vLTw" id="7PctyxUoO$$" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7PctyxUoO$n" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="7PctyxUoO$_" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="7PctyxUoOA5" role="1SL9yI">
+      <property role="TrG5h" value="testPackageInUsageBodyRejected" />
+      <node concept="3cqZAl" id="7PctyxUoOA8" role="3clF45" />
+      <node concept="3clFbS" id="7PctyxUoOA9" role="3clF47">
+        <node concept="3J1_TO" id="7PctyxUoOAa" role="3cqZAp">
+          <node concept="3clFbS" id="7PctyxUoOAc" role="1zxBo7">
+            <node concept="3cpWs8" id="7PctyxUoOAd" role="3cqZAp">
+              <node concept="3cpWsn" id="7PctyxUoOAg" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <node concept="2YIFZM" id="7PctyxUoOAi" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="7PctyxUoOAj" role="37wK5m">
+                    <property role="Xl_RC" value="package P { part def D { part x : D { package Q { } } } }" />
+                  </node>
+                  <node concept="Xl_RD" id="7PctyxUoOAk" role="37wK5m">
+                    <property role="Xl_RC" value="PackageInUsageBodyRejected" />
+                  </node>
+                  <node concept="1jxXqW" id="7PctyxUoOAl" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="7PctyxUoOAm" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3xETmq" id="7PctyxUoOAn" role="3cqZAp">
+              <node concept="3_1$Yv" id="7PctyxUoOAo" role="3_9lra">
+                <node concept="Xl_RD" id="7PctyxUoOAp" role="3_1BAH">
+                  <property role="Xl_RC" value="PackageInUsageBodyRejected expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7PctyxUoOAq" role="3cqZAp">
+              <node concept="2YIFZM" id="7PctyxUoOAs" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="7PctyxUoOAt" role="37wK5m">
+                  <ref role="3cqZAo" node="7PctyxUoOAg" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="7PctyxUoOAu" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="7PctyxUoOAv" role="1zxBo5">
+            <node concept="XOnhg" id="7PctyxUoOAz" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <node concept="nSUau" id="7PctyxUoOA_" role="1tU5fm">
+                <node concept="3uibUv" id="7PctyxUoOAB" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="7PctyxUoOAC" role="1zc67A">
+              <node concept="3vlDli" id="7PctyxUoOAD" role="3cqZAp">
+                <node concept="Xl_RD" id="7PctyxUoOAG" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: package inside definition or usage body" />
+                </node>
+                <node concept="2OqwBi" id="7PctyxUoOAH" role="3tpDZA">
+                  <node concept="37vLTw" id="7PctyxUoOAK" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7PctyxUoOAz" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="7PctyxUoOAL" role="2OqNvi">
                     <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
                   </node>
                 </node>
