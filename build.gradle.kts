@@ -131,10 +131,9 @@ configurations {
         languageLibs("com.mbeddr:platform:2026.1.26592.4611389")
         languageLibs("org.mpsqa:all-in-one:$platformVersion")
         
-        plantUML("org.apache.xmlgraphics:batik-all:1.18")
+        // batik-all and xmlgraphics-commons come from de.itemis.stubs.batik (bundled in com.mbeddr:platform)
         plantUML("net.sourceforge.plantuml:plantuml-epl:1.2024.7")
         plantUML("xml-apis:xml-apis-ext:1.3.04")
-        plantUML("org.apache.xmlgraphics:xmlgraphics-commons:2.2")
 
         docx4j("org.docx4j:docx4j-core:$docx4JVersion")
         docx4j("org.docx4j:docx4j-JAXB-MOXy:$docx4JVersion")
@@ -283,6 +282,20 @@ fun createSyncTask(taskName: String, configurationName: String, destinationDir: 
         duplicatesStrategy = DuplicatesStrategy.EXCLUDE
     }
 }
+
+// configurations reported in the SBOM and declared as dependencies in the published POMs
+val bundledLibConfigs = listOf(
+    "languageLibs",
+    "docx4j",
+    "langchain4j",
+    "plantUML",
+    "sat4j",
+    "jfreechart",
+    "nusmv",
+    "z3",
+    "jira",
+    "pdfbox"
+)
 
 val resolvePlantUML = createSyncTask(
     taskName = "resolvePlantUML",
@@ -663,18 +676,7 @@ tasks {
         jsonOutput = layout.buildDirectory.file("reports/sbom.json")
         xmlOutput.unsetConvention()
         includeLicenseText = false
-        includeConfigs = listOf(
-            "languageLibs",
-            "docx4j",
-            "langchain4j",
-            "plantUML",
-            "sat4j",
-            "jfreechart",
-            "nusmv",
-            "z3",
-            "jira",
-            "pdfbox"
-        )
+        includeConfigs = bundledLibConfigs
     }
 
     //clean { dependsOn(cleanMps) }
@@ -752,19 +754,7 @@ fun configurePublication(publication: MavenPublication, group: String, artifactI
         pom.withXml {
             val dependenciesNode = asNode().appendNode("dependencies")
 
-            listOf(
-                "languageLibs",
-                "mps",
-                "docx4j",
-		"langchain4j",
-                "plantUML",
-                "sat4j",
-                "jfreechart",
-                "nusmv",
-                "z3",
-                "jira",
-                "pdfbox"
-            ).forEach { config ->
+            (listOf("mps") + bundledLibConfigs).forEach { config ->
                 addDependencies(dependenciesNode, config)
             }
         }
