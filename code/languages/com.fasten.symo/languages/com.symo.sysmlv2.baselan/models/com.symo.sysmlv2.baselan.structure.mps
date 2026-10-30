@@ -1551,6 +1551,14 @@
     <node concept="PrWs8" id="fNDJb7RVme" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
+    <node concept="1TJgyj" id="7PctyxVpiJA" role="1TKVEi">
+      <property role="IQ2ns" value="9028721269212000001" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="TrG5h" value="content" />
+      <ref role="20lvS9" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="fNDJb8FIGU">
     <property role="EcuMT" value="284754763133676346" />
