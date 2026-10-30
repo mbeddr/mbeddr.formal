@@ -416,6 +416,14 @@ is rejected by name ("package inside definition or usage body"); other definitio
 `testPackageInDefBodyRejected` / `testPackageInUsageBodyRejected` (`_130`, mutation-checked on the message). Sandbox: `Drivetrain` in `Fleet`. Side effect in the editor: typing `connect` or `metadata` in a body is now ambiguous with
 `connection def` / `metadata def` (as `part` and `part def` already are at package level), so editor tests `_090`, `_100`, `_110` type the keyword with a trailing space. Full suite: 424 tests, only the two known plantuml failures.
 
+### Iteration 027 result: import reference, language only (2026-10-30)
+
+`SysMLv2Import` keeps the string `importedName` and gains an optional (`0..1`) child `importedElement : SysMLv2IdentifierNameConceptRef` (the smart reference already used for names; its scope is the visible name-bearing nodes).
+The editor is one `CellModel_Alternation`: the reference cell when `importedElement` is set or `importedName` is empty, otherwise the `importedName` text (clear the text to pick a reference by completion). TextGen prints the reference's
+effective name when set, else the string. Tests: scope test `_130_ImportScope` (the reference offers exactly the sibling part defs), textGen test `testImportedElementPrintsReference` (helper `TestUtils.setImportedElement` in typed smodel),
+both mutation-checked (expected node removed; textGen condition forced to `false` printed `import ;`). Sandbox: `import Fleet::*;` in `_030_package_level_usages`. Full suite: 426 tests, only the two known plantuml failures.
+Not covered: an editor completion test for choosing the target (logic covered by scope and textGen tests), and the importer setting the reference (028).
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
@@ -458,7 +466,7 @@ iterations.
 - 024 named connector and interface ends (`t ::> transmission.drive`) (done 2026-10-29, awaiting acceptance).
 - 025 guard for `import` in a definition body (done 2026-10-29, awaiting acceptance).
 - 026 multiple typing, `ordered`/`nonunique`, definitions nested in bodies (revives 018f) (done 2026-10-30, results above).
-- 027 import reference: structure, editor, scope (language only).
+- 027 import reference: structure, editor, scope (language only). (done 2026-10-30, results above)
 - 028 import reference: importer sets it, default standard-library scope.
 - 029 kernel stubs (Base, Objects, Parts, Ports, Items, Connections, Interfaces, Attributes) in the accessory model.
 - 030 `ISQ`/`SI` unit stubs.

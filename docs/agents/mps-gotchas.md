@@ -12,6 +12,14 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Showing a property cell and a child cell together leaves a stray placeholder; blueprint name references stay unresolved; small MCP shape traps (2026-10-30)
+
+- A property cell next to a child `RefNode` cell for the same slot shows `<no prop>` beside the reference. Use one `CellModel_Alternation` (condition picks the child cell or the property cell).
+- `ScopesTest`/`ScopesExpectedNode` name references inserted through a root blueprint stay unresolved: fix with `update_node SET REFERENCE` triplets on the TestNode.
+- `IfStatement.ifFalseStatement` takes a `Statement`: wrap a `StatementList` in a `BlockStatement` (child role `statements`). `new node<C>()` is a `GenericNewExpression` (role `creator`) holding an `SNodeCreator`, not an `Expression` itself.
+- `parse_java_and_insert` needs `insert: {mode:"child", role:"member", parentRef}` and, for methods, `contextNodeRef`; `SModel` is unresolved in a test model, use the smodel `SModelType` (`model`).
+- `sourceCardinality` of a new `LinkDeclaration` created by blueprint can come out `1` (mandatory); verify, and reset to `0..1` (property removed = default) if the link is optional.
+
 ## A default-true boolean needs inverted storage; unset booleans read false (2026-10-30)
 
 A spec property with default `true` (SysML `isUnique`) cannot be stored as a boolean property: an unset MPS boolean reads false, so every existing node would change meaning (and render `nonunique`). Store the inverse
