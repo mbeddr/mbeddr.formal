@@ -175,6 +175,12 @@
     <node concept="PrWs8" id="fNDJb3A_y6" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
+    <node concept="1TJgyj" id="7PctyxU_fC4" role="1TKVEi">
+      <property role="IQ2ns" value="9028721269198354948" />
+      <property role="20kJfa" value="importedElement" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6ohPCO1sp61" resolve="SysMLv2IdentifierNameConceptRef" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3PUPjB2$P9d">
     <property role="EcuMT" value="4430087627526591053" />
