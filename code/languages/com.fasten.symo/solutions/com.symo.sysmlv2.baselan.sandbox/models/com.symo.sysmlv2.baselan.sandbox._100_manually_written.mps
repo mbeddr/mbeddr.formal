@@ -12,6 +12,7 @@
         <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
       </concept>
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
+        <child id="8930763252717678424" name="content" index="8EhU4" />
         <child id="8930763252717678425" name="types" index="8EhU5" />
         <child id="8930763252717678426" name="multiplicity" index="8EhU6" />
       </concept>
@@ -609,6 +610,27 @@
       <property role="TrG5h" value="Drivetrain" />
       <node concept="8EhVW" id="fNDJb7F_tf" role="3Z9vGx">
         <property role="TrG5h" value="Torque" />
+      </node>
+      <node concept="8EhVW" id="7PctyxVmEnW" role="3Z9vGx">
+        <property role="TrG5h" value="EngineRating" />
+        <node concept="8EhU9" id="7PctyxVmEnX" role="8EhVZ">
+          <property role="TrG5h" value="peak" />
+          <node concept="8EhVB" id="7PctyxVmEnY" role="8EhU5">
+            <ref role="8EhVx" node="fNDJb7F_tf" resolve="Torque" />
+          </node>
+          <node concept="35c6Nh" id="7PctyxVmEnZ" role="8EhU4">
+            <property role="TrG5h" value="nominal" />
+            <node concept="3bnkR8" id="7PctyxVmEo0" role="34b1dU">
+              <property role="3bnkR9" value="250.0 [N * m]" />
+            </node>
+          </node>
+          <node concept="35c6Nh" id="7PctyxVmEo1" role="8EhU4">
+            <property role="TrG5h" value="limit" />
+            <node concept="3bnkR8" id="7PctyxVmEo2" role="34b1dU">
+              <property role="3bnkR9" value="300.0 [N * m]" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3ZUotO" id="fNDJb7F_tg" role="3Z9vGx">
         <property role="TrG5h" value="Engine" />
