@@ -7401,6 +7401,65 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbJ" id="7PctyxUfE9m" role="3cqZAp">
+          <node concept="3y3z36" id="7PctyxUfE9n" role="3clFbw">
+            <node concept="37vLTw" id="7PctyxUfE9o" role="3uHU7B">
+              <ref role="3cqZAo" node="6ohPCO0Bznp" resolve="nestedDef" />
+            </node>
+            <node concept="10Nm6u" id="7PctyxUfE9p" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="7PctyxUfE9r" role="3clFbx">
+            <node concept="3clFbJ" id="7PctyxUfE9s" role="3cqZAp">
+              <node concept="22lmx$" id="7PctyxUfE9t" role="3clFbw">
+                <node concept="3y3z36" id="7PctyxUfE9u" role="3uHU7B">
+                  <node concept="2OqwBi" id="7PctyxUfEVq" role="3uHU7B">
+                    <node concept="37vLTw" id="7PctyxUfEo5" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6ohPCO0Bznp" resolve="nestedDef" />
+                    </node>
+                    <node concept="liA8E" id="7PctyxUfEVr" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionElementContext.package_()" resolve="package_" />
+                    </node>
+                  </node>
+                  <node concept="10Nm6u" id="7PctyxUfE9w" role="3uHU7w" />
+                </node>
+                <node concept="3y3z36" id="7PctyxUfE9x" role="3uHU7w">
+                  <node concept="2OqwBi" id="7PctyxUfEVA" role="3uHU7B">
+                    <node concept="37vLTw" id="7PctyxUfEAv" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6ohPCO0Bznp" resolve="nestedDef" />
+                    </node>
+                    <node concept="liA8E" id="7PctyxUfEVB" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionElementContext.libraryPackage()" resolve="libraryPackage" />
+                    </node>
+                  </node>
+                  <node concept="10Nm6u" id="7PctyxUfE9z" role="3uHU7w" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="7PctyxUfE9_" role="3clFbx">
+                <node concept="YS8fn" id="7PctyxUfE9C" role="3cqZAp">
+                  <node concept="2ShNRf" id="7PctyxUfEAx" role="YScLw">
+                    <node concept="1pGfFk" id="7PctyxUfEGG" role="2ShVmc">
+                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                      <node concept="Xl_RD" id="7PctyxUfEGH" role="37wK5m">
+                        <property role="Xl_RC" value="Unsupported SysML v2 construct: package inside definition or usage body" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs6" id="7PctyxUfE9D" role="3cqZAp">
+              <node concept="2OqwBi" id="7PctyxUfEVd" role="3cqZAk">
+                <node concept="Xjq3P" id="7PctyxUfE9F" role="2Oq$k0" />
+                <node concept="liA8E" id="7PctyxUfEVe" role="2OqNvi">
+                  <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                  <node concept="37vLTw" id="7PctyxUfEVf" role="37wK5m">
+                    <ref role="3cqZAo" node="6ohPCO0Bznp" resolve="nestedDef" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
         <node concept="3cpWs8" id="6ohPCO0Bzo1" role="3cqZAp">
           <node concept="3cpWsn" id="6ohPCO0Bzo4" role="3cpWs9">
             <property role="TrG5h" value="nonOcc" />
