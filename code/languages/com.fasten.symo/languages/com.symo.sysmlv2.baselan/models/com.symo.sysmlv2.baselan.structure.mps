@@ -1348,6 +1348,18 @@
     <node concept="PrWs8" id="6jpO12EkB89" role="PzmwI">
       <ref role="PrY4T" node="6jpO12Ek_66" resolve="ISysMLv2Type" />
     </node>
+    <node concept="PrWs8" id="7PctyxUfE8z" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="7PctyxUfE8Q" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="7PctyxUfE8W" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
+    </node>
+    <node concept="PrWs8" id="7PctyxUfE92" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6jpO12_xkrj">
     <property role="EcuMT" value="7267068243654035155" />
