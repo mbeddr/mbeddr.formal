@@ -113,8 +113,15 @@
       </concept>
       <concept id="6214786105876472907" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinition" flags="ng" index="1_WVX2" />
       <concept id="6214786105876472909" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataUsage" flags="ng" index="1_WVX4" />
+      <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
+        <reference id="7354895567575683459" name="target" index="1Bo4se" />
+      </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
+      </concept>
+      <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
+        <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
+        <child id="9028721269198354948" name="importedElement" index="7Q8KG" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
@@ -330,6 +337,12 @@
   </node>
   <node concept="2h0jOr" id="fNDJb5UJPg">
     <property role="TrG5h" value="_030_package_level_usages" />
+    <node concept="3Z0THl" id="7PctyxUKO$9" role="2h0jOs">
+      <property role="3d8W_J" value="true" />
+      <node concept="1Bo4sc" id="7PctyxUKO$b" role="7Q8KG">
+        <ref role="1Bo4se" node="fNDJb5UJPh" resolve="Fleet" />
+      </node>
+    </node>
     <node concept="3Z9vzX" id="fNDJb5UJPh" role="2h0jOs">
       <property role="TrG5h" value="Fleet" />
       <node concept="8GF0z" id="fNDJb5UJPi" role="3Z9vGx">
