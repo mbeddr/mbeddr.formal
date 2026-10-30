@@ -482,6 +482,33 @@
         <property role="TrG5h" value="plugs" />
         <property role="4JrGu" value="true" />
       </node>
+      <node concept="3ZUotO" id="7PctyxUptHi" role="3Z9vGx">
+        <property role="TrG5h" value="Drivetrain" />
+        <node concept="8EhVW" id="7PctyxUptHj" role="3w00ZY">
+          <property role="TrG5h" value="Torque" />
+        </node>
+        <node concept="3ZUotO" id="7PctyxUptHk" role="3w00ZY">
+          <property role="TrG5h" value="Gear" />
+          <node concept="8EhU9" id="7PctyxUptHl" role="3w00ZY">
+            <property role="TrG5h" value="ratio" />
+            <node concept="8EhVB" id="7PctyxUptHm" role="8EhU5">
+              <ref role="8EhVx" node="7PctyxUptHj" resolve="Torque" />
+            </node>
+          </node>
+        </node>
+        <node concept="8GF0z" id="7PctyxUptHn" role="3w00ZY">
+          <property role="TrG5h" value="gear" />
+          <node concept="8CKM2" id="7PctyxUptHo" role="3w00ZT">
+            <ref role="8CKMW" node="7PctyxUptHk" resolve="Gear" />
+          </node>
+        </node>
+        <node concept="8EhU9" id="7PctyxUptHp" role="3w00ZY">
+          <property role="TrG5h" value="torque" />
+          <node concept="8EhVB" id="7PctyxUptHq" role="8EhU5">
+            <ref role="8EhVx" node="7PctyxUptHj" resolve="Torque" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="3ZUotO" id="fNDJb5UJPn" role="2h0jOs">
       <property role="TrG5h" value="Axle" />
