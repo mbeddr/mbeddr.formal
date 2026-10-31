@@ -1033,5 +1033,24 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5wFVtxs_64f">
+    <property role="TrG5h" value="SysMLv2EnumeratedValue_Constraints" />
+    <property role="3GE5qa" value="part.attribute" />
+    <ref role="1M2myG" to="5rf1:7PctyxXPFZq" resolve="SysMLv2EnumeratedValue" />
+    <node concept="9S07l" id="5wFVtxs_64g" role="9Vyp8">
+      <node concept="3clFbS" id="5wFVtxs_64i" role="2VODD2">
+        <node concept="3clFbF" id="5wFVtxs_64j" role="3cqZAp">
+          <node concept="2OqwBi" id="5wFVtxs_64l" role="3clFbG">
+            <node concept="nLn13" id="5wFVtxs_64o" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="5wFVtxs_64p" role="2OqNvi">
+              <node concept="chp4Y" id="5wFVtxs_64r" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:7PctyxXPFZp" resolve="SysMLv2EnumerationDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -1604,5 +1604,21 @@
     <property role="TrG5h" value="ISysMLv2AnnotationContent" />
     <property role="R4oN_" value="annotating element: comment, doc, rep, metadata; the only content of a relationship body such as an alias body" />
   </node>
+  <node concept="1TIwiD" id="7PctyxXPFZp">
+    <property role="EcuMT" value="9028721269252997081" />
+    <property role="TrG5h" value="SysMLv2EnumerationDefinition" />
+    <property role="R4oN_" value="SysML v2 enumeration definition (8.3.8.2): an attribute definition whose body lists enumerated values" />
+    <property role="3GE5qa" value="part.attribute" />
+    <property role="34LRSv" value="enum def" />
+    <ref role="1TJDcQ" node="7JKstLNmmWw" resolve="SysMLv2AttributeDefinition" />
+  </node>
+  <node concept="1TIwiD" id="7PctyxXPFZq">
+    <property role="EcuMT" value="9028721269252997082" />
+    <property role="TrG5h" value="SysMLv2EnumeratedValue" />
+    <property role="R4oN_" value="SysML v2 enumerated value (8.3.8.3): an enumeration usage, only inside an enum def" />
+    <property role="3GE5qa" value="part.attribute" />
+    <property role="34LRSv" value="enum" />
+    <ref role="1TJDcQ" node="7JKstLNmmXl" resolve="SysMLv2AttributeUsage" />
+  </node>
 </model>
 

@@ -12,6 +12,10 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## A parsed call to a method that does not exist yet stays an `UnknownInstanceMethodCall`; `FIX_REFERENCES` does not repair it (2026-10-31)
+
+Inserting a method with `parse_java_and_insert` whose body calls a *not yet existing* instance method (`this.importEnumeratedValue(x)`) produces an `UnknownInstanceMethodCall` (property `callee`); creating the callee afterwards and running `alter_nodes FIX_REFERENCES` still reports "All references are already correctly resolved". Insert the callee first, or rebuild the call by hand: `DotExpression` (operand `ThisExpression`, operation `InstanceMethodCallOperation` with `baseMethodDeclaration` and `actualArgument`), `ADD CHILD` it at the old position and remove the unknown node with `SET CHILD` + `childNodeRef` (no `childJson`). A parsed call can also bind to the wrong overload by name: `applyMemberVisibility` took `node<ISysMLv2Member>` where `applyBodyVisibility(SNode, ...)` was meant; repoint with `SET REFERENCE baseMethodDeclaration`. `STATEMENTS` snippets can be inserted into a method body with `featureKind: "STATEMENTS"`, `insert: {mode: "child", role: "statement", parentRef: <StatementList>, position}`. `update_node SET PROPERTY` takes `properties` as triplets `[[nodeRef, name, value]]`, not an object.
+
 ## update_node / alter_nodes operations, smodel nesting, parsed-method fixes (2026-10-31)
 
 - `update_node` has only ADD and SET. Delete a child with `SET CHILD` giving `childNodeRef` and no `childJson`; `SET CHILD` with both replaces. `SET REFERENCE` takes `references: [[nodeRef, role, targetRef]]`. `alter_nodes` offers MOVE_CHILD, MOVE_NODE_TO_PARENT, MAKE, FIX_REFERENCES only (no DELETE); delete a root with `update_root_node_from_json` `operation: DELETE`.

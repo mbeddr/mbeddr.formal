@@ -7,6 +7,8 @@
   <imports />
   <registry>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
+      <concept id="9028721269252997081" name="com.symo.sysmlv2.baselan.structure.SysMLv2EnumerationDefinition" flags="ng" index="0AGBL" />
+      <concept id="9028721269252997082" name="com.symo.sysmlv2.baselan.structure.SysMLv2EnumeratedValue" flags="ng" index="0AGBM" />
       <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
         <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
         <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
@@ -21,10 +23,12 @@
         <property id="8930763252717678343" name="lower" index="8EhVr" />
       </concept>
       <concept id="8930763252717678395" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinitionRef" flags="ng" index="8EhVB">
+        <property id="8930763252717678396" name="attributeDefinitionName" index="8EhVw" />
         <reference id="8930763252717678397" name="definition" index="8EhVx" />
       </concept>
       <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW">
         <child id="8930763252717678371" name="content" index="8EhVZ" />
+        <child id="7140692429570186950" name="specializes" index="3xKGGC" />
       </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
       <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz">
@@ -839,6 +843,50 @@
         </node>
         <node concept="3HG_t4" id="7PctyxXx$kN" role="3XVScD">
           <property role="3HG_t5" value="A duration, given in seconds" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="5wFVtxsNHRu">
+    <property role="TrG5h" value="_070_enumeration_definitions" />
+    <node concept="3Z9vzX" id="5wFVtxsNHRv" role="2h0jOs">
+      <property role="TrG5h" value="Signals" />
+      <node concept="0AGBL" id="5wFVtxsNHRw" role="3Z9vGx">
+        <property role="TrG5h" value="TrafficLight" />
+        <node concept="3HG_t4" id="5wFVtxsNHRx" role="8EhVZ">
+          <property role="3HG_t5" value="The states of a traffic light" />
+        </node>
+        <node concept="0AGBM" id="5wFVtxsNHRy" role="8EhVZ">
+          <property role="TrG5h" value="red" />
+        </node>
+        <node concept="0AGBM" id="5wFVtxsNHRz" role="8EhVZ">
+          <property role="TrG5h" value="amber" />
+          <property role="6zCXJ" value="a" />
+          <node concept="3HG_t4" id="5wFVtxsNHR$" role="8EhU4">
+            <property role="3HG_t5" value="Shown between red and green" />
+          </node>
+        </node>
+        <node concept="0AGBM" id="5wFVtxsNHR_" role="8EhVZ">
+          <property role="TrG5h" value="green" />
+          <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+        </node>
+      </node>
+      <node concept="0AGBL" id="5wFVtxsNHRA" role="3Z9vGx">
+        <property role="TrG5h" value="PedestrianLight" />
+        <node concept="8EhVB" id="5wFVtxsNHRB" role="3xKGGC">
+          <property role="8EhVw" value="TrafficLight" />
+        </node>
+        <node concept="0AGBM" id="5wFVtxsNHRC" role="8EhVZ">
+          <property role="TrG5h" value="flashing" />
+        </node>
+      </node>
+      <node concept="3ZUotO" id="5wFVtxsNHRD" role="3Z9vGx">
+        <property role="TrG5h" value="Junction" />
+        <node concept="8EhU9" id="5wFVtxsNHRE" role="3w00ZY">
+          <property role="TrG5h" value="light" />
+          <node concept="8EhVB" id="5wFVtxsNHRF" role="8EhU5">
+            <property role="8EhVw" value="TrafficLight" />
+          </node>
         </node>
       </node>
     </node>
