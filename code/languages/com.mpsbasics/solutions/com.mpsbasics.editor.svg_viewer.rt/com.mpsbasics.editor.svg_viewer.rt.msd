@@ -22,15 +22,9 @@
       <library location="${module}/lib/org.eclipse.elk.alg.common.jar" />
       <library location="${module}/lib/org.eclipse.elk.alg.layered.jar" />
       <library location="${module}/lib/org.eclipse.elk.alg.mrtree.jar" />
-      <library location="${module}/lib/org.eclipse.xtext.xbase.lib.jar" />
       <library location="${module}/lib/org.eclipse.emf.common.jar" />
       <library location="${module}/lib/org.eclipse.emf.ecore.jar" />
       <library location="${module}/lib/org.eclipse.emf.ecore.xmi.jar" />
-      <library location="${module}/lib/guava.jar" />
-      <library location="${module}/lib/failureaccess.jar" />
-      <library location="${module}/lib/listenablefuture.jar" />
-      <library location="${module}/lib/jspecify.jar" />
-      <library location="${module}/lib/error_prone_annotations.jar" />
       <library location="${module}/lib/j2objc-annotations.jar" />
     </facet>
   </facets>
@@ -40,6 +34,7 @@
     <dependency reexport="false">8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)</dependency>
     <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+    <dependency reexport="false">b00f36f0-49b7-456c-8405-740447ebb192(MPS.IDEA.Modules)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
@@ -58,6 +53,7 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
+    <module reference="b00f36f0-49b7-456c-8405-740447ebb192(MPS.IDEA.Modules)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="6e7a3b37-cbf2-4ae5-ac73-9ba530ddca94(com.mpsbasics.editor.svg_viewer.rt)" version="0" />
