@@ -71,6 +71,23 @@ Prefer plain MCP edits (`scaffold_editor`, `update_node`, `parse_java_and_insert
 - Validate right after inserting (`check_root_node_problems`); the first insert is where wrong role names, missing mandatory children and bad references show up.
 - Regenerate rather than patch: the script is the source of truth for the tree, so delete the root and re-insert after changing it — but remember ids change.
 
+## Recipe: comment out / restore a statement (probes, mutation checks)
+
+Use it to park a heavy test body (e.g. the `_999_LibraryProbe` library probe, ~12 min) or to apply a mutation and put the original back, instead of deleting and re-creating nodes. Commenting only changes the model; the test class must be regenerated, and running its run configuration does that.
+
+MPS's own comment-out (Ctrl+/) is a `jetbrains.mps.lang.core.structure.BaseCommentAttribute` that sits in the **parent's** `smodelAttribute`, carries the containment link, and holds the statement in its `commentedNode` child. Attaching the attribute to the statement itself does nothing (editor and generator ignore it).
+
+Comment out statement `S` in statement list `L`:
+1. `update_node` kind `CHILD`, operation `ADD`, nodeReference `L`, `childRole: smodelAttribute`, `childJson: {"concept":"jetbrains.mps.lang.core.structure.BaseCommentAttribute"}`. Note the returned attribute ref `A`.
+2. `update_node` kind `PROPERTY`, operation `SET`, `properties` (triplets): `[[A,"linkId","<moduleUuid>/<conceptId>/<linkId>"],[A,"role_DebugInfo","<role>"]]`. The link id is that of the containment link `S` sits in (for `StatementList.statement`: `f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665`, role `statement`). Copy it from an existing commented node (`query_nodes` `FIND_INSTANCES` with `conceptRef` of `BaseCommentAttribute`, then `print_node`).
+3. `alter_nodes` `MOVE_NODE_TO_PARENT`, parameters `{nodeReference: S, newParentRef: A, role: "commentedNode"}`.
+
+Restore: `MOVE_NODE_TO_PARENT` `S` back to `L` with `role: "statement"` and `index` where it was, then remove the empty attribute.
+
+Verify: run the test's run configuration; a commented probe finishes in milliseconds. `alter_nodes MAKE` on the tests module does not regenerate (it logs "Generator language is applied to a model ... aborted"); the run configuration does.
+
+Mutation check variant: comment out the line under test (or move the original aside and insert the mutant), run, expect red, restore, run, expect green.
+
 ## Recipe: flush pending model saves ("Force Save All") from the console
 Model edits made through MCP are saved lazily: MPS re-serializes a model (adds `resolve="…"` hints and similar) only when it next saves it, so one iteration's change set can spill into the next rebuild. The IDE action *File ▸ Force Save All* is action id `ForceSaveAll` (`jetbrains.mps.ide.actions.ForceSaveAll_Action`), which resolves the action's modules and calls `AbstractModule.forceSaveRecursively()` → `EditableSModel.save()` per model. The console can do the same.
 

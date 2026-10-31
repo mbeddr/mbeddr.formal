@@ -1052,5 +1052,70 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="5wFVtxsUzyk">
+    <property role="3GE5qa" value="calc" />
+    <property role="TrG5h" value="SysMLv2CalculationDefinitionRef_Constraints" />
+    <ref role="1M2myG" to="5rf1:5wFVtxsPPNx" resolve="SysMLv2CalculationDefinitionRef" />
+    <node concept="1N5Pfh" id="5wFVtxsUzyl" role="1Mr941">
+      <ref role="1N5Vy1" to="5rf1:5wFVtxsPPN_" />
+      <node concept="3dgokm" id="5wFVtxsUzym" role="1N6uqs">
+        <node concept="3clFbS" id="5wFVtxsUzyo" role="2VODD2">
+          <node concept="3clFbF" id="5wFVtxsUzyp" role="3cqZAp">
+            <node concept="2OqwBi" id="5wFVtxsUzyr" role="3clFbG">
+              <node concept="1PxgMI" id="5wFVtxsUzyu" role="2Oq$k0">
+                <node concept="3kakTB" id="5wFVtxsUzyx" role="1m5AlR" />
+                <node concept="chp4Y" id="5wFVtxsUzyy" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="5wFVtxsUzyz" role="2OqNvi">
+                <ref role="37wK5l" to="5wt7:3tSWG0_D0yE" resolve="definitionScope" />
+                <node concept="35c_gC" id="5wFVtxsUzy$" role="37wK5m">
+                  <ref role="35c_gD" to="5rf1:5wFVtxsPPNy" resolve="SysMLv2CalculationDefinition" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3k9gUc" id="5wFVtxsUzy_" role="3kmjI7">
+        <node concept="3clFbS" id="5wFVtxsUzyB" role="2VODD2">
+          <node concept="3clFbF" id="5wFVtxsUzyC" role="3cqZAp">
+            <node concept="2OqwBi" id="5wFVtxsUzyE" role="3clFbG">
+              <node concept="1PxgMI" id="5wFVtxsUzyH" role="2Oq$k0">
+                <node concept="3kakTB" id="5wFVtxsUzyK" role="1m5AlR" />
+                <node concept="chp4Y" id="5wFVtxsUzyL" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+                </node>
+              </node>
+              <node concept="2qgKlT" id="5wFVtxsUzyM" role="2OqNvi">
+                <ref role="37wK5l" to="5wt7:3tSWG0_CPFo" resolve="adoptNamespaceOf" />
+                <node concept="3khVwk" id="5wFVtxsUzyN" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="5wFVtxsUzPd">
+    <property role="3GE5qa" value="calc" />
+    <property role="TrG5h" value="SysMLv2ReturnParameter_Constraints" />
+    <ref role="1M2myG" to="5rf1:5wFVtxsPPNz" resolve="SysMLv2ReturnParameter" />
+    <node concept="9S07l" id="5wFVtxsUzPe" role="9Vyp8">
+      <node concept="3clFbS" id="5wFVtxsUzPg" role="2VODD2">
+        <node concept="3clFbF" id="5wFVtxsUzPh" role="3cqZAp">
+          <node concept="2OqwBi" id="5wFVtxsUzPj" role="3clFbG">
+            <node concept="nLn13" id="5wFVtxsUzPm" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="5wFVtxsUzPn" role="2OqNvi">
+              <node concept="chp4Y" id="5wFVtxsUzPp" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:5wFVtxsPPNy" resolve="SysMLv2CalculationDefinition" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

@@ -1620,5 +1620,218 @@
     <property role="34LRSv" value="enum" />
     <ref role="1TJDcQ" node="7JKstLNmmXl" resolve="SysMLv2AttributeUsage" />
   </node>
+  <node concept="1TIwiD" id="5wFVtxsPPNx">
+    <property role="EcuMT" value="6353433212862553313" />
+    <property role="TrG5h" value="SysMLv2CalculationDefinitionRef" />
+    <property role="R4oN_" value="name of a calculation definition (calc def)" />
+    <property role="3GE5qa" value="calc" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="5wFVtxsPPN$" role="1TKVEl">
+      <property role="IQ2nx" value="6353433212862553316" />
+      <property role="TrG5h" value="calculationDefinitionName" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxsPPN_" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212862553317" />
+      <property role="20kJfa" value="definition" />
+      <ref role="20lvS9" node="5wFVtxsPPNy" resolve="SysMLv2CalculationDefinition" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxsPPNA" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212862553318" />
+      <property role="20kJfa" value="namespace" />
+      <ref role="20lvS9" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxsUzxO" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wFVtxsPPNy">
+    <property role="EcuMT" value="6353433212862553314" />
+    <property role="TrG5h" value="SysMLv2CalculationDefinition" />
+    <property role="34LRSv" value="calc def" />
+    <property role="R4oN_" value="SysML v2 CalculationDefinition (8.3.17.4): parameters, return parameter and optional result expression" />
+    <property role="3GE5qa" value="calc" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aJ" resolve="SysMLv2ActionDefinition" />
+    <node concept="1TJgyj" id="5wFVtxsPPNB" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212862553319" />
+      <property role="20kJfa" value="specializes" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="5wFVtxsPPNx" resolve="SysMLv2CalculationDefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxsPPNC" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212862553320" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxsPPND" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212862553321" />
+      <property role="20kJfa" value="result" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxsPPNE" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxsPPNF" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxsPPNG" role="PzmwI">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxsPPNH" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wFVtxsPPNz">
+    <property role="EcuMT" value="6353433212862553315" />
+    <property role="TrG5h" value="SysMLv2ReturnParameter" />
+    <property role="34LRSv" value="return" />
+    <property role="R4oN_" value="SysML v2 return parameter (returnParameterMember): the result feature of a calculation" />
+    <property role="3GE5qa" value="calc" />
+    <ref role="1TJDcQ" node="fNDJb6KWCz" resolve="SysMLv2ReferenceUsage" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc4Zo">
+    <property role="EcuMT" value="6353433212885159896" />
+    <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="SysML v2 definition with a plain body: specializations and body content (shared by action, state, requirement, case, view ... definitions)" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2BodiedDefinition" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aH" resolve="SysMLv2OccurrenceDefinition" />
+    <node concept="PrWs8" id="5wFVtxuc4Zp" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxuc4Zq" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxuc4Zr" role="PzmwI">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxuc4Zs" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxuc4Zt" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212885159901" />
+      <property role="20kJfa" value="specializes" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="TrG5h" value="specializes" />
+      <ref role="20lvS9" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxuc4Zu" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212885159902" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <property role="TrG5h" value="content" />
+      <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc4ZL">
+    <property role="EcuMT" value="6353433212885159921" />
+    <property role="34LRSv" value="action def" />
+    <property role="R4oN_" value="action def: an action definition with a plain body (no steps yet)" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2PlainActionDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc4ZR">
+    <property role="EcuMT" value="6353433212885159927" />
+    <property role="34LRSv" value="state def" />
+    <property role="R4oN_" value="state def with a plain body (no states or transitions yet)" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2StateDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc4ZX">
+    <property role="EcuMT" value="6353433212885159933" />
+    <property role="34LRSv" value="constraint def" />
+    <property role="R4oN_" value="constraint def with a plain body (no expression yet)" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2ConstraintDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc503">
+    <property role="EcuMT" value="6353433212885159939" />
+    <property role="34LRSv" value="requirement def" />
+    <property role="R4oN_" value="requirement def with a plain body (no subject or constraints yet)" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2RequirementDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc509">
+    <property role="EcuMT" value="6353433212885159945" />
+    <property role="34LRSv" value="concern def" />
+    <property role="R4oN_" value="concern def" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2ConcernDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc503" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc50s">
+    <property role="EcuMT" value="6353433212885159964" />
+    <property role="34LRSv" value="case def" />
+    <property role="R4oN_" value="case def with a plain body (no objective or subject yet)" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2CaseDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc50y">
+    <property role="EcuMT" value="6353433212885159970" />
+    <property role="34LRSv" value="analysis def" />
+    <property role="R4oN_" value="analysis case definition: analysis def" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2AnalysisCaseDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc50s" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc50C">
+    <property role="EcuMT" value="6353433212885159976" />
+    <property role="34LRSv" value="verification def" />
+    <property role="R4oN_" value="verification case definition: verification def" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2VerificationCaseDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc50s" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc50I">
+    <property role="EcuMT" value="6353433212885159982" />
+    <property role="34LRSv" value="use case def" />
+    <property role="R4oN_" value="use case definition: use case def" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2UseCaseDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc50s" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc50O">
+    <property role="EcuMT" value="6353433212885159988" />
+    <property role="34LRSv" value="view def" />
+    <property role="R4oN_" value="view def with a plain body (no filters or renderings yet)" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2ViewDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc50U">
+    <property role="EcuMT" value="6353433212885159994" />
+    <property role="34LRSv" value="viewpoint def" />
+    <property role="R4oN_" value="viewpoint def" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2ViewpointDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc503" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc510">
+    <property role="EcuMT" value="6353433212885160000" />
+    <property role="34LRSv" value="rendering def" />
+    <property role="R4oN_" value="rendering def" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2RenderingDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxuc516">
+    <property role="EcuMT" value="6353433212885160006" />
+    <property role="34LRSv" value="allocation def" />
+    <property role="R4oN_" value="allocation def" />
+    <property role="3GE5qa" value="definitions" />
+    <property role="TrG5h" value="SysMLv2AllocationDefinition" />
+    <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+  </node>
 </model>
 

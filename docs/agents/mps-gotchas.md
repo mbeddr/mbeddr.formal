@@ -12,6 +12,14 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Heavy MCP runs: timeouts, logs, memory, property triplets (2026-10-31)
+
+- `execute_run_configuration` can return before the run ends or report "The operation timed out" while MPS keeps running; the result carries `fullOutputPath` (a log under `<MPS>/system/tmp/ij_run_*.log`). Poll that log for `FINISH_RUN_TEST` and `TEST_FAILURE_BEGIN` instead of re-running (a second run waits on the first's lock and times out too).
+- When the machine's RAM and swap are full (`free -m`), every MPS call slows to a crawl and runs time out although the CPU is idle. Check `free -m` before blaming MPS; a library-wide probe test needs roughly 12 minutes there.
+- `update_node SET PROPERTY` takes `properties: [[nodeRef, name, value]]` (a triplet; a bare `[name, value]` or an object is rejected), not separate `propertyName`/`propertyValue`.
+- `insert_root_node_from_json` of a cloned test or editor root repoints variable references by name; check the `fixReferences` message ("N repointed") and that two similarly named parameters were not swapped.
+- `parse_java_and_insert` accepts `featureKind` `METHOD` and `STATEMENTS` (not `STATEMENT`); `insert.position` (not `index`) places statements at the start of a `StatementList`.
+
 ## A parsed call to a method that does not exist yet stays an `UnknownInstanceMethodCall`; `FIX_REFERENCES` does not repair it (2026-10-31)
 
 Inserting a method with `parse_java_and_insert` whose body calls a *not yet existing* instance method (`this.importEnumeratedValue(x)`) produces an `UnknownInstanceMethodCall` (property `callee`); creating the callee afterwards and running `alter_nodes FIX_REFERENCES` still reports "All references are already correctly resolved". Insert the callee first, or rebuild the call by hand: `DotExpression` (operand `ThisExpression`, operation `InstanceMethodCallOperation` with `baseMethodDeclaration` and `actualArgument`), `ADD CHILD` it at the old position and remove the unknown node with `SET CHILD` + `childNodeRef` (no `childJson`). A parsed call can also bind to the wrong overload by name: `applyMemberVisibility` took `node<ISysMLv2Member>` where `applyBodyVisibility(SNode, ...)` was meant; repoint with `SET REFERENCE baseMethodDeclaration`. `STATEMENTS` snippets can be inserted into a method body with `featureKind: "STATEMENTS"`, `insert: {mode: "child", role: "statement", parentRef: <StatementList>, position}`. `update_node SET PROPERTY` takes `properties` as triplets `[[nodeRef, name, value]]`, not an object.

@@ -9,6 +9,33 @@
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
       <concept id="9028721269252997081" name="com.symo.sysmlv2.baselan.structure.SysMLv2EnumerationDefinition" flags="ng" index="0AGBL" />
       <concept id="9028721269252997082" name="com.symo.sysmlv2.baselan.structure.SysMLv2EnumeratedValue" flags="ng" index="0AGBM" />
+      <concept id="6353433212862553313" name="com.symo.sysmlv2.baselan.structure.SysMLv2CalculationDefinitionRef" flags="ng" index="4Zb4T">
+        <property id="6353433212862553316" name="calculationDefinitionName" index="4Zb4W" />
+        <reference id="6353433212862553317" name="definition" index="4Zb4X" />
+      </concept>
+      <concept id="6353433212862553314" name="com.symo.sysmlv2.baselan.structure.SysMLv2CalculationDefinition" flags="ng" index="4Zb4U">
+        <child id="6353433212862553320" name="content" index="4Zb4K" />
+        <child id="6353433212862553321" name="result" index="4Zb4L" />
+        <child id="6353433212862553319" name="specializes" index="4Zb4Z" />
+      </concept>
+      <concept id="6353433212862553315" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReturnParameter" flags="ng" index="4Zb4V" />
+      <concept id="6353433212885159896" name="com.symo.sysmlv2.baselan.structure.SysMLv2BodiedDefinition" flags="ng" index="66U80">
+        <child id="6353433212885159901" name="specializes" index="66U85" />
+        <child id="6353433212885159902" name="content" index="66U86" />
+      </concept>
+      <concept id="6353433212885159933" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConstraintDefinition" flags="ng" index="66U8_" />
+      <concept id="6353433212885159921" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainActionDefinition" flags="ng" index="66U8D" />
+      <concept id="6353433212885159927" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateDefinition" flags="ng" index="66U8J" />
+      <concept id="6353433212885160000" name="com.symo.sysmlv2.baselan.structure.SysMLv2RenderingDefinition" flags="ng" index="66VQo" />
+      <concept id="6353433212885160006" name="com.symo.sysmlv2.baselan.structure.SysMLv2AllocationDefinition" flags="ng" index="66VQu" />
+      <concept id="6353433212885159964" name="com.symo.sysmlv2.baselan.structure.SysMLv2CaseDefinition" flags="ng" index="66VR4" />
+      <concept id="6353433212885159945" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConcernDefinition" flags="ng" index="66VRh" />
+      <concept id="6353433212885159939" name="com.symo.sysmlv2.baselan.structure.SysMLv2RequirementDefinition" flags="ng" index="66VRr" />
+      <concept id="6353433212885159994" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewpointDefinition" flags="ng" index="66VRy" />
+      <concept id="6353433212885159988" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewDefinition" flags="ng" index="66VRG" />
+      <concept id="6353433212885159976" name="com.symo.sysmlv2.baselan.structure.SysMLv2VerificationCaseDefinition" flags="ng" index="66VRK" />
+      <concept id="6353433212885159982" name="com.symo.sysmlv2.baselan.structure.SysMLv2UseCaseDefinition" flags="ng" index="66VRQ" />
+      <concept id="6353433212885159970" name="com.symo.sysmlv2.baselan.structure.SysMLv2AnalysisCaseDefinition" flags="ng" index="66VRU" />
       <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
         <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
         <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
@@ -123,6 +150,9 @@
       </concept>
       <concept id="6214786105876472907" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataDefinition" flags="ng" index="1_WVX2" />
       <concept id="6214786105876472909" name="com.symo.sysmlv2.baselan.structure.SysMLv2MetadataUsage" flags="ng" index="1_WVX4" />
+      <concept id="6214786105876472911" name="com.symo.sysmlv2.baselan.structure.SysMLv2LiteralExpression" flags="ng" index="1_WVX6">
+        <property id="6214786105876472933" name="value" index="1_WVXG" />
+      </concept>
       <concept id="7354895567553737694" name="com.symo.sysmlv2.baselan.structure.SysMLv2Alias" flags="ng" index="1AcQlj">
         <child id="7354895567584118451" name="target" index="1BST0Y" />
         <child id="9028721269300000001" name="content" index="3XVScD" />
@@ -888,6 +918,221 @@
             <property role="8EhVw" value="TrafficLight" />
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="5wFVtxuaT4C">
+    <property role="TrG5h" value="_080_calculation_definitions" />
+    <node concept="3Z9vzX" id="5wFVtxuaT4D" role="2h0jOs">
+      <property role="TrG5h" value="Geometry" />
+      <node concept="8EhVW" id="5wFVtxuaT4E" role="3Z9vGx">
+        <property role="TrG5h" value="Length" />
+      </node>
+      <node concept="4Zb4U" id="5wFVtxuaT4F" role="3Z9vGx">
+        <property role="TrG5h" value="Sum" />
+        <node concept="3HG_t4" id="5wFVtxuaT4G" role="4Zb4K">
+          <property role="3HG_t5" value="Adds two lengths" />
+        </node>
+        <node concept="35c6Nh" id="5wFVtxuaT4H" role="4Zb4K">
+          <property role="TrG5h" value="x" />
+          <node concept="35c6Ng" id="5wFVtxuaT4I" role="35c6Nl">
+            <property role="35c6Nm" value="Length" />
+            <ref role="35c6Nn" node="5wFVtxuaT4E" />
+          </node>
+          <node concept="3xZtmk" id="5wFVtxuaT4J" role="35c6Nr" />
+        </node>
+        <node concept="35c6Nh" id="5wFVtxuaT4K" role="4Zb4K">
+          <property role="TrG5h" value="y" />
+          <node concept="35c6Ng" id="5wFVtxuaT4L" role="35c6Nl">
+            <property role="35c6Nm" value="Length" />
+            <ref role="35c6Nn" node="5wFVtxuaT4E" />
+          </node>
+          <node concept="3xZtmk" id="5wFVtxuaT4M" role="35c6Nr" />
+        </node>
+        <node concept="4Zb4V" id="5wFVtxuaT4N" role="4Zb4K">
+          <property role="TrG5h" value="total" />
+          <node concept="35c6Ng" id="5wFVtxuaT4O" role="35c6Nl">
+            <property role="35c6Nm" value="Length" />
+            <ref role="35c6Nn" node="5wFVtxuaT4E" />
+          </node>
+        </node>
+        <node concept="3bnkR8" id="5wFVtxuaT4P" role="4Zb4L">
+          <property role="3bnkR9" value="x + y" />
+        </node>
+      </node>
+      <node concept="4Zb4U" id="5wFVtxuaT4Q" role="3Z9vGx">
+        <property role="TrG5h" value="Double" />
+        <property role="6zCXJ" value="dbl" />
+        <node concept="35c6Nh" id="5wFVtxuaT4R" role="4Zb4K">
+          <property role="TrG5h" value="value" />
+          <node concept="35c6Ng" id="5wFVtxuaT4S" role="35c6Nl">
+            <property role="35c6Nm" value="Length" />
+            <ref role="35c6Nn" node="5wFVtxuaT4E" />
+          </node>
+          <node concept="3xZtmk" id="5wFVtxuaT4T" role="35c6Nr" />
+        </node>
+        <node concept="4Zb4V" id="5wFVtxuaT4U" role="4Zb4K">
+          <property role="TrG5h" value="doubled" />
+          <node concept="35c6Ng" id="5wFVtxuaT4V" role="35c6Nl">
+            <property role="35c6Nm" value="Length" />
+            <ref role="35c6Nn" node="5wFVtxuaT4E" />
+          </node>
+        </node>
+        <node concept="3bnkR8" id="5wFVtxuaT4W" role="4Zb4L">
+          <property role="3bnkR9" value="value + value" />
+        </node>
+        <node concept="4Zb4T" id="5wFVtxuaT4X" role="4Zb4Z">
+          <property role="4Zb4W" value="Sum" />
+          <ref role="4Zb4X" node="5wFVtxuaT4F" />
+        </node>
+      </node>
+      <node concept="4Zb4U" id="5wFVtxuaT4Y" role="3Z9vGx">
+        <property role="TrG5h" value="Scale" />
+        <node concept="35c6Nh" id="5wFVtxuaT4Z" role="4Zb4K">
+          <property role="TrG5h" value="base" />
+          <node concept="35c6Ng" id="5wFVtxuaT50" role="35c6Nl">
+            <property role="35c6Nm" value="Length" />
+            <ref role="35c6Nn" node="5wFVtxuaT4E" />
+          </node>
+          <node concept="3xZtmk" id="5wFVtxuaT51" role="35c6Nr" />
+        </node>
+        <node concept="35c6Nh" id="5wFVtxuaT52" role="4Zb4K">
+          <property role="TrG5h" value="factor" />
+          <node concept="35c6Ng" id="5wFVtxuaT53" role="35c6Nl">
+            <property role="35c6Nm" value="Length" />
+            <ref role="35c6Nn" node="5wFVtxuaT4E" />
+          </node>
+          <node concept="3xZtmk" id="5wFVtxuaT54" role="35c6Nr" />
+        </node>
+        <node concept="35c6Nh" id="5wFVtxuaT55" role="4Zb4K">
+          <property role="TrG5h" value="offset" />
+          <node concept="35c6Ng" id="5wFVtxuaT56" role="35c6Nl">
+            <property role="35c6Nm" value="Length" />
+            <ref role="35c6Nn" node="5wFVtxuaT4E" />
+          </node>
+          <node concept="3xZtmk" id="5wFVtxuaT57" role="35c6Nr">
+            <property role="3xZtlB" value="3th7jSwWnJl/inout" />
+          </node>
+        </node>
+        <node concept="4Zb4V" id="5wFVtxuaT58" role="4Zb4K">
+          <property role="TrG5h" value="scaled" />
+          <node concept="35c6Ng" id="5wFVtxuaT59" role="35c6Nl">
+            <property role="35c6Nm" value="Length" />
+            <ref role="35c6Nn" node="5wFVtxuaT4E" />
+          </node>
+        </node>
+        <node concept="3bnkR8" id="5wFVtxuaT5a" role="4Zb4L">
+          <property role="3bnkR9" value="base * factor + offset" />
+        </node>
+      </node>
+      <node concept="4Zb4U" id="5wFVtxuaT5b" role="3Z9vGx">
+        <property role="TrG5h" value="One" />
+        <node concept="4Zb4V" id="5wFVtxuaT5c" role="4Zb4K">
+          <property role="TrG5h" value="one" />
+          <node concept="35c6Ng" id="5wFVtxuaT5d" role="35c6Nl">
+            <property role="35c6Nm" value="Length" />
+            <ref role="35c6Nn" node="5wFVtxuaT4E" />
+          </node>
+        </node>
+        <node concept="1_WVX6" id="5wFVtxuaT5e" role="4Zb4L">
+          <property role="1_WVXG" value="1" />
+        </node>
+      </node>
+      <node concept="4Zb4U" id="5wFVtxuaT5f" role="3Z9vGx">
+        <property role="TrG5h" value="Placeholder" />
+        <property role="3eyS6o" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="5wFVtxwTIGu">
+    <property role="TrG5h" value="_090_definition_kinds" />
+    <node concept="3Z9vzX" id="5wFVtxwTIGv" role="2h0jOs">
+      <property role="TrG5h" value="Vehicles" />
+      <node concept="3ZUotO" id="5wFVtxwTIGw" role="3Z9vGx">
+        <property role="TrG5h" value="Vehicle" />
+      </node>
+      <node concept="66U8D" id="5wFVtxwTIGx" role="3Z9vGx">
+        <property role="TrG5h" value="Drive" />
+        <node concept="3HG_t4" id="5wFVtxwTIGy" role="66U86">
+          <property role="3HG_t5" value="Moves the vehicle along a route" />
+        </node>
+      </node>
+      <node concept="66U8J" id="5wFVtxwTIGz" role="3Z9vGx">
+        <property role="TrG5h" value="EngineStates" />
+        <node concept="3HG_t4" id="5wFVtxwTIG$" role="66U86">
+          <property role="3HG_t5" value="On, off and idling" />
+        </node>
+      </node>
+      <node concept="66U8_" id="5wFVtxwTIG_" role="3Z9vGx">
+        <property role="TrG5h" value="MassLimit" />
+        <node concept="3HG_t4" id="5wFVtxwTIGA" role="66U86">
+          <property role="3HG_t5" value="The vehicle stays below the permitted mass" />
+        </node>
+      </node>
+      <node concept="66VRr" id="5wFVtxwTIGB" role="3Z9vGx">
+        <property role="TrG5h" value="MaxMass" />
+        <property role="6zCXJ" value="R1" />
+        <node concept="3HG_t4" id="5wFVtxwTIGC" role="66U86">
+          <property role="3HG_t5" value="The vehicle mass shall not exceed 2000 kg" />
+        </node>
+      </node>
+      <node concept="66VRh" id="5wFVtxwTIGD" role="3Z9vGx">
+        <property role="TrG5h" value="Safety" />
+        <node concept="3HG_t4" id="5wFVtxwTIGE" role="66U86">
+          <property role="3HG_t5" value="Occupant safety" />
+        </node>
+      </node>
+      <node concept="66VR4" id="5wFVtxwTIGF" role="3Z9vGx">
+        <property role="TrG5h" value="Evaluation" />
+        <node concept="3HG_t4" id="5wFVtxwTIGG" role="66U86">
+          <property role="3HG_t5" value="Generic evaluation case" />
+        </node>
+      </node>
+      <node concept="66VRU" id="5wFVtxwTIGH" role="3Z9vGx">
+        <property role="TrG5h" value="FuelAnalysis" />
+        <node concept="35c6Ng" id="5wFVtxwTIGI" role="66U85">
+          <property role="35c6Nm" value="Evaluation" />
+        </node>
+        <node concept="3HG_t4" id="5wFVtxwTIGJ" role="66U86">
+          <property role="3HG_t5" value="Estimates fuel consumption" />
+        </node>
+      </node>
+      <node concept="66VRK" id="5wFVtxwTIGK" role="3Z9vGx">
+        <property role="TrG5h" value="MassCheck" />
+        <node concept="3HG_t4" id="5wFVtxwTIGL" role="66U86">
+          <property role="3HG_t5" value="Weighs the vehicle" />
+        </node>
+      </node>
+      <node concept="66VRQ" id="5wFVtxwTIGM" role="3Z9vGx">
+        <property role="TrG5h" value="Commute" />
+        <node concept="3HG_t4" id="5wFVtxwTIGN" role="66U86">
+          <property role="3HG_t5" value="Drive to work and back" />
+        </node>
+      </node>
+      <node concept="66VRG" id="5wFVtxwTIGO" role="3Z9vGx">
+        <property role="TrG5h" value="VehicleView" />
+        <node concept="3HG_t4" id="5wFVtxwTIGP" role="66U86">
+          <property role="3HG_t5" value="Shows the vehicle structure" />
+        </node>
+      </node>
+      <node concept="66VRy" id="5wFVtxwTIGQ" role="3Z9vGx">
+        <property role="TrG5h" value="MaintenanceView" />
+        <node concept="3HG_t4" id="5wFVtxwTIGR" role="66U86">
+          <property role="3HG_t5" value="Concerns of the maintainer" />
+        </node>
+      </node>
+      <node concept="66VQo" id="5wFVtxwTIGS" role="3Z9vGx">
+        <property role="TrG5h" value="TableRendering" />
+      </node>
+      <node concept="66VQu" id="5wFVtxwTIGT" role="3Z9vGx">
+        <property role="TrG5h" value="EngineAllocation" />
+        <node concept="3HG_t4" id="5wFVtxwTIGU" role="66U86">
+          <property role="3HG_t5" value="Allocates functions to hardware" />
+        </node>
+      </node>
+      <node concept="66VRr" id="5wFVtxwTIGV" role="3Z9vGx">
+        <property role="TrG5h" value="AbstractReq" />
+        <property role="3eyS6o" value="true" />
       </node>
     </node>
   </node>
