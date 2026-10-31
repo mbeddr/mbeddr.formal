@@ -12,6 +12,12 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## `update_node` ADD ignores `index`; run configurations vanish on a language rebuild; verify component targets by name (2026-10-31)
+
+- `update_node` kind `CHILD` operation `ADD` always appends, an `index`/`position` parameter is silently ignored. To insert in the middle of a cell collection or statement list, patch the blueprint in a script and overwrite the whole root with `update_root_node_from_json` (root id is preserved); stray appended cells otherwise stay at the end.
+- After a language make, `execute_run_configuration` can answer "not found": the JUnit run configurations are dropped. Recreate with `create_run_configuration` (same `nodeReference` and `name`).
+- A blueprint that references an editor component by id (`CellModel_Component.editorComponent`) is only checked for "resolves to something". Taking the id from another component's neighbour gave `ISysMLv2Member_Visibility` instead of the wanted short-name component and nothing failed: the round-trip tests (textGen only) stayed green and only the editor was wrong. After patching editors, run `check_root_node_problems` and read the `target` names of the `CellModel_Component` references, or print the sandbox node (`print_node PLAIN TEXT`) to see the cells.
+
 ## A NodesTestCase with `accessMode` = `command` makes every `TextGeneratorEngine` call wait 30 s (2026-10-31)
 
 A test root created through `create_root_node` defaults to `accessMode` `command` (enum value `2hh8MJdVwqX/command`); the working roundtrip tests use `none` (`2hh8MJdVwqT/none`). The test body then runs inside a write command, and `RoundtripTestUtils.generateText` hands the work to a `TextGeneratorEngine` worker that never gets its lock, so each call ends in the 30 s timeout ("the TextGeneratorEngine worker never got its lock"). The library probe looked like a 12-minute slow importer for this reason alone: 25 importable files x 30 s. Measured with `accessMode` `none`, the importer handles a 151 KB file in about 70 ms (parse + build) and 15 ms (text generation). Before optimizing, time the phases; set the root to `none` with `update_node` kind `PROPERTY`, operation `SET`, property `accessMode`, value `2hh8MJdVwqT/none`.

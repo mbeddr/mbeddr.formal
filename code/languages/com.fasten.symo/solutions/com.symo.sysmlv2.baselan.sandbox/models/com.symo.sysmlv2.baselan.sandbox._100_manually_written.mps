@@ -23,7 +23,9 @@
         <child id="6353433212885159901" name="specializes" index="66U85" />
         <child id="6353433212885159902" name="content" index="66U86" />
       </concept>
-      <concept id="6353433212885159933" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConstraintDefinition" flags="ng" index="66U8_" />
+      <concept id="6353433212885159933" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConstraintDefinition" flags="ng" index="66U8_">
+        <child id="6353433212932104530" name="result" index="SPOMa" />
+      </concept>
       <concept id="6353433212885159921" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainActionDefinition" flags="ng" index="66U8D" />
       <concept id="6353433212885159927" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateDefinition" flags="ng" index="66U8J" />
       <concept id="6353433212885160000" name="com.symo.sysmlv2.baselan.structure.SysMLv2RenderingDefinition" flags="ng" index="66VQo" />
@@ -88,6 +90,28 @@
         <property id="717440187291777388" name="withKeyword" index="2uUmlw" />
       </concept>
       <concept id="717440187291777379" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinition" flags="ng" index="2uUmlJ" />
+      <concept id="6353433212932081528" name="com.symo.sysmlv2.baselan.structure.SysMLv2AnalysisCaseUsage" flags="ng" index="SPUEw" />
+      <concept id="6353433212932081529" name="com.symo.sysmlv2.baselan.structure.SysMLv2VerificationCaseUsage" flags="ng" index="SPUEx" />
+      <concept id="6353433212932081530" name="com.symo.sysmlv2.baselan.structure.SysMLv2UseCaseUsage" flags="ng" index="SPUEy" />
+      <concept id="6353433212932081531" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewpointUsage" flags="ng" index="SPUEz" />
+      <concept id="6353433212932081532" name="com.symo.sysmlv2.baselan.structure.SysMLv2CalculationUsage" flags="ng" index="SPUE$">
+        <child id="6353433212932081545" name="result" index="SPUDh" />
+      </concept>
+      <concept id="6353433212932081533" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConstraintUsage" flags="ng" index="SPUE_">
+        <child id="6353433212932081546" name="result" index="SPUDi" />
+      </concept>
+      <concept id="6353433212932081534" name="com.symo.sysmlv2.baselan.structure.SysMLv2AssertConstraintUsage" flags="ng" index="SPUEA">
+        <property id="6353433212932081547" name="isNegated" index="SPUDj" />
+      </concept>
+      <concept id="6353433212932081522" name="com.symo.sysmlv2.baselan.structure.SysMLv2BodiedUsage" flags="ng" index="SPUEE">
+        <child id="6353433212932081537" name="types" index="SPUDp" />
+        <child id="6353433212932081538" name="content" index="SPUDq" />
+      </concept>
+      <concept id="6353433212932081523" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainActionUsage" flags="ng" index="SPUEF" />
+      <concept id="6353433212932081524" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateUsage" flags="ng" index="SPUEG" />
+      <concept id="6353433212932081525" name="com.symo.sysmlv2.baselan.structure.SysMLv2RequirementUsage" flags="ng" index="SPUEH" />
+      <concept id="6353433212932081526" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConcernUsage" flags="ng" index="SPUEI" />
+      <concept id="6353433212932081527" name="com.symo.sysmlv2.baselan.structure.SysMLv2CaseUsage" flags="ng" index="SPUEJ" />
       <concept id="7267068243654035155" name="com.symo.sysmlv2.baselan.structure.SysMLv2LibraryPackage" flags="ng" index="31n9r3" />
       <concept id="284754763101489698" name="com.symo.sysmlv2.baselan.structure.SysMLv2DefinitionRef" flags="ng" index="35c6Ng">
         <property id="284754763101489700" name="definitionName" index="35c6Nm" />
@@ -1133,6 +1157,191 @@
       <node concept="66VRr" id="5wFVtxwTIGV" role="3Z9vGx">
         <property role="TrG5h" value="AbstractReq" />
         <property role="3eyS6o" value="true" />
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="5wFVtxyeh$D">
+    <property role="TrG5h" value="_110_behavior_usages" />
+    <node concept="3Z9vzX" id="5wFVtxyeiXi" role="2h0jOs">
+      <property role="TrG5h" value="VehicleBehavior" />
+      <node concept="8EhVW" id="5wFVtxyeiXj" role="3Z9vGx">
+        <property role="TrG5h" value="Mass" />
+      </node>
+      <node concept="66U8D" id="5wFVtxyeiXk" role="3Z9vGx">
+        <property role="TrG5h" value="Drive" />
+      </node>
+      <node concept="66U8J" id="5wFVtxyeiXl" role="3Z9vGx">
+        <property role="TrG5h" value="EngineStates" />
+      </node>
+      <node concept="66VRr" id="5wFVtxyeiXm" role="3Z9vGx">
+        <property role="TrG5h" value="MaxMass" />
+      </node>
+      <node concept="66VR4" id="5wFVtxyeiXn" role="3Z9vGx">
+        <property role="TrG5h" value="Evaluation" />
+      </node>
+      <node concept="66VRU" id="5wFVtxyeiXo" role="3Z9vGx">
+        <property role="TrG5h" value="FuelAnalysis" />
+      </node>
+      <node concept="66VRK" id="5wFVtxyeiXp" role="3Z9vGx">
+        <property role="TrG5h" value="MassCheck" />
+      </node>
+      <node concept="66VRQ" id="5wFVtxyeiXq" role="3Z9vGx">
+        <property role="TrG5h" value="Commute" />
+      </node>
+      <node concept="66VRy" id="5wFVtxyeiXr" role="3Z9vGx">
+        <property role="TrG5h" value="MaintenanceView" />
+      </node>
+      <node concept="66VRh" id="5wFVtxyeiXs" role="3Z9vGx">
+        <property role="TrG5h" value="Safety" />
+      </node>
+      <node concept="66U8_" id="5wFVtxyeiXt" role="3Z9vGx">
+        <property role="TrG5h" value="MassLimit" />
+        <node concept="35c6Nh" id="5wFVtxyeiXu" role="66U86">
+          <property role="TrG5h" value="m" />
+          <node concept="35c6Ng" id="5wFVtxyeiXv" role="35c6Nl">
+            <property role="35c6Nm" value="Mass" />
+          </node>
+          <node concept="3xZtmk" id="5wFVtxyeiXw" role="35c6Nr" />
+        </node>
+        <node concept="3bnkR8" id="5wFVtxyeiXx" role="SPOMa">
+          <property role="3bnkR9" value="m &lt;= 2000" />
+        </node>
+      </node>
+      <node concept="SPUEF" id="5wFVtxyeiXy" role="3Z9vGx">
+        <property role="TrG5h" value="drive" />
+        <node concept="35c6Ng" id="5wFVtxyeiXz" role="SPUDp">
+          <property role="35c6Nm" value="Drive" />
+        </node>
+        <node concept="3HG_t4" id="5wFVtxyeiX$" role="SPUDq">
+          <property role="3HG_t5" value="Moves the vehicle along a route" />
+        </node>
+      </node>
+      <node concept="SPUEG" id="5wFVtxyeiX_" role="3Z9vGx">
+        <property role="TrG5h" value="engine" />
+        <node concept="35c6Ng" id="5wFVtxyeiXA" role="SPUDp">
+          <property role="35c6Nm" value="EngineStates" />
+        </node>
+        <node concept="3HG_t4" id="5wFVtxyeiXB" role="SPUDq">
+          <property role="3HG_t5" value="On, off and idling" />
+        </node>
+      </node>
+      <node concept="SPUEH" id="5wFVtxyeiXC" role="3Z9vGx">
+        <property role="TrG5h" value="maxMass" />
+        <property role="6zCXJ" value="R1" />
+        <node concept="35c6Ng" id="5wFVtxyeiXD" role="SPUDp">
+          <property role="35c6Nm" value="MaxMass" />
+        </node>
+        <node concept="3HG_t4" id="5wFVtxyeiXE" role="SPUDq">
+          <property role="3HG_t5" value="The vehicle mass shall not exceed 2000 kg" />
+        </node>
+      </node>
+      <node concept="SPUEI" id="5wFVtxyeiXF" role="3Z9vGx">
+        <property role="TrG5h" value="safety" />
+        <node concept="35c6Ng" id="5wFVtxyeiXG" role="SPUDp">
+          <property role="35c6Nm" value="Safety" />
+        </node>
+      </node>
+      <node concept="SPUEJ" id="5wFVtxyeiXH" role="3Z9vGx">
+        <property role="TrG5h" value="evaluation" />
+        <node concept="35c6Ng" id="5wFVtxyeiXI" role="SPUDp">
+          <property role="35c6Nm" value="Evaluation" />
+        </node>
+      </node>
+      <node concept="SPUEw" id="5wFVtxyeiXJ" role="3Z9vGx">
+        <property role="TrG5h" value="fuelAnalysis" />
+        <node concept="35c6Ng" id="5wFVtxyeiXK" role="SPUDp">
+          <property role="35c6Nm" value="FuelAnalysis" />
+        </node>
+        <node concept="3HG_t4" id="5wFVtxyeiXL" role="SPUDq">
+          <property role="3HG_t5" value="Estimates fuel consumption" />
+        </node>
+      </node>
+      <node concept="SPUEx" id="5wFVtxyeiXM" role="3Z9vGx">
+        <property role="TrG5h" value="massCheck" />
+        <node concept="35c6Ng" id="5wFVtxyeiXN" role="SPUDp">
+          <property role="35c6Nm" value="MassCheck" />
+        </node>
+      </node>
+      <node concept="SPUEy" id="5wFVtxyeiXO" role="3Z9vGx">
+        <property role="TrG5h" value="commute" />
+        <node concept="35c6Ng" id="5wFVtxyeiXP" role="SPUDp">
+          <property role="35c6Nm" value="Commute" />
+        </node>
+      </node>
+      <node concept="SPUEz" id="5wFVtxyeiXQ" role="3Z9vGx">
+        <property role="TrG5h" value="maintenance" />
+        <node concept="35c6Ng" id="5wFVtxyeiXR" role="SPUDp">
+          <property role="35c6Nm" value="MaintenanceView" />
+        </node>
+      </node>
+      <node concept="SPUE$" id="5wFVtxyeiXS" role="3Z9vGx">
+        <property role="TrG5h" value="totalMass" />
+        <node concept="35c6Nh" id="5wFVtxyeiXT" role="SPUDq">
+          <property role="TrG5h" value="a" />
+          <node concept="35c6Ng" id="5wFVtxyeiXU" role="35c6Nl">
+            <property role="35c6Nm" value="Mass" />
+          </node>
+          <node concept="3xZtmk" id="5wFVtxyeiXV" role="35c6Nr" />
+        </node>
+        <node concept="35c6Nh" id="5wFVtxyeiXW" role="SPUDq">
+          <property role="TrG5h" value="b" />
+          <node concept="35c6Ng" id="5wFVtxyeiXX" role="35c6Nl">
+            <property role="35c6Nm" value="Mass" />
+          </node>
+          <node concept="3xZtmk" id="5wFVtxyeiXY" role="35c6Nr" />
+        </node>
+        <node concept="3bnkR8" id="5wFVtxyeiXZ" role="SPUDh">
+          <property role="3bnkR9" value="a + b" />
+        </node>
+      </node>
+      <node concept="SPUE_" id="5wFVtxyeiY0" role="3Z9vGx">
+        <property role="TrG5h" value="limit" />
+        <node concept="35c6Ng" id="5wFVtxyeiY1" role="SPUDp">
+          <property role="35c6Nm" value="MassLimit" />
+        </node>
+        <node concept="35c6Nh" id="5wFVtxyeiY2" role="SPUDq">
+          <property role="TrG5h" value="m" />
+          <node concept="35c6Ng" id="5wFVtxyeiY3" role="35c6Nl">
+            <property role="35c6Nm" value="Mass" />
+          </node>
+          <node concept="3xZtmk" id="5wFVtxyeiY4" role="35c6Nr" />
+        </node>
+        <node concept="3bnkR8" id="5wFVtxyeiY5" role="SPUDi">
+          <property role="3bnkR9" value="m &lt;= 1500" />
+        </node>
+      </node>
+      <node concept="SPUEA" id="5wFVtxyeiY6" role="3Z9vGx">
+        <property role="TrG5h" value="lightEnough" />
+        <node concept="35c6Ng" id="5wFVtxyeiY7" role="SPUDp">
+          <property role="35c6Nm" value="MassLimit" />
+        </node>
+        <node concept="35c6Nh" id="5wFVtxyeiY8" role="SPUDq">
+          <property role="TrG5h" value="m" />
+          <node concept="35c6Ng" id="5wFVtxyeiY9" role="35c6Nl">
+            <property role="35c6Nm" value="Mass" />
+          </node>
+          <node concept="3xZtmk" id="5wFVtxyeiYa" role="35c6Nr" />
+        </node>
+        <node concept="3bnkR8" id="5wFVtxyeiYb" role="SPUDi">
+          <property role="3bnkR9" value="m &lt;= 1500" />
+        </node>
+      </node>
+      <node concept="SPUEA" id="5wFVtxyeiYc" role="3Z9vGx">
+        <property role="TrG5h" value="notHeavy" />
+        <property role="SPUDj" value="true" />
+        <node concept="35c6Ng" id="5wFVtxyeiYd" role="SPUDp">
+          <property role="35c6Nm" value="MassLimit" />
+        </node>
+        <node concept="35c6Nh" id="5wFVtxyeiYe" role="SPUDq">
+          <property role="TrG5h" value="m" />
+          <node concept="35c6Ng" id="5wFVtxyeiYf" role="35c6Nl">
+            <property role="35c6Nm" value="Mass" />
+          </node>
+          <node concept="3xZtmk" id="5wFVtxyeiYg" role="35c6Nr" />
+        </node>
+        <node concept="3bnkR8" id="5wFVtxyeiYh" role="SPUDi">
+          <property role="3bnkR9" value="m &gt; 3000" />
+        </node>
       </node>
     </node>
   </node>

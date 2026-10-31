@@ -1752,6 +1752,12 @@
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2ConstraintDefinition" />
     <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+    <node concept="1TJgyj" id="5wFVtxwZa5i" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932104530" />
+      <property role="20kJfa" value="result" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxuc503">
     <property role="EcuMT" value="6353433212885159939" />
@@ -1832,6 +1838,171 @@
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2AllocationDefinition" />
     <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tM">
+    <property role="EcuMT" value="6353433212932081522" />
+    <property role="TrG5h" value="SysMLv2BodiedUsage" />
+    <property role="R4oN_" value="SysML v2 usage with a plain body (action, state, constraint, requirement, case ... usages): direction, multiplicity, typing and body content" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="3MUZSeHM$aI" resolve="SysMLv2OccurrenceUsage" />
+    <node concept="1TJgyj" id="5wFVtxwZ4tZ" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932081535" />
+      <property role="20kJfa" value="direction" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU2Tg1U" resolve="SysMLv2FeatureDirection" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxwZ4u0" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932081536" />
+      <property role="20kJfa" value="multiplicity" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxwZ4u1" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932081537" />
+      <property role="20kJfa" value="types" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="5wFVtxwZ4u2" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932081538" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxwZ4u3" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxwZ4u4" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxwZ4u5" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxwZ4u6" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxwZ4u7" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+    <node concept="PrWs8" id="5wFVtxwZ4u8" role="PzmwI">
+      <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tN">
+    <property role="EcuMT" value="6353433212932081523" />
+    <property role="TrG5h" value="SysMLv2PlainActionUsage" />
+    <property role="34LRSv" value="action" />
+    <property role="R4oN_" value="SysML v2 ActionUsage (8.3.17.3)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tO">
+    <property role="EcuMT" value="6353433212932081524" />
+    <property role="TrG5h" value="SysMLv2StateUsage" />
+    <property role="34LRSv" value="state" />
+    <property role="R4oN_" value="SysML v2 StateUsage (8.3.18)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tP">
+    <property role="EcuMT" value="6353433212932081525" />
+    <property role="TrG5h" value="SysMLv2RequirementUsage" />
+    <property role="34LRSv" value="requirement" />
+    <property role="R4oN_" value="SysML v2 RequirementUsage (8.3.22)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tQ">
+    <property role="EcuMT" value="6353433212932081526" />
+    <property role="TrG5h" value="SysMLv2ConcernUsage" />
+    <property role="34LRSv" value="concern" />
+    <property role="R4oN_" value="SysML v2 ConcernUsage (8.3.22)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tR">
+    <property role="EcuMT" value="6353433212932081527" />
+    <property role="TrG5h" value="SysMLv2CaseUsage" />
+    <property role="34LRSv" value="case" />
+    <property role="R4oN_" value="SysML v2 CaseUsage (8.3.23)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tS">
+    <property role="EcuMT" value="6353433212932081528" />
+    <property role="TrG5h" value="SysMLv2AnalysisCaseUsage" />
+    <property role="34LRSv" value="analysis" />
+    <property role="R4oN_" value="SysML v2 AnalysisCaseUsage (8.3.24)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tT">
+    <property role="EcuMT" value="6353433212932081529" />
+    <property role="TrG5h" value="SysMLv2VerificationCaseUsage" />
+    <property role="34LRSv" value="verification" />
+    <property role="R4oN_" value="SysML v2 VerificationCaseUsage (8.3.25)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tU">
+    <property role="EcuMT" value="6353433212932081530" />
+    <property role="TrG5h" value="SysMLv2UseCaseUsage" />
+    <property role="34LRSv" value="use case" />
+    <property role="R4oN_" value="SysML v2 UseCaseUsage (8.3.26)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tV">
+    <property role="EcuMT" value="6353433212932081531" />
+    <property role="TrG5h" value="SysMLv2ViewpointUsage" />
+    <property role="34LRSv" value="viewpoint" />
+    <property role="R4oN_" value="SysML v2 ViewpointUsage (8.3.27)" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tW">
+    <property role="EcuMT" value="6353433212932081532" />
+    <property role="TrG5h" value="SysMLv2CalculationUsage" />
+    <property role="34LRSv" value="calc" />
+    <property role="R4oN_" value="SysML v2 CalculationUsage (8.3.17.5): body items plus optional result expression" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <node concept="1TJgyj" id="5wFVtxwZ4u9" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932081545" />
+      <property role="20kJfa" value="result" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tX">
+    <property role="EcuMT" value="6353433212932081533" />
+    <property role="TrG5h" value="SysMLv2ConstraintUsage" />
+    <property role="34LRSv" value="constraint" />
+    <property role="R4oN_" value="SysML v2 ConstraintUsage (8.3.19): body items plus optional result expression" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <node concept="1TJgyj" id="5wFVtxwZ4ua" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932081546" />
+      <property role="20kJfa" value="result" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="5wFVtxwZ4tY">
+    <property role="EcuMT" value="6353433212932081534" />
+    <property role="TrG5h" value="SysMLv2AssertConstraintUsage" />
+    <property role="34LRSv" value="assert constraint" />
+    <property role="R4oN_" value="SysML v2 AssertConstraintUsage (8.3.19): assert [not] constraint with its own declaration" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+    <node concept="1TJgyi" id="5wFVtxwZ4ub" role="1TKVEl">
+      <property role="IQ2nx" value="6353433212932081547" />
+      <property role="TrG5h" value="isNegated" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
 </model>
 
