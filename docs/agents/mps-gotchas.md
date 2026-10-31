@@ -12,6 +12,10 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## A NodesTestCase with `accessMode` = `command` makes every `TextGeneratorEngine` call wait 30 s (2026-10-31)
+
+A test root created through `create_root_node` defaults to `accessMode` `command` (enum value `2hh8MJdVwqX/command`); the working roundtrip tests use `none` (`2hh8MJdVwqT/none`). The test body then runs inside a write command, and `RoundtripTestUtils.generateText` hands the work to a `TextGeneratorEngine` worker that never gets its lock, so each call ends in the 30 s timeout ("the TextGeneratorEngine worker never got its lock"). The library probe looked like a 12-minute slow importer for this reason alone: 25 importable files x 30 s. Measured with `accessMode` `none`, the importer handles a 151 KB file in about 70 ms (parse + build) and 15 ms (text generation). Before optimizing, time the phases; set the root to `none` with `update_node` kind `PROPERTY`, operation `SET`, property `accessMode`, value `2hh8MJdVwqT/none`.
+
 ## Heavy MCP runs: timeouts, logs, memory, property triplets (2026-10-31)
 
 - `execute_run_configuration` can return before the run ends or report "The operation timed out" while MPS keeps running; the result carries `fullOutputPath` (a log under `<MPS>/system/tmp/ij_run_*.log`). Poll that log for `FINISH_RUN_TEST` and `TEST_FAILURE_BEGIN` instead of re-running (a second run waits on the first's lock and times out too).

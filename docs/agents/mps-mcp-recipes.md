@@ -82,7 +82,7 @@ Comment out statement `S` in statement list `L`:
 2. `update_node` kind `PROPERTY`, operation `SET`, `properties` (triplets): `[[A,"linkId","<moduleUuid>/<conceptId>/<linkId>"],[A,"role_DebugInfo","<role>"]]`. The link id is that of the containment link `S` sits in (for `StatementList.statement`: `f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665`, role `statement`). Copy it from an existing commented node (`query_nodes` `FIND_INSTANCES` with `conceptRef` of `BaseCommentAttribute`, then `print_node`).
 3. `alter_nodes` `MOVE_NODE_TO_PARENT`, parameters `{nodeReference: S, newParentRef: A, role: "commentedNode"}`.
 
-Restore: `MOVE_NODE_TO_PARENT` `S` back to `L` with `role: "statement"` and `index` where it was, then remove the empty attribute.
+Restore: `MOVE_NODE_TO_PARENT` `S` back to `L` with `role: "statement"`. No tool deletes nodes, so the now-empty attribute `A` stays in `L`'s `smodelAttribute`; it is harmless to the generator. To comment out again, skip steps 1 and 2 and move `S` into the existing `A`.
 
 Verify: run the test's run configuration; a commented probe finishes in milliseconds. `alter_nodes MAKE` on the tests module does not regenerate (it logs "Generator language is applied to a model ... aborted"); the run configuration does.
 
