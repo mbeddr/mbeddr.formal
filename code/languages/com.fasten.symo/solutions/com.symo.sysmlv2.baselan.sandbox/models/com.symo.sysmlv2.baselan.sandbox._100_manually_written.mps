@@ -1345,5 +1345,123 @@
       </node>
     </node>
   </node>
+  <node concept="2h0jOr" id="6jBzJlwGYn9">
+    <property role="TrG5h" value="_120_behavior_items_in_definitions" />
+    <node concept="3Z9vzX" id="6jBzJlwGYna" role="2h0jOs">
+      <property role="TrG5h" value="DriveBehavior" />
+      <node concept="8EhVW" id="6jBzJlwGYnb" role="3Z9vGx">
+        <property role="TrG5h" value="Speed" />
+      </node>
+      <node concept="66U8D" id="6jBzJlwGYnc" role="3Z9vGx">
+        <property role="TrG5h" value="Brake" />
+      </node>
+      <node concept="66U8_" id="6jBzJlwGYnd" role="3Z9vGx">
+        <property role="TrG5h" value="SpeedLimit" />
+        <node concept="35c6Nh" id="6jBzJlwGYne" role="66U86">
+          <property role="TrG5h" value="v" />
+          <node concept="35c6Ng" id="6jBzJlwGYnf" role="35c6Nl">
+            <property role="35c6Nm" value="Speed" />
+          </node>
+          <node concept="3xZtmk" id="6jBzJlwGYng" role="35c6Nr" />
+        </node>
+      </node>
+      <node concept="66U8_" id="6jBzJlwGYnh" role="3Z9vGx">
+        <property role="TrG5h" value="SafeSpeed" />
+        <node concept="35c6Nh" id="6jBzJlwGYni" role="66U86">
+          <property role="TrG5h" value="v" />
+          <node concept="35c6Ng" id="6jBzJlwGYnj" role="35c6Nl">
+            <property role="35c6Nm" value="Speed" />
+          </node>
+          <node concept="3xZtmk" id="6jBzJlwGYnk" role="35c6Nr" />
+        </node>
+        <node concept="SPUEA" id="6jBzJlwGYnl" role="66U86">
+          <property role="TrG5h" value="withinLimit" />
+          <node concept="35c6Ng" id="6jBzJlwGYnm" role="SPUDp">
+            <property role="35c6Nm" value="SpeedLimit" />
+          </node>
+          <node concept="35c6Nh" id="6jBzJlwGYnn" role="SPUDq">
+            <property role="TrG5h" value="v" />
+            <node concept="35c6Ng" id="6jBzJlwGYno" role="35c6Nl">
+              <property role="35c6Nm" value="Speed" />
+            </node>
+            <node concept="3xZtmk" id="6jBzJlwGYnp" role="35c6Nr" />
+          </node>
+          <node concept="3bnkR8" id="6jBzJlwGYnq" role="SPUDi">
+            <property role="3bnkR9" value="v &lt;= 130" />
+          </node>
+        </node>
+        <node concept="3bnkR8" id="6jBzJlwGYnr" role="SPOMa">
+          <property role="3bnkR9" value="v &gt;= 0" />
+        </node>
+      </node>
+      <node concept="66U8J" id="6jBzJlwGYns" role="3Z9vGx">
+        <property role="TrG5h" value="VehicleState" />
+        <node concept="SPUEG" id="6jBzJlwGYnt" role="66U86">
+          <property role="TrG5h" value="moving" />
+        </node>
+        <node concept="SPUEF" id="6jBzJlwGYnu" role="66U86">
+          <property role="TrG5h" value="announce" />
+          <node concept="35c6Ng" id="6jBzJlwGYnv" role="SPUDp">
+            <property role="35c6Nm" value="Brake" />
+          </node>
+        </node>
+      </node>
+      <node concept="66U8D" id="6jBzJlwGYnw" role="3Z9vGx">
+        <property role="TrG5h" value="Drive" />
+        <node concept="SPUEF" id="6jBzJlwGYnx" role="66U86">
+          <property role="TrG5h" value="accelerate" />
+          <node concept="35c6Ng" id="6jBzJlwGYny" role="SPUDp">
+            <property role="35c6Nm" value="Brake" />
+          </node>
+        </node>
+        <node concept="SPUEG" id="6jBzJlwGYnz" role="66U86">
+          <property role="TrG5h" value="state" />
+          <node concept="35c6Ng" id="6jBzJlwGYn$" role="SPUDp">
+            <property role="35c6Nm" value="VehicleState" />
+          </node>
+          <node concept="3HG_t4" id="6jBzJlwGYn_" role="SPUDq">
+            <property role="3HG_t5" value="Tracks whether the vehicle moves" />
+          </node>
+        </node>
+        <node concept="SPUE$" id="6jBzJlwGYnA" role="66U86">
+          <property role="TrG5h" value="distance" />
+          <node concept="35c6Nh" id="6jBzJlwGYnB" role="SPUDq">
+            <property role="TrG5h" value="v" />
+            <node concept="35c6Ng" id="6jBzJlwGYnC" role="35c6Nl">
+              <property role="35c6Nm" value="Speed" />
+            </node>
+            <node concept="3xZtmk" id="6jBzJlwGYnD" role="35c6Nr" />
+          </node>
+          <node concept="3bnkR8" id="6jBzJlwGYnE" role="SPUDh">
+            <property role="3bnkR9" value="v * 2" />
+          </node>
+        </node>
+        <node concept="SPUE_" id="6jBzJlwGYnF" role="66U86">
+          <property role="TrG5h" value="limit" />
+          <node concept="35c6Ng" id="6jBzJlwGYnG" role="SPUDp">
+            <property role="35c6Nm" value="SpeedLimit" />
+          </node>
+        </node>
+      </node>
+      <node concept="8EhVW" id="6jBzJlwGYnH" role="3Z9vGx">
+        <property role="TrG5h" value="Velocity" />
+        <node concept="SPUEA" id="6jBzJlwGYnI" role="8EhVZ">
+          <property role="TrG5h" value="nonNegative" />
+          <node concept="35c6Ng" id="6jBzJlwGYnJ" role="SPUDp">
+            <property role="35c6Nm" value="SpeedLimit" />
+          </node>
+        </node>
+      </node>
+      <node concept="66VRK" id="6jBzJlwGYnK" role="3Z9vGx">
+        <property role="TrG5h" value="SpeedCheck" />
+        <node concept="SPUEF" id="6jBzJlwGYnL" role="66U86">
+          <property role="TrG5h" value="measure" />
+          <node concept="35c6Ng" id="6jBzJlwGYnM" role="SPUDp">
+            <property role="35c6Nm" value="Brake" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

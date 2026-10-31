@@ -1890,6 +1890,9 @@
     <node concept="PrWs8" id="5wFVtxwZ4u8" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
+    <node concept="PrWs8" id="6jBzJlwvP6w" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tN">
     <property role="EcuMT" value="6353433212932081523" />
