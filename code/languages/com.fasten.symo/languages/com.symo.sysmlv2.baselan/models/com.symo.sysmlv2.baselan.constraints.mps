@@ -233,11 +233,21 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="2OqwBi" id="fNDJb63Xlq" role="3uHU7w">
-                          <node concept="nLn13" id="fNDJb63Xlt" role="2Oq$k0" />
-                          <node concept="1mIQ4w" id="fNDJb63Xlu" role="2OqNvi">
-                            <node concept="chp4Y" id="fNDJb63Xlw" role="cj9EA">
-                              <ref role="cht4Q" to="5rf1:7JKstLNgG7Z" />
+                        <node concept="22lmx$" id="6jBzJl_RHeX" role="3uHU7w">
+                          <node concept="2OqwBi" id="6jBzJl_RHf0" role="3uHU7B">
+                            <node concept="nLn13" id="6jBzJl_RHf3" role="2Oq$k0" />
+                            <node concept="1mIQ4w" id="6jBzJl_RHf4" role="2OqNvi">
+                              <node concept="chp4Y" id="6jBzJl_RHf6" role="cj9EA">
+                                <ref role="cht4Q" to="5rf1:7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
+                              </node>
+                            </node>
+                          </node>
+                          <node concept="2OqwBi" id="6jBzJl_RHf7" role="3uHU7w">
+                            <node concept="nLn13" id="6jBzJl_RHfa" role="2Oq$k0" />
+                            <node concept="1mIQ4w" id="6jBzJl_RHfb" role="2OqNvi">
+                              <node concept="chp4Y" id="6jBzJl_RHfd" role="cj9EA">
+                                <ref role="cht4Q" to="5rf1:6coPuU36dCb" />
+                              </node>
                             </node>
                           </node>
                         </node>

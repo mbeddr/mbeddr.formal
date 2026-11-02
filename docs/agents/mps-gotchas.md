@@ -12,6 +12,13 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Cloned test methods keep the template's body; a mutation check that "passes" may be testing nothing (2026-11-02)
+
+- A test method cloned from a template (the `rej_tpl` / `tpl` blueprint technique) keeps every literal of the template until each one is set: the input string, the expected message, the label and the `fail:` message. A new test whose literals were never replaced still passes (it re-tests the template case), and it also still passes under the mutation it is meant to catch. Symptom: the mutation check is green when it should be red.
+- After generating or cloning test methods, `print_node` format `PLAIN TEXT` of each new method (or read the generated test Java, only to inspect) and confirm the input text is the new one. Then run the mutation and expect the new tests, and only those, to fail.
+- `update_node` kind `PROPERTY`, operation `SET` takes `properties` as an array of `[nodeRef, propertyName, value]` triplets, not `{name, value}` objects; several literals can go in one call.
+- `alter_structure UPDATE_CONCEPT_PROPERTY` only updates a property that already exists ("Property 'x' not found" otherwise). To add a property to an existing concept, `update_node` kind `CHILD`, operation `ADD`, role `propertyDeclaration` with a `PropertyDeclaration` blueprint.
+
 ## Moving a feature up the inheritance chain: editor and textgen references break; FIX_REFERENCES only fixes properties (2026-11-02)
 
 - `alter_structure` `UPDATE_CONCEPT_PROPERTY`/`UPDATE_CONCEPT_CHILD` on the base concept creates the new member, and omitting `dataType`/`targetConcept` on the subconcept deletes the old one. Every editor cell (`CellModel_RefNode.relationDeclaration`, property cells), textgen `SLinkAccess.link` and `RefConcept_Reference` that pointed at the old declaration is then broken.

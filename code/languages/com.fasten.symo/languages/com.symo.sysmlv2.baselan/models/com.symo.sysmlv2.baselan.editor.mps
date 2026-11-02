@@ -971,9 +971,19 @@
           <ref role="1NtTu8" to="5rf1:6coPuU2TgRm" resolve="direction" />
         </node>
       </node>
+      <node concept="1kHk_G" id="6jBzJl_bSvI" role="3EZMnx">
+        <property role="ZjSer" value="derived" />
+        <ref role="1NtTu8" to="5rf1:6jBzJl$YPyr" resolve="isDerived" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="1kHk_G" id="4mJZS3mQnvj" role="3EZMnx">
         <property role="ZjSer" value="abstract" />
         <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="6jBzJl_bSwd" role="3EZMnx">
+        <property role="ZjSer" value="constant" />
+        <ref role="1NtTu8" to="5rf1:6jBzJl$YPyx" resolve="isConstant" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="1kHk_G" id="fNDJb6O9Jp" role="3EZMnx">
@@ -2097,9 +2107,19 @@
           <ref role="1NtTu8" to="5rf1:6coPuU36dCl" />
         </node>
       </node>
+      <node concept="1kHk_G" id="6jBzJl_bSvC" role="3EZMnx">
+        <property role="ZjSer" value="derived" />
+        <ref role="1NtTu8" to="5rf1:6jBzJl$YPyr" resolve="isDerived" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="1kHk_G" id="4mJZS3mQnvp" role="3EZMnx">
         <property role="ZjSer" value="abstract" />
         <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="6jBzJl_bSw7" role="3EZMnx">
+        <property role="ZjSer" value="constant" />
+        <ref role="1NtTu8" to="5rf1:6jBzJl$YPyx" resolve="isConstant" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="1kHk_G" id="fNDJb6O9Jj" role="3EZMnx">
@@ -9061,9 +9081,19 @@
           <ref role="1NtTu8" to="5rf1:5wFVtxwZ4tZ" />
         </node>
       </node>
+      <node concept="1kHk_G" id="6jBzJl_bSvO" role="3EZMnx">
+        <property role="ZjSer" value="derived" />
+        <ref role="1NtTu8" to="5rf1:6jBzJl$YPyr" resolve="isDerived" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="1kHk_G" id="6jBzJlxr2Ip" role="3EZMnx">
         <property role="ZjSer" value="abstract" />
         <ref role="1NtTu8" to="5rf1:6jpO12Ek_68" resolve="isAbstract" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="6jBzJl_bSww" role="3EZMnx">
+        <property role="ZjSer" value="constant" />
+        <ref role="1NtTu8" to="5rf1:6jBzJl$YPyx" resolve="isConstant" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
       <node concept="1kHk_G" id="6jBzJlxr2Iq" role="3EZMnx">

@@ -687,7 +687,7 @@
   <node concept="PlHQZ" id="6coPuU39G2r">
     <property role="EcuMT" value="7140692429575209115" />
     <property role="TrG5h" value="ICanBelongOnlyToSysMLv2PartOwner" />
-    <property role="R4oN_" value="part-specific body element: among item definitions, may only be owned by a part definition" />
+    <property role="R4oN_" value="structural body element (part, port, binding, connection, flow, interface usage): may be owned by part, port and item definitions, part and port usages, packages and files" />
     <property role="3GE5qa" value="part.base" />
   </node>
   <node concept="1TIwiD" id="6coPuU3buuw">
@@ -744,6 +744,16 @@
     <node concept="1TJgyi" id="7PctyxTWsOW" role="1TKVEl">
       <property role="IQ2nx" value="9028721269187661116" />
       <property role="TrG5h" value="isNonUnique" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6jBzJl$YPyr" role="1TKVEl">
+      <property role="IQ2nx" value="7270937308025280667" />
+      <property role="TrG5h" value="isDerived" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6jBzJl$YPyx" role="1TKVEl">
+      <property role="IQ2nx" value="7270937308025280673" />
+      <property role="TrG5h" value="isConstant" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>

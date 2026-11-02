@@ -499,6 +499,35 @@ The value members (`isDefaultValue`, `isInitialValue`, child `value`) moved from
 Tests: `_410_UsageValueModesTest` (`= 1`, `:= limit`, `default = 3`, `default := a.b` on items, parts, actions; part with multiplicity and body); `_130` rejection now uses `state s = 1`. Mutation-checked by removing the item importer branch, the action importer branch and the part TextGen block. Sandbox `_150_usage_value_modes`.
 Library probe: 37 of 58 files import (was 36); Parts passes. Remaining first blockers: SampledFunctions/TradeStudies (non-reference return parameter), StateSpaceRepresentation/Allocations/Views/Flows (non-part/port/item structure usage: event occurrence, allocation, view, rendering, flow), CausationConnections (`constant`), `derived` (SysML), ShapeItems (specialization on binding usage), SpatialItems/Items (part or port usage in an item definition), Tensor/VectorCalculations (feature-reference multiplicity bound), Actions/States (transition, entry, do, exit, succession in a state body), the four case kinds (subject, actor, objective, return), Interfaces (multiplicity on interface usage), Requirements (return parameter in a constraint body).
 
+### Iteration 028 step 12 result: `derived` and `constant` usage prefixes (2026-11-02)
+
+The spec puts `isDerived` and `isConstant` on Feature, so both are boolean properties of the shared base `SysMLv2Usage`. They are rendered (editor flag cells, TextGen) and imported for three kinds only: `SysMLv2ItemUsage`, `SysMLv2AttributeUsage` and `SysMLv2PlainOccurrenceUsage` (the library uses `derived item/attribute` in SysML and `abstract constant ref occurrence` in CausationConnections). Textual order is `derived abstract constant ref`, as in the grammar (`refPrefix`). Editor: `derived` before and `constant` after the `abstract` flag cell. Importer: `extractAbstract` keeps rejecting `derived`/`variation`/`constant`; the new `extractAbstractFor(usage, basicUsagePrefix)` is called at the item, attribute and `initBodiedUsage` sites, and for the three kinds above sets the flags (`applyFeatureFlag`, through the `SProperty` API) while still rejecting `variation`. For every other usage kind (part, port, state, action, ...) it falls back to `extractAbstract`, so those still fail with "derived/constant usage prefix".
+Tests: `_420_UsageFeaturePrefixTest` (derived/constant on item and attribute incl. `derived ref item`; `abstract constant ref occurrence` and `derived occurrence`). `_130` rejection matrix: case 33 now uses `derived abstract part`, new `testDerivedOnStateRejected` and `testConstantOnStateRejected`. Mutation-checked: swapping `isDerived` for `isConstant` in the importer fails both `_420` tests; moving the allowed kind from occurrence to state fails `testConstantOnOccurrence` and both new `_130` state tests. The first run of the state tests was a false green, because the new test methods were still copies of the cloned template, so the mutation had to be repeated after fixing them. Sandbox: `_160_usage_feature_prefixes`. Regressions `_300`, `_360`, `_380`, `_390`, `_400`, `_410` green. Re-probe not yet run.
+
+## Iteration 028 step 13 result: structural usages in item definition bodies (2026-11-02)
+
+The library's `Items.sysml` and `SpatialItems.sysml` put `part ... { }` inside `item def`.
+Previously the importer rejected this ("part-specific element (part/port usage) in item definition body") and the
+`ICanBelongOnlyToSysMLv2PartOwner` constraint refused the placement.
+
+- **Language:** the `can be child` constraint of `ICanBelongOnlyToSysMLv2PartOwner` now also accepts
+  `SysMLv2ItemDefinition` as parent. The marker's name is now misleading (it covers part, port, binding, connection,
+  flow and interface usages); not renamed, `conceptShortDescription` updated.
+- **Importer:** the `if (childNode.isInstanceOf(ICanBelongOnlyToSysMLv2PartOwner)) throw ...` in `visitItemDefinition` is removed.
+  Importer-created nodes bypass constraints, so the constraint matters only for the editor and model checking.
+- **Tests:** `_430_ItemDefinitionBodyStructureTest` (run config `_430_ItemDefinitionBodyStructureTest`) round-trips
+  part (multiplicity, typing, subsetting, abstract, nested body), port and attribute usages, and a connection with `connect`,
+  inside an `item def`. Green.
+- **Sandbox:** `_170_item_definition_structure` (item def `Fuel` with part, abstract part with nested part, and port usage).
+  Model check clean except the accepted nullable-enum errors.
+- **Mutation check (constraint):** retargeting the `SysMLv2ItemDefinition` concept reference in the constraint to
+  `SysMLv2PortDefinition` and rebuilding made the `_170` check report "Node 'tank'/'spare'/'plug' cannot be child of node 'Fuel'";
+  restored, rebuilt, check clean again.
+- **Mutation check (importer):** not re-run mechanically (restoring the removed `if` is impractical via MCP). The library probe
+  failed with exactly that message on `SpatialItems` and `Items` before the change.
+- **Regressions green:** `_130`, `_190`, `_200`, `_210`, `_300`, `_350`, `_370`, `_420`, `_430`.
+- **Pending:** re-run of the library probe (`_999`, body is commented out) to refresh the probe numbers.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations

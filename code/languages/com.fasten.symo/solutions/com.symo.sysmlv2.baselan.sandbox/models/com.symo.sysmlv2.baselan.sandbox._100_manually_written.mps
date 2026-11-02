@@ -165,6 +165,8 @@
         <child id="7140692429574298128" name="content" index="3w00ZY" />
       </concept>
       <concept id="7140692429575677856" name="com.symo.sysmlv2.baselan.structure.SysMLv2Usage" flags="ng" index="3wdj9e">
+        <property id="7270937308025280673" name="isConstant" index="07dpk" />
+        <property id="7270937308025280667" name="isDerived" index="07dpI" />
         <property id="9028721269187661116" name="isNonUnique" index="4JrGk" />
         <property id="9028721269187661110" name="isOrdered" index="4JrGu" />
         <property id="717440187291784108" name="isEnd" index="2uUgYw" />
@@ -179,7 +181,11 @@
       <concept id="7140692429570900090" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureDirection" flags="ng" index="3xZtmk">
         <property id="7140692429570900105" name="kind" index="3xZtlB" />
       </concept>
+      <concept id="7140692429570900088" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinitionRef" flags="ng" index="3xZtmm">
+        <property id="7140692429570900096" name="portDefinitionName" index="3xZtlI" />
+      </concept>
       <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
+        <child id="7140692429570900101" name="types" index="3xZtlF" />
         <child id="7140692429570900099" name="direction" index="3xZtlH" />
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">
@@ -1851,6 +1857,117 @@
         </node>
         <node concept="3bnkR8" id="6jBzJl$XHFk" role="7Qp9p">
           <property role="3bnkR9" value="a.b" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="6jBzJl_RyOX">
+    <property role="TrG5h" value="_160_usage_feature_prefixes" />
+    <node concept="3Z9vzX" id="6jBzJl_RyOY" role="2h0jOs">
+      <property role="TrG5h" value="UsageFlags" />
+      <node concept="3w00Z_" id="6jBzJl_RyOZ" role="3Z9vGx">
+        <property role="TrG5h" value="Event" />
+      </node>
+      <node concept="8EhVW" id="6jBzJl_RyP0" role="3Z9vGx">
+        <property role="TrG5h" value="Real" />
+      </node>
+      <node concept="3w00Z_" id="6jBzJl_RyP1" role="3Z9vGx">
+        <property role="TrG5h" value="Moment" />
+      </node>
+      <node concept="3ZUotO" id="6jBzJl_RyP2" role="3Z9vGx">
+        <property role="TrG5h" value="Machine" />
+        <node concept="3w00Zz" id="6jBzJl_RyP3" role="3w00ZY">
+          <property role="TrG5h" value="sensed" />
+          <property role="07dpI" value="true" />
+          <node concept="3w00Zy" id="6jBzJl_RyP4" role="3w00ZT">
+            <property role="3w00ZX" value="Event" />
+          </node>
+        </node>
+        <node concept="3w00Zz" id="6jBzJl_RyP5" role="3w00ZY">
+          <property role="TrG5h" value="sensedRef" />
+          <property role="07dpI" value="true" />
+          <property role="35c6MN" value="true" />
+          <node concept="3w00Zy" id="6jBzJl_RyP6" role="3w00ZT">
+            <property role="3w00ZX" value="Event" />
+          </node>
+        </node>
+        <node concept="8EhU9" id="6jBzJl_RyP7" role="3w00ZY">
+          <property role="TrG5h" value="load" />
+          <property role="07dpI" value="true" />
+          <node concept="8EhVB" id="6jBzJl_RyP8" role="8EhU5">
+            <property role="8EhVw" value="Real" />
+          </node>
+        </node>
+        <node concept="8EhU9" id="6jBzJl_RyP9" role="3w00ZY">
+          <property role="TrG5h" value="capacity" />
+          <property role="07dpI" value="true" />
+          <property role="07dpk" value="true" />
+          <node concept="8EhVB" id="6jBzJl_RyPa" role="8EhU5">
+            <property role="8EhVw" value="Real" />
+          </node>
+        </node>
+        <node concept="3w00Zz" id="6jBzJl_RyPb" role="3w00ZY">
+          <property role="TrG5h" value="serial" />
+          <property role="07dpk" value="true" />
+          <node concept="3w00Zy" id="6jBzJl_RyPc" role="3w00ZT">
+            <property role="3w00ZX" value="Event" />
+          </node>
+        </node>
+      </node>
+      <node concept="5yUm7" id="6jBzJl_RyPd" role="3Z9vGx">
+        <property role="TrG5h" value="causes" />
+        <property role="3eyS6o" value="true" />
+        <property role="07dpk" value="true" />
+        <property role="35c6MN" value="true" />
+        <node concept="35c6Ng" id="6jBzJl_RyPe" role="SPUDp">
+          <property role="35c6Nm" value="Moment" />
+        </node>
+      </node>
+      <node concept="5yUm7" id="6jBzJl_RyPf" role="3Z9vGx">
+        <property role="TrG5h" value="stamp" />
+        <property role="07dpI" value="true" />
+        <node concept="35c6Ng" id="6jBzJl_RyPg" role="SPUDp">
+          <property role="35c6Nm" value="Moment" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="6jBzJlA5r9Z">
+    <property role="TrG5h" value="_170_item_definition_structure" />
+    <node concept="3Z9vzX" id="6jBzJlA5ra0" role="2h0jOs">
+      <property role="TrG5h" value="ItemStructure" />
+      <node concept="3ZUotO" id="6jBzJlA5ra1" role="3Z9vGx">
+        <property role="TrG5h" value="Engine" />
+      </node>
+      <node concept="3xZtmp" id="6jBzJlA5ra2" role="3Z9vGx">
+        <property role="TrG5h" value="Socket" />
+      </node>
+      <node concept="3w00Z_" id="6jBzJlA5ra3" role="3Z9vGx">
+        <property role="TrG5h" value="Fuel" />
+        <node concept="8GF0z" id="6jBzJlA5ra4" role="3w00ZY">
+          <property role="TrG5h" value="tank" />
+          <node concept="8CKM2" id="6jBzJlA5ra5" role="3w00ZT">
+            <property role="8CKM3" value="Engine" />
+          </node>
+        </node>
+        <node concept="8GF0z" id="6jBzJlA5ra6" role="3w00ZY">
+          <property role="TrG5h" value="spare" />
+          <property role="3eyS6o" value="true" />
+          <node concept="8CKM2" id="6jBzJlA5ra7" role="3w00ZT">
+            <property role="8CKM3" value="Engine" />
+          </node>
+          <node concept="8GF0z" id="6jBzJlA5ra8" role="8GFen">
+            <property role="TrG5h" value="inner" />
+            <node concept="8CKM2" id="6jBzJlA5ra9" role="3w00ZT">
+              <property role="8CKM3" value="Engine" />
+            </node>
+          </node>
+        </node>
+        <node concept="3xZtmn" id="6jBzJlA5raa" role="3w00ZY">
+          <property role="TrG5h" value="plug" />
+          <node concept="3xZtmm" id="6jBzJlA5rab" role="3xZtlF">
+            <property role="3xZtlI" value="Socket" />
+          </node>
         </node>
       </node>
     </node>
