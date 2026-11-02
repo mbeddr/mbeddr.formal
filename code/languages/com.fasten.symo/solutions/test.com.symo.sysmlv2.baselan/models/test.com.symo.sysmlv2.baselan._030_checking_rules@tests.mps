@@ -45,6 +45,9 @@
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <child id="4376090928945101101" name="value" index="2gbwqI" />
       </concept>
+      <concept id="8930763252717678368" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeDefinition" flags="ng" index="8EhVW">
+        <child id="8930763252717678371" name="content" index="8EhVZ" />
+      </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
       <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
       <concept id="4376090928935955021" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceDefinition" flags="ng" index="2gGTne" />
@@ -71,7 +74,7 @@
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
         <child id="8930763252716192330" name="content" index="8GFem" />
-        <child id="7140692429574298135" name="type" index="3w00ZT" />
+        <child id="7140692429574298135" name="types" index="3w00ZT" />
         <child id="7140692429574298133" name="direction" index="3w00ZV" />
       </concept>
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
@@ -93,7 +96,7 @@
         <reference id="7140692429570900097" name="definition" index="3xZtlJ" />
       </concept>
       <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
-        <child id="7140692429570900101" name="type" index="3xZtlF" />
+        <child id="7140692429570900101" name="types" index="3xZtlF" />
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp" />
       <concept id="6214786105876472911" name="com.symo.sysmlv2.baselan.structure.SysMLv2LiteralExpression" flags="ng" index="1_WVX6">
@@ -693,13 +696,13 @@
               <property role="TrG5h" value="wheel" />
             </node>
           </node>
-          <node concept="3w00Z_" id="fNDJb6$SUG" role="3Z9vGx">
-            <property role="TrG5h" value="Cargo" />
-            <node concept="8GF0z" id="fNDJb6$SUH" role="3w00ZY">
+          <node concept="8EhVW" id="6jBzJlBKPxa" role="3Z9vGx">
+            <property role="TrG5h" value="Payload" />
+            <node concept="8GF0z" id="6jBzJlBKPxb" role="8EhVZ">
               <property role="TrG5h" value="misplaced" />
-              <node concept="7CXmI" id="fNDJb6$SUI" role="lGtFl">
-                <node concept="39XrGg" id="fNDJb6$SUJ" role="7EUXB">
-                  <node concept="2u4KIi" id="fNDJb6$SUL" role="39rjcI">
+              <node concept="7CXmI" id="6jBzJlBKPxc" role="lGtFl">
+                <node concept="39XrGg" id="6jBzJlBKPxd" role="7EUXB">
+                  <node concept="2u4KIi" id="6jBzJlBKPxf" role="39rjcI">
                     <ref role="39XzEq" to="kuyq:6coPuU3aqOF" />
                   </node>
                 </node>

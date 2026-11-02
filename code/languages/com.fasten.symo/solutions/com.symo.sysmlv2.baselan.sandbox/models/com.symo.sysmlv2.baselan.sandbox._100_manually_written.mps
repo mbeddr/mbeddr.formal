@@ -1972,5 +1972,63 @@
       </node>
     </node>
   </node>
+  <node concept="2h0jOr" id="6jBzJlB5ZMk">
+    <property role="TrG5h" value="_180_feature_reference_bounds" />
+    <node concept="3Z9vzX" id="6jBzJlB5ZMl" role="2h0jOs">
+      <property role="TrG5h" value="FeatureReferenceBounds" />
+      <node concept="3ZUotO" id="6jBzJlB5ZMm" role="3Z9vGx">
+        <property role="TrG5h" value="Wheel" />
+      </node>
+      <node concept="3ZUotO" id="6jBzJlB5ZMn" role="3Z9vGx">
+        <property role="TrG5h" value="Frame" />
+        <node concept="8GF0z" id="6jBzJlB5ZMo" role="3w00ZY">
+          <property role="TrG5h" value="wheels" />
+          <node concept="8CKM2" id="6jBzJlB5ZMp" role="3w00ZT">
+            <property role="8CKM3" value="Wheel" />
+          </node>
+          <node concept="8EhVq" id="6jBzJlB5ZMq" role="3w00ZS">
+            <property role="8EhVr" value="n" />
+            <property role="8EhVk" value="n" />
+          </node>
+        </node>
+        <node concept="8GF0z" id="6jBzJlB5ZMr" role="3w00ZY">
+          <property role="TrG5h" value="spares" />
+          <node concept="8CKM2" id="6jBzJlB5ZMs" role="3w00ZT">
+            <property role="8CKM3" value="Wheel" />
+          </node>
+          <node concept="8EhVq" id="6jBzJlB5ZMt" role="3w00ZS">
+            <property role="8EhVr" value="0" />
+            <property role="8EhVk" value="n" />
+          </node>
+        </node>
+        <node concept="8GF0z" id="6jBzJlB5ZMu" role="3w00ZY">
+          <property role="TrG5h" value="outer" />
+          <node concept="8CKM2" id="6jBzJlB5ZMv" role="3w00ZT">
+            <property role="8CKM3" value="Wheel" />
+          </node>
+          <node concept="8EhVq" id="6jBzJlB5ZMw" role="3w00ZS">
+            <property role="8EhVr" value="Sizes::n" />
+            <property role="8EhVk" value="*" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="6jBzJlBIW97">
+    <property role="TrG5h" value="_190_usages_in_attribute_body" />
+    <node concept="3Z9vzX" id="6jBzJlBIW98" role="2h0jOs">
+      <property role="TrG5h" value="UsagesInAttributeBody" />
+      <node concept="8EhU9" id="6jBzJlBIW99" role="3Z9vGx">
+        <property role="TrG5h" value="union" />
+        <node concept="3w00Zz" id="6jBzJlBIW9a" role="8EhU4">
+          <property role="TrG5h" value="pieces" />
+          <node concept="8EhVq" id="6jBzJlBIW9b" role="3w00ZS">
+            <property role="8EhVr" value="1" />
+            <property role="8EhVk" value="*" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

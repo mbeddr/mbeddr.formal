@@ -14591,14 +14591,18 @@
             <node concept="10Nm6u" id="6coPuU2M2av" role="3uHU7w" />
           </node>
           <node concept="3clFbS" id="6coPuU2M2aw" role="3clFbx">
-            <node concept="YS8fn" id="6coPuU2M2ax" role="3cqZAp">
-              <node concept="2ShNRf" id="6coPuU2M2az" role="YScLw">
-                <node concept="1pGfFk" id="6coPuU2M2a_" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="6coPuU2M2aA" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: feature-reference multiplicity bound" />
+            <node concept="3cpWs6" id="6jBzJlAU$RX" role="3cqZAp">
+              <node concept="2OqwBi" id="6jBzJlAV9jG" role="3cqZAk">
+                <node concept="2OqwBi" id="6jBzJlAV9jJ" role="2Oq$k0">
+                  <node concept="37vLTw" id="6jBzJlAV9jM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6coPuU2M2ag" resolve="member" />
                   </node>
+                  <node concept="liA8E" id="6jBzJlAV9jN" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$MultiplicityExpressionMemberContext.featureReferenceExpression()" resolve="featureReferenceExpression" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6jBzJlAV9jO" role="2OqNvi">
+                  <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
                 </node>
               </node>
             </node>

@@ -526,7 +526,46 @@ Previously the importer rejected this ("part-specific element (part/port usage) 
 - **Mutation check (importer):** not re-run mechanically (restoring the removed `if` is impractical via MCP). The library probe
   failed with exactly that message on `SpatialItems` and `Items` before the change.
 - **Regressions green:** `_130`, `_190`, `_200`, `_210`, `_300`, `_350`, `_370`, `_420`, `_430`.
-- **Pending:** re-run of the library probe (`_999`, body is commented out) to refresh the probe numbers.
+- **Library probe (2026-11-02): 38 of 58 files import** (was 37). The probe body is active again (the try statement was moved
+  back into the statement list; the empty comment attributes are removed). Cleared: `derived` (SysML), the part/port usage in
+  `Items`' item definitions. The 20 failures, by first blocker:
+  - 4 non-part/port/item structure usage: `StateSpaceRepresentation`, `Allocations`, `Flows`, `Views`.
+  - 3 feature-reference multiplicity bound: `SpatialItems`, `TensorCalculations`, `VectorCalculations`.
+  - 4 case-kind internals (subject, actor, objective, return member): `AnalysisCases`, `Cases`, `UseCases`, `VerificationCases`.
+  - 2 transition, entry, do, exit or succession in a state body: `Actions`, `States`.
+  - 2 non-reference return parameter: `SampledFunctions`, `TradeStudies`.
+  - 1 each: `CausationConnections` (non-attribute non-occurrence usage element, so `constant` is no longer the blocker),
+    `ShapeItems` (specialization on binding usage), `Interfaces` (multiplicity on interface usage), `Items` (name, multiplicity
+    or nonunique on `end`), `Requirements` (return parameter inside constraint body).
+  - Next by size: structure usage kinds (event occurrence, allocation, view, rendering, flow), then the case-kind internals,
+    then feature-reference multiplicity bounds.
+
+### Step 14: feature-reference multiplicity bounds, usages in attribute bodies (2026-11-02)
+- **Importer:** `extractMultiplicityBoundText` returns the qualified-name text of a feature-reference bound (`[n]`, `[0..n]`,
+  `[Sizes::n..*]`) instead of throwing. The bounds were already strings, so no structure change; the text is uninterpreted,
+  like other non-literal expressions.
+- **Structure:** `SysMLv2Usage` now implements `ISysMLv2AttributeBodyContent`, so every usage kind can sit in an attribute
+  usage body (grammar: any usage). Before, `SpatialItems` failed with a raw `NodeCastException` on an item usage in an
+  attribute usage body. The same `implements` on `SysMLv2BodiedUsage` is now redundant and left in place.
+- **Not widened:** the `ISysMLv2StructuralUsage` constraint still rejects part and port usages in an attribute body, so the
+  editor and model check reject what the importer accepts (importer-created nodes bypass constraints). The library needs only
+  item usages there.
+- **Tests:** `_450_FeatureReferenceMultiplicityTest` (bounds `[n]`, `[0..n]`, `[n..*]`, `[1..n]` on part, item and attribute
+  usages; qualified `[Sizes::n]` and `[Sizes::n..*]`), `_460_UsageInAttributeBodyTest` (item, ref item, attribute and
+  occurrence usages in an attribute usage body).
+  Mutation-checked: returning the constant `"x"` from the new importer branch fails both `_450` tests; removing the new
+  `implements` from `SysMLv2Usage` fails `_460` with the original `NodeCastException`.
+- **Sandbox:** `_180_feature_reference_bounds`, `_190_usages_in_attribute_body`. Model check clean except the accepted
+  nullable-enum errors.
+- **Regression found and fixed:** `_030_PartUsagePlacement` (module `test.com.symo.sysmlv2.baselan`) had been red since the
+  step 13 commit, because it expected `part misplaced;` in an `item def` to be an error and step 13 made that legal. Moved the
+  misplaced part into an `attribute def`, which the constraint still rejects. Lesson: run "All Tests in Project", not only the
+  importer tests, after a constraint change.
+- **Open, not investigated:** the full run also reports `_120_Connections_PrefixMetadata` (editor test, "No cell with id
+  Constant_yj3wp4_h0a found in (instance of SysMLv2ConnectionUsage)", probably a shifted generated cell id after an earlier
+  connection-editor change) and two plantuml editor tests (`deleteSubstructurePlainTextSpec_start_bracket`, `_end_bracket`,
+  "Exception while initializing the editor"). Whether they were already red before this step has not been checked.
+- **Library probe: 41 of 58 files import** (was 38). Cleared: `TensorCalculations`, `VectorCalculations`, `SpatialItems`.
 
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and

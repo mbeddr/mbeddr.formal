@@ -12,6 +12,12 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Replaying a printed blueprint gives nodes without a `name` property a bogus `name` (2026-11-02)
+
+`print_node` shows a display name even for nodes that have no `name` property (e.g. a test annotation `NodeConstraintsErrorCheckOperation` prints as `<no name>[has constraints error]`). Feeding that JSON back through `update_node SET CHILD` / `insert_root_node_from_json` stores the display text as a real `name` property. For such nodes the generated test method name then contains `<`, `>` and `[`, and Make fails with a dozen Java syntax errors in the generated `*_Test.java`. Fix: after replaying, `update_node SET PROPERTY` the node's `name` to `null`; rebuild. When cloning or moving subtrees that contain test annotations, strip the `name` property from nodes whose concept is not `INamedConcept` before replaying, or check the generated test class compiles.
+
+Also: a constraint change can turn a test in a different test module red. Here the `can be child` constraint change of step 13 broke `_030_PartUsagePlacement` in `test.com.symo.sysmlv2.baselan`, while the importer tests stayed green. After constraint edits run the `All Tests in Project` configuration, not only the tests next to the change.
+
 ## Concept rename = `update_node SET PROPERTY name`; nested `||` needs parentheses; JUnit run configs vanish after Make (2026-11-02)
 
 - `alter_structure` has no rename for concepts. `update_node SET PROPERTY` on the concept's `name` works, and references (stored by node id) follow. The `<Concept>_Constraints` root's own `name` is a separate property and must be renamed too.

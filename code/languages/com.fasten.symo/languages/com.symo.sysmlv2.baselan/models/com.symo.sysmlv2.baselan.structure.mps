@@ -756,6 +756,9 @@
       <property role="TrG5h" value="isConstant" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
+    <node concept="PrWs8" id="6jBzJlBxw5_" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU3buux">
     <property role="EcuMT" value="7140692429575677857" />
