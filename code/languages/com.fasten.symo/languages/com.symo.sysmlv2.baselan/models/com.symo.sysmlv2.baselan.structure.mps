@@ -2027,5 +2027,29 @@
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6jBzJlxr2HM">
+    <property role="EcuMT" value="7270937307965565810" />
+    <property role="TrG5h" value="SysMLv2PlainOccurrenceUsage" />
+    <property role="34LRSv" value="occurrence" />
+    <property role="R4oN_" value="SysML v2 OccurrenceUsage (8.3.9.3) written with the occurrence keyword: occurrence name : Type = value { body }" />
+    <property role="3GE5qa" value="behavior" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <node concept="1TJgyi" id="6jBzJlxr2HN" role="1TKVEl">
+      <property role="IQ2nx" value="7270937307965565811" />
+      <property role="TrG5h" value="isDefaultValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6jBzJlxr2HO" role="1TKVEl">
+      <property role="IQ2nx" value="7270937307965565812" />
+      <property role="TrG5h" value="isInitialValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="6jBzJlxr2HP" role="1TKVEi">
+      <property role="IQ2ns" value="7270937307965565813" />
+      <property role="20kJfa" value="value" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+  </node>
 </model>
 

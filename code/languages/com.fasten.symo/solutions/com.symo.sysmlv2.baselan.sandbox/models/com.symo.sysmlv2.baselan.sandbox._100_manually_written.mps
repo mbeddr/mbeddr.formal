@@ -19,6 +19,11 @@
         <child id="6353433212862553319" name="specializes" index="4Zb4Z" />
       </concept>
       <concept id="6353433212862553315" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReturnParameter" flags="ng" index="4Zb4V" />
+      <concept id="7270937307965565810" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainOccurrenceUsage" flags="ng" index="5yUm7">
+        <property id="7270937307965565812" name="isInitialValue" index="5yUm1" />
+        <property id="7270937307965565811" name="isDefaultValue" index="5yUm6" />
+        <child id="7270937307965565813" name="value" index="5yUm0" />
+      </concept>
       <concept id="6353433212885159896" name="com.symo.sysmlv2.baselan.structure.SysMLv2BodiedDefinition" flags="ng" index="66U80">
         <child id="6353433212885159901" name="specializes" index="66U85" />
         <child id="6353433212885159902" name="content" index="66U86" />
@@ -86,6 +91,9 @@
       <concept id="4376090928929871183" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartLikeUsage" flags="ng" index="2n5AFc">
         <child id="8930763252716192330" name="content" index="8GFem" />
       </concept>
+      <concept id="717440187291777380" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinitionRef" flags="ng" index="2uUmlC">
+        <property id="717440187291777383" name="connectionDefinitionName" index="2uUmlF" />
+      </concept>
       <concept id="717440187291777381" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectorEnd" flags="ng" index="2uUmlD">
         <child id="717440187291777386" name="chain" index="2uUmlA" />
       </concept>
@@ -107,6 +115,7 @@
         <property id="6353433212932081547" name="isNegated" index="SPUDj" />
       </concept>
       <concept id="6353433212932081522" name="com.symo.sysmlv2.baselan.structure.SysMLv2BodiedUsage" flags="ng" index="SPUEE">
+        <child id="6353433212932081536" name="multiplicity" index="SPUDo" />
         <child id="6353433212932081537" name="types" index="SPUDp" />
         <child id="6353433212932081538" name="content" index="SPUDq" />
       </concept>
@@ -159,6 +168,7 @@
         <child id="7140692429575677859" name="redefines" index="3wdj9d" />
       </concept>
       <concept id="7140692429575677857" name="com.symo.sysmlv2.baselan.structure.SysMLv2UsageRef" flags="ng" index="3wdj9f">
+        <property id="7140692429575677861" name="usageName" index="3wdj9b" />
         <reference id="7140692429575677862" name="usage" index="3wdj98" />
       </concept>
       <concept id="7140692429570900090" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureDirection" flags="ng" index="3xZtmk">
@@ -1555,6 +1565,145 @@
           </node>
           <node concept="1_WVX6" id="6jBzJlxqLQS" role="34b1dU">
             <property role="1_WVXG" value="4" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="6jBzJlz2iS4">
+    <property role="TrG5h" value="_140_occurrence_and_connection_usages" />
+    <node concept="3Z9vzX" id="6jBzJlz2iS5" role="2h0jOs">
+      <property role="TrG5h" value="Plant" />
+      <node concept="3w00Z_" id="6jBzJlz2iS6" role="3Z9vGx">
+        <property role="TrG5h" value="Event" />
+      </node>
+      <node concept="3ZUotO" id="6jBzJlz2iS7" role="3Z9vGx">
+        <property role="TrG5h" value="Machine" />
+        <node concept="5yUm7" id="6jBzJlz2iS8" role="3w00ZY">
+          <property role="TrG5h" value="plain" />
+        </node>
+        <node concept="5yUm7" id="6jBzJlz2iS9" role="3w00ZY">
+          <property role="TrG5h" value="causes" />
+          <property role="3eyS6o" value="true" />
+          <node concept="35c6Ng" id="6jBzJlz2iSa" role="SPUDp">
+            <property role="35c6Nm" value="Event" />
+          </node>
+          <node concept="8EhVq" id="6jBzJlz2iSb" role="SPUDo">
+            <property role="8EhVr" value="0" />
+            <property role="8EhVk" value="*" />
+          </node>
+        </node>
+        <node concept="5yUm7" id="6jBzJlz2iSc" role="3w00ZY">
+          <property role="TrG5h" value="effects" />
+          <node concept="35c6Ng" id="6jBzJlz2iSd" role="SPUDp">
+            <property role="35c6Nm" value="Event" />
+          </node>
+          <node concept="8EhVq" id="6jBzJlz2iSe" role="SPUDo">
+            <property role="8EhVr" value="0" />
+            <property role="8EhVk" value="1" />
+          </node>
+          <node concept="3wdj9f" id="6jBzJlz2iSf" role="3wdj9c">
+            <property role="3wdj9b" value="causes" />
+          </node>
+        </node>
+        <node concept="5yUm7" id="6jBzJlz2iSg" role="3w00ZY">
+          <property role="TrG5h" value="tracked" />
+          <property role="35c6MN" value="true" />
+          <node concept="35c6Ng" id="6jBzJlz2iSh" role="SPUDp">
+            <property role="35c6Nm" value="Event" />
+          </node>
+          <node concept="3wdj9f" id="6jBzJlz2iSi" role="3wdj9d">
+            <property role="3wdj9b" value="plain" />
+          </node>
+        </node>
+        <node concept="5yUm7" id="6jBzJlz2iSj" role="3w00ZY">
+          <property role="TrG5h" value="nested" />
+          <node concept="35c6Ng" id="6jBzJlz2iSk" role="SPUDp">
+            <property role="35c6Nm" value="Event" />
+          </node>
+          <node concept="5yUm7" id="6jBzJlz2iSl" role="SPUDq">
+            <property role="TrG5h" value="inner" />
+            <node concept="35c6Ng" id="6jBzJlz2iSm" role="SPUDp">
+              <property role="35c6Nm" value="Event" />
+            </node>
+          </node>
+        </node>
+        <node concept="5yUm7" id="6jBzJlz2iSn" role="3w00ZY">
+          <property role="TrG5h" value="measured" />
+          <node concept="35c6Ng" id="6jBzJlz2iSo" role="SPUDp">
+            <property role="35c6Nm" value="Event" />
+          </node>
+          <node concept="1_WVX6" id="6jBzJlz2iSp" role="5yUm0">
+            <property role="1_WVXG" value="one" />
+          </node>
+        </node>
+        <node concept="5yUm7" id="6jBzJlz2iSq" role="3w00ZY">
+          <property role="TrG5h" value="initial" />
+          <property role="5yUm1" value="true" />
+          <node concept="35c6Ng" id="6jBzJlz2iSr" role="SPUDp">
+            <property role="35c6Nm" value="Event" />
+          </node>
+          <node concept="1_WVX6" id="6jBzJlz2iSs" role="5yUm0">
+            <property role="1_WVXG" value="two" />
+          </node>
+        </node>
+        <node concept="5yUm7" id="6jBzJlz2iSt" role="3w00ZY">
+          <property role="TrG5h" value="fallback" />
+          <property role="5yUm6" value="true" />
+          <node concept="35c6Ng" id="6jBzJlz2iSu" role="SPUDp">
+            <property role="35c6Nm" value="Event" />
+          </node>
+          <node concept="1_WVX6" id="6jBzJlz2iSv" role="5yUm0">
+            <property role="1_WVXG" value="three" />
+          </node>
+        </node>
+        <node concept="5yUm7" id="6jBzJlz2iSw" role="3w00ZY">
+          <property role="TrG5h" value="both" />
+          <property role="5yUm6" value="true" />
+          <property role="5yUm1" value="true" />
+          <node concept="35c6Ng" id="6jBzJlz2iSx" role="SPUDp">
+            <property role="35c6Nm" value="Event" />
+          </node>
+          <node concept="1_WVX6" id="6jBzJlz2iSy" role="5yUm0">
+            <property role="1_WVXG" value="four" />
+          </node>
+        </node>
+        <node concept="2uUmlE" id="6jBzJlz2iSz" role="3w00ZY">
+          <property role="TrG5h" value="links" />
+          <property role="2uUmlw" value="true" />
+          <property role="3eyS6o" value="true" />
+          <node concept="2uUmlC" id="6jBzJlz2iSC" role="3w00ZT">
+            <property role="2uUmlF" value="Link" />
+          </node>
+          <node concept="8EhVq" id="6jBzJlz2iSD" role="3w00ZS">
+            <property role="8EhVr" value="0" />
+            <property role="8EhVk" value="*" />
+          </node>
+        </node>
+        <node concept="2uUmlE" id="6jBzJlz2iSE" role="3w00ZY">
+          <property role="TrG5h" value="chain" />
+          <property role="2uUmlw" value="true" />
+          <property role="4JrGu" value="true" />
+          <property role="4JrGk" value="true" />
+          <node concept="2uUmlC" id="6jBzJlz2iSJ" role="3w00ZT">
+            <property role="2uUmlF" value="Link" />
+          </node>
+          <node concept="8EhVq" id="6jBzJlz2iSK" role="3w00ZS">
+            <property role="8EhVr" value="0" />
+            <property role="8EhVk" value="1" />
+          </node>
+          <node concept="3wdj9f" id="6jBzJlz2iSL" role="3wdj9c">
+            <property role="3wdj9b" value="links" />
+          </node>
+        </node>
+        <node concept="2uUmlE" id="6jBzJlz2iSM" role="3w00ZY">
+          <property role="TrG5h" value="refined" />
+          <property role="2uUmlw" value="true" />
+          <node concept="2uUmlC" id="6jBzJlz2iSR" role="3w00ZT">
+            <property role="2uUmlF" value="Link" />
+          </node>
+          <node concept="3wdj9f" id="6jBzJlz2iSS" role="3wdj9d">
+            <property role="3wdj9b" value="links" />
           </node>
         </node>
       </node>

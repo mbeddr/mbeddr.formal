@@ -12,6 +12,13 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Copying baseLanguage code in a model: clone with `print_node deep`, do not parse Java that calls `SNode` members (2026-11-02)
+
+- `parse_java_and_insert` with plain Java that calls members of `SNode` (`n.setProperty(..)`, `n.addChild(..)`) produces `UnknownInstanceMethodCall` nodes that cannot be fixed afterwards. Plain Java is fine for statements that only call static helpers, local methods and parser-context methods (`ctx.foo()`); the `SNode` type itself comes out as an unresolved `ClassifierType` (repoint it to the `~SNode` stub with `update_node` kind `REFERENCE`, operation `SET`).
+- To get smodel code (`node<C>`, `SLinkListAccess`, `add`), clone existing statements: `print_node` with `deep: true` gives a blueprint (`concept`, `nodes` under the children roles) that `update_node` kind `CHILD`, operation `ADD`, `childJson` (file path or inline), `position` accepts. References inside the block are repointed automatically ("repointed N"); a variable reference to a variable of the *source* method is repointed by name to the target method's variable, a foreach loop variable can stay broken after a delete-and-restore, then set it by hand (`update_node` kind `REFERENCE`, `references` triplets `[node, role, target]`).
+- `parse_java_and_insert` takes everything under `parameters`: `featureKind` (`METHOD`, `STATEMENTS`, ...), `contextNodeRef` (required for `METHOD`/`STATEMENTS`) and `insert` with `mode: "child"`, `parentRef`, `role`, `position`.
+- `update_node` kind `CHILD` operation `SET` needs `childNodeRef` even to replace a single-cardinality child with `childJson`; to swap one (a parameter's type) use `ADD` on the role, it replaces the occupant. `SET` without `childJson` deletes the child; there is no `REMOVE` operation.
+
 ## A `FlagCell` cannot lead an `OptionalCell`; `update_node ADD CHILD` does honour `position` (2026-10-31)
 
 - Putting `FlagCell`s (`default`, `:=`) as the first children of the collection inside an `OptionalCell` makes the grammarcells generator dismiss it: "Content of optional cell is not supported" (same family as the 2026-10-25 entry: the optional cell must lead with a constant). Rebuild fails with `generation completed with errors` on the editor model only. Fix: move the flag cells out, as siblings in front of the optional cell, with `alter_nodes MOVE_NODE_TO_PARENT` (`nodeReference`, `newParentRef`, `role`, `position`). A flag then renders whenever its property is true, independent of the optional cell's value.
