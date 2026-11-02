@@ -80,6 +80,11 @@
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
       </concept>
+      <concept id="4376090928965370542" name="com.symo.sysmlv2.baselan.structure.SysMLv2OccurrenceUsage" flags="ng" index="2hsbOH">
+        <property id="7270937307996101798" name="isInitialValue" index="7Qp9j" />
+        <property id="7270937307996101792" name="isDefaultValue" index="7Qp9l" />
+        <child id="7270937307996101804" name="value" index="7Qp9p" />
+      </concept>
       <concept id="4376090928965370545" name="com.symo.sysmlv2.baselan.structure.ISysMLv2ConnectorAsUsage" flags="ngI" index="2hsbOM">
         <child id="717440187291777390" name="source" index="2uUmly" />
         <child id="717440187291777391" name="target" index="2uUmlz" />
@@ -1705,6 +1710,147 @@
           <node concept="3wdj9f" id="6jBzJlz2iSS" role="3wdj9d">
             <property role="3wdj9b" value="links" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="6jBzJl$XHEE">
+    <property role="TrG5h" value="_150_usage_value_modes" />
+    <node concept="3Z9vzX" id="6jBzJl$XHEF" role="2h0jOs">
+      <property role="TrG5h" value="ValueModes" />
+      <node concept="3w00Z_" id="6jBzJl$XHEG" role="3Z9vGx">
+        <property role="TrG5h" value="Event" />
+      </node>
+      <node concept="3ZUotO" id="6jBzJl$XHEH" role="3Z9vGx">
+        <property role="TrG5h" value="Engine" />
+      </node>
+      <node concept="66U8D" id="6jBzJl$XHEI" role="3Z9vGx">
+        <property role="TrG5h" value="Task" />
+      </node>
+      <node concept="3w00Z_" id="6jBzJl$XHEJ" role="3Z9vGx">
+        <property role="TrG5h" value="Machine" />
+        <node concept="3w00Zz" id="6jBzJl$XHEK" role="3w00ZY">
+          <property role="TrG5h" value="evBound" />
+          <node concept="3w00Zy" id="6jBzJl$XHEL" role="3w00ZT">
+            <property role="3w00ZX" value="Event" />
+          </node>
+          <node concept="1_WVX6" id="6jBzJl$XHEM" role="7Qp9p">
+            <property role="1_WVXG" value="1" />
+          </node>
+        </node>
+        <node concept="3w00Zz" id="6jBzJl$XHEN" role="3w00ZY">
+          <property role="TrG5h" value="evInitial" />
+          <property role="7Qp9j" value="true" />
+          <node concept="3w00Zy" id="6jBzJl$XHEO" role="3w00ZT">
+            <property role="3w00ZX" value="Event" />
+          </node>
+          <node concept="3bnkR8" id="6jBzJl$XHEP" role="7Qp9p">
+            <property role="3bnkR9" value="limit" />
+          </node>
+        </node>
+        <node concept="3w00Zz" id="6jBzJl$XHEQ" role="3w00ZY">
+          <property role="TrG5h" value="evDefault" />
+          <property role="7Qp9l" value="true" />
+          <node concept="3w00Zy" id="6jBzJl$XHER" role="3w00ZT">
+            <property role="3w00ZX" value="Event" />
+          </node>
+          <node concept="1_WVX6" id="6jBzJl$XHES" role="7Qp9p">
+            <property role="1_WVXG" value="3" />
+          </node>
+        </node>
+        <node concept="3w00Zz" id="6jBzJl$XHET" role="3w00ZY">
+          <property role="TrG5h" value="evDefaultInitial" />
+          <property role="7Qp9l" value="true" />
+          <property role="7Qp9j" value="true" />
+          <node concept="3w00Zy" id="6jBzJl$XHEU" role="3w00ZT">
+            <property role="3w00ZX" value="Event" />
+          </node>
+          <node concept="3bnkR8" id="6jBzJl$XHEV" role="7Qp9p">
+            <property role="3bnkR9" value="a.b" />
+          </node>
+        </node>
+      </node>
+      <node concept="3ZUotO" id="6jBzJl$XHEW" role="3Z9vGx">
+        <property role="TrG5h" value="Car" />
+        <node concept="8GF0z" id="6jBzJl$XHEX" role="3w00ZY">
+          <property role="TrG5h" value="motorBound" />
+          <node concept="8CKM2" id="6jBzJl$XHEY" role="3w00ZT">
+            <property role="8CKM3" value="Engine" />
+          </node>
+          <node concept="1_WVX6" id="6jBzJl$XHEZ" role="7Qp9p">
+            <property role="1_WVXG" value="1" />
+          </node>
+        </node>
+        <node concept="8GF0z" id="6jBzJl$XHF0" role="3w00ZY">
+          <property role="TrG5h" value="motorInitial" />
+          <property role="7Qp9j" value="true" />
+          <node concept="8CKM2" id="6jBzJl$XHF1" role="3w00ZT">
+            <property role="8CKM3" value="Engine" />
+          </node>
+          <node concept="3bnkR8" id="6jBzJl$XHF2" role="7Qp9p">
+            <property role="3bnkR9" value="limit" />
+          </node>
+        </node>
+        <node concept="8GF0z" id="6jBzJl$XHF3" role="3w00ZY">
+          <property role="TrG5h" value="motorDefault" />
+          <property role="7Qp9l" value="true" />
+          <node concept="8CKM2" id="6jBzJl$XHF4" role="3w00ZT">
+            <property role="8CKM3" value="Engine" />
+          </node>
+          <node concept="1_WVX6" id="6jBzJl$XHF5" role="7Qp9p">
+            <property role="1_WVXG" value="3" />
+          </node>
+        </node>
+        <node concept="8GF0z" id="6jBzJl$XHF6" role="3w00ZY">
+          <property role="TrG5h" value="motorDefaultInitial" />
+          <property role="7Qp9l" value="true" />
+          <property role="7Qp9j" value="true" />
+          <node concept="8CKM2" id="6jBzJl$XHF7" role="3w00ZT">
+            <property role="8CKM3" value="Engine" />
+          </node>
+          <node concept="3bnkR8" id="6jBzJl$XHF8" role="7Qp9p">
+            <property role="3bnkR9" value="a.b" />
+          </node>
+        </node>
+      </node>
+      <node concept="SPUEF" id="6jBzJl$XHF9" role="3Z9vGx">
+        <property role="TrG5h" value="jobBound" />
+        <node concept="35c6Ng" id="6jBzJl$XHFa" role="SPUDp">
+          <property role="35c6Nm" value="Task" />
+        </node>
+        <node concept="1_WVX6" id="6jBzJl$XHFb" role="7Qp9p">
+          <property role="1_WVXG" value="1" />
+        </node>
+      </node>
+      <node concept="SPUEF" id="6jBzJl$XHFc" role="3Z9vGx">
+        <property role="TrG5h" value="jobInitial" />
+        <property role="7Qp9j" value="true" />
+        <node concept="35c6Ng" id="6jBzJl$XHFd" role="SPUDp">
+          <property role="35c6Nm" value="Task" />
+        </node>
+        <node concept="3bnkR8" id="6jBzJl$XHFe" role="7Qp9p">
+          <property role="3bnkR9" value="limit" />
+        </node>
+      </node>
+      <node concept="SPUEF" id="6jBzJl$XHFf" role="3Z9vGx">
+        <property role="TrG5h" value="jobDefault" />
+        <property role="7Qp9l" value="true" />
+        <node concept="35c6Ng" id="6jBzJl$XHFg" role="SPUDp">
+          <property role="35c6Nm" value="Task" />
+        </node>
+        <node concept="1_WVX6" id="6jBzJl$XHFh" role="7Qp9p">
+          <property role="1_WVXG" value="3" />
+        </node>
+      </node>
+      <node concept="SPUEF" id="6jBzJl$XHFi" role="3Z9vGx">
+        <property role="TrG5h" value="jobDefaultInitial" />
+        <property role="7Qp9l" value="true" />
+        <property role="7Qp9j" value="true" />
+        <node concept="35c6Ng" id="6jBzJl$XHFj" role="SPUDp">
+          <property role="35c6Nm" value="Task" />
+        </node>
+        <node concept="3bnkR8" id="6jBzJl$XHFk" role="7Qp9p">
+          <property role="3bnkR9" value="a.b" />
         </node>
       </node>
     </node>

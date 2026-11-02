@@ -12,6 +12,13 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Moving a feature up the inheritance chain: editor and textgen references break; FIX_REFERENCES only fixes properties (2026-11-02)
+
+- `alter_structure` `UPDATE_CONCEPT_PROPERTY`/`UPDATE_CONCEPT_CHILD` on the base concept creates the new member, and omitting `dataType`/`targetConcept` on the subconcept deletes the old one. Every editor cell (`CellModel_RefNode.relationDeclaration`, property cells), textgen `SLinkAccess.link` and `RefConcept_Reference` that pointed at the old declaration is then broken.
+- `alter_nodes FIX_REFERENCES` repoints the property references but leaves the link references broken. Repoint them with `update_node` kind `REFERENCE`, operation `SET`, `references` triplets `[node, role, target]`; find them with a root check after the language make.
+- `/tmp/mps-node-*.json` blueprints are deleted after they were used as `childJson`; copy them to the scratchpad first if you need them again, and re-print after any structure change (a clone keeps references to the original's declarations).
+- `print_node` JSON is shallow by default; to clone a commented or nested block use `deep: true`. A shallow copy of a try statement has an empty body and no catch clause, which fails with "possible broken reference" in textgen.
+
 ## Copying baseLanguage code in a model: clone with `print_node deep`, do not parse Java that calls `SNode` members (2026-11-02)
 
 - `parse_java_and_insert` with plain Java that calls members of `SNode` (`n.setProperty(..)`, `n.addChild(..)`) produces `UnknownInstanceMethodCall` nodes that cannot be fixed afterwards. Plain Java is fine for statements that only call static helpers, local methods and parser-context methods (`ctx.foo()`); the `SNode` type itself comes out as an unresolved `ClassifierType` (repoint it to the `~SNode` stub with `update_node` kind `REFERENCE`, operation `SET`).

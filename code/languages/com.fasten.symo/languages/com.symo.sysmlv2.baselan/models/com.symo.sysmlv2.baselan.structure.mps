@@ -1310,6 +1310,22 @@
     <property role="R5$K7" value="true" />
     <property role="3GE5qa" value="base" />
     <ref role="1TJDcQ" node="6coPuU3buuw" resolve="SysMLv2Usage" />
+    <node concept="1TJgyi" id="6jBzJlzfxMw" role="1TKVEl">
+      <property role="IQ2nx" value="7270937307996101792" />
+      <property role="TrG5h" value="isDefaultValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6jBzJlzfxMA" role="1TKVEl">
+      <property role="IQ2nx" value="7270937307996101798" />
+      <property role="TrG5h" value="isInitialValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="6jBzJlzfxMG" role="1TKVEi">
+      <property role="IQ2ns" value="7270937307996101804" />
+      <property role="20kJfa" value="value" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeHM$aJ">
     <property role="EcuMT" value="4376090928965370543" />
@@ -2034,22 +2050,6 @@
     <property role="R4oN_" value="SysML v2 OccurrenceUsage (8.3.9.3) written with the occurrence keyword: occurrence name : Type = value { body }" />
     <property role="3GE5qa" value="behavior" />
     <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
-    <node concept="1TJgyi" id="6jBzJlxr2HN" role="1TKVEl">
-      <property role="IQ2nx" value="7270937307965565811" />
-      <property role="TrG5h" value="isDefaultValue" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyi" id="6jBzJlxr2HO" role="1TKVEl">
-      <property role="IQ2nx" value="7270937307965565812" />
-      <property role="TrG5h" value="isInitialValue" />
-      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
-    </node>
-    <node concept="1TJgyj" id="6jBzJlxr2HP" role="1TKVEi">
-      <property role="IQ2ns" value="7270937307965565813" />
-      <property role="20kJfa" value="value" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
-    </node>
   </node>
 </model>
 
