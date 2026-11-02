@@ -12,6 +12,11 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## A `FlagCell` cannot lead an `OptionalCell`; `update_node ADD CHILD` does honour `position` (2026-10-31)
+
+- Putting `FlagCell`s (`default`, `:=`) as the first children of the collection inside an `OptionalCell` makes the grammarcells generator dismiss it: "Content of optional cell is not supported" (same family as the 2026-10-25 entry: the optional cell must lead with a constant). Rebuild fails with `generation completed with errors` on the editor model only. Fix: move the flag cells out, as siblings in front of the optional cell, with `alter_nodes MOVE_NODE_TO_PARENT` (`nodeReference`, `newParentRef`, `role`, `position`). A flag then renders whenever its property is true, independent of the optional cell's value.
+- Correction to the next entry: `update_node` kind `CHILD` operation `ADD` honours `position` (0-based; the result reports `index`). Only a parameter named `index` is ignored.
+
 ## `update_node` ADD ignores `index`; run configurations vanish on a language rebuild; verify component targets by name (2026-10-31)
 
 - `update_node` kind `CHILD` operation `ADD` always appends, an `index`/`position` parameter is silently ignored. To insert in the middle of a cell collection or statement list, patch the blueprint in a script and overwrite the whole root with `update_root_node_from_json` (root id is preserved); stray appended cells otherwise stay at the end.

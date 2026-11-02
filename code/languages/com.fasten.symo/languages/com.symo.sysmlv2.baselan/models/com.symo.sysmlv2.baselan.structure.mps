@@ -359,6 +359,16 @@
     <node concept="PrWs8" id="fNDJb5Cvws" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
+    <node concept="1TJgyi" id="6jBzJlwHen_" role="1TKVEl">
+      <property role="IQ2nx" value="7270937307953554917" />
+      <property role="TrG5h" value="isDefaultValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6jBzJlwHenF" role="1TKVEl">
+      <property role="IQ2nx" value="7270937307953554923" />
+      <property role="TrG5h" value="isInitialValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="PlHQZ" id="6coPuU2Bx1J">
     <property role="EcuMT" value="7140692429566251119" />
@@ -1582,6 +1592,16 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <property role="TrG5h" value="content" />
       <ref role="20lvS9" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="1TJgyi" id="6jBzJlwHenL" role="1TKVEl">
+      <property role="IQ2nx" value="7270937307953554929" />
+      <property role="TrG5h" value="isDefaultValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="6jBzJlwHenR" role="1TKVEl">
+      <property role="IQ2nx" value="7270937307953554935" />
+      <property role="TrG5h" value="isInitialValue" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>
   </node>
   <node concept="1TIwiD" id="fNDJb8FIGU">
