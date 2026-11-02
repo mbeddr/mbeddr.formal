@@ -567,6 +567,31 @@ Previously the importer rejected this ("part-specific element (part/port usage) 
   "Exception while initializing the editor"). Whether they were already red before this step has not been checked.
 - **Library probe: 41 of 58 files import** (was 38). Cleared: `TensorCalculations`, `VectorCalculations`, `SpatialItems`.
 
+### Step 15: case-kind internals: subject, actor, objective, return (2026-11-02)
+- **Structure:** `SysMLv2SubjectUsage` and `SysMLv2ActorUsage` (both extend `SysMLv2ReferenceUsage`), `SysMLv2ObjectiveUsage`
+  (extends `SysMLv2RequirementUsage`), each with editor, text generation and a `can be child` constraint. `SysMLv2ReturnParameter`
+  may now sit in a case definition and a case usage, not only in a calculation definition.
+- **Editors (ADR 0006):** `SysMLv2RequirementUsage` and the objective got the `default` and `:=` flags and the `= value` cell, with
+  matching text generation. Before, a value on a requirement usage had no editor cell, so the importer rejected it.
+- **Importer:** `importCaseMember` and `importRequirementMember` handle subject, actor, objective and return members in
+  case/analysis/verification/use-case bodies and subject/actor in requirement bodies. `visitRequirementUsage` now accepts a value
+  (state, calculation, constraint and the other behavior usages still reject it, `_130` `testValueOnBehaviorUsageRejected`).
+- **Still rejected:** `stakeholder`, framed concern, requirement constraint and verification members, and the result expression
+  member of a requirement body. `_130` `testRequirementSubjectRejected` became `testRequirementStakeholderRejected` because
+  `subject` is no longer rejected.
+- **Tests:** `_470_CaseKindMembersTest` (subject, actor, objective and return in a case definition and a case usage; subject and
+  actor in a requirement definition and usage; `default = x` on a requirement usage). Mutation-checked by changing the three
+  text generation keywords (`subject`, `objective`, `default`): all four tests failed, restored, green.
+- **Library probe: 44 of 58 files import** (was 41). Cleared: `Cases`, `AnalysisCases`, `UseCases`. `VerificationCases` moved on from
+  the requirement usage value to `return attribute verdict : VerdictKind = if ...`, an attribute usage as return parameter
+  (reported as "non-reference return parameter", same as `SampledFunctions` and `TradeStudies`): open.
+- **Sandbox:** `_200_case_kind_members` (subject/actor in a requirement definition and usage, `default = x` on a requirement usage,
+  subject/actor/objective/return in a case definition and usage). Model check clean except the accepted nullable-enum errors.
+- **Full run ("All Tests in Project"): 474 tests, only the two plantuml editor tests fail** (`deleteSubstructurePlainTextSpec_start_bracket`,
+  `_end_bracket`, "Exception while initializing the editor"; not touched by SysML work, not checked against an older state).
+  `_120_Connections_PrefixMetadata` is green again.
+- **Open:** no editor test for the new value cells.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations

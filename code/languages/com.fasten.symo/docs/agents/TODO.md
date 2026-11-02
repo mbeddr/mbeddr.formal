@@ -1352,3 +1352,23 @@ definition specialisation; `PartDefinition.specializes` still holds plain `ItemD
 
 **Systems Model Library / KerML (2026-10-21)**: see [system-model-library-plan.md](system-model-library-plan.md) for the prioritized
 plan (SysML-side gaps, `com.symo.kerml.baselan`, KerML importer, kernel library accessory models, re-layering SysML on KerML).
+
+## Audit all base-language editors against structure and textgen (opened 2026-11-02)
+
+The default editor must show every structure feature and read like the textgen output (proposed
+[ADR 0006](../../../../../docs/adr/0006-default-editors-of-base-languages-reflect-the-textgen.md)).
+Editors written before this rule are not checked. Known gaps found while adding `subject`, `actor` and
+`objective` (iteration 2):
+
+- `SysMLv2ObjectiveUsage` (copied from the requirement usage editor) shows `end`, direction, `abstract`
+  and `ref`, which the spec's objective syntax does not have. (The missing value cells were added to
+  requirement and objective usage in step 15.)
+- `isDerived`, `isConstant` and `declaredShortName` have no cell in several usage editors (seen in
+  `SysMLv2ReferenceUsage`, `SysMLv2PartUsage`); check all usages and definitions.
+- `SysMLv2ReturnParameter` has no cell for direction, `isAbstract`, `isEnd`, `isDefaultValue`,
+  `isInitialValue`.
+
+Plan: (1) list for every concept the structure features (`get_concept_details`) and the editor cells,
+and diff them; (2) diff editor keywords and order against the textgen; (3) fix the editors and add
+an editor or round-trip test where a fix changes behavior; (4) decide whether a linter in
+`repo_admin` can keep this checked. Do it after iteration 3, as a separate commit series.

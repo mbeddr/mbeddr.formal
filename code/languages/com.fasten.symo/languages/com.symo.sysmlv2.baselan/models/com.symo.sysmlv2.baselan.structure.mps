@@ -2064,5 +2064,23 @@
     <property role="3GE5qa" value="behavior" />
     <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
   </node>
+  <node concept="1TIwiD" id="6jBzJlBLx4b">
+    <property role="EcuMT" value="7270937308072120587" />
+    <property role="TrG5h" value="SysMLv2SubjectUsage" />
+    <property role="R4oN_" value="SysML v2 subject member: the subject of a case or requirement" />
+    <ref role="1TJDcQ" node="fNDJb6KWCz" resolve="SysMLv2ReferenceUsage" />
+  </node>
+  <node concept="1TIwiD" id="6jBzJlBLx4c">
+    <property role="EcuMT" value="7270937308072120588" />
+    <property role="TrG5h" value="SysMLv2ActorUsage" />
+    <property role="R4oN_" value="SysML v2 actor member: an actor of a case or requirement" />
+    <ref role="1TJDcQ" node="fNDJb6KWCz" resolve="SysMLv2ReferenceUsage" />
+  </node>
+  <node concept="1TIwiD" id="6jBzJlBLx4d">
+    <property role="EcuMT" value="7270937308072120589" />
+    <property role="TrG5h" value="SysMLv2ObjectiveUsage" />
+    <property role="R4oN_" value="SysML v2 objective member: the objective requirement of a case" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
+  </node>
 </model>
 

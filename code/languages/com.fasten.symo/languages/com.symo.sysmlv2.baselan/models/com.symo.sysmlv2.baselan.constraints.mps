@@ -178,7 +178,7 @@
   <node concept="1M2fIO" id="6coPuU3aqOE">
     <property role="3GE5qa" value="part.base" />
     <property role="TrG5h" value="ISysMLv2StructuralUsage_Constraints" />
-    <ref role="1M2myG" to="5rf1:6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
+    <ref role="1M2myG" to="5rf1:6coPuU39G2r" resolve="ISysMLv2StructuralUsage" />
     <node concept="9S07l" id="6coPuU3aqOF" role="9Vyp8">
       <node concept="3clFbS" id="6coPuU3aqOH" role="2VODD2">
         <node concept="3clFbF" id="6coPuU3bujT" role="3cqZAp">
@@ -1004,7 +1004,7 @@
     <property role="3GE5qa" value="base" />
     <ref role="1M2myG" to="5rf1:fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
     <node concept="1N5Pfh" id="fNDJb6O7Bu" role="1Mr941">
-      <ref role="1N5Vy1" to="5rf1:fNDJb6KWC_" />
+      <ref role="1N5Vy1" to="5rf1:fNDJb6KWC_" resolve="definition" />
       <node concept="3dgokm" id="fNDJb6O7Bv" role="1N6uqs">
         <node concept="3clFbS" id="fNDJb6O7Bx" role="2VODD2">
           <node concept="3clFbF" id="fNDJb6O7By" role="3cqZAp">
@@ -1069,7 +1069,7 @@
     <property role="TrG5h" value="SysMLv2CalculationDefinitionRef_Constraints" />
     <ref role="1M2myG" to="5rf1:5wFVtxsPPNx" resolve="SysMLv2CalculationDefinitionRef" />
     <node concept="1N5Pfh" id="5wFVtxsUzyl" role="1Mr941">
-      <ref role="1N5Vy1" to="5rf1:5wFVtxsPPN_" />
+      <ref role="1N5Vy1" to="5rf1:5wFVtxsPPN_" resolve="definition" />
       <node concept="3dgokm" id="5wFVtxsUzym" role="1N6uqs">
         <node concept="3clFbS" id="5wFVtxsUzyo" role="2VODD2">
           <node concept="3clFbF" id="5wFVtxsUzyp" role="3cqZAp">
@@ -1117,11 +1117,158 @@
     <node concept="9S07l" id="5wFVtxsUzPe" role="9Vyp8">
       <node concept="3clFbS" id="5wFVtxsUzPg" role="2VODD2">
         <node concept="3clFbF" id="5wFVtxsUzPh" role="3cqZAp">
-          <node concept="2OqwBi" id="5wFVtxsUzPj" role="3clFbG">
-            <node concept="nLn13" id="5wFVtxsUzPm" role="2Oq$k0" />
-            <node concept="1mIQ4w" id="5wFVtxsUzPn" role="2OqNvi">
-              <node concept="chp4Y" id="5wFVtxsUzPp" role="cj9EA">
-                <ref role="cht4Q" to="5rf1:5wFVtxsPPNy" resolve="SysMLv2CalculationDefinition" />
+          <node concept="22lmx$" id="3WfSgMMbGCB" role="3clFbG">
+            <node concept="22lmx$" id="3WfSgMMbGCC" role="3uHU7B">
+              <node concept="2OqwBi" id="3WfSgMMbGCD" role="3uHU7B">
+                <node concept="nLn13" id="3WfSgMMbGCE" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="3WfSgMMbGCF" role="2OqNvi">
+                  <node concept="chp4Y" id="3WfSgMMbGCG" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:5wFVtxsPPNy" resolve="SysMLv2CalculationDefinition" />
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="3WfSgMMbGCH" role="3uHU7w">
+                <node concept="nLn13" id="3WfSgMMbGCI" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="3WfSgMMbGCJ" role="2OqNvi">
+                  <node concept="chp4Y" id="3WfSgMMbGCK" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:5wFVtxuc50s" resolve="SysMLv2CaseDefinition" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="3WfSgMMbGCL" role="3uHU7w">
+              <node concept="nLn13" id="3WfSgMMbGCM" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="3WfSgMMbGCN" role="2OqNvi">
+                <node concept="chp4Y" id="3WfSgMMbGCO" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6jBzJlBLxyR">
+    <property role="TrG5h" value="SysMLv2SubjectUsage_Constraints" />
+    <property role="3GE5qa" value="cases" />
+    <ref role="1M2myG" to="5rf1:6jBzJlBLx4b" resolve="SysMLv2SubjectUsage" />
+    <node concept="9S07l" id="6jBzJlBLxyS" role="9Vyp8">
+      <node concept="3clFbS" id="6jBzJlBLxyU" role="2VODD2">
+        <node concept="3clFbF" id="6jBzJlBLxyV" role="3cqZAp">
+          <node concept="22lmx$" id="6jBzJlBLxyX" role="3clFbG">
+            <node concept="22lmx$" id="6jBzJlBLxz0" role="3uHU7B">
+              <node concept="22lmx$" id="6jBzJlBLxz3" role="3uHU7B">
+                <node concept="2OqwBi" id="6jBzJlBLxz6" role="3uHU7B">
+                  <node concept="nLn13" id="6jBzJlBLxz9" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="6jBzJlBLxza" role="2OqNvi">
+                    <node concept="chp4Y" id="6jBzJlBLxzc" role="cj9EA">
+                      <ref role="cht4Q" to="5rf1:5wFVtxuc50s" resolve="SysMLv2CaseDefinition" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6jBzJlBLxzd" role="3uHU7w">
+                  <node concept="nLn13" id="6jBzJlBLxzg" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="6jBzJlBLxzh" role="2OqNvi">
+                    <node concept="chp4Y" id="6jBzJlBLxzj" role="cj9EA">
+                      <ref role="cht4Q" to="5rf1:5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6jBzJlBLxzk" role="3uHU7w">
+                <node concept="nLn13" id="6jBzJlBLxzn" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="6jBzJlBLxzo" role="2OqNvi">
+                  <node concept="chp4Y" id="6jBzJlBLxzq" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:5wFVtxuc503" resolve="SysMLv2RequirementDefinition" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6jBzJlBLxzr" role="3uHU7w">
+              <node concept="nLn13" id="6jBzJlBLxzu" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="6jBzJlBLxzv" role="2OqNvi">
+                <node concept="chp4Y" id="6jBzJlBLxzx" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6jBzJlBLxzB">
+    <property role="TrG5h" value="SysMLv2ActorUsage_Constraints" />
+    <property role="3GE5qa" value="cases" />
+    <ref role="1M2myG" to="5rf1:6jBzJlBLx4c" resolve="SysMLv2ActorUsage" />
+    <node concept="9S07l" id="6jBzJlBLxzC" role="9Vyp8">
+      <node concept="3clFbS" id="6jBzJlBLxzE" role="2VODD2">
+        <node concept="3clFbF" id="6jBzJlBLxzF" role="3cqZAp">
+          <node concept="22lmx$" id="6jBzJlBLxzH" role="3clFbG">
+            <node concept="22lmx$" id="6jBzJlBLxzK" role="3uHU7B">
+              <node concept="22lmx$" id="6jBzJlBLxzN" role="3uHU7B">
+                <node concept="2OqwBi" id="6jBzJlBLxzQ" role="3uHU7B">
+                  <node concept="nLn13" id="6jBzJlBLxzT" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="6jBzJlBLxzU" role="2OqNvi">
+                    <node concept="chp4Y" id="6jBzJlBLxzW" role="cj9EA">
+                      <ref role="cht4Q" to="5rf1:5wFVtxuc50s" resolve="SysMLv2CaseDefinition" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="6jBzJlBLxzX" role="3uHU7w">
+                  <node concept="nLn13" id="6jBzJlBLx$0" role="2Oq$k0" />
+                  <node concept="1mIQ4w" id="6jBzJlBLx$1" role="2OqNvi">
+                    <node concept="chp4Y" id="6jBzJlBLx$3" role="cj9EA">
+                      <ref role="cht4Q" to="5rf1:5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="2OqwBi" id="6jBzJlBLx$4" role="3uHU7w">
+                <node concept="nLn13" id="6jBzJlBLx$7" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="6jBzJlBLx$8" role="2OqNvi">
+                  <node concept="chp4Y" id="6jBzJlBLx$a" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:5wFVtxuc503" resolve="SysMLv2RequirementDefinition" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6jBzJlBLx$b" role="3uHU7w">
+              <node concept="nLn13" id="6jBzJlBLx$e" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="6jBzJlBLx$f" role="2OqNvi">
+                <node concept="chp4Y" id="6jBzJlBLx$h" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="6jBzJlBLx$n">
+    <property role="TrG5h" value="SysMLv2ObjectiveUsage_Constraints" />
+    <property role="3GE5qa" value="cases" />
+    <ref role="1M2myG" to="5rf1:6jBzJlBLx4d" resolve="SysMLv2ObjectiveUsage" />
+    <node concept="9S07l" id="6jBzJlBLx$o" role="9Vyp8">
+      <node concept="3clFbS" id="6jBzJlBLx$q" role="2VODD2">
+        <node concept="3clFbF" id="6jBzJlBLx$r" role="3cqZAp">
+          <node concept="22lmx$" id="6jBzJlBLx$t" role="3clFbG">
+            <node concept="2OqwBi" id="6jBzJlBLx$w" role="3uHU7B">
+              <node concept="nLn13" id="6jBzJlBLx$z" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="6jBzJlBLx$$" role="2OqNvi">
+                <node concept="chp4Y" id="6jBzJlBLx$A" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:5wFVtxuc50s" resolve="SysMLv2CaseDefinition" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6jBzJlBLx$B" role="3uHU7w">
+              <node concept="nLn13" id="6jBzJlBLx$E" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="6jBzJlBLx$F" role="2OqNvi">
+                <node concept="chp4Y" id="6jBzJlBLx$H" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
+                </node>
               </node>
             </node>
           </node>
