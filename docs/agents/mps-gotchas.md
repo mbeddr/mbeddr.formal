@@ -12,6 +12,12 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Concept rename = `update_node SET PROPERTY name`; nested `||` needs parentheses; JUnit run configs vanish after Make (2026-11-02)
+
+- `alter_structure` has no rename for concepts. `update_node SET PROPERTY` on the concept's `name` works, and references (stored by node id) follow. The `<Concept>_Constraints` root's own `name` is a separate property and must be renamed too.
+- Replacing the right operand of an `OrExpression` with another `OrExpression` makes the checker report "Bad priority of operations" on the inner node, although the code is fine. Wrap it in a `ParenthesesExpression` (`SET CHILD` with a `childJson` whose `expression` role holds the Or). Model-check the root after every such edit; the error does not surface in tests or in the build.
+- JUnit run configurations created with `create_run_configuration` can disappear after a language/importer Make. Recreate and run immediately; the config name equals the test root's name.
+
 ## Cloned test methods keep the template's body; a mutation check that "passes" may be testing nothing (2026-11-02)
 
 - A test method cloned from a template (the `rej_tpl` / `tpl` blueprint technique) keeps every literal of the template until each one is set: the input string, the expected message, the label and the `fail:` message. A new test whose literals were never replaced still passes (it re-tests the template case), and it also still passes under the mutation it is meant to catch. Symptom: the mutation check is green when it should be red.

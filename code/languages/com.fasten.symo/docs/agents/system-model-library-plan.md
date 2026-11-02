@@ -508,12 +508,12 @@ Tests: `_420_UsageFeaturePrefixTest` (derived/constant on item and attribute inc
 
 The library's `Items.sysml` and `SpatialItems.sysml` put `part ... { }` inside `item def`.
 Previously the importer rejected this ("part-specific element (part/port usage) in item definition body") and the
-`ICanBelongOnlyToSysMLv2PartOwner` constraint refused the placement.
+`ISysMLv2StructuralUsage` constraint refused the placement.
 
-- **Language:** the `can be child` constraint of `ICanBelongOnlyToSysMLv2PartOwner` now also accepts
-  `SysMLv2ItemDefinition` as parent. The marker's name is now misleading (it covers part, port, binding, connection,
-  flow and interface usages); not renamed, `conceptShortDescription` updated.
-- **Importer:** the `if (childNode.isInstanceOf(ICanBelongOnlyToSysMLv2PartOwner)) throw ...` in `visitItemDefinition` is removed.
+- **Language:** the `can be child` constraint of `ISysMLv2StructuralUsage` now also accepts
+  `SysMLv2ItemDefinition` as parent. The interface was renamed from `ICanBelongOnlyToSysMLv2PartOwner` to `ISysMLv2StructuralUsage`
+  (it covers part, port, binding, connection, flow and interface usages); `conceptShortDescription` updated.
+- **Importer:** the `if (childNode.isInstanceOf(ISysMLv2StructuralUsage)) throw ...` in `visitItemDefinition` is removed.
   Importer-created nodes bypass constraints, so the constraint matters only for the editor and model checking.
 - **Tests:** `_430_ItemDefinitionBodyStructureTest` (run config `_430_ItemDefinitionBodyStructureTest`) round-trips
   part (multiplicity, typing, subsetting, abstract, nested body), port and attribute usages, and a connection with `connect`,

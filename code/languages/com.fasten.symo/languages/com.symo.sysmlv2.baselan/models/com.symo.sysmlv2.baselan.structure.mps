@@ -686,7 +686,7 @@
   </node>
   <node concept="PlHQZ" id="6coPuU39G2r">
     <property role="EcuMT" value="7140692429575209115" />
-    <property role="TrG5h" value="ICanBelongOnlyToSysMLv2PartOwner" />
+    <property role="TrG5h" value="ISysMLv2StructuralUsage" />
     <property role="R4oN_" value="structural body element (part, port, binding, connection, flow, interface usage): may be owned by part, port and item definitions, part and port usages, packages and files" />
     <property role="3GE5qa" value="part.base" />
   </node>

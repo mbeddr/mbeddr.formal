@@ -177,7 +177,7 @@
   </registry>
   <node concept="1M2fIO" id="6coPuU3aqOE">
     <property role="3GE5qa" value="part.base" />
-    <property role="TrG5h" value="ICanBelongOnlyToSysMLv2PartOwner_Constraints" />
+    <property role="TrG5h" value="ISysMLv2StructuralUsage_Constraints" />
     <ref role="1M2myG" to="5rf1:6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
     <node concept="9S07l" id="6coPuU3aqOF" role="9Vyp8">
       <node concept="3clFbS" id="6coPuU3aqOH" role="2VODD2">
@@ -233,20 +233,22 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="22lmx$" id="6jBzJl_RHeX" role="3uHU7w">
-                          <node concept="2OqwBi" id="6jBzJl_RHf0" role="3uHU7B">
-                            <node concept="nLn13" id="6jBzJl_RHf3" role="2Oq$k0" />
-                            <node concept="1mIQ4w" id="6jBzJl_RHf4" role="2OqNvi">
-                              <node concept="chp4Y" id="6jBzJl_RHf6" role="cj9EA">
-                                <ref role="cht4Q" to="5rf1:7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
+                        <node concept="1eOMI4" id="6jBzJlAGYu5" role="3uHU7w">
+                          <node concept="22lmx$" id="6jBzJlAGYu7" role="1eOMHV">
+                            <node concept="2OqwBi" id="6jBzJlAGYua" role="3uHU7B">
+                              <node concept="nLn13" id="6jBzJlAGYud" role="2Oq$k0" />
+                              <node concept="1mIQ4w" id="6jBzJlAGYue" role="2OqNvi">
+                                <node concept="chp4Y" id="6jBzJlAGYug" role="cj9EA">
+                                  <ref role="cht4Q" to="5rf1:7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
+                                </node>
                               </node>
                             </node>
-                          </node>
-                          <node concept="2OqwBi" id="6jBzJl_RHf7" role="3uHU7w">
-                            <node concept="nLn13" id="6jBzJl_RHfa" role="2Oq$k0" />
-                            <node concept="1mIQ4w" id="6jBzJl_RHfb" role="2OqNvi">
-                              <node concept="chp4Y" id="6jBzJl_RHfd" role="cj9EA">
-                                <ref role="cht4Q" to="5rf1:6coPuU36dCb" />
+                            <node concept="2OqwBi" id="6jBzJlAGYuh" role="3uHU7w">
+                              <node concept="nLn13" id="6jBzJlAGYuk" role="2Oq$k0" />
+                              <node concept="1mIQ4w" id="6jBzJlAGYul" role="2OqNvi">
+                                <node concept="chp4Y" id="6jBzJlAGYun" role="cj9EA">
+                                  <ref role="cht4Q" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
+                                </node>
                               </node>
                             </node>
                           </node>
