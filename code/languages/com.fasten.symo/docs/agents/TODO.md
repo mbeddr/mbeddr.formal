@@ -1375,3 +1375,6 @@ an editor or round-trip test where a fix changes behavior; (4) decide whether a 
 Iteration 3 (step 16) is done as of 2026-11-03, so this audit is next. Also include the five new usage editors
 (`ViewUsage`, `RenderingUsage`, `AllocationUsage`, `MessageUsage`, `EventOccurrenceUsage`): they were cloned from the
 requirement usage editor and may show cells the spec syntax does not have (`end`, direction, `abstract`, `ref`).
+
+Audit run on 2026-11-03: see [editor-audit-sysmlv2.md](editor-audit-sysmlv2.md). Only what the importer sets
+was fixed (`SysMLv2ConnectionUsage` `multiplicity`), and the cells the grammar has no syntax for were removed from nine usage editors and textgens. The remaining items there are open decisions.
