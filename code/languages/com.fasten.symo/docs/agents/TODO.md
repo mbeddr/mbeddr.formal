@@ -1372,3 +1372,6 @@ Plan: (1) list for every concept the structure features (`get_concept_details`) 
 and diff them; (2) diff editor keywords and order against the textgen; (3) fix the editors and add
 an editor or round-trip test where a fix changes behavior; (4) decide whether a linter in
 `repo_admin` can keep this checked. Do it after iteration 3, as a separate commit series.
+Iteration 3 (step 16) is done as of 2026-11-03, so this audit is next. Also include the five new usage editors
+(`ViewUsage`, `RenderingUsage`, `AllocationUsage`, `MessageUsage`, `EventOccurrenceUsage`): they were cloned from the
+requirement usage editor and may show cells the spec syntax does not have (`end`, direction, `abstract`, `ref`).

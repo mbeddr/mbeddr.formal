@@ -208,7 +208,7 @@
     <property role="3GE5qa" value="part" />
     <ref role="1TJDcQ" node="6coPuU36dCd" resolve="SysMLv2ItemUsage" />
     <node concept="PrWs8" id="6coPuU39G2P" role="PzmwI">
-      <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
+      <ref role="PrY4T" node="6coPuU39G2r" resolve="ISysMLv2StructuralUsage" />
     </node>
     <node concept="PrWs8" id="fNDJb49kpX" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
@@ -524,7 +524,7 @@
       <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
     <node concept="PrWs8" id="6coPuU39G2X" role="PzmwI">
-      <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
+      <ref role="PrY4T" node="6coPuU39G2r" resolve="ISysMLv2StructuralUsage" />
     </node>
     <node concept="1TJgyj" id="3MUZSeG2oix" role="1TKVEi">
       <property role="IQ2ns" value="4376090928935961761" />
@@ -1222,7 +1222,7 @@
       <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
     <node concept="PrWs8" id="3MUZSeGZXvB" role="PzmwI">
-      <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
+      <ref role="PrY4T" node="6coPuU39G2r" resolve="ISysMLv2StructuralUsage" />
     </node>
     <node concept="PrWs8" id="3MUZSeHMA4J" role="PzmwI">
       <ref role="PrY4T" node="3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
@@ -1291,7 +1291,7 @@
       <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
     <node concept="PrWs8" id="3MUZSeHMA4A" role="PzmwI">
-      <ref role="PrY4T" node="6coPuU39G2r" resolve="ICanBelongOnlyToSysMLv2PartOwner" />
+      <ref role="PrY4T" node="6coPuU39G2r" resolve="ISysMLv2StructuralUsage" />
     </node>
     <node concept="PrWs8" id="3MUZSeHMA4D" role="PzmwI">
       <ref role="PrY4T" node="3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
@@ -1508,7 +1508,7 @@
       <property role="20kJfa" value="content" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7PctyxXA185" />
+      <ref role="20lvS9" node="7PctyxXA185" resolve="ISysMLv2AnnotationContent" />
     </node>
   </node>
   <node concept="1TIwiD" id="6ohPCO1sp61">
@@ -1822,7 +1822,7 @@
     <property role="R4oN_" value="concern def" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2ConcernDefinition" />
-    <ref role="1TJDcQ" node="5wFVtxuc503" />
+    <ref role="1TJDcQ" node="5wFVtxuc503" resolve="SysMLv2RequirementDefinition" />
   </node>
   <node concept="1TIwiD" id="5wFVtxuc50s">
     <property role="EcuMT" value="6353433212885159964" />
@@ -1838,7 +1838,7 @@
     <property role="R4oN_" value="analysis case definition: analysis def" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2AnalysisCaseDefinition" />
-    <ref role="1TJDcQ" node="5wFVtxuc50s" />
+    <ref role="1TJDcQ" node="5wFVtxuc50s" resolve="SysMLv2CaseDefinition" />
   </node>
   <node concept="1TIwiD" id="5wFVtxuc50C">
     <property role="EcuMT" value="6353433212885159976" />
@@ -1846,7 +1846,7 @@
     <property role="R4oN_" value="verification case definition: verification def" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2VerificationCaseDefinition" />
-    <ref role="1TJDcQ" node="5wFVtxuc50s" />
+    <ref role="1TJDcQ" node="5wFVtxuc50s" resolve="SysMLv2CaseDefinition" />
   </node>
   <node concept="1TIwiD" id="5wFVtxuc50I">
     <property role="EcuMT" value="6353433212885159982" />
@@ -1854,7 +1854,7 @@
     <property role="R4oN_" value="use case definition: use case def" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2UseCaseDefinition" />
-    <ref role="1TJDcQ" node="5wFVtxuc50s" />
+    <ref role="1TJDcQ" node="5wFVtxuc50s" resolve="SysMLv2CaseDefinition" />
   </node>
   <node concept="1TIwiD" id="5wFVtxuc50O">
     <property role="EcuMT" value="6353433212885159988" />
@@ -1870,7 +1870,7 @@
     <property role="R4oN_" value="viewpoint def" />
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2ViewpointDefinition" />
-    <ref role="1TJDcQ" node="5wFVtxuc503" />
+    <ref role="1TJDcQ" node="5wFVtxuc503" resolve="SysMLv2RequirementDefinition" />
   </node>
   <node concept="1TIwiD" id="5wFVtxuc510">
     <property role="EcuMT" value="6353433212885160000" />
@@ -2081,6 +2081,41 @@
     <property role="TrG5h" value="SysMLv2ObjectiveUsage" />
     <property role="R4oN_" value="SysML v2 objective member: the objective requirement of a case" />
     <ref role="1TJDcQ" node="5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
+  </node>
+  <node concept="1TIwiD" id="3WfSgMNgLRx">
+    <property role="EcuMT" value="4544097993703497185" />
+    <property role="TrG5h" value="SysMLv2ViewUsage" />
+    <property role="R4oN_" value="SysML v2 ViewUsage (8.3.26) with a plain body" />
+    <property role="34LRSv" value="view" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="3WfSgMNgLRy">
+    <property role="EcuMT" value="4544097993703497186" />
+    <property role="TrG5h" value="SysMLv2RenderingUsage" />
+    <property role="R4oN_" value="SysML v2 RenderingUsage (8.3.26)" />
+    <property role="34LRSv" value="rendering" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="3WfSgMNgLRz">
+    <property role="EcuMT" value="4544097993703497187" />
+    <property role="TrG5h" value="SysMLv2AllocationUsage" />
+    <property role="R4oN_" value="SysML v2 AllocationUsage (8.3.17), declaration form without allocate part" />
+    <property role="34LRSv" value="allocation" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="3WfSgMNgLR$">
+    <property role="EcuMT" value="4544097993703497188" />
+    <property role="TrG5h" value="SysMLv2MessageUsage" />
+    <property role="R4oN_" value="SysML v2 message, declaration form without from/to" />
+    <property role="34LRSv" value="message" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+  </node>
+  <node concept="1TIwiD" id="3WfSgMNgLR_">
+    <property role="EcuMT" value="4544097993703497189" />
+    <property role="TrG5h" value="SysMLv2EventOccurrenceUsage" />
+    <property role="R4oN_" value="SysML v2 EventOccurrenceUsage (8.3.9), declaration form" />
+    <property role="34LRSv" value="event occurrence" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
   </node>
 </model>
 

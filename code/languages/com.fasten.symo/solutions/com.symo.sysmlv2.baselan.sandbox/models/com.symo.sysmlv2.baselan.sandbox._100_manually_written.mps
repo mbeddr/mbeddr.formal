@@ -71,6 +71,11 @@
         <child id="7140692429570186950" name="specializes" index="3xKGGC" />
       </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
+      <concept id="4544097993703497188" name="com.symo.sysmlv2.baselan.structure.SysMLv2MessageUsage" flags="ng" index="2cjfNC" />
+      <concept id="4544097993703497189" name="com.symo.sysmlv2.baselan.structure.SysMLv2EventOccurrenceUsage" flags="ng" index="2cjfND" />
+      <concept id="4544097993703497185" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewUsage" flags="ng" index="2cjfNH" />
+      <concept id="4544097993703497186" name="com.symo.sysmlv2.baselan.structure.SysMLv2RenderingUsage" flags="ng" index="2cjfNI" />
+      <concept id="4544097993703497187" name="com.symo.sysmlv2.baselan.structure.SysMLv2AllocationUsage" flags="ng" index="2cjfNJ" />
       <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz">
         <property id="4376090928952104929" name="withKeyword" index="2ghixy" />
       </concept>
@@ -2132,6 +2137,54 @@
           <node concept="35c6Ng" id="3WfSgMNf2Xu" role="35c6Nl">
             <ref role="35c6Nn" node="3WfSgMNf2WZ" resolve="Thing" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="7O9Ql6voySm">
+    <property role="TrG5h" value="_210_usage_kinds" />
+    <node concept="3Z9vzX" id="7O9Ql6voySn" role="2h0jOs">
+      <property role="TrG5h" value="UsageKinds" />
+      <node concept="66VRG" id="7O9Ql6voySo" role="3Z9vGx">
+        <property role="TrG5h" value="VD" />
+      </node>
+      <node concept="66VQo" id="7O9Ql6voySp" role="3Z9vGx">
+        <property role="TrG5h" value="RD" />
+      </node>
+      <node concept="66VQu" id="7O9Ql6voySq" role="3Z9vGx">
+        <property role="TrG5h" value="AD" />
+      </node>
+      <node concept="2cjfNH" id="7O9Ql6voySr" role="3Z9vGx">
+        <property role="TrG5h" value="v" />
+        <node concept="35c6Ng" id="7O9Ql6voySs" role="SPUDp">
+          <ref role="35c6Nn" node="7O9Ql6voySo" resolve="VD" />
+        </node>
+        <node concept="8GF0z" id="7O9Ql6voySt" role="SPUDq">
+          <property role="TrG5h" value="p" />
+        </node>
+      </node>
+      <node concept="2cjfNI" id="7O9Ql6voySu" role="3Z9vGx">
+        <property role="TrG5h" value="r" />
+        <node concept="35c6Ng" id="7O9Ql6voySv" role="SPUDp">
+          <ref role="35c6Nn" node="7O9Ql6voySp" resolve="RD" />
+        </node>
+      </node>
+      <node concept="2cjfNJ" id="7O9Ql6voySw" role="3Z9vGx">
+        <property role="TrG5h" value="a" />
+        <node concept="35c6Ng" id="7O9Ql6voySx" role="SPUDp">
+          <ref role="35c6Nn" node="7O9Ql6voySq" resolve="AD" />
+        </node>
+        <node concept="8GF0z" id="7O9Ql6voySy" role="SPUDq">
+          <property role="TrG5h" value="q" />
+        </node>
+      </node>
+      <node concept="2cjfNC" id="7O9Ql6voySz" role="3Z9vGx">
+        <property role="TrG5h" value="m" />
+      </node>
+      <node concept="2cjfND" id="7O9Ql6voyS$" role="3Z9vGx">
+        <property role="TrG5h" value="e" />
+        <node concept="8GF0z" id="7O9Ql6voyS_" role="SPUDq">
+          <property role="TrG5h" value="s" />
         </node>
       </node>
     </node>

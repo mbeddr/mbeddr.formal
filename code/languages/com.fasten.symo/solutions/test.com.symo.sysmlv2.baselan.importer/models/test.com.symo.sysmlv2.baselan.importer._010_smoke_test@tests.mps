@@ -25488,5 +25488,665 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="3WfSgMO9VNp">
+    <property role="TrG5h" value="_480_UsageKindsTest" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <node concept="1LZb2c" id="3WfSgMOamm9" role="1SL9yI">
+      <property role="TrG5h" value="testUsageKindsRoundtrip" />
+      <node concept="3cqZAl" id="3WfSgMOammb" role="3clF45" />
+      <node concept="3clFbS" id="3WfSgMOammc" role="3clF47">
+        <node concept="3cpWs8" id="3WfSgMOammd" role="3cqZAp">
+          <node concept="3cpWsn" id="3WfSgMOamme" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="3uibUv" id="3WfSgMOammf" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOammg" role="3cqZAp">
+          <node concept="37vLTI" id="3WfSgMOammh" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOammi" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOammj" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOammk" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamml" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOammm" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOammn" role="37vLTx">
+              <property role="Xl_RC" value="  view def VD {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOammo" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOammp" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOammq" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOammr" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamms" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOammt" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOammu" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOammv" role="37vLTx">
+              <property role="Xl_RC" value="  rendering def RD {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOammw" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOammx" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOammy" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOammz" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamm$" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamm_" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOammA" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOammB" role="37vLTx">
+              <property role="Xl_RC" value="  allocation def AD {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOammC" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOammD" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOammE" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOammF" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOammG" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOammH" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOammI" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOammJ" role="37vLTx">
+              <property role="Xl_RC" value="  view v : VD {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOammK" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOammL" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOammM" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOammN" role="37vLTx">
+              <property role="Xl_RC" value="    part p;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOammO" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOammP" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOammQ" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOammR" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOammS" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOammT" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOammU" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOammV" role="37vLTx">
+              <property role="Xl_RC" value="  rendering r : RD;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOammW" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOammX" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOammY" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOammZ" role="37vLTx">
+              <property role="Xl_RC" value="  allocation a : AD {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamn0" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamn1" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamn2" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamn3" role="37vLTx">
+              <property role="Xl_RC" value="    part q;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamn4" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamn5" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamn6" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamn7" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamn8" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamn9" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamna" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamnb" role="37vLTx">
+              <property role="Xl_RC" value="  message m;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamnc" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamnd" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamne" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamnf" role="37vLTx">
+              <property role="Xl_RC" value="  event occurrence e {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamng" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamnh" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamni" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamnj" role="37vLTx">
+              <property role="Xl_RC" value="    part s;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamnk" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamnl" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamnm" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamnn" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamno" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamnp" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamnq" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamnr" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3WfSgMOamns" role="3cqZAp">
+          <node concept="3cpWsn" id="3WfSgMOamnt" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="3WfSgMOamnu" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="3WfSgMOamnv" role="37wK5m">
+                <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="3WfSgMOamnw" role="37wK5m">
+                <property role="Xl_RC" value="UsageKinds" />
+              </node>
+              <node concept="1jxXqW" id="3WfSgMOamnx" role="37wK5m" />
+            </node>
+            <node concept="3uibUv" id="3WfSgMOamny" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="3WfSgMOamnz" role="3cqZAp">
+          <node concept="37vLTw" id="3WfSgMOamn$" role="3tpDZB">
+            <ref role="3cqZAo" node="3WfSgMOamme" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="3WfSgMOamn_" role="3tpDZA">
+            <ref role="3cqZAo" node="3WfSgMOamnt" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3WfSgMOamnA" role="1SL9yI">
+      <property role="TrG5h" value="testUsageKindsDeclarationForms" />
+      <node concept="3cqZAl" id="3WfSgMOamnC" role="3clF45" />
+      <node concept="3clFbS" id="3WfSgMOamnD" role="3clF47">
+        <node concept="3cpWs8" id="3WfSgMOamnE" role="3cqZAp">
+          <node concept="3cpWsn" id="3WfSgMOamnF" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="content" />
+            <node concept="3uibUv" id="3WfSgMOamnG" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamnH" role="3cqZAp">
+          <node concept="37vLTI" id="3WfSgMOamnI" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamnJ" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamnF" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamnK" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamnL" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamnM" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamnN" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamnF" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamnO" role="37vLTx">
+              <property role="Xl_RC" value="  abstract view views[0..*] nonunique :&gt; parts;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamnP" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamnQ" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamnR" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamnF" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamnS" role="37vLTx">
+              <property role="Xl_RC" value="  rendering renderings[0..*] nonunique :&gt; parts;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamnT" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamnU" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamnV" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamnF" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamnW" role="37vLTx">
+              <property role="Xl_RC" value="  rendering r[0..*] :&gt;&gt; sub = columnView.viewRendering;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamnX" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamnY" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamnZ" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamnF" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamo0" role="37vLTx">
+              <property role="Xl_RC" value="  allocation allocations[0..*] nonunique :&gt; binaryConnections;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamo1" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamo2" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamo3" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamnF" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamo4" role="37vLTx">
+              <property role="Xl_RC" value="  event occurrence zeroCrossingEvents[0..*] : ZeroCrossingEventDef;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamo5" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamo6" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamo7" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamnF" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamo8" role="37vLTx">
+              <property role="Xl_RC" value="  view w default = x;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="3WfSgMOamo9" role="3cqZAp">
+          <node concept="d57v9" id="3WfSgMOamoa" role="3clFbG">
+            <node concept="37vLTw" id="3WfSgMOamob" role="37vLTJ">
+              <ref role="3cqZAo" node="3WfSgMOamnF" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="3WfSgMOamoc" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="3WfSgMOamod" role="3cqZAp">
+          <node concept="3cpWsn" id="3WfSgMOamoe" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <property role="OYnhT" value="local variable" />
+            <property role="2Lvdk3" value="generateText" />
+            <node concept="2YIFZM" id="3WfSgMOamof" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="3WfSgMOamog" role="37wK5m">
+                <ref role="3cqZAo" node="3WfSgMOamnF" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="3WfSgMOamoh" role="37wK5m">
+                <property role="Xl_RC" value="UsageKindForms" />
+              </node>
+              <node concept="1jxXqW" id="3WfSgMOamoi" role="37wK5m" />
+            </node>
+            <node concept="3uibUv" id="3WfSgMOamoj" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="3WfSgMOamok" role="3cqZAp">
+          <node concept="37vLTw" id="3WfSgMOamol" role="3tpDZB">
+            <ref role="3cqZAo" node="3WfSgMOamnF" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="3WfSgMOamom" role="3tpDZA">
+            <ref role="3cqZAo" node="3WfSgMOamoe" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="7O9Ql6vnrOP">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_481_UsageKindRejectionsTest" />
+    <node concept="1LZb2c" id="3WfSgMOamon" role="1SL9yI">
+      <property role="TrG5h" value="testViewFilterRejected" />
+      <node concept="3cqZAl" id="3WfSgMOamop" role="3clF45" />
+      <node concept="3clFbS" id="3WfSgMOamoq" role="3clF47">
+        <node concept="3J1_TO" id="3WfSgMOamor" role="3cqZAp">
+          <node concept="3clFbS" id="3WfSgMOamos" role="1zxBo7">
+            <node concept="3cpWs8" id="3WfSgMOamot" role="3cqZAp">
+              <node concept="3cpWsn" id="3WfSgMOamou" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <property role="OYnhT" value="local variable" />
+                <property role="2Lvdk3" value="tmp" />
+                <node concept="2YIFZM" id="3WfSgMOamov" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="3WfSgMOamow" role="37wK5m">
+                    <property role="Xl_RC" value="package P { view v { filter @Safety; } }" />
+                  </node>
+                  <node concept="Xl_RD" id="3WfSgMOamox" role="37wK5m">
+                    <property role="Xl_RC" value="ViewFilter" />
+                  </node>
+                  <node concept="1jxXqW" id="3WfSgMOamoy" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="3WfSgMOamoz" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3xETmq" id="3WfSgMOamo$" role="3cqZAp">
+              <node concept="3_1$Yv" id="3WfSgMOamo_" role="3_9lra">
+                <node concept="Xl_RD" id="3WfSgMOamoA" role="3_1BAH">
+                  <property role="Xl_RC" value="ViewFilter expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3WfSgMOamoB" role="3cqZAp">
+              <node concept="2YIFZM" id="3WfSgMOamoC" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="3WfSgMOamoD" role="37wK5m">
+                  <ref role="3cqZAo" node="3WfSgMOamou" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="3WfSgMOamoE" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="3WfSgMOamoF" role="1zxBo5">
+            <node concept="XOnhg" id="3WfSgMOamoG" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <property role="OYnhT" value="local variable" />
+              <property role="2Lvdk3" value="e" />
+              <node concept="nSUau" id="3WfSgMOamoI" role="1tU5fm">
+                <node concept="3uibUv" id="3WfSgMOamoJ" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="3WfSgMOamoK" role="1zc67A">
+              <node concept="3vlDli" id="3WfSgMOamoL" role="3cqZAp">
+                <node concept="Xl_RD" id="3WfSgMOamoM" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: filter, render or expose member inside view usage body" />
+                </node>
+                <node concept="2OqwBi" id="3WfSgMOamoN" role="3tpDZA">
+                  <node concept="37vLTw" id="3WfSgMOamoO" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3WfSgMOamoG" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="3WfSgMOamoP" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3WfSgMOamoQ" role="1SL9yI">
+      <property role="TrG5h" value="testAllocateRejected" />
+      <node concept="3cqZAl" id="3WfSgMOamoS" role="3clF45" />
+      <node concept="3clFbS" id="3WfSgMOamoT" role="3clF47">
+        <node concept="3J1_TO" id="3WfSgMOamoU" role="3cqZAp">
+          <node concept="3clFbS" id="3WfSgMOamoV" role="1zxBo7">
+            <node concept="3cpWs8" id="3WfSgMOamoW" role="3cqZAp">
+              <node concept="3cpWsn" id="3WfSgMOamoX" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <property role="OYnhT" value="local variable" />
+                <property role="2Lvdk3" value="tmp" />
+                <node concept="2YIFZM" id="3WfSgMOamoY" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="3WfSgMOamoZ" role="37wK5m">
+                    <property role="Xl_RC" value="package P { allocation a allocate x to y; }" />
+                  </node>
+                  <node concept="Xl_RD" id="3WfSgMOamp0" role="37wK5m">
+                    <property role="Xl_RC" value="AllocateUsage" />
+                  </node>
+                  <node concept="1jxXqW" id="3WfSgMOamp1" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="3WfSgMOamp2" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3xETmq" id="3WfSgMOamp3" role="3cqZAp">
+              <node concept="3_1$Yv" id="3WfSgMOamp4" role="3_9lra">
+                <node concept="Xl_RD" id="3WfSgMOamp5" role="3_1BAH">
+                  <property role="Xl_RC" value="AllocateUsage expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3WfSgMOamp6" role="3cqZAp">
+              <node concept="2YIFZM" id="3WfSgMOamp7" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="3WfSgMOamp8" role="37wK5m">
+                  <ref role="3cqZAo" node="3WfSgMOamoX" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="3WfSgMOamp9" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="3WfSgMOampa" role="1zxBo5">
+            <node concept="XOnhg" id="3WfSgMOampb" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <property role="OYnhT" value="local variable" />
+              <property role="2Lvdk3" value="e" />
+              <node concept="nSUau" id="3WfSgMOampd" role="1tU5fm">
+                <node concept="3uibUv" id="3WfSgMOampe" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="3WfSgMOampf" role="1zc67A">
+              <node concept="3vlDli" id="3WfSgMOampg" role="3cqZAp">
+                <node concept="Xl_RD" id="3WfSgMOamph" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: allocate part on allocation usage" />
+                </node>
+                <node concept="2OqwBi" id="3WfSgMOampi" role="3tpDZA">
+                  <node concept="37vLTw" id="3WfSgMOampj" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3WfSgMOampb" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="3WfSgMOampk" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3WfSgMOampl" role="1SL9yI">
+      <property role="TrG5h" value="testMessageEndsRejected" />
+      <node concept="3cqZAl" id="3WfSgMOampn" role="3clF45" />
+      <node concept="3clFbS" id="3WfSgMOampo" role="3clF47">
+        <node concept="3J1_TO" id="3WfSgMOampp" role="3cqZAp">
+          <node concept="3clFbS" id="3WfSgMOampq" role="1zxBo7">
+            <node concept="3cpWs8" id="3WfSgMOampr" role="3cqZAp">
+              <node concept="3cpWsn" id="3WfSgMOamps" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <property role="OYnhT" value="local variable" />
+                <property role="2Lvdk3" value="tmp" />
+                <node concept="2YIFZM" id="3WfSgMOampt" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="3WfSgMOampu" role="37wK5m">
+                    <property role="Xl_RC" value="package P { message m from a to b; }" />
+                  </node>
+                  <node concept="Xl_RD" id="3WfSgMOampv" role="37wK5m">
+                    <property role="Xl_RC" value="MessageEnds" />
+                  </node>
+                  <node concept="1jxXqW" id="3WfSgMOampw" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="3WfSgMOampx" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3xETmq" id="3WfSgMOampy" role="3cqZAp">
+              <node concept="3_1$Yv" id="3WfSgMOampz" role="3_9lra">
+                <node concept="Xl_RD" id="3WfSgMOamp$" role="3_1BAH">
+                  <property role="Xl_RC" value="MessageEnds expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3WfSgMOamp_" role="3cqZAp">
+              <node concept="2YIFZM" id="3WfSgMOampA" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="3WfSgMOampB" role="37wK5m">
+                  <ref role="3cqZAo" node="3WfSgMOamps" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="3WfSgMOampC" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="3WfSgMOampD" role="1zxBo5">
+            <node concept="XOnhg" id="3WfSgMOampE" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <property role="OYnhT" value="local variable" />
+              <property role="2Lvdk3" value="e" />
+              <node concept="nSUau" id="3WfSgMOampG" role="1tU5fm">
+                <node concept="3uibUv" id="3WfSgMOampH" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="3WfSgMOampI" role="1zc67A">
+              <node concept="3vlDli" id="3WfSgMOampJ" role="3cqZAp">
+                <node concept="Xl_RD" id="3WfSgMOampK" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: payload, source or target on message usage" />
+                </node>
+                <node concept="2OqwBi" id="3WfSgMOampL" role="3tpDZA">
+                  <node concept="37vLTw" id="3WfSgMOampM" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3WfSgMOampE" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="3WfSgMOampN" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="3WfSgMOampO" role="1SL9yI">
+      <property role="TrG5h" value="testEventReferenceRejected" />
+      <node concept="3cqZAl" id="3WfSgMOampQ" role="3clF45" />
+      <node concept="3clFbS" id="3WfSgMOampR" role="3clF47">
+        <node concept="3J1_TO" id="3WfSgMOampS" role="3cqZAp">
+          <node concept="3clFbS" id="3WfSgMOampT" role="1zxBo7">
+            <node concept="3cpWs8" id="3WfSgMOampU" role="3cqZAp">
+              <node concept="3cpWsn" id="3WfSgMOampV" role="3cpWs9">
+                <property role="TrG5h" value="tmp" />
+                <property role="OYnhT" value="local variable" />
+                <property role="2Lvdk3" value="tmp" />
+                <node concept="2YIFZM" id="3WfSgMOampW" role="33vP2m">
+                  <ref role="37wK5l" node="3PUPjB2n9DB" resolve="parseFileIntoModel" />
+                  <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                  <node concept="Xl_RD" id="3WfSgMOampX" role="37wK5m">
+                    <property role="Xl_RC" value="package P { event e; }" />
+                  </node>
+                  <node concept="Xl_RD" id="3WfSgMOampY" role="37wK5m">
+                    <property role="Xl_RC" value="EventRef" />
+                  </node>
+                  <node concept="1jxXqW" id="3WfSgMOampZ" role="37wK5m" />
+                </node>
+                <node concept="H_c77" id="3WfSgMOamq0" role="1tU5fm" />
+              </node>
+            </node>
+            <node concept="3xETmq" id="3WfSgMOamq1" role="3cqZAp">
+              <node concept="3_1$Yv" id="3WfSgMOamq2" role="3_9lra">
+                <node concept="Xl_RD" id="3WfSgMOamq3" role="3_1BAH">
+                  <property role="Xl_RC" value="EventRef expected rejection" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3WfSgMOamq4" role="3cqZAp">
+              <node concept="2YIFZM" id="3WfSgMOamq5" role="3clFbG">
+                <ref role="37wK5l" node="3PUPjB2nhCo" resolve="disposeTemporaryModel" />
+                <ref role="1Pybhc" node="3PUPjB2n9$z" resolve="TestUtils" />
+                <node concept="37vLTw" id="3WfSgMOamq6" role="37wK5m">
+                  <ref role="3cqZAo" node="3WfSgMOampV" resolve="tmp" />
+                </node>
+                <node concept="1jxXqW" id="3WfSgMOamq7" role="37wK5m" />
+              </node>
+            </node>
+          </node>
+          <node concept="3uVAMA" id="3WfSgMOamq8" role="1zxBo5">
+            <node concept="XOnhg" id="3WfSgMOamq9" role="1zc67B">
+              <property role="TrG5h" value="e" />
+              <property role="OYnhT" value="local variable" />
+              <property role="2Lvdk3" value="e" />
+              <node concept="nSUau" id="3WfSgMOamqb" role="1tU5fm">
+                <node concept="3uibUv" id="3WfSgMOamqc" role="nSUat">
+                  <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="3WfSgMOamqd" role="1zc67A">
+              <node concept="3vlDli" id="3WfSgMOamqe" role="3cqZAp">
+                <node concept="Xl_RD" id="3WfSgMOamqf" role="3tpDZB">
+                  <property role="Xl_RC" value="Unsupported SysML v2 construct: event usage referencing an occurrence" />
+                </node>
+                <node concept="2OqwBi" id="3WfSgMOamqg" role="3tpDZA">
+                  <node concept="37vLTw" id="3WfSgMOamqh" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3WfSgMOamq9" resolve="e" />
+                  </node>
+                  <node concept="liA8E" id="3WfSgMOamqi" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~Throwable.getMessage()" resolve="getMessage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

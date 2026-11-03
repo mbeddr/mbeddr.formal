@@ -49,6 +49,10 @@
         <child id="8930763252717678371" name="content" index="8EhVZ" />
       </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
+      <concept id="4544097993703497189" name="com.symo.sysmlv2.baselan.structure.SysMLv2EventOccurrenceUsage" flags="ng" index="2cjfND" />
+      <concept id="4544097993703497185" name="com.symo.sysmlv2.baselan.structure.SysMLv2ViewUsage" flags="ng" index="2cjfNH" />
+      <concept id="4544097993703497186" name="com.symo.sysmlv2.baselan.structure.SysMLv2RenderingUsage" flags="ng" index="2cjfNI" />
+      <concept id="4544097993703497187" name="com.symo.sysmlv2.baselan.structure.SysMLv2AllocationUsage" flags="ng" index="2cjfNJ" />
       <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
       <concept id="4376090928935955021" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceDefinition" flags="ng" index="2gGTne" />
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
@@ -67,6 +71,9 @@
       </concept>
       <concept id="717440187291777381" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectorEnd" flags="ng" index="2uUmlD">
         <child id="717440187291777386" name="chain" index="2uUmlA" />
+      </concept>
+      <concept id="6353433212932081522" name="com.symo.sysmlv2.baselan.structure.SysMLv2BodiedUsage" flags="ng" index="SPUEE">
+        <child id="6353433212932081538" name="content" index="SPUDq" />
       </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
@@ -712,6 +719,30 @@
           <node concept="7CXmI" id="fNDJb6$SUM" role="lGtFl">
             <node concept="7OXhh" id="fNDJb6$SUN" role="7EUXB">
               <property role="GvXf4" value="true" />
+            </node>
+          </node>
+          <node concept="2cjfNH" id="7O9Ql6vCLmz" role="3Z9vGx">
+            <property role="TrG5h" value="pv" />
+            <node concept="8GF0z" id="7O9Ql6vCLm$" role="SPUDq">
+              <property role="TrG5h" value="pvPart" />
+            </node>
+          </node>
+          <node concept="2cjfNI" id="7O9Ql6vCLm_" role="3Z9vGx">
+            <property role="TrG5h" value="pr" />
+            <node concept="8GF0z" id="7O9Ql6vCLmA" role="SPUDq">
+              <property role="TrG5h" value="prPart" />
+            </node>
+          </node>
+          <node concept="2cjfNJ" id="7O9Ql6vCLmB" role="3Z9vGx">
+            <property role="TrG5h" value="pa" />
+            <node concept="8GF0z" id="7O9Ql6vCLmC" role="SPUDq">
+              <property role="TrG5h" value="paPart" />
+            </node>
+          </node>
+          <node concept="2cjfND" id="7O9Ql6vCLmD" role="3Z9vGx">
+            <property role="TrG5h" value="pe" />
+            <node concept="8GF0z" id="7O9Ql6vCLmE" role="SPUDq">
+              <property role="TrG5h" value="pePart" />
             </node>
           </node>
         </node>

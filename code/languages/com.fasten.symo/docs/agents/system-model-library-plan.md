@@ -592,6 +592,30 @@ Previously the importer rejected this ("part-specific element (part/port usage) 
   `_120_Connections_PrefixMetadata` is green again.
 - **Open:** no editor test for the new value cells.
 
+### Step 16: view, rendering, allocation, message and event occurrence usages (2026-11-03)
+- **Structure:** `SysMLv2ViewUsage`, `SysMLv2RenderingUsage`, `SysMLv2AllocationUsage`, `SysMLv2MessageUsage`,
+  `SysMLv2EventOccurrenceUsage` (all extend `SysMLv2BodiedUsage`, so they carry the value cells, multiplicity, subsetting and
+  redefinition), aliases `view`, `rendering`, `allocation`, `message`, `event occurrence`. Each has an editor and text generation
+  cloned from the requirement usage with the new keyword. Flow usage already existed.
+- **Importer:** `visitViewUsage`, `visitRenderingUsage`, `visitAllocationUsage`, `visitMessage`, `visitEventOccurrenceUsage` plus
+  dispatch in `visitStructureUsageElement`. Rejected with a message: filter, render or expose member in a view body; `allocate x to y`
+  on an allocation usage; payload, source or target on a message; an event usage that references an occurrence (`event e;`).
+- **Constraint:** `ISysMLv2StructuralUsage_Constraints` (`can be child`) now allows structural usages (part, port, ...) inside the
+  view, rendering and allocation definitions and the view, rendering, allocation and event occurrence usages. The sandbox model check
+  found this; the importer tests could not, because parsing does not enforce constraints. Message usages have no body.
+- **Tests:** `_480_UsageKindsTest` (round trip of all kinds, and declaration forms with multiplicity, subsetting, redefinition with
+  value and `default = x`) with `accessMode=none`; `_481_UsageKindRejectionsTest` (the four rejections) with `accessMode=command`;
+  `_030_PartUsagePlacement` got a part inside each of the four body-carrying usages. Mutation checks: moving the value statement
+  out of `visitViewUsage` failed `testUsageKindsDeclarationForms` (`default = x` lost); making the placement guard return `false` failed
+  `_030_PartUsagePlacement` ("Node 'pePart' cannot be child of node 'pe'"). Both restored, green.
+- **Sandbox:** `_210_usage_kinds`. Model check clean except the accepted nullable-enum errors.
+- **Library probe: 46 of 58 files import** (was 44). The 12 failures are all other constructs: non-reference return parameter (3),
+  transition/entry/do/exit/succession in a state body (2), specialization on a binding usage, return parameter in a constraint body,
+  `perform`/`exhibit`/`include`/`satisfy` usage (`Views`), non-attribute non-occurrence usage element (`CausationConnections`),
+  name/multiplicity/nonunique on `end` (`Items`), multiplicity on an interface usage, multiplicity on a connector end (`Flows`).
+- **Full run ("All Tests in Project"): 480 tests, only the two plantuml editor tests fail** (same two as step 15).
+- **Open:** no editor test for the new usages' cells; the editor audit (TODO.md) is next.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations

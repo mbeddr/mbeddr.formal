@@ -12,6 +12,17 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Importer tests do not see placement constraints; `parse_java_and_insert` leaves `SNode` unresolved (2026-11-03)
+
+- A new concept can round-trip through the importer and still be unusable in the editor: parsing builds the tree without checking `can be child`. Always check a sandbox root (`check_root_node_problems`) for "cannot be child" errors, and add a nested usage to a placement test (`_030_PartUsagePlacement`).
+- `parse_java_and_insert` leaves `SNode` types unresolved; fix them with `update_node SET REFERENCE` on the `classifier` role of each type node.
+- Test-method MCP time-outs are not always memory: see the `accessMode=command` entry above.
+- A new `if (...) { return true; }` guard added to a `can be child` function must be moved to position 0 (`alter_nodes MOVE_CHILD`, `position: 0`), because `ADD CHILD` appends after the final expression statement that carries the function's result.
+
+## NodesTestCase `accessMode=command` deadlocks tests that generate text in-process (2026-11-03)
+
+A `NodesTestCase` with `accessMode=command` runs its body inside a write command on the EDT. A test that calls `RoundtripTestUtils.generateText` (it waits on a background `FutureTask` that needs the model lock) then blocks forever: the UI freezes in 30 s slices, the log shows `Unsafe.park` under `generateText`, and `execute_run_configuration` only reports "The operation timed out" (not memory). Round-trip roots must use `accessMode=none`. Rejection tests that assert on an unwrapped `RuntimeException` message need `command` (otherwise the message is prefixed with `java.lang.RuntimeException:`), so keep them in a separate root. Moving test methods between roots: `alter_nodes MOVE_NODE_TO_PARENT` with `newParentRef` and `role` (`MOVE_CHILD` only reorders within one parent).
+
 ## Replaying a printed blueprint gives nodes without a `name` property a bogus `name` (2026-11-02)
 
 `print_node` shows a display name even for nodes that have no `name` property (e.g. a test annotation `NodeConstraintsErrorCheckOperation` prints as `<no name>[has constraints error]`). Feeding that JSON back through `update_node SET CHILD` / `insert_root_node_from_json` stores the display text as a real `name` property. For such nodes the generated test method name then contains `<`, `>` and `[`, and Make fails with a dozen Java syntax errors in the generated `*_Test.java`. Fix: after replaying, `update_node SET PROPERTY` the node's `name` to `null`; rebuild. When cloning or moving subtrees that contain test annotations, strip the `name` property from nodes whose concept is not `INamedConcept` before replaying, or check the generated test class compiles.
