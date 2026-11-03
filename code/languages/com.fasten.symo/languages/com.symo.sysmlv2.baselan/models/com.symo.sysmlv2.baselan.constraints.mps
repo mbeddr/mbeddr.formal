@@ -1362,7 +1362,7 @@
   </node>
   <node concept="1M2fIO" id="7O9Ql6wW9fq">
     <property role="3GE5qa" value="calc" />
-    <property role="TrG5h" value="SysMLv2ReturnParameter_Constraints" />
+    <property role="TrG5h" value="SysMLv2ReturnAttributeUsage_Constraints" />
     <ref role="1M2myG" to="5rf1:7O9Ql6wW85t" resolve="SysMLv2ReturnAttributeUsage" />
     <node concept="9S07l" id="7O9Ql6wW9fr" role="9Vyp8">
       <node concept="3clFbS" id="7O9Ql6wW9fs" role="2VODD2">
@@ -1391,6 +1391,35 @@
               <node concept="1mIQ4w" id="7O9Ql6wW9fE" role="2OqNvi">
                 <node concept="chp4Y" id="7O9Ql6wW9fF" role="cj9EA">
                   <ref role="cht4Q" to="5rf1:5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7O9Ql6ycNew">
+    <property role="3GE5qa" value="state" />
+    <property role="TrG5h" value="SysMLv2StateActionMember_Constraints" />
+    <ref role="1M2myG" to="5rf1:7O9Ql6xWDXP" resolve="SysMLv2StateActionMember" />
+    <node concept="9S07l" id="7O9Ql6ycNex" role="9Vyp8">
+      <node concept="3clFbS" id="7O9Ql6ycNey" role="2VODD2">
+        <node concept="3clFbF" id="7O9Ql6ycNez" role="3cqZAp">
+          <node concept="22lmx$" id="7O9Ql6ycNf1" role="3clFbG">
+            <node concept="2OqwBi" id="7O9Ql6ycNf2" role="3uHU7B">
+              <node concept="nLn13" id="7O9Ql6ycNf3" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="7O9Ql6ycNf4" role="2OqNvi">
+                <node concept="chp4Y" id="7O9Ql6ycNf5" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:5wFVtxuc4ZR" resolve="SysMLv2StateDefinition" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7O9Ql6ycNf6" role="3uHU7w">
+              <node concept="nLn13" id="7O9Ql6ycNf7" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="7O9Ql6ycNf8" role="2OqNvi">
+                <node concept="chp4Y" id="7O9Ql6ycNf9" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tO" resolve="SysMLv2StateUsage" />
                 </node>
               </node>
             </node>

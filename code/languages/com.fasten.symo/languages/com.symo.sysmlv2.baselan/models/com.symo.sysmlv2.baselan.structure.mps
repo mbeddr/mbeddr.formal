@@ -60,6 +60,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1156234966388" name="shortDescription" index="OYnhT" />
         <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
@@ -1161,6 +1162,12 @@
     <node concept="PrWs8" id="fNDJbaAFwY" role="PzmwI">
       <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
     </node>
+    <node concept="1TJgyj" id="7O9Ql6zbBv1" role="1TKVEi">
+      <property role="IQ2ns" value="9009971474184697793" />
+      <property role="20kJfa" value="multiplicity" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+    </node>
   </node>
   <node concept="1TIwiD" id="BOR0Mn7r_A">
     <property role="EcuMT" value="717440187291777382" />
@@ -2126,6 +2133,67 @@
     <ref role="1TJDcQ" node="7JKstLNmmXl" resolve="SysMLv2AttributeUsage" />
     <node concept="t5JxF" id="7O9Ql6wW85u" role="lGtFl">
       <property role="t5JxN" value="return attribute x : T; the result feature of a calculation or case, declared as an attribute usage. Inherits all features of the attribute usage." />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7O9Ql6xWDXP">
+    <property role="EcuMT" value="9009971474163998581" />
+    <property role="TrG5h" value="SysMLv2StateActionMember" />
+    <property role="R5$K7" value="true" />
+    <property role="R4oN_" value="entry, do or exit member of a state body: [visibility] entry|do|exit [action usage]; the action is absent in the empty form `entry;` (spec: Entry/Do/ExitActionMembership)" />
+    <property role="3GE5qa" value="state" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7O9Ql6xWDXT" role="1TKVEi">
+      <property role="IQ2ns" value="9009971474163998585" />
+      <property role="20kJfa" value="action" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="5wFVtxwZ4tN" resolve="SysMLv2PlainActionUsage" />
+    </node>
+    <node concept="PrWs8" id="7O9Ql6xWDXU" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+    <node concept="PrWs8" id="7O9Ql6xWDXV" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7O9Ql6xWDXQ">
+    <property role="EcuMT" value="9009971474163998582" />
+    <property role="TrG5h" value="SysMLv2EntryActionMember" />
+    <property role="34LRSv" value="entry" />
+    <property role="R4oN_" value="entry action x; the action performed on entering the state" />
+    <property role="3GE5qa" value="state" />
+    <ref role="1TJDcQ" node="7O9Ql6xWDXP" resolve="SysMLv2StateActionMember" />
+  </node>
+  <node concept="1TIwiD" id="7O9Ql6xWDXR">
+    <property role="EcuMT" value="9009971474163998583" />
+    <property role="TrG5h" value="SysMLv2DoActionMember" />
+    <property role="34LRSv" value="do" />
+    <property role="R4oN_" value="do action x; the action performed while in the state" />
+    <property role="3GE5qa" value="state" />
+    <ref role="1TJDcQ" node="7O9Ql6xWDXP" resolve="SysMLv2StateActionMember" />
+  </node>
+  <node concept="1TIwiD" id="7O9Ql6xWDXS">
+    <property role="EcuMT" value="9009971474163998584" />
+    <property role="TrG5h" value="SysMLv2ExitActionMember" />
+    <property role="34LRSv" value="exit" />
+    <property role="R4oN_" value="exit action x; the action performed on leaving the state" />
+    <property role="3GE5qa" value="state" />
+    <ref role="1TJDcQ" node="7O9Ql6xWDXP" resolve="SysMLv2StateActionMember" />
+  </node>
+  <node concept="1TIwiD" id="7O9Ql6$x0kC">
+    <property role="EcuMT" value="9009971474207081768" />
+    <property role="TrG5h" value="SysMLv2SuccessionUsage" />
+    <property role="34LRSv" value="succession" />
+    <property role="R4oN_" value="succession usage: [succession [name] ...] first a then b { body } (spec: SuccessionAsUsage)" />
+    <property role="3GE5qa" value="succession" />
+    <property role="OYnhT" value="succession usage: [succession [name] ...] first a then b { body } (spec: SuccessionAsUsage). The name is only shown and written with the succession keyword (withKeyword). Inherited feature parts (direction, multiplicity, types, value, subsets, redefines, flags) are deliberately hidden in editor and text: the spec's SuccessionAsUsage takes no specialization part and its multiplicities sit on the ends; the importer rejects specialization." />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <node concept="1TJgyi" id="7O9Ql6$x0kD" role="1TKVEl">
+      <property role="IQ2nx" value="9009971474207081769" />
+      <property role="TrG5h" value="withKeyword" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="PrWs8" id="7O9Ql6$x0kE" role="PzmwI">
+      <ref role="PrY4T" node="3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
     </node>
   </node>
 </model>

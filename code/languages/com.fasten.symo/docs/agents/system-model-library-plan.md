@@ -632,6 +632,41 @@ Previously the importer rejected this ("part-specific element (part/port usage) 
   `VerificationCases`, `TradeStudies` and `SampledFunctions` should move on; `SampledFunctions` also has `return : Anything[0..*] = ...`
   and `return result [0..1] = ...` forms to check.
 
+### Step 18 (2a): `entry`, `do`, `exit` state members (2026-11-03)
+- **Structure:** abstract `SysMLv2StateActionMember` (optional child `action : SysMLv2PlainActionUsage`) with
+  `SysMLv2EntryActionMember`, `SysMLv2DoActionMember`, `SysMLv2ExitActionMember` (aliases `entry`, `do`, `exit`). Editors and
+  text generation: visibility, keyword, optional action, `;` when the action is absent. `can be child`: state definition and state
+  usage only (`SysMLv2StateActionMember_Constraints`).
+- **Importer:** `importStateBodyItemOf` dispatches `entryActionMember`/`doActionMember`/`exitActionMember` to
+  `buildStateActionMember`: an empty action (`entry;`) or a `perform`-style `action` usage with declaration, value and body.
+  Rejected: referenced action (`entry foo;`), accept, send and assignment actions, and a transition after entry
+  (`entry; then s2;`).
+- **Tests:** `_500_StateActionMembersTest` (2 round trips), `_501_StateActionMemberRejectionsTest` (4 rejections), mutation-checked.
+  `_130` `testStateEntryInDefinitionRejected` became `testStateTransitionInDefinitionRejected` (`transition t first a then b;`),
+  because entry is supported now. Full run: 488 tests, only the two plantuml editor tests fail.
+- **Sandbox:** `_230_state_action_members`. Model check clean except the accepted nullable-enum errors.
+- **Probe:** still 48/58. `Actions.sysml` still stops on "transition, entry, do, exit or succession inside state body", now
+  caused by the transition/succession members (2b, 2c). The other nine failures are unchanged.
+- **Next:** 2b `succession`, 2c `transition`.
+
+### Step 19: multiplicity on connector ends (2026-11-03)
+Prerequisite of 2b (`succession first [0..1] a then [0..1] b`, `States.sysml:71`); the grammar allows
+`connectorEnd: ownedCrossMultiplicityMember? (name (::> | references))? ownedReferenceSubsetting`.
+- **Structure:** `SysMLv2ConnectorEnd` got an optional child `multiplicity : SysMLv2Multiplicity`. Editor and text generation:
+  `[lower..upper]` first, then `name ::>`, then the chain (editor `[- optional % multiplicity % ?{ name } ? ::> chain -]`).
+- **Importer:** `extractConnectorEndChain` appends a marker element `[lower..upper` to the chain, `createConnectorEnd` strips it and
+  builds the multiplicity (single bound `[n]` means lower = upper = n). The "multiplicity on connector end" rejection is removed.
+  Interface and flow ends are untouched (their own extractors).
+- **Tests:** `_510_ConnectorEndMultiplicityTest` (`connect [1] a to [0..*] b` and a named variant), mutation-checked.
+  Full run: 489 tests, only the two plantuml editor tests fail.
+- **Sandbox:** `_010_simple_parts_and_usages` has a second `connect` with `[1]` and `[0..*]` on its ends. Model check clean except the
+  accepted nullable-enum errors.
+- **Probe:** unchanged, 48/58 (the failures that mentioned it moved to the succession/transition members).
+
+### Step 20 (2b): succession usage (2026-11-03)
+
+`succession [name] first a then b;` and the keyword-less short form `first a then b;`. Concept `SysMLv2SuccessionUsage` (extends `SysMLv2BodiedUsage`, implements `ISysMLv2ConnectorAsUsage`; property `withKeyword` distinguishes the two spellings); the ends are `SysMLv2ConnectorEnd`s, so the multiplicity of Step 19 applies (`first [0..1] a then [0..*] b`). Editor and TextGen mirror each other (ADR 0006); the inherited value cells are hidden on purpose. Importer: `newSuccessionUsage`, `visitSuccessionAsUsage`, dispatched from `visitNonOccurrenceUsageElement`. Tests: importer `_520_SuccessionUsageTest` (both spellings, end multiplicities, `abstract` prefix; successions in `state def` and `part def` bodies), mutation-checked with non-canonical input; `_130` `testSuccessionWithSpecializationRejected`. Sandbox: part def `Sequence` in `_230_state_action_members`. Probe 48 -> 49 (`States.sysml` now OK); full suite 492 tests, only the 2 known plantuml failures. Decisions: the inherited feature parts of the succession are deliberately hidden (documented in the concept's `shortDescription`, ADR 0006), specialization on a succession stays rejected (`Flows.sysml` fails there; needs the spec's declaration part, a later step); no check rule for a name without the keyword (editor and text both hide it); interface bodies only accept attribute usages today, so a succession in an interface body is rejected by the existing "non-attribute usage in interface body" check (part of the `Interfaces.sysml` work), and the variant dispatch is not exercised yet.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations
