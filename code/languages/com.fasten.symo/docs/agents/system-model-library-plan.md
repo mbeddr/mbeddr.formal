@@ -616,6 +616,22 @@ Previously the importer rejected this ("part-specific element (part/port usage) 
 - **Full run ("All Tests in Project"): 480 tests, only the two plantuml editor tests fail** (same two as step 15).
 - **Open:** no editor test for the new usages' cells; the editor audit (TODO.md) is next.
 
+### Step 17: `return attribute` (2026-11-03)
+- **Structure:** `SysMLv2ReturnAttributeUsage` extends `SysMLv2AttributeUsage` (alias `return attribute`). Editor and text generation are copies
+  of the attribute usage ones with the `return` keyword after the visibility. `can be child` is the one of `SysMLv2ReturnParameter`
+  (calculation definition, case definition, case usage).
+- **Importer:** `visitAttributeUsage` now delegates to `buildAttributeUsage(ctx, asReturn)`; `importReturnParameter` returns
+  `buildAttributeUsage(element.attributeUsage(), true)` before the reference usage branches. Other usage kinds as return
+  parameter (the `return` plus a non-reference, non-attribute element) are still rejected with "non-reference return parameter".
+- **Tests:** `_490_ReturnAttributeUsageTest` (calculation definition with `return attribute result;`, a typed one with a value, a
+  `private` one next to a plain `return`; case usage). Mutation: emptying the `return ` constant in the textgen failed both tests;
+  restored. Full run: 482 tests, only the two plantuml editor tests fail.
+- **Sandbox:** `_220_return_attribute` (calc def with plain and `private` typed `return attribute`, case usage with a typed one next to a
+  case def with a plain `return`). Model check clean except the accepted nullable-enum errors.
+- **Open:** the 58-file library probe was not re-run, so the count (46 before) is not updated.
+  `VerificationCases`, `TradeStudies` and `SampledFunctions` should move on; `SampledFunctions` also has `return : Anything[0..*] = ...`
+  and `return result [0..1] = ...` forms to check.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations

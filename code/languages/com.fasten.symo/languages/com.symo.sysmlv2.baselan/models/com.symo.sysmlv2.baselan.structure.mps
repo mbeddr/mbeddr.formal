@@ -2117,5 +2117,16 @@
     <property role="34LRSv" value="event occurrence" />
     <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
   </node>
+  <node concept="1TIwiD" id="7O9Ql6wW85t">
+    <property role="EcuMT" value="9009971474147082589" />
+    <property role="TrG5h" value="SysMLv2ReturnAttributeUsage" />
+    <property role="34LRSv" value="return attribute" />
+    <property role="R4oN_" value="SysML v2 return parameter that is an attribute usage (returnParameterMember with an attribute usage element)" />
+    <property role="3GE5qa" value="calc" />
+    <ref role="1TJDcQ" node="7JKstLNmmXl" resolve="SysMLv2AttributeUsage" />
+    <node concept="t5JxF" id="7O9Ql6wW85u" role="lGtFl">
+      <property role="t5JxN" value="return attribute x : T; the result feature of a calculation or case, declared as an attribute usage. Inherits all features of the attribute usage." />
+    </node>
+  </node>
 </model>
 

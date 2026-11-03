@@ -159,6 +159,7 @@
       <concept id="7267068243734581638" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Type" flags="ngI" index="3eyS6m">
         <property id="7267068243734581640" name="isAbstract" index="3eyS6o" />
       </concept>
+      <concept id="9009971474147082589" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReturnAttributeUsage" flags="ng" index="3tYlwc" />
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
@@ -2185,6 +2186,88 @@
         <property role="TrG5h" value="e" />
         <node concept="8GF0z" id="7O9Ql6voyS_" role="SPUDq">
           <property role="TrG5h" value="s" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="7O9Ql6xUGpR">
+    <property role="TrG5h" value="_220_return_attribute" />
+    <node concept="3Z9vzX" id="7O9Ql6xUGpS" role="2h0jOs">
+      <property role="TrG5h" value="ReturnAttributes" />
+      <node concept="8EhVW" id="7O9Ql6xUGrF" role="3Z9vGx">
+        <property role="TrG5h" value="Verdict" />
+      </node>
+      <node concept="3w00Z_" id="7O9Ql6xUGpT" role="3Z9vGx">
+        <property role="TrG5h" value="Thing" />
+      </node>
+      <node concept="3w00Z_" id="7O9Ql6xUGpU" role="3Z9vGx">
+        <property role="TrG5h" value="Person" />
+      </node>
+      <node concept="66VR4" id="7O9Ql6xUGq0" role="3Z9vGx">
+        <property role="TrG5h" value="C" />
+        <node concept="38pZY" id="7O9Ql6xUGq1" role="66U86">
+          <property role="TrG5h" value="s" />
+          <node concept="35c6Ng" id="7O9Ql6xUGq2" role="35c6Nl">
+            <ref role="35c6Nn" node="7O9Ql6xUGpT" resolve="Thing" />
+          </node>
+        </node>
+        <node concept="38pZT" id="7O9Ql6xUGq3" role="66U86">
+          <property role="TrG5h" value="a" />
+          <node concept="35c6Ng" id="7O9Ql6xUGq4" role="35c6Nl">
+            <ref role="35c6Nn" node="7O9Ql6xUGpU" resolve="Person" />
+          </node>
+        </node>
+        <node concept="38pZS" id="7O9Ql6xUGq5" role="66U86">
+          <property role="TrG5h" value="o" />
+        </node>
+        <node concept="4Zb4V" id="7O9Ql6xUGq6" role="66U86">
+          <property role="TrG5h" value="r" />
+          <node concept="35c6Ng" id="7O9Ql6xUGq7" role="35c6Nl">
+            <ref role="35c6Nn" node="7O9Ql6xUGpT" resolve="Thing" />
+          </node>
+        </node>
+      </node>
+      <node concept="SPUEJ" id="7O9Ql6xUGqg" role="3Z9vGx">
+        <property role="TrG5h" value="cu" />
+        <node concept="35c6Ng" id="7O9Ql6xUGqh" role="SPUDp">
+          <ref role="35c6Nn" node="7O9Ql6xUGq0" resolve="C" />
+        </node>
+        <node concept="38pZY" id="7O9Ql6xUGqi" role="SPUDq">
+          <property role="TrG5h" value="s" />
+          <node concept="35c6Ng" id="7O9Ql6xUGqj" role="35c6Nl">
+            <ref role="35c6Nn" node="7O9Ql6xUGpT" resolve="Thing" />
+          </node>
+        </node>
+        <node concept="38pZT" id="7O9Ql6xUGqk" role="SPUDq">
+          <property role="TrG5h" value="a" />
+          <node concept="35c6Ng" id="7O9Ql6xUGql" role="35c6Nl">
+            <ref role="35c6Nn" node="7O9Ql6xUGpU" resolve="Person" />
+          </node>
+        </node>
+        <node concept="38pZS" id="7O9Ql6xUGqm" role="SPUDq">
+          <property role="TrG5h" value="o" />
+        </node>
+        <node concept="3tYlwc" id="7O9Ql6xUGrD" role="SPUDq">
+          <property role="TrG5h" value="verdict" />
+          <node concept="8EhVB" id="7O9Ql6xUGrE" role="8EhU5">
+            <property role="8EhVw" value="Verdict" />
+          </node>
+        </node>
+      </node>
+      <node concept="4Zb4U" id="7O9Ql6xUGrG" role="3Z9vGx">
+        <property role="TrG5h" value="Total" />
+        <node concept="3tYlwc" id="7O9Ql6xUGrI" role="4Zb4K">
+          <property role="TrG5h" value="verdict" />
+          <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+          <node concept="8EhVB" id="7O9Ql6xUGrJ" role="8EhU5">
+            <property role="8EhVw" value="Verdict" />
+          </node>
+        </node>
+      </node>
+      <node concept="4Zb4U" id="7O9Ql6xUGx2" role="3Z9vGx">
+        <property role="TrG5h" value="Plain" />
+        <node concept="3tYlwc" id="7O9Ql6xUGx3" role="4Zb4K">
+          <property role="TrG5h" value="result" />
         </node>
       </node>
     </node>
