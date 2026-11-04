@@ -2326,5 +2326,50 @@
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7ij$NeCRWzV">
+    <property role="EcuMT" value="8400219580061960443" />
+    <property role="TrG5h" value="SysMLv2ThenMember" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7ij$NeCRWzY" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580061960446" />
+      <property role="20kJfa" value="member" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="7ij$NeCRWzZ" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
+    <node concept="PrWs8" id="7ij$NeEHHQw" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ij$NeCRWzW">
+    <property role="EcuMT" value="8400219580061960444" />
+    <property role="TrG5h" value="SysMLv2AssignActionUsage" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tN" resolve="SysMLv2PlainActionUsage" />
+    <node concept="1TJgyj" id="7ij$NeCRW$0" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580061960448" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+    <node concept="1TJgyj" id="7ij$NeCRW$1" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580061960449" />
+      <property role="20kJfa" value="assigned" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ij$NeCRWzX">
+    <property role="EcuMT" value="8400219580061960445" />
+    <property role="TrG5h" value="SysMLv2WhileLoopUsage" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tN" resolve="SysMLv2PlainActionUsage" />
+    <node concept="1TJgyj" id="7ij$NeCRW$2" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580061960450" />
+      <property role="20kJfa" value="condition" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+  </node>
 </model>
 

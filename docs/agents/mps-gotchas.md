@@ -12,6 +12,14 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## MCP mechanics: child-mode method insert, stale callers, top-level triplets, inherited-feature editors, interface on a link target (2026-11-04)
+
+- `parse_java_and_insert` with `insert: {"mode":"child","parentRef":<class root>,"role":"member"}` adds a new method; `append`/`add` are rejected. A call to a method that did not exist at parse time becomes an `UnknownInstanceMethodCall` that `FIX_REFERENCES` does not repair; insert the callee first, then re-insert (replace) the caller.
+- `update_node` takes `properties`/`references` triplets (`[[nodeRef, name, value]]`) at the top level, not inside `parameters`. A `SET REFERENCE` on an `SNodeType` uses role `concept`; a local variable's declared type is a separate `SNodeType` from the creator's, so repoint both.
+- `scaffold_editor` on a subconcept lists every inherited feature. For a thin subconcept (e.g. `assign`/`while` over `PlainActionUsage`) delete it and build the editor from a blueprint of the sibling's editor instead.
+- A child role typed with interface `X` only accepts nodes whose concept implements `X`; the importer casts with `SNodeOperations.cast` and fails at run time ("Can't cast node ... to ISysMLv2ItemBodyContent") although the model checks clean. Add the missing interface with `update_node ADD CHILD` on `implements` (`InterfaceConceptReference`, reference role `intfc`) and rebuild the language.
+- A new child role must not reuse the name of an inherited link (`value` clashed on a usage subconcept); rename it before the editor and textgen reference it.
+
 ## `parse_java_and_insert` replace: don't paste generated Java; copy a helper node instead (2026-11-04)
 
 - Pasting code copied from the generated Java (`SNodeOperations.cast(..., CONCEPTS.X$ab)`, `PROPS.*`, `ListSequence.fromList(...)`) parses as plain Java and leaves dozens of unresolved nodes. Write the plain-Java form with calls to existing helper methods instead (`extractUsageName(...)`, `applyFeatureFlag(node, "isAbstract", v)`), and move every smodel operation (`node:Concept.link.add(child:Iface)`) into a small static helper made with `alter_nodes COPY_NODE` of a similar existing helper.

@@ -182,6 +182,16 @@
       <concept id="9009971474207081768" name="com.symo.sysmlv2.baselan.structure.SysMLv2SuccessionUsage" flags="ng" index="3pztLT">
         <property id="9009971474207081769" name="withKeyword" index="3pztLS" />
       </concept>
+      <concept id="8400219580061960443" name="com.symo.sysmlv2.baselan.structure.SysMLv2ThenMember" flags="ng" index="3sj5J8">
+        <child id="8400219580061960446" name="member" index="3sj5Jd" />
+      </concept>
+      <concept id="8400219580061960445" name="com.symo.sysmlv2.baselan.structure.SysMLv2WhileLoopUsage" flags="ng" index="3sj5Je">
+        <child id="8400219580061960450" name="condition" index="3sj5CL" />
+      </concept>
+      <concept id="8400219580061960444" name="com.symo.sysmlv2.baselan.structure.SysMLv2AssignActionUsage" flags="ng" index="3sj5Jf">
+        <child id="8400219580061960449" name="assigned" index="3sj5CM" />
+        <child id="8400219580061960448" name="target" index="3sj5CN" />
+      </concept>
       <concept id="9009971474163998581" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateActionMember" flags="ng" index="3sYOo$">
         <child id="9009971474163998585" name="action" index="3sYOoC" />
       </concept>
@@ -2495,6 +2505,57 @@
         <node concept="3w00Zz" id="7ij$Ne_EpJb" role="3w00ZY">
           <property role="TrG5h" value="u" />
           <property role="2uUgYw" value="true" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="7ij$NeEZ$yP">
+    <property role="TrG5h" value="_250_action_body_sequencing" />
+    <node concept="3Z9vzX" id="7ij$NeEZ$yQ" role="2h0jOs">
+      <property role="TrG5h" value="ActionBodySequencing" />
+      <node concept="66U8D" id="7ij$NeEZ$yR" role="3Z9vGx">
+        <property role="TrG5h" value="Count" />
+        <node concept="3sj5Jf" id="7ij$NeEZ$yS" role="66U86">
+          <node concept="3bnkR8" id="7ij$NeEZ$yT" role="3sj5CN">
+            <property role="3bnkR9" value="index" />
+          </node>
+          <node concept="3bnkR8" id="7ij$NeEZ$yU" role="3sj5CM">
+            <property role="3bnkR9" value="0" />
+          </node>
+        </node>
+        <node concept="3sj5J8" id="7ij$NeEZ$yV" role="66U86">
+          <node concept="3sj5Jf" id="7ij$NeEZ$yW" role="3sj5Jd">
+            <node concept="3bnkR8" id="7ij$NeEZ$yX" role="3sj5CN">
+              <property role="3bnkR9" value="index" />
+            </node>
+            <node concept="3bnkR8" id="7ij$NeEZ$yY" role="3sj5CM">
+              <property role="3bnkR9" value="index + 1" />
+            </node>
+          </node>
+        </node>
+        <node concept="3sj5J8" id="7ij$NeEZ$yZ" role="66U86">
+          <node concept="3sj5Je" id="7ij$NeEZ$z0" role="3sj5Jd">
+            <node concept="3bnkR8" id="7ij$NeEZ$z1" role="3sj5CL">
+              <property role="3bnkR9" value="index &lt;= 3" />
+            </node>
+            <node concept="3sj5Jf" id="7ij$NeEZ$z2" role="SPUDq">
+              <node concept="3bnkR8" id="7ij$NeEZ$z3" role="3sj5CN">
+                <property role="3bnkR9" value="index" />
+              </node>
+              <node concept="3bnkR8" id="7ij$NeEZ$z4" role="3sj5CM">
+                <property role="3bnkR9" value="index + 1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3sj5Jf" id="7ij$NeEZ$z5" role="66U86">
+          <property role="TrG5h" value="reset" />
+          <node concept="3bnkR8" id="7ij$NeEZ$z6" role="3sj5CN">
+            <property role="3bnkR9" value="index" />
+          </node>
+          <node concept="3bnkR8" id="7ij$NeEZ$z7" role="3sj5CM">
+            <property role="3bnkR9" value="0" />
+          </node>
         </node>
       </node>
     </node>

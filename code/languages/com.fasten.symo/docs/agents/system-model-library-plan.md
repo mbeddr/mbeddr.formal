@@ -759,6 +759,21 @@ Flows (specialization on succession usage), Interfaces (multiplicity on interfac
 parameter inside constraint body), Views (perform/exhibit/include/satisfy). Full run: 507 tests, only the 2 known
 PlantUML failures.
 
+**Slice 5 result (2026-11-04):** action-body sequencing. New concepts `SysMLv2AssignActionUsage` (`assign t := v`,
+children `target`/`assigned`, both `ISysMLv2Expression`; `assigned` because `value` clashes with the inherited usage
+link), `SysMLv2WhileLoopUsage` (`while <cond> { ... }`, child `condition`) and `SysMLv2ThenMember` (`then <member>`,
+wraps the node that follows a `then` source-succession; implements both `ISysMLv2PartBodyContent` and
+`ISysMLv2ItemBodyContent`, because action definitions take the item interface). Both usages extend
+`SysMLv2PlainActionUsage`, so visibility, prefix metadata, optional `action <name>` and the body block come for free.
+Importer: `importActionBodyItemOf` accepts one action node with an optional leading `then`; trailing target
+successions are still rejected; `importActionNodeMember` dispatches assign/while and rejects control, send, accept,
+terminate, if and for nodes with "Unsupported SysML v2 construct: control, send, accept, terminate, if or for node
+inside action body"; `while` rejects `loop`, `until` and a named body. Known limit: an empty while body prints `;`
+(invalid SysML). Tests: `_550_ActionBodySequencingTest` (assign, then, while; the `then` test was mutation-checked by
+changing the textgen constant), `_130` now rejects `action a; then b;` and `fork f;`. Sandbox `_100`
+`_250_action_body_sequencing`. Probe still 51 OK / 7 FAIL; `Actions.sysml` now stops at "perform, exhibit, include
+or satisfy usage" (same blocker as Views), which is the next slice.
+
 **Refactor: chain-only transition source (2026-11-04).** The source no longer uses `SysMLv2ConnectorEnd`
 (which allows an end name and multiplicity that are illegal on a transition source). New abstract
 `SysMLv2ChainEnd` (implements `ScopeProvider`) carries the scope and chain behavior (the behavior root
