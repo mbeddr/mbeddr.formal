@@ -4750,58 +4750,6 @@
             <node concept="10Nm6u" id="6ohPCO0AVUf" role="3uHU7w" />
           </node>
           <node concept="3clFbS" id="6ohPCO0AVUg" role="3clFbx">
-            <node concept="3clFbJ" id="6ohPCO0AVUh" role="3cqZAp">
-              <node concept="22lmx$" id="6ohPCO0AVUk" role="3clFbw">
-                <node concept="22lmx$" id="6ohPCO0AVUn" role="3uHU7B">
-                  <node concept="3y3z36" id="6ohPCO0AVUq" role="3uHU7B">
-                    <node concept="2OqwBi" id="6ohPCO0AVUt" role="3uHU7B">
-                      <node concept="37vLTw" id="6ohPCO0AVUw" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6ohPCO0AVU0" resolve="endOcc" />
-                      </node>
-                      <node concept="liA8E" id="6ohPCO0AVUx" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.name()" resolve="name" />
-                      </node>
-                    </node>
-                    <node concept="10Nm6u" id="6ohPCO0AVUy" role="3uHU7w" />
-                  </node>
-                  <node concept="3y3z36" id="6ohPCO0AVUz" role="3uHU7w">
-                    <node concept="2OqwBi" id="6ohPCO0AVUA" role="3uHU7B">
-                      <node concept="37vLTw" id="6ohPCO0AVUD" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6ohPCO0AVU0" resolve="endOcc" />
-                      </node>
-                      <node concept="liA8E" id="6ohPCO0AVUE" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.ownedCrossMultiplicityMember()" resolve="ownedCrossMultiplicityMember" />
-                      </node>
-                    </node>
-                    <node concept="10Nm6u" id="6ohPCO0AVUF" role="3uHU7w" />
-                  </node>
-                </node>
-                <node concept="3y3z36" id="6ohPCO0AVUG" role="3uHU7w">
-                  <node concept="2OqwBi" id="6ohPCO0AVUJ" role="3uHU7B">
-                    <node concept="37vLTw" id="6ohPCO0AVUM" role="2Oq$k0">
-                      <ref role="3cqZAo" node="6ohPCO0AVU0" resolve="endOcc" />
-                    </node>
-                    <node concept="liA8E" id="6ohPCO0AVUN" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.NONUNIQUE()" resolve="NONUNIQUE" />
-                    </node>
-                  </node>
-                  <node concept="10Nm6u" id="6ohPCO0AVUO" role="3uHU7w" />
-                </node>
-              </node>
-              <node concept="3clFbS" id="6ohPCO0AVUP" role="3clFbx">
-                <node concept="YS8fn" id="6ohPCO0AVUQ" role="3cqZAp">
-                  <node concept="2ShNRf" id="6ohPCO0AVUS" role="YScLw">
-                    <node concept="1pGfFk" id="6ohPCO0AVUU" role="2ShVmc">
-                      <property role="373rjd" value="true" />
-                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                      <node concept="Xl_RD" id="6ohPCO0AVUV" role="37wK5m">
-                        <property role="Xl_RC" value="Unsupported SysML v2 construct: name, multiplicity or nonunique on end keyword" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="6ohPCO0AVUW" role="3cqZAp">
               <node concept="3cpWsn" id="6ohPCO0AVUZ" role="3cpWs9">
                 <property role="TrG5h" value="endUsage" />
@@ -4823,6 +4771,17 @@
                 </node>
                 <node concept="3uibUv" id="6ohPCO0AVVb" role="1tU5fm">
                   <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7ij$Ne_2xmi" role="3cqZAp">
+              <node concept="1rXfSq" id="7ij$Ne_2xmj" role="3clFbG">
+                <ref role="37wK5l" node="7ij$Ne$G9lF" resolve="applyEndCrossFeature" />
+                <node concept="37vLTw" id="7ij$Ne_2xmk" role="37wK5m">
+                  <ref role="3cqZAo" node="6ohPCO0AVUZ" resolve="endUsage" />
+                </node>
+                <node concept="37vLTw" id="7ij$Ne_2xml" role="37wK5m">
+                  <ref role="3cqZAo" node="6ohPCO0AVU0" resolve="endOcc" />
                 </node>
               </node>
             </node>
@@ -12503,57 +12462,6 @@
             <node concept="10Nm6u" id="fNDJb8mS0R" role="3uHU7w" />
           </node>
           <node concept="3clFbS" id="fNDJb8mS0T" role="3clFbx">
-            <node concept="3clFbJ" id="fNDJb8mS0U" role="3cqZAp">
-              <node concept="22lmx$" id="fNDJb8mS0V" role="3clFbw">
-                <node concept="22lmx$" id="fNDJb8mS0W" role="3uHU7B">
-                  <node concept="3y3z36" id="fNDJb8mS0X" role="3uHU7B">
-                    <node concept="2OqwBi" id="fNDJb8n0r4" role="3uHU7B">
-                      <node concept="37vLTw" id="fNDJb8mWMS" role="2Oq$k0">
-                        <ref role="3cqZAo" node="fNDJb8mS0K" resolve="endOcc" />
-                      </node>
-                      <node concept="liA8E" id="fNDJb8n0r5" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.name()" resolve="name" />
-                      </node>
-                    </node>
-                    <node concept="10Nm6u" id="fNDJb8mS0Z" role="3uHU7w" />
-                  </node>
-                  <node concept="3y3z36" id="fNDJb8mS10" role="3uHU7w">
-                    <node concept="2OqwBi" id="fNDJb8n0rg" role="3uHU7B">
-                      <node concept="37vLTw" id="fNDJb8mX1i" role="2Oq$k0">
-                        <ref role="3cqZAo" node="fNDJb8mS0K" resolve="endOcc" />
-                      </node>
-                      <node concept="liA8E" id="fNDJb8n0rh" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.ownedCrossMultiplicityMember()" resolve="ownedCrossMultiplicityMember" />
-                      </node>
-                    </node>
-                    <node concept="10Nm6u" id="fNDJb8mS12" role="3uHU7w" />
-                  </node>
-                </node>
-                <node concept="3y3z36" id="fNDJb8mS13" role="3uHU7w">
-                  <node concept="2OqwBi" id="fNDJb8n0rs" role="3uHU7B">
-                    <node concept="37vLTw" id="fNDJb8mXfG" role="2Oq$k0">
-                      <ref role="3cqZAo" node="fNDJb8mS0K" resolve="endOcc" />
-                    </node>
-                    <node concept="liA8E" id="fNDJb8n0rt" role="2OqNvi">
-                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.NONUNIQUE()" resolve="NONUNIQUE" />
-                    </node>
-                  </node>
-                  <node concept="10Nm6u" id="fNDJb8mS15" role="3uHU7w" />
-                </node>
-              </node>
-              <node concept="3clFbS" id="fNDJb8mS17" role="3clFbx">
-                <node concept="YS8fn" id="fNDJb8mS1a" role="3cqZAp">
-                  <node concept="2ShNRf" id="fNDJb8mXfI" role="YScLw">
-                    <node concept="1pGfFk" id="fNDJb8mXlT" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                      <node concept="Xl_RD" id="fNDJb8mXlU" role="37wK5m">
-                        <property role="Xl_RC" value="Unsupported SysML v2 construct: name, multiplicity or nonunique on end keyword" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="fNDJb8mS1c" role="3cqZAp">
               <node concept="3cpWsn" id="fNDJb8mS1b" role="3cpWs9">
                 <property role="TrG5h" value="endUsage" />
@@ -12573,6 +12481,17 @@
                       </node>
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7ij$Ne_dCSl" role="3cqZAp">
+              <node concept="1rXfSq" id="7ij$Ne_dCSm" role="3clFbG">
+                <ref role="37wK5l" node="7ij$Ne$G9lF" resolve="applyEndCrossFeature" />
+                <node concept="37vLTw" id="7ij$Ne_dCSn" role="37wK5m">
+                  <ref role="3cqZAo" node="fNDJb8mS1b" resolve="endUsage" />
+                </node>
+                <node concept="37vLTw" id="7ij$Ne_dCSo" role="37wK5m">
+                  <ref role="3cqZAo" node="fNDJb8mS0K" resolve="endOcc" />
                 </node>
               </node>
             </node>
@@ -39073,6 +38992,513 @@
       <node concept="3uibUv" id="7O9Ql6_QJXZ" role="3clF45">
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
+    </node>
+    <node concept="2YIFZL" id="7ij$Ne$G8Fb" role="jymVt">
+      <property role="TrG5h" value="newEndCrossFeature" />
+      <node concept="3uibUv" id="7ij$Ne$G8Fe" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+      <node concept="3clFbS" id="7ij$Ne$G8Ff" role="3clF47">
+        <node concept="3cpWs8" id="7ij$Ne$G8Fg" role="3cqZAp">
+          <node concept="3cpWsn" id="7ij$Ne$G8Fh" role="3cpWs9">
+            <property role="TrG5h" value="cd" />
+            <node concept="2ShNRf" id="7ij$Ne$G8Fi" role="33vP2m">
+              <node concept="3zrR0B" id="7ij$Ne$G8Fj" role="2ShVmc">
+                <node concept="3Tqbb2" id="7ij$Ne$G8Fk" role="3zrR0E">
+                  <ref role="ehGHo" to="5rf1:7ij$Ne$beiH" resolve="SysMLv2EndCrossFeature" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Tqbb2" id="7ij$Ne$G8Fl" role="1tU5fm">
+              <ref role="ehGHo" to="5rf1:7ij$Ne$beiH" resolve="SysMLv2EndCrossFeature" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="7ij$Ne$G8Fm" role="3cqZAp">
+          <node concept="37vLTw" id="7ij$Ne$G8Fn" role="3cqZAk">
+            <ref role="3cqZAo" node="7ij$Ne$G8Fh" resolve="cd" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="7ij$Ne$G8Fo" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="7ij$Ne$G9jc" role="jymVt">
+      <property role="TrG5h" value="setEndFeature" />
+      <node concept="3cqZAl" id="7ij$Ne$G9jf" role="3clF45" />
+      <node concept="37vLTG" id="7ij$Ne$G9jg" role="3clF46">
+        <property role="TrG5h" value="usage" />
+        <node concept="3uibUv" id="7ij$Ne$G9jh" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7ij$Ne$G9ji" role="3clF46">
+        <property role="TrG5h" value="cross" />
+        <node concept="3uibUv" id="7ij$Ne$G9jj" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7ij$Ne$G9jk" role="3clF47">
+        <node concept="3clFbF" id="7ij$Ne$G9jl" role="3cqZAp">
+          <node concept="37vLTI" id="7ij$Ne$G9jm" role="3clFbG">
+            <node concept="2OqwBi" id="7ij$Ne$G9jn" role="37vLTJ">
+              <node concept="1PxgMI" id="7ij$Ne$G9jo" role="2Oq$k0">
+                <node concept="37vLTw" id="7ij$Ne$G9jp" role="1m5AlR">
+                  <ref role="3cqZAo" node="7ij$Ne$G9jg" resolve="usage" />
+                </node>
+                <node concept="chp4Y" id="7ij$Ne$G9jq" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:6coPuU3buuw" resolve="SysMLv2Usage" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="7ij$Ne$G9jr" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:7ij$Ne$bej0" resolve="endFeature" />
+              </node>
+            </node>
+            <node concept="1PxgMI" id="7ij$Ne$G9js" role="37vLTx">
+              <node concept="37vLTw" id="7ij$Ne$G9jt" role="1m5AlR">
+                <ref role="3cqZAo" node="7ij$Ne$G9ji" resolve="cross" />
+              </node>
+              <node concept="chp4Y" id="7ij$Ne$G9ju" role="3oSUPX">
+                <ref role="cht4Q" to="5rf1:7ij$Ne$beiH" resolve="SysMLv2EndCrossFeature" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="7ij$Ne$G9jv" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="7ij$Ne$G9jO" role="jymVt">
+      <property role="TrG5h" value="setEndCrossFeatureName" />
+      <node concept="3cqZAl" id="7ij$Ne$G9jR" role="3clF45" />
+      <node concept="37vLTG" id="7ij$Ne$G9jS" role="3clF46">
+        <property role="TrG5h" value="cross" />
+        <node concept="3uibUv" id="7ij$Ne$G9jT" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7ij$Ne$G9jU" role="3clF46">
+        <property role="TrG5h" value="text" />
+        <node concept="3uibUv" id="7ij$Ne$G9jV" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7ij$Ne$G9jW" role="3clF47">
+        <node concept="3clFbF" id="7ij$Ne$G9jX" role="3cqZAp">
+          <node concept="37vLTI" id="7ij$Ne$G9jY" role="3clFbG">
+            <node concept="2OqwBi" id="7ij$Ne$G9jZ" role="37vLTJ">
+              <node concept="1PxgMI" id="7ij$Ne$G9k0" role="2Oq$k0">
+                <node concept="37vLTw" id="7ij$Ne$G9k1" role="1m5AlR">
+                  <ref role="3cqZAo" node="7ij$Ne$G9jS" resolve="cross" />
+                </node>
+                <node concept="chp4Y" id="7ij$Ne$G9k2" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:7ij$Ne$beiH" resolve="SysMLv2EndCrossFeature" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="7ij$Ne$G9k3" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="7ij$Ne$G9k4" role="37vLTx">
+              <ref role="3cqZAo" node="7ij$Ne$G9jU" resolve="text" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="7ij$Ne$G9k5" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="7ij$Ne$G9kz" role="jymVt">
+      <property role="TrG5h" value="setEndCrossFeatureMultiplicity" />
+      <node concept="3cqZAl" id="7ij$Ne$G9kA" role="3clF45" />
+      <node concept="37vLTG" id="7ij$Ne$G9kB" role="3clF46">
+        <property role="TrG5h" value="cross" />
+        <node concept="3uibUv" id="7ij$Ne$G9kC" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7ij$Ne$G9kD" role="3clF46">
+        <property role="TrG5h" value="expr" />
+        <node concept="3uibUv" id="7ij$Ne$G9kE" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7ij$Ne$G9kF" role="3clF47">
+        <node concept="3clFbF" id="7ij$Ne$G9kG" role="3cqZAp">
+          <node concept="37vLTI" id="7ij$Ne$G9kH" role="3clFbG">
+            <node concept="2OqwBi" id="7ij$Ne$G9kI" role="37vLTJ">
+              <node concept="1PxgMI" id="7ij$Ne$G9kJ" role="2Oq$k0">
+                <node concept="37vLTw" id="7ij$Ne$G9kK" role="1m5AlR">
+                  <ref role="3cqZAo" node="7ij$Ne$G9kB" resolve="cross" />
+                </node>
+                <node concept="chp4Y" id="7ij$Ne$G9kL" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:7ij$Ne$beiH" resolve="SysMLv2EndCrossFeature" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="7ij$Ne$G9kM" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:7ij$Ne$beiJ" resolve="multiplicity" />
+              </node>
+            </node>
+            <node concept="1PxgMI" id="7ij$Ne$G9kN" role="37vLTx">
+              <node concept="37vLTw" id="7ij$Ne$G9kO" role="1m5AlR">
+                <ref role="3cqZAo" node="7ij$Ne$G9kD" resolve="expr" />
+              </node>
+              <node concept="chp4Y" id="7ij$Ne$G9kP" role="3oSUPX">
+                <ref role="cht4Q" to="5rf1:6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="7ij$Ne$G9kQ" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="7ij$Ne$G9l7" role="jymVt">
+      <property role="TrG5h" value="setEndCrossFeatureNonUnique" />
+      <node concept="3cqZAl" id="7ij$Ne$G9la" role="3clF45" />
+      <node concept="37vLTG" id="7ij$Ne$G9lb" role="3clF46">
+        <property role="TrG5h" value="cross" />
+        <node concept="3uibUv" id="7ij$Ne$G9lc" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7ij$Ne$G9ld" role="3clF47">
+        <node concept="3clFbF" id="7ij$Ne$G9le" role="3cqZAp">
+          <node concept="37vLTI" id="7ij$Ne$G9lf" role="3clFbG">
+            <node concept="2OqwBi" id="7ij$Ne$G9lg" role="37vLTJ">
+              <node concept="1PxgMI" id="7ij$Ne$G9lh" role="2Oq$k0">
+                <node concept="37vLTw" id="7ij$Ne$G9li" role="1m5AlR">
+                  <ref role="3cqZAo" node="7ij$Ne$G9lb" resolve="cross" />
+                </node>
+                <node concept="chp4Y" id="7ij$Ne$G9lj" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:7ij$Ne$beiH" resolve="SysMLv2EndCrossFeature" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="7ij$Ne$G9lk" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:7ij$Ne$beiI" resolve="isNonUnique" />
+              </node>
+            </node>
+            <node concept="3clFbT" id="7ij$Ne$G9ll" role="37vLTx">
+              <property role="3clFbU" value="true" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="7ij$Ne$G9lm" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="7ij$Ne$G9lF" role="jymVt">
+      <property role="TrG5h" value="applyEndCrossFeature" />
+      <node concept="37vLTG" id="7ij$Ne$G9lG" role="3clF46">
+        <property role="TrG5h" value="usage" />
+        <node concept="3uibUv" id="7ij$Ne$G9lH" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="7ij$Ne$G9lI" role="3clF46">
+        <property role="TrG5h" value="endOcc" />
+        <node concept="3uibUv" id="7ij$Ne$G9lJ" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext" resolve="SysMLv2Parser.EndOccurrenceUsageElementContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="7ij$Ne$G9lK" role="3clF47">
+        <node concept="3clFbJ" id="7ij$Ne$G9lL" role="3cqZAp">
+          <node concept="1Wc70l" id="7ij$Ne$G9lM" role="3clFbw">
+            <node concept="1Wc70l" id="7ij$Ne$G9lN" role="3uHU7B">
+              <node concept="3clFbC" id="7ij$Ne$G9lO" role="3uHU7B">
+                <node concept="2OqwBi" id="7ij$Ne$GgAd" role="3uHU7B">
+                  <node concept="37vLTw" id="7ij$Ne$Ge6J" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7ij$Ne$G9lI" resolve="endOcc" />
+                  </node>
+                  <node concept="liA8E" id="7ij$Ne$GgAe" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.name()" resolve="name" />
+                  </node>
+                </node>
+                <node concept="10Nm6u" id="7ij$Ne$G9lQ" role="3uHU7w" />
+              </node>
+              <node concept="3clFbC" id="7ij$Ne$G9lR" role="3uHU7w">
+                <node concept="2OqwBi" id="7ij$Ne$GgAo" role="3uHU7B">
+                  <node concept="37vLTw" id="7ij$Ne$Gela" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7ij$Ne$G9lI" resolve="endOcc" />
+                  </node>
+                  <node concept="liA8E" id="7ij$Ne$GgAp" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.ownedCrossMultiplicityMember()" resolve="ownedCrossMultiplicityMember" />
+                  </node>
+                </node>
+                <node concept="10Nm6u" id="7ij$Ne$G9lT" role="3uHU7w" />
+              </node>
+            </node>
+            <node concept="3clFbC" id="7ij$Ne$G9lU" role="3uHU7w">
+              <node concept="2OqwBi" id="7ij$Ne$GgAz" role="3uHU7B">
+                <node concept="37vLTw" id="7ij$Ne$Gez_" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7ij$Ne$G9lI" resolve="endOcc" />
+                </node>
+                <node concept="liA8E" id="7ij$Ne$GgA$" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.NONUNIQUE()" resolve="NONUNIQUE" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="7ij$Ne$G9lW" role="3uHU7w" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="7ij$Ne$G9lY" role="3clFbx">
+            <node concept="3cpWs6" id="7ij$Ne$G9lZ" role="3cqZAp" />
+          </node>
+        </node>
+        <node concept="3cpWs8" id="7ij$Ne$G9m1" role="3cqZAp">
+          <node concept="3cpWsn" id="7ij$Ne$G9m0" role="3cpWs9">
+            <property role="TrG5h" value="cross" />
+            <node concept="3uibUv" id="7ij$Ne$G9m2" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+            <node concept="1rXfSq" id="7ij$Ne$G9m3" role="33vP2m">
+              <ref role="37wK5l" node="7ij$Ne$G8Fb" resolve="newEndCrossFeature" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7ij$Ne$G9m4" role="3cqZAp">
+          <node concept="3y3z36" id="7ij$Ne$G9m5" role="3clFbw">
+            <node concept="2OqwBi" id="7ij$Ne$GgAI" role="3uHU7B">
+              <node concept="37vLTw" id="7ij$Ne$GeM0" role="2Oq$k0">
+                <ref role="3cqZAo" node="7ij$Ne$G9lI" resolve="endOcc" />
+              </node>
+              <node concept="liA8E" id="7ij$Ne$GgAJ" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.name()" resolve="name" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="7ij$Ne$G9m7" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="7ij$Ne$G9m9" role="3clFbx">
+            <node concept="3clFbF" id="7ij$Ne$G9ma" role="3cqZAp">
+              <node concept="1rXfSq" id="7ij$Ne$G9mb" role="3clFbG">
+                <ref role="37wK5l" node="7ij$Ne$G9jO" resolve="setEndCrossFeatureName" />
+                <node concept="37vLTw" id="7ij$Ne$G9mc" role="37wK5m">
+                  <ref role="3cqZAo" node="7ij$Ne$G9m0" resolve="cross" />
+                </node>
+                <node concept="2OqwBi" id="7ij$Ne$GgJx" role="37wK5m">
+                  <node concept="2OqwBi" id="7ij$Ne$GgB1" role="2Oq$k0">
+                    <node concept="37vLTw" id="7ij$Ne$Gf0z" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7ij$Ne$G9lI" resolve="endOcc" />
+                    </node>
+                    <node concept="liA8E" id="7ij$Ne$GgB2" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.name()" resolve="name" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7ij$Ne$GgJy" role="2OqNvi">
+                    <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7ij$Ne$G9mf" role="3cqZAp">
+          <node concept="3y3z36" id="7ij$Ne$G9mg" role="3clFbw">
+            <node concept="2OqwBi" id="7ij$Ne$GgBc" role="3uHU7B">
+              <node concept="37vLTw" id="7ij$Ne$GfeY" role="2Oq$k0">
+                <ref role="3cqZAo" node="7ij$Ne$G9lI" resolve="endOcc" />
+              </node>
+              <node concept="liA8E" id="7ij$Ne$GgBd" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.ownedCrossMultiplicityMember()" resolve="ownedCrossMultiplicityMember" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="7ij$Ne$G9mi" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="7ij$Ne$G9mk" role="3clFbx">
+            <node concept="3cpWs8" id="7ij$Ne$G9mm" role="3cqZAp">
+              <node concept="3cpWsn" id="7ij$Ne$G9ml" role="3cpWs9">
+                <property role="TrG5h" value="bounds" />
+                <node concept="3uibUv" id="7ij$Ne$G9mn" role="1tU5fm">
+                  <ref role="3uigEE" to="guqe:~SysMLv2Parser$MultiplicityBoundsContext" resolve="SysMLv2Parser.MultiplicityBoundsContext" />
+                </node>
+                <node concept="2OqwBi" id="7ij$Ne$GgMK" role="33vP2m">
+                  <node concept="2OqwBi" id="7ij$Ne$GgLQ" role="2Oq$k0">
+                    <node concept="2OqwBi" id="7ij$Ne$GgL0" role="2Oq$k0">
+                      <node concept="2OqwBi" id="7ij$Ne$GgKe" role="2Oq$k0">
+                        <node concept="2OqwBi" id="7ij$Ne$GgBR" role="2Oq$k0">
+                          <node concept="37vLTw" id="7ij$Ne$GftT" role="2Oq$k0">
+                            <ref role="3cqZAo" node="7ij$Ne$G9lI" resolve="endOcc" />
+                          </node>
+                          <node concept="liA8E" id="7ij$Ne$GgBS" role="2OqNvi">
+                            <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.ownedCrossMultiplicityMember()" resolve="ownedCrossMultiplicityMember" />
+                          </node>
+                        </node>
+                        <node concept="liA8E" id="7ij$Ne$GgKf" role="2OqNvi">
+                          <ref role="37wK5l" to="guqe:~SysMLv2Parser$OwnedCrossMultiplicityMemberContext.ownedCrossMultiplicity()" resolve="ownedCrossMultiplicity" />
+                        </node>
+                      </node>
+                      <node concept="liA8E" id="7ij$Ne$GgL1" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$OwnedCrossMultiplicityContext.ownedMultiplicity()" resolve="ownedMultiplicity" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="7ij$Ne$GgLR" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$OwnedMultiplicityContext.ownedMultiplicityRange()" resolve="ownedMultiplicityRange" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="7ij$Ne$GgML" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$OwnedMultiplicityRangeContext.multiplicityBounds()" resolve="multiplicityBounds" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7ij$Ne$G9mu" role="3cqZAp">
+              <node concept="3cpWsn" id="7ij$Ne$G9mt" role="3cpWs9">
+                <property role="TrG5h" value="members" />
+                <node concept="3uibUv" id="7ij$Ne$G9mv" role="1tU5fm">
+                  <ref role="3uigEE" to="33ny:~List" resolve="List" />
+                  <node concept="3uibUv" id="7ij$Ne$G9mw" role="11_B2D">
+                    <ref role="3uigEE" to="guqe:~SysMLv2Parser$MultiplicityExpressionMemberContext" resolve="SysMLv2Parser.MultiplicityExpressionMemberContext" />
+                  </node>
+                </node>
+                <node concept="2OqwBi" id="7ij$Ne$GgC3" role="33vP2m">
+                  <node concept="37vLTw" id="7ij$Ne$GfGk" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7ij$Ne$G9ml" resolve="bounds" />
+                  </node>
+                  <node concept="liA8E" id="7ij$Ne$GgC4" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$MultiplicityBoundsContext.multiplicityExpressionMember()" resolve="multiplicityExpressionMember" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7ij$Ne$G9mz" role="3cqZAp">
+              <node concept="3cpWsn" id="7ij$Ne$G9my" role="3cpWs9">
+                <property role="TrG5h" value="lower" />
+                <node concept="3uibUv" id="7ij$Ne$G9m$" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                </node>
+                <node concept="1rXfSq" id="7ij$Ne$G9m_" role="33vP2m">
+                  <ref role="37wK5l" node="6coPuU2M2ab" resolve="extractMultiplicityBoundText" />
+                  <node concept="2OqwBi" id="7ij$Ne$GgEn" role="37wK5m">
+                    <node concept="37vLTw" id="7ij$Ne$GfUJ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="7ij$Ne$G9mt" resolve="members" />
+                    </node>
+                    <node concept="liA8E" id="7ij$Ne$GgEo" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                      <node concept="3cmrfG" id="7ij$Ne$GgEp" role="37wK5m">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7ij$Ne$G9mD" role="3cqZAp">
+              <node concept="3cpWsn" id="7ij$Ne$G9mC" role="3cpWs9">
+                <property role="TrG5h" value="upper" />
+                <node concept="3uibUv" id="7ij$Ne$G9mE" role="1tU5fm">
+                  <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+                </node>
+                <node concept="3K4zz7" id="7ij$Ne$G9mM" role="33vP2m">
+                  <node concept="3clFbC" id="7ij$Ne$G9mF" role="3K4Cdx">
+                    <node concept="2OqwBi" id="7ij$Ne$GgGG" role="3uHU7B">
+                      <node concept="37vLTw" id="7ij$Ne$Gg9b" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7ij$Ne$G9mt" resolve="members" />
+                      </node>
+                      <node concept="liA8E" id="7ij$Ne$GgGH" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~List.size()" resolve="size" />
+                      </node>
+                    </node>
+                    <node concept="3cmrfG" id="7ij$Ne$G9mH" role="3uHU7w">
+                      <property role="3cmrfH" value="2" />
+                    </node>
+                  </node>
+                  <node concept="1rXfSq" id="7ij$Ne$G9mI" role="3K4E3e">
+                    <ref role="37wK5l" node="6coPuU2M2ab" resolve="extractMultiplicityBoundText" />
+                    <node concept="2OqwBi" id="7ij$Ne$GgJ0" role="37wK5m">
+                      <node concept="37vLTw" id="7ij$Ne$GgnA" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7ij$Ne$G9mt" resolve="members" />
+                      </node>
+                      <node concept="liA8E" id="7ij$Ne$GgJ1" role="2OqNvi">
+                        <ref role="37wK5l" to="33ny:~List.get(int)" resolve="get" />
+                        <node concept="3cmrfG" id="7ij$Ne$GgJ2" role="37wK5m">
+                          <property role="3cmrfH" value="1" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="7ij$Ne$G9mL" role="3K4GZi">
+                    <ref role="3cqZAo" node="7ij$Ne$G9my" resolve="lower" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="7ij$Ne$G9mO" role="3cqZAp">
+              <node concept="3cpWsn" id="7ij$Ne$G9mN" role="3cpWs9">
+                <property role="TrG5h" value="mult" />
+                <node concept="3uibUv" id="7ij$Ne$G9mP" role="1tU5fm">
+                  <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+                </node>
+                <node concept="1rXfSq" id="7ij$Ne$G9mQ" role="33vP2m">
+                  <ref role="37wK5l" node="7O9Ql6zrU6N" resolve="newMultiplicity" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7ij$Ne$G9mR" role="3cqZAp">
+              <node concept="1rXfSq" id="7ij$Ne$G9mS" role="3clFbG">
+                <ref role="37wK5l" node="7O9Ql6zrU5q" resolve="setMultiplicityLower" />
+                <node concept="37vLTw" id="7ij$Ne$G9mT" role="37wK5m">
+                  <ref role="3cqZAo" node="7ij$Ne$G9mN" resolve="mult" />
+                </node>
+                <node concept="37vLTw" id="7ij$Ne$G9mU" role="37wK5m">
+                  <ref role="3cqZAo" node="7ij$Ne$G9my" resolve="lower" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7ij$Ne$G9mV" role="3cqZAp">
+              <node concept="1rXfSq" id="7ij$Ne$G9mW" role="3clFbG">
+                <ref role="37wK5l" node="7O9Ql6zrU5E" resolve="setMultiplicityUpper" />
+                <node concept="37vLTw" id="7ij$Ne$G9mX" role="37wK5m">
+                  <ref role="3cqZAo" node="7ij$Ne$G9mN" resolve="mult" />
+                </node>
+                <node concept="37vLTw" id="7ij$Ne$G9mY" role="37wK5m">
+                  <ref role="3cqZAo" node="7ij$Ne$G9mC" resolve="upper" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="7ij$Ne$G9mZ" role="3cqZAp">
+              <node concept="1rXfSq" id="7ij$Ne$G9n0" role="3clFbG">
+                <ref role="37wK5l" node="7ij$Ne$G9kz" resolve="setEndCrossFeatureMultiplicity" />
+                <node concept="37vLTw" id="7ij$Ne$G9n1" role="37wK5m">
+                  <ref role="3cqZAo" node="7ij$Ne$G9m0" resolve="cross" />
+                </node>
+                <node concept="37vLTw" id="7ij$Ne$G9n2" role="37wK5m">
+                  <ref role="3cqZAo" node="7ij$Ne$G9mN" resolve="mult" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="7ij$Ne$G9n3" role="3cqZAp">
+          <node concept="3y3z36" id="7ij$Ne$G9n4" role="3clFbw">
+            <node concept="2OqwBi" id="7ij$Ne$GgJc" role="3uHU7B">
+              <node concept="37vLTw" id="7ij$Ne$GgA2" role="2Oq$k0">
+                <ref role="3cqZAo" node="7ij$Ne$G9lI" resolve="endOcc" />
+              </node>
+              <node concept="liA8E" id="7ij$Ne$GgJd" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$EndOccurrenceUsageElementContext.NONUNIQUE()" resolve="NONUNIQUE" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="7ij$Ne$G9n6" role="3uHU7w" />
+          </node>
+          <node concept="3clFbS" id="7ij$Ne$G9n8" role="3clFbx">
+            <node concept="3clFbF" id="7ij$Ne$G9n9" role="3cqZAp">
+              <node concept="1rXfSq" id="7ij$Ne$G9na" role="3clFbG">
+                <ref role="37wK5l" node="7ij$Ne$G9l7" resolve="setEndCrossFeatureNonUnique" />
+                <node concept="37vLTw" id="7ij$Ne$G9nb" role="37wK5m">
+                  <ref role="3cqZAo" node="7ij$Ne$G9m0" resolve="cross" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="7ij$Ne$G9nc" role="3cqZAp">
+          <node concept="1rXfSq" id="7ij$Ne$G9nd" role="3clFbG">
+            <ref role="37wK5l" node="7ij$Ne$G9jc" resolve="setEndFeature" />
+            <node concept="37vLTw" id="7ij$Ne$G9ne" role="37wK5m">
+              <ref role="3cqZAo" node="7ij$Ne$G9lG" resolve="usage" />
+            </node>
+            <node concept="37vLTw" id="7ij$Ne$G9nf" role="37wK5m">
+              <ref role="3cqZAo" node="7ij$Ne$G9m0" resolve="cross" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="7ij$Ne$G9ng" role="1B3o_S" />
+      <node concept="3cqZAl" id="7ij$Ne$G9nh" role="3clF45" />
     </node>
   </node>
   <node concept="312cEu" id="7JKstLNlJ4o">

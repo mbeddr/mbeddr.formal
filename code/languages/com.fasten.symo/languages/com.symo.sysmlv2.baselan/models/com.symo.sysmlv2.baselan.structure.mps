@@ -760,6 +760,12 @@
     <node concept="PrWs8" id="6jBzJlBxw5_" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
     </node>
+    <node concept="1TJgyj" id="7ij$Ne$bej0" role="1TKVEi">
+      <property role="IQ2ns" value="8400219579983127744" />
+      <property role="20kJfa" value="endFeature" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="7ij$Ne$beiH" resolve="SysMLv2EndCrossFeature" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU3buux">
     <property role="EcuMT" value="7140692429575677857" />
@@ -2242,6 +2248,27 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7ij$Nezl5Di" role="PzmwI">
       <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ij$Ne$beiH">
+    <property role="EcuMT" value="8400219579983127725" />
+    <property role="TrG5h" value="SysMLv2EndCrossFeature" />
+    <property role="R4oN_" value="cross feature of an end usage: optional name, multiplicity and nonunique between 'end' and the usage keyword" />
+    <property role="3GE5qa" value="base" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7ij$Ne$beiI" role="1TKVEl">
+      <property role="IQ2nx" value="8400219579983127726" />
+      <property role="TrG5h" value="isNonUnique" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="7ij$Ne$beiJ" role="1TKVEi">
+      <property role="IQ2ns" value="8400219579983127727" />
+      <property role="20kJfa" value="multiplicity" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+    </node>
+    <node concept="PrWs8" id="7ij$Ne$beiK" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>
 </model>
