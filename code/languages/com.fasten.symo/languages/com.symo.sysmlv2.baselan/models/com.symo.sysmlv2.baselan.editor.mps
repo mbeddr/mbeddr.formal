@@ -11180,5 +11180,57 @@
       <node concept="l2Vlx" id="7O9Ql6$Li0S" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="7O9Ql6_QJNb">
+    <property role="3GE5qa" value="state" />
+    <ref role="1XX52x" to="5rf1:7O9Ql6_QG4j" resolve="SysMLv2TransitionUsage" />
+    <node concept="3EZMnI" id="7O9Ql6_QJNd" role="2wV5jI">
+      <node concept="l2Vlx" id="7O9Ql6_QJNe" role="2iSdaV" />
+      <node concept="PMmxH" id="7O9Ql6_QJNY" role="3EZMnx">
+        <ref role="PMmxG" node="fNDJb1yvmt" resolve="ISysMLv2Member_Visibility" />
+      </node>
+      <node concept="3F0ifn" id="7O9Ql6_QJNf" role="3EZMnx">
+        <property role="3F0ifm" value="transition" />
+      </node>
+      <node concept="3F0A7n" id="7O9Ql6_QJNi" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="7O9Ql6_QJNj" role="3EZMnx">
+        <property role="3F0ifm" value="first" />
+      </node>
+      <node concept="3F1sOY" id="7O9Ql6_QJNl" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:7O9Ql6_QG4k" resolve="source" />
+      </node>
+      <node concept="3F0ifn" id="7O9Ql6_QJNo" role="3EZMnx">
+        <property role="3F0ifm" value="then" />
+      </node>
+      <node concept="3F1sOY" id="7O9Ql6_QJNq" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:7O9Ql6_QG4l" resolve="target" />
+      </node>
+      <node concept="3F0ifn" id="7O9Ql6_QJOe" role="3EZMnx">
+        <property role="3F0ifm" value=";" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7O9Ql6Cwnoo">
+    <property role="TrG5h" value="SysMLv2FeatureChainEnd_Editor" />
+    <property role="3GE5qa" value="connection" />
+    <ref role="1XX52x" to="5rf1:7O9Ql6Cf9IB" resolve="SysMLv2FeatureChainEnd" />
+    <node concept="3EZMnI" id="7O9Ql6Cwnop" role="2wV5jI">
+      <node concept="3F2HdR" id="7O9Ql6CwnoI" role="3EZMnx">
+        <property role="2czwfO" value="." />
+        <ref role="1NtTu8" to="5rf1:7ij$Nezl5Dy" resolve="chain" />
+        <node concept="l2Vlx" id="7O9Ql6CwnoJ" role="2czzBx" />
+        <node concept="tppnM" id="7O9Ql6CwnoK" role="sWeuL">
+          <node concept="11L4FC" id="7O9Ql6CwnoL" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="11LMrY" id="7O9Ql6CwnoM" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="l2Vlx" id="7O9Ql6CwnoN" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

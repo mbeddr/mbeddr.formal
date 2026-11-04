@@ -1146,21 +1146,18 @@
   <node concept="1TIwiD" id="BOR0Mn7r__">
     <property role="EcuMT" value="717440187291777381" />
     <property role="TrG5h" value="SysMLv2ConnectorEnd" />
-    <property role="R4oN_" value="connector end: feature chain a.b.c" />
+    <property role="R4oN_" value="connector end: optional end multiplicity and name, then a feature chain a.b.c" />
     <property role="3GE5qa" value="connection" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" node="7ij$Nezl5Dh" resolve="SysMLv2ChainEnd" />
+    <node concept="PrWs8" id="fNDJbaAFwY" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
     <node concept="1TJgyj" id="BOR0Mn7r_E" role="1TKVEi">
       <property role="IQ2ns" value="717440187291777386" />
       <property role="20kJfa" value="chain" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
-    </node>
-    <node concept="PrWs8" id="BOR0Mn7r_F" role="PzmwI">
-      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
-    </node>
-    <node concept="PrWs8" id="fNDJbaAFwY" role="PzmwI">
-      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
     </node>
     <node concept="1TJgyj" id="7O9Ql6zbBv1" role="1TKVEi">
       <property role="IQ2ns" value="9009971474184697793" />
@@ -2194,6 +2191,57 @@
     </node>
     <node concept="PrWs8" id="7O9Ql6$x0kE" role="PzmwI">
       <ref role="PrY4T" node="3MUZSeHM$aL" resolve="ISysMLv2ConnectorAsUsage" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7O9Ql6_QG4j">
+    <property role="EcuMT" value="9009971474229543187" />
+    <property role="TrG5h" value="SysMLv2TransitionUsage" />
+    <property role="34LRSv" value="transition" />
+    <property role="R4oN_" value="Explicit state transition with source and target; trigger, guard and effect are pending." />
+    <property role="3GE5qa" value="state" />
+    <property role="OYnhT" value="Explicit transition with source and target feature chains. Inherited usage feature parts are deliberately hidden until supported by the transition syntax and importer." />
+    <ref role="1TJDcQ" node="3MUZSeHM$aK" resolve="SysMLv2ActionUsage" />
+    <node concept="1TJgyj" id="7O9Ql6_QG4k" role="1TKVEi">
+      <property role="IQ2ns" value="9009971474229543188" />
+      <property role="20kJfa" value="source" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7O9Ql6Cf9IB" resolve="SysMLv2FeatureChainEnd" />
+    </node>
+    <node concept="1TJgyj" id="7O9Ql6_QG4l" role="1TKVEi">
+      <property role="IQ2ns" value="9009971474229543189" />
+      <property role="20kJfa" value="target" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
+    </node>
+    <node concept="PrWs8" id="7O9Ql6BSUW7" role="PzmwI">
+      <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7O9Ql6Cf9IB">
+    <property role="EcuMT" value="9009971474269510567" />
+    <property role="TrG5h" value="SysMLv2FeatureChainEnd" />
+    <property role="R4oN_" value="feature chain a.b.c that ends a transition; no end name or multiplicity" />
+    <property role="3GE5qa" value="connection" />
+    <ref role="1TJDcQ" node="7ij$Nezl5Dh" resolve="SysMLv2ChainEnd" />
+    <node concept="1TJgyj" id="7ij$Nezl5Dy" role="1TKVEi">
+      <property role="IQ2ns" value="8400219579968936546" />
+      <property role="20kJfa" value="chain" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ij$Nezl5Dh">
+    <property role="EcuMT" value="8400219579968936529" />
+    <property role="TrG5h" value="SysMLv2ChainEnd" />
+    <property role="R4oN_" value="abstract end of a connector, succession or transition: a feature chain a.b.c; the scope logic is shared" />
+    <property role="R5$K7" value="true" />
+    <property role="3GE5qa" value="connection" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="7ij$Nezl5Di" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
     </node>
   </node>
 </model>

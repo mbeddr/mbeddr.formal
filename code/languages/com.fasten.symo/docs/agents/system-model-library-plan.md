@@ -667,6 +667,80 @@ Prerequisite of 2b (`succession first [0..1] a then [0..1] b`, `States.sysml:71`
 
 `succession [name] first a then b;` and the keyword-less short form `first a then b;`. Concept `SysMLv2SuccessionUsage` (extends `SysMLv2BodiedUsage`, implements `ISysMLv2ConnectorAsUsage`; property `withKeyword` distinguishes the two spellings); the ends are `SysMLv2ConnectorEnd`s, so the multiplicity of Step 19 applies (`first [0..1] a then [0..*] b`). Editor and TextGen mirror each other (ADR 0006); the inherited value cells are hidden on purpose. Importer: `newSuccessionUsage`, `visitSuccessionAsUsage`, dispatched from `visitNonOccurrenceUsageElement`. Tests: importer `_520_SuccessionUsageTest` (both spellings, end multiplicities, `abstract` prefix; successions in `state def` and `part def` bodies), mutation-checked with non-canonical input; `_130` `testSuccessionWithSpecializationRejected`. Sandbox: part def `Sequence` in `_230_state_action_members`. Probe 48 -> 49 (`States.sysml` now OK); full suite 492 tests, only the 2 known plantuml failures. Decisions: the inherited feature parts of the succession are deliberately hidden (documented in the concept's `shortDescription`, ADR 0006), specialization on a succession stays rejected (`Flows.sysml` fails there; needs the spec's declaration part, a later step); no check rule for a name without the keyword (editor and text both hide it); interface bodies only accept attribute usages today, so a succession in an interface body is rejected by the existing "non-attribute usage in interface body" check (part of the `Interfaces.sysml` work), and the variant dispatch is not exercised yet.
 
+### Planned step 2c: transitions, split into small slices
+
+The slices below are planned, not implemented. Check the spec and the grammar before choosing the
+structure for each slice; do not assume that a transition or an implicit succession has the same
+structure as `SysMLv2SuccessionUsage`. Keep unsupported alternatives as explicit rejections until
+they are implemented. Each feature slice includes matching structure, editor and text generation,
+importer dispatch, a sandbox example, meaningful tests and mutation checks. Validate placement in
+the sandbox as well as importer round trips; run focused tests during a slice and the full suite at
+its end.
+
+1. **Explicit, unguarded transitions in state bodies.** Support the simple named and unnamed
+   `transition [name] first source then target;` forms, including state definitions and state
+   usages. Test source and target feature chains and member visibility where the grammar permits
+   it. Update the existing rejection test for the newly supported form; explicitly reject triggers,
+   guards, effects, unsupported declarations and bodies rather than dropping them.
+2. **Accept trigger on explicit transitions.** Add the payload and optional `via` receiver for the
+   library form `transition aTransition first start accept apayload: Anything via receiver then
+   done;`. Test the exact library shape and a trigger without `via`; reject other payload and trigger
+   forms until supported. Preserve the payload's declaration and receiver expression in the model.
+3. **Guards and effects on explicit transitions.** Add `if` guard expressions and the supported
+   `do` effect action form, reusing existing expression and action concepts where appropriate.
+   Test each clause separately and together with an accept trigger; reject effect alternatives not
+   implemented in this slice.
+4. **Implicit state transitions.** Handle `targetTransitionUsageMember` after a behavior usage and
+   `entryTransitionMember` after an entry action, including bare `then` targets first. Add triggered,
+   guarded or effect variants only when their constituent forms are supported, with tests that
+   preserve the relationship to the preceding member. Cover `sourceSuccessionMember` separately
+   if it is needed for the supported examples.
+5. **Action-body sequencing.** Implement the separate action-body `then` forms required by the
+   library, starting with supported behavior usages and `sourceSuccessionMember`. Audit the actual
+   next probe failure before adding action nodes such as assignment and while loops; those are
+   separate constructs and should not be silently represented as transitions. Handle guarded or
+   default target successions only in focused follow-up slices as needed.
+
+After slice 2, rerun the library probe to learn the next actual `Actions.sysml` blocker; passing its
+transition does not imply the rest of the file imports. Rerun the probe and full suite after the
+remaining relevant slices and record the results here.
+
+**Slice 1 result (2026-11-04):** `SysMLv2TransitionUsage` extends `SysMLv2ActionUsage`, with source
+and target connector-end children, an editor, textgen and a state-only placement constraint. The
+state-body importer supports `transition [name] first source then target;`, visibility and feature
+chains. `_530_TransitionUsageTest` covers state definitions and state usages; mutating the textgen
+keyword made both round-trip tests fail, and restoring it made them pass. `_130` explicitly rejects
+accept triggers, guards, effects, action bodies and specialized declarations. Replacing the four
+new latter inputs with a supported bare transition made exactly those four tests fail; restored.
+
+The sandbox `_230_state_action_members` has two states and a transition. Its initial check exposed
+out-of-scope references: state definitions are not feature owners, so connector-end scope now reads
+their body members for transition ends, while state usages use their existing feature-owner scope.
+`_030_PartUsagePlacement` covers both valid parents and an invalid part-definition parent; changing
+an end reference to a state in another owner made the error-message check fail, and restoring it
+passed. Sandbox model check is clean except accepted empty-enumeration errors. Language and importer
+makes succeeded. The full project run log recorded 499 tests started and finished, with the same
+two known PlantUML editor failures; the run-configuration tool returned before completion, so a
+final exit code was unavailable.
+
+Remaining boundaries: the importer deliberately rejects the grammar's form without `first`, short
+names, trigger/guard/effect clauses, specialized declarations and transition bodies. The source is
+represented with a chain-only end (see the refactor below). Inherited usage feature parts are hidden
+and documented on the transition concept. Slice 2 adds the accept trigger.
+
+**Refactor: chain-only transition source (2026-11-04).** The source no longer uses `SysMLv2ConnectorEnd`
+(which allows an end name and multiplicity that are illegal on a transition source). New abstract
+`SysMLv2ChainEnd` (implements `ScopeProvider`) carries the scope and chain behavior (the behavior root
+`SysMLv2ChainEnd_Behavior` reads `this.children.ofConcept<SysMLv2UsageRef>`, so it does not depend on one
+link). `SysMLv2ConnectorEnd` and `SysMLv2FeatureChainEnd` both extend it; the former keeps its `chain`, name and
+multiplicity, the latter has its own `chain` link (1..n usage refs) and nothing else. `SysMLv2TransitionUsage.source`
+is `SysMLv2FeatureChainEnd`, `target` stays a full `SysMLv2ConnectorEnd` (grammar `connectorEnd`). Editor,
+TextGen and importer (`createFeatureChainEnd`) were repointed. A first attempt moved the `chain` link into the
+super-concept and broke 116 persisted instances (see `docs/agents/mps-gotchas.md`, 2026-11-04). The four
+persisted transition sources (sandbox `_230_state_action_members`, three in `_030_PartUsagePlacement`) were
+replaced by feature chain ends. Test `testTransitionSourceIsChainOnlyEnd` (mutation-checked) asserts the
+imported concept. Full project run: 500 tests, only the two known PlantUML failures.
+
 ## MVP: component architecture modeling without behavior (user, 2026-10-25)
 **Definition.** A textual SysML v2 component model can be written or imported, edited in MPS with working references and
 shown without gaps. **No diagram in the MVP.** Behavior (states, actions, use cases, sequences), requirements, allocations

@@ -12,6 +12,12 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Moving a containment link to a super-concept strands persisted children; `children.ofConcept` needs `.toList` (2026-11-04)
+
+- A containment link is identified by (declaring concept, link id). If you move a link declaration from concept `A` up into an abstract super-concept `B` (even keeping the same link id), every persisted `A` instance has its children stored under a role that is no longer `A`'s own link: `print_node` shows `declared:false`, editors and tests fail, and the full suite breaks (14 failures, 116 instances in our case). To share a link across two concepts, do NOT move it. Leave the link where it is and give the second concept its own link, with a common abstract base that carries only behavior (scopes, helpers) reading `this.children.ofConcept<X>`. Moving it back (`alter_nodes MOVE_NODE_TO_PARENT`) restores validity.
+- Narrowing a child role's type (`source: ConnectorEnd` to `FeatureChainEnd`) leaves persisted children of the old type in place ("Incompatible target concept in the child role"). Find the owners with `query_nodes FIND_INSTANCES`, then replace each child with `update_node SET CHILD` (`childNodeRef` plus `childJson`). References of the new child (e.g. `usage`) are set in a second `update_node SET REFERENCE` call; new node ids are consecutive after the parent.
+- In behavior code, `this.children.ofConcept<X>` generates `CollectionSequence.fromCollection(Iterable)`, which does not compile. Insert `.toList` after `children`; when you then call `.get(i)`, add another `.toList` after `ofConcept<X>` (`.last` only needs the first one).
+
 ## Importer tests do not see placement constraints; `parse_java_and_insert` leaves `SNode` unresolved (2026-11-03)
 
 - A new concept can round-trip through the importer and still be unusable in the editor: parsing builds the tree without checking `can be child`. Always check a sandbox root (`check_root_node_problems`) for "cannot be child" errors, and add a nested usage to a placement test (`_030_PartUsagePlacement`).

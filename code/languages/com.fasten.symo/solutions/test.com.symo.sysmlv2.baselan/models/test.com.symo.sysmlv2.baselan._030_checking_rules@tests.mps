@@ -38,6 +38,10 @@
       </concept>
     </language>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
+      <concept id="6353433212885159896" name="com.symo.sysmlv2.baselan.structure.SysMLv2BodiedDefinition" flags="ng" index="66U80">
+        <child id="6353433212885159902" name="content" index="66U86" />
+      </concept>
+      <concept id="6353433212885159927" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateDefinition" flags="ng" index="66U8J" />
       <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
         <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
         <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
@@ -74,6 +78,14 @@
       </concept>
       <concept id="6353433212932081522" name="com.symo.sysmlv2.baselan.structure.SysMLv2BodiedUsage" flags="ng" index="SPUEE">
         <child id="6353433212932081538" name="content" index="SPUDq" />
+      </concept>
+      <concept id="6353433212932081524" name="com.symo.sysmlv2.baselan.structure.SysMLv2StateUsage" flags="ng" index="SPUEG" />
+      <concept id="9009971474269510567" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureChainEnd" flags="ng" index="3ldkbQ">
+        <child id="8400219579968936546" name="chain" index="3nLW_h" />
+      </concept>
+      <concept id="9009971474229543187" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionUsage" flags="ng" index="3oOLx2">
+        <child id="9009971474229543189" name="target" index="3oOLx4" />
+        <child id="9009971474229543188" name="source" index="3oOLx5" />
       </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
@@ -702,6 +714,26 @@
             <node concept="8GF0z" id="fNDJb6$SUF" role="3w00ZY">
               <property role="TrG5h" value="wheel" />
             </node>
+            <node concept="3oOLx2" id="7O9Ql6BSSKw" role="3w00ZY">
+              <property role="TrG5h" value="misplacedTransition" />
+              <node concept="3ldkbQ" id="7ij$Ne$88nz" role="3oOLx5">
+                <node concept="3wdj9f" id="7ij$Ne$88n$" role="3nLW_h">
+                  <ref role="3wdj98" node="fNDJb6$SUF" resolve="wheel" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="7O9Ql6BSSKz" role="3oOLx4">
+                <node concept="3wdj9f" id="7O9Ql6BSSK$" role="2uUmlA">
+                  <ref role="3wdj98" node="fNDJb6$SUF" resolve="wheel" />
+                </node>
+              </node>
+              <node concept="7CXmI" id="7O9Ql6BSSK_" role="lGtFl">
+                <node concept="39XrGg" id="7O9Ql6BSSKA" role="7EUXB">
+                  <node concept="2u4KIi" id="7O9Ql6BSSKB" role="39rjcI">
+                    <ref role="39XzEq" to="kuyq:7O9Ql6_QJRL" />
+                  </node>
+                </node>
+              </node>
+            </node>
           </node>
           <node concept="8EhVW" id="6jBzJlBKPxa" role="3Z9vGx">
             <property role="TrG5h" value="Payload" />
@@ -743,6 +775,50 @@
             <property role="TrG5h" value="pe" />
             <node concept="8GF0z" id="7O9Ql6vCLmE" role="SPUDq">
               <property role="TrG5h" value="pePart" />
+            </node>
+          </node>
+          <node concept="66U8J" id="7O9Ql6BSRJh" role="3Z9vGx">
+            <property role="TrG5h" value="StatePlacement" />
+            <node concept="SPUEG" id="7O9Ql6BSRJw" role="66U86">
+              <property role="TrG5h" value="startState" />
+            </node>
+            <node concept="SPUEG" id="7O9Ql6BSRJx" role="66U86">
+              <property role="TrG5h" value="endState" />
+            </node>
+            <node concept="3oOLx2" id="7O9Ql6BSRJY" role="66U86">
+              <property role="TrG5h" value="move" />
+              <node concept="3ldkbQ" id="7ij$Ne$88nZ" role="3oOLx5">
+                <node concept="3wdj9f" id="7ij$Ne$88o0" role="3nLW_h">
+                  <ref role="3wdj98" node="7O9Ql6BSRJw" resolve="startState" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="7O9Ql6BSRK1" role="3oOLx4">
+                <node concept="3wdj9f" id="7O9Ql6BSRK2" role="2uUmlA">
+                  <ref role="3wdj98" node="7O9Ql6BSRJx" resolve="endState" />
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="SPUEG" id="7O9Ql6BSRJi" role="3Z9vGx">
+            <property role="TrG5h" value="NestedStatePlacement" />
+            <node concept="SPUEG" id="7O9Ql6BSRJy" role="SPUDq">
+              <property role="TrG5h" value="startState" />
+            </node>
+            <node concept="SPUEG" id="7O9Ql6BSRJK" role="SPUDq">
+              <property role="TrG5h" value="endState" />
+            </node>
+            <node concept="3oOLx2" id="7O9Ql6BSRK3" role="SPUDq">
+              <property role="TrG5h" value="move" />
+              <node concept="3ldkbQ" id="7ij$Ne$88o1" role="3oOLx5">
+                <node concept="3wdj9f" id="7ij$Ne$88o2" role="3nLW_h">
+                  <ref role="3wdj98" node="7O9Ql6BSRJy" resolve="startState" />
+                </node>
+              </node>
+              <node concept="2uUmlD" id="7O9Ql6BSRK6" role="3oOLx4">
+                <node concept="3wdj9f" id="7O9Ql6BSRK7" role="2uUmlA">
+                  <ref role="3wdj98" node="7O9Ql6BSRJK" resolve="endState" />
+                </node>
+              </node>
             </node>
           </node>
         </node>

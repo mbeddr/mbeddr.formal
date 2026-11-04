@@ -160,6 +160,13 @@
       <concept id="7267068243734581638" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Type" flags="ngI" index="3eyS6m">
         <property id="7267068243734581640" name="isAbstract" index="3eyS6o" />
       </concept>
+      <concept id="9009971474269510567" name="com.symo.sysmlv2.baselan.structure.SysMLv2FeatureChainEnd" flags="ng" index="3ldkbQ">
+        <child id="8400219579968936546" name="chain" index="3nLW_h" />
+      </concept>
+      <concept id="9009971474229543187" name="com.symo.sysmlv2.baselan.structure.SysMLv2TransitionUsage" flags="ng" index="3oOLx2">
+        <child id="9009971474229543189" name="target" index="3oOLx4" />
+        <child id="9009971474229543188" name="source" index="3oOLx5" />
+      </concept>
       <concept id="9009971474207081768" name="com.symo.sysmlv2.baselan.structure.SysMLv2SuccessionUsage" flags="ng" index="3pztLT">
         <property id="9009971474207081769" name="withKeyword" index="3pztLS" />
       </concept>
@@ -2331,6 +2338,25 @@
           </node>
         </node>
         <node concept="3sYOoD" id="7O9Ql6z7OSU" role="66U86" />
+        <node concept="SPUEG" id="7O9Ql6AO9zC" role="66U86">
+          <property role="TrG5h" value="Ready" />
+        </node>
+        <node concept="SPUEG" id="7O9Ql6AO9zD" role="66U86">
+          <property role="TrG5h" value="Done" />
+        </node>
+        <node concept="3oOLx2" id="7O9Ql6AO9zR" role="66U86">
+          <property role="TrG5h" value="advance" />
+          <node concept="3ldkbQ" id="7ij$Ne$88nx" role="3oOLx5">
+            <node concept="3wdj9f" id="7ij$Ne$88ny" role="3nLW_h">
+              <ref role="3wdj98" node="7O9Ql6AO9zC" resolve="Ready" />
+            </node>
+          </node>
+          <node concept="2uUmlD" id="7O9Ql6AO9zU" role="3oOLx4">
+            <node concept="3wdj9f" id="7O9Ql6AO9zV" role="2uUmlA">
+              <ref role="3wdj98" node="7O9Ql6AO9zD" resolve="Done" />
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="SPUEG" id="7O9Ql6z7OSV" role="3Z9vGx">
         <property role="TrG5h" value="idle" />

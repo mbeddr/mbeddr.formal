@@ -1428,5 +1428,34 @@
       </node>
     </node>
   </node>
+  <node concept="1M2fIO" id="7O9Ql6_QJRK">
+    <property role="3GE5qa" value="state" />
+    <property role="TrG5h" value="SysMLv2TransitionUsage_Constraints" />
+    <ref role="1M2myG" to="5rf1:7O9Ql6_QG4j" resolve="SysMLv2TransitionUsage" />
+    <node concept="9S07l" id="7O9Ql6_QJRL" role="9Vyp8">
+      <node concept="3clFbS" id="7O9Ql6_QJRM" role="2VODD2">
+        <node concept="3clFbF" id="7O9Ql6_QJRN" role="3cqZAp">
+          <node concept="22lmx$" id="7O9Ql6_QJRO" role="3clFbG">
+            <node concept="2OqwBi" id="7O9Ql6_QJRP" role="3uHU7B">
+              <node concept="nLn13" id="7O9Ql6_QJRQ" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="7O9Ql6_QJRR" role="2OqNvi">
+                <node concept="chp4Y" id="7O9Ql6_QJRS" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:5wFVtxuc4ZR" resolve="SysMLv2StateDefinition" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="7O9Ql6_QJRT" role="3uHU7w">
+              <node concept="nLn13" id="7O9Ql6_QJRU" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="7O9Ql6_QJRV" role="2OqNvi">
+                <node concept="chp4Y" id="7O9Ql6_QJRW" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tO" resolve="SysMLv2StateUsage" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
