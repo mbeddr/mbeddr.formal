@@ -12,6 +12,12 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Grammar cells, test strings, MCP timeouts (2026-11-05)
+
+- The grammar-cells generator rejects a `CellModel_Component` inside an `OptionalCell` ("Content of optional cell is not supported"); inline the component's optional cell instead.
+- `StringLiteral` values in blueprints must contain backslash-n escapes, not raw newlines, or the test string stores a literal line break.
+- The MCP server can time out or disconnect under MPS load (MODAL_BLOCKED, ECONNREFUSED). After restarting MPS, reconnect with `/mcp` or restart the session. An insert that timed out may still have landed; check before retrying.
+
 ## MCP mechanics: child-mode method insert, stale callers, top-level triplets, inherited-feature editors, interface on a link target (2026-11-04)
 
 - `parse_java_and_insert` with `insert: {"mode":"child","parentRef":<class root>,"role":"member"}` adds a new method; `append`/`add` are rejected. A call to a method that did not exist at parse time becomes an `UnknownInstanceMethodCall` that `FIX_REFERENCES` does not repair; insert the callee first, then re-insert (replace) the caller.

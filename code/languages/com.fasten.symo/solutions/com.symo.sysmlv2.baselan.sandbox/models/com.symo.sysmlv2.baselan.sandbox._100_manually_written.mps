@@ -199,6 +199,21 @@
       <concept id="9009971474163998582" name="com.symo.sysmlv2.baselan.structure.SysMLv2EntryActionMember" flags="ng" index="3sYOoB" />
       <concept id="9009971474163998584" name="com.symo.sysmlv2.baselan.structure.SysMLv2ExitActionMember" flags="ng" index="3sYOoD" />
       <concept id="9009971474147082589" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReturnAttributeUsage" flags="ng" index="3tYlwc" />
+      <concept id="8400219580107005963" name="com.symo.sysmlv2.baselan.structure.SysMLv2IncludeUseCaseUsage" flags="ng" index="3v7bcS">
+        <child id="8400219580107005967" name="included" index="3v7bcW" />
+      </concept>
+      <concept id="8400219580107005962" name="com.symo.sysmlv2.baselan.structure.SysMLv2ExhibitStateUsage" flags="ng" index="3v7bcT">
+        <child id="8400219580107005966" name="exhibited" index="3v7bcX" />
+      </concept>
+      <concept id="8400219580107005961" name="com.symo.sysmlv2.baselan.structure.SysMLv2PerformActionUsage" flags="ng" index="3v7bcU">
+        <child id="8400219580107005965" name="performed" index="3v7bcY" />
+      </concept>
+      <concept id="8400219580107005964" name="com.symo.sysmlv2.baselan.structure.SysMLv2SatisfyRequirementUsage" flags="ng" index="3v7bcZ">
+        <property id="8400219580107005969" name="isNegated" index="3v7bcy" />
+        <property id="8400219580107005968" name="isAsserted" index="3v7bcz" />
+        <child id="8400219580107005971" name="subject" index="3v7bcw" />
+        <child id="8400219580107005970" name="satisfied" index="3v7bcx" />
+      </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
@@ -2555,6 +2570,63 @@
           </node>
           <node concept="3bnkR8" id="7ij$NeEZ$z7" role="3sj5CM">
             <property role="3bnkR9" value="0" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="6r95PajkROi">
+    <property role="TrG5h" value="_260_perform_exhibit_include_satisfy" />
+    <node concept="3Z9vzX" id="6r95PajkROj" role="2h0jOs">
+      <property role="TrG5h" value="BehaviorReferences" />
+      <node concept="3ZUotO" id="6r95PajkROk" role="3Z9vGx">
+        <property role="TrG5h" value="Q" />
+        <node concept="3v7bcU" id="6r95PajkROl" role="3w00ZY">
+          <node concept="3wdj9f" id="6r95PajkROm" role="3v7bcY">
+            <property role="3wdj9b" value="helper" />
+          </node>
+        </node>
+        <node concept="3v7bcU" id="6r95PajkROn" role="3w00ZY">
+          <property role="TrG5h" value="doIt" />
+          <node concept="3sj5Jf" id="6r95PajkROo" role="SPUDq">
+            <node concept="3bnkR8" id="6r95PajkROp" role="3sj5CN">
+              <property role="3bnkR9" value="x" />
+            </node>
+            <node concept="3bnkR8" id="6r95PajkROq" role="3sj5CM">
+              <property role="3bnkR9" value="1" />
+            </node>
+          </node>
+        </node>
+        <node concept="3v7bcT" id="6r95PajkROr" role="3w00ZY">
+          <node concept="3wdj9f" id="6r95PajkROs" role="3v7bcX">
+            <property role="3wdj9b" value="Machine.running" />
+          </node>
+        </node>
+        <node concept="3v7bcT" id="6r95PajkROt" role="3w00ZY">
+          <property role="TrG5h" value="active" />
+        </node>
+        <node concept="3v7bcS" id="6r95PajkROu" role="3w00ZY">
+          <node concept="3wdj9f" id="6r95PajkROv" role="3v7bcW">
+            <property role="3wdj9b" value="driveCar" />
+          </node>
+        </node>
+        <node concept="3v7bcS" id="6r95PajkROw" role="3w00ZY">
+          <property role="TrG5h" value="drive" />
+        </node>
+        <node concept="3v7bcZ" id="6r95PajkROx" role="3w00ZY">
+          <node concept="3wdj9f" id="6r95PajkROy" role="3v7bcx">
+            <property role="3wdj9b" value="safety" />
+          </node>
+          <node concept="3bnkR8" id="6r95PajkROz" role="3v7bcw">
+            <property role="3bnkR9" value="vehicle" />
+          </node>
+        </node>
+        <node concept="3v7bcZ" id="6r95PajkRO$" role="3w00ZY">
+          <property role="TrG5h" value="noHarm" />
+          <property role="3v7bcz" value="true" />
+          <property role="3v7bcy" value="true" />
+          <node concept="3bnkR8" id="6r95PajkRO_" role="3v7bcw">
+            <property role="3bnkR9" value="vehicle.body" />
           </node>
         </node>
       </node>

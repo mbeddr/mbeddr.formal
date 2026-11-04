@@ -774,6 +774,15 @@ changing the textgen constant), `_130` now rejects `action a; then b;` and `fork
 `_250_action_body_sequencing`. Probe still 51 OK / 7 FAIL; `Actions.sysml` now stops at "perform, exhibit, include
 or satisfy usage" (same blocker as Views), which is the next slice.
 
+**Slice 6 result (2026-11-05):** perform / exhibit / include / satisfy usage, reference and declaring form. New concepts
+`SysMLv2PerformActionUsage`, `SysMLv2ExhibitStateUsage`, `SysMLv2IncludeUseCaseUsage`, `SysMLv2SatisfyRequirementUsage`
+(extra properties `isAsserted`, `isNegated`; child `subject`). Reference form holds a `SysMLv2UsageRef`
+(`performed`/`exhibited`/`included`/`satisfied`); declaring form is `perform action doIt {...}` etc. with optional short
+name. Importer rejects specialization and value part on the reference form and `exhibit` of a parallel state.
+Tests: `_560_PerformExhibitIncludeSatisfyTest` (4 round trips), `_130` perform rejection. Sandbox `_260`. Full suite 515
+tests, only the 2 known PlantUML failures. Probe 52 OK / 6 FAIL: `Actions.sysml` fixed; `Views.sysml` now needs
+`require constraint`, framed concern, verification and stakeholder members in the requirement body.
+
 **Refactor: chain-only transition source (2026-11-04).** The source no longer uses `SysMLv2ConnectorEnd`
 (which allows an end name and multiplicity that are illegal on a transition source). New abstract
 `SysMLv2ChainEnd` (implements `ScopeProvider`) carries the scope and chain behavior (the behavior root

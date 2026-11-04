@@ -2371,5 +2371,73 @@
       <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="7ij$NeFzM09">
+    <property role="EcuMT" value="8400219580107005961" />
+    <property role="TrG5h" value="SysMLv2PerformActionUsage" />
+    <property role="R4oN_" value="perform &lt;action&gt;: PerformActionUsage (8.3.17.5), referenced form" />
+    <property role="OYnhT" value="perform usage: references an action (perform helper;) or declares one inline (perform action doIt { ... })" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tN" resolve="SysMLv2PlainActionUsage" />
+    <node concept="1TJgyj" id="7ij$NeFzM0d" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580107005965" />
+      <property role="20kJfa" value="performed" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ij$NeFzM0a">
+    <property role="EcuMT" value="8400219580107005962" />
+    <property role="TrG5h" value="SysMLv2ExhibitStateUsage" />
+    <property role="R4oN_" value="exhibit &lt;state&gt;: ExhibitStateUsage (8.3.18.3), referenced form" />
+    <property role="OYnhT" value="exhibit usage: references a state (exhibit Machine.running;) or declares one inline (exhibit state active { ... })" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tO" resolve="SysMLv2StateUsage" />
+    <node concept="1TJgyj" id="7ij$NeFzM0e" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580107005966" />
+      <property role="20kJfa" value="exhibited" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ij$NeFzM0b">
+    <property role="EcuMT" value="8400219580107005963" />
+    <property role="TrG5h" value="SysMLv2IncludeUseCaseUsage" />
+    <property role="R4oN_" value="include &lt;use case&gt;: IncludeUseCaseUsage (8.3.26.3), referenced form" />
+    <property role="OYnhT" value="include usage: references a use case (include driveCar;) or declares one inline (include use case drive { ... })" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tU" resolve="SysMLv2UseCaseUsage" />
+    <node concept="1TJgyj" id="7ij$NeFzM0f" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580107005967" />
+      <property role="20kJfa" value="included" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ij$NeFzM0c">
+    <property role="EcuMT" value="8400219580107005964" />
+    <property role="TrG5h" value="SysMLv2SatisfyRequirementUsage" />
+    <property role="R4oN_" value="[assert] [not] satisfy &lt;requirement&gt; [by &lt;subject&gt;]: SatisfyRequirementUsage (8.3.22.3), referenced form" />
+    <property role="OYnhT" value="satisfy usage: references a requirement (satisfy safety by vehicle;) or declares one inline (satisfy requirement r by x { ... }), optionally asserted or negated" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
+    <node concept="1TJgyi" id="7ij$NeFzM0g" role="1TKVEl">
+      <property role="IQ2nx" value="8400219580107005968" />
+      <property role="TrG5h" value="isAsserted" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyi" id="7ij$NeFzM0h" role="1TKVEl">
+      <property role="IQ2nx" value="8400219580107005969" />
+      <property role="TrG5h" value="isNegated" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
+    <node concept="1TJgyj" id="7ij$NeFzM0i" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580107005970" />
+      <property role="20kJfa" value="satisfied" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+    <node concept="1TJgyj" id="7ij$NeFzM0j" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580107005971" />
+      <property role="20kJfa" value="subject" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+  </node>
 </model>
 
