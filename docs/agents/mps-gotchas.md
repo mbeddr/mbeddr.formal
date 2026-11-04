@@ -12,6 +12,14 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## `parse_java_and_insert` replace: don't paste generated Java; copy a helper node instead (2026-11-04)
+
+- Pasting code copied from the generated Java (`SNodeOperations.cast(..., CONCEPTS.X$ab)`, `PROPS.*`, `ListSequence.fromList(...)`) parses as plain Java and leaves dozens of unresolved nodes. Write the plain-Java form with calls to existing helper methods instead (`extractUsageName(...)`, `applyFeatureFlag(node, "isAbstract", v)`), and move every smodel operation (`node:Concept.link.add(child:Iface)`) into a small static helper made with `alter_nodes COPY_NODE` of a similar existing helper.
+- After `COPY_NODE`, rename with `update_node SET PROPERTY name`, then repoint the concept and link with `SET REFERENCE` on the copy's `RefConcept_Reference` (role `conceptDeclaration`) and `SLinkListAccess` (role `link`). Child ids of a copy are consecutive from the copy's id (print the copy once with `deep:true` to read them).
+- A replaced method gets a new node id and a fresh set of `SNode` ClassifierTypes that must be repointed (role `classifier`) each time. Edit the code once, not in several replace rounds.
+- There is no delete in `alter_nodes`/`update_node`; removing a statement means `SET CHILD` without `childJson`, or replacing the whole method.
+- Mind the helper's return type: `extractAbstractFor` returns a boolean and does not set anything, so check what a helper does before using it as a setter.
+
 ## Moving a containment link to a super-concept strands persisted children; `children.ofConcept` needs `.toList` (2026-11-04)
 
 - A containment link is identified by (declaring concept, link id). If you move a link declaration from concept `A` up into an abstract super-concept `B` (even keeping the same link id), every persisted `A` instance has its children stored under a role that is no longer `A`'s own link: `print_node` shows `declared:false`, editors and tests fail, and the full suite breaks (14 failures, 116 instances in our case). To share a link across two concepts, do NOT move it. Leave the link where it is and give the second concept its own link, with a common abstract base that carries only behavior (scopes, helpers) reading `this.children.ofConcept<X>`. Moving it back (`alter_nodes MOVE_NODE_TO_PARENT`) restores validity.

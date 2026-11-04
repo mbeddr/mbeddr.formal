@@ -1243,6 +1243,13 @@
     <node concept="PrWs8" id="fNDJb5Z2ig" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
+    <node concept="1TJgyj" id="7ij$NeBPTa9" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580044645001" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeHmu9H">
     <property role="EcuMT" value="4376090928958005869" />
@@ -2203,9 +2210,9 @@
     <property role="EcuMT" value="9009971474229543187" />
     <property role="TrG5h" value="SysMLv2TransitionUsage" />
     <property role="34LRSv" value="transition" />
-    <property role="R4oN_" value="Explicit state transition with source and target; trigger, guard and effect are pending." />
+    <property role="R4oN_" value="Explicit state transition: transition [name] first source [accept trigger] [if guard] [do effect] then target;" />
     <property role="3GE5qa" value="state" />
-    <property role="OYnhT" value="Explicit transition with source and target feature chains. Inherited usage feature parts are deliberately hidden until supported by the transition syntax and importer." />
+    <property role="OYnhT" value="Transition usage in a state body: transition [name] first source [accept trigger] [if guard] [do effect] then target" />
     <ref role="1TJDcQ" node="3MUZSeHM$aK" resolve="SysMLv2ActionUsage" />
     <node concept="1TJgyj" id="7O9Ql6_QG4k" role="1TKVEi">
       <property role="IQ2ns" value="9009971474229543188" />
@@ -2223,6 +2230,24 @@
     </node>
     <node concept="PrWs8" id="7O9Ql6BSUW7" role="PzmwI">
       <ref role="PrY4T" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
+    </node>
+    <node concept="1TJgyj" id="7ij$Ne_EBCH" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580008135213" />
+      <property role="20kJfa" value="trigger" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="7ij$Ne_EBvK" resolve="SysMLv2AcceptTrigger" />
+    </node>
+    <node concept="1TJgyj" id="7ij$NeAWA5P" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580029624693" />
+      <property role="20kJfa" value="guard" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+    <node concept="1TJgyj" id="7ij$NeAWA65" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580029624709" />
+      <property role="20kJfa" value="effect" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
     </node>
   </node>
   <node concept="1TIwiD" id="7O9Ql6Cf9IB">
@@ -2268,6 +2293,36 @@
       <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
     </node>
     <node concept="PrWs8" id="7ij$Ne$beiK" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7ij$Ne_EBvK">
+    <property role="EcuMT" value="8400219580008134640" />
+    <property role="TrG5h" value="SysMLv2AcceptTrigger" />
+    <property role="R4oN_" value="Accept trigger of a transition: accept [payloadName] [: Type] [multiplicity] [via receiver]" />
+    <property role="3GE5qa" value="state" />
+    <property role="34LRSv" value="accept" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7ij$Ne_EBvL" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580008134641" />
+      <property role="20kJfa" value="types" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="fNDJb6KWCy" resolve="SysMLv2DefinitionRef" />
+    </node>
+    <node concept="1TJgyj" id="7ij$Ne_EBvM" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580008134642" />
+      <property role="20kJfa" value="multiplicity" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+    </node>
+    <node concept="1TJgyj" id="7ij$Ne_EBvN" role="1TKVEi">
+      <property role="IQ2ns" value="8400219580008134643" />
+      <property role="20kJfa" value="via" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
+    </node>
+    <node concept="PrWs8" id="7ij$Ne_EBvO" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
   </node>

@@ -728,6 +728,37 @@ names, trigger/guard/effect clauses, specialized declarations and transition bod
 represented with a chain-only end (see the refactor below). Inherited usage feature parts are hidden
 and documented on the transition concept. Slice 2 adds the accept trigger.
 
+**Slice 2 result (2026-11-04):** new concept `SysMLv2AcceptTrigger` (INamedConcept: payload name; children
+`types` 0..n, `multiplicity` 0..1, `via` expression 0..1; alias `accept`), owned by
+`SysMLv2TransitionUsage.trigger` 0..1, with editor and textgen roots. The importer builds
+`accept [name] : T[, U] [via <expr text>]` (`via` stays a plain-text expression per the
+expressions-as-text policy). It rejects payload value parts, at/after triggers, short names,
+subsetting/redefinition, qualified typings and ordered/nonunique with explicit messages; `_130`'s old
+trigger test now covers the value-part rejection. `_530.testAcceptTriggerOnTransition` round-trips the
+exact library shape `transition aTransition first start accept apayload : Anything via receiver then done;`;
+with a stale textgen it failed (trigger dropped), after the language rebuild it passed. Probe: `Actions.sysml`
+now passes the transition and stops at "body on binding usage" (51 OK, 7 FAIL). Full run: 505 tests, only the
+2 known PlantUML failures. Sandbox `_230` `advance` carries a trigger.
+
+**Slice 3 result (2026-11-04):** guard and effect on `SysMLv2TransitionUsage`. `guard` is a
+`SysMLv2PlainTextExpression` (`if <expr text>`, expressions-as-text policy); `effect` is a `SysMLv2DefinitionRef`
+holding an unqualified action name (`do work`). TextGen order: `first <source> [accept ...] [if ...] [do ...] then <target>;`.
+`_530.testGuardAndEffectOnTransition` round-trips the combined shape; `_130` now rejects only inline/qualified effects.
+Sandbox `_230` `advance` carries trigger, guard (`ready`) and effect (`work`).
+
+**Binding body result (2026-11-04):** `SysMLv2BindingUsage` got a `content` child (0..n `ISysMLv2PartBodyContent`),
+editor `{ ... }` block with conditional `;`, and textgen in the connection-usage style (`;` when empty, else an
+indented block). The importer's `visitBindingConnectorAsUsage` no longer throws "body on binding usage": it visits
+`definitionBodyItem`s and adds them through the new helper `addBindingContent` (copy of `addPartContent`, repointed
+to the binding concept/link). `_240.testRoundtripBindWithBody` covers `bind p = inner.q { doc ... }` and a named
+`binding d2 ... { doc ... }`; the old `abstract binding` round trip still passes (abstract now goes through
+`applyFeatureFlag(binding, "isAbstract", ...)`). Sandbox `_030` has `bodiedBind`. Probe still 51 OK / 7 FAIL, but
+`Actions.sysml` now stops at "action node or succession inside action body" (slice 5). Other blockers:
+TradeStudies (requirement constraint/framed concern members), ShapeItems (specialization on binding usage),
+Flows (specialization on succession usage), Interfaces (multiplicity on interface usage), Requirements (return
+parameter inside constraint body), Views (perform/exhibit/include/satisfy). Full run: 507 tests, only the 2 known
+PlantUML failures.
+
 **Refactor: chain-only transition source (2026-11-04).** The source no longer uses `SysMLv2ConnectorEnd`
 (which allows an end name and multiplicity that are illegal on a transition source). New abstract
 `SysMLv2ChainEnd` (implements `ScopeProvider`) carries the scope and chain behavior (the behavior root
