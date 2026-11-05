@@ -4641,6 +4641,21 @@
         <property role="39s7Ar" value="true" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
+      <node concept="_tjkj" id="6r95PapE03I" role="3EZMnx">
+        <node concept="3F1sOY" id="6r95PapE03J" role="_tjki">
+          <ref role="1NtTu8" to="5rf1:6r95Papm7I3" resolve="multiplicity" />
+        </node>
+      </node>
+      <node concept="1kHk_G" id="6r95PapE03M" role="3EZMnx">
+        <property role="ZjSer" value="ordered" />
+        <ref role="1NtTu8" to="5rf1:7PctyxTWsOQ" resolve="isOrdered" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
+      <node concept="1kHk_G" id="6r95PapE03P" role="3EZMnx">
+        <property role="ZjSer" value="nonunique" />
+        <ref role="1NtTu8" to="5rf1:7PctyxTWsOW" resolve="isNonUnique" />
+        <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+      </node>
       <node concept="_tjkj" id="3MUZSeHPa13" role="3EZMnx">
         <node concept="3EZMnI" id="3MUZSeHPa15" role="_tjki">
           <node concept="3F0ifn" id="3MUZSeHPa16" role="3EZMnx">
@@ -4652,6 +4667,30 @@
             <node concept="l2Vlx" id="7PctyxTfxBI" role="2czzBx" />
           </node>
           <node concept="l2Vlx" id="3MUZSeHPa18" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="_tjkj" id="6r95PapE03S" role="3EZMnx">
+        <node concept="3EZMnI" id="6r95PapE03T" role="_tjki">
+          <node concept="3F0ifn" id="6r95PapE03U" role="3EZMnx">
+            <property role="3F0ifm" value=":&gt;" />
+          </node>
+          <node concept="3F2HdR" id="6r95PapE03V" role="3EZMnx">
+            <property role="2czwfO" value="," />
+            <ref role="1NtTu8" to="5rf1:6coPuU3buuy" resolve="subsets" />
+            <node concept="l2Vlx" id="6r95PapE03W" role="2czzBx" />
+          </node>
+        </node>
+      </node>
+      <node concept="_tjkj" id="6r95PapE03Z" role="3EZMnx">
+        <node concept="3EZMnI" id="6r95PapE040" role="_tjki">
+          <node concept="3F0ifn" id="6r95PapE041" role="3EZMnx">
+            <property role="3F0ifm" value=":&gt;&gt;" />
+          </node>
+          <node concept="3F2HdR" id="6r95PapE042" role="3EZMnx">
+            <property role="2czwfO" value="," />
+            <ref role="1NtTu8" to="5rf1:6coPuU3buuz" resolve="redefines" />
+            <node concept="l2Vlx" id="6r95PapE043" role="2czzBx" />
+          </node>
         </node>
       </node>
       <node concept="_tjkj" id="3MUZSeHPa19" role="3EZMnx">

@@ -30567,5 +30567,231 @@
       </node>
     </node>
   </node>
+  <node concept="1lH9Xt" id="6r95ParI0zU">
+    <property role="TrG5h" value="_580_FlowAndInterfaceSpecializationTest" />
+    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <node concept="1LZb2c" id="6r95ParI0$F" role="1SL9yI">
+      <property role="TrG5h" value="testInterfaceUsageSubsettingAndRedefinition" />
+      <node concept="3cqZAl" id="6r95ParI0$G" role="3clF45" />
+      <node concept="3clFbS" id="6r95ParI0$H" role="3clF47">
+        <node concept="3cpWs8" id="6r95ParI0$I" role="3cqZAp">
+          <node concept="3cpWsn" id="6r95ParI0$J" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="6r95ParI0$K" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI0BH" role="3cqZAp">
+          <node concept="37vLTI" id="6r95ParI0BI" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI0BJ" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0$J" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI0BK" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI0BL" role="3cqZAp">
+          <node concept="d57v9" id="6r95ParI0BM" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI0BN" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0$J" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI0BO" role="37vLTx">
+              <property role="Xl_RC" value="  part def Q {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI0BP" role="3cqZAp">
+          <node concept="d57v9" id="6r95ParI0BQ" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI0BR" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0$J" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI0BS" role="37vLTx">
+              <property role="Xl_RC" value="    interface i1 :&gt; base1, base2 connect a.p to b.q;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI0BT" role="3cqZAp">
+          <node concept="d57v9" id="6r95ParI0BU" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI0BV" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0$J" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI0BW" role="37vLTx">
+              <property role="Xl_RC" value="    interface i2[0..*] nonunique :&gt;&gt; other connect a to b;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI0BX" role="3cqZAp">
+          <node concept="d57v9" id="6r95ParI0BY" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI0BZ" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0$J" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI0C0" role="37vLTx">
+              <property role="Xl_RC" value="    interface i3 : Wire :&gt; base :&gt;&gt; other connect a to b;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI0C1" role="3cqZAp">
+          <node concept="d57v9" id="6r95ParI0C2" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI0C3" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0$J" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI0C4" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI0C5" role="3cqZAp">
+          <node concept="d57v9" id="6r95ParI0C6" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI0C7" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0$J" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI0C8" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6r95ParI0_h" role="3cqZAp">
+          <node concept="3cpWsn" id="6r95ParI0_i" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <node concept="3uibUv" id="6r95ParI0_j" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="6r95ParI0_k" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="6r95ParI0_l" role="37wK5m">
+                <ref role="3cqZAo" node="6r95ParI0$J" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6r95ParI0_m" role="37wK5m">
+                <property role="Xl_RC" value="InterfaceUsageSpecialization" />
+              </node>
+              <node concept="1jxXqW" id="6r95ParI0_n" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="6r95ParI0_o" role="3cqZAp">
+          <node concept="37vLTw" id="6r95ParI0_p" role="3tpDZB">
+            <ref role="3cqZAo" node="6r95ParI0$J" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="6r95ParI0_q" role="3tpDZA">
+            <ref role="3cqZAo" node="6r95ParI0_i" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1LZb2c" id="6r95ParI0_r" role="1SL9yI">
+      <property role="TrG5h" value="testFlowUsageSpecialization" />
+      <node concept="3cqZAl" id="6r95ParI0_s" role="3clF45" />
+      <node concept="3clFbS" id="6r95ParI0_t" role="3clF47">
+        <node concept="3cpWs8" id="6r95ParI0_u" role="3cqZAp">
+          <node concept="3cpWsn" id="6r95ParI0_v" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="6r95ParI0_w" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI198" role="3cqZAp">
+          <node concept="37vLTI" id="6r95ParI199" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI19a" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0_v" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI19b" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI19c" role="3cqZAp">
+          <node concept="d57v9" id="6r95ParI19d" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI19e" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0_v" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI19f" role="37vLTx">
+              <property role="Xl_RC" value="  part def Q {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI19g" role="3cqZAp">
+          <node concept="d57v9" id="6r95ParI19h" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI19i" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0_v" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI19j" role="37vLTx">
+              <property role="Xl_RC" value="    flow f1[0..*] nonunique : Flow :&gt; messages, flows from a.src to b.dst;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI19k" role="3cqZAp">
+          <node concept="d57v9" id="6r95ParI19l" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI19m" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0_v" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI19n" role="37vLTx">
+              <property role="Xl_RC" value="    flow f2[1] ordered : Flow :&gt;&gt; base of Payload from a to b;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI19o" role="3cqZAp">
+          <node concept="d57v9" id="6r95ParI19p" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI19q" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0_v" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI19r" role="37vLTx">
+              <property role="Xl_RC" value="    abstract flow f3[2] from a to b;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI19s" role="3cqZAp">
+          <node concept="d57v9" id="6r95ParI19t" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI19u" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0_v" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI19v" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95ParI19w" role="3cqZAp">
+          <node concept="d57v9" id="6r95ParI19x" role="3clFbG">
+            <node concept="37vLTw" id="6r95ParI19y" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0_v" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95ParI19z" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6r95ParI0_T" role="3cqZAp">
+          <node concept="3cpWsn" id="6r95ParI0_U" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <node concept="3uibUv" id="6r95ParI0_V" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="6r95ParI0_W" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="6r95ParI0_X" role="37wK5m">
+                <ref role="3cqZAo" node="6r95ParI0_v" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6r95ParI0_Y" role="37wK5m">
+                <property role="Xl_RC" value="FlowUsageSpecialization" />
+              </node>
+              <node concept="1jxXqW" id="6r95ParI0_Z" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="6r95ParI0A0" role="3cqZAp">
+          <node concept="37vLTw" id="6r95ParI0A1" role="3tpDZB">
+            <ref role="3cqZAo" node="6r95ParI0_v" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="6r95ParI0A2" role="3tpDZA">
+            <ref role="3cqZAo" node="6r95ParI0_U" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

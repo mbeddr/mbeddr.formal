@@ -1330,6 +1330,12 @@
     <node concept="PrWs8" id="fNDJb5Z2ia" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
+    <node concept="1TJgyj" id="6r95Papm7I3" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932081536" />
+      <property role="20kJfa" value="multiplicity" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeHM$aH">
     <property role="EcuMT" value="4376090928965370541" />
