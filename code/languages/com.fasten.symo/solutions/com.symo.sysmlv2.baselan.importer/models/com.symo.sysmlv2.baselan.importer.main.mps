@@ -13145,14 +13145,14 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="6r95PaqfdWE" role="3cqZAp">
-          <node concept="2YIFZM" id="6r95PaqfdWF" role="3clFbG">
+        <node concept="3clFbF" id="6r95Pasz3gV" role="3cqZAp">
+          <node concept="2YIFZM" id="6r95Pasz3vo" role="3clFbG">
             <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
             <ref role="37wK5l" node="6r95PapE1Qz" resolve="applySubsettingAndRedefinition" />
-            <node concept="37vLTw" id="6r95PaqfdWG" role="37wK5m">
+            <node concept="37vLTw" id="6r95Pasz3vp" role="37wK5m">
               <ref role="3cqZAo" node="6r95PanlvxJ" resolve="iusage" />
             </node>
-            <node concept="37vLTw" id="6r95PaqfdWH" role="37wK5m">
+            <node concept="37vLTw" id="6r95Pasz3vq" role="37wK5m">
               <ref role="3cqZAo" node="6r95PanlvvW" resolve="specPart" />
             </node>
           </node>
@@ -15060,69 +15060,69 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="6r95Par0LXU" role="3cqZAp">
-          <node concept="3y3z36" id="6r95Par0LXV" role="3clFbw">
-            <node concept="37vLTw" id="6r95Par0LXW" role="3uHU7B">
+        <node concept="3clFbJ" id="6r95Patlf6z" role="3cqZAp">
+          <node concept="3y3z36" id="6r95Patlf6$" role="3clFbw">
+            <node concept="37vLTw" id="6r95Patlf6_" role="3uHU7B">
               <ref role="3cqZAo" node="6r95PaqOmYl" resolve="flowMult" />
             </node>
-            <node concept="10Nm6u" id="6r95Par0LXX" role="3uHU7w" />
+            <node concept="10Nm6u" id="6r95Patlf6A" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="6r95Par0LXZ" role="3clFbx">
-            <node concept="3cpWs8" id="6r95Par0LY1" role="3cqZAp">
-              <node concept="3cpWsn" id="6r95Par0LY0" role="3cpWs9">
+          <node concept="3clFbS" id="6r95Patlf6C" role="3clFbx">
+            <node concept="3cpWs8" id="6r95Patlf6E" role="3cqZAp">
+              <node concept="3cpWsn" id="6r95Patlf6D" role="3cpWs9">
                 <property role="TrG5h" value="flowMultNode" />
-                <node concept="3uibUv" id="6r95Par0LY2" role="1tU5fm">
+                <node concept="3uibUv" id="6r95Patlf6F" role="1tU5fm">
                   <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                 </node>
-                <node concept="2YIFZM" id="6r95Par0McP" role="33vP2m">
+                <node concept="2YIFZM" id="6r95Patlflm" role="33vP2m">
                   <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
                   <ref role="37wK5l" node="7O9Ql6zrU6N" resolve="newMultiplicity" />
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="6r95Par0LY4" role="3cqZAp">
-              <node concept="2YIFZM" id="6r95Par0Mrf" role="3clFbG">
+            <node concept="3clFbF" id="6r95Patlf6H" role="3cqZAp">
+              <node concept="2YIFZM" id="6r95PatlfzK" role="3clFbG">
                 <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
                 <ref role="37wK5l" node="7O9Ql6zrU5q" resolve="setMultiplicityLower" />
-                <node concept="37vLTw" id="6r95Par0Mrg" role="37wK5m">
-                  <ref role="3cqZAo" node="6r95Par0LY0" resolve="flowMultNode" />
+                <node concept="37vLTw" id="6r95PatlfzL" role="37wK5m">
+                  <ref role="3cqZAo" node="6r95Patlf6D" resolve="flowMultNode" />
                 </node>
-                <node concept="AH0OO" id="6r95Par0Mrh" role="37wK5m">
-                  <node concept="37vLTw" id="6r95Par0Mri" role="AHHXb">
+                <node concept="AH0OO" id="6r95PatlfzM" role="37wK5m">
+                  <node concept="37vLTw" id="6r95PatlfzN" role="AHHXb">
                     <ref role="3cqZAo" node="6r95PaqOmYl" resolve="flowMult" />
                   </node>
-                  <node concept="3cmrfG" id="6r95Par0Mrj" role="AHEQo">
+                  <node concept="3cmrfG" id="6r95PatlfzO" role="AHEQo">
                     <property role="3cmrfH" value="0" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="6r95Par0LYa" role="3cqZAp">
-              <node concept="2YIFZM" id="6r95Par0MDH" role="3clFbG">
+            <node concept="3clFbF" id="6r95Patlf6N" role="3cqZAp">
+              <node concept="2YIFZM" id="6r95PatlfMe" role="3clFbG">
                 <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
                 <ref role="37wK5l" node="7O9Ql6zrU5E" resolve="setMultiplicityUpper" />
-                <node concept="37vLTw" id="6r95Par0MDI" role="37wK5m">
-                  <ref role="3cqZAo" node="6r95Par0LY0" resolve="flowMultNode" />
+                <node concept="37vLTw" id="6r95PatlfMf" role="37wK5m">
+                  <ref role="3cqZAo" node="6r95Patlf6D" resolve="flowMultNode" />
                 </node>
-                <node concept="AH0OO" id="6r95Par0MDJ" role="37wK5m">
-                  <node concept="37vLTw" id="6r95Par0MDK" role="AHHXb">
+                <node concept="AH0OO" id="6r95PatlfMg" role="37wK5m">
+                  <node concept="37vLTw" id="6r95PatlfMh" role="AHHXb">
                     <ref role="3cqZAo" node="6r95PaqOmYl" resolve="flowMult" />
                   </node>
-                  <node concept="3cmrfG" id="6r95Par0MDL" role="AHEQo">
+                  <node concept="3cmrfG" id="6r95PatlfMi" role="AHEQo">
                     <property role="3cmrfH" value="1" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbF" id="6r95Par0LYg" role="3cqZAp">
-              <node concept="2YIFZM" id="6r95Par0MSb" role="3clFbG">
+            <node concept="3clFbF" id="6r95Patlf6T" role="3cqZAp">
+              <node concept="2YIFZM" id="6r95Patlg0G" role="3clFbG">
                 <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
                 <ref role="37wK5l" node="6r95PaqBXLK" resolve="setFlowMultiplicity" />
-                <node concept="37vLTw" id="6r95Par0MSc" role="37wK5m">
+                <node concept="37vLTw" id="6r95Patlg0H" role="37wK5m">
                   <ref role="3cqZAo" node="7PctyxTtVFv" resolve="fusage" />
                 </node>
-                <node concept="37vLTw" id="6r95Par0MSd" role="37wK5m">
-                  <ref role="3cqZAo" node="6r95Par0LY0" resolve="flowMultNode" />
+                <node concept="37vLTw" id="6r95Patlg0I" role="37wK5m">
+                  <ref role="3cqZAo" node="6r95Patlf6D" resolve="flowMultNode" />
                 </node>
               </node>
             </node>
@@ -15136,18 +15136,6 @@
               <ref role="3cqZAo" node="7PctyxTtVFv" resolve="fusage" />
             </node>
             <node concept="37vLTw" id="6r95Par0N6D" role="37wK5m">
-              <ref role="3cqZAo" node="6r95PaqOmY5" resolve="flowSpec" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="6r95Par0LYo" role="3cqZAp">
-          <node concept="2YIFZM" id="6r95Par0Nl3" role="3clFbG">
-            <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
-            <ref role="37wK5l" node="6r95PapE1Qz" resolve="applySubsettingAndRedefinition" />
-            <node concept="37vLTw" id="6r95Par0Nl4" role="37wK5m">
-              <ref role="3cqZAo" node="7PctyxTtVFv" resolve="fusage" />
-            </node>
-            <node concept="37vLTw" id="6r95Par0Nl5" role="37wK5m">
               <ref role="3cqZAo" node="6r95PaqOmY5" resolve="flowSpec" />
             </node>
           </node>
@@ -15173,6 +15161,18 @@
                   <ref role="37wK5l" to="guqe:~SysMLv2Parser$OccurrenceUsagePrefixContext.basicUsagePrefix()" resolve="basicUsagePrefix" />
                 </node>
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95PasmonF" role="3cqZAp">
+          <node concept="2YIFZM" id="6r95PasmoA8" role="3clFbG">
+            <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+            <ref role="37wK5l" node="6r95PapE1Qz" resolve="applySubsettingAndRedefinition" />
+            <node concept="37vLTw" id="6r95PasmoA9" role="37wK5m">
+              <ref role="3cqZAo" node="7PctyxTtVFv" resolve="fusage" />
+            </node>
+            <node concept="37vLTw" id="6r95PasmoAa" role="37wK5m">
+              <ref role="3cqZAo" node="6r95PaqOmY5" resolve="flowSpec" />
             </node>
           </node>
         </node>

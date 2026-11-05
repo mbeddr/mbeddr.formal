@@ -783,6 +783,23 @@ Tests: `_560_PerformExhibitIncludeSatisfyTest` (4 round trips), `_130` perform r
 tests, only the 2 known PlantUML failures. Probe 52 OK / 6 FAIL: `Actions.sysml` fixed; `Views.sysml` now needs
 `require constraint`, framed concern, verification and stakeholder members in the requirement body.
 
+**Slice 7 result (2026-11-05, commit `8d783c31`):** specialization (`:>`, `:>>`) on succession usage, multiplicity on
+interface usage (it comes from `ItemUsage`, not a new link) and on binding usage (`binding[1] bind a.b = c.d;`).
+
+**Slice 8 result (2026-11-05, commit `7a0c8b90`):** flow usage takes multiplicity (new child `multiplicity` on
+`SysMLv2FlowUsage`), `ordered`, `nonunique`, subsetting and redefinition; interface usage takes subsetting and
+redefinition. Importer: helpers `applySubsettingAndRedefinition(usage, specPart)` and `setFlowMultiplicity`,
+called from `visitFlowUsage` and `visitInterfaceUsage`; the flow editor and TextGen print the same pieces in the
+spec order (`[mult] ordered nonunique : types :> subsets :>> redefines of payload from .. to ..`). Tests:
+`_580_FlowAndInterfaceSpecializationTest` (flow with all of the above plus `abstract flow`; interface with subsets,
+redefines and `abstract interface`). Mutation-checked: removing either `applySubsettingAndRedefinition` call and
+neutering the `flowMult != null` block each make `_580` fail with the expected text diff. Sandbox
+`_270_flow_interface_specialization` (flows, interfaces, binding with multiplicity). Full suite: 521 tests, only the 2
+known PlantUML failures. Probe: 54 OK / 4 FAIL. Remaining blockers: `Flows.sysml` (body on flow usage: `content`,
+`doc`, `end occurrence ... :>> ...`), `Requirements.sysml` (return parameter inside constraint body),
+`TradeStudies.sysml` and `Views.sysml` (requirement constraint, framed concern, verification and stakeholder members).
+Next slices: body on flow usage; requirement/constraint members.
+
 **Refactor: chain-only transition source (2026-11-04).** The source no longer uses `SysMLv2ConnectorEnd`
 (which allows an end name and multiplicity that are illegal on a transition source). New abstract
 `SysMLv2ChainEnd` (implements `ScopeProvider`) carries the scope and chain behavior (the behavior root

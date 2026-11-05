@@ -12,6 +12,17 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Mutation checks and BaseLanguage edits through MCP (2026-11-05)
+
+- `trace.info` node ids and line numbers are unreliable for choosing which node to delete. A mutation check that deleted two nodes picked from `trace.info` removed the `isAbstract` assignments instead of the intended calls. Always `print_node` (PLAIN TEXT) the exact node before `update_node SET CHILD` without `childJson` (that deletes it).
+- `parse_java_and_insert` cannot resolve a bare `SNode` type inside a method body (it yields "Unresolved reference: SNode" and a compile error on make). Use `org.jetbrains.mps.openapi.model.SNode`, or avoid a local of that type. Always MAKE after a restore, as the type error only shows at make time.
+- `parse_java_and_insert` replace mode on a `StatementList` wipes the old list; replace a single statement node, or insert with `mode: child` and `position` to restore one.
+- `print_node` ignores `outputFile`; with a small `maxInlineBytes` it returns a temp-file path instead.
+- `COPY_NODE` of a statement inside a list inserts the copy as the next sibling; edit the copy's `StringLiteral` with `update_node SET PROPERTY` (value with `\\n` escapes) instead of building a new statement.
+- A moved/copied node that was reused in another role keeps references to the old target; repoint them (see the 2026-11-04 entry).
+- SysML test strings cannot use `in` or `out` as feature names (keywords); use `src`/`dst`.
+- `InterfaceUsage` multiplicity comes from the inherited item-usage feature, so only the editor/importer needed wiring; `FlowUsage` needed its own `multiplicity` child link.
+
 ## Grammar cells, test strings, MCP timeouts (2026-11-05)
 
 - The grammar-cells generator rejects a `CellModel_Component` inside an `OptionalCell` ("Content of optional cell is not supported"); inline the component's optional cell instead.

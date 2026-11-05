@@ -30632,6 +30632,16 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="6r95PatxVGG" role="3cqZAp">
+          <node concept="d57v9" id="6r95PatxVGH" role="3clFbG">
+            <node concept="37vLTw" id="6r95PatxVGI" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95ParI0$J" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95PatxVGJ" role="37vLTx">
+              <property role="Xl_RC" value="    abstract interface i4 :&gt;&gt; other connect a to b;\n" />
+            </node>
+          </node>
+        </node>
         <node concept="3clFbF" id="6r95ParI0C1" role="3cqZAp">
           <node concept="d57v9" id="6r95ParI0C2" role="3clFbG">
             <node concept="37vLTw" id="6r95ParI0C3" role="37vLTJ">
