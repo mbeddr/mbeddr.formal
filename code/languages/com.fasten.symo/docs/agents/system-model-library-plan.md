@@ -822,7 +822,7 @@ editor or TextGen change was needed. Full suite 523 tests, only the 2 known Plan
 (`Requirements.sysml` now imports). Remaining: `TradeStudies.sysml` and `Views.sysml` (requirement constraint, framed
 concern, verification and stakeholder members).
 
-**Slice 11 result (2026-11-05, not yet committed):** requirement body members. New concepts:
+**Slice 11 result (2026-11-05, commit f5c9e8a3):** requirement body members. New concepts:
 `SysMLv2RequirementConstraintUsage` (extends `ConstraintUsage`; enum property `kind` = `require` (default) | `assume`;
 optional `referenced` constraint), `SysMLv2FramedConcernUsage` and `SysMLv2RequirementVerificationUsage` (each with an
 optional `referenced` target and an inline declared form), `SysMLv2StakeholderUsage` (extends `ReferenceUsage`, printed
@@ -839,6 +839,19 @@ PlantUML failures. Probe: 57 OK / 1 FAIL (`Views.sysml` now imports). Remaining:
 body that holds just a result expression also prints `;`. Sandbox `_280_requirement_body_members` (assume/require
 constraints, referenced and declared forms, framed concern, verification, stakeholder); root check shows only the
 accepted nullable-enum errors.
+
+**Slice 12 result (2026-11-05):** value assignment on calculation usage. `SysMLv2CalculationUsage`
+already had `value`, `isInitialValue` and `isDefaultValue` through `OccurrenceUsage`, so the structure is unchanged.
+Importer: `visitCalculationUsage` no longer passes the value part to `initBodiedUsage` (which still rejects it with
+"value assignment on behavior usage" for the other behavior usages: state, constraint, case, ...) and applies the value
+itself, like `visitActionUsage`. Editor: the three value cells (`default`, `:=`, `= value`) were copied from the action
+usage editor; TextGen: the value block copied from the action usage TextGen. Test: `testCalculationUsageValue` in
+`_590_RequirementBodyMembersTest` (`=`, `:=`, `default =`). Red on the way: with the importer throwing, then with the
+TextGen missing (value silently dropped, `calc g : F;`). Full suite 527 tests, only the 2 known PlantUML failures.
+Probe: 58 OK / 0 FAIL, so all library files import. Known gaps: other behavior usages still reject a value (each has
+its own editor and TextGen without value cells); `default 7` prints as `default = 7`. Sandbox
+`_290_calc_usage_value` (calc usages with `=`, `:=` and `default` values in a part definition); root check shows only
+the accepted nullable-enum errors.
 
 **Refactor: chain-only transition source (2026-11-04).** The source no longer uses `SysMLv2ConnectorEnd`
 (which allows an end name and multiplicity that are illegal on a transition source). New abstract

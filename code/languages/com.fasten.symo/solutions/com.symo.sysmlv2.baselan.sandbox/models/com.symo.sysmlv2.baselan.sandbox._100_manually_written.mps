@@ -2887,5 +2887,46 @@
       </node>
     </node>
   </node>
+  <node concept="2h0jOr" id="6PmNqjPKIp9">
+    <property role="TrG5h" value="_290_calc_usage_value" />
+    <node concept="3Z9vzX" id="6PmNqjPKIpa" role="2h0jOs">
+      <property role="TrG5h" value="CalcUsageValues" />
+      <node concept="4Zb4U" id="6PmNqjPKIpb" role="3Z9vGx">
+        <property role="TrG5h" value="Scale" />
+      </node>
+      <node concept="3ZUotO" id="6PmNqjPKIpc" role="3Z9vGx">
+        <property role="TrG5h" value="Machine" />
+        <node concept="SPUE$" id="6PmNqjPKIpd" role="3w00ZY">
+          <property role="TrG5h" value="bound" />
+          <node concept="35c6Ng" id="6PmNqjPKIpe" role="SPUDr">
+            <property role="35c6Nm" value="Scale" />
+          </node>
+          <node concept="1_WVX6" id="6PmNqjPKIpf" role="7Qp9p">
+            <property role="1_WVXG" value="5" />
+          </node>
+        </node>
+        <node concept="SPUE$" id="6PmNqjPKIpg" role="3w00ZY">
+          <property role="TrG5h" value="initial" />
+          <property role="7Qp9j" value="true" />
+          <node concept="35c6Ng" id="6PmNqjPKIph" role="SPUDr">
+            <property role="35c6Nm" value="Scale" />
+          </node>
+          <node concept="1_WVX6" id="6PmNqjPKIpi" role="7Qp9p">
+            <property role="1_WVXG" value="6" />
+          </node>
+        </node>
+        <node concept="SPUE$" id="6PmNqjPKIpj" role="3w00ZY">
+          <property role="TrG5h" value="fallback" />
+          <property role="7Qp9l" value="true" />
+          <node concept="35c6Ng" id="6PmNqjPKIpk" role="SPUDr">
+            <property role="35c6Nm" value="Scale" />
+          </node>
+          <node concept="1_WVX6" id="6PmNqjPKIpl" role="7Qp9p">
+            <property role="1_WVXG" value="7" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
