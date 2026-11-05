@@ -813,6 +813,15 @@ the 2 known PlantUML failures. Probe: 55 OK / 3 FAIL (`Flows.sysml` now imports)
 concern, verification and stakeholder members). Known gap: the flow editor still shows `from`/`to` as mandatory
 cells although a flow without ends is legal (`flow flows : Flow[0..*]`); text and importer already handle it.
 
+**Slice 10 result (2026-11-05, not yet committed):** return parameter inside a constraint body. Importer only:
+`importConstraintBody` now routes a `returnParameterMember` item through `importReturnParameter` (same as the
+calculation body) instead of rejecting it; the result lands in the body `content` of the constraint definition or usage.
+Test: `_490` `testReturnParameterInConstraintBody` (`return result : Boolean;` in a constraint def and
+`return result = true;` in a constraint usage). Before the change the loop threw, so the test fails without it. No structure,
+editor or TextGen change was needed. Full suite 523 tests, only the 2 known PlantUML failures. Probe: 56 OK / 2 FAIL
+(`Requirements.sysml` now imports). Remaining: `TradeStudies.sysml` and `Views.sysml` (requirement constraint, framed
+concern, verification and stakeholder members).
+
 **Refactor: chain-only transition source (2026-11-04).** The source no longer uses `SysMLv2ConnectorEnd`
 (which allows an end name and multiplicity that are illegal on a transition source). New abstract
 `SysMLv2ChainEnd` (implements `ScopeProvider`) carries the scope and chain behavior (the behavior root

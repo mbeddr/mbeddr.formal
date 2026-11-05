@@ -33448,51 +33448,55 @@
             </node>
           </node>
           <node concept="3clFbS" id="5wFVtxx9x8T" role="2LFqv$">
-            <node concept="3clFbJ" id="5wFVtxx9x8U" role="3cqZAp">
-              <node concept="3clFbC" id="5wFVtxx9x8V" role="3clFbw">
-                <node concept="2OqwBi" id="5wFVtxx9Xl1" role="3uHU7B">
-                  <node concept="37vLTw" id="5wFVtxx9IEI" role="2Oq$k0">
-                    <ref role="3cqZAo" node="5wFVtxx9x9o" resolve="item" />
-                  </node>
-                  <node concept="liA8E" id="5wFVtxx9Xl2" role="2OqNvi">
-                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$CalculationBodyItemContext.actionBodyItem()" resolve="actionBodyItem" />
-                  </node>
-                </node>
-                <node concept="10Nm6u" id="5wFVtxx9x8X" role="3uHU7w" />
-              </node>
-              <node concept="3clFbS" id="5wFVtxx9x8Z" role="3clFbx">
-                <node concept="YS8fn" id="5wFVtxx9x92" role="3cqZAp">
-                  <node concept="2ShNRf" id="5wFVtxx9IEK" role="YScLw">
-                    <node concept="1pGfFk" id="5wFVtxx9IKV" role="2ShVmc">
-                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                      <node concept="Xl_RD" id="5wFVtxx9IKW" role="37wK5m">
-                        <property role="Xl_RC" value="Unsupported SysML v2 construct: return parameter inside constraint body" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
             <node concept="3cpWs8" id="5wFVtxx9x94" role="3cqZAp">
               <node concept="3cpWsn" id="5wFVtxx9x93" role="3cpWs9">
                 <property role="TrG5h" value="content" />
                 <node concept="3uibUv" id="5wFVtxx9x95" role="1tU5fm">
                   <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
                 </node>
-                <node concept="2OqwBi" id="5wFVtxx9IZs" role="33vP2m">
-                  <node concept="Xjq3P" id="5wFVtxx9x97" role="2Oq$k0" />
-                  <node concept="liA8E" id="5wFVtxx9IZt" role="2OqNvi">
-                    <ref role="37wK5l" node="7ij$NeE6Xl3" resolve="importActionBodyItemOf" />
-                    <node concept="2OqwBi" id="5wFVtxxa8FX" role="37wK5m">
-                      <node concept="37vLTw" id="5wFVtxx9Xzr" role="2Oq$k0">
-                        <ref role="3cqZAo" node="5wFVtxx9x9o" resolve="item" />
+                <node concept="1eOMI4" id="6r95Pav1x4I" role="33vP2m">
+                  <node concept="3K4zz7" id="6r95Pav1x4H" role="1eOMHV">
+                    <node concept="3y3z36" id="6r95Pav1x4z" role="3K4Cdx">
+                      <node concept="2OqwBi" id="6r95Pav1xKE" role="3uHU7B">
+                        <node concept="37vLTw" id="6r95Pav1xjo" role="2Oq$k0">
+                          <ref role="3cqZAo" node="5wFVtxx9x9o" resolve="item" />
+                        </node>
+                        <node concept="liA8E" id="6r95Pav1xKF" role="2OqNvi">
+                          <ref role="37wK5l" to="guqe:~SysMLv2Parser$CalculationBodyItemContext.returnParameterMember()" resolve="returnParameterMember" />
+                        </node>
                       </node>
-                      <node concept="liA8E" id="5wFVtxxa8FY" role="2OqNvi">
-                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$CalculationBodyItemContext.actionBodyItem()" resolve="actionBodyItem" />
+                      <node concept="10Nm6u" id="6r95Pav1x4_" role="3uHU7w" />
+                    </node>
+                    <node concept="2OqwBi" id="6r95Pav1xxU" role="3K4E3e">
+                      <node concept="Xjq3P" id="6r95Pav1x4B" role="2Oq$k0" />
+                      <node concept="liA8E" id="6r95Pav1xxV" role="2OqNvi">
+                        <ref role="37wK5l" node="5wFVtxtcjET" resolve="importReturnParameter" />
+                        <node concept="2OqwBi" id="6r95Pav1ydF" role="37wK5m">
+                          <node concept="37vLTw" id="6r95Pav1xZ5" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5wFVtxx9x9o" resolve="item" />
+                          </node>
+                          <node concept="liA8E" id="6r95Pav1ydG" role="2OqNvi">
+                            <ref role="37wK5l" to="guqe:~SysMLv2Parser$CalculationBodyItemContext.returnParameterMember()" resolve="returnParameterMember" />
+                          </node>
+                        </node>
                       </node>
                     </node>
-                    <node concept="Xl_RD" id="5wFVtxx9IZv" role="37wK5m">
-                      <property role="Xl_RC" value="constraint" />
+                    <node concept="2OqwBi" id="6r95Pav1xKt" role="3K4GZi">
+                      <node concept="Xjq3P" id="6r95Pav1x4E" role="2Oq$k0" />
+                      <node concept="liA8E" id="6r95Pav1xKu" role="2OqNvi">
+                        <ref role="37wK5l" node="7ij$NeE6Xl3" resolve="importActionBodyItemOf" />
+                        <node concept="2OqwBi" id="6r95Pav1ydQ" role="37wK5m">
+                          <node concept="37vLTw" id="6r95Pav1ydw" role="2Oq$k0">
+                            <ref role="3cqZAo" node="5wFVtxx9x9o" resolve="item" />
+                          </node>
+                          <node concept="liA8E" id="6r95Pav1ydR" role="2OqNvi">
+                            <ref role="37wK5l" to="guqe:~SysMLv2Parser$CalculationBodyItemContext.actionBodyItem()" resolve="actionBodyItem" />
+                          </node>
+                        </node>
+                        <node concept="Xl_RD" id="6r95Pav1xKw" role="37wK5m">
+                          <property role="Xl_RC" value="constraint" />
+                        </node>
+                      </node>
                     </node>
                   </node>
                 </node>
