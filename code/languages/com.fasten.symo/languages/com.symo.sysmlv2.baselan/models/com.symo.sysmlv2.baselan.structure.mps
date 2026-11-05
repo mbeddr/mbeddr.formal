@@ -1250,6 +1250,12 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
     </node>
+    <node concept="1TJgyj" id="6r95PamOK2W" role="1TKVEi">
+      <property role="IQ2ns" value="6353433212932081536" />
+      <property role="20kJfa" value="multiplicity" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeHmu9H">
     <property role="EcuMT" value="4376090928958005869" />
