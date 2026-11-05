@@ -853,6 +853,12 @@ its own editor and TextGen without value cells); `default 7` prints as `default 
 `_290_calc_usage_value` (calc usages with `=`, `:=` and `default` values in a part definition); root check shows only
 the accepted nullable-enum errors.
 
+**Slice 13 (2026-11-05):** the `;` cell of the `SysMLv2RequirementConstraintUsage` editor now uses the same
+condition as `ConstraintUsage` (`content.isEmpty && result == null`), closing the slice 11 gap: a requirement constraint
+whose body is only a result expression no longer also shows `;`. Editor-only change; no editor test (the cell condition
+cannot be checked without a user action), so it is not mutation-checked. Root check clean; full suite 527 tests, only the
+2 known PlantUML failures.
+
 **Refactor: chain-only transition source (2026-11-04).** The source no longer uses `SysMLv2ConnectorEnd`
 (which allows an end name and multiplicity that are illegal on a transition source). New abstract
 `SysMLv2ChainEnd` (implements `ScopeProvider`) carries the scope and chain behavior (the behavior root
