@@ -106,6 +106,7 @@
         <child id="4376090928965378360" name="types" index="2hs9UV" />
         <child id="4376090928958005871" name="payload" index="2hSLRG" />
         <child id="6353433212932081536" name="multiplicity" index="SPUDp" />
+        <child id="7406476705785790677" name="content" index="3Vm5u7" />
       </concept>
       <concept id="3997211576372409960" name="com.symo.sysmlv2.baselan.structure.ISysMLv2IdentifierNameConcept" flags="ngI" index="iIkiC">
         <property id="9028721269218146631" name="declaredShortName" index="6zCXJ" />
@@ -2722,6 +2723,9 @@
             <node concept="3wdj9f" id="6r95Paty8$2" role="2uUmlA">
               <property role="3wdj9b" value="b" />
             </node>
+          </node>
+          <node concept="8EhU9" id="6r95PauMRTA" role="3Vm5u7">
+            <property role="TrG5h" value="weight" />
           </node>
         </node>
         <node concept="2gGTnd" id="6r95Paty8$3" role="3w00ZY">

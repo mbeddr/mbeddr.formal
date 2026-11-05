@@ -800,6 +800,19 @@ known PlantUML failures. Probe: 54 OK / 4 FAIL. Remaining blockers: `Flows.sysml
 `TradeStudies.sysml` and `Views.sysml` (requirement constraint, framed concern, verification and stakeholder members).
 Next slices: body on flow usage; requirement/constraint members.
 
+**Slice 9 result (2026-11-05, not yet committed):** body on flow usage. `SysMLv2FlowUsage` got the child `content`
+(`ISysMLv2PartBodyContent`, 0..n) like the connection usage; editor (optional `{ content }` block and a `;` that
+shows only without content) and TextGen (`;` or indented block) mirror the connection usage; importer helper
+`addFlowUsageContent` (copy of `addBindingContent`, repointed) is called from a loop in `visitFlowUsage` that replaced
+the "body on flow usage" rejection. `doc` and `end occurrence ... :>> ...` in the body needed no further work.
+Test: `_580` `testFlowUsageBody` (end occurrence redefining a definition feature, an attribute usage, `abstract` flow
+with multiplicity and subsetting, two flows). Mutation-checked: replacing the loop by a no-op makes it fail with the
+body missing from the text. Sandbox `_270` flow `f3` got an attribute usage in its body. Full suite 522 tests, only
+the 2 known PlantUML failures. Probe: 55 OK / 3 FAIL (`Flows.sysml` now imports). Remaining: `Requirements.sysml`
+(return parameter inside constraint body), `TradeStudies.sysml` and `Views.sysml` (requirement constraint, framed
+concern, verification and stakeholder members). Known gap: the flow editor still shows `from`/`to` as mandatory
+cells although a flow without ends is legal (`flow flows : Flow[0..*]`); text and importer already handle it.
+
 **Refactor: chain-only transition source (2026-11-04).** The source no longer uses `SysMLv2ConnectorEnd`
 (which allows an end name and multiplicity that are illegal on a transition source). New abstract
 `SysMLv2ChainEnd` (implements `ScopeProvider`) carries the scope and chain behavior (the behavior root

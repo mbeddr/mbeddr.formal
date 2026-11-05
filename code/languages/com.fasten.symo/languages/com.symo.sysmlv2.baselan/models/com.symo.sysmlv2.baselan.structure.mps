@@ -1336,6 +1336,13 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="6coPuU2Lo0D" resolve="SysMLv2Multiplicity" />
     </node>
+    <node concept="1TJgyj" id="6r95Pat$k3l" role="1TKVEi">
+      <property role="IQ2ns" value="7406476705785790677" />
+      <property role="20kJfa" value="content" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeHM$aH">
     <property role="EcuMT" value="4376090928965370541" />

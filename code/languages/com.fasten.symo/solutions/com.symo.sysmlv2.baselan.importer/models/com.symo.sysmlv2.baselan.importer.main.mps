@@ -15176,31 +15176,41 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="7PctyxTtVFW" role="3cqZAp">
-          <node concept="3clFbC" id="7PctyxTtVFZ" role="3clFbw">
-            <node concept="2OqwBi" id="7PctyxTtVG2" role="3uHU7B">
-              <node concept="2OqwBi" id="7PctyxTtVG5" role="2Oq$k0">
-                <node concept="37vLTw" id="7PctyxTtVG8" role="2Oq$k0">
-                  <ref role="3cqZAo" node="7PctyxTtV$_" resolve="ctx" />
-                </node>
-                <node concept="liA8E" id="7PctyxTtVG9" role="2OqNvi">
-                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$FlowUsageContext.definitionBody()" resolve="definitionBody" />
-                </node>
+        <node concept="1DcWWT" id="6r95Pau_ZKt" role="3cqZAp">
+          <node concept="2OqwBi" id="6r95PauA0t5" role="1DdaDG">
+            <node concept="2OqwBi" id="6r95PauA0ed" role="2Oq$k0">
+              <node concept="37vLTw" id="6r95Pau_ZZs" role="2Oq$k0">
+                <ref role="3cqZAo" node="7PctyxTtV$_" resolve="ctx" />
               </node>
-              <node concept="liA8E" id="7PctyxTtVGa" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionBodyContext.SEMI()" resolve="SEMI" />
+              <node concept="liA8E" id="6r95PauA0ee" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$FlowUsageContext.definitionBody()" resolve="definitionBody" />
               </node>
             </node>
-            <node concept="10Nm6u" id="7PctyxTtVGb" role="3uHU7w" />
+            <node concept="liA8E" id="6r95PauA0t6" role="2OqNvi">
+              <ref role="37wK5l" to="guqe:~SysMLv2Parser$DefinitionBodyContext.definitionBodyItem()" resolve="definitionBodyItem" />
+            </node>
           </node>
-          <node concept="3clFbS" id="7PctyxTtVGc" role="3clFbx">
-            <node concept="YS8fn" id="7PctyxTtVGd" role="3cqZAp">
-              <node concept="2ShNRf" id="7PctyxTtVGf" role="YScLw">
-                <node concept="1pGfFk" id="7PctyxTtVGh" role="2ShVmc">
-                  <property role="373rjd" value="true" />
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="Xl_RD" id="7PctyxTtVGi" role="37wK5m">
-                    <property role="Xl_RC" value="Unsupported SysML v2 construct: body on flow usage" />
+          <node concept="3cpWsn" id="6r95Pau_ZKA" role="1Duv9x">
+            <property role="TrG5h" value="item" />
+            <node concept="3uibUv" id="6r95Pau_ZKC" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$DefinitionBodyItemContext" resolve="SysMLv2Parser.DefinitionBodyItemContext" />
+            </node>
+          </node>
+          <node concept="3clFbS" id="6r95Pau_ZKv" role="2LFqv$">
+            <node concept="3clFbF" id="6r95Pau_ZKw" role="3cqZAp">
+              <node concept="2YIFZM" id="6r95PauA0dR" role="3clFbG">
+                <ref role="1Pybhc" node="3PUPjB2rUOG" resolve="SysMLv2ImporterVisitor" />
+                <ref role="37wK5l" node="6r95PatShN7" resolve="addFlowUsageContent" />
+                <node concept="37vLTw" id="6r95PauA0dS" role="37wK5m">
+                  <ref role="3cqZAo" node="7PctyxTtVFv" resolve="fusage" />
+                </node>
+                <node concept="2OqwBi" id="6r95PauA0sJ" role="37wK5m">
+                  <node concept="Xjq3P" id="6r95PauA0dU" role="2Oq$k0" />
+                  <node concept="liA8E" id="6r95PauA0sK" role="2OqNvi">
+                    <ref role="37wK5l" to="6xeh:~AbstractParseTreeVisitor.visit(org.antlr.v4.runtime.tree.ParseTree)" resolve="visit" />
+                    <node concept="37vLTw" id="6r95PauA0sL" role="37wK5m">
+                      <ref role="3cqZAo" node="6r95Pau_ZKA" resolve="item" />
+                    </node>
                   </node>
                 </node>
               </node>
@@ -18441,6 +18451,53 @@
       </node>
       <node concept="3Tm6S6" id="7ij$NeCiuQm" role="1B3o_S" />
       <node concept="3cqZAl" id="7ij$NeCiuQn" role="3clF45" />
+    </node>
+    <node concept="2YIFZL" id="6r95PatShN7" role="jymVt">
+      <property role="TrG5h" value="addFlowUsageContent" />
+      <property role="2Lvdk3" value="addFlowUsageContent" />
+      <node concept="37vLTG" id="6r95PatShN8" role="3clF46">
+        <property role="TrG5h" value="usage" />
+        <node concept="3uibUv" id="6r95PatShN9" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6r95PatShNa" role="3clF46">
+        <property role="TrG5h" value="child" />
+        <node concept="3uibUv" id="6r95PatShNb" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6r95PatShNc" role="3clF47">
+        <node concept="3clFbF" id="6r95PatShNd" role="3cqZAp">
+          <node concept="2OqwBi" id="6r95PatShNe" role="3clFbG">
+            <node concept="2OqwBi" id="6r95PatShNf" role="2Oq$k0">
+              <node concept="1PxgMI" id="6r95PatShNg" role="2Oq$k0">
+                <node concept="37vLTw" id="6r95PatShNh" role="1m5AlR">
+                  <ref role="3cqZAo" node="6r95PatShN8" resolve="usage" />
+                </node>
+                <node concept="chp4Y" id="6r95PatShNi" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:3MUZSeHmu9I" resolve="SysMLv2FlowUsage" />
+                </node>
+              </node>
+              <node concept="3Tsc0h" id="6r95PatShNj" role="2OqNvi">
+                <ref role="3TtcxE" to="5rf1:6r95Pat$k3l" resolve="content" />
+              </node>
+            </node>
+            <node concept="TSZUe" id="6r95PatShNk" role="2OqNvi">
+              <node concept="1PxgMI" id="6r95PatShNl" role="25WWJ7">
+                <node concept="37vLTw" id="6r95PatShNm" role="1m5AlR">
+                  <ref role="3cqZAo" node="6r95PatShNa" resolve="child" />
+                </node>
+                <node concept="chp4Y" id="6r95PatShNn" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:6coPuU2Bx1J" resolve="ISysMLv2PartBodyContent" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6r95PatShNo" role="1B3o_S" />
+      <node concept="3cqZAl" id="6r95PatShNp" role="3clF45" />
     </node>
     <node concept="2YIFZL" id="3MUZSeG7bT3" role="jymVt">
       <property role="TrG5h" value="addPortContent" />

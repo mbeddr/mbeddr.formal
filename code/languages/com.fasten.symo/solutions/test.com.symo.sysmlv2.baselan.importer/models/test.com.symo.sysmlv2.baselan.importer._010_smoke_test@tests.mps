@@ -30802,6 +30802,157 @@
         </node>
       </node>
     </node>
+    <node concept="1LZb2c" id="6r95Paup3eE" role="1SL9yI">
+      <property role="TrG5h" value="testFlowUsageBody" />
+      <node concept="3cqZAl" id="6r95Paup3eF" role="3clF45" />
+      <node concept="3clFbS" id="6r95Paup3eG" role="3clF47">
+        <node concept="3cpWs8" id="6r95Paup3eH" role="3cqZAp">
+          <node concept="3cpWsn" id="6r95Paup3eI" role="3cpWs9">
+            <property role="TrG5h" value="content" />
+            <node concept="3uibUv" id="6r95Paup3eJ" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95Paup3eK" role="3cqZAp">
+          <node concept="37vLTI" id="6r95Paup3eL" role="3clFbG">
+            <node concept="37vLTw" id="6r95Paup3eM" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95Paup3eN" role="37vLTx">
+              <property role="Xl_RC" value="package P {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95Paup3eO" role="3cqZAp">
+          <node concept="d57v9" id="6r95Paup3eP" role="3clFbG">
+            <node concept="37vLTw" id="6r95Paup3eQ" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95Paup3eR" role="37vLTx">
+              <property role="Xl_RC" value="  part def Q {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95Paup3ha" role="3cqZAp">
+          <node concept="d57v9" id="6r95Paup3hb" role="3clFbG">
+            <node concept="37vLTw" id="6r95Paup3hc" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95Paup3hd" role="37vLTx">
+              <property role="Xl_RC" value="    flow f1 : Flow from a.src to b.dst {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95Paup3S8" role="3cqZAp">
+          <node concept="d57v9" id="6r95Paup3S9" role="3clFbG">
+            <node concept="37vLTw" id="6r95Paup3Sa" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95Paup3Sb" role="37vLTx">
+              <property role="Xl_RC" value="      end occurrence source : Occurrence :&gt;&gt; Flow::source;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95Paup4v6" role="3cqZAp">
+          <node concept="d57v9" id="6r95Paup4v7" role="3clFbG">
+            <node concept="37vLTw" id="6r95Paup4v8" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95Paup4v9" role="37vLTx">
+              <property role="Xl_RC" value="      attribute weight;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95Paup564" role="3cqZAp">
+          <node concept="d57v9" id="6r95Paup565" role="3clFbG">
+            <node concept="37vLTw" id="6r95Paup566" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95Paup567" role="37vLTx">
+              <property role="Xl_RC" value="    }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95Paup5H2" role="3cqZAp">
+          <node concept="d57v9" id="6r95Paup5H3" role="3clFbG">
+            <node concept="37vLTw" id="6r95Paup5H4" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95Paup5H5" role="37vLTx">
+              <property role="Xl_RC" value="    abstract flow f2[0..*] :&gt; flows {\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95Paup6k0" role="3cqZAp">
+          <node concept="d57v9" id="6r95Paup6k1" role="3clFbG">
+            <node concept="37vLTw" id="6r95Paup6k2" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95Paup6k3" role="37vLTx">
+              <property role="Xl_RC" value="      end occurrence target : Occurrence :&gt;&gt; flows::target;\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95Paup6UY" role="3cqZAp">
+          <node concept="d57v9" id="6r95Paup6UZ" role="3clFbG">
+            <node concept="37vLTw" id="6r95Paup6V0" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95Paup6V1" role="37vLTx">
+              <property role="Xl_RC" value="    }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95Paup3f4" role="3cqZAp">
+          <node concept="d57v9" id="6r95Paup3f5" role="3clFbG">
+            <node concept="37vLTw" id="6r95Paup3f6" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95Paup3f7" role="37vLTx">
+              <property role="Xl_RC" value="  }\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6r95Paup3f8" role="3cqZAp">
+          <node concept="d57v9" id="6r95Paup3f9" role="3clFbG">
+            <node concept="37vLTw" id="6r95Paup3fa" role="37vLTJ">
+              <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+            </node>
+            <node concept="Xl_RD" id="6r95Paup3fb" role="37vLTx">
+              <property role="Xl_RC" value="}\n" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6r95Paup3fc" role="3cqZAp">
+          <node concept="3cpWsn" id="6r95Paup3fd" role="3cpWs9">
+            <property role="TrG5h" value="generateText" />
+            <node concept="3uibUv" id="6r95Paup3fe" role="1tU5fm">
+              <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+            </node>
+            <node concept="2YIFZM" id="6r95Paup3ff" role="33vP2m">
+              <ref role="1Pybhc" node="5PDtixT1pDg" resolve="RoundtripTestUtils" />
+              <ref role="37wK5l" node="2YEARL0VWES" resolve="parseTextIntoModelAndGenerateText" />
+              <node concept="37vLTw" id="6r95Paup3fg" role="37wK5m">
+                <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+              </node>
+              <node concept="Xl_RD" id="6r95Paup3fh" role="37wK5m">
+                <property role="Xl_RC" value="FlowUsageSpecialization" />
+              </node>
+              <node concept="1jxXqW" id="6r95Paup3fi" role="37wK5m" />
+            </node>
+          </node>
+        </node>
+        <node concept="3vlDli" id="6r95Paup3fj" role="3cqZAp">
+          <node concept="37vLTw" id="6r95Paup3fk" role="3tpDZB">
+            <ref role="3cqZAo" node="6r95Paup3eI" resolve="content" />
+          </node>
+          <node concept="37vLTw" id="6r95Paup3fl" role="3tpDZA">
+            <ref role="3cqZAo" node="6r95Paup3fd" resolve="generateText" />
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
 </model>
 
