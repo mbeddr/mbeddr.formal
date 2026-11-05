@@ -910,17 +910,17 @@
           <node concept="8GF0z" id="fNDJb68mi_" role="3Z9vGx">
             <property role="TrG5h" value="narrowWheel" />
             <node concept="8CKM2" id="fNDJb68miA" role="3w00ZT">
-              <ref role="8CKMW" node="fNDJb68mi$" />
+              <ref role="8CKMW" node="fNDJb68mi$" resolve="Wheel" />
             </node>
           </node>
           <node concept="8GF0z" id="fNDJb68miB" role="3Z9vGx">
             <property role="TrG5h" value="wideWheel" />
             <node concept="3wdj9f" id="fNDJb68miC" role="3wdj9c">
-              <ref role="3wdj98" node="fNDJb68mi_" />
+              <ref role="3wdj98" node="fNDJb68mi_" resolve="narrowWheel" />
               <node concept="2rqxmr" id="fNDJb68miD" role="lGtFl">
-                <ref role="1BTHP0" node="fNDJb68mi_" />
+                <ref role="1BTHP0" node="fNDJb68mi_" resolve="narrowWheel" />
                 <node concept="3KTrbX" id="fNDJb69FUG" role="3KTr4d">
-                  <ref role="3AHY9a" node="fNDJb68mi_" />
+                  <ref role="3AHY9a" node="fNDJb68mi_" resolve="narrowWheel" />
                 </node>
                 <node concept="3KTrbX" id="fNDJb6dc0C" role="3KTr4d">
                   <ref role="3AHY9a" node="fNDJb68miE" resolve="vehicleC1" />
@@ -940,24 +940,24 @@
           <node concept="8GF0z" id="fNDJb68miG" role="3Z9vGx">
             <property role="TrG5h" value="vehicleC2" />
             <node concept="3wdj9f" id="fNDJb68miH" role="3wdj9c">
-              <ref role="3wdj98" node="fNDJb68miE" />
+              <ref role="3wdj98" node="fNDJb68miE" resolve="vehicleC1" />
             </node>
             <node concept="8GF0z" id="fNDJb68miI" role="8GFem">
               <node concept="3wdj9f" id="fNDJb68miJ" role="3wdj9d">
-                <ref role="3wdj98" node="fNDJb6dc16" />
+                <ref role="3wdj98" node="fNDJb6dc16" resolve="chassisAxle" />
                 <node concept="2rqxmr" id="fNDJb68miK" role="lGtFl">
-                  <ref role="1BTHP0" node="fNDJb6dc16" />
+                  <ref role="1BTHP0" node="fNDJb6dc16" resolve="chassisAxle" />
                   <node concept="3KTrbX" id="fNDJb6dc0E" role="3KTr4d">
-                    <ref role="3AHY9a" node="fNDJb6dc16" />
+                    <ref role="3AHY9a" node="fNDJb6dc16" resolve="chassisAxle" />
                   </node>
                   <node concept="3KTrbX" id="fNDJb6dc0B" role="3KTr4d">
-                    <ref role="3AHY9a" node="fNDJb68miF" />
+                    <ref role="3AHY9a" node="fNDJb68miF" resolve="axleAssembly" />
                   </node>
                 </node>
               </node>
             </node>
             <node concept="8CKM2" id="fNDJb6dc17" role="3w00ZT">
-              <ref role="8CKMW" node="fNDJb6dc15" />
+              <ref role="8CKMW" node="fNDJb6dc15" resolve="Chassis" />
             </node>
           </node>
           <node concept="3ZUotO" id="fNDJb6dc15" role="3Z9vGx">
@@ -1098,18 +1098,18 @@
                 <property role="35c6Nm" value="A" />
                 <ref role="35c6Nn" node="fNDJb7Fk_3" resolve="A" />
                 <node concept="2rqxmr" id="fNDJb7Fk_8" role="lGtFl">
-                  <ref role="1BTHP0" node="fNDJb7Fk_3" />
+                  <ref role="1BTHP0" node="fNDJb7Fk_3" resolve="A" />
                   <node concept="3KTrbX" id="fNDJb7Fk_9" role="3KTr4d">
-                    <ref role="3AHY9a" node="fNDJb7Fk_2" />
+                    <ref role="3AHY9a" node="fNDJb7Fk_2" resolve="DP" />
                   </node>
                   <node concept="3KTrbX" id="fNDJb7Fk_a" role="3KTr4d">
-                    <ref role="3AHY9a" node="fNDJb7Fk_3" />
+                    <ref role="3AHY9a" node="fNDJb7Fk_3" resolve="A" />
                   </node>
                   <node concept="3KTrbX" id="fNDJb7Fk_b" role="3KTr4d">
                     <ref role="3AHY9a" node="fNDJb7Fk_4" resolve="I" />
                   </node>
                   <node concept="3KTrbX" id="fNDJb7LdgF" role="3KTr4d">
-                    <ref role="3AHY9a" node="fNDJb7Fk_5" />
+                    <ref role="3AHY9a" node="fNDJb7Fk_5" resolve="Sys" />
                   </node>
                 </node>
               </node>
@@ -1147,22 +1147,22 @@
             <node concept="8CKM2" id="7PctyxTO4tS" role="3w00ZT">
               <ref role="8CKMW" node="7PctyxTO4tO" resolve="Chassis" />
               <node concept="2rqxmr" id="7PctyxTO4tT" role="lGtFl">
-                <ref role="1BTHP0" node="7PctyxTO4tO" />
+                <ref role="1BTHP0" node="7PctyxTO4tO" resolve="Chassis" />
                 <node concept="3KTrbX" id="7PctyxTO4tU" role="3KTr4d">
-                  <ref role="3AHY9a" node="7PctyxTO4tN" />
+                  <ref role="3AHY9a" node="7PctyxTO4tN" resolve="Wheel" />
                 </node>
                 <node concept="3KTrbX" id="7PctyxTO4tV" role="3KTr4d">
-                  <ref role="3AHY9a" node="7PctyxTO4tO" />
+                  <ref role="3AHY9a" node="7PctyxTO4tO" resolve="Chassis" />
                 </node>
               </node>
             </node>
             <node concept="8GF0z" id="7PctyxTO4tW" role="8GFem">
               <node concept="3wdj9f" id="7PctyxTO4tX" role="3wdj9d">
-                <ref role="3wdj98" node="7PctyxTO4tP" />
+                <ref role="3wdj98" node="7PctyxTO4tP" resolve="chassisAxle" />
                 <node concept="2rqxmr" id="7PctyxTO4tY" role="lGtFl">
-                  <ref role="1BTHP0" node="7PctyxTO4tP" />
+                  <ref role="1BTHP0" node="7PctyxTO4tP" resolve="chassisAxle" />
                   <node concept="3KTrbX" id="7PctyxTO4tZ" role="3KTr4d">
-                    <ref role="3AHY9a" node="7PctyxTO4tP" />
+                    <ref role="3AHY9a" node="7PctyxTO4tP" resolve="chassisAxle" />
                   </node>
                 </node>
               </node>
@@ -1189,9 +1189,9 @@
           <node concept="1Bo4sc" id="7PctyxUCLvf" role="7Q8KG">
             <ref role="1Bo4se" node="7PctyxUCLvb" resolve="Part2_1" />
             <node concept="2rqxmr" id="7PctyxUCLvg" role="lGtFl">
-              <ref role="1BTHP0" node="7PctyxUCLvb" />
+              <ref role="1BTHP0" node="7PctyxUCLvb" resolve="Part2_1" />
               <node concept="3KTrbX" id="7PctyxUCLvh" role="3KTr4d">
-                <ref role="3AHY9a" node="7PctyxUCLvb" />
+                <ref role="3AHY9a" node="7PctyxUCLvb" resolve="Part2_1" />
               </node>
               <node concept="3KTrbX" id="7PctyxUDoev" role="3KTr4d">
                 <ref role="3AHY9a" node="7PctyxUCLvc" resolve="Part2_2" />

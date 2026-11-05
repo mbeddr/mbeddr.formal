@@ -73,7 +73,7 @@
   <node concept="2S6QgY" id="fNDJbaT09P">
     <property role="TrG5h" value="AddConnectorEndName" />
     <property role="2ZfUl0" value="true" />
-    <ref role="2ZfgGC" to="5rf1:BOR0Mn7r__" />
+    <ref role="2ZfgGC" to="5rf1:BOR0Mn7r__" resolve="SysMLv2ConnectorEnd" />
     <node concept="2S6ZIM" id="fNDJbaT09U" role="2ZfVej">
       <node concept="3clFbS" id="fNDJbaT09W" role="2VODD2">
         <node concept="3cpWs6" id="fNDJbaT09X" role="3cqZAp">

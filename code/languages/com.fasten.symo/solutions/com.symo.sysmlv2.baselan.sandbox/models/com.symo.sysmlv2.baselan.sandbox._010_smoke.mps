@@ -12,7 +12,7 @@
         <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
       </concept>
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
-        <child id="8930763252717678425" name="type" index="8EhU5" />
+        <child id="8930763252717678425" name="types" index="8EhU5" />
         <child id="7140692429570903510" name="direction" index="3xZtwS" />
       </concept>
       <concept id="8930763252717678342" name="com.symo.sysmlv2.baselan.structure.SysMLv2Multiplicity" flags="ng" index="8EhVq">
@@ -36,7 +36,7 @@
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
         <child id="7140692429574298134" name="multiplicity" index="3w00ZS" />
-        <child id="7140692429574298135" name="type" index="3w00ZT" />
+        <child id="7140692429574298135" name="types" index="3w00ZT" />
         <child id="7140692429574298133" name="direction" index="3w00ZV" />
       </concept>
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
@@ -61,7 +61,7 @@
       <concept id="7140692429570900089" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortUsage" flags="ng" index="3xZtmn">
         <property id="7140692429570900098" name="conjugated" index="3xZtlG" />
         <child id="7140692429570900100" name="multiplicity" index="3xZtlE" />
-        <child id="7140692429570900101" name="type" index="3xZtlF" />
+        <child id="7140692429570900101" name="types" index="3xZtlF" />
         <child id="7140692429570900099" name="direction" index="3xZtlH" />
       </concept>
       <concept id="7140692429570900087" name="com.symo.sysmlv2.baselan.structure.SysMLv2PortDefinition" flags="ng" index="3xZtmp">

@@ -265,9 +265,6 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7JKstLNmmWV" resolve="SysMLv2AttributeDefinitionRef" />
     </node>
-    <node concept="PrWs8" id="4N4m7hrYNh4" role="PzmwI">
-      <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
-    </node>
     <node concept="PrWs8" id="5oZmK$O6ufS" role="PzmwI">
       <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
     </node>
@@ -447,9 +444,6 @@
     <node concept="PrWs8" id="6coPuU2Tg1Z" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
-    <node concept="PrWs8" id="4N4m7hrYNh7" role="PzmwI">
-      <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
-    </node>
     <node concept="PrWs8" id="5oZmK$O6ufP" role="PzmwI">
       <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
     </node>
@@ -588,9 +582,6 @@
     </node>
     <node concept="PrWs8" id="6coPuU36dCi" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
-    </node>
-    <node concept="PrWs8" id="4N4m7hrYNh1" role="PzmwI">
-      <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
     </node>
     <node concept="PrWs8" id="5oZmK$O6ufV" role="PzmwI">
       <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
@@ -1457,6 +1448,9 @@
     </node>
     <node concept="PrWs8" id="7PctyxUfE92" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
+    </node>
+    <node concept="PrWs8" id="3zsHQZGWIph" role="PzmwI">
+      <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
     </node>
   </node>
   <node concept="1TIwiD" id="6jpO12_xkrj">

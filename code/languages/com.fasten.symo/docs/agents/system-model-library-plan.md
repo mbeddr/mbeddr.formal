@@ -5,9 +5,11 @@ is the authoritative summary; the phase descriptions further down are the plan a
 Standing principle: base languages mirror the source spec ([ADR 0001](../adr/0001-base-languages-mirror-the-source-spec.md)).
 Sources: `/home/dan/work/sysmlv2/SysML-v2-Release/sysml.library` (`Systems Library/*.sysml`, 2,666 lines, and
 `Kernel Libraries/*/*.kerml`, 5,182 lines), KerML BNF `bnf/KerML-textual-bnf.kebnf`.
-The accessory model `com.symo.sysmlv2.baselan.system_model_library` (registered in the baselan `.mpl`) is
-intentionally empty: it is the placeholder for the imported Systems Model Library and gets content in Part A
-step 1. Its emptiness is not an unfinished edit (decision 2026-10-24).
+The accessory model `com.symo.sysmlv2.baselan.system_model_library` (registered in the baselan `.mpl`) holds the
+imported SysML Systems Model Library: the 58 library files as `SysMLv2File` roots (status 2026-11-05, see the section
+"System model library imported (2026-11-05)" at the end). It is filled by the refill tool `TestUtils.fillSystemModelLibrary`
+(`_998_FillSystemModelLibrary` in the importer tests), not by hand. The content is EPL-2.0, see
+`languages/com.symo.sysmlv2.baselan/NOTICE-system-model-library.md`.
 
 ## Decisions taken
 - **KerML containment is explicit, not reified (2026-10-21, supersedes the earlier "reified relationships" approach).**
@@ -1126,3 +1128,25 @@ the root `docs/agents/mps-mcp-recipes.md`, gotchas in `docs/agents/mps-gotchas.m
 2. Core layer (Type, Classifier, Feature, Specialization family) as explicit typed child links (same principle as the Root layer), then Kernel layer slices.
 3. Vertical slice `Base.kerml` end to end, then the KerML importer (grammar from `bnf/KerML-textual-bnf.kebnf`) in `com.symo.kerml.baselan.importer`.
 4. Part A items for SysML (library package, visibility/abstract, qualified names, subsetting/redefinition, `ref`, ...), then re-layer SysML on KerML (Phase 6).
+
+
+## System model library imported (2026-11-05)
+- **Content.** All 58 SysML library files are imported into the accessory model as `SysMLv2File` roots (about 5 MB model file),
+  then reified by `SysMLv2TypeReifier.reifyEverything` (two rounds, including the new `reifyDefinitionRefs`,
+  `reifyCalculationDefinitionRefs` and the final `reifyIdentifierNameRefs`). Refill: `TestUtils.fillSystemModelLibrary(Project)`.
+- **Import-aware scoping.** `ISysMLv2Namespace.candidateMembers(child)` is the local members plus `importedMembers(ns, child)`:
+  every `SysMLv2Import` of the namespace is followed (`isNamespace`: members of the target, `isRecursive`: breadth-first
+  through nested namespaces); an import that contains the child is skipped, so an import cannot resolve its own target name.
+- **Fidelity guard.** `_100_SystemModelLibraryTest.testLibraryTextFidelity` regenerates the text of every root and compares it
+  with the original `.sysml` files from the SysML-v2-Release checkout (`/home/dan/work/sysmlv2/SysML-v2-Release/sysml.library`;
+  the test is skipped when the checkout is absent, the originals are not copied into this repo). The comparison
+  (`TestUtils.tokenBagDifference`) is a bag of content tokens (names, numbers, strings, doc comments): layout, punctuation, the
+  order of the parts of one statement, the keywords `attribute`/`ref`/`enum`, the long forms `specializes`/`subsets`/`redefines`
+  and `[n..n]` vs `[n]` are canonicalized by the language and ignored; a missing or changed name, type or doc is reported.
+  Result: green on all 58 files. Mutation-checked: renaming one package in the live model makes it fail with the missing and the
+  extra name (reverted).
+- **Known leftovers.** Unresolved references remain where the KerML stubs are missing (`ScalarValues::*`, `Base::*`, ...) and for
+  inherited/redefined features, which need inheritance-aware scoping. Not yet tested: an import scope-resolution test
+  (resolve a name through a `SysMLv2Import` into the library model, with a mutation check that removes `importedMembers`).
+- **License.** EPL-2.0: `LICENSE-EPL-2.0.txt` and `NOTICE-system-model-library.md` next to the language, with the upstream copyright
+  holders.
