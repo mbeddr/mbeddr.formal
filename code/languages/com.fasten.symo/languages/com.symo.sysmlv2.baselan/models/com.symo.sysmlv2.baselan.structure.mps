@@ -2458,5 +2458,67 @@
       <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6r95PavsURD">
+    <property role="EcuMT" value="7406476705817406953" />
+    <property role="TrG5h" value="SysMLv2RequirementConstraintUsage" />
+    <property role="R4oN_" value="assume|require member of a requirement: RequirementConstraintMembership (8.3.22), declared or referenced form" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
+    <node concept="1TJgyj" id="6r95PavsURI" role="1TKVEi">
+      <property role="IQ2ns" value="7406476705817406958" />
+      <property role="20kJfa" value="referenced" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+    <node concept="1TJgyi" id="6_caVgmUmV1" role="1TKVEl">
+      <property role="IQ2nx" value="7587487524690947777" />
+      <property role="TrG5h" value="kind" />
+      <ref role="AX2Wp" node="6_caVgmUmNd" resolve="SysMLv2RequirementKind" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6r95PavsURE">
+    <property role="EcuMT" value="7406476705817406954" />
+    <property role="TrG5h" value="SysMLv2FramedConcernUsage" />
+    <property role="R4oN_" value="frame member of a requirement: FramedConcernMembership, declared or referenced form" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tQ" resolve="SysMLv2ConcernUsage" />
+    <node concept="1TJgyj" id="6r95PavsURJ" role="1TKVEi">
+      <property role="IQ2ns" value="7406476705817406959" />
+      <property role="20kJfa" value="referenced" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6r95PavsURF">
+    <property role="EcuMT" value="7406476705817406955" />
+    <property role="TrG5h" value="SysMLv2RequirementVerificationUsage" />
+    <property role="R4oN_" value="verify member of a verification case: RequirementVerificationMembership, declared or referenced form" />
+    <ref role="1TJDcQ" node="5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
+    <node concept="1TJgyj" id="6r95PavsURK" role="1TKVEi">
+      <property role="IQ2ns" value="7406476705817406960" />
+      <property role="20kJfa" value="referenced" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <ref role="20lvS9" node="6coPuU3buux" resolve="SysMLv2UsageRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6r95PavsURG">
+    <property role="EcuMT" value="7406476705817406956" />
+    <property role="TrG5h" value="SysMLv2StakeholderUsage" />
+    <property role="R4oN_" value="SysML v2 stakeholder member: a stakeholder of a requirement" />
+    <ref role="1TJDcQ" node="fNDJb6KWCz" resolve="SysMLv2ReferenceUsage" />
+  </node>
+  <node concept="25R3W" id="6_caVgmUmNd">
+    <property role="3F6X1D" value="7587487524690947277" />
+    <property role="TrG5h" value="SysMLv2RequirementKind" />
+    <ref role="1H5jkz" node="6_caVgmUmNf" resolve="require" />
+    <node concept="25R33" id="6_caVgmUmNf" role="25R1y">
+      <property role="3tVfz5" value="3761755784747647558" />
+      <property role="TrG5h" value="require" />
+      <property role="1L1pqM" value="require" />
+    </node>
+    <node concept="25R33" id="6_caVgmUmNg" role="25R1y">
+      <property role="3tVfz5" value="2344350404198062332" />
+      <property role="TrG5h" value="assume" />
+      <property role="1L1pqM" value="assume" />
+    </node>
+  </node>
 </model>
 

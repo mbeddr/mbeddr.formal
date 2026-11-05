@@ -822,6 +822,24 @@ editor or TextGen change was needed. Full suite 523 tests, only the 2 known Plan
 (`Requirements.sysml` now imports). Remaining: `TradeStudies.sysml` and `Views.sysml` (requirement constraint, framed
 concern, verification and stakeholder members).
 
+**Slice 11 result (2026-11-05, not yet committed):** requirement body members. New concepts:
+`SysMLv2RequirementConstraintUsage` (extends `ConstraintUsage`; enum property `kind` = `require` (default) | `assume`;
+optional `referenced` constraint), `SysMLv2FramedConcernUsage` and `SysMLv2RequirementVerificationUsage` (each with an
+optional `referenced` target and an inline declared form), `SysMLv2StakeholderUsage` (extends `ReferenceUsage`, printed
+with the `stakeholder` keyword like the actor). Editors and TextGen for all four. Importer: creators, setters and the
+methods `importRequirementConstraintMember`, `importFramedConcernMember`, `importRequirementVerificationMember`,
+`importStakeholderMember` (prefix metadata is rejected with a specific message); `importRequirementMember` dispatches to
+them, `newReferenceMember` creates a stakeholder for kind `stakeholder`. Test `_590_RequirementBodyMembersTest` (three
+methods: assume/require constraints in referenced and declared form, framed concern and verification, stakeholder in a
+requirement and a concern). Mutation-checked: changing the `"stakeholder"` kind literal makes the stakeholder test fail
+(members printed as `return …`); restored. `_130` `testRequirementStakeholderRejected` described a construct that is now
+supported, so it now checks `stakeholder #M s;` (prefix metadata rejection). Full suite 526 tests, only the 2 known
+PlantUML failures. Probe: 57 OK / 1 FAIL (`Views.sysml` now imports). Remaining: `TradeStudies.sysml`, which now stops at
+"value assignment on behavior usage". Known gap: the constraint editor's `;` condition is `content.isEmpty` only, so a
+body that holds just a result expression also prints `;`. Sandbox `_280_requirement_body_members` (assume/require
+constraints, referenced and declared forms, framed concern, verification, stakeholder); root check shows only the
+accepted nullable-enum errors.
+
 **Refactor: chain-only transition source (2026-11-04).** The source no longer uses `SysMLv2ConnectorEnd`
 (which allows an end name and multiplicity that are illegal on a transition source). New abstract
 `SysMLv2ChainEnd` (implements `ScopeProvider`) carries the scope and chain behavior (the behavior root

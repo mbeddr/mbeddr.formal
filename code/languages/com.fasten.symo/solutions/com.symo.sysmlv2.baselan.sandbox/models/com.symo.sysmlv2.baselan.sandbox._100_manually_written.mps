@@ -287,6 +287,17 @@
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
+      <concept id="7406476705817406954" name="com.symo.sysmlv2.baselan.structure.SysMLv2FramedConcernUsage" flags="ng" index="3TIFES">
+        <child id="7406476705817406959" name="referenced" index="3TIFEX" />
+      </concept>
+      <concept id="7406476705817406955" name="com.symo.sysmlv2.baselan.structure.SysMLv2RequirementVerificationUsage" flags="ng" index="3TIFET">
+        <child id="7406476705817406960" name="referenced" index="3TIFEy" />
+      </concept>
+      <concept id="7406476705817406953" name="com.symo.sysmlv2.baselan.structure.SysMLv2RequirementConstraintUsage" flags="ng" index="3TIFEV">
+        <property id="7587487524690947777" name="kind" index="1ZDklP" />
+        <child id="7406476705817406958" name="referenced" index="3TIFEW" />
+      </concept>
+      <concept id="7406476705817406956" name="com.symo.sysmlv2.baselan.structure.SysMLv2StakeholderUsage" flags="ng" index="3TIFEY" />
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
         <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
         <child id="9028721269198354948" name="importedElement" index="7Q8KG" />
@@ -2819,6 +2830,58 @@
             <node concept="3wdj9f" id="6r95Paty8$M" role="2uUmlA">
               <property role="3wdj9b" value="d" />
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2h0jOr" id="6_caVgouWuE">
+    <property role="TrG5h" value="_280_requirement_body_members" />
+    <node concept="3Z9vzX" id="6_caVgouWuF" role="2h0jOs">
+      <property role="TrG5h" value="RequirementBodyMembers" />
+      <node concept="3ZUotO" id="6_caVgouWuG" role="3Z9vGx">
+        <property role="TrG5h" value="Person" />
+      </node>
+      <node concept="66VRr" id="6_caVgouWuH" role="3Z9vGx">
+        <property role="TrG5h" value="BrakingRequirement" />
+        <node concept="3TIFEV" id="6_caVgouWuI" role="66U86">
+          <property role="TrG5h" value="minDeceleration" />
+          <property role="1ZDklP" value="228N$mfhdzW/assume" />
+          <node concept="3bnkR8" id="6_caVgouWuJ" role="SPUDi">
+            <property role="3bnkR9" value="deceleration &gt;= 0" />
+          </node>
+        </node>
+        <node concept="3TIFEV" id="6_caVgouWuK" role="66U86">
+          <property role="TrG5h" value="stopsInTime" />
+          <node concept="3bnkR8" id="6_caVgouWuL" role="SPUDi">
+            <property role="3bnkR9" value="stoppingTime &lt;= 5" />
+          </node>
+        </node>
+        <node concept="3TIFEV" id="6_caVgouWuM" role="66U86">
+          <node concept="3wdj9f" id="6_caVgouWuN" role="3TIFEW">
+            <property role="3wdj9b" value="stopsInTime" />
+          </node>
+        </node>
+        <node concept="3TIFES" id="6_caVgouWuO" role="66U86">
+          <property role="TrG5h" value="safetyConcern" />
+        </node>
+        <node concept="3TIFES" id="6_caVgouWuP" role="66U86">
+          <node concept="3wdj9f" id="6_caVgouWuQ" role="3TIFEX">
+            <property role="3wdj9b" value="safetyConcern" />
+          </node>
+        </node>
+        <node concept="3TIFET" id="6_caVgouWuR" role="66U86">
+          <property role="TrG5h" value="brakeTest" />
+        </node>
+        <node concept="3TIFET" id="6_caVgouWuS" role="66U86">
+          <node concept="3wdj9f" id="6_caVgouWuT" role="3TIFEy">
+            <property role="3wdj9b" value="brakeTest" />
+          </node>
+        </node>
+        <node concept="3TIFEY" id="6_caVgouWuU" role="66U86">
+          <property role="TrG5h" value="driver" />
+          <node concept="35c6Ng" id="6_caVgouWuV" role="35c6Nl">
+            <property role="35c6Nm" value="Person" />
           </node>
         </node>
       </node>

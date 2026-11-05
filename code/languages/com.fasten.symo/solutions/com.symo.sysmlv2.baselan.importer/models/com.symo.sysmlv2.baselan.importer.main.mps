@@ -37573,10 +37573,26 @@
             </node>
           </node>
         </node>
-        <node concept="3cpWs6" id="6jBzJlCqHKD" role="3cqZAp">
-          <node concept="1rXfSq" id="6jBzJlCqHKE" role="3cqZAk">
-            <ref role="37wK5l" node="5wFVtxsZ_vW" resolve="newReturnParameter" />
-            <node concept="10Nm6u" id="6jBzJlCqHKF" role="37wK5m" />
+        <node concept="3cpWs6" id="6_caVgocew4" role="3cqZAp">
+          <node concept="3K4zz7" id="6_caVgocewb" role="3cqZAk">
+            <node concept="2OqwBi" id="6_caVgocfqe" role="3K4Cdx">
+              <node concept="Xl_RD" id="6_caVgocew6" role="2Oq$k0">
+                <property role="Xl_RC" value="stakeholder" />
+              </node>
+              <node concept="liA8E" id="6_caVgocfqf" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equals(java.lang.Object)" resolve="equals" />
+                <node concept="37vLTw" id="6_caVgocfqg" role="37wK5m">
+                  <ref role="3cqZAo" node="6jBzJlCqHKk" resolve="kind" />
+                </node>
+              </node>
+            </node>
+            <node concept="1rXfSq" id="6_caVgocew8" role="3K4E3e">
+              <ref role="37wK5l" node="6_caVgn$Nvs" resolve="newStakeholderUsage" />
+            </node>
+            <node concept="1rXfSq" id="6_caVgocew9" role="3K4GZi">
+              <ref role="37wK5l" node="5wFVtxsZ_vW" resolve="newReturnParameter" />
+              <node concept="10Nm6u" id="6_caVgocewa" role="37wK5m" />
+            </node>
           </node>
         </node>
       </node>
@@ -38256,34 +38272,158 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbJ" id="6jBzJlDaTOm" role="3cqZAp">
-          <node concept="3clFbC" id="6jBzJlDaTOn" role="3clFbw">
-            <node concept="2OqwBi" id="6jBzJlDb5Vi" role="3uHU7B">
-              <node concept="37vLTw" id="6jBzJlDb2J3" role="2Oq$k0">
+        <node concept="3clFbJ" id="6_caVgnZf02" role="3cqZAp">
+          <node concept="3y3z36" id="6_caVgnZf03" role="3clFbw">
+            <node concept="2OqwBi" id="6_caVgnZhg8" role="3uHU7B">
+              <node concept="37vLTw" id="6_caVgnZffK" role="2Oq$k0">
                 <ref role="3cqZAo" node="6jBzJlDaTNX" resolve="item" />
               </node>
-              <node concept="liA8E" id="6jBzJlDb5Vj" role="2OqNvi">
-                <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementBodyItemContext.definitionBodyItem()" resolve="definitionBodyItem" />
+              <node concept="liA8E" id="6_caVgnZhg9" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementBodyItemContext.requirementConstraintMember()" resolve="requirementConstraintMember" />
               </node>
             </node>
-            <node concept="10Nm6u" id="6jBzJlDaTOp" role="3uHU7w" />
+            <node concept="10Nm6u" id="6_caVgnZf05" role="3uHU7w" />
           </node>
-          <node concept="3clFbS" id="6jBzJlDaTOr" role="3clFbx">
-            <node concept="YS8fn" id="6jBzJlDaTOy" role="3cqZAp">
-              <node concept="2ShNRf" id="6jBzJlDb2J5" role="YScLw">
-                <node concept="1pGfFk" id="6jBzJlDb2Vk" role="2ShVmc">
-                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
-                  <node concept="3cpWs3" id="6jBzJlDb2Vl" role="37wK5m">
-                    <node concept="3cpWs3" id="6jBzJlDb2Vm" role="3uHU7B">
-                      <node concept="Xl_RD" id="6jBzJlDb2Vn" role="3uHU7B">
-                        <property role="Xl_RC" value="Unsupported SysML v2 construct: " />
+          <node concept="3clFbJ" id="6_caVgnZf0c" role="9aQIa">
+            <node concept="3y3z36" id="6_caVgnZf0d" role="3clFbw">
+              <node concept="2OqwBi" id="6_caVgnZhgj" role="3uHU7B">
+                <node concept="37vLTw" id="6_caVgnZfub" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6jBzJlDaTNX" resolve="item" />
+                </node>
+                <node concept="liA8E" id="6_caVgnZhgk" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementBodyItemContext.framedConcernMember()" resolve="framedConcernMember" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="6_caVgnZf0f" role="3uHU7w" />
+            </node>
+            <node concept="3clFbJ" id="6_caVgnZf0m" role="9aQIa">
+              <node concept="3y3z36" id="6_caVgnZf0n" role="3clFbw">
+                <node concept="2OqwBi" id="6_caVgnZhgu" role="3uHU7B">
+                  <node concept="37vLTw" id="6_caVgnZfGA" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6jBzJlDaTNX" resolve="item" />
+                  </node>
+                  <node concept="liA8E" id="6_caVgnZhgv" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementBodyItemContext.requirementVerificationMember()" resolve="requirementVerificationMember" />
+                  </node>
+                </node>
+                <node concept="10Nm6u" id="6_caVgnZf0p" role="3uHU7w" />
+              </node>
+              <node concept="3clFbJ" id="6_caVgnZf0w" role="9aQIa">
+                <node concept="3y3z36" id="6_caVgnZf0x" role="3clFbw">
+                  <node concept="2OqwBi" id="6_caVgnZhgD" role="3uHU7B">
+                    <node concept="37vLTw" id="6_caVgnZfV1" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6jBzJlDaTNX" resolve="item" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgnZhgE" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementBodyItemContext.stakeholderMember()" resolve="stakeholderMember" />
+                    </node>
+                  </node>
+                  <node concept="10Nm6u" id="6_caVgnZf0z" role="3uHU7w" />
+                </node>
+                <node concept="3clFbJ" id="6_caVgnZf0E" role="9aQIa">
+                  <node concept="3clFbC" id="6_caVgnZf0F" role="3clFbw">
+                    <node concept="2OqwBi" id="6_caVgnZhgO" role="3uHU7B">
+                      <node concept="37vLTw" id="6_caVgnZg9s" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6jBzJlDaTNX" resolve="item" />
                       </node>
-                      <node concept="37vLTw" id="6jBzJlDb2Vo" role="3uHU7w">
-                        <ref role="3cqZAo" node="6jBzJlDaTNZ" resolve="owner" />
+                      <node concept="liA8E" id="6_caVgnZhgP" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementBodyItemContext.definitionBodyItem()" resolve="definitionBodyItem" />
                       </node>
                     </node>
-                    <node concept="Xl_RD" id="6jBzJlDb2Vp" role="3uHU7w">
-                      <property role="Xl_RC" value=" constraint, framed concern, verification or stakeholder member" />
+                    <node concept="10Nm6u" id="6_caVgnZf0H" role="3uHU7w" />
+                  </node>
+                  <node concept="3clFbS" id="6_caVgnZf0J" role="3clFbx">
+                    <node concept="YS8fn" id="6_caVgnZf0Q" role="3cqZAp">
+                      <node concept="2ShNRf" id="6_caVgnZg9u" role="YScLw">
+                        <node concept="1pGfFk" id="6_caVgnZglH" role="2ShVmc">
+                          <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                          <node concept="3cpWs3" id="6_caVgnZglI" role="37wK5m">
+                            <node concept="3cpWs3" id="6_caVgnZglJ" role="3uHU7B">
+                              <node concept="Xl_RD" id="6_caVgnZglK" role="3uHU7B">
+                                <property role="Xl_RC" value="Unsupported SysML v2 construct: " />
+                              </node>
+                              <node concept="37vLTw" id="6_caVgnZglL" role="3uHU7w">
+                                <ref role="3cqZAo" node="6jBzJlDaTNZ" resolve="owner" />
+                              </node>
+                            </node>
+                            <node concept="Xl_RD" id="6_caVgnZglM" role="3uHU7w">
+                              <property role="Xl_RC" value=" requirement member" />
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbS" id="6_caVgnZf0_" role="3clFbx">
+                  <node concept="3cpWs6" id="6_caVgnZf0A" role="3cqZAp">
+                    <node concept="2OqwBi" id="6_caVgnZg$j" role="3cqZAk">
+                      <node concept="Xjq3P" id="6_caVgnZf0C" role="2Oq$k0" />
+                      <node concept="liA8E" id="6_caVgnZg$k" role="2OqNvi">
+                        <ref role="37wK5l" node="6_caVgn$O2o" resolve="importStakeholderMember" />
+                        <node concept="2OqwBi" id="6_caVgnZiaF" role="37wK5m">
+                          <node concept="37vLTw" id="6_caVgnZhvf" role="2Oq$k0">
+                            <ref role="3cqZAo" node="6jBzJlDaTNX" resolve="item" />
+                          </node>
+                          <node concept="liA8E" id="6_caVgnZiaG" role="2OqNvi">
+                            <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementBodyItemContext.stakeholderMember()" resolve="stakeholderMember" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="6_caVgnZf0r" role="3clFbx">
+                <node concept="3cpWs6" id="6_caVgnZf0s" role="3cqZAp">
+                  <node concept="2OqwBi" id="6_caVgnZgMQ" role="3cqZAk">
+                    <node concept="Xjq3P" id="6_caVgnZf0u" role="2Oq$k0" />
+                    <node concept="liA8E" id="6_caVgnZgMR" role="2OqNvi">
+                      <ref role="37wK5l" node="6_caVgn$O1f" resolve="importRequirementVerificationMember" />
+                      <node concept="2OqwBi" id="6_caVgnZiaQ" role="37wK5m">
+                        <node concept="37vLTw" id="6_caVgnZhHE" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6jBzJlDaTNX" resolve="item" />
+                        </node>
+                        <node concept="liA8E" id="6_caVgnZiaR" role="2OqNvi">
+                          <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementBodyItemContext.requirementVerificationMember()" resolve="requirementVerificationMember" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbS" id="6_caVgnZf0h" role="3clFbx">
+              <node concept="3cpWs6" id="6_caVgnZf0i" role="3cqZAp">
+                <node concept="2OqwBi" id="6_caVgnZh1p" role="3cqZAk">
+                  <node concept="Xjq3P" id="6_caVgnZf0k" role="2Oq$k0" />
+                  <node concept="liA8E" id="6_caVgnZh1q" role="2OqNvi">
+                    <ref role="37wK5l" node="6_caVgn$O0b" resolve="importFramedConcernMember" />
+                    <node concept="2OqwBi" id="6_caVgnZib1" role="37wK5m">
+                      <node concept="37vLTw" id="6_caVgnZhW5" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6jBzJlDaTNX" resolve="item" />
+                      </node>
+                      <node concept="liA8E" id="6_caVgnZib2" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementBodyItemContext.framedConcernMember()" resolve="framedConcernMember" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="6_caVgnZf07" role="3clFbx">
+            <node concept="3cpWs6" id="6_caVgnZf08" role="3cqZAp">
+              <node concept="2OqwBi" id="6_caVgnZhfW" role="3cqZAk">
+                <node concept="Xjq3P" id="6_caVgnZf0a" role="2Oq$k0" />
+                <node concept="liA8E" id="6_caVgnZhfX" role="2OqNvi">
+                  <ref role="37wK5l" node="6_caVgn$NYU" resolve="importRequirementConstraintMember" />
+                  <node concept="2OqwBi" id="6_caVgnZibc" role="37wK5m">
+                    <node concept="37vLTw" id="6_caVgnZiaw" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6jBzJlDaTNX" resolve="item" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgnZibd" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementBodyItemContext.requirementConstraintMember()" resolve="requirementConstraintMember" />
                     </node>
                   </node>
                 </node>
@@ -44589,6 +44729,1228 @@
       </node>
       <node concept="3Tm6S6" id="6r95PaicAoR" role="1B3o_S" />
       <node concept="3uibUv" id="6r95PaicAoS" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+    </node>
+    <node concept="2YIFZL" id="6_caVgn$MCO" role="jymVt">
+      <property role="TrG5h" value="newRequirementConstraintUsage" />
+      <property role="2Lvdk3" value="newRequirementConstraintUsage" />
+      <node concept="3uibUv" id="6_caVgn$MCR" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+      <node concept="3clFbS" id="6_caVgn$MCS" role="3clF47">
+        <node concept="3cpWs6" id="6_caVgn$MCT" role="3cqZAp">
+          <node concept="2ShNRf" id="6_caVgn$MCU" role="3cqZAk">
+            <node concept="3zrR0B" id="6_caVgn$MCV" role="2ShVmc">
+              <node concept="3Tqbb2" id="6_caVgn$MCW" role="3zrR0E">
+                <ref role="ehGHo" to="5rf1:6r95PavsURD" resolve="SysMLv2RequirementConstraintUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$MCX" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="6_caVgn$Nv8" role="jymVt">
+      <property role="TrG5h" value="newFramedConcernUsage" />
+      <property role="2Lvdk3" value="newFramedConcernUsage" />
+      <node concept="3uibUv" id="6_caVgn$Nvb" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+      <node concept="3clFbS" id="6_caVgn$Nvc" role="3clF47">
+        <node concept="3cpWs6" id="6_caVgn$Nvd" role="3cqZAp">
+          <node concept="2ShNRf" id="6_caVgn$Nve" role="3cqZAk">
+            <node concept="3zrR0B" id="6_caVgn$Nvf" role="2ShVmc">
+              <node concept="3Tqbb2" id="6_caVgn$Nvg" role="3zrR0E">
+                <ref role="ehGHo" to="5rf1:6r95PavsURE" resolve="SysMLv2FramedConcernUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$Nvh" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="6_caVgn$Nvi" role="jymVt">
+      <property role="TrG5h" value="newRequirementVerificationUsage" />
+      <property role="2Lvdk3" value="newRequirementVerificationUsage" />
+      <node concept="3uibUv" id="6_caVgn$Nvl" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+      <node concept="3clFbS" id="6_caVgn$Nvm" role="3clF47">
+        <node concept="3cpWs6" id="6_caVgn$Nvn" role="3cqZAp">
+          <node concept="2ShNRf" id="6_caVgn$Nvo" role="3cqZAk">
+            <node concept="3zrR0B" id="6_caVgn$Nvp" role="2ShVmc">
+              <node concept="3Tqbb2" id="6_caVgn$Nvq" role="3zrR0E">
+                <ref role="ehGHo" to="5rf1:6r95PavsURF" resolve="SysMLv2RequirementVerificationUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$Nvr" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="6_caVgn$Nvs" role="jymVt">
+      <property role="TrG5h" value="newStakeholderUsage" />
+      <property role="2Lvdk3" value="newStakeholderUsage" />
+      <node concept="3uibUv" id="6_caVgn$Nvv" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+      <node concept="3clFbS" id="6_caVgn$Nvw" role="3clF47">
+        <node concept="3cpWs6" id="6_caVgn$Nvx" role="3cqZAp">
+          <node concept="2ShNRf" id="6_caVgn$Nvy" role="3cqZAk">
+            <node concept="3zrR0B" id="6_caVgn$Nvz" role="2ShVmc">
+              <node concept="3Tqbb2" id="6_caVgn$Nv$" role="3zrR0E">
+                <ref role="ehGHo" to="5rf1:6r95PavsURG" resolve="SysMLv2StakeholderUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$Nv_" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="6_caVgn$NAK" role="jymVt">
+      <property role="TrG5h" value="setReferencedConstraint" />
+      <property role="2Lvdk3" value="setReferencedConstraint" />
+      <node concept="3cqZAl" id="6_caVgn$NAN" role="3clF45" />
+      <node concept="37vLTG" id="6_caVgn$NAO" role="3clF46">
+        <property role="TrG5h" value="transition" />
+        <property role="2Lvdk3" value="transition" />
+        <node concept="3uibUv" id="6_caVgn$NAP" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6_caVgn$NAQ" role="3clF46">
+        <property role="TrG5h" value="text" />
+        <property role="2Lvdk3" value="text" />
+        <node concept="3uibUv" id="6_caVgn$NAR" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6_caVgn$NAS" role="3clF47">
+        <node concept="3cpWs8" id="6_caVgn$NAT" role="3cqZAp">
+          <node concept="3cpWsn" id="6_caVgn$NAU" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="literal" />
+            <property role="2Lvdk3" value="literal" />
+            <node concept="2ShNRf" id="6_caVgn$NAV" role="33vP2m">
+              <node concept="3zrR0B" id="6_caVgn$NAW" role="2ShVmc">
+                <node concept="3Tqbb2" id="6_caVgn$NAX" role="3zrR0E">
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Tqbb2" id="6_caVgn$NAY" role="1tU5fm">
+              <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6_caVgn$NAZ" role="3cqZAp">
+          <node concept="37vLTI" id="6_caVgn$NB0" role="3clFbG">
+            <node concept="2OqwBi" id="6_caVgn$NB1" role="37vLTJ">
+              <node concept="37vLTw" id="6_caVgn$NB2" role="2Oq$k0">
+                <ref role="3cqZAo" node="6_caVgn$NAU" resolve="literal" />
+              </node>
+              <node concept="3TrcHB" id="6_caVgn$NB3" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6_caVgn$NB4" role="37vLTx">
+              <ref role="3cqZAo" node="6_caVgn$NAQ" resolve="text" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6_caVgn$NB5" role="3cqZAp">
+          <node concept="37vLTI" id="6_caVgn$NB6" role="3clFbG">
+            <node concept="2OqwBi" id="6_caVgn$NB7" role="37vLTJ">
+              <node concept="1PxgMI" id="6_caVgn$NB8" role="2Oq$k0">
+                <node concept="37vLTw" id="6_caVgn$NB9" role="1m5AlR">
+                  <ref role="3cqZAo" node="6_caVgn$NAO" resolve="transition" />
+                </node>
+                <node concept="chp4Y" id="6_caVgn$NBa" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:6r95PavsURD" resolve="SysMLv2RequirementConstraintUsage" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="6_caVgn$NBb" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6r95PavsURI" resolve="referenced" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6_caVgn$NBc" role="37vLTx">
+              <ref role="3cqZAo" node="6_caVgn$NAU" resolve="literal" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$NBd" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="6_caVgn$NBv" role="jymVt">
+      <property role="TrG5h" value="setFramedConcern" />
+      <property role="2Lvdk3" value="setFramedConcern" />
+      <node concept="3cqZAl" id="6_caVgn$NBy" role="3clF45" />
+      <node concept="37vLTG" id="6_caVgn$NBz" role="3clF46">
+        <property role="TrG5h" value="transition" />
+        <property role="2Lvdk3" value="transition" />
+        <node concept="3uibUv" id="6_caVgn$NB$" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6_caVgn$NB_" role="3clF46">
+        <property role="TrG5h" value="text" />
+        <property role="2Lvdk3" value="text" />
+        <node concept="3uibUv" id="6_caVgn$NBA" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6_caVgn$NBB" role="3clF47">
+        <node concept="3cpWs8" id="6_caVgn$NBC" role="3cqZAp">
+          <node concept="3cpWsn" id="6_caVgn$NBD" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="literal" />
+            <property role="2Lvdk3" value="literal" />
+            <node concept="2ShNRf" id="6_caVgn$NBE" role="33vP2m">
+              <node concept="3zrR0B" id="6_caVgn$NBF" role="2ShVmc">
+                <node concept="3Tqbb2" id="6_caVgn$NBG" role="3zrR0E">
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Tqbb2" id="6_caVgn$NBH" role="1tU5fm">
+              <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6_caVgn$NBI" role="3cqZAp">
+          <node concept="37vLTI" id="6_caVgn$NBJ" role="3clFbG">
+            <node concept="2OqwBi" id="6_caVgn$NBK" role="37vLTJ">
+              <node concept="37vLTw" id="6_caVgn$NBL" role="2Oq$k0">
+                <ref role="3cqZAo" node="6_caVgn$NBD" resolve="literal" />
+              </node>
+              <node concept="3TrcHB" id="6_caVgn$NBM" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6_caVgn$NBN" role="37vLTx">
+              <ref role="3cqZAo" node="6_caVgn$NB_" resolve="text" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6_caVgn$NBO" role="3cqZAp">
+          <node concept="37vLTI" id="6_caVgn$NBP" role="3clFbG">
+            <node concept="2OqwBi" id="6_caVgn$NBQ" role="37vLTJ">
+              <node concept="1PxgMI" id="6_caVgn$NBR" role="2Oq$k0">
+                <node concept="37vLTw" id="6_caVgn$NBS" role="1m5AlR">
+                  <ref role="3cqZAo" node="6_caVgn$NBz" resolve="transition" />
+                </node>
+                <node concept="chp4Y" id="6_caVgn$NBT" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:6r95PavsURE" resolve="SysMLv2FramedConcernUsage" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="6_caVgn$NBU" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6r95PavsURJ" resolve="referenced" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6_caVgn$NBV" role="37vLTx">
+              <ref role="3cqZAo" node="6_caVgn$NBD" resolve="literal" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$NBW" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="6_caVgn$NCe" role="jymVt">
+      <property role="TrG5h" value="setVerified" />
+      <property role="2Lvdk3" value="setVerified" />
+      <node concept="3cqZAl" id="6_caVgn$NCh" role="3clF45" />
+      <node concept="37vLTG" id="6_caVgn$NCi" role="3clF46">
+        <property role="TrG5h" value="transition" />
+        <property role="2Lvdk3" value="transition" />
+        <node concept="3uibUv" id="6_caVgn$NCj" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6_caVgn$NCk" role="3clF46">
+        <property role="TrG5h" value="text" />
+        <property role="2Lvdk3" value="text" />
+        <node concept="3uibUv" id="6_caVgn$NCl" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6_caVgn$NCm" role="3clF47">
+        <node concept="3cpWs8" id="6_caVgn$NCn" role="3cqZAp">
+          <node concept="3cpWsn" id="6_caVgn$NCo" role="3cpWs9">
+            <property role="OYnhT" value="local variable" />
+            <property role="TrG5h" value="literal" />
+            <property role="2Lvdk3" value="literal" />
+            <node concept="2ShNRf" id="6_caVgn$NCp" role="33vP2m">
+              <node concept="3zrR0B" id="6_caVgn$NCq" role="2ShVmc">
+                <node concept="3Tqbb2" id="6_caVgn$NCr" role="3zrR0E">
+                  <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+                </node>
+              </node>
+            </node>
+            <node concept="3Tqbb2" id="6_caVgn$NCs" role="1tU5fm">
+              <ref role="ehGHo" to="5rf1:6coPuU3buux" resolve="SysMLv2UsageRef" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6_caVgn$NCt" role="3cqZAp">
+          <node concept="37vLTI" id="6_caVgn$NCu" role="3clFbG">
+            <node concept="2OqwBi" id="6_caVgn$NCv" role="37vLTJ">
+              <node concept="37vLTw" id="6_caVgn$NCw" role="2Oq$k0">
+                <ref role="3cqZAo" node="6_caVgn$NCo" resolve="literal" />
+              </node>
+              <node concept="3TrcHB" id="6_caVgn$NCx" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6coPuU3buu_" resolve="usageName" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6_caVgn$NCy" role="37vLTx">
+              <ref role="3cqZAo" node="6_caVgn$NCk" resolve="text" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6_caVgn$NCz" role="3cqZAp">
+          <node concept="37vLTI" id="6_caVgn$NC$" role="3clFbG">
+            <node concept="2OqwBi" id="6_caVgn$NC_" role="37vLTJ">
+              <node concept="1PxgMI" id="6_caVgn$NCA" role="2Oq$k0">
+                <node concept="37vLTw" id="6_caVgn$NCB" role="1m5AlR">
+                  <ref role="3cqZAo" node="6_caVgn$NCi" resolve="transition" />
+                </node>
+                <node concept="chp4Y" id="6_caVgn$NCC" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:6r95PavsURF" resolve="SysMLv2RequirementVerificationUsage" />
+                </node>
+              </node>
+              <node concept="3TrEf2" id="6_caVgn$NCD" role="2OqNvi">
+                <ref role="3Tt5mk" to="5rf1:6r95PavsURK" resolve="referenced" />
+              </node>
+            </node>
+            <node concept="37vLTw" id="6_caVgn$NCE" role="37vLTx">
+              <ref role="3cqZAo" node="6_caVgn$NCo" resolve="literal" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$NCF" role="1B3o_S" />
+    </node>
+    <node concept="2YIFZL" id="6_caVgn$NYl" role="jymVt">
+      <property role="TrG5h" value="applyRequirementKind" />
+      <node concept="37vLTG" id="6_caVgn$NYm" role="3clF46">
+        <property role="TrG5h" value="usage" />
+        <node concept="3uibUv" id="6_caVgn$NYn" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="6_caVgn$NYo" role="3clF46">
+        <property role="TrG5h" value="assume" />
+        <node concept="10P_77" id="6_caVgn$NYp" role="1tU5fm" />
+      </node>
+      <node concept="3clFbS" id="6_caVgn$NYq" role="3clF47">
+        <node concept="3clFbF" id="6_caVgnZeJK" role="3cqZAp">
+          <node concept="37vLTI" id="6_caVgnZeJL" role="3clFbG">
+            <node concept="2OqwBi" id="6_caVgnZeJM" role="37vLTJ">
+              <node concept="1PxgMI" id="6_caVgnZeJN" role="2Oq$k0">
+                <node concept="37vLTw" id="6_caVgnZeJO" role="1m5AlR">
+                  <ref role="3cqZAo" node="6_caVgn$NYm" resolve="usage" />
+                </node>
+                <node concept="chp4Y" id="6_caVgnZeJP" role="3oSUPX">
+                  <ref role="cht4Q" to="5rf1:6r95PavsURD" resolve="SysMLv2RequirementConstraintUsage" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6_caVgnZeJQ" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:6_caVgmUmV1" resolve="kind" />
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6_caVgnZeJR" role="37vLTx">
+              <node concept="1XH99k" id="6_caVgnZeJS" role="2Oq$k0">
+                <ref role="1XH99l" to="5rf1:6_caVgmUmNd" resolve="SysMLv2RequirementKind" />
+              </node>
+              <node concept="2ViDtW" id="6_caVgnZeJT" role="2OqNvi">
+                <node concept="3K4zz7" id="6_caVgnZeJU" role="2ViJBj">
+                  <node concept="37vLTw" id="6_caVgnZeJV" role="3K4Cdx">
+                    <ref role="3cqZAo" node="6_caVgn$NYo" resolve="assume" />
+                  </node>
+                  <node concept="Xl_RD" id="6_caVgnZeJW" role="3K4E3e">
+                    <property role="Xl_RC" value="assume" />
+                  </node>
+                  <node concept="Xl_RD" id="6_caVgnZeJX" role="3K4GZi">
+                    <property role="Xl_RC" value="require" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$NYB" role="1B3o_S" />
+      <node concept="3cqZAl" id="6_caVgn$NYC" role="3clF45" />
+    </node>
+    <node concept="2YIFZL" id="6_caVgn$NYD" role="jymVt">
+      <property role="TrG5h" value="rejectUsageExtension" />
+      <node concept="37vLTG" id="6_caVgn$NYE" role="3clF46">
+        <property role="TrG5h" value="present" />
+        <node concept="10P_77" id="6_caVgn$NYF" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="6_caVgn$NYG" role="3clF46">
+        <property role="TrG5h" value="what" />
+        <node concept="3uibUv" id="6_caVgn$NYH" role="1tU5fm">
+          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6_caVgn$NYI" role="3clF47">
+        <node concept="3clFbJ" id="6_caVgn$NYJ" role="3cqZAp">
+          <node concept="37vLTw" id="6_caVgn$NYK" role="3clFbw">
+            <ref role="3cqZAo" node="6_caVgn$NYE" resolve="present" />
+          </node>
+          <node concept="3clFbS" id="6_caVgn$NYM" role="3clFbx">
+            <node concept="YS8fn" id="6_caVgn$NYR" role="3cqZAp">
+              <node concept="2ShNRf" id="6_caVgn$YFZ" role="YScLw">
+                <node concept="1pGfFk" id="6_caVgn$YS6" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                  <node concept="3cpWs3" id="6_caVgn$YS7" role="37wK5m">
+                    <node concept="Xl_RD" id="6_caVgn$YS8" role="3uHU7B">
+                      <property role="Xl_RC" value="Unsupported SysML v2 construct: prefix metadata on " />
+                    </node>
+                    <node concept="37vLTw" id="6_caVgn$YS9" role="3uHU7w">
+                      <ref role="3cqZAo" node="6_caVgn$NYG" resolve="what" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$NYS" role="1B3o_S" />
+      <node concept="3cqZAl" id="6_caVgn$NYT" role="3clF45" />
+    </node>
+    <node concept="3clFb_" id="6_caVgn$NYU" role="jymVt">
+      <property role="TrG5h" value="importRequirementConstraintMember" />
+      <node concept="37vLTG" id="6_caVgn$NYV" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="6_caVgn$NYW" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$RequirementConstraintMemberContext" resolve="SysMLv2Parser.RequirementConstraintMemberContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6_caVgn$NYX" role="3clF47">
+        <node concept="3cpWs8" id="6_caVgn$NYZ" role="3cqZAp">
+          <node concept="3cpWsn" id="6_caVgn$NYY" role="3cpWs9">
+            <property role="TrG5h" value="rc" />
+            <node concept="3uibUv" id="6_caVgn$NZ0" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$RequirementConstraintUsageContext" resolve="SysMLv2Parser.RequirementConstraintUsageContext" />
+            </node>
+            <node concept="2OqwBi" id="6_caVgn_79n" role="33vP2m">
+              <node concept="37vLTw" id="6_caVgn$Z6z" role="2Oq$k0">
+                <ref role="3cqZAo" node="6_caVgn$NYV" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="6_caVgn_79o" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementConstraintMemberContext.requirementConstraintUsage()" resolve="requirementConstraintUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6_caVgn$NZ2" role="3cqZAp">
+          <node concept="1rXfSq" id="6_caVgn$NZ3" role="3clFbG">
+            <ref role="37wK5l" node="6_caVgn$NYD" resolve="rejectUsageExtension" />
+            <node concept="3fqX7Q" id="6_caVgn$NZ4" role="37wK5m">
+              <node concept="1eOMI4" id="6_caVgn$NZ7" role="3fr31v">
+                <node concept="2OqwBi" id="6_caVgn_b08" role="1eOMHV">
+                  <node concept="2OqwBi" id="6_caVgn_79F" role="2Oq$k0">
+                    <node concept="37vLTw" id="6_caVgn$Zl6" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6_caVgn$NYY" resolve="rc" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_79G" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementConstraintUsageContext.usageExtensionKeyword()" resolve="usageExtensionKeyword" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6_caVgn_b09" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="6_caVgn$NZ8" role="37wK5m">
+              <property role="Xl_RC" value="requirement constraint" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6_caVgn$NZa" role="3cqZAp">
+          <node concept="3cpWsn" id="6_caVgn$NZ9" role="3cpWs9">
+            <property role="TrG5h" value="usage" />
+            <node concept="3uibUv" id="6_caVgn$NZb" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+            <node concept="1rXfSq" id="6_caVgn$NZc" role="33vP2m">
+              <ref role="37wK5l" node="6_caVgn$MCO" resolve="newRequirementConstraintUsage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6_caVgn$NZd" role="3cqZAp">
+          <node concept="3y3z36" id="6_caVgn$NZe" role="3clFbw">
+            <node concept="2OqwBi" id="6_caVgn_79R" role="3uHU7B">
+              <node concept="37vLTw" id="6_caVgn$Zzx" role="2Oq$k0">
+                <ref role="3cqZAo" node="6_caVgn$NYY" resolve="rc" />
+              </node>
+              <node concept="liA8E" id="6_caVgn_79S" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementConstraintUsageContext.ownedReferenceSubsetting()" resolve="ownedReferenceSubsetting" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="6_caVgn$NZg" role="3uHU7w" />
+          </node>
+          <node concept="9aQIb" id="6_caVgn$NZE" role="9aQIa">
+            <node concept="3clFbS" id="6_caVgn$NZF" role="9aQI4">
+              <node concept="3cpWs8" id="6_caVgn$NZH" role="3cqZAp">
+                <node concept="3cpWsn" id="6_caVgn$NZG" role="3cpWs9">
+                  <property role="TrG5h" value="decl" />
+                  <node concept="3uibUv" id="6_caVgn$NZI" role="1tU5fm">
+                    <ref role="3uigEE" to="guqe:~SysMLv2Parser$ConstraintUsageDeclarationContext" resolve="SysMLv2Parser.ConstraintUsageDeclarationContext" />
+                  </node>
+                  <node concept="2OqwBi" id="6_caVgn_7a3" role="33vP2m">
+                    <node concept="37vLTw" id="6_caVgn$ZLW" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6_caVgn$NYY" resolve="rc" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_7a4" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementConstraintUsageContext.constraintUsageDeclaration()" resolve="constraintUsageDeclaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6_caVgn$NZK" role="3cqZAp">
+                <node concept="2OqwBi" id="6_caVgn_00u" role="3clFbG">
+                  <node concept="Xjq3P" id="6_caVgn$NZM" role="2Oq$k0" />
+                  <node concept="liA8E" id="6_caVgn_00v" role="2OqNvi">
+                    <ref role="37wK5l" node="5wFVtxx9p4M" resolve="initBodiedUsage" />
+                    <node concept="37vLTw" id="6_caVgn_00w" role="37wK5m">
+                      <ref role="3cqZAo" node="6_caVgn$NZ9" resolve="usage" />
+                    </node>
+                    <node concept="1rXfSq" id="6_caVgn_00x" role="37wK5m">
+                      <ref role="37wK5l" node="6jBzJlDaTL9" resolve="emptyUsagePrefix" />
+                    </node>
+                    <node concept="2OqwBi" id="6_caVgn_b0k" role="37wK5m">
+                      <node concept="37vLTw" id="6_caVgn_7ou" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6_caVgn$NZG" resolve="decl" />
+                      </node>
+                      <node concept="liA8E" id="6_caVgn_b0l" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$ConstraintUsageDeclarationContext.usageDeclaration()" resolve="usageDeclaration" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="6_caVgn_b0w" role="37wK5m">
+                      <node concept="37vLTw" id="6_caVgn_7AT" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6_caVgn$NZG" resolve="decl" />
+                      </node>
+                      <node concept="liA8E" id="6_caVgn_b0x" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$ConstraintUsageDeclarationContext.valuePart()" resolve="valuePart" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6_caVgn$NZR" role="3cqZAp">
+                <node concept="2OqwBi" id="6_caVgn_0f4" role="3clFbG">
+                  <node concept="Xjq3P" id="6_caVgn$NZT" role="2Oq$k0" />
+                  <node concept="liA8E" id="6_caVgn_0f5" role="2OqNvi">
+                    <ref role="37wK5l" node="5wFVtxx9x8$" resolve="importConstraintBody" />
+                    <node concept="37vLTw" id="6_caVgn_0f6" role="37wK5m">
+                      <ref role="3cqZAo" node="6_caVgn$NZ9" resolve="usage" />
+                    </node>
+                    <node concept="2OqwBi" id="6_caVgn_b0G" role="37wK5m">
+                      <node concept="37vLTw" id="6_caVgn_7Pk" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6_caVgn$NYY" resolve="rc" />
+                      </node>
+                      <node concept="liA8E" id="6_caVgn_b0H" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementConstraintUsageContext.calculationBody()" resolve="calculationBody" />
+                      </node>
+                    </node>
+                    <node concept="3clFbT" id="6_caVgn_0f8" role="37wK5m">
+                      <property role="3clFbU" value="true" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="6_caVgn$NZi" role="3clFbx">
+            <node concept="3clFbF" id="6_caVgn$NZj" role="3cqZAp">
+              <node concept="1rXfSq" id="6_caVgn$NZk" role="3clFbG">
+                <ref role="37wK5l" node="7ij$NeFQBQG" resolve="rejectSpecializationAndValue" />
+                <node concept="2OqwBi" id="6_caVgn_7Pw" role="37wK5m">
+                  <node concept="37vLTw" id="6_caVgn_0ty" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6_caVgn$NYY" resolve="rc" />
+                  </node>
+                  <node concept="liA8E" id="6_caVgn_7Px" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementConstraintUsageContext.featureSpecializationPart()" resolve="featureSpecializationPart" />
+                  </node>
+                </node>
+                <node concept="10Nm6u" id="6_caVgn$NZm" role="37wK5m" />
+                <node concept="Xl_RD" id="6_caVgn$NZn" role="37wK5m">
+                  <property role="Xl_RC" value="requirement constraint" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6_caVgn$NZo" role="3cqZAp">
+              <node concept="2OqwBi" id="6_caVgn_0G4" role="3clFbG">
+                <node concept="Xjq3P" id="6_caVgn$NZq" role="2Oq$k0" />
+                <node concept="liA8E" id="6_caVgn_0G5" role="2OqNvi">
+                  <ref role="37wK5l" node="5wFVtxx9p4M" resolve="initBodiedUsage" />
+                  <node concept="37vLTw" id="6_caVgn_0G6" role="37wK5m">
+                    <ref role="3cqZAo" node="6_caVgn$NZ9" resolve="usage" />
+                  </node>
+                  <node concept="1rXfSq" id="6_caVgn_0G7" role="37wK5m">
+                    <ref role="37wK5l" node="6jBzJlDaTL9" resolve="emptyUsagePrefix" />
+                  </node>
+                  <node concept="10Nm6u" id="6_caVgn_0G8" role="37wK5m" />
+                  <node concept="10Nm6u" id="6_caVgn_0G9" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6_caVgn$NZv" role="3cqZAp">
+              <node concept="1rXfSq" id="6_caVgn$NZw" role="3clFbG">
+                <ref role="37wK5l" node="6_caVgn$NAK" resolve="setReferencedConstraint" />
+                <node concept="37vLTw" id="6_caVgn$NZx" role="37wK5m">
+                  <ref role="3cqZAo" node="6_caVgn$NZ9" resolve="usage" />
+                </node>
+                <node concept="2OqwBi" id="6_caVgn_b1g" role="37wK5m">
+                  <node concept="2OqwBi" id="6_caVgn_7PO" role="2Oq$k0">
+                    <node concept="37vLTw" id="6_caVgn_0UF" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6_caVgn$NYY" resolve="rc" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_7PP" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementConstraintUsageContext.ownedReferenceSubsetting()" resolve="ownedReferenceSubsetting" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6_caVgn_b1h" role="2OqNvi">
+                    <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6_caVgn$NZ$" role="3cqZAp">
+              <node concept="2OqwBi" id="6_caVgn_19d" role="3clFbG">
+                <node concept="Xjq3P" id="6_caVgn$NZA" role="2Oq$k0" />
+                <node concept="liA8E" id="6_caVgn_19e" role="2OqNvi">
+                  <ref role="37wK5l" node="5wFVtxx9xaD" resolve="importUsageRequirementBody" />
+                  <node concept="37vLTw" id="6_caVgn_19f" role="37wK5m">
+                    <ref role="3cqZAo" node="6_caVgn$NZ9" resolve="usage" />
+                  </node>
+                  <node concept="2OqwBi" id="6_caVgn_b1s" role="37wK5m">
+                    <node concept="37vLTw" id="6_caVgn_84f" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6_caVgn$NYY" resolve="rc" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_b1t" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementConstraintUsageContext.requirementBody()" resolve="requirementBody" />
+                    </node>
+                  </node>
+                  <node concept="Xl_RD" id="6_caVgn_19h" role="37wK5m">
+                    <property role="Xl_RC" value="requirement" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6_caVgn$NZX" role="3cqZAp">
+          <node concept="1rXfSq" id="6_caVgn$NZY" role="3clFbG">
+            <ref role="37wK5l" node="6_caVgn$NYl" resolve="applyRequirementKind" />
+            <node concept="37vLTw" id="6_caVgn$NZZ" role="37wK5m">
+              <ref role="3cqZAo" node="6_caVgn$NZ9" resolve="usage" />
+            </node>
+            <node concept="3y3z36" id="6_caVgn$O00" role="37wK5m">
+              <node concept="2OqwBi" id="6_caVgn_b1L" role="3uHU7B">
+                <node concept="2OqwBi" id="6_caVgn_84y" role="2Oq$k0">
+                  <node concept="37vLTw" id="6_caVgn_1nN" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6_caVgn$NYV" resolve="ctx" />
+                  </node>
+                  <node concept="liA8E" id="6_caVgn_84z" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementConstraintMemberContext.requirementKind()" resolve="requirementKind" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6_caVgn_b1M" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementKindContext.ASSUME()" resolve="ASSUME" />
+                </node>
+              </node>
+              <node concept="10Nm6u" id="6_caVgn$O03" role="3uHU7w" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6_caVgn$O04" role="3cqZAp">
+          <node concept="1rXfSq" id="6_caVgn$O05" role="3cqZAk">
+            <ref role="37wK5l" node="fNDJb4kg1s" resolve="applyBodyVisibility" />
+            <node concept="37vLTw" id="6_caVgn$O06" role="37wK5m">
+              <ref role="3cqZAo" node="6_caVgn$NZ9" resolve="usage" />
+            </node>
+            <node concept="2OqwBi" id="6_caVgn_b26" role="37wK5m">
+              <node concept="2OqwBi" id="6_caVgn_84P" role="2Oq$k0">
+                <node concept="37vLTw" id="6_caVgn_1Am" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6_caVgn$NYV" resolve="ctx" />
+                </node>
+                <node concept="liA8E" id="6_caVgn_84Q" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementConstraintMemberContext.memberPrefix()" resolve="memberPrefix" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6_caVgn_b27" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$O09" role="1B3o_S" />
+      <node concept="3uibUv" id="6_caVgn$O0a" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6_caVgn$O0b" role="jymVt">
+      <property role="TrG5h" value="importFramedConcernMember" />
+      <node concept="37vLTG" id="6_caVgn$O0c" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="6_caVgn$O0d" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$FramedConcernMemberContext" resolve="SysMLv2Parser.FramedConcernMemberContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6_caVgn$O0e" role="3clF47">
+        <node concept="3cpWs8" id="6_caVgn$O0g" role="3cqZAp">
+          <node concept="3cpWsn" id="6_caVgn$O0f" role="3cpWs9">
+            <property role="TrG5h" value="fc" />
+            <node concept="3uibUv" id="6_caVgn$O0h" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$FramedConcernUsageContext" resolve="SysMLv2Parser.FramedConcernUsageContext" />
+            </node>
+            <node concept="2OqwBi" id="6_caVgn_850" role="33vP2m">
+              <node concept="37vLTw" id="6_caVgn_1OL" role="2Oq$k0">
+                <ref role="3cqZAo" node="6_caVgn$O0c" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="6_caVgn_851" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$FramedConcernMemberContext.framedConcernUsage()" resolve="framedConcernUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6_caVgn$O0j" role="3cqZAp">
+          <node concept="1rXfSq" id="6_caVgn$O0k" role="3clFbG">
+            <ref role="37wK5l" node="6_caVgn$NYD" resolve="rejectUsageExtension" />
+            <node concept="3fqX7Q" id="6_caVgn$O0l" role="37wK5m">
+              <node concept="1eOMI4" id="6_caVgn$O0o" role="3fr31v">
+                <node concept="2OqwBi" id="6_caVgn_b4T" role="1eOMHV">
+                  <node concept="2OqwBi" id="6_caVgn_85k" role="2Oq$k0">
+                    <node concept="37vLTw" id="6_caVgn_23k" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6_caVgn$O0f" resolve="fc" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_85l" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$FramedConcernUsageContext.usageExtensionKeyword()" resolve="usageExtensionKeyword" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6_caVgn_b4U" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="6_caVgn$O0p" role="37wK5m">
+              <property role="Xl_RC" value="framed concern" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6_caVgn$O0r" role="3cqZAp">
+          <node concept="3cpWsn" id="6_caVgn$O0q" role="3cpWs9">
+            <property role="TrG5h" value="usage" />
+            <node concept="3uibUv" id="6_caVgn$O0s" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+            <node concept="1rXfSq" id="6_caVgn$O0t" role="33vP2m">
+              <ref role="37wK5l" node="6_caVgn$Nv8" resolve="newFramedConcernUsage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6_caVgn$O0u" role="3cqZAp">
+          <node concept="3y3z36" id="6_caVgn$O0v" role="3clFbw">
+            <node concept="2OqwBi" id="6_caVgn_85w" role="3uHU7B">
+              <node concept="37vLTw" id="6_caVgn_2hJ" role="2Oq$k0">
+                <ref role="3cqZAo" node="6_caVgn$O0f" resolve="fc" />
+              </node>
+              <node concept="liA8E" id="6_caVgn_85x" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$FramedConcernUsageContext.ownedReferenceSubsetting()" resolve="ownedReferenceSubsetting" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="6_caVgn$O0x" role="3uHU7w" />
+          </node>
+          <node concept="9aQIb" id="6_caVgn$O0P" role="9aQIa">
+            <node concept="3clFbS" id="6_caVgn$O0Q" role="9aQI4">
+              <node concept="3cpWs8" id="6_caVgn$O0S" role="3cqZAp">
+                <node concept="3cpWsn" id="6_caVgn$O0R" role="3cpWs9">
+                  <property role="TrG5h" value="decl" />
+                  <node concept="3uibUv" id="6_caVgn$O0T" role="1tU5fm">
+                    <ref role="3uigEE" to="guqe:~SysMLv2Parser$ConstraintUsageDeclarationContext" resolve="SysMLv2Parser.ConstraintUsageDeclarationContext" />
+                  </node>
+                  <node concept="2OqwBi" id="6_caVgn_85G" role="33vP2m">
+                    <node concept="37vLTw" id="6_caVgn_2wa" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6_caVgn$O0f" resolve="fc" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_85H" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$FramedConcernUsageContext.constraintUsageDeclaration()" resolve="constraintUsageDeclaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6_caVgn$O0V" role="3cqZAp">
+                <node concept="2OqwBi" id="6_caVgn_2IG" role="3clFbG">
+                  <node concept="Xjq3P" id="6_caVgn$O0X" role="2Oq$k0" />
+                  <node concept="liA8E" id="6_caVgn_2IH" role="2OqNvi">
+                    <ref role="37wK5l" node="5wFVtxx9p4M" resolve="initBodiedUsage" />
+                    <node concept="37vLTw" id="6_caVgn_2II" role="37wK5m">
+                      <ref role="3cqZAo" node="6_caVgn$O0q" resolve="usage" />
+                    </node>
+                    <node concept="1rXfSq" id="6_caVgn_2IJ" role="37wK5m">
+                      <ref role="37wK5l" node="6jBzJlDaTL9" resolve="emptyUsagePrefix" />
+                    </node>
+                    <node concept="2OqwBi" id="6_caVgn_b55" role="37wK5m">
+                      <node concept="37vLTw" id="6_caVgn_8k7" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6_caVgn$O0R" resolve="decl" />
+                      </node>
+                      <node concept="liA8E" id="6_caVgn_b56" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$ConstraintUsageDeclarationContext.usageDeclaration()" resolve="usageDeclaration" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="6_caVgn_b5h" role="37wK5m">
+                      <node concept="37vLTw" id="6_caVgn_8yy" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6_caVgn$O0R" resolve="decl" />
+                      </node>
+                      <node concept="liA8E" id="6_caVgn_b5i" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$ConstraintUsageDeclarationContext.valuePart()" resolve="valuePart" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="6_caVgn$O0z" role="3clFbx">
+            <node concept="3clFbF" id="6_caVgn$O0$" role="3cqZAp">
+              <node concept="1rXfSq" id="6_caVgn$O0_" role="3clFbG">
+                <ref role="37wK5l" node="7ij$NeFQBQG" resolve="rejectSpecializationAndValue" />
+                <node concept="2OqwBi" id="6_caVgn_8yI" role="37wK5m">
+                  <node concept="37vLTw" id="6_caVgn_2Xb" role="2Oq$k0">
+                    <ref role="3cqZAo" node="6_caVgn$O0f" resolve="fc" />
+                  </node>
+                  <node concept="liA8E" id="6_caVgn_8yJ" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$FramedConcernUsageContext.featureSpecializationPart()" resolve="featureSpecializationPart" />
+                  </node>
+                </node>
+                <node concept="10Nm6u" id="6_caVgn$O0B" role="37wK5m" />
+                <node concept="Xl_RD" id="6_caVgn$O0C" role="37wK5m">
+                  <property role="Xl_RC" value="framed concern" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6_caVgn$O0D" role="3cqZAp">
+              <node concept="2OqwBi" id="6_caVgn_3bH" role="3clFbG">
+                <node concept="Xjq3P" id="6_caVgn$O0F" role="2Oq$k0" />
+                <node concept="liA8E" id="6_caVgn_3bI" role="2OqNvi">
+                  <ref role="37wK5l" node="5wFVtxx9p4M" resolve="initBodiedUsage" />
+                  <node concept="37vLTw" id="6_caVgn_3bJ" role="37wK5m">
+                    <ref role="3cqZAo" node="6_caVgn$O0q" resolve="usage" />
+                  </node>
+                  <node concept="1rXfSq" id="6_caVgn_3bK" role="37wK5m">
+                    <ref role="37wK5l" node="6jBzJlDaTL9" resolve="emptyUsagePrefix" />
+                  </node>
+                  <node concept="10Nm6u" id="6_caVgn_3bL" role="37wK5m" />
+                  <node concept="10Nm6u" id="6_caVgn_3bM" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6_caVgn$O0K" role="3cqZAp">
+              <node concept="1rXfSq" id="6_caVgn$O0L" role="3clFbG">
+                <ref role="37wK5l" node="6_caVgn$NBv" resolve="setFramedConcern" />
+                <node concept="37vLTw" id="6_caVgn$O0M" role="37wK5m">
+                  <ref role="3cqZAo" node="6_caVgn$O0q" resolve="usage" />
+                </node>
+                <node concept="2OqwBi" id="6_caVgn_b5P" role="37wK5m">
+                  <node concept="2OqwBi" id="6_caVgn_8z2" role="2Oq$k0">
+                    <node concept="37vLTw" id="6_caVgn_3qk" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6_caVgn$O0f" resolve="fc" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_8z3" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$FramedConcernUsageContext.ownedReferenceSubsetting()" resolve="ownedReferenceSubsetting" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6_caVgn_b5Q" role="2OqNvi">
+                    <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6_caVgn$O12" role="3cqZAp">
+          <node concept="2OqwBi" id="6_caVgn_3CQ" role="3clFbG">
+            <node concept="Xjq3P" id="6_caVgn$O14" role="2Oq$k0" />
+            <node concept="liA8E" id="6_caVgn_3CR" role="2OqNvi">
+              <ref role="37wK5l" node="5wFVtxx9xaD" resolve="importUsageRequirementBody" />
+              <node concept="37vLTw" id="6_caVgn_3CS" role="37wK5m">
+                <ref role="3cqZAo" node="6_caVgn$O0q" resolve="usage" />
+              </node>
+              <node concept="2OqwBi" id="6_caVgn_b61" role="37wK5m">
+                <node concept="37vLTw" id="6_caVgn_8Lt" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6_caVgn$O0f" resolve="fc" />
+                </node>
+                <node concept="liA8E" id="6_caVgn_b62" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$FramedConcernUsageContext.requirementBody()" resolve="requirementBody" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="6_caVgn_3CU" role="37wK5m">
+                <property role="Xl_RC" value="concern" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6_caVgn$O18" role="3cqZAp">
+          <node concept="1rXfSq" id="6_caVgn$O19" role="3cqZAk">
+            <ref role="37wK5l" node="fNDJb4kg1s" resolve="applyBodyVisibility" />
+            <node concept="37vLTw" id="6_caVgn$O1a" role="37wK5m">
+              <ref role="3cqZAo" node="6_caVgn$O0q" resolve="usage" />
+            </node>
+            <node concept="2OqwBi" id="6_caVgn_b6m" role="37wK5m">
+              <node concept="2OqwBi" id="6_caVgn_8LK" role="2Oq$k0">
+                <node concept="37vLTw" id="6_caVgn_3Rs" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6_caVgn$O0c" resolve="ctx" />
+                </node>
+                <node concept="liA8E" id="6_caVgn_8LL" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$FramedConcernMemberContext.memberPrefix()" resolve="memberPrefix" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6_caVgn_b6n" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$O1d" role="1B3o_S" />
+      <node concept="3uibUv" id="6_caVgn$O1e" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6_caVgn$O1f" role="jymVt">
+      <property role="TrG5h" value="importRequirementVerificationMember" />
+      <node concept="37vLTG" id="6_caVgn$O1g" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="6_caVgn$O1h" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$RequirementVerificationMemberContext" resolve="SysMLv2Parser.RequirementVerificationMemberContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6_caVgn$O1i" role="3clF47">
+        <node concept="3cpWs8" id="6_caVgn$O1k" role="3cqZAp">
+          <node concept="3cpWsn" id="6_caVgn$O1j" role="3cpWs9">
+            <property role="TrG5h" value="rv" />
+            <node concept="3uibUv" id="6_caVgn$O1l" role="1tU5fm">
+              <ref role="3uigEE" to="guqe:~SysMLv2Parser$RequirementVerificationUsageContext" resolve="SysMLv2Parser.RequirementVerificationUsageContext" />
+            </node>
+            <node concept="2OqwBi" id="6_caVgn_8LV" role="33vP2m">
+              <node concept="37vLTw" id="6_caVgn_45R" role="2Oq$k0">
+                <ref role="3cqZAo" node="6_caVgn$O1g" resolve="ctx" />
+              </node>
+              <node concept="liA8E" id="6_caVgn_8LW" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementVerificationMemberContext.requirementVerificationUsage()" resolve="requirementVerificationUsage" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6_caVgn$O1n" role="3cqZAp">
+          <node concept="1rXfSq" id="6_caVgn$O1o" role="3clFbG">
+            <ref role="37wK5l" node="6_caVgn$NYD" resolve="rejectUsageExtension" />
+            <node concept="3fqX7Q" id="6_caVgn$O1p" role="37wK5m">
+              <node concept="1eOMI4" id="6_caVgn$O1s" role="3fr31v">
+                <node concept="2OqwBi" id="6_caVgn_b99" role="1eOMHV">
+                  <node concept="2OqwBi" id="6_caVgn_8Mf" role="2Oq$k0">
+                    <node concept="37vLTw" id="6_caVgn_4kq" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6_caVgn$O1j" resolve="rv" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_8Mg" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementVerificationUsageContext.usageExtensionKeyword()" resolve="usageExtensionKeyword" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6_caVgn_b9a" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="6_caVgn$O1t" role="37wK5m">
+              <property role="Xl_RC" value="requirement verification" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs8" id="6_caVgn$O1v" role="3cqZAp">
+          <node concept="3cpWsn" id="6_caVgn$O1u" role="3cpWs9">
+            <property role="TrG5h" value="usage" />
+            <node concept="3uibUv" id="6_caVgn$O1w" role="1tU5fm">
+              <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+            </node>
+            <node concept="1rXfSq" id="6_caVgn$O1x" role="33vP2m">
+              <ref role="37wK5l" node="6_caVgn$Nvi" resolve="newRequirementVerificationUsage" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbJ" id="6_caVgn$O1y" role="3cqZAp">
+          <node concept="3y3z36" id="6_caVgn$O1z" role="3clFbw">
+            <node concept="2OqwBi" id="6_caVgn_8Mr" role="3uHU7B">
+              <node concept="37vLTw" id="6_caVgn_4yP" role="2Oq$k0">
+                <ref role="3cqZAo" node="6_caVgn$O1j" resolve="rv" />
+              </node>
+              <node concept="liA8E" id="6_caVgn_8Ms" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementVerificationUsageContext.ownedReferenceSubsetting()" resolve="ownedReferenceSubsetting" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="6_caVgn$O1_" role="3uHU7w" />
+          </node>
+          <node concept="9aQIb" id="6_caVgn$O1Y" role="9aQIa">
+            <node concept="3clFbS" id="6_caVgn$O1Z" role="9aQI4">
+              <node concept="3cpWs8" id="6_caVgn$O21" role="3cqZAp">
+                <node concept="3cpWsn" id="6_caVgn$O20" role="3cpWs9">
+                  <property role="TrG5h" value="decl" />
+                  <node concept="3uibUv" id="6_caVgn$O22" role="1tU5fm">
+                    <ref role="3uigEE" to="guqe:~SysMLv2Parser$ConstraintUsageDeclarationContext" resolve="SysMLv2Parser.ConstraintUsageDeclarationContext" />
+                  </node>
+                  <node concept="2OqwBi" id="6_caVgn_8MB" role="33vP2m">
+                    <node concept="37vLTw" id="6_caVgn_4Lg" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6_caVgn$O1j" resolve="rv" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_8MC" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementVerificationUsageContext.constraintUsageDeclaration()" resolve="constraintUsageDeclaration" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbF" id="6_caVgn$O24" role="3cqZAp">
+                <node concept="2OqwBi" id="6_caVgn_4ZM" role="3clFbG">
+                  <node concept="Xjq3P" id="6_caVgn$O26" role="2Oq$k0" />
+                  <node concept="liA8E" id="6_caVgn_4ZN" role="2OqNvi">
+                    <ref role="37wK5l" node="5wFVtxx9p4M" resolve="initBodiedUsage" />
+                    <node concept="37vLTw" id="6_caVgn_4ZO" role="37wK5m">
+                      <ref role="3cqZAo" node="6_caVgn$O1u" resolve="usage" />
+                    </node>
+                    <node concept="1rXfSq" id="6_caVgn_4ZP" role="37wK5m">
+                      <ref role="37wK5l" node="6jBzJlDaTL9" resolve="emptyUsagePrefix" />
+                    </node>
+                    <node concept="2OqwBi" id="6_caVgn_b9l" role="37wK5m">
+                      <node concept="37vLTw" id="6_caVgn_912" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6_caVgn$O20" resolve="decl" />
+                      </node>
+                      <node concept="liA8E" id="6_caVgn_b9m" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$ConstraintUsageDeclarationContext.usageDeclaration()" resolve="usageDeclaration" />
+                      </node>
+                    </node>
+                    <node concept="2OqwBi" id="6_caVgn_b9x" role="37wK5m">
+                      <node concept="37vLTw" id="6_caVgn_9ft" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6_caVgn$O20" resolve="decl" />
+                      </node>
+                      <node concept="liA8E" id="6_caVgn_b9y" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$ConstraintUsageDeclarationContext.valuePart()" resolve="valuePart" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="6_caVgn$O1B" role="3clFbx">
+            <node concept="3clFbJ" id="6_caVgn$O1C" role="3cqZAp">
+              <node concept="3fqX7Q" id="6_caVgn$O1D" role="3clFbw">
+                <node concept="1eOMI4" id="6_caVgn$O1G" role="3fr31v">
+                  <node concept="2OqwBi" id="6_caVgn_bck" role="1eOMHV">
+                    <node concept="2OqwBi" id="6_caVgn_9fL" role="2Oq$k0">
+                      <node concept="37vLTw" id="6_caVgn_5ep" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6_caVgn$O1j" resolve="rv" />
+                      </node>
+                      <node concept="liA8E" id="6_caVgn_9fM" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementVerificationUsageContext.featureSpecialization()" resolve="featureSpecialization" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_bcl" role="2OqNvi">
+                      <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+              <node concept="3clFbS" id="6_caVgn$O1I" role="3clFbx">
+                <node concept="YS8fn" id="6_caVgn$O1L" role="3cqZAp">
+                  <node concept="2ShNRf" id="6_caVgn_5er" role="YScLw">
+                    <node concept="1pGfFk" id="6_caVgn_5kA" role="2ShVmc">
+                      <ref role="37wK5l" to="wyt6:~RuntimeException.&lt;init&gt;(java.lang.String)" resolve="RuntimeException" />
+                      <node concept="Xl_RD" id="6_caVgn_5kB" role="37wK5m">
+                        <property role="Xl_RC" value="Unsupported SysML v2 construct: specialization on verified requirement reference" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6_caVgn$O1M" role="3cqZAp">
+              <node concept="2OqwBi" id="6_caVgn_5z8" role="3clFbG">
+                <node concept="Xjq3P" id="6_caVgn$O1O" role="2Oq$k0" />
+                <node concept="liA8E" id="6_caVgn_5z9" role="2OqNvi">
+                  <ref role="37wK5l" node="5wFVtxx9p4M" resolve="initBodiedUsage" />
+                  <node concept="37vLTw" id="6_caVgn_5za" role="37wK5m">
+                    <ref role="3cqZAo" node="6_caVgn$O1u" resolve="usage" />
+                  </node>
+                  <node concept="1rXfSq" id="6_caVgn_5zb" role="37wK5m">
+                    <ref role="37wK5l" node="6jBzJlDaTL9" resolve="emptyUsagePrefix" />
+                  </node>
+                  <node concept="10Nm6u" id="6_caVgn_5zc" role="37wK5m" />
+                  <node concept="10Nm6u" id="6_caVgn_5zd" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6_caVgn$O1T" role="3cqZAp">
+              <node concept="1rXfSq" id="6_caVgn$O1U" role="3clFbG">
+                <ref role="37wK5l" node="6_caVgn$NCe" resolve="setVerified" />
+                <node concept="37vLTw" id="6_caVgn$O1V" role="37wK5m">
+                  <ref role="3cqZAo" node="6_caVgn$O1u" resolve="usage" />
+                </node>
+                <node concept="2OqwBi" id="6_caVgn_bcS" role="37wK5m">
+                  <node concept="2OqwBi" id="6_caVgn_9g5" role="2Oq$k0">
+                    <node concept="37vLTw" id="6_caVgn_5LJ" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6_caVgn$O1j" resolve="rv" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_9g6" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementVerificationUsageContext.ownedReferenceSubsetting()" resolve="ownedReferenceSubsetting" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6_caVgn_bcT" role="2OqNvi">
+                    <ref role="37wK5l" to="p3ir:~RuleContext.getText()" resolve="getText" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="6_caVgn$O2b" role="3cqZAp">
+          <node concept="2OqwBi" id="6_caVgn_60h" role="3clFbG">
+            <node concept="Xjq3P" id="6_caVgn$O2d" role="2Oq$k0" />
+            <node concept="liA8E" id="6_caVgn_60i" role="2OqNvi">
+              <ref role="37wK5l" node="5wFVtxx9xaD" resolve="importUsageRequirementBody" />
+              <node concept="37vLTw" id="6_caVgn_60j" role="37wK5m">
+                <ref role="3cqZAo" node="6_caVgn$O1u" resolve="usage" />
+              </node>
+              <node concept="2OqwBi" id="6_caVgn_bd4" role="37wK5m">
+                <node concept="37vLTw" id="6_caVgn_9uw" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6_caVgn$O1j" resolve="rv" />
+                </node>
+                <node concept="liA8E" id="6_caVgn_bd5" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementVerificationUsageContext.requirementBody()" resolve="requirementBody" />
+                </node>
+              </node>
+              <node concept="Xl_RD" id="6_caVgn_60l" role="37wK5m">
+                <property role="Xl_RC" value="requirement" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6_caVgn$O2h" role="3cqZAp">
+          <node concept="1rXfSq" id="6_caVgn$O2i" role="3cqZAk">
+            <ref role="37wK5l" node="fNDJb4kg1s" resolve="applyBodyVisibility" />
+            <node concept="37vLTw" id="6_caVgn$O2j" role="37wK5m">
+              <ref role="3cqZAo" node="6_caVgn$O1u" resolve="usage" />
+            </node>
+            <node concept="2OqwBi" id="6_caVgn_bdp" role="37wK5m">
+              <node concept="2OqwBi" id="6_caVgn_9uN" role="2Oq$k0">
+                <node concept="37vLTw" id="6_caVgn_6eR" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6_caVgn$O1g" resolve="ctx" />
+                </node>
+                <node concept="liA8E" id="6_caVgn_9uO" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$RequirementVerificationMemberContext.memberPrefix()" resolve="memberPrefix" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6_caVgn_bdq" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$O2m" role="1B3o_S" />
+      <node concept="3uibUv" id="6_caVgn$O2n" role="3clF45">
+        <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="6_caVgn$O2o" role="jymVt">
+      <property role="TrG5h" value="importStakeholderMember" />
+      <node concept="37vLTG" id="6_caVgn$O2p" role="3clF46">
+        <property role="TrG5h" value="ctx" />
+        <node concept="3uibUv" id="6_caVgn$O2q" role="1tU5fm">
+          <ref role="3uigEE" to="guqe:~SysMLv2Parser$StakeholderMemberContext" resolve="SysMLv2Parser.StakeholderMemberContext" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="6_caVgn$O2r" role="3clF47">
+        <node concept="3clFbF" id="6_caVgn$O2s" role="3cqZAp">
+          <node concept="1rXfSq" id="6_caVgn$O2t" role="3clFbG">
+            <ref role="37wK5l" node="6_caVgn$NYD" resolve="rejectUsageExtension" />
+            <node concept="3fqX7Q" id="6_caVgn$O2u" role="37wK5m">
+              <node concept="1eOMI4" id="6_caVgn$O2y" role="3fr31v">
+                <node concept="2OqwBi" id="6_caVgn_bvN" role="1eOMHV">
+                  <node concept="2OqwBi" id="6_caVgn_bdQ" role="2Oq$k0">
+                    <node concept="2OqwBi" id="6_caVgn_9ve" role="2Oq$k0">
+                      <node concept="37vLTw" id="6_caVgn_6ty" role="2Oq$k0">
+                        <ref role="3cqZAo" node="6_caVgn$O2p" resolve="ctx" />
+                      </node>
+                      <node concept="liA8E" id="6_caVgn_9vf" role="2OqNvi">
+                        <ref role="37wK5l" to="guqe:~SysMLv2Parser$StakeholderMemberContext.stakeholderUsage()" resolve="stakeholderUsage" />
+                      </node>
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_bdR" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$StakeholderUsageContext.usageExtensionKeyword()" resolve="usageExtensionKeyword" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6_caVgn_bvO" role="2OqNvi">
+                    <ref role="37wK5l" to="33ny:~List.isEmpty()" resolve="isEmpty" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="Xl_RD" id="6_caVgn$O2z" role="37wK5m">
+              <property role="Xl_RC" value="stakeholder" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="6_caVgn$O2$" role="3cqZAp">
+          <node concept="1rXfSq" id="6_caVgn$O2_" role="3cqZAk">
+            <ref role="37wK5l" node="fNDJb4kg1s" resolve="applyBodyVisibility" />
+            <node concept="2OqwBi" id="6_caVgn_6G4" role="37wK5m">
+              <node concept="Xjq3P" id="6_caVgn$O2B" role="2Oq$k0" />
+              <node concept="liA8E" id="6_caVgn_6G5" role="2OqNvi">
+                <ref role="37wK5l" node="5wFVtxtcgVk" resolve="buildReferenceMember" />
+                <node concept="Xl_RD" id="6_caVgn_6G6" role="37wK5m">
+                  <property role="Xl_RC" value="stakeholder" />
+                </node>
+                <node concept="10Nm6u" id="6_caVgn_6G7" role="37wK5m" />
+                <node concept="2OqwBi" id="6_caVgn_bw8" role="37wK5m">
+                  <node concept="2OqwBi" id="6_caVgn_be9" role="2Oq$k0">
+                    <node concept="37vLTw" id="6_caVgn_9HL" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6_caVgn$O2p" resolve="ctx" />
+                    </node>
+                    <node concept="liA8E" id="6_caVgn_bea" role="2OqNvi">
+                      <ref role="37wK5l" to="guqe:~SysMLv2Parser$StakeholderMemberContext.stakeholderUsage()" resolve="stakeholderUsage" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="6_caVgn_bw9" role="2OqNvi">
+                    <ref role="37wK5l" to="guqe:~SysMLv2Parser$StakeholderUsageContext.usage()" resolve="usage" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="6_caVgn_beu" role="37wK5m">
+              <node concept="2OqwBi" id="6_caVgn_9I4" role="2Oq$k0">
+                <node concept="37vLTw" id="6_caVgn_6UF" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6_caVgn$O2p" resolve="ctx" />
+                </node>
+                <node concept="liA8E" id="6_caVgn_9I5" role="2OqNvi">
+                  <ref role="37wK5l" to="guqe:~SysMLv2Parser$StakeholderMemberContext.memberPrefix()" resolve="memberPrefix" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6_caVgn_bev" role="2OqNvi">
+                <ref role="37wK5l" to="guqe:~SysMLv2Parser$MemberPrefixContext.visibilityIndicator()" resolve="visibilityIndicator" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm6S6" id="6_caVgn$O2I" role="1B3o_S" />
+      <node concept="3uibUv" id="6_caVgn$O2J" role="3clF45">
         <ref role="3uigEE" to="mhbf:~SNode" resolve="SNode" />
       </node>
     </node>
