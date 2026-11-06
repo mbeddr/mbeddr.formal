@@ -328,9 +328,6 @@
         <child id="4376090928958005871" name="payload" index="2hSLRG" />
       </concept>
       <concept id="4376090928958005869" name="com.symo.sysmlv2.baselan.structure.SysMLv2FlowDefinition" flags="ng" index="2hSLRI" />
-      <concept id="4376090928929871183" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartLikeUsage" flags="ng" index="2n5AFc">
-        <child id="8930763252716192330" name="content" index="8GFem" />
-      </concept>
       <concept id="717440187291777380" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinitionRef" flags="ng" index="2uUmlC">
         <property id="717440187291777383" name="connectionDefinitionName" index="2uUmlF" />
         <reference id="717440187291777384" name="connectionDefinition" index="2uUml$" />
@@ -350,6 +347,7 @@
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
+        <child id="8930763252716192330" name="content" index="8GFem" />
         <child id="7140692429574298134" name="multiplicity" index="3w00ZS" />
         <child id="7140692429574298135" name="types" index="3w00ZT" />
         <child id="7140692429574298133" name="direction" index="3w00ZV" />
@@ -424,7 +422,6 @@
         <child id="6214786105876472930" name="feature" index="1_WVXF" />
       </concept>
       <concept id="7354895567553737694" name="com.symo.sysmlv2.baselan.structure.SysMLv2Alias" flags="ng" index="1AcQlj">
-        <property id="7354895567553737695" name="targetName" index="1AcQli" />
         <child id="7354895567584118451" name="target" index="1BST0Y" />
       </concept>
       <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
@@ -6358,7 +6355,6 @@
           <property role="TrG5h" value="pack1" />
           <node concept="1AcQlj" id="6ohPCO1Mc9c" role="3Z9vGx">
             <property role="TrG5h" value="AliasName" />
-            <property role="1AcQli" value="" />
             <node concept="1Bo4sc" id="6ohPCO1ZiWY" role="1BST0Y">
               <property role="1Bo4sf" value="A::B" />
             </node>
@@ -7135,7 +7131,6 @@
           <property role="TrG5h" value="Engine" />
           <node concept="1AcQlj" id="6ohPCO11nKo" role="3w00ZY">
             <property role="TrG5h" value="AliasName" />
-            <property role="1AcQli" value="" />
             <node concept="1Bo4sc" id="6ohPCO2z7bq" role="1BST0Y">
               <property role="1Bo4sf" value="A::B" />
             </node>
@@ -13959,19 +13954,6 @@
             <node concept="2uUmlE" id="3MUZSeFU7ue" role="3w00ZY">
               <property role="TrG5h" value="uplink" />
               <property role="2uUmlw" value="true" />
-              <node concept="8EhU9" id="3MUZSeFU7uq" role="8GFem">
-                <property role="TrG5h" value="bw" />
-                <node concept="3wdj9f" id="3MUZSeFU7ur" role="3wdj9d">
-                  <property role="3wdj9b" value="bandwidth" />
-                  <ref role="3wdj98" node="3MUZSeFU7u4" resolve="bandwidth" />
-                </node>
-              </node>
-              <node concept="8EhU9" id="3MUZSeFU7us" role="8GFem">
-                <property role="TrG5h" value="latency" />
-              </node>
-              <node concept="3HG_t4" id="3MUZSeFU7ut" role="8GFem">
-                <property role="3HG_t5" value="uplink" />
-              </node>
               <node concept="2uUmlC" id="3MUZSeFU7uj" role="3w00ZT">
                 <property role="2uUmlF" value="DeviceConnection" />
                 <ref role="2uUml$" node="3MUZSeFU7tZ" resolve="DeviceConnection" />
@@ -13987,6 +13969,19 @@
                   <property role="3wdj9b" value="sensorFeed" />
                   <ref role="3wdj98" node="3MUZSeFU7u8" resolve="sensorFeed" />
                 </node>
+              </node>
+              <node concept="8EhU9" id="4QEfSMFam_W" role="8GFem">
+                <property role="TrG5h" value="bw" />
+                <node concept="3wdj9f" id="4QEfSMFam_X" role="3wdj9d">
+                  <property role="3wdj9b" value="bandwidth" />
+                  <ref role="3wdj98" node="3MUZSeFU7u4" resolve="bandwidth" />
+                </node>
+              </node>
+              <node concept="8EhU9" id="4QEfSMFan3m" role="8GFem">
+                <property role="TrG5h" value="latency" />
+              </node>
+              <node concept="3HG_t4" id="4QEfSMFan3n" role="8GFem">
+                <property role="3HG_t5" value="uplink" />
               </node>
             </node>
             <node concept="2uUmlE" id="3MUZSeFU7uu" role="3w00ZY">
@@ -14704,11 +14699,10 @@
             <node concept="2uUmlE" id="3MUZSeFZHbE" role="3w00ZY">
               <property role="TrG5h" value="l" />
               <property role="2uUmlw" value="true" />
-              <node concept="1_WVX4" id="3MUZSeIY8Cn" role="8GFem">
-                <property role="1_WVXh" value="true" />
-                <node concept="3w00Zy" id="3MUZSeIY8Cp" role="3w00ZT">
-                  <property role="3w00ZX" value="Safety" />
-                  <ref role="3w00ZU" node="3MUZSeFZHbd" resolve="Safety" />
+              <node concept="1y9Dpe" id="4QEfSMFbBxB" role="1y9Dp3">
+                <node concept="1_WVX5" id="4QEfSMFbByf" role="1y9Dp0">
+                  <ref role="1_WVXv" node="3MUZSeFZHbd" resolve="Safety" />
+                  <ref role="gQIM1" node="3MUZSeFZHbc" resolve="P" />
                 </node>
               </node>
               <node concept="2uUmlC" id="3MUZSeFZHbJ" role="3w00ZT">
