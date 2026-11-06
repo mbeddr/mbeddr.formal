@@ -195,17 +195,11 @@
     <property role="34LRSv" value="part def" />
     <property role="3GE5qa" value="part" />
     <ref role="1TJDcQ" node="6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
-    <node concept="PrWs8" id="3PUPjB2$P9_" role="PzmwI">
-      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
-    </node>
     <node concept="PrWs8" id="3PUPjB2$P9C" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
     <node concept="PrWs8" id="cvgDBNAW2X" role="PzmwI">
       <ref role="PrY4T" to="tpck:69Qfsw3InJo" resolve="ISmartReferent" />
-    </node>
-    <node concept="PrWs8" id="3VmcprQOACr" role="PzmwI">
-      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNgG7Z">
@@ -253,9 +247,6 @@
     <property role="34LRSv" value="attribute def" />
     <property role="3GE5qa" value="part.attribute" />
     <ref role="1TJDcQ" node="3MUZSeI$44h" resolve="SysMLv2Definition" />
-    <node concept="PrWs8" id="7JKstLNmmWx" role="PzmwI">
-      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
-    </node>
     <node concept="PrWs8" id="7JKstLNmmWy" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
@@ -273,12 +264,6 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7JKstLNmmWV" resolve="SysMLv2AttributeDefinitionRef" />
-    </node>
-    <node concept="PrWs8" id="5oZmK$O6ufS" role="PzmwI">
-      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
-    </node>
-    <node concept="PrWs8" id="fNDJb1jfgc" role="PzmwI">
-      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNmmWV">
@@ -447,17 +432,8 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6coPuU2Tg1V" resolve="ISysMLv2PortBodyContent" />
     </node>
-    <node concept="PrWs8" id="6coPuU2Tg1Y" role="PzmwI">
-      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
-    </node>
     <node concept="PrWs8" id="6coPuU2Tg1Z" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
-    </node>
-    <node concept="PrWs8" id="5oZmK$O6ufP" role="PzmwI">
-      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
-    </node>
-    <node concept="PrWs8" id="fNDJb1jfgM" role="PzmwI">
-      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
     <node concept="PrWs8" id="4QEfSMBnOHk" role="PzmwI">
       <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
@@ -592,17 +568,8 @@
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
-    <node concept="PrWs8" id="6coPuU36dCh" role="PzmwI">
-      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
-    </node>
     <node concept="PrWs8" id="6coPuU36dCi" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
-    </node>
-    <node concept="PrWs8" id="5oZmK$O6ufV" role="PzmwI">
-      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
-    </node>
-    <node concept="PrWs8" id="fNDJb1jfgi" role="PzmwI">
-      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
     <node concept="PrWs8" id="4QEfSMBnOHe" role="PzmwI">
       <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
@@ -1273,14 +1240,8 @@
     <property role="R4oN_" value="SysML v2 flow definition: flow def Name { ... }" />
     <property role="3GE5qa" value="flow" />
     <ref role="1TJDcQ" node="3MUZSeHM$aJ" resolve="SysMLv2ActionDefinition" />
-    <node concept="PrWs8" id="3MUZSeHMA4k" role="PzmwI">
-      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
-    </node>
     <node concept="PrWs8" id="3MUZSeHMA4n" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
-    </node>
-    <node concept="PrWs8" id="3MUZSeHMA4q" role="PzmwI">
-      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
     </node>
     <node concept="1TJgyj" id="3MUZSeHMA4M" role="1TKVEi">
       <property role="IQ2ns" value="4376090928965378354" />
@@ -1295,9 +1256,6 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
-    </node>
-    <node concept="PrWs8" id="fNDJb1_qdX" role="PzmwI">
-      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
     <node concept="PrWs8" id="4QEfSMBnOHq" role="PzmwI">
       <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
@@ -1472,6 +1430,15 @@
     </node>
     <node concept="PrWs8" id="3zsHQZGWIph" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hrYNgR" resolve="ISysMLv2FeatureOwner" />
+    </node>
+    <node concept="PrWs8" id="4QEfSMDSJO4" role="PzmwI">
+      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+    <node concept="PrWs8" id="4QEfSMDSJO8" role="PzmwI">
+      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+    <node concept="PrWs8" id="4QEfSMDSJOc" role="PzmwI">
+      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
     </node>
   </node>
   <node concept="1TIwiD" id="6jpO12_xkrj">
@@ -1736,11 +1703,6 @@
       <property role="20kJfa" value="definition" />
       <ref role="20lvS9" node="5wFVtxsPPNy" resolve="SysMLv2CalculationDefinition" />
     </node>
-    <node concept="1TJgyj" id="5wFVtxsPPNA" role="1TKVEi">
-      <property role="IQ2ns" value="6353433212862553318" />
-      <property role="20kJfa" value="namespace" />
-      <ref role="20lvS9" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
-    </node>
     <node concept="PrWs8" id="5wFVtxsUzxO" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hs7FjO" resolve="ISysMLv2QualifiedRef" />
     </node>
@@ -1772,17 +1734,8 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <ref role="20lvS9" node="3MUZSeG_f$B" resolve="ISysMLv2Expression" />
     </node>
-    <node concept="PrWs8" id="5wFVtxsPPNE" role="PzmwI">
-      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
-    </node>
     <node concept="PrWs8" id="5wFVtxsPPNF" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
-    </node>
-    <node concept="PrWs8" id="5wFVtxsPPNG" role="PzmwI">
-      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
-    </node>
-    <node concept="PrWs8" id="5wFVtxsPPNH" role="PzmwI">
-      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
     <node concept="PrWs8" id="4QEfSMD6mln" role="PzmwI">
       <ref role="PrY4T" node="4QEfSMD6mkw" resolve="ISysMLv2ReturnOwner" />
@@ -1803,17 +1756,8 @@
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2BodiedDefinition" />
     <ref role="1TJDcQ" node="3MUZSeHM$aH" resolve="SysMLv2OccurrenceDefinition" />
-    <node concept="PrWs8" id="5wFVtxuc4Zp" role="PzmwI">
-      <ref role="PrY4T" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
-    </node>
     <node concept="PrWs8" id="5wFVtxuc4Zq" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
-    </node>
-    <node concept="PrWs8" id="5wFVtxuc4Zr" role="PzmwI">
-      <ref role="PrY4T" node="5oZmK$O6sP8" resolve="ISysMLv2PrefixMetadataOwner" />
-    </node>
-    <node concept="PrWs8" id="5wFVtxuc4Zs" role="PzmwI">
-      <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
     <node concept="1TJgyj" id="5wFVtxuc4Zt" role="1TKVEi">
       <property role="IQ2ns" value="6353433212885159901" />
