@@ -62,6 +62,9 @@
       <concept id="4376090928952104928" name="com.symo.sysmlv2.baselan.structure.SysMLv2BindingUsage" flags="ng" index="2ghixz" />
       <concept id="4376090928935955022" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceUsage" flags="ng" index="2gGTnd" />
       <concept id="4376090928935955021" name="com.symo.sysmlv2.baselan.structure.SysMLv2InterfaceDefinition" flags="ng" index="2gGTne" />
+      <concept id="5531643499102778612" name="com.symo.sysmlv2.baselan.structure.ISysMLv2QualifiedRef" flags="ngI" index="gQIM0">
+        <reference id="5531643499102778613" name="namespace" index="gQIM1" />
+      </concept>
       <concept id="4211673189923939179" name="com.symo.sysmlv2.baselan.structure.SysMLv2EmptyLine" flags="ng" index="2h0jOo" />
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
@@ -1197,6 +1200,34 @@
                 <ref role="3AHY9a" node="7PctyxUCLvc" resolve="Part2_2" />
               </node>
             </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1lH9Xt" id="4QEfSM$lbiF">
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
+    <property role="TrG5h" value="_140_QualifiedImportScope" />
+    <node concept="1qefOq" id="4QEfSM$lbiG" role="1SKRRt">
+      <node concept="2h0jOr" id="4QEfSM$lbiH" role="1qenE9">
+        <property role="TrG5h" value="_140_QualifiedImportScope_file" />
+        <node concept="3Z0THl" id="4QEfSM$lbiK" role="2h0jOs">
+          <property role="3Z0PrK" value="Part2_1" />
+          <node concept="1Bo4sc" id="4QEfSM$lbiL" role="7Q8KG">
+            <ref role="1Bo4se" node="4QEfSM$lbiI" resolve="Part2_1" />
+            <ref role="gQIM1" node="4QEfSM$lbjQ" resolve="P" />
+            <node concept="2rqxmr" id="4QEfSM$lbiM" role="lGtFl">
+              <ref role="1BTHP0" node="4QEfSM$lbiI" resolve="Part2_1" />
+              <node concept="3KTrbX" id="4QEfSM$lbiN" role="3KTr4d">
+                <ref role="3AHY9a" node="4QEfSM$lbiI" resolve="Part2_1" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3Z9vzX" id="4QEfSM$lbjQ" role="2h0jOs">
+          <property role="TrG5h" value="P" />
+          <node concept="3ZUotO" id="4QEfSM$lbiI" role="3Z9vGx">
+            <property role="TrG5h" value="Part2_1" />
           </node>
         </node>
       </node>
