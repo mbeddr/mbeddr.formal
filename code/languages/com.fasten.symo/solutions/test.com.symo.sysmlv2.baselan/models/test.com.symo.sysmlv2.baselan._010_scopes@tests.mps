@@ -146,7 +146,6 @@
         <property id="6214786105876472933" name="value" index="1_WVXG" />
       </concept>
       <concept id="7354895567553737694" name="com.symo.sysmlv2.baselan.structure.SysMLv2Alias" flags="ng" index="1AcQlj">
-        <property id="7354895567553737695" name="targetName" index="1AcQli" />
         <child id="7354895567584118451" name="target" index="1BST0Y" />
       </concept>
       <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
@@ -417,7 +416,6 @@
           </node>
           <node concept="1AcQlj" id="6ohPCO2tF8_" role="3Z9vGx">
             <property role="TrG5h" value="ScopeProbe" />
-            <property role="1AcQli" value="" />
             <node concept="1Bo4sc" id="6ohPCO2tF8B" role="1BST0Y">
               <property role="1Bo4sf" value="MissingTarget" />
               <ref role="1Bo4se" node="3MUZSeG$NFO" resolve="Link" />
