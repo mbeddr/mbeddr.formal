@@ -45,6 +45,10 @@
   </imports>
   <registry>
     <language id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test">
+      <concept id="1215507671101" name="jetbrains.mps.lang.test.structure.NodeErrorCheckOperation" flags="ng" index="1TM$A" />
+      <concept id="1215603922101" name="jetbrains.mps.lang.test.structure.NodeOperationsContainer" flags="ng" index="7CXmI">
+        <child id="1215604436604" name="nodeOperations" index="7EUXB" />
+      </concept>
       <concept id="1225467090849" name="jetbrains.mps.lang.test.structure.ProjectExpression" flags="nn" index="1jxXqW" />
       <concept id="1216913645126" name="jetbrains.mps.lang.test.structure.NodesTestCase" flags="lg" index="1lH9Xt">
         <property id="2616911529524314943" name="accessMode" index="3DII0k" />
@@ -11325,7 +11329,7 @@
     </node>
   </node>
   <node concept="1lH9Xt" id="4N4m7hrWHiy">
-    <property role="3DII0k" value="2hh8MJdVwqT/none" />
+    <property role="3DII0k" value="2hh8MJdVwqX/command" />
     <property role="TrG5h" value="_130_NameScopingTest" />
     <node concept="1qefOq" id="4N4m7hrWHiz" role="1SKRRt">
       <node concept="2h0jOr" id="4N4m7hrWHi_" role="1qenE9">
@@ -11399,6 +11403,9 @@
           <node concept="3w00Zy" id="4N4m7hrWHiY" role="3w00Zx">
             <property role="3w00ZX" value="Base" />
             <ref role="3w00ZU" node="4N4m7hrWHiQ" resolve="Base" />
+            <node concept="7CXmI" id="3cGOz1pkuM6" role="lGtFl">
+              <node concept="1TM$A" id="3cGOz1pkuM7" role="7EUXB" />
+            </node>
           </node>
         </node>
         <node concept="3ZUotO" id="4N4m7hrWHiZ" role="2h0jOs">
@@ -14699,12 +14706,6 @@
             <node concept="2uUmlE" id="3MUZSeFZHbE" role="3w00ZY">
               <property role="TrG5h" value="l" />
               <property role="2uUmlw" value="true" />
-              <node concept="1y9Dpe" id="4QEfSMFbBxB" role="1y9Dp3">
-                <node concept="1_WVX5" id="4QEfSMFbByf" role="1y9Dp0">
-                  <ref role="1_WVXv" node="3MUZSeFZHbd" resolve="Safety" />
-                  <ref role="gQIM1" node="3MUZSeFZHbc" resolve="P" />
-                </node>
-              </node>
               <node concept="2uUmlC" id="3MUZSeFZHbJ" role="3w00ZT">
                 <property role="2uUmlF" value="Link" />
                 <ref role="2uUml$" node="3MUZSeFZHbf" resolve="Link" />
@@ -14719,6 +14720,13 @@
                 <node concept="3wdj9f" id="3MUZSeFZHbP" role="2uUmlA">
                   <property role="3wdj9b" value="y" />
                   <ref role="3wdj98" node="3MUZSeFZHbq" resolve="y" />
+                </node>
+              </node>
+              <node concept="1_WVX4" id="3cGOz1pkuLC" role="8GFem">
+                <property role="1_WVXh" value="true" />
+                <node concept="3w00Zy" id="3cGOz1pkuLE" role="3w00ZT">
+                  <property role="3w00ZX" value="Safety" />
+                  <ref role="3w00ZU" node="3MUZSeFZHbd" resolve="Safety" />
                 </node>
               </node>
             </node>
