@@ -99,7 +99,6 @@
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
-        <property id="6527505295402282731" name="isMultiline" index="Vunmg" />
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
@@ -191,159 +190,12 @@
     <ref role="1M2myG" to="5rf1:6coPuU39G2r" resolve="ISysMLv2StructuralUsage" />
     <node concept="9S07l" id="6coPuU3aqOF" role="9Vyp8">
       <node concept="3clFbS" id="6coPuU3aqOH" role="2VODD2">
-        <node concept="3clFbJ" id="7O9Ql6voz0j" role="3cqZAp">
-          <node concept="22lmx$" id="7O9Ql6voz0k" role="3clFbw">
-            <node concept="22lmx$" id="7O9Ql6voz0l" role="3uHU7B">
-              <node concept="22lmx$" id="7O9Ql6voz0m" role="3uHU7B">
-                <node concept="22lmx$" id="7O9Ql6voz0n" role="3uHU7B">
-                  <node concept="22lmx$" id="7O9Ql6voz0o" role="3uHU7B">
-                    <node concept="22lmx$" id="7O9Ql6voz0p" role="3uHU7B">
-                      <node concept="2OqwBi" id="7O9Ql6voz0q" role="3uHU7B">
-                        <node concept="nLn13" id="7O9Ql6voz0r" role="2Oq$k0" />
-                        <node concept="1mIQ4w" id="7O9Ql6voz0s" role="2OqNvi">
-                          <node concept="chp4Y" id="7O9Ql6voz0t" role="cj9EA">
-                            <ref role="cht4Q" to="5rf1:5wFVtxuc50O" resolve="SysMLv2ViewDefinition" />
-                          </node>
-                        </node>
-                      </node>
-                      <node concept="2OqwBi" id="7O9Ql6voz0u" role="3uHU7w">
-                        <node concept="nLn13" id="7O9Ql6voz0v" role="2Oq$k0" />
-                        <node concept="1mIQ4w" id="7O9Ql6voz0w" role="2OqNvi">
-                          <node concept="chp4Y" id="7O9Ql6voz0x" role="cj9EA">
-                            <ref role="cht4Q" to="5rf1:5wFVtxuc510" resolve="SysMLv2RenderingDefinition" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2OqwBi" id="7O9Ql6voz0y" role="3uHU7w">
-                      <node concept="nLn13" id="7O9Ql6voz0z" role="2Oq$k0" />
-                      <node concept="1mIQ4w" id="7O9Ql6voz0$" role="2OqNvi">
-                        <node concept="chp4Y" id="7O9Ql6voz0_" role="cj9EA">
-                          <ref role="cht4Q" to="5rf1:5wFVtxuc516" resolve="SysMLv2AllocationDefinition" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="2OqwBi" id="7O9Ql6voz0A" role="3uHU7w">
-                    <node concept="nLn13" id="7O9Ql6voz0B" role="2Oq$k0" />
-                    <node concept="1mIQ4w" id="7O9Ql6voz0C" role="2OqNvi">
-                      <node concept="chp4Y" id="7O9Ql6voz0D" role="cj9EA">
-                        <ref role="cht4Q" to="5rf1:3WfSgMNgLRx" resolve="SysMLv2ViewUsage" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="7O9Ql6voz0E" role="3uHU7w">
-                  <node concept="nLn13" id="7O9Ql6voz0F" role="2Oq$k0" />
-                  <node concept="1mIQ4w" id="7O9Ql6voz0G" role="2OqNvi">
-                    <node concept="chp4Y" id="7O9Ql6voz0H" role="cj9EA">
-                      <ref role="cht4Q" to="5rf1:3WfSgMNgLRy" resolve="SysMLv2RenderingUsage" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="7O9Ql6voz0I" role="3uHU7w">
-                <node concept="nLn13" id="7O9Ql6voz0J" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="7O9Ql6voz0K" role="2OqNvi">
-                  <node concept="chp4Y" id="7O9Ql6voz0L" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:3WfSgMNgLRz" resolve="SysMLv2AllocationUsage" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="7O9Ql6voz0M" role="3uHU7w">
-              <node concept="nLn13" id="7O9Ql6voz0N" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="7O9Ql6voz0O" role="2OqNvi">
-                <node concept="chp4Y" id="7O9Ql6voz0P" role="cj9EA">
-                  <ref role="cht4Q" to="5rf1:3WfSgMNgLR_" resolve="SysMLv2EventOccurrenceUsage" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="3clFbS" id="7O9Ql6voz0Q" role="3clFbx">
-            <node concept="3cpWs6" id="7O9Ql6voz0R" role="3cqZAp">
-              <node concept="3clFbT" id="7O9Ql6voz0S" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3clFbF" id="6coPuU3bujT" role="3cqZAp">
-          <node concept="22lmx$" id="3MUZSeG2pgu" role="3clFbG">
-            <property role="Vunmg" value="true" />
-            <node concept="22lmx$" id="3MUZSeG2pgk" role="3uHU7B">
-              <node concept="2OqwBi" id="3MUZSeG2pgn" role="3uHU7B">
-                <node concept="nLn13" id="3MUZSeG2pgq" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="3MUZSeG2pgr" role="2OqNvi">
-                  <node concept="chp4Y" id="3MUZSeG2pgt" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:3PUPjB2$P9d" resolve="SysMLv2PartDefinition" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="3MUZSeG2pgx" role="3uHU7w">
-                <node concept="nLn13" id="3MUZSeG2pg$" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="3MUZSeG2pg_" role="2OqNvi">
-                  <node concept="chp4Y" id="3MUZSeG2pgB" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:6coPuU2Tg1R" resolve="SysMLv2PortDefinition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1eOMI4" id="fNDJb5UKTf" role="3uHU7w">
-              <node concept="22lmx$" id="fNDJb5UKTh" role="1eOMHV">
-                <property role="Vunmg" value="true" />
-                <node concept="2OqwBi" id="fNDJb5UKTk" role="3uHU7B">
-                  <node concept="nLn13" id="fNDJb5UKTn" role="2Oq$k0" />
-                  <node concept="1mIQ4w" id="fNDJb5UKTo" role="2OqNvi">
-                    <node concept="chp4Y" id="fNDJb5UKTq" role="cj9EA">
-                      <ref role="cht4Q" to="5rf1:6coPuU2Tg1T" resolve="SysMLv2PortUsage" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="1eOMI4" id="fNDJb63Xl2" role="3uHU7w">
-                  <node concept="22lmx$" id="fNDJb63Xl4" role="1eOMHV">
-                    <node concept="2OqwBi" id="fNDJb63Xl7" role="3uHU7B">
-                      <node concept="nLn13" id="fNDJb63Xla" role="2Oq$k0" />
-                      <node concept="1mIQ4w" id="fNDJb63Xlb" role="2OqNvi">
-                        <node concept="chp4Y" id="fNDJb63Xld" role="cj9EA">
-                          <ref role="cht4Q" to="5rf1:3PUPjB2nMR4" resolve="SysMLv2Package" />
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="1eOMI4" id="fNDJb63Xle" role="3uHU7w">
-                      <node concept="22lmx$" id="fNDJb63Xlg" role="1eOMHV">
-                        <node concept="2OqwBi" id="fNDJb63Xlj" role="3uHU7B">
-                          <node concept="nLn13" id="fNDJb63Xlm" role="2Oq$k0" />
-                          <node concept="1mIQ4w" id="fNDJb63Xln" role="2OqNvi">
-                            <node concept="chp4Y" id="fNDJb63Xlp" role="cj9EA">
-                              <ref role="cht4Q" to="5rf1:3DMRBeFsYdC" resolve="SysMLv2File" />
-                            </node>
-                          </node>
-                        </node>
-                        <node concept="1eOMI4" id="6jBzJlAGYu5" role="3uHU7w">
-                          <node concept="22lmx$" id="6jBzJlAGYu7" role="1eOMHV">
-                            <node concept="2OqwBi" id="6jBzJlAGYua" role="3uHU7B">
-                              <node concept="nLn13" id="6jBzJlAGYud" role="2Oq$k0" />
-                              <node concept="1mIQ4w" id="6jBzJlAGYue" role="2OqNvi">
-                                <node concept="chp4Y" id="6jBzJlAGYug" role="cj9EA">
-                                  <ref role="cht4Q" to="5rf1:7JKstLNgG7Z" resolve="SysMLv2PartUsage" />
-                                </node>
-                              </node>
-                            </node>
-                            <node concept="2OqwBi" id="6jBzJlAGYuh" role="3uHU7w">
-                              <node concept="nLn13" id="6jBzJlAGYuk" role="2Oq$k0" />
-                              <node concept="1mIQ4w" id="6jBzJlAGYul" role="2OqNvi">
-                                <node concept="chp4Y" id="6jBzJlAGYun" role="cj9EA">
-                                  <ref role="cht4Q" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
-                                </node>
-                              </node>
-                            </node>
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
+          <node concept="2OqwBi" id="4QEfSMBnOI3" role="3clFbG">
+            <node concept="nLn13" id="4QEfSMBnOI4" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4QEfSMBnOI5" role="2OqNvi">
+              <node concept="chp4Y" id="4QEfSMBnOI6" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
               </node>
             </node>
           </node>
@@ -1245,32 +1097,49 @@
     <ref role="1M2myG" to="5rf1:5wFVtxsPPNz" resolve="SysMLv2ReturnParameter" />
     <node concept="9S07l" id="5wFVtxsUzPe" role="9Vyp8">
       <node concept="3clFbS" id="5wFVtxsUzPg" role="2VODD2">
-        <node concept="3clFbF" id="5wFVtxsUzPh" role="3cqZAp">
-          <node concept="22lmx$" id="3WfSgMMbGCB" role="3clFbG">
-            <node concept="22lmx$" id="3WfSgMMbGCC" role="3uHU7B">
-              <node concept="2OqwBi" id="3WfSgMMbGCD" role="3uHU7B">
-                <node concept="nLn13" id="3WfSgMMbGCE" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="3WfSgMMbGCF" role="2OqNvi">
-                  <node concept="chp4Y" id="3WfSgMMbGCG" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:5wFVtxsPPNy" resolve="SysMLv2CalculationDefinition" />
+        <node concept="3clFbJ" id="4QEfSM$NiH9" role="3cqZAp">
+          <node concept="22lmx$" id="4QEfSM$NiHa" role="3clFbw">
+            <node concept="22lmx$" id="4QEfSM$NiHb" role="3uHU7B">
+              <node concept="2OqwBi" id="4QEfSM$NiHc" role="3uHU7B">
+                <node concept="nLn13" id="4QEfSM$NiHd" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="4QEfSM$NiHe" role="2OqNvi">
+                  <node concept="chp4Y" id="4QEfSM$NiHf" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:5wFVtxwZ4tW" resolve="SysMLv2CalculationUsage" />
                   </node>
                 </node>
               </node>
-              <node concept="2OqwBi" id="3WfSgMMbGCH" role="3uHU7w">
-                <node concept="nLn13" id="3WfSgMMbGCI" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="3WfSgMMbGCJ" role="2OqNvi">
-                  <node concept="chp4Y" id="3WfSgMMbGCK" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:5wFVtxuc50s" resolve="SysMLv2CaseDefinition" />
+              <node concept="2OqwBi" id="4QEfSM$NiHg" role="3uHU7w">
+                <node concept="nLn13" id="4QEfSM$NiHh" role="2Oq$k0" />
+                <node concept="1mIQ4w" id="4QEfSM$NiHi" role="2OqNvi">
+                  <node concept="chp4Y" id="4QEfSM$NiHj" role="cj9EA">
+                    <ref role="cht4Q" to="5rf1:5wFVtxuc4ZX" resolve="SysMLv2ConstraintDefinition" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="2OqwBi" id="3WfSgMMbGCL" role="3uHU7w">
-              <node concept="nLn13" id="3WfSgMMbGCM" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="3WfSgMMbGCN" role="2OqNvi">
-                <node concept="chp4Y" id="3WfSgMMbGCO" role="cj9EA">
-                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
+            <node concept="2OqwBi" id="4QEfSM$NiHk" role="3uHU7w">
+              <node concept="nLn13" id="4QEfSM$NiHl" role="2Oq$k0" />
+              <node concept="1mIQ4w" id="4QEfSM$NiHm" role="2OqNvi">
+                <node concept="chp4Y" id="4QEfSM$NiHn" role="cj9EA">
+                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tX" resolve="SysMLv2ConstraintUsage" />
                 </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="4QEfSM$NiHo" role="3clFbx">
+            <node concept="3cpWs6" id="4QEfSM$NiHp" role="3cqZAp">
+              <node concept="3clFbT" id="4QEfSM$NiHq" role="3cqZAk">
+                <property role="3clFbU" value="true" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="5wFVtxsUzPh" role="3cqZAp">
+          <node concept="2OqwBi" id="4QEfSMD6mmo" role="3clFbG">
+            <node concept="nLn13" id="4QEfSMD6mmp" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4QEfSMD6mmq" role="2OqNvi">
+              <node concept="chp4Y" id="4QEfSMD6mmr" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:4QEfSMD6mkw" resolve="ISysMLv2ReturnOwner" />
               </node>
             </node>
           </node>
@@ -1285,41 +1154,11 @@
     <node concept="9S07l" id="6jBzJlBLxyS" role="9Vyp8">
       <node concept="3clFbS" id="6jBzJlBLxyU" role="2VODD2">
         <node concept="3clFbF" id="6jBzJlBLxyV" role="3cqZAp">
-          <node concept="22lmx$" id="6jBzJlBLxyX" role="3clFbG">
-            <node concept="22lmx$" id="6jBzJlBLxz0" role="3uHU7B">
-              <node concept="22lmx$" id="6jBzJlBLxz3" role="3uHU7B">
-                <node concept="2OqwBi" id="6jBzJlBLxz6" role="3uHU7B">
-                  <node concept="nLn13" id="6jBzJlBLxz9" role="2Oq$k0" />
-                  <node concept="1mIQ4w" id="6jBzJlBLxza" role="2OqNvi">
-                    <node concept="chp4Y" id="6jBzJlBLxzc" role="cj9EA">
-                      <ref role="cht4Q" to="5rf1:5wFVtxuc50s" resolve="SysMLv2CaseDefinition" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="6jBzJlBLxzd" role="3uHU7w">
-                  <node concept="nLn13" id="6jBzJlBLxzg" role="2Oq$k0" />
-                  <node concept="1mIQ4w" id="6jBzJlBLxzh" role="2OqNvi">
-                    <node concept="chp4Y" id="6jBzJlBLxzj" role="cj9EA">
-                      <ref role="cht4Q" to="5rf1:5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="6jBzJlBLxzk" role="3uHU7w">
-                <node concept="nLn13" id="6jBzJlBLxzn" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="6jBzJlBLxzo" role="2OqNvi">
-                  <node concept="chp4Y" id="6jBzJlBLxzq" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:5wFVtxuc503" resolve="SysMLv2RequirementDefinition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="6jBzJlBLxzr" role="3uHU7w">
-              <node concept="nLn13" id="6jBzJlBLxzu" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="6jBzJlBLxzv" role="2OqNvi">
-                <node concept="chp4Y" id="6jBzJlBLxzx" role="cj9EA">
-                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
-                </node>
+          <node concept="2OqwBi" id="4QEfSMD6mlD" role="3clFbG">
+            <node concept="nLn13" id="4QEfSMD6mlE" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4QEfSMD6mlF" role="2OqNvi">
+              <node concept="chp4Y" id="4QEfSMD6mlG" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
               </node>
             </node>
           </node>
@@ -1334,41 +1173,11 @@
     <node concept="9S07l" id="6jBzJlBLxzC" role="9Vyp8">
       <node concept="3clFbS" id="6jBzJlBLxzE" role="2VODD2">
         <node concept="3clFbF" id="6jBzJlBLxzF" role="3cqZAp">
-          <node concept="22lmx$" id="6jBzJlBLxzH" role="3clFbG">
-            <node concept="22lmx$" id="6jBzJlBLxzK" role="3uHU7B">
-              <node concept="22lmx$" id="6jBzJlBLxzN" role="3uHU7B">
-                <node concept="2OqwBi" id="6jBzJlBLxzQ" role="3uHU7B">
-                  <node concept="nLn13" id="6jBzJlBLxzT" role="2Oq$k0" />
-                  <node concept="1mIQ4w" id="6jBzJlBLxzU" role="2OqNvi">
-                    <node concept="chp4Y" id="6jBzJlBLxzW" role="cj9EA">
-                      <ref role="cht4Q" to="5rf1:5wFVtxuc50s" resolve="SysMLv2CaseDefinition" />
-                    </node>
-                  </node>
-                </node>
-                <node concept="2OqwBi" id="6jBzJlBLxzX" role="3uHU7w">
-                  <node concept="nLn13" id="6jBzJlBLx$0" role="2Oq$k0" />
-                  <node concept="1mIQ4w" id="6jBzJlBLx$1" role="2OqNvi">
-                    <node concept="chp4Y" id="6jBzJlBLx$3" role="cj9EA">
-                      <ref role="cht4Q" to="5rf1:5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="6jBzJlBLx$4" role="3uHU7w">
-                <node concept="nLn13" id="6jBzJlBLx$7" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="6jBzJlBLx$8" role="2OqNvi">
-                  <node concept="chp4Y" id="6jBzJlBLx$a" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:5wFVtxuc503" resolve="SysMLv2RequirementDefinition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="6jBzJlBLx$b" role="3uHU7w">
-              <node concept="nLn13" id="6jBzJlBLx$e" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="6jBzJlBLx$f" role="2OqNvi">
-                <node concept="chp4Y" id="6jBzJlBLx$h" role="cj9EA">
-                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tP" resolve="SysMLv2RequirementUsage" />
-                </node>
+          <node concept="2OqwBi" id="4QEfSMD6mm4" role="3clFbG">
+            <node concept="nLn13" id="4QEfSMD6mm5" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4QEfSMD6mm6" role="2OqNvi">
+              <node concept="chp4Y" id="4QEfSMD6mm7" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
               </node>
             </node>
           </node>
@@ -1412,31 +1221,11 @@
     <node concept="9S07l" id="7O9Ql6wW9fr" role="9Vyp8">
       <node concept="3clFbS" id="7O9Ql6wW9fs" role="2VODD2">
         <node concept="3clFbF" id="7O9Ql6wW9ft" role="3cqZAp">
-          <node concept="22lmx$" id="7O9Ql6wW9fu" role="3clFbG">
-            <node concept="22lmx$" id="7O9Ql6wW9fv" role="3uHU7B">
-              <node concept="2OqwBi" id="7O9Ql6wW9fw" role="3uHU7B">
-                <node concept="nLn13" id="7O9Ql6wW9fx" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="7O9Ql6wW9fy" role="2OqNvi">
-                  <node concept="chp4Y" id="7O9Ql6wW9fz" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:5wFVtxsPPNy" resolve="SysMLv2CalculationDefinition" />
-                  </node>
-                </node>
-              </node>
-              <node concept="2OqwBi" id="7O9Ql6wW9f$" role="3uHU7w">
-                <node concept="nLn13" id="7O9Ql6wW9f_" role="2Oq$k0" />
-                <node concept="1mIQ4w" id="7O9Ql6wW9fA" role="2OqNvi">
-                  <node concept="chp4Y" id="7O9Ql6wW9fB" role="cj9EA">
-                    <ref role="cht4Q" to="5rf1:5wFVtxuc50s" resolve="SysMLv2CaseDefinition" />
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="2OqwBi" id="7O9Ql6wW9fC" role="3uHU7w">
-              <node concept="nLn13" id="7O9Ql6wW9fD" role="2Oq$k0" />
-              <node concept="1mIQ4w" id="7O9Ql6wW9fE" role="2OqNvi">
-                <node concept="chp4Y" id="7O9Ql6wW9fF" role="cj9EA">
-                  <ref role="cht4Q" to="5rf1:5wFVtxwZ4tR" resolve="SysMLv2CaseUsage" />
-                </node>
+          <node concept="2OqwBi" id="4QEfSMD6mlK" role="3clFbG">
+            <node concept="nLn13" id="4QEfSMD6mlL" role="2Oq$k0" />
+            <node concept="1mIQ4w" id="4QEfSMD6mlM" role="2OqNvi">
+              <node concept="chp4Y" id="4QEfSMD6mlN" role="cj9EA">
+                <ref role="cht4Q" to="5rf1:4QEfSMD6mkw" resolve="ISysMLv2ReturnOwner" />
               </node>
             </node>
           </node>

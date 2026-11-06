@@ -87,6 +87,9 @@
     <node concept="PrWs8" id="4N4m7hrYNgV" role="PzmwI">
       <ref role="PrY4T" node="4N4m7hrYNgN" resolve="ISysMLv2Namespace" />
     </node>
+    <node concept="PrWs8" id="4QEfSMBnOHK" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3DMRBeFsYdF">
     <property role="EcuMT" value="4211673189923939179" />
@@ -142,6 +145,9 @@
     </node>
     <node concept="PrWs8" id="fNDJb20D$N" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+    <node concept="PrWs8" id="4QEfSMBnOHE" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
     </node>
   </node>
   <node concept="1TIwiD" id="3PUPjB2ukTG">
@@ -213,6 +219,9 @@
     </node>
     <node concept="PrWs8" id="fNDJb49kpX" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+    <node concept="PrWs8" id="4QEfSMBnOH$" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
     </node>
   </node>
   <node concept="1TIwiD" id="7JKstLNkRPu">
@@ -450,6 +459,9 @@
     <node concept="PrWs8" id="fNDJb1jfgM" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
+    <node concept="PrWs8" id="4QEfSMBnOHk" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU2Tg1S">
     <property role="EcuMT" value="7140692429570900088" />
@@ -537,6 +549,9 @@
     <node concept="PrWs8" id="fNDJb5Cvwm" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
+    <node concept="PrWs8" id="4QEfSMBnOGQ" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6coPuU2Tg1U">
     <property role="EcuMT" value="7140692429570900090" />
@@ -588,6 +603,9 @@
     </node>
     <node concept="PrWs8" id="fNDJb1jfgi" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
+    </node>
+    <node concept="PrWs8" id="4QEfSMBnOHe" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
     </node>
   </node>
   <node concept="1TIwiD" id="6coPuU36dCc">
@@ -1281,6 +1299,9 @@
     <node concept="PrWs8" id="fNDJb1_qdX" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
+    <node concept="PrWs8" id="4QEfSMBnOHq" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3MUZSeHmu9I">
     <property role="EcuMT" value="4376090928958005870" />
@@ -1763,6 +1784,9 @@
     <node concept="PrWs8" id="5wFVtxsPPNH" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
+    <node concept="PrWs8" id="4QEfSMD6mln" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMD6mkw" resolve="ISysMLv2ReturnOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxsPPNz">
     <property role="EcuMT" value="6353433212862553315" />
@@ -1807,6 +1831,9 @@
       <property role="TrG5h" value="content" />
       <ref role="20lvS9" node="6coPuU36dCe" resolve="ISysMLv2ItemBodyContent" />
     </node>
+    <node concept="PrWs8" id="4QEfSMBnOH9" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxuc4ZL">
     <property role="EcuMT" value="6353433212885159921" />
@@ -1845,6 +1872,9 @@
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2RequirementDefinition" />
     <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+    <node concept="PrWs8" id="4QEfSMD6ml7" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxuc509">
     <property role="EcuMT" value="6353433212885159945" />
@@ -1861,6 +1891,12 @@
     <property role="3GE5qa" value="definitions" />
     <property role="TrG5h" value="SysMLv2CaseDefinition" />
     <ref role="1TJDcQ" node="5wFVtxuc4Zo" resolve="SysMLv2BodiedDefinition" />
+    <node concept="PrWs8" id="4QEfSMD6mkM" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
+    </node>
+    <node concept="PrWs8" id="4QEfSMD6mlf" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMD6mkw" resolve="ISysMLv2ReturnOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxuc50y">
     <property role="EcuMT" value="6353433212885159970" />
@@ -1972,6 +2008,9 @@
     <node concept="PrWs8" id="6jBzJlwvP6w" role="PzmwI">
       <ref role="PrY4T" node="6coPuU2Bx1M" resolve="ISysMLv2AttributeBodyContent" />
     </node>
+    <node concept="PrWs8" id="4QEfSMBnOHv" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMBnOG_" resolve="ISysMLv2StructuralUsageOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tN">
     <property role="EcuMT" value="6353433212932081523" />
@@ -1996,6 +2035,9 @@
     <property role="R4oN_" value="SysML v2 RequirementUsage (8.3.22)" />
     <property role="3GE5qa" value="behavior" />
     <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <node concept="PrWs8" id="4QEfSMD6mlb" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tQ">
     <property role="EcuMT" value="6353433212932081526" />
@@ -2012,6 +2054,12 @@
     <property role="R4oN_" value="SysML v2 CaseUsage (8.3.23)" />
     <property role="3GE5qa" value="behavior" />
     <ref role="1TJDcQ" node="5wFVtxwZ4tM" resolve="SysMLv2BodiedUsage" />
+    <node concept="PrWs8" id="4QEfSMD6ml3" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMD6mkv" resolve="ISysMLv2SubjectOwner" />
+    </node>
+    <node concept="PrWs8" id="4QEfSMD6mlj" role="PzmwI">
+      <ref role="PrY4T" node="4QEfSMD6mkw" resolve="ISysMLv2ReturnOwner" />
+    </node>
   </node>
   <node concept="1TIwiD" id="5wFVtxwZ4tS">
     <property role="EcuMT" value="6353433212932081528" />
@@ -2513,6 +2561,24 @@
       <property role="TrG5h" value="assume" />
       <property role="1L1pqM" value="assume" />
     </node>
+  </node>
+  <node concept="PlHQZ" id="4QEfSMBnOG_">
+    <property role="EcuMT" value="5596355360297274149" />
+    <property role="TrG5h" value="ISysMLv2StructuralUsageOwner" />
+    <property role="R4oN_" value="element that may own structural usages (part, port, binding, connection, flow, interface usages)" />
+    <property role="3GE5qa" value="part.base" />
+  </node>
+  <node concept="PlHQZ" id="4QEfSMD6mkv">
+    <property role="EcuMT" value="5596355360326247711" />
+    <property role="TrG5h" value="ISysMLv2SubjectOwner" />
+    <property role="R4oN_" value="element that may own a subject or actor usage (case and requirement definitions and usages)" />
+    <property role="3GE5qa" value="behavior" />
+  </node>
+  <node concept="PlHQZ" id="4QEfSMD6mkw">
+    <property role="EcuMT" value="5596355360326247712" />
+    <property role="TrG5h" value="ISysMLv2ReturnOwner" />
+    <property role="R4oN_" value="element that may own a return parameter or return attribute usage (calculation and case definitions, case usages)" />
+    <property role="3GE5qa" value="behavior" />
   </node>
 </model>
 
