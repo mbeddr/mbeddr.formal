@@ -12,6 +12,8 @@
   </facets>
   <dependencies>
     <dependency reexport="false">df90562e-2282-4284-81c0-42a7e5d43d37(com.symo.sysmlv2.baselan)</dependency>
+    <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
+    <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:df90562e-2282-4284-81c0-42a7e5d43d37:com.symo.sysmlv2.baselan" version="0" />
@@ -38,6 +40,7 @@
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
     <module reference="df90562e-2282-4284-81c0-42a7e5d43d37(com.symo.sysmlv2.baselan)" version="0" />
+    <module reference="2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)" version="0" />
     <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
     <module reference="d07e7883-9538-4cc4-92a9-e6123c5c7a68(test.com.symo.sysmlv2.baselan)" version="0" />
   </dependencyVersions>

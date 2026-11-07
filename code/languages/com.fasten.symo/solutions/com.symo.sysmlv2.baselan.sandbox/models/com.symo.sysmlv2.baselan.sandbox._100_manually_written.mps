@@ -22,11 +22,7 @@
         <child id="6353433212862553319" name="specializes" index="4Zb4Z" />
       </concept>
       <concept id="6353433212862553315" name="com.symo.sysmlv2.baselan.structure.SysMLv2ReturnParameter" flags="ng" index="4Zb4V" />
-      <concept id="7270937307965565810" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainOccurrenceUsage" flags="ng" index="5yUm7">
-        <property id="7270937307965565812" name="isInitialValue" index="5yUm1" />
-        <property id="7270937307965565811" name="isDefaultValue" index="5yUm6" />
-        <child id="7270937307965565813" name="value" index="5yUm0" />
-      </concept>
+      <concept id="7270937307965565810" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainOccurrenceUsage" flags="ng" index="5yUm7" />
       <concept id="6353433212885159896" name="com.symo.sysmlv2.baselan.structure.SysMLv2BodiedDefinition" flags="ng" index="66U80">
         <child id="6353433212885159901" name="specializes" index="66U85" />
         <child id="6353433212885159902" name="content" index="66U86" />
@@ -110,9 +106,6 @@
       </concept>
       <concept id="3997211576372409960" name="com.symo.sysmlv2.baselan.structure.ISysMLv2IdentifierNameConcept" flags="ngI" index="iIkiC">
         <property id="9028721269218146631" name="declaredShortName" index="6zCXJ" />
-      </concept>
-      <concept id="4376090928929871183" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartLikeUsage" flags="ng" index="2n5AFc">
-        <child id="8930763252716192330" name="content" index="8GFem" />
       </concept>
       <concept id="717440187291777380" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinitionRef" flags="ng" index="2uUmlC">
         <property id="717440187291777383" name="connectionDefinitionName" index="2uUmlF" />
@@ -228,7 +221,7 @@
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
-        <child id="8930763252716192330" name="content" index="8GFen" />
+        <child id="8930763252716192330" name="content" index="8GFem" />
         <child id="7140692429574298134" name="multiplicity" index="3w00ZS" />
         <child id="7140692429574298135" name="types" index="3w00ZT" />
       </concept>
@@ -395,9 +388,6 @@
       </node>
       <node concept="2h0jOo" id="3MUZSeF_Q8B" role="3w00ZY" />
       <node concept="2uUmlE" id="3MUZSeF_Q8D" role="3w00ZY">
-        <node concept="8EhU9" id="3MUZSeFZHaP" role="8GFem">
-          <property role="TrG5h" value="safety" />
-        </node>
         <node concept="2uUmlD" id="3MUZSeF_Q8E" role="2uUmly">
           <node concept="3wdj9f" id="3MUZSeF_Q8F" role="2uUmlA">
             <ref role="3wdj98" node="3MUZSeF_Q8v" resolve="acceperationPedal" />
@@ -414,11 +404,11 @@
             <ref role="3wdj98" node="3MUZSeF_ja1" resolve="thrust" />
           </node>
         </node>
-      </node>
-      <node concept="2uUmlE" id="7O9Ql6$vj8$" role="3w00ZY">
-        <node concept="8EhU9" id="7O9Ql6$vj8_" role="8GFem">
+        <node concept="8EhU9" id="7vLXn5d6oy6" role="8GFem">
           <property role="TrG5h" value="safety" />
         </node>
+      </node>
+      <node concept="2uUmlE" id="7O9Ql6$vj8$" role="3w00ZY">
         <node concept="2uUmlD" id="7O9Ql6$vj8A" role="2uUmly">
           <node concept="3wdj9f" id="7O9Ql6$vj8B" role="2uUmlA">
             <ref role="3wdj98" node="3MUZSeF_Q8v" resolve="acceperationPedal" />
@@ -442,6 +432,9 @@
             <property role="8EhVr" value="0" />
             <property role="8EhVk" value="*" />
           </node>
+        </node>
+        <node concept="8EhU9" id="7vLXn5d6o_v" role="8GFem">
+          <property role="TrG5h" value="safety" />
         </node>
       </node>
     </node>
@@ -651,7 +644,7 @@
       </node>
       <node concept="8GF0z" id="fNDJb63Xkv" role="3Z9vGx">
         <property role="TrG5h" value="vehicleC1" />
-        <node concept="8GF0z" id="fNDJb63Xkw" role="8GFen">
+        <node concept="8GF0z" id="fNDJb63Xkw" role="8GFem">
           <property role="TrG5h" value="axleAssembly" />
         </node>
       </node>
@@ -660,7 +653,7 @@
         <node concept="3wdj9f" id="fNDJb63Xky" role="3wdj9c">
           <ref role="3wdj98" node="fNDJb63Xkv" resolve="vehicleC1" />
         </node>
-        <node concept="8GF0z" id="fNDJb63Xkz" role="8GFen">
+        <node concept="8GF0z" id="fNDJb63Xkz" role="8GFem">
           <node concept="3wdj9f" id="fNDJb63Xk$" role="3wdj9d">
             <ref role="3wdj98" node="fNDJb63Xkw" resolve="axleAssembly" />
           </node>
@@ -980,7 +973,7 @@
           <property role="3w00ZX" value="Fuel" />
           <ref role="3w00ZU" node="fNDJb7F_ti" resolve="Fuel" />
         </node>
-        <node concept="3w00Zz" id="7PctyxVIq$V" role="8GFen">
+        <node concept="3w00Zz" id="7PctyxVIq$V" role="8GFem">
           <property role="TrG5h" value="sample" />
           <node concept="3w00Zy" id="7PctyxVIq$W" role="3w00ZT">
             <property role="3w00ZX" value="Fuel" />
@@ -1774,39 +1767,23 @@
           <node concept="35c6Ng" id="6jBzJlz2iSo" role="SPUDr">
             <property role="35c6Nm" value="Event" />
           </node>
-          <node concept="1_WVX6" id="6jBzJlz2iSp" role="5yUm0">
-            <property role="1_WVXG" value="one" />
-          </node>
         </node>
         <node concept="5yUm7" id="6jBzJlz2iSq" role="3w00ZY">
           <property role="TrG5h" value="initial" />
-          <property role="5yUm1" value="true" />
           <node concept="35c6Ng" id="6jBzJlz2iSr" role="SPUDr">
             <property role="35c6Nm" value="Event" />
-          </node>
-          <node concept="1_WVX6" id="6jBzJlz2iSs" role="5yUm0">
-            <property role="1_WVXG" value="two" />
           </node>
         </node>
         <node concept="5yUm7" id="6jBzJlz2iSt" role="3w00ZY">
           <property role="TrG5h" value="fallback" />
-          <property role="5yUm6" value="true" />
           <node concept="35c6Ng" id="6jBzJlz2iSu" role="SPUDr">
             <property role="35c6Nm" value="Event" />
-          </node>
-          <node concept="1_WVX6" id="6jBzJlz2iSv" role="5yUm0">
-            <property role="1_WVXG" value="three" />
           </node>
         </node>
         <node concept="5yUm7" id="6jBzJlz2iSw" role="3w00ZY">
           <property role="TrG5h" value="both" />
-          <property role="5yUm6" value="true" />
-          <property role="5yUm1" value="true" />
           <node concept="35c6Ng" id="6jBzJlz2iSx" role="SPUDr">
             <property role="35c6Nm" value="Event" />
-          </node>
-          <node concept="1_WVX6" id="6jBzJlz2iSy" role="5yUm0">
-            <property role="1_WVXG" value="four" />
           </node>
         </node>
         <node concept="2uUmlE" id="6jBzJlz2iSz" role="3w00ZY">
@@ -2086,7 +2063,7 @@
           <node concept="8CKM2" id="6jBzJlA5ra7" role="3w00ZT">
             <property role="8CKM3" value="Engine" />
           </node>
-          <node concept="8GF0z" id="6jBzJlA5ra8" role="8GFen">
+          <node concept="8GF0z" id="6jBzJlA5ra8" role="8GFem">
             <property role="TrG5h" value="inner" />
             <node concept="8CKM2" id="6jBzJlA5ra9" role="3w00ZT">
               <property role="8CKM3" value="Engine" />

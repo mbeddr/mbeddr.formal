@@ -147,12 +147,15 @@
       <concept id="6214786105876472911" name="com.symo.sysmlv2.baselan.structure.SysMLv2LiteralExpression" flags="ng" index="1_WVX6">
         <property id="6214786105876472933" name="value" index="1_WVXG" />
       </concept>
+      <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
+        <property id="7354895567575683458" name="targetName" index="1Bo4sf" />
+      </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
         <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
-        <property id="4430087627524899785" name="importedName" index="3Z0PrK" />
+        <child id="9028721269198354948" name="importedElement" index="7Q8KG" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
@@ -2484,13 +2487,15 @@
       <node concept="2h0jOr" id="6jpO12DMpI$" role="1qenE9">
         <property role="TrG5h" value="demo" />
         <node concept="3Z0THl" id="6jpO12DMpI_" role="2h0jOs">
-          <property role="3Z0PrK" value="A::B" />
           <node concept="LIFWc" id="6jpO12DMpIA" role="lGtFl">
             <property role="LIFWd" value="Constant_x40wrj_b0a" />
             <property role="OXtK3" value="true" />
             <property role="p6zMq" value="0" />
             <property role="p6zMs" value="0" />
             <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
+          </node>
+          <node concept="1Bo4sc" id="7vLXn5bSmsN" role="7Q8KG">
+            <property role="1Bo4sf" value="A::B" />
           </node>
         </node>
       </node>
@@ -2499,8 +2504,10 @@
       <node concept="2h0jOr" id="6jpO12DMpID" role="1qenE9">
         <property role="TrG5h" value="demo" />
         <node concept="3Z0THl" id="fNDJb3IoVg" role="2h0jOs">
-          <property role="3Z0PrK" value="A::B" />
           <property role="3815tZ" value="6jJ9KHVIUlW/private" />
+          <node concept="1Bo4sc" id="7vLXn5bSmsO" role="7Q8KG">
+            <property role="1Bo4sf" value="A::B" />
+          </node>
         </node>
       </node>
     </node>
@@ -2517,7 +2524,6 @@
       <node concept="2h0jOr" id="6jpO12Efs7f" role="1qenE9">
         <property role="TrG5h" value="demo" />
         <node concept="3Z0THl" id="6jpO12Efs7g" role="2h0jOs">
-          <property role="3Z0PrK" value="A::B" />
           <property role="3d8W_J" value="true" />
           <node concept="LIFWc" id="6jpO12Efs7h" role="lGtFl">
             <property role="LIFWd" value="flag_isNamespace" />
@@ -2526,6 +2532,9 @@
             <property role="p6zMs" value="0" />
             <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
           </node>
+          <node concept="1Bo4sc" id="7vLXn5bSmsP" role="7Q8KG">
+            <property role="1Bo4sf" value="A::B" />
+          </node>
         </node>
       </node>
     </node>
@@ -2533,7 +2542,9 @@
       <node concept="2h0jOr" id="6jpO12Efs7k" role="1qenE9">
         <property role="TrG5h" value="demo" />
         <node concept="3Z0THl" id="6jpO12Efs7l" role="2h0jOs">
-          <property role="3Z0PrK" value="A::B" />
+          <node concept="1Bo4sc" id="7vLXn5bSmsQ" role="7Q8KG">
+            <property role="1Bo4sf" value="A::B" />
+          </node>
         </node>
       </node>
     </node>

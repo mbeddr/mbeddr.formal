@@ -68,8 +68,11 @@
         <child id="7140692429570900092" name="specializes" index="3xZtmi" />
         <child id="7140692429570900093" name="content" index="3xZtmj" />
       </concept>
+      <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
+        <property id="7354895567575683458" name="targetName" index="1Bo4sf" />
+      </concept>
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
-        <property id="4430087627524899785" name="importedName" index="3Z0PrK" />
+        <child id="9028721269198354948" name="importedElement" index="7Q8KG" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
@@ -103,7 +106,9 @@
   <node concept="2h0jOr" id="3PUPjB2vxtg">
     <property role="TrG5h" value="_040_ImportStatement" />
     <node concept="3Z0THl" id="3PUPjB2vxwf" role="2h0jOs">
-      <property role="3Z0PrK" value="A::B" />
+      <node concept="1Bo4sc" id="7vLXn5bSmsR" role="7Q8KG">
+        <property role="1Bo4sf" value="A::B" />
+      </node>
     </node>
   </node>
   <node concept="2h0jOr" id="3PUPjB2A71P">

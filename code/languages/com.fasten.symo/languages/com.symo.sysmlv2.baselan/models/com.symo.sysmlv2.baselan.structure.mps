@@ -159,11 +159,6 @@
     <node concept="PrWs8" id="3PUPjB2umRI" role="PzmwI">
       <ref role="PrY4T" node="3DMRBeFsYdH" resolve="ISysMLv2FileContent" />
     </node>
-    <node concept="1TJgyi" id="3PUPjB2uof9" role="1TKVEl">
-      <property role="IQ2nx" value="4430087627524899785" />
-      <property role="TrG5h" value="importedName" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
     <node concept="1TJgyi" id="6jpO12DYx_T" role="1TKVEl">
       <property role="IQ2nx" value="7267068243728800121" />
       <property role="TrG5h" value="isImportAll" />

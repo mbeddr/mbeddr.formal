@@ -61,7 +61,6 @@
         <property id="7267068243728800121" name="isImportAll" index="3d8W_D" />
         <property id="7267068243728800124" name="isRecursive" index="3d8W_G" />
         <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
-        <property id="4430087627524899785" name="importedName" index="3Z0PrK" />
         <child id="9028721269198354948" name="importedElement" index="7Q8KG" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
@@ -87,7 +86,6 @@
     <node concept="3Z9vzX" id="7vLXn5baoTJ" role="2h0jOs">
       <property role="TrG5h" value="SystemLibraryTour" />
       <node concept="3Z0THl" id="7vLXn5baoTK" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQ" />
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="7vLXn5baoTL" role="7Q8KG">
@@ -96,7 +94,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="7vLXn5baoTM" role="3Z9vGx">
-        <property role="3Z0PrK" value="SI" />
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="7vLXn5baoTN" role="7Q8KG">
@@ -133,7 +130,6 @@
     <node concept="3Z9vzX" id="7vLXn5baoTb" role="2h0jOs">
       <property role="TrG5h" value="DroneProperties" />
       <node concept="3Z0THl" id="7vLXn5baoTc" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQ" />
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="7vLXn5baoTd" role="7Q8KG">
@@ -142,7 +138,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="7vLXn5baoTe" role="3Z9vGx">
-        <property role="3Z0PrK" value="SI" />
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="7vLXn5baoTf" role="7Q8KG">
@@ -270,7 +265,6 @@
     <node concept="3Z9vzX" id="7vLXn5aNGLJ" role="2h0jOs">
       <property role="TrG5h" value="HexacopterExercise" />
       <node concept="3Z0THl" id="7vLXn5aNGLK" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQ" />
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="7vLXn5aNGLL" role="7Q8KG">
@@ -279,7 +273,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="7vLXn5aNGLM" role="3Z9vGx">
-        <property role="3Z0PrK" value="SI" />
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="7vLXn5aNGLN" role="7Q8KG">
@@ -306,7 +299,6 @@
     <node concept="3Z9vzX" id="7vLXn5baoU8" role="2h0jOs">
       <property role="TrG5h" value="HexacopterSolution" />
       <node concept="3Z0THl" id="7vLXn5baoU9" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQ" />
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <property role="3d8W_J" value="false" />
@@ -317,7 +309,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="7vLXn5baoUb" role="3Z9vGx">
-        <property role="3Z0PrK" value="SI" />
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="7vLXn5baoUc" role="7Q8KG">

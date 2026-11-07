@@ -271,7 +271,6 @@
       </concept>
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
         <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
-        <property id="4430087627524899785" name="importedName" index="3Z0PrK" />
         <child id="9028721269198354948" name="importedElement" index="7Q8KG" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
@@ -298,7 +297,6 @@
         <property role="3HG_t5" value="This package contains definitions for metadata annotations related&#10;to analysis tool integration." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vkb" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vkc" role="7Q8KG">
@@ -347,56 +345,48 @@
         <property role="3HG_t5" value="This package provides a library model of discretely sampled mathematical functions." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vkq" role="3Z9vGx">
-        <property role="3Z0PrK" value="Base::Anything" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vkr" role="7Q8KG">
           <property role="1Bo4sf" value="Base::Anything" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vks" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Positive" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vkt" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Positive" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vku" role="3Z9vGx">
-        <property role="3Z0PrK" value="Collections::KeyValuePair" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vkv" role="7Q8KG">
           <property role="1Bo4sf" value="Collections::KeyValuePair" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vkw" role="3Z9vGx">
-        <property role="3Z0PrK" value="Collections::OrderedMap" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vkx" role="7Q8KG">
           <property role="1Bo4sf" value="Collections::OrderedMap" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vky" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::size" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vkz" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::size" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vk$" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions::forAll" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vk_" role="7Q8KG">
           <property role="1Bo4sf" value="ControlFunctions::forAll" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vkA" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions::collect" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vkB" role="7Q8KG">
           <property role="1Bo4sf" value="ControlFunctions::collect" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vkC" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions::select" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vkD" role="7Q8KG">
           <property role="1Bo4sf" value="ControlFunctions::select" />
@@ -655,14 +645,12 @@
         <property role="3HG_t5" value="This package provides a model of the foundational state-space system representation,&#10;commonly used in control systems." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vm0" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQ::DurationValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vm1" role="7Q8KG">
           <property role="1Bo4sf" value="ISQ::DurationValue" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vm2" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::VectorQuantityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vm3" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::VectorQuantityValue" />
@@ -671,7 +659,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vm4" role="3Z9vGx">
-        <property role="3Z0PrK" value="VectorCalculations" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vm5" role="7Q8KG">
@@ -1105,14 +1092,12 @@
         <property role="3HG_t5" value="This package provides a simple framework for defining trade-off study analysis cases." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5voe" role="3Z9vGx">
-        <property role="3Z0PrK" value="Base::Anything" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vof" role="7Q8KG">
           <property role="1Bo4sf" value="Base::Anything" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vog" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5voh" role="7Q8KG">
@@ -1120,7 +1105,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5voi" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarFunctions" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5voj" role="7Q8KG">
@@ -1128,7 +1112,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vok" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vol" role="7Q8KG">
@@ -1343,21 +1326,18 @@
         <property role="3HG_t5" value="This package provides a library model modeling causes, effects, and causation connections&#10;between them." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vpr" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::isEmpty" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vps" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::isEmpty" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vpt" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::size" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vpu" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::size" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vpv" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::intersection" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vpw" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::intersection" />
@@ -1581,7 +1561,6 @@
         <property role="3HG_t5" value="This package provides language-extension metadata for cause-effect modeling." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vqu" role="3Z9vGx">
-        <property role="3Z0PrK" value="CausationConnections" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vqv" role="7Q8KG">
@@ -1590,7 +1569,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vqw" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vqx" role="7Q8KG">
@@ -1598,7 +1576,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vqy" role="3Z9vGx">
-        <property role="3Z0PrK" value="Metaobjects::SemanticMetadata" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vqz" role="7Q8KG">
           <property role="1Bo4sf" value="Metaobjects::SemanticMetadata" />
@@ -1773,21 +1750,18 @@
         <property role="3HG_t5" value="This package provides a model of items that represent basic geometric shapes." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrr" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Boolean" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrs" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Boolean" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrt" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Positive" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vru" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Positive" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrv" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrw" role="7Q8KG">
@@ -1796,7 +1770,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrx" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vry" role="7Q8KG">
@@ -1805,21 +1778,18 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrz" role="3Z9vGx">
-        <property role="3Z0PrK" value="SI::m" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vr$" role="7Q8KG">
           <property role="1Bo4sf" value="SI::m" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vr_" role="3Z9vGx">
-        <property role="3Z0PrK" value="Occurrences::MatesWith" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrA" role="7Q8KG">
           <property role="1Bo4sf" value="Occurrences::MatesWith" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrB" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrC" role="7Q8KG">
@@ -1827,7 +1797,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrD" role="3Z9vGx">
-        <property role="3Z0PrK" value="Items::Item" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrE" role="7Q8KG">
           <property role="1Bo4sf" value="Items::Item" />
@@ -1836,63 +1805,54 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrF" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::equals" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrG" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::equals" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrH" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::isEmpty" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrI" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::isEmpty" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrJ" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::notEmpty" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrK" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::notEmpty" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrL" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::size" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrM" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::size" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrN" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::includes" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrO" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::includes" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrP" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions::'if'" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrQ" role="7Q8KG">
           <property role="1Bo4sf" value="ControlFunctions::'if'" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrR" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions::forAll" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrS" role="7Q8KG">
           <property role="1Bo4sf" value="ControlFunctions::forAll" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrT" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions::exists" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrU" role="7Q8KG">
           <property role="1Bo4sf" value="ControlFunctions::exists" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vrV" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::scalarQuantities" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vrW" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::scalarQuantities" />
@@ -7591,21 +7551,18 @@
         <property role="3HG_t5" value="This package models physical items that have a spatial extent and act as a spatial frame of reference&#10;for obtaining position and displacement vectors of points within them." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vS8" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::Point" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vS9" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::Point" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSa" role="3Z9vGx">
-        <property role="3Z0PrK" value="SpatialFrames::SpatialFrame" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSb" role="7Q8KG">
           <property role="1Bo4sf" value="SpatialFrames::SpatialFrame" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSc" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::VectorQuantityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSd" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::VectorQuantityValue" />
@@ -7614,7 +7571,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSe" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences::ThreeDCoordinateFrame" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSf" role="7Q8KG">
           <property role="1Bo4sf" value="MeasurementReferences::ThreeDCoordinateFrame" />
@@ -7623,7 +7579,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSg" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences::nullTransformation" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSh" role="7Q8KG">
           <property role="1Bo4sf" value="MeasurementReferences::nullTransformation" />
@@ -7632,7 +7587,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSi" role="3Z9vGx">
-        <property role="3Z0PrK" value="Time::Clock" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSj" role="7Q8KG">
           <property role="1Bo4sf" value="Time::Clock" />
@@ -7641,7 +7595,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSk" role="3Z9vGx">
-        <property role="3Z0PrK" value="Time::TimeInstantValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSl" role="7Q8KG">
           <property role="1Bo4sf" value="Time::TimeInstantValue" />
@@ -7650,49 +7603,42 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSm" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Natural" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSn" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Natural" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSo" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQ::universalCartesianSpatial3dCoordinateFrame" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSp" role="7Q8KG">
           <property role="1Bo4sf" value="ISQ::universalCartesianSpatial3dCoordinateFrame" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSq" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQ::Position3dVector" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSr" role="7Q8KG">
           <property role="1Bo4sf" value="ISQ::Position3dVector" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSs" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQ::Displacement3dVector" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSt" role="7Q8KG">
           <property role="1Bo4sf" value="ISQ::Displacement3dVector" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSu" role="3Z9vGx">
-        <property role="3Z0PrK" value="VectorFunctions::isZeroVector" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSv" role="7Q8KG">
           <property role="1Bo4sf" value="VectorFunctions::isZeroVector" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSw" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::isEmpty" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSx" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::isEmpty" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vSy" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions::forAll" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vSz" role="7Q8KG">
           <property role="1Bo4sf" value="ControlFunctions::forAll" />
@@ -8297,7 +8243,6 @@
         <property role="3HG_t5" value="This package provides attributive data and metadata to allow a model element to be&#10;annotated with an image to be used in its graphical rendering or as a marker to&#10;adorn graphical or textual renderings." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vV_" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::String" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vVA" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::String" />
@@ -8407,21 +8352,18 @@
         <property role="3HG_t5" value="This package contains definitions of metadata generally useful for annotating models." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vW6" role="3Z9vGx">
-        <property role="3Z0PrK" value="Base::Anything" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vW7" role="7Q8KG">
           <property role="1Bo4sf" value="Base::Anything" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vW8" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::String" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vW9" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::String" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vWa" role="3Z9vGx">
-        <property role="3Z0PrK" value="RiskMetadata::Risk" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vWb" role="7Q8KG">
           <property role="1Bo4sf" value="RiskMetadata::Risk" />
@@ -8597,7 +8539,6 @@
         <property role="3HG_t5" value="This package contains definitions of metadata to identify key parameters of interest,&#10;including measures of effectiveness (MOE) and other key measures of performance (MOP)." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vX1" role="3Z9vGx">
-        <property role="3Z0PrK" value="Metaobjects::SemanticMetadata" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vX2" role="7Q8KG">
           <property role="1Bo4sf" value="Metaobjects::SemanticMetadata" />
@@ -8689,7 +8630,6 @@
         <property role="3HG_t5" value="This package defines metadata for annotating model elements with assessments of risk." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vXu" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vXv" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
@@ -8869,14 +8809,12 @@
         <property role="3HG_t5" value="International system of quantities (ISQ), as defined in ISO/IEC 80000" />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYl" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vYm" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYn" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vYo" role="7Q8KG">
@@ -8885,7 +8823,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYp" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vYq" role="7Q8KG">
@@ -8894,7 +8831,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYr" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vYs" role="7Q8KG">
@@ -8903,7 +8839,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYt" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vYu" role="7Q8KG">
@@ -8912,7 +8847,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYv" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQMechanics" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vYw" role="7Q8KG">
@@ -8921,7 +8855,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYx" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQThermodynamics" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vYy" role="7Q8KG">
@@ -8930,7 +8863,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYz" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQElectromagnetism" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vY$" role="7Q8KG">
@@ -8939,7 +8871,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vY_" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQLight" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vYA" role="7Q8KG">
@@ -8948,7 +8879,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYB" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQAcoustics" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vYC" role="7Q8KG">
@@ -8957,7 +8887,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYD" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQChemistryMolecular" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vYE" role="7Q8KG">
@@ -8966,7 +8895,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYF" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQAtomicNuclear" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vYG" role="7Q8KG">
@@ -8975,7 +8903,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYH" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQCharacteristicNumbers" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vYI" role="7Q8KG">
@@ -8984,7 +8911,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYJ" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQCondensedMatter" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vYK" role="7Q8KG">
@@ -8993,7 +8919,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vYL" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQInformation" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5vYM" role="7Q8KG">
@@ -9115,14 +9040,12 @@
         <property role="3HG_t5" value="International System of Quantities and Units&#10;Generated on 2025-03-13T15:00:05Z from standard ISO-80000-8:2020 &quot;Acoustics&quot;&#10;see also https://www.iso.org/standard/64978.html&#10;&#10;Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,&#10;with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.&#10;Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is&#10;defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)&#10;or TensorMeasurementReference." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vZl" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vZm" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vZn" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vZo" role="7Q8KG">
@@ -9131,7 +9054,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vZp" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vZq" role="7Q8KG">
@@ -9140,7 +9062,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vZr" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vZs" role="7Q8KG">
@@ -9153,7 +9074,6 @@
         <property role="1_pRsu" value="true" />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vZu" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQMechanics::PowerValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vZv" role="7Q8KG">
           <property role="1Bo4sf" value="ISQMechanics::PowerValue" />
@@ -9162,7 +9082,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vZw" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQMechanics::PressureValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vZx" role="7Q8KG">
           <property role="1Bo4sf" value="ISQMechanics::PressureValue" />
@@ -9171,7 +9090,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vZy" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::CartesianSpatial3dCoordinateFrame" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vZz" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::CartesianSpatial3dCoordinateFrame" />
@@ -9180,7 +9098,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vZ$" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::SpeedValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vZ_" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::SpeedValue" />
@@ -9189,7 +9106,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vZA" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::CartesianVelocity3dCoordinateFrame" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vZB" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::CartesianVelocity3dCoordinateFrame" />
@@ -9198,7 +9114,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vZC" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::AccelerationValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vZD" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::AccelerationValue" />
@@ -9207,7 +9122,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vZE" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::CartesianAcceleration3dCoordinateFrame" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vZF" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::CartesianAcceleration3dCoordinateFrame" />
@@ -9216,7 +9130,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5vZG" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQThermodynamics::EnergyValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5vZH" role="7Q8KG">
           <property role="1Bo4sf" value="ISQThermodynamics::EnergyValue" />
@@ -10580,14 +10493,12 @@
         <property role="3HG_t5" value="International System of Quantities and Units&#10;Generated on 2025-03-13T15:00:05Z from standard ISO-80000-10:2019 &quot;Atomic and nuclear physics&quot;&#10;see also https://www.iso.org/standard/64980.html&#10;&#10;Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,&#10;with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.&#10;Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is&#10;defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)&#10;or TensorMeasurementReference." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5w64" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5w65" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5w66" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5w67" role="7Q8KG">
@@ -10596,7 +10507,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5w68" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5w69" role="7Q8KG">
@@ -10605,7 +10515,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5w6a" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5w6b" role="7Q8KG">
@@ -10618,7 +10527,6 @@
         <property role="1_pRsu" value="true" />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5w6d" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQChemistryMolecular::DiffusionCoefficientUnit" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5w6e" role="7Q8KG">
           <property role="1Bo4sf" value="ISQChemistryMolecular::DiffusionCoefficientUnit" />
@@ -10627,7 +10535,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5w6f" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQChemistryMolecular::DiffusionCoefficientValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5w6g" role="7Q8KG">
           <property role="1Bo4sf" value="ISQChemistryMolecular::DiffusionCoefficientValue" />
@@ -10636,7 +10543,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5w6h" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQChemistryMolecular::diffusionCoefficient" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5w6i" role="7Q8KG">
           <property role="1Bo4sf" value="ISQChemistryMolecular::diffusionCoefficient" />
@@ -10645,7 +10551,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5w6j" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQElectromagnetism::ElectricChargeValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5w6k" role="7Q8KG">
           <property role="1Bo4sf" value="ISQElectromagnetism::ElectricChargeValue" />
@@ -10654,7 +10559,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5w6l" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::AngularFrequencyValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5w6m" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::AngularFrequencyValue" />
@@ -10663,7 +10567,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5w6n" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::AreaValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5w6o" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::AreaValue" />
@@ -10672,7 +10575,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5w6p" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQThermodynamics::EnergyValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5w6q" role="7Q8KG">
           <property role="1Bo4sf" value="ISQThermodynamics::EnergyValue" />
@@ -19298,14 +19200,12 @@
         <property role="3HG_t5" value="International System of Quantities and Units&#10;Generated on 2025-03-13T15:00:05Z from standard ISO/IEC 80000&#10;&#10;Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,&#10;with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5wIU" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5wIV" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5wIW" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5wIX" role="7Q8KG">
@@ -19314,7 +19214,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5wIY" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5wIZ" role="7Q8KG">
@@ -20144,14 +20043,12 @@
         <property role="3HG_t5" value="International System of Quantities and Units&#10;Generated on 2025-03-13T15:00:05Z from standard ISO-80000-11:2019 &quot;Characteristic numbers&quot;&#10;see also https://www.iso.org/standard/64982.html&#10;&#10;Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,&#10;with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.&#10;Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is&#10;defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)&#10;or TensorMeasurementReference." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5wMR" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5wMS" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5wMT" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5wMU" role="7Q8KG">
@@ -20160,7 +20057,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5wMV" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5wMW" role="7Q8KG">
@@ -20169,7 +20065,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5wMX" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5wMY" role="7Q8KG">
@@ -23152,14 +23047,12 @@
         <property role="3HG_t5" value="International System of Quantities and Units&#10;Generated on 2025-03-13T15:00:05Z from standard ISO-80000-9:2019 &quot;Physical chemistry and molecular physics&quot;&#10;see also https://www.iso.org/standard/64979.html&#10;&#10;Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,&#10;with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.&#10;Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is&#10;defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)&#10;or TensorMeasurementReference." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5x00" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5x01" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5x02" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5x03" role="7Q8KG">
@@ -23168,7 +23061,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5x04" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5x05" role="7Q8KG">
@@ -23177,7 +23069,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5x06" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5x07" role="7Q8KG">
@@ -23190,7 +23081,6 @@
         <property role="1_pRsu" value="true" />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5x09" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::AngularMeasureValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5x0a" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::AngularMeasureValue" />
@@ -23199,7 +23089,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5x0b" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQThermodynamics::EnergyValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5x0c" role="7Q8KG">
           <property role="1Bo4sf" value="ISQThermodynamics::EnergyValue" />
@@ -28578,14 +28467,12 @@
         <property role="3HG_t5" value="International System of Quantities and Units&#10;Generated on 2025-03-13T15:00:05Z from standard ISO-80000-12:2019 &quot;Condensed matter physics&quot;&#10;see also https://www.iso.org/standard/63480.html&#10;&#10;Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,&#10;with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.&#10;Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is&#10;defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)&#10;or TensorMeasurementReference." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xpO" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xpP" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xpQ" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xpR" role="7Q8KG">
@@ -28594,7 +28481,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xpS" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xpT" role="7Q8KG">
@@ -28603,7 +28489,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xpU" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xpV" role="7Q8KG">
@@ -28616,7 +28501,6 @@
         <property role="1_pRsu" value="true" />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xpX" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQElectromagnetism::ElectricPotentialDifferenceValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xpY" role="7Q8KG">
           <property role="1Bo4sf" value="ISQElectromagnetism::ElectricPotentialDifferenceValue" />
@@ -28625,7 +28509,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xpZ" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQElectromagnetism::MagneticFluxDensityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xq0" role="7Q8KG">
           <property role="1Bo4sf" value="ISQElectromagnetism::MagneticFluxDensityValue" />
@@ -28634,7 +28517,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xq1" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQElectromagnetism::ResistivityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xq2" role="7Q8KG">
           <property role="1Bo4sf" value="ISQElectromagnetism::ResistivityValue" />
@@ -28643,7 +28525,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xq3" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::CartesianSpatial3dCoordinateFrame" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xq4" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::CartesianSpatial3dCoordinateFrame" />
@@ -28652,7 +28533,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xq5" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::AngularFrequencyValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xq6" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::AngularFrequencyValue" />
@@ -28661,7 +28541,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xq7" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::AngularMeasureValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xq8" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::AngularMeasureValue" />
@@ -28670,7 +28549,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xq9" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::RepetencyValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xqa" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::RepetencyValue" />
@@ -28679,7 +28557,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xqb" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQThermodynamics::EnergyValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xqc" role="7Q8KG">
           <property role="1Bo4sf" value="ISQThermodynamics::EnergyValue" />
@@ -31910,14 +31787,12 @@
         <property role="3HG_t5" value="International System of Quantities and Units&#10;Generated on 2025-03-13T15:00:05Z from standard IEC-80000-6:2008 &quot;Electromagnetism&quot;&#10;see also https://www.iso.org/obp/ui/#iso:std:iec:80000:-6:ed-1:v1:en,fr&#10;&#10;Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,&#10;with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.&#10;Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is&#10;defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)&#10;or TensorMeasurementReference." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xDh" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xDi" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xDj" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xDk" role="7Q8KG">
@@ -31926,7 +31801,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xDl" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xDm" role="7Q8KG">
@@ -31935,7 +31809,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xDn" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xDo" role="7Q8KG">
@@ -31948,7 +31821,6 @@
         <property role="1_pRsu" value="true" />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xDq" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQMechanics::PowerValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xDr" role="7Q8KG">
           <property role="1Bo4sf" value="ISQMechanics::PowerValue" />
@@ -31957,7 +31829,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xDs" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::AngularMeasureValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xDt" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::AngularMeasureValue" />
@@ -31966,7 +31837,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5xDu" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQThermodynamics::EnergyValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5xDv" role="7Q8KG">
           <property role="1Bo4sf" value="ISQThermodynamics::EnergyValue" />
@@ -42500,14 +42370,12 @@
         <property role="3HG_t5" value="International System of Quantities and Units&#10;Generated on 2025-03-13T15:00:05Z from standard IEC-80000-13:2008 &quot;Information science and technology&quot;&#10;see also https://www.iso.org/obp/ui/#iso:std:iec:80000:-13:ed-1:v1:en&#10;&#10;Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,&#10;with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.&#10;Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is&#10;defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)&#10;or TensorMeasurementReference." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5yrW" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5yrX" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5yrY" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5yrZ" role="7Q8KG">
@@ -42516,7 +42384,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5ys0" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5ys1" role="7Q8KG">
@@ -42525,7 +42392,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5ys2" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5ys3" role="7Q8KG">
@@ -42538,7 +42404,6 @@
         <property role="1_pRsu" value="true" />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5ys5" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQMechanics::PowerValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5ys6" role="7Q8KG">
           <property role="1Bo4sf" value="ISQMechanics::PowerValue" />
@@ -42547,7 +42412,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5ys7" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::FrequencyValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5ys8" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::FrequencyValue" />
@@ -42556,7 +42420,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5ys9" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQThermodynamics::EnergyValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5ysa" role="7Q8KG">
           <property role="1Bo4sf" value="ISQThermodynamics::EnergyValue" />
@@ -45138,14 +45001,12 @@
         <property role="3HG_t5" value="International System of Quantities and Units&#10;Generated on 2025-03-13T15:00:05Z from standard ISO-80000-7:2019 &quot;Light and radiation&quot;&#10;see also https://www.iso.org/standard/64977.html&#10;&#10;Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,&#10;with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.&#10;Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is&#10;defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)&#10;or TensorMeasurementReference." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5yBQ" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5yBR" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5yBS" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5yBT" role="7Q8KG">
@@ -45154,7 +45015,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5yBU" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5yBV" role="7Q8KG">
@@ -45163,7 +45023,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5yBW" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5yBX" role="7Q8KG">
@@ -45176,7 +45035,6 @@
         <property role="1_pRsu" value="true" />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5yBZ" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQThermodynamics::EnergyValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5yC0" role="7Q8KG">
           <property role="1Bo4sf" value="ISQThermodynamics::EnergyValue" />
@@ -51568,14 +51426,12 @@
         <property role="3HG_t5" value="International System of Quantities and Units&#10;Generated on 2025-03-13T15:00:05Z from standard ISO-80000-4:2019 &quot;Mechanics&quot;&#10;see also https://www.iso.org/standard/64975.html&#10;&#10;Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,&#10;with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.&#10;Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is&#10;defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)&#10;or TensorMeasurementReference." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5z6t" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5z6u" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5z6v" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5z6w" role="7Q8KG">
@@ -51584,7 +51440,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5z6x" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5z6y" role="7Q8KG">
@@ -51593,7 +51448,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5z6z" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5z6$" role="7Q8KG">
@@ -51606,7 +51460,6 @@
         <property role="1_pRsu" value="true" />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5z6A" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQThermodynamics::EnergyValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5z6B" role="7Q8KG">
           <property role="1Bo4sf" value="ISQThermodynamics::EnergyValue" />
@@ -57983,14 +57836,12 @@
         <property role="3HG_t5" value="International System of Quantities and Units&#10;Generated on 2025-03-13T15:00:05Z from standard ISO-80000-3:2019 &quot;Space and Time&quot;&#10;see also https://www.iso.org/standard/64974.html&#10;&#10;Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,&#10;with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.&#10;Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is&#10;defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)&#10;or TensorMeasurementReference." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5z$W" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5z$X" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5z$Y" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5z$Z" role="7Q8KG">
@@ -57999,7 +57850,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5z_0" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5z_1" role="7Q8KG">
@@ -58008,7 +57858,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5z_2" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5z_3" role="7Q8KG">
@@ -61625,14 +61474,12 @@
         <property role="3HG_t5" value="International System of Quantities and Units&#10;Generated on 2025-03-13T15:00:05Z from standard ISO-80000-5:2019 &quot;Thermodynamics&quot;&#10;see also https://www.iso.org/standard/64976.html&#10;&#10;Note 1: In documentation comments, AsciiMath notation (see http://asciimath.org/) is used for mathematical concepts,&#10;with Greek letters in Unicode encoding. In running text, AsciiMath is placed between backticks.&#10;Note 2: For vector and tensor quantities currently the unit and quantity value type for their (scalar) magnitude is&#10;defined, as well as their typical Cartesian 3d VectorMeasurementReference (i.e. coordinate system)&#10;or TensorMeasurementReference." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5zPM" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5zPN" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5zPO" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5zPP" role="7Q8KG">
@@ -61641,7 +61488,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5zPQ" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5zPR" role="7Q8KG">
@@ -61650,7 +61496,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5zPS" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5zPT" role="7Q8KG">
@@ -67151,21 +66996,18 @@
         <property role="3HG_t5" value="This package package defines calculations on MeasurementUnits and CoordinateFrames." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$ge" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::String" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$gf" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::String" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$gg" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$gh" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$gi" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences::MeasurementUnit" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$gj" role="7Q8KG">
           <property role="1Bo4sf" value="MeasurementReferences::MeasurementUnit" />
@@ -67174,7 +67016,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$gk" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences::ScalarMeasurementReference" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$gl" role="7Q8KG">
           <property role="1Bo4sf" value="MeasurementReferences::ScalarMeasurementReference" />
@@ -67183,7 +67024,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$gm" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences::CoordinateFrame" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$gn" role="7Q8KG">
           <property role="1Bo4sf" value="MeasurementReferences::CoordinateFrame" />
@@ -67479,21 +67319,18 @@
         <property role="3HG_t5" value="This package defines the representations for measurement references." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$hP" role="3Z9vGx">
-        <property role="3Z0PrK" value="Collections::Array" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$hQ" role="7Q8KG">
           <property role="1Bo4sf" value="Collections::Array" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$hR" role="3Z9vGx">
-        <property role="3Z0PrK" value="Collections::List" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$hS" role="7Q8KG">
           <property role="1Bo4sf" value="Collections::List" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$hT" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$hU" role="7Q8KG">
@@ -67501,35 +67338,30 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$hV" role="3Z9vGx">
-        <property role="3Z0PrK" value="VectorValues::ThreeVectorValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$hW" role="7Q8KG">
           <property role="1Bo4sf" value="VectorValues::ThreeVectorValue" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$hX" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::size" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$hY" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::size" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$hZ" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::equals" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$i0" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::equals" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$i1" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions::forAll" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$i2" role="7Q8KG">
           <property role="1Bo4sf" value="ControlFunctions::forAll" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$i3" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::QuantityDimension" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$i4" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::QuantityDimension" />
@@ -67538,7 +67370,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$i5" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::VectorQuantityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$i6" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::VectorQuantityValue" />
@@ -67547,7 +67378,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$i7" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::scalarQuantities" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$i8" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::scalarQuantities" />
@@ -67556,7 +67386,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$i9" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::ScalarQuantityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$ia" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::ScalarQuantityValue" />
@@ -67565,7 +67394,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$ib" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::SystemOfQuantities" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$ic" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::SystemOfQuantities" />
@@ -67574,7 +67402,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$id" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::angularMeasure" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$ie" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::angularMeasure" />
@@ -68688,7 +68515,6 @@
         <property role="3HG_t5" value="This package defines the root representations for quantities and their values." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$nt" role="3Z9vGx">
-        <property role="3Z0PrK" value="Collections" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$nu" role="7Q8KG">
@@ -68696,56 +68522,48 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$nv" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::NumericalValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$nw" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::NumericalValue" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$nx" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Number" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$ny" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Number" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$nz" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$n$" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$n_" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Natural" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$nA" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Natural" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$nB" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Boolean" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$nC" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Boolean" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$nD" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::String" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$nE" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::String" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$nF" role="3Z9vGx">
-        <property role="3Z0PrK" value="VectorValues::NumericalVectorValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$nG" role="7Q8KG">
           <property role="1Bo4sf" value="VectorValues::NumericalVectorValue" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$nH" role="3Z9vGx">
-        <property role="3Z0PrK" value="VectorValues::ThreeVectorValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$nI" role="7Q8KG">
           <property role="1Bo4sf" value="VectorValues::ThreeVectorValue" />
@@ -69052,7 +68870,6 @@
         <property role="3HG_t5" value="This package package defines calculations for the construction of and computations on ScalarQuantityValues." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$p4" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$p5" role="7Q8KG">
@@ -69060,7 +68877,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$p6" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::ScalarQuantityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$p7" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::ScalarQuantityValue" />
@@ -69069,7 +68885,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$p8" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences::ScalarMeasurementReference" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$p9" role="7Q8KG">
           <property role="1Bo4sf" value="MeasurementReferences::ScalarMeasurementReference" />
@@ -69078,7 +68893,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$pa" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences::DimensionOneValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$pb" role="7Q8KG">
           <property role="1Bo4sf" value="MeasurementReferences::DimensionOneValue" />
@@ -70050,7 +69864,6 @@
         <property role="3HG_t5" value="International System of (Measurement) Units -- Système International d'Unités (SI), as defined in ISO/IEC 80000&#10;&#10;Note 1: In accordance with ISO/IEC 80000 en-GB spelling is used for the names and definitions of the units.&#10;Note 2: This is a representative but not yet complete list of measurement units." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$u8" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$u9" role="7Q8KG">
@@ -70059,7 +69872,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$ua" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQ" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5$ub" role="7Q8KG">
@@ -70068,7 +69880,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$uc" role="3Z9vGx">
-        <property role="3Z0PrK" value="SIPrefixes" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5$ud" role="7Q8KG">
@@ -73602,7 +73413,6 @@
         <property role="3HG_t5" value="Definition of SI unit prefixes as specified in ISO/IEC 80000-1" />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Jx" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$Jy" role="7Q8KG">
@@ -74498,21 +74308,18 @@
         <property role="3HG_t5" value="This package package defines calculations for the construction of and computations on TensorQuantityValues." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Os" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Boolean" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$Ot" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Boolean" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Ou" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Number" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$Ov" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Number" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Ow" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::ScalarQuantityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$Ox" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::ScalarQuantityValue" />
@@ -74521,7 +74328,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Oy" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::VectorQuantityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$Oz" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::VectorQuantityValue" />
@@ -74530,7 +74336,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$O$" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::TensorQuantityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$O_" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::TensorQuantityValue" />
@@ -74539,7 +74344,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$OA" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences::TensorMeasurementReference" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$OB" role="7Q8KG">
           <property role="1Bo4sf" value="MeasurementReferences::TensorMeasurementReference" />
@@ -74548,7 +74352,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$OC" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences::CoordinateTransformation" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$OD" role="7Q8KG">
           <property role="1Bo4sf" value="MeasurementReferences::CoordinateTransformation" />
@@ -75022,42 +74825,36 @@
         <property role="3HG_t5" value="This package specifies concepts to support time-related quantities and metrology, beyond&#10;the quantities duration and time as defined in [ISO 80000-3]. Representations of the&#10;Gregorian calendar date and time of day as specified by the [ISO 8601-1] standard are used." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$R6" role="3Z9vGx">
-        <property role="3Z0PrK" value="Occurrences::Occurrence" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$R7" role="7Q8KG">
           <property role="1Bo4sf" value="Occurrences::Occurrence" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$R8" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Real" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$R9" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Real" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Ra" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Integer" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$Rb" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Integer" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Rc" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Natural" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$Rd" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Natural" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Re" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::String" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$Rf" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::String" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Rg" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::ScalarQuantityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$Rh" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::ScalarQuantityValue" />
@@ -75066,7 +74863,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Ri" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::scalarQuantities" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$Rj" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::scalarQuantities" />
@@ -75075,7 +74871,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Rk" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$Rl" role="7Q8KG">
@@ -75084,7 +74879,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Rm" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase::DurationValue" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5$Rn" role="7Q8KG">
           <property role="1Bo4sf" value="ISQBase::DurationValue" />
@@ -75093,7 +74887,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Ro" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase::DurationUnit" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5$Rp" role="7Q8KG">
           <property role="1Bo4sf" value="ISQBase::DurationUnit" />
@@ -75102,7 +74895,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Rq" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQBase::duration" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5$Rr" role="7Q8KG">
           <property role="1Bo4sf" value="ISQBase::duration" />
@@ -75111,7 +74903,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Rs" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::TimeValue" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5$Rt" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::TimeValue" />
@@ -75120,7 +74911,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Ru" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::TimeUnit" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5$Rv" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::TimeUnit" />
@@ -75129,7 +74919,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$Rw" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQSpaceTime::time" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5$Rx" role="7Q8KG">
           <property role="1Bo4sf" value="ISQSpaceTime::time" />
@@ -75734,7 +75523,6 @@
         <property role="3HG_t5" value="Measurement unit declarations generated from NIST SP811 Appendix B&#10;&#10;See https://www.nist.gov/pml/special-publication-811/nist-guide-si-appendix-b-conversion-factors/nist-guide-si-appendix-b8" />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$U$" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$U_" role="7Q8KG">
@@ -75743,7 +75531,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$UA" role="3Z9vGx">
-        <property role="3Z0PrK" value="ISQ" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5$UB" role="7Q8KG">
@@ -75752,7 +75539,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5$UC" role="3Z9vGx">
-        <property role="3Z0PrK" value="SI" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5$UD" role="7Q8KG">
@@ -80249,21 +80035,18 @@
         <property role="3HG_t5" value="This package package defines calculations for the construction of and computations on VectorQuantityValues." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_iw" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Boolean" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_ix" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Boolean" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_iy" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Number" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_iz" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Number" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_i$" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::ScalarQuantityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_i_" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::ScalarQuantityValue" />
@@ -80272,7 +80055,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_iA" role="3Z9vGx">
-        <property role="3Z0PrK" value="Quantities::VectorQuantityValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_iB" role="7Q8KG">
           <property role="1Bo4sf" value="Quantities::VectorQuantityValue" />
@@ -80281,7 +80063,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_iC" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences::VectorMeasurementReference" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_iD" role="7Q8KG">
           <property role="1Bo4sf" value="MeasurementReferences::VectorMeasurementReference" />
@@ -80290,7 +80071,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_iE" role="3Z9vGx">
-        <property role="3Z0PrK" value="MeasurementReferences::CoordinateTransformation" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_iF" role="7Q8KG">
           <property role="1Bo4sf" value="MeasurementReferences::CoordinateTransformation" />
@@ -80908,14 +80688,12 @@
         <property role="3HG_t5" value="This package provides a library model for derivation connections between requirements." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_lV" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::excludes" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_lW" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::excludes" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_lX" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions::allTrue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_lY" role="7Q8KG">
           <property role="1Bo4sf" value="ControlFunctions::allTrue" />
@@ -81029,7 +80807,6 @@
         <property role="3HG_t5" value="This package provides language-extension metadata for modeling requirement derivation." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_mu" role="3Z9vGx">
-        <property role="3Z0PrK" value="DerivationConnections" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5_mv" role="7Q8KG">
@@ -81038,7 +80815,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_mw" role="3Z9vGx">
-        <property role="3Z0PrK" value="Metaobjects::SemanticMetadata" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_mx" role="7Q8KG">
           <property role="1Bo4sf" value="Metaobjects::SemanticMetadata" />
@@ -81142,161 +80918,138 @@
         <property role="3HG_t5" value="This package defines the base types for actions and related behavioral elements in the&#10;SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_n3" role="3Z9vGx">
-        <property role="3Z0PrK" value="Base::Anything" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_n4" role="7Q8KG">
           <property role="1Bo4sf" value="Base::Anything" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_n5" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Positive" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_n6" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Positive" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_n7" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Natural" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_n8" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Natural" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_n9" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::size" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_na" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::size" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nb" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::isEmpty" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nc" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::isEmpty" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nd" role="3Z9vGx">
-        <property role="3Z0PrK" value="Occurrences::Occurrence" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_ne" role="7Q8KG">
           <property role="1Bo4sf" value="Occurrences::Occurrence" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nf" role="3Z9vGx">
-        <property role="3Z0PrK" value="Occurrences::HappensWhile" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_ng" role="7Q8KG">
           <property role="1Bo4sf" value="Occurrences::HappensWhile" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nh" role="3Z9vGx">
-        <property role="3Z0PrK" value="Performances::Performance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_ni" role="7Q8KG">
           <property role="1Bo4sf" value="Performances::Performance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nj" role="3Z9vGx">
-        <property role="3Z0PrK" value="Performances::performances" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nk" role="7Q8KG">
           <property role="1Bo4sf" value="Performances::performances" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nl" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::SendPerformance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nm" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::SendPerformance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nn" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::sendPerformances" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_no" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::sendPerformances" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_np" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::AcceptPerformance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nq" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::AcceptPerformance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nr" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::acceptPerformances" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_ns" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::acceptPerformances" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nt" role="3Z9vGx">
-        <property role="3Z0PrK" value="FeatureReferencingPerformances::FeatureWritePerformance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nu" role="7Q8KG">
           <property role="1Bo4sf" value="FeatureReferencingPerformances::FeatureWritePerformance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nv" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlPerformances::MergePerformance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nw" role="7Q8KG">
           <property role="1Bo4sf" value="ControlPerformances::MergePerformance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nx" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlPerformances::DecisionPerformance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_ny" role="7Q8KG">
           <property role="1Bo4sf" value="ControlPerformances::DecisionPerformance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nz" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlPerformances::IfThenPerformance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_n$" role="7Q8KG">
           <property role="1Bo4sf" value="ControlPerformances::IfThenPerformance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_n_" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlPerformances::IfThenElsePerformance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nA" role="7Q8KG">
           <property role="1Bo4sf" value="ControlPerformances::IfThenElsePerformance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nB" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlPerformances::LoopPerformance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nC" role="7Q8KG">
           <property role="1Bo4sf" value="ControlPerformances::LoopPerformance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nD" role="3Z9vGx">
-        <property role="3Z0PrK" value="TransitionPerformances::TransitionPerformance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nE" role="7Q8KG">
           <property role="1Bo4sf" value="TransitionPerformances::TransitionPerformance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nF" role="3Z9vGx">
-        <property role="3Z0PrK" value="TransitionPerformances::NonStateTransitionPerformance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nG" role="7Q8KG">
           <property role="1Bo4sf" value="TransitionPerformances::NonStateTransitionPerformance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nH" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::MessageTransfer" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nI" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::MessageTransfer" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nJ" role="3Z9vGx">
-        <property role="3Z0PrK" value="Flows::MessageAction" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nK" role="7Q8KG">
           <property role="1Bo4sf" value="Flows::MessageAction" />
@@ -81305,7 +81058,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_nL" role="3Z9vGx">
-        <property role="3Z0PrK" value="OccurrenceFunctions::destroy" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_nM" role="7Q8KG">
           <property role="1Bo4sf" value="OccurrenceFunctions::destroy" />
@@ -82631,14 +82383,12 @@
         <property role="3HG_t5" value="This package defines the base types for allocations and related structural elements&#10;in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_ub" role="3Z9vGx">
-        <property role="3Z0PrK" value="Base::Anything" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_uc" role="7Q8KG">
           <property role="1Bo4sf" value="Base::Anything" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_ud" role="3Z9vGx">
-        <property role="3Z0PrK" value="Connections" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_ue" role="7Q8KG">
@@ -82708,21 +82458,18 @@
         <property role="3HG_t5" value="This package defines the base types for analysis cases and related behavioral elements&#10;in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_uw" role="3Z9vGx">
-        <property role="3Z0PrK" value="Performances::Evaluation" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_ux" role="7Q8KG">
           <property role="1Bo4sf" value="Performances::Evaluation" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_uy" role="3Z9vGx">
-        <property role="3Z0PrK" value="Performances::evaluations" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_uz" role="7Q8KG">
           <property role="1Bo4sf" value="Performances::evaluations" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_u$" role="3Z9vGx">
-        <property role="3Z0PrK" value="Calculations::Calculation" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_u_" role="7Q8KG">
           <property role="1Bo4sf" value="Calculations::Calculation" />
@@ -82731,7 +82478,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_uA" role="3Z9vGx">
-        <property role="3Z0PrK" value="Cases::Case" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_uB" role="7Q8KG">
           <property role="1Bo4sf" value="Cases::Case" />
@@ -82740,7 +82486,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_uC" role="3Z9vGx">
-        <property role="3Z0PrK" value="Cases::cases" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_uD" role="7Q8KG">
           <property role="1Bo4sf" value="Cases::cases" />
@@ -82830,14 +82575,12 @@
         <property role="3HG_t5" value="This package defines the base types for attributes and related structural elements&#10;in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_v0" role="3Z9vGx">
-        <property role="3Z0PrK" value="Base::DataValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_v1" role="7Q8KG">
           <property role="1Bo4sf" value="Base::DataValue" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_v2" role="3Z9vGx">
-        <property role="3Z0PrK" value="Base::dataValues" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_v3" role="7Q8KG">
           <property role="1Bo4sf" value="Base::dataValues" />
@@ -82873,21 +82616,18 @@
         <property role="3HG_t5" value="This package defines the base types for calculations and related behavioral elements in the&#10;SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_vd" role="3Z9vGx">
-        <property role="3Z0PrK" value="Performances::Evaluation" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_ve" role="7Q8KG">
           <property role="1Bo4sf" value="Performances::Evaluation" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_vf" role="3Z9vGx">
-        <property role="3Z0PrK" value="Performances::evaluations" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_vg" role="7Q8KG">
           <property role="1Bo4sf" value="Performances::evaluations" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_vh" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::Action" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_vi" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::Action" />
@@ -82896,7 +82636,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_vj" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::actions" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_vk" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::actions" />
@@ -82983,14 +82722,12 @@
         <property role="3HG_t5" value="This package defines the base types for cases and related behavioral elements&#10;in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_vF" role="3Z9vGx">
-        <property role="3Z0PrK" value="Base::Anything" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_vG" role="7Q8KG">
           <property role="1Bo4sf" value="Base::Anything" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_vH" role="3Z9vGx">
-        <property role="3Z0PrK" value="Requirements::RequirementCheck" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_vI" role="7Q8KG">
           <property role="1Bo4sf" value="Requirements::RequirementCheck" />
@@ -82999,7 +82736,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_vJ" role="3Z9vGx">
-        <property role="3Z0PrK" value="Calculations::Calculation" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_vK" role="7Q8KG">
           <property role="1Bo4sf" value="Calculations::Calculation" />
@@ -83008,7 +82744,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_vL" role="3Z9vGx">
-        <property role="3Z0PrK" value="Calculations::calculations" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_vM" role="7Q8KG">
           <property role="1Bo4sf" value="Calculations::calculations" />
@@ -83017,7 +82752,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_vN" role="3Z9vGx">
-        <property role="3Z0PrK" value="Parts::Part" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_vO" role="7Q8KG">
           <property role="1Bo4sf" value="Parts::Part" />
@@ -83026,7 +82760,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_vP" role="3Z9vGx">
-        <property role="3Z0PrK" value="Parts::parts" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_vQ" role="7Q8KG">
           <property role="1Bo4sf" value="Parts::parts" />
@@ -83172,105 +82905,90 @@
         <property role="3HG_t5" value="This package defines the base types for connections and related structural elements&#10;in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wt" role="3Z9vGx">
-        <property role="3Z0PrK" value="Base::Anything" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wu" role="7Q8KG">
           <property role="1Bo4sf" value="Base::Anything" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wv" role="3Z9vGx">
-        <property role="3Z0PrK" value="Occurrences::Occurrence" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_ww" role="7Q8KG">
           <property role="1Bo4sf" value="Occurrences::Occurrence" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wx" role="3Z9vGx">
-        <property role="3Z0PrK" value="Occurrences::HappensDuring" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wy" role="7Q8KG">
           <property role="1Bo4sf" value="Occurrences::HappensDuring" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wz" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::LinkObject" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_w$" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::LinkObject" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_w_" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::linkObjects" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wA" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::linkObjects" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wB" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::BinaryLinkObject" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wC" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::BinaryLinkObject" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wD" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::binaryLinkObjects" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wE" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::binaryLinkObjects" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wF" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::Transfer" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wG" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::Transfer" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wH" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::transfers" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wI" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::transfers" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wJ" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::FlowTransfer" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wK" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::FlowTransfer" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wL" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::flowTransfers" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wM" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::flowTransfers" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wN" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::FlowTransferBefore" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wO" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::FlowTransferBefore" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wP" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::flowTransfersBefore" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wQ" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::flowTransfersBefore" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wR" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Natural" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wS" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Natural" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wT" role="3Z9vGx">
-        <property role="3Z0PrK" value="Parts::Part" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wU" role="7Q8KG">
           <property role="1Bo4sf" value="Parts::Part" />
@@ -83279,7 +82997,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wV" role="3Z9vGx">
-        <property role="3Z0PrK" value="Parts::parts" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wW" role="7Q8KG">
           <property role="1Bo4sf" value="Parts::parts" />
@@ -83288,7 +83005,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wX" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::Action" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_wY" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::Action" />
@@ -83297,7 +83013,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_wZ" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::actions" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_x0" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::actions" />
@@ -83412,28 +83127,24 @@
         <property role="3HG_t5" value="This package defines the base types for constraints and related elements in the&#10;SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_xu" role="3Z9vGx">
-        <property role="3Z0PrK" value="Performances::BooleanEvaluation" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_xv" role="7Q8KG">
           <property role="1Bo4sf" value="Performances::BooleanEvaluation" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_xw" role="3Z9vGx">
-        <property role="3Z0PrK" value="Performances::booleanEvaluations" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_xx" role="7Q8KG">
           <property role="1Bo4sf" value="Performances::booleanEvaluations" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_xy" role="3Z9vGx">
-        <property role="3Z0PrK" value="Performances::trueEvaluations" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_xz" role="7Q8KG">
           <property role="1Bo4sf" value="Performances::trueEvaluations" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_x$" role="3Z9vGx">
-        <property role="3Z0PrK" value="Performances::falseEvaluations" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_x_" role="7Q8KG">
           <property role="1Bo4sf" value="Performances::falseEvaluations" />
@@ -83519,77 +83230,66 @@
         <property role="3HG_t5" value="This package defines the base types for flows and related behavioral elements&#10;in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_xW" role="3Z9vGx">
-        <property role="3Z0PrK" value="Links::Link" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_xX" role="7Q8KG">
           <property role="1Bo4sf" value="Links::Link" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_xY" role="3Z9vGx">
-        <property role="3Z0PrK" value="Occurrences::Occurrence" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_xZ" role="7Q8KG">
           <property role="1Bo4sf" value="Occurrences::Occurrence" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_y0" role="3Z9vGx">
-        <property role="3Z0PrK" value="Occurrences::HappensDuring" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_y1" role="7Q8KG">
           <property role="1Bo4sf" value="Occurrences::HappensDuring" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_y2" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::binaryLinkObjects" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_y3" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::binaryLinkObjects" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_y4" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::Transfer" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_y5" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::Transfer" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_y6" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::transfers" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_y7" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::transfers" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_y8" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::FlowTransfer" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_y9" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::FlowTransfer" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_ya" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::flowTransfers" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_yb" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::flowTransfers" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_yc" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::FlowTransferBefore" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_yd" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::FlowTransferBefore" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_ye" role="3Z9vGx">
-        <property role="3Z0PrK" value="Transfers::flowTransfersBefore" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_yf" role="7Q8KG">
           <property role="1Bo4sf" value="Transfers::flowTransfersBefore" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_yg" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::Action" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_yh" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::Action" />
@@ -83598,7 +83298,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_yi" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::actions" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_yj" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::actions" />
@@ -83607,7 +83306,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_yk" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Natural" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_yl" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Natural" />
@@ -84057,7 +83755,6 @@
         <property role="3HG_t5" value="This package defines the base types for interfaces and related structural elements in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_$r" role="3Z9vGx">
-        <property role="3Z0PrK" value="Connections::Connection" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_$s" role="7Q8KG">
           <property role="1Bo4sf" value="Connections::Connection" />
@@ -84066,7 +83763,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_$t" role="3Z9vGx">
-        <property role="3Z0PrK" value="Connections::connections" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_$u" role="7Q8KG">
           <property role="1Bo4sf" value="Connections::connections" />
@@ -84075,7 +83771,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_$v" role="3Z9vGx">
-        <property role="3Z0PrK" value="Connections::BinaryConnection" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_$w" role="7Q8KG">
           <property role="1Bo4sf" value="Connections::BinaryConnection" />
@@ -84084,7 +83779,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_$x" role="3Z9vGx">
-        <property role="3Z0PrK" value="Connections::binaryConnections" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_$y" role="7Q8KG">
           <property role="1Bo4sf" value="Connections::binaryConnections" />
@@ -84093,7 +83787,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_$z" role="3Z9vGx">
-        <property role="3Z0PrK" value="Ports::Port" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_$$" role="7Q8KG">
           <property role="1Bo4sf" value="Ports::Port" />
@@ -84102,35 +83795,30 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_$_" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Natural" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_$A" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Natural" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_$B" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::size" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_$C" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::size" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_$D" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::excludingAt" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_$E" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::excludingAt" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_$F" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions::selectOne" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_$G" role="7Q8KG">
           <property role="1Bo4sf" value="ControlFunctions::selectOne" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_$H" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::notEmpty" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_$I" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::notEmpty" />
@@ -84348,21 +84036,18 @@
         <property role="3HG_t5" value="This package defines the base types for items and related structural elements in the&#10;SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5__C" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::Object" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5__D" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::Object" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5__E" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::objects" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5__F" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::objects" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5__G" role="3Z9vGx">
-        <property role="3Z0PrK" value="Parts::Part" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5__H" role="7Q8KG">
           <property role="1Bo4sf" value="Parts::Part" />
@@ -84371,7 +84056,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5__I" role="3Z9vGx">
-        <property role="3Z0PrK" value="Parts::parts" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5__J" role="7Q8KG">
           <property role="1Bo4sf" value="Parts::parts" />
@@ -84380,28 +84064,24 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5__K" role="3Z9vGx">
-        <property role="3Z0PrK" value="Occurrences::HappensWhile" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5__L" role="7Q8KG">
           <property role="1Bo4sf" value="Occurrences::HappensWhile" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5__M" role="3Z9vGx">
-        <property role="3Z0PrK" value="Occurrences::JustOutsideOf" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5__N" role="7Q8KG">
           <property role="1Bo4sf" value="Occurrences::JustOutsideOf" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5__O" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::StructuredSpaceObject" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5__P" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::StructuredSpaceObject" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5__Q" role="3Z9vGx">
-        <property role="3Z0PrK" value="Constraints::ConstraintCheck" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5__R" role="7Q8KG">
           <property role="1Bo4sf" value="Constraints::ConstraintCheck" />
@@ -84410,7 +84090,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5__S" role="3Z9vGx">
-        <property role="3Z0PrK" value="Constraints::constraintChecks" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5__T" role="7Q8KG">
           <property role="1Bo4sf" value="Constraints::constraintChecks" />
@@ -84419,42 +84098,36 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5__U" role="3Z9vGx">
-        <property role="3Z0PrK" value="CollectionFunctions::contains" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5__V" role="7Q8KG">
           <property role="1Bo4sf" value="CollectionFunctions::contains" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5__W" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::isEmpty" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5__X" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::isEmpty" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5__Y" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::notEmpty" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5__Z" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::notEmpty" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_A0" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::includes" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_A1" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::includes" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_A2" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::union" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_A3" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::union" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_A4" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions::forAll" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_A5" role="7Q8KG">
           <property role="1Bo4sf" value="ControlFunctions::forAll" />
@@ -84810,21 +84483,18 @@
         <property role="3HG_t5" value="This package defines the base types for metadata definitions and related&#10;metadata annotations in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_BK" role="3Z9vGx">
-        <property role="3Z0PrK" value="Metaobjects::Metaobject" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_BL" role="7Q8KG">
           <property role="1Bo4sf" value="Metaobjects::Metaobject" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_BM" role="3Z9vGx">
-        <property role="3Z0PrK" value="Metaobjects::metaobjects" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_BN" role="7Q8KG">
           <property role="1Bo4sf" value="Metaobjects::metaobjects" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_BO" role="3Z9vGx">
-        <property role="3Z0PrK" value="Items::Item" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_BP" role="7Q8KG">
           <property role="1Bo4sf" value="Items::Item" />
@@ -84833,7 +84503,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_BQ" role="3Z9vGx">
-        <property role="3Z0PrK" value="Items::items" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_BR" role="7Q8KG">
           <property role="1Bo4sf" value="Items::items" />
@@ -84902,21 +84571,18 @@
         <property role="3HG_t5" value="This package defines the base types for parts and related structural elements in the&#10;SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_C9" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::Object" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Ca" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::Object" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Cb" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::objects" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Cc" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::objects" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Cd" role="3Z9vGx">
-        <property role="3Z0PrK" value="Items::Item" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Ce" role="7Q8KG">
           <property role="1Bo4sf" value="Items::Item" />
@@ -84925,7 +84591,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Cf" role="3Z9vGx">
-        <property role="3Z0PrK" value="Items::items" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Cg" role="7Q8KG">
           <property role="1Bo4sf" value="Items::items" />
@@ -84934,7 +84599,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Ch" role="3Z9vGx">
-        <property role="3Z0PrK" value="Ports::Port" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Ci" role="7Q8KG">
           <property role="1Bo4sf" value="Ports::Port" />
@@ -84943,7 +84607,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Cj" role="3Z9vGx">
-        <property role="3Z0PrK" value="Ports::ports" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Ck" role="7Q8KG">
           <property role="1Bo4sf" value="Ports::ports" />
@@ -84952,7 +84615,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Cl" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::Action" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Cm" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::Action" />
@@ -84961,7 +84623,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Cn" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::actions" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Co" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::actions" />
@@ -84970,7 +84631,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Cp" role="3Z9vGx">
-        <property role="3Z0PrK" value="States::StateAction" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Cq" role="7Q8KG">
           <property role="1Bo4sf" value="States::StateAction" />
@@ -84979,7 +84639,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Cr" role="3Z9vGx">
-        <property role="3Z0PrK" value="States::stateActions" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Cs" role="7Q8KG">
           <property role="1Bo4sf" value="States::stateActions" />
@@ -85188,14 +84847,12 @@
         <property role="3HG_t5" value="This package defines the base types for ports and related structural elements&#10;in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Dl" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::Object" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Dm" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::Object" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Dn" role="3Z9vGx">
-        <property role="3Z0PrK" value="Objects::objects" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Do" role="7Q8KG">
           <property role="1Bo4sf" value="Objects::objects" />
@@ -85313,28 +84970,24 @@
         <property role="3HG_t5" value="This package defines the base types for requirements and related elements in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_DS" role="3Z9vGx">
-        <property role="3Z0PrK" value="Base::Anything" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_DT" role="7Q8KG">
           <property role="1Bo4sf" value="Base::Anything" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_DU" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::String" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_DV" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::String" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_DW" role="3Z9vGx">
-        <property role="3Z0PrK" value="ControlFunctions::allTrue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_DX" role="7Q8KG">
           <property role="1Bo4sf" value="ControlFunctions::allTrue" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_DY" role="3Z9vGx">
-        <property role="3Z0PrK" value="Constraints::constraintChecks" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_DZ" role="7Q8KG">
           <property role="1Bo4sf" value="Constraints::constraintChecks" />
@@ -85343,7 +84996,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_E0" role="3Z9vGx">
-        <property role="3Z0PrK" value="Constraints::assertedConstraintChecks" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_E1" role="7Q8KG">
           <property role="1Bo4sf" value="Constraints::assertedConstraintChecks" />
@@ -85352,7 +85004,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_E2" role="3Z9vGx">
-        <property role="3Z0PrK" value="Constraints::negatedConstraintChecks" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_E3" role="7Q8KG">
           <property role="1Bo4sf" value="Constraints::negatedConstraintChecks" />
@@ -85361,7 +85012,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_E4" role="3Z9vGx">
-        <property role="3Z0PrK" value="Parts::Part" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_E5" role="7Q8KG">
           <property role="1Bo4sf" value="Parts::Part" />
@@ -85370,7 +85020,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_E6" role="3Z9vGx">
-        <property role="3Z0PrK" value="Parts::parts" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_E7" role="7Q8KG">
           <property role="1Bo4sf" value="Parts::parts" />
@@ -85379,7 +85028,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_E8" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::Action" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_E9" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::Action" />
@@ -85388,7 +85036,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Ea" role="3Z9vGx">
-        <property role="3Z0PrK" value="Interfaces::Interface" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Eb" role="7Q8KG">
           <property role="1Bo4sf" value="Interfaces::Interface" />
@@ -85397,7 +85044,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Ec" role="3Z9vGx">
-        <property role="3Z0PrK" value="Attributes::AttributeValue" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Ed" role="7Q8KG">
           <property role="1Bo4sf" value="Attributes::AttributeValue" />
@@ -85758,7 +85404,6 @@
         <property role="3HG_t5" value="This package defines the standard view definitions for the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_FO" role="3Z9vGx">
-        <property role="3Z0PrK" value="SysML" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5_FP" role="7Q8KG">
@@ -85842,28 +85487,24 @@
         <property role="3HG_t5" value="This package defines the base types for states and related behavioral elements in the&#10;SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Gb" role="3Z9vGx">
-        <property role="3Z0PrK" value="Occurrences::Occurrence" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Gc" role="7Q8KG">
           <property role="1Bo4sf" value="Occurrences::Occurrence" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Gd" role="3Z9vGx">
-        <property role="3Z0PrK" value="StatePerformances::StatePerformance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Ge" role="7Q8KG">
           <property role="1Bo4sf" value="StatePerformances::StatePerformance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Gf" role="3Z9vGx">
-        <property role="3Z0PrK" value="StatePerformances::StateTransitionPerformance" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Gg" role="7Q8KG">
           <property role="1Bo4sf" value="StatePerformances::StateTransitionPerformance" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Gh" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::Action" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Gi" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::Action" />
@@ -85872,7 +85513,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Gj" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::TransitionAction" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Gk" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::TransitionAction" />
@@ -85881,7 +85521,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Gl" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::transitionActions" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Gm" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::transitionActions" />
@@ -85890,7 +85529,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Gn" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::AcceptAction" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Go" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::AcceptAction" />
@@ -85899,7 +85537,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Gp" role="3Z9vGx">
-        <property role="3Z0PrK" value="Actions::actions" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Gq" role="7Q8KG">
           <property role="1Bo4sf" value="Actions::actions" />
@@ -85908,14 +85545,12 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Gr" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::notEmpty" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Gs" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::notEmpty" />
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_Gt" role="3Z9vGx">
-        <property role="3Z0PrK" value="SequenceFunctions::size" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_Gu" role="7Q8KG">
           <property role="1Bo4sf" value="SequenceFunctions::size" />
@@ -86230,7 +85865,6 @@
         <property role="3HG_t5" value="This package contains a reflective SysML model of the SysML abstract syntax." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_HY" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5_HZ" role="7Q8KG">
@@ -86238,7 +85872,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5_I0" role="3Z9vGx">
-        <property role="3Z0PrK" value="Systems" />
         <property role="3d8W_J" value="true" />
         <property role="3815tZ" value="6mYk_gjY8wN/public" />
         <node concept="1Bo4sc" id="4QEfSMD5_I1" role="7Q8KG">
@@ -86249,7 +85882,6 @@
       <node concept="3Z9vzX" id="4QEfSMD5_I2" role="3Z9vGx">
         <property role="TrG5h" value="Systems" />
         <node concept="3Z0THl" id="4QEfSMD5_I3" role="3Z9vGx">
-          <property role="3Z0PrK" value="KerML::Kernel" />
           <property role="3d8W_J" value="true" />
           <property role="3815tZ" value="6mYk_gjY8wN/public" />
           <node concept="1Bo4sc" id="4QEfSMD5_I4" role="7Q8KG">
@@ -91079,7 +90711,6 @@
         <property role="3HG_t5" value="This package defines the base types for use cases and related behavioral elements in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5A1W" role="3Z9vGx">
-        <property role="3Z0PrK" value="Cases::Case" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5A1X" role="7Q8KG">
           <property role="1Bo4sf" value="Cases::Case" />
@@ -91088,7 +90719,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5A1Y" role="3Z9vGx">
-        <property role="3Z0PrK" value="Cases::cases" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5A1Z" role="7Q8KG">
           <property role="1Bo4sf" value="Cases::cases" />
@@ -91232,7 +90862,6 @@
         <property role="3HG_t5" value="This package defines the base types for verification cases and related behavioral elements&#10;in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5A2A" role="3Z9vGx">
-        <property role="3Z0PrK" value="Cases::Case" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5A2B" role="7Q8KG">
           <property role="1Bo4sf" value="Cases::Case" />
@@ -91241,7 +90870,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5A2C" role="3Z9vGx">
-        <property role="3Z0PrK" value="Cases::cases" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5A2D" role="7Q8KG">
           <property role="1Bo4sf" value="Cases::cases" />
@@ -91250,7 +90878,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5A2E" role="3Z9vGx">
-        <property role="3Z0PrK" value="Requirements::RequirementCheck" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5A2F" role="7Q8KG">
           <property role="1Bo4sf" value="Requirements::RequirementCheck" />
@@ -91259,7 +90886,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5A2G" role="3Z9vGx">
-        <property role="3Z0PrK" value="ScalarValues::Boolean" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5A2H" role="7Q8KG">
           <property role="1Bo4sf" value="ScalarValues::Boolean" />
@@ -91481,7 +91107,6 @@
         <property role="3HG_t5" value="This package defines the base types for views, viewpoints, renderings and related elements&#10;in the SysML language." />
       </node>
       <node concept="3Z0THl" id="4QEfSMD5A3I" role="3Z9vGx">
-        <property role="3Z0PrK" value="Parts::Part" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5A3J" role="7Q8KG">
           <property role="1Bo4sf" value="Parts::Part" />
@@ -91490,7 +91115,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5A3K" role="3Z9vGx">
-        <property role="3Z0PrK" value="Parts::parts" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5A3L" role="7Q8KG">
           <property role="1Bo4sf" value="Parts::parts" />
@@ -91499,7 +91123,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5A3M" role="3Z9vGx">
-        <property role="3Z0PrK" value="Requirements::RequirementCheck" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5A3N" role="7Q8KG">
           <property role="1Bo4sf" value="Requirements::RequirementCheck" />
@@ -91508,7 +91131,6 @@
         </node>
       </node>
       <node concept="3Z0THl" id="4QEfSMD5A3O" role="3Z9vGx">
-        <property role="3Z0PrK" value="Requirements::requirementChecks" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <node concept="1Bo4sc" id="4QEfSMD5A3P" role="7Q8KG">
           <property role="1Bo4sf" value="Requirements::requirementChecks" />
