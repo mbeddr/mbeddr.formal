@@ -399,7 +399,7 @@
             <node concept="2OqwBi" id="7PctyxUHiT6" role="3uHU7B">
               <node concept="117lpO" id="7PctyxUHiT9" role="2Oq$k0" />
               <node concept="3TrEf2" id="7PctyxUHiTa" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:7PctyxU_fC4" resolve="importedElement" />
+                <ref role="3Tt5mk" to="5rf1:7vLXn5hwLPj" resolve="importedName" />
               </node>
             </node>
             <node concept="10Nm6u" id="7PctyxUHiTb" role="3uHU7w" />
@@ -411,11 +411,11 @@
                   <node concept="2OqwBi" id="7PctyxU_fDK" role="2Oq$k0">
                     <node concept="117lpO" id="7PctyxU_fDN" role="2Oq$k0" />
                     <node concept="3TrEf2" id="7PctyxU_fDO" role="2OqNvi">
-                      <ref role="3Tt5mk" to="5rf1:7PctyxU_fC4" resolve="importedElement" />
+                      <ref role="3Tt5mk" to="5rf1:7vLXn5hwLPj" resolve="importedName" />
                     </node>
                   </node>
-                  <node concept="2qgKlT" id="7PctyxU_fDP" role="2OqNvi">
-                    <ref role="37wK5l" to="5wt7:2YEARL0K0JU" resolve="getEffectiveName" />
+                  <node concept="3zqWPK" id="7vLXn5kZA$x" role="2OqNvi">
+                    <ref role="37wK5l" to="5wt7:7vLXn5kZyN5" resolve="qualifiedText" />
                   </node>
                 </node>
               </node>

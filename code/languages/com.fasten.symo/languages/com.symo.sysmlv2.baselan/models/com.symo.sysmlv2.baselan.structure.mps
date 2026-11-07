@@ -177,11 +177,11 @@
     <node concept="PrWs8" id="fNDJb3A_y6" role="PzmwI">
       <ref role="PrY4T" node="3VmcprQOArC" resolve="ISysMLv2Member" />
     </node>
-    <node concept="1TJgyj" id="7PctyxU_fC4" role="1TKVEi">
-      <property role="IQ2ns" value="9028721269198354948" />
-      <property role="20kJfa" value="importedElement" />
+    <node concept="1TJgyj" id="7vLXn5hwLPj" role="1TKVEi">
+      <property role="IQ2ns" value="8642959026948349267" />
+      <property role="20kJfa" value="importedName" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <ref role="20lvS9" node="6ohPCO1sp61" resolve="SysMLv2IdentifierNameConceptRef" />
+      <ref role="20lvS9" node="7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
     </node>
   </node>
   <node concept="1TIwiD" id="3PUPjB2$P9d">
@@ -2518,6 +2518,41 @@
     <property role="TrG5h" value="ISysMLv2ReturnOwner" />
     <property role="R4oN_" value="element that may own a return parameter or return attribute usage (calculation and case definitions, case usages)" />
     <property role="3GE5qa" value="behavior" />
+  </node>
+  <node concept="1TIwiD" id="7vLXn5hwLPb">
+    <property role="EcuMT" value="8642959026948349259" />
+    <property role="TrG5h" value="SysMLv2QualifiedNameSegment" />
+    <property role="R4oN_" value="One segment of a qualified name: a plain reference to a named element, resolved in the scope narrowed by the previous segment." />
+    <property role="3GE5qa" value="references" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7vLXn5hwLPd" role="1TKVEi">
+      <property role="IQ2ns" value="8642959026948349261" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="7vLXn5hwLPc">
+    <property role="EcuMT" value="8642959026948349260" />
+    <property role="TrG5h" value="SysMLv2QualifiedName" />
+    <property role="R4oN_" value="Qualified name A::B::C: either a chain of reference segments (reified) or a plain text (not reified), never both." />
+    <property role="3GE5qa" value="references" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="7vLXn5hwLPe" role="1TKVEl">
+      <property role="IQ2nx" value="8642959026948349262" />
+      <property role="TrG5h" value="text" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+    <node concept="1TJgyj" id="7vLXn5hwLPf" role="1TKVEi">
+      <property role="IQ2ns" value="8642959026948349263" />
+      <property role="20kJfa" value="segments" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7vLXn5hwLPb" resolve="SysMLv2QualifiedNameSegment" />
+    </node>
+    <node concept="PrWs8" id="7vLXn5hRnX8" role="PzmwI">
+      <ref role="PrY4T" to="tpck:3fifI_xCcJN" resolve="ScopeProvider" />
+    </node>
   </node>
 </model>
 

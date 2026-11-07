@@ -118,6 +118,12 @@
         <property id="717440187291777388" name="withKeyword" index="2uUmlw" />
       </concept>
       <concept id="717440187291777379" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionDefinition" flags="ng" index="2uUmlJ" />
+      <concept id="8642959026948349259" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedNameSegment" flags="ng" index="AsIwU">
+        <reference id="8642959026948349261" name="target" index="AsIwW" />
+      </concept>
+      <concept id="8642959026948349260" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedName" flags="ng" index="AsIwX">
+        <child id="8642959026948349263" name="segments" index="AsIwY" />
+      </concept>
       <concept id="6353433212932081528" name="com.symo.sysmlv2.baselan.structure.SysMLv2AnalysisCaseUsage" flags="ng" index="SPUEw" />
       <concept id="6353433212932081529" name="com.symo.sysmlv2.baselan.structure.SysMLv2VerificationCaseUsage" flags="ng" index="SPUEx" />
       <concept id="6353433212932081530" name="com.symo.sysmlv2.baselan.structure.SysMLv2UseCaseUsage" flags="ng" index="SPUEy" />
@@ -275,7 +281,6 @@
       </concept>
       <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
         <property id="7354895567575683458" name="targetName" index="1Bo4sf" />
-        <reference id="7354895567575683459" name="target" index="1Bo4se" />
       </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
@@ -293,7 +298,7 @@
       <concept id="7406476705817406956" name="com.symo.sysmlv2.baselan.structure.SysMLv2StakeholderUsage" flags="ng" index="3TIFEY" />
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
         <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
-        <child id="9028721269198354948" name="importedElement" index="7Q8KG" />
+        <child id="8642959026948349267" name="importedName" index="AsIwy" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
@@ -540,8 +545,10 @@
     <property role="TrG5h" value="_030_package_level_usages" />
     <node concept="3Z0THl" id="7PctyxUKO$9" role="2h0jOs">
       <property role="3d8W_J" value="true" />
-      <node concept="1Bo4sc" id="7PctyxUKO$b" role="7Q8KG">
-        <ref role="1Bo4se" node="fNDJb5UJPh" resolve="Fleet" />
+      <node concept="AsIwX" id="7vLXn5l0cGF" role="AsIwy">
+        <node concept="AsIwU" id="7vLXn5l0cGG" role="AsIwY">
+          <ref role="AsIwW" node="fNDJb5UJPh" resolve="Fleet" />
+        </node>
       </node>
     </node>
     <node concept="3Z9vzX" id="fNDJb5UJPh" role="2h0jOs">

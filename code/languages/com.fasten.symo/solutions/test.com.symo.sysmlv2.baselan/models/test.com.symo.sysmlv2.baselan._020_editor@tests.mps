@@ -92,6 +92,9 @@
         <child id="717440187291777386" name="chain" index="2uUmlA" />
       </concept>
       <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE" />
+      <concept id="8642959026948349260" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedName" flags="ng" index="AsIwX">
+        <property id="8642959026948349262" name="text" index="AsIwZ" />
+      </concept>
       <concept id="7267068243654035155" name="com.symo.sysmlv2.baselan.structure.SysMLv2LibraryPackage" flags="ng" index="31n9r3">
         <property id="7267068243654035156" name="isStandard" index="31n9r4" />
       </concept>
@@ -147,15 +150,12 @@
       <concept id="6214786105876472911" name="com.symo.sysmlv2.baselan.structure.SysMLv2LiteralExpression" flags="ng" index="1_WVX6">
         <property id="6214786105876472933" name="value" index="1_WVXG" />
       </concept>
-      <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
-        <property id="7354895567575683458" name="targetName" index="1Bo4sf" />
-      </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
         <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
-        <child id="9028721269198354948" name="importedElement" index="7Q8KG" />
+        <child id="8642959026948349267" name="importedName" index="AsIwy" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
@@ -2494,8 +2494,8 @@
             <property role="p6zMs" value="0" />
             <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
           </node>
-          <node concept="1Bo4sc" id="7vLXn5bSmsN" role="7Q8KG">
-            <property role="1Bo4sf" value="A::B" />
+          <node concept="AsIwX" id="7vLXn5l0cUI" role="AsIwy">
+            <property role="AsIwZ" value="A::B" />
           </node>
         </node>
       </node>
@@ -2505,8 +2505,8 @@
         <property role="TrG5h" value="demo" />
         <node concept="3Z0THl" id="fNDJb3IoVg" role="2h0jOs">
           <property role="3815tZ" value="6jJ9KHVIUlW/private" />
-          <node concept="1Bo4sc" id="7vLXn5bSmsO" role="7Q8KG">
-            <property role="1Bo4sf" value="A::B" />
+          <node concept="AsIwX" id="7vLXn5l0cUK" role="AsIwy">
+            <property role="AsIwZ" value="A::B" />
           </node>
         </node>
       </node>
@@ -2532,8 +2532,8 @@
             <property role="p6zMs" value="0" />
             <property role="TrG5h" value="&lt;no name&gt;[AnonymousCellAnnotation]" />
           </node>
-          <node concept="1Bo4sc" id="7vLXn5bSmsP" role="7Q8KG">
-            <property role="1Bo4sf" value="A::B" />
+          <node concept="AsIwX" id="7vLXn5l0cUM" role="AsIwy">
+            <property role="AsIwZ" value="A::B" />
           </node>
         </node>
       </node>
@@ -2542,8 +2542,8 @@
       <node concept="2h0jOr" id="6jpO12Efs7k" role="1qenE9">
         <property role="TrG5h" value="demo" />
         <node concept="3Z0THl" id="6jpO12Efs7l" role="2h0jOs">
-          <node concept="1Bo4sc" id="7vLXn5bSmsQ" role="7Q8KG">
-            <property role="1Bo4sf" value="A::B" />
+          <node concept="AsIwX" id="7vLXn5l0cUO" role="AsIwy">
+            <property role="AsIwZ" value="A::B" />
           </node>
         </node>
       </node>

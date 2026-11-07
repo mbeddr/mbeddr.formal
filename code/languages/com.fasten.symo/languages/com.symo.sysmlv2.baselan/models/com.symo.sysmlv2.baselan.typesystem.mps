@@ -158,7 +158,9 @@
       </concept>
     </language>
     <language id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections">
+      <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1165595910856" name="jetbrains.mps.baseLanguage.collections.structure.GetLastOperation" flags="nn" index="1yVyf7" />
+      <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
     </language>
   </registry>
   <node concept="18kY7G" id="3MUZSeGypnN">
@@ -875,6 +877,88 @@
       <node concept="3Tm1VV" id="3MUZSeIu66B" role="1B3o_S" />
     </node>
     <node concept="3Tm1VV" id="3MUZSeIu66C" role="1B3o_S" />
+  </node>
+  <node concept="18kY7G" id="7vLXn5ie3ZG">
+    <property role="TrG5h" value="check_SysMLv2QualifiedName_textXorSegments" />
+    <property role="3GE5qa" value="references" />
+    <node concept="3clFbS" id="7vLXn5ie3ZH" role="18ibNy">
+      <node concept="3clFbJ" id="7vLXn5ie3ZI" role="3cqZAp">
+        <node concept="1Wc70l" id="7vLXn5ie3ZJ" role="3clFbw">
+          <node concept="3y3z36" id="7vLXn5ie3ZK" role="3uHU7B">
+            <node concept="2OqwBi" id="7vLXn5ie3ZL" role="3uHU7B">
+              <node concept="1YBJjd" id="7vLXn5ie3ZM" role="2Oq$k0">
+                <ref role="1YBMHb" node="7vLXn5ie40e" resolve="qn" />
+              </node>
+              <node concept="3TrcHB" id="7vLXn5ie3ZN" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:7vLXn5hwLPe" resolve="text" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="7vLXn5ie3ZO" role="3uHU7w" />
+          </node>
+          <node concept="2OqwBi" id="7vLXn5ie3ZP" role="3uHU7w">
+            <node concept="2OqwBi" id="7vLXn5ie3ZQ" role="2Oq$k0">
+              <node concept="1YBJjd" id="7vLXn5ie3ZR" role="2Oq$k0">
+                <ref role="1YBMHb" node="7vLXn5ie40e" resolve="qn" />
+              </node>
+              <node concept="3Tsc0h" id="7vLXn5ie3ZS" role="2OqNvi">
+                <ref role="3TtcxE" to="5rf1:7vLXn5hwLPf" resolve="segments" />
+              </node>
+            </node>
+            <node concept="3GX2aA" id="7vLXn5ie3ZT" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7vLXn5ie3ZU" role="3clFbx">
+          <node concept="2MkqsV" id="7vLXn5ie3ZV" role="3cqZAp">
+            <node concept="Xl_RD" id="7vLXn5ie3ZW" role="2MkJ7o">
+              <property role="Xl_RC" value="A qualified name is either plain text or a chain of segments, not both" />
+            </node>
+            <node concept="1YBJjd" id="7vLXn5ie3ZX" role="1urrMF">
+              <ref role="1YBMHb" node="7vLXn5ie40e" resolve="qn" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3clFbJ" id="7vLXn5ie3ZY" role="3cqZAp">
+        <node concept="1Wc70l" id="7vLXn5ie3ZZ" role="3clFbw">
+          <node concept="3clFbC" id="7vLXn5ie400" role="3uHU7B">
+            <node concept="2OqwBi" id="7vLXn5ie401" role="3uHU7B">
+              <node concept="1YBJjd" id="7vLXn5ie402" role="2Oq$k0">
+                <ref role="1YBMHb" node="7vLXn5ie40e" resolve="qn" />
+              </node>
+              <node concept="3TrcHB" id="7vLXn5ie403" role="2OqNvi">
+                <ref role="3TsBF5" to="5rf1:7vLXn5hwLPe" resolve="text" />
+              </node>
+            </node>
+            <node concept="10Nm6u" id="7vLXn5ie404" role="3uHU7w" />
+          </node>
+          <node concept="2OqwBi" id="7vLXn5ie405" role="3uHU7w">
+            <node concept="2OqwBi" id="7vLXn5ie406" role="2Oq$k0">
+              <node concept="1YBJjd" id="7vLXn5ie407" role="2Oq$k0">
+                <ref role="1YBMHb" node="7vLXn5ie40e" resolve="qn" />
+              </node>
+              <node concept="3Tsc0h" id="7vLXn5ie408" role="2OqNvi">
+                <ref role="3TtcxE" to="5rf1:7vLXn5hwLPf" resolve="segments" />
+              </node>
+            </node>
+            <node concept="1v1jN8" id="7vLXn5ie409" role="2OqNvi" />
+          </node>
+        </node>
+        <node concept="3clFbS" id="7vLXn5ie40a" role="3clFbx">
+          <node concept="2MkqsV" id="7vLXn5ie40b" role="3cqZAp">
+            <node concept="Xl_RD" id="7vLXn5ie40c" role="2MkJ7o">
+              <property role="Xl_RC" value="A qualified name needs segments or plain text" />
+            </node>
+            <node concept="1YBJjd" id="7vLXn5ie40d" role="1urrMF">
+              <ref role="1YBMHb" node="7vLXn5ie40e" resolve="qn" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="7vLXn5ie40e" role="1YuTPh">
+      <property role="TrG5h" value="qn" />
+      <ref role="1YaFvo" to="5rf1:7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
+    </node>
   </node>
 </model>
 

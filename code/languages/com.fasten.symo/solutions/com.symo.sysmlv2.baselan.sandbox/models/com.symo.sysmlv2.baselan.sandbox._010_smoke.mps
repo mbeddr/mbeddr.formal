@@ -30,6 +30,9 @@
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
       </concept>
+      <concept id="8642959026948349260" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedName" flags="ng" index="AsIwX">
+        <property id="8642959026948349262" name="text" index="AsIwZ" />
+      </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
         <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
         <reference id="7140692429574298132" name="definition" index="3w00ZU" />
@@ -68,11 +71,8 @@
         <child id="7140692429570900092" name="specializes" index="3xZtmi" />
         <child id="7140692429570900093" name="content" index="3xZtmj" />
       </concept>
-      <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
-        <property id="7354895567575683458" name="targetName" index="1Bo4sf" />
-      </concept>
       <concept id="4430087627524886124" name="com.symo.sysmlv2.baselan.structure.SysMLv2Import" flags="ng" index="3Z0THl">
-        <child id="9028721269198354948" name="importedElement" index="7Q8KG" />
+        <child id="8642959026948349267" name="importedName" index="AsIwy" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
@@ -106,8 +106,8 @@
   <node concept="2h0jOr" id="3PUPjB2vxtg">
     <property role="TrG5h" value="_040_ImportStatement" />
     <node concept="3Z0THl" id="3PUPjB2vxwf" role="2h0jOs">
-      <node concept="1Bo4sc" id="7vLXn5bSmsR" role="7Q8KG">
-        <property role="1Bo4sf" value="A::B" />
+      <node concept="AsIwX" id="7vLXn5l0cV6" role="AsIwy">
+        <property role="AsIwZ" value="A::B" />
       </node>
     </node>
   </node>

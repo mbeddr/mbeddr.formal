@@ -37,6 +37,12 @@
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
       </concept>
+      <concept id="8642959026948349259" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedNameSegment" flags="ng" index="AsIwU">
+        <reference id="8642959026948349261" name="target" index="AsIwW" />
+      </concept>
+      <concept id="8642959026948349260" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedName" flags="ng" index="AsIwX">
+        <child id="8642959026948349263" name="segments" index="AsIwY" />
+      </concept>
       <concept id="4527860999823451880" name="com.symo.sysmlv2.baselan.structure.ISysMLv2Member" flags="ngI" index="3815tY">
         <property id="4527860999823451881" name="visibility" index="3815tZ" />
       </concept>
@@ -50,10 +56,6 @@
       <concept id="7140692429574298123" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinition" flags="ng" index="3w00Z_">
         <child id="7140692429574298128" name="content" index="3w00ZY" />
       </concept>
-      <concept id="7354895567575683457" name="com.symo.sysmlv2.baselan.structure.SysMLv2IdentifierNameConceptRef" flags="ng" index="1Bo4sc">
-        <property id="7354895567575683458" name="targetName" index="1Bo4sf" />
-        <reference id="7354895567575683459" name="target" index="1Bo4se" />
-      </concept>
       <concept id="3828348643708195210" name="com.symo.sysmlv2.baselan.structure.SysMLv2Documentation" flags="ng" index="3HG_t4">
         <property id="3828348643708195211" name="body" index="3HG_t5" />
       </concept>
@@ -61,7 +63,7 @@
         <property id="7267068243728800121" name="isImportAll" index="3d8W_D" />
         <property id="7267068243728800124" name="isRecursive" index="3d8W_G" />
         <property id="7267068243728800127" name="isNamespace" index="3d8W_J" />
-        <child id="9028721269198354948" name="importedElement" index="7Q8KG" />
+        <child id="8642959026948349267" name="importedName" index="AsIwy" />
       </concept>
       <concept id="4430087627523173828" name="com.symo.sysmlv2.baselan.structure.SysMLv2Package" flags="ng" index="3Z9vzX">
         <child id="4430087627523173912" name="content" index="3Z9vGx" />
@@ -88,17 +90,19 @@
       <node concept="3Z0THl" id="7vLXn5baoTK" role="3Z9vGx">
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
-        <node concept="1Bo4sc" id="7vLXn5baoTL" role="7Q8KG">
-          <property role="1Bo4sf" value="ISQ" />
-          <ref role="1Bo4se" to="l681:4QEfSMD5vYj" resolve="ISQ" />
+        <node concept="AsIwX" id="7vLXn5l0cUQ" role="AsIwy">
+          <node concept="AsIwU" id="7vLXn5l0cUR" role="AsIwY">
+            <ref role="AsIwW" to="l681:4QEfSMD5vYj" resolve="ISQ" />
+          </node>
         </node>
       </node>
       <node concept="3Z0THl" id="7vLXn5baoTM" role="3Z9vGx">
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
-        <node concept="1Bo4sc" id="7vLXn5baoTN" role="7Q8KG">
-          <property role="1Bo4sf" value="SI" />
-          <ref role="1Bo4se" to="l681:4QEfSMD5$u6" resolve="SI" />
+        <node concept="AsIwX" id="7vLXn5l0cUS" role="AsIwy">
+          <node concept="AsIwU" id="7vLXn5l0cUT" role="AsIwY">
+            <ref role="AsIwW" to="l681:4QEfSMD5$u6" resolve="SI" />
+          </node>
         </node>
       </node>
       <node concept="3HG_t4" id="7vLXn5baoTO" role="3Z9vGx">
@@ -132,17 +136,19 @@
       <node concept="3Z0THl" id="7vLXn5baoTc" role="3Z9vGx">
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
-        <node concept="1Bo4sc" id="7vLXn5baoTd" role="7Q8KG">
-          <property role="1Bo4sf" value="ISQ" />
-          <ref role="1Bo4se" to="l681:4QEfSMD5vYj" resolve="ISQ" />
+        <node concept="AsIwX" id="7vLXn5l0cUU" role="AsIwy">
+          <node concept="AsIwU" id="7vLXn5l0cUV" role="AsIwY">
+            <ref role="AsIwW" to="l681:4QEfSMD5vYj" resolve="ISQ" />
+          </node>
         </node>
       </node>
       <node concept="3Z0THl" id="7vLXn5baoTe" role="3Z9vGx">
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
-        <node concept="1Bo4sc" id="7vLXn5baoTf" role="7Q8KG">
-          <property role="1Bo4sf" value="SI" />
-          <ref role="1Bo4se" to="l681:4QEfSMD5$u6" resolve="SI" />
+        <node concept="AsIwX" id="7vLXn5l0cUW" role="AsIwy">
+          <node concept="AsIwU" id="7vLXn5l0cUX" role="AsIwY">
+            <ref role="AsIwW" to="l681:4QEfSMD5$u6" resolve="SI" />
+          </node>
         </node>
       </node>
       <node concept="2h0jOo" id="7vLXn5bapGc" role="3Z9vGx" />
@@ -267,17 +273,19 @@
       <node concept="3Z0THl" id="7vLXn5aNGLK" role="3Z9vGx">
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
-        <node concept="1Bo4sc" id="7vLXn5aNGLL" role="7Q8KG">
-          <property role="1Bo4sf" value="ISQ" />
-          <ref role="1Bo4se" to="l681:4QEfSMD5vYj" resolve="ISQ" />
+        <node concept="AsIwX" id="7vLXn5l0cUY" role="AsIwy">
+          <node concept="AsIwU" id="7vLXn5l0cUZ" role="AsIwY">
+            <ref role="AsIwW" to="l681:4QEfSMD5vYj" resolve="ISQ" />
+          </node>
         </node>
       </node>
       <node concept="3Z0THl" id="7vLXn5aNGLM" role="3Z9vGx">
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
-        <node concept="1Bo4sc" id="7vLXn5aNGLN" role="7Q8KG">
-          <property role="1Bo4sf" value="SI" />
-          <ref role="1Bo4se" to="l681:4QEfSMD5$u6" resolve="SI" />
+        <node concept="AsIwX" id="7vLXn5l0cV0" role="AsIwy">
+          <node concept="AsIwU" id="7vLXn5l0cV1" role="AsIwY">
+            <ref role="AsIwW" to="l681:4QEfSMD5$u6" resolve="SI" />
+          </node>
         </node>
       </node>
       <node concept="3HG_t4" id="7vLXn5aNGLO" role="3Z9vGx">
@@ -303,17 +311,19 @@
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
         <property role="3d8W_J" value="false" />
         <property role="3d8W_G" value="false" />
-        <node concept="1Bo4sc" id="7vLXn5baoUa" role="7Q8KG">
-          <property role="1Bo4sf" value="ISQ" />
-          <ref role="1Bo4se" to="l681:4QEfSMD5vYj" resolve="ISQ" />
+        <node concept="AsIwX" id="7vLXn5l0cV2" role="AsIwy">
+          <node concept="AsIwU" id="7vLXn5l0cV3" role="AsIwY">
+            <ref role="AsIwW" to="l681:4QEfSMD5vYj" resolve="ISQ" />
+          </node>
         </node>
       </node>
       <node concept="3Z0THl" id="7vLXn5baoUb" role="3Z9vGx">
         <property role="3d8W_D" value="true" />
         <property role="3815tZ" value="6jJ9KHVIUlW/private" />
-        <node concept="1Bo4sc" id="7vLXn5baoUc" role="7Q8KG">
-          <property role="1Bo4sf" value="SI" />
-          <ref role="1Bo4se" to="l681:4QEfSMD5$u6" resolve="SI" />
+        <node concept="AsIwX" id="7vLXn5l0cV4" role="AsIwy">
+          <node concept="AsIwU" id="7vLXn5l0cV5" role="AsIwY">
+            <ref role="AsIwW" to="l681:4QEfSMD5$u6" resolve="SI" />
+          </node>
         </node>
       </node>
       <node concept="3HG_t4" id="7vLXn5baoUd" role="3Z9vGx">

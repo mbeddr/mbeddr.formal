@@ -6,13 +6,18 @@
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="15" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="12" />
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="19" />
+    <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="2" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="5rf1" ref="r:46502bdd-1e0c-47cf-8eed-483f76d95b20(com.symo.sysmlv2.baselan.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" />
+    <import index="5wt7" ref="r:340302a6-5c40-4ce4-b492-437d8a67da64(com.symo.sysmlv2.baselan.behavior)" />
   </imports>
   <registry>
+    <language id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior">
+      <concept id="3235159848334022093" name="jetbrains.mps.lang.behavior.structure.Node_ConceptMethodCall" flags="nn" index="3zqWPK" />
+    </language>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
       <concept id="1215693861676" name="jetbrains.mps.baseLanguage.structure.BaseAssignmentExpression" flags="nn" index="d038R">
         <child id="1068498886297" name="rValue" index="37vLTx" />
@@ -39,6 +44,9 @@
       </concept>
       <concept id="1068581242878" name="jetbrains.mps.baseLanguage.structure.ReturnStatement" flags="nn" index="3cpWs6">
         <child id="1068581517676" name="expression" index="3cqZAk" />
+      </concept>
+      <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ngI" index="1ndlxa">
+        <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
@@ -110,6 +118,44 @@
             </node>
             <node concept="Xl_RD" id="fNDJbb6FBI" role="37vLTx">
               <property role="Xl_RC" value="name" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="2S6QgY" id="7vLXn5jHBgS">
+    <property role="TrG5h" value="ResolveQualifiedNameText" />
+    <property role="2ZfUl0" value="false" />
+    <ref role="2ZfgGC" to="5rf1:7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
+    <node concept="2S6ZIM" id="7vLXn5jHBgT" role="2ZfVej">
+      <node concept="3clFbS" id="7vLXn5jHBgU" role="2VODD2">
+        <node concept="3clFbF" id="7vLXn5jHBgV" role="3cqZAp">
+          <node concept="Xl_RD" id="7vLXn5jHBgW" role="3clFbG">
+            <property role="Xl_RC" value="Resolve Text to Segments" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2SaL7w" id="7vLXn5jHBgX" role="2ZfVeh">
+      <node concept="3clFbS" id="7vLXn5k4P4j" role="2VODD2">
+        <node concept="3cpWs6" id="7vLXn5k4P4k" role="3cqZAp">
+          <node concept="2OqwBi" id="7vLXn5k4P4l" role="3cqZAk">
+            <node concept="2Sf5sV" id="7vLXn5k4P4m" role="2Oq$k0" />
+            <node concept="3zqWPK" id="7vLXn5k4P4n" role="2OqNvi">
+              <ref role="37wK5l" to="5wt7:7vLXn5k4JkS" resolve="hasPlainText" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2Sbjvc" id="7vLXn5jHBh2" role="2ZfgGD">
+      <node concept="3clFbS" id="7vLXn5k4P5L" role="2VODD2">
+        <node concept="3clFbF" id="7vLXn5k4P5M" role="3cqZAp">
+          <node concept="2OqwBi" id="7vLXn5k4P5N" role="3clFbG">
+            <node concept="2Sf5sV" id="7vLXn5k4P5O" role="2Oq$k0" />
+            <node concept="3zqWPK" id="7vLXn5k4P5P" role="2OqNvi">
+              <ref role="37wK5l" to="5wt7:7vLXn5k4Mbw" resolve="resolveText" />
             </node>
           </node>
         </node>

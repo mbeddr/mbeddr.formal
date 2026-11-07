@@ -130,6 +130,9 @@
       <concept id="1212096972063" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_PropertyValidator" flags="in" index="QB0g5" />
       <concept id="5564765827938091039" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSearchScope_Scope" flags="ig" index="3dgokm" />
       <concept id="5564765827938108528" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_containmentLink" flags="ng" index="3dgs5T" />
+      <concept id="8401916545537438642" name="jetbrains.mps.lang.constraints.structure.InheritedNodeScopeFactory" flags="ng" index="1dDu$B">
+        <reference id="8401916545537438643" name="kind" index="1dDu$A" />
+      </concept>
       <concept id="1163200368514" name="jetbrains.mps.lang.constraints.structure.ConstraintFunction_ReferentSetHandler" flags="in" index="3k9gUc" />
       <concept id="1163200647017" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_referenceNode" flags="nn" index="3kakTB" />
       <concept id="1163202640154" name="jetbrains.mps.lang.constraints.structure.ConstraintFunctionParameter_newReferentNode" flags="nn" index="3khVwk" />
@@ -1288,6 +1291,17 @@
             </node>
           </node>
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="1M2fIO" id="7vLXn5ie3ZA">
+    <property role="TrG5h" value="SysMLv2QualifiedNameSegment_Constraints" />
+    <property role="3GE5qa" value="references" />
+    <ref role="1M2myG" to="5rf1:7vLXn5hwLPb" resolve="SysMLv2QualifiedNameSegment" />
+    <node concept="1N5Pfh" id="7vLXn5ie3ZB" role="1Mr941">
+      <ref role="1N5Vy1" to="5rf1:7vLXn5hwLPd" resolve="target" />
+      <node concept="1dDu$B" id="7vLXn5ie3ZC" role="1N6uqs">
+        <ref role="1dDu$A" to="5rf1:3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
       </node>
     </node>
   </node>

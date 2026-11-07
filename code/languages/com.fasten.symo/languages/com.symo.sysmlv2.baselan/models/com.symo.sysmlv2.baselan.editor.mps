@@ -420,8 +420,8 @@
         <ref role="1NtTu8" to="5rf1:6jpO12DYx_T" resolve="isImportAll" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
       </node>
-      <node concept="3F1sOY" id="7vLXn5bSms6" role="3EZMnx">
-        <ref role="1NtTu8" to="5rf1:7PctyxU_fC4" resolve="importedElement" />
+      <node concept="3F1sOY" id="7vLXn5iZAGt" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:7vLXn5hwLPj" resolve="importedName" />
       </node>
       <node concept="1kHk_G" id="6jpO12E17dB" role="3EZMnx">
         <property role="ZjSer" value="::*" />
@@ -13482,6 +13482,49 @@
             <ref role="1NtTu8" to="5rf1:6coPuU3buuz" resolve="redefines" />
             <node concept="l2Vlx" id="4QEfSMDwg_e" role="2czzBx" />
           </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7vLXn5iZAGx">
+    <property role="3GE5qa" value="references" />
+    <ref role="1XX52x" to="5rf1:7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
+    <node concept="3EZMnI" id="7vLXn5iZAGz" role="2wV5jI">
+      <node concept="l2Vlx" id="7vLXn5iZAG$" role="2iSdaV" />
+      <node concept="3F0A7n" id="7vLXn5iZAGB" role="3EZMnx">
+        <ref role="1NtTu8" to="5rf1:7vLXn5hwLPe" resolve="text" />
+        <node concept="pkWqt" id="2hQSMJCkr4Q" role="pqm2j">
+          <node concept="3clFbS" id="2hQSMJCkr4R" role="2VODD2">
+            <node concept="3clFbF" id="2hQSMJCkta3" role="3cqZAp">
+              <node concept="2OqwBi" id="2hQSMJCkwvR" role="3clFbG">
+                <node concept="2OqwBi" id="2hQSMJCktqJ" role="2Oq$k0">
+                  <node concept="pncrf" id="2hQSMJCkta2" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="2hQSMJCktQU" role="2OqNvi">
+                    <ref role="3TtcxE" to="5rf1:7vLXn5hwLPf" resolve="segments" />
+                  </node>
+                </node>
+                <node concept="1v1jN8" id="2hQSMJCk_jz" role="2OqNvi" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3F2HdR" id="7vLXn5iZAGE" role="3EZMnx">
+        <property role="2czwfO" value="::" />
+        <ref role="1NtTu8" to="5rf1:7vLXn5hwLPf" resolve="segments" />
+        <node concept="l2Vlx" id="7vLXn5iZAGJ" role="2czzBx" />
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="7vLXn5iZAGO">
+    <property role="3GE5qa" value="references" />
+    <ref role="1XX52x" to="5rf1:7vLXn5hwLPb" resolve="SysMLv2QualifiedNameSegment" />
+    <node concept="1iCGBv" id="7vLXn5iZAGQ" role="2wV5jI">
+      <ref role="1NtTu8" to="5rf1:7vLXn5hwLPd" resolve="target" />
+      <node concept="1sVBvm" id="7vLXn5iZAGT" role="1sWHZn">
+        <node concept="3F0A7n" id="7vLXn5iZAGZ" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
         </node>
       </node>
     </node>
