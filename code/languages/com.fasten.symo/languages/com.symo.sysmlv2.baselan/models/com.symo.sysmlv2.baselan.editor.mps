@@ -4971,10 +4971,7 @@
       </node>
       <node concept="3F0ifn" id="6jpO12_$T2c" role="3EZMnx">
         <property role="3F0ifm" value="{" />
-        <ref role="1k5W1q" to="1ks0:2CEi94dh36z" resolve="ParensStyle" />
-        <node concept="11L4FC" id="6jpO12_$T2d" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
+        <ref role="1k5W1q" to="1ks0:7vLXn591F$s" resolve="LeftParensStyle" />
       </node>
       <node concept="3F2HdR" id="6jpO12_$T2e" role="3EZMnx">
         <ref role="1NtTu8" to="5rf1:3PUPjB2nMSo" resolve="content" />
