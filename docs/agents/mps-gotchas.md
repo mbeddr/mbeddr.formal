@@ -12,6 +12,13 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Scopes over imported models, behavior calls in tests (2026-11-07)
+
+- A scope that collects roots with `model.roots(C)` sees only the current model. Use `model.rootsIncludingImported(C)` so imported models (and accessory/library models) are visible; adding the model dependency alone does not help ("reference X is out of search scope").
+- A behavior method is called from a `NodesTestCase` with the lang.behavior `Node_ConceptMethodCall`, bound to the method's BASE declaration (e.g. the interface's abstract method). `InstanceMethodCallOperation` is out of scope there; the smodel one is deprecated.
+- `AssertStatement` by name in a test resolves to lang.typesystem's; use the full baseLanguage concept ref.
+- `alter_nodes MAKE` needs `parameters:{modules:[...]}`; top-level `modules`/`rebuild` are dropped.
+
 ## Mutation checks and BaseLanguage edits through MCP (2026-11-05)
 
 - `trace.info` node ids and line numbers are unreliable for choosing which node to delete. A mutation check that deleted two nodes picked from `trace.info` removed the `isAbstract` assignments instead of the intended calls. Always `print_node` (PLAIN TEXT) the exact node before `update_node SET CHILD` without `childJson` (that deletes it).

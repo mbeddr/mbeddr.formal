@@ -1379,7 +1379,12 @@ requirement usage editor and may show cells the spec syntax does not have (`end`
 Audit run on 2026-11-03: see [editor-audit-sysmlv2.md](editor-audit-sysmlv2.md). Only what the importer sets
 was fixed (`SysMLv2ConnectionUsage` `multiplicity`), and the cells the grammar has no syntax for were removed from nine usage editors and textgens. The remaining items there are open decisions.
 
-## Cross-model package references in sysmlv2.baselan (found 2026-11-06 while writing the tutorial)
+## Cross-model package references in sysmlv2.baselan (found 2026-11-06 while writing the tutorial) — FIXED 2026-11-07
+
+**Resolved:** `SysMLv2File.localMembers()` now uses `model.rootsIncludingImported(SysMLv2File)`; covered by the
+`_150_LibraryImportScope` test (mutation-checked). Lessons may import earlier lessons and the system library.
+Open follow-up: namespace scope does not follow `public import`, so library types need `ISQBase::` rather than `ISQ::`.
+Original report:
 
 In the tutorial solution (`com.symo.sysmlv2.tutorial`), a model that imports another model of the same
 module (model import added with `mps_mcp_model_dependency`) could not resolve a package of that model:
