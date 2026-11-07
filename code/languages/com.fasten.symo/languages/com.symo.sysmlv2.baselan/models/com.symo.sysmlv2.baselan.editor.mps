@@ -239,10 +239,14 @@
       <concept id="745148820867185554" name="com.mbeddr.mpsutil.grammarcells.structure.SideTransformationSectionCell" flags="ng" index="2uKrtP">
         <child id="745148820874363426" name="section" index="2vkWV5" />
       </concept>
+      <concept id="9041925471455857605" name="com.mbeddr.mpsutil.grammarcells.structure.Cell_DescriptionText" flags="ig" index="uPpia" />
       <concept id="1997572252229165641" name="com.mbeddr.mpsutil.grammarcells.structure.TransformationLocation_Before" flags="ng" index="wWMWC" />
       <concept id="1997572252229165700" name="com.mbeddr.mpsutil.grammarcells.structure.TransformationLocation_After" flags="ng" index="wWMZ_" />
       <concept id="5083944728298846680" name="com.mbeddr.mpsutil.grammarcells.structure.OptionalCell" flags="ng" index="_tjkj">
         <child id="5083944728298846681" name="option" index="_tjki" />
+      </concept>
+      <concept id="848437706375087728" name="com.mbeddr.mpsutil.grammarcells.structure.ICanHaveDescriptionText" flags="ngI" index="1djCvD">
+        <child id="848437706375087729" name="descriptionText" index="1djCvC" />
       </concept>
       <concept id="7363578995839203705" name="com.mbeddr.mpsutil.grammarcells.structure.FlagCell" flags="sg" stub="1984422498400729024" index="1kHk_G">
         <property id="7617962380315063287" name="flagText" index="ZjSer" />
@@ -423,11 +427,29 @@
         <property role="ZjSer" value="::*" />
         <ref role="1NtTu8" to="5rf1:6jpO12DYx_Z" resolve="isNamespace" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+        <node concept="uPpia" id="7vLXn5fu9uL" role="1djCvC">
+          <node concept="3clFbS" id="7vLXn5fu9uM" role="2VODD2">
+            <node concept="3clFbF" id="7vLXn5fu9_l" role="3cqZAp">
+              <node concept="Xl_RD" id="7vLXn5fu9_k" role="3clFbG">
+                <property role="Xl_RC" value="namespace" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1kHk_G" id="6jpO12E17dE" role="3EZMnx">
         <property role="ZjSer" value="::**" />
         <ref role="1NtTu8" to="5rf1:6jpO12DYx_W" resolve="isRecursive" />
         <ref role="1k5W1q" to="1ks0:6NmtaR1SVrw" resolve="KeywordStyle" />
+        <node concept="uPpia" id="7vLXn5fu9HC" role="1djCvC">
+          <node concept="3clFbS" id="7vLXn5fu9HD" role="2VODD2">
+            <node concept="3clFbF" id="7vLXn5fu9Io" role="3cqZAp">
+              <node concept="Xl_RD" id="7vLXn5fu9In" role="3clFbG">
+                <property role="Xl_RC" value="recursive" />
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="3F0ifn" id="3PUPjB2vGeE" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -2372,6 +2394,7 @@
       </node>
       <node concept="3F0A7n" id="5oZmK$NnE2B" role="3EZMnx">
         <property role="39s7Ar" value="true" />
+        <property role="1O74Pk" value="true" />
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
       </node>
       <node concept="_tjkj" id="5oZmK$NniPP" role="3EZMnx">
