@@ -21,6 +21,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.sysml.ibd.sandbox/com.symo.sysml.ibd.sandbox.msd" folder="" />
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.sysmlv2.baselan.importer/com.symo.sysmlv2.baselan.importer.msd" folder="sysmlv2" />
       <modulePath path="$PROJECT_DIR$/solutions/com.symo.sysmlv2.baselan.sandbox/com.symo.sysmlv2.baselan.sandbox.msd" folder="sysmlv2" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.symo.sysmlv2.tutorial/com.symo.sysmlv2.tutorial.msd" folder="sysmlv2" />
       <modulePath path="$PROJECT_DIR$/solutions/test.com.symo.kerml.baselan.importer/test.com.symo.kerml.baselan.importer.msd" folder="sysmlv2" />
       <modulePath path="$PROJECT_DIR$/solutions/test.com.symo.kerml.baselan/test.com.symo.kerml.baselan.msd" folder="sysmlv2" />
       <modulePath path="$PROJECT_DIR$/solutions/test.com.symo.plantuml/test.com.symo.plantuml.msd" folder="plantuml" />

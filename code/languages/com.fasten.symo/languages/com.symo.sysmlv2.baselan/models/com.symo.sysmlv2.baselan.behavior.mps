@@ -2880,7 +2880,21 @@
     <property role="TrG5h" value="SysMLv2ItemDefinition_Behavior" />
     <ref role="13h7C2" to="5rf1:6coPuU36dCb" resolve="SysMLv2ItemDefinition" />
     <node concept="13hLZK" id="4N4m7hrZSTd" role="13h7CW">
-      <node concept="3clFbS" id="4N4m7hrZSTf" role="2VODD2" />
+      <node concept="3clFbS" id="4N4m7hrZSTf" role="2VODD2">
+        <node concept="3clFbF" id="4d8bkNHP69y" role="3cqZAp">
+          <node concept="2OqwBi" id="4d8bkNHPara" role="3clFbG">
+            <node concept="2OqwBi" id="4d8bkNHP6wu" role="2Oq$k0">
+              <node concept="13iPFW" id="4d8bkNHP69x" role="2Oq$k0" />
+              <node concept="3Tsc0h" id="4d8bkNHP7Cl" role="2OqNvi">
+                <ref role="3TtcxE" to="5rf1:6coPuU36dCg" resolve="content" />
+              </node>
+            </node>
+            <node concept="WFELt" id="4d8bkNHPdWU" role="2OqNvi">
+              <ref role="1A0vxQ" to="5rf1:3DMRBeFsYdF" resolve="SysMLv2EmptyLine" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="13i0hz" id="4N4m7hrZSTg" role="13h7CS">
       <property role="TrG5h" value="ownedFeatures" />

@@ -108,6 +108,9 @@
         <child id="5692353713941631155" name="textFunction" index="1hCDOS" />
         <child id="4056398722183895554" name="items" index="1vlqcB" />
       </concept>
+      <concept id="9122903797312246523" name="jetbrains.mps.lang.editor.structure.StyleReference" flags="ng" index="1wgc9g">
+        <reference id="9122903797312247166" name="style" index="1wgcnl" />
+      </concept>
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
@@ -149,6 +152,9 @@
       </concept>
       <concept id="1176717841777" name="jetbrains.mps.lang.editor.structure.QueryFunction_ModelAccess_Getter" flags="in" index="3TQlhw" />
       <concept id="1176749715029" name="jetbrains.mps.lang.editor.structure.QueryFunction_CellProvider" flags="in" index="3VJUX4" />
+      <concept id="1950447826681509042" name="jetbrains.mps.lang.editor.structure.ApplyStyleClass" flags="lg" index="3Xmtl4">
+        <child id="1950447826683828796" name="target" index="3XvnJa" />
+      </concept>
       <concept id="1166049232041" name="jetbrains.mps.lang.editor.structure.AbstractComponent" flags="ng" index="1XWOmA">
         <reference id="1166049300910" name="conceptDeclaration" index="1XX52x" />
       </concept>
@@ -1197,6 +1203,29 @@
       </node>
       <node concept="Vb9p2" id="2CEi94dhicz" role="3F10Kt" />
       <node concept="11L4FC" id="6UJZwEqlSvq" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+    <node concept="14StLt" id="7vLXn591F$s" role="V601i">
+      <property role="TrG5h" value="LeftParensStyle" />
+      <node concept="3Xmtl4" id="7vLXn592t_$" role="3F10Kt">
+        <node concept="1wgc9g" id="7vLXn592t_A" role="3XvnJa">
+          <ref role="1wgcnl" node="2CEi94dh36z" resolve="ParensStyle" />
+        </node>
+      </node>
+      <node concept="11L4FC" id="7vLXn591F$w" role="3F10Kt" />
+      <node concept="11LMrY" id="7vLXn591Xuw" role="3F10Kt">
+        <property role="VOm3f" value="true" />
+      </node>
+    </node>
+    <node concept="14StLt" id="7vLXn59oh8s" role="V601i">
+      <property role="TrG5h" value="LeftParensAfterNameStyle" />
+      <node concept="3Xmtl4" id="7vLXn59oh8t" role="3F10Kt">
+        <node concept="1wgc9g" id="7vLXn59oh8u" role="3XvnJa">
+          <ref role="1wgcnl" node="2CEi94dh36z" resolve="ParensStyle" />
+        </node>
+      </node>
+      <node concept="11LMrY" id="7vLXn59oh8w" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
     </node>

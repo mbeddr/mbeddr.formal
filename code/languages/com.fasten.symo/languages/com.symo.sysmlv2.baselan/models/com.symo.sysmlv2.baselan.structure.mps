@@ -870,7 +870,7 @@
   <node concept="1TIwiD" id="5oZmK$Nm2Kh">
     <property role="EcuMT" value="6214786105868823569" />
     <property role="TrG5h" value="SysMLv2Comment" />
-    <property role="34LRSv" value="comment" />
+    <property role="34LRSv" value="comment /*" />
     <property role="R4oN_" value="SysML v2 comment: [comment [name] [about A, B] [locale &quot;..&quot;]] /* ... */" />
     <property role="3GE5qa" value="annotation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />

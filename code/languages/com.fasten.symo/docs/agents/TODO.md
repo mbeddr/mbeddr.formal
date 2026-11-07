@@ -1378,3 +1378,15 @@ requirement usage editor and may show cells the spec syntax does not have (`end`
 
 Audit run on 2026-11-03: see [editor-audit-sysmlv2.md](editor-audit-sysmlv2.md). Only what the importer sets
 was fixed (`SysMLv2ConnectionUsage` `multiplicity`), and the cells the grammar has no syntax for were removed from nine usage editors and textgens. The remaining items there are open decisions.
+
+## Cross-model package references in sysmlv2.baselan (found 2026-11-06 while writing the tutorial)
+
+In the tutorial solution (`com.symo.sysmlv2.tutorial`), a model that imports another model of the same
+module (model import added with `mps_mcp_model_dependency`) could not resolve a package of that model:
+both the `namespace` reference of a `SysMLv2PartDefinitionRef` and the `target` of a
+`SysMLv2IdentifierNameConceptRef` inside `SysMLv2Import.importedElement` were reported "out of search
+scope" (explicit `r:` node references bound them, the checker still rejected them). References
+between roots of the *same* model work. The KerML plan says its scopes look at `rootsIncludingImported`,
+so check whether the SysML v2 scopes (`ISysMLv2Namespace`, `ISysMLv2IdentifierNameConcept`) do the same.
+Workaround used: every tutorial lesson model is self-contained. Fix the scope, then lessons can import
+earlier lessons instead of repeating parts.
