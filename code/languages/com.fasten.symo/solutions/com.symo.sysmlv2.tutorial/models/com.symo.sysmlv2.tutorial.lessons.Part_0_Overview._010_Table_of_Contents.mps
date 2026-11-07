@@ -30,7 +30,7 @@
   <node concept="2h0jOr" id="7vLXn591F3w">
     <property role="TrG5h" value="_020_curriculum" />
     <node concept="3HG_t4" id="7vLXn591F3x" role="2h0jOs">
-      <property role="3HG_t5" value="Part A - Foundations&#10;&#10;Lesson 1: Definitions and usages  [available]&#10;Lesson 2: Several of a kind: multiplicity and a concrete drone  [available]&#10;Lesson 3: Properties: attributes with values and units" />
+      <property role="3HG_t5" value="Part A - Foundations&#10;&#10;Lesson 1: Definitions and usages  [available]&#10;Lesson 2: Several of a kind: multiplicity and a concrete drone  [available]&#10;Lesson 3: Properties: attributes with values and units  [available]" />
       <property role="TrG5h" value="part_A" />
     </node>
     <node concept="3HG_t4" id="7vLXn591F3y" role="2h0jOs">
