@@ -2307,13 +2307,13 @@
                 <ref role="3cqZAo" node="3PUPjB2v7eI" resolve="imp" />
               </node>
               <node concept="3TrEf2" id="6PmNqjQyaLt" role="2OqNvi">
-                <ref role="3Tt5mk" to="5rf1:7PctyxU_fC4" resolve="importedElement" />
+                <ref role="3Tt5mk" to="5rf1:7vLXn5hwLPj" resolve="importedName" />
               </node>
             </node>
             <node concept="2ShNRf" id="6PmNqjQyaLu" role="37vLTx">
               <node concept="3zrR0B" id="6PmNqjQyaLv" role="2ShVmc">
                 <node concept="3Tqbb2" id="6PmNqjQyaLw" role="3zrR0E">
-                  <ref role="ehGHo" to="5rf1:6ohPCO1sp61" resolve="SysMLv2IdentifierNameConceptRef" />
+                  <ref role="ehGHo" to="5rf1:7vLXn5hwLPc" resolve="SysMLv2QualifiedName" />
                 </node>
               </node>
             </node>
@@ -2327,11 +2327,11 @@
                   <ref role="3cqZAo" node="3PUPjB2v7eI" resolve="imp" />
                 </node>
                 <node concept="3TrEf2" id="6PmNqjQyaLA" role="2OqNvi">
-                  <ref role="3Tt5mk" to="5rf1:7PctyxU_fC4" resolve="importedElement" />
+                  <ref role="3Tt5mk" to="5rf1:7vLXn5hwLPj" resolve="importedName" />
                 </node>
               </node>
               <node concept="3TrcHB" id="6PmNqjQyaLB" role="2OqNvi">
-                <ref role="3TsBF5" to="5rf1:6ohPCO1McQD" resolve="targetName" />
+                <ref role="3TsBF5" to="5rf1:7vLXn5hwLPe" resolve="text" />
               </node>
             </node>
             <node concept="37vLTw" id="6PmNqjQyaLC" role="37vLTx">
