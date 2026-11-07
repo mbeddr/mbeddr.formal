@@ -12,6 +12,33 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Paste post-processors and plain-text paste (2026-11-07)
+
+- MPS has no hook for pasting plain *text*; text pasted into a cell just becomes that cell's property
+  value. A `PastePostProcessor` (actions aspect, `CopyPasteHandlers`) runs on pasted *nodes*, so it
+  can post-process a node that carries the text (e.g. resolve `A::B::C` into segments) but cannot
+  intercept the keystrokes. Back it with an intention for text that is already in the model.
+- The `mps-aspect-actions` / `mps-aspect-editor-menus-and-keymaps` skill docs name the roles wrongly:
+  the real ones are reference `concept` (not `applicableConcept`) and child `postProcessFunction`
+  (a `PastePostProcessFunction` whose `body` StatementList is *absent* until you ADD it; the pasted
+  node is `ConceptFunctionParameter_nodeToPastePostProcess`).
+- Logic shared by a paste handler and an intention belongs in a behavior method on the concept
+  (`node.resolveText()`), called from both via `Node_ConceptMethodCall`. A plain-Java helper class
+  works but forces `MetaAdapterFactory` ids instead of smodel; don't. For `String` JDK methods in a
+  JSON blueprint (e.g. `split`) use `baseMethodDeclaration` target
+  `6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)/~String.split%28java.lang.String,int%29`
+  (harvest the form via `parse_java_and_insert` with `insert.mode: console`, then `print_node`).
+- There is no MCP tool to delete a root node; remove obsolete roots in the MPS UI.
+
+## ScopeProvider child with attributes, multi-valued links, SET/ADD shapes (2026-11-07)
+
+- `ScopeProvider.getScope(kind, child)` is NOT always handed the direct child. `Scope.parent(n)` treats a node's last `NodeAttribute` (e.g. a test label `TestNodeAnnotation`, a `ScopesTest`) as its parent, so the provider receives the ATTRIBUTE node as `child`. Symptom: the scope computed in a plain test call is right, but the real reference scope (checker "out of search scope", `ScopesTest`) falls back to the enclosing provider's scope. Fix: at the top of `getScope` climb `child` until `child.parent == this` (`while (child != null && child.parent != this) child = child.parent;`) before using siblings/containment roles.
+- A `ScopesTest` annotation tests the REAL reference scope; a `SimpleNodeTest` that calls `getScope` directly does not. Use both.
+- A failed `UPDATE_CONCEPT_CHILD`/reference with an unresolvable target can leave a half-created link stub; inspect afterwards.
+- Multi-valued child links in smodel code need `SLinkListAccess` (not `SLinkAccess`); the ArrayList creator is `ListCreatorWithInit`; a ternary breaks the typesystem of the declaring local — use `if`.
+- `update_node ADD CHILD` ignores `index` (appends). To put a statement first, replace the whole body with `SET CHILD` (`childNodeRef` = the StatementList, `childJson` = the full new body). `SET REFERENCE` takes `references: [[nodeRef, role, targetRef], ...]`; `print_node` takes `nodeReference`, `search_root_node_by_name` takes `names`, `check_root_node_problems` takes one `nodeReference`.
+- Reference-by-name in an inserted blueprint resolves while the structure is still half-built: segments 2..n of a chained name were left unresolved and had to be set by node ref afterwards.
+
 ## Scopes over imported models, behavior calls in tests (2026-11-07)
 
 - Deleting a property from a concept (`update_node SET CHILD` without json on the PropertyDeclaration; `alter_structure` has no delete) leaves the old values on every instance as unknown properties: MPS keeps and re-saves them, the registry line `<property id=... name="x" index=...>` stays in each model file, and `update_node SET PROPERTY` refuses the name ("not found in concept"). Migrate data first, then clean the stale values (hundreds of "Property X does not belong to the concept" errors otherwise). What worked: a console `BLCommand` (insert with `insert_console_command_from_json`, run with `run_console_command`) looping `for (SNode n : #instances(TheConcept))`, collecting `n.getProperties()` whose `getName()` equals the old name into a list and calling `n.setProperty(p, null)` on each; the Java part was inserted with `parse_java_and_insert` (featureKind STATEMENTS, `parentRef` = the body StatementList, `role` statement; FQNs `org.jetbrains.mps.openapi.model.SNode` / `...language.SProperty` resolve) and the iterable swapped to `#instances` with `update_node SET CHILD`.
