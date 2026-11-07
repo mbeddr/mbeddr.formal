@@ -2522,8 +2522,8 @@
   <node concept="1TIwiD" id="7vLXn5hwLPb">
     <property role="EcuMT" value="8642959026948349259" />
     <property role="TrG5h" value="SysMLv2QualifiedNameSegment" />
-    <property role="R4oN_" value="One segment of a qualified name: a plain reference to a named element, resolved in the scope narrowed by the previous segment." />
     <property role="3GE5qa" value="references" />
+    <property role="R4oN_" value="One segment of a qualified name: a plain reference to a named element, resolved in the scope narrowed by the previous segment." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="7vLXn5hwLPd" role="1TKVEi">
       <property role="IQ2ns" value="8642959026948349261" />

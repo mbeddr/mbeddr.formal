@@ -92,8 +92,12 @@
         <child id="717440187291777386" name="chain" index="2uUmlA" />
       </concept>
       <concept id="717440187291777382" name="com.symo.sysmlv2.baselan.structure.SysMLv2ConnectionUsage" flags="ng" index="2uUmlE" />
+      <concept id="8642959026948349259" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedNameSegment" flags="ng" index="AsIwU">
+        <reference id="8642959026948349261" name="target" index="AsIwW" />
+      </concept>
       <concept id="8642959026948349260" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedName" flags="ng" index="AsIwX">
         <property id="8642959026948349262" name="text" index="AsIwZ" />
+        <child id="8642959026948349263" name="segments" index="AsIwY" />
       </concept>
       <concept id="7267068243654035155" name="com.symo.sysmlv2.baselan.structure.SysMLv2LibraryPackage" flags="ng" index="31n9r3">
         <property id="7267068243654035156" name="isStandard" index="31n9r4" />
@@ -3154,6 +3158,89 @@
     <node concept="3clFbS" id="fNDJbaWpI2" role="LjaKd">
       <node concept="1MFPAf" id="fNDJbaZSpx" role="3cqZAp">
         <ref role="1MFYO6" to="pw9y:fNDJbaT09P" resolve="AddConnectorEndName" />
+      </node>
+    </node>
+  </node>
+  <node concept="LiM7Y" id="2hQSMJFsaTz">
+    <property role="3YCmrE" value="typing private at the import visibility cell sets visibility" />
+    <property role="TrG5h" value="_100_Import_HierarchicalItems" />
+    <node concept="1qefOq" id="2hQSMJFsaT$" role="25YQCW">
+      <node concept="2h0jOr" id="2hQSMJFsaT_" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="2hQSMJDIv29" role="2h0jOs">
+          <property role="TrG5h" value="ImportScopeTest_Pack1" />
+          <node concept="3ZUotO" id="2hQSMJDIv2e" role="3Z9vGx">
+            <property role="TrG5h" value="Pack1_PartDef1" />
+          </node>
+          <node concept="3ZUotO" id="2hQSMJDIv2g" role="3Z9vGx">
+            <property role="TrG5h" value="Pack1_PartDef2" />
+          </node>
+          <node concept="3Z9vzX" id="2hQSMJDIv2b" role="3Z9vGx">
+            <property role="TrG5h" value="Pack2" />
+            <node concept="3ZUotO" id="2hQSMJDIv2h" role="3Z9vGx">
+              <property role="TrG5h" value="Pack2_PartDef1" />
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="2hQSMJGf1JZ" role="2h0jOs" />
+        <node concept="3Z9vzX" id="2hQSMJDIv2k" role="2h0jOs">
+          <property role="TrG5h" value="ImportScopeTest_Pack2" />
+          <node concept="3Z0THl" id="2hQSMJEoZrS" role="3Z9vGx">
+            <node concept="AsIwX" id="2hQSMJEoZrU" role="AsIwy">
+              <node concept="AsIwU" id="2hQSMJEp_9u" role="AsIwY">
+                <ref role="AsIwW" node="2hQSMJDIv29" resolve="ImportScopeTest_Pack1" />
+              </node>
+              <node concept="AsIwU" id="2hQSMJFsbon" role="AsIwY">
+                <node concept="LIFWc" id="2hQSMJGf3qw" role="lGtFl">
+                  <property role="ZRATv" value="true" />
+                  <property role="OXtK3" value="true" />
+                  <property role="p6zMq" value="0" />
+                  <property role="p6zMs" value="0" />
+                  <property role="LIFWd" value="empty_target" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1qefOq" id="2hQSMJFsaTD" role="25YQFr">
+      <node concept="2h0jOr" id="2hQSMJFsaTE" role="1qenE9">
+        <property role="TrG5h" value="demo" />
+        <node concept="3Z9vzX" id="2hQSMJFsbnF" role="2h0jOs">
+          <property role="TrG5h" value="ImportScopeTest_Pack1" />
+          <node concept="3ZUotO" id="2hQSMJFsbnG" role="3Z9vGx">
+            <property role="TrG5h" value="Pack1_PartDef1" />
+          </node>
+          <node concept="3ZUotO" id="2hQSMJFsbnH" role="3Z9vGx">
+            <property role="TrG5h" value="Pack1_PartDef2" />
+          </node>
+          <node concept="3Z9vzX" id="2hQSMJFsbnI" role="3Z9vGx">
+            <property role="TrG5h" value="Pack2" />
+            <node concept="3ZUotO" id="2hQSMJFsbnJ" role="3Z9vGx">
+              <property role="TrG5h" value="Pack2_PartDef1" />
+            </node>
+          </node>
+        </node>
+        <node concept="2h0jOo" id="2hQSMJGf1Ky" role="2h0jOs" />
+        <node concept="3Z9vzX" id="2hQSMJFsbnL" role="2h0jOs">
+          <property role="TrG5h" value="ImportScopeTest_Pack2" />
+          <node concept="3Z0THl" id="2hQSMJFsbnM" role="3Z9vGx">
+            <node concept="AsIwX" id="2hQSMJFsbnN" role="AsIwy">
+              <node concept="AsIwU" id="2hQSMJFsbnO" role="AsIwY">
+                <ref role="AsIwW" node="2hQSMJFsbnF" resolve="ImportScopeTest_Pack1" />
+              </node>
+              <node concept="AsIwU" id="2hQSMJFsbnP" role="AsIwY">
+                <ref role="AsIwW" node="2hQSMJFsbnI" resolve="Pack2" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="3clFbS" id="2hQSMJFsaTH" role="LjaKd">
+      <node concept="2TK7Tu" id="2hQSMJFsaTI" role="3cqZAp">
+        <property role="2TTd_B" value="Pack2" />
       </node>
     </node>
   </node>
