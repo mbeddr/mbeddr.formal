@@ -7,17 +7,20 @@
   <imports />
   <registry>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
-      <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
-        <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
-        <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
-      </concept>
+      <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2" />
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
-      <concept id="5531643499102778612" name="com.symo.sysmlv2.baselan.structure.ISysMLv2QualifiedRef" flags="ngI" index="gQIM0">
-        <reference id="5531643499102778613" name="namespace" index="gQIM1" />
-      </concept>
       <concept id="4211673189923939179" name="com.symo.sysmlv2.baselan.structure.SysMLv2EmptyLine" flags="ng" index="2h0jOo" />
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
+      </concept>
+      <concept id="8642959026948349259" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedNameSegment" flags="ng" index="AsIwU">
+        <reference id="8642959026948349261" name="target" index="AsIwW" />
+      </concept>
+      <concept id="8642959026948349260" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedName" flags="ng" index="AsIwX">
+        <child id="8642959026948349263" name="segments" index="AsIwY" />
+      </concept>
+      <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
+        <child id="4861608499769108619" name="qualifiedName" index="1MHwYB" />
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
         <child id="7140692429574298135" name="types" index="3w00ZT" />
@@ -71,15 +74,21 @@
         <node concept="8GF0z" id="7vLXn591EMA" role="3w00ZY">
           <property role="TrG5h" value="battery" />
           <node concept="8CKM2" id="7vLXn591EMB" role="3w00ZT">
-            <property role="8CKM3" value="Battery" />
-            <ref role="8CKMW" node="7vLXn591EMv" resolve="Battery" />
+            <node concept="AsIwX" id="4dRTMKM7dj2" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dj3" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EMv" resolve="Battery" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="8GF0z" id="7vLXn591EMC" role="3w00ZY">
           <property role="TrG5h" value="flightController" />
           <node concept="8CKM2" id="7vLXn591EMD" role="3w00ZT">
-            <property role="8CKM3" value="FlightController" />
-            <ref role="8CKMW" node="7vLXn591EMx" resolve="FlightController" />
+            <node concept="AsIwX" id="4dRTMKM7dj0" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dj1" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EMx" resolve="FlightController" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -112,24 +121,37 @@
         <node concept="8GF0z" id="7vLXn591EMZ" role="3w00ZY">
           <property role="TrG5h" value="battery" />
           <node concept="8CKM2" id="7vLXn591EN0" role="3w00ZT">
-            <property role="8CKM3" value="Battery" />
-            <ref role="8CKMW" node="7vLXn591EMv" resolve="Battery" />
-            <ref role="gQIM1" node="7vLXn591EMt" resolve="DroneDefinitions" />
+            <node concept="AsIwX" id="4dRTMKM7diX" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7diY" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EMt" resolve="DroneDefinitions" />
+              </node>
+              <node concept="AsIwU" id="4dRTMKM7diZ" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EMv" resolve="Battery" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="8GF0z" id="7vLXn591EN1" role="3w00ZY">
           <property role="TrG5h" value="flightController" />
           <node concept="8CKM2" id="7vLXn591EN2" role="3w00ZT">
-            <property role="8CKM3" value="FlightController" />
-            <ref role="8CKMW" node="7vLXn591EMx" resolve="FlightController" />
-            <ref role="gQIM1" node="7vLXn591EMt" resolve="DroneDefinitions" />
+            <node concept="AsIwX" id="4dRTMKM7diU" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7diV" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EMt" resolve="DroneDefinitions" />
+              </node>
+              <node concept="AsIwU" id="4dRTMKM7diW" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EMx" resolve="FlightController" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="8GF0z" id="7vLXn591EN3" role="3w00ZY">
           <property role="TrG5h" value="camera" />
           <node concept="8CKM2" id="7vLXn591EN4" role="3w00ZT">
-            <property role="8CKM3" value="Camera" />
-            <ref role="8CKMW" node="7vLXn591EMV" resolve="Camera" />
+            <node concept="AsIwX" id="4dRTMKM7diS" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7diT" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EMV" resolve="Camera" />
+              </node>
+            </node>
           </node>
         </node>
       </node>

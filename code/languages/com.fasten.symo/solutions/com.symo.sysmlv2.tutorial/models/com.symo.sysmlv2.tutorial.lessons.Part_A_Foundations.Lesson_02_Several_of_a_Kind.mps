@@ -7,21 +7,24 @@
   <imports />
   <registry>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
-      <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
-        <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
-        <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
-      </concept>
+      <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2" />
       <concept id="8930763252717678342" name="com.symo.sysmlv2.baselan.structure.SysMLv2Multiplicity" flags="ng" index="8EhVq">
         <property id="8930763252717678344" name="upper" index="8EhVk" />
         <property id="8930763252717678343" name="lower" index="8EhVr" />
       </concept>
       <concept id="8930763252716192255" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartUsage" flags="ng" index="8GF0z" />
-      <concept id="5531643499102778612" name="com.symo.sysmlv2.baselan.structure.ISysMLv2QualifiedRef" flags="ngI" index="gQIM0">
-        <reference id="5531643499102778613" name="namespace" index="gQIM1" />
-      </concept>
       <concept id="4211673189923939179" name="com.symo.sysmlv2.baselan.structure.SysMLv2EmptyLine" flags="ng" index="2h0jOo" />
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
+      </concept>
+      <concept id="8642959026948349259" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedNameSegment" flags="ng" index="AsIwU">
+        <reference id="8642959026948349261" name="target" index="AsIwW" />
+      </concept>
+      <concept id="8642959026948349260" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedName" flags="ng" index="AsIwX">
+        <child id="8642959026948349263" name="segments" index="AsIwY" />
+      </concept>
+      <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
+        <child id="4861608499769108619" name="qualifiedName" index="1MHwYB" />
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
         <child id="7140692429574298134" name="multiplicity" index="3w00ZS" />
@@ -90,17 +93,27 @@
         <node concept="8GF0z" id="7vLXn591EUm" role="3w00ZY">
           <property role="TrG5h" value="battery" />
           <node concept="8CKM2" id="7vLXn591EUn" role="3w00ZT">
-            <property role="8CKM3" value="Battery" />
-            <ref role="8CKMW" node="7vLXn591EUa" resolve="Battery" />
-            <ref role="gQIM1" node="7vLXn591EU8" resolve="DroneParts" />
+            <node concept="AsIwX" id="4dRTMKM7djy" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7djz" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EU8" resolve="DroneParts" />
+              </node>
+              <node concept="AsIwU" id="4dRTMKM7dj$" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EUa" resolve="Battery" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="8GF0z" id="7vLXn591EUo" role="3w00ZY">
           <property role="TrG5h" value="propellers" />
           <node concept="8CKM2" id="7vLXn591EUp" role="3w00ZT">
-            <property role="8CKM3" value="Propeller" />
-            <ref role="8CKMW" node="7vLXn591EUe" resolve="Propeller" />
-            <ref role="gQIM1" node="7vLXn591EU8" resolve="DroneParts" />
+            <node concept="AsIwX" id="4dRTMKM7djv" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7djw" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EU8" resolve="DroneParts" />
+              </node>
+              <node concept="AsIwU" id="4dRTMKM7djx" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EUe" resolve="Propeller" />
+              </node>
+            </node>
           </node>
           <node concept="8EhVq" id="7vLXn591EUq" role="3w00ZS">
             <property role="8EhVr" value="4" />
@@ -110,9 +123,14 @@
         <node concept="8GF0z" id="7vLXn591EUr" role="3w00ZY">
           <property role="TrG5h" value="flightController" />
           <node concept="8CKM2" id="7vLXn591EUs" role="3w00ZT">
-            <property role="8CKM3" value="FlightController" />
-            <ref role="8CKMW" node="7vLXn591EUc" resolve="FlightController" />
-            <ref role="gQIM1" node="7vLXn591EU8" resolve="DroneParts" />
+            <node concept="AsIwX" id="4dRTMKM7djs" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7djt" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EU8" resolve="DroneParts" />
+              </node>
+              <node concept="AsIwU" id="4dRTMKM7dju" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EUc" resolve="FlightController" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -129,17 +147,27 @@
       <node concept="8GF0z" id="7vLXn591EUw" role="3Z9vGx">
         <property role="TrG5h" value="inspectionDrone" />
         <node concept="8CKM2" id="7vLXn591EUx" role="3w00ZT">
-          <property role="8CKM3" value="Quadcopter" />
-          <ref role="8CKMW" node="7vLXn591EUj" resolve="Quadcopter" />
-          <ref role="gQIM1" node="7vLXn591EUh" resolve="Quadcopters" />
+          <node concept="AsIwX" id="4dRTMKM7djp" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7djq" role="AsIwY">
+              <ref role="AsIwW" node="7vLXn591EUh" resolve="Quadcopters" />
+            </node>
+            <node concept="AsIwU" id="4dRTMKM7djr" role="AsIwY">
+              <ref role="AsIwW" node="7vLXn591EUj" resolve="Quadcopter" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="8GF0z" id="7vLXn591EYU" role="3Z9vGx">
         <property role="TrG5h" value="deliveryDrone" />
         <node concept="8CKM2" id="7vLXn591EYV" role="3w00ZT">
-          <property role="8CKM3" value="Quadcopter" />
-          <ref role="8CKMW" node="7vLXn591EUj" resolve="Quadcopter" />
-          <ref role="gQIM1" node="7vLXn591EUh" resolve="Quadcopters" />
+          <node concept="AsIwX" id="4dRTMKM7djm" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7djn" role="AsIwY">
+              <ref role="AsIwW" node="7vLXn591EUh" resolve="Quadcopters" />
+            </node>
+            <node concept="AsIwU" id="4dRTMKM7djo" role="AsIwY">
+              <ref role="AsIwW" node="7vLXn591EUj" resolve="Quadcopter" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -167,17 +195,27 @@
         <node concept="8GF0z" id="7vLXn591EUE" role="3w00ZY">
           <property role="TrG5h" value="battery" />
           <node concept="8CKM2" id="7vLXn591EUF" role="3w00ZT">
-            <property role="8CKM3" value="Battery" />
-            <ref role="8CKMW" node="7vLXn591EUa" resolve="Battery" />
-            <ref role="gQIM1" node="7vLXn591EU8" resolve="DroneParts" />
+            <node concept="AsIwX" id="4dRTMKM7djj" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7djk" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EU8" resolve="DroneParts" />
+              </node>
+              <node concept="AsIwU" id="4dRTMKM7djl" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EUa" resolve="Battery" />
+              </node>
+            </node>
           </node>
         </node>
         <node concept="8GF0z" id="7vLXn591EUG" role="3w00ZY">
           <property role="TrG5h" value="spareBattery" />
           <node concept="8CKM2" id="7vLXn591EUH" role="3w00ZT">
-            <property role="8CKM3" value="Battery" />
-            <ref role="8CKMW" node="7vLXn591EUa" resolve="Battery" />
-            <ref role="gQIM1" node="7vLXn591EU8" resolve="DroneParts" />
+            <node concept="AsIwX" id="4dRTMKM7djg" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7djh" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EU8" resolve="DroneParts" />
+              </node>
+              <node concept="AsIwU" id="4dRTMKM7dji" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EUa" resolve="Battery" />
+              </node>
+            </node>
           </node>
           <node concept="8EhVq" id="7vLXn591EUI" role="3w00ZS">
             <property role="8EhVr" value="0" />
@@ -187,9 +225,14 @@
         <node concept="8GF0z" id="7vLXn591EUJ" role="3w00ZY">
           <property role="TrG5h" value="propellers" />
           <node concept="8CKM2" id="7vLXn591EUK" role="3w00ZT">
-            <property role="8CKM3" value="Propeller" />
-            <ref role="8CKMW" node="7vLXn591EUe" resolve="Propeller" />
-            <ref role="gQIM1" node="7vLXn591EU8" resolve="DroneParts" />
+            <node concept="AsIwX" id="4dRTMKM7djd" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7dje" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EU8" resolve="DroneParts" />
+              </node>
+              <node concept="AsIwU" id="4dRTMKM7djf" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EUe" resolve="Propeller" />
+              </node>
+            </node>
           </node>
           <node concept="8EhVq" id="7vLXn591EUL" role="3w00ZS">
             <property role="8EhVr" value="6" />
@@ -199,31 +242,45 @@
         <node concept="8GF0z" id="7vLXn591EUM" role="3w00ZY">
           <property role="TrG5h" value="flightController" />
           <node concept="8CKM2" id="7vLXn591EUN" role="3w00ZT">
-            <property role="8CKM3" value="FlightController" />
-            <ref role="8CKMW" node="7vLXn591EUc" resolve="FlightController" />
-            <ref role="gQIM1" node="7vLXn591EU8" resolve="DroneParts" />
+            <node concept="AsIwX" id="4dRTMKM7dja" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7djb" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EU8" resolve="DroneParts" />
+              </node>
+              <node concept="AsIwU" id="4dRTMKM7djc" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn591EUc" resolve="FlightController" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
       <node concept="8GF0z" id="7vLXn591EUO" role="3Z9vGx">
         <property role="TrG5h" value="cargoDrone" />
         <node concept="8CKM2" id="7vLXn591EUP" role="3w00ZT">
-          <property role="8CKM3" value="Hexacopter" />
-          <ref role="8CKMW" node="7vLXn591EUC" resolve="Hexacopter" />
+          <node concept="AsIwX" id="4dRTMKM7dj8" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dj9" role="AsIwY">
+              <ref role="AsIwW" node="7vLXn591EUC" resolve="Hexacopter" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="8GF0z" id="7vLXn591F0a" role="3Z9vGx">
         <property role="TrG5h" value="reliefDrone" />
         <node concept="8CKM2" id="7vLXn591F0b" role="3w00ZT">
-          <property role="8CKM3" value="Hexacopter" />
-          <ref role="8CKMW" node="7vLXn591EUC" resolve="Hexacopter" />
+          <node concept="AsIwX" id="4dRTMKM7dj6" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dj7" role="AsIwY">
+              <ref role="AsIwW" node="7vLXn591EUC" resolve="Hexacopter" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="8GF0z" id="7vLXn591F0p" role="3Z9vGx">
         <property role="TrG5h" value="rescueDrone" />
         <node concept="8CKM2" id="7vLXn591F0q" role="3w00ZT">
-          <property role="8CKM3" value="Hexacopter" />
-          <ref role="8CKMW" node="7vLXn591EUC" resolve="Hexacopter" />
+          <node concept="AsIwX" id="4dRTMKM7dj4" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dj5" role="AsIwY">
+              <ref role="AsIwW" node="7vLXn591EUC" resolve="Hexacopter" />
+            </node>
+          </node>
         </node>
       </node>
     </node>

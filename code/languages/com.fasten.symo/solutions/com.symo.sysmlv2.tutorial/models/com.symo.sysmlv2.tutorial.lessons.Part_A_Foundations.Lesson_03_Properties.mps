@@ -9,10 +9,7 @@
   </imports>
   <registry>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
-      <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
-        <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
-        <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
-      </concept>
+      <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2" />
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <property id="7270937307953554917" name="isDefaultValue" index="4kQGg" />
         <child id="8930763252717678425" name="types" index="8EhU5" />
@@ -48,6 +45,9 @@
       </concept>
       <concept id="284754763133676346" name="com.symo.sysmlv2.baselan.structure.SysMLv2PlainTextExpression" flags="ng" index="3bnkR8">
         <property id="284754763133676347" name="expressionText" index="3bnkR9" />
+      </concept>
+      <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
+        <child id="4861608499769108619" name="qualifiedName" index="1MHwYB" />
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
         <child id="7140692429574298134" name="multiplicity" index="3w00ZS" />
@@ -258,9 +258,11 @@
         <node concept="8GF0z" id="7vLXn5baoTH" role="3w00ZY">
           <property role="TrG5h" value="battery" />
           <node concept="8CKM2" id="7vLXn5baoTI" role="3w00ZT">
-            <property role="8CKM3" value="Battery" />
-            <ref role="8CKMW" node="7vLXn5baoTp" resolve="Battery" />
-            <ref role="gQIM1" node="7vLXn5baoTb" resolve="DroneProperties" />
+            <node concept="AsIwX" id="4dRTMKM7djB" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7djC" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn5baoTp" resolve="Battery" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
@@ -394,9 +396,11 @@
         <node concept="8GF0z" id="7vLXn5baoUx" role="3w00ZY">
           <property role="TrG5h" value="propellers" />
           <node concept="8CKM2" id="7vLXn5baoUy" role="3w00ZT">
-            <property role="8CKM3" value="Propeller" />
-            <ref role="8CKMW" node="7vLXn5baoUe" resolve="Propeller" />
-            <ref role="gQIM1" node="7vLXn5baoU8" resolve="HexacopterSolution" />
+            <node concept="AsIwX" id="4dRTMKM7dj_" role="1MHwYB">
+              <node concept="AsIwU" id="4dRTMKM7djA" role="AsIwY">
+                <ref role="AsIwW" node="7vLXn5baoUe" resolve="Propeller" />
+              </node>
+            </node>
           </node>
           <node concept="8EhVq" id="7vLXn5baoUz" role="3w00ZS">
             <property role="8EhVr" value="6" />

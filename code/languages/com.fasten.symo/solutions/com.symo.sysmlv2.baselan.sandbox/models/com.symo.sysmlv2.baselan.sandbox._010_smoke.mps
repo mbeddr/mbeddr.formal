@@ -7,10 +7,7 @@
   <imports />
   <registry>
     <language id="df90562e-2282-4284-81c0-42a7e5d43d37" name="com.symo.sysmlv2.baselan">
-      <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2">
-        <property id="8930763252717288799" name="partDefinitionName" index="8CKM3" />
-        <reference id="8930763252717288800" name="partDefinition" index="8CKMW" />
-      </concept>
+      <concept id="8930763252717288798" name="com.symo.sysmlv2.baselan.structure.SysMLv2PartDefinitionRef" flags="ng" index="8CKM2" />
       <concept id="8930763252717678421" name="com.symo.sysmlv2.baselan.structure.SysMLv2AttributeUsage" flags="ng" index="8EhU9">
         <child id="8930763252717678425" name="types" index="8EhU5" />
         <child id="7140692429570903510" name="direction" index="3xZtwS" />
@@ -30,12 +27,15 @@
       <concept id="4211673189923939176" name="com.symo.sysmlv2.baselan.structure.SysMLv2File" flags="ng" index="2h0jOr">
         <child id="4211673189923939183" name="content" index="2h0jOs" />
       </concept>
+      <concept id="8642959026948349259" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedNameSegment" flags="ng" index="AsIwU">
+        <reference id="8642959026948349261" name="target" index="AsIwW" />
+      </concept>
       <concept id="8642959026948349260" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedName" flags="ng" index="AsIwX">
         <property id="8642959026948349262" name="text" index="AsIwZ" />
+        <child id="8642959026948349263" name="segments" index="AsIwY" />
       </concept>
       <concept id="7140692429574298124" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemDefinitionRef" flags="ng" index="3w00Zy">
-        <property id="7140692429574298131" name="itemDefinitionName" index="3w00ZX" />
-        <reference id="7140692429574298132" name="definition" index="3w00ZU" />
+        <child id="4861608499769108619" name="qualifiedName" index="1MHwYB" />
       </concept>
       <concept id="7140692429574298125" name="com.symo.sysmlv2.baselan.structure.SysMLv2ItemUsage" flags="ng" index="3w00Zz">
         <child id="7140692429574298134" name="multiplicity" index="3w00ZS" />
@@ -127,15 +127,17 @@
       <node concept="8GF0z" id="7JKstLNkCNW" role="3w00ZY">
         <property role="TrG5h" value="engine" />
         <node concept="8CKM2" id="7JKstLNlN8h" role="3w00ZT">
-          <property role="8CKM3" value="Engine" />
-          <ref role="8CKMW" node="3PUPjB2A75t" resolve="Engine" />
+          <node concept="AsIwX" id="4dRTMKM7dhB" role="1MHwYB">
+            <property role="AsIwZ" value="Engine" />
+          </node>
         </node>
       </node>
       <node concept="8GF0z" id="6coPuU2Q2BK" role="3w00ZY">
         <property role="TrG5h" value="engines" />
         <node concept="8CKM2" id="6coPuU2Q2BL" role="3w00ZT">
-          <property role="8CKM3" value="Engine" />
-          <ref role="8CKMW" node="3PUPjB2A75t" resolve="Engine" />
+          <node concept="AsIwX" id="4dRTMKM7dh_" role="1MHwYB">
+            <property role="AsIwZ" value="Engine" />
+          </node>
         </node>
         <node concept="8EhVq" id="6coPuU2Q2BM" role="3w00ZS">
           <property role="8EhVr" value="2" />
@@ -178,26 +180,34 @@
     <node concept="3ZUotO" id="6coPuU2T2zJ" role="2h0jOs">
       <property role="TrG5h" value="ElectricVehicle" />
       <node concept="3w00Zy" id="6coPuU38Chw" role="3w00Zx">
-        <property role="3w00ZX" value="Vehicle" />
-        <ref role="3w00ZU" node="6coPuU2T2zI" resolve="Vehicle" />
+        <node concept="AsIwX" id="4dRTMKM7dhz" role="1MHwYB">
+          <property role="AsIwZ" value="Vehicle" />
+        </node>
       </node>
     </node>
     <node concept="3ZUotO" id="6coPuU2T2zL" role="2h0jOs">
       <property role="TrG5h" value="HybridVehicle" />
       <node concept="3w00Zy" id="6coPuU38Chx" role="3w00Zx">
-        <property role="3w00ZX" value="ElectricVehicle" />
-        <ref role="3w00ZU" node="6coPuU2T2zJ" resolve="ElectricVehicle" />
+        <node concept="AsIwX" id="4dRTMKM7dhx" role="1MHwYB">
+          <node concept="AsIwU" id="4dRTMKM7dhy" role="AsIwY">
+            <ref role="AsIwW" node="6coPuU2T2zJ" resolve="ElectricVehicle" />
+          </node>
+        </node>
       </node>
       <node concept="3w00Zy" id="6coPuU38Chy" role="3w00Zx">
-        <property role="3w00ZX" value="CombustionVehicle" />
-        <ref role="3w00ZU" node="6coPuU2T2zO" resolve="CombustionVehicle" />
+        <node concept="AsIwX" id="4dRTMKM7dhv" role="1MHwYB">
+          <node concept="AsIwU" id="4dRTMKM7dhw" role="AsIwY">
+            <ref role="AsIwW" node="6coPuU2T2zO" resolve="CombustionVehicle" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3ZUotO" id="6coPuU2T2zO" role="2h0jOs">
       <property role="TrG5h" value="CombustionVehicle" />
       <node concept="3w00Zy" id="6coPuU38Chz" role="3w00Zx">
-        <property role="3w00ZX" value="Vehicle" />
-        <ref role="3w00ZU" node="6coPuU2T2zI" resolve="Vehicle" />
+        <node concept="AsIwX" id="4dRTMKM7dht" role="1MHwYB">
+          <property role="AsIwZ" value="Vehicle" />
+        </node>
       </node>
     </node>
     <node concept="8EhVW" id="6coPuU2T2zQ" role="2h0jOs">
@@ -305,8 +315,11 @@
     <node concept="3w00Z_" id="6coPuU37EO5" role="2h0jOs">
       <property role="TrG5h" value="Diesel" />
       <node concept="3w00Zy" id="6coPuU37EO6" role="3w00Zx">
-        <property role="3w00ZX" value="Fuel" />
-        <ref role="3w00ZU" node="6coPuU37EO1" resolve="Fuel" />
+        <node concept="AsIwX" id="4dRTMKM7dhr" role="1MHwYB">
+          <node concept="AsIwU" id="4dRTMKM7dhs" role="AsIwY">
+            <ref role="AsIwW" node="6coPuU37EO1" resolve="Fuel" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="3xZtmp" id="6coPuU37EO7" role="2h0jOs">
@@ -317,8 +330,11 @@
           <property role="3xZtlB" value="3th7jSwWnJl/out" />
         </node>
         <node concept="3w00Zy" id="6coPuU37EOa" role="3w00ZT">
-          <property role="3w00ZX" value="Fuel" />
-          <ref role="3w00ZU" node="6coPuU37EO1" resolve="Fuel" />
+          <node concept="AsIwX" id="4dRTMKM7dhp" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dhq" role="AsIwY">
+              <ref role="AsIwW" node="6coPuU37EO1" resolve="Fuel" />
+            </node>
+          </node>
         </node>
       </node>
     </node>
@@ -331,8 +347,11 @@
           <property role="8EhVk" value="1" />
         </node>
         <node concept="3w00Zy" id="6coPuU37EOe" role="3w00ZT">
-          <property role="3w00ZX" value="Diesel" />
-          <ref role="3w00ZU" node="6coPuU37EO5" resolve="Diesel" />
+          <node concept="AsIwX" id="4dRTMKM7dhn" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dho" role="AsIwY">
+              <ref role="AsIwW" node="6coPuU37EO5" resolve="Diesel" />
+            </node>
+          </node>
         </node>
       </node>
       <node concept="3xZtmn" id="6coPuU37EOf" role="3w00ZY">
@@ -354,8 +373,11 @@
       <node concept="8GF0z" id="6coPuU3hCan" role="3w00ZY">
         <property role="TrG5h" value="wheels" />
         <node concept="8CKM2" id="6coPuU3hCap" role="3w00ZT">
-          <property role="8CKM3" value="Wheel" />
-          <ref role="8CKMW" node="6coPuU3hCal" resolve="Wheel" />
+          <node concept="AsIwX" id="4dRTMKM7dhl" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dhm" role="AsIwY">
+              <ref role="AsIwW" node="6coPuU3hCal" resolve="Wheel" />
+            </node>
+          </node>
         </node>
         <node concept="8EhVq" id="6coPuU3hCao" role="3w00ZS">
           <property role="8EhVr" value="4" />
@@ -372,8 +394,9 @@
     <node concept="3ZUotO" id="6coPuU3hCas" role="2h0jOs">
       <property role="TrG5h" value="Car" />
       <node concept="3w00Zy" id="6coPuU3hCat" role="3w00Zx">
-        <property role="3w00ZX" value="Vehicle" />
-        <ref role="3w00ZU" node="6coPuU3hCam" resolve="Vehicle" />
+        <node concept="AsIwX" id="4dRTMKM7dhj" role="1MHwYB">
+          <property role="AsIwZ" value="Vehicle" />
+        </node>
       </node>
       <node concept="8GF0z" id="6coPuU3hCau" role="3w00ZY">
         <node concept="3wdj9f" id="6coPuU3hCav" role="3wdj9d">
@@ -394,8 +417,11 @@
           <ref role="3wdj98" node="6coPuU3hCan" resolve="wheels" />
         </node>
         <node concept="8CKM2" id="6coPuU3hCa_" role="3w00ZT">
-          <property role="8CKM3" value="Wheel" />
-          <ref role="8CKMW" node="6coPuU3hCal" resolve="Wheel" />
+          <node concept="AsIwX" id="4dRTMKM7dhh" role="1MHwYB">
+            <node concept="AsIwU" id="4dRTMKM7dhi" role="AsIwY">
+              <ref role="AsIwW" node="6coPuU3hCal" resolve="Wheel" />
+            </node>
+          </node>
         </node>
         <node concept="8EhVq" id="6coPuU3hCa$" role="3w00ZS">
           <property role="8EhVr" value="2" />
