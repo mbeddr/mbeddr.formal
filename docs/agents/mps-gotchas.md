@@ -12,6 +12,21 @@ project's own) for open investigations.
 Tool argument shapes and step-by-step authoring workflows (editors, behavior, tests, structure changes) are in
 [mps-mcp-recipes.md](mps-mcp-recipes.md).
 
+## Authoring smodel code through `update_node` (2026-11-08)
+
+- Node references must include the model name: `r:<uuid>(<model name>)/<id>`; without it the call
+  fails with `INVALID_REFERENCE`.
+- `update_node` has only `ADD` and `SET`; deletion is `SET CHILD` with `childNodeRef` and no
+  `childJson`. `alter_nodes` has no `DELETE`. `SET CHILD` with `childNodeRef` + `childJson` (inline JSON
+  or an absolute file path) replaces a subtree in place.
+- Plain Java in a behavior model cannot resolve `SNode` (dozens of type errors); write smodel code.
+- Use `Node_GetSConceptOperation` (`node.concept` is deprecated); `isSuperConceptOf` is on it.
+- JDK method references need the full target reference as printed
+  (`6354ebe7-…/java:java.lang(JDK/)/~String.equals%28java.lang.Object%29`), no `r:` prefix; the
+  parenthesis concept is `ParenthesizedExpression`.
+- A `PlainActionDefinition` is not a sub-concept of `ActionDefinition`; accept both explicitly.
+- A new structure property needs a language MAKE before behavior/editor can reference it.
+
 ## Editor tests: typing a qualified name (segment chain) and constructor-created default children (2026-11-08)
 
 - A behavior `constructor` that pre-creates a child (e.g. `this.types.add new(X)`) silently blocks

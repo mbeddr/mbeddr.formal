@@ -31,7 +31,17 @@ of thousands of entries (the system library alone has 58 roots with deep content
    turn text into segments later.
 6. The editor shows segments as a list with a `::` separator, and accepts pasted `A::B::C` by splitting it into
    segments.
-7. `SysMLv2QualifiedName` becomes the common building block for **all** named-entity references. `import` is the
+7. **Short names.** SysML/KerML elements may carry a `declaredShortName` (`<m> metre`), and `A::m` may be
+   written with it. A segment resolves a written part by `name`, then by `declaredShortName`, within the
+   previous segment's `memberScope` (ambiguous → unresolved). A segment that was written via the short name
+   has `useShortName = true`: the editor shows the target's `declaredShortName` and `qualifiedText()` /
+   the textgen serialize it. The original spelling is therefore derived from structure; `text` is never
+   kept beside `segments`. Reification (`resolveText`) sets the flag when the match was by short name and
+   always clears `text`.
+8. **Kind compatibility.** A reference's expected kind and the resolved target's kind are compatible when
+   either is a sub-concept of the other. A target that is an alias is followed (at most 32 hops); an
+   unresolved alias yields a warning. Calculation and flow references also accept action definitions.
+9. `SysMLv2QualifiedName` becomes the common building block for **all** named-entity references. `import` is the
    pilot; the other reference kinds migrate in phases. At the end `ISysMLv2QualifiedRef` and its `namespace`
    reference are deleted, together with the string-splitting helpers.
 

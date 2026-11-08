@@ -2429,6 +2429,11 @@
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="3tSWG0_KrpC" resolve="ISysMLv2IdentifierNameConcept" />
     </node>
+    <node concept="1TJgyi" id="2JnY6EGlz15" role="1TKVEl">
+      <property role="IQ2nx" value="3159266800665243717" />
+      <property role="TrG5h" value="useShortName" />
+      <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7vLXn5hwLPc">
     <property role="EcuMT" value="8642959026948349260" />

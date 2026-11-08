@@ -105,6 +105,7 @@
         <child id="50764132512836854" name="qualifiedName" index="2_tBl3" />
       </concept>
       <concept id="8642959026948349259" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedNameSegment" flags="ng" index="AsIwU">
+        <property id="3159266800665243717" name="useShortName" index="27wswJ" />
         <reference id="8642959026948349261" name="target" index="AsIwW" />
       </concept>
       <concept id="8642959026948349260" name="com.symo.sysmlv2.baselan.structure.SysMLv2QualifiedName" flags="ng" index="AsIwX">
@@ -2026,6 +2027,7 @@
             <ref role="AsIwW" node="4QEfSMD5$u6" resolve="SI" />
           </node>
           <node concept="AsIwU" id="2q56MXTM$hP" role="AsIwY">
+            <property role="27wswJ" value="true" />
             <ref role="AsIwW" node="4QEfSMD5$ui" resolve="metre" />
           </node>
         </node>

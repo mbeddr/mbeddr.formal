@@ -1395,3 +1395,25 @@ between roots of the *same* model work. The KerML plan says its scopes look at `
 so check whether the SysML v2 scopes (`ISysMLv2Namespace`, `ISysMLv2IdentifierNameConcept`) do the same.
 Workaround used: every tutorial lesson model is self-contained. Fix the scope, then lessons can import
 earlier lessons instead of repeating parts.
+
+## Qualified-name segment chains (ADR 0002) — status 2026-11-08
+
+Done: all reference kinds use `SysMLv2QualifiedName`; the system library is migrated; short names are
+kept by `SysMLv2QualifiedNameSegment.useShortName` (editor and textgen show the short name; text is never
+kept beside segments). `testLibraryTextFidelity` and `Tests in 'baselan'` are green (97/97).
+
+Open:
+
+- **Unresolved names in the library.** The library model check still warns about names with no target in
+  the SysML v2 model (about 1029; examples `MatesWith`, `Surface`, `Curve`,
+  `StructuredSpaceObject::StructuredCurve`). They come from KerML kernel elements. The two languages stay
+  disjoint, so these stay plain text. Optional: add SysML-side stubs for the kernel types if the warnings
+  are a problem.
+- **Short name in completion.** Picking a short name from the completion menu does not set `useShortName`
+  (constraints and transformation menu are untouched). Decide whether completion should offer short names
+  and set the flag.
+- **Editor test for the flag.** No editor test shows a short-name segment (`SI::m`). Add one with a user
+  action, not a cell-exists check.
+- **Remove the old mechanism.** `ISysMLv2QualifiedRef`, the `namespace` reference and the string-splitting
+  helpers are still to be deleted (ADR 0002, last point).
+- **Accepted noise.** "Empty enumeration property: 'visibility'" in the library is accepted (nullable enum).
